@@ -92,6 +92,12 @@ public class JEPThreadPool {
         // import packages
         jep.eval("import os");
         jep.eval("os.chdir('" + delftPath.getAbsolutePath() + "')");
+
+        // for using legacy Keras 2, and not Keras 3 installed by default by TensorFlow from version 2.16
+        jep.eval("os.environ[\"TF_USE_LEGACY_KERAS\"] = \"1\"");
+        jep.eval("os.environ[\"KERAS_BACKEND\"] = \"tensorflow\"");
+        jep.eval("import tf_keras as keras");
+
         jep.eval("from delft.utilities.Embeddings import Embeddings");
         jep.eval("import delft.sequenceLabelling");
         jep.eval("from delft.sequenceLabelling import Sequence");
