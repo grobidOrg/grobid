@@ -180,6 +180,7 @@ subprojects {
         implementation "com.google.guava:guava:31.0.1-jre"
         implementation "org.apache.httpcomponents:httpclient:4.5.3"
         implementation "black.ninia:jep:4.2.2"
+        implementation 'com.github.pemistahl:lingua:1.2.2'
 
         implementation "com.fasterxml.jackson.core:jackson-core:2.14.3"
         implementation "com.fasterxml.jackson.core:jackson-databind:2.14.3"
@@ -216,7 +217,7 @@ subprojects {
                 "--add-opens", "java.base/java.lang=ALL-UNNAMED",
                 "--add-opens", "java.base/java.util=ALL-UNNAMED"
         }
-        
+
         systemProperty "java.library.path", "${javaLibraryPath}"
     }
 }
@@ -596,7 +597,7 @@ project(":grobid-trainer") {
         classpath = sourceSets.main.runtimeClasspath
         args 'tei', getArg('p2t', '.'), getArg('run', '0'), getArg('fileRatio', '1.0'), getArg('flavor', '')
         def javaLibraryPath = getJavaLibraryPath()
-        
+
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
             jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
         } else {

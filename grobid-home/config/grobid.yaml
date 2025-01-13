@@ -51,7 +51,8 @@ grobid:
   corsAllowedHeaders: "X-Requested-With,Content-Type,Accept,Origin"
 
   # the actual implementation for language recognition to be used
-  languageDetectorFactory: "org.grobid.core.lang.impl.CybozuLanguageDetectorFactory"
+#  languageDetectorFactory: "org.grobid.core.lang.impl.CybozuLanguageDetectorFactory"
+  languageDetectorFactory: "org.grobid.core.lang.impl.LinguaLanguageDetectorFactory"
 
   # the actual implementation for optional sentence segmentation to be used (PragmaticSegmenter or OpenNLP)
   #sentenceDetectorFactory: "org.grobid.core.lang.impl.PragmaticSentenceDetectorFactory"

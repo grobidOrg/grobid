@@ -22,7 +22,6 @@ public class LanguageUtilities {
 		if (instance == null) {
 		    synchronized (LanguageUtilities.class) {
                 if (instance == null) {
-                    LOGGER.debug("synchronized getNewInstance");
                     instance = new LanguageUtilities();
                 }
             }
