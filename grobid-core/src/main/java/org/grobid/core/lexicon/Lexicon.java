@@ -1274,6 +1274,7 @@ public class Lexicon {
         // we calculate the token positions of all the URLs in the layout tokens
         List<Pair<OffsetPosition, String>> urlPositions = new ArrayList<>();
         for (PDFAnnotation annotation : mergedAnnotations) {
+            String destination = annotation.getDestination();
             List<LayoutToken> urlTokens = layoutTokens.stream()
                 .filter(
                     annotation::cover
@@ -1282,6 +1283,23 @@ public class Lexicon {
 
             if (urlTokens.isEmpty()) {
                 continue;
+            }
+
+            //Cleanup edges
+
+            if (Iterables.getFirst(urlTokens, new LayoutToken()).getText().endsWith("(")) {
+                urlTokens.remove(0);
+            }
+            if (Iterables.getLast(urlTokens).getText().endsWith(")")) {
+                long openedParenthesis = LayoutTokensUtil.toText(urlTokens).chars().filter(ch -> ch == '(').count();
+                long closedParenthesis = LayoutTokensUtil.toText(urlTokens).chars().filter(ch -> ch == ')').count();
+                if (openedParenthesis < closedParenthesis) {
+                    urlTokens.remove(urlTokens.size() - 1);
+                }
+            }
+
+            if (Iterables.getLast(urlTokens).getText().equals(".")) {
+                urlTokens.remove(urlTokens.size() - 1);
             }
 
             //Find the token index positions in the layoutTokens object
