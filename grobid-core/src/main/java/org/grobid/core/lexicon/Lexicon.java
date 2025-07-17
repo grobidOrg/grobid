@@ -1,49 +1,30 @@
 package org.grobid.core.lexicon;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.TreeMap;
-import java.util.Set;
-import java.util.StringTokenizer;
-import java.util.regex.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-
 import com.google.common.collect.Iterables;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
+import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.lang.Language;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.layout.PDFAnnotation;
 import org.grobid.core.sax.CountryCodeSaxParser;
-import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.utilities.LayoutTokensUtil;
-import org.grobid.core.utilities.Utilities;
-import org.grobid.core.utilities.TextUtilities;
-import org.grobid.core.analyzers.GrobidAnalyzer;
+import org.grobid.core.utilities.*;
 import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.PatternSyntaxException;
+import java.util.stream.Collectors;
 
 import static org.grobid.core.utilities.Utilities.convertStringOffsetToTokenOffset;
 
@@ -1203,16 +1184,16 @@ public class Lexicon {
         List<LayoutToken> layoutTokens,
         List<PDFAnnotation> pdfAnnotations) {
 
-        List<Pair<OffsetPosition, String>> characterPositionsAndDestinations = characterPositionsUrlPatternWithPdfAnnotations(layoutTokens, pdfAnnotations);
-        List<OffsetPosition> characterPositions = characterPositionsAndDestinations.stream()
-            .map(Pair::getLeft)
-            .collect(Collectors.toList());
+//        List<Pair<OffsetPosition, String>> characterPositionsAndDestinations = characterPositionsUrlPatternWithPdfAnnotations(layoutTokens, pdfAnnotations);
+//        List<OffsetPosition> characterPositions = characterPositionsAndDestinations.stream()
+//            .map(Pair::getLeft)
+//            .collect(Collectors.toList());
+//
+//        List<OffsetPosition> tokenOffsetPositions = convertStringOffsetToTokenOffset(characterPositions, layoutTokens);
 
-        List<OffsetPosition> tokenOffsetPositions = convertStringOffsetToTokenOffset(characterPositions, layoutTokens);
+        List<Pair<OffsetPosition, String>> tokenOffsetPositions = tokenPositionsAnyURLMatchingPdfAnnotations(layoutTokens, pdfAnnotations);
 
-        return IntStream.range(0, tokenOffsetPositions.size())
-            .mapToObj(i -> Pair.of(tokenOffsetPositions.get(i), characterPositionsAndDestinations.get(i).getRight()))
-            .collect(Collectors.toList());
+        return tokenOffsetPositions;
     }
 
     public static OffsetPosition getTokenPositions(int startPos, int endPos, List<LayoutToken> layoutTokens) {
@@ -1245,9 +1226,102 @@ public class Lexicon {
      * This method returns the character offsets in relation to the string obtained by the layout tokens.
      * Notice the absence of the String text parameter.
      */
+    public static List<Pair<OffsetPosition, String>> tokenPositionsAnyURLMatchingPdfAnnotations(
+        List<LayoutToken> layoutTokens,
+        List<PDFAnnotation> pdfAnnotations) {
+
+        List<Integer> urlsInPage = layoutTokens.parallelStream()
+            .map(LayoutToken::getPage)
+            .distinct()
+            .collect(Collectors.toList());
+
+        Map<String, List<PDFAnnotation>> relevantURIAnnotations = pdfAnnotations.parallelStream()
+            .filter(a ->
+                urlsInPage.contains(a.getPageNumber())
+                    && StringUtils.isNotBlank(a.getDestination())
+                    && a.getType().equals(PDFAnnotation.Type.URI
+                )
+            )
+            .collect(Collectors.groupingBy(PDFAnnotation::getDestination));
+
+        List<PDFAnnotation> mergedAnnotations = new ArrayList<>();
+
+        for (Map.Entry<String, List<PDFAnnotation>> item : relevantURIAnnotations.entrySet()) {
+            List<PDFAnnotation> annotations = item.getValue();
+
+            if (annotations.size() <= 1) {
+                mergedAnnotations.addAll(annotations);
+                continue;
+            }
+
+            PDFAnnotation first = annotations.get(0);
+            int page = annotations.stream().mapToInt(PDFAnnotation::getPageNumber).min().orElse(first.getPageNumber());
+
+            PDFAnnotation merged = new PDFAnnotation();
+            merged.setPageNumber(page);
+            merged.setDestination(first.getDestination());
+            merged.setType(first.getType());
+
+            merged.setBoundingBoxes(annotations.stream()
+                    .map(PDFAnnotation::getBoundingBoxes)
+                    .filter(Objects::nonNull)
+                    .flatMap(List::stream)
+                    .collect(Collectors.toList()));
+
+            mergedAnnotations.add(merged);
+        }
+
+        // we calculate the token positions of all the URLs in the layout tokens
+        List<Pair<OffsetPosition, String>> urlPositions = new ArrayList<>();
+        for (PDFAnnotation annotation : mergedAnnotations) {
+            List<LayoutToken> urlTokens = layoutTokens.stream()
+                .filter(
+                    annotation::cover
+                )
+                .collect(Collectors.toList());
+
+            if (urlTokens.isEmpty()) {
+                continue;
+            }
+
+            //Find the token index positions in the layoutTokens object
+            int startTokenIndex = layoutTokens.indexOf(urlTokens.get(0));
+            int endTokenIndex = layoutTokens.indexOf(urlTokens.get(urlTokens.size() - 1));
+            OffsetPosition resultPosition = new OffsetPosition(startTokenIndex, endTokenIndex);
+
+            urlPositions.add(Pair.of(resultPosition, annotation.getDestination()));
+        }
+
+        return urlPositions;
+    }
+
+    /**
+     * This method returns the character offsets in relation to the string obtained by the layout tokens.
+     * Notice the absence of the String text parameter.
+     */
     public static List<Pair<OffsetPosition, String>> characterPositionsUrlPatternWithPdfAnnotations(
         List<LayoutToken> layoutTokens,
         List<PDFAnnotation> pdfAnnotations) {
+        List<Integer> urlsInPage = layoutTokens.parallelStream()
+            .map(LayoutToken::getPage)
+            .distinct()
+            .collect(Collectors.toList());
+
+        List<PDFAnnotation> relevantURIAnnotations = pdfAnnotations.parallelStream()
+            .filter(a -> urlsInPage.contains(a.getPageNumber()) && a.getType().equals(PDFAnnotation.Type.URI))
+            .collect(Collectors.toList());
+
+        // we calculate the token positions of all the URLs in the layout tokens
+        Map<PDFAnnotation, List<LayoutToken>> annotationToTokensMap = new HashMap<>();
+        for (PDFAnnotation annotation : relevantURIAnnotations) {
+            List<LayoutToken> collect = layoutTokens.stream().filter(
+                annotation::cover
+            ).collect(Collectors.toList());
+
+            annotationToTokensMap.put(annotation, collect);
+        }
+
+
         List<OffsetPosition> urlPositions = Lexicon.characterPositionsUrlPattern(layoutTokens);
         List<Pair<OffsetPosition, String>> resultPositions = new ArrayList<>();
 

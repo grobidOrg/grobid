@@ -1,20 +1,16 @@
 package org.grobid.core.sax;
 
-import org.grobid.core.layout.Block;
-import org.grobid.core.layout.Page;
-import org.grobid.core.layout.PDFAnnotation;
 import org.grobid.core.document.Document;
-import org.grobid.core.layout.LayoutToken;
-import org.grobid.core.layout.GraphicObject;
 import org.grobid.core.layout.BoundingBox;
-import org.grobid.core.utilities.TextUtilities;
-import org.grobid.core.analyzers.GrobidAnalyzer;
+import org.grobid.core.layout.PDFAnnotation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.xml.sax.*;
-import org.xml.sax.helpers.*;
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *  SAX parser for ALTO XML representation of the annotations present on PDF files 
