@@ -1275,6 +1275,7 @@ public class Lexicon {
         List<Pair<OffsetPosition, String>> urlPositions = new ArrayList<>();
         for (PDFAnnotation annotation : mergedAnnotations) {
             String destination = annotation.getDestination();
+            // Identify the tokens covered by the annotation
             List<LayoutToken> urlTokens = layoutTokens.stream()
                 .filter(
                     annotation::cover
@@ -1285,8 +1286,11 @@ public class Lexicon {
                 continue;
             }
 
-            //Cleanup edges
+            //Refine the URL tokens based on the destination URL from the annotation
 
+
+
+            //Cleanup edges
             if (Iterables.getFirst(urlTokens, new LayoutToken()).getText().endsWith("(")) {
                 urlTokens.remove(0);
             }
@@ -1307,7 +1311,7 @@ public class Lexicon {
             int endTokenIndex = layoutTokens.indexOf(urlTokens.get(urlTokens.size() - 1));
             OffsetPosition resultPosition = new OffsetPosition(startTokenIndex, endTokenIndex);
 
-            urlPositions.add(Pair.of(resultPosition, annotation.getDestination()));
+            urlPositions.add(Pair.of(resultPosition, destination));
         }
 
         return urlPositions;
@@ -1320,25 +1324,6 @@ public class Lexicon {
     public static List<Pair<OffsetPosition, String>> characterPositionsUrlPatternWithPdfAnnotations(
         List<LayoutToken> layoutTokens,
         List<PDFAnnotation> pdfAnnotations) {
-        List<Integer> urlsInPage = layoutTokens.parallelStream()
-            .map(LayoutToken::getPage)
-            .distinct()
-            .collect(Collectors.toList());
-
-        List<PDFAnnotation> relevantURIAnnotations = pdfAnnotations.parallelStream()
-            .filter(a -> urlsInPage.contains(a.getPageNumber()) && a.getType().equals(PDFAnnotation.Type.URI))
-            .collect(Collectors.toList());
-
-        // we calculate the token positions of all the URLs in the layout tokens
-        Map<PDFAnnotation, List<LayoutToken>> annotationToTokensMap = new HashMap<>();
-        for (PDFAnnotation annotation : relevantURIAnnotations) {
-            List<LayoutToken> collect = layoutTokens.stream().filter(
-                annotation::cover
-            ).collect(Collectors.toList());
-
-            annotationToTokensMap.put(annotation, collect);
-        }
-
 
         List<OffsetPosition> urlPositions = Lexicon.characterPositionsUrlPattern(layoutTokens);
         List<Pair<OffsetPosition, String>> resultPositions = new ArrayList<>();
@@ -1494,8 +1479,16 @@ public class Lexicon {
         return resultPositions;
     }
 
+    /**
+     * Find and return the PDFAnnotation that best matches the given URL tokens, based on
+     * their coordinates, destination, or the last tokens in the sequence.
+     * This helps refine the association between detected URLs in the text and
+     * their corresponding PDF annotations, improving the accuracy of URL extraction
+     * from PDF documents.
+     */
     @Nullable
     private static PDFAnnotation matchPdfAnnotationsBasedOnCoordinatesDestinationOrLastTokens(List<PDFAnnotation> pdfAnnotations, List<LayoutToken> urlTokens) {
+
         LayoutToken lastToken = urlTokens.get(urlTokens.size() - 1);
         String urlString = LayoutTokensUtil.toText(urlTokens);
 
