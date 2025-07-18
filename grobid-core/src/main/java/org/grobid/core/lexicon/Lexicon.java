@@ -25,6 +25,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.PatternSyntaxException;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 import static org.grobid.core.utilities.Utilities.convertStringOffsetToTokenOffset;
 
@@ -1184,16 +1185,27 @@ public class Lexicon {
         List<LayoutToken> layoutTokens,
         List<PDFAnnotation> pdfAnnotations) {
 
-//        List<Pair<OffsetPosition, String>> characterPositionsAndDestinations = characterPositionsUrlPatternWithPdfAnnotations(layoutTokens, pdfAnnotations);
-//        List<OffsetPosition> characterPositions = characterPositionsAndDestinations.stream()
-//            .map(Pair::getLeft)
-//            .collect(Collectors.toList());
-//
-//        List<OffsetPosition> tokenOffsetPositions = convertStringOffsetToTokenOffset(characterPositions, layoutTokens);
+        List<Pair<OffsetPosition, String>> characterPositionsAndDestinations = characterPositionsUrlPatternWithPdfAnnotations(layoutTokens, pdfAnnotations);
+        List<OffsetPosition> characterPositions = characterPositionsAndDestinations.stream()
+            .map(Pair::getLeft)
+            .collect(Collectors.toList());
+        List<OffsetPosition> tokenOffsetPositionsWithRegex = convertStringOffsetToTokenOffset(characterPositions, layoutTokens);
+        List<Pair<OffsetPosition, String>> tokenOffsetPositionsAndDestinationsWithRegex = IntStream
+            .range(0, characterPositionsAndDestinations.size())
+            .mapToObj(i -> Pair.of(tokenOffsetPositionsWithRegex.get(i), characterPositionsAndDestinations.get(i).getRight())
+            )
+            .collect(Collectors.toList());
 
-        List<Pair<OffsetPosition, String>> tokenOffsetPositions = tokenPositionsAnyURLMatchingPdfAnnotations(layoutTokens, pdfAnnotations);
+        List<Pair<OffsetPosition, String>> tokenOffsetPositionsFromAnyURLs = tokenPositionsAnyURLMatchingPdfAnnotations(layoutTokens, pdfAnnotations).stream()
+            .filter(o-> o.getLeft().end - o.getLeft().start > 0)
+            .collect(Collectors.toList());
 
-        return tokenOffsetPositions;
+        // Consolidate the two lists
+        if (CollectionUtils.isEmpty(tokenOffsetPositionsFromAnyURLs)) {
+            return tokenOffsetPositionsAndDestinationsWithRegex;
+        } else {
+            return tokenOffsetPositionsFromAnyURLs;
+        }
     }
 
     public static OffsetPosition getTokenPositions(int startPos, int endPos, List<LayoutToken> layoutTokens) {
@@ -1207,10 +1219,12 @@ public class Lexicon {
         for (LayoutToken localToken : layoutTokens) {
             if (startPos <= tokenPos && (tokenPos + localToken.getText().length() <= endPos)) {
                 urlTokens.add(localToken);
-                if (startTokenIndex == -1)
+                if (startTokenIndex == -1) {
                     startTokenIndex = tokenIndex;
-                if (tokenIndex > endTokensIndex)
+                }
+                if (tokenIndex > endTokensIndex) {
                     endTokensIndex = tokenIndex;
+                }
             }
             if (tokenPos > endPos) {
                 break;
@@ -1220,6 +1234,42 @@ public class Lexicon {
         }
 
         return new OffsetPosition(startTokenIndex, endTokensIndex);
+    }
+
+    public static OffsetPosition getTokenIndexMatchingURLDestination(List<LayoutToken> urlTokens, String destination) {
+        String urlString = LayoutTokensUtil.toText(urlTokens);
+
+        String joinedNoSpaces = urlString.replaceAll("\\s", "");
+        String destinationNoSpaces = destination.replaceAll("\\s", "");
+
+        // Find the start index in the space-less string
+        int destStartNoSpaces = joinedNoSpaces.indexOf(destinationNoSpaces);
+        if (destStartNoSpaces == -1) {
+            // Not found, handle as needed
+            return new OffsetPosition();
+        }
+
+        int destEndNoSpaces = destStartNoSpaces + destinationNoSpaces.length();
+
+        // Map to token indices
+        int charCount = 0;
+        int indexStart = -1, indexEnd = -1;
+        for (int i = 0; i < urlTokens.size(); i++) {
+            String tokenText = urlTokens.get(i).getText();
+            for (int j = 0; j < tokenText.length(); j++) {
+                if (!Character.isWhitespace(tokenText.charAt(j))) {
+                    if (charCount == destStartNoSpaces && indexStart == -1) {
+                        indexStart = i;
+                    }
+                    if (charCount == destEndNoSpaces - 1) {
+                        indexEnd = i;
+                    }
+                    charCount++;
+                }
+            }
+            if (indexEnd != -1) break;
+        }
+        return new OffsetPosition(indexStart, indexEnd);
     }
 
     /**
@@ -1263,10 +1313,10 @@ public class Lexicon {
             merged.setType(first.getType());
 
             merged.setBoundingBoxes(annotations.stream()
-                    .map(PDFAnnotation::getBoundingBoxes)
-                    .filter(Objects::nonNull)
-                    .flatMap(List::stream)
-                    .collect(Collectors.toList()));
+                .map(PDFAnnotation::getBoundingBoxes)
+                .filter(Objects::nonNull)
+                .flatMap(List::stream)
+                .collect(Collectors.toList()));
 
             mergedAnnotations.add(merged);
         }
@@ -1286,9 +1336,27 @@ public class Lexicon {
                 continue;
             }
 
-            //Refine the URL tokens based on the destination URL from the annotation
+            // Refine the URL tokens based on the destination URL from the annotation.
+            // Differently from when we recognise the URLs via regex, here we may have to remove characters also in front of the URL.
+            String urlString = LayoutTokensUtil.toText(urlTokens);
+            String urlStringWithoutSpaces = urlString.replaceAll("\\s", "");
 
+            if (urlStringWithoutSpaces.contains(destination)) {
+                // In this case the list of tokens has catches too much, usually this should be limited to a few characters,
+                // but we cannot know it for sure.
 
+                int startUrl = urlString.indexOf(destination);
+                int endDestinationURL = startUrl + destination.length();
+                OffsetPosition newTokenPositions = getTokenPositions(startUrl, endDestinationURL, urlTokens);
+
+                if (newTokenPositions.end < 0) {
+                    // The difference is within the last token, even if we split the layout tokens, here,
+                    // it won't solve the problem so we limit collateral damage.
+                    newTokenPositions.end = urlTokens.size() - 1;
+                }
+
+                urlTokens = urlTokens.subList(newTokenPositions.start, newTokenPositions.end + 1);
+            }
 
             //Cleanup edges
             if (Iterables.getFirst(urlTokens, new LayoutToken()).getText().endsWith("(")) {
@@ -1424,7 +1492,7 @@ public class Lexicon {
                             }
                         }
 
-                        // We don't match anything after but we added spaces, we should take them back
+                        // We don't match anything after, but we added spaces, we should take them back
                         if (additionalTokens > 0) {
                             urlTokens = urlTokens.subList(0, urlTokens.size() - additionalTokens);
                             endPos -= additionalSpaces;

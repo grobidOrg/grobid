@@ -1,6 +1,5 @@
 package org.grobid.core.lexicon;
 
-import com.google.common.collect.Iterables;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.grobid.core.analyzers.GrobidAnalyzer;
@@ -592,8 +591,89 @@ public class LexiconTest {
 
         assertThat(tokenPositions.start, is(-1));
         assertThat(tokenPositions.end, is(-1));
-
     }
+
+    @Test
+    public void testGetTokenPosition2() throws Exception {
+
+        String input = "https://doi.org/10.1038/s41586-024-07891-2.";
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+
+        OffsetPosition tokenPositions = Lexicon.getTokenPositions(0, 42, tokens);
+
+        assertThat(tokenPositions.start, is(0));
+        //NOTE: when doing sublist of the output of this method the end is non-inclusive, so a +1 is needed
+        assertThat(tokenPositions.end, is(18));
+    }
+
+    @Test
+    public void testGetTokenPosition3() throws Exception {
+
+        String input = "(https://doi.org/10.1038/s41586-024-07891-2.";
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+
+        OffsetPosition tokenPositions = Lexicon.getTokenPositions(1, 43, tokens);
+
+        assertThat(tokenPositions.start, is(1));
+        //NOTE: when doing sublist of the output of this method the end is non-inclusive, so a +1 is needed
+        assertThat(tokenPositions.end, is(19));
+    }
+
+    @Test
+    public void testGetTokenPosition4() throws Exception {
+
+        String input = "(https://doi.org/10.1038/s41586-024-07891-2.";
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+
+        OffsetPosition tokenPositions = Lexicon.getTokenPositions(1, 43, tokens);
+
+        assertThat(tokenPositions.start, is(1));
+        //NOTE: when doing sublist of the output of this method the end is non-inclusive, so a +1 is needed
+        assertThat(tokenPositions.end, is(19));
+        assertThat(LayoutTokensUtil.toText(tokens.subList(tokenPositions.start, tokenPositions.end + 1)), is("https://doi.org/10.1038/s41586-024-07891-2"));
+    }
+
+    @Test
+    public void testGetTokenIndexMatchingURLDestination() throws Exception {
+        String input = "(https://doi.org/10.1038/s41586-024-07891-2.";
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+        String destination = "https://doi.org/10.1038/s41586-024-07891-2";
+
+        OffsetPosition tokenPositions = Lexicon.getTokenIndexMatchingURLDestination(tokens, destination);
+
+        assertThat(tokenPositions.start, is(1));
+        //NOTE: when doing sublist of the output of this method the end is non-inclusive, so a +1 is needed
+        assertThat(tokenPositions.end, is(19));
+        assertThat(LayoutTokensUtil.toText(tokens.subList(tokenPositions.start, tokenPositions.end + 1)), is("https://doi.org/10.1038/s41586-024-07891-2"));
+    }
+
+    @Test
+    public void testGetTokenIndexMatchingURLDestination2() throws Exception {
+        String input = "(https://doi.org/10.1038/ s41586-024-07891-2.";
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+        String destination = "https://doi.org/10.1038/s41586-024-07891-2";
+
+        OffsetPosition tokenPositions = Lexicon.getTokenIndexMatchingURLDestination(tokens, destination);
+
+        assertThat(tokenPositions.start, is(1));
+        //NOTE: when doing sublist of the output of this method the end is non-inclusive, so a +1 is needed
+        assertThat(tokenPositions.end, is(20));
+        assertThat(LayoutTokensUtil.toText(tokens.subList(tokenPositions.start, tokenPositions.end + 1)), is("https://doi.org/10.1038/ s41586-024-07891-2"));
+    }
+
+        @Test
+    public void testGetTokenIndexMatchingURLDestination3() throws Exception {
+        String input = "(https://doi.org/10.1038/ s41586-024- 07891-2.";
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+        String destination = "https://doi.org/10.1038/s41586-024-07891-2";
+
+        OffsetPosition tokenPositions = Lexicon.getTokenIndexMatchingURLDestination(tokens, destination);
+
+        assertThat(tokenPositions.start, is(1));
+        //NOTE: when doing sublist of the output of this method the end is non-inclusive, so a +1 is needed
+        assertThat(tokenPositions.end, is(21));
+    }
+
 
     @Test
     public void testCharacterPositionsUrlPattern_URLRegexMatchesTooLittle_shouldReturnCorrectInterval_1() throws Exception {
