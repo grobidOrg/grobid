@@ -1196,9 +1196,7 @@ public class Lexicon {
             )
             .collect(Collectors.toList());
 
-        List<Pair<OffsetPosition, String>> tokenOffsetPositionsFromAnyURLs = tokenPositionsAnyURLMatchingPdfAnnotations(layoutTokens, pdfAnnotations).stream()
-            .filter(o-> o.getLeft().end - o.getLeft().start > 0)
-            .collect(Collectors.toList());
+        List<Pair<OffsetPosition, String>> tokenOffsetPositionsFromAnyURLs = tokenPositionsAnyURLMatchingPdfAnnotations(layoutTokens, pdfAnnotations);
 
         // Consolidate the two lists
         if (CollectionUtils.isEmpty(tokenOffsetPositionsFromAnyURLs)) {

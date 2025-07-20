@@ -1675,7 +1675,7 @@ public class TEIFormatter {
                 List<Pair<OffsetPosition, String>> offsetPositionsAndDestinationUrls = Lexicon.tokenPositionUrlPatternWithPdfAnnotations(clusterTokens, doc.getPDFAnnotations());
 
                 offsetPositionsAndDestinationUrls.stream()
-                    .filter(opu -> opu.getLeft().end - opu.getLeft().start > 0)
+//                    .filter(opu -> opu.getLeft().end - opu.getLeft().start > 0)
                     .forEach(opu -> {
                             // We correct the latest token here, since later we will do a substring in the shared code,
                             // and we cannot add a +1 there.
