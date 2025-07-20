@@ -1,16 +1,12 @@
 package org.grobid.core.lexicon;
 
-import org.apache.commons.lang3.StringUtils;
 import org.grobid.core.analyzers.GrobidAnalyzer;
-import org.grobid.core.layout.BoundingBox;
-import org.grobid.core.layout.PDFAnnotation;
-import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.utilities.LayoutTokensUtil;
 import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.utilities.LayoutTokensUtil;
+import org.grobid.core.utilities.OffsetPosition;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
