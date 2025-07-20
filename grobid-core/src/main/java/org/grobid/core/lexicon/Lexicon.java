@@ -1360,6 +1360,10 @@ public class Lexicon {
             if (Iterables.getFirst(urlTokens, new LayoutToken()).getText().endsWith("(")) {
                 urlTokens.remove(0);
             }
+
+            if (CollectionUtils.isEmpty(urlTokens)) {
+                continue;
+            }
             if (Iterables.getLast(urlTokens).getText().endsWith(")")) {
                 long openedParenthesis = LayoutTokensUtil.toText(urlTokens).chars().filter(ch -> ch == '(').count();
                 long closedParenthesis = LayoutTokensUtil.toText(urlTokens).chars().filter(ch -> ch == ')').count();
@@ -1368,8 +1372,16 @@ public class Lexicon {
                 }
             }
 
+            if (CollectionUtils.isEmpty(urlTokens)) {
+                continue;
+            }
+
             if (Iterables.getLast(urlTokens).getText().equals(".")) {
                 urlTokens.remove(urlTokens.size() - 1);
+            }
+
+            if (CollectionUtils.isEmpty(urlTokens)) {
+                continue;
             }
 
             //Find the token index positions in the layoutTokens object
