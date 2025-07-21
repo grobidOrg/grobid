@@ -88,7 +88,7 @@ public class LexiconTest {
     }
 
     @Test
-    @Ignore("This test will fail, it can be used to test a real case when updating the regular exception")
+    @Ignore("This test will fail, it can be used to test a real case when updating the regular expression")
     public void testCharacterPositionsUrlPattern_URL_shouldReturnCorrectInterval_2() throws Exception {
         final String input = "720 137409 The Government of Lao PDR 2005 Forestry Strategy to the year 2020 of the Lao PDR (available at: https://faolex.fao.org/ docs/pdf/lao144178.pdf)";
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
@@ -229,12 +229,14 @@ public class LexiconTest {
             "\n";
 
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
-        LayoutToken lastTokenOfTheURL = tokenisedInput.get(19);
-        lastTokenOfTheURL.setPage(9);
-        lastTokenOfTheURL.setX(530.9363448275863);
-        lastTokenOfTheURL.setY(538.153);
-        lastTokenOfTheURL.setWidth(4.363655172413793);
-        lastTokenOfTheURL.setHeight(9.702);
+        for (int i = 10; i < 23; i++) {
+            LayoutToken token = tokenisedInput.get(i);
+            token.setPage(9);
+            token.setX(530.9363448275863);
+            token.setY(538.153);
+            token.setWidth(4.363655172413793);
+            token.setHeight(9.702);
+        }
 
         PDFAnnotation annotation = new PDFAnnotation();
         annotation.setPageNumber(9);
@@ -268,12 +270,20 @@ public class LexiconTest {
             "\n";
 
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
-        LayoutToken lastTokenOfTheURL = tokenisedInput.get(19);
-        lastTokenOfTheURL.setPage(9);
-        lastTokenOfTheURL.setX(530.9363448275863);
-        lastTokenOfTheURL.setY(538.153);
-        lastTokenOfTheURL.setWidth(4.363655172413793);
-        lastTokenOfTheURL.setHeight(9.702);
+        for (int i = 10; i < 23; i++) {
+            LayoutToken token = tokenisedInput.get(i);
+            token.setPage(9);
+            token.setX(530.9363448275863);
+            token.setY(538.153);
+            token.setWidth(4.363655172413793);
+            token.setHeight(9.702);
+        }
+//        LayoutToken lastTokenOfTheURL = tokenisedInput.get(19);
+//        lastTokenOfTheURL.setPage(9);
+//        lastTokenOfTheURL.setX(530.9363448275863);
+//        lastTokenOfTheURL.setY(538.153);
+//        lastTokenOfTheURL.setWidth(4.363655172413793);
+//        lastTokenOfTheURL.setHeight(9.702);
 
         PDFAnnotation annotation = new PDFAnnotation();
         annotation.setPageNumber(9);
@@ -294,7 +304,6 @@ public class LexiconTest {
         assertThat(inputReal.substring(url.start, url.end), is("https://github.com/lfoppiano/ supercon2"));
     }
 
-    @Ignore("need to do another iteration on this to manage better the urlTokens with a single token ")
     @Test
     public void testCharacterPositionsUrlPatternWithPDFAnnotations2_URL_shouldReturnCorrectIntervalBasedOnText() throws Exception {
         final String input = "Table S1: Gene annotations from which exon-exon junctions were extracted and unioned to obtain \n" +
@@ -305,17 +314,20 @@ public class LexiconTest {
             "(SIB) genes has the most, with over 400,000 junctions for each of hg19 and hg38. \n";
 
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
-        LayoutToken lastTokenOfTheURL = tokenisedInput.get(97);
-        lastTokenOfTheURL.setPage(19);
-        lastTokenOfTheURL.setX(465.54675000000003);
-        lastTokenOfTheURL.setY(404.908);
-        lastTokenOfTheURL.setWidth(68.727);
-        lastTokenOfTheURL.setHeight(9.0873);
+        for (int i = 91; i < 105; i++) {
+            LayoutToken token = tokenisedInput.get(i);
+            token.setPage(2);
+            token.setX(451.809);
+            token.setY(391.933);
+            token.setWidth(12.939499999999999);
+            token.setHeight(6.279);
+        }
 
         PDFAnnotation annotation = new PDFAnnotation();
-        annotation.setPageNumber(19);
+        annotation.setPageNumber(2);
         List<BoundingBox> boundingBoxes = new ArrayList<>();
-        boundingBoxes.add(BoundingBox.fromPointAndDimensions(19, 401.551, 402.396, 139.445, 12.901999999999987));
+        boundingBoxes.add(BoundingBox.fromPointAndDimensions(2, 450.81, 390.881, 79.61700000000002, 8.283000000000015));
+        boundingBoxes.add(BoundingBox.fromPointAndDimensions(2, 303.174, 399.386, 38.622000000000014, 8.274000000000001));
         annotation.setBoundingBoxes(boundingBoxes);
         annotation.setDestination("http://www.gencodegenes.org/releases/");
         annotation.setType(PDFAnnotation.Type.URI);
@@ -662,7 +674,7 @@ public class LexiconTest {
         assertThat(LayoutTokensUtil.toText(tokens.subList(tokenPositions.start, tokenPositions.end + 1)), is("https://doi.org/10.1038/ s41586-024-07891-2"));
     }
 
-        @Test
+    @Test
     public void testGetTokenIndexMatchingURLDestination3() throws Exception {
         String input = "(https://doi.org/10.1038/ s41586-024- 07891-2.";
         List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);

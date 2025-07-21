@@ -1202,6 +1202,14 @@ public class Lexicon {
         if (CollectionUtils.isEmpty(tokenOffsetPositionsFromAnyURLs)) {
             return tokenOffsetPositionsAndDestinationsWithRegex;
         } else {
+            // We add possible URL that weren't bound to any PDF annotations
+            for (Pair<OffsetPosition, String> item : tokenOffsetPositionsAndDestinationsWithRegex) {
+                String dest = item.getRight();
+
+                if (dest == null) {
+                    tokenOffsetPositionsFromAnyURLs.add(item);
+                }
+            }
             return tokenOffsetPositionsFromAnyURLs;
         }
     }
@@ -1345,6 +1353,11 @@ public class Lexicon {
 
                 int startUrl = urlString.indexOf(destination);
                 int endDestinationURL = startUrl + destination.length();
+                if (startUrl < 0) {
+                    // If we cannot find the destination in the URL string, we try to find it without spaces
+                    startUrl = urlStringWithoutSpaces.indexOf(destination);
+                    endDestinationURL = startUrl + urlString.length();
+                }
                 OffsetPosition newTokenPositions = getTokenPositions(startUrl, endDestinationURL, urlTokens);
 
                 if (newTokenPositions.end < 0) {
@@ -1552,6 +1565,7 @@ public class Lexicon {
             OffsetPosition position = new OffsetPosition();
             position.start = startPos;
             position.end = endPos;
+            // LF: if the destination is null, we will use the URL string int he tei construction
             resultPositions.add(Pair.of(position, destination));
         }
         return resultPositions;
