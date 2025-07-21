@@ -1192,8 +1192,7 @@ public class Lexicon {
         List<OffsetPosition> tokenOffsetPositionsWithRegex = convertStringOffsetToTokenOffset(characterPositions, layoutTokens);
         List<Pair<OffsetPosition, String>> tokenOffsetPositionsAndDestinationsWithRegex = IntStream
             .range(0, characterPositionsAndDestinations.size())
-            .mapToObj(i -> Pair.of(tokenOffsetPositionsWithRegex.get(i), characterPositionsAndDestinations.get(i).getRight())
-            )
+            .mapToObj(i -> Pair.of(tokenOffsetPositionsWithRegex.get(i), characterPositionsAndDestinations.get(i).getRight()))
             .collect(Collectors.toList());
 
         List<Pair<OffsetPosition, String>> tokenOffsetPositionsFromAnyURLs = tokenPositionsAnyURLMatchingPdfAnnotations(layoutTokens, pdfAnnotations);
@@ -1207,7 +1206,13 @@ public class Lexicon {
                 String dest = item.getRight();
 
                 if (dest == null) {
-                    tokenOffsetPositionsFromAnyURLs.add(item);
+                    // if the destination offsets does not overlap any other offsets, we add it
+                    boolean overlaps = tokenOffsetPositionsFromAnyURLs.stream()
+                        .anyMatch(existingItem -> existingItem.getLeft().overlaps(item.getLeft()));
+
+                    if (!overlaps) {
+                        tokenOffsetPositionsFromAnyURLs.add(item);
+                    }
                 }
             }
             return tokenOffsetPositionsFromAnyURLs;
