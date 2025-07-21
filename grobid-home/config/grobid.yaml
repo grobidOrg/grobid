@@ -132,6 +132,14 @@ grobid:
           max_sequence_length: 3000
           batch_size: 10
 
+    - name: "segmentation-article-dh-law-footnotes"
+      engine: "wapiti"
+      wapiti:
+        # wapiti training parameters, they will be used at training time only
+        epsilon: 0.0000001
+        window: 50
+        nbMaxIterations: 2000
+
     - name: "segmentation-article-light"
       # engine inherited from "segmentation"
       wapiti:
