@@ -1,8 +1,68 @@
 <?xml version="1.0" ?>
-<tei space="preserve">
-	<teiHeader>
-		<fileDesc xml:id="-1"/>
-	</teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title level="a">Urheberrecht und Zugang in einer digitalen Welt – Urheberrechtliche Fragestellungen des Zugangs für Gedächtnisinstitutionen und die Digital Humanities –</title>
+        <author>
+          <persName>
+            <forename>Katharina de la</forename>
+            <surname>Durantaye</surname>
+          </persName>
+        </author>
+        <author>
+          <persName>
+            <forename>Benjamin</forename>
+            <surname>Raue</surname>
+          </persName>
+        </author>
+        <respStmt>
+          <persName xml:id="cb">Christian Boulanger</persName>
+          <resp>Annotator</resp>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <date when="2025-07-20T15:25:03.927Z">20.7.2025 17:25:03</date>
+          <title>Grobid document segmentation</title>
+        </edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Nomos Verlag</publisher>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+        </availability>
+        <date type="publication">2020</date>
+        <idno type="DOI">10.5771/2699-1284-2020-1-83</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Katharina de la Durantaye, Benjamin Raue. (2020). Urheberrecht und Zugang in einer digitalen Welt – Urheberrechtliche Fragestellungen des Zugangs für Gedächtnisinstitutionen und die Digital Humanities –. RuZ - Recht und Zugang, 1(1), . DOI: 10.5771/2699-1284-2020-1-83</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application version="1.0" ident="grobid">
+          <label>https://grobid.readthedocs.io/</label>
+        </application>
+        <application version="1.0" ident="pdf-tei-editor">
+          <label>https://github.com/mpilhlt/pdf-tei-editor</label>
+        </application>
+        <!-- for reproducibility -->
+        <application version="1.0" ident="model">
+          <label>lfoppiano/grobid:latest-develop</label>
+          <desc>https://hub.docker.com/layers/lfoppiano/grobid/latest-develop/images/sha256-735fa2c8facb6f95adef5bf344f7223c2e20aadc9c048f624b83b19d3fbef07b</desc>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-07-11">
+        <desc>Extracted 2025-07-11 14:39:36</desc>
+      </change>
+      <change when="2025-07-22" who="#cb">
+        Corrections
+      </change>
+    </revisionDesc>
+  </teiHeader>
 	<text xml:lang="en">
       <front>Urheberrecht <lb/>Prof. Dr. Katharina de la Durantaye und Prof. Dr. Benjamin Raue * <lb/>Urheberrecht und Zugang in einer digitalen Welt <lb/>-Urheberrechtliche Fragestellungen des Zugangs für <lb/>Gedächtnisinstitutionen und die Digital Humanities -<lb/></front>
       
@@ -128,9 +188,9 @@
       <!-- misplaced header -->
         <page>92 <lb/></page>
 
-        <note place="headnote">de la Durantaye und Raue • Urheberrecht und Zugang <lb/></note>
+        <note type="headnote">de la Durantaye und Raue • Urheberrecht und Zugang <lb/></note>
       
-        <note place="footnote">https://doi.org/10.5771/2699-1284-2020-1-83, am 11.07.2025, 10:55:52 <lb/>Open Access -<lb/>-https://www.nomos-elibrary.de/de/agb <lb/></note>
+        <note type="footnote">https://doi.org/10.5771/2699-1284-2020-1-83, am 11.07.2025, 10:55:52 <lb/>Open Access -<lb/>-https://www.nomos-elibrary.de/de/agb <lb/></note>
         <!-- missing header -->
 
         <body>Zu Gute kommt den Forschern aber, dass die in urheberrechtlich geschützten Mate-<lb/>rialien enthaltenen Informationen typischerweise nicht urheberrechtlich geschützt sind <lb/>(mit Ausnahme von fiktionalen Werken). Lediglich wenn sie die wissenschaftlichen Er-<lb/>kenntnisse anhand von längeren Textpassagen oder von Bild-, Film-oder Tonaufnah-<lb/>men veranschaulichen wollen, müssen sie sich auf einen gesetzlichen Erlaubnistatbe-<lb/>stands berufen können. Auch wenn sie von gemeinfreien Datenbeständen auf urheber-<lb/>rechtlich geschützte Materialien verlinken, um Linked Open Data zu erstellen, müssen <lb/>sie grundsätzlich urheberrechtliche Wertungen berücksichtigen. 45 Das Verlinken auf <lb/>urheberrechtlich geschützte Inhalte ist danach urheberrechtsfrei, wenn diese mit Zu-<lb/>stimmung des Urhebers frei verfügbar sind und keine Zugangssperren überwunden <lb/>werden. Sind die Inhalte rechtswidrig veröffentlicht worden, dann haftet der Linkset-<lb/>zer, wenn er dies weiß oder wissen müsste. Bei der Ausgestaltung der Sorgfaltspflich-<lb/>ten 46 sind allerdings die Informations-und die Wissenschaftsfreiheit angemessen zu <lb/>berücksichtigen. <lb/><!-- missing "5." -->Nachnutzungsphase <lb/>Die gute wissenschaftliche Praxis erfordert, dass Forschungsdaten auch nach Ab-<lb/>schluss eines Projekts gespeichert und Dritten für die Überprüfung der Ergebnisse so-<lb/>wie für die Anschlussforschung zur Verfügung gestellt werden. 47 Zugleich gilt: Das öf-<lb/>fentliche Zurverfügungstellen urheberrechtlich geschützter Materialien in Forschungs-<lb/>repositorien greift in das Recht der öffentlichen Zugänglichmachung ( § 19a UrhG) ein. <lb/>Die Forscher müssen sich daher entweder auf eine Zustimmung des Urhebers oder auf <lb/>eine gesetzliche Schranke stützen können. Dieses Problem können sie unter Umstän-<lb/>den umgehen, indem sie Texte in einem abgeleiteten, reduzierten Textformat bereitstel-<lb/>len, das von der urheberrechtlich geschützten Form entkleidet ist, aber für bestimmte <lb/>Fragestellungen weiterverwendet werden kann. 48 <lb/>Derzeit verpflichtet § 60d UrhG den Forscher, das Korpus und die Vervielfältigun-<lb/>gen des Ursprungsmaterials nach Abschluss der Forschungsarbeiten zu löschen. Er <lb/>darf sie zwar an Bibliotheken und andere Einrichtungen des Kulturerbes zur dauerhaf-<lb/>ten Aufbewahrung übermitteln. Unklar ist aber, inwiefern diese dem übermittelnden <lb/><!-- misplaced "5." -->5. <lb/></body>
@@ -160,4 +220,4 @@
         <note place="footnote">https://doi.org/10.5771/2699-1284-2020-1-83, am 11.07.2025, 10:55:52 <lb/>Open Access -<lb/>-https://www.nomos-elibrary.de/de/agb</note>
 
 	</text>
-</tei>
+</TEI>

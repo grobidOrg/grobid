@@ -1,8 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tei space="preserve">
-	<teiHeader>
-		<fileDesc xml:id="-1"/>
-	</teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" space="preserve">
+  <teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title level="a">KlimaSeniorinnen: Changing Legal Opportunity Structures in the Face of the Climate Crisis</title>
+      <author>
+        <persName>
+          <forename>Teresa</forename>
+          <surname>Weber</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cb">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2025-07-30T15:50:00.000Z">30.7.2025 17:50:00</date>
+        <title>Grobid document segmentation corrected</title>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Austrian Law Journal</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2024</date>
+      <idno type="DOI">10.25364/01.11:2024.1.5</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Teresa Weber. (2024). KlimaSeniorinnen: Changing Legal Opportunity Structures in the Face of the Climate Crisis. Austrian Law Journal, 11(1), 101-116. DOI: 10.25364/01.11:2024.1.5</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="grobid">
+        <label>https://grobid.readthedocs.io/</label>
+      </application>
+      <application version="1.0" ident="pdf-tei-editor">
+        <label>https://github.com/mpilhlt/pdf-tei-editor</label>
+      </application>
+      <application version="1.0" ident="model">
+        <label>lfoppiano/grobid:latest-develop</label>
+        <desc>https://hub.docker.com/layers/lfoppiano/grobid/latest-develop/images/sha256-735fa2c8facb6f95adef5bf344f7223c2e20aadc9c048f624b83b19d3fbef07b</desc>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2025-07-13">
+      <desc>Extracted 2025-07-13</desc>
+    </change>
+    <change when="2025-07-31T12:59:08.998Z" status="draft" who="#cb">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
     <text xml:lang="en">
         <front>ISSN: 2409-6911 <lb/>(CC-BY)4.0license <lb/>www.austrian-law-jounal.at <lb/>DOI: 10.25364/01.11:2024.1.5. <lb/>KlimaSeniorinnen: Changing Legal Opportunity Structures in the Face of <lb/>the Climate Crisis <lb/>Teresa Weber * , Vienna <lb/>Abstract: The essay discusses the recent KlimaSeniorinnen judgement of the European Court <lb/>of Human Rights. Selected issues such as standing for associations are elaborated on in more <lb/>detail. <lb/>Abstract: Der Beitrag bespricht die KlimaSeniorinnen Entscheidung des EGMR vom April 2024. <lb/>Ausgewählte Fragestellungen dazu, wie etwa rund um die Beschwerdberechtigung von <lb/>Vereinigungen, werden näher diskutiert. <lb/>Keywords: Climate litigation; Strategic Litigation; Access to Justice; Standing for NGOs; locus <lb/>standi; Legal Opportunity Structures. <lb/></front>
 
@@ -155,4 +208,4 @@
         <listBibl>101 Positioning litigation as one of many avenues to strengthen climate protection: Vanhala, Coproducing the <lb/>Endangered Polar Bear: Science, Climate Change, and Legal Mobilization, Law &amp; Policy 42:2 (2020) 105 ff. For a <lb/>fundamental critique of the role of courts for social change cf eg Rosenberg, Tilting at Windmills: Brown II and <lb/>the Hopeless Quest to Resolve Deep-Seated Social Conflict through Litigation, Law &amp; Inequality: A Journal of <lb/>Theory and Practice 24:1 (2006) 31 ff; however, Rosenberg also points to the relevance of legislative action, and <lb/>this is exactly what KlimaSeniorinnen and further climate litigation efforts aim at triggering. <lb/>102 It should also be noted that there are a few climate cases still pending, most notably Müllner / Austria; cf <lb/>Prantl, After Switzerland Comes Austria. Why the ECtHR could soon grant individual standing in a climate <lb/>mitigation case for the first time, Verfassungsblog, 24.05.2024, https://verfassungsblog.de/after-switzerland-<lb/>comes-austria/. <lb/>103 Possible consequences for the EU system of legal protection are discussed by Eeckhout, From Strasbourg to <lb/>Luxembourg? The KlimaSeniorinnen judgment and EU remedies, Verfassungsblog, 05.06.2024, <lb/>https://verfassungsblog.de/from-strasbourg-to-luxembourg/. Observations on the role of collective actors (that <lb/>has been strengthened by the KlimaSeniorinnen judgement) for mobilizing the law with many references: Hahn, <lb/>Strategische Prozessführung im Klagekollektiv (2024) BadenBaden Nomos, 215 ff.</listBibl>
 
 	</text>
-</tei>
+</TEI>

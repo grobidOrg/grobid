@@ -1,8 +1,63 @@
-<?xml version="1.0" ?>
-<tei space="preserve">
-	<teiHeader>
-		<fileDesc xml:id="-1"/>
-	</teiHeader>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" space="preserve">
+  <teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title level="a">Bibliotheksrecht als Zugangsrecht und die Herausforderungen der Digitalisierung</title>
+      <author>
+        <persName>
+          <forename>Eric</forename>
+          <surname>Steinhauer</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cb">Christian Boulanger</persName>
+        <resp>Contributor</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2025-07-27T21:22:29.872Z">27.7.2025 23:22:29</date>
+        <title>Grobid document segmentation corrected</title>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Nomos Verlag</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2020</date>
+      <idno type="DOI">10.5771/2699-1284-2020-1-16</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Eric Steinhauer. (2020). Bibliotheksrecht als Zugangsrecht und die Herausforderungen der Digitalisierung. RuZ - Recht und Zugang, 1(1), 16-30. DOI: 10.5771/2699-1284-2020-1-16</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="grobid">
+        <label>https://grobid.readthedocs.io/</label>
+      </application>
+      <application version="1.0" ident="pdf-tei-editor">
+        <label>https://github.com/mpilhlt/pdf-tei-editor</label>
+      </application>
+      <application version="1.0" ident="model">
+        <label>lfoppiano/grobid:latest-develop</label>
+        <desc>https://hub.docker.com/layers/lfoppiano/grobid/latest-develop/images/sha256-735fa2c8facb6f95adef5bf344f7223c2e20aadc9c048f624b83b19d3fbef07b</desc>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2025-07-13">
+      <desc>Extracted 2025-07-13</desc>
+    </change>
+    <change when="2025-07-27T21:23:25.267Z" status="draft" who="#cb">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2025-07-30T13:16:37.461Z" status="draft" who="#cb">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
 	<text xml:lang="en">
 			<front>Bibliotheken <lb/>Prof. Dr. Eric Steinhauer * <lb/>Bibliotheksrecht als Zugangsrecht und die Herausforderungen <lb/>der Digitalisierung <lb/></front>
 			<body>Einleitung <lb/>Möchte man mit einem Wort beschreiben, worum es beim Thema Bibliotheksrecht im <lb/>Kern geht, so heißt dieses Wort: Zugang. Wenn Bibliotheken publizierte Informatio-<lb/>nen sammeln, erschließen und vermitteln, dann dienen alle diese Arbeitsschritte, die <lb/>herkömmlicherweise das Tätigkeitsfeld von Bibliotheken kennzeichnen, 1 am Ende nur <lb/>einem Ziel, nämlich diese Informationen den Nutzerinnen und Nutzern zugänglich zu <lb/>machen. Fraglich und möglicherweise auch streitig ist allein, wie zugänglich der Bi-<lb/>bliotheksbestand tatsächlich und im Einzelfall ist oder sein soll. <lb/>Auf diese Frage gibt das Bibliotheksrecht eine Antwort, wenn es im Benutzungs-<lb/>recht Kriterien für die Zulassung zur Bibliotheksbenutzung aufstellt und deren Einhal-<lb/>tung durch Sanktionierungen wie Geldzahlung bei der Beschädigung von Bibliotheks-<lb/>gut, Mahngebühren bei verspäteter Buchrückgabe oder den Ausschluss von der Benut-<lb/>zung bei Missachtung von Benutzungsbestimmungen sicherstellt. Die Entscheidung, <lb/>problematische Inhalte nur bestimmten Personen zugänglich zu machen oder sie im so <lb/>genannten &quot;Giftschrank&quot; gänzlich der Benutzung zu entziehen, 2 stellt ebenfalls eine <lb/>Zugangsregelung dar. <lb/>Bevor über Benutzungsregeln gesprochen werden kann, muss ein Buch jedoch erst <lb/>erworben werden. Ob eine bestimmte Publikation in die Sammlung der Bibliothek <lb/>aufgenommen werden soll oder nicht, ist natürlich auch eine Zugangsfrage. Zwar sind <lb/>im Buchhandel erhältliche Titel sicher nicht unzugänglich, doch stellt bereits die Not-<lb/>wendigkeit, ein Buch selbst zu erwerben, eine gewisse Hürde dar, seinen Inhalt einfach <lb/>und unkompliziert zur Kenntnis zu nehmen. Spätestens dann, wenn ein Werk nicht <lb/>mehr lieferbar ist, sind es allein die Bibliotheken, die es zuverlässig zur Verfügung stel-<lb/>I. <lb/></body>
@@ -163,4 +218,4 @@
 
 
 	</text>
-</tei>
+</TEI>

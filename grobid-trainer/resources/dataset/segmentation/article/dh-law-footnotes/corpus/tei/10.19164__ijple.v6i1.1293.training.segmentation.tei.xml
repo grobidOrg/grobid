@@ -1,8 +1,54 @@
 <?xml version="1.0" ?>
-<tei space="preserve">
-	<teiHeader>
-		<fileDesc xml:id="-1"/>
-	</teiHeader>
+<tei xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title level="a">From the Field: Law-Related Education as a Branch of Civics Education in the United States</title>
+        <author>
+          <persName>
+            <forename>Latia</forename>
+            <surname>Ward</surname>
+          </persName>
+        </author>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <date when="2025-07-20T15:25:03.927Z">20.7.2025 17:25:03</date>
+          <title>Grobid document segmentation corrected</title>
+        </edition>
+      </editionStmt>		
+      <publicationStmt>
+        <publisher>Northumbria University Library</publisher>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+        </availability>
+        <date type="publication">2022</date>
+        <idno type="DOI">10.19164/ijple.v6i1.1293</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Latia Ward. (2022). From the Field: Law-Related Education as a Branch of Civics Education in the United States. International Journal of Public Legal Education, 6(1). DOI: 10.19164/ijple.v6i1.1293</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application version="1.0" ident="grobid">
+          <label>https://grobid.readthedocs.io/</label>
+        </application>
+        <application version="1.0" ident="pdf-tei-editor">
+          <label>https://github.com/mpilhlt/pdf-tei-editor</label>
+        </application>
+        <application version="1.0" ident="model">
+          <label>lfoppiano/grobid:latest-develop</label>
+          <desc>https://hub.docker.com/layers/lfoppiano/grobid/latest-develop/images/sha256-735fa2c8facb6f95adef5bf344f7223c2e20aadc9c048f624b83b19d3fbef07b</desc>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2025-07-12">
+        <desc>Extracted 2025-07-12 13:05:47</desc>
+      </change>
+    </revisionDesc>
+  </teiHeader>
 	<text xml:lang="en">
 			<page>4 <lb/></page>
 
