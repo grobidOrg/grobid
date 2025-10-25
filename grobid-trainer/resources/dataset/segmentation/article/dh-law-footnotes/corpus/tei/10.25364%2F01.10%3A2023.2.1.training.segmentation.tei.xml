@@ -1,4 +1,4 @@
-<tei xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
   <teiHeader>
   <fileDesc>
     <titleStmt>
@@ -343,4 +343,4 @@
 		<listBibl>227 Vgl Luhmann, Ausdifferenzierung des Rechts (1999), 146, <lb/>228 Art 1 GRC. </listBibl>
 
 	</text>
-</tei>
+</TEI>
