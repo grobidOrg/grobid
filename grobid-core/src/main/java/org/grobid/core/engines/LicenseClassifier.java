@@ -8,8 +8,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.grobid.core.data.CopyrightsLicense;
 import org.grobid.core.data.CopyrightsLicense.CopyrightsOwner;
 import org.grobid.core.data.CopyrightsLicense.License;
-import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.jni.DeLFTClassifierModel;
+import org.grobid.core.engines.tagging.ClassifierFactory;
+import org.grobid.core.engines.tagging.GenericClassifier;
 
 import com.fasterxml.jackson.core.*;
 import com.fasterxml.jackson.databind.*;
@@ -22,11 +22,11 @@ public class LicenseClassifier {
     private static final Logger LOGGER = LoggerFactory.getLogger(LicenseClassifier.class);
 
     // multi-class/multi-label classifier
-    private DeLFTClassifierModel classifierCopyrightsOwner = null;
-    private DeLFTClassifierModel classifierLicense = null;
+    private GenericClassifier classifierCopyrightsOwner = null;
+    private GenericClassifier classifierLicense = null;
 
     // binary classifiers to be added if used
-    private Boolean useBinary = false; 
+    private Boolean useBinary = false;
 
     private JsonParser parser;
 
@@ -51,12 +51,13 @@ public class LicenseClassifier {
     }
 
     private LicenseClassifier() {
-        this.classifierCopyrightsOwner = new DeLFTClassifierModel("copyright", GrobidProperties.getDelftArchitecture("copyright"));
-        this.classifierLicense = new DeLFTClassifierModel("license", GrobidProperties.getDelftArchitecture("license"));
+        this.classifierCopyrightsOwner = ClassifierFactory.getClassifier("copyright");
+        this.classifierLicense = ClassifierFactory.getClassifier("license");
     }
 
     /**
      * Classify a simple piece of text
+     * 
      * @return list of predicted labels/scores pairs
      */
     public CopyrightsLicense classify(String text) throws Exception {
@@ -69,13 +70,14 @@ public class LicenseClassifier {
 
     /**
      * Classify an array of texts
+     * 
      * @return list of predicted labels/scores pairs for each text
      */
     public List<CopyrightsLicense> classify(List<String> texts) throws Exception {
         if (CollectionUtils.isEmpty(texts))
             return null;
 
-        LOGGER.info("classify: " + texts.size());
+        LOGGER.debug("classify: " + texts.size());
 
         String copyrightOwnerAsJson = this.classifierCopyrightsOwner.classify(texts);
         String licencesAsJson = this.classifierLicense.classify(texts);
@@ -92,11 +94,11 @@ public class LicenseClassifier {
             JsonNode root_copyrights = mapper.readTree(copyrightOwnerAsJson);
             JsonNode root_licenses = mapper.readTree(licencesAsJson);
 
-            int entityRank =0;
+            int entityRank = 0;
             JsonNode classificationsNodeCopyrights = root_copyrights.findPath("classifications");
             JsonNode classificationsNodeLicenses = root_licenses.findPath("classifications");
-            if ((classificationsNodeCopyrights != null) && (!classificationsNodeCopyrights.isMissingNode()) && 
-                (classificationsNodeLicenses != null) && (!classificationsNodeLicenses.isMissingNode())) {
+            if ((classificationsNodeCopyrights != null) && (!classificationsNodeCopyrights.isMissingNode()) &&
+                    (classificationsNodeLicenses != null) && (!classificationsNodeLicenses.isMissingNode())) {
                 Iterator<JsonNode> ite1 = classificationsNodeCopyrights.elements();
                 Iterator<JsonNode> ite2 = classificationsNodeLicenses.elements();
                 while (ite1.hasNext()) {
@@ -106,7 +108,7 @@ public class LicenseClassifier {
                     List<String> owners = CopyrightsLicense.copyrightOwners;
                     List<Double> scoreFields = new ArrayList<>();
 
-                    for(String fieldOwners : owners) {
+                    for (String fieldOwners : owners) {
                         JsonNode fieldNode = classificationsNode.findPath(fieldOwners);
                         double scoreField = 0.0;
                         if ((fieldNode != null) && (!fieldNode.isMissingNode())) {
@@ -119,7 +121,7 @@ public class LicenseClassifier {
                     double scoreUndecided = 0.0;
                     int rank = 0;
                     for (Double scoreField : scoreFields) {
-                        if (scoreField>0.5 && scoreField > bestProb) {
+                        if (scoreField > 0.5 && scoreField > bestProb) {
                             owner = CopyrightsOwner.valueOf(owners.get(rank).toUpperCase());
                             bestProb = scoreField;
                         }
@@ -142,7 +144,7 @@ public class LicenseClassifier {
                     List<String> licenses = CopyrightsLicense.licenses;
                     scoreFields = new ArrayList<>();
 
-                    for(String fieldLicenses : licenses) {
+                    for (String fieldLicenses : licenses) {
                         JsonNode fieldNode = classificationsNode.findPath(fieldLicenses);
                         double scoreField = 0.0;
                         if ((fieldNode != null) && (!fieldNode.isMissingNode())) {
@@ -155,7 +157,7 @@ public class LicenseClassifier {
                     License license = null;
                     rank = 0;
                     for (Double scoreField : scoreFields) {
-                        if (scoreField>0.5 && scoreField > bestProb) {
+                        if (scoreField > 0.5 && scoreField > bestProb) {
                             String valueLicense = licenses.get(rank);
                             valueLicense = valueLicense.replace("-", "");
                             license = License.valueOf(valueLicense.toUpperCase());
@@ -178,10 +180,10 @@ public class LicenseClassifier {
                     entityRank++;
                 }
             }
-        } catch(JsonProcessingException e) {
+        } catch (JsonProcessingException e) {
             LOGGER.error("failed to parse JSON copyrights/licenses classification result", e);
         }
-        
+
         return results;
     }
 

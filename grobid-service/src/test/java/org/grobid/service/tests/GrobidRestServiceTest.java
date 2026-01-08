@@ -25,6 +25,7 @@ import org.glassfish.jersey.media.multipart.FormDataMultiPart;
 import org.glassfish.jersey.media.multipart.MultiPartFeature;
 import org.glassfish.jersey.media.multipart.file.FileDataBodyPart;
 import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.core.utilities.TestEngineUtils;
 import org.grobid.service.GrobidPaths;
 import org.grobid.service.GrobidRestService;
 import org.grobid.service.GrobidServiceConfiguration;
@@ -56,6 +57,7 @@ public class GrobidRestServiceTest {
 
     @BeforeClass
     public static void setInitialContext() throws Exception {
+        TestEngineUtils.initGrobidForceWapiti();
     }
 
     @AfterClass

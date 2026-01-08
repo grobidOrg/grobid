@@ -3,7 +3,7 @@ package org.grobid.core.utilities;
 import java.util.List;
 
 /**
- * This class is a bean for the YAML configuation of the GROBID instance.  
+ * This class is a bean for the YAML configuation of the GROBID instance.
  *
  */
 public class GrobidConfig {
@@ -21,12 +21,12 @@ public class GrobidConfig {
 
         public String languageDetectorFactory;
         public String sentenceDetectorFactory;
-  
-        public int concurrency = 10;  
+
+        public int concurrency = 10;
         public int poolMaxWait = 1;
-        
-        public DelftParameters delft; 
-        public WapitiParameters wapiti; 
+
+        public DelftParameters delft;
+        public WapitiParameters wapiti;
         public List<ModelParameters> models;
     }
 
@@ -61,7 +61,7 @@ public class GrobidConfig {
         public String url;
         public int timeoutSec = 60;
     }
-    
+
     public static class DelftParameters {
         /**
          * Generic parameters relative to the DeLFT engine
@@ -107,11 +107,21 @@ public class GrobidConfig {
         public int batch_size = -1;
     }
 
-    public static class ModelParameters {   
-        public String name;   /* name of model */
-        public String engine; /* value wapiti or delft */ 
+    public static class OnnxModelParameters {
+        /**
+         * Parameters relative to a specific ONNX model
+         */
+        public String architecture;
+        public int max_sequence_length = -1;
+        public int batch_size = -1;
+    }
+
+    public static class ModelParameters {
+        public String name; /* name of model */
+        public String engine; /* value wapiti, delft, or onnx */
 
         public WapitiModelParameters wapiti;
         public DelftModelParameters delft;
+        public OnnxModelParameters onnx;
     }
 }

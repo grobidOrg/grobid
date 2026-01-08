@@ -3,7 +3,7 @@ package org.grobid.core.engines;
 import org.grobid.core.document.Document;
 import org.grobid.core.document.DocumentSource;
 import org.grobid.core.engines.config.GrobidAnalysisConfig;
-import org.grobid.core.factory.AbstractEngineFactory;
+import org.grobid.core.utilities.TestEngineUtils;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -21,7 +21,7 @@ public class SegmentationTest {
     @BeforeClass
     public static void setInitialContext() throws Exception {
 //        MockContext.setInitialContext();
-        AbstractEngineFactory.init();
+        TestEngineUtils.initGrobidForceWapiti();
     }
 
     @AfterClass

@@ -1,0 +1,33 @@
+{
+  "modelName": "grobid-reference-segmenter-BidLSTM_CRF_FEATURES",
+  "architecture": "BidLSTM_CRF_FEATURES",
+  "wordEmbeddingSize": 300,
+  "charEmbeddingSize": 25,
+  "numCharLstmUnits": 25,
+  "numWordLstmUnits": 100,
+  "maxSequenceLength": 3000,
+  "embeddingsName": "glove-840B",
+  "featuresIndices": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "featuresEmbeddingSize": 4,
+  "featuresLstmUnits": 4,
+  "featuresVocabularySize": 12
+}

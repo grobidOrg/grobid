@@ -1,0 +1,21 @@
+{
+  "modelName": "grobid-funding-acknowledgement-BidLSTM_CRF_FEATURES",
+  "architecture": "BidLSTM_CRF_FEATURES",
+  "wordEmbeddingSize": 300,
+  "charEmbeddingSize": 25,
+  "numCharLstmUnits": 25,
+  "numWordLstmUnits": 100,
+  "maxSequenceLength": 800,
+  "embeddingsName": "glove-840B",
+  "featuresIndices": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "featuresEmbeddingSize": 4,
+  "featuresLstmUnits": 4,
+  "featuresVocabularySize": 12
+}

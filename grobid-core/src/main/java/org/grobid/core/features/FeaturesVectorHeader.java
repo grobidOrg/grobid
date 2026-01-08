@@ -52,6 +52,94 @@ public class FeaturesVectorHeader {
     public boolean largerThanAverageFont = false;
     //public boolean superscript = false;
 
+    public static FeaturesVectorHeader fromLayoutToken(LayoutToken token) {
+        FeaturesVectorHeader features = new FeaturesVectorHeader();
+        FeatureFactory featureFactory = FeatureFactory.getInstance();
+
+        String text = token.getText();
+        features.token = token;
+        features.string = text;
+
+        Matcher m0 = featureFactory.isPunct.matcher(text);
+
+        if (m0.find()) {
+            features.punctType = "PUNCT";
+        }
+        if (text.equals("(") || text.equals("[")) {
+            features.punctType = "OPENBRACKET";
+
+        } else if (text.equals(")") || text.equals("]")) {
+            features.punctType = "ENDBRACKET";
+
+        } else if (text.equals(".")) {
+            features.punctType = "DOT";
+
+        } else if (text.equals(",")) {
+            features.punctType = "COMMA";
+
+        } else if (text.equals("-")) {
+            features.punctType = "HYPHEN";
+
+        } else if (text.equals("\"") || text.equals("\'") || text.equals("`")) {
+            features.punctType = "QUOTE";
+        }
+
+        if (text.length() == 1) {
+            features.singleChar = true;
+        }
+
+        if (Character.isUpperCase(text.charAt(0))) {
+            features.capitalisation = "INITCAP";
+        }
+
+        if (featureFactory.test_all_capital(text)) {
+            features.capitalisation = "ALLCAP";
+        }
+
+        if (featureFactory.test_digit(text)) {
+            features.digit = "CONTAINSDIGITS";
+        }
+
+        Matcher m = featureFactory.isDigit.matcher(text);
+        if (m.find()) {
+            features.digit = "ALLDIGIT";
+        }
+
+        if (featureFactory.test_common(text)) {
+            features.commonName = true;
+        }
+
+        if (featureFactory.test_names(text)) {
+            features.properName = true;
+        }
+
+        if (featureFactory.test_month(text)) {
+            features.month = true;
+        }
+
+        Matcher m2 = featureFactory.year.matcher(text);
+        if (m2.find()) {
+            features.year = true;
+        }
+
+        if (token.isBold())
+            features.bold = true;
+
+        if (token.isItalic())
+            features.italic = true;
+
+        if (features.capitalisation == null)
+            features.capitalisation = "NOCAPS";
+
+        if (features.digit == null)
+            features.digit = "NODIGIT";
+
+        if (features.punctType == null)
+            features.punctType = "NOPUNCT";
+
+        return features;
+    }
+
     public String printVector() {
         if (string == null) return null;
         if (string.length() == 0) return null;

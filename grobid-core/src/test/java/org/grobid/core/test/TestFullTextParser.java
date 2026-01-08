@@ -11,7 +11,6 @@ import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.layout.Block;
-import org.grobid.core.utilities.GrobidProperties;
 import org.junit.*;
 
 import java.io.File;
@@ -29,10 +28,6 @@ import static org.junit.Assert.assertTrue;
 
 public class TestFullTextParser extends EngineTest {
 
-    @BeforeClass
-    public static void init() {
-        GrobidProperties.getInstance();
-    }
 
     @AfterClass
     public static void tearDown(){

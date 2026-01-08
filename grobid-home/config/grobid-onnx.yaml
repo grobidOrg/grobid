@@ -1,0 +1,253 @@
+# this is the configuration file for the GROBID instance using ONNX models (no DeLFT/Python)
+# This configuration uses ONNX for deep learning models and Wapiti for CRF models.
+
+grobid:
+  # where all the Grobid resources are stored (models, lexicon, native libraries, etc.), normally no need to change
+  grobidHome: "grobid-home"
+
+  # path relative to the grobid-home path (e.g. tmp for grobid-home/tmp) or absolute path (/tmp)
+  temp: "tmp"
+  
+  # normally nothing to change here, path relative to the grobid-home path (e.g. grobid-home/lib)
+  nativelibrary: "lib"
+
+  pdf:
+    pdfalto:
+      # path relative to the grobid-home path (e.g. grobid-home/pdfalto), you don't want to change this normally
+      path: "pdfalto"
+      # security for PDF parsing
+      memoryLimitMb: 6096
+      timeoutSec: 120
+
+    # security relative to the PDF parsing result
+    blocksMax: 200000
+    tokensMax: 1000000
+
+  consolidation:
+    # define the bibliographical data consolidation service to be used, either "crossref" for CrossRef REST API or 
+    # "glutton" for https://github.com/kermitt2/biblio-glutton
+    service: "crossref"
+    #service: "glutton"
+    glutton:
+      #url: "https://cloud.science-miner.com/glutton"
+      url: "http://localhost:8080"
+      timeoutSec: 60
+    crossref:
+      mailto: 
+      # NOTE! To use the Crossref web API, you need normally to use it politely
+      # and to indicate an email address here, e.g. mailto: "toto@titi.tutu"
+      token:
+      # to use Crossref metadata plus service (available by subscription)
+      #token: "yourmysteriouscrossrefmetadataplusauthorizationtokentobeputhere"
+      timeoutSec: 60
+      # Timeout for CrossRef API calls (in seconds) - USE with CARE!
+  proxy:
+    # proxy to be used when doing external call to the consolidation service
+    host: 
+    port: 
+
+  # CORS configuration for the GROBID web API service
+  corsAllowedOrigins: "*"
+  corsAllowedMethods: "OPTIONS,GET,PUT,POST,DELETE,HEAD"
+  corsAllowedHeaders: "X-Requested-With,Content-Type,Accept,Origin"
+
+  # the actual implementation for language recognition to be used
+  languageDetectorFactory: "org.grobid.core.lang.impl.CybozuLanguageDetectorFactory"
+
+  # the actual implementation for optional sentence segmentation to be used (PragmaticSegmenter or OpenNLP)
+  #sentenceDetectorFactory: "org.grobid.core.lang.impl.PragmaticSentenceDetectorFactory"
+  sentenceDetectorFactory: "org.grobid.core.lang.impl.OpenNLPSentenceDetectorFactory"
+  
+  # maximum concurrency allowed to GROBID server for processing parallel requests - change it according to your CPU/GPU capacities
+  # for a production server running only GROBID, set the value slightly above the available number of threads of the server
+  # to get the best performance and security
+  concurrency: 10
+  # when the pool is full, for queries waiting for the availability of a Grobid engine, this is the maximum time wait to try 
+  # to get an engine (in seconds) - normally never change it
+  poolMaxWait: 1
+
+  # DeLFT is not used in this ONNX-only configuration
+  delft:
+    install: "../delft"
+    pythonVirtualEnv:
+
+  wapiti:
+    # Wapiti global parameters
+    # number of threads for training the wapiti models (0 to use all available processors)
+    nbThreads: 0
+
+  models:
+    # ONNX-only configuration: models use either "onnx" or "wapiti" engine
+    # No "delft" engine is used in this configuration
+    
+    - name: "segmentation"
+      # at this time, must always be CRF wapiti, the input sequence size is too large for a Deep Learning implementation
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.0000001
+        window: 50
+        nbMaxIterations: 2000
+
+    - name: "segmentation-article-light"
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.0000001
+        window: 50
+        nbMaxIterations: 2000
+
+    - name: "segmentation-article-light-ref"
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.0000001
+        window: 50
+        nbMaxIterations: 2000
+
+    - name: "segmentation-sdo-ietf"
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.0000001
+        window: 50
+        nbMaxIterations: 2000
+
+    - name: "fulltext"
+      # at this time, must always be CRF wapiti, the input sequence size is too large for a Deep Learning implementation
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.0001
+        window: 20
+        nbMaxIterations: 1500
+
+    - name: "header"
+      engine: "onnx"
+      wapiti:
+        epsilon: 0.000001
+        window: 30
+        nbMaxIterations: 1500
+      onnx:
+        architecture: "BidLSTM_CRF_FEATURES"
+
+    - name: "header-article-light"
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.000001
+        window: 30
+        nbMaxIterations: 1500
+
+    - name: "header-article-light-ref"
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.000001
+        window: 30
+        nbMaxIterations: 1500
+
+    - name: "header-sdo-ietf"
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.000001
+        window: 30
+        nbMaxIterations: 1500
+
+    - name: "reference-segmenter"
+      engine: "onnx"
+      wapiti:
+        epsilon: 0.00001
+        window: 20
+      onnx:
+        architecture: "BidLSTM_CRF_FEATURES"
+
+    - name: "name-header"
+      engine: "wapiti"
+
+    - name: "name-citation"
+      engine: "wapiti"
+
+    - name: "date"
+      engine: "wapiti"
+      onnx:
+        architecture: "BidLSTM_CRF_FEATURES"
+
+    - name: "figure"
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.00001
+        window: 20
+
+    - name: "table"
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.00001
+        window: 20
+
+    - name: "affiliation-address"
+      engine: "onnx"
+      onnx:
+        architecture: "BidLSTM_CRF_FEATURES"
+
+    - name: "citation"
+      engine: "onnx"
+      wapiti:
+        epsilon: 0.00001
+        window: 50
+        nbMaxIterations: 3000
+      onnx:
+        architecture: "BidLSTM_CRF_FEATURES"
+
+    - name: "patent-citation"
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.0001
+        window: 20
+
+    - name: "funding-acknowledgement"
+      engine: "onnx"
+      wapiti:
+        epsilon: 0.00001
+        window: 50
+        nbMaxIterations: 2000
+      onnx:
+        architecture: "BidLSTM_CRF_FEATURES"
+
+    - name: "copyright"
+      engine: "onnx"
+      onnx:
+        architecture: "gru"
+
+    - name: "license"
+      engine: "onnx"
+      onnx:
+        architecture: "gru"
+
+  # for **service only**: how to load the models, 
+  # false -> models are loaded when needed, avoiding putting in memory useless models (only in case of CRF) but slow down 
+  #          significantly the service at first call
+  # true -> all the models are loaded into memory at the server startup (default), slow the start of the services 
+  #         and models not used will take some more memory (only in case of CRF), but server is immediatly warm and ready
+  modelPreload: true
+
+server:
+    type: custom
+    applicationConnectors:
+    - type: http
+      port: 8070
+    adminConnectors:
+    - type: http
+      port: 8071
+    registerDefaultExceptionMappers: false
+    # change the following for having all http requests logged
+    requestLog:
+      appenders: []
+
+# these logging settings apply to the Grobid service usage mode
+logging:
+  level: INFO
+  loggers:
+    org.apache.pdfbox.pdmodel.font.PDSimpleFont: "OFF"
+    org.glassfish.jersey.internal: "OFF"
+    com.squarespace.jersey2.guice.JerseyGuiceUtils: "OFF"
+  appenders:
+    - type: console
+      threshold: INFO
+      timeZone: UTC
+      # uncomment to have the logs in json format
+      #layout:
+      #  type: json

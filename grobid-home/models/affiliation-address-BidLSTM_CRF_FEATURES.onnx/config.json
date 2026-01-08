@@ -1,0 +1,25 @@
+{
+  "modelName": "grobid-affiliation-address-BidLSTM_CRF_FEATURES",
+  "architecture": "BidLSTM_CRF_FEATURES",
+  "wordEmbeddingSize": 300,
+  "charEmbeddingSize": 25,
+  "numCharLstmUnits": 25,
+  "numWordLstmUnits": 100,
+  "maxSequenceLength": 600,
+  "embeddingsName": "glove-840B",
+  "featuresIndices": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "featuresEmbeddingSize": 4,
+  "featuresLstmUnits": 4,
+  "featuresVocabularySize": 12
+}

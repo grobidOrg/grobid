@@ -89,3 +89,5 @@ Dockerfile.dataseer
 Dockerfile.software
 Dockerfile.datastet
 .run
+
+.kotlin

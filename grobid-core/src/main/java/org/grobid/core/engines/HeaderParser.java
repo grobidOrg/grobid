@@ -340,7 +340,10 @@ public class HeaderParser extends AbstractParser {
 
                 // copyrights/license identification
                 if (StringUtils.isNotBlank(resHeader.getCopyright())) {
-                    if (GrobidProperties.getGrobidEngineName("copyright").equals("delft")) {
+                    if (
+                        GrobidProperties.getGrobidEngineName("copyright").equals("delft")
+                        || GrobidProperties.getGrobidEngineName("copyright").equals("onnx")
+                    ){
                         CopyrightsLicense copyrightsLicense = LicenseClassifier.getInstance().classify(resHeader.getCopyright());
                         if (copyrightsLicense != null) 
                             resHeader.setCopyrightsLicense(copyrightsLicense);
@@ -579,35 +582,10 @@ public class HeaderParser extends AbstractParser {
                         continue;
                     }
 
-                    features = new FeaturesVectorHeader();
-                    features.token = token;
-                    features.string = text;
+                    features = FeaturesVectorHeader.fromLayoutToken(token);
 
                     if (newline)
                         features.lineStatus = "LINESTART";
-                    
-                    Matcher m0 = featureFactory.isPunct.matcher(text);
-                    if (m0.find()) {
-                        features.punctType = "PUNCT";
-                    }
-                    if (text.equals("(") || text.equals("[")) {
-                        features.punctType = "OPENBRACKET";
-
-                    } else if (text.equals(")") || text.equals("]")) {
-                        features.punctType = "ENDBRACKET";
-
-                    } else if (text.equals(".")) {
-                        features.punctType = "DOT";
-
-                    } else if (text.equals(",")) {
-                        features.punctType = "COMMA";
-
-                    } else if (text.equals("-")) {
-                        features.punctType = "HYPHEN";
-
-                    } else if (text.equals("\"") || text.equals("\'") || text.equals("`")) {
-                        features.punctType = "QUOTE";
-                    }
 
                     if (n == startIndex) {
                         // beginning of block
@@ -677,43 +655,6 @@ public class HeaderParser extends AbstractParser {
                         features.alignmentStatus = "ALIGNEDLEFT";
                     }
 
-                    if (text.length() == 1) {
-                        features.singleChar = true;
-                    }
-
-                    if (Character.isUpperCase(text.charAt(0))) {
-                        features.capitalisation = "INITCAP";
-                    }
-
-                    if (featureFactory.test_all_capital(text)) {
-                        features.capitalisation = "ALLCAP";
-                    }
-
-                    if (featureFactory.test_digit(text)) {
-                        features.digit = "CONTAINSDIGITS";
-                    }
-
-                    Matcher m = featureFactory.isDigit.matcher(text);
-                    if (m.find()) {
-                        features.digit = "ALLDIGIT";
-                    }
-
-                    if (featureFactory.test_common(text)) {
-                        features.commonName = true;
-                    }
-
-                    if (featureFactory.test_names(text)) {
-                        features.properName = true;
-                    }
-
-                    if (featureFactory.test_month(text)) {
-                        features.month = true;
-                    }
-
-                    Matcher m2 = featureFactory.year.matcher(text);
-                    if (m2.find()) {
-                        features.year = true;
-                    }
 
                     // check token offsets for email and http address, or known location
                     if (locationPositions != null) {
@@ -774,21 +715,6 @@ public class HeaderParser extends AbstractParser {
                     // not used
                     /*if (token.isSuperscript()) 
                         features.superscript = true;*/
-
-                    if (token.isBold())
-                        features.bold = true;
-
-                    if (token.isItalic())
-                        features.italic = true;
-
-                    if (features.capitalisation == null)
-                        features.capitalisation = "NOCAPS";
-
-                    if (features.digit == null)
-                        features.digit = "NODIGIT";
-
-                    if (features.punctType == null)
-                        features.punctType = "NOPUNCT";
 
                     /*if (spacingPreviousBlock != 0.0) {
                         features.spacingWithPreviousBlock = featureFactory

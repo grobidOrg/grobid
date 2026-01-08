@@ -4,7 +4,6 @@ import org.grobid.core.document.Document;
 import org.grobid.core.document.DocumentSource;
 import org.grobid.core.engines.Engine;
 import org.grobid.core.engines.config.GrobidAnalysisConfig;
-import org.grobid.core.main.LibraryLoader;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -17,8 +16,7 @@ public class LayoutTokensUtilIntegrationTest {
 
     @BeforeClass
     public static void setUp() throws Exception {
-        LibraryLoader.load();
-        GrobidProperties.getInstance();
+        TestEngineUtils.initGrobidForceWapiti();
     }
 
     @Test

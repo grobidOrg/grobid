@@ -1,5 +1,6 @@
 package org.grobid.core;
 
+import org.grobid.core.utilities.TestEngineUtils;
 import org.grobid.core.utilities.GrobidConfig;
 import org.grobid.core.utilities.GrobidProperties;
 import org.junit.BeforeClass;
@@ -12,6 +13,7 @@ public class GrobidModelsTest {
 
     @BeforeClass
     public static void setInitialContext() throws Exception {
+        TestEngineUtils.initGrobidForceWapiti();
         GrobidProperties.getInstance();
     }
 
@@ -24,7 +26,7 @@ public class GrobidModelsTest {
         assertThat(model.getModelName(), is("affiliation-address"));
         assertThat(model.getTemplateName(), is("affiliation-address.template"));
         String[] splittedPath = model.getModelPath().split("[/\\\\]");
-        //assertThat(splittedPath[splittedPath.length - 1], is("model.wapiti"));
+        assertThat(splittedPath[splittedPath.length - 1], is("model.wapiti"));
         assertThat(splittedPath[splittedPath.length - 2], is("affiliation-address"));
         assertThat(splittedPath[splittedPath.length - 3], is("models"));
     }
@@ -37,7 +39,7 @@ public class GrobidModelsTest {
         assertThat(model.getModelName(), is("header"));
         assertThat(model.getTemplateName(), is("header.template"));
         String[] splittedPath = model.getModelPath().split("[/\\\\]");
-        //assertThat(splittedPath[splittedPath.length - 1], is("model.wapiti"));
+        assertThat(splittedPath[splittedPath.length - 1], is("model.wapiti"));
         assertThat(splittedPath[splittedPath.length - 2], is("header"));
         assertThat(splittedPath[splittedPath.length - 4], is("grobid-home"));
     }
@@ -56,7 +58,7 @@ public class GrobidModelsTest {
         assertThat(model.getTemplateName(), is("myDreamModel.template"));
 
         String[] tokenizePath = model.getModelPath().split("[/\\\\]");
-        //assertThat(tokenizePath[tokenizePath.length - 1], is("model.wapiti"));
+        assertThat(tokenizePath[tokenizePath.length - 1], is("model.wapiti"));
         assertThat(tokenizePath[tokenizePath.length - 2], is("myDreamModel"));
         assertThat(tokenizePath[tokenizePath.length - 3], is("models"));
         assertThat(tokenizePath[tokenizePath.length - 4], is("grobid-home"));

@@ -49,8 +49,9 @@ RUN rm -rf grobid-home/lib/lin-32
 RUN rm -rf grobid-home/lib/win-*
 RUN rm -rf grobid-home/lib/mac-64
 
-# cleaning Delft models
-RUN rm -rf grobid-home/models/*-BidLSTM_CRF*
+# cleaning Delft and ONNX models
+RUN rm -rf grobid-home/models/*-BidLSTM*
+RUN rm -rf grobid-home/models/*.onnx
 
 ENV GROBID_SERVICE_OPTS="-Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep"
 

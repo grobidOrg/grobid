@@ -1,0 +1,120 @@
+## Docker GROBID image using ONNX models and/or Wapiti CRF models
+## This is a lightweight image without Python/TensorFlow/DeLFT/JEP dependencies
+## Uses ONNX Runtime (CPU only)
+
+## See https://grobid.readthedocs.io/en/latest/Grobid-docker/
+
+## usage example with version 0.8.0:
+## docker build -t grobid/grobid:0.8.0-onnx --build-arg GROBID_VERSION=0.8.0 --file Dockerfile.onnx .
+
+## run:
+## docker run -t --rm --init -p 8070:8070 -p 8071:8071 grobid/grobid:0.8.0-onnx
+
+# -------------------
+# build builder image
+# -------------------
+
+FROM eclipse-temurin:21-jdk AS builder
+
+USER root
+
+RUN apt-get update && \
+    apt-get -y upgrade && \
+    apt-get -y --no-install-recommends install unzip git python3 python3-pip
+
+WORKDIR /opt/grobid-source
+
+# gradle
+COPY gradle/ ./gradle/
+COPY gradlew ./
+COPY gradle.properties ./
+COPY build.gradle ./
+COPY settings.gradle ./
+
+# git
+COPY .git/ ./.git
+
+# source
+COPY grobid-home/ ./grobid-home/
+COPY grobid-core/ ./grobid-core/
+COPY grobid-service/ ./grobid-service/
+COPY grobid-trainer/ ./grobid-trainer/
+
+# cleaning unused native libraries before packaging
+RUN rm -rf grobid-home/pdf2xml
+RUN rm -rf grobid-home/pdfalto/lin-32
+RUN rm -rf grobid-home/pdfalto/mac-64
+RUN rm -rf grobid-home/pdfalto/mac_arm-64
+RUN rm -rf grobid-home/pdfalto/win-*
+RUN rm -rf grobid-home/lib/lin-32
+RUN rm -rf grobid-home/lib/win-*
+RUN rm -rf grobid-home/lib/mac-64
+RUN rm -rf grobid-home/lib/lin-64/jep
+
+# Use ONNX configuration (no DeLFT models)
+RUN rm grobid-home/config/grobid.yaml && \
+    mv grobid-home/config/grobid-onnx.yaml grobid-home/config/grobid.yaml
+
+RUN ./gradlew clean assemble --no-daemon --info --stacktrace
+
+# Preload embeddings in raw float32 format for ONNX inference
+# Using standalone script that doesn't require DeLFT
+RUN pip3 install --no-cache-dir --break-system-packages lmdb requests
+COPY grobid-home/scripts/preload_embeddings_standalone.py .
+COPY grobid-home/config/resources-registry.json .
+RUN python3 preload_embeddings_standalone.py --registry ./resources-registry.json
+
+WORKDIR /opt/grobid
+RUN unzip -o /opt/grobid-source/grobid-service/build/distributions/grobid-service-*.zip && \
+    mv grobid-service* grobid-service
+RUN unzip -o /opt/grobid-source/grobid-home/build/distributions/grobid-home-*.zip && \
+    chmod -R 755 /opt/grobid/grobid-home/pdfalto
+
+# Copy preloaded embeddings to final location
+RUN mkdir -p /opt/grobid/data/db && \
+    cp -r /opt/grobid-source/data/db/* /opt/grobid/data/db/
+
+# -------------------
+# build runtime image
+# -------------------
+
+FROM eclipse-temurin:21-jre
+
+# setting locale
+ENV LANG=C.UTF-8
+
+# Install minimal runtime dependencies
+RUN apt-get update && \
+    apt-get -y --no-install-recommends install \
+    libxml2 libfontconfig \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /opt/grobid
+
+COPY --from=builder /opt/grobid .
+COPY --from=builder /opt/grobid/data/db ./data/db
+
+ENV JAVA_OPTS=-Xmx4g
+
+# JVM options for module access (required for LMDB)
+ENV GROBID_SERVICE_OPTS="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED"
+
+# Add Tini
+ENV TINI_VERSION=v0.19.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+ENTRYPOINT ["/tini", "-s", "--"]
+
+WORKDIR /opt/grobid
+
+CMD ["./grobid-service/bin/grobid-service"]
+
+ARG GROBID_VERSION
+
+LABEL \
+    authors="The contributors" \
+    org.label-schema.name="GROBID" \
+    org.label-schema.description="Image with GROBID service (ONNX/Wapiti only, no DeLFT)" \
+    org.label-schema.url="https://github.com/kermitt2/grobid" \
+    org.label-schema.version=${GROBID_VERSION}

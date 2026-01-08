@@ -10,8 +10,7 @@ import java.util.StringTokenizer;
 
 import org.grobid.core.data.BibDataSet;
 import org.grobid.core.data.PatentItem;
-import org.grobid.core.factory.AbstractEngineFactory;
-import org.grobid.core.utilities.counters.GrobidTimer;
+import org.grobid.core.utilities.TestEngineUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
@@ -26,7 +25,7 @@ public class ReferenceExtractorTest {
 
 	@BeforeClass
 	public static void setInitialContext() throws Exception {
-		AbstractEngineFactory.init();
+		TestEngineUtils.initGrobidForceWapiti();
 	}
 
 	@AfterClass

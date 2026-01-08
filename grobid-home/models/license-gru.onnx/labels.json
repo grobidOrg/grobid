@@ -1,0 +1,38 @@
+{
+  "labels": [
+    "CC-0",
+    "CC-BY",
+    "CC-BY-NC",
+    "CC-BY-NC-ND",
+    "CC-BY-SA",
+    "CC-BY-NC-SA",
+    "CC-BY-ND",
+    "copyright",
+    "other",
+    "undecided"
+  ],
+  "labelToIndex": {
+    "CC-0": 0,
+    "CC-BY": 1,
+    "CC-BY-NC": 2,
+    "CC-BY-NC-ND": 3,
+    "CC-BY-SA": 4,
+    "CC-BY-NC-SA": 5,
+    "CC-BY-ND": 6,
+    "copyright": 7,
+    "other": 8,
+    "undecided": 9
+  },
+  "indexToLabel": {
+    "0": "CC-0",
+    "1": "CC-BY",
+    "2": "CC-BY-NC",
+    "3": "CC-BY-NC-ND",
+    "4": "CC-BY-SA",
+    "5": "CC-BY-NC-SA",
+    "6": "CC-BY-ND",
+    "7": "copyright",
+    "8": "other",
+    "9": "undecided"
+  }
+}

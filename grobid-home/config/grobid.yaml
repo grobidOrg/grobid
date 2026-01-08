@@ -139,8 +139,8 @@ grobid:
         nbMaxIterations: 1500
 
     - name: "header"
-      engine: "wapiti"
-      #engine: "delft"
+      engine: "onnx"
+#      engine: "delft"
       wapiti:
         # wapiti training parameters, they will be used at training time only  
         epsilon: 0.000001
@@ -148,7 +148,7 @@ grobid:
         nbMaxIterations: 1500
       delft:
         # deep learning parameters
-        architecture: "BidLSTM_ChainCRF_FEATURES"
+        architecture: "BidLSTM_CRF_FEATURES"
         #transformer: "allenai/scibert_scivocab_cased"
         useELMo: false
         runtime:
@@ -162,6 +162,8 @@ grobid:
           #batch_size: 6
           max_sequence_length: 3000
           batch_size: 9
+      onnx:
+        architecture: "BidLSTM_CRF_FEATURES"
 
     - name: "header-article-light"
       engine: "wapiti"
@@ -196,8 +198,9 @@ grobid:
         nbMaxIterations: 1500
 
     - name: "reference-segmenter"
-      engine: "wapiti"
-      #engine: "delft"
+      #engine: "wapiti"
+#      engine: "delft"
+      engine: "onnx"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.00001
@@ -214,6 +217,8 @@ grobid:
           # parameters used for training
           max_sequence_length: 3000
           batch_size: 10
+      onnx:
+        architecture: "BidLSTM_CRF_FEATURES"
 
     - name: "name-header"
       engine: "wapiti"
@@ -232,8 +237,11 @@ grobid:
     - name: "date"
       engine: "wapiti"
       #engine: "delft"
+#      engine: "onnx"
       delft:
         # deep learning parameters
+        architecture: "BidLSTM_CRF_FEATURES"
+      onnx:
         architecture: "BidLSTM_CRF_FEATURES"
 
     - name: "figure"
@@ -259,15 +267,19 @@ grobid:
         architecture: "BidLSTM_CRF"
 
     - name: "affiliation-address"
-      engine: "wapiti"
+#      engine: "wapiti"
       #engine: "delft"
+      engine: "onnx"
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
+      onnx:
+        architecture: "BidLSTM_CRF_FEATURES"
 
     - name: "citation"
-      engine: "wapiti"
-      #engine: "delft"
+      #engine: "wapiti"
+#      engine: "delft"
+      engine: "onnx"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.00001
@@ -287,6 +299,8 @@ grobid:
           # parameters used for training
           max_sequence_length: 500  
           batch_size: 50
+      onnx:
+        architecture: "BidLSTM_CRF_FEATURES"
 
     - name: "patent-citation"
       engine: "wapiti"
@@ -309,8 +323,9 @@ grobid:
           batch_size: 40
 
     - name: "funding-acknowledgement"
-      engine: "wapiti"
+#      engine: "wapiti"
       #engine: "delft"
+      engine: "onnx"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.00001
@@ -330,28 +345,36 @@ grobid:
           # parameters used for training
           max_sequence_length: 500  
           batch_size: 40
+      onnx:
+        architecture: "BidLSTM_CRF_FEATURES"
 
     - name: "copyright"
       # at this time, we only have a DeLFT implementation, 
       # use "wapiti" if the deep learning library JNI is not available and model will then be ignored
       #engine: "delft"
-      engine: "wapiti"
+#      engine: "wapiti"
+      engine: "onnx"
       delft:
         # deep learning parameters
         architecture: "gru"
         #architecture: "bert"
         #transformer: "allenai/scibert_scivocab_cased"
+      onnx:
+        architecture: "gru"
 
     - name: "license"
       # at this time, for being active, it must be DeLFT, no other implementation is available
       # use "wapiti" if the deep learning library JNI is not available and model will then be ignored
       #engine: "delft"
-      engine: "wapiti"
+#      engine: "wapiti"
+      engine: "onnx"
       delft:
         # deep learning parameters
         architecture: "gru"
         #architecture: "bert"
         #transformer: "allenai/scibert_scivocab_cased"
+      onnx:
+        architecture: "gru"
 
   # for **service only**: how to load the models, 
   # false -> models are loaded when needed, avoiding putting in memory useless models (only in case of CRF) but slow down 

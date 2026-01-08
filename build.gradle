@@ -219,6 +219,13 @@ subprojects {
         
         systemProperty "java.library.path", "${javaLibraryPath}"
     }
+
+    tasks.withType(Test).configureEach {
+        // Needed by some native libs (e.g. onnxruntime) under Java 17+ / 21 when
+        // accessing direct buffer internals.
+        jvmArgs '--add-opens=java.base/java.nio=ALL-UNNAMED',
+                '--add-opens=java.base/sun.nio.ch=ALL-UNNAMED' // Required for LMDB
+    }
 }
 
 /** SUBPROJECTS **/
@@ -258,6 +265,21 @@ project("grobid-core") {
         implementation 'black.ninia:jep:4.0.3'
         implementation 'org.apache.opennlp:opennlp-tools:1.9.4'
         implementation group: 'org.jruby', name: 'jruby-complete', version: '9.4.12.1'
+
+        // ONNX Runtime for model inference
+        // GPU version (onnxruntime_gpu) only supports Linux with NVIDIA CUDA
+        // CPU version (onnxruntime) supports all platforms including macOS ARM64
+        if (System.getProperty("os.name").toLowerCase().contains("linux")) {
+            implementation 'com.microsoft.onnxruntime:onnxruntime_gpu:1.23.2'
+        } else {
+            implementation 'com.microsoft.onnxruntime:onnxruntime:1.23.2'
+        }
+
+        // LMDB for word embeddings lookup (0.9.0+ includes Apple Silicon native libs)
+        implementation 'org.lmdbjava:lmdbjava:0.9.2'
+
+        // JSON parsing (for CRF params and vocab)
+        implementation 'com.google.code.gson:gson:2.10.1'
 
         shadedLib "org.apache.lucene:lucene-analyzers-common:4.5.1"
     }
@@ -353,7 +375,9 @@ project(":grobid-service") {
         def javaLibraryPath = getJavaLibraryPath()
 
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
-            jvmArgs "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+            jvmArgs "--add-opens", "java.base/java.lang=ALL-UNNAMED",
+                "--add-opens", "java.base/java.nio=ALL-UNNAMED",  // Required for LMDB
+                "--add-opens", "java.base/sun.nio.ch=ALL-UNNAMED" // Required for LMDB
         }
         workingDir = rootProject.rootDir
 
@@ -577,12 +601,18 @@ project(":grobid-trainer") {
         classpath = sourceSets.main.runtimeClasspath
         args 'nlm', getArg('p2t', '.'), getArg('run', '0'), getArg('fileRatio', '1.0'), getArg('flavor', '')
         def javaLibraryPath = getJavaLibraryPath()
+        // Add additional lib paths for native libraries (LMDB)
+        def lmdbLibPath = Os.isFamily(Os.FAMILY_MAC) ? 
+            ":/opt/homebrew/lib:/usr/local/lib" : 
+            Os.isFamily(Os.FAMILY_UNIX) ? ":/usr/lib/x86_64-linux-gnu:/usr/lib64:/usr/local/lib" : ""
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
-            jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+            jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED",
+                    "--add-opens", "java.base/java.nio=ALL-UNNAMED",  // Required for LMDB
+                    "--add-opens", "java.base/sun.nio.ch=ALL-UNNAMED" // Required for LMDB
         } else {
             jvmArgs '-Xmx3072m'
         }
-        systemProperty "java.library.path", "${javaLibraryPath}"
+        systemProperty "java.library.path", "${javaLibraryPath}${lmdbLibPath}"
     }
 
     task(teiEval, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
@@ -590,13 +620,18 @@ project(":grobid-trainer") {
         classpath = sourceSets.main.runtimeClasspath
         args 'tei', getArg('p2t', '.'), getArg('run', '0'), getArg('fileRatio', '1.0'), getArg('flavor', '')
         def javaLibraryPath = getJavaLibraryPath()
-        
+        // Add additional lib paths for native libraries (LMDB)
+        def lmdbLibPath = Os.isFamily(Os.FAMILY_MAC) ? 
+            ":/opt/homebrew/lib:/usr/local/lib" : 
+            Os.isFamily(Os.FAMILY_UNIX) ? ":/usr/lib/x86_64-linux-gnu:/usr/lib64:/usr/local/lib" : ""
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
-            jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+            jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED",
+                    "--add-opens", "java.base/java.nio=ALL-UNNAMED",  // Required for LMDB
+                    "--add-opens", "java.base/sun.nio.ch=ALL-UNNAMED" // Required for LMDB
         } else {
             jvmArgs '-Xmx3072m'
         }
-        systemProperty "java.library.path", "${javaLibraryPath}"
+        systemProperty "java.library.path", "${javaLibraryPath}${lmdbLibPath}"
     }
 
     task(PrepareDOIMatching, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
@@ -604,14 +639,18 @@ project(":grobid-trainer") {
         classpath = sourceSets.main.runtimeClasspath
         args 'data', getArg('p2t', '.')
         def javaLibraryPath = getJavaLibraryPath()
-
+        // Add additional lib paths for native libraries (LMDB)
+        def lmdbLibPath = Os.isFamily(Os.FAMILY_MAC) ? 
+            ":/opt/homebrew/lib:/usr/local/lib" : 
+            Os.isFamily(Os.FAMILY_UNIX) ? ":/usr/lib/x86_64-linux-gnu:/usr/lib64:/usr/local/lib" : ""
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
-            jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+            jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED",
+                    "--add-opens", "java.base/java.nio=ALL-UNNAMED",  // Required for LMDB
+                    "--add-opens", "java.base/sun.nio.ch=ALL-UNNAMED" // Required for LMDB
         } else {
             jvmArgs '-Xmx3072m'
         }
-
-        systemProperty "java.library.path", "${javaLibraryPath}"
+        systemProperty "java.library.path", "${javaLibraryPath}${lmdbLibPath}"
     }
 
     task(EvaluateDOIMatching, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
@@ -620,14 +659,18 @@ project(":grobid-trainer") {
         args 'eval', getArg('p2t', '.')
 
         def javaLibraryPath = getJavaLibraryPath()
-
+        // Add additional lib paths for native libraries (LMDB)
+        def lmdbLibPath = Os.isFamily(Os.FAMILY_MAC) ? 
+            ":/opt/homebrew/lib:/usr/local/lib" : 
+            Os.isFamily(Os.FAMILY_UNIX) ? ":/usr/lib/x86_64-linux-gnu:/usr/lib64:/usr/local/lib" : ""
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
-            jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+            jvmArgs '-Xmx3072m', "--add-opens", "java.base/java.lang=ALL-UNNAMED",
+                    "--add-opens", "java.base/java.nio=ALL-UNNAMED",  // Required for LMDB
+                    "--add-opens", "java.base/sun.nio.ch=ALL-UNNAMED" // Required for LMDB
         } else {
             jvmArgs '-Xmx3072m'
         }
-
-        systemProperty "java.library.path", "${javaLibraryPath}"
+        systemProperty "java.library.path", "${javaLibraryPath}${lmdbLibPath}"
     }
 }
 

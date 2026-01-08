@@ -1,0 +1,17 @@
+{
+  "labels": [
+    "publisher",
+    "authors",
+    "undecided"
+  ],
+  "labelToIndex": {
+    "publisher": 0,
+    "authors": 1,
+    "undecided": 2
+  },
+  "indexToLabel": {
+    "0": "publisher",
+    "1": "authors",
+    "2": "undecided"
+  }
+}

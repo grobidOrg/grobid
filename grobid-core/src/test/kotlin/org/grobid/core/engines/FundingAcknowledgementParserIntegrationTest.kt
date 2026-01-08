@@ -1,7 +1,7 @@
 package org.grobid.core.engines
 
 import org.grobid.core.engines.config.GrobidAnalysisConfig
-import org.grobid.core.factory.AbstractEngineFactory
+import org.grobid.core.utilities.TestEngineUtils
 import org.grobid.core.utilities.GrobidConfig
 import org.grobid.core.utilities.GrobidProperties
 import org.hamcrest.MatcherAssert.assertThat
@@ -10,7 +10,6 @@ import org.junit.Before
 import org.junit.BeforeClass
 import org.junit.Test
 import org.xmlunit.matchers.CompareMatcher
-import java.util.*
 
 class FundingAcknowledgementParserIntegrationTest {
 
@@ -267,7 +266,7 @@ class FundingAcknowledgementParserIntegrationTest {
         @BeforeClass
         @Throws(java.lang.Exception::class)
         fun setInitialContext(): Unit {
-            AbstractEngineFactory.init()
+            TestEngineUtils.initGrobidForceWapiti()
         }
     }
 }

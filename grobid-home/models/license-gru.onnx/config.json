@@ -1,0 +1,8 @@
+{
+  "modelName": "license_gru",
+  "architecture": "gru",
+  "wordEmbeddingSize": 300,
+  "maxlen": 300,
+  "numClasses": 10,
+  "embeddingsName": "glove-840B"
+}
