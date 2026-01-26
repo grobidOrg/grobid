@@ -23,7 +23,7 @@ The following functionalities are available:
 - __Header extraction and parsing__ from article in PDF format. The extraction here covers the usual bibliographical information (e.g. title, abstract, authors, affiliations, keywords, etc.).
 - __References extraction and parsing__ from articles in PDF format, around .87 F1-score against on an independent PubMed Central set of 1943 PDF containing 90,125 references, and around .90 on a similar bioRxiv set of 2000 PDF (using the Deep Learning citation model). All the usual publication metadata are covered (including DOI, PMID, etc.).
 - __Citation contexts recognition and resolution__ of the full bibliographical references of the article. The accuracy of citation contexts resolution is between .76 and .91 F1-score depending on the evaluation collection (this corresponds to both the correct identification of the citation callout and its correct association with a full bibliographical reference).
-- __Full text extraction and structuring__ from PDF articles, including a model for the overall document segmentation and models for the structuring of the text body (paragraph, section titles, reference and footnote callouts, figures, tables, data availability statements, etc.). 
+- __Full text extraction and structuring__ from PDF articles, including a model for the overall document segmentation and models for the structuring of the text body (paragraph, section titles, reference and footnote callouts, figures, tables, data availability statements, etc.).
 - __PDF coordinates__ for extracted information, allowing to create "augmented" interactive PDF based on bounding boxes of the identified structures.
 - Parsing of __references in isolation__ (above .90 F1-score at instance-level, .95 F1-score at field level, using the Deep Learning model).
 - __Parsing of names__ (e.g. person title, forenames, middle name, etc.), in particular author names in header, and author names in references (two distinct models).
@@ -44,19 +44,19 @@ GROBID can be considered as production ready. Deployments in production includes
 
 - **OpenJDK 21** for building GROBID from source
 - Linux (64 bits) or macOS (Intel and ARM) for native builds
-- [Optional] Python 3.8+ with JEP for Deep Learning models 
+- [Optional] Python 3.8+ with JEP for Deep Learning models
 - [Optional] NVIDIA GPU with CUDA support for faster Deep Learning models
 
 > [!TIP]
-> We bump to OpenJDK 21, however some dependencies may require an earlier version, so we might increase the runtime backward compatibility to JDK 17+ in the next release, > 0.8.2. 
+> We bump to OpenJDK 21, however some dependencies may require an earlier version, so we might increase the runtime backward compatibility to JDK 17+ in the next release, > 0.8.2.
 
 For detailed installation instructions, including JDK setup and platform-specific requirements, see the [Installation documentation](doc/Install-Grobid.md).
 
 GROBID should run properly "out of the box" on Linux (64 bits) and macOS (Intel and ARM). We cannot ensure currently support for Windows as we did before (help welcome!).
 
-GROBID uses Deep Learning models relying on the [DeLFT](https://github.com/kermitt2/delft) library, a task-agnostic Deep Learning framework for sequence labelling and text classification, via [JEP](https://github.com/ninia/jep). GROBID can run Deep Learning architectures (RNN or transformers with or without layout feature channels) or with feature engineered CRF (default), or any mixtures of CRF and DL to balance scalability and accuracy. These models use joint text and visual/layout information provided by [pdfalto](https://github.com/kermitt2/pdfalto). 
+GROBID uses Deep Learning models relying on the [DeLFT](https://github.com/kermitt2/delft) library, a task-agnostic Deep Learning framework for sequence labelling and text classification, via [JEP](https://github.com/ninia/jep). GROBID can run Deep Learning architectures (RNN or transformers with or without layout feature channels) or with feature engineered CRF (default), or any mixtures of CRF and DL to balance scalability and accuracy. These models use joint text and visual/layout information provided by [pdfalto](https://github.com/kermitt2/pdfalto).
 
-Note that by default the Deep Learning models are not used, only CRF are selected in the default configuration to accommodate "out of the box" hardware. For improved accuracy, you need to [select the Deep Learning models](https://grobid.readthedocs.io/en/latest/Deep-Learning-models/#recommended-deep-learning-models) to be used in the GROBID configuration file, according to your need and hardware capacities (in particular GPU availability and runtime requirements). **Some GROBID Deep Learning models perform significantly better than default CRF**, in particular for bibliographical reference parsing, so it is recommended to consider selecting them to use this tool appropriately. 
+Note that by default the Deep Learning models are not used, only CRF are selected in the default configuration to accommodate "out of the box" hardware. For improved accuracy, you need to [select the Deep Learning models](https://grobid.readthedocs.io/en/latest/Deep-Learning-models/#recommended-deep-learning-models) to be used in the GROBID configuration file, according to your need and hardware capacities (in particular GPU availability and runtime requirements). **Some GROBID Deep Learning models perform significantly better than default CRF**, in particular for bibliographical reference parsing, so it is recommended to consider selecting them to use this tool appropriately.
 
 ## Demo
 
@@ -64,14 +64,14 @@ Note that by default the Deep Learning models are not used, only CRF are selecte
 
 For testing purposes, two public GROBID demo servers are available thanks to HuggingFace, hosted as [spaces](https://huggingface.co/kermitt2).
 
-A GROBID demo server with a combination of Deep Learning models and CRF models is available at the following address: [https://kermitt2-grobid.hf.space/](https://kermitt2-grobid.hf.space/) or at [https://huggingface.co/spaces/kermitt2/grobid](https://huggingface.co/spaces/kermitt2/grobid). This demo runs however on CPU only. If you have GPU for your own server deployment, it will be significantly faster. 
+A GROBID demo server with a combination of Deep Learning models and CRF models is available at the following address: [https://kermitt2-grobid.hf.space/](https://kermitt2-grobid.hf.space/) or at [https://huggingface.co/spaces/kermitt2/grobid](https://huggingface.co/spaces/kermitt2/grobid). This demo runs however on CPU only. If you have GPU for your own server deployment, it will be significantly faster.
 
 A faster demo with CRF only is available at [https://kermitt2-grobid-crf.hf.space/](https://kermitt2-grobid-crf.hf.space/) or [https://huggingface.co/spaces/kermitt2/grobid-crf](https://huggingface.co/spaces/kermitt2/grobid-crf). However, accuracy is lower.
 
 The Web services are documented [here](https://grobid.readthedocs.io/en/latest/Grobid-service/).
 
-_Warning_: Some quota and query limitation apply to the demo server! Please be courteous and do not overload the demo server. 
-For any serious works, you will need to deploy and use your own Grobid server, see the [GROBID and Docker containers documentation](https://grobid.readthedocs.io/en/latest/Grobid-docker/) for doing that easily and activate some Deep Learning models. 
+_Warning_: Some quota and query limitation apply to the demo server! Please be courteous and do not overload the demo server.
+For any serious works, you will need to deploy and use your own Grobid server, see the [GROBID and Docker containers documentation](https://grobid.readthedocs.io/en/latest/Grobid-docker/) for doing that easily and activate some Deep Learning models.
 
 ### Try in Play With Docker
 
@@ -79,7 +79,7 @@ For any serious works, you will need to deploy and use your own Grobid server, s
   <img src="https://raw.githubusercontent.com/play-with-docker/stacks/master/assets/images/button.png" alt="Try in PWD"/>
 </a>
 
-Wait for 30 seconds for Grobid container to be created before opening a browser tab on port 8080. This demo container runs only with CRF models. Note that there is an additional 60s needed when processing a PDF for the first time for the loading of the models on the "cold" container. Then this Grobid container is available just for you during 4 hours. 
+Wait for 30 seconds for Grobid container to be created before opening a browser tab on port 8080. This demo container runs only with CRF models. Note that there is an additional 60s needed when processing a PDF for the first time for the loading of the models on the "cold" container. Then this Grobid container is available just for you during 4 hours.
 
 ## Clients
 
@@ -97,19 +97,19 @@ All these clients will take advantage of the multi-threading for scaling large s
 
 For example, we have been able to run the complete full-text processing at around 10.6 PDF per second (around 915,000 PDF per day, around 20M pages per day) with the node.js client listed above during one week on one 16 CPU machine (16 threads, 32GB RAM, no SDD, articles from mainstream publishers), see [here](https://github.com/kermitt2/grobid/issues/443#issuecomment-505208132) (11.3M PDF were processed in 6 days by 2 servers without interruption).
 
-In addition, a Java example project is available to illustrate how to use GROBID as a Java library: [https://github.com/kermitt2/grobid-example](https://github.com/kermitt2/grobid-example). The example project is using GROBID Java API for extracting header metadata and citations from a PDF and output the results in BibTeX format.  
+In addition, a Java example project is available to illustrate how to use GROBID as a Java library: [https://github.com/kermitt2/grobid-example](https://github.com/kermitt2/grobid-example). The example project is using GROBID Java API for extracting header metadata and citations from a PDF and output the results in BibTeX format.
 
 Finally, the following python utilities can be used to create structured full text corpora of scientific articles. The tool simply takes a list of strong identifiers like DOI or PMID, performing the identification of online Open Access PDF, full text harvesting, metadata aggregation and Grobid processing in one workflow at scale: [article-dataset-builder](https://github.com/kermitt2/article-dataset-builder)
 
-## How GROBID works 
+## How GROBID works
 
 Visit the [documentation page describing the system](https://grobid.readthedocs.io/en/latest/Principles/). To summarize, the key design principles of GROBID are:
 
-- GROBID uses a [cascade of sequence labeling models](https://grobid.readthedocs.io/en/latest/Principles/#document-parsing-as-a-cascade-of-sequence-labeling-models) to parse a document. 
+- GROBID uses a [cascade of sequence labeling models](https://grobid.readthedocs.io/en/latest/Principles/#document-parsing-as-a-cascade-of-sequence-labeling-models) to parse a document.
 
 - The different models [do not work on text, but on **Layout Tokens**](https://grobid.readthedocs.io/en/latest/Principles/#layout-tokens-not-text) to exploit various visual/layout information available for every tokens.
 
-- GROBID does not use training data derived from existing publisher XML documents, but [small, high quality sets](https://grobid.readthedocs.io/en/latest/Principles/#training-data-qualitat-statt-quantitat) of manually labeled training data. 
+- GROBID does not use training data derived from existing publisher XML documents, but [small, high quality sets](https://grobid.readthedocs.io/en/latest/Principles/#training-data-qualitat-statt-quantitat) of manually labeled training data.
 
 - Technical choices and [default settings](https://grobid.readthedocs.io/en/latest/Principles/#balancing-accuracy-and-scalability) are driven by the ability to process PDF quickly, with commodity hardware and with good parallelization and scalability capacities.
 
@@ -135,11 +135,11 @@ See the [Changelog](CHANGELOG.md).
 
 ## License
 
-GROBID is distributed under [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0). 
+GROBID is distributed under [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0).
 
 The documentation is distributed under [CC-0](https://creativecommons.org/publicdomain/zero/1.0/) license and the annotated data under [CC-BY](https://creativecommons.org/licenses/by/4.0/) license.
 
-If you contribute to GROBID, you agree to share your contribution following these licenses. 
+If you contribute to GROBID, you agree to share your contribution following these licenses.
 
 Main author and contact: Patrice Lopez (<patrice.lopez@science-miner.com>)
 
@@ -149,7 +149,7 @@ ej-technologies provided us a free open-source license for its Java Profiler. Cl
 
 [![JProfiler](doc/img/jprofiler_medium.png)](http://www.ej-technologies.com/products/jprofiler/overview.html)
 
-JetBrains provided us with a free licence for the development: 
+JetBrains provided us with a free licence for the development:
 
 [![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSource)
 
@@ -173,7 +173,7 @@ For example, the BibTeX would look like this:
 
 > [!TIP]
 > To fetch the latest SWID you can use the following command line (requires `curl` and `jq`):
-    
+
 ```
 curl -s "https://archive.softwareheritage.org/api/1/origin/https://github.com/kermitt2/grobid/visit/latest/" \
   -H "Accept: application/json" | jq -r '.snapshot' | \
@@ -184,4 +184,4 @@ swh:1:dir:324a18113b0c7624a66a21550bd0e8522e328b4e
 ```
 
 
-See the [GROBID documentation](https://grobid.readthedocs.org/en/latest/References) for more related resources. 
+See the [GROBID documentation](https://grobid.readthedocs.org/en/latest/References) for more related resources.
