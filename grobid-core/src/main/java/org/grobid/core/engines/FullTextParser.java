@@ -1,7 +1,6 @@
 package org.grobid.core.engines;
 
 import com.google.common.collect.Iterables;
-import kotlin.ranges.IntRange;
 import nu.xom.Element;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FileUtils;
