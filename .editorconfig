@@ -1,28 +1,43 @@
+# EditorConfig — repository-wide formatting rules
+
+root = true
+
 [*]
-charset=utf-8
-end_of_line=lf
-insert_final_newline=false
-indent_style=space
-indent_size=4
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
 
+# Small config files / JS-related configs / JSON with 2-space indentation
 [{.babelrc,.stylelintrc,.eslintrc,jest.config,*.bowerrc,*.jsb3,*.jsb2,*.avsc,*.json}]
-indent_style=space
-indent_size=2
+indent_size = 2
 
+# SQL, DDL files often prefer 2 spaces
 [{*.ddl,*.sql}]
-indent_style=space
-indent_size=2
+indent_size = 2
 
+# LESS files
 [*.less]
-indent_style=space
-indent_size=2
+indent_size = 2
 
+# YAML / JSON config files: 2 spaces
+[{*.yml,*.yaml,*.json}]
+indent_size = 2
+
+# Markdown: keep final newline and trim trailing whitespace (globals already cover this)
 [*.md]
-insert_final_newline=true
+# using repository default settings
 
-[{*.yml,*.yaml}]
-indent_style=space
-indent_size=2
+# Source code files (use repository defaults)
+[{*.py,*.java,*.gradle,*.properties}]
+# using repository default settings
 
-[GrobidRestProcessString.java]
-indent_style=tab
+[{*.sh,Dockerfile,*.dockerfile}]
+indent_size = 2
+
+# Makefile requires tabs
+[Makefile]
+indent_style = tab
+trim_trailing_whitespace = false
