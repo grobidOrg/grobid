@@ -1986,22 +1986,37 @@ public class BiblioItem {
                 StringJoiner authors = new StringJoiner(" and ", "  author = {", "}");
                 if (fullAuthors != null) {
                     fullAuthors.stream()
-                               .filter(person -> person != null)
-                               .forEachOrdered(person -> {
-                                   String author = "";
-                                   if (person.getLastName() != null) {
-                                       author = person.getLastName();
-                                   }
-                                   if (person.getFirstName() != null) {
-                                       if (author.length() > 0) {
-                                           author += ", ";
-                                       }
-                                       author += person.getFirstName();
-                                   }
-                                   if (author.length() > 0 ) {
-                                       authors.add(author);
-                                   }
-                               });
+                       .filter(Objects::nonNull)
+                       .forEachOrdered(person -> {
+                           String author = "";
+                           if (person.getLastName() != null) {
+                               author = person.getLastName();
+                           }
+                           if (person.getFirstName() != null) {
+                               if (StringUtils.isNotBlank(author)) {
+                                   author += ", ";
+                               }
+                               author += person.getFirstName();
+                               if (person.getFirstName().length() == 1) {
+                                   author += ".";
+                               }
+                           }
+                           if (person.getMiddleName() != null) {
+                               if (StringUtils.isNotBlank(author) && StringUtils.isBlank(person.getFirstName())) {
+                                   author += ", ";
+                               } else {
+                                   author += " ";
+                               }
+                               author += person.getMiddleName();
+                               if (person.getMiddleName().length() == 1) {
+                                   author += ".";
+                               }
+                           }
+
+                           if (StringUtils.isNotBlank(author)) {
+                               authors.add(author);
+                           }
+                       });
                 } else if (this.authors != null) {
                     StringTokenizer st = new StringTokenizer(this.authors, ";");
                     while (st.hasMoreTokens()) {
