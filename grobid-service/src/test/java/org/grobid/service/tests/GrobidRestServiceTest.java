@@ -259,7 +259,7 @@ public class GrobidRestServiceTest {
                                        .post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED_TYPE));
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
         assertEquals("@inproceedings{-1,\n" +
-                "  author = {Kolb, S and Wirtz, G},\n" +
+                "  author = {Kolb, S. and Wirtz, G.},\n" +
                 "  booktitle = {Towards Application Portability in Platform as a Service Proceedings of the 8th IEEE International Symposium on Service-Oriented System Engineering (SOSE)},\n" +
                 "  date = {2014},\n" +
                 "  year = {2014},\n" +
@@ -281,7 +281,7 @@ public class GrobidRestServiceTest {
                                        .post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED_TYPE));
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
         assertEquals("@inproceedings{-1,\n" +
-                "  author = {Kolb, S and Wirtz, G},\n" +
+                "  author = {Kolb, S. and Wirtz, G.},\n" +
                 "  booktitle = {Towards Application Portability in Platform as a Service Proceedings of the 8th IEEE International Symposium on Service-Oriented System Engineering (SOSE)},\n" +
                 "  date = {2014},\n" +
                 "  year = {2014},\n" +
@@ -309,7 +309,7 @@ public class GrobidRestServiceTest {
             "}\n" +
             "\n" +
             "@article{1,\n" +
-            "  author = {Kopp, O and Armbruster, A and Zimmermann, O},\n" +
+            "  author = {Kopp, O. and Armbruster, A. and Zimmermann, O.},\n" +
             "  title = {Markdown Architectural Decision Records: Format and Tool Support},\n" +
             "  booktitle = {ZEUS. CEUR Workshop Proceedings},\n" + 
             "  year = {2018},\n" +
@@ -317,7 +317,7 @@ public class GrobidRestServiceTest {
             "}\n" +
             "\n" +
             "@article{2,\n" +
-            "  author = {Thurimella, A and Schubanz, M and Pleuss, A and Botterweck, G},\n" +
+            "  author = {Thurimella, A. and Schubanz, M. and Pleuss, A. and Botterweck, G.},\n" +
             "  title = {Guidelines for Managing Requirements Rationales},\n" +
             "  journal = {IEEE Software},\n" +
             "  year = {Jan 2017},\n" +
@@ -327,7 +327,7 @@ public class GrobidRestServiceTest {
             "}\n" +
             "\n" +
             "@article{3,\n" +
-            "  author = {Zdun, U and Capilla, R and Tran, H and Zimmermann, O},\n" +
+            "  author = {Zdun, U. and Capilla, R. and Tran, H. and Zimmermann, O.},\n" +
             "  title = {Sustainable Architectural Design Decisions},\n" +
             "  journal = {IEEE Software},\n" +
             "  year = {Nov 2013},\n" +
@@ -337,7 +337,7 @@ public class GrobidRestServiceTest {
             "}\n" +
             "\n" +
             "@inbook{4,\n" +
-            "  author = {Zimmermann, O and Wegmann, L and Koziolek, H and Goldschmidt, T},\n" +
+            "  author = {Zimmermann, O. and Wegmann, L. and Koziolek, H. and Goldschmidt, T.},\n" +
             "  title = {Architectural Decision Guidance Across Projects -Problem Space Modeling, Decision Backlog Management and Cloud Computing Knowledge},\n" +
             "  booktitle = {Working IEEE/IFIP Conference on Software Architecture},\n" +
             "  year = {2015}\n" +
