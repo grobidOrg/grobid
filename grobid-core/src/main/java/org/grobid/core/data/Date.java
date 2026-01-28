@@ -3,16 +3,19 @@ package org.grobid.core.data;
 import org.grobid.core.utilities.TextUtilities;
 
 /**
- * Class for representing a date.
- * We use our own representation of dates for having a comparable which prioritize the most fully specified
- * dates first, then the earliest date, i.e.:
+ * Class for representing a date. We use our own representation of dates for having a comparable which prioritize the
+ * most fully specified dates first, then the earliest date, i.e.:
+ *
+ * <pre>
  * 10.2010 < 2010
  * 20.10.2010 < 10.2010
  * 19.10.2010 < 20.10.2010
  * 1999 < 10.2000
  * 10.1999 < 2000
- * which is not the same as a comparison based only on time flow.
- * For comparing dates by strict time flow, please use java.util.Date + java.util.Calendar
+ * </pre>
+ *
+ * which is not the same as a comparison based only on time flow. For comparing dates by strict time flow, please use
+ * java.util.Date + java.util.Calendar
  */
 public class Date implements Comparable<Date> {
     private int day = -1;
@@ -186,12 +189,12 @@ public class Date implements Comparable<Date> {
     }
 
     /**
-     * Return a new date instance by merging the date information from a first date with
-     * the date information from a second date. 
-     * The merging follows the year, month, day sequence. If the years
-     * for instance clash, the merging is stopped. 
+     * Return a new date instance by merging the date information from a first date with the date information from a
+     * second date. The merging follows the year, month, day sequence. If the years for instance clash, the merging is
+     * stopped.
      *
-     * Examples of merging: 
+     * <pre>
+     * Examples of merging:
      * "2010" "2010-10" -> "2010-10"
      * "2010" "2010-10-27" -> "2010-10-27"
      * "2010-10" "2010-10-27" -> "2010-10-27"
@@ -199,6 +202,7 @@ public class Date implements Comparable<Date> {
      * "2011-10" "2010-10-27" -> "2011-10"
      * "2010" "2016-10-27" -> "2010"
      * "2011" "2010" -> 2011
+     * </pre>
      */
     public static Date merge(Date date1, Date date2) {
         if (date1.getYear() == -1) {

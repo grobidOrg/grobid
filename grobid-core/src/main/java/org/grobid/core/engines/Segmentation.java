@@ -33,30 +33,29 @@ import static org.apache.commons.lang3.StringUtils.*;
 // the jar for this plugin is located in the local repository
 
 /**
- * Realise a high level segmentation of a document into cover page, document header, page footer,
- * page header, document body, bibliographical section, each bibliographical references in
- * the biblio section and finally the possible annexes.
+ * Realise a high level segmentation of a document into cover page, document header, page footer, page header, document
+ * body, bibliographical section, each bibliographical references in the biblio section and finally the possible
+ * annexes.
  *
+ * <pre>
+ *     13 labels for this model:
+ * 	 		cover page <cover>,
+ * 			document header <header>,
+ * 			page footer <footnote>,
+ * 			page header <headnote>,
+ *          note in margin <marginnote>,
+ * 			document body <body>,
+ * 			bibliographical section <references>,
+ * 			page number <page>,
+ * 			annexes <annex>,
+ * 		    acknowledgement <acknowledgement>,
+ * 		   	availability <availability>,
+ * 		   	funding <funding>,
+ *             other <other>,
+ * 		    toc <toc> -> not yet used because not yet training data for this
+ * </pre>
  */
 public class Segmentation extends AbstractParser {
-
-	/*
-        13 labels for this model:
-	 		cover page <cover>, 
-			document header <header>, 
-			page footer <footnote>, 
-			page header <headnote>,
-            note in margin <marginnote>, 
-			document body <body>, 
-			bibliographical section <references>, 
-			page number <page>,
-			annexes <annex>,
-		    acknowledgement <acknowledgement>,
-		   	availability <availability>,
-		   	funding <funding>,
-            other <other>,
-		    toc <toc> -> not yet used because not yet training data for this
-	*/
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Segmentation.class);
 

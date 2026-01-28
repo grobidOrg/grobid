@@ -4,6 +4,7 @@ import org.grobid.core.GrobidModels;
 
 public class SegmentationLabels extends TaggingLabels{
     /**
+     * <pre>
      * cover page <cover>,
      * document header <header>,
      * page footer <footnote>,
@@ -13,11 +14,12 @@ public class SegmentationLabels extends TaggingLabels{
      * bibliographical section <references>,
      * page number <page>,
      * annexes <annex>,
-	 * acknowledgement <acknowledgement>,
-	 * availability <availability>,
-	 * funding <funding>,
+     * acknowledgement <acknowledgement>,
+     * availability <availability>,
+     * funding <funding>,
      * other <other>,
-	 * toc <toc> -> not yet used because not yet training data for this
+     * toc <toc> -> not yet used because not yet training data for this
+     * </pre>
      */
 
     public final static String COVER_LABEL = "<cover>";

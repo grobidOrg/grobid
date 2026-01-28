@@ -24,10 +24,11 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Parser for patent references based on regular language rewriting.
- * Input raw references are WISIWIG references (i.e. reference string as
- * they appear). Expected ouput is the patent reference in the EPO Epoque
- * format.
  *
+ * <pre>
+ * Input raw references are WISIWIG references (i.e. reference string as they appear).
+ * Expected output is the patent reference in the EPO Epoque format.
+ * </pre>
  */
 
 public class PatentRefParser {

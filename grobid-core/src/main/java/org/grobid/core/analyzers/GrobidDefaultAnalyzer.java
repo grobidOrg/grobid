@@ -182,14 +182,14 @@ public class GrobidDefaultAnalyzer implements Analyzer {
     }
 
     /**
-     * To tokenize mixture of alphabetical and numerical characters by separating 
-     * separate alphabetical and numerical character subsequences. To be used
-     * when relevant. 
-     * <p>
+     * To tokenize mixture of alphabetical and numerical characters by separating separate alphabetical and numerical
+     * character subsequences. To be used when relevant.
+     *
+     * <pre>
      * 1m74 ->  tokens.add(new LayoutToken("1"));
      * tokens.add(new LayoutToken("m"));
      * tokens.add(new LayoutToken("74"));
-     *
+     * </pre>
      */
     public List<LayoutToken> retokenizeSubdigitsWithLayoutToken(List<String> chunks) {
         List<LayoutToken> result = new ArrayList<>();
@@ -209,16 +209,15 @@ public class GrobidDefaultAnalyzer implements Analyzer {
     }
 
     /**
-     * To tokenize mixture of alphabetical and numerical characters by separating 
-     * separate alphabetical and numerical character subsequences. To be used
-     * when relevant. 
-     * Input is a list of LayoutToken, but the coordinates of the subtokens are however 
-     * not recomputed here (at least for the moment). 
-     * <p>
+     * To tokenize mixture of alphabetical and numerical characters by separating separate alphabetical and numerical
+     * character subsequences. To be used when relevant. Input is a list of LayoutToken, but the coordinates of the
+     * subtokens are however not recomputed here (at least for the moment).
+     *
+     * <pre>
      * 1m74 ->  tokens.add(new LayoutToken("1"));
      * tokens.add(new LayoutToken("m"));
      * tokens.add(new LayoutToken("74"));
-     *
+     * </pre>
      */
     public List<LayoutToken> retokenizeSubdigitsFromLayoutToken(List<LayoutToken> tokens) {
         List<LayoutToken> result = new ArrayList<>();
