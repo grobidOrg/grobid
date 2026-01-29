@@ -38,7 +38,6 @@ public class Triple<A, B, C> {
     };
 
     @Override
-    @Override
     public String toString() {
         return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("a", a)
                 .append("b", b)
