@@ -1,12 +1,14 @@
 package org.grobid.core.lang;
 
 import org.grobid.core.exceptions.GrobidException;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * Language recognition result
  */
 public final class Language {
-    //common language constants (TBD use an external ISO_639-1 reference lib.)
+    // common language constants (TBD use an external ISO_639-1 reference lib.)
     public static final String EN = "en";
     public static final String DE = "de";
     public static final String FR = "fr";
@@ -26,17 +28,18 @@ public final class Language {
     private String lang;
     private double conf;
 
-	// default construction for jackson mapping
-	public Language() {}
+    // default construction for jackson mapping
+    public Language() {
+    }
 
     public Language(String langId) {
         if (langId == null) {
             throw new GrobidException("Language id cannot be null");
         }
 
-        if ((langId.length() != 3 && langId.length() != 2 && (!langId.equals("sorb")) && 
-            (!langId.equals("zh-cn")) && (!langId.equals("zh-tw"))) || !(Character.isLetter(langId.charAt(0))
-            && Character.isLetter(langId.charAt(1)))) {
+        if ((langId.length() != 3 && langId.length() != 2 && (!langId.equals("sorb")) && (!langId.equals("zh-cn"))
+                && (!langId.equals("zh-tw")))
+                || !(Character.isLetter(langId.charAt(0)) && Character.isLetter(langId.charAt(1)))) {
             throw new GrobidException("Language id should consist of two or three letters, but was: " + langId);
         }
 
@@ -49,9 +52,9 @@ public final class Language {
             throw new GrobidException("Language id cannot be null");
         }
 
-        if ((langId.length() != 3 && langId.length() != 2 && (!langId.equals("sorb")) && 
-            (!langId.equals("zh-cn")) && (!langId.equals("zh-tw"))) || !(Character.isLetter(langId.charAt(0))
-            && Character.isLetter(langId.charAt(1)))) {
+        if ((langId.length() != 3 && langId.length() != 2 && (!langId.equals("sorb")) && (!langId.equals("zh-cn"))
+                && (!langId.equals("zh-tw")))
+                || !(Character.isLetter(langId.charAt(0)) && Character.isLetter(langId.charAt(1)))) {
             throw new GrobidException("Language id should consist of two or three letters, but was: " + langId);
         }
 
@@ -78,7 +81,7 @@ public final class Language {
     public String getLang() {
         return lang;
     }
-	
+
     public void setLang(String lang) {
         this.lang = lang;
     }
@@ -88,16 +91,18 @@ public final class Language {
         return conf;
     }
 
-	public void setConf(double conf) {
-		this.conf = conf;
-	}
+    public void setConf(double conf) {
+        this.conf = conf;
+    }
 
     @Override
     public String toString() {
-        return lang + ";" + conf;
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("lang", lang)
+                .append("conf", conf)
+                .toString();
     }
 
     public String toJSON() {
-        return "{\"lang\":\""+lang+"\", \"conf\": "+conf+"}";
+        return "{\"lang\":\"" + lang + "\", \"conf\": " + conf + "}";
     }
 }

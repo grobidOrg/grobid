@@ -47,7 +47,6 @@ public class LuceneIndexMatcher<T, V> implements Closeable {
         this.searchedFieldSelector = searchedFieldSelector;
     }
 
-
     public void load(Iterable<T> entities) throws EntityMatcherException {
         close();
 
@@ -66,9 +65,13 @@ public class LuceneIndexMatcher<T, V> implements Closeable {
                 }
 
                 cache.put(idCounter, entity);
-                doc.add(new Field(ID_LUCENE_FIELD_NAME, String.valueOf(idCounter), Field.Store.YES, Field.Index.NOT_ANALYZED));
+                doc.add(
+                        new Field(ID_LUCENE_FIELD_NAME, String.valueOf(idCounter), Field.Store.YES,
+                                Field.Index.NOT_ANALYZED));
 
-                doc.add(new Field(INDEXED_LUCENE_FIELD_NAME, indexedFieldObj.toString(), Field.Store.YES, Field.Index.ANALYZED));
+                doc.add(
+                        new Field(INDEXED_LUCENE_FIELD_NAME, indexedFieldObj.toString(), Field.Store.YES,
+                                Field.Index.ANALYZED));
                 writer.addDocument(doc);
                 if (debug) {
                     System.out.println("Doc added: " + doc);
@@ -86,7 +89,7 @@ public class LuceneIndexMatcher<T, V> implements Closeable {
                     writer.close();
                 }
             } catch (IOException ignored) {
-                //no op
+                // no op
             }
         }
 
@@ -96,7 +99,6 @@ public class LuceneIndexMatcher<T, V> implements Closeable {
             throw new EntityMatcherException("Cannot open a lucene index searcher: " + e.getMessage(), e);
         }
     }
-
 
     public List<T> match(V entity) throws EntityMatcherException {
         try {
@@ -119,11 +121,11 @@ public class LuceneIndexMatcher<T, V> implements Closeable {
                 searcher.getIndexReader().close();
             } catch (IOException ignored) {
             }
-//            try {
-//
-//                searcher.close();
-//            } catch (IOException ignored) {
-//            }
+            // try {
+            //
+            // searcher.close();
+            // } catch (IOException ignored) {
+            // }
             throw new EntityMatcherException("Error searching lucene Index: " + e.getMessage(), e);
         }
     }
@@ -141,7 +143,7 @@ public class LuceneIndexMatcher<T, V> implements Closeable {
             return null;
         }
         BooleanQuery query = new BooleanQuery();
-//        final Term term = new Term(INDEXED_LUCENE_FIELD_NAME);
+        // final Term term = new Term(INDEXED_LUCENE_FIELD_NAME);
         List<String> luceneTokens = LuceneUtil.tokenizeString(analyzer, indexedObj.toString());
 
         for (String luceneToken : luceneTokens) {
@@ -180,7 +182,7 @@ public class LuceneIndexMatcher<T, V> implements Closeable {
             try {
                 searcher.getIndexReader().close();
             } catch (IOException e) {
-                //no op
+                // no op
             }
         }
     }

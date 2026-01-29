@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Class for representing cluster of document layout elements,
- * typically all blocks having the same font parameters.
+ * Class for representing cluster of document layout elements, typically all blocks having the same font parameters.
  *
  */
 public class Cluster {
@@ -89,4 +88,4 @@ public class Cluster {
         return fontSize;
     }
 
-}	
+}

@@ -15,7 +15,6 @@ import org.grobid.service.GrobidServiceConfiguration;
 import org.grobid.service.modules.GrobidServiceModule;
 import org.hibernate.validator.HibernateValidator;
 
-
 public class GrobidServiceModuleTest extends GrobidServiceModule {
 
     public static final String TEST_CONFIG_FILE = "src/test/resources/setup/config/test-config.yaml";
@@ -29,24 +28,19 @@ public class GrobidServiceModuleTest extends GrobidServiceModule {
         super.configure();
     }
 
-
     @Provides
     @Singleton
     @Override
     public GrobidServiceConfiguration configuration() {
         ObjectMapper objectMapper = Jackson.newObjectMapper();
 
-        ValidatorFactory validatorFactory = Validation
-                .byProvider(HibernateValidator.class)
+        ValidatorFactory validatorFactory = Validation.byProvider(HibernateValidator.class)
                 .configure()
-//                .addValidatedValueHandler(new OptionalValidatedValueUnwrapper())
+                // .addValidatedValueHandler(new OptionalValidatedValueUnwrapper())
                 .buildValidatorFactory();
 
-
-        final ConfigurationFactory<GrobidServiceConfiguration> configurationFactory =
-                new DefaultConfigurationFactoryFactory<GrobidServiceConfiguration>()
-                        .create(GrobidServiceConfiguration.class,
-                                validatorFactory.getValidator(), objectMapper, "dw");
+        final ConfigurationFactory<GrobidServiceConfiguration> configurationFactory = new DefaultConfigurationFactoryFactory<GrobidServiceConfiguration>()
+                .create(GrobidServiceConfiguration.class, validatorFactory.getValidator(), objectMapper, "dw");
 
         try {
             return configurationFactory.build(new FileConfigurationSourceProvider(), TEST_CONFIG_FILE);
@@ -61,6 +55,5 @@ public class GrobidServiceModuleTest extends GrobidServiceModule {
         return new Environment("test-grobid-service-env", new ObjectMapper(), null, new MetricRegistry(),
                 this.getClass().getClassLoader(), null, configuration());
     }
-
 
 }

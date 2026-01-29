@@ -4,7 +4,6 @@ import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.utilities.UnicodeUtil;
-import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.layout.LayoutToken;
 
 import java.util.List;
@@ -27,7 +26,7 @@ public class FeaturesVectorCitation {
     public boolean bold = false;
     public boolean italic = false;
     public String capitalisation = null; // one of INITCAP, ALLCAPS, NOCAPS
-    public String digit;  // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
+    public String digit; // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
     public boolean singleChar = false;
     public boolean properName = false;
     public boolean commonName = false;
@@ -37,7 +36,8 @@ public class FeaturesVectorCitation {
     public boolean year = false;
     public boolean month = false;
     public boolean http = false;
-    public String punctType = null; // one of NOPUNCT, OPENBRACKET, ENDBRACKET, DOT, COMMA, HYPHEN, QUOTE, PUNCT (default)
+    public String punctType = null; // one of NOPUNCT, OPENBRACKET, ENDBRACKET, DOT, COMMA, HYPHEN, QUOTE, PUNCT
+                                    // (default)
     public boolean containPunct = false;
     public int relativePosition = -1;
 
@@ -51,8 +51,10 @@ public class FeaturesVectorCitation {
     public boolean isKnownIdentifier = false;
 
     public String printVector() {
-        if (string == null) return null;
-        if (string.length() == 0) return null;
+        if (string == null)
+            return null;
+        if (string.length() == 0)
+            return null;
         StringBuilder res = new StringBuilder();
 
         // token string (1)
@@ -173,28 +175,23 @@ public class FeaturesVectorCitation {
         return res.toString();
     }
 
-
     /**
      * Add feature for citation parsing.
      */
-    static public String addFeaturesCitation(List<LayoutToken> tokens,
-                                             List<String> labels,
-                                             List<OffsetPosition> journalPositions,
-                                             List<OffsetPosition> abbrevJournalPositions,
-                                             List<OffsetPosition> conferencePositions,
-                                             List<OffsetPosition> publisherPositions,
-                                             List<OffsetPosition> locationPositions,
-                                             List<OffsetPosition> collaborationPositions,
-                                             List<OffsetPosition> identifierPositions, 
-                                             List<OffsetPosition> urlPositions) throws Exception {
-        if ((journalPositions == null) ||
-                (abbrevJournalPositions == null) ||
-                (conferencePositions == null) ||
-                (publisherPositions == null) ||
-                (locationPositions == null) ||
-                (collaborationPositions == null) ||
-                (identifierPositions == null) ||
-                (urlPositions == null)) {
+    static public String addFeaturesCitation(
+            List<LayoutToken> tokens,
+            List<String> labels,
+            List<OffsetPosition> journalPositions,
+            List<OffsetPosition> abbrevJournalPositions,
+            List<OffsetPosition> conferencePositions,
+            List<OffsetPosition> publisherPositions,
+            List<OffsetPosition> locationPositions,
+            List<OffsetPosition> collaborationPositions,
+            List<OffsetPosition> identifierPositions,
+            List<OffsetPosition> urlPositions) throws Exception {
+        if ((journalPositions == null) || (abbrevJournalPositions == null) || (conferencePositions == null)
+                || (publisherPositions == null) || (locationPositions == null) || (collaborationPositions == null)
+                || (identifierPositions == null) || (urlPositions == null)) {
             throw new GrobidException("At least one list of gazetter matches positions is null.");
         }
 
@@ -225,10 +222,10 @@ public class FeaturesVectorCitation {
         String previousText = null;
         FeaturesVectorCitation features = null;
         int sentenceLenth = tokens.size(); // length of the current sentence
-        for (int n=0; n < tokens.size(); n++) {
+        for (int n = 0; n < tokens.size(); n++) {
             LayoutToken token = tokens.get(n);
             String tag = null;
-            if ( (labels != null) && (labels.size() > 0) && (n < labels.size()) )
+            if ((labels != null) && (labels.size() > 0) && (n < labels.size()))
                 tag = labels.get(n);
 
             boolean outputLineStatus = false;
@@ -254,7 +251,7 @@ public class FeaturesVectorCitation {
 
             // parano normalisation
             text = UnicodeUtil.normaliseTextAndRemoveSpaces(text);
-            if (text.trim().length() == 0 ) {
+            if (text.trim().length() == 0) {
                 continue;
             }
 
@@ -267,8 +264,7 @@ public class FeaturesVectorCitation {
                 }
                 if (!skipTest) {
                     for (int i = currentJournalPositions; i < journalPositions.size(); i++) {
-                        if ((journalPositions.get(i).start <= n) &&
-                                (journalPositions.get(i).end >= n)) {
+                        if ((journalPositions.get(i).start <= n) && (journalPositions.get(i).end >= n)) {
                             isJournalToken = true;
                             currentJournalPositions = i;
                             break;
@@ -290,8 +286,7 @@ public class FeaturesVectorCitation {
                 }
                 if (!skipTest) {
                     for (int i = currentAbbrevJournalPositions; i < abbrevJournalPositions.size(); i++) {
-                        if ((abbrevJournalPositions.get(i).start <= n) &&
-                                (abbrevJournalPositions.get(i).end >= n)) {
+                        if ((abbrevJournalPositions.get(i).start <= n) && (abbrevJournalPositions.get(i).end >= n)) {
                             isAbbrevJournalToken = true;
                             currentAbbrevJournalPositions = i;
                             break;
@@ -313,8 +308,7 @@ public class FeaturesVectorCitation {
                 }
                 if (!skipTest) {
                     for (int i = currentConferencePositions; i < conferencePositions.size(); i++) {
-                        if ((conferencePositions.get(i).start <= n) &&
-                                (conferencePositions.get(i).end >= n)) {
+                        if ((conferencePositions.get(i).start <= n) && (conferencePositions.get(i).end >= n)) {
                             isConferenceToken = true;
                             currentConferencePositions = i;
                             break;
@@ -336,8 +330,7 @@ public class FeaturesVectorCitation {
                 }
                 if (!skipTest) {
                     for (int i = currentPublisherPositions; i < publisherPositions.size(); i++) {
-                        if ((publisherPositions.get(i).start <= n) &&
-                                (publisherPositions.get(i).end >= n)) {
+                        if ((publisherPositions.get(i).start <= n) && (publisherPositions.get(i).end >= n)) {
                             isPublisherToken = true;
                             currentPublisherPositions = i;
                             break;
@@ -359,8 +352,7 @@ public class FeaturesVectorCitation {
                 }
                 if (!skipTest) {
                     for (int i = currentLocationPositions; i < locationPositions.size(); i++) {
-                        if ((locationPositions.get(i).start <= n) &&
-                                (locationPositions.get(i).end >= n)) {
+                        if ((locationPositions.get(i).start <= n) && (locationPositions.get(i).end >= n)) {
                             isLocationToken = true;
                             currentLocationPositions = i;
                             break;
@@ -382,8 +374,7 @@ public class FeaturesVectorCitation {
                 }
                 if (!skipTest) {
                     for (int i = currentCollaborationPositions; i < collaborationPositions.size(); i++) {
-                        if ((collaborationPositions.get(i).start <= n) &&
-                                (collaborationPositions.get(i).end >= n)) {
+                        if ((collaborationPositions.get(i).start <= n) && (collaborationPositions.get(i).end >= n)) {
                             isCollaborationToken = true;
                             currentCollaborationPositions = i;
                             break;
@@ -405,8 +396,7 @@ public class FeaturesVectorCitation {
                 }
                 if (!skipTest) {
                     for (int i = currentIdentifierPositions; i < identifierPositions.size(); i++) {
-                        if ((identifierPositions.get(i).start <= n) &&
-                                (identifierPositions.get(i).end >= n)) {
+                        if ((identifierPositions.get(i).start <= n) && (identifierPositions.get(i).end >= n)) {
                             isIdentifierToken = true;
                             currentIdentifierPositions = i;
                             break;
@@ -428,8 +418,7 @@ public class FeaturesVectorCitation {
                 }
                 if (!skipTest) {
                     for (int i = currentUrlPositions; i < urlPositions.size(); i++) {
-                        if ((urlPositions.get(i).start <= n) &&
-                                (urlPositions.get(i).end >= n)) {
+                        if ((urlPositions.get(i).start <= n) && (urlPositions.get(i).end >= n)) {
                             isUrlToken = true;
                             currentUrlPositions = i;
                             break;
@@ -478,12 +467,12 @@ public class FeaturesVectorCitation {
                     features.lineStatus = "LINESTART";
                     outputLineStatus = true;
                 }
-            } else if (tokens.size() == n+1) {
+            } else if (tokens.size() == n + 1) {
                 if (!outputLineStatus) {
                     features.lineStatus = "LINEEND";
                     outputLineStatus = true;
                 }
-            } 
+            }
 
             if (!outputLineStatus) {
                 features.lineStatus = "LINEIN";
@@ -538,11 +527,10 @@ public class FeaturesVectorCitation {
 
             if (isCollaborationToken)
                 features.isKnownCollaboration = true;
-            
-            /*Matcher m5 = featureFactory.ACRONYM.matcher(text);
-               if (m5.find()) {
-                   features.acronym = true;
-               }*/
+
+            /*
+             * Matcher m5 = featureFactory.ACRONYM.matcher(text); if (m5.find()) { features.acronym = true; }
+             */
 
             if (features.capitalisation == null)
                 features.capitalisation = "NOCAPS";

@@ -21,7 +21,8 @@ public class ChangePropertyParser {
     /**
      * Constructor of ChangePropertyParser.
      *
-     * @param pInput the xml to parse.
+     * @param pInput
+     * the xml to parse.
      * @throws ParserConfigurationException
      * @throws SAXException
      * @throws IOException
@@ -57,7 +58,8 @@ public class ChangePropertyParser {
     /**
      * Return the value of the pTag.
      *
-     * @param pTag the tag name.
+     * @param pTag
+     * the tag name.
      * @return the value contained in the tag.
      */
     protected String getValue(String pTag) {
@@ -76,13 +78,14 @@ public class ChangePropertyParser {
     /**
      * Return the value of the tag pTag in element eElement
      *
-     * @param sTag     the tag name.
-     * @param eElement the element
+     * @param sTag
+     * the tag name.
+     * @param eElement
+     * the element
      * @return the value contained in the tag.
      */
     protected static String getTagValue(String sTag, Element eElement) {
-        NodeList nlList = eElement.getElementsByTagName(sTag).item(0)
-                .getChildNodes();
+        NodeList nlList = eElement.getElementsByTagName(sTag).item(0).getChildNodes();
 
         Node nValue = (Node) nlList.item(0);
 

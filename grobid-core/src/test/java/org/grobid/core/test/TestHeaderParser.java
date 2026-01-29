@@ -21,7 +21,7 @@ public class TestHeaderParser extends EngineTest {
     public static final String TEST_RESOURCES_PATH = "./src/test/resources/test";
 
     @AfterClass
-    public static void tearDown(){
+    public static void tearDown() {
         GrobidFactory.reset();
     }
 
@@ -43,7 +43,8 @@ public class TestHeaderParser extends EngineTest {
 
         assertNotNull(resHeader);
         assertThat(resHeader.getTitle(), is("Information Synthesis for Answer Validation"));
-        assertThat(resHeader.getKeyword(),
+        assertThat(
+                resHeader.getKeyword(),
                 is("Answer Validation, Recognizing Textual Entailment, Information Synthesis"));
         assertNotNull(resHeader.getFullAuthors());
 
@@ -53,37 +54,35 @@ public class TestHeaderParser extends EngineTest {
         tei = engine.processHeader(pdfPath, resHeader);
 
         assertNotNull(resHeader);
-        //System.out.println(tei);
+        // System.out.println(tei);
 
         pdfPath = absolutePath + File.separator + "ZNC-1988-43c-0034.pdf";
         resHeader = new BiblioItem();
         tei = engine.processHeader(pdfPath, resHeader);
-        //System.out.println(tei);
+        // System.out.println(tei);
 
-        //assertNotNull(resHeader);
+        // assertNotNull(resHeader);
 
         pdfPath = absolutePath + File.separator + "ZNC-1988-43c-0065.pdf";
         resHeader = new BiblioItem();
         tei = engine.processHeader(pdfPath, resHeader);
 
         assertNotNull(resHeader);
-        //System.out.println(tei);
+        // System.out.println(tei);
 
     }
 
-    /*@Test
-    public void testSegmentationHeader() throws Exception {
-        getTestResourcePath();
-
-        File pdfPath = new File(testPath + File.separator + "Wang-paperAVE2008.pdf");
-        BiblioItem resHeader = new BiblioItem();
-
-        String tei = engine.segmentAndProcessHeader(pdfPath, 0, resHeader);
-
-        assertNotNull(resHeader);
-        assertThat(resHeader.getTitle(), is("Information Synthesis for Answer Validation"));
-        assertThat(resHeader.getKeyword(),
-                is("Answer Validation, Recognizing Textual Entailment, Information Synthesis"));
-        assertNotNull(resHeader.getFullAuthors());
-    }*/
+    /*
+     * @Test public void testSegmentationHeader() throws Exception { getTestResourcePath();
+     *
+     * File pdfPath = new File(testPath + File.separator + "Wang-paperAVE2008.pdf"); BiblioItem resHeader = new
+     * BiblioItem();
+     *
+     * String tei = engine.segmentAndProcessHeader(pdfPath, 0, resHeader);
+     *
+     * assertNotNull(resHeader); assertThat(resHeader.getTitle(), is("Information Synthesis for Answer Validation"));
+     * assertThat(resHeader.getKeyword(),
+     * is("Answer Validation, Recognizing Textual Entailment, Information Synthesis"));
+     * assertNotNull(resHeader.getFullAuthors()); }
+     */
 }

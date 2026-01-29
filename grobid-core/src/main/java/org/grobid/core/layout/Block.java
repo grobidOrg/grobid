@@ -2,18 +2,19 @@ package org.grobid.core.layout;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
- * Class for representing and exchanging a document block. A block is defined here relatively to
- * some properties in the document layout.
+ * Class for representing and exchanging a document block. A block is defined here relatively to some properties in the
+ * document layout.
  */
 public class Block {
     private String text = null;
     private BoundingBox boundingBox = null;
-    /*private double y = 0.0;
-    private double x = 0.0;
-    private double width = 0.0;
-    private double height = 0.0;*/
+    /*
+     * private double y = 0.0; private double x = 0.0; private double width = 0.0; private double height = 0.0;
+     */
     private String font = null;
     private boolean bold = false;
     private boolean italic = false;
@@ -30,7 +31,9 @@ public class Block {
     // the page in the document where the block is located
     private Page page = null;
 
-    public enum Type {DEFAULT, BULLET, FIGURE, TABLE, REFERENCE}
+    public enum Type {
+        DEFAULT, BULLET, FIGURE, TABLE, REFERENCE
+    }
 
     private Type type;
 
@@ -69,7 +72,7 @@ public class Block {
             return text;
         else {
             StringBuilder localText = new StringBuilder();
-            for(LayoutToken token : tokens) {
+            for (LayoutToken token : tokens) {
                 localText.append(token.getText());
             }
             text = localText.toString();
@@ -132,47 +135,47 @@ public class Block {
         boundingBox = box;
     }
 
-    /*public void setX(double d) {
-        x = Math.abs(d);
-    }*/
+    /*
+     * public void setX(double d) { x = Math.abs(d); }
+     */
 
     public double getX() {
         if (boundingBox != null)
             return boundingBox.getX();
-        else 
+        else
             return 0.0;
     }
 
-    /*public void setY(double d) {
-        y = Math.abs(d);
-    }*/
+    /*
+     * public void setY(double d) { y = Math.abs(d); }
+     */
 
     public double getY() {
         if (boundingBox != null)
             return boundingBox.getY();
-        else 
+        else
             return 0.0;
     }
 
-    /*public void setHeight(double d) {
-        height = Math.abs(d);
-    }*/
+    /*
+     * public void setHeight(double d) { height = Math.abs(d); }
+     */
 
     public double getHeight() {
         if (boundingBox != null)
             return boundingBox.getHeight();
-        else 
+        else
             return 0.0;
     }
 
-    /*public void setWidth(double d) {
-        width = Math.abs(d);
-    }*/
+    /*
+     * public void setWidth(double d) { width = Math.abs(d); }
+     */
 
     public double getWidth() {
         if (boundingBox != null)
             return boundingBox.getWidth();
-        else 
+        else
             return 0.0;
     }
 
@@ -186,8 +189,8 @@ public class Block {
                 return getStartToken();
             } else {
                 return getStartToken() + tokens.size();
-            }   
-        } else 
+            }
+        } else
             return endToken;
     }
 
@@ -210,27 +213,24 @@ public class Block {
             return -1;
         }
     }
-    
+
     public void setPage(Page page) {
         this.page = page;
     }
 
     public boolean isNull() {
-        if ( (tokens == null) && (startToken == -1) && (endToken == -1) && (type == null) ) {
+        if ((tokens == null) && (startToken == -1) && (endToken == -1) && (type == null)) {
             return true;
-        }
-        else 
+        } else
             return false;
     }
 
     @Override
     public String toString() {
-        String res = "Block{" +
-                ", startToken=" + startToken +
-                ", endToken=" + endToken +
-                ", type=" + type;
-        if (boundingBox != null)
-            res += ", boundingBox=" + boundingBox.toString() + '}';
-        return res;
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("startToken", startToken)
+                .append("endToken", endToken)
+                .append("type", type)
+                .append("boundingBox", boundingBox)
+                .toString();
     }
 }

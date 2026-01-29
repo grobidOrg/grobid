@@ -1,8 +1,7 @@
 package org.grobid.core.data;
 
 public enum FigureTableType {
-    FIGURE("figure"),
-    TABLE("table");
+    FIGURE("figure"), TABLE("table");
 
     private final String value;
 

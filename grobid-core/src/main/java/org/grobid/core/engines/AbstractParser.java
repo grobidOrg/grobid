@@ -53,7 +53,7 @@ public abstract class AbstractParser implements GenericTagger, Closeable {
             genericTagger.close();
         } catch (Exception e) {
             LOGGER.warn("Cannot close the parser: " + e.getMessage());
-            //no op
+            // no op
         }
     }
 }

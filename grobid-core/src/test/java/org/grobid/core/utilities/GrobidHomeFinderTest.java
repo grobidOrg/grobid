@@ -25,11 +25,10 @@ public class GrobidHomeFinderTest {
         GrobidProperties.getInstance();
     }
 
-    /*@Test
-    public void testViaProp() {
-        System.setProperty(GrobidPropertyKeys.PROP_GROBID_HOME, "../grobid-home");
-        assertPath(new GrobidHomeFinder(Collections.<String>emptyList()).findGrobidHomeOrFail());
-    }*/
+    /*
+     * @Test public void testViaProp() { System.setProperty(GrobidPropertyKeys.PROP_GROBID_HOME, "../grobid-home");
+     * assertPath(new GrobidHomeFinder(Collections.<String>emptyList()).findGrobidHomeOrFail()); }
+     */
 
     @Test(expected = GrobidPropertyException.class)
     public void testNoDefaultLocations() {

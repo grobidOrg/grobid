@@ -31,10 +31,9 @@ public class TableParser extends AbstractParser {
     }
 
     /**
-     * The processing here is called from the full text parser in cascade.
-     * Normally we should find only one table in the sequence to be labelled. 
-     * But for robustness and recovering error from the higher level, we allow
-     * sub-segmenting several tables that appears one after the other.   
+     * The processing here is called from the full text parser in cascade. Normally we should find only one table in the
+     * sequence to be labelled. But for robustness and recovering error from the higher level, we allow sub-segmenting
+     * several tables that appears one after the other.
      */
     public List<Table> processing(List<LayoutToken> tokenizationTable, String featureVector) {
         String res;
@@ -47,16 +46,16 @@ public class TableParser extends AbstractParser {
         if (res == null) {
             return null;
         }
-//        List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(res);
+        // List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(res);
         return getExtractionResult(tokenizationTable, res);
     }
 
     private List<Table> getExtractionResult(List<LayoutToken> tokenizations, String result) {
         List<Table> tables = new ArrayList<>();
-      
+
         // first table
         Table table = new Table();
-        
+
         TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.TABLE, result, tokenizations);
         List<TaggingTokenCluster> clusters = clusteror.cluster();
         TaggingLabel previousLabel = null;
@@ -80,19 +79,21 @@ public class TableParser extends AbstractParser {
                 // if we already have a header (it could be via label) and we are not continuing some header/label
                 // we consider the non-connected header field as the introduction of a new table
                 // TBD: this work fine for header located before the table content, but not sure otherwise
-                if (!StringUtils.isEmpty(table.getHeader()) &&
-                    previousLabel != null && 
-                    (previousLabel.equals(TBL_CONTENT) || previousLabel.equals(TBL_NOTE) || previousLabel.equals(TBL_DESC) )) {
+                if (!StringUtils.isEmpty(table.getHeader()) && previousLabel != null
+                        && (previousLabel.equals(TBL_CONTENT) || previousLabel.equals(TBL_NOTE)
+                                || previousLabel.equals(TBL_DESC))) {
                     // we already have a table header, this means that we have a distinct table starting now
                     tables.add(table);
-                    table.setTextArea(Collections.singletonList(BoundingBoxCalculator.calculateOneBox(table.getLayoutTokens(), true)));
+                    table.setTextArea(
+                            Collections.singletonList(
+                                    BoundingBoxCalculator.calculateOneBox(table.getLayoutTokens(), true)));
                     table = new Table();
                 }
                 table.appendHeader(clusterContent);
                 table.getFullDescriptionTokens().addAll(tokens);
                 table.addLayoutTokens(tokens);
             } else if (clusterLabel.equals(TBL_LABEL)) {
-                //label should also go to head
+                // label should also go to head
                 table.appendHeader(" " + clusterContent + " ");
                 table.appendLabel(clusterContent);
                 table.getFullDescriptionTokens().addAll(tokens);
@@ -114,10 +115,11 @@ public class TableParser extends AbstractParser {
             }
 
             previousLabel = clusterLabel;
-        }     
+        }
 
         // last table
-        table.setTextArea(Collections.singletonList(BoundingBoxCalculator.calculateOneBox(table.getLayoutTokens(), true)));
+        table.setTextArea(
+                Collections.singletonList(BoundingBoxCalculator.calculateOneBox(table.getLayoutTokens(), true)));
         tables.add(table);
 
         return tables;
@@ -126,8 +128,7 @@ public class TableParser extends AbstractParser {
     /**
      * The training data creation is called from the full text training creation in cascade.
      */
-    public Pair<String, String> createTrainingData(List<LayoutToken> tokenizations,
-                                                                             String featureVector, String id) {
+    public Pair<String, String> createTrainingData(List<LayoutToken> tokenizations, String featureVector, String id) {
         String res = null;
         try {
             res = label(featureVector);
@@ -154,8 +155,8 @@ public class TableParser extends AbstractParser {
             for (; tokPtr2 < tokenizations.size(); tokPtr2++) {
                 if (tokenizations.get(tokPtr2).getText().equals(" ")) {
                     addSpace = true;
-                } else if (tokenizations.get(tokPtr2).getText().equals("\n") ||
-                        tokenizations.get(tokPtr).getText().equals("\r")) {
+                } else if (tokenizations.get(tokPtr2).getText().equals("\n")
+                        || tokenizations.get(tokPtr).getText().equals("\r")) {
                     addEOL = true;
                 } else {
                     break;
@@ -191,8 +192,13 @@ public class TableParser extends AbstractParser {
                                     // we return to the initial position
                                     tokPtr = tokPtr - 3;
                                     tokenizationToken = tokenizations.get(tokPtr).getText();
-                                    LOGGER.error("Implementation error, tokens out of sync: " +
-                                            tokenizationToken + " != " + tok + ", at position " + tokPtr);
+                                    LOGGER.error(
+                                            "Implementation error, tokens out of sync: "
+                                                    + tokenizationToken
+                                                    + " != "
+                                                    + tok
+                                                    + ", at position "
+                                                    + tokPtr);
                                 }
                             }
                         }
@@ -241,7 +247,7 @@ public class TableParser extends AbstractParser {
                     figOpen = true;
                 }
                 sb.append(output);
-                //continue;
+                // continue;
             }
             output = writeField(label, lastTag, tok, "<note>", "<note>", addSpace, addEOL, 3);
             if (output != null) {
@@ -272,19 +278,23 @@ public class TableParser extends AbstractParser {
 
     public String getTEIHeader(String id) {
         StringBuilder sb = new StringBuilder();
-        sb.append("<tei>\n" +
-                "    <teiHeader>\n" +
-                "        <fileDesc xml:id=\"_" + id + "\"/>\n" +
-                "    </teiHeader>\n" +
-                "    <text xml:lang=\"en\">\n");
+        sb.append(
+                "<tei>\n"
+                        + "    <teiHeader>\n"
+                        + "        <fileDesc xml:id=\"_"
+                        + id
+                        + "\"/>\n"
+                        + "    </teiHeader>\n"
+                        + "    <text xml:lang=\"en\">\n");
         return sb.toString();
     }
 
-    private boolean testClosingTag(StringBuilder buffer,
-                                   String currentTag,
-                                   String lastTag,
-                                   boolean addSpace,
-                                   boolean addEOL) {
+    private boolean testClosingTag(
+            StringBuilder buffer,
+            String currentTag,
+            String lastTag,
+            boolean addSpace,
+            boolean addEOL) {
         boolean res = false;
         if (!currentTag.equals(lastTag)) {
             res = true;
@@ -325,38 +335,30 @@ public class TableParser extends AbstractParser {
                 if (addSpace)
                     buffer.append(" ");
                 buffer.append("</note>\n");
-            }else {
+            } else {
                 res = false;
             }
         }
         return res;
     }
 
-    private String writeField(String currentTag,
-                              String lastTag,
-                              String token,
-                              String field,
-                              String outField,
-                              boolean addSpace,
-                              boolean addEOL,
-                              int nbIndent) {
+    private String writeField(
+            String currentTag,
+            String lastTag,
+            String token,
+            String field,
+            String outField,
+            boolean addSpace,
+            boolean addEOL,
+            int nbIndent) {
         String result = null;
         if (currentTag.endsWith(field)) {
-            /*if (currentTag.endsWith("<other>") || currentTag.endsWith("<content>")) {
-                result = "";
-				if (currentTag.startsWith("I-") || (lastTag == null)) {
-					result += "\n";
-					for (int i = 0; i < nbIndent; i++) {
-	                    result += "    ";
-	                }
-				}
-				if (addEOL)
-                    result += "<lb/>";
-				if (addSpace)
-                    result += " ";
-                result += TextUtilities.HTMLEncode(token);
-            }
-			else*/
+            /*
+             * if (currentTag.endsWith("<other>") || currentTag.endsWith("<content>")) { result = ""; if
+             * (currentTag.startsWith("I-") || (lastTag == null)) { result += "\n"; for (int i = 0; i < nbIndent; i++) {
+             * result += "    "; } } if (addEOL) result += "<lb/>"; if (addSpace) result += " "; result +=
+             * TextUtilities.HTMLEncode(token); } else
+             */
             if ((lastTag != null) && currentTag.endsWith(lastTag)) {
                 result = "";
                 if (addEOL)

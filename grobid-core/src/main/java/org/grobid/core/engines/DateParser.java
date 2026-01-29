@@ -37,7 +37,7 @@ public class DateParser extends AbstractParser {
     DateParser(GrobidModel model) {
         super(model);
     }
-    
+
     /**
      * Deprecated, @Use process(String input)
      **/
@@ -45,7 +45,7 @@ public class DateParser extends AbstractParser {
     public List<Date> processing(String input) {
         return process(input);
     }
-    
+
     public List<Date> process(String input) {
         List<String> dateBlocks = new ArrayList<>();
         // force English language for the tokenization only
@@ -54,46 +54,47 @@ public class DateParser extends AbstractParser {
             return null;
         }
 
-        for(String tok : tokenizations) {
+        for (String tok : tokenizations) {
             if (!" ".equals(tok) && !"\n".equals(tok)) {
                 // para final sanitisation
-                tok = NEWLINE_REGEX_PATTERN.matcher(tok).replaceAll( "");
+                tok = NEWLINE_REGEX_PATTERN.matcher(tok).replaceAll("");
                 dateBlocks.add(tok + " <date>");
             }
         }
-        
+
         return processCommon(dateBlocks);
     }
 
     public List<Date> process(List<LayoutToken> input) {
         List<String> dateBlocks = new ArrayList<>();
-        for(LayoutToken tok : input) {
+        for (LayoutToken tok : input) {
             if (!" ".equals(tok.getText()) && !"\n".equals(tok.getText())) {
                 // para final sanitisation
                 String normalizedText = tok.getText().replaceAll("[ \n]", "");
                 dateBlocks.add(normalizedText + " <date>");
-            } 
+            }
         }
 
         return processCommon(dateBlocks);
     }
-    
+
     protected List<Date> processCommon(List<String> input) {
         if (CollectionUtils.isEmpty(input))
             return null;
-        
+
         try {
             String features = FeaturesVectorDate.addFeaturesDate(input);
             String res = label(features);
 
             List<LayoutToken> tokenization = input.stream()
-                .map(token -> new LayoutToken(token.split(" ")[0]))
-                .collect(Collectors.toList());
-            
+                    .map(token -> new LayoutToken(token.split(" ")[0]))
+                    .collect(Collectors.toList());
+
             // extract results from the processed file
             return resultExtraction(res, tokenization);
         } catch (Exception e) {
-            throw new GrobidException("An exception on " + this.getClass().getName() + " occured while running Grobid.", e);
+            throw new GrobidException("An exception on " + this.getClass().getName() + " occured while running Grobid.",
+                    e);
         }
     }
 
@@ -111,44 +112,44 @@ public class DateParser extends AbstractParser {
             }
             TaggingLabel clusterLabel = cluster.getTaggingLabel();
             Engine.getCntManager().i(clusterLabel);
-            
+
             String clusterText = LayoutTokensUtil.toText(cluster.concatTokens());
             if (clusterLabel.equals(TaggingLabels.DATE_YEAR)) {
                 if (isNotBlank(date.getYearString())) {
-                        if (date.isNotNull()) {
-                            Date normalizedDate = normalizeAndClean(date);
-                            dates.add(normalizedDate);
-                            date = new Date();
-                        }
-                        date.setYearString(clusterText);
+                    if (date.isNotNull()) {
+                        Date normalizedDate = normalizeAndClean(date);
+                        dates.add(normalizedDate);
+                        date = new Date();
+                    }
+                    date.setYearString(clusterText);
 
                 } else {
                     date.setYearString(clusterText);
                 }
             } else if (clusterLabel.equals(TaggingLabels.DATE_DAY)) {
                 if (isNotBlank(date.getDayString())) {
-                        if (date.isNotNull()) {
-                            Date normalizedDate = normalizeAndClean(date);
-                            dates.add(normalizedDate);
-                            date = new Date();
-                        }
-                        date.setDayString(clusterText);
+                    if (date.isNotNull()) {
+                        Date normalizedDate = normalizeAndClean(date);
+                        dates.add(normalizedDate);
+                        date = new Date();
+                    }
+                    date.setDayString(clusterText);
                 } else {
                     date.setDayString(clusterText);
                 }
-               
+
             } else if (clusterLabel.equals(TaggingLabels.DATE_MONTH)) {
                 if (isNotBlank(date.getMonthString())) {
-                        if (date.isNotNull()) {
-                            Date normalizedDate = normalizeAndClean(date);
-                            dates.add(normalizedDate);
-                            date = new Date();
-                        }
-                        date.setMonthString(clusterText);
+                    if (date.isNotNull()) {
+                        Date normalizedDate = normalizeAndClean(date);
+                        dates.add(normalizedDate);
+                        date = new Date();
+                    }
+                    date.setMonthString(clusterText);
                 } else {
                     date.setMonthString(clusterText);
                 }
-            } 
+            }
         }
 
         if (date.isNotNull()) {
@@ -158,40 +159,40 @@ public class DateParser extends AbstractParser {
         return dates;
     }
 
-    public static final Pattern jan =
-            Pattern.compile("([Jj]an$|[Jj]anuary$|[Jj]anvier$|[Jj]annewaori$|[Jj]anuar$|[Ee]nero$|[Jj]anuaro$|[Jj]anuari$|[Jj]aneiro$|[Gg]ennaio$|[Gg]en$|[Oo]cak$|[Jj]a$|(^1$)|(^01$)|(1月))");
-    public static final Pattern feb =
-            Pattern.compile("([Ff]eb$|[Ff]ebruary$|[Ff][eé]vrier$|[Ff]ebruar$|[Ff]ebrewaori$|[Ff]ebrero$|[Ff]evereiro$|[Ff]ebbraio$|[Ll]uty$|[Ss]tyczeń$|Ş$|ubat$|[Ff]e$|^2$|^02$|2月)");
-    public static final Pattern mar =
-            Pattern.compile("([Mm]ar$|[Mm]arch$|[Mm]ars$|[Mm]eert$|[Mm]ärz$|[Mm]arzo$|[Mm]arço$|[Mm]art$|[Mm]a$|[Mm]a$|^3$|^03$|3月)");
-    public static final Pattern apr =
-            Pattern.compile("([Aa]pr$|[Aa]br$|[Aa]vr$|[Aa]pril$|[Aa]vril$|[Aa]pril$|[Aa]prile$|[Aa]bril$|[Nn]isan$|[Aa]p$|^4$|^04$|4月)");
-    public static final Pattern may =
-            Pattern.compile("([Mm]ay$|[Mm]ai$|[Mm]ay$|[Mm]ayıs$|[Mm]ei$|[Mm]aio$|[Mm]aggio$|[Mm]eie$|[Mm]a$|^5$|^05$|5月)");
-    public static final Pattern jun =
-            Pattern.compile("([Jj]un$|[Jj]une$|[Jj]uin$|[Jj]uni$|[Jj]unho$|[Gg]iugno$|[Hh]aziran$|^6$|^06$|6月)");
-    public static final Pattern jul =
-            Pattern.compile("([Jj]ul$|[Jj]uly$|[Jj]uillet$|[Jj]uli$|[Tt]emmuz$|[Ll]uglio$|[Jj]ulho$|^7$|^07$|7月)");
-    public static final Pattern aug =
-            Pattern.compile("([Aa]ug$|[Aa]ugust$|[Aa]o[uû]t$|[Aa]ugust$|[Aa]gosto$|[Aa]ugustus$|[Aa]ğustos$|^8$|^08$|8月)");
-    public static final Pattern sep =
-            Pattern.compile("([Ss]ep$|[Ss]ept$|[Ss]eptember$|[Ss]eptembre$|[Ss]eptember$|[Ss]ettembre$|[Ss]etembro$|[Ee]ylül$|^9$|^09$|9月)");
-    public static final Pattern oct =
-            Pattern.compile("([Oo]ct$|[Oo]cto$|[Oo]ctober$|[Oo]ctobre$|[Ee]kim$|[Oo]ktober$|[Oo]ttobre$|[Oo]utubro$|^10$|10月)");
-    public static final Pattern nov =
-            Pattern.compile("([Nn]ov$|[Nn]ovember$|[Nn]ovembre$|[Kk]asım$|[Nn]oviembre$|[Nn]ovembro$|^11$|11月)");
-    public static final Pattern dec =
-            Pattern.compile("([Dd]ec$|[Dd]ecember$|[Dd][eé]cembre$|[Dd]iciembre$|[Aa]ralık$|^12$|12月)");
+    public static final Pattern jan = Pattern.compile(
+            "([Jj]an$|[Jj]anuary$|[Jj]anvier$|[Jj]annewaori$|[Jj]anuar$|[Ee]nero$|[Jj]anuaro$|[Jj]anuari$|[Jj]aneiro$|[Gg]ennaio$|[Gg]en$|[Oo]cak$|[Jj]a$|(^1$)|(^01$)|(1月))");
+    public static final Pattern feb = Pattern.compile(
+            "([Ff]eb$|[Ff]ebruary$|[Ff][eé]vrier$|[Ff]ebruar$|[Ff]ebrewaori$|[Ff]ebrero$|[Ff]evereiro$|[Ff]ebbraio$|[Ll]uty$|[Ss]tyczeń$|Ş$|ubat$|[Ff]e$|^2$|^02$|2月)");
+    public static final Pattern mar = Pattern.compile(
+            "([Mm]ar$|[Mm]arch$|[Mm]ars$|[Mm]eert$|[Mm]ärz$|[Mm]arzo$|[Mm]arço$|[Mm]art$|[Mm]a$|[Mm]a$|^3$|^03$|3月)");
+    public static final Pattern apr = Pattern.compile(
+            "([Aa]pr$|[Aa]br$|[Aa]vr$|[Aa]pril$|[Aa]vril$|[Aa]pril$|[Aa]prile$|[Aa]bril$|[Nn]isan$|[Aa]p$|^4$|^04$|4月)");
+    public static final Pattern may = Pattern
+            .compile("([Mm]ay$|[Mm]ai$|[Mm]ay$|[Mm]ayıs$|[Mm]ei$|[Mm]aio$|[Mm]aggio$|[Mm]eie$|[Mm]a$|^5$|^05$|5月)");
+    public static final Pattern jun = Pattern
+            .compile("([Jj]un$|[Jj]une$|[Jj]uin$|[Jj]uni$|[Jj]unho$|[Gg]iugno$|[Hh]aziran$|^6$|^06$|6月)");
+    public static final Pattern jul = Pattern
+            .compile("([Jj]ul$|[Jj]uly$|[Jj]uillet$|[Jj]uli$|[Tt]emmuz$|[Ll]uglio$|[Jj]ulho$|^7$|^07$|7月)");
+    public static final Pattern aug = Pattern
+            .compile("([Aa]ug$|[Aa]ugust$|[Aa]o[uû]t$|[Aa]ugust$|[Aa]gosto$|[Aa]ugustus$|[Aa]ğustos$|^8$|^08$|8月)");
+    public static final Pattern sep = Pattern.compile(
+            "([Ss]ep$|[Ss]ept$|[Ss]eptember$|[Ss]eptembre$|[Ss]eptember$|[Ss]ettembre$|[Ss]etembro$|[Ee]ylül$|^9$|^09$|9月)");
+    public static final Pattern oct = Pattern.compile(
+            "([Oo]ct$|[Oo]cto$|[Oo]ctober$|[Oo]ctobre$|[Ee]kim$|[Oo]ktober$|[Oo]ttobre$|[Oo]utubro$|^10$|10月)");
+    public static final Pattern nov = Pattern
+            .compile("([Nn]ov$|[Nn]ovember$|[Nn]ovembre$|[Kk]asım$|[Nn]oviembre$|[Nn]ovembro$|^11$|11月)");
+    public static final Pattern dec = Pattern
+            .compile("([Dd]ec$|[Dd]ecember$|[Dd][eé]cembre$|[Dd]iciembre$|[Aa]ralık$|^12$|12月)");
 
     public static final Pattern[] months = {jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec};
 
     public Date normalizeAndClean(Date date) {
         return cleaning(normalize(date));
     }
-    
+
     public Date normalize(Date date) {
         Date normalizedDate = new Date();
-        
+
         // normalize day
         if (isNotBlank(date.getDayString())) {
             StringBuilder dayStringBis = new StringBuilder();
@@ -207,11 +208,11 @@ public class DateParser extends AbstractParser {
                 int day = Integer.parseInt(dayStringBis.toString());
                 normalizedDate.setDay(day);
             } catch (Exception e) {
-                //e.printStackTrace();
+                // e.printStackTrace();
             }
         }
 
-        //normalize month
+        // normalize month
         if (isNotBlank(date.getMonthString())) {
             String month = date.getMonthString().trim();
             normalizedDate.setMonthString(month);
@@ -245,31 +246,32 @@ public class DateParser extends AbstractParser {
                 }
                 normalizedDate.setYear(year);
             } catch (Exception e) {
-                //e.printStackTrace();
+                // e.printStackTrace();
             }
         }
 
         // if we don't have day and month, but a year with 8 digits, we might have a YYYYMMDD pattern
         int maxYear = Calendar.getInstance().getWeekYear() + 4;
-        if (date.getDay() == -1 && date.getMonth() == -1 && date.getYear() != -1 && date.getYear() > 19000000 && date.getYear() < maxYear * 10000+1231) {
+        if (date.getDay() == -1 && date.getMonth() == -1 && date.getYear() != -1 && date.getYear() > 19000000
+                && date.getYear() < maxYear * 10000 + 1231) {
             int yearPart = date.getYear() / 10000;
             if (yearPart > 1900 && yearPart < maxYear) {
-                String yearString = ""+date.getYear();
-                String theMonthString = yearString.substring(4,6);
-                String theDayString = yearString.substring(6,8);
+                String yearString = "" + date.getYear();
+                String theMonthString = yearString.substring(4, 6);
+                String theDayString = yearString.substring(6, 8);
 
                 int dayPart = -1;
                 try {
                     dayPart = Integer.parseInt(theDayString);
                 } catch (Exception e) {
-                    //e.printStackTrace();
+                    // e.printStackTrace();
                 }
 
                 int monthPart = -1;
                 try {
                     monthPart = Integer.parseInt(theMonthString);
                 } catch (Exception e) {
-                    //e.printStackTrace();
+                    // e.printStackTrace();
                 }
 
                 if (dayPart != -1 && monthPart != -1) {
@@ -283,22 +285,22 @@ public class DateParser extends AbstractParser {
                 }
             }
         }
-        
+
         return normalizedDate;
     }
 
     /**
-     * Simple and loose date validation, checking: 
-     *  - the year has not more than 4 digits
-     *  - the month and day has not more than 2 digits 
-     *  
-     *  Assuming that incomplete dates of any form and nature can pass by here, only the information that are "out of bounds" will be reverted.
-     *  
+     * Simple and loose date validation, checking: - the year has not more than 4 digits - the month and day has not
+     * more than 2 digits
+     *
+     * Assuming that incomplete dates of any form and nature can pass by here, only the information that are "out of
+     * bounds" will be reverted.
+     *
      * @return the date where invalid information are removed or reverted
      */
     public static Date cleaning(Date originalDate) {
         Date validatedDate = new Date();
-        
+
         if (originalDate.getDay() > -1) {
             if (String.valueOf(originalDate.getDay()).length() < 3) {
                 validatedDate.setDay(originalDate.getDay());
@@ -312,18 +314,16 @@ public class DateParser extends AbstractParser {
                 validatedDate.setMonthString(originalDate.getMonthString());
             }
         }
-        
+
         if (originalDate.getYear() > -1) {
             if (String.valueOf(originalDate.getYear()).length() < 5) {
                 validatedDate.setYear(originalDate.getYear());
                 validatedDate.setYearString(originalDate.getYearString());
             }
         }
-        
+
         return validatedDate;
     }
-    
-
 
     /**
      * Extract results from a date string in the training format without any string modification.
@@ -343,22 +343,22 @@ public class DateParser extends AbstractParser {
                 if (input == null)
                     continue;
 
-                //StringTokenizer st = new StringTokenizer(input, " \t\n"+TextUtilities.fullPunctuations, true);
-                //StringTokenizer st = new StringTokenizer(input, "([" + TextUtilities.punctuations, true);
-				tokenizations = analyzer.tokenize(input);
-				
-                //if (st.countTokens() == 0)
-				if (tokenizations.size() == 0)
+                // StringTokenizer st = new StringTokenizer(input, " \t\n"+TextUtilities.fullPunctuations, true);
+                // StringTokenizer st = new StringTokenizer(input, "([" + TextUtilities.punctuations, true);
+                tokenizations = analyzer.tokenize(input);
+
+                // if (st.countTokens() == 0)
+                if (tokenizations.size() == 0)
                     return null;
-                //while (st.hasMoreTokens()) {
-                //    String tok = st.nextToken();
-				for(String tok : tokenizations) {
+                // while (st.hasMoreTokens()) {
+                // String tok = st.nextToken();
+                for (String tok : tokenizations) {
                     if (tok.equals("\n")) {
                         dateBlocks.add("@newline");
                     } else if (!tok.equals(" ")) {
                         dateBlocks.add(tok + " <date>");
                     }
-                    //tokenizations.add(tok);
+                    // tokenizations.add(tok);
                 }
                 dateBlocks.add("\n");
             }
@@ -368,7 +368,7 @@ public class DateParser extends AbstractParser {
 
             // extract results from the processed file
 
-            //System.out.print(res.toString());
+            // System.out.print(res.toString());
             StringTokenizer st2 = new StringTokenizer(res, "\n");
             String lastTag = null;
             boolean tagClosed = false;
@@ -406,16 +406,16 @@ public class DateParser extends AbstractParser {
                 int i = 0;
                 String s1 = null;
                 String s2 = null;
-                //String s3 = null;
-                //List<String> localFeatures = new ArrayList<String>();
+                // String s3 = null;
+                // List<String> localFeatures = new ArrayList<String>();
                 while (st3.hasMoreTokens()) {
                     String s = st3.nextToken().trim();
                     if (i == 0) {
                         s2 = TextUtilities.HTMLEncode(s); // string
-                    } /*else if (i == ll - 2) {
-                        s3 = s; // pre-label, in this case it should always be <date>
-                    } */
-					else if (i == ll - 1) {
+                    } /*
+                       * else if (i == ll - 2) { s3 = s; // pre-label, in this case it should always be <date> }
+                       */
+                    else if (i == ll - 1) {
                         s1 = s; // label
                     }
                     i++;
@@ -445,15 +445,12 @@ public class DateParser extends AbstractParser {
 
                 tagClosed = lastTag0 != null && testClosingTag(buffer, currentTag0, lastTag0);
 
-                /*if (newLine) {
-                        if (tagClosed) {
-                            buffer.append("\t\t\t\t\t\t\t<lb/>\n");
-                        }
-                        else {
-                            buffer.append("<lb/>");
-                        }
-
-                    }*/
+                /*
+                 * if (newLine) { if (tagClosed) { buffer.append("\t\t\t\t\t\t\t<lb/>\n"); } else {
+                 * buffer.append("<lb/>"); }
+                 *
+                 * }
+                 */
 
                 String output = writeField(s1, lastTag0, s2, "<day>", "<day>", addSpace, 0);
                 if (output != null) {
@@ -523,19 +520,20 @@ public class DateParser extends AbstractParser {
                 buffer.append("</date>\n");
             }
         } catch (Exception e) {
-//			e.printStackTrace();
+            // e.printStackTrace();
             throw new GrobidException("An exception occured while running Grobid.", e);
         }
         return buffer;
     }
 
-    private String writeField(String s1,
-                              String lastTag0,
-                              String s2,
-                              String field,
-                              String outField,
-                              boolean addSpace,
-                              int nbIndent) {
+    private String writeField(
+            String s1,
+            String lastTag0,
+            String s2,
+            String field,
+            String outField,
+            boolean addSpace,
+            int nbIndent) {
         String result = null;
         if ((s1.equals(field)) || (s1.equals("I-" + field))) {
             if ((s1.equals("<other>") || s1.equals("I-<other>"))) {
@@ -562,9 +560,7 @@ public class DateParser extends AbstractParser {
         return result;
     }
 
-    private boolean testClosingTag(StringBuilder buffer,
-                                   String currentTag0,
-                                   String lastTag0) {
+    private boolean testClosingTag(StringBuilder buffer, String currentTag0, String lastTag0) {
         boolean res = false;
         if (!currentTag0.equals(lastTag0)) {
             res = true;

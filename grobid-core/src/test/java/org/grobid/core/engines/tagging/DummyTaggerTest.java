@@ -32,8 +32,9 @@ public class DummyTaggerTest {
 
     @Test
     public void testDummyTagger() {
-        assertThat(target.label(Arrays.asList("bao", "miao", "ciao")),
-            is(equalTo("bao\t<dummy>\nmiao\t<dummy>\nciao\t<dummy>")));
+        assertThat(
+                target.label(Arrays.asList("bao", "miao", "ciao")),
+                is(equalTo("bao\t<dummy>\nmiao\t<dummy>\nciao\t<dummy>")));
     }
 
     @Test(expected = GrobidException.class)

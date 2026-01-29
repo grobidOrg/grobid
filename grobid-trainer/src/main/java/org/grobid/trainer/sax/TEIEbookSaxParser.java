@@ -10,34 +10,34 @@ import java.util.Stack;
 import java.util.StringTokenizer;
 
 /**
- * SAX parser for the TEI format for fulltext data. Normally all training data should be in this unique format.
- * The segmentation of tokens must be identical as the one from pdf2xml files so that
- * training and online input tokens are aligned.
+ * SAX parser for the TEI format for fulltext data. Normally all training data should be in this unique format. The
+ * segmentation of tokens must be identical as the one from pdf2xml files so that training and online input tokens are
+ * aligned.
  *
  * @author Patrice Lopez
  */
 public class TEIEbookSaxParser extends DefaultHandler {
 
-    //private Stack<StringBuffer> accumulators = null; // accumulated parsed piece of texts
+    // private Stack<StringBuffer> accumulators = null; // accumulated parsed piece of texts
     private StringBuffer accumulator = null; // current accumulated text
 
     private String output = null;
     private Stack<String> currentTags = null;
 
-    //private String fileName = null;
-    //private String pdfName = null;
+    // private String fileName = null;
+    // private String pdfName = null;
 
     private ArrayList<String> labeled = null; // store line by line the labeled data
 
     public TEIEbookSaxParser() {
         labeled = new ArrayList<String>();
         currentTags = new Stack<String>();
-        //accumulators = new Stack<StringBuffer>();
+        // accumulators = new Stack<StringBuffer>();
         accumulator = new StringBuffer();
     }
 
     public void characters(char[] buffer, int start, int length) {
-        //if (accumulator != null)
+        // if (accumulator != null)
         accumulator.append(buffer, start, length);
         System.out.println(accumulator.toString());
     }
@@ -54,19 +54,14 @@ public class TEIEbookSaxParser extends DefaultHandler {
         return labeled;
     }
 
-    public void endElement(java.lang.String uri,
-                           java.lang.String localName,
-                           java.lang.String qName) throws SAXException {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
         if ((!qName.equals("lb")) & (!qName.equals("pb"))) {
             writeData(qName, true);
         }
     }
 
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
-            throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
         if (qName.equals("lb")) {
             accumulator.append(" +L+ ");
         } else if (qName.equals("pb")) {
@@ -104,11 +99,10 @@ public class TEIEbookSaxParser extends DefaultHandler {
     }
 
     private void writeData(String qName, boolean pop) {
-        if ((qName.equals("header")) | (qName.equals("other")) | (qName.equals("page_header")) |
-                (qName.equals("page_footnote")) | (qName.equals("page")) | (qName.equals("pages")) |
-                (qName.equals("reference")) |
-                (qName.equals("toc")) | (qName.equals("index")) | (qName.equals("section"))
-                ) {
+        if ((qName.equals("header")) | (qName.equals("other")) | (qName.equals("page_header"))
+                | (qName.equals("page_footnote")) | (qName.equals("page")) | (qName.equals("pages"))
+                | (qName.equals("reference")) | (qName.equals("toc")) | (qName.equals("index"))
+                | (qName.equals("section"))) {
             String currentTag = null;
             if (pop) {
                 currentTag = currentTags.pop();
@@ -121,7 +115,8 @@ public class TEIEbookSaxParser extends DefaultHandler {
             boolean begin = true;
             while (st.hasMoreTokens()) {
                 String tok = st.nextToken().trim();
-                if (tok.length() == 0) continue;
+                if (tok.length() == 0)
+                    continue;
 
                 if (tok.equals("+L+")) {
                     labeled.add("@newline\n");

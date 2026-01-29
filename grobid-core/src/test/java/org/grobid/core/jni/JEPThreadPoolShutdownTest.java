@@ -5,8 +5,7 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 /**
- * Separate test class for JEPThreadPool shutdown tests
- * This avoids affecting other tests that depend on the singleton
+ * Separate test class for JEPThreadPool shutdown tests This avoids affecting other tests that depend on the singleton
  */
 public class JEPThreadPoolShutdownTest {
 

@@ -12,164 +12,171 @@ import java.util.Map;
 import java.util.concurrent.*;
 
 /**
- * Request pool to get data from api.crossref.org without exceeding limits
- * supporting multi-thread.
+ * Request pool to get data from api.crossref.org without exceeding limits supporting multi-thread.
  *
- * Note: the provided interval for the query rate returned by CrossRef appeared to be not reliable,
- * so we have to use the rate limit (X-Rate-Limit-Interval) as a global parallel query limit, without
- * interval consideration.
- * See https://github.com/kermitt2/grobid/pull/725
+ * Note: the provided interval for the query rate returned by CrossRef appeared to be not reliable, so we have to use
+ * the rate limit (X-Rate-Limit-Interval) as a global parallel query limit, without interval consideration. See
+ * https://github.com/kermitt2/grobid/pull/725
  *
  */
 public class CrossrefClient implements Closeable {
-	public static final Logger LOGGER = LoggerFactory.getLogger(CrossrefClient.class);
+    public static final Logger LOGGER = LoggerFactory.getLogger(CrossrefClient.class);
 
-	protected static volatile CrossrefClient instance;
+    protected static volatile CrossrefClient instance;
 
-	protected volatile ExecutorService executorService;
+    protected volatile ExecutorService executorService;
 
-	protected int maxPoolSize = 1;
-	protected static boolean limitAuto = true;
+    protected int maxPoolSize = 1;
+    protected static boolean limitAuto = true;
 
-	// this list is used to maintain a list of Futures that were submitted,
-	// that we can use to check if the requests are completed
-	//private List<Future<?>> futures = new ArrayList<Future<?>>();
-	protected volatile Map<Long, List<Future<?>>> futures = new HashMap<>();
+    // this list is used to maintain a list of Futures that were submitted,
+    // that we can use to check if the requests are completed
+    // private List<Future<?>> futures = new ArrayList<Future<?>>();
+    protected volatile Map<Long, List<Future<?>>> futures = new HashMap<>();
 
-	public static CrossrefClient getInstance() {
+    public static CrossrefClient getInstance() {
         if (instance == null) {
-			getNewInstance();
-		}
+            getNewInstance();
+        }
         return instance;
     }
 
     /**
      * Creates a new instance.
      */
-	private static synchronized void getNewInstance() {
-		LOGGER.debug("Get new instance of CrossrefClient");
-		instance = new CrossrefClient();
-	}
+    private static synchronized void getNewInstance() {
+        LOGGER.debug("Get new instance of CrossrefClient");
+        instance = new CrossrefClient();
+    }
 
     /**
      * Hidden constructor
      */
     protected CrossrefClient() {
-    	// note: by default timeout with newCachedThreadPool is set to 60s, which might be too much for crossref usage,
-    	// hanging grobid significantly, so we might want to use rather a custom instance of ThreadPoolExecutor and set
-    	// the timeout differently
-		this.executorService = new ThreadPoolExecutor(
-            0, Integer.MAX_VALUE,
-            5L, TimeUnit.SECONDS,
-            new SynchronousQueue<>(),
-            r -> {
-                Thread t = Executors.defaultThreadFactory().newThread(r);
-                t.setDaemon(true);
-                return t;
+        // note: by default timeout with newCachedThreadPool is set to 60s, which might be too much for crossref usage,
+        // hanging grobid significantly, so we might want to use rather a custom instance of ThreadPoolExecutor and set
+        // the timeout differently
+        this.executorService = new ThreadPoolExecutor(0, Integer.MAX_VALUE, 5L, TimeUnit.SECONDS,
+                new SynchronousQueue<>(), r -> {
+                    Thread t = Executors.defaultThreadFactory().newThread(r);
+                    t.setDaemon(true);
+                    return t;
+                });
+        this.futures = new HashMap<>();
+        setLimits(1, 1000);
+    }
+
+    public static void printLog(CrossrefRequest<?> request, String message) {
+        LOGGER.debug((request != null ? request + ": " : "") + message);
+        // System.out.println((request != null ? request+": " : "")+message);
+    }
+
+    public void setLimits(int iterations, int interval) {
+        this.setMaxPoolSize(iterations);
+        // interval is not usable anymore, we need to wait termination of threads independently from any time interval
+    }
+
+    public void updateLimits(int iterations, int interval) {
+        if (this.limitAuto) {
+            // printLog(null, "Updating limits... " + iterations + " / " + interval);
+            this.setLimits(iterations, interval);
+            // note: interval not used anymore
+        }
+    }
+
+    /**
+     * Push a request in pool to be executed as soon as possible, then wait a response through the listener. API
+     * Documentation : https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md
+     */
+    public <T extends Object> void pushRequest(
+            CrossrefRequest<T> request,
+            CrossrefRequestListener<T> listener,
+            long threadId) {
+        if (listener != null)
+            request.addListener(listener);
+        synchronized (this) {
+            // we limit the number of active threads to the crossref api dynamic limit returned in the response header
+            while (((ThreadPoolExecutor) executorService).getActiveCount() >= this.getMaxPoolSize()) {
+                try {
+                    TimeUnit.MICROSECONDS.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
-        );
-		this.futures = new HashMap<>();
-		setLimits(1, 1000);
-	}
+            Future<?> f = executorService.submit(new CrossrefRequestTask<T>(this, request));
+            List<Future<?>> localFutures = this.futures.get(threadId);
+            if (localFutures == null)
+                localFutures = new ArrayList<>();
+            localFutures.add(f);
+            this.futures.put(threadId, localFutures);
+            LOGGER.debug(
+                    "Add request to thread "
+                            + threadId
+                            + "; active threads count is now "
+                            + ((ThreadPoolExecutor) executorService).getActiveCount());
+        }
+    }
 
-	public static void printLog(CrossrefRequest<?> request, String message) {
-		LOGGER.debug((request != null ? request+": " : "")+message);
-		//System.out.println((request != null ? request+": " : "")+message);
-	}
+    /**
+     * Push a request in pool to be executed soon as possible, then wait a response through the listener.
+     * @see <a href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md">Crossref API Documentation</a>
+     *
+     * @param params
+     * query parameters, can be null, ex: ?query.title=[title]&query.author=[author]
+     * @param deserializer
+     * json response deserializer, ex: WorkDeserializer to convert Work to BiblioItem
+     * @param threadId
+     * the java identifier of the thread providing the request (e.g. via Thread.currentThread().getId())
+     * @param listener
+     * catch response from request
+     */
+    public <T extends Object> void pushRequest(
+            String model,
+            Map<String, String> params,
+            CrossrefDeserializer<T> deserializer,
+            long threadId,
+            CrossrefRequestListener<T> listener) {
+        CrossrefRequest<T> request = new CrossrefRequest<>(model, params, deserializer);
+        synchronized (this) {
+            this.pushRequest(request, listener, threadId);
+        }
+    }
 
-	public void setLimits(int iterations, int interval) {
-		this.setMaxPoolSize(iterations);
-		// interval is not usable anymore, we need to wait termination of threads independently from any time interval
-	}
+    /**
+     * Wait for all request from a specific thread to be completed
+     */
+    public void finish(long threadId) {
+        synchronized (this.futures) {
+            try {
+                List<Future<?>> threadFutures = this.futures.get(threadId);
+                if (threadFutures != null) {
+                    // System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< thread: " + threadId + " /
+                    // waiting for " + threadFutures.size() + " requests to finish...");
+                    for (Future<?> future : threadFutures) {
+                        future.get();
+                        // get will block until the future is done
+                    }
+                    this.futures.remove(threadId);
+                }
+            } catch (InterruptedException ie) {
+                // Preserve interrupt status
+                Thread.currentThread().interrupt();
+            } catch (ExecutionException ee) {
+                LOGGER.error("CrossRef request execution fails");
+            }
+        }
+    }
 
-	public void updateLimits(int iterations, int interval) {
-		if (this.limitAuto) {
-			//printLog(null, "Updating limits... " + iterations + " / " + interval);
-			this.setLimits(iterations, interval);
-			// note: interval not used anymore
-		}
-	}
+    public int getMaxPoolSize() {
+        return maxPoolSize;
+    }
 
-	/**
-	 * Push a request in pool to be executed as soon as possible, then wait a response through the listener.
-	 * API Documentation : https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md
-	 */
-	public <T extends Object> void pushRequest(CrossrefRequest<T> request, CrossrefRequestListener<T> listener,
-		long threadId) {
-		if (listener != null)
-			request.addListener(listener);
-		synchronized(this) {
-			// we limit the number of active threads to the crossref api dynamic limit returned in the response header
-			while(((ThreadPoolExecutor)executorService).getActiveCount() >= this.getMaxPoolSize()) {
-				try {
-					TimeUnit.MICROSECONDS.sleep(10);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
-			Future<?> f = executorService.submit(new CrossrefRequestTask<T>(this, request));
-			List<Future<?>> localFutures = this.futures.get(threadId);
-			if (localFutures == null)
-				localFutures = new ArrayList<>();
-			localFutures.add(f);
-			this.futures.put(threadId, localFutures);
-			LOGGER.debug("Add request to thread " + threadId +
-					"; active threads count is now " + ((ThreadPoolExecutor) executorService).getActiveCount()
-			);
-		}
-	}
+    public void setMaxPoolSize(int maxPoolSize) {
+        this.maxPoolSize = maxPoolSize;
+    }
 
-	/**
-	 * Push a request in pool to be executed soon as possible, then wait a response through the listener.
-	 * @see <a href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md">Crossref API Documentation</a>
-	 *
-	 * @param params		query parameters, can be null, ex: ?query.title=[title]&query.author=[author]
-	 * @param deserializer	json response deserializer, ex: WorkDeserializer to convert Work to BiblioItem
-	 * @param threadId		the java identifier of the thread providing the request (e.g. via Thread.currentThread().getId())
-	 * @param listener		catch response from request
-	 */
-	public <T extends Object> void pushRequest(String model, Map<String, String> params, CrossrefDeserializer<T> deserializer,
-			long threadId, CrossrefRequestListener<T> listener) {
-		CrossrefRequest<T> request = new CrossrefRequest<>(model, params, deserializer);
-		synchronized(this) {
-			this.pushRequest(request, listener, threadId);
-		}
-	}
-
-	/**
-	 * Wait for all request from a specific thread to be completed
-	 */
-	public void finish(long threadId) {
-		synchronized(this.futures) {
-			try {
-				List<Future<?>> threadFutures = this.futures.get(threadId);
-				if (threadFutures != null) {
-//System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< thread: " + threadId + " / waiting for " + threadFutures.size() + " requests to finish...");
-					for(Future<?> future : threadFutures) {
-						future.get();
-						// get will block until the future is done
-					}
-					this.futures.remove(threadId);
-				}
-			} catch (InterruptedException ie) {
-			 	// Preserve interrupt status
-			 	Thread.currentThread().interrupt();
-			} catch (ExecutionException ee) {
-				LOGGER.error("CrossRef request execution fails");
-			}
-		}
-	}
-
-	public int getMaxPoolSize() {
-		return maxPoolSize;
-	}
-
-	public void setMaxPoolSize(int maxPoolSize) {
-		this.maxPoolSize = maxPoolSize;
-	}
-
-	@Override
-	public void close() throws IOException {
-		executorService.shutdown();
-	}
+    @Override
+    public void close() throws IOException {
+        executorService.shutdown();
+    }
 }

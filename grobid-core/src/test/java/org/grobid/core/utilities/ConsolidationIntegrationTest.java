@@ -6,23 +6,13 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.*;
 
 public class ConsolidationIntegrationTest {
 
     private Consolidation target = null;
 
-    public static String[] DOIs = {
-        "10.1086/107043",
-        "10.1086/102351",
-        "10.1086/100853",
-        "10.1086/105172"
-    };
+    public static String[] DOIs = {"10.1086/107043", "10.1086/102351", "10.1086/100853", "10.1086/105172"};
 
     @Before
     public void setUp() {

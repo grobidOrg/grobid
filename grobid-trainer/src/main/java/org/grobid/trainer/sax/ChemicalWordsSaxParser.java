@@ -9,8 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This SAX parser process the list of words of a document and produce the labeled data
- * based on stand off annotations.
+ * This SAX parser process the list of words of a document and produce the labeled data based on stand off annotations.
  *
  * @author Patrice Lopez
  */
@@ -69,25 +68,20 @@ public class ChemicalWordsSaxParser extends DefaultHandler {
         return accumulator.toString().trim();
     }
 
-    public void endElement(java.lang.String uri,
-                           java.lang.String localName,
-                           java.lang.String qName) throws SAXException {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
         try {
             if (qName.equals("word")) {
                 String word = getText();
                 // we determine the label of the word based on localID
                 String label = null;
-                if (chemicalAnnotationsStarts.contains(localID) ||
-                        chemicalFormulasStarts.contains(localID) ||
-                        chemicalSubstancesStarts.contains(localID) ||
-                        chemicalClassNamesStarts.contains(localID) ||
-                        chemicalLigandStarts.contains(localID)) {
+                if (chemicalAnnotationsStarts.contains(localID) || chemicalFormulasStarts.contains(localID)
+                        || chemicalSubstancesStarts.contains(localID) || chemicalClassNamesStarts.contains(localID)
+                        || chemicalLigandStarts.contains(localID)) {
                     label = "I-<chemName>";
-                } else if (chemicalAnnotations.contains(localID) ||
-                        chemicalFormulas.contains(localID) ||
-                        chemicalSubstances.contains(localID) ||
-                        chemicalClassNames.contains(localID) ||
-                        chemicalLigand.contains(localID)) {
+                } else if (chemicalAnnotations.contains(localID) || chemicalFormulas.contains(localID)
+                        || chemicalSubstances.contains(localID) || chemicalClassNames.contains(localID)
+                        || chemicalLigand.contains(localID)) {
                     label = "<chemName>";
                 } else {
                     label = "<other>";
@@ -97,15 +91,12 @@ public class ChemicalWordsSaxParser extends DefaultHandler {
             }
             accumulator.setLength(0);
         } catch (Exception e) {
-//		    e.printStackTrace();
+            // e.printStackTrace();
             throw new GrobidException("An exception occured while running Grobid.", e);
         }
     }
 
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts) throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
         try {
             if (qName.equals("nite:root")) {
                 labeledResult = new ArrayList<String>();
@@ -127,10 +118,9 @@ public class ChemicalWordsSaxParser extends DefaultHandler {
 
             }
         } catch (Exception e) {
-//		    e.printStackTrace();
+            // e.printStackTrace();
             throw new GrobidException("An exception occured while running Grobid.", e);
         }
     }
-
 
 }

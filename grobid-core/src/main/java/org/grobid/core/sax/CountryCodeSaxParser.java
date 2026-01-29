@@ -39,9 +39,8 @@ public class CountryCodeSaxParser extends DefaultHandler {
         return accumulator.toString().trim();
     }
 
-    public void endElement(java.lang.String uri,
-                           java.lang.String localName,
-                           java.lang.String qName) throws SAXException {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
         if (qName.equals("row")) {
             code = null;
             country = null;
@@ -64,11 +63,7 @@ public class CountryCodeSaxParser extends DefaultHandler {
         accumulator.setLength(0);
     }
 
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
-            throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
         if (qName.equals("cell")) {
             int length = atts.getLength();
 

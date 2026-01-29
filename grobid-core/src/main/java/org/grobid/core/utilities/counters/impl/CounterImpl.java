@@ -37,8 +37,10 @@ class CounterImpl implements Counter {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
 
         CounterImpl counter = (CounterImpl) o;
         return cnt.get() == counter.cnt.get();

@@ -25,7 +25,6 @@ public class CRFPPTagger implements GenericTagger {
         return getTaggerResult(data, null);
     }
 
-
     protected String getTaggerResult(Iterable<String> st, String type) {
         Tagger tagger = null;
         StringBuilder res;
@@ -70,16 +69,15 @@ public class CRFPPTagger implements GenericTagger {
         return tagger;
     }
 
-//	protected void feedTagger(StringTokenizer st) {
-//        Tagger tagger = getNewTagger();
-//		feedTagger(tagger, st);
-//        tagger.delete();
-//	}
+    // protected void feedTagger(StringTokenizer st) {
+    // Tagger tagger = getNewTagger();
+    // feedTagger(tagger, st);
+    // tagger.delete();
+    // }
 
     public Tagger getNewTagger() {
         return model.createTagger();
     }
-
 
     public static void feedTaggerAndParse(Tagger tagger, Iterable<String> st) {
         tagger.clear();
@@ -100,8 +98,7 @@ public class CRFPPTagger implements GenericTagger {
             }
             if (!tagger.add(piece)) {
                 LOGGER.warn("CRF++ Tagger Warnings: " + tagger.what());
-                throw new GrobidException("Cannot add a feature row: " + piece
-                        + "\n Reason: " + tagger.what());
+                throw new GrobidException("Cannot add a feature row: " + piece + "\n Reason: " + tagger.what());
             }
         }
     }

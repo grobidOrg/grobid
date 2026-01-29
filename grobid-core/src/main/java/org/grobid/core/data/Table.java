@@ -10,6 +10,8 @@ import org.grobid.core.data.table.Cell;
 import org.grobid.core.data.table.Line;
 import org.grobid.core.data.table.LinePart;
 import org.grobid.core.data.table.Row;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.document.Document;
 import org.grobid.core.document.TEIFormatter;
 import org.grobid.core.document.xml.XmlBuilderUtils;
@@ -40,10 +42,10 @@ import static org.grobid.core.document.xml.XmlBuilderUtils.*;
  *
  */
 public class Table extends Figure {
-	private List<LayoutToken> contentTokens = new ArrayList<>();
-	private List<LayoutToken> fullDescriptionTokens = new ArrayList<>();
+    private List<LayoutToken> contentTokens = new ArrayList<>();
+    private List<LayoutToken> fullDescriptionTokens = new ArrayList<>();
 
-	private boolean goodTable = true;
+    private boolean goodTable = true;
 
     private StringBuilder note = null;
     private List<LayoutToken> noteLayoutTokens = null;
@@ -51,16 +53,15 @@ public class Table extends Figure {
 
     private List<List<LayoutToken>> discardedPiecesTokens = new ArrayList<>();
 
-
-	public void setGoodTable(boolean goodTable) {
-		this.goodTable = goodTable;
-	}
+    public void setGoodTable(boolean goodTable) {
+        this.goodTable = goodTable;
+    }
 
     public Table() {
-    	caption = new StringBuilder();
-    	header = new StringBuilder();
-    	content = new StringBuilder();
-    	label = new StringBuilder();
+        caption = new StringBuilder();
+        header = new StringBuilder();
+        content = new StringBuilder();
+        label = new StringBuilder();
         note = new StringBuilder();
     }
 
@@ -68,41 +69,47 @@ public class Table extends Figure {
         return (StringUtils.isNotEmpty(header) && StringUtils.isNotEmpty(caption));
     }
 
-	@Override
-    public String toTEI(GrobidAnalysisConfig config, Document doc, TEIFormatter formatter, List<MarkerType> markerTypes) {
-		if (!isCompleteForTEI()) {
-            LOGGER.warn("Found a table that is badly formatted but it should have been spotted before. We ignore it now.");
-			return null;
-		}
+    @Override
+    public String toTEI(
+            GrobidAnalysisConfig config,
+            Document doc,
+            TEIFormatter formatter,
+            List<MarkerType> markerTypes) {
+        if (!isCompleteForTEI()) {
+            LOGGER.warn(
+                    "Found a table that is badly formatted but it should have been spotted before. We ignore it now.");
+            return null;
+        }
 
-		Element tableElement = XmlBuilderUtils.teiElement("figure");
-		tableElement.addAttribute(new Attribute("type", "table"));
-		if (id != null) {
-			XmlBuilderUtils.addXmlId(tableElement, "tab_" + id);
-		}
+        Element tableElement = XmlBuilderUtils.teiElement("figure");
+        tableElement.addAttribute(new Attribute("type", "table"));
+        if (id != null) {
+            XmlBuilderUtils.addXmlId(tableElement, "tab_" + id);
+        }
 
         // this is non TEI, to be reviewed
-		//tableElement.addAttribute(new Attribute("validated", String.valueOf(isGoodTable())));
+        // tableElement.addAttribute(new Attribute("validated",
+        // String.valueOf(isGoodTable())));
 
-		if ((config.getGenerateTeiCoordinates() != null) && (config.getGenerateTeiCoordinates().contains("figure"))) {
-			XmlBuilderUtils.addCoords(tableElement, LayoutTokensUtil.getCoordsStringForOneBox(getLayoutTokens()));
-		}
+        if ((config.getGenerateTeiCoordinates() != null) && (config.getGenerateTeiCoordinates().contains("figure"))) {
+            XmlBuilderUtils.addCoords(tableElement, LayoutTokensUtil.getCoordsStringForOneBox(getLayoutTokens()));
+        }
 
-		Element headEl = XmlBuilderUtils.teiElement("head",
-        		LayoutTokensUtil.normalizeText(header.toString()));
+        Element headEl = XmlBuilderUtils.teiElement("head", LayoutTokensUtil.normalizeText(header.toString()));
 
-		Element labelEl = XmlBuilderUtils.teiElement("label",
-        		LayoutTokensUtil.normalizeText(label.toString()));
+        Element labelEl = XmlBuilderUtils.teiElement("label", LayoutTokensUtil.normalizeText(label.toString()));
 
-		/*Element descEl = XmlBuilderUtils.teiElement("figDesc");
-		descEl.appendChild(LayoutTokensUtil.normalizeText(caption.toString()).trim());
-		if ((config.getGenerateTeiCoordinates() != null) && (config.getGenerateTeiCoordinates().contains("figure"))) {
-			XmlBuilderUtils.addCoords(descEl, LayoutTokensUtil.getCoordsString(getFullDescriptionTokens()));
-		}*/
+        /*
+         * Element descEl = XmlBuilderUtils.teiElement("figDesc");
+         * descEl.appendChild(LayoutTokensUtil.normalizeText(caption.toString()).trim()) ; if
+         * ((config.getGenerateTeiCoordinates() != null) && (config.getGenerateTeiCoordinates().contains("figure"))) {
+         * XmlBuilderUtils.addCoords(descEl, LayoutTokensUtil.getCoordsString(getFullDescriptionTokens())); }
+         */
 
         Element desc = null;
         if (StringUtils.isNotBlank(caption)) {
-            // if the segment has been parsed with the full text model we further extract the clusters
+            // if the segment has been parsed with the full text model we further extract
+            // the clusters
             // to get the bibliographical references
 
             desc = XmlBuilderUtils.teiElement("figDesc");
@@ -112,8 +119,9 @@ public class Table extends Figure {
             }
 
             if (StringUtils.isNotBlank(labeledCaption)) {
-                TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.FULLTEXT, labeledCaption, captionLayoutTokens);
-                List<TaggingTokenCluster> clusters = clusteror.cluster();                
+                TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.FULLTEXT, labeledCaption,
+                        captionLayoutTokens);
+                List<TaggingTokenCluster> clusters = clusteror.cluster();
 
                 MarkerType citationMarkerType = null;
                 if (CollectionUtils.isNotEmpty(markerTypes)) {
@@ -126,14 +134,15 @@ public class Table extends Figure {
                     }
 
                     TaggingLabel clusterLabel = cluster.getTaggingLabel();
-                    //String clusterContent = LayoutTokensUtil.normalizeText(cluster.concatTokens());
+                    // String clusterContent =
+                    // LayoutTokensUtil.normalizeText(cluster.concatTokens());
                     String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(cluster.concatTokens());
                     if (clusterLabel.equals(TaggingLabels.CITATION_MARKER)) {
                         try {
                             List<Node> refNodes = formatter.markReferencesTEILuceneBased(
                                     cluster.concatTokens(),
                                     doc.getReferenceMarkerMatcher(),
-                                    config.isGenerateTeiCoordinates("ref"), 
+                                    config.isGenerateTeiCoordinates("ref"),
                                     false,
                                     citationMarkerType);
                             if (refNodes != null) {
@@ -141,7 +150,7 @@ public class Table extends Figure {
                                     desc.appendChild(n);
                                 }
                             }
-                        } catch(Exception e) {
+                        } catch (Exception e) {
                             LOGGER.warn("Problem when serializing TEI fragment for table caption", e);
                         }
                     } else {
@@ -149,16 +158,22 @@ public class Table extends Figure {
                     }
 
                     if (StringUtils.isNotBlank(desc.getValue()) && config.isWithSentenceSegmentation()) {
-                        formatter.segmentIntoSentences(desc, this.captionLayoutTokens, config, doc.getLanguage(), doc.getPDFAnnotations());
+                        formatter.segmentIntoSentences(
+                                desc,
+                                this.captionLayoutTokens,
+                                config,
+                                doc.getLanguage(),
+                                doc.getPDFAnnotations());
 
-                        // we need a sentence segmentation of the table caption, for that we need to introduce 
+                        // we need a sentence segmentation of the table caption, for that we need to
+                        // introduce
                         // a <div>, then a <p>
                         desc.setLocalName("p");
 
                         Element div = XmlBuilderUtils.teiElement("div");
                         div.appendChild(desc);
 
-                        Element figDesc = XmlBuilderUtils.teiElement("figDesc");                
+                        Element figDesc = XmlBuilderUtils.teiElement("figDesc");
                         figDesc.appendChild(div);
 
                         desc = figDesc;
@@ -169,12 +184,11 @@ public class Table extends Figure {
             }
         }
 
-
-		Element contentEl = XmlBuilderUtils.teiElement("table");
-		processTableContent(contentEl, this.getContentTokens());
-		if ((config.getGenerateTeiCoordinates() != null) && (config.getGenerateTeiCoordinates().contains("figure"))) {
-			XmlBuilderUtils.addCoords(contentEl, LayoutTokensUtil.getCoordsStringForOneBox(getContentTokens()));
-		}
+        Element contentEl = XmlBuilderUtils.teiElement("table");
+        processTableContent(contentEl, this.getContentTokens());
+        if ((config.getGenerateTeiCoordinates() != null) && (config.getGenerateTeiCoordinates().contains("figure"))) {
+            XmlBuilderUtils.addCoords(contentEl, LayoutTokensUtil.getCoordsStringForOneBox(getContentTokens()));
+        }
 
         Element noteNode = null;
         if (StringUtils.isNotBlank(note)) {
@@ -187,8 +201,9 @@ public class Table extends Figure {
 
             if (StringUtils.isNotBlank(labeledNote)) {
                 Element p = teiElement("p");
-                TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.FULLTEXT, labeledNote, noteLayoutTokens);
-                List<TaggingTokenCluster> clusters = clusteror.cluster();                
+                TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.FULLTEXT, labeledNote,
+                        noteLayoutTokens);
+                List<TaggingTokenCluster> clusters = clusteror.cluster();
                 for (TaggingTokenCluster cluster : clusters) {
                     if (cluster == null) {
                         continue;
@@ -200,14 +215,15 @@ public class Table extends Figure {
                     }
 
                     TaggingLabel clusterLabel = cluster.getTaggingLabel();
-                    //String clusterContent = LayoutTokensUtil.normalizeText(cluster.concatTokens());
+                    // String clusterContent =
+                    // LayoutTokensUtil.normalizeText(cluster.concatTokens());
                     String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(cluster.concatTokens());
                     if (clusterLabel.equals(TaggingLabels.CITATION_MARKER)) {
                         try {
                             List<Node> refNodes = formatter.markReferencesTEILuceneBased(
                                     cluster.concatTokens(),
                                     doc.getReferenceMarkerMatcher(),
-                                    config.isGenerateTeiCoordinates("ref"), 
+                                    config.isGenerateTeiCoordinates("ref"),
                                     false,
                                     citationMarkerType);
                             if (refNodes != null) {
@@ -215,7 +231,7 @@ public class Table extends Figure {
                                     p.appendChild(n);
                                 }
                             }
-                        } catch(Exception e) {
+                        } catch (Exception e) {
                             LOGGER.warn("Problem when serializing TEI fragment for table note", e);
                         }
                     } else {
@@ -231,7 +247,12 @@ public class Table extends Figure {
                 }
                 if (config.isWithSentenceSegmentation()) {
                     // we need a sentence segmentation of the figure caption
-                    formatter.segmentIntoSentences(p, this.noteLayoutTokens, config, doc.getLanguage(), doc.getPDFAnnotations());
+                    formatter.segmentIntoSentences(
+                            p,
+                            this.noteLayoutTokens,
+                            config,
+                            doc.getLanguage(),
+                            doc.getPDFAnnotations());
                 }
             } else {
                 Element p = teiElement("p");
@@ -239,7 +260,12 @@ public class Table extends Figure {
 
                 if (config.isWithSentenceSegmentation()) {
                     // we need a sentence segmentation of the figure caption
-                    formatter.segmentIntoSentences(p, this.noteLayoutTokens, config, doc.getLanguage(), doc.getPDFAnnotations());
+                    formatter.segmentIntoSentences(
+                            p,
+                            this.noteLayoutTokens,
+                            config,
+                            doc.getLanguage(),
+                            doc.getPDFAnnotations());
                 }
 
                 noteNode = XmlBuilderUtils.teiElement("note");
@@ -256,11 +282,11 @@ public class Table extends Figure {
             }
         }
 
-		tableElement.appendChild(headEl);
-		tableElement.appendChild(labelEl);
+        tableElement.appendChild(headEl);
+        tableElement.appendChild(labelEl);
         if (desc != null)
-    		tableElement.appendChild(desc);
-		tableElement.appendChild(contentEl);
+            tableElement.appendChild(desc);
+        tableElement.appendChild(contentEl);
 
         if (noteNode != null) {
             tableElement.appendChild(noteNode);
@@ -268,54 +294,54 @@ public class Table extends Figure {
 
         if (config.isIncludeDiscardedText() && CollectionUtils.isNotEmpty(discardedPiecesTokens)) {
             for (List<LayoutToken> discardedPieceTokens : discardedPiecesTokens) {
-                tableElement.appendChild(
-                    generateDiscardedTextNote(discardedPieceTokens, doc, formatter, config)
-                );
+                tableElement.appendChild(generateDiscardedTextNote(discardedPieceTokens, doc, formatter, config));
             }
         }
 
-		return tableElement.toXML();
+        return tableElement.toXML();
     }
 
-	/**
-	 *
-	 * @param contentEl table element to append parsed rows and cells.
-	 * @param contentTokens tokens that are used to build cells
-	 * Line-based algorithm for parsing tables, uses tokens' coordinates to identify lines
-	 */
-	void processTableContent(Element contentEl, List<LayoutToken> contentTokens) {
-		// Join Layout Tokens into cell lines originally created by PDFAlto
-		List<LinePart> lineParts = Line.extractLineParts(contentTokens);
+    /**
+     *
+     * @param contentEl
+     * table element to append parsed rows and cells.
+     * @param contentTokens
+     * tokens that are used to build cells Line-based algorithm for parsing tables, uses tokens' coordinates to identify
+     * lines
+     */
+    void processTableContent(Element contentEl, List<LayoutToken> contentTokens) {
+        // Join Layout Tokens into cell lines originally created by PDFAlto
+        List<LinePart> lineParts = Line.extractLineParts(contentTokens);
 
-		// Build lines by comparing borders
-		List<Line> lines = Line.extractLines(lineParts);
+        // Build lines by comparing borders
+        List<Line> lines = Line.extractLines(lineParts);
 
-		// Build rows and cells
-		List<Row> rows = Row.extractRows(lines);
+        // Build rows and cells
+        List<Row> rows = Row.extractRows(lines);
 
-		int columnCount = Row.columnCount(rows);
+        int columnCount = Row.columnCount(rows);
 
-		Row.insertEmptyCells(rows, columnCount);
+        Row.insertEmptyCells(rows, columnCount);
 
-		Row.mergeMulticolumnCells(rows);
+        Row.mergeMulticolumnCells(rows);
 
-		for (Row row: rows) {
-			Element tr = XmlBuilderUtils.teiElement("row");
-			contentEl.appendChild(tr);
-			List<Cell> cells = row.getContent();
-			for (Cell cell: cells) {
-				Element td = XmlBuilderUtils.teiElement("cell");
-				tr.appendChild(td);
-				if (cell.getColspan() > 1) {
-					td.addAttribute(new Attribute("cols", Integer.toString(cell.getColspan())));
-				}
-				td.appendChild(cell.getText().trim());
-			}
-		}
-	}
+        for (Row row : rows) {
+            Element tr = XmlBuilderUtils.teiElement("row");
+            contentEl.appendChild(tr);
+            List<Cell> cells = row.getContent();
+            for (Cell cell : cells) {
+                Element td = XmlBuilderUtils.teiElement("cell");
+                tr.appendChild(td);
+                if (cell.getColspan() > 1) {
+                    td.addAttribute(new Attribute("cols", Integer.toString(cell.getColspan())));
+                }
+                td.appendChild(cell.getText().trim());
+            }
+        }
+    }
 
     private String cleanString(String input) {
-    	return input.replace("\n", " ").replace("  ", " ").trim();
+        return input.replace("\n", " ").replace("  ", " ").trim();
     }
 
     public String getNote() {
@@ -330,16 +356,16 @@ public class Table extends Figure {
         note.append(noteChunk);
     }
 
-	// if an extracted table passes some validations rules
-	public boolean firstCheck() {
-		goodTable = goodTable && validateTable();
-		return goodTable;
-	}
+    // if an extracted table passes some validations rules
+    public boolean firstCheck() {
+        goodTable = goodTable && validateTable();
+        return goodTable;
+    }
 
-	public boolean secondCheck() {
-		goodTable = goodTable && !badTableAdvancedCheck();
-		return goodTable;
-	}
+    public boolean secondCheck() {
+        goodTable = goodTable && !badTableAdvancedCheck();
+        return goodTable;
+    }
 
     public List<LayoutToken> getNoteLayoutTokens() {
         return noteLayoutTokens;
@@ -369,85 +395,83 @@ public class Table extends Figure {
         return this.labeledNote;
     }
 
-    /** Check if the table:
-     * - has label, header and content
-     * - header starts with "tab"
-     * - label can be parsed
+    /**
+     * Check if the table: - has label, header and content - header starts with "tab" - label can be parsed
      */
-	public boolean validateTable() {
-		CntManager cnt = Engine.getCntManager();
-		if (StringUtils.isAnyBlank(label, header, content)) {
-			cnt.i(TableRejectionCounters.EMPTY_LABEL_OR_HEADER_OR_CONTENT);
-			return false;
-		}
+    public boolean validateTable() {
+        CntManager cnt = Engine.getCntManager();
+        if (StringUtils.isAnyBlank(label, header, content)) {
+            cnt.i(TableRejectionCounters.EMPTY_LABEL_OR_HEADER_OR_CONTENT);
+            return false;
+        }
 
-		try {
-			Integer.valueOf(getLabel().trim(), 10);
-		} catch (NumberFormatException e) {
-			cnt.i(TableRejectionCounters.CANNOT_PARSE_LABEL_TO_INT);
-			return false;
-		}
+        try {
+            Integer.valueOf(getLabel().trim(), 10);
+        } catch (NumberFormatException e) {
+            cnt.i(TableRejectionCounters.CANNOT_PARSE_LABEL_TO_INT);
+            return false;
+        }
         // tab covers: table, tabelle, tableu, tabella, etc.
-		if (!StringUtils.startsWithIgnoreCase(getHeader(), "tab")) {
-			cnt.i(TableRejectionCounters.HEADER_NOT_STARTS_WITH_TABLE_WORD);
-			return false;
-		}
-		return true;
-	}
+        if (!StringUtils.startsWithIgnoreCase(getHeader(), "tab")) {
+            cnt.i(TableRejectionCounters.HEADER_NOT_STARTS_WITH_TABLE_WORD);
+            return false;
+        }
+        return true;
+    }
 
-	private boolean badTableAdvancedCheck() {
-		CntManager cnt = Engine.getCntManager();
-		BoundingBox contentBox = BoundingBoxCalculator.calculateOneBox(contentTokens, true);
-		BoundingBox descBox = BoundingBoxCalculator.calculateOneBox(fullDescriptionTokens, true);
+    private boolean badTableAdvancedCheck() {
+        CntManager cnt = Engine.getCntManager();
+        BoundingBox contentBox = BoundingBoxCalculator.calculateOneBox(contentTokens, true);
+        BoundingBox descBox = BoundingBoxCalculator.calculateOneBox(fullDescriptionTokens, true);
 
-		if (contentBox.getPage() != descBox.getPage()) {
+        if (contentBox.getPage() != descBox.getPage()) {
             cnt.i(TableRejectionCounters.HEADER_AND_CONTENT_DIFFERENT_PAGES);
-			return true;
+            return true;
         }
 
-		if (contentBox.intersect(descBox)) {
+        if (contentBox.intersect(descBox)) {
             cnt.i(TableRejectionCounters.HEADER_AND_CONTENT_INTERSECT);
-			return true;
+            return true;
         }
 
-		if (descBox.area() > contentBox.area()) {
+        if (descBox.area() > contentBox.area()) {
             cnt.i(TableRejectionCounters.HEADER_AREA_BIGGER_THAN_CONTENT);
-			return true;
+            return true;
         }
 
-		if (contentBox.getHeight() < 40) {
+        if (contentBox.getHeight() < 40) {
             cnt.i(TableRejectionCounters.CONTENT_SIZE_TOO_SMALL);
-			return true;
+            return true;
         }
 
-		if (contentBox.getWidth() < 100) {
+        if (contentBox.getWidth() < 100) {
             cnt.i(TableRejectionCounters.CONTENT_WIDTH_TOO_SMALL);
-			return true;
+            return true;
         }
 
-		if (contentTokens.size() < 10) {
+        if (contentTokens.size() < 10) {
             cnt.i(TableRejectionCounters.FEW_TOKENS_IN_CONTENT);
-			return true;
+            return true;
         }
 
-		if (fullDescriptionTokens.size() < 5) {
+        if (fullDescriptionTokens.size() < 5) {
             cnt.i(TableRejectionCounters.FEW_TOKENS_IN_HEADER);
-			return true;
+            return true;
         }
-		return false;
-	}
+        return false;
+    }
 
-	public List<LayoutToken> getContentTokens() {
-		return contentTokens;
-	}
+    public List<LayoutToken> getContentTokens() {
+        return contentTokens;
+    }
 
-	public List<LayoutToken> getFullDescriptionTokens() {
-		return fullDescriptionTokens;
-	}
+    public List<LayoutToken> getFullDescriptionTokens() {
+        return fullDescriptionTokens;
+    }
 
-	public boolean isGoodTable() {
-		return goodTable;
-	}
+    public boolean isGoodTable() {
+        return goodTable;
+    }
 
     public String getTeiId() {
         return "tab_" + this.id;
@@ -463,5 +487,17 @@ public class Table extends Figure {
 
     public void addDiscardedPieceTokens(List<LayoutToken> pieceToken) {
         this.discardedPiecesTokens.add(pieceToken);
+    }
+
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("contentTokens", contentTokens)
+                .append("fullDescriptionTokens", fullDescriptionTokens)
+                .append("goodTable", goodTable)
+                .append("note", note)
+                .append("noteLayoutTokens", noteLayoutTokens)
+                .append("labeledNote", labeledNote)
+                .append("discardedPiecesTokens", discardedPiecesTokens)
+                .toString();
     }
 }

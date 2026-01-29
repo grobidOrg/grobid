@@ -1,9 +1,6 @@
 package org.grobid.core.features;
 
 import java.io.*;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.regex.Matcher;
 
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.utilities.TextUtilities;
@@ -20,14 +17,14 @@ public class FeaturesVectorHeader {
     public String lineStatus = null; // one of LINESTART, LINEIN, LINEEND
     public String alignmentStatus = null; // one of ALIGNEDLEFT, INDENTED, CENTERED - applied to the whole line
     public String fontStatus = null; // one of NEWFONT, SAMEFONT
-    
+
     public boolean bold = false;
     public boolean italic = false;
     public boolean rotation = false;
     public String capitalisation = null; // one of INITCAP, ALLCAPS, NOCAPS
-    public String digit;  // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
+    public String digit; // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
     public boolean singleChar = false;
-    //public boolean containDash = false;
+    // public boolean containDash = false;
     public boolean properName = false;
     public boolean commonName = false;
     public boolean firstName = false;
@@ -36,25 +33,28 @@ public class FeaturesVectorHeader {
     public boolean month = false;
     public boolean email = false;
     public boolean http = false;
-    //public boolean acronym = false;
-    public String punctType = null; // one of NOPUNCT, OPENBRACKET, ENDBRACKET, DOT, COMMA, HYPHEN, QUOTE, PUNCT (default)
-    //public boolean containPunct = false;
+    // public boolean acronym = false;
+    public String punctType = null; // one of NOPUNCT, OPENBRACKET, ENDBRACKET, DOT, COMMA, HYPHEN, QUOTE, PUNCT
+                                    // (default)
+    // public boolean containPunct = false;
 
     public String punctuationProfile = null; // the punctuations of the current line of the token
 
-    public int spacingWithPreviousBlock = 0; // discretized 
-    public int characterDensity = 0; // discretized 
+    public int spacingWithPreviousBlock = 0; // discretized
+    public int characterDensity = 0; // discretized
 
     // font size related
     public String fontSize = null; // one of HIGHERFONT, SAMEFONTSIZE, LOWERFONT
     public boolean largestFont = false;
     public boolean smallestFont = false;
     public boolean largerThanAverageFont = false;
-    //public boolean superscript = false;
+    // public boolean superscript = false;
 
     public String printVector() {
-        if (string == null) return null;
-        if (string.length() == 0) return null;
+        if (string == null)
+            return null;
+        if (string.length() == 0)
+            return null;
         StringBuffer res = new StringBuffer();
 
         // token string (1)
@@ -82,8 +82,8 @@ public class FeaturesVectorHeader {
 
         // line information (1)
         res.append(" " + lineStatus);
-		
-		// line position/indentation (1)
+
+        // line position/indentation (1)
         res.append(" " + alignmentStatus);
 
         // font information (1)
@@ -131,10 +131,9 @@ public class FeaturesVectorHeader {
         else
             res.append(" 0");
 
-        /*if (firstName)
-            res.append(" 1");
-        else
-            res.append(" 0");*/
+        /*
+         * if (firstName) res.append(" 1"); else res.append(" 0");
+         */
 
         if (year)
             res.append(" 1");
@@ -167,12 +166,12 @@ public class FeaturesVectorHeader {
         // 28 features written at this point
 
         // space with previous block, discretised (1)
-        //res.append(" " + spacingWithPreviousBlock);
-        //res.append(" " + 0);
+        // res.append(" " + spacingWithPreviousBlock);
+        // res.append(" " + 0);
 
         // character density of the previous block, discretised (1)
-        //res.append(" " + characterDensity);
-        //res.append(" " + 0);
+        // res.append(" " + characterDensity);
+        // res.append(" " + 0);
 
         if (largestFont)
             res.append(" 1");
@@ -189,18 +188,18 @@ public class FeaturesVectorHeader {
         else
             res.append(" 0");
 
-        /*if (superscript)
-            res.append(" 1");
-        else
-            res.append(" 0");*/
+        /*
+         * if (superscript) res.append(" 1"); else res.append(" 0");
+         */
 
         // 30 features written at this point
 
         // label - for training data (1)
         if (label != null)
             res.append(" " + label + "\n");
-        /*else
-            res.append("\n");*/
+        /*
+         * else res.append("\n");
+         */
         else
             res.append(" 0\n");
 

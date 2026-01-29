@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 
 public class CybozuLanguageDetector implements LanguageDetector {
-    private static final Logger LOGGER  = LoggerFactory.getLogger(CybozuLanguageDetector.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(CybozuLanguageDetector.class);
     @Override
     public Language detect(String text) {
         Detector detector;

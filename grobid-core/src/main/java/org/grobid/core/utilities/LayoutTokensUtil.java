@@ -13,7 +13,6 @@ import org.grobid.core.layout.LayoutToken;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -44,17 +43,18 @@ public class LayoutTokensUtil {
     }
 
     public static String normalizeText(String text) {
-        //return TextUtilities.dehyphenize(text).replace("\n", " ").replaceAll("[ ]{2,}", " ");
+        // return TextUtilities.dehyphenize(text).replace("\n", " ").replaceAll("[ ]{2,}", " ");
         return StringUtils.normalizeSpace(text.replace("\n", " "));
     }
 
     public static String normalizeText(List<LayoutToken> tokens) {
-        //return TextUtilities.dehyphenize(toText(tokens)).replace("\n", " ").replaceAll("[ ]{2,}", " ");
+        // return TextUtilities.dehyphenize(toText(tokens)).replace("\n", " ").replaceAll("[ ]{2,}", " ");
         return StringUtils.normalizeSpace(toText(tokens).replace("\n", " "));
     }
 
     public static String normalizeDehyphenizeText(List<LayoutToken> tokens) {
-        return StringUtils.normalizeSpace(LayoutTokensUtil.toText(LayoutTokensUtil.dehyphenize(tokens)).replace("\n", " "));
+        return StringUtils
+                .normalizeSpace(LayoutTokensUtil.toText(LayoutTokensUtil.dehyphenize(tokens)).replace("\n", " "));
     }
 
     public static String toText(List<LayoutToken> tokens) {
@@ -65,27 +65,23 @@ public class LayoutTokensUtil {
         return t.getPage() == -1 || t.getWidth() <= 0;
     }
 
-
     public static boolean spaceyToken(String tok) {
-        /*return (tok.equals(" ")
-                || tok.equals("\u00A0")
-                || tok.equals("\n"));*/
-        // all space characters are normalised into simple space character        
+        /*
+         * return (tok.equals(" ") || tok.equals("\u00A0") || tok.equals("\n"));
+         */
+        // all space characters are normalised into simple space character
         return tok.equals(" ");
     }
 
     public static boolean newLineToken(String tok) {
-        //return (tok.equals("\n") || tok.equals("\r") || tok.equals("\n\r"));
-        // all new line characters are normalised into simple \n character  
+        // return (tok.equals("\n") || tok.equals("\r") || tok.equals("\n\r"));
+        // all new line characters are normalised into simple \n character
         return tok.equals("\n");
     }
 
-    /*public static String removeSpecialVariables(String tok) {
-        if (tok.equals("@BULLET")) {
-            tok = "•";
-        }
-        return tok;
-    }*/
+    /*
+     * public static String removeSpecialVariables(String tok) { if (tok.equals("@BULLET")) { tok = "•"; } return tok; }
+     */
 
     public static boolean containsToken(List<LayoutToken> toks, String text) {
         for (LayoutToken t : toks) {
@@ -118,15 +114,19 @@ public class LayoutTokensUtil {
         return -1;
     }
 
-//    public static List<List<LayoutToken>> split(List<LayoutToken> toks, Pattern p) {
-//        return split(toks, p, false);
-//    }
+    // public static List<List<LayoutToken>> split(List<LayoutToken> toks, Pattern p) {
+    // return split(toks, p, false);
+    // }
 
     public static List<List<LayoutToken>> split(List<LayoutToken> toks, Pattern p, boolean preserveSeparator) {
         return split(toks, p, preserveSeparator, true);
     }
 
-    public static List<List<LayoutToken>> split(List<LayoutToken> toks, Pattern p, boolean preserveSeparator, boolean preserveLeftOvers) {
+    public static List<List<LayoutToken>> split(
+            List<LayoutToken> toks,
+            Pattern p,
+            boolean preserveSeparator,
+            boolean preserveLeftOvers) {
         List<List<LayoutToken>> split = new ArrayList<>();
         List<LayoutToken> curToks = new ArrayList<>();
         for (LayoutToken tok : toks) {
@@ -147,7 +147,6 @@ public class LayoutTokensUtil {
         }
         return split;
     }
-
 
     public static boolean tooFarAwayVertically(List<BoundingBox> boxes, double distance) {
         if (boxes == null) {
@@ -179,10 +178,10 @@ public class LayoutTokensUtil {
 
         for (int i = 0; i < tokens.size(); i++) {
             LayoutToken currentToken = tokens.get(i);
-            //the current token is dash (and is neither subscript nor superscript) checking what's around
+            // the current token is dash (and is neither subscript nor superscript) checking what's around
             if (currentToken.getText().equals("-") && !(currentToken.isSubscript() || currentToken.isSuperscript())) {
                 if (doesRequireDehypenisation(tokens, i)) {
-                    //Cleanup eventual additional spaces before the hypen that have been already written to the output
+                    // Cleanup eventual additional spaces before the hypen that have been already written to the output
                     int z = output.size() - 1;
                     while (z >= 0 && output.get(z).getText().equals(" ")) {
                         String tokenString = output.get(z).getText();
@@ -193,12 +192,12 @@ public class LayoutTokensUtil {
                         z--;
                     }
 
-
                     List<Integer> breakLines = new ArrayList<>();
                     List<Integer> spaces = new ArrayList<>();
 
                     int j = i + 1;
-                    while (j < tokens.size() && tokens.get(j).getText().equals(" ") || tokens.get(j).getText().equals("\n")) {
+                    while (j < tokens.size() && tokens.get(j).getText().equals(" ")
+                            || tokens.get(j).getText().equals("\n")) {
                         String tokenString = tokens.get(j).getText();
 
                         if (tokenString.equals("\n")) {
@@ -238,8 +237,8 @@ public class LayoutTokensUtil {
     /**
      * Check if the current token (place i), or the hypen, needs to be removed or not.
      * <p>
-     * It will check the tokens before and after. It will get to the next "non space" tokens and verify
-     * that it's a plain word. If it's not it's keeping the hypen.
+     * It will check the tokens before and after. It will get to the next "non space" tokens and verify that it's a
+     * plain word. If it's not it's keeping the hypen.
      * <p>
      * TODO: What to do in case of a punctuation is found?
      */
@@ -271,17 +270,17 @@ public class LayoutTokensUtil {
             }
         }
 
-        //tokens.stream().collect(groupingBy(LayoutToken::getY)).keySet()
+        // tokens.stream().collect(groupingBy(LayoutToken::getY)).keySet()
 
         if (j < tokens.size()) {
             forward = StringUtils.isAllLowerCase(tokens.get(j).getText());
             if (forward) {
-                //If nothing before the hypen, but it looks like a forward hypenisation, let's trust it
+                // If nothing before the hypen, but it looks like a forward hypenisation, let's trust it
                 if (i < 1) {
                     return forward;
                 }
 
-                //I check if the coordinates have changed, this means there is a newline
+                // I check if the coordinates have changed, this means there is a newline
                 if (tokens.get(j).getY() > coordinateY) {
                     return forward;
                 }
@@ -295,7 +294,7 @@ public class LayoutTokensUtil {
                 if (StringUtils.isAlpha(tokens.get(z).getText())) {
                     if (tokens.get(z).getY() < coordinateY) {
                         backward = true;
-                    } else if(coordinateY == -1 && breakLine > 0) {
+                    } else if (coordinateY == -1 && breakLine > 0) {
                         backward = true;
                     }
                 }
@@ -310,10 +309,9 @@ public class LayoutTokensUtil {
     }
 
     public static List<LayoutToken> subListByOffset(List<LayoutToken> token, int startIncluded, int endExcluded) {
-        return token
-            .stream()
-            .filter(t -> t.getOffset() >= startIncluded && t.getOffset() < endExcluded)
-            .collect(Collectors.toList());
+        return token.stream()
+                .filter(t -> t.getOffset() >= startIncluded && t.getOffset() < endExcluded)
+                .collect(Collectors.toList());
     }
 
     public static List<LayoutToken> getLayoutTokensForTokenizedText(List<String> tokens) {

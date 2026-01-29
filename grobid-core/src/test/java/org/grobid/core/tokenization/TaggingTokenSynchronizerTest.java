@@ -29,8 +29,7 @@ public class TaggingTokenSynchronizerTest {
     @Test
     public void testBasic() {
         TaggingTokenSynchronizer synchronizer = new TaggingTokenSynchronizer(GrobidModels.modelFor("fulltext"),
-                generateResult(p("This", P), p("Figure", F)), toks("This", " ", "Figure")
-        );
+                generateResult(p("This", P), p("Figure", F)), toks("This", " ", "Figure"));
 
         int cnt = 0;
         boolean spacesPresent = false;
@@ -50,8 +49,7 @@ public class TaggingTokenSynchronizerTest {
     @Test(expected = IllegalStateException.class)
     public void testFailure() {
         TaggingTokenSynchronizer synchronizer = new TaggingTokenSynchronizer(GrobidModels.modelFor("fulltext"),
-                generateResult(p("This", P), p("Figure", F)), toks("This", " ", "Fig")
-        );
+                generateResult(p("This", P), p("Figure", F)), toks("This", " ", "Fig"));
 
         for (LabeledTokensContainer el : synchronizer) {
             LayoutTokensUtil.toText(el.getLayoutTokens());

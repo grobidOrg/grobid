@@ -3,7 +3,6 @@ package org.grobid.core.sax;
 import org.grobid.core.document.Document;
 import org.grobid.core.document.DocumentSource;
 import org.grobid.core.layout.PDFAnnotation;
-import org.grobid.core.layout.LayoutToken;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -43,11 +42,10 @@ public class PDFALTOAnnotationSaxParserTest {
         p.parse(is, target);
 
         List<PDFAnnotation> pdfAnnotations = target.getPDFAnnotations();
-//		System.out.println(pdfAnnotations.size());
+        // System.out.println(pdfAnnotations.size());
         assertTrue(pdfAnnotations.size() > 0);
         assertThat(pdfAnnotations, hasSize(520));
 
-		
     }
 
 }

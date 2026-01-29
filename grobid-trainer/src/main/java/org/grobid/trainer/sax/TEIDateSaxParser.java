@@ -39,20 +39,17 @@ public class TEIDateSaxParser extends DefaultHandler {
         return labeled;
     }
 
-    public void endElement(java.lang.String uri,
-                           java.lang.String localName,
-                           java.lang.String qName) throws SAXException {
-        if (( (qName.equals("year")) || (qName.equals("month")) || (qName.equals("day"))) & (currentTag != null)) {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
+        if (((qName.equals("year")) || (qName.equals("month")) || (qName.equals("day"))) & (currentTag != null)) {
             String text = getText();
             writeField(text);
-        } 
-		/*else if (qName.equals("lb")) {
-            // we note a line break
-            accumulator.append(" +L+ ");
-        } else if (qName.equals("pb")) {
-            accumulator.append(" +PAGE+ ");
-        } */
-		else if (qName.equals("date")) {
+        }
+        /*
+         * else if (qName.equals("lb")) { // we note a line break accumulator.append(" +L+ "); } else if
+         * (qName.equals("pb")) { accumulator.append(" +PAGE+ "); }
+         */
+        else if (qName.equals("date")) {
             String text = getText();
             if (text.length() > 0) {
                 currentTag = "<other>";
@@ -64,11 +61,7 @@ public class TEIDateSaxParser extends DefaultHandler {
         accumulator.setLength(0);
     }
 
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
-            throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
 
         String text = getText();
         if (text.length() > 0) {
@@ -90,13 +83,14 @@ public class TEIDateSaxParser extends DefaultHandler {
 
     private void writeField(String text) {
         // we segment the text
-        //StringTokenizer st = new StringTokenizer(text, " \n\t");
+        // StringTokenizer st = new StringTokenizer(text, " \n\t");
         List<String> tokens = TextUtilities.segment(text, TextUtilities.punctuations);
 
         boolean begin = true;
         for (String tok : tokens) {
             tok = tok.trim();
-            if (tok.length() == 0) continue;
+            if (tok.length() == 0)
+                continue;
             boolean punct1 = false;
 
             if (tok.equals("+L+")) {
@@ -177,4 +171,3 @@ public class TEIDateSaxParser extends DefaultHandler {
     }
 
 }
-	

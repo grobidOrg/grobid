@@ -102,7 +102,7 @@ public class DateTest {
 
         assertThat(merged.getYear(), is(2011));
         assertThat(merged.getMonth(), is(10));
-    }    
+    }
 
     @Test
     public void testDateMerging_differentDates_year_shouldReturnOriginal() {
@@ -123,7 +123,7 @@ public class DateTest {
 
     @Test
     public void testDateMerging_differentDates_missingYearFromTarget() {
-        // "" "2016-10-27" -> "2016-10-27"  
+        // "" "2016-10-27" -> "2016-10-27"
 
         target = new Date();
 
@@ -153,8 +153,8 @@ public class DateTest {
 
         assertThat(merged.getYear(), is(2011));
     }
-    
-    @Test 
+
+    @Test
     public void testToISOString_onlyYear() {
         Date date = new Date();
         date.setYear(2016);

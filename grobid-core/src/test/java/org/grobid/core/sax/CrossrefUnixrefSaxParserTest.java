@@ -30,7 +30,6 @@ public class CrossrefUnixrefSaxParserTest {
         target = new CrossrefUnixrefSaxParser(item);
     }
 
-
     @Test
     public void testParseCrossrefDoi() throws Exception {
         InputStream inputStream = this.getClass().getResourceAsStream("crossref_response.doi.xml");

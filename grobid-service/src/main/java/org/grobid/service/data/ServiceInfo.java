@@ -1,6 +1,5 @@
 package org.grobid.service.data;
 
-
 public class ServiceInfo {
 
     private String version;
@@ -16,9 +15,8 @@ public class ServiceInfo {
 
     public ServiceInfo(String version, String revision) {
         this(version);
-        this.revision = revision; 
+        this.revision = revision;
     }
-
 
     public String getVersion() {
         return version;

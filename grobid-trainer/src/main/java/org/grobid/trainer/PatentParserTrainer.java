@@ -14,7 +14,6 @@ import org.grobid.core.sax.ST36SaxParser;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.TextUtilities;
-import org.grobid.trainer.evaluation.PatentEvaluation;
 
 public class PatentParserTrainer extends AbstractTrainer {
 
@@ -31,8 +30,8 @@ public class PatentParserTrainer extends AbstractTrainer {
     public int createTrainingData(String trainingDataDir) {
         int nb = 0;
         try {
-            String path = new File(new File(getFilePath2Resources(),
-                    "dataset/patent/corpus/").getAbsolutePath()).getAbsolutePath();
+            String path = new File(new File(getFilePath2Resources(), "dataset/patent/corpus/").getAbsolutePath())
+                    .getAbsolutePath();
             createDataSet(null, path, trainingDataDir, 0);
         } catch (Exception e) {
             throw new GrobidException("An exception occurred while training Grobid.", e);
@@ -41,11 +40,10 @@ public class PatentParserTrainer extends AbstractTrainer {
     }
 
     /**
-     * Add the selected features to the affiliation/address model training for
-     * names
-     * 
+     * Add the selected features to the affiliation/address model training for names
+     *
      * @param corpusDir
-     *            a path where corpus files are located
+     * a path where corpus files are located
      * @return the total number of used corpus items
      */
     @Override
@@ -54,18 +52,17 @@ public class PatentParserTrainer extends AbstractTrainer {
     }
 
     /**
-     * Add the selected features to the affiliation/address model training for
-     * names
-     * 
+     * Add the selected features to the affiliation/address model training for names
+     *
      * @param corpusDir
-     *            a path where corpus files are located
+     * a path where corpus files are located
      * @param trainingOutputPath
-     *            path where to store the temporary training data
+     * path where to store the temporary training data
      * @param evalOutputPath
-     *            path where to store the temporary evaluation data
+     * path where to store the temporary evaluation data
      * @param splitRatio
-     *            ratio to consider for separating training and evaluation data, e.g. 0.8 for 80% 
-     * @return the total number of used corpus items 
+     * ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
+     * @return the total number of used corpus items
      */
     @Override
     public int createCRFPPData(File corpusPath, File trainingOutputPath, File evalOutputPath, double splitRatio) {
@@ -93,10 +90,11 @@ public class PatentParserTrainer extends AbstractTrainer {
                 public boolean accept(File dir, String name) {
                     return name.endsWith(".xml");
                 }
-            }); 
+            });
 
             if (refFiles == null) {
-                throw new IllegalStateException("Folder " + corpusPath.getAbsolutePath()
+                throw new IllegalStateException("Folder "
+                        + corpusPath.getAbsolutePath()
                         + " does not seem to contain training data. Please check");
             }
 
@@ -131,8 +129,9 @@ public class PatentParserTrainer extends AbstractTrainer {
                 String name = xmlfile.getName();
                 System.out.println(name);
 
-                /*if (!name.startsWith("WO-2008070663-A2"))
-                    continue;*/
+                /*
+                 * if (!name.startsWith("WO-2008070663-A2")) continue;
+                 */
 
                 // Patent + NPL REF. textual data (the "all" model)
                 ST36SaxParser sax = new ST36SaxParser();
@@ -157,18 +156,18 @@ public class PatentParserTrainer extends AbstractTrainer {
                 }
 
                 Writer writer = null;
-                if ( (writer2 == null) && (writer3 != null) )
+                if ((writer2 == null) && (writer3 != null))
                     writer = writer3;
-                if ( (writer2 != null) && (writer3 == null) )
+                if ((writer2 != null) && (writer3 == null))
                     writer = writer2;
-                else {      
+                else {
                     if (Math.random() <= splitRatio)
-                        writer= writer2;
-                    else 
+                        writer = writer2;
+                    else
                         writer = writer3;
                 }
 
-                if (sax.allAccumulatedTokens != null && sax.allAccumulatedTokens.size()>0) {
+                if (sax.allAccumulatedTokens != null && sax.allAccumulatedTokens.size() > 0) {
                     int rank = 0;
                     for (List<LayoutToken> accumulatedTokens : sax.allAccumulatedTokens) {
 
@@ -188,29 +187,30 @@ public class PatentParserTrainer extends AbstractTrainer {
                             maxSequence = GrobidProperties.getDelftTrainingMaxSequenceLength("patent-citation");
                         }
 
-                        if (accumulatedTokens.size() > maxSequence) {                         
+                        if (accumulatedTokens.size() > maxSequence) {
                             // we have a problem of sequence length for Deep Learning algorithms
-                            // we need to segment further. We ensure here that we don't segment 
-                            // near or inside patent or NPL references 
-                            int k = 0; 
-                            while(k<accumulatedTokens.size()) {
+                            // we need to segment further. We ensure here that we don't segment
+                            // near or inside patent or NPL references
+                            int k = 0;
+                            while (k < accumulatedTokens.size()) {
                                 int origin = k;
 
-                                if (k+maxSequence < accumulatedTokens.size()) {
-                                    k = k+maxSequence;
+                                if (k + maxSequence < accumulatedTokens.size()) {
+                                    k = k + maxSequence;
                                     // adjust position to avoid reference label
-                                    while (accumulatedLabels.get(k-1).endsWith("refNPL>") || accumulatedLabels.get(k-1).endsWith("refPatent>")) {
+                                    while (accumulatedLabels.get(k - 1).endsWith("refNPL>")
+                                            || accumulatedLabels.get(k - 1).endsWith("refPatent>")) {
                                         k--;
                                         if (k == origin)
                                             break;
                                     }
-                                } else 
+                                } else
                                     k = accumulatedTokens.size();
 
-                                if (k > origin) {                              
+                                if (k > origin) {
                                     segmentedAccumulatedTokens.add(accumulatedTokens.subList(origin, k));
                                     segmentedAccumulatedLabels.add(accumulatedLabels.subList(origin, k));
-                                } else 
+                                } else
                                     break;
                             }
                         } else {
@@ -218,18 +218,23 @@ public class PatentParserTrainer extends AbstractTrainer {
                             segmentedAccumulatedLabels.add(accumulatedLabels);
                         }
 
-                        for(int i=0; i<segmentedAccumulatedTokens.size(); i++) {
+                        for (int i = 0; i < segmentedAccumulatedTokens.size(); i++) {
 
                             List<LayoutToken> theAccumulatedTokens = segmentedAccumulatedTokens.get(i);
                             List<String> theAccumulatedLabels = segmentedAccumulatedLabels.get(i);
 
-                            List<OffsetPosition> journalsPositions = Lexicon.getInstance().tokenPositionsJournalNames(theAccumulatedTokens);
-                            List<OffsetPosition> abbrevJournalsPositions = Lexicon.getInstance().tokenPositionsAbbrevJournalNames(theAccumulatedTokens);
-                            List<OffsetPosition> conferencesPositions = Lexicon.getInstance().tokenPositionsConferenceNames(theAccumulatedTokens);
-                            List<OffsetPosition> publishersPositions = Lexicon.getInstance().tokenPositionsPublisherNames(theAccumulatedTokens);
+                            List<OffsetPosition> journalsPositions = Lexicon.getInstance()
+                                    .tokenPositionsJournalNames(theAccumulatedTokens);
+                            List<OffsetPosition> abbrevJournalsPositions = Lexicon.getInstance()
+                                    .tokenPositionsAbbrevJournalNames(theAccumulatedTokens);
+                            List<OffsetPosition> conferencesPositions = Lexicon.getInstance()
+                                    .tokenPositionsConferenceNames(theAccumulatedTokens);
+                            List<OffsetPosition> publishersPositions = Lexicon.getInstance()
+                                    .tokenPositionsPublisherNames(theAccumulatedTokens);
 
                             // add features for patent+NPL
-                            addFeatures(theAccumulatedTokens,
+                            addFeatures(
+                                    theAccumulatedTokens,
                                     theAccumulatedLabels,
                                     writer,
                                     journalsPositions,
@@ -257,10 +262,11 @@ public class PatentParserTrainer extends AbstractTrainer {
             System.out.println("\nNumber of references: " + (nbNPLRef + nbPatentRef));
             System.out.println("Number of patent references: " + nbPatentRef);
             System.out.println("Number of NPL references: " + nbNPLRef);
-            //System.out.println("Number of search report citations: " + srCitations);
-            System.out.println("Average number of references: " +
-                    TextUtilities.formatTwoDecimals((double) (nbNPLRef + nbPatentRef) / nbFiles));
-            System.out.println("Max number of references in file: " + maxRef +"\n");
+            // System.out.println("Number of search report citations: " + srCitations);
+            System.out.println(
+                    "Average number of references: "
+                            + TextUtilities.formatTwoDecimals((double) (nbNPLRef + nbPatentRef) / nbFiles));
+            System.out.println("Max number of references in file: " + maxRef + "\n");
 
         } catch (Exception e) {
             throw new GrobidException("An exception occurred while running Grobid.", e);
@@ -268,12 +274,12 @@ public class PatentParserTrainer extends AbstractTrainer {
         return totalExamples;
     }
 
-
     /**
-     * Create the set of training and evaluation sets from the annotated examples with
-     * extraction of citations in the patent description body.
+     * Create the set of training and evaluation sets from the annotated examples with extraction of citations in the
+     * patent description body.
      *
-     * @param type type of data to be created, 0 is training data, 1 is evaluation data
+     * @param type
+     * type of data to be created, 0 is training data, 1 is evaluation data
      */
     public void createDataSet(String setName, String corpusPath, String outputPath, int type) {
         int nbFiles = 0;
@@ -308,18 +314,18 @@ public class PatentParserTrainer extends AbstractTrainer {
                 fileList.add(new File(corpusPath));
             } else {
                 fileList.add(new File(corpusPath));
-            } 
+            }
 
             Writer writer = null;
             if ((setName == null) || (setName.length() == 0)) {
-                writer = new OutputStreamWriter(new FileOutputStream(
-                        new File(outputPath + File.separator + "all.train"), false), "UTF-8");
+                writer = new OutputStreamWriter(
+                        new FileOutputStream(new File(outputPath + File.separator + "all.train"), false), "UTF-8");
             } else {
-                writer = new OutputStreamWriter(new FileOutputStream(
-                        new File(outputPath + File.separator + "all." + setName), false), "UTF-8");
-            } 
+                writer = new OutputStreamWriter(
+                        new FileOutputStream(new File(outputPath + File.separator + "all." + setName), false), "UTF-8");
+            }
 
-            //int totalLength = 0;
+            // int totalLength = 0;
             while (fileList.size() > 0) {
                 File file = fileList.removeFirst();
                 if (file.isDirectory()) {
@@ -330,12 +336,12 @@ public class PatentParserTrainer extends AbstractTrainer {
                     if (file.getName().endsWith(".xml")) {
                         nbFiles++;
                         try {
-                            //get a new instance of parser
+                            // get a new instance of parser
                             SAXParser p = spf.newSAXParser();
                             FileInputStream in = new FileInputStream(file);
                             sax.setFileName(file.toString());
                             p.parse(in, sax);
-                            //writer3.write("\n");
+                            // writer3.write("\n");
                             nbNPLRef += sax.getNbNPLRef();
                             nbPatentRef += sax.getNbPatentRef();
                             if (sax.nbAllRef > maxRef) {
@@ -348,7 +354,7 @@ public class PatentParserTrainer extends AbstractTrainer {
                                 }
                             }
 
-                            if (sax.allAccumulatedTokens != null && sax.allAccumulatedTokens.size()>0) {
+                            if (sax.allAccumulatedTokens != null && sax.allAccumulatedTokens.size() > 0) {
                                 int rank = 0;
                                 for (List<LayoutToken> accumulatedTokens : sax.allAccumulatedTokens) {
                                     if (accumulatedTokens.size() == 0) {
@@ -364,32 +370,34 @@ public class PatentParserTrainer extends AbstractTrainer {
                                     int maxSequence = 1000;
                                     if (GrobidProperties.getGrobidEngineName("patent-citation").equals("delft")) {
                                         List<String> newTexts = new ArrayList<>();
-                                        maxSequence = GrobidProperties.getDelftTrainingMaxSequenceLength("patent-citation");
+                                        maxSequence = GrobidProperties
+                                                .getDelftTrainingMaxSequenceLength("patent-citation");
                                     }
 
                                     if (accumulatedTokens.size() > maxSequence) {
                                         // we have a problem of sequence length for Deep Learning algorithms
-                                        // we need to segment further. We ensure here that we don't segment 
-                                        // near or inside patent or NPL references 
-                                        int k = 0; 
-                                        while(k<accumulatedTokens.size()) {
+                                        // we need to segment further. We ensure here that we don't segment
+                                        // near or inside patent or NPL references
+                                        int k = 0;
+                                        while (k < accumulatedTokens.size()) {
                                             int origin = k;
 
-                                            if (k+maxSequence < accumulatedTokens.size()) {
-                                                k = k+maxSequence;
+                                            if (k + maxSequence < accumulatedTokens.size()) {
+                                                k = k + maxSequence;
                                                 // adjust position to avoid reference label
-                                                while (accumulatedLabels.get(k-1).endsWith("refNPL>") || accumulatedLabels.get(k-1).endsWith("refPatent>")) {
+                                                while (accumulatedLabels.get(k - 1).endsWith("refNPL>")
+                                                        || accumulatedLabels.get(k - 1).endsWith("refPatent>")) {
                                                     k--;
                                                     if (k == origin)
                                                         break;
                                                 }
-                                            } else 
+                                            } else
                                                 k = accumulatedTokens.size();
 
                                             if (k > origin) {
                                                 segmentedAccumulatedTokens.add(accumulatedTokens.subList(origin, k));
                                                 segmentedAccumulatedLabels.add(accumulatedLabels.subList(origin, k));
-                                            } else 
+                                            } else
                                                 break;
                                         }
                                     } else {
@@ -397,18 +405,23 @@ public class PatentParserTrainer extends AbstractTrainer {
                                         segmentedAccumulatedLabels.add(accumulatedLabels);
                                     }
 
-                                    for(int i=0; i<segmentedAccumulatedTokens.size(); i++) {
+                                    for (int i = 0; i < segmentedAccumulatedTokens.size(); i++) {
 
                                         List<LayoutToken> theAccumulatedTokens = segmentedAccumulatedTokens.get(i);
                                         List<String> theAccumulatedLabels = segmentedAccumulatedLabels.get(i);
 
-                                        List<OffsetPosition> journalsPositions = Lexicon.getInstance().tokenPositionsJournalNames(theAccumulatedTokens);
-                                        List<OffsetPosition> abbrevJournalsPositions = Lexicon.getInstance().tokenPositionsAbbrevJournalNames(theAccumulatedTokens);
-                                        List<OffsetPosition> conferencesPositions = Lexicon.getInstance().tokenPositionsConferenceNames(theAccumulatedTokens);
-                                        List<OffsetPosition> publishersPositions = Lexicon.getInstance().tokenPositionsPublisherNames(theAccumulatedTokens);
+                                        List<OffsetPosition> journalsPositions = Lexicon.getInstance()
+                                                .tokenPositionsJournalNames(theAccumulatedTokens);
+                                        List<OffsetPosition> abbrevJournalsPositions = Lexicon.getInstance()
+                                                .tokenPositionsAbbrevJournalNames(theAccumulatedTokens);
+                                        List<OffsetPosition> conferencesPositions = Lexicon.getInstance()
+                                                .tokenPositionsConferenceNames(theAccumulatedTokens);
+                                        List<OffsetPosition> publishersPositions = Lexicon.getInstance()
+                                                .tokenPositionsPublisherNames(theAccumulatedTokens);
 
                                         // add features for patent+NPL
-                                        addFeatures(theAccumulatedTokens,
+                                        addFeatures(
+                                                theAccumulatedTokens,
                                                 theAccumulatedLabels,
                                                 writer,
                                                 journalsPositions,
@@ -436,13 +449,14 @@ public class PatentParserTrainer extends AbstractTrainer {
             } else {
                 System.out.println("training on " + nbFiles + " files");
             }
-            //System.out.println("Number of file with search report: " + withSR);
+            // System.out.println("Number of file with search report: " + withSR);
             System.out.println("Number of references: " + (nbNPLRef + nbPatentRef));
             System.out.println("Number of patent references: " + nbPatentRef);
             System.out.println("Number of NPL references: " + nbNPLRef);
-            //System.out.println("Number of search report citations: " + srCitations);
-            System.out.println("Average number of references: " +
-                    TextUtilities.formatTwoDecimals((double) (nbNPLRef + nbPatentRef) / nbFiles));
+            // System.out.println("Number of search report citations: " + srCitations);
+            System.out.println(
+                    "Average number of references: "
+                            + TextUtilities.formatTwoDecimals((double) (nbNPLRef + nbPatentRef) / nbFiles));
             System.out.println("Max number of references in file: " + maxRef);
 
             if ((setName == null) || (setName.length() == 0)) {
@@ -455,13 +469,14 @@ public class PatentParserTrainer extends AbstractTrainer {
         }
     }
 
-    public void addFeatures(List<LayoutToken> tokens,
-                            List<String> labels,
-                            Writer writer,
-                            List<OffsetPosition> journalPositions,
-                            List<OffsetPosition> abbrevJournalPositions,
-                            List<OffsetPosition> conferencePositions,
-                            List<OffsetPosition> publisherPositions) {
+    public void addFeatures(
+            List<LayoutToken> tokens,
+            List<String> labels,
+            Writer writer,
+            List<OffsetPosition> journalPositions,
+            List<OffsetPosition> abbrevJournalPositions,
+            List<OffsetPosition> conferencePositions,
+            List<OffsetPosition> publisherPositions) {
         try {
 
             int posit = 0;
@@ -475,7 +490,7 @@ public class PatentParserTrainer extends AbstractTrainer {
             boolean isPublisherToken;
             boolean skipTest;
             int n = 0;
-            for(LayoutToken token : tokens) {
+            for (LayoutToken token : tokens) {
                 String label = labels.get(n);
 
                 isJournalToken = false;
@@ -499,8 +514,7 @@ public class PatentParserTrainer extends AbstractTrainer {
                     }
                     if (!skipTest) {
                         for (int i = currentJournalPositions; i < journalPositions.size(); i++) {
-                            if ((journalPositions.get(i).start <= posit) &&
-                                    (journalPositions.get(i).end >= posit)) {
+                            if ((journalPositions.get(i).start <= posit) && (journalPositions.get(i).end >= posit)) {
                                 isJournalToken = true;
                                 currentJournalPositions = i;
                                 break;
@@ -522,8 +536,8 @@ public class PatentParserTrainer extends AbstractTrainer {
                     }
                     if (!skipTest) {
                         for (int i = currentAbbrevJournalPositions; i < abbrevJournalPositions.size(); i++) {
-                            if ((abbrevJournalPositions.get(i).start <= posit) &&
-                                    (abbrevJournalPositions.get(i).end >= posit)) {
+                            if ((abbrevJournalPositions.get(i).start <= posit)
+                                    && (abbrevJournalPositions.get(i).end >= posit)) {
                                 isAbbrevJournalToken = true;
                                 currentAbbrevJournalPositions = i;
                                 break;
@@ -545,8 +559,8 @@ public class PatentParserTrainer extends AbstractTrainer {
                     }
                     if (!skipTest) {
                         for (int i = currentConferencePositions; i < conferencePositions.size(); i++) {
-                            if ((conferencePositions.get(i).start <= posit) &&
-                                    (conferencePositions.get(i).end >= posit)) {
+                            if ((conferencePositions.get(i).start <= posit)
+                                    && (conferencePositions.get(i).end >= posit)) {
                                 isConferenceToken = true;
                                 currentConferencePositions = i;
                                 break;
@@ -568,8 +582,8 @@ public class PatentParserTrainer extends AbstractTrainer {
                     }
                     if (!skipTest) {
                         for (int i = currentPublisherPositions; i < publisherPositions.size(); i++) {
-                            if ((publisherPositions.get(i).start <= posit) &&
-                                    (publisherPositions.get(i).end >= posit)) {
+                            if ((publisherPositions.get(i).start <= posit)
+                                    && (publisherPositions.get(i).end >= posit)) {
                                 isPublisherToken = true;
                                 currentPublisherPositions = i;
                                 break;
@@ -581,14 +595,15 @@ public class PatentParserTrainer extends AbstractTrainer {
                         }
                     }
                 }
-                FeaturesVectorReference featuresVector =
-                        FeaturesVectorReference.addFeaturesPatentReferences(token, label, 
-                                tokens.size(),
-                                posit,
-                                isJournalToken,
-                                isAbbrevJournalToken,
-                                isConferenceToken,
-                                isPublisherToken);
+                FeaturesVectorReference featuresVector = FeaturesVectorReference.addFeaturesPatentReferences(
+                        token,
+                        label,
+                        tokens.size(),
+                        posit,
+                        isJournalToken,
+                        isAbbrevJournalToken,
+                        isConferenceToken,
+                        isPublisherToken);
                 if (featuresVector.label == null)
                     continue;
                 writer.write(featuresVector.printVector());
@@ -604,7 +619,8 @@ public class PatentParserTrainer extends AbstractTrainer {
     /**
      * Command line execution.
      *
-     * @param args Command line arguments.
+     * @param args
+     * Command line arguments.
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {

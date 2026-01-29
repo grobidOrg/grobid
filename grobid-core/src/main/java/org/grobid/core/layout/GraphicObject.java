@@ -1,6 +1,8 @@
 package org.grobid.core.layout;
 
 import java.io.File;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * Class for representing graphical objects occurring within a document.
@@ -21,9 +23,10 @@ public class GraphicObject {
 
     private boolean mask = false;
 
-    // in case of vector image, we don't have a boundingBox from pdfalto, simply the page information
+    // in case of vector image, we don't have a boundingBox from pdfalto, simply the
+    // page information
     private int page = -1;
-    
+
     public boolean used;
 
     public GraphicObject() {
@@ -35,16 +38,16 @@ public class GraphicObject {
     }
 
     /**
-     * Return the full path of the file corresponding to the graphic object, useful
-     * as internal implementation information only
+     * Return the full path of the file corresponding to the graphic object, useful as internal implementation
+     * information only
      */
     public String getFilePath() {
         return this.filePath;
     }
 
     /**
-     * Return an URI for the file corresponding to the graphic object, in practice a 
-     * portable relative path usable for data exchange
+     * Return an URI for the file corresponding to the graphic object, in practice a portable relative path usable for
+     * data exchange
      */
     public String getURI() {
         if (filePath == null) {
@@ -52,10 +55,10 @@ public class GraphicObject {
         }
         int ind = filePath.lastIndexOf("/");
         if (ind != -1) {
-            //int ind2 = filePath.substring(0, ind-1).lastIndexOf("/");
-            //if (ind2 != -1)
-            //    return filePath.substring(ind2+1, filePath.length());
-            return filePath.substring(ind+1, filePath.length());
+            // int ind2 = filePath.substring(0, ind-1).lastIndexOf("/");
+            // if (ind2 != -1)
+            // return filePath.substring(ind2+1, filePath.length());
+            return filePath.substring(ind + 1, filePath.length());
         }
 
         return new File(filePath).getName();
@@ -89,9 +92,9 @@ public class GraphicObject {
         this.endPosition = endPosition;
     }
 
-    /*public int getBlockNumber() {
-        return blockNumber;
-    }*/
+    /*
+     * public int getBlockNumber() { return blockNumber; }
+     */
 
     public void setBlockNumber(int blockNumber) {
         this.blockNumber = blockNumber;
@@ -100,53 +103,47 @@ public class GraphicObject {
     public double getX() {
         if (boundingBox != null)
             return boundingBox.getX();
-        else 
+        else
             return 0.0;
     }
 
     public double getY() {
         if (boundingBox != null)
             return boundingBox.getY();
-        else 
+        else
             return 0.0;
     }
 
     public double getWidth() {
         if (boundingBox != null)
             return boundingBox.getWidth();
-        else 
+        else
             return 0.0;
     }
 
     public double getHeight() {
         if (boundingBox != null)
             return boundingBox.getHeight();
-        else 
+        else
             return 0.0;
     }
 
     public int getPage() {
         if (boundingBox != null)
             return boundingBox.getPage();
-        else 
+        else
             return page;
     }
 
-    /*public void setX(double x1) {
-        this.x = Math.abs(x1);
-    }
-
-    public void setY(double y1) {
-        this.y = Math.abs(y1);
-    }
-
-    public void setWidth(double x2) {
-        this.width = Math.abs(x2);
-    }
-
-    public void setHeight(double y2) {
-        this.height = Math.abs(y2);
-    }*/
+    /*
+     * public void setX(double x1) { this.x = Math.abs(x1); }
+     *
+     * public void setY(double y1) { this.y = Math.abs(y1); }
+     *
+     * public void setWidth(double x2) { this.width = Math.abs(x2); }
+     *
+     * public void setHeight(double y2) { this.height = Math.abs(y2); }
+     */
 
     public void setPage(int page) {
         this.page = page;
@@ -160,35 +157,14 @@ public class GraphicObject {
         boundingBox = box;
     }
 
+    @Override
     public String toString() {
-        StringBuilder res = new StringBuilder();
-        if (type == GraphicObjectType.BITMAP) {
-            res.append("Graphic Bitmap [");
-        } else if (type == GraphicObjectType.VECTOR) {
-            res.append("Vector Graphic [");
-        } else if (type == GraphicObjectType.VECTOR_BOX) {
-            res.append("Vector Box: [");
-        } else {
-            res.append("Unknown [");
-        }
-
-        if (startPosition != -1) {
-            res.append(startPosition);
-        }
-        res.append("-");
-        if (endPosition != -1) {
-            res.append(endPosition);
-        }
-        res.append("]: \t");
-        if (filePath != null) {
- 			res.append(filePath + "\t");
-        } else {
-           	res.append("\t");
-        }
-
-        res.append("(" + (boundingBox != null ? boundingBox.toString() : "no bounding box") + "\t");
-
-        return res.toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("type", type)
+                .append("startPosition", startPosition)
+                .append("endPosition", endPosition)
+                .append("filePath", filePath)
+                .append("boundingBox", boundingBox)
+                .toString();
     }
 
     public boolean isUsed() {

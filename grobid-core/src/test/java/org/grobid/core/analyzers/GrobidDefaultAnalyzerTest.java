@@ -20,7 +20,8 @@ public class GrobidDefaultAnalyzerTest {
 
     @Test
     public void testTokenizeWithLayoutToken() {
-        final List<LayoutToken> layoutTokens = target.tokenizeWithLayoutToken("This is a normal \ntext,\n\n\n on several lines.\n");
+        final List<LayoutToken> layoutTokens = target
+                .tokenizeWithLayoutToken("This is a normal \ntext,\n\n\n on several lines.\n");
 
         assertThat(layoutTokens, hasSize(22));
         assertThat(layoutTokens.get(0).getText(), is("This"));

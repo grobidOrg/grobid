@@ -17,7 +17,6 @@ public class TEICitationSaxParserTest {
     TEICitationSaxParser target;
     SAXParserFactory spf;
 
-
     @Before
     public void setUp() throws Exception {
         spf = SAXParserFactory.newInstance();

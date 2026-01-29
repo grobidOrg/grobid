@@ -19,26 +19,26 @@ public class FeaturesVectorFulltext {
     public boolean bold = false;
     public boolean italic = false;
     public String capitalisation = null; // one of INITCAP, ALLCAPS, NOCAPS
-    public String digit;  // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
+    public String digit; // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
     public boolean singleChar = false;
 
-    public String punctType = null; 
+    public String punctType = null;
     // one of NOPUNCT, OPENBRACKET, ENDBRACKET, DOT, COMMA, HYPHEN, QUOTE, PUNCT (default)
 
-    public int relativeDocumentPosition = -1; 
-    public int relativePagePositionChar = -1; 
-    public int relativePagePosition = -1; 
+    public int relativeDocumentPosition = -1;
+    public int relativePagePositionChar = -1;
+    public int relativePagePosition = -1;
 
-	// graphic in closed proximity of the current block
+    // graphic in closed proximity of the current block
     public boolean bitmapAround = false;
     public boolean vectorAround = false;
-	
-	// if a graphic is in close proximity of the current block, characteristics of this graphic 
-    public int closestGraphicHeight = -1; 
-    public int closestGraphicWidth = -1; 
-    public int closestGraphicSurface = -1; 
-	
-    public int spacingWithPreviousBlock = 0; // discretized 
+
+    // if a graphic is in close proximity of the current block, characteristics of this graphic
+    public int closestGraphicHeight = -1;
+    public int closestGraphicWidth = -1;
+    public int closestGraphicSurface = -1;
+
+    public int spacingWithPreviousBlock = 0; // discretized
     public int characterDensity = 0; // discretized
 
     // how the reference callouts are expressed, if known
@@ -47,8 +47,10 @@ public class FeaturesVectorFulltext {
     public boolean superscript = false;
 
     public String printVector() {
-        if (string == null) return null;
-        if (string.length() == 0) return null;
+        if (string == null)
+            return null;
+        if (string.length() == 0)
+            return null;
         StringBuffer res = new StringBuffer();
 
         // token string (1)
@@ -69,16 +71,16 @@ public class FeaturesVectorFulltext {
         res.append(" " + TextUtilities.suffix(string, 3));
         res.append(" " + TextUtilities.suffix(string, 4));
 
-		// at this stage, we have written 10 features
+        // at this stage, we have written 10 features
 
         // block information (1)
         res.append(" " + blockStatus);
 
         // line information (1)
         res.append(" " + lineStatus);
-		
-		// line position/identation (1)
-		res.append(" " + alignmentStatus);
+
+        // line position/identation (1)
+        res.append(" " + alignmentStatus);
 
         // font information (1)
         res.append(" " + fontStatus);
@@ -112,7 +114,7 @@ public class FeaturesVectorFulltext {
         else
             res.append(" 0");
 
-		// at this stage, we have written 20 features
+        // at this stage, we have written 20 features
 
         // punctuation information (1)
         res.append(" " + punctType); // in case the token is a punctuation (NO otherwise)
@@ -123,37 +125,34 @@ public class FeaturesVectorFulltext {
         // relative page position (1)
         res.append(" " + relativePagePosition);
 
-		// proximity of a graphic to the current block (2)
+        // proximity of a graphic to the current block (2)
         if (bitmapAround)
             res.append(" 1");
         else
             res.append(" 0");
 
-        /*if (vectorAround)
-            res.append(" 1");
-        else
-            res.append(" 0");*/
-		
+        /*
+         * if (vectorAround) res.append(" 1"); else res.append(" 0");
+         */
+
         // space with previous block, discretised (1)
-        //res.append(" " + spacingWithPreviousBlock);
-        //res.append(" " + 0);
+        // res.append(" " + spacingWithPreviousBlock);
+        // res.append(" " + 0);
 
         // character density of the previous block, discretised (1)
-        //res.append(" " + characterDensity);
-        //res.append(" " + 0);
+        // res.append(" " + characterDensity);
+        // res.append(" " + 0);
 
         // label - for training data (1)
-        /*if (label != null)
-              res.append(" " + label + "\n");
-          else
-              res.append(" 0\n");
-          */
+        /*
+         * if (label != null) res.append(" " + label + "\n"); else res.append(" 0\n");
+         */
 
-        if (calloutType != null) 
+        if (calloutType != null)
             res.append(" " + calloutType);
-        else 
+        else
             res.append(" UNKNOWN");
- 
+
         if (calloutKnown)
             res.append(" 1");
         else

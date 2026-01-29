@@ -1,6 +1,5 @@
 package org.grobid.core.layout;
 
-import org.grobid.core.utilities.UnicodeUtil;
 import org.grobid.core.engines.label.TaggingLabel;
 
 import java.io.Serializable;
@@ -12,10 +11,10 @@ import java.util.List;
  *
  */
 public class LayoutToken implements Comparable<LayoutToken>, Serializable {
-	
-	private static final long serialVersionUID = 1L;
-	
-	private String text = null;
+
+    private static final long serialVersionUID = 1L;
+
+    private String text = null;
     public double y = -1.0;
     public double x = -1.0;
     public double width = 0.0;
@@ -29,14 +28,14 @@ public class LayoutToken implements Comparable<LayoutToken>, Serializable {
     private int page = -1;
     private boolean newLineAfter;
     private int blockPtr;
-	private int offset = 0;
+    private int offset = 0;
     private boolean subscript = false;
     private boolean superscript = false;
-	
-	/**
-	 * All TaggingLabel accumulated for this token
-	 */
-	private ArrayList<TaggingLabel> labels = null;
+
+    /**
+     * All TaggingLabel accumulated for this token
+     */
+    private ArrayList<TaggingLabel> labels = null;
 
     public LayoutToken() {
     }
@@ -67,15 +66,15 @@ public class LayoutToken implements Comparable<LayoutToken>, Serializable {
         // deep copy of the TaggingLabel list
         if (token.labels != null) {
             this.labels = new ArrayList<TaggingLabel>();
-            for(TaggingLabel l : token.labels) {
+            for (TaggingLabel l : token.labels) {
                 this.labels.add(l);
             }
         }
     }
-    
+
     public LayoutToken(String text, TaggingLabel label) {
-    	this(text);
-    	this.addLabel(label);
+        this(text);
+        this.addLabel(label);
     }
 
     public void setFont(String f) {
@@ -87,8 +86,8 @@ public class LayoutToken implements Comparable<LayoutToken>, Serializable {
     }
 
     public void setText(String f) {
-        //text = f.replaceAll("\n", "");
-		text = f;
+        // text = f.replaceAll("\n", "");
+        text = f;
     }
 
     public void setRotation(boolean b) {
@@ -223,39 +222,39 @@ public class LayoutToken implements Comparable<LayoutToken>, Serializable {
         this.blockPtr = blockPtr;
     }
 
-	public int getOffset() {
-		return offset;
-	}
-	
-	public void setOffset(int offset) {
-		this.offset = offset;
-	}
-	
-	/**
-	 * Get all TaggingLabel accumulated for this token
-	 */
-	public List<TaggingLabel> getLabels() {
-		if (this.labels == null)
-			return new ArrayList<TaggingLabel>();
-		return this.labels;
-	}
-	
-	/**
-	 * Check if a given TaggingLabel is associated with this token
-	 */
-	public boolean hasLabel(TaggingLabel label) {
-		return this.labels.contains(label);
-	}
-	
-	/**
-	 * Add a TaggingLabel to this token
-	 */
-	public void addLabel(TaggingLabel label) {
-		if (this.labels == null)
-			this.labels = new ArrayList<TaggingLabel>();
-		if (!hasLabel(label))
-			this.labels.add(label);
-	}
+    public int getOffset() {
+        return offset;
+    }
+
+    public void setOffset(int offset) {
+        this.offset = offset;
+    }
+
+    /**
+     * Get all TaggingLabel accumulated for this token
+     */
+    public List<TaggingLabel> getLabels() {
+        if (this.labels == null)
+            return new ArrayList<TaggingLabel>();
+        return this.labels;
+    }
+
+    /**
+     * Check if a given TaggingLabel is associated with this token
+     */
+    public boolean hasLabel(TaggingLabel label) {
+        return this.labels.contains(label);
+    }
+
+    /**
+     * Add a TaggingLabel to this token
+     */
+    public void addLabel(TaggingLabel label) {
+        if (this.labels == null)
+            this.labels = new ArrayList<TaggingLabel>();
+        if (!hasLabel(label))
+            this.labels.add(label);
+    }
 
     @Override
     public String toString() {
@@ -291,18 +290,16 @@ public class LayoutToken implements Comparable<LayoutToken>, Serializable {
         if (y != token2.y) {
             if (y < token2.y)
                 return -1;
-            else 
+            else
                 return 1;
-        }
-        else if (x != token2.x) {
+        } else if (x != token2.x) {
             if (x < token2.x)
                 return -1;
-            else 
+            else
                 return 1;
-        }
-        else {
-            double area1 = height*width;
-            double area2 = token2.height*token2.width;
+        } else {
+            double area1 = height * width;
+            double area2 = token2.height * token2.width;
 
             return Double.compare(area1, area2);
         }

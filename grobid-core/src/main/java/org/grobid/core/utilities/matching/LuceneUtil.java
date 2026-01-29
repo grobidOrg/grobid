@@ -36,17 +36,18 @@ public class LuceneUtil {
         return Joiner.on(' ').join(tokens);
     }
 
-
     /**
      * Convert a Reader to a List of Tokens.
      *
-     * @param analyzer the Analyzer to use
-     * @param reader   the reader to feed to the Analyzer
+     * @param analyzer
+     * the Analyzer to use
+     * @param reader
+     * the reader to feed to the Analyzer
      * @return a List of tokens
-     * @throws java.io.IOException lucene exceptions
+     * @throws java.io.IOException
+     * lucene exceptions
      */
-    private static List<String> readerToTokens(final Analyzer analyzer,
-                                               final Reader reader) throws IOException {
+    private static List<String> readerToTokens(final Analyzer analyzer, final Reader reader) throws IOException {
 
         final List<String> coll = new ArrayList<String>();
         final TokenStream ts = analyzer.tokenStream("", reader);

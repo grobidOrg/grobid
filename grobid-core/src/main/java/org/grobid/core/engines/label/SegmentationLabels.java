@@ -2,7 +2,7 @@ package org.grobid.core.engines.label;
 
 import org.grobid.core.GrobidModels;
 
-public class SegmentationLabels extends TaggingLabels{
+public class SegmentationLabels extends TaggingLabels {
     /**
      * <pre>
      * cover page <cover>,
@@ -47,7 +47,8 @@ public class SegmentationLabels extends TaggingLabels{
     public static final TaggingLabel PAGE_NUMBER = new TaggingLabelImpl(GrobidModels.SEGMENTATION, PAGE_NUMBER_LABEL);
     public static final TaggingLabel ANNEX = new TaggingLabelImpl(GrobidModels.SEGMENTATION, ANNEX_LABEL);
     public static final TaggingLabel REFERENCES = new TaggingLabelImpl(GrobidModels.SEGMENTATION, REFERENCES_LABEL);
-    public static final TaggingLabel ACKNOWLEDGEMENT = new TaggingLabelImpl(GrobidModels.SEGMENTATION, ACKNOWLEDGEMENT_LABEL);
+    public static final TaggingLabel ACKNOWLEDGEMENT = new TaggingLabelImpl(GrobidModels.SEGMENTATION,
+            ACKNOWLEDGEMENT_LABEL);
 
     public static final TaggingLabel AVAILABILITY = new TaggingLabelImpl(GrobidModels.SEGMENTATION, AVAILABILITY_LABEL);
     public static final TaggingLabel FUNDING = new TaggingLabelImpl(GrobidModels.SEGMENTATION, FUNDING_LABEL);

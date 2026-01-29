@@ -57,14 +57,14 @@ public class LabelResult {
     }
 
     public String toString() {
-        return String.format("%-20s %-12s %-12s %-12s %-12s %-7s\n",
-            label,
-            TextUtilities.formatTwoDecimals(getAccuracy() * 100),
-            TextUtilities.formatTwoDecimals(getPrecision() * 100),
-            TextUtilities.formatTwoDecimals(getRecall() * 100),
-            TextUtilities.formatTwoDecimals(getF1Score() * 100),
-            String.valueOf(getSupport())
-        );
+        return String.format(
+                "%-20s %-12s %-12s %-12s %-12s %-7s\n",
+                label,
+                TextUtilities.formatTwoDecimals(getAccuracy() * 100),
+                TextUtilities.formatTwoDecimals(getPrecision() * 100),
+                TextUtilities.formatTwoDecimals(getRecall() * 100),
+                TextUtilities.formatTwoDecimals(getF1Score() * 100),
+                String.valueOf(getSupport()));
     }
 
     public long getSupport() {

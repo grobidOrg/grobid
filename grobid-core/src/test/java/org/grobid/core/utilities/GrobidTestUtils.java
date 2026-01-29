@@ -15,13 +15,17 @@ public class GrobidTestUtils {
     }
 
     /**
-     * Utility method to generate a hypothetical result from wapiti.
-     * Useful for testing the extraction of the sequence labeling.
+     * Utility method to generate a hypothetical result from wapiti. Useful for testing the extraction of the sequence
+     * labeling.
      *
-     * @param labels label maps. A list of Triples, containing label (left), start_index (middle) and end_index exclusive (right)
+     * @param labels
+     * label maps. A list of Triples, containing label (left), start_index (middle) and end_index exclusive (right)
      * @return a string containing the resulting features + labels returned by wapiti
      */
-    public static String getWapitiResult(List<String> features, List<Triple<String, Integer, Integer>> labels, String separator) {
+    public static String getWapitiResult(
+            List<String> features,
+            List<Triple<String, Integer, Integer>> labels,
+            String separator) {
 
         List<String> labeled = new ArrayList<>();
         int idx = 0;

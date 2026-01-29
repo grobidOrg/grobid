@@ -80,7 +80,8 @@ public class CntManagerImplTest {
         final Map<String, Long> counterFigures = allCounters.get("org.grobid.core.engines.counters.FigureCounters");
         assertThat(counterFigures.size(), is(2));
 
-        final Map<String, Long> counterCitations = allCounters.get("org.grobid.core.engines.counters.CitationParserCounters");
+        final Map<String, Long> counterCitations = allCounters
+                .get("org.grobid.core.engines.counters.CitationParserCounters");
         assertThat(counterCitations.size(), is(2));
         assertThat(counterCitations.get("SEGMENTED_REFERENCES"), is(4l));
         assertThat(counterCitations.get("EMPTY_REFERENCES_BLOCKS"), is(1l));
@@ -92,9 +93,13 @@ public class CntManagerImplTest {
         target.i(TaggingLabels.ITEM);
         assertThat(target.cnt(TaggingLabels.ITEM), is(1l));
 
-        assertThat(target.cnt(FigureCounters.SKIPPED_DUE_TO_MISMATCH_OF_CAPTIONS_AND_VECTOR_AND_BITMAP_GRAPHICS), is(0l));
+        assertThat(
+                target.cnt(FigureCounters.SKIPPED_DUE_TO_MISMATCH_OF_CAPTIONS_AND_VECTOR_AND_BITMAP_GRAPHICS),
+                is(0l));
         target.i(FigureCounters.SKIPPED_DUE_TO_MISMATCH_OF_CAPTIONS_AND_VECTOR_AND_BITMAP_GRAPHICS);
-        assertThat(target.cnt(FigureCounters.SKIPPED_DUE_TO_MISMATCH_OF_CAPTIONS_AND_VECTOR_AND_BITMAP_GRAPHICS), is(1l));
+        assertThat(
+                target.cnt(FigureCounters.SKIPPED_DUE_TO_MISMATCH_OF_CAPTIONS_AND_VECTOR_AND_BITMAP_GRAPHICS),
+                is(1l));
     }
 
     @Test
@@ -135,7 +140,8 @@ public class CntManagerImplTest {
 
         target.i(TaggingLabels.CITATION_MARKER, 20);
         assertThat(target.getCounter(TaggingLabels.CITATION_MARKER).cnt(), is(20l));
-        final Class<? extends Countable> countableClass = (Class<? extends Countable>) Class.forName(TaggingLabels.CITATION_MARKER.getClass().getName());
+        final Class<? extends Countable> countableClass = (Class<? extends Countable>) Class
+                .forName(TaggingLabels.CITATION_MARKER.getClass().getName());
         assertThat(target.getCounters(countableClass).size(), is(1));
 
         final String[] tables = target.getCounters("table").keySet().toArray(new String[0]);
@@ -145,12 +151,16 @@ public class CntManagerImplTest {
 
     @Test
     public void getCounterEnclosingClass_NoEnclosingClass_shouldWork() throws Exception {
-        assertThat(target.getCounterEnclosingName(TaggingLabels.CITATION_MARKER), is("org.grobid.core.engines.label.TaggingLabelImpl"));
+        assertThat(
+                target.getCounterEnclosingName(TaggingLabels.CITATION_MARKER),
+                is("org.grobid.core.engines.label.TaggingLabelImpl"));
     }
 
     @Test
     public void getCounterEnclosingClass_EnclosingClass_sholdWork() throws Exception {
-        assertThat(target.getCounterEnclosingName(FigureCounters.TOO_MANY_FIGURES_PER_PAGE), is("org.grobid.core.engines.counters.FigureCounters"));
+        assertThat(
+                target.getCounterEnclosingName(FigureCounters.TOO_MANY_FIGURES_PER_PAGE),
+                is("org.grobid.core.engines.counters.FigureCounters"));
     }
 
 }

@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-
 public class TEISegmentationArticleLightSaxParser extends TEISegmentationSaxParser {
 
     private static final Logger logger = LoggerFactory.getLogger(TEISegmentationArticleLightSaxParser.class);
@@ -21,10 +20,9 @@ public class TEISegmentationArticleLightSaxParser extends TEISegmentationSaxPars
     private String upperTag = null;
     private List<String> labeled = null; // store line by line the labeled data
 
-
     public TEISegmentationArticleLightSaxParser() {
         labeled = new ArrayList<String>();
-        //currentTags = new Stack<String>();
+        // currentTags = new Stack<String>();
         accumulator = new StringBuffer();
     }
 
@@ -34,7 +32,7 @@ public class TEISegmentationArticleLightSaxParser extends TEISegmentationSaxPars
 
     public String getText() {
         if (accumulator != null) {
-            //System.out.println(accumulator.toString().trim());
+            // System.out.println(accumulator.toString().trim());
             return accumulator.toString().trim();
         } else {
             return null;
@@ -45,34 +43,21 @@ public class TEISegmentationArticleLightSaxParser extends TEISegmentationSaxPars
         return labeled;
     }
 
-    public void endElement(java.lang.String uri,
-                           java.lang.String localName,
-                           java.lang.String qName) throws SAXException {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
         if ((!qName.equals("lb")) && (!qName.equals("pb"))) {
             writeData(qName, currentTag);
         }
-        if (qName.equals("body") ||
-            qName.equals("cover") ||
-            qName.equals("front") ||
-            qName.equals("div") ||
-            qName.equals("toc") ||
-            qName.equals("other") ||
-            qName.equals("listBibl")) {
+        if (qName.equals("body") || qName.equals("cover") || qName.equals("front") || qName.equals("div")
+                || qName.equals("toc") || qName.equals("other") || qName.equals("listBibl")) {
             currentTag = null;
             upperTag = null;
-        } else if (qName.equals("note") ||
-            qName.equals("page") ||
-            qName.equals("pages") ||
-            qName.equals("titlePage") ) {
+        } else if (qName.equals("note") || qName.equals("page") || qName.equals("pages") || qName.equals("titlePage")) {
             currentTag = upperTag;
         }
     }
 
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
-        throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
         if (qName.equals("lb")) {
             accumulator.append(" +L+ ");
         } else if (qName.equals("pb")) {
@@ -87,7 +72,7 @@ public class TEISegmentationArticleLightSaxParser extends TEISegmentationSaxPars
                     writeData(upperQname, upperTag);
                 }
             }
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
 
             if (qName.equals("front")) {
                 currentTag = "<header>";
@@ -121,7 +106,7 @@ public class TEISegmentationArticleLightSaxParser extends TEISegmentationSaxPars
                 currentTag = "<body>";
                 upperTag = null;
                 upperQname = "body";
-            }else if (qName.equals("div")) {
+            } else if (qName.equals("div")) {
                 currentTag = "<body>";
                 upperTag = currentTag;
                 upperQname = "body";
@@ -134,25 +119,23 @@ public class TEISegmentationArticleLightSaxParser extends TEISegmentationSaxPars
             qName = "other";
             surfaceTag = "<other>";
         }
-        if ((qName.equals("front")) || (qName.equals("titlePage")) || (qName.equals("note")) ||
-            (qName.equals("page")) || (qName.equals("pages")) || (qName.equals("body")) ||
-            (qName.equals("listBibl")) || (qName.equals("div")) ||
-            (qName.equals("other")) || (qName.equals("toc"))
-        ) {
+        if ((qName.equals("front")) || (qName.equals("titlePage")) || (qName.equals("note")) || (qName.equals("page"))
+                || (qName.equals("pages")) || (qName.equals("body")) || (qName.equals("listBibl"))
+                || (qName.equals("div")) || (qName.equals("other")) || (qName.equals("toc"))) {
             String text = getText();
             text = text.replace("\n", " ");
             text = text.replace("\r", " ");
             text = text.replace("  ", " ");
             boolean begin = true;
 
-            //System.out.println(text);
+            // System.out.println(text);
             // we segment the text line by line first
-            //StringTokenizer st = new StringTokenizer(text, "\n", true);
+            // StringTokenizer st = new StringTokenizer(text, "\n", true);
             String[] tokens = text.split("\\+L\\+");
-            //while (st.hasMoreTokens()) {
+            // while (st.hasMoreTokens()) {
             boolean page = false;
             for (int p = 0; p < tokens.length; p++) {
-                //String line = st.nextToken().trim();
+                // String line = st.nextToken().trim();
                 String line = tokens[p].trim();
                 if (line.length() == 0)
                     continue;
@@ -160,12 +143,12 @@ public class TEISegmentationArticleLightSaxParser extends TEISegmentationSaxPars
                     continue;
                 if (line.indexOf("+PAGE+") != -1) {
                     // page break should be a distinct feature
-                    //labeled.add("@newpage\n");
+                    // labeled.add("@newpage\n");
                     line = line.replace("+PAGE+", "");
                     page = true;
                 }
 
-                //StringTokenizer st = new StringTokenizer(line, " \t");
+                // StringTokenizer st = new StringTokenizer(line, " \t");
                 StringTokenizer st = new StringTokenizer(line, " \t\f\u00A0");
                 if (!st.hasMoreTokens())
                     continue;
@@ -176,7 +159,8 @@ public class TEISegmentationArticleLightSaxParser extends TEISegmentationSaxPars
 
                 if (surfaceTag == null) {
                     // this token belongs to a chunk to ignored
-                    //System.out.println("\twarning: surfaceTag is null for token '"+tok+"' - it will be tagged with label <other>");
+                    // System.out.println("\twarning: surfaceTag is null for token '"+tok+"' - it will be tagged with
+                    // label <other>");
                     surfaceTag = "<other>";
                 }
 

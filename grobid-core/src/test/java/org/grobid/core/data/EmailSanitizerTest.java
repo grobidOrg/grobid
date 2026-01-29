@@ -17,12 +17,11 @@ public class EmailSanitizerTest {
         a(l("abc@gmail.com", "z.jang@gmail.com"), "abc/z.jang@gmail.com");
     }
 
-
-    private void a(String expected, String actual)  {
+    private void a(String expected, String actual) {
         assertEquals(l(expected), sanitizer.splitAndClean(l(actual)));
     }
 
-    private void a(List<String> expected, String actual)  {
+    private void a(List<String> expected, String actual) {
         assertEquals(expected, sanitizer.splitAndClean(l(actual)));
     }
 

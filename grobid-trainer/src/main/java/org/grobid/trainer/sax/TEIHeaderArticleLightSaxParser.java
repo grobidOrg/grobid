@@ -10,11 +10,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import static org.grobid.core.engines.label.TaggingLabels.AVAILABILITY_LABEL;
-
 /**
- * SAX parser for the TEI format header data encoded for training. Normally all training data for the header model 
- * should be in this unique format (which replaces for instance the CORA format). Segmentation of tokens must be 
+ * SAX parser for the TEI format header data encoded for training. Normally all training data for the header model
+ * should be in this unique format (which replaces for instance the CORA format). Segmentation of tokens must be
  * identical as the one from pdf2xml files so that training and online input tokens are aligned.
  *
  * @author Patrice Lopez
@@ -32,12 +30,28 @@ public class TEIHeaderArticleLightSaxParser extends TEIHeaderSaxParser {
     private ArrayList<String> labeled = null; // store line by line the labeled data
 
     private List<String> endTags = Arrays.asList("titlePart", "docAuthor", "date", "idno");
-    private List<String> tags = Arrays.asList("titlePart", "note", "docAuthor", "affiliation", "address", "email", "idno",
-        "date", "keywords", "keyword", "reference", "ptr", "div", "editor", "meeting");
+    private List<String> tags = Arrays.asList(
+            "titlePart",
+            "note",
+            "docAuthor",
+            "affiliation",
+            "address",
+            "email",
+            "idno",
+            "date",
+            "keywords",
+            "keyword",
+            "reference",
+            "ptr",
+            "div",
+            "editor",
+            "meeting");
 
-    private List<String> intermediaryTags = Arrays.asList("byline", "front", "lb", "tei", "teiHeader", "fileDesc", "text", "byline", "docTitle", "p");
+    private List<String> intermediaryTags = Arrays
+            .asList("byline", "front", "lb", "tei", "teiHeader", "fileDesc", "text", "byline", "docTitle", "p");
 
-    private List<String> ignoredTags = Arrays.asList("location", "version", "web", "degree", "page", "title", "phone", "publisher");
+    private List<String> ignoredTags = Arrays
+            .asList("location", "version", "web", "degree", "page", "title", "phone", "publisher");
 
     public TEIHeaderArticleLightSaxParser() {
         labeled = new ArrayList<>();
@@ -65,9 +79,7 @@ public class TEIHeaderArticleLightSaxParser extends TEIHeaderSaxParser {
         return labeled;
     }
 
-    public void endElement(String uri,
-                           String localName,
-                           String qName) throws SAXException {
+    public void endElement(String uri, String localName, String qName) throws SAXException {
         if (endTags.contains(qName)) {
             writeData();
             accumulator.setLength(0);
@@ -86,15 +98,11 @@ public class TEIHeaderArticleLightSaxParser extends TEIHeaderSaxParser {
         } else if (ignoredTags.contains(qName)) {
             // do nothing
         } else {
-//            System.out.println(" **** Warning **** Unexpected closing tag " + qName);
+            // System.out.println(" **** Warning **** Unexpected closing tag " + qName);
         }
     }
 
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
-            throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
         if (qName.equals("lb")) {
             accumulator.append(" ");
         } else {
@@ -121,7 +129,7 @@ public class TEIHeaderArticleLightSaxParser extends TEIHeaderSaxParser {
             // do nothing
             currentTag = "<other>";
         } else {
-//            System.out.println("Warning: Unexpected starting tag " + qName);
+            // System.out.println("Warning: Unexpected starting tag " + qName);
             currentTag = "<other>";
         }
     }
@@ -137,7 +145,7 @@ public class TEIHeaderArticleLightSaxParser extends TEIHeaderSaxParser {
         boolean begin = true;
         while (st.hasMoreTokens()) {
             String tok = st.nextToken().trim();
-            if (tok.length() == 0) 
+            if (tok.length() == 0)
                 continue;
 
             String content = tok;
@@ -154,5 +162,5 @@ public class TEIHeaderArticleLightSaxParser extends TEIHeaderSaxParser {
         }
         accumulator.setLength(0);
     }
-    
+
 }

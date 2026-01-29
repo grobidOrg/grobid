@@ -27,11 +27,9 @@ class FundingAcknowledgementParserIntegrationTest {
 
     @Test
     fun testXmlFragmentProcessing_withoutSentenceSegmentation_shouldReturnSameXML() {
-
         val input = "\n\t\t\t<div type=\"acknowledgement\">\n<div><head>Acknowledgments</head><p>This research was " +
             "funded by the NASA Land-Cover and Land-Use Change Program (Grant Number: 80NSSC18K0315), the NASA " +
             "Carbon Monitoring System (Grant Number: 80NSSC20K0022), and </p></div>\n\t\t\t</div>\n\n"
-
 
         // Expected
 //        val output = "\n\t\t\t<div type=\"acknowledgement\">\n<div><head>Acknowledgments</head><p>This research was " +
@@ -266,7 +264,7 @@ class FundingAcknowledgementParserIntegrationTest {
         @JvmStatic
         @BeforeClass
         @Throws(java.lang.Exception::class)
-        fun setInitialContext(): Unit {
+        fun setInitialContext() {
             AbstractEngineFactory.init()
         }
     }

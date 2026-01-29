@@ -17,8 +17,9 @@ public class DummyTagger implements GenericTagger {
     public static final String DUMMY_LABEL = "<dummy>";
 
     public DummyTagger(GrobidModel model) {
-        if(!model.equals(GrobidModels.DUMMY)) {
-            throw new GrobidException("Cannot use a non-dummy model with the dummy tagger. All dummies or no dummies. ");
+        if (!model.equals(GrobidModels.DUMMY)) {
+            throw new GrobidException(
+                    "Cannot use a non-dummy model with the dummy tagger. All dummies or no dummies. ");
         }
     }
 

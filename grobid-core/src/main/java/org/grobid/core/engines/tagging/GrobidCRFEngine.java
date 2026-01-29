@@ -3,13 +3,10 @@ package org.grobid.core.engines.tagging;
 import java.util.Arrays;
 
 /**
- * Sequence labeling engine in GROBID 
+ * Sequence labeling engine in GROBID
  */
 public enum GrobidCRFEngine {
-    WAPITI("wapiti"),
-    CRFPP("crf"),
-    DELFT("delft"),
-    DUMMY("dummy");
+    WAPITI("wapiti"), CRFPP("crf"), DELFT("delft"), DUMMY("dummy");
 
     private final String ext;
 
@@ -32,9 +29,10 @@ public enum GrobidCRFEngine {
                 return e;
             }
         }
-        throw new IllegalArgumentException("No Grobid sequence labeling engine with name '" + name +
-                "', possible values are: " + Arrays.toString(values()));
+        throw new IllegalArgumentException("No Grobid sequence labeling engine with name '"
+                + name
+                + "', possible values are: "
+                + Arrays.toString(values()));
     }
-
 
 }

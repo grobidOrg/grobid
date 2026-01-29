@@ -40,7 +40,6 @@ class FullTextParserTest {
         target = FullTextParser(EngineParsers())
     }
 
-
     companion object {
         @JvmStatic
         @BeforeClass
@@ -82,7 +81,6 @@ class FullTextParserTest {
                 "for\tfor\tf\tfo\tfor\tfor\tr\tor\tfor\tfor\tBLOCKIN\tLINEIN\tLINEINDENT\tNEWFONT\tSAMEFONTSIZE\t0\t0\tNOCAPS\tNODIGIT\t0\tNOPUNCT\t10\t3\t0\tNUMBER\t0\t0\t<figure>\n" +
                 "YBCO\tybco\tY\tYB\tYBC\tYBCO\tO\tCO\tBCO\tYBCO\tBLOCKIN\tLINEIN\tLINEINDENT\tSAMEFONT\tSAMEFONTSIZE\t0\t0\tALLCAP\tNODIGIT\t0\tNOPUNCT\t10\t3\t0\tNUMBER\t0\t0\t<figure>\n\n"
 
-
         val stringStringPair = target!!.processTrainingDataFigures(rese, tokens, "123")
 
         val tei = stringStringPair.left
@@ -95,7 +93,7 @@ class FullTextParserTest {
         assertThat(reconstructedText, CoreMatchers.`is`("FIG . 1 . λ ( T ) vs . T for YBCO"))
         assertThat(
             tokenisation.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray().size,
-            CoreMatchers.`is`(13)
+            CoreMatchers.`is`(13),
         )
     }
 
@@ -123,7 +121,6 @@ class FullTextParserTest {
                 "for\tfor\tf\tfo\tfor\tfor\tr\tor\tfor\tfor\tBLOCKIN\tLINEIN\tLINEINDENT\tNEWFONT\tSAMEFONTSIZE\t0\t0\tNOCAPS\tNODIGIT\t0\tNOPUNCT\t10\t3\t0\tNUMBER\t0\t0\t<figure>\n" +
                 "YBCO\tybco\tY\tYB\tYBC\tYBCO\tO\tCO\tBCO\tYBCO\tBLOCKIN\tLINEIN\tLINEINDENT\tSAMEFONT\tSAMEFONTSIZE\t0\t0\tALLCAP\tNODIGIT\t0\tNOPUNCT\t10\t3\t0\tNUMBER\t0\t0\t<figure>\n\n"
 
-
         val stringStringPair = target!!.processTrainingDataFigures(rese, tokens, "123")
 
         val tei = stringStringPair.left
@@ -143,7 +140,7 @@ class FullTextParserTest {
         assertThat(output[1], CoreMatchers.`is`("vs . T for YBCO"))
         assertThat(
             tokenisation.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray().size,
-            CoreMatchers.`is`(15)
+            CoreMatchers.`is`(15),
         )
     }
 
@@ -171,7 +168,6 @@ class FullTextParserTest {
                 "for\tfor\tf\tfo\tfor\tfor\tr\tor\tfor\tfor\tBLOCKIN\tLINEIN\tLINEINDENT\tNEWFONT\tSAMEFONTSIZE\t0\t0\tNOCAPS\tNODIGIT\t0\tNOPUNCT\t10\t3\t0\tNUMBER\t0\t0\t<table>\n" +
                 "YBCO\tybco\tY\tYB\tYBC\tYBCO\tO\tCO\tBCO\tYBCO\tBLOCKIN\tLINEIN\tLINEINDENT\tSAMEFONT\tSAMEFONTSIZE\t0\t0\tALLCAP\tNODIGIT\t0\tNOPUNCT\t10\t3\t0\tNUMBER\t0\t0\t<table>\n\n"
 
-
         val stringStringPair = target!!.processTrainingDataTables(rese, tokens, "123")
 
         val tei = stringStringPair.left
@@ -184,7 +180,7 @@ class FullTextParserTest {
         assertThat(reconstructedText, CoreMatchers.`is`("FIG . 1 . λ ( T ) vs . T for YBCO"))
         assertThat(
             tokenisation.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray().size,
-            CoreMatchers.`is`(13)
+            CoreMatchers.`is`(13),
         )
     }
 
@@ -212,7 +208,6 @@ class FullTextParserTest {
                 "for\tfor\tf\tfo\tfor\tfor\tr\tor\tfor\tfor\tBLOCKIN\tLINEIN\tLINEINDENT\tNEWFONT\tSAMEFONTSIZE\t0\t0\tNOCAPS\tNODIGIT\t0\tNOPUNCT\t10\t3\t0\tNUMBER\t0\t0\t<table>\n" +
                 "YBCO\tybco\tY\tYB\tYBC\tYBCO\tO\tCO\tBCO\tYBCO\tBLOCKIN\tLINEIN\tLINEINDENT\tSAMEFONT\tSAMEFONTSIZE\t0\t0\tALLCAP\tNODIGIT\t0\tNOPUNCT\t10\t3\t0\tNUMBER\t0\t0\t<table>\n\n"
 
-
         val stringStringPair = target!!.processTrainingDataTables(rese, tokens, "123")
 
         val tei = stringStringPair.left
@@ -232,7 +227,7 @@ class FullTextParserTest {
         assertThat(output[1], CoreMatchers.`is`("vs . T for YBCO"))
         assertThat(
             tokenisation.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray().size,
-            CoreMatchers.`is`(15)
+            CoreMatchers.`is`(15),
         )
     }
 
@@ -275,7 +270,7 @@ class FullTextParserTest {
             Arrays.stream(wapitiResults.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray())
                 .map<List<String>> { l: String ->
                     Arrays.stream(
-                        l.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+                        l.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray(),
                     )
                         .collect(Collectors.toList())
                 }
@@ -329,7 +324,7 @@ class FullTextParserTest {
             Arrays.stream(wapitiResults.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray())
                 .map<List<String>> { l: String ->
                     Arrays.stream(
-                        l.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+                        l.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray(),
                     )
                         .collect(Collectors.toList())
                 }
@@ -344,12 +339,14 @@ class FullTextParserTest {
             .collect(Collectors.toList())
 
         val candidatesIndexes = Arrays.asList(
-            13, 42, 67
+            13,
+            42,
+            67,
         )
         val consolidatedTable1ResultCandidateThroughSequence = FullTextParser.consolidateResultCandidateThroughSequence(
             candidatesIndexes,
             wapitiResultsAsList,
-            sequenceTokenWithoutSpacesTable1
+            sequenceTokenWithoutSpacesTable1,
         )
 
         assertThat(consolidatedTable1ResultCandidateThroughSequence, `is`(13))
@@ -365,7 +362,7 @@ class FullTextParserTest {
         val consolidatedTable2ResultCandidateThroughSequence = FullTextParser.consolidateResultCandidateThroughSequence(
             candidatesIndexes,
             wapitiResultsAsList,
-            sequenceTokenWithoutSpacesTable2
+            sequenceTokenWithoutSpacesTable2,
         )
 
         assertThat(consolidatedTable2ResultCandidateThroughSequence, `is`(42))
@@ -381,7 +378,7 @@ class FullTextParserTest {
         val consolidatedTable3ResultCandidateThroughSequence = FullTextParser.consolidateResultCandidateThroughSequence(
             candidatesIndexes,
             wapitiResultsAsList,
-            sequenceTokenWithoutSpacesTable3
+            sequenceTokenWithoutSpacesTable3,
         )
 
         assertThat(consolidatedTable3ResultCandidateThroughSequence, `is`(67))
@@ -401,7 +398,9 @@ class FullTextParserTest {
             Arrays.asList(
                 *lines[0].split("\\s".toRegex())
                     .dropLastWhile { it.isEmpty() }
-                    .toTypedArray()), `is`(Matchers.hasItem("BLOCKSTART"))
+                    .toTypedArray(),
+            ),
+            `is`(Matchers.hasItem("BLOCKSTART")),
         )
     }
 
@@ -413,7 +412,7 @@ class FullTextParserTest {
         assertThat(
             "doc.block[0].tokens[0].text",
             doc.blocks[0].getTokens()[0].text,
-            CoreMatchers.`is`("\n")
+            CoreMatchers.`is`("\n"),
         )
         val documentParts = getWholeDocumentParts(doc)
         val dataAndTokens = FullTextParser.getBodyTextFeatured(doc, documentParts)
@@ -422,24 +421,20 @@ class FullTextParserTest {
         assertThat(
             "lines[0] fields",
             Arrays.asList(*lines[0].split("\\s".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()),
-            `is`(Matchers.hasItem("BLOCKSTART"))
+            `is`(Matchers.hasItem("BLOCKSTART")),
         )
     }
 
-    private fun getWholeDocumentPiece(doc: Document): DocumentPiece {
-        return DocumentPiece(
-            DocumentPointer(0, 0, 0),
-            DocumentPointer(0, doc.tokenizations.size - 1, doc.tokenizations.size - 1)
-        )
-    }
+    private fun getWholeDocumentPiece(doc: Document): DocumentPiece = DocumentPiece(
+        DocumentPointer(0, 0, 0),
+        DocumentPointer(0, doc.tokenizations.size - 1, doc.tokenizations.size - 1),
+    )
 
-    private fun getWholeDocumentParts(doc: Document): SortedSet<DocumentPiece> {
-        return TreeSet(
-            setOf(
-                getWholeDocumentPiece(doc)
-            )
-        )
-    }
+    private fun getWholeDocumentParts(doc: Document): SortedSet<DocumentPiece> = TreeSet(
+        setOf(
+            getWholeDocumentPiece(doc),
+        ),
+    )
 
     @Test
     fun testRevertResultsForBadItems_shouldRemoveOneTable() {
@@ -651,14 +646,12 @@ class FullTextParserTest {
         assertThat(tablesCount, `is`(1))
     }
 
-    private fun convertResultsToList(output: String): MutableList<List<String>> =
-        Arrays.stream(output.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray())
-            .map<List<String>> { l: String ->
-                Arrays.stream(
-                    l.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
-                )
-                    .collect(Collectors.toList())
-            }
-            .collect(Collectors.toList())
-
+    private fun convertResultsToList(output: String): MutableList<List<String>> = Arrays.stream(output.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray())
+        .map<List<String>> { l: String ->
+            Arrays.stream(
+                l.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray(),
+            )
+                .collect(Collectors.toList())
+        }
+        .collect(Collectors.toList())
 }

@@ -18,22 +18,25 @@ public class CybozuLanguageDetectorFactory implements LanguageDetectorFactory {
     private static volatile LanguageDetector instance = null;
 
     private static void init() {
-        File profilePath = new File(GrobidProperties.getLanguageDetectionResourcePath(), "cybozu/profiles").getAbsoluteFile();
+        File profilePath = new File(GrobidProperties.getLanguageDetectionResourcePath(), "cybozu/profiles")
+                .getAbsoluteFile();
         if (!profilePath.exists() || !profilePath.isDirectory()) {
-            throw new IllegalStateException("Profiles path for cybozu language detection does not exist or not a directory: " + profilePath);
+            throw new IllegalStateException(
+                    "Profiles path for cybozu language detection does not exist or not a directory: " + profilePath);
         }
 
         try {
             DetectorFactory.loadProfile(profilePath);
         } catch (LangDetectException e) {
-            throw new IllegalStateException("Cannot read profiles for cybozu language detection from: " + profilePath, e);
+            throw new IllegalStateException("Cannot read profiles for cybozu language detection from: " + profilePath,
+                    e);
         }
     }
 
     public LanguageDetector getInstance() {
         if (instance == null) {
             synchronized (this) {
-                if(instance == null) {
+                if (instance == null) {
                     init();
                     LOGGER.debug("synchronized getNewInstance");
                     instance = new CybozuLanguageDetector();

@@ -6,5 +6,6 @@ import java.io.OutputStream;
 
 public interface CntManagerSaver {
     CntManager deserialize(InputStream is) throws IOException;
+
     void serialize(CntManager cntManager, OutputStream os) throws IOException;
 }

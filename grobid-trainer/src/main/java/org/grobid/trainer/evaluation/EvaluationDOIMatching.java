@@ -35,11 +35,9 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 /**
- * Evaluation of the DOI matching for the extracted bibliographical references,
- * using PDF+native publisher XML where the DOI or PMID are provided. A typical 
- * example of the evaluation data is PubMed Central fulltext resources. A second 
- * type of evaluation is PDF+TEI files produced via Pub2TEI fir mainstream 
- * publishers.   
+ * Evaluation of the DOI matching for the extracted bibliographical references, using PDF+native publisher XML where the
+ * DOI or PMID are provided. A typical example of the evaluation data is PubMed Central fulltext resources. A second
+ * type of evaluation is PDF+TEI files produced via Pub2TEI fir mainstream publishers.
  *
  */
 public class EvaluationDOIMatching {
@@ -47,7 +45,7 @@ public class EvaluationDOIMatching {
 
     private static String evaluationFilePath = null;
     private Engine engine = null;
-    
+
     public static final int BIBLIO_GLUTTON = 0;
     public static final int CROSSREF_API = 1;
 
@@ -55,8 +53,8 @@ public class EvaluationDOIMatching {
 
     // xpath expressions for nlm
     private static final String path_nlm_ref = "/article/back/ref-list/ref/mixed-citation";
-    private static final String path_nlm_doi = "pub-id[@pub-id-type=\"doi\"]/text()"; 
-    private static final String path_nlm_pmid = "pub-id[@pub-id-type=\"pmid\"]/text()"; 
+    private static final String path_nlm_doi = "pub-id[@pub-id-type=\"doi\"]/text()";
+    private static final String path_nlm_pmid = "pub-id[@pub-id-type=\"pmid\"]/text()";
 
     private static final String path_nlm_title = "article-title/text()";
     private static final String path_nlm_author = "person-group[@person-group-type=\"author\"]/name/surname/text()";
@@ -64,14 +62,13 @@ public class EvaluationDOIMatching {
     private static final String path_nlm_first_page = "fpage/text()";
     private static final String path_nlm_volume = "volume/text()";
 
-
     // xpath expressions for tei
     private static final String path_tei_ref = "//back/div/listBibl/biblStruct";
     private static final String path_tei_doi = "idno[@type=\"doi\"]/text()";
 
     public EvaluationDOIMatching(String path) {
-        this.evaluationFilePath = path;   
-    
+        this.evaluationFilePath = path;
+
         File evaluationFile = new File(path);
         if (!evaluationFile.exists()) {
             System.out.println("Path to evaluation (gold) XML data is not valid !");
@@ -80,18 +77,17 @@ public class EvaluationDOIMatching {
 
         try {
             GrobidProperties.getInstance();
-            LOGGER.info(">>>>>>>> GROBID_HOME="+GrobidProperties.getGrobidHome());
+            LOGGER.info(">>>>>>>> GROBID_HOME=" + GrobidProperties.getGrobidHome());
 
             engine = GrobidFactory.getInstance().createEngine();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
-    
+
     public String evaluation() throws Exception {
         StringBuilder report = new StringBuilder();
-        
+
         // we run Grobid reference extraction on the PubMedCentral data
         File input = new File(this.evaluationFilePath);
         // we process all json files in the input evaluation directory
@@ -116,7 +112,7 @@ public class EvaluationDOIMatching {
             final File jsonFile = refFiles[0];
 
             JsonNode rootNode = mapper.readTree(jsonFile);
-            
+
             Iterator<JsonNode> ite = rootNode.elements();
 
             List<String> rawRefs = new ArrayList<String>();
@@ -128,8 +124,8 @@ public class EvaluationDOIMatching {
             List<String> volumes = new ArrayList<String>();
             List<String> firstPages = new ArrayList<String>();
             while (ite.hasNext()) {
-                //if (nbRef > 1000)
-                //    break;
+                // if (nbRef > 1000)
+                // break;
                 JsonNode entryNode = ite.next();
 
                 String rawRef = null;
@@ -143,123 +139,126 @@ public class EvaluationDOIMatching {
                 JsonNode doiNode = entryNode.findPath("doi");
                 if ((doiNode != null) && (!doiNode.isMissingNode())) {
                     doi = doiNode.textValue();
-                }                
+                }
                 dois.add(doi);
 
                 String pmid = null;
                 JsonNode pmidNode = entryNode.findPath("pmid");
                 if ((pmidNode != null) && (!pmidNode.isMissingNode())) {
                     pmid = pmidNode.textValue();
-                }                
+                }
                 pmids.add(pmid);
 
                 String atitle = null;
                 JsonNode atitleNode = entryNode.findPath("atitle");
                 if ((atitleNode != null) && (!atitleNode.isMissingNode())) {
                     atitle = atitleNode.textValue();
-                }                
+                }
                 atitles.add(atitle);
 
                 String jtitle = null;
                 JsonNode jtitleNode = entryNode.findPath("jtitle");
                 if ((jtitleNode != null) && (!jtitleNode.isMissingNode())) {
                     jtitle = jtitleNode.textValue();
-                }                
+                }
                 jtitles.add(jtitle);
 
                 String volume = null;
                 JsonNode volumeNode = entryNode.findPath("volume");
                 if ((volumeNode != null) && (!volumeNode.isMissingNode())) {
                     volume = volumeNode.textValue();
-                }                
+                }
                 volumes.add(volume);
 
                 String firstPage = null;
                 JsonNode firstPageNode = entryNode.findPath("firstPage");
                 if ((firstPageNode != null) && (!firstPageNode.isMissingNode())) {
                     firstPage = firstPageNode.textValue();
-                } 
+                }
                 firstPages.add(firstPage);
 
                 String author = null;
                 JsonNode authorNode = entryNode.findPath("author");
                 if ((authorNode != null) && (!authorNode.isMissingNode())) {
                     author = authorNode.textValue();
-                } 
+                }
                 firstAuthors.add(author);
 
                 nbRef++;
-            } 
+            }
             // run Grobid reference parser on this raw strings
             try {
                 List<BiblioItem> biblios = engine.processRawReferences(rawRefs, 2);
 
-                for(int i=0; i<rawRefs.size(); i++) {
+                for (int i = 0; i < rawRefs.size(); i++) {
                     BiblioItem biblio = biblios.get(i);
                     String doi = dois.get(i);
                     String pmid = pmids.get(i);
 
-                    //LOGGER.info("\n\tDOI: " + doi);
-                    //LOGGER.info("\trawRef: " + rawRefs.get(i));
+                    // LOGGER.info("\n\tDOI: " + doi);
+                    // LOGGER.info("\trawRef: " + rawRefs.get(i));
 
                     if (biblio.getDOI() != null) {
                         nbDOIFound++;
-                        //LOGGER.info("\tfound: "+ biblio.getDOI());
+                        // LOGGER.info("\tfound: "+ biblio.getDOI());
 
-                        // is the DOI correct? 
+                        // is the DOI correct?
                         if (biblio.getDOI().toLowerCase().equals(doi.toLowerCase()))
                             nbDOICorrect++;
                         else {
-                            //LOGGER.info("!!!!!!!!!!!!! Mismatch DOI: " + doi + " / " + biblio.getDOI());
+                            // LOGGER.info("!!!!!!!!!!!!! Mismatch DOI: " + doi + " / " + biblio.getDOI());
                         }
                     }
                 }
-            } 
-            catch (Exception e) {
+            } catch (Exception e) {
                 LOGGER.error("Error when processing: " + jsonFile.getPath(), e);
             }
         }
 
-        double processTime = ((double)System.currentTimeMillis() - start) / 1000.0;
+        double processTime = ((double) System.currentTimeMillis() - start) / 1000.0;
 
-        double rate = ((double)processTime)/nbRef;
-        System.out.println("\n\n" + nbRef + " bibliographical references processed in " + 
-             processTime + " seconds, " + 
-             TextUtilities.formatFourDecimals(rate) + 
-            " seconds per bibliographical reference.");
+        double rate = ((double) processTime) / nbRef;
+        System.out.println(
+                "\n\n"
+                        + nbRef
+                        + " bibliographical references processed in "
+                        + processTime
+                        + " seconds, "
+                        + TextUtilities.formatFourDecimals(rate)
+                        + " seconds per bibliographical reference.");
         System.out.println("Found " + nbDOIFound + " DOI");
 
         // evaluation of the run
         start = System.currentTimeMillis();
 
-        report.append("\n======= "); 
+        report.append("\n======= ");
         if (GrobidProperties.getInstance().getConsolidationService() == GrobidConsolidationService.GLUTTON)
             report.append("GLUTTON");
         else
             report.append("CROSSREF");
         report.append(" API ======= \n");
-        double precision = ((double)nbDOICorrect / nbDOIFound);
+        double precision = ((double) nbDOICorrect / nbDOIFound);
         report.append("\nprecision:\t");
         report.append(TextUtilities.formatTwoDecimals(precision * 100));
-        double recall = ((double)nbDOICorrect / nbRef);
+        double recall = ((double) nbDOICorrect / nbRef);
         report.append("\nrecall:\t\t").append(TextUtilities.formatTwoDecimals(recall * 100));
         double f1 = 0.0;
         if (precision + recall != 0.0)
-           f1 = (2 * precision * recall) / (precision + recall);
+            f1 = (2 * precision * recall) / (precision + recall);
         report.append("\nF1-score:\t").append(TextUtilities.formatTwoDecimals(f1 * 100)).append("\n");
 
-        //report.append("\n======= BIBLIO GLUTTON ======= \n");
+        // report.append("\n======= BIBLIO GLUTTON ======= \n");
 
-        //System.out.println("Evaluation metrics produced in " + 
-        //       (System.currentTimeMillis() - start) / (1000.00) + " seconds");
+        // System.out.println("Evaluation metrics produced in " +
+        // (System.currentTimeMillis() - start) / (1000.00) + " seconds");
 
         return report.toString();
     }
 
     /**
-     * From PDF and publisher XML (nlm or TEI), we create a dataset of raw bibliographical 
-     * references extracted from the PDF by GROBID associated with their DOI obtained from 
-     * the XML. This set will be used for evaluating the DOI matching. 
+     * From PDF and publisher XML (nlm or TEI), we create a dataset of raw bibliographical references extracted from the
+     * PDF by GROBID associated with their DOI obtained from the XML. This set will be used for evaluating the DOI
+     * matching.
      */
     public void buildEvaluationDataset() throws Exception {
         if (this.evaluationFilePath == null) {
@@ -278,7 +277,7 @@ public class EvaluationDOIMatching {
         Map<String, String> mappings = new HashMap<String, String>();
         mappings.put("tei", "http://www.tei-c.org/ns/1.0");
         xp.setNamespaceContext(new NamespaceContextMap(mappings));
-        
+
         File input = new File(this.evaluationFilePath);
         // we process all tei files in the output directory
         File[] refFiles = input.listFiles(new FilenameFilter() {
@@ -294,7 +293,7 @@ public class EvaluationDOIMatching {
             report.append("No file in dataset");
             return;
         }
-        
+
         List<BibRefAggregated> allGoldReferences = new ArrayList<BibRefAggregated>();
 
         int n = 0;
@@ -322,23 +321,23 @@ public class EvaluationDOIMatching {
             File teiFile = null;
 
             List<BibRefAggregated> goldReferences = new ArrayList<BibRefAggregated>();
-            // get the (gold) reference file corresponding to this pdf 
+            // get the (gold) reference file corresponding to this pdf
             File[] refFiles3 = dir.listFiles(new FilenameFilter() {
                 public boolean accept(File dir, String name) {
                     return name.endsWith(".nxml") || name.endsWith(".xml");
                 }
             });
-            if ( (refFiles3 != null) && (refFiles3.length != 0) )
+            if ((refFiles3 != null) && (refFiles3.length != 0))
                 nlmFile = refFiles3[0];
             refFiles3 = dir.listFiles(new FilenameFilter() {
                 public boolean accept(File dir, String name) {
                     return name.endsWith(".tei");
                 }
             });
-            if ( (refFiles3 != null) && (refFiles3.length != 0) )
+            if ((refFiles3 != null) && (refFiles3.length != 0))
                 teiFile = refFiles3[0];
 
-            if ( (nlmFile == null) && (teiFile == null) ) {
+            if ((nlmFile == null) && (teiFile == null)) {
                 LOGGER.warn("warning: no reference NLM or TEI file found under " + dir.getPath());
                 continue;
             }
@@ -346,40 +345,40 @@ public class EvaluationDOIMatching {
             DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
             docFactory.setValidating(false);
 
-            //System.out.println("\n\nFile: " + pdfFile.getPath());
+            // System.out.println("\n\nFile: " + pdfFile.getPath());
 
             try {
                 DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
                 docBuilder.setEntityResolver(new EntityResolver() {
                     public InputSource resolveEntity(String publicId, String systemId) {
                         return new InputSource(
-                            new ByteArrayInputStream("<?xml version=\"1.0\" encoding=\"UTF-8\"?>".getBytes()));
+                                new ByteArrayInputStream("<?xml version=\"1.0\" encoding=\"UTF-8\"?>".getBytes()));
                     }
                 }); // swap in a dummy resolver to neutralise the online DTD
                 File goldFile = null;
                 if (teiFile != null)
                     goldFile = teiFile;
-                else 
+                else
                     goldFile = nlmFile;
                 Document gold = docBuilder.parse(goldFile);
 
-                //System.out.println("Reference DOIs in : " + goldFile.getPath());
+                // System.out.println("Reference DOIs in : " + goldFile.getPath());
 
                 // get the DOI or PMID of the bibliographical references ia xpath
                 String path_doi = null;
                 String path_pmid = null;
                 String path_ref = null;
                 if (teiFile == null) {
-                    // gold DOI are in the nlm file 
+                    // gold DOI are in the nlm file
                     path_ref = path_nlm_ref;
-                    path_doi = path_nlm_doi; 
-                    path_pmid = path_nlm_pmid;    
+                    path_doi = path_nlm_doi;
+                    path_pmid = path_nlm_pmid;
                 } else {
                     path_ref = path_tei_ref;
                     path_doi = path_tei_doi;
                 }
-                NodeList nodeList = (NodeList) xp.compile(path_ref).
-                            evaluate(gold.getDocumentElement(), XPathConstants.NODESET);
+                NodeList nodeList = (NodeList) xp.compile(path_ref)
+                        .evaluate(gold.getDocumentElement(), XPathConstants.NODESET);
                 for (int i = 0; i < nodeList.getLength(); i++) {
                     // for each node we have a ref bib
                     BibRefAggregated refBib = new BibRefAggregated();
@@ -387,15 +386,13 @@ public class EvaluationDOIMatching {
                     refBib.setXML(ref);
 
                     // get DOI and PMID - if any
-                    NodeList nodeListDOI = (NodeList) xp.compile(path_doi).
-                            evaluate(ref, XPathConstants.NODESET);
+                    NodeList nodeListDOI = (NodeList) xp.compile(path_doi).evaluate(ref, XPathConstants.NODESET);
                     if (nodeListDOI.getLength() > 0) {
                         Node nodeDOI = nodeListDOI.item(0);
                         String doi = nodeDOI.getNodeValue();
                         refBib.setDOI(doi);
                     }
-                    NodeList nodeListPMID = (NodeList) xp.compile(path_pmid).
-                            evaluate(ref, XPathConstants.NODESET);
+                    NodeList nodeListPMID = (NodeList) xp.compile(path_pmid).evaluate(ref, XPathConstants.NODESET);
                     if (nodeListPMID.getLength() > 0) {
                         Node nodePMID = nodeListPMID.item(0);
                         String pmid = nodePMID.getNodeValue();
@@ -404,7 +401,7 @@ public class EvaluationDOIMatching {
                     goldReferences.add(refBib);
                 }
 
-            } catch(Exception e) {
+            } catch (Exception e) {
                 LOGGER.error("Error when collecting reference citations", e);
             }
 
@@ -413,62 +410,62 @@ public class EvaluationDOIMatching {
             try {
                 LOGGER.info(n + " - " + pdfFile.getPath());
                 List<BibDataSet> bibrefs = engine.processReferences(pdfFile, 0);
-                for(BibDataSet bib : bibrefs) {
+                for (BibDataSet bib : bibrefs) {
                     String rawRef = bib.getRawBib();
                     // we remove a DOI possibly in the raw ref, as the whole exercie is about DOI
                     // matching
                     if (rawRef != null) {
                         rawRef = TextUtilities.DOIPattern.matcher(rawRef).replaceAll(" ");
                         // we need to align this raw ref bib string with a gold ref bib
-                        for(BibRefAggregated goldReference : goldReferences) {
-                            if ( (goldReference.getRawRef() == null) && 
-                                 //(goldReference.getDOI() != null || goldReference.getPMID() != null) ) {
-                                 (goldReference.getDOI() != null) ) {
+                        for (BibRefAggregated goldReference : goldReferences) {
+                            if ((goldReference.getRawRef() == null) &&
+                            // (goldReference.getDOI() != null || goldReference.getPMID() != null) ) {
+                                    (goldReference.getDOI() != null)) {
                                 // check key fields like for alignment
                                 Node refNode = goldReference.getXML();
                                 if (refNode == null)
                                     continue;
                                 // title
-                                NodeList nodeList = (NodeList) xp.compile(path_nlm_title).
-                                    evaluate(refNode, XPathConstants.NODESET);
+                                NodeList nodeList = (NodeList) xp.compile(path_nlm_title)
+                                        .evaluate(refNode, XPathConstants.NODESET);
                                 String title = null;
-                                if ((nodeList != null) && nodeList.getLength()>0)
+                                if ((nodeList != null) && nodeList.getLength() > 0)
                                     title = nodeList.item(0).getNodeValue();
-                                
+
                                 // author
                                 String author = null;
                                 String firstAuthor = null;
-                                nodeList = (NodeList) xp.compile(path_nlm_author).
-                                    evaluate(refNode, XPathConstants.NODESET);
-                                if ((nodeList != null) && nodeList.getLength()>0) {
+                                nodeList = (NodeList) xp.compile(path_nlm_author)
+                                        .evaluate(refNode, XPathConstants.NODESET);
+                                if ((nodeList != null) && nodeList.getLength() > 0) {
                                     author = nodeList.item(0).getNodeValue();
                                     firstAuthor = author;
-                                    for (int i=1; i<nodeList.getLength(); i++)
+                                    for (int i = 1; i < nodeList.getLength(); i++)
                                         author += nodeList.item(i).getNodeValue();
                                 }
                                 // journal, book or conference (aka source in NLM)
                                 String host = null;
-                                nodeList = (NodeList) xp.compile(path_nlm_host).
-                                    evaluate(refNode, XPathConstants.NODESET);
-                                if ((nodeList != null) && nodeList.getLength()>0)
+                                nodeList = (NodeList) xp.compile(path_nlm_host)
+                                        .evaluate(refNode, XPathConstants.NODESET);
+                                if ((nodeList != null) && nodeList.getLength() > 0)
                                     host = nodeList.item(0).getNodeValue();
 
                                 // first page
                                 String firstPage = null;
-                                nodeList = (NodeList) xp.compile(path_nlm_first_page).
-                                    evaluate(refNode, XPathConstants.NODESET);
-                                if ((nodeList != null) && nodeList.getLength()>0)
+                                nodeList = (NodeList) xp.compile(path_nlm_first_page)
+                                        .evaluate(refNode, XPathConstants.NODESET);
+                                if ((nodeList != null) && nodeList.getLength() > 0)
                                     firstPage = nodeList.item(0).getNodeValue();
 
                                 // volume
                                 String volume = null;
-                                nodeList = (NodeList) xp.compile(path_nlm_volume).
-                                    evaluate(refNode, XPathConstants.NODESET);
-                                if ((nodeList != null) && nodeList.getLength()>0)
+                                nodeList = (NodeList) xp.compile(path_nlm_volume)
+                                        .evaluate(refNode, XPathConstants.NODESET);
+                                if ((nodeList != null) && nodeList.getLength() > 0)
                                     volume = nodeList.item(0).getNodeValue();
 
-                                //System.out.println(title + " " + author + " " + host);
-                                if ( (title == null) && (author == null) && (host == null) ) {
+                                // System.out.println(title + " " + author + " " + host);
+                                if ((title == null) && (author == null) && (host == null)) {
                                     // nlm might contain the raw string but usually not DOI or PMID
                                 } else {
                                     String rawRefSignature = this.getSignature(rawRef);
@@ -477,7 +474,7 @@ public class EvaluationDOIMatching {
                                     String hostSignature = this.getSignature(host);
                                     String firstPageSignature = this.getSignature(firstPage);
                                     String volumeSignature = this.getSignature(volume);
-                                    int ind1 = -1, ind2 = -1, ind3 = -1, ind4 =-1, ind5 =-1;
+                                    int ind1 = -1, ind2 = -1, ind3 = -1, ind4 = -1, ind5 = -1;
                                     if (title != null) {
                                         ind1 = rawRefSignature.indexOf(titleSignature);
                                     }
@@ -494,15 +491,14 @@ public class EvaluationDOIMatching {
                                         ind5 = rawRefSignature.indexOf(volumeSignature);
                                     }
                                     // soft match for the title using Ratcliff Obershelp string distance
-                                    //double similarity = 0.0;
-                                    //Option<Object> similarityObject = 
-                                    //        RatcliffObershelpMetric.compare(title, localRawRef);
-                                    //if ( (similarityObject != null) && (similarityObject.get() != null) )
-                                    //    similarity = (Double)similarityObject.get();
+                                    // double similarity = 0.0;
+                                    // Option<Object> similarityObject =
+                                    // RatcliffObershelpMetric.compare(title, localRawRef);
+                                    // if ( (similarityObject != null) && (similarityObject.get() != null) )
+                                    // similarity = (Double)similarityObject.get();
 
                                     // intra-document matching
-                                    if ( (ind1 != -1) || 
-                                            (ind2 != -1 && ind3 != -1 && (ind4 != -1 || ind5 != -1)) ) {
+                                    if ((ind1 != -1) || (ind2 != -1 && ind3 != -1 && (ind4 != -1 || ind5 != -1))) {
                                         goldReference.setRawRef(rawRef);
                                         goldReference.setFirstPage(firstPage);
                                         goldReference.setVolume(volume);
@@ -510,7 +506,6 @@ public class EvaluationDOIMatching {
                                         goldReference.setJtitle(host);
                                         goldReference.setFirstAuthor(firstAuthor);
                                         // if we have a pmid but no doi, we can still try to get the DOI from it
-                                        
 
                                         p++;
                                         continue;
@@ -527,8 +522,7 @@ public class EvaluationDOIMatching {
                 System.out.println("total of " + bibrefs.size() + " ref. bib. found by GROBID");
                 System.out.println(goldReferences.size() + " DOI identified in gold");
                 System.out.println("and " + p + " original reference strings identified");
-            } 
-            catch (Exception e) {
+            } catch (Exception e) {
                 System.out.println("Error when processing: " + pdfFile.getPath());
                 e.printStackTrace();
                 fails++;
@@ -540,57 +534,57 @@ public class EvaluationDOIMatching {
         File jsonFile = new File(this.evaluationFilePath + File.separator + "references-doi-matching.json");
         JsonStringEncoder encoder = JsonStringEncoder.getInstance();
         StringBuilder sb = new StringBuilder();
-        
+
         sb.append("[\n");
         boolean first = true;
-        for(BibRefAggregated goldReference : allGoldReferences) {
-            if ((goldReference.getRawRef() != null) && 
-                (goldReference.getDOI() != null || goldReference.getPMID() != null) ) {
+        for (BibRefAggregated goldReference : allGoldReferences) {
+            if ((goldReference.getRawRef() != null)
+                    && (goldReference.getDOI() != null || goldReference.getPMID() != null)) {
                 if (first)
                     first = false;
-                else 
+                else
                     sb.append(",\n");
 
                 sb.append("{");
                 byte[] encodedValueRef = encoder.quoteAsUTF8(goldReference.getRawRef());
-                String outputValueRef = new String(encodedValueRef); 
+                String outputValueRef = new String(encodedValueRef);
                 sb.append("\"reference\": \"" + outputValueRef + "\"");
 
                 if (goldReference.getDOI() != null) {
                     byte[] encodedValueDOI = encoder.quoteAsUTF8(goldReference.getDOI());
-                    String outputValueDOI = new String(encodedValueDOI); 
+                    String outputValueDOI = new String(encodedValueDOI);
                     sb.append(", \"doi\": \"" + outputValueDOI + "\"");
                 }
                 if (goldReference.getPMID() != null) {
                     byte[] encodedValuePMID = encoder.quoteAsUTF8(goldReference.getPMID());
-                    String outputValuePMID = new String(encodedValuePMID); 
+                    String outputValuePMID = new String(encodedValuePMID);
                     sb.append(", \"pmid\": \"" + outputValuePMID + "\"");
                 }
 
                 // other metadata
                 if (goldReference.getAtitle() != null) {
                     byte[] encodedValueAtitle = encoder.quoteAsUTF8(goldReference.getAtitle());
-                    String outputValueAtitle = new String(encodedValueAtitle); 
+                    String outputValueAtitle = new String(encodedValueAtitle);
                     sb.append(", \"atitle\": \"" + outputValueAtitle + "\"");
                 }
                 if (goldReference.getFirstAuthor() != null) {
                     byte[] encodedValueFirstAuthor = encoder.quoteAsUTF8(goldReference.getFirstAuthor());
-                    String outputValueFirstAuthor = new String(encodedValueFirstAuthor); 
+                    String outputValueFirstAuthor = new String(encodedValueFirstAuthor);
                     sb.append(", \"firstAuthor\": \"" + outputValueFirstAuthor + "\"");
                 }
                 if (goldReference.getJtitle() != null) {
                     byte[] encodedValueJtitle = encoder.quoteAsUTF8(goldReference.getJtitle());
-                    String outputValueJtitle = new String(encodedValueJtitle); 
+                    String outputValueJtitle = new String(encodedValueJtitle);
                     sb.append(", \"jtitle\": \"" + outputValueJtitle + "\"");
                 }
                 if (goldReference.getVolume() != null) {
                     byte[] encodedValueVolume = encoder.quoteAsUTF8(goldReference.getVolume());
-                    String outputValueVolume = new String(encodedValueVolume); 
+                    String outputValueVolume = new String(encodedValueVolume);
                     sb.append(", \"volume\": \"" + outputValueVolume + "\"");
                 }
                 if (goldReference.getFirstPage() != null) {
                     byte[] encodedValueFirstPage = encoder.quoteAsUTF8(goldReference.getFirstPage());
-                    String outputValueFirstPage = new String(encodedValueFirstPage); 
+                    String outputValueFirstPage = new String(encodedValueFirstPage);
                     sb.append(", \"firstPage\": \"" + outputValueFirstPage + "\"");
                 }
 
@@ -603,22 +597,26 @@ public class EvaluationDOIMatching {
             // saving the file
             FileUtils.writeStringToFile(jsonFile, sb.toString(), "UTF-8");
 
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
         System.out.println("GROBID failed on " + fails + " PDF");
-        double processTime = ((double)System.currentTimeMillis() - start) / 1000.0;
+        double processTime = ((double) System.currentTimeMillis() - start) / 1000.0;
 
-        System.out.println(n + " PDF files processed in " + 
-             processTime + " seconds, " + ((double)processTime)/n + " seconds per PDF file.");
+        System.out.println(
+                n
+                        + " PDF files processed in "
+                        + processTime
+                        + " seconds, "
+                        + ((double) processTime) / n
+                        + " seconds per PDF file.");
     }
 
     private Pattern pattern = Pattern.compile("[^a-zA-Z0-9]+");
 
     /**
-     * Simplify a string for soft matching: lowercasing, ascii folding, remove punctuation
-     * and special characters
+     * Simplify a string for soft matching: lowercasing, ascii folding, remove punctuation and special characters
      */
     private String getSignature(String field) {
         if (field == null)
@@ -626,14 +624,14 @@ public class EvaluationDOIMatching {
         String string = field.toLowerCase();
         string = Normalizer.normalize(string, Normalizer.Form.NFD);
         string = string.replaceAll("[^\\p{ASCII}]", "");
-        //string = string.replaceAll("\\p{M}", "");
+        // string = string.replaceAll("\\p{M}", "");
         string = pattern.matcher(string).replaceAll("");
         return string;
     }
 
     /**
-     * This class represents a bibliographical reference by aggregating information
-     * from the publisher XML and the PDF extracted information from GROBID.
+     * This class represents a bibliographical reference by aggregating information from the publisher XML and the PDF
+     * extracted information from GROBID.
      */
     public class BibRefAggregated {
         // raw string of the bib ref
@@ -670,7 +668,7 @@ public class EvaluationDOIMatching {
         public void setDOI(String doi) {
             this.doi = doi;
         }
-        
+
         public String getPMID() {
             return this.pmid;
         }
@@ -728,30 +726,30 @@ public class EvaluationDOIMatching {
         }
     }
 
-
     /**
      * Command line execution.
      *
-     * @param args Command line arguments.
+     * @param args
+     * Command line arguments.
      */
     public static void main(String[] args) {
-        if ( (args.length > 2) || (args.length == 0) ) {
+        if ((args.length > 2) || (args.length == 0)) {
             System.err.println("command parameters: action[data|eval] [path to the (gold) evaluation dataset]");
             return;
         }
 
         String action = args[0];
-        if ( (action == null) || (action.length() == 0) || (!action.equals("data")) && (!action.equals("eval")) ) {
+        if ((action == null) || (action.length() == 0) || (!action.equals("data")) && (!action.equals("eval"))) {
             System.err.println("Action to be performed not correctly set, should be [data|eval]");
             return;
         }
 
         String inputPath = args[1];
-        if ( (inputPath == null) || (inputPath.length() == 0) ) {
+        if ((inputPath == null) || (inputPath.length() == 0)) {
             System.err.println("Path to evaluation (gold) XML data is not correctly set");
             return;
         }
-        
+
         try {
             File thePath = new File(inputPath);
             if (!thePath.exists()) {
@@ -761,9 +759,8 @@ public class EvaluationDOIMatching {
             if (!thePath.isDirectory()) {
                 System.err.println("Path to evaluation (gold) XML data is not a directory");
                 return;
-            }  
-        }
-        catch (Exception e) {
+            }
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

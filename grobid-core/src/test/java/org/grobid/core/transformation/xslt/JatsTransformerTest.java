@@ -16,7 +16,8 @@ public class JatsTransformerTest {
     @Test
     @Ignore("Not ready yet")
     public void testTransform_teiHeader() throws Exception {
-        String teiInput = IOUtils.toString(this.getClass().getResourceAsStream("/xslt/sample1.tei.header.xml"), "UTF-8");
+        String teiInput = IOUtils
+                .toString(this.getClass().getResourceAsStream("/xslt/sample1.tei.header.xml"), "UTF-8");
         String output = target.transform(teiInput);
         System.out.println(output);
     }
@@ -24,7 +25,8 @@ public class JatsTransformerTest {
     @Test
     @Ignore("Not ready yet")
     public void testTransform_teiFulltext() throws Exception {
-        String teiInput = IOUtils.toString(this.getClass().getResourceAsStream("/xslt/sample2.tei.fulltext.xml"), "UTF-8");
+        String teiInput = IOUtils
+                .toString(this.getClass().getResourceAsStream("/xslt/sample2.tei.fulltext.xml"), "UTF-8");
         String output = target.transform(teiInput);
         System.out.println(output);
     }

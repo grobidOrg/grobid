@@ -88,7 +88,11 @@ public class HeaderParser extends AbstractParser {
     /**
      * Processing with application of the segmentation model
      */
-    public Pair<String, Document> processing(File input, String md5Str, BiblioItem resHeader, GrobidAnalysisConfig config) {
+    public Pair<String, Document> processing(
+            File input,
+            String md5Str,
+            BiblioItem resHeader,
+            GrobidAnalysisConfig config) {
         DocumentSource documentSource = null;
         try {
             documentSource = DocumentSource.fromPdf(input, config.getStartPage(), config.getEndPage());
@@ -105,22 +109,22 @@ public class HeaderParser extends AbstractParser {
     }
 
     /**
-     * Header processing after application of the segmentation model 
+     * Header processing after application of the segmentation model
      */
     public String processingHeaderSection(
-        GrobidAnalysisConfig config,
-        Document doc,
-        BiblioItem resHeader,
-        boolean serialize
-    ) {
+            GrobidAnalysisConfig config,
+            Document doc,
+            BiblioItem resHeader,
+            boolean serialize) {
         try {
             SortedSet<DocumentPiece> documentHeaderParts = doc.getDocumentPart(SegmentationLabels.HEADER);
             List<LayoutToken> tokenizations = doc.getTokenizations();
 
             if (documentHeaderParts != null) {
-//                List<LayoutToken> tokenizationsHeader = Document.getTokenizationParts(documentHeaderParts, tokenizations);
+                // List<LayoutToken> tokenizationsHeader = Document.getTokenizationParts(documentHeaderParts,
+                // tokenizations);
 
-                //String header = getSectionHeaderFeatured(doc, documentHeaderParts, true);
+                // String header = getSectionHeaderFeatured(doc, documentHeaderParts, true);
                 Pair<String, List<LayoutToken>> featuredHeader = getSectionHeaderFeatured(doc, documentHeaderParts);
                 String header = featuredHeader.getLeft();
                 List<LayoutToken> headerTokenization = featuredHeader.getRight();
@@ -145,17 +149,21 @@ public class HeaderParser extends AbstractParser {
                     SortedSet<DocumentPiece> documentBodyParts = doc.getDocumentPart(SegmentationLabels.BODY);
                     if (documentBodyParts != null) {
                         String stringSample = Document.getTokenizationParts(documentBodyParts, tokenizations)
-                            .stream().map(LayoutToken::toString)
-                            .collect(Collectors.joining(" "));
+                                .stream()
+                                .map(LayoutToken::toString)
+                                .collect(Collectors.joining(" "));
 
                         contentSample.append(stringSample);
                     }
-                    //In case we don't have text, it might be that someone is trying to process a document that is not a scientific article,
+                    // In case we don't have text, it might be that someone is trying to process a document that is not
+                    // a scientific article,
                     // one more attempt with the full header.
                     if (contentSample.length() < 200) {
-                        String stringSample = Document.getTokenizationParts(doc.getDocumentPart(SegmentationLabels.HEADER), tokenizations)
-                            .stream().map(LayoutToken::toString)
-                            .collect(Collectors.joining(" "));
+                        String stringSample = Document
+                                .getTokenizationParts(doc.getDocumentPart(SegmentationLabels.HEADER), tokenizations)
+                                .stream()
+                                .map(LayoutToken::toString)
+                                .collect(Collectors.joining(" "));
 
                         contentSample.append(stringSample);
                     }
@@ -169,7 +177,7 @@ public class HeaderParser extends AbstractParser {
 
                 if (resHeader.getAbstract() != null) {
                     resHeader.setAbstract(TextUtilities.dehyphenizeHard(resHeader.getAbstract()));
-                    //resHeader.setAbstract(TextUtilities.dehyphenize(resHeader.getAbstract()));
+                    // resHeader.setAbstract(TextUtilities.dehyphenize(resHeader.getAbstract()));
                 }
                 BiblioItem.cleanTitles(resHeader);
                 if (resHeader.getTitle() != null) {
@@ -198,7 +206,7 @@ public class HeaderParser extends AbstractParser {
                 if (isNotEmpty(authorLayoutTokens)) {
                     // split the list of layout tokens when token "\t" is met
                     List<LayoutToken> currentSegment = new ArrayList<>();
-                    for(LayoutToken theToken : authorLayoutTokens) {
+                    for (LayoutToken theToken : authorLayoutTokens) {
                         if (theToken.getText() != null && theToken.getText().equals("\t")) {
                             if (currentSegment.size() > 0)
                                 authorSegments.add(currentSegment);
@@ -217,7 +225,7 @@ public class HeaderParser extends AbstractParser {
                         if (authorSegments.get(k).size() == 0)
                             continue;
                         List<Person> localAuthors = parsers.getAuthorParser()
-                            .processingHeaderWithLayoutTokens(authorSegments.get(k), doc.getPDFAnnotations());
+                                .processingHeaderWithLayoutTokens(authorSegments.get(k), doc.getPDFAnnotations());
                         if (localAuthors != null) {
                             for (Person pers : localAuthors) {
                                 resHeader.addFullAuthor(pers);
@@ -233,16 +241,18 @@ public class HeaderParser extends AbstractParser {
                 // remove invalid authors (no last name, noise, etc.)
                 resHeader.setFullAuthors(Person.sanityCheck(resHeader.getFullAuthors()));
 
-                //List<LayoutToken> tokenizationsAffiliation = resHeader.getLayoutTokens(TaggingLabels.HEADER_AFFILIATION);
+                // List<LayoutToken> tokenizationsAffiliation =
+                // resHeader.getLayoutTokens(TaggingLabels.HEADER_AFFILIATION);
                 List<List<LayoutToken>> tokenizationsAffiliation = resHeader.getAffiliationAddresslabeledTokens();
-                //resHeader.setFullAffiliations(
-                //        parsers.getAffiliationAddressParser().processReflow(res, tokenizations));
+                // resHeader.setFullAffiliations(
+                // parsers.getAffiliationAddressParser().processReflow(res, tokenizations));
                 resHeader.setFullAffiliations(
                         parsers.getAffiliationAddressParser().processingLayoutTokens(tokenizationsAffiliation));
                 resHeader.attachEmails();
                 boolean attached = false;
                 if (fragmentedAuthors && !hasMarker) {
-                    if (resHeader.getFullAffiliations() != null && resHeader.getFullAffiliations().size() == authorSegments.size()) {
+                    if (resHeader.getFullAffiliations() != null
+                            && resHeader.getFullAffiliations().size() == authorSegments.size()) {
                         int k = 0;
                         List<Person> persons = resHeader.getFullAuthors();
                         if (CollectionUtils.isNotEmpty(persons)) {
@@ -276,17 +286,17 @@ public class HeaderParser extends AbstractParser {
 
                 // below using the reference strings to improve the metadata extraction, it will have to
                 // be reviewed for something safer as just a straightforward correction
-                /*if (resHeader.getReference() != null) {
-                    BiblioItem refer = parsers.getCitationParser().processingString(resHeader.getReference(), 0);
-                    BiblioItem.correct(resHeader, refer);
-                }*/
-
+                /*
+                 * if (resHeader.getReference() != null) { BiblioItem refer =
+                 * parsers.getCitationParser().processingString(resHeader.getReference(), 0);
+                 * BiblioItem.correct(resHeader, refer); }
+                 */
 
                 // keyword post-processing
                 if (resHeader.getKeyword() != null) {
                     String keywords = TextUtilities.dehyphenize(resHeader.getKeyword());
                     keywords = BiblioItem.cleanKeywords(keywords);
-                    //resHeader.setKeyword(keywords.replace("\n", " ").replace("  ", " "));
+                    // resHeader.setKeyword(keywords.replace("\n", " ").replace(" ", " "));
                     resHeader.setKeyword(keywords);
                     List<Keyword> keywordsSegmented = BiblioItem.segmentKeywords(keywords);
                     if (CollectionUtils.isNotEmpty(keywordsSegmented))
@@ -312,7 +322,7 @@ public class HeaderParser extends AbstractParser {
 
                     if (resHeader.getNormalizedSubmissionDate() == null) {
                         Optional<Date> normalizedSubmissionDate = getNormalizedDate(resHeader.getSubmissionDate());
-                        if(normalizedSubmissionDate.isPresent()) {
+                        if (normalizedSubmissionDate.isPresent()) {
                             resHeader.setNormalizedSubmissionDate(normalizedSubmissionDate.get());
                         }
                     } else {
@@ -324,13 +334,13 @@ public class HeaderParser extends AbstractParser {
                         if (normalizedDownloadDate.isPresent()) {
                             resHeader.setNormalizedDownloadDate(normalizedDownloadDate.get());
                         }
-                    }else {
+                    } else {
                         resHeader.setDownloadDate(toISOString(resHeader.getNormalizedDownloadDate()));
-                    }                    
-                    
+                    }
+
                     if (resHeader.getNormalizedServerDate() == null) {
                         Optional<Date> normalizedServerDate = getNormalizedDate(resHeader.getServerDate());
-                        if(normalizedServerDate.isPresent()) {
+                        if (normalizedServerDate.isPresent()) {
                             resHeader.setNormalizedServerDate(normalizedServerDate.get());
                         }
                     } else {
@@ -341,8 +351,9 @@ public class HeaderParser extends AbstractParser {
                 // copyrights/license identification
                 if (StringUtils.isNotBlank(resHeader.getCopyright())) {
                     if (GrobidProperties.getGrobidEngineName("copyright").equals("delft")) {
-                        CopyrightsLicense copyrightsLicense = LicenseClassifier.getInstance().classify(resHeader.getCopyright());
-                        if (copyrightsLicense != null) 
+                        CopyrightsLicense copyrightsLicense = LicenseClassifier.getInstance()
+                                .classify(resHeader.getCopyright());
+                        if (copyrightsLicense != null)
                             resHeader.setCopyrightsLicense(copyrightsLicense);
                     }
                 }
@@ -354,9 +365,9 @@ public class HeaderParser extends AbstractParser {
                     TEIFormatter teiFormatter = new TEIFormatter(doc, null);
                     StringBuilder tei = teiFormatter.toTEIHeader(resHeader, null, null, null, null, config);
                     tei.append("\t</text>\n");
-                    tei.append("</TEI>\n");                
+                    tei.append("</TEI>\n");
                     return tei.toString();
-                } else 
+                } else
                     return null;
             }
         } catch (Exception e) {
@@ -383,12 +394,12 @@ public class HeaderParser extends AbstractParser {
         }
     }
 
-
     /**
      * Return the header section with features to be processed by the sequence labelling model
      */
-    public Pair<String, List<LayoutToken>> getSectionHeaderFeatured(Document doc,
-                                           SortedSet<DocumentPiece> documentHeaderParts) {
+    public Pair<String, List<LayoutToken>> getSectionHeaderFeatured(
+            Document doc,
+            SortedSet<DocumentPiece> documentHeaderParts) {
         FeatureFactory featureFactory = FeatureFactory.getInstance();
         StringBuilder header = new StringBuilder();
         String currentFont = null;
@@ -397,13 +408,13 @@ public class HeaderParser extends AbstractParser {
         // vector for features
         FeaturesVectorHeader features;
         FeaturesVectorHeader previousFeatures = null;
-        
+
         double lineStartX = Double.NaN;
         boolean indented = false;
         boolean centered = false;
 
         boolean endblock;
-        //for (Integer blocknum : blockDocumentHeaders) {
+        // for (Integer blocknum : blockDocumentHeaders) {
         List<Block> blocks = doc.getBlocks();
         if ((blocks == null) || blocks.size() == 0) {
             return null;
@@ -412,7 +423,7 @@ public class HeaderParser extends AbstractParser {
         List<LayoutToken> headerTokenizations = new ArrayList<LayoutToken>();
 
         // find the largest, smallest and average size font on the header section
-        // note: only  largest font size information is used currently
+        // note: only largest font size information is used currently
         double largestFontSize = 0.0;
         double smallestFontSize = 100000.0;
         double averageFontSize;
@@ -430,12 +441,11 @@ public class HeaderParser extends AbstractParser {
                     continue;
                 }
 
-                for(LayoutToken token : tokens) {
-                    /*if (" ".equals(token.getText()) || "\n".equals(token.getText())) {
-                        // blank separators has font size 0.0, 
-                        // unicode normalization reduce to these 2 characters all the variants 
-                        continue;
-                    }*/
+                for (LayoutToken token : tokens) {
+                    /*
+                     * if (" ".equals(token.getText()) || "\n".equals(token.getText())) { // blank separators has font
+                     * size 0.0, // unicode normalization reduce to these 2 characters all the variants continue; }
+                     */
 
                     if (token.getFontSize() > largestFontSize) {
                         largestFontSize = token.getFontSize();
@@ -454,10 +464,12 @@ public class HeaderParser extends AbstractParser {
 
         // TBD: this would need to be made more efficient, by applying the regex only to a limited
         // part of the tokens
-        /*List<LayoutToken> tokenizations = doc.getTokenizations();
-        List<OffsetPosition> locationPositions = lexicon.tokenPositionsLocationNames(tokenizations);
-        List<OffsetPosition> urlPositions = lexicon.tokenPositionsUrlPattern(tokenizations);
-        List<OffsetPosition> emailPositions = lexicon.tokenPositionsEmailPattern(tokenizations);*/
+        /*
+         * List<LayoutToken> tokenizations = doc.getTokenizations(); List<OffsetPosition> locationPositions =
+         * lexicon.tokenPositionsLocationNames(tokenizations); List<OffsetPosition> urlPositions =
+         * lexicon.tokenPositionsUrlPattern(tokenizations); List<OffsetPosition> emailPositions =
+         * lexicon.tokenPositionsEmailPattern(tokenizations);
+         */
 
         for (DocumentPiece docPiece : documentHeaderParts) {
             DocumentPointer dp1 = docPiece.getLeft();
@@ -484,42 +496,41 @@ public class HeaderParser extends AbstractParser {
                 int startIndex = 0;
                 int n = 0;
                 if (blockIndex == dp1.getBlockPtr()) {
-                    //n = block.getStartToken();
+                    // n = block.getStartToken();
                     n = dp1.getTokenDocPos() - block.getStartToken();
                     startIndex = dp1.getTokenDocPos() - block.getStartToken();
                 }
 
                 // character density of the block
                 double density = 0.0;
-                if ( (block.getHeight() != 0.0) && (block.getWidth() != 0.0) && 
-                     (block.getText() != null) && (!block.getText().contains("@PAGE")) && 
-                     (!block.getText().contains("@IMAGE")) )
-                    density = (double)block.getText().length() / (block.getHeight() * block.getWidth());
+                if ((block.getHeight() != 0.0) && (block.getWidth() != 0.0) && (block.getText() != null)
+                        && (!block.getText().contains("@PAGE")) && (!block.getText().contains("@IMAGE")))
+                    density = (double) block.getText().length() / (block.getHeight() * block.getWidth());
 
                 String[] lines = localText.split("[\\n\\r]");
                 // set the max length of the lines in the block, in number of characters
                 int maxLineLength = 0;
-                for(int p=0; p<lines.length; p++) {
-                    if (lines[p].length() > maxLineLength) 
+                for (int p = 0; p < lines.length; p++) {
+                    if (lines[p].length() > maxLineLength)
                         maxLineLength = lines[p].length();
                 }
 
-                /*for (int li = 0; li < lines.length; li++) {
-                    String line = lines[li];
-
-                    features.lineLength = featureFactory
-                            .linearScaling(line.length(), maxLineLength, LINESCALE);
-
-                    features.punctuationProfile = TextUtilities.punctuationProfile(line);
-                }*/
+                /*
+                 * for (int li = 0; li < lines.length; li++) { String line = lines[li];
+                 *
+                 * features.lineLength = featureFactory .linearScaling(line.length(), maxLineLength, LINESCALE);
+                 *
+                 * features.punctuationProfile = TextUtilities.punctuationProfile(line); }
+                 */
 
                 List<OffsetPosition> locationPositions = lexicon.tokenPositionsLocationNames(tokens);
                 List<OffsetPosition> emailPositions = lexicon.tokenPositionsEmailPattern(tokens);
                 List<OffsetPosition> urlPositions = lexicon.tokenPositionsUrlPattern(tokens);
-                
-                /*for (OffsetPosition position : emailPositions) {
-                    System.out.println(position.start + " " + position.end + " / " + tokens.get(position.start) + " ... " + tokens.get(position.end));
-                }*/
+
+                /*
+                 * for (OffsetPosition position : emailPositions) { System.out.println(position.start + " " +
+                 * position.end + " / " + tokens.get(position.start) + " ... " + tokens.get(position.end)); }
+                 */
 
                 while (n < tokens.size()) {
                     if (blockIndex == dp2.getBlockPtr()) {
@@ -548,7 +559,7 @@ public class HeaderParser extends AbstractParser {
                         newline = false;
                         n++;
                         continue;
-                    } 
+                    }
 
                     if (previousNewline) {
                         newline = true;
@@ -561,13 +572,14 @@ public class HeaderParser extends AbstractParser {
                                 // Indentation if line start is > 1 character width to the right of previous line start
                                 if (lineStartX - previousLineStartX > characterWidth)
                                     indented = true;
-                                // Indentation ends if line start is > 1 character width to the left of previous line start
+                                // Indentation ends if line start is > 1 character width to the left of previous line
+                                // start
                                 else if (previousLineStartX - lineStartX > characterWidth)
                                     indented = false;
                                 // Otherwise indentation is unchanged
                             }
                         }
-                    } else{
+                    } else {
                         newline = false;
                     }
                     // centered ?
@@ -585,7 +597,7 @@ public class HeaderParser extends AbstractParser {
 
                     if (newline)
                         features.lineStatus = "LINESTART";
-                    
+
                     Matcher m0 = featureFactory.isPunct.matcher(text);
                     if (m0.find()) {
                         features.punctType = "PUNCT";
@@ -613,7 +625,7 @@ public class HeaderParser extends AbstractParser {
                         // beginning of block
                         features.lineStatus = "LINESTART";
                         features.blockStatus = "BLOCKSTART";
-                    } else if ((n == tokens.size() - 1) || (n+1 > dp2.getTokenDocPos() - block.getStartToken())) {
+                    } else if ((n == tokens.size() - 1) || (n + 1 > dp2.getTokenDocPos() - block.getStartToken())) {
                         // end of block
                         features.lineStatus = "LINEEND";
                         previousNewline = true;
@@ -634,14 +646,10 @@ public class HeaderParser extends AbstractParser {
                                         endline = true;
                                         endloop = true;
                                     } else {
-                                        if ((toto.trim().length() != 0)
-                                                && (!text.equals("\u00A0"))
-                                                && (!(toto.contains("@IMAGE")))
-                                                && (!(toto.contains("@PAGE")))
-                                                && (!text.contains(".pbm"))
-                                                && (!text.contains(".ppm"))
-                                                && (!text.contains(".png"))
-                                                && (!text.contains(".svg"))
+                                        if ((toto.trim().length() != 0) && (!text.equals("\u00A0"))
+                                                && (!(toto.contains("@IMAGE"))) && (!(toto.contains("@PAGE")))
+                                                && (!text.contains(".pbm")) && (!text.contains(".ppm"))
+                                                && (!text.contains(".png")) && (!text.contains(".svg"))
                                                 && (!text.contains(".jpg"))) {
                                             endloop = true;
                                         }
@@ -672,8 +680,7 @@ public class HeaderParser extends AbstractParser {
 
                     if (indented) {
                         features.alignmentStatus = "LINEINDENT";
-                    }
-                    else {
+                    } else {
                         features.alignmentStatus = "ALIGNEDLEFT";
                     }
 
@@ -717,27 +724,27 @@ public class HeaderParser extends AbstractParser {
 
                     // check token offsets for email and http address, or known location
                     if (locationPositions != null) {
-                        for(OffsetPosition thePosition : locationPositions) {
-                            if (n >= thePosition.start && n <= thePosition.end) {    
+                        for (OffsetPosition thePosition : locationPositions) {
+                            if (n >= thePosition.start && n <= thePosition.end) {
                                 features.locationName = true;
                                 break;
-                            } 
+                            }
                         }
                     }
                     if (emailPositions != null) {
-                        for(OffsetPosition thePosition : emailPositions) {
-                            if (n >= thePosition.start && n <= thePosition.end) {   
+                        for (OffsetPosition thePosition : emailPositions) {
+                            if (n >= thePosition.start && n <= thePosition.end) {
                                 features.email = true;
                                 break;
-                            } 
+                            }
                         }
                     }
                     if (urlPositions != null) {
-                        for(OffsetPosition thePosition : urlPositions) {
-                            if (n >= thePosition.start && n <= thePosition.end) {     
+                        for (OffsetPosition thePosition : urlPositions) {
+                            if (n >= thePosition.start && n <= thePosition.end) {
                                 features.http = true;
                                 break;
-                            } 
+                            }
                         }
                     }
 
@@ -768,12 +775,13 @@ public class HeaderParser extends AbstractParser {
                         features.largestFont = true;
                     if (token.getFontSize() == smallestFontSize)
                         features.smallestFont = true;
-                    if (token.getFontSize() > averageFontSize) 
+                    if (token.getFontSize() > averageFontSize)
                         features.largerThanAverageFont = true;
 
                     // not used
-                    /*if (token.isSuperscript()) 
-                        features.superscript = true;*/
+                    /*
+                     * if (token.isSuperscript()) features.superscript = true;
+                     */
 
                     if (token.isBold())
                         features.bold = true;
@@ -790,15 +798,20 @@ public class HeaderParser extends AbstractParser {
                     if (features.punctType == null)
                         features.punctType = "NOPUNCT";
 
-                    /*if (spacingPreviousBlock != 0.0) {
-                        features.spacingWithPreviousBlock = featureFactory
-                            .linearScaling(spacingPreviousBlock-doc.getMinBlockSpacing(), doc.getMaxBlockSpacing()-doc.getMinBlockSpacing(), NBBINS_SPACE);                          
-                    }*/
+                    /*
+                     * if (spacingPreviousBlock != 0.0) { features.spacingWithPreviousBlock = featureFactory
+                     * .linearScaling(spacingPreviousBlock-doc.getMinBlockSpacing(),
+                     * doc.getMaxBlockSpacing()-doc.getMinBlockSpacing(), NBBINS_SPACE); }
+                     */
 
                     if (density != -1.0) {
-                        features.characterDensity = featureFactory
-                            .linearScaling(density-doc.getMinCharacterDensity(), doc.getMaxCharacterDensity()-doc.getMinCharacterDensity(), NBBINS_DENSITY);
-//System.out.println((density-doc.getMinCharacterDensity()) + " " + (doc.getMaxCharacterDensity()-doc.getMinCharacterDensity()) + " " + NBBINS_DENSITY + " " + features.characterDensity);             
+                        features.characterDensity = featureFactory.linearScaling(
+                                density - doc.getMinCharacterDensity(),
+                                doc.getMaxCharacterDensity() - doc.getMinCharacterDensity(),
+                                NBBINS_DENSITY);
+                        // System.out.println((density-doc.getMinCharacterDensity()) + " " +
+                        // (doc.getMaxCharacterDensity()-doc.getMinCharacterDensity()) + " " + NBBINS_DENSITY + " " +
+                        // features.characterDensity);
                     }
 
                     if (previousFeatures != null)
@@ -816,18 +829,20 @@ public class HeaderParser extends AbstractParser {
                 }
             }
 
-            
         }
 
         return Pair.of(header.toString(), headerTokenizations);
     }
 
     /**
-     * Extract results from a labelled header. 
+     * Extract results from a labelled header.
      *
-     * @param result        result
-     * @param tokenizations list of tokens
-     * @param biblio        biblio item
+     * @param result
+     * result
+     * @param tokenizations
+     * list of tokens
+     * @param biblio
+     * biblio item
      * @return a biblio item
      */
     public BiblioItem resultExtraction(String result, List<LayoutToken> tokenizations, BiblioItem biblio) {
@@ -847,17 +862,19 @@ public class HeaderParser extends AbstractParser {
             String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(cluster.concatTokens());
             String clusterNonDehypenizedContent = LayoutTokensUtil.toText(cluster.concatTokens());
             if (clusterLabel.equals(TaggingLabels.HEADER_TITLE)) {
-                /*if (biblio.getTitle() != null && isDifferentContent(biblio.getTitle(), clusterContent))
-                    biblio.setTitle(biblio.getTitle() + clusterContent);
-                else*/
+                /*
+                 * if (biblio.getTitle() != null && isDifferentContent(biblio.getTitle(), clusterContent))
+                 * biblio.setTitle(biblio.getTitle() + clusterContent); else
+                 */
                 if (biblio.getTitle() == null) {
                     biblio.setTitle(clusterContent);
                 }
             } else if (clusterLabel.equals(TaggingLabels.HEADER_AUTHOR)) {
-                //if (biblio.getAuthors() != null && isDifferentandNotIncludedContent(biblio.getAuthors(), clusterContent)) {
+                // if (biblio.getAuthors() != null && isDifferentandNotIncludedContent(biblio.getAuthors(),
+                // clusterContent)) {
                 if (biblio.getAuthors() != null) {
                     biblio.setAuthors(biblio.getAuthors() + "\t" + clusterNonDehypenizedContent);
-                    //biblio.addAuthorsToken(new LayoutToken("\n", TaggingLabels.HEADER_AUTHOR));
+                    // biblio.addAuthorsToken(new LayoutToken("\n", TaggingLabels.HEADER_AUTHOR));
                     biblio.collectAuthorsToken(new LayoutToken("\t", TaggingLabels.HEADER_AUTHOR));
 
                     List<LayoutToken> tokens = cluster.concatTokens();
@@ -868,21 +885,18 @@ public class HeaderParser extends AbstractParser {
                     List<LayoutToken> tokens = cluster.concatTokens();
                     biblio.collectAuthorsTokens(tokens);
                 }
-            } /*else if (clusterLabel.equals(TaggingLabels.HEADER_TECH)) {
-                biblio.setItem(BiblioItem.TechReport);
-                if (biblio.getBookType() != null) {
-                    biblio.setBookType(biblio.getBookType() + clusterContent);
-                } else
-                    biblio.setBookType(clusterContent);
-
-            } else if (clusterLabel.equals(TaggingLabels.HEADER_LOCATION)) {
-
-                if (biblio.getLocation() != null) {
-                    biblio.setLocation(biblio.getLocation() + clusterContent);
-                } else
-                    biblio.setLocation(clusterContent);
-
-            }*/ 
+            } /*
+               * else if (clusterLabel.equals(TaggingLabels.HEADER_TECH)) { biblio.setItem(BiblioItem.TechReport); if
+               * (biblio.getBookType() != null) { biblio.setBookType(biblio.getBookType() + clusterContent); } else
+               * biblio.setBookType(clusterContent);
+               *
+               * } else if (clusterLabel.equals(TaggingLabels.HEADER_LOCATION)) {
+               *
+               * if (biblio.getLocation() != null) { biblio.setLocation(biblio.getLocation() + clusterContent); } else
+               * biblio.setLocation(clusterContent);
+               *
+               * }
+               */
             else if (clusterLabel.equals(TaggingLabels.HEADER_MEETING)) {
 
                 if (biblio.getMeeting() != null) {
@@ -897,71 +911,67 @@ public class HeaderParser extends AbstractParser {
 
                 // alternatively we can only keep the first continuous date
 
-                /*if (biblio.getPublicationDate() != null && isDifferentandNotIncludedContent(biblio.getPublicationDate(), clusterContent)) 
-                    biblio.setPublicationDate(biblio.getPublicationDate() + " " + clusterContent);
-                else*/ 
+                /*
+                 * if (biblio.getPublicationDate() != null &&
+                 * isDifferentandNotIncludedContent(biblio.getPublicationDate(), clusterContent))
+                 * biblio.setPublicationDate(biblio.getPublicationDate() + " " + clusterContent); else
+                 */
                 // for checking if the date is a server date, we simply look at the string
-                /*if (biblio.getServerDate() == null) {
-                    if (clusterContent.toLowerCase().indexOf("server") != -1) {
-                        biblio.setServerDate(clusterNonDehypenizedContent);
-                        continue;
-                    }
-                }*/
-                if (biblio.getPublicationDate() != null && biblio.getPublicationDate().length() < clusterNonDehypenizedContent.length())
+                /*
+                 * if (biblio.getServerDate() == null) { if (clusterContent.toLowerCase().indexOf("server") != -1) {
+                 * biblio.setServerDate(clusterNonDehypenizedContent); continue; } }
+                 */
+                if (biblio.getPublicationDate() != null
+                        && biblio.getPublicationDate().length() < clusterNonDehypenizedContent.length())
                     biblio.setPublicationDate(clusterNonDehypenizedContent);
                 else if (biblio.getPublicationDate() == null)
                     biblio.setPublicationDate(clusterNonDehypenizedContent);
 
-            } /*else if (clusterLabel.equals(TaggingLabels.HEADER_DATESUB)) {
-                // it appears that the same date is quite often repeated,
-                // we should check, before adding a new date segment, if it is
-                // not already present
-
-                if (biblio.getSubmissionDate() != null && isDifferentandNotIncludedContent(biblio.getSubmissionDate(), clusterNonDehypenizedContent)) {
-                    biblio.setSubmissionDate(biblio.getSubmissionDate() + " " + clusterNonDehypenizedContent);
-                } else
-                    biblio.setSubmissionDate(clusterNonDehypenizedContent);
-            } else if (clusterLabel.equals(TaggingLabels.HEADER_DOWNLOAD)) {
-                // it appears that the same date is quite often repeated,
-                // we should check, before adding a new date segment, if it is
-                // not already present
-
-                if (biblio.getDownloadDate() != null && isDifferentandNotIncludedContent(biblio.getDownloadDate(), clusterNonDehypenizedContent)) {
-                    biblio.setDownloadDate(biblio.getDownloadDate() + " " + clusterNonDehypenizedContent);
-                } else
-                    biblio.setDownloadDate(clusterNonDehypenizedContent);
-            }*/ else if (clusterLabel.equals(TaggingLabels.HEADER_PAGE)) {
-                /*if (biblio.getPageRange() != null) {
-                    biblio.setPageRange(biblio.getPageRange() + clusterContent);
-                }*/ 
-                if (biblio.getPageRange() == null) 
+            } /*
+               * else if (clusterLabel.equals(TaggingLabels.HEADER_DATESUB)) { // it appears that the same date is quite
+               * often repeated, // we should check, before adding a new date segment, if it is // not already present
+               *
+               * if (biblio.getSubmissionDate() != null && isDifferentandNotIncludedContent(biblio.getSubmissionDate(),
+               * clusterNonDehypenizedContent)) { biblio.setSubmissionDate(biblio.getSubmissionDate() + " " +
+               * clusterNonDehypenizedContent); } else biblio.setSubmissionDate(clusterNonDehypenizedContent); } else if
+               * (clusterLabel.equals(TaggingLabels.HEADER_DOWNLOAD)) { // it appears that the same date is quite often
+               * repeated, // we should check, before adding a new date segment, if it is // not already present
+               *
+               * if (biblio.getDownloadDate() != null && isDifferentandNotIncludedContent(biblio.getDownloadDate(),
+               * clusterNonDehypenizedContent)) { biblio.setDownloadDate(biblio.getDownloadDate() + " " +
+               * clusterNonDehypenizedContent); } else biblio.setDownloadDate(clusterNonDehypenizedContent); }
+               */ else if (clusterLabel.equals(TaggingLabels.HEADER_PAGE)) {
+                /*
+                 * if (biblio.getPageRange() != null) { biblio.setPageRange(biblio.getPageRange() + clusterContent); }
+                 */
+                if (biblio.getPageRange() == null)
                     biblio.setPageRange(clusterContent);
             } else if (clusterLabel.equals(TaggingLabels.HEADER_EDITOR)) {
                 if (biblio.getEditors() != null) {
                     biblio.setEditors(biblio.getEditors() + "\n" + clusterNonDehypenizedContent);
                 } else
                     biblio.setEditors(clusterNonDehypenizedContent);
-            } /*else if (clusterLabel.equals(TaggingLabels.HEADER_INSTITUTION)) {
-                if (biblio.getInstitution() != null) {
-                    biblio.setInstitution(biblio.getInstitution() + clusterContent);
-                } else
-                    biblio.setInstitution(clusterContent);
-            }*/ else if (clusterLabel.equals(TaggingLabels.HEADER_NOTE)) {
+            } /*
+               * else if (clusterLabel.equals(TaggingLabels.HEADER_INSTITUTION)) { if (biblio.getInstitution() != null)
+               * { biblio.setInstitution(biblio.getInstitution() + clusterContent); } else
+               * biblio.setInstitution(clusterContent); }
+               */ else if (clusterLabel.equals(TaggingLabels.HEADER_NOTE)) {
                 biblio.setNoteOrConcatenateIfNotEmpty(clusterContent);
             } else if (clusterLabel.equals(TaggingLabels.HEADER_ABSTRACT)) {
                 if (biblio.getAbstract() != null) {
                     // this will need to be reviewed with more training data, for the moment
                     // avoid concatenation for abstracts as it brings more noise than correct pieces
-                    //biblio.setAbstract(biblio.getAbstract() + " " + clusterContent);
-                    //TODO: avoid dumping text on the floor
+                    // biblio.setAbstract(biblio.getAbstract() + " " + clusterContent);
+                    // TODO: avoid dumping text on the floor
                 } else {
                     biblio.setAbstract(clusterContent);
                     List<LayoutToken> tokens = cluster.concatTokens();
                     biblio.collectAbstractTokens(tokens);
                 }
             } else if (clusterLabel.equals(TaggingLabels.HEADER_REFERENCE)) {
-                //if (biblio.getReference() != null) {
-                if (biblio.getReference() != null && biblio.getReference().length() < clusterNonDehypenizedContent.length()) {
+                // if (biblio.getReference() != null) {
+                if (biblio.getReference() != null
+                        && biblio.getReference().length() < clusterNonDehypenizedContent.length()) {
                     biblio.setReference(clusterNonDehypenizedContent);
                 } else
                     biblio.setReference(clusterNonDehypenizedContent);
@@ -992,7 +1002,8 @@ public class HeaderParser extends AbstractParser {
                 } else
                     biblio.setEmail(clusterNonDehypenizedContent);
             } else if (clusterLabel.equals(TaggingLabels.HEADER_PUBNUM)) {
-                if (biblio.getPubnum() != null && isDifferentandNotIncludedContent(biblio.getPubnum(), clusterContent)) {
+                if (biblio.getPubnum() != null
+                        && isDifferentandNotIncludedContent(biblio.getPubnum(), clusterContent)) {
                     String currentPubnum = biblio.getPubnum();
                     biblio.setPubnum(clusterContent);
                     biblio.checkIdentifier();
@@ -1009,7 +1020,7 @@ public class HeaderParser extends AbstractParser {
             } else if (clusterLabel.equals(TaggingLabels.HEADER_AVAILABILITY)) {
                 if (StringUtils.isNotBlank(biblio.getAvailabilityStmt())) {
                     biblio.setAvailabilityStmt(biblio.getAvailabilityStmt() + " \n " + clusterContent);
-                } else{
+                } else {
                     biblio.setAvailabilityStmt(clusterContent);
                 }
             } else if (clusterLabel.equals(TaggingLabels.HEADER_PHONE)) {
@@ -1017,75 +1028,71 @@ public class HeaderParser extends AbstractParser {
                     biblio.setPhone(biblio.getPhone() + clusterNonDehypenizedContent);
                 } else
                     biblio.setPhone(clusterNonDehypenizedContent);
-            } /*else if (clusterLabel.equals(TaggingLabels.HEADER_DEGREE)) {
-                if (biblio.getDegree() != null) {
-                    biblio.setDegree(biblio.getDegree() + clusterContent);
-                } else
-                    biblio.setDegree(clusterContent);
-            }*/ else if (clusterLabel.equals(TaggingLabels.HEADER_WEB)) {
+            } /*
+               * else if (clusterLabel.equals(TaggingLabels.HEADER_DEGREE)) { if (biblio.getDegree() != null) {
+               * biblio.setDegree(biblio.getDegree() + clusterContent); } else biblio.setDegree(clusterContent); }
+               */ else if (clusterLabel.equals(TaggingLabels.HEADER_WEB)) {
                 if (biblio.getWeb() != null) {
                     biblio.setWeb(biblio.getWeb() + clusterNonDehypenizedContent);
                 } else
                     biblio.setWeb(clusterNonDehypenizedContent);
-            } /*else if (clusterLabel.equals(TaggingLabels.HEADER_DEDICATION)) {
-                if (biblio.getDedication() != null) {
-                    biblio.setDedication(biblio.getDedication() + clusterContent);
-                } else
-                    biblio.setDedication(clusterContent);
-            }*/ else if (clusterLabel.equals(TaggingLabels.HEADER_SUBMISSION)) {
+            } /*
+               * else if (clusterLabel.equals(TaggingLabels.HEADER_DEDICATION)) { if (biblio.getDedication() != null) {
+               * biblio.setDedication(biblio.getDedication() + clusterContent); } else
+               * biblio.setDedication(clusterContent); }
+               */ else if (clusterLabel.equals(TaggingLabels.HEADER_SUBMISSION)) {
                 if (biblio.getSubmission() != null) {
                     biblio.setSubmission(biblio.getSubmission() + " " + clusterContent);
                 } else
                     biblio.setSubmission(clusterContent);
-            } /*else if (clusterLabel.equals(TaggingLabels.HEADER_ENTITLE)) {
-                if (biblio.getEnglishTitle() != null) {
-//                    if (cluster.getFeatureBlock().contains("LINESTART")) {
-//                        biblio.setEnglishTitle(biblio.getEnglishTitle() + " " + clusterContent);
-//                    } else
-                    biblio.setEnglishTitle(biblio.getEnglishTitle() + clusterContent);
-                } else
-                    biblio.setEnglishTitle(clusterContent);
-            } else if (clusterLabel.equals(TaggingLabels.HEADER_VERSION)) {
-                if (biblio.getVersion() != null && isDifferentandNotIncludedContent(biblio.getVersion(), clusterNonDehypenizedContent)) {
-                    biblio.setVersion(biblio.getVersion() + clusterNonDehypenizedContent);
-                } else 
-                    biblio.setVersion(clusterNonDehypenizedContent);
-            }*/ else if (clusterLabel.equals(TaggingLabels.HEADER_DOCTYPE)) {
+            } /*
+               * else if (clusterLabel.equals(TaggingLabels.HEADER_ENTITLE)) { if (biblio.getEnglishTitle() != null) {
+               * // if (cluster.getFeatureBlock().contains("LINESTART")) { //
+               * biblio.setEnglishTitle(biblio.getEnglishTitle() + " " + clusterContent); // } else
+               * biblio.setEnglishTitle(biblio.getEnglishTitle() + clusterContent); } else
+               * biblio.setEnglishTitle(clusterContent); } else if (clusterLabel.equals(TaggingLabels.HEADER_VERSION)) {
+               * if (biblio.getVersion() != null && isDifferentandNotIncludedContent(biblio.getVersion(),
+               * clusterNonDehypenizedContent)) { biblio.setVersion(biblio.getVersion() + clusterNonDehypenizedContent);
+               * } else biblio.setVersion(clusterNonDehypenizedContent); }
+               */ else if (clusterLabel.equals(TaggingLabels.HEADER_DOCTYPE)) {
                 if (biblio.getDocumentType() != null && isDifferentContent(biblio.getDocumentType(), clusterContent)) {
                     biblio.setDocumentType(biblio.getDocumentType() + " \n " + clusterContent);
                 } else
                     biblio.setDocumentType(clusterContent);
             } else if (clusterLabel.equals(TaggingLabels.HEADER_WORKINGGROUP)) {
-                /*if (biblio.getWorkingGroup() != null && isDifferentandNotIncludedContent(biblio.getWorkingGroup(), clusterContent)) {
-                    biblio.setWorkingGroup(biblio.getWorkingGroup() + " " + clusterContent);
-                }*/
+                /*
+                 * if (biblio.getWorkingGroup() != null && isDifferentandNotIncludedContent(biblio.getWorkingGroup(),
+                 * clusterContent)) { biblio.setWorkingGroup(biblio.getWorkingGroup() + " " + clusterContent); }
+                 */
                 if (biblio.getWorkingGroup() == null)
                     biblio.setWorkingGroup(clusterContent);
             } else if (clusterLabel.equals(TaggingLabels.HEADER_PUBLISHER)) {
-                /*if (biblio.getPublisher() != null && isDifferentandNotIncludedContent(biblio.getPublisher(), clusterContent)) {
-                    biblio.setPublisher(biblio.getPublisher() + " " + clusterContent);
-                }*/
-                if (biblio.getPublisher() == null)  
+                /*
+                 * if (biblio.getPublisher() != null && isDifferentandNotIncludedContent(biblio.getPublisher(),
+                 * clusterContent)) { biblio.setPublisher(biblio.getPublisher() + " " + clusterContent); }
+                 */
+                if (biblio.getPublisher() == null)
                     biblio.setPublisher(clusterContent);
             } else if (clusterLabel.equals(TaggingLabels.HEADER_JOURNAL)) {
-                /*if (biblio.getJournal() != null && isDifferentandNotIncludedContent(biblio.getJournal(), clusterContent)) {
-                    biblio.setJournal(biblio.getJournal() + " " + clusterContent);
-                }*/
+                /*
+                 * if (biblio.getJournal() != null && isDifferentandNotIncludedContent(biblio.getJournal(),
+                 * clusterContent)) { biblio.setJournal(biblio.getJournal() + " " + clusterContent); }
+                 */
                 if (biblio.getJournal() == null)
                     biblio.setJournal(clusterContent);
             } else if (clusterLabel.equals(TaggingLabels.HEADER_OTHER)) {
                 biblio.addDiscardedPieceTokens(cluster.concatTokens());
             }
-            /*else if (clusterLabel.equals(TaggingLabels.HEADER_INTRO)) {
-                return biblio;
-            }*/
+            /*
+             * else if (clusterLabel.equals(TaggingLabels.HEADER_INTRO)) { return biblio; }
+             */
         }
         return biblio;
     }
 
     /**
-     * In the context of field extraction, check if a newly extracted content is not redundant 
-     * with the already extracted content
+     * In the context of field extraction, check if a newly extracted content is not redundant with the already
+     * extracted content
      */
     private boolean isDifferentContent(String existingContent, String newContent) {
         if (existingContent == null) {
@@ -1105,9 +1112,8 @@ public class HeaderParser extends AbstractParser {
     }
 
     /**
-     * In the context of field extraction, this variant of the previous method check if a newly 
-     * extracted content is not redundant globally and as any substring combination with the already 
-     * extracted content
+     * In the context of field extraction, this variant of the previous method check if a newly extracted content is not
+     * redundant globally and as any substring combination with the already extracted content
      */
     private boolean isDifferentandNotIncludedContent(String existingContent, String newContent) {
         if (existingContent == null) {
@@ -1122,9 +1128,8 @@ public class HeaderParser extends AbstractParser {
         String existingContentSimplified = existingContent.toLowerCase();
         existingContentSimplified = existingContentSimplified.replace(" ", "").trim();
         existingContentSimplified = existingContentSimplified.replace("-", "").trim();
-        if (newContentSimplified.equals(existingContentSimplified) ||
-            existingContentSimplified.contains(newContentSimplified)
-            )
+        if (newContentSimplified.equals(existingContentSimplified)
+                || existingContentSimplified.contains(newContentSimplified))
             return false;
         else
             return true;
@@ -1141,11 +1146,12 @@ public class HeaderParser extends AbstractParser {
     }
 
     /**
-     * Extract results from a labelled header in the training format without any
-     * string modification.
+     * Extract results from a labelled header in the training format without any string modification.
      *
-     * @param result        result
-     * @param tokenizations list of tokens
+     * @param result
+     * result
+     * @param tokenizations
+     * list of tokens
      * @return a result
      */
     public StringBuilder trainingExtraction(String result, List<LayoutToken> tokenizations) {
@@ -1176,13 +1182,12 @@ public class HeaderParser extends AbstractParser {
                 String s = stt.nextToken().trim();
                 if (i == 0) {
                     s2 = TextUtilities.HTMLEncode(s);
-                    //s2 = s;
+                    // s2 = s;
 
                     boolean strop = false;
                     while ((!strop) && (p < tokenizations.size())) {
                         String tokOriginal = tokenizations.get(p).t();
-                        if (tokOriginal.equals(" ")
-                                || tokOriginal.equals("\u00A0")) {
+                        if (tokOriginal.equals(" ") || tokOriginal.equals("\u00A0")) {
                             addSpace = true;
                         } else if (tokOriginal.equals(s)) {
                             strop = true;
@@ -1239,12 +1244,11 @@ public class HeaderParser extends AbstractParser {
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<date>", "<date>", addSpace);
             }
-            /*if (!output) {
-                output = writeField(buffer, s1, lastTag0, s2, "<date-submission>", "<date type=\"submission\">", addSpace);
-            }
-            if (!output) {
-                output = writeField(buffer, s1, lastTag0, s2, "<booktitle>", "<booktitle>", addSpace);
-            }*/
+            /*
+             * if (!output) { output = writeField(buffer, s1, lastTag0, s2, "<date-submission>",
+             * "<date type=\"submission\">", addSpace); } if (!output) { output = writeField(buffer, s1, lastTag0, s2,
+             * "<booktitle>", "<booktitle>", addSpace); }
+             */
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<page>", "<page>", addSpace);
             }
@@ -1260,9 +1264,9 @@ public class HeaderParser extends AbstractParser {
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<affiliation>", "<byline>\n\t<affiliation>", addSpace);
             }
-            /*if (!output) {
-                output = writeField(buffer, s1, lastTag0, s2, "<volume>", "<volume>", addSpace);
-            }*/
+            /*
+             * if (!output) { output = writeField(buffer, s1, lastTag0, s2, "<volume>", "<volume>", addSpace); }
+             */
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<editor>", "<editor>", addSpace);
             }
@@ -1284,24 +1288,26 @@ public class HeaderParser extends AbstractParser {
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<phone>", "<phone>", addSpace);
             }
-            /*if (!output) {
-                output = writeField(buffer, s1, lastTag0, s2, "<degree>", "<note type=\"degree\">", addSpace);
-            }*/
+            /*
+             * if (!output) { output = writeField(buffer, s1, lastTag0, s2, "<degree>", "<note type=\"degree\">",
+             * addSpace); }
+             */
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<web>", "<ptr type=\"web\">", addSpace);
             }
-            /*if (!output) {
-                output = writeField(buffer, s1, lastTag0, s2, "<dedication>", "<dedication>", addSpace);
-            }*/
+            /*
+             * if (!output) { output = writeField(buffer, s1, lastTag0, s2, "<dedication>", "<dedication>", addSpace); }
+             */
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<meeting>", "<meeting>", addSpace);
             }
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<submission>", "<note type=\"submission\">", addSpace);
             }
-            /*if (!output) {
-                output = writeField(buffer, s1, lastTag0, s2, "<entitle>", "<note type=\"title\">", addSpace);
-            }*/
+            /*
+             * if (!output) { output = writeField(buffer, s1, lastTag0, s2, "<entitle>", "<note type=\"title\">",
+             * addSpace); }
+             */
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<reference>", "<reference>", addSpace);
             }
@@ -1311,31 +1317,41 @@ public class HeaderParser extends AbstractParser {
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<funding>", "<note type=\"funding\">", addSpace);
             }
-            /*if (!output) {
-                output = writeField(buffer, s1, lastTag0, s2, "<intro>", "<p type=\"introduction\">", addSpace);
-            }*/
+            /*
+             * if (!output) { output = writeField(buffer, s1, lastTag0, s2, "<intro>", "<p type=\"introduction\">",
+             * addSpace); }
+             */
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<doctype>", "<note type=\"doctype\">", addSpace);
             }
-            /*if (!output) {
-                output = writeField(buffer, s1, lastTag0, s2, "<version>", "<note type=\"version\">", addSpace);
-            }*/
-            /*if (!output) {
-                output = writeField(buffer, s1, lastTag0, s2, "<date-download>", "<date type=\"download\">", addSpace);
-            }*/
+            /*
+             * if (!output) { output = writeField(buffer, s1, lastTag0, s2, "<version>", "<note type=\"version\">",
+             * addSpace); }
+             */
+            /*
+             * if (!output) { output = writeField(buffer, s1, lastTag0, s2, "<date-download>",
+             * "<date type=\"download\">", addSpace); }
+             */
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<group>", "<note type=\"group\">", addSpace);
             }
             if (!output) {
-                output = writeField(buffer, s1, lastTag0, s2, "<availability>", "<note type=\"availability\">", addSpace);
+                output = writeField(
+                        buffer,
+                        s1,
+                        lastTag0,
+                        s2,
+                        "<availability>",
+                        "<note type=\"availability\">",
+                        addSpace);
             }
             if (!output) {
                 output = writeField(buffer, s1, lastTag0, s2, "<other>", "", addSpace);
             }
 
-            /*if (((s1.equals("<intro>")) || (s1.equals("I-<intro>"))) && intro) {
-                break;
-            }*/
+            /*
+             * if (((s1.equals("<intro>")) || (s1.equals("I-<intro>"))) && intro) { break; }
+             */
             lastTag = s1;
 
             if (!st.hasMoreTokens()) {
@@ -1403,9 +1419,9 @@ public class HeaderParser extends AbstractParser {
                 buffer.append("</idno>\n");
             } else if (lastTag0.equals("<degree>")) {
                 buffer.append("</note>\n");
-            } /*else if (lastTag0.equals("<intro>")) {
-                buffer.append("</p>\n");
-            }*/ else if (lastTag0.equals("<editor>")) {
+            } /*
+               * else if (lastTag0.equals("<intro>")) { buffer.append("</p>\n"); }
+               */ else if (lastTag0.equals("<editor>")) {
                 buffer.append("</editor>\n");
             } else if (lastTag0.equals("<version>")) {
                 buffer.append("</note>\n");
@@ -1421,7 +1437,14 @@ public class HeaderParser extends AbstractParser {
         }
     }
 
-    private boolean writeField(StringBuilder buffer, String s1, String lastTag0, String s2, String field, String outField, boolean addSpace) {
+    private boolean writeField(
+            StringBuilder buffer,
+            String s1,
+            String lastTag0,
+            String s2,
+            String field,
+            String outField,
+            boolean addSpace) {
         boolean result = false;
         if ((s1.equals(field)) || (s1.equals("I-" + field))) {
             result = true;
@@ -1437,10 +1460,11 @@ public class HeaderParser extends AbstractParser {
     }
 
     /**
-     * Consolidate an existing list of recognized citations based on access to
-     * external internet bibliographic databases.
+     * Consolidate an existing list of recognized citations based on access to external internet bibliographic
+     * databases.
      *
-     * @param resHeader original biblio item
+     * @param resHeader
+     * original biblio item
      * @return consolidated biblio item
      */
     public BiblioItem consolidateHeader(BiblioItem resHeader, int consolidate) {

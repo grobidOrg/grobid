@@ -1,7 +1,5 @@
 package org.grobid.core.data;
 
-import java.util.List;
-
 public class Metadata {
     private String title = null;
     private String subject = null;

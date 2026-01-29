@@ -8,24 +8,26 @@ import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.utilities.LayoutTokensUtil;
 
 /**
- *  Identify the type of the marker callout with regex
- * 
+ * Identify the type of the marker callout with regex
+ *
  */
 public class CalloutAnalyzer {
 
     // callout/marker type, this is used to discard incorrect numerical reference marker candidates
     // that do not follow the majority reference marker pattern
-    public enum MarkerType { 
-        UNKNOWN, BRACKET_TEXT, BRACKET_NUMBER, PARENTHESIS_TEXT, PARENTHESIS_NUMBER, SUPERSCRIPT_NUMBER, NUMBER, ROMAN 
+    public enum MarkerType {
+        UNKNOWN, BRACKET_TEXT, BRACKET_NUMBER, PARENTHESIS_TEXT, PARENTHESIS_NUMBER, SUPERSCRIPT_NUMBER, NUMBER, ROMAN
     }
 
     // simple patterns just to capture the majority callout style
     private final static Pattern BRACKET_TEXT_PATTERN = Pattern.compile("\\[(.)+\\]");
-    //private final static Pattern BRACKET_NUMBER_PATTERN = Pattern.compile("\\[((\\d{0,4}[a-f]?)|[,-;•])+\\]");
-    private final static Pattern BRACKET_NUMBER_PATTERN = Pattern.compile("\\[(?>[0-9]{1,4}[a-f]?[\\-;•,]?((and)|&|(et))?)+\\]");
+    // private final static Pattern BRACKET_NUMBER_PATTERN = Pattern.compile("\\[((\\d{0,4}[a-f]?)|[,-;•])+\\]");
+    private final static Pattern BRACKET_NUMBER_PATTERN = Pattern
+            .compile("\\[(?>[0-9]{1,4}[a-f]?[\\-;•,]?((and)|&|(et))?)+\\]");
     private final static Pattern PARENTHESIS_TEXT_PATTERN = Pattern.compile("\\((.)+\\)");
-    //private final static Pattern PARENTHESIS_NUMBER_PATTERN = Pattern.compile("\\(((\\d+[a-f]?)|[,-;•])+\\)");
-    private final static Pattern PARENTHESIS_NUMBER_PATTERN = Pattern.compile("\\((?>[0-9]{1,4}[a-f]?[\\-;•,]?((and)|&|(et))?)+\\)");
+    // private final static Pattern PARENTHESIS_NUMBER_PATTERN = Pattern.compile("\\(((\\d+[a-f]?)|[,-;•])+\\)");
+    private final static Pattern PARENTHESIS_NUMBER_PATTERN = Pattern
+            .compile("\\((?>[0-9]{1,4}[a-f]?[\\-;•,]?((and)|&|(et))?)+\\)");
     private final static Pattern NUMBER_PATTERN = Pattern.compile("(?>\\d+)[a-f]?");
     private final static Pattern ROMAN_PATTERN = Pattern.compile("(IX|IV|V?I{0,3})");
 
@@ -36,11 +38,11 @@ public class CalloutAnalyzer {
         String calloutString = LayoutTokensUtil.toText(callout);
         if (calloutString == null || calloutString.trim().length() == 0)
             return MarkerType.UNKNOWN;
-        
+
         calloutString = calloutString.replace(" ", "");
         boolean isSuperScript = true;
 
-        for(LayoutToken token : callout) {
+        for (LayoutToken token : callout) {
             if (token.getText().trim().length() == 0)
                 continue;
             if (!token.isSuperscript()) {
@@ -53,7 +55,7 @@ public class CalloutAnalyzer {
         if (matcher.find()) {
             if (isSuperScript) {
                 return MarkerType.SUPERSCRIPT_NUMBER;
-            } 
+            }
         }
 
         matcher = BRACKET_NUMBER_PATTERN.matcher(calloutString);

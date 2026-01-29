@@ -6,6 +6,8 @@ import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.layout.LayoutToken;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,8 +24,8 @@ public class TaggingTokenCluster {
             }
 
             if (labeledTokensContainer.getFeatureString() == null) {
-                throw new IllegalStateException("This method must be called when feature string is not empty for " +
-                        "LabeledTokenContainers");
+                throw new IllegalStateException(
+                        "This method must be called when feature string is not empty for " + "LabeledTokenContainers");
             }
             return labeledTokensContainer.getFeatureString();
         }
@@ -49,12 +51,10 @@ public class TaggingTokenCluster {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        for (LabeledTokensContainer c : labeledTokensContainers) {
-            sb.append(c).append("\n");
-        }
-        sb.append("\n");
-        return sb.toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("labeledTokensContainers", labeledTokensContainers)
+                .append("taggingLabel", taggingLabel)
+                .toString();
     }
 
     public LabeledTokensContainer getLastContainer() {
@@ -67,12 +67,13 @@ public class TaggingTokenCluster {
 
     public List<LayoutToken> concatTokens() {
 
-        Iterable<LayoutToken> it = Iterables.concat(Iterables.transform(labeledTokensContainers, new Function<LabeledTokensContainer, List<LayoutToken>>() {
-            @Override
-            public List<LayoutToken> apply(LabeledTokensContainer labeledTokensContainer) {
-                return labeledTokensContainer.getLayoutTokens();
-            }
-        }));
+        Iterable<LayoutToken> it = Iterables.concat(
+                Iterables.transform(labeledTokensContainers, new Function<LabeledTokensContainer, List<LayoutToken>>() {
+                    @Override
+                    public List<LayoutToken> apply(LabeledTokensContainer labeledTokensContainer) {
+                        return labeledTokensContainer.getLayoutTokens();
+                    }
+                }));
         return Lists.newArrayList(it);
     }
 

@@ -1,16 +1,10 @@
 package org.grobid.core.utilities;
 
-import org.grobid.core.GrobidModels;
-import org.grobid.core.engines.DateParser;
 import org.grobid.core.lang.SentenceDetector;
 import org.grobid.core.lang.SentenceDetectorFactory;
-import org.grobid.core.lexicon.Lexicon;
-import org.grobid.core.main.LibraryLoader;
-import org.grobid.core.utilities.GrobidProperties;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.powermock.api.easymock.PowerMock;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.core.classloader.annotations.SuppressStaticInitializationFor;
 import org.powermock.modules.junit4.PowerMockRunner;
@@ -22,7 +16,6 @@ import java.util.ArrayList;
 
 import static org.easymock.EasyMock.expect;
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertNull;
 import static org.powermock.api.easymock.PowerMock.*;
@@ -30,7 +23,7 @@ import org.junit.Ignore;
 
 // Patrice @Luca this class is failing to run with JDK 1.17 and maybe lower versions (not tried), possibly security reasons,
 // and I am not able to understand why with the complexity introduced by powermock in initialization.
-// Could we move back to something simpler and readable maybe? 
+// Could we move back to something simpler and readable maybe?
 
 @Ignore
 @RunWith(PowerMockRunner.class)
@@ -48,7 +41,7 @@ public class SentenceUtilitiesTest {
         GrobidConfig.ModelParameters modelParameters = new GrobidConfig.ModelParameters();
         modelParameters.name = "bao";
         GrobidProperties.addModel(modelParameters);
-        
+
         sentenceDetectorFactoryMock = createMock(SentenceDetectorFactory.class);
         sentenceDetectorMock = createMock(SentenceDetector.class);
         target = SentenceUtilities.getInstance();
@@ -90,7 +83,8 @@ public class SentenceUtilitiesTest {
     public void testTwoSentencesText() throws Exception {
         String text = "Bla bla bla. Bli bli bli.";
         expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(text)).andReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
+        expect(sentenceDetectorMock.detect(text))
+                .andReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
         replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(text);
@@ -105,7 +99,8 @@ public class SentenceUtilitiesTest {
         forbidden.add(new OffsetPosition(2, 8));
 
         expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(text, null)).andReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
+        expect(sentenceDetectorMock.detect(text, null))
+                .andReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
         replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(text, forbidden);
@@ -121,7 +116,8 @@ public class SentenceUtilitiesTest {
         forbidden.add(new OffsetPosition(9, 15));
 
         expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(text, null)).andReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
+        expect(sentenceDetectorMock.detect(text, null))
+                .andReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
         replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(text, forbidden);
@@ -192,7 +188,8 @@ public class SentenceUtilitiesTest {
         String paragraph = "What we claim corresponds with what (Foppiano and al. 2021) explains what he's thinking.";
 
         List<String> refs = Arrays.asList("(Foppiano and al. 2021)");
-        List<String> sentences = Arrays.asList("What we claim corresponds with what (Foppiano and al.", "2021) explains what he's thinking.");
+        List<String> sentences = Arrays
+                .asList("What we claim corresponds with what (Foppiano and al.", "2021) explains what he's thinking.");
 
         List<OffsetPosition> refSpans = getPositions(paragraph, refs);
         List<OffsetPosition> sentenceSpans = getPositions(paragraph, sentences);

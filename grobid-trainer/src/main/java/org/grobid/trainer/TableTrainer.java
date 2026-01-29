@@ -20,26 +20,35 @@ public class TableTrainer extends AbstractTrainer {
 
     @Override
     public int createCRFPPData(File corpusPath, File outputFile) {
-        return addFeaturesTable(corpusPath.getAbsolutePath() + "/tei",
+        return addFeaturesTable(
+                corpusPath.getAbsolutePath() + "/tei",
                 corpusPath.getAbsolutePath() + "/raw",
-                outputFile, null, 1.0);
+                outputFile,
+                null,
+                1.0);
     }
 
     /**
      * Add the selected features for the table model
      *
-     * @param corpusDir          path where corpus files are located
-     * @param trainingOutputPath path where to store the temporary training data
-     * @param evalOutputPath     path where to store the temporary evaluation data
-     * @param splitRatio         ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
+     * @param corpusDir
+     * path where corpus files are located
+     * @param trainingOutputPath
+     * path where to store the temporary training data
+     * @param evalOutputPath
+     * path where to store the temporary evaluation data
+     * @param splitRatio
+     * ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
      * @return the total number of used corpus items
      */
     @Override
-    public int createCRFPPData(final File corpusDir,
-                               final File trainingOutputPath,
-                               final File evalOutputPath,
-                               double splitRatio) {
-        return addFeaturesTable(corpusDir.getAbsolutePath() + "/tei",
+    public int createCRFPPData(
+            final File corpusDir,
+            final File trainingOutputPath,
+            final File evalOutputPath,
+            double splitRatio) {
+        return addFeaturesTable(
+                corpusDir.getAbsolutePath() + "/tei",
                 corpusDir.getAbsolutePath() + "/raw",
                 trainingOutputPath,
                 evalOutputPath,
@@ -49,18 +58,24 @@ public class TableTrainer extends AbstractTrainer {
     /**
      * Add the selected features for the table model
      *
-     * @param sourceTEIPathLabel path to corpus TEI files
-     * @param sourceRawPathLabel path to corpus raw files
-     * @param trainingOutputPath path where to store the temporary training data
-     * @param evalOutputPath     path where to store the temporary evaluation data
-     * @param splitRatio         ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
+     * @param sourceTEIPathLabel
+     * path to corpus TEI files
+     * @param sourceRawPathLabel
+     * path to corpus raw files
+     * @param trainingOutputPath
+     * path where to store the temporary training data
+     * @param evalOutputPath
+     * path where to store the temporary evaluation data
+     * @param splitRatio
+     * ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
      * @return number of examples
      */
-    public int addFeaturesTable(String sourceTEIPathLabel,
-                                String sourceRawPathLabel,
-                                final File trainingOutputPath,
-                                final File evalOutputPath,
-                                double splitRatio) {
+    public int addFeaturesTable(
+            String sourceTEIPathLabel,
+            String sourceRawPathLabel,
+            final File trainingOutputPath,
+            final File evalOutputPath,
+            double splitRatio) {
         int totalExamples = 0;
         try {
             System.out.println("sourceTEIPathLabel: " + sourceTEIPathLabel);
@@ -108,14 +123,14 @@ public class TableTrainer extends AbstractTrainer {
 
                 // the full text SAX parser can be reused for the tables
                 TEIFigureSaxParser parser2 = new TEIFigureSaxParser();
-                //parser2.setMode(TEIFulltextSaxParser.TABLE);
+                // parser2.setMode(TEIFulltextSaxParser.TABLE);
 
-                //get a new instance of parser
+                // get a new instance of parser
                 SAXParser p = spf.newSAXParser();
                 p.parse(tf, parser2);
 
                 List<String> labeled = parser2.getLabeledResult();
-                //totalExamples += parser2.n;
+                // totalExamples += parser2.n;
 
                 // we can now add the features
                 // we open the featured file
@@ -126,9 +141,9 @@ public class TableTrainer extends AbstractTrainer {
                 }
 
                 int q = 0;
-                BufferedReader bis = new BufferedReader(
-                        new InputStreamReader(new FileInputStream(
-                                sourceRawPathLabel + File.separator + name.replace(".tei.xml", "")), "UTF8"));
+                BufferedReader bis = new BufferedReader(new InputStreamReader(
+                        new FileInputStream(sourceRawPathLabel + File.separator + name.replace(".tei.xml", "")),
+                        "UTF8"));
 
                 StringBuilder table = new StringBuilder();
                 String line;
@@ -147,7 +162,7 @@ public class TableTrainer extends AbstractTrainer {
                         // has been gnerated by a recent version of grobid
                         token = UnicodeUtil.normaliseTextAndRemoveSpaces(token);
                     }
-//                    boolean found = false;
+                    // boolean found = false;
                     // we get the label in the labelled data file for the same token
                     for (int pp = q; pp < labeled.size(); pp++) {
                         String localLine = labeled.get(pp);
@@ -206,7 +221,8 @@ public class TableTrainer extends AbstractTrainer {
     /**
      * Command line execution.
      *
-     * @param args Command line arguments.
+     * @param args
+     * Command line arguments.
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {

@@ -13,7 +13,6 @@ class SentenceUtilitiesKTest {
         tokens.forEach { token ->
             assertTrue(SentenceUtilities.toSkipToken(token))
         }
-
     }
 
     @Test
@@ -25,8 +24,5 @@ class SentenceUtilitiesKTest {
         }
 
         assertFalse { SentenceUtilities.toSkipTokenNoHyphen("-") }
-
     }
-
-
 }

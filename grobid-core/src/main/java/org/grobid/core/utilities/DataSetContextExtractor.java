@@ -72,14 +72,16 @@ public class DataSetContextExtractor {
             String g = m.group(1);
             int index = m.start();
 
-            return cont.substring(Math.max(0, index - CUT_DEFAULT_LENGTH), Math.min(cont.length(),
-                    index + g.length() + CUT_DEFAULT_LENGTH));
+            return cont.substring(
+                    Math.max(0, index - CUT_DEFAULT_LENGTH),
+                    Math.min(cont.length(), index + g.length() + CUT_DEFAULT_LENGTH));
         } else {
             throw new IllegalStateException("Implementation error: no <ref> found in" + cont);
         }
     }
 
-    public static Multimap<String, DataSetContext> getCitationReferences(String tei) throws XPathException, IOException {
+    public static Multimap<String, DataSetContext> getCitationReferences(String tei)
+            throws XPathException, IOException {
         XQueryProcessor xQueryProcessor = new XQueryProcessor(tei);
 
         SequenceIterator it = xQueryProcessor.getSequenceIterator(CONTEXT_EXTRACTION_BIB_XQ);
@@ -115,7 +117,6 @@ public class DataSetContextExtractor {
             throw new IllegalStateException("Implementation error: no <ref> found in" + cont);
         }
     }
-
 
     public static Multimap<String, DataSetContext> getFormulaReferences(String tei) throws XPathException, IOException {
         XQueryProcessor xQueryProcessor = new XQueryProcessor(tei);

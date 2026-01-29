@@ -16,99 +16,94 @@ import java.util.zip.GZIPInputStream;
 
 public class ZipUtils {
 
-	public static InputStream decompressStream(InputStream input) throws Exception {
-	  	PushbackInputStream pb = new PushbackInputStream( input, 2 ); //we need a pushbackstream to look ahead
-	   	byte [] signature = new byte[2];
-		try {
-	   		pb.read( signature ); //read the signature
-	   		pb.unread( signature ); //push back the signature to the stream
-		}
-		catch(Exception e) {
-			
-		}
-	   	if( signature[ 0 ] == (byte) 0x1f && signature[ 1 ] == (byte) 0x8b ) //check if matches standard gzip maguc number
-	     	return new GZIPInputStream( pb );
-	   	else 
-	      	return pb;
-	}
+    public static InputStream decompressStream(InputStream input) throws Exception {
+        PushbackInputStream pb = new PushbackInputStream(input, 2); // we need a pushbackstream to look ahead
+        byte[] signature = new byte[2];
+        try {
+            pb.read(signature); // read the signature
+            pb.unread(signature); // push back the signature to the stream
+        } catch (Exception e) {
 
-	public static final void copyInputStream(InputStream in, OutputStream out)
-			throws IOException {
-		byte[] buffer = new byte[1024];
-		int len;
+        }
+        if (signature[0] == (byte) 0x1f && signature[1] == (byte) 0x8b) // check if matches standard gzip maguc number
+            return new GZIPInputStream(pb);
+        else
+            return pb;
+    }
 
-		while ((len = in.read(buffer)) >= 0)
-			out.write(buffer, 0, len);
+    public static final void copyInputStream(InputStream in, OutputStream out) throws IOException {
+        byte[] buffer = new byte[1024];
+        int len;
 
-		in.close();
-		out.close();
-	}
+        while ((len = in.read(buffer)) >= 0)
+            out.write(buffer, 0, len);
 
-	public static final void main(String[] args) {
-		Enumeration entries;
-		ZipFile zipFile;
+        in.close();
+        out.close();
+    }
 
-		if (args.length != 1) {
-			System.err.println("Usage: Unzip zipfile");
-			return;
-		}
+    public static final void main(String[] args) {
+        Enumeration entries;
+        ZipFile zipFile;
 
-		String pPath = args[0];
-		try {
-			zipFile = new ZipFile(pPath);
+        if (args.length != 1) {
+            System.err.println("Usage: Unzip zipfile");
+            return;
+        }
 
-			entries = zipFile.entries();
+        String pPath = args[0];
+        try {
+            zipFile = new ZipFile(pPath);
 
-			File tempDir = IOUtilities.newTempFile("GROBID",
-					Long.toString(System.nanoTime()));
-			if (!(tempDir.delete())) {
-				throw new IOException("Could not delete temp file: "
-						+ tempDir.getAbsolutePath());
-			}
-			if (!(tempDir.mkdir())) {
-				throw new IOException("Could not create temp directory: "
-						+ tempDir.getAbsolutePath());
-			}
+            entries = zipFile.entries();
 
-			while (entries.hasMoreElements()) {
-				ZipEntry entry = (ZipEntry) entries.nextElement();
+            File tempDir = IOUtilities.newTempFile("GROBID", Long.toString(System.nanoTime()));
+            if (!(tempDir.delete())) {
+                throw new IOException("Could not delete temp file: " + tempDir.getAbsolutePath());
+            }
+            if (!(tempDir.mkdir())) {
+                throw new IOException("Could not create temp directory: " + tempDir.getAbsolutePath());
+            }
 
-				if (entry.isDirectory()) {
-					// Assume directories are stored parents first then
-					// children.
-					System.err.println("Extracting directory: "
-							+ entry.getName());
-					// This is not robust, just for demonstration purposes.
+            while (entries.hasMoreElements()) {
+                ZipEntry entry = (ZipEntry) entries.nextElement();
 
-					File dir = new File(tempDir.getAbsolutePath() + File.separator + entry.getName()).getCanonicalFile();
-					if (!dir.toPath().startsWith(tempDir.toPath())) {
-						throw new IOException("Bad zip entry: " + entry.getName());
-					}
-					dir.mkdir();
-					continue;
-				}
+                if (entry.isDirectory()) {
+                    // Assume directories are stored parents first then
+                    // children.
+                    System.err.println("Extracting directory: " + entry.getName());
+                    // This is not robust, just for demonstration purposes.
 
-				System.err.println("Extracting file: " + entry.getName());
+                    File dir = new File(tempDir.getAbsolutePath() + File.separator + entry.getName())
+                            .getCanonicalFile();
+                    if (!dir.toPath().startsWith(tempDir.toPath())) {
+                        throw new IOException("Bad zip entry: " + entry.getName());
+                    }
+                    dir.mkdir();
+                    continue;
+                }
 
-				copyInputStream(
-						zipFile.getInputStream(entry),
-						new BufferedOutputStream(new FileOutputStream(new File(tempDir
-								.getAbsolutePath()
-								+ File.separator
-								+ entry.getName()).getCanonicalFile())));
-						File outFile = new File(tempDir.getAbsolutePath() + File.separator + entry.getName()).getCanonicalFile();
-						if (!outFile.toPath().startsWith(tempDir.toPath())) {
-							throw new IOException("Bad zip entry: " + entry.getName());
-						}
-						copyInputStream(zipFile.getInputStream(entry), new BufferedOutputStream(new FileOutputStream(outFile)));
-			}
+                System.err.println("Extracting file: " + entry.getName());
 
-			zipFile.close();
-		} catch (IOException ioe) {
-			System.err.println("Unhandled exception:");
-			ioe.printStackTrace();
-			return;
-		}
-	}
+                copyInputStream(
+                        zipFile.getInputStream(entry),
+                        new BufferedOutputStream(new FileOutputStream(
+                                new File(tempDir.getAbsolutePath() + File.separator + entry.getName())
+                                        .getCanonicalFile())));
+                File outFile = new File(tempDir.getAbsolutePath() + File.separator + entry.getName())
+                        .getCanonicalFile();
+                if (!outFile.toPath().startsWith(tempDir.toPath())) {
+                    throw new IOException("Bad zip entry: " + entry.getName());
+                }
+                copyInputStream(zipFile.getInputStream(entry), new BufferedOutputStream(new FileOutputStream(outFile)));
+            }
+
+            zipFile.close();
+        } catch (IOException ioe) {
+            System.err.println("Unhandled exception:");
+            ioe.printStackTrace();
+            return;
+        }
+    }
 
 }

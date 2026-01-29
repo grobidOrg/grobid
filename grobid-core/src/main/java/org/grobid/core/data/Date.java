@@ -1,6 +1,8 @@
 package org.grobid.core.data;
 
 import org.grobid.core.utilities.TextUtilities;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * Class for representing a date. We use our own representation of dates for having a comparable which prioritize the
@@ -37,7 +39,7 @@ public class Date implements Comparable<Date> {
         this.dayString = fromDate.dayString;
         this.monthString = fromDate.monthString;
         this.yearString = fromDate.yearString;
-    }   
+    }
 
     public int getDay() {
         return day;
@@ -95,10 +97,10 @@ public class Date implements Comparable<Date> {
         yearString = d;
     }
 
-    /*public java.util.Date getJavaDate() {
-         java.util.Calendar cal = new java.util.Calendar();
-         cal.set(year, month, day);
-     }*/
+    /*
+     * public java.util.Date getJavaDate() { java.util.Calendar cal = new java.util.Calendar(); cal.set(year, month,
+     * day); }
+     */
 
     /**
      * The lowest date always win.
@@ -142,15 +144,10 @@ public class Date implements Comparable<Date> {
 
         return EQUAL;
     }
-    
+
     public boolean isNotNull() {
-        return (rawDate != null) ||
-            (dayString != null) ||
-            (monthString != null) ||
-            (yearString != null) ||
-            (day != -1) ||
-            (month != -1) ||
-            (year != -1);
+        return (rawDate != null) || (dayString != null) || (monthString != null) || (yearString != null) || (day != -1)
+                || (month != -1) || (year != -1);
     }
 
     public boolean isAmbiguous() {
@@ -208,11 +205,11 @@ public class Date implements Comparable<Date> {
         if (date1.getYear() == -1) {
             return new Date(date2);
         }
-        
+
         if (date1.getYear() == date2.getYear()) {
             if (date1.getMonth() == -1 && date2.getMonth() != -1) {
                 return new Date(date2);
-            } 
+            }
             if (date1.getMonth() == date2.getMonth()) {
                 if (date1.getDay() == -1 && date2.getDay() != -1) {
                     return new Date(date2);
@@ -223,35 +220,20 @@ public class Date implements Comparable<Date> {
         return new Date(date1);
     }
 
+    @Override
     public String toString() {
-        String theDate = "";
-        if (day != -1) {
-            theDate += day + "-";
-        }
-        if (month != -1) {
-            theDate += month + "-";
-        }
-        if (year != -1) {
-            theDate += year;
-        }
-
-        theDate += " / ";
-
-        if (dayString != null) {
-            theDate += dayString + "-";
-        }
-        if (monthString != null) {
-            theDate += monthString + "-";
-        }
-        if (yearString != null) {
-            theDate += yearString;
-        }
-
-        return theDate;
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("day", day)
+                .append("month", month)
+                .append("year", year)
+                .append("dayString", dayString)
+                .append("monthString", monthString)
+                .append("yearString", yearString)
+                .append("rawDate", rawDate)
+                .toString();
     }
 
     public String toTEI() {
-		// TEI uses ISO 8601 for date encoding
+        // TEI uses ISO 8601 for date encoding
         String theDate = "<date when=\"";
         if (year != -1) {
             theDate += year;
@@ -263,13 +245,12 @@ public class Date implements Comparable<Date> {
             theDate += "-" + day;
         }
 
-		if (rawDate != null) {
-        	theDate += "\">"+TextUtilities.HTMLEncode(rawDate)+"</date>";
-		}
-		else {
-			theDate += "\" />";
-		}
-			
+        if (rawDate != null) {
+            theDate += "\">" + TextUtilities.HTMLEncode(rawDate) + "</date>";
+        } else {
+            theDate += "\" />";
+        }
+
         return theDate;
     }
 

@@ -22,7 +22,6 @@ public class GrobidExceptionMapper implements ExceptionMapper<GrobidException> {
     @Inject
     private GrobidExceptionsTranslationUtility mapper;
 
-
     @Inject
     public GrobidExceptionMapper() {
 

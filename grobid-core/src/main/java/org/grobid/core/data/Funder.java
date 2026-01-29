@@ -1,21 +1,20 @@
 package org.grobid.core.data;
 
 import org.grobid.core.utilities.TextUtilities;
-import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.utilities.LayoutTokensUtil;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.lang.Language;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.HashMap;
 
 /**
- * Class for representing a funding organization.
- * Optionally the funder is identified by its DOI at CrossRef funder registry.
+ * Class for representing a funding organization. Optionally the funder is identified by its DOI at CrossRef funder
+ * registry.
  */
 
 public class Funder {
@@ -60,7 +59,7 @@ public class Funder {
         prefixFounders.put("NSF", "National Science Foundation");
         prefixFounders.put("NIH", "National Institutes of Health");
         prefixFounders.put("ERC", "European Research Council");
-        //Japanese government
+        // Japanese government
         prefixFounders.put("MEXT", "Ministry of Education, Culture, Sports, Science and Technology");
     }
 
@@ -195,13 +194,13 @@ public class Funder {
         this.layoutTokens.addAll(layoutTokens);
     }
 
+    @Override
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        if (fullName != null)
-            builder.append(fullName);
-        if (abbreviatedName != null)
-            builder.append(abbreviatedName);
-        return builder.toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("fullName", fullName)
+                .append("abbreviatedName", abbreviatedName)
+                .append("doi", doi)
+                .append("url", url)
+                .toString();
     }
 
     public String toJson() {
@@ -214,7 +213,7 @@ public class Funder {
             start = true;
         }
         if (abbreviatedName != null) {
-            if (start) 
+            if (start)
                 json.append(",\n");
             json.append("\t\"abbreviatedName\": \"");
             json.append(this.abbreviatedName + "\"");
@@ -232,27 +231,27 @@ public class Funder {
     public String toTEI(int nbIndent) {
         StringBuilder tei = new StringBuilder();
 
-        for(int i=0; i<nbIndent; i++) 
+        for (int i = 0; i < nbIndent; i++)
             tei.append("\t");
-        tei.append("<funder>\n"); 
+        tei.append("<funder>\n");
 
         if (fullName != null) {
-            for(int i=0; i<nbIndent+1; i++) 
+            for (int i = 0; i < nbIndent + 1; i++)
                 tei.append("\t");
-            tei.append("<orgName type=\"full\">"+TextUtilities.HTMLEncode(fullName)+"</orgName>\n");
+            tei.append("<orgName type=\"full\">" + TextUtilities.HTMLEncode(fullName) + "</orgName>\n");
         }
         if (abbreviatedName != null) {
-            for(int i=0; i<nbIndent+1; i++) 
+            for (int i = 0; i < nbIndent + 1; i++)
                 tei.append("\t");
-            tei.append("<orgName type=\"abbreviated\">"+TextUtilities.HTMLEncode(abbreviatedName)+"</orgName>\n");
+            tei.append("<orgName type=\"abbreviated\">" + TextUtilities.HTMLEncode(abbreviatedName) + "</orgName>\n");
         }
         if (doi != null) {
-            for(int i=0; i<nbIndent+1; i++) 
+            for (int i = 0; i < nbIndent + 1; i++)
                 tei.append("\t");
-            tei.append("<idno type=\"DOI\" subtype=\"crossref\">"+TextUtilities.HTMLEncode(doi)+"</idno>\n");
+            tei.append("<idno type=\"DOI\" subtype=\"crossref\">" + TextUtilities.HTMLEncode(doi) + "</idno>\n");
         }
 
-        for(int i=0; i<nbIndent; i++) 
+        for (int i = 0; i < nbIndent; i++)
             tei.append("\t");
         tei.append("</funder>\n");
 

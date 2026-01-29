@@ -30,11 +30,12 @@ public class TaggingTokenSynchronizer implements Iterator<LabeledTokensContainer
     }
 
     public TaggingTokenSynchronizer(GrobidModel grobidModel, String result, List<LayoutToken> tokenizations,
-                                    boolean addFeatureStrings) {
+            boolean addFeatureStrings) {
         this(grobidModel, GenericTaggerUtils.getTokensWithLabelsAndFeatures(result, addFeatureStrings), tokenizations);
     }
 
-    public TaggingTokenSynchronizer(GrobidModel grobidModel, List<Triple<String, String, String>> tokensAndLabels, List<LayoutToken> tokenizations) {
+    public TaggingTokenSynchronizer(GrobidModel grobidModel, List<Triple<String, String, String>> tokensAndLabels,
+            List<LayoutToken> tokenizations) {
         this.grobidModel = grobidModel;
         this.tokensAndLabels = tokensAndLabels;
         tokensAndLabelsIt = this.tokensAndLabels.iterator();
@@ -48,7 +49,7 @@ public class TaggingTokenSynchronizer implements Iterator<LabeledTokensContainer
     }
 
     @Override
-    //null value indicates an empty line in a tagging result
+    // null value indicates an empty line in a tagging result
     public LabeledTokensContainer next() {
         Triple<String, String, String> p = tokensAndLabelsIt.next();
 
@@ -68,7 +69,7 @@ public class TaggingTokenSynchronizer implements Iterator<LabeledTokensContainer
 
         while ((!stop) && (tokenizationsIt.hasNext())) {
             LayoutToken layoutToken = tokenizationsIt.next();
-            
+
             layoutToken.addLabel(TaggingLabels.labelFor(grobidModel, label));
 
             layoutTokenBuffer.add(layoutToken);
@@ -78,17 +79,17 @@ public class TaggingTokenSynchronizer implements Iterator<LabeledTokensContainer
                 newLine = true;
             } else if (LayoutTokensUtil.spaceyToken(tokOriginal)) {
                 addSpace = true;
-            } else if (tokOriginal.replaceAll("[ \n]","").equals(resultToken)) {
+            } else if (tokOriginal.replaceAll("[ \n]", "").equals(resultToken)) {
                 stop = true;
             } else if (tokOriginal.isEmpty()) {
-              // no op
+                // no op
             } else {
                 throw new IllegalStateException(prepareErrorMessage(preTokenizationPtr));
             }
             tokenizationsPtr++;
         }
 
-        //filling spaces to the end, instead of appending spaces to the next container
+        // filling spaces to the end, instead of appending spaces to the next container
         while (tokenizationsIt.hasNext()) {
             LayoutToken nextToken = tokenizationsIt.peek();
             if (LayoutTokensUtil.spaceyToken(nextToken.t()) || LayoutTokensUtil.newLineToken(nextToken.t())) {
@@ -105,12 +106,11 @@ public class TaggingTokenSynchronizer implements Iterator<LabeledTokensContainer
             }
         }
 
-        //resultToken = LayoutTokensUtil.removeSpecialVariables(resultToken);
+        // resultToken = LayoutTokensUtil.removeSpecialVariables(resultToken);
 
         tokensAndLabelsPtr++;
-        LabeledTokensContainer labeledTokensContainer =
-                new LabeledTokensContainer(layoutTokenBuffer, resultToken, TaggingLabels.labelFor(grobidModel, label),
-                GenericTaggerUtils.isBeginningOfEntity(label));
+        LabeledTokensContainer labeledTokensContainer = new LabeledTokensContainer(layoutTokenBuffer, resultToken,
+                TaggingLabels.labelFor(grobidModel, label), GenericTaggerUtils.isBeginningOfEntity(label));
 
         labeledTokensContainer.setFeatureString(featureString);
         labeledTokensContainer.setTrailingSpace(addSpace);
@@ -122,7 +122,8 @@ public class TaggingTokenSynchronizer implements Iterator<LabeledTokensContainer
     private String prepareErrorMessage(int preTokenizationPtr) {
         int limit = 5;
         StringBuilder sb = new StringBuilder();
-        for (int i = Math.max(0, tokensAndLabelsPtr - limit); i < Math.min(tokensAndLabelsPtr + limit, tokensAndLabels.size()); i++) {
+        for (int i = Math.max(0, tokensAndLabelsPtr - limit); i < Math
+                .min(tokensAndLabelsPtr + limit, tokensAndLabels.size()); i++) {
             Triple<String, String, String> s = tokensAndLabels.get(i);
             if (s != null) {
                 String str = i == tokensAndLabelsPtr ? "-->\t'" + s.getA() + "'" : "\t'" + s.getA() + "'";
@@ -131,17 +132,24 @@ public class TaggingTokenSynchronizer implements Iterator<LabeledTokensContainer
         }
 
         StringBuilder sb2 = new StringBuilder();
-        for (int i = Math.max(0, preTokenizationPtr - limit * 2); i < Math.min(preTokenizationPtr + limit * 2, tokenizations.size()); i++) {
+        for (int i = Math.max(0, preTokenizationPtr - limit * 2); i < Math
+                .min(preTokenizationPtr + limit * 2, tokenizations.size()); i++) {
             LayoutToken s = tokenizations.get(i);
             String str = i == preTokenizationPtr ? "-->\t'" + s.t() + "'" : "\t'" + s.t() + "'";
             sb2.append(str).append("\n");
         }
 
-        return "IMPLEMENTATION ERROR: " +
-            "tokens (at pos: " + tokensAndLabelsPtr + ") got dissynchronized with tokenizations (at pos: "
-            + tokenizationsPtr + " )\n" +
-            "labelsAndTokens +-: \n" + sb.toString() +
-            "\n" + "tokenizations +-: " + sb2;
+        return "IMPLEMENTATION ERROR: "
+                + "tokens (at pos: "
+                + tokensAndLabelsPtr
+                + ") got dissynchronized with tokenizations (at pos: "
+                + tokenizationsPtr
+                + " )\n"
+                + "labelsAndTokens +-: \n"
+                + sb.toString()
+                + "\n"
+                + "tokenizations +-: "
+                + sb2;
     }
 
     @Override

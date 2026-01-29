@@ -24,8 +24,12 @@ public class LayoutTokensUtilIntegrationTest {
     @Test
     public void testDoesRequireDehyphenization2() throws Exception {
 
-        DocumentSource documentSource = DocumentSource.fromPdf(new File("src/test/resources/org/grobid/core/utilities/dehypenisation1.pdf"));
-        Document result = Engine.getEngine(false).getParsers().getSegmentationParser().processing(documentSource, GrobidAnalysisConfig.defaultInstance());
+        DocumentSource documentSource = DocumentSource
+                .fromPdf(new File("src/test/resources/org/grobid/core/utilities/dehypenisation1.pdf"));
+        Document result = Engine.getEngine(false)
+                .getParsers()
+                .getSegmentationParser()
+                .processing(documentSource, GrobidAnalysisConfig.defaultInstance());
 
         assertThat(LayoutTokensUtil.doesRequireDehypenisation(result.getTokenizations(), 7), is(true));
 
@@ -34,8 +38,12 @@ public class LayoutTokensUtilIntegrationTest {
     @Test
     public void testDoesRequireDehyphenization() throws Exception {
 
-        DocumentSource documentSource = DocumentSource.fromPdf(new File("src/test/resources/org/grobid/core/utilities/dehypenisation2.pdf"));
-        Document result = Engine.getEngine(false).getParsers().getSegmentationParser().processing(documentSource, GrobidAnalysisConfig.defaultInstance());
+        DocumentSource documentSource = DocumentSource
+                .fromPdf(new File("src/test/resources/org/grobid/core/utilities/dehypenisation2.pdf"));
+        Document result = Engine.getEngine(false)
+                .getParsers()
+                .getSegmentationParser()
+                .processing(documentSource, GrobidAnalysisConfig.defaultInstance());
 
         assertThat(LayoutTokensUtil.doesRequireDehypenisation(result.getTokenizations(), 7), is(true));
 

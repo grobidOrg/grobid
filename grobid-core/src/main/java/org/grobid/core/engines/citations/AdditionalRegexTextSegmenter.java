@@ -1,11 +1,8 @@
 package org.grobid.core.engines.citations;
 
-import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -14,15 +11,17 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *  DEPRECATED ! 
+ * DEPRECATED !
  *
- *  A machine learning model is used now to segment references, see org.grobid.core.engines.ReferenceSegmenterParser
- * 
+ * A machine learning model is used now to segment references, see org.grobid.core.engines.ReferenceSegmenterParser
+ *
  */
 public class AdditionalRegexTextSegmenter {
     public static final Logger LOGGER = LoggerFactory.getLogger(AdditionalRegexTextSegmenter.class.getName());
-    private final static Pattern BRACKET_NUMBER_LOOKUP_PATTERN = Pattern.compile("(?s).{0,15}\\[\\d\\] .{10,701}\\n\\[\\d+\\] .*");
-    private final static Pattern BULLET_NUMBER_LOOKUP_PATTERN = Pattern.compile("(?s).{0,10}1\\. .{10,701}\\n[\\s0]*2\\. .*");
+    private final static Pattern BRACKET_NUMBER_LOOKUP_PATTERN = Pattern
+            .compile("(?s).{0,15}\\[\\d\\] .{10,701}\\n\\[\\d+\\] .*");
+    private final static Pattern BULLET_NUMBER_LOOKUP_PATTERN = Pattern
+            .compile("(?s).{0,10}1\\. .{10,701}\\n[\\s0]*2\\. .*");
 
     private final static Pattern BRACKET_SPLIT_PATTERN = Pattern.compile("\\[(\\d+)\\] ");
     private final static Pattern BULLET_SPLIT_PATTERN = Pattern.compile("\\n(\\d+)\\. ");
@@ -61,7 +60,7 @@ public class AdditionalRegexTextSegmenter {
                 parts = splitGenerically(referencesText);
             }
         } catch (StackOverflowError e) {
-            //TODO: FIX regexps properly
+            // TODO: FIX regexps properly
             LOGGER.error("Stackoverflow");
             throw new RuntimeException("Runtime exception with stackoverflow in AdditionalRegexTextSegmenter");
         }
@@ -90,9 +89,6 @@ public class AdditionalRegexTextSegmenter {
         }
         return citations;
     }
-
-
-
 
     // splits along bracketed number citations: [1] [2].
     // checks for consecutive numbering.
@@ -125,7 +121,6 @@ public class AdditionalRegexTextSegmenter {
         return parts;
     }
 
-
     // splits along numbered citations: 1. 2. 3.
     // checks for consecutive numbering
     private List<String> splitAlongBulletNumbers(String referencesText) {
@@ -134,13 +129,14 @@ public class AdditionalRegexTextSegmenter {
         Matcher matcher = BULLET_SPLIT_PATTERN.matcher(referencesText);
         Integer currentNumber;
         Integer currentSegmentEndIndex;
-        //init
+        // init
         if (!matcher.find()) {
             return Collections.emptyList();
         }
         Integer currentSegmentStartIndex = matcher.end();
         Integer previousNumber = Integer.valueOf(matcher.group(1));
-        // a workaround to add the first citation, where there might be no linebreak at the beginning of the referencesText.
+        // a workaround to add the first citation, where there might be no linebreak at the beginning of the
+        // referencesText.
         if (previousNumber == 2) {
             parts.add(referencesText.substring(2, matcher.start()));
         }
@@ -207,8 +203,8 @@ public class AdditionalRegexTextSegmenter {
             }
             currentFirstChar = referencesText.charAt(matcher.end());
             currentSegmentEndIndex = matcher.start();
-            if (currentSegmentEndIndex - currentSegmentStartIndex > MINIMUM_SEGMENT_LENGTH &&
-                    (!citationsAreOrdered || isValidNextFirstLetter(previousFirstChar, currentFirstChar, gapsize))) {
+            if (currentSegmentEndIndex - currentSegmentStartIndex > MINIMUM_SEGMENT_LENGTH
+                    && (!citationsAreOrdered || isValidNextFirstLetter(previousFirstChar, currentFirstChar, gapsize))) {
                 parts.add(referencesText.substring(currentSegmentStartIndex, currentSegmentEndIndex));
                 previousFirstChar = currentFirstChar;
                 currentSegmentStartIndex = currentSegmentEndIndex + 2;
@@ -219,9 +215,9 @@ public class AdditionalRegexTextSegmenter {
     }
 
     /**
-     * @param maxGapsize the maximum number of letters that are allowed to skip.
-     *                   if previousFirstLetter is followed by uncommon letters (like Q), then
-     *                   gapsize is increased.
+     * @param maxGapsize
+     * the maximum number of letters that are allowed to skip. if previousFirstLetter is followed by uncommon letters
+     * (like Q), then gapsize is increased.
      */
     private boolean isValidNextFirstLetter(char previousFirstLetter, char firstLetter, int maxGapsize) {
         if (firstLetter < previousFirstLetter) {

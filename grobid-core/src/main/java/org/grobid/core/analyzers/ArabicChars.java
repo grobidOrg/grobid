@@ -22,56 +22,56 @@ package org.grobid.core.analyzers;
  */
 public class ArabicChars {
 
-	/**
-	 * Method for mapping some Arabic characters to their equivalent ASCII codes. 
-	 */
-	public static char arabicCharacters(char c) {
-		char car;
-		switch (c) {
-	   		case '،':
-	     		car = ',';
-	   	 		break;
-	   	 	case '؛':
-		   		car = ';';
-		 		break;    
-			case '؟':
-		     	car = '?';
-	   		 	break;
-			case '٠':
-		     	car = '0';
-		     	break;
-	   		 case '١':
-		     	car = '1';
-				break;
-	   		 case '٢':
-		     	car = '2';
-				break;
-	   		 case '٣':
-		     	car = '3';
-	   		 	break;
-	   		 case '٤':
-		     	car = '4';
-	   		 	break;
-	   		 case '٥':
-		     	car = '5';
-	   		 	break;
-	   		 case '٦':
-		     	car = '6';
-	   		 	break;
-	   		 case '٧':
-	      		car = '7';
-				break;
-	   		 case '٨':
-		     	car = '8';
-		     	break;
-	   		 case '٩':
-		     	car = '9';
-	   		 	break;
-	  		 default:
-	     		car = c;    
-	     	   	break;
-	 	}
-		return car;
-	}
-	
+    /**
+     * Method for mapping some Arabic characters to their equivalent ASCII codes.
+     */
+    public static char arabicCharacters(char c) {
+        char car;
+        switch (c) {
+            case '،' :
+                car = ',';
+                break;
+            case '؛' :
+                car = ';';
+                break;
+            case '؟' :
+                car = '?';
+                break;
+            case '٠' :
+                car = '0';
+                break;
+            case '١' :
+                car = '1';
+                break;
+            case '٢' :
+                car = '2';
+                break;
+            case '٣' :
+                car = '3';
+                break;
+            case '٤' :
+                car = '4';
+                break;
+            case '٥' :
+                car = '5';
+                break;
+            case '٦' :
+                car = '6';
+                break;
+            case '٧' :
+                car = '7';
+                break;
+            case '٨' :
+                car = '8';
+                break;
+            case '٩' :
+                car = '9';
+                break;
+            default :
+                car = c;
+                break;
+        }
+        return car;
+    }
+
 }

@@ -17,7 +17,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.*;
 
-
 public class TextUtilitiesTest extends EngineTest {
 
     @Test
@@ -36,108 +35,123 @@ public class TextUtilitiesTest extends EngineTest {
 
     @Test
     public void testDephynization_withoutSpaces() {
-        assertThat(TextUtilities.dehyphenize("This is hype-\nnized.We are here."),
-            is("This is hypenized.We are here."));
-        assertThat(TextUtilities.dehyphenize("This is hype-\nnized. We are here."),
-            is("This is hypenized. We are here."));
+        assertThat(
+                TextUtilities.dehyphenize("This is hype-\nnized.We are here."),
+                is("This is hypenized.We are here."));
+        assertThat(
+                TextUtilities.dehyphenize("This is hype-\nnized. We are here."),
+                is("This is hypenized. We are here."));
     }
 
     @Test
     public void testDephynization_withSpaces() {
-        assertThat(TextUtilities.dehyphenize("This is hype- \n nized. We are here."), is("This is hypenized. We are here."));
-        assertThat(TextUtilities.dehyphenize("This is hype- \nnized. We are here."), is("This is hypenized. We are here."));
-        assertThat(TextUtilities.dehyphenize("This is hype - \n nized. We are here."), is("This is hypenized. We are here."));
+        assertThat(
+                TextUtilities.dehyphenize("This is hype- \n nized. We are here."),
+                is("This is hypenized. We are here."));
+        assertThat(
+                TextUtilities.dehyphenize("This is hype- \nnized. We are here."),
+                is("This is hypenized. We are here."));
+        assertThat(
+                TextUtilities.dehyphenize("This is hype - \n nized. We are here."),
+                is("This is hypenized. We are here."));
     }
 
     @Test
     public void testDephynization_withDigits_shouldNotDephypenize() {
-//        assertThat(TextUtilities.dehyphenize("This is 1234-\n44A. Patent."), is("This is 123444A. Patent."));
-//        assertThat(TextUtilities.dehyphenize("This is 1234 - \n44A. Patent."), is("This is 123444A. Patent."));
+        // assertThat(TextUtilities.dehyphenize("This is 1234-\n44A. Patent."), is("This is 123444A. Patent."));
+        // assertThat(TextUtilities.dehyphenize("This is 1234 - \n44A. Patent."), is("This is 123444A. Patent."));
         assertThat(TextUtilities.dehyphenize("This is 1234-44A. Patent."), is("This is 1234-44A. Patent."));
         assertThat(TextUtilities.dehyphenize("This is 1234 - 44A. Patent."), is("This is 1234 - 44A. Patent."));
     }
 
     @Test
     public void testDephynization_citation() {
-        assertThat(TextUtilities.dehyphenize("Anonymous. Runtime process infection. Phrack, 11(59):ar-\n" +
-                "            ticle 8 of 18, December 2002."),
-            is("Anonymous. Runtime process infection. Phrack, 11(59):article 8 of 18, December 2002."));
+        assertThat(
+                TextUtilities.dehyphenize(
+                        "Anonymous. Runtime process infection. Phrack, 11(59):ar-\n"
+                                + "            ticle 8 of 18, December 2002."),
+                is("Anonymous. Runtime process infection. Phrack, 11(59):article 8 of 18, December 2002."));
     }
 
     @Test
     public void testDephynization_falseTruncation_shouldReturnSameString() {
-        assertThat(TextUtilities.dehyphenize("sd. Linux on-the-fly kernel patching without lkm. Phrack, 11(58):article 7 of 15, December 2001."),
-            is("sd. Linux on-the-fly kernel patching without lkm. Phrack, 11(58):article 7 of 15, December 2001."));
+        assertThat(
+                TextUtilities.dehyphenize(
+                        "sd. Linux on-the-fly kernel patching without lkm. Phrack, 11(58):article 7 of 15, December 2001."),
+                is("sd. Linux on-the-fly kernel patching without lkm. Phrack, 11(58):article 7 of 15, December 2001."));
 
-//        assertThat(TextUtilities.dehyphenize("sd. Linux on-the-fly kernel patching without lkm. Phrack, \n" +
-//                "11(58):article 7 of 15, December 2001. \n" +
-//                "[41] K. Seifried. \n" +
-//                "Honeypotting with VMware: basics. \n" +
-//                "http://www.seifried.org/security/ids/ \n" +
-//                "20020107-honeypot-vmware-basics.ht%ml. \n" +
-//                "[42] Silvio Cesare. \n" +
-//                "Runtime Kernel Kmem Patch-\n" +
-//                "ing. \n" +
-//                "http://www.big.net.au/˜silvio/ \n" +
-//                "runtime-kernel-kmem-patching.txt."), startsWith("sd. Linux on-the-fly kernel"));
+        // assertThat(TextUtilities.dehyphenize("sd. Linux on-the-fly kernel patching without lkm. Phrack, \n" +
+        // "11(58):article 7 of 15, December 2001. \n" +
+        // "[41] K. Seifried. \n" +
+        // "Honeypotting with VMware: basics. \n" +
+        // "http://www.seifried.org/security/ids/ \n" +
+        // "20020107-honeypot-vmware-basics.ht%ml. \n" +
+        // "[42] Silvio Cesare. \n" +
+        // "Runtime Kernel Kmem Patch-\n" +
+        // "ing. \n" +
+        // "http://www.big.net.au/˜silvio/ \n" +
+        // "runtime-kernel-kmem-patching.txt."), startsWith("sd. Linux on-the-fly kernel"));
     }
 
     @Test
     public void testDephynization_FalseTruncation_shouldReturnSameString() {
-        assertThat(TextUtilities.dehyphenize("Nettop also relies on VMware Workstation for its VMM. Ultimately, since VMware is a closed-source product, it is impossible to verify this claim through open review."),
-            is("Nettop also relies on VMware Workstation for its VMM. Ultimately, since VMware is a closed-source product, it is impossible to verify this claim through open review."));
+        assertThat(
+                TextUtilities.dehyphenize(
+                        "Nettop also relies on VMware Workstation for its VMM. Ultimately, since VMware is a closed-source product, it is impossible to verify this claim through open review."),
+                is(
+                        "Nettop also relies on VMware Workstation for its VMM. Ultimately, since VMware is a closed-source product, it is impossible to verify this claim through open review."));
     }
 
     @Test
     public void testDephynization_NormalCase() {
-        assertThat(TextUtilities.dehyphenize("Implementation bugs in the VMM can compromise its ability to provide secure isolation, and modify-\n ing the VMM presents the risk of introducing bugs."),
-            is("Implementation bugs in the VMM can compromise its ability to provide secure isolation, and modifying the VMM presents the risk of introducing bugs."));
+        assertThat(
+                TextUtilities.dehyphenize(
+                        "Implementation bugs in the VMM can compromise its ability to provide secure isolation, and modify-\n ing the VMM presents the risk of introducing bugs."),
+                is(
+                        "Implementation bugs in the VMM can compromise its ability to provide secure isolation, and modifying the VMM presents the risk of introducing bugs."));
     }
 
     @Test
     public void testGetLastToken_spaceParenthesis() {
-        assertThat(TextUtilities.getLastToken("secure isolation, and modify"),
-            is("modify"));
-        assertThat(TextUtilities.getLastToken("secure isolation, (and modify"),
-            is("modify"));
-        assertThat(TextUtilities.getLastToken("secure isolation, and) modify"),
-            is("modify"));
-        assertThat(TextUtilities.getLastToken("secure isolation, and (modify"),
-            is("(modify"));
-        assertThat(TextUtilities.getLastToken("secure isolation, .and modify"),
-            is("modify"));
+        assertThat(TextUtilities.getLastToken("secure isolation, and modify"), is("modify"));
+        assertThat(TextUtilities.getLastToken("secure isolation, (and modify"), is("modify"));
+        assertThat(TextUtilities.getLastToken("secure isolation, and) modify"), is("modify"));
+        assertThat(TextUtilities.getLastToken("secure isolation, and (modify"), is("(modify"));
+        assertThat(TextUtilities.getLastToken("secure isolation, .and modify"), is("modify"));
     }
-
 
     @Test
     public void testGetFirstToken_spaceParenthesis() {
-        assertThat(TextUtilities.getFirstToken("Secure isolation, and modify"),
-            is("Secure"));
-        assertThat(TextUtilities.getFirstToken(" secure isolation, (and modify"),
-            is("secure"));
-        assertThat(TextUtilities.getFirstToken("\n secure isolation, and) modify"),
-            is("\n"));
-        assertThat(TextUtilities.getFirstToken(" \nsecure isolation, and (modify"),
-            is("\nsecure"));
-        assertThat(TextUtilities.getFirstToken("\nsecure isolation, and (modify"),
-            is("\nsecure"));
+        assertThat(TextUtilities.getFirstToken("Secure isolation, and modify"), is("Secure"));
+        assertThat(TextUtilities.getFirstToken(" secure isolation, (and modify"), is("secure"));
+        assertThat(TextUtilities.getFirstToken("\n secure isolation, and) modify"), is("\n"));
+        assertThat(TextUtilities.getFirstToken(" \nsecure isolation, and (modify"), is("\nsecure"));
+        assertThat(TextUtilities.getFirstToken("\nsecure isolation, and (modify"), is("\nsecure"));
     }
 
     @Ignore
     @Test
     public void testDephynizationHard_withoutSpaces() {
-        assertThat(TextUtilities.dehyphenizeHard("This is hype-\nnized.We are here."),
-            is("This is hypenized.We are here."));
-        assertThat(TextUtilities.dehyphenizeHard("This is hype-\nnized. We are here."),
-            is("This is hypenized. We are here."));
+        assertThat(
+                TextUtilities.dehyphenizeHard("This is hype-\nnized.We are here."),
+                is("This is hypenized.We are here."));
+        assertThat(
+                TextUtilities.dehyphenizeHard("This is hype-\nnized. We are here."),
+                is("This is hypenized. We are here."));
     }
 
     @Ignore
     @Test
     public void testDephynizationHard_withSpaces() {
-        assertThat(TextUtilities.dehyphenizeHard("This is hype- \n nized. We are here."), is("This is hypenyzed. We are here."));
-        assertThat(TextUtilities.dehyphenizeHard("This is hype- \nnized. We are here."), is("This is hypenyzed. We are here."));
-        assertThat(TextUtilities.dehyphenizeHard("This is hype - \n nized. We are here."), is("This is hypenyzed. We are here."));
+        assertThat(
+                TextUtilities.dehyphenizeHard("This is hype- \n nized. We are here."),
+                is("This is hypenyzed. We are here."));
+        assertThat(
+                TextUtilities.dehyphenizeHard("This is hype- \nnized. We are here."),
+                is("This is hypenyzed. We are here."));
+        assertThat(
+                TextUtilities.dehyphenizeHard("This is hype - \n nized. We are here."),
+                is("This is hypenyzed. We are here."));
     }
 
     @Ignore
@@ -150,9 +164,11 @@ public class TextUtilitiesTest extends EngineTest {
     @Ignore
     @Test
     public void testDephynizationHard_citation() {
-        assertThat(TextUtilities.dehyphenizeHard("Anonymous. Runtime process infection. Phrack, 11(59):ar-\n+ " +
-                "            ticle 8 of 18, December 2002."),
-            is("Anonymous. Runtime process infection. Phrack, 11(59):article 8 of 18, December 2002."));
+        assertThat(
+                TextUtilities.dehyphenizeHard(
+                        "Anonymous. Runtime process infection. Phrack, 11(59):ar-\n+ "
+                                + "            ticle 8 of 18, December 2002."),
+                is("Anonymous. Runtime process infection. Phrack, 11(59):article 8 of 18, December 2002."));
     }
 
     @Test
@@ -208,7 +224,7 @@ public class TextUtilitiesTest extends EngineTest {
 
     @Test
     public void testWordShape() {
-       testWordShape("This", "Xxxx", "Xx");
+        testWordShape("This", "Xxxx", "Xx");
         testWordShape("Equals", "Xxxx", "Xx");
         testWordShape("O'Conor", "X'Xxxx", "X'Xx");
         testWordShape("McDonalds", "XxXxxx", "XxXx");
@@ -252,91 +268,106 @@ public class TextUtilitiesTest extends EngineTest {
 
     @Test
     public void testDoesRequireDehypenisation_standard_shouldReturnTrue() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sample dehypen-\nyzation text");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a sample dehypen-\nyzation text");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 9), is(true));
     }
 
     @Test
     public void testDoesRequireDehypenisation_withSpaceAfter_shouldReturnTrue() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sample dehypen- \nyzation text");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a sample dehypen- \nyzation text");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 9), is(true));
     }
 
     @Test
     public void testDoesRequireDehypenisation_withSpacesAfter_shouldReturnTrue() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sample dehypen-   \n    yzation text");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a sample dehypen-   \n    yzation text");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 9), is(true));
     }
 
     @Test
     public void testDoesRequireDehypenisation_withSpaceBefore_shouldReturnTrue() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sample dehypen -\nyzation text");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a sample dehypen -\nyzation text");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 10), is(true));
     }
 
     @Test
     public void testDoesRequireDehypenisation_withSpacesBefore_shouldReturnTrue() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sample dehypen    -\nyzation text");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a sample dehypen    -\nyzation text");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 13), is(true));
     }
 
     @Test
     public void testDoesRequireDehypenisation_usualWord_shouldReturnFalse() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sample open-source text");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a sample open-source text");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 9), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_usualWordWithSpace_shouldReturnFalse() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sample open- source text");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a sample open- source text");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 9), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_usualWordWith2Space_shouldReturnFalse() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sample open - source text");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a sample open - source text");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 9), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_sequence_shouldReturnFalse() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sample ABC123-3434 text");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a sample ABC123-3434 text");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 9), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_sequence2_shouldReturnFalse() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sample ABC123 - 3434 text");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a sample ABC123 - 3434 text");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 9), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_sequence3_shouldReturnFalse() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a sample ABC123    -     3434 text");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a sample ABC123    -     3434 text");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 9), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_trickySequence1_shouldReturnFalse() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a bad sample -\n\n");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a bad sample -\n\n");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 10), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_trickySequence2_shouldReturnFalse() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a bad sample -");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a bad sample -");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 10), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_trickySequence3_shouldReturnFalse() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a bad sample - \n\n    ");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a bad sample - \n\n    ");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 10), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_trickySequence4_shouldReturnFalse() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a bad sample-\n\n");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a bad sample-\n\n");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 9), is(false));
     }
 
@@ -348,37 +379,46 @@ public class TextUtilitiesTest extends EngineTest {
 
     @Test
     public void testDoesRequireDehypenisation_trickySequence6_shouldReturnFalse() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("This is a bad sample- \n\n    ");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("This is a bad sample- \n\n    ");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 9), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_trickySequence7_shouldReturnTrue() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("-\ncore is a bad sample.");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("-\ncore is a bad sample.");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 0), is(true));
     }
 
     @Test
     public void testDoesRequireDehypenisation_trickySequence8_shouldReturnTrue() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("- \n\n core is a bad sample.");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken("- \n\n core is a bad sample.");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 0), is(true));
     }
 
     @Test
     public void testDoesRequireDehypenisation_falseFriend1_shouldReturnTrue() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("which was mediated through the inhibition of expression of α2-\n integrin (1,2). ");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken(
+                        "which was mediated through the inhibition of expression of α2-\n integrin (1,2). ");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 19), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_falseFriend2_shouldReturnTrue() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("which was mediated through the inhibition of expression of α2 -\n integrin (1,2). ");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken(
+                        "which was mediated through the inhibition of expression of α2 -\n integrin (1,2). ");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 19), is(false));
     }
 
     @Test
     public void testDoesRequireDehypenisation_falseFriend3_shouldReturnTrue() {
-        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance().tokenizeWithLayoutToken("which was mediated through the inhibition of expression of α 2  - \n  integrin (1,2). ");
+        List<LayoutToken> tokens = GrobidDefaultAnalyzer.getInstance()
+                .tokenizeWithLayoutToken(
+                        "which was mediated through the inhibition of expression of α 2  - \n  integrin (1,2). ");
         assertThat(TextUtilities.doesRequireDehypenisation(tokens, 19), is(false));
     }
 
@@ -394,33 +434,41 @@ public class TextUtilitiesTest extends EngineTest {
 
     @Test
     public void testOrcidPattern() {
-        String[] falseOrcids = {"1234", "1234-5698-137X", "0000-0001-9877-137Y","http://orcid.fr/0000-0001-9877-137X"};
-        String[] trueOrcids = {"0000-0001-9877-137X", "http://orcid.org/0000-0001-9877-137X", "orcid.org/0000-0001-9877-137X"};
-        for(String falseOrcid :  falseOrcids) {
+        String[] falseOrcids = {"1234", "1234-5698-137X", "0000-0001-9877-137Y", "http://orcid.fr/0000-0001-9877-137X"};
+        String[] trueOrcids = {"0000-0001-9877-137X", "http://orcid.org/0000-0001-9877-137X",
+                "orcid.org/0000-0001-9877-137X"};
+        for (String falseOrcid : falseOrcids) {
             Matcher orcidMatcher = TextUtilities.ORCIDPattern.matcher(falseOrcid);
-            assertFalse (orcidMatcher.find());
+            assertFalse(orcidMatcher.find());
         }
-        for(String trueOrcid :  trueOrcids) {
+        for (String trueOrcid : trueOrcids) {
             Matcher orcidMatcher = TextUtilities.ORCIDPattern.matcher(trueOrcid);
             if (orcidMatcher.find()) {
-                assertThat(orcidMatcher.group(1) + "-"
-                    + orcidMatcher.group(2) + "-" + orcidMatcher.group(3) + "-" + orcidMatcher.group(4) , is("0000-0001-9877-137X"));
+                assertThat(
+                        orcidMatcher.group(1)
+                                + "-"
+                                + orcidMatcher.group(2)
+                                + "-"
+                                + orcidMatcher.group(3)
+                                + "-"
+                                + orcidMatcher.group(4),
+                        is("0000-0001-9877-137X"));
             }
         }
     }
 
     @Test
     public void testMatchTokenAndString() throws Exception {
-        final String input = "This work is available at https://github.com/lfoppiano/ \n" +
-            "supercon2. The repository contains the code of the \n" +
-            "SuperCon 2 interface, the curation workflow, and the \n" +
-            "\n" +
-            "Table 2. Data support, the number of entities for each label in \n" +
-            "each of the datasets used for evaluating the ML models. The \n" +
-            "base dataset is the original dataset described in [18], and the \n" +
-            "curation dataset is automatically collected based on the data-\n" +
-            "base corrections by the interface and manually corrected. \n" +
-            "\n";
+        final String input = "This work is available at https://github.com/lfoppiano/ \n"
+                + "supercon2. The repository contains the code of the \n"
+                + "SuperCon 2 interface, the curation workflow, and the \n"
+                + "\n"
+                + "Table 2. Data support, the number of entities for each label in \n"
+                + "each of the datasets used for evaluating the ML models. The \n"
+                + "base dataset is the original dataset described in [18], and the \n"
+                + "curation dataset is automatically collected based on the data-\n"
+                + "base corrections by the interface and manually corrected. \n"
+                + "\n";
 
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
         final String inputReal = "This work is available at https://github.com/lfoppiano/ supercon2. The repository contains the code of the SuperCon 2 interface, the curation workflow, and the Table 2. Data support, the number of entities for each label in each of the datasets used for evaluating the ML models. The base dataset is the original dataset described in [18], and the curation dataset is automatically collected based on the database corrections by the interface and manually corrected. ";
@@ -436,19 +484,18 @@ public class TextUtilitiesTest extends EngineTest {
 
     }
 
-
     @Test
     public void testMatchTokenAndString_twoElements() throws Exception {
-        final String input = "This work is available at https://github.com/lfoppiano/ \n" +
-            "supercon2. The repository contains the code of the \n" +
-            "SuperCon 2 interface, the curation workflow, and the \n" +
-            "\n" +
-            "Table 2. Data support, the number of entities for each label in \n" +
-            "each of the datasets used for evaluating the ML models. The \n" +
-            "base dataset is the original dataset described in [18], and the \n" +
-            "curation dataset is automatically collected based on the data-\n" +
-            "base corrections by the interface and manually corrected. \n" +
-            "\n";
+        final String input = "This work is available at https://github.com/lfoppiano/ \n"
+                + "supercon2. The repository contains the code of the \n"
+                + "SuperCon 2 interface, the curation workflow, and the \n"
+                + "\n"
+                + "Table 2. Data support, the number of entities for each label in \n"
+                + "each of the datasets used for evaluating the ML models. The \n"
+                + "base dataset is the original dataset described in [18], and the \n"
+                + "curation dataset is automatically collected based on the data-\n"
+                + "base corrections by the interface and manually corrected. \n"
+                + "\n";
 
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
         final String inputReal = "This work is available at https://github.com/lfoppiano/ supercon2. The repository contains the code of the SuperCon 2 interface, the curation workflow, and the Table 2. Data support, the number of entities for each label in each of the datasets used for evaluating the ML models. The base dataset is the original dataset described in [18], and the curation dataset is automatically collected based on the database corrections by the interface and manually corrected. ";
@@ -477,16 +524,15 @@ public class TextUtilitiesTest extends EngineTest {
 
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
         List<OffsetPosition> urlTokens = Arrays.asList(
-            new OffsetPosition(0, 3),
-            new OffsetPosition(5, 8),
-            new OffsetPosition(10, 13),
-            new OffsetPosition(15, 18)
-        );
-        
+                new OffsetPosition(0, 3),
+                new OffsetPosition(5, 8),
+                new OffsetPosition(10, 13),
+                new OffsetPosition(15, 18));
+
         List<OffsetPosition> offsetPositions = TextUtilities.matchTokenAndString(tokenisedInput, input, urlTokens);
 
         assertThat(offsetPositions, hasSize(4));
-        
+
         OffsetPosition url0 = offsetPositions.get(0);
         assertThat(url0.start, is(0));
         assertThat(url0.end, is(19));
@@ -519,18 +565,18 @@ public class TextUtilitiesTest extends EngineTest {
 
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
         List<OffsetPosition> annotationTokenPositions = Arrays.asList(
-            new OffsetPosition(4, 7),
-            new OffsetPosition(9, 12),
-            new OffsetPosition(15, 18),
-            new OffsetPosition(27, 30),
-            new OffsetPosition(49, 52),
-            new OffsetPosition(71, 74),
-            new OffsetPosition(103, 106),
-            new OffsetPosition(109, 110),
-            new OffsetPosition(125, 126)
-        );
+                new OffsetPosition(4, 7),
+                new OffsetPosition(9, 12),
+                new OffsetPosition(15, 18),
+                new OffsetPosition(27, 30),
+                new OffsetPosition(49, 52),
+                new OffsetPosition(71, 74),
+                new OffsetPosition(103, 106),
+                new OffsetPosition(109, 110),
+                new OffsetPosition(125, 126));
 
-        List<OffsetPosition> offsetPositions = TextUtilities.matchTokenAndString(tokenisedInput, input, annotationTokenPositions);
+        List<OffsetPosition> offsetPositions = TextUtilities
+                .matchTokenAndString(tokenisedInput, input, annotationTokenPositions);
 
         assertThat(offsetPositions, hasSize(9));
 
@@ -554,13 +600,13 @@ public class TextUtilitiesTest extends EngineTest {
 
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
         List<OffsetPosition> annotationTokenPositions = Arrays.asList(
-            new OffsetPosition(4, 7),
-            new OffsetPosition(40, 41),
-            new OffsetPosition(62, 63),
-            new OffsetPosition(79, 84)
-        );
+                new OffsetPosition(4, 7),
+                new OffsetPosition(40, 41),
+                new OffsetPosition(62, 63),
+                new OffsetPosition(79, 84));
 
-        List<OffsetPosition> offsetPositions = TextUtilities.matchTokenAndString(tokenisedInput, input, annotationTokenPositions);
+        List<OffsetPosition> offsetPositions = TextUtilities
+                .matchTokenAndString(tokenisedInput, input, annotationTokenPositions);
 
         assertThat(offsetPositions, hasSize(4));
 

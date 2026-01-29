@@ -16,4 +16,3 @@ public class GrobidServiceConfiguration extends Configuration {
         this.grobid = grobid;
     }
 }
-

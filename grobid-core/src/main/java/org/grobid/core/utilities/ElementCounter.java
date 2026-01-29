@@ -1,6 +1,5 @@
 package org.grobid.core.utilities;
 
-
 import com.google.common.base.Function;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
@@ -11,6 +10,9 @@ import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class ElementCounter<T> implements Serializable {
 
@@ -48,8 +50,7 @@ public class ElementCounter<T> implements Serializable {
         return cnts;
     }
 
-
-    //Jackson
+    // Jackson
     public void setCountItems(List<ElementCounterItem<T>> items) {
         for (ElementCounterItem<T> i : items) {
             cnts.put(i.getItem(), i.getCnt());
@@ -72,18 +73,17 @@ public class ElementCounter<T> implements Serializable {
     }
 
     public List<ElementCounterItem<T>> getCountItems() {
-        return Lists.newArrayList(Iterables.transform(getCnts().entrySet(), new Function<Map.Entry<T, Integer>, ElementCounterItem<T>>() {
-            @Override
-            public ElementCounterItem<T> apply(Map.Entry<T, Integer> input) {
-                return new ElementCounterItem<T>(input.getKey(), input.getValue());
-            }
-        }));
+        return Lists.newArrayList(
+                Iterables.transform(getCnts().entrySet(), new Function<Map.Entry<T, Integer>, ElementCounterItem<T>>() {
+                    @Override
+                    public ElementCounterItem<T> apply(Map.Entry<T, Integer> input) {
+                        return new ElementCounterItem<T>(input.getKey(), input.getValue());
+                    }
+                }));
     }
 
     @Override
     public String toString() {
-        return "ElementCounter{" +
-                "cnts=" + cnts +
-                '}';
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("cnts", cnts).toString();
     }
 }

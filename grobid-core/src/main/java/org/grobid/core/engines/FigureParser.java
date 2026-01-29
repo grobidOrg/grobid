@@ -27,9 +27,8 @@ class FigureParser extends AbstractParser {
     }
 
     /**
-     * The processing here is called from the full text parser in cascade.
-     * Start and end position in the higher level tokenization are indicated in
-     * the resulting Figure object.
+     * The processing here is called from the full text parser in cascade. Start and end position in the higher level
+     * tokenization are indicated in the resulting Figure object.
      */
     public Figure processing(List<LayoutToken> tokenizationFigure, String featureVector) {
         String res;
@@ -47,10 +46,10 @@ class FigureParser extends AbstractParser {
     private Figure getExtractionResult(List<LayoutToken> tokenizations, String result) {
         TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.FIGURE, result, tokenizations);
         List<TaggingTokenCluster> clusters = clusteror.cluster();
-        
+
         Figure figure = new Figure();
         figure.setLayoutTokens(tokenizations);
-        
+
         for (TaggingTokenCluster cluster : clusters) {
             if (cluster == null) {
                 continue;
@@ -67,7 +66,7 @@ class FigureParser extends AbstractParser {
                 figure.appendHeader(clusterContent);
             } else if (clusterLabel.equals(FIG_LABEL)) {
                 figure.appendLabel(clusterContent);
-                //label should also go to head
+                // label should also go to head
                 figure.appendHeader(" " + clusterContent + " ");
             } else if (clusterLabel.equals(FIG_OTHER)) {
                 figure.addDiscardedPieceTokens(cluster.concatTokens());
@@ -83,9 +82,8 @@ class FigureParser extends AbstractParser {
     /**
      * The training data creation is called from the full text training creation in cascade.
      */
-    public Pair<String, String> createTrainingData(List<LayoutToken> tokenizations,
-                                                                             String featureVector, String id) {
-        //System.out.println(tokenizations.toString() + "\n" );
+    public Pair<String, String> createTrainingData(List<LayoutToken> tokenizations, String featureVector, String id) {
+        // System.out.println(tokenizations.toString() + "\n" );
         String res = null;
         try {
             res = label(featureVector);
@@ -95,7 +93,7 @@ class FigureParser extends AbstractParser {
         if (res == null) {
             return Pair.of(null, featureVector);
         }
-        //System.out.println(res + "\n" );
+        // System.out.println(res + "\n" );
         List<Pair<String, String>> labeled = GenericTaggerUtils.getTokensAndLabels(res);
         StringBuilder sb = new StringBuilder();
 
@@ -112,8 +110,8 @@ class FigureParser extends AbstractParser {
             for (; tokPtr2 < tokenizations.size(); tokPtr2++) {
                 if (tokenizations.get(tokPtr2).getText().equals(" ")) {
                     addSpace = true;
-                } else if (tokenizations.get(tokPtr2).getText().equals("\n") ||
-                        tokenizations.get(tokPtr).getText().equals("\r")) {
+                } else if (tokenizations.get(tokPtr2).getText().equals("\n")
+                        || tokenizations.get(tokPtr).getText().equals("\r")) {
                     addEOL = true;
                 } else {
                     break;
@@ -137,11 +135,11 @@ class FigureParser extends AbstractParser {
                         // we check one ahead
                         tokPtr++;
                         tokenizationToken = tokenizations.get(tokPtr).getText();
-                        if (!tok.equals(tokenizationToken) && (tokenizations.size() > tokPtr+1)) {
+                        if (!tok.equals(tokenizationToken) && (tokenizations.size() > tokPtr + 1)) {
                             // we try another position forward (second hope!)
                             tokPtr++;
                             tokenizationToken = tokenizations.get(tokPtr).getText();
-                            if (!tok.equals(tokenizationToken) && (tokenizations.size() > tokPtr+1)) {
+                            if (!tok.equals(tokenizationToken) && (tokenizations.size() > tokPtr + 1)) {
                                 // we try another position forward (last hope!)
                                 tokPtr++;
                                 tokenizationToken = tokenizations.get(tokPtr).getText();
@@ -149,8 +147,13 @@ class FigureParser extends AbstractParser {
                                     // we return to the initial position
                                     tokPtr = tokPtr - 3;
                                     tokenizationToken = tokenizations.get(tokPtr).getText();
-                                    LOGGER.error("Implementation error, tokens out of sync: " +
-                                            tokenizationToken + " != " + tok + ", at position " + tokPtr);
+                                    LOGGER.error(
+                                            "Implementation error, tokens out of sync: "
+                                                    + tokenizationToken
+                                                    + " != "
+                                                    + tok
+                                                    + ", at position "
+                                                    + tokPtr);
                                 }
                             }
                         }
@@ -199,7 +202,7 @@ class FigureParser extends AbstractParser {
                     figOpen = true;
                 }
                 sb.append(output);
-                //continue;
+                // continue;
             }
             output = writeField(label, lastTag, tok, "<other>", "", addSpace, addEOL, 2);
             if (output != null) {
@@ -221,59 +224,62 @@ class FigureParser extends AbstractParser {
     }
 
     public String getTEIHeader(String id) {
-        return "<tei>\n" +
-                "    <teiHeader>\n" +
-                "        <fileDesc xml:id=\"_" + id + "\"/>\n" +
-                "    </teiHeader>\n" +
-                "    <text xml:lang=\"en\">\n";
+        return "<tei>\n"
+                + "    <teiHeader>\n"
+                + "        <fileDesc xml:id=\"_"
+                + id
+                + "\"/>\n"
+                + "    </teiHeader>\n"
+                + "    <text xml:lang=\"en\">\n";
     }
 
-    private boolean testClosingTag(StringBuilder buffer,
-                                   String currentTag,
-                                   String lastTag,
-                                   boolean addSpace,
-                                   boolean addEOL) {
+    private boolean testClosingTag(
+            StringBuilder buffer,
+            String currentTag,
+            String lastTag,
+            boolean addSpace,
+            boolean addEOL) {
         boolean res = false;
         if (!currentTag.equals(lastTag)) {
             res = true;
             // we close the current tag
             switch (lastTag) {
-                case "<other>":
+                case "<other>" :
                     if (addEOL)
                         buffer.append("<lb/>");
                     if (addSpace)
                         buffer.append(" ");
                     buffer.append("\n");
                     break;
-                case "<figure_head>":
+                case "<figure_head>" :
                     if (addEOL)
                         buffer.append("<lb/>");
                     if (addSpace)
                         buffer.append(" ");
                     buffer.append("</head>\n");
                     break;
-                case "<figDesc>":
+                case "<figDesc>" :
                     if (addEOL)
                         buffer.append("<lb/>");
                     if (addSpace)
                         buffer.append(" ");
                     buffer.append("</figDesc>\n");
                     break;
-                case "<label>":
+                case "<label>" :
                     if (addEOL)
                         buffer.append("<lb/>");
                     if (addSpace)
                         buffer.append(" ");
                     buffer.append("</label>\n");
                     break;
-                case "<content>":
+                case "<content>" :
                     if (addEOL)
                         buffer.append("<lb/>");
                     if (addSpace)
                         buffer.append(" ");
                     buffer.append("</content>\n");
                     break;
-                default:
+                default :
                     res = false;
                     break;
             }
@@ -281,14 +287,15 @@ class FigureParser extends AbstractParser {
         return res;
     }
 
-    private String writeField(String currentTag,
-                              String lastTag,
-                              String token,
-                              String field,
-                              String outField,
-                              boolean addSpace,
-                              boolean addEOL,
-                              int nbIndent) {
+    private String writeField(
+            String currentTag,
+            String lastTag,
+            String token,
+            String field,
+            String outField,
+            boolean addSpace,
+            boolean addEOL,
+            int nbIndent) {
         String result = null;
         if (currentTag.endsWith(field)) {
             if (currentTag.endsWith("<other>") || currentTag.endsWith("<content>")) {

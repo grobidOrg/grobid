@@ -11,17 +11,15 @@ import org.grobid.core.exceptions.GrobidResourceException;
 import jep.Jep;
 import jep.JepConfig;
 import jep.JepException;
-import jep.SubInterpreter;
 import jep.SharedInterpreter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * For using DeLFT deep learning models, we use JEP as JNI CPython interpreter.
- * JEP presents the following constraint: A thread that creates a JEP instance
- * must be reused for all method calls to that JEP instance. For ensuring this,
- * we pool the Jep instances in a singleton class.
+ * For using DeLFT deep learning models, we use JEP as JNI CPython interpreter. JEP presents the following constraint: A
+ * thread that creates a JEP instance must be reused for all method calls to that JEP instance. For ensuring this, we
+ * pool the Jep instances in a singleton class.
  */
 public class JEPThreadPool {
     private static final Logger LOGGER = LoggerFactory.getLogger(JEPThreadPool.class);
@@ -53,7 +51,7 @@ public class JEPThreadPool {
      */
     private JEPThreadPool() {
         // creating a pool of POOL_SIZE threads
-        //executor = Executors.newFixedThreadPool(POOL_SIZE); 
+        // executor = Executors.newFixedThreadPool(POOL_SIZE);
         executor = Executors.newSingleThreadExecutor();
         // each of these threads is associated to a JEP instance
         jepInstances = new ConcurrentHashMap<>();
@@ -105,29 +103,31 @@ public class JEPThreadPool {
         boolean success = false;
         try {
             File delftPath = this.getAndValidateDelftPath();
-            JepConfig config = this.getJepConfig(
-                delftPath,
-                PythonEnvironmentConfig.getInstance().getSitePackagesPath()
-            );
-            //jep = new SubInterpreter(config);
+            JepConfig config = this
+                    .getJepConfig(delftPath, PythonEnvironmentConfig.getInstance().getSitePackagesPath());
+            // jep = new SubInterpreter(config);
             try {
                 SharedInterpreter.setConfig(config);
-            } catch(Exception e) {
+            } catch (Exception e) {
                 LOGGER.info("JEP interpreter already initialized");
             }
             jep = new SharedInterpreter();
             this.initializeJepInstance(jep, delftPath);
             success = true;
             return jep;
-        } catch(JepException e) {
+        } catch (JepException e) {
             LOGGER.error("JEP initialization failed", e);
             throw new RuntimeException("JEP initialization failed", e);
-        } catch(GrobidResourceException e) {
+        } catch (GrobidResourceException e) {
             LOGGER.error("DeLFT installation path invalid, JEP initialization failed", e);
             throw new RuntimeException("DeLFT installation path invalid, JEP initialization failed", e);
         } catch (UnsatisfiedLinkError e) {
-            LOGGER.error("JEP environment not correctly installed or has incompatible binaries, JEP initialization failed", e);
-            throw new RuntimeException("JEP environment not correctly installed or has incompatible binaries, JEP initialization failed", e);
+            LOGGER.error(
+                    "JEP environment not correctly installed or has incompatible binaries, JEP initialization failed",
+                    e);
+            throw new RuntimeException(
+                    "JEP environment not correctly installed or has incompatible binaries, JEP initialization failed",
+                    e);
         } finally {
             if (!success) {
                 if (jep != null) {
@@ -145,9 +145,8 @@ public class JEPThreadPool {
     }
 
     /**
-     * To be called by the thread executing python commands via JEP.
-     * The method will return to the thread its dedicated Jep instance
-     * (or create one the first time).
+     * To be called by the thread executing python commands via JEP. The method will return to the thread its dedicated
+     * Jep instance (or create one the first time).
      */
     public synchronized Jep getJEPInstance() {
         long threadId = Thread.currentThread().getId();
@@ -183,8 +182,8 @@ public class JEPThreadPool {
     }
 
     /**
-     * Close the JEP instance for the current thread and remove it from the map.
-     * This should be called when the thread is done using JEP to free resources.
+     * Close the JEP instance for the current thread and remove it from the map. This should be called when the thread
+     * is done using JEP to free resources.
      */
     public synchronized void closeCurrentJEPInstance() {
         long threadId = Thread.currentThread().getId();
@@ -200,8 +199,7 @@ public class JEPThreadPool {
     }
 
     /**
-     * Close all JEP instances and shutdown the executor.
-     * This should be called when the application is shutting down.
+     * Close all JEP instances and shutdown the executor. This should be called when the application is shutting down.
      */
     public synchronized void shutdown() {
         LOGGER.info("Shutting down JEPThreadPool");

@@ -25,7 +25,8 @@ class CntManagerImpl implements CntManager {
 
     private void checkClass(String class1) {
         if (strCnts.containsKey(class1)) {
-            throw new IllegalStateException("Enum class name " + class1 + " coincides with the string type counter name");
+            throw new IllegalStateException(
+                    "Enum class name " + class1 + " coincides with the string type counter name");
         }
     }
 
@@ -38,7 +39,7 @@ class CntManagerImpl implements CntManager {
     public void i(Countable e, long val) {
         final String groupName = getCounterEnclosingName(e);
         checkClass(groupName);
-             
+
         classCounters.putIfAbsent(groupName, new ConcurrentHashMap<String, Counter>());
         ConcurrentMap<String, Counter> cntMap = classCounters.get(groupName);
 
@@ -176,9 +177,11 @@ class CntManagerImpl implements CntManager {
     public synchronized String toString() {
         StringBuilder sb = new StringBuilder(1000);
         for (Map.Entry<String, Map<String, Long>> m : getAllCounters().entrySet()) {
-            sb.append("\n************************************************************************************\n").
-                    append("COUNTER: ").append(m.getKey()).append("\n************************************************************************************").
-                    append("\n------------------------------------------------------------------------------------\n");
+            sb.append("\n************************************************************************************\n")
+                    .append("COUNTER: ")
+                    .append(m.getKey())
+                    .append("\n************************************************************************************")
+                    .append("\n------------------------------------------------------------------------------------\n");
             int maxLength = 0;
             for (Map.Entry<String, Long> cs : m.getValue().entrySet()) {
                 if (maxLength < cs.getKey().length()) {
@@ -186,10 +189,13 @@ class CntManagerImpl implements CntManager {
                 }
             }
 
-
             for (Map.Entry<String, Long> cs : m.getValue().entrySet()) {
-                sb.append("  ").append(cs.getKey()).append(": ").append(new String(new char[maxLength - cs.getKey().length()]).replace('\0', ' '))
-                        .append(cs.getValue()).append("\n");
+                sb.append("  ")
+                        .append(cs.getKey())
+                        .append(": ")
+                        .append(new String(new char[maxLength - cs.getKey().length()]).replace('\0', ' '))
+                        .append(cs.getValue())
+                        .append("\n");
             }
             sb.append("====================================================================================\n");
         }
@@ -207,8 +213,10 @@ class CntManagerImpl implements CntManager {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
 
         CntManagerImpl that = (CntManagerImpl) o;
 

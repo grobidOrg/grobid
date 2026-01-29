@@ -5,8 +5,7 @@ import java.util.List;
 import org.grobid.core.layout.BoundingBox;
 
 /**
- * Class corresponding to a node of the structure of a hierarchically organized document (i.e. for a table
- * of content).
+ * Class corresponding to a node of the structure of a hierarchically organized document (i.e. for a table of content).
  *
  */
 public class DocumentNode {
@@ -128,7 +127,16 @@ public class DocumentNode {
 
     public String toString(int tab) {
         StringBuilder sb = new StringBuilder();
-        sb.append(id).append(" ").append(address).append(" ").append(label).append(" ").append(startToken).append(" ").append(endToken).append("\n");
+        sb.append(id)
+                .append(" ")
+                .append(address)
+                .append(" ")
+                .append(label)
+                .append(" ")
+                .append(startToken)
+                .append(" ")
+                .append(endToken)
+                .append("\n");
 
         if (children != null) {
             for (DocumentNode node : children) {
@@ -168,20 +176,12 @@ public class DocumentNode {
         }
     }
 
-
-    /*public DocumentNode nextSlibing() {
-         if ( (children != null) && (children.size() > 0) ) {
-             return children.get(0);
-         }
-         else if (father == null) {
-             return null;
-         }
-         else {
-             for (DocumentNode node : father.children) {
-
-             }
-         }
-     }*/
+    /*
+     * public DocumentNode nextSlibing() { if ( (children != null) && (children.size() > 0) ) { return children.get(0);
+     * } else if (father == null) { return null; } else { for (DocumentNode node : father.children) {
+     *
+     * } } }
+     */
     public Integer getId() {
         return id;
     }
@@ -190,4 +190,3 @@ public class DocumentNode {
         this.id = id;
     }
 }
-

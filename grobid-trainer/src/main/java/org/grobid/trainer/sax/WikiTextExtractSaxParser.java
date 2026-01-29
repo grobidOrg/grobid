@@ -37,10 +37,11 @@ public class WikiTextExtractSaxParser extends DefaultHandler {
             accumulator.append(buffer, start, length);
     }
 
-    //static final String INSERT_PAGEDEF_SQL =
-    //	"UPDATE wiki_page SET def = ? WHERE PageID=?";
+    // static final String INSERT_PAGEDEF_SQL =
+    // "UPDATE wiki_page SET def = ? WHERE PageID=?";
 
-    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName) throws SAXException {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
         if (qName.equals("text")) {
             textBegin = false;
 
@@ -50,7 +51,7 @@ public class WikiTextExtractSaxParser extends DefaultHandler {
             StringTokenizer st = new StringTokenizer(blabla, "\n");
             while (st.hasMoreTokens()) {
                 String line = st.nextToken();
-                //System.out.println(line);
+                // System.out.println(line);
                 if (line.length() == 0)
                     continue;
 
@@ -71,10 +72,10 @@ public class WikiTextExtractSaxParser extends DefaultHandler {
                 int pos = 0;
                 while (!end) {
                     int ind = line.indexOf("[", pos);
-                    //System.out.println("ind: " + ind);
+                    // System.out.println("ind: " + ind);
                     if (ind != -1) {
                         int inde = line.indexOf(']', pos);
-                        //System.out.println("inde: " + inde);
+                        // System.out.println("inde: " + inde);
                         if (inde != -1) {
                             line0 += line.substring(pos, ind);
                             pos = inde + 2;
@@ -83,7 +84,7 @@ public class WikiTextExtractSaxParser extends DefaultHandler {
                             end = true;
                         }
                     } else {
-                        //System.out.println("pos: " + pos);
+                        // System.out.println("pos: " + pos);
                         if (pos < line.length() - 1)
                             line0 += line.substring(pos, line.length());
                         end = true;
@@ -98,26 +99,26 @@ public class WikiTextExtractSaxParser extends DefaultHandler {
                     continue;
 
                 for (int i = 0; i < 5; i++) {
-                    if ((line.startsWith(".")) | (line.startsWith("*")) | (line.startsWith(":")) |
-                            (line.startsWith("\"")) | (line.startsWith(";"))) {
+                    if ((line.startsWith(".")) | (line.startsWith("*")) | (line.startsWith(":"))
+                            | (line.startsWith("\"")) | (line.startsWith(";"))) {
                         line = line.substring(1, line.length());
                         line = line.trim();
                     }
                 }
 
-                //System.out.println(line);
+                // System.out.println(line);
 
                 if ((line.length() > 0) & (!line.startsWith("Help")) & (!line.startsWith("NONE"))
-                        & (!line.startsWith("beg")) & (!line.startsWith(": See also")) & (!line.startsWith(": \"See also"))
-                        & (!line.startsWith(":See also")) & (!line.startsWith("Wiktionary")) & (!line.startsWith("subgroup"))
-                        ) {
+                        & (!line.startsWith("beg")) & (!line.startsWith(": See also"))
+                        & (!line.startsWith(": \"See also")) & (!line.startsWith(":See also"))
+                        & (!line.startsWith("Wiktionary")) & (!line.startsWith("subgroup"))) {
                     // do we need some more cleaning ?
                     try {
                         writer.write(line);
                         writer.write("\n");
                         writer.flush();
                     } catch (Exception e) {
-//						e.printStackTrace();
+                        // e.printStackTrace();
                         throw new GrobidException("An exception occured while running Grobid.", e);
                     }
                 }
@@ -127,11 +128,7 @@ public class WikiTextExtractSaxParser extends DefaultHandler {
         }
     }
 
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
-            throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
         if (qName.equals("page")) {
             int length = atts.getLength();
 
@@ -161,7 +158,7 @@ public class WikiTextExtractSaxParser extends DefaultHandler {
                                 writer = new OutputStreamWriter(os, "UTF-8");
                                 fileCount++;
                             } catch (Exception e) {
-//                   				e.printStackTrace();
+                                // e.printStackTrace();
                                 throw new GrobidException("An exception occured while running Grobid.", e);
                             }
                         }

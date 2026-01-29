@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class FulltextTrainer extends AbstractTrainer{
+public class FulltextTrainer extends AbstractTrainer {
 
     private final GrobidModels.Flavor flavor;
 
@@ -29,45 +29,47 @@ public class FulltextTrainer extends AbstractTrainer{
     @Override
     public int createCRFPPData(File corpusPath, File outputFile) {
         return addFeaturesFulltext(
-            corpusPath.getAbsolutePath() + "/tei",
-            corpusPath.getAbsolutePath() + "/raw",
-            outputFile,
-            null,
-            1.0
-        );
+                corpusPath.getAbsolutePath() + "/tei",
+                corpusPath.getAbsolutePath() + "/raw",
+                outputFile,
+                null,
+                1.0);
     }
 
-	/**
-	 * Add the selected features to a full text example set 
-	 * 
-	 * @param corpusDir
-	 *            a path where corpus files are located
-	 * @param trainingOutputPath
-	 *            path where to store the temporary training data
-	 * @param evalOutputPath
-	 *            path where to store the temporary evaluation data
-	 * @param splitRatio
-	 *            ratio to consider for separating training and evaluation data, e.g. 0.8 for 80% 
-	 * @return the total number of used corpus items 
-	 */
-	@Override
-	public int createCRFPPData(final File corpusDir, 
-							final File trainingOutputPath, 
-							final File evalOutputPath, 
-							double splitRatio) {
-        return addFeaturesFulltext(corpusDir.getAbsolutePath() + "/tei",
+    /**
+     * Add the selected features to a full text example set
+     *
+     * @param corpusDir
+     * a path where corpus files are located
+     * @param trainingOutputPath
+     * path where to store the temporary training data
+     * @param evalOutputPath
+     * path where to store the temporary evaluation data
+     * @param splitRatio
+     * ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
+     * @return the total number of used corpus items
+     */
+    @Override
+    public int createCRFPPData(
+            final File corpusDir,
+            final File trainingOutputPath,
+            final File evalOutputPath,
+            double splitRatio) {
+        return addFeaturesFulltext(
+                corpusDir.getAbsolutePath() + "/tei",
                 corpusDir.getAbsolutePath() + "/raw",
                 trainingOutputPath,
                 evalOutputPath,
                 splitRatio);
     }
 
-    public int addFeaturesFulltext(String sourceTEIPathLabel,
-                                    String sourceRawPathLabel,
-                                    final File trainingOutputPath,
-                                    final File evalOutputPath,
-                                    double splitRatio) {
-		int totalExamples = 0;
+    public int addFeaturesFulltext(
+            String sourceTEIPathLabel,
+            String sourceRawPathLabel,
+            final File trainingOutputPath,
+            final File evalOutputPath,
+            double splitRatio) {
+        int totalExamples = 0;
         try {
             System.out.println("sourceTEIPathLabel: " + sourceTEIPathLabel);
             System.out.println("sourceRawPathLabel: " + sourceRawPathLabel);
@@ -120,40 +122,35 @@ public class FulltextTrainer extends AbstractTrainer{
                 } else {
                     parser = new TEIFulltextSaxParser();
                 }
-            
-                //get a new instance of parser
+
+                // get a new instance of parser
                 SAXParser p = spf.newSAXParser();
                 p.parse(tf, parser);
 
                 List<String> labeled = parser.getLabeledResult();
 
                 // removing the @newline
-                /*List<String> newLabeled = new ArrayList<String>();
-                for(String label : labeled) {
-                    if (!label.startsWith("@newline"))
-                        newLabeled.add(label);
-                }
-                labeled = newLabeled;*/
+                /*
+                 * List<String> newLabeled = new ArrayList<String>(); for(String label : labeled) { if
+                 * (!label.startsWith("@newline")) newLabeled.add(label); } labeled = newLabeled;
+                 */
 
-/*StringBuilder temp = new StringBuilder();
-for(String label : labeled) {
-    temp.append(label);
-}
-FileUtils.writeStringToFile(new File("/tmp/expected-"+name+".txt"), temp.toString());*/
+                /*
+                 * StringBuilder temp = new StringBuilder(); for(String label : labeled) { temp.append(label); }
+                 * FileUtils.writeStringToFile(new File("/tmp/expected-"+name+".txt"), temp.toString());
+                 */
 
                 // we can now (try to) add the features
                 // we open the featured file
                 try {
-                    File rawFile = new File(sourceRawPathLabel + File.separator + 
-                                    name.replace(".tei.xml", ""));
+                    File rawFile = new File(sourceRawPathLabel + File.separator + name.replace(".tei.xml", ""));
                     if (!rawFile.exists()) {
                         LOGGER.error("The raw file does not exist: " + rawFile.getPath());
                         continue;
                     }
 
                     BufferedReader bis = new BufferedReader(
-                            new InputStreamReader(new FileInputStream(
-                            rawFile), StandardCharsets.UTF_8));
+                            new InputStreamReader(new FileInputStream(rawFile), StandardCharsets.UTF_8));
                     int q = 0; // current position in the TEI labeled list
                     StringBuilder fulltext = new StringBuilder();
 
@@ -165,7 +162,7 @@ FileUtils.writeStringToFile(new File("/tmp/expected-"+name+".txt"), temp.toStrin
                         if (line.trim().length() == 0)
                             continue;
                         // we could apply here some more check on the wellformedness of the line
-                        //fulltext.append(line);
+                        // fulltext.append(line);
                         l++;
                         int ii = line.indexOf(' ');
                         String token = null;
@@ -175,7 +172,7 @@ FileUtils.writeStringToFile(new File("/tmp/expected-"+name+".txt"), temp.toStrin
                             // has been gnerated by a recent version of grobid
                             token = UnicodeUtil.normaliseTextAndRemoveSpaces(token);
                         }
-    //                    boolean found = false;
+                        // boolean found = false;
                         // we get the label in the labelled data file for the same token
                         for (int pp = q; pp < labeled.size(); pp++) {
                             String localLine = labeled.get(pp);
@@ -191,16 +188,21 @@ FileUtils.writeStringToFile(new File("/tmp/expected-"+name+".txt"), temp.toStrin
                                     previousTag = tag;
                                     q = pp + 1;
                                     nbInvalid = 0;
-                                    //pp = q + 10;
+                                    // pp = q + 10;
                                     break;
                                 }
                             }
                             if (pp - q > 5) {
-                                LOGGER.warn(name + " / Fulltext trainer: TEI and raw file unsynchronized at raw line " + l + " : " + localLine);
+                                LOGGER.warn(
+                                        name
+                                                + " / Fulltext trainer: TEI and raw file unsynchronized at raw line "
+                                                + l
+                                                + " : "
+                                                + localLine);
                                 nbInvalid++;
                                 // let's reuse the latest tag
                                 if (previousTag != null)
-                                   fulltext.append(line).append(" ").append(previousTag);
+                                    fulltext.append(line).append(" ").append(previousTag);
                                 break;
                             }
                         }
@@ -225,7 +227,9 @@ FileUtils.writeStringToFile(new File("/tmp/expected-"+name+".txt"), temp.toStrin
                         }
                         totalExamples++;
                     } else {
-                        LOGGER.error("{} / too many synchronization issues, file not used in training data and to be fixed!", name);
+                        LOGGER.error(
+                                "{} / too many synchronization issues, file not used in training data and to be fixed!",
+                                name);
                     }
                 } catch (Exception e) {
                     LOGGER.error("Fail to open or process raw file", e);
@@ -248,9 +252,8 @@ FileUtils.writeStringToFile(new File("/tmp/expected-"+name+".txt"), temp.toStrin
         } catch (Exception e) {
             LOGGER.error("An exception occurred while running Grobid.", e);
         }
-        return totalExamples;					
-	}
-
+        return totalExamples;
+    }
 
     public static void main(String[] args) throws Exception {
         // if we have a parameter, it gives the flavor refinement to consider
@@ -259,9 +262,10 @@ FileUtils.writeStringToFile(new File("/tmp/expected-"+name+".txt"), temp.toStrin
             String flavor = args[0];
             theFlavor = GrobidModels.Flavor.fromLabel(flavor);
             if (theFlavor == null) {
-                System.out.println("Warning, the flavor is not recognized, " +
-                    "must one one of [article/light, article/light-ref, sdo/ietf], " +
-                    "defaulting training with no flavor...");
+                System.out.println(
+                        "Warning, the flavor is not recognized, "
+                                + "must one one of [article/light, article/light-ref, sdo/ietf], "
+                                + "defaulting training with no flavor...");
             }
         }
 

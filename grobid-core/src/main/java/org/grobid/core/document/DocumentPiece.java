@@ -1,7 +1,10 @@
 package org.grobid.core.document;
 
-public class DocumentPiece implements Comparable<DocumentPiece>{
-    //for easier access make them final, but public
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
+public class DocumentPiece implements Comparable<DocumentPiece> {
+    // for easier access make them final, but public
     private final DocumentPointer a;
     private final DocumentPointer b;
 
@@ -23,7 +26,7 @@ public class DocumentPiece implements Comparable<DocumentPiece>{
 
     @Override
     public String toString() {
-        return "(" + a + " - " + b + ")";
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("a", a).append("b", b).toString();
     }
 
     @Override

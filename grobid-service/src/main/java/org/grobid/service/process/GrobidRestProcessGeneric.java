@@ -2,7 +2,6 @@ package org.grobid.service.process;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-import org.grobid.core.utilities.GrobidProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,8 +23,7 @@ public class GrobidRestProcessGeneric {
     /**
      * Returns a string containing true, if the service is alive.
      *
-     * @return a response object containing the string true if service
-     * is alive.
+     * @return a response object containing the string true if service is alive.
      */
     public String isAlive() {
         LOGGER.debug("called isAlive()...");
@@ -41,8 +39,7 @@ public class GrobidRestProcessGeneric {
     }
 
     /**
-     * Returns the description of how to use the grobid-service in a human
-     * readable way (html).
+     * Returns the description of how to use the grobid-service in a human readable way (html).
      *
      * @return a response object containing a html description
      */
@@ -51,12 +48,11 @@ public class GrobidRestProcessGeneric {
 
         LOGGER.debug("called getDescription_html()...");
 
-        String htmlCode = "<h4>grobid-service documentation</h4>" +
-                "This service provides a RESTful interface for using the grobid system. grobid extracts data from pdf files. For more information see: " +
-                "<a href=\"http://grobid.readthedocs.org/\">http://grobid.readthedocs.org/</a>";
+        String htmlCode = "<h4>grobid-service documentation</h4>"
+                + "This service provides a RESTful interface for using the grobid system. grobid extracts data from pdf files. For more information see: "
+                + "<a href=\"http://grobid.readthedocs.org/\">http://grobid.readthedocs.org/</a>";
 
-        response = Response.status(Status.OK).entity(htmlCode)
-                .type(MediaType.TEXT_HTML).build();
+        response = Response.status(Status.OK).entity(htmlCode).type(MediaType.TEXT_HTML).build();
 
         return response;
     }

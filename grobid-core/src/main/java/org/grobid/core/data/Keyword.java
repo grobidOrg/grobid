@@ -1,9 +1,8 @@
 package org.grobid.core.data;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.grobid.core.utilities.TextUtilities;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * Class for representing a keyword extracted from a publication.
@@ -12,16 +11,16 @@ import org.grobid.core.utilities.TextUtilities;
 public class Keyword {
     private String keyword = null;
     private String type = null;
- 
- 	public Keyword(String key) {
- 		keyword = key;
- 	}
- 
- 	public Keyword(String key, String typ) {
- 		keyword = key;
-		type = typ;
- 	}
- 
+
+    public Keyword(String key) {
+        keyword = key;
+    }
+
+    public Keyword(String key, String typ) {
+        keyword = key;
+        type = typ;
+    }
+
     public String getKeyword() {
         return keyword;
     }
@@ -37,7 +36,7 @@ public class Keyword {
     public void setType(String typ) {
         type = typ;
     }
-	
+
     public boolean notNull() {
         if (keyword == null)
             return false;
@@ -45,14 +44,11 @@ public class Keyword {
             return true;
     }
 
+    @Override
     public String toString() {
-        String res = "";
-        if (keyword != null)
-            res += keyword + " ";
-        if (type != null) {
-            res += " (type:" + type + ")";
-        }
-        return res.trim();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("keyword", keyword)
+                .append("type", type)
+                .toString();
     }
 
     public String toTEI() {

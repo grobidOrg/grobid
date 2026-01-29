@@ -6,8 +6,7 @@ import org.slf4j.LoggerFactory;
 
 public class GrobidRestUtils {
 
-    private static final Logger LOGGER = LoggerFactory
-            .getLogger(GrobidRestUtils.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(GrobidRestUtils.class);
 
     // type of PDF annotation for visualization purposes
     public enum Annotation {

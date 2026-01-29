@@ -13,15 +13,14 @@ public class PatentDocument extends Document {
 
     private int beginBlockPAReport = -1;
 
-    static public Pattern searchReport =
-            Pattern.compile("((international|interna(\\s)+Η(\\s)+onal)(\\s)+(search)(\\s)+(report))|" +
-                    "((internationaler)(\\s)+(recherchenberich))|" +
-                    "(I(\\s)+N(\\s)+T(\\s)+E(\\s)+R(\\s)+N(\\s)+A(\\s)+T(\\s)+I(\\s)+O(\\s)+N(\\s)+A(\\s)+L(\\s)+S(\\s)+E(\\s)+A(\\s)+R(\\s)+C(\\s)+H)",
-                    Pattern.CASE_INSENSITIVE | Pattern.MULTILINE);
+    static public Pattern searchReport = Pattern.compile(
+            "((international|interna(\\s)+Η(\\s)+onal)(\\s)+(search)(\\s)+(report))|"
+                    + "((internationaler)(\\s)+(recherchenberich))|"
+                    + "(I(\\s)+N(\\s)+T(\\s)+E(\\s)+R(\\s)+N(\\s)+A(\\s)+T(\\s)+I(\\s)+O(\\s)+N(\\s)+A(\\s)+L(\\s)+S(\\s)+E(\\s)+A(\\s)+R(\\s)+C(\\s)+H)",
+            Pattern.CASE_INSENSITIVE | Pattern.MULTILINE);
 
-    static public Pattern FamilyMembers =
-            Pattern.compile("(patent)(\\s)+(famil(v|y))(\\s)+(members)?",
-                    Pattern.CASE_INSENSITIVE | Pattern.MULTILINE);
+    static public Pattern FamilyMembers = Pattern
+            .compile("(patent)(\\s)+(famil(v|y))(\\s)+(members)?", Pattern.CASE_INSENSITIVE | Pattern.MULTILINE);
 
     public PatentDocument(DocumentSource documentSource) {
         super(documentSource);
@@ -49,9 +48,9 @@ public class PatentDocument extends Document {
                 String content = block.getText();
                 if (content != null) {
                     content = content.trim();
-                    //System.out.println(content);
+                    // System.out.println(content);
                     if (newPage & (!PAReport)) {
-                        //System.out.println("new page");
+                        // System.out.println("new page");
                         Matcher m = PatentDocument.searchReport.matcher(content);
 
                         if (m.find()) {
@@ -60,13 +59,11 @@ public class PatentDocument extends Document {
                         }
                     }
 
-                    /*if (PAReport) {
-                             Matcher m = FamilyMembers.matcher(content);
-
-                             if (m.find()) {
-                                 PAReport = false;
-                             }
-                         }*/
+                    /*
+                     * if (PAReport) { Matcher m = FamilyMembers.matcher(content);
+                     *
+                     * if (m.find()) { PAReport = false; } }
+                     */
 
                     newPage = content.startsWith("@PAGE");
 

@@ -3,12 +3,11 @@ package org.grobid.core.features;
 import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.layout.LayoutToken;
 
-import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 
 /**
- * Class for features used for reference identification in raw texts such as patent descriptions.
- * It covers references to scholar works and to patent publications.
+ * Class for features used for reference identification in raw texts such as patent descriptions. It covers references
+ * to scholar works and to patent publications.
  *
  */
 public class FeaturesVectorReference {
@@ -19,7 +18,7 @@ public class FeaturesVectorReference {
     public String label = null; // label if known
 
     public String capitalisation = null; // one of INITCAP, ALLCAPS, NOCAPS
-    public String digit;  // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
+    public String digit; // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
     public boolean singleChar = false;
 
     public boolean properName = false;
@@ -46,8 +45,10 @@ public class FeaturesVectorReference {
     }
 
     public String printVector() {
-        if (string == null) return null;
-        if (string.length() == 0) return null;
+        if (string == null)
+            return null;
+        if (string.length() == 0)
+            return null;
         StringBuffer res = new StringBuffer();
 
         // token string (1)
@@ -157,9 +158,9 @@ public class FeaturesVectorReference {
         // label - for training data (1)
         if (label != null)
             res.append(" " + label + "\n");
-        
-		//else
-        //    res.append(" 0\n");
+
+        // else
+        // res.append(" 0\n");
 
         return res.toString();
     }
@@ -167,126 +168,124 @@ public class FeaturesVectorReference {
     /**
      * Add the features for the patent reference extraction model.
      */
-    public static FeaturesVectorReference addFeaturesPatentReferences(LayoutToken token,
-                                                                      String localLabel,
-                                                                      int totalLength,
-                                                                      int position,
-                                                                      boolean isJournalToken,
-                                                                      boolean isAbbrevJournalToken,
-                                                                      boolean isConferenceToken,
-                                                                      boolean isPublisherToken) {
+    public static FeaturesVectorReference addFeaturesPatentReferences(
+            LayoutToken token,
+            String localLabel,
+            int totalLength,
+            int position,
+            boolean isJournalToken,
+            boolean isAbbrevJournalToken,
+            boolean isConferenceToken,
+            boolean isPublisherToken) {
         FeatureFactory featureFactory = FeatureFactory.getInstance();
 
         FeaturesVectorReference featuresVector = new FeaturesVectorReference();
-        //StringTokenizer st = new StringTokenizer(line, "\t");
-        //if (st.hasMoreTokens()) {
+        // StringTokenizer st = new StringTokenizer(line, "\t");
+        // if (st.hasMoreTokens()) {
 
-            String word = token.getText();
-            String label = localLabel;
-            /*if (st.hasMoreTokens())
-                label = st.nextToken();*/
+        String word = token.getText();
+        String label = localLabel;
+        /*
+         * if (st.hasMoreTokens()) label = st.nextToken();
+         */
 
-            featuresVector.string = word;
-            featuresVector.label = label;
+        featuresVector.string = word;
+        featuresVector.label = label;
 
-            if (word.length() == 1) {
-                featuresVector.singleChar = true;
-            }
+        if (word.length() == 1) {
+            featuresVector.singleChar = true;
+        }
 
-            if (featureFactory.test_all_capital(word))
-                featuresVector.capitalisation = "ALLCAPS";
-            else if (featureFactory.test_first_capital(word))
-                featuresVector.capitalisation = "INITCAP";
-            else
-                featuresVector.capitalisation = "NOCAPS";
+        if (featureFactory.test_all_capital(word))
+            featuresVector.capitalisation = "ALLCAPS";
+        else if (featureFactory.test_first_capital(word))
+            featuresVector.capitalisation = "INITCAP";
+        else
+            featuresVector.capitalisation = "NOCAPS";
 
-            if (featureFactory.test_number(word))
-                featuresVector.digit = "ALLDIGIT";
-            else if (featureFactory.test_digit(word))
-                featuresVector.digit = "CONTAINDIGIT";
-            else
-                featuresVector.digit = "NODIGIT";
+        if (featureFactory.test_number(word))
+            featuresVector.digit = "ALLDIGIT";
+        else if (featureFactory.test_digit(word))
+            featuresVector.digit = "CONTAINDIGIT";
+        else
+            featuresVector.digit = "NODIGIT";
 
-            if (featureFactory.test_common(word))
-                featuresVector.commonName = true;
+        if (featureFactory.test_common(word))
+            featuresVector.commonName = true;
 
-            if (featureFactory.test_names(word))
-                featuresVector.properName = true;
+        if (featureFactory.test_names(word))
+            featuresVector.properName = true;
 
-            if (featureFactory.test_month(word))
-                featuresVector.month = true;
+        if (featureFactory.test_month(word))
+            featuresVector.month = true;
 
-            Matcher m0 = featureFactory.isPunct.matcher(word);
-            if (m0.find()) {
-                featuresVector.punctType = "PUNCT";
-            }
-            if ((word.equals("(")) | (word.equals("["))) {
-                featuresVector.punctType = "OPENBRACKET";
-            } else if ((word.equals(")")) | (word.equals("]"))) {
-                featuresVector.punctType = "ENDBRACKET";
-            } else if (word.equals(".")) {
-                featuresVector.punctType = "DOT";
-            } else if (word.equals(",")) {
-                featuresVector.punctType = "COMMA";
-            } else if (word.equals("-")) {
-                featuresVector.punctType = "HYPHEN";
-            } else if (word.equals("\"") | word.equals("\'") | word.equals("`")) {
-                featuresVector.punctType = "QUOTE";
-            }
+        Matcher m0 = featureFactory.isPunct.matcher(word);
+        if (m0.find()) {
+            featuresVector.punctType = "PUNCT";
+        }
+        if ((word.equals("(")) | (word.equals("["))) {
+            featuresVector.punctType = "OPENBRACKET";
+        } else if ((word.equals(")")) | (word.equals("]"))) {
+            featuresVector.punctType = "ENDBRACKET";
+        } else if (word.equals(".")) {
+            featuresVector.punctType = "DOT";
+        } else if (word.equals(",")) {
+            featuresVector.punctType = "COMMA";
+        } else if (word.equals("-")) {
+            featuresVector.punctType = "HYPHEN";
+        } else if (word.equals("\"") | word.equals("\'") | word.equals("`")) {
+            featuresVector.punctType = "QUOTE";
+        }
 
-            Matcher m2 = featureFactory.year.matcher(word);
-            if (m2.find()) {
-                featuresVector.year = true;
-            }
+        Matcher m2 = featureFactory.year.matcher(word);
+        if (m2.find()) {
+            featuresVector.year = true;
+        }
 
-            Matcher m4 = featureFactory.http.matcher(word);
-            if (m4.find()) {
-                featuresVector.http = true;
-            }
+        Matcher m4 = featureFactory.http.matcher(word);
+        if (m4.find()) {
+            featuresVector.http = true;
+        }
 
-			if (featureFactory.test_city(word)) {
-                featuresVector.locationName = true;
-            }
+        if (featureFactory.test_city(word)) {
+            featuresVector.locationName = true;
+        }
 
-            if (featuresVector.capitalisation == null)
-                featuresVector.capitalisation = "NOCAPS";
+        if (featuresVector.capitalisation == null)
+            featuresVector.capitalisation = "NOCAPS";
 
-            if (featuresVector.digit == null)
-                featuresVector.digit = "NODIGIT";
+        if (featuresVector.digit == null)
+            featuresVector.digit = "NODIGIT";
 
-            if (featuresVector.punctType == null)
-                featuresVector.punctType = "NOPUNCT";
+        if (featuresVector.punctType == null)
+            featuresVector.punctType = "NOPUNCT";
 
-            if (featureFactory.test_country_codes(word))
-                featuresVector.isCountryCode = true;
+        if (featureFactory.test_country_codes(word))
+            featuresVector.isCountryCode = true;
 
-            if (featureFactory.test_kind_codes(word))
-                featuresVector.isKindCode = true;
+        if (featureFactory.test_kind_codes(word))
+            featuresVector.isKindCode = true;
 
-            featuresVector.relativeDocumentPosition =
-                    featureFactory.linearScaling(position, totalLength, nbBins);
+        featuresVector.relativeDocumentPosition = featureFactory.linearScaling(position, totalLength, nbBins);
 
-            if (isJournalToken) {
-                featuresVector.isKnownJournalTitle = true;
-            }
+        if (isJournalToken) {
+            featuresVector.isKnownJournalTitle = true;
+        }
 
-            if (isAbbrevJournalToken) {
-                featuresVector.isKnownAbbrevJournalTitle = true;
-            }
+        if (isAbbrevJournalToken) {
+            featuresVector.isKnownAbbrevJournalTitle = true;
+        }
 
-            if (isConferenceToken) {
-                featuresVector.isKnownConferenceTitle = true;
-            }
+        if (isConferenceToken) {
+            featuresVector.isKnownConferenceTitle = true;
+        }
 
-            if (isPublisherToken) {
-                featuresVector.isKnownPublisher = true;
-            }
-        //}
+        if (isPublisherToken) {
+            featuresVector.isKnownPublisher = true;
+        }
+        // }
 
         return featuresVector;
     }
 
 }
-	
-	
-	

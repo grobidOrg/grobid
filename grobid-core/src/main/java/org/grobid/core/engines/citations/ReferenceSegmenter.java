@@ -5,5 +5,6 @@ import org.grobid.core.document.Document;
 
 public interface ReferenceSegmenter {
     List<LabeledReferenceResult> extract(String referenceBlock);
-	List<LabeledReferenceResult> extract(Document document);
+
+    List<LabeledReferenceResult> extract(Document document);
 }

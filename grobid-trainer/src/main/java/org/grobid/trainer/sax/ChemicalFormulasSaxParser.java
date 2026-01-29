@@ -8,8 +8,7 @@ import org.xml.sax.helpers.DefaultHandler;
 import java.util.ArrayList;
 
 /**
- * This SAX parser simply records the chemical formula stand off annotations and their corresponding word
- * identifiers.
+ * This SAX parser simply records the chemical formula stand off annotations and their corresponding word identifiers.
  *
  * @author Patrice Lopez
  */
@@ -27,9 +26,8 @@ public class ChemicalFormulasSaxParser extends DefaultHandler {
         return numberEntities;
     }
 
-    public void endElement(java.lang.String uri,
-                           java.lang.String localName,
-                           java.lang.String qName) throws SAXException {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
         try {
             if (qName.equals("formula-name")) {
                 if ((localChemicalWords != null) && (localChemicalWords.size() > 0)) {
@@ -58,21 +56,18 @@ public class ChemicalFormulasSaxParser extends DefaultHandler {
                     localChemicalWords.add(idd1);
                     localChemicalWords.add(idd2);
                     chemicalWords.add(localChemicalWords);
-                    //System.out.println(localChemicalWords);
+                    // System.out.println(localChemicalWords);
                     localChemicalWords = null;
                 }
                 numberEntities++;
             }
         } catch (Exception e) {
-//		    e.printStackTrace();
+            // e.printStackTrace();
             throw new GrobidException("An exception occured while running Grobid.", e);
         }
     }
 
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts) throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
         try {
             if (qName.equals("nite:root")) {
                 chemicalWords = new ArrayList<ArrayList<String>>();
@@ -113,10 +108,9 @@ public class ChemicalFormulasSaxParser extends DefaultHandler {
 
             }
         } catch (Exception e) {
-//		    e.printStackTrace();
+            // e.printStackTrace();
             throw new GrobidException("An exception occured while running Grobid.", e);
         }
     }
-
 
 }

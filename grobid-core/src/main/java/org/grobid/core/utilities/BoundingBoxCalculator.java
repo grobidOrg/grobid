@@ -25,7 +25,7 @@ public class BoundingBoxCalculator {
         }
 
         BoundingBox b = null;
-        for (LayoutToken t : tokens)  {
+        for (LayoutToken t : tokens) {
             if (LayoutTokensUtil.noCoords(t)) {
                 continue;
             }
@@ -48,7 +48,8 @@ public class BoundingBoxCalculator {
             tokens = Lists.newArrayList(Iterables.filter(tokens, new Predicate<LayoutToken>() {
                 @Override
                 public boolean apply(LayoutToken layoutToken) {
-                    return !(Math.abs(layoutToken.getWidth()) <= Double.MIN_VALUE || Math.abs(layoutToken.getHeight()) <= Double.MIN_VALUE);
+                    return !(Math.abs(layoutToken.getWidth()) <= Double.MIN_VALUE
+                            || Math.abs(layoutToken.getHeight()) <= Double.MIN_VALUE);
                 }
             }));
         }
@@ -76,11 +77,11 @@ public class BoundingBoxCalculator {
         return result;
     }
 
-    //same page, Y is more or less the same, b2 follows b1 on X, and b2 close to the end of b1
+    // same page, Y is more or less the same, b2 follows b1 on X, and b2 close to the end of b1
     private static boolean near(BoundingBox b1, BoundingBox b2) {
-        return b1.getPage() == b2.getPage()
-                && Math.abs(b1.getY() - b2.getY()) < EPS_Y && Math.abs(b1.getY2() - b2.getY2()) < EPS_Y
-                && b2.getX() - b1.getX2() < EPS_X && b2.getX() >= b1.getX();
+        return b1.getPage() == b2.getPage() && Math.abs(b1.getY() - b2.getY()) < EPS_Y
+                && Math.abs(b1.getY2() - b2.getY2()) < EPS_Y && b2.getX() - b1.getX2() < EPS_X
+                && b2.getX() >= b1.getX();
     }
 
 }

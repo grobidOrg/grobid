@@ -1,7 +1,7 @@
 package org.grobid.trainer.evaluation;
 
-/** 
- *  Model the results for each label 
+/**
+ * Model the results for each label
  */
 public final class LabelStat {
     private int falsePositive = 0;
@@ -98,7 +98,8 @@ public final class LabelStat {
     }
 
     public double getAccuracy() {
-        double accuracy = (double) (observed + trueNegative) / (observed + falsePositive + trueNegative + falseNegative);
+        double accuracy = (double) (observed + trueNegative)
+                / (observed + falsePositive + trueNegative + falseNegative);
         if (accuracy < 0.0)
             accuracy = 0.0;
 
@@ -135,11 +136,14 @@ public final class LabelStat {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder
-            .append("falsePositive: ").append(falsePositive)
-            .append("; falseNegative: ").append(falseNegative)
-            .append("; observed: ").append(observed)
-            .append("; expected: ").append(expected);
+        builder.append("falsePositive: ")
+                .append(falsePositive)
+                .append("; falseNegative: ")
+                .append(falseNegative)
+                .append("; observed: ")
+                .append(observed)
+                .append("; expected: ")
+                .append(expected);
         return builder.toString();
     }
 

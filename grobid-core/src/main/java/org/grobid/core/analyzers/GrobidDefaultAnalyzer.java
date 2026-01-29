@@ -36,7 +36,7 @@ public class GrobidDefaultAnalyzer implements Analyzer {
 
     public static GrobidDefaultAnalyzer getInstance() {
         if (instance == null) {
-            //double check idiom
+            // double check idiom
             // synchronized (instanceController) {
             if (instance == null)
                 getNewInstance();
@@ -60,7 +60,7 @@ public class GrobidDefaultAnalyzer implements Analyzer {
 
     public static final String delimiters = TextUtilities.delimiters;
 
-    // the following regex is used to separate alphabetical and numerical character subsequences 
+    // the following regex is used to separate alphabetical and numerical character subsequences
     // note: see about using \p{N} for unicode digits
     private static final String REGEX = "(?<=[\\p{L}])(?=\\d)|(?<=\\d)(?=\\D)";
 
@@ -124,17 +124,15 @@ public class GrobidDefaultAnalyzer implements Analyzer {
     }
 
     /**
-     * To tokenize an existing list of tokens. Only useful if input tokens have
-     * been tokenized with a non-default Grobid tokenizer.  
-     * Note: the coordinates of the subtokens are not recomputed here (at least for 
-     * the moment). 
+     * To tokenize an existing list of tokens. Only useful if input tokens have been tokenized with a non-default Grobid
+     * tokenizer. Note: the coordinates of the subtokens are not recomputed here (at least for the moment).
      * <p>
      * 1/74 -> "1", "/", "74"
      *
      */
     public List<LayoutToken> retokenizeFromLayoutToken(List<LayoutToken> tokens) {
         List<LayoutToken> result = new ArrayList<>();
-        for(LayoutToken token : tokens) {
+        for (LayoutToken token : tokens) {
             if (token.getText() == null || token.getText().trim().length() == 0) {
                 result.add(token);
             } else {
@@ -162,16 +160,15 @@ public class GrobidDefaultAnalyzer implements Analyzer {
     }
 
     /**
-     * To tokenize mixture of alphabetical and numerical characters by separating 
-     * separate alphabetical and numerical character subsequences. To be used
-     * when relevant. 
+     * To tokenize mixture of alphabetical and numerical characters by separating separate alphabetical and numerical
+     * character subsequences. To be used when relevant.
      * <p>
      * 1m74 -> "1", "m", "74"
      *
      */
     public List<String> retokenizeSubdigits(List<String> chunks) {
         List<String> result = new ArrayList<>();
-        for(String token : chunks) {
+        for (String token : chunks) {
             // we split "letter" characters and digits
             String[] subtokens = token.split(REGEX);
             for (int i = 0; i < subtokens.length; i++) {
@@ -194,7 +191,7 @@ public class GrobidDefaultAnalyzer implements Analyzer {
     public List<LayoutToken> retokenizeSubdigitsWithLayoutToken(List<String> chunks) {
         List<LayoutToken> result = new ArrayList<>();
         int offset = 0;
-        for(String token : chunks) {
+        for (String token : chunks) {
             // we split "letter" characters and digits
             String[] subtokens = token.split(REGEX);
             for (int i = 0; i < subtokens.length; i++) {
@@ -221,7 +218,7 @@ public class GrobidDefaultAnalyzer implements Analyzer {
      */
     public List<LayoutToken> retokenizeSubdigitsFromLayoutToken(List<LayoutToken> tokens) {
         List<LayoutToken> result = new ArrayList<>();
-        for(LayoutToken token : tokens) {
+        for (LayoutToken token : tokens) {
             // we split "letter" characters and digits
             if (token.getText() == null || token.getText().trim().length() == 0) {
                 result.add(token);

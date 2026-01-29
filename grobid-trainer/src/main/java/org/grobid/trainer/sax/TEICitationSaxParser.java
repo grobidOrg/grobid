@@ -1,11 +1,7 @@
 package org.grobid.trainer.sax;
 
-import org.grobid.core.lexicon.Lexicon;
-import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.utilities.UnicodeUtil;
 import org.grobid.core.lang.Language;
-import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.analyzers.*;
 
@@ -65,21 +61,19 @@ public class TEICitationSaxParser extends DefaultHandler {
         return allTokens;
     }
 
-    public void endElement(java.lang.String uri,
-                           java.lang.String localName,
-                           java.lang.String qName) throws SAXException {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
         qName = qName.toLowerCase();
 
-        if ((qName.equals("author")) || (qName.equals("authors")) || (qName.equals("orgname")) ||
-                (qName.equals("title")) || (qName.equals("editor")) || (qName.equals("editors")) ||
-                (qName.equals("booktitle")) || (qName.equals("date")) || (qName.equals("journal")) ||
-                (qName.equals("institution")) || (qName.equals("tech")) || (qName.equals("volume")) ||
-                (qName.equals("pages")) || (qName.equals("page")) || (qName.equals("pubplace")) ||
-                (qName.equals("note")) || (qName.equals("web")) || (qName.equals("pages")) ||
-                (qName.equals("publisher")) || (qName.equals("idno") || qName.equals("issue")) ||
-                (qName.equals("pubnum")) || (qName.equals("biblscope")) || (qName.equals("ptr")) ||
-                (qName.equals("keyword")) || (qName.equals("keywords"))
-                ) {
+        if ((qName.equals("author")) || (qName.equals("authors")) || (qName.equals("orgname"))
+                || (qName.equals("title")) || (qName.equals("editor")) || (qName.equals("editors"))
+                || (qName.equals("booktitle")) || (qName.equals("date")) || (qName.equals("journal"))
+                || (qName.equals("institution")) || (qName.equals("tech")) || (qName.equals("volume"))
+                || (qName.equals("pages")) || (qName.equals("page")) || (qName.equals("pubplace"))
+                || (qName.equals("note")) || (qName.equals("web")) || (qName.equals("pages"))
+                || (qName.equals("publisher")) || (qName.equals("idno") || qName.equals("issue"))
+                || (qName.equals("pubnum")) || (qName.equals("biblscope")) || (qName.equals("ptr"))
+                || (qName.equals("keyword")) || (qName.equals("keywords"))) {
             String text = getText();
             writeField(text);
         } else if (qName.equals("lb")) {
@@ -102,11 +96,7 @@ public class TEICitationSaxParser extends DefaultHandler {
         accumulator.setLength(0);
     }
 
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
-            throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
         String text = getText();
         if (text.length() > 0) {
             currentTag = "<other>";
@@ -274,7 +264,7 @@ public class TEICitationSaxParser extends DefaultHandler {
         if (isEmpty(localTokens)) {
             return;
         }
-        
+
         boolean begin = true;
         for (LayoutToken token : localTokens) {
             tokens.add(token);
@@ -285,11 +275,11 @@ public class TEICitationSaxParser extends DefaultHandler {
             }
 
             content = UnicodeUtil.normaliseTextAndRemoveSpaces(content);
-            if (content.trim().length() == 0) { 
+            if (content.trim().length() == 0) {
                 labeled.add(null);
                 continue;
             }
-            
+
             if (content.length() > 0) {
                 if (begin) {
                     labeled.add("I-" + currentTag);
@@ -300,6 +290,5 @@ public class TEICitationSaxParser extends DefaultHandler {
             }
         }
     }
-
 
 }

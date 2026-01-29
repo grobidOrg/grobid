@@ -3,8 +3,6 @@ package org.grobid.trainer.evaluation;
 import org.chasen.crfpp.Tagger;
 import org.grobid.core.engines.tagging.GenericTagger;
 import org.grobid.core.exceptions.GrobidException;
-import org.grobid.core.utilities.OffsetPosition;
-import org.grobid.core.utilities.Pair;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -29,11 +27,12 @@ public class EvaluationUtilities {
     protected static final Logger logger = LoggerFactory.getLogger(EvaluationUtilities.class);
 
     /**
-     * Method for running a CRF tagger for evaluation purpose (i.e. with
-     * expected and actual labels).
+     * Method for running a CRF tagger for evaluation purpose (i.e. with expected and actual labels).
      *
-     * @param ress   list
-     * @param tagger a tagger
+     * @param ress
+     * list
+     * @param tagger
+     * a tagger
      * @return a report
      */
     public static String taggerRun(List<String> ress, Tagger tagger) {
@@ -106,7 +105,8 @@ public class EvaluationUtilities {
         String theResult = null;
 
         try {
-            final BufferedReader bufReader = new BufferedReader(new InputStreamReader(new FileInputStream(path), StandardCharsets.UTF_8));
+            final BufferedReader bufReader = new BufferedReader(
+                    new InputStreamReader(new FileInputStream(path), StandardCharsets.UTF_8));
 
             String line = null;
             List<String> instance = new ArrayList<>();
@@ -124,10 +124,9 @@ public class EvaluationUtilities {
         return computeStats(theResult);
     }
 
-    /** Computes the stats for a single model, returning a ModelStats object, which
-     * ships:
-     *  - field level statistics
-     *  - instances statistics
+    /**
+     * Computes the stats for a single model, returning a ModelStats object, which ships: - field level statistics -
+     * instances statistics
      */
     public static ModelStats computeStats(String theResult) {
         return new ModelStats(theResult);
@@ -165,13 +164,13 @@ public class EvaluationUtilities {
             }
 
             processCounters(wordStats, obtainedLabel, expectedLabel);
-			/*if (!obtainedLabel.equals(expectedLabel)) {
-                logger.warn("Disagreement / expected: " + expectedLabel + " / obtained: " + obtainedLabel);
-			}*/
+            /*
+             * if (!obtainedLabel.equals(expectedLabel)) { logger.warn("Disagreement / expected: " + expectedLabel +
+             * " / obtained: " + obtainedLabel); }
+             */
         }
         return wordStats;
     }
-
 
     private static void processCounters(Stats stats, String obtained, String expected) {
         LabelStat expectedStat = stats.getLabelStat(expected);

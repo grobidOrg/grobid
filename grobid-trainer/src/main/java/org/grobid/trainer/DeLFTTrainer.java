@@ -2,10 +2,7 @@ package org.grobid.trainer;
 
 import org.grobid.core.GrobidModel;
 import org.grobid.core.jni.DeLFTModel;
-import org.grobid.core.GrobidModels;
-import org.grobid.trainer.SegmentationTrainer;
 import org.grobid.core.utilities.GrobidProperties;
-import java.math.BigDecimal;
 
 import java.io.File;
 
@@ -19,31 +16,42 @@ public class DeLFTTrainer implements GenericTrainer {
     }
 
     @Override
-    public void train(File template, File trainingData, File outputModel, int numThreads, GrobidModel model, boolean incremental) {
-        DeLFTModel.train(model.getModelName(), trainingData, outputModel, GrobidProperties.getDelftArchitecture(model), incremental);
+    public void train(
+            File template,
+            File trainingData,
+            File outputModel,
+            int numThreads,
+            GrobidModel model,
+            boolean incremental) {
+        DeLFTModel.train(
+                model.getModelName(),
+                trainingData,
+                outputModel,
+                GrobidProperties.getDelftArchitecture(model),
+                incremental);
     }
 
     @Override
     public String getName() {
         return DELFT;
     }
-    
+
     /**
      * None of this below is used by DeLFT
      */
     @Override
     public void setEpsilon(double epsilon) {
     }
-    
+
     @Override
     public void setWindow(int window) {
     }
-    
+
     @Override
     public double getEpsilon() {
         return 0.0;
     }
-    
+
     @Override
     public int getWindow() {
         return 0;
@@ -52,7 +60,7 @@ public class DeLFTTrainer implements GenericTrainer {
     @Override
     public void setNbMaxIterations(int interations) {
     }
-    
+
     @Override
     public int getNbMaxIterations() {
         return 0;

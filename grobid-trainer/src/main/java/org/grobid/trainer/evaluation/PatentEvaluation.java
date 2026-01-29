@@ -1,6 +1,5 @@
 package org.grobid.trainer.evaluation;
 
-import org.chasen.crfpp.Tagger;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.engines.tagging.GenericTagger;
 import org.grobid.core.engines.tagging.TaggerFactory;
@@ -18,8 +17,7 @@ import java.util.StringTokenizer;
 import java.util.TreeMap;
 
 /**
- * Evaluation of the extraction and parsing of the patent and NPL citations present in the patent
- * description.
+ * Evaluation of the extraction and parsing of the patent and NPL citations present in the patent description.
  *
  */
 public class PatentEvaluation {
@@ -28,23 +26,24 @@ public class PatentEvaluation {
     private GenericTagger taggerPatent = null;
     private GenericTagger taggerNPL = null;
     private GenericTagger taggerAll = null;
-    //where a test file would be put
+    // where a test file would be put
     private String outputPath;
 
     public PatentEvaluation() {
         evaluationPath = AbstractTrainer.getEvalCorpusBasePath().getAbsolutePath();
         outputPath = GrobidProperties.getInstance().getTempPath().getAbsolutePath();
-        //taggerNPL = TaggerFactory.getTagger(GrobidModels.PATENT_NPL);
-        //taggerPatent = TaggerFactory.getTagger(GrobidModels.PATENT_PATENT);
+        // taggerNPL = TaggerFactory.getTagger(GrobidModels.PATENT_NPL);
+        // taggerPatent = TaggerFactory.getTagger(GrobidModels.PATENT_PATENT);
         taggerAll = TaggerFactory.getTagger(GrobidModels.PATENT_CITATION);
     }
 
     /**
-     * Evaluation of the patent and NPL parsers against an evaluation set in the normal training format
-     * at token and instance level.
+     * Evaluation of the patent and NPL parsers against an evaluation set in the normal training format at token and
+     * instance level.
      *
-     * @param type gives the model to be evaluated: 0 is the patent citation only model, 1 is the NPL
-     *             citation only model and 2 is the combined patent+NPL citation model.
+     * @param type
+     * gives the model to be evaluated: 0 is the patent citation only model, 1 is the NPL citation only model and 2 is
+     * the combined patent+NPL citation model.
      * @return report
      */
     public String evaluate(int type) {
@@ -52,8 +51,8 @@ public class PatentEvaluation {
         // in the evaluation folder
         PatentParserTrainer ppt = new PatentParserTrainer();
 
-        //noinspection NullableProblems
-        //ppt.createDataSet("test", null, evaluationPath, outputPath);
+        // noinspection NullableProblems
+        // ppt.createDataSet("test", null, evaluationPath, outputPath);
         String setName;
 
         GenericTagger tagger;
@@ -67,17 +66,16 @@ public class PatentEvaluation {
             tagger = taggerAll;
             setName = "all";
         } else {
-            throw new GrobidException("An exception occured while evaluating Grobid. The parameter " +
-                    "type is undefined.");
+            throw new GrobidException(
+                    "An exception occured while evaluating Grobid. The parameter " + "type is undefined.");
         }
 
-		return evaluate();
+        return evaluate();
     }
 
-
     /**
-     * Evaluation of the patent and NPL parsers against an evaluation set in the normal training format
-     * at token and instance level.
+     * Evaluation of the patent and NPL parsers against an evaluation set in the normal training format at token and
+     * instance level.
      * @return report
      */
     public String evaluate() {
@@ -86,7 +84,7 @@ public class PatentEvaluation {
         StringBuilder report = new StringBuilder();
 
         PatentParserTrainer ppt = new PatentParserTrainer();
-        //noinspection NullableProblems
+        // noinspection NullableProblems
         ppt.createDataSet("test", evaluationPath, outputPath, 1);
 
         List<GenericTagger> taggers = new ArrayList<GenericTagger>();
@@ -133,12 +131,12 @@ public class PatentEvaluation {
                 }
                 bufReader.close();
 
-                //TODO: VZ_FIX
-//                String theResult = EvaluationUtilities.taggerRun(patentBlocks, tagger);
+                // TODO: VZ_FIX
+                // String theResult = EvaluationUtilities.taggerRun(patentBlocks, tagger);
                 String theResult = tagger.label(patentBlocks);
-                //System.out.println(theResult);
+                // System.out.println(theResult);
                 StringTokenizer stt = new StringTokenizer(theResult, "\n");
-//                line = null;
+                // line = null;
                 String previousExpectedLabel = null;
                 String previousSuggestedLabel = null;
                 boolean instanceCorrect = true;
@@ -146,8 +144,8 @@ public class PatentEvaluation {
                     line = stt.nextToken();
                     StringTokenizer st = new StringTokenizer(line, "\t");
                     String expected = null; // expected tag
-                    String actual = null;     // tag suggested by the model
-                    String word = null;     // the token
+                    String actual = null; // tag suggested by the model
+                    String word = null; // the token
                     boolean start = true;
                     boolean failure = false;
                     while (st.hasMoreTokens()) {
@@ -172,7 +170,7 @@ public class PatentEvaluation {
                                 totalPatentExpected++;
                             else if (expected.endsWith("refNPL>"))
                                 totalNPLExpected++;
-                            else 
+                            else
                                 report.append("WARNING bizarre suggested tag: " + expected + "\n");
                         }
 
@@ -197,10 +195,10 @@ public class PatentEvaluation {
                         else if (expected.endsWith("refNPL>"))
                             expected = "refNPL";
 
-						if (actual.equals("<other>")) 
-							actual = "other";
-						if (expected.equals("<other>")) 
-							expected = "other";
+                        if (actual.equals("<other>"))
+                            actual = "other";
+                        if (expected.equals("<other>"))
+                            expected = "other";
 
                         if (expected.equals(actual)) {
                             if (!actual.equals("other") && !expected.equals("other")) {
@@ -293,7 +291,9 @@ public class PatentEvaluation {
                 report.append("Total expected tags: ").append(totalExpected).append("\n");
                 report.append("Total suggested tags: ").append(totalSuggested).append("\n");
                 report.append("Total correct tags (Correct Positive): ").append(totalCorrect).append("\n");
-                report.append("Total incorrect tags (False Positive + False Negative): ").append(Math.abs(totalSuggested - totalCorrect)).append("\n");
+                report.append("Total incorrect tags (False Positive + False Negative): ")
+                        .append(Math.abs(totalSuggested - totalCorrect))
+                        .append("\n");
                 precision = (double) totalCorrect / totalSuggested;
                 recall = (double) totalCorrect / totalExpected;
                 f = 2 * precision * recall / (precision + recall);
@@ -307,7 +307,9 @@ public class PatentEvaluation {
                 report.append("Total expected tags: ").append(totalNPLExpected).append("\n");
                 report.append("Total suggested tags: ").append(totalNPLSuggested).append("\n");
                 report.append("Total correct tags (Correct Positive): ").append(totalNPLCorrect).append("\n");
-                report.append("Total incorrect tags (False Positive + False Negative): ").append(Math.abs(totalNPLSuggested - totalNPLCorrect)).append("\n");
+                report.append("Total incorrect tags (False Positive + False Negative): ")
+                        .append(Math.abs(totalNPLSuggested - totalNPLCorrect))
+                        .append("\n");
                 precision = (double) totalNPLCorrect / totalNPLSuggested;
                 recall = (double) totalNPLCorrect / totalNPLExpected;
                 f = 2 * precision * recall / (precision + recall);
@@ -321,7 +323,9 @@ public class PatentEvaluation {
                 report.append("Total expected tags: ").append(totalPatentExpected).append("\n");
                 report.append("Total suggested tags: ").append(totalPatentSuggested).append("\n");
                 report.append("Total correct tags (Correct Positive): ").append(totalPatentCorrect).append("\n");
-                report.append("Total incorrect tags (False Positive + False Negative): ").append(Math.abs(totalPatentSuggested - totalPatentCorrect)).append("\n");
+                report.append("Total incorrect tags (False Positive + False Negative): ")
+                        .append(Math.abs(totalPatentSuggested - totalPatentCorrect))
+                        .append("\n");
                 precision = (double) totalPatentCorrect / totalPatentSuggested;
                 recall = (double) totalPatentCorrect / totalPatentExpected;
                 f = 2 * precision * recall / (precision + recall);
@@ -335,7 +339,9 @@ public class PatentEvaluation {
                 report.append("Total expected instances: ").append(totalInstanceExpected).append("\n");
                 report.append("Total correct instances: ").append(totalInstanceCorrect).append("\n");
                 recall = (double) totalInstanceCorrect / totalInstanceExpected;
-                report.append("Instance Accuracy = ").append(TextUtilities.formatTwoDecimals(recall * 100)).append("\n");
+                report.append("Instance Accuracy = ")
+                        .append(TextUtilities.formatTwoDecimals(recall * 100))
+                        .append("\n");
             }
 
             if (tagger != taggerPatent) {
@@ -343,7 +349,9 @@ public class PatentEvaluation {
                 report.append("Total expected instances: ").append(totalInstanceNPLExpected).append("\n");
                 report.append("Total correct instances: ").append(totalInstanceNPLCorrect).append("\n");
                 recall = (double) totalInstanceNPLCorrect / totalInstanceNPLExpected;
-                report.append("Instance accuracy = ").append(TextUtilities.formatTwoDecimals(recall * 100)).append("\n");
+                report.append("Instance accuracy = ")
+                        .append(TextUtilities.formatTwoDecimals(recall * 100))
+                        .append("\n");
             }
 
             if (tagger != taggerNPL) {
@@ -351,16 +359,19 @@ public class PatentEvaluation {
                 report.append("Total expected instances: ").append(totalInstancePatentExpected).append("\n");
                 report.append("Total correct instances: ").append(totalInstancePatentCorrect).append("\n");
                 recall = (double) totalInstancePatentCorrect / totalInstancePatentExpected;
-                report.append("Instance accuracy = ").append(TextUtilities.formatTwoDecimals(recall * 100)).append("\n\n");
+                report.append("Instance accuracy = ")
+                        .append(TextUtilities.formatTwoDecimals(recall * 100))
+                        .append("\n\n");
             }
         }
         return report.toString();
     }
 
     /**
-     * Evaluation of the extraction against the gold corpus for patent reference resolution (non XML format, realized in 2010).
-     * Use in particular for a comparison with Ddoc and ACE.
-     * @param path file path
+     * Evaluation of the extraction against the gold corpus for patent reference resolution (non XML format, realized in
+     * 2010). Use in particular for a comparison with Ddoc and ACE.
+     * @param path
+     * file path
      */
     public void evaluateGold(File path) {
         try {
@@ -376,15 +387,15 @@ public class PatentEvaluation {
             // we parse the log file for getting reference data and ACE/Ddoc results
             String dossierName = null;
             BufferedReader br = new BufferedReader(
-                    new InputStreamReader(
-                            new FileInputStream(evaluationPath + "/gold/REF_20100426.txt"), "UTF8"));
+                    new InputStreamReader(new FileInputStream(evaluationPath + "/gold/REF_20100426.txt"), "UTF8"));
             String s;
-//            boolean rf_part = false;
+            // boolean rf_part = false;
             ArrayList<String> resap_reference = null;
             ArrayList<String> res_reference = null;
 
             while ((s = br.readLine()) != null) {
-                if (s.length() == 0) continue;
+                if (s.length() == 0)
+                    continue;
 
                 if (s.startsWith("RFAP:")) {
                     resap_reference = new ArrayList<String>();
@@ -426,15 +437,15 @@ public class PatentEvaluation {
 
             // we parse the log file for getting ACE results
             br = new BufferedReader(
-                    new InputStreamReader(
-                            new FileInputStream(evaluationPath + "/ACE_20100426.txt"), "UTF8"));
-//            rf_part = false;
+                    new InputStreamReader(new FileInputStream(evaluationPath + "/ACE_20100426.txt"), "UTF8"));
+            // rf_part = false;
             ArrayList<String> resap_ace = null;
             ArrayList<String> res_ace = null;
 
             dossierName = null;
             while ((s = br.readLine()) != null) {
-                if (s.length() == 0) continue;
+                if (s.length() == 0)
+                    continue;
 
                 if (s.startsWith("RFAP:")) {
                     resap_ace = new ArrayList<String>();
@@ -476,14 +487,14 @@ public class PatentEvaluation {
 
             // we parse the log file for Ddoc results
             br = new BufferedReader(
-                    new InputStreamReader(
-                            new FileInputStream(evaluationPath + "/Ddoc_20100426.txt"), "UTF8"));
+                    new InputStreamReader(new FileInputStream(evaluationPath + "/Ddoc_20100426.txt"), "UTF8"));
             ArrayList<String> resap_Ddoc = null;
             ArrayList<String> res_Ddoc = null;
 
             dossierName = null;
             while ((s = br.readLine()) != null) {
-                if (s.length() == 0) continue;
+                if (s.length() == 0)
+                    continue;
 
                 if (s.startsWith("RFAP:")) {
                     resap_Ddoc = new ArrayList<String>();
@@ -523,84 +534,34 @@ public class PatentEvaluation {
             rf_Ddoc.put(dossierName, res_Ddoc);
             br.close();
 
-            /*while((s = br.readLine()) != null) {
-                   s = s.substring(1, s.length());
-
-                   if (s.trim().length() == 0) continue;
-
-                   if (s.startsWith("EP") & (dossierName == null)) {
-                       StringTokenizer st = new StringTokenizer(s, " ");
-                       dossierName = st.nextToken().trim();
-                       //dossierName = "EP20"+dossierName.substring(2,4)+"0"+dossierName.substring(4,dossierName.length());
-                       //System.out.println(dossierName);
-                   }
-                   else if (s.startsWith("RFAP")) {
-                       rf_part = false;
-                       resap_reference = new ArrayList<String>();
-                       resap_ace = new ArrayList<String>();
-                       resap_Ddoc = new ArrayList<String>();
-                   }
-                   else if (s.startsWith("RF")) {
-                       rf_part = true;
-                       res_reference = new ArrayList<String>();
-                       res_ace = new ArrayList<String>();
-                       res_Ddoc = new ArrayList<String>();
-                   }
-                   else if (s.startsWith("_______")) {
-                       rfap_reference.put(dossierName, resap_reference);
-                       rf_reference.put(dossierName, res_reference);
-                       rfap_ace.put(dossierName, resap_ace);
-                       rf_ace.put(dossierName, res_ace);
-                       rfap_Ddoc.put(dossierName, resap_Ddoc);
-                       rf_Ddoc.put(dossierName, res_Ddoc);
-                       dossierName = null;
-                   }
-                   else {
-                       StringTokenizer st = new StringTokenizer(s, "|");
-                       if (rf_part) {
-                           String tok1 = st.nextToken().trim();
-                           String tok2 = st.nextToken().trim();
-                           String tok3 = st.nextToken().trim();
-
-                           if (tok1.length() > 0) {
-                               if (!res_reference.contains(tok1))
-                                   res_reference.add(tok1);
-                           }
-                           if (tok2.length() > 0) {
-                               if (!res_ace.contains(tok2))
-                                   res_ace.add(tok2);
-                           }
-                           if (tok3.length() > 0) {
-                               if (!res_Ddoc.contains(tok3))
-                                   res_Ddoc.add(tok3);
-                           }
-                       }
-                       else {
-                           String tok1 = st.nextToken().trim();
-                           if (!st.hasMoreTokens())
-                               System.out.println("WARNING: " + s);
-                           String tok2 = st.nextToken().trim();
-                           if (!st.hasMoreTokens())
-                               System.out.println("WARNING: " + s);
-                           String tok3 = st.nextToken().trim();
-
-                           if (tok1.length() > 0) {
-                               if (!resap_reference.contains(tok1))
-                                   resap_reference.add(tok1);
-                           }
-                           if (tok2.length() > 0) {
-                               if (!resap_ace.contains(tok2))
-                                   resap_ace.add(tok2);
-                           }
-                           if (tok3.length() > 0) {
-                               if (!resap_Ddoc.contains(tok3))
-                                   resap_Ddoc.add(tok3);
-                           }
-                       }
-                   }
-               }
-               br.close();
-               */
+            /*
+             * while((s = br.readLine()) != null) { s = s.substring(1, s.length());
+             *
+             * if (s.trim().length() == 0) continue;
+             *
+             * if (s.startsWith("EP") & (dossierName == null)) { StringTokenizer st = new StringTokenizer(s, " ");
+             * dossierName = st.nextToken().trim(); //dossierName =
+             * "EP20"+dossierName.substring(2,4)+"0"+dossierName.substring(4,dossierName.length());
+             * //System.out.println(dossierName); } else if (s.startsWith("RFAP")) { rf_part = false; resap_reference =
+             * new ArrayList<String>(); resap_ace = new ArrayList<String>(); resap_Ddoc = new ArrayList<String>(); }
+             * else if (s.startsWith("RF")) { rf_part = true; res_reference = new ArrayList<String>(); res_ace = new
+             * ArrayList<String>(); res_Ddoc = new ArrayList<String>(); } else if (s.startsWith("_______")) {
+             * rfap_reference.put(dossierName, resap_reference); rf_reference.put(dossierName, res_reference);
+             * rfap_ace.put(dossierName, resap_ace); rf_ace.put(dossierName, res_ace); rfap_Ddoc.put(dossierName,
+             * resap_Ddoc); rf_Ddoc.put(dossierName, res_Ddoc); dossierName = null; } else { StringTokenizer st = new
+             * StringTokenizer(s, "|"); if (rf_part) { String tok1 = st.nextToken().trim(); String tok2 =
+             * st.nextToken().trim(); String tok3 = st.nextToken().trim();
+             *
+             * if (tok1.length() > 0) { if (!res_reference.contains(tok1)) res_reference.add(tok1); } if (tok2.length()
+             * > 0) { if (!res_ace.contains(tok2)) res_ace.add(tok2); } if (tok3.length() > 0) { if
+             * (!res_Ddoc.contains(tok3)) res_Ddoc.add(tok3); } } else { String tok1 = st.nextToken().trim(); if
+             * (!st.hasMoreTokens()) System.out.println("WARNING: " + s); String tok2 = st.nextToken().trim(); if
+             * (!st.hasMoreTokens()) System.out.println("WARNING: " + s); String tok3 = st.nextToken().trim();
+             *
+             * if (tok1.length() > 0) { if (!resap_reference.contains(tok1)) resap_reference.add(tok1); } if
+             * (tok2.length() > 0) { if (!resap_ace.contains(tok2)) resap_ace.add(tok2); } if (tok3.length() > 0) { if
+             * (!resap_Ddoc.contains(tok3)) resap_Ddoc.add(tok3); } } } } br.close();
+             */
 
             // we parse our own results
             BufferedReader br2 = new BufferedReader(
@@ -609,7 +570,8 @@ public class PatentEvaluation {
             ArrayList<String> resap = null;
             ArrayList<String> res = null;
             while ((s = br2.readLine()) != null) {
-                if (s.length() == 0) continue;
+                if (s.length() == 0)
+                    continue;
 
                 if (s.startsWith("RFAP:")) {
                     resap = new ArrayList<String>();
@@ -654,21 +616,28 @@ public class PatentEvaluation {
             // reference
             int count_rfap_reference = 0;
             for (Map.Entry<String, ArrayList<String>> entry : rfap_reference.entrySet()) {
-//                dossierName = entry.getKey();
+                // dossierName = entry.getKey();
                 ArrayList<String> liste = entry.getValue();
                 count_rfap_reference += liste.size();
             }
             int count_rf_reference = 0;
             int nbDossier = 0;
             for (Map.Entry<String, ArrayList<String>> entry : rf_reference.entrySet()) {
-//                dossierName = entry.getKey();
+                // dossierName = entry.getKey();
                 ArrayList<String> liste = entry.getValue();
                 count_rf_reference += liste.size();
                 nbDossier++;
             }
-            System.out.println("Ref. data: " + count_rfap_reference + " serials and "
-                    + count_rf_reference + " publications, total: "
-                    + (count_rfap_reference + count_rf_reference) + " in " + nbDossier + " dossiers");
+            System.out.println(
+                    "Ref. data: "
+                            + count_rfap_reference
+                            + " serials and "
+                            + count_rf_reference
+                            + " publications, total: "
+                            + (count_rfap_reference + count_rf_reference)
+                            + " in "
+                            + nbDossier
+                            + " dossiers");
 
             // ace
             int count_rfap_ace = 0;
@@ -699,9 +668,20 @@ public class PatentEvaluation {
                 }
                 nbDossier++;
             }
-            System.out.println("ACE data: " + count_rfap_ace + " (" + count_rfap_ace_correct + " correct) serials and "
-                    + count_rf_ace + " (" + count_rf_ace_correct + " correct) publications, total: " + (count_rfap_ace + count_rf_ace)
-                    + " in " + nbDossier + " dossiers");
+            System.out.println(
+                    "ACE data: "
+                            + count_rfap_ace
+                            + " ("
+                            + count_rfap_ace_correct
+                            + " correct) serials and "
+                            + count_rf_ace
+                            + " ("
+                            + count_rf_ace_correct
+                            + " correct) publications, total: "
+                            + (count_rfap_ace + count_rf_ace)
+                            + " in "
+                            + nbDossier
+                            + " dossiers");
 
             // Ddoc
             int count_rfap_Ddoc = 0;
@@ -732,15 +712,26 @@ public class PatentEvaluation {
                 }
                 nbDossier++;
             }
-            System.out.println("Ddoc data: " + count_rfap_Ddoc + " (" + count_rfap_Ddoc_correct + " correct) serials and "
-                    + count_rf_Ddoc + " (" + count_rf_Ddoc_correct + " correct) publications, total: " + (count_rfap_Ddoc + count_rf_Ddoc)
-                    + " in " + nbDossier + " dossiers");
+            System.out.println(
+                    "Ddoc data: "
+                            + count_rfap_Ddoc
+                            + " ("
+                            + count_rfap_Ddoc_correct
+                            + " correct) serials and "
+                            + count_rf_Ddoc
+                            + " ("
+                            + count_rf_Ddoc_correct
+                            + " correct) publications, total: "
+                            + (count_rfap_Ddoc + count_rf_Ddoc)
+                            + " in "
+                            + nbDossier
+                            + " dossiers");
 
             // GROBID
             int count_rfap = 0;
             int count_rfap_correct = 0;
             for (Map.Entry<String, ArrayList<String>> entry : rfap.entrySet()) {
-                //System.out.println("key is " + entry.getKey() + " and value is " + entry.getValue());
+                // System.out.println("key is " + entry.getKey() + " and value is " + entry.getValue());
                 dossierName = entry.getKey();
                 ArrayList<String> referenceListe = rfap_reference.get(dossierName);
                 if (referenceListe != null) {
@@ -769,12 +760,23 @@ public class PatentEvaluation {
                     }
                     nbDossier++;
                 } else
-                    System.out.println("WARNING! file " + dossierName
-                            + " in GROBID's results but not in reference results");
+                    System.out.println(
+                            "WARNING! file " + dossierName + " in GROBID's results but not in reference results");
             }
-            System.out.println("GROBID data: " + count_rfap + " (" + count_rfap_correct + " correct) serials and "
-                    + count_rf + " (" + count_rf_correct + " correct) publications, total: " + (count_rfap + count_rf)
-                    + " in " + nbDossier + " dossiers");
+            System.out.println(
+                    "GROBID data: "
+                            + count_rfap
+                            + " ("
+                            + count_rfap_correct
+                            + " correct) serials and "
+                            + count_rf
+                            + " ("
+                            + count_rf_correct
+                            + " correct) publications, total: "
+                            + (count_rfap + count_rf)
+                            + " in "
+                            + nbDossier
+                            + " dossiers");
 
             // creating sharing Ddoc and Grobid by intersection
             int count_rfap_DdocIGROBID = 0;
@@ -785,8 +787,7 @@ public class PatentEvaluation {
                 ArrayList<String> liste = entry.getValue();
                 ArrayList<String> listeGrobid = rfap.get(dossierName);
                 if (listeGrobid == null) {
-                    System.out.println("WARNING! file " + dossierName
-                            + " in Ddoc results but not in GROBID's one");
+                    System.out.println("WARNING! file " + dossierName + " in Ddoc results but not in GROBID's one");
                 } else {
                     ArrayList<String> liste2 = new ArrayList<String>();
                     for (String toto : liste) {
@@ -810,8 +811,7 @@ public class PatentEvaluation {
                 ArrayList<String> liste = entry.getValue();
                 ArrayList<String> listeGrobid = rf.get(dossierName);
                 if (listeGrobid == null) {
-                    System.out.println("WARNING! file " + dossierName
-                            + " in Ddoc results but not in GROBID's one");
+                    System.out.println("WARNING! file " + dossierName + " in Ddoc results but not in GROBID's one");
                 } else {
                     ArrayList<String> liste2 = new ArrayList<String>();
                     for (String toto : liste) {
@@ -827,11 +827,20 @@ public class PatentEvaluation {
                     nbDossier++;
                 }
             }
-            System.out.println("Ddoc+GROBID data: " + count_rfap_DdocIGROBID + " (" + count_rfap_DdocIGROBID_correct
-                    + " correct) serials and "
-                    + count_rf_DdocIGROBID + " (" + count_rf_DdocIGROBID_correct + " correct) publications, total: "
-                    + (count_rfap_DdocIGROBID + count_rf_DdocIGROBID)
-                    + " in " + nbDossier + " dossiers");
+            System.out.println(
+                    "Ddoc+GROBID data: "
+                            + count_rfap_DdocIGROBID
+                            + " ("
+                            + count_rfap_DdocIGROBID_correct
+                            + " correct) serials and "
+                            + count_rf_DdocIGROBID
+                            + " ("
+                            + count_rf_DdocIGROBID_correct
+                            + " correct) publications, total: "
+                            + (count_rfap_DdocIGROBID + count_rf_DdocIGROBID)
+                            + " in "
+                            + nbDossier
+                            + " dossiers");
 
             // creating sharing Ddoc and Grobid by union
             int count_rfap_DdocUGROBID = 0;
@@ -842,8 +851,7 @@ public class PatentEvaluation {
                 ArrayList<String> liste = entry.getValue();
                 ArrayList<String> listeGrobid = rfap.get(dossierName);
                 if (listeGrobid == null) {
-                    System.out.println("WARNING! file " + dossierName
-                            + " in Ddoc results but not in GROBID's one");
+                    System.out.println("WARNING! file " + dossierName + " in Ddoc results but not in GROBID's one");
                 } else {
                     for (String toto : listeGrobid) {
                         if (!liste.contains(toto))
@@ -866,8 +874,7 @@ public class PatentEvaluation {
                 ArrayList<String> liste = entry.getValue();
                 ArrayList<String> listeGrobid = rf.get(dossierName);
                 if (listeGrobid == null) {
-                    System.out.println("WARNING! file " + dossierName
-                            + " in Ddoc results but not in GROBID's one");
+                    System.out.println("WARNING! file " + dossierName + " in Ddoc results but not in GROBID's one");
                 } else {
                     for (String toto : listeGrobid) {
                         if (!liste.contains(toto))
@@ -882,22 +889,29 @@ public class PatentEvaluation {
                     nbDossier++;
                 }
             }
-            System.out.println("Ddoc|GROBID data: " + count_rfap_DdocUGROBID + " (" + count_rfap_DdocUGROBID_correct
-                    + " correct) serials and "
-                    + count_rf_DdocUGROBID + " (" + count_rf_DdocUGROBID_correct + " correct) publications, total: "
-                    + (count_rfap_DdocUGROBID + count_rf_DdocUGROBID)
-                    + " in " + nbDossier + " dossiers");
+            System.out.println(
+                    "Ddoc|GROBID data: "
+                            + count_rfap_DdocUGROBID
+                            + " ("
+                            + count_rfap_DdocUGROBID_correct
+                            + " correct) serials and "
+                            + count_rf_DdocUGROBID
+                            + " ("
+                            + count_rf_DdocUGROBID_correct
+                            + " correct) publications, total: "
+                            + (count_rfap_DdocUGROBID + count_rf_DdocUGROBID)
+                            + " in "
+                            + nbDossier
+                            + " dossiers");
 
             // ACE
             double ace_rfap_precision = (double) count_rfap_ace_correct / count_rfap_ace;
             double ace_rfap_recall = (double) count_rfap_ace_correct / count_rfap_reference;
-            double ace_rfap_f = (2 * ace_rfap_precision * ace_rfap_recall)
-                    / (ace_rfap_precision + ace_rfap_recall);
+            double ace_rfap_f = (2 * ace_rfap_precision * ace_rfap_recall) / (ace_rfap_precision + ace_rfap_recall);
 
             double ace_rf_precision = (double) count_rf_ace_correct / count_rf_ace;
             double ace_rf_recall = (double) count_rf_ace_correct / count_rf_reference;
-            double ace_rf_f = (2 * ace_rf_precision * ace_rf_recall)
-                    / (ace_rf_precision + ace_rf_recall);
+            double ace_rf_f = (2 * ace_rf_precision * ace_rf_recall) / (ace_rf_precision + ace_rf_recall);
 
             double ace_rfall_precision = (double) (count_rfap_ace_correct + count_rf_ace_correct)
                     / (count_rfap_ace + count_rf_ace);
@@ -914,8 +928,7 @@ public class PatentEvaluation {
 
             double Ddoc_rf_precision = (double) count_rf_Ddoc_correct / count_rf_Ddoc;
             double Ddoc_rf_recall = (double) count_rf_Ddoc_correct / count_rf_reference;
-            double Ddoc_rf_f = (2 * Ddoc_rf_precision * Ddoc_rf_recall)
-                    / (Ddoc_rf_precision + Ddoc_rf_recall);
+            double Ddoc_rf_f = (2 * Ddoc_rf_precision * Ddoc_rf_recall) / (Ddoc_rf_precision + Ddoc_rf_recall);
 
             double Ddoc_rfall_precision = (double) (count_rfap_Ddoc_correct + count_rf_Ddoc_correct)
                     / (count_rfap_Ddoc + count_rf_Ddoc);
@@ -935,8 +948,7 @@ public class PatentEvaluation {
             double grobid_rf_f = (2 * grobid_rf_precision * grobid_rf_recall)
                     / (grobid_rf_precision + grobid_rf_recall);
 
-            double grobid_rfall_precision = (double) (count_rfap_correct + count_rf_correct)
-                    / (count_rf + count_rfap);
+            double grobid_rfall_precision = (double) (count_rfap_correct + count_rf_correct) / (count_rf + count_rfap);
             double grobid_rfall_recall = (double) (count_rfap_correct + count_rf_correct)
                     / (count_rfap_reference + count_rf_reference);
             double grobid_rfall_f = (2 * grobid_rfall_precision * grobid_rfall_recall)
@@ -953,8 +965,8 @@ public class PatentEvaluation {
             double DdocIGROBID_rf_f = (2 * DdocIGROBID_rf_precision * DdocIGROBID_rf_recall)
                     / (DdocIGROBID_rf_precision + DdocIGROBID_rf_recall);
 
-            double DdocIGROBID_rfall_precision = (double) (count_rfap_DdocIGROBID_correct + count_rf_DdocIGROBID_correct)
-                    / (count_rfap_DdocIGROBID + count_rf_DdocIGROBID);
+            double DdocIGROBID_rfall_precision = (double) (count_rfap_DdocIGROBID_correct
+                    + count_rf_DdocIGROBID_correct) / (count_rfap_DdocIGROBID + count_rf_DdocIGROBID);
             double DdocIGROBID_rfall_recall = (double) (count_rfap_DdocIGROBID_correct + count_rf_DdocIGROBID_correct)
                     / (count_rfap_reference + count_rf_reference);
             double DdocIGROBID_rfall_f = (2 * DdocIGROBID_rfall_precision * DdocIGROBID_rfall_recall)
@@ -971,8 +983,8 @@ public class PatentEvaluation {
             double DdocUGROBID_rf_f = (2 * DdocUGROBID_rf_precision * DdocUGROBID_rf_recall)
                     / (DdocUGROBID_rf_precision + DdocUGROBID_rf_recall);
 
-            double DdocUGROBID_rfall_precision = (double) (count_rfap_DdocUGROBID_correct + count_rf_DdocUGROBID_correct)
-                    / (count_rfap_DdocUGROBID + count_rf_DdocUGROBID);
+            double DdocUGROBID_rfall_precision = (double) (count_rfap_DdocUGROBID_correct
+                    + count_rf_DdocUGROBID_correct) / (count_rfap_DdocUGROBID + count_rf_DdocUGROBID);
             double DdocUGROBID_rfall_recall = (double) (count_rfap_DdocUGROBID_correct + count_rf_DdocUGROBID_correct)
                     / (count_rfap_reference + count_rf_reference);
             double DdocUGROBID_rfall_f = (2 * DdocUGROBID_rfall_precision * DdocUGROBID_rfall_recall)
@@ -982,68 +994,127 @@ public class PatentEvaluation {
             System.out.println("___________________________________________________________");
             System.out.println("RFAP: ");
             System.out.println("\t\tPrecision\tRecall\t\tF-score");
-            System.out.println("ACE\t\t" + TextUtilities.formatTwoDecimals(ace_rfap_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(ace_rfap_recall * 100)
-                    + "\t\t" + TextUtilities.formatTwoDecimals(ace_rfap_f * 100));
-            System.out.println("Ddoc\t" + TextUtilities.formatTwoDecimals(Ddoc_rfap_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(Ddoc_rfap_recall * 100)
-                    + "\t\t" + TextUtilities.formatTwoDecimals(Ddoc_rfap_f * 100));
-            System.out.println("GROBID\t" + TextUtilities.formatTwoDecimals(grobid_rfap_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(grobid_rfap_recall * 100)
-                    + "\t\t" + TextUtilities.formatTwoDecimals(grobid_rfap_f * 100));
-            System.out.println("Ddoc+GROBID\t" + TextUtilities.formatTwoDecimals(DdocIGROBID_rfap_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocIGROBID_rfap_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocIGROBID_rfap_f * 100));
-            System.out.println("Ddoc|GROBID\t" + TextUtilities.formatTwoDecimals(DdocUGROBID_rfap_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocUGROBID_rfap_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocUGROBID_rfap_f * 100));
+            System.out.println(
+                    "ACE\t\t"
+                            + TextUtilities.formatTwoDecimals(ace_rfap_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(ace_rfap_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(ace_rfap_f * 100));
+            System.out.println(
+                    "Ddoc\t"
+                            + TextUtilities.formatTwoDecimals(Ddoc_rfap_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(Ddoc_rfap_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(Ddoc_rfap_f * 100));
+            System.out.println(
+                    "GROBID\t"
+                            + TextUtilities.formatTwoDecimals(grobid_rfap_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(grobid_rfap_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(grobid_rfap_f * 100));
+            System.out.println(
+                    "Ddoc+GROBID\t"
+                            + TextUtilities.formatTwoDecimals(DdocIGROBID_rfap_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocIGROBID_rfap_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocIGROBID_rfap_f * 100));
+            System.out.println(
+                    "Ddoc|GROBID\t"
+                            + TextUtilities.formatTwoDecimals(DdocUGROBID_rfap_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocUGROBID_rfap_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocUGROBID_rfap_f * 100));
 
             System.out.println("\n___________________________________________________________");
             System.out.println("RF: ");
             System.out.println("\t\tPrecision\tRecall\t\tF-score");
-            System.out.println("ACE\t\t" + TextUtilities.formatTwoDecimals(ace_rf_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(ace_rf_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(ace_rf_f * 100));
-            System.out.println("Ddoc\t" + TextUtilities.formatTwoDecimals(Ddoc_rf_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(Ddoc_rf_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(Ddoc_rf_f * 100));
-            System.out.println("GROBID\t" + TextUtilities.formatTwoDecimals(grobid_rf_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(grobid_rf_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(grobid_rf_f * 100));
-            System.out.println("Ddoc+GROBID\t" + TextUtilities.formatTwoDecimals(DdocIGROBID_rf_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocIGROBID_rf_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocIGROBID_rf_f * 100));
-            System.out.println("Ddoc|GROBID\t" + TextUtilities.formatTwoDecimals(DdocUGROBID_rf_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocUGROBID_rf_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocUGROBID_rf_f * 100));
+            System.out.println(
+                    "ACE\t\t"
+                            + TextUtilities.formatTwoDecimals(ace_rf_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(ace_rf_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(ace_rf_f * 100));
+            System.out.println(
+                    "Ddoc\t"
+                            + TextUtilities.formatTwoDecimals(Ddoc_rf_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(Ddoc_rf_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(Ddoc_rf_f * 100));
+            System.out.println(
+                    "GROBID\t"
+                            + TextUtilities.formatTwoDecimals(grobid_rf_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(grobid_rf_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(grobid_rf_f * 100));
+            System.out.println(
+                    "Ddoc+GROBID\t"
+                            + TextUtilities.formatTwoDecimals(DdocIGROBID_rf_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocIGROBID_rf_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocIGROBID_rf_f * 100));
+            System.out.println(
+                    "Ddoc|GROBID\t"
+                            + TextUtilities.formatTwoDecimals(DdocUGROBID_rf_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocUGROBID_rf_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocUGROBID_rf_f * 100));
 
             System.out.println("\n___________________________________________________________");
             System.out.println("All: ");
             System.out.println("\t\tPrecision\tRecall\t\tF-score");
-            System.out.println("ACE\t\t" + TextUtilities.formatTwoDecimals(ace_rfall_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(ace_rfall_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(ace_rfall_f * 100));
-            System.out.println("Ddoc\t" + TextUtilities.formatTwoDecimals(Ddoc_rfall_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(Ddoc_rfall_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(Ddoc_rfall_f * 100));
-            System.out.println("GROBID\t" + TextUtilities.formatTwoDecimals(grobid_rfall_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(grobid_rfall_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(grobid_rfall_f * 100));
-            System.out.println("Ddoc+GROBID\t" + TextUtilities.formatTwoDecimals(DdocIGROBID_rfall_precision * 100)
-                    + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocIGROBID_rfall_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocIGROBID_rfall_f * 100));
-            System.out.println("Ddod|GROBID\t" + TextUtilities.formatTwoDecimals(DdocUGROBID_rfall_precision * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocUGROBID_rfall_recall * 100) + "\t\t"
-                    + TextUtilities.formatTwoDecimals(DdocUGROBID_rfall_f * 100));
+            System.out.println(
+                    "ACE\t\t"
+                            + TextUtilities.formatTwoDecimals(ace_rfall_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(ace_rfall_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(ace_rfall_f * 100));
+            System.out.println(
+                    "Ddoc\t"
+                            + TextUtilities.formatTwoDecimals(Ddoc_rfall_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(Ddoc_rfall_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(Ddoc_rfall_f * 100));
+            System.out.println(
+                    "GROBID\t"
+                            + TextUtilities.formatTwoDecimals(grobid_rfall_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(grobid_rfall_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(grobid_rfall_f * 100));
+            System.out.println(
+                    "Ddoc+GROBID\t"
+                            + TextUtilities.formatTwoDecimals(DdocIGROBID_rfall_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocIGROBID_rfall_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocIGROBID_rfall_f * 100));
+            System.out.println(
+                    "Ddod|GROBID\t"
+                            + TextUtilities.formatTwoDecimals(DdocUGROBID_rfall_precision * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocUGROBID_rfall_recall * 100)
+                            + "\t\t"
+                            + TextUtilities.formatTwoDecimals(DdocUGROBID_rfall_f * 100));
 
             // write Ddoc and reference results
             File fileOut = new File(path.getParent() + "/reference.txt");
             OutputStream os = new FileOutputStream(fileOut, false);
             Writer referenceWriter = new OutputStreamWriter(os, "UTF-8");
 
-            //Collection.reverse(rf_reference);
-            //rf_reference = new TreeMap<String, ArrayList<String>>(Collections.reverseOrder());
+            // Collection.reverse(rf_reference);
+            // rf_reference = new TreeMap<String, ArrayList<String>>(Collections.reverseOrder());
 
             System.out.println("Reference data in " + path.getParent() + "/reference.txt");
             for (Map.Entry<String, ArrayList<String>> entry : rf_reference.entrySet()) {

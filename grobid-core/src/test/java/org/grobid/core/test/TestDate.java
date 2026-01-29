@@ -2,10 +2,8 @@ package org.grobid.core.test;
 
 import org.grobid.core.data.Date;
 import org.grobid.core.factory.GrobidFactory;
-import org.grobid.core.main.LibraryLoader;
 import org.grobid.core.utilities.GrobidProperties;
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -24,7 +22,7 @@ public class TestDate extends EngineTest {
     }
 
     @AfterClass
-    public static void tearDown(){
+    public static void tearDown() {
         GrobidFactory.reset();
     }
 

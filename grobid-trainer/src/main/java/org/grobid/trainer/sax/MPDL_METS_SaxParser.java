@@ -44,15 +44,15 @@ public class MPDL_METS_SaxParser extends DefaultHandler {
     ArrayList<String> titles = new ArrayList<String>();
     ArrayList<String> ids = new ArrayList<String>();
 
-    //private Writer writer = null;
+    // private Writer writer = null;
     private String output = null;
 
     public MPDL_METS_SaxParser() {
     }
 
-    /*public MPDL_METS_SaxParser(Writer writ) {
-         writer = writ;
-     }*/
+    /*
+     * public MPDL_METS_SaxParser(Writer writ) { writer = writ; }
+     */
     public MPDL_METS_SaxParser(String outp) {
         output = outp;
         outputFile = true;
@@ -78,7 +78,8 @@ public class MPDL_METS_SaxParser extends DefaultHandler {
         return ids;
     }
 
-    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName) throws SAXException {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
         if (qName.equals("mods:title")) {
             // we register in the DB the new entry
             mods_title = getText();
@@ -110,8 +111,8 @@ public class MPDL_METS_SaxParser extends DefaultHandler {
             Person aut = new Person();
             aut.setFirstName(author_given);
             aut.setLastName(author_family);
-            //aut.setDisplayName(mods_displayForm);
-            //authors.add(aut);
+            // aut.setDisplayName(mods_displayForm);
+            // authors.add(aut);
 
             accumulator.setLength(0);
         } else if (qName.equals("mods:namePart")) {
@@ -135,8 +136,12 @@ public class MPDL_METS_SaxParser extends DefaultHandler {
                     File outFile = new File(output + "/" + mods_identifier + "-train.tei");
                     OutputStream os = new FileOutputStream(outFile);
                     Writer writer = new OutputStreamWriter(os, "UTF-8");
-                    writer.write("<tei>\n\t<teiHeader>\n\t<fileDesc xml:id=\"" + mods_identifier +
-                            "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"" + mods_language + "\">\n");
+                    writer.write(
+                            "<tei>\n\t<teiHeader>\n\t<fileDesc xml:id=\""
+                                    + mods_identifier
+                                    + "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
+                                    + mods_language
+                                    + "\">\n");
                     // we can write the title section
                     writer.write("\t\t<front>\n\t\t\t<titlePage>\n\t\t\t\t<docTitle>\n");
                     writer.write("\t\t\t\t\t<titlePart type=\"main\">" + mods_title + "</titlePart>\n");
@@ -146,7 +151,8 @@ public class MPDL_METS_SaxParser extends DefaultHandler {
 
                     writer.write("\t\t\t\t<byline><affiliation><lb/></affiliation></byline>\n");
 
-                    writer.write("\t\t\t\t<docImprint>(<title level=\"j\">Z. Naturforschg.</title> <biblScope type=\"vol\"></biblScope>, <biblScope type=\"pp\"></biblScope> [<date></date>]; <note>eingegangen am</note>)<lb/></docImprint>\n");
+                    writer.write(
+                            "\t\t\t\t<docImprint>(<title level=\"j\">Z. Naturforschg.</title> <biblScope type=\"vol\"></biblScope>, <biblScope type=\"pp\"></biblScope> [<date></date>]; <note>eingegangen am</note>)<lb/></docImprint>\n");
 
                     writer.write("\t\t\t</titlePage>\n");
                     writer.write("\t\t\t<div type=\"abstract\"><lb/></div>\n");
@@ -156,7 +162,7 @@ public class MPDL_METS_SaxParser extends DefaultHandler {
                     os.close();
                 }
             } catch (Exception e) {
-//        		e.printStackTrace();
+                // e.printStackTrace();
                 throw new GrobidException("An exception occured while running Grobid.", e);
             }
             accumulator.setLength(0);
@@ -164,12 +170,7 @@ public class MPDL_METS_SaxParser extends DefaultHandler {
         accumulator.setLength(0);
     }
 
-
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
-            throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
         if (qName.equals("mods:namePart")) {
             int length = atts.getLength();
 

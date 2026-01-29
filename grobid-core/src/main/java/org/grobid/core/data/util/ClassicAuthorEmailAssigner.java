@@ -28,7 +28,8 @@ public class ClassicAuthorEmailAssigner implements AuthorEmailAssigner {
                         for (Person aut : fullAuthors) {
                             Integer kk = k;
                             if (!winners.contains(kk)) {
-                                List<String> emailVariants = TextUtilities.generateEmailVariants(aut.getFirstName(), aut.getLastName());
+                                List<String> emailVariants = TextUtilities
+                                        .generateEmailVariants(aut.getFirstName(), aut.getLastName());
 
                                 for (String variant : emailVariants) {
                                     variant = variant.toLowerCase();

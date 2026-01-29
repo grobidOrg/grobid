@@ -45,7 +45,7 @@ public class AnnotationUtil {
                 }
             }
         }
-        
+
         if (mediaBox == null) {
             System.out.println("Null mediabox for page: " + (pageNum + 1));
             return null;
@@ -57,9 +57,9 @@ public class AnnotationUtil {
         float x = Float.parseFloat(split[1]);
         float y = Float.parseFloat(split[2]);
         float w = Float.parseFloat(split[3]);
-		String nextString = split[4];
-		if (nextString.indexOf(";") != -1)
-			nextString = nextString.substring(0, nextString.indexOf(";"));
+        String nextString = split[4];
+        if (nextString.indexOf(";") != -1)
+            nextString = nextString.substring(0, nextString.indexOf(";"));
         float h = Float.parseFloat(nextString);
 
         float annX = x + lowerX;
@@ -77,11 +77,11 @@ public class AnnotationUtil {
         if (coords == null) {
             return;
         }
-        //System.out.println("Annotating for coordinates: " + coords);
+        // System.out.println("Annotating for coordinates: " + coords);
 
         BoundingBox box = getBoundingBoxForPdf(document, coords);
         if (box == null) {
-            //System.out.println("Null bounding box for coords: " + coords);
+            // System.out.println("Null bounding box for coords: " + coords);
             // nothing to do
             return;
         }
@@ -104,22 +104,20 @@ public class AnnotationUtil {
         // so that a border is not visible at all
         borderULine.setWidth(0);
 
-
         PDAnnotationLink txtLink = new PDAnnotationLink();
         txtLink.setBorderStyle(borderULine);
 
-        //linkColor rectangle border color (ideally, should be transparent)
+        // linkColor rectangle border color (ideally, should be transparent)
         COSArray linkColor = new COSArray();
 
         Random r = new Random(seed);
 
-
-//        linkColor.setFloatArray(new float[]{r.nextInt(128) + 127, r.nextInt(255), r.nextInt(255)});
+        // linkColor.setFloatArray(new float[]{r.nextInt(128) + 127, r.nextInt(255), r.nextInt(255)});
         linkColor.setFloatArray(new float[]{224, 9, 56});
         txtLink.setColor(new PDColor(linkColor, PDDeviceRGB.INSTANCE));
         txtLink.setReadOnly(true);
 
-        //so that
+        // so that
         txtLink.setHighlightMode(PDAnnotationLink.HIGHLIGHT_MODE_PUSH);
 
         PDActionURI action = new PDActionURI();
@@ -127,35 +125,35 @@ public class AnnotationUtil {
         txtLink.setAction(action);
         txtLink.setRectangle(rect);
 
-
         // ADDING LINK TO THE REFERENCE
-//        page.getAnnotations().add(txtLink);
+        // page.getAnnotations().add(txtLink);
 
-        //draw a line
+        // draw a line
         PDBorderStyleDictionary borderThick = new PDBorderStyleDictionary();
-        borderThick.setWidth(lineWidth);  // 12th inch
+        borderThick.setWidth(lineWidth); // 12th inch
 
-//            PDAnnotationLine line = new PDAnnotationLine();
-//            line.setLine(new float[]{annX, annY, annRightX, annY});
-//            line.setRectangle(rect);
-//            line.setBorderStyle(borderThick);
-//            line.setReadOnly(true);
-//            line.setLocked(true);
-//
-//            COSArray rgLineColor = new COSArray();
-//            rgLineColor.setFloatArray(new float[]{85 / 255f, 177 / 255f, 245 / 255f});
-//            PDGamma col = new PDGamma(rgLineColor);
-//            line.setColour(col);
-
-        // ADDING LINE TO THE REFERENCE
-//            page.getAnnotations().add(line);
+        // PDAnnotationLine line = new PDAnnotationLine();
+        // line.setLine(new float[]{annX, annY, annRightX, annY});
+        // line.setRectangle(rect);
+        // line.setBorderStyle(borderThick);
+        // line.setReadOnly(true);
+        // line.setLocked(true);
+        //
+        // COSArray rgLineColor = new COSArray();
+        // rgLineColor.setFloatArray(new float[]{85 / 255f, 177 / 255f, 245 / 255f});
+        // PDGamma col = new PDGamma(rgLineColor);
+        // line.setColour(col);
 
         // ADDING LINE TO THE REFERENCE
-        PDPageContentStream stream = new PDPageContentStream(document, page, PDPageContentStream.AppendMode.APPEND, false, true);
-//        Random r = new Random(seed + 1);
-//
-//
-////        stream.setStrokingColor(85, 177, 245);
+        // page.getAnnotations().add(line);
+
+        // ADDING LINE TO THE REFERENCE
+        PDPageContentStream stream = new PDPageContentStream(document, page, PDPageContentStream.AppendMode.APPEND,
+                false, true);
+        // Random r = new Random(seed + 1);
+        //
+        //
+        ////        stream.setStrokingColor(85, 177, 245);
         stream.setStrokingColor(r.nextInt(255), r.nextInt(255), r.nextInt(255));
         stream.setLineWidth(lineWidth);
         stream.drawLine(annX, annY, annRightX, annY);
@@ -163,8 +161,8 @@ public class AnnotationUtil {
         stream.drawLine(annX, annY, annX, annTopY);
         stream.drawLine(annRightX, annY, annRightX, annTopY);
         stream.close();
-//        }
-//        return 1;
+        // }
+        // return 1;
     }
 
     public static String getCoordString(BoundingBox b) {

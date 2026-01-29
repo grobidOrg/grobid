@@ -77,6 +77,5 @@ public class PriorArtCitation {
         rawClaims = raw;
     }
 
-	// TODO: TEI based encoding
+    // TODO: TEI based encoding
 }
-

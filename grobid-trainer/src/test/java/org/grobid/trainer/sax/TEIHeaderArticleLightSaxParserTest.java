@@ -15,7 +15,6 @@ public class TEIHeaderArticleLightSaxParserTest {
     TEIHeaderArticleLightSaxParser target;
     SAXParserFactory spf;
 
-
     @Before
     public void setUp() throws Exception {
         spf = SAXParserFactory.newInstance();

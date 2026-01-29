@@ -21,13 +21,13 @@ public class DateParserIntegrationTest {
 
     @BeforeClass
     public static void setInitialContext() throws Exception {
-//        MockContext.setInitialContext();
+        // MockContext.setInitialContext();
         AbstractEngineFactory.init();
     }
 
     @AfterClass
     public static void destroyInitialContext() throws Exception {
-//        MockContext.destroyInitialContext();
+        // MockContext.destroyInitialContext();
     }
 
     @Before
@@ -43,7 +43,6 @@ public class DateParserIntegrationTest {
         assertThat(date.getDay(), is(19));
         assertThat(date.getMonth(), is(1));
         assertThat(date.getYear(), is(1983));
-
 
         assertThat(date.getDayString(), is("19"));
         assertThat(date.getMonthString(), is("January"));
@@ -62,8 +61,8 @@ public class DateParserIntegrationTest {
         assertThat(date.getDayString(), is("19"));
         assertThat(date.getMonthString(), is("January"));
 
-        // TODO: With the clusteror the space is removed...  
-//        assertThat(date.getYearString(), is("19 83"));
+        // TODO: With the clusteror the space is removed...
+        // assertThat(date.getYearString(), is("19 83"));
         assertThat(date.getYearString(), is("1983"));
     }
 
@@ -105,7 +104,6 @@ public class DateParserIntegrationTest {
         assertThat(date1.getMonthString(), is("06"));
         assertThat(date1.getYearString(), is("1942"));
 
-
         final Date date2 = output.get(1);
         assertThat(date2.getDay(), is(28));
         assertThat(date2.getMonth(), is(4));
@@ -131,7 +129,6 @@ public class DateParserIntegrationTest {
         assertThat(date1.getMonthString(), is("1"));
         assertThat(date1.getYearString(), is("1943"));
 
-
         final Date date2 = output.get(1);
         assertThat(date2.getDay(), is(21));
         assertThat(date2.getMonth(), is(10));
@@ -155,7 +152,6 @@ public class DateParserIntegrationTest {
         assertThat(date1.getDayString(), is("12"));
         assertThat(date1.getMonthString(), is("03"));
         assertThat(date1.getYearString(), is("1942"));
-
 
         final Date date2 = output.get(1);
         assertThat(date2.getDay(), is(-1));

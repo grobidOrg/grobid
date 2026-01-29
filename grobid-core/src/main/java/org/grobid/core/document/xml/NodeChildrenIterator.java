@@ -22,10 +22,10 @@ public class NodeChildrenIterator implements Iterable<Node>, Iterator<Node> {
 
         @Override
         public boolean apply(Node input) {
-            return (input instanceof Text && !blacklistElements.contains("text")) || (input instanceof Element && !blacklistElements.contains(((Element) input).getLocalName()));
+            return (input instanceof Text && !blacklistElements.contains("text"))
+                    || (input instanceof Element && !blacklistElements.contains(((Element) input).getLocalName()));
         }
     }
-
 
     private Node node;
     private int cur;

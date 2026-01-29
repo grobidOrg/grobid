@@ -6,8 +6,6 @@ import org.grobid.core.lang.SentenceDetectorFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-
 /**
  * Implementation of a sentence segmenter factory with OpenNLP language identifier
  */
@@ -18,7 +16,7 @@ public class OpenNLPSentenceDetectorFactory implements SentenceDetectorFactory {
     public SentenceDetector getInstance() {
         if (instance == null) {
             synchronized (this) {
-                if(instance == null) {
+                if (instance == null) {
                     LOGGER.debug("synchronized getNewInstance");
                     instance = new OpenNLPSentenceDetector();
                 }

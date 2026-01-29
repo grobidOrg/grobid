@@ -12,8 +12,7 @@ import static com.google.common.collect.Iterables.getLast;
 public class Note {
 
     public enum NoteType {
-        FOOT,
-        MARGIN
+        FOOT, MARGIN
     };
 
     private String identifier;

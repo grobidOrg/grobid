@@ -4,8 +4,8 @@ import nu.xom.Element;
 import org.grobid.core.utilities.OffsetPosition;
 
 /**
- * This class represent an annotation in an XML node.
- * The annotation is composed by two information: the XML Element node and the offset position
+ * This class represent an annotation in an XML node. The annotation is composed by two information: the XML Element
+ * node and the offset position
  */
 public class AnnotatedXMLElement {
 

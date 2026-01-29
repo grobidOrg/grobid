@@ -3,7 +3,6 @@ package org.grobid.service.modules;
 import com.codahale.metrics.MetricRegistry;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 
 import jakarta.ws.rs.client.Client;
@@ -29,14 +28,14 @@ public class GrobidServiceModule extends DropwizardAwareModule<GrobidServiceConf
     public void configure() {
         bind(HealthResource.class);
 
-        //REST
+        // REST
         bind(GrobidRestService.class);
         bind(GrobidRestProcessFiles.class);
         bind(GrobidRestProcessGeneric.class);
         bind(GrobidRestProcessString.class);
         bind(GrobidRestProcessTraining.class);
 
-        //Exception Mappers
+        // Exception Mappers
         bind(GrobidServiceExceptionMapper.class);
         bind(GrobidExceptionsTranslationUtility.class);
         bind(GrobidExceptionMapper.class);
@@ -53,7 +52,7 @@ public class GrobidServiceModule extends DropwizardAwareModule<GrobidServiceConf
         return getMetricRegistry();
     }
 
-    //for unit tests
+    // for unit tests
     protected MetricRegistry getMetricRegistry() {
         return environment().metrics();
     }

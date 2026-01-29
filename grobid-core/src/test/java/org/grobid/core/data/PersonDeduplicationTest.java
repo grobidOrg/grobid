@@ -1,13 +1,10 @@
 package org.grobid.core.data;
 
 import org.junit.Test;
-import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
-import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertEquals;
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.core.IsNull.notNullValue;
 

@@ -17,18 +17,18 @@ import java.util.StringTokenizer;
  */
 public class ChemicalParser extends AbstractParser {
 
-//    private FeatureFactory featureFactory = null;
+    // private FeatureFactory featureFactory = null;
 
     public ChemicalParser() {
         super(GrobidModels.ENTITIES_CHEMISTRY);
-//        featureFactory = FeatureFactory.getInstance();
+        // featureFactory = FeatureFactory.getInstance();
     }
 
     /**
      * Extract all reference from a simple piece of text.
      */
     public List<ChemicalEntity> extractChemicalEntities(String text) throws Exception {
-//        int nbRes = 0;
+        // int nbRes = 0;
         if (text == null)
             return null;
         if (text.length() == 0)
@@ -53,7 +53,7 @@ public class ChemicalParser extends AbstractParser {
             String ress = "";
             int posit = 0;
             for (String block : textBlocks) {
-                //System.out.println(block);
+                // System.out.println(block);
                 ress += FeaturesVectorChemicalEntity
                         .addFeaturesChemicalEntities(block, textBlocks.size(), posit, false, false)
                         .printVector();
@@ -71,8 +71,7 @@ public class ChemicalParser extends AbstractParser {
     /**
      * Extract results from a labelled header.
      */
-    public List<ChemicalEntity> resultExtraction(String result,
-                                                 ArrayList<String> tokenizations) {
+    public List<ChemicalEntity> resultExtraction(String result, ArrayList<String> tokenizations) {
         List<ChemicalEntity> entities = new ArrayList<ChemicalEntity>();
 
         StringTokenizer stt = new StringTokenizer(result, "\n");
@@ -163,7 +162,7 @@ public class ChemicalParser extends AbstractParser {
             return null;
         }
         for (String name : nameEntities) {
-            //ChemicalEntity structure = NameToStructureResolver.process(name);
+            // ChemicalEntity structure = NameToStructureResolver.process(name);
             ChemicalEntity structure = new ChemicalEntity();
             structure.setRawName(name);
             structure.setOffsetStart(offsets_entities.get(j));

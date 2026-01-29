@@ -20,26 +20,35 @@ public class FigureTrainer extends AbstractTrainer {
 
     @Override
     public int createCRFPPData(File corpusPath, File outputFile) {
-        return addFeaturesFigure(corpusPath.getAbsolutePath() + "/tei",
+        return addFeaturesFigure(
+                corpusPath.getAbsolutePath() + "/tei",
                 corpusPath.getAbsolutePath() + "/raw",
-                outputFile, null, 1.0);
+                outputFile,
+                null,
+                1.0);
     }
 
     /**
      * Add the selected features for the figure model
      *
-     * @param corpusDir          path where corpus files are located
-     * @param trainingOutputPath path where to store the temporary training data
-     * @param evalOutputPath     path where to store the temporary evaluation data
-     * @param splitRatio         ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
+     * @param corpusDir
+     * path where corpus files are located
+     * @param trainingOutputPath
+     * path where to store the temporary training data
+     * @param evalOutputPath
+     * path where to store the temporary evaluation data
+     * @param splitRatio
+     * ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
      * @return the total number of used corpus items
      */
     @Override
-    public int createCRFPPData(final File corpusDir,
-                               final File trainingOutputPath,
-                               final File evalOutputPath,
-                               double splitRatio) {
-        return addFeaturesFigure(corpusDir.getAbsolutePath() + "/tei",
+    public int createCRFPPData(
+            final File corpusDir,
+            final File trainingOutputPath,
+            final File evalOutputPath,
+            double splitRatio) {
+        return addFeaturesFigure(
+                corpusDir.getAbsolutePath() + "/tei",
                 corpusDir.getAbsolutePath() + "/raw",
                 trainingOutputPath,
                 evalOutputPath,
@@ -49,18 +58,24 @@ public class FigureTrainer extends AbstractTrainer {
     /**
      * Add the selected features for the figure model
      *
-     * @param sourceTEIPathLabel path to corpus TEI files
-     * @param sourceRawPathLabel path to corpus raw files
-     * @param trainingOutputPath path where to store the temporary training data
-     * @param evalOutputPath     path where to store the temporary evaluation data
-     * @param splitRatio         ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
+     * @param sourceTEIPathLabel
+     * path to corpus TEI files
+     * @param sourceRawPathLabel
+     * path to corpus raw files
+     * @param trainingOutputPath
+     * path where to store the temporary training data
+     * @param evalOutputPath
+     * path where to store the temporary evaluation data
+     * @param splitRatio
+     * ratio to consider for separating training and evaluation data, e.g. 0.8 for 80%
      * @return number of examples
      */
-    public int addFeaturesFigure(String sourceTEIPathLabel,
-                                 String sourceRawPathLabel,
-                                 final File trainingOutputPath,
-                                 final File evalOutputPath,
-                                 double splitRatio) {
+    public int addFeaturesFigure(
+            String sourceTEIPathLabel,
+            String sourceRawPathLabel,
+            final File trainingOutputPath,
+            final File evalOutputPath,
+            double splitRatio) {
         int totalExamples = 0;
         try {
             System.out.println("sourceTEIPathLabel: " + sourceTEIPathLabel);
@@ -108,26 +123,24 @@ public class FigureTrainer extends AbstractTrainer {
 
                 // the full text SAX parser can be reused for the figures
                 TEIFigureSaxParser parser2 = new TEIFigureSaxParser();
-                //parser2.setMode(TEIFulltextSaxParser.FIGURE);
+                // parser2.setMode(TEIFulltextSaxParser.FIGURE);
 
-                //get a new instance of parser
+                // get a new instance of parser
                 SAXParser p = spf.newSAXParser();
                 p.parse(tf, parser2);
 
                 List<String> labeled = parser2.getLabeledResult();
-                //totalExamples += parser2.n;
+                // totalExamples += parser2.n;
 
                 // we can now add the features
                 // we open the featured file
                 File theRawFile = new File(sourceRawPathLabel + File.separator + name.replace(".tei.xml", ""));
                 if (!theRawFile.exists()) {
-                    System.out.println("Raw file " + theRawFile +
-                            " does not exist. Please have a look!");
+                    System.out.println("Raw file " + theRawFile + " does not exist. Please have a look!");
                     continue;
                 }
                 int q = 0;
-                BufferedReader bis = new BufferedReader(
-                        new InputStreamReader(new FileInputStream(theRawFile), "UTF8"));
+                BufferedReader bis = new BufferedReader(new InputStreamReader(new FileInputStream(theRawFile), "UTF8"));
 
                 StringBuilder figure = new StringBuilder();
                 String line;
@@ -201,7 +214,8 @@ public class FigureTrainer extends AbstractTrainer {
     /**
      * Command line execution.
      *
-     * @param args Command line arguments.
+     * @param args
+     * Command line arguments.
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {

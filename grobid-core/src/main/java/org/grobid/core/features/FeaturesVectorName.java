@@ -1,6 +1,5 @@
 package org.grobid.core.features;
 
-import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.collections4.CollectionUtils;
 
 import org.grobid.core.utilities.OffsetPosition;
@@ -22,7 +21,7 @@ public class FeaturesVectorName {
     public String label = null; // label if known
     public String lineStatus = null; // one of LINESTART, LINEIN, LINEEND
     public String capitalisation = null; // one of INITCAP, ALLCAPS, NOCAPS
-    public String digit;  // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
+    public String digit; // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
     public boolean singleChar = false;
     public boolean commonName = false;
     public boolean firstName = false;
@@ -34,8 +33,10 @@ public class FeaturesVectorName {
     public boolean isKnownSuffix = false;
 
     public String printVector() {
-        if (string == null) return null;
-        if (string.length() == 0) return null;
+        if (string == null)
+            return null;
+        if (string.length() == 0)
+            return null;
         StringBuffer res = new StringBuffer();
 
         // token string (1)
@@ -113,10 +114,13 @@ public class FeaturesVectorName {
     }
 
     /**
-     * Add feature for name parsing. 
+     * Add feature for name parsing.
      */
-    static public String addFeaturesName(List<LayoutToken> tokens, List<String> labels,
-            List<OffsetPosition> titlePosition, List<OffsetPosition> suffixPosition) throws Exception {
+    static public String addFeaturesName(
+            List<LayoutToken> tokens,
+            List<String> labels,
+            List<OffsetPosition> titlePosition,
+            List<OffsetPosition> suffixPosition) throws Exception {
         FeatureFactory featureFactory = FeatureFactory.getInstance();
 
         StringBuffer header = new StringBuffer();
@@ -133,7 +137,7 @@ public class FeaturesVectorName {
         boolean isSuffixToken;
         boolean skipTest;
 
-        for(int n=0; n<tokens.size(); n++) {
+        for (int n = 0; n < tokens.size(); n++) {
             boolean outputLineStatus = false;
             isTitleToken = false;
             isSuffixToken = false;
@@ -141,32 +145,15 @@ public class FeaturesVectorName {
 
             token = tokens.get(n);
 
-            /*if (line == null) {
-                header.append("\n \n");
-                newBlock = true;
-                newline = true;
-                n++;
-                continue;
-            }
-            line = line.trim();
-            if (line.length() == 0) {
-                header.append("\n \n");
-                newBlock = true;
-                newline = true;
-                n++;
-                continue;
-            }
+            /*
+             * if (line == null) { header.append("\n \n"); newBlock = true; newline = true; n++; continue; } line =
+             * line.trim(); if (line.length() == 0) { header.append("\n \n"); newBlock = true; newline = true; n++;
+             * continue; }
+             *
+             * if (line.equals("@newline")) { if (newline) { newBlock = true; } newline = true; n++; continue; }
+             */
 
-            if (line.equals("@newline")) {
-                if (newline) {
-                    newBlock = true;
-                }
-                newline = true;
-                n++;
-                continue;
-            }*/
-
-            //int ind = line.indexOf(" ");
+            // int ind = line.indexOf(" ");
             String text = token.getText();
             if (text.equals(" ")) {
                 continue;
@@ -180,7 +167,7 @@ public class FeaturesVectorName {
 
             // parano normalisation
             text = UnicodeUtil.normaliseTextAndRemoveSpaces(text);
-            if (text.trim().length() == 0 ) {
+            if (text.trim().length() == 0) {
                 continue;
             }
 
@@ -193,8 +180,7 @@ public class FeaturesVectorName {
                 }
                 if (!skipTest) {
                     for (int i = currentTitlePosition; i < titlePosition.size(); i++) {
-                        if ((titlePosition.get(i).start <= n) &&
-                                (titlePosition.get(i).end >= n)) {
+                        if ((titlePosition.get(i).start <= n) && (titlePosition.get(i).end >= n)) {
                             isTitleToken = true;
                             currentTitlePosition = i;
                             break;
@@ -216,8 +202,7 @@ public class FeaturesVectorName {
                 }
                 if (!skipTest) {
                     for (int i = currentSuffixPosition; i < suffixPosition.size(); i++) {
-                        if ((suffixPosition.get(i).start <= n) &&
-                                (suffixPosition.get(i).end >= n)) {
+                        if ((suffixPosition.get(i).start <= n) && (suffixPosition.get(i).end >= n)) {
                             isSuffixToken = true;
                             currentSuffixPosition = i;
                             break;
@@ -296,10 +281,10 @@ public class FeaturesVectorName {
                         }
                     }
 
-                    /*if ((endline) & (!outputLineStatus)) {
-                        features.lineStatus = "LINEEND";
-                        outputLineStatus = true;
-                    }*/
+                    /*
+                     * if ((endline) & (!outputLineStatus)) { features.lineStatus = "LINEEND"; outputLineStatus = true;
+                     * }
+                     */
                     i++;
                 }
             }

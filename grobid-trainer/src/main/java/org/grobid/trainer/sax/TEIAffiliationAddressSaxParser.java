@@ -15,9 +15,8 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 /**
- * SAX parser for affiliation+address sequences encoded in the TEI format data.
- * Segmentation of tokens must be identical as the one from pdf2xml files to that
- * training and online input tokens are identical.
+ * SAX parser for affiliation+address sequences encoded in the TEI format data. Segmentation of tokens must be identical
+ * as the one from pdf2xml files to that training and online input tokens are identical.
  *
  * @author Patrice Lopez
  */
@@ -34,7 +33,7 @@ public class TEIAffiliationAddressSaxParser extends DefaultHandler {
     public List<List<OffsetPosition>> countriesPositions = null; // list of offset positions of country names
     public List<List<LayoutToken>> allTokens = null;
 
-    //private Writer writerAddress = null; // writer for the address model
+    // private Writer writerAddress = null; // writer for the address model
     private Writer writerCORA = null; // writer for conversion into TEI header model
 
     public int n = 0;
@@ -58,10 +57,10 @@ public class TEIAffiliationAddressSaxParser extends DefaultHandler {
         localText = localText.replace("\n\t", " ");
         localText = localText.replaceAll("( )+", " ");
         accumulator.append(localText);
-        //accumulator.append(buffer, start, length);
-        //if (allContent != null) {
-        //	allContent.append(buffer, start, length);
-        //}
+        // accumulator.append(buffer, start, length);
+        // if (allContent != null) {
+        // allContent.append(buffer, start, length);
+        // }
     }
 
     public String getText() {
@@ -84,19 +83,11 @@ public class TEIAffiliationAddressSaxParser extends DefaultHandler {
         return allTokens;
     }
 
-    public void endElement(java.lang.String uri,
-                           java.lang.String localName,
-                           java.lang.String qName) throws SAXException {
-        if ((
-                (qName.equals("addrLine")) ||
-                        (qName.equals("settlement")) ||
-                        (qName.equals("region")) ||
-                        (qName.equals("postCode")) ||
-                        (qName.equals("postBox")) ||
-                        (qName.equals("marker")) ||
-                        (qName.equals("country") ||
-                                (qName.equals("orgName")))
-        )) {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
+        if (((qName.equals("addrLine")) || (qName.equals("settlement")) || (qName.equals("region"))
+                || (qName.equals("postCode")) || (qName.equals("postBox")) || (qName.equals("marker"))
+                || (qName.equals("country") || (qName.equals("orgName"))))) {
             String text = getText();
             writeField(text);
             if (allContent != null) {
@@ -108,7 +99,7 @@ public class TEIAffiliationAddressSaxParser extends DefaultHandler {
             accumulator.setLength(0);
         } else if (qName.equals("lb") || qName.equals("pb")) {
             // we note a line break
-            //accumulator.append(" @newline ");
+            // accumulator.append(" @newline ");
             accumulator.append("\n");
         } else if (qName.equals("affiliation")) {
             String text = getText();
@@ -138,9 +129,9 @@ public class TEIAffiliationAddressSaxParser extends DefaultHandler {
             labeled.add("\n \n");
 
             String allString = allContent.toString().trim();
-            //allString = allString.replace("@newline", "");
+            // allString = allString.replace("@newline", "");
             allString = allString.replace("@newline", "\n");
-            //List<OffsetPosition> toto = lexicon.tokenPositionsCityNames(allString);
+            // List<OffsetPosition> toto = lexicon.tokenPositionsCityNames(allString);
             List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(allString);
             placesPositions.add(lexicon.tokenPositionsLocationNames(tokens));
             countriesPositions.add(lexicon.tokenPositionsCountryNames(tokens));
@@ -154,11 +145,7 @@ public class TEIAffiliationAddressSaxParser extends DefaultHandler {
         }
     }
 
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
-            throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
         if (!qName.equals("lb") && !qName.equals("pb")) {
             String text = getText();
             if (text.length() > 0) {
@@ -173,9 +160,9 @@ public class TEIAffiliationAddressSaxParser extends DefaultHandler {
             }
             accumulator.setLength(0);
         }
-        //else {
-        //	writeField("+++");
-        //}
+        // else {
+        // writeField("+++");
+        // }
 
         if (qName.equals("orgName")) {
             int length = atts.getLength();
@@ -225,7 +212,7 @@ public class TEIAffiliationAddressSaxParser extends DefaultHandler {
             accumulator = new StringBuffer();
             allContent = new StringBuffer();
         } else {
-            //currentTag = null;
+            // currentTag = null;
         }
     }
 
@@ -245,12 +232,10 @@ public class TEIAffiliationAddressSaxParser extends DefaultHandler {
                 continue;
             }
 
-            /*if (tok.equals("@newline")) {
-                labeled.add("@newline");
-            } else if (tok.equals("+PAGE+")) {
-                // page break - no influence here
-                labeled.add("@newline");
-            } else*/ 
+            /*
+             * if (tok.equals("@newline")) { labeled.add("@newline"); } else if (tok.equals("+PAGE+")) { // page break -
+             * no influence here labeled.add("@newline"); } else
+             */
             {
                 String content = tok;
                 int i = 0;

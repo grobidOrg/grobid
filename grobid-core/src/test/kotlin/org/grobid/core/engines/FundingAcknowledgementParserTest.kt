@@ -33,75 +33,74 @@ class FundingAcknowledgementParserTest {
 
     @Test
     fun testGetExtractionResult() {
-
         val input = "Our warmest thanks to Patrice Lopez, the author of Grobid [22], DeLFT [20], and other open-source projects for his continuous support and inspiration with ideas, suggestions, and fruitful discussions. We thank Pedro Baptista de Castro for his support during this work. Special thanks to Erina Fujita for useful tips on the manuscript."
 
         val results: String = "Our\tour\tO\tOu\tOur\tOur\tr\tur\tOur\tOur\tLINESTART\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<other>\n" +
-                "warmest\twarmest\tw\twa\twar\twarm\tt\tst\test\tmest\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "thanks\tthanks\tt\tth\ttha\tthan\ts\tks\tnks\tanks\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "to\tto\tt\tto\tto\tto\to\tto\tto\tto\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "Patrice\tpatrice\tP\tPa\tPat\tPatr\te\tce\tice\trice\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<person>\n" +
-                "Lopez\tlopez\tL\tLo\tLop\tLope\tz\tez\tpez\topez\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<person>\n" +
-                ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\tI-<other>\n" +
-                "the\tthe\tt\tth\tthe\tthe\te\the\tthe\tthe\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "author\tauthor\ta\tau\taut\tauth\tr\tor\thor\tthor\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "of\tof\to\tof\tof\tof\tf\tof\tof\tof\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "Grobid\tgrobid\tG\tGr\tGro\tGrob\td\tid\tbid\tobid\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "[\t[\t[\t[\t[\t[\t[\t[\t[\t[\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tOPENBRACKET\t0\t<other>\n" +
-                "22\t22\t2\t22\t22\t22\t2\t22\t22\t22\tLINEIN\tNOCAPS\tALLDIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "]\t]\t]\t]\t]\t]\t]\t]\t]\t]\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tENDBRACKET\t0\t<other>\n" +
-                ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\t<other>\n" +
-                "DeLFT\tdelft\tD\tDe\tDeL\tDeLF\tT\tFT\tLFT\teLFT\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "[\t[\t[\t[\t[\t[\t[\t[\t[\t[\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tOPENBRACKET\t0\t<other>\n" +
-                "20\t20\t2\t20\t20\t20\t0\t20\t20\t20\tLINEIN\tNOCAPS\tALLDIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "]\t]\t]\t]\t]\t]\t]\t]\t]\t]\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tENDBRACKET\t0\t<other>\n" +
-                ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\t<other>\n" +
-                "and\tand\ta\tan\tand\tand\td\tnd\tand\tand\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "other\tother\to\tot\toth\tothe\tr\ter\ther\tther\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "open\topen\to\top\tope\topen\tn\ten\tpen\topen\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "-\t-\t-\t-\t-\t-\t-\t-\t-\t-\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tHYPHEN\t0\t<other>\n" +
-                "source\tsource\ts\tso\tsou\tsour\te\tce\trce\turce\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "projects\tprojects\tp\tpr\tpro\tproj\ts\tts\tcts\tects\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "for\tfor\tf\tfo\tfor\tfor\tr\tor\tfor\tfor\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "his\this\th\thi\this\this\ts\tis\this\this\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "continuous\tcontinuous\tc\tco\tcon\tcont\ts\tus\tous\tuous\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "support\tsupport\ts\tsu\tsup\tsupp\tt\trt\tort\tport\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "and\tand\ta\tan\tand\tand\td\tnd\tand\tand\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "inspiration\tinspiration\ti\tin\tins\tinsp\tn\ton\tion\ttion\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "with\twith\tw\twi\twit\twith\th\tth\tith\twith\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "ideas\tideas\ti\tid\tide\tidea\ts\tas\teas\tdeas\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\t<other>\n" +
-                "suggestions\tsuggestions\ts\tsu\tsug\tsugg\ts\tns\tons\tions\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\t<other>\n" +
-                "and\tand\ta\tan\tand\tand\td\tnd\tand\tand\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "fruitful\tfruitful\tf\tfr\tfru\tfrui\tl\tul\tful\ttful\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "discussions\tdiscussions\td\tdi\tdis\tdisc\ts\tns\tons\tions\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                ".\t.\t.\t.\t.\t.\t.\t.\t.\t.\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tDOT\t0\t<other>\n" +
-                "We\twe\tW\tWe\tWe\tWe\te\tWe\tWe\tWe\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "thank\tthank\tt\tth\ttha\tthan\tk\tnk\tank\thank\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "Pedro\tpedro\tP\tPe\tPed\tPedr\to\tro\tdro\tedro\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<person>\n" +
-                "Baptista\tbaptista\tB\tBa\tBap\tBapt\ta\tta\tsta\tista\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<person>\n" +
-                "de\tde\td\tde\tde\tde\te\tde\tde\tde\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<person>\n" +
-                "Castro\tcastro\tC\tCa\tCas\tCast\to\tro\ttro\tstro\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<person>\n" +
-                "for\tfor\tf\tfo\tfor\tfor\tr\tor\tfor\tfor\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<other>\n" +
-                "his\this\th\thi\this\this\ts\tis\this\this\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "support\tsupport\ts\tsu\tsup\tsupp\tt\trt\tort\tport\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "during\tduring\td\tdu\tdur\tduri\tg\tng\ting\tring\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "this\tthis\tt\tth\tthi\tthis\ts\tis\this\tthis\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "work\twork\tw\two\twor\twork\tk\trk\tork\twork\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                ".\t.\t.\t.\t.\t.\t.\t.\t.\t.\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tDOT\t0\t<other>\n" +
-                "Special\tspecial\tS\tSp\tSpe\tSpec\tl\tal\tial\tcial\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "thanks\tthanks\tt\tth\ttha\tthan\ts\tks\tnks\tanks\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "to\tto\tt\tto\tto\tto\to\tto\tto\tto\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "Erina\terina\tE\tEr\tEri\tErin\ta\tna\tina\trina\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<person>\n" +
-                "Fujita\tfujita\tF\tFu\tFuj\tFuji\ta\tta\tita\tjita\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<person>\n" +
-                "for\tfor\tf\tfo\tfor\tfor\tr\tor\tfor\tfor\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<other>\n" +
-                "useful\tuseful\tu\tus\tuse\tusef\tl\tul\tful\teful\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "tips\ttips\tt\tti\ttip\ttips\ts\tps\tips\ttips\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "on\ton\to\ton\ton\ton\tn\ton\ton\ton\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "the\tthe\tt\tth\tthe\tthe\te\the\tthe\tthe\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                "manuscript\tmanuscript\tm\tma\tman\tmanu\tt\tpt\tipt\tript\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-                ".\t.\t.\t.\t.\t.\t.\t.\t.\t.\tLINEEND\tALLCAP\tNODIGIT\t1\t0\t0\tDOT\t0\t<other>"
+            "warmest\twarmest\tw\twa\twar\twarm\tt\tst\test\tmest\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "thanks\tthanks\tt\tth\ttha\tthan\ts\tks\tnks\tanks\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "to\tto\tt\tto\tto\tto\to\tto\tto\tto\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "Patrice\tpatrice\tP\tPa\tPat\tPatr\te\tce\tice\trice\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<person>\n" +
+            "Lopez\tlopez\tL\tLo\tLop\tLope\tz\tez\tpez\topez\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<person>\n" +
+            ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\tI-<other>\n" +
+            "the\tthe\tt\tth\tthe\tthe\te\the\tthe\tthe\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "author\tauthor\ta\tau\taut\tauth\tr\tor\thor\tthor\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "of\tof\to\tof\tof\tof\tf\tof\tof\tof\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "Grobid\tgrobid\tG\tGr\tGro\tGrob\td\tid\tbid\tobid\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "[\t[\t[\t[\t[\t[\t[\t[\t[\t[\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tOPENBRACKET\t0\t<other>\n" +
+            "22\t22\t2\t22\t22\t22\t2\t22\t22\t22\tLINEIN\tNOCAPS\tALLDIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "]\t]\t]\t]\t]\t]\t]\t]\t]\t]\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tENDBRACKET\t0\t<other>\n" +
+            ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\t<other>\n" +
+            "DeLFT\tdelft\tD\tDe\tDeL\tDeLF\tT\tFT\tLFT\teLFT\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "[\t[\t[\t[\t[\t[\t[\t[\t[\t[\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tOPENBRACKET\t0\t<other>\n" +
+            "20\t20\t2\t20\t20\t20\t0\t20\t20\t20\tLINEIN\tNOCAPS\tALLDIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "]\t]\t]\t]\t]\t]\t]\t]\t]\t]\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tENDBRACKET\t0\t<other>\n" +
+            ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\t<other>\n" +
+            "and\tand\ta\tan\tand\tand\td\tnd\tand\tand\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "other\tother\to\tot\toth\tothe\tr\ter\ther\tther\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "open\topen\to\top\tope\topen\tn\ten\tpen\topen\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "-\t-\t-\t-\t-\t-\t-\t-\t-\t-\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tHYPHEN\t0\t<other>\n" +
+            "source\tsource\ts\tso\tsou\tsour\te\tce\trce\turce\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "projects\tprojects\tp\tpr\tpro\tproj\ts\tts\tcts\tects\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "for\tfor\tf\tfo\tfor\tfor\tr\tor\tfor\tfor\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "his\this\th\thi\this\this\ts\tis\this\this\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "continuous\tcontinuous\tc\tco\tcon\tcont\ts\tus\tous\tuous\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "support\tsupport\ts\tsu\tsup\tsupp\tt\trt\tort\tport\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "and\tand\ta\tan\tand\tand\td\tnd\tand\tand\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "inspiration\tinspiration\ti\tin\tins\tinsp\tn\ton\tion\ttion\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "with\twith\tw\twi\twit\twith\th\tth\tith\twith\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "ideas\tideas\ti\tid\tide\tidea\ts\tas\teas\tdeas\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\t<other>\n" +
+            "suggestions\tsuggestions\ts\tsu\tsug\tsugg\ts\tns\tons\tions\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\t<other>\n" +
+            "and\tand\ta\tan\tand\tand\td\tnd\tand\tand\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "fruitful\tfruitful\tf\tfr\tfru\tfrui\tl\tul\tful\ttful\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "discussions\tdiscussions\td\tdi\tdis\tdisc\ts\tns\tons\tions\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            ".\t.\t.\t.\t.\t.\t.\t.\t.\t.\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tDOT\t0\t<other>\n" +
+            "We\twe\tW\tWe\tWe\tWe\te\tWe\tWe\tWe\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "thank\tthank\tt\tth\ttha\tthan\tk\tnk\tank\thank\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "Pedro\tpedro\tP\tPe\tPed\tPedr\to\tro\tdro\tedro\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<person>\n" +
+            "Baptista\tbaptista\tB\tBa\tBap\tBapt\ta\tta\tsta\tista\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<person>\n" +
+            "de\tde\td\tde\tde\tde\te\tde\tde\tde\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<person>\n" +
+            "Castro\tcastro\tC\tCa\tCas\tCast\to\tro\ttro\tstro\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<person>\n" +
+            "for\tfor\tf\tfo\tfor\tfor\tr\tor\tfor\tfor\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<other>\n" +
+            "his\this\th\thi\this\this\ts\tis\this\this\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "support\tsupport\ts\tsu\tsup\tsupp\tt\trt\tort\tport\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "during\tduring\td\tdu\tdur\tduri\tg\tng\ting\tring\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "this\tthis\tt\tth\tthi\tthis\ts\tis\this\tthis\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "work\twork\tw\two\twor\twork\tk\trk\tork\twork\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            ".\t.\t.\t.\t.\t.\t.\t.\t.\t.\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tDOT\t0\t<other>\n" +
+            "Special\tspecial\tS\tSp\tSpe\tSpec\tl\tal\tial\tcial\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "thanks\tthanks\tt\tth\ttha\tthan\ts\tks\tnks\tanks\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "to\tto\tt\tto\tto\tto\to\tto\tto\tto\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "Erina\terina\tE\tEr\tEri\tErin\ta\tna\tina\trina\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<person>\n" +
+            "Fujita\tfujita\tF\tFu\tFuj\tFuji\ta\tta\tita\tjita\tLINEIN\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<person>\n" +
+            "for\tfor\tf\tfo\tfor\tfor\tr\tor\tfor\tfor\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<other>\n" +
+            "useful\tuseful\tu\tus\tuse\tusef\tl\tul\tful\teful\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "tips\ttips\tt\tti\ttip\ttips\ts\tps\tips\ttips\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "on\ton\to\ton\ton\ton\tn\ton\ton\ton\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "the\tthe\tt\tth\tthe\tthe\te\the\tthe\tthe\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "manuscript\tmanuscript\tm\tma\tman\tmanu\tt\tpt\tipt\tript\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            ".\t.\t.\t.\t.\t.\t.\t.\t.\t.\tLINEEND\tALLCAP\tNODIGIT\t1\t0\t0\tDOT\t0\t<other>"
 
         val tokens: List<LayoutToken> = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input)
 
@@ -117,7 +116,6 @@ class FundingAcknowledgementParserTest {
 
     @Test
     fun testGetExtractionResult2() {
-
         val input = "This work was partly supported by MEXT Program: Data Creation and Utilization-Type Material Research and Development Project (Digital Transformation Initiative Center for Magnetic Materials) Grant Number [JPMXP1122715503]."
 
         val results: String = "This\tthis\tT\tTh\tThi\tThis\ts\tis\this\tThis\tLINESTART\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<other>\n" +
@@ -172,8 +170,8 @@ class FundingAcknowledgementParserTest {
 
     @Test
     fun extractSentencesAndPositionsFromParagraphElement_shouldReturnValidIntervals() {
-        //Here the namespace is already removed as it must be removed when the node arrives at the method we are testing
-        val input ="\n" +
+        // Here the namespace is already removed as it must be removed when the node arrives at the method we are testing
+        val input = "\n" +
             "\t\t\t<div type=\"acknowledgement\">\n" +
             "<div><head>Acknowledgements</head><p><s>Our warmest thanks to Patrice Lopez, the author of Grobid <ref type=\"bibr\" target=\"#b21\">[22]</ref>, DeLFT <ref type=\"bibr\" target=\"#b19\">[20]</ref>, and other open-source projects for his continuous support and inspiration with ideas, suggestions, and fruitful discussions.</s><s>We thank Pedro Baptista de Castro for his support during this work.</s><s>Special thanks to Erina Fujita for useful tips on the manuscript.</s></p></div>\n" +
             "\t\t\t</div>\n\n"
@@ -186,22 +184,27 @@ class FundingAcknowledgementParserTest {
         val firstParagraphText = paragraphs[0].value
 
         val (strings, offsetPositions) = FundingAcknowledgementParser.extractSentencesAndPositionsFromParagraphElement(
-            paragraphs[0] as Element?
+            paragraphs[0] as Element?,
         )
 
         assertThat(strings, hasSize(3))
         assertThat(offsetPositions, hasSize(3))
-        assertThat(firstParagraphText.substring(offsetPositions[0].start, offsetPositions[0].end),
-            `is`("Our warmest thanks to Patrice Lopez, the author of Grobid [22], DeLFT [20], and other open-source projects for his continuous support and inspiration with ideas, suggestions, and fruitful discussions."))
-        assertThat(firstParagraphText.substring(offsetPositions[1].start, offsetPositions[1].end),
-            `is`("We thank Pedro Baptista de Castro for his support during this work."))
-        assertThat(firstParagraphText.substring(offsetPositions[2].start, offsetPositions[2].end),
-            `is`("Special thanks to Erina Fujita for useful tips on the manuscript."))
+        assertThat(
+            firstParagraphText.substring(offsetPositions[0].start, offsetPositions[0].end),
+            `is`("Our warmest thanks to Patrice Lopez, the author of Grobid [22], DeLFT [20], and other open-source projects for his continuous support and inspiration with ideas, suggestions, and fruitful discussions."),
+        )
+        assertThat(
+            firstParagraphText.substring(offsetPositions[1].start, offsetPositions[1].end),
+            `is`("We thank Pedro Baptista de Castro for his support during this work."),
+        )
+        assertThat(
+            firstParagraphText.substring(offsetPositions[2].start, offsetPositions[2].end),
+            `is`("Special thanks to Erina Fujita for useful tips on the manuscript."),
+        )
     }
 
     @Test
     fun testGetExtractionResultNew1_ShouldReturnCorrectElementsAndPositions() {
-
         val input = "Our warmest thanks to Patrice Lopez, the author of Grobid [22], DeLFT [20], and other open-source projects for his continuous support and inspiration with ideas, suggestions, and fruitful discussions. We thank Pedro Baptista de Castro for his support during this work. Special thanks to Erina Fujita for useful tips on the manuscript."
 
         val results: String = "Our\tour\tO\tOu\tOur\tOur\tr\tur\tOur\tOur\tLINESTART\tINITCAP\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\tI-<other>\n" +
@@ -434,7 +437,4 @@ class FundingAcknowledgementParserTest {
         assertThat(LayoutTokensUtil.toText(tokens.subList(offsetPosition3.start, offsetPosition3.end)), `is`("Claudio Stalder"))
         assertThat(element3.toXML(), `is`("<rs xmlns=\"http://www.tei-c.org/ns/1.0\" type=\"person\">Claudio Stalder</rs>"))
     }
-
-
-
 }

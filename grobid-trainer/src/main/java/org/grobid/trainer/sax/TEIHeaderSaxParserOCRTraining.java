@@ -10,9 +10,9 @@ import java.io.Writer;
 import java.util.StringTokenizer;
 
 /**
- * SAX parser for the TEI format header data. Normally all training data should be in this unique format which
- * replace the ugly CORA format. Segmentation of tokens must be identical as the one from pdf2xml files to that
- * training and online input tokens are identical.
+ * SAX parser for the TEI format header data. Normally all training data should be in this unique format which replace
+ * the ugly CORA format. Segmentation of tokens must be identical as the one from pdf2xml files to that training and
+ * online input tokens are identical.
  *
  * @author Patrice Lopez
  */
@@ -36,11 +36,7 @@ public class TEIHeaderSaxParserOCRTraining extends DefaultHandler {
     public TEIHeaderSaxParserOCRTraining() {
     }
 
-    public TEIHeaderSaxParserOCRTraining(Writer writ1,
-                                         Writer writ2,
-                                         Writer writ3,
-                                         Writer writ4,
-                                         Writer writ5) {
+    public TEIHeaderSaxParserOCRTraining(Writer writ1, Writer writ2, Writer writ3, Writer writ4, Writer writ5) {
         writer_affiliations = writ1;
         writer_addresses = writ2;
         writer_keywords = writ3;
@@ -56,12 +52,13 @@ public class TEIHeaderSaxParserOCRTraining extends DefaultHandler {
         return accumulator.toString().trim();
     }
 
-    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName) throws SAXException {
-        if ((qName.equals("titlePart")) | (qName.equals("note")) | (qName.equals("byline")) |
-                (qName.equals("affiliation")) | (qName.equals("address")) | (qName.equals("email")) |
-                (qName.equals("idno")) | (qName.equals("date")) | (qName.equals("biblScope")) |
-                (qName.equals("keywords")) | (qName.equals("ptr")) | (qName.equals("div")) | (qName.equals("title"))
-                ) {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
+        if ((qName.equals("titlePart")) | (qName.equals("note")) | (qName.equals("byline"))
+                | (qName.equals("affiliation")) | (qName.equals("address")) | (qName.equals("email"))
+                | (qName.equals("idno")) | (qName.equals("date")) | (qName.equals("biblScope"))
+                | (qName.equals("keywords")) | (qName.equals("ptr")) | (qName.equals("div"))
+                | (qName.equals("title"))) {
             // we register in the DB the new entry
             String text = getText();
             Writer writer = null;
@@ -83,15 +80,15 @@ public class TEIHeaderSaxParserOCRTraining extends DefaultHandler {
                     StringTokenizer st = new StringTokenizer(text, " \n\t");
                     while (st.hasMoreTokens()) {
                         String tok = st.nextToken().trim();
-                        if (tok.length() == 0) continue;
+                        if (tok.length() == 0)
+                            continue;
 
                         boolean punct1 = false;
-
 
                         if (tok.equals("+L+")) {
                             writer.write("\n");
                         } else if (tok.equals("+PAGE+")) {
-                            //writer.write("@newpage\n");
+                            // writer.write("@newpage\n");
                             writer.write("\n"); // page break should be a distinct feature
                         } else {
                             String content = tok;
@@ -134,7 +131,7 @@ public class TEIHeaderSaxParserOCRTraining extends DefaultHandler {
                                 writer.write(content + " ");
 
                             if (punct1) {
-                                //writer.write(""+ punctuations.charAt(i) + " " + currentTag + "\n");
+                                // writer.write(""+ punctuations.charAt(i) + " " + currentTag + "\n");
                                 writer.write(tok.charAt(tok.length() - 1) + " ");
                             }
                         }
@@ -142,7 +139,7 @@ public class TEIHeaderSaxParserOCRTraining extends DefaultHandler {
                     }
                     writer.write("\n");
                 } catch (IOException e) {
-//					e.printStackTrace();
+                    // e.printStackTrace();
                     throw new GrobidException("An exception occured while running Grobid.", e);
                 }
             }
@@ -150,36 +147,31 @@ public class TEIHeaderSaxParserOCRTraining extends DefaultHandler {
             accumulator.setLength(0);
         } else if (qName.equals("lb")) {
             // we note a line break
-            //try {
-            //writer.write("@newline\n");
+            // try {
+            // writer.write("@newline\n");
             accumulator.append(" +L+ ");
-            //}
-            //catch(IOException e) {
-            //	e.printStackTrace();
-            //}
-            //accumulator.setLength(0);
+            // }
+            // catch(IOException e) {
+            // e.printStackTrace();
+            // }
+            // accumulator.setLength(0);
         } else if (qName.equals("pb")) {
             // we note a page break
-            //writer.write("@newpage\n");
-            //try {
-            //writer.write("@newline\n");
+            // writer.write("@newpage\n");
+            // try {
+            // writer.write("@newline\n");
             accumulator.append(" +PAGE+ ");
-            //}
-            //catch(IOException e) {
-            //	e.printStackTrace();
-            //}
-            //accumulator.setLength(0);
+            // }
+            // catch(IOException e) {
+            // e.printStackTrace();
+            // }
+            // accumulator.setLength(0);
         }
 
-        //accumulator.setLength(0);
+        // accumulator.setLength(0);
     }
 
-
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
-            throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
         if (qName.equals("div")) {
             int length = atts.getLength();
 
@@ -201,11 +193,11 @@ public class TEIHeaderSaxParserOCRTraining extends DefaultHandler {
                     }
                 }
             }
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         } else if (qName.equals("note")) {
             int length = atts.getLength();
             currentTag = "<note>";
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         } else if (qName.equals("ptr")) {
             int length = atts.getLength();
 
@@ -223,7 +215,7 @@ public class TEIHeaderSaxParserOCRTraining extends DefaultHandler {
                     }
                 }
             }
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         } else if (qName.equals("biblScope")) {
             int length = atts.getLength();
 
@@ -243,34 +235,34 @@ public class TEIHeaderSaxParserOCRTraining extends DefaultHandler {
                     }
                 }
             }
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         } else if (qName.equals("titlePart")) {
             currentTag = "<title>";
             accumulator.setLength(0);
         } else if (qName.equals("idno")) {
             currentTag = "<pubnum>";
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         } else if (qName.equals("docAuthor")) {
             currentTag = "<author>";
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         } else if (qName.equals("affiliation")) {
             currentTag = "<affiliation>";
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         } else if (qName.equals("address")) {
             currentTag = "<address>";
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         } else if (qName.equals("email")) {
             currentTag = "<email>";
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         } else if (qName.equals("date")) {
             currentTag = "<date>";
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         } else if (qName.equals("keywords")) {
             currentTag = "<keyword>";
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         } else if (qName.equals("title")) {
             currentTag = "<journal>";
-            //accumulator.setLength(0);
+            // accumulator.setLength(0);
         }
     }
 

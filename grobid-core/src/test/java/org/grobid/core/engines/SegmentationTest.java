@@ -20,13 +20,13 @@ public class SegmentationTest {
 
     @BeforeClass
     public static void setInitialContext() throws Exception {
-//        MockContext.setInitialContext();
+        // MockContext.setInitialContext();
         AbstractEngineFactory.init();
     }
 
     @AfterClass
     public static void destroyInitialContext() throws Exception {
-//        MockContext.destroyInitialContext();
+        // MockContext.destroyInitialContext();
     }
 
     @Before
@@ -47,9 +47,12 @@ public class SegmentationTest {
 
         assertThat(splittedOutput.length, is(25));
         assertThat(splittedOutput[0], startsWith("Title"));
-        assertThat(splittedOutput[0], is("Title Title title T Ti Tit Titl BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 12 12 no 0 10 0 1 0 0 1"));
-		
-		doc.close(true, true, true);
+        assertThat(
+                splittedOutput[0],
+                is(
+                        "Title Title title T Ti Tit Titl BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 12 12 no 0 10 0 1 0 0 1"));
+
+        doc.close(true, true, true);
     }
 
     @Test
@@ -63,11 +66,11 @@ public class SegmentationTest {
 
         assertThat(output, notNullValue());
         assertThat(output.getPages().size(), is(1));
-//        assertThat(output.getBody(), notNullValue());
+        // assertThat(output.getBody(), notNullValue());
         assertThat(output.getBlocks().size(), is(3));
         assertThat(output.getTokenizations().size(), is(344));
-		
-		doc.close(true, true, true);
+
+        doc.close(true, true, true);
     }
 
 }

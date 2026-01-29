@@ -1,6 +1,8 @@
 package org.grobid.core.data;
 
 import org.grobid.core.utilities.OffsetPosition;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * Class for managing chemical entities.
@@ -63,11 +65,14 @@ public class ChemicalEntity {
         return offsets.end;
     }
 
+    @Override
     public String toString() {
-        StringBuffer buffer = new StringBuffer();
-        buffer.append(rawName + "\t" + inchi + "\t" + smiles + "\t" + offsets.toString());
-        return buffer.toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("rawName", rawName)
+                .append("inchi", inchi)
+                .append("smiles", smiles)
+                .append("offsets", offsets)
+                .toString();
     }
 
-	// TODO: CML encoding
+    // TODO: CML encoding
 }

@@ -13,10 +13,12 @@ public class AuthorEmailAssignerTest {
     public void testEmailAssignment() {
         AuthorEmailAssigner assigner = new ClassicAuthorEmailAssigner();
 
-        List<Person> authors = l(p("Jalal Al-Muhtadi"), p("Manish Anand"), p("M.", "Dennis Mickunas"), p("Roy Campbell"));
-        assigner.assign(
-                authors,
-                l("almuhtad@uiuc.edu", "manand@uiuc.edu", "mickunas@uiuc.edu", "rhc@uiuc.edu"));
+        List<Person> authors = l(
+                p("Jalal Al-Muhtadi"),
+                p("Manish Anand"),
+                p("M.", "Dennis Mickunas"),
+                p("Roy Campbell"));
+        assigner.assign(authors, l("almuhtad@uiuc.edu", "manand@uiuc.edu", "mickunas@uiuc.edu", "rhc@uiuc.edu"));
 
         System.out.println(authors);
 

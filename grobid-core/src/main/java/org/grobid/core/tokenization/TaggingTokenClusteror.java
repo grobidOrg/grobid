@@ -53,8 +53,9 @@ public class TaggingTokenClusteror {
     }
 
     public TaggingTokenClusteror(GrobidModel grobidModel, String result, List<LayoutToken> tokenizations,
-                                 boolean computerFeatureBlock) {
-        taggingTokenSynchronizer = new TaggingTokenSynchronizer(grobidModel, result, tokenizations, computerFeatureBlock);
+            boolean computerFeatureBlock) {
+        taggingTokenSynchronizer = new TaggingTokenSynchronizer(grobidModel, result, tokenizations,
+                computerFeatureBlock);
     }
 
     public List<TaggingTokenCluster> cluster() {

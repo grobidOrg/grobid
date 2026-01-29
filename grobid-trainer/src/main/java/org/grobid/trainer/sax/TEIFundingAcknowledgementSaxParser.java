@@ -1,6 +1,5 @@
 package org.grobid.trainer.sax;
 
-import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.lang.Language;
@@ -53,15 +52,14 @@ public class TEIFundingAcknowledgementSaxParser extends DefaultHandler {
         return allTokens;
     }
 
-    public void endElement(java.lang.String uri,
-                           java.lang.String localName,
-                           java.lang.String qName) throws SAXException {
-        if (( (qName.equals("funder")) || (qName.equals("grantName")) || (qName.equals("grantNumber")) || (qName.equals("projectName")) || 
-              (qName.equals("programName")) || (qName.equals("individual")) || (qName.equals("institution")) || (qName.equals("affiliation"))) 
-            && (currentTag != null)) {
+    public void endElement(java.lang.String uri, java.lang.String localName, java.lang.String qName)
+            throws SAXException {
+        if (((qName.equals("funder")) || (qName.equals("grantName")) || (qName.equals("grantNumber"))
+                || (qName.equals("projectName")) || (qName.equals("programName")) || (qName.equals("individual"))
+                || (qName.equals("institution")) || (qName.equals("affiliation"))) && (currentTag != null)) {
             String text = getText();
             writeField(text);
-        } else if (qName.equals("funding") || qName.equals("acknowledgment") ) {
+        } else if (qName.equals("funding") || qName.equals("acknowledgment")) {
             String text = getText();
             currentTag = "<other>";
             if (text.length() > 0) {
@@ -77,11 +75,7 @@ public class TEIFundingAcknowledgementSaxParser extends DefaultHandler {
         accumulator.setLength(0);
     }
 
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
-            throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
 
         String text = getText();
         if (text.length() > 0) {
@@ -119,13 +113,13 @@ public class TEIFundingAcknowledgementSaxParser extends DefaultHandler {
                         if (value.equals("infrastructure")) {
                             currentTag = "<infrastructure>";
                             break;
-                        } 
+                        }
                     }
                 }
             }
         } else if (qName.equals("affiliation")) {
             currentTag = "<affiliation>";
-        } else if (qName.equals("funding") || qName.equals("acknowledgment") ) {
+        } else if (qName.equals("funding") || qName.equals("acknowledgment")) {
             accumulator = new StringBuffer();
             labeled = new ArrayList<String>();
             tokens = new ArrayList<LayoutToken>();
@@ -150,7 +144,7 @@ public class TEIFundingAcknowledgementSaxParser extends DefaultHandler {
         if (isEmpty(localTokens)) {
             return;
         }
-        
+
         boolean begin = true;
         for (LayoutToken token : localTokens) {
             tokens.add(token);
@@ -161,11 +155,11 @@ public class TEIFundingAcknowledgementSaxParser extends DefaultHandler {
             }
 
             content = UnicodeUtil.normaliseTextAndRemoveSpaces(content);
-            if (content.trim().length() == 0) { 
+            if (content.trim().length() == 0) {
                 labeled.add(null);
                 continue;
             }
-            
+
             if (content.length() > 0) {
                 if (begin) {
                     labeled.add("I-" + currentTag);
@@ -178,4 +172,3 @@ public class TEIFundingAcknowledgementSaxParser extends DefaultHandler {
     }
 
 }
-    

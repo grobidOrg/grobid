@@ -26,7 +26,6 @@ public class TaggerFactoryTest {
         Whitebox.setInternalState(TaggerFactory.class, "cache", new HashMap<>());
     }
 
-
     @Test
     public void testGetTagger_shouldReturnDummyTagger() {
         GenericTagger tagger = TaggerFactory.getTagger(GrobidModels.DUMMY);

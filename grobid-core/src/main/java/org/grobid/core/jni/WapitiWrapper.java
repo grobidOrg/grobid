@@ -11,13 +11,16 @@ import java.io.File;
 public class WapitiWrapper {
     public static String label(SWIGTYPE_p_mdl_t model, String data) {
         if (data.trim().isEmpty()) {
-            System.err.println("Empty data is provided to Wapiti tagger: " + Throwables.getStackTraceAsString(new Throwable()));
+            System.err.println(
+                    "Empty data is provided to Wapiti tagger: " + Throwables.getStackTraceAsString(new Throwable()));
             return "";
         }
 
         String result = Wapiti.labelFromModel(model, data);
         if (result == null) {
-            throw new GrobidException("Wapiti tagging failed (null data returned) - Possibly mismatch between grobid-home and grobid-core", GrobidExceptionStatus.TAGGING_ERROR);
+            throw new GrobidException(
+                    "Wapiti tagging failed (null data returned) - Possibly mismatch between grobid-home and grobid-core",
+                    GrobidExceptionStatus.TAGGING_ERROR);
         }
         return result;
     }

@@ -36,7 +36,7 @@ class DocumentTest {
         Document.parseInputStream(
             ByteArrayInputStream(validXmlBytes),
             SAXParserFactory.newInstance(),
-            DefaultHandler()
+            DefaultHandler(),
         )
     }
 
@@ -46,7 +46,7 @@ class DocumentTest {
         Document.parseInputStream(
             ByteArrayInputStream(xmlBytesWithInvalidUtf8Sequence),
             SAXParserFactory.newInstance(),
-            DefaultHandler()
+            DefaultHandler(),
         )
     }
 
@@ -84,7 +84,6 @@ class DocumentTest {
         val doc = Document()
         doc.blocks = Arrays.asList(block1, block2, block3, block4, block5)
 
-
         figure.blockPtrs = TreeSet(Arrays.asList(0, 1, 2, 3, 4))
 
         val captionString = "This is a caption."
@@ -99,7 +98,7 @@ class DocumentTest {
         assertThat(output.right, hasSize(1))
         assertThat(
             LayoutTokensUtil.toText(output.right[0]),
-            `is`(LayoutTokensUtil.toText(block5.tokens))
+            `is`(LayoutTokensUtil.toText(block5.tokens)),
         )
     }
 
@@ -131,7 +130,7 @@ class DocumentTest {
         block4.tokens = tokens.subList(28, 41)
         block4.boundingBox = BoundingBox.fromPointAndDimensions(1, 10.0, 50.0, 10.0, 10.0)
         val block5 = Block()
-        val block5OriginalTokens= tokens.subList(41, 71)
+        val block5OriginalTokens = tokens.subList(41, 71)
         block5.tokens = block5OriginalTokens + GrobidAnalyzer.getInstance().tokenizeWithLayoutToken("Some additional text.")
         block5.boundingBox = BoundingBox.fromPointAndDimensions(1, 10.0, 80.0, 10.0, 10.0)
 
@@ -141,7 +140,7 @@ class DocumentTest {
             block2,
             block3,
             block4,
-            block5
+            block5,
         )
 
         figure.blockPtrs = TreeSet(listOf(0, 1, 2, 3, 4))
@@ -157,7 +156,7 @@ class DocumentTest {
         assertThat(LayoutTokensUtil.toText(output.left), `is`("Figure 1: This is a caption."))
         assertThat(
             LayoutTokensUtil.toText(output.right[0]),
-            `is`(LayoutTokensUtil.toText(block5OriginalTokens))
+            `is`(LayoutTokensUtil.toText(block5OriginalTokens)),
         )
     }
 
@@ -195,7 +194,6 @@ class DocumentTest {
         val doc = Document()
         doc.blocks = Arrays.asList(block1, block2, block3, block4, block5)
 
-
         figure.blockPtrs = TreeSet(Arrays.asList(0, 1, 2, 3, 4))
 
         val captionString = "This is a caption."
@@ -204,12 +202,11 @@ class DocumentTest {
         figure.layoutTokens = tokens
         figure.captionLayoutTokens = captionLayoutTokens
 
-
         val output = doc.getFigureLayoutTokens(figure)
 
         assertThat(
             LayoutTokensUtil.toText(output.left),
-            `is`("Figure 1: This is a caption.\nd\nand a paragraph we want to keep or revert back into the fulltext.\n")
+            `is`("Figure 1: This is a caption.\nd\nand a paragraph we want to keep or revert back into the fulltext.\n"),
         )
     }
 

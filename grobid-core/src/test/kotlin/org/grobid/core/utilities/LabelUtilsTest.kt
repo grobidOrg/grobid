@@ -10,9 +10,7 @@ import java.util.*
 import java.util.stream.Collectors
 import kotlin.test.Test
 
-
 class LabelUtilsTest {
-
 
     @Test
     fun testPostProcessLabeledAbstract_shouldTransformTableLabelInParagraphLabel() {
@@ -73,16 +71,19 @@ class LabelUtilsTest {
         assertThat(
             Arrays.stream(StringUtils.split(postprocessed, "\n"))
                 .filter { l -> l.endsWith("<table>") }
-                .count(), `is`(0L)
+                .count(),
+            `is`(0L),
         )
 
         assertThat(
             Arrays.stream(StringUtils.split(postprocessed, "\n"))
                 .filter { l -> l.endsWith("<paragraph>") }
-                .count(), `is`(
+                .count(),
+            `is`(
                 Arrays.stream(StringUtils.split(resultWithTables, "\n"))
                     .filter { l -> l.endsWith("<table>") }
-                    .count())
+                    .count(),
+            ),
         )
     }
 
@@ -193,7 +194,6 @@ class LabelUtilsTest {
                 "are\tare\ta\tar\tare\tare\te\tre\tare\tare\tBLOCKIN\tLINEIN\tLINEINDENT\tSAMEFONT\tSAMEFONTSIZE\t0\t0\tNOCAPS\tNODIGIT\t0\tNOPUNCT\t9\t5\t0\tNUMBER\t0\t0\t<figure>\n" +
                 "calculated\tcalculated\tc\tca\tcal\tcalc\td\ted\tted\tated\tBLOCKIN\tLINEIN\tLINEINDENT\tSAMEFONT\tSAMEFONTSIZE\t0\t0\tNOCAPS\tNODIGIT\t0\tNOPUNCT\t9\t5\t0\tNUMBER\t0\t0\t<figure>\n"
 
-
         val postProcessed = LabelUtils.postProcessFulltextFixInvalidTableOrFigure(bodyResult)
 
         assertThat(postProcessed, not(bodyResult))
@@ -202,7 +202,7 @@ class LabelUtilsTest {
             Arrays.stream(postProcessed.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray())
                 .map<List<String>> { l: String ->
                     Arrays.stream(
-                        l.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+                        l.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray(),
                     )
                         .collect(Collectors.toList())
                 }
@@ -252,7 +252,6 @@ class LabelUtilsTest {
                 "calculated\tcalculated\tc\tca\tcal\tcalc\td\ted\tted\tated\tBLOCKIN\tLINEIN\tLINEINDENT\tSAMEFONT\tSAMEFONTSIZE\t0\t0\tNOCAPS\tNODIGIT\t0\tNOPUNCT\t9\t5\t0\tNUMBER\t0\t0\t<table>\n" +
                 "calculated\tcalculated\tc\tca\tcal\tcalc\td\ted\tted\tated\tBLOCKIN\tLINEIN\tLINEINDENT\tSAMEFONT\tSAMEFONTSIZE\t0\t0\tNOCAPS\tNODIGIT\t0\tNOPUNCT\t9\t5\t0\tNUMBER\t0\t0\t<table>\n"
 
-
         val postProcessed = LabelUtils.postProcessFulltextFixInvalidTableOrFigure(bodyResult)
 
         assertThat(postProcessed, not(bodyResult))
@@ -261,7 +260,7 @@ class LabelUtilsTest {
             Arrays.stream<String>(postProcessed.split("\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray())
                 .map<List<String>> { l: String ->
                     Arrays.stream<String>(
-                        l.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+                        l.split("\t".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray(),
                     )
                         .collect(Collectors.toList<String>())
                 }
@@ -280,9 +279,7 @@ class LabelUtilsTest {
             .count()
 
         assertThat(countStartingTables, `is`(1))
-
     }
-
 
     companion object {
         @JvmStatic
@@ -294,5 +291,4 @@ class LabelUtilsTest {
             GrobidProperties.addModel(modelParameters)
         }
     }
-
 }

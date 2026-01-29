@@ -26,28 +26,28 @@ public class GenericTaggerUtils {
     public static final Pattern SEPARATOR_PATTERN = Pattern.compile("[\t ]");
 
     /**
-     * @param labeledResult labeled result from a tagger
-     * @return a list of pairs - first element in a pair is a token itself, the second is a label (e.g. <footnote> or I-<footnote>)
-     * Note an empty line in the result will be transformed to a 'null' pointer of a pair
+     * @param labeledResult
+     * labeled result from a tagger
+     * @return a list of pairs - first element in a pair is a token itself, the second is a label (e.g. <footnote> or
+     * I-<footnote>) Note an empty line in the result will be transformed to a 'null' pointer of a pair
      */
     public static List<Pair<String, String>> getTokensAndLabels(String labeledResult) {
         return processLabeledResult(labeledResult, splits -> Pair.of(splits.get(0), splits.get(splits.size() - 1)));
     }
 
     /**
-     * @param labeledResult labeled result from a tagger
-     * @return a list of triples - first element in a pair is a token itself, the second is a label (e.g. <footnote> or I-<footnote>)
-     * and the third element is a string with the features
-     * Note an empty line in the result will be transformed to a 'null' pointer of a pair
+     * @param labeledResult
+     * labeled result from a tagger
+     * @return a list of triples - first element in a pair is a token itself, the second is a label (e.g. <footnote> or
+     * I-<footnote>) and the third element is a string with the features Note an empty line in the result will be
+     * transformed to a 'null' pointer of a pair
      */
-    public static List<Triple<String, String, String>> getTokensWithLabelsAndFeatures(String labeledResult,
-                                                                                      final boolean addFeatureString) {
+    public static List<Triple<String, String, String>> getTokensWithLabelsAndFeatures(
+            String labeledResult,
+            final boolean addFeatureString) {
         Function<List<String>, Triple<String, String, String>> fromSplits = splits -> {
             String featureString = addFeatureString ? Joiner.on("\t").join(splits.subList(0, splits.size() - 1)) : null;
-            return new Triple<>(
-                splits.get(0),
-                splits.get(splits.size() - 1),
-                featureString);
+            return new Triple<>(splits.get(0), splits.get(splits.size() - 1), featureString);
         };
 
         return processLabeledResult(labeledResult, fromSplits);
@@ -74,7 +74,7 @@ public class GenericTaggerUtils {
 
     public static boolean isBeginningOfIOBEntity(String label) {
         return StringUtil.startsWith(label, TaggingLabels.IOB_START_ENTITY_LABEL_PREFIX)
-            || StringUtil.startsWith(label, TaggingLabels.ENAMEX_START_ENTITY_LABEL_PREFIX);
+                || StringUtil.startsWith(label, TaggingLabels.ENAMEX_START_ENTITY_LABEL_PREFIX);
     }
 
     // I-<citation> --> <citation>
@@ -85,6 +85,6 @@ public class GenericTaggerUtils {
 
     public static boolean isBeginningOfEntity(String label) {
         return StringUtils.startsWith(label, TaggingLabels.GROBID_START_ENTITY_LABEL_PREFIX)
-            || StringUtil.startsWith(label, TaggingLabels.ENAMEX_START_ENTITY_LABEL_PREFIX);
+                || StringUtil.startsWith(label, TaggingLabels.ENAMEX_START_ENTITY_LABEL_PREFIX);
     }
 }

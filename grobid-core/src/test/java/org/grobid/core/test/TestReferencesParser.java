@@ -1,7 +1,6 @@
 package org.grobid.core.test;
 
 import org.grobid.core.data.BibDataSet;
-import org.junit.Test;
 
 import java.io.File;
 import java.util.List;
@@ -14,7 +13,7 @@ public class TestReferencesParser extends EngineTest {
 
     public static final String TEST_RESOURCES_PATH = "./src/test/resources/test";
 
-    //@Test
+    // @Test
     public void testReferences() throws Exception {
         String testPath = TEST_RESOURCES_PATH;
 

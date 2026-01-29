@@ -11,7 +11,7 @@ public class EnvironmentVariableValues {
     }
 
     public EnvironmentVariableValues(Map<String, String> environmentVariablesMap, String matcher) {
-        for (Map.Entry<String, String> entry: environmentVariablesMap.entrySet()) {
+        for (Map.Entry<String, String> entry : environmentVariablesMap.entrySet()) {
             if (!entry.getKey().matches(matcher)) {
                 continue;
             }

@@ -3,8 +3,6 @@ package org.grobid.core.main;
 import com.google.common.collect.Lists;
 import com.google.common.hash.Hashing;
 import org.apache.commons.io.FileUtils;
-import org.grobid.core.exceptions.GrobidException;
-import org.grobid.core.exceptions.GrobidExceptionStatus;
 import org.grobid.core.exceptions.GrobidPropertyException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,7 +31,8 @@ public class GrobidHomeFinder {
     private static final String PROP_GROBID_CONFIG = "org.grobid.config";
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GrobidHomeFinder.class);
-    private static final List<String> GROBID_FOLDER_POSSIBLE_LOCATIONS = Lists.newArrayList("../grobid-home", "grobid-home", "GROBID_HOME");
+    private static final List<String> GROBID_FOLDER_POSSIBLE_LOCATIONS = Lists
+            .newArrayList("../grobid-home", "grobid-home", "GROBID_HOME");
     private static final int BUFFER_SIZE = 4096;
     private final List<String> grobidHomePossibleLocations;
 
@@ -68,8 +67,11 @@ public class GrobidHomeFinder {
         File grobidConfigFile;
         if (grobidConfig == null) {
             grobidConfigFile = new File(grobidHome, "config/grobid.yaml").getAbsoluteFile();
-            LOGGER.info("Grobid config file location was not explicitly set via '" + PROP_GROBID_CONFIG + 
-                "' system variable, defaulting to: " + grobidConfigFile);
+            LOGGER.info(
+                    "Grobid config file location was not explicitly set via '"
+                            + PROP_GROBID_CONFIG
+                            + "' system variable, defaulting to: "
+                            + grobidConfigFile);
         } else {
             grobidConfigFile = new File(grobidConfig).getAbsoluteFile();
         }
@@ -137,7 +139,10 @@ public class GrobidHomeFinder {
                 fail("Unsupported protocol for Grobid home at location: " + url);
             }
         }
-        fail("Cannot locate Grobid home: add it to classpath or explicitly provide a system property: '-D" + PROP_GROBID_HOME + "'");
+        fail(
+                "Cannot locate Grobid home: add it to classpath or explicitly provide a system property: '-D"
+                        + PROP_GROBID_HOME
+                        + "'");
         // not reachable code since exception is thrown
         return null;
     }
@@ -166,7 +171,6 @@ public class GrobidHomeFinder {
         return new File(grobidHome, "grobid-home");
     }
 
-
     private static List<Path> unzip(InputStream is, File destinationDir) throws IOException {
         List<Path> list = new ArrayList<>();
 
@@ -182,7 +186,7 @@ public class GrobidHomeFinder {
                     String absolutePath = filePath.getAbsolutePath();
                     extractFile(zipIn, absolutePath);
                 } else {
-                    //noinspection ResultOfMethodCallIgnored
+                    // noinspection ResultOfMethodCallIgnored
                     filePath.mkdir();
                 }
             } finally {

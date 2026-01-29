@@ -1,8 +1,5 @@
 package org.grobid.core.data;
 
-import org.grobid.core.utilities.TextUtilities;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 
@@ -13,10 +10,8 @@ public class CopyrightsLicense {
 
     // copyrights owner
     public enum CopyrightsOwner {
-        PUBLISHER  ("publisher"),
-        AUTHORS    ("authors"),
-        UNDECIDED   ("undecided");
-        
+        PUBLISHER("publisher"), AUTHORS("authors"), UNDECIDED("undecided");
+
         private String name;
 
         private CopyrightsOwner(String name) {
@@ -26,23 +21,16 @@ public class CopyrightsLicense {
         public String getName() {
             return name;
         }
-    };
+    }
 
     public static List<String> copyrightOwners = Arrays.asList("publisher", "authors", "undecided");
 
     // File-level licenses
     public enum License {
-        CC0     ("CC-0"),
-        CCBY    ("CC-BY"),
-        CCBYNC  ("CC-BY-NC"),
-        CCBYNCND ("CC-BY-NC-ND"),
-        CCBYSA  ("CC-BY-SA"),
-        CCBYNCSA  ("CC-BY-NC-SA"),
-        CCBYND  ("CC-BY-ND"),
-        COPYRIGHT ("strict-copyrights"),
-        OTHER   ("other"),
-        UNDECIDED   ("undecided");
-        
+        CC0("CC-0"), CCBY("CC-BY"), CCBYNC("CC-BY-NC"), CCBYNCND("CC-BY-NC-ND"), CCBYSA("CC-BY-SA"),
+        CCBYNCSA("CC-BY-NC-SA"), CCBYND("CC-BY-ND"), COPYRIGHT("strict-copyrights"), OTHER("other"),
+        UNDECIDED("undecided");
+
         private String name;
 
         private License(String name) {
@@ -54,8 +42,17 @@ public class CopyrightsLicense {
         }
     };
 
-    public static List<String> licenses = 
-        Arrays.asList("CC-0", "CC-BY", "CC-BY-NC", "CC-BY-NC-ND", "CC-BY-SA", "CC-BY-NC-SA", "CC-BY-ND", "copyright", "other", "undecided");
+    public static List<String> licenses = Arrays.asList(
+            "CC-0",
+            "CC-BY",
+            "CC-BY-NC",
+            "CC-BY-NC-ND",
+            "CC-BY-SA",
+            "CC-BY-NC-SA",
+            "CC-BY-ND",
+            "copyright",
+            "other",
+            "undecided");
 
     private CopyrightsOwner copyrightsOwner;
     private double copyrightsOwnerProb;

@@ -30,12 +30,13 @@ public class XQueryProcessor {
     private final DynamicQueryContext dqc;
 
     public static String getQueryFromResources(String name) throws IOException {
-        return IOUtils.toString(XQueryProcessor.class.getResourceAsStream("/xq/" + name),UTF_8);
+        return IOUtils.toString(XQueryProcessor.class.getResourceAsStream("/xq/" + name), UTF_8);
     }
 
     public XQueryProcessor(File xmFile) throws XPathException, IOException {
-        this(FileUtils.readFileToString(xmFile,UTF_8));
+        this(FileUtils.readFileToString(xmFile, UTF_8));
     }
+
     public XQueryProcessor(String xmlContent) throws XPathException {
         Configuration c = new Configuration();
 

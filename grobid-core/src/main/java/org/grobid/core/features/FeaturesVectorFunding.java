@@ -18,7 +18,7 @@ public class FeaturesVectorFunding {
     public String label = null; // label if known
     public String lineStatus = null; // one of LINESTART, LINEIN, LINEEND
     public String capitalisation = null; // one of INITCAP, ALLCAPS, NOCAPS
-    public String digit;  // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
+    public String digit; // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
     public boolean singleChar = false;
     public boolean containDash = false;
     public boolean knownFunder = false;
@@ -28,8 +28,10 @@ public class FeaturesVectorFunding {
     public boolean containPunct = false;
 
     public String printVector() {
-        if (string == null) return null;
-        if (string.length() == 0) return null;
+        if (string == null)
+            return null;
+        if (string.length() == 0)
+            return null;
         StringBuffer res = new StringBuffer();
 
         // token string (1)
@@ -99,7 +101,8 @@ public class FeaturesVectorFunding {
         FeatureFactory featureFactory = FeatureFactory.getInstance();
 
         List<OffsetPosition> funderPositions = Lexicon.getInstance().tokenPositionsFunderNames(tokens);
-        List<OffsetPosition> infrastructurePositions = Lexicon.getInstance().tokenPositionsResearchInfrastructureNames(tokens);
+        List<OffsetPosition> infrastructurePositions = Lexicon.getInstance()
+                .tokenPositionsResearchInfrastructureNames(tokens);
 
         String line;
         StringBuilder stringBuilder = new StringBuilder();
@@ -122,7 +125,7 @@ public class FeaturesVectorFunding {
             String tag = null;
             if (tags != null && tags.size() == tokens.size())
                 tag = tags.get(n);
-            
+
             if (text == null || text.length() == 0) {
                 continue;
             }
@@ -138,29 +141,18 @@ public class FeaturesVectorFunding {
 
             // parano normalisation
             text = UnicodeUtil.normaliseTextAndRemoveSpaces(text);
-            if (text.trim().length() == 0 ) {
+            if (text.trim().length() == 0) {
                 continue;
             }
 
-            /*boolean filter = false;
-            if (text == null) {
-                filter = true;
-            } else if (text.length() == 0) {
-                filter = true;
-            } else if (text.startsWith("@IMAGE")) {
-                filter = true;
-            } else if (text.contains(".pbm")) {
-                filter = true;
-            } else if (text.contains(".svg")) {
-                filter = true;
-            } else if (text.contains(".jpg")) {
-                filter = true;
-            } else if (text.contains(".png")) {
-                filter = true;
-            }
-
-            if (filter) 
-                continue;*/
+            /*
+             * boolean filter = false; if (text == null) { filter = true; } else if (text.length() == 0) { filter =
+             * true; } else if (text.startsWith("@IMAGE")) { filter = true; } else if (text.contains(".pbm")) { filter =
+             * true; } else if (text.contains(".svg")) { filter = true; } else if (text.contains(".jpg")) { filter =
+             * true; } else if (text.contains(".png")) { filter = true; }
+             *
+             * if (filter) continue;
+             */
 
             features = new FeaturesVectorFunding();
             features.string = text;
@@ -174,8 +166,7 @@ public class FeaturesVectorFunding {
                 }
                 if (!skipTest) {
                     for (int i = currentFunderPositions; i < funderPositions.size(); i++) {
-                        if ((funderPositions.get(i).start <= n) &&
-                                (funderPositions.get(i).end >= n)) {
+                        if ((funderPositions.get(i).start <= n) && (funderPositions.get(i).end >= n)) {
                             isKnownFunderToken = true;
                             currentFunderPositions = i;
                             break;
@@ -197,8 +188,7 @@ public class FeaturesVectorFunding {
                 }
                 if (!skipTest) {
                     for (int i = currentInfrastructurePositions; i < infrastructurePositions.size(); i++) {
-                        if ((infrastructurePositions.get(i).start <= n) &&
-                                (infrastructurePositions.get(i).end >= n)) {
+                        if ((infrastructurePositions.get(i).start <= n) && (infrastructurePositions.get(i).end >= n)) {
                             isKnownInfrastructureToken = true;
                             currentInfrastructurePositions = i;
                             break;
@@ -240,7 +230,7 @@ public class FeaturesVectorFunding {
                     features.lineStatus = "LINESTART";
                     outputLineStatus = true;
                 }
-            } else if (n == tokens.size()-1) {
+            } else if (n == tokens.size() - 1) {
                 if (!outputLineStatus) {
                     features.lineStatus = "LINEEND";
                     outputLineStatus = true;

@@ -30,7 +30,7 @@ public class HealthResource extends HealthCheck {
 
     @Override
     protected Result check() throws Exception {
-        return configuration.getGrobid().getGrobidHome() != null ? Result.healthy() :
-                Result.unhealthy("Grobid home is null in the configuration");
+        return configuration.getGrobid().getGrobidHome() != null ? Result.healthy()
+                : Result.unhealthy("Grobid home is null in the configuration");
     }
 }

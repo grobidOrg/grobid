@@ -24,9 +24,9 @@ import static org.easymock.EasyMock.*;
 @PrepareForTest({CitationsVisualizer.class, BlockVisualizer.class, FigureTableVisualizer.class})
 public class GrobidRestProcessFilesTest {
 
-//    static {
-//        JerseyGuiceUtils.install((s, serviceLocator) -> null);
-//    }
+    // static {
+    // JerseyGuiceUtils.install((s, serviceLocator) -> null);
+    // }
 
     DocumentSource documentSourceMock;
     GrobidRestProcessFiles target;
@@ -41,12 +41,16 @@ public class GrobidRestProcessFilesTest {
     public void dispatchProcessing_selectionCitation_shouldWork() throws Exception {
         PowerMock.mockStatic(CitationsVisualizer.class);
 
-        expect(CitationsVisualizer.annotatePdfWithCitations(anyObject(PDDocument.class), anyObject(Document.class), anyObject(List.class))).andReturn(null);
+        expect(
+                CitationsVisualizer.annotatePdfWithCitations(
+                        anyObject(PDDocument.class),
+                        anyObject(Document.class),
+                        anyObject(List.class)))
+                .andReturn(null);
 
         PowerMock.replay(CitationsVisualizer.class);
 
-        target.dispatchProcessing(GrobidRestUtils.Annotation.CITATION,
-                null, null, null);
+        target.dispatchProcessing(GrobidRestUtils.Annotation.CITATION, null, null, null);
 
         PowerMock.verify(CitationsVisualizer.class);
     }
@@ -55,8 +59,15 @@ public class GrobidRestProcessFilesTest {
     public void dispatchProcessing_selectionBlock_shouldWork() throws Exception {
         PowerMock.mockStatic(BlockVisualizer.class);
 
-        expect(BlockVisualizer.annotateBlocks((PDDocument) anyObject(), EasyMock.<File>anyObject(), EasyMock.<Document>anyObject(),
-                anyBoolean(), anyBoolean(), anyBoolean())).andReturn(null);
+        expect(
+                BlockVisualizer.annotateBlocks(
+                        (PDDocument) anyObject(),
+                        EasyMock.<File>anyObject(),
+                        EasyMock.<Document>anyObject(),
+                        anyBoolean(),
+                        anyBoolean(),
+                        anyBoolean()))
+                .andReturn(null);
 
         File fakeFile = File.createTempFile("justForTheTest", "baomiao");
         fakeFile.deleteOnExit();
@@ -65,8 +76,7 @@ public class GrobidRestProcessFilesTest {
         PowerMock.replay(BlockVisualizer.class);
         replay(documentSourceMock);
 
-        target.dispatchProcessing(GrobidRestUtils.Annotation.BLOCK,
-                null, documentSourceMock, null);
+        target.dispatchProcessing(GrobidRestUtils.Annotation.BLOCK, null, documentSourceMock, null);
 
         PowerMock.verify(BlockVisualizer.class);
         verify(documentSourceMock);
@@ -78,16 +88,23 @@ public class GrobidRestProcessFilesTest {
 
         File fakeFile = File.createTempFile("justForTheTest", "baomiao");
         fakeFile.deleteOnExit();
-        expect(FigureTableVisualizer.annotateFigureAndTables(anyObject(), EasyMock.anyObject(),
-                EasyMock.anyObject(), anyBoolean(), anyBoolean(), anyBoolean(), anyBoolean(), anyBoolean()))
+        expect(
+                FigureTableVisualizer.annotateFigureAndTables(
+                        anyObject(),
+                        EasyMock.anyObject(),
+                        EasyMock.anyObject(),
+                        anyBoolean(),
+                        anyBoolean(),
+                        anyBoolean(),
+                        anyBoolean(),
+                        anyBoolean()))
                 .andReturn(null);
         expect(documentSourceMock.getXmlFile()).andReturn(fakeFile);
 
         PowerMock.replay(FigureTableVisualizer.class);
         replay(documentSourceMock);
 
-        target.dispatchProcessing(GrobidRestUtils.Annotation.FIGURE,
-                null, documentSourceMock, null);
+        target.dispatchProcessing(GrobidRestUtils.Annotation.FIGURE, null, documentSourceMock, null);
 
         PowerMock.verify(FigureTableVisualizer.class);
         verify(documentSourceMock);

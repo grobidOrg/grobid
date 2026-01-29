@@ -87,7 +87,6 @@ public class StatsTest {
         assertThat(target.getLabelStat("ZIAO").getPrecision(), is(0.75));
     }
 
-
     // Average measures
 
     @Test
@@ -110,7 +109,6 @@ public class StatsTest {
 
         assertThat(target.getMicroAveragePrecision(), is(((double) 4 + 0 + 1 + 0) / (4 + 0 + 3 + 1 + 0 + 2)));
     }
-
 
     @Test
     public void testMacroAvgPrecision_shouldWork() throws Exception {
@@ -135,16 +133,16 @@ public class StatsTest {
         final double precisionMiao = target.getLabelStat("MIAO").getPrecision();
         final double precisionCiao = target.getLabelStat("CIAO").getPrecision();
         final double precisionZiao = target.getLabelStat("ZIAO").getPrecision();
-        assertThat(target.getMacroAveragePrecision(),
-            is((precisionBao + precisionMiao + precisionCiao + precisionZiao) / (4)));
+        assertThat(
+                target.getMacroAveragePrecision(),
+                is((precisionBao + precisionMiao + precisionCiao + precisionZiao) / (4)));
     }
-
 
     @Test
     public void testMicroAvgRecall_shouldWork() throws Exception {
 
         target.getLabelStat("BAO").setExpected(4);
-        target.getLabelStat("BAO").setObserved(4);     //TP
+        target.getLabelStat("BAO").setObserved(4); // TP
 
         target.getLabelStat("MIAO").setExpected(4);
         target.getLabelStat("MIAO").setObserved(0);
@@ -185,15 +183,14 @@ public class StatsTest {
         final double recallMiao = target.getLabelStat("MIAO").getRecall();
         final double recallCiao = target.getLabelStat("CIAO").getRecall();
         final double recallZiao = target.getLabelStat("ZIAO").getRecall();
-        assertThat(target.getMacroAverageRecall(),
-            is((recallBao + recallMiao + recallCiao + recallZiao) / (4)));
+        assertThat(target.getMacroAverageRecall(), is((recallBao + recallMiao + recallCiao + recallZiao) / (4)));
     }
 
     @Test
     public void testMicroAvgF0_shouldWork() throws Exception {
 
         target.getLabelStat("BAO").setExpected(4);
-        target.getLabelStat("BAO").setObserved(4);     //TP
+        target.getLabelStat("BAO").setObserved(4); // TP
 
         target.getLabelStat("MIAO").setExpected(4);
         target.getLabelStat("MIAO").setObserved(0);
@@ -208,10 +205,11 @@ public class StatsTest {
         target.getLabelStat("ZIAO").setObserved(0);
         target.getLabelStat("ZIAO").setFalsePositive(2);
 
-        assertThat(target.getMicroAverageF1(),
-            is(((double) 2 * target.getMicroAveragePrecision()
-                * target.getMicroAverageRecall())
-                / (target.getMicroAveragePrecision() + target.getMicroAverageRecall())));
+        assertThat(
+                target.getMicroAverageF1(),
+                is(
+                        ((double) 2 * target.getMicroAveragePrecision() * target.getMicroAverageRecall())
+                                / (target.getMicroAveragePrecision() + target.getMicroAverageRecall())));
     }
 
     @Test
@@ -238,10 +236,8 @@ public class StatsTest {
         final double f1Ciao = target.getLabelStat("CIAO").getF1Score();
         final double f1Ziao = target.getLabelStat("ZIAO").getRecall();
 
-        assertThat(target.getMacroAverageF1(),
-            is((f1Bao + f1Miao + f1Ciao + f1Ziao) / (4)));
+        assertThat(target.getMacroAverageF1(), is((f1Bao + f1Miao + f1Ciao + f1Ziao) / (4)));
     }
-
 
     @Ignore("Not really useful")
     @Test
@@ -309,7 +305,6 @@ public class StatsTest {
         System.out.println(target.getMicroAveragePrecision());
     }
 
-
     @Test
     public void testMicroMacroAverageMeasures_realTest() throws Exception {
         LabelStat otherLabelStats = target.getLabelStat("O");
@@ -320,7 +315,6 @@ public class StatsTest {
         assertThat(otherLabelStats.getPrecision(), is(1.0));
         assertThat(otherLabelStats.getRecall(), is(1.0));
 
-
         LabelStat conceptualLabelStats = target.getLabelStat("CONCEPTUAL");
         conceptualLabelStats.setObserved(2);
         conceptualLabelStats.setExpected(3);
@@ -330,7 +324,6 @@ public class StatsTest {
         assertThat(conceptualLabelStats.getPrecision(), is(0.6666666666666666));
         assertThat(conceptualLabelStats.getRecall(), is(0.6666666666666666));
 
-
         LabelStat periodLabelStats = target.getLabelStat("PERIOD");
         periodLabelStats.setObserved(8);
         periodLabelStats.setExpected(8);
@@ -338,14 +331,12 @@ public class StatsTest {
         assertThat(periodLabelStats.getPrecision(), is(1.0));
         assertThat(periodLabelStats.getRecall(), is(1.0));
 
-
         LabelStat mediaLabelStats = target.getLabelStat("MEDIA");
         mediaLabelStats.setObserved(7);
         mediaLabelStats.setExpected(7);
 
         assertThat(mediaLabelStats.getPrecision(), is(1.0));
         assertThat(mediaLabelStats.getRecall(), is(1.0));
-
 
         LabelStat personTypeLabelStats = target.getLabelStat("PERSON_TYPE");
         personTypeLabelStats.setObserved(0);
@@ -355,15 +346,12 @@ public class StatsTest {
         assertThat(personTypeLabelStats.getPrecision(), is(0.0));
         assertThat(personTypeLabelStats.getRecall(), is(0.0));
 
-
-
         LabelStat locationTypeLabelStats = target.getLabelStat("LOCATION");
         locationTypeLabelStats.setObserved(2);
         locationTypeLabelStats.setExpected(2);
 
         assertThat(locationTypeLabelStats.getPrecision(), is(1.0));
         assertThat(locationTypeLabelStats.getRecall(), is(1.0));
-
 
         LabelStat organisationTypeLabelStats = target.getLabelStat("ORGANISATION");
         organisationTypeLabelStats.setObserved(2);
@@ -372,7 +360,6 @@ public class StatsTest {
         assertThat(locationTypeLabelStats.getPrecision(), is(1.0));
         assertThat(locationTypeLabelStats.getRecall(), is(1.0));
 
-
         LabelStat personLabelStats = target.getLabelStat("PERSON");
         personLabelStats.setFalsePositive(1);
 
@@ -380,16 +367,16 @@ public class StatsTest {
         assertThat(personLabelStats.getRecall(), is(0.0));
 
         // 2+8+2+2+7 / (2+8+2+2+7+1)
-        assertThat(target.getMicroAverageRecall(), is(0.9130434782608695)); //91.3
+        assertThat(target.getMicroAverageRecall(), is(0.9130434782608695)); // 91.3
 
         // 2+8+2+2+7 / (3+8+7+2+2+1)
-        assertThat(target.getMicroAveragePrecision(), is(0.9545454545454546)); //95.45
+        assertThat(target.getMicroAveragePrecision(), is(0.9545454545454546)); // 95.45
 
         // 0.66 + 1.0 + 1.0 + 0.0 + 1.0 + 1.0 / 6
-        assertThat(target.getMacroAverageRecall(), is(0.7777777777777777)); //77.78
+        assertThat(target.getMacroAverageRecall(), is(0.7777777777777777)); // 77.78
 
         // same as above
-        assertThat(target.getMacroAveragePrecision(), is(0.7777777777777777)); //77.78
+        assertThat(target.getMacroAveragePrecision(), is(0.7777777777777777)); // 77.78
     }
 
 }

@@ -20,7 +20,7 @@ public class FeaturesVectorFigure {
     public boolean bold = false;
     public boolean italic = false;
     public String capitalisation = null; // one of INITCAP, ALLCAPS, NOCAPS
-    public String digit;  // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
+    public String digit; // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
     public boolean singleChar = false;
     public boolean properName = false;
     public boolean commonName = false;
@@ -30,23 +30,25 @@ public class FeaturesVectorFigure {
     public boolean month = false;
     public boolean email = false;
     public boolean http = false;
-    //public boolean acronym = false;
+    // public boolean acronym = false;
 
-    public String punctType = null; 
+    public String punctType = null;
     // one of NOPUNCT, OPENBRACKET, ENDBRACKET, DOT, COMMA, HYPHEN, QUOTE, PUNCT (default)
 
-    public int relativeDocumentPosition = -1; 
-    public int relativePagePosition = -1; 
+    public int relativeDocumentPosition = -1;
+    public int relativePagePosition = -1;
 
     public boolean bitmapAround = false;
     public boolean vectorAround = false;
-    public int closestGraphicHeight = -1; 
-    public int closestGraphicWidth = -1; 
-    public int closestGraphicSurface = -1; 
+    public int closestGraphicHeight = -1;
+    public int closestGraphicWidth = -1;
+    public int closestGraphicSurface = -1;
 
     public String printVector() {
-        if (string == null) return null;
-        if (string.length() == 0) return null;
+        if (string == null)
+            return null;
+        if (string.length() == 0)
+            return null;
         StringBuffer res = new StringBuffer();
 
         // token string (1)
@@ -69,7 +71,7 @@ public class FeaturesVectorFigure {
 
         // block information (1)
         res.append(" " + blockStatus);
-        //res.append(" 0");
+        // res.append(" 0");
 
         // line information (1)
         res.append(" " + lineStatus);
@@ -78,7 +80,7 @@ public class FeaturesVectorFigure {
         res.append(" " + pageStatus);
 
         // alignmet/horizontal position information (1)
-        //res.append(" " + alignmentStatus);
+        // res.append(" " + alignmentStatus);
 
         // font information (1)
         res.append(" " + fontStatus);
@@ -168,11 +170,9 @@ public class FeaturesVectorFigure {
             res.append(" 0");
 
         // label - for training data (1)
-        /*if (label != null)
-              res.append(" " + label + "\n");
-          else
-              res.append(" 0\n");
-          */
+        /*
+         * if (label != null) res.append(" " + label + "\n"); else res.append(" 0\n");
+         */
 
         res.append("\n");
 

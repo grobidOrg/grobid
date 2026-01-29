@@ -15,10 +15,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- *  DEPRECATED ! 
+ * DEPRECATED !
  *
- *  A machine learning model is used now to segment references, see org.grobid.core.engines.ReferenceSegmenterParser
- * 
+ * A machine learning model is used now to segment references, see org.grobid.core.engines.ReferenceSegmenterParser
+ *
  */
 public class RegexReferenceSegmenter implements ReferenceSegmenter {
     private static final Pattern m1 = Pattern.compile("((^|\\n)( )*\\[.+?\\])");
@@ -30,7 +30,7 @@ public class RegexReferenceSegmenter implements ReferenceSegmenter {
 
     private static final Pattern[] CITATION_MARKERS = {m1, m2, m3};
     private static final AdditionalRegexTextSegmenter citationTextSegmenter = new AdditionalRegexTextSegmenter();
-    public static final Function<String,LabeledReferenceResult> LABELED_REFERENCE_RESULT_FUNCTION = new Function<String, LabeledReferenceResult>() {
+    public static final Function<String, LabeledReferenceResult> LABELED_REFERENCE_RESULT_FUNCTION = new Function<String, LabeledReferenceResult>() {
         @Override
         public LabeledReferenceResult apply(String input) {
             return new LabeledReferenceResult(input);
@@ -43,9 +43,9 @@ public class RegexReferenceSegmenter implements ReferenceSegmenter {
     }
 
     @Override
-    //public List<LabeledReferenceResult> extract(String referenceBlock) {
-	public List<LabeledReferenceResult> extract(Document doc) {	
-		String referencesStr = doc.getDocumentPartText(SegmentationLabels.REFERENCES);
+    // public List<LabeledReferenceResult> extract(String referenceBlock) {
+    public List<LabeledReferenceResult> extract(Document doc) {
+        String referencesStr = doc.getDocumentPartText(SegmentationLabels.REFERENCES);
         return Lists.transform(segmentReferences(referencesStr), LABELED_REFERENCE_RESULT_FUNCTION);
     }
 
@@ -138,8 +138,7 @@ public class RegexReferenceSegmenter implements ReferenceSegmenter {
         // process hashes at the end of line
         citation = processSpaceDash(citation);
 
-        citation = citation
-                .replaceAll("\\r\\d* ", " ")  // remove the page number
+        citation = citation.replaceAll("\\r\\d* ", " ") // remove the page number
                 .replaceAll("\\n\\d\\. ", " ") // remove citation bullet number
                 .replaceAll("\\n", " ")
                 .replaceAll("\\\\", " ")
@@ -147,12 +146,13 @@ public class RegexReferenceSegmenter implements ReferenceSegmenter {
                 .replaceAll(",\\s*,", ",") // resolve double commas
                 .replaceAll("\\r", " ")
                 .replaceAll("\\s\\s+", " ")
-                .trim().replaceAll("^[\\d]+\\s", "");
+                .trim()
+                .replaceAll("^[\\d]+\\s", "");
 
         return citation;
     }
 
-    //TODO move these functions to a separate class and add test units
+    // TODO move these functions to a separate class and add test units
     private static String processSpaceDash(String s) {
         while (true) {
             Matcher matcher = SPACE_DASH_PATTERN.matcher(s);
@@ -164,6 +164,5 @@ public class RegexReferenceSegmenter implements ReferenceSegmenter {
         }
         return s;
     }
-
 
 }

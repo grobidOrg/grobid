@@ -10,7 +10,6 @@ import net.sf.saxon.om.Item;
 import net.sf.saxon.om.SequenceIterator;
 import net.sf.saxon.trans.XPathException;
 import org.grobid.core.document.Document;
-import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.utilities.XQueryProcessor;
 
 import java.io.File;
@@ -40,10 +39,12 @@ public class VectorGraphicBoxCalculator {
             BoundingBox mainPageArea = document.getPage(pageNum).getMainArea();
 
             String q = XQueryProcessor.getQueryFromResources("vector-coords.xq");
-            File vecFile = new File(document.getDocumentSource().getXmlFile().getAbsolutePath() + "_data", "image-" + pageNum + ".svg");
+            File vecFile = new File(document.getDocumentSource().getXmlFile().getAbsolutePath() + "_data",
+                    "image-" + pageNum + ".svg");
             if (vecFile.exists()) {
                 if (vecFile.length() > VEC_GRAPHICS_FILE_SIZE_LIMIT) {
-                    LOGGER.error("The vector file " + vecFile + " is too large to be processed, size: " + vecFile.length());
+                    LOGGER.error(
+                            "The vector file " + vecFile + " is too large to be processed, size: " + vecFile.length());
                     continue;
                 }
 
@@ -71,11 +72,12 @@ public class VectorGraphicBoxCalculator {
                 for (int i = 0; i < remainingBoxes.size(); i++) {
                     Collection<Block> col = blockMultimap.get(pageNum);
                     for (Block bl : col) {
-//                    if (!bl.getPage().getMainArea().contains(b)) {
-//                        continue;
-//                    }
+                        // if (!bl.getPage().getMainArea().contains(b)) {
+                        // continue;
+                        // }
 
-                        BoundingBox b = BoundingBox.fromPointAndDimensions(pageNum, bl.getX(), bl.getY(), bl.getWidth(), bl.getHeight());
+                        BoundingBox b = BoundingBox
+                                .fromPointAndDimensions(pageNum, bl.getX(), bl.getY(), bl.getWidth(), bl.getHeight());
                         if (remainingBoxes.get(i).intersect(b)) {
                             remainingBoxes.set(i, remainingBoxes.get(i).boundBox(b));
                         }
@@ -100,7 +102,8 @@ public class VectorGraphicBoxCalculator {
             allMerged = true;
             for (int i = 0; i < boxes.size(); i++) {
                 BoundingBox a = boxes.get(i);
-                if (a == null) continue;
+                if (a == null)
+                    continue;
                 for (int j = i + 1; j < boxes.size(); j++) {
                     BoundingBox b = boxes.get(j);
                     if (b != null) {

@@ -22,66 +22,36 @@ public enum GrobidModels implements GrobidModel {
     // models are declared with a enumerated unique name associated to a **folder name** for the model
     // the folder name is where we will find the model implementation and its resources under grobid-home
 
-    AFFILIATION_ADDRESS("affiliation-address"),
-    SEGMENTATION("segmentation"),
+    AFFILIATION_ADDRESS("affiliation-address"), SEGMENTATION("segmentation"),
     SEGMENTATION_ARTICLE_LIGHT("segmentation/article/light"),
-    SEGMENTATION_ARTICLE_LIGHT_REF("segmentation/article/light-ref"),
-    SEGMENTATION_SDO_IETF("segmentation/sdo/ietf"),
-    SEGMENTATION_SDO_3GPP("segmentation/sdo/3gpp"),
-    CITATION("citation"),
-    REFERENCE_SEGMENTER("reference-segmenter"),
-    DATE("date"),
-    DICTIONARIES_LEXICAL_ENTRIES("dictionaries-lexical-entries"),
-    DICTIONARIES_SENSE("dictionaries-sense"),
-    MONOGRAPH("monograph"),
-    ENTITIES_CHEMISTRY("entities/chemistry"),
-    //	ENTITIES_CHEMISTRY("chemistry"),
-    FULLTEXT("fulltext"),
-    FULLTEXT_ARTICLE_LIGHT_REF("fulltext"),
-    FULLTEXT_ARTICLE_LIGHT("fulltext"),
-    SHORTTEXT("shorttext"),
-    FIGURE("figure"),
-    TABLE("table"),
-    HEADER("header"),
-    HEADER_ARTICLE_LIGHT("header/article/light"),
-    HEADER_ARTICLE_LIGHT_REF("header/article/light-ref"),
-    HEADER_SDO_3GPP("header/sdo/3gpp"),
-    HEADER_SDO_IETF("header/sdo/ietf"),
-    NAMES_CITATION("name/citation"),
-    NAMES_HEADER("name/header"),
-    PATENT_PATENT("patent/patent"),
-    PATENT_NPL("patent/npl"),
-    PATENT_CITATION("patent/citation"),
-    PATENT_STRUCTURE("patent/structure"),
-    PATENT_EDIT("patent/edit"),
-    ENTITIES_NER("ner"),
-    ENTITIES_NERFR("nerfr"),
-    ENTITIES_NERSense("nersense"),
-    //	ENTITIES_BIOTECH("entities/biotech"),
-    ENTITIES_BIOTECH("bio"),
-    ASTRO("astro"),
-    SOFTWARE("software"),
-    DATASEER("dataseer"),
-    //ACKNOWLEDGEMENT("acknowledgement"),
-    FUNDING_ACKNOWLEDGEMENT("funding-acknowledgement"),
-    INFRASTRUCTURE("infrastructure"),
-    DUMMY("none"),
-    LICENSE("license"),
-    COPYRIGHT("copyright");
+    SEGMENTATION_ARTICLE_LIGHT_REF("segmentation/article/light-ref"), SEGMENTATION_SDO_IETF("segmentation/sdo/ietf"),
+    SEGMENTATION_SDO_3GPP("segmentation/sdo/3gpp"), CITATION("citation"), REFERENCE_SEGMENTER("reference-segmenter"),
+    DATE("date"), DICTIONARIES_LEXICAL_ENTRIES("dictionaries-lexical-entries"),
+    DICTIONARIES_SENSE("dictionaries-sense"), MONOGRAPH("monograph"), ENTITIES_CHEMISTRY("entities/chemistry"),
+    // ENTITIES_CHEMISTRY("chemistry"),
+    FULLTEXT("fulltext"), FULLTEXT_ARTICLE_LIGHT_REF("fulltext"), FULLTEXT_ARTICLE_LIGHT("fulltext"),
+    SHORTTEXT("shorttext"), FIGURE("figure"), TABLE("table"), HEADER("header"),
+    HEADER_ARTICLE_LIGHT("header/article/light"), HEADER_ARTICLE_LIGHT_REF("header/article/light-ref"),
+    HEADER_SDO_3GPP("header/sdo/3gpp"), HEADER_SDO_IETF("header/sdo/ietf"), NAMES_CITATION("name/citation"),
+    NAMES_HEADER("name/header"), PATENT_PATENT("patent/patent"), PATENT_NPL("patent/npl"),
+    PATENT_CITATION("patent/citation"), PATENT_STRUCTURE("patent/structure"), PATENT_EDIT("patent/edit"),
+    ENTITIES_NER("ner"), ENTITIES_NERFR("nerfr"), ENTITIES_NERSense("nersense"),
+    // ENTITIES_BIOTECH("entities/biotech"),
+    ENTITIES_BIOTECH("bio"), ASTRO("astro"), SOFTWARE("software"), DATASEER("dataseer"),
+    // ACKNOWLEDGEMENT("acknowledgement"),
+    FUNDING_ACKNOWLEDGEMENT("funding-acknowledgement"), INFRASTRUCTURE("infrastructure"), DUMMY("none"),
+    LICENSE("license"), COPYRIGHT("copyright");
 
-    //I cannot declare it before
+    // I cannot declare it before
     public static final String DUMMY_FOLDER_LABEL = "none";
 
     // Flavors are dedicated models variant, but using the same base parser.
-    // This is used in particular for scientific or technical documents like standards (SDO) 
-    // which have a particular overall zoning and/or header, while the rest of the content 
+    // This is used in particular for scientific or technical documents like standards (SDO)
+    // which have a particular overall zoning and/or header, while the rest of the content
     // is similar to other general technical and scientific document
     public enum Flavor {
-        BLANK("blank"),
-        ARTICLE_LIGHT("article/light"),
-        ARTICLE_LIGHT_WITH_REFERENCES("article/light-ref"),
-        _3GPP("sdo/3gpp"),
-        IETF("sdo/ietf");
+        BLANK("blank"), ARTICLE_LIGHT("article/light"), ARTICLE_LIGHT_WITH_REFERENCES("article/light-ref"),
+        _3GPP("sdo/3gpp"), IETF("sdo/ietf");
 
         public final String label;
 
@@ -111,9 +81,7 @@ public enum GrobidModels implements GrobidModel {
         }
 
         public static List<String> getLabels() {
-            return Arrays.stream(Flavor.values())
-                .map(Flavor::getLabel)
-                .collect(Collectors.toList());
+            return Arrays.stream(Flavor.values()).map(Flavor::getLabel).collect(Collectors.toList());
         }
     }
 
@@ -171,7 +139,10 @@ public enum GrobidModels implements GrobidModel {
         } else {
             GrobidModel grobidModel = modelFor(model.toString() + "/" + flavor.getLabel().toLowerCase());
             if (!Files.exists(Paths.get(grobidModel.getModelPath()))) {
-                LOGGER.info("The requested model flavor " + flavor.getLabel() + " model is not available. Defaulting to the standard model. ");
+                LOGGER.info(
+                        "The requested model flavor "
+                                + flavor.getLabel()
+                                + " model is not available. Defaulting to the standard model. ");
                 return model;
             } else {
                 return grobidModel;

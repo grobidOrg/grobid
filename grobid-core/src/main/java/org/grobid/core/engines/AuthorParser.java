@@ -34,12 +34,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class AuthorParser {
-	private static Logger LOGGER = LoggerFactory.getLogger(AuthorParser.class);
+    private static Logger LOGGER = LoggerFactory.getLogger(AuthorParser.class);
     private final GenericTagger namesHeaderParser;
     private final GenericTagger namesCitationParser;
 
     private static final Pattern ET_AL_REGEX_PATTERN = Pattern.compile("et\\.? al\\.?.*$");
-	
+
     public AuthorParser() {
         namesHeaderParser = TaggerFactory.getTagger(GrobidModels.NAMES_HEADER);
         namesCitationParser = TaggerFactory.getTagger(GrobidModels.NAMES_CITATION);
@@ -81,7 +81,7 @@ public class AuthorParser {
         List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input, new Language("en", 1.0));
         return processing(tokens, null, true);
     }
-       
+
     public List<Person> processingHeaderWithLayoutTokens(List<LayoutToken> inputs, List<PDFAnnotation> pdfAnnotations) {
         return processing(inputs, pdfAnnotations, true);
     }
@@ -89,8 +89,10 @@ public class AuthorParser {
     /**
      * Common processing of authors in header or citation
      *
-     * @param tokens list of LayoutToken object to process
-     * @param head - if true use the model for header's name, otherwise the model for names in citation
+     * @param tokens
+     * list of LayoutToken object to process
+     * @param head
+     * - if true use the model for header's name, otherwise the model for names in citation
      * @return List of identified Person entites as POJO.
      */
     public List<Person> processing(List<LayoutToken> tokens, List<PDFAnnotation> pdfAnnotations, boolean head) {
@@ -102,14 +104,14 @@ public class AuthorParser {
             List<OffsetPosition> titlePositions = Lexicon.getInstance().tokenPositionsPersonTitle(tokens);
             List<OffsetPosition> suffixPositions = Lexicon.getInstance().tokenPositionsPersonSuffix(tokens);
 
-            String sequence = FeaturesVectorName.addFeaturesName(tokens, null, 
-                titlePositions, suffixPositions);
+            String sequence = FeaturesVectorName.addFeaturesName(tokens, null, titlePositions, suffixPositions);
             if (StringUtils.isEmpty(sequence))
                 return null;
             GenericTagger tagger = head ? namesHeaderParser : namesCitationParser;
             String res = tagger.label(sequence);
-//System.out.println(res);
-            TaggingTokenClusteror clusteror = new TaggingTokenClusteror(head ? GrobidModels.NAMES_HEADER : GrobidModels.NAMES_CITATION, res, tokens);
+            // System.out.println(res);
+            TaggingTokenClusteror clusteror = new TaggingTokenClusteror(
+                    head ? GrobidModels.NAMES_HEADER : GrobidModels.NAMES_CITATION, res, tokens);
             org.grobid.core.data.Person aut = new Person();
             boolean newMarker = false;
             String currentMarker = null;
@@ -119,7 +121,7 @@ public class AuthorParser {
                     continue;
                 }
 
-                if(pdfAnnotations != null) {
+                if (pdfAnnotations != null) {
                     for (LayoutToken authorsToken : cluster.concatTokens()) {
                         for (PDFAnnotation pdfAnnotation : pdfAnnotations) {
                             BoundingBox intersectBox = pdfAnnotation.getIntersectionBox(authorsToken);
@@ -130,34 +132,44 @@ public class AuthorParser {
                                     double pixPerChar = authorsToken.getWidth() / authorsToken.getText().length();
                                     int charsCovered = (int) ((intersectBox.getWidth() / pixPerChar) + 0.5);
                                     if (StringUtils.isNotBlank(pdfAnnotation.getDestination())) {
-                                        Matcher orcidMatcher = TextUtilities.ORCIDPattern.matcher(pdfAnnotation.getDestination());
+                                        Matcher orcidMatcher = TextUtilities.ORCIDPattern
+                                                .matcher(pdfAnnotation.getDestination());
                                         if (orcidMatcher.find()) {
                                             // !! here we consider the annot is at the tail or end of the names
-                                            //LF: sometimes there is no token at the end of the name, and the annotation covers all the name.
-                                            String newToken = authorsToken.getText().substring(0, authorsToken.getText().length() - charsCovered);
+                                            // LF: sometimes there is no token at the end of the name, and the
+                                            // annotation covers all the name.
+                                            String newToken = authorsToken.getText()
+                                                    .substring(0, authorsToken.getText().length() - charsCovered);
                                             if (StringUtils.isNotBlank(newToken)) {
                                                 authorsToken.setText(newToken);
                                             }
-                                            aut.setORCID(orcidMatcher.group(1) + "-"
-                                                + orcidMatcher.group(2) + "-" + orcidMatcher.group(3)+ "-" + orcidMatcher.group(4));
+                                            aut.setORCID(
+                                                    orcidMatcher.group(1)
+                                                            + "-"
+                                                            + orcidMatcher.group(2)
+                                                            + "-"
+                                                            + orcidMatcher.group(3)
+                                                            + "-"
+                                                            + orcidMatcher.group(4));
                                         }
                                     }
                                 }
                             }
                         }
                     }
-                } 
+                }
 
                 TaggingLabel clusterLabel = cluster.getTaggingLabel();
                 Engine.getCntManager().i(clusterLabel);
-                //String clusterContent = LayoutTokensUtil.normalizeText(LayoutTokensUtil.toText(cluster.concatTokens()));
+                // String clusterContent =
+                // LayoutTokensUtil.normalizeText(LayoutTokensUtil.toText(cluster.concatTokens()));
                 String clusterContent = StringUtils.normalizeSpace(LayoutTokensUtil.toText(cluster.concatTokens()));
                 if (StringUtils.isBlank(clusterContent)) {
                     continue;
                 }
 
                 if (clusterLabel.equals(TaggingLabels.NAMES_HEADER_MARKER)) {
-                    // a marker introduces a new author, and the marker could be attached to the previous (usual) 
+                    // a marker introduces a new author, and the marker could be attached to the previous (usual)
                     // or following author (rare)
                     currentMarker = clusterContent;
                     newMarker = true;
@@ -165,20 +177,20 @@ public class AuthorParser {
                     if (aut.notNull()) {
                         if (fullAuthors == null) {
                             fullAuthors = new ArrayList<Person>();
-                        } 
+                        }
                         aut.addMarker(currentMarker);
                         markerAssigned = true;
-                        
+
                         if (!fullAuthors.contains(aut)) {
                             fullAuthors.add(aut);
                             aut = new Person();
                         }
-                    } 
+                    }
                     if (!markerAssigned) {
                         aut.addMarker(currentMarker);
                     }
-                } else if (clusterLabel.equals(TaggingLabels.NAMES_HEADER_TITLE) || 
-                            clusterLabel.equals(TaggingLabels.NAMES_CITATION_TITLE)) {
+                } else if (clusterLabel.equals(TaggingLabels.NAMES_HEADER_TITLE)
+                        || clusterLabel.equals(TaggingLabels.NAMES_CITATION_TITLE)) {
                     if (newMarker) {
                         aut.setTitle(clusterContent);
                         newMarker = false;
@@ -194,8 +206,8 @@ public class AuthorParser {
                         aut.setTitle(clusterContent);
                     }
                     aut.appendLayoutTokens(cluster.concatTokens());
-                } else if (clusterLabel.equals(TaggingLabels.NAMES_HEADER_FORENAME) || 
-                            clusterLabel.equals(TaggingLabels.NAMES_CITATION_FORENAME)) {
+                } else if (clusterLabel.equals(TaggingLabels.NAMES_HEADER_FORENAME)
+                        || clusterLabel.equals(TaggingLabels.NAMES_CITATION_FORENAME)) {
                     if (newMarker) {
                         aut.setFirstName(clusterContent);
                         newMarker = false;
@@ -212,8 +224,8 @@ public class AuthorParser {
                         aut.setFirstName(clusterContent);
                     }
                     aut.appendLayoutTokens(cluster.concatTokens());
-                } else if (clusterLabel.equals(TaggingLabels.NAMES_HEADER_MIDDLENAME) || 
-                            clusterLabel.equals(TaggingLabels.NAMES_CITATION_MIDDLENAME)) {
+                } else if (clusterLabel.equals(TaggingLabels.NAMES_HEADER_MIDDLENAME)
+                        || clusterLabel.equals(TaggingLabels.NAMES_CITATION_MIDDLENAME)) {
                     if (newMarker) {
                         aut.setMiddleName(clusterContent);
                         newMarker = false;
@@ -223,8 +235,8 @@ public class AuthorParser {
                         aut.setMiddleName(clusterContent);
                     }
                     aut.appendLayoutTokens(cluster.concatTokens());
-                } else if (clusterLabel.equals(TaggingLabels.NAMES_HEADER_SURNAME) || 
-                            clusterLabel.equals(TaggingLabels.NAMES_CITATION_SURNAME)) {
+                } else if (clusterLabel.equals(TaggingLabels.NAMES_HEADER_SURNAME)
+                        || clusterLabel.equals(TaggingLabels.NAMES_CITATION_SURNAME)) {
                     if (newMarker) {
                         aut.setLastName(clusterContent);
                         newMarker = false;
@@ -241,12 +253,11 @@ public class AuthorParser {
                         aut.setLastName(clusterContent);
                     }
                     aut.appendLayoutTokens(cluster.concatTokens());
-                } else if (clusterLabel.equals(TaggingLabels.NAMES_HEADER_SUFFIX) || 
-                            clusterLabel.equals(TaggingLabels.NAMES_CITATION_SUFFIX)) {
-                    /*if (newMarker) {
-                        aut.setSuffix(clusterContent);
-                        newMarker = false;
-                    } else*/ 
+                } else if (clusterLabel.equals(TaggingLabels.NAMES_HEADER_SUFFIX)
+                        || clusterLabel.equals(TaggingLabels.NAMES_CITATION_SUFFIX)) {
+                    /*
+                     * if (newMarker) { aut.setSuffix(clusterContent); newMarker = false; } else
+                     */
                     if (aut.getSuffix() != null) {
                         aut.setSuffix(aut.getSuffix() + " " + clusterContent);
                     } else {
@@ -266,10 +277,10 @@ public class AuthorParser {
 
             // some more person name normalisation
             if (fullAuthors != null) {
-                for(Person author : fullAuthors) {
+                for (Person author : fullAuthors) {
                     author.normalizeName();
                 }
-            } 
+            }
 
         } catch (Exception e) {
             throw new GrobidException("An exception occurred while running Grobid.", e);
@@ -283,13 +294,14 @@ public class AuthorParser {
 
     /**
      * Extract results from a list of name strings in the training format without any string modification.
-	 *
-	 * @param input - the sequence of author names to be processed as a string.
-	 * @param head - if true use the model for header's name, otherwise the model for names in citation
-	 * @return the pseudo-TEI training data
-	 */
-    public StringBuilder trainingExtraction(String input,
-                                            boolean head) {
+     *
+     * @param input
+     * - the sequence of author names to be processed as a string.
+     * @param head
+     * - if true use the model for header's name, otherwise the model for names in citation
+     * @return the pseudo-TEI training data
+     */
+    public StringBuilder trainingExtraction(String input, boolean head) {
         if (StringUtils.isEmpty(input))
             return null;
         // force analyser with English, to avoid bad surprise
@@ -326,11 +338,11 @@ public class AuthorParser {
                 addSpace = false;
                 if ((line.trim().length() == 0)) {
                     // new author
-					if (head)
-                    	buffer.append("/t<author>\n");
-					else {
-						//buffer.append("<author>");
-					}
+                    if (head)
+                        buffer.append("/t<author>\n");
+                    else {
+                        // buffer.append("<author>");
+                    }
                     continue;
                 } else {
                     String theTok = tokens.get(q).getText();
@@ -402,14 +414,14 @@ public class AuthorParser {
                         if (head) {
                             buffer.append("\t\t\t\t\t\t\t</persName>\n");
                         } else {
-                            //buffer.append("</author>\n");
+                            // buffer.append("</author>\n");
                         }
                         hasForename = false;
                         hasSurname = false;
                         if (head) {
                             buffer.append("\t\t\t\t\t\t\t<persName>\n");
                         } else {
-                            //buffer.append("<author>\n");
+                            // buffer.append("<author>\n");
                         }
                         hasMarker = true;
                     }
@@ -438,14 +450,14 @@ public class AuthorParser {
                         if (head) {
                             buffer.append("\t\t\t\t\t\t\t</persName>\n");
                         } else {
-                            //buffer.append("</author>\n");
+                            // buffer.append("</author>\n");
                         }
                         hasMarker = false;
                         hasSurname = false;
                         if (head) {
                             buffer.append("\t\t\t\t\t\t\t<persName>\n");
                         } else {
-                            //buffer.append("<author>\n");
+                            // buffer.append("<author>\n");
                         }
                     }
                     hasForename = true;
@@ -467,14 +479,14 @@ public class AuthorParser {
                         if (head) {
                             buffer.append("\t\t\t\t\t\t\t</persName>\n");
                         } else {
-                            //buffer.append("</author>\n");
+                            // buffer.append("</author>\n");
                         }
                         hasMarker = false;
                         hasForename = false;
                         if (head) {
                             buffer.append("\t\t\t\t\t\t\t<persName>\n");
                         } else {
-                            //buffer.append("<author>\n");
+                            // buffer.append("<author>\n");
                         }
                     }
                     hasSurname = true;
@@ -508,20 +520,21 @@ public class AuthorParser {
                 testClosingTag(buffer, currentTag0, lastTag0, head);
             }
         } catch (Exception e) {
-//			e.printStackTrace();
+            // e.printStackTrace();
             throw new GrobidException("An exception occured while running Grobid.", e);
         }
         return buffer;
     }
 
-    private String writeField(String s1,
-                              String lastTag0,
-                              String s2,
-                              String field,
-                              String outField,
-                              boolean addSpace,
-                              int nbIndent, 
-							  boolean head) {
+    private String writeField(
+            String s1,
+            String lastTag0,
+            String s2,
+            String field,
+            String outField,
+            boolean addSpace,
+            int nbIndent,
+            boolean head) {
         String result = null;
         if ((s1.equals(field)) || (s1.equals("I-" + field))) {
             if ((s1.equals("<other>") || s1.equals("I-<other>"))) {
@@ -536,55 +549,52 @@ public class AuthorParser {
                     result = s2;
             } else {
                 result = "";
-				if (head) {
-	                for (int i = 0; i < nbIndent; i++) {
-	                    result += "\t";
-	                }
-				}
-				if (addSpace)
-					result += " " + outField + s2;
-				else		
- 					result += outField + s2;
+                if (head) {
+                    for (int i = 0; i < nbIndent; i++) {
+                        result += "\t";
+                    }
+                }
+                if (addSpace)
+                    result += " " + outField + s2;
+                else
+                    result += outField + s2;
             }
         }
         return result;
     }
 
-    private boolean testClosingTag(StringBuilder buffer,
-                                   String currentTag0,
-                                   String lastTag0,
-								   boolean head) {
+    private boolean testClosingTag(StringBuilder buffer, String currentTag0, String lastTag0, boolean head) {
         boolean res = false;
         if (!currentTag0.equals(lastTag0)) {
             res = true;
             // we close the current tag
             if (lastTag0.equals("<other>")) {
-				if (head)
-					buffer.append("\n");
+                if (head)
+                    buffer.append("\n");
             } else if (lastTag0.equals("<forename>")) {
                 buffer.append("</forename>");
-				if (head)
-					buffer.append("\n");
+                if (head)
+                    buffer.append("\n");
             } else if (lastTag0.equals("<middlename>")) {
                 buffer.append("</middlename>");
-				if (head)
-					buffer.append("\n");
+                if (head)
+                    buffer.append("\n");
             } else if (lastTag0.equals("<surname>")) {
                 buffer.append("</surname>");
-				if (head)
-					buffer.append("\n");
+                if (head)
+                    buffer.append("\n");
             } else if (lastTag0.equals("<title>")) {
                 buffer.append("</roleName>");
-				if (head)
-					buffer.append("\n");
+                if (head)
+                    buffer.append("\n");
             } else if (lastTag0.equals("<suffix>")) {
                 buffer.append("</suffix>");
-				if (head)
-					buffer.append("\n");
+                if (head)
+                    buffer.append("\n");
             } else if (lastTag0.equals("<marker>")) {
                 buffer.append("</marker>");
-				if (head)
-					buffer.append("\n");
+                if (head)
+                    buffer.append("\n");
             } else {
                 res = false;
             }

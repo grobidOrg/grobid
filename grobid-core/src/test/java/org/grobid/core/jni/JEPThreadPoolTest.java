@@ -13,8 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static org.junit.Assert.*;
 
 /**
- * Unit tests for JEPThreadPool
- * Tests singleton behavior, thread management, and task execution
+ * Unit tests for JEPThreadPool Tests singleton behavior, thread management, and task execution
  */
 public class JEPThreadPoolTest {
 

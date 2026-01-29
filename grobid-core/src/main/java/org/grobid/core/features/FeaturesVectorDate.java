@@ -14,7 +14,7 @@ public class FeaturesVectorDate {
     public String label = null; // label if known
     public String lineStatus = null; // one of LINESTART, LINEIN, LINEEND
     public String capitalisation = null; // one of INITCAP, ALLCAPS, NOCAPS
-    public String digit;  // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
+    public String digit; // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
     public boolean singleChar = false;
     public boolean containDash = false;
     public boolean year = false;
@@ -24,8 +24,10 @@ public class FeaturesVectorDate {
     public boolean containPunct = false;
 
     public String printVector() {
-        if (string == null) return null;
-        if (string.length() == 0) return null;
+        if (string == null)
+            return null;
+        if (string.length() == 0)
+            return null;
         StringBuffer res = new StringBuffer();
 
         // token string (1)
@@ -240,8 +242,7 @@ public class FeaturesVectorDate {
             }
 
             if (text.length() == 1) {
-                features.singleChar = true;
-                ;
+                features.singleChar = true;;
             }
 
             if (Character.isUpperCase(text.charAt(0))) {

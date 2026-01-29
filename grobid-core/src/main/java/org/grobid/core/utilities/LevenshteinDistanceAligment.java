@@ -3,14 +3,12 @@ package org.grobid.core.utilities;
 import java.util.*;
 
 /**
- * Distance and aligment of strings based on Levenshtein edit distances using the
- * standard <b>Dynamic Programming</b> algorithm. Standard Levenshtein distance is
- * implemented, i.e. without transpose!
+ * Distance and aligment of strings based on Levenshtein edit distances using the standard <b>Dynamic Programming</b>
+ * algorithm. Standard Levenshtein distance is implemented, i.e. without transpose!
  * <p/>
- * Based on algorithm at
- * - http://www.csse.monash.edu.au/~lloyd/tildeStrings/Alignment/92.IPL.html
- * - http://www.csse.monash.edu.au/~lloyd/tildeFP/Haskell/1998/Edit01/
- * - Xuan Luo implementation http://xuanluo.bol.ucla.edu/Levenshtein.java
+ * Based on algorithm at - http://www.csse.monash.edu.au/~lloyd/tildeStrings/Alignment/92.IPL.html -
+ * http://www.csse.monash.edu.au/~lloyd/tildeFP/Haskell/1998/Edit01/ - Xuan Luo implementation
+ * http://xuanluo.bol.ucla.edu/Levenshtein.java
  */
 
 public class LevenshteinDistanceAligment<E> {
@@ -32,12 +30,13 @@ public class LevenshteinDistanceAligment<E> {
         compute();
     }
 
-    public enum Op {Start, Match, Insert, Delete, Substitute}
+    public enum Op {
+        Start, Match, Insert, Delete, Substitute
+    }
 
     private static class Diagonal<E> {
         /**
-         * diagonal starts at a[0], b[abs(offset)]
-         * lower half has negative offset
+         * diagonal starts at a[0], b[abs(offset)] lower half has negative offset
          */
         private final int offset;
         private final E[] a;
@@ -88,8 +87,7 @@ public class LevenshteinDistanceAligment<E> {
          */
         public Diagonal<E> getAbove() {
             if (next == null)
-                next = new Diagonal<E>(a, b, this,
-                        offset >= 0 ? offset + 1 : offset - 1);
+                next = new Diagonal<E>(a, b, this, offset >= 0 ? offset + 1 : offset - 1);
             return next;
         }
 
@@ -125,11 +123,11 @@ public class LevenshteinDistanceAligment<E> {
                 int nw = me;
                 int i = elements.size();
 
-                // \   \   \
-                //  \   \   \
-                //   \  nw   n
-                //    \   \
-                //      w   me
+                // \ \ \
+                // \ \ \
+                // \ nw n
+                // \ \
+                // w me
                 // according to dynamic programming algorithm,
                 // if characters are equal, me = nw
                 // otherwise, me = 1 + min3 (w, nw, n)
@@ -137,7 +135,7 @@ public class LevenshteinDistanceAligment<E> {
                     me = nw;
                 else {
                     // see L. Allison, Lazy Dynamic-Programming can be Eager
-                    //     Inf. Proc. Letters 43(4) pp207-212, Sept' 1992
+                    // Inf. Proc. Letters 43(4) pp207-212, Sept' 1992
                     // computes min3 (w, nw, n)
                     // but does not always evaluate n
                     // this makes it O(|a|*D(a,b))
@@ -152,7 +150,7 @@ public class LevenshteinDistanceAligment<E> {
                     // me = 1 + Math.min(w, Math.min(nw, n))
                     // would make it O(|a|*|b|)
                 }
-                //System.out.printf("(%d,%d): %d\n", offset >= 0 ? i : i-offset, offset >= 0 ? offset+i : i, me);
+                // System.out.printf("(%d,%d): %d\n", offset >= 0 ? i : i-offset, offset >= 0 ? offset+i : i, me);
 
                 elements.add(me);
             }
@@ -163,7 +161,7 @@ public class LevenshteinDistanceAligment<E> {
          * get the last operation used to get to a certain element
          */
         public Op getOp(int i) {
-            //System.out.println(i + " " + offset);
+            // System.out.println(i + " " + offset);
             if (i == 0) {
                 if (offset == 0)
                     return Op.Start;
@@ -239,18 +237,17 @@ public class LevenshteinDistanceAligment<E> {
         LinkedList<Op> alignment = new LinkedList<Op>();
         int i = Math.min(a.length, b.length);
 
-        LOOP:
-        while (true) {
+        LOOP : while (true) {
             // adds operations in reverse order
             if (diag == null)
-                break LOOP;  //PL
+                break LOOP; // PL
             Op op = diag.getOp(i);
             switch (op) {
-                case Match:
-                case Substitute:
+                case Match :
+                case Substitute :
                     i--;
                     break;
-                case Insert:
+                case Insert :
                     if (diag.offset == 0) {
                         diag = diag.prev;
                         i--;
@@ -261,7 +258,7 @@ public class LevenshteinDistanceAligment<E> {
                         i--;
                     }
                     break;
-                case Delete:
+                case Delete :
                     if (diag.offset == 0) {
                         diag = diag.next;
                         i--;
@@ -272,7 +269,7 @@ public class LevenshteinDistanceAligment<E> {
                         diag = diag.prev;
                     }
                     break;
-                case Start:
+                case Start :
                     break LOOP;
             }
             alignment.add(op);
@@ -290,8 +287,8 @@ public class LevenshteinDistanceAligment<E> {
                     alignment2.add(Op.Delete);
                 else
                     alignment2.add(op);
-                //case Start:
-                //	alignment2.add(op);
+                // case Start:
+                // alignment2.add(op);
             }
             alignment = alignment2;
         }
@@ -309,9 +306,8 @@ public class LevenshteinDistanceAligment<E> {
 
     public static void main(String[] args) {
         assert args.length == 2;
-        LevenshteinDistanceAligment<Character> foo =
-                new LevenshteinDistanceAligment<Character>(str2chararray(args[0]),
-                        str2chararray(args[1]));
+        LevenshteinDistanceAligment<Character> foo = new LevenshteinDistanceAligment<Character>(str2chararray(args[0]),
+                str2chararray(args[1]));
         System.out.println("Levenshtein distance = " + foo.getDistance());
         System.out.println("Alignment: " + foo.getAlignment());
     }

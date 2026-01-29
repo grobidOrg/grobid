@@ -36,11 +36,13 @@ public class JATSTransformer {
         }
     }
 
-    public String transform(String input) throws TransformerException, ParserConfigurationException, SAXException, XMLStreamException {
+    public String transform(String input)
+            throws TransformerException, ParserConfigurationException, SAXException, XMLStreamException {
         return transform(input, t);
     }
 
-    protected String transform(String input, Transformer t) throws TransformerException, ParserConfigurationException, SAXException, XMLStreamException {
+    protected String transform(String input, Transformer t)
+            throws TransformerException, ParserConfigurationException, SAXException, XMLStreamException {
         StringWriter w = new StringWriter();
         Result r = new StreamResult(w);
         StreamSource xmlSource = new StreamSource(new ByteArrayInputStream(input.getBytes(Charset.forName("UTF-8"))));

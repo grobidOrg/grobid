@@ -8,7 +8,6 @@ import org.grobid.core.data.ChemicalEntity;
  */
 public class NameToStructureResolver {
 
-
     public static ChemicalEntity process(String name) {
         ChemicalEntity result = new ChemicalEntity(name);
         //

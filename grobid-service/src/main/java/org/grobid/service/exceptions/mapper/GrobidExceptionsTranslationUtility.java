@@ -22,13 +22,12 @@ public class GrobidExceptionsTranslationUtility {
     public GrobidExceptionsTranslationUtility() {
     }
 
-
     public Response processException(Throwable exception, Response.Status status) {
         try {
             fillMdc(exception, status);
             List<String> descriptions = getExceptionDescriptions(exception, status);
 
-//            String requestUri = uriInfo.getRequestUri().toString();
+            // String requestUri = uriInfo.getRequestUri().toString();
             return Response.status(status)
                     .type(MediaType.APPLICATION_JSON_TYPE)
                     .entity(buildJson(getExceptionName(exception), descriptions, status, null, null))
@@ -46,7 +45,6 @@ public class GrobidExceptionsTranslationUtility {
         return exceptionName;
     }
 
-
     public void fillMdc(Throwable exception, Response.Status status) {
         MDC.put("ExceptionName", getExceptionName(exception));
         MDC.put("StatusCode", String.valueOf(status.getStatusCode()));
@@ -63,7 +61,6 @@ public class GrobidExceptionsTranslationUtility {
         MDC.remove("StatusFamily");
         MDC.remove("StackTrace");
     }
-
 
     public List<String> getExceptionDescriptions(Throwable exception, Response.Status status) {
         List<String> descriptions = new ArrayList<>();
@@ -86,8 +83,12 @@ public class GrobidExceptionsTranslationUtility {
         return descriptions;
     }
 
-
-    public String buildJson(String type, List<String> descriptions, Response.Status status, GrobidExceptionStatus grobidExceptionStatus, String requestUri) {
+    public String buildJson(
+            String type,
+            List<String> descriptions,
+            Response.Status status,
+            GrobidExceptionStatus grobidExceptionStatus,
+            String requestUri) {
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode root = mapper.createObjectNode();
         root.put("type", type);
@@ -106,7 +107,7 @@ public class GrobidExceptionsTranslationUtility {
         try {
             json = mapper.writeValueAsString(root);
         } catch (IOException e) {
-//            LOGGER.warn("Error in ServiceExceptionMapper: ", e);
+            // LOGGER.warn("Error in ServiceExceptionMapper: ", e);
             json = "{\"description\": \"Internal error: " + e.getMessage() + "\"}";
         }
         return json;

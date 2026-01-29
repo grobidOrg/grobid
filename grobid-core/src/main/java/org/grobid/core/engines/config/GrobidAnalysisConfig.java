@@ -7,28 +7,18 @@ import org.grobid.core.GrobidModels;
 import org.grobid.core.analyzers.Analyzer;
 
 /**
- * A class representing the runtime configuration values needed in the analysis chain
- * TODO: clean up the docs
- * consolidateHeader    - the consolidation option allows GROBID to exploit Crossref or biblio-glutton
- *                             web services for improving header information
- * consolidateCitations - the consolidation option allows GROBID to exploit Crossref or biblio-glutton
- *                             web services for improving citations information
- * consolidateFunders - the consolidation option allows GROBID to exploit Crossref or biblio-glutton
- *                             web services for improving funder information
- * includeRawCitations - the raw bibliographical string is added to parsed results
- * assetPath if not null, the PDF assets (embedded images) will be extracted and
- * saved under the indicated repository path
- * startPage give the starting page to consider in case of segmentation of the
- * PDF, -1 for the first page (default)
- * endPage give the end page to consider in case of segmentation of the
- * PDF, -1 for the last page (default)
- * generateIDs if true, generate random attribute id on the textual elements of
- * the resulting TEI
- * generateTeiCoordinates give the list of TEI elements for which the coordinates
- * of the corresponding element in the original PDF should be included in the 
- * resulting TEI
- * analyzer in case a particular Grobid Analyzer to be used for 
- * tokenizing/filtering text
+ * A class representing the runtime configuration values needed in the analysis chain TODO: clean up the docs
+ * consolidateHeader - the consolidation option allows GROBID to exploit Crossref or biblio-glutton web services for
+ * improving header information consolidateCitations - the consolidation option allows GROBID to exploit Crossref or
+ * biblio-glutton web services for improving citations information consolidateFunders - the consolidation option allows
+ * GROBID to exploit Crossref or biblio-glutton web services for improving funder information includeRawCitations - the
+ * raw bibliographical string is added to parsed results assetPath if not null, the PDF assets (embedded images) will be
+ * extracted and saved under the indicated repository path startPage give the starting page to consider in case of
+ * segmentation of the PDF, -1 for the first page (default) endPage give the end page to consider in case of
+ * segmentation of the PDF, -1 for the last page (default) generateIDs if true, generate random attribute id on the
+ * textual elements of the resulting TEI generateTeiCoordinates give the list of TEI elements for which the coordinates
+ * of the corresponding element in the original PDF should be included in the resulting TEI analyzer in case a
+ * particular Grobid Analyzer to be used for tokenizing/filtering text
  */
 public class GrobidAnalysisConfig {
     private GrobidAnalysisConfig() {
@@ -60,7 +50,7 @@ public class GrobidAnalysisConfig {
     // if the raw copyrights/license string should be included in the parsed results
     private boolean includeRawCopyrights = false;
 
-    //if the text marked as <other> in fulltext and header should be retained
+    // if the text marked as <other> in fulltext and header should be retained
     private boolean includeDiscardedText = false;
 
     /// === TEI-specific settings ==
@@ -91,7 +81,7 @@ public class GrobidAnalysisConfig {
     // a particular Grobid Analyzer to be used for tokenizing/filtering text
     private Analyzer analyzer = null;
 
-    // if true, the TEI text will be segmented into sentences 
+    // if true, the TEI text will be segmented into sentences
     private boolean withSentenceSegmentation = false;
 
     public boolean isIncludeDiscardedText() {
@@ -124,9 +114,10 @@ public class GrobidAnalysisConfig {
         }
 
         /**
-         * @param consolidate the consolidation option allows GROBID to exploit Crossref web services for improving header
-         *                    information. 0 (no consolidation, default value), 1 (consolidate the citation and inject extra
-         *                    metadata) or 2 (consolidate the citation and inject DOI only)
+         * @param consolidate
+         * the consolidation option allows GROBID to exploit Crossref web services for improving header information. 0
+         * (no consolidation, default value), 1 (consolidate the citation and inject extra metadata) or 2 (consolidate
+         * the citation and inject DOI only)
          */
         public GrobidAnalysisConfigBuilder consolidateCitations(int consolidate) {
             config.consolidateCitations = consolidate;
@@ -215,7 +206,6 @@ public class GrobidAnalysisConfig {
             return this;
         }
 
-
         public GrobidAnalysisConfig build() {
             postProcessAndValidate();
             return config;
@@ -227,7 +217,8 @@ public class GrobidAnalysisConfig {
             }
 
             if (config.generateImageReferences && config.getPdfAssetPath() == null) {
-                throw new InvalidGrobidAnalysisConfig("Generating image references is switched on, but no pdf asset path is provided");
+                throw new InvalidGrobidAnalysisConfig(
+                        "Generating image references is switched on, but no pdf asset path is provided");
             }
         }
 
@@ -304,7 +295,7 @@ public class GrobidAnalysisConfig {
     }
 
     public boolean isGenerateTeiCoordinates() {
-        return getGenerateTeiCoordinates() != null && getGenerateTeiCoordinates().size()>0;
+        return getGenerateTeiCoordinates() != null && getGenerateTeiCoordinates().size() > 0;
     }
 
     public boolean isGenerateTeiCoordinates(String type) {

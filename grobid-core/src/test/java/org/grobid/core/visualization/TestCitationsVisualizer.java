@@ -16,8 +16,6 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
-import com.fasterxml.jackson.core.Versioned;
-
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 
@@ -26,7 +24,7 @@ public class TestCitationsVisualizer {
     static final ObjectMapper mapper = new ObjectMapper();
 
     @AfterClass
-    public static void tearDown(){
+    public static void tearDown() {
         GrobidFactory.reset();
     }
 
@@ -73,15 +71,10 @@ public class TestCitationsVisualizer {
         // XXX: this isn't working, not sure if it needs a different
         // test document or some extra processing step
         /*
-        JsonNode markers = root.get("refMarkers");
-        JsonNode firstMarker = markers.get(0);
-        assertTrue(firstMarker.has("id"));
-        assertTrue(firstMarker.has("p"));
-        assertTrue(firstMarker.has("x"));
-        assertTrue(firstMarker.has("y"));
-        assertTrue(firstMarker.has("w"));
-        assertTrue(firstMarker.has("h"));
-        */
+         * JsonNode markers = root.get("refMarkers"); JsonNode firstMarker = markers.get(0);
+         * assertTrue(firstMarker.has("id")); assertTrue(firstMarker.has("p")); assertTrue(firstMarker.has("x"));
+         * assertTrue(firstMarker.has("y")); assertTrue(firstMarker.has("w")); assertTrue(firstMarker.has("h"));
+         */
     }
 
     @Test
@@ -100,7 +93,7 @@ public class TestCitationsVisualizer {
     // XXX: copied from TestFullTextParser
     private File getInputDocument(String inputPath) throws IOException {
         InputStream is = this.getClass().getResourceAsStream(inputPath);
-        File inputTmpFile  = File.createTempFile("tmpFileTest", "testFullTextParser");
+        File inputTmpFile = File.createTempFile("tmpFileTest", "testFullTextParser");
         inputTmpFile.deleteOnExit();
 
         FileUtils.copyToFile(is, inputTmpFile);

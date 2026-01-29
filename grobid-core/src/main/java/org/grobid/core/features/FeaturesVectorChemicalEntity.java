@@ -6,19 +6,19 @@ import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 
 /**
- * Class for features used for chemical entity identification in raw texts such as scientific articles
- * and patent descriptions.
+ * Class for features used for chemical entity identification in raw texts such as scientific articles and patent
+ * descriptions.
  *
  */
 public class FeaturesVectorChemicalEntity {
     // default bins for relative position, set experimentally
     static private int nbBins = 12;
 
-    public String string = null;     // lexical feature
-    public String label = null;     // label if known
+    public String string = null; // lexical feature
+    public String label = null; // label if known
 
     public String capitalisation = null;// one of INITCAP, ALLCAPS, NOCAPS
-    public String digit;                  // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
+    public String digit; // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
     public boolean singleChar = false;
 
     public boolean properName = false;
@@ -37,8 +37,10 @@ public class FeaturesVectorChemicalEntity {
     }
 
     public String printVector() {
-        if (string == null) return null;
-        if (string.length() == 0) return null;
+        if (string == null)
+            return null;
+        if (string.length() == 0)
+            return null;
         StringBuffer res = new StringBuffer();
 
         // token string (1)
@@ -117,11 +119,12 @@ public class FeaturesVectorChemicalEntity {
     /**
      * Add the features for the chemical entity extraction model.
      */
-    static public FeaturesVectorChemicalEntity addFeaturesChemicalEntities(String line,
-                                                                           int totalLength,
-                                                                           int position,
-                                                                           boolean isChemicalToken,
-                                                                           boolean isChemicalNameToken) {
+    static public FeaturesVectorChemicalEntity addFeaturesChemicalEntities(
+            String line,
+            int totalLength,
+            int position,
+            boolean isChemicalToken,
+            boolean isChemicalNameToken) {
         FeatureFactory featureFactory = FeatureFactory.getInstance();
 
         FeaturesVectorChemicalEntity featuresVector = new FeaturesVectorChemicalEntity();
@@ -186,8 +189,7 @@ public class FeaturesVectorChemicalEntity {
             if (featuresVector.punctType == null)
                 featuresVector.punctType = "NOPUNCT";
 
-            featuresVector.relativeDocumentPosition =
-                    featureFactory.linearScaling(position, totalLength, nbBins);
+            featuresVector.relativeDocumentPosition = featureFactory.linearScaling(position, totalLength, nbBins);
 
             if (isChemicalToken) {
                 featuresVector.isKnownChemicalToken = true;
@@ -202,5 +204,3 @@ public class FeaturesVectorChemicalEntity {
     }
 
 }
-	
-	

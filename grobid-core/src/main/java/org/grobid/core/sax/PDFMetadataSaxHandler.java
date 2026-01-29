@@ -13,11 +13,11 @@ import org.grobid.core.data.Metadata;
  *
  */
 public class PDFMetadataSaxHandler extends DefaultHandler {
-	public static final Logger LOGGER = LoggerFactory.getLogger(PDFMetadataSaxHandler.class);
+    public static final Logger LOGGER = LoggerFactory.getLogger(PDFMetadataSaxHandler.class);
 
     private StringBuilder accumulator = new StringBuilder(); // Accumulate parsed text
 
-	private Document doc = null;
+    private Document doc = null;
 
     private Metadata metadata = null;
 
@@ -30,21 +30,21 @@ public class PDFMetadataSaxHandler extends DefaultHandler {
         return res.trim();
     }
 
-	public PDFMetadataSaxHandler(Document d) {
-		doc = d;
+    public PDFMetadataSaxHandler(Document d) {
+        doc = d;
         metadata = new Metadata();
-	}
-	public void endElement(String uri, String localName,
-			String qName) throws SAXException {
+    }
 
-		if (qName.equals("METADATA")) {
-		} else if (qName.equals("TITLE")) {
-		    metadata.setTitle(getText());
-			accumulator.setLength(0);
-		} else if (qName.equals("SUBJECT")) {
+    public void endElement(String uri, String localName, String qName) throws SAXException {
+
+        if (qName.equals("METADATA")) {
+        } else if (qName.equals("TITLE")) {
+            metadata.setTitle(getText());
+            accumulator.setLength(0);
+        } else if (qName.equals("SUBJECT")) {
             metadata.setSubject(getText());
             accumulator.setLength(0);
-		} else if (qName.equals("KEYWORDS")) {
+        } else if (qName.equals("KEYWORDS")) {
             metadata.setKeywords(getText());
             accumulator.setLength(0);
         } else if (qName.equals("AUTHOR")) {
@@ -64,13 +64,12 @@ public class PDFMetadataSaxHandler extends DefaultHandler {
             accumulator.setLength(0);
         }
 
-	}
+    }
 
-	public void endDocument(){
-	}
+    public void endDocument() {
+    }
 
-	public void startElement(String namespaceURI, String localName,
-			String qName, Attributes atts) throws SAXException {
+    public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException {
 
         if (qName.equals("METADATA")) {
         } else if (qName.equals("TITLE")) {
@@ -85,8 +84,7 @@ public class PDFMetadataSaxHandler extends DefaultHandler {
         }
     }
 
-    public Metadata getMetadata(){
+    public Metadata getMetadata() {
         return metadata;
     }
 }
-

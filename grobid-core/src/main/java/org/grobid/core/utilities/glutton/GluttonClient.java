@@ -18,17 +18,17 @@ import java.util.concurrent.Future;
  */
 public class GluttonClient extends CrossrefClient {
     public static final Logger LOGGER = LoggerFactory.getLogger(GluttonClient.class);
-    
+
     private static volatile GluttonClient instance;
 
-    //private volatile ExecutorService executorService;
-        
-    //private static boolean limitAuto = true;
-    //private volatile TimedSemaphore timedSemaphore;
+    // private volatile ExecutorService executorService;
+
+    // private static boolean limitAuto = true;
+    // private volatile TimedSemaphore timedSemaphore;
 
     // this list is used to maintain a list of Futures that were submitted,
     // that we can use to check if the requests are completed
-    //private volatile Map<Long, List<Future<?>>> futures = new HashMap<>();
+    // private volatile Map<Long, List<Future<?>>> futures = new HashMap<>();
 
     public static GluttonClient getInstance() {
         if (instance == null) {
@@ -50,56 +50,65 @@ public class GluttonClient extends CrossrefClient {
      */
     private GluttonClient() {
         super();
-        /*this.executorService = Executors.newCachedThreadPool(r -> {
-            Thread t = Executors.defaultThreadFactory().newThread(r);
-            t.setDaemon(true);
-            return t;
-        });
-        this.timedSemaphore = null;
-        this.futures = new HashMap<>();*/
+        /*
+         * this.executorService = Executors.newCachedThreadPool(r -> { Thread t =
+         * Executors.defaultThreadFactory().newThread(r); t.setDaemon(true); return t; }); this.timedSemaphore = null;
+         * this.futures = new HashMap<>();
+         */
         int nThreads = Runtime.getRuntime().availableProcessors();
-        //int nThreads = (int) Math.ceil((double)Runtime.getRuntime().availableProcessors() / 2);
+        // int nThreads = (int) Math.ceil((double)Runtime.getRuntime().availableProcessors() / 2);
         LOGGER.debug("nThreads: " + nThreads);
-        this.executorService = Executors.newFixedThreadPool(nThreads*2);
-        //setLimits(20, 1000); // default calls per second
+        this.executorService = Executors.newFixedThreadPool(nThreads * 2);
+        // setLimits(20, 1000); // default calls per second
     }
 
     public static void printLog(GluttonRequest<?> request, String message) {
-        LOGGER.debug((request != null ? request+": " : "")+message);
-        //System.out.println((request != null ? request+": " : "")+message);
+        LOGGER.debug((request != null ? request + ": " : "") + message);
+        // System.out.println((request != null ? request+": " : "")+message);
     }
 
     /**
      * Push a request in pool to be executed as soon as possible, then wait a response through the listener.
      */
-    public <T extends Object> void pushRequest(GluttonRequest<T> request, CrossrefRequestListener<T> listener, 
-        long threadId) {
+    public <T extends Object> void pushRequest(
+            GluttonRequest<T> request,
+            CrossrefRequestListener<T> listener,
+            long threadId) {
         if (listener != null)
             request.addListener(listener);
-        synchronized(this) {
+        synchronized (this) {
             Future<?> f = executorService.submit(new GluttonRequestTask<>(this, request));
             List<Future<?>> localFutures = this.futures.get(threadId);
             if (localFutures == null)
                 localFutures = new ArrayList<>();
             localFutures.add(f);
             this.futures.put(threadId, localFutures);
-//System.out.println("add request to thread " + threadId + " / current total for the thread: " +  localFutures.size());         
+            // System.out.println("add request to thread " + threadId + " / current total for the thread: " +
+            // localFutures.size());
         }
     }
-    
+
     /**
      * Push a request in pool to be executed soon as possible, then wait a response through the listener.
-     * 
-     * @param params        query parameters, can be null, ex: ?query.title=[title]&query.author=[author]
-     * @param deserializer  json response deserializer, ex: WorkDeserializer to convert Work to BiblioItem
-     * @param threadId      the java identifier of the thread providing the request (e.g. via Thread.currentThread().getId())
-     * @param listener      catch response from request
+     *
+     * @param params
+     * query parameters, can be null, ex: ?query.title=[title]&query.author=[author]
+     * @param deserializer
+     * json response deserializer, ex: WorkDeserializer to convert Work to BiblioItem
+     * @param threadId
+     * the java identifier of the thread providing the request (e.g. via Thread.currentThread().getId())
+     * @param listener
+     * catch response from request
      */
     @Override
-    public <T> void pushRequest(String model, Map<String, String> params, CrossrefDeserializer<T> deserializer,
-                                long threadId, CrossrefRequestListener<T> listener) {
+    public <T> void pushRequest(
+            String model,
+            Map<String, String> params,
+            CrossrefDeserializer<T> deserializer,
+            long threadId,
+            CrossrefRequestListener<T> listener) {
         GluttonRequest<T> request = new GluttonRequest<>(model, params, deserializer);
-        synchronized(this) {
+        synchronized (this) {
             this.pushRequest(request, listener, threadId);
         }
     }

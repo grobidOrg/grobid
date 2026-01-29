@@ -29,7 +29,8 @@ public class BoundingBox implements Comparable {
 
     public static BoundingBox fromTwoPoints(int page, double x1, double y1, double x2, double y2) {
         if (x1 > x2 || y1 > y2) {
-            throw new IllegalArgumentException("Invalid points provided: (" + x1 + ";" + y1 + ")-(" + x2 + ";" + y2 + ")");
+            throw new IllegalArgumentException(
+                    "Invalid points provided: (" + x1 + ";" + y1 + ")-(" + x2 + ";" + y2 + ")");
         }
         return new BoundingBox(page, x1, y1, x2 - x1, y2 - y1);
     }
@@ -56,7 +57,8 @@ public class BoundingBox implements Comparable {
     }
 
     public static BoundingBox fromLayoutToken(LayoutToken tok) {
-        return BoundingBox.fromPointAndDimensions(tok.getPage(), tok.getX(), tok.getY(), tok.getWidth(), tok.getHeight());
+        return BoundingBox
+                .fromPointAndDimensions(tok.getPage(), tok.getX(), tok.getY(), tok.getWidth(), tok.getHeight());
     }
 
     public boolean intersect(BoundingBox b) {
@@ -70,11 +72,14 @@ public class BoundingBox implements Comparable {
         double by1 = b.y;
         double by2 = b.y2;
 
-
-        if (ax2 < bx1) return false;
-        else if (ax1 > bx2) return false;
-        else if (ay2 < by1) return false;
-        else if (ay1 > by2) return false;
+        if (ax2 < bx1)
+            return false;
+        else if (ax1 > bx2)
+            return false;
+        else if (ay2 < by1)
+            return false;
+        else if (ay1 > by2)
+            return false;
         else
             return true;
     }
@@ -111,7 +116,12 @@ public class BoundingBox implements Comparable {
         if (this.page != o.page) {
             throw new IllegalStateException("Cannot compute a bounding box for different pages");
         }
-        return fromTwoPoints(o.page, Math.min(this.x, o.x), Math.min(this.y, o.y), Math.max(this.x2, o.x2), Math.max(this.y2, o.y2));
+        return fromTwoPoints(
+                o.page,
+                Math.min(this.x, o.x),
+                Math.min(this.y, o.y),
+                Math.max(this.x2, o.x2),
+                Math.max(this.y2, o.y2));
     }
 
     public BoundingBox boundBoxExcludingAnotherPage(BoundingBox o) {
@@ -119,9 +129,13 @@ public class BoundingBox implements Comparable {
             LOGGER.debug("Cannot compute a bounding box for different pages: " + this + " and " + o + "; skipping");
             return this;
         }
-        return fromTwoPoints(o.page, Math.min(this.x, o.x), Math.min(this.y, o.y), Math.max(this.x2, o.x2), Math.max(this.y2, o.y2));
+        return fromTwoPoints(
+                o.page,
+                Math.min(this.x, o.x),
+                Math.min(this.y, o.y),
+                Math.max(this.x2, o.x2),
+                Math.max(this.y2, o.y2));
     }
-
 
     public boolean contains(BoundingBox b) {
         return x <= b.x && y <= b.y && x2 >= b.x2 && y2 >= b.y2;
@@ -132,7 +146,7 @@ public class BoundingBox implements Comparable {
     }
 
     public double verticalDistanceTo(BoundingBox to) {
-        //the current box is completely "bottomer"
+        // the current box is completely "bottomer"
         boolean bottom = to.y2 < y;
         boolean top = y2 < to.y;
 
@@ -148,12 +162,13 @@ public class BoundingBox implements Comparable {
     public double area() {
         return width * height;
     }
+
     public double distanceTo(BoundingBox to) {
         if (this.page != to.page) {
             return 1000 * Math.abs(this.page - to.page);
         }
 
-        //the current box is completely "lefter"
+        // the current box is completely "lefter"
 
         boolean left = x2 < to.x;
         boolean right = to.x2 < x;
@@ -179,11 +194,11 @@ public class BoundingBox implements Comparable {
             return 0;
         }
     }
-	
+
     public BoundingBox boundingBoxIntersection(BoundingBox b) {
-		if (!this.intersect(b))
-			return null;
-		
+        if (!this.intersect(b))
+            return null;
+
         double ax1 = this.x;
         double ax2 = this.x2;
         double ay1 = this.y;
@@ -194,29 +209,29 @@ public class BoundingBox implements Comparable {
         double by1 = b.y;
         double by2 = b.y2;
 
-		double ix1 = 0.0;
-		if (ax1 > bx1)
-			ix1 = ax1;
-		else 
-			ix1 = bx1;
-		
-		double iy1 = 0.0;
-		if (ay1 > by1)
-			iy1 = ay1;
-		else 
-			iy1 = by1;
-		
-		double ix2 = 0.0;
-		if (ax2 > bx2)
-			ix2 = bx2;
-		else 
-			ix2 = ax2;
-		
-		double iy2 = 0.0;
-		if (ay2 > by2)
-			iy2 = by2;
-		else 
-			iy2 = ay2;
+        double ix1 = 0.0;
+        if (ax1 > bx1)
+            ix1 = ax1;
+        else
+            ix1 = bx1;
+
+        double iy1 = 0.0;
+        if (ay1 > by1)
+            iy1 = ay1;
+        else
+            iy1 = by1;
+
+        double ix2 = 0.0;
+        if (ax2 > bx2)
+            ix2 = bx2;
+        else
+            ix2 = ax2;
+
+        double iy2 = 0.0;
+        if (ay2 > by2)
+            iy2 = by2;
+        else
+            iy2 = ay2;
 
         return fromTwoPoints(page, ix1, iy1, ix2, iy2);
     }
@@ -246,36 +261,42 @@ public class BoundingBox implements Comparable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof BoundingBox)) return false;
+        if (this == o)
+            return true;
+        if (!(o instanceof BoundingBox))
+            return false;
 
         BoundingBox that = (BoundingBox) o;
 
-        if (getPage() != that.getPage()) return false;
-        if (Double.compare(that.getX(), getX()) != 0) return false;
-        if (Double.compare(that.getY(), getY()) != 0) return false;
-        if (Double.compare(that.getWidth(), getWidth()) != 0) return false;
+        if (getPage() != that.getPage())
+            return false;
+        if (Double.compare(that.getX(), getX()) != 0)
+            return false;
+        if (Double.compare(that.getY(), getY()) != 0)
+            return false;
+        if (Double.compare(that.getWidth(), getWidth()) != 0)
+            return false;
         return Double.compare(that.getHeight(), getHeight()) == 0;
     }
 
     @Override
     public int compareTo(Object otherBox) {
-        if (this.equals(otherBox)) 
+        if (this.equals(otherBox))
             return 0;
 
-        if (!(otherBox instanceof BoundingBox)) 
+        if (!(otherBox instanceof BoundingBox))
             return -1;
 
         BoundingBox that = (BoundingBox) otherBox;
 
         // the rest of position comparison is using the barycenter of the boxes
-        double thisCenterX = x + (width/2);
-        double thisCenterY = y + (height/2);
-        double otherCenterX = that.x + (that.width/2);
-        double otherCenterY = that.y+ (that.height/2);
+        double thisCenterX = x + (width / 2);
+        double thisCenterY = y + (height / 2);
+        double otherCenterX = that.x + (that.width / 2);
+        double otherCenterY = that.y + (that.height / 2);
         if (Double.compare(thisCenterY, otherCenterY) == 0)
             return Double.compare(thisCenterX, otherCenterX);
-        else 
+        else
             return Double.compare(thisCenterY, otherCenterY);
     }
 

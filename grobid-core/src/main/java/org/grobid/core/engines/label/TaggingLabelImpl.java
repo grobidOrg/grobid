@@ -4,16 +4,15 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.grobid.core.GrobidModel;
-import org.grobid.core.engines.tagging.GenericTaggerUtils;
 
 /**
  * Representing label that can be tagged
  */
 public class TaggingLabelImpl implements TaggingLabel {
-	
-	public static final long serialVersionUID = 1L;
-	
-	private final GrobidModel grobidModel;
+
+    public static final long serialVersionUID = 1L;
+
+    private final GrobidModel grobidModel;
     private final String label;
 
     TaggingLabelImpl(GrobidModel grobidModel, String label) {
@@ -31,29 +30,30 @@ public class TaggingLabelImpl implements TaggingLabel {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
+        if (this == o)
+            return true;
 
-        if (!(o instanceof TaggingLabelImpl)) return false;
+        if (!(o instanceof TaggingLabelImpl))
+            return false;
 
         TaggingLabelImpl that = (TaggingLabelImpl) o;
 
-        return new EqualsBuilder()
-                .append(getGrobidModel(), that.getGrobidModel())
+        return new EqualsBuilder().append(getGrobidModel(), that.getGrobidModel())
                 .append(getLabel(), that.getLabel())
                 .isEquals();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder(17, 37)
-                .append(getGrobidModel())
-                .append(getLabel())
-                .toHashCode();
+        return new HashCodeBuilder(17, 37).append(getGrobidModel()).append(getLabel()).toHashCode();
     }
 
     @Override
     public String getName() {
         final String tmp = getLabel().replaceAll("[<>]", "");
-        return StringUtils.upperCase(getGrobidModel().getModelName() + "_" + tmp.replace(TaggingLabels.GROBID_START_ENTITY_LABEL_PREFIX, ""));
+        return StringUtils.upperCase(
+                getGrobidModel().getModelName()
+                        + "_"
+                        + tmp.replace(TaggingLabels.GROBID_START_ENTITY_LABEL_PREFIX, ""));
     }
 }

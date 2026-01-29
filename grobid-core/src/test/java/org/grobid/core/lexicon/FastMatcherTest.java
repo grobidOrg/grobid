@@ -7,7 +7,6 @@ import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.junit.*;
 
 import java.io.File;
-import java.util.Arrays;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -30,9 +29,7 @@ public class FastMatcherTest {
 
     @Test
     public void testFastMatcher_InitFrom_GROBID_HOME() {
-        new FastMatcher(new File(
-                GrobidProperties.getGrobidHomePath()
-                        + "/lexicon/journals/abbrev_journals.txt"));
+        new FastMatcher(new File(GrobidProperties.getGrobidHomePath() + "/lexicon/journals/abbrev_journals.txt"));
     }
 
     @Test
@@ -84,12 +81,12 @@ public class FastMatcherTest {
         final String input = "I'm walking in The Bronx";
         final List<OffsetPosition> positions = target.matchCharacter(input);
         assertThat(positions, hasSize(2));
-        
-        //The Bronx
+
+        // The Bronx
         assertThat(positions.get(0).start, is(15));
         assertThat(positions.get(0).end, is(24));
 
-        //Bronx
+        // Bronx
         assertThat(positions.get(1).start, is(19));
         assertThat(positions.get(1).end, is(24));
     }
@@ -103,11 +100,11 @@ public class FastMatcherTest {
         final List<OffsetPosition> positions = target.matchCharacter(input);
         assertThat(positions, hasSize(2));
 
-        //The Bronx
+        // The Bronx
         assertThat(positions.get(0).start, is(19));
         assertThat(positions.get(0).end, is(28));
 
-        //Bronx
+        // Bronx
         assertThat(positions.get(1).start, is(23));
         assertThat(positions.get(1).end, is(28));
     }
@@ -138,8 +135,8 @@ public class FastMatcherTest {
         target = new FastMatcher(this.getClass().getResourceAsStream("location.txt"));
 
         final String input = "This is <p>";
-//        final List<OffsetPosition> offsetPositions = target.matchCharacter(Arrays.asList(input.split(" ")));
-        //assertThat(offsetPositions, hasSize(0));
+        // final List<OffsetPosition> offsetPositions = target.matchCharacter(Arrays.asList(input.split(" ")));
+        // assertThat(offsetPositions, hasSize(0));
     }
 
     @Test
@@ -171,7 +168,8 @@ public class FastMatcherTest {
 
     @Test
     public void testMatchList_funder_1Match() throws Exception {
-        target = new FastMatcher(this.getClass().getResourceAsStream("funders.txt"), GrobidAnalyzer.getInstance(), true);
+        target = new FastMatcher(this.getClass().getResourceAsStream("funders.txt"), GrobidAnalyzer.getInstance(),
+                true);
 
         final String input = "Thank you Deutsche Forschungsgemeinschaft for the money.";
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);

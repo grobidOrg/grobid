@@ -21,6 +21,7 @@ public class Page {
     public boolean isEven() {
         return number % 2 == 0;
     }
+
     public void addBlock(Block b) {
         if (blocks == null) {
             blocks = new ArrayList<>();

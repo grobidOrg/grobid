@@ -10,7 +10,7 @@ public class FundingAcknowledgmentParse {
     List<Funding> fundingList = new ArrayList<>();
     List<Person> personList = new ArrayList<>();
     List<Affiliation> affiliations = new ArrayList<>();
-//    List<Pair<OffsetPosition, Element> statementAnnotations = new ArrayList<>();
+    // List<Pair<OffsetPosition, Element> statementAnnotations = new ArrayList<>();
 
     public List<Funding> getFundings() {
         return fundingList;
@@ -36,11 +36,11 @@ public class FundingAcknowledgmentParse {
         this.affiliations = fundingBodies;
     }
 
-//    public List<GrobidAnnotation> getStatementAnnotations() {
-//        return statementAnnotations;
-//    }
+    // public List<GrobidAnnotation> getStatementAnnotations() {
+    // return statementAnnotations;
+    // }
 
-//    public void setStatementAnnotations(List<GrobidAnnotation> statementAnnotations) {
-//        this.statementAnnotations = statementAnnotations;
-//    }
+    // public void setStatementAnnotations(List<GrobidAnnotation> statementAnnotations) {
+    // this.statementAnnotations = statementAnnotations;
+    // }
 }

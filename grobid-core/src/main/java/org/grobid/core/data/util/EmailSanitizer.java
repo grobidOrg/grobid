@@ -73,30 +73,22 @@ public class EmailSanitizer {
             "office",
             "technolog",
             "compute",
-            "elsevier"
-    );
+            "elsevier");
 
+    private static final Pattern[] EMAIL_STRIP_PATTERNS = new Pattern[]{
+            Pattern.compile("^(e\\-mail|email|e\\smail|mail):"), Pattern.compile("[\\r\\n\\t ]"), // newlines, tabs and
+                                                                                                  // spaces
+            Pattern.compile("\\(.*\\)$"),};
 
-    private static final Pattern[] EMAIL_STRIP_PATTERNS = new Pattern[] {
-            Pattern.compile("^(e\\-mail|email|e\\smail|mail):"),
-            Pattern.compile("[\\r\\n\\t ]"), // newlines, tabs and spaces
-            Pattern.compile("\\(.*\\)$"),
-    };
-
-    private static final Pattern[] AT_SYMBOL_REPLACEMENTS = new Pattern[] {
-            Pattern.compile("&#64;"),
-            Pattern.compile("@\\."),
-            Pattern.compile("\\.@"),
-    };
+    private static final Pattern[] AT_SYMBOL_REPLACEMENTS = new Pattern[]{Pattern.compile("&#64;"),
+            Pattern.compile("@\\."), Pattern.compile("\\.@"),};
 
     private static final Pattern EMAIL_SPLITTER_PATTERN = Pattern.compile("(\\sor\\s|,|;|/)");
 
     private static final Pattern AT_SPLITTER = Pattern.compile("@");
 
-
     /**
-     * @param addresses email addresses
-     * @return cleaned addresses
+     * Return cleaned addresses
      */
     public List<String> splitAndClean(List<String> addresses) {
         if (addresses == null) {
@@ -109,52 +101,52 @@ public class EmailSanitizer {
 
             emailAddress = initialReplace(emailAddress);
 
-//            StringTokenizer st = new StringTokenizer(emailAddress, ", ");
-//            List<String> emails = new ArrayList<String>();
-//            while (st.hasMoreTokens()) {
-//                String token = st.nextToken();
-//                if (token.length() > 2) {
-//                    emails.add(token);
-//                }
-//            }
-//
-//            int i = 0;
-//            for (String token : emails) {
-//                if (!token.contains("@")) {
-//                    // the domain information is missing, we are taking the first one of the next tokens
-//                    String newToken = null;
-//                    int j = 0;
-//                    for (String token2 : emails) {
-//                        if (j <= i) {
-//                            j++;
-//                        } else {
-//                            int ind = token2.indexOf("@");
-//                            if (ind != -1) {
-//                                newToken = token + token2.substring(ind, token2.length());
-//                                break;
-//                            }
-//                            j++;
-//                        }
-//                    }
-//                    if (newToken != null) {
-//                        emails.set(i, newToken);
-//                    }
-//                }
-//                i++;
-//            }
-//
+            // StringTokenizer st = new StringTokenizer(emailAddress, ", ");
+            // List<String> emails = new ArrayList<String>();
+            // while (st.hasMoreTokens()) {
+            // String token = st.nextToken();
+            // if (token.length() > 2) {
+            // emails.add(token);
+            // }
+            // }
+            //
+            // int i = 0;
+            // for (String token : emails) {
+            // if (!token.contains("@")) {
+            // // the domain information is missing, we are taking the first one of the next tokens
+            // String newToken = null;
+            // int j = 0;
+            // for (String token2 : emails) {
+            // if (j <= i) {
+            // j++;
+            // } else {
+            // int ind = token2.indexOf("@");
+            // if (ind != -1) {
+            // newToken = token + token2.substring(ind, token2.length());
+            // break;
+            // }
+            // j++;
+            // }
+            // }
+            // if (newToken != null) {
+            // emails.set(i, newToken);
+            // }
+            // }
+            // i++;
+            // }
+            //
 
-
-
-            List<String> splitEmails = Lists.newArrayList(Splitter.on(EMAIL_SPLITTER_PATTERN)
-                    .omitEmptyStrings()
-                    .split(emailAddress.toLowerCase()).iterator());
+            List<String> splitEmails = Lists.newArrayList(
+                    Splitter.on(EMAIL_SPLITTER_PATTERN)
+                            .omitEmptyStrings()
+                            .split(emailAddress.toLowerCase())
+                            .iterator());
 
             if (splitEmails.size() > 1) {
-                // Some emails are of the form jiglesia,cmt@ll.iac.es or jiglesia;cmt@ll.iac.es or bono/caputo/vittorio@mporzio.astro.it
-                List<String> atSeparatedStrings = Lists.newArrayList(Splitter.on(AT_SPLITTER)
-                        .omitEmptyStrings()
-                        .split(emailAddress.toLowerCase()).iterator());
+                // Some emails are of the form jiglesia,cmt@ll.iac.es or jiglesia;cmt@ll.iac.es or
+                // bono/caputo/vittorio@mporzio.astro.it
+                List<String> atSeparatedStrings = Lists.newArrayList(
+                        Splitter.on(AT_SPLITTER).omitEmptyStrings().split(emailAddress.toLowerCase()).iterator());
                 if (atSeparatedStrings.size() == 2) {
                     // Only the last email address has a domain, so append it to the rest of the splitted emails
                     int atIndex = splitEmails.get(splitEmails.size() - 1).indexOf('@');
@@ -234,7 +226,6 @@ public class EmailSanitizer {
         return orig;
     }
 
-
     private static String cleanEmail(String email) throws UnsupportedEncodingException {
         if (email == null) {
             return null;
@@ -260,6 +251,5 @@ public class EmailSanitizer {
         }
         return email;
     }
-
 
 }

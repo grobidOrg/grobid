@@ -10,19 +10,21 @@ import java.util.List;
 public interface SentenceDetector {
     /**
      * Detects sentence boundaries
-     * @param text text to detect sentence boundaries
-     * @return a list of offset positions indicating start and end character 
-     *         position of the recognized sentence in the text
+     * @param text
+     * text to detect sentence boundaries
+     * @return a list of offset positions indicating start and end character position of the recognized sentence in the
+     * text
      */
     public List<OffsetPosition> detect(String text);
 
-
     /**
      * Detects sentence boundaries using a specified language
-     * @param text text to detect sentence boundaries
-     * @param lang language to be used for detecting sentence boundaries
-     * @return a list of offset positions indicating start and end character 
-     *         position of the recognized sentence in the text
+     * @param text
+     * text to detect sentence boundaries
+     * @param lang
+     * language to be used for detecting sentence boundaries
+     * @return a list of offset positions indicating start and end character position of the recognized sentence in the
+     * text
      */
     public List<OffsetPosition> detect(String text, Language lang);
 }
