@@ -1,0 +1,105 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.segmentation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title level="a">Brexit and the devolution dynamics</title>
+      <author>
+        <persName>
+          <forename>Colin T.</forename>
+          <surname>Reid</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2026-01-11T10:00:57.781Z">1/11/2026 11:00:57 AM</date>
+        <title>review</title>
+        <idno type="fileref">10.1177__1461452917693337</idno>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>SAGE Publications</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2017</date>
+      <idno type="DOI">10.1177/1461452917693337</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Colin T. Reid. (2017). Brexit and the devolution dynamics. Environmental Law Review, 19(1), 3-5. DOI: 10.1177/1461452917693337</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-12-19T14:42:43.406103Z" type="extractor">
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">536e79c</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+        <ref target="https://github.com/kermitt2/grobid"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2025-12-19T14:42:43.406103Z" status="draft">
+      <desc>Generated with createTraining API</desc>
+    </change>
+    <change when="2025-12-20T18:56:00.962Z" status="draft" who="#schulze">
+      <desc>Corrections_Final</desc>
+    </change>
+    <change when="2025-12-26T09:21:43.905Z" status="draft" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-06T15:28:16.768Z" status="checked" who="#li">
+      <desc>Validation completed</desc>
+    </change>
+    <change when="2026-01-11T10:21:12.989Z" status="approved" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xml:lang="en">
+			<front>University of Dundee <lb/>Brexit and the devolution dynamics <lb/>Reid, Colin <lb/>Published in: <lb/>Environmental Law Review <lb/>DOI: <lb/>10.1177/1461452917693337 <lb/>Publication date: <lb/>2017 <lb/>Document Version <lb/>Peer reviewed version <lb/>Link to publication in Discovery Research Portal <lb/>Citation for published version (APA): <lb/>Reid, C. (2017). Brexit and the devolution dynamics. Environmental Law Review, 19(1), 3-5. <lb/>https://doi.org/10.1177/1461452917693337 <lb/>General rights <lb/>Copyright and moral rights for the publications made accessible in Discovery Research Portal are retained by the authors and/or other <lb/>copyright owners and it is a condition of accessing publications that users recognise and abide by the legal requirements associated with <lb/>these rights. <lb/>Take down policy <lb/>If you believe that this document breaches copyright please contact us providing details, and we will remove access to the work immediately <lb/>and investigate your claim. <lb/></front>
+    
+    Download date: 19. Dec. 2025 <lb/>
+
+			<front>Brexit and the Devolution Dynamics <lb/>Colin T. Reid 1 <lb/>University of Dundee, UK <lb/></front>
+    
+    <body>A lot has happened since the UK joined the Common Market at the start of 1973. <lb/>&quot;Taking back control&quot; as the UK leaves the EU does not mean going back to how <lb/>things were over 40 years ago, but adapting to a very different situation. One of <lb/>the big differences is the impact of devolution. Of course, this was an established <lb/>part of the background in 1973, with the Northern Ireland Parliament and <lb/>Government having been in operation for 50 years but recently suspended in <lb/>March 1972. Since then, for almost 20 years now, devolution has been very much <lb/>an active part of the governance of the UK, with significant, but significantly <lb/>different, powers devolved to Edinburgh, Cardiff and Belfast. What might this <lb/>mean for environmental law post Brexit? <lb/>Many areas of EU competence are ones which are reserved (to use the Scottish <lb/>terminology) to Westminster. After all, the issues that are regulated to create the <lb/>Single Market within the EU are also regulated to provide a single market within <lb/>the UK, e.g. free movement, aspects of employment law, product standards. But in <lb/>some areas power is devolved and probably the most important of these are <lb/>agriculture, fisheries and the environment. <lb/>At present this means that each of the devolved administrations is responsible for <lb/>policy and law in these areas, but subject to the need to fit within the framework <lb/>established by EU law. As a result there are differences between each nation -e.g. <lb/>the details of agricultural payments, and the structure and scope of the <lb/>environmental protection agencies -but the scope for divergence is limited. Each <lb/>nation can go its own way, but only to a certain extent and anything that the <lb/>devolved authorities try to do in breach of EU law is invalid. <lb/>On withdrawal from the EU this will no longer be the case. For various reasons <lb/>they may not want to, but each devolved nation will be legally free to adopt its own <lb/>radically different law on devolved issues, including environmental matters. <lb/>Scotland, Northern Ireland or Wales could introduce water quality standards that <lb/>are far higher or lower than those that currently apply or confer legal protection on <lb/>a much longer or shorter list of wild animals. <lb/></body>
+
+			<front>1 This paper is based on a talk given at the Brexit and Environmental Law seminar held as part of the Brexit Seminar <lb/>series at the Centre of European Law at King&apos;s College London in January 2017. <lb/></front>
+
+			<body>A further feature of the devolution settlements is that the power to legislate on EU <lb/>matters is shared between the UK and devolved authorities, even in areas of <lb/>devolved responsibility. This means that when it comes to implementing EU law, <lb/>the boundary between devolved and reserved matters can be ignored and it is easy <lb/>for legislation to be made in London to apply on a UK or GB basis. On Brexit, this <lb/>will not be the case and there will have to be rigid recognition of the boundary <lb/>between what can be done by the UK authorities and what is the preserve of the <lb/>devolved ones. This will require not only careful study of the precise terms of the <lb/>different devolution settlements in each case, but also difficult decisions on how <lb/>certain measures are to be categorised since the division between environmental <lb/>regulation (devolved) and say technical standards (reserved) may not be clear and <lb/>neat (as seen in the different context of the litigation 2 over controls on the sale of <lb/>cigarettes). Legislation from London extending beyond just England will still be <lb/>possible, but will require compliance with the formal arrangements for consultation <lb/>and approval with the other nations affected (legislative consent motions, etc.). <lb/>Brexit will remove the constraint that EU law imposes on the development of <lb/>environmental law and policy within the UK, but will serve to highlight the extent <lb/>to which international law imposes limits on freedom to manoeuvre in this area. In <lb/>recent decades the extent of our international law obligations has been masked by <lb/>the fact that the visible source of many rules has been the EU law implementing a <lb/>wider treaty to which the EU and its Member States are parties, rather than the <lb/>treaty provisions themselves. Of course, compared to EU law international <lb/>obligations tend to be expressed in less detailed and strict language, sometimes <lb/>closer to aspirations than precise legal duties. International regimes usually lack <lb/>the strong (if slow) measures provided by the EU structures to enforce compliance <lb/>by states. And, whilst the courts in the UK are bound to ensure that individuals <lb/>can enjoy the rights conferred by EU law, the same does not apply for international <lb/>law. Nevertheless, this extra layer of legal obligation can be significant in <lb/>determining environmental policy. <lb/>A key feature here is that international affairs remain the exclusive preserve of the <lb/>UK government. The devolved administrations have no legal right to make <lb/>international agreements, or even to be involved in their negotiation. This may be <lb/>especially significant as new international trade agreements are made, with the EU <lb/>and others, which may include terms that (intentionally or not) limit the extent to <lb/>which domestic regulation is permitted to interfere with access to markets, e.g. in <lb/></body>
+
+			<listBibl>2 Imperial Tobacco Ltd v Lord Advocate [2012] UKSC 61. <lb/></listBibl>
+
+			<body>relation to genetically modified products where views differ strongly between <lb/>London on the one hand and Cardiff and Edinburgh. <lb/>In terms of what may happen in the future, the different nations are obviously <lb/>starting at (broadly) the same point, but they do have distinct views on <lb/>environmental matters. The strong de-regulatory tone in England is not shared <lb/>elsewhere; Wales has placed the sustainable development principle at the heart of <lb/>government; Scotland has particular focus on renewable energy; and in Northern <lb/>Ireland the environmental initiative of the Renewable Heat Initiative has forced an <lb/>election rather than a reduction in carbon emissions. The freedom to escape <lb/>aspects of EU regulation may be seized in different ways by different nations, e.g. <lb/>adapting the definition of &quot;waste&quot; to ensure that it does not provide obstacles to the <lb/>Zero Waste policy in Scotland, and the responses to new problems will vary. Even <lb/>without conscious policy differences, though, the law in each country will <lb/>gradually drift apart as a consequence of different administrative structures etc. <lb/>There is thus a risk that the environmental benefits of integration and co-ordination <lb/>achieved thorough membership of the EU might unravel. <lb/>Nevertheless, there will be strong reasons for continuing some co-ordination and <lb/>cooperation. The cross-border river basins are one obvious example (and already <lb/>the subject of substantial legislative provision between Scotland and England), but <lb/>commercial arguments, based on the efficiency of standardisation and on securing <lb/>access to markets, are likely to be more powerful. But mechanisms for this must <lb/>be established, at political, administrative and technical levels. Within the UK, <lb/>does the Joint Nature Conservation Committee provide a model? How far will the <lb/>UK and devolved agencies continue to co-operate with their EU counterparts? A <lb/>major issue here is likely to be capacity. Each nation will formally have full <lb/>responsibility for all environmental matters, but there is not the capacity in either <lb/>scientific expertise or civil service resources actually to develop wholly <lb/>independent policy and law across the whole spectrum of environmental matters. <lb/>Responses to this vary from doing nothing in some areas, and allowing the law to <lb/>stagnate and wither, to slavishly following EU developments simply because they <lb/>provide one way of dealing with otherwise unmanageable issues. <lb/>There may also be consequences for the devolution settlements themselves. The <lb/>Scottish Government&apos;s paper Scotland&apos;s Place in Europe 3 sets out a clear objective <lb/>of remaining within the Single Market and Customs Union and proposes a <lb/>differentiated position for Scotland to enable it to maintain close ties with the EU <lb/></body>
+
+			<listBibl>3 Scottish Government, Scotland&apos;s Place in Europe (December 2016). <lb/></listBibl>
+
+			<body>(including meeting the rules for the Single Market) even if the rest of the UK <lb/>decides not to. In terms of Scotland&apos;s legal powers, it calls not only for all powers <lb/>within devolved areas to come to the Scottish authorities, but also for enhanced <lb/>devolution so that some reserved areas currently dominated by EU law, such as <lb/>health and safety, can be handled in Scotland and for mechanisms to secure <lb/>international agreements with other countries in areas of devolved competence, <lb/>whether directly or through the UK Government. Moreover, London&apos;s handling of <lb/>the devolved administrations&apos; interests in negotiating Brexit and any subsequent <lb/>trade and other treaties, and in untangling the law across the UK from its EU <lb/>inheritance, will undoubtedly place pressure on the relationships between the <lb/>different layers of government. <lb/>At the time of writing there seems to be an increasing divergence between the <lb/>views of the Scottish and UK governments and the constitutional issues may <lb/>become more significant, with talk of a second independence referendum. For the <lb/>environment, though, it is likely to be the less dramatic issues that make the <lb/>immediate difference in practice. How and through which authorities are <lb/>procedures that currently involve EU bodies going to be operated post Brexit? <lb/>How quickly will the law in each nation get out of step as the authorities respond <lb/>separately to external developments and the continuing drive for &quot;better <lb/>regulation&quot;? Will robust mechanisms to ensure continuing cooperation be <lb/>established, and if so, will the focus be on environmental or commercial priorities? <lb/>One wonders where the environment sits on the &quot;to do&quot; list of the Prime Minister <lb/>and Department for Exiting the EU. </body>
+
+
+	</text>
+
+</TEI>

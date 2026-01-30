@@ -1,0 +1,151 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.segmentation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title level="a">FORM OF LEGAL PROTECTION AGAINST VICTIMS OF PHYSICAL VIOLENCE IN HOUSEHOLD IN THE CONCEPT OF CRIMINAL LAW DECISION ANALYSIS NUMBER 2192/Pid.Sus/2020/PN.Mdn</title>
+      <author>
+        <persName>
+          <forename/>
+          <surname>Meliana Fransisca Sembiring</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename/>
+          <surname>Rizal Jackson Hutasoit</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename/>
+          <surname>Rizki</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2026-01-30T09:32:27.872Z">30/01/2026 10:32:27</date>
+        <title>finalized</title>
+        <idno type="fileref">10.56301__awl.v4i2.382</idno>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Sekolah Tinggi Ilmu Hukum Awang Long</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2022</date>
+      <idno type="DOI">10.56301/awl.v4i2.382</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>None Meliana Fransisca Sembiring, None Rizal Jackson Hutasoit, None Rizki. (2022). FORM OF LEGAL PROTECTION AGAINST VICTIMS OF PHYSICAL VIOLENCE IN HOUSEHOLD IN THE CONCEPT OF CRIMINAL LAW DECISION ANALYSIS NUMBER 2192/Pid.Sus/2020/PN.Mdn. Awang Long Law Review, 4(2), 303-308. DOI: 10.56301/awl.v4i2.382</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-12-19T14:48:14.835837Z" type="extractor">
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">536e79c</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+        <ref target="https://github.com/kermitt2/grobid"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2025-12-19T14:48:14.835837Z" status="draft">
+      <desc>Generated with createTraining API</desc>
+    </change>
+    <change when="2025-12-23T13:36:41.473Z" status="draft" who="#schulze">
+      <desc>Corrections_1</desc>
+    </change>
+    <change when="2025-12-23T14:01:17.380Z" status="draft" who="#schulze">
+      <desc>Corrections_Done</desc>
+    </change>
+    <change when="2025-12-28T09:22:00.931Z" status="draft" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-06T15:30:50.669Z" status="checked" who="#li">
+      <desc>Validation completed</desc>
+    </change>
+    <change when="2026-01-11T09:59:23.373Z" status="approved" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-30T10:02:27.442Z" status="candidate" who="#lfoppiano">
+      <desc>Final version</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xml:lang="en">
+			<front>Awang Long Law Review, Vol. 4, No. 2, May 2022: 303-308 <lb/>303 <lb/>FORM OF LEGAL PROTECTION AGAINST VICTIMS OF PHYSICAL <lb/>VIOLENCE IN HOUSEHOLD IN THE CONCEPT OF CRIMINAL LAW <lb/>DECISION ANALYSIS NUMBER 2192/Pid.Sus/2020/PN.Mdn <lb/>Meliana Fransisca Sembiring 1 , Rizal Jackson Hutasoit 2 , Rizki 3 <lb/>Fakultas hukum,Universitas prima Indonesia <lb/>melianasembiring7@gmail.com 1 , rizaljacksonhutasoit1@gmail.com 2 , rizki@unprimdn.ac.id 3 <lb/>Received 5 March 2022 • Revised 30 Apr 2022 • Accepted 20 May 2022 <lb/>Abstract <lb/>For Indonesian people, household problems are not to be announced, so there are still many <lb/>Indonesians who are reluctant to report cases of domestic violence (KDRT). People prefer to solve <lb/>these problems in a familial manner. The creation of PKDRT Law Number 23 in 2004 by the <lb/>Government did not make domestic violence cases shrink. Data from Komnas Perempuan shows that <lb/>domestic violence cases during the pandemic increased dramatically, namely there were 319 cases of <lb/>violence reported, 2/3 of which 213 cases were domestic violence cases, or 19% (2,056 cases) were <lb/>cases of psychic violence. Therefore, in the future this regulation can be an instrument that can reduce <lb/>the percentage of crime in the household. <lb/>Keywords: psychic, violence, domestic violence <lb/>Copyright @ 2018 Authors. This is an open access article distributed under the terms of the Creative Commons Attribution-<lb/>NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc/4.0/), which permits unrestricted non-<lb/>commercial use, distribution, and reproduction in any medium, provided the original author and source are properly cited. <lb/></front>
+
+			<note place="headnote">Awang Long Law Review, Vol. 4, No. 2, May 2022: 303-308 <lb/></note>
+
+			<page>304 <lb/></page>
+
+			<body>INTRODUCTION <lb/>The household is not just a residence, but as a place that is able to provide comfort, and can provide <lb/>peace for its members. Households formed through marriage are expected to create harmony. <lb/>However, often it is not harmony that is created in the household but acts of violence that can injure its <lb/>members. Violence is accepted not only in physical form but in psychological and sexual form. The <lb/>occurrence of violence is due to the asymmetric pattern of power in the household. Relationships in the <lb/>household arise from a sense of trust, when the emergence of domestic violence actually stems from <lb/>one party being too dominant and destroying the trust of one of them. 1 <lb/>Data from Komnas Perempuan shows that cases of domestic violence during the pandemic have <lb/>soared higher than before. There are 319 registered cases, 2/3 of which are 213 cases of domestic <lb/>violence, or 19% (2,056 cases) are cases of psychological violence. 2 The news about cases of domestic <lb/>violence in recent years has deeply disturbed the public. One of the psychological violence crimes, <lb/>especially those that occurred in North Sumatra in the Medan District Court Decision <lb/>No.2192/Pid.Sus/2020/PN.Mdn regarding the offense of Psychic Violence by Rizky Kevin Sitompul&apos;s <lb/>brother who has been proven to have committed psychological violence in the household against his <lb/>spouse (wife). ) alone. Thus, violating Law no. 23 of 2004 Article 45 paragraph 1 concerning the <lb/>Elimination of Domestic Violence (hereinafter referred to as the PKDRT Law). Therefore, the Defendant <lb/>was sentenced to 1 year imprisonment. <lb/>METHOD <lb/>The form of the study carried out is the Normative Juridical Legal Study, which is a centered study <lb/>of the teachings or principles of Positive Law in Indonesia, where the unification of material is carried <lb/>out by means of a literature study, where by investigating books that may be used to support the <lb/>codification of journals, we. Bahder Johan Nasution stated: &quot;Something that is very essential in <lb/>Normative Legal Studies research is how the reviewer specifically organizes and details the problems <lb/>in his study and also chooses methods in determining his tactics and formulating his philosophy.&quot; 3 <lb/>Source of Legal Material Primary Legal Materials based on the legal system related to the problems to <lb/>be analyzed, namely the Criminal Code, Law no. 23/2004 regarding PKDRT and PP No. 4/2006 <lb/>regarding the Implementation and Cooperation of Domestic Violence Recovery, Secondary Legal <lb/>Materials are printed materials because they contain the basic principles of Legal Science and the <lb/>previous understanding of capable intellectuals . 4 This study utilizes printed editions, study results, <lb/>published materials, discourses and essays. Tertiary Legal Material, in the form of an explanation of <lb/>the letters a and b, namely in the form of the KBBI and the Legal Dictionary.Using the <lb/>literature/bibliography method, namely the search for library materials. The data analysis used is <lb/>descriptive qualitative which describes the problem and the description in a transparent and integral <lb/>way based on the obtained legal rules. After the data is analyzed, conclusions will be drawn deductively. <lb/>DISCUSSION <lb/>The Concept of Protection for Victims of Psychological Violence in the Household. <lb/>Legal protection is an important thing for a legal state like Indonesia. Legal protection itself is a <lb/>legal effort that should be carried out by the authorities to realize physical and mental guarantees <lb/>against the dangers given by other parties. 5 <lb/>The form of legal action against victims of domestic violence is the ratification of the PKDRT <lb/>Law Number 23 in 2004 by the Government. The legal protection is contained in UUPKDRT No.23 of <lb/>2004 Article 10. <lb/>Not only providing legal protection, the government also provides guarantees for recovery for <lb/>victims of domestic violence. Recovery for victims of domestic violence is very important because it can <lb/>cause suffering both physically and psychologically. Victims of domestic violence are very vulnerable <lb/>to trauma caused by the violence they receive, where this trauma can affect their survival. Recovery for <lb/></body>
+
+			<front>1 Melisa, Juridical Review of Criminal Acts of Domestic Violence Perpetrated by Husbands Against Wives (Case <lb/>Study Decision No. 17/Pid.Sus/2015/PN.Mrs), Hasanudin University Makassar, Makassar, 2016, p. 3. <lb/>2 Sali Susiana, Domestic Violence During the Covid-19 Pandemic, A Brief Study of Actual and Strategic Issues, Vol. <lb/>XII, No. 24/II/Puslit/December/2020, p.14. <lb/>8 Bahder Johan Nasution, Legal Research Methods, Bandung: CV. Mandar Maju, 2008, p.88. <lb/></front>
+              
+              <listBibl>4 Peter Mahmud Marzuki, Legal Research, Jakarta: Kencana Penada Media Group, 2011, p.142. <lb/>5 CST Kansil, Introduction to Indonesian Law and Legal Administration, Jakarta: Balai Pustaka, 1989, p.102. <lb/></listBibl>
+
+			<note place="headnote">Awang Long Law Review, Vol. 4, No. 2, May 2022: 303-308 <lb/></note>
+
+			<page>305 <lb/></page>
+
+			<body>victims of domestic violence in the PKDRT Law No. 23/2004 Article 39. Rehabilitation of a person by <lb/>receiving services from medical professionals, social workers, mentoring and spiritual counselors. <lb/>Article 17 of the PKDRT Law contains protection for victims of violence from the police who <lb/>collaborate with medical, social workers, jenang and spiritual counselors on duty to assist. <lb/>Victims can report domestic violence or allow blood relatives and other parties to make a <lb/>complaint about what they are experiencing to the appropriate person. Within a day and a night after <lb/>receiving complaints and information about domestic violence, the police must swiftly provide a sense <lb/>of security (guard) to the victim. Guard is given a maximum of seven days after the victim is handled <lb/>and the police must request a letter of protection from the court. <lb/>Healing Efforts Against Victims of Psychological Violence in the Household <lb/>Healing for those who experience domestic violence is regulated in PP No. 4/2006 Article 1 <lb/>concerning the Implementation and Cooperation in the Recovery of Victims of Domestic Violence. 6 <lb/>The implementation of rehabilitation for victims of domestic violence that can be carried out by <lb/>the government or community organizations can be carried out by providing facilities as referred to in <lb/>PP no. 4/2006 Article 2 regarding the Implementation and Cooperation in the Recovery of Victims of <lb/>Domestic Violence, including: <lb/>a. Private service place at the security unit level; <lb/>b. competent and trained staff; <lb/>c. service units as well as shelters; <lb/>d. things that support the rehabilitation of victims. 7 <lb/>The cooperation in the rehabilitation of victims of domestic violence is expected to immediately <lb/>restore the victim&apos;s condition to be better physically and psychologically. It is hoped that the services <lb/>provided must be as much as possible by immediately taking action when receiving reports/complaints <lb/>from victims of domestic violence. <lb/>Barriers to the Implementation of Protection for Victims of Domestic Violence <lb/>Indonesian people view household problems as a disgrace that should not be exposed. This <lb/>has resulted in many Indonesians being embarrassed to report cases of domestic violence. People <lb/>prefer to solve household problems including domestic violence in a family way. Even though there are <lb/>regulations that regulate domestic violence, domestic violence cases in Indonesia are still common. <lb/>Investigation is one of the obstacles in handling domestic violence. People think that it is a <lb/>personal problem or a family problem, so that outsiders, including the police, should not interfere. <lb/>Women are weak creatures and have a soft conscience and do not have the heart to report perpetrators <lb/>of domestic violence to the authorities. 8 <lb/>The government&apos;s efforts to overcome the many cases of domestic violence can be seen from <lb/>the PKDRT Law No.23/2004 and PP No. 4/2006 regarding the Implementation and Cooperation for the <lb/>Recovery of Victims of Domestic Violence, so it can be said that the State is very serious in overcoming <lb/>this problem. However, in its implementation there are still many obstacles, such as victims who get <lb/>domestic violence are reluctant to make a complaint to the authorities because it is a disgrace. Distrust <lb/>of the Judiciary Institution that handles problems and the long-winded apparatus makes victims <lb/>reluctant to make reports. 9 <lb/>Analysis of Judge&apos;s Decision No. 2192/Pid.Sus/2020/PN.Mdn Against Psychic Violence in the <lb/>Domestic Sphere <lb/>Position Case <lb/>The Defendant Rizky Kevin Toman Sitompul, Born in Belawan, Age/Date of Birth 31 Years/05-<lb/>03-1988, Male Jantina, Indonesian Citizen, Address for Defense of Villa Permata Indah Complex Block <lb/>G No. 16, Marindal Village, Patumbak District, Medan, Catholic religion, BUMN employee jobs. <lb/>Tuesday the 04th of the second month of 2020 at approximately 23.30 WIB at Jl. Market III <lb/>Krakatoa No. 11 District of Medan Timur, the Defendant as the husband to the victim witness Rosa <lb/>Juliana Sinaga as the wife has committed domestic violence, especially psychological violence. <lb/>Starting from the Defendant married the Witness Victim since 2012 and was blessed with 2 <lb/>(two) children and their marriage is still harmonious. However, in August 2014 the Victim&apos;s Witness read <lb/>the Defendant&apos;s email chat with another woman and since October 2019 the Defendant has often not <lb/></body>
+
+			<listBibl>6 PP Number 4/2006 <lb/>7 Ibid. <lb/>8 MoertiHadiatiSoeroso, Domestic Violence, Cet.1, Jakarta: SinarGrafika, 2010, p. 135. <lb/>9 Nova Selvia Ginting, Legal Protection Against Victims of Psychic Violence in the Domestic Sphere, Thesis, Medan, <lb/>2019. <lb/></listBibl>
+
+			<note place="headnote">Awang Long Law Review, Vol. 4, No. 2, May 2022: 303-308 <lb/></note>
+
+			<page>306 <lb/></page>
+
+			<body>returned home for no reason and when the Victim&apos;s Witness asked the Defendant, the Defendant replied <lb/>that he was sleeping in his friend&apos;s boarding house and the Victim&apos;s Witness was suspicious of the <lb/>Defendant. <lb/>Then in December 2019 the Defendant left the house where he lived with the Witness Victim <lb/>and their children and the Defendant no longer gave physical and spiritual attention to his children and <lb/>wife. <lb/>The Victim&apos;s Witness knew that the Defendant lived in the house of another woman named <lb/>Anita Chairani on Jl Pasar III Krakatau No. 11 District of East Medan. Then on Tuesday 04 February <lb/>2020 at approximately 23.30 WIB the Victim&apos;s Witness and his family visited Anita Chairani&apos;s house and <lb/>when the Victim&apos;s Witness knocked on the door of the house, it was the Defendant who opened it, so <lb/>that the Victim&apos;s Witness was ashamed and helpless. <lb/>Since then, the Victim&apos;s Witness is often daydreaming and pensive. Results of Visum Et <lb/>Repertum Psychiatrium No: R/VER Psi/13/I/2020/RS. Bhayangkara dated February 24, 2020, which <lb/>was signed by Superida Ginting (a psychiatric specialist) who conducted a psychiatric examination of <lb/>the Victim&apos;s Witness, stated that based on observations and interviews, the subject had mild to <lb/>moderate depression. <lb/>Judge&apos;s Consideration <lb/>The main aspect in a decision that is just and legally certain and contains utility for the parties, <lb/>so that the judge&apos;s decision / verdict must be proper, accurate and observant. 10 <lb/>The Panel of Judges by observing the legal arguments above directly determined the first <lb/>Alternative indictment as regulated in Law No. 23/2004 Article 45 paragraph 1 regarding PKDRT which <lb/>contains elements of each party, has carried out actions that damage a person&apos;s psyche in the <lb/>household. <lb/>Case Analysis No. 2192/Pid.Sus/2020/PN.Mdn <lb/>The Panel of Judges&apos; analysis of the above elements includes: <lb/>1. In essence, the element of &quot;Everyone&quot; is focused on legal subjects. Everyone can be made a legal <lb/>subject and can be made a defendant. Therefore, &quot;Everyone&quot; is a man named the Defendant Rizky <lb/>Kevin Toman Sitompul. Then this element is fulfilled. <lb/>2. Elemental analysis of &quot;Those Who Do Mental/Psychic Violence&quot; <lb/>Based on the PKDRT Law No. 23/2004 Article 7, that psychological crimes according to Article 5b <lb/>are actions that cause anxiety, insecurity, loss of ability to do something and experience <lb/>psychological problems. <lb/>Based on the evidence presented in the trial such as the Defendant&apos;s Statement, witnesses and <lb/>evidence of Visum eR No.R/VERPsi/13/2020/Rs.Bhayangkara on February 24, 2020 signed by <lb/>Superida Ginting (a psychiatric specialist). Judging from these elements, it was found that the legal <lb/>facts were revealed in the trial which were described in the case of the position above. <lb/>As described above, it resulted in the victim&apos;s witness experiencing mild and moderate depression, <lb/>according to the panel of judges, an act of the Defendant caused psychological violence against <lb/>the Victim&apos;s Witness. Then these elements have been fulfilled. <lb/>3. Analysis of the elements &quot;Within the Scope of the Household&quot; Law No.23/2004 Article 2 paragraph <lb/>1 in the form of: <lb/>a. Father, Mother, and their descendants; <lb/>b. The parties related to the points above. <lb/>c. The party who helps the household to live together. <lb/>Based on all of the above elements, the Panel agrees with the juridical analysis of the Public <lb/>Prosecutor, which strongly requests that the Defendant be found guilty according to the second <lb/>indictment. On the other hand, the Tribunal did not agree with the Defendant&apos;s Legal Advisor that the <lb/>Defendant be acquitted of all charges except in relation to the request for leniency for the Defendant. <lb/>The thing that burdened the Defendant was the Defendant&apos;s behavior causing the Victim&apos;s <lb/>Witness to experience mild to moderate depression. The thing that relieves the Defendant is admitting <lb/>his actions before the court and also having a job as a BUMN employee. If the Defendant is serving a <lb/>sentence for a long period of time, it will affect the work status of the Defendant and the Defendant <lb/>regrets and does not repeat it again. <lb/></body>
+
+			<listBibl>10 Devi Febriyani (et al), &quot;Juridical Review of Judges&apos; Decisions on Women as Victims of Criminal Acts of Domestic <lb/>Violence (Study of Decision No. 6/Pid.Sus/2017/PN.Pwd) &quot; , Diponegoro Law Journal Vol. 8 No. 3, 2019, p. <lb/>1883-1884. <lb/></listBibl>
+
+			<note place="headnote">Awang Long Law Review, Vol. 4, No. 2, May 2022: 303-308 <lb/></note>
+
+			<page>307 <lb/></page>
+
+			<body>Observing Law No.23/2004 concerning Domestic Violence Article 45 paragraph 1 and Law <lb/>No.8 of 1981 concerning Criminal Procedure Code and other related laws. Determined that the <lb/>Defendant, Rizky Kevin Toman Sitompul, was found guilty of the crime of Psychological Violence in the <lb/>Household as charged with a prison term of 1 (one) year deducted from the time of arrest and detention <lb/>that had already been passed and a case fee of five thousand rupiah. <lb/>Justice and Legal Certainty cannot be separated from the way of analyzing judge decisions in <lb/>Indonesia. To achieve order in the life of each individual in society is one of the main functions of law. <lb/>Gustav Radbruch argues about the term &quot;Three Basic Legal Ideas&quot; namely Benefits, Justice, and Legal <lb/>Certainty&quot;. 11 Achmad Ali also stated that the three elements above are the Purpose of the Law. <lb/>12 Although in its application there is a clash between the three, the capacity of the judge is really needed <lb/>in implementing a just law that is believed by the judge. <lb/>According to Rasbruch, when implementing the three, the above legal elements must use a <lb/>priority basis, namely justice, expediency and legal certainty. 13 <lb/>The defendant in this case was indicted by the public prosecutor in the form of alternative <lb/>charges as follows: <lb/>a) First: violating Article 76 letter b of the Republic of Indonesia Law No. 35/2014 Changes <lb/>to Law no. 23/2002 regarding Child Protection. <lb/>b) Alternative/second: Violating the RI Law No.23/2004 Article 45 paragraph 1 in <lb/>conjunction with Article 5b regarding PKDRT. <lb/>Through the above legal facts, the Panel of Judges chose to consider the second <lb/>alternative indictment contained in the PKDRT Law no. 23/2004 Article 45 paragraph 1 <lb/>whose elements are &quot;Each party&quot;, &quot;Those who carry out Psychological Crimes&quot; and &quot;Within <lb/>the Scope of the Household&quot;. <lb/>The Defendant&apos;s actions are categorized as psychological crimes in the PKDRT Law <lb/>No.23/2004 Article 45 paragraph (1). In accordance with the demands of the Public Prosecutor, the <lb/>Defendant is proven guilty of committing a crime of psychological violence in the household in <lb/>accordance with Article 5b, the sentence is imprisonment for a maximum of 3 years and the maximum <lb/>compensation is nine million rupiah. <lb/>The judge&apos;s consideration stated that the alternative/second charge could be proven based on <lb/>the explanation of the above legal facts. So that the defendant was sentenced to one year of subsidiary <lb/>imprisonment during the arrest and detention which the defendant had already passed and continued <lb/>to carry out the confinement sentence. <lb/>The loosening aspects of the Defendant were that the Defendant was willing to admit his actions <lb/>openly at trial. In addition, the Defendant has a job as an employee in one of the BUMNs and if the <lb/>Defendant is serving a sentence for a long period of time it will affect the work status of the Defendant <lb/>and the Defendant also regrets his actions. Meanwhile, the aggravating aspect is that the Defendant&apos;s <lb/>actions caused the Victim&apos;s Witness to experience mild to moderate depression. <lb/>The author is of the opinion that the above considerations are important points that can be <lb/>taken into consideration both in terms of mitigating and incriminating the Defendant. The consequence <lb/>of the defendant&apos;s actions was disharmony. The consideration of the Panel of Judges was appropriate <lb/>because it considered rationally and logically in accordance with the second indictment led by the Public <lb/>Prosecutor. In addition, in Gunawan&apos;s research, it is said that giving criminal sanctions to perpetrators <lb/>of domestic violence is a form of respect for Human Rights, Justice, Gender Equality, Protection of <lb/>Victims in the sense that every party is equal before the law. 14 The author hopes that the defendant will <lb/>not repeat his actions in the future. <lb/>CONCLUSION <lb/>The form of legal protection for victims of domestic violence is contained in Law no. 23 of 2004 <lb/>concerning PKDRT. Meanwhile, the regulation regarding the recovery of victims of domestic violence, <lb/>especially psychological violence, is regulated by PP No. 4 of 2006 concerning the Implementation and <lb/>Cooperation in the Recovery of Victims of Domestic Violence. <lb/>Analysis of decision no. 2192/Pid.Sus/2020/PN.Mdn The Panel of Judges has considered <lb/>many things, starting from the demands of the Public Prosecutor, the facts at trial, evidence, the articles <lb/>indicted can be proven and mitigating and burdensome circumstances. The author is of the opinion that <lb/></body>
+
+			<listBibl>11 Ojak Nainggolan, Introduction to Indonesian Law Science Media &amp; Law Policy Center, Medan, 2005, p.24. <lb/>12 Ibid <lb/>13 Ibid <lb/>14 Steven Gunawan, &quot;A Juridical Review of Women as Victims of Domestic Violence Judging from Law No.23 of <lb/>2004 concerning Domestic Violence, University of Surabaya Student Scientific Journal Vol. 4 No.2, 2015, p. <lb/>11. <lb/></listBibl>
+
+			<note place="headnote">Awang Long Law Review, Vol. 4, No. 2, May 2022: 303-308 <lb/></note>
+
+			<page>308 <lb/></page>
+
+			<body>this decision is appropriate because it has considered rationally and logically in accordance with the <lb/>Alternative Charges led by the Public Prosecutor. <lb/></body>
+    
+    <listBibl>REFERENCES <lb/>Book <lb/>Kansil, C. (1989). Introduction to Indonesian Law and Legal Administration. Jakarta: Balai Pustaka. <lb/>Marzuki, PM (2011). Legal Research. Jakarta: Kencana Penada Media Group. <lb/>Nainggolan, O. (2005). Introduction to Legal Studies. Medan: Indonesia Media &amp; Law Policy Center. <lb/>Nasution, BJ (2008). Legal Research Methods. Bandung: CV. Forward Mandar. <lb/>Santoso, T. (2002). Violence Theory. Jakarta: Ghalia Indonesia. <lb/>Soerjonosoekanto, M. (2006). Introduction to Legal Research. Jakarta: UI-Perss. <lb/>Soeroso, MH (2010). Domestic Violence (KDRT), First Printing. Jakarta: Sinar Graphic. <lb/>Syahrani, R. (1999). Summary of the Essence of Legal Studies. Bandung: Image Publisher Aditya Bakti. <lb/>Wahid, A., &amp; Irfan, M. (2001). Protection of Victims of Sexual Violence. Bandung: Refika Aditama. <lb/>Journal <lb/>Febriyani, D., Rochaeti, N., &amp; Wijaningsih, D. (2019). Juridical Review of Judges&apos; Decisions on Women <lb/>as Victims of Criminal Acts of Domestic Violence (Study of Decision No. <lb/>6/Pid.Sus/2017/PN.Pwd). Diponegoro Law Journal , 1883-1884. <lb/>Gunawan, S. (2015). Juridical Review of Women as Victims of Domestic Violence Judging from Law <lb/>Number 23 of 2004 concerning the Elimination of Domestic Violence. University of Surabaya <lb/>Student Scientific Journal , 11. <lb/>Susiana, S. (2020). Domestic Violence During the Covid-19 Pandemic. A Brief Study of Actual and <lb/>Strategic Issues ,14. <lb/>Essay <lb/>Ginting, NS (2019). Legal Protection Against Victims of Psychic Violence in the Domestic Sphere. <lb/>Medan: University of North Sumatra. <lb/>Melissa. (2016). Juridical Review of Criminal Acts of Domestic Violence Perpetrated by Husbands <lb/>Against Wives (Case Study Decision No. 17/Pid.Sus/2015/PN.Mrs). Makassar: Hasanudin <lb/>University. <lb/>Legislation <lb/>Law Number 23 of 2004 concerning Elimination of Domestic Violence <lb/>Government Regulation Number 4 of 2006 concerning Implementation and Cooperation in Recovery of <lb/>Victims of Domestic Violence </listBibl>
+
+
+	</text>
+
+</TEI>

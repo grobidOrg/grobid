@@ -1,0 +1,133 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.segmentation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title level="a">Guest Editorial: The Commission&apos;s White Paper on Governance in the EU - A Symptom of Crisis?</title>
+      <author>
+        <persName>
+          <forename>Christian</forename>
+          <surname>Joerges</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2026-01-25T11:01:38.765Z">1/25/2026 12:01:38 PM</date>
+        <title>review</title>
+        <idno type="fileref">10.1023__a%3A1015833415224</idno>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Kluwer Law International BV</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2002</date>
+      <idno type="DOI">10.1023/a:1015833415224</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Christian Joerges. (2002). Guest Editorial: The Commission&apos;s White Paper on Governance in the EU - A Symptom of Crisis?. Common Market Law Review, 39(Issue 3), 441-445. DOI: 10.1023/a:1015833415224</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-01-02T12:31:56.294218Z" type="extractor">
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">536e79c</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+        <ref target="https://github.com/kermitt2/grobid"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-01-02T12:31:56.294218Z" status="draft">
+      <desc>Generated with createTraining API</desc>
+    </change>
+    <change when="2026-01-08T09:32:15.472Z" status="draft" who="#li">
+      <desc>First pass completed</desc>
+    </change>
+    <change when="2026-01-11T21:16:47.823Z" status="draft" who="#schulze">
+      <desc>Judith second pass</desc>
+    </change>
+    <change when="2026-01-11T21:21:47.158Z" status="draft" who="#schulze">
+      <desc>Judith second pass completed</desc>
+    </change>
+    <change when="2026-01-14T09:10:28.088Z" status="checked" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-25T11:16:09.821Z" status="approved" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-30T07:26:01.641Z" status="candidate" who="#lfoppiano">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xml:lang="en">
+			<front>Common Market Law Review 39: 441-445, 2002. <lb/>c 2002 Kluwer Law International. Printed in the Netherlands. <lb/>GUEST EDITORIAL: THE COMMISSION&apos;S WHITE PAPER ON <lb/>GOVERNANCE IN THE EU -A SYMPTOM OF CRISIS? <lb/></front>
+
+			<body>In his speech of 15 February 2000 delivered at Strasbourg to the European <lb/>Parliament, 1 President Prodi announced far-reaching and ambitious reforms <lb/>of European governance. It was a message spoken in a new vocabulary, with <lb/>a fresh reform agenda and a novel working method. He proposed an original <lb/>division of labour between political actors and civil society, and a more <lb/>democratic form of partnership between layers of governance in Europe. It <lb/>was a package of innovation launched strategically into a legally undefined <lb/>space that is located somewhere between administrative 2 and constitutional <lb/>reform. 3 <lb/>The rhetoric of the speech was followed up by the Commission. A &quot;Gov-<lb/>ernance Team&quot;, composed of Commission officials under the leadership of <lb/>Jérôme Vignon, the former director of the Forward Studies Unit, was entrus-<lb/>ted with elaborating the reform agenda. 4 It cooperated with eminent aca-<lb/>demics and experts. A website disseminated the work to the outside world. 5 <lb/>Ancillary research and an assortment of seminars were funded. One particu-<lb/>larly noteworthy result was the production and generously wide distribution <lb/>of a remarkable series of essays on core issues of the governance debate. 6 <lb/>Reformers and sympathising outside observers, eager to ditch the image of <lb/>technocratic, bureaucratic &quot;Brussels&quot;, welcomed these activities and efforts <lb/>as a modernization strategy, which would help to cure the evils afflicting the <lb/>administrative and institutional reform of the EU. <lb/>But these self-same events were also bound to nurture doubt and scepticism, <lb/>both within the European institutions and in the outside world. Was this then <lb/></body>
+
+			<listBibl>1. europa.eu.int/rapid/start/cgi/guesten.ksh?p action.gettxt=gt&amp;doc=SPEECH/00/41|0| <lb/>AGED&amp;lg=EN. <lb/>2. Cf. Reforming the Commission -A White Paper, COM(2000) 200 final of 1 March <lb/>2000; cf. europa.eu.int/comm/reform/index en.htm. <lb/>3. Which was set in motion by the EU Charter of Fundamental Rights, solemnly proclaimed <lb/>at Nice on 7 Dec. 2000 (O.J. 2000, C 346/1 of 18 Dec. 2000), followed by the Laeken <lb/>Conference of 14-15 Dec. 2001 with its concluding declaration on the future of the Union <lb/>and the setting up of a constitutional convention, which took up its work in March 2002 <lb/>(europeanconvention.eu.int/plen sess.asp?lang=EN). <lb/>4. Enhancing democracy in the European Union. Working Programme, SEC (200) 1547, <lb/>7 final of 11.10.2000; europa.eu.int/comm/governance/work/en.pdf. <lb/>5. europa.eu.int/comm/governance/index en.htm. <lb/>6. De Schutter, Lebessis and Paterson (Eds.), Governance in the European Union, Luxem-<lb/>bourg, 2001. <lb/></listBibl>
+
+			<page>442 </page>
+    
+    <note place="headnote">Guest editorial <lb/>CML Rev. 2002 <lb/></note>
+    
+    <body>merely a re-active project, that was doomed to fail, since it was incapable of <lb/>grappling with the complexities of Commission machinery, it rode roughshod <lb/>over established European checks and balances, and, above all, it deviated <lb/>from a less ambitious but successful EU tradition of patient, problem-oriented <lb/>and targeted, piecemeal change? <lb/>In its final version, 7 however, one must sadly note that the White Paper is <lb/>a no-win text. Reformists will be left dejected by its cautious respect for con-<lb/>ventional wisdom. But there is no corollary reason for satisfaction amongst <lb/>sceptic traditionalists either; they will also find the paper ambivalent. Instead, <lb/>such dissatisfaction on both sides may be a symptom of crisis, indicating <lb/>that the difficulties Europe faces in enhancing its legitimacy have been over-<lb/>whelming. In a somewhat abstract formulation: 8 Europe&apos;s legitimacy problem <lb/>in fact necessitated a dual analytical and normative effort. On the analytical <lb/>and empirical side, reform necessitates an adequate understanding of EU gov-<lb/>ernance structures and practices, i.e. of the functioning of the European Polity. <lb/>Its second dimension concerns the simultaneously indispensable elaboration <lb/>of normative yardsticks and criteria explaining to European citizens why <lb/>this unprecedented Polity deserves recognition and what type of institutional <lb/>reforms the Union should undergo. <lb/>Reformers, when resorting to the language of governance, have focused <lb/>on the analytical side and have resorted to the toolkits of political science. <lb/>They have failed, however, properly to explain how their rhetoric might be <lb/>normatively compatible with Europe&apos;s commitment to law-mediated legitim-<lb/>acy, i.e. the rule of law and constitutionalized governance. Their adversar-<lb/>ies, in contrast, failed both analytically and empirically. Their diagnoses of <lb/>Europe&apos;s legitimacy problem are inaccurate, their governance recipes, framed <lb/>in orthodox legal categories, can no longer work within the multi-level and <lb/>poly-centric polity that Europe has, in reality, become. To be sure, much of the <lb/>modernization rhetoric of the Working Programme is still present in the docu-<lb/>ment the Commission has adopted. 9 But that language has had only a marginal <lb/>impact upon the institutional responses advocated by the Commission. There <lb/>are reasons for the apparent rupture in the White Paper process that outside <lb/></body>
+
+			<listBibl>7. European Governance. A White Paper, COM(2001) 428 final of 25 July 2001, O.J. <lb/>2001, C 287/5; europa.eu.int/comm/governance/index en.htm. <lb/>8. The premises of this thesis would require a much more lengthy explanation than an <lb/>editorial allows for. Suffice it therefore to refer loosely to the work of Habermas, in particular <lb/>two recent publications: &quot;Der demokratische Rechtsstaat -eine paradoxe Verbindung wider-<lb/>sprüchlicher Prinzipien?&quot; (&quot;Constitutional Democracy: A Paradoxical Union of Contradictory <lb/>Principles?&quot;, Political Theory 29, 766-781); and &quot;Braucht Europa eine Verfassung?&quot; (&quot;So, <lb/>why does Europe need a Constitution?&quot;), www.iue.it/RSC/EU/Reform02(uk).pdf, both in J. <lb/>Habermas, Zeit der Übergänge, Frankfurt a.M. 2001, pp. 133-154; pp. 104-129. <lb/>9. And much more so, to be sure, in the reports of the Working Groups which are by now <lb/>available at the Commission&apos;s governance website (supra note 5). <lb/></listBibl>
+
+			<note place="headnote">Guest editorial <lb/></note>
+
+			<page>443 <lb/></page>
+
+			<body>observers can only speculate about. And it would be inadequate and unfair to <lb/>blame its many authors. And yet, the White Paper has become a contradictory <lb/>product. This is still harsh criticism and of course, such strictures deserve <lb/>brief but careful support. <lb/>The problem begins with the concept of governance itself. The Com-<lb/>mission furnishes us with an all-encompassing and consequently vague <lb/>definition. 10 This presentation glosses over the very problématique of gov-<lb/>ernance, not merely because of its analytical vagueness; it also neglects the <lb/>need to &quot;charter&quot; governance, i.e. to frame it in line with the idea of a law-<lb/>mediated (&quot;constitutionalized&quot;) legitimacy. This is not to reject the notion <lb/>of &quot;governance&quot;. As Philippe Schmitter argues, 11 the &quot;oversell and vague-<lb/>ness&quot; of that concept notwithstanding, it usefully designates &quot;a distinctive <lb/>method/mechanism for resolving conflicts and solving problems that reflects <lb/>some profound characteristics of the exercise of authority that are emer-<lb/>ging in almost all contemporary societies and economies&quot;. It is a virtue of <lb/>the concept that it captures actor configurations and problem-solving activ-<lb/>ities, which have emerged as responses to functional exigencies. Modern <lb/>governance depends on, and similarly builds on, expert knowledge and the <lb/>management capacities of enterprises and organizations. It cannot confine <lb/>itself to law production and law application operating with the binary code of <lb/>legal and illegal events and practices. It cannot be organized hierarchically. <lb/>Especially in the whole field of regulatory policies, we have been witness-<lb/>ing extra-legal developments and institutional innovations which, on the one <lb/>hand, have widened the discrepancies between the EU&apos;s activities and its <lb/>formal legal structures. &quot;Governance&quot; is a concept that helps us to discover <lb/>and to explain such tensions between function and form. The Commission&apos;s <lb/>Working Programme was about to become a platform for constructive debate. <lb/>The White Paper that we received is an impatient document. It provides us <lb/>with seemingly easy answers. This it can only do because it refuses to take <lb/>the thorny legitimacy challenge posed by transnational governance seriously. <lb/>Instead, or so we are assured by the White Paper&apos;s very self-confident Exec-<lb/>utive Summary, Europe is doing well both in terms of its achievements and its <lb/>democratic legitimacy. Is it really a paradox, as the Commission notes, that <lb/></body>
+
+			<listBibl>10. &quot;&apos;Governance&apos; will be taken to encompass rules, processes and behaviour that affect the <lb/>way in which powers are exercised at European level, particularly as regards accountability, <lb/>clarity, transparency, coherence, efficiency and effectiveness&quot;, White Paper, supra note 7, p. <lb/>8, footnote 1. This definition has been taken over from the Commission&apos;s earlier Working <lb/>Programme, supra note 4, at p. 4. <lb/>11. Schmitter, &quot;What is there to legitimize in the European Union... and how might this be <lb/>accomplished?&quot;, in Joerges, Mény and Weiler (Eds.), Symposium: Mountain or Molehill? A <lb/>Critical Appraisal of the Commission White Paper on Governance, Jean Monnet Working Paper <lb/>No. 6/01, p. 79 et seq. at p. 83 et seq. (the text is also available at www.iue.it/RSC/Governance <lb/>and www.jeanmonnetprogram.org/papers/01/010601.html). <lb/></listBibl>
+
+			<page>444</page>
+    
+    <note place="headnote">Guest editorial <lb/>CML Rev. 2002 <lb/></note>
+    
+    <body>people &quot;increasingly distrust institutions and politics or are simply not inter-<lb/>ested in them&quot;? 12 &quot;Good Governance&quot; is the new generic response to this <lb/>form of malaise. Five principles -openness, participation, accountability, <lb/>effectiveness and coherence 13 -should be brought to bear ever more compre-<lb/>hensively. But how? These principles are far too unspecific to provide us with <lb/>orientation in the search for legitimacy for transnational governance. One <lb/>important field where the White Paper becomes specific is regulatory policy. <lb/>What the White Paper advocates here is a strengthening of the &quot;Community <lb/>method&quot; in a so far unknown rigidity. Primary legislation by Council and <lb/>European Parliament should be limited to laying down &quot;essential elements, <lb/>while providing greater scope for implementing measures to complete the <lb/>technical details of those proposals&quot;. 14 The implementation process should <lb/>be wrenched from the grasp of the Member States, as at present exercised <lb/>in regulatory and management committees. Instead, the Commission itself is <lb/>to become Europe&apos;s central executive power. While the management of the <lb/>Common Market under the comitology regime remained dependent on the <lb/>administrative resources that the Member States have provided, new &quot;regulat-<lb/>ory agencies&quot; are to be created which would strengthen the Community level. <lb/>These &quot;agencies&quot; should, however, not be granted the type of autonomy that <lb/>notion might suggest. Rather, they would operate under a clearly defined man-<lb/>date and not be empowered to &quot;arbitrate between conflicting public interests, <lb/>exercise political discretion or carry out complex economic assessments&quot;. 15 <lb/>Not only comitology, that much despised and nevertheless flourishing species <lb/>of EU governance law-making, is threatened with extinction. The Commis-<lb/>sion&apos;s White Paper also signals resistance to the siren songs of the Open <lb/>Method of Coordination, launched in Lisbon and since then attracting ever <lb/>more favourable attention. 16 The Commission&apos;s institutional preferences all <lb/>point to a strengthening of its own institutional role. In the debate on comito-<lb/>logy, this role has long been supported by the European Parliament. 17 But it is <lb/>probably nevertheless a politically highly unrealistic, analytically quite weak <lb/>and normatively unsound option. The White Paper&apos;s &quot;reform&quot; strategy would <lb/>institutionalize an executive machinery that could not be effectively controlled <lb/>by the legislature or the judiciary. It is a common experience of all democra-<lb/>cies in the field of regulatory policy and risk regulation that legislatures must <lb/></body>
+
+			<listBibl>12. White Paper, supra note 7, Executive Summary, first paragraph (p. 3). <lb/>13. Italics in the original (at p. 10). <lb/>14. White Paper, supra note 7, at p. 23; cf. p. 31. <lb/>15. White Paper, supra note 7 at p. 24. <lb/>16. White Paper, e.g. at pp. 21, 31. <lb/>17. Reaffirmed by the European Parliament&apos;s Committee on Constitutional Affairs in its <lb/>Report on the Commission White Paper on European Governance (Rapporteur Sylvia-Yvonne <lb/>Kaufman), COM(2001) 428 -C5-0454/2001 -2001/2181(COS)] final of 15 Nov. 2001. <lb/></listBibl>
+
+			<note place="headnote">Guest editorial <lb/></note>
+
+			<page>445 <lb/></page>
+
+			<body>resort to &quot;general clauses&quot; and cannot exercise detailed control over delegated <lb/>decision-making powers. It is extremely difficult in the Community context <lb/>to compensate for this lack of legislative supervision through judicial control. <lb/>The White Paper strategy would hence represent a technocratic rather than a <lb/>democratic mode of governance. <lb/>To whom should one address this critique? To the advocates of reform who <lb/>may have overlooked the complexities of their project? To the College of <lb/>Commissioners presented with an unfinished project and confronted with the <lb/>Nice process and its follow-up? The deficiencies in the project may have been <lb/>a cause for indignation and a legalistic response that now looks set to stifle <lb/>innovation. <lb/>In his Foreword to the White Paper, President Prodi deplores &quot;the demo-<lb/>cratic malaise that the Union is suffering&quot;. 18 This White Paper is not the <lb/>cure. It must not be allowed to be the final word on European governance. Its <lb/>abject failure should encourage new interdisciplinary efforts to overcome the <lb/>schisms between analyses of the functioning of the European Union and the <lb/>concern of lawyers for the rule of law and law-mediated legitimacy. <lb/></body>
+    
+    <front>Christian Joerges * <lb/></front>
+
+	<listBibl>18. White Paper, supra note 7, 3. <lb/></listBibl>
+    
+    <front>Professor of European Economic Law, European University Institute, Florence. </front>
+
+
+	</text>
+
+</TEI>
