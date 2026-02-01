@@ -94,7 +94,7 @@ public class Lexicon {
         addDictionary(GrobidProperties.getGrobidHomePath() + File.separator +
             "lexicon" + File.separator + "wordforms" + File.separator + "english.wf", Language.EN);
         addDictionary(GrobidProperties.getGrobidHomePath() + File.separator +
-            "lexicon" + File.separator + "wordforms" + File.separator + "german.wf", Language.EN);
+            "lexicon" + File.separator + "wordforms" + File.separator + "german.wf", Language.DE);
         addLastNames(GrobidProperties.getGrobidHomePath() + File.separator +
             "lexicon" + File.separator + "names" + File.separator + "names.family");
         addLastNames(GrobidProperties.getGrobidHomePath() + File.separator +
@@ -147,20 +147,22 @@ public class Lexicon {
         BufferedReader dis = null;
         try {
             ist = new FileInputStream(file);
-            isr = new InputStreamReader(ist, "UTF8");
+            isr = new InputStreamReader(ist, StandardCharsets.UTF_8);
             dis = new BufferedReader(isr);
 
             String l = null;
             while ((l = dis.readLine()) != null) {
-                if (l.length() == 0) continue;
+                if (StringUtils.isBlank(l)){
+                    continue;
+                }
+
                 // the first token, separated by a tabulation, gives the word form
                 if (lang.equals(Language.EN)) {
                     // multext format
                     StringTokenizer st = new StringTokenizer(l, "\t");
                     if (st.hasMoreTokens()) {
                         String word = st.nextToken();
-                        if (!dictionary_en.contains(word))
-                            dictionary_en.add(word);
+                        dictionary_en.add(word);
                     }
                 } else if (lang.equals(Language.DE)) {
                     // celex format
@@ -172,8 +174,7 @@ public class Lexicon {
                         word = word.replace("\"u", "ü");
                         word = word.replace("\"o", "ö");
                         word = word.replace("$", "ß");
-                        if (!dictionary_de.contains(word))
-                            dictionary_de.add(word);
+                        dictionary_de.add(word);
                     }
                 }
             }
