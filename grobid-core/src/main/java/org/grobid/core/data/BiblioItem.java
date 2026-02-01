@@ -2055,11 +2055,45 @@ public class BiblioItem {
             }
 
             // editors
-            if (editors != null) {
+            if (fullEditors != null) {
+                StringJoiner editorJoiner = new StringJoiner(" and ", "  editor = {", "}");
+                fullEditors.stream()
+                       .filter(Objects::nonNull)
+                       .forEachOrdered(person -> {
+                           String editor = "";
+                           if (person.getLastName() != null) {
+                               editor = person.getLastName();
+                           }
+                           if (person.getFirstName() != null) {
+                               if (StringUtils.isNotBlank(editor)) {
+                                   editor += ", ";
+                               }
+                               editor += person.getFirstName();
+                               if (person.getFirstName().length() == 1) {
+                                   editor += ".";
+                               }
+                           }
+                           if (person.getMiddleName() != null) {
+                               if (StringUtils.isNotBlank(editor) && StringUtils.isBlank(person.getFirstName())) {
+                                   editor += ", ";
+                               } else {
+                                   editor += " ";
+                               }
+                               editor += person.getMiddleName();
+                               if (person.getMiddleName().length() == 1) {
+                                   editor += ".";
+                               }
+                           }
+
+                           if (StringUtils.isNotBlank(editor)) {
+                               editorJoiner.add(editor);
+                           }
+                       });
+                bibtex.add(editorJoiner.toString());
+            } else if (editors != null) {
                 String locEditors = editors.replace(" ; ", " and ");
                 bibtex.add("  editor = {" + locEditors + "}");
             }
-            // fullEditors has to be used instead
 
             // dates
             if (normalized_publication_date != null) {
