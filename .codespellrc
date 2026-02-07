@@ -12,4 +12,8 @@ check-hidden = true
 #   theses - legitimate plural of "thesis"
 #   ue - German umlaut transcription (ü→ue, Ü→UE)
 #   consol - variable name abbreviation for "consolidation" (not "console")
-ignore-words-list = serie,blockin,punctuations,ther,ist,usre,theses,ue,consol
+#   countr - variable for 2-character country code (not "counter")
+#   inpu - loop variable, singular form of "inputs"
+#   currenty - typo form of coordinate variable "currentY" (not "currently")
+#   currentx - typo form of coordinate variable "currentX"
+ignore-words-list = serie,blockin,punctuations,ther,ist,usre,theses,ue,consol,countr,inpu,currenty,currentx

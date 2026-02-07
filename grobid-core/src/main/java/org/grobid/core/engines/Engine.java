@@ -129,7 +129,7 @@ public class Engine implements Closeable {
      *
      * @param dateBlocks - the list of strings each containing raw dates.
      * @return the list of all structured date objects recognized in the string
-     *         for each inputed string.
+     *         for each inputted string.
      */
     /*public List<List<org.grobid.core.data.Date>> processDates(List<String> dateBlocks) {
         return null;
