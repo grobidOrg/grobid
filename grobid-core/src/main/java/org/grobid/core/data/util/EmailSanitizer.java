@@ -155,7 +155,7 @@ public class EmailSanitizer {
                                 .split(emailAddress.toLowerCase())
                                 .iterator());
                 if (atSeparatedStrings.size() == 2) {
-                    // Only the last email address has a domain, so append it to the rest of the splitted emails
+                    // Only the last email address has a domain, so append it to the rest of the split emails
                     int atIndex = splitEmails.get(splitEmails.size() - 1).indexOf('@');
                     String domain = splitEmails.get(splitEmails.size() - 1).substring(atIndex + 1);
                     for (int i = 0; i < splitEmails.size() - 1; i++) {
@@ -204,8 +204,9 @@ public class EmailSanitizer {
         email = email.replace("}", "");
         email = email.replace("(", "");
         email = email.replace(")", "").trim();
-        email = email.replaceAll("(E|e)lectronic(\\s)(A|a)ddress(\\:)?", "");
-        email = email.replaceAll("^(e|E)?(\\-)?mail(\\:)?(\\s)(A|a)ddress(\\:)?", "");
+        // Regex patterns may intentionally match OCR typos in source text
+        email = email.replaceAll("(E|e)lectronic(\\s)(A|a)ddress(\\:)?", "");  // codespell:ignore ddress
+        email = email.replaceAll("^(e|E)?(\\-)?mail(\\:)?(\\s)(A|a)ddress(\\:)?", "");  // codespell:ignore ddress
         email = email.replaceAll("^(e|E)?(\\-)?mail(\\:)?(\\s)?", "");
         // case: Peter Pan -peter.pan@email.org with asterisks and spaces
         email = email.replaceAll("^[A-Z][a-z]+\\s+[A-Z][a-z]+(\\*)?(\\s)*-(\\s)*", "");
