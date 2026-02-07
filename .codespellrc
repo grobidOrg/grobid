@@ -1,0 +1,15 @@
+[codespell]
+# Skip: git files, binary/generated files, training data/models, test resources, lexicons, caches
+skip = .git*,*.pdf,*.svg,locale,*.css,*.min.*,.codespellrc,.cache,.npm,grobid-home,grobid-trainer,*/src/test/*,*.fulltext,*.header,*.wapiti,*.person,*.wf,*.figure,*.lst,*.family,*.odd,*.referenceSegmenter,*.segmentation,*.xml,*.bcmap,*.js
+check-hidden = true
+# Ignore legitimate words:
+#   serie - French for "series" in bibliographic context
+#   blockin - ML feature label (not "blocking")
+#   punctuations - variable name for punctuation character set
+#   ther - abbreviation for "Therapeutics/Therapy" in journal titles
+#   ist - appears in patent/lexicon-related code
+#   usre - US patent reissue prefix
+#   theses - legitimate plural of "thesis"
+#   ue - German umlaut transcription (ü→ue, Ü→UE)
+#   consol - variable name abbreviation for "consolidation" (not "console")
+ignore-words-list = serie,blockin,punctuations,ther,ist,usre,theses,ue,consol
