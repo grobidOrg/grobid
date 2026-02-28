@@ -49,7 +49,7 @@ RUN rm -rf grobid-home/models/*-BidLSTM_*
 
 ENV GROBID_SERVICE_OPTS="-Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep"
 
-RUN ./gradlew clean assemble --no-daemon  --info --stacktrace
+RUN ./gradlew assemble --no-daemon --info --stacktrace
 
 WORKDIR /opt/grobid
 RUN unzip -o /opt/grobid-source/grobid-service/build/distributions/grobid-service-*.zip && \

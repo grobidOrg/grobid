@@ -3,7 +3,7 @@ name: Build unstable
 on: [ push ]
 
 concurrency:
-  group: gradle
+  group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 
@@ -24,12 +24,9 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-          cache: 'gradle'
-      - name: Build with Gradle
-        run: ./gradlew clean assemble --info --stacktrace --no-daemon
-
-      - name: Test with Gradle Jacoco and Coveralls
-        run: ./gradlew test jacocoTestReport coveralls --no-daemon
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Build and test
+        run: ./gradlew assemble test jacocoTestReport coveralls --info --stacktrace
 
       - name: Publish Test Report
         uses: mikepenz/action-junit-report@v4
@@ -80,5 +77,7 @@ jobs:
           push: true
           tags: |
             lfoppiano/grobid:latest-develop, lfoppiano/grobid:latest-crf
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
