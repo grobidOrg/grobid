@@ -169,10 +169,15 @@ public class JEPThreadPool {
 
     public void run(Runnable task) throws InterruptedException {
         LOGGER.debug("running thread: " + Thread.currentThread().getId());
-        Future future = executor.submit(task);
-        // wait until done (in ms)
-        while (!future.isDone()) {
-            Thread.sleep(1);
+        Future<?> future = executor.submit(task);
+        try {
+            future.get(); // blocks until done, propagates exceptions
+        } catch (ExecutionException e) {
+            Throwable cause = e.getCause();
+            if (cause instanceof RuntimeException) {
+                throw (RuntimeException) cause;
+            }
+            throw new RuntimeException(cause);
         }
     }
 

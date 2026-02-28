@@ -133,4 +133,35 @@ public class GrobidPoolingFactory extends AbstractEngineFactory implements
 		return false;
 	}
 
+	/**
+	 * Returns whether the engine pool has been initialized.
+	 */
+	public static boolean isPoolInitialized() {
+		return grobidEnginePool != null;
+	}
+
+	/**
+	 * Returns the number of currently borrowed (active) engines, or -1 if pool is not initialized.
+	 */
+	public static int getActiveEngineCount() {
+		GenericObjectPool<Engine> pool = grobidEnginePool;
+		return pool != null ? pool.getNumActive() : -1;
+	}
+
+	/**
+	 * Returns the number of idle engines in the pool, or -1 if pool is not initialized.
+	 */
+	public static int getIdleEngineCount() {
+		GenericObjectPool<Engine> pool = grobidEnginePool;
+		return pool != null ? pool.getNumIdle() : -1;
+	}
+
+	/**
+	 * Returns the configured maximum number of active engines, or -1 if pool is not initialized.
+	 */
+	public static int getMaxActiveEngineCount() {
+		GenericObjectPool<Engine> pool = grobidEnginePool;
+		return pool != null ? pool.getMaxActive() : -1;
+	}
+
 }

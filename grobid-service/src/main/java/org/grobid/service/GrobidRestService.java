@@ -14,6 +14,7 @@ import org.grobid.core.GrobidModels;
 import org.grobid.core.engines.Engine;
 import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.factory.AbstractEngineFactory;
+import org.grobid.core.engines.tagging.TaggerFactory;
 import org.grobid.core.factory.GrobidPoolingFactory;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.service.data.ServiceInfo;
@@ -32,6 +33,7 @@ import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 
 import static org.grobid.core.GrobidModels.Flavor.BLANK;
@@ -47,6 +49,17 @@ import static org.grobid.core.GrobidModels.Flavor.BLANK;
 public class GrobidRestService implements GrobidPaths {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GrobidRestService.class);
+
+    private static volatile boolean initialized = false;
+    private static volatile String initializationError = null;
+
+    public static boolean isInitialized() {
+        return initialized;
+    }
+
+    public static String getInitializationError() {
+        return initializationError;
+    }
 
     private static final String NAMES = "names";
     private static final String DATE = "date";
@@ -96,14 +109,23 @@ public class GrobidRestService implements GrobidPaths {
             engine = Engine.getEngine(configuration.getGrobid().getModelPreload());
         } catch (NoSuchElementException nseExp) {
             LOGGER.error("Could not get an engine from the pool within configured time.");
+            initializationError = "Could not get an engine from the pool within configured time.";
         } catch (Exception exp) {
             LOGGER.error("An unexpected exception occurs when initiating the grobid engine. ", exp);
+            initializationError = "An unexpected exception occurs when initiating the grobid engine: " + exp.getMessage();
         } finally {
             if (engine != null) {
                 GrobidPoolingFactory.returnEngine(engine);
             }
         }
 
+        if (initializationError == null && TaggerFactory.hasFailures()) {
+            Map<String, String> failed = TaggerFactory.getFailedModels();
+            initializationError = "Models failed to load: " + String.join(", ", failed.keySet());
+        }
+        if (initializationError == null) {
+            initialized = true;
+        }
         LOGGER.info("Initiating of Servlet GrobidRestService finished.");
     }
 
@@ -114,7 +136,7 @@ public class GrobidRestService implements GrobidPaths {
     @Produces(MediaType.TEXT_PLAIN)
     @GET
     public Response isAlive() {
-        return Response.status(Response.Status.OK).entity(restProcessGeneric.isAlive()).build();
+        return restProcessGeneric.isAlive();
     }
 
     @Path(GrobidPaths.PATH_GET_VERSION)
