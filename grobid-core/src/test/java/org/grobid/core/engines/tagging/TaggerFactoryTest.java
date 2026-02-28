@@ -4,6 +4,7 @@ import org.grobid.core.GrobidModels;
 import org.grobid.core.main.LibraryLoader;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.powermock.reflect.Whitebox;
 
@@ -34,6 +35,7 @@ public class TaggerFactoryTest {
         assertThat(tagger instanceof DummyTagger, is(true));
     }
 
+    @Ignore("Requires JEP/DeLFT environment")
     @Test
     public void testGetDelftTagger_existingModel_shouldReturn() {
         GenericTagger tagger = TaggerFactory.getTagger(GrobidModels.HEADER, GrobidCRFEngine.DELFT);
