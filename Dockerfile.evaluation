@@ -64,22 +64,13 @@ WORKDIR /opt/grobid/evaluation
 # -------------------
 
 # use NVIDIA Container Toolkit to automatically recognize possible GPU drivers on the host machine
-FROM tensorflow/tensorflow:2.7.0-gpu
+FROM tensorflow/tensorflow:2.17.2-gpu
 
 # setting locale is likely useless but to be sure
 ENV LANG=C.UTF-8
 
-# update NVIDIA Cuda key (following a key rotation in April 2022)
-RUN apt-get install -y wget && \
-    apt-key del 7fa2af80 && \
-    rm /etc/apt/sources.list.d/cuda.list && \
-    rm /etc/apt/sources.list.d/nvidia-ml.list && \
-    wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.1-1_all.deb && \
-    dpkg -i cuda-keyring_1.1-1_all.deb
-
 # install python and other dependencies
 RUN apt-get update && \
-    apt-mark hold libcudnn8 && \
     apt-get -y upgrade && \
     apt-get -y --no-install-recommends install \
     bash apt-utils build-essential gcc libxml2 libfontconfig unzip curl \
@@ -94,8 +85,8 @@ COPY --from=builder /opt/grobid .
 
 RUN python3 -m pip install pip --upgrade --no-cache-dir
 
-# install DeLFT via pypi
-RUN pip3 install --no-cache-dir requests delft==0.3.3
+# install DeLFT from branch with TF 2.17 / Keras 3 support
+RUN pip3 install --no-cache-dir requests tf_keras git+https://github.com/kermitt2/delft.git@tensorflow-2.17
 # link the data directory to /data
 # the current working directory will most likely be /opt/grobid
 RUN mkdir -p /data \
@@ -114,12 +105,12 @@ ENV JAVA_OPTS=-Xmx4g
 COPY --from=builder /opt/java/openjdk ${JAVA_HOME}
 
 # install jep
-RUN pip3 install jep==4.2.2
+RUN pip3 install jep==4.3.1
 
 # set python version matching TF base image python version
-ENV PYTHON_VERSION=3.8
+ENV PYTHON_VERSION=3.11
 # set LD_LIBRARY_PATH accordingly
-ENV LD_LIBRARY_PATH=/usr/local/lib/python${PYTHON_VERSION}/dist-packages/jep:grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep:${LD_LIBRARY_PATH}
+ENV LD_LIBRARY_PATH=/usr/local/lib/python${PYTHON_VERSION}/dist-packages/jep:grobid-home/lib/lin-64:${LD_LIBRARY_PATH}
 
 # Add Tini
 ENV TINI_VERSION=v0.19.0
