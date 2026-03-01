@@ -2,7 +2,7 @@
     "model_name": "table-BidLSTM_CRF",
     "architecture": "BidLSTM_CRF",
     "embeddings_name": "glove-840B",
-    "char_vocab_size": 104,
+    "char_vocab_size": 105,
     "case_vocab_size": 8,
     "char_embedding_size": 25,
     "num_char_lstm_units": 25,
