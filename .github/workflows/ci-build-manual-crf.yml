@@ -23,7 +23,7 @@ jobs:
       with:
         java-version: '21'
         distribution: 'temurin'
-        cache: 'gradle'
+    - uses: gradle/actions/setup-gradle@v4
     - name: Build with Gradle
       run: ./gradlew build -x test
 
@@ -62,6 +62,8 @@ jobs:
           push: true
           tags: |
             lfoppiano/grobid:latest-develop, lfoppiano/grobid:${{ github.event.inputs.custom_tag}}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
       - name: Docker Image Summary

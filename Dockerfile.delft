@@ -55,7 +55,7 @@ RUN rm -rf grobid-home/lib/mac-64
 RUN rm grobid-home/config/grobid.yaml && \
     mv grobid-home/config/grobid-full.yaml grobid-home/config/grobid.yaml
 
-RUN ./gradlew clean assemble --no-daemon  --info --stacktrace
+RUN ./gradlew clean assemble --no-daemon --info --stacktrace
 
 WORKDIR /opt/grobid
 RUN unzip -o /opt/grobid-source/grobid-service/build/distributions/grobid-service-*.zip && \
