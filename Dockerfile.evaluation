@@ -30,13 +30,14 @@ COPY gradle.properties ./
 COPY build.gradle ./
 COPY settings.gradle ./
 
-COPY .git/ ./.git
-
 # source
 COPY grobid-home/ ./grobid-home/
 COPY grobid-core/ ./grobid-core/
 COPY grobid-service/ ./grobid-service/
 COPY grobid-trainer/ ./grobid-trainer/
+
+# .git for revision embedding (as late as possible)
+COPY .git/ ./.git
 
 # cleaning unused native libraries before packaging
 RUN rm -rf grobid-home/pdf2xml
