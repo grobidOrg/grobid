@@ -179,7 +179,7 @@ subprojects {
         implementation "commons-dbutils:commons-dbutils:1.7"
         implementation "com.google.guava:guava:31.0.1-jre"
         implementation "org.apache.httpcomponents:httpclient:4.5.3"
-        implementation "black.ninia:jep:4.2.2"
+        implementation "black.ninia:jep:4.3.1"
 
         implementation "com.fasterxml.jackson.core:jackson-core:2.14.3"
         implementation "com.fasterxml.jackson.core:jackson-databind:2.14.3"
