@@ -131,6 +131,12 @@ if [ -n "${JAVA_NATIVE_LIB}" ]; then
   fi
 fi
 
+# Set LD_LIBRARY_PATH to include Python environment libraries (e.g., libstdc++ for DeLFT/JEP)
+PYTHON_ENV_PREFIX="${CONDA_PREFIX:-${VIRTUAL_ENV:-}}"
+if [ -n "${PYTHON_ENV_PREFIX}" ] && [ -d "${PYTHON_ENV_PREFIX}/lib" ]; then
+  export LD_LIBRARY_PATH="${PYTHON_ENV_PREFIX}/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+fi
+
 echo "Evaluation root: ${EVAL_ROOT}"
 echo "Output dir: ${OUT_DIR}"
 echo "Gradle wrapper: ${GRADLEW_PATH}"
