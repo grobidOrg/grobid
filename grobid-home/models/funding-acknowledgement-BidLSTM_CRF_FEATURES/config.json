@@ -2,7 +2,7 @@
     "model_name": "funding-acknowledgement-BidLSTM_CRF_FEATURES",
     "architecture": "BidLSTM_CRF_FEATURES",
     "embeddings_name": "glove-840B",
-    "char_vocab_size": 148,
+    "char_vocab_size": 150,
     "case_vocab_size": 8,
     "char_embedding_size": 25,
     "num_char_lstm_units": 25,
@@ -14,7 +14,8 @@
         11,
         12,
         13,
-        14
+        14,
+        15
     ],
     "features_embedding_size": 4,
     "features_lstm_units": 4,
@@ -55,14 +56,18 @@
             "1": 50
         },
         "14": {
-            "COMMA": 61,
-            "DOT": 62,
-            "ENDBRACKET": 63,
-            "HYPHEN": 64,
-            "NOPUNCT": 65,
-            "OPENBRACKET": 66,
-            "PUNCT": 67,
-            "QUOTE": 68
+            "0": 61,
+            "1": 62
+        },
+        "15": {
+            "COMMA": 73,
+            "DOT": 74,
+            "ENDBRACKET": 75,
+            "HYPHEN": 76,
+            "NOPUNCT": 77,
+            "OPENBRACKET": 78,
+            "PUNCT": 79,
+            "QUOTE": 80
         }
     }
 }

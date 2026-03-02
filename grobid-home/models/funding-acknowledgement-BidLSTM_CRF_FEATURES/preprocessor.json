@@ -144,17 +144,19 @@
         "\u015f": 134,
         "\u016f": 135,
         "\u0229": 136,
-        "\u03b2": 137,
-        "\u03b3": 138,
-        "\u0430": 139,
-        "\u1e4d": 140,
-        "\u2019": 141,
-        "\u201c": 142,
-        "\u201d": 143,
-        "\u2020": 144,
-        "\u20ac": 145,
-        "\u2116": 146,
-        "\u25a1": 147
+        "\u02da": 137,
+        "\u03b2": 138,
+        "\u03b3": 139,
+        "\u03bc": 140,
+        "\u0430": 141,
+        "\u1e4d": 142,
+        "\u2019": 143,
+        "\u201c": 144,
+        "\u201d": 145,
+        "\u2020": 146,
+        "\u20ac": 147,
+        "\u2116": 148,
+        "\u25a1": 149
     },
     "vocab_tag": {
         "<PAD>": 0,
@@ -162,19 +164,21 @@
         "B-<funderName>": 2,
         "B-<grantName>": 3,
         "B-<grantNumber>": 4,
-        "B-<institution>": 5,
-        "B-<person>": 6,
-        "B-<programName>": 7,
-        "B-<projectName>": 8,
-        "I-<affiliation>": 9,
-        "I-<funderName>": 10,
-        "I-<grantName>": 11,
-        "I-<grantNumber>": 12,
-        "I-<institution>": 13,
-        "I-<person>": 14,
-        "I-<programName>": 15,
-        "I-<projectName>": 16,
-        "O": 17
+        "B-<infrastructure>": 5,
+        "B-<institution>": 6,
+        "B-<person>": 7,
+        "B-<programName>": 8,
+        "B-<projectName>": 9,
+        "I-<affiliation>": 10,
+        "I-<funderName>": 11,
+        "I-<grantName>": 12,
+        "I-<grantNumber>": 13,
+        "I-<infrastructure>": 14,
+        "I-<institution>": 15,
+        "I-<person>": 16,
+        "I-<programName>": 17,
+        "I-<projectName>": 18,
+        "O": 19
     },
     "vocab_case": [
         "<PAD>",
@@ -195,7 +199,8 @@
             11,
             12,
             13,
-            14
+            14,
+            15
         ],
         "features_map_to_index": {
             "9": {
@@ -222,14 +227,18 @@
                 "1": 50
             },
             "14": {
-                "COMMA": 61,
-                "DOT": 62,
-                "ENDBRACKET": 63,
-                "HYPHEN": 64,
-                "NOPUNCT": 65,
-                "OPENBRACKET": 66,
-                "PUNCT": 67,
-                "QUOTE": 68
+                "0": 61,
+                "1": 62
+            },
+            "15": {
+                "COMMA": 73,
+                "DOT": 74,
+                "ENDBRACKET": 75,
+                "HYPHEN": 76,
+                "NOPUNCT": 77,
+                "OPENBRACKET": 78,
+                "PUNCT": 79,
+                "QUOTE": 80
             }
         }
     },
@@ -239,18 +248,20 @@
         "2": "B-<funderName>",
         "3": "B-<grantName>",
         "4": "B-<grantNumber>",
-        "5": "B-<institution>",
-        "6": "B-<person>",
-        "7": "B-<programName>",
-        "8": "B-<projectName>",
-        "9": "I-<affiliation>",
-        "10": "I-<funderName>",
-        "11": "I-<grantName>",
-        "12": "I-<grantNumber>",
-        "13": "I-<institution>",
-        "14": "I-<person>",
-        "15": "I-<programName>",
-        "16": "I-<projectName>",
-        "17": "O"
+        "5": "B-<infrastructure>",
+        "6": "B-<institution>",
+        "7": "B-<person>",
+        "8": "B-<programName>",
+        "9": "B-<projectName>",
+        "10": "I-<affiliation>",
+        "11": "I-<funderName>",
+        "12": "I-<grantName>",
+        "13": "I-<grantNumber>",
+        "14": "I-<infrastructure>",
+        "15": "I-<institution>",
+        "16": "I-<person>",
+        "17": "I-<programName>",
+        "18": "I-<projectName>",
+        "19": "O"
     }
 }
