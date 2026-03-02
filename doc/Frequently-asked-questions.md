@@ -26,6 +26,31 @@ With docker, for example you can this command:
 docker run --rm --gpus all --init --ulimit core=0 -e TF_FORCE_GPU_ALLOW_GROWTH='true' -p 8070:8070 grobid/grobid:0.8.2-full
 ```
 
+## JEP/DeLFT fails with `CXXABI` or `libstdc++` version errors
+
+When running GROBID with DeLFT models outside Docker (e.g. locally or via `run_evaluation.sh`), JEP initialization may fail with errors like:
+
+```
+ImportError: /home/user/miniconda3/envs/myenv/lib/python3.10/lib-dynload/../../libicui18n.so.78:
+  version `CXXABI_1.3.15' not found (required by .../libstdc++.so.6)
+```
+
+This happens because the system's `libstdc++.so.6` is older than what the conda/virtualenv libraries expect. Your Python environment likely ships a newer `libstdc++.so.6` in its `lib/` directory, but the linker doesn't know to look there.
+
+**Fix**: Before starting GROBID, prepend your Python environment's `lib/` directory to `LD_LIBRARY_PATH`:
+
+```bash
+# For conda environments:
+export LD_LIBRARY_PATH="${CONDA_PREFIX}/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+
+# For virtualenvs:
+export LD_LIBRARY_PATH="${VIRTUAL_ENV}/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+```
+
+!!! tip
+    The `run_evaluation.sh` script detects active conda/virtualenv environments and sets `LD_LIBRARY_PATH` automatically. If you run GROBID through other means (e.g. `./gradlew :grobid-service:run`), you may need to export this variable manually.
+
+
 ## When processing a large quantity of files, I see many `503` errors
 
 The `503` status returned by GROBID is not an error, and does not mean that the server has issues. On the contrary, this is the mechanism to avoid the service from collapsing and to keep it up, alive, and running according to its capacity for days.
