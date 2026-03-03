@@ -111,8 +111,10 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# install jep
+# Temporarily copy JDK headers needed to compile JEP's native extension
+COPY --from=builder /opt/java/openjdk/include /opt/java/openjdk/include
 RUN pip3 install --no-cache-dir jep==4.3.1
+RUN rm -rf /opt/java/openjdk/include
 
 # link the data directory to /data
 # the current working directory will most likely be /opt/grobid
