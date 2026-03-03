@@ -42,13 +42,8 @@ jobs:
         with:
           fetch-tags: true
           fetch-depth: 0
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-        id: buildx
-        with:
-          buildkitd-flags: --debug
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
@@ -60,10 +55,12 @@ jobs:
         with:
           context: .
           file: Dockerfile.delft
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           push: true
           tags: |
             lfoppiano/grobid:latest-develop,lfoppiano/grobid:latest-full,lfoppiano/grobid:${{ github.event.inputs.custom_tag }}
+          cache-from: type=gha,scope=full
+          cache-to: type=gha,mode=max,scope=full
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
       - name: Docker Image Summary
@@ -73,7 +70,7 @@ jobs:
           echo "**Image Details:**" >> $GITHUB_STEP_SUMMARY
           echo "- **Registry:** docker.io" >> $GITHUB_STEP_SUMMARY
           echo "- **Image:** lfoppiano/grobid" >> $GITHUB_STEP_SUMMARY
-          echo "- **Type:** Full build with DeLFT models (multi-arch: amd64, arm64)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Type:** Full build with DeLFT models (amd64 only)" >> $GITHUB_STEP_SUMMARY
           echo "- **Tags:**" >> $GITHUB_STEP_SUMMARY
           echo "  - \`latest-develop\`" >> $GITHUB_STEP_SUMMARY
           echo "  - \`latest-full\`" >> $GITHUB_STEP_SUMMARY
