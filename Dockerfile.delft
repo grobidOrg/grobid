@@ -41,15 +41,17 @@ COPY grobid-core/ ./grobid-core/
 COPY grobid-service/ ./grobid-service/
 COPY grobid-trainer/ ./grobid-trainer/
 
+ARG TARGETARCH
+
 # cleaning unused native libraries before packaging
 RUN rm -rf grobid-home/pdf2xml
-RUN rm -rf grobid-home/pdfalto/lin-32
-RUN rm -rf grobid-home/pdfalto/mac-64
-RUN rm -rf grobid-home/pdfalto/mac_arm-64
-RUN rm -rf grobid-home/pdfalto/win-*
-RUN rm -rf grobid-home/lib/lin-32
-RUN rm -rf grobid-home/lib/win-*
-RUN rm -rf grobid-home/lib/mac-64
+RUN rm -rf grobid-home/pdfalto/win-* grobid-home/pdfalto/mac-64 grobid-home/pdfalto/mac_arm-64 grobid-home/pdfalto/lin-32
+RUN rm -rf grobid-home/lib/win-* grobid-home/lib/mac-64 grobid-home/lib/mac_arm-64 grobid-home/lib/lin-32
+RUN if [ "$TARGETARCH" = "arm64" ]; then \
+      rm -rf grobid-home/pdfalto/lin-64 grobid-home/lib/lin-64; \
+    else \
+      rm -rf grobid-home/pdfalto/lin_arm-64 grobid-home/lib/lin_arm-64; \
+    fi
 
 # Setting DL-powered configuration
 RUN rm grobid-home/config/grobid.yaml && \
@@ -68,38 +70,50 @@ RUN rm -rf grobid-source
 # build runtime image
 # -------------------
 
-# use NVIDIA Container Toolkit to automatically recognize possible GPU drivers on the host machine
-FROM tensorflow/tensorflow:2.17.0-gpu
+FROM eclipse-temurin:21.0.10_7-jre
 
 # setting locale is likely useless but to be sure
 ENV LANG=C.UTF-8
 
-# install python and other dependencies
+# install system dependencies and Python 3.11 via deadsnakes PPA
 RUN apt-get update && \
-    apt-get -y upgrade && \
     apt-get -y --no-install-recommends install \
-    bash apt-utils build-essential gcc libxml2 libfontconfig unzip curl \
-    musl gfortran \
-    python3 python3-pip python3-setuptools python3-dev \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    bash build-essential gcc libxml2 libfontconfig unzip curl \
+    musl gfortran software-properties-common && \
+    add-apt-repository ppa:deadsnakes/ppa && \
+    apt-get update && \
+    apt-get -y --no-install-recommends install \
+    python3.11 python3.11-dev python3.11-venv python3.11-distutils && \
+    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# bootstrap pip for Python 3.11
+RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11
+
+# install TensorFlow: GPU-enabled on amd64 (with CUDA via pip), CPU-only on arm64
+ARG TARGETARCH
+RUN if [ "$TARGETARCH" = "amd64" ]; then \
+      pip3 install --no-cache-dir "tensorflow[and-cuda]==2.17.1"; \
+    else \
+      pip3 install --no-cache-dir tensorflow==2.17.1; \
+    fi
 
 WORKDIR /opt/grobid
 
 COPY --from=builder /opt/grobid .
 
-RUN python3 -m pip install pip --upgrade --no-cache-dir
-
-# Temporary
+# install DeLFT
 RUN apt-get update && \
-    apt-get -y --no-install-recommends install git \
+    apt-get -y --no-install-recommends install git && \
+    pip3 install --no-cache-dir git+https://github.com/kermitt2/delft.git && \
+    apt-get -y remove git && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-# install DeLFT from branch with TF 2.17 / Keras 3 support
-RUN pip3 install --no-cache-dir requests tf_keras git+https://github.com/kermitt2/delft.git@tensorflow-2.17
+# install jep
+RUN pip3 install --no-cache-dir jep==4.3.1
 
-RUN apt-get uninstall git && \
-    apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
 # link the data directory to /data
 # the current working directory will most likely be /opt/grobid
 RUN mkdir -p /data \
@@ -108,25 +122,12 @@ RUN mkdir -p /data \
 
 # disable python warnings (and fix logging)
 ENV PYTHONWARNINGS="ignore"
-
-ENV JAVA_HOME=/opt/java/openjdk
-ENV PATH=$JAVA_HOME/bin:$PATH
 ENV JAVA_OPTS=-Xmx4g
 
-
-# Get java jdk from builder image
-# See tag of builder image in [Dockerfile tag](https://github.com/docker-library/docs/blob/master/eclipse-temurin/README.md#simple-tags) to find JAVA_HOME to copy from builder image.
-COPY --from=builder /opt/java/openjdk ${JAVA_HOME}
-
-# install jep 
-RUN pip3 install jep==4.3.1
-
-# set python version matching TF base image python version
+# set python version and library paths (both arch paths included; only one will exist at runtime)
 ENV PYTHON_VERSION=3.11
-# set LD_LIBRARY_PATH accordingly
-ENV LD_LIBRARY_PATH=/usr/local/lib/python${PYTHON_VERSION}/dist-packages/jep:grobid-home/lib/lin-64:${LD_LIBRARY_PATH}
-
-ARG TARGETARCH
+ENV LD_LIBRARY_PATH=/usr/local/lib/python3.11/dist-packages/jep:grobid-home/lib/lin-64:grobid-home/lib/lin_arm-64
+ENV GROBID_SERVICE_OPTS="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED"
 
 # Add Tini
 ENV TINI_VERSION=v0.19.0
@@ -145,8 +146,6 @@ RUN python3 preload_embeddings.py --registry ./resources-registry.json &&  \
 
 RUN mkdir delft && \
     cp ./resources-registry.json delft/
-
-ENV GROBID_SERVICE_OPTS="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED"
 
 CMD ["./grobid-service/bin/grobid-service"]
 
