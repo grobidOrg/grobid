@@ -46,7 +46,8 @@ The directory `grobid-installation` should have the following structure:
 You can check whether the service is up and running by opening the following URL:
 
 * <http://yourhost:8070/api/version> will return you the current version, and the github revision (commit hash) of the running service
-* <http://yourhost:8070/api/isalive> will return `true`/`false` whether the service is up and running
+* <http://yourhost:8070/api/isalive> **(liveness)** returns `true`/`false` as plain text indicating whether the service completed initialization successfully. Returns HTTP 200 when alive, HTTP 503 when not initialized or initialization failed. Suitable for use as a liveness probe in container orchestrators (Docker, Kubernetes).
+* <http://yourhost:8070/api/health> **(readiness)** returns a JSON object with detailed status including initialization state, engine pool metrics (active/idle/max engines), and configuration checks. Returns HTTP 200 when ready to process requests, HTTP 503 otherwise. Suitable for use as a readiness probe.
 
 The service provides also an admin console, reachable at <http://yourhost:8071> where some additional checks like ping, metrics, hearthbeat are available.
 We recommend, in particular to have a look at the metrics (using the [Metric library](https://metrics.dropwizard.io/3.1.0/getting-started/)) which are providing the rate of execution as well as the throughput of each entry point.

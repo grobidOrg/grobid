@@ -2,7 +2,8 @@ package org.grobid.service.process;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-import org.grobid.core.utilities.GrobidProperties;
+import org.grobid.core.engines.tagging.TaggerFactory;
+import org.grobid.service.GrobidRestService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,22 +23,18 @@ public class GrobidRestProcessGeneric {
     }
 
     /**
-     * Returns a string containing true, if the service is alive.
+     * Returns whether the service is alive and initialized.
      *
-     * @return a response object containing the string true if service
-     * is alive.
+     * @return a response object containing "true"/"false" with HTTP 200/503
      */
-    public String isAlive() {
+    public Response isAlive() {
         LOGGER.debug("called isAlive()...");
 
-        String retVal = null;
-        try {
-            retVal = Boolean.valueOf(true).toString();
-        } catch (Exception e) {
-            LOGGER.error("GROBID Service is not alive, because of: ", e);
-            retVal = Boolean.valueOf(false).toString();
+        if (GrobidRestService.isInitialized() && !TaggerFactory.hasFailures()) {
+            return Response.ok("true").type(MediaType.TEXT_PLAIN).build();
+        } else {
+            return Response.status(503).entity("false").type(MediaType.TEXT_PLAIN).build();
         }
-        return retVal;
     }
 
     /**

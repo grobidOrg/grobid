@@ -7,12 +7,14 @@ import org.grobid.core.engines.DateParser;
 import org.grobid.core.engines.EngineParsers;
 import org.grobid.core.jni.JEPThreadPool;
 import org.grobid.core.main.LibraryLoader;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
 
 import static org.junit.Assert.*;
 
+@Ignore("Requires JEP/DeLFT environment")
 public class DeLFTTaggerIntegrationTest {
 
     DeLFTTagger target;

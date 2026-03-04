@@ -36,8 +36,13 @@ public class DeLFTModel {
         try {
             LOGGER.info("Loading DeLFT model for " + model.getModelName() + " with architecture " + architecture + "...");
             JEPThreadPool.getInstance().run(new InitModel(this.modelName, GrobidProperties.getInstance().getModelPath(), architecture));
-        } catch (InterruptedException | RuntimeException e) {
+        } catch (InterruptedException e) {
+            LOGGER.error("DeLFT model " + this.modelName + " initialization was interrupted", e);
+            Thread.currentThread().interrupt();
+            throw new GrobidException("DeLFT model " + this.modelName + " initialization was interrupted", e);
+        } catch (RuntimeException e) {
             LOGGER.error("DeLFT model " + this.modelName + " initialization failed", e);
+            throw e;
         }
     }
 
