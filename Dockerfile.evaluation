@@ -86,8 +86,9 @@ COPY --from=builder /opt/grobid .
 
 RUN python3 -m pip install pip --upgrade --no-cache-dir
 
-# install DeLFT from branch with TF 2.17 / Keras 3 support
-RUN pip3 install --no-cache-dir requests tf_keras git+https://github.com/kermitt2/delft.git@tensorflow-2.17
+# install DeLFT
+RUN pip3 install --no-cache-dir delft==0.4.1
+
 # link the data directory to /data
 # the current working directory will most likely be /opt/grobid
 RUN mkdir -p /data \
