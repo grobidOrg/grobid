@@ -29,9 +29,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
       - name: Build CRF image from Dockerfile.crf
-        run: |
-          docker build -t docker.io/lfoppiano/grobid:${{ github.sha }} -f Dockerfile.crf .
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.crf
+          push: false
+          load: true
+          tags: docker.io/lfoppiano/grobid:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
       # - name: Build DeepLearning image from Dockerfile.delft
       #   run: |

@@ -3,7 +3,7 @@ name: Build unstable
 on: [ push ]
 
 concurrency:
-  group: gradle
+  group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 
@@ -24,12 +24,9 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-          cache: 'gradle'
-      - name: Build with Gradle
-        run: ./gradlew clean assemble --info --stacktrace --no-daemon
-
-      - name: Test with Gradle Jacoco and Coveralls
-        run: ./gradlew test jacocoTestReport coveralls --no-daemon
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Build and test
+        run: ./gradlew assemble test jacocoTestReport coveralls --info --stacktrace
 
       - name: Publish Test Report
         uses: mikepenz/action-junit-report@v4
@@ -45,40 +42,85 @@ jobs:
           file: build/reports/jacoco/codeCoverageReport/codeCoverageReport.xml
           debug: true
 
-  docker-build-crf:
-    needs: [ build ]
+  docker-build-amd64:
+    needs: [build]
     runs-on: ubuntu-latest
-
+    outputs:
+      digest: ${{ steps.build.outputs.digest }}
     steps:
       - name: Create more disk space
         run: |
-          sudo rm -rf /usr/share/dotnet 
-          sudo rm -rf /opt/ghc 
-          sudo rm -rf "/usr/local/share/boost" 
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo rm -rf "/usr/local/share/boost"
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-        id: buildx
-        with:
-          buildkitd-flags: --debug
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME_LFOPPIANO }}
           password: ${{ secrets.DOCKERHUB_TOKEN_LFOPPIANO }}
-      - name: Build and push
+      - name: Build and push by digest
+        id: build
         uses: docker/build-push-action@v6
         with:
           context: .
           file: Dockerfile.crf
-          platforms: linux/amd64,linux/arm64
-          push: true
-          tags: |
-            lfoppiano/grobid:latest-develop, lfoppiano/grobid:latest-crf
-      - name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}
+          platforms: linux/amd64
+          outputs: type=image,name=lfoppiano/grobid,push-by-digest=true,name-canonical=true,push=true
+          cache-from: type=gha,scope=amd64
+          cache-to: type=gha,scope=amd64,mode=max
+
+  docker-build-arm64:
+    needs: [build]
+    runs-on: ubuntu-24.04-arm
+    outputs:
+      digest: ${{ steps.build.outputs.digest }}
+    steps:
+      - name: Create more disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo rm -rf "/usr/local/share/boost"
+          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME_LFOPPIANO }}
+          password: ${{ secrets.DOCKERHUB_TOKEN_LFOPPIANO }}
+      - name: Build and push by digest
+        id: build
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.crf
+          platforms: linux/arm64
+          outputs: type=image,name=lfoppiano/grobid,push-by-digest=true,name-canonical=true,push=true
+          cache-from: type=gha,scope=arm64
+          cache-to: type=gha,scope=arm64,mode=max
+
+  docker-merge:
+    needs: [docker-build-amd64, docker-build-arm64]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME_LFOPPIANO }}
+          password: ${{ secrets.DOCKERHUB_TOKEN_LFOPPIANO }}
+      - name: Create and push multi-arch manifest
+        run: |
+          docker buildx imagetools create \
+            -t lfoppiano/grobid:latest-develop \
+            -t lfoppiano/grobid:latest-crf \
+            lfoppiano/grobid@${{ needs.docker-build-amd64.outputs.digest }} \
+            lfoppiano/grobid@${{ needs.docker-build-arm64.outputs.digest }}

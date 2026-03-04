@@ -23,21 +23,30 @@ RUN apt-get update && \
 
 WORKDIR /opt/grobid-source
 
-# gradle
+# Layer 1: Gradle wrapper + build config (rarely changes -> long-lived cache)
 COPY gradle/ ./gradle/
 COPY gradlew ./
 COPY gradle.properties ./
 COPY build.gradle ./
 COPY settings.gradle ./
 
-# git
-COPY .git/ ./.git
+# Layer 2: Local libs needed for dependency resolution
+COPY grobid-core/localLibs/ ./grobid-core/localLibs/
 
-# source
+# Layer 3: Create subproject dirs so Gradle can configure without source
+RUN mkdir -p grobid-home grobid-service grobid-trainer
+
+# Layer 4: Download all dependencies (cached until build.gradle changes)
+RUN ./gradlew dependencies --no-daemon -q
+
+# Layer 5: Source code (changes every commit -> cache bust from here)
 COPY grobid-home/ ./grobid-home/
 COPY grobid-core/ ./grobid-core/
 COPY grobid-service/ ./grobid-service/
 COPY grobid-trainer/ ./grobid-trainer/
+
+# Layer 6: .git for revision embedding (as late as possible, just before build)
+COPY .git/ ./.git
 
 # cleaning unused native libraries before packaging
 RUN rm -rf grobid-home/pdf2xml
@@ -49,7 +58,7 @@ RUN rm -rf grobid-home/models/*-BidLSTM_*
 
 ENV GROBID_SERVICE_OPTS="-Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep"
 
-RUN ./gradlew clean assemble --no-daemon  --info --stacktrace
+RUN ./gradlew assemble --no-daemon --info --stacktrace
 
 WORKDIR /opt/grobid
 RUN unzip -o /opt/grobid-source/grobid-service/build/distributions/grobid-service-*.zip && \
