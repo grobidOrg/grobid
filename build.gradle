@@ -1,6 +1,6 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '2.0.0' apply false
-    id 'com.gradleup.shadow' version '8.3.8' apply false
+    id 'org.jetbrains.kotlin.jvm' version '2.0.21' apply false
+    id 'com.gradleup.shadow' version '8.3.10' apply false
     id 'com.adarshr.test-logger' version '4.0.0' apply false
     id 'com.github.kt3k.coveralls' version '2.12.2' apply false
     id 'net.researchgate.release' version '3.1.0' apply false
@@ -52,7 +52,7 @@ apply plugin: 'jacoco'
 apply plugin: 'com.github.kt3k.coveralls'
 
 jacoco {
-    toolVersion = '0.8.13'
+    toolVersion = '0.8.15'
 }
 
 
@@ -155,7 +155,7 @@ subprojects {
 
         testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
         testRuntimeOnly "org.junit.vintage:junit-vintage-engine"
-        testImplementation(platform('org.junit:junit-bom:5.10.2'))
+        testImplementation(platform('org.junit:junit-bom:5.14.1'))
         testRuntimeOnly("org.junit.platform:junit-platform-launcher") {
             because("Only needed to run tests in a version of IntelliJ IDEA that bundles older versions")
         }
@@ -163,28 +163,28 @@ subprojects {
         testImplementation 'org.easymock:easymock:5.6.0'
         testImplementation "org.powermock:powermock-api-easymock:2.0.9"
         testImplementation "org.powermock:powermock-module-junit4:2.0.9"
-        testImplementation "org.xmlunit:xmlunit-matchers:2.10.0"
-        testImplementation "org.xmlunit:xmlunit-legacy:2.10.0"
+        testImplementation "org.xmlunit:xmlunit-matchers:2.10.3"
+        testImplementation "org.xmlunit:xmlunit-legacy:2.10.3"
         testImplementation "org.hamcrest:hamcrest-all:1.3"
         testImplementation 'org.jetbrains.kotlin:kotlin-test'
-        testImplementation "io.mockk:mockk:1.13.9"
+        testImplementation "io.mockk:mockk:1.13.17"
 
         implementation "com.cybozu.labs:langdetect:1.1-20120112"
         implementation "com.rockymadden.stringmetric:stringmetric-core_2.11:0.27.4"
         implementation "commons-pool:commons-pool:1.6"
-        implementation "commons-io:commons-io:2.14.0"
-        implementation "org.apache.commons:commons-lang3:3.6"
-        implementation "org.apache.commons:commons-collections4:4.1"
-        implementation 'org.apache.commons:commons-text:1.11.0'
-        implementation "commons-dbutils:commons-dbutils:1.7"
-        implementation "com.google.guava:guava:31.0.1-jre"
-        implementation "org.apache.httpcomponents:httpclient:4.5.3"
+        implementation "commons-io:commons-io:2.21.0"
+        implementation "org.apache.commons:commons-lang3:3.20.0"
+        implementation "org.apache.commons:commons-collections4:4.5.0"
+        implementation 'org.apache.commons:commons-text:1.15.0'
+        implementation "commons-dbutils:commons-dbutils:1.8.1"
+        implementation "com.google.guava:guava:33.5.0-jre"
+        implementation "org.apache.httpcomponents:httpclient:4.5.14"
         implementation "black.ninia:jep:4.2.2"
 
-        implementation "com.fasterxml.jackson.core:jackson-core:2.14.3"
-        implementation "com.fasterxml.jackson.core:jackson-databind:2.14.3"
-        implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.14.3"
-        implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.3"
+        implementation "com.fasterxml.jackson.core:jackson-core:2.21.1"
+        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.1"
+        implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.21.1"
+        implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.1"
     }
 
     tasks.register('sourceJar', Jar) {
@@ -245,17 +245,17 @@ project("grobid-core") {
         implementation 'org.slf4j:slf4j-api:1.7.36'
         implementation 'ch.qos.logback:logback-classic:1.2.13'
 
-        implementation "org.apache.pdfbox:pdfbox:2.0.33"
+        implementation "org.apache.pdfbox:pdfbox:2.0.35"
 
-        api "xerces:xercesImpl:2.12.0"
+        api "xerces:xercesImpl:2.12.2"
         api "net.arnx:jsonic:1.3.10"
         api "net.sf.saxon:Saxon-HE:9.6.0-9"
         api "xom:xom:1.3.9"
         api 'javax.xml.bind:jaxb-api:2.3.0'
 
-        implementation "joda-time:joda-time:2.9.9"
+        implementation "joda-time:joda-time:2.14.0"
         implementation "org.apache.lucene:lucene-analyzers-common:4.5.1"
-        implementation 'black.ninia:jep:4.0.3'
+        implementation 'black.ninia:jep:4.2.2'
         implementation 'org.apache.opennlp:opennlp-tools:1.9.4'
         implementation group: 'org.jruby', name: 'jruby-complete', version: '9.4.12.1'
 
@@ -374,21 +374,21 @@ project(":grobid-service") {
         implementation project(':grobid-trainer')
 
         //Dropwizard
-        implementation 'ru.vyarus:dropwizard-guicey:7.0.2'
+        implementation 'ru.vyarus:dropwizard-guicey:7.3.1'
 
-        implementation 'io.dropwizard:dropwizard-bom:4.0.13'
-        implementation 'io.dropwizard:dropwizard-core:4.0.13'
-        implementation 'io.dropwizard:dropwizard-assets:4.0.13'
-        implementation 'io.dropwizard:dropwizard-testing:4.0.13'
-        implementation 'io.dropwizard.modules:dropwizard-testing-junit4:4.0.13'
-        implementation 'io.dropwizard:dropwizard-forms:4.0.13'
-        implementation 'io.dropwizard:dropwizard-client:4.0.13'
-        implementation 'io.dropwizard:dropwizard-auth:4.0.13'
-        implementation 'io.dropwizard.metrics:metrics-core:4.2.30'
-        implementation 'io.dropwizard.metrics:metrics-servlets:4.2.30'
-        implementation 'io.dropwizard:dropwizard-json-logging:4.0.13'
+        implementation 'io.dropwizard:dropwizard-bom:4.0.17'
+        implementation 'io.dropwizard:dropwizard-core:4.0.17'
+        implementation 'io.dropwizard:dropwizard-assets:4.0.17'
+        implementation 'io.dropwizard:dropwizard-testing:4.0.17'
+        implementation 'io.dropwizard.modules:dropwizard-testing-junit4:4.0.16'
+        implementation 'io.dropwizard:dropwizard-forms:4.0.17'
+        implementation 'io.dropwizard:dropwizard-client:4.0.17'
+        implementation 'io.dropwizard:dropwizard-auth:4.0.17'
+        implementation 'io.dropwizard.metrics:metrics-core:4.2.38'
+        implementation 'io.dropwizard.metrics:metrics-servlets:4.2.38'
+        implementation 'io.dropwizard:dropwizard-json-logging:4.0.17'
 
-        implementation "org.apache.pdfbox:pdfbox:2.0.33"
+        implementation "org.apache.pdfbox:pdfbox:2.0.35"
         implementation "javax.activation:activation:1.1.1"
         implementation "io.prometheus:simpleclient_dropwizard:0.16.0"
         implementation "io.prometheus:simpleclient_servlet:0.16.0"
@@ -443,7 +443,7 @@ project(":grobid-trainer") {
         }
         implementation project(':grobid-core')
         implementation "com.rockymadden.stringmetric:stringmetric-core_2.10:0.27.3"
-        implementation "me.tongfei:progressbar:0.9.0"
+        implementation "me.tongfei:progressbar:0.9.5"
 
         // logs
         implementation 'org.slf4j:slf4j-api:1.7.36'
