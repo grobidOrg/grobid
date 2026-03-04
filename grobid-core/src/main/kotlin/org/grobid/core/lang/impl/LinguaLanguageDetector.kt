@@ -9,14 +9,22 @@ import org.slf4j.LoggerFactory
 class LinguaLanguageDetector : LanguageDetector {
     private val detector: com.github.pemistahl.lingua.api.LanguageDetector = LanguageDetectorBuilder
         .fromAllLanguages()
-//            .withPreloadedLanguageModels()
+        .withLowAccuracyMode()
         .build()
 
-    override fun detect(text: String): Language {
+    override fun detect(text: String?): Language? {
+        if (text.isNullOrBlank()) {
+            return null
+        }
+
         val languages = detector.computeLanguageConfidenceValues(text = text)
 
         if (LOGGER.isDebugEnabled) {
             LOGGER.debug(languages.toString())
+        }
+
+        if (languages.isEmpty()) {
+            return null
         }
 
         val l = languages.firstKey()
