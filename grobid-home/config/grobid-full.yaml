@@ -53,9 +53,10 @@ grobid:
   # the actual implementation for language recognition to be used
   languageDetectorFactory: "org.grobid.core.lang.impl.CybozuLanguageDetectorFactory"
 
-  # the actual implementation for optional sentence segmentation to be used (PragmaticSegmenter or OpenNLP)
+  # the actual implementation for optional sentence segmentation to be used (PragmaticSegmenter, OpenNLP or BlingFire)
   #sentenceDetectorFactory: "org.grobid.core.lang.impl.PragmaticSentenceDetectorFactory"
   sentenceDetectorFactory: "org.grobid.core.lang.impl.OpenNLPSentenceDetectorFactory"
+  #sentenceDetectorFactory: "org.grobid.core.lang.impl.BlingFireSentenceDetectorFactory"
 
   # maximum concurrency allowed to GROBID server for processing parallel requests - change it according to your CPU/GPU capacities
   # for a production server running only GROBID, set the value slightly above the available number of threads of the server
