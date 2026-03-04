@@ -52,7 +52,7 @@ apply plugin: 'jacoco'
 apply plugin: 'com.github.kt3k.coveralls'
 
 jacoco {
-    toolVersion = '0.8.15'
+    toolVersion = '0.8.14'
 }
 
 
