@@ -2,7 +2,7 @@
     "model_name": "patent-citation-BidLSTM_CRF_FEATURES",
     "architecture": "BidLSTM_CRF_FEATURES",
     "embeddings_name": "glove-840B",
-    "char_vocab_size": 188,
+    "char_vocab_size": 195,
     "case_vocab_size": 8,
     "char_embedding_size": 25,
     "num_char_lstm_units": 25,
@@ -40,7 +40,6 @@
     "fold_number": 1,
     "batch_size": 40,
     "transformer_name": null,
-    "use_ELMo": false,
     "features_map_to_index": {
         "9": {
             "ALLCAPS": 1,
