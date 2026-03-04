@@ -146,7 +146,8 @@ subprojects {
                      'langdetect-1.1-20120112.jar',
                      'grobid-lucene-analysers-0.0.2.jar',
                      'imageio-pnm-1.0.jar',
-                     'wapiti-1.5.0.jar']
+                     'wapiti-1.5.0.jar',
+                     'blingfire-java-0.2.1.jar']
     }
 
     dependencies {
