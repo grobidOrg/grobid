@@ -89,9 +89,9 @@ public abstract class AbstractTrainer implements Trainer {
         createCRFPPData(getCorpusPath(), dataPath);
         GenericTrainer trainer = TrainerFactory.getTrainer(model);
 
-        trainer.setEpsilon(GrobidProperties.getEpsilon(model));
-        trainer.setWindow(GrobidProperties.getWindow(model));
-        trainer.setNbMaxIterations(GrobidProperties.getNbMaxIterations(model));
+        trainer.setEpsilon(epsilon != 0.0 ? epsilon : GrobidProperties.getEpsilon(model));
+        trainer.setWindow(window != 0 ? window : GrobidProperties.getWindow(model));
+        trainer.setNbMaxIterations(nbMaxIterations != 0 ? nbMaxIterations : GrobidProperties.getNbMaxIterations(model));
 
         File dirModelPath = new File(GrobidProperties.getModelPath(model).getAbsolutePath()).getParentFile();
         if (!dirModelPath.exists()) {
