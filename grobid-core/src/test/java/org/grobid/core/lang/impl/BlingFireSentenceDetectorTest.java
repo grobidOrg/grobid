@@ -1,10 +1,8 @@
 package org.grobid.core.lang.impl;
 
 import org.grobid.core.utilities.OffsetPosition;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
 import java.util.List;
 
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -12,16 +10,7 @@ import static org.hamcrest.Matchers.*;
 
 public class BlingFireSentenceDetectorTest {
 
-    private static BlingFireSentenceDetector detector;
-
-    @BeforeAll
-    static void setUp() {
-        // Resolve from project root (parent of grobid-core module directory)
-        File moduleDir = new File(System.getProperty("user.dir"));
-        File projectRoot = moduleDir.getName().equals("grobid-core") ? moduleDir.getParentFile() : moduleDir;
-        String modelPath = new File(projectRoot, "grobid-home/sentence-segmentation/blingfire/sbd.bin").getAbsolutePath();
-        detector = new BlingFireSentenceDetector(modelPath);
-    }
+    private final BlingFireSentenceDetector detector = new BlingFireSentenceDetector();
 
     @Test
     public void testDetect_singleSentence() {
