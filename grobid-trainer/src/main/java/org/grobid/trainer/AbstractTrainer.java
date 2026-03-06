@@ -46,6 +46,7 @@ public abstract class AbstractTrainer implements Trainer {
     protected double epsilon = 0.0; // size of the interval for stopping criterion
     protected int window = 0; // similar to CRF++
     protected int nbMaxIterations = 0; // maximum number of iterations in training
+    protected File outputModelPath = null; // custom output model path; null = use GrobidProperties default
 
     protected GrobidModel model;
     private File trainDataPath;
@@ -73,6 +74,10 @@ public abstract class AbstractTrainer implements Trainer {
         this.nbMaxIterations = nbMaxIterations;
     }
 
+    public void setOutputModelPath(File outputModelPath) {
+        this.outputModelPath = outputModelPath;
+    }
+
     @Override
     public int createCRFPPData(final File corpusDir, final File trainingOutputPath) {
         return createCRFPPData(corpusDir, trainingOutputPath, null, 1.0);
@@ -93,19 +98,36 @@ public abstract class AbstractTrainer implements Trainer {
         trainer.setWindow(window != 0 ? window : GrobidProperties.getWindow(model));
         trainer.setNbMaxIterations(nbMaxIterations != 0 ? nbMaxIterations : GrobidProperties.getNbMaxIterations(model));
 
-        File dirModelPath = new File(GrobidProperties.getModelPath(model).getAbsolutePath()).getParentFile();
+        final File defaultModelPath = GrobidProperties.getModelPath(model);
+        final File finalModelPath;
+        if (outputModelPath != null) {
+            if (outputModelPath.getAbsolutePath().equals(defaultModelPath.getAbsolutePath())) {
+                throw new GrobidException("Custom output model path must differ from the default model path: "
+                    + defaultModelPath.getAbsolutePath());
+            }
+            finalModelPath = outputModelPath;
+        } else {
+            finalModelPath = defaultModelPath;
+        }
+
+        File dirModelPath = finalModelPath.getParentFile();
         if (!dirModelPath.exists()) {
             LOGGER.warn("Cannot find the destination directory " + dirModelPath.getAbsolutePath() + " for the model " + model.getModelName() + ". Creating it.");
             dirModelPath.mkdirs();
-            //throw new GrobidException("Cannot find the destination directory " + dirModelPath.getAbsolutePath() + " for the model " + model.toString());
         }
-        final File tempModelPath = new File(GrobidProperties.getModelPath(model).getAbsolutePath() + NEW_MODEL_EXT);
-        final File oldModelPath = GrobidProperties.getModelPath(model);
-        trainer.train(getTemplatePath(), dataPath, tempModelPath, GrobidProperties.getWapitiNbThreads(), model, incremental);
-        // if we are here, that means that training succeeded
-        // rename model for CRF sequence labellers (not with DeLFT deep learning models)
-        if (GrobidProperties.getGrobidEngine(this.model) != GrobidCRFEngine.DELFT)
-            renameModels(oldModelPath, tempModelPath);
+
+        if (outputModelPath != null) {
+            // Write directly to the specified path — no rename dance
+            trainer.train(getTemplatePath(), dataPath, finalModelPath, GrobidProperties.getWapitiNbThreads(), model, incremental);
+        } else {
+            // Default atomic rename: write to .new, then rename
+            final File tempModelPath = new File(finalModelPath.getAbsolutePath() + NEW_MODEL_EXT);
+            trainer.train(getTemplatePath(), dataPath, tempModelPath, GrobidProperties.getWapitiNbThreads(), model, incremental);
+            // if we are here, that means that training succeeded
+            // rename model for CRF sequence labellers (not with DeLFT deep learning models)
+            if (GrobidProperties.getGrobidEngine(this.model) != GrobidCRFEngine.DELFT)
+                renameModels(finalModelPath, tempModelPath);
+        }
     }
 
     protected void renameModels(final File oldModelPath, final File tempModelPath) {
