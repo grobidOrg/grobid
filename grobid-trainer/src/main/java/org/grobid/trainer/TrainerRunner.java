@@ -59,13 +59,13 @@ public class TrainerRunner {
     public static void main(String[] args) {
         if (args.length < 4) {
             throw new IllegalStateException(
-                "Usage: {" + String.join(", ", options) + "} {" + String.join(", ", models) + "} -gH /path/to/Grobid/home -s { [0.0 - 1.0] - split ratio, optional} -n {[int, num folds for n-fold evaluation, optional]}");
+                "Usage: {" + String.join(", ", options) + "} {" + String.join(", ", models) + "} -gH /path/to/Grobid/home -s { [0.0 - 1.0] - split ratio, optional} -n {[int, num folds for n-fold evaluation, optional]} -epsilon {double, Wapiti epsilon, optional} -w {int, Wapiti window, optional} -maxIter {int, Wapiti max iterations, optional}");
         }
 
         RunType mode = RunType.getRunType(Integer.parseInt(args[0]));
         if ((mode == RunType.SPLIT || mode == RunType.EVAL_N_FOLD) && (args.length < 6)) {
             throw new IllegalStateException(
-                "Usage: {" + String.join(", ", options) + "} {" + String.join(", ", models) + "} -gH /path/to/Grobid/home -s { [0.0 - 1.0] - split ratio, optional} -n {[int, num folds for n-fold evaluation, optional]}");
+                "Usage: {" + String.join(", ", options) + "} {" + String.join(", ", models) + "} -gH /path/to/Grobid/home -s { [0.0 - 1.0] - split ratio, optional} -n {[int, num folds for n-fold evaluation, optional]} -epsilon {double, Wapiti epsilon, optional} -w {int, Wapiti window, optional} -maxIter {int, Wapiti max iterations, optional}");
         }
 
         String path2GbdHome = null;
@@ -73,6 +73,9 @@ public class TrainerRunner {
         int numFolds = 0;
         String outputFilePath = null;
         boolean incremental = false;
+        double epsilon = 0.0;
+        int window = 0;
+        int nbMaxIterations = 0;
         for (int i = 0; i < args.length; i++) {
             if (args[i].equals("-gH")) {
                 if (i + 1 == args.length) {
@@ -108,12 +111,42 @@ public class TrainerRunner {
             } else if (args[i].equals("-i")) {
                 incremental = true;
 
+            } else if (args[i].equals("-epsilon")) {
+                if (i + 1 == args.length) {
+                    throw new IllegalStateException("Missing epsilon value. ");
+                }
+                try {
+                    epsilon = Double.parseDouble(args[i + 1]);
+                } catch (Exception e) {
+                    throw new IllegalStateException("Invalid epsilon value: " + args[i + 1]);
+                }
+
+            } else if (args[i].equals("-w")) {
+                if (i + 1 == args.length) {
+                    throw new IllegalStateException("Missing window value. ");
+                }
+                try {
+                    window = Integer.parseInt(args[i + 1]);
+                } catch (Exception e) {
+                    throw new IllegalStateException("Invalid window value: " + args[i + 1]);
+                }
+
+            } else if (args[i].equals("-maxIter")) {
+                if (i + 1 == args.length) {
+                    throw new IllegalStateException("Missing nbMaxIterations value. ");
+                }
+                try {
+                    nbMaxIterations = Integer.parseInt(args[i + 1]);
+                } catch (Exception e) {
+                    throw new IllegalStateException("Invalid nbMaxIterations value: " + args[i + 1]);
+                }
+
             }
         }
 
         if (path2GbdHome == null) {
             throw new IllegalStateException(
-                "Grobid-home path not found.\n Usage: {" + String.join(", ", options) + "} {" + String.join(", ", models) + "} -gH /path/to/Grobid/home -s { [0.0 - 1.0] - split ratio, optional} -n {[int, num folds for n-fold evaluation, optional]}");
+                "Grobid-home path not found.\n Usage: {" + String.join(", ", options) + "} {" + String.join(", ", models) + "} -gH /path/to/Grobid/home -s { [0.0 - 1.0] - split ratio, optional} -n {[int, num folds for n-fold evaluation, optional]} -epsilon {double, Wapiti epsilon, optional} -w {int, Wapiti window, optional} -maxIter {int, Wapiti max iterations, optional}");
         }
 
         final String path2GbdProperties = path2GbdHome + File.separator + "config" + File.separator + "grobid.properties";
@@ -169,6 +202,10 @@ public class TrainerRunner {
             trainer = new FundingAcknowledgementTrainer();
         } else {
             throw new IllegalStateException("The model " + model + " is unknown.");
+        }
+
+        if (epsilon != 0.0 || window != 0 || nbMaxIterations != 0) {
+            trainer.setParams(epsilon, window, nbMaxIterations);
         }
 
         switch (mode) {
