@@ -41,9 +41,25 @@ var grobid = (function($) {
 			$('#gbdForm3').attr('action', baseUrl);
 	}
 
+	function fetchVersion() {
+		$.ajax({
+			type: 'GET',
+			url: defineBaseURL('version'),
+			dataType: 'json',
+			success: function(data) {
+				var versionHtml = '- version: ' + data.version;
+				if (data.revision) {
+					versionHtml += ' (<a href="https://github.com/kermitt2/grobid/commit/' + encodeURIComponent(data.revision) + '" target="_blank" style="color:#848484;">' + data.revision + '</a>)';
+				}
+				$('#grobid-version').html(versionHtml);
+			}
+		});
+	}
+
 	$(document).ready(function() {
 		$("#subTitle").html("About");
 		$("#divAbout").show();
+		fetchVersion();
 		//$("#divAdmin").hide();
 
 		// for TEI-based results
