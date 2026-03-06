@@ -4,6 +4,7 @@ plugins {
     id 'com.adarshr.test-logger' version '4.0.0' apply false
     id 'com.github.kt3k.coveralls' version '2.12.2' apply false
     id 'net.researchgate.release' version '3.1.0' apply false
+    id 'com.diffplug.spotless' version '8.2.1' apply false
 }
 
 repositories {
@@ -99,12 +100,32 @@ subprojects {
     apply plugin: 'maven-publish'
     apply plugin: 'org.jetbrains.kotlin.jvm'
     apply plugin: 'com.adarshr.test-logger'
+    apply plugin: 'com.diffplug.spotless'
+
+    spotless {
+        java {
+            target 'src/**/*.java'
+            eclipse().configFile(rootProject.file('eclipse-formatter.xml'))
+            removeUnusedImports()
+            trimTrailingWhitespace()
+            endWithNewline()
+        }
+        kotlin {
+            target 'src/**/*.kt'
+            ktlint().editorConfigOverride([
+                'ktlint_standard_no-wildcard-imports': 'disabled',
+                'max_line_length': 'off'
+            ])
+            trimTrailingWhitespace()
+            endWithNewline()
+        }
+    }
 
     publishing {
         publications {
             mavenJava(MavenPublication) {
                 from components.java
-                //artifact jar 
+                //artifact jar
             }
         }
         repositories {
@@ -578,8 +599,8 @@ project(":grobid-trainer") {
     // ./gradlew jatsEval -Pp2t=/path/to/goldenSet
     // ./gradlew jatsEval -Pp2t=/path/to/goldenSet -Prun=1 -PfileRatio=0.1
     // ./gradlew teiEval -Pp2t=/path/to/goldenSet
-    // ./gradlew PrepareDOIMatching -Pp2t=ABS_PATH_TO_PMC/PMC_sample_1943 
-    // ./gradlew EvaluateDOIMatching -Pp2t=ABS_PATH_TO_PMC/PMC_sample_1943 
+    // ./gradlew PrepareDOIMatching -Pp2t=ABS_PATH_TO_PMC/PMC_sample_1943
+    // ./gradlew EvaluateDOIMatching -Pp2t=ABS_PATH_TO_PMC/PMC_sample_1943
     task(jatsEval, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
         mainClass = 'org.grobid.trainer.evaluation.EndToEndEvaluation'
         classpath = sourceSets.main.runtimeClasspath
