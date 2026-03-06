@@ -48,8 +48,10 @@ var grobid = (function($) {
 			dataType: 'json',
 			success: function(data) {
 				var versionHtml = '- version: ' + data.version;
-				if (data.revision) {
+				if (data.revision && data.revision !== 'unknown') {
 					versionHtml += ' (<a href="https://github.com/kermitt2/grobid/commit/' + encodeURIComponent(data.revision) + '" target="_blank" style="color:#848484;">' + data.revision + '</a>)';
+				} else if (data.revision === 'unknown') {
+					versionHtml += ' (unknown revision)';
 				}
 				$('#grobid-version').html(versionHtml);
 			}
