@@ -172,7 +172,6 @@ subprojects {
         implementation "com.cybozu.labs:langdetect:1.1-20120112"
         implementation "com.rockymadden.stringmetric:stringmetric-core_2.11:0.27.4"
         implementation "commons-pool:commons-pool:1.6"
-<<<<<<< tensorflow-2.16
         implementation "commons-io:commons-io:2.14.0"
         implementation "org.apache.commons:commons-lang3:3.6"
         implementation "org.apache.commons:commons-collections4:4.1"
@@ -181,18 +180,6 @@ subprojects {
         implementation "com.google.guava:guava:31.0.1-jre"
         implementation "org.apache.httpcomponents:httpclient:4.5.3"
         implementation "black.ninia:jep:4.3.1"
-=======
-        implementation "commons-io:commons-io:2.21.0"
-        implementation "org.apache.commons:commons-lang3:3.20.0"
-        implementation "org.apache.commons:commons-collections4:4.5.0"
-        implementation 'org.apache.commons:commons-text:1.15.0'
-        implementation "commons-dbutils:commons-dbutils:1.8.1"
-        implementation "com.google.guava:guava:33.5.0-jre"
-        implementation "org.apache.httpcomponents:httpclient:4.5.14"
-        implementation "black.ninia:jep:4.2.2"
-        implementation 'com.github.pemistahl:lingua:1.2.2'
->>>>>>> master
-
         implementation "com.fasterxml.jackson.core:jackson-core:2.21.1"
         implementation "com.fasterxml.jackson.core:jackson-databind:2.21.1"
         implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.21.1"
@@ -267,11 +254,7 @@ project("grobid-core") {
 
         implementation "joda-time:joda-time:2.14.0"
         implementation "org.apache.lucene:lucene-analyzers-common:4.5.1"
-<<<<<<< tensorflow-2.16
         implementation 'black.ninia:jep:4.3.1'
-=======
-        implementation 'black.ninia:jep:4.2.2'
->>>>>>> master
         implementation 'org.apache.opennlp:opennlp-tools:1.9.4'
         implementation group: 'org.jruby', name: 'jruby-complete', version: '9.4.12.1'
 
