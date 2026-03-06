@@ -45,7 +45,6 @@
     "fold_number": 1,
     "batch_size": 9,
     "transformer_name": null,
-    "use_ELMo": false,
     "features_map_to_index": {
         "9": {
             "BLOCKEND": 1,
