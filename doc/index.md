@@ -1,59 +1,63 @@
 # GROBID Documentation
 
 
+## Getting Started
+
+New to GROBID? Start here to get up and running quickly.
+
+* [Quick start](getting_started.md) — install and launch GROBID in minutes
+
+* [Run with Docker](Grobid-docker.md) — the easiest way to deploy GROBID
+
+* [Troubleshooting and FAQ](Frequently-asked-questions.md) — common issues and solutions
+
+## User Guide
+
+Everything you need to use GROBID once it's running.
+
+* [Using the REST API](Grobid-service.md) — endpoints, parameters, and client libraries
+
+* [Understanding the output (TEI)](TEI-encoding-of-results.md) — structure of the TEI XML results
+
+* [PDF coordinates](Coordinates-in-PDF.md) — extracting bounding boxes for structures in the original PDF
+
+* [Configuration](Configuration.md) — tuning GROBID for your use case
+
+* [Consolidation service](Consolidation.md) — linking extracted references to external metadata
+
+* [Specialized processes](Grobid-specialized-processes.md) — patents, medical, and other domain-specific workflows
+
 ## About
 
-* [Introduction](Introduction.md)
+* [Introduction](Introduction.md) — what GROBID is and what it does
 
-* [How GROBID works](Principles.md)
+* [How GROBID works](Principles.md) — architecture and processing pipeline
 
-* [References](References.md)
+* [Benchmarks](benchmarks/Benchmarking.md) — evaluation methodology and overview of results
+
+* [References](References.md) — publications about GROBID
 
 * [License](License.md)
 
-## User manual
+## Developer Guide
 
-* [Getting Started](getting_started.md) (**Starting point**)
+Building, training, and extending GROBID.
 
-* [Use GROBID as a service](Grobid-service.md)
+* [Build from source](Install-Grobid.md) — set up a development environment
 
-* [Build a GROBID development environment](Install-Grobid.md)
+* [Training and evaluating models](Training-the-models-of-Grobid.md) — retrain or fine-tune GROBID models
 
-* [Manage GROBID with containers (Docker)](Grobid-docker.md)
+* [End-to-end evaluation](End-to-end-evaluation.md) — evaluate full pipeline performance
 
-* [GROBID configuration](Configuration.md)
+* [Deep Learning models](Deep-Learning-models.md) — using DL models instead of default CRF
 
-* [GROBID specialized processes](Grobid-specialized-processes.md)
+* [Developer notes](Notes-grobid-developers.md) — internal conventions and tips for contributors
 
-* [Troubleshooting and FAQ](Frequently-asked-questions.md)
+* [Recompiling CRF libraries](Recompiling-and-integrating-CRF-libraries.md) — rebuilding native CRF dependencies
 
-* [TEI encoding of results](TEI-encoding-of-results.md)
+## Annotation Guidelines
 
-* [Coordinates of structures in the original PDF](Coordinates-in-PDF.md)
-
-* [Adding a consolidation service](Consolidation.md)
-
-* [Training and evaluating the GROBID models](Training-the-models-of-Grobid.md)
-
-* [End-to-end evaluation](End-to-end-evaluation.md)
-
-* [Grobid in batch mode](Grobid-batch.md) (deprecated)
-
-* [Use Grobid library in third party Java applications](Grobid-java-library.md) (deprecated)
-
-## Benchmarks
-
-* [Description](benchmarks/Benchmarking.md)
-
-* [Evaluation PubMed Central](benchmarks/Benchmarking-pmc.md)
-
-* [Evaluation bioRxiv](benchmarks/Benchmarking-biorxiv.md)
-
-* [Evaluation PLOS](benchmarks/Benchmarking-plos.md)
-
-* [Evaluation eLife](benchmarks/Benchmarking-elife.md)
-
-## Annotation guidelines
+Guidelines for annotating training data.
 
 * [General principles](training/General-principles.md)
 
@@ -63,19 +67,30 @@
 
 * [Header model](training/header.md)
 
-* [Bibliographical reference](training/Bibliographical-references.md)
+* [Bibliographical references](training/Bibliographical-references.md)
 
 * [Affiliation-address model](training/affiliation-address.md)
 
 * [Date model](training/date.md)
 
-## Developer notes
+## Benchmarking
 
-* [Notes for the Grobid Developers](Notes-grobid-developers.md)
+Detailed evaluation results on specific datasets.
 
-* [Using Deep Learning models instead of default CRF](Deep-Learning-models.md)
+* [PubMed Central](benchmarks/Benchmarking-pmc.md)
 
-* [Recompiling and integrating CRF libraries into GROBID](Recompiling-and-integrating-CRF-libraries.md)
+* [bioRxiv](benchmarks/Benchmarking-biorxiv.md)
 
+* [PLOS](benchmarks/Benchmarking-plos.md)
 
+* [eLife](benchmarks/Benchmarking-elife.md)
 
+* [Model comparison](benchmarks/Benchmarking-models.md)
+
+## Archive
+
+Deprecated features kept for reference.
+
+* [Batch mode (deprecated)](Grobid-batch.md)
+
+* [Java library (deprecated)](Grobid-java-library.md)

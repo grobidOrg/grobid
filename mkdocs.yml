@@ -36,33 +36,31 @@ plugins:
     - search
 nav:
   - Home: 'index.md'
+  - Getting Started:
+    - 'Quick start': 'getting_started.md'
+    - 'Run with Docker': 'Grobid-docker.md'
+    - 'Troubleshooting and FAQ': 'Frequently-asked-questions.md'
+  - User Guide:
+    - 'Using the REST API': 'Grobid-service.md'
+    - 'Understanding the output (TEI)': 'TEI-encoding-of-results.md'
+    - 'PDF coordinates': 'Coordinates-in-PDF.md'
+    - 'Configuration': 'Configuration.md'
+    - 'Consolidation service': 'Consolidation.md'
+    - 'Specialized processes': 'Grobid-specialized-processes.md'
   - About:
     - 'Introduction': 'Introduction.md'
     - 'How GROBID works': 'Principles.md'
+    - 'Benchmarks': 'benchmarks/Benchmarking.md'
     - 'References': 'References.md'
     - 'Licence': 'License.md'
-  - User manual:
-    - 'Getting started': 'getting_started.md'
-    - 'GROBID service': 'Grobid-service.md'
-    - 'Build GROBID from source': 'Install-Grobid.md'
-    - 'GROBID with containers': 'Grobid-docker.md'
-    - 'GROBID configuration': 'Configuration.md'
-    - 'GROBID specialized processes': 'Grobid-specialized-processes.md'
-    - 'TEI encoding of results': 'TEI-encoding-of-results.md'
-    - 'Coordinates of structures in the PDF': 'Coordinates-in-PDF.md'
-    - 'Adding a consolidation service': 'Consolidation.md'
-    - 'Training the GROBID models': 'Training-the-models-of-Grobid.md'
+  - Developer Guide:
+    - 'Build from source': 'Install-Grobid.md'
+    - 'Training and evaluating models': 'Training-the-models-of-Grobid.md'
     - 'End-to-end evaluation': 'End-to-end-evaluation.md'
-    - 'Troubleshooting and FAQ': 'Frequently-asked-questions.md'
-    - 'Grobid in batch mode': 'Grobid-batch.md'
-    - 'Use Grobid library in third party Java applications': 'Grobid-java-library.md'
-  - Benchmarking:
-    - 'Description': 'benchmarks/Benchmarking.md'
-    - 'PubMed Central': 'benchmarks/Benchmarking-pmc.md'
-    - 'bioRxiv': 'benchmarks/Benchmarking-biorxiv.md'
-    - 'PLOS': 'benchmarks/Benchmarking-plos.md'
-    - 'eLife': 'benchmarks/Benchmarking-elife.md'
-  - Annotation guidelines:
+    - 'Deep Learning models': 'Deep-Learning-models.md'
+    - 'Developer notes': 'Notes-grobid-developers.md'
+    - 'Recompiling CRF libraries': 'Recompiling-and-integrating-CRF-libraries.md'
+  - Annotation Guidelines:
     - 'General principles': 'training/General-principles.md'
     - 'Segmentation model': 'training/segmentation.md'
     - 'Fulltext model': 'training/fulltext.md'
@@ -70,7 +68,12 @@ nav:
     - 'Bibliographical references': 'training/Bibliographical-references.md'
     - 'Affiliation-address model': 'training/affiliation-address.md'
     - 'Date model': 'training/date.md'
-  - Developer notes:
-    - 'Notes for the Grobid Developers': 'Notes-grobid-developers.md'
-    - 'Deep Learning models': 'Deep-Learning-models.md'
-    - 'Recompiling CRF libraries': 'Recompiling-and-integrating-CRF-libraries.md'
+  - Benchmarking:
+    - 'PubMed Central': 'benchmarks/Benchmarking-pmc.md'
+    - 'bioRxiv': 'benchmarks/Benchmarking-biorxiv.md'
+    - 'PLOS': 'benchmarks/Benchmarking-plos.md'
+    - 'eLife': 'benchmarks/Benchmarking-elife.md'
+    - 'Model comparison': 'benchmarks/Benchmarking-models.md'
+  - Archive:
+    - 'Batch mode (deprecated)': 'Grobid-batch.md'
+    - 'Java library (deprecated)': 'Grobid-java-library.md'
