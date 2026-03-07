@@ -1,8 +1,70 @@
-<?xml version="1.0" ?>
-<tei xml:space="preserve">
-	<teiHeader>
-		<fileDesc xml:id="-1"/>
-	</teiHeader>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.segmentation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title level="a">Law, Market and Marketization</title>
+      <author>
+        <persName>
+          <forename>Robin Paul</forename>
+          <surname>Malloy</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2026-01-06T15:41:49.954Z">6.1.2026 16:41:49</date>
+        <title>GitHub version Luca</title>
+        <idno type="fileref">10.6092__issn.2531-6133__6356</idno>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Department of Legal Studies. Alma Mater Studiorum - Università di Bologna</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2016</date>
+      <idno type="DOI">10.6092/issn.2531-6133/6356</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Robin Paul Malloy. (2016). Law, Market and Marketization. University of Bologna Law Review, (), None. DOI: 10.6092/issn.2531-6133/6356</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-08-30T00:02:52.806489Z" type="extractor">
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">e13aa19</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+        <ref target="https://github.com/kermitt2/grobid"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2025-08-30T00:02:52.806489Z" status="extraction">
+      <desc>Generated with createTraining API</desc>
+    </change>
+    <change when="2025-09-01" status="draft" who="cboulanger">
+      <desc>First pass</desc>
+    </change>
+    <change when="2025-09-06" status="published" who="#lfoppiano">
+      <desc>GitHub published version</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
 	<text xml:lang="en">
 			<front>ARTICLES &amp; ESSAYS <lb/>DOI 10.6092/issn.2531-6133/6356 <lb/>UNIVERSITY OF BOLOGNA LAW REVIEW <lb/>ISSN 2531-6133 <lb/>[VOL.1:2 2016] <lb/>This article is released under the terms of Creative Commons Attribution 4.0 International License <lb/>166 <lb/>Law, Market and Marketization <lb/>ROBIN PAUL MALLOY † <lb/>TABLE OF CONTENTS: 1. Introduction; 2. Law &amp; Markets; 3. Law &amp; Marketization; 3.1. <lb/>Assetization; 3.2 Transferring Assets; 3.3 Authentication and Valuation of Assets; 4. <lb/>Conclusion. <lb/>ABSTRACT: Marketization is a process occurring in many transitional economies as <lb/>countries seek to adjust their legal systems to facilitate broader market participation <lb/>while expanding global trade. This essay sets out one way of understanding this <lb/>process by focusing on the relationship among, law, markets, and marketization. It <lb/>identifies and explains basic legal requirements for marketization and links these to a <lb/>need to transform legal thinking by integrating a greater understanding of economics <lb/>into both law and public policy. <lb/>KEYWORDS: Law and Economics; Markets; Marketization; Rule of Law; Property. <lb/>University of Bologna Law Review <lb/>[Vol.1:2 2016] <lb/>DOI 10.6092/issn.2531-6133/6356 <lb/>167 <lb/></front>
 
@@ -144,4 +206,4 @@
 
 
 	</text>
-</tei>
+  </TEI>

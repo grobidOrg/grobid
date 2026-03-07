@@ -1,54 +1,73 @@
-<?xml version="1.0" ?>
-<tei xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.segmentation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="a">From the Field: Law-Related Education as a Branch of Civics Education in the United States</title>
-        <author>
-          <persName>
-            <forename>Latia</forename>
-            <surname>Ward</surname>
-          </persName>
-        </author>
-      </titleStmt>
-      <editionStmt>
-        <edition>
-          <date when="2025-07-20T15:25:03.927Z">20.7.2025 17:25:03</date>
-          <title>Grobid document segmentation corrected</title>
-        </edition>
-      </editionStmt>		
-      <publicationStmt>
-        <publisher>Northumbria University Library</publisher>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
-        </availability>
-        <date type="publication">2022</date>
-        <idno type="DOI">10.19164/ijple.v6i1.1293</idno>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>Latia Ward. (2022). From the Field: Law-Related Education as a Branch of Civics Education in the United States. International Journal of Public Legal Education, 6(1). DOI: 10.19164/ijple.v6i1.1293</bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="1.0" ident="grobid">
-          <label>https://grobid.readthedocs.io/</label>
-        </application>
-        <application version="1.0" ident="pdf-tei-editor">
-          <label>https://github.com/mpilhlt/pdf-tei-editor</label>
-        </application>
-        <application version="1.0" ident="model">
-          <label>lfoppiano/grobid:latest-develop</label>
-          <desc>https://hub.docker.com/layers/lfoppiano/grobid/latest-develop/images/sha256-735fa2c8facb6f95adef5bf344f7223c2e20aadc9c048f624b83b19d3fbef07b</desc>
-        </application>
-      </appInfo>
-    </encodingDesc>
-    <revisionDesc>
-      <change when="2025-07-12">
-        <desc>Extracted 2025-07-12 13:05:47</desc>
-      </change>
-    </revisionDesc>
-  </teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title level="a">From the Field: Law-Related Education as a Branch of Civics Education in the United States</title>
+      <author>
+        <persName>
+          <forename>Latia</forename>
+          <surname>Ward</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2026-03-06T10:14:32.725Z">06/03/2026 11:14:32</date>
+        <title>after-gold-fixes</title>
+        <idno type="fileref">10.19164__ijple.v6i1.1293</idno>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Northumbria University Library</publisher>
+      <availability/>
+      <date type="publication">2022</date>
+      <idno type="DOI">10.19164/ijple.v6i1.1293</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Latia Ward. (2022). From the Field: Law-Related Education as a Branch of Civics Education in the United States. International Journal of Public Legal Education, 6(1). DOI: 10.19164/ijple.v6i1.1293</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI-Editor</label>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-08-07T14:15:00.573667Z" type="extractor">
+        <label>A machine learning software for extracting information from scholarly documents</label>
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">e13aa19</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2025-07-12">
+      <desc>Extracted 2025-07-12 13:05:48</desc>
+    </change>
+    <change when="2025-08-28T08:51:58.797Z" status="draft" who="#cboulanger">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2025-07-15" status="published" who="#lfoppiano">
+      <desc>GitHub (July 15 2025)</desc>
+    </change>
+    <change xmlns="http://www.tei-c.org/ns/1.0" when="2026-01-07T11:03:46.301Z" status="published" who="#cboulanger">
+      <desc>Small correction, updated on GitHub</desc>
+    </change>
+    <change when="2026-03-06T10:20:37.639Z" status="published" who="#lfoppiano">
+      <desc>post-Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
 	<text xml:lang="en">
 			<page>4 <lb/></page>
 
@@ -59,8 +78,8 @@
 		<front>1 Research Librarian at the Arthur J. Morris Law Library of the University of Virginia School of Law. My <lb/>Twitter handle is @tia_ward17. <lb/></front>
 
 		<listBibl>2 Law-Related Education Act of 1978, Pub. L. No. 95-561, 92 Stat. 2216 (1978) repealed by 20 U.S.C. § <lb/>3863(a)(1) (1982). https://perma.cc/G75R-AFKD and https://perma.cc/8TAQ-M8R6 <lb/></listBibl>
-<!-- mixed-reference -->
-		<note place="footnote">3 In the United States, K-12 refers to the education of students in grades Kindergarten through twelve <lb/>before these students enter higher education such as college or university. Generally, elementary school <lb/>consists of grades Kindergarten through five, middle school consists of grades six through eight, and high <lb/>school consists of grades nine through twelve. See also Macmillan Dictionary. (n.d.). K-12. <lb/>https://perma.cc/5D7A-SV6S <lb/></note>
+		<!-- mixed-reference -->
+		<listBibl>3 In the United States, K-12 refers to the education of students in grades Kindergarten through twelve <lb/>before these students enter higher education such as college or university. Generally, elementary school <lb/>consists of grades Kindergarten through five, middle school consists of grades six through eight, and high <lb/>school consists of grades nine through twelve. See also Macmillan Dictionary. (n.d.). K-12. <lb/>https://perma.cc/5D7A-SV6S <lb/></listBibl>
 
 			<page>5 <lb/></page>
 
@@ -72,11 +91,16 @@
 
 		<listBibl>9 Arbetman, L. (2018). Street Law, Inc.: context, history and future. International Journal of Public Legal <lb/>Education, 2(1), https://perma.cc/P8RH-2E4D <lb/></listBibl>
 
-			<page>6 <lb/></page>
+		<page>6 <lb/></page>
 
 		<body>published the textbook, Street Law: A Course in Practical Law for schools across the nation. 10 <lb/>In 1977, the American Bar Association published the first issue of Update on Law Related <lb/>Education. 11 In 1978, Congress passed the Law-Related Education Act of 1978. 12 <lb/>Practical Life Lessons <lb/>Law-related education programs continue to this day. As a member of the Young <lb/>Lawyers Division of the North Carolina Bar Association, I was invited to speak to a group <lb/>of high school students regarding the North Carolina Bar Association publication entitled <lb/>Life &amp; Laws 101: Citizenship Rights and Responsibilities Over 18. 13 I began thinking about <lb/>how to present rights and responsibilities concepts to high schoolers and my interest in <lb/>law-related education continued well after the presentation had concluded. I began <lb/>saving news articles that dealt with issues of civics education. 14 Later, as part of my course <lb/>work in the Master of Science in Library Science degree program at the University of <lb/>North Carolina at Chapel Hill, I designed and completed a service-learning project called <lb/></body>
 
-		<listBibl>10 National Street Law Institute &amp; District of Columbia Project on Community Legal Assistance. (1975). <lb/>Street law: a course in practical law. West. <lb/>11 The American Bar Association replaced Update on Law Related Education with Insights on Law and Society <lb/>in 2000. <lb/>12 Law-Related Education Act of 1978, Pub. L. No. 95-561, 92 Stat. 2216 (1978) repealed by 20 U.S.C. § <lb/>3863(a)(1) (1982). https://perma.cc/G75R-AFKD and https://perma.cc/8TAQ-M8R6 <lb/>13 North Carolina Bar Association Young Lawyers Division Civic Education Outreach Committee. (2015). <lb/>Life &amp; Laws 101: Citizenship Rights and Responsibilities Over 18. <lb/>http://web.archive.org/web/20150923012636/http://www.ncbar.org/media/95451/Life-and-Laws-101.pdf <lb/></listBibl>
+		<listBibl>10 National Street Law Institute &amp; District of Columbia Project on Community Legal Assistance. (1975). <lb/>Street law: a course in practical law. West. <lb/></listBibl>
+        
+        <note place="footnote">11 The American Bar Association replaced Update on Law Related Education with Insights on Law and Society <lb/>in 2000. <lb/></note>
+        
+        <listBibl>12 Law-Related Education Act of 1978, Pub. L. No. 95-561, 92 Stat. 2216 (1978) repealed by 20 U.S.C. § <lb/>3863(a)(1) (1982). https://perma.cc/G75R-AFKD and https://perma.cc/8TAQ-M8R6 <lb/>13 North Carolina Bar Association Young Lawyers Division Civic Education Outreach Committee. (2015). <lb/>Life &amp; Laws 101: Citizenship Rights and Responsibilities Over 18. <lb/>http://web.archive.org/web/20150923012636/http://www.ncbar.org/media/95451/Life-and-Laws-101.pdf <lb/>13 North Carolina Bar Association Young Lawyers Division Civic Education Outreach Committee. (2015). <lb/>Life &amp; Laws 101: Citizenship Rights and Responsibilities Over 18. <lb/>http://web.archive.org/web/20150923012636/http://www.ncbar.org/media/95451/Life-and-Laws-101.pdf <lb/></listBibl>
+		
 	 <!-- mixed-reference -->
 		<note place="footnote">14 Also, during this time, I read a book entitled No One Will Lissen by Lois Forer about Forer&apos;s work as an <lb/>attorney for indigent youth in the late 1960s in Philadelphia. While the book focused on access to justice <lb/>for youth rather than law-related education, it was useful for the insights that Forer provided about <lb/>youth and the legal system. Forer, L.G. (1971). &quot;No one will lissen&quot;: how our legal system brutalizes the <lb/>youthful poor. Grosset &amp; Dunlap. <lb/></note>
 
@@ -182,7 +206,7 @@
 
 			<page>24 <lb/></page>
 
-		<biblio>Federalist Papers.&quot; 109 It appears that ALEC has replaced the &quot;Founding Principles Act&quot; <lb/>with the &quot;Civic Literacy Act.&quot; <lb/>Other states mention the &quot;founding principles&quot; in their statutes as well. Georgia, 110 <lb/>Louisiana, 111 North Carolina, 112 and South Carolina 113 have statutes which mention the <lb/>&quot;founding philosophy&quot; or &quot;founding principles&quot; of the United States and address <lb/>&quot;federalism&quot; or the &quot;Federalist Papers&quot; in the context of K-12 education. Georgia&apos;s statute <lb/>mentions &quot;limited government&quot; 114 and the Utah Code Annotated mentions &quot;founding <lb/>principles&quot; however, it does not include language regarding federalism and limited <lb/>government. 115 Texas has a founding principles act pending before its legislature. 116 If <lb/>passed, the bill would require &quot;an elective course on the founding principles of the United <lb/>States&quot; in high school curricula. 117 <lb/>Civics Education Programs Outside the K-12 Classroom <lb/>Civics education mandates aside, across the United States, librarians and others offer <lb/>civics education programs to high school students outside the K-12 classroom, yet the <lb/></biblio>
+		<body>Federalist Papers.&quot; 109 It appears that ALEC has replaced the &quot;Founding Principles Act&quot; <lb/>with the &quot;Civic Literacy Act.&quot; <lb/>Other states mention the &quot;founding principles&quot; in their statutes as well. Georgia, 110 <lb/>Louisiana, 111 North Carolina, 112 and South Carolina 113 have statutes which mention the <lb/>&quot;founding philosophy&quot; or &quot;founding principles&quot; of the United States and address <lb/>&quot;federalism&quot; or the &quot;Federalist Papers&quot; in the context of K-12 education. Georgia&apos;s statute <lb/>mentions &quot;limited government&quot; 114 and the Utah Code Annotated mentions &quot;founding <lb/>principles&quot; however, it does not include language regarding federalism and limited <lb/>government. 115 Texas has a founding principles act pending before its legislature. 116 If <lb/>passed, the bill would require &quot;an elective course on the founding principles of the United <lb/>States&quot; in high school curricula. 117 <lb/>Civics Education Programs Outside the K-12 Classroom <lb/>Civics education mandates aside, across the United States, librarians and others offer <lb/>civics education programs to high school students outside the K-12 classroom, yet the <lb/></body>
 
 		<listBibl>109 American Legislative Exchange Council. (n.d.). Civic Literacy Act. https://perma.cc/F56U-VESA <lb/>110 GA. CODE ANN. § 20-2-142.1 (2022). (Lexis Advance). <lb/>111 LA. REV. STAT. § 265 (2021). https://perma.cc/7GCT-DL24 <lb/><!-- mixed-reference -->112 N.C. Gen. Stat. § 115C-81.45(d)(Applicable to students entering the ninth grade in the 2021-2022 <lb/>school year)(1). https://perma.cc/A3XG-EZJM <lb/>113 S.C. CODE ANN. § 59-29-155. https://perma.cc/BYT9-B76S <lb/>114 GA. CODE ANN. § 20-2-142.1(c)(1)(B) (2022). (Lexis Advance). <lb/>115 UTAH CODE § 53G-10-204(5)(b). https://perma.cc/H8ZM-U25K <lb/>116 S.B. 1776. 87th Leg., Regul. Sess. (Tex. 2021). https://perma.cc/LS4U-RL2W <lb/>117 S.B. 1776. 87th Leg., Regul. Sess. (Tex. 2021). https://perma.cc/5A6Y-72WP <lb/></listBibl>
 
@@ -204,4 +228,5 @@
 
   
 	</text>
-</tei>
+
+</TEI>

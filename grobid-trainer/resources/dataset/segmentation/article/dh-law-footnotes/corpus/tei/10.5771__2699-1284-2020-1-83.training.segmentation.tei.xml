@@ -1,69 +1,92 @@
-<?xml version="1.0" ?>
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.segmentation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title level="a">Urheberrecht und Zugang in einer digitalen Welt – Urheberrechtliche Fragestellungen des Zugangs für Gedächtnisinstitutionen und die Digital Humanities –</title>
-        <author>
-          <persName>
-            <forename>Katharina de la</forename>
-            <surname>Durantaye</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Benjamin</forename>
-            <surname>Raue</surname>
-          </persName>
-        </author>
-        <respStmt>
-          <persName xml:id="cb">Christian Boulanger</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-      </titleStmt>
-      <editionStmt>
-        <edition>
-          <date when="2025-07-20T15:25:03.927Z">20.7.2025 17:25:03</date>
-          <title>Grobid document segmentation</title>
-        </edition>
-      </editionStmt>
-      <publicationStmt>
-        <publisher>Nomos Verlag</publisher>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
-        </availability>
-        <date type="publication">2020</date>
-        <idno type="DOI">10.5771/2699-1284-2020-1-83</idno>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>Katharina de la Durantaye, Benjamin Raue. (2020). Urheberrecht und Zugang in einer digitalen Welt – Urheberrechtliche Fragestellungen des Zugangs für Gedächtnisinstitutionen und die Digital Humanities –. RuZ - Recht und Zugang, 1(1), . DOI: 10.5771/2699-1284-2020-1-83</bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="1.0" ident="grobid">
-          <label>https://grobid.readthedocs.io/</label>
-        </application>
-        <application version="1.0" ident="pdf-tei-editor">
-          <label>https://github.com/mpilhlt/pdf-tei-editor</label>
-        </application>
-        <!-- for reproducibility -->
-        <application version="1.0" ident="model">
-          <label>lfoppiano/grobid:latest-develop</label>
-          <desc>https://hub.docker.com/layers/lfoppiano/grobid/latest-develop/images/sha256-735fa2c8facb6f95adef5bf344f7223c2e20aadc9c048f624b83b19d3fbef07b</desc>
-        </application>
-      </appInfo>
-    </encodingDesc>
-    <revisionDesc>
-      <change when="2025-07-11">
-        <desc>Extracted 2025-07-11 14:39:36</desc>
-      </change>
-      <change when="2025-07-22" who="#cb">
-        Corrections
-      </change>
-    </revisionDesc>
-  </teiHeader>
-	<text xml:lang="en">
+  <fileDesc>
+    <titleStmt>
+      <title level="a">Urheberrecht und Zugang in einer digitalen Welt – Urheberrechtliche Fragestellungen des Zugangs für Gedächtnisinstitutionen und die Digital Humanities</title>
+      <author>
+        <persName>
+          <forename>Katharina de la</forename>
+          <surname>Durantaye</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Benjamin</forename>
+          <surname>Raue</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cb">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2026-03-06T12:00:46.060Z">3/6/2026 1:00:46 PM</date>
+        <title>review</title>
+        <idno type="fileref">10.5771__2699-1284-2020-1-83</idno>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Nomos Verlag</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2020</date>
+      <idno type="DOI">10.5771/2699-1284-2020-1-83</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Katharina de la Durantaye, Benjamin Raue. (2020). Urheberrecht und Zugang in einer digitalen Welt – Urheberrechtliche Fragestellungen des Zugangs für Gedächtnisinstitutionen und die Digital Humanities –. RuZ - Recht und Zugang, 1(1), . DOI: 10.5771/2699-1284-2020-1-83</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI-Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-08-07T14:15:00.573667Z" type="extractor">
+        <label>A machine learning software for extracting information from scholarly documents</label>
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">e13aa19</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+        <ref target="https://github.com/kermitt2/grobid"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2025-07-11" status="extraction">
+      <desc>Extraction</desc>
+    </change>
+    <change when="2025-08-25T08:50:02.437Z" status="draft" who="#cboulanger">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2025-10-25" status="published" who="#lfoppiano">
+      <desc>Published corrections</desc>
+    </change>
+    <change when="2026-01-06T11:55:16.410Z" status="published" who="#cboulanger">
+      <desc>Post-publication correction</desc>
+    </change>
+    <change when="2026-03-06T13:36:31.648Z" status="approved" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
       <front>Urheberrecht <lb/>Prof. Dr. Katharina de la Durantaye und Prof. Dr. Benjamin Raue * <lb/>Urheberrecht und Zugang in einer digitalen Welt <lb/>-Urheberrechtliche Fragestellungen des Zugangs für <lb/>Gedächtnisinstitutionen und die Digital Humanities -<lb/></front>
       
       <body><!-- missing "I."-->Einleitung <lb/>Das Urheberrecht gewährt dem Urheber Ausschließlichkeitsrechte an Werken. Techni-<lb/>sche und werkvermittelnde Leistungen werden durch Leistungsschutzrechte ge-<lb/>schützt. Wo diese Rechte anfangen und aufhören, wer ein Werk unter welchen Um-<lb/>ständen und auf welche Weise nutzen darf, sind Kernfragen des Urheberrechts. Es <lb/>muss einen Ausgleich schaffen zwischen Exklusivitäts-und Zugangsinteressen. 1 <lb/>In der analogen Welt wurden Zugangsfragen im Urheberrecht dennoch selten pro-<lb/>blematisiert. Der Eigentümer eines Buches konnte es selbstverständlich aufschlagen <lb/>und lesen, ohne den Urheber um Erlaubnis bitten zu müssen. Der analoge Werkgenuss <lb/>war urheberrechtlich irrelevant. Das Urheberrecht mussten im Wesentlichen professio-<lb/>nelle Verwerter beachten. Private und wissenschaftliche Nutzer konnten es hingegen <lb/>weitgehend ignorieren. <lb/>Die Digitalisierung hat die Verhältnisse grundlegend geändert und den Anwen-<lb/>dungsbereich des Urheberrechts erheblich ausgedehnt: 2 Wer ein digitales Werkstück <lb/>nutzt, vervielfältigt es in aller Regel jedenfalls im Arbeitsspeicher seines Geräts. Er <lb/>nimmt damit eine Handlung vor, für die er grundsätzlich der Zustimmung des Urhe-<lb/>bers bedarf. 3 Urheberrecht ist Alltagsrecht geworden. Das stellt das Urheberrecht stär-<lb/>ker als früher vor die Herausforderung, die berechtigten Interessen der Urheber und <lb/><!-- misplaced "I."-->I. <lb/></body>
@@ -131,7 +154,7 @@
 
         <body>cke auf nicht-kommerziellen Internetseiten zugänglich zu machen (Art. 8 Abs. 2, 3 <lb/>DSM-RL). <lb/>Die Nutzungen sollen in einer zentralen Datenbank dokumentiert werden (Art. 10 <lb/>DSM-RL); die Interessenträger sollen einen Dialog führen (Art. 11 DSM-RL). Rechte-<lb/>inhaber müssen der Nutzung einfach widersprechen können (Art. 8 Abs. 4 DSM-RL). <lb/>Damit werden alle Mitgliedstaaten verpflichtet, erweiterte kollektive Lizenzen für <lb/>vergriffene Werke einzuführen. 22 In Deutschland gibt es derartige Lizenzen de facto <lb/>bereits (vgl. § § 51, 52 VGG), allerdings nur für vergriffene Schriftwerke. Außerdem <lb/>können bislang nur die Vervielfältigung und die öffentliche Zugänglichmachung lizen-<lb/>ziert werden. Grenzüberschreitende Nutzungen, die die Richtlinie ausdrücklich ge-<lb/>statten will (Art. 9 DSM-RL), sind derzeit nicht möglich. <lb/>Elementar für den Erfolg der Regelungen wird sein, dass der nationale Gesetzgeber <lb/>die Anforderungen an das Vergriffensein bei der Umsetzung nicht zu hoch ansetzt. <lb/>Nach Art. 8 Abs. 5 DSM-RL soll mit &quot;vertretbarem Aufwand&quot; geprüft werden, ob das <lb/>Werk oder der Schutzgegenstand auf den üblichen Vertriebswegen für die Öffentlich-<lb/>keit erhältlich ist. In den Erwägungsgründen wird ausgeführt, dass Stichproben in vie-<lb/>len Fällen ausreichen werden (ErwGr. 38 S. 6). Wer den Aufwand betreiben muss, dür-<lb/>fen die Mitgliedstaaten festlegen (ErwGr. 38 S. 2). <lb/>Damit hat der europäische Gesetzgeber Konsequenzen aus den Erfahrungen mit der <lb/>Verwaiste Werke-RL 23 gezogen. Danach müssen die berechtigten Kultureinrichtungen <lb/>eine &quot;sorgfältige Suche&quot; nach dem Rechteinhaber jedes Werkes durchführen, bevor sie <lb/>mit der Nutzung beginnen dürfen (Art. 2 Abs. 1, Art. 3). 24 Bei Massendigitalisierungs-<lb/>projekten ist eine solche Suche mit ganz erheblichen Kosten verbunden. Gedächtnisin-<lb/>stitutionen machen von dieser Nutzungsmöglichkeit, die Deutschland in § § 61 ff. <lb/>UrhG umgesetzt hat, deswegen auch nur selten Gebrauch. Das beim Amt der Europä-<lb/>ischen Union für geistiges Eigentum (EUIPO) geführte zentrale Register verwaister <lb/>Werke weist derzeit für die gesamte EU lediglich 5.924 Werke aus. 25 Das beim Deut-<lb/>schen Patent-und Markenamt geführte Register vergriffener Werke hingegen enthält <lb/>alleine für Deutschland 27.583 Einträge. <lb/><!-- missing "3." -->Völkerrecht <lb/>Im September 2016 trat der Vertrag von Marrakesch zur Erleichterung des Zugangs für <lb/>blinde, sehbehinderte und anderweitig lesebehinderte Personen zu veröffentlichten <lb/></body><!-- misplaced "3."-->3. <lb/>
 
-        <note place="footnote">22 Nach Art. 12 DSM-RL dürfen sie auch in anderen Fällen, in denen die individuelle Lizenzie-<lb/>rung so aufwändig ist, dass sie üblicherweise nicht erfolgt, erweiterte kollektive Lizenzen <lb/>vorsehen; verpflichtet sind sie dazu aber nicht. <lb/><!-- mixed-reference --><listBibl>23 Richtlinie 2012/28/EU des Europäischen Parlaments und des Rates vom 25.10.2012 über be-<lb/>stimmte zulässige Formen der Nutzung verwaister Werke, ABl. EU 2012 L 299/5. <lb/></listBibl><note place="footnote">24 Diese Vorgaben wurden umgesetzt in § § 61 Abs. 2, 61a UrhG.<lb/></note></note><listBibl>25 Orphan Works Database, abrufbar unter: https://euipo.europa.eu/orphanworks/#search/basi <lb/>c/all, zuletzt abgerufen am 23.1.2020. Darin enthalten sind 6.902 eingebettete Werke. <lb/></listBibl>
+        <note place="footnote">22 Nach Art. 12 DSM-RL dürfen sie auch in anderen Fällen, in denen die individuelle Lizenzie-<lb/>rung so aufwändig ist, dass sie üblicherweise nicht erfolgt, erweiterte kollektive Lizenzen <lb/>vorsehen; verpflichtet sind sie dazu aber nicht. <lb/></note><!-- mixed-reference --><listBibl>23 Richtlinie 2012/28/EU des Europäischen Parlaments und des Rates vom 25.10.2012 über be-<lb/>stimmte zulässige Formen der Nutzung verwaister Werke, ABl. EU 2012 L 299/5. <lb/></listBibl><note place="footnote">24 Diese Vorgaben wurden umgesetzt in § § 61 Abs. 2, 61a UrhG.<lb/></note><listBibl>25 Orphan Works Database, abrufbar unter: https://euipo.europa.eu/orphanworks/#search/basi <lb/>c/all, zuletzt abgerufen am 23.1.2020. Darin enthalten sind 6.902 eingebettete Werke. <lb/></listBibl>
 
       <!-- misplaced header, wrong line break after page number  -->
         <page>88 <lb/></page>
@@ -174,9 +197,12 @@
 
         <body><!-- missing "1."-->Recherche-und Materialsammelphase <lb/>In der Recherche-und Materialsammelphase stellen sich Zugangsfragen, die bei priva-<lb/>ten Informationsinhabern nicht nur urheberrechtliche, sondern auch eigentums-und <lb/>vertragsrechtliche Fragen aufwerfen sowie bei Informationen der öffentlichen Hand <lb/>Fragen des Informationszugangs 35 und deren Weiterverwendung. Urheberrechtlich re-<lb/>levant ist im Forschungskontext, ob bereits das Betrachten bzw. Lesen digitaler Quel-<lb/>len, zu denen dem Wissenschaftler rechtswidrig Zugang verschafft wurde, eine Urhe-<lb/>berrechtsverletzung darstellt. 36 Denn die Schutzgegenstände müssen dafür vorüberge-<lb/>hend im Arbeitsspeicher des digital device gespeichert werden. <lb/>Wer digitale Materialien dauerhaft speichert und aufbereitet, muss das Urheberrecht <lb/>beachten. Das gilt uneingeschränkt, wenn das Material urheberrechtlich geschützt ist. <lb/>Die Schutzdauer für urheberrechtliche Verwertungshandlungen, die in Deutschland <lb/>stattfinden, ist 70 Jahre nach dem Tod des Autors ( § 64 UrhG). 37 Aber auch an sich ge-<lb/>meinfreie Werke können dem Urheberrecht unterfallen. So können etwa (nicht-ma-<lb/>schinelle) Übersetzungen urheberrechtlich geschützter Werke auch nach Ablauf der <lb/>Schutzfrist des Originalwerks als Bearbeitungen nach § 3 UrhG geschützt sein. Ihr <lb/>Schutz läuft erst 70 Jahre nach dem Tod des Übersetzers aus. Darüber hinaus genießen <lb/>wissenschaftliche Ausgaben, also Ausgaben urheberrechtlich nicht geschützter Werke <lb/>oder Texte, die das Ergebnis wissenschaftlich sichtender Tätigkeit sind und sich we-<lb/>sentlich von den bisher bekannten Ausgaben unterscheiden, ab Erscheinen 25 Jahre <lb/>lang Schutz ( § 70 UrhG). Für die wissenschaftliche Praxis ebenfalls relevant ist, dass <lb/>die Vervielfältigung von Datenbanken oder die Entnahme von Texten aus ihnen gegen <lb/>das Urheberrecht verstoßen kann, wenn die Datenbanken entweder das Ergebnis <lb/>schöpferischer Leistung ( § 4 Abs. 2 UrhG) oder wesentlicher Investitionen ( § 87 a <lb/>UrhG) sind. <lb/><!-- missing "2." -->Aufbereitungsphase <lb/>Um digitale Korpora für anspruchsvolle wissenschaftliche Fragestellungen nutzen zu <lb/>können, müssen diese im Regelfall aufbereitet werden. 38 Über die Frage nach dem Ver-<lb/>vielfältigungsrecht hinaus stellt sich dabei die Frage, inwiefern dadurch in das Bearbei-<lb/>tungsrecht eingegriffen wird. 39 Der deutsche Gesetzgeber hat &quot;ausschließlich technisch <lb/>bedingte Änderungen eines Werkes nach § 60d Absatz 1, § 60e Absatz 1 sowie § 60f <lb/><!-- misplaced "1." and "2." -->1. <lb/>2. <lb/></body>
 
-        <listBibl>35 Zu den urheberrechtlichen Einschränkungen der Informationszugangsansprüche etwa: Raue, <lb/>JZ 2013, 280 ff. <lb/>36 Dazu: Raue, ZGE 2017, 514, 530 ff. <lb/>37 Bei mehreren Autoren richtet sich der Fristbeginn nach dem Tod des Längstlebenden, § 65 <lb/>Abs. 1 UrhG. <lb/>38 Vgl.: Triaille/de Meeüs d &apos;Argenteuil/de Francquen, Study on the legal framework of text and <lb/>data mining, 2014, S. 47 f.; Schöch, Digitale Wissensproduktion, in: Jannidis/Kohle/Rehbein, <lb/>Digital Humanities -Eine Einführung, 2017, S. 223, 227 ff. <lb/>39 Dazu etwa: Spindler, GRUR 2016, 1112, 1113 f.; Specht, OdW 2018, 285. <lb/>91 <lb/>de la Durantaye und Raue • Urheberrecht und Zugang <lb/></listBibl>
+        <listBibl>35 Zu den urheberrechtlichen Einschränkungen der Informationszugangsansprüche etwa: Raue, <lb/>JZ 2013, 280 ff. <lb/>36 Dazu: Raue, ZGE 2017, 514, 530 ff. <lb/>37 Bei mehreren Autoren richtet sich der Fristbeginn nach dem Tod des Längstlebenden, § 65 <lb/>Abs. 1 UrhG. <lb/>38 Vgl.: Triaille/de Meeüs d &apos;Argenteuil/de Francquen, Study on the legal framework of text and <lb/>data mining, 2014, S. 47 f.; Schöch, Digitale Wissensproduktion, in: Jannidis/Kohle/Rehbein, <lb/>Digital Humanities -Eine Einführung, 2017, S. 223, 227 ff. <lb/>39 Dazu etwa: Spindler, GRUR 2016, 1112, 1113 f.; Specht, OdW 2018, 285. <lb/></listBibl>
+    
+    <page>91 <lb/></page>
+    <note place="headote">de la Durantaye und Raue • Urheberrecht und Zugang <lb/></note>
 
-      <!-- misplaced header, missing header text -->
+      <!-- misplaced header, missing header text -->  <!-- the header text had been included within listBibl, updated as above -->
         <page>91 <lb/></page>
 
         <note place="footnote">RuZ 1. Jg. 1/2020 <lb/>https://doi.org/10.5771/2699-1284-2020-1-83, am 11.07.2025, 10:55:52 <lb/>Open Access -<lb/>-https://www.nomos-elibrary.de/de/agb <lb/></note>
@@ -220,4 +246,8 @@
         <note place="footnote">https://doi.org/10.5771/2699-1284-2020-1-83, am 11.07.2025, 10:55:52 <lb/>Open Access -<lb/>-https://www.nomos-elibrary.de/de/agb</note>
 
 	</text>
-</TEI>
+
+	
+  
+  
+  </TEI>
