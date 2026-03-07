@@ -136,6 +136,7 @@ var grobid = (function($) {
 			$("#divAbout").hide();
 			//$("#divAdmin").hide();
 			$("#sideLinks").hide();
+
 			return false;
 		});
 		/*$("#admin").click(function() {
@@ -176,6 +177,7 @@ var grobid = (function($) {
 			$("#divRestIII").hide();
 			//$("#divAdmin").hide();
 			$("#sideLinks").hide();
+
 			return false;
 		});
 		$("#patent").click(function() {
@@ -195,6 +197,7 @@ var grobid = (function($) {
 			$("#divRestIII").show();
 			//$("#divAdmin").hide();
 			$("#sideLinks").hide();
+
 			return false;
 		});
 	});
