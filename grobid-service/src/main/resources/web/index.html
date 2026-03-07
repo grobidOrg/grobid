@@ -62,12 +62,17 @@
 	
 			<table border="0">
 				<tr>
-				<td style="width:100px;align:left;vertical-align: top;"><h4><span id="subTitle"></span></h4></td> 
+				<td style="width:100px;text-align:center;vertical-align: top; padding-top:10px;">
+					<span id="subTitle" style="display:none;"></span>
+					<div id="sideLinks">
+						<a href="https://github.com/kermitt2/grobid" target="_blank" title="Grobid on GitHub" style="color:#333; font-size:32px;"><i class="fa fa-github"></i></a>
+						<br/>
+						<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" title="Apache 2.0 License" style="margin-top:8px; display:inline-block;"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache 2.0 License" style="max-width:90px;"/></a>
+					</div>
+				</td> 
 	            <td style="align:left;vertical-align: top;">
 					<div id="divAbout">
 						<p><large><b>Grobid</b> (GeneRation Of BIbliographic Data) is a machine learning library for extracting, parsing, and restructuring raw documents such as PDF into structured TEI-encoded documents, with a particular focus on technical and scientific publications.</p>
-						<p>This is an open source software available on <a href="https://github.com/kermitt2/grobid" target=_blank>GitHub</a> under <a href="http://www.apache.org/licenses/LICENSE-2.0" target=_blank>Apache 2 License</a>.</p>
-
 						<p><b>What you can do from this console:</b></p>
 						<ul>
 							<li><b>Process</b> &mdash; Extract structured data from PDFs (headers, full text, references) or parse raw text (dates, names, affiliations, citations)</li>
@@ -76,17 +81,38 @@
 						</ul>
 
 						<p><b>Documentation:</b></p>
-						<ul>
-							<li><a href="https://grobid.readthedocs.io/en/latest/" target=_blank>Full documentation</a></li>
-							<li><a href="https://grobid.readthedocs.io/en/latest/Grobid-service/" target=_blank>Web service API reference</a></li>
-							<li><a href="https://grobid.readthedocs.io/en/latest/getting_started/" target=_blank>Getting started guide</a></li>
-							<li><a href="https://grobid.readthedocs.io/en/latest/Grobid-docker/" target=_blank>Running with Docker</a></li>
-							<li><a href="https://grobid.readthedocs.io/en/latest/Principles/" target=_blank>How Grobid works</a></li>
-							<li><a href="https://grobid.readthedocs.io/en/latest/TEI-encoding-of-results/" target=_blank>TEI encoding of results</a></li>
-							<li><a href="https://grobid.readthedocs.io/en/latest/Frequently-asked-questions/" target=_blank>Troubleshooting and FAQ</a></li>
-						</ul>
+						<table style="margin-bottom:10px;">
+							<tr>
+								<td style="padding:3px 15px 3px 0;vertical-align:top;"><a href="https://grobid.readthedocs.io/en/latest/getting_started/" target=_blank>Getting started</a></td>
+								<td style="padding:3px 0;color:#666;">Installation, first steps, and basic usage</td>
+							</tr>
+							<tr>
+								<td style="padding:3px 15px 3px 0;vertical-align:top;"><a href="https://grobid.readthedocs.io/en/latest/Principles/" target=_blank>How Grobid works</a></td>
+								<td style="padding:3px 0;color:#666;">Architecture and processing pipeline overview</td>
+							</tr>
+							<tr>
+								<td style="padding:3px 15px 3px 0;vertical-align:top;"><a href="https://grobid.readthedocs.io/en/latest/Grobid-service/" target=_blank>Web service API</a></td>
+								<td style="padding:3px 0;color:#666;">REST API endpoints and client libraries</td>
+							</tr>
+							<tr>
+								<td style="padding:3px 15px 3px 0;vertical-align:top;"><a href="https://grobid.readthedocs.io/en/latest/TEI-encoding-of-results/" target=_blank>Understanding the output (TEI)</a></td>
+								<td style="padding:3px 0;color:#666;">TEI is the XML format used by Grobid to structure extracted data</td>
+							</tr>
+							<tr>
+								<td style="padding:3px 15px 3px 0;vertical-align:top;"><a href="https://grobid.readthedocs.io/en/latest/Grobid-docker/" target=_blank>Running with Docker</a></td>
+								<td style="padding:3px 0;color:#666;">Container-based deployment for easy setup</td>
+							</tr>
+							<tr>
+								<td style="padding:3px 15px 3px 0;vertical-align:top;"><a href="https://grobid.readthedocs.io/en/latest/Frequently-asked-questions/" target=_blank>FAQ &amp; Troubleshooting</a></td>
+								<td style="padding:3px 0;color:#666;">Common questions and solutions</td>
+							</tr>
+							<tr>
+								<td style="padding:3px 15px 3px 0;vertical-align:top;"><a href="https://grobid.readthedocs.io/en/latest/" target=_blank>Full documentation</a></td>
+								<td style="padding:3px 0;color:#666;">Complete reference on readthedocs</td>
+							</tr>
+						</table>
 
-						<p>Contact: <a style="color:#70695C;" href="mailto:patrice.lopez@science-miner.com?subject=GROBID">Patrice Lopez</a>.</p>
+						<p>Contact: <a style="color:#70695C;" href="mailto:patrice.lopez@science-miner.com?subject=GROBID">Patrice Lopez</a>, <a style="color:#70695C;" href="mailto:luca@sciencialab.com?subject=GROBID">Luca Foppiano</a>.</p>
 					</div>
 				</td> 
 			    </tr>

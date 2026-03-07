@@ -42,7 +42,6 @@ var grobid = (function($) {
 	}
 
 	$(document).ready(function() {
-		$("#subTitle").html("About");
 		$("#divAbout").show();
 		//$("#divAdmin").hide();
 
@@ -113,9 +112,6 @@ var grobid = (function($) {
 			//$("#admin").attr('class', 'section-not-active');
 			$("#patent").attr('class', 'section-not-active');
 
-			$("#subTitle").html("About");
-			$("#subTitle").show();
-
 			$("#divAbout").show();
 			$("#divRestI").hide();
 			$("#divRestII").hide();
@@ -131,10 +127,7 @@ var grobid = (function($) {
 			//$("#admin").attr('class', 'section-not-active');
 			$("#patent").attr('class', 'section-not-active');
 
-			$("#subTitle").hide();
 			block = 0;
-			//$("#subTitle").html("TEI output service");
-			//$("#subTitle").show();
 			processChange();
 
 			$("#divRestI").show();
@@ -175,10 +168,7 @@ var grobid = (function($) {
 
 			block = 1;
 			setBaseUrl('referenceAnnotations');
-			$("#subTitle").hide();
 			processChange();
-			//$("#subTitle").html("PDF annotation services");
-			//$("#subTitle").show();
 
 			$("#divAbout").hide();
 			$("#divRestI").hide();
@@ -196,7 +186,6 @@ var grobid = (function($) {
 
 			block = 2;
 			setBaseUrl('processCitationPatentST36');
-			$("#subTitle").hide();
 			processChange();
 
 			$("#divAbout").hide();
