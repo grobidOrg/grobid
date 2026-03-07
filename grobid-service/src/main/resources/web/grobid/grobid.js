@@ -117,7 +117,7 @@ var grobid = (function($) {
 			$("#divRestII").hide();
 			$("#divRestIII").hide();
 			//$("#divAdmin").hide();
-			$("#divDemo").hide();
+			$("#sideLinks").show();
 			return false;
 		});
 		$("#rest").click(function() {
@@ -135,7 +135,7 @@ var grobid = (function($) {
 			$("#divRestIII").hide();
 			$("#divAbout").hide();
 			//$("#divAdmin").hide();
-			$("#divDemo").hide();
+			$("#sideLinks").hide();
 			return false;
 		});
 		/*$("#admin").click(function() {
@@ -175,6 +175,7 @@ var grobid = (function($) {
 			$("#divRestII").show();
 			$("#divRestIII").hide();
 			//$("#divAdmin").hide();
+			$("#sideLinks").hide();
 			return false;
 		});
 		$("#patent").click(function() {
@@ -193,6 +194,7 @@ var grobid = (function($) {
 			$("#divRestII").hide();
 			$("#divRestIII").show();
 			//$("#divAdmin").hide();
+			$("#sideLinks").hide();
 			return false;
 		});
 	});
