@@ -53,7 +53,8 @@ public class AuthorParser {
             return null;
         }
 
-        Matcher matcher = ET_AL_PATTERN.matcher(input.trim());
+        input = input.trim();
+        Matcher matcher = ET_AL_PATTERN.matcher(input);
         if (matcher.find()) {
             input = input.substring(0, matcher.start()) + " ";
         }
@@ -78,7 +79,8 @@ public class AuthorParser {
             return null;
         }
 
-        Matcher matcher = ET_AL_PATTERN.matcher(input.trim());
+        input = input.trim();
+        Matcher matcher = ET_AL_PATTERN.matcher(input);
         if (matcher.find()) {
             input = input.substring(0, matcher.start()) + " ";
         }

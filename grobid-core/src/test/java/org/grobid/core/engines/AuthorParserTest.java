@@ -45,11 +45,17 @@ public class AuthorParserTest {
 
         assertNotNull(persons);
         assertFalse("Output should not contain 'et al'", persons.toString().contains("et al"));
-        // processingCitation tokenizes and extracts.
-        // If "et al. some garbage" was NOT removed, "garbage" would likely appear in
-        // the output names.
-        // It's hard to assert exactly what IS in the output without a strong model, but
-        // we can assert what is NOT.
+        assertFalse("Output should not contain trailing garbage text", persons.toString().contains("garbage"));
+    }
+
+    @Test
+    public void testEtAlWithLeadingWhitespace() throws Exception {
+        AuthorParser parser = new AuthorParser();
+        String input = "  Smith, J. et al.";
+        List<Person> persons = parser.processingCitation(input);
+
+        assertNotNull(persons);
+        assertFalse("Output should not contain 'et al'", persons.toString().contains("et al"));
     }
 
     @Test
