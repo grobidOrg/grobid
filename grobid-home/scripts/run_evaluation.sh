@@ -192,7 +192,7 @@ for ds in "${datasets[@]}"; do
     echo "DRY: would write log to ${log_dst}"
   else
     # execute gradlew from the directory where the script was invoked (START_PWD)
-    (cd "${START_PWD}" && "${cmd[@]}") 2>&1 | tee "${log_dst}"
+    (cd "${START_PWD}" && "${cmd[@]}") | tee "${log_dst}"
     exit_code=${PIPESTATUS[0]}
 
     if [ $exit_code -ne 0 ]; then
