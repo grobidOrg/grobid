@@ -180,7 +180,7 @@ for ds in "${datasets[@]}"; do
   ds_basename=$(basename "${ds}")
   echo "===== Evaluation of ${ds_basename} (${ds}) ====="
 
-  cmd=("${GRADLEW_PATH}" jatsEval -Pp2t="${ds}" -Prun="${RUN}" -PfileRatio="${FILERATIO}")
+  cmd=("${GRADLEW_PATH}" --console=plain jatsEval -Pp2t="${ds}" -Prun="${RUN}" -PfileRatio="${FILERATIO}" -Pprogressbar=simple)
   if [ -n "${FLAVOR}" ]; then
     cmd+=("-Pflavor=${FLAVOR}")
   fi

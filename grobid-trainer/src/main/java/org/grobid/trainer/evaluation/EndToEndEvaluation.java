@@ -1,7 +1,9 @@
 package org.grobid.trainer.evaluation;
 
 import com.rockymadden.stringmetric.similarity.RatcliffObershelpMetric;
+import me.tongfei.progressbar.DelegatingProgressBarConsumer;
 import me.tongfei.progressbar.ProgressBar;
+import me.tongfei.progressbar.ProgressBarBuilder;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -191,6 +193,30 @@ public class EndToEndEvaluation {
         }
     }
 
+    private static ProgressBar createProgressBar(String taskName, long initialMax) {
+        String mode = System.getProperty("grobid.progressbar", "auto");
+        boolean useSimple;
+        if ("simple".equals(mode) || "false".equals(mode)) {
+            useSimple = true;
+        } else if ("fancy".equals(mode)) {
+            useSimple = false;
+        } else {
+            // "auto": System.console() is null when not a real TTY
+            useSimple = (System.console() == null);
+        }
+
+        if (useSimple) {
+            return new ProgressBarBuilder()
+                .setTaskName(taskName)
+                .setInitialMax(initialMax)
+                .setUpdateIntervalMillis(30000)
+                .setConsumer(new DelegatingProgressBarConsumer(System.err::println))
+                .build();
+        } else {
+            return new ProgressBar(taskName, initialMax);
+        }
+    }
+
     public String evaluationGrobid(boolean forceRun, StringBuilder reportMD) throws Exception {
         if (xmlInputPath == null) {
             throw new GrobidResourceException("Path to evaluation (gold) XML data is not correctly set");
@@ -252,7 +278,7 @@ public class EndToEndEvaluation {
             //executor.awaitTermination(5, TimeUnit.SECONDS);
 
             System.out.println("\n");
-            try (ProgressBar pb = new ProgressBar("PDF processing", refFiles.length)) {
+            try (ProgressBar pb = createProgressBar("PDF processing", refFiles.length)) {
                 for (Future<Boolean> result : results) {
                     try {
                         Boolean success = result.get();
@@ -506,7 +532,7 @@ public class EndToEndEvaluation {
             typeEval = "citation";
 
         System.out.println("\n");
-        try (ProgressBar pb = new ProgressBar("Evaluation " + typeEval, refFiles.length)) {
+        try (ProgressBar pb = createProgressBar("Evaluation " + typeEval, refFiles.length)) {
 
             for (File dir : refFiles) {
                 pb.step();

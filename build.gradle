@@ -591,6 +591,7 @@ project(":grobid-trainer") {
             jvmArgs '-Xmx3072m'
         }
         systemProperty "java.library.path", "${javaLibraryPath}"
+        systemProperty "grobid.progressbar", getArg('progressbar', 'auto')
     }
 
     task(teiEval, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
@@ -605,6 +606,7 @@ project(":grobid-trainer") {
             jvmArgs '-Xmx3072m'
         }
         systemProperty "java.library.path", "${javaLibraryPath}"
+        systemProperty "grobid.progressbar", getArg('progressbar', 'auto')
     }
 
     task(PrepareDOIMatching, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
