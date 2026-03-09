@@ -4,6 +4,59 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [0.9.0] - unreleased
+
+### Added
+- Conflict of interest and author contributions statement extraction in header and segmentation models #1319
+- Blingfire as an alternative sentence segmentation engine #1378
+- Lingua as an optional alternative for language recognition #1239
+- Support for Python environment managers (virtualenv, conda) for DeLFT integration #1010
+- Multi-architecture Docker builds with ARM64 support (pdfalto and wapiti binaries for Linux ARM 64)
+- Version and revision information displayed in the web UI #1390
+- Improved UI with more explanation and granular links to documentation #1391
+- Trivy security code scanning enabled #1295
+- Citation.cff and updated SWID metadata #1341
+- Mark consolidated bibliographical references explicitly in TEI output #1313
+- Extract URLs from annotations in any part of the fulltext #1315
+- Timeout configuration for consolidation requests (separate glutton and crossref timeout)
+- `-modelPath` CLI argument for training #1383
+- Evaluation script for running end-to-end evaluation from the repository root
+
+### Changed
+- Upgraded to JDK 21 and Gradle 9
+- Updated TensorFlow to 2.17 with Python 3.10-3.11 support #1188
+- Updated pdfalto to 0.6.0
+- Updated wapiti to 1.5.1
+- Updated Dropwizard to address Trivy vulnerability in Docker image
+- Updated JRuby to 9.4.12.1 and pragmatic segmenter
+- Updated Docker base images from deprecated openjdk to eclipse-temurin (21.0.10_7)
+- Updated grobid-lucene-analyzers
+- Updated dependency versions in build.gradle #1377
+- CI speed-up #1374
+- Revised Docker image for E2E evaluation #1304
+- Enhanced documentation structure and clarity #1382
+- Extensive model retraining: header, segmentation, fulltext, article-light, and article-light-ref models updated across CRF, BidLSTM_CRF_FEATURES, and BidLSTM_ChainCRF_FEATURES architectures
+- Significant expansion of training data for segmentation, fulltext, header, name, and affiliation-address models
+
+### Fixed
+- Honour instance-level Wapiti params in `train()` #1383
+- Fix figure/tables/equations identifier uniqueness and overlapping IDs in body and annex #1342
+- Avoid IndexOutOfBoundException in ORCID search by annotation
+- Fix missing logic to correctly get conflicts and credits in the output TEI
+- Fix invalid removal of libjep.so from Dockerfiles
+- Improve regexes following security advice; comment out inefficient unused regexes
+- Fix incorrect unit of seconds
+- Fix exception handling and null pointer issues in various parsers
+- Fix xml:id for annex tables
+- Fix Java library path
+- Fix Dockerfile Python version to match actual folder name
+- Fix coveralls and deprecations in Gradle build
+- Fix various issues with figures (figures not split, body text as figure)
+- Correct footnote/headnote in training data
+- Fix evaluation script to work from the repo root directory
+- Numerous training data corrections across all models
+- Fix `preload_embeddings.py` crash when download directory doesn't exist
+
 ## [0.8.2] - 2025-05-11
 
 ### Added
