@@ -238,52 +238,8 @@ public class GrobidRestProcessTraining {
         return response;
     }
 
-    /**
-     * Note: the following should be common with TrainerRunner in grobid-trainer
-     */
     private static AbstractTrainer getTrainer(String model) {
-        AbstractTrainer trainer;
-
-        if (model.equals("affiliation") || model.equals("affiliation-address")) {
-            trainer = new AffiliationAddressTrainer();
-        } else if (model.equals("date")) {
-            trainer = new DateTrainer();
-        } else if (model.equals("citation")) {
-            trainer = new CitationTrainer();
-        } else if (model.equals("monograph")) {
-            trainer = new MonographTrainer();
-        } else if (model.equals("fulltext")) {
-            trainer = new FulltextTrainer();
-        } else if (model.equals("header")) {
-            trainer = new HeaderTrainer();
-        } /*else if (model.equals("header-sdo-3gpp")) {
-            trainer = new HeaderTrainer(Collection._3GPP);
-        } else if (model.equals("header-sdo-ietf")) {
-            trainer = new HeaderTrainer(Collection.IETF);
-        }*/ else if (model.equals("name-citation")) {
-            trainer = new NameCitationTrainer();
-        } else if (model.equals("name-header")) {
-            trainer = new NameHeaderTrainer();
-        } else if (model.equals("patent")) {
-            trainer = new PatentParserTrainer();
-        } else if (model.equals("segmentation")) {
-            trainer = new SegmentationTrainer();
-        } /*else if (model.equals("segmentation-sdo-3gpp")) {
-            trainer = new SegmentationTrainer(Collection._3GPP);
-        } else if (model.equals("segmentation-sdo-ietf")) {
-            trainer = new SegmentationTrainer(Collection.IETF);
-        }*/ else if (model.equals("reference-segmenter")) {
-            trainer = new ReferenceSegmenterTrainer();
-        } else if (model.equals("figure")) {
-            trainer = new FigureTrainer();
-        } else if (model.equals("table")) {
-            trainer = new TableTrainer();
-        } else if (model.equals("funding-acknowledgement")) {
-            trainer = new FundingAcknowledgementTrainer();
-        } else {
-            throw new IllegalStateException("The model " + model + " is unknown.");
-        }
-        return trainer;
+        return TrainerRegistry.getTrainer(model);
     }
 
     private static class TrainTask implements Runnable {

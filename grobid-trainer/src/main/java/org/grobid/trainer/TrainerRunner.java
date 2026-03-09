@@ -2,12 +2,12 @@ package org.grobid.trainer;
 
 import org.apache.commons.lang3.StringUtils;
 import org.grobid.core.utilities.GrobidProperties;
-import org.grobid.core.GrobidModels.Flavor;
 
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,25 +17,7 @@ import java.util.List;
  */
 public class TrainerRunner {
 
-    private static final List<String> models = Arrays.asList(
-        "affiliation",
-        "chemical",
-        "date",
-        "citation",
-        "ebook",
-        "fulltext",
-        "header",
-        "header-light",
-        "header-light-ref",
-        "header-ietf",
-        "name-citation",
-        "name-header",
-        "patent",
-        "segmentation",
-        "segmentation-light",
-        "segmentation-light-ref",
-        "segmentation-ietf"
-    );
+    private static final List<String> models = new ArrayList<>(TrainerRegistry.getModelNames());
     private static final List<String> options = Arrays.asList("0 - train", "1 - evaluate", "2 - split, train and evaluate", "3 - n-fold evaluation");
 
     private enum RunType {
@@ -57,15 +39,15 @@ public class TrainerRunner {
     }
 
     public static void main(String[] args) {
+        String usage = "Usage: {" + String.join(
+            ", ", options) + "} {" + String.join(", ", models) + "} -gH /path/to/Grobid/home -s { [0.0 - 1.0] - split ratio, optional} -n {[int, num folds for n-fold evaluation, optional]} -epsilon {double, Wapiti epsilon, optional} -w {int, Wapiti window, optional} -maxIter {int, Wapiti max iterations, optional} -modelPath {path, custom output model file, optional}";
         if (args.length < 4) {
-            throw new IllegalStateException(
-                "Usage: {" + String.join(", ", options) + "} {" + String.join(", ", models) + "} -gH /path/to/Grobid/home -s { [0.0 - 1.0] - split ratio, optional} -n {[int, num folds for n-fold evaluation, optional]} -epsilon {double, Wapiti epsilon, optional} -w {int, Wapiti window, optional} -maxIter {int, Wapiti max iterations, optional} -modelPath {path, custom output model file, optional}");
+            throw new IllegalStateException(usage);
         }
 
         RunType mode = RunType.getRunType(Integer.parseInt(args[0]));
         if ((mode == RunType.SPLIT || mode == RunType.EVAL_N_FOLD) && (args.length < 6)) {
-            throw new IllegalStateException(
-                "Usage: {" + String.join(", ", options) + "} {" + String.join(", ", models) + "} -gH /path/to/Grobid/home -s { [0.0 - 1.0] - split ratio, optional} -n {[int, num folds for n-fold evaluation, optional]} -epsilon {double, Wapiti epsilon, optional} -w {int, Wapiti window, optional} -maxIter {int, Wapiti max iterations, optional} -modelPath {path, custom output model file, optional}");
+            throw new IllegalStateException(usage);
         }
 
         String path2GbdHome = null;
@@ -163,53 +145,7 @@ public class TrainerRunner {
 
         String model = args[1];
 
-        AbstractTrainer trainer;
-
-        if (model.equals("affiliation") || model.equals("affiliation-address")) {
-            trainer = new AffiliationAddressTrainer();
-        } else if (model.equals("chemical")) {
-            trainer = new ChemicalEntityTrainer();
-        } else if (model.equals("date")) {
-            trainer = new DateTrainer();
-        } else if (model.equals("citation")) {
-            trainer = new CitationTrainer();
-        } else if (model.equals("monograph")) {
-            trainer = new MonographTrainer();
-        } else if (model.equals("fulltext")) {
-            trainer = new FulltextTrainer();
-        } else if (model.equals("header")) {
-            trainer = new HeaderTrainer();
-        } else if (model.equals("header-ietf")) {
-            trainer = new HeaderTrainer(Flavor.IETF);
-        } else if (model.equals("header-light")) {
-            trainer = new HeaderTrainer(Flavor.ARTICLE_LIGHT);
-        } else if (model.equals("header-light-ref")) {
-            trainer = new HeaderTrainer(Flavor.ARTICLE_LIGHT_WITH_REFERENCES);
-        } else if (model.equals("name-citation")) {
-            trainer = new NameCitationTrainer();
-        } else if (model.equals("name-header")) {
-            trainer = new NameHeaderTrainer();
-        } else if (model.equals("patent-citation")) {
-            trainer = new PatentParserTrainer();
-        } else if (model.equals("segmentation")) {
-            trainer = new SegmentationTrainer();
-        } else if (model.equals("segmentation-light")) {
-            trainer = new SegmentationTrainer(Flavor.ARTICLE_LIGHT);
-        } else if (model.equals("segmentation-light-ref")) {
-            trainer = new SegmentationTrainer(Flavor.ARTICLE_LIGHT_WITH_REFERENCES);
-        } else if (model.equals("segmentation-ietf")) {
-            trainer = new SegmentationTrainer(Flavor.IETF);
-        } else if (model.equals("reference-segmenter")) {
-            trainer = new ReferenceSegmenterTrainer();
-        } else if (model.equals("figure")) {
-            trainer = new FigureTrainer();
-        } else if (model.equals("table")) {
-            trainer = new TableTrainer();
-        } else if (model.equals("funding-acknowledgement")) {
-            trainer = new FundingAcknowledgementTrainer();
-        } else {
-            throw new IllegalStateException("The model " + model + " is unknown.");
-        }
+        AbstractTrainer trainer = TrainerRegistry.getTrainer(model);
 
         if (epsilon != 0.0 || window != 0 || nbMaxIterations != 0) {
             trainer.setParams(epsilon, window, nbMaxIterations);

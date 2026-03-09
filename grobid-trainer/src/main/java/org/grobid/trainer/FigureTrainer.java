@@ -205,9 +205,6 @@ public class FigureTrainer extends AbstractTrainer {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        GrobidProperties.getInstance();
-        AbstractTrainer.runTraining(new FigureTrainer());
-        System.out.println(AbstractTrainer.runEvaluation(new FigureTrainer()));
-        System.exit(0);
+        AbstractTrainer.trainAndEvaluate(FigureTrainer::new);
     }
 }

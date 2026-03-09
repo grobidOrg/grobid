@@ -169,11 +169,7 @@ public class AffiliationAddressTrainer extends AbstractTrainer {
      * @throws Exception 
      */
     public static void main(String[] args) throws Exception {
-    	GrobidProperties.getInstance();
-        Trainer trainer = new AffiliationAddressTrainer();
-        AbstractTrainer.runTraining(trainer);
-        System.out.println(AbstractTrainer.runEvaluation(trainer));
-        System.exit(0);
+        AbstractTrainer.trainAndEvaluate(AffiliationAddressTrainer::new);
     }
 
 }

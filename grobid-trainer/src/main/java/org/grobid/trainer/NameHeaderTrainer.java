@@ -164,10 +164,6 @@ public class NameHeaderTrainer extends AbstractTrainer {
      * @throws Exception 
      */
     public static void main(String[] args) throws Exception {
-    	GrobidProperties.getInstance();
-        Trainer trainer = new NameHeaderTrainer();
-        AbstractTrainer.runTraining(trainer);
-        System.out.println(AbstractTrainer.runEvaluation(trainer));
-        System.exit(0);
+        AbstractTrainer.trainAndEvaluate(NameHeaderTrainer::new);
     }
 }

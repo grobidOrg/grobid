@@ -314,26 +314,6 @@ public class HeaderTrainer extends AbstractTrainer{
      * @param args Command line arguments.
      */
     public static void main(String[] args) throws Exception {
-        // if we have a parameter, it gives the flavor refinement to consider
-        Flavor theFlavor = null;
-        if (args.length > 0) {
-            String flavor = args[0];
-            theFlavor = GrobidModels.Flavor.fromLabel(flavor);
-            if (theFlavor == null) {
-                System.out.println("Warning, the flavor is not recognized, " +
-                    "must one one of " + Flavor.getLabels() + ", defaulting training to no collection...");
-            }
-        }
-
-        GrobidProperties.getInstance();
-        if (theFlavor == null) {
-            AbstractTrainer.runTraining(new HeaderTrainer());
-            System.out.println(AbstractTrainer.runEvaluation(new HeaderTrainer()));
-        } else {
-            AbstractTrainer.runTraining(new HeaderTrainer(theFlavor));
-            System.out.println(AbstractTrainer.runEvaluation(new HeaderTrainer(theFlavor)));
-        }
-
-        System.exit(0);
+        AbstractTrainer.trainAndEvaluate(args, HeaderTrainer::new, HeaderTrainer::new);
     }
 }

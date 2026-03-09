@@ -424,10 +424,7 @@ public class ChemicalEntityTrainer extends AbstractTrainer {
      *
      * @param args Command line arguments.
      */
-    public static void main(String[] args) {
-        Trainer trainer = new ChemicalEntityTrainer();
-        AbstractTrainer.runTraining(trainer);
-        System.out.println(AbstractTrainer.runEvaluation(trainer));
-        System.exit(0);
+    public static void main(String[] args) throws Exception {
+        AbstractTrainer.trainAndEvaluate(ChemicalEntityTrainer::new);
     }
 }

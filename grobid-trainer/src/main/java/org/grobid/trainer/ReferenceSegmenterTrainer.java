@@ -208,9 +208,6 @@ public class ReferenceSegmenterTrainer extends AbstractTrainer {
      * @throws Exception 
      */
     public static void main(String[] args) throws Exception {
-    	GrobidProperties.getInstance();
-        AbstractTrainer.runTraining(new ReferenceSegmenterTrainer());
-        System.out.println(AbstractTrainer.runEvaluation(new ReferenceSegmenterTrainer()));
-        System.exit(0);
+        AbstractTrainer.trainAndEvaluate(ReferenceSegmenterTrainer::new);
     }
 }

@@ -501,7 +501,6 @@ project(":grobid-trainer") {
         "train_citation"               : "org.grobid.trainer.CitationTrainer",
         "train_date"                   : "org.grobid.trainer.DateTrainer",
         "train_reference_segmentation" : "org.grobid.trainer.ReferenceSegmenterTrainer",
-        "train_ebook_model"            : "org.grobid.trainer.EbookTrainer",
         "train_patent_citation"        : "org.grobid.trainer.PatentParserTrainer",
         "train_funding_acknowledgement": "org.grobid.trainer.FundingAcknowledgementTrainer"
     ]

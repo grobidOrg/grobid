@@ -163,10 +163,6 @@ public class NameCitationTrainer extends AbstractTrainer {
      * @throws Exception 
      */
     public static void main(String[] args) throws Exception {
-    	GrobidProperties.getInstance();
-        Trainer trainer = new NameCitationTrainer();
-        AbstractTrainer.runTraining(trainer);
-        System.out.println(AbstractTrainer.runEvaluation(trainer));
-        System.exit(0);
+        AbstractTrainer.trainAndEvaluate(NameCitationTrainer::new);
     }
 }

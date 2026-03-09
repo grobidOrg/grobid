@@ -155,13 +155,7 @@ public class DateTrainer extends AbstractTrainer {
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
-		GrobidProperties.getInstance();
-		DateTrainer trainer = new DateTrainer();
-
-        AbstractTrainer.runTraining(trainer);
-        System.out.println(AbstractTrainer.runEvaluation(trainer));
-
-        System.exit(0);
+		AbstractTrainer.trainAndEvaluate(DateTrainer::new);
 	}
 
 }

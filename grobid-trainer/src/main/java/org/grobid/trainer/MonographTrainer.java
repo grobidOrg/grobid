@@ -153,10 +153,7 @@ public class MonographTrainer extends AbstractTrainer {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        GrobidProperties.getInstance();
-        AbstractTrainer.runTraining(new MonographTrainer());
-        System.out.println(AbstractTrainer.runEvaluation(new MonographTrainer()));
-        System.exit(0);
+        AbstractTrainer.trainAndEvaluate(MonographTrainer::new);
     }
 
 }

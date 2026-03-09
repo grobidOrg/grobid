@@ -159,9 +159,6 @@ public class ShorttextTrainer extends AbstractTrainer{
      * @throws Exception 
      */
     public static void main(String[] args) throws Exception {
-    	GrobidProperties.getInstance();
-        AbstractTrainer.runTraining(new ShorttextTrainer());
-        System.out.println(AbstractTrainer.runEvaluation(new ShorttextTrainer()));
-        System.exit(0);
+        AbstractTrainer.trainAndEvaluate(ShorttextTrainer::new);
     }
 }	

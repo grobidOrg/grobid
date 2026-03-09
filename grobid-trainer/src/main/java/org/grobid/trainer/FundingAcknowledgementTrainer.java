@@ -156,13 +156,7 @@ public class FundingAcknowledgementTrainer extends AbstractTrainer {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        GrobidProperties.getInstance();
-        FundingAcknowledgementTrainer trainer = new FundingAcknowledgementTrainer();
-
-        AbstractTrainer.runTraining(trainer);
-        System.out.println(AbstractTrainer.runEvaluation(trainer));
-
-        System.exit(0);
+        AbstractTrainer.trainAndEvaluate(FundingAcknowledgementTrainer::new);
     }
 
 }

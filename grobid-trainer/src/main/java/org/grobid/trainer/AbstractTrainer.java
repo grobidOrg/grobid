@@ -7,6 +7,7 @@ import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.text.RandomStringGenerator;
 import org.grobid.core.GrobidModel;
 import org.grobid.core.GrobidModels;
+import org.grobid.core.GrobidModels.Flavor;
 import org.grobid.core.engines.tagging.GenericTagger;
 import org.grobid.core.engines.tagging.GrobidCRFEngine;
 import org.grobid.core.engines.tagging.TaggerFactory;
@@ -33,6 +34,8 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -691,5 +694,36 @@ public abstract class AbstractTrainer implements Trainer {
         return writer;
     }
 
+    /**
+     * Shared main() logic for simple trainers (no flavor).
+     */
+    public static void trainAndEvaluate(Supplier<? extends Trainer> trainerFactory) {
+        GrobidProperties.getInstance();
+        Trainer trainer = trainerFactory.get();
+        runTraining(trainer);
+        System.out.println(runEvaluation(trainer));
+        System.exit(0);
+    }
+
+    /**
+     * Shared main() logic for flavor-aware trainers.
+     */
+    public static void trainAndEvaluate(String[] args,
+            Supplier<? extends Trainer> defaultFactory,
+            Function<GrobidModels.Flavor, ? extends Trainer> flavorFactory) {
+        GrobidModels.Flavor theFlavor = null;
+        if (args.length > 0) {
+            theFlavor = GrobidModels.Flavor.fromLabel(args[0]);
+            if (theFlavor == null) {
+                System.out.println("Warning, the flavor is not recognized, " +
+                    "must be one of " + GrobidModels.Flavor.getLabels() + ", defaulting training with no flavor...");
+            }
+        }
+        GrobidProperties.getInstance();
+        Trainer trainer = (theFlavor == null) ? defaultFactory.get() : flavorFactory.apply(theFlavor);
+        runTraining(trainer);
+        System.out.println(runEvaluation(trainer));
+        System.exit(0);
+    }
 
 }

@@ -249,26 +249,6 @@ FileUtils.writeStringToFile(new File("/tmp/expected-"+name+".txt"), temp.toStrin
 
 
     public static void main(String[] args) throws Exception {
-        // if we have a parameter, it gives the flavor refinement to consider
-        Flavor theFlavor = null;
-        if (args.length > 0) {
-            String flavor = args[0];
-            theFlavor = Flavor.fromLabel(flavor);
-            if (theFlavor == null) {
-                System.out.println("Warning, the flavor is not recognized, " +
-                    "must one one of "+ Flavor.getLabels() +", " +
-                    "defaulting training with no flavor...");
-            }
-        }
-
-        GrobidProperties.getInstance();
-        if (theFlavor == null) {
-            AbstractTrainer.runTraining(new SegmentationTrainer());
-            System.out.println(AbstractTrainer.runEvaluation(new SegmentationTrainer()));
-        } else {
-            AbstractTrainer.runTraining(new SegmentationTrainer(theFlavor));
-            System.out.println(AbstractTrainer.runEvaluation(new SegmentationTrainer(theFlavor)));
-        }
-        System.exit(0);
+        AbstractTrainer.trainAndEvaluate(args, SegmentationTrainer::new, SegmentationTrainer::new);
     }
 }
