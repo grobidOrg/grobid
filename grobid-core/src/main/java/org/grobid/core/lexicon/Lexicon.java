@@ -1179,7 +1179,7 @@ public class Lexicon {
     }
 
     /**
-     * This method returns the token positions in respect of the layout tokens, result is inclusive, inclusive, so for
+     * This method returns the token positions in respect of the layout tokens, result is (inclusive, inclusive), so for
      * calling this subList after this method, remember to add +1  to the end offset.
      */
     public static List<Pair<OffsetPosition, String>> tokenPositionUrlPatternWithPdfAnnotations(
@@ -1192,7 +1192,7 @@ public class Lexicon {
             .collect(Collectors.toList());
         List<OffsetPosition> tokenOffsetPositionsWithRegex = convertStringOffsetToTokenOffset(characterPositions, layoutTokens);
         List<Pair<OffsetPosition, String>> tokenOffsetPositionsAndDestinationsWithRegex = IntStream
-            .range(0, characterPositionsAndDestinations.size())
+            .range(0, tokenOffsetPositionsWithRegex.size())
             .mapToObj(i -> Pair.of(tokenOffsetPositionsWithRegex.get(i), characterPositionsAndDestinations.get(i).getRight()))
             .collect(Collectors.toList());
 
