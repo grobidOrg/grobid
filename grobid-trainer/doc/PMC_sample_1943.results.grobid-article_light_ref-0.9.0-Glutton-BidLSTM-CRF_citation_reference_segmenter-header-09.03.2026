@@ -1,7 +1,7 @@
 
 > Configure project :
 Checking git under /data/workspace/services/grobid-evaluation
-Current Git revision: 0.8.2-66-g774fc35ed
+Current Git revision: 0.8.2-69-g48c49946a
 
 > Task :grobid-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
 > Task :grobid-core:compileKotlin UP-TO-DATE
@@ -315,13 +315,13 @@ _________________________________________________________________
 
 -------------> GROBID failed on 0 PDF
 
-1943 PDF files processed in 1918.698 seconds, 0.9874925373134329 seconds per PDF file
+1943 PDF files processed in 1985.443 seconds, 1.0218440555841481 seconds per PDF file
 
 
 
 
 
-Evaluation metrics produced in 1133.212 seconds
+Evaluation metrics produced in 1145.95 seconds
 
 ======= Header metadata ======= 
 
@@ -610,8 +610,8 @@ COUNTER: org.grobid.core.engines.label.TaggingLabelImpl
   HEADER_AVAILABILITY:                 8
   CITATION_VOLUME:                     76397
   AFFILIATION-ADDRESS_DEPARTMENT:      6693
-  CITATION_LOCATION:                   7603
   NAME-CITATION_SUFFIX:                379
+  CITATION_LOCATION:                   7603
   NAME-HEADER_TITLE:                   785
   FUNDING-ACKNOWLEDGEMENT_INSTITUTION: 47
   HEADER_WEB:                          360
@@ -652,7 +652,7 @@ COUNTER: FigureCounters
 
 
 Evaluation report in markdown format saved under /data/workspace/services/grobid-evaluation/grobid-trainer/../grobid-home/tmp/report.md
-16:28:42.583 [Thread-1] ERROR org.grobid.core.jni.JEPThreadPool - Failed to close JEP instance for thread 47
+00:16:22.874 [Thread-1] ERROR org.grobid.core.jni.JEPThreadPool - Failed to close JEP instance for thread 47
 jep.JepException: JEP THREAD WARNING: Unsafe close() of Python sub-interpreter by thread Thread-1.
 Please close() from the creating thread to ensure stability.
 	at jep.Jep.close(Jep.java:477)
@@ -660,5 +660,5 @@ Please close() from the creating thread to ensure stability.
 	at org.grobid.core.jni.JEPThreadPool.lambda$new$0(JEPThreadPool.java:64)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-BUILD SUCCESSFUL in 50m 55s
+BUILD SUCCESSFUL in 52m 14s
 7 actionable tasks: 1 executed, 6 up-to-date

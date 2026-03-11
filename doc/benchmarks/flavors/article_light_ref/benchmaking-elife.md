@@ -199,4 +199,4 @@ Recall citation contexts: 	 82.36
 fscore citation contexts: 	 88.87
 ```
 
-Evaluation metrics produced in 1316.024 seconds
+Evaluation metrics produced in 1098.998 seconds

@@ -69,4 +69,4 @@ Instance-level recall:	97.9	(Levenshtein)
 Instance-level recall:	97.7	(RatcliffObershelp) 
 ```
 
-Evaluation metrics produced in 8.727 seconds
+Evaluation metrics produced in 8.787 seconds
