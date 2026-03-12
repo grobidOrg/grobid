@@ -13,6 +13,7 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
@@ -133,6 +134,11 @@ public class SegmentationTrainer extends AbstractTrainer {
 
                 List<String> labeled = parser.getLabeledResult();
 
+                // For dh-law-footnotes flavor, remap low-support labels
+                if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES) {
+                    labeled = remapLowSupportLabels(labeled);
+                }
+
                 // we can now add the features
                 // we open the featured file
                 try {
@@ -247,6 +253,26 @@ FileUtils.writeStringToFile(new File("/tmp/expected-"+name+".txt"), temp.toStrin
         return totalExamples;
     }
 
+
+    /**
+     * Remap low-support segmentation labels to parent labels for the dh-law-footnotes flavor.
+     * <acknowledgement>/<annex>/<funding>/<conflict> → <body>
+     */
+    private static List<String> remapLowSupportLabels(List<String> labeled) {
+        List<String> remapped = new ArrayList<>(labeled.size());
+        for (String line : labeled) {
+            line = line.replace("I-<acknowledgement>", "I-<body>")
+                       .replace("<acknowledgement>", "<body>")
+                       .replace("I-<annex>", "I-<body>")
+                       .replace("<annex>", "<body>")
+                       .replace("I-<funding>", "I-<body>")
+                       .replace("<funding>", "<body>")
+                       .replace("I-<conflict>", "I-<body>")
+                       .replace("<conflict>", "<body>");
+            remapped.add(line);
+        }
+        return remapped;
+    }
 
     public static void main(String[] args) throws Exception {
         // if we have a parameter, it gives the flavor refinement to consider
