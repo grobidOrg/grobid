@@ -45,18 +45,22 @@ COPY grobid-core/ ./grobid-core/
 COPY grobid-service/ ./grobid-service/
 COPY grobid-trainer/ ./grobid-trainer/
 
+ARG TARGETARCH
 # Layer 6: .git for revision embedding (as late as possible, just before build)
 COPY .git/ ./.git
 
 # cleaning unused native libraries before packaging
 RUN rm -rf grobid-home/pdf2xml
-RUN rm -rf grobid-home/pdfalto/win-*
-RUN rm -rf grobid-home/lib/win-*
+RUN rm -rf grobid-home/pdfalto/win-* grobid-home/pdfalto/mac-64 grobid-home/pdfalto/mac_arm-64 grobid-home/pdfalto/lin-32
+RUN rm -rf grobid-home/lib/win-* grobid-home/lib/mac-64 grobid-home/lib/mac_arm-64 grobid-home/lib/lin-32
+RUN if [ "$TARGETARCH" = "arm64" ]; then \
+      rm -rf grobid-home/pdfalto/lin-64 grobid-home/lib/lin-64; \
+    else \
+      rm -rf grobid-home/pdfalto/lin_arm-64 grobid-home/lib/lin_arm-64; \
+    fi
 
 # cleaning Delft models
 RUN rm -rf grobid-home/models/*-BidLSTM_*
-
-ENV GROBID_SERVICE_OPTS="-Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep"
 
 RUN ./gradlew assemble --no-daemon --info --stacktrace
 
@@ -89,7 +93,8 @@ WORKDIR /opt/grobid
 
 COPY --from=builder /opt/grobid .
 
-ENV GROBID_SERVICE_OPTS="-Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED"
+ENV LD_LIBRARY_PATH=grobid-home/lib/lin-64:grobid-home/lib/lin_arm-64
+ENV GROBID_SERVICE_OPTS="--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED"
 
 CMD ["./grobid-service/bin/grobid-service"]
 

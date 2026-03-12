@@ -9,4 +9,11 @@ config=$1
 
 echo "Starting grobid service with config $config"
 
-java -Djava.library.path=../grobid-home/lib/lin-64:../grobid-home/lib/lin-64/jep -jar build/libs/grobid-service-*-onejar.jar server $config || exit $?
+ARCH=$(uname -m)
+if [ "$ARCH" = "aarch64" ]; then
+    LIB_DIR="../grobid-home/lib/lin_arm-64"
+else
+    LIB_DIR="../grobid-home/lib/lin-64"
+fi
+
+java -Djava.library.path="$LIB_DIR" -jar build/libs/grobid-service-*-onejar.jar server $config || exit $?
