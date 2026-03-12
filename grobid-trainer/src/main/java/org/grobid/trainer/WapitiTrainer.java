@@ -6,7 +6,10 @@ import org.grobid.core.GrobidModels;
 import org.grobid.trainer.SegmentationTrainer;
 import java.math.BigDecimal;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class WapitiTrainer implements GenericTrainer {
 
@@ -16,6 +19,7 @@ public class WapitiTrainer implements GenericTrainer {
 	protected double epsilon = 0.00001; // default size of the interval for stopping criterion
 	protected int window = 20; // default similar to CRF++
     protected int nbMaxIterations = 2000; // by default maximum of training iterations
+    protected int jobSize = 0; // 0 = auto-compute from training data size and thread count
 
     @Override
     public void train(File template, File trainingData, File outputModel, int numThreads, GrobidModel model) {
@@ -38,8 +42,18 @@ public class WapitiTrainer implements GenericTrainer {
             incrementalBlock += " -m " + inputModelPath;
         }
 
+        int effectiveJobSize = jobSize;
+        if (effectiveJobSize <= 0) {
+            int numSequences = countSequences(trainingData);
+            // Aim for at least numThreads batches so all threads stay busy
+            effectiveJobSize = Math.max(1, (int) Math.ceil((double) numSequences / numThreads));
+            System.out.println("\ttraining sequences: " + numSequences);
+        }
+        System.out.println("\tjob size: " + effectiveJobSize);
+
         WapitiModel.train(template, trainingData, outputModel, "--nthread " + numThreads +
 //       		" --algo sgd-l1" +
+			" -j " + effectiveJobSize +
 			" -e " + BigDecimal.valueOf(epsilon).toPlainString() +
 			" -w " + window +
 			" -i " + nbMaxIterations + incrementalBlock
@@ -79,5 +93,34 @@ public class WapitiTrainer implements GenericTrainer {
     @Override
     public int getNbMaxIterations() {
         return nbMaxIterations;
+    }
+
+    /**
+     * Count training sequences in a Wapiti training file.
+     * Sequences are separated by blank lines.
+     */
+    private static int countSequences(File trainingData) {
+        int count = 0;
+        boolean inSequence = false;
+        try (BufferedReader reader = new BufferedReader(new FileReader(trainingData))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (line.trim().isEmpty()) {
+                    if (inSequence) {
+                        count++;
+                        inSequence = false;
+                    }
+                } else {
+                    inSequence = true;
+                }
+            }
+            if (inSequence) {
+                count++;
+            }
+        } catch (IOException e) {
+            System.err.println("Warning: could not count sequences, using default job size");
+            return 64; // wapiti default
+        }
+        return count;
     }
 }
