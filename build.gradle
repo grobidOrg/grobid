@@ -107,6 +107,7 @@ subprojects {
             target 'src/**/*.java'
             eclipse().configFile(rootProject.file('eclipse-formatter.xml'))
             removeUnusedImports()
+            importOrder('java', 'javax', '', 'org.grobid')
             trimTrailingWhitespace()
             endWithNewline()
         }
