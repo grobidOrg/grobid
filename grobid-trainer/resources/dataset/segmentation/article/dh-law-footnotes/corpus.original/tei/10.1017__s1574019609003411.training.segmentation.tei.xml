@@ -1,0 +1,134 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.segmentation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title level="a">On the &lt;i&gt;Lissabon-Urteil&lt;/i&gt;: Democracy and a Democratic Paradox</title>
+      <author>
+        <persName>
+          <forename/>
+          <surname>JHR</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename/>
+          <surname>LB</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2026-01-30T07:22:07.092Z">30/01/2026 08:22:07</date>
+        <title>final</title>
+        <idno type="fileref">10.1017__s1574019609003411</idno>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Cambridge University Press (CUP)</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2009</date>
+      <idno type="DOI">10.1017/s1574019609003411</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>None JHR, None LB. (2009). On the &lt;i&gt;Lissabon-Urteil&lt;/i&gt;: Democracy and a Democratic Paradox. European Constitutional Law Review, 5(3), 341-344. DOI: 10.1017/s1574019609003411</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-01-02T12:27:01.153251Z" type="extractor">
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">536e79c</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+        <ref target="https://github.com/kermitt2/grobid"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-01-02T12:27:01.153251Z" status="draft">
+      <desc>Generated with createTraining API</desc>
+    </change>
+    <change when="2026-01-06T16:07:01.997Z" status="draft" who="#li">
+      <desc>Annotation completed</desc>
+    </change>
+    <change when="2026-01-07T14:20:42.879Z" status="draft" who="#schulze">
+      <desc>second pass completed</desc>
+    </change>
+    <change when="2026-01-14T09:03:24.420Z" status="checked" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-25T11:00:59.829Z" status="approved" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-30T07:22:58.108Z" status="candidate" who="#lfoppiano">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xml:lang="en">
+			<front>341 <lb/>On the Lissabon Urteil: Democracy and a Democratic Paradox <lb/></front>
+    
+    <note place="footnote">European Constitutional Law Review, 5: 341-344, 2009 <lb/>© 2009 T . M . C . ASSER PRESS and Contributors <lb/>doi:10.1017/S1574019609003411 <lb/></note>
+
+			<front>Editorial <lb/>On the Lissabon-Urteil: democracy and a democratic paradox <lb/></front>
+    
+    <body>&apos;Oh no, not again&apos;, one of our editorial board members exclaimed in our meeting <lb/>in July. &apos;I really do hope that we will not spend the next ten years discussing the <lb/>Lissabon-Urteil, as we did with the Maastricht-Urteil.&apos; But by all odds we will. There <lb/>simply is no way around the Bundesverfassungsgericht&apos;s judgment on the Treaty of <lb/>Lisbon. <lb/>No one will have missed that the German constitutional court on 30 June 2009 <lb/>dismissed all constitutional complaints against the German Act Approving the <lb/>Treaty of Lisbon. Nevertheless, it forbade Germany to ratify the Treaty until the <lb/>Act Extending and Strengthening the Rights of the Bundestag and the Bundesrat <lb/>in European Union Matters was adapted to German constitutional requirements. <lb/>According to the court, the German Parliament had not reserved for itself suffi-<lb/>cient participation powers in a variety of simplified Treaty amendment proce-<lb/>dures, as well as the use of the so-called flexibility clause. In the meantime, the Act <lb/>has been adapted and the Treaty ratified, paving the way for the Treaty&apos;s entering <lb/>into force on the first of December 2009. <lb/>However, the consequences of the judgment are not restricted to these imme-<lb/>diate effects. For several reasons the judgment will remain on the agenda of Euro-<lb/>pean law and scholarship for years to come, if not longer. <lb/>First of all, the judgment is relevant for the development of the Union under <lb/>the Lisbon Treaty itself. In line with earlier case-law but more prominently this <lb/>time, the court establishes its power to conduct an ultra vires review and an identity <lb/>review on secondary Union acts. If Union acts have no foundation in competences <lb/>transferred by Germany or violate the German constitutional identity as embod-<lb/>ied in Article 79(3) Grundgesetz, the court will declare them inapplicable in Ger-<lb/>many. 1 The court also names five areas which are &apos;especially sensitive for the ability <lb/>of a constitutional state to democratically shape itself&apos; and in which there is a <lb/>particular risk of ultra vires or constitutional identity-encroaching acts: substantive <lb/>and formal criminal law; the use of force by the police and the military; the funda-<lb/>mental fiscal decisions; decisions concerning welfare; and decisions with a par-<lb/></body>
+
+			<listBibl>1 See on a possible upcoming Greek constitutional identity control by the Greek Council of <lb/>State, the Michaniki case note by Vasiliki Kosta in this issue. <lb/></listBibl>
+    
+    <note place="footnote">https://doi.org/10.1017/S1574019609003411 Published online by Cambridge University Press <lb/></note>
+
+			<page>342 <lb/></page>
+
+			<note place="headnote">Editorial <lb/>EuConst 5 (2009) <lb/></note>
+    
+    <body>ticular cultural importance, such as those regarding family law, the school and the <lb/>education system. Moreover, the court advises the German Parliament to intro-<lb/>duce a special procedure to facilitate the court&apos;s exercise of both kinds of review. <lb/>Even if this wish is not fulfilled (and more generally, as Dieter Grimm suggests in <lb/>this issue, it is not the court&apos;s intention to bring the Union, in Christian Calliess&apos; <lb/>words, &apos;[u]nter Karlsruher Totalaufsicht&apos; 2 ) the Union institutions, including the <lb/>Court of Justice, will have to cast a sidelong glance at the Lissabon-Urteil when <lb/>acting. They will have to restrain themselves when interpreting the Union&apos;s <lb/>competences if they do not want to run the risk of getting rapped on the knuckles <lb/>by the Bundesverfassungsgericht. <lb/>A second reason for its persistent relevance is that the Lissabon-Urteil will influ-<lb/>ence the conclusion of future Union Treaties and affect the finality of the integra-<lb/>tion process. The court&apos;s reasoning seems to imply that the Treaty of Lisbon is <lb/>more or less the terminus of European integration. On the one hand, the court <lb/>does not seem to allow for a resolution of the EU&apos;s democratic deficits lest the <lb/>EU become a state. On the other hand, the delineation of the core of more or less <lb/>exclusive national state powers leaves very limited room for new transfers of com-<lb/>petence. And certainly the Grundgesetz, according to the court, stands in the way of <lb/>the European Union becoming a federal state. While the court does not totally <lb/>rule out that the Union will ever get there, it requires a vote of the German people <lb/>itself -a vote of their representatives is not sufficient. <lb/>Third, the judgment holds the most elaborate and explicit view on the relation-<lb/>ship between European Union law and national constitutional law that any na-<lb/>tional constitutional court has given so far, including the Bundesverfassungsgericht <lb/>itself in its earlier case-law. It will therefore be compulsory reading for European <lb/>law and constitutional law students alike. Moreover, the ruling, which at times <lb/>reads more as an &apos;academic&apos; or &apos;treatise text on constitutional law than a judg-<lb/>ment&apos;, 3 is so long and complex, and can be studied from so many different angles, <lb/>that scholarly exegesis and debate can thrive on it for years to come. <lb/>The judgment immediately elicited a flood of reactions. In order to reduce the <lb/>potential of a Justizkonflikt, which they fear is what the Bundesverfassungsgericht is <lb/>heading for, and to promote the famous &apos;dialogue&apos; between the German court <lb/>and the Court of Justice, more than thirty German university professors, lawyers <lb/>and judges have urged in a petition for the insertion of a new clause in the Act on <lb/>the Bundesverfassungsgericht. It would oblige the German court to do something which <lb/>it has refused to do until now: ask preliminary questions to the Court of Justice <lb/></body>
+
+			<listBibl>2 Christian Calliess, Frankfurter Allgemeine Zeitung, 27 Aug. 2009. <lb/>3 Editorial comments: &apos;Karlsruhe has spoken: &quot;Yes&quot; to the Lisbon Treaty, but…&apos;, CML Rev <lb/>(2009), p. 1023 (1023, 1033). <lb/></listBibl>
+    
+    <note place="footnote">https://doi.org/10.1017/S1574019609003411 Published online by Cambridge University Press <lb/></note>
+
+			<page>343 <lb/></page>
+
+			<note place="headnote">On the Lissabon Urteil: Democracy and a Democratic Paradox <lb/></note>
+    
+    <body>when it has to decide on the interpretation of primary Union law or the interpre-<lb/>tation and validity of secondary Union Law. 4 <lb/>More generally, most scholarly reactions have been very critical, with overtones <lb/>of disappointment, irritation and even almost unrestrained anger, all expressed in <lb/>a title of an article by Daniel Halberstam and Christoph Möllers in the German <lb/>Law Journal: &apos;The German Constitutional Court says &quot;ja zu Deutschland!&quot;.&apos; 5 Even <lb/>several months later the disappointment remains, as several contributions in this <lb/>issue testify. To name just a few points of critique: the judgment is marred by <lb/>factual and conceptual inaccuracies 6 and marked by a black-and-white reasoning <lb/>which, as Tobias Lock in this issue asserts, does no justice to the complex reality <lb/>(and perhaps even contains a twist of intellectual dishonesty). The court is also <lb/>criticised for its apparent glorification of national democracy and the absence of <lb/>recognition of the importance of the European integration process to the good <lb/>functioning of the national democracies. As Roland Bieber so eloquently advances <lb/>in this issue, taking self-determination of individuals, the rule of law and funda-<lb/>mental rights seriously implies that any entity must refrain from considering itself <lb/>as an absolute and exclusive polity. Moreover, Martin Nettesheim and Christoph <lb/>Schönberger have accused the court of what the former calls &apos;incapacitating poli-<lb/>tics&apos;, by denying the German Parliament even in its constitution-amending capac-<lb/>ity the right to cede to the Union competences related to the constitutional identity <lb/>of Germany, not to mention Germany&apos;s sovereignty. 7 Paradoxically, in apparent <lb/>contrast to the second Lisbon decision of the Czech Constitutional Court of 3 <lb/>November 2009 (see in this issue Jan Komárek&apos;s translation of the relevant consid-<lb/>erations), the Bundesverfassungsgericht confronts German and European representa-<lb/>tive democracy with an insurmountable national obstacle in the name of democracy. <lb/>At the same time, it cannot be denied that the court&apos;s analysis of the demo-<lb/>cratic deficiencies of Union politics touches a sore spot. We fully agree with <lb/>Grimm&apos;s analysis of the fundamental distortion of the relationship between law <lb/>and politics in the Union, due among other things to the elevation to constitu-<lb/>tional (Treaty) law of many policy fields which in the member states&apos; systems <lb/>merely belong to ordinary law (and thus can be changed by the ordinary legisla-<lb/></body>
+
+			<listBibl>4 &lt;www.whi-berlin.de/documents/whi-material0109.pdf&gt;: &apos;Ist in einem Verfahren vor dem <lb/>Bundesverfassungsgericht die Auslegung der vertraglichen Grundlagen der Europäischen Union <lb/>oder die Gültigkeit und die Auslegung der Handlungen der Organe, Einrichtungen oder sonstigen <lb/>Stellen der Europäischen Union entscheidungserheblich, ist das Bundesverfassungsgericht zur Vorlage <lb/>dieser Frage an den Gerichtshof der Europäischen Union verpflichtet&apos;. <lb/>5 German Law Journal, No. 8, p. 1241; see also Christoph Schönberger, &apos;Lisbon in Karlsruhe: <lb/>Maastricht&apos;s Epigones At Sea&apos;, idem, p. 1201. <lb/>6 See Schönberger, supra n. 5; Halberstam &amp; Möllers, idem. <lb/>7 Martin Nettesheim, &apos;Entmündigung der Politik&apos;, Frankfurter Allgemeine Zeitung, 27 Aug. 2009; <lb/>Calliess, supra n. 2. <lb/></listBibl>
+    
+    <note place="footnote">https://doi.org/10.1017/S1574019609003411 Published online by Cambridge University Press <lb/></note>
+    
+			<page>344 <lb/></page>
+
+		<note place="headnote">Editorial <lb/>EuConst 5 (2009) <lb/></note>
+    
+    <body>ture). Besides this, the Union&apos;s political process is extremely difficult to follow, <lb/>even for the initiated. It is very much the case, as the German court adduces, that <lb/>Union politics is not based on a clear division between a governing majority and a <lb/>parliamentary opposition helping to make political alternatives visible for voters <lb/>at European elections, as a full-blown European public opinion would do. The <lb/>unremitting inclination of national politicians to scapegoat the Union for deci-<lb/>sions which they themselves have helped to shape only further obscures matters. <lb/>In fact so much so that one is even tempted to think that it is this muddiness of <lb/>European politics that is actually at the heart of the court&apos;s democratic concerns, <lb/>and not the emphasis it also places on the lack of adherence to the &apos;one man, one <lb/>vote&apos; principle in the elections for the European Parliament. Nonetheless, the lat-<lb/>ter does pose a genuine democratic problem for an institution that according to <lb/>the Lisbon Treaty is supposed to represent the Union citizens, if one of its mem-<lb/>bers represents approximately 857.000 citizens (a German MEP), another 630.000 <lb/>(a Dutch MEP) and a third 67.000 (a Maltese MEP). Certainly one of the points <lb/>that will be discussed in academia in the next decade is how this form of &apos;degressive <lb/>proportionality&apos; in the representation by the European Parliament, which cannot <lb/>be expected to change, can be reconciled with our traditional ideas of political <lb/>representation and the respect for the principle of equality promised to Union <lb/>citizens by Article 9 of the Union Treaty. <lb/>But for the moment, who would deny that there is a loss of transparency, demo-<lb/>cratic accountability and electoral equality for German voters if competences are <lb/>exercised by the Union rather than by German institutions? And aside from the <lb/>legal merits of the judgment under German constitutional law: who cannot at <lb/>least understand why the court, in the name of democracy, objects to the Union <lb/>taking fundamental decisions on substantive and formal criminal law, on the em-<lb/>ployment of police and military forces, on the budget, on the welfare state, on <lb/>family law and the school and education system and so forth in Germany, given <lb/>the Union&apos;s present democratic state of affairs? <lb/>The Bundesverfassungsgericht was castigated for the Maastricht-Urteil by most Eu-<lb/>ropean lawyers, especially the Germans among them. But that judgment has placed <lb/>its stamp on much of the constitutional development of the Union and has al-<lb/>lowed theories of constitutional pluralism, polycentrism, multilevel constitution-<lb/>alism, Verfassungsverbund and the constitution composée to flourish. The German <lb/>constitutional court is likewise being castigated for its Lissabon-Urteil. Certainly, it <lb/>has put the questions of democracy, the level at which democracy is to be aggregated <lb/>and articulated, and the pertaining institutional arrangements in the member states <lb/>and in the Union higher on the agenda of intellectual and political engagement <lb/>than they have been over the last decades. Perhaps it will be just as fruitful for <lb/>European constitutional theory as the Maastricht-Urteil was. <lb/></body>
+    
+    <note place="footnote">JHR/LB <lb/>https://doi.org/10.1017/S1574019609003411 Published online by Cambridge University Press</note>
+
+
+	</text>
+
+</TEI>

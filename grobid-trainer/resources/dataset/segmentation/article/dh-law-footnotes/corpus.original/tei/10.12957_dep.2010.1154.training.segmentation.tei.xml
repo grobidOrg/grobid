@@ -1,0 +1,251 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.segmentation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title level="a">Contratualismo Moral e Direitos Humanos no Âmbito das Relações Internacionais / Moral contractarianism and human rights in international law</title>
+      <author>
+        <persName>
+          <forename>Marcelo</forename>
+          <surname>Araujo</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2026-01-22T16:16:52.068Z">22/01/2026 17:16:52</date>
+        <title>Final version</title>
+        <idno type="fileref">10.12957_dep.2010.1154</idno>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Universidade de Estado do Rio de Janeiro</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2010</date>
+      <idno type="DOI">10.12957/dep.2010.1154</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Marcelo Araujo. (2010). Contratualismo Moral e Direitos Humanos no Âmbito das Relações Internacionais / Moral contractarianism and human rights in international law. Revista Direito e Práxis, 1(1), None. DOI: 10.12957/dep.2010.1154</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-12-12T15:40:56.496841Z" type="extractor">
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">536e79c</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+        <ref target="https://github.com/kermitt2/grobid"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2025-12-12T15:40:56.496841Z" status="draft">
+      <desc>Generated with createTraining API</desc>
+    </change>
+    <change when="2025-12-15T13:39:46.312Z" status="draft" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2025-12-15T14:06:27.322Z" status="draft" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2025-12-15T14:19:14.885Z" status="draft" who="#li">
+      <desc>Corrections_completed</desc>
+    </change>
+    <change when="2025-12-16T08:09:31.519Z" status="draft" who="#schulze">
+      <desc>Corrections_von_1_Annotation</desc>
+    </change>
+    <change when="2025-12-18T10:30:45.065Z" status="draft" who="#schulze">
+      <desc>Corrections_Schulze</desc>
+    </change>
+    <change when="2025-12-18T10:37:06.097Z" status="draft" who="#schulze">
+      <desc>Corrections_2</desc>
+    </change>
+    <change when="2026-01-11T20:18:08.370Z" status="draft" who="#schulze">
+      <desc>Judith 3 pass completed</desc>
+    </change>
+    <change when="2026-01-14T08:38:28.967Z" status="checked" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-15T10:20:01.088Z" status="approved" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-22T16:20:39.513Z" status="approved" who="#lfoppiano">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xml:lang="en">    
+   
+    <front>Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/>DOI: 10.12957/dep.2010.1154 <lb/>3 <lb/>Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/>Contratualismo Moral e Direitos Humanos no Âmbito das Relações Internacionais <lb/>Marcelo de Araujo 1 <lb/> Resumo <lb/>Procuro mostrar que o contratualismo moral, tal como ele foi contemporaneamente <lb/>defendido, por exemplo, por David Gauthier, pode ser estendido a uma compreensão da <lb/>idéia de justiça internacional. Mais especificamente, o artigo apresenta uma reconstrução <lb/>filosófica do conceito de direito humanos a partir de uma perspectiva contratualista. <lb/>Palavras--chave: direitos humanos; relações internacionais; contratualismo; realismo. <lb/>Abstract <lb/>I intend to show that moral contractarianism, as defended by David Gauthier for example, <lb/>may comprehend an interpretation on the idea of international justice. Specifically, the <lb/>article shows a philosophical digression on the concept of human rights in the contractarian <lb/>perspective. <lb/>Keywords: human rights, international relations, contractarianism, realism <lb/></front>
+    
+              <body>I <lb/>Nas últimas décadas tem havido uma grande discussão sobre se, e em que medida, as <lb/>exigências da moral -expressas no ideal de proteção aos direitos da pessoa humana -<lb/>devem ter algum tipo de precedência sobre o princípio político da não--intervenção nos <lb/>assuntos internos de um outro Estado. Esta discussão é fundamental, por exemplo, no <lb/>exame acerca da legitimidade das denominadas &quot;intervenções humanitárias&quot;. Com efeito, <lb/></body>
+    
+    __________ <lb/>
+
+            <front>1 Professor do Departamento de Filosofia da UERJ e da Faculdade de Direito da UFRJ. <lb/></front>
+    
+            <note place="headnote"> Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais<lb/></note>
+            
+      <page>4 <lb/></page>
+    
+      <note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+
+
+			<body>intervenções humanitárias têm gerado grande controvésia na comunidade internacional <lb/>tanto quando elas ocorrem, como na Somália (1992) e na Bósnia--Herzergovinia (1995), <lb/>quanto quando elas deixam de ocorrer, como em Ruanda (1994). Quando elas ocorrem, há <lb/>sempre a suspeita de que elas, em última instância, não decorrem da tentativa de se <lb/>implementar alguma concepção de justiça no âmbito internacional, mas, antes, de se <lb/>promover os interesses dos Estados interventores no Estado em cuja soberania se intervém. <lb/>Quando, por outro lado, elas não ocorrem, critica--se de indiferença ou de omissão a postura <lb/>dos Estados em condição de impedir a sistemática violação dos direitos mais básicos de <lb/>algum grupo de indivíduos. Intervenções humanitárias são controversas porque elas <lb/>envolvem um conflito entre dois tipos de vioaloções: violação da soberania nacional, e <lb/>violação de direitos humanos. 2 <lb/>Minha intenção aqui é, em primeiro lugar, chamar atenção para alguns aspectos <lb/>desse debate, mais especificamente para a concepção de moral em questão no contexto <lb/>dessas discussões. Em sugundo lugar, gostaria de mostrar que boa parte da literatura acerca <lb/>do problema da justiça internacional envolve, ao que me parece, uma concepção <lb/>equivocada de moralidade. <lb/>II <lb/>Uma atitude cética com relação à possibilidade de implementação de princípios de <lb/>justiça no âmbito da relação entre Estados é aquela tradicionalmente defendida pelo <lb/>&quot;realismo&quot; em relações internacionais. Basicamente, a tese realista é que, na busca pela <lb/></body>
+
+    __________ <lb/>
+
+			 <listBibl>2 A Constituição brasileira de 1988, em seu artigo 4°, intitulado Dos Princípios Fundamentais, afirma o seguinte: <lb/>&quot;A República Federativa do Brasil rege--se nas suas relações internacionais pelos seguintes princípios: (i) <lb/>independência nacional; (ii) prevalência dos direitos humanos; (iii) auto--determinação dos povos; (iv) não--<lb/>intervenção.&quot; A dificuldade aqui é conciliarmos adequadamente a exigência pela prevalência dos direitos <lb/>humanos, com a exigência da não--intervenção. E esta dificuldade se reflete também, do modo bem mais <lb/>amplo, no texto da Carta das Nações Unidas, de junho de 1945, que prescreve tanto o respeito aos direitos <lb/>humanos quanto o princípio da não--intervenção na soberania dos Estados. Cf. The Charter of the United <lb/>Nations: &quot;Chapter 1, article 2, §7&quot;: Nothing contained in the present Charter shall authorize the United Nations <lb/>to intervene in matters which are essentially within the domestic jurisdiction of any state or shall require the <lb/>Members to submit such matters to settlement under the present Charter; but this principle shall not prejudice <lb/>the application of enforcement measures under Chapter VII. O capítulo VII, no entanto, tem como rubrica <lb/>&quot;Action with Respect to Threats to the Peace, Breaches of The Peace, and Acts of Aggression&quot;, mas não <lb/>menciona &quot;razões humanitárias&quot; como uma justificativa para a violação da soberania de um Estado nacional. É <lb/>justamente em torno do texto &quot;Chapter 1, article 2,  §7&quot; da Carta das Nações Unidas que se articula o debate <lb/>em torno da legalidade das intervenções humanitárias. <lb/></listBibl>
+
+			<note place="headnote">Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/></note>
+
+			<page>5 <lb/></page>
+
+			<note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+    
+            <body>implementação de seus próprios interesses, o Estado não deveria delinear sua política <lb/>externa à luz de considerações sobre princípios morais ou ideais de justiça. Numa palavra, <lb/>como afirma Hans Morgenthau, um dos fundadores do realismo moderno em relações <lb/>internacionais: &quot;The actions of states are determined not by moral principles and legal <lb/>commitments but by considerations of interest and power.&quot; 3 O único compromisso moral <lb/>que Estados nacionais deveriam assumir diz respeito, na melhor das hipóteses, à <lb/>preservação da integridade de seus respectivos cidadãos. A tentativa de implementação de <lb/>princípios morais a nível internacional poderia mesmo, alegam alguns autores realistas, <lb/>terminar por colocar em risco a própria segurança interna e, conseqüentemente, ameaçar a <lb/>implementação daqueles princípios morais e concepção de justiça sob os quais os cidadãos <lb/>do Estado em questão desejam viver. Compreedido nestes termos, o realismo -se bem que, <lb/>como veremos a seguir, não apenas o realismo -pressupõe uma clara oposição entre, de um <lb/>lado, a promoção do auto--interesse e, do outro lado, a implementação de princípios morais: <lb/>ou bem estendemos a aplicação de princípios morais e ideais de justiça à esfera das relações <lb/>internacionais e, com isto, abrimos mão da busca pela realização de certos interesses <lb/>nacionais (interesses que, inclusive, quando se trata da manutenção da segurança nacional, <lb/>serviriam para garantir o respeito aos princípios morais e ideais de justiça no interior do <lb/>próprio Estado), ou restringimos o âmbito de aplicação de nossos princípios morais aos <lb/>limites do Estado em que vivemos, empregando, com isto, o que Morgenthau denomina o <lb/>&quot;princípio moral da sobrevivência nacional&quot;. Para o realista, portanto, a intervenção na <lb/>soberania de um outro Estado com vistas à implementação de princípios morais só se <lb/>justificaria quando o Estado interventor tivesse no Estado em cujos domínios a intervenção <lb/>se realiza interesses que não fossem estritamente morais. <lb/>O que, no entanto, poderíamos nos perguntar, é se o agir moral e a realização do <lb/>auto--interesse de fato se excluem mutuamente nos termos sugeridos pelo realismo. Parece--<lb/>me que o realismo em relações internacionais só pressupõe a validade dessa dicotomia <lb/>porque, contemporaneamente, ele surge como uma reação ao &quot;internationalismo liberal&quot;, <lb/>que vigorou na política internacional do período entre as duas Grandes Guerras. Um dos <lb/></body>
+    
+    __________ <lb/>
+
+			<listBibl>3 Citado em  W. Thomas, The Ethics of Destruction: Norms and Force in International Relations, 2001, p. 5. Cf. <lb/>também Morgenthau, NY, Alfred A. Knopf, 1973, p. 10: Politics Among Nations: The Struggle for Power and <lb/>Peace: &quot;... the state has no right to let its moral disapprobation get in way of successful political action, itself <lb/>inspired by the moral principle of national survival.&quot; <lb/></listBibl>
+
+			<note place="headnote">Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/></note>
+
+			<page>6 <lb/></page>
+
+<note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+    
+           <body>objetivos básicos dos representantes do &quot;internationalismo liberal&quot; era a tentativa de <lb/>aplicação de princípios políticos liberais no âmbito da política internacional. O que <lb/>caracterizava então como &quot;liberal&quot; a política deste período era, em primeiro lugar, a idéia <lb/>segundo a qual o princípio da rule of law, i.e. de um &quot;estado de direito&quot; em que ninguém <lb/>estaria acima da lei, poderia ser aplicado tanto no plano doméstico quanto no plano <lb/>internacional. A Liga das Nações surge neste contexto justamente como uma tentativa de <lb/>garantir a vigência do princípio da rule of law no âmbito da relação entre Estados nacionais. <lb/>Em segundo lugar, a política do período entre--guerras era &quot;liberal&quot; no sentido de que ela <lb/>assumia de antemão que haveria uma espécie de harmonia natural de interesses entre as <lb/>nações. Conflitos de interesses -como aqueles que levaram à eclosão Primeira Grande <lb/>Guerra -deveriam ser compreendidos agora como resultantes de uma ignorância relativa <lb/>aos &quot;verdadeiros interesses&quot; que as pessoas teriam, se elas pensassem e agissem em termos <lb/>unicamente racionais. Chris Brown resume este ponto nos seguintes termos: <lb/>&quot;The basic premise of virtually all this thought was that although it might <lb/>sometimes appear that there were circumstances where interests clashed, <lb/>in fact, once the real interests of the people were made manifest it would <lb/>be clear that such circumstances were the product of distortions introduced <lb/>either by the malice of special interests, or by simple ignorance. Thus, <lb/>although liberal internationalists could hardly deny that in 1914 war was <lb/>popular with the people, they could, and did, deny that this popularity was <lb/>based on a rational appraisal of the situation&quot; 4 <lb/>O internacionalismo liberal do período entre--guerras era representado, de fato, por <lb/>autores bem diversos. 5 Mas, ainda assim, ao analisarmos melhor os pressupostos teóricos da <lb/>política externa deste perído o que percebemos é que as &quot;premissas&quot; do internacionalismo <lb/>liberal eram essencialmente kantianas. Em primeiro lugar, porque a Liga das Nações foi <lb/>fundada, como se sabe, a partir da idéia de uma confederação de Estados inspirada no <lb/>modelo sugerido por Kant na Paz Perpétua, de 1795. 6 Em segundo lugar, as premissas do <lb/>internacionalismo liberal podem ser consideradas como kantianas porque a idéia segundo a <lb/></body>
+    
+    __________ <lb/>
+
+			<listBibl>4 Cf. e.g. Chris Brown, Understanding International Relations, London, MacMillan, 1997, p. 24. Cf. tabém Miles <lb/>Kahler: &quot;Inventing international relations: international relations theory theory after 1945&quot;, in (orgs.) M. W. <lb/>Doyle &amp; G. J. Ikenberry, New Thinking in International Theory, Westview Press, 1997, p. 20--53. <lb/>5 Ver e.g. D. Long &amp; P. Wilson: Thinkers of the Twenty Years&apos; Crisis, Oxford, Clarendon Press, 1995. <lb/>6 Cf. e.g. Georg Cavallar, &quot;Kant&apos;s Society of Nations: Free Federation or World Republic?&quot; in Journal of the <lb/>History of  Philosophy, 1994, vol. 32, p. 461--482; Kevin Dodson: Kant&apos;s Perpetual Peace: Universal Civil Society <lb/>or League of States? in: Southwest Philosophical Studies, vol. 15, p. 1--9, 1993. <lb/></listBibl>
+
+			<note place="headnote">Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/></note>
+			<page>7 <lb/></page>
+
+			<note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+    
+            <body>qual conflitos de interesses, quando racionalmente examinados, poderiam ser <lb/>reinterpretados em termos de &quot;interesses convergentes&quot;, envolve uma concepção não <lb/>instrumental de razão. É justamente uma tal concepção de razão que Kant emprega em sua <lb/>teoria moral. A razão, neste caso, não serviria para examinar os melhores meios a que <lb/>deveríamos recorrer na busca pela realização dos interesses que de fato temos, mas para <lb/>determinação mesma dos interesses que teríamos, se a razão fosse capaz de determinar <lb/>sozinha nossa vontade. É somente porque, segundo Kant, a razão compartilha com as <lb/>&quot;inclinações&quot; (Neigungen) o poder de determinar nossa vontade que pode surgir para nós <lb/>um conflito entre, por um lado, a satisfação de nossas inclinações, e, por outro lado, o agir <lb/>moral, i.e. um agir motivado unicamente por respeito à lei moral. 7 <lb/>Se o realismo em relações internacionais, compreendido como um tipo de teoria sistemática <lb/>acerca da relação entre Estados, surge como uma reação ao internacionalismo liberal que <lb/>vigorou no período entre guerras, isso não significa que o realismo e o internacionalismo <lb/>liberal não compartilhem uma mesma concepção de moral. O ponto de divergência entre <lb/>eles era, antes de mais nada, sobre como conciliarmos os princípios da moralidade com as <lb/>exigências da soberania nacional. Mas a concepção mesma de moral, endossada tanto pelo <lb/>realismo quanto pelo internacionalismo liberal não foi realmente colocada em questão. <lb/>Contudo, poderíamos nos perguntar se a própria concepção de moral em questão tanto na <lb/></body>
+    
+    __________ <lb/>
+
+			<listBibl>77  Para Kant, certos interesses são bons tendo em vista tais e tais fins, mas apenas o &quot;interesse&quot; que temos na <lb/>moralidade seria absolutamente e em si mesmo bom. O interesse na moralidade seria, assim, o &quot;interesse <lb/>supremo&quot; (das höchste Interesse), ao qual todos os outros interesses deveriam estar subordinados. Esta tese é <lb/>claramente formulada em uma passagem da Kritik der Urteilskraft Crítica do Juízo (1790) (vol. 8, p. 286): &quot;Aber, <lb/>ungeachtet aller dieser Verschiedenheit zwischen dem Angenehmen und Guten, kommen beide doch darin <lb/>überein: daß sie jederzeit mit einem Interesse an ihrem Gegenstand verbunden sind, nicht allein das Angenehme <lb/>( §3), und das mittelbar Gute (das Nützliche), welches als Mittel zu irgend einer Annehmlichkeit gefällt, sondern <lb/>auch das schlechterdings und in aller Absicht Gute, nämlich das moralische, welches das höchste Interesse bei <lb/>sich führt. Denn das Gute ist das Objekt des Willens (d.i. eines durch Vernunft bestimmten <lb/>Begehrungsvemögens). Etwas aber wollen, und an dem Dasein desselben ein Wohlgefallen haben, d.i. daran ein <lb/>Interesse nehmen, ist identisch.&quot; (Kritik der Urteilskraft, Einleitung, §4). Cf. também Kritik der praktischen <lb/>Vernunft (vol. 6, p. 200--201): &quot;Aus dem Begriffe einer Triebfeder entspringt der eines Interesse; welches niemals <lb/>einem Wesen, als was Vernunft hat, beigelegt wird, und eine Triebfeder des Willens bedeutet, so fern sie durch <lb/>Vernunft vorgestellt wird. Da das Gesetz selbst in einem moralisch--guten Willen die Triebfeder sein muß, so ist <lb/>das moralische Interesse ein reines sinnenfreies Interesse der bloßen praktischen Vernunft. Auf dem Begriffe <lb/>eines Interesse gründet sich auch der einer Maxime. Diese ist also nur alsdenn moralisch echt, wenn sie auf dem <lb/>bloßen Interesse, das man an der Befolgung des Gesetzes nimmt, beruht.&quot; Cf. também Grundlegung zur <lb/>Metaphysik der Sitten, (vol. 6, p. 28): &quot;Alles moralische so genannte Interesse besteht lediglich in der Achtung <lb/>fürs Gesetz.&quot; <lb/></listBibl>
+
+			<note place="headnote">Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/></note>
+
+			<page>8 <lb/></page>
+
+			<note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+    
+            <body>posição realista quanto na posição criticada pelos realistas não seria essencialmente <lb/>equivocada. <lb/>A minha hipótese é que a moral e o auto--interesse, diferentemente do que tanto os <lb/>internacionalistas liberais quanto os realistas assumem, não apenas não são incompatíveis, <lb/>mas seria mesmo possível defendermos um tipo de teoria moral que derivasse princípios <lb/>morais a partir da própria consideração de nossos interesses. Esta é, basicamente, a tese <lb/>defendida contemporaneamente pelos representates do contratulaismo moral. Entre outros <lb/>autores, destaca--se como representante do contratualismo moral David Guauthier, <lb/>sobretudo por influência de sua obra de 1986 intitulada Morals by Agreement. <lb/>III <lb/>Para Gauthier a moral consiste em uma instituição social que pode ser compreendida <lb/>como um sistema de restrições mútuas para benefício geral. A adesão aos princípios da <lb/>moral implica, de fato, em uma restrição voluntária de nossa própria liberdade, pois ao <lb/>aderirmos aos princípios da moral abrimos mão da realização de certas ações que <lb/>estaríamos, pelo menos em princípio, dispostos a realizar sem a adesão aos princípios. Mas a <lb/>adesão aos princípios da moral, por outro lado, não implica na renúncia à promoção de <lb/>nossos interesses. Pelo contrário, compreendida nesses termos, a moral consiste em um <lb/>sistema de restrições mútuas que, em última instância, viabilizaria a busca do auto--interesse. <lb/>Se a concepção contratualista da moral defendida por Gauthier é correta, então a suposta <lb/>oposição que os autores realistas alegam haver entre a promoção do auto--interesse e a <lb/>observação dos princípios da moral se mostra infundada. <lb/>Não vou me deter aqui nos detalhes do argumento desenvolvido pelos <lb/>representantes do contratualismo moral, o que evidentemente não significa que a teoria <lb/>moral contratualista seja imune a uma diversidade de objeções. Vou apenas apontar para <lb/>duas objeções que poderiam ser feitas por alguém que assumisse, pelo menos em princípio, <lb/>que uma teoria moral contratualista pudesse ser defendida de modo plausível, mas que <lb/>negasse que ela tivesse qualquer relevância no âmbito da relação entre Estados. As duas <lb/>objeções que tenho em mente levantam suspeitas, não sobre a plausibilidade de uma teoria <lb/>moral contratualista enquanto tal, mas sobre a tentativa de justificarmos em bases <lb/>contratualistas a adoação de princípios morais no âmbito da relação entre Estados. <lb/></body>
+
+			<note place="headnote">Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/></note>
+
+			<page>9 <lb/></page>
+
+			<note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+    
+            <body>A primeira objeção é a seguinte: a pegunta pela possibilidade de compreendermos a <lb/>dinâmica da relação entre Estados nacionais por meio da idéia de um contrato social não é <lb/>nova. Ela remonta, como se sabe, a Hobbes, que nega que seja possível estendermos à <lb/>esfera da relação entre Estados a idéia de um contrato social. Em uma conhecida passagem <lb/>do capítulo 13 do Leviathan, Hobbes assume, por um lado, que jamais houve de fato um <lb/>&quot;estado de natureza&quot; entre indivíudos. Ele sustenta, no entanto, por outro lado, que a <lb/>relação vigente entre os Estado reproduz as circunstâncias do &quot;estado de natureza&quot;. 8 Para <lb/>Hobbes, portanto, a arena internacional seria como um &quot;estado de natureza&quot;, porém não de <lb/>indivíduos, mas de Estados lutando entre si pela auto--preservação. Desta forma, é <lb/>justamente o argumento contratualista de Hobbes que, freqüentemente, é retomado para <lb/>justificar a posição realista, segundo a qual a política externa de Estados nacionais não <lb/>deveria ser implementada sob a consideração de princípios morais ou concepções de justiça, <lb/>pois isto poderia representar a ruína do próprio Estado. Com efeito, dada a impossibilidade <lb/>de, na esfera internacional, delegarmos a uma instância superior o poder de arbitrar sobre <lb/>conflitos de interesse, os Estados nacionais permanecem em um constante &quot;estado de <lb/>natureza&quot;. A idéia de um &quot;contrato social&quot; entre Estados nacionais seria, assim, inexeqüível. <lb/>Com relação à primeira objeção temos de considerar inicialmente que, no Leviathan, não é <lb/>inteiramente claro se Hobbes está interessado em fundar uma teoria acerca da <lb/>racionalidade do Estado ou acerca da racionalidade da moral. Na literatura secundária sobre <lb/>Hobbes este ponto tem sido objeto de bastante discussão. A teoria do contrato proposta <lb/>contemporaneamente por Gauthier, com relação a este ponto, é inequívoca: trata--se de <lb/>explicitar a estrutura (ou racionalidade) da moralidade, i.e. de mostrar como a moral se <lb/>articula em torno de uma estrutura contratual. Além disso, na teoria moral contratualista <lb/>não há um correspondente à figura hobbesiana do Leviathan. E isso ocorre porque a moral, <lb/>segundo Gauthier, não possui uma estrutura verticalizada: a não adesão aos princípios da <lb/>moral não vem necessariamente acompanhada -embora possa vir, a partir do momento em <lb/>que os princípios da moral são incorporados nas normas de um sistema jurídico -de sanções <lb/></body>
+    
+    __________ <lb/>
+
+			<listBibl>&gt;8 Há alguma discussão quanto à interpretação desta passagem. Bull e Beitz negam que a interpretação <lb/>tradicional, à qual me referi acima, seja a correta. Também Locke, no Second Treatise of Government, sustenta <lb/>que, entre Estados, e entre cidadãos de Estados diferentes, prevalece o estado de natureza. <lb/></listBibl>
+
+			<note place="headnote">Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/></note>
+
+			<page>10 <lb/></page>
+
+			<note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+    
+            <body>impostas por algum tipo de instância superior. As sanções a que estamos submetidos no <lb/>caso da não adesão aos princípios da moral são, antes de mais nada, de caráter informal (ou <lb/>não jurídico): elas consistem, basicamente, nas desvantagens que experimentamos ao <lb/>sermos alijados dos benefícios decorrentes da cooperação social. Para um indivíduo que <lb/>percebesse as vantagens da cooperação social como um veículo para efetivação de seu auto--<lb/>interesse, seria mesmo racional desenvolver uma disposição para a cooperação, i.e. uma <lb/>disposição para adotar de modo generalizado os princípios da moral. 9 Com efeito, a teoria da <lb/>escolha racional que Gauthier pressupõe no contexto de sua teoria moral é uma teoria <lb/>acerca da escolha sobre disposições, e não sobre ações consideradas isoladamente. 10 <lb/>Para Gauthier, assim como para outros representantes do contratualismo moral, é, <lb/>portanto, importante que sejamos reconhecidos publicamente como indivíduos motivados <lb/>para a realização de ações morais. A perda da reputação em contextos sociais pode resultar <lb/>em uma exclusão das vantagens decorrentes da cooperação social. A mera exclusão, neste <lb/>caso, já pode ser considerada como um tipo de sanção. Embora de natureza informal, as <lb/>sanções decorrentes da transgressão das normas da moral podem, em certas circustâncias, <lb/>até se mostrar bem mais severas ao transgressor do que aquelas sanções estabelecidas em <lb/>termos jurídicos: ostracismo social e desprezo por parte da comunidade em que vivemos <lb/>podem ser bem mais difícieis de suportar do que, por exemplo, o pagamento de multas ou a <lb/>perda temporária da liberdade. 11 Mas será que as &quot;sanções informais&quot; que a moral exerce <lb/>sobre os indivíudos no contexto de comunidades específicas teriam o mesmo efeito <lb/>coercitivo quando pensamos, não em indivíduos, mas em Estados interagindo entre si no <lb/>contexto bem mais amplo de uma comunidade de Estados? <lb/>Uma segunda razão para suspeitarmos da plausibilidade da tentativa de justificarmos <lb/>em bases contratualistas a adoação de princípios morais no âmbito da relação entre Estados <lb/>decorre, justamente, do fato de podermos nos perguntar se podemos sancionar moralmente <lb/></body>
+    
+    __________ <lb/>
+
+			<listBibl>9 Cf. e.g. depoimento de Gauthier na coletânea de entrevistas Key Philosophers in Conversation, London, <lb/>Routledge, 1999, p. 133--134. A idéia segundo a qual Estados procuram manter sua reputação na comunicade <lb/>internacional é examinada e.g. por Cristine Bicchieri: &quot;Reputation&quot;, in Rationality and Coordination, Cambridge, <lb/>Cambridge University Press, p. 188--192. Ver também John Charvet, &quot;Contractarianism and international politcal <lb/>theory&quot;, in D. Boucher and P. Kelly (orgs.), The Social Contract from Hobbes to Rawls, 1998, p. 128. <lb/>10 Cf. Morals by Agreement, p. 182--183: &quot;A choice is rational if and only if it maximizes the actor&apos;s expected <lb/>utility. We identify rationality with utility--maximization at the level of dispositions to choose. A disposition is <lb/>rational if and only if an actor holding it can expect his choices to yield no less utility than the choices he would <lb/>make were he to hold any alternative disposition.&quot; <lb/>11 Cf. Peter Stemmer, Handeln zugunsten anderer: Eine moralphilosophische Untersuchung, 2000, p. 73ss. <lb/></listBibl>
+
+			<note place="headnote">Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/></note>
+
+			<page>11 <lb/></page>
+
+			<note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+    
+            <body>Estados da mesma forma que sancionamos moralmente indivíduos. Com outras palavras, <lb/>poderíamos nos perguntar se apenas indivíduos, interagindo no contexto de comunidades <lb/>específicas, podem se ver submetidos a sanções informais, ou se as próprias comunidades <lb/>poderiam estar igualmente submetidas a sanções desta natureza no contexto bem mais <lb/>amplo de uma comunidade de comunidades ou, para sermos mais precisos, no contexto <lb/>bem mais amplo de uma comunidade de Estados. A suposição de que comunidades, tal <lb/>como indivíduos, podem ser moralmente sancionadas, poderia em princípio parecer <lb/>equivocada, se assumíssemos de antemão que uma comunidade, equanto tal, só existe na <lb/>medida em que possamos reconhecer nela uma instância superior capaz de arbitrar quanto <lb/>a conflitos de interesses e de sancionar os transgressores das normas que ela própria -a <lb/>instância superior -estabelece. Se a existência de uma instância superior é uma condição <lb/>para falarmos da existência de uma comunidade, então seria certamente equivocado <lb/>falarmos da existência de uma comunidade de Estados, e, por extensão, de uma comunidade <lb/>internacional, pois o que falta no âmbito da relação entre Estados é justamente a existência <lb/>de uma tal instância superior. <lb/>Contudo, podemos negar que o conceito de comunidade envolva o conceito de uma <lb/>instância superior. Com efeito, podemos considerar que, em uma dada comunidade, a <lb/>instituição responsável pela resolução de conflitos de interesses e imposição de sanções não <lb/>diga essencialmente respeito a uma instância superior, mas, antes, a uma mera coordenação <lb/>de interesses. É nesse sentido que, por exemplo, Palmerston, em meados do século 19, já se <lb/>referia à &quot;balança de poder&quot; como uma espécie de instituição que, no âmbito da <lb/>&quot;comunidade de nações&quot;, compeliria os Estados mais poderosos a &quot;respeitar&quot; a <lb/>independência de seus vizinhos menos poderosos. Como ele afirma: <lb/>&quot;... it is to the interest of the community of nations that no nation should <lb/>acquire such a preponderance as to endanger the security of the rest; and it <lb/>is for the advantage of all that the smaller Powers should be respected in <lb/>their independence and not swallowed up by their more powerful <lb/>neighbours. That is the doctrine of the balance of power, and it is a doctrine <lb/>worthy of being acted upon.&quot; 12 <lb/></body>
+    
+    __________ <lb/>
+
+			<listBibl>12 Lord Palmerston: &quot;The balance of power&quot; (1864), citado por Evans Luard: Basic Texts in International <lb/>Relations, MacMillan, 1993, p. 444, grifo meu. <lb/></listBibl>
+
+			<note place="headnote">Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/></note>
+
+			<page>12 <lb/></page>
+
+			<note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+    
+            <body>É desnecessário dizer que, para Palmerston, os Estados não entram em um acordo <lb/>para criarem a &quot;balança de poder&quot;, pois esta surge espontaneamente de uma simples <lb/>coordenação de interesses. O que importa para falarmos aqui de uma &quot;comunidade de <lb/>nações&quot; não é, portanto, a existência de uma instância superior de caráter supranacional, <lb/>mas simplesmente uma instiuição -segundo Palmerston a &quot;balança de poder&quot; -que decorre <lb/>da coexistência mesma dos Estados. <lb/>IV <lb/>O conceito de &quot;comunidade de nações&quot; ou, para sermos mais precisos, de &quot;sociedade <lb/>internacional&quot; foi retomado e sistematizado na segunda metade do século vinte no contexto <lb/>da denominada Escola Inglesa de relações internacionais. A Escola Inglesa, representada <lb/>sobretudo por autores como Martin Wight, Hedley Bull, Barry Buzan, entre outros, <lb/>reconhece a relevância da tese realista segundo a qual Estados nacionais coexistem em um <lb/>mundo &quot;anárquico&quot;, no sentido de que os Estados nacionais não estão subordinados a uma <lb/>instância superior, capaz de lhes ditar normas e impor sanções, caso ocorra a violação destas <lb/>mesmas normas. A Escola Inglesa nega, no entanto, a idéia segundo a qual, na ausência de <lb/>um órgão regulador de âmbito internacional, caberia aos Estados unicamente zelar pela <lb/>auto--preservação. É nesse sentido que os autores ligados à Escola Inglesa defendem uma <lb/>teoria acerca da &quot;sociedade internacional&quot;. Em The Anarchical Society: A Study of Order in <lb/>World Politics (1977) Hedley Bull procura mostrar, contra o realismo, que é possível falarmos <lb/>em uma &quot;sociedade internacional&quot;, mesmo admitindo a inexistência de uma instância <lb/>superior de caráter supranacional. Isso, no entanto, não significa se comprometer com a <lb/>tese idealista endossada pelos representantes do internacionalismo liberal segundo a qual <lb/>haveria, no âmbito da relação entre Estados, uma convergência natural de interesses. Com <lb/>efeito, Bull admite que a arena internacional é caracterizada pelo conflito de interesses. <lb/>Contudo, ele sustenta também que, ainda assim, seria possível pensarmos a anarquia <lb/>predominante na arena internacional, não como um estado de natureza hobbesiano de <lb/>guerra de todos contra todos, mas como um âmbito em que teriam eficácia certas sanções <lb/>informais como, por exemplo, aquelas decorrentes da tentativa de se desequilibrar a <lb/></body>
+
+			<note place="headnote">Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/></note>
+
+			<page>13 <lb/></page>
+
+			<note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+    
+            <body>balança de poder. 13 O oposto da anarquia, nesse sentido, não é a ordem, mas o governo: <lb/>pode haver ordem, mesmo onde não há um governo constituído em torno de algum tipo de <lb/>autoridadade política. <lb/>Contudo, poderia ser objetado aqui que a cooperação internacional, compreendida <lb/>nesses termos, seria motivada apenas pelo auto--interesse. Se os Estados aderem a certas <lb/>instituições como a da balança de poder, &quot;respeitando&quot;, por exemplo, a independência de <lb/>seus vizinhos menos poderosos, não é porque o &quot;respeito&quot; se impõe como moralmente <lb/>necessário, mas porque -para empregar a expressão de Palmerston -é mais &quot;vantajoso&quot; <lb/>para todos os Estados procederem dessa forma. Mas as vantagems decorrentes do respeito <lb/>aos Estados menos poderosos - continua a objeção - nada têm a ver com a moralidade; o <lb/>respeito, nesse caso, não teria propriamente um valor moral porque os Estados mais <lb/>poderosos se veriam menos compelidos a agirem dessa forma, caso o respeito aos Estados <lb/>menos poderosos não resultasse em algum tipo de vantagem. <lb/>Essa objeção, no entanto, não me parece justificada, e a razão para isso já foi <lb/>mencionda anteriormente: essa objeção assume que uma ação só é moral (seja o sujeito da <lb/>ação um indivíduo, ou o Estado como um todo) se ela não decorrer de considerações sobre a <lb/>efetização do auto--interesse. No entanto, é precisamente esta tese que o contratualismo <lb/>moral nega. Para o contratualismo, a moralidade é um tipo de instituição social criada com o <lb/>fim de atender nossos próprios interesses. Aderir à moral, nesse sentido, significa aderir a <lb/>um sistema de &quot;maximização restrita&quot; de nossos próprios interesses. Se isso é assim, então o <lb/>debate contemporâneo acerca da legitimidade das denomindas intervenções humantitárias <lb/>não deveria se concentrar na pergunta sobre se são ou não genuinamente morais os <lb/>interesses que levam um grupo de Estados a intervir na soberania de um Estado em cujas <lb/>fronteiras esteja sendo perpetrada uma sistemática violação dos direitos humanos. Isso não <lb/>significa, evidentemente, que essa pergunta não deva ser colocada. Mas ela, de todo modo, <lb/>não deveria constituir sozinha o critério por meio do qual avaliaríamos a legitimidade ou não <lb/>de uma intervenção por razões humanitárias. <lb/></body>
+    
+    __________ <lb/>
+
+			<listBibl>13 Cf. Hedely Bull: &quot;The balance of power and international order&quot;, in The Anarchical Society: A Study of Order in <lb/>World Politics, 1977, Columbia University Press, p. 101--126. Ver também Martin Wight: &quot;The balance of <lb/>power&quot;, in Power Politics, Leicester University Press, 1995, p. 168--185. <lb/></listBibl>
+
+			<note place="headnote">Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/></note>
+
+			<page>14 <lb/></page>
+
+			<note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+    
+            <body>Por fim, a título de conclusão, gostaria de salientar que não foi meu objetivo aqui <lb/>estabelecer qual é, afinal, o critério que, em última instância, deveria servir para nos orientar <lb/>no estabelecimento da legitimidade ou não de uma intervenção humanitária. A minha <lb/>intenção foi, basicamente, chamar atenção para o fato de que, na discussão acerca dos <lb/>problemas políticos e morais que as denominadas intervenções humanitárias envolvem, não <lb/>é necessário assumirmos de ante--mão que promoção do auto--interesse no âmbito da <lb/>relação entre Estados necessariamente entre em conflito com os princípios da moralidade <lb/>expressos nos ideais de proteção dos direitos humanos, uma vez que é possível articularmos <lb/>uma concepção de moralidade em que os princípios da imparcialidade, típicos da moral 14 , <lb/>sejam estabelecidos pela consideração mesma do auto--interesse. 15 <lb/></body>
+
+    
+			<listBibl>Referências Bibliográficas: <lb/>1. W. Thomas. The Ethics of Destruction: Norms and Force in International Relations. <lb/>Ithaca: Cornell University Press,2001. <lb/>2. Morgenthau, NY, Alfred A. Knopf. Politics Among Nations: The Struggle for Power and <lb/>Peace. New York: Alfred A. Knopf, 1973. <lb/>3. BROWN, Chris. Understanding International Relations. London: MacMillan, 1997. <lb/></listBibl>
+    
+    __________ <lb/>
+    
+            <listBibl>14 <lb/>Cf. e.g. Morals by Agreement, p. 4: &quot;Our claim is that in certain situations involving interaction with others, an <lb/>individual chooses rationally only in so far as he constrains his pursuit of his own interest or advantage to <lb/>conform principles expressing the impartiality characteristic of morality.&quot; <lb/>15 Um exame do problema das intevenções humanitárias a partir de uma perspectiva contratualista tem ainda a <lb/>vantagem, ao meu ver, de tornar menos relevante a constatação de que algumas agências de ajuda <lb/>humanitária terem se tornado nos últimos anos um negócio bastante lucrativo. (Cf. e.g. Bob Cliford: <lb/>&quot;Merchants of morality&quot;, in Foreign Policy, March / April, 2002). Com relação a problemas deste tipo, cf. e.g. a <lb/>afirmação de Andreas Hasenclever: Die Macht der Moral in der internationalen Politik: Militärische <lb/>Interventionen westlicher Staaten in Somalia, Ruanda und Bosnien--Herzegowina, Frankfurt, Campus Verlag, <lb/>2000, p. 209: &quot;Für die Medien haben humanitäre Krisensituationen einen Nachrichtenwert, für private <lb/>Organisationen sind sie paradoxienweise die Existenzgrunlage und Abgeordnete dürfen hoffen, dass ihre <lb/>Wähler und Wählerinen den Einsatz für Menschen in Not honorieren. Alle drei Akteursgruppen müssen mit <lb/>anderen Worten nicht altuistisch handeln, sondern können durchaus ihr eigenes Fortkommen im Auge haben.&quot; <lb/></listBibl>
+
+			<note place="headnote">Marcelo de Araújo <lb/>Contratualismo Moral e Direitos Humanos no Âmbito nas Ralações Internacionais <lb/></note>
+
+			<page>15 <lb/></page>
+
+			<note place="footnote">Revista Direito e Práxis, vol. 01, n.01, 2010 <lb/></note>
+    
+            <listBibl>4. KAHLER, Miles. &quot;Inventing international relations: international relations theory theory <lb/>after 1945&quot;. In (orgs.) M. W. Doyle &amp; G. J. Ikenberry, New Thinking in International Theory. <lb/>Westview Press, 1997. <lb/>5. D. Long &amp; P. Wilson. Thinkers of the Twenty Years&apos; Crisis. Oxford: Clarendon Press, 1995. <lb/>6. Georg Cavallar, &quot;Kant&apos;s Society of Nations: Free Federation or World Republic?&quot;. in Journal <lb/>of the History of Philosophy, vol. 32, 1994, p. 461--482. <lb/>7. Kevin Dodson. &quot;Kant&apos;s Perpetual Peace: Universal Civil Society or League of States?&quot;. In: <lb/>Southwest Philosophical Studies, vol. 15, 1993, p. 1--9. <lb/>8. KANT, Emmanuel. Werke in Zehn Bänden [Obras em Dez Volumes], editado por Wilhelm <lb/>Weischedel. Darmstadt: Wissenschaftliche Buchgesellschaft, 1983. <lb/>9. GAUTHIER, David Key Philosophers in Conversation, London, Routledge, 1999, p. 133--<lb/>134. <lb/>10. Cristine Bicchieri. &quot;Reputation&quot;. In: Rationality and Coordination. Cambridge, Cambridge <lb/>University Press, 1993, p. 188--192. <lb/>11. John Charvet, &quot;Contractarianism and international politcal theory&quot;. In: D. Boucher and P. <lb/>Kelly (orgs.), The Social Contract from Hobbes to Rawls, 1998. <lb/>12. GAUTHIER, David Morals by Agreement, Oxford: Oxford University Press, 1986, p. 182--183 <lb/>13. Peter Stemmer. Handeln zugunsten anderer: Eine moralphilosophische Untersuchung. <lb/>Berlim: De Gruyter, 2000, p. 73ss. <lb/>14. Evans Luard. Basic Texts in International Relations. MacMillan, 1993. <lb/>15. Hedely Bull. &quot;The balance of power and international order&quot;. In: The Anarchical Society: <lb/>A Study of Order in World Politics. Columbia University Press, 1977,p. 101--126. <lb/>16. Martin Wight. &quot;The balance of power&quot;. In: Power Politics, Leicester University Press, <lb/>1995, p. 168--185. <lb/>17. Bob Cliford. &quot;Merchants of morality&quot;. In Foreign Policy, March / April, 2002. <lb/>18. Andreas Hasenclever. Die Macht der Moral in der internationalen Politik: Militärische <lb/>Interventionen westlicher Staaten in Somalia, Ruanda und Bosnien--Herzegowina. <lb/>Frankfurt, Campus Verlag, 2000. </listBibl>
+
+
+	</text>
+
+</TEI>

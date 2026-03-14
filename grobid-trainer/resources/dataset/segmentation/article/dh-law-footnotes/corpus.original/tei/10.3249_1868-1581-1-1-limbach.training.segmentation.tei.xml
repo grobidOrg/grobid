@@ -1,0 +1,164 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title level="a">Human Rights in Times of Terror - Is Collective Security the Enemy of Individual Freedom?</title>
+      <author>
+        <persName>
+          <forename>Jutta</forename>
+          <surname>Limbach</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2026-01-30T08:59:01.950Z">30/01/2026 09:59:01</date>
+        <title>final</title>
+        <idno type="fileref">10.3249_1868-1581-1-1-limbach</idno>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Institut für Völker- und Europarecht</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2009</date>
+      <idno type="DOI">10.3249/1868-1581-1-1-limbach</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Jutta Limbach. (2009). Human Rights in Times of Terror - Is Collective Security the Enemy of Individual Freedom?. Goettingen Journal of International Law, (), None. DOI: 10.3249/1868-1581-1-1-limbach</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-12-12T15:37:40.132063Z" type="extractor">
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">536e79c</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+        <ref target="https://github.com/kermitt2/grobid"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2025-12-12T15:37:40.132063Z" status="extraction">
+      <desc>Generated with createTraining API</desc>
+    </change>
+    <change when="2026-01-08T08:50:41.915Z" status="draft" who="#li">
+      <desc>First pass completed</desc>
+    </change>
+    <change when="2026-01-14T16:40:50.275Z" status="checked" who="#schulze">
+      <desc>Validation completed (based on 1. Mengjiao; compared with 2. Marcia)</desc>
+    </change>
+    <change when="2026-01-19T14:44:30.871Z" status="approved" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-30T08:59:12.185Z" status="candidate" who="#lfoppiano">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+			<front>Göttingen Journal of International Law 1 (2009) 1, 17-27 <lb/>doi: 10.3249/1868-1581-1-1-limbach <lb/>Human Rights in Times of Terror 1 <lb/>Is Collective Security the Enemy of Individual Freedom? <lb/>Jutta Limbach  <lb/></front>
+    
+    <div type="toc">Table of Contents <lb/>Abstract ........................................................................................................ 18 <lb/>A. The State&apos;s Reaction to Terrorism .......................................................... 18 <lb/>B. The Hunt for Terrorists in the Data Network .......................................... 19 <lb/>C. A Right to Security ................................................................................. 21 <lb/>D. Prevention versus Liberty ....................................................................... 21 <lb/>E. The Means of the Rule of Law ............................................................... 22 <lb/>F. Fighting Terrorism Within the Law ........................................................ 23 <lb/>G. A Classical and Necessary Dispute ......................................................... 26 <lb/></div>
+    
+    <front>1 This comment is based on a speech the author held in Jerusalem on 28 November <lb/>2007. <lb/> Jutta Limbach is professor of civil law at the Freie Universität Berlin since 1972. <lb/>From 1989 to 1994 she was Senatorin für Justiz (state attorney general) for Berlin. In <lb/>1994 she was appointed to the Bundesverfassungsgericht (Federal Constitutional <lb/>Court of Germany), where she served as chief justice until 2002. From 2002 to 2008 <lb/>Jutta Limbach was the President of the Goethe Institut. <lb/>GoJIL 1 (2009) 1, 17-27 <lb/>18 <lb/>Abstract <lb/>I have chosen a subject that concerns our two states -Israel and Germany -<lb/>and that time and again poses a challenge to our courts: the respect of <lb/>human rights in times of terrorism. In Israel as in Germany there exists a <lb/>firm consensus on the need to fight terror. In both states there is much <lb/>controversy regarding the best way to conduct this fight. The question is <lb/>raised whether collective security is the enemy of individual freedom. As <lb/>Aharon Barak rightly stated: &quot;Fighting against terrorism in an effective <lb/>manner entails finding the right balance between security and public <lb/>interests, on one hand, and the need to safeguard human rights and basic <lb/>freedoms, on the other.&quot; 2 <lb/>This dilemma is well known to the Israeli legal system. Since its foundation, <lb/>the state of Israel has been the target of threats to its existence and of terrible <lb/>terrorist activities. Therefore the Israeli experience -not only in the legal-<lb/>judicial field -is important for those, who are involved in the fight against <lb/>terrorism. I have to thank my former colleague Aharon Barak, who <lb/>informed me regularly, and with regard to my speech today, of the decisions <lb/>of the Supreme Court concerning torture, the separation fence and other <lb/>questions in this context. <lb/></front>
+    
+    <body>A. The State&apos;s Reaction to Terrorism <lb/>Seven years after September 11, 2001, the tension between freedom <lb/>and security is still of unbroken topicality. Not only have the terrorist <lb/>attacks in Madrid and London shown that the danger of fanatical terror is <lb/>everywhere. An attack on the German Railways, which was planned two <lb/>years ago, but failed, has shown that the Federal Republic of Germany also <lb/>is a target of Islamic extremist terrorists. <lb/>What motivates them is not the wish for retaliation for the war in Iraq. <lb/>The targets of their attacks are the western-style secular democracies, which <lb/>are based on the principles of human dignity, the fundamental rights and the <lb/></body>
+
+			<front>2 Aharon Barak, Introduction: The Supreme Court and the Problem of Terrorism, in: <lb/>Israel Supreme Court (ed.), Judgments of the Israel Supreme Court: Fighting <lb/>Terrorism within the Law, 2005, 5. <lb/></front>
+
+			<note place="headnote">Human Rights in Times of Terror <lb/></note>
+
+			<page>19 <lb/></page>
+
+			<body>principle of the rule of law. It is less the desire for violence but rather the <lb/>intention to destroy these fundamental values that makes the fanatics spread <lb/>fear and terror through their attacks on human lives. <lb/>In the western democracies, politicians are about to fall into this trap <lb/>and to compromise the boundaries of human rights and fundamental <lb/>freedoms. With a view to the threat posed by Islamic extremist fanatics, the <lb/>politicians argue, that the European Convention on Human Rights <lb/>3 has to be <lb/>seen in a different light. The post 9/11 legislation in France, the UK and <lb/>Germany is justified on the ground that it is the overriding duty of any <lb/>government to secure the safety of the people. There is one right that <lb/>matters more than any other, and that is the right to life. Freedom in this <lb/>context seems to be of minor importance. <lb/>Here, the vulnerability of the free and democratic state founded on the <lb/>rule of law in times of crisis becomes evident. In the fight against terrorism, <lb/>human rights and citizens&apos; rights have been repealed in many places all over <lb/>the world. <lb/>B. The Hunt for Terrorists in the Data Network <lb/>In early 2002, a law was enacted in Germany with the objective of <lb/>combating terrorism. <lb/>4 The law aims to put an end to the activities of <lb/>potential terrorists as early as possible. This is only the beginning. There is <lb/>an unbroken line of political activism in the fight against terrorism. A whole <lb/>series of laws and new suggestions to this effect have been (and are being) <lb/>produced. The Federal Minister of the Interior, an advocate of rigorous <lb/>precautionary measures, demands the employment of the Bundeswehr in <lb/>domestic territory, the targeted killing of suspected terrorists and the <lb/>surveillance of e-mail correspondence. A member of the German Bundestag <lb/>calls for creating a register of converts to Islam, and the Federal Minister of <lb/>Defence wants to be vested with the competence to order the shooting down <lb/>of hijacked aircraft that are used as terrorist weapons. <lb/>If public protest arises, the respective suggestion is not pursued any <lb/>further for the time being, because the government wishes to win favour <lb/></body>
+
+			<listBibl>3 <lb/>European Convention for the Protection of Human Rights and Fundamental Freedoms <lb/>and its protocols, 4 November 1950, 213 U.N.T.S. 222. <lb/>4 <lb/>Gesetz zur Bekämpfung des internationalen Terrorismus, 9 January 2002, <lb/>(Terrorismusbekämpfungsgesetz), Bundesgesetzblatt (BGBl.) I 361, 3142. <lb/></listBibl>
+
+			<note place="headnote">GoJIL 1 (2009) 1, 17-27 <lb/></note>
+
+			<page>20 <lb/></page>
+
+			<body>with the electorate. But political imagination comes up with new <lb/>suggestions all the time. <lb/>Since 9/11, the competence of the security authorities has been <lb/>expanded many times. In most cases, the respective measures are covert <lb/>ones; they remain hidden from the citizens. They include computerised <lb/>profile searches, the employment of undercover agents, acoustic <lb/>surveillance of homes and the localisation of mobile phones. The persons <lb/>concerned are not informed of the surveillance before or after the measure. <lb/>They therefore cannot take recourse to a court for judicial review of the <lb/>admissibility of the measure. <lb/>The more preventive action is intensified in an effort to enhance the <lb/>country&apos;s internal security by methods such as computerised profile <lb/>searches, undercover agents and electronic surveillance (eavesdropping). <lb/>The focus has been put on combating crimes, while the use of judicial <lb/>controls designed to protect suspects have been reduced. One should bear in <lb/>mind that modern methods of surveillance do not merely monitor those <lb/>suspected of being criminals. <lb/>Take, for example, the computerised profile searches in the aftermath <lb/>of September 11. Using a rather abstract set of criteria (which boiled down <lb/>to young, male Muslims who travelled frequently and had studied a <lb/>technical subject), the data from a large number of people who have never <lb/>before been in trouble with the police and who cannot be qualified as <lb/>troublemakers or dangerous, is being filtered. <lb/>This all shows that computerised profile searches and electronic <lb/>surveillance may even bring uninvolved outsiders to the attention of the <lb/>public prosecutor. The more instruments of investigation are expanded to <lb/>encompass uninvolved outsiders, the sooner the category of (concrete) <lb/>suspicion loses its legitimate, limiting power. <lb/>A law that was recently adopted by the Bundestag permits the <lb/>retention of communication data. <lb/>5 The law obliges all telecommunication <lb/>companies to store the connection data from telephone, e-mail and internet <lb/>traffic for six months. This law implements a European Union directive. <lb/>6 <lb/>However, two European Union Member States have brought an action <lb/></body>
+    
+    <listBibl>5 Gesetz zur Neuregelung der Telekommunikationsüberwachung und anderer <lb/>verdeckter Ermittlungsmaßnahmen sowie zur Umsetzung der Richtlinie 2006/24/EG, <lb/>21 December 2007, BGBl. I, 3198. <lb/>6 Directive 2006/24/EC of the European Parliament and of the Council, O.J. L105/54 <lb/>(2006). <lb/></listBibl>
+
+			<note place="headnote">Human Rights in Times of Terror <lb/></note>
+
+			<page>21 <lb/></page>
+
+			<body>before the Court of Justice of the European Communities to have the <lb/>directive declared void. <lb/>This law irritates not only computer freaks. It is criticised, with rare <lb/>unanimity, above all by journalists. They fear their professional <lb/>confidentiality and for the protection of their sources. In the Federal <lb/>Republic of Germany, no scandals have been brought to light by public <lb/>prosecutors; they have always become known to the press by its informants. <lb/>In the future, informants could be intimidated by such laws, which would <lb/>prevent them from revealing information to the press. It is obvious what this <lb/>would mean for the control of state authority. <lb/>C. A Right to Security <lb/>Let there be no doubt about it: protection against crime and terrorist <lb/>attacks is part of the responsibility of the state. Under the regulative idea of <lb/>the social contract, the desire for security justifies the necessity of the state. <lb/>Humans join together for the mutual protection of their lives, freedom and <lb/>property within a state system, and place themselves under the rule of <lb/>government. They refrain from taking matters into their own hands, in <lb/>favour of the state&apos;s monopoly on the use of force. Legal certainty and legal <lb/>protection are accordingly necessary elements of the authorisation and <lb/>legitimation of public power. <lb/>In contrast to the European Convention on Human Rights the German <lb/>Constitution <lb/>7 does not recognise a right to security. Despite the silence on <lb/>this issue by the Constitution, the state has an obligation to take action for <lb/>the security of its citizens stemming from the overall rationale of the <lb/>Constitution, especially from the principle of the rule of law <lb/>(Rechtsstaatsprinzip) and the right to life. Accordingly, the Parliament and <lb/>the government who are attempting to counter the danger of terror, are <lb/>fulfilling an assignment substantiated by the Constitution. <lb/>D. Prevention versus Liberty <lb/>The question of whether terror should be combated is not <lb/>controversial. What is controversial, however, is how this should be done. <lb/></body>
+
+			<listBibl>7 <lb/>Grundgesetz, 23 May 1949, BGBl. I 1, latest amendment, 28 August 2006, BGBl. I <lb/>2034. <lb/></listBibl>
+
+			<note place="headnote">GoJIL 1 (2009) 1, 17-27 <lb/></note>
+
+			<page>22 <lb/></page>
+
+			<body>How can we find a balance between the security needs and the human rights <lb/>of those suspected of terrorist activities? <lb/>The conflict between collective security and individual freedom raises <lb/>the question: which of these two principles takes priority? In view of the <lb/>new dimension of terrorism and of the danger for the life and limb of many <lb/>people, the historian Quentin Skinner argues that the primacy of security is a <lb/>concept that is evident. Juridical methodology rightly warns of regarding <lb/>any concept as evident. For in most cases, concepts which claim that certain <lb/>insights are obvious, have no informing function. They only convey the <lb/>spirit of those who created or operated them. To those who take decisions, <lb/>these concepts merely serve to solve their problem on the basis of common <lb/>sense, whatever common sense may mean. In the interpretation of such <lb/>maxims, one unknown is usually replaced by another unknown. <lb/>Neither domestic security as an aim of the state nor the individual <lb/>freedom rights are to be conceded primacy from the outset. The German <lb/>Federal Constitutional Court has enshrined both interests -the security <lb/>needs and the human rights of those suspected of terrorist activities -in the <lb/>principle of the rule of law. The Court points out the mutually opposing <lb/>interests harboured by this very constitutional principle. <lb/>8 Yet, highlighting <lb/>its Janus-faced nature does not get us very far. The main question is still left <lb/>unanswered -namely whether and how a balance can be struck between <lb/>these opposing principles. Since an either/or decision is out of the question, <lb/>the need for collective security and the individual right to freedom must <lb/>somehow be placed in relation to each other. <lb/>E. The Means of the Rule of Law <lb/>Judges cannot restrict themselves to describing the conflict of values <lb/>between security and freedom in nice-sounding phrases. They must solve <lb/>the conflict and in doing so, they must specify their criteria. If the <lb/>Constitution and the legal measures available merely highlight the abstract <lb/>aim but not how it can be achieved, there is nothing for it but to list those <lb/>aspects which need to be taken into account when reconciling rival <lb/>principles. <lb/>The Federal Constitutional Court examines the question along the <lb/>lines of the rule-of-law criteria of clarity and definiteness of statutes, of <lb/></body>
+
+			<listBibl>8 <lb/>Bundesverfassungsgericht (German Federal Constitutional Court), BVerfGE 57, 250, <lb/>276. <lb/></listBibl>
+
+			<note place="headnote">Human Rights in Times of Terror <lb/></note>
+
+			<page>23 <lb/></page>
+
+			<body>suitability, necessity and appropriateness. The Israel Supreme Court, which <lb/>had to deal, very concretely, with the issues of torture and of the security <lb/>fence, performs its review according to similar principles. In the judgments <lb/>of both courts, the principle of proportionality of the measures taken or <lb/>planned plays an important role. <lb/>The anti-terror measures drawn up need to be examined with regard to <lb/>the following questions: <lb/>-Are they actually suitable for successfully combating <lb/>fanatical terrorism? <lb/>-Is the resulting loss of freedom out of all proportion with the <lb/>severity of the intervention? <lb/>-Might the intended measures result in unwanted side effects? <lb/>These three questions are by no means all the conceivable questions <lb/>which could be asked. But the main question is, whether the post-9/11 <lb/>legislation has in fact made us safer. The suitability and proportionality of <lb/>the instruments that are used in the fight against terrorism must be reviewed <lb/>strictly. The planned measures must be examined to find out whether they <lb/>are at all suitable for successfully combating fanatical terrorism and whether <lb/>the loss of freedom that goes with them is proportionate to the security <lb/>gained by them, not forgetting the undesired incidental consequences. <lb/>The new legal instruments that have been introduced to combat illegal <lb/>drug traffic and other forms of organised crime urge us to give special <lb/>attention to these questions because these questions often play a very <lb/>subordinate part in everyday judicial work. In the Federal Republic of <lb/>Germany, telephone surveillance has resulted in a profusion of information <lb/>and language problems. The profusion of information also applies to <lb/>computer searches. In her latest data protection report, for instance, the <lb/>Commissioner for Data Protection of the state North-Rhine/Westphalia, <lb/>critically comments in her assessment of the computer search that has been <lb/>carried out in the wake of 9/11, that through computer search, thousands of <lb/>innocent citizens have come into the focus of police attention, and have <lb/>been made subjects of police checks, without any measurable success in the <lb/>search for potential Islamic extremist terrorists. <lb/>F. Fighting Terrorism Within the Law <lb/>In Israel, as in Germany, it is the task of the judges to protect human <lb/>rights against excessive demands for security. The Israel Supreme Court <lb/></body>
+
+			<note place="headnote">GoJIL 1 (2009) 1, 17-27 <lb/></note>
+
+			<page>24 <lb/></page>
+
+			<body>decided that interrogators cannot use torture in order to protect the people <lb/>against a &quot;ticking bomb&quot; situation and that the security fence, in some parts, <lb/>is illegal. With regard to torture, the Israel Supreme Court emphasised in <lb/>accord with international treaties, that the use of cruel, inhuman and <lb/>degrading treatment is prohibited. &quot;These prohibitions are &apos;absolute&apos;. There <lb/>are no exceptions to them and there is no room for balancing.&quot; <lb/>9 That means: <lb/>no room for the principle of proportionality. <lb/>The Federal Constitutional Court has decided that acoustic <lb/>surveillance of the home must not encroach upon the core area of private <lb/>life. According to the Federal Constitutional Court, this results from the <lb/>inviolability of human dignity. In a manner that is comparable to the line of <lb/>argument of the Israel Supreme Court regarding torture, the Federal <lb/>Constitutional Court emphasises the following: a weighing according to the <lb/>principle of proportionality is out of the question here. <lb/>10 <lb/>The Federal Constitutional Court has repeatedly restricted <lb/>encroachments on the freedom of the press and the secrecy of <lb/>telecommunications. According to the Federal Constitutional Court, such <lb/>encroachments are only justified if they serve to prosecute a crime of <lb/>considerable importance and if there is a concrete suspicion. There must <lb/>also be sufficiently secure indications that a connection exists between the <lb/>person who is affected by the surveillance measure and the person charged <lb/>with a crime. <lb/>11 <lb/>As concerns electronic profile searches, the Federal Constitutional <lb/>Court has decided that they are only compatible with the fundamental right <lb/>to informational self-determination &quot;if there is a concrete danger to <lb/>important objects of legal protection such as the existence and security of <lb/>the Federal Government or of a state, or to the life, limb and freedom of a <lb/>person. In advance of acts averting danger, electronic profile searches are <lb/>out of the question.&quot; <lb/>&quot;A general situation of threat such as has existed without <lb/>interruption with regard to terrorist attacks since 11 September <lb/>2001, or tense situations in foreign policy, are not sufficient for <lb/></body>
+    
+    <listBibl>9 The Israeli High Court of Justice, HCJ 5100/94 The Public Committee Against <lb/>Torture in Israel v. The State of Israel; reprinted in: Judgments of the Israel Supreme <lb/>Court: Fighting Terrorism within the Law, 43. <lb/>10 BVerfGE 109, 279. <lb/>11 BVerfGE 107, 229. <lb/></listBibl>
+
+			<note place="headnote">Human Rights in Times of Terror <lb/></note>
+
+			<page>25 <lb/></page>
+
+			<body>a court order of an electronic profile search. Instead, there must <lb/>be concrete facts that indicate that terrorist attacks are being <lb/>planned or carried out.&quot; <lb/>12 <lb/>In these decisions, the Federal Constitutional Court has also pointed <lb/>out the side effects of the security measures. It argues as follows: if citizens <lb/>are to expect state agencies to listen in on their communication, the <lb/>naturalness of the use of modern communication technologies is <lb/>endangered. But also the quality of the communication in a given society is <lb/>impaired, if the spread of the investigation measures leads to risks of <lb/>misuse, and to a feeling of being kept under surveillance. The legal <lb/>precautions created to protect the individual are also of benefit to the <lb/>confidence of the general public. <lb/>13 <lb/>In its decision on electronic profile searches, the Federal <lb/>Constitutional Court states: &quot;Whoever cannot assess with sufficient <lb/>certainty which information in certain areas are known to his or her social <lb/>environment, and whoever is not in a position to reasonably assess what <lb/>possible communication partners know about him or her, can be <lb/>considerably impeded in his or her freedom to plan and to decide out of his <lb/>or her own self-determination.&quot; <lb/>14 <lb/>&quot;Individuals are affected the more intensively in their freedom <lb/>that flows from fundamental rights the less they have given <lb/>grounds for state encroachment. Apart from this, such acts of <lb/>encroachment can have intimidating effects, which can impair <lb/>the exercise of one&apos;s fundamental rights. […] such a deterrent <lb/>effect must be avoided not only in order to protect the <lb/>individual. It also impairs the common good because self-<lb/>determination is a basic condition for the functioning of a free <lb/>and democratic polity. The naturalness of behaviour is <lb/>endangered if the spread of investigation measures contributes <lb/>to a feeling of being kept under surveillance.&quot;15 <lb/></body>
+    
+    <listBibl>12 BVerfGE, 115, 320. <lb/>13 BVerfGE, 107, 229, 328. <lb/>14 BVerfGE, 115, 320, 342. <lb/>15 BVerfGE, 115, 320, 354 -355. <lb/></listBibl>
+
+			<note place="headnote">GoJIL 1 (2009) 1, 17-27 <lb/></note>
+
+			<page>26 <lb/></page>
+
+			<body>As is generally known, a democratic political culture lives on its <lb/>citizens&apos; participation and their willingness to speak their minds. This <lb/>requires courage. If state security authorities assess the inhabitants of the <lb/>country according to biometric criteria, if they draw up data profiles of them <lb/>and if they record their activities -such as, for instance, the books that they <lb/>borrow, such courage is lost. Martin Kutscha hit the nail on the head when <lb/>he said: &quot;Wherever a climate of surveillance and spying prevails a free and <lb/>democratic process cannot take place.&quot; <lb/>16 With such strategies, a body politic <lb/>does harm to itself. It loses its credibility as a modern constitutional state. <lb/>G. A Classical and Necessary Dispute <lb/>The experience that has been gained in the prosecution of the Red <lb/>Army Faction terrorists in the Federal Republic of Germany should serve as <lb/>a warning against resorting to symbolic policies. At that time, the struggle <lb/>against the terrorism of the Red Army Faction was seen as a question of the <lb/>Federal Republic&apos;s fate and very survival. The political system reacted with <lb/>measures all passed at breakneck speed, which chiefly signalled activity but <lb/>hardly tackled the root of the problem. Yet despite their low practical value, <lb/>the legislative measures still proved extremely persistent. <lb/>In spite of this experience, the domestic policymakers, the security <lb/>authorities and the public prosecutors have been almost insatiable in their <lb/>striving for more and more new instruments and responsibilities. This <lb/>professional enthusiasm, which results from the task that must be done, can <lb/>only be kept at bay by counterforces. In a state under the rule of law, judges, <lb/>lawyers and Ministers of Justice are the natural antagonists of those who are <lb/>responsible for domestic security. The dispute between these groups of <lb/>professionals is, as Martin Klingst points out, &quot;as classical as it is <lb/>necessary.&quot; 17 The continued existence of our state founded on the rule of <lb/>law also depends on the members of the judiciary not letting themselves be <lb/>swayed in their spirit of opposition and in their faithfulness to the <lb/>fundamental rights. <lb/>Let us give Aharon Barak the last word: <lb/></body>
+
+			<listBibl>16 Martin Kutscha, Mit Riesenschritten auf dem Weg in den Überwachungsstaat, Das <lb/>Sicherheitspaket der Bundesregierung: Schutz oder Gefährdung der Demokratie?, <lb/>Frankfurter Rundschau, (7 November 2001). <lb/>17 Martin Klingst, In der Sicherheitsfalle, Zeit Online, 44 (2001) available at <lb/>http://www.zeit.de/2001/44/200144_1._leiter.xml (last visited 8 August 2008). <lb/></listBibl>
+
+			<note place="headnote">Human Rights in Times of Terror <lb/></note>
+
+			<page>27 <lb/></page>
+
+			<body>&quot;This is the destiny of a democracy it does not see all means as <lb/>acceptable, and the ways of its enemies are not always open <lb/>before it. A democracy must sometimes fight with one arm tied <lb/>behind its back. Even so, a democracy has the upper hand. The <lb/>rule of law and individual liberties constitute an important <lb/>aspect of its security stance. At the end of the day, they <lb/>strengthen its spirit and this strength allows it to overcome its <lb/>difficulties.&quot;18 <lb/></body>
+    
+    <listBibl>18 <lb/>HCJ 5100/94 The Public Committee against Torture in Israel v. The State of Israel, 53 <lb/>(4) PD 817, 854. </listBibl>
+
+
+	</text>
+
+</TEI>

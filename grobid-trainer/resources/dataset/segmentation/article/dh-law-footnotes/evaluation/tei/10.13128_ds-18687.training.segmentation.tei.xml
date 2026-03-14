@@ -1,0 +1,218 @@
+<?xml-model href="https://pdf-tei-editor-dev.panya.de/api/v1/schema/rng/grobid.training.segmentation" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title level="a">Revolutionary Time and Regeneration</title>
+      <author>
+        <persName>
+          <forename>Lynn</forename>
+          <surname>Hunt</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <editionStmt>
+      <edition>
+        <date when="2026-01-30T08:55:19.822Z">30/01/2026 09:55:19</date>
+        <title>final</title>
+        <idno type="fileref">10.13128_ds-18687</idno>
+      </edition>
+    </editionStmt>
+    <publicationStmt>
+      <publisher>Diciottesimo Secolo. Rivista della Società Italiana di Studi sul Secolo XVIII</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2016</date>
+      <idno type="DOI">10.13128/ds-18687</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Lynn Hunt. (2016). Revolutionary Time and Regeneration. Diciottesimo Secolo. Rivista della Società Italiana di Studi sul Secolo XVIII, (), None. DOI: 10.13128/ds-18687</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-12-12T15:43:31.310458Z" type="extractor">
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">536e79c</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+        <ref target="https://github.com/kermitt2/grobid"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2025-12-12T15:43:31.310458Z" status="draft">
+      <desc>Generated with createTraining API</desc>
+    </change>
+    <change when="2025-12-14T09:26:47.694Z" status="draft" who="#li">
+      <desc>Corrections_completed</desc>
+    </change>
+    <change when="2025-12-17T19:47:05.037Z" status="draft" who="#schulze">
+      <desc>Cross_Validation_Schulze</desc>
+    </change>
+    <change when="2026-01-11T20:26:36.239Z" status="draft" who="#schulze">
+      <desc>Judith 3 pass completed</desc>
+    </change>
+    <change when="2026-01-14T08:39:21.433Z" status="checked" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-14T08:39:56.903Z" status="checked" who="#schulze">
+      <desc>Corrections 3 pass</desc>
+    </change>
+    <change when="2026-01-16T12:45:33.227Z" status="approved" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-01-30T08:55:38.620Z" status="candidate" who="#lfoppiano">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+
+	  
+			<note place="footnote">«Diciottesimo Secolo», anno I, 2016, pp. 62-76. <lb/></note>
+				
+				<front>ABSTRACT <lb/>Beginning in 1789 and escalating in intensity into at least 1793, a new temporal <lb/>schema took shape in which revolutionary time pulverized the foundations of <lb/>the old order. Revolution came to mean rejecting the past, introducing a sense <lb/>of rupture in secular time, maximizing and elongating the present in order to <lb/>turn it into a moment of personal and collective transformation, and shaping the <lb/>future in accordance with the discoveries made in the present. Time ceased <lb/>being a given. It became a medium of endless potential for change that could be <lb/>willed, that is, enacted by conscious choice. <lb/></front>
+
+			<body>In the opening lines of his report to the National Convention on the <lb/>new republican calendar, P.F.N. Fabre d&apos;Eglantine explained the <lb/>logic of the revolutionary reform of time: «The regeneration of the <lb/>French people, the establishment of the republic, have necessarily led <lb/>to the reform of the common era [l&apos;ère vulgaire]. We can no longer <lb/>count the years in which kings oppressed us as a time in which we <lb/>have lived». A new calendar, he argued, would produce a new <lb/>people: «it is therefore necessary to replace these visions of ignorance <lb/>with the realities of reason and priestly prestige with the truth of <lb/>nature» 1 . <lb/>The «realities of reason» and «truth of nature» required a rational <lb/>calendar divided into twelve equal months of 30 days each. The <lb/></body>
+
+			<listBibl>1 P.F.N. Fabre d&apos;Églantine, Rapport fait à la Convention nationale dans la séance du 3 <lb/>du second mois de la seconde année de la République française, au nom de la Commission <lb/>chargée de la confection du calendrier par P.F.N. Fabre-d&apos;Eglantine, Imprimé par ordre de <lb/>la Convention, Paris 1793, pp. 1-2. <lb/></listBibl>
+				
+    <front>Revolutionary Time and Regeneration <lb/>LYNN HUNT <lb/></front>
+    
+    <note place="headnote">LYNN HUNT <lb/></note>
+
+			<page>63 <lb/></page>
+
+			<body>months were named after a seasonal element: Germinal, for instance, <lb/>connoted germination of seeds, while Floréal stood for the month of <lb/>flowering. Each month had three ten-day divisions called décades («a <lb/>common numerical name») and days called primidi, duodi, etc. up to <lb/>décadi in order to eliminate any trace of extraneous imagery 2 . At the <lb/>end came five days (six in leap years) of &apos;sans-culottides&apos; devoted to <lb/>uplifting festivals. <lb/>The calendar was doomed for many reasons. It reset time at the <lb/>foundation of the French republic ensuring that it would never be <lb/>used outside of French-controlled territories or be embraced by <lb/>opponents of the republic within France. Because it began in the <lb/>third week of September, the months did not coincide with <lb/>Gregorian calendar months, making any translation between the two <lb/>calendars all the more difficult. The abolition of Sunday as a day of <lb/>rest and of religious observance once every seven days in favor of <lb/>décadi every ten guaranteed resistance in the working classes and <lb/>among the Catholic devout. Despite all these obstacles, the <lb/>republican calendar regulated official communication for more than <lb/>a decade 3 . <lb/>Although the reform of the calendar failed to take root in the way <lb/>that the metric system eventually did, the experiment with the <lb/>calendar captures in the most dramatic fashion the revolutionary <lb/>obsession with time. This preoccupation took many forms ranging <lb/>from the most general to the very specific. It was fueled by the <lb/>conviction that revolutionaries could institute a rupture with the past <lb/>and in the process recast the political consciousness of the citizenry. <lb/>The desire for rupture first drew on and then propelled forward a <lb/>startling rejection of many past practices from the determination of <lb/>the Third Estate&apos;s deputies to the Estates General not to meet <lb/></body>
+
+			<listBibl>2 Ibidem, pp. 9-10. <lb/>3 M. Shaw, Time and the French Revolution: The Republican Calendar, 1789-Year XIV, <lb/>The Royal Historical Society and The Boydell Press, Rochester (NY) 2011; S. <lb/>Bianchi, La bataille du calendrier ou le décadi contre le dimanche. Nouvelles approches pour <lb/>la réception du calendrier républicain en milieu rural, «Annales historiques de la <lb/>Révolution française», 312, 1998, pp. 245-264; S. Perovic, The Calendar in Revolu-<lb/>tionary France: Perceptions of Time in Literature, Culture, Politics, Cambridge University <lb/>Press, Cambridge 2012. <lb/></listBibl>
+
+			<note place="headnote">Revolutionary Time and Regeneration <lb/></note>
+
+			<page>64 <lb/></page>
+
+			<body>separately from the other two estates in May-June 1789 to the tearing <lb/>down of royal statues in 1792, the renaming of streets and squares <lb/>and even cities, the introduction of new secular names for children <lb/>(Brutus, Tell, Tricolore, etc.), and the preference for the use of <lb/>citoyen[ne] rather than Monsieur or Madame in common speech 4 . <lb/>To truly break with the past, regeneration had to be achieved as <lb/>quickly as possible. The calendar was meant to be a public statement <lb/>of an already accomplished rift. As Gilbert Romme, its main <lb/>architect explained, this was «one of the most important operations» <lb/>undertaken toward «the progress of the arts and the human spirit», <lb/>an undertaking that could only succeed «in a time of revolution» [un <lb/>temps de révolution]. By its very existence, the calendar effaced <lb/>eighteen centuries of fanaticism; now «time opens a new book of <lb/>history» that will capture «the annals of regenerated France» 5 . <lb/>Romme was not alone in speaking of &apos;revolutionary time&apos; as <lb/>something very different from what had come before. From the very <lb/>beginning of the French Revolution, in July 1789, commentators <lb/>searched for ways of expressing their sense of the compression and <lb/>therefore acceleration of time. The newspaper Révolutions de Paris <lb/>referred in its second issue to «the innumerable multiplicity of <lb/>events these last eight days […] a thousand pens would not suffice <lb/>to trace all the details». That third week in July 1789 seemed «a <lb/>week that was for us six centuries» 6 . Every unexpected turn of <lb/>events had the same effect. After the king&apos;s attempted escape in <lb/>June 1791, Jeanne-Marie Roland wrote, «we are living through <lb/>ten years in twenty-four hours; events and emotions are jumbled <lb/>together and follow each other with a singular rapidity» 7 . <lb/></body>
+
+			<listBibl>4 L. Hunt, Politics, Culture, and Class in the French Revolution, University of <lb/>California Press, Berkeley 1984, pp. 52-86; S. Bianchi, Les &apos;prénoms révolutionnaires&apos; <lb/>dans la révolution française : un chantier en devenir, «Annales historiques de la <lb/>Révolution française», 322, 2000, pp. 17-38. <lb/>5 G. Romme, Rapport sur l&apos;ère de la République: séance du 10 septembre 1793, <lb/>Imprimé par ordre de la Convention Nationale, Paris 1793, pp. 1-2. <lb/>6 Révolutions de Paris, Dédiées à la Nation, vol. 2 (Du samedi 18 au 25 juillet <lb/>1789): pp. 1 and 7. <lb/>7 C. Perroud (éd.), Lettres de Madame Roland, vol. 2: 1788-1793, Imprimerie <lb/>nationale, Paris 1902, p. 325, Letter to Henry Bancal, 11 July 1792, Paris. <lb/></listBibl>
+
+			<note place="headnote">LYNN HUNT <lb/></note>
+
+			<page>65 <lb/></page>
+
+			<body>Within weeks of the fall of the Bastille, it became customary to <lb/>identify this quickening of time with revolution. The fact that <lb/>Louis-Marie Prudhomme named his paper Révolutions de Paris <lb/>from its first appearance on 18 July 1789 gives some hint of this. <lb/>On the evening of 6 October 1789, Jacques-Pierre Brissot dashed off <lb/>his first account of the &apos;October Days&apos; (5-6 October 1789) for his <lb/>newspaper Le patriote françois: «The events that have taken place right <lb/>in front of us appear almost like a dream [...]. We cannot give a <lb/>detailed account today of this astonishing Revolution» 8 . <lb/>Contemporaries clearly sensed that something momentous was <lb/>happening from July 1789 onward, but the significance of <lb/>revolutionary time did not congeal all at once. After all, calendar <lb/>reform was not proposed until the fall of 1793. Keith Baker argues <lb/>that a change in the meaning of revolution occurred sometime in the <lb/>second half of 1789, probably around the October Days. When <lb/>Prudhomme first published his paper in July, revolution still meant <lb/>an unexpected and dramatic event. But as one event became a <lb/>succession of them, participants and observers, such as the journalists <lb/>associated with Révolutions de Paris, began to detect a distinctive <lb/>rhythm, a special revolutionary dynamic, and the emergence of an <lb/>entirely new epoch that was separating itself from the &apos;ancien <lb/>régime&apos; 9 . <lb/>The term ancien régime changed in tandem with revolution. It had <lb/>been used infrequently before 1789 to refer to former regimes, such <lb/>as the Gauls before Clovis or the way an abbey was run before it was <lb/>combined with another 10 . Starting in the spring of 1789, during the <lb/>quarrels over voting by head, pamphleteers who opposed voting by <lb/>order used it to refer to the previous dominance of the privileged <lb/>orders: «Suivant l&apos;ancien régime, la noblesse &amp; le clergé, qui ne sont <lb/></body>
+
+			<listBibl>8 «Le patriote f rançois», No. 63, Mercredi 7 octobre 1789, p. 3. <lb/>9 K.M. Baker, Inventing the French Revolution: Essays on French Political Culture in the <lb/>Eighteenth Century, Cambridge University Press, Cambridge 1990, p. 221. <lb/>10 Répertoire universel et raisonné de jurisprudence civile, criminelle, canonique et bénéficiale, <lb/>vol. 13, Chez Panckoucke, Paris 1777, p. 302; and vol. 48, Chez Panckoucke et <lb/>Dupuis, Paris 1781, p. 13. <lb/></listBibl>
+
+			<note place="headnote">Revolutionary Time and Regeneration <lb/></note>
+
+			<page>66 <lb/></page>
+
+			<body>pas ensemble que la trentième partie de la nation, ont chacun <lb/>séparément une force égale à tout le reste des citoyens» 11 . <lb/>Before long, though it is difficult to say exactly when, the ancien <lb/>régime became the former regime, that which had been superseded. <lb/>In a 1789 tract on the rights and obligations of a &apos;free people&apos; (a <lb/>phrase that in itself signified that a transformation had occurred), the <lb/>author urged his fellow citizens to vote carefully because «L&apos;Égoïsme, <lb/>qui sous l&apos;ancien régime pouvait tout, et menait à tout, causerait <lb/>aujourd&apos;hui la destruction générale» 12 . By 1790, at the latest, Jean-<lb/>Paul Marat regularly fulminated against those, such as Necker, whom <lb/>he suspected of trying to maintain or restore the ancien régime: <lb/>«Aujourd&apos;hui même il sollicite l&apos;assemblée de lui accorder de grands, <lb/>de prompts secours, sous prétexte d&apos;empêcher la dissolution de l&apos;état, <lb/>de régénérer les finances, mais uniquement pour affermir l&apos;admini-<lb/>stration, pour le mettre en état de perpétuer l&apos;ancien régime» 13 . <lb/>Thus bit by bit, beginning in 1789 and escalating in intensity into at <lb/>least 1793 if not 1794, a new temporal schema took shape in which <lb/>revolutionary time pulverized the foundations of the old order. In a <lb/>rather innocuous pamphlet from January 1790 on the subject of <lb/>scarcity of cash in Paris, the author clearly distinguished «un temps <lb/>de révolution» as one of crisis and uncertainty while people were <lb/>waiting for «a new political system» in which «former abuses would <lb/>be reformed» 14 . Revolutionary time occupied the gap between old <lb/>and new; a time of revolution served as a hothouse in which the <lb/>remaining weeds from the past could be dug up while the shoots of <lb/>the new took root. A pamphlet on military recruitment published in <lb/>1789 opined that «il faut éprouver quelque temps la révolution que <lb/></body>
+
+			<listBibl>11 Motion faite par un citoyen dans l&apos;assemblée du district de Saint-Germain-des-Prés, le 21 <lb/>avril 1789 : suppression de tous privilèges pour les élections, NP 1789, pp. 5-6. <lb/>12 F.-A.-E. de Gourcy, Les droits et devoirs d&apos;un peuple libre ou Le triomphe de la liberté <lb/>française, Chez Dupain, Paris 1789, p. 48. <lb/>13 J.-P. Marat, Dénonciation contre Necker, in Ch. Vellay (éd.), Les pamphlets -1790, <lb/>Libr. Charpentier et Fasquelle, Paris 1911, p. 92. <lb/>14 Motion faite au district des Recollets, le 14 janvier 1790, sur la situation allarmante de <lb/>la capital, relativement à la rareté extrême du numéraire, De l&apos;imprimerie de P. Fr. Didot <lb/>jeune, Paris 1790, p. 4. <lb/></listBibl>
+
+			<note place="headnote">LYNN HUNT <lb/></note>
+
+			<page>67 <lb/></page>
+
+			<body>fera la Constitution dans les esprits; elle doit avoir une grande <lb/>influence sur l&apos;agriculture, le commerce et l&apos;esprit militaire» 15 . <lb/>For those living in 1789 and the years following, revolution came to <lb/>mean rejecting the past, introducing a sense of rupture in secular <lb/>time, maximizing and elongating the present in order to turn it into a <lb/>moment of personal and collective transformation, and shaping the <lb/>future in accordance with the discoveries made in the present. Time <lb/>ceased being a given. It became a medium of endless potential for <lb/>change that could be willed, that is, enacted by conscious choice. <lb/>This new relationship to time was arguably the most significant <lb/>innovation of the French Revolution. It established both <lb/>revolutionary time (and therefore revolution as a future choice) and <lb/>modern time (the sense that modernity represented a break with <lb/>tradition). Revolutionary time and modern time are not the same <lb/>thing, yet the French Revolution played a crucial role in setting both <lb/>into motion. As a result, it has occupied an important place in recent <lb/>considerations of the operation of historical time 16 . <lb/>Modernity, the idea that modern time is distinctive, has roots that <lb/>reach further into the past than 1789, but the French Revolution <lb/>helped shape its meaning in the nineteenth and twentieth century. <lb/>According to the Oxford English Dictionary, modernity is, among other <lb/>possible definitions in English, «An intellectual tendency or social <lb/>perspective characterized by departure from or repudiation of <lb/>traditional ideas, doctrines, and cultural values in favour of <lb/>contemporary or radical values and beliefs (chiefly those of scientific <lb/>rationalism and liberalism)» 17 . The French Revolution made it seem <lb/>possible to consciously depart from the past and even repudiate it <lb/>altogether precisely because it was contrary to the principles of <lb/></body>
+
+			<listBibl>15 Second rapport du comité militaire, par M. Dubois de Crancé, secrétaire de l&apos;Assemblée <lb/>Nationale, sur l&apos;établissement des milices nationales et le recrutement de l&apos;armée, Chez <lb/>Badouin, Paris 1789, p. 17. <lb/>16 It comes up repeatedly, for example, in the work of R. Koselleck, Futures <lb/>Past: On the Semantics of Historical Time, Engl. transl. by K. Tribe, Columbia <lb/>University Press, New York 1985. <lb/>17 &lt;http://www.oed.com/view/Entry/120626?redirectedFrom=modernity#eid&gt; <lb/>(Consulted 13 November 2012). <lb/></listBibl>
+
+			<note place="headnote">Revolutionary Time and Regeneration <lb/></note>
+
+			<page>68 <lb/></page>
+
+			<body>reason and national sovereignty, in other words, &apos;scientific <lb/>rationalism and liberalism&apos;. <lb/>Partisans of modernity in the nineteenth and twentieth century did <lb/>not necessarily consider themselves followers of the French Revolu-<lb/>tion or adherents of revolution more generally. Yet they subscribed, <lb/>whether consciously or not, to elements of the temporal schema put <lb/>into place by the French Revolution. In that schema, those in the <lb/>present would constantly endeavor to create something new, modern, <lb/>up-to-date and future-oriented. The past would no longer serve as a <lb/>reservoir of exemplars for present behavior; the past would be what <lb/>had to be overcome in order to make a better future. <lb/>Revolutionary time and modern time intersected in various ways. <lb/>The most momentous of those intersections was the significance <lb/>attributed to the very passage of time. Abbé Sieyès already sensed <lb/>this development in early 1789. In his pamphlet, Qu-est ce que le tiers <lb/>état? he presciently established the connection between revolution, <lb/>time, and the hidden dynamic of events: «On fermerait en vain les <lb/>yeux sur la révolution que le temps et la force des choses ont opérée; <lb/>elle n&apos;en est pas moins réelle. Autrefois, le tiers était serf, l&apos;ordre <lb/>noble était tout. Aujourd&apos;hui le tiers est tout, la noblesse est un <lb/>mot» 18 . Fate, the pressure of circumstances, &apos;la force des choses&apos; now <lb/>clearly had a dynamic of its own that was revealed by time&apos;s passing. <lb/>As events cascaded after July 1789 those who lived through them <lb/>felt there must be hidden meanings that had escaped their notice. For <lb/>many, even among the educated classes, that meaning was provided <lb/>by conspiracies. What else but intrigue and collusion could explain <lb/>the constant jolting of expectations? From the fall of the Bastille <lb/>onward fear of conspiracy was in the air. Jean-Paul Marat was far <lb/>from alone in denouncing &apos;l&apos;horrible complot&apos; or &apos;l&apos;affreuse <lb/>conjuration&apos;. Only the march of time could reveal the truth by <lb/>eventually tearing off the veil of criminal plotters 19 . Revolutionary <lb/></body>
+
+			<listBibl>18 E.J. Sieyès, Qu&apos;est-ce que le tiers état?, éd. par E. Champion, Au siège de la <lb/>Société [de l&apos;Histoire de la Révolution Française], Paris 1888, p. 79. <lb/>19 L. Hunt, The World We Have Gained: The Future of the French Revolution, «The <lb/>American Historical Review», 108, 2003, pp. 1-19. <lb/></listBibl>
+
+			<note place="headnote">LYNN HUNT <lb/></note>
+
+			<page>69 <lb/></page>
+
+			<body>time was locked in mortal combat with what Robespierre called in <lb/>1790 «les temps d&apos;intrigues et de factions» 20 . <lb/>Despite this conviction that events were being secretly controlled by <lb/>plotters who were acting in full consciousness of their aims, the <lb/>understanding of time&apos;s passage as revelatory of an inner significance <lb/>also opened the way to a new kind of determinism. Bertrand Barère, <lb/>leading member of the Comité de Salut Public, and thus one of the <lb/>architects of the Terror, retrospectively excused his actions as the <lb/>product of his time: «I did not at all shape my epoch, time of revo-<lb/>lution and political storms [ . . . ] ; I only did what I had to do, <lb/>obey it. It [l&apos;époque] sovereignly commanded so many peoples and <lb/>kings, so many geniuses, so many talents, wills and even events that <lb/>this submission to the era and this obedience to the spirit of the <lb/>century cannot be imputed to crime or fault» 21 . <lb/>This view of time&apos;s deterministic quality opened the way to social <lb/>explanations and ultimately to social science as a systematic study of <lb/>the force of circumstances. It is perhaps not surprising that Sieyès <lb/>was the first to use the term social science [«science sociale»] and that <lb/>it occurred in that same pamphlet on the Third Estate. The circle <lb/>around Condorcet began using the term in 1791, Condorcet <lb/>himself took it up in 1792, and his disciples played a key role in <lb/>establishing various clubs, societies and finally a section of the new <lb/>Institut national (1795) devoted to &apos;science sociale et législation&apos; 22 . <lb/>Foremost among these disciples was Antoine Louis Claude Destutt <lb/>de Tracy, who played a central role in giving the term currency. In <lb/>his Mémoire sur la faculté de penser of 1798, for example, Destutt de <lb/>Tracy explicitly linked science sociale to the deterministic side of <lb/>time: «on peut dire que la science sociale méritera à peine le nom de <lb/>science, tant qu&apos;elle n&apos;aura pas des principes reconnus et systématisés, <lb/></body>
+
+		<listBibl>20 M. de Robespierre, Réponse de M. de Robespierre ... à une lettre de M. Lambert, <lb/>contrôleur général des finances, De l&apos;imp. de L. Potier de Lille, Paris 1790, p. 5. <lb/>21 S. Luzzatto, Un futur au passé: La Révolution dans les Mémoires des Conven-<lb/>tionnels, «Annales historiques de l a Révolution française», 278, 1989, pp. 455-<lb/>475, quote 469. <lb/>22 R. Wokler, Saint-Simon and the Passage from Political to Social Science, in A.R. <lb/>Pagden (ed.), The Languages of Political Theory in Early-Modern Europe, Cambridge <lb/>University Press, Cambridge 1990, pp. 325-338. <lb/></listBibl>
+
+	<note place="headnote">Revolutionary Time and Regeneration <lb/></note>
+
+		<page>70 <lb/></page>
+
+			<body>à l&apos;aide desquels nous puissions expliquer et même prédire le <lb/>bonheur et le malheur des diverses sociétés, et ne les voir que comme <lb/>des conséquences nécessaires et constantes de lois démontrées» 23 . <lb/>The goal of the new social science was to explain and even predict <lb/>the future of societies by getting at the laws that determined their <lb/>development. Destutt de Tracy influenced, as much as anyone, the <lb/>subsequent emergence of sociology in France from Benjamin <lb/>Constant to Auguste Comte and beyond 24 . <lb/>Determinism was the other side of the coin of voluntarism -the <lb/>idea that humans could shape their future. Determinism, especially <lb/>insofar as it gave rise to social science, was the explanation for why <lb/>humans had fallen short of controlling their future. Deputy Henri <lb/>Grégoire, who was often one of the first to grasp the significance of <lb/>unfolding events, put his finger on the voluntaristic aspect of <lb/>revolutionary time: «Le peuple français a dépassé les autres peuples; <lb/>cependant le régime detestable dont nous secouons les lambeaux <lb/>nous tient encore à grande distance de la nature; il reste un intervalle <lb/>énorme entre ce que nous sommes et ce que nous pourrions être. <lb/>Hâtons-nous de combler cet intervalle; reconstituons la nature <lb/>humaine en lui donnant une nouvelle trempe». Not surprisingly, <lb/>Grégoire said this as part of a discussion of elementary education 25 . <lb/>The Terror itself sprouted from the effort to &apos;fill this interval&apos;, &apos;to <lb/>reconstitute human nature&apos;, or in other words, to accelerate the <lb/>effects of time. <lb/>Ironically, even though revolutionary time was meant to erase what <lb/>Grégoire termed &apos;le régime detestable&apos; of the past, the study of the <lb/>past, history, gained a new significance. Peter Fritzsche argues that <lb/></body>
+
+			<listBibl>23 Mémoire sur la faculté de penser [1798], ARTFL Electronic Edition, 2009, p. 26, <lb/>&lt;http://artflsrv02.uchicago.edu/cgibin/philologic/getobject.pl?c.1356:2:6:0:29 <lb/>.frantext0513.172648.172656&gt;. <lb/>24 M.S. Staum, Minerva&apos;s Message: Stabilizing the French Revolution, McGill-<lb/>Queen&apos;s University Press, Montreal 1996. <lb/>25 Rapport sur l&apos;ouverture d&apos;un concours pour les livres élémentaires de la première éducation, <lb/>par Grégoire (Séance du 3 pluviôse an II), in M.J. Guillaume (éd.), Procès-verbaux du <lb/>Comité d&apos;instruction publique de la Convention nationale, vol. 3, Imprimerie nationale, <lb/>Paris 1897, p. 365. The sense of a &apos;mythic present&apos; of regeneration is discussed <lb/>in Hunt, Politics, Culture, and Class in the French Revolution. <lb/></listBibl>
+
+			<note place="headnote">LYNN HUNT <lb/></note>
+
+			<page>71 <lb/></page>
+
+			<body>history writing gained a larger role around 1800 because the new <lb/>emphasis on disconnection from the past -the past no longer served <lb/>as a guide to the future -led to a kind of cultural melancholy 26 . The <lb/>past turned opaque and thus required more serious scholarship. At <lb/>the same time history began to appeal to more and more people; the <lb/>French Revolution brought the people on to the stage of politics, and <lb/>historians therefore had to pay attention to them in their writing. The <lb/>genres of historical writing proliferated, with the historical novel <lb/>being one of the striking examples. The writing of history was thus <lb/>profoundly influenced by the French Revolution&apos;s reframing of time. <lb/>It is here, in the aftermath of the French Revolution, that modern <lb/>time takes over from revolutionary time even while incorporating <lb/>some of its most fundamental assumptions and paradoxes. Without <lb/>the French Revolution, Hegel would not have seized upon the idea of <lb/>codifying the meaning of time&apos;s passage, much less finding in history <lb/>a secular teleology of the consciousness of freedom and the <lb/>progressive realization of reason 27 . The French Revolution played an <lb/>even more central role in Marx&apos;s thinking about history because it <lb/>enabled him to make revolution the central hinge in the historical <lb/>development of class struggles. Both Hegel and Marx seized upon the <lb/>notion that the passage of time itself could be analyzed for its inner <lb/>significance. They therefore helped cement the complicity between <lb/>modernity and history writing suggested by Fritzsche and before him <lb/>by Reinhart Koselleck. By reconfiguring the past, the very positing of <lb/>modernity opened up a new role for history. <lb/>Koselleck&apos;s account of this development has been deeply influ-<lb/>ential and is still being developed in present day considerations of <lb/>time, history, and modernity. Over the course of the early modern <lb/>period [frühen Neuzeit], Koselleck argues, history was &apos;temporalized&apos; as <lb/>it became &apos;singular&apos; and superior to preceding times. It becomes <lb/>singular in the sense that it ceased being a repository of repeatable <lb/></body>
+
+			<listBibl>26 P. Fritzsche, Stranded in the Present: Modern Time and the Melancholy of History, <lb/>Harvard University Press, Cambridge (MA) 2004. <lb/>27 Hegel was also deeply influenced by the Enlightenment and by the need to <lb/>incorporate and surpass it in his philosophical system. L.P. Hinchman, Hegel&apos;s <lb/>Critique of the Enlightenment, University of Florida Press, Gainesville (FL) 1984. <lb/></listBibl>
+
+			<note place="headnote">Revolutionary Time and Regeneration <lb/></note>
+
+			<page>72 <lb/></page>
+
+			<body>exempla and became instead a nonreplicable progression. At the end <lb/>of this process «there is the peculiar form of acceleration which <lb/>characterizes modernity». Koselleck traces the experience of <lb/>acceleration to the French Revolution, for its leaders unconsciously <lb/>secularized the eschatological expectations of Christians 28 . <lb/>Koselleck focuses on the period 1750-1850 as the period in which <lb/>the philosophy of history and the disciplinary practice of history both <lb/>emerged; they were connected by a new notion of time, not by <lb/>individuals who practiced both forms. In his view the Enlightenment <lb/>as much as the French Revolution (he refers to «the second half of <lb/>the eighteenth century») created neue Zeit or modernity. «Time is no <lb/>longer simply the medium in which all histories take place», he <lb/>maintains, «it gains a historical quality». As a consequence, «history <lb/>no longer occurs in, but through time. Time becomes a dynamic and <lb/>historical force in its own right» 29 . <lb/>When Koselleck traces the emergence of this new conception and <lb/>experience of time, he looks for it in historical and philosophical <lb/>writings for the most part. The French Revolution comes up again <lb/>and again but rarely alone or with much specificity. Thus, for <lb/>example, when speaking of the transformation of time from a <lb/>religious apocalyptic framework to a secular one of historical hope, <lb/>he says, «This subjective anticipation of a future both desired and to <lb/>be quickened acquired an unexpectedly solid reality, however, <lb/>through the process of technicalization and the French Revolution». <lb/>Technology plays an apparently equal role. Similarly, when speaking <lb/>of the use of the history of revolutions by different political ideologies, <lb/>he references Kant, Mazzini, Marx and Proudhon even while rec-<lb/>ognizing the influence of the revolution of 1789: «In 1789 a new <lb/>space of expectation was constituted whose perspective was traced <lb/>out by points which, at the same time, referred back to different <lb/>phases of the past revolution». As a result, «According to party or <lb/>position, the categories of acceleration and retardation (evident since <lb/></body>
+
+	<listBibl>28 Koselleck, Futures Past, pp. 5, 47. <lb/>29 Ibidem, p. 246. See also the excellent review by J. Zammito, Koselleck&apos;s <lb/>Philosophy of Historical Time(s) and the Practice of History, «History and Theory», 43, <lb/>2004, no. 1, pp. 124-135. <lb/></listBibl>
+
+			<note place="headnote">LYNN HUNT <lb/></note>
+
+			<page>73 <lb/></page>
+
+			<body>the French Revolution) alter the relations of past and future in <lb/>varying rhythms» 30 . <lb/>For Koselleck, then, the French Revolution is pivotal, though not <lb/>just on its own. This is no doubt fundamentally correct, for new <lb/>conceptions and experiences of time must have intellectual roots and <lb/>intellectual consequences as well as political, cultural, and even <lb/>social, economic, technological and demographic ones 31 . The brief <lb/>history recounted in this essay is not offered as a critique of <lb/>Koselleck; his reflections on historical time have deeply influenced <lb/>my own. The account given here aims to get at how the French <lb/>Revolution altered the conception of time so that time gained &apos;an <lb/>historical quality&apos;, that is so that time became revelatory of some <lb/>inner essence. The closer look at the evidence presented here shows <lb/>that this change in the conception of time did not happen all at once <lb/>but rather took shape in bits and pieces in the years after 1789. <lb/>Although historical antecedents for this transformation of time can <lb/>be traced back to the middle of the eighteenth century, there can be <lb/>no denying that 1789 shocked the system so much that it set in <lb/>motion a change that would most likely have been unimaginable <lb/>otherwise. No one at the time understood the process as it was <lb/>occurring and few grasped it even in the decades or generations <lb/>afterward. Koselleck, after all, did not publish his thoughts on the <lb/>subject until well into the twentieth century. We are only just <lb/>beginning to get a handle on the epochal transformation that took <lb/>place at the end of the eighteenth century. It may well be that the <lb/>current interest in past conceptions of time grows out of our own <lb/>sense that our current ones need rethinking too. <lb/>Since French revolutionaries of the 1790s only dimly glimpsed the <lb/>process in which they found themselves engaged, explaining why, as <lb/>opposed to how, the French Revolution altered the conception of <lb/>time must remain somewhat speculative. The focus on time in the <lb/>French Revolution seems to follow from the experience of revolution <lb/></body>
+
+			<listBibl>30 Ibidem, p. 37. <lb/>31 W.M. Nelson, The Weapon of Time: Constructing the Future in France, 1750-Year I, <lb/>Ph.D. dissertation, UCLA, 2006. Id., Making Men: Enlightenment Ideas of Racial <lb/>Engineering, «American Historical Review», 115, 2010, no. 5, pp. 1364-1394. <lb/></listBibl>
+
+			<note place="headnote">Revolutionary Time and Regeneration <lb/></note>
+
+			<page>74 <lb/></page>
+
+			<body>as a period of acceleration. Acceleration in turn was fueled by the <lb/>sense that the French were reliving, at least implicitly, the primordial <lb/>moment of social contract. They were beginning anew and had to <lb/>rush to fill that interval described by Grégoire between what they <lb/>were and what they could be. They had to accelerate time. <lb/>Although Jean-Jacques Rousseau bequeathed many notions about <lb/>the social contract to the revolutionaries, he said almost nothing <lb/>about the actual experience of it. For him, the social contract was a <lb/>mostly hypothetical notion, being a convention that had few real time <lb/>points of reference. His only historical examples were Sparta, Rome <lb/>after the Tarquins, and Holland and Switzerland in modern times. <lb/>Rousseau did describe these as moments of regeneration: «L&apos;état, <lb/>embrasé par les guerres civiles, renaît pour ainsi dire de sa cendre et <lb/>reprend la vigueur de la jeunesse en sortant des bras de la mort. Telle <lb/>fut Sparte au temps de Lycurgue, telle fut Rome après les tarquins, et <lb/>telles ont été parmi nous la Hollande et la Suisse après l&apos;expulsion des <lb/>tyrans» 32 . Yet Rousseau clearly saw this as renewal and recovery <lb/>rather than as a leap into the future, and he focused on the meaning <lb/>for the state rather than for individuals. <lb/>For the revolutionaries, in contrast, the moment of forging the <lb/>social contract was something they came to know firsthand. Émile <lb/>Durkheim captured the essence of the experience nearly a century <lb/>later, no doubt because the French Revolution occupied a pivotal <lb/>position in his own thinking about society and the sacred: <lb/>There are periods in history when, under the influence of some great <lb/>collective shock, social interactions have become much more frequent and <lb/>active. Men look for each other and assemble together more than ever. <lb/>That general effervescence results which is characteristic of revolutionary <lb/>or creative epochs. Now this greater activity results in a general <lb/>stimulation of individual forces. Men see more and differently now than in <lb/>normal times. Changes are not merely of shades and degrees; men become <lb/>different. The passions moving them are of such an intensity that they <lb/></body>
+
+			<listBibl>32 J.-J. Rousseau, Du contrat social, éd. par B. De Jouvenel, C. Bourquin, <lb/>Geneva 1947, p. 235. <lb/></listBibl>
+
+			<note place="headnote">LYNN HUNT <lb/></note>
+
+			<page>75 <lb/></page>
+
+			<body>cannot be satisfied except by violent and unrestrained actions, actions of <lb/>superhuman heroism or of bloody barbarism 33 . <lb/>Durkheim goes on to compare this to religious experience; this <lb/>effervescence is what he calls the fundamental form of religious life, <lb/>which becomes in the modern era the basis of social life itself. The <lb/>French Revolution, then, is the moment when people discover the <lb/>social roots of their being, when sacredness, in Durkheim&apos;s terms, is <lb/>transferred from religion to society. <lb/>This transfer of sacredness has been analyzed most convincingly by <lb/>Mona Ozouf. Revolutionary festivals, funeral processions, relocations <lb/>of remains to the Pantheon of revolutionary heroes, and inaugura-<lb/>tions of busts all contributed to this transfer of the sacred. The <lb/>swearing of oaths occupied such a central place in the festivals, she <lb/>argues, because «it rendered visible the act of contracting, conceived <lb/>as the fundamental characteristic of sociability» 34 . Thus the moment <lb/>of swearing an oath constituted the literal enactment of the social <lb/>contract; it was the moment at which the sacred was transferred to <lb/>society, to the social bond. The oath was one of the ways by which <lb/>society could be rendered sacred. <lb/>The imagined return to the origins of social and political life was <lb/>repeatedly reenacted in France: in the heady days of challenging the <lb/>ancien régime in 1789, in the Festival of Federation of 1790, in the <lb/>drafting of a first written constitution for the sovereign nation, and in <lb/>the decision to depose and then execute the king and establish a <lb/>republic. In fact, it was not so much a question of certain decisive <lb/>political acts as much as it was a constant re-stimulation, or at least <lb/>attempted re-stimulation since the feeling was far from unanimous, of <lb/>that &apos;general effervescence&apos; that constituted the direct experience of <lb/>the social bond. <lb/>This ceaseless re-enacting of the social contract -repeated over <lb/>time and across the space of France -gave democracy both an <lb/></body>
+
+			<listBibl>33 É. Durkheim, The Elementary Forms of the Religious Life, Engl. transl. by J. <lb/>Ward Swain, Macmillan, New York 1915 (original French version: 1912), p. <lb/>241. <lb/>34 M. Ozouf, La fête révolutionnaire, 1789-1799, Gallimard, Paris 1976, p. 337. <lb/>The title of her concluding chapter is La fête révolutionnaire: un transfert de sacralité. <lb/></listBibl>
+
+			<note place="headnote">Revolutionary Time and Regeneration <lb/></note>
+
+			<page>76 <lb/></page>
+
+			<body>immediate and an unstable foundation. The oaths, for example, <lb/>signaled a willingness to begin anew from that very instant, yet <lb/>precisely because this re-enactment of the social contract relied on an <lb/>instantaneous feeling of adherence, it was susceptible to an equally <lb/>abrupt rejection or at least reluctance to join in a new social bond <lb/>whose parameters would remain shifting and uncertain. Still, <lb/>thousands, perhaps millions, of people -and not just French people -<lb/>now felt that the scales were falling from their eyes. They spoke <lb/>repeatedly of having been blinded by the habits of despotic authority; <lb/>they were awakening to a new day, a new time. As one newspaper <lb/>wrote about the execution of the king, the French had discovered <lb/>«that great truth which the prejudices of so many centuries had <lb/>stifled; today we have just convinced ourselves that a king is only a <lb/>man» 35 . <lb/>The attempt to reset time failed in the 1790s in the sense that both <lb/>the revolutionary calendar and the republic with which it was <lb/>associated failed to endure. At the same time the new conceptions of <lb/>temporality that emerged from that quest succeeded in unimaginable <lb/>ways. Revolutionary time and modern time have shaped the lives of <lb/>people all over the world for more than two centuries. It may be time <lb/>now to re-evaluate them and perhaps even move on to another <lb/>understanding of time&apos;s influence, another &apos;regime of historicity&apos; 36 . <lb/>Yet there is no denying that the French Revolution set in motion <lb/>dynamics that structure our experience of politics and social life to <lb/>this day. Understanding those dynamics still presents a challenge that <lb/>endures and an enigma that demands our attention. <lb/></body>
+
+			<listBibl>35 «Journal des hommes libres de tous les pays», N o. 82, 22 January <lb/>1793. <lb/>36 F. Hartog, Régimes d&apos;historicité: présentisme et expériences du temps, Seuil, Paris <lb/>2003. On the differences between Hartog and Koselleck, see G. Lenclud, <lb/>Traversées dans le temps, «Annales. Histoire, Sciences Sociales», 61, 2006, pp. <lb/>1053-1084. </listBibl>
+
+
+	</text>
+
+</TEI>
