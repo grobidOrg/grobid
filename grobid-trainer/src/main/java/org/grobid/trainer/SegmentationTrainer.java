@@ -268,7 +268,13 @@ FileUtils.writeStringToFile(new File("/tmp/expected-"+name+".txt"), temp.toStrin
                        .replace("I-<funding>", "I-<body>")
                        .replace("<funding>", "<body>")
                        .replace("I-<conflict>", "I-<body>")
-                       .replace("<conflict>", "<body>");
+                       .replace("<conflict>", "<body>")
+                       .replace("I-<toc>", "I-<body>")
+                       .replace("<toc>", "<body>")
+                       .replace("I-<titlePage>", "I-<header>")
+                       .replace("<titlePage>", "<header>")
+                       .replace("I-<cover>", "I-<header>")
+                       .replace("<cover>", "<header>");
             remapped.add(line);
         }
         return remapped;

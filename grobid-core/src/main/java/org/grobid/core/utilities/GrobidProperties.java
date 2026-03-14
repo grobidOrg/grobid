@@ -826,6 +826,22 @@ public class GrobidProperties {
             return 2000;
     }
 
+    public static double getL1(final GrobidModel model) {
+        ModelParameters parameters = getGrobidModelParameters(model.getModelName());
+        if (parameters != null && parameters.wapiti != null)
+            return parameters.wapiti.l1;
+        else
+            return 0.5;
+    }
+
+    public static double getL2(final GrobidModel model) {
+        ModelParameters parameters = getGrobidModelParameters(model.getModelName());
+        if (parameters != null && parameters.wapiti != null)
+            return parameters.wapiti.l2;
+        else
+            return 0.0001;
+    }
+
     public static boolean useELMo(final String modelName) {
         ModelParameters param = getGrobidModelParameters(modelName);
         if (param == null) {
