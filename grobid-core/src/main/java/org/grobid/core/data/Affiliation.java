@@ -10,6 +10,9 @@ import org.grobid.core.utilities.LayoutTokensUtil;
 
 import java.util.*;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 /**
  * Class for representing and exchanging affiliation information.
  *
@@ -642,26 +645,26 @@ public class Affiliation {
 
     @Override
     public String toString() {
-        return "Affiliation{" +
-                "name='" + name + '\'' +
-                ", url='" + url + '\'' +
-                ", key='" + key + '\'' +
-                ", institutions=" + institutions +
-                ", departments=" + departments +
-                ", laboratories=" + laboratories +
-                ", country='" + country + '\'' +
-                ", postCode='" + postCode + '\'' +
-                ", postBox='" + postBox + '\'' +
-                ", region='" + region + '\'' +
-                ", settlement='" + settlement + '\'' +
-                ", addrLine='" + addrLine + '\'' +
-                ", marker='" + marker + '\'' +
-                ", addressString='" + addressString + '\'' +
-                ", affiliationString='" + affiliationString + '\'' +
-                ", rawAffiliationString='" + rawAffiliationString + '\'' +
-                ", failAffiliation=" + failAffiliation + '\'' +
-                ", isInfrastructure=" + isInfrastructure + 
-                '}';
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("name", name)
+                .append("url", url)
+                .append("key", key)
+                .append("institutions", institutions)
+                .append("departments", departments)
+                .append("laboratories", laboratories)
+                .append("country", country)
+                .append("postCode", postCode)
+                .append("postBox", postBox)
+                .append("region", region)
+                .append("settlement", settlement)
+                .append("addrLine", addrLine)
+                .append("marker", marker)
+                .append("addressString", addressString)
+                .append("affiliationString", affiliationString)
+                .append("rawAffiliationString", rawAffiliationString)
+                .append("failAffiliation", failAffiliation)
+                .append("isInfrastructure", isInfrastructure)
+                .toString();
     }
 
     public void addLabeledResult(TaggingLabel label, List<LayoutToken> tokenizations) {

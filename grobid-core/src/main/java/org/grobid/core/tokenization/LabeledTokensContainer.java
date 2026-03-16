@@ -1,5 +1,7 @@
 package org.grobid.core.tokenization;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
@@ -78,6 +80,9 @@ public class LabeledTokensContainer {
 
     @Override
     public String toString() {
-        return token + " (" + getFullLabel() + ")";
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("token", token)
+                .append("fullLabel", getFullLabel())
+                .toString();
     }
 }

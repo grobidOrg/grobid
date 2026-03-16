@@ -2,6 +2,8 @@ package org.grobid.core.utilities;
 
 
 import com.google.common.base.Function;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 
@@ -82,8 +84,8 @@ public class ElementCounter<T> implements Serializable {
 
     @Override
     public String toString() {
-        return "ElementCounter{" +
-                "cnts=" + cnts +
-                '}';
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("cnts", cnts)
+                .toString();
     }
 }

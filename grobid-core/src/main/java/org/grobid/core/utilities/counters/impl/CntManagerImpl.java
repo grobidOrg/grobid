@@ -1,5 +1,9 @@
 package org.grobid.core.utilities.counters.impl;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.engines.counters.Countable;
 import org.grobid.core.utilities.counters.CntManager;
 import org.grobid.core.utilities.counters.CntsMetric;
@@ -38,7 +42,7 @@ class CntManagerImpl implements CntManager {
     public void i(Countable e, long val) {
         final String groupName = getCounterEnclosingName(e);
         checkClass(groupName);
-             
+
         classCounters.putIfAbsent(groupName, new ConcurrentHashMap<String, Counter>());
         ConcurrentMap<String, Counter> cntMap = classCounters.get(groupName);
 
@@ -174,54 +178,29 @@ class CntManagerImpl implements CntManager {
 
     @Override
     public synchronized String toString() {
-        StringBuilder sb = new StringBuilder(1000);
-        for (Map.Entry<String, Map<String, Long>> m : getAllCounters().entrySet()) {
-            sb.append("\n************************************************************************************\n").
-                    append("COUNTER: ").append(m.getKey()).append("\n************************************************************************************").
-                    append("\n------------------------------------------------------------------------------------\n");
-            int maxLength = 0;
-            for (Map.Entry<String, Long> cs : m.getValue().entrySet()) {
-                if (maxLength < cs.getKey().length()) {
-                    maxLength = cs.getKey().length();
-                }
-            }
-
-
-            for (Map.Entry<String, Long> cs : m.getValue().entrySet()) {
-                sb.append("  ").append(cs.getKey()).append(": ").append(new String(new char[maxLength - cs.getKey().length()]).replace('\0', ' '))
-                        .append(cs.getValue()).append("\n");
-            }
-            sb.append("====================================================================================\n");
-        }
-
-        if (metrics != null && !metrics.isEmpty()) {
-            sb.append("\n++++++++++++++++++++++++++++++ METRICS +++++++++++++++++++++++++++++++++++++++++++++\n");
-            for (Map.Entry<String, CntsMetric> e : metrics.entrySet()) {
-                sb.append(e.getKey()).append(": ").append(e.getValue().getMetricString(this)).append("\n");
-            }
-        }
-        sb.append("====================================================================================\n");
-
-        return sb.toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("classCounters", classCounters)
+                .append("strCnts", strCnts)
+                .toString();
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
+        if (!(o instanceof CntManagerImpl)) return false;
         CntManagerImpl that = (CntManagerImpl) o;
-
-        return !(classCounters != null ? !classCounters.equals(that.classCounters) : that.classCounters != null)
-                && !(strCnts != null ? !strCnts.equals(that.strCnts) : that.strCnts != null);
-
+        return new EqualsBuilder()
+                .append(classCounters, that.classCounters)
+                .append(strCnts, that.strCnts)
+                .isEquals();
     }
 
     @Override
     public int hashCode() {
-        int result = classCounters != null ? classCounters.hashCode() : 0;
-        result = 31 * result + (strCnts != null ? strCnts.hashCode() : 0);
-        return result;
+        return new HashCodeBuilder(17, 37)
+                .append(classCounters)
+                .append(strCnts)
+                .toHashCode();
     }
 
     protected String getCounterEnclosingName(Countable e) {

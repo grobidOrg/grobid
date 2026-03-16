@@ -1,6 +1,8 @@
 package org.grobid.core.data;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.apache.commons.collections4.CollectionUtils;
 
 import org.grobid.core.data.util.AuthorEmailAssigner;
@@ -65,138 +67,59 @@ public class BiblioItem {
 
     @Override
     public String toString() {
-        return "BiblioItem{" +
-                "submission_date='" + submission_date + '\'' +
-                ", download_date='" + download_date + '\'' +
-                ", server_date='" + server_date + '\'' +
-                ", languageUtilities=" + languageUtilities +
-                ", item=" + item +
-                ", parentItem=" + parentItem +
-                ", ISBN13='" + ISBN13 + '\'' +
-                ", ISBN10='" + ISBN10 + '\'' +
-                ", title='" + title + '\'' +
-                ", publisher='" + publisher + '\'' +
-                ", nbPages=" + nbPages +
-                ", edition='" + edition + '\'' +
-                ", language='" + language + '\'' +
-                ", subtitle='" + subtitle + '\'' +
-                ", publication_date='" + publication_date + '\'' +
-                ", normalized_publication_date=" + normalized_publication_date +
-                ", editors='" + editors + '\'' +
-                ", publisher_website='" + publisher_website + '\'' +
-                ", serie='" + serie + '\'' +
-                ", ISSN='" + ISSN + '\'' +
-                ", ISSNe='" + ISSNe + '\'' +
-                ", volume='" + volume + '\'' +
-                ", number='" + number + '\'' +
-                ", month='" + month + '\'' +
-                ", support_type='" + support_type + '\'' +
-                ", version='" + version + '\'' +
-                ", smallImageURL='" + smallImageURL + '\'' +
-                ", largeImageURL='" + largeImageURL + '\'' +
-                ", publisherPlace='" + publisherPlace + '\'' +
-                ", review='" + review + '\'' +
-                ", keywords=" + keywords +
-                ", subjects=" + subjects +
-                ", categories='" + categories + '\'' +
-                ", type='" + type + '\'' +
-                ", typeDescription='" + typeDescription + '\'' +
-                ", book_type='" + book_type + '\'' +
-                ", DOI='" + doi + '\'' +
-                ", arXivId='" + arXivId + '\'' +
-                ", PMID='" + PMID + '\'' +
-                ", PMCID='" + PMCID + '\'' +
-                ", PII='" + PII + '\'' +
-                ", HALId='" + halId + '\'' +
-                ", ark='" + ark + '\'' +
-                ", istexId='" + istexId + '\'' +
-                ", inDOI='" + inDOI + '\'' +
-                ", abstract_='" + abstract_ + '\'' +
-                ", authors='" + authors + '\'' +
-                ", firstAuthorSurname='" + firstAuthorSurname + '\'' +
-                ", location='" + location + '\'' +
-                ", bookTitle='" + bookTitle + '\'' +
-                ", serieTitle='" + serieTitle + '\'' +
-                ", pageRange='" + pageRange + '\'' +
-                ", journal='" + journal + '\'' +
-                ", volumeBlock='" + volumeBlock + '\'' +
-                ", institution='" + institution + '\'' +
-                ", note='" + note + '\'' +
-                ", affiliation='" + affiliation + '\'' +
-                ", address='" + address + '\'' +
-                ", country='" + country + '\'' +
-                ", town='" + town + '\'' +
-                ", email='" + email + '\'' +
-                ", pubnum='" + pubnum + '\'' +
-                ", keyword='" + keyword + '\'' +
-                ", phone='" + phone + '\'' +
-                ", degree='" + degree + '\'' +
-                ", web='" + web + '\'' +
-                ", issue='" + issue + '\'' +
-                ", journal_abbrev='" + journal_abbrev + '\'' +
-                ", event='" + event + '\'' +
-                ", abstractHeader='" + abstractHeader + '\'' +
-                ", day='" + day + '\'' +
-                ", locationPublisher='" + locationPublisher + '\'' +
-                ", dedication='" + dedication + '\'' +
-                ", submission='" + submission + '\'' +
-                ", english_title='" + english_title + '\'' +
-                ", url='" + url + '\'' +
-                ", oaUrl='" + oaUrl + '\'' +
-                ", uri='" + uri + '\'' +
-                ", confidence='" + confidence + '\'' +
-                ", conf=" + conf +
-                ", e_year='" + e_year + '\'' +
-                ", e_month='" + e_month + '\'' +
-                ", e_day='" + e_day + '\'' +
-                ", s_year='" + s_year + '\'' +
-                ", s_month='" + s_month + '\'' +
-                ", s_day='" + s_day + '\'' +
-                ", d_year='" + d_year + '\'' +
-                ", d_month='" + d_month + '\'' +
-                ", d_day='" + d_day + '\'' +
-                ", a_year='" + a_year + '\'' +
-                ", a_month='" + a_month + '\'' +
-                ", a_day='" + a_day + '\'' +
-                ", authorList=" + authorList +
-                ", editorList=" + editorList +
-                ", affiliationList=" + affiliationList +
-                ", addressList=" + addressList +
-                ", emailList=" + emailList +
-                ", webList=" + webList +
-                ", phoneList=" + phoneList +
-                ", markers=" + markers +
-                ", fullAuthors=" + fullAuthors +
-                ", fullEditors=" + fullEditors +
-                ", fullAffiliations=" + fullAffiliations +
-                ", reference='" + reference + '\'' +
-                ", copyright='" + copyright + '\'' +
-                ", funding='" + funding + '\'' +
-                ", affiliationAddressBlock='" + affiliationAddressBlock + '\'' +
-                ", articleTitle='" + articleTitle + '\'' +
-                ", beginPage=" + beginPage +
-                ", endPage=" + endPage +
-                ", year='" + year + '\'' +
-                ", authorString='" + authorString + '\'' +
-                ", path='" + path + '\'' +
-                ", collaboration='" + collaboration + '\'' +
-                ", postProcessEditors=" + postProcessEditors +
-                ", crossrefError=" + crossrefError +
-                ", normalized_submission_date=" + normalized_submission_date +
-                ", normalized_download_date=" + normalized_download_date +
-                ", originalAffiliation='" + originalAffiliation + '\'' +
-                ", originalAbstract='" + originalAbstract + '\'' +
-                ", originalTitle='" + originalTitle + '\'' +
-                ", originalAuthors='" + originalAuthors + '\'' +
-                ", originalEditors='" + originalEditors + '\'' +
-                ", originalAddress='" + originalAddress + '\'' +
-                ", originalNote='" + originalNote + '\'' +
-                ", originalKeyword='" + originalKeyword + '\'' +
-                ", originalVolumeBlock='" + originalVolumeBlock + '\'' +
-                ", originalJournal='" + originalJournal + '\'' +
-                ", workingGroup='" + workingGroup + '\'' +
-                ", documentType='" + documentType + '\'' +
-                '}';
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("title", title)
+                .append("authors", authors)
+                .append("DOI", doi)
+                .append("journal", journal)
+                .append("volume", volume)
+                .append("number", number)
+                .append("issue", issue)
+                .append("pageRange", pageRange)
+                .append("year", year)
+                .append("publication_date", publication_date)
+                .append("publisher", publisher)
+                .append("edition", edition)
+                .append("language", language)
+                .append("subtitle", subtitle)
+                .append("editors", editors)
+                .append("serie", serie)
+                .append("ISSN", ISSN)
+                .append("ISSNe", ISSNe)
+                .append("ISBN13", ISBN13)
+                .append("ISBN10", ISBN10)
+                .append("type", type)
+                .append("book_type", book_type)
+                .append("arXivId", arXivId)
+                .append("PMID", PMID)
+                .append("PMCID", PMCID)
+                .append("PII", PII)
+                .append("HALId", halId)
+                .append("ark", ark)
+                .append("istexId", istexId)
+                .append("inDOI", inDOI)
+                .append("abstract_", abstract_)
+                .append("bookTitle", bookTitle)
+                .append("serieTitle", serieTitle)
+                .append("institution", institution)
+                .append("note", note)
+                .append("affiliation", affiliation)
+                .append("address", address)
+                .append("country", country)
+                .append("email", email)
+                .append("url", url)
+                .append("oaUrl", oaUrl)
+                .append("uri", uri)
+                .append("event", event)
+                .append("collaboration", collaboration)
+                .append("fullAuthors", fullAuthors)
+                .append("fullEditors", fullEditors)
+                .append("fullAffiliations", fullAffiliations)
+                .append("articleTitle", articleTitle)
+                .append("beginPage", beginPage)
+                .append("endPage", endPage)
+                .append("documentType", documentType)
+                .toString();
     }
 
     public int item = -1;

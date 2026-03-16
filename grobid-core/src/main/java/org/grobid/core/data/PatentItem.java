@@ -1,6 +1,9 @@
 package org.grobid.core.data;
 
 import java.util.List;
+
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.layout.BoundingBox;
 import org.grobid.core.utilities.TextUtilities;
 
@@ -233,17 +236,25 @@ public class PatentItem implements Comparable<PatentItem> {
         }
     }
 	
-	@Override
-	public String toString() {
-		return "PatentItem [authority=" + authority + ", number_wysiwyg=" + number_wysiwyg
-				+ ", number_epodoc=" + number_epodoc 
-				+ ", kindCode=" + kindCode + ", application=" + application
-				+ ", provisional=" + provisional + ", reissued=" + reissued
-				+ ", plant=" + plant + ", design=" + design + ", conf=" + conf
-				+ ", offset_begin="
-				+ offset_begin + ", offset_end=" + offset_end + ", offset_raw="
-				+ offset_raw + ", context=" + context + "]";
-	}
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("authority", authority)
+                .append("number_wysiwyg", number_wysiwyg)
+                .append("number_epodoc", number_epodoc)
+                .append("kindCode", kindCode)
+                .append("application", application)
+                .append("provisional", provisional)
+                .append("reissued", reissued)
+                .append("plant", plant)
+                .append("design", design)
+                .append("conf", conf)
+                .append("offset_begin", offset_begin)
+                .append("offset_end", offset_end)
+                .append("offset_raw", offset_raw)
+                .append("context", context)
+                .toString();
+    }
     
 	public String toTEI() {
 		return toTEI(null, false, null);

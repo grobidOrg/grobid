@@ -1,6 +1,8 @@
 package org.grobid.core.utilities.crossref;
 
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.joda.time.Duration;
 import java.util.List;
 
@@ -59,9 +61,14 @@ public class CrossrefRequestListener<T extends Object> {
 			return interval/limitIterations;
 		}
 		
-		public String toString() {
-			return "Response (status:"+status+" timeLimit:"+interval+"/"+limitIterations+", results:"+results.size();
-		}
+        public String toString() {
+            return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                    .append("status", status)
+                    .append("interval", interval)
+                    .append("limitIterations", limitIterations)
+                    .append("results", results)
+                    .toString();
+        }
 		
 		public boolean hasError() {
 			return (errorMessage != null) || (errorException != null);

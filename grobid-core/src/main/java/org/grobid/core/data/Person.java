@@ -4,6 +4,8 @@ import nu.xom.Attribute;
 import nu.xom.Element;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.document.xml.XmlBuilderUtils;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.utilities.LayoutTokensUtil;
@@ -222,29 +224,16 @@ public class Person {
     }
 
     public String toString() {
-        String res = "";
-        if (title != null)
-            res += title + " ";
-        if (firstName != null)
-            res += firstName + " ";
-        if (middleName != null)
-            res += middleName + " ";
-        if (lastName != null)
-            res += lastName + " ";
-        if (suffix != null)
-            res += suffix;
-        if (email != null) {
-            res += " (email:" + email + ")";
-        }
-        if (orcid != null) {
-            res += " (orcid:" + orcid + ")";
-        }
-        if (affiliations != null) {
-            for(Affiliation aff : affiliations) {
-                res += " (affiliation: " + aff.toString() + ") ";
-            }
-        }
-        return res.trim();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("title", title)
+                .append("firstName", firstName)
+                .append("middleName", middleName)
+                .append("lastName", lastName)
+                .append("suffix", suffix)
+                .append("email", email)
+                .append("orcid", orcid)
+                .append("affiliations", affiliations)
+                .toString();
     }
 
     public List<LayoutToken> getLayoutTokens() {

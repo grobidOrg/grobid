@@ -1,5 +1,10 @@
 package org.grobid.core.utilities;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 public class Pair<A, B> {
 
     public final A a;
@@ -12,32 +17,29 @@ public class Pair<A, B> {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb
-                .append("('")
-                .append(a)
-                .append("'; '")
-                .append(b)
-                .append("')");
-        return sb.toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("a", a)
+                .append("b", b)
+                .toString();
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (!(o instanceof Pair)) {
-            return false;
-        }
+        if (this == o) return true;
+        if (!(o instanceof Pair)) return false;
         Pair<?, ?> that = (Pair<?, ?>) o;
-        return ((this.a == null) ? that.a == null : this.a.equals(that.a)) &&
-                ((this.b == null) ? that.b == null : this.b.equals(that.b));
+        return new EqualsBuilder()
+                .append(a, that.a)
+                .append(b, that.b)
+                .isEquals();
     }
 
     @Override
     public int hashCode() {
-        return 7 * (a != null ? a.hashCode() : 11) + 13 * (b != null ? b.hashCode() : 3);
+        return new HashCodeBuilder(17, 37)
+                .append(a)
+                .append(b)
+                .toHashCode();
     }
 
     public A getA() {

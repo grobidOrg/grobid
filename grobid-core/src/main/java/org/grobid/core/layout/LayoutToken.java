@@ -1,5 +1,6 @@
 package org.grobid.core.layout;
 
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.grobid.core.utilities.UnicodeUtil;
 import org.grobid.core.engines.label.TaggingLabel;
 
@@ -264,26 +265,20 @@ public class LayoutToken implements Comparable<LayoutToken>, Serializable {
 
     @Override
     public int hashCode() {
-        int result;
-        long temp;
-        result = text != null ? text.hashCode() : 0;
-        temp = Double.doubleToLongBits(y);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(x);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(width);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(height);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + (font != null ? font.hashCode() : 0);
-        result = 31 * result + (bold ? 1 : 0);
-        result = 31 * result + (italic ? 1 : 0);
-        result = 31 * result + (colorFont != null ? colorFont.hashCode() : 0);
-        temp = Double.doubleToLongBits(fontSize);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + (rotation ? 1 : 0);
-        result = 31 * result + page;
-        return result;
+        return new HashCodeBuilder(17, 37)
+                .append(text)
+                .append(x)
+                .append(y)
+                .append(width)
+                .append(height)
+                .append(font)
+                .append(bold)
+                .append(italic)
+                .append(colorFont)
+                .append(fontSize)
+                .append(rotation)
+                .append(page)
+                .toHashCode();
     }
 
     @Override

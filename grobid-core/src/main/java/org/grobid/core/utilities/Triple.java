@@ -1,6 +1,10 @@
 package org.grobid.core.utilities;
 
 import com.google.common.base.Function;
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 public class Triple<A, B, C> {
 
@@ -37,41 +41,33 @@ public class Triple<A, B, C> {
 
     @Override
     public String toString() {
-    	StringBuilder sb = new StringBuilder();
-    	sb
-    		.append("('")
-    		.append(a)
-    		.append("'; '")
-    		.append(b)
-    		.append("'; '")
-    		.append(c)
-    		.append("')");
-        return sb.toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("a", a)
+                .append("b", b)
+                .append("c", c)
+                .toString();
     }
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((a == null) ? 0 : a.hashCode());
-		result = prime * result + ((b == null) ? 0 : b.hashCode());
-		result = prime * result + ((c == null) ? 0 : c.hashCode());
-		return result;
-	}
+    @Override
+    public int hashCode() {
+        return new HashCodeBuilder(17, 37)
+                .append(a)
+                .append(b)
+                .append(c)
+                .toHashCode();
+    }
 
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) {
-			return true;
-		}
-		if (!(o instanceof Triple)) {
-			return false;
-		}
-		Triple<?, ?, ?> that = (Triple<?, ?, ?>) o;
-		return ((this.a == null) ? that.a == null : this.a.equals(that.a)) &&
-				((this.b == null) ? that.b == null : this.b.equals(that.b)) &&
-				((this.c == null) ? that.c == null : this.c.equals(that.c));
-	}
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Triple)) return false;
+        Triple<?, ?, ?> that = (Triple<?, ?, ?>) o;
+        return new EqualsBuilder()
+                .append(a, that.a)
+                .append(b, that.b)
+                .append(c, that.c)
+                .isEquals();
+    }
 
 	public A getA() {
 		return a;

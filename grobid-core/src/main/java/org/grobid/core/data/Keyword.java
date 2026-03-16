@@ -3,6 +3,8 @@ package org.grobid.core.data;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.utilities.TextUtilities;
 
 /**
@@ -46,13 +48,10 @@ public class Keyword {
     }
 
     public String toString() {
-        String res = "";
-        if (keyword != null)
-            res += keyword + " ";
-        if (type != null) {
-            res += " (type:" + type + ")";
-        }
-        return res.trim();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("keyword", keyword)
+                .append("type", type)
+                .toString();
     }
 
     public String toTEI() {

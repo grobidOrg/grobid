@@ -2,6 +2,9 @@ package org.grobid.core.layout;
 
 import java.io.File;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 /**
  * Class for representing graphical objects occurring within a document.
  *
@@ -161,34 +164,13 @@ public class GraphicObject {
     }
 
     public String toString() {
-        StringBuilder res = new StringBuilder();
-        if (type == GraphicObjectType.BITMAP) {
-            res.append("Graphic Bitmap [");
-        } else if (type == GraphicObjectType.VECTOR) {
-            res.append("Vector Graphic [");
-        } else if (type == GraphicObjectType.VECTOR_BOX) {
-            res.append("Vector Box: [");
-        } else {
-            res.append("Unknown [");
-        }
-
-        if (startPosition != -1) {
-            res.append(startPosition);
-        }
-        res.append("-");
-        if (endPosition != -1) {
-            res.append(endPosition);
-        }
-        res.append("]: \t");
-        if (filePath != null) {
- 			res.append(filePath + "\t");
-        } else {
-           	res.append("\t");
-        }
-
-        res.append("(" + (boundingBox != null ? boundingBox.toString() : "no bounding box") + "\t");
-
-        return res.toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("type", type)
+                .append("filePath", filePath)
+                .append("startPosition", startPosition)
+                .append("endPosition", endPosition)
+                .append("boundingBox", boundingBox)
+                .toString();
     }
 
     public boolean isUsed() {

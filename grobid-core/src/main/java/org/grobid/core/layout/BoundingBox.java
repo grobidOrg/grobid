@@ -1,7 +1,8 @@
 package org.grobid.core.layout;
 
 import com.fasterxml.jackson.core.JsonGenerator;
-
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -248,14 +249,14 @@ public class BoundingBox implements Comparable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof BoundingBox)) return false;
-
         BoundingBox that = (BoundingBox) o;
-
-        if (getPage() != that.getPage()) return false;
-        if (Double.compare(that.getX(), getX()) != 0) return false;
-        if (Double.compare(that.getY(), getY()) != 0) return false;
-        if (Double.compare(that.getWidth(), getWidth()) != 0) return false;
-        return Double.compare(that.getHeight(), getHeight()) == 0;
+        return new EqualsBuilder()
+                .append(page, that.page)
+                .append(x, that.x)
+                .append(y, that.y)
+                .append(width, that.width)
+                .append(height, that.height)
+                .isEquals();
     }
 
     @Override
@@ -281,17 +282,12 @@ public class BoundingBox implements Comparable {
 
     @Override
     public int hashCode() {
-        int result;
-        long temp;
-        result = getPage();
-        temp = Double.doubleToLongBits(getX());
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(getY());
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(getWidth());
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        temp = Double.doubleToLongBits(getHeight());
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        return result;
+        return new HashCodeBuilder(17, 37)
+                .append(page)
+                .append(x)
+                .append(y)
+                .append(width)
+                .append(height)
+                .toHashCode();
     }
 }

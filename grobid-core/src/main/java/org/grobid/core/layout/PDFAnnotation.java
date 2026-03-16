@@ -3,6 +3,9 @@ package org.grobid.core.layout;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 /**
  * Class for representing an annotation present in a PDF source file. Annotations are area in the PDF document 
  * associated with an action (URI for external web link, goto for internal document link).
@@ -88,14 +91,14 @@ public class PDFAnnotation {
 
     @Override
     public String toString() {
-        String res = "PDFAnnotation{" +
-				", pageNumber=" + pageNumber +
-                ", startToken=" + startToken +
-                ", endToken=" + endToken +
-                ", type=" + type;
-        if (boundingBoxes != null)
-            res += ", boundingBoxes=" + boundingBoxes + '}';
-        return res;
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("type", type)
+                .append("destination", destination)
+                .append("pageNumber", pageNumber)
+                .append("startToken", startToken)
+                .append("endToken", endToken)
+                .append("boundingBoxes", boundingBoxes)
+                .toString();
     }
 	
 	/**

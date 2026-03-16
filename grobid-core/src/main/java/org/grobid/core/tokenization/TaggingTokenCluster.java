@@ -1,6 +1,8 @@
 package org.grobid.core.tokenization;
 
 import com.google.common.base.Function;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import com.google.common.base.Joiner;
 import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
@@ -49,12 +51,10 @@ public class TaggingTokenCluster {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        for (LabeledTokensContainer c : labeledTokensContainers) {
-            sb.append(c).append("\n");
-        }
-        sb.append("\n");
-        return sb.toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("taggingLabel", taggingLabel)
+                .append("labeledTokensContainers", labeledTokensContainers)
+                .toString();
     }
 
     public LabeledTokensContainer getLastContainer() {

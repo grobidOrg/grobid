@@ -1,5 +1,7 @@
 package org.grobid.core.engines.citations;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.layout.BoundingBox;
 import org.grobid.core.layout.LayoutToken;
 
@@ -48,6 +50,9 @@ public class LabeledReferenceResult {
 
     @Override
     public String toString() {
-        return "** " + (label == null ? "" : label) + " ** " + referenceText;
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("label", label)
+                .append("referenceText", referenceText)
+                .toString();
     }
 }

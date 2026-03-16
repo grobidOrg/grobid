@@ -2,6 +2,9 @@ package org.grobid.core.document;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.layout.BoundingBox;
 
 /**
@@ -123,7 +126,13 @@ public class DocumentNode {
     }
 
     public String toString() {
-        return toString(0);
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("id", id)
+                .append("address", address)
+                .append("label", label)
+                .append("startToken", startToken)
+                .append("endToken", endToken)
+                .toString();
     }
 
     public String toString(int tab) {

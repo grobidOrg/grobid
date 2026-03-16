@@ -1,5 +1,7 @@
 package org.grobid.core.data;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.utilities.LayoutTokensUtil;
@@ -196,12 +198,13 @@ public class Funder {
     }
 
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        if (fullName != null)
-            builder.append(fullName);
-        if (abbreviatedName != null)
-            builder.append(abbreviatedName);
-        return builder.toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("fullName", fullName)
+                .append("abbreviatedName", abbreviatedName)
+                .append("doi", doi)
+                .append("country", country)
+                .append("url", url)
+                .toString();
     }
 
     public String toJson() {

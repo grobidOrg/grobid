@@ -1,5 +1,7 @@
 package org.grobid.core.data;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.utilities.TextUtilities;
 
 /**
@@ -220,30 +222,14 @@ public class Date implements Comparable<Date> {
     }
 
     public String toString() {
-        String theDate = "";
-        if (day != -1) {
-            theDate += day + "-";
-        }
-        if (month != -1) {
-            theDate += month + "-";
-        }
-        if (year != -1) {
-            theDate += year;
-        }
-
-        theDate += " / ";
-
-        if (dayString != null) {
-            theDate += dayString + "-";
-        }
-        if (monthString != null) {
-            theDate += monthString + "-";
-        }
-        if (yearString != null) {
-            theDate += yearString;
-        }
-
-        return theDate;
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("day", day)
+                .append("month", month)
+                .append("year", year)
+                .append("dayString", dayString)
+                .append("monthString", monthString)
+                .append("yearString", yearString)
+                .toString();
     }
 
     public String toTEI() {

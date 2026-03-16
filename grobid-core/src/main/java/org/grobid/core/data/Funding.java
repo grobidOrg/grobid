@@ -1,5 +1,7 @@
 package org.grobid.core.data;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.utilities.OffsetPosition;
 import org.grobid.core.layout.LayoutToken;
@@ -301,24 +303,16 @@ public class Funding {
     }
 
     public String toString() {
-        StringBuilder builder = new StringBuilder();
-        if (funder != null)
-            builder.append("funder: " + funder.toString() + "\n");
-        if (grantName != null)
-            builder.append("grant name: " + grantName.toString() + "\n");
-        if (grantNumber != null)
-            builder.append("grant number: " + grantNumber.toString() + "\n");
-        if (projectFullName != null)
-            builder.append("project name: " + projectFullName.toString() + "\n");
-        if (projectAbbreviatedName != null)
-            builder.append("project abbreviated name: " + projectAbbreviatedName.toString() + "\n");
-        if (programFullName != null)
-            builder.append("program name: " + programFullName.toString() + "\n");
-        if (programAbbreviatedName != null)
-            builder.append("program abbreviated name: " + programAbbreviatedName.toString() + "\n");
-        if (url != null)
-            builder.append("url: " + url.toString() + "\n");
-        return builder.toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("funder", funder)
+                .append("grantName", grantName)
+                .append("grantNumber", grantNumber)
+                .append("projectFullName", projectFullName)
+                .append("projectAbbreviatedName", projectAbbreviatedName)
+                .append("programFullName", programFullName)
+                .append("programAbbreviatedName", programAbbreviatedName)
+                .append("url", url)
+                .toString();
     }
 
     public String toJson() {
