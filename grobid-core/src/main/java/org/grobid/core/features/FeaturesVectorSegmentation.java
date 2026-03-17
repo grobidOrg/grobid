@@ -54,7 +54,10 @@ public class FeaturesVectorSegmentation {
     public int relativeBlockHorizontalPosition = 0; // discretized
     public int blockWidthRatio = 0; // discretized
 
+    // extended features (dh-law-footnotes flavour only)
+    public boolean extendedFeatures = false;
     public int relativeFontSize = 0; // discretized, relative to doc average
+    public int distanceFromPageBottom = 0; // discretized
     public int parenthesesCountInLine = 0; // discretized
     public int commaCountInLine = 0; // discretized
     public int capitalizedWordCountInLine = 0; // discretized
@@ -239,17 +242,14 @@ public class FeaturesVectorSegmentation {
         // block width ratio (1)
         res.append(" " + blockWidthRatio);
 
-        // relative font size to document average (1)
-        res.append(" " + relativeFontSize);
-
-        // parentheses count in line (1)
-        res.append(" " + parenthesesCountInLine);
-
-        // comma count in line (1)
-        res.append(" " + commaCountInLine);
-
-        // capitalized word count in line (1)
-        res.append(" " + capitalizedWordCountInLine);
+        // extended features (dh-law-footnotes flavour only)
+        if (extendedFeatures) {
+            res.append(" " + relativeFontSize);
+            res.append(" " + distanceFromPageBottom);
+            res.append(" " + parenthesesCountInLine);
+            res.append(" " + commaCountInLine);
+            res.append(" " + capitalizedWordCountInLine);
+        }
 
         // label - for training data (1)
         /*if (label != null)
