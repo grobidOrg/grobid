@@ -138,6 +138,7 @@ public class Document implements Serializable {
     protected double maxBlockSpacing = 0.0;
     protected double minBlockSpacing = 0.0;
     protected int documentLenghtChar = -1; // length here is expressed as number of characters
+    protected double averageFontSize = 10.0; // average font size across all tokens
 
     // not used
     protected int beginBody = -1;
@@ -255,6 +256,10 @@ public class Document implements Serializable {
 
     public double getMinBlockSpacing() {
         return minBlockSpacing;
+    }
+
+    public double getAverageFontSize() {
+        return averageFontSize;
     }
 
     public void setAnalyzer(Analyzer analyzer) {
@@ -1575,11 +1580,21 @@ public class Document implements Serializable {
             }
         }
 
-        /*System.out.println("documentLenghtChar: " + documentLenghtChar);
-        System.out.println("maxBlockSpacing: " + maxBlockSpacing);
-        System.out.println("minBlockSpacing: " + minBlockSpacing);
-        System.out.println("maxCharacterDensity: " + maxCharacterDensity);
-        System.out.println("minCharacterDensity: " + minCharacterDensity);*/
+        // compute average font size across all tokens
+        double fontSizeSum = 0;
+        int fontSizeCount = 0;
+        for (Block block : blocks) {
+            List<LayoutToken> tokens = block.getTokens();
+            if (tokens == null) continue;
+            for (LayoutToken token : tokens) {
+                double fs = token.getFontSize();
+                if (fs > 0) {
+                    fontSizeSum += fs;
+                    fontSizeCount++;
+                }
+            }
+        }
+        averageFontSize = fontSizeCount > 0 ? fontSizeSum / fontSizeCount : 10.0;
     }
 
     public DocumentSource getDocumentSource() {

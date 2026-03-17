@@ -623,8 +623,60 @@ public class Segmentation extends AbstractParser {
                     if (density != -1.0) {
                         features.characterDensity = featureFactory
                             .linearScaling(density-doc.getMinCharacterDensity(), doc.getMaxCharacterDensity()-doc.getMinCharacterDensity(), NBBINS_DENSITY);
-//System.out.println((density-doc.getMinCharacterDensity()) + " " + (doc.getMaxCharacterDensity()-doc.getMinCharacterDensity()) + " " + NBBINS_DENSITY + " " + features.characterDensity);             
+//System.out.println((density-doc.getMinCharacterDensity()) + " " + (doc.getMaxCharacterDensity()-doc.getMinCharacterDensity()) + " " + NBBINS_DENSITY + " " + features.characterDensity);
                     }
+
+                    // relative horizontal position of the block
+                    double pageWidth = page.getWidth();
+                    if (pageWidth > 0) {
+                        features.relativeBlockHorizontalPosition = featureFactory
+                            .linearScaling(block.getX(), pageWidth, NBBINS_POSITION);
+                    }
+
+                    // block width ratio relative to main area width (fallback to page width)
+                    double referenceWidth = pageWidth;
+                    BoundingBox mainArea = page.getMainArea();
+                    if (mainArea != null && mainArea.getWidth() > 0) {
+                        referenceWidth = mainArea.getWidth();
+                    }
+                    if (referenceWidth > 0) {
+                        features.blockWidthRatio = featureFactory
+                            .linearScaling(block.getWidth(), referenceWidth, NBBINS_POSITION);
+                    }
+
+                    // relative font size compared to document average
+                    double avgFontSize = doc.getAverageFontSize();
+                    if (avgFontSize > 0 && newFontSize > 0) {
+                        features.relativeFontSize = featureFactory
+                            .linearScaling(newFontSize, (int)(avgFontSize * 2), NBBINS_POSITION);
+                    }
+
+                    // parentheses count in line
+                    int parenthesesCount = 0;
+                    for (int i = 0; i < line.length(); i++) {
+                        if (line.charAt(i) == '(') parenthesesCount++;
+                    }
+                    features.parenthesesCountInLine = featureFactory
+                        .linearScaling(parenthesesCount, 10, NBBINS_DENSITY);
+
+                    // comma count in line
+                    int commaCount = 0;
+                    for (int i = 0; i < line.length(); i++) {
+                        if (line.charAt(i) == ',') commaCount++;
+                    }
+                    features.commaCountInLine = featureFactory
+                        .linearScaling(commaCount, 15, NBBINS_DENSITY);
+
+                    // capitalized word count in line (excluding first word)
+                    String[] words = line.split("\\s+");
+                    int capitalizedCount = 0;
+                    for (int i = 1; i < words.length; i++) {
+                        if (words[i].length() > 0 && Character.isUpperCase(words[i].charAt(0))) {
+                            capitalizedCount++;
+                        }
+                    }
+                    features.capitalizedWordCountInLine = featureFactory
+                        .linearScaling(capitalizedCount, 15, NBBINS_DENSITY);
 
                     if (previousFeatures != null) {
                         String vector = previousFeatures.printVector();

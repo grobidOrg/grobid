@@ -114,6 +114,8 @@ grobid:
         epsilon: 0.0000001
         window: 50
         nbMaxIterations: 2000
+        l1: 1
+        l2: 1e-3
 
     - name: "segmentation-article-light"
       engine: "wapiti"

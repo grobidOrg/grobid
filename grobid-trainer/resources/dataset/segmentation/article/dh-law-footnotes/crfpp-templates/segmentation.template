@@ -194,14 +194,49 @@ UV2:%x[0,32]
 UV3:%x[1,32]
 
 # discretize space with previous block (33)
-#UK1:%x[-1,33]
-#UK2:%x[0,33]
-#UK3:%x[1,33]
+UW0:%x[-1,33]
+UW1:%x[0,33]
+UW2:%x[1,33]
 
-# character density of the previous block, discretised (34)
-#UL1:%x[-1,34]
-#UL2:%x[0,34]
-#UL3:%x[1,34]
+# character density of the block, discretised (34)
+UX0:%x[-1,34]
+UX1:%x[0,34]
+UX2:%x[1,34]
+
+# relative block horizontal position (35)
+UY0:%x[-1,35]
+UY1:%x[0,35]
+UY2:%x[1,35]
+
+# block width ratio (36)
+UZ0:%x[-1,36]
+UZ1:%x[0,36]
+UZ2:%x[1,36]
+
+# relative font size to document average (37)
+U100:%x[-1,37]
+U101:%x[0,37]
+U102:%x[1,37]
+
+# distance from page bottom (38)
+U110:%x[-1,38]
+U111:%x[0,38]
+U112:%x[1,38]
+
+# parentheses count in line (39)
+U120:%x[-1,39]
+U121:%x[0,39]
+U122:%x[1,39]
+
+# comma count in line (40)
+U130:%x[-1,40]
+U131:%x[0,40]
+U132:%x[1,40]
+
+# capitalized word count in line (41)
+U140:%x[-1,41]
+U141:%x[0,41]
+U142:%x[1,41]
 
 # Output
 B

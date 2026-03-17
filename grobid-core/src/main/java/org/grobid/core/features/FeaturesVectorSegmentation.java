@@ -49,8 +49,15 @@ public class FeaturesVectorSegmentation {
     public boolean repetitivePattern = false; // if true, the textual pattern is repeated at the same position on other pages
     public boolean firstRepetitivePattern = false; // if true, this is a repetitive textual pattern and this is its first occurrence in the doc
     
-    public int spacingWithPreviousBlock = 0; // discretized 
-    public int characterDensity = 0; // discretized 
+    public int spacingWithPreviousBlock = 0; // discretized
+    public int characterDensity = 0; // discretized
+    public int relativeBlockHorizontalPosition = 0; // discretized
+    public int blockWidthRatio = 0; // discretized
+
+    public int relativeFontSize = 0; // discretized, relative to doc average
+    public int parenthesesCountInLine = 0; // discretized
+    public int commaCountInLine = 0; // discretized
+    public int capitalizedWordCountInLine = 0; // discretized
 
     public String printVector() {
         if (string == null) return null;
@@ -221,12 +228,28 @@ public class FeaturesVectorSegmentation {
         }
 
         // space with previous block, discretised (1)
-        //res.append(" " + spacingWithPreviousBlock);
-        //res.append(" " + 0);
+        res.append(" " + spacingWithPreviousBlock);
 
-        // character density of the previous block, discretised (1)
-        //res.append(" " + characterDensity);
-        //res.append(" " + 0);
+        // character density of the block, discretised (1)
+        res.append(" " + characterDensity);
+
+        // relative block horizontal position (1)
+        res.append(" " + relativeBlockHorizontalPosition);
+
+        // block width ratio (1)
+        res.append(" " + blockWidthRatio);
+
+        // relative font size to document average (1)
+        res.append(" " + relativeFontSize);
+
+        // parentheses count in line (1)
+        res.append(" " + parenthesesCountInLine);
+
+        // comma count in line (1)
+        res.append(" " + commaCountInLine);
+
+        // capitalized word count in line (1)
+        res.append(" " + capitalizedWordCountInLine);
 
         // label - for training data (1)
         /*if (label != null)
