@@ -560,6 +560,14 @@ class BiblioItemTest {
     }
 
     @Test
+    fun toBibTeX_authorWithFirstAndMiddleInitials() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPersonWithMiddleName("K", "Dill", "A")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Dill, K. A.}"))
+    }
+
+    @Test
     fun toBibTeX_authorWithHyphenatedFirstName() {
         val biblio = BiblioItem()
         biblio.setFullAuthors(mutableListOf(createPerson("J-L", "Dupont")))

@@ -1968,23 +1968,23 @@ public class BiblioItem {
      * Returns the formatted name string, or empty string if no name parts are present.
      */
     private static String formatPersonNameBibTeX(Person person) {
-        String formatted = "";
+        StringBuilder sb = new StringBuilder();
         if (StringUtils.isNotBlank(person.getLastName())) {
-            formatted = person.getLastName().trim();
+            sb.append(person.getLastName().trim());
         }
         if (StringUtils.isNotBlank(person.getFirstName())) {
-            if (StringUtils.isNotBlank(formatted)) {
-                formatted += ", ";
+            if (sb.length() > 0) {
+                sb.append(", ");
             }
-            formatted += formatInitials(person.getFirstName().trim());
+            sb.append(formatInitials(person.getFirstName().trim()));
         }
         if (StringUtils.isNotBlank(person.getMiddleName())) {
-            if (StringUtils.isNotBlank(formatted)) {
-                formatted += StringUtils.isBlank(person.getFirstName()) ? ", " : " ";
+            if (sb.length() > 0) {
+                sb.append(StringUtils.isBlank(person.getFirstName()) ? ", " : " ");
             }
-            formatted += formatInitials(person.getMiddleName().trim());
+            sb.append(formatInitials(person.getMiddleName().trim()));
         }
-        return formatted;
+        return sb.toString();
     }
 
     /**
@@ -2087,13 +2087,13 @@ public class BiblioItem {
             // editors
             boolean editorsAdded = false;
             if (CollectionUtils.isNotEmpty(fullEditors)) {
-                List<String> formattedEditors = fullEditors.stream()
+                String editorStr = fullEditors.stream()
                        .filter(Objects::nonNull)
                        .map(BiblioItem::formatPersonNameBibTeX)
                        .filter(StringUtils::isNotBlank)
-                       .collect(Collectors.toList());
-                if (!formattedEditors.isEmpty()) {
-                    bibtex.add("  editor = {" + String.join(" and ", formattedEditors) + "}");
+                       .collect(Collectors.joining(" and "));
+                if (StringUtils.isNotBlank(editorStr)) {
+                    bibtex.add("  editor = {" + editorStr + "}");
                     editorsAdded = true;
                 }
             }
