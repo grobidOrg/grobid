@@ -1979,10 +1979,8 @@ public class BiblioItem {
             formatted += formatInitials(person.getFirstName().trim());
         }
         if (StringUtils.isNotBlank(person.getMiddleName())) {
-            if (StringUtils.isNotBlank(formatted) && StringUtils.isBlank(person.getFirstName())) {
-                formatted += ", ";
-            } else {
-                formatted += " ";
+            if (StringUtils.isNotBlank(formatted)) {
+                formatted += StringUtils.isBlank(person.getFirstName()) ? ", " : " ";
             }
             formatted += formatInitials(person.getMiddleName().trim());
         }
@@ -2087,18 +2085,19 @@ public class BiblioItem {
             }
 
             // editors
+            boolean editorsAdded = false;
             if (CollectionUtils.isNotEmpty(fullEditors)) {
-                StringJoiner editorJoiner = new StringJoiner(" and ", "  editor = {", "}");
-                fullEditors.stream()
+                List<String> formattedEditors = fullEditors.stream()
                        .filter(Objects::nonNull)
-                       .forEachOrdered(person -> {
-                           String editor = formatPersonNameBibTeX(person);
-                           if (StringUtils.isNotBlank(editor)) {
-                               editorJoiner.add(editor);
-                           }
-                       });
-                bibtex.add(editorJoiner.toString());
-            } else if (editors != null) {
+                       .map(BiblioItem::formatPersonNameBibTeX)
+                       .filter(StringUtils::isNotBlank)
+                       .collect(Collectors.toList());
+                if (!formattedEditors.isEmpty()) {
+                    bibtex.add("  editor = {" + String.join(" and ", formattedEditors) + "}");
+                    editorsAdded = true;
+                }
+            }
+            if (!editorsAdded && editors != null) {
                 String locEditors = editors.replace(" ; ", " and ");
                 bibtex.add("  editor = {" + locEditors + "}");
             }
