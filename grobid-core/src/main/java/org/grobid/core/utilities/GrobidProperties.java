@@ -776,6 +776,19 @@ public class GrobidProperties {
     }
 
     /**
+     * Get whether post-validation is enabled for CrossRef consolidation results.
+     * When true, GROBID will validate CrossRef results against the source metadata.
+     *
+     * @return true if post-validation is enabled (default), false otherwise
+     */
+    public static boolean getCrossrefPostValidation() {
+        if (grobidConfig.grobid.consolidation.crossref == null) {
+            return true;
+        }
+        return grobidConfig.grobid.consolidation.crossref.postValidation;
+    }
+
+    /**
      * Returns if the execution context is stand alone or server.
      *
      * @return the context of execution. Return false if the property value is

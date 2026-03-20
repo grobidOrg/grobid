@@ -25,7 +25,9 @@ public class CrossrefRequestListener<T extends Object> {
 		public long time;
 		public String errorMessage;
 		public Exception errorException;
-		
+		public int concurrencyLimit = -1;
+		public String apiPool = null;
+
 		public Response() {
 			this.status = -1;
 			this.results = null;
@@ -34,6 +36,8 @@ public class CrossrefRequestListener<T extends Object> {
 			this.time = System.currentTimeMillis();
 			this.errorMessage = null;
 			this.errorException = null;
+			this.concurrencyLimit = -1;
+			this.apiPool = null;
 		}
 		
 		public void setTimeLimit(String limitInterval, String limitLimit) {

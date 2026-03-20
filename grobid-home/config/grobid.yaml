@@ -32,7 +32,7 @@ grobid:
       url: "http://localhost:8080"
       timeoutSec: 60
     crossref:
-      mailto: 
+      mailto:
       # NOTE! To use the Crossref web API, you need normally to use it politely
       # and to indicate an email address here, e.g. mailto: "toto@titi.tutu"
       token:
@@ -40,6 +40,10 @@ grobid:
       #token: "yourmysteriouscrossrefmetadataplusauthorizationtokentobeputhere"
       timeoutSec: 60
       # Timeout for CrossRef API calls (in seconds) - USE with CARE!
+      # Whether to post-validate CrossRef results against the source metadata.
+      # Glutton always skips post-validation (it handles validation internally).
+      # For CrossRef, set to false to disable post-validation.
+      postValidation: true
   proxy:
     # proxy to be used when doing external call to the consolidation service
     host: 

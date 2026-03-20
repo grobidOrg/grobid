@@ -30,16 +30,16 @@ import java.util.Observable;
 public class CrossrefRequest<T extends Object> extends Observable {
 
 	protected static final String BASE_URL = "https://api.crossref.org";
-	
+
 	/**
 	 * Model key in crossref, ex: "works", "journals"..
 	 * @see <a href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md">Crossref API Documentation</a>
 	 */
 	public String model;
-	
+
 	/**
 	 * Model identifier in crossref, can be null, ex: doi for a work
-	 * @see <a href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md">Crossref API Documentation</a> 
+	 * @see <a href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md">Crossref API Documentation</a>
 	 */
 	//public String id;
 
@@ -53,9 +53,9 @@ public class CrossrefRequest<T extends Object> extends Observable {
 	 * JSON response deserializer, ex: WorkDeserializer to convert Work to BiblioItem
 	 */
 	protected CrossrefDeserializer<T> deserializer;
-	
+
 	protected ArrayList<CrossrefRequestListener<T>> listeners;
-	
+
 	public CrossrefRequest(String model, Map<String, String> params, CrossrefDeserializer<T> deserializer) {
 		this.model = model;
 		//this.id = id;
@@ -63,14 +63,14 @@ public class CrossrefRequest<T extends Object> extends Observable {
 		this.deserializer = deserializer;
 		this.listeners = new ArrayList<CrossrefRequestListener<T>>();
 	}
-	
+
 	/**
 	 * Add listener to catch response when request is executed.
 	 */
 	public void addListener(CrossrefRequestListener<T> listener) {
 		this.listeners.add(listener);
 	}
-	
+
 	/**
 	 * Notify all connected listeners
 	 */
@@ -78,7 +78,7 @@ public class CrossrefRequest<T extends Object> extends Observable {
 		for (CrossrefRequestListener<T> listener : listeners)
 			listener.notify(message);
 	}
-	
+
 	/**
 	 * Execute request, handle response by sending to listeners a CrossrefRequestListener.Response
 	 */
@@ -106,7 +106,7 @@ public class CrossrefRequest<T extends Object> extends Observable {
 
             httpclient = HttpClients.custom()
                 .setDefaultRequestConfig(requestConfig)
-                .setRoutePlanner(routePlanner)     
+                .setRoutePlanner(routePlanner)
                 .build();
         } else {
             httpclient = HttpClients.custom()
@@ -116,7 +116,7 @@ public class CrossrefRequest<T extends Object> extends Observable {
 
 		try {
 			URIBuilder uriBuilder = new URIBuilder(BASE_URL);
-			
+
 			String path = model;
 
 			if (params.get("query.title") != null) {
@@ -133,13 +133,13 @@ public class CrossrefRequest<T extends Object> extends Observable {
                 uriBuilder.setPath(path);
             } else {
             	uriBuilder.setPath(path);
-				for (Entry<String, String> cursor : params.entrySet()) 
-					if (!cursor.getKey().equals("doi") && !cursor.getKey().equals("DOI") && 
+				for (Entry<String, String> cursor : params.entrySet())
+					if (!cursor.getKey().equals("doi") && !cursor.getKey().equals("DOI") &&
 						!cursor.getKey().equals("firstPage") && !cursor.getKey().equals("volume"))
 						uriBuilder.setParameter(cursor.getKey(), cursor.getValue());
-            }            
+            }
 
-			// "mailto" parameter to be used in the crossref query and in User-Agent 
+			// "mailto" parameter to be used in the crossref query and in User-Agent
      		//  header, as recommended by CrossRef REST API documentation, e.g. &mailto=GroovyBib@example.org
             if (GrobidProperties.getCrossrefMailto() != null) {
 	            uriBuilder.setParameter("mailto", GrobidProperties.getCrossrefMailto());
@@ -149,12 +149,12 @@ public class CrossrefRequest<T extends Object> extends Observable {
             HttpGet httpget = new HttpGet(uriBuilder.build());
 
             if (GrobidProperties.getCrossrefMailto() != null) {
-            	httpget.setHeader("User-Agent", 
+            	httpget.setHeader("User-Agent",
             		"GROBID/0.8.2 (https://github.com/kermitt2/grobid; mailto:" + GrobidProperties.getCrossrefMailto() + ")");
 			} else {
 				httpget.setHeader("User-Agent", "GROBID/0.8.2 (https://github.com/kermitt2/grobid)");
 			}
-            
+
 			// set the authorization token for the Metadata Plus service if available
 			if (GrobidProperties.getCrossrefToken() != null) {
             	httpget.setHeader("Crossref-Plus-API-Token", "Bearer " + GrobidProperties.getCrossrefToken());
@@ -166,41 +166,62 @@ public class CrossrefRequest<T extends Object> extends Observable {
 				public Void handleResponse(HttpResponse response) throws ClientProtocolException, IOException {
 
 					CrossrefRequestListener.Response<T> message = new CrossrefRequestListener.Response<T>();
-					
+
 					message.status = response.getStatusLine().getStatusCode();
-					
-                    // note: header field names are case insensitive
+
+					// note: header field names are case insensitive
 					Header limitIntervalHeader = response.getFirstHeader("X-Rate-Limit-Interval");
 					Header limitLimitHeader = response.getFirstHeader("X-Rate-Limit-Limit");
 					if (limitIntervalHeader != null && limitLimitHeader != null) {
-					    message.setTimeLimit(limitIntervalHeader.getValue(), limitLimitHeader.getValue());
-                    }
-					    
+						message.setTimeLimit(limitIntervalHeader.getValue(), limitLimitHeader.getValue());
+					}
+
+					// read concurrency limit and API pool headers
+					Header concurrencyLimitHeader = response.getFirstHeader("x-concurrency-limit");
+					if (concurrencyLimitHeader != null) {
+						try {
+							message.concurrencyLimit = Integer.parseInt(concurrencyLimitHeader.getValue().trim());
+						} catch (NumberFormatException e) {
+							// ignore unparseable header
+						}
+					}
+					Header apiPoolHeader = response.getFirstHeader("x-api-pool");
+					if (apiPoolHeader != null) {
+						message.apiPool = apiPoolHeader.getValue().trim();
+					}
+
+					if (message.status == 429) {
+						// rate limit exceeded - set error and notify without trying to parse body
+						message.errorMessage = "Rate limit exceeded (HTTP 429)";
+						notifyListeners(message);
+						return null;
+					}
+
 					if (message.status < 200 || message.status >= 300) {
 						message.errorMessage = response.getStatusLine().getReasonPhrase();
 						notifyListeners(message);
 					}
-					
+
 					HttpEntity entity = response.getEntity();
-					
+
 					if (entity != null) {
 						String body = EntityUtils.toString(entity);
 						if (body != null && body.equals("Resource not found.")) {
 							// this used to be a json object too in the past I think
 							message.results = null;
-						} else 
+						} else
 							message.results = deserializer.parse(body);
 					}
-					
+
 					notifyListeners(message);
 
 					return null;
 				}
-            	
+
             };
-            
+
             httpclient.execute(httpget, responseHandler);
-            
+
 		} catch (Exception e) {
 			CrossrefRequestListener.Response<T> message = new CrossrefRequestListener.Response<T>();
 			message.setException(e, this.toString());
@@ -208,15 +229,15 @@ public class CrossrefRequest<T extends Object> extends Observable {
         } finally {
             try {
 				httpclient.close();
-			} catch (IOException e) {			
+			} catch (IOException e) {
 				CrossrefRequestListener.Response<T> message = new CrossrefRequestListener.Response<T>();
 				message.setException(e, this.toString());
 				notifyListeners(message);
-				
+
 			}
         }
 	}
-	
+
 	public String toString() {
 		String str = " (";
 		if (params != null) {

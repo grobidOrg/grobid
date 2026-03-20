@@ -391,6 +391,9 @@ public class BiblioItem {
     // Source (whether the data was consolidated)
     private String status = CONSOLIDATION_STATUS_EXTRACTED;
 
+    // Which consolidation service was used (e.g. "crossref" or "glutton")
+    private String consolidationService = null;
+
     // All the tokens that are considered noise will be collected here
     private List<String> discardedPieces = new ArrayList<>();
     private List<List<LayoutToken>> discardedPiecesTokens = new ArrayList<>();
@@ -2316,7 +2319,10 @@ public class BiblioItem {
             if (withCoords)
                 tei.append(TEIFormatter.getCoordsAttribute(coordinates, withCoords)).append(" ");
 
-            tei.append("status=\"" + getStatus() + "\" ").append(" ");
+            tei.append("status=\"" + getStatus() + "\"");
+            if (getConsolidationService() != null)
+                tei.append(" source=\"" + getConsolidationService() + "\"");
+            tei.append(" ");
 
             if (!StringUtils.isEmpty(language)) {
                 if (n == -1) {
@@ -4461,6 +4467,7 @@ public class BiblioItem {
             }
         }
         bib.setStatus(bibo.getStatus());
+        bib.setConsolidationService(bibo.getConsolidationService());
     }
 
 	/**
@@ -4636,6 +4643,14 @@ public class BiblioItem {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getConsolidationService() {
+        return consolidationService;
+    }
+
+    public void setConsolidationService(String consolidationService) {
+        this.consolidationService = consolidationService;
     }
 
     public String getConflictStmt() {

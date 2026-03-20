@@ -422,7 +422,12 @@ public class TEIFormatter {
             tei.append("\t\t\t\t<availability status=\"unknown\"><licence/></availability>\n");
             tei.append("\t\t\t</publicationStmt>\n");
         }
-        tei.append("\t\t\t<sourceDesc>\n\t\t\t\t<biblStruct>\n\t\t\t\t\t<analytic>\n");
+        tei.append("\t\t\t<sourceDesc>\n\t\t\t\t<biblStruct");
+        if (biblio.getStatus() != null)
+            tei.append(" status=\"" + biblio.getStatus() + "\"");
+        if (biblio.getConsolidationService() != null)
+            tei.append(" source=\"" + biblio.getConsolidationService() + "\"");
+        tei.append(">\n\t\t\t\t\t<analytic>\n");
 
         // authors + affiliation
         //biblio.createAuthorSet();
