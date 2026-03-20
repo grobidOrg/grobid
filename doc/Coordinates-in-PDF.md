@@ -161,4 +161,31 @@ Example 2:
 
 The above ```@coords``` XML attributes introduces 4 bounding boxes to define the area of the bibliographical reference (typically because the reference is on several line).
 
-As side note, in traditional TEI encoding an area should be expressed using SVG. However it would have make the TEI document quickly unreadable and extremely heavy and we are using this more compact notation. 
+As side note, in traditional TEI encoding an area should be expressed using SVG. However it would have make the TEI document quickly unreadable and extremely heavy and we are using this more compact notation.
+
+
+## Common questions
+
+### How do GROBID coordinates relate to other tools (pdfplumber, PyMuPDF)?
+
+([#397](https://github.com/kermitt2/grobid/issues/397))
+
+GROBID uses the original PDF coordinate system (PDF units, origin at upper-left). Other tools may use different scales or origins. To align coordinates, match the page dimensions reported by GROBID (`<facsimile>` in TEI, `pages` in JSON) with those from your tool, then scale accordingly.
+
+### Can I get coordinates for headers, abstracts, and paragraphs?
+
+([#456](https://github.com/kermitt2/grobid/issues/456))
+
+Yes. Use the `teiCoordinates` parameter with element types like `head`, `p`, `s`, `title`, `persName`, `affiliation`, etc. See the supported elements list above.
+
+### CropBox vs MediaBox coordinate mismatch
+
+([#808](https://github.com/kermitt2/grobid/issues/808))
+
+GROBID uses the PDF CropBox (falling back to MediaBox if CropBox is not set). If coordinates seem offset, check whether your PDF has different CropBox and MediaBox values. Workaround: normalize the PDF to set CropBox equal to MediaBox before processing.
+
+### How to get page numbers for specific references?
+
+([#982](https://github.com/kermitt2/grobid/issues/982))
+
+Page numbers are not directly in TEI elements. Use the `coords` attribute (enabled via `teiCoordinates=biblStruct`): the first value in each bounding box is the page number.

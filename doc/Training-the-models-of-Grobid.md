@@ -163,3 +163,66 @@ If you wish to maintain the training corpus as gold standard, these automaticall
 ## Training guidelines
 
 Annotation guidelines for creating the training data corresponding to the different GROBID models are available from the [following page](training/General-principles.md).
+
+
+## Frequently asked questions
+
+### Is there a GUI tool for annotating training data?
+
+([#139](https://github.com/kermitt2/grobid/issues/139), [#610](https://github.com/kermitt2/grobid/issues/610))
+
+Yes. [pdf-tei-editor](https://github.com/mpilhlt/pdf-tei-editor/) is a web-based tool for editing GROBID TEI training data alongside the PDF. The typical workflow is: use `createTraining` to pre-annotate, then open the generated TEI XML files in pdf-tei-editor for visual correction.
+
+### Can I generate training data automatically (e.g., from BibTeX)?
+
+([#147](https://github.com/kermitt2/grobid/issues/147))
+
+Possible in theory by converting BibTeX to TEI XML format, but manual correction is always needed. Automated alignment provides volume but introduces redundancy.
+
+### How are evaluation metrics calculated?
+
+([#175](https://github.com/kermitt2/grobid/issues/175))
+
+GROBID uses field-level metrics. Accuracy includes true negatives. Precision/recall are computed per field (title, authors, etc.), not per document.
+
+### Why is CRF training slow? Why doesn't it scale with more CPUs?
+
+([#431](https://github.com/kermitt2/grobid/issues/431), [#898](https://github.com/kermitt2/grobid/issues/898))
+
+CRF training has serialized bottlenecks between epochs. Adding more CPUs shows diminishing returns. The model complexity (potentially 80M+ features) is the bottleneck, not parallelism. For faster training, consider deep learning models (BidLSTM-CRF, BERT).
+
+### Why do training data files have inconsistent names?
+
+([#467](https://github.com/kermitt2/grobid/issues/467))
+
+Historical artifact from the original CORA dataset. TEI files and feature files may have mismatched naming conventions. This doesn't affect training functionality.
+
+### How much training data do I need?
+
+([#600](https://github.com/kermitt2/grobid/issues/600), [#974](https://github.com/kermitt2/grobid/issues/974))
+
+There's no fixed threshold; it depends on document variability. Use learning curves (train with increasing data, measure improvement). Manual annotations consistently outperform synthetic data. The iterative approach works best: process documents, identify failures, add those as training examples.
+
+### Can I annotate only specific labels (e.g., just title and abstract)?
+
+([#806](https://github.com/kermitt2/grobid/issues/806))
+
+No. Selective labeling hurts accuracy. All labels in a model must be annotated; the extra labels provide context that strengthens the labels you care about.
+
+### I trained the wrong model — common training mistakes
+
+([#820](https://github.com/kermitt2/grobid/issues/820))
+
+Ensure you use the correct model name and corpus directory. E.g., training `reference-segmenter` is not the same as training `citation`. Check `grobid-trainer/resources/dataset/<MODEL>/corpus/`.
+
+### Can GROBID be trained for non-English languages (e.g., Arabic)?
+
+([#828](https://github.com/kermitt2/grobid/issues/828))
+
+Yes. GROBID's PDF processing is language-independent. However, training is iterative: start with segmentation, then header, fulltext, and references. You may need to expand the language-specific lexicon.
+
+### Can I use GPU for training?
+
+([#964](https://github.com/kermitt2/grobid/issues/964))
+
+Yes, for deep learning models. Configure the model engine to `delft` with architecture `BidLSTM_CRF_FEATURES`. GPU training is ~3x faster but may show ~2 F1-score points lower accuracy than CRF in some cases.

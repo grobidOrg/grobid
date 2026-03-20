@@ -197,11 +197,152 @@ combined into a larger program.
 
 pdfalto produces ALTO files, which is a standard format. pdfalto can be used for many other purposes than GROBID. In return GROBID itself can support other inputs, like text or the old pdf2xml files, and could support ALTO files produced by other tools. So this restriction does not apply.
 
+## API & Usage
+
+### How do I call the GROBID API from a web application?
+
+([#827](https://github.com/kermitt2/grobid/issues/827))
+
+POST to `/api/processFulltextDocument` with the PDF as multipart form data. See the [service documentation](Grobid-service.md) and available [client libraries](Grobid-service.md#clients-for-grobid-web-services) (Python, Java, Node.js).
+
+### Can I extract only the body text, skipping references?
+
+([#674](https://github.com/kermitt2/grobid/issues/674))
+
+There is no built-in parameter for this. GROBID processes the full document structure as a unit. Post-process the TEI XML to extract only the `<body>` element.
+
+### Why does `processHeaderDocument` give different results than `processFulltextDocument`?
+
+([#766](https://github.com/kermitt2/grobid/issues/766))
+
+`processHeaderDocument` only analyzes the first ~2 pages and uses a simplified segmentation. It is ~15x faster but may extract different fields (e.g., `titleStmt`). Use `processFulltextDocument` for complete extraction.
+
+### Can I control which elements GROBID processes (e.g., skip in-text citations)?
+
+([#830](https://github.com/kermitt2/grobid/issues/830))
+
+No. GROBID extracts the complete logical structure. In-text citation markers are part of the document structure. For raw text without structural annotations, use `createTrainingBlank`.
+
+### Why does GROBID use the network during processing?
+
+([#882](https://github.com/kermitt2/grobid/issues/882))
+
+If consolidation is enabled (default), GROBID queries external services (CrossRef or biblio-glutton) to enrich metadata. Set `consolidateHeader=0` and `consolidateCitations=0` to run fully offline.
+
+### Where do DOIs and metadata not present in the PDF come from?
+
+([#799](https://github.com/kermitt2/grobid/issues/799))
+
+From the consolidation service (CrossRef or biblio-glutton). When enabled, GROBID matches extracted references against external databases and enriches the output with DOI, volume, issue, etc. Note: consolidation may replace preprint metadata with the published version's metadata.
+
+### How to use custom trained models without Git conflicts?
+
+([#884](https://github.com/kermitt2/grobid/issues/884))
+
+Either (1) point to an external `grobid-home` directory via configuration, or (2) maintain a fork with your custom models.
+
+### Can I filter out captions, footers, or other elements from the output?
+
+([#989](https://github.com/kermitt2/grobid/issues/989))
+
+Not built-in. Post-process the TEI XML using XPath expressions to select/exclude elements. Tools like `xmltodict` (Python), or converters like `s2orc-doc2json` can help.
+
+
+## Output & Structure
+
+### Why does GROBID extract only one email per author?
+
+([#263](https://github.com/kermitt2/grobid/issues/263))
+
+By design: GROBID uses Levenshtein distance to match the "best" email to each author. Multiple emails per author are not currently supported.
+
+### Why don't page numbers appear in the TEI output?
+
+([#278](https://github.com/kermitt2/grobid/issues/278))
+
+GROBID produces logical structure, not presentational layout. Pagination is a presentational concept. Page information is available through token coordinates (see [Coordinates in PDF](Coordinates-in-PDF.md)).
+
+### Does GROBID preserve the original text layout?
+
+([#304](https://github.com/kermitt2/grobid/issues/304))
+
+No. GROBID extracts logical document structure (title, sections, references), not visual layout. The original formatting, inline punctuation placement, and whitespace are normalized during extraction.
+
+### Does GROBID detect section hierarchy (section vs. subsection)?
+
+([#526](https://github.com/kermitt2/grobid/issues/526))
+
+Currently, GROBID detects section headings but does not reliably distinguish hierarchy levels. This is tracked as a known enhancement request ([#377](https://github.com/kermitt2/grobid/issues/377)).
+
+### Does GROBID handle inline formulas, superscripts, and subscripts?
+
+([#829](https://github.com/kermitt2/grobid/issues/829))
+
+GROBID detects formulas and retains some formatting data internally, but does not currently serialize superscript/subscript information to the TEI XML output.
+
+### What is the difference between `<bibl>` and `<biblStruct>` in the output?
+
+([#874](https://github.com/kermitt2/grobid/issues/874))
+
+`<bibl>` is used in training data and raw text annotations. `<biblStruct>` (with `<analytic>` and `<monogr>` sub-elements) is used in the normalized output, following TEI conventions for structured bibliographic records.
+
+### Can GROBID produce an interactive PDF viewer with annotations?
+
+([#502](https://github.com/kermitt2/grobid/issues/502))
+
+Not directly, but the recommended approach is to use PDF.js with GROBID's coordinate output as an overlay. Display the original PDF and position annotation layers using the bounding box coordinates. The GROBID console demonstrates this approach.
+
+### How to extract table content from PDFs?
+
+([#514](https://github.com/kermitt2/grobid/issues/514))
+
+GROBID detects table locations and provides bounding box coordinates. For structured table content extraction (rows/cells), use specialized tools like Tabula or Camelot on the detected table regions.
+
+
+## Scope & Compatibility
+
+### Can GROBID process books or long documents?
+
+([#673](https://github.com/kermitt2/grobid/issues/673))
+
+GROBID is designed for scholarly articles. For books, you can use the `start` and `end` page parameters to process individual chapters. The token limit exists to prevent out-of-memory errors and can be adjusted in configuration, but very long documents may produce unreliable results.
+
+### What languages does GROBID support?
+
+([#958](https://github.com/kermitt2/grobid/issues/958))
+
+GROBID's PDF processing is language-independent, and it includes a 53-language detector. However, the models are primarily trained on English-language articles, with some German and French. Quality for other languages is unpredictable. Custom training data can extend support.
+
+### Best practices for creating PDF documents for GROBID processing
+
+([#839](https://github.com/kermitt2/grobid/issues/839))
+
+Export from Word to PDF rather than using direct `.docx` conversion. Use distinct font sizes for title/headings, standard fonts, and generous spacing. GROBID works best with documents that follow typical scholarly article conventions.
+
+### Why are footnote references poorly extracted?
+
+([#929](https://github.com/kermitt2/grobid/issues/929))
+
+The training data contains very few examples of footnote-style references. Extraction quality for footnote references is significantly lower than for standard bibliography sections. This is an active area of improvement.
+
+### Do I need to retrain to improve affiliation extraction?
+
+([#794](https://github.com/kermitt2/grobid/issues/794))
+
+Yes. If GROBID fails to parse specific affiliation formats (e.g., with country/city information), add failing examples to the `affiliation-address` training corpus and retrain. Note that GROBID expects PDF-extracted text blocks (with formatting artifacts), not clean text.
+
+### How does GROBID use pdfalto internally?
+
+([#553](https://github.com/kermitt2/grobid/issues/553))
+
+pdfalto converts PDF to ALTO XML. GROBID then converts ALTO tokens into `LayoutToken` objects. Different models operate at different granularities: segmentation works at block level, fulltext at line level, and name parsing at token level.
+
+
 ### Windows related issues
 
 Grobid is developed and tested on Linux. Mac is also supported, although some components might behave slightly different due to the natural incompatibility of Apple with the rest of the world, and the availability on some proprietary fonts on this platform.
 
-Grobid running natively on Windows, unfortunately, is currently not anymore supported, due to lack of experience and time constraints. We recommend Windows users to use the the docker image (documented [here]()) and call the system via the REST API using one of the various [grobid clients](Grobid-service.md#clients-for-grobid-web-services).
+Grobid running natively on Windows is not supported. We recommend Windows users to use the docker image (documented [here]()) and call the system via the REST API using one of the various [grobid clients](Grobid-service.md#clients-for-grobid-web-services).
 
 Before opening a new issue which might be related to Windows, please check that it is not redundant [here](https://github.com/kermitt2/grobid/issues?q=is%3Aissue+is%3Aopen+label%3AWindows-specific)
 
