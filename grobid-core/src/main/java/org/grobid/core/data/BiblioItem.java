@@ -1934,6 +1934,62 @@ public class BiblioItem {
 	}	
 
     /**
+     * Format initials by appending a dot to single-letter tokens.
+     * Splits on whitespace and hyphens (preserving hyphens).
+     * e.g. "W S" -> "W. S.", "J-L" -> "J.-L.", "Nicholas" -> "Nicholas", "W" -> "W."
+     */
+    private static String formatInitials(String name) {
+        if (StringUtils.isBlank(name)) {
+            return name;
+        }
+        String[] spaceParts = name.trim().split("\\s+");
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < spaceParts.length; i++) {
+            if (i > 0) {
+                result.append(" ");
+            }
+            // Handle hyphenated parts
+            String[] hyphenParts = spaceParts[i].split("(?<=-)(?=[^-])|(?<=[^-])(?=-)");
+            for (String hp : hyphenParts) {
+                if (hp.equals("-")) {
+                    result.append("-");
+                } else if (hp.length() == 1 && Character.isLetter(hp.charAt(0))) {
+                    result.append(hp).append(".");
+                } else {
+                    result.append(hp);
+                }
+            }
+        }
+        return result.toString();
+    }
+
+    /**
+     * Format a Person's name for BibTeX output.
+     * Returns the formatted name string, or empty string if no name parts are present.
+     */
+    private static String formatPersonNameBibTeX(Person person) {
+        String formatted = "";
+        if (StringUtils.isNotBlank(person.getLastName())) {
+            formatted = person.getLastName().trim();
+        }
+        if (StringUtils.isNotBlank(person.getFirstName())) {
+            if (StringUtils.isNotBlank(formatted)) {
+                formatted += ", ";
+            }
+            formatted += formatInitials(person.getFirstName().trim());
+        }
+        if (StringUtils.isNotBlank(person.getMiddleName())) {
+            if (StringUtils.isNotBlank(formatted) && StringUtils.isBlank(person.getFirstName())) {
+                formatted += ", ";
+            } else {
+                formatted += " ";
+            }
+            formatted += formatInitials(person.getMiddleName().trim());
+        }
+        return formatted;
+    }
+
+    /**
      * Export to BibTeX format. Use "id" as BibTeX key.
      */
     public String toBibTeX() {
@@ -1984,35 +2040,11 @@ public class BiblioItem {
                 bibtex.add("  author = {" + collaboration + "}");
             } else {
                 StringJoiner authors = new StringJoiner(" and ", "  author = {", "}");
-                if (fullAuthors != null) {
+                if (CollectionUtils.isNotEmpty(fullAuthors)) {
                     fullAuthors.stream()
                        .filter(Objects::nonNull)
                        .forEachOrdered(person -> {
-                           String author = "";
-                           if (person.getLastName() != null) {
-                               author = person.getLastName();
-                           }
-                           if (person.getFirstName() != null) {
-                               if (StringUtils.isNotBlank(author)) {
-                                   author += ", ";
-                               }
-                               author += person.getFirstName();
-                               if (person.getFirstName().length() == 1) {
-                                   author += ".";
-                               }
-                           }
-                           if (person.getMiddleName() != null) {
-                               if (StringUtils.isNotBlank(author) && StringUtils.isBlank(person.getFirstName())) {
-                                   author += ", ";
-                               } else {
-                                   author += " ";
-                               }
-                               author += person.getMiddleName();
-                               if (person.getMiddleName().length() == 1) {
-                                   author += ".";
-                               }
-                           }
-
+                           String author = formatPersonNameBibTeX(person);
                            if (StringUtils.isNotBlank(author)) {
                                authors.add(author);
                            }
@@ -2055,36 +2087,12 @@ public class BiblioItem {
             }
 
             // editors
-            if (fullEditors != null) {
+            if (CollectionUtils.isNotEmpty(fullEditors)) {
                 StringJoiner editorJoiner = new StringJoiner(" and ", "  editor = {", "}");
                 fullEditors.stream()
                        .filter(Objects::nonNull)
                        .forEachOrdered(person -> {
-                           String editor = "";
-                           if (person.getLastName() != null) {
-                               editor = person.getLastName();
-                           }
-                           if (person.getFirstName() != null) {
-                               if (StringUtils.isNotBlank(editor)) {
-                                   editor += ", ";
-                               }
-                               editor += person.getFirstName();
-                               if (person.getFirstName().length() == 1) {
-                                   editor += ".";
-                               }
-                           }
-                           if (person.getMiddleName() != null) {
-                               if (StringUtils.isNotBlank(editor) && StringUtils.isBlank(person.getFirstName())) {
-                                   editor += ", ";
-                               } else {
-                                   editor += " ";
-                               }
-                               editor += person.getMiddleName();
-                               if (person.getMiddleName().length() == 1) {
-                                   editor += ".";
-                               }
-                           }
-
+                           String editor = formatPersonNameBibTeX(person);
                            if (StringUtils.isNotBlank(editor)) {
                                editorJoiner.add(editor);
                            }
