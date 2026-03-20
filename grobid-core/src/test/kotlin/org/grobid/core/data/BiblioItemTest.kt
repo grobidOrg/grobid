@@ -516,6 +516,156 @@ class BiblioItemTest {
         )
     }
 
+    // Helper to create a Person with middleName
+    private fun createPersonWithMiddleName(firstName: String?, lastName: String?, middleName: String?): Person {
+        val person = Person()
+        person.setFirstName(firstName)
+        person.setLastName(lastName)
+        person.setMiddleName(middleName)
+        return person
+    }
+
+    // --- Author formatting via toBibTeX() ---
+
+    @Test
+    fun toBibTeX_authorWithLastAndFirstName() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("John", "Doe")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Doe, John}"))
+    }
+
+    @Test
+    fun toBibTeX_authorWithSingleLetterFirstName() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("J", "Doe")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Doe, J.}"))
+    }
+
+    @Test
+    fun toBibTeX_authorWithMiddleName() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPersonWithMiddleName("John", "Doe", "W")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Doe, John W.}"))
+    }
+
+    @Test
+    fun toBibTeX_authorWithMultiLetterMiddleName() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPersonWithMiddleName("John", "Doe", "William")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Doe, John William}"))
+    }
+
+    @Test
+    fun toBibTeX_authorWithHyphenatedFirstName() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("J-L", "Dupont")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Dupont, J.-L.}"))
+    }
+
+    @Test
+    fun toBibTeX_authorWithSpacedInitials() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("W S", "Smith")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Smith, W. S.}"))
+    }
+
+    @Test
+    fun toBibTeX_authorWithOnlyMiddleName() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPersonWithMiddleName(null, "Doe", "M")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Doe, M.}"))
+    }
+
+    @Test
+    fun toBibTeX_authorWithOnlyMiddleNameNoLast() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPersonWithMiddleName(null, null, "M")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {M.}"))
+        // No leading space before M.
+        Assert.assertThat(bibtex, CoreMatchers.not(Matchers.containsString("author = { M.}")))
+    }
+
+    @Test
+    fun toBibTeX_multipleAuthors() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(
+            createPerson("John", "Doe"),
+            createPerson("Jane", "Smith")
+        ))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Doe, John and Smith, Jane}"))
+    }
+
+    @Test
+    fun toBibTeX_authorWithBlankFirstName() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("  ", "Doe")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Doe}"))
+    }
+
+    @Test
+    fun toBibTeX_nullFullAuthors_fallsBackToAuthorsString() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(null)
+        biblio.setAuthors("Doe, John; Smith, Jane")
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Doe, John and Smith, Jane}"))
+    }
+
+    @Test
+    fun toBibTeX_emptyFullAuthors_fallsBackToAuthorsString() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf())
+        biblio.setAuthors("Doe, John; Smith, Jane")
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("author = {Doe, John and Smith, Jane}"))
+    }
+
+    // --- Editor formatting via toBibTeX() ---
+
+    @Test
+    fun toBibTeX_editorWithLastAndFirstName() {
+        val biblio = BiblioItem()
+        biblio.setFullEditors(mutableListOf(createPerson("Jane", "Smith")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("editor = {Smith, Jane}"))
+    }
+
+    @Test
+    fun toBibTeX_editorWithMiddleName() {
+        val biblio = BiblioItem()
+        biblio.setFullEditors(mutableListOf(createPersonWithMiddleName("Jane", "Smith", "M")))
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("editor = {Smith, Jane M.}"))
+    }
+
+    @Test
+    fun toBibTeX_allBlankEditors_fallsBackToEditorsString() {
+        val biblio = BiblioItem()
+        biblio.setFullEditors(mutableListOf(createPerson("  ", "  ")))
+        biblio.setEditors("Smith, Jane")
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("editor = {Smith, Jane}"))
+    }
+
+    @Test
+    fun toBibTeX_emptyFullEditors_fallsBackToEditorsString() {
+        val biblio = BiblioItem()
+        biblio.setFullEditors(mutableListOf())
+        biblio.setEditors("Smith, Jane")
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("editor = {Smith, Jane}"))
+    }
+
     companion object {
         val LOGGER: Logger = LoggerFactory.getLogger(BiblioItemTest::class.java)
 
