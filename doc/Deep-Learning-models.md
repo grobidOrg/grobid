@@ -51,7 +51,7 @@ However, if you need a "local" library installation and build, prepare a lot of 
 The following was tested with Java version up to 17.
 
 <span>1.</span> install [DeLFT](https://github.com/kermitt2/delft), see instructions [here](https://github.com/kermitt2/delft#install).
-DeLFT version `0.3.2` has been tested successfully with Python 3.7 and 3.8. For GPU support, CUDA >=11.2 must be installed. 
+DeLFT version `0.4.4` has been tested successfully with Python 3.8 and above. For GPU support, CUDA >=11.2 must be installed. 
 
 <span>2.</span> Test your DeLFT installation for GROBID models: 
 

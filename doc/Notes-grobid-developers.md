@@ -19,7 +19,7 @@ Assuming that:
 Then continue here: 
 
 1. cd grobid
-2. `pip install delft==0.3.3` (with `delft==0.3.4` you also need to install Blingfire `pip install blingfire`)
+2. `pip install delft==0.4.4`
 3. `pip install jep=4.2.2` (jep 4.1.1 cannot be installed, jep 4.0.2 does not work)
 4. if Grobid has not yet been updated, update the JEP version to 4.2.2 in `build.gradle` 
 4. `export LD_PRELOAD=${CONDA_PREFIX}/lib/libpython3.9.so` (or libpython3.8.so if you use python 3.8)
