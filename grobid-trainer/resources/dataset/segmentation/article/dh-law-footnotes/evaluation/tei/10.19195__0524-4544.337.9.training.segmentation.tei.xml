@@ -1,7 +1,6 @@
-<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.segmentation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-  <fileDesc>
+  <fileDesc xml:id="_10.19195__0524-4544.337.9">
     <titleStmt>
       <title level="a">The evolution of the European Union’s energy policy</title>
       <author>
@@ -10,14 +9,23 @@
           <surname>Kusiak-Winter</surname>
         </persName>
       </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sperber">Marcia Sperber</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
     </titleStmt>
-    <editionStmt>
-      <edition>
-        <date when="2026-01-15T21:39:26.941889Z">15.01.2026 21:39:26</date>
-        <title>Extraction</title>
-        <idno type="fileref">10.19195__0524-4544.337.9</idno>
-      </edition>
-    </editionStmt>
     <publicationStmt>
       <publisher>Uniwersytet Wrocławski</publisher>
       <availability>
@@ -47,7 +55,24 @@
   </encodingDesc>
   <revisionDesc>
     <change when="2026-01-15T20:39:26.941889Z" status="extraction">
+      <note type="label">2. Marcia</note>
       <desc>Extraction</desc>
+    </change>
+    <change when="2026-01-15T20:41:45.413Z" status="unfinished" who="#cboulanger">
+      <desc>Started 1st pass</desc>
+    </change>
+    <change when="2026-01-17T12:04:10.091Z" status="draft" who="#schulze">
+      <desc>1 pass Corrections + auf draft setzen</desc>
+    </change>
+    <change when="2026-03-14T16:07:44.970Z" status="checked" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-19T11:13:16.995Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-03-19T11:21:21.711Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
     </change>
   </revisionDesc>
 </teiHeader>
@@ -56,7 +81,9 @@
 
 			<body>introduction <lb/>the european Union has been aiming to be more than just a community of <lb/>an economic nature since its inception. its true foundations are based on such <lb/>timeless values as human dignity, freedom, equal opportunities for everyone, the <lb/>common good and solidarity. 1 this is the starting point and the basic premise for <lb/>improving the quality of life of present and future generations of europeans, with <lb/>respect for the principle of democracy and the rule of law, including, primarily, <lb/>respect for fundamental rights. and it is precisely these fundamental ideas and <lb/>values that are to be served by the rapid development of the economy, which leads <lb/>to full employment, better healthcare and a high level of education. However, <lb/></body>
 
-			<front>1 P. akaliyski, ch. Welzel, J. Hien, &quot;a community of shared values? dimensions and dynam-<lb/>ics of cultural integration in the european Union,&quot; Journal of European Integration 44, 2021, no. 2, <lb/>pp. 1-22. <lb/>© The Author(s), 2024. <lb/>Published by Wydawnictwo Uniwersytetu Wrocławskiego and Wydawnictwo &quot;Szermierz&quot; sp. z o.o. This is an open access article distributed <lb/>under the terms of the Creative Commons Attribution 4.0 licence (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/legalcode. <lb/></front>
+			<listBibl>1 P. akaliyski, ch. Welzel, J. Hien, &quot;a community of shared values? dimensions and dynam-<lb/>ics of cultural integration in the european Union,&quot; Journal of European Integration 44, 2021, no. 2, <lb/>pp. 1-22. <lb/></listBibl>
+    
+            <front>© The Author(s), 2024. <lb/>Published by Wydawnictwo Uniwersytetu Wrocławskiego and Wydawnictwo &quot;Szermierz&quot; sp. z o.o. This is an open access article distributed <lb/>under the terms of the Creative Commons Attribution 4.0 licence (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/legalcode. <lb/></front>
 
 			<page>106 <lb/></page>
 
@@ -64,13 +91,13 @@
 
 			<body>never before has the formulation of the european Union&apos;s social and economic de-<lb/>velopment objectives and public policies been so strongly and directly related to <lb/>the protection of the climate. 2 this phenomenon is well illustrated by the concept <lb/>of a regenerative economy, which gives the planet more than it takes from it. 3 An <lb/>inseparable feature of this concept is the model of regenerative growth (qualita-<lb/>tive growth), according to which a healthy environment and efficient ecosystems <lb/>provide safe operational space for the development of the economy. 4 a holistic <lb/>view of economic growth that takes into account environmental and social aspects <lb/>is presented by the concept of sustainable development, 5 which is being imple-<lb/>mented by the member states of the Un. 6 <lb/>adopted in december 2019, the commission&apos;s european green deal (egd) 7 <lb/>is a leading economic development strategy document which provides for the <lb/>green remodelling of the eU economy to become the world&apos;s first climate-neutral <lb/>area within three decades. it can easily be assumed that, given such ambitious <lb/>objectives, all sectors of the economy, without exception, are facing major recon-<lb/>struction, but it is precisely the energy sector that is playing a key role in reduc-<lb/>ing emissions. changing the energy system is therefore a sine qua non condition <lb/>for the achievement of the ambitious objectives of the european green deal. it <lb/>should be pointed out that, in comparison with the economies of all the Member <lb/>states, the greatest changes can be expected in the energy sector in Poland, where, <lb/>despite the huge increase in energy from renewable sources in recent years, almost <lb/>70% of electricity is still generated by burning bituminous coal and lignite. 8 <lb/></body>
 
-			<listBibl>2 a. sikora, &quot;european green deal -legal and financial challenges of the climate change,&quot; <lb/>ERA Forum 21, 2021, p. 681 et seq. <lb/>3 J. Fullerton, Regenerative capitalism: How universal principles and patterns will shape the <lb/>new economy, capital institute 2015, pp. 1-120. <lb/>4 the objective of the measures applied by the eU and national institutions, as stipulated in <lb/>article 2(1) of decision 2022/591 of the european Parliament and of the council on a general <lb/>Union environment action Programme to 2030 (oJ L.2022.114.22 of 06.04.2022), is a well-be-<lb/>ing economy where growth is regenerative. For more on regenerative growth, see also: F. capra, <lb/>H. Henderson, &quot;Qualitative growth. a conceptual framework for finding solutions to our current <lb/>crisis that are economically sound, ecologically sustainable, and socially just,&quot; [in:] From Capital-<lb/>istic to Humanistic Business, eds. M. Pirson, U. steinvorth, c. Largacha-Martinez, c. dierksmeier, <lb/>London 2014, p. 35 et seq. <lb/>5 For more on this see: n. adamczewska, M. zajączkowska, &quot;realizacja zrównoważonej poli-<lb/>tyki energetycznej Unii europejskiej w kontekście celów zrównoważonego rozwoju (sdg) -wy-<lb/>brane aspekty,&quot; Folia Iuridica Universitatis Wratislaviensis 11, 2022, no. 2, pp. 9-25. <lb/>6 Un general assembly resolution of 25 september 2015. transforming our World: the <lb/>2030 agenda for sustainable development (a/res/70/1). the resolution was adopted by 193 coun-<lb/>tries of the United nations. <lb/>7 communication from the commission to the european Parliament, the european council, <lb/>the council, the european economic and social committee and the committee of the regions: The <lb/>European Green Deal, coM(2019) 640 final. <lb/>8 according to the data published by the energy Market agency (are), at the end of 2022, <lb/>the share of bituminous coal in the energy mix is 42.6% and lignite 26.5%. More than 21% of en-<lb/>the evolution of the european Union&apos;s energy policy <lb/></listBibl>
+			<listBibl>2 a. sikora, &quot;european green deal -legal and financial challenges of the climate change,&quot; <lb/>ERA Forum 21, 2021, p. 681 et seq. <lb/>3 J. Fullerton, Regenerative capitalism: How universal principles and patterns will shape the <lb/>new economy, capital institute 2015, pp. 1-120. <lb/>4 the objective of the measures applied by the eU and national institutions, as stipulated in <lb/>article 2(1) of decision 2022/591 of the european Parliament and of the council on a general <lb/>Union environment action Programme to 2030 (oJ L.2022.114.22 of 06.04.2022), is a well-be-<lb/>ing economy where growth is regenerative. For more on regenerative growth, see also: F. capra, <lb/>H. Henderson, &quot;Qualitative growth. a conceptual framework for finding solutions to our current <lb/>crisis that are economically sound, ecologically sustainable, and socially just,&quot; [in:] From Capital-<lb/>istic to Humanistic Business, eds. M. Pirson, U. steinvorth, c. Largacha-Martinez, c. dierksmeier, <lb/>London 2014, p. 35 et seq. <lb/>5 For more on this see: n. adamczewska, M. zajączkowska, &quot;realizacja zrównoważonej poli-<lb/>tyki energetycznej Unii europejskiej w kontekście celów zrównoważonego rozwoju (sdg) -wy-<lb/>brane aspekty,&quot; Folia Iuridica Universitatis Wratislaviensis 11, 2022, no. 2, pp. 9-25. <lb/>6 Un general assembly resolution of 25 september 2015. transforming our World: the <lb/>2030 agenda for sustainable development (a/res/70/1). the resolution was adopted by 193 coun-<lb/>tries of the United nations. <lb/>7 communication from the commission to the european Parliament, the european council, <lb/>the council, the european economic and social committee and the committee of the regions: The <lb/>European Green Deal, coM(2019) 640 final. <lb/>8 according to the data published by the energy Market agency (are), at the end of 2022, <lb/>the share of bituminous coal in the energy mix is 42.6% and lignite 26.5%. More than 21% of en-<lb/></listBibl>
+    
+    <note place="headnote">the evolution of the european Union&apos;s energy policy <lb/></note>
 
 			<page>107 <lb/></page>
 
-			<note place="headnote">the main objective of this article is to present the evolution of the eU energy <lb/></note>
-
-			<body>policy with particular reference to its legal conditions. it will present the direc-<lb/>tions of the changes in the eU legal regulations in recent decades in order. central <lb/>to this is an attempt to answer the question of whether the european Union&apos;s am-<lb/>bitious goal to achieve climate neutrality by 2050, as proclaimed in the european <lb/>green deal, should be viewed in terms of a continuation of the eU&apos;s earlier energy <lb/>policy, or perhaps more in terms of a kind of &quot;revolution&quot;, imposing systemic <lb/>changes in the energy sector of the Member states. <lb/>1. the specificity of the energy market <lb/>the specificity of the energy sector should be borne in mind when analysing the <lb/>evolution of the legal basis, as it is not only very strongly connected with economic de-<lb/>velopment, but also determines environmental and climate protection. therefore, the <lb/>presentation of the evolution of the sectoral policy and the relevant legal regula-<lb/>tions should reflect the change in eU (community) preferences in this respect. in <lb/>the early days of the european communities, the priority area of regulation was <lb/>energy at the expense of the environment, to recall that two of the three treaties con-<lb/>stituting the communities were treaties devoted to the rules on the use of primary <lb/>energy resources, namely coal (the european coal and steel community) 9 and the <lb/>atom (the treaty establishing the european atomic energy community). 10 <lb/>during the initial phase of development, i.e. on the wave of the rapid growth <lb/>of industrial production, the application of these treaties was limited to the coordi-<lb/>nation of activities in the coal and nuclear energy sectors. it should be emphasized <lb/>that the energy sector was traditionally -and still is today -considered to be of <lb/>strategic importance to the development of national economies. as a result, en-<lb/>ergy is referred to as a driver of economic growth of countries 11 and is perceived <lb/>solely in economic terms. as the community&apos;s energy policy at the time was <lb/>restricted to the limited matter provided for in the treaties, it was the Member <lb/>states themselves which largely laid down the relevant sectoral regulations, which <lb/>reinforced the position of the monopolistic energy companies in the individual <lb/>states revealing the differences in interests between the states. 12 <lb/></body>
+			<body>the main objective of this article is to present the evolution of the eU energy <lb/>policy with particular reference to its legal conditions. it will present the direc-<lb/>tions of the changes in the eU legal regulations in recent decades in order. central <lb/>to this is an attempt to answer the question of whether the european Union&apos;s am-<lb/>bitious goal to achieve climate neutrality by 2050, as proclaimed in the european <lb/>green deal, should be viewed in terms of a continuation of the eU&apos;s earlier energy <lb/>policy, or perhaps more in terms of a kind of &quot;revolution&quot;, imposing systemic <lb/>changes in the energy sector of the Member states. <lb/>1. the specificity of the energy market <lb/>the specificity of the energy sector should be borne in mind when analysing the <lb/>evolution of the legal basis, as it is not only very strongly connected with economic de-<lb/>velopment, but also determines environmental and climate protection. therefore, the <lb/>presentation of the evolution of the sectoral policy and the relevant legal regula-<lb/>tions should reflect the change in eU (community) preferences in this respect. in <lb/>the early days of the european communities, the priority area of regulation was <lb/>energy at the expense of the environment, to recall that two of the three treaties con-<lb/>stituting the communities were treaties devoted to the rules on the use of primary <lb/>energy resources, namely coal (the european coal and steel community) 9 and the <lb/>atom (the treaty establishing the european atomic energy community). 10 <lb/>during the initial phase of development, i.e. on the wave of the rapid growth <lb/>of industrial production, the application of these treaties was limited to the coordi-<lb/>nation of activities in the coal and nuclear energy sectors. it should be emphasized <lb/>that the energy sector was traditionally -and still is today -considered to be of <lb/>strategic importance to the development of national economies. as a result, en-<lb/>ergy is referred to as a driver of economic growth of countries 11 and is perceived <lb/>solely in economic terms. as the community&apos;s energy policy at the time was <lb/>restricted to the limited matter provided for in the treaties, it was the Member <lb/>states themselves which largely laid down the relevant sectoral regulations, which <lb/>reinforced the position of the monopolistic energy companies in the individual <lb/>states revealing the differences in interests between the states. 12 <lb/></body>
 
 			<listBibl>ergy came from res! see: M. Jakubiec, &quot;Miks energetyczny i struktura produkcji energii w Polsce <lb/>w 2022 r.,&quot; Globenerga, 13.02.2023, https://globenergia.pl/ponad-21-energii-pochodzilo-z-oze-<lb/>miks-energetyczny-i-struktura-produkcji-energii-w-polsce-w-2022-r/ (accessed: 12.03.2023). <lb/>9 the treaty establishing the european coal and steel community, signed in Paris on <lb/>18 april 1951, entered into force on 23 July 1952 and expired on 23 July 2002. <lb/>10 the treaty establishing the european atomic energy community signed in rome on <lb/>25 March 1957, entered into force on 1 January 1958. <lb/>11 F. Morata, s.i. sandoval, European Energy Policy, edward elgar, northampton 2012. <lb/>12 P. Lissoń, &quot;rynek energetyczny&quot; [in:] Prawo rynku wewnętrznego. System Prawa Unii <lb/>Europejskiej, ed. d. kornobis-romanowska, vol. 7, Warszawa 2020, p. 577 et seq. <lb/></listBibl>
 
@@ -148,5 +175,6 @@
 
 
 	</text>
+
 
 </TEI>

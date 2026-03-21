@@ -1,93 +1,86 @@
-<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.segmentation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-  <fileDesc>
-    <titleStmt>
-      <title level="a">Legal Status of the Honorary Consul</title>
-      <author>
-        <persName>
-          <forename>Mirosław</forename>
-          <surname>Dela</surname>
-        </persName>
-      </author>
-      <respStmt>
-        <persName xml:id="schulze">Judith Schulze</persName>
-        <resp>Annotator</resp>
-      </respStmt>
-      <respStmt>
-        <persName xml:id="sandfort">Johanna Sandfort</persName>
-        <resp>Annotator</resp>
-      </respStmt>
-      <respStmt>
-        <persName xml:id="li">Mengjiao Li</persName>
-        <resp>Annotator</resp>
-      </respStmt>
-      <respStmt>
-        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
-        <resp>Annotator</resp>
-      </respStmt>
-    </titleStmt>
-    <editionStmt>
-      <edition>
-        <date when="2026-02-06T13:58:26.876Z">2/6/2026 2:58:26 PM</date>
-        <title>review</title>
-        <idno type="fileref">10.1515__wrlae-2015-0007</idno>
-      </edition>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Walter de Gruyter GmbH</publisher>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
-      </availability>
-      <date type="publication">2014</date>
-      <idno type="DOI">10.1515/wrlae-2015-0007</idno>
-    </publicationStmt>
-    <sourceDesc>
-      <bibl>Mirosław Dela. (2014). Legal Status of the Honorary Consul. Wroclaw Review of Law, Administration &amp;amp; Economics, 4(1), 70-81. DOI: 10.1515/wrlae-2015-0007</bibl>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <appInfo>
-      <application version="1.0" ident="pdf-tei-editor" type="editor">
-        <label>PDF-TEI Editor</label>
-        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
-      </application>
-      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-01-20T16:06:12.620588Z" type="extractor">
-        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
-        <label type="revision">536e79c</label>
-        <label type="flavor">article/dh-law-footnotes</label>
-        <label type="variant-id">grobid.training.segmentation</label>
-        <ref target="https://github.com/kermitt2/grobid"/>
-      </application>
-    </appInfo>
-  </encodingDesc>
-  <revisionDesc>
-    <change when="2026-01-20T16:06:12.620588Z" status="extraction">
-      <desc>Extraction</desc>
-    </change>
-    <change when="2026-01-20T19:46:25.102Z" status="unfinished" who="#schulze">
-      <desc>i.p.</desc>
-    </change>
-    <change when="2026-01-28T09:09:06.648Z" status="draft" who="#sandfort">
-      <desc>Finished</desc>
-    </change>
-    <change when="2026-01-28T18:19:09.808Z" status="unfinished" who="#li">
-      <desc>2. Pass</desc>
-    </change>
-    <change when="2026-01-28T18:27:56.675Z" status="checked" who="#li">
-      <desc>2.Pass completed</desc>
-    </change>
-    <change when="2026-01-31T12:35:13.397Z" status="unfinished" who="#schulze">
-      <desc>Corrections</desc>
-    </change>
-    <change when="2026-02-03T15:32:16.546Z" status="draft" who="#schulze">
-      <desc>Corrections</desc>
-    </change>
-    <change when="2026-02-06T14:32:43.068Z" status="approved" who="#kazuyo">
-      <desc>Corrections</desc>
-    </change>
-  </revisionDesc>
-</teiHeader>
+    <fileDesc xml:id="_10.1515__wrlae-2015-0007">
+      <titleStmt>
+        <title level="a">Legal Status of the Honorary Consul</title>
+        <author>
+          <persName>
+            <forename>Mirosław</forename>
+            <surname>Dela</surname>
+          </persName>
+        </author>
+        <respStmt>
+          <persName xml:id="schulze">Judith Schulze</persName>
+          <resp>Annotator</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="sandfort">Johanna Sandfort</persName>
+          <resp>Annotator</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="li">Mengjiao Li</persName>
+          <resp>Annotator</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+          <resp>Annotator</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Walter de Gruyter GmbH</publisher>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+        </availability>
+        <date type="publication">2014</date>
+        <idno type="DOI">10.1515/wrlae-2015-0007</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Mirosław Dela. (2014). Legal Status of the Honorary Consul. Wroclaw Review of Law, Administration &amp;amp; Economics, 4(1), 70-81. DOI: 10.1515/wrlae-2015-0007</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application version="1.0" ident="pdf-tei-editor" type="editor">
+          <label>PDF-TEI Editor</label>
+          <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+        </application>
+        <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-01-20T16:06:12.620588Z" type="extractor">
+          <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+          <label type="revision">536e79c</label>
+          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="variant-id">grobid.training.segmentation</label>
+          <ref target="https://github.com/kermitt2/grobid"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-01-20T16:06:12.620588Z" status="extraction">
+        <note type="label">review</note>
+        <desc>Extraction</desc>
+      </change>
+      <change when="2026-01-20T19:46:25.102Z" status="unfinished" who="#schulze">
+        <desc>i.p.</desc>
+      </change>
+      <change when="2026-01-28T09:09:06.648Z" status="draft" who="#sandfort">
+        <desc>Finished</desc>
+      </change>
+      <change when="2026-01-28T18:19:09.808Z" status="unfinished" who="#li">
+        <desc>2. Pass</desc>
+      </change>
+      <change when="2026-01-28T18:27:56.675Z" status="checked" who="#li">
+        <desc>2.Pass completed</desc>
+      </change>
+      <change when="2026-01-31T12:35:13.397Z" status="unfinished" who="#schulze">
+        <desc>Corrections</desc>
+      </change>
+      <change when="2026-02-03T15:32:16.546Z" status="draft" who="#schulze">
+        <desc>Corrections</desc>
+      </change>
+      <change when="2026-02-06T14:32:43.068Z" status="approved" who="#kazuyo">
+        <desc>Corrections</desc>
+      </change>
+    </revisionDesc>
+  </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
 			<front>70 <lb/>LEGAL STATUS OF THE HONORARY CONSUL <lb/>MIROSŁAW DELA* <lb/></front>
     
@@ -95,7 +88,7 @@
 
 			<front>DOI: 10.1515/wrlae-2015-0007 <lb/>*Ph.D candidate at Department of Business and Commercial Law, Faculty of Law, <lb/>Administration and Economics, Wroclaw University; miroslaw.dela@prawo.uni.wroc.pl. <lb/></front>
     
-    <listBibl>1 The title of honorary consul (consul honorarius) has been granted by the emperor since <lb/>Roman times, but is not connected with the exercise of any specific official functions, <lb/>Julian Sutor, Leksykon dyplomatyczny (Warsaw 2010) 217. <lb/>2 Honorary consuls usually serve without salary, and are only offered reimbursement for <lb/>some of their expenses, Kevin D. Stringer, &apos;Honorary Consuls in an Era of Globalization, <lb/>Trade, and Investment&apos; in Jan Melissen, Ana Mar Fernández (eds), Consular Affairs and <lb/>Diplomacy (Leiden 2011) 76. They may, however, in contrast to the career consuls conduct <lb/>other gainful activity. See Wojciech Góralczyk and Stefan Sawicki, Prawo <lb/>międzynarodowe publiczne w zarysie (Warsaw 2009) 288 and 289. <lb/>3 Proxenos, proxen (Greek: for guest, host) -in ancient Greece, a polis citizen acting as a <lb/>guardian for newcomers from another polis. He was not a messenger of the State whose <lb/>citizens he helped. For more about proxen see Sebastian Sykuna and Jerzy Zajadło, <lb/>Leksykon prawa i protokołu dyplomatycznego -100 podstawowych pojęć (Warsaw 2011) <lb/>148. About permission for proxen to represent aliens before assemblies to local authorities <lb/>and the courts see Izabela Gawłowicz, Międzynarodowe prawo dyplomatyczne -wybrane <lb/>zagadnienia (Warsaw 2011) 148. <lb/>4 More about the origins of the institution of consul in Stefan Sawicki, Prawo konsularne. <lb/>Studium prawnomiędzynarodowe (Warsaw 2003) 21. From 242 BC, there was also in <lb/>Rome the function of praetor for foreigners (praetor peregrinus), dealing with issues of <lb/>immigration to Rome. For more about the office of praetor see Witold Wołodkiewicz and <lb/>Maria Zabłocka, Prawo rzymskie. Instytucje (Warsaw 1996) 71 and 286. <lb/>5 For more on the development of the institution of honorary consul see Paweł Czubik and <lb/>Michał Kowalski, Konsul honorowy. Studium prawnomiędzynarodowe (Zakamycze 1999) <lb/>17 ff. <lb/></listBibl>
+    <listBibl>1 The title of honorary consul (consul honorarius) has been granted by the emperor since <lb/>Roman times, but is not connected with the exercise of any specific official functions, <lb/>Julian Sutor, Leksykon dyplomatyczny (Warsaw 2010) 217. <lb/>2 Honorary consuls usually serve without salary, and are only offered reimbursement for <lb/>some of their expenses, Kevin D. Stringer, 'Honorary Consuls in an Era of Globalization, <lb/>Trade, and Investment' in Jan Melissen, Ana Mar Fernández (eds), Consular Affairs and <lb/>Diplomacy (Leiden 2011) 76. They may, however, in contrast to the career consuls conduct <lb/>other gainful activity. See Wojciech Góralczyk and Stefan Sawicki, Prawo <lb/>międzynarodowe publiczne w zarysie (Warsaw 2009) 288 and 289. <lb/>3 Proxenos, proxen (Greek: for guest, host) -in ancient Greece, a polis citizen acting as a <lb/>guardian for newcomers from another polis. He was not a messenger of the State whose <lb/>citizens he helped. For more about proxen see Sebastian Sykuna and Jerzy Zajadło, <lb/>Leksykon prawa i protokołu dyplomatycznego -100 podstawowych pojęć (Warsaw 2011) <lb/>148. About permission for proxen to represent aliens before assemblies to local authorities <lb/>and the courts see Izabela Gawłowicz, Międzynarodowe prawo dyplomatyczne -wybrane <lb/>zagadnienia (Warsaw 2011) 148. <lb/>4 More about the origins of the institution of consul in Stefan Sawicki, Prawo konsularne. <lb/>Studium prawnomiędzynarodowe (Warsaw 2003) 21. From 242 BC, there was also in <lb/>Rome the function of praetor for foreigners (praetor peregrinus), dealing with issues of <lb/>immigration to Rome. For more about the office of praetor see Witold Wołodkiewicz and <lb/>Maria Zabłocka, Prawo rzymskie. Instytucje (Warsaw 1996) 71 and 286. <lb/>5 For more on the development of the institution of honorary consul see Paweł Czubik and <lb/>Michał Kowalski, Konsul honorowy. Studium prawnomiędzynarodowe (Zakamycze 1999) <lb/>17 ff. <lb/></listBibl>
 
 			<page>71 <lb/></page>
 
@@ -139,7 +132,7 @@
 
 			<note place="headnote">Wroclaw Review of Law, Administration &amp; Economics <lb/>[Vol 4:1 <lb/></note>
     
-    <body>granting the Minister of Foreign Affairs a statutory delegation to issue a <lb/>secondary act elaborating the provisions of the statute (Article 5 (7)). <lb/>The power to appoint honorary consuls general, consuls, vice-<lb/>consuls and consular agents to perform some of the functions of consuls is <lb/>assigned to the minister responsible for foreign affairs (Article 5(1)). This <lb/>function can be entrusted by appointment to Polish citizens residing in the <lb/>receiving State, as well as citizens of the receiving State and of third <lb/>countries. The candidate must enjoy the respect and trust of society, and <lb/>provide a guarantee of the exercise of functions in accordance with the <lb/>interests of the Republic of Poland and its citizens (Article 5(2)). In the <lb/>appointment letter, the minister establishes the consular district and scope of <lb/>the honorary consul&apos;s functions (Article 5(3)) 23 . In terms of the functions <lb/>performed, the honorary consul is subordinate to the head of the diplomatic <lb/>mission, and the direct supervision of his activities is performed by the <lb/>career consul with jurisdiction over the relevant territory (Article 5 (5) and <lb/>Article 5 (6)). <lb/>b) Delegated legislation <lb/>The Regulation of the Minister of Foreign Affairs of 7 December <lb/>2006 on Polish honorary consuls lays down the detailed procedure for the <lb/>appointment and dismissal of honorary consuls 24 , principles and scope of <lb/>the exercise of their functions, their interactions with career consuls, how to <lb/>bear the cost of their service, as well as cases in which they cease to perform <lb/>their functions ( § 1). <lb/>In accordance with § 3(1) individuals with full legal capacity may be <lb/>appointed honorary consuls, with the prior consent of the receiving State <lb/>(the so-called exequatur) 25 . Such authorization is requested by the head of <lb/>the territorial competent diplomatic mission in consultation with the <lb/>Minister of Foreign Affairs ( §3(2)). <lb/>The head of the territorially competent diplomatic mission asks the <lb/>Minister of Foreign Affairs to request the establishment of an honorary <lb/>consular office and to appoint an honorary consul ( § 4(1)). The request <lb/>includes a proposal for the rank of the office, the seat and the consular <lb/>district, and also indicates the candidate for the position of honorary consul <lb/>along with the proposed scope of his functions. It also indicates the <lb/>territorially competent career consul who will exercise direct supervision <lb/>over the activities of the honorary consul. The application should be <lb/>accompanied by a justification, curriculum vitae and two photographs of the <lb/>candidate ( § 4(2)). <lb/></body>
+    <body>granting the Minister of Foreign Affairs a statutory delegation to issue a <lb/>secondary act elaborating the provisions of the statute (Article 5 (7)). <lb/>The power to appoint honorary consuls general, consuls, vice-<lb/>consuls and consular agents to perform some of the functions of consuls is <lb/>assigned to the minister responsible for foreign affairs (Article 5(1)). This <lb/>function can be entrusted by appointment to Polish citizens residing in the <lb/>receiving State, as well as citizens of the receiving State and of third <lb/>countries. The candidate must enjoy the respect and trust of society, and <lb/>provide a guarantee of the exercise of functions in accordance with the <lb/>interests of the Republic of Poland and its citizens (Article 5(2)). In the <lb/>appointment letter, the minister establishes the consular district and scope of <lb/>the honorary consul's functions (Article 5(3)) 23 . In terms of the functions <lb/>performed, the honorary consul is subordinate to the head of the diplomatic <lb/>mission, and the direct supervision of his activities is performed by the <lb/>career consul with jurisdiction over the relevant territory (Article 5 (5) and <lb/>Article 5 (6)). <lb/>b) Delegated legislation <lb/>The Regulation of the Minister of Foreign Affairs of 7 December <lb/>2006 on Polish honorary consuls lays down the detailed procedure for the <lb/>appointment and dismissal of honorary consuls 24 , principles and scope of <lb/>the exercise of their functions, their interactions with career consuls, how to <lb/>bear the cost of their service, as well as cases in which they cease to perform <lb/>their functions ( § 1). <lb/>In accordance with § 3(1) individuals with full legal capacity may be <lb/>appointed honorary consuls, with the prior consent of the receiving State <lb/>(the so-called exequatur) 25 . Such authorization is requested by the head of <lb/>the territorial competent diplomatic mission in consultation with the <lb/>Minister of Foreign Affairs ( §3(2)). <lb/>The head of the territorially competent diplomatic mission asks the <lb/>Minister of Foreign Affairs to request the establishment of an honorary <lb/>consular office and to appoint an honorary consul ( § 4(1)). The request <lb/>includes a proposal for the rank of the office, the seat and the consular <lb/>district, and also indicates the candidate for the position of honorary consul <lb/>along with the proposed scope of his functions. It also indicates the <lb/>territorially competent career consul who will exercise direct supervision <lb/>over the activities of the honorary consul. The application should be <lb/>accompanied by a justification, curriculum vitae and two photographs of the <lb/>candidate ( § 4(2)). <lb/></body>
 
 			<listBibl>23 The consular district and range of functions specified in the appointment can be changed <lb/>with the consent of the consul by the minister responsible for foreign affairs (Article 5(4)). <lb/>24 This should be understood as an honorary consul general, honorary consul, honorary <lb/>vice-consul and honorary consular agent ( §2(1)). <lb/>25 Exequatur -the consent of the receiving State to perform by a specific person the <lb/>function of head of the consular post of the sending State. It may also apply to other <lb/>consular officials. A State refusing to grant an exequatur is not obliged to give reasons for <lb/>its refusal. The date of delivery of the exequatur determines priority (precedence) under the <lb/>so-called the consular corps. See the twin concept of agrément in diplomatic law. <lb/></listBibl>
 
@@ -159,7 +152,7 @@
 
 			<note place="headnote">Wroclaw Review of Law, Administration &amp; Economics <lb/>[Vol 4:1 <lb/></note>
     
-    <body>correspondence of the honorary consul and from documents related to his <lb/>professional activities ( § 10). <lb/>In the exercise of his functions the honorary consul receives no <lb/>compensation, and he does not acquire any rights provided by Polish <lb/>legislation in the fields of labour law and social security law ( § 11). In <lb/>addition, the honorary consul shall bear the costs associated with the <lb/>exercise of consular functions, which include occupancy costs, equipment <lb/>and maintenance of the office, staff employed, fees, taxes and other benefits <lb/>of public law ( § 12(1)). The minister responsible for foreign affairs provides <lb/>the honorary consul with only the flag and emblem of Poland and a plate <lb/>with the name of the office, installed on its premises, as well as ensures the <lb/>supply of materials and other information deemed by him to be necessary <lb/>for the exercise of consular functions ( § 12(2) and (3)). <lb/>III. HONORARY CONSULATES OF OTHER COUNTRIES ON THE <lb/>TERRITORY OF THE REPUBLIC OF POLAND <lb/>In the &quot;Guide for foreign diplomatic missions accredited in <lb/>Warsaw&quot; 29 there are issues discussed related to the establishment of a new <lb/>consular office, the conditions to be met by a candidate for honorary <lb/>consul 30 , the procedure for admission of honorary consul to the function, <lb/>withdrawal of exequatur and the status of honorary consuls and the consular <lb/>offices operated by them in Poland. <lb/>The establishment of a new honorary consular office of a foreign <lb/>country in the Republic of Poland takes place according to the rules <lb/>provided for by the Vienna Convention on Consular Relations of 1963 for <lb/>the establishment of a consular post headed by a career consular officer 31 . <lb/>The consular district of an honorary consular post may cover the <lb/>territory of one or more voivodeships, or the entire Republic of Poland. In <lb/>the case of an honorary consul general, this district should encompass an <lb/>area of at least three voivodeships. Consular districts cannot overlap, and the <lb/>seat of an honorary consular office should be a voivodeship capital 32 . It <lb/>cannot, however, be in a city in which diplomatic missions or career <lb/>consular posts have their seat. In the event the sending State has no <lb/>diplomatic representation in Poland 33 and the territorial scope of the <lb/>honorary consular post would cover the entire territory of the Republic of <lb/>Poland, the seat of the office should be located in Warsaw 34 . There may be <lb/></body>
+    <body>correspondence of the honorary consul and from documents related to his <lb/>professional activities ( § 10). <lb/>In the exercise of his functions the honorary consul receives no <lb/>compensation, and he does not acquire any rights provided by Polish <lb/>legislation in the fields of labour law and social security law ( § 11). In <lb/>addition, the honorary consul shall bear the costs associated with the <lb/>exercise of consular functions, which include occupancy costs, equipment <lb/>and maintenance of the office, staff employed, fees, taxes and other benefits <lb/>of public law ( § 12(1)). The minister responsible for foreign affairs provides <lb/>the honorary consul with only the flag and emblem of Poland and a plate <lb/>with the name of the office, installed on its premises, as well as ensures the <lb/>supply of materials and other information deemed by him to be necessary <lb/>for the exercise of consular functions ( § 12(2) and (3)). <lb/>III. HONORARY CONSULATES OF OTHER COUNTRIES ON THE <lb/>TERRITORY OF THE REPUBLIC OF POLAND <lb/>In the "Guide for foreign diplomatic missions accredited in <lb/>Warsaw" 29 there are issues discussed related to the establishment of a new <lb/>consular office, the conditions to be met by a candidate for honorary <lb/>consul 30 , the procedure for admission of honorary consul to the function, <lb/>withdrawal of exequatur and the status of honorary consuls and the consular <lb/>offices operated by them in Poland. <lb/>The establishment of a new honorary consular office of a foreign <lb/>country in the Republic of Poland takes place according to the rules <lb/>provided for by the Vienna Convention on Consular Relations of 1963 for <lb/>the establishment of a consular post headed by a career consular officer 31 . <lb/>The consular district of an honorary consular post may cover the <lb/>territory of one or more voivodeships, or the entire Republic of Poland. In <lb/>the case of an honorary consul general, this district should encompass an <lb/>area of at least three voivodeships. Consular districts cannot overlap, and the <lb/>seat of an honorary consular office should be a voivodeship capital 32 . It <lb/>cannot, however, be in a city in which diplomatic missions or career <lb/>consular posts have their seat. In the event the sending State has no <lb/>diplomatic representation in Poland 33 and the territorial scope of the <lb/>honorary consular post would cover the entire territory of the Republic of <lb/>Poland, the seat of the office should be located in Warsaw 34 . There may be <lb/></body>
 
 			<note place="footnote">29 The Guide is not a publication for the public. The author used fragments of the guide <lb/>provided by the Diplomatic Protocol of the Ministry of Foreign Affairs of Poland (11 Feb <lb/>2014). The guidance is a sui genesis instruction addressed to the representatives of <lb/>diplomatic missions and consular services of foreign states on the territory of Poland. <lb/>30 Whenever this guide refers to an honorary consul, it should be understood as an honorary <lb/>consul general, honorary consul, honorary vice-consul and honorary consular agent. <lb/>31 Establishment in Poland of an honorary consular office and the procedure for admission <lb/>of the head of the office to perform its functions takes into account bilateral consular <lb/>agreements concluded by Poland with a number of countries, in addition to the provisions <lb/>of the Convention. <lb/>32 Exceptions to this rule are allowed only in particularly justified cases. <lb/>33 Likewise, in situations where there is a diplomatic mission with permanent residence in <lb/>another state. <lb/>34 Exceptions to this rule are allowed only in particularly justified cases. <lb/></note>
 
@@ -167,7 +160,7 @@
 
 			<page>78 <lb/></page>
 
-			<body>no branch of an honorary consular office. The staff of an honorary consular <lb/>office may also consist of career consular officials. <lb/>The establishment of an honorary consular office and permission for <lb/>the head of the consular post to exercise his functions requires the prior <lb/>approval of Polish authorities. Such authorization is requested by an <lb/>appropriate diplomatic representative and, in the event that there is no such <lb/>person, authorization is requested by the ministry of foreign affairs of the <lb/>sending State by way of a note to the Ministry of Foreign Affairs of the <lb/>Republic of Poland; this note specifies the location of the seat of the office, <lb/>consular district and the status of the honorary head of the office 35 . The <lb/>Ministry of Foreign Affairs of the Republic of Poland issues a note <lb/>informing the applicant of its decision. <lb/>A candidate for honorary consul should be at least 25 years old and <lb/>have full legal capacity, and should be a Polish citizen or a national of the <lb/>sending State or a third country 36 . He must be a resident of the voivodeship <lb/>in which the seat of his consular office is located, and he should enjoy a <lb/>good reputation. His financial situation and social position must permit the <lb/>independent and impartial exercise of his functions. He therefore may not <lb/>perform any public functions in the Republic of Poland by nomination or <lb/>election. He must also demonstrate long-term bonds linking him with the <lb/>sending State. <lb/>After obtaining the approval of the competent authorities of the <lb/>Republic of Poland for the establishment of an honorary consular office, a <lb/>diplomatic representative of the sending State writes a note to the Ministry <lb/>of Foreign Affairs of Poland of acceptance for a particular candidate for <lb/>honorary consul 37 , giving his full name, nationality 38 , occupation, place of <lb/>residence and proposed place of head office. The note is accompanied by <lb/>the candidate&apos;s curriculum vitae. A reply with the decision of the Ministry <lb/>of Foreign Affairs of Poland is sent in the form of a note to the diplomatic <lb/>representative of the applicant. In the case of a positive decision, the <lb/>sending State shall submit commission letters (fr. lettres de provision) 39 <lb/>bearing a description of the consular district headed by the candidate to be <lb/>approved, signed by the Head of State or Minister of Foreign Affairs of the <lb/>sending State or by another authorized person. <lb/>An honorary consul may exercise his functions for an undetermined <lb/>or fixed length of time, depending on the will of the sending State. On the <lb/>basis of commission letters bearing the appropriate signature, stamp, date <lb/>and place of issue, the Minister of Foreign Affairs of the Republic of Poland <lb/></body>
+			<body>no branch of an honorary consular office. The staff of an honorary consular <lb/>office may also consist of career consular officials. <lb/>The establishment of an honorary consular office and permission for <lb/>the head of the consular post to exercise his functions requires the prior <lb/>approval of Polish authorities. Such authorization is requested by an <lb/>appropriate diplomatic representative and, in the event that there is no such <lb/>person, authorization is requested by the ministry of foreign affairs of the <lb/>sending State by way of a note to the Ministry of Foreign Affairs of the <lb/>Republic of Poland; this note specifies the location of the seat of the office, <lb/>consular district and the status of the honorary head of the office 35 . The <lb/>Ministry of Foreign Affairs of the Republic of Poland issues a note <lb/>informing the applicant of its decision. <lb/>A candidate for honorary consul should be at least 25 years old and <lb/>have full legal capacity, and should be a Polish citizen or a national of the <lb/>sending State or a third country 36 . He must be a resident of the voivodeship <lb/>in which the seat of his consular office is located, and he should enjoy a <lb/>good reputation. His financial situation and social position must permit the <lb/>independent and impartial exercise of his functions. He therefore may not <lb/>perform any public functions in the Republic of Poland by nomination or <lb/>election. He must also demonstrate long-term bonds linking him with the <lb/>sending State. <lb/>After obtaining the approval of the competent authorities of the <lb/>Republic of Poland for the establishment of an honorary consular office, a <lb/>diplomatic representative of the sending State writes a note to the Ministry <lb/>of Foreign Affairs of Poland of acceptance for a particular candidate for <lb/>honorary consul 37 , giving his full name, nationality 38 , occupation, place of <lb/>residence and proposed place of head office. The note is accompanied by <lb/>the candidate's curriculum vitae. A reply with the decision of the Ministry <lb/>of Foreign Affairs of Poland is sent in the form of a note to the diplomatic <lb/>representative of the applicant. In the case of a positive decision, the <lb/>sending State shall submit commission letters (fr. lettres de provision) 39 <lb/>bearing a description of the consular district headed by the candidate to be <lb/>approved, signed by the Head of State or Minister of Foreign Affairs of the <lb/>sending State or by another authorized person. <lb/>An honorary consul may exercise his functions for an undetermined <lb/>or fixed length of time, depending on the will of the sending State. On the <lb/>basis of commission letters bearing the appropriate signature, stamp, date <lb/>and place of issue, the Minister of Foreign Affairs of the Republic of Poland <lb/></body>
 
 	<listBibl>35 In accordance with Article 9 of the Vienna Convention. <lb/></listBibl>
               
@@ -179,7 +172,7 @@
 
 			<note place="headnote">Wroclaw Review of Law, Administration &amp; Economics <lb/>[Vol 4:1 <lb/></note>
     
-    <body>grants exequatur to the consul for performing his functions 40 . The honorary <lb/>consular office should commence operations within three months from the <lb/>date of delivery of the exequatur 41 . If within three months after receiving of <lb/>exequatur the honorary consul does not start to exercise his functions, the <lb/>consular office is revoked. The same applies if the position of honorary <lb/>consul is vacant and a new candidate is not proposed within three months. <lb/>The Diplomatic Protocol staff of the Ministry of Foreign Affairs of <lb/>Poland issues the honorary consul a consular ID card at the request of the <lb/>diplomatic mission of the sending State 42 . Data on the honorary consular <lb/>office and its head are posted on the &quot;List of Diplomatic and Consular <lb/>Corps&quot; published on the website of the Ministry of Foreign Affairs of <lb/>Poland. <lb/>Any change in the status 43 of an honorary consular office requires <lb/>prior approval of the Ministry of Foreign Affairs in Poland. To this end, the <lb/>diplomatic mission of the sending State directs a note with a justification for <lb/>the change. <lb/>An honorary consul can have his authorization to exercise his <lb/>functions revoked in the event of a serious breach of the law in force in the <lb/>Republic of Poland or of the provisions of the Vienna Convention on <lb/>Consular Relations of 1963. <lb/>The diplomatic mission of the sending State shall exercise <lb/>supervision over the activities of the honorary consul and determines in <lb/>consultation with the Ministry of Foreign Affairs of Poland all matters <lb/>relating to his status and scope, as well as the exercise of his privileges and <lb/>immunities. The honorary consul and consular led by him shall enjoy <lb/>facilities, privileges and immunities under Chapter III of the Vienna <lb/>Convention on Consular Relations of 1963 (Articles 29, 43, 61), which were <lb/>mentioned above. Excluded are the tax and customs privileges, except for <lb/>those relating to the items listed in Article 62 of the Convention. Honorary <lb/>consuls are advised not to affix &quot;CC&quot; (fr. Corps consulaire) on means of <lb/>transport, and their vehicles are registered according to the general rules of <lb/>the Republic of Poland. <lb/>CONCLUSION <lb/>The above analysis shows that the provisions of the Convention have <lb/>been implemented into Polish law. Provisions of national law are consistent <lb/>with the Convention, at times constituting its literal repetition. <lb/></body>
+    <body>grants exequatur to the consul for performing his functions 40 . The honorary <lb/>consular office should commence operations within three months from the <lb/>date of delivery of the exequatur 41 . If within three months after receiving of <lb/>exequatur the honorary consul does not start to exercise his functions, the <lb/>consular office is revoked. The same applies if the position of honorary <lb/>consul is vacant and a new candidate is not proposed within three months. <lb/>The Diplomatic Protocol staff of the Ministry of Foreign Affairs of <lb/>Poland issues the honorary consul a consular ID card at the request of the <lb/>diplomatic mission of the sending State 42 . Data on the honorary consular <lb/>office and its head are posted on the "List of Diplomatic and Consular <lb/>Corps" published on the website of the Ministry of Foreign Affairs of <lb/>Poland. <lb/>Any change in the status 43 of an honorary consular office requires <lb/>prior approval of the Ministry of Foreign Affairs in Poland. To this end, the <lb/>diplomatic mission of the sending State directs a note with a justification for <lb/>the change. <lb/>An honorary consul can have his authorization to exercise his <lb/>functions revoked in the event of a serious breach of the law in force in the <lb/>Republic of Poland or of the provisions of the Vienna Convention on <lb/>Consular Relations of 1963. <lb/>The diplomatic mission of the sending State shall exercise <lb/>supervision over the activities of the honorary consul and determines in <lb/>consultation with the Ministry of Foreign Affairs of Poland all matters <lb/>relating to his status and scope, as well as the exercise of his privileges and <lb/>immunities. The honorary consul and consular led by him shall enjoy <lb/>facilities, privileges and immunities under Chapter III of the Vienna <lb/>Convention on Consular Relations of 1963 (Articles 29, 43, 61), which were <lb/>mentioned above. Excluded are the tax and customs privileges, except for <lb/>those relating to the items listed in Article 62 of the Convention. Honorary <lb/>consuls are advised not to affix "CC" (fr. Corps consulaire) on means of <lb/>transport, and their vehicles are registered according to the general rules of <lb/>the Republic of Poland. <lb/>CONCLUSION <lb/>The above analysis shows that the provisions of the Convention have <lb/>been implemented into Polish law. Provisions of national law are consistent <lb/>with the Convention, at times constituting its literal repetition. <lb/></body>
 
 			<note place="footnote">40 Permits shall be granted only to the honorary head of the consular post. <lb/>41 The diplomatic mission of the sending State shall inform the Ministry of Foreign Affairs <lb/>of Poland by a note, which should include information about the dates and opening hours of <lb/>the office. <lb/>42 Consular ID cards are also received by other honorary consular officers of a consular <lb/>office. Members of their families are not entitled to such a card. <lb/>43 Change may refer to the class of office (from vice-consulate to consulate or vice versa), <lb/>or its character (from honorary office to career office). Raising or lowering the consular <lb/>class involves a change in class of its honorary head and the need to submit new letters of <lb/>commission and obtain a new exequatur. Changing the nature of the consular office also <lb/>entails the need to again perform all the steps provided for in the procedure of admission of <lb/>the head of a consular post for the exercise of its functions. <lb/></note>
 
@@ -197,9 +190,10 @@
     
     <body>providing a unique instrument for investment promotion 51 . Not without <lb/>significance is the performance of the role honorary consul without <lb/>remuneration. Opponents accuse the institution of honorary consul of an <lb/>excess of ceremony, as well as honorary consuls of acting in order to <lb/>enhance their own prestige, using their function to camouflage the economic <lb/>benefits associated with their professional activities (such as customer <lb/>acquisition), which in turn leads them to neglect consular duties. Honorary <lb/>consuls are accused of a lack of the professionalism necessary for career <lb/>consuls, who undergo special training. Therefore, some countries do not <lb/>make use of the institution of honorary consul 52 . <lb/></body>
 
-			<listBibl>51 See more details Stringer (n 2) 92-94, especially the new term &apos;commercial diplomacy&apos; <lb/>used by Michel Kostecki and Olivier Naray to capture the activities relating to trade, <lb/>investment, tourism and business advocacy, as well as results of studies on the connection <lb/>between diplomacy and economics by Andrew K. Rose and Peter A.G. van Bergeijk. By <lb/>creating smaller but more numerous consulates any country can decentralize representation, <lb/>while strengthening its influence in important localities throughout the world (thereby <lb/>enabling a direct link between the sending nation and trading hubs, as well as creating <lb/>opportunities for bilateral trade and investments), Stringer (n 2) 75 and 76. <lb/>52 More about the possible conflicts of interest, see Gawłowicz (n 3) 158 ff. </listBibl>
+			<listBibl>51 See more details Stringer (n 2) 92-94, especially the new term 'commercial diplomacy' <lb/>used by Michel Kostecki and Olivier Naray to capture the activities relating to trade, <lb/>investment, tourism and business advocacy, as well as results of studies on the connection <lb/>between diplomacy and economics by Andrew K. Rose and Peter A.G. van Bergeijk. By <lb/>creating smaller but more numerous consulates any country can decentralize representation, <lb/>while strengthening its influence in important localities throughout the world (thereby <lb/>enabling a direct link between the sending nation and trading hubs, as well as creating <lb/>opportunities for bilateral trade and investments), Stringer (n 2) 75 and 76. <lb/>52 More about the possible conflicts of interest, see Gawłowicz (n 3) 158 ff. </listBibl>
 
 
 	</text>
+
 
 </TEI>
