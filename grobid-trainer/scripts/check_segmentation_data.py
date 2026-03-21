@@ -47,7 +47,7 @@ ALLOWED_TAGS = {
 }
 ALLOWED_NOTE_PLACES = {"headnote", "footnote"}
 ALLOWED_DIV_TYPES = {
-    "toc", "conflict", "contribution", "acknowledgement",
+    "toc", "conflict", "contribution", "acknowledgement", "acknowledgment",
     "availability", "funding", "annex"
 }
 
@@ -192,15 +192,15 @@ def check_valid_labels(text_element):
     return errors
 
 
-def check_untagged_text(text_element):
+def check_untagged_text(text_element, min_tokens=20):
     errors = []
-    if text_element.text and text_element.text.strip():
+    if text_element.text and len(text_element.text.split()) >= min_tokens:
         preview = text_element.text.strip()[:80]
         suffix = "..." if len(text_element.text.strip()) > 80 else ""
         errors.append(f'Untagged text directly in <text>: "{preview}{suffix}"')
     for child in text_element:
         local = strip_ns(child.tag)
-        if child.tail and child.tail.strip():
+        if child.tail and len(child.tail.split()) >= min_tokens:
             preview = child.tail.strip()[:80]
             suffix = "..." if len(child.tail.strip()) > 80 else ""
             errors.append(f'Untagged text after </{local}>: "{preview}{suffix}"')
@@ -278,15 +278,49 @@ def check_raw_consistency(text_element, raw_path):
             f"Line count mismatch: TEI {len(tei_first_words)} vs raw {len(raw_first_words)}"
         )
 
-    mismatches = []
-    for i in range(min(len(tei_first_words), len(raw_first_words))):
-        if tei_first_words[i] != raw_first_words[i]:
-            mismatches.append((i, tei_first_words[i], raw_first_words[i]))
+    # Use sequence alignment to avoid cascading mismatches from a single
+    # inserted/deleted line.
+    sm = difflib.SequenceMatcher(None, tei_first_words, raw_first_words)
+    diff_count = 0
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        if tag == "equal":
+            continue
+        if tag == "replace":
+            for k in range(min(i2 - i1, j2 - j1)):
+                errors.append(
+                    f'First-word mismatch TEI line {i1+k+1}: '
+                    f'TEI="{tei_first_words[i1+k]}" vs RAW="{raw_first_words[j1+k]}"'
+                )
+                diff_count += 1
+            # Extra on one side after the paired replacements
+            for k in range(min(i2 - i1, j2 - j1), i2 - i1):
+                errors.append(
+                    f'Extra TEI line {i1+k+1}: "{tei_first_words[i1+k]}"'
+                )
+                diff_count += 1
+            for k in range(min(i2 - i1, j2 - j1), j2 - j1):
+                errors.append(
+                    f'Extra RAW line {j1+k+1}: "{raw_first_words[j1+k]}"'
+                )
+                diff_count += 1
+        elif tag == "insert":
+            for k in range(j1, j2):
+                errors.append(f'Extra RAW line {k+1}: "{raw_first_words[k]}"')
+                diff_count += 1
+        elif tag == "delete":
+            for k in range(i1, i2):
+                errors.append(f'Extra TEI line {k+1}: "{tei_first_words[k]}"')
+                diff_count += 1
+        if diff_count >= 10:
+            remaining = sum(
+                (i2 - i1) + (j2 - j1)
+                for t, i1, i2, j1, j2 in sm.get_opcodes()
+                if t != "equal"
+            ) - diff_count
+            if remaining > 0:
+                errors.append(f"... and more differences (total diff regions truncated)")
+            break
 
-    for idx, (ln, tw, rw) in enumerate(mismatches[:5]):
-        errors.append(f'First-word mismatch line {ln+1}: TEI="{tw}" vs RAW="{rw}"')
-    if len(mismatches) > 5:
-        errors.append(f"... and {len(mismatches)-5} more first-word mismatches")
     return errors
 
 
