@@ -4,29 +4,26 @@ This page contains a set of notes for the Grobid developers:
 
 ## Deep learning models on Linux with Conda 
 
-This is a summary of the steps I used to run Grobid using DL natively on Linux: 
-
-1. cd grobid
-2. rm -rf grobid-home/lib/lin-64/jep
-3. cd ..
-4. git clone https://github.com/kermitt2/delft (delft should be in the parent directory)
+This is a summary of the steps I used to run Grobid using DL natively on Linux:
+1. mkdir grobid_workspace
+2grobid is in the subdirectory `grobid`
+3git clone https://github.com/kermitt2/delft (delft should be in the parent directory, in respect of `grobid`)
 
 Assuming that: 
 
 1. Conda is installed (if not, I installed [this](https://github.com/conda-forge/miniforge/releases/tag/24.9.2-0) - check the version, might be old) 
-2. The environment `delft` has been created with either `python=3.8` (e.g. `conda create --name delft python=3.8` or ) or `python=3.9` (e.g. `conda create --name delft python=3.9`) 
+2. The environment `delft` has been created with either `python=3.10` (e.g. `conda create --name delft python=3.10` or ) or `python=3.11` (e.g. `conda create --name delft python=3.11`) 
 
 Then continue here: 
 
 1. cd grobid
 2. `pip install delft==0.4.4`
-3. `pip install jep=4.2.2` (jep 4.1.1 cannot be installed, jep 4.0.2 does not work)
-4. if Grobid has not yet been updated, update the JEP version to 4.2.2 in `build.gradle` 
-4. `export LD_PRELOAD=${CONDA_PREFIX}/lib/libpython3.9.so` (or libpython3.8.so if you use python 3.8)
+3. `pip install jep==4.3.1`
+4. `export LD_PRELOAD=${CONDA_PREFIX}/lib/libpython3.11.so` (or libpython3.10.so if you use python 3.10)
 5. `export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CONDA_PREFIX`
 
 [//]: # (5. `export LD_LIBRARY_PATH=${CONDA_PREFIX}/lib:$LD_LIBRARY_PATH`)
-6. Change any model in the grobid config to use delft instead of wapiti (e.g. header model)
+6. Change any model in the `grobid.yaml` configuration file to use delft instead of wapiti (e.g. header model)
 7. `./gradlew run`
 
 ### Release 
@@ -45,20 +42,11 @@ To make a new release:
 
 + create a Github release: the easiest is to use the GitHub web interface
 
-+ do something to publish the Java artefacts... currently just uploading them on AWS S3 
++ do something to publish the Java artefacts... currently just uploading them on the Github repository  
 
 + you're not done, you need to update the documentation, `Readme.md`, `CHANGELOG.md` and end-to-end benchmarking (PMC and bioRxiv sets). 
 
-+ update the usage information, e.g. for Gradlew project: 
-
-```
-    allprojects {
-        repositories {
-            ...
-            maven { url 'https://grobid.s3.eu-west-1.amazonaws.com/repo/' }
-        }
-    }
-```
++ update the usage information, e.g. for project using grobid, copy the Jars in the libs directories and update the `build.gradle`:
 
 ```
 dependencies {
@@ -67,16 +55,6 @@ dependencies {
 ```
 
 for maven projects:
-
-```xml
-    <repositories>
-        <repository>
-            <id>grobid</id>
-            <name>GROBID DIY repo</name>
-            <url>https://grobid.s3.eu-west-1.amazonaws.com/repo/</url>
-        </repository>
-    </repositories> 
-```
 
 ```xml
     <dependency>
