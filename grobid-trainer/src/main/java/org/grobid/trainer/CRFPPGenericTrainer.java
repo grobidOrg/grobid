@@ -102,4 +102,16 @@ public class CRFPPGenericTrainer implements GenericTrainer {
     public int getNbMaxIterations() {
         return nbMaxIterations;
     }
+
+    @Override
+    public double getL1() { return 0; }
+
+    @Override
+    public void setL1(double l1) { }
+
+    @Override
+    public double getL2() { return 0; }
+
+    @Override
+    public void setL2(double l2) { }
 }

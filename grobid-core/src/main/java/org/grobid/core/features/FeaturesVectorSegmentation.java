@@ -66,6 +66,16 @@ public class FeaturesVectorSegmentation {
 
     public int spacingWithPreviousBlock = 0; // discretized
     public int characterDensity = 0; // discretized
+    public int relativeBlockHorizontalPosition = 0; // discretized
+    public int blockWidthRatio = 0; // discretized
+
+    // extended features (dh-law-footnotes flavour only)
+    public boolean extendedFeatures = false;
+    public int relativeFontSize = 0; // discretized, relative to doc average
+    public int distanceFromPageBottom = 0; // discretized
+    public int parenthesesCountInLine = 0; // discretized
+    public int commaCountInLine = 0; // discretized
+    public int capitalizedWordCountInLine = 0; // discretized
 
     public String printVector() {
         if (string == null)
@@ -237,12 +247,25 @@ public class FeaturesVectorSegmentation {
         }
 
         // space with previous block, discretised (1)
-        //res.append(" " + spacingWithPreviousBlock);
-        //res.append(" " + 0);
+        res.append(" " + spacingWithPreviousBlock);
 
-        // character density of the previous block, discretised (1)
-        //res.append(" " + characterDensity);
-        //res.append(" " + 0);
+        // character density of the block, discretised (1)
+        res.append(" " + characterDensity);
+
+        // relative block horizontal position (1)
+        res.append(" " + relativeBlockHorizontalPosition);
+
+        // block width ratio (1)
+        res.append(" " + blockWidthRatio);
+
+        // extended features (dh-law-footnotes flavour only)
+        if (extendedFeatures) {
+            res.append(" " + relativeFontSize);
+            res.append(" " + distanceFromPageBottom);
+            res.append(" " + parenthesesCountInLine);
+            res.append(" " + commaCountInLine);
+            res.append(" " + capitalizedWordCountInLine);
+        }
 
         // label - for training data (1)
         /*if (label != null)

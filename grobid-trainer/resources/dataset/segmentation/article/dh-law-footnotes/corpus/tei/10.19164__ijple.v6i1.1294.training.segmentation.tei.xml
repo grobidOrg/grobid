@@ -1,63 +1,56 @@
-<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.segmentation.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-  <fileDesc>
-    <titleStmt>
-      <title level="a">The Journey To Legal Capability: Challenges for Public Law from Public Legal Education</title>
-      <author>
-        <persName>
-          <forename>Abiodun Michael</forename>
-          <surname>Olatokun</surname>
-        </persName>
-      </author>
-      <respStmt>
-        <persName xml:id="cboulanger">Christian Boulanger</persName>
-        <resp>Annotator</resp>
-      </respStmt>
-    </titleStmt>
-    <editionStmt>
-      <edition>
-        <date when="2026-01-10T17:48:53.160Z">10.1.2026 18:48:53</date>
-        <title>GitHub Version</title>
-        <idno type="fileref">10.19164__ijple.v6i1.1294</idno>
-      </edition>
-    </editionStmt>
-    <publicationStmt>
-      <publisher>Northumbria University Library</publisher>
-      <availability>
-        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
-      </availability>
-      <date type="publication">2022</date>
-      <idno type="DOI">10.19164/ijple.v6i1.1294</idno>
-    </publicationStmt>
-    <sourceDesc>
-      <bibl>Abiodun Michael Olatokun. (2022). The Journey To Legal Capability: Challenges for Public Law from Public Legal Education. International Journal of Public Legal Education, 6(1), 28-54. DOI: 10.19164/ijple.v6i1.1294</bibl>
-    </sourceDesc>
-  </fileDesc>
-  <encodingDesc>
-    <appInfo>
-      <application version="1.0" ident="pdf-tei-editor" type="editor">
-        <label>PDF-TEI Editor</label>
-        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
-      </application>
-      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-01-10T18:46:32.099458Z" type="extractor">
-        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
-        <label type="revision">536e79c</label>
-        <label type="flavor">article/dh-law-footnotes</label>
-        <label type="variant-id">grobid.training.segmentation</label>
-        <ref target="https://github.com/kermitt2/grobid"/>
-      </application>
-    </appInfo>
-  </encodingDesc>
-  <revisionDesc>
-    <change when="2026-01-10T18:46:32.099458Z" status="extraction">
-      <desc>Extraction</desc>
-    </change>
-    <change when="2026-01-16T13:55:16.752Z" status="published" who="#cboulanger">
-      <desc>Published on GitHub</desc>
-    </change>
-  </revisionDesc>
-</teiHeader>
+    <fileDesc xml:id="_10.19164__ijple.v6i1.1294">
+      <titleStmt>
+        <title level="a">The Journey To Legal Capability: Challenges for Public Law from Public Legal Education</title>
+        <author>
+          <persName>
+            <forename>Abiodun Michael</forename>
+            <surname>Olatokun</surname>
+          </persName>
+        </author>
+        <respStmt>
+          <persName xml:id="cboulanger">Christian Boulanger</persName>
+          <resp>Annotator</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Northumbria University Library</publisher>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+        </availability>
+        <date type="publication">2022</date>
+        <idno type="DOI">10.19164/ijple.v6i1.1294</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Abiodun Michael Olatokun. (2022). The Journey To Legal Capability: Challenges for Public Law from Public Legal Education. International Journal of Public Legal Education, 6(1), 28-54. DOI: 10.19164/ijple.v6i1.1294</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application version="1.0" ident="pdf-tei-editor" type="editor">
+          <label>PDF-TEI Editor</label>
+          <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+        </application>
+        <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-01-10T18:46:32.099458Z" type="extractor">
+          <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+          <label type="revision">536e79c</label>
+          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="variant-id">grobid.training.segmentation</label>
+          <ref target="https://github.com/kermitt2/grobid"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-01-10T18:46:32.099458Z" status="extraction">
+        <note type="label">GitHub Version</note>
+        <desc>Extraction</desc>
+      </change>
+      <change when="2026-01-16T13:55:16.752Z" status="published" who="#cboulanger">
+        <desc>Published on GitHub</desc>
+      </change>
+    </revisionDesc>
+  </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
         <front>28 <lb/>The Journey To Legal Capability: Challenges for Public Law from Public Legal <lb/>Education <lb/>Abiodun Michael Olatokun 1 <lb/></front>
 
@@ -227,4 +220,5 @@
 
 
   	
-  </TEI>
+  
+</TEI>

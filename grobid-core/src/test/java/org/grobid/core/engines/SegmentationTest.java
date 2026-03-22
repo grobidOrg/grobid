@@ -66,7 +66,7 @@ public class SegmentationTest {
         assertThat(
                 splittedOutput[0],
                 is(
-                        "Title Title title T Ti Tit Titl BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 12 12 no 0 10 0 1 0 0 1"));
+                        "Title Title title T Ti Tit Titl BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 12 12 no 0 10 0 1 0 0 1 5 5 5 0"));
 
         doc.close(true, true, true);
     }
