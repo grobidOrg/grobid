@@ -111,6 +111,9 @@ WORKDIR /opt/grobid
 
 COPY --from=builder /opt/grobid .
 
+# pin lmdb to avoid breaking change in 2.0.0 (duplicate env open rejection)
+RUN pip3 install --no-cache-dir "lmdb<2.0.0"
+
 # install DeLFT
 RUN pip3 install --no-cache-dir delft==0.4.1
 
