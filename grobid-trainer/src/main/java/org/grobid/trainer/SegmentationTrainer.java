@@ -153,9 +153,9 @@ public class SegmentationTrainer extends AbstractTrainer {
                 List<String> labeled = parser.getLabeledResult();
 
                 // For dh-law-footnotes flavor, remap low-support labels
-                if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES) {
-                    labeled = remapLowSupportLabels(labeled);
-                }
+//                if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES) {
+//                    labeled = remapLowSupportLabels(labeled);
+//                }
 
                 // we can now add the features
                 // we open the featured file
