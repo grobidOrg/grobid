@@ -174,7 +174,7 @@
     
     <note place="footnote">22 The auto.arima() function in R uses a variation of the Hyndman and Khandakar algorithm <lb/>which combines unit root tests, minimization of the AICc and MLE to obtain an ARIMA model. <lb/></note>
     
-    <listBibl>3 Hyndman (n 9). <lb/></listBibl>
+    <listBibl>23 Hyndman (n 9). <lb/></listBibl>
     
     <note place="headnote">2013] <lb/>FORECASTING LABOUR PRODUCTIVITY GROWTH IN <lb/>NORWAY FOR THE PERIOD 2012-2021 USING ARIMA <lb/>MODELS <lb/></note>
     
