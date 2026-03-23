@@ -45,7 +45,22 @@ body {
   background-color: #f5f5f5;
   padding: 20px 20px 10px;
   margin: -20px -20px 20px;
+  position: relative;
 }
+
+#health-indicator {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #999;
+    cursor: default;
+    transition: background-color 0.3s ease;
+}
+#health-indicator.healthy { background-color: #27ae60; }
+#health-indicator.unhealthy { background-color: #e74c3c; }
 
 .container > footer p {
   text-align: center;
