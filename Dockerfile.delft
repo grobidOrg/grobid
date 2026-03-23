@@ -112,7 +112,7 @@ WORKDIR /opt/grobid
 COPY --from=builder /opt/grobid .
 
 # install DeLFT
-RUN pip3 install --no-cache-dir delft==0.4.4
+RUN pip3 install --no-cache-dir delft==0.4.5
 
 # Build JEP with temporary access to full JDK (needs javac + JNI headers).
 # The bind mount is only visible during this RUN step — zero overhead in the final image.
