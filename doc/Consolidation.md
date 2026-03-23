@@ -54,6 +54,8 @@ GROBID automatically adjusts concurrency based on the CrossRef API tier detected
 
 These initial values are further tuned at runtime using the `x-concurrency-limit` header returned by CrossRef API responses.
 
+When a Plus tier token is configured, GROBID validates it at startup by making a lightweight request (`/works?rows=0`) to CrossRef. If the token is not recognized as Plus tier (e.g. expired or invalid), GROBID automatically falls back to Polite concurrency (3) if `mailto` is set, or Public (1) otherwise, and logs a warning. If CrossRef is unreachable at startup, the Plus tier default is kept since the token cannot be proven invalid.
+
 ### Rate Limiting and Backoff
 
 When CrossRef returns HTTP 429 (rate limit exceeded), GROBID applies exponential backoff with jitter ("full jitter" strategy):

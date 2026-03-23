@@ -1,5 +1,12 @@
 package org.grobid.core.utilities.crossref;
 
+import org.apache.http.Header;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.config.CookieSpecs;
+import org.apache.http.client.config.RequestConfig;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.grobid.core.utilities.GrobidProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -81,6 +88,12 @@ public class CrossrefClient implements Closeable {
 		int initialPoolSize = determineInitialPoolSize();
 		this.configuredPoolSize = initialPoolSize;
 		setLimits(initialPoolSize, 1000);
+
+		// validate Plus tier token at startup to avoid flooding CrossRef with 50 concurrent
+		// requests if the token is invalid
+		if (initialPoolSize == 50) {
+			validateApiToken();
+		}
 	}
 
 	/**
@@ -106,6 +119,85 @@ public class CrossrefClient implements Closeable {
 		} catch (Exception e) {
 			// GrobidProperties may not be initialized yet
 			return 1;
+		}
+	}
+
+	/**
+	 * Validate the CrossRef API token by making a lightweight request at startup.
+	 * If the token is invalid (not recognized as Plus tier), downgrade concurrency
+	 * to Polite (3) or Public (1) to avoid flooding CrossRef.
+	 */
+	private void validateApiToken() {
+		int validationTimeout = 5000; // 5 seconds
+		RequestConfig requestConfig = RequestConfig.custom()
+			.setCookieSpec(CookieSpecs.STANDARD)
+			.setConnectTimeout(validationTimeout)
+			.setSocketTimeout(validationTimeout)
+			.setConnectionRequestTimeout(validationTimeout)
+			.build();
+
+		try (CloseableHttpClient httpclient = HttpClients.custom()
+				.setDefaultRequestConfig(requestConfig)
+				.build()) {
+
+			HttpGet httpget = new HttpGet("https://api.crossref.org/works?rows=0");
+
+			String token = GrobidProperties.getCrossrefToken();
+			if (token != null) {
+				httpget.setHeader("Crossref-Plus-API-Token", "Bearer " + token);
+			}
+			String mailto = GrobidProperties.getCrossrefMailto();
+			if (mailto != null) {
+				httpget.setHeader("User-Agent",
+					"GROBID/0.8.2 (https://github.com/kermitt2/grobid; mailto:" + mailto + ")");
+			} else {
+				httpget.setHeader("User-Agent", "GROBID/0.8.2 (https://github.com/kermitt2/grobid)");
+			}
+
+			HttpResponse response = httpclient.execute(httpget);
+			int status = response.getStatusLine().getStatusCode();
+
+			if (status >= 200 && status < 300) {
+				Header apiPoolHeader = response.getFirstHeader("x-api-pool");
+				String apiPool = (apiPoolHeader != null) ? apiPoolHeader.getValue().trim() : null;
+
+				Header concurrencyHeader = response.getFirstHeader("x-concurrency-limit");
+				int concurrencyLimit = -1;
+				if (concurrencyHeader != null) {
+					try {
+						concurrencyLimit = Integer.parseInt(concurrencyHeader.getValue().trim());
+					} catch (NumberFormatException e) {
+						// ignore
+					}
+				}
+
+				if ("plus".equalsIgnoreCase(apiPool)) {
+					if (concurrencyLimit > 0) {
+						this.configuredPoolSize = concurrencyLimit;
+						this.setMaxPoolSize(concurrencyLimit);
+						LOGGER.info("CrossRef API token validated. Pool: plus, concurrency limit: " + concurrencyLimit);
+					} else {
+						LOGGER.info("CrossRef API token validated. Pool: plus");
+					}
+				} else {
+					int fallback = (mailto != null) ? 3 : 1;
+					String fallbackTier = (mailto != null) ? "polite" : "public";
+					this.configuredPoolSize = fallback;
+					this.setMaxPoolSize(fallback);
+					LOGGER.warn("CrossRef API token not recognized as Plus tier (pool: " + apiPool +
+						"). Falling back to " + fallbackTier + " concurrency: " + fallback);
+				}
+			} else {
+				int fallback = (mailto != null) ? 3 : 1;
+				String fallbackTier = (mailto != null) ? "polite" : "public";
+				this.configuredPoolSize = fallback;
+				this.setMaxPoolSize(fallback);
+				LOGGER.warn("CrossRef API token validation failed (HTTP " + status +
+					"). Falling back to " + fallbackTier + " concurrency: " + fallback);
+			}
+		} catch (Exception e) {
+			LOGGER.warn("Could not validate CrossRef API token (service unreachable: " +
+				e.getMessage() + "). Using configured Plus tier concurrency (" + configuredPoolSize + ").");
 		}
 	}
 
