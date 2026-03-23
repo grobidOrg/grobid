@@ -33,9 +33,10 @@ public class CrossrefClient implements Closeable {
 	protected int configuredPoolSize = 1;
 	protected static boolean limitAuto = true;
 
-	// exponential backoff state for rate limiting
-	protected volatile long backoffMs = 0;
-	protected volatile int backoffCount = 0;
+	// exponential backoff with jitter for rate limiting (HTTP 429)
+	// Uses "full jitter" strategy: sleep = random(0, min(cap, base * 2^attempt))
+	protected volatile int backoffAttempt = 0;
+	private static final long BACKOFF_BASE_MS = 1000;
 	private static final long MAX_BACKOFF_MS = 60_000;
 
 	// this list is used to maintain a list of Futures that were submitted,
@@ -126,9 +127,11 @@ public class CrossrefClient implements Closeable {
 
 	/**
 	 * Update concurrency limit from response header.
+	 * Ignored during active backoff — we don't trust limits from responses
+	 * that may themselves be rate-limited edge cases.
 	 */
 	public void updateConcurrencyLimit(int concurrencyLimit) {
-		if (concurrencyLimit > 0 && this.limitAuto && backoffMs == 0) {
+		if (concurrencyLimit > 0 && this.limitAuto && backoffAttempt == 0) {
 			this.configuredPoolSize = concurrencyLimit;
 			this.setMaxPoolSize(concurrencyLimit);
 			LOGGER.debug("Updated concurrency limit from response header: " + concurrencyLimit);
@@ -137,18 +140,31 @@ public class CrossrefClient implements Closeable {
 
 	/**
 	 * Trigger exponential backoff after receiving a 429 response.
-	 * Starts at 1s, doubles each subsequent call, caps at 60s.
 	 * During backoff, pool size is reduced to 1 to serialize requests.
 	 */
 	public void triggerBackoff() {
-		backoffCount++;
-		if (backoffMs == 0) {
-			backoffMs = 1000;
-		} else {
-			backoffMs = Math.min(backoffMs * 2, MAX_BACKOFF_MS);
-		}
+		backoffAttempt++;
 		this.setMaxPoolSize(1);
-		LOGGER.warn("Rate limited (429). Backing off for " + backoffMs + "ms (attempt " + backoffCount + ")");
+		LOGGER.warn("Rate limited (429). Backoff attempt " + backoffAttempt +
+			", next sleep up to " + computeBackoffCap() + "ms");
+	}
+
+	/**
+	 * Compute the jittered backoff sleep duration using "full jitter" strategy.
+	 * Returns a random value in [0, min(MAX_BACKOFF_MS, BACKOFF_BASE_MS * 2^attempt)].
+	 * Each thread gets a different value, spreading retries across time and avoiding
+	 * the thundering herd problem.
+	 */
+	long computeBackoffWithJitter() {
+		long cap = computeBackoffCap();
+		return ThreadLocalRandom.current().nextLong(cap + 1);
+	}
+
+	/**
+	 * Compute the exponential backoff cap (before jitter).
+	 */
+	private long computeBackoffCap() {
+		return Math.min(MAX_BACKOFF_MS, BACKOFF_BASE_MS * (1L << Math.min(backoffAttempt, 30)));
 	}
 
 	/**
@@ -156,9 +172,8 @@ public class CrossrefClient implements Closeable {
 	 * Restores pool size to the configured value.
 	 */
 	public void resetBackoff() {
-		if (backoffMs > 0) {
-			backoffMs = 0;
-			backoffCount = 0;
+		if (backoffAttempt > 0) {
+			backoffAttempt = 0;
 			this.setMaxPoolSize(configuredPoolSize);
 			LOGGER.info("Backoff reset. Restored pool size to " + configuredPoolSize);
 		}
@@ -172,17 +187,19 @@ public class CrossrefClient implements Closeable {
 		long threadId) {
 		if (listener != null)
 			request.addListener(listener);
-		synchronized(this) {
-			// if in backoff, wait before submitting
-			if (backoffMs > 0) {
-				try {
-					LOGGER.debug("Backoff active, sleeping for " + backoffMs + "ms before submitting request");
-					Thread.sleep(backoffMs);
-				} catch (InterruptedException e) {
-					Thread.currentThread().interrupt();
-				}
-			}
 
+		// Sleep OUTSIDE synchronized block so multiple threads can jitter-sleep in parallel
+		if (backoffAttempt > 0) {
+			long sleepMs = computeBackoffWithJitter();
+			try {
+				LOGGER.debug("Backoff active (attempt " + backoffAttempt + "), sleeping for " + sleepMs + "ms");
+				Thread.sleep(sleepMs);
+			} catch (InterruptedException e) {
+				Thread.currentThread().interrupt();
+			}
+		}
+
+		synchronized(this) {
 			// we limit the number of active threads to the crossref api dynamic limit returned in the response header
 			while(((ThreadPoolExecutor)executorService).getActiveCount() >= this.getMaxPoolSize()) {
 				try {
@@ -215,9 +232,7 @@ public class CrossrefClient implements Closeable {
 	public <T extends Object> void pushRequest(String model, Map<String, String> params, CrossrefDeserializer<T> deserializer,
 			long threadId, CrossrefRequestListener<T> listener) {
 		CrossrefRequest<T> request = new CrossrefRequest<>(model, params, deserializer);
-		synchronized(this) {
-			this.pushRequest(request, listener, threadId);
-		}
+		this.pushRequest(request, listener, threadId);
 	}
 
 	/**

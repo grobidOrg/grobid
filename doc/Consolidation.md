@@ -56,9 +56,10 @@ These initial values are further tuned at runtime using the `x-concurrency-limit
 
 ### Rate Limiting and Backoff
 
-When CrossRef returns HTTP 429 (rate limit exceeded), GROBID applies exponential backoff:
+When CrossRef returns HTTP 429 (rate limit exceeded), GROBID applies exponential backoff with jitter ("full jitter" strategy):
 
-- Starts at 1 second, doubles on each subsequent 429, caps at 60 seconds
+- Base delay: 1 second, exponentially increased (`base * 2^attempt`), capped at 60 seconds
+- Each retry sleeps for a random duration in `[0, cap]`, spreading retries across time and avoiding synchronized retry bursts (thundering herd)
 - During backoff, concurrency is reduced to 1 (serialized requests)
 - On the next successful response, backoff resets and concurrency is restored
 
