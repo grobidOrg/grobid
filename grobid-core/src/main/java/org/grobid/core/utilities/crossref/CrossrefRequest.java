@@ -156,7 +156,8 @@ public class CrossrefRequest<T extends Object> extends Observable {
 			}
 
 			// set the authorization token for the Metadata Plus service if available
-			if (GrobidProperties.getCrossrefToken() != null) {
+			// skip if token has been disabled (validation failure or 401 at runtime)
+			if (GrobidProperties.getCrossrefToken() != null && !CrossrefClient.getInstance().isTokenDisabled()) {
             	httpget.setHeader("Crossref-Plus-API-Token", "Bearer " + GrobidProperties.getCrossrefToken());
 			}
 

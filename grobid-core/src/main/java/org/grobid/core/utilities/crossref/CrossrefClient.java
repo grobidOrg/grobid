@@ -46,6 +46,9 @@ public class CrossrefClient implements Closeable {
 	private static final long BACKOFF_BASE_MS = 1000;
 	private static final long MAX_BACKOFF_MS = 60_000;
 
+	// when true, the API token is not sent in request headers (disabled after validation failure or 401)
+	protected volatile boolean tokenDisabled = false;
+
 	// this list is used to maintain a list of Futures that were submitted,
 	// that we can use to check if the requests are completed
 	protected volatile Map<Long, List<Future<?>>> futures = new HashMap<>();
@@ -123,6 +126,36 @@ public class CrossrefClient implements Closeable {
 	}
 
 	/**
+	 * Returns whether the API token has been disabled (due to validation failure or 401 response).
+	 * When true, requests should not include the Crossref-Plus-API-Token header.
+	 */
+	public boolean isTokenDisabled() {
+		return tokenDisabled;
+	}
+
+	/**
+	 * Disable the API token and downgrade concurrency to polite or public tier.
+	 * Called when the token is determined to be invalid (startup validation failure, HTTP 401).
+	 * Subsequent requests will not include the Crossref-Plus-API-Token header.
+	 */
+	public void disableToken() {
+		if (!tokenDisabled) {
+			tokenDisabled = true;
+			String mailto = null;
+			try {
+				mailto = GrobidProperties.getCrossrefMailto();
+			} catch (Exception e) {
+				// ignore
+			}
+			int fallback = (mailto != null) ? 3 : 1;
+			String fallbackTier = (mailto != null) ? "polite" : "public";
+			this.configuredPoolSize = fallback;
+			this.setMaxPoolSize(fallback);
+			LOGGER.warn("CrossRef API token disabled. Falling back to " + fallbackTier + " concurrency: " + fallback);
+		}
+	}
+
+	/**
 	 * Validate the CrossRef API token by making a lightweight request at startup.
 	 * If the token is invalid (not recognized as Plus tier), downgrade concurrency
 	 * to Polite (3) or Public (1) to avoid flooding CrossRef.
@@ -180,20 +213,12 @@ public class CrossrefClient implements Closeable {
 						LOGGER.info("CrossRef API token validated. Pool: plus");
 					}
 				} else {
-					int fallback = (mailto != null) ? 3 : 1;
-					String fallbackTier = (mailto != null) ? "polite" : "public";
-					this.configuredPoolSize = fallback;
-					this.setMaxPoolSize(fallback);
-					LOGGER.warn("CrossRef API token not recognized as Plus tier (pool: " + apiPool +
-						"). Falling back to " + fallbackTier + " concurrency: " + fallback);
+					LOGGER.warn("CrossRef API token not recognized as Plus tier (pool: " + apiPool + ").");
+					disableToken();
 				}
 			} else {
-				int fallback = (mailto != null) ? 3 : 1;
-				String fallbackTier = (mailto != null) ? "polite" : "public";
-				this.configuredPoolSize = fallback;
-				this.setMaxPoolSize(fallback);
-				LOGGER.warn("CrossRef API token validation failed (HTTP " + status +
-					"). Falling back to " + fallbackTier + " concurrency: " + fallback);
+				LOGGER.warn("CrossRef API token validation failed (HTTP " + status + ").");
+				disableToken();
 			}
 		} catch (Exception e) {
 			LOGGER.warn("Could not validate CrossRef API token (service unreachable: " +

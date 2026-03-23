@@ -38,6 +38,9 @@ public class CrossrefRequestTask<T extends Object> extends CrossrefRequestListen
 	public void onResponse(Response<T> response) {
 		if (response.status == 429) {
 			client.triggerBackoff();
+		} else if (response.status == 401) {
+			// token invalid or expired — disable it and downgrade to polite/public
+			client.disableToken();
 		} else if (!response.hasError()) {
 			client.resetBackoff();
 			client.updateLimits(response.limitIterations, response.interval);
