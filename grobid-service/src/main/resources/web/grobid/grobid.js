@@ -49,7 +49,10 @@ var grobid = (function($) {
 			success: function(data) {
 				var versionHtml = '- version: ' + data.version;
 				if (data.revision && data.revision !== 'unknown') {
-					versionHtml += ' (<a href="https://github.com/grobidOrg/grobid/commit/' + encodeURIComponent(data.revision) + '" target="_blank" style="color:#848484;">' + data.revision + '</a>)';
+					var commitHash = data.revision;
+					var match = data.revision.match(/-\d+-g([0-9a-f]+)$/);
+					if (match) commitHash = match[1];
+					versionHtml += ' (<a href="https://github.com/grobidOrg/grobid/commit/' + encodeURIComponent(commitHash) + '" target="_blank" style="color:#848484;">' + data.revision + '</a>)';
 				}
 				$('#grobid-version').html(versionHtml);
 			}
