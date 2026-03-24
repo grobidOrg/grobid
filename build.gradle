@@ -299,6 +299,7 @@ project("grobid-core") {
     }
 
     processResources {
+        inputs.property("gitRevision", rootProject.ext.gitRevision)
         filesMatching(["grobid-version.txt", "grobid-revision.txt"]) {
             expand(
                 project_version: project.property('version') ?: "unknown",
