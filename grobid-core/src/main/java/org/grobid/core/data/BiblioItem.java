@@ -4444,9 +4444,11 @@ public class BiblioItem {
                                                 aut.setAffiliationMarkers(aut2.getAffiliationMarkers());
                                             if (!CollectionUtils.isEmpty(aut2.getMarkers())) 
                                                 aut.setMarkers(aut2.getMarkers());
-                                            if (!CollectionUtils.isEmpty(aut2.getLayoutTokens())) 
+                                            if (!CollectionUtils.isEmpty(aut2.getLayoutTokens()))
                                                 aut.setLayoutTokens(aut2.getLayoutTokens());
-                                            // crossref is considered more reliable than PDF annotations, so ORCIDs are not overwritten
+                                            // preserve PDF-extracted ORCID when crossref doesn't have one
+                                            if (StringUtils.isBlank(aut.getORCID()) && StringUtils.isNotBlank(aut2.getORCID()))
+                                                aut.setORCID(aut2.getORCID());
                                             break;
                                         } 
                                     }  

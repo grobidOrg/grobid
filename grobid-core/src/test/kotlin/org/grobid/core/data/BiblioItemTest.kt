@@ -408,6 +408,112 @@ class BiblioItemTest {
     }
 
     @Test
+    fun correct_2authors_shouldPreservePdfOrcid_whenCrossrefHasNone() {
+        // CrossRef result (bibo) has no ORCIDs
+        val biblio1 = BiblioItem()
+        var authors: MutableList<Person?> = ArrayList<Person?>()
+        authors.add(createPerson("John", "Doe"))
+        authors.add(createPerson("Jane", "Will"))
+        biblio1.setFullAuthors(authors)
+
+        // PDF-extracted (bib) has ORCIDs from PDF annotations
+        val biblio2 = BiblioItem()
+        authors = ArrayList<Person?>()
+        val pdfAuthor1 = createPerson("John", "Doe")
+        pdfAuthor1.setORCID("0000-0001-2345-6789")
+        authors.add(pdfAuthor1)
+        val pdfAuthor2 = createPerson("Jane", "Will")
+        pdfAuthor2.setORCID("0000-0002-3456-7890")
+        authors.add(pdfAuthor2)
+        biblio2.setFullAuthors(authors)
+
+        BiblioItem.correct(biblio2, biblio1)
+
+        // PDF-extracted ORCIDs should be preserved
+        Assert.assertThat(biblio2.getFullAuthors().get(0).getORCID(), CoreMatchers.`is`("0000-0001-2345-6789"))
+        Assert.assertThat(biblio2.getFullAuthors().get(1).getORCID(), CoreMatchers.`is`("0000-0002-3456-7890"))
+    }
+
+    @Test
+    fun correct_2authors_shouldKeepCrossrefOrcid_whenPdfHasNone() {
+        // CrossRef result (bibo) has ORCIDs
+        val biblio1 = BiblioItem()
+        var authors: MutableList<Person?> = ArrayList<Person?>()
+        val crossrefAuthor1 = createPerson("John", "Doe")
+        crossrefAuthor1.setORCID("0000-0001-1111-1111")
+        authors.add(crossrefAuthor1)
+        val crossrefAuthor2 = createPerson("Jane", "Will")
+        crossrefAuthor2.setORCID("0000-0002-2222-2222")
+        authors.add(crossrefAuthor2)
+        biblio1.setFullAuthors(authors)
+
+        // PDF-extracted (bib) has no ORCIDs
+        val biblio2 = BiblioItem()
+        authors = ArrayList<Person?>()
+        authors.add(createPerson("John", "Doe"))
+        authors.add(createPerson("Jane", "Will"))
+        biblio2.setFullAuthors(authors)
+
+        BiblioItem.correct(biblio2, biblio1)
+
+        // CrossRef ORCIDs should be kept
+        Assert.assertThat(biblio2.getFullAuthors().get(0).getORCID(), CoreMatchers.`is`("0000-0001-1111-1111"))
+        Assert.assertThat(biblio2.getFullAuthors().get(1).getORCID(), CoreMatchers.`is`("0000-0002-2222-2222"))
+    }
+
+    @Test
+    fun correct_2authors_shouldNotOverwriteCrossrefOrcid_whenBothHaveOrcid() {
+        // CrossRef result (bibo) has ORCIDs
+        val biblio1 = BiblioItem()
+        var authors: MutableList<Person?> = ArrayList<Person?>()
+        val crossrefAuthor1 = createPerson("John", "Doe")
+        crossrefAuthor1.setORCID("0000-0001-1111-1111")
+        authors.add(crossrefAuthor1)
+        authors.add(createPerson("Jane", "Will"))
+        biblio1.setFullAuthors(authors)
+
+        // PDF-extracted (bib) has different ORCIDs
+        val biblio2 = BiblioItem()
+        authors = ArrayList<Person?>()
+        val pdfAuthor1 = createPerson("John", "Doe")
+        pdfAuthor1.setORCID("0000-0001-9999-9999")
+        authors.add(pdfAuthor1)
+        val pdfAuthor2 = createPerson("Jane", "Will")
+        pdfAuthor2.setORCID("0000-0002-8888-8888")
+        authors.add(pdfAuthor2)
+        biblio2.setFullAuthors(authors)
+
+        BiblioItem.correct(biblio2, biblio1)
+
+        // CrossRef ORCID should take priority (not overwritten by PDF)
+        Assert.assertThat(biblio2.getFullAuthors().get(0).getORCID(), CoreMatchers.`is`("0000-0001-1111-1111"))
+        // PDF ORCID preserved when CrossRef doesn't have one
+        Assert.assertThat(biblio2.getFullAuthors().get(1).getORCID(), CoreMatchers.`is`("0000-0002-8888-8888"))
+    }
+
+    @Test
+    fun correct_1author_shouldPreservePdfOrcid_whenCrossrefHasNone() {
+        // CrossRef result (bibo) with single author, no ORCID
+        val biblio1 = BiblioItem()
+        var authors: MutableList<Person?> = ArrayList<Person?>()
+        authors.add(createPerson("John", "Doe"))
+        biblio1.setFullAuthors(authors)
+
+        // PDF-extracted (bib) with ORCID
+        val biblio2 = BiblioItem()
+        authors = ArrayList<Person?>()
+        val pdfAuthor = createPerson("John", "Doe")
+        pdfAuthor.setORCID("0000-0001-2345-6789")
+        authors.add(pdfAuthor)
+        biblio2.setFullAuthors(authors)
+
+        BiblioItem.correct(biblio2, biblio1)
+
+        // setORCID(null) is a no-op, so PDF ORCID is preserved when CrossRef has none
+        Assert.assertThat(biblio2.getFullAuthors().get(0).getORCID(), CoreMatchers.`is`("0000-0001-2345-6789"))
+    }
+
+    @Test
     @Throws(Exception::class)
     fun testCleanDOIxPrefix1_shouldRemovePrefix() {
         val doi = "doi:10.1063/1.1905789"
