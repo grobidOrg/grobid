@@ -34,3 +34,71 @@
     max-width: 1260px;
   }
 }
+
+.theme-doc-markdown {
+  line-height: 1.58;
+}
+
+.theme-doc-markdown > :is(p, ul, ol, blockquote, pre, .theme-admonition, table) {
+  margin-top: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.theme-doc-markdown > :is(h2, h3, h4) {
+  scroll-margin-top: 5rem;
+}
+
+.theme-doc-markdown > h2 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.theme-doc-markdown > h3 {
+  margin-top: 1.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.theme-doc-markdown > h4 {
+  margin-top: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.theme-doc-markdown li > p {
+  margin-top: 0.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.theme-doc-markdown ul,
+.theme-doc-markdown ol {
+  padding-left: 1.1rem;
+}
+
+.theme-doc-markdown .theme-admonition {
+  margin-top: 0.8rem;
+  margin-bottom: 0.9rem;
+}
+
+.theme-doc-markdown pre {
+  margin-top: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.theme-doc-markdown table {
+  margin-top: 0.8rem;
+  margin-bottom: 0.9rem;
+}
+
+@media screen and (max-width: 996px) {
+  .theme-doc-markdown {
+    line-height: 1.55;
+  }
+
+  .theme-doc-markdown > h2 {
+    margin-top: 1.4rem;
+  }
+
+  .theme-doc-markdown > :is(p, ul, ol, blockquote, pre, .theme-admonition, table) {
+    margin-top: 0.55rem;
+    margin-bottom: 0.65rem;
+  }
+}
