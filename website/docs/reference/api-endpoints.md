@@ -20,6 +20,18 @@ If you are just getting started, begin with [REST API Usage](../guides/api/rest-
 
 Use these first when you are unsure whether the service is actually ready.
 
+## Admin and metrics endpoints
+
+When the admin port is exposed, the service also provides additional operational endpoints on the admin side.
+
+Useful examples include:
+
+- the admin console on `8071`
+- health and heartbeat-style checks from the Dropwizard admin stack
+- Prometheus-format metrics on `/metrics/prometheus`
+
+These are most useful in production rollouts, load testing, and service monitoring rather than first-time API exploration.
+
 ## Main PDF-processing endpoints
 
 | Endpoint | Method | Input | Output | Best for |

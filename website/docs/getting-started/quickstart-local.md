@@ -108,6 +108,19 @@ If the build behaves strangely, confirm again that both `java` and `javac` are p
 
 If you are building behind a proxy, you may need to set Gradle proxy settings in `gradle.properties`.
 
+Example:
+
+```properties
+systemProp.http.proxyHost=host
+systemProp.http.proxyPort=port
+systemProp.http.proxyUser=username
+systemProp.http.proxyPassword=password
+systemProp.https.proxyHost=host
+systemProp.https.proxyPort=port
+systemProp.https.proxyUser=username
+systemProp.https.proxyPassword=password
+```
+
 ### Windows-native execution
 
 Native Windows execution is not the preferred path. If you are on Windows and do not specifically need a local/native workflow, go back to Docker.

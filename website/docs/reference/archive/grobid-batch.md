@@ -1,14 +1,14 @@
 # GROBID batch mode
 
 !!! warning "Deprecated method"
-    We do **not** recommend to use the batch mode. For the best performance, benchmarking and for exploiting multithreading, we recommend to use the service, see [Use GROBID as a service](Grobid-service.md), and not the batch mode. Clients for GROBID services are provided in [Python](https://github.com/kermitt2/grobid-client-python), [Java](https://github.com/kermitt2/grobid-client-java), [node.js](https://github.com/kermitt2/grobid-client-node) and [Go](https://github.com/miku/grobidclient). 
+    We do **not** recommend to use the batch mode. For the best performance, benchmarking and multithreading support, prefer the service API documented in [API Endpoints](../api-endpoints). Clients for GROBID services are provided in [Python](https://github.com/kermitt2/grobid-client-python), [Java](https://github.com/kermitt2/grobid-client-java), [node.js](https://github.com/kermitt2/grobid-client-node) and [Go](https://github.com/miku/grobidclient). 
 
 !!! tip
     If you do not need good runtime and just need to casually process some inputs, the batch mode is available for convenience. 
 
 ## Using the batch
 
-Be sure that the GROBID project is built, see [Install GROBID](Install-Grobid.md).
+Be sure that the GROBID project is built, see [Quickstart Local](../../getting-started/quickstart-local).
 
 Go under the project directy `grobid/`:
 ```bash

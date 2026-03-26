@@ -1,14 +1,14 @@
 !!! warning "Deprecated method for running grobid"
     Considering the global trend to move toward Python, we decided to stop maintaining this library, as part of the open source Grobid application. The library is, nevertheless, open source and can be updated by the community. The use of the REST client and the docker image remain the recommended way to use Grobid. For any custom development you can contact [us](https://github.com/lfoppiano) via email.   
 
-The [REST API](Grobid-service.md) provides a simple and efficient way to use and deploy GROBID. For this, the Docker image is the simplest way to use and deploy Grobid. 
+The [REST API](../api-endpoints) provides a simple and efficient way to use and deploy GROBID. For this, Docker is usually the simplest way to deploy GROBID. 
 
 As an alternative, the present page explains how to embed Grobid directly in your Java application. The user will need a local `grobid-home` which contains all the models, resources, etc. in addition to the Grobid Java libraries. The `grobid-home` must be downloaded from the Github release of Grobid matching the version of the used Grobid Java library. 
 
 The first option is to use Grobid Java artefacts available online. A complete working **maven** project example of usage of GROBID Java API can be found here: [https://github.com/kermitt2/grobid-example](https://github.com/kermitt2/grobid-example). 
 This example project is using GROBID Java API for extracting header metadata and citations from a PDF and output the results in BibTex format.  
 
-The second option is of course to build yourself Grobid and to use the generated artefacts deployed locally. After [building the project](Install-Grobid.md), two core jar files are created under `grobid-core/build/libs`: grobid-core-`<current version>`.onejar.jar (with all the dependencies in the package) and grobid-core-`<current version>`.jar 
+The second option is to build GROBID yourself and use the generated artifacts locally. After [building the project](../../getting-started/quickstart-local), two core jar files are created under `grobid-core/build/libs`: grobid-core-`<current version>`.onejar.jar (with all the dependencies in the package) and grobid-core-`<current version>`.jar 
 
 ## Using maven
 

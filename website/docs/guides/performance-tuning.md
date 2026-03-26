@@ -219,6 +219,8 @@ See [Consolidation](./api/consolidation) for the trade-offs.
 - moderate concurrency
 - admin port enabled for diagnostics
 
+As a practical starting point, keep server `concurrency` near your available thread count or only slightly above it, then keep client concurrency only slightly above that.
+
 ### Higher-throughput CPU deployment
 
 - image: `latest-crf`
@@ -226,11 +228,17 @@ See [Consolidation](./api/consolidation) for the trade-offs.
 - use official clients with bounded parallelism
 - tune memory only after concurrency is understood
 
+On a machine with 16 available threads, a reasonable first pass is server `concurrency` around `16` to `20`, with client concurrency around `20` to `24`, then adjust based on observed `503` rates and throughput stability.
+
 ### Accuracy-first deployment with stronger hardware
 
 - full image only if you know why you need it
 - validate resource headroom first
 - keep batch pressure conservative at the start
+
+If you run the full image on CPU only, start much lower than the CRF path. A safer first pass is to cut server concurrency roughly in half relative to available threads, then keep client concurrency near that reduced level.
+
+If you also enable citation consolidation at scale, expect throughput to drop materially. CrossRef-heavy citation enrichment can become the limiting factor before GROBID itself does.
 
 ## 11. Signs you are tuning the wrong thing
 

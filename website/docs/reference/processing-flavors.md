@@ -168,6 +168,17 @@ This repository contains clearer training/evaluation evidence for:
 
 That does not mean other flavors are impossible. It means the strongest visible evidence in this codebase currently clusters around those variants.
 
+Flavor training follows the same general workflow as standard model training, but with flavor-specific task names and flavor-specific dataset subdirectories.
+
+Examples from the repository include commands such as:
+
+```bash
+./gradlew train_segmentation_article_light
+./gradlew train_header_article_light_ref
+```
+
+Evaluation follows the standard end-to-end approach as well, but the output files include the flavor suffix so multiple flavor runs can coexist without overwriting each other.
+
 ## Important caution
 
 Because flavors alter model selection, you should validate them on your own target document set.

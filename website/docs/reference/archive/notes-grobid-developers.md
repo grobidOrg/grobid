@@ -64,7 +64,7 @@ for maven projects:
     </dependency>
 ```
 
-+ Update the docker image(s) on DockerHub with this new version (see the [GROBID docker](Grobid-docker.md) page)
++ Update the docker image(s) on DockerHub with this new version (see the [Docker setup guide](../../guides/docker/docker-setup))
 
 + Ensure that the different GROBID modules are updated to use this new release as indicated above. 
 

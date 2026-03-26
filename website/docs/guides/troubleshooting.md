@@ -208,6 +208,27 @@ Fix:
 - prefer current container images over older native setups
 - test locale-related fixes such as `LC_ALL=C` only if you are staying on local/native execution
 
+### JEP or DeLFT fails with `CXXABI` / `libstdc++` errors
+
+If you run deep-learning-backed models outside Docker, JEP initialization can fail because your Python environment expects a newer `libstdc++` than the system loader is finding.
+
+Fix:
+
+- prepend your Python environment's `lib` directory to `LD_LIBRARY_PATH`
+- then retry the local/native run
+
+Examples:
+
+```bash
+export LD_LIBRARY_PATH="${CONDA_PREFIX}/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+```
+
+```bash
+export LD_LIBRARY_PATH="${VIRTUAL_ENV}/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+```
+
+If you are using the Docker full image instead, prefer validating that path first before debugging local linker behavior.
+
 ### macOS-specific issues
 
 Most users should still prefer Docker. If you see native parser or model-loading failures locally, validate the same workflow in Docker before debugging the local environment further.

@@ -26,6 +26,8 @@ This is why GROBID returns TEI XML for full document extraction instead of a sim
 
 GROBID does not use raw unconstrained TEI. It uses a customized schema tuned for GROBID's output model.
 
+The TEI customization is defined through an ODD specification (`One Document Does it all`), which is then used to generate the concrete schemas and related documentation.
+
 Schema resources in the repository include:
 
 - `grobid-home/schemas/odd/Grobid.odd`
@@ -33,6 +35,8 @@ Schema resources in the repository include:
 - `grobid-home/schemas/rng/Grobid.rnc`
 - `grobid-home/schemas/dtd/Grobid.dtd`
 - `grobid-home/schemas/xsd`
+
+Generated TEI documentation is also available in the repository under `grobid-home/schemas/doc/Grobid_doc.html`.
 
 If you need validation, prefer the RelaxNG schemas.
 
@@ -155,6 +159,8 @@ That means:
 ## If you want to bind TEI into code
 
 If you need generated bindings rather than manual XML parsing, the old docs note that JAXB-based workflows may require custom handling because TEI/XSD bindings can be awkward in practice.
+
+If you still want JAXB/XJC-based bindings, use the Grobid XSD plus the `simpleMode.xsd` extension rather than expecting the default TEI schema binding flow to work out of the box.
 
 For many users, simpler downstream approaches are more practical:
 

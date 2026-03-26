@@ -213,7 +213,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 + Web services for training models (#778)
 + Some additional training data for bibliographical references from arXiv
-+ Add a web service to process a list of reference strings, see https://grobid.readthedocs.io/en/processcitationlist/Grobid-service/#apiprocesscitationlist
++ Add a web service to process a list of reference strings, see https://grobidorg.github.io/grobid/reference/api-endpoints
 + Extended processHeaderDocument to get result in bibTeX
 
 ### Changed
@@ -415,7 +415,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
-+ Added [Grobid clients](https://grobid.readthedocs.io/en/latest/Grobid-service/#clients-for-grobid-web-services) for Java, Python and NodeJS
++ Added Grobid clients for Java, Python and NodeJS, see https://grobidorg.github.io/grobid/guides/api/rest-api-usage
 + Added metrics in the REST entrypoint (accessible via <http://localhost:8071>)
 + Added counters for consolidation tasks and consolidation results
 + Added case sensitiveness option in lexicon/FastMatcher
@@ -441,7 +441,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 + Migrate from maven to gradle for faster, more flexible and more stable build, release, etc.
 + Usage of Dropwizard for web services
-+ Move the Grobid service manual to [readthedocs](http://grobid.readthedocs.io/en/latest/Grobid-service/)
++ Move the Grobid service manual to the documentation site
 + (thanks to @detonator413 and @lfoppiano for this release! future work in versions 0.5.* will focus again on improving PDF parsing and structuring accuracy)
 
 ## [0.4.4] – 2017-10-13

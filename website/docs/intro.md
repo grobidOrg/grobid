@@ -9,6 +9,15 @@ slug: /
 
 GROBID extracts structured data from scholarly PDFs: titles, authors, affiliations, references, citations, section structure, full text, and TEI XML.
 
+Common capabilities include:
+
+- header extraction for titles, abstracts, authors, affiliations, and keywords
+- reference extraction and parsing from PDFs or raw citation strings
+- fulltext structuring into sections, paragraphs, figures, tables, notes, and citations
+- PDF coordinates for mapping extracted structures back onto the source document
+- metadata enrichment through CrossRef or biblio-glutton when consolidation is enabled
+- specialized processing flavors for non-standard document types
+
 If you want to get productive quickly, start with Docker. The documentation builder generates a safer `docker run` command, explains the important flags, and helps you avoid the most common setup mistakes reported in GitHub issues.
 
 For most users, the shortest successful path is:

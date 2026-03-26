@@ -104,6 +104,17 @@ Why:
 
 This does not make the setup magically correct, but it avoids one common source of avoidable GPU pain.
 
+## How to verify that GPU is actually being used
+
+If you are on Linux and expect GPU-backed execution, verify it at the host level instead of assuming Docker picked it up correctly.
+
+Practical options include:
+
+- `nvidia-smi`
+- `nvtop`
+
+If GPU usage is not visible there, treat it as a host/container GPU setup problem first.
+
 ## Common mistakes
 
 ### Enabling GPU while still using the CRF path
