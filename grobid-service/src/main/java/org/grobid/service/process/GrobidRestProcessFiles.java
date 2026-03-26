@@ -157,7 +157,7 @@ public class GrobidRestProcessFiles {
                 response = Response.status(Response.Status.NO_CONTENT).build();
             } else if (expectedResponseType == ExpectedResponseType.BIBTEX) {
                 response = Response.status(Response.Status.OK)
-                    .entity(result.toBibTeX("-1"))
+                    .entity(result.toBibTeX(result.generateBibTeXKey()))
                     .header(HttpHeaders.CONTENT_TYPE, BibTexMediaType.MEDIA_TYPE + "; charset=UTF-8")
                     .build();
             } else {
@@ -775,11 +775,10 @@ public class GrobidRestProcessFiles {
             } else if (expectedResponseType == ExpectedResponseType.BIBTEX) {
                 StringBuilder result = new StringBuilder();
                 GrobidAnalysisConfig config = new GrobidAnalysisConfig.GrobidAnalysisConfigBuilder().includeRawCitations(includeRawCitations).build();
-                int p = 0;
                 for (BibDataSet res : bibDataSetList) {
-                    result.append(res.getResBib().toBibTeX(Integer.toString(p), config));
+                    BiblioItem bib = res.getResBib();
+                    result.append(bib.toBibTeX(bib.generateBibTeXKey(), config));
                     result.append("\n");
-                    p++;
                 }
                 response = Response.status(Status.OK)
                                    .entity(result.toString())

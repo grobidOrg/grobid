@@ -780,6 +780,107 @@ class BiblioItemTest {
         Assert.assertThat(bibtex, Matchers.containsString("editor = {Smith, Jane}"))
     }
 
+    // --- BibTeX key generation ---
+
+    @Test
+    fun generateBibTeXKey_authorYearTitle() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("John", "Smith")))
+        val date = Date()
+        date.year = 2023
+        biblio.setNormalizedPublicationDate(date)
+        biblio.setTitle("Machine learning for beginners")
+        Assert.assertThat(biblio.generateBibTeXKey(), CoreMatchers.`is`("smith2023machine"))
+    }
+
+    @Test
+    fun generateBibTeXKey_shortFirstTitleWordMergesWithSecond() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("Jane", "Doe")))
+        val date = Date()
+        date.year = 2019
+        biblio.setNormalizedPublicationDate(date)
+        biblio.setTitle("An introduction to parsing")
+        Assert.assertThat(biblio.generateBibTeXKey(), CoreMatchers.`is`("doe2019anintroduction"))
+    }
+
+    @Test
+    fun generateBibTeXKey_singleCharFirstWordMergesWithSecond() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("Alice", "Wang")))
+        val date = Date()
+        date.year = 2020
+        biblio.setNormalizedPublicationDate(date)
+        biblio.setTitle("A survey of deep learning")
+        Assert.assertThat(biblio.generateBibTeXKey(), CoreMatchers.`is`("wang2020asurvey"))
+    }
+
+    @Test
+    fun generateBibTeXKey_missingAuthor() {
+        val biblio = BiblioItem()
+        val date = Date()
+        date.year = 2023
+        biblio.setNormalizedPublicationDate(date)
+        biblio.setTitle("Machine learning for beginners")
+        Assert.assertThat(biblio.generateBibTeXKey(), CoreMatchers.`is`("2023machine"))
+    }
+
+    @Test
+    fun generateBibTeXKey_missingYear() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("John", "Smith")))
+        biblio.setTitle("Machine learning for beginners")
+        Assert.assertThat(biblio.generateBibTeXKey(), CoreMatchers.`is`("smithmachine"))
+    }
+
+    @Test
+    fun generateBibTeXKey_missingTitle() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("John", "Smith")))
+        val date = Date()
+        date.year = 2023
+        biblio.setNormalizedPublicationDate(date)
+        Assert.assertThat(biblio.generateBibTeXKey(), CoreMatchers.`is`("smith2023"))
+    }
+
+    @Test
+    fun generateBibTeXKey_allMissing() {
+        val biblio = BiblioItem()
+        Assert.assertThat(biblio.generateBibTeXKey(), CoreMatchers.`is`("unknown"))
+    }
+
+    @Test
+    fun generateBibTeXKey_specialCharsInAuthorName() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("José", "O'Brien-Smith")))
+        val date = Date()
+        date.year = 2021
+        biblio.setNormalizedPublicationDate(date)
+        biblio.setTitle("Testing")
+        Assert.assertThat(biblio.generateBibTeXKey(), CoreMatchers.`is`("obriensmith2021testing"))
+    }
+
+    @Test
+    fun generateBibTeXKey_fallbackToPublicationDateString() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("John", "Smith")))
+        biblio.setPublicationDate("2018")
+        biblio.setTitle("Testing")
+        Assert.assertThat(biblio.generateBibTeXKey(), CoreMatchers.`is`("smith2018testing"))
+    }
+
+    @Test
+    fun generateBibTeXKey_toBibTeXUsesGeneratedKey() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("John", "Smith")))
+        val date = Date()
+        date.year = 2023
+        biblio.setNormalizedPublicationDate(date)
+        biblio.setTitle("Machine learning for beginners")
+        val bibtex = biblio.toBibTeX()
+        Assert.assertThat(bibtex, Matchers.containsString("{smith2023machine,"))
+    }
+
     companion object {
         val LOGGER: Logger = LoggerFactory.getLogger(BiblioItemTest::class.java)
 

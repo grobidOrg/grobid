@@ -1994,10 +1994,54 @@ public class BiblioItem {
     }
 
     /**
-     * Export to BibTeX format. Use "id" as BibTeX key.
+     * Generate a BibTeX key from the first author's surname, the publication year,
+     * and the first significant word of the title (all lowercased).
+     * If the first word of the title is 2 characters or fewer, it is merged with the second word.
+     */
+    public String generateBibTeXKey() {
+        StringBuilder key = new StringBuilder();
+
+        // Author component
+        String surname = getFirstAuthorSurname();
+        if (StringUtils.isNotBlank(surname)) {
+            key.append(surname.replaceAll("[^\\p{L}]", "").toLowerCase());
+        }
+
+        // Year component
+        if (normalized_publication_date != null && normalized_publication_date.getYear() >= 0) {
+            key.append(normalized_publication_date.getYear());
+        } else if (StringUtils.isNotBlank(publication_date)) {
+            String yearStr = publication_date.replaceAll("[^0-9]", "");
+            if (yearStr.length() >= 4) {
+                key.append(yearStr.substring(0, 4));
+            } else if (!yearStr.isEmpty()) {
+                key.append(yearStr);
+            }
+        }
+
+        // Title component
+        if (StringUtils.isNotBlank(title)) {
+            String[] words = title.trim().split("\\s+");
+            if (words.length > 0) {
+                String firstWord = words[0].replaceAll("[^\\p{L}]", "").toLowerCase();
+                if (firstWord.length() <= 2 && words.length > 1) {
+                    firstWord += words[1].replaceAll("[^\\p{L}]", "").toLowerCase();
+                }
+                key.append(firstWord);
+            }
+        }
+
+        if (key.length() == 0) {
+            return "unknown";
+        }
+        return key.toString();
+    }
+
+    /**
+     * Export to BibTeX format using an auto-generated key.
      */
     public String toBibTeX() {
-		return toBibTeX("id");
+		return toBibTeX(generateBibTeXKey());
 	}
 
     /**

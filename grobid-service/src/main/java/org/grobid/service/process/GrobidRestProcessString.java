@@ -278,7 +278,7 @@ public class GrobidRestProcessString {
 				response = Response.status(Status.NO_CONTENT).build();
 			} else if (expectedResponseType == ExpectedResponseType.BIBTEX) {
 				response = Response.status(Status.OK)
-							.entity(biblioItem.toBibTeX("-1", config))
+							.entity(biblioItem.toBibTeX(biblioItem.generateBibTeXKey(), config))
 							.header(HttpHeaders.CONTENT_TYPE, BibTexMediaType.MEDIA_TYPE + "; charset=UTF-8")
 							.build();
 			} else {
@@ -325,11 +325,9 @@ public class GrobidRestProcessString {
 				response = Response.status(Status.NO_CONTENT).build();
 			} else if (expectedResponseType == ExpectedResponseType.BIBTEX) {
 				StringBuilder responseContent = new StringBuilder();
-				int n = 0;
 				for(BiblioItem biblioItem : biblioItems) {
-					responseContent.append(biblioItem.toBibTeX(""+n, config));
+					responseContent.append(biblioItem.toBibTeX(biblioItem.generateBibTeXKey(), config));
 					responseContent.append("\n");
-					n++;
 				}
 				response = Response.status(Status.OK)
 							.entity(responseContent.toString())
