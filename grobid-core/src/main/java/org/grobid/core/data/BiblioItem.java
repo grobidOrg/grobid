@@ -2019,9 +2019,10 @@ public class BiblioItem {
             }
         }
 
-        // Title component
-        if (StringUtils.isNotBlank(title)) {
-            String[] words = title.trim().split("\\s+");
+        // Title component (fall back to bookTitle if title is missing)
+        String titleForKey = StringUtils.isNotBlank(title) ? title : bookTitle;
+        if (StringUtils.isNotBlank(titleForKey)) {
+            String[] words = titleForKey.trim().split("\\s+");
             if (words.length > 0) {
                 String firstWord = words[0].replaceAll("[^\\p{L}]", "").toLowerCase();
                 if (firstWord.length() <= 2 && words.length > 1) {

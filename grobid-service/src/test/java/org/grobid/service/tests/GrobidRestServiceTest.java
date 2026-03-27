@@ -236,7 +236,7 @@ public class GrobidRestServiceTest {
                                        .accept(BibTexMediaType.MEDIA_TYPE)
                                        .post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED_TYPE));
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
-        assertEquals("@article{-1,\n" +
+        assertEquals("@article{graff2002,\n" +
                 "  author = {Graff},\n" +
                 "  journal = {Expert. Opin. Ther. Targets},\n" +
                 "  date = {2002},\n" +
@@ -258,7 +258,7 @@ public class GrobidRestServiceTest {
                                        .accept(BibTexMediaType.MEDIA_TYPE)
                                        .post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED_TYPE));
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
-        assertEquals("@inproceedings{-1,\n" +
+        assertEquals("@inproceedings{kolb2014towards,\n" +
                 "  author = {Kolb, S. and Wirtz, G.},\n" +
                 "  booktitle = {Towards Application Portability in Platform as a Service Proceedings of the 8th IEEE International Symposium on Service-Oriented System Engineering (SOSE)},\n" +
                 "  date = {2014},\n" +
@@ -280,7 +280,7 @@ public class GrobidRestServiceTest {
                                        .accept(BibTexMediaType.MEDIA_TYPE)
                                        .post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED_TYPE));
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
-        assertEquals("@inproceedings{-1,\n" +
+        assertEquals("@inproceedings{kolb2014towards,\n" +
                 "  author = {Kolb, S. and Wirtz, G.},\n" +
                 "  booktitle = {Towards Application Portability in Platform as a Service Proceedings of the 8th IEEE International Symposium on Service-Oriented System Engineering (SOSE)},\n" +
                 "  date = {2014},\n" +

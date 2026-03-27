@@ -870,6 +870,29 @@ class BiblioItemTest {
     }
 
     @Test
+    fun generateBibTeXKey_fallsBackToBookTitle() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("S", "Kolb")))
+        val date = Date()
+        date.year = 2014
+        biblio.setNormalizedPublicationDate(date)
+        biblio.setBookTitle("Towards Application Portability in Platform as a Service")
+        Assert.assertThat(biblio.generateBibTeXKey(), CoreMatchers.`is`("kolb2014towards"))
+    }
+
+    @Test
+    fun generateBibTeXKey_prefersTitle() {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(mutableListOf(createPerson("John", "Smith")))
+        val date = Date()
+        date.year = 2023
+        biblio.setNormalizedPublicationDate(date)
+        biblio.setTitle("Machine learning")
+        biblio.setBookTitle("Proceedings of something")
+        Assert.assertThat(biblio.generateBibTeXKey(), CoreMatchers.`is`("smith2023machine"))
+    }
+
+    @Test
     fun generateBibTeXKey_toBibTeXUsesGeneratedKey() {
         val biblio = BiblioItem()
         biblio.setFullAuthors(mutableListOf(createPerson("John", "Smith")))
