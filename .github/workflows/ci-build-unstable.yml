@@ -124,3 +124,31 @@ jobs:
             -t lfoppiano/grobid:latest-crf \
             lfoppiano/grobid@${{ needs.docker-build-amd64.outputs.digest }} \
             lfoppiano/grobid@${{ needs.docker-build-arm64.outputs.digest }}
+
+  hf-space-update:
+    needs: [docker-merge]
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Trigger HF Space factory reboot
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          response=$(curl -s -w "\n%{http_code}" -X POST \
+            "https://huggingface.co/api/spaces/lfoppiano/grobid-dev/restart?factory=true" \
+            -H "Authorization: Bearer $HF_TOKEN")
+
+          http_code=$(echo "$response" | tail -1)
+          body=$(echo "$response" | head -n -1)
+
+          echo "HTTP Status: $http_code"
+          echo "Response: $body"
+
+          if [ "$http_code" -ge 200 ] && [ "$http_code" -lt 300 ]; then
+            echo "## HF Space Update" >> $GITHUB_STEP_SUMMARY
+            echo "Factory reboot triggered for [lfoppiano/grobid-dev](https://huggingface.co/spaces/lfoppiano/grobid-dev)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "::warning::Failed to trigger HF Space factory reboot (HTTP $http_code): $body"
+            exit 1
+          fi
