@@ -11,10 +11,10 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://grobidOrg.github.io',
+  url: 'https://VooDisss.github.io',
   baseUrl: '/grobid/',
 
-  organizationName: 'grobidOrg',
+  organizationName: 'VooDisss',
   projectName: 'grobid',
   trailingSlash: false,
 
@@ -30,7 +30,7 @@ const config: Config = {
       tagName: 'script',
       attributes: {
         src: 'https://widget.tluma.ai/widget.js',
-        'data-repo': 'grobidOrg/grobid',
+        'data-repo': 'VooDisss/grobid',
         async: 'true',
         defer: 'true',
       },
@@ -64,7 +64,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: 'https://github.com/grobidOrg/grobid/tree/docs_V2_docusaurus/website/',
+          editUrl: 'https://github.com/VooDisss/grobid/tree/docs_V2_docusaurus/website/',
         },
         blog: false,
         theme: {
@@ -101,7 +101,7 @@ const config: Config = {
           label: 'Reference',
         },
         {
-          href: 'https://github.com/grobidOrg/grobid',
+          href: 'https://github.com/VooDisss/grobid',
           label: 'GitHub',
           position: 'right',
         },
@@ -129,8 +129,8 @@ const config: Config = {
         {
           title: 'Community',
           items: [
-            {label: 'GitHub Issues', href: 'https://github.com/grobidOrg/grobid/issues'},
-            {label: 'GitHub Discussions', href: 'https://github.com/grobidOrg/grobid/discussions'},
+            {label: 'GitHub Issues', href: 'https://github.com/VooDisss/grobid/issues'},
+            {label: 'GitHub Discussions', href: 'https://github.com/VooDisss/grobid/discussions'},
             {label: 'License', to: '/community/license'},
             {label: 'Cite GROBID', to: '/community/references'},
           ],
