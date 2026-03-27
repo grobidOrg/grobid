@@ -67,6 +67,7 @@ const sidebars: SidebarsConfig = {
       label: 'Community',
       collapsed: true,
       items: [
+        'community/contributing',
         'community/license',
         'community/references',
       ],

@@ -10,6 +10,14 @@ const siteBaseUrl = process.env.DOCS_BASE_URL ?? `/${githubRepo}/`;
 const githubRepoUrl = `https://github.com/${githubOwner}/${githubRepo}`;
 const editBaseUrl = `${githubRepoUrl}/tree/${docsBranch}/website/`;
 const discussionRepo = `${githubOwner}/${githubRepo}`;
+const tlumaSource = process.env.DOCS_TLUMA_SOURCE ?? discussionRepo;
+const giscusRepo = process.env.DOCS_GISCUS_REPO ?? discussionRepo;
+const giscusRepoId = process.env.DOCS_GISCUS_REPO_ID ?? 'R_kgDORx5luw';
+const giscusCategory = process.env.DOCS_GISCUS_CATEGORY ?? 'Announcements';
+const giscusCategoryId = process.env.DOCS_GISCUS_CATEGORY_ID ?? 'DIC_kwDORx5lu84C5Ytr';
+const giscusMapping = process.env.DOCS_GISCUS_MAPPING ?? 'og:title';
+const giscusThemeDark = process.env.DOCS_GISCUS_THEME_DARK ?? 'noborder_dark';
+const giscusThemeLight = process.env.DOCS_GISCUS_THEME_LIGHT ?? 'light';
 
 const config: Config = {
   title: 'GROBID Documentation',
@@ -34,12 +42,49 @@ const config: Config = {
     },
   },
 
+  customFields: {
+    giscus: {
+      repo: giscusRepo,
+      repoId: giscusRepoId,
+      category: giscusCategory,
+      categoryId: giscusCategoryId,
+      mapping: giscusMapping,
+      themeDark: giscusThemeDark,
+      themeLight: giscusThemeLight,
+    },
+    tluma: {
+      source: tlumaSource,
+      theme: process.env.DOCS_TLUMA_THEME ?? 'auto',
+      brandColor: process.env.DOCS_TLUMA_BRAND_COLOR ?? 'blue',
+      button: process.env.DOCS_TLUMA_BUTTON ?? 'bottom-right',
+      welcomePulse: (process.env.DOCS_TLUMA_WELCOME_PULSE ?? 'true') === 'true',
+      edgePadding: process.env.DOCS_TLUMA_EDGE_PADDING ?? '1rem',
+      autoOpen: (process.env.DOCS_TLUMA_AUTO_OPEN ?? 'false') === 'true',
+      desktopFullscreenByDefault: (process.env.DOCS_TLUMA_DESKTOP_FULLSCREEN ?? 'false') === 'true',
+      prefillStarterPrompt: process.env.DOCS_TLUMA_PREFILL_PROMPT ?? 'How do I set up GROBID with Docker, and if that fails, what should I check first?',
+    },
+  },
+
   headTags: [
     {
       tagName: 'script',
+      attributes: {},
+      innerHTML: `window.tlumaConfig = ${JSON.stringify({
+        source: tlumaSource,
+        theme: process.env.DOCS_TLUMA_THEME ?? 'auto',
+        brandColor: process.env.DOCS_TLUMA_BRAND_COLOR ?? 'blue',
+        button: process.env.DOCS_TLUMA_BUTTON ?? 'bottom-right',
+        welcomePulse: (process.env.DOCS_TLUMA_WELCOME_PULSE ?? 'true') === 'true',
+        edgePadding: process.env.DOCS_TLUMA_EDGE_PADDING ?? '1rem',
+        autoOpen: (process.env.DOCS_TLUMA_AUTO_OPEN ?? 'false') === 'true',
+        desktopFullscreenByDefault: (process.env.DOCS_TLUMA_DESKTOP_FULLSCREEN ?? 'false') === 'true',
+        prefillStarterPrompt: process.env.DOCS_TLUMA_PREFILL_PROMPT ?? 'How do I set up GROBID with Docker, and if that fails, what should I check first?',
+      })};`,
+    },
+    {
+      tagName: 'script',
       attributes: {
-        src: 'https://widget.tluma.ai/widget.js',
-        'data-repo': discussionRepo,
+        src: 'https://tluma.ai/widget.js',
         async: 'true',
         defer: 'true',
       },
@@ -88,6 +133,12 @@ const config: Config = {
     colorMode: {
       defaultMode: 'dark',
       respectPrefersColorScheme: false,
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+        autoCollapseCategories: false,
+      },
     },
     navbar: {
       title: 'GROBID',

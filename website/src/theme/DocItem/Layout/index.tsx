@@ -4,6 +4,7 @@ import type LayoutType from '@theme/DocItem/Layout';
 import type {WrapperProps} from '@docusaurus/types';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
 import {useColorMode} from '@docusaurus/theme-common';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Giscus from '@giscus/react';
 
 type Props = WrapperProps<typeof LayoutType>;
@@ -11,6 +12,16 @@ type Props = WrapperProps<typeof LayoutType>;
 export default function LayoutWrapper(props: Props): ReactNode {
   const {metadata} = useDoc();
   const {colorMode} = useColorMode();
+  const {siteConfig} = useDocusaurusContext();
+  const giscus = (siteConfig.customFields?.giscus as {
+    repo?: string;
+    repoId?: string;
+    category?: string;
+    categoryId?: string;
+    mapping?: string;
+    themeDark?: string;
+    themeLight?: string;
+  } | undefined) ?? {};
 
   const enableComments = metadata.frontMatter.comments !== false;
 
@@ -20,16 +31,16 @@ export default function LayoutWrapper(props: Props): ReactNode {
       {enableComments && (
         <div style={{marginTop: '2rem', paddingTop: '1rem', borderTop: '1px solid var(--ifm-color-emphasis-200)'}}>
           <Giscus
-            repo="grobidOrg/grobid"
-            repoId=""
-            category="Documentation Feedback"
-            categoryId=""
-            mapping="pathname"
+            repo={giscus.repo ?? 'VooDisss/grobid'}
+            repoId={giscus.repoId ?? 'R_kgDORx5luw'}
+            category={giscus.category ?? 'Announcements'}
+            categoryId={giscus.categoryId ?? 'DIC_kwDORx5lu84C5Ytr'}
+            mapping={giscus.mapping ?? 'og:title'}
             strict="0"
-            reactionsEnabled="1"
+            reactionsEnabled="0"
             emitMetadata="0"
             inputPosition="top"
-            theme={colorMode === 'dark' ? 'dark' : 'light'}
+            theme={colorMode === 'dark' ? (giscus.themeDark ?? 'noborder_dark') : (giscus.themeLight ?? 'light')}
             lang="en"
             loading="lazy"
           />
