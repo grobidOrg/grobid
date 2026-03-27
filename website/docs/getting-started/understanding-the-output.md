@@ -180,4 +180,4 @@ Depending on what you need next:
 - [REST API Usage](../guides/api/rest-api-usage) if you want to make more requests correctly
 - [API Endpoints](../reference/api-endpoints) if you want to look up parameters and endpoint behavior
 - [Configuration Guide](../guides/configuration) if you want to change runtime behavior
-- [TEI Rationale](../explanation/tei-rationale) if you want the deeper reasoning behind TEI as the document model
+- [Architecture](../explanation/architecture) if you want the deeper reasoning behind the document-processing model

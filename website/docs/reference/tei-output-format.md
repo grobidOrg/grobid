@@ -184,4 +184,4 @@ This avoids overengineering early.
 - [Understanding the Output](../getting-started/understanding-the-output)
 - [API Endpoints](./api-endpoints)
 - [Coordinates](./coordinates)
-- [TEI Rationale](../explanation/tei-rationale)
+- [Architecture](../explanation/architecture)

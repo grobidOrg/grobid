@@ -131,6 +131,7 @@ const config: Config = {
           items: [
             {label: 'GitHub Issues', href: 'https://github.com/grobidOrg/grobid/issues'},
             {label: 'GitHub Discussions', href: 'https://github.com/grobidOrg/grobid/discussions'},
+            {label: 'License', to: '/community/license'},
             {label: 'Cite GROBID', to: '/community/references'},
           ],
         },

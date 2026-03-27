@@ -118,4 +118,4 @@ That is why these evaluations are best used as:
 
 - [Training Overview](./training-overview)
 - [Training Workflow](./training-workflow)
-- [Benchmarks Overview](../../reference/benchmarks/overview)
+- Historical benchmark snapshots remain available under the archive reference section.

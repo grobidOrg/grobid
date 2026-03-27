@@ -104,4 +104,4 @@ This documentation is organized to get you past those blockers early.
 ### Explanation
 
 - Understand why GROBID behaves the way it does, and when to choose one setup over another
-- Start with [Architecture](./explanation/architecture) and [TEI Rationale](./explanation/tei-rationale)
+- Start with [Architecture](./explanation/architecture)

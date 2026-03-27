@@ -80,5 +80,5 @@ This is more sustainable than repeatedly redesigning the whole pipeline.
 
 - [Architecture](./architecture)
 - [ML Pipeline](./ml-pipeline)
-- [Why TEI XML?](./tei-rationale)
+- [TEI Output Format](../reference/tei-output-format)
 - [Evaluation](../guides/training/evaluation)

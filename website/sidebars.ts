@@ -23,6 +23,18 @@ const sidebars: SidebarsConfig = {
         'guides/docker/docker-gpu',
         'guides/docker/docker-platforms',
         'guides/docker/docker-troubleshooting',
+        'guides/docker/docker-production',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Explanation',
+      collapsed: true,
+      items: [
+        'explanation/architecture',
+        'explanation/deep-learning',
+        'explanation/ml-pipeline',
+        'explanation/design-principles',
       ],
     },
     {
@@ -35,9 +47,30 @@ const sidebars: SidebarsConfig = {
         'guides/api/consolidation',
       ],
     },
+    {
+      type: 'category',
+      label: 'Advanced Workflows',
+      collapsed: true,
+      items: [
+        'guides/training/training-overview',
+        'guides/training/training-workflow',
+        'guides/training/model-selection',
+        'guides/training/evaluation',
+        'guides/training/annotation-guidelines',
+      ],
+    },
     'guides/configuration',
     'guides/performance-tuning',
     'guides/troubleshooting',
+    {
+      type: 'category',
+      label: 'Community',
+      collapsed: true,
+      items: [
+        'community/license',
+        'community/references',
+      ],
+    },
   ],
 
   referenceSidebar: [
@@ -46,6 +79,58 @@ const sidebars: SidebarsConfig = {
     'reference/tei-output-format',
     'reference/coordinates',
     'reference/processing-flavors',
+    {
+      type: 'category',
+      label: 'Model Reference',
+      collapsed: true,
+      items: [
+        'reference/models/segmentation',
+        'reference/models/header',
+        'reference/models/fulltext',
+        'reference/models/citation',
+        'reference/models/affiliation',
+        'reference/models/date',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Archive (Legacy & Historical)',
+      collapsed: true,
+      items: [
+        'reference/archive/grobid-batch',
+        'reference/archive/grobid-java-library',
+        'reference/archive/notes-grobid-developers',
+        'reference/archive/recompiling-crf-libraries',
+        {
+          type: 'category',
+          label: 'Historical Benchmarks',
+          collapsed: true,
+          items: [
+            'reference/archive/benchmarks/overview',
+            'reference/archive/benchmarks/pmc',
+            'reference/archive/benchmarks/biorxiv',
+            'reference/archive/benchmarks/plos',
+            'reference/archive/benchmarks/elife',
+            'reference/archive/benchmarks/models',
+            {
+              type: 'category',
+              label: 'Flavor Benchmarks',
+              collapsed: true,
+              items: [
+                'reference/archive/benchmarks/flavors/article-light-pmc',
+                'reference/archive/benchmarks/flavors/article-light-biorxiv',
+                'reference/archive/benchmarks/flavors/article-light-plos',
+                'reference/archive/benchmarks/flavors/article-light-elife',
+                'reference/archive/benchmarks/flavors/article-light-ref-pmc',
+                'reference/archive/benchmarks/flavors/article-light-ref-biorxiv',
+                'reference/archive/benchmarks/flavors/article-light-ref-plos',
+                'reference/archive/benchmarks/flavors/article-light-ref-elife',
+              ],
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 
