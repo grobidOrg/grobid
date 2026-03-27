@@ -2,6 +2,15 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+const githubOwner = process.env.DOCS_GITHUB_OWNER ?? 'VooDisss';
+const githubRepo = process.env.DOCS_GITHUB_REPO ?? 'grobid';
+const docsBranch = process.env.DOCS_BRANCH ?? 'docs_V2_docusaurus';
+const siteUrl = process.env.DOCS_SITE_URL ?? `https://${githubOwner}.github.io`;
+const siteBaseUrl = process.env.DOCS_BASE_URL ?? `/${githubRepo}/`;
+const githubRepoUrl = `https://github.com/${githubOwner}/${githubRepo}`;
+const editBaseUrl = `${githubRepoUrl}/tree/${docsBranch}/website/`;
+const discussionRepo = `${githubOwner}/${githubRepo}`;
+
 const config: Config = {
   title: 'GROBID Documentation',
   tagline: 'Machine learning library for extracting structured data from scholarly PDFs',
@@ -11,11 +20,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://VooDisss.github.io',
-  baseUrl: '/grobid/',
+  url: siteUrl,
+  baseUrl: siteBaseUrl,
 
-  organizationName: 'VooDisss',
-  projectName: 'grobid',
+  organizationName: githubOwner,
+  projectName: githubRepo,
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
@@ -30,7 +39,7 @@ const config: Config = {
       tagName: 'script',
       attributes: {
         src: 'https://widget.tluma.ai/widget.js',
-        'data-repo': 'VooDisss/grobid',
+        'data-repo': discussionRepo,
         async: 'true',
         defer: 'true',
       },
@@ -64,7 +73,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: 'https://github.com/VooDisss/grobid/tree/docs_V2_docusaurus/website/',
+          editUrl: editBaseUrl,
         },
         blog: false,
         theme: {
@@ -77,8 +86,8 @@ const config: Config = {
   themeConfig: {
     image: 'img/grobid-social-card.png',
     colorMode: {
-      defaultMode: 'light',
-      respectPrefersColorScheme: true,
+      defaultMode: 'dark',
+      respectPrefersColorScheme: false,
     },
     navbar: {
       title: 'GROBID',
@@ -101,7 +110,7 @@ const config: Config = {
           label: 'Reference',
         },
         {
-          href: 'https://github.com/VooDisss/grobid',
+          href: githubRepoUrl,
           label: 'GitHub',
           position: 'right',
         },
@@ -129,8 +138,8 @@ const config: Config = {
         {
           title: 'Community',
           items: [
-            {label: 'GitHub Issues', href: 'https://github.com/VooDisss/grobid/issues'},
-            {label: 'GitHub Discussions', href: 'https://github.com/VooDisss/grobid/discussions'},
+            {label: 'GitHub Issues', href: `${githubRepoUrl}/issues`},
+            {label: 'GitHub Discussions', href: `${githubRepoUrl}/discussions`},
             {label: 'License', to: '/community/license'},
             {label: 'Cite GROBID', to: '/community/references'},
           ],
