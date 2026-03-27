@@ -127,7 +127,7 @@ jobs:
 
   hf-space-update:
     needs: [docker-merge]
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/feature/auto-update-hf-space'
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
