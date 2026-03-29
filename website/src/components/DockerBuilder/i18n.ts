@@ -1,5 +1,6 @@
 export const LABELS = {
   os: 'OS',
+  source: 'Source',
   image: 'Image',
   gpu: 'GPU',
   memory: 'Memory',
@@ -33,6 +34,11 @@ export const OS_LABELS: Record<string, string> = {
 export const IMAGE_LABELS: Record<string, string> = {
   standard: 'CRF (lightweight)',
   full: 'Full (CRF + Deep Learning)',
+};
+
+export const SOURCE_LABELS: Record<string, string> = {
+  lfoppiano: 'lfoppiano',
+  grobid: 'grobid',
 };
 
 export const GPU_LABELS: Record<string, string> = {
@@ -90,6 +96,8 @@ export const PILL_TIPS: Record<string, string> = {
   'linux-arm64': 'Linux on ARM64 (e.g. AWS Graviton, Raspberry Pi). CRF image has native ARM64 support.',
   'macos-as': 'Apple M1/M2/M3/M4. Docker runs via Rosetta emulation. 2-3x slower than native x86.',
   'macos-intel': 'Older Mac with Intel CPU. Docker runs natively, no emulation needed.',
+  'source-lfoppiano': 'Practical default. Builds are typically updated here first before later promotion to the grobid namespace.',
+  'source-grobid': 'Official promoted upstream image namespace. Use this if you prefer the canonical repository name.',
   'image-standard': 'Fast, lightweight (~500 MB). Uses Wapiti CRF for all models. Works on x86 and ARM64.',
   'image-full': 'Large (~11 GB). Adds DeLFT deep learning for header, citation, affiliation. x86_64 only. GPU recommended.',
   'gpu-none': 'CRF models are CPU-only. For CRF image, GPU provides zero benefit.',
@@ -119,6 +127,10 @@ export const TOOLTIPS: Record<string, string> = {
     'Better accuracy for these tasks, but requires x86_64 only (no ARM64), needs much more memory, and benefits greatly from an NVIDIA GPU. ' +
     'Models like segmentation and fulltext remain CRF even in the Full image. ' +
     'If unsure, start with CRF \u2014 you can switch to Full later without changing your data.',
+  sourceLabel:
+    'Choose which Docker image source to use. ' +
+    'lfoppiano/grobid is the practical default because builds are typically updated there first before promotion to grobid/grobid. ' +
+    'Both use the same tag conventions such as latest-crf and latest-full.',
   nameLabel:
     'Sets a fixed name for the container instead of Docker\'s auto-generated random name (e.g. "sleepy_hopper"). ' +
     'With a name you can easily reference the container: "docker stop grobid", "docker logs grobid", "docker start grobid". ' +

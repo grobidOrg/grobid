@@ -1,7 +1,7 @@
 import React, {useState, useMemo, useRef, useEffect} from 'react';
 import styles from './styles.module.css';
 import {
-  LABELS, OS_LABELS, IMAGE_LABELS, GPU_LABELS, CONSOL_LABELS, SHELL_LABELS,
+  LABELS, OS_LABELS, IMAGE_LABELS, SOURCE_LABELS, GPU_LABELS, CONSOL_LABELS, SHELL_LABELS,
   OPTION_LABELS, MEMORY_HINTS, FLAG_HINTS, PILL_TIPS, TOOLTIPS, ALERTS,
 } from './i18n';
 
@@ -9,18 +9,21 @@ import { winPathToWsl, winPathNative } from './pathUtils';
 import { GROBID_CRF_BASE_CONFIG, GROBID_FULL_BASE_CONFIG } from '../../generated/dockerBaseConfigs';
 
 type OS = 'windows-wsl2' | 'linux-x86' | 'linux-arm64' | 'macos-as' | 'macos-intel';
+type Source = 'lfoppiano' | 'grobid';
 type Image = 'standard' | 'full';
 type GPU = 'none' | 'nvidia';
 type ConsolService = 'none' | 'crossref' | 'glutton';
 type Shell = 'wsl-bash' | 'powershell' | 'cmd';
 
 const OS_ORDER: OS[] = ['windows-wsl2', 'linux-x86', 'linux-arm64', 'macos-as', 'macos-intel'];
+const SOURCE_ORDER: Source[] = ['lfoppiano', 'grobid'];
 const CONSOL_ORDER: ConsolService[] = ['none', 'glutton', 'crossref'];
 const SHELL_ORDER: Shell[] = ['powershell', 'cmd', 'wsl-bash'];
 const STORAGE_KEY = 'grobid-docker-builder-v1';
 
 export default function DockerBuilder(): React.ReactElement {
   const [os, setOs] = useState<OS>('windows-wsl2');
+  const [source, setSource] = useState<Source>('lfoppiano');
   const [image, setImage] = useState<Image>('standard');
   const [gpu, setGpu] = useState<GPU>('none');
   const [memory, setMemory] = useState(8);
@@ -31,6 +34,7 @@ export default function DockerBuilder(): React.ReactElement {
   const [allocTty, setAllocTty] = useState(true);
   const [nonRoot, setNonRoot] = useState(false);
   const [adminPort, setAdminPort] = useState(false);
+  const [adminHostPort, setAdminHostPort] = useState(8071);
   const [containerName, setContainerName] = useState('');
   const [consolService, setConsolService] = useState<ConsolService>('none');
   const [gluttonUrl, setGluttonUrl] = useState('http://host.docker.internal:8080');
@@ -59,6 +63,7 @@ export default function DockerBuilder(): React.ReactElement {
       }
       const data = JSON.parse(raw);
       if (data.os) setOs(data.os);
+      if (data.source) setSource(data.source);
       if (data.image) setImage(data.image);
       if (data.gpu) setGpu(data.gpu);
       if (typeof data.memory === 'number') setMemory(data.memory);
@@ -69,6 +74,7 @@ export default function DockerBuilder(): React.ReactElement {
       if (typeof data.allocTty === 'boolean') setAllocTty(data.allocTty);
       if (typeof data.nonRoot === 'boolean') setNonRoot(data.nonRoot);
       if (typeof data.adminPort === 'boolean') setAdminPort(data.adminPort);
+      if (typeof data.adminHostPort === 'number') setAdminHostPort(data.adminHostPort);
       if (typeof data.containerName === 'string') setContainerName(data.containerName);
       if (data.consolService) setConsolService(data.consolService);
       if (typeof data.gluttonUrl === 'string') setGluttonUrl(data.gluttonUrl);
@@ -87,9 +93,9 @@ export default function DockerBuilder(): React.ReactElement {
   useEffect(() => {
     if (!hydrated || typeof window === 'undefined') return;
     const data = {
-      os, image, gpu, memory, port,
+      os, source, image, gpu, memory, port,
       mountPdfs, autoRemove, detach, allocTty, nonRoot,
-      adminPort, containerName,
+      adminPort, adminHostPort, containerName,
       consolService, gluttonUrl, crossrefEmail,
       hostPath, configPath, pdfsPath, shell,
     };
@@ -98,7 +104,7 @@ export default function DockerBuilder(): React.ReactElement {
     } catch {
       // ignore storage errors
     }
-  }, [hydrated, os, image, gpu, memory, port, mountPdfs, autoRemove, detach, allocTty, nonRoot, adminPort, containerName, consolService, gluttonUrl, crossrefEmail, hostPath, configPath, pdfsPath, shell]);
+  }, [hydrated, os, source, image, gpu, memory, port, mountPdfs, autoRemove, detach, allocTty, nonRoot, adminPort, adminHostPort, containerName, consolService, gluttonUrl, crossrefEmail, hostPath, configPath, pdfsPath, shell]);
 
   const resetAll = () => {
     if (typeof window !== 'undefined') {
@@ -109,6 +115,7 @@ export default function DockerBuilder(): React.ReactElement {
       }
     }
     setOs('windows-wsl2');
+    setSource('lfoppiano');
     setImage('standard');
     setGpu('none');
     setMemory(8);
@@ -119,6 +126,7 @@ export default function DockerBuilder(): React.ReactElement {
     setAllocTty(true);
     setNonRoot(false);
     setAdminPort(false);
+    setAdminHostPort(8071);
     setContainerName('');
     setConsolService('none');
     setGluttonUrl('http://host.docker.internal:8080');
@@ -140,7 +148,9 @@ export default function DockerBuilder(): React.ReactElement {
   const useWslPaths = isWindows && shell === 'wsl-bash';
   const useNativePaths = isWindows && shell !== 'wsl-bash';
   const lineCont = (isWindows && shell === 'powershell') ? ' `' : ' \\';
-  const imageTag = image === 'full' ? 'lfoppiano/grobid:latest-full' : 'lfoppiano/grobid:latest-crf';
+  const imageRepo = source === 'grobid' ? 'grobid/grobid' : 'lfoppiano/grobid';
+  const imageTag = image === 'full' ? `${imageRepo}:latest-full` : `${imageRepo}:latest-crf`;
+  const configFileName = image === 'full' ? 'grobid-full.yaml' : 'grobid.yaml';
 
   const resolveOne = useMemo(() => {
     return (raw: string) => {
@@ -164,10 +174,21 @@ export default function DockerBuilder(): React.ReactElement {
   }, [isWindows, shell, hostPath]);
 
   const volPdfs = pdfsPath ? resolveOne(pdfsPath) : resolveBase('pdfs');
-  const volConfig = configPath ? `${resolveOne(configPath).replace(/[/\\]+$/, '')}${isWindows && shell !== 'wsl-bash' ? '\\' : '/'}grobid.yaml` : resolveBase('config/grobid.yaml');
+  const volConfig = configPath
+    ? `${resolveOne(configPath).replace(/[/\\]+$/, '')}${isWindows && shell !== 'wsl-bash' ? '\\' : '/'}${configFileName}`
+    : resolveBase(`config/${configFileName}`);
 
   const useGpu = gpu === 'nvidia' && !gpuDisabled;
   const isFull = image === 'full';
+  const prevImageRef = useRef<Image>(image);
+
+  useEffect(() => {
+    const prevImage = prevImageRef.current;
+    if (prevImage !== 'full' && image === 'full' && !gpuDisabled && gpu === 'none') {
+      setGpu('nvidia');
+    }
+    prevImageRef.current = image;
+  }, [image, gpuDisabled, gpu]);
 
   const commandLines = useMemo(() => {
     let base = 'docker run';
@@ -181,14 +202,14 @@ export default function DockerBuilder(): React.ReactElement {
     if (useGpu) p.push('  --gpus all');
     if (useGpu) p.push("  -e TF_FORCE_GPU_ALLOW_GROWTH='true'");
     p.push(`  -p ${port}:8070`);
-    if (adminPort) p.push('  -p 8071:8071');
+    if (adminPort) p.push(`  -p ${adminHostPort}:8071`);
     p.push(`  --memory=${memory}g`);
     if (mountPdfs) p.push(`  -v ${volPdfs}:/opt/grobid/input`);
     if (needsConfigMount) p.push(`  -v ${volConfig}:/opt/grobid/grobid-home/config/grobid.yaml:ro`);
     if (nonRoot && !isWindows) p.push('  --user $(id -u):$(id -g)');
     p.push(`  ${imageTag}`);
     return p;
-  }, [os, image, gpu, memory, port, mountPdfs, needsConfigMount, nonRoot, autoRemove, detach, allocTty, adminPort, containerName, isArm, useGpu, gpuDisabled, volPdfs, volConfig, imageTag]);
+  }, [os, image, gpu, memory, port, mountPdfs, needsConfigMount, nonRoot, autoRemove, detach, allocTty, adminPort, adminHostPort, containerName, isArm, useGpu, gpuDisabled, volPdfs, volConfig, imageTag]);
 
   const command = commandLines.map((l, i) =>
     i < commandLines.length - 1 ? l + lineCont : l
@@ -267,13 +288,13 @@ export default function DockerBuilder(): React.ReactElement {
       h.push(['--gpus all', FLAG_HINTS['--gpus all']]);
       h.push(['-e TF_...', FLAG_HINTS['-e TF_...']]);
     }
-    if (adminPort) h.push(['-p 8071', FLAG_HINTS['-p 8071']]);
+    if (adminPort) h.push([`-p ${adminHostPort}`, FLAG_HINTS['-p 8071']]);
     h.push(['--memory', FLAG_HINTS['--memory']]);
     if (mountPdfs) h.push(['-v (pdfs)', FLAG_HINTS['-v (pdfs)']]);
     if (needsConfigMount) h.push(['-v (config)', FLAG_HINTS['-v (config)']]);
     if (nonRoot && !isWindows) h.push(['--user', FLAG_HINTS['--user']]);
     return h;
-  }, [isArm, useGpu, autoRemove, detach, allocTty, adminPort, containerName, mountPdfs, needsConfigMount, nonRoot, isWindows]);
+  }, [isArm, useGpu, autoRemove, detach, allocTty, adminPort, adminHostPort, containerName, mountPdfs, needsConfigMount, nonRoot, isWindows]);
 
   const [copied, setCopied] = useState(false);
   const copy = () => {
@@ -313,6 +334,7 @@ export default function DockerBuilder(): React.ReactElement {
     if (isWindows) lines.push(`Shell: ${SHELL_LABELS[shell]}`);
     lines.push('');
     lines.push('## Image & Resources');
+    lines.push(`Source: ${SOURCE_LABELS[source]}`);
     lines.push(`Image: ${imageTag}`);
     lines.push(`GPU: ${gpuDisabled ? 'disabled' : GPU_LABELS[gpu]}`);
     lines.push(`Memory: ${memory} GB`);
@@ -322,7 +344,7 @@ export default function DockerBuilder(): React.ReactElement {
     lines.push(`Detach: ${detach ? 'yes' : 'no'}`);
     lines.push(`TTY: ${allocTty && !detach ? 'yes' : 'no'}`);
     lines.push(`Auto-remove: ${autoRemove ? 'yes' : 'no'}`);
-    lines.push(`Admin port: ${adminPort ? 'yes' : 'no'}`);
+    lines.push(`Admin port: ${adminPort ? `yes (${adminHostPort}->8071)` : 'no'}`);
     if (containerName) lines.push(`Name: ${containerName}`);
     lines.push('');
     lines.push('## Paths');
@@ -346,7 +368,7 @@ export default function DockerBuilder(): React.ReactElement {
     lines.push('Docker run:');
     lines.push(command);
     return lines.join('\n');
-  }, [os, isWindows, shell, imageTag, gpuDisabled, gpu, memory, mountPdfs, detach, allocTty, autoRemove, adminPort, containerName, volPdfs, needsConfigMount, configDir, consolService, gluttonUrl, crossrefEmail, createConfigCommand, openConfigCommand, command]);
+  }, [os, source, isWindows, shell, imageTag, gpuDisabled, gpu, memory, mountPdfs, detach, allocTty, autoRemove, adminPort, adminHostPort, containerName, volPdfs, needsConfigMount, configDir, consolService, gluttonUrl, crossrefEmail, createConfigCommand, openConfigCommand, command]);
 
   const copySave = () => {
     navigator.clipboard.writeText(saveSummary);
@@ -495,6 +517,13 @@ export default function DockerBuilder(): React.ReactElement {
       )}
 
       <div className={styles.row}>
+        <span className={`${styles.rowLabel} ${styles.rowLabelTip}`} data-tip={TOOLTIPS.sourceLabel}>{LABELS.source}</span>
+        <div className={styles.pills}>
+          {SOURCE_ORDER.map((val) => pill(val, source, SOURCE_LABELS[val], () => setSource(val), false, val === 'lfoppiano', PILL_TIPS[`source-${val}`]))}
+        </div>
+      </div>
+
+      <div className={styles.row}>
         <span className={`${styles.rowLabel} ${styles.rowLabelTip}`} data-tip={TOOLTIPS.imageLabel}>{LABELS.image}</span>
         <div className={styles.pills}>
           {pill('standard', image, IMAGE_LABELS.standard, () => { setImage('standard'); setGpu('none'); }, false, true, PILL_TIPS['image-standard'])}
@@ -591,10 +620,26 @@ export default function DockerBuilder(): React.ReactElement {
           <span className={`${styles.rowLabel} ${styles.rowLabelTip}`} data-tip={TOOLTIPS.portLabel}>{LABELS.port}</span>
           <input type="number" min={1024} max={65535} value={port} onChange={(e) => setPort(Number(e.target.value))} className={styles.textInput} style={{width: 80}} />
         </div>
-        <div className={styles.row}>
+        <div className={`${styles.row} ${styles.rowNoWrap}`}>
           <span className={`${styles.rowLabel} ${styles.rowLabelTip}`} data-tip={TOOLTIPS.adminPortLabel}>Admin</span>
-          <div className={styles.toggles}>
-            {tog('Expose 8071 (health)', adminPort, () => setAdminPort(!adminPort))}
+          <div className={styles.inlineField}>
+            <div className={styles.toggles}>
+              {tog('Expose admin port', adminPort, () => setAdminPort(!adminPort))}
+            </div>
+            {adminPort && (
+              <>
+                <label className={styles.fieldLabel}>Port</label>
+                <input
+                  type="number"
+                  min={1024}
+                  max={65535}
+                  value={adminHostPort}
+                  onChange={(e) => setAdminHostPort(Number(e.target.value))}
+                  className={styles.textInput}
+                  style={{width: 90}}
+                />
+              </>
+            )}
           </div>
         </div>
         <div className={styles.row}>
