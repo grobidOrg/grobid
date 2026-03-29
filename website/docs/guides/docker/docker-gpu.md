@@ -104,6 +104,27 @@ Why:
 
 This does not make the setup magically correct, but it avoids one common source of avoidable GPU pain.
 
+## What to expect at startup
+
+Do not expect the full image to load all models into GPU memory.
+
+`latest-full` is a mixed setup:
+
+- some models use DeLFT/TensorFlow and can benefit from GPU
+- many models still use Wapiti CRF and remain CPU-bound
+- in particular, `segmentation` and `fulltext` remain CRF-based
+
+That means all of the following can be true at the same time:
+
+- the full image is configured correctly
+- TensorFlow sees your GPU
+- startup VRAM usage stays relatively low
+- large parts of the overall extraction pipeline still run on CPU
+
+If `TF_FORCE_GPU_ALLOW_GROWTH=true` is enabled, TensorFlow usually allocates GPU memory gradually instead of reserving most VRAM at startup. So modest idle GPU memory after container start does **not** by itself indicate CPU fallback.
+
+Also note that TensorFlow may detect multiple GPUs even if GROBID does not effectively spread inference across all of them.
+
 ## How to verify that GPU is actually being used
 
 If you are on Linux and expect GPU-backed execution, verify it at the host level instead of assuming Docker picked it up correctly.
@@ -112,6 +133,16 @@ Practical options include:
 
 - `nvidia-smi`
 - `nvtop`
+
+To make this check meaningful, watch GPU activity during a request that exercises DeLFT-backed models such as:
+
+- `header`
+- `citation`
+- `reference-segmenter`
+- `affiliation-address`
+- `funding-acknowledgement`
+
+Do **not** use `fulltext` alone as proof that GPU is or is not working, because `fulltext` remains CRF-based even in the full image.
 
 If GPU usage is not visible there, treat it as a host/container GPU setup problem first.
 
