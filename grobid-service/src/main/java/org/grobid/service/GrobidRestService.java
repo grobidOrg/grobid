@@ -227,7 +227,7 @@ public class GrobidRestService implements GrobidPaths {
 
     @Path(PATH_HEADER)
     @Consumes(MediaType.MULTIPART_FORM_DATA)
-    @Produces(BibTexMediaType.MEDIA_TYPE + ";qs=0.5")
+    @Produces(BibTexMediaType.MEDIA_TYPE_QS)
     @POST
     public Response processHeaderDocumentReturnBibTeX_post(
         @FormDataParam(INPUT) InputStream inputStream,
@@ -248,7 +248,7 @@ public class GrobidRestService implements GrobidPaths {
 
     @Path(PATH_HEADER)
     @Consumes(MediaType.MULTIPART_FORM_DATA)
-    @Produces(BibTexMediaType.MEDIA_TYPE + ";qs=0.5")
+    @Produces(BibTexMediaType.MEDIA_TYPE_QS)
     @PUT
     public Response processStatelessHeaderDocumentReturnBibTeX(
         @FormDataParam(INPUT) InputStream inputStream,
@@ -654,7 +654,7 @@ public class GrobidRestService implements GrobidPaths {
 
     @Path(PATH_CITATION)
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    @Produces(BibTexMediaType.MEDIA_TYPE + ";qs=0.5")
+    @Produces(BibTexMediaType.MEDIA_TYPE_QS)
     @POST
     public Response processCitationReturnBibTeX_post(
         @FormParam(CITATION) String citation,
@@ -669,7 +669,7 @@ public class GrobidRestService implements GrobidPaths {
 
     @Path(PATH_CITATION)
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    @Produces(BibTexMediaType.MEDIA_TYPE + ";qs=0.5")
+    @Produces(BibTexMediaType.MEDIA_TYPE_QS)
     @PUT
     public Response processCitationReturnBibTeX(
         @FormParam(CITATION) String citation,
@@ -695,7 +695,7 @@ public class GrobidRestService implements GrobidPaths {
 
     @Path(PATH_CITATION_LIST)
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    @Produces(BibTexMediaType.MEDIA_TYPE + ";qs=0.5")
+    @Produces(BibTexMediaType.MEDIA_TYPE_QS)
     @POST
     public Response processCitationListReturnBibTeX_post(
         @FormParam(CITATION) List<String> citations,
@@ -734,7 +734,7 @@ public class GrobidRestService implements GrobidPaths {
 
     @Path(PATH_REFERENCES)
     @Consumes(MediaType.MULTIPART_FORM_DATA)
-    @Produces(BibTexMediaType.MEDIA_TYPE + ";qs=0.5")
+    @Produces(BibTexMediaType.MEDIA_TYPE_QS)
     @POST
     public Response processStatelessReferencesDocumentReturnBibTeX_post(
         @FormDataParam(INPUT) InputStream inputStream,
@@ -747,7 +747,7 @@ public class GrobidRestService implements GrobidPaths {
 
     @Path(PATH_REFERENCES)
     @Consumes(MediaType.MULTIPART_FORM_DATA)
-    @Produces(BibTexMediaType.MEDIA_TYPE + ";qs=0.5")
+    @Produces(BibTexMediaType.MEDIA_TYPE_QS)
     @PUT
     public Response processStatelessReferencesDocumentReturnBibTeX(
         @FormDataParam(INPUT) InputStream inputStream,
