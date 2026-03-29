@@ -293,6 +293,41 @@ public class GrobidRestServiceTest {
             response.readEntity(String.class));
     }
 
+    @Test
+    public void processCitationWithoutAcceptHeaderReturnsXml() {
+        Form form = new Form();
+        form.param(GrobidRestService.CITATION, "Kolb, S., Wirtz G.: Towards Application Portability in Platform as a Service\n" +
+            "Proceedings of the 8th IEEE International Symposium on Service-Oriented System Engineering (SOSE), Oxford, United Kingdom, April 7 - 10, 2014.");
+        Response response = getClient().target(baseUrl()).path(GrobidPaths.PATH_CITATION)
+                                       .request()
+                                       .post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED_TYPE));
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+        String contentType = response.getHeaderString("Content-Type");
+        assertTrue("Expected XML content type but got: " + contentType,
+            contentType.startsWith(MediaType.APPLICATION_XML));
+        String body = response.readEntity(String.class);
+        assertTrue("Expected XML body starting with '<' but got: " + body.substring(0, Math.min(50, body.length())),
+            body.trim().startsWith("<"));
+    }
+
+    @Test
+    public void processCitationWithBibTeXAcceptHeaderReturnsBibTeX() {
+        Form form = new Form();
+        form.param(GrobidRestService.CITATION, "Kolb, S., Wirtz G.: Towards Application Portability in Platform as a Service\n" +
+            "Proceedings of the 8th IEEE International Symposium on Service-Oriented System Engineering (SOSE), Oxford, United Kingdom, April 7 - 10, 2014.");
+        Response response = getClient().target(baseUrl()).path(GrobidPaths.PATH_CITATION)
+                                       .request()
+                                       .accept(BibTexMediaType.MEDIA_TYPE)
+                                       .post(Entity.entity(form, MediaType.APPLICATION_FORM_URLENCODED_TYPE));
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+        String contentType = response.getHeaderString("Content-Type");
+        assertTrue("Expected BibTeX content type but got: " + contentType,
+            contentType.startsWith(BibTexMediaType.MEDIA_TYPE));
+        String body = response.readEntity(String.class);
+        assertTrue("Expected BibTeX body starting with '@' but got: " + body.substring(0, Math.min(50, body.length())),
+            body.trim().startsWith("@"));
+    }
+
     @Ignore
     public void processStatelessReferencesDocumentReturnsValidBibTeXForKolbAndKopp() throws Exception {
         final FileDataBodyPart filePart = new FileDataBodyPart(GrobidRestService.INPUT, new File(this.getClass().getResource("/sample5/gadr.pdf").toURI()));
