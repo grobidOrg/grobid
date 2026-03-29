@@ -103,6 +103,40 @@ public class GrobidRestServiceTest {
         assertNotNull(resp);
     }
 
+    @Test
+    public void processHeaderDocumentWithoutAcceptHeaderReturnsXml() {
+        FormDataMultiPart form = new FormDataMultiPart();
+        form.field("input", sample4(), MediaType.MULTIPART_FORM_DATA_TYPE);
+
+        Response response = getClient().target(baseUrl()).path(GrobidPaths.PATH_HEADER)
+                                       .request()
+                                       .post(Entity.entity(form, MediaType.MULTIPART_FORM_DATA_TYPE));
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+        String contentType = response.getHeaderString("Content-Type");
+        assertTrue("Expected XML content type but got: " + contentType,
+            contentType.startsWith(MediaType.APPLICATION_XML));
+        String body = response.readEntity(String.class);
+        assertTrue("Expected XML body starting with '<' but got: " + body.substring(0, Math.min(50, body.length())),
+            body.trim().startsWith("<"));
+    }
+
+    @Test
+    public void processHeaderDocumentWithBibTeXAcceptHeaderReturnsBibTeX() {
+        FormDataMultiPart form = new FormDataMultiPart();
+        form.field("input", sample4(), MediaType.MULTIPART_FORM_DATA_TYPE);
+
+        Response response = getClient().target(baseUrl()).path(GrobidPaths.PATH_HEADER)
+                                       .request()
+                                       .accept(BibTexMediaType.MEDIA_TYPE)
+                                       .post(Entity.entity(form, MediaType.MULTIPART_FORM_DATA_TYPE));
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+        String contentType = response.getHeaderString("Content-Type");
+        assertTrue("Expected BibTeX content type but got: " + contentType,
+            contentType.startsWith(BibTexMediaType.MEDIA_TYPE));
+        String body = response.readEntity(String.class);
+        assertTrue("Expected BibTeX body starting with '@' but got: " + body.substring(0, Math.min(50, body.length())),
+            body.trim().startsWith("@"));
+    }
 
     /*
      * Test the synchronous fully state less rest call
