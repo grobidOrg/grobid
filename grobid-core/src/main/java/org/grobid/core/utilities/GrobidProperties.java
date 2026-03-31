@@ -764,6 +764,18 @@ public class GrobidProperties {
     }
 
     /**
+     * Get the minimum interval between consecutive CrossRef API request submissions (in milliseconds).
+     * Acts as a rate-limiting floor independent of concurrency.
+     * @return minimum interval in milliseconds
+     */
+    public static long getCrossrefMinRequestInterval() {
+        if (grobidConfig.grobid.consolidation.crossref == null) {
+            return 50;
+        }
+        return grobidConfig.grobid.consolidation.crossref.minRequestIntervalMs;
+    }
+
+    /**
      * Get the Glutton timeout in seconds for consolidation service requests.
      * @return timeout in seconds
      */

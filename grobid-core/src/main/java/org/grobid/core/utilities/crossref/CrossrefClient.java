@@ -36,15 +36,23 @@ public class CrossrefClient implements Closeable {
 
 	protected volatile ExecutorService executorService;
 
-	protected int maxPoolSize = 1;
-	protected int configuredPoolSize = 1;
+	protected volatile int maxPoolSize = 1;
+	protected volatile int configuredPoolSize = 1;
 	protected static boolean limitAuto = true;
+
+	// Conservative initial concurrency for Plus tier — ramps up from x-concurrency-limit header
+	private static final int PLUS_TIER_INITIAL_CONSERVATIVE = 5;
 
 	// exponential backoff with jitter for rate limiting (HTTP 429)
 	// Uses "full jitter" strategy: sleep = random(0, min(cap, base * 2^attempt))
 	protected volatile int backoffAttempt = 0;
 	private static final long BACKOFF_BASE_MS = 1000;
 	private static final long MAX_BACKOFF_MS = 60_000;
+
+	// Minimum delay between submitting consecutive requests (milliseconds).
+	// Acts as a rate-limiting floor independent of concurrency.
+	private volatile long minRequestIntervalMs = 50;
+	private volatile long lastRequestTimeMs = 0;
 
 	// when true, the API token is not sent in request headers (disabled after validation failure or 401)
 	protected volatile boolean tokenDisabled = false;
@@ -87,21 +95,27 @@ public class CrossrefClient implements Closeable {
         );
 		this.futures = new HashMap<>();
 
+		// read minimum inter-request delay from config
+		try {
+			this.minRequestIntervalMs = GrobidProperties.getCrossrefMinRequestInterval();
+		} catch (Exception e) {
+			// GrobidProperties may not be initialized yet
+		}
+
 		// set initial pool size based on API tier
 		int initialPoolSize = determineInitialPoolSize();
 		this.configuredPoolSize = initialPoolSize;
 		setLimits(initialPoolSize, 1000);
 
-		// validate Plus tier token at startup to avoid flooding CrossRef with 50 concurrent
-		// requests if the token is invalid
-		if (initialPoolSize == 50) {
+		// validate Plus tier token at startup; on success, ramp up to server-indicated limit
+		if (initialPoolSize == PLUS_TIER_INITIAL_CONSERVATIVE) {
 			validateApiToken();
 		}
 	}
 
 	/**
 	 * Determine initial pool size based on CrossRef API tier.
-	 * - Plus tier (has token): 50 (high initial, will be tuned by response headers)
+	 * - Plus tier (has token): conservative initial, ramps up from x-concurrency-limit header
 	 * - Polite tier (has mailto): 3
 	 * - Public tier (neither): 1
 	 */
@@ -109,8 +123,9 @@ public class CrossrefClient implements Closeable {
 		try {
 			String token = GrobidProperties.getCrossrefToken();
 			if (token != null) {
-				LOGGER.info("CrossRef API tier: Plus (token set) - initial concurrency: 50");
-				return 50;
+				LOGGER.info("CrossRef API tier: Plus (token set) - initial concurrency: " +
+					PLUS_TIER_INITIAL_CONSERVATIVE + " (will ramp up from response headers)");
+				return PLUS_TIER_INITIAL_CONSERVATIVE;
 			}
 			String mailto = GrobidProperties.getCrossrefMailto();
 			if (mailto != null) {
@@ -222,7 +237,8 @@ public class CrossrefClient implements Closeable {
 			}
 		} catch (Exception e) {
 			LOGGER.warn("Could not validate CrossRef API token (service unreachable: " +
-				e.getMessage() + "). Using configured Plus tier concurrency (" + configuredPoolSize + ").");
+				e.getMessage() + "). Starting conservatively at " + PLUS_TIER_INITIAL_CONSERVATIVE +
+				" concurrent requests (will ramp up from response headers).");
 		}
 	}
 
@@ -325,6 +341,19 @@ public class CrossrefClient implements Closeable {
 					e.printStackTrace();
 				}
 			}
+
+			// Enforce minimum inter-request delay to cap throughput
+			long now = System.currentTimeMillis();
+			long elapsed = now - lastRequestTimeMs;
+			if (elapsed < minRequestIntervalMs) {
+				try {
+					Thread.sleep(minRequestIntervalMs - elapsed);
+				} catch (InterruptedException e) {
+					Thread.currentThread().interrupt();
+				}
+			}
+			lastRequestTimeMs = System.currentTimeMillis();
+
 			Future<?> f = executorService.submit(new CrossrefRequestTask<T>(this, request));
 			List<Future<?>> localFutures = this.futures.get(threadId);
 			if (localFutures == null)

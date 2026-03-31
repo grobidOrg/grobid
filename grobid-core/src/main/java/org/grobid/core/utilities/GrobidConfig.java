@@ -52,6 +52,7 @@ public class GrobidConfig {
         public String mailto;
         public String token;
         public int timeoutSec = 60;
+        public long minRequestIntervalMs = 50;
         public boolean postValidation = true;
     }
 
