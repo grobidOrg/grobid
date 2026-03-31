@@ -877,6 +877,15 @@ public class GrobidRestService implements GrobidPaths {
         return restProcessTraining.getModel(model, architecture);
     }
 
+    @Path(PATH_GET_FIGURES_AND_TABLES)
+    @Consumes(MediaType.MULTIPART_FORM_DATA)
+    @Produces(MediaType.APPLICATION_XML)
+    @POST
+    public Response getFiguresAndTables(
+        @FormDataParam(INPUT) InputStream inputStream) throws Exception {
+        return restProcessFiles.getFigures(inputStream);
+    }
+
     @Path(PATH_CREATE_TRAINING)
     @Consumes(MediaType.MULTIPART_FORM_DATA)
     @Produces("application/zip")

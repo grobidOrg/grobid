@@ -1274,4 +1274,10 @@ public class Engine implements Closeable {
         return resultDoc;
     }
 
+    public Document getFigures(
+        File inputFile, GrobidAnalysisConfig config
+    ) throws Exception {
+        return parsers.getFigureSegmenterParser().process(inputFile,  config);
+    }
+
 }

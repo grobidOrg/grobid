@@ -172,4 +172,6 @@ public interface GrobidPaths {
 	String PATH_TRAINING_RESULT = "trainingResult";
 
     String PATH_CREATE_TRAINING = "createTraining";
+
+    String PATH_GET_FIGURES_AND_TABLES = "getFigures";
 }

@@ -127,7 +127,7 @@ public class AuthorParser {
                     continue;
                 }
 
-                if(pdfAnnotations != null) {
+                if (pdfAnnotations != null) {
                     for (LayoutToken authorsToken : cluster.concatTokens()) {
                         for (PDFAnnotation pdfAnnotation : pdfAnnotations) {
                             BoundingBox intersectBox = pdfAnnotation.getIntersectionBox(authorsToken);

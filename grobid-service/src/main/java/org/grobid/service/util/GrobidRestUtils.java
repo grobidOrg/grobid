@@ -11,7 +11,7 @@ public class GrobidRestUtils {
 
     // type of PDF annotation for visualization purposes
     public enum Annotation {
-        CITATION, BLOCK, FIGURE
+        CITATION, BLOCK, TABLE, FIGURE
     }
 
     /**
@@ -29,6 +29,8 @@ public class GrobidRestUtils {
             annotType = GrobidRestUtils.Annotation.BLOCK;
         else if (type == 2)
             annotType = GrobidRestUtils.Annotation.FIGURE;
+        else if (type == 3)
+            annotType = GrobidRestUtils.Annotation.TABLE;
 
         return annotType;
     }

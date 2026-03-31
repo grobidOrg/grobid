@@ -85,11 +85,11 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
 		String featureVector = featSeg.getLeft();
 		tokenizationsReferences = featSeg.getRight();
 		try {
-			
-			// to support long sequence in case of RNN usage we segment in pieces of less than the 
-			// max_sequence_length and quite significantly overlapping 
+
+			// to support long sequence in case of RNN usage we segment in pieces of less than the
+			// max_sequence_length and quite significantly overlapping
 			// this does not apply to CRF which can process "infinite" input sequence
-			// this is relevant to the reference segmenter RNN model, which is position-free in its 
+			// this is relevant to the reference segmenter RNN model, which is position-free in its
 			// application, but could not be generalized to other RNN or transformer model long inputs
 			if (GrobidProperties.getGrobidEngine(GrobidModels.REFERENCE_SEGMENTER) == GrobidCRFEngine.DELFT) {
 				String[] featureVectorLines = featureVector.split("\n");
@@ -107,7 +107,7 @@ System.out.println("total input lines: " + featureVectorLines.length + " - " + t
 
 				if (featureVectorLines.length < originalMaxSequence || originalMaxSequence < 600) {
 					// if the input is lower than max sequence length, not need to segment
-					// if the max sequence length is too small, e.g. transformer, we won't be able to manage 
+					// if the max sequence length is too small, e.g. transformer, we won't be able to manage
 					// overlaps adapted to references
 					res = label(featureVector);
 				} else {
@@ -124,7 +124,7 @@ System.out.println("total input lines: " + featureVectorLines.length + " - " + t
 						int upperBound = Math.min( ((i+1)*maxSequence)+500, featureVectorLines.length );
 						if (featureVectorLines.length - lowerBound < originalMaxSequence)
 							upperBound = featureVectorLines.length;
-						
+
 //System.out.println("lowerBound: " + lowerBound + " - upperBound: " + upperBound);
 						List<String> featureVectorPiece = new ArrayList<>();
 						for(int j=lowerBound; j<upperBound; j++)
@@ -149,11 +149,11 @@ System.out.println(featureVectorPiece.size());
 						}
 						allVectors.add(localFeatureVector.toString());
 					}
-					
+
 					// parallel labeling of the input segments
 					String fullRes = label(allVectors);
 
-					// segment this result to get back the input chunk alignment (with extra 500 overlaping lines) 
+					// segment this result to get back the input chunk alignment (with extra 500 overlaping lines)
 					String[] fullResLines = fullRes.split("\n");
 					int pos = 0;
 					for(List<String> featureVectorPiece : featureVectorPieces) {
@@ -165,8 +165,8 @@ System.out.println(featureVectorPiece.size());
 						allRes.add(localRes.toString());
 						pos += localSize;
 					}
-					
-					// combine results and reconnect smoothly overlaps 
+
+					// combine results and reconnect smoothly overlaps
 					StringBuilder resBuilder = new StringBuilder();
 					int previousTransitionPos = 0;
 					for(int i=0; i<allRes.size(); i++) {
@@ -175,26 +175,26 @@ System.out.println(featureVectorPiece.size());
 //System.out.println("localResLines.length: " + localResLines.length);
 						int transitionPos = localResLines.length;
 						if (i != allRes.size()-1) {
-							// in the trailing redundant part (500 last lines), we identify the line index 
-							// of the last "closing" label, this is the point where we will reconnect the 
+							// in the trailing redundant part (500 last lines), we identify the line index
+							// of the last "closing" label, this is the point where we will reconnect the
 							// labeled segments to avoid breaking a labeled field
-							
+
 							for(int k=localResLines.length-1; k>=0; k--) {
 								if (localResLines.length-k == 500) {
-									// this is the max overlap, we don't go beyond! 
+									// this is the max overlap, we don't go beyond!
 									transitionPos = k;
 									break;
 								}
 
 								String line = localResLines[k];
-								if (line.endsWith(TaggingLabels.GROBID_START_ENTITY_LABEL_PREFIX+"<label>") || 
+								if (line.endsWith(TaggingLabels.GROBID_START_ENTITY_LABEL_PREFIX+"<label>") ||
 									line.endsWith(TaggingLabels.GROBID_START_ENTITY_LABEL_PREFIX+"<reference>")) {
 									// we can stop the line before this one
 									transitionPos = k;
 									break;
 								}
 							}
-						} 
+						}
 						// else: we are at the last chunk, so we take the content until the very end
 
 //System.out.println("previousTransitionPos: " + previousTransitionPos);
@@ -212,7 +212,7 @@ System.out.println(featureVectorPiece.size());
 								selectedlocalResLines.add(localLine);
 							} else if (j == previousTransitionPos && previousTransitionPos == 0 && i != 0) {
 								// previousTransitionPos is 0 and we are not at the first segment: we had a non overlapping
-								// transition, we might want to avoid a starting label at this point 
+								// transition, we might want to avoid a starting label at this point
 								String localLine = localResLines[j];
 								if (localLine.indexOf(TaggingLabels.GROBID_START_ENTITY_LABEL_PREFIX) != -1) {
 									localLine = localLine.replace(TaggingLabels.GROBID_START_ENTITY_LABEL_PREFIX+"<label>", "<label>");
@@ -225,7 +225,7 @@ System.out.println(featureVectorPiece.size());
 						}
 						for(String localResLine : selectedlocalResLines)
 							resBuilder.append(localResLine).append("\n");
-						
+
 						previousTransitionPos = transitionPos-maxSequence;
 					}
 					res = resBuilder.toString();
@@ -234,12 +234,12 @@ System.out.println(featureVectorPiece.size());
 				res = label(featureVector);
 		}
 		catch(Exception e) {
-			throw new GrobidException("Labeling in ReferenceSegmenter fails.", e);
+			throw new GrobidException("Sequence labeling in ReferenceSegmenter fails.", e);
 		}
 		if (res == null) {
 			return null;
 		}
-        
+
         // if we extract for generating training data, we also give back the used features
         List<Triple<String, String, String>> labeled = GenericTaggerUtils.getTokensWithLabelsAndFeatures(res, training);
 

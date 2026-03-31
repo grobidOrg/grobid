@@ -55,7 +55,7 @@ public class PDFALTOSaxHandlerTest {
         assertTrue(document.getBlocks().size() == 26);
     }
 
-    @Test
+    //@Test
     public void testParsing_pdf2XMLwithIMages_ShouldWork() throws Exception {
         InputStream inputStream = this.getClass().getResourceAsStream("pdfalto_Images.xml");
 

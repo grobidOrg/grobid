@@ -111,11 +111,13 @@ public class TestFullTextParser extends EngineTest {
             int start = block.getStartToken();
             int end = block.getEndToken();
 
-            if (start == -1) {
+            if (start == -1 || start == end) {
                 continue;
             }
 
-            for (int i = start; i < end; i++) {
+//            for (int i = start; i < end; i++) {
+            for (int i = start; i <= end; i++) {
+                //assertEquals(doc.getTokenizations().get(i).getText(), block.getTokens().get(i - start).getText());
                 assertEquals(doc.getTokenizations().get(i), block.getTokens().get(i - start));
             }
 //            assertTrue(endPtr.getTokenBlockPos() < endBlock.getTokens().size());

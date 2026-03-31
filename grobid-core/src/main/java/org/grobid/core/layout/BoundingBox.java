@@ -1,7 +1,6 @@
 package org.grobid.core.layout;
 
 import com.fasterxml.jackson.core.JsonGenerator;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -148,6 +147,7 @@ public class BoundingBox implements Comparable {
     public double area() {
         return width * height;
     }
+
     public double distanceTo(BoundingBox to) {
         if (this.page != to.page) {
             return 1000 * Math.abs(this.page - to.page);
@@ -179,11 +179,11 @@ public class BoundingBox implements Comparable {
             return 0;
         }
     }
-	
+
     public BoundingBox boundingBoxIntersection(BoundingBox b) {
-		if (!this.intersect(b))
-			return null;
-		
+        if (!this.intersect(b))
+            return null;
+
         double ax1 = this.x;
         double ax2 = this.x2;
         double ay1 = this.y;
@@ -194,29 +194,29 @@ public class BoundingBox implements Comparable {
         double by1 = b.y;
         double by2 = b.y2;
 
-		double ix1 = 0.0;
-		if (ax1 > bx1)
-			ix1 = ax1;
-		else 
-			ix1 = bx1;
-		
-		double iy1 = 0.0;
-		if (ay1 > by1)
-			iy1 = ay1;
-		else 
-			iy1 = by1;
-		
-		double ix2 = 0.0;
-		if (ax2 > bx2)
-			ix2 = bx2;
-		else 
-			ix2 = ax2;
-		
-		double iy2 = 0.0;
-		if (ay2 > by2)
-			iy2 = by2;
-		else 
-			iy2 = ay2;
+        double ix1 = 0.0;
+        if (ax1 > bx1)
+            ix1 = ax1;
+        else
+            ix1 = bx1;
+
+        double iy1 = 0.0;
+        if (ay1 > by1)
+            iy1 = ay1;
+        else
+            iy1 = by1;
+
+        double ix2 = 0.0;
+        if (ax2 > bx2)
+            ix2 = bx2;
+        else
+            ix2 = ax2;
+
+        double iy2 = 0.0;
+        if (ay2 > by2)
+            iy2 = by2;
+        else
+            iy2 = ay2;
 
         return fromTwoPoints(page, ix1, iy1, ix2, iy2);
     }
@@ -260,22 +260,22 @@ public class BoundingBox implements Comparable {
 
     @Override
     public int compareTo(Object otherBox) {
-        if (this.equals(otherBox)) 
+        if (this.equals(otherBox))
             return 0;
 
-        if (!(otherBox instanceof BoundingBox)) 
+        if (!(otherBox instanceof BoundingBox))
             return -1;
 
         BoundingBox that = (BoundingBox) otherBox;
 
         // the rest of position comparison is using the barycenter of the boxes
-        double thisCenterX = x + (width/2);
-        double thisCenterY = y + (height/2);
-        double otherCenterX = that.x + (that.width/2);
-        double otherCenterY = that.y+ (that.height/2);
+        double thisCenterX = x + (width / 2);
+        double thisCenterY = y + (height / 2);
+        double otherCenterX = that.x + (that.width / 2);
+        double otherCenterY = that.y + (that.height / 2);
         if (Double.compare(thisCenterY, otherCenterY) == 0)
             return Double.compare(thisCenterX, otherCenterX);
-        else 
+        else
             return Double.compare(thisCenterY, otherCenterY);
     }
 
@@ -293,5 +293,69 @@ public class BoundingBox implements Comparable {
         temp = Double.doubleToLongBits(getHeight());
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
+    }
+
+    /**
+     * Calculates the Intersection over Union (IoU) between this bounding box and another.
+     *
+     * @param other The other bounding box to compare with
+     * @return The IoU ratio (0.0 if no intersection, approaching 1.0 as overlap increases)
+     */
+    public double calculateOverlapRatio(BoundingBox other) {
+        // Check if boxes are on different pages or don't intersect
+        if (this.page != other.page || !this.intersect(other)) {
+            return 0.0;
+        }
+
+        // Get the intersection box
+        BoundingBox intersection = this.boundingBoxIntersection(other);
+
+        // Calculate areas
+        double intersectionArea = intersection.area();
+        double thisArea = this.area();
+        double otherArea = other.area();
+
+        // Calculate union area: A + B - (A ∩ B)
+        double unionArea = thisArea + otherArea - intersectionArea;
+
+        // Return Intersection over Union
+        return Math.round(intersectionArea / unionArea * 100) / 100.0;
+
+    }
+
+    /**
+     * Calculates the ratio of this bounding box that extends outside the reference area.
+     *
+     * @param referenceArea The reference area (e.g., page dimensions)
+     * @return The ratio of the box area that falls outside the reference area (0.0 if fully contained, 1.0 if fully outside)
+     */
+    public double calculateOutsideRatio(BoundingBox referenceArea) {
+        // Check if boxes are on different pages
+        if (this.page != referenceArea.page) {
+            return 1.0; // Completely outside if on different pages
+        }
+
+        // If the box is fully contained within the reference area, return 0
+        if (referenceArea.contains(this)) {
+            return 0.0;
+        }
+
+        // If the box doesn't intersect with the reference area at all, it's completely outside
+        if (!this.intersect(referenceArea)) {
+            return 1.0;
+        }
+
+        // Calculate the intersection area (the part that's inside)
+        BoundingBox intersection = this.boundingBoxIntersection(referenceArea);
+        double intersectionArea = intersection.area();
+
+        // Calculate the total area of this box
+        double thisArea = this.area();
+
+        // The ratio of the area that's outside is (total area - intersection area) / total area
+        double outsideRatio = (thisArea - intersectionArea) / thisArea;
+
+        // Round to 2 decimal places
+        return Math.round(outsideRatio * 100) / 100.0;
     }
 }

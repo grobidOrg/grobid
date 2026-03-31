@@ -1496,6 +1496,17 @@ var grobid = (function($) {
             $('#teiCoordinatesBlock').show();
             $('#flavorBlock').show();
 			setBaseUrl('processFulltextDocument');
+        } else if (selected == 'getFigures') {
+			createInputFile(selected);
+			$('#consolidateBlock1').hide();
+			$('#consolidateBlock2').hide();
+            $('#consolidateBlock3').hide();
+			$('#includeRawAffiliationsBlock').hide();
+			$('#includeRawCitationsBlock').hide();
+            $('#segmentSentencesBlock').hide();
+            $('#teiCoordinatesBlock').hide();
+            $('#flavorBlock').hide();
+			setBaseUrl('getFigures');
 		}
 		else if (selected == 'processDate') {
 			createInputTextArea('date');

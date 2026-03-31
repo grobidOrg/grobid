@@ -187,6 +187,11 @@ subprojects {
         implementation "com.fasterxml.jackson.core:jackson-databind:2.21.1"
         implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.21.1"
         implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.1"
+
+        implementation 'org.apache.xmlgraphics:batik-anim:1.19'
+        implementation 'org.apache.xmlgraphics:batik-bridge:1.19'
+        implementation 'org.apache.xmlgraphics:batik-svg-dom:1.19'
+        implementation 'org.apache.xmlgraphics:batik-dom:1.19'
     }
 
     tasks.register('sourceJar', Jar) {
@@ -260,6 +265,11 @@ project("grobid-core") {
         implementation 'black.ninia:jep:4.3.1'
         implementation 'org.apache.opennlp:opennlp-tools:1.9.4'
         implementation group: 'org.jruby', name: 'jruby-complete', version: '9.4.12.1'
+
+        implementation 'org.apache.xmlgraphics:batik-anim:1.14'
+        implementation 'org.apache.xmlgraphics:batik-bridge:1.14'
+        implementation 'org.apache.xmlgraphics:batik-svg-dom:1.14'
+        implementation 'org.apache.xmlgraphics:batik-dom:1.14'
 
         shadedLib "org.apache.lucene:lucene-analyzers-common:4.5.1"
     }

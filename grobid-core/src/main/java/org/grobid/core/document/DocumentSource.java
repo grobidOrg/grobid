@@ -86,7 +86,7 @@ public class DocumentSource {
         pdfToXml.append(" -fullFontName -noLineNumbers");
 
         if (!withImage) {
-            pdfToXml.append(" -onlyGraphsCoord ");
+            //pdfToXml.append(" -onlyGraphsCoord ");
 		}
         if (withAnnotations) {
             pdfToXml.append(" -annotation ");

@@ -67,7 +67,10 @@ public enum GrobidModels implements GrobidModel {
     INFRASTRUCTURE("infrastructure"),
     DUMMY("none"),
     LICENSE("license"),
-    COPYRIGHT("copyright");
+    COPYRIGHT("copyright"),
+    FIGURE_SEGMENTER("figure-segmenter"),
+    FIGURE_SEGMENTER_UP("figure-segmenter-up"),
+    FIGURE_SEGMENTER_DOWN("figure-segmenter-down");
 
     //I cannot declare it before
     public static final String DUMMY_FOLDER_LABEL = "none";

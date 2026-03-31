@@ -1,6 +1,8 @@
 package org.grobid.core.layout;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Class for representing graphical objects occurring within a document.
@@ -11,7 +13,7 @@ public class GraphicObject {
 
     private GraphicObjectType type = GraphicObjectType.UNKNOWN;
 
-    // position in the global tokenization
+    // position in the global tokenization, layout token index
     private int startPosition = -1;
     private int endPosition = -1;
 
@@ -20,6 +22,9 @@ public class GraphicObject {
     private BoundingBox boundingBox = null;
 
     private boolean mask = false;
+
+    // the list of Layout tokens glued to the graphic object 
+    private List<LayoutToken> tokens = null;
 
     // in case of vector image, we don't have a boundingBox from pdfalto, simply the page information
     private int page = -1;
@@ -32,6 +37,7 @@ public class GraphicObject {
     public GraphicObject(BoundingBox boundingBox, GraphicObjectType type) {
         this.boundingBox = boundingBox;
         this.type = type;
+        this.page = boundingBox.getPage();
     }
 
     /**
@@ -158,6 +164,28 @@ public class GraphicObject {
 
     public void setBoundingBox(BoundingBox box) {
         boundingBox = box;
+    }
+
+    public List<LayoutToken> getTokens() {
+        return this.tokens;
+    }
+
+    public void setLayoutTokens(List<LayoutToken> tokens) {
+        this.tokens = tokens;
+    }
+
+    public void addLayoutToken(LayoutToken token) {
+        if (tokens == null) {
+            this.tokens = new ArrayList<>();
+        }
+        this.tokens.add(token);
+    }
+
+    public void addAllLayoutToken(List<LayoutToken> localTokens) {
+        if (tokens == null) {
+            this.tokens = new ArrayList<>();
+        }
+        this.tokens.addAll(localTokens);
     }
 
     public String toString() {

@@ -86,7 +86,7 @@ public class GrobidAnalysisConfig {
     // transform images to PNGs
     private boolean preprocessImages = true;
 
-    private boolean processVectorGraphics = false;
+    private boolean processVectorGraphics = true;
 
     // a particular Grobid Analyzer to be used for tokenizing/filtering text
     private Analyzer analyzer = null;

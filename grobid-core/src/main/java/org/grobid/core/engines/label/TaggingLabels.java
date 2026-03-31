@@ -134,7 +134,7 @@ public class TaggingLabels {
     public final static String REGION_LABEL = "<region>";
     public final static String SETTLEMENT_LABEL = "<settlement>";
     public final static String ADDRESSLINE_LABEL = "<addrLine>";
-    
+
 
     /* title page (secondary title page)
      *       publisher page (publication information, including usually the copyrights info) 
@@ -275,7 +275,7 @@ public class TaggingLabels {
     public static final TaggingLabel MONOGRAPH_GLOSSARY = new TaggingLabelImpl(GrobidModels.MONOGRAPH, GLOSSARY_LABEL);
     public static final TaggingLabel MONOGRAPH_BACK = new TaggingLabelImpl(GrobidModels.MONOGRAPH, BACK_LABEL);
     public static final TaggingLabel MONOGRAPH_OTHER = new TaggingLabelImpl(GrobidModels.MONOGRAPH, OTHER_LABEL);
-    
+
     public static final TaggingLabel FUNDING_FUNDER_NAME = new TaggingLabelImpl(GrobidModels.FUNDING_ACKNOWLEDGEMENT, FUNDER_NAME_LABEL);
     public static final TaggingLabel FUNDING_FUNDER_ABBRV_NAME = new TaggingLabelImpl(GrobidModels.FUNDING_ACKNOWLEDGEMENT, FUNDER_ABBRV_NAME_LABEL);
     public static final TaggingLabel FUNDING_PROGRAM_NAME = new TaggingLabelImpl(GrobidModels.FUNDING_ACKNOWLEDGEMENT, PROGRAM_NAME_LABEL);
@@ -302,7 +302,12 @@ public class TaggingLabels {
     public static final TaggingLabel AFFILIATION_SETTLEMENT = new TaggingLabelImpl(GrobidModels.AFFILIATION_ADDRESS, SETTLEMENT_LABEL);
     public static final TaggingLabel AFFILIATION_ADDRESSLINE = new TaggingLabelImpl(GrobidModels.AFFILIATION_ADDRESS, ADDRESSLINE_LABEL);
     public static final TaggingLabel AFFILIATION_OTHER = new TaggingLabelImpl(GrobidModels.AFFILIATION_ADDRESS, OTHER_LABEL);
-    
+
+    public static final TaggingLabel FIGURE_SEGMENTER_UP_FIGURE = new TaggingLabelImpl(GrobidModels.FIGURE_SEGMENTER_UP, FIGURE_LABEL);
+    public static final TaggingLabel FIGURE_SEGMENTER_UP_OTHER = new TaggingLabelImpl(GrobidModels.FIGURE_SEGMENTER_UP, OTHER_LABEL);
+    public static final TaggingLabel FIGURE_SEGMENTER_DOWN_FIGURE = new TaggingLabelImpl(GrobidModels.FIGURE_SEGMENTER_DOWN, FIGURE_LABEL);
+    public static final TaggingLabel FIGURE_SEGMENTER_DOWN_OTHER = new TaggingLabelImpl(GrobidModels.FIGURE_SEGMENTER_DOWN, OTHER_LABEL);
+
     protected static void register(TaggingLabel label) {
         cache.putIfAbsent(new Pair<>(label.getGrobidModel(), label.getLabel()), label);
     }
@@ -466,6 +471,13 @@ public class TaggingLabels {
         register(AFFILIATION_SETTLEMENT);
         register(AFFILIATION_ADDRESSLINE);
         register(AFFILIATION_OTHER);
+
+        // figure segmenters
+        register(FIGURE_SEGMENTER_UP_FIGURE);
+        register(FIGURE_SEGMENTER_UP_OTHER);
+        register(FIGURE_SEGMENTER_DOWN_FIGURE);
+        register(FIGURE_SEGMENTER_DOWN_OTHER);
+
     }
 
     protected TaggingLabels() {

@@ -12,7 +12,10 @@ import org.grobid.core.engines.tagging.GenericTaggerUtils;
 import org.grobid.core.layout.Block;
 import org.grobid.core.layout.Cluster;
 import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.layout.LayoutTokenization;
 import org.grobid.core.utilities.TextUtilities;
+import org.grobid.core.layout.GraphicObject;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -57,7 +60,7 @@ public class BasicStructureBuilder {
      * @param b   integer
      * @param doc a document
      */
-    private static void addBlockToCluster(Integer b, Document doc) {
+    /*private static void addBlockToCluster(Integer b, Document doc) {
         // get block features
         Block block = doc.getBlocks().get(b);
         String font = block.getFont();
@@ -97,8 +100,7 @@ public class BasicStructureBuilder {
             cluster.addBlock2(b);
             doc.getClusters().add(cluster);
         }
-
-    }
+    }*/
 
     static public Document generalResultSegmentation(Document doc, String labeledResult, List<LayoutToken> documentTokens) {
         List<Pair<String, String>> labeledTokens = GenericTaggerUtils.getTokensAndLabels(labeledResult);
@@ -286,250 +288,13 @@ public class BasicStructureBuilder {
         return doc;
     }
 
-    /**
-     * Set the main segments of the document based on the full text parsing results
-     *
-     * @param doc           a document
-     * @param labeledResult string
-     * @param tokenizations tokens
-     * @return a document
-     */
-    static public Document resultSegmentation(Document doc, String labeledResult, List<String> tokenizations) {
-        if (doc == null) {
-            throw new NullPointerException("Document is null");
-        }
-        if (doc.getBlocks() == null) {
-            throw new NullPointerException("Blocks of the documents are null");
-        }
-        //System.out.println(tokenizations.toString());
-//        int i = 0;
-//        boolean first = true;
-        List<Integer> blockHeaders = new ArrayList<Integer>();
-        List<Integer> blockFooters = new ArrayList<Integer>();
-        List<Integer> blockDocumentHeaders = new ArrayList<Integer>();
-        List<Integer> blockSectionTitles = new ArrayList<Integer>();
+    static public Document figureResultSegmentation(Document doc,
+                                                    List<GraphicObject> figureAnchors,
+                                                    String labelledResultsUp,
+                                                    List<LayoutTokenization> theTokenizationsUp,
+                                                    String labelledResultsDown,
+                                                    List<LayoutTokenization> theTokenizationsDown) {
 
-        SortedSet<DocumentPiece> blockReferences = new TreeSet<DocumentPiece>();
-
-        doc.setBibDataSets(new ArrayList<BibDataSet>());
-
-//        StringTokenizer st = new StringTokenizer(labeledResult, "\n");
-
-        String[] lines = labeledResult.split("\n");
-
-        String currentTag = null;
-        String s2 = null;
-        String lastTag = null;
-        String lastPlainTag = null;
-
-        int p = 0; // index in the results' tokenization (st)
-        int blockIndex = 0;
-
-        BibDataSet bib = null;
-
-        DocumentPointer pointerA = null;
-//        DocumentPointer pointerB = null;
-        DocumentPointer currentPointer;
-        DocumentPointer lastPointer = null;
-
-
-        for (String line : lines) {
-//        while (st.hasMoreTokens()) {
-
-            for (; blockIndex < doc.getBlocks().size() - 1; blockIndex++) {
-//                int startTok = doc.getBlocks().get(blockIndex).getStartToken();
-                int endTok = doc.getBlocks().get(blockIndex).getEndToken();
-
-                if (endTok >= p) {
-                    break;
-                }
-            }
-
-            ArrayList<String> localFeatures = new ArrayList<String>();
-            boolean addSpace = false;
-
-//            String tok = st.nextToken().trim();
-            line = line.trim();
-
-            StringTokenizer stt = new StringTokenizer(line, "\t");
-            int j = 0;
-
-            boolean newLine = false;
-            int ll = stt.countTokens();
-            while (stt.hasMoreTokens()) {
-                String s = stt.nextToken().trim();
-                if (j == 0) {
-                    s2 = s;
-                    boolean strop = false;
-                    while ((!strop) && (p < tokenizations.size())) {
-                        String tokOriginal = tokenizations.get(p);
-                        if (tokOriginal.equals(" ")
-                                | tokOriginal.equals("\n")
-                                | tokOriginal.equals("\r")
-                                | tokOriginal.equals("\t")) {
-                            addSpace = true;
-                            p++;
-                        } else if (tokOriginal.equals("")) {
-                            p++;
-                        } else //if (tokOriginal.equals(s))
-                        {
-                            strop = true;
-                        }
-
-                    }
-                } else if (j == ll - 1) {
-                    currentTag = s; // current tag
-                } else {
-                    if (s.equals("LINESTART")) {
-                        newLine = true;
-                    }
-                    localFeatures.add(s);
-                }
-                j++;
-            }
-
-            if (lastTag != null) {
-                if (lastTag.startsWith("I-")) {
-                    lastPlainTag = lastTag.substring(2, lastTag.length());
-                } else {
-                    lastPlainTag = lastTag;
-                }
-            }
-
-
-            String currentPlainTag = null;
-            if (currentTag != null) {
-                if (currentTag.startsWith("I-")) {
-                    currentPlainTag = currentTag.substring(2, currentTag.length());
-                } else {
-                    currentPlainTag = currentTag;
-                }
-            }
-
-
-            currentPointer = new DocumentPointer(doc, blockIndex, p);
-
-
-            if (lastPlainTag != null && !currentPlainTag.equals(lastPlainTag) && lastPlainTag.equals("<references>")) {
-                blockReferences.add(new DocumentPiece(pointerA, lastPointer));
-                pointerA = currentPointer;
-            }
-
-            if (currentPlainTag.equals("<header>")) {
-                if (!blockDocumentHeaders.contains(blockIndex)) {
-                    blockDocumentHeaders.add(blockIndex);
-                    //System.out.println("add block header: " + blockIndexInteger.intValue());
-                }
-
-            } else if (currentPlainTag.equals("<references>")) {//                    if (!blockReferences.contains(blockIndex)) {
-//                        blockReferences.add(blockIndex);
-//                        //System.out.println("add block reference: " + blockIndexInteger.intValue());
-//                    }
-
-                if (currentTag.equals("I-<references>")) {
-                    pointerA = new DocumentPointer(doc, blockIndex, p);
-                    if (bib != null) {
-                        if (bib.getRawBib() != null) {
-                            doc.getBibDataSets().add(bib);
-                            bib = new BibDataSet();
-                        }
-                    } else {
-                        bib = new BibDataSet();
-                    }
-                    bib.setRawBib(s2);
-                } else {
-                    if (addSpace) {
-                        if (bib == null) {
-                            bib = new BibDataSet();
-                            bib.setRawBib(" " + s2);
-                        } else {
-                            bib.setRawBib(bib.getRawBib() + " " + s2);
-                        }
-                    } else {
-                        if (bib == null) {
-                            bib = new BibDataSet();
-                            bib.setRawBib(s2);
-                        } else {
-                            bib.setRawBib(bib.getRawBib() + s2);
-                        }
-                    }
-                }
-
-//                case "<reference_marker>":
-//                    if (!blockReferences.contains(blockIndex)) {
-//                        blockReferences.add(blockIndex);
-//                        //System.out.println("add block reference: " + blockIndexInteger.intValue());
-//                    }
-//
-//                    if (currentTag.equals("I-<reference_marker>")) {
-//                        if (bib != null) {
-//                            if (bib.getRefSymbol() != null) {
-//                                doc.getBibDataSets().add(bib);
-//                                bib = new BibDataSet();
-//                            }
-//                        } else {
-//                            bib = new BibDataSet();
-//                        }
-//                        bib.setRefSymbol(s2);
-//                    } else {
-//                        if (addSpace) {
-//                            if (bib == null) {
-//                                bib = new BibDataSet();
-//                                bib.setRefSymbol(s2);
-//                            } else {
-//                                bib.setRefSymbol(bib.getRefSymbol() + " " + s2);
-//                            }
-//                        } else {
-//                            if (bib == null) {
-//                                bib = new BibDataSet();
-//                                bib.setRefSymbol(s2);
-//                            } else {
-//                                bib.setRefSymbol(bib.getRefSymbol() + s2);
-//                            }
-//                        }
-//                    }
-//                    break;
-            } else if (currentPlainTag.equals("<page_footnote>")) {
-                if (!blockFooters.contains(blockIndex)) {
-                    blockFooters.add(blockIndex);
-                    //System.out.println("add block foot note: " + blockIndexInteger.intValue());
-                }
-
-            } else if (currentPlainTag.equals("<page_header>")) {
-                if (!blockHeaders.contains(blockIndex)) {
-                    blockHeaders.add(blockIndex);
-                    //System.out.println("add block page header: " + blockIndexInteger.intValue());
-                }
-
-            } else if (currentPlainTag.equals("<section>")) {
-                if (!blockSectionTitles.contains(blockIndex)) {
-                    blockSectionTitles.add(blockIndex);
-                    //System.out.println("add block page header: " + blockIndexInteger.intValue());
-                }
-
-            }
-
-            lastTag = currentTag;
-            p++;
-            lastPointer = currentPointer;
-        }
-
-        if (bib != null) {
-            doc.getBibDataSets().add(bib);
-        }
-
-
-        if (!lastPointer.equals(pointerA)) {
-            if (lastPlainTag.equals("<references>")) {
-                blockReferences.add(new DocumentPiece(pointerA, lastPointer));
-            }
-        }
-
-        /*doc.setBlockHeaders(blockHeaders);
-        doc.setBlockFooters(blockFooters);
-        doc.setBlockDocumentHeaders(blockDocumentHeaders);
-        doc.setBlockReferences(blockReferences);
-        doc.setBlockSectionTitles(blockSectionTitles);*/
 
         return doc;
     }

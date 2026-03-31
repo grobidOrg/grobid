@@ -33,6 +33,7 @@ public class EngineParsers implements Closeable {
     private TableParser tableParser = null;
     private MonographParser monographParser = null;
     private FundingAcknowledgementParser fundingAcknowledgementParser = null;
+    private FigureSegmenterParser figureSegmenterParser = null;
 
     public AffiliationAddressParser getAffiliationAddressParser() {
         if (affiliationAddressParser == null) {
@@ -258,6 +259,17 @@ public class EngineParsers implements Closeable {
         return fundingAcknowledgementParser;
     } 
 
+    public FigureSegmenterParser getFigureSegmenterParser() {
+        if (figureSegmenterParser == null) {
+            synchronized (this) {
+                if (figureSegmenterParser == null) {
+                    figureSegmenterParser = new FigureSegmenterParser();
+                }
+            }
+        }
+        return figureSegmenterParser;
+    }
+
     /**
      * Init all model, this will also load the model into memory.
      * Each parser is initialized independently so that one failure doesn't prevent others from loading.
@@ -276,6 +288,7 @@ public class EngineParsers implements Closeable {
         tryInit(() -> tableParser = getTableParser(), "table");
         //tryInit(() -> monographParser = getMonographParser(), "monograph");
         tryInit(() -> fundingAcknowledgementParser = getFundingAcknowledgementParser(), "fundingAcknowledgement");
+        tryInit(() -> figureSegmenterParser = getFigureSegmenterParser(), "figureSegmenterParser");
     }
 
     private void tryInit(Runnable init, String parserName) {
@@ -370,6 +383,12 @@ public class EngineParsers implements Closeable {
             fundingAcknowledgementParser.close();
             fundingAcknowledgementParser = null;
             LOGGER.debug("CLOSING fundingAcknowledgementParser");
+        }
+
+        if (figureSegmenterParser != null) {
+            figureSegmenterParser.close();
+            figureSegmenterParser = null;
+            LOGGER.debug("CLOSING figureSegmenterParser");
         }
 
         LOGGER.debug("==> All resources closed");

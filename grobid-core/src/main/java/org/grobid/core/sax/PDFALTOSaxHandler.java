@@ -30,146 +30,151 @@ import static org.apache.commons.lang3.StringUtils.isNotBlank;
  * from docx files. 
  *
  * TBD: character-level ALTO files
- * 
+ *
  */
 public class PDFALTOSaxHandler extends DefaultHandler {
-	public static final Logger LOGGER = LoggerFactory.getLogger(PDFALTOSaxHandler.class);
+    public static final Logger LOGGER = LoggerFactory.getLogger(PDFALTOSaxHandler.class);
 
     private StringBuilder accumulator = new StringBuilder(); // Accumulate parsed text
 
-	private String previousToken = null;
-	private LayoutToken previousTok = null;
-	private double currentX = 0.0;
-	private double currentY = 0.0;
-	private double currentWidth = 0.0;
-	private double currentHeight = 0.0;
-	private Block block = null; // current block
-	private int nbTokens = 0; // nb tokens in the current block
-	private List<GraphicObject> images = null;
+    private String previousToken = null;
+    private LayoutToken previousTok = null;
+    private double currentX = 0.0;
+    private double currentY = 0.0;
+    private double currentWidth = 0.0;
+    private double currentHeight = 0.0;
+    private Block block = null; // current block
+    private int nbTokens = 0; // nb tokens in the current block
+    private List<GraphicObject> images = null;
     private HashMap<String, TextStyle> textStyles = new HashMap<String, TextStyle>();
     private boolean currentRotation = false;
 
-	private List<LayoutToken> tokenizations = null;
+    private List<LayoutToken> tokenizations = null;
 
-	private Document doc = null;
+    private Document doc = null;
 
     //starting page count from 1 since most of the PDF-related software count pages from 1
-	private int currentPage = 0;
-	private Page page = null; // the current page object
-	private Analyzer analyzer = GrobidAnalyzer.getInstance(); // use the default one by default ;)
+    private int currentPage = 0;
+    private Page page = null; // the current page object
+    private Analyzer analyzer = GrobidAnalyzer.getInstance(); // use the default one by default ;)
 
-	private int currentOffset = 0;
+    private int currentOffset = 0;
 
-	public PDFALTOSaxHandler(Document d, List<GraphicObject> im) {
-		doc = d;
-		images = im;
-		tokenizations = new ArrayList<>();
-	}
+    public PDFALTOSaxHandler(Document d, List<GraphicObject> im) {
+        doc = d;
+        images = im;
+        tokenizations = new ArrayList<>();
+    }
 
-	public void setAnalyzer(Analyzer analyzer) {
-		this.analyzer = analyzer;
-	}
+    public void setAnalyzer(Analyzer analyzer) {
+        this.analyzer = analyzer;
+    }
 
-	public Analyzer getAnalyzer() {
-		return this.analyzer;
-	}
+    public Analyzer getAnalyzer() {
+        return this.analyzer;
+    }
 
-	private void addToken(LayoutToken layoutToken) {
-		layoutToken.setOffset(currentOffset);
-		currentOffset += layoutToken.getText().length();
-		tokenizations.add(layoutToken);
-		if (doc.getBlocks() == null) {
-			layoutToken.setBlockPtr(0);
-		} else {
-			layoutToken.setBlockPtr(doc.getBlocks().size());
-		}
-		if (block == null) {
+    private void addToken(LayoutToken layoutToken) {
+        layoutToken.setOffset(currentOffset);
+        currentOffset += layoutToken.getText().length();
+        tokenizations.add(layoutToken);
+        if (doc.getBlocks() == null) {
+            layoutToken.setBlockPtr(0);
+        } else {
+            layoutToken.setBlockPtr(doc.getBlocks().size());
+        }
+        if (block == null) {
             LOGGER.info("addToken called with null block object: " + layoutToken.toString());
         } else {
             block.addToken(layoutToken);
         }
-	}
+    }
 
-	private void addBlock(Block block) {
-		if (block == null)
-			LOGGER.info("addBlock called with null block object");
+    private void addBlock(Block block) {
+        if (block == null)
+            LOGGER.info("addBlock called with null block object");
 
-		if (!block.isNull() && (block.getStartToken() != block.getEndToken())) {
-			block.setPage(page);
-			doc.addBlock(block);
-			page.addBlock(block);
-		}
-	}
+        if (!block.isNull() &&
+            (block.getStartToken() != block.getEndToken() ||
+                //(block.getText() != null && block.getText().trim().length()>0 && !block.getText().equals("\n")))
+                StringUtils.isNotBlank(block.getText()
+                )
+            )) {
+            block.setPage(page);
+            doc.addBlock(block);
+            page.addBlock(block);
+        }
+    }
 
-	public List<LayoutToken> getTokenization() {
-		return tokenizations;
-	}
+    public List<LayoutToken> getTokenization() {
+        return tokenizations;
+    }
 
-	public void characters(char[] ch, int start, int length) {
-		accumulator.append(ch, start, length);
-	}
+    public void characters(char[] ch, int start, int length) {
+        accumulator.append(ch, start, length);
+    }
 
-	public String trimAndNormaliseText(String content) {
-		String res = content.trim();
-		//res = res.replace("\u00A0", " "); // stdandard NO-BREAK SPACE are viewed
-											// as space
-		//res = res.replaceAll("\\p{javaSpaceChar}", " "); // replace all unicode space separators
-		 												 // by a usual SPACE
-		//res = res.replace("\t"," "); // case where tabulation are used as separator
-									 // -> replace tabulation with a usual space
+    public String trimAndNormaliseText(String content) {
+        String res = content.trim();
+        //res = res.replace("\u00A0", " "); // stdandard NO-BREAK SPACE are viewed
+        // as space
+        //res = res.replaceAll("\\p{javaSpaceChar}", " "); // replace all unicode space separators
+        // by a usual SPACE
+        //res = res.replace("\t"," "); // case where tabulation are used as separator
+        // -> replace tabulation with a usual space
 
-		res = UnicodeUtil.normaliseText(res);
-		return res.trim();
-	}
+        res = UnicodeUtil.normaliseText(res);
+        return res.trim();
+    }
 
-	public void endElement(String uri, String localName,
-			String qName) throws SAXException {
+    public void endElement(String uri, String localName,
+                           String qName) throws SAXException {
 
-		if (qName.equals("TextLine")) {
-			LayoutToken token = new LayoutToken();
-			token.setText("\n");
-			token.setPage(currentPage);
-			nbTokens++;
-			accumulator.setLength(0);
-			addToken(token);
-		} else if (qName.equals("Description")) {
-			accumulator.setLength(0);
-		} else if (qName.equals("String")) {
+        if (qName.equals("TextLine")) {
+            LayoutToken token = new LayoutToken();
+            token.setText("\n");
+            token.setPage(currentPage);
+            nbTokens++;
+            accumulator.setLength(0);
+            addToken(token);
+        } else if (qName.equals("Description")) {
+            accumulator.setLength(0);
+        } else if (qName.equals("String")) {
 
             accumulator.setLength(0);
-		} else if (qName.equals("Page")) {
-			// page marker are useful to detect headers (same first line(s)
-			// appearing on each page)
-			if (block != null) {
-				LayoutToken localTok = new LayoutToken("\n");
-				localTok.setPage(currentPage);
-				addToken(localTok);
-				addBlock(block);
-			}
-			nbTokens = 0;
-			doc.addPage(page);
-		} else if (qName.equals("TextBlock")) {
-			LayoutToken localTok = new LayoutToken("\n");
-			localTok.setPage(currentPage);
-			addToken(localTok);
+        } else if (qName.equals("Page")) {
+            // page marker are useful to detect headers (same first line(s)
+            // appearing on each page)
+            if (block != null) {
+                LayoutToken localTok = new LayoutToken("\n");
+                localTok.setPage(currentPage);
+                addToken(localTok);
+                addBlock(block);
+            }
+            nbTokens = 0;
+            doc.addPage(page);
+        } else if (qName.equals("TextBlock")) {
+            LayoutToken localTok = new LayoutToken("\n");
+            localTok.setPage(currentPage);
+            addToken(localTok);
 
-			//PL
-			//block.setWidth(currentX - block.getX() + currentWidth);
-			//block.setHeight(currentY - block.getY() + currentHeight);
+            //PL
+            //block.setWidth(currentX - block.getX() + currentWidth);
+            //block.setHeight(currentY - block.getY() + currentHeight);
 
-			addBlock(block);
-			nbTokens = 0;
-			block = null;
-		} else if (qName.equals("Illustration")) {
-			// this is normally the bitmap images and vector graphics
-			// such vector graphics are applied to the whole page, so there is no x,y coordinates available
-			// in the xml - to get them we will need to parse the .vec files
-			if (block != null) {
-				addBlock(block);
-			}
-			//block = new Block();
-			//block.setStartToken(tokenizations.size());
-			int imagePos = images.size()-1;
+            addBlock(block);
+            nbTokens = 0;
+            block = null;
+        } else if (qName.equals("Illustration")) {
+            // this is normally the bitmap images and vector graphics
+            // such vector graphics are applied to the whole page, so there is no reliable x,y coordinates available
+            // in the xml - to get them we will parse the .vec files
+            if (block != null) {
+                addBlock(block);
+            }
+            //block = new Block();
+            //block.setStartToken(tokenizations.size());
+            int imagePos = images.size() - 1;
 			/*if (doc.getBlocks() != null)
 				images.get(imagePos).setBlockNumber(doc.getBlocks().size());
 			else
@@ -180,52 +185,53 @@ public class PDFALTOSaxHandler extends DefaultHandler {
 				//startPos = tokenizations.size()-1;
 			}
 			int endPos = startPos;*/
-			images.get(imagePos).setStartPosition(tokenizations.size());
-			images.get(imagePos).setEndPosition(tokenizations.size());
-			images.get(imagePos).setPage(currentPage);
-			//addBlock(block);
-			nbTokens = 0;
-		}
-	}
+            images.get(imagePos).setStartPosition(tokenizations.size());
+            images.get(imagePos).setEndPosition(tokenizations.size());
+            images.get(imagePos).setPage(currentPage);
+            //addBlock(block);
+            nbTokens = 0;
+        }
 
-	public void endDocument(){
-		doc.setImages(images);
-	}
+    }
 
-	public void startElement(String namespaceURI, String localName,
-			String qName, Attributes atts) throws SAXException {
+    public void endDocument() {
+        doc.setImages(images);
+    }
 
-		if (qName.equals("Page")) {
-			int length = atts.getLength();
-			currentPage++;
-			page = new Page(currentPage);
+    public void startElement(String namespaceURI, String localName,
+                             String qName, Attributes atts) throws SAXException {
 
-			// Process each attribute
-			for (int i = 0; i < length; i++) {
-				// Get names and values for each attribute
-				String name = atts.getQName(i);
-				String value = atts.getValue(i);
-				if ((name != null) && (value != null)) {
-					if (name.equals("WIDTH")) {
-						double width = 0.0;
-						try {
-							width = Double.parseDouble(value);
-						} catch(NumberFormatException e) {
-	                        LOGGER.warn("Invalid WIDTH value: " + value);
-	                    }
-						page.setWidth(width);
-					} else if (name.equals("HEIGHT")) {
-						double height = 0.0;
-						try {
-                            height = Double.parseDouble(value);
-                        } catch(NumberFormatException e) {
-                        	LOGGER.warn("Invalid HEIGHT value: " + value);
+        if (qName.equals("Page")) {
+            int length = atts.getLength();
+            currentPage++;
+            page = new Page(currentPage);
+
+            // Process each attribute
+            for (int i = 0; i < length; i++) {
+                // Get names and values for each attribute
+                String name = atts.getQName(i);
+                String value = atts.getValue(i);
+                if ((name != null) && (value != null)) {
+                    if (name.equals("WIDTH")) {
+                        double width = 0.0;
+                        try {
+                            width = Double.parseDouble(value);
+                        } catch (NumberFormatException e) {
+                            LOGGER.warn("Invalid WIDTH value: " + value);
                         }
-						page.setHeight(height);
-					}
-				}
-			}
-		} else if (qName.equals("PrintSpace")) {
+                        page.setWidth(width);
+                    } else if (name.equals("HEIGHT")) {
+                        double height = 0.0;
+                        try {
+                            height = Double.parseDouble(value);
+                        } catch (NumberFormatException e) {
+                            LOGGER.warn("Invalid HEIGHT value: " + value);
+                        }
+                        page.setHeight(height);
+                    }
+                }
+            }
+        } else if (qName.equals("PrintSpace")) {
             int length = atts.getLength();
             // Process each attribute
             for (int i = 0; i < length; i++) {
@@ -236,12 +242,12 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                 if ((name != null) && (value != null)) {
                     switch (name) {
                         case "HPOS":
-                        	double x = 0.0;
-                        	try {
-	                            x = Double.parseDouble(value);
-	                        } catch(NumberFormatException e) {
-	                        	LOGGER.warn("Invalid HPOS value: " + value);
-	                        }
+                            double x = 0.0;
+                            try {
+                                x = Double.parseDouble(value);
+                            } catch (NumberFormatException e) {
+                                LOGGER.warn("Invalid HPOS value: " + value);
+                            }
                             if (x != currentX && x != 0.0) {
                                 currentX = Math.abs(x);
                             }
@@ -249,10 +255,10 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                         case "VPOS":
                             double y = 0.0;
                             try {
-	                            y = Double.parseDouble(value);
-	                        } catch(NumberFormatException e) {
-	                        	LOGGER.warn("Invalid VPOS value: " + value);
-	                        }
+                                y = Double.parseDouble(value);
+                            } catch (NumberFormatException e) {
+                                LOGGER.warn("Invalid VPOS value: " + value);
+                            }
                             if (y != currentY && y != 0.0) {
                                 currentY = Math.abs(y);
                             }
@@ -260,10 +266,10 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                         case "WIDTH":
                             double width = 0.0;
                             try {
-	                            width = Double.parseDouble(value);
-	                        } catch(NumberFormatException e) {
-	                        	LOGGER.warn("Invalid WIDTH value: " + value);
-	                        }
+                                width = Double.parseDouble(value);
+                            } catch (NumberFormatException e) {
+                                LOGGER.warn("Invalid WIDTH value: " + value);
+                            }
                             if (width != currentWidth && width != 0.0) {
                                 currentWidth = Math.abs(width);
                             }
@@ -271,10 +277,10 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                         case "HEIGHT":
                             double height = 0.0;
                             try {
-	                            height = Double.parseDouble(value);
-	                        } catch(NumberFormatException e) {
-	                        	LOGGER.warn("Invalid HEIGHT value: " + value);
-	                        }
+                                height = Double.parseDouble(value);
+                            } catch (NumberFormatException e) {
+                                LOGGER.warn("Invalid HEIGHT value: " + value);
+                            }
                             if (height != currentHeight && height != 0.0) {
                                 currentHeight = Math.abs(height);
                             }
@@ -283,74 +289,75 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                 }
             }
         } else if (qName.equals("TextBlock")) {
-			block = new Block();
-			nbTokens = 0;
-			block.setStartToken(tokenizations.size());
-		} else if (qName.equals("Illustration")) {
-			int length = atts.getLength();
-			GraphicObject image = new GraphicObject();
+            block = new Block();
+            nbTokens = 0;
+            block.setStartToken(tokenizations.size());
+        } else if (qName.equals("Illustration")) {
+            int length = atts.getLength();
+            GraphicObject image = new GraphicObject();
             double x = 0, y = 0, width = 0, height = 0;
-			// Process each attribute
-			for (int i = 0; i < length; i++) {
-				// Get names and values for each attribute
-				String name = atts.getQName(i);
-				String value = atts.getValue(i);
+            // Process each attribute
+            for (int i = 0; i < length; i++) {
+                // Get names and values for each attribute
+                String name = atts.getQName(i);
+                String value = atts.getValue(i);
 
-				if ((name != null) && (value != null)) {
-					switch (name) {
-						case "FILEID":
-							image.setFilePath(value);
-							if (value.contains(".svg")) {
-								image.setType(GraphicObjectType.VECTOR);
-							} else {
-								image.setType(GraphicObjectType.BITMAP);
-							}
-							break;
-						case "HPOS":
-							try {
-	                            x = Double.parseDouble(value);
-	                        } catch(NumberFormatException e) {
-	                        	LOGGER.warn("Invalid HPOS value: " + value);
-	                        }
-							break;
+                if ((name != null) && (value != null)) {
+                    switch (name) {
+                        case "FILEID":
+                            image.setFilePath(value);
+                            if (value.contains(".svg")) {
+                                image.setType(GraphicObjectType.VECTOR);
+                            } else {
+                                image.setType(GraphicObjectType.BITMAP);
+                            }
+                            break;
+                        case "HPOS":
+                            try {
+                                x = Double.parseDouble(value);
+                            } catch (NumberFormatException e) {
+                                LOGGER.warn("Invalid HPOS value: " + value);
+                            }
+                            break;
                         case "VPOS":
-                        	try {
-	                            y = Double.parseDouble(value);
-	                        } catch(NumberFormatException e) {
-	                        	LOGGER.warn("Invalid VPOS value: " + value);
-	                        }
+                            try {
+                                y = Double.parseDouble(value);
+                            } catch (NumberFormatException e) {
+                                LOGGER.warn("Invalid VPOS value: " + value);
+                            }
                             break;
                         case "WIDTH":
-                        	try {
-	                            width = Double.parseDouble(value);
-	                        } catch(NumberFormatException e) {
-	                        	LOGGER.warn("Invalid WIDTH value: " + value);
-	                        }
+                            try {
+                                width = Double.parseDouble(value);
+                            } catch (NumberFormatException e) {
+                                LOGGER.warn("Invalid WIDTH value: " + value);
+                            }
                             break;
                         case "HEIGHT":
-                        	try {
-	                            height = Double.parseDouble(value);
-	                        } catch(NumberFormatException e) {
-	                        	LOGGER.warn("Invalid HEIGHT value: " + value);
-	                        }
+                            try {
+                                height = Double.parseDouble(value);
+                            } catch (NumberFormatException e) {
+                                LOGGER.warn("Invalid HEIGHT value: " + value);
+                            }
                             break;
                         case "TYPE":
-                        	if (value.equals("svg")) {
-								image.setType(GraphicObjectType.VECTOR);
-							} else {
-								image.setType(GraphicObjectType.BITMAP);
-							}
-							break;
-					}
-				}
-			}
-			image.setBoundingBox(BoundingBox.fromPointAndDimensions(currentPage, x, y, width, height));
-			image.setPage(currentPage);
-			images.add(image);
-		} else if (qName.equals("TextLine")) {
-			int length = atts.getLength();
+                            if (value.equals("svg")) {
+                                image.setType(GraphicObjectType.VECTOR);
+                            } else {
+                                image.setType(GraphicObjectType.BITMAP);
+                            }
+                            break;
+                    }
+                }
+            }
+            image.setBoundingBox(BoundingBox.fromPointAndDimensions(currentPage, x, y, width, height));
+            image.setPage(currentPage);
+            image.setStartPosition(tokenizations.size() - 1);
+            images.add(image);
+        } else if (qName.equals("TextLine")) {
+            int length = atts.getLength();
 
-			// Process each attribute
+            // Process each attribute
 			/*for (int i = 0; i < length; i++) {
 				// Get names and values for each attribute
 				String name = atts.getQName(i);
@@ -365,79 +372,79 @@ public class PDFALTOSaxHandler extends DefaultHandler {
 					}
 				}
 			}*/
-		} else if (qName.equals("String")) {
-			int length = atts.getLength();
-			String content = null, fontId = null;
+        } else if (qName.equals("String")) {
+            int length = atts.getLength();
+            String content = null, fontId = null;
             TextStyle textStyle = null;
 
-			// Process each attribute
-			for (int i = 0; i < length; i++) {
-				// Get names and values for each attribute
-				String name = atts.getQName(i);
-				String value = atts.getValue(i);
+            // Process each attribute
+            for (int i = 0; i < length; i++) {
+                // Get names and values for each attribute
+                String name = atts.getQName(i);
+                String value = atts.getValue(i);
 
-				if ((name != null) && (value != null)) {
-					if (name.equals("ID")) {
-						;
-					} else if (name.equals("CONTENT")) {
+                if ((name != null) && (value != null)) {
+                    if (name.equals("ID")) {
+                        ;
+                    } else if (name.equals("CONTENT")) {
                         content = value;
                     } else if (name.equals("STYLEREFS")) {
                         fontId = value;
-                    }else if (name.equals("rotation")) {
-						if (value.equals("0"))
-							currentRotation = false;
-						else
-							currentRotation = true;
-					} else if (name.equals("HPOS")) {
-						double x = 0.0;
-						try {
+                    } else if (name.equals("rotation")) {
+                        if (value.equals("0"))
+                            currentRotation = false;
+                        else
+                            currentRotation = true;
+                    } else if (name.equals("HPOS")) {
+                        double x = 0.0;
+                        try {
                             x = Double.parseDouble(value);
-                        } catch(NumberFormatException e) {
-                        	LOGGER.warn("Invalid HPOS value: " + value);
+                        } catch (NumberFormatException e) {
+                            LOGGER.warn("Invalid HPOS value: " + value);
                         }
-						if (x != currentX && x != 0.0) {
-							currentX = Math.abs(x);
-						}
-					} else if (name.equals("VPOS")) {
-						double y = 0.0;
-						try {
+                        if (x != currentX && x != 0.0) {
+                            currentX = Math.abs(x);
+                        }
+                    } else if (name.equals("VPOS")) {
+                        double y = 0.0;
+                        try {
                             y = Double.parseDouble(value);
-                        } catch(NumberFormatException e) {
-                        	LOGGER.warn("Invalid VPOS value: " + value);
+                        } catch (NumberFormatException e) {
+                            LOGGER.warn("Invalid VPOS value: " + value);
                         }
-						if (y != currentY && y != 0.0) {
-							currentY = Math.abs(y);
-						}
-					} else if (name.equals("base")) {
-						double base = 0.0;
-						try {
-							base = Double.parseDouble(value);
-						} catch(NumberFormatException e) {
-                        	LOGGER.warn("Invalid base value: " + value);
+                        if (y != currentY && y != 0.0) {
+                            currentY = Math.abs(y);
                         }
-					} else if (name.equals("WIDTH")) {
-						double width = 0.0;
-						try {
+                    } else if (name.equals("base")) {
+                        double base = 0.0;
+                        try {
+                            base = Double.parseDouble(value);
+                        } catch (NumberFormatException e) {
+                            LOGGER.warn("Invalid base value: " + value);
+                        }
+                    } else if (name.equals("WIDTH")) {
+                        double width = 0.0;
+                        try {
                             width = Double.parseDouble(value);
-                        } catch(NumberFormatException e) {
-                        	LOGGER.warn("Invalid WIDTH value: " + value);
+                        } catch (NumberFormatException e) {
+                            LOGGER.warn("Invalid WIDTH value: " + value);
                         }
-						if (width != currentWidth && width != 0.0) {
-							currentWidth = Math.abs(width);
-						}
-					} else if (name.equals("HEIGHT")) {
-						double height = 0.0;
-						try {
+                        if (width != currentWidth && width != 0.0) {
+                            currentWidth = Math.abs(width);
+                        }
+                    } else if (name.equals("HEIGHT")) {
+                        double height = 0.0;
+                        try {
                             height = Double.parseDouble(value);
-                        } catch(NumberFormatException e) {
-                        	LOGGER.warn("Invalid HEIGHT value: " + value);
+                        } catch (NumberFormatException e) {
+                            LOGGER.warn("Invalid HEIGHT value: " + value);
                         }
-						if (height != currentHeight && height != 0.0) {
-							currentHeight = Math.abs(height);
-						}
-					}
-				}
-			}
+                        if (height != currentHeight && height != 0.0) {
+                            currentHeight = Math.abs(height);
+                        }
+                    }
+                }
+            }
 
             // process ligatures
             String tok0 = TextUtilities.clean(trimAndNormaliseText(content));
@@ -454,8 +461,7 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                 try {
                     // TBD: pass a language object to the tokenize method call
                     subTokenizations = analyzer.tokenize(tok0);
-                }
-                catch(Exception e) {
+                } catch (Exception e) {
                     LOGGER.debug("Sub-tokenization of pdfalto token has failed.");
                 }
 
@@ -469,7 +475,7 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                     }
                     double prevSubWidth = 0;
 
-                    for(String tok : subTokenizations) {
+                    for (String tok : subTokenizations) {
 
                         // WARNING: ROUGH APPROXIMATION (but better than the same coords)
                         // Here to get the right subTokWidth should use the content length.
@@ -546,8 +552,8 @@ public class PDFALTOSaxHandler extends DefaultHandler {
 							if (block.getFontSize() == 0.0)
 								block.setFontSize(currentFontSize);*/
 
-                                previousToken = tok;
-                                previousTok = token;
+                            previousToken = tok;
+                            previousTok = token;
 
                             nbTokens++;
                         }
@@ -563,7 +569,7 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                 }
             }
             block.setEndToken(tokenizations.size());
-		} else if (qName.equals("TextStyle")) {
+        } else if (qName.equals("TextStyle")) {
             int length = atts.getLength();
 
             TextStyle textStyle = new TextStyle();
@@ -589,10 +595,10 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                         textStyle.setFontName(value);
                     } else if (name.equals("FONTSIZE")) {
                         double fontSize = 0.0;
-                    	try {
+                        try {
                             fontSize = Double.parseDouble(value);
-                        } catch(NumberFormatException e) {
-                        	LOGGER.warn("Invalid FONTSIZE value: " + value);
+                        } catch (NumberFormatException e) {
+                            LOGGER.warn("Invalid FONTSIZE value: " + value);
                         }
                         textStyle.setFontSize(fontSize);
                     } else if (name.equals("FONTSTYLE")) {
@@ -615,15 +621,14 @@ public class PDFALTOSaxHandler extends DefaultHandler {
 
                     } else if (name.equals("FONTCOLOR")) {
                         textStyle.setFontColor(value);
-                    }
-                    else if (name.equals("FONTTYPE")) {
-                    	// value can be empty or a sequence of font properties separated by space, out of these
+                    } else if (name.equals("FONTTYPE")) {
+                        // value can be empty or a sequence of font properties separated by space, out of these
                         /*if (value.equals("serif")) {
                             textStyle.setSerif(true);
                         } else {
                             textStyle.setSerif(false);
                         }*/
-                    } 
+                    }
 //                    else if (name.equals("FONTWIDTH")) {
 //                        if (value.equals("proportional")) {
 //                            textStyle.setProportional(true);
@@ -640,10 +645,10 @@ public class PDFALTOSaxHandler extends DefaultHandler {
 //                    }
                 }
             }
-            if(fontId != null)
+            if (fontId != null)
                 textStyles.put(fontId, textStyle);
         }
-	}
+    }
 
 }
 

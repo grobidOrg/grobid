@@ -78,7 +78,7 @@ public class GrobidPoolingFactory extends AbstractEngineFactory implements
 		} catch (Exception exp) {
 			throw new GrobidException("An error occurred while getting an engine from the engine pool", exp);
 		}
-		LOGGER.info("Number of Engines in pool active/max: "
+		LOGGER.debug("Number of Engines in pool active/max: "
 				+ grobidEnginePool.getNumActive() + "/"
 				+ grobidEnginePool.getMaxActive());
 		return engine;

@@ -65,11 +65,12 @@ U60:%x[-1,8]
 U61:%x[0,8]
 U62:%x[1,8]
 
-# Font info (9-10)
+# Font event info (9)
 U70:%x[-1,9]
 U71:%x[0,9]
 U72:%x[1,9]
 
+# font size information (10)
 U80:%x[-1,10]
 U81:%x[0,10]
 U82:%x[1,10]
@@ -142,12 +143,12 @@ UH2:%x[1,24]
 #UH1:%x[0,24]
 #UH2:%x[1,24]
 
-# punctuation profile (25)
+# number of punctuation charcaters in the line (25)
 UI0:%x[-1,25]
 UI1:%x[0,25]
 UI2:%x[1,25]
 
-# number of punctuation charcaters in the line (26)
+# punctuation profile (26)
 UI0:%x[-1,26]
 UI1:%x[0,26]
 UI2:%x[1,26]

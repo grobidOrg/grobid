@@ -1,26 +1,16 @@
 package org.grobid.core.visualization;
 
-import com.google.common.base.Predicate;
 import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
 import com.google.common.collect.Multimap;
 import net.sf.saxon.om.Item;
 import net.sf.saxon.om.SequenceIterator;
 import net.sf.saxon.trans.XPathException;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.grobid.core.document.Document;
-import org.grobid.core.document.DocumentSource;
-import org.grobid.core.engines.Engine;
-import org.grobid.core.engines.config.GrobidAnalysisConfig;
-import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.layout.Block;
 import org.grobid.core.layout.BoundingBox;
-import org.grobid.core.main.LibraryLoader;
-import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.XQueryProcessor;
 
-import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -28,6 +18,7 @@ import java.util.Collection;
 import java.util.List;
 
 import static org.grobid.core.layout.VectorGraphicBoxCalculator.mergeBoxes;
+
 
 /**
  * Visualizing blocks
@@ -46,7 +37,7 @@ public class BlockVisualizer {
         for (Block b : teiDoc.getBlocks()) {
             if (visualizeBlocks) {
                 AnnotationUtil.annotatePage(document, b.getPageNumber() + "," + b.getX() + "," + b.getY() +
-                        "," + b.getWidth() + "," + b.getHeight(), 0);
+                    "," + b.getWidth() + "," + b.getHeight(), 0);
                 blockMultimap.put(b.getPageNumber(), b);
             }
         }
