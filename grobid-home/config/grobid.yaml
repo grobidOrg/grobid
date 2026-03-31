@@ -39,6 +39,10 @@ grobid:
       # to use Crossref metadata plus service (available by subscription)
       #token: "yourmysteriouscrossrefmetadataplusauthorizationtokentobeputhere"
       timeoutSec: 60
+      # Minimum delay between consecutive CrossRef API requests (in milliseconds).
+      # Default: auto-computed from API tier (Plus=7ms/150req/s, Polite=100ms/10req/s, Public=200ms/5req/s).
+      # Set to a positive value to override the auto-computed rate limit.
+      #minRequestIntervalMs: 50
       # Timeout for CrossRef API calls (in seconds) - USE with CARE!
       # Whether to post-validate CrossRef results against the source metadata.
       # Glutton always skips post-validation (it handles validation internally).
