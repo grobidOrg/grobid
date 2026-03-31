@@ -907,10 +907,18 @@ Response status codes:
 | 400                   | Wrong request, missing or invalid model name, invalid architecture name, missing header |
 | 500                   | Indicate an internal service error, further described by a provided message             |
 
-You can test this service with the **cURL** command lines, for instance starting the training of the CRF date model and producing an evaluation based on an holdout set:
+You can test this service with the **cURL** command lines, for instance creating training data from a PDF document:
 ```bash
 curl --location 'http://localhost:8070/api/createTraining' \
---form 'input=@"PATH_DOCUMENT"'
+--form 'input=@"PATH_DOCUMENT"' \
+--output output_name.zip
+```
+
+With a specific flavor (see [dedicated page](Grobid-specialized-processes.md) for available flavor names):
+```bash
+curl --location 'http://localhost:8070/api/createTraining' \
+--form 'input=@"PATH_DOCUMENT"' \
+--form 'flavor=article/light-ref' \
 --output output_name.zip
 ```
 
