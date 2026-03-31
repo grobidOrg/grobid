@@ -43,7 +43,9 @@ public class CrossrefRequestTask<T extends Object> extends CrossrefRequestListen
 			client.disableToken();
 		} else if (!response.hasError()) {
 			client.resetBackoff();
-			client.updateLimits(response.limitIterations, response.interval);
+			// update rate limit from x-rate-limit-limit / x-rate-limit-interval headers
+			client.updateRateLimit(response.limitIterations, response.interval);
+			// update concurrency from x-concurrency-limit header
 			if (response.concurrencyLimit > 0) {
 				client.updateConcurrencyLimit(response.concurrencyLimit);
 			}

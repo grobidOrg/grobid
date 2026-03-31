@@ -765,12 +765,12 @@ public class GrobidProperties {
 
     /**
      * Get the minimum interval between consecutive CrossRef API request submissions (in milliseconds).
-     * Acts as a rate-limiting floor independent of concurrency.
-     * @return minimum interval in milliseconds
+     * Returns -1 (auto-compute from tier) by default. A positive value overrides the tier-based rate.
+     * @return minimum interval in milliseconds, or -1 for auto
      */
     public static long getCrossrefMinRequestInterval() {
         if (grobidConfig.grobid.consolidation.crossref == null) {
-            return 50;
+            return -1;
         }
         return grobidConfig.grobid.consolidation.crossref.minRequestIntervalMs;
     }

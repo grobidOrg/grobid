@@ -23,10 +23,15 @@ import java.util.concurrent.*;
  * Request pool to get data from api.crossref.org without exceeding limits
  * supporting multi-thread.
  *
- * Note: the provided interval for the query rate returned by CrossRef appeared to be not reliable,
- * so we have to use the rate limit (X-Rate-Limit-Interval) as a global parallel query limit, without
- * interval consideration.
- * See https://github.com/kermitt2/grobid/pull/725
+ * CrossRef enforces two types of limits depending on the API pool:
+ * - Rate limit (x-rate-limit-limit / x-rate-limit-interval): max requests per time interval
+ * - Concurrency limit (x-concurrency-limit): max simultaneous requests
+ *
+ * Plus tier: rate=150/sec, no concurrency limit
+ * Polite tier: rate=10/sec, concurrency=3
+ * Public tier: rate=5/sec, concurrency=1
+ *
+ * See https://www.crossref.org/documentation/retrieve-metadata/rest-api/access-and-authentication/
  *
  */
 public class CrossrefClient implements Closeable {
@@ -36,12 +41,22 @@ public class CrossrefClient implements Closeable {
 
 	protected volatile ExecutorService executorService;
 
+	// Concurrency limit: max simultaneous requests (from x-concurrency-limit header)
+	// Plus tier has no concurrency limit; Polite=3, Public=1
 	protected volatile int maxPoolSize = 1;
 	protected volatile int configuredPoolSize = 1;
 	protected static boolean limitAuto = true;
 
-	// Conservative initial concurrency for Plus tier — ramps up from x-concurrency-limit header
-	private static final int PLUS_TIER_INITIAL_CONSERVATIVE = 5;
+	// Default rate limits per tier (requests per second)
+	// See https://www.crossref.org/documentation/retrieve-metadata/rest-api/access-and-authentication/
+	private static final int PLUS_RATE_LIMIT = 150;
+	private static final int POLITE_RATE_LIMIT = 10;
+	private static final int PUBLIC_RATE_LIMIT = 5;
+
+	// Default concurrency limits per tier
+	private static final int PLUS_CONCURRENCY = 50;  // no official limit, practical cap
+	private static final int POLITE_CONCURRENCY = 3;
+	private static final int PUBLIC_CONCURRENCY = 1;
 
 	// exponential backoff with jitter for rate limiting (HTTP 429)
 	// Uses "full jitter" strategy: sleep = random(0, min(cap, base * 2^attempt))
@@ -50,8 +65,9 @@ public class CrossrefClient implements Closeable {
 	private static final long MAX_BACKOFF_MS = 60_000;
 
 	// Minimum delay between submitting consecutive requests (milliseconds).
-	// Acts as a rate-limiting floor independent of concurrency.
-	private volatile long minRequestIntervalMs = 50;
+	// Computed from rate limit: intervalMs / rateLimit.
+	// Can be overridden via grobid.yaml minRequestIntervalMs (>0 to override, <=0 for auto).
+	private volatile long minRequestIntervalMs = 200;  // Public default: 1000/5
 	private volatile long lastRequestTimeMs = 0;
 
 	// when true, the API token is not sent in request headers (disabled after validation failure or 401)
@@ -95,48 +111,82 @@ public class CrossrefClient implements Closeable {
         );
 		this.futures = new HashMap<>();
 
-		// read minimum inter-request delay from config
-		try {
-			this.minRequestIntervalMs = GrobidProperties.getCrossrefMinRequestInterval();
-		} catch (Exception e) {
-			// GrobidProperties may not be initialized yet
-		}
+		// set initial pool size and rate limit based on API tier
+		initializeTierLimits();
 
-		// set initial pool size based on API tier
-		int initialPoolSize = determineInitialPoolSize();
-		this.configuredPoolSize = initialPoolSize;
-		setLimits(initialPoolSize, 1000);
-
-		// validate Plus tier token at startup; on success, ramp up to server-indicated limit
-		if (initialPoolSize == PLUS_TIER_INITIAL_CONSERVATIVE) {
+		// validate Plus tier token at startup
+		if (hasToken()) {
 			validateApiToken();
 		}
 	}
 
-	/**
-	 * Determine initial pool size based on CrossRef API tier.
-	 * - Plus tier (has token): conservative initial, ramps up from x-concurrency-limit header
-	 * - Polite tier (has mailto): 3
-	 * - Public tier (neither): 1
-	 */
-	private static int determineInitialPoolSize() {
+	private boolean hasToken() {
 		try {
-			String token = GrobidProperties.getCrossrefToken();
-			if (token != null) {
-				LOGGER.info("CrossRef API tier: Plus (token set) - initial concurrency: " +
-					PLUS_TIER_INITIAL_CONSERVATIVE + " (will ramp up from response headers)");
-				return PLUS_TIER_INITIAL_CONSERVATIVE;
-			}
-			String mailto = GrobidProperties.getCrossrefMailto();
-			if (mailto != null) {
-				LOGGER.info("CrossRef API tier: Polite (mailto set) - initial concurrency: 3");
-				return 3;
-			}
-			LOGGER.info("CrossRef API tier: Public (no mailto, no token) - initial concurrency: 1");
-			return 1;
+			return GrobidProperties.getCrossrefToken() != null;
 		} catch (Exception e) {
-			// GrobidProperties may not be initialized yet
-			return 1;
+			return false;
+		}
+	}
+
+	/**
+	 * Initialize concurrency and rate limits based on CrossRef API tier.
+	 * Plus: rate=150/sec, no concurrency limit (practical cap at 50)
+	 * Polite: rate=10/sec, concurrency=3
+	 * Public: rate=5/sec, concurrency=1
+	 *
+	 * If the user has set minRequestIntervalMs > 0 in config, that overrides the tier-based rate.
+	 */
+	private void initializeTierLimits() {
+		int concurrency;
+		long rateIntervalMs;
+
+		try {
+			if (hasToken()) {
+				// Plus tier: start with Polite defaults until validation confirms Plus pool.
+				// validateApiToken() will upgrade if the token is valid.
+				concurrency = POLITE_CONCURRENCY;
+				rateIntervalMs = 1000 / POLITE_RATE_LIMIT;  // 100ms
+				LOGGER.info("CrossRef API tier: Plus (token set) - starting with Polite defaults " +
+					"(concurrency: " + concurrency + ", rate: " + POLITE_RATE_LIMIT + " req/sec) " +
+					"until token is validated");
+			} else {
+				String mailto = null;
+				try {
+					mailto = GrobidProperties.getCrossrefMailto();
+				} catch (Exception e) {
+					// ignore
+				}
+				if (mailto != null) {
+					concurrency = POLITE_CONCURRENCY;
+					rateIntervalMs = 1000 / POLITE_RATE_LIMIT;  // 100ms
+					LOGGER.info("CrossRef API tier: Polite (mailto set) - concurrency: " + concurrency +
+						", rate: " + POLITE_RATE_LIMIT + " req/sec");
+				} else {
+					concurrency = PUBLIC_CONCURRENCY;
+					rateIntervalMs = 1000 / PUBLIC_RATE_LIMIT;  // 200ms
+					LOGGER.info("CrossRef API tier: Public (no mailto, no token) - concurrency: " + concurrency +
+						", rate: " + PUBLIC_RATE_LIMIT + " req/sec");
+				}
+			}
+		} catch (Exception e) {
+			concurrency = PUBLIC_CONCURRENCY;
+			rateIntervalMs = 1000 / PUBLIC_RATE_LIMIT;
+		}
+
+		this.configuredPoolSize = concurrency;
+		this.setMaxPoolSize(concurrency);
+
+		// Allow config override for rate limit
+		try {
+			long configOverride = GrobidProperties.getCrossrefMinRequestInterval();
+			if (configOverride > 0) {
+				this.minRequestIntervalMs = configOverride;
+				LOGGER.info("CrossRef rate limit overridden by config: " + configOverride + "ms between requests");
+			} else {
+				this.minRequestIntervalMs = rateIntervalMs;
+			}
+		} catch (Exception e) {
+			this.minRequestIntervalMs = rateIntervalMs;
 		}
 	}
 
@@ -162,18 +212,26 @@ public class CrossrefClient implements Closeable {
 			} catch (Exception e) {
 				// ignore
 			}
-			int fallback = (mailto != null) ? 3 : 1;
-			String fallbackTier = (mailto != null) ? "polite" : "public";
-			this.configuredPoolSize = fallback;
-			this.setMaxPoolSize(fallback);
-			LOGGER.warn("CrossRef API token disabled. Falling back to " + fallbackTier + " concurrency: " + fallback);
+			if (mailto != null) {
+				this.configuredPoolSize = POLITE_CONCURRENCY;
+				this.setMaxPoolSize(POLITE_CONCURRENCY);
+				this.minRequestIntervalMs = 1000 / POLITE_RATE_LIMIT;
+				LOGGER.warn("CrossRef API token disabled. Falling back to polite tier " +
+					"(concurrency: " + POLITE_CONCURRENCY + ", rate: " + POLITE_RATE_LIMIT + " req/sec)");
+			} else {
+				this.configuredPoolSize = PUBLIC_CONCURRENCY;
+				this.setMaxPoolSize(PUBLIC_CONCURRENCY);
+				this.minRequestIntervalMs = 1000 / PUBLIC_RATE_LIMIT;
+				LOGGER.warn("CrossRef API token disabled. Falling back to public tier " +
+					"(concurrency: " + PUBLIC_CONCURRENCY + ", rate: " + PUBLIC_RATE_LIMIT + " req/sec)");
+			}
 		}
 	}
 
 	/**
 	 * Validate the CrossRef API token by making a lightweight request at startup.
-	 * If the token is invalid (not recognized as Plus tier), downgrade concurrency
-	 * to Polite (3) or Public (1) to avoid flooding CrossRef.
+	 * On success: upgrade to Plus tier limits (rate=150/sec, no concurrency cap).
+	 * On failure: stay at Polite defaults until response headers confirm actual tier.
 	 */
 	private void validateApiToken() {
 		int validationTimeout = 5000; // 5 seconds
@@ -209,24 +267,8 @@ public class CrossrefClient implements Closeable {
 				Header apiPoolHeader = response.getFirstHeader("x-api-pool");
 				String apiPool = (apiPoolHeader != null) ? apiPoolHeader.getValue().trim() : null;
 
-				Header concurrencyHeader = response.getFirstHeader("x-concurrency-limit");
-				int concurrencyLimit = -1;
-				if (concurrencyHeader != null) {
-					try {
-						concurrencyLimit = Integer.parseInt(concurrencyHeader.getValue().trim());
-					} catch (NumberFormatException e) {
-						// ignore
-					}
-				}
-
 				if ("plus".equalsIgnoreCase(apiPool)) {
-					if (concurrencyLimit > 0) {
-						this.configuredPoolSize = concurrencyLimit;
-						this.setMaxPoolSize(concurrencyLimit);
-						LOGGER.info("CrossRef API token validated. Pool: plus, concurrency limit: " + concurrencyLimit);
-					} else {
-						LOGGER.info("CrossRef API token validated. Pool: plus");
-					}
+					applyPlusLimitsFromHeaders(response);
 				} else {
 					LOGGER.warn("CrossRef API token not recognized as Plus tier (pool: " + apiPool + ").");
 					disableToken();
@@ -237,31 +279,95 @@ public class CrossrefClient implements Closeable {
 			}
 		} catch (Exception e) {
 			LOGGER.warn("Could not validate CrossRef API token (service unreachable: " +
-				e.getMessage() + "). Starting conservatively at " + PLUS_TIER_INITIAL_CONSERVATIVE +
-				" concurrent requests (will ramp up from response headers).");
+				e.getMessage() + "). Using Polite defaults until response headers confirm tier.");
 		}
+	}
+
+	/**
+	 * Apply Plus tier limits from validation response headers.
+	 * Uses x-rate-limit-limit/interval for rate, x-concurrency-limit for concurrency (if present).
+	 */
+	private void applyPlusLimitsFromHeaders(HttpResponse response) {
+		// Rate limit from headers
+		Header rateLimitHeader = response.getFirstHeader("x-rate-limit-limit");
+		Header rateIntervalHeader = response.getFirstHeader("x-rate-limit-interval");
+		int rateLimit = PLUS_RATE_LIMIT;
+		int rateIntervalMs = 1000;
+
+		if (rateLimitHeader != null && rateIntervalHeader != null) {
+			try {
+				rateLimit = Integer.parseInt(rateLimitHeader.getValue().trim());
+				rateIntervalMs = (int) org.joda.time.Duration.parse(
+					"PT" + rateIntervalHeader.getValue().trim().toUpperCase()).getMillis();
+			} catch (Exception e) {
+				LOGGER.debug("Could not parse rate limit headers, using Plus defaults");
+			}
+		}
+
+		// Only apply auto-computed rate if config doesn't override
+		long configOverride = -1;
+		try {
+			configOverride = GrobidProperties.getCrossrefMinRequestInterval();
+		} catch (Exception e) {
+			// ignore
+		}
+		if (configOverride <= 0) {
+			this.minRequestIntervalMs = rateIntervalMs / rateLimit;
+		}
+
+		// Concurrency from header (Plus has no official limit, use header or practical cap)
+		Header concurrencyHeader = response.getFirstHeader("x-concurrency-limit");
+		int concurrency = PLUS_CONCURRENCY;
+		if (concurrencyHeader != null) {
+			try {
+				concurrency = Integer.parseInt(concurrencyHeader.getValue().trim());
+			} catch (NumberFormatException e) {
+				// ignore
+			}
+		}
+		this.configuredPoolSize = concurrency;
+		this.setMaxPoolSize(concurrency);
+
+		LOGGER.info("CrossRef API token validated. Pool: plus, rate: " + rateLimit +
+			" req/" + rateIntervalMs + "ms (interval: " + this.minRequestIntervalMs +
+			"ms), concurrency: " + concurrency);
 	}
 
 	public static void printLog(CrossrefRequest<?> request, String message) {
 		LOGGER.debug((request != null ? request+": " : "")+message);
 	}
 
-	public void setLimits(int iterations, int interval) {
-		this.setMaxPoolSize(iterations);
-		// interval is not usable anymore, we need to wait termination of threads independently from any time interval
-	}
-
-	public void updateLimits(int iterations, int interval) {
-		if (this.limitAuto) {
-			this.setLimits(iterations, interval);
-			// note: interval not used anymore
+	/**
+	 * Update rate limit from x-rate-limit-limit and x-rate-limit-interval response headers.
+	 * Computes minRequestIntervalMs = intervalMs / rateLimit.
+	 * Ignored during active backoff.
+	 *
+	 * @param rateLimit the x-rate-limit-limit value (requests per interval)
+	 * @param intervalMs the x-rate-limit-interval value in milliseconds
+	 */
+	public void updateRateLimit(int rateLimit, int intervalMs) {
+		if (rateLimit > 0 && intervalMs > 0 && this.limitAuto && backoffAttempt == 0) {
+			// Only update if config doesn't override
+			long configOverride = -1;
+			try {
+				configOverride = GrobidProperties.getCrossrefMinRequestInterval();
+			} catch (Exception e) {
+				// ignore
+			}
+			if (configOverride <= 0) {
+				long newInterval = intervalMs / rateLimit;
+				if (newInterval != this.minRequestIntervalMs) {
+					this.minRequestIntervalMs = newInterval;
+					LOGGER.info("Updated rate limit from response headers: " + rateLimit +
+						" req/" + intervalMs + "ms (interval: " + newInterval + "ms)");
+				}
+			}
 		}
 	}
 
 	/**
-	 * Update concurrency limit from response header.
-	 * Ignored during active backoff — we don't trust limits from responses
-	 * that may themselves be rate-limited edge cases.
+	 * Update concurrency limit from x-concurrency-limit response header.
+	 * Ignored during active backoff.
 	 */
 	public void updateConcurrencyLimit(int concurrencyLimit) {
 		if (concurrencyLimit > 0 && this.limitAuto && backoffAttempt == 0) {
