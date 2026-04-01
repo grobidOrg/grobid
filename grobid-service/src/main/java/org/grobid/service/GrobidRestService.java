@@ -1055,4 +1055,20 @@ public class GrobidRestService implements GrobidPaths {
                 validatedModelFlavor);
     }
 
+    @Path(PATH_CREATE_TRAINING_BLANK)
+    @Consumes(MediaType.MULTIPART_FORM_DATA)
+    @Produces("application/zip")
+    @POST
+    public Response createTrainingBlank_post(
+        @FormDataParam(INPUT) InputStream inputStream,
+        @FormDataParam(INPUT) FormDataBodyPart inputBodyPart,
+        @FormDataParam(FLAVOR) String flavor
+    ) {
+        GrobidModels.Flavor validatedModelFlavor = validateModelFlavor(flavor);
+        String fileName = inputBodyPart.getFormDataContentDisposition().getFileName();
+        return restProcessTraining.createTrainingBlank(
+            inputStream, fileName, validatedModelFlavor
+        );
+    }
+
 }

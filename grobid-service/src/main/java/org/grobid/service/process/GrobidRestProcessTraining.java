@@ -733,11 +733,105 @@ public class GrobidRestProcessTraining {
 
         return response;
     }
-    //        GrobidMainArgs pGbdArgs = new GrobidMainArgs();
-    //        pGbdArgs.setPath2Input(inputPath);
-    //
-    //        try(ProcessEngine processEngine = new ProcessEngine()) {
-    //            processEngine.createTraining(pGbdArgs);
-    //        }
-    //    }
+    public Response createTrainingBlank(final InputStream inputStream, final String filename, final GrobidModels.Flavor flavor) {
+        Response response = null;
+        File originFile = null;
+        Engine engine = null;
+        String outputPath = null;
+        try {
+            engine = Engine.getEngine(true);
+            if (engine == null) {
+                throw new GrobidServiceException(
+                        "No GROBID engine available", Status.SERVICE_UNAVAILABLE);
+            }
+
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            DigestInputStream dis = new DigestInputStream(inputStream, md);
+
+            originFile = IOUtilities.writeInputFile(dis);
+            if (originFile == null) {
+                LOGGER.error("The input file cannot be written.");
+                throw new GrobidServiceException(
+                        "The input file cannot be written.", Status.INTERNAL_SERVER_ERROR);
+            }
+
+            outputPath = GrobidProperties.getTempPath().getPath() + File.separator + KeyGen.getKey();
+            Files.createDirectories(Path.of(outputPath));
+            engine.createTrainingBlank(originFile, outputPath, outputPath, -1, flavor);
+
+            // Rename all the generated output files with the original filename as suffix
+            File[] outputFileList = new File(outputPath).listFiles();
+            if (ArrayUtils.isNotEmpty(outputFileList)) {
+                String[] split = outputFileList[0].getName().split(".training");
+                String trainingDataBaseName = split[0];
+                String inputFileBaseName = FilenameUtils.getBaseName(filename);
+                for (File file : outputFileList) {
+                    if (file.isFile() && file.getName().startsWith(trainingDataBaseName)) {
+                        String newFileName = file.getName().replace(trainingDataBaseName, inputFileBaseName);
+                        File newFile = new File(outputPath, newFileName);
+                        Files.move(file.toPath(), newFile.toPath());
+                    }
+                }
+            } else {
+                LOGGER.warn("No training files generated.");
+            }
+
+            ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+            ZipOutputStream out = new ZipOutputStream(outputStream);
+
+            File outputPathDir = new File(outputPath);
+            if (outputPathDir.exists()) {
+                File[] files = outputPathDir.listFiles();
+                if (files != null) {
+                    byte[] buffer = new byte[1024];
+                    for (final File currFile : files) {
+                        try {
+                            ZipEntry ze = new ZipEntry(currFile.getName());
+                            out.putNextEntry(ze);
+                            FileInputStream in = new FileInputStream(currFile);
+                            int len;
+                            while ((len = in.read(buffer)) > 0) {
+                                out.write(buffer, 0, len);
+                            }
+                            in.close();
+                            out.closeEntry();
+                        } catch (IOException e) {
+                            throw new GrobidServiceException("IO Exception when zipping", e, Status.INTERNAL_SERVER_ERROR);
+                        }
+                    }
+                }
+            }
+            out.finish();
+
+            String outputFilename = StringUtils.replaceIgnoreCase(filename, "pdf", "zip");
+
+            response = Response
+                    .ok()
+                    .type("application/zip")
+                    .entity(outputStream.toByteArray())
+                    .header("Content-Disposition", "attachment; filename=\"" + outputFilename + "\"")
+                    .build();
+            out.close();
+
+        } catch (NoSuchElementException nseExp) {
+            LOGGER.error("Could not get an engine from the pool within configured time. Sending service unavailable.");
+            response = Response.status(Status.SERVICE_UNAVAILABLE).build();
+        } catch (Exception exp) {
+            LOGGER.error("An unexpected exception occurs. ", exp);
+            response = Response.status(Status.INTERNAL_SERVER_ERROR).entity(exp.getMessage()).build();
+        } finally {
+            if (originFile != null)
+                IOUtilities.removeTempFile(originFile);
+
+            if (outputPath != null) {
+                IOUtilities.removeTempDirectory(outputPath);
+            }
+
+            if (engine != null) {
+                GrobidPoolingFactory.returnEngine(engine);
+            }
+        }
+
+        return response;
+    }
 }

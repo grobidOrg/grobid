@@ -189,4 +189,6 @@ public interface GrobidPaths {
     String PATH_KILL_TRAINING = "killTraining";
 
     String PATH_CREATE_TRAINING = "createTraining";
+
+    String PATH_CREATE_TRAINING_BLANK = "createTrainingBlank";
 }
