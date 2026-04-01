@@ -1457,8 +1457,7 @@ public class FullTextParser extends AbstractParser {
             }
             doc.produceStatistics();
 
-            String fulltext = //getAllTextFeatured(doc, false);
-                parsers.getSegmentationParser(flavor).getAllLinesFeatured(doc);
+            String fulltext = parsers.getSegmentationParser(flavor).getAllFeatured(doc);
             //List<LayoutToken> tokenizations = doc.getTokenizationsFulltext();
             List<LayoutToken> tokenizations = doc.getTokenizations();
 

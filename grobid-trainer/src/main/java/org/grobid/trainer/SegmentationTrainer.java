@@ -31,6 +31,7 @@ import org.grobid.core.utilities.UnicodeUtil;
 import org.grobid.trainer.sax.TEISegmentationArticleLightRefSaxParser;
 import org.grobid.trainer.sax.TEISegmentationArticleLightSaxParser;
 import org.grobid.trainer.sax.TEISegmentationSaxParser;
+import org.grobid.trainer.sax.TEISegmentationTokenLevelSaxParser;
 
 public class SegmentationTrainer extends AbstractTrainer {
 
@@ -44,6 +45,21 @@ public class SegmentationTrainer extends AbstractTrainer {
     public SegmentationTrainer(GrobidModels.Flavor modelFlavor) {
         super(GrobidModels.getModelFlavor(GrobidModels.SEGMENTATION, modelFlavor));
         flavor = modelFlavor;
+    }
+
+    @Override
+    protected File getCorpusPath() {
+        if (flavor != null) {
+            // Use the flavor's folder path directly for the corpus, because getModelFlavor
+            // may have fallen back to the base model (when no trained model file exists yet),
+            // which would resolve to the wrong corpus directory.
+            String flavorFolder = "segmentation/" + flavor.getLabel();
+            File theFile = new File(getFilePath2Resources(), "dataset/" + flavorFolder + "/corpus");
+            if (theFile.exists()) {
+                return theFile;
+            }
+        }
+        return super.getCorpusPath();
     }
 
     @Override
@@ -142,6 +158,8 @@ public class SegmentationTrainer extends AbstractTrainer {
                     parser = new TEISegmentationArticleLightSaxParser();
                 } else if (flavor == Flavor.ARTICLE_LIGHT_WITH_REFERENCES) {
                     parser = new TEISegmentationArticleLightRefSaxParser();
+                } else if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN) {
+                    parser = new TEISegmentationTokenLevelSaxParser();
                 } else {
                     parser = new TEISegmentationSaxParser();
                 }
