@@ -1,0 +1,262 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc xml:id="_10.25364__01.11_x3A_2024.1.5">
+      <titleStmt>
+        <title level="a">KlimaSeniorinnen: Changing Legal Opportunity Structures in the Face of the Climate Crisis</title>
+        <author>
+          <persName>
+            <forename>Teresa</forename>
+            <surname>Weber</surname>
+          </persName>
+        </author>
+        <respStmt>
+          <persName xml:id="schulze">Judith Schulze</persName>
+          <resp>Annotator</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="li">Mengjiao Li</persName>
+          <resp>Annotator</resp>
+        </respStmt>
+        <respStmt>
+          <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+          <resp>Annotator</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Universitätsbibliothek Graz</publisher>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+        </availability>
+        <date type="publication">None</date>
+        <idno type="DOI">10.25364/01.11:2024.1.5</idno>
+        <ptr target="https://unipub.uni-graz.at/doi/10.25364/01.11:2024.1.5"/>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>. (None). None. DOI: 10.25364/01.11_2024.1.5</bibl>
+        <biblStruct>
+          <analytic>
+            <title level="a">KlimaSeniorinnen: Changing Legal Opportunity Structures in the Face of the Climate Crisis</title>
+            <author>
+              <persName>
+                <forename>Teresa</forename>
+                <surname>Weber</surname>
+              </persName>
+            </author>
+            <idno type="DOI">10.25364/01.11:2024.1.5</idno>
+          </analytic>
+          <monogr>
+            <title level="j">Austrian Law Journal</title>
+            <imprint>
+              <date when="2024">2024</date>
+              <publisher>Universitätsbibliothek Graz</publisher>
+            </imprint>
+          </monogr>
+          <ptr target="https://unipub.uni-graz.at/doi/10.25364/01.11:2024.1.5"/>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application version="1.0" ident="pdf-tei-editor" type="editor">
+          <label>PDF-TEI Editor</label>
+          <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+        </application>
+        <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T13:42:50.733769Z" type="extractor">
+          <label>GROBID</label>
+          <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+          <label type="revision">7272991</label>
+          <label type="flavor">article/dh-law-footnotes</label>
+          <ref target="https://github.com/grobidOrg/grobid"/>
+          <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-02-16T13:42:50.733769Z" status="extraction">
+        <note type="label">review</note>
+        <desc>Extraction</desc>
+      </change>
+      <change when="2026-02-17T21:16:55.135Z" status="unfinished" who="#schulze">
+        <desc>Started first pass</desc>
+      </change>
+      <change when="2026-02-20T19:24:14.706Z" status="draft" who="#schulze">
+        <desc>1 pass</desc>
+      </change>
+      <change when="2026-02-23T09:25:32.707Z" status="unfinished" who="#schulze">
+        <desc>Corrections</desc>
+      </change>
+      <change when="2026-02-23T11:05:45.472Z" status="draft" who="#schulze">
+        <desc>1 pass done</desc>
+      </change>
+      <change when="2026-02-24T14:15:19.700Z" status="unfinished" who="#li">
+        <desc>1. Pass started</desc>
+      </change>
+      <change when="2026-02-24T15:43:37.945Z" status="checked" who="#li">
+        <desc>2.Pass</desc>
+      </change>
+      <change when="2026-03-06T10:06:12.476Z" status="approved" who="#kazuyo">
+        <desc>Corrections</desc>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> ECtHR 09.04.2024, Verein KlimaSeniorinnen Schweiz / Switzerland, application no 53600/20 (references to<lb/> paragraphs without other specifications refer to this decision).</bibl> 
+          <bibl>The ECtHR issued its decisions on two other<lb/> climate cases on the same day: ECtHR 09.04.2024, Duarte Agostinho and Others / Portugal and 32 others,<lb/> application no 39371/20 ("case of the Portugese children", declared inadmissible due to lack of jurisdiction and<lb/> lack of exhaustion of remedies relating to Portugal)</bibl> <bibl>and ECtHR 09.04.2024, Carême / France, application no<lb/> 7189/21 ("case of the French Mayor", declared inadmissible due to lack of victim status). These decisions are not<lb/> discussed here.</bibl> 
+          <bibl>For a comparative discussion see Pedersen, Climate Change and the ECHR: The Results Are In,<lb/> EJIL:Talk!, 11.04.2024, https://www.ejiltalk.org/climate-change-and-the-echr-the-results-are-in/. This and all<lb/> other weblinks were accessed on 31.07.2024.<lb/> </bibl>
+        <bibl><label>2</label> To name only a few examples: Bähr/Brunner/Casper/Lustig, KlimaSeniorinnen: lessons from the Swiss senior<lb/> women's case for future climate litigation, Journal of Human Rights and the Environment, 9:2 (2018) 194 ff; </bibl>
+          <bibl> Niska,<lb/> Climate Change Litigation and the European Court of Human Rights -A Strategic Next Step?, Journal of World<lb/> Energy Law and Business 13 (2020) 331 ff; </bibl>
+          <bibl>Keller/Bornemann, New Climate Activism between Politics and Law:<lb/> Analyzing the Strategy of the KlimaSeniorinnen Schweiz, Politics and Governance 9:2 (2021) 124 ff.<lb/> </bibl>
+        <bibl><label>3</label> Cf Schmid, Victim Status before the ECtHR in Cases of Alleged Omissions: The Swiss Climate Case, EJIL:Talk!,<lb/> 30.04.2022, https://www.ejiltalk.org/victim-status-before-the-ecthr-in-cases-of-alleged-omissions-the-swiss-<lb/>climate-case/.; </bibl>
+          <bibl>Arling/Taghavi, KlimaSeniorinnen v. Switzerland -A New Era for Climate Change Protection or<lb/> Proceeding with the Status Quo?, EJIL:Talk!, 06.04.2023, https://www.ejiltalk.org/klimaseniorinnen-v-<lb/>switzerland-a-new-era-for-climate-change-protection-or-proceeding-with-the-status-quo/; </bibl>
+<bibl>Grosz, Klimaschutz<lb/> vor Schweizer Gerichten, Swiss Review of International and European Law 33 (2023) 351 ff.<lb/> </bibl>
+        <bibl><label>4</label> For Austria: Somek, Grundrecht kraft Mitlaufens mit dem Zeitgeist, Die Presse, 15.04.2024; </bibl>
+          <bibl>Pflügl, Heimische<lb/> Nachbeben des Klimaurteils, Der Standard 2024, 11.04.2024; </bibl>
+          <bibl>Kary, Klimaklagen: Muss jetzt auch Österreich<lb/> zittern?, Die Presse, 06.06.2024; </bibl>
+          <bibl>Ennöckl, Ein kleiner Klimaprotest mit großer Wirkung, Die Presse, 27.05.2024.<lb/> </bibl>
+        <bibl><label>5</label><lb/> Arntz/Krommendijk,<lb/> Historic<lb/> and<lb/> Unprecedented,<lb/> Verfassungsblog,<lb/> 09.04.2024,<lb/> https://verfassungsblog.de/historic-and-unprecedented/ and the other contributions (currently -31.07.2024 -<lb/>17 contributions) under the Verfassungsblog debate "The Transformation of European Climate Litigation", all<lb/> available<lb/> under<lb/> https://verfassungsblog.de/category/debates/the-transformation-of-european-climate-<lb/>litigation/; </bibl>
+          <bibl>Auner, Recht auf effektive Maßnahmen zur Eindämmung des Klimawandels<lb/> (Entscheidungsanmerkung), Newsletter Menschenrechte (2024) 123 ff; </bibl>
+          <bibl>Bella, Klimaklagen: EGMR stimmt<lb/> Völkerrechtsblog<lb/> zu,<lb/> Völkerrechtsblog,<lb/> 06.05.2024,<lb/> https://voelkerrechtsblog.org/klimaklagen/; </bibl>
+<bibl>Ennöckl/Handig/Polzer/Rathmayer/Vouk, Klimaseniorinnen erkämpfen Recht auf Klimaschutz vor dem EGMR,<lb/> Österreichische Jurist:innenzeitung 2024, 10 ff; </bibl>
+          <bibl>Hollaus, Das Urteil des EGMR im Fall KlimaSeniorinnen und seine<lb/> Implikationen für den europäischen Grundrechtsschutz, Juristische Blätter (2024) 485 ff; </bibl>
+          <bibl>Hofer, Klimaschutz als<lb/> Grundrecht: EGMR erkennt positive Klimaschutzpflichten der Vertragsstaaten an, Recht der Umwelt (2024) 136<lb/> ff; ); </bibl>
+<bibl>Eschenhagen, Anmerkung zum EGMR-Urteil "Verein KlimaSeniorinnen Schweiz and Others v. Switzerland",<lb/> Klimarecht 2024, 147 ff; </bibl>
+          <bibl>Fremuth, Klimawandel vor dem EGMR und die Grenzen der Menschenrechtskonvention<lb/> Zugleich Besprechung von EGMR Urt. v. 9.4.2024, Europäische Zeitschrift für Wirtschaftsrecht (2024) 697 ff; </bibl>  
+<bibl>Payandeh, Völkerrecht: Konventionsrechtliche Implikationen des Klimawandels -Beschwerdebefugnis von<lb/> Umweltverbänden und Umfang und Inhalt der staatlichen Schutzpflicht, Juristische Schulung (2024) 896 ff.<lb/> </bibl>
+          <bibl><label>6</label> For a broader perspective on human rights and climate litigation cf Varvastian, The Advent of International<lb/> Human Rights Law in Climate Change Litigation, Wisconsin International Law Journal 38:2 (2021) 369 ff;<lb/> </bibl>
+<bibl>Vanhala/Hilson, Climate Change Litigation: Symposium Introduction, Law &amp; Policy 35:3 (2012) 141 ff. For the<lb/> Austrian Perspective Ennöckl, Klimaklagen -Strukturen gerichtler Kontrolle im Klimaschutzrecht (Teil II), Recht<lb/> der Umwelt (2022) 184 ff; </bibl>
+          <bibl>Fitz, Klimaklagen in Ennöckl (Hg) Handbuch Klimaschutzrecht (2023) 517 ff (534 ff); <lb/> </bibl>
+<bibl>combining Austrian and Swiss experiences: Prantl, Unsichere Zeiten für Klimaklagen? Perspektiven aus<lb/> Österreich und der Schweiz, Nachhaltigkeitsrecht (2023) 451 ff.<lb/> </bibl>
+          <bibl><label>7</label> Para 1.<lb/> </bibl>
+        <bibl><label>8</label> Cf para 12 ff.<lb/> </bibl>
+<bibl><label>9</label> Para 1.<lb/> </bibl>
+        <bibl><label>10</label> Cf para 22 ff. For a summary and analysis cf Niska, Climate Change Litigation and the European Court of Human<lb/> Rights -A Strategic Next Step?, Journal of World Energy Law and Business 13 (2020) 331 (337 f).<lb/> </bibl>
+          <bibl><label> 11</label> Para 4.<lb/> </bibl>
+        <bibl><label>12</label> Para 5. ECtHR 09.04.2024, Duarte Agostinho and Others / Portugal and 32 others, application no 39371/20;<lb/> </bibl>
+          <bibl> ECtHR 09.04.2024, Carême / France, application no 7189/21.<lb/> </bibl>
+        <bibl><label>13</label> Para 6 ff. This includes eight intervening Governments and more than 15 other third party interveners, such as<lb/> the UN High Commissioner for Human Rights, the International Commission of Jurists, the Sabin Center for<lb/> Climate Change Law, Greenpeace Germany and Oxfam.<lb/> </bibl>
+          <bibl><label>14</label> Para 8 f.<lb/> </bibl>
+          <bibl><label>15</label> Para 296 to 576.<lb/> </bibl>
+        <bibl><label>16</label> Para 410 ff and para 423 ff respectively.<lb/> </bibl>
+        <bibl><label>17</label> Para 410.<lb/> </bibl>
+          <bibl><label> 18</label> Para 412; </bibl>
+          <bibl>see also para 449 f.<lb/> </bibl> 
+          
+        <bibl><label>19</label> Para 416 ff.</bibl> 
+          <bibl>See also the considerations on causation and proof at para 424 ff and the discussion of the issue<lb/> of the proportion of State responsibility at para 441 ff.<lb/> </bibl>
+       <bibl><label>20</label> Para 419.<lb/> </bibl>
+          <bibl><label>21</label> Para 420.<lb/> </bibl>
+          <bibl><label>22</label> Para 422.<lb/> </bibl>
+          <bibl><label>23</label> Para 431 ff.<lb/> </bibl>
+          <bibl><label>24</label> Para 436.<lb/> </bibl>
+
+      <!-- footnote 25 is missing -->
+          
+          <bibl><label>26</label> Para 452 ff.<lb/> </bibl>   
+        <bibl><label>27</label> Para 455, citing ECtHR 11.05.2021, Caamaño Valle / Spain, application no 43563/17, para 53 f.<lb/> </bibl>
+          <bibl><label>28</label> Para 458 ff.<lb/> </bibl>
+        <bibl><label>29</label> Para 461 and 482.</bibl> 
+          <bibl>Here, the Court cites ECtHR 27.04.2004, Gorraiz Lizarraga / Spain, application no 62543/00,<lb/> para 38: "Admittedly, the applicants were not parties to the impugned proceedings in their own name, but<lb/> through the intermediary of the association which they had set up with a view to defending their interests.<lb/> However, like the other provisions of the Convention, the term "victim" in Article 34 must also be interpreted in<lb/> an evolutive manner in the light of conditions in contemporary society. And indeed, in modern-day societies,<lb/> when citizens are confronted with particularly complex administrative decisions, recourse to collective bodies<lb/> such as associations is one of the accessible means, sometimes the only means, available to them whereby they<lb/> can defend their particular interests effectively. Moreover, the standing of associations to bring legal proceedings<lb/> in defence of their members' interests is recognised by the legislation of most European countries. That is<lb/> precisely the situation that obtained in the present case. The Court cannot disregard that fact when interpreting<lb/> the concept of "victim". Any other, excessively formalistic, interpretation of that concept would make protection<lb/> of the rights guaranteed by the Convention ineffectual and illusory."</bibl> 
+          <bibl>The Court also references ECtHR 07.12.2021,<lb/> Yusufeli İlçesini Güzelleştirme Yaşatma Kültür Varlıklarını Koruma Derneği / Turkey, application no 37857/14,<lb/> para 39.<lb/> </bibl>
+          <bibl><label>30</label> Para 463, 465 ff.<lb/> </bibl>
+          <bibl><label>31</label> Para 464 (citing ECtHR 17.07.2014, Centre for Legal Resources on behalf of Valentin Câmpeanu / Romania,<lb/> application no 47848/08, para 102 f) and</bibl> 
+          <bibl>para 477.<lb/> </bibl>
+          <bibl><label>32</label> Para 484 f.<lb/> </bibl>
+        <bibl><label>33</label> Para 486 ff.</bibl> 
+          <bibl>As for the relationship of these new criteria to the relatively established criteria to test whether<lb/> Article 8 is applicable in environmental cases (actual interference or serious risk) see para 520.<lb/> </bibl>
+          <bibl><label>34</label> Para 533, 536.<lb/> </bibl>
+          <bibl><label> 35</label> Para 489 ff.<lb/> </bibl>
+        <bibl><label>36</label> Confirmed also in para 497 f, with specific focus on climate change litigation.<lb/> </bibl>
+          <bibl><label>37</label> Para 490 ff.<lb/> </bibl>
+          <bibl><label> 38</label> Para 499.<lb/> </bibl>
+        <bibl><label>39</label> Para 502,</bibl> 
+          <bibl>but see 503: "In the event of existing limitations regarding the standing before the domestic courts<lb/> of associations meeting the above Convention requirements, the Court may also, in the interests of the proper<lb/> administration of justice, take into account whether, and to what extent, its individual members or other affected<lb/> individuals may have enjoyed access to a court in the same or related domestic proceedings."<lb/> </bibl>
+          <bibl><label>40</label> Para 501.<lb/> </bibl>
+        <bibl><label>41</label> Para 502.<lb/> </bibl>
+          <bibl><label>42</label>  Para 513.<lb/> </bibl>
+          <bibl><label>43</label> Para 533, 536.<lb/> </bibl>
+          <bibl><label>44</label> Para 536.<lb/> </bibl>
+          <bibl><label>45</label> Para 519.<lb/> </bibl>
+          <bibl><label>46</label> Para 521 ff.<lb/> </bibl>
+          <bibl><label>47</label> Para 527 ff.<lb/> </bibl>
+          <bibl><label>48</label> Para 538.<lb/> </bibl>
+          <bibl><label>49</label> Para 539 ff.<lb/> </bibl>
+          <bibl><label>50</label> Para 542.<lb/> </bibl>
+          <bibl><label>51</label> Para 548.<lb/> </bibl>
+          <bibl><label>52</label> Para 550.<lb/> </bibl>
+          <bibl><label>53</label> Para 572 ff.<lb/> </bibl>
+          <bibl><label>54</label> Para 594 ff.<lb/> </bibl>
+          <bibl><label>55</label> Para 608 ff.<lb/> </bibl>
+        <bibl><label>56</label> Para 613 f, 622.<lb/> </bibl>
+          <bibl><label> 57</label> Para 617.<lb/> </bibl>
+        <bibl><label>58</label> Para 616.</bibl> 
+          <bibl>The parts of the application that concern policy decisions subject to the relevant democratic<lb/> processes do not fall under Article 6 ECHR; </bibl>
+          <bibl>ibid.<lb/> </bibl>
+          <bibl><label> 59</label> Para 623 ff.<lb/> </bibl>
+          <bibl><label> 60</label> Para 640.<lb/> </bibl>
+          <bibl><label>61</label> Cf para 22 ff.<lb/> </bibl>
+        <bibl><label>62</label> Hoge Raad (Supreme Court of the Netherlands) 20.12.2019, 19/00135, ECLI:NL:HR:2019:2007 (Urgenda).</bibl> 
+          <bibl>For<lb/> an analysis of the judgement see for instance Pedersen, The networks of human rights and climate change: The<lb/> State of the Netherlands v Stichting Urgenda, Supreme Court of the Netherlands, 20 December 2019 (19/00135),<lb/> Environmental Law Review 22:3 (2020) 227 ff.<lb/> </bibl>
+          <bibl><label>63</label> Bähr/Brunner/Casper/Lustig, KlimaSeniorinnen: lessons from the Swiss senior women's case for future climate<lb/> litigation, Journal of Human Rights and the Environment, 9:2 (2018) 194 (201)</bibl> 
+          <bibl>For a comparison of Urgenda and<lb/> KlimaSeniorinnen within the relevant context for instance Schupisser, Judging Climate Change: A Comparative<lb/> Legal and Political Analysis of the KlimaSeniorinnen Schweiz and the Urgenda Cases, Global Europe -Basel Papers<lb/> on Europe in a Global Perspective 124 (2023) 43 ff.<lb/> </bibl>
+        <bibl><label>64</label> The ECtHR applies a priority policy, cf https://www.echr.coe.int/documents/d/echr/priority_policy_ENG .<lb/> </bibl>
+          <bibl><label> 65</label> Cf para 10.<lb/> </bibl>
+        <bibl><label>66</label> Bähr/Brunner/Casper/Lustig, KlimaSeniorinnen: lessons from the Swiss senior women's case for future climate<lb/> litigation, Journal of Human Rights and the Environment, 9:2 (2018) 194 (202).<lb/> </bibl>
+        <bibl><label>67</label> For the concept of legal mobilization: Zeman, Legal mobilization: The neglected role of the law in the political<lb/> system, American Political Science Review 77:3 (1983) 690 ff, esp 700: "(t)he law is mobilized when a desire or a<lb/> want is translated into a demand as an assertion of one's rights".</bibl> 
+          <bibl>Cf McCann, Litigation and Legal Mobilization,<lb/> in Caldeira et al (eds) The Oxford Handbook of Law and Politics (2008) Oxford: Oxford University Press, 523 ff-<lb/>540 (523 ff).<lb/> </bibl> 
+        <bibl><label>68</label> Hahn, Strategische Prozessführung. Ein Beitrag zur Begriffsklärung, Zeitschrift für Rechtssoziologie 39:1 (2019)<lb/> 5 ff;</bibl> 
+          <bibl>Weber, Zum Begriff der Strategischen Prozessführung, in Weber (Hg) Strategische Prozessführung in<lb/> Österreich (2024) 11 (17 f);<lb/> </bibl>
+<bibl>cf Guerrero, Strategische Prozessführung -eine Annäherung, Zeitschrift für<lb/> Menschen rechte 2020, 26 (38).<lb/> </bibl>
+        <bibl><label>69</label> As to the preciseness of this obligation see Hilson/Geden, Climate or carbon neutrality? Which one must states<lb/> aim for under Article 8 ECHR?, EJIL:Talk!, 29.04.2024, https://www.ejiltalk.org/climate-or-carbon-neutrality-<lb/>which-one-must-states-aim-for-under-article-8-echr/.<lb/> </bibl>
+        <bibl><label>70</label> Cf Brems, The ‚Logics' of Procedural-Type Review by the European Court of Human Right, in: Gerards / Brems<lb/> (editors) Procedural Review in European Fundamental Rights Cases. Cambrigde, Cambridge University Press<lb/> (2017) 17 (17 ff);<lb/> </bibl>
+<bibl>Pavlidis, Integrierung einer Verhaltenskontrolle gegenüber dem Gesetzgeber in die<lb/> Grundrechtsprüfung? Diskutiert anhand des "Procedural Turn" des EGMR, Zeitschrift für Verwaltung 85:1<lb/> (2021) 85 (85 ff).<lb/> </bibl>
+        <bibl><label>71</label> For the discussion of the Judgement in the Swiss Parliament (declaring the judgement to be in violation of<lb/> democratic values):<lb/> https://www.parlament.ch/de/services/news/Seiten/2024/20240612113101111194158159026_bsd076.aspx .<lb/> </bibl>   <bibl><label>72</label> In principle, the requirements the Court established for national legislators are in line with was has been<lb/> established as the "building blocks of effective climate laws": Higham/Keuschnigg/Chan/Setzer, What Does the<lb/> European Court of Human Rights' First Climate Change Decision Mean for Climate Policy?, Verfassungsblog<lb/> 15.05.2024, https://verfassungsblog.de/what-does-the-european-court-of-human-rights-first-climate-change-<lb/>decision-mean-for-climate-policy/.<lb/> </bibl>
+        <bibl><label>73</label> Eicke, para 69.<lb/> </bibl>
+        <bibl><label>74</label> For the strategic orientation of the KlimaSeniorinnen case and the narratives employed cf Keller/Bornemann,<lb/> New Climate Activism between Politics and Law: Analyzing the Strategy of the KlimaSeniorinnen Schweiz, Politics<lb/> and Governance 9:2 (2021) 124 (128 f, 131); </bibl>
+          <bibl>highlighting the intersectionality of the approach: Sußner,<lb/> Intersektionalität als Strategie: Der Fall KlimaSeniorinnen v. Switzerland, Zeitschrift des deutschen<lb/> Juristinnenbundes (2023) 74 ff; </bibl>
+          <bibl>Jong, Beyond the turn to human rights: a call for an intersectional climate justice<lb/> approach, The International Journal of Human Rights 28:5 (2024), 738 ff; </bibl>
+          <bibl>Hefti, Intersectional Victims as Agents<lb/> of Change in International Human Rights-Based Climate Litigation, Transnational Environmental Law (2024) 1 ff.<lb/> </bibl>
+        <bibl><label>75</label> Brucher/De Spiegeleir, The European Court of Human Rights' April 9 Climate Rulings and the Future (Thereof),<lb/> Verfassungsblog, 29.04.2024, https://verfassungsblog.de/the-european-court-of-human-rights-april-9-climate-<lb/>rulings-and-the-future-thereof/.<lb/> </bibl>
+        <bibl><label>76</label> ECtHR 09.04.2024, Duarte Agostinho and Others / Portugal and 32 others, application no 39371/20.<lb/> </bibl>
+          <bibl><label>77</label> Cf also Wende, Das KlimaSeniorinnen-Urteil des EGMR -Was ist neu daran?, EnergieKrise-Aktuell (2024)<lb/> 010346.<lb/> </bibl>
+        <bibl><label>78</label> Cf Bähr/Brunner/Casper/Lustig, KlimaSeniorinnen: lessons from the Swiss senior women's case for future<lb/> climate litigation, Journal of Human Rights and the Environment, 9:2 (2018) 194 (220), who argue that<lb/> KlimaSeniorinnen could lead to new developments related to standing in climate litigation, but throughout use<lb/> the argument of being specifically affected as individuals or group of individuals, which is more closely related to<lb/> the previously established categories of victim status.<lb/> </bibl>
+        <bibl><label>79</label> In the same vein: Letwin, Klimaseniorinnen: the Innovative and the Orthodox, EJIL:Talk!, 17.04.2024,<lb/> https://www.ejiltalk.org/klimaseniorinnen-the-innovative-and-the-orthodox/.<lb/> </bibl>
+        <bibl><label>80</label><lb/> For<lb/> instance:<lb/> Wegener,<lb/> "Globuli<lb/> für<lb/> Umweltjuristen",<lb/> Verfassungsblog,<lb/> 11.04.2024,<lb/> https://verfassungsblog.de/globuli-fur-umweltjuristen; </bibl>
+          <bibl>Auner, Recht auf effektive Maßnahmen zur Eindämmung<lb/> des Klimawandels (Entscheidungsanmerkung), Newsletter Menschenrechte (2024) 123 (124 f);<lb/> </bibl>
+<bibl>Piska/Winkler/Zehetner, Verein Klimaseniorinnen vs Schweiz: Es ist nicht alles Gold, was glänzt, ecolex (2024)<lb/> 449 ff; </bibl>
+          <bibl>Fremuth, Klimawandel vor dem EGMR und die Grenzen der Menschenrechtskonvention Zugleich<lb/> Besprechung von EGMR Urt. v. 9.4.2024, Europäische Zeitschrift für Wirtschaftsrecht (2024) 697 (702); </bibl>
+          <bibl>discussing<lb/> said criticism and highlighting the limitations of the "new" locus standi for NGOs Hollaus, Das Urteil des EGMR<lb/> im Fall KlimaSeniorinnen und seine Implikationen für den europäischen Grundrechtsschutz, Juristische Blätter<lb/> (2024) 485 (491 ff).<lb/> </bibl>
+        <bibl><label>81</label> For the aspects of the judgement relying on international climate law (in particular: the Paris agreement) see<lb/> Jahn, The Paris Effect. Human Rights in Light of International Climate Goals and Commitments, Verfassungsblog,<lb/> 25.04.2024, https://verfassungsblog.de/the-paris-effect/.<lb/> </bibl>
+        <bibl><label>82</label> Cf Hollaus, Das Urteil des EGMR im Fall KlimaSeniorinnen und seine Implikationen für den europäischen<lb/> Grundrechtsschutz, Juristische Blätter (2024) 485 (491 ff).<lb/> </bibl>
+        <bibl><label>83</label> 1998 Aarhus Convention on Access to Information, Public Participation in Decision-Making and Access to<lb/> Justice in Environmental Matters, 2161 UNTS 447.<lb/> </bibl>
+        <bibl><label>84</label> Cf the Aarhus Convention's definitions of "public" (Article 2 para 4) and "public concerned" (Article 2 para 5).<lb/> </bibl>
+        <bibl><label>85</label> Article 2 para 2 Aarhus Convention: "This definition does not include bodies or institutions acting in a judicial<lb/> or legislative capacity".<lb/> </bibl>
+        <bibl><label>86</label> For the planetary boundaries, cf https://www.stockholmresilience.org/research/planetary-boundaries.html.<lb/> </bibl>
+          <bibl><label>87</label> Cf for the debate on speed limits on Austrian highways: Krempelmeier/Kirchmair, Verfassungswidrigkeit<lb/> klimaschädlicher Verkehrsgesetzgebung. Warum Tempo 130 km/h auf Autobahnen und Tempo 100 km/h auf<lb/> Freilandstraßen (derzeit) verfassungswidrig ist, Recht der Umwelt -Beilage Umwelt und Technik (2023) 39 (43<lb/> f).<lb/> </bibl>
+          <bibl><label> 88</label> Para 648.<lb/> </bibl>
+          <bibl><label> 89 </label>Para 650.<lb/> </bibl>
+        <bibl><label>90</label> Keller/Bornemann, New Climate Activism between Politics and Law: Analyzing the Strategy of the<lb/> KlimaSeniorinnen Schweiz, Politics and Governance 9:2 (2021) 124 (131).<lb/> </bibl>
+        <bibl><label>91</label> See recently Hahn, Strategische Prozessführung im Klagekollektiv (2024) BadenBaden Nomos, 187 ff with many<lb/> references.</bibl> 
+          <bibl>For a critical perspective taking into account the recent climate decisions of the ECtHR cf Raible,<lb/> Priorities for Climate Litigation at the European Court of Human Rights, EJIL:Talk!, 02.05.2024,<lb/> https://www.ejiltalk.org/priorities-for-climate-litigation-at-the-european-court-of-human-rights/; </bibl>
+          <bibl>Schayani, No<lb/> Global Climate Justice from this Court, Völkerrechtsblog, 15.04.2024, https://voelkerrechtsblog.org/no-global-<lb/>climate-justice-from-this-court/.<lb/> </bibl>
+        <bibl><label>92</label> For a summary see CoE/ECtHR, Guide on Article 6 of the European Convention on Human Rights. Right to a fair<lb/> trial (civil limb). Updated to 31 August 2023 (2023), available at https://ks.echr.coe.int, para 163 ff.</bibl> 
+          <bibl>For a<lb/> discussion of Article 6 issues in KlimaSeniorinnen cf Hollaus, Das Urteil des EGMR im Fall KlimaSeniorinnen und<lb/> seine Implikationen für den europäischen Grundrechtsschutz, Juristische Blätter (2024) 485 (498 ff).<lb/> </bibl>
+        <bibl><label>93</label> For a discussion of Judge Eicke's critical perspective on this issue and a rebuttal see Humphreys, A Swiss human<lb/> rights budget?, EJIL:Talk!, 12.04.2024, https://www.ejiltalk.org/a-swiss-human-rights-budget/ .<lb/> </bibl>
+<bibl><label>94</label><lb/> For<lb/> the<lb/> experience<lb/> in<lb/> the<lb/> KlimaSeniorinnen<lb/> case<lb/> cf<lb/> Blattner/Vicedo-<lb/>
+Cabrera/Frölicher/Ingold/Raible/Wyttenbach, How science bolstered a key European climate-change case,<lb/> Nature 621 (2023) 255 ff.<lb/> </bibl>
+        <bibl><label>95</label> Cf ECtHR 15.05.2005, Steel and Morris / United Kingdom, application no 68416/01, para 59 ff. In this case,<lb/> the Court found that the refusal to grant legal aid in a complex defamation case, facing a wealthy opponent,<lb/> resulted in a violation of the principle of equality of arms. The Court took into account the legal and factual<lb/> complexity of the case as well as the diverging economic characteristics of the opponents, insofar as they<lb/> resulted in different levels of legal assistance being available. Taking these criteria seriously and applying them<lb/> to climate litigation cases, one could argue that States have a duty to provide legal aid resulting from Art 6<lb/> ECHR and the principle of equality of arms: Climate litigation usually involves complex legal and factual issues.<lb/> In addition to that, in administrative or constitutional proceedings falling under Art 6 ECHR where litigants face<lb/> "the State" (legislator or executive branch), the State is typically in a privileged position to gain both legal and<lb/> factual expertise.<lb/> </bibl>
+        <bibl><label>96</label> The Aarhus Convention Compliance Committee (ACCC) has developed a rich case-law on this provision in its<lb/> practice. See recently ACCC, 03.09.2021, Findings and recommendations with regard to communication<lb/> ACCC/C/2015/130 concerning compliance by Italy, ECE/MP.PP/C.1/2021/22.<lb/> </bibl>
+        <bibl><label>97</label> As the ambiguity of the title of this essay might already suggest to some readers, it is justified to see both the<lb/> ECtHR and the association KlimaSeniorinnen (as well as the many individuals involved in the litigation efforts)<lb/> as drivers of the resulting change in legal opportunity structures.<lb/> </bibl>
+        <bibl><label>98</label> For the concept of legal opportunity structures see Vanhala, Legal Opportunity Structures and the Paradox of<lb/> Legal Mobilization by the Environmental Movement in the UK, Law &amp; Society Review 46:3 (2012) 523 (526 ff); </bibl>
+<bibl>Vanhala, Shaping the Structure of Legal Opportunities: Environmental NGOs Bringing International<lb/> Environmental Procedural Rights Back Home, Law &amp; Policy 40:1 (2018) 110 ff; </bibl>
+          <bibl>Andersen, Out of the Closets &amp;<lb/> into the Courts. Legal Opportunity Structure and Gay Rights Litigation (2006) Ann Arbor: University of Michigan<lb/> Press, 204 ff.<lb/> </bibl>
+        <bibl><label>99</label> For a comparative perspective on admissibility criteria in Austria, Germany and Switzerland see Marhold,<lb/> Klimaklagen. Zulässigkeitsprüfung im Rechtsvergleich (2024) Vienna, Linde Verlag; cf Madner, Climate Change as<lb/> a Challenge for Constitutional Courts: Fundamental Freedoms and Duties of Protection -A Perspective from<lb/> Austria, Human Rights Law Journal (2023) 354 ff.<lb/> </bibl> <bibl><label>100</label> Para 548.<lb/> </bibl>
+        <bibl><label>101</label> Positioning litigation as one of many avenues to strengthen climate protection: Vanhala, Coproducing the<lb/> Endangered Polar Bear: Science, Climate Change, and Legal Mobilization, Law &amp; Policy 42:2 (2020) 105 ff.</bibl> 
+          <bibl>For a<lb/> fundamental critique of the role of courts for social change cf eg Rosenberg, Tilting at Windmills: Brown II and<lb/> the Hopeless Quest to Resolve Deep-Seated Social Conflict through Litigation, Law &amp; Inequality: A Journal of<lb/> Theory and Practice 24:1 (2006) 31 ff; however, Rosenberg also points to the relevance of legislative action, and<lb/> this is exactly what KlimaSeniorinnen and further climate litigation efforts aim at triggering.<lb/> </bibl>
+          <bibl><label>102</label> It should also be noted that there are a few climate cases still pending, most notably Müllner / Austria; cf<lb/> Prantl, After Switzerland Comes Austria. Why the ECtHR could soon grant individual standing in a climate<lb/> mitigation case for the first time, Verfassungsblog, 24.05.2024, https://verfassungsblog.de/after-switzerland-<lb/>comes-austria/.<lb/> </bibl>
+        <bibl><label>103</label> Possible consequences for the EU system of legal protection are discussed by Eeckhout, From Strasbourg to<lb/> Luxembourg? The KlimaSeniorinnen judgment and EU remedies, Verfassungsblog, 05.06.2024,<lb/> https://verfassungsblog.de/from-strasbourg-to-luxembourg/.</bibl> 
+          <bibl>Observations on the role of collective actors (that<lb/> has been strengthened by the KlimaSeniorinnen judgement) for mobilizing the law with many references: Hahn,<lb/> Strategische Prozessführung im Klagekollektiv (2024) BadenBaden Nomos, 215 ff.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>
