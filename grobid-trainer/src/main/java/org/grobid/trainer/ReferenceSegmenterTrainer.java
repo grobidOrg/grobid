@@ -33,13 +33,36 @@ import org.grobid.trainer.sax.TEIReferenceSegmenterSaxParser;
 public class ReferenceSegmenterTrainer extends AbstractTrainer {
     public static final Logger LOGGER = LoggerFactory.getLogger(ReferenceSegmenterTrainer.class);
 
+    private final GrobidModels.Flavor flavor;
+
     public ReferenceSegmenterTrainer() {
         super(GrobidModels.REFERENCE_SEGMENTER);
+        flavor = null;
+    }
+
+    public ReferenceSegmenterTrainer(GrobidModels.Flavor modelFlavor) {
+        super(GrobidModels.getModelFlavor(GrobidModels.REFERENCE_SEGMENTER, modelFlavor));
+        flavor = modelFlavor;
     }
 
     @Override
     public int createCRFPPData(File corpusPath, File trainingOutputPath) {
         return createCRFPPData(corpusPath, trainingOutputPath, null, 1.0);
+    }
+
+    @Override
+    protected File getCorpusPath() {
+        if (flavor != null) {
+            // Use the flavor's folder path directly for the corpus, because getModelFlavor
+            // may have fallen back to the base model (when no trained model file exists yet),
+            // which would resolve to the wrong corpus directory.
+            String flavorFolder = "reference-segmenter/" + flavor.getLabel();
+            File theFile = new File(getFilePath2Resources(), "dataset/" + flavorFolder + "/corpus");
+            if (theFile.exists()) {
+                return theFile;
+            }
+        }
+        return super.getCorpusPath();
     }
 
     @Override
@@ -234,6 +257,6 @@ public class ReferenceSegmenterTrainer extends AbstractTrainer {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        AbstractTrainer.trainAndEvaluate(ReferenceSegmenterTrainer::new);
+        AbstractTrainer.trainAndEvaluate(args, ReferenceSegmenterTrainer::new, ReferenceSegmenterTrainer::new);
     }
 }
