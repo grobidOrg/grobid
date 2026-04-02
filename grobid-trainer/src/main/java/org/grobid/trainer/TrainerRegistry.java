@@ -58,7 +58,8 @@ public class TrainerRegistry {
         map.put("segmentation-ietf", () -> new SegmentationTrainer(Flavor.IETF));
         map.put("segmentation-light", () -> new SegmentationTrainer(Flavor.ARTICLE_LIGHT));
         map.put("segmentation-light-ref", () -> new SegmentationTrainer(Flavor.ARTICLE_LIGHT_WITH_REFERENCES));
-        map.put("segmentation-dh-law-", () -> new SegmentationTrainer(Flavor.ARTICLE_DH_LAW_FOOTNOTES));
+        map.put("segmentation-dh-law-footnotes", () -> new SegmentationTrainer(Flavor.ARTICLE_DH_LAW_FOOTNOTES));
+        map.put("segmentation-dh-law-footnotes-token", () -> new SegmentationTrainer(Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN));
         REGISTRY = Collections.unmodifiableMap(map);
     }
 
