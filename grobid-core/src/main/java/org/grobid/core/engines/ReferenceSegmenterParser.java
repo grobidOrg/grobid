@@ -30,6 +30,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.grobid.core.GrobidModels;
+import org.grobid.core.GrobidModels.Flavor;
 import org.grobid.core.document.Document;
 import org.grobid.core.document.DocumentPiece;
 import org.grobid.core.document.DocumentPointer;
@@ -58,8 +59,15 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
     // projection scale for line length
     private static final int LINESCALE = 10;
 
+    private Flavor flavor = null;
+
     protected ReferenceSegmenterParser() {
         super(GrobidModels.REFERENCE_SEGMENTER);
+    }
+
+    protected ReferenceSegmenterParser(Flavor flavor) {
+        super(GrobidModels.getModelFlavor(GrobidModels.REFERENCE_SEGMENTER, flavor));
+        this.flavor = flavor;
     }
 
     @Override
@@ -138,7 +146,31 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
         // if we extract for generating training data, we also give back the used features
         List<Triple<String, String, String>> labeled = GenericTaggerUtils.getTokensWithLabelsAndFeatures(res, training);
 
-        return getExtractionResult(tokenizationsReferences, labeled);
+        List<LabeledReferenceResult> results = getExtractionResult(tokenizationsReferences, labeled);
+
+        // For dh-law-footnotes: propagate labels forward to references that have no label.
+        // In law/humanities footnotes, a numbered footnote (e.g. "1") may be followed by
+        // multiple references that all belong to the same footnote number.
+        if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES && results != null) {
+            propagateLabels(results);
+        }
+
+        return results;
+    }
+
+    /**
+     * Propagate reference labels forward: if a reference has no label, it inherits the
+     * label from the nearest preceding reference that has one.
+     */
+    private void propagateLabels(List<LabeledReferenceResult> results) {
+        String lastLabel = null;
+        for (LabeledReferenceResult result : results) {
+            if (result.getLabel() != null) {
+                lastLabel = result.getLabel();
+            } else if (lastLabel != null) {
+                result.setLabel(lastLabel);
+            }
+        }
     }
 
     /**

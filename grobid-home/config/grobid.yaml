@@ -255,6 +255,23 @@ grobid:
           max_sequence_length: 3000
           batch_size: 10
 
+    - name: "reference-segmenter-article-dh-law-footnotes"
+      engine: "wapiti"
+      wapiti:
+        epsilon: 0.00001
+        window: 20
+      delft:
+        architecture: "BidLSTM_ChainCRF_FEATURES"
+        useELMo: false
+        runtime:
+          # parameters used at runtime/prediction (for this model, use same max_sequence_length as training)
+          max_sequence_length: 3000
+          batch_size: 2
+        training:
+          # parameters used for training
+          max_sequence_length: 3000
+          batch_size: 10
+
     - name: "name-header"
       engine: "wapiti"
       #engine: "delft"

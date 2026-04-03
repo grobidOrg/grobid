@@ -229,7 +229,7 @@ public class FullTextParser extends AbstractParser {
             // consolidation, if selected, is not done individually for each citation but 
             // in a second stage for all citations which is much faster
             List<BibDataSet> resCitations = parsers.getCitationParser().
-                processingReferenceSection(doc, parsers.getReferenceSegmenterParser(), 0, config);
+                processingReferenceSection(doc, parsers.getReferenceSegmenterParser(flavor), 0, config);
 
             // consolidate the set
             if (config.getConsolidateCitations() != 0 && resCitations != null) {
@@ -1500,7 +1500,7 @@ public class FullTextParser extends AbstractParser {
             if (!referencesStr.isEmpty()) {
                 //String tei = parsers.getReferenceSegmenterParser().createTrainingData2(referencesStr, id);
                 Pair<String, String> result =
-                    parsers.getReferenceSegmenterParser().createTrainingData(doc, baseName);
+                    parsers.getReferenceSegmenterParser(flavor).createTrainingData(doc, baseName);
                 if (result != null) {
                     String tei = result.getLeft();
                     String raw = result.getRight();
@@ -1532,7 +1532,7 @@ public class FullTextParser extends AbstractParser {
             if (!referencesStr.isEmpty()) {
                 cntManager.i(CitationParserCounters.NOT_EMPTY_REFERENCES_BLOCKS);
             }
-            ReferenceSegmenter referenceSegmenter = parsers.getReferenceSegmenterParser();
+            ReferenceSegmenter referenceSegmenter = parsers.getReferenceSegmenterParser(flavor);
             List<LabeledReferenceResult> references = referenceSegmenter.extract(doc);
             List<BibDataSet> resCitations = parsers.getCitationParser().
                 processingReferenceSection(doc, referenceSegmenter, 0);
