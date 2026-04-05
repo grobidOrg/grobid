@@ -56,6 +56,22 @@ These initial values are further tuned at runtime using the `x-concurrency-limit
 
 When a Plus tier token is configured, GROBID validates it at startup by making a lightweight request (`/works?rows=0`) to CrossRef. If the token is not recognized as Plus tier (e.g. expired or invalid), GROBID automatically falls back to Polite concurrency (3) if `mailto` is set, or Public (1) otherwise, and logs a warning. If CrossRef is unreachable at startup, the Plus tier default is kept since the token cannot be proven invalid.
 
+### Performance with CrossRef Consolidation
+
+When citation consolidation is enabled, the CrossRef API becomes the dominant factor in processing time. Below are benchmarks from processing 10,000 PDF documents with `processFulltextDocument` and `consolidateCitations=1`:
+
+| Metric | Polite Tier | Plus Tier |
+|--------|------------|-----------|
+| Total runtime | ~162,277 sec (~45 hours) | ~42,755 sec (~12 hours) |
+| Speed | 0.06 docs/sec | 0.23 docs/sec |
+| Throughput per document | 17.02 sec/doc | 4.31 sec/doc |
+| Failed documents | 467/10,000 (4.7%) | 85/10,000 (0.85%) |
+
+The Plus tier is approximately **3.8x faster** and produces **~5.5x fewer errors** compared to the Polite tier. For any batch processing beyond a few hundred documents with citation consolidation, the Plus tier is strongly recommended.
+
+!!! warning "Increase client timeout when using consolidation"
+    With consolidation enabled, GROBID takes significantly longer to process each document. The default client timeout (e.g. 60 seconds in the Python client) is far too low — individual documents with many references can take well over a minute. **Increase the client timeout to 200–600 seconds** to avoid unnecessary timeout errors. For example, in the Python client's `config.json`, set `"timeout": 300`.
+
 ### Rate Limiting and Backoff
 
 When CrossRef returns HTTP 429 (rate limit exceeded), GROBID applies exponential backoff with jitter ("full jitter" strategy):
