@@ -180,6 +180,7 @@ curl -s "https://archive.softwareheritage.org/api/1/origin/https://github.com/ke
   xargs -I {} curl -s "https://archive.softwareheritage.org/api/1/snapshot/{}/" | \
   jq -r '.branches["refs/heads/master"].target' | \
   xargs -I {} echo "swh:1:dir:{}"
+  
 swh:1:dir:324a18113b0c7624a66a21550bd0e8522e328b4e
 ```
 
