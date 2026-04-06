@@ -150,9 +150,9 @@ public class CrossrefRequest<T extends Object> extends Observable {
 
             if (GrobidProperties.getCrossrefMailto() != null) {
             	httpget.setHeader("User-Agent",
-            		"GROBID/0.8.2 (https://github.com/kermitt2/grobid; mailto:" + GrobidProperties.getCrossrefMailto() + ")");
+            		"GROBID/" + GrobidProperties.getVersion() + " (https://github.com/kermitt2/grobid; mailto:" + GrobidProperties.getCrossrefMailto() + ")");
 			} else {
-				httpget.setHeader("User-Agent", "GROBID/0.8.2 (https://github.com/kermitt2/grobid)");
+				httpget.setHeader("User-Agent", "GROBID/" + GrobidProperties.getVersion() + " (https://github.com/kermitt2/grobid)");
 			}
 
 			// set the authorization token for the Metadata Plus service if available

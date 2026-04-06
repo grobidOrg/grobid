@@ -42,6 +42,11 @@ jobs:
         with:
           fetch-tags: true
           fetch-depth: 0
+      - name: Compute GROBID version
+        id: version
+        run: |
+          git fetch --tags --force
+          echo "value=$(git describe --tags --always --first-parent)" >> "$GITHUB_OUTPUT"
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - name: Login to Docker Hub
@@ -57,8 +62,10 @@ jobs:
           file: Dockerfile.delft
           platforms: linux/amd64
           push: true
+          build-args: |
+            GROBID_VERSION=${{ steps.version.outputs.value }}
           tags: |
-            lfoppiano/grobid:latest-develop,lfoppiano/grobid:latest-full,lfoppiano/grobid:${{ github.event.inputs.custom_tag }}
+            lfoppiano/grobid:latest-full,lfoppiano/grobid:${{ github.event.inputs.custom_tag }}
           cache-from: type=gha,scope=full
           cache-to: type=gha,mode=max,scope=full
       - name: Image digest

@@ -255,9 +255,9 @@ public class CrossrefClient implements Closeable {
 			String mailto = GrobidProperties.getCrossrefMailto();
 			if (mailto != null) {
 				httpget.setHeader("User-Agent",
-					"GROBID/0.8.2 (https://github.com/kermitt2/grobid; mailto:" + mailto + ")");
+					"GROBID/" + GrobidProperties.getVersion() + " (https://github.com/kermitt2/grobid; mailto:" + mailto + ")");
 			} else {
-				httpget.setHeader("User-Agent", "GROBID/0.8.2 (https://github.com/kermitt2/grobid)");
+				httpget.setHeader("User-Agent", "GROBID/" + GrobidProperties.getVersion() + " (https://github.com/kermitt2/grobid)");
 			}
 
 			HttpResponse response = httpclient.execute(httpget);

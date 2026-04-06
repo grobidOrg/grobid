@@ -56,7 +56,13 @@ jobs:
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Compute GROBID version
+        id: version
+        run: |
+          git fetch --tags --force
+          echo "value=$(git describe --tags --always --first-parent)" >> "$GITHUB_OUTPUT"
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - name: Login to Docker Hub
@@ -71,6 +77,8 @@ jobs:
           context: .
           file: Dockerfile.crf
           platforms: linux/amd64
+          build-args: |
+            GROBID_VERSION=${{ steps.version.outputs.value }}
           outputs: type=image,name=lfoppiano/grobid,push-by-digest=true,name-canonical=true,push=true
           cache-from: type=gha,scope=amd64
           cache-to: type=gha,scope=amd64,mode=max
@@ -89,7 +97,13 @@ jobs:
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Compute GROBID version
+        id: version
+        run: |
+          git fetch --tags --force
+          echo "value=$(git describe --tags --always --first-parent)" >> "$GITHUB_OUTPUT"
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - name: Login to Docker Hub
@@ -104,6 +118,8 @@ jobs:
           context: .
           file: Dockerfile.crf
           platforms: linux/arm64
+          build-args: |
+            GROBID_VERSION=${{ steps.version.outputs.value }}
           outputs: type=image,name=lfoppiano/grobid,push-by-digest=true,name-canonical=true,push=true
           cache-from: type=gha,scope=arm64
           cache-to: type=gha,scope=arm64,mode=max

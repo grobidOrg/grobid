@@ -135,6 +135,8 @@ RUN mkdir delft && \
 VOLUME ["/opt/grobid/grobid-home/tmp"]
 
 
+ARG GROBID_VERSION
+
 LABEL \
     authors="The contributors" \
     org.label-schema.name="Grobid" \

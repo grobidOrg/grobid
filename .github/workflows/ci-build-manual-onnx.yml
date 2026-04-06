@@ -41,6 +41,14 @@ jobs:
       - name: Create more disk space
         run: sudo rm -rf /usr/share/dotnet && sudo rm -rf /opt/ghc && sudo rm -rf "/usr/local/share/boost" && sudo rm -rf "$AGENT_TOOLSDIRECTORY"
       - uses: actions/checkout@v4
+        with:
+          fetch-tags: true
+          fetch-depth: 0
+      - name: Compute GROBID version
+        id: version
+        run: |
+          git fetch --tags --force
+          echo "value=$(git describe --tags --always --first-parent)" >> "$GITHUB_OUTPUT"
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - name: Login to Docker Hub
@@ -55,6 +63,8 @@ jobs:
           context: .
           file: Dockerfile.onnx
           push: true
+          build-args: |
+            GROBID_VERSION=${{ steps.version.outputs.value }}
           tags: |
             lfoppiano/grobid:latest-onnx, lfoppiano/grobid:${{ github.event.inputs.custom_tag || github.sha }}
           cache-from: type=gha
