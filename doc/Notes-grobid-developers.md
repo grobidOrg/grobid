@@ -74,7 +74,6 @@ Do not edit these by hand at release time:
 
 The Gradle Release plugin only touches `gradle.properties`. Everything below has to be edited manually and merged to `master` **before** the release commit, so the changes land in the pre-tag commit:
 
-- `CHANGELOG.md` — replace `## [<X.Y.Z>] - unreleased` with `## [<X.Y.Z>] - <YYYY-MM-DD>`.
 - `CITATION.cff` — set `version: <X.Y.Z>`.
 - `doc/Install-Grobid.md` — update the stable version references and the "current development version" line.
 - `doc/Grobid-service.md` — update build/install snippets.
@@ -199,7 +198,7 @@ Also attach the same JARs (and the `grobid-<X.Y.Z>.zip` source archive from the 
 
 4. Verify the GitHub release page renders the assets and the tag is reachable.
 5. Confirm the DIY repository hosts the new artefacts at the expected URLs.
-6. Open a follow-up PR to add the next `## [<X.Y.(Z+1)>] - unreleased` section to `CHANGELOG.md`.
+6. Open a follow-up PR to update `CHANGELOG.md`: replace `## [<X.Y.Z>] - unreleased` with `## [<X.Y.Z>] - <YYYY-MM-DD>` (the actual release date), and add a new `## [<X.Y.(Z+1)>] - unreleased` section above it for ongoing development.
 
 #### Verification grep (run before merging the release-prep PR)
 
