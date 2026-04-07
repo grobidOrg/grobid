@@ -24,7 +24,10 @@ jobs:
   retag:
     runs-on: ubuntu-latest
     steps:
-      - name: Pull, retag and push
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Copy image preserving digest
         env:
           # Credentials are passed via env (not interpolated into the shell
           # script below) so that shell metacharacters in secret values can't
@@ -43,15 +46,27 @@ jobs:
           SRC="${SOURCE_IMAGE}:${SOURCE_TAG}"
           DST="${TARGET_IMAGE}:${TARGET_TAG}"
 
-          # Select the Docker Hub credentials matching the image namespace.
-          # Docker Hub only allows one active login per host, so we log in,
-          # run the operation, and log out before switching namespaces.
-          login_for() {
-            local image="$1"
-            case "$image" in
+          # We use `docker buildx imagetools create` instead of pull/tag/push
+          # because the former operates at the registry manifest level: it
+          # copies the manifest list (and reuses existing blobs via cross-repo
+          # mount) so the target digest is identical to the source digest.
+          #
+          # `docker pull` on a multi-arch image only fetches the runner's
+          # native platform, and the subsequent `docker push` would upload a
+          # single-arch image with a new digest, silently dropping the arm64
+          # variant. `imagetools create` preserves all platforms and digests.
+          #
+          # Authentication: `imagetools` only needs write access to the
+          # target namespace. The source read is handled registry-side via
+          # cross-repo mount, so a single login as the target owner is
+          # sufficient as long as the source is a public image (or the
+          # target credentials also have pull access to the source).
+
+          login_for_target() {
+            case "$TARGET_IMAGE" in
               grobid/*)
                 if [ -z "${GROBID_USER:-}" ] || [ -z "${GROBID_TOKEN:-}" ]; then
-                  echo "::error::Missing DOCKERHUB_USERNAME_GROBID / DOCKERHUB_TOKEN_GROBID secrets for $image"
+                  echo "::error::Missing DOCKERHUB_USERNAME_GROBID / DOCKERHUB_TOKEN_GROBID secrets for $TARGET_IMAGE"
                   exit 1
                 fi
                 echo "Logging in as $GROBID_USER (grobid/ namespace)"
@@ -59,34 +74,31 @@ jobs:
                 ;;
               lfoppiano/*)
                 if [ -z "${LFOPPIANO_USER:-}" ] || [ -z "${LFOPPIANO_TOKEN:-}" ]; then
-                  echo "::error::Missing DOCKERHUB_USERNAME_LFOPPIANO / DOCKERHUB_TOKEN_LFOPPIANO secrets for $image"
+                  echo "::error::Missing DOCKERHUB_USERNAME_LFOPPIANO / DOCKERHUB_TOKEN_LFOPPIANO secrets for $TARGET_IMAGE"
                   exit 1
                 fi
                 echo "Logging in as $LFOPPIANO_USER (lfoppiano/ namespace)"
                 echo "$LFOPPIANO_TOKEN" | docker login -u "$LFOPPIANO_USER" --password-stdin
                 ;;
               *)
-                echo "::error::Unsupported namespace in '$image' (expected grobid/* or lfoppiano/*)"
+                echo "::error::Unsupported target namespace in '$TARGET_IMAGE' (expected grobid/* or lfoppiano/*)"
                 exit 1
                 ;;
             esac
           }
 
-          echo "::group::Pulling $SRC"
-          login_for "$SRC"
-          docker pull "$SRC"
+          login_for_target
+
+          echo "::group::Source manifest ($SRC)"
+          docker buildx imagetools inspect "$SRC"
+          echo "::endgroup::"
+
+          echo "::group::Copying $SRC -> $DST (manifest-level, digest-preserving)"
+          docker buildx imagetools create --tag "$DST" "$SRC"
+          echo "::endgroup::"
+
+          echo "::group::Target manifest ($DST) — digest should match source"
+          docker buildx imagetools inspect "$DST"
+          echo "::endgroup::"
+
           docker logout
-          echo "::endgroup::"
-
-          echo "::group::Tagging $SRC -> $DST"
-          docker tag "$SRC" "$DST"
-          echo "::endgroup::"
-
-          echo "::group::Pushing $DST"
-          login_for "$DST"
-          docker push "$DST"
-          docker logout
-          echo "::endgroup::"
-
-          # optional cleanup
-          docker rmi "$SRC" "$DST" || true
