@@ -63,10 +63,8 @@ See the [configuration page](Configuration.md) for details on how to set the dif
 If Docker is used, see [here](Grobid-docker.md#configure-using-the-yaml-config-file) on how to start a Grobid container with a modified configuration file. 
 
 ### Model loading strategy 
-You can choose to load all the models at the start of the service or lazily when a model is used the first time, the latter being the default. 
-Loading all models at service startup will slow down the start of the server and will use more memories than the lazy mode in case only a few services will be used. 
-
-Preloading all the models at server start is the default setting, but you choose a lazy loading of the model:
+You can choose to load all the models at the start of the service or lazily when a model is used the first time. 
+Preloading all the models at server start is the default setting. Loading all models at startup will slow down the start of the server and will use more memory than the lazy mode in case only a few services will be used. You can switch to lazy loading of the model:
 
 ```yaml
 grobid:
@@ -130,6 +128,7 @@ We provide clients written in Python, Java, node.js using the GROBID PDF-to-TEI 
 * <a href="https://github.com/kermitt2/grobid-client-python" target="_blank">Python GROBID client</a>
 * <a href="https://github.com/kermitt2/grobid-client-java" target="_blank">Java GROBID client</a>
 * <a href="https://github.com/kermitt2/grobid-client-node" target="_blank">Node.js GROBID client</a>
+* <a href="https://github.com/miku/grobidclient" target="_blank">Go GROBID client</a> (third party)
 
 All these clients will take advantage of the multi-threading for scaling PDF batch processing. As a consequence, they will be much more efficient than the [batch command lines](Grobid-batch.md) (which use only one thread) and should be prefered. The Python client is the more up-to-date and complete and can be adapted for your needs.
 

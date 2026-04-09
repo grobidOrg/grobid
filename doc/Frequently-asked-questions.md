@@ -369,7 +369,7 @@ pdfalto converts PDF to ALTO XML. GROBID then converts ALTO tokens into `LayoutT
 
 Grobid is developed and tested on Linux. Mac is also supported, although some components might behave slightly different due to the natural incompatibility of Apple with the rest of the world, and the availability on some proprietary fonts on this platform.
 
-Grobid running natively on Windows is not supported. We recommend Windows users to use the docker image (documented [here]()) and call the system via the REST API using one of the various [grobid clients](Grobid-service.md#clients-for-grobid-web-services).
+Grobid running natively on Windows is not supported. We recommend Windows users to use the docker image (documented [here](Grobid-docker.md)) and call the system via the REST API using one of the various [grobid clients](Grobid-service.md#clients-for-grobid-web-services).
 
 Before opening a new issue which might be related to Windows, please check that it is not redundant [here](https://github.com/kermitt2/grobid/issues?q=is%3Aissue+is%3Aopen+label%3AWindows-specific)
 

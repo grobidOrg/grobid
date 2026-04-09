@@ -50,7 +50,7 @@ If you use Deep Learning models locally (not through the Docker image), you need
 
 The models shipped under `grobid-home/models/` have all been retrained on expanded training data and against the new DeLFT / TensorFlow versions. When upgrading from source, make sure you pull the latest `grobid-home/models/` contents along with the code — the old model files will not work with the new runtime, and mixing old models with new code will degrade extraction quality even when it does not crash.
 
-See the [0.9.0 CHANGELOG entry](https://github.com/kermitt2/grobid/blob/master/CHANGELOG.md) for the full list of retrained models and training-data expansions.
+See the [0.9.0 CHANGELOG entry](https://github.com/grobidOrg/grobid/blob/master/CHANGELOG.md) for the full list of retrained models and training-data expansions.
 
 ### Custom-trained models must be retrained
 
@@ -67,14 +67,14 @@ See [Training and evaluating models](Training-the-models-of-Grobid.md) for the c
 
 ### Obsolete models removed
 
-Several obsolete and unused models were removed in 0.9.0 ([#1367](https://github.com/kermitt2/grobid/pull/1367)). If your `grobid-home/config/grobid.yaml` still references removed models, GROBID will fail to start. Compare your configuration against the current `grobid-home/config/grobid.yaml` from the 0.9.0 release and remove any stale model entries.
+Several obsolete and unused models were removed in 0.9.0 ([#1367](https://github.com/grobidOrg/grobid/pull/1367)). If your `grobid-home/config/grobid.yaml` still references removed models, GROBID will fail to start. Compare your configuration against the current `grobid-home/config/grobid.yaml` from the 0.9.0 release and remove any stale model entries.
 
 ### Other notable changes
 
 - **Consolidation**: the Crossref integration was revised — review the [Consolidation guide](Consolidation.md) if you rely on consolidation-specific behavior.
 - **Default TEI output**: consolidated bibliographic references and header fields are now marked explicitly in the TEI output. Downstream consumers that parse TEI may want to take advantage of this.
 
-For the full list of changes, see the [0.9.0 CHANGELOG entry](https://github.com/kermitt2/grobid/blob/master/CHANGELOG.md).
+For the full list of changes, see the [0.9.0 CHANGELOG entry](https://github.com/grobidOrg/grobid/blob/master/CHANGELOG.md).
 
 ## Verifying your upgrade
 

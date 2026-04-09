@@ -11,6 +11,10 @@ New to GROBID? Start here to get up and running quickly.
 
 * [Troubleshooting and FAQ](Frequently-asked-questions.md) — common issues and solutions
 
+## Upgrading
+
+* [Upgrade guide](Upgrading.md) — what to know when moving between major GROBID versions
+
 ## User Guide
 
 Everything you need to use GROBID once it's running.

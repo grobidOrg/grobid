@@ -34,7 +34,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Updated TensorFlow to 2.17 with Python 3.10-3.11 support #1188
 - Updated pdfalto to 0.6.0
 - Updated wapiti to 1.5.1
-- Updated JEP to 4.2.2 #1332
+- Updated JEP to 4.3.1 #1332
 - Updated DeLFT to > 0.4.1 in documentation and Dockerfiles #1400
 - Updated JRuby to 9.4.12.1 and pragmatic segmenter #1293
 - Updated Docker base images from deprecated openjdk to eclipse-temurin (21.0.10_7)

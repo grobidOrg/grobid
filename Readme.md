@@ -3,11 +3,11 @@
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![Coverage Status](https://coveralls.io/repos/kermitt2/grobid/badge.svg)](https://coveralls.io/r/kermitt2/grobid)
 [![Documentation Status](https://readthedocs.org/projects/grobid/badge/?version=latest)](https://readthedocs.org/projects/grobid/?badge=latest)
-[![GitHub release](https://img.shields.io/github/release/kermitt2/grobid.svg)](https://github.com/kermitt2/grobid/releases/)
+[![GitHub release](https://img.shields.io/github/release/grobidOrg/grobid.svg)](https://github.com/grobidOrg/grobid/releases/)
 [![Demo grobidOrg-grobid.hf.space](https://img.shields.io/website-up-down-green-red/https/grobidOrg-grobid.hf.space.svg)](https://grobidOrg-grobid.hf.space)
 [![Docker Hub](https://img.shields.io/docker/pulls/grobid/grobid.svg)](https://hub.docker.com/r/grobid/grobid/ "Docker Pulls")
 [![Docker Hub](https://img.shields.io/docker/pulls/lfoppiano/grobid.svg)](https://hub.docker.com/r/lfoppiano/grobid/ "Docker Pulls")
-[![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/kermitt2/grobid/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/kermitt2/grobid)
+[![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/grobidOrg/grobid/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/grobidOrg/grobid)
 
 > [!TIP]
 > Getting started [here](https://grobid.readthedocs.io/en/latest/getting_started/).
@@ -44,10 +44,12 @@ GROBID can be considered as production ready. Deployments in production includes
 
 - **OpenJDK 21** for building GROBID from source
 - Linux (64 bits) or macOS (Intel and ARM) for native builds
-- [Optional] Python 3.8+ with JEP for Deep Learning models 
+- [Optional] Python 3.10-3.11 with JEP for Deep Learning models 
 - [Optional] NVIDIA GPU with CUDA support for faster Deep Learning models
 
 For detailed installation instructions, including JDK setup and platform-specific requirements, see the [Installation documentation](doc/Install-Grobid.md).
+
+If you are upgrading from an earlier version, see the [Upgrade guide](doc/Upgrading.md) for version-specific migration notes.
 
 GROBID should run properly "out of the box" on Linux (64 bits) and macOS (Intel and ARM). We cannot ensure currently support for Windows as we did before (help welcome!).
 
@@ -72,7 +74,7 @@ For any serious works, you will need to deploy and use your own Grobid server, s
 
 ### Try in Play With Docker
 
-<a href="https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/kermitt2/grobid/master/compose.yml">
+<a href="https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/grobidOrg/grobid/master/compose.yml">
   <img src="https://raw.githubusercontent.com/play-with-docker/stacks/master/assets/images/button.png" alt="Try in PWD"/>
 </a>
 
@@ -172,7 +174,7 @@ For example, the BibTeX would look like this:
 > To fetch the latest SWID you can use the following command line (requires `curl` and `jq`):
     
 ```
-curl -s "https://archive.softwareheritage.org/api/1/origin/https://github.com/kermitt2/grobid/visit/latest/" \
+curl -s "https://archive.softwareheritage.org/api/1/origin/https://github.com/grobidOrg/grobid/visit/latest/" \
   -H "Accept: application/json" | jq -r '.snapshot' | \
   xargs -I {} curl -s "https://archive.softwareheritage.org/api/1/snapshot/{}/" | \
   jq -r '.branches["refs/heads/master"].target' | \
