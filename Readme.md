@@ -4,7 +4,7 @@
 [![Coverage Status](https://coveralls.io/repos/kermitt2/grobid/badge.svg)](https://coveralls.io/r/kermitt2/grobid)
 [![Documentation Status](https://readthedocs.org/projects/grobid/badge/?version=latest)](https://readthedocs.org/projects/grobid/?badge=latest)
 [![GitHub release](https://img.shields.io/github/release/kermitt2/grobid.svg)](https://github.com/kermitt2/grobid/releases/)
-[![Demo lfoppiano-grobid.hf.space](https://img.shields.io/website-up-down-green-red/https/lfoppiano-grobid.hf.space.svg)](https://lfoppiano-grobid.hf.space)
+[![Demo grobidOrg-grobid.hf.space](https://img.shields.io/website-up-down-green-red/https/grobidOrg-grobid.hf.space.svg)](https://grobidOrg-grobid.hf.space)
 [![Docker Hub](https://img.shields.io/docker/pulls/grobid/grobid.svg)](https://hub.docker.com/r/grobid/grobid/ "Docker Pulls")
 [![Docker Hub](https://img.shields.io/docker/pulls/lfoppiano/grobid.svg)](https://hub.docker.com/r/lfoppiano/grobid/ "Docker Pulls")
 [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/kermitt2/grobid/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/kermitt2/grobid)
@@ -59,11 +59,11 @@ Note that by default the Deep Learning models are not used, only CRF are selecte
 
 ### Demo server
 
-For testing purposes, two public GROBID demo servers are available thanks to HuggingFace, hosted as [spaces](https://huggingface.co/kermitt2).
+For testing purposes, two public GROBID demo servers are available thanks to Hugging Face Spaces.
 
-A GROBID demo server with a combination of Deep Learning models and CRF models is available at the following address: [https://kermitt2-grobid.hf.space/](https://kermitt2-grobid.hf.space/) or at [https://huggingface.co/spaces/kermitt2/grobid](https://huggingface.co/spaces/kermitt2/grobid). This demo runs however on CPU only. If you have GPU for your own server deployment, it will be significantly faster. 
+A GROBID demo server with a combination of Deep Learning models and CRF models is available at the following address: [https://grobidOrg-grobid.hf.space/](https://grobidOrg-grobid.hf.space/). This demo runs however on CPU only. If you have GPU for your own server deployment, it will be significantly faster. 
 
-A faster demo with CRF only is available at [https://kermitt2-grobid-crf.hf.space/](https://kermitt2-grobid-crf.hf.space/) or [https://huggingface.co/spaces/kermitt2/grobid-crf](https://huggingface.co/spaces/kermitt2/grobid-crf). However, accuracy is lower.
+A faster demo with CRF only is available at [https://grobidOrg-grobid-crf.hf.space/](https://grobidOrg-grobid-crf.hf.space/). However, accuracy is lower.
 
 The Web services are documented [here](https://grobid.readthedocs.io/en/latest/Grobid-service/).
 

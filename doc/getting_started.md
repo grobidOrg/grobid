@@ -1,5 +1,8 @@
 # Getting started
 
+!!! tip "Already using GROBID? Read the upgrade guide first"
+    If you are upgrading an existing installation from an earlier version, start with the [Upgrade guide](Upgrading.md) — GROBID 0.9.0 introduces build-environment, runtime and model changes that require attention before pulling the new version.
+
 ## TL;DR
 
 - **Docker:** The easiest way to run Grobid is via Docker on Linux, Mac and Windows. 
@@ -13,7 +16,7 @@
 
 ## Using Grobid from the cloud  
 
-The simpler way to play with Grobid is to use the [Grobid space](https://huggingface.co/spaces/lfoppiano/grobid) or [Grobid space mirror](https://huggingface.co/spaces/lfoppiano/grobid2) where a light instance of Grobid is deployed.
+The simpler way to play with Grobid is to use the [Grobid space](https://grobidOrg-grobid.hf.space) or [Grobid space mirror](https://grobidOrg-grobid2.hf.space) where a light instance of Grobid is deployed.
 You can use it to process a PDF file, or to test the Grobid web service. 
 The space is free and does not require any authentication.
 

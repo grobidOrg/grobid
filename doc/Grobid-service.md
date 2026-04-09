@@ -131,7 +131,19 @@ We provide clients written in Python, Java, node.js using the GROBID PDF-to-TEI 
 * <a href="https://github.com/kermitt2/grobid-client-java" target="_blank">Java GROBID client</a>
 * <a href="https://github.com/kermitt2/grobid-client-node" target="_blank">Node.js GROBID client</a>
 
-All these clients will take advantage of the multi-threading for scaling PDF batch processing. As a consequence, they will be much more efficient than the [batch command lines](Grobid-batch.md) (which use only one thread) and should be prefered. The Python client is the more up-to-date and complete and can be adapted for your needs. 
+All these clients will take advantage of the multi-threading for scaling PDF batch processing. As a consequence, they will be much more efficient than the [batch command lines](Grobid-batch.md) (which use only one thread) and should be prefered. The Python client is the more up-to-date and complete and can be adapted for your needs.
+
+### Alternative output formats (Markdown and JSON)
+
+The GROBID REST API produces [TEI XML](TEI-encoding-of-results.md) — a rich, loss-less representation of the extracted structure. For downstream use cases where TEI is inconvenient (feeding an LLM, building a search index, rendering a preview), the [Python GROBID client](https://github.com/kermitt2/grobid-client-python) ships **optional** client-side converters that transform the TEI response into simpler formats:
+
+* **Markdown** — a flat, human-readable rendering of the document body with headings, paragraphs, lists, and inline references. Useful for feeding extracted content into language models or Markdown-based documentation tools.
+* **JSON** — a lossy, structured representation inspired by the [CORD-19](https://github.com/allenai/cord19) schema, with separate sections for bibliographic metadata, body text, figures and tables, and references. Useful for downstream indexing, analytics, or feeding structured data into other tools.
+
+!!! note "These formats are optional — TEI remains the source of truth"
+    The converters run **on the client side**, after the TEI response has been received from the GROBID server. The server itself always returns TEI XML; the Python client then optionally projects it into Markdown or JSON if you ask it to. Both formats are lossy compared to the full TEI output — in particular, fine-grained layout information, coordinates, and some bibliographic metadata are simplified or dropped. If you need the complete structure, stick with TEI.
+
+See the [grobid-client-python README](https://github.com/kermitt2/grobid-client-python) for the exact options to enable Markdown or JSON output when calling the client.
 
 ## Use GROBID test console
 

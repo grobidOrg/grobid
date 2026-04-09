@@ -40,6 +40,8 @@ nav:
     - 'Quick start': 'getting_started.md'
     - 'Run with Docker': 'Grobid-docker.md'
     - 'Troubleshooting and FAQ': 'Frequently-asked-questions.md'
+  - Upgrading:
+    - 'Upgrade guide': 'Upgrading.md'
   - User Guide:
     - 'Using the REST API': 'Grobid-service.md'
     - 'Understanding the output (TEI)': 'TEI-encoding-of-results.md'
