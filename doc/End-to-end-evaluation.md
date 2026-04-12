@@ -6,7 +6,7 @@ For an end-to-end evaluation, covering the whole extraction process from the par
 
 * against JATS-encoded (NLM) articles, such as [PubMed Central](http://www.ncbi.nlm.nih.gov/pmc), [bioRxiv](https://www.biorxiv.org), [PLOS](https://plos.org/ ) or [eLife](https://elifesciences.org/ ). For example, PubMed Central provides both PDF and fulltext XML files in the [NLM](http://www.ncbi.nlm.nih.gov/pmc/pmcdoc/tagging-guidelines/article/style.html) format. Keeping in mind some limits described bellow, it is possible to estimate the ability of Grobid to extract and normalize the content of the PDF documents for matching the quality of the NLM file. bioRxiv is used in Grobid to evaluate more precisely performance on preprint articles. 
 
-* against TEI documents produced by [Pub2TEI](https://github.com/kermitt2/Pub2TEI). Pub2TEI is a set of XSLT that permit to tranform various _native_ XML publishers (including Elsevier, Wiley, Springer, etc. XML formats) into a common TEI format. This TEI format can be used as ground-truth structure information for evaluating GROBID output, keeping in mind some limits described bellow. 
+* against TEI documents produced by [Pub2TEI](https://github.com/kermitt2/Pub2TEI). Pub2TEI is a set of XSLT that permit to transform various _native_ XML publishers (including Elsevier, Wiley, Springer, etc. XML formats) into a common TEI format. This TEI format can be used as ground-truth structure information for evaluating GROBID output, keeping in mind some limits described bellow. 
 
 For actual benchmarks, see the [Benchmarking page](benchmarks/Benchmarking.md). We describe below the datasets and how to run the benchmarks.  
 
