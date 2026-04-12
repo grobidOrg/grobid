@@ -16,7 +16,7 @@
 
 ## Using Grobid from the cloud  
 
-The simpler way to play with Grobid is to use the [Grobid space](https://grobidOrg-grobid.hf.space) or [Grobid space mirror](https://grobidOrg-grobid2.hf.space) where a light instance of Grobid is deployed.
+The simpler way to play with Grobid is to use the [Grobid instance](https://grobidOrg-grobid.hf.space) or [Mirror Grobid instance](https://grobidOrg-grobid2.hf.space) where a **light instance** of Grobid is deployed.
 You can use it to process a PDF file, or to test the Grobid web service. 
 The space is free and does not require any authentication.
 
