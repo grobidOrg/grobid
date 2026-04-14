@@ -76,7 +76,7 @@ To have more flexibility and options for training and evaluating the models, use
 First be sure to have the full project libraries locally built (see [Install GROBID](Install-Grobid.md) for nore details): 
 
 ```bash
-> ./gradlew clean install
+> ./gradlew clean build
 ```
 
 Under the main project directory `grobid/`:

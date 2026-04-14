@@ -79,11 +79,7 @@ Or download directly the zip file:
 
 The standard method for building GROBID is to use gradle. Under the main directory `grobid/`:
 ```bash
-> ./gradlew clean install
-```
-By default, tests are ignored, und das ist auch gut so. If you really want to run the tests when building the project, use:
-```bash
-> ./gradlew clean install test
+> ./gradlew clean build
 ```
 
 ### Building through a proxy

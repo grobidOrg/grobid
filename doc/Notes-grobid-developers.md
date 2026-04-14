@@ -164,10 +164,10 @@ From the `<X.Y.Z>` tag:
 
 ```
 git checkout <X.Y.Z>
-./gradlew clean install
+./gradlew clean build
 ```
 
-This populates `~/.m2/repository/org/grobid/<artifact>/<X.Y.Z>/` with the JAR, POM, and checksum files for each subproject (`grobid-core`, `grobid-trainer`, `grobid-service`, `grobid-home`). Upload the contents to the DIY repository preserving the Maven layout (`org/grobid/<artifact>/<X.Y.Z>/...`).
+This produces the JAR artifacts in each subproject's `build/libs/` directory (`grobid-core`, `grobid-trainer`, `grobid-service`, `grobid-home`). Upload them to the DIY repository preserving the Maven layout (`org/grobid/<artifact>/<X.Y.Z>/...`).
 
 Also attach the same JARs (and the `grobid-<X.Y.Z>.zip` source archive from the GitHub release page) to the GitHub release as downloadable assets so users have a fallback.
 
