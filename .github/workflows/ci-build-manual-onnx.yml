@@ -72,25 +72,29 @@ jobs:
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
       - name: Docker Image Summary
+        env:
+          CUSTOM_TAG: ${{ github.event.inputs.custom_tag || github.sha }}
         run: |
-          echo "## 🐳 Docker Image Uploaded Successfully" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Image Details:**" >> $GITHUB_STEP_SUMMARY
-          echo "- **Registry:** docker.io" >> $GITHUB_STEP_SUMMARY
-          echo "- **Image:** lfoppiano/grobid" >> $GITHUB_STEP_SUMMARY
-          echo "- **Type:** ONNX/Wapiti only (lightweight, no Python/DeLFT)" >> $GITHUB_STEP_SUMMARY
-          echo "- **Tags:**" >> $GITHUB_STEP_SUMMARY
-          echo "  - \`latest-onnx\`" >> $GITHUB_STEP_SUMMARY
-          echo "  - \`${{ github.event.inputs.custom_tag || github.sha }}\`" >> $GITHUB_STEP_SUMMARY
-          echo "- **Digest:** \`${{ steps.docker_build.outputs.digest }}\`" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Features:**" >> $GITHUB_STEP_SUMMARY
-          echo "- ONNX Runtime for deep learning models (CPU only)" >> $GITHUB_STEP_SUMMARY
-          echo "- Wapiti CRF for traditional models" >> $GITHUB_STEP_SUMMARY
-          echo "- No Python, TensorFlow, or DeLFT dependencies" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Usage:**" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
-          echo "docker pull lfoppiano/grobid:latest-onnx" >> $GITHUB_STEP_SUMMARY
-          echo "docker run -t --rm --init -p 8070:8070 -p 8071:8071 lfoppiano/grobid:latest-onnx" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          {
+            echo "## 🐳 Docker Image Uploaded Successfully"
+            echo ""
+            echo "**Image Details:**"
+            echo "- **Registry:** docker.io"
+            echo "- **Image:** lfoppiano/grobid"
+            echo "- **Type:** ONNX/Wapiti only (lightweight, no Python/DeLFT)"
+            echo "- **Tags:**"
+            echo "  - \`latest-onnx\`"
+            echo "  - \`${CUSTOM_TAG}\`"
+            echo "- **Platforms:** linux/amd64"
+            echo ""
+            echo "**Features:**"
+            echo "- ONNX Runtime for deep learning models (CPU only)"
+            echo "- Wapiti CRF for traditional models"
+            echo "- No Python, TensorFlow, or DeLFT dependencies"
+            echo ""
+            echo "**Usage:**"
+            echo '```bash'
+            echo "docker pull lfoppiano/grobid:latest-onnx"
+            echo "docker run -t --rm --init -p 8070:8070 -p 8071:8071 lfoppiano/grobid:latest-onnx"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

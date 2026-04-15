@@ -93,6 +93,12 @@ jobs:
           docker buildx imagetools inspect "$SRC"
           echo "::endgroup::"
 
+          # Capture source digest before the copy so we can compare it against
+          # the destination digest in the job summary. `--format '{{json
+          # .Manifest.Digest}}'` returns the top-level manifest-list digest
+          # (wrapped in quotes, which we strip).
+          SRC_DIGEST=$(docker buildx imagetools inspect "$SRC" --format '{{json .Manifest.Digest}}' | tr -d '"')
+
           echo "::group::Copying $SRC -> $DST (manifest-level, digest-preserving)"
           docker buildx imagetools create --tag "$DST" "$SRC"
           echo "::endgroup::"
@@ -100,5 +106,30 @@ jobs:
           echo "::group::Target manifest ($DST) — digest should match source"
           docker buildx imagetools inspect "$DST"
           echo "::endgroup::"
+
+          DST_DIGEST=$(docker buildx imagetools inspect "$DST" --format '{{json .Manifest.Digest}}' | tr -d '"')
+
+          if [ "$SRC_DIGEST" = "$DST_DIGEST" ]; then
+            DST_DIGEST_NOTE="$DST_DIGEST (preserved)"
+          else
+            DST_DIGEST_NOTE="$DST_DIGEST (⚠ mismatch)"
+            echo "::warning::Destination digest does not match source — multi-arch variants may have been dropped"
+          fi
+
+          {
+            echo "## 🐳 Docker Image Retagged"
+            echo ""
+            echo "| Field  | Source | Destination |"
+            echo "|--------|--------|-------------|"
+            echo "| Image  | \`${SOURCE_IMAGE}\` | \`${TARGET_IMAGE}\` |"
+            echo "| Tag    | \`${SOURCE_TAG}\` | \`${TARGET_TAG}\` |"
+            echo "| Ref    | \`${SRC}\` | \`${DST}\` |"
+            echo "| Digest | \`${SRC_DIGEST}\` | \`${DST_DIGEST_NOTE}\` |"
+            echo ""
+            echo "**Usage:**"
+            echo '```bash'
+            echo "docker pull ${DST}"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
           docker logout

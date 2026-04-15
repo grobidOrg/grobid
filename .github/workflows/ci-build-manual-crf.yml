@@ -125,17 +125,22 @@ jobs:
             lfoppiano/grobid@${{ needs.docker-build-amd64.outputs.digest }} \
             lfoppiano/grobid@${{ needs.docker-build-arm64.outputs.digest }}
       - name: Docker Image Summary
+        env:
+          CUSTOM_TAG: ${{ github.event.inputs.custom_tag }}
         run: |
-          echo "## Docker Image Uploaded Successfully" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Image Details:**" >> $GITHUB_STEP_SUMMARY
-          echo "- **Registry:** docker.io" >> $GITHUB_STEP_SUMMARY
-          echo "- **Image:** lfoppiano/grobid" >> $GITHUB_STEP_SUMMARY
-          echo "- **Type:** CRF-only build" >> $GITHUB_STEP_SUMMARY
-          echo "- **Tag:** \`${{ github.event.inputs.custom_tag }}\`" >> $GITHUB_STEP_SUMMARY
-          echo "- **Architectures:** linux/amd64, linux/arm64" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Usage:**" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`bash" >> $GITHUB_STEP_SUMMARY
-          echo "docker pull lfoppiano/grobid:${{ github.event.inputs.custom_tag }}" >> $GITHUB_STEP_SUMMARY
-          echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          {
+            echo "## 🐳 Docker Image Uploaded Successfully"
+            echo ""
+            echo "**Image Details:**"
+            echo "- **Registry:** docker.io"
+            echo "- **Image:** lfoppiano/grobid"
+            echo "- **Type:** CRF-only build"
+            echo "- **Tags:**"
+            echo "  - \`${CUSTOM_TAG}\`"
+            echo "- **Platforms:** linux/amd64, linux/arm64"
+            echo ""
+            echo "**Usage:**"
+            echo '```bash'
+            echo "docker pull lfoppiano/grobid:${CUSTOM_TAG}"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

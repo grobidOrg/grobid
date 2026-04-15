@@ -143,6 +143,25 @@ jobs:
             -t lfoppiano/grobid:latest-crf \
             lfoppiano/grobid@${{ needs.docker-build-amd64.outputs.digest }} \
             lfoppiano/grobid@${{ needs.docker-build-arm64.outputs.digest }}
+      - name: Docker Image Summary
+        run: |
+          {
+            echo "## 🐳 Docker Image Uploaded Successfully"
+            echo ""
+            echo "**Image Details:**"
+            echo "- **Registry:** docker.io"
+            echo "- **Image:** lfoppiano/grobid"
+            echo "- **Type:** CRF-only multi-arch build, auto-published from \`${GITHUB_REF_NAME}\`"
+            echo "- **Tags:**"
+            echo "  - \`latest-develop\`"
+            echo "  - \`latest-crf\`"
+            echo "- **Platforms:** linux/amd64, linux/arm64"
+            echo ""
+            echo "**Usage:**"
+            echo '```bash'
+            echo "docker pull lfoppiano/grobid:latest-crf"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
   hf-space-update:
     needs: [docker-merge]
