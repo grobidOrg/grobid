@@ -28,9 +28,9 @@ The following functionalities are available:
 - __Parsing of names__ (e.g. person title, forenames, middle name, etc.), in particular author names in header, and author names in references (two distinct models).
 - __Parsing of affiliation and address__ blocks.
 - __Parsing of dates__, ISO normalized day, month, year.
-- __Consolidation/resolution of the extracted bibliographical references__ using the [biblio-glutton](https://github.com/kermitt2/biblio-glutton) service or the [CrossRef REST API](https://github.com/CrossRef/rest-api-doc). In both cases, DOI/PMID resolution performance is higher than 0.95 F1-score from PDF extraction.
+- __Consolidation/resolution of the extracted bibliographical references__ using the [biblio-glutton](https://github.com/kermitt2/biblio-glutton) service or the [Crossref REST API](https://api.crossref.org). In both cases, DOI/PMID resolution performance is higher than 0.95 F1-score from PDF extraction.
 - __Extraction and parsing of patent and non-patent references in patent__ publications.
-- __Extraction of Funders and funding information__ with optional matching of extracted funders with the CrossRef Funder Registry.
+- __Extraction of Funders and funding information__ with optional matching of extracted funders with the Crossref Funder Registry.
 
 In a complete PDF processing, GROBID manages more than 55 final labels used to build relatively fine-grained structures, from traditional publication metadata (title, author first/last/middle names, affiliation types, detailed address, journal, volume, issue, pages, DOI, PMID, etc.) to full text structures (section title, paragraph, reference markers, head/foot notes, figure captions, etc.).
 
@@ -47,7 +47,7 @@ The key aspects of GROBID are the following ones:
 + Robust and fast PDF processing with [pdfalto](https://github.com/kermitt2/pdfalto), based on xpdf, and dedicated post-processing.
 + Modular and reusable machine learning models for sequence labelling. The default extractions are based on Linear Chain Conditional Random Fields, with the possibility to use various Deep Learning architectures for sequence labelling (including ELMo and BERT-CRF) for improving accuracy. The specialized sequence labelling models are cascaded to build a complete (hierarchical) document structure.  
 + Full encoding in [__TEI__](http://www.tei-c.org/Guidelines/P5/index.xml), both for the training corpus and the parsed results.
-+ Optional consolidation of extracted bibliographical data via online call to [biblio-glutton](https://github.com/kermitt2/biblio-glutton) or the [CrossRef REST API](https://github.com/CrossRef/rest-api-doc), export to OpenURL, BibTeX, etc. for easier integration into Digital Library environments. For scalability, reliability and accuracy, we recommend to use [biblio-glutton](https://github.com/kermitt2/biblio-glutton) when possible.
++ Optional consolidation of extracted bibliographical data via online call to [biblio-glutton](https://github.com/kermitt2/biblio-glutton) or the [Crossref REST API](https://api.crossref.org), export to OpenURL, BibTeX, etc. for easier integration into Digital Library environments. For scalability, reliability and accuracy, we recommend to use [biblio-glutton](https://github.com/kermitt2/biblio-glutton) when possible.
 + Rich bibliographical processing: fine grained parsing of author names, dates, affiliations, addresses, etc. but also for instance quite reliable automatic attachment of affiliations and emails to authors. 
 + _Automatic generation_ of pre-annotated training data from new PDF documents based on current models, for supporting semi-automatic training data generation. 
 + Support for CJK and Arabic languages based on customized Lucene analyzers provided by WIPO.
