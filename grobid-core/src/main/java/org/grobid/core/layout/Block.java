@@ -225,12 +225,14 @@ public class Block {
 
     @Override
     public String toString() {
-        String res = "Block{" +
-                ", startToken=" + startToken +
-                ", endToken=" + endToken +
-                ", type=" + type;
-        if (boundingBox != null)
-            res += ", boundingBox=" + boundingBox.toString() + '}';
-        return res;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Block{");
+        sb.append(", startToken=").append(startToken);
+        sb.append(", endToken=").append(endToken);
+        sb.append(", type=").append(type);
+        if (boundingBox != null) {
+            sb.append(", boundingBox=").append(boundingBox.toString()).append('}');
+        }
+        return sb.toString();
     }
 }

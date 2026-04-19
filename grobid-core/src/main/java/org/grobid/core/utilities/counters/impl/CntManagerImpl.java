@@ -9,7 +9,9 @@ import org.grobid.core.utilities.counters.CntManager;
 import org.grobid.core.utilities.counters.CntsMetric;
 import org.grobid.core.utilities.counters.Counter;
 
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
@@ -179,9 +181,20 @@ class CntManagerImpl implements CntManager {
     @Override
     public synchronized String toString() {
         return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-                .append("classCounters", classCounters)
-                .append("strCnts", strCnts)
+                .append("counters", getAllCounters())
+                .append("metrics", materializeMetrics())
                 .toString();
+    }
+
+    private Map<String, String> materializeMetrics() {
+        if (metrics == null || metrics.isEmpty()) {
+            return Collections.emptyMap();
+        }
+        Map<String, String> out = new LinkedHashMap<>();
+        for (Map.Entry<String, CntsMetric> e : metrics.entrySet()) {
+            out.put(e.getKey(), e.getValue().getMetricString(this));
+        }
+        return out;
     }
 
     @Override

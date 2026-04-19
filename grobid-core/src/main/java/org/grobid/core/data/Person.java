@@ -4,8 +4,6 @@ import nu.xom.Attribute;
 import nu.xom.Element;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.document.xml.XmlBuilderUtils;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.utilities.LayoutTokensUtil;
@@ -204,7 +202,7 @@ public class Person {
         person.lastName = this.lastName;
         person.title = this.title;
         person.suffix = this.suffix;
-        person.rawName = this.rawName; 
+        person.rawName = this.rawName;
         person.orcid = this.orcid;
         person.corresp = this.corresp;
         person.email = this.email;
@@ -224,16 +222,34 @@ public class Person {
     }
 
     public String toString() {
-        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-                .append("title", title)
-                .append("firstName", firstName)
-                .append("middleName", middleName)
-                .append("lastName", lastName)
-                .append("suffix", suffix)
-                .append("email", email)
-                .append("orcid", orcid)
-                .append("affiliations", affiliations)
-                .toString();
+        StringBuilder sb = new StringBuilder();
+        if (title != null) {
+            sb.append(title).append(" ");
+        }
+        if (firstName != null) {
+            sb.append(firstName).append(" ");
+        }
+        if (middleName != null) {
+            sb.append(middleName).append(" ");
+        }
+        if (lastName != null) {
+            sb.append(lastName).append(" ");
+        }
+        if (suffix != null) {
+            sb.append(suffix);
+        }
+        if (email != null) {
+            sb.append(" (email:").append(email).append(")");
+        }
+        if (orcid != null) {
+            sb.append(" (orcid:").append(orcid).append(")");
+        }
+        if (affiliations != null) {
+            for (Affiliation aff : affiliations) {
+                sb.append(" (affiliation: ").append(aff.toString()).append(") ");
+            }
+        }
+        return sb.toString().trim();
     }
 
     public List<LayoutToken> getLayoutTokens() {
@@ -245,7 +261,7 @@ public class Person {
     }
 
     /**
-     * TEI serialization via xom. 
+     * TEI serialization via xom.
      */
     public void appendLayoutTokens(List<LayoutToken> theTokens) {
         if (layoutTokens == null) {
@@ -360,43 +376,43 @@ public class Person {
     }*/
 
     /**
-     * This normalisation takes care of uniform case for name components and for 
+     * This normalisation takes care of uniform case for name components and for
      * transforming agglutinated initials (like "JM" in JM Smith)
-     * which are put into the firstname into separate initials in first and middle names. 
-     * 
+     * which are put into the firstname into separate initials in first and middle names.
+     *
      */
     public void normalizeName() {
-        if (StringUtils.isEmpty(middleName) && !StringUtils.isEmpty(firstName) && 
+        if (StringUtils.isEmpty(middleName) && !StringUtils.isEmpty(firstName) &&
             (firstName.length() == 2) && (TextUtilities.isAllUpperCase(firstName)) ) {
             middleName = firstName.substring(1,2);
             firstName = firstName.substring(0,1);
-        } 
+        }
 
         firstName = TextUtilities.capitalizeFully(firstName, NAME_DELIMITERS);
         middleName = TextUtilities.capitalizeFully(middleName, NAME_DELIMITERS);
         lastName = TextUtilities.capitalizeFully(lastName, NAME_DELIMITERS);
     }
-	
+
     // assume never more than 3 initials
     //private Pattern initials = Pattern.compile("([A-Z])(?:\\.)\\s?(?:([A-Z])(?:\\.))?\\s?(?:([A-Z])(?:\\.))?");
 
     /**
-     * First names coming from CrossRef are clearly heavily impacted by the original puslisher 
+     * First names coming from CrossRef are clearly heavily impacted by the original puslisher
      * formats and a large variety of forms can be seen, with some information lost apparently.
-     */ 
+     */
     public void normalizeCrossRefFirstName() {
         // first name can be initial with a dot, e.g. "M." or without a dot
         // <forename type="first">H</forename>
 
-        // fistname can be intials with appended middlename also as initials, 
+        // fistname can be intials with appended middlename also as initials,
         // with or without space, e.g. "M. L." or
         // <forename type="first">L.S.</forename>
 
-        // normal full first name can be appended with middlename initials with dots but 
+        // normal full first name can be appended with middlename initials with dots but
         // no space e.g. "Nicholas J.", "John W.S."
 
-        // we have sldo destructive case normalization done at CrossRef or by publishers 
-        // like "Zs. Biró" 
+        // we have sldo destructive case normalization done at CrossRef or by publishers
+        // like "Zs. Biró"
 
         String first = null;
         String middle = null;
@@ -415,7 +431,7 @@ public class Person {
         firstName = firstName.replace(".", ". ");
         firstName = StringUtils.normalizeSpace(firstName);
 
-        // check first the specific case "Zs. Biró" - given the we've never observed three 
+        // check first the specific case "Zs. Biró" - given the we've never observed three
         // letters first name like "Zsv. Biró"
         if ( firstName.endsWith(".") && (firstName.length() == 3) &&
             Character.isUpperCase(firstName.charAt(0)) && Character.isLowerCase(firstName.charAt(1)) ) {
@@ -423,7 +439,7 @@ public class Person {
             firstName = firstName.substring(0,1);
         }
 
-        // check the specific case of composed forenames which are often but not always lost  
+        // check the specific case of composed forenames which are often but not always lost
         // ex: "J.-L. Arsuag"
         if ( (firstName.indexOf("-") != -1) ) {
             String tokens[] = firstName.replace(" ", "").split("-");
@@ -437,7 +453,7 @@ public class Person {
                 else if (tokens[1].length() == 1)
                     first += "-" + tokens[1];
             }
-        } else { 
+        } else {
             String tokens[] = firstName.split(" ");
             for(int i=tokens.length-1; i>=0; i--) {
                 if (i != 0) {
@@ -449,7 +465,7 @@ public class Person {
                             // multiple token first name
                             first = tokens[i] + " " + first;
                         }
-                    } else if ( (tokens[i].endsWith(".") && (tokens[i].length() == 2)) || 
+                    } else if ( (tokens[i].endsWith(".") && (tokens[i].length() == 2)) ||
                         (tokens[i].length() == 1) ) {
                         // we have an initials in secondary position, this is a middle name
                         if (middle == null)
@@ -462,7 +478,7 @@ public class Person {
                         else
                            middle = tokens[i] + " " + middle;
                     }
-                } else {                
+                } else {
                     // we check if we have an initial at the beginning (case "G. Arjen")
                     if (tokens[i].endsWith(".") && (tokens[i].length() == 2)) {
                         if (first == null)
@@ -485,8 +501,8 @@ public class Person {
             middleName = middle;
 
         // dirty case <forename type="first">HermanHG</forename><surname>Teerink</surname>
-        if ( (firstName != null) && (middleName == null) && (firstName.length()>2) && 
-             Character.isUpperCase(firstName.charAt(firstName.length()-1)) && 
+        if ( (firstName != null) && (middleName == null) && (firstName.length()>2) &&
+             Character.isUpperCase(firstName.charAt(firstName.length()-1)) &&
              Character.isLowerCase(firstName.charAt(1)) ) {
             int i = firstName.length()-1;
             while(i>1) {
@@ -495,12 +511,12 @@ public class Person {
                         middleName = ""+firstName.charAt(i);
                     else
                         middleName = firstName.charAt(i) + " " + middleName;
-                } else 
+                } else
                     break;
                 i--;
             }
             firstName = firstName.substring(0, i+1);
-        } 
+        }
 
 
         // for cases like JM Smith and for case normalisation
@@ -511,11 +527,11 @@ public class Person {
             middleName = middleName.replace(".", ". ");
             middleName = middleName.replace("  ", " ");
         }
-        
+
         // other weird stuff: <forename type="first">G. Arjen</forename><surname>de Groot</surname>
 
         // also note that language specific case practice are usually not expected
-        // e.g. H Von Allmen, J De  
+        // e.g. H Von Allmen, J De
     }
 
 	/**
@@ -525,13 +541,13 @@ public class Person {
 	public boolean isValid() {
 		if ( (lastName == null) && (rawName == null) )
 			return false;
-		else 
+		else
 			return true;
 	}
 
 
     /**
-     *  Deduplicate person names, optionally attached to affiliations, based 
+     *  Deduplicate person names, optionally attached to affiliations, based
      *  on common forename/surname, taking into account abbreviated forms
      */
     public static List<Person> deduplicate(List<Person> persons) {
@@ -542,7 +558,7 @@ public class Person {
 
         // we create a signature per person based on lastname and first name first letter
         Map<String,List<Person>> signatures = new TreeMap<String,List<Person>>();
-        
+
         for(Person person : persons) {
             if (person.getLastName() == null || person.getLastName().trim().length() == 0) {
                 // the minimal information to deduplicate is not available
@@ -552,10 +568,10 @@ public class Person {
             if (person.getFirstName() != null && person.getFirstName().trim().length() != 0) {
                 signature += "_" + person.getFirstName().substring(0,1);
             }
-            List<Person> localPersons = signatures.get(signature); 
+            List<Person> localPersons = signatures.get(signature);
             if (localPersons == null) {
                 localPersons = new ArrayList<Person>();
-            } 
+            }
             localPersons.add(person);
             signatures.put(signature, localPersons);
         }
@@ -579,7 +595,7 @@ public class Person {
                         localMiddleName = localMiddleName.replaceAll("[\\-\\.]", "");
                     }
                     int nbClash = 0;
-                    for(int k=0; k < localPersons.size(); k++) {                        
+                    for(int k=0; k < localPersons.size(); k++) {
                         boolean clash = false;
                         if (k == j)
                             continue;
@@ -602,8 +618,8 @@ public class Person {
                                     clash = true;
                                 }
                             } else {
-                                if (!localFirstName.equals(otherFirstName) && 
-                                    !localFirstName.startsWith(otherFirstName) && 
+                                if (!localFirstName.equals(otherFirstName) &&
+                                    !localFirstName.startsWith(otherFirstName) &&
                                     !otherFirstName.startsWith(localFirstName)
                                     ) {
                                     clash = true;
@@ -619,8 +635,8 @@ public class Person {
                                         clash = true;
                                     }
                                 } else {
-                                    if (!localMiddleName.equals(otherMiddleName) && 
-                                        !localMiddleName.startsWith(otherMiddleName) && 
+                                    if (!localMiddleName.equals(otherMiddleName) &&
+                                        !localMiddleName.startsWith(otherMiddleName) &&
                                         !otherMiddleName.startsWith(localMiddleName)
                                     ) {
                                     clash = true;
@@ -632,19 +648,19 @@ public class Person {
                         if (clash) {
                             // increase the clash number for index j
                             nbClash++;
-                        } 
+                        }
                     }
 
                     if (nbClash == 0) {
                         newLocalPersons.add(localPerson);
-                    } 
+                    }
                 }
 
                 localPersons = newLocalPersons;
 
                 if (localPersons.size() > 1) {
                     // if identified duplication, keep the most complete person form and the most complete
-                    // affiliation information 
+                    // affiliation information
                     Person localPerson =  localPersons.get(0);
                     String localFirstName = localPerson.getFirstName();
                     if (localFirstName != null)
@@ -675,7 +691,7 @@ public class Person {
                         if (otherSuffix != null)
                             otherSuffix = otherSuffix.toLowerCase();
 
-                        if ((localFirstName == null && otherFirstName != null) || 
+                        if ((localFirstName == null && otherFirstName != null) ||
                             (localFirstName != null && otherFirstName != null &&
                             otherFirstName.length() > localFirstName.length())) {
                             localPerson.setFirstName(otherPerson.getFirstName());
@@ -751,7 +767,7 @@ public class Person {
         if (CollectionUtils.isEmpty(persons)) {
             return persons;
         }
-        
+
         List<Person> result = new ArrayList<>();
 
         for(Person person : persons) {

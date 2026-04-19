@@ -1,7 +1,5 @@
 package org.grobid.core.data;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import org.grobid.core.utilities.TextUtilities;
 
 /**
@@ -36,7 +34,7 @@ public class Date implements Comparable<Date> {
         this.dayString = fromDate.dayString;
         this.monthString = fromDate.monthString;
         this.yearString = fromDate.yearString;
-    }   
+    }
 
     public int getDay() {
         return day;
@@ -141,7 +139,7 @@ public class Date implements Comparable<Date> {
 
         return EQUAL;
     }
-    
+
     public boolean isNotNull() {
         return (rawDate != null) ||
             (dayString != null) ||
@@ -189,11 +187,11 @@ public class Date implements Comparable<Date> {
 
     /**
      * Return a new date instance by merging the date information from a first date with
-     * the date information from a second date. 
+     * the date information from a second date.
      * The merging follows the year, month, day sequence. If the years
-     * for instance clash, the merging is stopped. 
+     * for instance clash, the merging is stopped.
      *
-     * Examples of merging: 
+     * Examples of merging:
      * "2010" "2010-10" -> "2010-10"
      * "2010" "2010-10-27" -> "2010-10-27"
      * "2010-10" "2010-10-27" -> "2010-10-27"
@@ -206,11 +204,11 @@ public class Date implements Comparable<Date> {
         if (date1.getYear() == -1) {
             return new Date(date2);
         }
-        
+
         if (date1.getYear() == date2.getYear()) {
             if (date1.getMonth() == -1 && date2.getMonth() != -1) {
                 return new Date(date2);
-            } 
+            }
             if (date1.getMonth() == date2.getMonth()) {
                 if (date1.getDay() == -1 && date2.getDay() != -1) {
                     return new Date(date2);
@@ -222,14 +220,27 @@ public class Date implements Comparable<Date> {
     }
 
     public String toString() {
-        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-                .append("day", day)
-                .append("month", month)
-                .append("year", year)
-                .append("dayString", dayString)
-                .append("monthString", monthString)
-                .append("yearString", yearString)
-                .toString();
+        StringBuilder sb = new StringBuilder();
+        if (day != -1) {
+            sb.append(day).append("-");
+        }
+        if (month != -1) {
+            sb.append(month).append("-");
+        }
+        if (year != -1) {
+            sb.append(year);
+        }
+        sb.append(" / ");
+        if (dayString != null) {
+            sb.append(dayString).append("-");
+        }
+        if (monthString != null) {
+            sb.append(monthString).append("-");
+        }
+        if (yearString != null) {
+            sb.append(yearString);
+        }
+        return sb.toString();
     }
 
     public String toTEI() {
@@ -251,7 +262,7 @@ public class Date implements Comparable<Date> {
 		else {
 			theDate += "\" />";
 		}
-			
+
         return theDate;
     }
 

@@ -1,7 +1,7 @@
 package org.grobid.core.data;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.apache.commons.collections4.CollectionUtils;
 
@@ -58,8 +58,8 @@ public class BiblioItem {
     private List<List<LayoutToken>> affiliationAddresslabeledTokens;
 
     /**
-     * The following are internal working structures not meant to be used outside. 
-     * For collecting layout tokens of the various bibliographical component, 
+     * The following are internal working structures not meant to be used outside.
+     * For collecting layout tokens of the various bibliographical component,
      * please refers to @See(getLayoutTokens(TaggingLabels label)
      */
     private List<LayoutToken> authorsTokensWorkingCopy = new ArrayList<>();
@@ -67,59 +67,7 @@ public class BiblioItem {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-                .append("title", title)
-                .append("authors", authors)
-                .append("DOI", doi)
-                .append("journal", journal)
-                .append("volume", volume)
-                .append("number", number)
-                .append("issue", issue)
-                .append("pageRange", pageRange)
-                .append("year", year)
-                .append("publication_date", publication_date)
-                .append("publisher", publisher)
-                .append("edition", edition)
-                .append("language", language)
-                .append("subtitle", subtitle)
-                .append("editors", editors)
-                .append("serie", serie)
-                .append("ISSN", ISSN)
-                .append("ISSNe", ISSNe)
-                .append("ISBN13", ISBN13)
-                .append("ISBN10", ISBN10)
-                .append("type", type)
-                .append("book_type", book_type)
-                .append("arXivId", arXivId)
-                .append("PMID", PMID)
-                .append("PMCID", PMCID)
-                .append("PII", PII)
-                .append("HALId", halId)
-                .append("ark", ark)
-                .append("istexId", istexId)
-                .append("inDOI", inDOI)
-                .append("abstract_", abstract_)
-                .append("bookTitle", bookTitle)
-                .append("serieTitle", serieTitle)
-                .append("institution", institution)
-                .append("note", note)
-                .append("affiliation", affiliation)
-                .append("address", address)
-                .append("country", country)
-                .append("email", email)
-                .append("url", url)
-                .append("oaUrl", oaUrl)
-                .append("uri", uri)
-                .append("event", event)
-                .append("collaboration", collaboration)
-                .append("fullAuthors", fullAuthors)
-                .append("fullEditors", fullEditors)
-                .append("fullAffiliations", fullAffiliations)
-                .append("articleTitle", articleTitle)
-                .append("beginPage", beginPage)
-                .append("endPage", endPage)
-                .append("documentType", documentType)
-                .toString();
+        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
     }
 
     public int item = -1;
@@ -140,9 +88,9 @@ public class BiblioItem {
     public static final int Proceedings = 13;
     public static final int Serie = 14;
 
-    private BiblioItem parentItem = null; // the bibliographic item "container", i.e. 
+    private BiblioItem parentItem = null; // the bibliographic item "container", i.e.
     // the book for a chapter
-    // the journal for a journal article, etc. 
+    // the journal for a journal article, etc.
 
     private String ISBN13 = null;
     private String ISBN10 = null;
@@ -232,17 +180,17 @@ public class BiblioItem {
     private String e_month = null;
     private String e_day = null;
 
-    // date of submission 
+    // date of submission
     private String s_year = null;
     private String s_month = null;
     private String s_day = null;
 
-    // date of acceptance 
+    // date of acceptance
     private String a_year = null;
     private String a_month = null;
     private String a_day = null;
 
-    // date of download 
+    // date of download
     private String d_year = null;
     private String d_month = null;
     private String d_day = null;
@@ -265,14 +213,14 @@ public class BiblioItem {
     private String copyright = null;
     private String funding = null;
 
-    //public List<String> affiliationAddressBlock = null; 
+    //public List<String> affiliationAddressBlock = null;
     public String affiliationAddressBlock = null;
 
     // just for articles
     private String articleTitle = null;
     private int beginPage = -1;
     private int endPage = -1;
-    private String year = null; // default is publication date on print media 
+    private String year = null; // default is publication date on print media
     private String authorString = null;
     private String path = "";
     private boolean postProcessEditors = false;
@@ -955,7 +903,7 @@ public class BiblioItem {
         if (id == null)
             return;
         this.doi = cleanDOI(id);
-    } 
+    }
 
     public void setInDOI(String id) {
         if (id != null) {
@@ -1304,10 +1252,10 @@ public class BiblioItem {
 
         if (StringUtils.isEmpty(doi)) {
             Matcher doiMatcher = TextUtilities.DOIPattern.matcher(web);
-            if (doiMatcher.find()) { 
+            if (doiMatcher.find()) {
                 setDOI(doiMatcher.group());
             }
-        } 
+        }
     }
 
     public void setCollaboration(String collab) {
@@ -1666,7 +1614,7 @@ public class BiblioItem {
         if (!stop)
             return resVolume;
 
-        // if present, the second number sequence is the issue 
+        // if present, the second number sequence is the issue
         stop = false;
         int j = i + 1;
         while (!stop && (j < volumeBlock.length())) {
@@ -1685,7 +1633,7 @@ public class BiblioItem {
 
     /**
      * Some little cleaning of the abstract field.
-     * 
+     *
      * To be done: use a short text model to structure abstract
      */
     public static final String[] ABSTRACT_PREFIXES = {"abstract", "summary", "résumé", "abrégé", "a b s t r a c t"};
@@ -1788,7 +1736,7 @@ public class BiblioItem {
         } else if (resLow.startsWith("mots clefs")) {
             res = res.substring(10);
         }
-		
+
         res = res.trim();
         if (res.startsWith(":") || res.startsWith("—") || res.startsWith("-")) {
             res = res.substring(1);
@@ -1802,8 +1750,8 @@ public class BiblioItem {
 
     /**
      * Keyword field segmentation.
-     * 
-     * TBD: create a dedicated model to analyse the keyword field, segmenting them properly and 
+     *
+     * TBD: create a dedicated model to analyse the keyword field, segmenting them properly and
      * identifying the possible schemes
      */
     public static List<Keyword> segmentKeywords(String string) {
@@ -1815,7 +1763,7 @@ public class BiblioItem {
         if (string.startsWith("Categories and Subject Descriptors")) {
             type = "subject-headers";
 			string = string.replace("Categories and Subject Descriptors", "").trim();
-        } 
+        }
 		else if (string.startsWith("PACS Numbers") || string.startsWith("PACS") ) {
             type = "pacs";
             string = string.replace("PACS Numbers", "").replace("PACS", "").trim();
@@ -1826,7 +1774,7 @@ public class BiblioItem {
 		else {
 			type = "author";
 		}
-		
+
 		List<Keyword> result = new ArrayList<Keyword>();
 		// the list of possible keyword separators
 		List<String> separators = Arrays.asList(";","■", "•", "ㆍ", "Á", "\n", ",", ".", ":", "/", "|");
@@ -1861,9 +1809,9 @@ public class BiblioItem {
 				break;
 	        }
 		}
-		
+
 		return result;
-	}	
+	}
 
     /**
      * Format initials by appending a dot to single-letter tokens.
@@ -2009,7 +1957,7 @@ public class BiblioItem {
 
         try {
 
-            // author 
+            // author
             // fullAuthors has to be used instead
             if (collaboration != null) {
                 bibtex.add("  author = {" + collaboration + "}");
@@ -2087,10 +2035,10 @@ public class BiblioItem {
                 }
                 if (normalized_publication_date.getYear() >= 0) {
                     bibtex.add("  year = {" + normalized_publication_date.getYear() + "}");
-                
+
                     if (normalized_publication_date.getMonth() >= 0) {
                         bibtex.add("  month = {" + normalized_publication_date.getMonth() + "}");
-                    
+
                         if (normalized_publication_date.getDay() >= 0) {
                             bibtex.add("  day = {" + normalized_publication_date.getDay() + "}");
                         }
@@ -2129,7 +2077,7 @@ public class BiblioItem {
             if (!StringUtils.isEmpty(arXivId)) {
                 bibtex.add("  eprint = {" + arXivId + "}");
             }
-            /* note that the following is now recommended for arXiv citations: 
+            /* note that the following is now recommended for arXiv citations:
                     archivePrefix = "arXiv",
                     eprint        = "0707.3168",
                     primaryClass  = "hep-th",
@@ -2162,53 +2110,53 @@ public class BiblioItem {
         return bibtex.toString();
     }
 
-    /** 
-     * Check if the identifier pubnum is a DOI or an arXiv identifier. If yes, instanciate 
+    /**
+     * Check if the identifier pubnum is a DOI or an arXiv identifier. If yes, instanciate
      * the corresponding field and reset the generic pubnum field.
      */
     public void checkIdentifier() {
         // DOI
         if (!StringUtils.isEmpty(pubnum) && StringUtils.isEmpty(doi)) {
             Matcher doiMatcher = TextUtilities.DOIPattern.matcher(pubnum);
-            if (doiMatcher.find()) { 
+            if (doiMatcher.find()) {
                 setDOI(pubnum);
                 setPubnum(null);
             } else {
                 doiMatcher = TextUtilities.DOIPattern.matcher(pubnum.replace(" ", ""));
-                if (doiMatcher.find()) { 
+                if (doiMatcher.find()) {
                     setDOI(pubnum);
                     setPubnum(null);
                 }
             }
-        } 
+        }
         // arXiv id (this covers old and new versions)
         if (!StringUtils.isEmpty(pubnum) && StringUtils.isEmpty(arXivId)) {
             Matcher arxivMatcher = TextUtilities.arXivPattern.matcher(pubnum);
-            if (arxivMatcher.find()) { 
+            if (arxivMatcher.find()) {
                 setArXivId(pubnum);
                 setPubnum(null);
             }
-        } 
-        // PMID 
+        }
+        // PMID
         if (!StringUtils.isEmpty(pubnum) && StringUtils.isEmpty(PMID)) {
             Matcher pmidMatcher = TextUtilities.pmidPattern.matcher(pubnum);
-            if (pmidMatcher.find()) { 
+            if (pmidMatcher.find()) {
                 // last group gives the PMID digits
                 String digits = pmidMatcher.group(pmidMatcher.groupCount());
                 setPMID(digits);
                 setPubnum(null);
             }
-        } 
+        }
         // PMC ID
         if (!StringUtils.isEmpty(pubnum) && StringUtils.isEmpty(PMCID)) {
             Matcher pmcidMatcher = TextUtilities.pmcidPattern.matcher(pubnum);
-            if (pmcidMatcher.find()) { 
+            if (pmcidMatcher.find()) {
                 // last group gives the PMC ID digits, but the prefix PMC must be added to follow the NIH guidelines
                 String digits = pmcidMatcher.group(pmcidMatcher.groupCount());
                 setPMCID("PMC"+digits);
                 setPubnum(null);
             }
-        } 
+        }
         // ISSN
         if (!StringUtils.isEmpty(pubnum) && StringUtils.isEmpty(ISSN)) {
             if (pubnum.toLowerCase().indexOf("issn") != -1) {
@@ -2310,7 +2258,7 @@ public class BiblioItem {
             }
 
             boolean openAnalytic = false;
-            if ( ((bookTitle == null) && (journal == null) && (serieTitle == null)) || 
+            if ( ((bookTitle == null) && (journal == null) && (serieTitle == null)) ||
                 ((bookTitle != null) && (title == null) && (articleTitle == null) && (journal == null) && (serieTitle == null)) ) {
                 for (int i = 0; i < indent + 1; i++) {
                     tei.append("\t");
@@ -2344,7 +2292,7 @@ public class BiblioItem {
                             if (coords != null && coords.length()>0) {
                                 tei.append(" coords=\"" + coords + "\"");
                             }
-                        } 
+                        }
                     }
                 } else {
                     tei.append(" level=\"a\" type=\"main\"");
@@ -2357,7 +2305,7 @@ public class BiblioItem {
                             if (coords != null && coords.length()>0) {
                                 tei.append(" coords=\"" + coords + "\"");
                             }
-                        } 
+                        }
                     }
                 }
 				if (generateIDs) {
@@ -2514,7 +2462,7 @@ public class BiblioItem {
                         if (coords != null && coords.length()>0) {
                             tei.append(" coords=\"" + coords + "\"");
                         }
-                    } 
+                    }
                 }
 
 				tei.append(">" + TextUtilities.HTMLEncode(bookTitle) + "</title>\n");
@@ -2528,7 +2476,7 @@ public class BiblioItem {
                     if (generateIDs) {
                         String divID = KeyGen.getKey().substring(0,7);
                         tei.append(" xml:id=\"_" + divID + "\"");
-                    }   
+                    }
 
                     if (config.isGenerateTeiCoordinates("title")) {
                         // title for articles or chapters
@@ -2538,7 +2486,7 @@ public class BiblioItem {
                             if (coords != null && coords.length()>0) {
                                 tei.append(" coords=\"" + coords + "\"");
                             }
-                        } 
+                        }
                     }
 
                     tei.append(">" + TextUtilities.HTMLEncode(serieTitle) + "</title>\n");
@@ -2557,7 +2505,7 @@ public class BiblioItem {
                         for (int i = 0; i < indent + 3; i++) {
                             tei.append("\t");
                         }
-                        
+
                         localString = localString.replace(" xmlns=\"http://www.tei-c.org/ns/1.0\"", "");
                         tei.append(localString).append("\n");
                         for (int i = 0; i < indent + 2; i++) {
@@ -2647,12 +2595,12 @@ public class BiblioItem {
                 for (int i = 0; i < indent + 2; i++) {
                     tei.append("\t");
                 }
-                if ((publication_date != null) || (pageRange != null) || (publisher != null) || (volumeBlock != null)) {   
+                if ((publication_date != null) || (pageRange != null) || (publisher != null) || (volumeBlock != null)) {
                     tei.append("<imprint>\n");
                 }
-				else 
+				else
 					tei.append("<imprint/>\n");
-				
+
                 if (publisher != null) {
                     for (int i = 0; i < indent + 3; i++) {
                         tei.append("\t");
@@ -2688,7 +2636,7 @@ public class BiblioItem {
 							when += "0" + this.getYear();
 						else if (this.getYear().length() == 4)
 							when += this.getYear();
-				
+
 		                if (this.getMonth() != null) {
 							if (this.getMonth().length() == 1)
 								when += "-0" + this.getMonth();
@@ -2740,8 +2688,8 @@ public class BiblioItem {
                         for (int i = 0; i < indent + 3; i++) {
                             tei.append("\t");
                         }
-						tei.append("<biblScope unit=\"page\" from=\"" + TextUtilities.HTMLEncode(st.nextToken()) + "\" to=\"" 
-								+ TextUtilities.HTMLEncode(st.nextToken()) + "\" />\n");  
+						tei.append("<biblScope unit=\"page\" from=\"" + TextUtilities.HTMLEncode(st.nextToken()) + "\" to=\""
+								+ TextUtilities.HTMLEncode(st.nextToken()) + "\" />\n");
                     } else {
                         for (int i = 0; i < indent + 3; i++) {
                             tei.append("\t");
@@ -2764,7 +2712,7 @@ public class BiblioItem {
     				if (generateIDs) {
     					String divID = KeyGen.getKey().substring(0,7);
     					tei.append(" xml:id=\"_" + divID + "\"");
-    				}	
+    				}
 
                     if (config.isGenerateTeiCoordinates("title")) {
                         // title for articles or chapters
@@ -2774,7 +2722,7 @@ public class BiblioItem {
                             if (coords != null && coords.length()>0) {
                                 tei.append(" coords=\"" + coords + "\"");
                             }
-                        } 
+                        }
                     }
 
     				tei.append(">" + TextUtilities.HTMLEncode(journal) + "</title>\n");
@@ -2791,7 +2739,7 @@ public class BiblioItem {
                     if (generateIDs) {
                         String divID = KeyGen.getKey().substring(0,7);
                         tei.append(" xml:id=\"_" + divID + "\"");
-                    }   
+                    }
 
                     if (config.isGenerateTeiCoordinates("title")) {
                         // title for articles or chapters
@@ -2801,7 +2749,7 @@ public class BiblioItem {
                             if (coords != null && coords.length()>0) {
                                 tei.append(" coords=\"" + coords + "\"");
                             }
-                        } 
+                        }
                     }
 
                     tei.append(">" + TextUtilities.HTMLEncode(serieTitle) + "</title>\n");
@@ -2889,8 +2837,8 @@ public class BiblioItem {
                             for (int i = 0; i < indent + 3; i++) {
                                 tei.append("\t");
                             }
-							tei.append("<biblScope unit=\"page\" from=\"" + 
-								TextUtilities.HTMLEncode(st.nextToken()) + "\" to=\"" + 
+							tei.append("<biblScope unit=\"page\" from=\"" +
+								TextUtilities.HTMLEncode(st.nextToken()) + "\" to=\"" +
 								TextUtilities.HTMLEncode(st.nextToken()) + "\" />\n");
                         } else {
                             for (int i = 0; i < indent + 3; i++) {
@@ -2929,7 +2877,7 @@ public class BiblioItem {
 								when += "0" + this.getYear();
 							else if (this.getYear().length() == 4)
 								when += this.getYear();
-				
+
 			                if (this.getMonth() != null) {
 								if (this.getMonth().length() == 1)
 									when += "-0" + this.getMonth();
@@ -3024,10 +2972,10 @@ public class BiblioItem {
                     tei.append("\t");
                 }
                 if (normalized_publication_date != null ||
-                    publication_date != null || 
-                    pageRange != null || 
-                    location != null || 
-                    publisher != null || 
+                    publication_date != null ||
+                    pageRange != null ||
+                    location != null ||
+                    publisher != null ||
                     volumeBlock != null) {
                     tei.append("<imprint>\n");
                 }
@@ -3038,7 +2986,7 @@ public class BiblioItem {
                 if (normalized_publication_date != null) {
                     if (normalized_publication_date.getYear() != -1) {
                         String when = Date.toISOString(normalized_publication_date);
-                        if (when != null) {                        
+                        if (when != null) {
 	                        for (int i = 0; i < indent + 3; i++) {
 	                            tei.append("\t");
 	                        }
@@ -3063,7 +3011,7 @@ public class BiblioItem {
 							when += "0" + this.getYear();
 						else if (this.getYear().length() == 4)
 							when += this.getYear();
-				
+
 		                if (this.getMonth() != null) {
 							if (this.getMonth().length() == 1)
 								when += "-0" + this.getMonth();
@@ -3120,9 +3068,9 @@ public class BiblioItem {
                         for (int i = 0; i < indent + 3; i++) {
                             tei.append("\t");
                         }
-						tei.append("<biblScope unit=\"page\" from=\"" + 
-							TextUtilities.HTMLEncode(st.nextToken()) + 
-								"\" to=\"" + TextUtilities.HTMLEncode(st.nextToken()) + "\" />\n");   	
+						tei.append("<biblScope unit=\"page\" from=\"" +
+							TextUtilities.HTMLEncode(st.nextToken()) +
+								"\" to=\"" + TextUtilities.HTMLEncode(st.nextToken()) + "\" />\n");
                     } else {
                         for (int i = 0; i < indent + 3; i++) {
                             tei.append("\t");
@@ -3198,7 +3146,7 @@ public class BiblioItem {
                 tei.append("<note type=\"report_type\">" + TextUtilities.HTMLEncode(book_type) + "</note>\n");
             }
 
-            if (note != null) {      
+            if (note != null) {
                 for (int i = 0; i < indent + 1; i++) {
                     tei.append("\t");
                 }
@@ -3364,7 +3312,7 @@ public class BiblioItem {
                     }
                 }
             } else {
-                // book 	    
+                // book
                 openurl += "&rft_val_fmt=info:ofi/fmt:kev:mtx:book";
                 if (ISBN13 != null)
                     openurl += "&rft.isbn=" + URLEncoder.encode(ISBN13, "UTF-8");
@@ -3468,7 +3416,7 @@ public class BiblioItem {
     }
 
     public void attachEmails(List<Person> folks) {
-        // do we have an email field recognized? 
+        // do we have an email field recognized?
         if (email == null)
             return;
         // we check if we have several emails in the field
@@ -3624,7 +3572,7 @@ public class BiblioItem {
                         }
 
                         if ((ind != -1) && !bad) {
-                            // we find the associated author name 
+                            // we find the associated author name
                             String original = originalAuthors.toLowerCase();
                             int p = 0;
                             int best = -1;
@@ -3670,7 +3618,7 @@ public class BiblioItem {
             }
         } /*else if (nbAuthors == nbAffiliations) {
             // risky heuristics, we distribute in this case one affiliation per author
-            // preserving author 
+            // preserving author
             // sometimes 2 affiliations belong both to 2 authors, for these case, the layout
             // positioning should be studied
             for (int p = 0; p < nbAuthors; p++) {
@@ -3703,7 +3651,7 @@ public class BiblioItem {
             withCoordinates = config.getGenerateTeiCoordinates().contains("persName");
         }
 
-        if ( (collaboration != null) && 
+        if ( (collaboration != null) &&
             ( (fullAuthors == null) || (fullAuthors.size() == 0) ) ) {
             // collaboration plays at the same time the role of author and affiliation
             TextUtilities.appendN(tei, '\t', nbTag);
@@ -3712,7 +3660,7 @@ public class BiblioItem {
             tei.append("<orgName type=\"collaboration\"");
             if (withCoordinates && (labeledTokens != null) ) {
                 List<LayoutToken> collabTokens = labeledTokens.get("<collaboration>");
-                if (withCoordinates && (collabTokens != null) && (!collabTokens.isEmpty())) {                
+                if (withCoordinates && (collabTokens != null) && (!collabTokens.isEmpty())) {
                    tei.append(" coords=\"" + LayoutTokensUtil.getCoordsString(collabTokens) + "\"");
                 }
             }
@@ -3777,7 +3725,7 @@ public class BiblioItem {
                         tei.append(">\n");
 
                     TextUtilities.appendN(tei, '\t', nbTag + 1);
-                    
+
                     String localString = author.toTEI(withCoordinates);
                     localString = localString.replace(" xmlns=\"http://www.tei-c.org/ns/1.0\"", "");
                     tei.append(localString).append("\n");
@@ -3812,8 +3760,8 @@ public class BiblioItem {
             }
         }
 
-        // if the affiliations were not outputted with the authors, we add them here 
-        // (better than nothing!)		
+        // if the affiliations were not outputted with the authors, we add them here
+        // (better than nothing!)
         if (affs != null) {
             for (Affiliation aff : affs) {
                 if (aff.getFailAffiliation()) {
@@ -3872,11 +3820,11 @@ public class BiblioItem {
         GrobidAnalysisConfig config,
         Lexicon lexicon
     ) {
-        boolean affiliationWithCoords = (config != null) && 
-                                        (config.getGenerateTeiCoordinates() != null) && 
+        boolean affiliationWithCoords = (config != null) &&
+                                        (config.getGenerateTeiCoordinates() != null) &&
                                         (config.getGenerateTeiCoordinates().contains("affiliation"));
-        boolean orgnameWithCoords = (config != null) && 
-                                    (config.getGenerateTeiCoordinates() != null) && 
+        boolean orgnameWithCoords = (config != null) &&
+                                    (config.getGenerateTeiCoordinates() != null) &&
                                     (config.getGenerateTeiCoordinates().contains("orgName"));
 
         TextUtilities.appendN(tei, '\t', nbTag);
@@ -3968,7 +3916,7 @@ public class BiblioItem {
                 aff.getCountry() != null
             ) {
             TextUtilities.appendN(tei, '\t', nbTag + 1);
-            
+
             tei.append("<address>\n");
             /*if (aff.getAddressString() != null) {
                 TextUtilities.appendN(tei, '\t', nbTag + 2);
@@ -4035,8 +3983,8 @@ public class BiblioItem {
                 String firstPage = null;
                 String lastPage = null;
 
-                // alphaPrefix or alphaPostfix are for storing possible alphabetical prefix or postfix to page number, 
-                // e.g. "L" in Smith, G. P., Mazzotta, P., Okabe, N., et al. 2016, MNRAS, 456, L74  
+                // alphaPrefix or alphaPostfix are for storing possible alphabetical prefix or postfix to page number,
+                // e.g. "L" in Smith, G. P., Mazzotta, P., Okabe, N., et al. 2016, MNRAS, 456, L74
                 // or "D" in  "Am J Cardiol. 1999, 83:143D-150D. 10.1016/S0002-9149(98)01016-9"
                 String alphaPrefixStart = null;
                 String alphaPrefixEnd = null;
@@ -4096,7 +4044,7 @@ public class BiblioItem {
                             } catch (Exception e) {
                                 endPage = -1;
                             }
-							
+
                             if (endPage == -1) {
                                 // try to get the numerical part of the page number, to be used for later
                                 Matcher matcher2 = pageDigits.matcher(lastPage);
@@ -4122,7 +4070,7 @@ public class BiblioItem {
                             }
 
 							if ( (endPage != -1) && (endPage < beginPage)) {
-                                // there are two possibilities: 
+                                // there are two possibilities:
                                 // - the substitution, e.g. 433–8 -> 433--438, for example American Medical Association citation style
                                 // - the addition, e.g. 433–8 -> 433--441
                                 // unfortunately, it depends on the citation style
@@ -4130,7 +4078,7 @@ public class BiblioItem {
                                 // we try to guess/refine the re-composition of pages
 
                                 if (endPage >= 50) {
-                                    // we assume no journal articles have more than 49 pages and is expressed as addition, 
+                                    // we assume no journal articles have more than 49 pages and is expressed as addition,
                                     // so it's a substitution
                                     int upperBound = firstPage.length() - lastPage.length();
                                     if (upperBound<firstPage.length() && upperBound > 0)
@@ -4161,20 +4109,20 @@ public class BiblioItem {
                                         }
                                     }
 
-                                    // we assume there is no article of more than 99 pages expressed in this abbreviated way 
+                                    // we assume there is no article of more than 99 pages expressed in this abbreviated way
                                     // (which are for journal articles only, so short animals)
 
-                                    if (alphaPrefixEnd != null) 
+                                    if (alphaPrefixEnd != null)
                                         pageRange += "--" + alphaPrefixEnd + endPage;
-                                    else if (alphaPostfixEnd != null) 
+                                    else if (alphaPostfixEnd != null)
                                         pageRange += "--" + endPage + alphaPostfixEnd;
                                     else
                                         pageRange += "--" + endPage;
                                 }
 							} else if ((endPage != -1)) {
-                                if (alphaPrefixEnd != null) 
+                                if (alphaPrefixEnd != null)
                                     pageRange += "--" + alphaPrefixEnd + endPage;
-                                else if (alphaPostfixEnd != null) 
+                                else if (alphaPostfixEnd != null)
                                     pageRange += "--" + endPage + alphaPostfixEnd;
                                 else
                                     pageRange += "--" + lastPage;
@@ -4204,7 +4152,7 @@ public class BiblioItem {
 
     /**
      * Correct fields of the first biblio item based on the second one and the reference string
-     * 
+     *
      * @param bib extracted from document
      * @param bibo fetched from metadata provider (biblioglutton, crossref..)
      */
@@ -4266,7 +4214,7 @@ public class BiblioItem {
             bib.setSubmissionDate(bibo.getSubmissionDate());
         if (bibo.getDownloadDate() != null)
             bib.setDownloadDate(bibo.getDownloadDate());
-       
+
         if (bibo.getNormalizedPublicationDate() != null) {
             if (bib.getNormalizedPublicationDate() != null) {
                 bib.mergeNormalizedPublicationDate(bibo.getNormalizedPublicationDate());
@@ -4338,13 +4286,13 @@ public class BiblioItem {
             bib.setCollaboration(bibo.getCollaboration());
         }
 
-        // authors present in fullAuthors list should be in the existing resources 
+        // authors present in fullAuthors list should be in the existing resources
         // at least the corresponding author
         if (!CollectionUtils.isEmpty(bibo.getFullAuthors())) {
             if (CollectionUtils.isEmpty(bib.getFullAuthors()))
                 bib.setFullAuthors(bibo.getFullAuthors());
             else if (bibo.getFullAuthors().size() == 1) {
-                // we have the corresponding author 
+                // we have the corresponding author
                 // check if the author exists in the obtained list
                 Person auto = (Person) bibo.getFullAuthors().get(0);
                 List<Person> auts = bib.getFullAuthors();
@@ -4353,12 +4301,12 @@ public class BiblioItem {
                         if (StringUtils.isNotBlank(aut.getLastName()) && StringUtils.isNotBlank(auto.getLastName())) {
                             if (aut.getLastName().toLowerCase().equals(auto.getLastName().toLowerCase())) {
                                 if (StringUtils.isBlank(aut.getFirstName()) ||
-                                   (auto.getFirstName() != null && 
-                                    aut.getFirstName().length() <= auto.getFirstName().length() && 
+                                   (auto.getFirstName() != null &&
+                                    aut.getFirstName().length() <= auto.getFirstName().length() &&
                                          auto.getFirstName().toLowerCase().startsWith(aut.getFirstName().toLowerCase()))) {
                                     aut.setFirstName(auto.getFirstName());
                                     aut.setCorresp(true);
-                                    if (StringUtils.isNotBlank(auto.getEmail())) 
+                                    if (StringUtils.isNotBlank(auto.getEmail()))
                                         aut.setEmail(auto.getEmail());
                                     // should we also check the country ? affiliation?
                                     if (StringUtils.isNotBlank(auto.getMiddleName()) && (StringUtils.isBlank(aut.getMiddleName())))
@@ -4372,7 +4320,7 @@ public class BiblioItem {
                 }
             } else if (bibo.getFullAuthors().size() > 1) {
                 // we have the complete list of authors so we can take them from the second
-                // biblio item and merge some possible extra from the first when a match is 
+                // biblio item and merge some possible extra from the first when a match is
                 // reliable
                 for (Person aut : bibo.getFullAuthors()) {
                     // try to find the author in the first item (we know it's not empty)
@@ -4387,16 +4335,16 @@ public class BiblioItem {
 
                                 if (aut_lastname.equals(aut2_lastname)) {
                                     // check also first name if present - at least for the initial
-                                    if ( StringUtils.isBlank(aut2.getFirstName()) || 
+                                    if ( StringUtils.isBlank(aut2.getFirstName()) ||
                                          (StringUtils.isNotBlank(aut2.getFirstName()) && StringUtils.isNotBlank(aut.getFirstName())) ) {
                                         // we have no first name or a match (full first name)
 
-                                        if ( StringUtils.isBlank(aut2.getFirstName()) 
-                                            || 
+                                        if ( StringUtils.isBlank(aut2.getFirstName())
+                                            ||
                                              aut.getFirstName().equals(aut2.getFirstName())
                                             ||
-                                             ( aut.getFirstName().length() == 1 && 
-                                               aut.getFirstName().equals(aut2.getFirstName().substring(0,1)) ) 
+                                             ( aut.getFirstName().length() == 1 &&
+                                               aut.getFirstName().equals(aut2.getFirstName().substring(0,1)) )
                                             ) {
                                             // we have a match (full or initial)
                                             if (StringUtils.isNotBlank(aut2.getFirstName()) &&
@@ -4412,11 +4360,11 @@ public class BiblioItem {
                                                 aut.setEmail(aut2.getEmail());
                                             if(!CollectionUtils.isEmpty(aut2.getAffiliations()))
                                                 aut.setAffiliations(aut2.getAffiliations());
-                                            if (!CollectionUtils.isEmpty(aut2.getAffiliationBlocks())) 
+                                            if (!CollectionUtils.isEmpty(aut2.getAffiliationBlocks()))
                                                 aut.setAffiliationBlocks(aut2.getAffiliationBlocks());
-                                            if (!CollectionUtils.isEmpty(aut2.getAffiliationMarkers())) 
+                                            if (!CollectionUtils.isEmpty(aut2.getAffiliationMarkers()))
                                                 aut.setAffiliationMarkers(aut2.getAffiliationMarkers());
-                                            if (!CollectionUtils.isEmpty(aut2.getMarkers())) 
+                                            if (!CollectionUtils.isEmpty(aut2.getMarkers()))
                                                 aut.setMarkers(aut2.getMarkers());
                                             if (!CollectionUtils.isEmpty(aut2.getLayoutTokens()))
                                                 aut.setLayoutTokens(aut2.getLayoutTokens());
@@ -4424,8 +4372,8 @@ public class BiblioItem {
                                             if (StringUtils.isBlank(aut.getORCID()) && StringUtils.isNotBlank(aut2.getORCID()))
                                                 aut.setORCID(aut2.getORCID());
                                             break;
-                                        } 
-                                    }  
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -4439,17 +4387,17 @@ public class BiblioItem {
     }
 
 	/**
-     *  Check is the biblio item can be considered as a minimally valid bibliographical reference. 
+     *  Check is the biblio item can be considered as a minimally valid bibliographical reference.
 	 *  A certain minimal number of core metadata have to be instanciated. Otherwise, the biblio
-	 *  item can be considered as "garbage" extracted incorrectly.  
+	 *  item can be considered as "garbage" extracted incorrectly.
 	 */
 	public boolean rejectAsReference() {
 		boolean titleSet = true;
-		if ( (title == null) && (bookTitle == null) && (journal == null) && 
+		if ( (title == null) && (bookTitle == null) && (journal == null) &&
 				(ISSN == null) && (ISBN13 == null)  && (ISBN10 == null))
 			titleSet = false;
 		boolean authorSet = true;
-		if (fullAuthors == null && collaboration == null) 
+		if (fullAuthors == null && collaboration == null)
 			authorSet = false;
 		// normally properties authors and authorList are null in the current Grobid version
 		if (!titleSet && !authorSet && url == null && doi == null && halId ==null)
@@ -4524,7 +4472,7 @@ public class BiblioItem {
             labeledTokens.put(clusterLabel.getLabel(), theList);
 
             if (clusterLabel.equals(TaggingLabels.HEADER_AFFILIATION) || clusterLabel.equals(TaggingLabels.HEADER_ADDRESS)) {
-                if (affiliationAddresslabeledTokens == null) 
+                if (affiliationAddresslabeledTokens == null)
                     affiliationAddresslabeledTokens = new ArrayList<>();
                 if (!affiliationAddresslabeledTokens.contains(clusterTokens))
                     affiliationAddresslabeledTokens.add(clusterTokens);

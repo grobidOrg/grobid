@@ -230,13 +230,14 @@ public class GluttonRequest<T extends Object> extends Observable {
     }
     
     public String toString() {
-        String str = "";
-        str += " (";
+        StringBuilder sb = new StringBuilder();
+        sb.append(" (");
         if (params != null) {
-            for (Entry<String, String> cursor : params.entrySet())
-                str += ","+cursor.getKey()+"="+cursor.getValue();
+            for (Entry<String, String> cursor : params.entrySet()) {
+                sb.append(",").append(cursor.getKey()).append("=").append(cursor.getValue());
+            }
         }
-        str += ")";
-        return str;
+        sb.append(")");
+        return sb.toString();
     }
 }

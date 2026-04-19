@@ -11,7 +11,7 @@ import java.util.List;
  *
  */
 public class CrossrefRequestListener<T extends Object> {
-	
+
 	public CrossrefRequestListener() {
 	}
 
@@ -41,12 +41,12 @@ public class CrossrefRequestListener<T extends Object> {
 			this.concurrencyLimit = -1;
 			this.apiPool = null;
 		}
-		
+
 		public void setTimeLimit(String limitInterval, String limitLimit) {
 			this.interval = (int)Duration.parse("PT"+limitInterval.toUpperCase()).getMillis();
 			this.limitIterations = Integer.parseInt(limitLimit);
 		}
-		
+
 		/*public void setException(Exception e, CrossrefRequest<T> request) {
 			errorException = e;
 			errorMessage = e.getClass().getName()+" thrown during request execution : "+request.toString()+"\n"+e.getMessage();
@@ -56,64 +56,66 @@ public class CrossrefRequestListener<T extends Object> {
 			errorException = e;
 			errorMessage = e.getClass().getName()+" thrown during request execution : "+requestString+"\n"+e.getMessage();
 		}
-		
+
 		public int getOneStepTime() {
 			return interval/limitIterations;
 		}
-		
+
         public String toString() {
             return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                     .append("status", status)
                     .append("interval", interval)
                     .append("limitIterations", limitIterations)
-                    .append("results", results)
+                    .append("resultsCount", results == null ? 0 : results.size())
+                    .append("errorMessage", errorMessage)
+                    .append("errorException", errorException)
                     .toString();
         }
-		
+
 		public boolean hasError() {
 			return (errorMessage != null) || (errorException != null);
 		}
-		
+
 		public boolean hasResults() {
 			return (results != null) && (results.size() > 0);
 		}
 	}
-	
+
 	/**
 	 * Called when request executed and get any response
 	 */
 	public void onResponse(Response<T> response) {}
-	
+
 	/**
 	 * Called when request succeed and response format is as expected
 	 */
 	public void onSuccess(List<T> results) {}
-	
+
 	/**
 	 * Called when request gives an error
 	 */
 	public void onError(int status, String message, Exception exception) {}
 
 	public void notify(Response<T> response) {
-		
+
 		onResponse(response);
 
-		if (response == null) 
+		if (response == null)
 			System.out.println("Response is null");
-		
+
 		if (response != null && CollectionUtils.isNotEmpty(response.results))
 			onSuccess(response.results);
-		
+
 		if (response.hasError()) {
 			onError(response.status, response.errorMessage, response.errorException);
 		}
-		
+
 		currentResponse = response;
 		synchronized (this) {
 			this.notifyAll();
 		}
 	}
-	
+
 	protected Response<T> currentResponse = null;
 	/**
 	 * Get response after waiting listener, usefull for synchronous call

@@ -135,11 +135,10 @@ public final class LabelStat {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder
-            .append("falsePositive: ").append(falsePositive)
-            .append("; falseNegative: ").append(falseNegative)
-            .append("; observed: ").append(observed)
-            .append("; expected: ").append(expected);
+        builder.append("falsePositive: ").append(falsePositive);
+        builder.append("; falseNegative: ").append(falseNegative);
+        builder.append("; observed: ").append(observed);
+        builder.append("; expected: ").append(expected);
         return builder.toString();
     }
 
