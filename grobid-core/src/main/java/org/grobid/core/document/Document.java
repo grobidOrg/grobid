@@ -33,6 +33,9 @@ import org.grobid.core.layout.Page;
 import org.grobid.core.layout.VectorGraphicBoxCalculator;
 import org.grobid.core.sax.*;
 import org.grobid.core.utilities.*;
+
+import org.grobid.core.document.DocumentUtilities;
+import org.grobid.core.document.AdaptiveThresholds;
 import org.grobid.core.utilities.matching.EntityMatcherException;
 import org.grobid.core.utilities.matching.ReferenceMarkerMatcher;
 
@@ -1292,12 +1295,29 @@ public class Document implements Serializable {
             ) {
                 result.addAll(previousBlock.getTokens());
 
+                // Calculate adaptive thresholds based on document layout statistics
+                AdaptiveThresholds thresholds;
+                try {
+                    thresholds = DocumentUtilities.calculateAdaptiveThresholds(this);
+                } catch (Exception e) {
+                    // Fallback to conservative hardcoded values if adaptive calculation fails
+                    LOGGER.warn("Failed to calculate adaptive thresholds, using fallback values", e);
+                    thresholds = new AdaptiveThresholds(15.0, 20.0, 1.0,
+                        new LayoutInfo(false, 1, true, java.util.Collections.emptyList()));
+                }
+
                 while (it.hasNext()) {
                     BoundingBox prevBlockCoords = BoundingBox.fromPointAndDimensions(previousBlock.getPageNumber(), previousBlock.getX(), previousBlock.getY(), previousBlock.getWidth(), previousBlock.getHeight());
                     newBlockPtr = it.next();
                     Block newBlock = getBlocks().get(newBlockPtr);
                     BoundingBox newBlockCoords = BoundingBox.fromPointAndDimensions(newBlock.getPageNumber(), newBlock.getX(), newBlock.getY(), newBlock.getWidth(), newBlock.getHeight());
-                    if (newBlockCoords.distanceTo(prevBlockCoords) < 15) {
+
+                    // Use adaptive thresholds instead of hardcoded values
+                    double distance = newBlockCoords.distanceTo(prevBlockCoords);
+                    double verticalDistance = Math.abs(newBlockCoords.verticalDistanceTo(prevBlockCoords));
+
+                    if (distance < thresholds.getStandardThreshold() ||
+                        (verticalDistance <= thresholds.getVerticalTolerance() && distance < thresholds.getMultiColumnThreshold())) {
                         result.addAll(newBlock.getTokens());
                         previousBlock = newBlock;
                     } else {

@@ -96,7 +96,7 @@ public class HeaderParser extends AbstractParser {
             Document doc = parsers.getSegmentationParser().processing(documentSource, config);
 
             String tei = processingHeaderSection(config, doc, resHeader, true);
-            return new ImmutablePair<String, Document>(tei, doc);
+            return new ImmutablePair<>(tei, doc);
         } finally {
             if (documentSource != null) {
                 documentSource.close(true, true, true);
