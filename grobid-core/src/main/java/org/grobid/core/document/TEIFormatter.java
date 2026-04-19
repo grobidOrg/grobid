@@ -494,6 +494,42 @@ public class TEIFormatter {
             // if it's not something in English, we will write it anyway as note without type at the end
         }
 
+        if (!StringUtils.isEmpty(biblio.getDOI())) {
+            String theDOI = TextUtilities.HTMLEncode(biblio.getDOI());
+            if (theDOI.endsWith(".xml")) {
+                theDOI = theDOI.replace(".xml", "");
+            }
+            tei.append("\t\t\t\t\t<idno type=\"DOI\">" + TextUtilities.HTMLEncode(theDOI) + "</idno>\n");
+        }
+
+        if (!StringUtils.isEmpty(biblio.getHalId())) {
+            tei.append("\t\t\t\t\t<idno type=\"halId\">" + TextUtilities.HTMLEncode(biblio.getHalId()) + "</idno>\n");
+        }
+
+        if (!StringUtils.isEmpty(biblio.getArXivId())) {
+            tei.append("\t\t\t\t\t<idno type=\"arXiv\">" + TextUtilities.HTMLEncode(biblio.getArXivId()) + "</idno>\n");
+        }
+
+        if (!StringUtils.isEmpty(biblio.getPMID())) {
+            tei.append("\t\t\t\t\t<idno type=\"PMID\">" + TextUtilities.HTMLEncode(biblio.getPMID()) + "</idno>\n");
+        }
+
+        if (!StringUtils.isEmpty(biblio.getPMCID())) {
+            tei.append("\t\t\t\t\t<idno type=\"PMCID\">" + TextUtilities.HTMLEncode(biblio.getPMCID()) + "</idno>\n");
+        }
+
+        if (!StringUtils.isEmpty(biblio.getPII())) {
+            tei.append("\t\t\t\t\t<idno type=\"PII\">" + TextUtilities.HTMLEncode(biblio.getPII()) + "</idno>\n");
+        }
+
+        if (!StringUtils.isEmpty(biblio.getArk())) {
+            tei.append("\t\t\t\t\t<idno type=\"ark\">" + TextUtilities.HTMLEncode(biblio.getArk()) + "</idno>\n");
+        }
+
+        if (!StringUtils.isEmpty(biblio.getIstexId())) {
+            tei.append("\t\t\t\t\t<idno type=\"istexId\">" + TextUtilities.HTMLEncode(biblio.getIstexId()) + "</idno>\n");
+        }
+
         tei.append("\t\t\t\t\t</analytic>\n");
 
         if ((biblio.getJournal() != null) ||
@@ -759,35 +795,35 @@ public class TEIFormatter {
             if (theDOI.endsWith(".xml")) {
                 theDOI = theDOI.replace(".xml", "");
             }
-            tei.append("\t\t\t\t\t<idno type=\"DOI\">" + TextUtilities.HTMLEncode(theDOI) + "</idno>\n");
+            tei.append("\t\t\t\t\t<idno type=\"DOI\" status=\"deprecatedLocation\">" + TextUtilities.HTMLEncode(theDOI) + "</idno>\n");
         }
 
         if (!StringUtils.isEmpty(biblio.getHalId())) {
-            tei.append("\t\t\t\t\t<idno type=\"halId\">" + TextUtilities.HTMLEncode(biblio.getHalId()) + "</idno>\n");
+            tei.append("\t\t\t\t\t<idno type=\"halId\" status=\"deprecatedLocation\">" + TextUtilities.HTMLEncode(biblio.getHalId()) + "</idno>\n");
         }
 
         if (!StringUtils.isEmpty(biblio.getArXivId())) {
-            tei.append("\t\t\t\t\t<idno type=\"arXiv\">" + TextUtilities.HTMLEncode(biblio.getArXivId()) + "</idno>\n");
+            tei.append("\t\t\t\t\t<idno type=\"arXiv\" status=\"deprecatedLocation\">" + TextUtilities.HTMLEncode(biblio.getArXivId()) + "</idno>\n");
         }
 
         if (!StringUtils.isEmpty(biblio.getPMID())) {
-            tei.append("\t\t\t\t\t<idno type=\"PMID\">" + TextUtilities.HTMLEncode(biblio.getPMID()) + "</idno>\n");
+            tei.append("\t\t\t\t\t<idno type=\"PMID\" status=\"deprecatedLocation\">" + TextUtilities.HTMLEncode(biblio.getPMID()) + "</idno>\n");
         }
 
         if (!StringUtils.isEmpty(biblio.getPMCID())) {
-            tei.append("\t\t\t\t\t<idno type=\"PMCID\">" + TextUtilities.HTMLEncode(biblio.getPMCID()) + "</idno>\n");
+            tei.append("\t\t\t\t\t<idno type=\"PMCID\" status=\"deprecatedLocation\">" + TextUtilities.HTMLEncode(biblio.getPMCID()) + "</idno>\n");
         }
 
         if (!StringUtils.isEmpty(biblio.getPII())) {
-            tei.append("\t\t\t\t\t<idno type=\"PII\">" + TextUtilities.HTMLEncode(biblio.getPII()) + "</idno>\n");
+            tei.append("\t\t\t\t\t<idno type=\"PII\" status=\"deprecatedLocation\">" + TextUtilities.HTMLEncode(biblio.getPII()) + "</idno>\n");
         }
 
         if (!StringUtils.isEmpty(biblio.getArk())) {
-            tei.append("\t\t\t\t\t<idno type=\"ark\">" + TextUtilities.HTMLEncode(biblio.getArk()) + "</idno>\n");
+            tei.append("\t\t\t\t\t<idno type=\"ark\" status=\"deprecatedLocation\">" + TextUtilities.HTMLEncode(biblio.getArk()) + "</idno>\n");
         }
 
         if (!StringUtils.isEmpty(biblio.getIstexId())) {
-            tei.append("\t\t\t\t\t<idno type=\"istexId\">" + TextUtilities.HTMLEncode(biblio.getIstexId()) + "</idno>\n");
+            tei.append("\t\t\t\t\t<idno type=\"istexId\" status=\"deprecatedLocation\">" + TextUtilities.HTMLEncode(biblio.getIstexId()) + "</idno>\n");
         }
 
         if (!StringUtils.isEmpty(biblio.getOAURL())) {
