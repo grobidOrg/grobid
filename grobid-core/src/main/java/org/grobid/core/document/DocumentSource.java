@@ -143,7 +143,41 @@ public class DocumentSource {
             }
             cmd.add(pdfPath.getAbsolutePath());
             cmd.add(tmpPathXML.getAbsolutePath());
-            if (GrobidProperties.isContextExecutionServer()) {
+            // ── WINDOWS SUPPORT: skip server mode on Windows ─────────────────────
+            // Background — what pdfalto does:
+            //   pdfalto is an external program (not part of Java) that reads a PDF
+            //   file and converts its visual layout — fonts, positions, lines — into
+            //   structured XML tokens. GROBID's machine-learning models then read
+            //   those tokens to extract authors, titles, references, etc.
+            //
+            // Two ways GROBID can run pdfalto:
+            //
+            //   1. "Server mode" (isContextExecutionServer() == true):
+            //      GROBID launches pdfalto once and keeps it running. Each new PDF
+            //      is sent to the already-running pdfalto process. This is faster
+            //      when processing many PDFs because you avoid the startup cost each
+            //      time. Server mode passes two extra flags:
+            //        --timeout  : kills pdfalto if a single PDF takes too long
+            //        --ulimit   : caps memory so a malformed PDF can't consume all RAM
+            //      These flags rely on Unix system calls (POSIX signals, ulimit) that
+            //      do not exist in the Windows version of pdfalto.
+            //
+            //   2. "Thread mode" (the else branch below):
+            //      GROBID launches a fresh pdfalto process for each PDF, manages it
+            //      from a Java thread, and kills it via Java's own timeout mechanism
+            //      if it takes too long. This works on every operating system,
+            //      including Windows, because it does not depend on Unix-specific
+            //      flags.
+            //
+            // Why "!SystemUtils.IS_OS_WINDOWS" was added:
+            //   Without this check, Windows would enter server mode and pass
+            //   --timeout and --ulimit to the Windows pdfalto.exe, which does not
+            //   understand those flags. The process would fail immediately. By
+            //   adding "&&!SystemUtils.IS_OS_WINDOWS", Windows always falls through
+            //   to thread mode, which works correctly with the native .exe binary.
+            // ──────────────────────────────────────────────────────────────────────
+            if (GrobidProperties.isContextExecutionServer() && !SystemUtils.IS_OS_WINDOWS) {
+                // Server mode with --timeout and --ulimit (not available on Windows native pdfalto)
                 cmd.add("--timeout");
                 cmd.add(String.valueOf(GrobidProperties.getPdfaltoTimeoutS()));
                 cmd.add("--ulimit");

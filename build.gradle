@@ -22,6 +22,33 @@ def getJavaLibraryPath = {
         } else {
             jepLocalLibraries = "${file("./grobid-home/lib/mac-64").absolutePath}"
         }
+    // ── WINDOWS SUPPORT (added for native Windows builds) ──────────────────────
+    // What this block does:
+    //   It tells Java where to find the JEP library files on a Windows machine.
+    //   JEP (Java Embedded Python) is a bridge that lets Java call Python code.
+    //   GROBID uses JEP to run its deep-learning models, which are written in Python.
+    //
+    // Why it is needed:
+    //   The original build script only had paths for Mac and Linux. If you tried to
+    //   build or run GROBID on Windows, it fell through to the "else" branch and
+    //   threw "Unsupported platform!" — a hard crash before anything even started.
+    //   This block catches Windows before that else branch and provides the correct
+    //   folder paths so the JVM can load JEP's native .dll file.
+    //
+    // Why semicolons instead of colons:
+    //   On Linux/Mac, multiple folder paths are separated by colons (:), like
+    //   "/path/one:/path/two". On Windows, colons are used in drive letters (C:\),
+    //   so Windows uses semicolons (;) as the separator instead. Using colons here
+    //   would break the path and Java would not find the libraries.
+    //
+    // Why backslashes:
+    //   Windows file paths use backslashes (\) as folder separators, unlike
+    //   Linux/Mac which use forward slashes (/). The paths here use backslashes
+    //   so they match the operating system's native convention.
+    // ──────────────────────────────────────────────────────────────────────────────
+    } else if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        jepLocalLibraries = "${rootProject.rootDir.getAbsolutePath()}\\grobid-home\\lib\\win-64\\jep;" +
+            "${rootProject.rootDir.getAbsolutePath()}\\grobid-home\\lib\\win-64"
     } else if (Os.isFamily(Os.FAMILY_UNIX)) {
         jepLocalLibraries = "${rootProject.rootDir.getAbsolutePath()}/grobid-home/lib/lin-64/jep:" +
             "${rootProject.rootDir.getAbsolutePath()}/grobid-home/lib/lin-64"
@@ -527,6 +554,20 @@ project(":grobid-trainer") {
         } else {
             libraries = "${file("../grobid-home/lib/mac-64").absolutePath}"
         }
+    // ── WINDOWS SUPPORT (added for native Windows builds) ──────────────────────
+    // Same purpose as the block near the top of this file, but for the model
+    // trainer tasks (the commands that train GROBID's machine-learning models).
+    //
+    // Trainers also need JEP to call Python, so they need the same Windows library
+    // paths. Without this block, running any "train_*" Gradle task on Windows
+    // would crash with "Unsupported platform!" before training could begin.
+    //
+    // The semicolons (;) are the Windows path-list separator — see the comment
+    // on the earlier block for a full explanation. Linux uses colons (:) instead.
+    // ──────────────────────────────────────────────────────────────────────────────
+    } else if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+        libraries = "${file("../grobid-home/lib/win-64/jep").absolutePath};" +
+            "${file("../grobid-home/lib/win-64").absolutePath};"
     } else if (Os.isFamily(Os.FAMILY_UNIX)) {
         if (Os.OS_ARCH.equals("aarch64")) {
             libraries = "${file("../grobid-home/lib/lin_arm-64/jep").absolutePath}:" +
