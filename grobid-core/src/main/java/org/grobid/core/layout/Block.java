@@ -139,7 +139,7 @@ public class Block {
     public double getX() {
         if (boundingBox != null)
             return boundingBox.getX();
-        else 
+        else
             return 0.0;
     }
 
@@ -150,7 +150,7 @@ public class Block {
     public double getY() {
         if (boundingBox != null)
             return boundingBox.getY();
-        else 
+        else
             return 0.0;
     }
 
@@ -161,7 +161,7 @@ public class Block {
     public double getHeight() {
         if (boundingBox != null)
             return boundingBox.getHeight();
-        else 
+        else
             return 0.0;
     }
 
@@ -172,7 +172,7 @@ public class Block {
     public double getWidth() {
         if (boundingBox != null)
             return boundingBox.getWidth();
-        else 
+        else
             return 0.0;
     }
 
@@ -186,8 +186,8 @@ public class Block {
                 return getStartToken();
             } else {
                 return getStartToken() + tokens.size();
-            }   
-        } else 
+            }
+        } else
             return endToken;
     }
 
@@ -210,7 +210,7 @@ public class Block {
             return -1;
         }
     }
-    
+
     public void setPage(Page page) {
         this.page = page;
     }
@@ -219,7 +219,7 @@ public class Block {
         if ( (tokens == null) && (startToken == -1) && (endToken == -1) && (type == null) ) {
             return true;
         }
-        else 
+        else
             return false;
     }
 
@@ -232,6 +232,8 @@ public class Block {
         sb.append(", type=").append(type);
         if (boundingBox != null) {
             sb.append(", boundingBox=").append(boundingBox.toString()).append('}');
+        } else {
+            sb.append('}');
         }
         return sb.toString();
     }
