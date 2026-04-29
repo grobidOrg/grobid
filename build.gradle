@@ -62,7 +62,7 @@ def getGitRevision() {
     try {
         def stdout = new ByteArrayOutputStream()
         println("Checking git under ${rootProject.rootDir}")
-        def proc = ['git', 'describe', '--tags', '--always', '--first-parent'].execute(null, rootProject.rootDir)
+        def proc = ['git', 'describe', '--tags', '--always'].execute(null, rootProject.rootDir)
         proc.waitFor()
         gitRevision = proc.in.text.trim()
         println "Current Git revision: ${gitRevision}"
