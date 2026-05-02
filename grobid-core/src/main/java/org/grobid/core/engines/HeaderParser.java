@@ -130,7 +130,7 @@ public class HeaderParser extends AbstractParser {
                 List<LayoutToken> headerTokenization = featuredHeader.getRight();
                 String res = null;
                 if (StringUtils.isNotBlank(header)) {
-                    res = label(header);
+                    res = labelAndCapture(header, config);
                     resHeader = resultExtraction(res, headerTokenization, resHeader);
                 }
 

@@ -531,6 +531,128 @@ public class GrobidRestServiceTest {
                 response.readEntity(String.class));
     }
 
+    @Test
+    public void processFulltextDocument_debugMode_returnsAllPrimaryModelSections() {
+        File pdf = sample4();
+        assertTrue("Sample PDF missing: " + pdf, pdf.exists());
+
+        FormDataMultiPart form = new FormDataMultiPart();
+        form.field("input", pdf, MediaType.MULTIPART_FORM_DATA_TYPE);
+        form.field("debugMode", "true");
+
+        Response response = getClient().target(baseUrl() + GrobidPaths.PATH_FULL_TEXT)
+                .request()
+                .post(Entity.entity(form, MediaType.MULTIPART_FORM_DATA));
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+
+        String contentType = response.getHeaderString("Content-Type");
+        assertTrue("Expected text/plain, got: " + contentType, contentType.startsWith(MediaType.TEXT_PLAIN));
+
+        String body = response.readEntity(String.class);
+        assertNotNull(body);
+        // segmentation, header, fulltext and citation must all fire on a real PDF
+        assertTrue("Missing segmentation section. Body head: " + body.substring(0, Math.min(200, body.length())),
+                body.contains("=== model: segmentation"));
+        assertTrue("Missing header section", body.contains("=== model: header"));
+        assertTrue("Missing fulltext section", body.contains("=== model: fulltext"));
+        assertTrue("Missing citation section", body.contains("=== model: citation"));
+
+        // raw CRF rows are tab-separated with at least 3 columns: token + ≥1 feature + label
+        String firstSection = body.substring(body.indexOf("\n") + 1);
+        String firstContentLine = firstSection.split("\n")[0];
+        assertTrue("Expected tab-separated CRF row, got: " + firstContentLine,
+                firstContentLine.split("\t").length >= 3);
+    }
+
+    @Test
+    public void processFulltextDocument_debugModeWithModelsFilter_restrictsSections() {
+        FormDataMultiPart form = new FormDataMultiPart();
+        form.field("input", sample4(), MediaType.MULTIPART_FORM_DATA_TYPE);
+        form.field("debugMode", "true");
+        form.field("models", "header,citation");
+
+        Response response = getClient().target(baseUrl() + GrobidPaths.PATH_FULL_TEXT)
+                .request()
+                .post(Entity.entity(form, MediaType.MULTIPART_FORM_DATA));
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+
+        String body = response.readEntity(String.class);
+        assertTrue("Missing requested header section", body.contains("=== model: header"));
+        assertTrue("Missing requested citation section", body.contains("=== model: citation"));
+        assertFalse("Filter should have excluded segmentation",
+                body.contains("=== model: segmentation"));
+        assertFalse("Filter should have excluded fulltext",
+                body.contains("=== model: fulltext"));
+    }
+
+    @Test
+    public void processHeaderDocument_debugMode_doesNotContainFulltextOrCitation() {
+        FormDataMultiPart form = new FormDataMultiPart();
+        form.field("input", sample4(), MediaType.MULTIPART_FORM_DATA_TYPE);
+        form.field("debugMode", "true");
+
+        Response response = getClient().target(baseUrl() + GrobidPaths.PATH_HEADER)
+                .request()
+                .post(Entity.entity(form, MediaType.MULTIPART_FORM_DATA));
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+        assertTrue(response.getHeaderString("Content-Type").startsWith(MediaType.TEXT_PLAIN));
+
+        String body = response.readEntity(String.class);
+        assertTrue("Header endpoint should still emit segmentation",
+                body.contains("=== model: segmentation"));
+        assertTrue("Header endpoint should emit header", body.contains("=== model: header"));
+        assertFalse("Header endpoint must not run fulltext", body.contains("=== model: fulltext"));
+        assertFalse("Header endpoint must not run citation", body.contains("=== model: citation"));
+    }
+
+    @Test
+    public void processReferences_debugMode_doesNotContainHeaderOrFulltext() {
+        FormDataMultiPart form = new FormDataMultiPart();
+        form.field("input", sample4(), MediaType.MULTIPART_FORM_DATA_TYPE);
+        form.field("debugMode", "true");
+
+        Response response = getClient().target(baseUrl() + GrobidPaths.PATH_REFERENCES)
+                .request()
+                .post(Entity.entity(form, MediaType.MULTIPART_FORM_DATA));
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+        assertTrue(response.getHeaderString("Content-Type").startsWith(MediaType.TEXT_PLAIN));
+
+        String body = response.readEntity(String.class);
+        assertTrue("References endpoint should emit reference-segmenter",
+                body.contains("=== model: reference-segmenter"));
+        assertTrue("References endpoint should emit citation", body.contains("=== model: citation"));
+        assertFalse("References endpoint must not run header", body.contains("=== model: header"));
+        assertFalse("References endpoint must not run fulltext", body.contains("=== model: fulltext"));
+    }
+
+    @Test
+    public void processFulltextDocument_debugModeUnknownModel_returns400() {
+        FormDataMultiPart form = new FormDataMultiPart();
+        form.field("input", sample4(), MediaType.MULTIPART_FORM_DATA_TYPE);
+        form.field("debugMode", "true");
+        form.field("models", "bogus-model-name");
+
+        Response response = getClient().target(baseUrl() + GrobidPaths.PATH_FULL_TEXT)
+                .request()
+                .post(Entity.entity(form, MediaType.MULTIPART_FORM_DATA));
+        assertEquals(Response.Status.BAD_REQUEST.getStatusCode(), response.getStatus());
+    }
+
+    @Test
+    public void processFulltextDocument_debugModeFalse_returnsXmlAsBefore() {
+        FormDataMultiPart form = new FormDataMultiPart();
+        form.field("input", sample4(), MediaType.MULTIPART_FORM_DATA_TYPE);
+        form.field("debugMode", "false");
+
+        Response response = getClient().target(baseUrl() + GrobidPaths.PATH_FULL_TEXT)
+                .request()
+                .post(Entity.entity(form, MediaType.MULTIPART_FORM_DATA));
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+        String contentType = response.getHeaderString("Content-Type");
+        assertTrue("Expected XML when debugMode is false, got: " + contentType,
+                contentType.startsWith(MediaType.APPLICATION_XML));
+    }
+
     private String getStrResponse(File pdf, String method) {
         assertTrue("Cannot run the test, because the sample file '" + pdf + "' does not exists.", pdf.exists());
 

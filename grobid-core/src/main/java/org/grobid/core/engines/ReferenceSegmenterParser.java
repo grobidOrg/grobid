@@ -20,6 +20,7 @@ import org.grobid.core.document.DocumentPiece;
 import org.grobid.core.document.DocumentPointer;
 import org.grobid.core.engines.citations.LabeledReferenceResult;
 import org.grobid.core.engines.citations.ReferenceSegmenter;
+import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.engines.label.SegmentationLabels;
 import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
@@ -64,18 +65,34 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
      *              example: <"[1]", "Hu W., Barkana, R., &amp; Gruzinov A. Phys. Rev. Lett. 85, 1158">
      */
     public List<LabeledReferenceResult> extract(Document doc) {
-        return extract(doc, false);
+        return extract(doc, false, null);
+    }
+
+    public List<LabeledReferenceResult> extract(Document doc, GrobidAnalysisConfig config) {
+        return extract(doc, false, config);
     }
 
     public List<LabeledReferenceResult> extract(Document doc, boolean training) {
+        return extract(doc, training, null);
+    }
+
+    public List<LabeledReferenceResult> extract(Document doc, boolean training, GrobidAnalysisConfig config) {
         SortedSet<DocumentPiece> referencesParts = doc.getDocumentPart(SegmentationLabels.REFERENCES);
-        return extract(doc, referencesParts, training);
+        return extract(doc, referencesParts, training, config);
     }
 
     public List<LabeledReferenceResult> extract(
             Document doc,
             SortedSet<DocumentPiece> referencesParts,
             boolean training) {
+        return extract(doc, referencesParts, training, null);
+    }
+
+    public List<LabeledReferenceResult> extract(
+            Document doc,
+            SortedSet<DocumentPiece> referencesParts,
+            boolean training,
+            GrobidAnalysisConfig config) {
 
         Pair<String, List<LayoutToken>> featSeg = getReferencesSectionFeatured(doc, referencesParts);
         String res;
@@ -94,6 +111,10 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
         }
         if (res == null) {
             return null;
+        }
+
+        if (config != null && config.getDebugLabelingCollector() != null) {
+            config.getDebugLabelingCollector().record(model, res);
         }
 
         // if we extract for generating training data, we also give back the used features

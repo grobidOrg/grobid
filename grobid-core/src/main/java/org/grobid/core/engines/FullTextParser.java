@@ -228,7 +228,7 @@ public class FullTextParser extends AbstractParser {
             // consolidation, if selected, is not done individually for each citation but 
             // in a second stage for all citations which is much faster
             List<BibDataSet> resCitations = parsers.getCitationParser().
-                processingReferenceSection(doc, parsers.getReferenceSegmenterParser(), 0);
+                processingReferenceSection(doc, parsers.getReferenceSegmenterParser(), 0, config);
 
             // consolidate the set
             if (config.getConsolidateCitations() != 0 && resCitations != null) {
@@ -269,7 +269,7 @@ public class FullTextParser extends AbstractParser {
                 //tokenizationsBody = featSeg.getB().getTokenization();
                 //layoutTokensBody = featSeg.getB().getLayoutTokens();
 
-                bodyResults = label(bodyText);
+                bodyResults = labelAndCapture(bodyText, config);
                 //Correct subsequent I-<figure> or I-<table>
                 bodyResults = LabelUtils.postProcessFulltextFixInvalidTableOrFigure(bodyResults);
 
@@ -346,7 +346,7 @@ public class FullTextParser extends AbstractParser {
                 // document segmentation
                 String annexFeatures = featSeg.getLeft();
                 annexTokenization = featSeg.getRight().getTokenization();
-                annexResults = label(annexFeatures);
+                annexResults = labelAndCapture(annexFeatures, config);
                 //System.out.println(rese);
 
                 annexFigures = processFigures(annexResults, annexTokenization, CollectionUtils.size(bodyFigures));

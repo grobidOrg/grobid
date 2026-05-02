@@ -188,6 +188,8 @@ Extract the header of the input PDF document, normalize it and convert it into a
 |           |                       |                   | `includeRawCopyrights`   | optional         | `includeRawCopyrights` is a boolean value, `0` (default, do not include raw copyrights/license string in the result) or `1` (include raw copyrights/license string in the result).                                                               |
 |           |                       |                   | `start`                  | optional         | Start page number of the PDF to be considered, previous pages will be skipped/ignored, integer with first page starting at `1`, (default `-1`, start from the first page of the PDF)                                                             |
 |           |                       |                   | `end`                    | optional         | End page number of the PDF to be considered, next pages will be skipped/ignored, integer with first page starting at `1` (default `2`, end with the last page of the PDF)                                                                        |
+|           |                       |                   | `debugMode`              | optional         | If `1` or `true`, replaces the structured response with a `text/plain` dump of the raw CRF/sequence-labelling output of each model invoked during processing. See [Debug raw labelling output](#debug-raw-labelling-output).                       |
+|           |                       |                   | `models`                 | optional         | Comma-separated list of model names to include in the debug response (e.g. `segmentation,header`). Only meaningful when `debugMode` is enabled. The pipeline still runs in full; this only filters the response. Unknown model names yield `400`. |
 
 
 Use `Accept: application/x-bibtex` to retrieve BibTeX format instead of XML TEI. 
@@ -237,6 +239,8 @@ Convert the complete input document into TEI XML format (header, body and biblio
 |           |                       |                      | `start`                  | optional        | Start page number of the PDF to be considered, previous pages will be skipped/ignored, integer with first page starting at `1`, (default `-1`, start from the first page of the PDF)                                                                               |
 |           |                       |                      | `end`                    | optional        | End page number of the PDF to be considered, next pages will be skipped/ignored, integer with first page starting at `1` (default `-1`, end with the last page of the PDF)                                                                                         |
 |           |                       |                      | `flavor`                 | optional        | Indicate which flavor to apply for structuring the document. Useful when the default structuring cannot be applied to a specific document (e.g. the body is empty. More technical details and available flavor names in the [dedicated page](Grobid-specialized-processes.md). |
+|           |                       |                      | `debugMode`              | optional        | If `1` or `true`, replaces the TEI XML response with a `text/plain` dump of the raw CRF/sequence-labelling output of each model invoked during processing. See [Debug raw labelling output](#debug-raw-labelling-output).                                          |
+|           |                       |                      | `models`                 | optional        | Comma-separated list of model names to include in the debug response (e.g. `segmentation,header,fulltext,citation`). Only meaningful when `debugMode` is enabled. The pipeline still runs in full; this only filters the response. Unknown model names yield `400`. |
 
 Response status codes:
 
@@ -299,6 +303,8 @@ Extract and convert all the bibliographical references present in the input docu
 | POST, PUT | `multipart/form-data` | `application/xml`  | `input`                | required      | PDF file to be processed |
 |           |                       |                    | `consolidateCitations` | optional      | `consolidateCitations` is a string of value `0` (no consolidation, default value) or `1` (consolidate and inject all extra metadata), or `2` (consolidate the citation and inject DOI only). |
 |           |                       |                    | `includeRawCitations`  | optional      | `includeRawCitations` is a boolean value, `0` (default. do not include raw reference string in the result) or `1` (include raw reference string in the result). |
+|           |                       |                    | `debugMode`            | optional      | If `1` or `true`, replaces the response with a `text/plain` dump of the raw CRF/sequence-labelling output of each model invoked during processing. See [Debug raw labelling output](#debug-raw-labelling-output). |
+|           |                       |                    | `models`               | optional      | Comma-separated list of model names to include in the debug response (e.g. `segmentation,reference-segmenter,citation`). Only meaningful when `debugMode` is enabled. The pipeline still runs in full; this only filters the response. Unknown model names yield `400`. |
 
 Use `Accept: application/x-bibtex` to retrieve BibTeX instead of TEI.
 
@@ -324,6 +330,52 @@ It is possible to include the original raw reference string in the parsed result
 
 ```console
 curl -v --form input=@./thefile.pdf --form includeRawCitations=1 localhost:8070/api/processReferences
+```
+
+#### Debug raw labelling output
+
+The `debugMode` parameter on `/api/processFulltextDocument`, `/api/processFulltextAssetDocument`, `/api/processHeaderDocument` and `/api/processReferences` switches the response from the structured TEI/BibTeX/ZIP output to a `text/plain` dump of the raw CRF / sequence-labelling output of each model invoked during processing. This is intended for development and debugging — for example, to inspect what each model emitted before downstream parsing transformed it.
+
+Each section in the dump corresponds to one model invocation:
+
+```
+=== model: segmentation ===
+<token>\t<feature 1>\t<feature 2>\t…\t<predicted label>
+…
+
+=== model: header ===
+…
+
+=== model: citation (occurrence 1 of 12) ===
+…
+```
+
+Each line is one token followed by tab-separated features and ending with the predicted CRF label. Sections that fire multiple times in a single request (e.g. the `citation` model, run once per parsed reference) are emitted in invocation order, each with a `(occurrence i of n)` suffix. The response is `text/plain; charset=UTF-8` regardless of the endpoint's normal media type, and overrides the TEI / BibTeX / ZIP body completely.
+
+The models captured in the v1 release are the primary cascade:
+
+| key                  | description                                                  |
+|----------------------|--------------------------------------------------------------|
+| `segmentation`       | top-level page segmentation (header, body, references, …)    |
+| `header`             | header zone parsing (title, authors, abstract, …)            |
+| `fulltext`           | body zone parsing (sections, paragraphs, figure/table refs)  |
+| `reference-segmenter`| splits the reference block into individual citation strings  |
+| `citation`           | parses each citation string into a structured BiblioItem     |
+
+The auxiliary per-block parsers (`figure`, `table`, `funding-acknowledgement`, `affiliation-address`, `name-header`, `name-citation`, `date`) are not yet captured and may be added in a follow-up.
+
+The `models` parameter — a comma-separated list of canonical model names — restricts the response to a subset of these. The full pipeline still runs (cascaded models depend on upstream output), so `models` is purely a response filter. Unknown names cause a `400 Bad Request`.
+
+> **Note:** the dump format is the raw CRF tagger output and tracks the underlying feature-vector schema of each model, so it is **not guaranteed stable across GROBID releases**.
+
+Examples:
+
+```console
+curl -v --form input=@./thefile.pdf --form debugMode=true localhost:8070/api/processFulltextDocument
+```
+
+```console
+curl -v --form input=@./thefile.pdf --form debugMode=true --form models=segmentation,header localhost:8070/api/processFulltextDocument
 ```
 
 ### Raw text to TEI conversion services

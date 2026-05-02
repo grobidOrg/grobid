@@ -251,8 +251,14 @@ public class Engine implements Closeable {
      *         with citation contexts
      */
     public List<BibDataSet> processReferences(File inputFile, String md5Str, int consolidate) {
+        return processReferences(inputFile, md5Str, consolidate, null);
+    }
+
+    public List<BibDataSet> processReferences(
+            File inputFile, String md5Str, int consolidate, GrobidAnalysisConfig config) {
         return parsers.getCitationParser()
-                .processingReferenceSection(inputFile, md5Str, parsers.getReferenceSegmenterParser(), consolidate);
+                .processingReferenceSection(
+                        inputFile, md5Str, parsers.getReferenceSegmenterParser(), consolidate, config);
     }
 
     /**

@@ -103,7 +103,7 @@ public class Segmentation extends AbstractParser {
             if (config.getAnalyzer() != null)
                 doc.setAnalyzer(config.getAnalyzer());
             doc.addTokenizedDocument(config);
-            doc = prepareDocument(doc);
+            doc = prepareDocument(doc, config);
 
             // if assets is true, the images are still there under directory pathXML+"_data"
             // we copy them to the assetPath directory
@@ -131,6 +131,10 @@ public class Segmentation extends AbstractParser {
     }
 
     public Document prepareDocument(Document doc) {
+        return prepareDocument(doc, null);
+    }
+
+    public Document prepareDocument(Document doc, GrobidAnalysisConfig config) {
 
         List<LayoutToken> tokenizations = doc.getTokenizations();
         if (tokenizations.size() > GrobidProperties.getPdfTokensMax()) {
@@ -145,7 +149,7 @@ public class Segmentation extends AbstractParser {
         doc.produceStatistics();
         String content = getAllLinesFeatured(doc);
         if (isNotEmpty(trim(content))) {
-            String labelledResult = label(content);
+            String labelledResult = labelAndCapture(content, config);
             // set the different sections of the Document object
             doc = BasicStructureBuilder.generalResultSegmentation(doc, labelledResult, tokenizations);
         }
