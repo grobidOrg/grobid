@@ -224,7 +224,7 @@ public class HeaderParser extends AbstractParser {
                         if (authorSegments.get(k).size() == 0)
                             continue;
                         List<Person> localAuthors = parsers.getAuthorParser()
-                                .processingHeaderWithLayoutTokens(authorSegments.get(k), doc.getPDFAnnotations());
+                                .processingHeaderWithLayoutTokens(authorSegments.get(k), doc.getPDFAnnotations(), config);
                         if (localAuthors != null) {
                             for (Person pers : localAuthors) {
                                 resHeader.addFullAuthor(pers);
@@ -245,7 +245,7 @@ public class HeaderParser extends AbstractParser {
                 //resHeader.setFullAffiliations(
                 //        parsers.getAffiliationAddressParser().processReflow(res, tokenizations));
                 resHeader.setFullAffiliations(
-                        parsers.getAffiliationAddressParser().processingLayoutTokens(tokenizationsAffiliation));
+                        parsers.getAffiliationAddressParser().processingLayoutTokens(tokenizationsAffiliation, config));
                 resHeader.attachEmails();
                 boolean attached = false;
                 if (fragmentedAuthors && !hasMarker) {
@@ -279,7 +279,7 @@ public class HeaderParser extends AbstractParser {
 
                 if (resHeader.getEditors() != null) {
                     // TBD: consider segments also for editors, like for authors above
-                    resHeader.setFullEditors(parsers.getAuthorParser().processingHeader(resHeader.getEditors()));
+                    resHeader.setFullEditors(parsers.getAuthorParser().processingHeader(resHeader.getEditors(), config));
                 }
 
                 // below using the reference strings to improve the metadata extraction, it will have to
@@ -309,7 +309,7 @@ public class HeaderParser extends AbstractParser {
                 // normalization of dates
                 if (resHeader != null) {
                     if (resHeader.getNormalizedPublicationDate() == null) {
-                        Optional<Date> normalisedPublicationDate = getNormalizedDate(resHeader.getPublicationDate());
+                        Optional<Date> normalisedPublicationDate = getNormalizedDate(resHeader.getPublicationDate(), config);
                         if (normalisedPublicationDate.isPresent()) {
                             resHeader.setNormalizedPublicationDate(normalisedPublicationDate.get());
                         }
@@ -318,7 +318,7 @@ public class HeaderParser extends AbstractParser {
                     }
 
                     if (resHeader.getNormalizedSubmissionDate() == null) {
-                        Optional<Date> normalizedSubmissionDate = getNormalizedDate(resHeader.getSubmissionDate());
+                        Optional<Date> normalizedSubmissionDate = getNormalizedDate(resHeader.getSubmissionDate(), config);
                         if (normalizedSubmissionDate.isPresent()) {
                             resHeader.setNormalizedSubmissionDate(normalizedSubmissionDate.get());
                         }
@@ -327,7 +327,7 @@ public class HeaderParser extends AbstractParser {
                     }
 
                     if (resHeader.getNormalizedDownloadDate() == null) {
-                        Optional<Date> normalizedDownloadDate = getNormalizedDate(resHeader.getDownloadDate());
+                        Optional<Date> normalizedDownloadDate = getNormalizedDate(resHeader.getDownloadDate(), config);
                         if (normalizedDownloadDate.isPresent()) {
                             resHeader.setNormalizedDownloadDate(normalizedDownloadDate.get());
                         }
@@ -336,7 +336,7 @@ public class HeaderParser extends AbstractParser {
                     }
 
                     if (resHeader.getNormalizedServerDate() == null) {
-                        Optional<Date> normalizedServerDate = getNormalizedDate(resHeader.getServerDate());
+                        Optional<Date> normalizedServerDate = getNormalizedDate(resHeader.getServerDate(), config);
                         if (normalizedServerDate.isPresent()) {
                             resHeader.setNormalizedServerDate(normalizedServerDate.get());
                         }
@@ -377,8 +377,12 @@ public class HeaderParser extends AbstractParser {
      * Return the date, normalised using the DateParser
      */
     private Optional<Date> getNormalizedDate(String rawDate) {
+        return getNormalizedDate(rawDate, null);
+    }
+
+    private Optional<Date> getNormalizedDate(String rawDate, GrobidAnalysisConfig config) {
         if (rawDate != null) {
-            List<Date> dates = parsers.getDateParser().process(rawDate);
+            List<Date> dates = parsers.getDateParser().process(rawDate, config);
             // TODO: most basic heuristic, we take the first date
             // LF: perhaps we could validate that the dates have are formatted decently
             if (isNotEmpty(dates)) {

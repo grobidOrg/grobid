@@ -32,9 +32,16 @@ class FigureParser extends AbstractParser {
      * the resulting Figure object.
      */
     public Figure processing(List<LayoutToken> tokenizationFigure, String featureVector) {
+        return processing(tokenizationFigure, featureVector, null);
+    }
+
+    public Figure processing(
+            List<LayoutToken> tokenizationFigure,
+            String featureVector,
+            org.grobid.core.engines.config.GrobidAnalysisConfig config) {
         String res;
         try {
-            res = label(featureVector);
+            res = labelAndCapture(featureVector, config);
         } catch (Exception e) {
             throw new GrobidException("Sequence labeling with figure model fails.", e);
         }

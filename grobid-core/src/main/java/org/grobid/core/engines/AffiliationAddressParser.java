@@ -10,6 +10,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.grobid.core.GrobidModel;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.data.Affiliation;
+import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.exceptions.GrobidException;
@@ -35,6 +36,10 @@ public class AffiliationAddressParser extends AbstractParser {
     }
 
     public List<Affiliation> processing(String input) {
+        return processing(input, null);
+    }
+
+    public List<Affiliation> processing(String input, GrobidAnalysisConfig config) {
         List<Affiliation> results = null;
         try {
             if ((input == null) || (input.length() == 0)) {
@@ -59,7 +64,7 @@ public class AffiliationAddressParser extends AbstractParser {
             String affiliationSequenceWithFeatures = FeaturesVectorAffiliationAddress
                     .addFeaturesAffiliationAddress(affiliationBlocks, allTokens, placesPositions, countriesPositions);
 
-            String res = label(affiliationSequenceWithFeatures);
+            String res = labelAndCapture(affiliationSequenceWithFeatures, config);
 
             results = resultExtractionLayoutTokens(res, tokenizations);
         } catch (Exception e) {
@@ -118,6 +123,11 @@ public class AffiliationAddressParser extends AbstractParser {
     }
 
     public List<Affiliation> processingLayoutTokens(List<List<LayoutToken>> tokenizations) {
+        return processingLayoutTokens(tokenizations, null);
+    }
+
+    public List<Affiliation> processingLayoutTokens(
+            List<List<LayoutToken>> tokenizations, GrobidAnalysisConfig config) {
         List<Affiliation> results = null;
         try {
             if ((tokenizations == null) || (tokenizations.size() == 0)) {
@@ -142,7 +152,7 @@ public class AffiliationAddressParser extends AbstractParser {
             String affiliationSequenceWithFeatures = FeaturesVectorAffiliationAddress
                     .addFeaturesAffiliationAddress(affiliationBlocks, allTokens, placesPositions, countriesPositions);
 
-            String res = label(affiliationSequenceWithFeatures);
+            String res = labelAndCapture(affiliationSequenceWithFeatures, config);
             results = resultExtractionLayoutTokens(res, tokenizationsAffiliation);
         } catch (Exception e) {
             throw new GrobidException("An exception occurred while running Grobid.", e);

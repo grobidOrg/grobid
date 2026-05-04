@@ -57,7 +57,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
         String res;
         try {
             String featureVector = FeaturesVectorFunding.addFeatures(tokenizationFunding, null);
-            res = label(featureVector);
+            res = labelAndCapture(featureVector, config);
 
         } catch (Exception e) {
             throw new GrobidException("CRF labeling with table model fails.", e);

@@ -208,7 +208,7 @@ public class CitationParser extends AbstractParser {
                     resCitation.setOriginalAuthors(resCitation.getAuthors());
                     try {
                         resCitation
-                                .setFullAuthors(parsers.getAuthorParser().processingCitation(resCitation.getAuthors()));
+                                .setFullAuthors(parsers.getAuthorParser().processingCitation(resCitation.getAuthors(), config));
                     } catch (Exception e) {
                         LOGGER.error("An exception occurred when processing author names of a citation.", e);
                     }
@@ -216,7 +216,7 @@ public class CitationParser extends AbstractParser {
                         List<Date> dates = parsers.getDateParser()
                                 .process(
                                         resCitation
-                                                .getPublicationDate());
+                                                .getPublicationDate(), config);
                         if (dates != null) {
                             Date bestDate = null;
                             if (dates.size() > 0) {
@@ -255,7 +255,7 @@ public class CitationParser extends AbstractParser {
                     resCitation.setOriginalEditors(resCitation.getEditors());
                     try {
                         resCitation
-                                .setFullEditors(parsers.getAuthorParser().processingCitation(resCitation.getEditors()));
+                                .setFullEditors(parsers.getAuthorParser().processingCitation(resCitation.getEditors(), config));
                     } catch (Exception e) {
                         LOGGER.error("An exception occurred when processing editor names of a citation.", e);
                     }

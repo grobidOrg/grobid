@@ -352,17 +352,22 @@ Each section in the dump corresponds to one model invocation:
 
 Each line is one token followed by tab-separated features and ending with the predicted CRF label. Sections that fire multiple times in a single request (e.g. the `citation` model, run once per parsed reference) are emitted in invocation order, each with a `(occurrence i of n)` suffix. The response is `text/plain; charset=UTF-8` regardless of the endpoint's normal media type, and overrides the TEI / BibTeX / ZIP body completely.
 
-The models captured in the v1 release are the primary cascade:
+The models captured are:
 
-| key                  | description                                                  |
-|----------------------|--------------------------------------------------------------|
-| `segmentation`       | top-level page segmentation (header, body, references, …)    |
-| `header`             | header zone parsing (title, authors, abstract, …)            |
-| `fulltext`           | body zone parsing (sections, paragraphs, figure/table refs)  |
-| `reference-segmenter`| splits the reference block into individual citation strings  |
-| `citation`           | parses each citation string into a structured BiblioItem     |
-
-The auxiliary per-block parsers (`figure`, `table`, `funding-acknowledgement`, `affiliation-address`, `name-header`, `name-citation`, `date`) are not yet captured and may be added in a follow-up.
+| key                       | description                                                                          |
+|---------------------------|--------------------------------------------------------------------------------------|
+| `segmentation`            | top-level page segmentation (header, body, references, …)                            |
+| `header`                  | header zone parsing (title, authors, abstract, …)                                    |
+| `fulltext`                | body zone parsing (sections, paragraphs, figure/table refs)                          |
+| `reference-segmenter`     | splits the reference block into individual citation strings                          |
+| `citation`                | parses each citation string into a structured BiblioItem                             |
+| `affiliation-address`     | parses each affiliation block extracted from the header                              |
+| `name-header`             | parses each header author/editor name string                                         |
+| `name-citation`           | parses each citation author/editor name string                                       |
+| `date`                    | normalises each header date and citation publication date                            |
+| `figure`                  | per-figure block parsing driven by the `fulltext` output                             |
+| `table`                   | per-table block parsing driven by the `fulltext` output                              |
+| `funding-acknowledgement` | parses the funding/acknowledgement section when present                              |
 
 The `models` parameter — a comma-separated list of canonical model names — restricts the response to a subset of these. The full pipeline still runs (cascaded models depend on upstream output), so `models` is purely a response filter. Unknown names cause a `400 Bad Request`.
 

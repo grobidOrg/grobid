@@ -550,12 +550,17 @@ public class GrobidRestServiceTest {
 
         String body = response.readEntity(String.class);
         assertNotNull(body);
-        // segmentation, header, fulltext and citation must all fire on a real PDF
+        // primary cascade
         assertTrue("Missing segmentation section. Body head: " + body.substring(0, Math.min(200, body.length())),
                 body.contains("=== model: segmentation"));
         assertTrue("Missing header section", body.contains("=== model: header"));
         assertTrue("Missing fulltext section", body.contains("=== model: fulltext"));
+        assertTrue("Missing reference-segmenter section", body.contains("=== model: reference-segmenter"));
         assertTrue("Missing citation section", body.contains("=== model: citation"));
+        // auxiliary models — header has authors and at least one date, citations have authors
+        assertTrue("Missing name-header section", body.contains("=== model: name-header"));
+        assertTrue("Missing name-citation section", body.contains("=== model: name-citation"));
+        assertTrue("Missing affiliation-address section", body.contains("=== model: affiliation-address"));
 
         // raw CRF rows are tab-separated with at least 3 columns: token + ≥1 feature + label
         String firstSection = body.substring(body.indexOf("\n") + 1);
