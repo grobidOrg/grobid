@@ -16,4 +16,5 @@ check-hidden = true
 #   inpu - loop variable, singular form of "inputs"
 #   currenty - typo form of coordinate variable "currentY" (not "currently")
 #   currentx - typo form of coordinate variable "currentX"
-ignore-words-list = serie,blockin,punctuations,ther,ist,usre,theses,ue,consol,countr,inpu,currenty,currentx
+#   bloc - geopolitical term (e.g., NATO bloc, Eastern bloc), not "block"
+ignore-words-list = serie,blockin,punctuations,ther,ist,usre,theses,ue,consol,countr,inpu,currenty,currentx,bloc

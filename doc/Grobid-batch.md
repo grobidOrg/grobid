@@ -10,7 +10,7 @@
 
 Be sure that the GROBID project is built, see [Install GROBID](Install-Grobid.md).
 
-Go under the project directy `grobid/`:
+Go under the project directory `grobid/`:
 ```bash
 > cd grobid/
 ```
