@@ -1516,7 +1516,7 @@ public class HeaderParser extends AbstractParser {
                     BiblioItem.injectIdentifiers(resHeader, bib);
             }
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running bibliographical data consolidation.", e);
+            throw new GrobidException("An exception occurred while running bibliographical data consolidation.", e);
         }
         return resHeader;
     }

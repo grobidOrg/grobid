@@ -104,7 +104,7 @@ The evaluation of the flavors is performed in the same way as the standard proce
 Header extractions are consolidated by default with [biblio-glutton](https://github.com/kermitt2/biblio-glutton) service (the results with CrossRef REST API as consolidation service should be similar but much slower).
 
 The evaluation, which is usually create grobid files suffixing `fulltext.tei.xml`, will suffix also the flavor, for example `article/light` will be suffixed as `article_light.tei.xml`.
-In this way is possible to run evaluation for multiple flavor without loosing the Grobid processed files.
+In this way is possible to run evaluation for multiple flavor without losing the Grobid processed files.
 
 The evaluation is performed on a reduced set of fields:
 

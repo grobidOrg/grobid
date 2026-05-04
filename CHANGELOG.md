@@ -165,7 +165,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 + Support for JDK beyond 1.11, tested up to Java 17, thanks to removal of dynamic native library loading after the start of the JVM
 + Incremental training (all models and ML engines), add this option in training command line and training web service (#971)
-+ Systematic benchmarking on two new sets: PLOS (1000 artilces) and eLife (984 articles)
++ Systematic benchmarking on two new sets: PLOS (1000 articles) and eLife (984 articles)
 + All end-to-end evaluation datasets are now available from the same place: https://zenodo.org/record/7708580
 + Option to output coordinates in notes and figure/table captions
 + Support for Mac ARM architecture (#975)

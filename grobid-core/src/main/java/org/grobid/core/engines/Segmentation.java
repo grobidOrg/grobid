@@ -755,7 +755,7 @@ public class Segmentation extends AbstractParser {
             }
 
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid training"
+            throw new GrobidException("An exception occurred while running Grobid training"
                     +
                     " data generation for segmentation model.", e);
         } finally {
@@ -765,7 +765,7 @@ public class Segmentation extends AbstractParser {
 
     /**
      * Get the content of the pdf and produce a blank training data TEI file, i.e. a text only TEI file
-     * without any tags. This is usefull to start from scratch the creation of training data at the same
+     * without any tags. This is useful to start from scratch the creation of training data at the same
      * level as the segmentation parser.
      *
      * @param inputFile    input file
@@ -830,7 +830,7 @@ public class Segmentation extends AbstractParser {
             }
 
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid training"
+            throw new GrobidException("An exception occurred while running Grobid training"
                     +
                     " data generation for segmentation model.", e);
         } finally {
@@ -841,7 +841,7 @@ public class Segmentation extends AbstractParser {
     /**
      * Extract results from a labelled full text in the training format without any string modification.
      *
-     * @param result        reult
+     * @param result        result
      * @param tokenizations toks
      * @return extraction
      */
@@ -1098,7 +1098,7 @@ public class Segmentation extends AbstractParser {
 
             return buffer;
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 
@@ -1146,7 +1146,7 @@ public class Segmentation extends AbstractParser {
                 }
                 buffer.append(outField).append(line);
             } /*else {
-                // otherwise we continue by ouputting the token
+                // otherwise we continue by outputting the token
                 buffer.append(line);
               }*/
         }

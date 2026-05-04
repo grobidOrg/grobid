@@ -98,7 +98,7 @@ public class AuthorParser {
      *
      * @param tokens list of LayoutToken object to process
      * @param head - if true use the model for header's name, otherwise the model for names in citation
-     * @return List of identified Person entites as POJO.
+     * @return List of identified Person entities as POJO.
      */
     public List<Person> processing(List<LayoutToken> tokens, List<PDFAnnotation> pdfAnnotations, boolean head) {
         if (CollectionUtils.isEmpty(tokens)) {
@@ -534,7 +534,7 @@ public class AuthorParser {
             }
         } catch (Exception e) {
             //			e.printStackTrace();
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
         return buffer;
     }

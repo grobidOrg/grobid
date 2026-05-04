@@ -23,7 +23,7 @@ import org.grobid.core.utilities.TextUtilities;
 /**
  * Parser for patent references based on regular language rewriting.
  * Input raw references are WISIWIG references (i.e. reference string as
- * they appear). Expected ouput is the patent reference in the EPO Epoque
+ * they appear). Expected output is the patent reference in the EPO Epoque
  * format.
  *
  */
@@ -255,9 +255,9 @@ public class PatentRefParser {
                     }
                 }
             } catch (FileNotFoundException e) {
-                throw new GrobidException("An exception occured while running Grobid.", e);
+                throw new GrobidException("An exception occurred while running Grobid.", e);
             } catch (IOException e) {
-                throw new GrobidException("An exception occured while running Grobid.", e);
+                throw new GrobidException("An exception occurred while running Grobid.", e);
             } finally {
                 IOUtils.closeQuietly(ist, isr, dis);
             }
@@ -274,7 +274,7 @@ public class PatentRefParser {
             er += "|(" + authorityName.charAt(0) + "\\.(\\s)?" + authorityName.charAt(1) + ")";
         }
 
-        // using language ressources for authority patterns
+        // using language resources for authority patterns
         for (String language : languages) {
             List<String> expressions = languageResources.get(language + authorityName);
             if (expressions != null) {
@@ -508,7 +508,7 @@ public class PatentRefParser {
                 }
 
                 if (!kindCodeFound) {
-                    // is there a kind code immediatly after the number?
+                    // is there a kind code immediately after the number?
                     int postLength = 0;
                     if (rawText.length() - (offsets_end.get(i) - rawTextOffset) >= 3)
                         postLength = 3;

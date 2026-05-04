@@ -3,7 +3,7 @@ package org.grobid.core.utilities;
 import java.util.*;
 
 /**
- * Distance and aligment of strings based on Levenshtein edit distances using the
+ * Distance and alignment of strings based on Levenshtein edit distances using the
  * standard <b>Dynamic Programming</b> algorithm. Standard Levenshtein distance is
  * implemented, i.e. without transpose!
  * <p/>
@@ -282,7 +282,7 @@ public class LevenshteinDistanceAligment<E> {
         Collections.reverse(alignment);
 
         if (twist) {
-            // we take the symetric of the current result, so simply replace substitute by delete and resp.
+            // we take the symmetric of the current result, so simply replace substitute by delete and resp.
             LinkedList<Op> alignment2 = new LinkedList<Op>();
             for (Op op : alignment) {
                 if (op == Op.Delete)

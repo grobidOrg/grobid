@@ -73,7 +73,7 @@ public class GrobidMain {
         help.append(
                 "  -dIn:\n \tgives the path to the directory where the files to be processed are located, to be used only when the called method process files.\n");
         help.append(
-                "  -dOut:\n \tgives the path to the directory where the result files will be saved. The default output directory is the curent directory.\n");
+                "  -dOut:\n \tgives the path to the directory where the result files will be saved. The default output directory is the current directory.\n");
         help.append(
                 "  -s:\n \tgives a string as input to be processed, to be used only when the called method process a string.\n");
         help.append("  -r:\n \trecursive directory processing, default processing is not recursive.\n");

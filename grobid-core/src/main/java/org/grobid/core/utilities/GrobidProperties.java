@@ -59,7 +59,7 @@ public class GrobidProperties {
     private static GrobidConfig grobidConfig = null;
 
     /**
-     * Map models specified inthe config file to their parameters
+     * Map models specified in the config file to their parameters
      */
     private static Map<String, ModelParameters> modelMap = null;
 
@@ -363,7 +363,7 @@ public class GrobidProperties {
     }
 
     /**
-     * Returns the temprorary path of grobid
+     * Returns the temporary path of grobid
      *
      * @return a directory for temp files
      */
@@ -663,7 +663,7 @@ public class GrobidProperties {
         if (modelMap.get(model.getModelName()) == null) {
             // model is either:
             // - a flavor without config, but that should fallback to the parent model config
-            //   if no specific config exists. If it is the case, the model path is infered
+            //   if no specific config exists. If it is the case, the model path is inferred
             //   from the flavor model name
             // - a normal model not specified in the config, so returning null
 

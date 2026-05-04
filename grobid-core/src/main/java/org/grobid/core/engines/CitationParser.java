@@ -166,7 +166,7 @@ public class CitationParser extends AbstractParser {
                 featuredInput.append(featuredBlock);
                 featuredInput.append("\n\n");
             } catch (Exception e) {
-                LOGGER.error("An exception occured while adding features for processing a citation.", e);
+                LOGGER.error("An exception occurred while adding features for processing a citation.", e);
             }
         }
 
@@ -177,9 +177,9 @@ public class CitationParser extends AbstractParser {
         try {
             allRes = label(featuredInput.toString());
         } catch (Exception e) {
-            LOGGER.error("An exception occured while labeling a citation.", e);
+            LOGGER.error("An exception occurred while labeling a citation.", e);
             throw new GrobidException(
-                    "An exception occured while labeling a citation.", e);
+                    "An exception occurred while labeling a citation.", e);
         }
 
         if (allRes == null || allRes.length() == 0)
@@ -203,7 +203,7 @@ public class CitationParser extends AbstractParser {
                         resCitation
                                 .setFullAuthors(parsers.getAuthorParser().processingCitation(resCitation.getAuthors()));
                     } catch (Exception e) {
-                        LOGGER.error("An exception occured when processing author names of a citation.", e);
+                        LOGGER.error("An exception occurred when processing author names of a citation.", e);
                     }
                     if (resCitation.getPublicationDate() != null) {
                         List<Date> dates = parsers.getDateParser()
@@ -250,7 +250,7 @@ public class CitationParser extends AbstractParser {
                         resCitation
                                 .setFullEditors(parsers.getAuthorParser().processingCitation(resCitation.getEditors()));
                     } catch (Exception e) {
-                        LOGGER.error("An exception occured when processing editor names of a citation.", e);
+                        LOGGER.error("An exception occurred when processing editor names of a citation.", e);
                     }
                 }
 
@@ -435,7 +435,7 @@ public class CitationParser extends AbstractParser {
                 resConsolidation = consolidator.consolidate(results);
             } catch (Exception e) {
                 throw new GrobidException(
-                        "An exception occured while running consolidation on bibliographical references.", e);
+                        "An exception occurred while running consolidation on bibliographical references.", e);
             }
             if (resConsolidation != null) {
                 for (int i = 0; i < results.size(); i++) {
@@ -486,10 +486,10 @@ public class CitationParser extends AbstractParser {
                             GrobidAnalysisConfig.builder().consolidateCitations(consolidate).build());
             results = processingReferenceSection(doc, referenceSegmenter, consolidate);
         } catch (GrobidException e) {
-            LOGGER.error("An exception occured while running Grobid.", e);
+            LOGGER.error("An exception occurred while running Grobid.", e);
             throw e;
         } catch (Exception e) {
-            LOGGER.error("An exception occured while running Grobid.", e);
+            LOGGER.error("An exception occurred while running Grobid.", e);
             throw new GrobidException("An exception occurred while running Grobid.", e);
         }
 
@@ -916,7 +916,7 @@ public class CitationParser extends AbstractParser {
             }
 
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
         return buffer;
     }

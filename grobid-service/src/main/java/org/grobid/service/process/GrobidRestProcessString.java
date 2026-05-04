@@ -307,7 +307,7 @@ public class GrobidRestProcessString {
 
     /**
      * Parse a list of raw sequence of reference strings and return the corresponding
-     * normalized bilbiographical objects in the same order and in the reuqested format
+     * normalized bilbiographical objects in the same order and in the requested format
      *
      * @param citation
      *			list of strings of the raw sequence of reference strings

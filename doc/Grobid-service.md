@@ -1,6 +1,6 @@
 # GROBID Service API
 
-The GROBID Web API provides a simple and efficient way to use the tool. A service console is available to test GROBID in a human friendly manner. For production and benchmarking, we strongly recommand to use this web service mode on a multi-core machine and to avoid running GROBID in the batch mode.  
+The GROBID Web API provides a simple and efficient way to use the tool. A service console is available to test GROBID in a human friendly manner. For production and benchmarking, we strongly recommend to use this web service mode on a multi-core machine and to avoid running GROBID in the batch mode.  
 
 ## Start the server with Docker
 
@@ -72,7 +72,7 @@ grobid:
   # false -> models are loaded when needed, avoiding putting in memory useless models (only in case of CRF) but slow down 
   #          significantly the service at first call
   # true -> all the models are loaded into memory at the server startup (default), slow the start of the services 
-  #         and models not used will take some more memory (only in case of CRF), but server is immediatly warm and ready
+  #         and models not used will take some more memory (only in case of CRF), but server is immediately warm and ready
   modelPreload: true
 ```  
 
@@ -130,7 +130,7 @@ We provide clients written in Python, Java, node.js using the GROBID PDF-to-TEI 
 * <a href="https://github.com/kermitt2/grobid-client-node" target="_blank">Node.js GROBID client</a>
 * <a href="https://github.com/miku/grobidclient" target="_blank">Go GROBID client</a> (third party)
 
-All these clients will take advantage of the multi-threading for scaling PDF batch processing. As a consequence, they will be much more efficient than the [batch command lines](Grobid-batch.md) (which use only one thread) and should be prefered. The Python client is the more up-to-date and complete and can be adapted for your needs.
+All these clients will take advantage of the multi-threading for scaling PDF batch processing. As a consequence, they will be much more efficient than the [batch command lines](Grobid-batch.md) (which use only one thread) and should be preferred. The Python client is the more up-to-date and complete and can be adapted for your needs.
 
 ### Alternative output formats (Markdown and JSON)
 
@@ -156,13 +156,13 @@ The services returning JSON results for dynamic PDF annotation purposes can be t
 
 ![Example of GROBID PDF.js annotation](img/popup.png)
 
-Still to demostrate [PDF.js] annotation possibilities, by default bibliographical reference for which a DOI (or arXiv ID) is extracted or found by consolidation are made clickable on the original rendered PDF:
+Still to demonstrate [PDF.js] annotation possibilities, by default bibliographical reference for which a DOI (or arXiv ID) is extracted or found by consolidation are made clickable on the original rendered PDF:
 
 ![Example of GROBID PDF.js clickable annotation based on extraction results](img/doi-link.png)
 
 ## GROBID Web Services
 
-We describe bellow the provided resources corresponding to the HTTP verbs, to use the grobid web services. All url described bellow are relative path, the root url is `http://<server instance name>/<root context>`
+We describe below the provided resources corresponding to the HTTP verbs, to use the grobid web services. All url described below are relative path, the root url is `http://<server instance name>/<root context>`
 
 The consolidation parameters (`consolidateHeader`, `consolidateCitations`, `consolidateFunders`) indicate if GROBID should try to complete the extracted metadata with an additional external call to [CrossRef API](https://github.com/CrossRef/rest-api-doc) or [biblio-glutton](https://github.com/kermitt2/biblio-glutton). The CrossRef and biblio-glutton look-up are realized based on the reliable subset of extracted metadata which are supported by these API. Each consolidation parameter is a string which can have three values:
 
@@ -233,7 +233,7 @@ Convert the complete input document into TEI XML format (header, body and biblio
 |           |                       |                      | `includeRawCopyrights`   | optional        | `includeRawCopyrights` is a boolean value, `0` (default, do not include raw copyrights/license string in the result) or `1` (include raw copyrights/license string in the result).                                                                                 |
 |           |                       |                      | `teiCoordinates`         | optional        | list of element names for which coordinates in the PDF document have to be added, see [Coordinates of structures in the original PDF](Coordinates-in-PDF.md) for more details                                                                                      |
 |           |                       |                      | `segmentSentences`       | optional        | Paragraphs structures in the resulting TEI will be further segmented into sentence elements <s>                                                                                                                                                                    |
-|           |                       |                      | `generateIDs`            | optional        | if supplied as a string equal to `1`, it generates uniqe identifiers for each text component                                                                                                                                                                       |
+|           |                       |                      | `generateIDs`            | optional        | if supplied as a string equal to `1`, it generates unique identifiers for each text component                                                                                                                                                                       |
 |           |                       |                      | `start`                  | optional        | Start page number of the PDF to be considered, previous pages will be skipped/ignored, integer with first page starting at `1`, (default `-1`, start from the first page of the PDF)                                                                               |
 |           |                       |                      | `end`                    | optional        | End page number of the PDF to be considered, next pages will be skipped/ignored, integer with first page starting at `1` (default `-1`, end with the last page of the PDF)                                                                                         |
 |           |                       |                      | `flavor`                 | optional        | Indicate which flavor to apply for structuring the document. Useful when the default structuring cannot be applied to a specific document (e.g. the body is empty. More technical details and available flavor names in the [dedicated page](Grobid-specialized-processes.md). |
@@ -609,7 +609,7 @@ A `503` error with the default parallel mode normally means that all the threads
 
 #### /api/annotatePDF
 
-Return the PDF augmented with PDF annotations relative to the reference informations: reference callouts with links to the full bibliographical reference and bibliographical reference with possible external URL.
+Return the PDF augmented with PDF annotations relative to the reference information: reference callouts with links to the full bibliographical reference and bibliographical reference with possible external URL.
 
 Note that this service modify the original PDF, and thus be careful with legal right and reusability of such augmented PDF! For this reason, this service is proposed for experimental purposes and might be deprecated in future version of GROBID, in favor of the above `/api/referenceAnnotations` service.
 
@@ -757,9 +757,9 @@ curl --form input=@/home/lopez/grobid/grobid-core/src/test/resources/s/006271747
 
 #### /api/processCitationPatentPDF
 
-Extract and parse the patent and non patent citations in the description of a patent publication sent as PDF. Results are returned as a list of TEI citations. Note that the text layer must be available in the PDF to be processed (which is, surprisingly in this century, very rarely the case with the PDF avaialble from the main patent offices - however the patent publications that can be downloaded from Google Patents for instance have been processed by a good quality OCR). 
+Extract and parse the patent and non patent citations in the description of a patent publication sent as PDF. Results are returned as a list of TEI citations. Note that the text layer must be available in the PDF to be processed (which is, surprisingly in this century, very rarely the case with the PDF available from the main patent offices - however the patent publications that can be downloaded from Google Patents for instance have been processed by a good quality OCR). 
 
-Extract and parse the patent and non patent citations in the description of a patent encoded in ST.36. Results are returned as a lits of TEI citations. 
+Extract and parse the patent and non patent citations in the description of a patent encoded in ST.36. Results are returned as a list of TEI citations. 
 
 |  method   |  request type         |  response type     |  parameters            |  requirement  |  description  |
 |---        |---                    |---                 |---                     |---            |---            |
@@ -783,7 +783,7 @@ A `503` error with the default parallel mode normally means that all the threads
 
 This service is similar to `/api/referenceAnnotations` but for a patent document in PDF. JSON annotations relative the the input PDF are returned with coordinates as described in the page [Coordinates of structures in the original PDF](Coordinates-in-PDF.md).
 
-Patent and non patent citations can be directly visualised on the PDF layout as illustrated by the GROBID console. For patent citations, the provided external reference informations are based on the patent number normalisation and relies on Espacenet, the patent access application from the European Patent office. For non patent citation, the external references are similar as for a scientific article (CorssRef DOI link or arXiv.org if an arXiv ID is present).
+Patent and non patent citations can be directly visualised on the PDF layout as illustrated by the GROBID console. For patent citations, the provided external reference information are based on the patent number normalisation and relies on Espacenet, the patent access application from the European Patent office. For non patent citation, the external references are similar as for a scientific article (CorssRef DOI link or arXiv.org if an arXiv ID is present).
 
 |  method   |  request type         |  response type       |  parameters         |  requirement  |  description  |
 |---        |---                    |---                   |---                  |---            |---            |
@@ -805,7 +805,7 @@ A `503` error with the default parallel mode normally means that all the threads
 
 ### Training web API
 
-The following web services can be used to launch the training of a particular model (`/api/modelTraining`), monitor traing advancement (`/api/trainingResult`) and retrive a model (`/api/model`).
+The following web services can be used to launch the training of a particular model (`/api/modelTraining`), monitor traing advancement (`/api/trainingResult`) and retrieve a model (`/api/model`).
 
 #### /api/modelTraining
 
@@ -816,7 +816,7 @@ Launch a training for a given model. The service return back a training token (a
 | POST | application/x-www-form-urlencoded |  application/json |   model      |   required    | name of the model to train  |
 |           |                     |                      | architecture | optional | name of the architecture to use for training the model, possible values are `CRF` (default), `BiLSTM-CRF`, `BiLSMT-CRF-ELMo` |
 |           |                     |                      | type | optional | type of training, `full`, `holdout`, `split`, `nfold`, default is `split` |
-|           |                     |                      | ratio | optional | only considered for `split` training mode, give the ratio (number bewteen 0 and 1) of training and evaluation data when splitting the annotated data, default is `0.9` |
+|           |                     |                      | ratio | optional | only considered for `split` training mode, give the ratio (number between 0 and 1) of training and evaluation data when splitting the annotated data, default is `0.9` |
 |           |                     |                      | n | optional | only considered for `nfold` training mode, give the number of folds to be used, default is `10` |
 |           |                     |                      | `incremental` | optional | boolean indicating if the training should be incremental (`1`) starting from the existing model, or not (default, `0`) |
 
@@ -845,7 +845,7 @@ curl -v -X POST -d "model=date" -d "type=holdout" localhost:8070/api/modelTraini
 Given a training token delivered by the service `modelTraining`, this service gives the possibility of following the advancement of the training and eventually get back the associated evaluation. Depending on the state of the training, the service will returns:
 
 - if the training is ongoing, an indication of advancement as a string
-- it the training is completed, evaluation statistics dependeing on the selected type of training
+- it the training is completed, evaluation statistics depending on the selected type of training
 
 |   method  |  request type       | response type        |  parameters  | requirement   |   description             |
 |---        |---                  |---                   |---           |---            |---                        |

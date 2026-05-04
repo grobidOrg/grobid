@@ -4,7 +4,7 @@ Here are some evaluations of individual Grobid models, using Grobid version **0.
 
 ## Accuracy 
 
-For information, we report here some evaluations made with deep learning architectures for sequence labelling in comparison to CRF Wapiti. All results have been obtained with 10-fold cross-evaluations (average based on 10 sucessive partition of the training data). 
+For information, we report here some evaluations made with deep learning architectures for sequence labelling in comparison to CRF Wapiti. All results have been obtained with 10-fold cross-evaluations (average based on 10 successive partition of the training data). 
 
 The Deep Learning architectures have been extended to use a feature channel for exploiting layout features (position of tokens, font, size, etc.), see [DeLFT](https://github.com/kermitt2/delft) and [here](https://github.com/kermitt2/delft/pull/82) for more details. Although we are working since more than 2 years on this approach, the usage of Deep Learning for Grobid tasks is still experimental and very far from something production ready with similar performances and scalability as the current GROBID stable version with CRF Wapiti.
 

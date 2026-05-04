@@ -195,7 +195,7 @@ public class UnicodeUtil {
         // closing parenthesis normalisation
         text = CLOSE_PARENTHESIS_PATTERN.matcher(text).replaceAll(")");
 
-        // remove all control charcaters?
+        // remove all control characters?
         //text = text.replaceAll("\\p{Cntrl}", " ");
 
         return text;

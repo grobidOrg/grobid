@@ -522,7 +522,7 @@ public class PDFALTOSaxHandler extends DefaultHandler {
 
                             token.setFontSize(textStyle.getFontSize());
 
-                            //							if (!diaresis && !accent) {
+                            //							if (!diaeresis && !accent) {
                             //
                             //								block.addToken(token);
                             //							}

@@ -41,7 +41,7 @@ public class PatentItem implements Comparable<PatentItem> {
     // context of occurrence of the reference
     private String context = null;
 
-    // coordinates in the orignal layout (for PDF)
+    // coordinates in the original layout (for PDF)
     private List<BoundingBox> coordinates = null;
 
     public String getAuthority() {

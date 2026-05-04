@@ -2134,7 +2134,7 @@ public class BiblioItem {
     }
 
     /**
-     * Check if the identifier pubnum is a DOI or an arXiv identifier. If yes, instanciate
+     * Check if the identifier pubnum is a DOI or an arXiv identifier. If yes, instantiate
      * the corresponding field and reset the generic pubnum field.
      */
     public void checkIdentifier() {
@@ -4279,7 +4279,7 @@ public class BiblioItem {
         if (bibo.getJournal() != null) {
             bib.setJournal(bibo.getJournal());
             // document type consistency (correction might change overall item type, and some
-            // fields become unconsistent)
+            // fields become inconsistent)
             if (bibo.getBookTitle() == null) {
                 bib.setBookTitle(null);
             }
@@ -4490,7 +4490,7 @@ public class BiblioItem {
 
     /**
      *  Check is the biblio item can be considered as a minimally valid bibliographical reference.
-     *  A certain minimal number of core metadata have to be instanciated. Otherwise, the biblio
+     *  A certain minimal number of core metadata have to be instantiated. Otherwise, the biblio
      *  item can be considered as "garbage" extracted incorrectly.
      */
     public boolean rejectAsReference() {

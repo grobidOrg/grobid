@@ -75,7 +75,7 @@ Many thanks to:
 * CERN contributors Andreas la Roi and Micha Moskovic
 * Florian Zipser (Humboldt University) who developed the first historical version of the REST API in 2011
 * the other contributors from ResearchGate: Michael Häusler, Kyryl Bilokurov, Artem Oboturov
-* Damien Ridereau (U IRIS, formely at Infotel)
+* Damien Ridereau (U IRIS, formerly at Infotel)
 * Oliver Kopp (JabRef research)
 * Bruno Pouliquen (WIPO) for the custom analyzers for Eastern languages
 * Thomas Lavergne, Olivier Cappé and François Yvon for Wapiti

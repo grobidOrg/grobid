@@ -569,7 +569,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
     /**
      * The processing here is called from the header and/or full text parser in cascade
      * when one of these higher-level model detect a "funding" section, or in case
-     * no funding section is found, when a acknolwedgements section is detected.
+     * no funding section is found, when a acknowledgements section is detected.
      *
      * Independently from the place this parser is called, it process the input sequence
      * of layout tokens in a context free manner.

@@ -94,7 +94,7 @@ public class DateParser extends AbstractParser {
             // extract results from the processed file
             return resultExtraction(res, tokenization);
         } catch (Exception e) {
-            throw new GrobidException("An exception on " + this.getClass().getName() + " occured while running Grobid.",
+            throw new GrobidException("An exception on " + this.getClass().getName() + " occurred while running Grobid.",
                     e);
         }
     }
@@ -525,7 +525,7 @@ public class DateParser extends AbstractParser {
             }
         } catch (Exception e) {
             //			e.printStackTrace();
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
         return buffer;
     }

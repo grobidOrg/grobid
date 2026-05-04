@@ -35,7 +35,7 @@ public class GrobidPoolingFactory extends AbstractEngineFactory
 
     /**
      * Creates a pool for {@link Engine} objects. So a number of objects is
-     * always available and ready to start immediatly.
+     * always available and ready to start immediately.
      *
      * @return GenericObjectPool
      */

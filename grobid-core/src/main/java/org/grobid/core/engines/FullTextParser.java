@@ -913,7 +913,7 @@ public class FullTextParser extends AbstractParser {
         if (bibDataSets != null) {
             try {
                 referenceMarkerMatcher = doc.getReferenceMarkerMatcher();
-                // we look at the exising extracted labels in the bibliographical section (if available and if any) and set
+                // we look at the existing extracted labels in the bibliographical section (if available and if any) and set
                 // the value based on the majority of labels
                 int nbNumbType = 0;
                 int nbAuthorType = 0;
@@ -1427,7 +1427,7 @@ public class FullTextParser extends AbstractParser {
         DocumentSource documentSource = null;
         try {
             if (!inputFile.exists()) {
-                throw new GrobidResourceException("Cannot train for fulltext, becuase file '" +
+                throw new GrobidResourceException("Cannot train for fulltext, because file '" +
                     inputFile.getAbsolutePath() + "' does not exists.");
             }
             String pdfFileName = inputFile.getName();
@@ -2083,7 +2083,7 @@ public class FullTextParser extends AbstractParser {
             return buffer;
         } catch (Exception e) {
             e.printStackTrace();
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 

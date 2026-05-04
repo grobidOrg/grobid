@@ -240,7 +240,7 @@ fscore citation contexts: 	 91.89
 
 Fulltext structure contents are complicated to capture from JATS NLM files. They are often normalized and different from
 the actual PDF content and are can be inconsistent from one document to another. The scores of the following metrics are
-thus not very meaningful in absolute term, in particular for the strict matching (textual content of the srtructure can
+thus not very meaningful in absolute term, in particular for the strict matching (textual content of the structure can
 be very long). As relative values for comparing different models, they seem however useful.
 
 Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).

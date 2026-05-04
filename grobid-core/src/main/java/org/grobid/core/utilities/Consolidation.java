@@ -300,7 +300,7 @@ public class Consolidation {
 
     /**
      * After consolidation operations, this need to be called to ensure that all
-     * involved Executors are shut down immediatly, otherwise non terminated thread
+     * involved Executors are shut down immediately, otherwise non terminated thread
      * could prevent the JVM from exiting
      */
     public void close() {

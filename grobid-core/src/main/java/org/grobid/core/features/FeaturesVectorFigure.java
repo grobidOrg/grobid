@@ -79,7 +79,7 @@ public class FeaturesVectorFigure {
         // page information (1)
         res.append(" " + pageStatus);
 
-        // alignmet/horizontal position information (1)
+        // alignment/horizontal position information (1)
         //res.append(" " + alignmentStatus);
 
         // font information (1)

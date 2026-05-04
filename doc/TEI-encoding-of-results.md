@@ -29,7 +29,7 @@ Different schemas generated from the ODD specifications by ROMA are available in
 
 A documentation of Grobid customized TEI is available `grobid-home/schemas/doc/Grobid_doc.html`. 
 
-We recommand to use the RelaxNG schemas, more robust, easier to use, etc., and avoid W3C schemas which are recurent sources of problems... 
+We recommend to use the RelaxNG schemas, more robust, easier to use, etc., and avoid W3C schemas which are recurrent sources of problems... 
 
 ## Well-formedness and validation
 

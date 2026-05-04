@@ -126,7 +126,7 @@ public class CrossrefRequestListener<T extends Object> {
 
     protected Response<T> currentResponse = null;
     /**
-     * Get response after waiting listener, usefull for synchronous call
+     * Get response after waiting listener, useful for synchronous call
      */
     public Response<T> getResponse() {
         return currentResponse;

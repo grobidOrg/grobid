@@ -47,7 +47,7 @@ There are different ways to generate the new model and run the evaluation, wheth
 
 ### Train and evaluation in one command (simple mode)
 
-For simple training without particular parameters, a single command can be used as follow. All the available annotated files under `grobid/grobid-trainer/resources/dataset/*MODEL*/corpus` will be used for trainng and all available annotated files under `grobid/grobid-trainer/resources/dataset/*MODEL*/evaluation/` will be used for evaluation.
+For simple training without particular parameters, a single command can be used as follow. All the available annotated files under `grobid/grobid-trainer/resources/dataset/*MODEL*/corpus` will be used for training and all available annotated files under `grobid/grobid-trainer/resources/dataset/*MODEL*/evaluation/` will be used for evaluation.
 
 Under the main project directory `grobid/`, run the following command to execute both training and evaluation: 
 
@@ -124,7 +124,7 @@ Launching an incremental training is similar as the previous commands, but addin
 > java -Xmx1024m -Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep -jar grobid-trainer/build/libs/grobid-trainer-<current version>-onejar.jar 0 <name of the model> -gH grobid-home -i
 ```
 
-Note that a full training from scratch with all training data should normally provide better accuracy for a model than several iterative training with a partition of the training data. Using incremental training makes sense for exemple when the model has been trained with a lot of data during days/weeks, and an update is required, or for the development of training data when the update of a model must be quick to generate new trainng data. 
+Note that a full training from scratch with all training data should normally provide better accuracy for a model than several iterative training with a partition of the training data. Using incremental training makes sense for example when the model has been trained with a lot of data during days/weeks, and an update is required, or for the development of training data when the update of a model must be quick to generate new training data. 
 
 In incremental training phases, the training parameters might require some update to stop the training earlier than in normal full training. 
 
@@ -151,7 +151,7 @@ For instance for a 10-fold evaluation of the date model:
 
 ## Generation of training data
 	
-To generate some training datas from some input pdf, the batch grobid-core-`<current version>`.onejar.jar can be used: [Grobid batch](Grobid-batch.md) (`createTraining`).
+To generate some training data from some input pdf, the batch grobid-core-`<current version>`.onejar.jar can be used: [Grobid batch](Grobid-batch.md) (`createTraining`).
 
 For each pdf in input directory, GROBID generates different files because each model has separate training data, and thus uses separate files. So we have one file for header (`*.training.header.tei.xml`), one for dates (`*.training.date.tei.xml`), one for names, etc...
 

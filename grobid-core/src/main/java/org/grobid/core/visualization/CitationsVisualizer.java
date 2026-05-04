@@ -56,7 +56,7 @@ public class CitationsVisualizer {
      *  Augment a PDF with bibliographical annotation, for bib. ref. and bib markers.
      *  The PDF annotation layer is used with "GoTo" and "URI" action links.
      *  The annotations of the bibliographical references can be associated to an URL in order
-     *  to have clickable references direclty in the PDF.
+     *  to have clickable references directly in the PDF.
      *  The Apache PDFBox library is used.
      *
      *  @param document PDDocument object resulting from the PDF parsing with PDFBox

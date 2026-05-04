@@ -183,7 +183,7 @@ public class LayoutTokensUtil {
             //the current token is dash (and is neither subscript nor superscript) checking what's around
             if (currentToken.getText().equals("-") && !(currentToken.isSubscript() || currentToken.isSuperscript())) {
                 if (doesRequireDehypenisation(tokens, i)) {
-                    //Cleanup eventual additional spaces before the hypen that have been already written to the output
+                    //Cleanup eventual additional spaces before the hyphen that have been already written to the output
                     int z = output.size() - 1;
                     while (z >= 0 && output.get(z).getText().equals(" ")) {
                         String tokenString = output.get(z).getText();
@@ -237,10 +237,10 @@ public class LayoutTokensUtil {
     }
 
     /**
-     * Check if the current token (place i), or the hypen, needs to be removed or not.
+     * Check if the current token (place i), or the hyphen, needs to be removed or not.
      * <p>
      * It will check the tokens before and after. It will get to the next "non space" tokens and verify
-     * that it's a plain word. If it's not it's keeping the hypen.
+     * that it's a plain word. If it's not it's keeping the hyphen.
      * <p>
      * TODO: What to do in case of a punctuation is found?
      */
@@ -277,7 +277,7 @@ public class LayoutTokensUtil {
         if (j < tokens.size()) {
             forward = StringUtils.isAllLowerCase(tokens.get(j).getText());
             if (forward) {
-                //If nothing before the hypen, but it looks like a forward hypenisation, let's trust it
+                //If nothing before the hyphen, but it looks like a forward hypenisation, let's trust it
                 if (i < 1) {
                     return forward;
                 }

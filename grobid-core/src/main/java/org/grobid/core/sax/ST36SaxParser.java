@@ -55,7 +55,7 @@ public class ST36SaxParser extends DefaultHandler {
     public int nbAllRef = 0;
 
     private int window = -1;  // window of text to be output around the reference strings
-    // value at -1 means no window considered - everything will be outputed
+    // value at -1 means no window considered - everything will be outputted
 
     public boolean patentReferences = false;
     public boolean nplReferences = false;
@@ -198,7 +198,7 @@ public class ST36SaxParser extends DefaultHandler {
                             }
                         }
                     } catch (Exception e) {
-                        throw new GrobidException("An exception occured while running Grobid.", e);
+                        throw new GrobidException("An exception occurred while running Grobid.", e);
                     }
                     i++;
                 }
@@ -261,7 +261,7 @@ public class ST36SaxParser extends DefaultHandler {
                                 accumulatedLabels.add("<other>");
                             }
                         } catch (Exception e) {
-                            throw new GrobidException("An exception occured while running Grobid.", e);
+                            throw new GrobidException("An exception occurred while running Grobid.", e);
                         }
                     }
                     i++;
@@ -419,14 +419,14 @@ public class ST36SaxParser extends DefaultHandler {
                                             accumulatedTokens.add(new LayoutToken(token));
                                             accumulatedLabels.add("<other>");
                                         } catch (Exception e) {
-                                            throw new GrobidException("An exception occured while running Grobid.", e);
+                                            throw new GrobidException("An exception occurred while running Grobid.", e);
                                         }
                                     } else {
                                         try {
                                             accumulatedTokens.add(new LayoutToken(token));
                                             accumulatedLabels.add("<ignore>");
                                         } catch (Exception e) {
-                                            throw new GrobidException("An exception occured while running Grobid.", e);
+                                            throw new GrobidException("An exception occurred while running Grobid.", e);
                                         }
                                     }
                                     j++;
@@ -485,14 +485,14 @@ public class ST36SaxParser extends DefaultHandler {
                                             accumulatedTokens.add(new LayoutToken(token));
                                             accumulatedLabels.add("<other>");
                                         } catch (Exception e) {
-                                            throw new GrobidException("An exception occured while running Grobid.", e);
+                                            throw new GrobidException("An exception occurred while running Grobid.", e);
                                         }
                                     } else {
                                         try {
                                             accumulatedTokens.add(new LayoutToken(token));
                                             accumulatedLabels.add("<ignore>");
                                         } catch (Exception e) {
-                                            throw new GrobidException("An exception occured while running Grobid.", e);
+                                            throw new GrobidException("An exception occurred while running Grobid.", e);
                                         }
                                     }
                                     j++;

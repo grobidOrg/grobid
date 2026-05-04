@@ -860,7 +860,7 @@ public class ReferenceExtractor implements Closeable {
                 }
             }
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
 
         StringBuilder resultTEI = new StringBuilder();
@@ -1399,7 +1399,7 @@ public class ReferenceExtractor implements Closeable {
                 }
             }
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
         int nbs = 0;
         if (patents != null) {
@@ -1588,7 +1588,7 @@ public class ReferenceExtractor implements Closeable {
             System.out.println(contentString);
 
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 
@@ -1605,7 +1605,7 @@ public class ReferenceExtractor implements Closeable {
         if (!documentPath.endsWith(".xml") && !documentPath.endsWith(".xml.gz")) {
             throw new GrobidResourceException("Only patent XML files (ST.36 or Marec) can be processed to "
                     +
-                    "generate traning data.");
+                    "generate training data.");
         }
 
         File documentFile = new File(documentPath);
@@ -1762,7 +1762,7 @@ public class ReferenceExtractor implements Closeable {
 
             }
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 
@@ -1784,7 +1784,7 @@ public class ReferenceExtractor implements Closeable {
                 return true;
             }
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 
@@ -1852,7 +1852,7 @@ public class ReferenceExtractor implements Closeable {
             writer.close();
             tos.close();
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 

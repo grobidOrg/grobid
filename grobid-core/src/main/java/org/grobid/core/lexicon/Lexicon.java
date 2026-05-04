@@ -295,7 +295,7 @@ public class Lexicon {
             SAXParser p = spf.newSAXParser();
             p.parse(ist, parser);
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         } finally {
             IOUtils.closeQuietly(ist);
         }
@@ -364,7 +364,7 @@ public class Lexicon {
                 }
             }
         } catch (IOException e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         } finally {
             IOUtils.closeQuietly(dis, isr, ist);
         }
@@ -405,9 +405,9 @@ public class Lexicon {
                 }
             }
         } catch (FileNotFoundException e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         } catch (IOException e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         } finally {
             IOUtils.closeQuietly(dis, isr, ist);
         }
@@ -543,7 +543,7 @@ public class Lexicon {
                     +
                     "does not exist or cannot be read.", e);
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid Lexicon init.", e);
+            throw new GrobidException("An exception occurred while running Grobid Lexicon init.", e);
         }
     }
 
@@ -554,7 +554,7 @@ public class Lexicon {
         } catch (PatternSyntaxException e) {
             throw new GrobidResourceException("Error when compiling lexicon matcher for organisations.", e);
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid Lexicon init.", e);
+            throw new GrobidException("An exception occurred while running Grobid Lexicon init.", e);
         }
     }
 
@@ -593,7 +593,7 @@ public class Lexicon {
         } catch (PatternSyntaxException e) {
             throw new GrobidResourceException("Error when compiling lexicon matcher for funders.", e);
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid Lexicon init.", e);
+            throw new GrobidException("An exception occurred while running Grobid Lexicon init.", e);
         }
     }
 
@@ -667,9 +667,9 @@ public class Lexicon {
                     }
                 }
             } catch (FileNotFoundException e) {
-                throw new GrobidException("An exception occured while running Grobid.", e);
+                throw new GrobidException("An exception occurred while running Grobid.", e);
             } catch (IOException e) {
-                throw new GrobidException("An exception occured while running Grobid.", e);
+                throw new GrobidException("An exception occurred while running Grobid.", e);
             } finally {
                 try {
                     if (ist != null)
@@ -683,7 +683,7 @@ public class Lexicon {
         } catch (PatternSyntaxException e) {
             throw new GrobidResourceException("Error when compiling lexicon matcher for research infrastructure.", e);
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid Lexicon init.", e);
+            throw new GrobidException("An exception occurred while running Grobid Lexicon init.", e);
         }
     }
 
@@ -1279,7 +1279,7 @@ public class Lexicon {
         urlTokensPositions.stream().forEach(o -> o.end += 1);
 
         // here we need to match the offsetPositions related to the text obtained by the layoutTokens, with the text
-        // which may be different (spaces, hypen, breakline)
+        // which may be different (spaces, hyphen, breakline)
         return TextUtilities.matchTokenAndString(layoutTokens, text, urlTokensPositions);
     }
 

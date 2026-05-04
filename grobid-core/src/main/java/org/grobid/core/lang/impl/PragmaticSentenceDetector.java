@@ -91,7 +91,7 @@ public class PragmaticSentenceDetector implements SentenceDetector {
             recovered = false;
             int start = text.indexOf(chunk, pos);
             if (start == -1) {
-                LOGGER.warn("Extracted sentence does not match orginal text - " + chunk);
+                LOGGER.warn("Extracted sentence does not match original text - " + chunk);
 
                 // Unfortunately the pragmatic segmenter can modify the string when it gives back the array of sentences as string.
                 // it usually concerns removed white space, which then make it hard to locate exactly the offsets.

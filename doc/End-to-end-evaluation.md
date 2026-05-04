@@ -4,9 +4,9 @@ Individual models can be evaluated as explained in [Training the different model
 
 For an end-to-end evaluation, covering the whole extraction process from the parsing of PDF to the end result of the cascading of several sequence labelling models, GROBID includes two possible evaluation progresses:
 
-* against JATS-encoded (NLM) articles, such as [PubMed Central](http://www.ncbi.nlm.nih.gov/pmc), [bioRxiv](https://www.biorxiv.org), [PLOS](https://plos.org/ ) or [eLife](https://elifesciences.org/ ). For example, PubMed Central provides both PDF and fulltext XML files in the [NLM](http://www.ncbi.nlm.nih.gov/pmc/pmcdoc/tagging-guidelines/article/style.html) format. Keeping in mind some limits described bellow, it is possible to estimate the ability of Grobid to extract and normalize the content of the PDF documents for matching the quality of the NLM file. bioRxiv is used in Grobid to evaluate more precisely performance on preprint articles. 
+* against JATS-encoded (NLM) articles, such as [PubMed Central](http://www.ncbi.nlm.nih.gov/pmc), [bioRxiv](https://www.biorxiv.org), [PLOS](https://plos.org/ ) or [eLife](https://elifesciences.org/ ). For example, PubMed Central provides both PDF and fulltext XML files in the [NLM](http://www.ncbi.nlm.nih.gov/pmc/pmcdoc/tagging-guidelines/article/style.html) format. Keeping in mind some limits described below, it is possible to estimate the ability of Grobid to extract and normalize the content of the PDF documents for matching the quality of the NLM file. bioRxiv is used in Grobid to evaluate more precisely performance on preprint articles. 
 
-* against TEI documents produced by [Pub2TEI](https://github.com/kermitt2/Pub2TEI). Pub2TEI is a set of XSLT that permit to transform various _native_ XML publishers (including Elsevier, Wiley, Springer, etc. XML formats) into a common TEI format. This TEI format can be used as ground-truth structure information for evaluating GROBID output, keeping in mind some limits described bellow. 
+* against TEI documents produced by [Pub2TEI](https://github.com/kermitt2/Pub2TEI). Pub2TEI is a set of XSLT that permit to transform various _native_ XML publishers (including Elsevier, Wiley, Springer, etc. XML formats) into a common TEI format. This TEI format can be used as ground-truth structure information for evaluating GROBID output, keeping in mind some limits described below. 
 
 For actual benchmarks, see the [Benchmarking page](benchmarks/Benchmarking.md). We describe below the datasets and how to run the benchmarks.  
 
@@ -40,7 +40,7 @@ The `eLife_984` dataset is a set of 984 articles from eLife, available on [Huggi
 
 ## Getting publisher gold-standard data 
 
-Some publishers release publications in XML format complementary to PDF in Open Access, allowing text mining (see for instance the dedicated subset of PMC publications). On contractual basis, it is possible to acquire native XML from mainstream publishers. Unfortunately, each publisher uses a different XML schema and covering all these formats would be a very time-consuming work. To ease the processing of these XML documents, the projet [Pub2TEI](https://github.com/kermitt2/Pub2TEI) permits to transform the native XML formats of a dozen mainstream publishers into a common TEI format which is the same as the output of GROBID. 
+Some publishers release publications in XML format complementary to PDF in Open Access, allowing text mining (see for instance the dedicated subset of PMC publications). On contractual basis, it is possible to acquire native XML from mainstream publishers. Unfortunately, each publisher uses a different XML schema and covering all these formats would be a very time-consuming work. To ease the processing of these XML documents, the project [Pub2TEI](https://github.com/kermitt2/Pub2TEI) permits to transform the native XML formats of a dozen mainstream publishers into a common TEI format which is the same as the output of GROBID. 
 
 See [Pub2TEI](https://github.com/kermitt2/Pub2TEI) for converting native publisher XML into usable TEI. 
 
@@ -50,7 +50,7 @@ For running the evaluation, the tool assumes that the files are organised in a s
 
 * a root directory containing one sub-directory per article
 
-* each article sub-directory containing at least the PDF version and a gold XML structured version of the article (in NLM format for PubMedCentral evaluation or in TEI format for the Pub2TEI-based evaluation). See the diagram bellow - the name of the sub-directory and the files is free.  
+* each article sub-directory containing at least the PDF version and a gold XML structured version of the article (in NLM format for PubMedCentral evaluation or in TEI format for the Pub2TEI-based evaluation). See the diagram below - the name of the sub-directory and the files is free.  
 
 * extension for files generated with [Pub2TEI](https://github.com/kermitt2/Pub2TEI) is `.pub2tei.tei.xml`. Extension for NLM files is `.nxlm` (PMC) or `xml` (bioRxiv). GROBID will generate additional TEI files with extension `.fulltext.tei.xml`. 
 
@@ -69,7 +69,7 @@ For running the evaluation, the tool assumes that the files are organised in a s
 
 ## Warning on JATS/NLM format
 
-JATS/NLM is a very loose XML format, in the sense that there are multiple ways to encode the same information. As a consequence, there are a variety of JATS flavors depending on the publisher and it is not possible to garantee that any JATS files will be supported as gold standard dataset by the `jatsEval` process. PMC and bioRxiv JATS articles are supported, but for a larger variety of JATS files it is recommanded to convert them first into TEI with [Pub2TEI](https://github.com/kermitt2/Pub2TEI) and use the `teiEval` process. [Pub2TEI](https://github.com/kermitt2/Pub2TEI) supports all the JATS/NLM variants we are aware of, and convert them into a constrained and unambiguous single TEI format without information loss. 
+JATS/NLM is a very loose XML format, in the sense that there are multiple ways to encode the same information. As a consequence, there are a variety of JATS flavors depending on the publisher and it is not possible to guarantee that any JATS files will be supported as gold standard dataset by the `jatsEval` process. PMC and bioRxiv JATS articles are supported, but for a larger variety of JATS files it is recommended to convert them first into TEI with [Pub2TEI](https://github.com/kermitt2/Pub2TEI) and use the `teiEval` process. [Pub2TEI](https://github.com/kermitt2/Pub2TEI) supports all the JATS/NLM variants we are aware of, and convert them into a constrained and unambiguous single TEI format without information loss. 
 
 ## Running and evaluating 
 
@@ -115,7 +115,7 @@ An experimental evaluation for the structures of the full text body is also prop
 ## Matching techniques
 
 
-The evaluation covers four different string matching techniques for textual fields, based on the existing evaluation approaches observed in the litterature:
+The evaluation covers four different string matching techniques for textual fields, based on the existing evaluation approaches observed in the literature:
 
 * __strict__, i.e. exact match,
 
@@ -125,7 +125,7 @@ The evaluation covers four different string matching techniques for textual fiel
 
 * [__Ratcliff/Obershelp similarity__](http://xlinux.nist.gov/dads/HTML/ratcliffObershelp.html) 
 
-These macthing variants only apply to textual fields, not numerical and dates fields (such as volume, issue, dates, pages).
+These matching variants only apply to textual fields, not numerical and dates fields (such as volume, issue, dates, pages).
 
 
 
@@ -172,13 +172,13 @@ GROBID expends intervals and will likely identify and match these "intermediary"
 
 ### Character encoding and glyphs
 
-XML and PDF content frequently contain many differences at character-level. This is due to PDF which tend to use particular glyphs for enhancing visual rendering. Those special glyths are often loaded in the PDF itself and uses particular unicode not matching unicode of characters in XML. Similarly some special charcaters are expressed with fonts (for instance using a Greek font to render a λ, using the unicode of the letter _l_). 
+XML and PDF content frequently contain many differences at character-level. This is due to PDF which tend to use particular glyphs for enhancing visual rendering. Those special glyths are often loaded in the PDF itself and uses particular unicode not matching unicode of characters in XML. Similarly some special characters are expressed with fonts (for instance using a Greek font to render a λ, using the unicode of the letter _l_). 
 
 ### Ordering and presentation variants of structures and sub-structures
 
 The order of some structures might also be changed from the logical representation (XML) to the particular PDF presentation base on (unknown) style transformation. 
 
-Still related to style rendering, text can be post-processed. For instance, in a bibliographical reference, forenames can be present in full form in the XML, but shorten to intials only in the PDF.
+Still related to style rendering, text can be post-processed. For instance, in a bibliographical reference, forenames can be present in full form in the XML, but shorten to initials only in the PDF.
 
 ### Evaluation criteria
 

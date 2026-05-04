@@ -613,7 +613,7 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
         int currentLineLength = 0;
         //int lineIndex = 0;
 
-        // we calculate current max line length and intialize the body tokenization structure
+        // we calculate current max line length and initialize the body tokenization structure
         for (DocumentPiece docPiece : referencesParts) {
             DocumentPointer dp1 = docPiece.getLeft();
             DocumentPointer dp2 = docPiece.getRight();

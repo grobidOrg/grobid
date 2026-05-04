@@ -144,7 +144,7 @@ public class TextUtilities {
         int lastSpaceIndex = section.lastIndexOf(' ');
 
         //The last parenthesis cover the case 'this is a (special-one) case'
-        // where the lastToken before the hypen should be 'special' and not '(special'
+        // where the lastToken before the hyphen should be 'special' and not '(special'
         /*        int lastParenthesisIndex = section.lastIndexOf('(');
         if (lastParenthesisIndex > lastSpaceIndex)
             lastSpaceIndex = lastParenthesisIndex;*/
@@ -514,7 +514,7 @@ public class TextUtilities {
 
         input = input.substring(0, n);
 
-        // characters at the begining
+        // characters at the beginning
         n = 0;
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
@@ -608,7 +608,7 @@ public class TextUtilities {
      * Encode a string to be displayed in HTML
      * <p/>
      * If fullHTML encode, then all unicode characters above 7 bits are converted into
-     * HTML entitites
+     * HTML entities
      */
     public static String HTMLEncode(String string) {
         return HTMLEncode(string, false);
@@ -745,13 +745,13 @@ public class TextUtilities {
             }
         } catch (IOException e) {
             //			e.printStackTrace();
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         } finally {
             try {
                 is.close();
             } catch (IOException e) {
                 //				e.printStackTrace();
-                throw new GrobidException("An exception occured while running Grobid.", e);
+                throw new GrobidException("An exception occurred while running Grobid.", e);
             }
         }
 
@@ -1032,7 +1032,7 @@ public class TextUtilities {
      * properly.
      * <p/>
      * Convert a string so that each word is made up of a titlecase character and then a series of lowercase
-     * characters. Words are defined as token delimited by one of the character in delimiters or the begining
+     * characters. Words are defined as token delimited by one of the character in delimiters or the beginning
      * of the string.
      */
     public static String capitalizeFully(String input, String delimiters) {
@@ -1142,7 +1142,7 @@ public class TextUtilities {
 
     /**
      * Give the punctuation profile of a line, i.e. the concatenation of all the punctuations
-     * occuring in the line.
+     * occurring in the line.
      *
      * @param line the string corresponding to a line
      * @return the punctuation profile as a string, empty string is no punctuation

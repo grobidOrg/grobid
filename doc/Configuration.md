@@ -1,6 +1,6 @@
 # Configuration of GROBID
 
-The configuration of GROBID is done vie the file `grobid/grobid-home/config/grobid.yaml`. You will need to restart the GROBID service after modifying the file to have the new configuration parameters active. 
+The configuration of GROBID is done via the file `grobid/grobid-home/config/grobid.yaml`. You will need to restart the GROBID service after modifying the file to have the new configuration parameters active. 
 
 ## Configuration of a Docker image
 
@@ -118,7 +118,7 @@ When executing the service, models can be loaded in a lazy manner (if you plan t
   # false -> models are loaded when needed, avoiding putting in memory useless models (only in case of CRF) but slow down 
   #          significantly the service at first call
   # true -> all the models are loaded into memory at the server startup (default), slow the start of the services 
-  #         and models not used will take some more memory (only in case of CRF), but server is immediatly warm and ready
+  #         and models not used will take some more memory (only in case of CRF), but server is immediately warm and ready
   modelPreload: true
 ```
 
@@ -155,7 +155,7 @@ Under `delft`, we find the generic parameters of the DeLFT engine. For using Dee
 ```yml
   delft:
     # delft installation path if Deep Learning architectures are used to implement one of the sequence labeling model, 
-    # embeddings are usually compiled as lmdb under delft/data (this paramter is ignored if only featured-engineered CRF are used)
+    # embeddings are usually compiled as lmdb under delft/data (this parameter is ignored if only featured-engineered CRF are used)
     install: "../delft"
     pythonVirtualEnv: ../delft/env"
 ```
