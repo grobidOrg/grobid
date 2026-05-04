@@ -1240,7 +1240,7 @@ public class Engine implements Closeable {
 
     /**
      * Process a text corresponding to a funding and/or acknowledgement section
-     * and retun the extracted entities as JSON annotations
+     * and return the extracted entities as JSON annotations
      */
     public String processFundingAcknowledgement(String text, GrobidAnalysisConfig config) throws Exception {
         StringBuilder result = new StringBuilder();

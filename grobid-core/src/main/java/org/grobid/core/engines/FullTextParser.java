@@ -704,7 +704,7 @@ public class FullTextParser extends AbstractParser {
 
 
     /**
-     * Machine-learning recognition of full text structures limted to header and funding information.
+     * Machine-learning recognition of full text structures limited to header and funding information.
      * This requires however to look at the complete document, but some parts will be skipped
      *
      * @param documentSource input
@@ -1466,7 +1466,7 @@ public class FullTextParser extends AbstractParser {
                 String rese = parsers.getSegmentationParser(flavor).label(fulltext);
                 StringBuffer bufferFulltext = parsers.getSegmentationParser(flavor).trainingExtraction(rese, tokenizations, doc);
 
-                // write the TEI file to reflect the extact layout of the text as extracted from the pdf
+                // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                     File.separator +
                     pdfFileName.replaceAll("(?i)\\.pdf$", ".training.segmentation.tei.xml")), false), StandardCharsets.UTF_8);

@@ -1186,7 +1186,7 @@ public class Lexicon {
     }
 
     /**
-     * Identify in tokenized input the positions of the DOI patterns with token positons
+     * Identify in tokenized input the positions of the DOI patterns with token positions
      */
     public List<OffsetPosition> tokenPositionsDOIPattern(List<LayoutToken> tokens, String text) {
         List<OffsetPosition> textResult = new ArrayList<OffsetPosition>();

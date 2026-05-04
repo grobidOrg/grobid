@@ -73,7 +73,7 @@ Examples for training the model for names in header:
 
 To have more flexibility and options for training and evaluating the models, use the following commands. 
 
-First be sure to have the full project libraries locally built (see [Install GROBID](Install-Grobid.md) for nore details): 
+First be sure to have the full project libraries locally built (see [Install GROBID](Install-Grobid.md) for more details): 
 
 ```bash
 > ./gradlew clean build

@@ -42,7 +42,7 @@ import org.grobid.core.utilities.LayoutTokensUtil;
 import org.grobid.core.utilities.Pair;
 
 /**
- *  Utilities for visualizing citation markers and biblographical references, wither directly
+ *  Utilities for visualizing citation markers and biblographical references, either directly
  *  in the PDF using the PDF annotation layer or as annotations in JSON for supporting
  *  web based rendering (e.g. with PDF.js) and interactive HTML layer.
  *  See the web console/demo for actual examples of usage.

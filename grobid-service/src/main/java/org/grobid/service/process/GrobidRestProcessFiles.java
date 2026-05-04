@@ -184,7 +184,7 @@ public class GrobidRestProcessFiles {
     /**
      * Uploads the origin document which shall be extracted into TEI and
      * extracts only the header and funding information, this still requires a full read and segmentation of the document,
-     * but non-relevant parts are skipt.
+     * but non-relevant parts are skipped.
      *
      * @param inputStream the data of origin document
      * @param consolidateHeader consolidation parameter for the header extraction

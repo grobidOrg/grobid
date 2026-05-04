@@ -1428,7 +1428,7 @@ public class TextUtilities {
             }
 
             if ((acronym != null) && (!openParenthesis)) {
-                // check if this possible acronym matches an immediately preceeding term
+                // check if this possible acronym matches an immediately preceding term
                 int j = posParenthesis;
                 int k = acronym.getText().length();
                 boolean stop = false;

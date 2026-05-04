@@ -739,7 +739,7 @@ public class Segmentation extends AbstractParser {
                 String rese = label(fulltext);
                 StringBuffer bufferFulltext = trainingExtraction(rese, tokenizations, doc);
 
-                // write the TEI file to reflect the extact layout of the text as extracted from the pdf
+                // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                         File.separator +
                         PDFFileName.replace(".pdf", ".training.segmentation.tei.xml")), false), "UTF-8");
@@ -814,7 +814,7 @@ public class Segmentation extends AbstractParser {
 
             fulltext = rawtxt.toString();
             if (isNotBlank(fulltext)) {
-                // write the TEI file to reflect the extact layout of the text as extracted from the pdf
+                // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                         File.separator +
                         PDFFileName.replaceAll("(?i)\\.pdf$", ".training.blank.tei.xml")), false), "UTF-8");

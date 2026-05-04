@@ -127,12 +127,12 @@ The next example illustrates similarly that in TEI list items should contained i
 
 A photo, picture or other graphical representation (this could be a chart or another figure) and boxes, are to be marked up using the `<figure>` element. This element contains the title, the figure/table/boxed content/photo itself, captions, any legend or notes it may have.
 
-Note that following the TEI, a table is maked as figure of type "table" (the actual `<table>` element appears in the `table` model applied in cascade) and a boxed content is marked as a figure of type "box".
+Note that following the TEI, a table is marked as figure of type "table" (the actual `<table>` element appears in the `table` model applied in cascade) and a boxed content is marked as a figure of type "box".
 
 The following XML sample shows one figure (`<figure>`) followed by two tables which are marked up as `<figure type="table">` elements.
 
 ```xml
-<figure>Figure 1. Hypothetical model for ceramide and S1P-induced autophagy and thei	consequences on cell fate. An<lb/>
+<figure>Figure 1. Hypothetical model for ceramide and S1P-induced autophagy and their	consequences on cell fate. An<lb/>
   ...
   <lb/>
   ....
