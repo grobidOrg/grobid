@@ -38,6 +38,7 @@ jobs:
           report_paths: '**/build/test-results/test/TEST-*.xml'
 
       - name: Coveralls GitHub Action
+        if: matrix.os != 'macos-15-intel'
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
