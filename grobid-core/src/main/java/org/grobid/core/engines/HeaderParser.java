@@ -224,7 +224,10 @@ public class HeaderParser extends AbstractParser {
                         if (authorSegments.get(k).size() == 0)
                             continue;
                         List<Person> localAuthors = parsers.getAuthorParser()
-                                .processingHeaderWithLayoutTokens(authorSegments.get(k), doc.getPDFAnnotations(), config);
+                                .processingHeaderWithLayoutTokens(
+                                        authorSegments.get(k),
+                                        doc.getPDFAnnotations(),
+                                        config);
                         if (localAuthors != null) {
                             for (Person pers : localAuthors) {
                                 resHeader.addFullAuthor(pers);
@@ -279,7 +282,8 @@ public class HeaderParser extends AbstractParser {
 
                 if (resHeader.getEditors() != null) {
                     // TBD: consider segments also for editors, like for authors above
-                    resHeader.setFullEditors(parsers.getAuthorParser().processingHeader(resHeader.getEditors(), config));
+                    resHeader
+                            .setFullEditors(parsers.getAuthorParser().processingHeader(resHeader.getEditors(), config));
                 }
 
                 // below using the reference strings to improve the metadata extraction, it will have to
@@ -309,7 +313,9 @@ public class HeaderParser extends AbstractParser {
                 // normalization of dates
                 if (resHeader != null) {
                     if (resHeader.getNormalizedPublicationDate() == null) {
-                        Optional<Date> normalisedPublicationDate = getNormalizedDate(resHeader.getPublicationDate(), config);
+                        Optional<Date> normalisedPublicationDate = getNormalizedDate(
+                                resHeader.getPublicationDate(),
+                                config);
                         if (normalisedPublicationDate.isPresent()) {
                             resHeader.setNormalizedPublicationDate(normalisedPublicationDate.get());
                         }
@@ -318,7 +324,9 @@ public class HeaderParser extends AbstractParser {
                     }
 
                     if (resHeader.getNormalizedSubmissionDate() == null) {
-                        Optional<Date> normalizedSubmissionDate = getNormalizedDate(resHeader.getSubmissionDate(), config);
+                        Optional<Date> normalizedSubmissionDate = getNormalizedDate(
+                                resHeader.getSubmissionDate(),
+                                config);
                         if (normalizedSubmissionDate.isPresent()) {
                             resHeader.setNormalizedSubmissionDate(normalizedSubmissionDate.get());
                         }

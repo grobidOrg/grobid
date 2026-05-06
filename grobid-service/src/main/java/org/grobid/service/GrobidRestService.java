@@ -817,8 +817,12 @@ public class GrobidRestService implements GrobidPaths {
         int consol = validateConsolidationParam(consolidate);
         boolean includeRaw = validateIncludeRawParam(includeRawCitations);
         return restProcessFiles.processStatelessReferencesDocument(
-                inputStream, consol, includeRaw, ExpectedResponseType.XML,
-                validateIncludeRawParam(debugMode), models);
+                inputStream,
+                consol,
+                includeRaw,
+                ExpectedResponseType.XML,
+                validateIncludeRawParam(debugMode),
+                models);
     }
 
     @Path(PATH_REFERENCES)
@@ -832,7 +836,11 @@ public class GrobidRestService implements GrobidPaths {
             @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
             @FormDataParam(MODELS) String models) {
         return processStatelessReferencesDocumentReturnXml_post(
-                inputStream, consolidate, includeRawCitations, debugMode, models);
+                inputStream,
+                consolidate,
+                includeRawCitations,
+                debugMode,
+                models);
     }
 
     @Path(PATH_REFERENCES)
@@ -848,8 +856,12 @@ public class GrobidRestService implements GrobidPaths {
         int consol = validateConsolidationParam(consolidate);
         boolean includeRaw = validateIncludeRawParam(includeRawCitations);
         return restProcessFiles.processStatelessReferencesDocument(
-                inputStream, consol, includeRaw, ExpectedResponseType.BIBTEX,
-                validateIncludeRawParam(debugMode), models);
+                inputStream,
+                consol,
+                includeRaw,
+                ExpectedResponseType.BIBTEX,
+                validateIncludeRawParam(debugMode),
+                models);
     }
 
     @Path(PATH_REFERENCES)
@@ -863,7 +875,11 @@ public class GrobidRestService implements GrobidPaths {
             @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
             @FormDataParam(MODELS) String models) {
         return processStatelessReferencesDocumentReturnBibTeX_post(
-                inputStream, consolidate, includeRawCitations, debugMode, models);
+                inputStream,
+                consolidate,
+                includeRawCitations,
+                debugMode,
+                models);
     }
 
     @Path(PATH_PDF_ANNOTATION)

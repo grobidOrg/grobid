@@ -551,7 +551,8 @@ public class GrobidRestServiceTest {
         String body = response.readEntity(String.class);
         assertNotNull(body);
         // primary cascade
-        assertTrue("Missing segmentation section. Body head: " + body.substring(0, Math.min(200, body.length())),
+        assertTrue(
+                "Missing segmentation section. Body head: " + body.substring(0, Math.min(200, body.length())),
                 body.contains("=== model: segmentation"));
         assertTrue("Missing header section", body.contains("=== model: header"));
         assertTrue("Missing fulltext section", body.contains("=== model: fulltext"));
@@ -565,7 +566,8 @@ public class GrobidRestServiceTest {
         // raw CRF rows are tab-separated with at least 3 columns: token + ≥1 feature + label
         String firstSection = body.substring(body.indexOf("\n") + 1);
         String firstContentLine = firstSection.split("\n")[0];
-        assertTrue("Expected tab-separated CRF row, got: " + firstContentLine,
+        assertTrue(
+                "Expected tab-separated CRF row, got: " + firstContentLine,
                 firstContentLine.split("\t").length >= 3);
     }
 
@@ -584,9 +586,11 @@ public class GrobidRestServiceTest {
         String body = response.readEntity(String.class);
         assertTrue("Missing requested header section", body.contains("=== model: header"));
         assertTrue("Missing requested citation section", body.contains("=== model: citation"));
-        assertFalse("Filter should have excluded segmentation",
+        assertFalse(
+                "Filter should have excluded segmentation",
                 body.contains("=== model: segmentation"));
-        assertFalse("Filter should have excluded fulltext",
+        assertFalse(
+                "Filter should have excluded fulltext",
                 body.contains("=== model: fulltext"));
     }
 
@@ -603,7 +607,8 @@ public class GrobidRestServiceTest {
         assertTrue(response.getHeaderString("Content-Type").startsWith(MediaType.TEXT_PLAIN));
 
         String body = response.readEntity(String.class);
-        assertTrue("Header endpoint should still emit segmentation",
+        assertTrue(
+                "Header endpoint should still emit segmentation",
                 body.contains("=== model: segmentation"));
         assertTrue("Header endpoint should emit header", body.contains("=== model: header"));
         assertFalse("Header endpoint must not run fulltext", body.contains("=== model: fulltext"));
@@ -623,7 +628,8 @@ public class GrobidRestServiceTest {
         assertTrue(response.getHeaderString("Content-Type").startsWith(MediaType.TEXT_PLAIN));
 
         String body = response.readEntity(String.class);
-        assertTrue("References endpoint should emit reference-segmenter",
+        assertTrue(
+                "References endpoint should emit reference-segmenter",
                 body.contains("=== model: reference-segmenter"));
         assertTrue("References endpoint should emit citation", body.contains("=== model: citation"));
         assertFalse("References endpoint must not run header", body.contains("=== model: header"));
@@ -654,7 +660,8 @@ public class GrobidRestServiceTest {
                 .post(Entity.entity(form, MediaType.MULTIPART_FORM_DATA));
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
         String contentType = response.getHeaderString("Content-Type");
-        assertTrue("Expected XML when debugMode is false, got: " + contentType,
+        assertTrue(
+                "Expected XML when debugMode is false, got: " + contentType,
                 contentType.startsWith(MediaType.APPLICATION_XML));
     }
 

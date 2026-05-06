@@ -127,7 +127,8 @@ public class AffiliationAddressParser extends AbstractParser {
     }
 
     public List<Affiliation> processingLayoutTokens(
-            List<List<LayoutToken>> tokenizations, GrobidAnalysisConfig config) {
+            List<List<LayoutToken>> tokenizations,
+            GrobidAnalysisConfig config) {
         List<Affiliation> results = null;
         try {
             if ((tokenizations == null) || (tokenizations.size() == 0)) {

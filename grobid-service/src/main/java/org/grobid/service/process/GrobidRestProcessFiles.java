@@ -7,6 +7,7 @@ import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Set;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -43,8 +44,6 @@ import org.grobid.service.util.BibTexMediaType;
 import org.grobid.service.util.ExpectedResponseType;
 import org.grobid.service.util.GrobidDebugUtils;
 import org.grobid.service.util.GrobidRestUtils;
-
-import java.util.Set;
 
 /**
  * Web services consuming a file
@@ -132,10 +131,16 @@ public class GrobidRestProcessFiles {
             int endPage,
             ExpectedResponseType expectedResponseType) {
         return processStatelessHeaderDocument(
-                inputStream, consolidate,
-                includeRawAffiliations, includeRawCopyrights, includeDiscardedText,
-                startPage, endPage, expectedResponseType,
-                false, null);
+                inputStream,
+                consolidate,
+                includeRawAffiliations,
+                includeRawCopyrights,
+                includeDiscardedText,
+                startPage,
+                endPage,
+                expectedResponseType,
+                false,
+                null);
     }
 
     public Response processStatelessHeaderDocument(
@@ -345,11 +350,22 @@ public class GrobidRestProcessFiles {
             final boolean segmentSentences,
             final List<String> teiCoordinates) throws Exception {
         return processFulltextDocument(
-                inputStream, flavor,
-                consolidateHeader, consolidateCitations, consolidateFunders,
-                includeRawAffiliations, includeRawCitations, includeRawCopyrights, includeDiscardedText,
-                startPage, endPage, generateIDs, segmentSentences, teiCoordinates,
-                false, null);
+                inputStream,
+                flavor,
+                consolidateHeader,
+                consolidateCitations,
+                consolidateFunders,
+                includeRawAffiliations,
+                includeRawCitations,
+                includeRawCopyrights,
+                includeDiscardedText,
+                startPage,
+                endPage,
+                generateIDs,
+                segmentSentences,
+                teiCoordinates,
+                false,
+                null);
     }
 
     public Response processFulltextDocument(
@@ -556,11 +572,21 @@ public class GrobidRestProcessFiles {
             final boolean segmentSentences,
             final List<String> teiCoordinates) throws Exception {
         return processStatelessFulltextAssetDocument(
-                inputStream, flavor,
-                consolidateHeader, consolidateCitations, consolidateFunders,
-                includeRawAffiliations, includeRawCitations, includeRawCopyrights,
-                startPage, endPage, generateIDs, segmentSentences, teiCoordinates,
-                false, null);
+                inputStream,
+                flavor,
+                consolidateHeader,
+                consolidateCitations,
+                consolidateFunders,
+                includeRawAffiliations,
+                includeRawCitations,
+                includeRawCopyrights,
+                startPage,
+                endPage,
+                generateIDs,
+                segmentSentences,
+                teiCoordinates,
+                false,
+                null);
     }
 
     public Response processStatelessFulltextAssetDocument(
@@ -857,7 +883,12 @@ public class GrobidRestProcessFiles {
             final boolean includeRawCitations,
             ExpectedResponseType expectedResponseType) {
         return processStatelessReferencesDocument(
-                inputStream, consolidate, includeRawCitations, expectedResponseType, false, null);
+                inputStream,
+                consolidate,
+                includeRawCitations,
+                expectedResponseType,
+                false,
+                null);
     }
 
     public Response processStatelessReferencesDocument(
@@ -900,8 +931,7 @@ public class GrobidRestProcessFiles {
             GrobidAnalysisConfig debugConfig = debugMode
                     ? GrobidAnalysisConfig.builder().debugLabelingCollector(debugCollector).build()
                     : null;
-            List<BibDataSet> bibDataSetList =
-                    engine.processReferences(originFile, md5Str, consolidate, debugConfig);
+            List<BibDataSet> bibDataSetList = engine.processReferences(originFile, md5Str, consolidate, debugConfig);
 
             if (debugMode) {
                 response = buildDebugResponse(debugCollector, modelsFilter);

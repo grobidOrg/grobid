@@ -208,7 +208,8 @@ public class CitationParser extends AbstractParser {
                     resCitation.setOriginalAuthors(resCitation.getAuthors());
                     try {
                         resCitation
-                                .setFullAuthors(parsers.getAuthorParser().processingCitation(resCitation.getAuthors(), config));
+                                .setFullAuthors(
+                                        parsers.getAuthorParser().processingCitation(resCitation.getAuthors(), config));
                     } catch (Exception e) {
                         LOGGER.error("An exception occurred when processing author names of a citation.", e);
                     }
@@ -216,7 +217,8 @@ public class CitationParser extends AbstractParser {
                         List<Date> dates = parsers.getDateParser()
                                 .process(
                                         resCitation
-                                                .getPublicationDate(), config);
+                                                .getPublicationDate(),
+                                        config);
                         if (dates != null) {
                             Date bestDate = null;
                             if (dates.size() > 0) {
@@ -255,7 +257,8 @@ public class CitationParser extends AbstractParser {
                     resCitation.setOriginalEditors(resCitation.getEditors());
                     try {
                         resCitation
-                                .setFullEditors(parsers.getAuthorParser().processingCitation(resCitation.getEditors(), config));
+                                .setFullEditors(
+                                        parsers.getAuthorParser().processingCitation(resCitation.getEditors(), config));
                     } catch (Exception e) {
                         LOGGER.error("An exception occurred when processing editor names of a citation.", e);
                     }
@@ -337,10 +340,9 @@ public class CitationParser extends AbstractParser {
 
         cntManager.i(CitationParserCounters.NOT_EMPTY_REFERENCES_BLOCKS);
 
-        List<LabeledReferenceResult> references =
-                (referenceSegmenter instanceof ReferenceSegmenterParser)
-                        ? ((ReferenceSegmenterParser) referenceSegmenter).extract(doc, config)
-                        : referenceSegmenter.extract(doc);
+        List<LabeledReferenceResult> references = (referenceSegmenter instanceof ReferenceSegmenterParser)
+                ? ((ReferenceSegmenterParser) referenceSegmenter).extract(doc, config)
+                : referenceSegmenter.extract(doc);
 
         if (references == null) {
             cntManager.i(CitationParserCounters.NULL_SEGMENTED_REFERENCES_LIST);

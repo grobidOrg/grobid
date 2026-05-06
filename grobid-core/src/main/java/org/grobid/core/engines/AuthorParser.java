@@ -74,7 +74,8 @@ public class AuthorParser {
     }
 
     public List<Person> processingCitationLayoutTokens(
-            List<LayoutToken> tokens, GrobidAnalysisConfig config) throws Exception {
+            List<LayoutToken> tokens,
+            GrobidAnalysisConfig config) throws Exception {
         if (CollectionUtils.isEmpty(tokens)) {
             return null;
         }
@@ -109,7 +110,9 @@ public class AuthorParser {
     }
 
     public List<Person> processingHeaderWithLayoutTokens(
-            List<LayoutToken> inputs, List<PDFAnnotation> pdfAnnotations, GrobidAnalysisConfig config) {
+            List<LayoutToken> inputs,
+            List<PDFAnnotation> pdfAnnotations,
+            GrobidAnalysisConfig config) {
         return processing(inputs, pdfAnnotations, true, config);
     }
 

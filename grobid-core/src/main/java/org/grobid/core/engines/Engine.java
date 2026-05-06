@@ -255,10 +255,17 @@ public class Engine implements Closeable {
     }
 
     public List<BibDataSet> processReferences(
-            File inputFile, String md5Str, int consolidate, GrobidAnalysisConfig config) {
+            File inputFile,
+            String md5Str,
+            int consolidate,
+            GrobidAnalysisConfig config) {
         return parsers.getCitationParser()
                 .processingReferenceSection(
-                        inputFile, md5Str, parsers.getReferenceSegmenterParser(), consolidate, config);
+                        inputFile,
+                        md5Str,
+                        parsers.getReferenceSegmenterParser(),
+                        consolidate,
+                        config);
     }
 
     /**
