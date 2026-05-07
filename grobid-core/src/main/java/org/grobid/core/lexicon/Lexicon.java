@@ -773,75 +773,11 @@ public class Lexicon {
         return lastNames.contains(s);
     }
 
-    // Disabled: no callers in production or tests.
-    // /**
-    //  * Indicate if we have a punctuation
-    //  */
-    // public boolean isPunctuation(String s) {
-    //     if (s.length() != 1)
-    //         return false;
-    //     else {
-    //         char c = s.charAt(0);
-    //         if ((!Character.isLetterOrDigit(c)) & !(c == '-'))
-    //             return true;
-    //     }
-    //     return false;
-    // }
-
     public List<OrganizationRecord> getOrganizationNamingInfo(String name) {
         if (researchOrganizations == null)
             return null;
         return researchOrganizations.get(name.toLowerCase());
     }
-
-    // Disabled: no callers in production or tests.
-    // /**
-    //  * Map the language codes used by the language identifier component to the normal
-    //  * language name.
-    //  * <p>
-    //  * Note: due to an older bug, kr is currently map to Korean too - this should
-    //  * disappear at some point in the future after retraining of models
-    //  *
-    //  * @param code the language to be mapped
-    //  */
-    // public String mapLanguageCode(String code) {
-    //     if (code == null)
-    //         return "";
-    //     else if (code.length() == 0)
-    //         return "";
-    //     else if (code.equals(Language.EN))
-    //         return "English";
-    //     else if (code.equals(Language.FR))
-    //         return "French";
-    //     else if (code.equals(Language.DE))
-    //         return "German";
-    //     else if (code.equals("cat"))
-    //         return "Catalan";
-    //     else if (code.equals("dk"))
-    //         return "Danish";
-    //     else if (code.equals("ee"))
-    //         return "Estonian";
-    //     else if (code.equals("fi"))
-    //         return "Finish";
-    //     else if (code.equals("it"))
-    //         return "Italian";
-    //     else if (code.equals("jp"))
-    //         return "Japanese";
-    //     else if (code.equals("kr") || code.equals("ko"))
-    //         return "Korean";
-    //     else if (code.equals("nl"))
-    //         return "Deutch";
-    //     else if (code.equals("no"))
-    //         return "Norvegian";
-    //     else if (code.equals("se"))
-    //         return "Swedish";
-    //     else if (code.equals("sorb"))
-    //         return "Sorbian";
-    //     else if (code.equals("tr"))
-    //         return "Turkish";
-    //     else
-    //         return "";
-    // }
 
     /**
      * Soft look-up in journal name gazetteer with token positions
@@ -1136,40 +1072,39 @@ public class Lexicon {
         return results;
     }
 
-    // Disabled: only test callers, no production usage.
-    // /**
-    //  * Soft look-up in location name gazetteer for a string, return a list of positions referring
-    //  * to the character positions within the string.
-    //  * <p>
-    //  * For example "The car is in Milan" as Milan is a location, would return OffsetPosition(14,19)
-    //  *
-    //  * @param s the input string
-    //  * @return a list of positions referring to the character position in the input string
-    //  */
-    // public List<OffsetPosition> charPositionsLocationNames(String s) {
-    //     if (locationPattern == null) {
-    //         initLocations();
-    //     }
-    //     List<OffsetPosition> results = locationPattern.matchCharacter(s);
-    //     return results;
-    // }
-    //
-    // /**
-    //  * Soft look-up in location name gazetteer for a list of LayoutToken, return a list of
-    //  * positions referring to the character positions in the input sequence.
-    //  * <p>
-    //  * For example "The car is in Milan" as Milan is a location, would return OffsetPosition(14,19)
-    //  *
-    //  * @param s the input list of LayoutToken
-    //  * @return a list of positions referring to the character position in the input sequence
-    //  */
-    // public List<OffsetPosition> charPositionsLocationNames(List<LayoutToken> s) {
-    //     if (locationPattern == null) {
-    //         initLocations();
-    //     }
-    //     List<OffsetPosition> results = locationPattern.matchCharacterLayoutToken(s);
-    //     return results;
-    // }
+     /**
+      * Soft look-up in location name gazetteer for a string, return a list of positions referring
+      * to the character positions within the string.
+      * <p>
+      * For example "The car is in Milan" as Milan is a location, would return OffsetPosition(14,19)
+      *
+      * @param s the input string
+      * @return a list of positions referring to the character position in the input string
+      */
+     public List<OffsetPosition> charPositionsLocationNames(String s) {
+         if (locationPattern == null) {
+             initLocations();
+         }
+         List<OffsetPosition> results = locationPattern.matchCharacter(s);
+         return results;
+     }
+
+     /**
+      * Soft look-up in location name gazetteer for a list of LayoutToken, return a list of
+      * positions referring to the character positions in the input sequence.
+      * <p>
+      * For example "The car is in Milan" as Milan is a location, would return OffsetPosition(14,19)
+      *
+      * @param s the input list of LayoutToken
+      * @return a list of positions referring to the character position in the input sequence
+      */
+     public List<OffsetPosition> charPositionsLocationNames(List<LayoutToken> s) {
+         if (locationPattern == null) {
+             initLocations();
+         }
+         List<OffsetPosition> results = locationPattern.matchCharacterLayoutToken(s);
+         return results;
+     }
 
     /**
      * Soft look-up in person title gazetteer for a given string with token positions
@@ -1206,37 +1141,36 @@ public class Lexicon {
         return results;
     }
 
-    // Disabled: only test callers, no production usage.
-    // /**
-    //  * Soft look-up in person title name gazetteer for a string.
-    //  * It return a list of positions referring to the character positions within the string.
-    //  *
-    //  * @param s the input string
-    //  * @return a list of positions referring to the character position in the input string
-    //  */
-    // public List<OffsetPosition> charPositionsPersonTitle(String s) {
-    //     if (personTitlePattern == null) {
-    //         initPersonTitles();
-    //     }
-    //     List<OffsetPosition> results = personTitlePattern.matchCharacter(s);
-    //     return results;
-    // }
-    //
-    // /**
-    //  * Soft look-up in person title name gazetteer for a list of LayoutToken.
-    //  * It return a list of positions referring to the character positions in the input
-    //  * sequence.
-    //  *
-    //  * @param s the input list of LayoutToken
-    //  * @return a list of positions referring to the character position in the input sequence
-    //  */
-    // public List<OffsetPosition> charPositionsPersonTitle(List<LayoutToken> s) {
-    //     if (personTitlePattern == null) {
-    //         initPersonTitles();
-    //     }
-    //     List<OffsetPosition> results = personTitlePattern.matchCharacterLayoutToken(s);
-    //     return results;
-    // }
+     /**
+      * Soft look-up in person title name gazetteer for a string.
+      * It returns a list of positions referring to the character positions within the string.
+      *
+      * @param s the input string
+      * @return a list of positions referring to the character position in the input string
+      */
+     public List<OffsetPosition> charPositionsPersonTitle(String s) {
+         if (personTitlePattern == null) {
+             initPersonTitles();
+         }
+         List<OffsetPosition> results = personTitlePattern.matchCharacter(s);
+         return results;
+     }
+
+     /**
+      * Soft look-up in person title name gazetteer for a list of LayoutToken.
+      * It return a list of positions referring to the character positions in the input
+      * sequence.
+      *
+      * @param s the input list of LayoutToken
+      * @return a list of positions referring to the character position in the input sequence
+      */
+     public List<OffsetPosition> charPositionsPersonTitle(List<LayoutToken> s) {
+         if (personTitlePattern == null) {
+             initPersonTitles();
+         }
+         List<OffsetPosition> results = personTitlePattern.matchCharacterLayoutToken(s);
+         return results;
+     }
 
     /**
      * Identify in tokenized input the positions of identifier patterns with token positions
@@ -1287,28 +1221,27 @@ public class Lexicon {
         return convertStringOffsetToTokenOffset(textResult, tokens);
     }
 
-    // Disabled: stub returning an empty list, never implemented, no callers.
-    // /**
-    //  * Identify in tokenized input the positions of ISSN patterns with token positions
-    //  */
-    // public List<OffsetPosition> tokenPositionsISSNPattern(List<LayoutToken> tokens) {
-    //     List<OffsetPosition> result = new ArrayList<OffsetPosition>();
-    //
-    //     // TBD !
-    //
-    //     return result;
-    // }
-    //
-    // /**
-    //  * Identify in tokenized input the positions of ISBN patterns with token positions
-    //  */
-    // public List<OffsetPosition> tokenPositionsISBNPattern(List<LayoutToken> tokens) {
-    //     List<OffsetPosition> result = new ArrayList<OffsetPosition>();
-    //
-    //     // TBD !!
-    //
-    //     return result;
-    // }
+     /**
+      * Identify in tokenized input the positions of ISSN patterns with token positions
+      */
+     public List<OffsetPosition> tokenPositionsISSNPattern(List<LayoutToken> tokens) {
+         List<OffsetPosition> result = new ArrayList<OffsetPosition>();
+
+         // TBD !
+
+         return result;
+     }
+
+     /**
+      * Identify in tokenized input the positions of ISBN patterns with token positions
+      */
+     public List<OffsetPosition> tokenPositionsISBNPattern(List<LayoutToken> tokens) {
+         List<OffsetPosition> result = new ArrayList<OffsetPosition>();
+
+         // TBD !!
+
+         return result;
+     }
 
     /**
      * Identify in tokenized input the positions of an URL pattern with token positions
@@ -1439,43 +1372,42 @@ public class Lexicon {
         return new OffsetPosition(startTokenIndex, endTokensIndex);
     }
 
-    // Disabled: only test callers, no production usage.
-    // public static OffsetPosition getTokenIndexMatchingURLDestination(List<LayoutToken> urlTokens, String destination) {
-    //     String urlString = LayoutTokensUtil.toText(urlTokens);
-    //
-    //     String joinedNoSpaces = urlString.replaceAll("\\s", "");
-    //     String destinationNoSpaces = destination.replaceAll("\\s", "");
-    //
-    //     // Find the start index in the space-less string
-    //     int destStartNoSpaces = joinedNoSpaces.indexOf(destinationNoSpaces);
-    //     if (destStartNoSpaces == -1) {
-    //         // Not found, handle as needed
-    //         return new OffsetPosition();
-    //     }
-    //
-    //     int destEndNoSpaces = destStartNoSpaces + destinationNoSpaces.length();
-    //
-    //     // Map to token indices
-    //     int charCount = 0;
-    //     int indexStart = -1, indexEnd = -1;
-    //     for (int i = 0; i < urlTokens.size(); i++) {
-    //         String tokenText = urlTokens.get(i).getText();
-    //         for (int j = 0; j < tokenText.length(); j++) {
-    //             if (!Character.isWhitespace(tokenText.charAt(j))) {
-    //                 if (charCount == destStartNoSpaces && indexStart == -1) {
-    //                     indexStart = i;
-    //                 }
-    //                 if (charCount == destEndNoSpaces - 1) {
-    //                     indexEnd = i;
-    //                 }
-    //                 charCount++;
-    //             }
-    //         }
-    //         if (indexEnd != -1)
-    //             break;
-    //     }
-    //     return new OffsetPosition(indexStart, indexEnd);
-    // }
+     public static OffsetPosition getTokenIndexMatchingURLDestination(List<LayoutToken> urlTokens, String destination) {
+         String urlString = LayoutTokensUtil.toText(urlTokens);
+
+         String joinedNoSpaces = urlString.replaceAll("\\s", "");
+         String destinationNoSpaces = destination.replaceAll("\\s", "");
+
+         // Find the start index in the space-less string
+         int destStartNoSpaces = joinedNoSpaces.indexOf(destinationNoSpaces);
+         if (destStartNoSpaces == -1) {
+             // Not found, handle as needed
+             return new OffsetPosition();
+         }
+
+         int destEndNoSpaces = destStartNoSpaces + destinationNoSpaces.length();
+
+         // Map to token indices
+         int charCount = 0;
+         int indexStart = -1, indexEnd = -1;
+         for (int i = 0; i < urlTokens.size(); i++) {
+             String tokenText = urlTokens.get(i).getText();
+             for (int j = 0; j < tokenText.length(); j++) {
+                 if (!Character.isWhitespace(tokenText.charAt(j))) {
+                     if (charCount == destStartNoSpaces && indexStart == -1) {
+                         indexStart = i;
+                     }
+                     if (charCount == destEndNoSpaces - 1) {
+                         indexEnd = i;
+                     }
+                     charCount++;
+                 }
+             }
+             if (indexEnd != -1)
+                 break;
+         }
+         return new OffsetPosition(indexStart, indexEnd);
+     }
 
     /**
      * This method returns the character offsets in relation to the string obtained by the layout tokens.

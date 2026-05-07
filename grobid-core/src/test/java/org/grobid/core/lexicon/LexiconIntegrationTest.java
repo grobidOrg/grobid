@@ -85,57 +85,55 @@ public class LexiconIntegrationTest {
         assertThat(inJournalNames.get(0).end, is(2));
     }
 
-    // Disabled together with charPositionsLocationNames in Lexicon (only test
-    // callers, no production usage). Restore in tandem when re-enabled.
-    // /**
-    //  * Locations
-    //  **/
-    //
-    // @Test
-    // public void testGetPositionInLocation_case1() throws Exception {
-    //     final String input = "In retrospect, the National Archives of Belgium were established by the French law of October 26th 1796 (5 Brumair V), which, amongst others, foresaw in the organisation of departmental depots (amongst others, in Brussels), in which the archives of the disbanded institutions of the Ancien Régime would be stored.";
-    //     final List<OffsetPosition> positions = target.charPositionsLocationNames(input);
-    //
-    //     assertThat(positions, hasSize(15));
-    //     assertThat(positions.get(0).start, is(0));
-    //     assertThat(positions.get(0).end, is(2));
-    // }
-    //
-    // @Test
-    // public void testGetPositionInLocation_case1_tokenised() throws Exception {
-    //     String input = "In retrospect, the National Archives of Belgium were established by the French law of October 26th 1796 (5 Brumair V), which, amongst others, foresaw in the organisation of departmental depots (amongst others, in Brussels), in which the archives of the disbanded institutions of the Ancien Régime would be stored.";
-    //     List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
-    //
-    //     final List<OffsetPosition> positions = target.charPositionsLocationNames(tokenisedInput);
-    //
-    //     assertThat(positions, hasSize(15));
-    //     assertThat(positions.get(0).start, is(0));
-    //     assertThat(positions.get(0).end, is(0));
-    // }
-    //
-    // @Test
-    // public void testGetPositionsInLocation_case2() throws Exception {
-    //     final String input = "I'm walking in The Bronx";
-    //     final List<OffsetPosition> positions = target.charPositionsLocationNames(input);
-    //
-    //     assertThat(positions, hasSize(4));
-    //     assertThat(positions.get(3).start, is(19));
-    //     assertThat(positions.get(3).end, is(24));
-    // }
-    //
-    // @Test
-    // public void testGetPositionsInLocation_case2_tokenised() throws Exception {
-    //     final String input = "I'm walking in The Bronx";
-    //     List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
-    //     final List<OffsetPosition> positions = target.charPositionsLocationNames(tokenisedInput);
-    //
-    //     assertThat(positions, hasSize(4));
-    //     assertThat(positions.get(3).start, is(10));
-    //     assertThat(positions.get(3).end, is(10));
-    //
-    //     assertThat(positions.get(2).start, is(8));
-    //     assertThat(positions.get(2).end, is(10));
-    // }
+     /**
+      * Locations
+      **/
+
+     @Test
+     public void testGetPositionInLocation_case1() throws Exception {
+         final String input = "In retrospect, the National Archives of Belgium were established by the French law of October 26th 1796 (5 Brumair V), which, amongst others, foresaw in the organisation of departmental depots (amongst others, in Brussels), in which the archives of the disbanded institutions of the Ancien Régime would be stored.";
+         final List<OffsetPosition> positions = target.charPositionsLocationNames(input);
+
+         assertThat(positions, hasSize(15));
+         assertThat(positions.get(0).start, is(0));
+         assertThat(positions.get(0).end, is(2));
+     }
+
+     @Test
+     public void testGetPositionInLocation_case1_tokenised() throws Exception {
+         String input = "In retrospect, the National Archives of Belgium were established by the French law of October 26th 1796 (5 Brumair V), which, amongst others, foresaw in the organisation of departmental depots (amongst others, in Brussels), in which the archives of the disbanded institutions of the Ancien Régime would be stored.";
+         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+
+         final List<OffsetPosition> positions = target.charPositionsLocationNames(tokenisedInput);
+
+         assertThat(positions, hasSize(15));
+         assertThat(positions.get(0).start, is(0));
+         assertThat(positions.get(0).end, is(0));
+     }
+
+     @Test
+     public void testGetPositionsInLocation_case2() throws Exception {
+         final String input = "I'm walking in The Bronx";
+         final List<OffsetPosition> positions = target.charPositionsLocationNames(input);
+
+         assertThat(positions, hasSize(4));
+         assertThat(positions.get(3).start, is(19));
+         assertThat(positions.get(3).end, is(24));
+     }
+
+     @Test
+     public void testGetPositionsInLocation_case2_tokenised() throws Exception {
+         final String input = "I'm walking in The Bronx";
+         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+         final List<OffsetPosition> positions = target.charPositionsLocationNames(tokenisedInput);
+
+         assertThat(positions, hasSize(4));
+         assertThat(positions.get(3).start, is(10));
+         assertThat(positions.get(3).end, is(10));
+
+         assertThat(positions.get(2).start, is(8));
+         assertThat(positions.get(2).end, is(10));
+     }
 
     /**
      * ORG Form
@@ -194,40 +192,38 @@ public class LexiconIntegrationTest {
     /**
      * Person title
      **/
-    // Disabled together with charPositionsPersonTitle in Lexicon (only test
-    // callers, no production usage). Restore in tandem when re-enabled.
-    // @Test
-    // public void testGetPositionInPersonTitleNames() throws Exception {
-    //     final String input = "The president had a meeting with the vice president, duke and cto of the company.";
-    //     final List<OffsetPosition> positions = target.charPositionsPersonTitle(input);
-    //
-    //     assertThat(positions, hasSize(4));
-    //     assertThat(positions.get(0).start, is(4));
-    //     assertThat(positions.get(0).end, is(13));
-    //     assertThat(positions.get(1).start, is(37));
-    //     assertThat(positions.get(1).end, is(51));
-    //     assertThat(positions.get(2).start, is(42));
-    //     assertThat(positions.get(2).end, is(51));
-    //     assertThat(positions.get(3).start, is(53));
-    //     assertThat(positions.get(3).end, is(57));
-    // }
-    //
-    // @Test
-    // public void testGetPositionInPersonTitleNames_tokenised() throws Exception {
-    //     final String input = "The president had a meeting with the vice president, duke and cto of the company.";
-    //     List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
-    //     final List<OffsetPosition> positions = target.charPositionsPersonTitle(tokenisedInput);
-    //
-    //     assertThat(positions, hasSize(4));
-    //     assertThat(positions.get(0).start, is(2));
-    //     assertThat(positions.get(0).end, is(2));
-    //     assertThat(positions.get(1).start, is(14));
-    //     assertThat(positions.get(1).end, is(16));
-    //     assertThat(positions.get(2).start, is(16));
-    //     assertThat(positions.get(2).end, is(16));
-    //     assertThat(positions.get(3).start, is(19));
-    //     assertThat(positions.get(3).end, is(19));
-    // }
+     @Test
+     public void testGetPositionInPersonTitleNames() throws Exception {
+         final String input = "The president had a meeting with the vice president, duke and cto of the company.";
+         final List<OffsetPosition> positions = target.charPositionsPersonTitle(input);
+
+         assertThat(positions, hasSize(4));
+         assertThat(positions.get(0).start, is(4));
+         assertThat(positions.get(0).end, is(13));
+         assertThat(positions.get(1).start, is(37));
+         assertThat(positions.get(1).end, is(51));
+         assertThat(positions.get(2).start, is(42));
+         assertThat(positions.get(2).end, is(51));
+         assertThat(positions.get(3).start, is(53));
+         assertThat(positions.get(3).end, is(57));
+     }
+
+     @Test
+     public void testGetPositionInPersonTitleNames_tokenised() throws Exception {
+         final String input = "The president had a meeting with the vice president, duke and cto of the company.";
+         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+         final List<OffsetPosition> positions = target.charPositionsPersonTitle(tokenisedInput);
+
+         assertThat(positions, hasSize(4));
+         assertThat(positions.get(0).start, is(2));
+         assertThat(positions.get(0).end, is(2));
+         assertThat(positions.get(1).start, is(14));
+         assertThat(positions.get(1).end, is(16));
+         assertThat(positions.get(2).start, is(16));
+         assertThat(positions.get(2).end, is(16));
+         assertThat(positions.get(3).start, is(19));
+         assertThat(positions.get(3).end, is(19));
+     }
 
     @Test
     public void testInJournalNamesLayoutToken() {
