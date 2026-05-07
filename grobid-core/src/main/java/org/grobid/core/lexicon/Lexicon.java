@@ -70,20 +70,13 @@ public class Lexicon {
         if (instance == null) {
             synchronized (Lexicon.class) {
                 if (instance == null) {
-                    getNewInstance();
+                    LOGGER.debug("Get new instance of Lexicon");
+                    GrobidProperties.getInstance();
+                    instance = new Lexicon();
                 }
             }
         }
         return instance;
-    }
-
-    /**
-     * Creates a new instance.
-     */
-    private static synchronized void getNewInstance() {
-        LOGGER.debug("Get new instance of Lexicon");
-        GrobidProperties.getInstance();
-        instance = new Lexicon();
     }
 
     /**
