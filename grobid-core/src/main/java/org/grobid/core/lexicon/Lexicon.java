@@ -56,11 +56,11 @@ public class Lexicon {
     private FastMatcher publisherPattern = null;
     private FastMatcher journalPattern = null;
     private FastMatcher cityPattern = null;
-    // private FastMatcher organisationPattern = null;
+    private FastMatcher organisationPattern = null;
     private FastMatcher researchInfrastructurePattern = null;
     private FastMatcher locationPattern = null;
     private FastMatcher countryPattern = null;
-    // private FastMatcher orgFormPattern = null;
+    private FastMatcher orgFormPattern = null;
     private FastMatcher collaborationPattern = null;
     private FastMatcher funderPattern = null;
     private FastMatcher personTitlePattern = null;
@@ -84,6 +84,67 @@ public class Lexicon {
         LOGGER.debug("Get new instance of Lexicon");
         GrobidProperties.getInstance();
         instance = new Lexicon();
+    }
+
+    /**
+     * Returns a builder for opting into optional gazetteers on top of the singleton's
+     * defaults. The default {@link #getInstance()} eagerly loads wordforms, person names,
+     * and country codes; other gazetteers (journals, locations, person titles, funders, etc.)
+     * are loaded lazily on first lookup. Some gazetteers — currently <i>organisations</i>
+     * and <i>organisation forms</i> — are off by default; the builder is the explicit way
+     * to enable them.
+     *
+     * <pre>
+     * Lexicon lex = Lexicon.builder()
+     *         .withOrganisations()
+     *         .build();
+     * </pre>
+     */
+    public static Builder builder() {
+        return new Builder();
+    }
+
+    /**
+     * Fluent configurator for {@link Lexicon}. Each {@code withX()} call enables an
+     * optional gazetteer. The terminal {@link #build()} call returns the singleton
+     * instance after triggering the requested loaders. Calls are idempotent — building
+     * twice with the same flags only loads each gazetteer once.
+     */
+    public static class Builder {
+        private boolean organisations = false;
+        private boolean orgForms = false;
+
+        /**
+         * Enables the organisation gazetteer (Wikipedia orgs + government agencies +
+         * known corporations + venture-funded companies). ~133K entries.
+         */
+        public Builder withOrganisations() {
+            this.organisations = true;
+            return this;
+        }
+
+        /**
+         * Enables the organisation-form gazetteer (Inc., Ltd., Corp., GmbH, etc.).
+         */
+        public Builder withOrgForms() {
+            this.orgForms = true;
+            return this;
+        }
+
+        /**
+         * Returns the {@link Lexicon} singleton, ensuring every requested gazetteer
+         * has been loaded. Already-loaded gazetteers are not reloaded.
+         */
+        public Lexicon build() {
+            Lexicon lex = Lexicon.getInstance();
+            if (organisations && lex.organisationPattern == null) {
+                lex.initOrganisations();
+            }
+            if (orgForms && lex.orgFormPattern == null) {
+                lex.initOrgForms();
+            }
+            return lex;
+        }
     }
 
     /**
@@ -186,10 +247,10 @@ public class Lexicon {
     }
 
     private void initDictionary() {
-        LOGGER.info("Initiating dictionary");
+        LOGGER.debug("Initiating dictionary");
         dictionary_en = new HashSet<>();
         dictionary_de = new HashSet<>();
-        LOGGER.info("End of Initialization of dictionary");
+        LOGGER.debug("End of Initialization of dictionary");
     }
 
     public final void addDictionary(String path, String lang) {
@@ -258,18 +319,18 @@ public class Lexicon {
     }
 
     private void initNames() {
-        LOGGER.info("Initiating names");
-        firstNames = new HashSet<String>();
-        lastNames = new HashSet<String>();
-        LOGGER.info("End of initialization of names");
+        LOGGER.debug("Initiating names");
+        firstNames = new HashSet<>();
+        lastNames = new HashSet<>();
+        LOGGER.debug("End of initialization of names");
     }
 
     private void initCountryCodes() {
-        LOGGER.info("Initiating country codes");
+        LOGGER.debug("Initiating country codes");
         countryCodes = new HashMap<String, String>();
         countries = new HashSet<String>();
         countryPattern = new FastMatcher();
-        LOGGER.info("End of initialization of country codes");
+        LOGGER.debug("End of initialization of country codes");
     }
 
     private void addCountryCodes(String path) {
@@ -311,7 +372,7 @@ public class Lexicon {
     }
 
     public void initCountryPatterns() {
-        if (countries == null || countries.size() == 0) {
+        if (countries == null || countries.isEmpty()) {
             // it should never be the case
             addCountryCodes(
                     GrobidProperties.getGrobidHomePath()
@@ -520,47 +581,54 @@ public class Lexicon {
         }
     }
 
-    // Disabled: the organisation/org-form gazetteers are loaded into RAM but
-    // no parser or feature vector queries them today. Commented out (not
-    // deleted) so the matchers can be re-enabled when the affiliation/header
-    // feature pipelines are extended to use them. Lexicon files preserved.
-    // public void initOrganisations() {
-    //     try {
-    //         organisationPattern = new FastMatcher(
-    //                 new File(GrobidProperties.getGrobidHomePath() + "/lexicon/organisations/WikiOrganizations.lst"));
-    //         organisationPattern.loadTerms(
-    //                 new File(GrobidProperties.getGrobidHomePath()
-    //                         +
-    //                         "/lexicon/organisations/government.government_agency"));
-    //         organisationPattern.loadTerms(
-    //                 new File(GrobidProperties.getGrobidHomePath()
-    //                         +
-    //                         "/lexicon/organisations/known_corporations.lst"));
-    //         organisationPattern.loadTerms(
-    //                 new File(GrobidProperties.getGrobidHomePath()
-    //                         +
-    //                         "/lexicon/organisations/venture_capital.venture_funded_company"));
-    //     } catch (PatternSyntaxException e) {
-    //         throw new GrobidResourceException("Error when compiling lexicon matcher for organisations.", e);
-    //     } catch (IOException e) {
-    //         throw new GrobidResourceException("Cannot add term to matcher, because the lexicon resource file "
-    //                 +
-    //                 "does not exist or cannot be read.", e);
-    //     } catch (Exception e) {
-    //         throw new GrobidException("An exception occurred while running Grobid Lexicon init.", e);
-    //     }
-    // }
+    /**
+     * Loads the organisation gazetteer (Wikipedia organisations, government agencies,
+     * known corporations, venture-funded companies). Not loaded by the default
+     * {@link #getInstance()}; use {@link Lexicon#builder()} with {@code .withOrganisations()}
+     * to enable, or call this method directly.
+     */
+    public void initOrganisations() {
+        try {
+            organisationPattern = new FastMatcher(
+                    new File(GrobidProperties.getGrobidHomePath() + "/lexicon/organisations/WikiOrganizations.lst"));
+            organisationPattern.loadTerms(
+                    new File(GrobidProperties.getGrobidHomePath()
+                            +
+                            "/lexicon/organisations/government.government_agency"));
+            organisationPattern.loadTerms(
+                    new File(GrobidProperties.getGrobidHomePath()
+                            +
+                            "/lexicon/organisations/known_corporations.lst"));
+            organisationPattern.loadTerms(
+                    new File(GrobidProperties.getGrobidHomePath()
+                            +
+                            "/lexicon/organisations/venture_capital.venture_funded_company"));
+        } catch (PatternSyntaxException e) {
+            throw new GrobidResourceException("Error when compiling lexicon matcher for organisations.", e);
+        } catch (IOException e) {
+            throw new GrobidResourceException("Cannot add term to matcher, because the lexicon resource file "
+                    +
+                    "does not exist or cannot be read.", e);
+        } catch (Exception e) {
+            throw new GrobidException("An exception occurred while running Grobid Lexicon init.", e);
+        }
+    }
 
-    // public void initOrgForms() {
-    //     try {
-    //         orgFormPattern = new FastMatcher(
-    //                 new File(GrobidProperties.getGrobidHomePath() + "/lexicon/organisations/orgClosings.txt"));
-    //     } catch (PatternSyntaxException e) {
-    //         throw new GrobidResourceException("Error when compiling lexicon matcher for organisations.", e);
-    //     } catch (Exception e) {
-    //         throw new GrobidException("An exception occurred while running Grobid Lexicon init.", e);
-    //     }
-    // }
+    /**
+     * Loads the organisation-form gazetteer (org closings like "Inc.", "Ltd."). Not loaded
+     * by the default {@link #getInstance()}; use {@link Lexicon#builder()} with
+     * {@code .withOrgForms()} to enable.
+     */
+    public void initOrgForms() {
+        try {
+            orgFormPattern = new FastMatcher(
+                    new File(GrobidProperties.getGrobidHomePath() + "/lexicon/organisations/orgClosings.txt"));
+        } catch (PatternSyntaxException e) {
+            throw new GrobidResourceException("Error when compiling lexicon matcher for organisations.", e);
+        } catch (Exception e) {
+            throw new GrobidException("An exception occurred while running Grobid Lexicon init.", e);
+        }
+    }
 
     public void initLocations() {
         try {
@@ -705,19 +773,20 @@ public class Lexicon {
         return lastNames.contains(s);
     }
 
-    /**
-     * Indicate if we have a punctuation
-     */
-    public boolean isPunctuation(String s) {
-        if (s.length() != 1)
-            return false;
-        else {
-            char c = s.charAt(0);
-            if ((!Character.isLetterOrDigit(c)) & !(c == '-'))
-                return true;
-        }
-        return false;
-    }
+    // Disabled: no callers in production or tests.
+    // /**
+    //  * Indicate if we have a punctuation
+    //  */
+    // public boolean isPunctuation(String s) {
+    //     if (s.length() != 1)
+    //         return false;
+    //     else {
+    //         char c = s.charAt(0);
+    //         if ((!Character.isLetterOrDigit(c)) & !(c == '-'))
+    //             return true;
+    //     }
+    //     return false;
+    // }
 
     public List<OrganizationRecord> getOrganizationNamingInfo(String name) {
         if (researchOrganizations == null)
@@ -725,53 +794,54 @@ public class Lexicon {
         return researchOrganizations.get(name.toLowerCase());
     }
 
-    /**
-     * Map the language codes used by the language identifier component to the normal
-     * language name.
-     * <p>
-     * Note: due to an older bug, kr is currently map to Korean too - this should
-     * disappear at some point in the future after retraining of models
-     *
-     * @param code the language to be mapped
-     */
-    public String mapLanguageCode(String code) {
-        if (code == null)
-            return "";
-        else if (code.length() == 0)
-            return "";
-        else if (code.equals(Language.EN))
-            return "English";
-        else if (code.equals(Language.FR))
-            return "French";
-        else if (code.equals(Language.DE))
-            return "German";
-        else if (code.equals("cat"))
-            return "Catalan";
-        else if (code.equals("dk"))
-            return "Danish";
-        else if (code.equals("ee"))
-            return "Estonian";
-        else if (code.equals("fi"))
-            return "Finish";
-        else if (code.equals("it"))
-            return "Italian";
-        else if (code.equals("jp"))
-            return "Japanese";
-        else if (code.equals("kr") || code.equals("ko"))
-            return "Korean";
-        else if (code.equals("nl"))
-            return "Deutch";
-        else if (code.equals("no"))
-            return "Norvegian";
-        else if (code.equals("se"))
-            return "Swedish";
-        else if (code.equals("sorb"))
-            return "Sorbian";
-        else if (code.equals("tr"))
-            return "Turkish";
-        else
-            return "";
-    }
+    // Disabled: no callers in production or tests.
+    // /**
+    //  * Map the language codes used by the language identifier component to the normal
+    //  * language name.
+    //  * <p>
+    //  * Note: due to an older bug, kr is currently map to Korean too - this should
+    //  * disappear at some point in the future after retraining of models
+    //  *
+    //  * @param code the language to be mapped
+    //  */
+    // public String mapLanguageCode(String code) {
+    //     if (code == null)
+    //         return "";
+    //     else if (code.length() == 0)
+    //         return "";
+    //     else if (code.equals(Language.EN))
+    //         return "English";
+    //     else if (code.equals(Language.FR))
+    //         return "French";
+    //     else if (code.equals(Language.DE))
+    //         return "German";
+    //     else if (code.equals("cat"))
+    //         return "Catalan";
+    //     else if (code.equals("dk"))
+    //         return "Danish";
+    //     else if (code.equals("ee"))
+    //         return "Estonian";
+    //     else if (code.equals("fi"))
+    //         return "Finish";
+    //     else if (code.equals("it"))
+    //         return "Italian";
+    //     else if (code.equals("jp"))
+    //         return "Japanese";
+    //     else if (code.equals("kr") || code.equals("ko"))
+    //         return "Korean";
+    //     else if (code.equals("nl"))
+    //         return "Deutch";
+    //     else if (code.equals("no"))
+    //         return "Norvegian";
+    //     else if (code.equals("se"))
+    //         return "Swedish";
+    //     else if (code.equals("sorb"))
+    //         return "Sorbian";
+    //     else if (code.equals("tr"))
+    //         return "Turkish";
+    //     else
+    //         return "";
+    // }
 
     /**
      * Soft look-up in journal name gazetteer with token positions
@@ -922,30 +992,30 @@ public class Lexicon {
         return results;
     }
 
-    // /** Organisation names **/
-    //
-    // /**
-    //  * Soft look-up in organisation name gazetteer for a given string with token positions
-    //  */
-    // public List<OffsetPosition> tokenPositionsOrganisationNames(String s) {
-    //     if (organisationPattern == null) {
-    //         initOrganisations();
-    //     }
-    //     List<OffsetPosition> results = organisationPattern.matchToken(s);
-    //     return results;
-    // }
-    //
-    // /**
-    //  * Soft look-up in organisation name gazetteer for a given list of LayoutToken objects
-    //  * with token positions
-    //  */
-    // public List<OffsetPosition> tokenPositionsOrganisationNames(List<LayoutToken> s) {
-    //     if (organisationPattern == null) {
-    //         initOrganisations();
-    //     }
-    //     List<OffsetPosition> results = organisationPattern.matchLayoutToken(s);
-    //     return results;
-    // }
+    /** Organisation names **/
+
+    /**
+     * Soft look-up in organisation name gazetteer for a given string with token positions
+     */
+    public List<OffsetPosition> tokenPositionsOrganisationNames(String s) {
+        if (organisationPattern == null) {
+            initOrganisations();
+        }
+        List<OffsetPosition> results = organisationPattern.matchToken(s);
+        return results;
+    }
+
+    /**
+     * Soft look-up in organisation name gazetteer for a given list of LayoutToken objects
+     * with token positions
+     */
+    public List<OffsetPosition> tokenPositionsOrganisationNames(List<LayoutToken> s) {
+        if (organisationPattern == null) {
+            initOrganisations();
+        }
+        List<OffsetPosition> results = organisationPattern.matchLayoutToken(s);
+        return results;
+    }
 
     /**
      * Soft look-up in country name gazetteer for a given list of LayoutToken objects
@@ -959,89 +1029,89 @@ public class Lexicon {
         return results;
     }
 
-    // /**
-    //  * Soft look-up in organisation names gazetteer for a string.
-    //  * It return a list of positions referring to the character positions within the string.
-    //  *
-    //  * @param s the input string
-    //  * @return a list of positions referring to the character position in the input string
-    //  */
-    // public List<OffsetPosition> charPositionsOrganisationNames(String s) {
-    //     if (organisationPattern == null) {
-    //         initOrganisations();
-    //     }
-    //     List<OffsetPosition> results = organisationPattern.matchCharacter(s);
-    //     return results;
-    // }
-    //
-    // /**
-    //  * Soft look-up in organisation names gazetteer for a tokenize sequence.
-    //  * It return a list of positions referring to the character positions within the input
-    //  * sequence.
-    //  *
-    //  * @param s the input list of LayoutToken
-    //  * @return a list of positions referring to the character position in the input sequence
-    //  */
-    // public List<OffsetPosition> charPositionsOrganisationNames(List<LayoutToken> s) {
-    //     if (organisationPattern == null) {
-    //         initOrganisations();
-    //     }
-    //     List<OffsetPosition> results = organisationPattern.matchCharacterLayoutToken(s);
-    //     return results;
-    // }
+    /**
+     * Soft look-up in organisation names gazetteer for a string.
+     * It return a list of positions referring to the character positions within the string.
+     *
+     * @param s the input string
+     * @return a list of positions referring to the character position in the input string
+     */
+    public List<OffsetPosition> charPositionsOrganisationNames(String s) {
+        if (organisationPattern == null) {
+            initOrganisations();
+        }
+        List<OffsetPosition> results = organisationPattern.matchCharacter(s);
+        return results;
+    }
 
-    // /**
-    //  * Soft look-up in organisation form name gazetteer for a given string with token positions
-    //  */
-    // public List<OffsetPosition> tokenPositionsOrgForm(String s) {
-    //     if (orgFormPattern == null) {
-    //         initOrgForms();
-    //     }
-    //     List<OffsetPosition> results = orgFormPattern.matchToken(s);
-    //     return results;
-    // }
-    //
-    // /**
-    //  * Soft look-up in organisation form name gazetteer for a given list of LayoutToken objects
-    //  * with token positions
-    //  */
-    // public List<OffsetPosition> tokenPositionsOrgForm(List<LayoutToken> s) {
-    //     if (orgFormPattern == null) {
-    //         initOrgForms();
-    //     }
-    //     List<OffsetPosition> results = orgFormPattern.matchLayoutToken(s);
-    //     return results;
-    // }
-    //
-    // /**
-    //  * Soft look-up in org form names gazetteer for a string.
-    //  * It return a list of positions referring to the character positions within the string.
-    //  *
-    //  * @param s the input string
-    //  * @return a list of positions referring to the character position in the input string
-    //  */
-    // public List<OffsetPosition> charPositionsOrgForm(String s) {
-    //     if (orgFormPattern == null) {
-    //         initOrgForms();
-    //     }
-    //     List<OffsetPosition> results = orgFormPattern.matchCharacter(s);
-    //     return results;
-    // }
-    //
-    // /**
-    //  * Soft look-up in org form names gazetteer for a tokenized string.
-    //  * It return a list of positions referring to the character positions within the sequence.
-    //  *
-    //  * @param s the input list of LayoutToken
-    //  * @return a list of positions referring to the character position in the input sequence
-    //  */
-    // public List<OffsetPosition> charPositionsOrgForm(List<LayoutToken> s) {
-    //     if (orgFormPattern == null) {
-    //         initOrgForms();
-    //     }
-    //     List<OffsetPosition> results = orgFormPattern.matchCharacterLayoutToken(s);
-    //     return results;
-    // }
+    /**
+     * Soft look-up in organisation names gazetteer for a tokenize sequence.
+     * It return a list of positions referring to the character positions within the input
+     * sequence.
+     *
+     * @param s the input list of LayoutToken
+     * @return a list of positions referring to the character position in the input sequence
+     */
+    public List<OffsetPosition> charPositionsOrganisationNames(List<LayoutToken> s) {
+        if (organisationPattern == null) {
+            initOrganisations();
+        }
+        List<OffsetPosition> results = organisationPattern.matchCharacterLayoutToken(s);
+        return results;
+    }
+
+    /**
+     * Soft look-up in organisation form name gazetteer for a given string with token positions
+     */
+    public List<OffsetPosition> tokenPositionsOrgForm(String s) {
+        if (orgFormPattern == null) {
+            initOrgForms();
+        }
+        List<OffsetPosition> results = orgFormPattern.matchToken(s);
+        return results;
+    }
+
+    /**
+     * Soft look-up in organisation form name gazetteer for a given list of LayoutToken objects
+     * with token positions
+     */
+    public List<OffsetPosition> tokenPositionsOrgForm(List<LayoutToken> s) {
+        if (orgFormPattern == null) {
+            initOrgForms();
+        }
+        List<OffsetPosition> results = orgFormPattern.matchLayoutToken(s);
+        return results;
+    }
+
+    /**
+     * Soft look-up in org form names gazetteer for a string.
+     * It return a list of positions referring to the character positions within the string.
+     *
+     * @param s the input string
+     * @return a list of positions referring to the character position in the input string
+     */
+    public List<OffsetPosition> charPositionsOrgForm(String s) {
+        if (orgFormPattern == null) {
+            initOrgForms();
+        }
+        List<OffsetPosition> results = orgFormPattern.matchCharacter(s);
+        return results;
+    }
+
+    /**
+     * Soft look-up in org form names gazetteer for a tokenized string.
+     * It return a list of positions referring to the character positions within the sequence.
+     *
+     * @param s the input list of LayoutToken
+     * @return a list of positions referring to the character position in the input sequence
+     */
+    public List<OffsetPosition> charPositionsOrgForm(List<LayoutToken> s) {
+        if (orgFormPattern == null) {
+            initOrgForms();
+        }
+        List<OffsetPosition> results = orgFormPattern.matchCharacterLayoutToken(s);
+        return results;
+    }
 
     /**
      * Soft look-up in location name gazetteer for a given string with token positions
@@ -1066,39 +1136,40 @@ public class Lexicon {
         return results;
     }
 
-    /**
-     * Soft look-up in location name gazetteer for a string, return a list of positions referring
-     * to the character positions within the string.
-     * <p>
-     * For example "The car is in Milan" as Milan is a location, would return OffsetPosition(14,19)
-     *
-     * @param s the input string
-     * @return a list of positions referring to the character position in the input string
-     */
-    public List<OffsetPosition> charPositionsLocationNames(String s) {
-        if (locationPattern == null) {
-            initLocations();
-        }
-        List<OffsetPosition> results = locationPattern.matchCharacter(s);
-        return results;
-    }
-
-    /**
-     * Soft look-up in location name gazetteer for a list of LayoutToken, return a list of
-     * positions referring to the character positions in the input sequence.
-     * <p>
-     * For example "The car is in Milan" as Milan is a location, would return OffsetPosition(14,19)
-     *
-     * @param s the input list of LayoutToken
-     * @return a list of positions referring to the character position in the input sequence
-     */
-    public List<OffsetPosition> charPositionsLocationNames(List<LayoutToken> s) {
-        if (locationPattern == null) {
-            initLocations();
-        }
-        List<OffsetPosition> results = locationPattern.matchCharacterLayoutToken(s);
-        return results;
-    }
+    // Disabled: only test callers, no production usage.
+    // /**
+    //  * Soft look-up in location name gazetteer for a string, return a list of positions referring
+    //  * to the character positions within the string.
+    //  * <p>
+    //  * For example "The car is in Milan" as Milan is a location, would return OffsetPosition(14,19)
+    //  *
+    //  * @param s the input string
+    //  * @return a list of positions referring to the character position in the input string
+    //  */
+    // public List<OffsetPosition> charPositionsLocationNames(String s) {
+    //     if (locationPattern == null) {
+    //         initLocations();
+    //     }
+    //     List<OffsetPosition> results = locationPattern.matchCharacter(s);
+    //     return results;
+    // }
+    //
+    // /**
+    //  * Soft look-up in location name gazetteer for a list of LayoutToken, return a list of
+    //  * positions referring to the character positions in the input sequence.
+    //  * <p>
+    //  * For example "The car is in Milan" as Milan is a location, would return OffsetPosition(14,19)
+    //  *
+    //  * @param s the input list of LayoutToken
+    //  * @return a list of positions referring to the character position in the input sequence
+    //  */
+    // public List<OffsetPosition> charPositionsLocationNames(List<LayoutToken> s) {
+    //     if (locationPattern == null) {
+    //         initLocations();
+    //     }
+    //     List<OffsetPosition> results = locationPattern.matchCharacterLayoutToken(s);
+    //     return results;
+    // }
 
     /**
      * Soft look-up in person title gazetteer for a given string with token positions
@@ -1135,36 +1206,37 @@ public class Lexicon {
         return results;
     }
 
-    /**
-     * Soft look-up in person title name gazetteer for a string.
-     * It return a list of positions referring to the character positions within the string.
-     *
-     * @param s the input string
-     * @return a list of positions referring to the character position in the input string
-     */
-    public List<OffsetPosition> charPositionsPersonTitle(String s) {
-        if (personTitlePattern == null) {
-            initPersonTitles();
-        }
-        List<OffsetPosition> results = personTitlePattern.matchCharacter(s);
-        return results;
-    }
-
-    /**
-     * Soft look-up in person title name gazetteer for a list of LayoutToken.
-     * It return a list of positions referring to the character positions in the input
-     * sequence.
-     *
-     * @param s the input list of LayoutToken
-     * @return a list of positions referring to the character position in the input sequence
-     */
-    public List<OffsetPosition> charPositionsPersonTitle(List<LayoutToken> s) {
-        if (personTitlePattern == null) {
-            initPersonTitles();
-        }
-        List<OffsetPosition> results = personTitlePattern.matchCharacterLayoutToken(s);
-        return results;
-    }
+    // Disabled: only test callers, no production usage.
+    // /**
+    //  * Soft look-up in person title name gazetteer for a string.
+    //  * It return a list of positions referring to the character positions within the string.
+    //  *
+    //  * @param s the input string
+    //  * @return a list of positions referring to the character position in the input string
+    //  */
+    // public List<OffsetPosition> charPositionsPersonTitle(String s) {
+    //     if (personTitlePattern == null) {
+    //         initPersonTitles();
+    //     }
+    //     List<OffsetPosition> results = personTitlePattern.matchCharacter(s);
+    //     return results;
+    // }
+    //
+    // /**
+    //  * Soft look-up in person title name gazetteer for a list of LayoutToken.
+    //  * It return a list of positions referring to the character positions in the input
+    //  * sequence.
+    //  *
+    //  * @param s the input list of LayoutToken
+    //  * @return a list of positions referring to the character position in the input sequence
+    //  */
+    // public List<OffsetPosition> charPositionsPersonTitle(List<LayoutToken> s) {
+    //     if (personTitlePattern == null) {
+    //         initPersonTitles();
+    //     }
+    //     List<OffsetPosition> results = personTitlePattern.matchCharacterLayoutToken(s);
+    //     return results;
+    // }
 
     /**
      * Identify in tokenized input the positions of identifier patterns with token positions
@@ -1215,27 +1287,28 @@ public class Lexicon {
         return convertStringOffsetToTokenOffset(textResult, tokens);
     }
 
-    /**
-     * Identify in tokenized input the positions of ISSN patterns with token positions
-     */
-    public List<OffsetPosition> tokenPositionsISSNPattern(List<LayoutToken> tokens) {
-        List<OffsetPosition> result = new ArrayList<OffsetPosition>();
-
-        // TBD !
-
-        return result;
-    }
-
-    /**
-     * Identify in tokenized input the positions of ISBN patterns with token positions
-     */
-    public List<OffsetPosition> tokenPositionsISBNPattern(List<LayoutToken> tokens) {
-        List<OffsetPosition> result = new ArrayList<OffsetPosition>();
-
-        // TBD !!
-
-        return result;
-    }
+    // Disabled: stub returning an empty list, never implemented, no callers.
+    // /**
+    //  * Identify in tokenized input the positions of ISSN patterns with token positions
+    //  */
+    // public List<OffsetPosition> tokenPositionsISSNPattern(List<LayoutToken> tokens) {
+    //     List<OffsetPosition> result = new ArrayList<OffsetPosition>();
+    //
+    //     // TBD !
+    //
+    //     return result;
+    // }
+    //
+    // /**
+    //  * Identify in tokenized input the positions of ISBN patterns with token positions
+    //  */
+    // public List<OffsetPosition> tokenPositionsISBNPattern(List<LayoutToken> tokens) {
+    //     List<OffsetPosition> result = new ArrayList<OffsetPosition>();
+    //
+    //     // TBD !!
+    //
+    //     return result;
+    // }
 
     /**
      * Identify in tokenized input the positions of an URL pattern with token positions
@@ -1366,42 +1439,43 @@ public class Lexicon {
         return new OffsetPosition(startTokenIndex, endTokensIndex);
     }
 
-    public static OffsetPosition getTokenIndexMatchingURLDestination(List<LayoutToken> urlTokens, String destination) {
-        String urlString = LayoutTokensUtil.toText(urlTokens);
-
-        String joinedNoSpaces = urlString.replaceAll("\\s", "");
-        String destinationNoSpaces = destination.replaceAll("\\s", "");
-
-        // Find the start index in the space-less string
-        int destStartNoSpaces = joinedNoSpaces.indexOf(destinationNoSpaces);
-        if (destStartNoSpaces == -1) {
-            // Not found, handle as needed
-            return new OffsetPosition();
-        }
-
-        int destEndNoSpaces = destStartNoSpaces + destinationNoSpaces.length();
-
-        // Map to token indices
-        int charCount = 0;
-        int indexStart = -1, indexEnd = -1;
-        for (int i = 0; i < urlTokens.size(); i++) {
-            String tokenText = urlTokens.get(i).getText();
-            for (int j = 0; j < tokenText.length(); j++) {
-                if (!Character.isWhitespace(tokenText.charAt(j))) {
-                    if (charCount == destStartNoSpaces && indexStart == -1) {
-                        indexStart = i;
-                    }
-                    if (charCount == destEndNoSpaces - 1) {
-                        indexEnd = i;
-                    }
-                    charCount++;
-                }
-            }
-            if (indexEnd != -1)
-                break;
-        }
-        return new OffsetPosition(indexStart, indexEnd);
-    }
+    // Disabled: only test callers, no production usage.
+    // public static OffsetPosition getTokenIndexMatchingURLDestination(List<LayoutToken> urlTokens, String destination) {
+    //     String urlString = LayoutTokensUtil.toText(urlTokens);
+    //
+    //     String joinedNoSpaces = urlString.replaceAll("\\s", "");
+    //     String destinationNoSpaces = destination.replaceAll("\\s", "");
+    //
+    //     // Find the start index in the space-less string
+    //     int destStartNoSpaces = joinedNoSpaces.indexOf(destinationNoSpaces);
+    //     if (destStartNoSpaces == -1) {
+    //         // Not found, handle as needed
+    //         return new OffsetPosition();
+    //     }
+    //
+    //     int destEndNoSpaces = destStartNoSpaces + destinationNoSpaces.length();
+    //
+    //     // Map to token indices
+    //     int charCount = 0;
+    //     int indexStart = -1, indexEnd = -1;
+    //     for (int i = 0; i < urlTokens.size(); i++) {
+    //         String tokenText = urlTokens.get(i).getText();
+    //         for (int j = 0; j < tokenText.length(); j++) {
+    //             if (!Character.isWhitespace(tokenText.charAt(j))) {
+    //                 if (charCount == destStartNoSpaces && indexStart == -1) {
+    //                     indexStart = i;
+    //                 }
+    //                 if (charCount == destEndNoSpaces - 1) {
+    //                     indexEnd = i;
+    //                 }
+    //                 charCount++;
+    //             }
+    //         }
+    //         if (indexEnd != -1)
+    //             break;
+    //     }
+    //     return new OffsetPosition(indexStart, indexEnd);
+    // }
 
     /**
      * This method returns the character offsets in relation to the string obtained by the layout tokens.
