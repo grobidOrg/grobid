@@ -135,55 +135,58 @@ public class LexiconIntegrationTest {
         assertThat(positions.get(2).end, is(10));
     }
 
-    /**
-     * ORG Form
-     **/
-    @Test
-    public void testGetPositionInOrgForm() throws Exception {
-        final String input = "Matusa Inc. was bought by Bayer";
-        final List<OffsetPosition> positions = target.charPositionsOrgForm(input);
-
-        assertThat(positions, hasSize(1));
-        assertThat(positions.get(0).start, is(7));
-        assertThat(positions.get(0).end, is(10));
-    }
-
-    @Test
-    public void testGetPositionInOrgForm_tokenised() throws Exception {
-        final String input = "Matusa Inc. was bought by Bayer";
-        List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
-
-        final List<OffsetPosition> positions = target.charPositionsOrgForm(tokenisedInput);
-
-        assertThat(positions, hasSize(1));
-        assertThat(positions.get(0).start, is(2));
-        assertThat(positions.get(0).end, is(2));
-    }
-
-    /**
-     * Organisation names
-     */
-    @Test
-    public void testGetPositionInOrganisationNames() throws Exception {
-        final String input = "Matusa Inc. was bought by Bayer";
-        final List<OffsetPosition> positions = target.charPositionsOrganisationNames(input);
-
-        assertThat(positions, hasSize(1));
-        assertThat(positions.get(0).start, is(26));
-        assertThat(positions.get(0).end, is(31));
-    }
-
-    @Test
-    public void testGetPositionInOrganisationNames_tokenised() throws Exception {
-        final String input = "Matusa Inc. was bought by Bayer";
-        List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
-
-        final List<OffsetPosition> positions = target.charPositionsOrganisationNames(tokenisedInput);
-
-        assertThat(positions, hasSize(1));
-        assertThat(positions.get(0).start, is(11));
-        assertThat(positions.get(0).end, is(11));
-    }
+    // Disabled together with the organisation/org-form gazetteer matchers
+    // in Lexicon (see Lexicon.initOrganisations / initOrgForms). Restore in
+    // tandem when those matchers are re-enabled.
+    // /**
+    //  * ORG Form
+    //  **/
+    // @Test
+    // public void testGetPositionInOrgForm() throws Exception {
+    //     final String input = "Matusa Inc. was bought by Bayer";
+    //     final List<OffsetPosition> positions = target.charPositionsOrgForm(input);
+    //
+    //     assertThat(positions, hasSize(1));
+    //     assertThat(positions.get(0).start, is(7));
+    //     assertThat(positions.get(0).end, is(10));
+    // }
+    //
+    // @Test
+    // public void testGetPositionInOrgForm_tokenised() throws Exception {
+    //     final String input = "Matusa Inc. was bought by Bayer";
+    //     List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+    //
+    //     final List<OffsetPosition> positions = target.charPositionsOrgForm(tokenisedInput);
+    //
+    //     assertThat(positions, hasSize(1));
+    //     assertThat(positions.get(0).start, is(2));
+    //     assertThat(positions.get(0).end, is(2));
+    // }
+    //
+    // /**
+    //  * Organisation names
+    //  */
+    // @Test
+    // public void testGetPositionInOrganisationNames() throws Exception {
+    //     final String input = "Matusa Inc. was bought by Bayer";
+    //     final List<OffsetPosition> positions = target.charPositionsOrganisationNames(input);
+    //
+    //     assertThat(positions, hasSize(1));
+    //     assertThat(positions.get(0).start, is(26));
+    //     assertThat(positions.get(0).end, is(31));
+    // }
+    //
+    // @Test
+    // public void testGetPositionInOrganisationNames_tokenised() throws Exception {
+    //     final String input = "Matusa Inc. was bought by Bayer";
+    //     List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+    //
+    //     final List<OffsetPosition> positions = target.charPositionsOrganisationNames(tokenisedInput);
+    //
+    //     assertThat(positions, hasSize(1));
+    //     assertThat(positions.get(0).start, is(11));
+    //     assertThat(positions.get(0).end, is(11));
+    // }
 
     /**
      * Person title
