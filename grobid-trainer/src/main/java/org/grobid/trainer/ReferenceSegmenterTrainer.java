@@ -16,6 +16,7 @@
 package org.grobid.trainer;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.StringTokenizer;
 
@@ -107,7 +108,7 @@ public class ReferenceSegmenterTrainer extends AbstractTrainer {
             Writer trainingWriter = null;
             if (trainingOutputPath != null) {
                 trainingOS = new FileOutputStream(trainingOutputPath);
-                trainingWriter = new OutputStreamWriter(trainingOS, "UTF8");
+                trainingWriter = new OutputStreamWriter(trainingOS, StandardCharsets.UTF_8);
             }
 
             // the file for writing the evaluation data
@@ -115,7 +116,7 @@ public class ReferenceSegmenterTrainer extends AbstractTrainer {
             Writer evaluationWriter = null;
             if (evaluationOutputPath != null) {
                 evaluationOS = new FileOutputStream(evaluationOutputPath);
-                evaluationWriter = new OutputStreamWriter(evaluationOS, "UTF8");
+                evaluationWriter = new OutputStreamWriter(evaluationOS, StandardCharsets.UTF_8);
             }
 
             System.out.println("training data under: " + trainingOutputPath);
