@@ -420,13 +420,12 @@ public class FeaturesVectorSegmentation {
         res.append(" " + relativePagePositionChar);
 
         // punctuation profile (27-28)
-        if ( (punctuationProfile == null) || (punctuationProfile.length() == 0) ) {
+        if ((punctuationProfile == null) || (punctuationProfile.length() == 0)) {
             res.append(" no");
             res.append(" 0");
-        }
-        else {
+        } else {
             res.append(" " + punctuationProfile);
-            res.append(" "+punctuationProfile.length());
+            res.append(" " + punctuationProfile.length());
         }
 
         // line length (29)

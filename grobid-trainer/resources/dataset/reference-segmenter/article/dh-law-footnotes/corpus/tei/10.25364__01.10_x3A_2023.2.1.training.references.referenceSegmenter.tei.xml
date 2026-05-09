@@ -133,6 +133,13 @@
     <change when="2026-04-02T13:22:32.494Z" status="in-review" who="#cboulanger">
       <desc>finished corrections</desc>
     </change>
+    <change when="2026-05-09T11:50:33.223Z" status="in-review" who="#lfoppiano">
+      <note type="label">v9 (lfoppiano)</note>
+      <desc>finished corrections</desc>
+    </change>
+    <change when="2026-05-09T11:51:19.989Z" status="approved" who="#lfoppiano">
+      <desc>finished corrections</desc>
+    </change>
   </revisionDesc>
 </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
@@ -152,7 +159,7 @@
 <bibl><label>9</label> Mit der marktgeregelten Geldwirtschaft ist einsichtig geworden, dass Arbeit als Gut knapp ist, weil dafür bezahlt wer-<lb/>den muss. Vgl Luhmann, Die Wirtschaft der Gesellschaft 9 (2019), 217.<lb/> </bibl>
         <bibl><label>10</label> Polanyi, The Great Transformation (2001), 71 ff, hat Boden, Arbeit und Geld als fiktive Waren bezeichnet, weil es sich<lb/> dabei nicht um Güter handelt, die eigens für den Handel (Markt) produziert worden sind.<lb/> </bibl>
          <bibl><label>11</label> Vgl Art 1 der Charta der Grundrechte der Europäischen Union (GRC) und Art 1 Abs 1 des Grundgesetzes für die Bun-<lb/>desrepublik Deutschland (GG).<lb/> </bibl>
-          <bibl><label> 12</label> Eine Norm ist dann rechtsverbindlich, dh sie gilt dann als Rechtsnorm, wenn sie ein Verhalten, das durch einen<lb/> Rechtsakt für gewollt erklärt worden ist, als gesollt setzt. Ein Rechtsakt ist eine Satzung oder Gewohnheit, die nach der<lb/> Verfassung als rechtsetzender Willensakt zu deuten ist. Die Frage nach der Effektivität und der Legitimität der Verfas-<lb/>sung ist für die Rechtsdogmatik eine Vorfrage, weshalb sie die Maßgeblichkeit der Verfassung, auf deren Grundlage Ge-<lb/>richte urteilen, voraussetzt. Diese Voraussetzung heißt ‚Grundnorm', weil sie die Rechtsgeltung der maßgebenden<lb/> Norm begründet. Mit der Grundnorm markiert die Rechtsdogmatik lediglich den Ort des Abbruchs ihres Verfahrens der<lb/> Begründung von Verbindlichkeit und hält derart das als Rechtsordnung normativ geschlossen operierende Rechtssys-<lb/>tem kognitiv offen. Im Wort ‚Sollen' drängt sich unentwegt eine Nachfrage nach der Fairness des Verfahrens zur Recht-<lb/>setzung und der Verantwortbarkeit von Sanktionen bei Zuwiderhandeln 
+          <bibl><label>12</label> Eine Norm ist dann rechtsverbindlich, dh sie gilt dann als Rechtsnorm, wenn sie ein Verhalten, das durch einen<lb/> Rechtsakt für gewollt erklärt worden ist, als gesollt setzt. Ein Rechtsakt ist eine Satzung oder Gewohnheit, die nach der<lb/> Verfassung als rechtsetzender Willensakt zu deuten ist. Die Frage nach der Effektivität und der Legitimität der Verfas-<lb/>sung ist für die Rechtsdogmatik eine Vorfrage, weshalb sie die Maßgeblichkeit der Verfassung, auf deren Grundlage Ge-<lb/>richte urteilen, voraussetzt. Diese Voraussetzung heißt ‚Grundnorm', weil sie die Rechtsgeltung der maßgebenden<lb/> Norm begründet. Mit der Grundnorm markiert die Rechtsdogmatik lediglich den Ort des Abbruchs ihres Verfahrens der<lb/> Begründung von Verbindlichkeit und hält derart das als Rechtsordnung normativ geschlossen operierende Rechtssys-<lb/>tem kognitiv offen. Im Wort ‚Sollen' drängt sich unentwegt eine Nachfrage nach der Fairness des Verfahrens zur Recht-<lb/>setzung und der Verantwortbarkeit von Sanktionen bei Zuwiderhandeln 
         auf. Vgl Pačić, Bereinigte Rechtslogik (2022),<lb/> 58, 61-64.<lb/>
         </bibl>
         <bibl><label>13</label> Vgl Pačić, Das Recht der Arbeit in Europa (2020), 87;</bibl> 

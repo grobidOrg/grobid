@@ -51,7 +51,6 @@ public class TEIReferenceSegmenterSaxParser extends DefaultHandler {
     public Lexicon lexicon = Lexicon.getInstance();
     private int totalReferences = 0;
 
-
     public TEIReferenceSegmenterSaxParser() {
         labeled = new ArrayList<String>();
     }

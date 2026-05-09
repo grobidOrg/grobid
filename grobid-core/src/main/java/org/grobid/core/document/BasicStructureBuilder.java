@@ -308,7 +308,10 @@ public class BasicStructureBuilder {
      * document-line, this method receives one label per token and maps them directly to
      * DocumentPiece boundaries.
      */
-    static public Document generalResultSegmentationTokenLevel(Document doc, String labeledResult, List<LayoutToken> documentTokens) {
+    static public Document generalResultSegmentationTokenLevel(
+            Document doc,
+            String labeledResult,
+            List<LayoutToken> documentTokens) {
         List<Pair<String, String>> labeledTokens = GenericTaggerUtils.getTokensAndLabels(labeledResult);
 
         SortedSetMultimap<String, DocumentPiece> labeledBlocks = TreeMultimap.create();
@@ -325,7 +328,8 @@ public class BasicStructureBuilder {
             Block block = docBlocks.get(bi);
             int start = block.getStartToken();
             int end = block.getEndToken();
-            if (start == -1 || end == -1) continue;
+            if (start == -1 || end == -1)
+                continue;
             for (int t = start; t <= end && t < documentTokens.size(); t++) {
                 tokenToBlock[t] = bi;
             }
@@ -337,9 +341,9 @@ public class BasicStructureBuilder {
         int segmentEndPos = -1;   // tokenDocPos where the current segment ends
 
         String ignoredLabel = "@IGNORED_LABEL@";
-        for (Pair<String, String> labeledTokenPair :
-                Iterables.concat(labeledTokens,
-                    Collections.singleton(Pair.of("IgnoredToken", ignoredLabel)))) {
+        for (Pair<String, String> labeledTokenPair : Iterables.concat(
+                labeledTokens,
+                Collections.singleton(Pair.of("IgnoredToken", ignoredLabel)))) {
             if (labeledTokenPair == null) {
                 continue;
             }
@@ -352,8 +356,8 @@ public class BasicStructureBuilder {
             while (docTokenPos < documentTokens.size()) {
                 String docTokText = documentTokens.get(docTokenPos).getText();
                 if (docTokText != null && docTokText.trim().length() > 0
-                    && !docTokText.equals("\n") && !docTokText.equals("\r")
-                    && !docTokText.equals(" ") && !docTokText.equals("\t")) {
+                        && !docTokText.equals("\n") && !docTokText.equals("\r")
+                        && !docTokText.equals(" ") && !docTokText.equals("\t")) {
                     break;
                 }
                 docTokenPos++;

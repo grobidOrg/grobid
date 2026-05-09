@@ -1,124 +1,138 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-    <fileDesc xml:id="_10.6092__issn.2531-6133__10402">
-      <titleStmt>
-        <title level="a">A Mistake of Natural Law: Sir William Blackstone and the Anglican Way</title>
-        <author>
-          <persName>
-            <forename>Craig A.</forename>
-            <surname>Stern</surname>
-          </persName>
-        </author>
-        <respStmt>
-          <persName xml:id="li">Mengjiao Li</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="sandfort">Johanna Sandfort</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="kazuyo">Kazuyo Okamura</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>University of Bologna Law Review</publisher>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
-        </availability>
-        <date type="publication">2019</date>
+  <fileDesc xml:id="_10.6092__issn.2531-6133__10402">
+    <titleStmt>
+      <title level="a">A Mistake of Natural Law: Sir William Blackstone and the Anglican Way</title>
+      <author>
+        <persName>
+          <forename>Craig A.</forename>
+          <surname>Stern</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>University of Bologna Law Review</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2019</date>
+      <idno type="DOI">10.6092/issn.2531-6133/10402</idno>
+      <ptr target="https://bolognalawreview.unibo.it/article/view/10402"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Craig A. Stern. (2019). A Mistake of Natural Law: Sir William Blackstone and the Anglican Way. University of Bologna Law Review. DOI: 10.6092/issn.2531-6133/10402</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">A Mistake of Natural Law: Sir William Blackstone and the Anglican Way</title>
+          <author>
+            <persName>
+              <forename>Craig A.</forename>
+              <surname>Stern</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">University of Bologna Law Review</title>
+          <imprint>
+            <date when="2019">2019</date>
+            <publisher>University of Bologna Law Review</publisher>
+          </imprint>
+        </monogr>
         <idno type="DOI">10.6092/issn.2531-6133/10402</idno>
         <ptr target="https://bolognalawreview.unibo.it/article/view/10402"/>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>Craig A. Stern. (2019). A Mistake of Natural Law: Sir William Blackstone and the Anglican Way. University of Bologna Law Review. DOI: 10.6092/issn.2531-6133/10402</bibl>
-        <biblStruct>
-          <analytic>
-            <title level="a">A Mistake of Natural Law: Sir William Blackstone and the Anglican Way</title>
-            <author>
-              <persName>
-                <forename>Craig A.</forename>
-                <surname>Stern</surname>
-              </persName>
-            </author>
-          </analytic>
-          <monogr>
-            <title level="j">University of Bologna Law Review</title>
-            <imprint>
-              <date when="2019">2019</date>
-              <publisher>University of Bologna Law Review</publisher>
-            </imprint>
-          </monogr>
-          <idno type="DOI">10.6092/issn.2531-6133/10402</idno>
-          <ptr target="https://bolognalawreview.unibo.it/article/view/10402"/>
-        </biblStruct>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="1.0" ident="pdf-tei-editor" type="editor">
-          <label>PDF-TEI Editor</label>
-          <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
-        </application>
-        <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T13:43:01.228477Z" type="extractor">
-          <label>GROBID</label>
-          <label type="variant-id">grobid.training.references.referenceSegmenter</label>
-          <label type="revision">7272991</label>
-          <label type="flavor">article/dh-law-footnotes</label>
-          <ref target="https://github.com/grobidOrg/grobid"/>
-          <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
-        </application>
-      </appInfo>
-    </encodingDesc>
-    <revisionDesc>
-      <change when="2026-02-16T13:43:01.228477Z" status="extraction">
-        <note type="label">review</note>
-        <desc>Extraction</desc>
-      </change>
-      <change when="2026-02-18T18:46:40.203Z" status="unfinished" who="#li">
-        <desc>Started first pass</desc>
-      </change>
-      <change when="2026-02-22T16:00:13.518Z" status="unfinished" who="#li">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-23T09:26:41.551Z" status="draft" who="#li">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-23T09:26:41.584Z" status="draft" who="#li">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-24T14:28:12.329Z" status="draft" who="#sandfort">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-24T14:46:26.228Z" status="draft" who="#sandfort">
-        <desc>started</desc>
-      </change>
-      <change when="2026-02-24T15:03:25.230Z" status="draft" who="#sandfort">
-        <desc>Corrections to 37</desc>
-      </change>
-      <change when="2026-03-02T09:26:46.829Z" status="draft" who="#sandfort">
-        <desc>Corrections till 101</desc>
-      </change>
-      <change when="2026-03-05T14:51:34.317Z" status="draft" who="#sandfort">
-        <desc>Corrections till 221</desc>
-      </change>
-      <change when="2026-03-05T15:12:23.369Z" status="checked" who="#sandfort">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-03-06T17:09:03.118Z" status="in-review" who="#kazuyo">
-        <desc>Corrections</desc>
-      </change>
-    </revisionDesc>
-  </teiHeader>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T13:43:01.228477Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T13:43:01.228477Z" status="extraction">
+      <note type="label">review</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-02-18T18:46:40.203Z" status="unfinished" who="#li">
+      <desc>Started first pass</desc>
+    </change>
+    <change when="2026-02-22T16:00:13.518Z" status="unfinished" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-23T09:26:41.551Z" status="draft" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-23T09:26:41.584Z" status="draft" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-24T14:28:12.329Z" status="draft" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-24T14:46:26.228Z" status="draft" who="#sandfort">
+      <desc>started</desc>
+    </change>
+    <change when="2026-02-24T15:03:25.230Z" status="draft" who="#sandfort">
+      <desc>Corrections to 37</desc>
+    </change>
+    <change when="2026-03-02T09:26:46.829Z" status="draft" who="#sandfort">
+      <desc>Corrections till 101</desc>
+    </change>
+    <change when="2026-03-05T14:51:34.317Z" status="draft" who="#sandfort">
+      <desc>Corrections till 221</desc>
+    </change>
+    <change when="2026-03-05T15:12:23.369Z" status="checked" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-06T17:09:03.118Z" status="in-review" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-04-02T14:37:34.081Z" status="in-review" who="#lfoppiano">
+      <note type="label">v6 (lfoppiano)</note>
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-04-02T14:38:23.126Z" status="in-review" who="#lfoppiano">
+      <desc>post-corrections</desc>
+    </change>
+    <change when="2026-05-09T11:57:18.207Z" status="approved" who="#lfoppiano">
+      <desc>post-corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
         <listBibl>
         <bibl><label>1</label> DANIEL J. BOORSTIN, THE MYSTERIOUS SCIENCE OF THE LAW, at vii (Peter Smith 1973) (1941);<lb/> </bibl>
-        <bibl>see also Albert W. Alschuler, Rediscovering Blackstone, 145 U. PA. L. REV. 1, 2 (1996). </bibl>
+<bibl>see also Albert W. Alschuler, Rediscovering Blackstone, 145 U. PA. L. REV. 1, 2 (1996). </bibl>
           <bibl>The<lb/> Commentaries was hugely popular in the eighteenth and nineteenth centuries. See WILFRID<lb/> PREST, WILLIAM BLACKSTONE 307 (2008).<lb/> </bibl>
-            <bibl><label>2</label> See BOORSTIN, supra note 1, at iii; </bibl>
+        <bibl><label>2</label> See BOORSTIN, supra note 1, at iii; </bibl>
           <bibl>see also Alschuler, supra note 1, at 5-9; </bibl>
-        <bibl>Joseph W.<lb/> McKnight, Blackstone: Quasi-Jurisprudent, 13 SW L.J. 399, 411 (1959). </bibl>
+<bibl>Joseph W.<lb/> McKnight, Blackstone: Quasi-Jurisprudent, 13 SW L.J. 399, 411 (1959). </bibl>
           <bibl>The present article<lb/> happens to highlight elements of the Commentaries that commended it to Americans<lb/> of the Founding: "Even those who rejected Blackstone's anti-republican emphasis on<lb/> parliamentary omnipotence . . . had no difficulty in accepting the validity of Blackstone's<lb/> exposition of English common law as founded on custom, divine law, and the law of<lb/> nature, hence providing an entirely appropriate legal foundation for the incipient USA."<lb/> Wilfrid Prest, General Editor's Introduction to 1 WILLIAM BLACKSTONE, COMMENTARIES ON THE<lb/> LAWS OF ENGLAND, at vii, xiv (Wilfrid Prest ed., Oxford Univ. Press 2016) (1765) (footnote<lb/> omitted).<lb/> </bibl>
         <bibl><label>3</label> See Wilfrid Prest, Blackstone as Architect: Constructing the Commentaries, 15 YALE J.L. &amp;<lb/> HUMAN. 103, 107-08 (2003).<lb/> </bibl>
         <bibl><label>4</label> McKnight, supra note 2, at 401.<lb/> </bibl>
@@ -127,7 +141,7 @@
         <bibl><label>7</label> Sometimes the Commentaries seems to use "natural law" or some similar term for the law<lb/> of nature. See infra text accompanying notes 41-42. </bibl>
           <bibl>This seeming lack of uniformity and<lb/> rigor in terminology certainly does not foster coherence in the Commentaries. On the other<lb/> hand, Aquinas seems to do likewise. See infra note 33.<lb/> </bibl>
         <bibl><label>8</label> See infra notes 34-44 and accompanying text.<lb/> </bibl>
-        <bibl><label>9</label> In the early sixteenth century, St. German wrote Doctor and Student, "the first major law<lb/> book published in English," "also the first purely analytical English law book," a work<lb/> of "analytical theology and philosophy." DANIEL R. COQUILLETTE, THE ANGLO-AMERICAN<lb/> LEGAL HERITAGE: INTRODUCTORY MATERIALS 187-88 (2d ed. 2004). </bibl>
+<bibl><label>9</label> In the early sixteenth century, St. German wrote Doctor and Student, "the first major law<lb/> book published in English," "also the first purely analytical English law book," a work<lb/> of "analytical theology and philosophy." DANIEL R. COQUILLETTE, THE ANGLO-AMERICAN<lb/> LEGAL HERITAGE: INTRODUCTORY MATERIALS 187-88 (2d ed. 2004). </bibl>
           <bibl>He drew in part upon<lb/> Aquinas. CHRISTOPHER SAINT GERMAN, ST. GERMAN'S DOCTOR AND STUDENT, at xxiii-iv, li,<lb/> lvi (T. F. T. Plucknett &amp; J. L. Barton eds., 1975).<lb/> </bibl>
         <bibl><label>10</label> See infra notes 55-96 and accompanying text.<lb/> </bibl>
         <bibl><label>11</label> See infra notes 97-329 and accompanying text.<lb/> </bibl>
@@ -137,7 +151,7 @@
         <bibl><label>15</label> DAVID LIEBERMAN, THE PROVINCE OF LEGISLATION DETERMINED: LEGAL THEORY IN<lb/> EIGHTEENTH-CENTURY BRITAIN 65 (1989).<lb/> </bibl>
         <bibl><label>16</label> See Robert C. Berring, The Ultimate Oldie But Goodie: William Blackstone's Commentaries on<lb/> the Law of England, 4 J.L. 189, 190 (2014).</bibl>
           <bibl> This is not to say that Blackstone disregarded<lb/> the education of lawyers by means of his Commentaries. See David Lemmings, Blackstone<lb/> and Law Reform by Education: Preparation for the Bar and Lawyerly Culture in Eighteenth-<lb/>Century England, 16 LAW HIST. REV. 211, 215, 251-52 (1998); </bibl>
-        <bibl>Prest, supra note 2, at ix.<lb/> </bibl>
+<bibl>Prest, supra note 2, at ix.<lb/> </bibl>
         <bibl><label>17</label> See LIEBERMAN, supra note 15, at 56, 66.<lb/> </bibl>
         <bibl><label>18</label> See S. F. C. Milsom, The Nature of Blackstone's Achievement, 1 OXFORD J. LEGAL STUD. 1, 4, 6<lb/> (1981).<lb/> </bibl>
         <bibl><label>19</label> See id. at 2, 5, 12.<lb/> </bibl>
@@ -149,7 +163,7 @@
           <bibl>&gt;Blackstone's use of natural law in the Commentaries may also reflect his<lb/> own introduction to the law. It was St. German's Doctor and Student, a work integrating<lb/> theological and legal thought, that drew Blackstone to the law. Cook, supra note 12, at<lb/> 170.</bibl>
           <bibl>Perhaps for similar reasons, the Commentaries turned students from theology to law.<lb/> McKnight, supra note 2, at 401.<lb/></bibl>
           <bibl> Note that the pagination of the various editions of the Commentaries has become more or<lb/> less standardized. This move is not without its problems, however. See Alschuler, supra<lb/> note 1, at 3 n.4;</bibl><bibl> cf.Carli N. Conklin, The Origins of the Pursuit of Happiness, 7 WASH. U. JURIS.<lb/>REV. 195, 200 (2015)) (selecting for use the first edition, as does the present article); </bibl>
-        <bibl>Alan<lb/> Watson, The Structure of Blackstone's Commentaries, 97 YALE L.J. 795, 801 (1988) (same).<lb/> </bibl>
+<bibl>Alan<lb/> Watson, The Structure of Blackstone's Commentaries, 97 YALE L.J. 795, 801 (1988) (same).<lb/> </bibl>
         <bibl><label>24</label> See 1 BLACKSTONE, supra note 23, at 38-62. Blackstone's approach reflects Christian and<lb/> classical roots.</bibl>
           <bibl>Conklin, supra note 23, at 246.</bibl><bibl> It owes a debt to Burlamaqui,HENRY SUMNER<lb/> MAINE, ANCIENT LAW 94 (Oxford Univ. Press 1931) (1861).;</bibl>
           <bibl> McKnight, supra note 2, at 406-<lb/>07, but not in its definition of law, J. M. Finnis, Blackstone's Theoretical Intentions, 12 NAT.<lb/> L.F. 163, 171 (1967).</bibl>
@@ -172,8 +186,9 @@
         <bibl><label>37</label> 1 BLACKSTONE, supra note 23, at 42.<lb/> </bibl>
         <bibl><label>38</label> Id. In tension with his formulation here, elsewhere in the Commentaries Blackstone will<lb/> write of "divine law, either natural or revealed," 2 id. at 420, and "divine law both natural<lb/> and revealed," id. at 455.</bibl>
           <bibl> In these two instances, it appears that he uses "divine" to denote<lb/> the divine origin of the law of nature rather than to denote divine law proper. So, in yet<lb/> a third place, he writes of "those laws which the creator has given us; the divine laws, I<lb/> mean, of either nature or revelation." 4 id. at 177.<lb/> </bibl>
+
         <bibl><label>39</label> 1 id. at 42.<lb/></bibl>
-            <bibl><label> 40</label> Id.<lb/></bibl>
+          <bibl><label> 40</label> Id.<lb/></bibl>
         <bibl><label>41</label> Id. Examples of Blackstone's references to the divine law include his discussion of the law<lb/> of nuisance as enforcing "that excellent rule of gospel-morality, of 'doing to others as we<lb/> would they should do unto ourselves,'" 3 id. at 218, and of the criminal law, 4 id. at 11, 30,<lb/> 42, 43, 60, including laws against homicide, id. at 177, dueling, id. at 199, and sodomy,<lb/> id. at 216.</bibl>
           <bibl> John Finnis has noted that Blackstone's endorsement of the role divine law is<lb/> to play in the formulation of human law does not lead him to confuse crime with sin. See<lb/> Finnis, supra note 24, at 177.<lb/> </bibl>
         <bibl><label>42</label> See supra note 7.<lb/> </bibl>
@@ -322,7 +337,7 @@ McKnight, supra note 2, at 407-09.<lb/> </bibl>
 <bibl>FAULKNER, supra note 111, at 115.<lb/> </bibl>
         <bibl><label>131</label> See infra notes 305-12 and accompanying text.<lb/></bibl>
 
-        <bibl><label>132</label> ATKINSON, supra note 106, at 50.<lb/> </bibl>
+     <bibl><label>132</label> ATKINSON, supra note 106, at 50.<lb/> </bibl>
         <bibl><label>133</label> See FAULKNER, supra note 111, at 103, 111.<lb/></bibl>
         <bibl><bibl>134</bibl> See id. at 112.<lb/> </bibl>
         <bibl><label>135</label> See 1 HOOKER, supra note 108, at 422;</bibl>
@@ -335,11 +350,12 @@ McKnight, supra note 2, at 407-09.<lb/> </bibl>
         <bibl><label>139</label> See FAULKNER, supra note 111, at 114.<lb/> </bibl>
         <bibl><label>140</label> See THORNTON, supra note 117, at 45-46.<lb/> </bibl>
         <bibl><label>141</label> See id. at 37.</bibl>
-            <bibl>Such a commitment to historical development, adapted to local conditions,<lb/> lies at the core of Hooker&apos;s chief aim-to explain and defend the ecclesiastical polity of<lb/> the Church of England. See ATKINSON, supra note 106, at 58.<lb/> </bibl>
+            <bibl>Such a commitment to historical development, adapted to local conditions,<lb/> lies at the core of Hooker's chief aim-to explain and defend the ecclesiastical polity of<lb/> the Church of England. See ATKINSON, supra note 106, at 58.<lb/> </bibl>
         <bibl><label>142</label> See ATKINSON, supra note 106, at 47.<lb/></bibl>
         <bibl><label>143</label> See id. at 54.<lb/> </bibl>
         <bibl><label>144</label> Berman, supra note 107, at 1664-66.<lb/> </bibl>
-        <bibl><label>145</label> See id. at 1666.<lb/> </bibl>
+          
+<bibl><label>145</label> See id. at 1666.<lb/> </bibl>
         <bibl><label>146</label> See BOORSTIN, supra note 1, at 36;</bibl>
           <bibl> LIEBERMAN, supra note 15, at 42;</bibl>
           <bibl> Conklin, supra note 23,<lb/> at 218.</bibl>

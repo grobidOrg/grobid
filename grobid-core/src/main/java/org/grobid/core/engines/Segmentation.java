@@ -735,7 +735,8 @@ public class Segmentation extends AbstractParser {
                         // parentheses count in line
                         int parenthesesCount = 0;
                         for (int i = 0; i < line.length(); i++) {
-                            if (line.charAt(i) == '(') parenthesesCount++;
+                            if (line.charAt(i) == '(')
+                                parenthesesCount++;
                         }
                         features.parenthesesCountInLine = featureFactory
                                 .linearScaling(parenthesesCount, 10, NBBINS_DENSITY);
@@ -743,7 +744,8 @@ public class Segmentation extends AbstractParser {
                         // comma count in line
                         int commaCount = 0;
                         for (int i = 0; i < line.length(); i++) {
-                            if (line.charAt(i) == ',') commaCount++;
+                            if (line.charAt(i) == ',')
+                                commaCount++;
                         }
                         features.commaCountInLine = featureFactory
                                 .linearScaling(commaCount, 15, NBBINS_DENSITY);
@@ -798,7 +800,8 @@ public class Segmentation extends AbstractParser {
         }
 
         if (blocks.size() > GrobidProperties.getPdfBlocksMax()) {
-            throw new GrobidException("Postprocessed document is too big, contains: " + blocks.size(), GrobidExceptionStatus.TOO_MANY_BLOCKS);
+            throw new GrobidException("Postprocessed document is too big, contains: " + blocks.size(),
+                    GrobidExceptionStatus.TOO_MANY_BLOCKS);
         }
 
         // repetitive pattern detection (same as line-level)
@@ -834,8 +837,10 @@ public class Segmentation extends AbstractParser {
         return getFeatureVectorsTokenLevelAsString(doc, patterns, firstTimePattern);
     }
 
-    private String getFeatureVectorsTokenLevelAsString(Document doc, Map<String, Integer> patterns,
-                                                       Map<String, Boolean> firstTimePattern) {
+    private String getFeatureVectorsTokenLevelAsString(
+            Document doc,
+            Map<String, Integer> patterns,
+            Map<String, Boolean> firstTimePattern) {
         StringBuilder fulltext = new StringBuilder();
         int documentLength = doc.getDocumentLenghtChar();
 
@@ -878,7 +883,8 @@ public class Segmentation extends AbstractParser {
                     for (GraphicObject localImage : localImages) {
                         if (localImage.getType() == GraphicObjectType.BITMAP)
                             graphicBitmap = true;
-                        if (localImage.getType() == GraphicObjectType.VECTOR || localImage.getType() == GraphicObjectType.VECTOR_BOX)
+                        if (localImage.getType() == GraphicObjectType.VECTOR
+                                || localImage.getType() == GraphicObjectType.VECTOR_BOX)
                             graphicVector = true;
                     }
                 }
@@ -895,15 +901,20 @@ public class Segmentation extends AbstractParser {
                 // character density of the block
                 double density = 0.0;
                 if ((block.getHeight() != 0.0) && (block.getWidth() != 0.0) &&
-                    (block.getText() != null) && (!block.getText().contains("@PAGE")) &&
-                    (!block.getText().contains("@IMAGE")))
+                        (block.getText() != null) && (!block.getText().contains("@PAGE")) &&
+                        (!block.getText().contains("@IMAGE")))
                     density = (double) block.getText().length() / (block.getHeight() * block.getWidth());
 
                 // is the current block in the main area of the page or not?
                 boolean inPageMainArea = true;
-                BoundingBox blockBoundingBox = BoundingBox.fromPointAndDimensions(page.getNumber(),
-                    block.getX(), block.getY(), block.getWidth(), block.getHeight());
-                if (pageBoundingBox == null || (!pageBoundingBox.contains(blockBoundingBox) && !pageBoundingBox.intersect(blockBoundingBox)))
+                BoundingBox blockBoundingBox = BoundingBox.fromPointAndDimensions(
+                        page.getNumber(),
+                        block.getX(),
+                        block.getY(),
+                        block.getWidth(),
+                        block.getHeight());
+                if (pageBoundingBox == null || (!pageBoundingBox.contains(blockBoundingBox)
+                        && !pageBoundingBox.intersect(blockBoundingBox)))
                     inPageMainArea = false;
 
                 // pre-compute line-level features from block text
@@ -957,12 +968,14 @@ public class Segmentation extends AbstractParser {
 
                 int lineIndex = 0;
                 for (List<LayoutToken> lineTokens : tokensByLine) {
-                    if (lineTokens.isEmpty()) continue;
+                    if (lineTokens.isEmpty())
+                        continue;
 
                     // compute per-line text for shared line-level features
                     StringBuilder lineTextBuilder = new StringBuilder();
                     for (LayoutToken lt : lineTokens) {
-                        if (lt.getText() != null) lineTextBuilder.append(lt.getText());
+                        if (lt.getText() != null)
+                            lineTextBuilder.append(lt.getText());
                     }
                     String lineText = lineTextBuilder.toString();
 
@@ -995,8 +1008,10 @@ public class Segmentation extends AbstractParser {
                     int capitalizedWordCount = 0;
                     if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES || flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN) {
                         for (int i = 0; i < lineText.length(); i++) {
-                            if (lineText.charAt(i) == '(') parenthesesCount++;
-                            if (lineText.charAt(i) == ',') commaCount++;
+                            if (lineText.charAt(i) == '(')
+                                parenthesesCount++;
+                            if (lineText.charAt(i) == ',')
+                                commaCount++;
                         }
                         String[] words = lineText.split("\\s+");
                         for (int i = 1; i < words.length; i++) {
@@ -1018,9 +1033,11 @@ public class Segmentation extends AbstractParser {
                     for (int ti = 0; ti < nonSpaceTokens.size(); ti++) {
                         LayoutToken token = nonSpaceTokens.get(ti);
                         String text = token.getText();
-                        if (text == null) continue;
+                        if (text == null)
+                            continue;
                         text = text.replaceAll("[ \n\r]", "").trim();
-                        if (text.length() == 0) continue;
+                        if (text.length() == 0)
+                            continue;
 
                         features = new FeaturesVectorSegmentation();
                         features.token = token;
@@ -1062,44 +1079,65 @@ public class Segmentation extends AbstractParser {
                         features.lineLength = lineLength;
                         features.punctuationProfile = punctuationProfile;
 
-                        if (graphicBitmap) features.bitmapAround = true;
-                        if (graphicVector) features.vectorAround = true;
+                        if (graphicBitmap)
+                            features.bitmapAround = true;
+                        if (graphicVector)
+                            features.vectorAround = true;
 
                         features.repetitivePattern = blockRepetitivePattern;
                         features.firstRepetitivePattern = blockFirstRepetitivePattern;
 
                         // per-token lexical features
-                        if (text.length() == 1) features.singleChar = true;
-                        if (Character.isUpperCase(text.charAt(0))) features.capitalisation = "INITCAP";
-                        if (featureFactory.test_all_capital(text)) features.capitalisation = "ALLCAP";
-                        if (featureFactory.test_digit(text)) features.digit = "CONTAINSDIGITS";
-                        if (featureFactory.test_common(text)) features.commonName = true;
-                        if (featureFactory.test_names(text)) features.properName = true;
-                        if (featureFactory.test_month(text)) features.month = true;
+                        if (text.length() == 1)
+                            features.singleChar = true;
+                        if (Character.isUpperCase(text.charAt(0)))
+                            features.capitalisation = "INITCAP";
+                        if (featureFactory.test_all_capital(text))
+                            features.capitalisation = "ALLCAP";
+                        if (featureFactory.test_digit(text))
+                            features.digit = "CONTAINSDIGITS";
+                        if (featureFactory.test_common(text))
+                            features.commonName = true;
+                        if (featureFactory.test_names(text))
+                            features.properName = true;
+                        if (featureFactory.test_month(text))
+                            features.month = true;
 
                         Matcher m = featureFactory.isDigit.matcher(text);
-                        if (m.find()) features.digit = "ALLDIGIT";
+                        if (m.find())
+                            features.digit = "ALLDIGIT";
 
                         Matcher m2 = featureFactory.year.matcher(text);
-                        if (m2.find()) features.year = true;
+                        if (m2.find())
+                            features.year = true;
 
                         Matcher m3 = featureFactory.email.matcher(text);
-                        if (m3.find()) features.email = true;
+                        if (m3.find())
+                            features.email = true;
 
                         Matcher m4 = featureFactory.http.matcher(text);
-                        if (m4.find()) features.http = true;
+                        if (m4.find())
+                            features.http = true;
 
                         // punctuation type (per-token)
                         Matcher mp = featureFactory.isPunct.matcher(text);
-                        if (mp.find()) features.punctType = "PUNCT";
-                        if (text.equals("(") || text.equals("[")) features.punctType = "OPENBRACKET";
-                        else if (text.equals(")") || text.equals("]")) features.punctType = "ENDBRACKET";
-                        else if (text.equals(".")) features.punctType = "DOT";
-                        else if (text.equals(",")) features.punctType = "COMMA";
-                        else if (text.equals("-")) features.punctType = "HYPHEN";
-                        else if (text.equals("\"") || text.equals("'") || text.equals("`")) features.punctType = "QUOTE";
+                        if (mp.find())
+                            features.punctType = "PUNCT";
+                        if (text.equals("(") || text.equals("["))
+                            features.punctType = "OPENBRACKET";
+                        else if (text.equals(")") || text.equals("]"))
+                            features.punctType = "ENDBRACKET";
+                        else if (text.equals("."))
+                            features.punctType = "DOT";
+                        else if (text.equals(","))
+                            features.punctType = "COMMA";
+                        else if (text.equals("-"))
+                            features.punctType = "HYPHEN";
+                        else if (text.equals("\"") || text.equals("'") || text.equals("`"))
+                            features.punctType = "QUOTE";
 
-                        if (features.punctType == null) features.punctType = "NOPUNCT";
+                        if (features.punctType == null)
+                            features.punctType = "NOPUNCT";
 
                         // per-token font features (using this token's own LayoutToken)
                         if (currentFont == null) {
@@ -1125,11 +1163,15 @@ public class Segmentation extends AbstractParser {
                             currentFontSize = newFontSize;
                         }
 
-                        if (token.isBold()) features.bold = true;
-                        if (token.isItalic()) features.italic = true;
+                        if (token.isBold())
+                            features.bold = true;
+                        if (token.isItalic())
+                            features.italic = true;
 
-                        if (features.capitalisation == null) features.capitalisation = "NOCAPS";
-                        if (features.digit == null) features.digit = "NODIGIT";
+                        if (features.capitalisation == null)
+                            features.capitalisation = "NOCAPS";
+                        if (features.digit == null)
+                            features.digit = "NODIGIT";
 
                         // per-token position features
                         features.relativeDocumentPosition = featureFactory
@@ -1147,22 +1189,26 @@ public class Segmentation extends AbstractParser {
                         // block-level features (shared)
                         if (spacingPreviousBlock != 0.0) {
                             features.spacingWithPreviousBlock = featureFactory
-                                .linearScaling(spacingPreviousBlock - doc.getMinBlockSpacing(),
-                                    doc.getMaxBlockSpacing() - doc.getMinBlockSpacing(), NBBINS_SPACE);
+                                    .linearScaling(
+                                            spacingPreviousBlock - doc.getMinBlockSpacing(),
+                                            doc.getMaxBlockSpacing() - doc.getMinBlockSpacing(),
+                                            NBBINS_SPACE);
                         }
 
                         features.inMainArea = inPageMainArea;
 
                         if (density != -1.0) {
                             features.characterDensity = featureFactory
-                                .linearScaling(density - doc.getMinCharacterDensity(),
-                                    doc.getMaxCharacterDensity() - doc.getMinCharacterDensity(), NBBINS_DENSITY);
+                                    .linearScaling(
+                                            density - doc.getMinCharacterDensity(),
+                                            doc.getMaxCharacterDensity() - doc.getMinCharacterDensity(),
+                                            NBBINS_DENSITY);
                         }
 
                         double pageWidth = page.getWidth();
                         if (pageWidth > 0) {
                             features.relativeBlockHorizontalPosition = featureFactory
-                                .linearScaling(block.getX(), pageWidth, NBBINS_POSITION);
+                                    .linearScaling(block.getX(), pageWidth, NBBINS_POSITION);
                         }
 
                         double referenceWidth = pageWidth;
@@ -1172,32 +1218,33 @@ public class Segmentation extends AbstractParser {
                         }
                         if (referenceWidth > 0) {
                             features.blockWidthRatio = featureFactory
-                                .linearScaling(block.getWidth(), referenceWidth, NBBINS_POSITION);
+                                    .linearScaling(block.getWidth(), referenceWidth, NBBINS_POSITION);
                         }
 
                         // extended features
-                        if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES || flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN) {
+                        if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES
+                                || flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN) {
                             features.extendedFeatures = true;
 
                             double avgFontSize = doc.getAverageFontSize();
                             if (avgFontSize > 0 && newFontSize > 0) {
                                 features.relativeFontSize = featureFactory
-                                    .linearScaling(newFontSize, (int) (avgFontSize * 2), NBBINS_POSITION);
+                                        .linearScaling(newFontSize, (int) (avgFontSize * 2), NBBINS_POSITION);
                             }
 
                             double blockBottom = block.getY() + block.getHeight();
                             double distFromBottom = pageHeight - blockBottom;
                             if (pageHeight > 0 && distFromBottom >= 0) {
                                 features.distanceFromPageBottom = featureFactory
-                                    .linearScaling(distFromBottom, pageHeight, NBBINS_POSITION);
+                                        .linearScaling(distFromBottom, pageHeight, NBBINS_POSITION);
                             }
 
                             features.parenthesesCountInLine = featureFactory
-                                .linearScaling(parenthesesCount, 10, NBBINS_DENSITY);
+                                    .linearScaling(parenthesesCount, 10, NBBINS_DENSITY);
                             features.commaCountInLine = featureFactory
-                                .linearScaling(commaCount, 15, NBBINS_DENSITY);
+                                    .linearScaling(commaCount, 15, NBBINS_DENSITY);
                             features.capitalizedWordCountInLine = featureFactory
-                                .linearScaling(capitalizedWordCount, 15, NBBINS_DENSITY);
+                                    .linearScaling(capitalizedWordCount, 15, NBBINS_DENSITY);
                         }
 
                         if (previousFeatures != null) {

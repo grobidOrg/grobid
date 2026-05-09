@@ -1,0 +1,173 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.34767__dp.2024.02.02">
+    <titleStmt>
+      <title level="a">The Polish Financial Supervision Authority in The European Union's Financial Supervision Architecture</title>
+      <author>
+        <persName>
+          <forename>Tomasz</forename>
+          <surname>Knepka</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Dogmatyka Prawa</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2025</date>
+      <idno type="DOI">10.34767/dp.2024.02.02</idno>
+      <ptr target="https://czasopisma.ukw.edu.pl/index.php/dogmatyka-prawa/article/view/2698"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Tomasz Knepka. (2025). The Polish Financial Supervision Authority in The European Union's Financial Supervision Architecture. Dogmatyka Prawa. DOI: 10.34767/dp.2024.02.02</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">The Polish Financial Supervision Authority in The European Union's Financial Supervision Architecture</title>
+          <author>
+            <persName>
+              <forename>Tomasz</forename>
+              <surname>Knepka</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Dogmatyka Prawa</title>
+          <imprint>
+            <date when="2025">2025</date>
+            <publisher>Dogmatyka Prawa</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.34767/dp.2024.02.02</idno>
+        <ptr target="https://czasopisma.ukw.edu.pl/index.php/dogmatyka-prawa/article/view/2698"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:49:35.564736Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">fd543f4</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-17T17:49:35.564736Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-19T20:11:41.080Z" status="unfinished" who="#cboulanger">
+      <note type="label">v4 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-03-19T20:28:34.917Z" status="draft" who="#cboulanger">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-03-23T08:55:18.051Z" status="unfinished" who="#li">
+      <note type="label">v5 (li)</note>
+      <desc>2. Pass started</desc>
+    </change>
+    <change when="2026-03-23T09:03:45.716Z" status="checked" who="#li">
+      <desc>2. Pass Done</desc>
+    </change>
+    <change when="2026-04-06T14:49:11.114Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-06T14:54:14.389Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-21T09:40:44.383Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> See. A. Nadolska, Soft law w regulacji rynku finansowego w Polsce: rekomendacje, wytyczne i lista<lb/> ostrzeżeń publicznych KNF, Warszawa 2021 and M. Fedorowicz, Nadzór nad rynkiem finansowym<lb/> Unii Europejskiej, Warszawa 2013.<lb/> </bibl>
+        <bibl><label>2</label> See. E. Całka, Zasada pierwszeństwa w prawie Unii Europejskiej. Wybrane problemy, "Studia<lb/> Iuridica Lublinensia" 2016, Vol. 25, No. 1.<lb/> </bibl>
+        <bibl><label>3</label> Regulation (EU) No 1092/2010 of the European Parliament and of the Council of 24 Novem-<lb/>ber 2010 on European Union macro-prudential oversight of the financial system and establishing<lb/> a European Systemic Risk Board (15.12.2010), Official Journal of the European Union, L 331/1,<lb/></bibl> 
+          <bibl>and Regulation (EU) 2019/2176 of the European Parliament and of the Council of 18 December<lb/> 2019 amending Regulation (EU) No 1092/2010 on European Union macro-prudential oversight<lb/> of the financial system and establishing a European Systemic Risk Board (27.12.2019), Official Journal<lb/> of the European Union, L 334/146.<lb/> </bibl>
+          <bibl><label>4</label> Article 3, Regulation 1092/2010.</bibl>
+          <bibl><label>5</label> Article 1, Regulation 2019/2176.</bibl>
+          <bibl><label>6</label> Recommendation of the European Systemic Risk Board of 22 December 2011 on the macro-pru-<lb/>dential mandate of national authorities (14.2.2012), Official Journal of the European Union, C 41/1.</bibl>
+          <bibl><label>7</label> Regulation (EU) No 1094/2010 of the European Parliament and of the Council of 24 November<lb/> 2010 establishing a European Supervisory Authority (European Insurance and Occupational Pen-<lb/>sions Authority), amending Decision No 716/2009/EC and repealing Commission Decision 2009/79/<lb/> EC, Official Journal of the European Union (15.12.2010), L 331/48.</bibl>
+          <bibl><label>8</label> Regulation (EU) No 1093/2010 of the European Parliament and of the Council of 24 November<lb/> 2010 establishing a European Supervisory Authority (European Banking Authority), amending De-<lb/>cision No 716/2009/EC and repealing Commission Decision 2009/78/EC, Official Journal of the Eu-<lb/>ropean Union, (15.12.2010), L 331/12.</bibl>
+          <bibl><label>9</label> Regulation (EU) No 1095/2010 of the European Parliament and of the Council of 24 November<lb/> 2010 establishing a European Supervisory Authority (European Securities and Markets Authority),<lb/> amending Decision No 716/2009/EC and repealing Commission Decision 2009/77/EC, Official<lb/> Journal of the European Union (15.12.2010), L 331/84.<lb/></bibl> 
+          <bibl><label>10</label> Article 54 point 2. Regulation 1093/2010.<lb/></bibl> 
+          <bibl><label>11</label> Article 2 Act of 21 July 2006 on financial market supervision (consolidated text: Journal of Laws<lb/> 2006 No. 157 item 1119, as amended).<lb/></bibl> 
+        <bibl><label>12</label> Article 4.1 Act of 21 July 2006 on financial market supervision (consolidated text: Journal<lb/> of Laws 2006 No. 157 item 1119, as amended).<lb/> </bibl>
+        <bibl><label>13</label> Article. 17d. (consolidated text: Journal of Laws 2006, No. 157, item 1119, as amended).</bibl>
+          <bibl><label>14</label> Consolidated version of the Treaty on the Functioning of the European Union, Official Journal<lb/> of the European Union (26.10.2012), C 326/47.<lb/></bibl>
+        <bibl><label>15</label> A. Jurkowska-Zeidler, Rynek bankowy Unii Europejskiej, [in:] System prawnofinansowy Unii<lb/> Europejskiej, Eds. A. Drwiłło, A. Jurkowska-Zeidler, Warszawa 2010, p. 235.<lb/></bibl> 
+          <bibl><label>16</label> Recommendation of the European Systemic Risk Board of 22 December 2011 on the macro-<lb/>-prudential mandate of national authorities, (14.2.2012), Official Journal of the European Union,<lb/> C 41/1.</bibl> 
+          <bibl>Recommendation of the European Systemic Risk Board of 4 April 2013 on intermediate<lb/> objectives and instruments of macro-prudential policy, (15.6.2013), Official Journal of the European<lb/> Union, C 170/1.<lb/></bibl> 
+        <bibl><label>17</label> P. J. Szpunar, Rola polityki makroostrożnościowej w zapobieganiu kryzysom finansowym, "Mate-<lb/>riały i Studia, Zeszyt" 2012, No. 278, p. 5.<lb/> </bibl>
+        <bibl><label>18</label> A. Dobrzańska, Polityka makroostrożnościowa -zagadnienia instytucjonalne, Teoria i dotychcza-<lb/>sowe doświadczenia w Unii Europejskiej, "Materiały i Studia" 2014, Vol. 307, p. 9.<lb/></bibl>
+          <bibl><label>19</label> The current list of national macroprudential authorities in the European Union is available<lb/> on the ESRB website: https://www.esrb.europa.eu/about/orga/list/html/index.en.html [accessed:<lb/> 20.01.25].</bibl>
+          <bibl><label>20</label> Section 1 Recommendations of the European Systemic Risk Board of 22 December<lb/> 2011 on the macro-prudential mandate of national authorities, (14.2.2012), Official Journal of the Eu-<lb/>ropean Union, C 41/1.<lb/></bibl> 
+          <bibl><label>21</label> Act of 5 August 2015 on macroprudential supervision of the financial system and crisis mana-<lb/>gement in the financial system (consolidated text: Journal of Laws of 2015, item 1513, as amended).<lb/></bibl> 
+        <bibl><label>22</label> Article. 95. The Act of 7 November 2008 on the Financial Stability Committee (consolidated<lb/> text: Journal of Laws, item 1317, and of 2013, item 1012, as amended) shall cease to apply. Art. 95.<lb/></bibl> 
+          <bibl><label>23</label> The first monographic study that comprehensively addresses the subject of macroprudential<lb/> supervision is the book by Magdalena Fedorowicz entitled "Nadzór makroostrożnościowy w Polsce",<lb/> Poznań 2019.<lb/></bibl> 
+          <bibl><label>24</label> Article 7 (consolidated text: Journal of Laws of 2015, item 1513, as amended).<lb/></bibl> 
+          <bibl><label>25</label> Article 5 (consolidated text: Journal of Laws of 2015, item 1513, as amended).<lb/></bibl> 
+        <bibl><label>26</label> Article 6 (consolidated text: Journal of Laws of 2015, item 1513, as amended).<lb/> </bibl>
+        <bibl><label>27</label> The European System of Central Banks is a system consisting of the central banks of the Mem-<lb/>ber States of the European Union, both those that have adopted the single currency and those that<lb/> do not have the euro. According to Article 282 TFEU, the European Central Bank and the national<lb/> central banks of the Member States whose currency is the euro, which form the Eurosystem, conduct<lb/> the monetary policy of the Union.<lb/></bibl> 
+        <bibl><label>28</label> Article 16 (consolidated text: Journal of Laws of 2015, item 1513, as amended).<lb/></bibl> 
+        <bibl><label>29</label> A. Jurkowska-Zeidler, Zmiany w otoczeniu regulacyjnym Unii Europejskiej, [in:] XXV lat prze-<lb/>obrażeń w prawie finansowym i prawie podatkowym -ocena dokonań i wnioski na przyszłość, Ed.<lb/> Z. Ofiarski, Szczecin 2014, pp. 712-713.<lb/> </bibl>
+        <bibl><label>30</label> M. Mariański, Uprawnienia i kompetencje francuskiego pomocniczego organu nadzoru nad ryn-<lb/>kiem finansowym Autorité de contrôle prudentiel et de résolution, "Przegląd Prawa Handlowego"<lb/> 2023, No. 4, pp. 38-44.<lb/> </bibl>
+        <bibl><label>31</label> A. Jurkowska-Zeidler, Publicznoprawne formy oddziaływania państwa i Unii Europejskiej na in-<lb/>stytucje kredytowe i finansowe [in:] System prawa finansowego, Vol. 4, Ed. J. Głuchowski, Warszawa<lb/> 2010, p. 251.<lb/> </bibl>
+        <bibl><label>32</label> A. Jurkowska-Zeidler, Rynek bankowy…, p. 220.<lb/></bibl>
+          
+           Bibliography<lb/> Literature<lb/> 
+          
+        <bibl>Całka E., Zasada pierwszeństwa w prawie Unii Europejskiej. Wybrane problemy, "Studia Iu-<lb/>ridica Lublinensia" 2016, Vol. 25, No. 1.<lb/> </bibl>
+        <bibl>Dobrzańska A., Polityka makroostrożnościowa -zagadnienia instytucjonalne, Teoria i do-<lb/>tychczasowe doświadczenia w Unii Europejskiej, "Materiały i Studia" 2014, No. 307.<lb/> </bibl>
+        <bibl>Fedorowicz M., Nadzór makroostrożnościowy w Polsce, Poznań 2019.<lb/> </bibl>
+        <bibl>Fedorowicz M., Nadzór nad rynkiem finansowym Unii Europejskiej, Warszawa 2013.<lb/> </bibl>
+        <bibl>Głuchowski J., Komisja Nadzoru Finansowego oraz Urząd Komisji Nadzoru Finansowego<lb/> [in:] System prawa finansowego, Vol. 4, Ed. J. Głuchowski, Warszawa 2010.<lb/> </bibl>
+        <bibl>Jurkowska-Zeidler A., Rynek bankowy Unii Europejskiej [in:] System prawnofinansowy Un-<lb/>ii Europejskiej, Eds. A. Drwiłło, A. Jurkowska-Zeidler.<lb/> </bibl>
+        <bibl>Jurkowska-Zeidler A., Publicznoprawne formy oddziaływania państwa i Unii Europejskiej<lb/> na instytucje kredytowe i finansowe [in:] System prawa finansowego, Vol. 4, Ed. J. Głu-<lb/>chowski, Warszawa 2010.<lb/> </bibl>
+        <bibl>Jurkowska-Zeidler A., Zmiany w otoczeniu regulacyjnym Unii Europejskiej [in:] XXV lat<lb/> przeobrażeń w prawie finansowym i prawie podatkowym -ocena dokonań i wnioski<lb/> na przyszłość, Ed. Z. Ofiarski, Szczecin 2014.<lb/> </bibl>
+        <bibl>Mariański M., Uprawnienia i kompetencje francuskiego pomocniczego organu nadzoru nad<lb/> rynkiem finansowym Autorité de contrôle prudentiel et de résolution, "Przegląd Prawa<lb/> Handlowego" 2023, No. 4.<lb/> </bibl>
+          
+        <bibl><label>33</label> J. Głuchowski, Komisja Nadzoru Finansowego oraz Urząd Komisji Nadzoru Finansowego [in:]<lb/> System prawa finansowego, Vol. 4, Ed. J. Głuchowski, Warszawa 2010, p. 145.<lb/> </bibl>
+          
+        <bibl>Nadolska A., Soft law w regulacji rynku finansowego w Polsce: rekomendacje, wytyczne i lis-<lb/>ta ostrzeżeń publicznych KNF, Warszawa 2021.<lb/> </bibl>
+        <bibl>Szpunar P.J., Rola polityki makroostrożnościowej w zapobieganiu kryzysom finansowym,<lb/> "Materiały i Studia" 2012, No. 278.<lb/></bibl> 
+          
+        <bibl>Acts of Polish law and European Union law<lb/></bibl> 
+          <bibl>The Act of 21 July 2006 on financial market supervision (consolidated text: Journal of Laws<lb/> 2006 No. 157 item 1119, as amended).<lb/> </bibl>
+        <bibl>The Act of 5 August 2015 on macroprudential supervision of the financial system and cri-<lb/>sis management in the financial system (consolidated text: Journal of Laws of 2015,<lb/> item 1513, as amended).<lb/> </bibl>
+        <bibl>The Act of 7 November 2008 on the Financial Stability Committee (consolidated text: Jour-<lb/>nal of Laws, item 1317, and of 2013, item 1012, as amended).<lb/> </bibl>
+        <bibl>Consolidated version of the Treaty on the Functioning of the European Union, Official<lb/> Journal of the European Union, 26.10.2012, C 326/47.<lb/> </bibl>
+        <bibl>Regulation (EU) No 1092/2010 of the European Parliament and of the Council of 24 No-<lb/>vember 2010 on European Union macro-prudential oversight of the financial sys-<lb/>tem and establishing a European Systemic Risk Board, 15.12.2010, Official Journal<lb/> of the European Union, L 331/1.<lb/> </bibl>
+        <bibl>Regulation (EU) 2019/2176 of the European Parliament and of the Council of 18 Decem-<lb/>ber 2019 amending Regulation (EU) No 1092/2010 on European Union macro-pruden-<lb/>tial oversight of the financial system and establishing a European Systemic Risk Board,<lb/> 27.12.2019, Official Journal of the European Union, L 334/146.<lb/> </bibl>
+        <bibl>Regulation (EU) No 1094/2010 of the European Parliament and of the Council of 24 No-<lb/>vember 2010 establishing a European Supervisory Authority (European Insurance<lb/> and Occupational Pensions Authority), amending Decision No 716/2009/EC and re-<lb/>pealing Commission Decision 2009/79/EC, Official Journal of the European Union,<lb/> 15.12.2010, L 331/48.<lb/> </bibl>
+        <bibl>Regulation (EU) No 1093/2010 of the European Parliament and of the Council of 24 No-<lb/>vember 2010 establishing a European Supervisory Authority (European Banking Au-<lb/>thority), amending Decision No 716/2009/EC and repealing Commission Decision<lb/> 2009/78/EC, Official Journal of the European Union, 15.12.2010, L 331/12.<lb/> </bibl>
+        <bibl>Regulation (EU) No 1095/2010 of the European Parliament and of the Council of 24 No-<lb/>vember 2010 establishing a European Supervisory Authority (European Securities and<lb/> Markets Authority), amending Decision No 716/2009/EC and repealing Commission<lb/> Decision 2009/77/EC, Official Journal of the European Union, 15.12.2010, L 331/84.<lb/> Recommendation of the European Systemic Risk Board of 22 December 2011 on the mac-<lb/>ro-prudential mandate of national authorities, 14.2.2012, Official Journal of the Euro-<lb/>pean Union, C 41/1.<lb/> Recommendation of the European Systemic Risk Board of 4 April 2013 on intermedi-<lb/>ate objectives and instruments of macro-prudential policy, 15.6.2013, Official Journal<lb/> of the European Union, C 170/1.</bibl>
+        </listBibl>
+    </text>
+</TEI>

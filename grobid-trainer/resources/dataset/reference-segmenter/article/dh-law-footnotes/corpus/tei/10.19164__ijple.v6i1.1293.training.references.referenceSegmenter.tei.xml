@@ -1,120 +1,131 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-    <fileDesc xml:id="_10.19164__ijple.v6i1.1293">
-      <titleStmt>
-        <title level="a">From the Field: Law-Related Education as a Branch of Civics Education in the United States</title>
-        <author>
-          <persName>
-            <forename>Latia</forename>
-            <surname>Ward</surname>
-          </persName>
-        </author>
-        <respStmt>
-          <persName xml:id="sandfort">Johanna Sandfort</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="schulze">Judith Schulze</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="kazuyo">Kazuyo Okamura</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Northumbria University Library</publisher>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
-        </availability>
-        <date type="publication">2022</date>
+  <fileDesc xml:id="_10.19164__ijple.v6i1.1293">
+    <titleStmt>
+      <title level="a">From the Field: Law-Related Education as a Branch of Civics Education in the United States</title>
+      <author>
+        <persName>
+          <forename>Latia</forename>
+          <surname>Ward</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Northumbria University Library</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2022</date>
+      <idno type="DOI">10.19164/ijple.v6i1.1293</idno>
+      <ptr target="https://doi.org/10.19164/ijple.v6i1.1293"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Latia Ward. (2022). From the Field: Law-Related Education as a Branch of Civics Education in the United States. International Journal of Public Legal Education, 6(1), 4-27. DOI: 10.19164/ijple.v6i1.1293</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">From the Field: Law-Related Education as a Branch of Civics Education in the United States</title>
+          <author>
+            <persName>
+              <forename>Latia</forename>
+              <surname>Ward</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">International Journal of Public Legal Education</title>
+          <imprint>
+            <biblScope unit="volume">6</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page" from="4" to="27">4-27</biblScope>
+            <date when="2022">2022</date>
+            <publisher>Northumbria University Library</publisher>
+          </imprint>
+        </monogr>
         <idno type="DOI">10.19164/ijple.v6i1.1293</idno>
         <ptr target="https://doi.org/10.19164/ijple.v6i1.1293"/>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>Latia Ward. (2022). From the Field: Law-Related Education as a Branch of Civics Education in the United States. International Journal of Public Legal Education, 6(1), 4-27. DOI: 10.19164/ijple.v6i1.1293</bibl>
-        <biblStruct>
-          <analytic>
-            <title level="a">From the Field: Law-Related Education as a Branch of Civics Education in the United States</title>
-            <author>
-              <persName>
-                <forename>Latia</forename>
-                <surname>Ward</surname>
-              </persName>
-            </author>
-          </analytic>
-          <monogr>
-            <title level="j">International Journal of Public Legal Education</title>
-            <imprint>
-              <biblScope unit="volume">6</biblScope>
-              <biblScope unit="issue">1</biblScope>
-              <biblScope unit="page" from="4" to="27">4-27</biblScope>
-              <date when="2022">2022</date>
-              <publisher>Northumbria University Library</publisher>
-            </imprint>
-          </monogr>
-          <idno type="DOI">10.19164/ijple.v6i1.1293</idno>
-          <ptr target="https://doi.org/10.19164/ijple.v6i1.1293"/>
-        </biblStruct>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="1.0" ident="pdf-tei-editor" type="editor">
-          <label>PDF-TEI Editor</label>
-          <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
-        </application>
-        <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T13:42:44.802622Z" type="extractor">
-          <label>GROBID</label>
-          <label type="variant-id">grobid.training.references.referenceSegmenter</label>
-          <label type="revision">7272991</label>
-          <label type="flavor">article/dh-law-footnotes</label>
-          <ref target="https://github.com/grobidOrg/grobid"/>
-          <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
-        </application>
-      </appInfo>
-    </encodingDesc>
-    <revisionDesc>
-      <change when="2026-02-16T13:42:44.802622Z" status="extraction">
-        <note type="label">review</note>
-        <desc>Extraction</desc>
-      </change>
-      <change when="2026-02-20T11:11:15.310Z" status="unfinished" who="#sandfort">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-20T12:10:32.984Z" status="unfinished" who="#sandfort">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-20T12:58:45.441Z" status="draft" who="#sandfort">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-24T13:33:53.352Z" status="draft" who="#schulze">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-26T09:41:06.160Z" status="checked" who="#schulze">
-        <desc>2 pass done</desc>
-      </change>
-      <change when="2026-03-05T14:05:24.338Z" status="in-review" who="#kazuyo">
-        <desc>Corrections</desc>
-      </change>
-    </revisionDesc>
-  </teiHeader>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T13:42:44.802622Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T13:42:44.802622Z" status="extraction">
+      <note type="label">review</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-02-20T11:11:15.310Z" status="unfinished" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-20T12:10:32.984Z" status="unfinished" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-20T12:58:45.441Z" status="draft" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-24T13:33:53.352Z" status="draft" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-26T09:41:06.160Z" status="checked" who="#schulze">
+      <desc>2 pass done</desc>
+    </change>
+    <change when="2026-03-05T14:05:24.338Z" status="in-review" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-05-09T11:40:53.872Z" status="in-review" who="#lfoppiano">
+      <note type="label">v5 (lfoppiano)</note>
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-05-09T11:49:02.937Z" status="approved" who="#lfoppiano">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
         <listBibl>
-        <bibl><label>2</label> Law-Related Education Act of 1978, Pub. L. No. 95-561, 92 Stat. 2216 (1978) repealed by 20 U.S.C. §<lb/> 3863(a)(1) (1982). https://perma.cc/G75R-AFKD and https://perma.cc/8TAQ-M8R6<lb/></bibl>
-            <bibl><label>3</label> In the United States, K-12 refers to the education of students in grades Kindergarten through twelve<lb/> before these students enter higher education such as college or university. Generally, elementary school<lb/> consists of grades Kindergarten through five, middle school consists of grades six through eight, and high<lb/> school consists of grades nine through twelve. See also Macmillan Dictionary. (n.d.). K-12.<lb/> https://perma.cc/5D7A-SV6S<lb/> </bibl>
+        <bibl><label>2</label> Law-Related Education Act of 1978, Pub. L. No. 95-561, 92 Stat. 2216 (1978) repealed by 20 U.S.C. §<lb/> 3863(a)(1) (1982). https://perma.cc/G75R-AFKD and https://perma.cc/8TAQ-M8R6 </bibl>
+        <bibl><label>3</label> In the United States, K-12 refers to the education of students in grades Kindergarten through twelve<lb/> before these students enter higher education such as college or university. Generally, elementary school<lb/> consists of grades Kindergarten through five, middle school consists of grades six through eight, and high<lb/> school consists of grades nine through twelve. See also Macmillan Dictionary. (n.d.). K-12.<lb/> https://perma.cc/5D7A-SV6S<lb/> </bibl>
         <bibl><label>4</label> Feinstein, S., &amp; Wood, R. (1995). History of law-related education at 10. (ED401163). ERIC.<lb/> https://perma.cc/KCL2-8VFM<lb/> </bibl>
         <bibl><label>5</label> Id.<lb/> </bibl>
         <bibl><label>6</label> American Bar Association Division for Public Education. (n.d.). Isidore Starr Award for Excellence in Law-<lb/>Related Education. https://perma.cc/4SZ2-47A9<lb/> </bibl>
         <bibl><label>7</label> Feinstein &amp; Wood, supra note 3 at 12. </bibl>
-            <bibl><label>8</label> I have prepared a Timeline of Juvenile Law and Related Topics at https://civicsguide.com/chronology/.<lb/> </bibl>
+        <bibl><label>8</label> I have prepared a Timeline of Juvenile Law and Related Topics at https://civicsguide.com/chronology/.<lb/> </bibl>
         <bibl><label>9</label> Arbetman, L. (2018). Street Law, Inc.: context, history and future. International Journal of Public Legal<lb/> Education, 2(1), https://perma.cc/P8RH-2E4D<lb/> </bibl>
         <bibl><label>10</label> National Street Law Institute &amp; District of Columbia Project on Community Legal Assistance. (1975).<lb/> Street law: a course in practical law. West.<lb/> </bibl>
         <bibl><label>11</label> The American Bar Association replaced Update on Law Related Education with Insights on Law and Society<lb/> in 2000.<lb/> </bibl>
         <bibl><label>12</label> Law-Related Education Act of 1978, Pub. L. No. 95-561, 92 Stat. 2216 (1978) repealed by 20 U.S.C. §<lb/> 3863(a)(1) (1982). https://perma.cc/G75R-AFKD and https://perma.cc/8TAQ-M8R6<lb/> </bibl>
         <bibl><label>13</label> North Carolina Bar Association Young Lawyers Division Civic Education Outreach Committee. (2015).<lb/> 
 Life &amp; Laws 101: Citizenship Rights and Responsibilities Over 18.<lb/> http://web.archive.org/web/20150923012636/http://www.ncbar.org/media/95451/Life-and-Laws-101.pdf </bibl>
-        <!--Number 14 is missing and bibliographic from segmentation-->
+          <!--Number 14 is missing and bibliographic-->
         <bibl><label>15</label> Ward, L. (2015). Practical life lessons [PowerPoint slides]. 
 SlideShare.<lb/> https://www.slideshare.net/practicallifelessons<lb/> </bibl>
         <bibl><label>16</label> Green, T. (2014, February 28). Who Is Dana Snay? College Student's Facebook Bragging Costs Father<lb/> $80,000 
@@ -133,7 +144,9 @@ SlideShare.<lb/> https://www.slideshare.net/practicallifelessons<lb/> </bibl>
 Feinstein &amp; Wood, supra note 3.<lb/> </bibl>
         <bibl><label>27</label> Law-Related Education Act of 1978, Pub. L. No. 95-561, 92 Stat. 2216 (1978) repealed by 20 U.S.C. §<lb/> 3863(a)(1) (1982). https://perma.cc/G75R-AFKD and https://perma.cc/8TAQ-M8R6<lb/> </bibl>
 
-       <bibl><label> 28</label> Id.<lb/></bibl><bibl><label> 29</label> Id.<lb/></bibl><bibl><label> 30</label> United States Bureau of Labor Statistics. (n.d.). CPI Inflation Calculator.<lb/> https://www.bls.gov/data/inflation_calculator.htm<lb/> </bibl>
+       <bibl><label> 28</label> Id.<lb/></bibl>
+       <bibl><label> 29</label> Id.<lb/></bibl>
+       <bibl><label> 30</label> United States Bureau of Labor Statistics. (n.d.). CPI Inflation Calculator.<lb/> https://www.bls.gov/data/inflation_calculator.htm<lb/> </bibl>
         <bibl><label>31</label> Law-Related Education Act of 1978, Pub. L. No. 95-561, 92 Stat. 2216 (1978) repealed by 20 U.S.C. §<lb/> 3863(a)(1) (1982). https://perma.cc/G75R-AFKD and https://perma.cc/8TAQ-M8R6<lb/> </bibl>
         <bibl><label>32</label> ALA. CODE 1975 § 16-1-24.2(a)(2).<lb/> http://alisondb.legislature.state.al.us/alison/CodeOfAlabama/1975/Coatoc.htm<lb/> </bibl>
         <bibl><label>33</label> ARIZ. REV. STAT. § 15-154(A) and (B)(2) (2021). https://perma.cc/8JR8-N9Z7<lb/> </bibl>
@@ -221,8 +234,9 @@ American Legislative Exchange Council. (n.d.). Civic Literacy Act. https://perma
         <bibl><label>117</label> S.B. 1776. 87th Leg., Regul. Sess. (Tex. 2021). https://perma.cc/5A6Y-72WP<lb/> </bibl>
         <bibl><label>118</label> Boston Public Library. (2020). Know Your Rights Workshop for Teens. https://perma.cc/ZKR8-4N6N<lb/> </bibl>
         <bibl><label>119</label> City of Glendale. (2019). Teen Workshop (Ages 13-17): Know Your Rights. https://perma.cc/P8M2-FRFQ<lb/> </bibl>
+          
         <bibl><label>120</label> The write-around activity allows students time to think about answers to a question and make<lb/> connections between concepts before engaging in a large group discussion. There are many variations of<lb/> write-arounds (which are discussed in the book entitled The Best-Kept Teaching Secret: How Written<lb/> Conversations Engage Kids, Activate Learning, and Grow Fluent Writers, K-12. Daniels, H. &amp; Daniels, E.<lb/> (2013).</bibl>
-          <bibl> The best-kept teaching secret: how written conversations engage kids, activate learning, and grow fluent<lb/> writers, K-12. Corwin.<lb/> </bibl>
+        <bibl> The best-kept teaching secret: how written conversations engage kids, activate learning, and grow fluent<lb/> writers, K-12. Corwin.<lb/> </bibl>
         <bibl><label>121</label> "When two or more circuits in the United States court of appeals reach opposite interpretations of<lb/> federal law. This is sometimes a reason for the Supreme Court to grant certiorari." Wex. (n.d.). Circuit<lb/> Split. https://perma.cc/693C-WC7Q<lb/> </bibl>
         <bibl><label>122</label> Ward, L. (2018, June 28). Where There's Smoke…A Write-Around Activity Regarding the Circuit Split Over<lb/> Marijuana-Based Car Searches [Conference Session]. 2018 Cornell Law Institute for High School Students,<lb/> Ithaca, NY, United States.<lb/> </bibl>
         <bibl><label>123</label> Id.</bibl>

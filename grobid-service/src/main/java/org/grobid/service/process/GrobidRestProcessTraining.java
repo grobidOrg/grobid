@@ -733,7 +733,11 @@ public class GrobidRestProcessTraining {
 
         return response;
     }
-    public Response createTrainingBlank(final InputStream inputStream, final String filename, final GrobidModels.Flavor flavor) {
+
+    public Response createTrainingBlank(
+            final InputStream inputStream,
+            final String filename,
+            final GrobidModels.Flavor flavor) {
         Response response = null;
         File originFile = null;
         Engine engine = null;
@@ -796,7 +800,8 @@ public class GrobidRestProcessTraining {
                             in.close();
                             out.closeEntry();
                         } catch (IOException e) {
-                            throw new GrobidServiceException("IO Exception when zipping", e, Status.INTERNAL_SERVER_ERROR);
+                            throw new GrobidServiceException("IO Exception when zipping", e,
+                                    Status.INTERNAL_SERVER_ERROR);
                         }
                     }
                 }

@@ -1060,15 +1060,15 @@ public class GrobidRestService implements GrobidPaths {
     @Produces("application/zip")
     @POST
     public Response createTrainingBlank_post(
-        @FormDataParam(INPUT) InputStream inputStream,
-        @FormDataParam(INPUT) FormDataBodyPart inputBodyPart,
-        @FormDataParam(FLAVOR) String flavor
-    ) {
+            @FormDataParam(INPUT) InputStream inputStream,
+            @FormDataParam(INPUT) FormDataBodyPart inputBodyPart,
+            @FormDataParam(FLAVOR) String flavor) {
         GrobidModels.Flavor validatedModelFlavor = validateModelFlavor(flavor);
         String fileName = inputBodyPart.getFormDataContentDisposition().getFileName();
         return restProcessTraining.createTrainingBlank(
-            inputStream, fileName, validatedModelFlavor
-        );
+                inputStream,
+                fileName,
+                validatedModelFlavor);
     }
 
 }

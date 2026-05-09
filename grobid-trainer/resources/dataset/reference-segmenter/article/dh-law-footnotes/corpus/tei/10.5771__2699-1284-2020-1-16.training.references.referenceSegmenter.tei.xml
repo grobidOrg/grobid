@@ -1,104 +1,115 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-    <fileDesc xml:id="_10.5771__2699-1284-2020-1-16">
-      <titleStmt>
-        <title level="a">Bibliotheksrecht als Zugangsrecht und die Herausforderungen der Digitalisierung</title>
-        <author>
-          <persName>
-            <forename>Eric</forename>
-            <surname>Steinhauer</surname>
-          </persName>
-        </author>
-        <respStmt>
-          <persName xml:id="sandfort">Johanna Sandfort</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="schulze">Judith Schulze</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="kazuyo">Kazuyo Okamura</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Nomos Verlag</publisher>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
-        </availability>
-        <date type="publication">2020</date>
+  <fileDesc xml:id="_10.5771__2699-1284-2020-1-16">
+    <titleStmt>
+      <title level="a">Bibliotheksrecht als Zugangsrecht und die Herausforderungen der Digitalisierung</title>
+      <author>
+        <persName>
+          <forename>Eric</forename>
+          <surname>Steinhauer</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Nomos Verlag</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2020</date>
+      <idno type="DOI">10.5771/2699-1284-2020-1-16</idno>
+      <ptr target="https://doi.org/10.5771/2699-1284-2020-1-16"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Eric Steinhauer. (2020). Bibliotheksrecht als Zugangsrecht und die Herausforderungen der Digitalisierung. RuZ - Recht und Zugang, 1(1), 16-30. DOI: 10.5771/2699-1284-2020-1-16</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Bibliotheksrecht als Zugangsrecht und die Herausforderungen der Digitalisierung</title>
+          <author>
+            <persName>
+              <forename>Eric</forename>
+              <surname>Steinhauer</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">RuZ - Recht und Zugang</title>
+          <imprint>
+            <biblScope unit="volume">1</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page" from="16" to="30">16-30</biblScope>
+            <date when="2020">2020</date>
+            <publisher>Nomos Verlag</publisher>
+          </imprint>
+        </monogr>
         <idno type="DOI">10.5771/2699-1284-2020-1-16</idno>
         <ptr target="https://doi.org/10.5771/2699-1284-2020-1-16"/>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>Eric Steinhauer. (2020). Bibliotheksrecht als Zugangsrecht und die Herausforderungen der Digitalisierung. RuZ - Recht und Zugang, 1(1), 16-30. DOI: 10.5771/2699-1284-2020-1-16</bibl>
-        <biblStruct>
-          <analytic>
-            <title level="a">Bibliotheksrecht als Zugangsrecht und die Herausforderungen der Digitalisierung</title>
-            <author>
-              <persName>
-                <forename>Eric</forename>
-                <surname>Steinhauer</surname>
-              </persName>
-            </author>
-          </analytic>
-          <monogr>
-            <title level="j">RuZ - Recht und Zugang</title>
-            <imprint>
-              <biblScope unit="volume">1</biblScope>
-              <biblScope unit="issue">1</biblScope>
-              <biblScope unit="page" from="16" to="30">16-30</biblScope>
-              <date when="2020">2020</date>
-              <publisher>Nomos Verlag</publisher>
-            </imprint>
-          </monogr>
-          <idno type="DOI">10.5771/2699-1284-2020-1-16</idno>
-          <ptr target="https://doi.org/10.5771/2699-1284-2020-1-16"/>
-        </biblStruct>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="1.0" ident="pdf-tei-editor" type="editor">
-          <label>PDF-TEI Editor</label>
-          <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
-        </application>
-        <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T13:42:39.433668Z" type="extractor">
-          <label>GROBID</label>
-          <label type="variant-id">grobid.training.references.referenceSegmenter</label>
-          <label type="revision">7272991</label>
-          <label type="flavor">article/dh-law-footnotes</label>
-          <ref target="https://github.com/grobidOrg/grobid"/>
-          <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
-        </application>
-      </appInfo>
-    </encodingDesc>
-    <revisionDesc>
-      <change when="2026-02-16T13:42:39.433668Z" status="extraction">
-        <note type="label">review</note>
-        <desc>Extraction</desc>
-      </change>
-      <change when="2026-02-20T10:43:37.847Z" status="unfinished" who="#sandfort">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-20T12:16:35.051Z" status="unfinished" who="#sandfort">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-23T09:50:06.572Z" status="unfinished" who="#sandfort">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-23T10:08:17.471Z" status="draft" who="#sandfort">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-02-24T13:01:31.520Z" status="checked" who="#schulze">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2026-03-06T11:39:05.529Z" status="in-review" who="#kazuyo">
-        <desc>Corrections</desc>
-      </change>
-    </revisionDesc>
-  </teiHeader>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T13:42:39.433668Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T13:42:39.433668Z" status="extraction">
+      <note type="label">review</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-02-20T10:43:37.847Z" status="unfinished" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-20T12:16:35.051Z" status="unfinished" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-23T09:50:06.572Z" status="unfinished" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-23T10:08:17.471Z" status="draft" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-24T13:01:31.520Z" status="checked" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-06T11:39:05.529Z" status="in-review" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-05-09T11:53:19.759Z" status="in-review" who="#lfoppiano">
+      <note type="label">v5 (lfoppiano)</note>
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-05-09T11:54:09.755Z" status="approved" who="#lfoppiano">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
         <listBibl>
         <bibl><label>1</label> Vgl.: Gantert, Bibliothekarisches Grundwissen, 9. Aufl. 2016, S. 3.<lb/> </bibl>
@@ -112,7 +123,7 @@
         <bibl><label>7</label> Gesetz über die Preisbindung für Bücher (Buchpreisbindungsgesetz) vom 2. September 2002,<lb/> BGBl. I 2002, S. 3448.<lb/> </bibl>
         <bibl><label>8</label> Dazu: Kirchner, Bibliotheks-und Dokumentationsrecht, 1981, S. 231-235;</bibl>
           <bibl> sowie allgemein:<lb/> Roeder, Bibliotheksdienst 50, 2016, S. 1014-1039.<lb/> </bibl>
-          <bibl><label>9</label> Vgl. § 1 Abs. 2 S. 2 des Gesetzes über die Ablieferung von Pflichtexemplaren in Nordrhein-<lb/>Westfalen (Pflichtexemplargesetz Nordrhein-Westfalen) vom 29. Januar 2013, GV. NRW.<lb/> 2013, S. 31: "[Die Bibliotheken] haben die Pflichtexemplare einzuziehen … sowie ihre Erhal-<lb/>tung und Benutzbarkeit dauerhaft zu sichern.";</bibl>
+<bibl>9 Vgl. § 1 Abs. 2 S. 2 des Gesetzes über die Ablieferung von Pflichtexemplaren in Nordrhein-<lb/>Westfalen (Pflichtexemplargesetz Nordrhein-Westfalen) vom 29. Januar 2013, GV. NRW.<lb/> 2013, S. 31: "[Die Bibliotheken] haben die Pflichtexemplare einzuziehen … sowie ihre Erhal-<lb/>tung und Benutzbarkeit dauerhaft zu sichern.";</bibl>
           <bibl> sowie § 3 Abs. 1 S. 3 des Gesetzes zum Schutz<lb/> und zur Pflege der Denkmäler im Lande Nordrhein-Westfalen (Denkmalschutzgesetz -<lb/>DSchG) vom 11. März 1980, GV. NW. 1980, S. 226: "Werden bewegliche Denkmäler von<lb/> einer öffentlichen Einrichtung betreut, so bedürfen sie nicht der Eintragung in die Denkmal-<lb/>liste; sie unterliegen gleichwohl den Vorschriften dieses Gesetzes."; </bibl>
           <bibl>nach § 7 DSchG NW be-<lb/>steht eine allgemeine Erhaltungspflicht von Denkmälern im Rahmen des Zumutbaren.<lb/> </bibl>
         <bibl><label>10</label> Steinhauer, Regelwerke: Normative Werkkonzepte in Bibliotheks-und Rechtswissenschaft,<lb/> in: Danneberg/Gilbert/Spoerhase, Das Werk: zum Verschwinden und Fortwirken eines<lb/> Grundbegriffs, 2019, S. 237-256.<lb/> </bibl>

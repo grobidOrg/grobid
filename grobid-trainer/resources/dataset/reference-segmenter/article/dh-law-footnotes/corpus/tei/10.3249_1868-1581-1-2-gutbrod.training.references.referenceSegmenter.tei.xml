@@ -1,0 +1,429 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.3249_1868-1581-1-2-gutbrod">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:01:34.351633Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-70-gc35e48387</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-24T08:01:34.351633Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-25T11:05:19.920Z" status="unfinished" who="#sandfort">
+      <note type="label">v2 (sandfort)</note>
+      <desc>1. Pass started</desc>
+    </change>
+    <change when="2026-03-25T11:25:17.153Z" status="unfinished" who="#sandfort">
+      <desc>1. Pass till 11</desc>
+    </change>
+    <change when="2026-03-25T13:20:23.598Z" status="unfinished" who="#sandfort">
+      <desc>1. Pass till 21</desc>
+    </change>
+    <change when="2026-03-25T13:37:21.840Z" status="unfinished" who="#sandfort">
+      <desc>1. Pass till 30</desc>
+    </change>
+    <change when="2026-03-25T14:24:55.838Z" status="unfinished" who="#sandfort">
+      <desc>1. Pass till 30</desc>
+    </change>
+    <change when="2026-03-25T14:41:59.341Z" status="unfinished" who="#sandfort">
+      <desc>1. Pass till 47</desc>
+    </change>
+    <change when="2026-03-26T13:27:41.068Z" status="draft" who="#sandfort">
+      <desc>1. Pass done</desc>
+    </change>
+    <change when="2026-03-26T13:37:18.494Z" status="draft" who="#sandfort">
+      <desc>1. Pass done</desc>
+    </change>
+    <change when="2026-03-26T18:52:12.804Z" status="unfinished" who="#li">
+      <note type="label">v3 (li)</note>
+      <desc>2.pass started</desc>
+    </change>
+    <change when="2026-03-27T13:44:54.792Z" status="checked" who="#li">
+      <desc>2.pass Done</desc>
+    </change>
+    <change when="2026-04-21T15:23:04.644Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-21T16:52:57.655Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>2</label><lb/> In a nutshell, direct expropriation is the compulsory transfer of legal title or the out-<lb/>right seizure of property by the State. In contrast, indirect expropriation refers to the<lb/> situation in which the investor formally remains legal owner. See, instead of all,<lb/> M. Sornarajah, The International Law on Foreign Investment, 2nd ed. (2004), 344,<lb/> with further references. </bibl>
+          <bibl>See generally, C. N. Brower &amp; J. D. Brueschke, The Iran-<lb/>United States Claims Tribunal (1998), 379; </bibl>
+<bibl>G. C. Christie, 'What Constitutes a Taking<lb/> of Property under International Law?', 38 British Yearbook of International Law<lb/> (1962), 309; </bibl>
+<bibl>P. Comeaux &amp; S. Kinsella, Protecting Foreign Investment under Interna-<lb/>tional Law: Legal Aspects of Political Risk (1997), 8; </bibl>
+<bibl>A. Mouri, The International<lb/> Law of Expropriation as Reflected in the Work of the Iran-U.S.Claims Tribunal<lb/> (1994), 70-99; </bibl>
+<bibl>C. Schreuer, 'The Concept of Expropriation under the ECT and other<lb/> Investment Protection Treaties', 2 Transnational Dispute Management, (2005) 3,<lb/> available at www.transnational-dispute-management.com (last visited 9 April 2009);<lb/> </bibl>
+<bibl>B. H. Weston, 'International Law and the Deprivation of Foreign Wealth: A Frame-<lb/>work for Future Inquiry', in R. A. Falk &amp; C. Black (eds), The Future of the Interna-<lb/>tional Legal Order, Vol. 2: Wealth and Resources (1970), 106; </bibl>
+<bibl>M. M. Whiteman, 8<lb/> Digest of International Law (1976), 1006-1020.<lb/> </bibl>
+        <bibl><label>3</label><lb/> For one of the few cases where direct expropriation occurred in recent years, Cf. Mr.<lb/> Franz Sedelmayer v. Russian Federation, Award, 7 July 1998. </bibl>
+          <bibl>See also Bolivia's Su-<lb/>preme Decree No. 28701, Nationalization of Hydrocarbon Sector, 1 May 2006, 45<lb/> ILM 1020 (2006).<lb/> </bibl>
+        <bibl><label>4</label><lb/> M. W. Reisman &amp; R. D. Sloane, 'Indirect Expropriation and its Valuation in the BIT<lb/> Generation', 74 British Yearbook of International Law (2003), 118; </bibl>
+<bibl>L. Reed &amp;<lb/> D. Bray, 'Fair and Equitable Treatment: Fairly and Equitably Applied in Lieu of<lb/> Unlawful Indirect Expropriation?', in: A. W. Rovine (ed.), Contemporary Issues in In-<lb/>ternational Arbitration and Mediation, 2008, 13; </bibl>
+<bibl>A. K. Hoffmann, 'Indirect Expro-<lb/>priation', in: A. Reinisch, (ed.), Standards of Investment Protection, 2008, 151;</bibl> 
+          <bibl>on the<lb/> subject of indirect expropriation in general refer to U. Kriebaum, 'Partial Expropria-<lb/>tion', 8 Journal of World Investment and Trade (2007), 69; </bibl>
+<bibl>U. Kriebaum, 'Regulatory<lb/> Takings: Balancing the Interests of the Investor and the State', Journal of World In-<lb/>vestment and Trade (2007), 717; </bibl>
+<bibl>A. Reinisch, 'Expropriation', in: P. Muchlinski et al.<lb/> (eds), The Oxford Handbook of International Investment Law (2008), 420-451; </bibl>
+<bibl>J.<lb/> Griebel, Internationales Investitionsrecht (2008), 76-79; </bibl>
+<bibl>R. Dolzer &amp; C. Schreuer,<lb/> Principles of International Investment Law (2008), 89-92.<lb/> </bibl>
+<bibl><label>5</label><lb/> Reinisch, supra note 3, 432.<lb/> </bibl>
+        <bibl><label>6</label><lb/> Article III (1) of the Treaty between the United States of America and the Russian<lb/> Federation concerning the Encouragement and Reciprocal Protection of Investment,<lb/> signed 17 June 1992, not yet in force; available at: www.unctad.org/sections/dite/iia/<lb/> docs/bits/usa_russia.pdf (last visited 9 April 2009). </bibl>
+          <bibl>See also Article III of the Abs-<lb/>Shawcross Draft Convention on Investment Abroad of 1959, United Nations Confer-<lb/>ence on Trade and Development (UNCTAD), International Investment Instruments: A<lb/> Compendium, Vol. V, 2000, 396; </bibl>
+          <bibl>Article 0(
+        3)(a) of the Harvard Draft Convention of<lb/> 1961, in L. B. Sohn &amp; R. R. Baxter, 'Responsibility of States for Injuries to the Eco-<lb/>nomic Interests of Aliens', 55 Amercian Journal of International Law (1961), 553;<lb/> </bibl>
+          <bibl>Protocol No. 1 of the European Convention for the Protection of Human Rights and<lb/> Fundamental Freedoms of 1952, available at www.echr.coe.int/NR/rdonlyres/<lb/> D5CC24A7-DC13-4318-B457-5C9014916D7A/0/EnglishAnglais.pdf (last visited 11<lb/> August 2005); </bibl>
+          <bibl>Article 3 of the Draft Convention of the Organisation for Economic<lb/> Co-operation and Development (OECD) on the Protection of Foreign Property of<lb/> 1967, in UNCTAD, International Investment Instruments: A Compendium, Vol. II,<lb/> 1996, 114; </bibl>
+          <bibl>Article 21 of the American Convention on Human Rights of 1969, avail-<lb/>able at www.oas.org/juridico/english/Treaties/b-32.htm (last visited 1 September<lb/> 2005); </bibl>
+          <bibl>American Law Institute, Restatement (Third) of the Foreign Relations Law of<lb/> the United States, Vol. 2, 1986, §712(1); </bibl>
+          <bibl>OECD Negotiating Group on the Multilateral<lb/> Agreement on Investment (MAI), The Multilateral Agreement on Investment Draft<lb/> Consolidated Text, OECD Doc. DAFFE/MAI(98)7/REV1, 22 April 1998, available at<lb/> www1.oecd.org/daf/mai/pdf/ng/ng987r1e.pdf (last visited 1 September 2005); </bibl>
+          <bibl>Article<lb/> 13
+        (1) of the Energy Charter Treaty (ECT), available at www.encharter.org (last visited<lb/> 9 April 2009); </bibl>
+          <bibl>Article 1110 of the North American Free Trade Agreement (NAFTA)<lb/> of 1992, available at www.nafta-sec-alena.org/DefaultSite/index_e.aspx?DetailID=78<lb/> (last visited 9 April 2009); </bibl>
+          <bibl>Article 6 of the 2004 US Model BIT; Article 13 of the<lb/> 2003 Canadian Model Foreign Investment Protection Agreement; most recently, how-<lb/>ever, solely referring to 'expropriation or nationalisation' without differentiating be-<lb/>tween direct or indirect expropriation, Article 6 of the 2007 Norway Model BIT.<lb/> </bibl>
+        <bibl><label>7</label><lb/> From an analytical point of view, one can distinguish between "creeping" and "conse-<lb/>quential expropriation". "'Creeping' expropriation is comprised out of a number of<lb/> elements, none of which can -separately -constitute the international wrong." Reis-<lb/>man &amp; Sloane, supra note 3, 123, 125-127. </bibl>
+          <bibl>Intention to harm the investment or the<lb/> investor or an intention to expropriate is not necessary but helps to prove a creeping<lb/> expropriation; Reisman &amp; Sloane, supra note 3, 124, 128. </bibl>
+<bibl>Cf. also Compañía de<lb/> Aguas del Aconquija S.A. and Vivendi Universal v. Argentina, ICSID Case No.<lb/> ARB/97/3, Award, 20 August 2007, at para. 7.5.20 (hereafter referred to as Compañía<lb/> de Aguas del Aconquija S.A. and Vivendi Universal); </bibl>
+          <bibl>Siemens AG v. Argentina, ICSID<lb/> Case No. ARB/02/8, Award, 6 February 2007, at para. 270 (hereafter referred to as<lb/> Siemens AG). </bibl>
+          <bibl>See also C. Schachter, The Concept of Expropriation under the ECT and<lb/> other Investment Protection Treaties, in 2 Transnational Dispute Management<lb/> (2005) 3, available at: www.transnational-dispute-management.com (last visited 9<lb/> April 2009); </bibl>
+<bibl>A. Newcombe &amp; L. Paradell, Law and Practice of Investment Treaties -<lb/>Standards of Treatment (2009), 343-344; </bibl>
+<bibl>Reinisch, supra note 3, 426-431.</bibl> 
+          <bibl>"Conse-<lb/>quential expropriation" refers to the situation in which the host State fails to properly<lb/> create, maintain and manage "the legal, administrative, and regulatory normative<lb/> framework contemplated by the relevant BIT, an indispensable feature of the 'favour-<lb/>able conditions' for investment." Reisman &amp; Sloane, supra note 3, 129, 130. Here,<lb/> also, an intention on the part of the host State is not required. Reisman &amp; Sloane, su-<lb/>pra note 3, 129.<lb/> </bibl>
+        <bibl><label>8</label><lb/> R. Dolzer &amp; M. Stevens, Bilateral Investment Treaties (1995), 58.<lb/> </bibl>
+        <bibl><label>9</label><lb/> Cf. CMS Gas Transmission Company v. Argentina, ICSID Case No. ARB/01/8,<lb/> Award, 12 May 2005 (hereafter referred to as CMS); </bibl>
+          <bibl>Saluka Investments B.V. (The<lb/> Netherlands) v. Czech Republic, Partial Award, 17 March 2006; Azurix v. Argentina,<lb/> ICSID Case No. ARB/01/12, Award, 14 July 2006; </bibl>
+<bibl>LG&amp;E Energy Corp., LG&amp;E<lb/> Capital Corp. and LG&amp;E International Inc. v. Argentina, ICSID Case No. ARB/02/1,<lb/> Decision on Liability, 3 October 2006 (hereafter referred to as LG&amp;E Energy Corp.);<lb/> </bibl>
+<bibl>PSEG Global, Inc. and Konya Ilgin Elektrik Üretim ve Ticaret Limited Şirketi v. Tur-<lb/>key, ICSID Case No. ARB/02/5, Award, 19 January 2007; Enron Corporation and<lb/> Ponderosa Assets L.P. v. Argentina, ICSID Case No. ARB/01/3, Award, 22 May 2007<lb/> (hereafter referred to as Enron Corp.); </bibl>
+          <bibl>Sempra Energy v. Argentina, ICSID Case No.<lb/> ARB/02/16, Award, 28 September 2007 (hereafter referred to as Sempra Energy); </bibl>
+          <bibl>for<lb/> cases where State action amounted to both indirect expropriation as well as to a breach<lb/> of the "fair and equitable treatment" standard, cf. Siemens AG, supra note 6; </bibl>
+          <bibl>Com-<lb/>pañía de Aguas del Aconquija S.A. and Vivendi Universal v. Argentina, supra note 6.<lb/> Many BITs provide in rather repetitive wording not only for "fair and equitable treat-<lb/>ment" but also for "full protection and security" and prohibit "unreasonable or dis-<lb/>criminatory measures in the course of management, maintenance, use, enjoyment or<lb/> disposal of investments"; Article 2(2) of the Agreement between The Government of<lb/> the United Kingdom of Great Britain and Northern Ireland and The Union of Soviet<lb/> Socialist Republics concerning the promotion and reciprocal protection of invest-<lb/>ments, signed 6 April 1989, entered into force 3 July 1991. In academic writing, much<lb/> effort has been spent on the question of whether and how the concepts of "fair and eq-<lb/>uitable treatment", "full protection and security" and "non-discrimination" are to be<lb/> delimited from each other.<lb/> </bibl>
+          
+        <bibl type="footnote"><label>10</label><lb/> Occasionally, if it is helpful in making an argument more explicit, we might also make<lb/> reference to the concept of "fair and equitable treatment", part of the treatment stan-<lb/>dards attributable to a foreign investment by virtue of IIAs.<lb/> </bibl>
+          
+        <bibl><label>11</label><lb/> Russia, like many countries around the world, has become party to a variety of bilat-<lb/>eral and multilateral international agreements (at least partly) concerned with or re-<lb/>lated to the protection of foreign investment, i.e. numerous bilateral investment trea-<lb/>ties (BITs) with all major capital exporting countries (Russia had signed 56 BITs as of<lb/> 1 June 2005, of which 30 had entered into force; for a detailed list, see the UNCTAD<lb/> Website at www.unctad.org/sections/dite_pcbb/docs/bits_russian_federa tion_en.pdf<lb/> (last visited 29 August 2005); </bibl>
+          <bibl>the full text can be accessed via www.unctadxi.org/<lb/> templates/DocSearch____779.aspx (last visited 29 August 2005)); </bibl>
+          <bibl>The European<lb/> Convention for the Protection of Human Rights and Fundamental Freedoms and its<lb/> First Protocol, available at www.echr.coe.int/NR/rdonlyres/ D5CC24A7-DC13-4318-<lb/>B457-5C9014916D7A/0/EnglishAnglais.pdf (last visited 11 August 2005); </bibl>
+          <bibl>and the<lb/> Agreement on Partnership and Cooperation, available at europa.eu.int/comm/external_<lb/> relations/ceeca/pca/pca_russia.pdf (last visited 11 August 2005) with the European<lb/> Union. </bibl>
+          <bibl>Russia is also a signatory to the European Energy Charter Treaty, available at<lb/> www.encharter.org (last visited 28 August 2005) and is provisionally applying it<lb/> while the ratification process is pending before the Duma.<lb/> </bibl>
+          
+          <bibl><label>12</label><lb/> Reisman &amp; Sloane, supra note 3, 118-119; </bibl>
+<bibl>differing C. McLachlan et al. (eds), Inter-<lb/>national Investment Arbitration: Substantive Principles (2007), 291, at para. 8.72-<lb/>8.74; </bibl>
+          <bibl>cf. also Mr. Eudoro Armando Olguín v. Paraguay, ICSID Case No. ARB/98/5,<lb/> Award, 26 July 2001, at para. 84; </bibl>
+          <bibl>Sea-Land Services, Inc. v. Iran, 6 Iran-U.S. C.T.R.<lb/> (1984), 149 (hereafter referred to as Sea-Land Services).<lb/> </bibl>
+          <bibl><label>13</label><lb/> Article 31 of the Vienna Convention on the Law of Treaties of 1969, available at<lb/> www.un.org/law/ilc/texts/treaties.htm (last visited 11 August 2005), asks to have due<lb/> regard to the object and purpose in the construction of a treaty. </bibl>
+          <bibl>Most, if not all, BITs,<lb/> as well as multinational agreements on investment protection such as the European<lb/> Energy Treaty or the NAFTA, intend, as provided for in their preambles, to establish<lb/> favourable conditions for investment by nationals and companies of one State in the<lb/> territory of the other State. For a review of typical preambles, see Dolzer &amp;Stevens,<lb/> supra note 8, 20-21. </bibl>
+          <bibl>In short, they envisage a "healthy investment climate" which is<lb/> conditio sine qua non for the attraction of foreign direct investment. Those treaties<lb/> "contemplate […] an effective normative framework: impartial courts, an efficient and<lb/> legally restrained bureaucracy, and the measure of transparency in decision"; Reisman<lb/> &amp; Sloane, supra note 3, 117. </bibl>
+          <bibl>If a State signs up to such a treaty, it must be aware that<lb/> it not only opens its doors to foreign investment but also commits itself to establish<lb/> and/or maintain an appropriate legal, administrative, and regulatory framework;<lb/> Reisman &amp; Sloane, supra note 3, 117; </bibl>
+          <bibl>undecided, Dolzer, supra note 12, 73-74. </bibl>
+          <bibl>See,<lb/> for such an approach, Kuwait v. American Independent Oil Co. (Aminoil), Final<lb/> Award, 24 May 1982 (hereafter referred to as Aminoil), 21 ILM (1982), 976, at para.<lb/> 147; </bibl>
+          <bibl>Mondev Int'l Ltd v. United States of America, ICSID Case No. ARB(AF)/99/2,<lb/> Award, 11 October 2002, 42 ILM (2003), 110, para. 127. </bibl>
+          <bibl>Some may argue now that an<lb/> investment treaty is intended to benefit both investor and host State and that, thus, the<lb/> rights and obligations of both sides need to be recognized; see Dolzer, who stipulates<lb/> this question at Dolzer, supra, 74. As much as this is true, this argument does not<lb/> speak against the aforementioned. It must be stressed again that BITs and MITs are<lb/> not intended to prohibit legitimate regulatory measures by the host State. On the con-<lb/>trary, they encourage the host State to exercise its regulatory powers in a transparent,<lb/> non-discriminating, non-abusive way guided by reason and the rule of law, at least<lb/> towards the foreign investor. In doing so, the host State is maintaining a "healthy in-<lb/>vestment climate" which, as already said, is essential for the attraction of foreign capi-<lb/>tal. The establishment of such a administrative framework will, ultimately, lead to an<lb/> improvement of the 
+overall governance standards in the host State.<lb/> </bibl>
+          <bibl><label>14</label><lb/> Reisman &amp; Sloane, supra note 3, 119.<lb/> </bibl>
+          <bibl><label/>15<lb/> Reisman &amp; Sloane, supra note 3, 117. </bibl>
+          <bibl>See also Y. L. Fortier &amp; S. L. Drymer, 'Indirect<lb/> Expropriation in the Law of International Investment: I Know it When I See it or Ca-<lb/>veat Investor', 19 ICSID Review (2004), 298.<lb/> </bibl>
+          <bibl><label>16</label><lb/> I. Brownlie, Principles of Public International Law, 6th ed. (2003), 509; </bibl>
+          <bibl>Sornarajah,<lb/> supra note 1, 357; </bibl>
+          <bibl>for tax measures in international investment arbitration also cf. Ar-<lb/>cher Daniels Midland Company and Tate &amp; Lyle Ingredients Americas, Inc. v. United<lb/> Mexican States, ICSID Case No. ARB(AF)/04/05, Award, 21 November 2007, avail-<lb/>able at http://ita.law.uvic.ca/documents/ADMTateRedactedAward.pdf, para. 238; </bibl>
+          <bibl>Pan<lb/> American Energy LLC, and BP Argentina Exploration Company v. Argentina, ICSID<lb/> Case No. ARB/03/13, Decision on Preliminary Objections, 27 July 2006, paras 117-<lb/>139; </bibl>
+          <bibl>El Paso Energy International Company v. Argentina, ICSID Case No.<lb/> ARB/03/15, Decision on Jurisdiction, 27 April 2006, paras 101-116; </bibl>
+          <bibl>EnCana Corpo-<lb/>ration v. Ecuador, LCIA Case No. UN3481, Award, 3 February 2006, paras 141, 145,<lb/> 177; </bibl>
+          <bibl>Enron Corporation and Ponderosa Assets, L.P. v. Argentina, Decision on Juris-<lb/>diction, 14 January 2004, paras 25-32; </bibl>
+          <bibl>Marvin Roy Feldman Karpa (Cemsa) (USA) v.<lb/> United Mexican States, ICSID (Additional Facility) Case No. ARB(AF)/99/1, Award,<lb/> 16 December 2002, 42 I.L.M. 626 (2003) (hereafter referred to as Feldman); </bibl>
+          <bibl>United<lb/> Parcel Service of America Inc. v. Canada, UNCITRAL Arbitration, Award on Juris-<lb/>diction, 22 November 2002, paras 116-117; </bibl>
+          <bibl>Link-Trading Joint Stock Company v.<lb/> Moldova, UNCITRAL Arbitration, Award, 18 April 2002, paras 63-92.<lb/> </bibl>
+          <bibl><label>17</label><lb/> H. Sedigh, 'What Level of Host State Interference Amounts to a Taking under Con-<lb/>temporary International Law?', 2 Journal of World Investment (2001) 4, 646.<lb/> </bibl>
+          <bibl><label>18</label><lb/> The Oscar Chinn Case, U.K. v. Belgium, Award, 12 December 1934 (hereafter re-<lb/>ferred to as Oscar Chinn), PCIJ Rep. Series A/B, No. 63, 88: "No enterprise […] can<lb/> escape from the chances and hazards resulting from general economic conditions.<lb/> Some industries may be able to make large profits during a period of general prosper-<lb/>ity, or else by taking advantage of a treaty of commerce or of an alteration in customs<lb/> duties; but they are also exposed to the danger of ruin or extinction if circumstances<lb/> change. Where this is the case, no vested rights are violated by the State."; </bibl>
+          <bibl>Starrett<lb/> Housing Corp. v. Iran, 4 Iran-U.S. Claims Tribunal Rep. (1983), 156: (hereafter re-<lb/>ferred to as Starrett Housing) "Investors in Iran, like investors in all other countries,<lb/> have to assume a risk that the country might experience strikes, lock-outs, distur-<lb/>bances, changes of economic and political system and even revolution. That any of<lb/> these risks materialised does not necessarily mean that property rights affected by<lb/> such events can be deemed to have been taken." </bibl>
+          <bibl>Feldman, supra note 15, para. 112:<lb/> "Governments, in their exercise of regulatory power, frequently change their laws and<lb/> regulations in response to changing economic circumstances or changing political,<lb/> economic or social considerations. Those changes may well make certain activities<lb/> less profitable or even uneconomic to continue […]".<lb/> </bibl>
+          <bibl><label>19</label><lb/> Reisman &amp; Sloane, supra note 3, 17.<lb/> </bibl>
+          <bibl><label>20</label><lb/> Revere Copper and Brass, Inc. v. Overseas Private Inv. Corp., OPIC Award, 24 Au-<lb/>gust 1978, 58 ILM (1980), 271-272; </bibl>
+          <bibl>lately, T. Wälde &amp; A. Kolo, 'Environmental<lb/> Regulation, Investment Protection and "Regulatory Taking" in International Law',<lb/> 50 International and Comparative Law Quarterly (2001), 813; </bibl>
+          <bibl>Reisman &amp; Sloane,<lb/> supra note 3, 121. </bibl>
+          <bibl>A wide range of State measures may be interpreted as expropriatory<lb/> if those measures significantly reduce the value of the property rights of an investor or<lb/> render them useless; see Reisman &amp; Sloane, supra note 3, 123.<lb/> </bibl>
+          <bibl><label/>21<lb/> Sornarajah, supra note 1, 351.<lb/> </bibl>
+          <bibl><label>22</label><lb/> Christie, supra note 1, 338; </bibl>
+          <bibl>cf. also Reed &amp; Bray, supra note 3, 13; </bibl><bibl>Reinisch, supra<lb/> note 3, 438; </bibl>
+          <bibl>Newcombe &amp; Paradell, supra note 6, 344, 366-368.<lb/> </bibl>
+          <bibl><label>23</label><lb/> Dolzer, supra note 12, 79; </bibl>
+          <bibl>Z. A. AlQurashi, 'Indirect Expropriation in the Field of<lb/> Petroleum', 5 Journal of World Investment and Trade 6 (2004), 911.<lb/> </bibl>
+          <bibl><label>24</label><lb/> One strand of case law supports this doctrine: Tippetts, Abbett, McCarthy, Stratton v.<lb/> Tams-Affa Consulting Engineers of Iran (hereafter referred to as Tippetts), 6 Iran-<lb/>U.S. C.T.R. (1984), 225-226; </bibl>
+          <bibl>Starrett Housing, supra note 17, 154; </bibl>
+          <bibl>Phelps Dodge<lb/> Corp. v. Iran, 10 Iran-U.S. C.T.R. (1986), 130; Metalclad Corp. v. United Mexican<lb/> States, ICSID Case No. ARB(AF)/97/1, Award, 30 August 2000 (hereafter referred to<lb/> as Metalclad), para. 103; </bibl>
+          <bibl>Biloune and Marine Drive Complex Ltd. v. Ghana Invest-<lb/>ments Centre and the Government of Ghana (hereafter referred to as Biloune), 95 ILR<lb/> (1989), 183 et seq.; </bibl>
+          <bibl>Middle East Cement Shipping and Handling Co. S.A. v. Arab Re-<lb/>public of Egypt, ICSID Case No. ARB/99/6, Award, 12 April 2002, para. 107; </bibl>
+          <bibl>Com-<lb/>pañía del Desarrollo de Santa Elena, S.A. v. Costa Rica, ICSID Case No. ARB/96/1,<lb/> Award, 17 February 2000, para. 76. </bibl>
+          <bibl>For a more detailed analysis of the presented case<lb/> law, refer to AlQurashi, supra note 22, 907-909 </bibl>
+          <bibl>and Dolzer, supra note 12, 86-90.<lb/> </bibl>
+          <bibl><label>25</label><lb/> Another strand of case law suggests that there are more factors to be taken into con-<lb/>sideration: Oscar Chinn, supra note 17, 88. </bibl>
+          <bibl>See also T. Weiler, 'Saving Oscar Chinn:<lb/> Non-Discrimination in International Investment Law', in N. Horn, (ed.), Arbitrating<lb/> Foreign Investment Disputes (2004), 159-192; </bibl>
+          <bibl>Barcelona Traction, Light &amp; Power<lb/> Co., Belgium v. Spain, (hereafter referred to as Barcelona Traction), ICJ Rep. (1970),<lb/> 1, see separate opinions of Judge Fitzmaurice, 106, Judge Gros, 273, and Judge Ta-<lb/>naka, 159; </bibl>
+          <bibl>Sea-Land Services, supra note 11, 149; </bibl>
+          <bibl>S. D. Myers, Inc. v. Canada, First<lb/> Partial Award, 13 November 2000 (hereafter referred to as S. D. Myers); </bibl>
+          <bibl>Técnicas<lb/> Medioambientales Tecmed S.A. (Spain) v. The United Mexican States, ICSID Case<lb/> No. ARB(AF)/00/2, Award, 29 May 2003, at para. 116 (hereafter referred to as<lb/> Tecmed); </bibl>
+          <bibl>see also the Feldman case, supra note 15. </bibl><bibl>For a more detailed analysis of the<lb/> presented case law, refer to AlQurashi, supra note 22, 909-911, </bibl>
+          <bibl>Dolzer, supra note<lb/> 12, 81-86.<lb/> </bibl>
+          
+          <bibl><label>26</label><lb/> Dolzer points at the weakness of the "sole effect doctrine", stating that "the propo-<lb/>nents of the 'sole effect doctrine' would have to explain why international law protect-<lb/>ing aliens should require a higher standard of protection than the major domestic legal<lb/> orders"; Dolzer, supra note 12, 91.<lb/> </bibl>
+          <bibl><label>27</label><lb/> Wälde &amp; Kolo, supra note 19, 839; </bibl>
+          <bibl>F. O. Vicuña, 'Carlos Calvo, Honorary NAFTA<lb/> Citizen, Keynote Address', 11 New York University Environmental Law Journal<lb/> (2002), 27; </bibl>
+          <bibl>J. Paulsson &amp; Z. Douglas, 'Indirect Expropriation in Investment Treaty<lb/> Arbitrations', in N. Horn, (ed.), Arbitrating Foreign Investment Disputes (2004), 145-<lb/>158, at 146; </bibl>
+          <bibl>Feldman, supra note 15, para. 112.<lb/> </bibl>
+          <bibl><label>28</label><lb/> American Law Institute, Restatement (Third) of the Foreign Relations Law of the<lb/> U.S.A., Vol. 2, 1987, §712, comment g. Cf. </bibl>
+          <bibl>also Reinisch, supra note 3, 433.<lb/> </bibl>
+          <bibl><label>29</label><lb/> Summarizing Wälde &amp; Kolo, supra note 19, 837 et seq.<lb/> </bibl>
+          <bibl><label>30</label><lb/> See, for example, the following cases: Handyside v. United Kingdom, ECHR (1976)<lb/> Series A, No. 24, 29; Poiss v. Austria, ECHR (1987), Series A, No. 117, 108; Spor-<lb/>rong and Lönnroth v. Sweden, ECHR (1982) Series A, No. 52, 1 et seq. (hereafter re-<lb/>ferred to as Sporrong and Lönnroth); Matos e Silva, Lda. and Others v. Portugal,<lb/> ECHR (1996-IV), No. 14, 1092, para. 79; all cases also available at:<lb/> http://cmiskp.echr.coe.int/tkp197/search.asp?skin=hudoc-en (last visited 9 April<lb/> 2009). </bibl>
+          <bibl>See, for a more detailed discussion, H. R. Fabri, 'The Approach Taken by the<lb/> European Court of Human Rights to the Assessment of Compensation for "Regulatory<lb/> Expropriations of the Property of Foreign Investors"', 11 New York University Envi-<lb/>ronmental Law Journal (2002), 148-173; </bibl>
+          <bibl>See also E. M. Freeman, 'Regulatory Ex-<lb/>propriation under NAFTA Chapter 11: Some Lessons from the European Court of<lb/> Human Rights', 42 Columbia Journal of Transnational Law (2003), 184-204.<lb/> </bibl>
+          <bibl><label>31</label><lb/> Sporrong and Lönnroth, supra note 29, para. 63; </bibl>
+          <bibl>Fredin v. Sweden, ECHR (1991)<lb/> Series A No. 192; </bibl>
+          <bibl>Starrett Housing, supra note 17, 154; </bibl>
+          <bibl>Tippetts, supra note 23, 225<lb/> et seq.; </bibl>
+          <bibl>Kozacioğlu v. Turkey, judgment of 19 February 2009, para. 70;</bibl> 
+          <bibl>also refer to<lb/> Lauder v. Czech Republic, UNCITRAL Arbitration, Award, 3 September 2001, para.<lb/> 198, which stated that a detrimental effect on the economic value of property is not<lb/> sufficient to constitute an expropriation.<lb/> </bibl>
+          
+          <bibl><label>32</label><lb/> Pope &amp; Talbot Inc. v. Canada, Interim Award, 26 June 2000, paras 96-98, 102;<lb/> </bibl>
+          <bibl>S. D. Myers, supra note 24, para. 283; </bibl>
+          <bibl>Feldman, supra note 15, para. 110; </bibl>
+          <bibl>Revere, su-<lb/>pra note 19, 258-330; </bibl>
+          <bibl>Metalclad, supra note 23, para. 103; </bibl>
+          <bibl>CME Czech Republic<lb/> B.V.(The Netherlands) v. Czech Republic, UNCITRAL Arbitration, Partial Award, 13<lb/> September 2001, para. 604 (hereafter referred to as CME); </bibl>
+          <bibl>Tecmed, supra note 24, pa-<lb/>ra. 115; </bibl>
+          <bibl>GAMI Investment, Inc. v. Mexico, UNCITRAL Arbitration, Final Award, 15<lb/> November 2004, para. 126; </bibl>
+          <bibl>Telenor Mobile Communications A.S. v. Hungary, ICSID<lb/> Case No. ARB/04/15, Award, 13 September 2006, para. 65; </bibl>
+          <bibl>LG&amp;E Energy<lb/> Corp.,supra note 8, paras 188-191; </bibl>
+          <bibl>Enron Corp., supra note 8, para. 245; </bibl>
+          <bibl>Eastern<lb/> Sugar B.V. v. Czech Republic, SCC Case No. 088/2004, Partial Award, 27 March<lb/> 2007; </bibl>
+          <bibl>M.C.I. Power Group L.C. and New Turbine, Inc. v. Ecuador, ICSID Case No.<lb/> ARB/03/6, Award, 31 July 2007, para. 300; </bibl>
+          <bibl>Parkerings-Compagniet A.S. v. Lithuania,<lb/> ICSID Case No. ARB/05/8, Award, 11 September 2007; </bibl>
+          <bibl>Sempra Energy, supra note<lb/> 8, para. 284. </bibl>
+          <bibl>See, for a brief discussion, OECD, "Indirect Expropriation" and the<lb/> "Right to Regulate" in International Investment Law, Working Papers on Internation-<lb/>al Investment No. 2004/4; available at: www.oecd.org/dataoecd/ 22/54/33776546.pdf<lb/> (last visited 11 August 2005), 10-14.<lb/> </bibl>
+          
+          <bibl><label>33</label><lb/> Freeman, supra note 29, 189-191; </bibl>
+          <bibl>ECHR, Mellacher and Others v. Austria, judgment<lb/> of December 19, 1989, Series A No. 169, para. 45.<lb/> </bibl>
+          <bibl><label>34</label><lb/> Posing the same question, see R, Dolzer, 'Indirect Expropriation: New Develop-<lb/>ments?', 11 New York University Environmental Law Journal (2002), 74.<lb/> </bibl>
+          <bibl><label>35</label><lb/> Convention for the Protection of Human Rights and Fundamental Freedoms of<lb/> 4 November 1950 and its first Protocol; available at: www.echr.coe.int/NR/rdonlyres/<lb/> D5CC24A7-DC13-4318-B457-5C9014916D7A/0/EnglishAnglais.pdf (last visited<lb/> 1 September 2005).<lb/> </bibl>
+          <bibl><label>36</label><lb/> Compare Article 53 ECHR; </bibl>
+          <bibl>see also C. Grabenwarter, Europäische Menschenrechts-<lb/>konvention, 2nd ed. (2005), §2, mn. 14.<lb/> </bibl>
+          
+          <bibl><label>37</label><lb/> "Investors are ready, and can be expected to be ready, to accept the regulatory regime<lb/> in situations in which they invest [because they are in the position to make a<lb/> risk/reward assessment of their investment]. Investment protection rather turns around<lb/> the issues of unexpected changes with an excessive detrimental impact on the foreign<lb/> investor's prior calculation." Wälde &amp; Kolo, supra note 19, 819. </bibl>
+          <bibl>Courts, tribunals [cf.<lb/> Aminoil, supra note 12, 1034; </bibl>
+          <bibl>Phillips Petroleum Co. Iran v. Iran, 21 Iran-U.S.<lb/> C.T.R. (1989), 79 et seq.; </bibl>
+          <bibl>Amoco International Finance Corporation v. Iran, 15 Iran-<lb/>U.S. C.T.R. (1987), 189 et seq.; </bibl>
+          <bibl>Starrett Housing, supra note 17; </bibl>
+          <bibl>Metalclad, supra<lb/> note 23, paras 89, 99; </bibl>
+          <bibl>Feldman, supra note 15, paras 145 et seq.; </bibl>
+          <bibl>Tecmed, supra note,<lb/> paras 91, 149 et seq., 154; </bibl>
+          <bibl>International Thunderbird Gaming Corporation v. Mexico,<lb/> UNCITRAL Arbitration, Arbitral Award, 26 January 2006, para. 147; </bibl>
+          <bibl>LG&amp;E Capital<lb/> Corp. and LG&amp;E International Inc. v. Argentina, ICSID Case No. ARB/02/1, Deci-<lb/>sion on Liability, 3 October 2006, para. 195 (hereafter referred to as LG&amp;E Capital).<lb/> </bibl>
+          <bibl>Also, the ECHR has relied on this concept; see the ECHR cases quoted by Dolzer, su-<lb/>pra note 33, 78-79, </bibl>
+          <bibl>and commentators cf. e.g. AlQurashi, supra note 22, 913; </bibl>
+          <bibl>see also<lb/> Wälde &amp; Kolo, supra note 19, 821 et seq., who want to rely heavily on jurisprudence<lb/> of the U.S. Supreme Court] have frequently referred to the interpretative factor of the<lb/> "disappointment of legitimate expectations". </bibl>
+          <bibl>In order to distinguish regulation from<lb/> indirect expropriation, one has to ask whether the State has frustrated the legitimate<lb/> expectations of the investor based on representations and actions of the host State. In<lb/> order to do so, one must base one's evaluation on the facts, taking into account all as-<lb/>pects of the specific case at hand. Not only contractual commitments formalize legiti-<lb/>mate expectations but also formal governmental promises in treaties, laws and even<lb/> investment brochures do so. See A. A. Fatouros, Government Guarantees to Foreign<lb/> Investors (1962), 69 et seq.; </bibl>
+          <bibl>more critical: Sornarajah, supra note 1, 100 et seq.; </bibl>
+          <bibl>just<lb/> recently, M. W. Reisman &amp; M. H. Arsanjani, 'The Question of Unilateral Governmen-<lb/>tal Statements as Applicable Law in Investment Disputes', 19 ICSID Review (2004),<lb/> 328-343, which lacks, however, a dogmatic explanation of how a State can bind itself<lb/> by unilateral statement -despite its value as evidence for the creation of legitimate ex-<lb/>pectations within the concept of indirect expropriation or fair and equitable treatment -<lb/>in international law towards an investor which is very often not a subject of interna-<lb/>tional law;</bibl> <bibl>see also Southern Pacific Properties (Middle East) Ltd. and Southern Pa-<lb/>cific Properties Ltd (Hong Kong) v. Arab Republic of Egypt, ICSID Case No.<lb/> ARB/84/3, Decision on Jurisdiction and Dissenting Opinion, 14 April 1988 (hereafter<lb/> referred to as Southern Pacific Properties), excerpts of the Decision published in<lb/> 16 Yearbook Commercial Arbitration (1991), 28, para. 46.</bibl> 
+          <bibl>This concept allows,<lb/> firstly, to focus on the legal situation in the host State at the time when the investment<lb/> is placed in that country. Secondly, it contains the idea that an expectation deserves<lb/> more protection as it is increasingly backed by investment and, thirdly, it harbours an<lb/> element of flexibility, i.e. legitimate expectations may fade in time and there may be a<lb/> change of priorities in the host society; Dolzer, supra note 33, 78-79.<lb/> </bibl>
+          
+          <bibl><label>38</label><lb/> "[A]ny taking that is pursuant to discriminatory or arbitrary action, or any action that<lb/> is without legitimate justification, is considered to be contrary to the non-<lb/>discrimination requirement, even absent any singling-out on the basis of nationality.<lb/> This includes prohibition of discrimination with regard to due process and payment of<lb/> compensation requirements. Moreover, the non-discrimination requirement demands<lb/> that governmental measures, procedures and practices be non-discriminatory even in<lb/> the treatment of members of the same group of aliens." UNCTAD, International In-<lb/>vestment Agreements: Key Issues, Vol. 1, 2004, 239. </bibl>
+          <bibl>That also means that in order to<lb/> fall foul of the non-discrimination rule it is not required that the host State discrimi-<lb/>nates explicitly and formally against the foreign investor; it is sufficient that the State<lb/> measure is discriminatory in its effect. For the application of this notion in recent<lb/> NAFTA awards, refer to S. D. Myers, supra note 24, para. 308. </bibl>
+          <bibl>See also Wälde &amp;<lb/> Kolo, supra note 19, 835-837. </bibl>
+          <bibl>For an older notion of discrimination and the general<lb/> problem of its application, consult W. McKean, Equality and Discrimination under<lb/> International Law (1983); </bibl>
+          <bibl>E. W. Vierdag, The Concept of Discrimination in Interna-<lb/>tional Law (1973).<lb/> </bibl>
+          <bibl><label>39</label><lb/> It is no easy task to establish the "intention" of a government. However, "formal<lb/> statements of the responsible Minister or a series of circumstances pointing to the pro-<lb/>tectionist intent being the main motivator for a policy can be taken to indicate the 'in-<lb/>tention'"; Wälde &amp; Kolo, supra note 19, 826, footnote 66. </bibl>
+          <bibl>See especially the First Par-<lb/>tial Award, paras 171-195</bibl> 
+          <bibl>and the separate Concurring Opinion of B. Schwartz,<lb/> paras 62-63, in S. D. Myers.<lb/> </bibl>
+          <bibl><label>40</label><lb/> Wälde &amp; Kolo, supra note 19, 827.<lb/> </bibl>
+          <bibl><label>41</label><lb/> S. Rose-Ackermann &amp; J. Rossi, 'Disentangling Deregulatory Takings', 86 Virginia<lb/> Law Review (2000), 1441-1496. </bibl>
+          <bibl>See also Bundesgerichtshof (German Federal Su-<lb/>preme Court), BGHZ 6, 280; </bibl>
+          <bibl>Bundesverwaltungsgericht (German Federal Administra-<lb/>tive Court), BVerwGE 5, 145; BVerwGE 19, 98. </bibl>
+          <bibl>The "special sacrifice" (Son-<lb/>deropfer) concept is of primary importance in German constitutional expropriation<lb/> law but is also known to the U.S. legal order; refer to Monogahela Navigation Corp.<lb/> v. U.S., 148 US (1893), 312.</bibl> 
+          <bibl>Its underlying principle is discrimination, but it goes be-<lb/>yond this concept. It is intended to protect the minority against the majority, prevent-<lb/>ing the latter from shifting the costs of regulation to the former; see, Wälde &amp; Kolo,<lb/> supra note 19, 845. </bibl>
+          <bibl>The authors of this article are aware of the fact that it is critical to<lb/> derive principles on indirect expropriation from cases decided in national fora, at least<lb/> if one draws heavily only on the case law developed in one single nation (Wälde and<lb/> Kolo indeed do so, arguing that U.S. law, as the law of the last hegemonic power, en-<lb/>joys extra authority; Wälde &amp; Kolo, supra note 19, 821-822, even if it might be the<lb/> most powerful nation at present. </bibl>
+          <bibl>One must consider these national principles, but as<lb/> part of a comparative study of the rules developed in other major jurisdictions. This<lb/> approach would be in conformity with the teaching on the sources of international law<lb/> in regard to the "general principles of law" embodied in Article 38 of the Statute of<lb/> the ICJ; Dolzer, supra note 12, 69,76-78.<lb/> </bibl>
+          <bibl><label>42</label><lb/> Article 1.2 of the Russian Law "On the Subsoil" -"O nedrakh" No. 2395-I dated 21<lb/> February 1992.<lb/> </bibl>
+          <bibl><label>43</label><lb/> Articles 1.2 and 12 of the Russian Law "On the Subsoil" -"O nedrakh" No. 2395-I<lb/> dated 21 February 1992.<lb/> </bibl>
+          <bibl><label>44</label><lb/> Article 13.1 of the Russian Law "On the Subsoil" -"O nedrakh" No. 2395-I dated 21<lb/> February 1992.<lb/> </bibl>
+          <bibl><label>45</label><lb/> As an example, see M. Pustilnik, Russian authorities show new interest in oil compa-<lb/>nies, Moscow News, 28 July 2005; available at: www.gasandoil.com/goc/news/<lb/> ntr43548.htm (last visited 29 April 2009.<lb/> </bibl>
+          <bibl><label>46</label><lb/> Article 20 of the Russian Law No. 2395-I dated 21 February 1992 "On the Subsoil" -<lb/>"O nedrakh".<lb/> </bibl>
+          
+          <bibl type="footnote"><label>47</label><lb/> It should be noted that Russian practice or law does not know of the term "administra-<lb/>tive act" as such (Verwaltungsakt).<lb/> </bibl>
+          
+          <bibl><label>48</label><lb/> Chapter 24 of the Arbitration Procedure Code of the Russian Federation of 2002.<lb/> </bibl>
+          <bibl><label>49</label><lb/> M. Gutbrod, 'Aktualnye problemy regulirovaniya Rossiskogo bankovskogo sektora i<lb/> finansovykh rynkov', Financial Risks Management, No. 3/2005, 2 et seq.<lb/> </bibl>
+          <bibl><label>50</label><lb/> For example, the term is only mentioned in Article 4(11) of Federal Law No. 164 -<lb/>FZ, 8 December 2003 "On the Fundamental Principles of the State Regulation of For-<lb/>eign Trade Activity": "[…] the basic principles of the state regulation of foreign trade<lb/> activity shall be: […] ensuring the right to appeal, either in due process of law or in<lb/> accordance with any other procedure prescribed under the law, against any illegal ac-<lb/>tions (inaction) of governmental agencies and their officials and also the right to chal-<lb/>lenge regulatory legal acts of the Russian Federation, derogating from the right of a<lb/> participant in foreign trade activity to conduct such foreign trade activity." (emphasis<lb/> added).<lb/> </bibl>
+          <bibl><label>51</label><lb/> See, for instance, the Decision of the Federal Russian Arbitrazh Court of the District<lb/> of Moscow, No. KA-A40/4680-05, 2 June 2005.<lb/> </bibl>
+          <bibl><label>52</label><lb/> For instance, the relevant statutes in Article 2 of the Law "About licensing of different<lb/> kinds of activity", No. 128-FZ, dated 8 August 2001, give no indications in regard to<lb/> the existence of characteristics resembling property rights: possession, use and dis-<lb/>posal. In addition, the term "property right" itself is not mentioned.<lb/> </bibl>
+          <bibl><label>53</label><lb/> O. E. Kutafin, Commentary to the Russian Constitution (2003), Articles 24(1), 36(2),<lb/> 55(3), 57, 75(3), and 132(1); </bibl>
+          <bibl>L. L. Lasarev, Commentary to the Russian Constitution,<lb/> 2003, Articles 14(6), 9(1), 24(4), 34(4), 37(1), 57(1), 58(4), 75(3), and 114(2) and (4);<lb/> </bibl>
+          <bibl>W. D. Karpovich, Commentary to the Russian Constitution (2002), Articles 24(1),<lb/> 37(1), 43(2), 45(2), 57, 71, 72(1), 74(1), 103(1), and 132(1); </bibl>
+          <bibl>L. A. Okunkova, Com-<lb/>mentary to the Russian Constitution (1994), Articles 41, 45, and 114.<lb/> </bibl>
+          
+          <bibl type="footnote"><label>54</label><lb/> Reportedly, there have been only a few instances in which mining licences have actu-<lb/>ally been withdrawn. Even in the context of what has often been described in the press<lb/> as a crusade against Yukos, Yukos has not actually lost any of the mining licences<lb/> which reportedly violated mining legislation.<lb/> </bibl>
+          <bibl><label>55</label><lb/> Northgas v. Gazprom, Decision of the Federal Arbitrazh Court of the District of Mos-<lb/>cow, No. KA-A40/12425-04, dated 11 January 2005.<lb/> </bibl>
+          <bibl><label>56</label><lb/> Virtually all Russian authors dealing with issues of the application of international<lb/> treaties in the Russian Federation ground their positions on Article 15(4) of the Con-<lb/>stitution of the Russian Federation, which states that "[t]he universally-recognized<lb/> norms of international law and international treaties and agreements of the Russian<lb/> Federation shall be a component part of its legal system. If an international treaty or<lb/> agreement of the Russian Federation fixes rules other than those envisaged by law, the<lb/> rules of the international agreement shall be applied." See www.constitution.ru/en/<lb/> 10003000-02.htm (last visited 8 April 2009).<lb/> </bibl>
+          <bibl><label>57</label><lb/> See, for instance, T. N. Neshatayeva, International Civil Procedure (2001), 46: "A<lb/> question on the norms of jus cogens character, which mostly exist in the form of cus-<lb/>tom has already been touched upon. Considering these norms as principal ones appar-<lb/>ently witnesses that the widest application of them is possible in the practice of the RF<lb/> Constitutional Court […]. It is possible to assume that the priority of the interpretation<lb/> of jus cogens norms (norms-principles) by the RF Constitutional Court is a feasible<lb/> approach to this question for Russian judicial practice in general […] The issue be-<lb/>comes more complicated when it concerns other international legal norms of custom-<lb/>ary origin. Article 15 of the RF Constitution, and later Article 7 of the RF Civil Code<lb/> included the norms of this type (the universally-recognized norms of international<lb/> law) into the Russian legal system. But their place in the system is less clear in com-<lb/>parison to treaties […]. While hearing economical disputes in Arbitrazh Courts one<lb/> can already meet participants' references to well-known international norms of cus-<lb/>tomary character. First of all, this is true for the substantive norms contained in widely<lb/> known international conventions which are not mandatory for the Russian Federation<lb/> […]. At this time courts are extremely cautious in appraisal of the procedural norms of<lb/> those conventions that are not in force for Russia yet."<lb/> </bibl>
+          <bibl><label>58</label><lb/> Northgas v. Gazprom, supra note, 54; </bibl>
+          <bibl>Yukos, Decision of the Constitutional Court,<lb/> No. 36-O, dated 18 January 2005.<lb/> </bibl>
+          <bibl><label>59</label><lb/> Licences are now clearly protected by IIAs; see for example Amco Asia Corporation,<lb/> Pan American Development Limited and P.T. Amco Indonesia v. Republic of Indone-<lb/>sia, ICSID Case No. ARB/81/1, Decision Annulling the Award, 16 May 1986 (hereaf-<lb/>ter referred to as Amco (Annulment)), 25 I.L.M. (1986), 1439 et seq.;</bibl> cf. <bibl>also for ex-<lb/>ample Metalclad, supra note 23; </bibl>
+          <bibl>Tecmed, supra note 24; </bibl>
+          <bibl>see also Sornarajah, supra<lb/> note 1, 389 et seq.<lb/> </bibl>
+          <bibl><label>60</label><lb/> UNCTAD, International Investment Agreements: Key Issues, Vol. 1 (2004), 239.<lb/> </bibl>
+          <bibl><label>61</label><lb/> Of the same opinion but not differentiating: AlQurashi, supra note 22, 914.<lb/> </bibl>
+          <bibl><label>62</label><lb/> Alex Genin, Eastern Credit Limited, Inc. and A.S. Baltoil v. The Republic of Estonia,<lb/> ICSID Case No. ARB/99/2, Award, 25 June 2001.<lb/> </bibl>
+          
+          <bibl type="footnote"><label>63</label><lb/> Even if a revocation of a licence is well justified, the State must act with procedural<lb/> regularity; otherwise, it would be held liable to pay compensation. In Middle Eastern<lb/> Cement Shipping and Metalclad, the host State was not held liable for the cancellation<lb/> of the licence but for a lack of due process, especially for a lack of transparency.<lb/> </bibl>
+          
+          <bibl><label>64</label><lb/> For a more detailed and principled account of this issue cf. S. Hindelang, 'No Equals<lb/> in Wrong? The Issue of Equality in a State of Illegality', 7 Journal of World Invest-<lb/>ment and Trade 6 (2006), 883-897.<lb/> </bibl>
+          
+          <bibl type="footnote"><label>65</label><lb/> This means that the investor should be able to demonstrate that the State, in respect to<lb/> the other instances, was not acting due to ignorance of these instances or legal obsta-<lb/>cles which would bar it from enforcing the law in question but due to reasons unre-<lb/>lated to the aforementioned.<lb/> </bibl>
+          
+          <bibl><label>66</label><lb/> V. Götz, 'Über die "Gleichheit im Unrecht"', in O. Bachof et al. (eds), Verwaltungs-<lb/>recht zwischen Freiheit, Teilhabe und Bindung: Festgabe aus Anlass des 25jährigen<lb/> Bestehens des Bundesverwaltungsgerichts (1978), 254.<lb/> </bibl>
+          
+          <bibl><label>67</label><lb/> It is important to note that this observation applies only to the situation in which the<lb/> State is obliged by law to interfere with a right of an investor in a certain way without<lb/> any discretion but does so only on a selective basis. This is not to be confused with the<lb/> notion of "no equality in wrong" (keine Gleichheit im Unrecht), in German constitu-<lb/>tional doctrine. For the distinction -a detailed outline would go beyond the scope of<lb/> this article -refer to C. Kölbel, Gleichheit "im Unrecht" (1998).<lb/> </bibl>
+          
+          <bibl><label>68</label><lb/> Id., 80, especially p. 141 (English summary); an argument stating that the principle of<lb/> legality demands the immediate proper execution of the law in question against the<lb/> investor implies that the principle of legality takes precedence of the principle of<lb/> equality. </bibl>
+          <bibl>This is doubtful. The principle of legality carries inherently the demand of<lb/> due application of the principle of equality; Id., 43, 83.<lb/> </bibl>
+          <bibl><label>69</label><lb/> Id., 82, 90.<lb/> </bibl>
+          
+          <bibl type="footnote"><label>70</label><lb/> An exception might be necessary in situations in which immediate action is necessary<lb/> in order to avert damage to live and limb.<lb/> </bibl>
+          
+          <bibl><label>71</label><lb/> Tecmed, supra note 24, para. 154.<lb/> </bibl>
+          <bibl><label>72</label><lb/> See, in general, on the issue of transparency in IIAs, UNCTAD, Transparency, UNC-<lb/>TAD Series on Issues in International Investment Agreements, 2004, especially 63;<lb/> available at: www.unctad.org/en/docs/iteiit20034_en.pdf (last visited 30 August<lb/> 2005).<lb/> </bibl>
+          <bibl><label>73</label><lb/> T. Wälde, 'Investment Arbitration under the Energy Charter Treaty: An Overview of<lb/> Key Issues', 1 Transnational Dispute Management (2004) 2; available at:<lb/> www.transnational-dispute-management.com (last visited 11 August 2005). </bibl>
+          <bibl>The con-<lb/>cept of transparency arrived late in international investment law. In regard to the stan-<lb/>dard of treatment, two cases deserve to be mentioned. In Metalclad, supra note, 23,<lb/> para. 76, the NAFTA Tribunal defined the concept of transparency (stated in Article<lb/> 1802 NAFTA) as requiring the following: "[…] all relevant legal requirements for the<lb/> purpose of initiating, completing and successfully operating investments made, or in-<lb/>tended to be made, under the Agreement should be capable of being readily known to<lb/> all affected investors of another Party." </bibl>
+          <bibl>If a State becomes aware of "confusion or<lb/> misunderstanding" among investors concerning the legal requirements to be fulfilled,<lb/> the Party would have "the duty to ensure that the correct position [would be] promptly<lb/> determined and clearly stated so that the investors can proceed with all appropriate<lb/> expedition in the confident belief that they are acting in accordance with all relevant<lb/> laws" (summary taken from OECD, Fair and Equitable Treatment Standard in Inter-<lb/>national Law, Working Papers on International Investment, No. 2004/3, 37).</bibl> 
+          <bibl>Since<lb/> Mexico had failed to provide such a framework, it was held liable for breach of the<lb/> fair and equitable treatment standard. </bibl>
+          <bibl>However, this reading was rejected in a review<lb/> by the Supreme Court of British Columbia on the grounds that the treaty obligation of<lb/> transparency was outside Chapter Eleven and, thus, outside the fair and equitable<lb/> treatment standard. Moreover, the NAFTA Tribunal was charged to have failed to<lb/> have put forward any evidence that the obligation of transparency has become cus-<lb/>tomary international law. Also, in Maffezini, a lack of transparency in administrative<lb/> conduct was established, which led the Tribunal, in connection with other factors, to<lb/> the conclusion that Spain had violated the fair and equitable treatment standard con-<lb/>tained in the Spain-Argentina BIT. No explanation was given on the precise meaning<lb/> of the lack of transparency. See Maffezini (Argentina) v. Kingdom of Spain, ICSID<lb/> Case No. ARB/97/7, Award, 13 November 2000. </bibl>
+          <bibl>See also UNCTAD, Transparency,<lb/> UNCTAD Series on Issues in International Investment Agreements, 2004, especially<lb/> 63, available at www.unctad.org/en/docs/iteiit20034_en.pdf (last visited 9 April<lb/> 2009); </bibl>
+          <bibl>J. Jr. Hanna, 'Is Transparency of Governmental Administration Customary In-<lb/>ternational Law in Investor-Sovereign Arbitrations? -Courts and Arbitrators May Dif-<lb/>fer', 21 Arbitration International (2005), 187.<lb/> </bibl>
+          
+          <bibl><label>74</label><lb/> Reported by K. Hobér, 'Investment Arbitration in Eastern Europe: Recent Cases on<lb/> Expropriation', 14 American Review of International Arbitration (2003), 407. This<lb/> case was concerned with the removal and subsequent public auctioning of a ship by<lb/> Latvian governmental officials due to an alleged breach of a lease contract on an an-<lb/>chorage. </bibl>
+          <bibl>The Tribunal based its finding of indirect expropriation on the failure of the<lb/> government to inform the investor about the (alleged) invalidity (retroactive change of<lb/> laws) of the lease contract in due time (four months inactivity) and cacophonic state-<lb/>ments of a governmental official, the participation of governmental officers in the (al-<lb/>leged) illegal activity of concluding the lease contract and the missing proportionality<lb/> between the (alleged) wrongful act of the investor and State measures; id., 414.<lb/> </bibl>
+          
+          <bibl><label>75</label><lb/> The NAFTA Tribunal in Metalclad dealt with a case in which the investor did not<lb/> obey the local building and environmental rules and thus acted unlawfully in regard to<lb/> national rules. However, representations were made by governmental officials who<lb/> were not aware of their own legal order. It was held that the investor's legitimate ex-<lb/>pectations in the lawfulness of his undertaking cannot be destroyed if he learns about<lb/> the illegality of the investment after it was made. Refer also to J. Paulsson &amp; Z. Doug-<lb/>las, 'Indirect Expropriation in Investment Treaty Arbitrations', in N. Horn, (ed.), Arbi-<lb/>trating Foreign Investment Disputes (2004), 154-157.<lb/> </bibl>
+          
+          <bibl><label>76</label><lb/> Wälde, supra note 72.<lb/> </bibl>
+          <bibl><label>77</label><lb/> S. Krupko, 'Investition agreements and disputes between countries and private foreign<lb/> investors', in Business and Law (Attachment No. 5, 5/2001), 6, 14-15, 17-18;<lb/> </bibl><bibl>S. Krupko, 'Investment activity in the constituent entities of the Russian Federation',<lb/> in Business and Law (No. 10/2000), 42.<lb/> </bibl>
+          
+          <bibl type="footnote"><label>78</label><lb/> Id.<lb/> </bibl>
+          
+          <bibl><label>79</label><lb/> Paulsson &amp; Douglas, supra note 74, 155-156; </bibl>
+          <bibl>R. Dolzer, Eigentum, Enteignung und<lb/> Entschädigung im geltenden Völkerrecht (1985), 252; Newcombe &amp; Paradell, supra<lb/> note 6, 358, para. 7.24.<lb/> </bibl>
+          
+          <bibl><label>80</label><lb/> Feldman, supra note 15, para. 109-111.<lb/> </bibl>
+          <bibl><label>81</label><lb/> Goetz and others v. Burundi, ICSID Case No. ARB/95/3, Award, 10 February 1999,<lb/> para. 124. </bibl>
+          <bibl>Refer also to Paulsson &amp; Douglas, supra note 74, 155.</bibl> 
+          <bibl>See, for the taxation<lb/> of windfall profits of the oil industry, the Aminoil case, supra note 12;</bibl> 
+          <bibl>for the situation<lb/> in the United States, U.S. v. Ptasynki, 462 US (1983), 74 et seq.<lb/> </bibl>
+          <bibl><label>82</label><lb/> Kügele v. Polish State, Upper Silesian Arbitral Tribunal Case, 5 February 1932, Amt-<lb/>liche Sammlung von Entscheidungen des Schiedsgerichts für Oberschlesien, Vol. 3<lb/> (1931), 20. </bibl>
+          <bibl>See also H. Lauterpacht, Annual Digest of Public International Law<lb/> Cases, Vol. 6 (1931/32), 69.<lb/> </bibl>
+          <bibl><label>83</label><lb/> "Substantial damage" is understood in the sense that a profitable usage of the invest-<lb/>ment is impossible; R. Dolzer, Eigentum, Enteignung und Entschädigung im gelten-<lb/>den Völkerrecht (1985), 252 et seq. </bibl>
+          <bibl>Refer also to Dolzer, supra note 12, 78.<lb/> </bibl>
+          <bibl><label>84</label><lb/> CME, supra note 31. The actions and non-actions of the Czech Media Council were<lb/> not part of proper administrative process (no justification for the sudden change in the<lb/> interpretation of the legal situation or other regulatory measures and its enforcement<lb/> (1996) and the illegal collusion (1999) with a Czech national with a protectionist in-<lb/>tent).<lb/> </bibl>
+          
+          <bibl><label>85</label><lb/> A first, rather simple argument relates to the rules of causality. An infringement of a<lb/> given right cannot be imputed to someone if it can be demonstrated that the infringe-<lb/>ment would also have been caused if this person had acted correctly. For the example<lb/> here, this would mean that the infringement (indirect expropriation) would also have<lb/> occurred if the host State had lawfully revoked the licence. This apparently is not the<lb/> case. Thus, the host State must have inflicted the infringement. A second argument<lb/> may be drawn from the second Amco v. Indonesia Award on the Merits, Amco Asia<lb/> Corporation and Others v. The Republic of Indonesia, ICSID Case No. ARB/81/1,<lb/> Resubmitted, Award on the Merits, 31 May 1990 (hereafter referred to as Amco II<lb/> (Merits)), in para. 143, the Tribunal states: "[E]ven were a decision on grounds other<lb/> than those stated in the Degree in principle sustainable, they could no more be lawful<lb/> than the decision made on grounds of shortfall of investment, because of the general<lb/> background that pervaded the decision-making." It does not matter that the same re-<lb/>sult could have been reached in another way, i.e. that the foreign investment could<lb/> have also been adversely affected by measures which are in principle sustainable; it is<lb/> only the process of how this result is reached (and that this process was ultimately<lb/> malconducted) which matters. </bibl>
+          <bibl>Of the same opinion: Sornarajah, supra note 1, 390.<lb/> </bibl>
+          <bibl><label>86</label><lb/> It is open to question whether all of the loss inflicted upon the foreign investor by the<lb/> discriminatory application of certain tax laws can be attributed to the host State due to<lb/> the fact that substantial damages would have occurred also in the case of a lawful (in<lb/> terms of public international law) revocation of the licence. The Amco II (Merits)<lb/> Award casts doubts on this; in para. 174, it reads: "To argue, as did Indonesia, that al-<lb/>though there had been procedural irregularities, a 'fair BKPM' [the governmental<lb/> body acting on behalf of Indonesia] would still have revoked the licence, because of<lb/> Amco's own shortcomings, is to misaddress causality. The Tribunal cannot pronounce<lb/> upon what a 'fair BKPM' would have done. This is both speculative, and not the issue<lb/> before it. Rather, it is required to characterise the acts that BKPM did engage in and to<lb/> see if those acts, if unlawful, caused damage to Amco. It is not required to see if, had<lb/> it acted fairly, harm might then rather have been attributed to Amco's own fault."<lb/> </bibl>
+          
+          <bibl><label>87</label><lb/> See the Draft Articles on Responsibility of States for Internationally Wrongful Acts<lb/> adopted by the International Law Commission at its fifty-third session (2001), avail-<lb/>able at http://untreaty.un.org/ilc/texts/instruments/english/draft%20articles/9_6_2001.<lb/> pdf (last visited 22.April.2009) </bibl>
+          <bibl>See also Commentaries to the Draft Articles on Re-<lb/>sponsibility of States for Internationally Wrongful Acts adopted by the International<lb/> Law Commission at its fifty-third session (2001), available at: http://untreaty.un.org/<lb/> ilc/texts/instruments/english/commentaries/9_6_2001.pdf (last visited 22.April.2009)<lb/> </bibl>
+          <bibl>For academic writing, see, instead of others, Brownlie, supra note 15, 420-456 with<lb/> further references.<lb/> </bibl>
+          
+          <bibl><label>88</label><lb/> Newcombe &amp; Paradell, supra note 6, 342.<lb/> </bibl>
+          <bibl><label>89</label><lb/> Wälde &amp; Kolo, supra note 19, 826. </bibl>
+          <bibl>See especially the First Partial Award, para. 171-<lb/>195 </bibl>
+          <bibl>and the Separate Opinion of B. Schwartz, para. 62-64 in S.D.Myers, supra note<lb/> 24.<lb/> </bibl>
+          
+          <bibl type="footnote"><label>90</label><lb/> Difficulties in finding officials with adequate training should not serve a host State as<lb/> a valid defence, since it signed the IIA fully aware of its duties and the quality of its<lb/> officials.<lb/> </bibl>
+          
+          <bibl type="footnote"><label>91</label><lb/> Decision of the Russian Constitutional Court, No. 15, dated 16 July 2005.<lb/> </bibl>
+          
+          <bibl><label>92</label><lb/> For example, Article 113 of the Tax Code, No. 146-FZ, dated 31 July 1998 (as effec-<lb/>tive on the date when the Yukos Decision of the Constitutional Court was passed),<lb/> stated that "a person cannot be held liable for a tax offense if three years (the statute of<lb/> limitations) have expired since the day when the offense was committed or since the<lb/> first day after the end of the tax period during which the offense committed." (this Ar-<lb/>ticle of the Tax Code was amended on 27 July 2006).</bibl> 
+          <bibl>In the Yukos Decision of the<lb/> Constitutional Court, No. 36-O, dated 18 January 2005, the Court re-interpreted this<lb/> provision to apply only for "conscientious" taxpayers. It was deemed not to apply to<lb/> "un-conscientious" taxpayers, which Yukos was found to be. However, the wording of<lb/> the statute does not actually provide a basis for this interpretation.<lb/> </bibl>
+          
+          <bibl><label>93</label><lb/> Revere, supra note 19, 291 "In our view, the effects of the Jamaican Government's<lb/> actions in repudiating its long term commitments to RJA (the subsidiary of RC), have<lb/> substantially the same impact on effective control over use and operation as if the<lb/> properties were themselves conceded by a concession contract that was repudiated<lb/> […]"</bibl> 
+          <bibl>For a discussion, refer to R. Dolzer, 'Indirect Expropriation of Alien Property',<lb/> 1 ICSID Review (1986), 41-65, </bibl>
+          <bibl>Sornarajah, supra note 1, 378-380. </bibl>
+          <bibl>In contrast, in the<lb/> Elsi case, the foreign company, in the view of the Court, went bankrupt because of its<lb/> own financial situation and not because of the action of the host State; Elettronica Si-<lb/>cula S.p.A. (U.S. v. Italy), Award, ICJ Reports 1989, 15, para 119..<lb/> </bibl>
+          <bibl><label>94</label><lb/> Tecmed, supra note 24, para. 154.<lb/> </bibl>
+          <bibl><label>95</label><lb/> Sornarajah, supra note 1, 390.<lb/> </bibl>
+          <bibl><label>96</label><lb/> Id., 390. </bibl>
+          <bibl>See, for the old state of the law, A.V. Freeman, The International Responsi-<lb/>bility of States for Denial of Justice (1938), 518, footnote 2.<lb/> </bibl>
+          <bibl><label>97</label><lb/> Yukos Decision of the Russian Constitutional Court, No. 36-O, dated 18 January 2005,<lb/> the only decision on the Yukos case available in a public database, as explained above,<lb/> deals with technical issues of the interpretation of tax legislation rather than with the<lb/> overall economical effect of government action.<lb/> </bibl>
+          <bibl><label>98</label><lb/> See Tokios Tokelés v. Ukraine, ICSID Case No. ARB/02/18, Decision on Jurisdiction,<lb/> 24 April 2004, paras 91-93. </bibl>
+          <bibl>In the case at hand: "Tokelés claimed that, following its<lb/> publication of a book favourable to a leading Ukrainian government opposition leader,<lb/> Ukrainian government authorities: (1) conducted numerous invasive investigations<lb/> falsely disguised as tax investigations; (2) initiated frivolous actions in Ukrainian do-<lb/>mestic courts, including actions to invalidate contracts entered into by Tokelés's sub-<lb/>sidiary; (3) placed the subsidiary's assets under administrative arrest; (4) unreasonably<lb/> seized financial and other documents and (5) falsely accused its subsidiary of engag-<lb/>ing in illegal activities." The American Society of International Law, International<lb/> Law in Brief, 25 June 2004; available at: www.asil.org/ilib/ilib0711.htm#j3 (last vis-<lb/>ited 22 April 2009). </bibl>
+          <bibl>See also Sedco, Inc. v. National Iranian Oil Company, 9 Iran-<lb/>U.S.C.T.R. (1985), 248 (appointment of directors by the State; not concerned with any<lb/> criminal prosecution); </bibl>
+          <bibl>Biloune case, supra note 23.<lb/> </bibl>
+          
+          <bibl><label>99</label><lb/> Biloune, supra note 23, para.1.<lb/> </bibl>
+          <bibl><label>100</label><lb/> As above, see as an example the Decision of the Russian Constitutional Court,<lb/> 18 January 2005, No. 36-O.<lb/> </bibl>
+          
+          <bibl type="footnote"><label>101</label><lb/> A search in the most commonly used legal database on "extra-legal emergency" as of<lb/> 8 April 2009 gave no results.<lb/> </bibl>
+          
+          <bibl><label>102</label><lb/> The interference in domestic politics by foreign investors seen as agents of their home<lb/> State is a well-known instance (as with Allende in Chile) and has been addressed by<lb/> prohibition in many soft-law instruments (voluntary codes of conduct). However, no<lb/> hard-law international obligation has arisen so far. In general, there has been little<lb/> movement in formulating binding obligations of foreign investors (multinational cor-<lb/>porations). Refer to Sornarajah, supra note 1, 171, 174-182. </bibl>
+          <bibl>Moreover, in general,<lb/> home States do not carry responsibility for the acts of their nationals not acting on be-<lb/>half of the home State abroad; refer to Article 4-11 of the International Law Com-<lb/>mision's Draft Articles on Responsibility of States for Internationally Wrongful Acts.<lb/> </bibl>
+          
+          <bibl><label>103</label><lb/> It seems that criminal activities of a foreign investor do not automatically render an<lb/> investment unprotected by IIAs. See Sornarajah, supra note 1, 390.<lb/> </bibl>
+          
+          <bibl><label>104</label><lb/> See, on the customary law doctrine of "state of necessity" in general, Brownlie, supra<lb/> note 15, 447-449 with further references. </bibl>
+          <bibl>Cf. also S. Schill, 'Auf zu Kalypso? Staats-<lb/>notstand und Internationales Investitionsschutzrecht -Anmerkung zur ICSID-<lb/>Entscheidung LG&amp;E Energy Corp v. Argentina', 5 German Arbitration Journal<lb/> (2007), 178-186. </bibl>
+          <bibl>The state of necessity, though in the context of treatment standards<lb/> due under a BIT regime, was also invoked and lengthily discussed in a recent ICSID<lb/> arbitration, CMS, supra note 8, paras 304-394; </bibl>
+          <bibl>Enron Corp., supra note 8, para. 93,<lb/></bibl> 
+          <bibl>Sempra Energy, supra note 8, paras 333-355;</bibl> <bibl>LG&amp;E Capital, supra note 36, para.<lb/> 201-266.<lb/> </bibl>
+          <bibl><label>105</label><lb/> CMS, supra note 8, para. 315.<lb/> </bibl>
+          <bibl><label>106</label><lb/> Very high standards of proof are required, and it is doubtful whether an international<lb/> tribunal would accept a state of necessity in the situation at hand. See CMS, paras<lb/> 319-331.<lb/> </bibl>
+          <bibl><label>107</label><lb/> Commentaries to the Draft Articles on Responsibility of States for Internationally<lb/> Wrongful Acts, adopted by the International Law Commission at its fifty-third session<lb/> (2001), Article 25, para. 20; available at http://untreaty.un.org/ilc/texts/instruments/<lb/> english/commentaries/9_6_2001.pdf (last visited 04 April 2009).<lb/> </bibl>
+          <bibl><label>108</label><lb/> For case law on the legality of the investment in general see, Fraport AG Frankfurt<lb/> Airport Services Worldwide v. Philippines, ICSID Case No. ARB/03/25, Award, 17<lb/> August 2007; </bibl>
+          <bibl>see also C. Borris &amp; R. Hennecke, 'Das Kriterium der Einhaltung von<lb/> Vorschriften nationalen Rechts in ICSID-Schiedsverfahren -Anmerkungen zum<lb/> Schiedsspruch in der Sache Fraport v. Philippines', 6 German Arbitration Journal<lb/> (2008) 2, 49-58.<lb/> </bibl>
+          <bibl><label>109</label><lb/> As demonstrated, for instance, in the Media Most Gusinsky case, in which the partly<lb/> government-owned Gazprom giant guaranteed two loans to Media Most in 1998 that<lb/> totalled US$ 380 million, secured by a 40 per cent piece of the company. After criti-<lb/>cizing the politics of the Kremlin, with the Kremlin allegedly being instrumental in<lb/> bankrupting Media Most by calling in the loans, the owner of Media Most, Mr Gusin-<lb/>sky, was arrested, allegedly without any charges, and he was allegedly compelled to<lb/> sign an agreement to sell his company. Available at www.mytimes.com/2000/11/15/<lb/> world/russian-gas-company-pulls-out-of-deal-with-media-tycoon.html (last visited 29<lb/> April 2009). </bibl>
+          <bibl>In response to this, the ECHR ruled that the Russian government had vio-<lb/>lated Articles 5 and 18 of the European Convention on Human Rights in relation to<lb/> Gusinsky, namely his rights to freedom and security. The Court ruled that the viola-<lb/>tion in itself was enough for moral damages to be awarded. As a result, it asked the<lb/> Russian Federation to pay € 88.000 in damages. Available at http://cmiskp.echr.coe.<lb/> int/tkp197/view.asp?item=1&amp;portal=hbkm&amp;action=html&amp;highlight=russia%20%7C%<lb/> 2070276/01&amp;sessionid=22944796&amp;skin=hudoc-en (last visited 29 April 2009). No<lb/> arguments as to illegal expropriation or moral damages because of such violations<lb/> seem to have been made before Russian courts.<lb/> </bibl>
+          <bibl><label>110</label><lb/> One way to force an international investor to resort to national jurisdictions is the<lb/> "local remedies requirement". However, the exhaustion of local remedies as a precon-<lb/>dition for commencing an international investment arbitration is nowadays rarely re-<lb/>quired by BITs; C. Schreuer, The ICSID Convention: A Commentary (2001), 391-393.<lb/> </bibl>
+          <bibl>For an appraisal of alleged new tendencies in arbitration, see C. Schreuer, 'Calvo's<lb/> Grandchildren: The Return of Local Remedies in Investment Arbitration', 4 The Law<lb/> and Practice of International Courts and Tribunals (2005) 1, 1-3.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

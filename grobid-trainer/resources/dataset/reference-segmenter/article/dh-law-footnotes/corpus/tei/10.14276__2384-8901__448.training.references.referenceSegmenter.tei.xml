@@ -1,0 +1,131 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.14276__2384-8901__448">
+    <titleStmt>
+      <title level="a">I nuovi spazi di integrazione politica nell’Europa post-Lisbona</title>
+      <author>
+        <persName>
+          <forename>Massimo</forename>
+          <surname>Rubechi</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Cultura giuridica e diritto vivente</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2015</date>
+      <idno type="DOI">10.14276/2384-8901/448</idno>
+      <ptr target="http://ojs.uniurb.it/index.php/cgdv/article/view/448"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Massimo Rubechi. (2015). I nuovi spazi di integrazione politica nell’Europa post-Lisbona. Cultura giuridica e diritto vivente. DOI: 10.14276/2384-8901/448</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">I nuovi spazi di integrazione politica nell’Europa post-Lisbona</title>
+          <author>
+            <persName>
+              <forename>Massimo</forename>
+              <surname>Rubechi</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Cultura giuridica e diritto vivente</title>
+          <imprint>
+            <date when="2015">2015</date>
+            <publisher>Cultura giuridica e diritto vivente</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.14276/2384-8901/448</idno>
+        <ptr target="http://ojs.uniurb.it/index.php/cgdv/article/view/448"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:49:58.771774Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">fd543f4</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-17T17:49:58.771774Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-20T16:02:51.228Z" status="unfinished" who="#cboulanger">
+      <note type="label">v4 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-03-20T16:17:14.963Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-03-23T07:16:59.197Z" status="unfinished" who="#li">
+      <note type="label">v5 (li)</note>
+      <desc>2. pass started</desc>
+    </change>
+    <change when="2026-03-23T07:24:32.278Z" status="checked" who="#li">
+      <desc>2. pass finished</desc>
+    </change>
+    <change when="2026-04-06T10:08:01.122Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-06T10:23:29.396Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> Sul Trattato di Lisbona si vedano almeno in generale F. BASSANINI e G. TIBERI (a cura di), Le nuove<lb/> istituzioni europee. Commento al Trattato di Lisbona, Bologna, il Mulino, 2010 e </bibl>
+      <bibl>A. CANTARO (a cura di), Il<lb/> costituzionalismo asimmetrico dell'Unione. L'integrazione europea dopo il Trattato di Lisbona, Torino, Giappichelli,<lb/> 2010.<lb/> </bibl>
+      <bibl><label>2</label> C. CURTI GIALDINO, Elezioni europee del 2014 e scelta del candidato alla presidenza della Commissione europea. I<lb/> primi passi della procedura, in federalismi.it n. 11/2014 (28 maggio 2014), p. 2.<lb/> </bibl>
+      <bibl><label>3</label> Cfr. M. CARTABIA, Elezioni europee 2014: questa volta è diverso, in Quaderni costituzionali, n. 3/2014, pp. 715-<lb/>718, anche in Forum on line di Quaderni costituzionali (25 luglio 2014).<lb/> </bibl>
+      <bibl><label>4</label> Sulle modifiche al regolamento interno del Parlamento europeo a seguito delle innovazioni di Lisbona v.<lb/> C. FASONE e N. LUPO, Il Parlamento europeo alla luce delle novità introdotte dal Trattato di Lisbona e nel suo<lb/> regolamento interno, in Studi sull'integrazione europea, 7/2012, pp. 329-357 e </bibl>
+      <bibl>V. FIORILLO, Strasburgo si adegua: le<lb/> modifiche del regolamento parlamentare europeo in risposta al Trattato di Lisbona, in Forum on line di Quaderni<lb/> costituzionali, (15 dicembre 2009).<lb/> </bibl>
+      <bibl><label>5</label> Su cui v. S. CECCANTI , Le elezioni dei quattro vincitori e le possibili conseguenze nel futuro prossimo, in federalismi.it,<lb/> 8 maggio 2014 e </bibl>
+      <bibl>B. GUASTAFERRO, La prima volta del Presidente della Commissione "eletto" dal Parlamento<lb/> europeo. Riflessioni sui limiti del mimetismo istituzionale, in Forum di Quaderni costituzionali (10 ottobre 2014).<lb/> </bibl>
+      <bibl><label>6</label> V. almeno P. KIIVER, The Early Warning System for the Principle of Subsidiarity. Constitutional theory and<lb/> empirical reality, Routledge, London and New York, 2012;</bibl> 
+      <bibl>S. FABBRINI e K. GRANAT, 'Yellow Card, But no<lb/> Foul': The Role of the National Parliaments Under the Subsidiarity Protocol and the Commission Proposal for an EU<lb/> regulation on the right to strike', in Common Market Law Review, Vol. 50, 2013, pp. 115-144.<lb/></bibl> 
+      <bibl><label>7</label> In Italia v. N. LUPO, 'National and Regional Parliaments in the EU decision-making process, after the Treaty of<lb/> Lisbon and the Euro-crisis', in Perspective on Federalism, Vol. 5, No. 2/2013.<lb/> </bibl>
+      <bibl><label>8</label> Sul ruolo delle seconde camere v. M. ROMANIELLO, Beyond the Constitutional 'Bicameral Blueprint':<lb/> Europeanization and National Identities in Belgium, in M. CARTABIA, N. LUPO e A. SIMONCINI (a cura di),<lb/> Democracy and Subsdiarity in the EU. National Parliaments, Regions and Civil Society in the Decision-Making Process,<lb/> Series 'Percorsi-Nova Universitas', Il Mulino, Bologna, 2013, pp. 285-318.<lb/> </bibl>
+      <bibl><label>9</label> In generale si vedano sul tema: G. ALLEGRI, Il diritto di iniziativa dei cittadini europei (ECI) e la democrazia<lb/> partecipativa nell'Unione europea: prime riflessioni, in federalismi.it, n. 23/2010; </bibl>
+      <bibl>C. BOVA, Il diritto d'iniziativa dei<lb/> cittadini europei ed i confermati limiti dell'iniziativa legislativa popolare in Italia, in Forum on line di Quaderni<lb/> costituzionali, 2010, pp.1-13; </bibl>
+      <bibl>F. DAU, La democrazia partecipativa alla prova dell'ordinamento comunitario.<lb/> L'iniziativa legislativa dei cittadini europei, in Diritto pubblico comparato ed europeo online n. 2014-1, pp. 1-15;</bibl> <bibl>G. DE<lb/> TOGNI, L'iniziativa dei cittadini europei (Ice). Tra democrazia rappresentativa e prove di democrazia partecipativa, in<lb/> Osservatorio costituzionale AIC, settembre 2014.<lb/> </bibl>
+      <bibl><label>10</label> M. MEZZANOTTE, Il diritto di petizione nell'Unione europea: strumento davvero mineur?, in federalismi.it, n.<lb/> 21/2012.<lb/></bibl> 
+      <bibl><label>11</label> Si veda la Risoluzione Doc. XVIII n. 27 del 28 aprile 2010, adottata dalla I Commissione nella cd. fase<lb/> ascendente su preparazione di atti comunitari.<lb/></bibl> 
+      <bibl><label>12</label> Più precisamente il numero minimo di firmatari richiesti in ciascuno Stato membro dovrebbe essere<lb/> pari al numero di membri del Parlamento europeo eletti in ciascuno Stato membro moltiplicato per<lb/> settecentocinquanta (art. 7 par. 2 del Regolamento). È interessante notare come con quest'ultimo calcolo<lb/> numerico si sia creato un ulteriore collegamento , ancorché di carattere concettuale, tra un istituto di<lb/> democrazia partecipativa e il Parlamento, organo che incarna quella democrazia rappresentativa su cui<lb/> dichiaratamente l'Unione si fonda (art. 10 TUE).<lb/> </bibl>
+      <bibl><label>13</label> L'allegato 1 del Regolamento, recante la tabella con il numero minimo di firmatari per Stato membro è<lb/> stato infatti successivamente modificato con il Regolamento delegato (UE) n. 268/2012. L'ordinamento<lb/> italiano a sua volta ha individuato le modalità attuative del Regolamento n. 211/2011 con il D.P.R. 18<lb/> ottobre 2012 , n. 193, nel quale è stato stabilito che il Ministero dell'interno è autorità competente per la<lb/> verifica e la certificazione delle dichiarazioni di sostegno delle iniziative dei cittadini, mentre l'Agenzia per<lb/> l'Italia Digitale è competente per la certificazione dei sistemi di raccolta elettronica.<lb/> </bibl>
+      <bibl><label>14</label> Ad oggi sono state finora presentate 49 iniziative, a circa una ventina delle quali è stata negata la<lb/> registrazione per carenza dei requisiti regolamentari, mentre tra le rimanenti, solo 7 hanno finora<lb/> raggiunto il numero di firme necessarie e sono state presentate alla Commissione o sono in procinto di<lb/> esserlo Cfr. http://ec.europa.eu/citizens-initiative/public/welcome.<lb/> </bibl>
+      <bibl><label>15</label> In generale sul ruolo dei parlamenti nazionali nell'Unione europea si veda M. OLIVETTI, voce Parlamenti<lb/> nazionali nell'Unione europea, in Digesto delle discipline pubblicistiche. Aggiornamento, Torino, Utet, 2012, p. 565 ss.<lb/> </bibl>
+      <bibl type="footnote"><label>16</label> L'acronimo sta per Conferenza degli organi specializzati in affari comunitari, cui partecipano<lb/> rappresentanti delle Commissioni parlamentari competenti in materia di ogni Stato membro.</bibl>
+    
+    </listBibl>
+  </text>
+</TEI>

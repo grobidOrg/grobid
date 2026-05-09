@@ -1,14 +1,5 @@
 package org.grobid.trainer.sax;
 
-import org.junit.Before;
-import org.junit.Test;
-
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-import java.io.ByteArrayInputStream;
-import java.nio.charset.StandardCharsets;
-import java.util.List;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.everyItem;
@@ -17,6 +8,16 @@ import static org.hamcrest.Matchers.hasItems;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.startsWith;
+
+import java.io.ByteArrayInputStream;
+import java.nio.charset.StandardCharsets;
+import java.util.List;
+
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+
+import org.junit.Before;
+import org.junit.Test;
 
 public class TEIReferenceSegmenterSaxParserTest {
 
@@ -45,21 +46,22 @@ public class TEIReferenceSegmenterSaxParserTest {
     @Test
     public void newlineMarker_isPreservedAcrossPunctuationTokenizer() throws Exception {
         String tei = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-            + "<TEI xmlns=\"http://www.tei-c.org/ns/1.0\"><text><listBibl>"
-            + "<bibl><label>1</label><lb/> Final Report, Recommendations,<lb/>"
-            + " Independent Commission on Banking,<lb/> September 2011.<lb/> </bibl>"
-            + "</listBibl></text></TEI>";
+                + "<TEI xmlns=\"http://www.tei-c.org/ns/1.0\"><text><listBibl>"
+                + "<bibl><label>1</label><lb/> Final Report, Recommendations,<lb/>"
+                + " Independent Commission on Banking,<lb/> September 2011.<lb/> </bibl>"
+                + "</listBibl></text></TEI>";
 
         List<String> labeled = parse(tei);
 
         assertThat(labeled, hasItem(is("@newline")));
         assertThat(labeled, everyItem(not(startsWith("@ "))));
         assertThat(labeled, everyItem(not(startsWith("newline "))));
-        assertThat(labeled, hasItems(
-            is("1 I-<label>"),
-            is("Final I-<reference>"),
-            is("Report <reference>")
-        ));
+        assertThat(
+                labeled,
+                hasItems(
+                        is("1 I-<label>"),
+                        is("Final I-<reference>"),
+                        is("Report <reference>")));
         assertThat(target.getTotalReferences(), is(1));
     }
 
@@ -72,21 +74,22 @@ public class TEIReferenceSegmenterSaxParserTest {
     @Test
     public void biblWithoutLabel_tagsContentAsReference() throws Exception {
         String tei = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-            + "<TEI xmlns=\"http://www.tei-c.org/ns/1.0\"><text><listBibl>"
-            + "<bibl><label>3</label><lb/> First citation here.<lb/> </bibl>"
-            + "<bibl>Second citation, no label.<lb/> </bibl>"
-            + "</listBibl></text></TEI>";
+                + "<TEI xmlns=\"http://www.tei-c.org/ns/1.0\"><text><listBibl>"
+                + "<bibl><label>3</label><lb/> First citation here.<lb/> </bibl>"
+                + "<bibl>Second citation, no label.<lb/> </bibl>"
+                + "</listBibl></text></TEI>";
 
         List<String> labeled = parse(tei);
 
         assertThat(labeled, everyItem(not(startsWith("@ "))));
         assertThat(labeled, everyItem(not(startsWith("newline "))));
-        assertThat(labeled, hasItems(
-            is("3 I-<label>"),
-            is("First I-<reference>"),
-            is("Second I-<reference>"),
-            is("citation <reference>")
-        ));
+        assertThat(
+                labeled,
+                hasItems(
+                        is("3 I-<label>"),
+                        is("First I-<reference>"),
+                        is("Second I-<reference>"),
+                        is("citation <reference>")));
         assertThat(target.getTotalReferences(), is(2));
     }
 
@@ -100,21 +103,21 @@ public class TEIReferenceSegmenterSaxParserTest {
     @Test
     public void teiHeaderContent_isIgnored() throws Exception {
         String tei = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-            + "<TEI xmlns=\"http://www.tei-c.org/ns/1.0\">"
-            + "<teiHeader>"
-            + "  <fileDesc>"
-            + "    <titleStmt><title>HeaderTitleToken</title></titleStmt>"
-            + "    <sourceDesc>"
-            + "      <bibl>HeaderBiblToken in sourceDesc must not be counted.</bibl>"
-            + "    </sourceDesc>"
-            + "  </fileDesc>"
-            + "  <encodingDesc>"
-            + "    <appInfo><application><label>GROBID</label></application></appInfo>"
-            + "  </encodingDesc>"
-            + "</teiHeader>"
-            + "<text><listBibl>"
-            + "<bibl><label>1</label> RealRefToken here.<lb/> </bibl>"
-            + "</listBibl></text></TEI>";
+                + "<TEI xmlns=\"http://www.tei-c.org/ns/1.0\">"
+                + "<teiHeader>"
+                + "  <fileDesc>"
+                + "    <titleStmt><title>HeaderTitleToken</title></titleStmt>"
+                + "    <sourceDesc>"
+                + "      <bibl>HeaderBiblToken in sourceDesc must not be counted.</bibl>"
+                + "    </sourceDesc>"
+                + "  </fileDesc>"
+                + "  <encodingDesc>"
+                + "    <appInfo><application><label>GROBID</label></application></appInfo>"
+                + "  </encodingDesc>"
+                + "</teiHeader>"
+                + "<text><listBibl>"
+                + "<bibl><label>1</label> RealRefToken here.<lb/> </bibl>"
+                + "</listBibl></text></TEI>";
 
         List<String> labeled = parse(tei);
 
@@ -122,9 +125,10 @@ public class TEIReferenceSegmenterSaxParserTest {
         assertThat(labeled, everyItem(not(containsString("HeaderTitleToken"))));
         assertThat(labeled, everyItem(not(containsString("HeaderBiblToken"))));
         assertThat(labeled, everyItem(not(containsString("GROBID"))));
-        assertThat(labeled, hasItems(
-            is("1 I-<label>"),
-            is("RealRefToken I-<reference>")
-        ));
+        assertThat(
+                labeled,
+                hasItems(
+                        is("1 I-<label>"),
+                        is("RealRefToken I-<reference>")));
     }
 }

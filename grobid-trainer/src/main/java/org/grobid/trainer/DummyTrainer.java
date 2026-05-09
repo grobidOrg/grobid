@@ -75,14 +75,20 @@ public class DummyTrainer implements GenericTrainer {
     }
 
     @Override
-    public double getL1() { return 0; }
+    public double getL1() {
+        return 0;
+    }
 
     @Override
-    public void setL1(double l1) { }
+    public void setL1(double l1) {
+    }
 
     @Override
-    public double getL2() { return 0; }
+    public double getL2() {
+        return 0;
+    }
 
     @Override
-    public void setL2(double l2) { }
+    public void setL2(double l2) {
+    }
 }

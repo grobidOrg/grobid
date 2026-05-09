@@ -121,8 +121,7 @@ public class SegmentationTrainer extends AbstractTrainer {
             // we need first to generate the labeled files from the TEI annotated files
             File input = new File(sourceTEIPathLabel);
             // we process all tei files in the output directory
-            File[] refFiles = input.listFiles((dir, name) ->
-                    name.endsWith(".tei.xml") || name.endsWith(".tei"));
+            File[] refFiles = input.listFiles((dir, name) -> name.endsWith(".tei.xml") || name.endsWith(".tei"));
 
             if (refFiles == null) {
                 return 0;
@@ -171,9 +170,9 @@ public class SegmentationTrainer extends AbstractTrainer {
                 List<String> labeled = parser.getLabeledResult();
 
                 // For dh-law-footnotes flavor, remap low-support labels
-//                if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES) {
-//                    labeled = remapLowSupportLabels(labeled);
-//                }
+                //                if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES) {
+                //                    labeled = remapLowSupportLabels(labeled);
+                //                }
 
                 // we can now add the features
                 // we open the featured file
@@ -220,7 +219,11 @@ public class SegmentationTrainer extends AbstractTrainer {
                                 }
                                 if (pp - q > 5) {
                                     nbInvalid++;
-                                    LOGGER.debug("{} / TEI and raw file unsynchronized at raw line {}, token '{}' not found in TEI", name, lineNumber, token);
+                                    LOGGER.debug(
+                                            "{} / TEI and raw file unsynchronized at raw line {}, token '{}' not found in TEI",
+                                            name,
+                                            lineNumber,
+                                            token);
                                     // let's reuse the latest tag
                                     if (previousTag != null)
                                         segmentation.append(line).append(" ").append(previousTag);
@@ -248,7 +251,11 @@ public class SegmentationTrainer extends AbstractTrainer {
                         }
                         totalExamples++;
                         if (nbInvalid > 0) {
-                            LOGGER.warn(name + " / found "+nbInvalid+" synchronization mismatches, however the file is anyway accepted!");
+                            LOGGER.warn(
+                                    name
+                                            + " / found "
+                                            + nbInvalid
+                                            + " synchronization mismatches, however the file is anyway accepted!");
                         }
                     } else {
                         LOGGER.error(
@@ -278,7 +285,6 @@ public class SegmentationTrainer extends AbstractTrainer {
         }
         return totalExamples;
     }
-
 
     /**
      * Remap low-support segmentation labels to parent labels for the dh-law-footnotes flavor.

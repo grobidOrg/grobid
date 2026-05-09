@@ -1632,7 +1632,8 @@ public class Document implements Serializable {
         int fontSizeCount = 0;
         for (Block block : blocks) {
             List<LayoutToken> tokens = block.getTokens();
-            if (tokens == null) continue;
+            if (tokens == null)
+                continue;
             for (LayoutToken token : tokens) {
                 double fs = token.getFontSize();
                 if (fs > 0) {

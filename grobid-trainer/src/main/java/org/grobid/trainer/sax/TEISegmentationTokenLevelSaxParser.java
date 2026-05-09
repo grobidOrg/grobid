@@ -1,8 +1,6 @@
 package org.grobid.trainer.sax;
 
-import org.grobid.core.utilities.TextUtilities;
-import org.xml.sax.Attributes;
-import org.xml.sax.SAXException;
+import static org.grobid.core.engines.label.TaggingLabels.AVAILABILITY_LABEL;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,8 +9,10 @@ import java.util.StringTokenizer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
 
-import static org.grobid.core.engines.label.TaggingLabels.AVAILABILITY_LABEL;
+import org.grobid.core.utilities.TextUtilities;
 
 /**
  * Token-level SAX parser for segmentation training data. Unlike the base TEISegmentationSaxParser
@@ -55,9 +55,10 @@ public class TEISegmentationTokenLevelSaxParser extends TEISegmentationSaxParser
         return labeled;
     }
 
-    public void endElement(String uri,
-                           String localName,
-                           String qName) throws SAXException {
+    public void endElement(
+            String uri,
+            String localName,
+            String qName) throws SAXException {
         if (qName.equals("teiHeader")) {
             inTeiHeader = false;
             return;
@@ -71,27 +72,28 @@ public class TEISegmentationTokenLevelSaxParser extends TEISegmentationSaxParser
             writeData(qName, currentTag);
         }
         if (qName.equals("body") ||
-            qName.equals("cover") ||
-            qName.equals("front") ||
-            qName.equals("div") ||
-            qName.equals("toc") ||
-            qName.equals("other") ||
-            qName.equals("listBibl")) {
+                qName.equals("cover") ||
+                qName.equals("front") ||
+                qName.equals("div") ||
+                qName.equals("toc") ||
+                qName.equals("other") ||
+                qName.equals("listBibl")) {
             currentTag = null;
             upperTag = null;
         } else if (qName.equals("note") ||
-                   qName.equals("page") ||
-                   qName.equals("pages") ||
-                   qName.equals("titlePage")) {
+                qName.equals("page") ||
+                qName.equals("pages") ||
+                qName.equals("titlePage")) {
             currentTag = upperTag;
         }
     }
 
     // startElement is identical to base TEISegmentationSaxParser
-    public void startElement(String namespaceURI,
-                             String localName,
-                             String qName,
-                             Attributes atts)
+    public void startElement(
+            String namespaceURI,
+            String localName,
+            String qName,
+            Attributes atts)
             throws SAXException {
         if (inTeiHeader) {
             return;
@@ -165,12 +167,14 @@ public class TEISegmentationTokenLevelSaxParser extends TEISegmentationSaxParser
                                 currentTag = "<funding>";
                                 upperTag = currentTag;
                                 upperQname = "div";
-                            } else if (Arrays.asList("availability", "data_availability", "data-availability").contains(value)) {
+                            } else if (Arrays.asList("availability", "data_availability", "data-availability")
+                                    .contains(value)) {
                                 currentTag = AVAILABILITY_LABEL;
                                 upperTag = currentTag;
                                 upperQname = "div";
-                            } else if (value.equals("acknowledgement") || value.equals("acknowledgements") || value.equals("acknowledgment")
-                                || value.equals("acknowledgments")) {
+                            } else if (value.equals("acknowledgement") || value.equals("acknowledgements")
+                                    || value.equals("acknowledgment")
+                                    || value.equals("acknowledgments")) {
                                 currentTag = "<acknowledgement>";
                                 upperTag = currentTag;
                                 upperQname = "div";
@@ -221,8 +225,7 @@ public class TEISegmentationTokenLevelSaxParser extends TEISegmentationSaxParser
         if ((qName.equals("front")) || (qName.equals("titlePage")) || (qName.equals("note")) ||
                 (qName.equals("page")) || (qName.equals("pages")) || (qName.equals("body")) ||
                 (qName.equals("listBibl")) || (qName.equals("div")) ||
-                (qName.equals("other")) || (qName.equals("toc"))
-                ) {
+                (qName.equals("other")) || (qName.equals("toc"))) {
             String text = getText();
             text = text.replace("\n", " ");
             text = text.replace("\r", " ");
@@ -252,7 +255,7 @@ public class TEISegmentationTokenLevelSaxParser extends TEISegmentationSaxParser
                     if (tok.length() == 0)
                         continue;
                     if (tok.equals(" ") || tok.equals("\t") || tok.equals("\n") || tok.equals("\r") ||
-                        tok.equals("\u00A0") || tok.equals("\u200C"))
+                            tok.equals("\u00A0") || tok.equals("\u200C"))
                         continue;
 
                     if (surfaceTag == null) {
