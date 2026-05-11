@@ -144,9 +144,14 @@ public class TEIReferenceSegmenterSaxParser extends DefaultHandler {
     }
 
     private void writeField(String text) {
-        // Pre-split on the literal "@newline" sentinel: the tokenizer below uses
-        // TextUtilities.fullPunctuations (which contains '@') as delimiters and would
-        // otherwise shred the marker into "@" and "newline" — both then mislabeled.
+        // The accumulator contains "@newline" sentinels from <lb/>/<pb/> events.
+        // We strip them: the reference-segmenter trainer does not consume @newline
+        // rows (its matching loop only keys on real tokens), and each emitted
+        // @newline row would steal a slot from the trainer's tiny per-token
+        // matching window — silently dropping bibl-starting tokens that carry
+        // I-<reference> / I-<label>. Pre-split on the marker so the punctuation
+        // tokenizer (which has '@' as a delimiter via TextUtilities.fullPunctuations)
+        // never gets a chance to shred it into "@" and "newline".
         final String marker = "@newline";
         boolean begin = true;
         int start = 0;
@@ -162,9 +167,9 @@ public class TEIReferenceSegmenterSaxParser extends DefaultHandler {
                     continue;
                 }
                 if (tok.equals("+PAGE+")) {
-                    // page break - no influence here
-                    labeled.add("@newline");
-                } else if (begin) {
+                    continue;
+                }
+                if (begin) {
                     labeled.add(tok + " I-" + currentTag);
                     begin = false;
                 } else {
@@ -175,7 +180,6 @@ public class TEIReferenceSegmenterSaxParser extends DefaultHandler {
             if (idx < 0) {
                 break;
             }
-            labeled.add("@newline");
             start = idx + marker.length();
         }
     }
