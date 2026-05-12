@@ -62,6 +62,11 @@ public class TrainerRegistry {
         map.put(
                 "segmentation-dh-law-footnotes-token",
                 () -> new SegmentationTrainer(Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN));
+
+        map.put(
+                "reference-segmenter-dh-law-footnotes",
+                () -> new ReferenceSegmenterTrainer(Flavor.ARTICLE_DH_LAW_FOOTNOTES));
+
         REGISTRY = Collections.unmodifiableMap(map);
     }
 
