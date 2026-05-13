@@ -56,9 +56,9 @@ RUN rm -rf grobid-home/pdf2xml
 RUN rm -rf grobid-home/pdfalto/win-* grobid-home/pdfalto/mac-64 grobid-home/pdfalto/mac_arm-64 grobid-home/pdfalto/lin-32
 RUN rm -rf grobid-home/lib/win-* grobid-home/lib/mac-64 grobid-home/lib/mac_arm-64 grobid-home/lib/lin-32
 RUN if [ "$TARGETARCH" = "arm64" ]; then \
-      rm -rf grobid-home/pdfalto/lin-64 grobid-home/lib/lin-64; \
+    rm -rf grobid-home/pdfalto/lin-64 grobid-home/lib/lin-64; \
     else \
-      rm -rf grobid-home/pdfalto/lin_arm-64 grobid-home/lib/lin_arm-64; \
+    rm -rf grobid-home/pdfalto/lin_arm-64 grobid-home/lib/lin_arm-64; \
     fi
 
 # Setting DL-powered configuration
@@ -102,9 +102,9 @@ RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11
 # install TensorFlow: GPU-enabled on amd64 (with CUDA via pip), CPU-only on arm64
 ARG TARGETARCH
 RUN if [ "$TARGETARCH" = "amd64" ]; then \
-      pip3 install --no-cache-dir "tensorflow[and-cuda]==2.17.1"; \
+    pip3 install --no-cache-dir "tensorflow[and-cuda]==2.17.1"; \
     else \
-      pip3 install --no-cache-dir tensorflow==2.17.1; \
+    pip3 install --no-cache-dir tensorflow==2.17.1; \
     fi
 
 WORKDIR /opt/grobid
@@ -151,6 +151,9 @@ RUN python3 preload_embeddings.py --registry ./resources-registry.json &&  \
 
 RUN mkdir delft && \
     cp ./resources-registry.json delft/
+
+RUN chgrp -R 0 /opt/grobid /data /tmp && \
+    chmod -R g=u /opt/grobid /data /tmp
 
 CMD ["./grobid-service/bin/grobid-service"]
 
