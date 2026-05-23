@@ -21,6 +21,11 @@ public abstract class AbstractParser implements GenericTagger, Closeable {
     protected final GrobidModel model;
     protected GrobidAnalyzer analyzer = GrobidAnalyzer.getInstance();
 
+    // The flavor-aware model this parser was constructed with. Subclasses re-query the engine
+    // and DeLFT runtime params against this model (not against a hardcoded base constant), so
+    // that flavor overrides are honored.
+    protected final GrobidModel model;
+
     protected CntManager cntManager = CntManagerFactory.getNoOpCntManager();
 
     protected AbstractParser(GrobidModel model) {

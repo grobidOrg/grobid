@@ -138,14 +138,14 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
         // this does not apply to CRF which can process "infinite" input sequence
         // this is relevant to the reference segmenter RNN model, which is position-free in its
         // application, but could not be generalized to other RNN or transformer model long inputs
-        if (GrobidProperties.getGrobidEngine(GrobidModels.REFERENCE_SEGMENTER) == GrobidCRFEngine.DELFT) {
+        if (GrobidProperties.getGrobidEngine(this.model) == GrobidCRFEngine.DELFT) {
             String[] featureVectorLines = featureVector.split("\n");
 
             int originalMaxSequence = 2000;
             if (GrobidProperties.getInstance()
-                    .getDelftRuntimeMaxSequenceLength(GrobidModels.REFERENCE_SEGMENTER.getModelName()) != -1) {
+                    .getDelftRuntimeMaxSequenceLength(this.model.getModelName()) != -1) {
                 originalMaxSequence = GrobidProperties.getInstance()
-                        .getDelftRuntimeMaxSequenceLength(GrobidModels.REFERENCE_SEGMENTER.getModelName());
+                        .getDelftRuntimeMaxSequenceLength(this.model.getModelName());
             }
 
             if (featureVectorLines.length < originalMaxSequence || originalMaxSequence < 600) {
