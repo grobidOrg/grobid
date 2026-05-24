@@ -133,7 +133,7 @@ grobid:
           batch_size: 10
 
     - name: "segmentation-article-dh-law-footnotes"
-      engine: "wapiti"
+      # engine inherited from "segmentation"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.0000001
@@ -143,7 +143,7 @@ grobid:
         l2: 1e-3
 
     - name: "segmentation-article-dh-law-footnotes-token"
-      engine: "wapiti"
+      # engine inherited from "segmentation"
       wapiti:
         epsilon: 0.0000001
         window: 30
@@ -256,21 +256,10 @@ grobid:
           batch_size: 10
 
     - name: "reference-segmenter-article-dh-law-footnotes"
-      engine: "wapiti"
+      # engine inherited from "reference-segmenter"
       wapiti:
         epsilon: 0.00001
         window: 20
-      delft:
-        architecture: "BidLSTM_ChainCRF_FEATURES"
-        useELMo: false
-        runtime:
-          # parameters used at runtime/prediction (for this model, use same max_sequence_length as training)
-          max_sequence_length: 3000
-          batch_size: 2
-        training:
-          # parameters used for training
-          max_sequence_length: 3000
-          batch_size: 10
 
     - name: "name-header"
       engine: "wapiti"
