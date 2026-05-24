@@ -16,10 +16,14 @@
 package org.grobid.core.document;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.not;
+import static org.hamcrest.CoreMatchers.nullValue;
+import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertThat;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -29,9 +33,12 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import org.grobid.core.analyzers.GrobidAnalyzer;
+import org.grobid.core.data.BibDataSet;
+import org.grobid.core.data.BiblioItem;
 import org.grobid.core.data.Figure;
 import org.grobid.core.data.Note;
 import org.grobid.core.data.Table;
+import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LayoutTokensUtil;
@@ -80,6 +87,59 @@ public class TEIFormatterTest {
         assertThat(footnotes.get(3).getTokens(), hasSize(greaterThan(0)));
         assertThat(footnotes.get(4).getLabel(), is("202"));
         assertThat(footnotes.get(4).getTokens(), hasSize(greaterThan(0)));
+    }
+
+    @Test
+    public void testDeriveGroupLabel() {
+        assertThat(TEIFormatter.deriveGroupLabel("15"), is("15"));
+        // leading/trailing punctuation and whitespace are stripped
+        assertThat(TEIFormatter.deriveGroupLabel(" 15. "), is("15"));
+        assertThat(TEIFormatter.deriveGroupLabel("(15)"), is("15"));
+        // no usable label -> null so that @n is omitted
+        assertThat(TEIFormatter.deriveGroupLabel(null), is(nullValue()));
+        assertThat(TEIFormatter.deriveGroupLabel("  "), is(nullValue()));
+        assertThat(TEIFormatter.deriveGroupLabel("()"), is(nullValue()));
+    }
+
+    @Test
+    public void testToTEIReferences_footnoteLabelEmitsGroupingN() throws Exception {
+        List<BibDataSet> bds = Arrays.asList(
+                bibDataSet("15", "Smith, Contract Law (2010)"),
+                bibDataSet("15", "Jones, Tort Law (2011)"),
+                bibDataSet("16", "Doe, Property (2012)"));
+
+        StringBuilder tei = new TEIFormatter(null, null)
+                .toTEIReferences(new StringBuilder(), bds, GrobidAnalysisConfig.defaultInstance());
+        String xml = tei.toString();
+
+        // every labelled reference carries its footnote number as @n, with xml:ids left as b0/b1/b2;
+        // the two from footnote 15 thus share the same @n and can be grouped downstream
+        assertThat(xml, containsString("xml:id=\"b0\" n=\"15\""));
+        assertThat(xml, containsString("xml:id=\"b1\" n=\"15\""));
+        assertThat(xml, containsString("xml:id=\"b2\" n=\"16\""));
+    }
+
+    @Test
+    public void testToTEIReferences_noLabelOmitsN() throws Exception {
+        List<BibDataSet> bds = Arrays.asList(bibDataSet(null, "Doe, Property (2012)"));
+
+        StringBuilder tei = new TEIFormatter(null, null)
+                .toTEIReferences(new StringBuilder(), bds, GrobidAnalysisConfig.defaultInstance());
+        String xml = tei.toString();
+
+        // no usable label -> @n is omitted
+        assertThat(xml, containsString("xml:id=\"b0\">"));
+        assertThat(xml, not(containsString(" n=\"")));
+    }
+
+    private static BibDataSet bibDataSet(String refSymbol, String rawBib) {
+        BiblioItem bib = new BiblioItem();
+        bib.setTitle(rawBib);
+        BibDataSet bds = new BibDataSet();
+        bds.setResBib(bib);
+        bds.setRefSymbol(refSymbol);
+        bds.setRawBib(rawBib);
+        return bds;
     }
 
     @Test
