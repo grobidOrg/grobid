@@ -929,7 +929,7 @@ curl --location 'http://localhost:8070/api/createTraining' \
 --output output_name.zip
 ```
 
-The zip file will contain the training data as described in the [general principles](General-principles.md) of GROBID training data.
+The zip file will contain the training data as described in the [general principles](training/General-principles.md) of GROBID training data.
 
 ## Parallel mode
 

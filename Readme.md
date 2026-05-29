@@ -36,7 +36,7 @@ The following functionalities are available:
 
 In a complete PDF processing, GROBID manages 68 final labels used to build relatively fine-grained structures, from traditional publication metadata (title, author first/last/middle names, affiliation types, detailed address, journal, volume, issue, pages, DOI, PMID, etc.) to full text structures (section title, paragraph, reference markers, head/foot notes, figure captions, etc.).
 
-GROBID includes a comprehensive [web service API](https://grobid.readthedocs.io/en/latest/Grobid-service/), [Docker images](https://grobid.readthedocs.io/en/latest/Grobid-docker/), [batch processing](https://grobid.readthedocs.io/en/latest/Grobid-batch/), a JAVA API, a generic [training and evaluation framework](https://grobid.readthedocs.io/en/latest/Training-the-models-of-Grobid/) (precision, recall, etc., n-fold cross-evaluation), systematic [end-to-end benchmarking](https://grobid.readthedocs.io/en/latest/Benchmarking/) on thousand documents and the semi-automatic generation of training data.
+GROBID includes a comprehensive [web service API](https://grobid.readthedocs.io/en/latest/Grobid-service/), [Docker images](https://grobid.readthedocs.io/en/latest/Grobid-docker/), [batch processing](https://grobid.readthedocs.io/en/latest/Grobid-batch/), a JAVA API, a generic [training and evaluation framework](https://grobid.readthedocs.io/en/latest/Training-the-models-of-Grobid/) (precision, recall, etc., n-fold cross-evaluation), systematic [end-to-end benchmarking](https://grobid.readthedocs.io/en/latest/benchmarks/Benchmarking/) on thousand documents and the semi-automatic generation of training data.
 
 GROBID can be considered as production ready. Deployments in production includes ResearchGate, Semantic Scholar, HAL Research Archive, scite.ai, Academia.edu, Internet Archive Scholar, INIST-CNRS, CERN (Invenio), and many more. The tool is designed for speed and high scalability in order to address the full scientific literature corpus.
 
@@ -112,7 +112,7 @@ Visit the [documentation page describing the system](https://grobid.readthedocs.
 
 - Technical choices and [default settings](https://grobid.readthedocs.io/en/latest/Principles/#balancing-accuracy-and-scalability) are driven by the ability to process PDF quickly, with commodity hardware and with good parallelization and scalability capacities.
 
-Detailed end-to-end [benchmarking](https://grobid.readthedocs.io/en/latest/Benchmarking/) are available [GROBID documentation](https://grobid.readthedocs.org) and continuously updated.
+Detailed end-to-end [benchmarking](https://grobid.readthedocs.io/en/latest/benchmarks/Benchmarking/) are available [GROBID documentation](https://grobid.readthedocs.org) and continuously updated.
 
 ## GROBID Modules
 

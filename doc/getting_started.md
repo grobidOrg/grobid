@@ -9,7 +9,7 @@
 - **Clients**: Grobid is written in Java, but, fear not, various clients in Python and other languages are available. See [here](Grobid-service.md#clients-for-grobid-web-services) for more information.
 - **Consolidation:** Grobid can merge and reconcile extracted bibliographic data and citations using Crossref. With great power comes great responsibility, read [here](Consolidation.md) before using consolidation. **Consolidation has impact on performances**.
 - **Deep Learning & GPU:** Grobid’s best accuracy relies on deep learning models, which benefit from GPU acceleration. For fulltext-only extraction, use the CPU-only lightweight image. 
-- **Production configuration**: See [here](Frequently-asked-questions.md#could-we-have-some-guidance-for-server-configuration-in-production) for tuning Grobid for production use.
+- **Production configuration**: See [here](Frequently-asked-questions.md#guidance-for-server-configuration-in-production) for tuning Grobid for production use.
 
 !!! tip
     Keep reading until the end of the page.
