@@ -1,0 +1,107 @@
+name: Check documentation links
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  check-doc-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate internal documentation cross-links
+        shell: python
+        run: |
+          # Validate internal cross-links in the MkDocs documentation:
+          #  - relative .md targets exist (resolved against the source file)
+          #  - #anchor fragments (same-page and cross-file) match a heading
+          #  - https://grobid.readthedocs.io/en/latest/<Page>/#<anchor> self-links resolve
+          # Heading slugs mimic markdown.extensions.toc, so a renamed heading that
+          # leaves a stale #anchor is caught even though the page still builds.
+          import os, re, sys, glob
+
+          DOC_DIR = "doc"
+          LINK_RE = re.compile(r'\]\(\s*<?([^)\s>]+)>?\s*(?:"[^"]*")?\)')
+          ATX_RE = re.compile(r'#{1,6}\s+(.*)')
+          HTML_RE = re.compile(r'<h[1-6][^>]*>(.*?)</h[1-6]>', re.IGNORECASE)
+          RTD_RE = re.compile(r'https://grobid\.readthedocs\.io/en/latest/(.*?)/?(#[\w-]+)?$')
+
+          def slugify(text):
+              text = text.strip().lower()
+              text = re.sub(r'<[^>]+>', '', text)
+              text = re.sub(r'[`*_]', '', text)
+              text = re.sub(r'[^\w\s-]', '', text, flags=re.UNICODE)
+              return re.sub(r'\s+', '-', text)
+
+          def heading_slugs(path):
+              slugs, in_code = set(), False
+              with open(path, encoding='utf-8') as handle:
+                  for line in handle:
+                      if line.strip().startswith('```'):
+                          in_code = not in_code
+                          continue
+                      if in_code:
+                          continue
+                      atx = ATX_RE.match(line)
+                      if atx:
+                          slugs.add(slugify(atx.group(1)))
+                      for html in HTML_RE.finditer(line):
+                          slugs.add(slugify(html.group(1)))
+              return slugs
+
+          md_files = sorted(glob.glob(os.path.join(DOC_DIR, '**', '*.md'), recursive=True))
+          by_path = {p: heading_slugs(p) for p in md_files}
+          # readthedocs URL path mirrors the file's location under doc/ minus the .md
+          # extension, e.g. doc/benchmarks/Benchmarking.md -> benchmarks/Benchmarking
+          by_page = {
+              os.path.splitext(os.path.relpath(p, DOC_DIR))[0].replace(os.sep, '/'): s
+              for p, s in by_path.items()
+          }
+
+          problems = []
+          for path in md_files:
+              base = os.path.dirname(path)
+              with open(path, encoding='utf-8') as handle:
+                  for lineno, line in enumerate(handle, 1):
+                      for match in LINK_RE.finditer(line):
+                          target = match.group(1)
+                          if target.startswith('mailto:'):
+                              continue
+                          if target.startswith(('http://', 'https://')):
+                              rtd = RTD_RE.match(target)
+                              if not rtd:
+                                  continue
+                              page, anchor = rtd.group(1), (rtd.group(2) or '')[1:]
+                              if page not in by_page:
+                                  problems.append((path, lineno, target, 'readthedocs page not found'))
+                              elif anchor and anchor not in by_page[page]:
+                                  problems.append((path, lineno, target, 'readthedocs anchor not found'))
+                              continue
+                          if target.startswith('#'):
+                              anchor = target[1:]
+                              if anchor and anchor not in by_path[path]:
+                                  problems.append((path, lineno, target, 'same-page anchor not found'))
+                              continue
+                          filepart, _, anchor = target.partition('#')
+                          if not filepart:
+                              continue
+                          tgt = os.path.normpath(os.path.join(base, filepart))
+                          if not os.path.exists(tgt):
+                              problems.append((path, lineno, target, 'file not found'))
+                          elif anchor and tgt.endswith('.md') and anchor not in by_path.get(tgt, set()):
+                              problems.append((path, lineno, target, 'anchor not found in target'))
+
+          if problems:
+              print(f"Found {len(problems)} broken internal link(s):\n")
+              for path, lineno, target, reason in problems:
+                  print(f"  {path}:{lineno}  {target}  [{reason}]")
+              sys.exit(1)
+          print(f"All internal links resolve across {len(md_files)} documentation files.")
