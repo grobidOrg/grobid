@@ -55,6 +55,7 @@ nav:
     - 'Benchmarks': 'benchmarks/Benchmarking.md'
     - 'References': 'References.md'
     - 'Licence': 'License.md'
+    - 'Community': 'Community.md'
   - Developer Guide:
     - 'Build from source': 'Install-Grobid.md'
     - 'Training and evaluating models': 'Training-the-models-of-Grobid.md'

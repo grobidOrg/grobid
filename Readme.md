@@ -128,6 +128,10 @@ A series of additional modules have been developed for performing __structure aw
 - [grobid-bio](https://github.com/kermitt2/grobid-bio): a toy bio-entity tagger using BioNLP/NLPBA 2004 dataset
 - [grobid-dictionaries](https://github.com/MedKhem/grobid-dictionaries): structuring dictionaries in raw PDF format
 
+## Community
+
+Join the GROBID community to ask questions, get help, and stay up to date — mailing list, Discord, and more on the [Community page](https://grobid.readthedocs.io/en/latest/Community/).
+
 ## Release and changes
 
 See the [Changelog](CHANGELOG.md).

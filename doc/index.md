@@ -43,6 +43,8 @@ Everything you need to use GROBID once it's running.
 
 * [License](License.md)
 
+* [Community](Community.md) — mailing list, Discord, and how to get involved
+
 ## Developer Guide
 
 Building, training, and extending GROBID.
