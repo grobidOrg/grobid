@@ -18,3 +18,6 @@ check-hidden = true
 #   currentx - typo form of coordinate variable "currentX"
 #   bloc - geopolitical term (e.g., NATO bloc, Eastern bloc), not "block"
 ignore-words-list = serie,blockin,punctuations,ther,ist,usre,theses,ue,consol,countr,inpu,currenty,currentx,bloc
+# Ignore words only when they appear inside URIs (kept spell-checked in prose):
+#   groupes - French for "groups" in the RENATER mailing-list URL (groupes.renater.fr)
+uri-ignore-words-list = groupes
