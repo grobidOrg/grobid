@@ -34,7 +34,48 @@ The editor fits into the standard GROBID training-data preparation loop describe
 
 ## Getting started
 
-The fastest way to try it is the Docker-based deployment. From the project's documentation:
+### Connecting to a GROBID server
+
+The editor does **not** bundle GROBID — it talks to a running GROBID server over its REST API to pre-annotate documents. You tell the editor which server to use with the `GROBID_SERVER_URL` environment variable.
+
+For producing training data, **run your own full GROBID instance**. The pre-annotation quality directly determines how much manual correction you have to do, so it is worth using the *full* image (`grobid/grobid:{version}-full`, or the mirror `lfoppiano/grobid:{version}-full`), which includes the Deep Learning models and gives noticeably better reference and citation extraction than the CRF-only or public light instances. See [Run with Docker](Grobid-docker.md) for the full instructions; GROBID's REST API listens on port `8070`, so the URL is typically `http://localhost:8070`:
+
+```bash
+docker run --rm --gpus all --init --ulimit core=0 -p 8070:8070 grobid/grobid:0.9.0-full
+```
+
+The public *light* instances hosted on Hugging Face (`https://grobidOrg-grobid.hf.space`, mirror `https://grobidOrg-grobid2.hf.space`, see the [Quick start](getting_started.md) page) require no installation and are convenient for a first try, but they run CRF-only models and are not recommended for building a gold-standard corpus.
+
+### Running the editor (Docker)
+
+The fastest way to run the editor itself is its Docker image, passing the GROBID endpoint via `GROBID_SERVER_URL`:
+
+```bash
+docker run -p 8000:8000 \
+  -e APP_ADMIN_PASSWORD=secure_password \
+  -e GROBID_SERVER_URL=http://host.docker.internal:8070 \
+  cboulanger/pdf-tei-editor:latest
+```
+
+The application is then available at `http://localhost:8000` (user `admin`, with the password set above). The equivalent `docker-compose.yml`:
+
+```yaml
+services:
+  pdf-tei-editor:
+    image: cboulanger/pdf-tei-editor:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ADMIN_PASSWORD=secure_password
+      - GROBID_SERVER_URL=http://host.docker.internal:8070
+```
+
+!!! note
+    `GROBID_SERVER_URL` must be reachable **from inside the editor's container**. When GROBID runs on the same host, use `http://host.docker.internal:8070` (Docker Desktop) or put both containers on the same Docker network and use the GROBID container name. A bare `http://localhost:8070` refers to the editor container itself and will not reach GROBID.
+
+### Trying the bundled demo
+
+The repository also ships a one-command demo deployment:
 
 ```bash
 git clone https://github.com/mpilhlt/pdf-tei-editor.git
@@ -42,24 +83,6 @@ cd pdf-tei-editor
 npm run deploy .env.deploy.demo.localhost
 ```
 
-The application is then available at `http://localhost:8080` (default demo credentials `admin/admin` or `demo/demo` — change these for any non-local use).
-
-A development setup is also available:
-
-```bash
-git clone https://github.com/mpilhlt/pdf-tei-editor.git
-cd pdf-tei-editor
-cp .env.development .env
-npm install
-npm run start:dev
-```
+It becomes available at `http://localhost:8080` with demo credentials `admin/admin` or `demo/demo` — change these for any non-local use.
 
 For the authoritative and most current installation, configuration, and usage instructions, see the [pdf-tei-editor repository](https://github.com/mpilhlt/pdf-tei-editor/) and its documentation.
-
-## Technical notes
-
-- **Backend:** FastAPI (Python 3.13+), SQLite, lxml
-- **Frontend:** ES6 modules, CodeMirror 6, PDF.js, Shoelace
-- **Synchronization:** WebDAV support for connecting to external systems
-
-These details may change over time; consult the upstream repository for the current stack and requirements.
