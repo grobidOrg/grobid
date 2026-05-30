@@ -59,6 +59,7 @@ nav:
   - Developer Guide:
     - 'Build from source': 'Install-Grobid.md'
     - 'Training and evaluating models': 'Training-the-models-of-Grobid.md'
+    - 'Annotating with the PDF-TEI Editor': 'PDF-TEI-Editor.md'
     - 'End-to-end evaluation': 'End-to-end-evaluation.md'
     - 'Deep Learning models': 'Deep-Learning-models.md'
     - 'Developer notes': 'Notes-grobid-developers.md'

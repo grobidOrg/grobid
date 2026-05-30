@@ -39,6 +39,8 @@ These files must be reviewed and corrected manually before being added to the tr
 
 ## Correcting pre-annotated files
 
+These corrections can be made in any text or XML editor. For a more convenient, visual workflow, the web-based [PDF-TEI Editor](../PDF-TEI-Editor.md) lets you edit the pre-annotated TEI side-by-side with the source PDF, with schema validation and version control — see its [dedicated page](../PDF-TEI-Editor.md).
+
 The most important principle when correcting the pre-annotated training data is to __keep the stream of text untouched__. Only the tags can be moved, the text itself shall not be modified or corrected. The stream of text present in the training file after extraction of the content of the PDF, is similar to the stream of text Grobid will have to process once the models are (re)created. It is thus important to have Grobid trained on this real-world input, even if they contain OCR errors, noise, unknown unicode characters, etc.   
 
 There are two exceptions to this main rule :

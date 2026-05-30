@@ -159,6 +159,8 @@ When a model uses PDF layout features, an additional feature file (for example `
 
 If you wish to maintain the training corpus as gold standard, these automatically generated data have to be checked and corrected manually before being moved to the training/evaluation folder of the corresponding model. For correcting/checking these data, the guidelines presented in the next section must be followed to ensure the consistency of the whole training sets. 
 
+The correction can be done in any text/XML editor, or with a dedicated graphical tool: the web-based [PDF-TEI Editor](PDF-TEI-Editor.md) lets you edit the pre-annotated TEI side-by-side with the source PDF, with schema validation and version control. See the [dedicated page](PDF-TEI-Editor.md) for details.
+
 
 ## Training guidelines
 
@@ -171,7 +173,7 @@ Annotation guidelines for creating the training data corresponding to the differ
 
 ([#139](https://github.com/kermitt2/grobid/issues/139), [#610](https://github.com/kermitt2/grobid/issues/610))
 
-Yes. [pdf-tei-editor](https://github.com/mpilhlt/pdf-tei-editor/) is a web-based tool for editing GROBID TEI training data alongside the PDF. The typical workflow is: use `createTraining` to pre-annotate, then open the generated TEI XML files in pdf-tei-editor for visual correction.
+Yes. The web-based [PDF-TEI Editor](PDF-TEI-Editor.md) lets you edit GROBID TEI training data alongside the PDF. The typical workflow is: use `createTraining` to pre-annotate, then open the generated TEI XML files in the editor for visual correction. See the [dedicated page](PDF-TEI-Editor.md) for details.
 
 ### Can I generate training data automatically (e.g., from BibTeX)?
 
