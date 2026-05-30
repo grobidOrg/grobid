@@ -346,11 +346,11 @@ Each section in the dump corresponds to one model invocation:
 === model: header ===
 …
 
-=== model: citation (occurrence 1 of 12) ===
+=== model: name-citation (occurrence 1 of 12) ===
 …
 ```
 
-Each line is one token followed by tab-separated features and ending with the predicted CRF label. Sections that fire multiple times in a single request (e.g. the `citation` model, run once per parsed reference) are emitted in invocation order, each with a `(occurrence i of n)` suffix. The response is `text/plain; charset=UTF-8` regardless of the endpoint's normal media type, and overrides the TEI / BibTeX / ZIP body completely.
+Each line is one token followed by tab-separated features and ending with the predicted CRF label. Sections for models that are invoked multiple times in a single request (e.g. `name-citation` and `date`, run once per citation name string and per parsed date respectively) are emitted in invocation order, each with a `(occurrence i of n)` suffix. Note that the `citation` model is *not* one of these: all citation strings of a request are labelled together in a single batched sequence, so `citation` appears as a single section rather than once per reference. The response is `text/plain; charset=UTF-8` regardless of the endpoint's normal media type, and overrides the TEI / BibTeX / ZIP body completely.
 
 The models captured are:
 
