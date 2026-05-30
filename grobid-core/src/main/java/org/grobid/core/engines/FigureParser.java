@@ -32,6 +32,7 @@ class FigureParser extends AbstractParser {
      * the resulting Figure object.
      */
     public Figure processing(List<LayoutToken> tokenizationFigure, String featureVector) {
+        warnIfDebugUncaptured("FigureParser.processing(List, String)");
         return processing(tokenizationFigure, featureVector, null);
     }
 

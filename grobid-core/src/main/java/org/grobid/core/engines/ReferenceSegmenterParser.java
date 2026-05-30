@@ -65,6 +65,7 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
      *              example: <"[1]", "Hu W., Barkana, R., &amp; Gruzinov A. Phys. Rev. Lett. 85, 1158">
      */
     public List<LabeledReferenceResult> extract(Document doc) {
+        warnIfDebugUncaptured("ReferenceSegmenterParser.extract(Document)");
         return extract(doc, false, null);
     }
 
@@ -73,6 +74,7 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
     }
 
     public List<LabeledReferenceResult> extract(Document doc, boolean training) {
+        warnIfDebugUncaptured("ReferenceSegmenterParser.extract(Document, boolean)");
         return extract(doc, training, null);
     }
 
@@ -85,6 +87,7 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
             Document doc,
             SortedSet<DocumentPiece> referencesParts,
             boolean training) {
+        warnIfDebugUncaptured("ReferenceSegmenterParser.extract(Document, SortedSet, boolean)");
         return extract(doc, referencesParts, training, null);
     }
 

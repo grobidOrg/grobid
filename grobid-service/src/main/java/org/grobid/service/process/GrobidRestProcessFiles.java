@@ -30,6 +30,7 @@ import org.grobid.core.data.PatentItem;
 import org.grobid.core.document.Document;
 import org.grobid.core.document.DocumentSource;
 import org.grobid.core.engines.Engine;
+import org.grobid.core.engines.config.DebugCaptureContext;
 import org.grobid.core.engines.config.DebugLabelingCollector;
 import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.factory.GrobidPoolingFactory;
@@ -198,7 +199,16 @@ public class GrobidRestProcessFiles {
                     .build();
 
             // starts conversion process
-            retVal = engine.processHeader(originFile.getAbsolutePath(), md5Str, config, result);
+            if (debugMode) {
+                DebugCaptureContext.activate();
+            }
+            try {
+                retVal = engine.processHeader(originFile.getAbsolutePath(), md5Str, config, result);
+            } finally {
+                if (debugMode) {
+                    DebugCaptureContext.clear();
+                }
+            }
 
             if (debugMode) {
                 response = buildDebugResponse(debugCollector, modelsFilter);
@@ -435,7 +445,16 @@ public class GrobidRestProcessFiles {
                     .debugLabelingCollector(debugCollector)
                     .build();
 
-            retVal = engine.fullTextToTEI(originFile, flavor, md5Str, config);
+            if (debugMode) {
+                DebugCaptureContext.activate();
+            }
+            try {
+                retVal = engine.fullTextToTEI(originFile, flavor, md5Str, config);
+            } finally {
+                if (debugMode) {
+                    DebugCaptureContext.clear();
+                }
+            }
 
             if (debugMode) {
                 response = buildDebugResponse(debugCollector, modelsFilter);
@@ -658,7 +677,16 @@ public class GrobidRestProcessFiles {
                     .debugLabelingCollector(debugCollector)
                     .build();
 
-            retVal = engine.fullTextToTEI(originFile, flavor, md5Str, config);
+            if (debugMode) {
+                DebugCaptureContext.activate();
+            }
+            try {
+                retVal = engine.fullTextToTEI(originFile, flavor, md5Str, config);
+            } finally {
+                if (debugMode) {
+                    DebugCaptureContext.clear();
+                }
+            }
 
             if (debugMode) {
                 response = buildDebugResponse(debugCollector, modelsFilter);
@@ -931,7 +959,17 @@ public class GrobidRestProcessFiles {
             GrobidAnalysisConfig debugConfig = debugMode
                     ? GrobidAnalysisConfig.builder().debugLabelingCollector(debugCollector).build()
                     : null;
-            List<BibDataSet> bibDataSetList = engine.processReferences(originFile, md5Str, consolidate, debugConfig);
+            List<BibDataSet> bibDataSetList;
+            if (debugMode) {
+                DebugCaptureContext.activate();
+            }
+            try {
+                bibDataSetList = engine.processReferences(originFile, md5Str, consolidate, debugConfig);
+            } finally {
+                if (debugMode) {
+                    DebugCaptureContext.clear();
+                }
+            }
 
             if (debugMode) {
                 response = buildDebugResponse(debugCollector, modelsFilter);

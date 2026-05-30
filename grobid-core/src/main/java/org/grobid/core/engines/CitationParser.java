@@ -126,6 +126,7 @@ public class CitationParser extends AbstractParser {
      * of batch processing when a DeLFT deep learning model is used
      */
     public List<BiblioItem> processingLayoutTokenMultiple(List<List<LayoutToken>> tokenList, int consolidate) {
+        warnIfDebugUncaptured("CitationParser.processingLayoutTokenMultiple(List, int)");
         return processingLayoutTokenMultiple(tokenList, consolidate, null);
     }
 

@@ -131,6 +131,7 @@ public class Segmentation extends AbstractParser {
     }
 
     public Document prepareDocument(Document doc) {
+        warnIfDebugUncaptured("Segmentation.prepareDocument(Document)");
         return prepareDocument(doc, null);
     }
 

@@ -16,6 +16,7 @@ import org.grobid.core.engines.citations.CalloutAnalyzer;
 import org.grobid.core.engines.citations.CalloutAnalyzer.MarkerType;
 import org.grobid.core.engines.citations.LabeledReferenceResult;
 import org.grobid.core.engines.citations.ReferenceSegmenter;
+import org.grobid.core.engines.config.DebugCaptureContext;
 import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.engines.counters.CitationParserCounters;
 import org.grobid.core.engines.label.SegmentationLabels;
@@ -2335,10 +2336,12 @@ public class FullTextParser extends AbstractParser {
      * Process figures identified by the full text model
      */
     protected List<Figure> processFigures(String rese, List<LayoutToken> layoutTokens) {
+        DebugCaptureContext.warnIfActive(GrobidModels.FIGURE, "FullTextParser.processFigures(String, List)");
         return processFigures(rese, layoutTokens, 0, null);
     }
 
     protected List<Figure> processFigures(String rese, List<LayoutToken> layoutTokens, int startFigureID) {
+        DebugCaptureContext.warnIfActive(GrobidModels.FIGURE, "FullTextParser.processFigures(String, List, int)");
         return processFigures(rese, layoutTokens, startFigureID, null);
     }
 
@@ -2525,6 +2528,7 @@ public class FullTextParser extends AbstractParser {
         String rese,
         List<LayoutToken> tokenizations,
         Document doc) {
+        DebugCaptureContext.warnIfActive(GrobidModels.TABLE, "FullTextParser.processTables(String, List, Document)");
         return processTables(rese, tokenizations, doc, 0, null);
     }
 
@@ -2532,6 +2536,7 @@ public class FullTextParser extends AbstractParser {
                                         List<LayoutToken> tokenizations,
                                         Document doc,
                                         int startTableID) {
+        DebugCaptureContext.warnIfActive(GrobidModels.TABLE, "FullTextParser.processTables(String, List, Document, int)");
         return processTables(rese, tokenizations, doc, startTableID, null);
     }
 

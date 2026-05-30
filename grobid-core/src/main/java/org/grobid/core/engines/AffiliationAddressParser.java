@@ -36,6 +36,7 @@ public class AffiliationAddressParser extends AbstractParser {
     }
 
     public List<Affiliation> processing(String input) {
+        warnIfDebugUncaptured("AffiliationAddressParser.processing(String)");
         return processing(input, null);
     }
 
@@ -123,6 +124,7 @@ public class AffiliationAddressParser extends AbstractParser {
     }
 
     public List<Affiliation> processingLayoutTokens(List<List<LayoutToken>> tokenizations) {
+        warnIfDebugUncaptured("AffiliationAddressParser.processingLayoutTokens(List)");
         return processingLayoutTokens(tokenizations, null);
     }
 

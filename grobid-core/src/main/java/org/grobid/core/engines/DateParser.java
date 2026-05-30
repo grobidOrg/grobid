@@ -49,6 +49,7 @@ public class DateParser extends AbstractParser {
     }
 
     public List<Date> process(String input) {
+        warnIfDebugUncaptured("DateParser.process(String)");
         return process(input, null);
     }
 
@@ -72,6 +73,7 @@ public class DateParser extends AbstractParser {
     }
 
     public List<Date> process(List<LayoutToken> input) {
+        warnIfDebugUncaptured("DateParser.process(List<LayoutToken>)");
         return process(input, null);
     }
 

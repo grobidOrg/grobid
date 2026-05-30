@@ -24,6 +24,7 @@ import org.grobid.core.data.Date;
 import org.grobid.core.data.Keyword;
 import org.grobid.core.data.Person;
 import org.grobid.core.document.*;
+import org.grobid.core.engines.config.DebugCaptureContext;
 import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.engines.label.SegmentationLabels;
 import org.grobid.core.engines.label.TaggingLabel;
@@ -385,6 +386,7 @@ public class HeaderParser extends AbstractParser {
      * Return the date, normalised using the DateParser
      */
     private Optional<Date> getNormalizedDate(String rawDate) {
+        DebugCaptureContext.warnIfActive(GrobidModels.DATE, "HeaderParser.getNormalizedDate(String)");
         return getNormalizedDate(rawDate, null);
     }
 

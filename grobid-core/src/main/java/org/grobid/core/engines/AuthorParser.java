@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Person;
+import org.grobid.core.engines.config.DebugCaptureContext;
 import org.grobid.core.engines.config.DebugLabelingCollector;
 import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.engines.label.TaggingLabel;
@@ -50,6 +51,7 @@ public class AuthorParser {
      * Processing of authors in citations
      */
     public List<Person> processingCitation(String input) throws Exception {
+        DebugCaptureContext.warnIfActive(GrobidModels.NAMES_CITATION, "AuthorParser.processingCitation(String)");
         return processingCitation(input, null);
     }
 
@@ -70,6 +72,9 @@ public class AuthorParser {
     }
 
     public List<Person> processingCitationLayoutTokens(List<LayoutToken> tokens) throws Exception {
+        DebugCaptureContext.warnIfActive(
+                GrobidModels.NAMES_CITATION,
+                "AuthorParser.processingCitationLayoutTokens(List<LayoutToken>)");
         return processingCitationLayoutTokens(tokens, null);
     }
 
@@ -86,6 +91,7 @@ public class AuthorParser {
      * Processing of authors in authors
      */
     public List<Person> processingHeader(String input) throws Exception {
+        DebugCaptureContext.warnIfActive(GrobidModels.NAMES_HEADER, "AuthorParser.processingHeader(String)");
         return processingHeader(input, null);
     }
 
@@ -106,6 +112,9 @@ public class AuthorParser {
     }
 
     public List<Person> processingHeaderWithLayoutTokens(List<LayoutToken> inputs, List<PDFAnnotation> pdfAnnotations) {
+        DebugCaptureContext.warnIfActive(
+                GrobidModels.NAMES_HEADER,
+                "AuthorParser.processingHeaderWithLayoutTokens(List, List)");
         return processing(inputs, pdfAnnotations, true, null);
     }
 
@@ -124,6 +133,9 @@ public class AuthorParser {
      * @return List of identified Person entities as POJO.
      */
     public List<Person> processing(List<LayoutToken> tokens, List<PDFAnnotation> pdfAnnotations, boolean head) {
+        DebugCaptureContext.warnIfActive(
+                head ? GrobidModels.NAMES_HEADER : GrobidModels.NAMES_CITATION,
+                "AuthorParser.processing(List, List, boolean)");
         return processing(tokens, pdfAnnotations, head, null);
     }
 

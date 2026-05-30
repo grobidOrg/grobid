@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import org.grobid.core.GrobidModel;
 import org.grobid.core.analyzers.GrobidAnalyzer;
+import org.grobid.core.engines.config.DebugCaptureContext;
 import org.grobid.core.engines.config.DebugLabelingCollector;
 import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.engines.tagging.*;
@@ -69,6 +70,15 @@ public abstract class AbstractParser implements GenericTagger, Closeable {
         String result = label(data);
         captureIfEnabled(config, result);
         return result;
+    }
+
+    /**
+     * Warn (only when a debug capture is active on this thread) that this parser
+     * was reached through a no-config overload, so its output will be missing from
+     * the debug dump. Call from the {@code -> (…, null)} delegators.
+     */
+    protected void warnIfDebugUncaptured(String callPath) {
+        DebugCaptureContext.warnIfActive(model, callPath);
     }
 
     private void captureIfEnabled(GrobidAnalysisConfig config, String result) {
