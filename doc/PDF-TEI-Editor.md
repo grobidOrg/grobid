@@ -38,13 +38,15 @@ The editor fits into the standard GROBID training-data preparation loop describe
 
 The editor does **not** bundle GROBID — it talks to a running GROBID server over its REST API to pre-annotate documents. You tell the editor which server to use with the `GROBID_SERVER_URL` environment variable.
 
-For producing training data, **run your own full GROBID instance**. The pre-annotation quality directly determines how much manual correction you have to do, so it is worth using the *full* image (`grobid/grobid:{version}-full`, or the mirror `lfoppiano/grobid:{version}-full`), which includes the Deep Learning models and gives noticeably better reference and citation extraction than the CRF-only or public light instances. See [Run with Docker](Grobid-docker.md) for the full instructions; GROBID's REST API listens on port `8070`, so the URL is typically `http://localhost:8070`:
+Pre-annotation quality directly determines how much manual correction you have to do, so always point the editor at a **full** GROBID server (one running the Deep Learning models): it gives noticeably better reference and citation extraction than the CRF-only *light* instances. You have two options:
+
+- **Use the public full instance on Hugging Face** — `https://grobidOrg-grobid-full.hf.space` (mirror `https://grobidOrg-grobid-full2.hf.space`). It runs the Deep Learning models and requires no installation, so it is the quickest way to start annotating. This is a good fit for occasional work or a first pass. (The *light* instances `https://grobidOrg-grobid.hf.space` and its mirror `https://grobidOrg-grobid2.hf.space`, documented on the [Quick start](getting_started.md) page, are CRF-only and not recommended for building a gold-standard corpus.)
+
+- **Run your own full GROBID instance** — recommended once you settle into iterative sessions of correction and retraining. Hosting it yourself removes the rate/availability limits of the public space and, more importantly, lets you point the editor at *your own* freshly retrained models so each correction cycle pre-annotates with the improvements from the previous one. Use the *full* image (`grobid/grobid:{version}-full`, or the mirror `lfoppiano/grobid:{version}-full`); see [Run with Docker](Grobid-docker.md) for the full instructions. GROBID's REST API listens on port `8070`, so the URL is typically `http://localhost:8070`:
 
 ```bash
 docker run --rm --gpus all --init --ulimit core=0 -p 8070:8070 grobid/grobid:0.9.0-full
 ```
-
-The public *light* instances hosted on Hugging Face (`https://grobidOrg-grobid.hf.space`, mirror `https://grobidOrg-grobid2.hf.space`, see the [Quick start](getting_started.md) page) require no installation and are convenient for a first try, but they run CRF-only models and are not recommended for building a gold-standard corpus.
 
 ### Running the editor (Docker)
 
@@ -53,7 +55,7 @@ The fastest way to run the editor itself is its Docker image, passing the GROBID
 ```bash
 docker run -p 8000:8000 \
   -e APP_ADMIN_PASSWORD=secure_password \
-  -e GROBID_SERVER_URL=http://host.docker.internal:8070 \
+  -e GROBID_SERVER_URL=https://grobidOrg-grobid-full.hf.space \
   cboulanger/pdf-tei-editor:latest
 ```
 
@@ -67,11 +69,11 @@ services:
       - "8000:8000"
     environment:
       - APP_ADMIN_PASSWORD=secure_password
-      - GROBID_SERVER_URL=http://host.docker.internal:8070
+      - GROBID_SERVER_URL=https://grobidOrg-grobid-full.hf.space
 ```
 
 !!! note
-    `GROBID_SERVER_URL` must be reachable **from inside the editor's container**. When GROBID runs on the same host, use `http://host.docker.internal:8070` (Docker Desktop) or put both containers on the same Docker network and use the GROBID container name. A bare `http://localhost:8070` refers to the editor container itself and will not reach GROBID.
+    The example above uses the public Hugging Face instance so it works without any further setup. If you instead run your own GROBID (see above), remember that `GROBID_SERVER_URL` must be reachable **from inside the editor's container**: when GROBID runs on the same host, use `http://host.docker.internal:8070` (Docker Desktop) or put both containers on the same Docker network and use the GROBID container name. A bare `http://localhost:8070` refers to the editor container itself and will not reach GROBID.
 
 ### Trying the bundled demo
 

@@ -20,6 +20,9 @@ The simpler way to play with Grobid is to use the [Grobid instance](https://grob
 You can use it to process a PDF file, or to test the Grobid web service. 
 The space is free and does not require any authentication.
 
+!!! note "Full (Deep Learning) instances available"
+    **Full instances**, running the Deep Learning models and producing better results (in particular for reference and citation extraction), are also deployed at [https://grobidOrg-grobid-full.hf.space](https://grobidOrg-grobid-full.hf.space) and the mirror [https://grobidOrg-grobid-full2.hf.space](https://grobidOrg-grobid-full2.hf.space).
+
 !!! warning "Grobid space is for demonstration only"
     This grobid space is not intended for production use, it is only a demonstration of Grobid capabilities. For production use, please deploy a local version or contact us.
 
