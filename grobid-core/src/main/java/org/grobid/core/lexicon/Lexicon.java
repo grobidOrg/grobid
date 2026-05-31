@@ -19,6 +19,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.jetbrains.annotations.Nullable;
+import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -68,32 +69,15 @@ public class Lexicon {
 
     /**
      * @deprecated Use {@link #builder()} instead. This method is preserved for backward
-     *     compatibility with existing call sites: it loads {@link Builder#withDefaults()
-     *     the historical eager set} (wordforms, person names, country codes) plus every
-     *     formerly lazy-loaded gazetteer that production code historically auto-loaded
-     *     on first lookup (journals, conferences, publishers, cities, locations, person
-     *     titles/suffixes, funders, research infrastructures, collaborations). Migrate
-     *     to {@link #builder()} and request only the gazetteers your code actually uses.
-     *     <p>Lookup methods now throw {@link IllegalStateException} if their gazetteer
-     *     was not loaded — opt in through the {@link Builder}
-     *     ({@code .withOrganisations()}, {@code .withOrgForms()}) for gazetteers off
-     *     by default.
+     *     compatibility with existing call sites and reproduces the original behavior
+     *     exactly: it eagerly loads {@link Builder#withDefaults() the historical eager
+     *     set} (wordforms, person names, country codes); every other gazetteer loads
+     *     lazily on first lookup. Migrate to {@link #builder()} and, optionally, request
+     *     the gazetteers you want pre-warmed eagerly.
      */
     @Deprecated
     public static Lexicon getInstance() {
-        return builder()
-                .withDefaults()
-                .withJournals()
-                .withConferences()
-                .withPublishers()
-                .withCities()
-                .withLocations()
-                .withPersonTitles()
-                .withPersonSuffixes()
-                .withFunders()
-                .withResearchInfrastructures()
-                .withCollaborations()
-                .build();
+        return builder().withDefaults().build();
     }
 
     /**
@@ -111,29 +95,33 @@ public class Lexicon {
     }
 
     /**
-     * Returns a builder for declaratively configuring a {@link Lexicon}. The Builder
-     * is the canonical entry point: each {@code withX()} call opts the singleton in
-     * to one gazetteer; {@link Builder#build()} returns the singleton after triggering
-     * the requested loaders.
+     * Returns a builder for declaratively configuring a {@link Lexicon}. The Builder is
+     * the canonical entry point and declares only what to load <em>eagerly</em>: each
+     * {@code withX()} call pre-loads one gazetteer at {@link Builder#build() build()}
+     * time instead of waiting for first use.
      *
      * <pre>
      * Lexicon lex = Lexicon.builder()
-     *         .withDefaults()           // wordforms + people + countries + all wired gazetteers
-     *         .withOrganisations()      // optional org gazetteer
+     *         .withDefaults()           // eager: wordforms + people + countries
+     *         .withOrganisations()      // eager: pre-load the org gazetteer too
      *         .build();
      * </pre>
      *
-     * Lookup methods on the returned {@link Lexicon} throw {@link IllegalStateException}
-     * if their gazetteer wasn't requested — there is no implicit lazy-loading.
+     * Loading is <strong>lazy by default</strong>: any gazetteer not named here loads
+     * transparently on first lookup, so a {@link Lexicon} obtained from any entry point
+     * is always fully functional and never throws for a missing gazetteer.
      */
     public static Builder builder() {
         return new Builder();
     }
 
     /**
-     * Fluent configurator for {@link Lexicon}. Each {@code withX()} call enables one
-     * gazetteer. {@link #build()} returns the singleton after triggering each requested
-     * loader once (idempotent — already-loaded gazetteers are not reloaded).
+     * Fluent configurator for {@link Lexicon}. Each {@code withX()} call marks one
+     * gazetteer for <em>eager</em> pre-loading. {@link #build()} returns the singleton
+     * after triggering each requested loader once (idempotent — already-loaded
+     * gazetteers are not reloaded). Gazetteers not requested here still load lazily on
+     * first lookup; {@code withX()} only controls <em>when</em> a gazetteer loads, never
+     * whether a lookup succeeds.
      */
     public static class Builder {
         private boolean wordforms = false;
@@ -246,11 +234,11 @@ public class Lexicon {
         }
 
         /**
-         * Reproduces the historical eager-loaded set from the original {@code Lexicon()}
+         * Eagerly pre-loads the historical eager set from the original {@code Lexicon()}
          * constructor: wordforms, people (first/last names), and country codes. These
          * are the gazetteers every parser flow needs at startup; everything else
-         * (journals, locations, funders, etc.) was previously lazy-loaded on first
-         * lookup and is now an explicit opt-in via the corresponding {@code withX()}.
+         * (journals, locations, funders, etc.) still loads lazily on first lookup, or
+         * can be pre-warmed eagerly via the corresponding {@code withX()}.
          */
         public Builder withDefaults() {
             return withWordforms()
@@ -405,8 +393,8 @@ public class Lexicon {
         if (countryCodes != null) {
             return;
         }
-        countryCodes = new HashMap<String, String>();
-        countries = new HashSet<String>();
+        countryCodes = new HashMap<>();
+        countries = new HashSet<>();
         countryPattern = new FastMatcher();
         addCountryCodes(
                 GrobidProperties.getGrobidHomePath()
@@ -417,18 +405,6 @@ public class Lexicon {
                         + "countries"
                         + File.separator
                         + "CountryCodes.xml");
-    }
-
-    /**
-     * Throws {@link IllegalStateException} if a gazetteer field is null, with a message
-     * pointing the caller at the {@link Builder} method that loads it. Used by every
-     * lookup method to enforce explicit opt-in.
-     */
-    private static void requireLoaded(Object field, String name, String builderMethod) {
-        if (field == null) {
-            throw new IllegalStateException(
-                    name + " not loaded; call Lexicon.builder()." + builderMethod + "().build() first");
-        }
     }
 
     /**
@@ -515,39 +491,14 @@ public class Lexicon {
     }
 
     public boolean isCountry(String tok) {
-        requireLoaded(countries, "Country gazetteer", "withCountries");
+        if (countries == null) {
+            loadCountries();
+        }
         return countries.contains(tok.toLowerCase());
     }
 
-    private void initNames() {
-        LOGGER.debug("Initiating names");
-        firstNames = new HashSet<>();
-        lastNames = new HashSet<>();
-        LOGGER.debug("End of initialization of names");
-    }
-
-    private void initCountryCodes() {
-        LOGGER.debug("Initiating country codes");
-        countryCodes = new HashMap<String, String>();
-        countries = new HashSet<String>();
-        countryPattern = new FastMatcher();
-        LOGGER.debug("End of initialization of country codes");
-    }
-
     private void addCountryCodes(String path) {
-        File file = new File(path);
-        if (!file.exists()) {
-            throw new GrobidResourceException("Cannot add country codes to dictionary, because file '"
-                    +
-                    file.getAbsolutePath()
-                    + "' does not exists.");
-        }
-        if (!file.canRead()) {
-            throw new GrobidResourceException("Cannot add country codes to dictionary, because cannot read file '"
-                    +
-                    file.getAbsolutePath()
-                    + "'.");
-        }
+        File file = getFile(path, "country codes");
         InputStream ist = null;
         try {
             ist = new FileInputStream(file);
@@ -567,8 +518,30 @@ public class Lexicon {
         }
     }
 
+    private static @NonNull File getFile(String path, String lexiconName) {
+        File file = new File(path);
+        if (!file.exists()) {
+            throw new GrobidResourceException("Cannot add "
+                    + lexiconName
+                    + " to dictionary, because file '"
+                    + file.getAbsolutePath()
+                    + "' does not exists.");
+        }
+        if (!file.canRead()) {
+            throw new GrobidResourceException("Cannot add "
+                    + lexiconName
+                    + " to dictionary, because cannot read file '"
+                    +
+                    file.getAbsolutePath()
+                    + "'.");
+        }
+        return file;
+    }
+
     public String getCountryCode(String country) {
-        requireLoaded(countryCodes, "Country gazetteer", "withCountries");
+        if (countryCodes == null) {
+            loadCountries();
+        }
         String code = (String) countryCodes.get(country.toLowerCase());
         return code;
     }
@@ -593,19 +566,7 @@ public class Lexicon {
     }
 
     public final void addFirstNames(String path) {
-        File file = new File(path);
-        if (!file.exists()) {
-            throw new GrobidResourceException("Cannot add first names to dictionary, because file '"
-                    +
-                    file.getAbsolutePath()
-                    + "' does not exists.");
-        }
-        if (!file.canRead()) {
-            throw new GrobidResourceException("Cannot add first names to dictionary, because cannot read file '"
-                    +
-                    file.getAbsolutePath()
-                    + "'.");
-        }
+        File file = getFile(path, "first names");
         InputStream ist = null;
         InputStreamReader isr = null;
         BufferedReader dis = null;
@@ -634,19 +595,7 @@ public class Lexicon {
     }
 
     public final void addLastNames(String path) {
-        File file = new File(path);
-        if (!file.exists()) {
-            throw new GrobidResourceException("Cannot add last names to dictionary, because file '"
-                    +
-                    file.getAbsolutePath()
-                    + "' does not exists.");
-        }
-        if (!file.canRead()) {
-            throw new GrobidResourceException("Cannot add last names to dictionary, because cannot read file '"
-                    +
-                    file.getAbsolutePath()
-                    + "'.");
-        }
+        File file = getFile(path, "last names");
         InputStream ist = null;
         InputStreamReader isr = null;
         BufferedReader dis = null;
@@ -687,7 +636,9 @@ public class Lexicon {
     }
 
     public boolean inDictionary(String s, String lang) {
-        requireLoaded(dictionary_en, "Wordforms dictionary", "withWordforms");
+        if (dictionary_en == null) {
+            loadWordforms();
+        }
         if (s == null)
             return false;
         if ((s.endsWith(".")) | (s.endsWith(",")) | (s.endsWith(":")) | (s.endsWith(";")) | (s.endsWith(".")))
@@ -874,34 +825,20 @@ public class Lexicon {
 
     public void initResearchInfrastructures() {
         try {
+            String infrastructureFilePath = GrobidProperties.getGrobidHomePath()
+                    + "/lexicon/organisations/research_infrastructures.txt";
             researchInfrastructurePattern = new FastMatcher(
-                    new File(GrobidProperties.getGrobidHomePath()
-                            + "/lexicon/organisations/research_infrastructures.txt"),
+                    new File(infrastructureFilePath),
                     GrobidAnalyzer.getInstance(), true);
             // store some name mapping
             researchOrganizations = new TreeMap<>();
 
-            File file = new File(
-                    GrobidProperties.getGrobidHomePath() + "/lexicon/organisations/research_infrastructures_map.txt");
-            if (!file.exists()) {
-                throw new GrobidResourceException(
-                        "Cannot add research infrastructure names to dictionary, because file '"
-                                +
-                                file.getAbsolutePath()
-                                + "' does not exists.");
-            }
-            if (!file.canRead()) {
-                throw new GrobidResourceException(
-                        "Cannot add research infrastructure to dictionary, because cannot read file '"
-                                +
-                                file.getAbsolutePath()
-                                + "'.");
-            }
+            File file = getFile(infrastructureFilePath, "infrastructure names");
             InputStream ist = null;
             BufferedReader dis = null;
             try {
                 ist = new FileInputStream(file);
-                dis = new BufferedReader(new InputStreamReader(ist, "UTF8"));
+                dis = new BufferedReader(new InputStreamReader(ist, StandardCharsets.UTF_8));
 
                 String line;
                 while ((line = dis.readLine()) != null) {
@@ -966,7 +903,9 @@ public class Lexicon {
      * Look-up in first name gazetteer
      */
     public boolean inFirstNames(String s) {
-        requireLoaded(firstNames, "Person-names gazetteer", "withPeople");
+        if (firstNames == null) {
+            loadPeople();
+        }
         return firstNames.contains(s);
     }
 
@@ -974,12 +913,16 @@ public class Lexicon {
      * Look-up in last name gazetteer
      */
     public boolean inLastNames(String s) {
-        requireLoaded(lastNames, "Person-names gazetteer", "withPeople");
+        if (lastNames == null) {
+            loadPeople();
+        }
         return lastNames.contains(s);
     }
 
     public List<OrganizationRecord> getOrganizationNamingInfo(String name) {
-        requireLoaded(researchOrganizations, "Research-infrastructure gazetteer", "withResearchInfrastructures");
+        if (researchOrganizations == null) {
+            initResearchInfrastructures();
+        }
         return researchOrganizations.get(name.toLowerCase());
     }
 
@@ -987,7 +930,9 @@ public class Lexicon {
      * Soft look-up in journal name gazetteer with token positions
      */
     public List<OffsetPosition> tokenPositionsJournalNames(String s) {
-        requireLoaded(journalPattern, "Journal gazetteer", "withJournals");
+        if (journalPattern == null) {
+            initJournals();
+        }
         List<OffsetPosition> results = journalPattern.matchToken(s);
         return results;
     }
@@ -997,7 +942,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsJournalNames(List<LayoutToken> s) {
-        requireLoaded(journalPattern, "Journal gazetteer", "withJournals");
+        if (journalPattern == null) {
+            initJournals();
+        }
         List<OffsetPosition> results = journalPattern.matchLayoutToken(s);
         return results;
     }
@@ -1006,7 +953,9 @@ public class Lexicon {
      * Soft look-up in journal abbreviated name gazetteer with token positions
      */
     public List<OffsetPosition> tokenPositionsAbbrevJournalNames(String s) {
-        requireLoaded(abbrevJournalPattern, "Abbreviated journal gazetteer", "withJournals");
+        if (abbrevJournalPattern == null) {
+            initJournals();
+        }
         List<OffsetPosition> results = abbrevJournalPattern.matchToken(s);
         return results;
     }
@@ -1016,7 +965,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsAbbrevJournalNames(List<LayoutToken> s) {
-        requireLoaded(abbrevJournalPattern, "Abbreviated journal gazetteer", "withJournals");
+        if (abbrevJournalPattern == null) {
+            initJournals();
+        }
         List<OffsetPosition> results = abbrevJournalPattern.matchLayoutToken(s);
         return results;
     }
@@ -1025,7 +976,9 @@ public class Lexicon {
      * Soft look-up in conference/proceedings name gazetteer with token positions
      */
     public List<OffsetPosition> tokenPositionsConferenceNames(String s) {
-        requireLoaded(conferencePattern, "Conference gazetteer", "withConferences");
+        if (conferencePattern == null) {
+            initConferences();
+        }
         List<OffsetPosition> results = conferencePattern.matchToken(s);
         return results;
     }
@@ -1035,7 +988,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsConferenceNames(List<LayoutToken> s) {
-        requireLoaded(conferencePattern, "Conference gazetteer", "withConferences");
+        if (conferencePattern == null) {
+            initConferences();
+        }
         List<OffsetPosition> results = conferencePattern.matchLayoutToken(s);
         return results;
     }
@@ -1044,7 +999,9 @@ public class Lexicon {
      * Soft look-up in conference/proceedings name gazetteer with token positions
      */
     public List<OffsetPosition> tokenPositionsPublisherNames(String s) {
-        requireLoaded(publisherPattern, "Publisher gazetteer", "withPublishers");
+        if (publisherPattern == null) {
+            initPublishers();
+        }
         List<OffsetPosition> results = publisherPattern.matchToken(s);
         return results;
     }
@@ -1054,7 +1011,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsPublisherNames(List<LayoutToken> s) {
-        requireLoaded(publisherPattern, "Publisher gazetteer", "withPublishers");
+        if (publisherPattern == null) {
+            initPublishers();
+        }
         List<OffsetPosition> results = publisherPattern.matchLayoutToken(s);
         return results;
     }
@@ -1064,7 +1023,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsCollaborationNames(List<LayoutToken> s) {
-        requireLoaded(collaborationPattern, "Collaboration gazetteer", "withCollaborations");
+        if (collaborationPattern == null) {
+            initCollaborations();
+        }
         List<OffsetPosition> results = collaborationPattern.matchLayoutToken(s);
         return results;
     }
@@ -1074,7 +1035,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsFunderNames(List<LayoutToken> s) {
-        requireLoaded(funderPattern, "Funder gazetteer", "withFunders");
+        if (funderPattern == null) {
+            initFunders();
+        }
         List<OffsetPosition> results = funderPattern.matchLayoutToken(s, true, true);
         return results;
     }
@@ -1084,10 +1047,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsResearchInfrastructureNames(List<LayoutToken> s) {
-        requireLoaded(
-                researchInfrastructurePattern,
-                "Research-infrastructure gazetteer",
-                "withResearchInfrastructures");
+        if (researchInfrastructurePattern == null) {
+            initResearchInfrastructures();
+        }
         List<OffsetPosition> results = researchInfrastructurePattern.matchLayoutToken(s, true, true);
         return results;
     }
@@ -1096,7 +1058,9 @@ public class Lexicon {
      * Soft look-up in city name gazetteer for a given string with token positions
      */
     public List<OffsetPosition> tokenPositionsCityNames(String s) {
-        requireLoaded(cityPattern, "City gazetteer", "withCities");
+        if (cityPattern == null) {
+            initCities();
+        }
         List<OffsetPosition> results = cityPattern.matchToken(s);
         return results;
     }
@@ -1106,7 +1070,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsCityNames(List<LayoutToken> s) {
-        requireLoaded(cityPattern, "City gazetteer", "withCities");
+        if (cityPattern == null) {
+            initCities();
+        }
         List<OffsetPosition> results = cityPattern.matchLayoutToken(s);
         return results;
     }
@@ -1117,7 +1083,9 @@ public class Lexicon {
      * Soft look-up in organisation name gazetteer for a given string with token positions
      */
     public List<OffsetPosition> tokenPositionsOrganisationNames(String s) {
-        requireLoaded(organisationPattern, "Organisation gazetteer", "withOrganisations");
+        if (organisationPattern == null) {
+            initOrganisations();
+        }
         List<OffsetPosition> results = organisationPattern.matchToken(s);
         return results;
     }
@@ -1127,7 +1095,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsOrganisationNames(List<LayoutToken> s) {
-        requireLoaded(organisationPattern, "Organisation gazetteer", "withOrganisations");
+        if (organisationPattern == null) {
+            initOrganisations();
+        }
         List<OffsetPosition> results = organisationPattern.matchLayoutToken(s);
         return results;
     }
@@ -1137,7 +1107,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsCountryNames(List<LayoutToken> s) {
-        requireLoaded(countryPattern, "Country gazetteer", "withCountries");
+        if (countryPattern == null) {
+            loadCountries();
+        }
         List<OffsetPosition> results = countryPattern.matchLayoutToken(s);
         return results;
     }
@@ -1150,7 +1122,9 @@ public class Lexicon {
      * @return a list of positions referring to the character position in the input string
      */
     public List<OffsetPosition> charPositionsOrganisationNames(String s) {
-        requireLoaded(organisationPattern, "Organisation gazetteer", "withOrganisations");
+        if (organisationPattern == null) {
+            initOrganisations();
+        }
         List<OffsetPosition> results = organisationPattern.matchCharacter(s);
         return results;
     }
@@ -1164,7 +1138,9 @@ public class Lexicon {
      * @return a list of positions referring to the character position in the input sequence
      */
     public List<OffsetPosition> charPositionsOrganisationNames(List<LayoutToken> s) {
-        requireLoaded(organisationPattern, "Organisation gazetteer", "withOrganisations");
+        if (organisationPattern == null) {
+            initOrganisations();
+        }
         List<OffsetPosition> results = organisationPattern.matchCharacterLayoutToken(s);
         return results;
     }
@@ -1173,7 +1149,9 @@ public class Lexicon {
      * Soft look-up in organisation form name gazetteer for a given string with token positions
      */
     public List<OffsetPosition> tokenPositionsOrgForm(String s) {
-        requireLoaded(orgFormPattern, "Organisation-form gazetteer", "withOrgForms");
+        if (orgFormPattern == null) {
+            initOrgForms();
+        }
         List<OffsetPosition> results = orgFormPattern.matchToken(s);
         return results;
     }
@@ -1183,7 +1161,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsOrgForm(List<LayoutToken> s) {
-        requireLoaded(orgFormPattern, "Organisation-form gazetteer", "withOrgForms");
+        if (orgFormPattern == null) {
+            initOrgForms();
+        }
         List<OffsetPosition> results = orgFormPattern.matchLayoutToken(s);
         return results;
     }
@@ -1196,7 +1176,9 @@ public class Lexicon {
      * @return a list of positions referring to the character position in the input string
      */
     public List<OffsetPosition> charPositionsOrgForm(String s) {
-        requireLoaded(orgFormPattern, "Organisation-form gazetteer", "withOrgForms");
+        if (orgFormPattern == null) {
+            initOrgForms();
+        }
         List<OffsetPosition> results = orgFormPattern.matchCharacter(s);
         return results;
     }
@@ -1209,7 +1191,9 @@ public class Lexicon {
      * @return a list of positions referring to the character position in the input sequence
      */
     public List<OffsetPosition> charPositionsOrgForm(List<LayoutToken> s) {
-        requireLoaded(orgFormPattern, "Organisation-form gazetteer", "withOrgForms");
+        if (orgFormPattern == null) {
+            initOrgForms();
+        }
         List<OffsetPosition> results = orgFormPattern.matchCharacterLayoutToken(s);
         return results;
     }
@@ -1218,7 +1202,9 @@ public class Lexicon {
      * Soft look-up in location name gazetteer for a given string with token positions
      */
     public List<OffsetPosition> tokenPositionsLocationNames(String s) {
-        requireLoaded(locationPattern, "Location gazetteer", "withLocations");
+        if (locationPattern == null) {
+            initLocations();
+        }
         List<OffsetPosition> results = locationPattern.matchToken(s);
         return results;
     }
@@ -1228,7 +1214,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsLocationNames(List<LayoutToken> s) {
-        requireLoaded(locationPattern, "Location gazetteer", "withLocations");
+        if (locationPattern == null) {
+            initLocations();
+        }
         List<OffsetPosition> results = locationPattern.matchLayoutToken(s);
         return results;
     }
@@ -1243,7 +1231,9 @@ public class Lexicon {
      * @return a list of positions referring to the character position in the input string
      */
     public List<OffsetPosition> charPositionsLocationNames(String s) {
-        requireLoaded(locationPattern, "Location gazetteer", "withLocations");
+        if (locationPattern == null) {
+            initLocations();
+        }
         List<OffsetPosition> results = locationPattern.matchCharacter(s);
         return results;
     }
@@ -1258,7 +1248,9 @@ public class Lexicon {
      * @return a list of positions referring to the character position in the input sequence
      */
     public List<OffsetPosition> charPositionsLocationNames(List<LayoutToken> s) {
-        requireLoaded(locationPattern, "Location gazetteer", "withLocations");
+        if (locationPattern == null) {
+            initLocations();
+        }
         List<OffsetPosition> results = locationPattern.matchCharacterLayoutToken(s);
         return results;
     }
@@ -1267,7 +1259,9 @@ public class Lexicon {
      * Soft look-up in person title gazetteer for a given string with token positions
      */
     public List<OffsetPosition> tokenPositionsPersonTitle(String s) {
-        requireLoaded(personTitlePattern, "Person-title gazetteer", "withPersonTitles");
+        if (personTitlePattern == null) {
+            initPersonTitles();
+        }
         List<OffsetPosition> results = personTitlePattern.matchToken(s);
         return results;
     }
@@ -1277,7 +1271,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsPersonTitle(List<LayoutToken> s) {
-        requireLoaded(personTitlePattern, "Person-title gazetteer", "withPersonTitles");
+        if (personTitlePattern == null) {
+            initPersonTitles();
+        }
         List<OffsetPosition> results = personTitlePattern.matchLayoutToken(s);
         return results;
     }
@@ -1287,7 +1283,9 @@ public class Lexicon {
      * with token positions
      */
     public List<OffsetPosition> tokenPositionsPersonSuffix(List<LayoutToken> s) {
-        requireLoaded(personSuffixPattern, "Person-suffix gazetteer", "withPersonSuffixes");
+        if (personSuffixPattern == null) {
+            initPersonSuffix();
+        }
         List<OffsetPosition> results = personSuffixPattern.matchLayoutToken(s);
         return results;
     }
@@ -1300,7 +1298,9 @@ public class Lexicon {
      * @return a list of positions referring to the character position in the input string
      */
     public List<OffsetPosition> charPositionsPersonTitle(String s) {
-        requireLoaded(personTitlePattern, "Person-title gazetteer", "withPersonTitles");
+        if (personTitlePattern == null) {
+            initPersonTitles();
+        }
         List<OffsetPosition> results = personTitlePattern.matchCharacter(s);
         return results;
     }
@@ -1314,7 +1314,9 @@ public class Lexicon {
      * @return a list of positions referring to the character position in the input sequence
      */
     public List<OffsetPosition> charPositionsPersonTitle(List<LayoutToken> s) {
-        requireLoaded(personTitlePattern, "Person-title gazetteer", "withPersonTitles");
+        if (personTitlePattern == null) {
+            initPersonTitles();
+        }
         List<OffsetPosition> results = personTitlePattern.matchCharacterLayoutToken(s);
         return results;
     }
