@@ -149,7 +149,7 @@ public class LayoutTokensUtilTest {
 
         String text = "based \n"
                 +
-                "(Nd 1-x Ce x ) 2 Fe 14-y Co y B nanostructured magnets";
+                "(Nd 1-x Ce x ) 2 Fe 14-y Co y B nanostructured magnets"; // codespell:ignore nd
 
         List<LayoutToken> layoutTokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(text);
 
