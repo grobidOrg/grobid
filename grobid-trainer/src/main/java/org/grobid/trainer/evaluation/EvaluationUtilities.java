@@ -69,9 +69,9 @@ public class EvaluationUtilities {
                 // get last tag
                 StringTokenizer tokenizer = new StringTokenizer(piece, " \t");
                 while (tokenizer.hasMoreTokens()) {
-                    String toke = tokenizer.nextToken();
+                    String t = tokenizer.nextToken();
                     if (!tokenizer.hasMoreTokens()) {
-                        pretags.add(toke);
+                        pretags.add(t);
                     }
                 }
             }

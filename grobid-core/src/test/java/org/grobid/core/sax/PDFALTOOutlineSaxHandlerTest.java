@@ -98,10 +98,10 @@ public class PDFALTOOutlineSaxHandlerTest {
         assertThat(root.getChildren().get(2).getChildren(), hasSize(6));
         assertThat(
                 root.getChildren().get(2).getChildren().get(2).getLabel(),
-                is("C.3 Approach scientifique et technique"));
+                is("C.3 Approche scientifique et technique"));
         assertThat(root.getChildren().get(3).getLabel(), is("D Liste des livrables"));
         assertThat(root.getChildren().get(3).getChildren(), is(nullValue()));
-        assertThat(root.getChildren().get(4).getLabel(), is("E Impact du project"));
+        assertThat(root.getChildren().get(4).getLabel(), is("E Impact du projet"));
         assertThat(root.getChildren().get(4).getChildren(), hasSize(4));
         assertThat(
                 root.getChildren().get(4).getChildren().get(1).getLabel(),

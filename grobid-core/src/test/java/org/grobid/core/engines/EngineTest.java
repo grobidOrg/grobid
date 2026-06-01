@@ -101,7 +101,7 @@ public class EngineTest {
                 +
                 ", , , , , , , , , , LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 COMMA 1 <reference-block>\n"
                 +
-                "Ferro ferro F Fe Fer Ferr o ro rro error LINEIN INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 NOPUNCT 1 <reference-block>\n"
+                "Ferro ferro F Fe Fer Ferr o ro rro erro LINEIN INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 NOPUNCT 1 <reference-block>\n"
                 +
                 ", , , , , , , , , , LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 COMMA 1 <reference-block>\n"
                 +
@@ -153,7 +153,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 1 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
                 +
                 "Challenge challenge C Ch Cha Chal e ge nge enge LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
                 +
@@ -181,7 +181,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
                 +
                 ", , , , , , , , , , LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 COMMA 2 <reference-block>\n"
                 +
@@ -251,7 +251,7 @@ public class EngineTest {
                 +
                 "MIT mit M MI MIT MIT T IT MIT MIT LINEIN ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
                 +
-                "Press press P Pr Pre Press s ss ess ress LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
+                "Press press P Pr Pre Pres s ss ess ress LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
                 +
                 ". . . . . . . . . . LINEEND ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 DOT 3 <reference-block>\n"
                 +
@@ -301,7 +301,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
                 +
                 "Challenge challenge C Ch Cha Chal e ge nge enge LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
                 +
@@ -421,7 +421,7 @@ public class EngineTest {
                 +
                 "the the t th the the e he the the LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 4 <reference-block>\n"
                 +
-                "43nd 43nd 4 43 43n 43nd d nd 3rd 43nd LINEIN NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 NOPUNCT 4 <reference-block>\n"
+                "43nd 43nd 4 43 43n 43nd d nd 3nd 43nd LINEIN NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 NOPUNCT 4 <reference-block>\n"
                 +
                 "Annual annual A An Ann Annu l al ual nual LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 4 <reference-block>\n"
                 +
@@ -519,7 +519,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 5 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEEND INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEEND INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
                 "Challenge challenge C Ch Cha Chal e ge nge enge LINESTART INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
@@ -539,7 +539,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
                 "and and a an and and d nd and and LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
@@ -605,7 +605,7 @@ public class EngineTest {
                 +
                 "Predicate predicate P Pr Pre Pred e te ate cate LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
-                "Argument argument A Ar Arg Argu t nt ent meant LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
+                "Argument argument A Ar Arg Argu t nt ent ment LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
                 "Recognition recognition R Re Rec Reco n on ion tion LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
@@ -737,13 +737,13 @@ public class EngineTest {
                 +
                 "A a A A A A A A A A LINEIN ALLCAP NODIGIT 1 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
-                "Shallow shallow S Sh Sha Shall w ow low llow LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
+                "Shallow shallow S Sh Sha Shal w ow low llow LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
                 "Text text T Te Tex Text t xt ext Text LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
                 "Processing processing P Pr Pro Proc g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
-                "Core core C Co Cor Core e re or Core LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
+                "Core core C Co Cor Core e re ore Core LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
                 "Engine engine E En Eng Engi e ne ine gine LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
@@ -789,7 +789,7 @@ public class EngineTest {
                 +
                 ". . . . . . . . . . LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 DOT 8 <reference-block>\n"
                 +
-                "Anselmo anselmo A An And Anse o mo lmo elmo LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
+                "Anselmo anselmo A An Ans Anse o mo lmo elmo LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
                 "Peñas peñas P Pe Peñ Peña s as ñas eñas LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
@@ -817,7 +817,7 @@ public class EngineTest {
                 +
                 "the the t th the the e he the the LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
-                "Answer answer A An And Answ r er wer swer LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
+                "Answer answer A An Ans Answ r er wer swer LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
                 "Validation validation V Va Val Vali n on ion tion LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
@@ -871,9 +871,9 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
-                "Using using U Us Usi Using g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
+                "Using using U Us Usi Usin g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
                 "a a a a a a a a a a LINEIN NOCAPS NODIGIT 1 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
@@ -929,9 +929,9 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
-                "Using using U Us Usi Using g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
+                "Using using U Us Usi Usin g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
                 "Sentence sentence S Se Sen Sent e ce nce ence LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
@@ -945,7 +945,7 @@ public class EngineTest {
                 +
                 "Tree tree T Tr Tre Tree e ee ree Tree LINESTART INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
-                "Skeletons skeletons S Sk Ske Skel s ns owns tons LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
+                "Skeletons skeletons S Sk Ske Skel s ns ons tons LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
                 ". . . . . . . . . . LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 DOT 10 <reference-block>\n"
                 +
@@ -963,7 +963,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
                 "and and a an and and d nd and and LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
@@ -1031,17 +1031,17 @@ public class EngineTest {
                 +
                 ": : : : : : : : : : LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 PUNCT 11 <reference-block>\n"
                 +
-                "Using using U Us Usi Using g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
+                "Using using U Us Usi Usin g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
                 "Recognizing recognizing R Re Rec Reco g ng ing zing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
                 "for for f fo for for r or for for LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
-                "Answer answer A An And Answ r er wer swer LINEEND INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
+                "Answer answer A An Ans Answ r er wer swer LINEEND INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
                 "Validation validation V Va Val Vali n on ion tion LINESTART INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
@@ -1049,7 +1049,7 @@ public class EngineTest {
                 +
                 "In in I In In In n In In In LINEIN INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
-                "online online o on only onli e ne ine line LINEIN NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
+                "online online o on onl onli e ne ine line LINEIN NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
                 "proceedings proceedings p pr pro proc s gs ngs ings LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
@@ -1091,7 +1091,7 @@ public class EngineTest {
                 +
                 ", , , , , , , , , , LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 COMMA 12 <reference-block>\n"
                 +
-                "Budapest budapest B Bu Bud Buddha t st est pest LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 12 <reference-block>\n"
+                "Budapest budapest B Bu Bud Buda t st est pest LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 12 <reference-block>\n"
                 +
                 ", , , , , , , , , , LINEEND ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 COMMA 12 <reference-block>\n"
                 +
@@ -1139,7 +1139,7 @@ public class EngineTest {
 
     /*@Test
     public void testFromText() {
-    //      String text = "David Green et al 2015 Nanoscale DOI:10.1039/C6NR05046H recently demonstrated that gecko microspinules (hairs) and " +
+    //      String text = "David Green et al 2015 Nanoscale DOI:10.1039/C6NR05046H recenty demonstrated that gecko microspinules (hairs) and " +
     //                "their equivalent replicas, bearing nanoscale tips, can kill or impair surface associating oral pathogenic " +
     //                "bacteria with high efficiency even after 7 days of repeated attacks. " +
     //                "Scanning Electron Microscopy suggests that there is more than one mechanism contributing to " +
@@ -1732,7 +1732,7 @@ public class EngineTest {
                 +
                 ", , , , , , , , , , LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 COMMA 1 <reference-block>\n"
                 +
-                "Ferro ferro F Fe Fer Ferr o ro rro error LINEIN INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 NOPUNCT 1 <reference-block>\n"
+                "Ferro ferro F Fe Fer Ferr o ro rro erro LINEIN INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 NOPUNCT 1 <reference-block>\n"
                 +
                 ", , , , , , , , , , LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 COMMA 1 <reference-block>\n"
                 +
@@ -1784,7 +1784,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 1 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
                 +
                 "Challenge challenge C Ch Cha Chal e ge nge enge LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
                 +
@@ -1812,7 +1812,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 2 <reference-block>\n"
                 +
                 ", , , , , , , , , , LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 COMMA 2 <reference-block>\n"
                 +
@@ -1882,7 +1882,7 @@ public class EngineTest {
                 +
                 "MIT mit M MI MIT MIT T IT MIT MIT LINEIN ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
                 +
-                "Press press P Pr Pre Press s ss ess ress LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
+                "Press press P Pr Pre Pres s ss ess ress LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
                 +
                 ". . . . . . . . . . LINEEND ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 DOT 3 <reference-block>\n"
                 +
@@ -1932,7 +1932,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
                 +
                 "Challenge challenge C Ch Cha Chal e ge nge enge LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 3 <reference-block>\n"
                 +
@@ -2052,7 +2052,7 @@ public class EngineTest {
                 +
                 "the the t th the the e he the the LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 4 <reference-block>\n"
                 +
-                "43nd 43nd 4 43 43n 43nd d nd 3rd 43nd LINEIN NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 NOPUNCT 4 <reference-block>\n"
+                "43nd 43nd 4 43 43n 43nd d nd 3nd 43nd LINEIN NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 NOPUNCT 4 <reference-block>\n"
                 +
                 "Annual annual A An Ann Annu l al ual nual LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 4 <reference-block>\n"
                 +
@@ -2150,7 +2150,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 5 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEEND INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEEND INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
                 "Challenge challenge C Ch Cha Chal e ge nge enge LINESTART INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
@@ -2170,7 +2170,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
                 "and and a an and and d nd and and LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
@@ -2236,7 +2236,7 @@ public class EngineTest {
                 +
                 "Predicate predicate P Pr Pre Pred e te ate cate LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
-                "Argument argument A Ar Arg Argu t nt ent meant LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
+                "Argument argument A Ar Arg Argu t nt ent ment LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
                 "Recognition recognition R Re Rec Reco n on ion tion LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 6 <reference-block>\n"
                 +
@@ -2368,13 +2368,13 @@ public class EngineTest {
                 +
                 "A a A A A A A A A A LINEIN ALLCAP NODIGIT 1 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
-                "Shallow shallow S Sh Sha Shall w ow low llow LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
+                "Shallow shallow S Sh Sha Shal w ow low llow LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
                 "Text text T Te Tex Text t xt ext Text LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
                 "Processing processing P Pr Pro Proc g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
-                "Core core C Co Cor Core e re or Core LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
+                "Core core C Co Cor Core e re ore Core LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
                 "Engine engine E En Eng Engi e ne ine gine LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
@@ -2420,7 +2420,7 @@ public class EngineTest {
                 +
                 ". . . . . . . . . . LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 DOT 8 <reference-block>\n"
                 +
-                "Anselmo anselmo A An And Anse o mo lmo elmo LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
+                "Anselmo anselmo A An Ans Anse o mo lmo elmo LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
                 "Peñas peñas P Pe Peñ Peña s as ñas eñas LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 8 <reference-block>\n"
                 +
@@ -2448,7 +2448,7 @@ public class EngineTest {
                 +
                 "the the t th the the e he the the LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
-                "Answer answer A An And Answ r er wer swer LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
+                "Answer answer A An Ans Answ r er wer swer LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
                 "Validation validation V Va Val Vali n on ion tion LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
@@ -2502,9 +2502,9 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
-                "Using using U Us Usi Using g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
+                "Using using U Us Usi Usin g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
                 "a a a a a a a a a a LINEIN NOCAPS NODIGIT 1 0 1 0 0 0 0 0 0 NOPUNCT 9 <reference-block>\n"
                 +
@@ -2560,9 +2560,9 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
-                "Using using U Us Usi Using g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
+                "Using using U Us Usi Usin g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
                 "Sentence sentence S Se Sen Sent e ce nce ence LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
@@ -2576,7 +2576,7 @@ public class EngineTest {
                 +
                 "Tree tree T Tr Tre Tree e ee ree Tree LINESTART INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
-                "Skeletons skeletons S Sk Ske Skel s ns owns tons LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
+                "Skeletons skeletons S Sk Ske Skel s ns ons tons LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
                 ". . . . . . . . . . LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 DOT 10 <reference-block>\n"
                 +
@@ -2594,7 +2594,7 @@ public class EngineTest {
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
                 "and and a an and and d nd and and LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 10 <reference-block>\n"
                 +
@@ -2662,17 +2662,17 @@ public class EngineTest {
                 +
                 ": : : : : : : : : : LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 PUNCT 11 <reference-block>\n"
                 +
-                "Using using U Us Usi Using g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
+                "Using using U Us Usi Usin g ng ing sing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
                 "Recognizing recognizing R Re Rec Reco g ng ing zing LINEIN INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
                 "Textual textual T Te Tex Text l al ual tual LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
-                "Entailment entailment E En Ent Enta t nt ent meant LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
+                "Entailment entailment E En Ent Enta t nt ent ment LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
                 "for for f fo for for r or for for LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
-                "Answer answer A An And Answ r er wer swer LINEEND INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
+                "Answer answer A An Ans Answ r er wer swer LINEEND INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
                 "Validation validation V Va Val Vali n on ion tion LINESTART INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
@@ -2680,7 +2680,7 @@ public class EngineTest {
                 +
                 "In in I In In In n In In In LINEIN INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
-                "online online o on only onli e ne ine line LINEIN NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
+                "online online o on onl onli e ne ine line LINEIN NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
                 "proceedings proceedings p pr pro proc s gs ngs ings LINEIN NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 NOPUNCT 11 <reference-block>\n"
                 +
@@ -2722,7 +2722,7 @@ public class EngineTest {
                 +
                 ", , , , , , , , , , LINEIN ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 COMMA 12 <reference-block>\n"
                 +
-                "Budapest budapest B Bu Bud Buddha t st est pest LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 12 <reference-block>\n"
+                "Budapest budapest B Bu Bud Buda t st est pest LINEIN INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 NOPUNCT 12 <reference-block>\n"
                 +
                 ", , , , , , , , , , LINEEND ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 COMMA 12 <reference-block>\n"
                 +

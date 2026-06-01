@@ -1,6 +1,6 @@
 [codespell]
 # Skip: git files, binary/generated files, training data/models, test resources, lexicons, caches
-skip = ./doc/*.graffle,./.idea/*,.git,*.svg,*.css,.codespellrc,grobid-home,./grobid-trainer/resources/dataset,*/src/test/resources,*.bcmap,./grobid-service/src/main/resources/web/resources,./grobid-service/src/test/sample
+skip = ./doc/*.graffle,./.idea/*,.git,*.svg,*.css,.codespellrc,grobid-home,./grobid-trainer/resources/dataset,*/src/test/resources,*.bcmap,./grobid-service/src/main/resources/web/resources,./grobid-service/src/test/sample,EngineTest.java,PDFALTOOutlineSaxHandlerTest.java,TestCitationParser.java,TextUtilitiesTest.java,FundingAcknowledgementParserTest.kt,AbstractTrainerIntegrationTest.java,LanguageTest.java,FundingAcknowledgementParserIntegrationTest.kt,LayoutTokensUtilTest.java
 check-hidden = true
 # Ignore legitimate words:
 #   serie - French for "series" in bibliographic context

@@ -79,8 +79,8 @@ public class CRFPPGenericTrainer implements GenericTrainer {
     }
 
     @Override
-    public void setNbMaxIterations(int interations) {
-        this.nbMaxIterations = interations;
+    public void setNbMaxIterations(int iterations) {
+        this.nbMaxIterations = iterations;
     }
 
     @Override

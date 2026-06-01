@@ -58,7 +58,7 @@ public class DeLFTTrainer implements GenericTrainer {
     }
 
     @Override
-    public void setNbMaxIterations(int interations) {
+    public void setNbMaxIterations(int iterations) {
     }
 
     @Override
