@@ -66,7 +66,7 @@ public class PatentEvaluation {
             tagger = taggerAll;
             setName = "all";
         } else {
-            throw new GrobidException("An exception occured while evaluating Grobid. The parameter "
+            throw new GrobidException("An exception occurred while evaluating Grobid. The parameter "
                     +
                     "type is undefined.");
         }
@@ -266,7 +266,7 @@ public class PatentEvaluation {
                     }
                 }
             } catch (Exception e) {
-                throw new GrobidException("An exception occured while evaluating Grobid.", e);
+                throw new GrobidException("An exception occurred while evaluating Grobid.", e);
             }
 
             double precision;

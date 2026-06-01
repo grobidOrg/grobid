@@ -246,7 +246,7 @@ public class GrobidRestServiceTest {
                 }
             } catch (final Exception exp) {
                 LOGGER.error(
-                        "An error occured while processing the file "
+                        "An error occurred while processing the file "
                                 + currXML.getAbsolutePath()
                                 + ". Continuing the process for the other files");
             }

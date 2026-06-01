@@ -121,7 +121,7 @@ public class WikiTextExtractSaxParser extends DefaultHandler {
                         writer.flush();
                     } catch (Exception e) {
                         //						e.printStackTrace();
-                        throw new GrobidException("An exception occured while running Grobid.", e);
+                        throw new GrobidException("An exception occurred while running Grobid.", e);
                     }
                 }
             }
@@ -166,7 +166,7 @@ public class WikiTextExtractSaxParser extends DefaultHandler {
                                 fileCount++;
                             } catch (Exception e) {
                                 //                   				e.printStackTrace();
-                                throw new GrobidException("An exception occured while running Grobid.", e);
+                                throw new GrobidException("An exception occurred while running Grobid.", e);
                             }
                         }
                         page++;

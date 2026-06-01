@@ -197,7 +197,7 @@ public class MarecCitationSaxHandler extends DefaultHandler {
                         }
                     } catch (Exception e) {
 //                      e.printStackTrace();
-                        throw new GrobidException("An exception occured while running Grobid.", e);
+                        throw new GrobidException("An exception occurred while running Grobid.", e);
                     }
                     i++;
                 }
@@ -257,7 +257,7 @@ public class MarecCitationSaxHandler extends DefaultHandler {
                                 allContent.append(token + " ");
                             }
                         } catch (Exception e) {
-                            throw new GrobidException("An exception occured while running Grobid.", e);
+                            throw new GrobidException("An exception occurred while running Grobid.", e);
                         }
                     }
                     i++;
@@ -390,7 +390,7 @@ public class MarecCitationSaxHandler extends DefaultHandler {
                                     } catch (Exception e) {
 //                                      e.printStackTrace();
                                         throw new GrobidException(
-                                                "An exception occured while running Grobid.", e);
+                                                "An exception occurred while running Grobid.", e);
                                     }
                                 } else {
                                     try {
@@ -399,7 +399,7 @@ public class MarecCitationSaxHandler extends DefaultHandler {
                                     } catch (Exception e) {
 //                                      e.printStackTrace();
                                         throw new GrobidException(
-                                                "An exception occured while running Grobid.", e);
+                                                "An exception occurred while running Grobid.", e);
                                     }
                                 }
                                 j++;
@@ -448,7 +448,7 @@ public class MarecCitationSaxHandler extends DefaultHandler {
                                     } catch (Exception e) {
 //                                      e.printStackTrace();
                                         throw new GrobidException(
-                                                "An exception occured while running Grobid.", e);
+                                                "An exception occurred while running Grobid.", e);
                                     }
                                 } else {
                                     try {
@@ -457,7 +457,7 @@ public class MarecCitationSaxHandler extends DefaultHandler {
                                     } catch (Exception e) {
 //                                      e.printStackTrace();
                                         throw new GrobidException(
-                                                "An exception occured while running Grobid.", e);
+                                                "An exception occurred while running Grobid.", e);
                                     }
                                 }
                                 j++;
