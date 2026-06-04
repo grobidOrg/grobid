@@ -152,6 +152,7 @@ RUN python3 preload_embeddings.py --registry ./resources-registry.json &&  \
 RUN mkdir delft && \
     cp ./resources-registry.json delft/
 
+# Set the group to avoid running the docker image in a rootless environment
 RUN chgrp -R 0 /opt/grobid /data /tmp && \
     chmod -R g=u /opt/grobid /data /tmp
 
