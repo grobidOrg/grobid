@@ -329,7 +329,7 @@ public class EndToEndEvaluation {
             report.append("\n======= Fulltext structures ======= \n");
             reportMD.append("\n## Fulltext structures \n\n");
             reportMD.append(
-                    "Fulltext structure contents are complicated to capture from JATS NLM files. They are often normalized and different from the actual PDF content and are can be inconsistent from one document to another. The scores of the following metrics are thus not very meaningful in absolute term, in particular for the strict matching (textual content of the structure can be very long). As relative values for comparing different models, they seem however useful.\n\n");
+                    "Fulltext structure contents are complicated to capture from JATS NLM files. They are often normalized and different from the actual PDF content and can be inconsistent from one document to another. The scores of the following metrics are thus not very meaningful in absolute term, in particular for the strict matching (textual content of the structure can be very long). As relative values for comparing different models, they seem however useful.\n\n");
             report.append(evaluationRun(GROBID, FULLTEXT, reportMD));
         }
 
