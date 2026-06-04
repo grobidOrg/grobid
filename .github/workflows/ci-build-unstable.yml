@@ -46,25 +46,9 @@ jobs:
           file: build/reports/jacoco/codeCoverageReport/codeCoverageReport.xml
           debug: true
 
-  check-secrets:
-    needs: [build]
-    runs-on: ubuntu-latest
-    outputs:
-      can_push: ${{ steps.check.outputs.can_push }}
-    steps:
-      - id: check
-        env:
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME_LFOPPIANO }}
-        run: |
-          if [ -n "$DOCKERHUB_USERNAME" ]; then
-            echo "can_push=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "can_push=false" >> "$GITHUB_OUTPUT"
-          fi
-
   docker-build-amd64:
-    needs: [build, check-secrets]
-    if: needs.check-secrets.outputs.can_push == 'true'
+    needs: [build]
+    if: github.event.repository.fork == false
     runs-on: ubuntu-latest
     outputs:
       digest: ${{ steps.build.outputs.digest }}
@@ -105,8 +89,8 @@ jobs:
           cache-to: type=gha,scope=amd64,mode=max
 
   docker-build-arm64:
-    needs: [build, check-secrets]
-    if: needs.check-secrets.outputs.can_push == 'true'
+    needs: [build]
+    if: github.event.repository.fork == false
     runs-on: ubuntu-24.04-arm
     outputs:
       digest: ${{ steps.build.outputs.digest }}
