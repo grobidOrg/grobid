@@ -29,10 +29,14 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.IdentityHashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.SortedSet;
+import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.stream.Collectors;
 
@@ -73,20 +77,15 @@ import org.grobid.core.layout.BoundingBox;
 import org.grobid.core.layout.Cluster;
 import org.grobid.core.layout.GraphicObject;
 import org.grobid.core.layout.GraphicObjectType;
-import org.grobid.core.layout.TypedArea;
-import org.grobid.core.layout.AreaType;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.layout.PDFAnnotation;
 import org.grobid.core.layout.Page;
+import org.grobid.core.layout.TypedArea;
 import org.grobid.core.layout.VectorGraphicBoxCalculator;
 import org.grobid.core.sax.*;
 import org.grobid.core.utilities.*;
 import org.grobid.core.utilities.matching.EntityMatcherException;
 import org.grobid.core.utilities.matching.ReferenceMarkerMatcher;
-
-import java.util.IdentityHashMap;
-import java.util.LinkedHashMap;
-import java.util.TreeSet;
 
 /**
  * Class for representing, processing and exchanging a document item.
@@ -1845,7 +1844,8 @@ public class Document implements Serializable {
             for (int i = startPos; i <= endPos; i++) {
                 LayoutToken token = tokenizations.get(i);
                 if (!excludedTokens.contains(token)) {
-                    if (runStart == -1) runStart = i;
+                    if (runStart == -1)
+                        runStart = i;
                 } else {
                     if (runStart != -1) {
                         filtered.add(createPiece(runStart, i - 1));
@@ -1864,8 +1864,8 @@ public class Document implements Serializable {
         int startBlock = tokenizations.get(startTokenDocPos).getBlockPtr();
         int endBlock = tokenizations.get(endTokenDocPos).getBlockPtr();
         return new DocumentPiece(
-            new DocumentPointer(this, startBlock, startTokenDocPos),
-            new DocumentPointer(this, endBlock, endTokenDocPos));
+                new DocumentPointer(this, startBlock, startTokenDocPos),
+                new DocumentPointer(this, endBlock, endTokenDocPos));
     }
 
     /**
@@ -1897,16 +1897,16 @@ public class Document implements Serializable {
             }
 
             switch (area.getType()) {
-                case FIGURE:
+                case FIGURE :
                     figureAreas.add(area);
                     break;
-                case TABLE:
+                case TABLE :
                     tableAreas.add(area);
                     break;
-                case IGNORE:
+                case IGNORE :
                     ignoredAreas.add(area);
                     break;
-                case PARATEXT:
+                case PARATEXT :
                     ignoredAreas.add(area);
                     break;
             }
@@ -1922,20 +1922,20 @@ public class Document implements Serializable {
             for (TypedArea area : typedAreas) {
                 if (area.contains(token)) {
                     switch (area.getType()) {
-                        case FIGURE:
+                        case FIGURE :
                             figureTokens.add(token);
                             figureTokenCount++;
                             break;
-                        case TABLE:
+                        case TABLE :
                             tableTokens.add(token);
                             tableTokensByArea.computeIfAbsent(area, k -> new ArrayList<>()).add(token);
                             tableTokenCount++;
                             break;
-                        case IGNORE:
+                        case IGNORE :
                             ignoredTokens.add(token);
                             ignoredTokenCount++;
                             break;
-                        case PARATEXT:
+                        case PARATEXT :
                             ignoredTokens.add(token);
                             ignoredTokenCount++;
                             break;
@@ -1948,8 +1948,12 @@ public class Document implements Serializable {
 
         recalculateBlockPointers();
 
-        LOGGER.debug("Processed typed areas: {} figure tokens, {} table tokens, {} ignored tokens, {} excluded total",
-                    figureTokenCount, tableTokenCount, ignoredTokenCount, excludedTokens.size());
+        LOGGER.debug(
+                "Processed typed areas: {} figure tokens, {} table tokens, {} ignored tokens, {} excluded total",
+                figureTokenCount,
+                tableTokenCount,
+                ignoredTokenCount,
+                excludedTokens.size());
     }
 
     /**

@@ -17,7 +17,6 @@ package org.grobid.core.engines.config;
 
 import java.io.File;
 import java.util.List;
-import java.util.ArrayList;
 
 import org.grobid.core.GrobidModels;
 import org.grobid.core.analyzers.Analyzer;

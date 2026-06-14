@@ -45,7 +45,8 @@ public class TypedArea {
     public static TypedArea fromCoordinates(String coordString) {
         String[] parts = coordString.split(",");
         if (parts.length < 6) {
-            throw new IllegalArgumentException("Invalid coordinate string format. Expected: page,x,y,width,height,type");
+            throw new IllegalArgumentException(
+                    "Invalid coordinate string format. Expected: page,x,y,width,height,type");
         }
 
         try {
@@ -85,9 +86,9 @@ public class TypedArea {
 
         // Check for intersection: two rectangles intersect if their projections overlap on both axes
         return !(tokenRight < areaLeft ||
-                 tokenLeft > areaRight ||
-                 tokenBottom < areaTop ||
-                 tokenTop > areaBottom);
+                tokenLeft > areaRight ||
+                tokenBottom < areaTop ||
+                tokenTop > areaBottom);
     }
 
     /**
@@ -96,7 +97,8 @@ public class TypedArea {
     public static TypedArea fromString(String coordString) {
         String[] parts = coordString.split(",");
         if (parts.length < 5) {
-            throw new IllegalArgumentException("Invalid coordinate string format. Expected: page,x,y,width,height[,name]");
+            throw new IllegalArgumentException(
+                    "Invalid coordinate string format. Expected: page,x,y,width,height[,name]");
         }
 
         try {
@@ -182,22 +184,30 @@ public class TypedArea {
 
     @Override
     public String toString() {
-        return String.format("TypedArea{page=%d, x=%.2f, y=%.2f, width=%.2f, height=%.2f, type='%s'}",
-                           page, x, y, width, height, type != null ? type.getValue() : "null");
+        return String.format(
+                "TypedArea{page=%d, x=%.2f, y=%.2f, width=%.2f, height=%.2f, type='%s'}",
+                page,
+                x,
+                y,
+                width,
+                height,
+                type != null ? type.getValue() : "null");
     }
 
     @Override
     public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
 
         TypedArea that = (TypedArea) obj;
         return page == that.page &&
-               Double.compare(that.x, x) == 0 &&
-               Double.compare(that.y, y) == 0 &&
-               Double.compare(that.width, width) == 0 &&
-               Double.compare(that.height, height) == 0 &&
-               type == that.type;
+                Double.compare(that.x, x) == 0 &&
+                Double.compare(that.y, y) == 0 &&
+                Double.compare(that.width, width) == 0 &&
+                Double.compare(that.height, height) == 0 &&
+                type == that.type;
     }
 
     @Override

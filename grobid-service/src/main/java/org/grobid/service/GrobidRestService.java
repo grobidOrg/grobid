@@ -25,6 +25,8 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 
 import com.codahale.metrics.annotation.Timed;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import jakarta.ws.rs.*;
@@ -54,8 +56,6 @@ import org.grobid.service.util.BibTexMediaType;
 import org.grobid.service.util.ExpectedResponseType;
 import org.grobid.service.util.GrobidRestUtils;
 import org.grobid.service.util.ZipUtils;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * RESTful service for the GROBID system.
@@ -504,11 +504,11 @@ public class GrobidRestService implements GrobidPaths {
                         }
 
                         String typeString = node.get("type").asText();
-                        org.grobid.core.layout.AreaType areaType =
-                            org.grobid.core.layout.AreaType.fromString(typeString);
+                        org.grobid.core.layout.AreaType areaType = org.grobid.core.layout.AreaType
+                                .fromString(typeString);
 
-                        org.grobid.core.layout.TypedArea area =
-                            new org.grobid.core.layout.TypedArea(page, x, y, width, height, areaType);
+                        org.grobid.core.layout.TypedArea area = new org.grobid.core.layout.TypedArea(page, x, y, width,
+                                height, areaType);
                         typedAreasList.add(area);
                     } catch (Exception e) {
                         LOGGER.warn("Failed to parse typed area from JSON: " + node.toString(), e);
@@ -523,16 +523,15 @@ public class GrobidRestService implements GrobidPaths {
 
         if (!typedAreasList.isEmpty()) {
             Map<AreaType, Long> countsByType = typedAreasList.stream()
-                .collect(java.util.stream.Collectors.groupingBy(
-                    org.grobid.core.layout.TypedArea::getType,
-                    java.util.stream.Collectors.counting()));
+                    .collect(
+                            java.util.stream.Collectors.groupingBy(
+                                    org.grobid.core.layout.TypedArea::getType,
+                                    java.util.stream.Collectors.counting()));
             LOGGER.info("Received {} typed areas: {}", typedAreasList.size(), countsByType);
         }
 
         return typedAreasList;
     }
-
-
 
     private boolean validateGenerateIdParam(String generateIDs) {
         boolean generate = false;

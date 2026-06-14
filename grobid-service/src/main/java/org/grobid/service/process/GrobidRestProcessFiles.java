@@ -309,13 +309,13 @@ public class GrobidRestProcessFiles {
 
             // starts conversion process
             GrobidAnalysisConfig config = GrobidAnalysisConfig.builder()
-                .consolidateHeader(consolidateHeader)
-                .consolidateFunders(consolidateFunders)
-                .includeRawAffiliations(includeRawAffiliations)
-                .includeRawCopyrights(includeRawCopyrights)
-                .includeDiscardedText(includeDiscardedText)
-                .typedAreas(typedAreas)
-                .build();
+                    .consolidateHeader(consolidateHeader)
+                    .consolidateFunders(consolidateFunders)
+                    .includeRawAffiliations(includeRawAffiliations)
+                    .includeRawCopyrights(includeRawCopyrights)
+                    .includeDiscardedText(includeDiscardedText)
+                    .typedAreas(typedAreas)
+                    .build();
 
             retVal = engine.processHeaderFunding(
                     originFile,
