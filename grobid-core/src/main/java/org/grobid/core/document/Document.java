@@ -180,6 +180,7 @@ public class Document implements Serializable {
 
     // tokens extracted from typed areas for specialized processing
     protected transient List<LayoutToken> figureTokens = new ArrayList<>();
+    protected transient Map<TypedArea, List<LayoutToken>> figureTokensByArea = new LinkedHashMap<>();
     protected transient List<LayoutToken> tableTokens = new ArrayList<>();
     protected transient Map<TypedArea, List<LayoutToken>> tableTokensByArea = new LinkedHashMap<>();
     protected transient List<LayoutToken> ignoredTokens = new ArrayList<>();
@@ -1804,6 +1805,10 @@ public class Document implements Serializable {
         this.figureTokens = figureTokens != null ? figureTokens : new ArrayList<>();
     }
 
+    public Map<TypedArea, List<LayoutToken>> getFigureTokensByArea() {
+        return figureTokensByArea;
+    }
+
     public List<LayoutToken> getTableTokens() {
         return tableTokens;
     }
@@ -1883,6 +1888,7 @@ public class Document implements Serializable {
 
         // Clear previous token lists
         figureTokens.clear();
+        figureTokensByArea.clear();
         tableTokens.clear();
         tableTokensByArea.clear();
         ignoredTokens.clear();
@@ -1973,6 +1979,7 @@ public class Document implements Serializable {
             switch (area.getType()) {
                 case FIGURE :
                     figureTokens.add(token);
+                    figureTokensByArea.computeIfAbsent(area, k -> new ArrayList<>()).add(token);
                     figureTokenCount++;
                     break;
                 case TABLE :

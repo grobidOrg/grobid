@@ -348,7 +348,10 @@ public class FullTextParser extends AbstractParser {
                 LOGGER.debug("Fulltext model: The featured body is empty");
             }
 
-            // Save typed area tables before annex processing (which overwrites doc.annexTables)
+            // Save typed area figures and tables before annex processing (which overwrites
+            // doc.annexFigures / doc.annexTables via setAnnexFigures()/setAnnexTables())
+            List<Figure> typedAreaFigures = doc.getAnnexFigures() != null
+                ? new ArrayList<>(doc.getAnnexFigures()) : new ArrayList<>();
             List<Table> typedAreaTables = doc.getAnnexTables() != null
                 ? new ArrayList<>(doc.getAnnexTables()) : new ArrayList<>();
 
@@ -426,7 +429,14 @@ public class FullTextParser extends AbstractParser {
                 doc.setAnnexEquations(annexEquations);
             }
 
-            // Merge typed area tables back (they were overwritten by annex processing)
+            // Merge typed area figures and tables back (they were overwritten by annex processing)
+            if (!typedAreaFigures.isEmpty()) {
+                if (annexFigures == null) {
+                    annexFigures = new ArrayList<>();
+                }
+                annexFigures.addAll(typedAreaFigures);
+                doc.setAnnexFigures(annexFigures);
+            }
             if (!typedAreaTables.isEmpty()) {
                 if (annexTables == null) {
                     annexTables = new ArrayList<>();
@@ -4101,38 +4111,70 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
         LOGGER.debug("Processing typed areas: {} figures, {} tables",
                     doc.getFigureAreas().size(), doc.getTableAreas().size());
 
-        // Process figure areas using the figure ML model
-        if (!doc.getFigureAreas().isEmpty() && !doc.getFigureTokens().isEmpty()) {
+        // Process figure areas using the figure ML model - each area separately, so that each
+        // user-provided region yields its own <figure> (processing them as a single combined token
+        // blob produced one malformed figure that was then dropped at TEI serialization).
+        if (!doc.getFigureAreas().isEmpty() && !doc.getFigureTokensByArea().isEmpty()) {
             if (doc.getAnnexFigures() == null) {
                 doc.setAnnexFigures(new ArrayList<>());
             }
 
-            Figure figure = null;
-            try {
-                Pair<String, List<LayoutToken>> featurePair =
-                    generateFeaturesForTokens(doc.getFigureTokens(), doc);
-                if (featurePair != null && isNotBlank(featurePair.getLeft())) {
-                    figure = parsers.getFigureParser().processing(
-                        featurePair.getRight(), featurePair.getLeft());
+            for (Map.Entry<TypedArea, List<LayoutToken>> entry : doc.getFigureTokensByArea().entrySet()) {
+                TypedArea area = entry.getKey();
+                List<LayoutToken> areaTokens = entry.getValue();
+                if (areaTokens.isEmpty()) {
+                    continue;
                 }
-            } catch (Exception e) {
-                LOGGER.warn("Figure ML processing failed, falling back to direct construction", e);
-            }
 
-            if (figure == null) {
-                // Fallback: create Figure directly from tokens
-                figure = new Figure();
-                figure.setContent(new StringBuilder(LayoutTokensUtil.toText(doc.getFigureTokens())));
-            }
-            figure.setLayoutTokens(doc.getFigureTokens());
-            for (LayoutToken lt : doc.getFigureTokens()) {
-                if (!LayoutTokensUtil.spaceyToken(lt.t()) && !LayoutTokensUtil.newLineToken(lt.t())) {
-                    figure.setPage(lt.getPage());
-                    break;
+                Figure figure = null;
+                try {
+                    Pair<String, List<LayoutToken>> featurePair =
+                        generateFeaturesForTokens(areaTokens, doc);
+                    if (featurePair != null && isNotBlank(featurePair.getLeft())) {
+                        figure = parsers.getFigureParser().processing(
+                            featurePair.getRight(), featurePair.getLeft());
+                    }
+                } catch (Exception e) {
+                    LOGGER.warn("Figure ML processing failed for area {}, falling back to direct construction", area, e);
                 }
+
+                if (figure == null) {
+                    // Fallback: create Figure directly from tokens
+                    figure = new Figure();
+                    figure.setContent(new StringBuilder(LayoutTokensUtil.toText(areaTokens)));
+                }
+                figure.setLayoutTokens(areaTokens);
+                for (LayoutToken lt : areaTokens) {
+                    if (!LayoutTokensUtil.spaceyToken(lt.t()) && !LayoutTokensUtil.newLineToken(lt.t())) {
+                        figure.setPage(lt.getPage());
+                        break;
+                    }
+                }
+
+                // Attach the graphic objects (bitmaps/vector boxes) located inside the figure area.
+                // This both captures the figure's actual image and makes it complete for TEI: a
+                // user-provided figure region usually has no model-labelled caption, and without any
+                // graphic Figure.isCompleteForTEI() would drop it entirely.
+                if (CollectionUtils.isNotEmpty(doc.getImages())) {
+                    List<GraphicObject> areaGraphics = new ArrayList<>();
+                    for (GraphicObject graphicObject : doc.getImages()) {
+                        if (area.intersects(graphicObject.getBoundingBox())) {
+                            areaGraphics.add(graphicObject);
+                        }
+                    }
+                    if (CollectionUtils.isNotEmpty(areaGraphics)) {
+                        figure.setGraphicObjects(areaGraphics);
+                    }
+                }
+
+                LOGGER.info("Typed area figure from {}: caption={}, graphics={}, tokenCount={}",
+                    area, StringUtils.isNotBlank(figure.getCaption()),
+                    figure.getGraphicObjects() != null ? figure.getGraphicObjects().size() : 0,
+                    figure.getLayoutTokens() != null ? figure.getLayoutTokens().size() : 0);
+                doc.getAnnexFigures().add(figure);
             }
-            doc.getAnnexFigures().add(figure);
-            LOGGER.debug("Created figure from typed areas via ML processing");
+            LOGGER.info("Created {} figure(s) from {} typed areas",
+                doc.getAnnexFigures().size(), doc.getFigureTokensByArea().size());
         }
 
         // Process table areas using the table ML model - each area separately

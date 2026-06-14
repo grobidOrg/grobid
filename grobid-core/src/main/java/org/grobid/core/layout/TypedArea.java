@@ -92,6 +92,26 @@ public class TypedArea {
     }
 
     /**
+     * Checks if a bounding box (e.g. a graphic object) intersects with this typed area.
+     *
+     * @param box the bounding box to check
+     * @return true if the box is on the same page and intersects this typed area
+     */
+    public boolean intersects(BoundingBox box) {
+        if (box == null || box.getPage() != this.page) {
+            return false;
+        }
+
+        double areaRight = this.x + this.width;
+        double areaBottom = this.y + this.height;
+
+        return !(box.getX2() < this.x ||
+                box.getX() > areaRight ||
+                box.getY2() < this.y ||
+                box.getY() > areaBottom);
+    }
+
+    /**
      * Creates an TypedArea from a coordinate string in the format: "page,x,y,width,height,name"
      */
     public static TypedArea fromString(String coordString) {
