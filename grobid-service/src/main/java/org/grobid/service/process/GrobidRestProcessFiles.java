@@ -154,6 +154,7 @@ public class GrobidRestProcessFiles {
                 includeDiscardedText,
                 startPage,
                 endPage,
+                null,
                 expectedResponseType,
                 false,
                 null);
@@ -167,6 +168,7 @@ public class GrobidRestProcessFiles {
             final boolean includeDiscardedText,
             int startPage,
             int endPage,
+            final List<org.grobid.core.layout.TypedArea> typedAreas,
             ExpectedResponseType expectedResponseType,
             final boolean debugMode,
             final String modelsParam) {
@@ -210,6 +212,7 @@ public class GrobidRestProcessFiles {
                     .includeRawAffiliations(includeRawAffiliations)
                     .includeRawCopyrights(includeRawCopyrights)
                     .includeDiscardedText(includeDiscardedText)
+                    .typedAreas(typedAreas)
                     .debugLabelingCollector(debugCollector)
                     .build();
 
@@ -275,7 +278,8 @@ public class GrobidRestProcessFiles {
             final int consolidateFunders,
             final boolean includeRawAffiliations,
             final boolean includeRawCopyrights,
-            final boolean includeDiscardedText) {
+            final boolean includeDiscardedText,
+            final List<org.grobid.core.layout.TypedArea> typedAreas) {
         LOGGER.debug(methodLogIn());
         String retVal = null;
         Response response = null;
@@ -304,14 +308,19 @@ public class GrobidRestProcessFiles {
             String md5Str = DatatypeConverter.printHexBinary(digest).toUpperCase();
 
             // starts conversion process
+            GrobidAnalysisConfig config = GrobidAnalysisConfig.builder()
+                .consolidateHeader(consolidateHeader)
+                .consolidateFunders(consolidateFunders)
+                .includeRawAffiliations(includeRawAffiliations)
+                .includeRawCopyrights(includeRawCopyrights)
+                .includeDiscardedText(includeDiscardedText)
+                .typedAreas(typedAreas)
+                .build();
+
             retVal = engine.processHeaderFunding(
                     originFile,
                     md5Str,
-                    consolidateHeader,
-                    consolidateFunders,
-                    includeRawAffiliations,
-                    includeRawCopyrights,
-                    includeDiscardedText);
+                    config);
 
             if (GrobidRestUtils.isResultNullOrEmpty(retVal)) {
                 response = Response.status(Response.Status.NO_CONTENT).build();
@@ -390,6 +399,7 @@ public class GrobidRestProcessFiles {
                 segmentSentences,
                 teiCoordinates,
                 false,
+                null,
                 null);
     }
 
@@ -409,7 +419,8 @@ public class GrobidRestProcessFiles {
             final boolean segmentSentences,
             final List<String> teiCoordinates,
             final boolean debugMode,
-            final String modelsParam) throws Exception {
+            final String modelsParam,
+            final List<org.grobid.core.layout.TypedArea> typedAreas) throws Exception {
         LOGGER.debug(methodLogIn());
 
         // Validate the models filter up front so a bad request fails fast with a 400
@@ -457,6 +468,7 @@ public class GrobidRestProcessFiles {
                     .generateTeiCoordinates(teiCoordinates)
                     .withSentenceSegmentation(segmentSentences)
                     .flavor(flavor)
+                    .typedAreas(typedAreas)
                     .debugLabelingCollector(debugCollector)
                     .build();
 
@@ -620,6 +632,7 @@ public class GrobidRestProcessFiles {
                 segmentSentences,
                 teiCoordinates,
                 false,
+                null,
                 null);
     }
 
@@ -638,7 +651,8 @@ public class GrobidRestProcessFiles {
             final boolean segmentSentences,
             final List<String> teiCoordinates,
             final boolean debugMode,
-            final String modelsParam) throws Exception {
+            final String modelsParam,
+            final List<org.grobid.core.layout.TypedArea> typedAreas) throws Exception {
 
         LOGGER.debug(methodLogIn());
 
@@ -689,6 +703,7 @@ public class GrobidRestProcessFiles {
                     .pdfAssetPath(new File(assetPath))
                     .withSentenceSegmentation(segmentSentences)
                     .flavor(flavor)
+                    .typedAreas(typedAreas)
                     .debugLabelingCollector(debugCollector)
                     .build();
 

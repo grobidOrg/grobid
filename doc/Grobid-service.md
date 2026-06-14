@@ -190,6 +190,7 @@ Extract the header of the input PDF document, normalize it and convert it into a
 |           |                       |                   | `end`                    | optional         | End page number of the PDF to be considered, next pages will be skipped/ignored, integer with first page starting at `1` (default `2`, end with the last page of the PDF)                                                                        |
 |           |                       |                   | `debugMode`              | optional         | If `1` or `true`, replaces the structured response with a `text/plain` dump of the raw CRF/sequence-labelling output of each model invoked during processing. See [Debug raw labelling output](#debug-raw-labelling-output).                       |
 |           |                       |                   | `models`                 | optional         | Comma-separated list of model names to include in the debug response (e.g. `segmentation,header`). Only meaningful when `debugMode` is enabled. The pipeline still runs in full; this only filters the response. Unknown model names yield `400`. |
+|           |                       |                   | `typedAreas`             | optional         | JSON array specifying areas with coordinates and types for specialized processing (see [Typed Areas](#typed-areas) below)                                                                                      |
 
 
 Use `Accept: application/x-bibtex` to retrieve BibTeX format instead of XML TEI.
@@ -241,6 +242,7 @@ Convert the complete input document into TEI XML format (header, body and biblio
 |           |                       |                      | `flavor`                 | optional        | Indicate which flavor to apply for structuring the document. Useful when the default structuring cannot be applied to a specific document (e.g. the body is empty. More technical details and available flavor names in the [dedicated page](Grobid-specialized-processes.md). |
 |           |                       |                      | `debugMode`              | optional        | If `1` or `true`, replaces the TEI XML response with a `text/plain` dump of the raw CRF/sequence-labelling output of each model invoked during processing. See [Debug raw labelling output](#debug-raw-labelling-output).                                          |
 |           |                       |                      | `models`                 | optional        | Comma-separated list of model names to include in the debug response (e.g. `segmentation,header,fulltext,citation`). Only meaningful when `debugMode` is enabled. The pipeline still runs in full; this only filters the response. Unknown model names yield `400`. |
+|           |                       |                      | `typedAreas`             | optional        | JSON array specifying areas with coordinates and types for specialized processing (see [Typed Areas](#typed-areas) below)                                                                                                 |
 
 Response status codes:
 
@@ -305,6 +307,7 @@ Extract and convert all the bibliographical references present in the input docu
 |           |                       |                    | `includeRawCitations`  | optional      | `includeRawCitations` is a boolean value, `0` (default. do not include raw reference string in the result) or `1` (include raw reference string in the result). |
 |           |                       |                    | `debugMode`            | optional      | If `1` or `true`, replaces the response with a `text/plain` dump of the raw CRF/sequence-labelling output of each model invoked during processing. See [Debug raw labelling output](#debug-raw-labelling-output). |
 |           |                       |                    | `models`               | optional      | Comma-separated list of model names to include in the debug response (e.g. `segmentation,reference-segmenter,citation`). Only meaningful when `debugMode` is enabled. The pipeline still runs in full; this only filters the response. Unknown model names yield `400`. |
+|           |                       |                    | `typedAreas`            | optional      | JSON array specifying areas with coordinates and types for specialized processing (see [Typed Areas](#typed-areas) below) |
 
 Use `Accept: application/x-bibtex` to retrieve BibTeX instead of TEI.
 
@@ -382,6 +385,135 @@ curl -v --form input=@./thefile.pdf --form debugMode=true localhost:8070/api/pro
 ```console
 curl -v --form input=@./thefile.pdf --form debugMode=true --form models=segmentation,header localhost:8070/api/processFulltextDocument
 ```
+
+## Typed Areas
+
+The typed areas feature allows you to specify regions in PDF documents for specialized processing. Instead of relying solely on automatic detection, you can pre-identify areas containing figures, tables, or content to be ignored. This provides better accuracy and control over the document processing pipeline.
+
+### Supported Area Types
+
+- **`figure`**: Areas containing figures/diagrams that will be processed with the specialized figure model
+- **`table`**: Areas containing tables that will be processed with the specialized table model
+- **`ignore`**: Areas that should be completely excluded from all processing
+
+### JSON Format
+
+The `typedAreas` parameter expects a JSON array with the following structure:
+
+```json
+[
+  {
+    "page": 1,
+    "x": 100.0,
+    "y": 200.0,
+    "width": 300.0,
+    "height": 150.0,
+    "type": "figure"
+  },
+  {
+    "page": 1,
+    "x": 450.0,
+    "y": 200.0,
+    "width": 250.0,
+    "height": 200.0,
+    "type": "table"
+  },
+  {
+    "page": 1,
+    "x": 50.0,
+    "y": 500.0,
+    "width": 500.0,
+    "height": 100.0,
+    "type": "ignore"
+  }
+]
+```
+
+### Parameters
+
+| Parameter | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `page` | integer | Yes | Page number (1-based, following PDF convention) |
+| `x` | number | Yes | X-coordinate of the upper-left corner of the area |
+| `y` | number | Yes | Y-coordinate of the upper-left corner of the area |
+| `width` | number | Yes | Width of the area |
+| `height` | number | Yes | Height of the area |
+| `type` | string | Yes | Area type: `"figure"`, `"table"`, or `"ignore"` |
+
+### Coordinate System
+
+The coordinate system follows the PDF convention:
+- **Origin**: Upper-left corner of the page
+- **Units**: Points (1/72 inch)
+- **Page numbering**: 1-based (first page is page 1)
+
+### Processing Behavior
+
+**Figure areas**:
+- Tokens within figure areas are extracted from the main text processing
+- Applied to the specialized FigureParser model
+- Results are integrated into the TEI output as structured figure elements
+- Bypasses the segmentation model for improved accuracy
+
+**Table areas**:
+- Tokens within table areas are extracted from the main text processing
+- Applied to the specialized TableParser model
+- Results are integrated into the TEI output as structured table elements
+- Bypasses the segmentation model for improved accuracy
+
+**Ignore areas**:
+- Tokens within ignore areas are completely discarded
+- No further processing is performed on these regions
+- Useful for excluding headers, footers, watermarks, or other unwanted content
+
+### Usage Examples
+
+**cURL example with typed areas:**
+```bash
+curl -v -H "Accept: application/xml" \
+  --form input=@./document.pdf \
+  --form typedAreas='[
+    {"page": 1, "x": 100, "y": 200, "width": 300, "height": 150, "type": "figure"},
+    {"page": 1, "x": 450, "y": 200, "width": 250, "height": 200, "type": "table"}
+  ]' \
+  localhost:8070/api/processFulltextDocument
+```
+
+**Python example:**
+```python
+import requests
+import json
+
+typed_areas = [
+    {"page": 1, "x": 100, "y": 200, "width": 300, "height": 150, "type": "figure"},
+    {"page": 1, "x": 450, "y": 200, "width": 250, "height": 200, "type": "table"}
+]
+
+with open('document.pdf', 'rb') as f:
+    files = {'input': f}
+    data = {'typedAreas': json.dumps(typed_areas)}
+    response = requests.post(
+        'http://localhost:8070/api/processFulltextDocument',
+        files=files,
+        data=data,
+        headers={'Accept': 'application/xml'}
+    )
+```
+
+### Benefits
+
+1. **Improved Accuracy**: Pre-identified figures and tables bypass the segmentation model, reducing detection errors
+2. **Better Quality**: Specialized models applied to known area types produce higher quality results
+3. **Performance**: More efficient processing by avoiding unnecessary model applications
+4. **Control**: Precise control over which regions are processed and how
+5. **Integration**: Seamlessly integrated into existing TEI output structure
+
+### Error Handling
+
+- Invalid JSON format will result in HTTP 400 error
+- Invalid area types will be logged as warnings and skipped
+- Coordinates outside page boundaries will be clamped to valid ranges
+- Missing required fields will cause the area to be skipped with a warning
 
 ### Raw text to TEI conversion services
 
