@@ -3735,8 +3735,6 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
         FeaturesVectorFulltext features;
         FeaturesVectorFulltext previousFeatures = null;
 
-        List<LayoutToken> filteredTokens = new ArrayList<>();
-
         int mm = 0; // page position
         int nn = 0; // document position
         double lineStartX = Double.NaN;
@@ -3857,7 +3855,6 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
                 }
             }
 
-            filteredTokens.add(token);
             features.string = text;
 
             if (graphicBitmap) {
@@ -4083,7 +4080,13 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
             return null;
         }
 
-        return Pair.of(fulltext.toString(), filteredTokens);
+        // Return the full token list (whitespace included) rather than only the feature-bearing
+        // tokens: the figure/table parser realigns the labelled result with these tokens via
+        // TaggingTokenClusteror, and LayoutTokensUtil.toText() relies on the space/newline tokens
+        // to render inter-word spacing. Dropping them here concatenated the words (e.g.
+        // "NewPhotometryofKnownRBCClusters"). This mirrors getBodyTextFeatured(), which adds every
+        // token to its returned LayoutTokenization before any filtering.
+        return Pair.of(fulltext.toString(), tokens);
     }
 
     /**

@@ -1917,33 +1917,76 @@ public class Document implements Serializable {
         int tableTokenCount = 0;
         int ignoredTokenCount = 0;
 
-        for (LayoutToken token : tokenizations) {
-            // Check if token intersects with any typed area
+        // First pass: resolve the owning area for each coordinate-bearing token. Whitespace tokens
+        // (" ", "\n") carry no coordinates (x=y=-1, width=0), so they can never satisfy
+        // TypedArea.contains(); they are resolved from their neighbours in the second pass.
+        int nbTokens = tokenizations.size();
+        TypedArea[] tokenAreas = new TypedArea[nbTokens];
+        for (int i = 0; i < nbTokens; i++) {
+            LayoutToken token = tokenizations.get(i);
+            if (isLayoutWhitespace(token)) {
+                continue;
+            }
             for (TypedArea area : typedAreas) {
-                if (area.contains(token)) {
-                    switch (area.getType()) {
-                        case FIGURE :
-                            figureTokens.add(token);
-                            figureTokenCount++;
-                            break;
-                        case TABLE :
-                            tableTokens.add(token);
-                            tableTokensByArea.computeIfAbsent(area, k -> new ArrayList<>()).add(token);
-                            tableTokenCount++;
-                            break;
-                        case IGNORE :
-                            ignoredTokens.add(token);
-                            ignoredTokenCount++;
-                            break;
-                        case PARATEXT :
-                            ignoredTokens.add(token);
-                            ignoredTokenCount++;
-                            break;
-                    }
-                    excludedTokens.add(token);
+                if (area.getType() != null && area.contains(token)) {
+                    tokenAreas[i] = area;
                     break;
                 }
             }
+        }
+
+        // Second pass: attach a whitespace token to an area only when both of its immediate
+        // non-whitespace neighbours belong to that same area. This preserves the inter-word spaces
+        // inside a figure/table region (otherwise toText() would concatenate the words, e.g.
+        // "NewPhotometryofKnownRBCClusters") while still dropping the boundary spaces separating a
+        // region from the surrounding text.
+        for (int i = 0; i < nbTokens; i++) {
+            if (!isLayoutWhitespace(tokenizations.get(i))) {
+                continue;
+            }
+            TypedArea previousArea = null;
+            for (int j = i - 1; j >= 0; j--) {
+                if (!isLayoutWhitespace(tokenizations.get(j))) {
+                    previousArea = tokenAreas[j];
+                    break;
+                }
+            }
+            TypedArea nextArea = null;
+            for (int j = i + 1; j < nbTokens; j++) {
+                if (!isLayoutWhitespace(tokenizations.get(j))) {
+                    nextArea = tokenAreas[j];
+                    break;
+                }
+            }
+            if (previousArea != null && previousArea == nextArea) {
+                tokenAreas[i] = previousArea;
+            }
+        }
+
+        // Third pass: bucket each token by its resolved area.
+        for (int i = 0; i < nbTokens; i++) {
+            TypedArea area = tokenAreas[i];
+            if (area == null) {
+                continue;
+            }
+            LayoutToken token = tokenizations.get(i);
+            switch (area.getType()) {
+                case FIGURE :
+                    figureTokens.add(token);
+                    figureTokenCount++;
+                    break;
+                case TABLE :
+                    tableTokens.add(token);
+                    tableTokensByArea.computeIfAbsent(area, k -> new ArrayList<>()).add(token);
+                    tableTokenCount++;
+                    break;
+                case IGNORE :
+                case PARATEXT :
+                    ignoredTokens.add(token);
+                    ignoredTokenCount++;
+                    break;
+            }
+            excludedTokens.add(token);
         }
 
         recalculateBlockPointers();
@@ -1954,6 +1997,15 @@ public class Document implements Serializable {
                 tableTokenCount,
                 ignoredTokenCount,
                 excludedTokens.size());
+    }
+
+    /**
+     * A layout whitespace token is a space (" ") or newline ("\n") separator. These tokens carry no
+     * usable coordinates, so they are positioned by their neighbours rather than by geometry.
+     */
+    private static boolean isLayoutWhitespace(LayoutToken token) {
+        String text = token.getText();
+        return text != null && (LayoutTokensUtil.spaceyToken(text) || LayoutTokensUtil.newLineToken(text));
     }
 
     /**
