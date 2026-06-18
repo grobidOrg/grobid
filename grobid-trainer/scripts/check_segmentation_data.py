@@ -535,9 +535,9 @@ def run_validate(splits):
                 continue
 
             for check_num, check_fn in [
-                (2, lambda te: check_valid_labels(te)),
-                (3, lambda te: check_untagged_text(te)),
-                (4, lambda te: check_empty_labels(te)),
+                (2, lambda elem: check_valid_labels(elem)),
+                (3, lambda elem: check_untagged_text(elem)),
+                (4, lambda elem: check_empty_labels(elem)),
             ]:
                 errs = check_fn(text_elem)
                 if errs:
