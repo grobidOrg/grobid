@@ -1,0 +1,119 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.21153__dlr2012vol17no2art87">
+    <titleStmt>
+      <title level="a">'Sentencing in International Criminal Law: The UN Ad Hoc Tribunals and Future Perspectives for the ICC' by Silva D'Ascoli</title>
+      <author>
+        <persName>
+          <forename>Gilles</forename>
+          <surname>Renaud</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Deakin University</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2013</date>
+      <idno type="DOI">10.21153/dlr2012vol17no2art87</idno>
+      <ptr target="https://doi.org/10.21153/dlr2012vol17no2art87"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Gilles Renaud. (2013). 'Sentencing in International Criminal Law: The UN Ad Hoc Tribunals and Future Perspectives for the ICC' by Silva D'Ascoli. Deakin Law Review, 17(2), 453. DOI: 10.21153/dlr2012vol17no2art87</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">'Sentencing in International Criminal Law: The UN Ad Hoc Tribunals and Future Perspectives for the ICC' by Silva D'Ascoli</title>
+          <author>
+            <persName>
+              <forename>Gilles</forename>
+              <surname>Renaud</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Deakin Law Review</title>
+          <imprint>
+            <biblScope unit="volume">17</biblScope>
+            <biblScope unit="issue">2</biblScope>
+            <biblScope unit="page">453</biblScope>
+            <date when="2013">2013</date>
+            <publisher>Deakin University</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.21153/dlr2012vol17no2art87</idno>
+        <ptr target="https://doi.org/10.21153/dlr2012vol17no2art87"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-05-20T20:59:02.569133Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-62-gdd0608bb6</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-20T20:59:02.569133Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-20T20:59:11.084Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-05-20T21:01:33.667Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-16T16:47:57.920Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-16T16:50:43.362Z" status="checked" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> Silvia D'Ascoli, Sentencing in International Criminal Law: The UN ad hoc Tribunals and<lb/> Future Perspectives for the ICC (Hart, 2011).<lb/> </bibl>
+      <bibl><label>2</label> I have written: The Sentencing Code of Canada: Principles and Objectives (LexisNexis, 2009);<lb/> </bibl>
+      <bibl>Les Misérables on Sentencing (Academic Press, 2007);</bibl> 
+      <bibl>Speaking to Sentence: A Practical Guide<lb/> (Carswell, 2005);</bibl> 
+      <bibl>Principes de la détermination de la peine (Les Éditions Yvon Blais, 2004).<lb/> </bibl>
+      <bibl><label>3</label> Two recent outstanding examples follow: AP Simester and Andreas von Hirsch, Crimes, Harms,<lb/> and Wrongs: On the Principles of Criminalisation (Hart Publishing, 2011) reviewed by the<lb/> undersigned in (2012) 36 Criminal Law Journal 192; </bibl>
+      <bibl>Julian V Roberts (ed), Mitigation and<lb/> Aggravation at Sentencing (Cambridge University Press, 2011) also reviewed by the<lb/> undersigned, in (2012) 36 Criminal Law Journal 317.<lb/> </bibl>
+      <bibl><label>4</label> D'Ascoli, above n 1, 203-61.<lb/> </bibl>
+      <bibl><label>5</label> Ibid 263-88.<lb/> </bibl>
+      <bibl><label>6</label> Ibid 289-320.<lb/> </bibl>
+      <bibl><label>7</label> Ibid 315-17.<lb/> </bibl>
+      <bibl><label>8</label> Ibid 42.<lb/> </bibl>
+      <bibl><label>9</label> Ibid 89.<lb/> </bibl>
+      <bibl><label>10</label> Ibid 91, 153.<lb/> </bibl>
+      <bibl><label>11</label> Ibid 129.<lb/> </bibl>
+      <bibl><label>12</label> Ibid 151.<lb/> </bibl>
+      <bibl><label>13</label> Ibid 517.<lb/> </bibl>
+      <bibl><label>14</label> Ibid 178-83, 315-6.<lb/> </bibl>
+      <bibl><label>15</label> Ibid at 194.</bibl>
+    </listBibl>
+  </text>
+</TEI>
