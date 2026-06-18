@@ -4204,6 +4204,9 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
 
                 if (CollectionUtils.isNotEmpty(tables)) {
                     for (Table table : tables) {
+                        // The region is user-provided, so keep the table even if the model did not
+                        // label a head/caption (otherwise Table.toTEI() would drop it and its coords).
+                        table.setFromTypedArea(true);
                         for (LayoutToken lt : areaTokens) {
                             if (!LayoutTokensUtil.spaceyToken(lt.t()) && !LayoutTokensUtil.newLineToken(lt.t())) {
                                 table.setPage(lt.getPage());
@@ -4218,7 +4221,9 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
                 } else {
                     // Fallback: create Table directly from tokens
                     Table table = new Table();
+                    table.setFromTypedArea(true);
                     table.setLayoutTokens(areaTokens);
+                    table.getContentTokens().addAll(areaTokens);
                     table.setContent(new StringBuilder(LayoutTokensUtil.toText(areaTokens)));
                     for (LayoutToken lt : areaTokens) {
                         if (!LayoutTokensUtil.spaceyToken(lt.t()) && !LayoutTokensUtil.newLineToken(lt.t())) {
