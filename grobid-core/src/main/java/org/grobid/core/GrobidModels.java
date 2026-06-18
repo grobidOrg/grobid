@@ -172,7 +172,7 @@ public enum GrobidModels implements GrobidModel {
             return model;
         }
         GrobidModel grobidModel = modelFor(model.toString() + "/" + flavor.getLabel().toLowerCase());
-        if (flavoredModelExistsOnDisk(model, grobidModel)) {
+        if (flavoredModelExistsOnDisk(grobidModel)) {
             return grobidModel;
         }
         LOGGER.info(
@@ -191,23 +191,23 @@ public enum GrobidModels implements GrobidModel {
     /**
      * Returns true when a trained model file/directory for the flavored model exists on disk.
      *
-     * The check must be engine-aware because Wapiti and DeLFT use different on-disk layouts:
-     *   - Wapiti:  <home>/models/<flavor-folder>/model.wapiti            (a file, slash-separated path)
-     *   - DeLFT:   <home>/models/<hyphenated-name>-<architecture>/      (a directory, hyphenated name)
+     * The check is engine-aware because Wapiti and DeLFT use different on-disk layouts:
+     *   - Wapiti:  <home>/models/<flavor-folder>/model.wapiti          (a file, slash-separated path)
+     *   - DeLFT:   <home>/models/<hyphenated-name>-<architecture>/    (a directory, hyphenated name)
      *
-     * The engine is read from the base model — flavors inherit the engine from the base
-     * (and after the YAML cleanup, flavors typically have no config entry of their own).
+     * Both engine and DeLFT architecture are resolved against the flavored model itself.
+     * The field-level prefix-fallback in GrobidProperties means each field is inherited
+     * from the closest ancestor when the flavor entry omits it, or used as-is when the
+     * flavor entry sets it explicitly — so this helper does not need a separate handle
+     * on the base model.
      *
-     * @param baseModel     the unflavored model (used to read engine + architecture from config)
      * @param flavoredModel the candidate flavored model whose existence we are testing
      * @return true if a usable model exists on disk for {@code flavoredModel}
      */
-    private static boolean flavoredModelExistsOnDisk(GrobidModel baseModel, GrobidModel flavoredModel) {
-        // Both engine and DeLFT architecture are resolved against the flavored model.
-        // The field-level prefix-fallback in GrobidProperties means each field is
-        // inherited from the base when the flavor entry omits it, or overridden when
-        // the flavor entry sets it explicitly (e.g. a Wapiti-only flavor of a DeLFT
-        // base must set `engine: "wapiti"` on the flavor entry — see header-sdo-ietf).
+    private static boolean flavoredModelExistsOnDisk(GrobidModel flavoredModel) {
+        // A flavor that omits `engine:` inherits from the base; a flavor that sets it
+        // explicitly overrides — e.g. a Wapiti-only flavor of a DeLFT base must set
+        // `engine: "wapiti"` on the flavor entry (see header-sdo-ietf in grobid.yaml).
         GrobidCRFEngine engine = GrobidProperties.getGrobidEngine(flavoredModel);
 
         if (engine == GrobidCRFEngine.DELFT) {
