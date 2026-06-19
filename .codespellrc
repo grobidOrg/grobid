@@ -1,6 +1,7 @@
 [codespell]
-# Skip: git files, binary/generated files, training data/models, test resources, lexicons, caches
-skip = .git*,*.pdf,*.svg,locale,*.css,*.min.*,.codespellrc,.cache,.npm,grobid-home,grobid-trainer,*/src/test/*,*.fulltext,*.header,*.wapiti,*.person,*.wf,*.figure,*.lst,*.family,*.odd,*.referenceSegmenter,*.segmentation,*.xml,*.bcmap,*.js
+# Skip: git files, binary/generated files, training data/models, test resources, lexicons, caches,
+# and vendored third-party code (DiffMatchPatch.java is the upstream google/diff-match-patch source)
+skip = .git*,*.pdf,*.svg,locale,*.css,*.min.*,.codespellrc,.cache,.npm,grobid-home,grobid-trainer,*/src/test/*,*.fulltext,*.header,*.wapiti,*.person,*.wf,*.figure,*.lst,*.family,*.odd,*.referenceSegmenter,*.segmentation,*.xml,*.bcmap,*.js,*/matching/DiffMatchPatch.java
 check-hidden = true
 # Ignore legitimate words:
 #   serie - French for "series" in bibliographic context
