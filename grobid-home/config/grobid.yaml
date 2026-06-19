@@ -150,7 +150,8 @@ grobid:
         nbMaxIterations: 2000
 
     - name: "segmentation-sdo-ietf"
-      # engine inherited from "segmentation"
+      # explicit: only a Wapiti model is available for this flavor
+      engine: "wapiti"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.0000001
@@ -202,6 +203,7 @@ grobid:
 
     - name: "header-article-light-ref"
       # engine inherited from "header"
+      engine: "wapiti"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.000001
@@ -209,8 +211,7 @@ grobid:
         nbMaxIterations: 1500
 
     - name: "header-sdo-ietf"
-      # engine override: only a Wapiti model exists on disk for this flavor
-      # (grobid-home/models/header/sdo/ietf/model.wapiti).
+      # engine override: only a Wapiti model is available for this flavor
       engine: "wapiti"
       wapiti:
         # wapiti training parameters, they will be used at training time only
