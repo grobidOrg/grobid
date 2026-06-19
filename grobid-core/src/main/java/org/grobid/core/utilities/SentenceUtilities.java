@@ -182,9 +182,14 @@ public class SentenceUtilities {
                     finalSentencePositions.get(currentSentenceIndex).end);
             boolean moved = false;
 
+            // running character offset of the consumed layout tokens in the original text, used to check
+            // whether a candidate superscript reference marker actually falls inside a forbidden span
+            StringBuilder accumulator = new StringBuilder();
+
             // iterate on layout tokens in sync with sentences
             for (int i = 0; i < textLayoutTokens.size(); i++) {
                 LayoutToken token = textLayoutTokens.get(i);
+                accumulator.append(token);
                 if (token.getText() == null || token.getText().length() == 0)
                     continue;
 
@@ -220,7 +225,11 @@ public class SentenceUtilities {
                             continue;
                         }
 
-                        if (this.isValidSuperScriptNumericalReferenceMarker(nextToken)) {
+                        // only push the boundary past the superscript marker when it actually falls
+                        // inside a forbidden span (a real reference marker), otherwise we leave the
+                        // sentence boundary as is (avoids cutting words a few characters too far)
+                        if (this.isValidSuperScriptNumericalReferenceMarker(nextToken)
+                                && isNextTokenFallingIntoAForbiddenInterval(accumulator.length() + j, forbidden)) {
                             pushedEnd += buffer + nextToken.getText().length();
                             buffer = 0;
                         } else
@@ -301,6 +310,15 @@ public class SentenceUtilities {
             finalSentencePositions.add(position);
         }
         return finalSentencePositions;
+    }
+
+    /**
+     * Return true if the given offset falls inside one of the forbidden intervals (typically a
+     * reference marker span). Used to decide whether a superscript numerical marker following a
+     * sentence boundary should be attached to the sentence.
+     */
+    private static boolean isNextTokenFallingIntoAForbiddenInterval(int currentOffset, List<OffsetPosition> forbidden) {
+        return forbidden.stream().anyMatch(o -> currentOffset >= o.start && currentOffset < o.end);
     }
 
     /**
