@@ -20,8 +20,8 @@ public class SentenceUtilitiesTrimTest {
     @Test
     public void testTrimsTrailingWhitespace() {
         String text = "abc  ";
-        List<OffsetPosition> result =
-                SentenceUtilities.trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(0, 5)));
+        List<OffsetPosition> result = SentenceUtilities
+                .trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(0, 5)));
         assertThat(result, hasSize(1));
         assertThat(result.get(0).start, is(0));
         assertThat(result.get(0).end, is(3));
@@ -31,8 +31,8 @@ public class SentenceUtilitiesTrimTest {
     @Test
     public void testTrimsLeadingWhitespace() {
         String text = "   abc";
-        List<OffsetPosition> result =
-                SentenceUtilities.trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(0, 6)));
+        List<OffsetPosition> result = SentenceUtilities
+                .trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(0, 6)));
         assertThat(result, hasSize(1));
         assertThat(result.get(0).start, is(3));
         assertThat(result.get(0).end, is(6));
@@ -42,24 +42,24 @@ public class SentenceUtilitiesTrimTest {
     @Test
     public void testDropsWhitespaceOnlySpan() {
         String text = "abc   def";
-        List<OffsetPosition> result =
-                SentenceUtilities.trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(3, 6)));
+        List<OffsetPosition> result = SentenceUtilities
+                .trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(3, 6)));
         assertThat(result, hasSize(0));
     }
 
     @Test
     public void testDropsEmptySpan() {
         String text = "abcdef";
-        List<OffsetPosition> result =
-                SentenceUtilities.trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(3, 3)));
+        List<OffsetPosition> result = SentenceUtilities
+                .trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(3, 3)));
         assertThat(result, hasSize(0));
     }
 
     @Test
     public void testClampsEndPastTextLength() {
         String text = "abc";
-        List<OffsetPosition> result =
-                SentenceUtilities.trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(0, 100)));
+        List<OffsetPosition> result = SentenceUtilities
+                .trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(0, 100)));
         assertThat(result, hasSize(1));
         assertThat(result.get(0).end, is(3));
     }
@@ -67,8 +67,8 @@ public class SentenceUtilitiesTrimTest {
     @Test
     public void testDropsNegativeStart() {
         String text = "abc";
-        List<OffsetPosition> result =
-                SentenceUtilities.trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(-1, 3)));
+        List<OffsetPosition> result = SentenceUtilities
+                .trimAndFilterSentenceOffsets(text, Arrays.asList(new OffsetPosition(-1, 3)));
         assertThat(result, hasSize(0));
     }
 
@@ -96,8 +96,7 @@ public class SentenceUtilitiesTrimTest {
 
     @Test
     public void testEmptyInput() {
-        List<OffsetPosition> result =
-                SentenceUtilities.trimAndFilterSentenceOffsets("abc", Collections.emptyList());
+        List<OffsetPosition> result = SentenceUtilities.trimAndFilterSentenceOffsets("abc", Collections.emptyList());
         assertThat(result, hasSize(0));
     }
 }

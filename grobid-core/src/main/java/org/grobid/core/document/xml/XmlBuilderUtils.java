@@ -110,7 +110,7 @@ public class XmlBuilderUtils {
         // them, and the original `current >= 0x10000` test was dead code because a `char` never exceeds
         // 0xFFFF. codePointAt() yields the combined scalar value so valid astral characters are preserved,
         // while genuinely invalid lone surrogates are still dropped.
-        for (int i = 0; i < in.length(); ) {
+        for (int i = 0; i < in.length();) {
             int current = in.codePointAt(i);
             if ((current == 0x9) ||
                     (current == 0xA) ||

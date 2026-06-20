@@ -159,7 +159,8 @@ public class SentenceUtilitiesTest {
     public void testCorrectSegmentation_shouldCancelWrongSegmentation() {
         String paragraph = "(Foppiano and al. 2021) explains what he's thinking.";
         List<OffsetPosition> refSpans = getPositions(paragraph, Arrays.asList("(Foppiano and al. 2021)"));
-        givenDetected(getPositions(paragraph, Arrays.asList("(Foppiano and al.", "2021) explains what he's thinking.")));
+        givenDetected(
+                getPositions(paragraph, Arrays.asList("(Foppiano and al.", "2021) explains what he's thinking.")));
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(paragraph, refSpans);
         assertThat(theSentences.size(), is(1));
@@ -169,9 +170,12 @@ public class SentenceUtilitiesTest {
     public void testCorrectSegmentation_shouldCancelWrongSegmentation2() {
         String paragraph = "What we claim corresponds with what (Foppiano and al. 2021) explains what he's thinking.";
         List<OffsetPosition> refSpans = getPositions(paragraph, Arrays.asList("(Foppiano and al. 2021)"));
-        givenDetected(getPositions(
-                paragraph,
-                Arrays.asList("What we claim corresponds with what (Foppiano and al.", "2021) explains what he's thinking.")));
+        givenDetected(
+                getPositions(
+                        paragraph,
+                        Arrays.asList(
+                                "What we claim corresponds with what (Foppiano and al.",
+                                "2021) explains what he's thinking.")));
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(paragraph, refSpans);
         assertThat(theSentences.size(), is(1));

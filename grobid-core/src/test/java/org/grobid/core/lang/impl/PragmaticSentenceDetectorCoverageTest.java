@@ -78,10 +78,20 @@ public class PragmaticSentenceDetectorCoverageTest {
         if (!spans.isEmpty()) {
             OffsetPosition first = spans.get(0);
             OffsetPosition lastSpan = spans.get(spans.size() - 1);
-            System.out.println("first span [" + first.start + "," + first.end + "] = "
-                    + text.substring(first.start, Math.min(first.end, first.start + 60)));
-            System.out.println("last  span [" + lastSpan.start + "," + lastSpan.end + "] tail = "
-                    + text.substring(Math.max(lastSpan.start, lastSpan.end - 60), lastSpan.end));
+            System.out.println(
+                    "first span ["
+                            + first.start
+                            + ","
+                            + first.end
+                            + "] = "
+                            + text.substring(first.start, Math.min(first.end, first.start + 60)));
+            System.out.println(
+                    "last  span ["
+                            + lastSpan.start
+                            + ","
+                            + lastSpan.end
+                            + "] tail = "
+                            + text.substring(Math.max(lastSpan.start, lastSpan.end - 60), lastSpan.end));
         }
     }
 }
