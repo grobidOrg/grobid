@@ -35,7 +35,8 @@ public class GrobidRestProcessFilesTest {
     @Test
     public void dispatchProcessing_selectionCitation_shouldWork() throws Exception {
         try (MockedStatic<CitationsVisualizer> citationsVisualizer = Mockito.mockStatic(CitationsVisualizer.class)) {
-            citationsVisualizer.when(() -> CitationsVisualizer.annotatePdfWithCitations(
+            citationsVisualizer.when(
+                    () -> CitationsVisualizer.annotatePdfWithCitations(
                             nullable(PDDocument.class),
                             nullable(Document.class),
                             nullable(List.class)))
@@ -47,17 +48,19 @@ public class GrobidRestProcessFilesTest {
                     null,
                     null);
 
-            citationsVisualizer.verify(() -> CitationsVisualizer.annotatePdfWithCitations(
-                    nullable(PDDocument.class),
-                    nullable(Document.class),
-                    nullable(List.class)));
+            citationsVisualizer.verify(
+                    () -> CitationsVisualizer.annotatePdfWithCitations(
+                            nullable(PDDocument.class),
+                            nullable(Document.class),
+                            nullable(List.class)));
         }
     }
 
     @Test
     public void dispatchProcessing_selectionBlock_shouldWork() throws Exception {
         try (MockedStatic<BlockVisualizer> blockVisualizer = Mockito.mockStatic(BlockVisualizer.class)) {
-            blockVisualizer.when(() -> BlockVisualizer.annotateBlocks(
+            blockVisualizer.when(
+                    () -> BlockVisualizer.annotateBlocks(
                             nullable(PDDocument.class),
                             nullable(File.class),
                             nullable(Document.class),
@@ -76,24 +79,26 @@ public class GrobidRestProcessFilesTest {
                     documentSourceMock,
                     null);
 
-            blockVisualizer.verify(() -> BlockVisualizer.annotateBlocks(
-                    nullable(PDDocument.class),
-                    nullable(File.class),
-                    nullable(Document.class),
-                    anyBoolean(),
-                    anyBoolean(),
-                    anyBoolean()));
+            blockVisualizer.verify(
+                    () -> BlockVisualizer.annotateBlocks(
+                            nullable(PDDocument.class),
+                            nullable(File.class),
+                            nullable(Document.class),
+                            anyBoolean(),
+                            anyBoolean(),
+                            anyBoolean()));
             Mockito.verify(documentSourceMock).getXmlFile();
         }
     }
 
     @Test
     public void dispatchProcessing_selectionFigure_shouldWork() throws Exception {
-        try (MockedStatic<FigureTableVisualizer> figureTableVisualizer =
-                     Mockito.mockStatic(FigureTableVisualizer.class)) {
+        try (MockedStatic<FigureTableVisualizer> figureTableVisualizer = Mockito
+                .mockStatic(FigureTableVisualizer.class)) {
             File fakeFile = File.createTempFile("justForTheTest", "baomiao");
             fakeFile.deleteOnExit();
-            figureTableVisualizer.when(() -> FigureTableVisualizer.annotateFigureAndTables(
+            figureTableVisualizer.when(
+                    () -> FigureTableVisualizer.annotateFigureAndTables(
                             nullable(PDDocument.class),
                             nullable(File.class),
                             nullable(Document.class),
@@ -111,15 +116,16 @@ public class GrobidRestProcessFilesTest {
                     documentSourceMock,
                     null);
 
-            figureTableVisualizer.verify(() -> FigureTableVisualizer.annotateFigureAndTables(
-                    nullable(PDDocument.class),
-                    nullable(File.class),
-                    nullable(Document.class),
-                    anyBoolean(),
-                    anyBoolean(),
-                    anyBoolean(),
-                    anyBoolean(),
-                    anyBoolean()));
+            figureTableVisualizer.verify(
+                    () -> FigureTableVisualizer.annotateFigureAndTables(
+                            nullable(PDDocument.class),
+                            nullable(File.class),
+                            nullable(Document.class),
+                            anyBoolean(),
+                            anyBoolean(),
+                            anyBoolean(),
+                            anyBoolean(),
+                            anyBoolean()));
             Mockito.verify(documentSourceMock).getXmlFile();
         }
     }
