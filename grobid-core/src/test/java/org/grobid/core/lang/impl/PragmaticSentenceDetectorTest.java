@@ -209,4 +209,63 @@ public class PragmaticSentenceDetectorTest {
         }
 
     }
+
+    @Test
+    public void testGetSentenceOffsets_trailingSpaceChunk_notIncludedInOffset() {
+        // the segmenter returns chunks with a trailing space; the computed end offset must stop at the
+        // last non-space character so no trailing space is carried into the sentence element
+        String original_text = "Hello world. Next one.";
+        List<String> sentences = Arrays.asList("Hello world. ", "Next one.");
+        List<OffsetPosition> sentence_spans = PragmaticSentenceDetector.getSentenceOffsets(original_text, sentences);
+
+        assertThat(sentence_spans, hasSize(2));
+        assertThat(
+                original_text.substring(sentence_spans.get(0).start, sentence_spans.get(0).end),
+                is("Hello world."));
+        assertThat(
+                original_text.substring(sentence_spans.get(1).start, sentence_spans.get(1).end),
+                is("Next one."));
+    }
+
+    @Test
+    public void testGetSentenceOffsets_whitespaceOnlyChunk_dropped() {
+        // a whitespace-only chunk must not produce a span (it would surface as an empty <s> downstream),
+        // and it must not desynchronise the following chunk
+        String original_text = "A. B.";
+        List<String> sentences = Arrays.asList("A.", "   ", "B.");
+        List<OffsetPosition> sentence_spans = PragmaticSentenceDetector.getSentenceOffsets(original_text, sentences);
+
+        assertThat(sentence_spans, hasSize(2));
+        assertThat(
+                original_text.substring(sentence_spans.get(0).start, sentence_spans.get(0).end),
+                is("A."));
+        assertThat(
+                original_text.substring(sentence_spans.get(1).start, sentence_spans.get(1).end),
+                is("B."));
+    }
+
+    @Test
+    public void testGetSentenceOffsets_emptyChunk_dropped() {
+        // an empty chunk must not produce a zero-length span and must not corrupt the following offsets
+        String original_text = "First sentence. Second sentence.";
+        List<String> sentences = Arrays.asList("First sentence.", "", "Second sentence.");
+        List<OffsetPosition> sentence_spans = PragmaticSentenceDetector.getSentenceOffsets(original_text, sentences);
+
+        assertThat(sentence_spans, hasSize(2));
+        for (OffsetPosition span : sentence_spans) {
+            assertThat(span.end > span.start, is(true));
+        }
+        assertThat(
+                original_text.substring(sentence_spans.get(1).start, sentence_spans.get(1).end),
+                is("Second sentence."));
+    }
+
+    @Test
+    public void testFindInText_noSharedContent_returnsNotFound() {
+        // when the chunk shares nothing with the text window, recovery must report "not found" (-1)
+        // rather than a degenerate zero-length match at position 0
+        Pair<String, Integer> inText = PragmaticSentenceDetector.findInText("zzzzz", "ABCDE FGHIJ");
+        assertThat(inText.getRight(), is(-1));
+        assertThat(inText.getLeft(), is(""));
+    }
 }

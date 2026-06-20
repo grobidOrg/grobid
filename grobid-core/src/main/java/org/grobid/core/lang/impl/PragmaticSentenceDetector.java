@@ -4,9 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
 
-import com.google.common.base.Joiner;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.jruby.embed.LocalContextScope;
@@ -99,48 +97,39 @@ public class PragmaticSentenceDetector implements SentenceDetector {
     public static Pair<String, Integer> findInText(String subString, String text) {
 
         LinkedList<DiffMatchPatch.Diff> diffs = new DiffMatchPatch().diff_main(text, subString);
-        List<String> list = new ArrayList<>();
 
-        // Transform to a char based sequence
-        diffs.stream().forEach(d -> {
-            String text_chunk = d.text;
-            DiffMatchPatch.Operation operation = d.operation;
-            String op = " ";
-            if (operation.equals(DiffMatchPatch.Operation.INSERT)) {
-                op = "+";
-            } else if (operation.equals(DiffMatchPatch.Operation.DELETE)) {
-                op = "-";
-            }
-
-            for (int i = 0; i < text_chunk.toCharArray().length; i++) {
-                String sb = op + " " + text_chunk.toCharArray()[i];
-                list.add(sb);
-            }
-        });
-
-        List<String> list_cleaned = list.stream().filter(d -> d.charAt(0) != '+').collect(Collectors.toList());
-
-        boolean inside = false;
-        List<String> output = new ArrayList<>();
-        for (int i = 0; i < list_cleaned.size(); i++) {
-            String item = list_cleaned.get(i);
-            if (item.charAt(0) == '-' && !inside) {
+        // Walk the diff in original-text order, keeping only the characters that exist in the original
+        // text (EQUAL and DELETE operations); INSERT characters belong to subString only and are skipped.
+        // The resulting characters are therefore aligned one-to-one with a contiguous run of `text`.
+        List<Character> chars = new ArrayList<>();
+        List<DiffMatchPatch.Operation> ops = new ArrayList<>();
+        for (DiffMatchPatch.Diff d : diffs) {
+            if (d.operation == DiffMatchPatch.Operation.INSERT)
                 continue;
-            } else {
-                inside = true;
-                output.add(String.valueOf(text.charAt(i)));
+            for (int i = 0; i < d.text.length(); i++) {
+                chars.add(d.text.charAt(i));
+                ops.add(d.operation);
             }
         }
 
-        for (int i = output.size() - 1; i > -1; i--) {
-            String item = list_cleaned.get(i);
-            if (item.charAt(0) == '-' || item.charAt(0) == '+') {
-                output.remove(i);
-            } else {
-                break;
-            }
+        // Drop the text-only (DELETE) characters before the first match and after the last match, so the
+        // reconstructed substring spans from the first to the last character actually shared with subString.
+        int from = 0;
+        while (from < ops.size() && ops.get(from) == DiffMatchPatch.Operation.DELETE)
+            from++;
+        int to = ops.size();
+        while (to > from && ops.get(to - 1) == DiffMatchPatch.Operation.DELETE)
+            to--;
+
+        if (to <= from) {
+            // nothing shared with subString: signal "not found" rather than a degenerate zero-length match
+            return Pair.of("", -1);
         }
-        String adaptedSubString = Joiner.on("").join(output);
+
+        StringBuilder sb = new StringBuilder(to - from);
+        for (int i = from; i < to; i++)
+            sb.append(chars.get(i));
+        String adaptedSubString = sb.toString();
         int start = text.indexOf(adaptedSubString);
 
         return Pair.of(adaptedSubString, start);
@@ -163,7 +152,9 @@ public class PragmaticSentenceDetector implements SentenceDetector {
 
         for (int i = 0; i < retList.size(); i++) {
             String sentence = retList.get(i);
-            String sentenceClean = StringUtils.strip(sentence, "\n");
+            // strip all surrounding whitespace (not only newlines) so the computed end offset stops
+            // at the last non-space character and we never carry a trailing space into the sentence
+            String sentenceClean = StringUtils.strip(sentence);
 
             int start = -1;
             int end = -1;
@@ -204,7 +195,10 @@ public class PragmaticSentenceDetector implements SentenceDetector {
                         Pair<String, Integer> inText = findInText(sentenceClean, textAdapted);
                         start = inText.getRight();
                         outputStr = inText.getLeft();
-                        start += previousEnd;
+                        // the search window above starts at previousStart, so the relative offset must
+                        // be rebased on previousStart (not previousEnd)
+                        if (start > -1)
+                            start += previousStart;
                     } else {
                         Pair<String, Integer> inText = findInText(sentenceClean, textAdapted);
                         start = inText.getRight();
@@ -228,7 +222,12 @@ public class PragmaticSentenceDetector implements SentenceDetector {
                 previousEnd = end;
             }
 
-            result.add(new OffsetPosition(start, end));
+            // only emit well-formed spans: a zero-length or invalid span would otherwise surface as an
+            // empty <s></s> element downstream (the chunk-to-chunk synchronisation above is already
+            // updated, so dropping a degenerate span here does not desynchronise the following chunks)
+            if (start > -1 && end > start) {
+                result.add(new OffsetPosition(start, end));
+            }
         }
 
         return result;

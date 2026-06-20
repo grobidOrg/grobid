@@ -72,7 +72,7 @@ public class SentenceUtilities {
         if (text == null)
             return null;
         try {
-            return sdf.getInstance().detect(text);
+            return trimAndFilterSentenceOffsets(text, sdf.getInstance().detect(text));
         } catch (Exception e) {
             LOGGER.warn("Cannot detect sentences. ", e);
             return null;
@@ -93,7 +93,7 @@ public class SentenceUtilities {
         if (text == null)
             return null;
         try {
-            return sdf.getInstance().detect(text, lang);
+            return trimAndFilterSentenceOffsets(text, sdf.getInstance().detect(text, lang));
         } catch (Exception e) {
             LOGGER.warn("Cannot detect sentences. ", e);
             return null;
@@ -144,7 +144,7 @@ public class SentenceUtilities {
 
             // to be sure, we sort the forbidden positions
             if (forbidden == null)
-                return sentencePositions;
+                return trimAndFilterSentenceOffsets(text, sentencePositions);
             Collections.sort(forbidden);
 
             // cancel sentence boundaries within the forbidden spans
@@ -171,7 +171,7 @@ public class SentenceUtilities {
             }
 
             if (textLayoutTokens == null || textLayoutTokens.size() == 0)
-                return finalSentencePositions;
+                return trimAndFilterSentenceOffsets(text, finalSentencePositions);
 
             int pos = 0;
 
@@ -278,7 +278,7 @@ public class SentenceUtilities {
             // here, for instance non-breakable italic or bold chunks, or adding sentence split based on
             // spacing/indent
 
-            return finalSentencePositions;
+            return trimAndFilterSentenceOffsets(text, finalSentencePositions);
         } catch (Exception e) {
             LOGGER.warn("Cannot detect sentences. ", e);
             return null;
@@ -310,6 +310,46 @@ public class SentenceUtilities {
             finalSentencePositions.add(position);
         }
         return finalSentencePositions;
+    }
+
+    /**
+     * Guarantee the invariant that every returned sentence span is non-empty and carries no
+     * leading/trailing whitespace, measured against the original text. For each position we clamp
+     * the end into [0, text.length()], advance the start past leading whitespace, retract the end
+     * past trailing whitespace, and drop the span when it becomes empty (end &lt;= start) or was
+     * invalid (start &lt; 0). This runs on every detector output so the guarantee holds for all
+     * sentence segmentation implementations (it prevents both empty/whitespace-only {@code <s>}
+     * elements and a trailing space being left inside a sentence).
+     *
+     * @param text
+     *            the original text the offsets refer to
+     * @param positions
+     *            the sentence offset positions to normalise (not modified)
+     * @return a new list of normalised, non-empty offset positions
+     */
+    public static List<OffsetPosition> trimAndFilterSentenceOffsets(String text, List<OffsetPosition> positions) {
+        if (positions == null || text == null)
+            return positions;
+        int length = text.length();
+        List<OffsetPosition> result = new ArrayList<>(positions.size());
+        for (OffsetPosition position : positions) {
+            if (position == null)
+                continue;
+            int start = position.start;
+            int end = Math.min(position.end, length);
+            if (start < 0 || start > length)
+                continue;
+            // advance past leading whitespace
+            while (start < end && Character.isWhitespace(text.charAt(start)))
+                start++;
+            // retract past trailing whitespace
+            while (end > start && Character.isWhitespace(text.charAt(end - 1)))
+                end--;
+            if (end <= start)
+                continue; // empty or whitespace-only -> drop
+            result.add(new OffsetPosition(start, end));
+        }
+        return result;
     }
 
     /**

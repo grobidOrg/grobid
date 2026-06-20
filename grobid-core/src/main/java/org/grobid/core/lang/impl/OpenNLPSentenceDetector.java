@@ -14,6 +14,7 @@ import org.grobid.core.lang.Language;
 import org.grobid.core.lang.SentenceDetector;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.OffsetPosition;
+import org.grobid.core.utilities.SentenceUtilities;
 
 /**
  * Implementation of sentence segmentation via OpenNLP
@@ -59,6 +60,8 @@ public class OpenNLPSentenceDetector implements SentenceDetector {
             result.add(new OffsetPosition(spans[i].getStart(), spans[i].getEnd()));
         }
 
-        return result;
+        // OpenNLP spans can carry trailing whitespace; normalise so no trailing space or empty span
+        // is emitted (consistent with the other segmenters)
+        return SentenceUtilities.trimAndFilterSentenceOffsets(text, result);
     }
 }
