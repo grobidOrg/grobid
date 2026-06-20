@@ -1,35 +1,22 @@
 package org.grobid.core.utilities;
 
-import static org.easymock.EasyMock.expect;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
-import static org.powermock.api.easymock.PowerMock.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.powermock.core.classloader.annotations.PrepareForTest;
-import org.powermock.core.classloader.annotations.SuppressStaticInitializationFor;
-import org.powermock.modules.junit4.PowerMockRunner;
-import org.powermock.reflect.Whitebox;
 
 import org.grobid.core.lang.SentenceDetector;
 import org.grobid.core.lang.SentenceDetectorFactory;
 
-// Patrice @Luca this class is failing to run with JDK 1.17 and maybe lower versions (not tried), possibly security reasons,
-// and I am not able to understand why with the complexity introduced by powermock in initialization.
-// Could we move back to something simpler and readable maybe?
-
-@Ignore
-@RunWith(PowerMockRunner.class)
-@SuppressStaticInitializationFor("org.grobid.core.lang.SentenceDetectorFactory")
-@PrepareForTest({SentenceUtilities.class})
 public class SentenceUtilitiesTest {
 
     SentenceDetectorFactory sentenceDetectorFactoryMock;
@@ -43,10 +30,11 @@ public class SentenceUtilitiesTest {
         modelParameters.name = "bao";
         GrobidProperties.addModel(modelParameters);
 
-        sentenceDetectorFactoryMock = createMock(SentenceDetectorFactory.class);
-        sentenceDetectorMock = createMock(SentenceDetector.class);
+        sentenceDetectorFactoryMock = mock(SentenceDetectorFactory.class);
+        sentenceDetectorMock = mock(SentenceDetector.class);
         target = SentenceUtilities.getInstance();
-        Whitebox.setInternalState(target, sentenceDetectorFactoryMock);
+        // Inject the mocked factory into the singleton (replaces PowerMock's Whitebox.setInternalState)
+        GrobidTestUtils.setField(target, "sdf", sentenceDetectorFactoryMock);
     }
 
     @Test
@@ -59,37 +47,37 @@ public class SentenceUtilitiesTest {
     @Test
     public void testEmptyText() throws Exception {
         String text = "";
-        expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(text)).andReturn(new ArrayList<>());
-        replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
+        when(sentenceDetectorFactoryMock.getInstance()).thenReturn(sentenceDetectorMock);
+        when(sentenceDetectorMock.detect(text)).thenReturn(new ArrayList<>());
+
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(text);
 
-        verify(sentenceDetectorFactoryMock, sentenceDetectorMock);
+        verify(sentenceDetectorMock).detect(text);
         assertThat(theSentences.size(), is(0));
     }
 
     @Test
     public void testOneSentenceText() throws Exception {
         String text = "Bla bla bla.";
-        expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(text)).andReturn(Arrays.asList(new OffsetPosition(0, 12)));
-        replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
+        when(sentenceDetectorFactoryMock.getInstance()).thenReturn(sentenceDetectorMock);
+        when(sentenceDetectorMock.detect(text)).thenReturn(Arrays.asList(new OffsetPosition(0, 12)));
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(text);
-        verify(sentenceDetectorFactoryMock, sentenceDetectorMock);
+
+        verify(sentenceDetectorMock).detect(text);
         assertThat(theSentences.size(), is(1));
     }
 
     @Test
     public void testTwoSentencesText() throws Exception {
         String text = "Bla bla bla. Bli bli bli.";
-        expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(text))
-                .andReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
-        replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
+        when(sentenceDetectorFactoryMock.getInstance()).thenReturn(sentenceDetectorMock);
+        when(sentenceDetectorMock.detect(text))
+                .thenReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(text);
-        verify(sentenceDetectorFactoryMock, sentenceDetectorMock);
+
+        verify(sentenceDetectorMock).detect(text);
         assertThat(theSentences.size(), is(2));
     }
 
@@ -99,13 +87,13 @@ public class SentenceUtilitiesTest {
         List<OffsetPosition> forbidden = new ArrayList<>();
         forbidden.add(new OffsetPosition(2, 8));
 
-        expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(text, null))
-                .andReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
-        replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
+        when(sentenceDetectorFactoryMock.getInstance()).thenReturn(sentenceDetectorMock);
+        when(sentenceDetectorMock.detect(text, null))
+                .thenReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(text, forbidden);
-        verify(sentenceDetectorFactoryMock, sentenceDetectorMock);
+
+        verify(sentenceDetectorMock).detect(text, null);
         assertThat(theSentences.size(), is(2));
     }
 
@@ -116,14 +104,13 @@ public class SentenceUtilitiesTest {
         forbidden.add(new OffsetPosition(2, 8));
         forbidden.add(new OffsetPosition(9, 15));
 
-        expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(text, null))
-                .andReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
-        replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
+        when(sentenceDetectorFactoryMock.getInstance()).thenReturn(sentenceDetectorMock);
+        when(sentenceDetectorMock.detect(text, null))
+                .thenReturn(Arrays.asList(new OffsetPosition(0, 12), new OffsetPosition(13, 24)));
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(text, forbidden);
 
-        verify(sentenceDetectorFactoryMock, sentenceDetectorMock);
+        verify(sentenceDetectorMock).detect(text, null);
         assertThat(theSentences.size(), is(1));
     }
 
@@ -137,12 +124,12 @@ public class SentenceUtilitiesTest {
         List<OffsetPosition> refSpans = getPositions(paragraph, refs);
         List<OffsetPosition> sentenceSpans = getPositions(paragraph, sentences);
 
-        expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(paragraph, null)).andReturn(sentenceSpans);
-        replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
+        when(sentenceDetectorFactoryMock.getInstance()).thenReturn(sentenceDetectorMock);
+        when(sentenceDetectorMock.detect(paragraph, null)).thenReturn(sentenceSpans);
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(paragraph, refSpans);
-        verify(sentenceDetectorFactoryMock, sentenceDetectorMock);
+
+        verify(sentenceDetectorMock).detect(paragraph, null);
         assertThat(theSentences.size(), is(2));
     }
 
@@ -156,12 +143,12 @@ public class SentenceUtilitiesTest {
         List<OffsetPosition> refSpans = getPositions(paragraph, refs);
         List<OffsetPosition> sentenceSpans = getPositions(paragraph, sentences);
 
-        expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(paragraph, null)).andReturn(sentenceSpans);
-        replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
+        when(sentenceDetectorFactoryMock.getInstance()).thenReturn(sentenceDetectorMock);
+        when(sentenceDetectorMock.detect(paragraph, null)).thenReturn(sentenceSpans);
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(paragraph, refSpans);
-        verify(sentenceDetectorFactoryMock, sentenceDetectorMock);
+
+        verify(sentenceDetectorMock).detect(paragraph, null);
         assertThat(theSentences.size(), is(2));
     }
 
@@ -175,12 +162,12 @@ public class SentenceUtilitiesTest {
         List<OffsetPosition> refSpans = getPositions(paragraph, refs);
         List<OffsetPosition> sentenceSpans = getPositions(paragraph, sentences);
 
-        expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(paragraph, null)).andReturn(sentenceSpans);
-        replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
+        when(sentenceDetectorFactoryMock.getInstance()).thenReturn(sentenceDetectorMock);
+        when(sentenceDetectorMock.detect(paragraph, null)).thenReturn(sentenceSpans);
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(paragraph, refSpans);
-        verify(sentenceDetectorFactoryMock, sentenceDetectorMock);
+
+        verify(sentenceDetectorMock).detect(paragraph, null);
         assertThat(theSentences.size(), is(1));
     }
 
@@ -195,12 +182,12 @@ public class SentenceUtilitiesTest {
         List<OffsetPosition> refSpans = getPositions(paragraph, refs);
         List<OffsetPosition> sentenceSpans = getPositions(paragraph, sentences);
 
-        expect(sentenceDetectorFactoryMock.getInstance()).andReturn(sentenceDetectorMock);
-        expect(sentenceDetectorMock.detect(paragraph, null)).andReturn(sentenceSpans);
-        replay(sentenceDetectorFactoryMock, sentenceDetectorMock);
+        when(sentenceDetectorFactoryMock.getInstance()).thenReturn(sentenceDetectorMock);
+        when(sentenceDetectorMock.detect(paragraph, null)).thenReturn(sentenceSpans);
 
         List<OffsetPosition> theSentences = SentenceUtilities.getInstance().runSentenceDetection(paragraph, refSpans);
-        verify(sentenceDetectorFactoryMock, sentenceDetectorMock);
+
+        verify(sentenceDetectorMock).detect(paragraph, null);
         assertThat(theSentences.size(), is(1));
     }
 
