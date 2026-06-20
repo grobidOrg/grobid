@@ -115,13 +115,15 @@ public class PragmaticSentenceDetectorTest {
                 "Figure 5 shows the time evolution of the volumeaveraged rms density fluctuations (normalized to the mean density) in our thermal balance runs.");
         List<OffsetPosition> sentence_spans = PragmaticSentenceDetector.getSentenceOffsets(original_text, sentences);
 
+        // The segmenter returned only the first sentence of the paragraph. The remaining text must not be
+        // left uncovered (TEIFormatter would drop it); the single span is extended to cover the trailing
+        // text up to the last non-whitespace character, so no paragraph content is lost.
         assertThat(sentence_spans, hasSize(1));
         assertThat(sentence_spans.get(0).start, is(0));
-        assertThat(sentence_spans.get(0).end, is(143));
+        assertThat(sentence_spans.get(0).end, is(original_text.length()));
         assertThat(
                 original_text.substring(sentence_spans.get(0).start, sentence_spans.get(0).end),
-                is(
-                        "Figure 5 shows the time evolution of the volumeaveraged rms density fluctuations (normalized to the mean  density) in our thermal balance runs."));
+                is(original_text));
     }
 
     @Test
@@ -267,5 +269,50 @@ public class PragmaticSentenceDetectorTest {
         Pair<String, Integer> inText = PragmaticSentenceDetector.findInText("zzzzz", "ABCDE FGHIJ");
         assertThat(inText.getRight(), is(-1));
         assertThat(inText.getLeft(), is(""));
+    }
+
+    @Test
+    public void testGetSentenceOffsets_trailingTokenAfterLastChunk_covered() {
+        // the segmenter does not return the paragraph-final marker ("4", a footnote callout) as a chunk;
+        // the final span must be extended to cover it, otherwise TEIFormatter drops the uncovered <ref>
+        // (regression observed on biorxiv doc 322396v1, where foot_refs went 1 -> 0)
+        String original_text = "This will prove unnecessary at future steps. 4";
+        List<String> sentences = Arrays.asList("This will prove unnecessary at future steps.");
+        List<OffsetPosition> sentence_spans = PragmaticSentenceDetector.getSentenceOffsets(original_text, sentences);
+
+        assertThat(sentence_spans, hasSize(1));
+        // trailing "4" is now inside the final span (no content left uncovered)
+        assertThat(sentence_spans.get(0).end, is(original_text.length()));
+        assertThat(
+                original_text.substring(sentence_spans.get(0).start, sentence_spans.get(0).end),
+                is("This will prove unnecessary at future steps. 4"));
+    }
+
+    @Test
+    public void testGetSentenceOffsets_trailingTokenWithTrailingSpace_noTrailingSpaceInSpan() {
+        // tail coverage must still stop at the last non-whitespace char so we do not reintroduce a
+        // trailing-whitespace span
+        String original_text = "Ends here. 4   ";
+        List<String> sentences = Arrays.asList("Ends here.");
+        List<OffsetPosition> sentence_spans = PragmaticSentenceDetector.getSentenceOffsets(original_text, sentences);
+
+        assertThat(sentence_spans, hasSize(1));
+        assertThat(
+                original_text.substring(sentence_spans.get(0).start, sentence_spans.get(0).end),
+                is("Ends here. 4"));
+    }
+
+    @Test
+    public void testGetSentenceOffsets_noUsableChunks_textNotDropped() {
+        // if the segmenter returns nothing usable, the text must still be covered by a span rather than
+        // silently lost; the span must be trimmed of surrounding whitespace
+        String original_text = "  Orphan content. ";
+        List<String> sentences = Arrays.asList("   ");
+        List<OffsetPosition> sentence_spans = PragmaticSentenceDetector.getSentenceOffsets(original_text, sentences);
+
+        assertThat(sentence_spans, hasSize(1));
+        assertThat(
+                original_text.substring(sentence_spans.get(0).start, sentence_spans.get(0).end),
+                is("Orphan content."));
     }
 }

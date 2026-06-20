@@ -69,7 +69,6 @@ public class PragmaticSentenceDetector implements SentenceDetector {
 
     @Override
     public List<OffsetPosition> detect(String text, Language lang) {
-        instance.put("text", text);
         String script = null;
         if (lang == null || "en".equals(lang.getLang()))
             script = "ps = PragmaticSegmenter::Segmenter.new(text: text, clean: false)\nps.segment";
@@ -77,12 +76,19 @@ public class PragmaticSentenceDetector implements SentenceDetector {
             script = "ps = PragmaticSegmenter::Segmenter.new(text: text, language: '"
                     + lang.getLang()
                     + "', clean: false)\nps.segment";
-        Object ret = instance.runScriptlet(script);
 
-        //System.out.println(text);
-        //System.out.println(ret.toString());
-
-        List<String> retList = (List<String>) ret;
+        // This detector is a process-wide singleton (see PragmaticSentenceDetectorFactory) and the JRuby
+        // ScriptingContainer below is shared across all request threads. put("text", ...) writes a *shared*
+        // Ruby variable, so two concurrent segmentations would clobber each other's input and the segmenter
+        // could run on another call's text. The returned sentence strings then would not match this call's
+        // `text`, the reconstructed offsets would not cover it, and TEIFormatter would drop the uncovered
+        // content (observed as large, run-to-run-varying body/figure-caption text loss under concurrent
+        // load). Serialise the put+segment so each segmentation runs against its own text.
+        List<String> retList;
+        synchronized (instance) {
+            instance.put("text", text);
+            retList = (List<String>) instance.runScriptlet(script);
+        }
 
         return getSentenceOffsets(text, retList);
     }
@@ -196,6 +202,28 @@ public class PragmaticSentenceDetector implements SentenceDetector {
             if (end > start)
                 result.add(new OffsetPosition(start, end));
             cursor = ti;
+        }
+
+        // The segmenter only returns the chunks it recognises as sentences; any trailing non-whitespace
+        // text left after the last returned chunk (e.g. a paragraph-final footnote or citation marker that
+        // the segmenter does not emit as a sentence of its own) would otherwise stay uncovered and then be
+        // dropped by TEIFormatter, which removes content sitting outside <s> elements. Extend the final span
+        // (or emit a span when nothing matched at all) to cover that trailing text up to the last
+        // non-whitespace character, so the marker is never lost. Bounded to the last non-whitespace char so
+        // we do not reintroduce a trailing-whitespace span.
+        int tail = n;
+        while (tail > cursor && Character.isWhitespace(text.charAt(tail - 1)))
+            tail--;
+        if (tail > cursor) {
+            if (!result.isEmpty()) {
+                result.get(result.size() - 1).end = tail;
+            } else {
+                int s = 0;
+                while (s < tail && Character.isWhitespace(text.charAt(s)))
+                    s++;
+                if (tail > s)
+                    result.add(new OffsetPosition(s, tail));
+            }
         }
 
         return result;
