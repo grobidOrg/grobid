@@ -146,88 +146,56 @@ public class PragmaticSentenceDetector implements SentenceDetector {
     protected static List<OffsetPosition> getSentenceOffsets(String text, List<String> retList) {
         // build offset positions from the string chunks
         List<OffsetPosition> result = new ArrayList<>();
+        int n = text.length();
+        int cursor = 0;
 
-        int previousEnd = -1;
-        int previousStart = -1;
+        for (String sentence : retList) {
+            // strip all surrounding whitespace so the span starts/ends on a non-space character and we
+            // never carry a leading/trailing space into the sentence
+            String chunk = StringUtils.strip(sentence);
+            if (chunk.isEmpty())
+                continue;
 
-        for (int i = 0; i < retList.size(); i++) {
-            String sentence = retList.get(i);
-            // strip all surrounding whitespace (not only newlines) so the computed end offset stops
-            // at the last non-space character and we never carry a trailing space into the sentence
-            String sentenceClean = StringUtils.strip(sentence);
+            // skip whitespace in the original text before the next sentence
+            while (cursor < n && Character.isWhitespace(text.charAt(cursor)))
+                cursor++;
 
-            int start = -1;
-            int end = -1;
+            int start = cursor;
+            int ti = cursor;
+            int ci = 0;
+            int m = chunk.length();
 
-            if (previousEnd > -1) {
-                String subString = StringUtils.substring(text, previousEnd, previousEnd + 2 * sentenceClean.length());
-                int relativeIndexOf = subString.indexOf(sentenceClean);
-                start = relativeIndexOf > -1 ? relativeIndexOf + previousEnd : relativeIndexOf;
-            } else {
-                start = text.indexOf(sentenceClean);
-            }
-
-            String outputStr = "";
-            if (start == -1) {
-                if (previousEnd > -1) {
-                    String subString = StringUtils
-                            .substring(text, previousEnd, previousEnd + 2 * sentenceClean.length());
-                    int relativeIndexOf = subString.replace("\n", " ").indexOf(sentenceClean);
-                    start = relativeIndexOf > 1 ? relativeIndexOf + previousEnd : relativeIndexOf;
+            // Forward two-pointer alignment that consumes the original text strictly in order. It is
+            // tolerant to differing whitespace (the segmenter turns PDF line-breaks into spaces, collapses
+            // runs, etc.) and to the rare non-whitespace character the segmenter rewrites: in every
+            // non-matching case we advance over the *original* text character, so the sentence keeps
+            // covering the underlying text and characters between sentences are never dropped. This
+            // replaces the window/indexOf reconstruction that drifted on long paragraphs and silently lost
+            // runs of short reference-marker sentences (e.g. "1 Fig. 2 Fig. 3 Fig.").
+            while (ci < m && ti < n) {
+                char cc = chunk.charAt(ci);
+                if (Character.isWhitespace(cc)) {
+                    while (ci < m && Character.isWhitespace(chunk.charAt(ci)))
+                        ci++;
+                    while (ti < n && Character.isWhitespace(text.charAt(ti)))
+                        ti++;
+                } else if (text.charAt(ti) == cc) {
+                    ti++;
+                    ci++;
                 } else {
-                    start = text.replace("\n", " ").indexOf(sentenceClean);
+                    // extra whitespace in the original text, or a character the segmenter rewrote:
+                    // advance over the original-text character so its content is never dropped
+                    ti++;
                 }
-
-                if (start == -1) {
-
-                    String textAdapted = text;
-
-                    if (previousEnd > -1) {
-                        textAdapted = StringUtils
-                                .substring(text, previousEnd, previousEnd + 2 * sentenceClean.length());
-                        Pair<String, Integer> inText = findInText(sentenceClean, textAdapted);
-                        start = inText.getRight();
-                        outputStr = inText.getLeft();
-                        start += previousEnd;
-                    } else if (previousStart > -1) {
-                        textAdapted = StringUtils
-                                .substring(text, previousStart, previousStart + 2 * sentenceClean.length());
-                        Pair<String, Integer> inText = findInText(sentenceClean, textAdapted);
-                        start = inText.getRight();
-                        outputStr = inText.getLeft();
-                        // the search window above starts at previousStart, so the relative offset must
-                        // be rebased on previousStart (not previousEnd)
-                        if (start > -1)
-                            start += previousStart;
-                    } else {
-                        Pair<String, Integer> inText = findInText(sentenceClean, textAdapted);
-                        start = inText.getRight();
-                        outputStr = inText.getLeft();
-                    }
-                    end = start + outputStr.length();
-                    if (start == -1) {
-                        LOGGER.warn(
-                                "The starting offset is -1. We have tried to recover it, but probably something is still wrong. Please check. ");
-                        LOGGER.warn(outputStr + " / " + textAdapted);
-                    }
-                } else {
-                    end = start + sentenceClean.length();
-                }
-            } else {
-                end = start + sentenceClean.length();
-            }
-            previousStart = start;
-
-            if (start > -1) {
-                previousEnd = end;
             }
 
-            // only emit well-formed spans: a zero-length or invalid span would otherwise surface as an
-            // empty <s></s> element downstream (the chunk-to-chunk synchronisation above is already
-            // updated, so dropping a degenerate span here does not desynchronise the following chunks)
-            if (start > -1 && end > start) {
+            // trim any trailing whitespace from the matched span
+            int end = ti;
+            while (end > start && Character.isWhitespace(text.charAt(end - 1)))
+                end--;
+            if (end > start)
                 result.add(new OffsetPosition(start, end));
-            }
+            cursor = ti;
         }
 
         return result;
