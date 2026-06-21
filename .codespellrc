@@ -1,9 +1,11 @@
 [codespell]
 # Skip: git files, binary/generated files, training data/models, test resources, lexicons, caches.
 # EngineTest.java is skipped wholesale because it is ~150 lines of raw PDF/OCR text fixtures;
+# DiffMatchPatch.java is a verbatim vendored copy of Google's diff-match-patch (Apache-2.0),
+# skipped wholesale so we don't edit upstream code for spelling (e.g. its "compatability" typo);
 # all other per-file false positives are suppressed locally with inline `codespell:ignore`
 # directives so the rest of those files stay under check.
-skip = *.pdf,./doc/*.graffle,./.idea/*,.git,*.svg,*.css,.codespellrc,grobid-home,./grobid-trainer/resources/dataset,*/src/test/resources,*.bcmap,./grobid-service/src/main/resources/web/resources,./grobid-service/src/test/sample,./grobid-core/src/test/java/org/grobid/core/engines/EngineTest.java
+skip = *.pdf,./doc/*.graffle,./.idea/*,.git,*.svg,*.css,.codespellrc,grobid-home,./grobid-trainer/resources/dataset,*/src/test/resources,*.bcmap,./grobid-service/src/main/resources/web/resources,./grobid-service/src/test/sample,./grobid-core/src/test/java/org/grobid/core/engines/EngineTest.java,./grobid-core/src/main/java/org/grobid/core/utilities/matching/DiffMatchPatch.java
 check-hidden = true
 # Ignore legitimate words:
 #   serie - French for "series" in bibliographic context

@@ -76,7 +76,7 @@ public class SentenceUtilitiesForbiddenIntervalTest {
                 + "sentence-level data, they split on newlines and \n"
                 + "align with LASER, but perform no further filtering. \n"
                 + "Human annotators evaluated the quality of docu-\n"
-                + "ment alignments for six languages (de, zh, ar,  ro, et, my) selected for their different scripts and \n"
+                + "ment alignments for six languages (de, zh, ar,  ro, et, my) selected for their different scripts and \n" // codespell:ignore ment
                 + "amount of retrieved documents, reporting precision \n"
                 + "of over 90%. The quality of the extracted paral-\n"
                 + "lel sentences is evaluated in a machine translation \n"
