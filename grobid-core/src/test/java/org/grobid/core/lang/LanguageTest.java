@@ -55,7 +55,7 @@ public class LanguageTest {
                 "sv",
                 "sw",
                 "ta",
-                "te",
+                "te", // codespell:ignore te
                 "th",
                 "tl",
                 "tr",

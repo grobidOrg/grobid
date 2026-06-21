@@ -100,7 +100,7 @@ public class ChemicalWordsSaxParser extends DefaultHandler {
             accumulator.setLength(0);
         } catch (Exception e) {
             //		    e.printStackTrace();
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 
@@ -131,7 +131,7 @@ public class ChemicalWordsSaxParser extends DefaultHandler {
             }
         } catch (Exception e) {
             //		    e.printStackTrace();
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 

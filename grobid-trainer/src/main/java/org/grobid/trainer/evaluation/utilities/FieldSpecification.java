@@ -131,7 +131,7 @@ public class FieldSpecification {
         FieldSpecification baseCitation = new FieldSpecification();
         baseCitation.fieldName = "base";
         baseCitation.grobidPath.add("//back/div/listBibl/biblStruct");
-        baseCitation.nlmPath.add("//ref-list/ref"); // note: sometimes we just have the raw citation bellow this!
+        baseCitation.nlmPath.add("//ref-list/ref"); // note: sometimes we just have the raw citation below this!
         baseCitation.pdfxPath.add("//ref-list/ref"); // note: there is nothing beyond that in pdfx xml results!
         citationsFields.add(baseCitation);
         // the rest of the citation fields are relative to the base path

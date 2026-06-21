@@ -1,5 +1,5 @@
 
-## Header metadata 
+## Header metadata
 
 Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 
@@ -74,19 +74,19 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 
 ```
 Total expected instances: 	1943
-Total correct instances: 	219 (strict) 
-Total correct instances: 	904 (soft) 
-Total correct instances: 	1434 (Levenshtein) 
-Total correct instances: 	1294 (ObservedRatcliffObershelp) 
+Total correct instances: 	219 (strict)
+Total correct instances: 	904 (soft)
+Total correct instances: 	1434 (Levenshtein)
+Total correct instances: 	1294 (ObservedRatcliffObershelp)
 
-Instance-level recall:	11.27	(strict) 
-Instance-level recall:	46.53	(soft) 
-Instance-level recall:	73.8	(Levenshtein) 
-Instance-level recall:	66.6	(RatcliffObershelp) 
+Instance-level recall:	11.27	(strict)
+Instance-level recall:	46.53	(soft)
+Instance-level recall:	73.8	(Levenshtein)
+Instance-level recall:	66.6	(RatcliffObershelp)
 ```
 
 
-## Citation metadata 
+## Citation metadata
 
 Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 
@@ -174,25 +174,25 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 ```
 Total expected instances: 		90125
 Total extracted instances: 		85902
-Total correct instances: 		38762 (strict) 
-Total correct instances: 		50900 (soft) 
-Total correct instances: 		55783 (Levenshtein) 
-Total correct instances: 		52319 (RatcliffObershelp) 
+Total correct instances: 		38762 (strict)
+Total correct instances: 		50900 (soft)
+Total correct instances: 		55783 (Levenshtein)
+Total correct instances: 		52319 (RatcliffObershelp)
 
-Instance-level precision:	45.12 (strict) 
-Instance-level precision:	59.25 (soft) 
-Instance-level precision:	64.94 (Levenshtein) 
-Instance-level precision:	60.91 (RatcliffObershelp) 
+Instance-level precision:	45.12 (strict)
+Instance-level precision:	59.25 (soft)
+Instance-level precision:	64.94 (Levenshtein)
+Instance-level precision:	60.91 (RatcliffObershelp)
 
-Instance-level recall:	43.01	(strict) 
-Instance-level recall:	56.48	(soft) 
-Instance-level recall:	61.9	(Levenshtein) 
-Instance-level recall:	58.05	(RatcliffObershelp) 
+Instance-level recall:	43.01	(strict)
+Instance-level recall:	56.48	(soft)
+Instance-level recall:	61.9	(Levenshtein)
+Instance-level recall:	58.05	(RatcliffObershelp)
 
-Instance-level f-score:	44.04 (strict) 
-Instance-level f-score:	57.83 (soft) 
-Instance-level f-score:	63.38 (Levenshtein) 
-Instance-level f-score:	59.44 (RatcliffObershelp) 
+Instance-level f-score:	44.04 (strict)
+Instance-level f-score:	57.83 (soft)
+Instance-level f-score:	63.38 (Levenshtein)
+Instance-level f-score:	59.44 (RatcliffObershelp)
 
 Matching 1 :	68328
 
@@ -224,9 +224,9 @@ fscore citation contexts: 	 76.23
 ```
 
 
-## Fulltext structures 
+## Fulltext structures
 
-Fulltext structure contents are complicated to capture from JATS NLM files. They are often normalized and different from the actual PDF content and are can be inconsistent from one document to another. The scores of the following metrics are thus not very meaningful in absolute term, in particular for the strict matching (textual content of the srtructure can be very long). As relative values for comparing different models, they seem however useful.
+Fulltext structure contents are complicated to capture from JATS NLM files. They are often normalized and different from the actual PDF content and can be inconsistent from one document to another. The scores of the following metrics are thus not very meaningful in absolute term, in particular for the strict matching (textual content of the structure can be very long). As relative values for comparing different models, they seem however useful.
 
 
 Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).

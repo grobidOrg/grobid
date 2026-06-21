@@ -39,7 +39,15 @@ grobid:
       # to use Crossref metadata plus service (available by subscription)
       #token: "yourmysteriouscrossrefmetadataplusauthorizationtokentobeputhere"
       timeoutSec: 60
+      # Minimum delay between consecutive CrossRef API requests (in milliseconds).
+      # Default: auto-computed from API tier (Plus=7ms/150req/s, Polite=100ms/10req/s, Public=200ms/5req/s).
+      # Set to a positive value to override the auto-computed rate limit.
+      #minRequestIntervalMs: 50
       # Timeout for CrossRef API calls (in seconds) - USE with CARE!
+      # Whether to post-validate CrossRef results against the source metadata.
+      # Glutton always skips post-validation (it handles validation internally).
+      # For CrossRef, set to false to disable post-validation.
+      postValidation: true
   proxy:
     # proxy to be used when doing external call to the consolidation service
     host:
@@ -84,6 +92,24 @@ grobid:
     # for feature-engineered CRF, use "wapiti" and possible training parameters are window, epsilon and nbMaxIterations
     # for Deep Learning, use "delft" and select the target DL architecture (see DeLFT library), the training
     # parameters then depends on this selected DL architecture
+    #
+    # Flavor inheritance
+    # ------------------
+    # Flavor entries (whose name extends a base, e.g. "segmentation-article-light" for
+    # base "segmentation") inherit each field from the closest ancestor that sets it.
+    # To override a field for a specific flavor, set it explicitly on that flavor entry.
+    #
+    # This applies in particular to:
+    #   - engine:           if omitted, follows the base. Set it to override —
+    #                       e.g. a Wapiti-only flavor of a DeLFT base must set
+    #                       `engine: "wapiti"` (see header-sdo-ietf below).
+    #   - delft.architecture: if omitted, follows the base. Set it to pick a
+    #                       different DL architecture per flavor.
+    #
+    # The resolved engine for a flavor must match the model that exists on disk.
+    # If the resolved engine is DeLFT but no DL model directory is present (or vice
+    # versa for Wapiti), the system logs a "not available" message and falls back
+    # to the base model.
 
     - name: "segmentation"
       # at this time, must always be CRF wapiti, the input sequence size is too large for a Deep Learning implementation
@@ -108,7 +134,7 @@ grobid:
           batch_size: 10
 
     - name: "segmentation-article-light"
-      engine: "wapiti"
+      # engine inherited from "segmentation"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.0000001
@@ -116,7 +142,7 @@ grobid:
         nbMaxIterations: 2000
 
     - name: "segmentation-article-light-ref"
-      engine: "wapiti"
+      # engine inherited from "segmentation"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.0000001
@@ -124,6 +150,7 @@ grobid:
         nbMaxIterations: 2000
 
     - name: "segmentation-sdo-ietf"
+      # explicit: only a Wapiti model is available for this flavor
       engine: "wapiti"
       wapiti:
         # wapiti training parameters, they will be used at training time only
@@ -166,30 +193,23 @@ grobid:
           batch_size: 9
 
     - name: "header-article-light"
-#      engine: "wapiti"
-      engine: "delft"
+      # engine inherited from "header"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.000001
         window: 30
         nbMaxIterations: 1500
-      delft:
-        architecture: "BidLSTM_ChainCRF_FEATURES"
-        useELMo: false
 
     - name: "header-article-light-ref"
-#      engine: "wapiti"
-      engine: "delft"
+      # engine inherited from "header"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.000001
         window: 30
         nbMaxIterations: 1500
-      delft:
-        architecture: "BidLSTM_ChainCRF_FEATURES"
-        useELMo: false
 
     - name: "header-sdo-ietf"
+      # explicit: only a Wapiti model is available for this flavor
       engine: "wapiti"
       wapiti:
         # wapiti training parameters, they will be used at training time only

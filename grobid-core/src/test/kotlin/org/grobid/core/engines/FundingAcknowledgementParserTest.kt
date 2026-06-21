@@ -56,7 +56,7 @@ class FundingAcknowledgementParserTest {
             "]\t]\t]\t]\t]\t]\t]\t]\t]\t]\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tENDBRACKET\t0\t<other>\n" +
             ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\t<other>\n" +
             "and\tand\ta\tan\tand\tand\td\tnd\tand\tand\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-            "other\tother\to\tot\toth\tothe\tr\ter\ther\tther\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "other\tother\to\tot\toth\tothe\tr\ter\ther\tther\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" + // codespell:ignore tothe
             "open\topen\to\top\tope\topen\tn\ten\tpen\topen\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
             "-\t-\t-\t-\t-\t-\t-\t-\t-\t-\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tHYPHEN\t0\t<other>\n" +
             "source\tsource\ts\tso\tsou\tsour\te\tce\trce\turce\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
@@ -228,7 +228,7 @@ class FundingAcknowledgementParserTest {
             "]\t]\t]\t]\t]\t]\t]\t]\t]\t]\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tENDBRACKET\t0\t<other>\n" +
             ",\t,\t,\t,\t,\t,\t,\t,\t,\t,\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tCOMMA\t0\t<other>\n" +
             "and\tand\ta\tan\tand\tand\td\tnd\tand\tand\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
-            "other\tother\to\tot\toth\tothe\tr\ter\ther\tther\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
+            "other\tother\to\tot\toth\tothe\tr\ter\ther\tther\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" + // codespell:ignore tothe
             "open\topen\to\top\tope\topen\tn\ten\tpen\topen\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +
             "-\t-\t-\t-\t-\t-\t-\t-\t-\t-\tLINEIN\tALLCAP\tNODIGIT\t1\t0\t0\tHYPHEN\t0\t<other>\n" +
             "source\tsource\ts\tso\tsou\tsour\te\tce\trce\turce\tLINEIN\tNOCAPS\tNODIGIT\t0\t0\t0\tNOPUNCT\t0\t<other>\n" +

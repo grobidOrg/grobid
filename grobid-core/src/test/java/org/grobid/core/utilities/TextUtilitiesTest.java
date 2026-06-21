@@ -637,7 +637,7 @@ public class TextUtilitiesTest extends EngineTest {
 
     @Test
     public void testMatchTokenAndString_twoElementsWithEqualValue3() throws Exception {
-        final String input = "We thank Benoit Demars for providing reaeration data and comments that signficantly improved the manuscript.This study was supported a NERC Case studentship awarded to DP, GYD and SJ, an ERC starting grant awarded to GYD, and the University of Exeter.";
+        final String input = "We thank Benoit Demars for providing reaeration data and comments that significantly improved the manuscript.This study was supported a NERC Case studentship awarded to DP, GYD and SJ, an ERC starting grant awarded to GYD, and the University of Exeter.";
 
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
         List<OffsetPosition> annotationTokenPositions = Arrays.asList(

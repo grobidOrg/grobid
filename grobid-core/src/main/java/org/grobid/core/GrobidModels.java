@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 
+import org.grobid.core.engines.tagging.GrobidCRFEngine;
 import org.grobid.core.utilities.GrobidProperties;
 
 /**
@@ -169,18 +170,60 @@ public enum GrobidModels implements GrobidModel {
     public static GrobidModel getModelFlavor(GrobidModel model, Flavor flavor) {
         if (flavor == null) {
             return model;
-        } else {
-            GrobidModel grobidModel = modelFor(model.toString() + "/" + flavor.getLabel().toLowerCase());
-            if (!Files.exists(Paths.get(grobidModel.getModelPath()))) {
-                LOGGER.info(
-                        "The requested model flavor "
-                                + flavor.getLabel()
-                                + " model is not available. Defaulting to the standard model. ");
-                return model;
-            } else {
-                return grobidModel;
-            }
         }
+        GrobidModel grobidModel = modelFor(model.toString() + "/" + flavor.getLabel().toLowerCase());
+        if (flavoredModelExistsOnDisk(grobidModel)) {
+            return grobidModel;
+        }
+        LOGGER.info(
+                "The requested flavor "
+                        + flavor.getLabel()
+                        + " for model "
+                        + model.getModelName()
+                        + " (resolved engine: "
+                        + GrobidProperties.getGrobidEngine(grobidModel)
+                        + ") is not available on disk. Defaulting to the standard model. "
+                        + "Note: a flavor's engine and architecture are inherited from the "
+                        + "base unless explicitly set on the flavor entry.");
+        return model;
+    }
+
+    /**
+     * Returns true when a trained model file/directory for the flavored model exists on disk.
+     *
+     * The check is engine-aware because Wapiti and DeLFT use different on-disk layouts:
+     *   - Wapiti:  <home>/models/<flavor-folder>/model.wapiti          (a file, slash-separated path)
+     *   - DeLFT:   <home>/models/<hyphenated-name>-<architecture>/    (a directory, hyphenated name)
+     *
+     * Both engine and DeLFT architecture are resolved against the flavored model itself.
+     * The field-level prefix-fallback in GrobidProperties means each field is inherited
+     * from the closest ancestor when the flavor entry omits it, or used as-is when the
+     * flavor entry sets it explicitly — so this helper does not need a separate handle
+     * on the base model.
+     *
+     * @param flavoredModel the candidate flavored model whose existence we are testing
+     * @return true if a usable model exists on disk for {@code flavoredModel}
+     */
+    private static boolean flavoredModelExistsOnDisk(GrobidModel flavoredModel) {
+        // A flavor that omits `engine:` inherits from the base; a flavor that sets it
+        // explicitly overrides — e.g. a Wapiti-only flavor of a DeLFT base must set
+        // `engine: "wapiti"` on the flavor entry (see header-sdo-ietf in grobid.yaml).
+        GrobidCRFEngine engine = GrobidProperties.getGrobidEngine(flavoredModel);
+
+        if (engine == GrobidCRFEngine.DELFT) {
+            String architecture = GrobidProperties.getDelftArchitecture(flavoredModel);
+            if (StringUtils.isBlank(architecture)) {
+                return false;
+            }
+            File dlDir = new File(
+                    GrobidProperties.getModelPath(),
+                    flavoredModel.getModelName() + "-" + architecture);
+            return dlDir.isDirectory();
+        }
+
+        // Wapiti (and any non-DL engine): file-based check at the flavor folder path.
+        String path = flavoredModel.getModelPath();
+        return path != null && Files.exists(Paths.get(path));
     }
 
     public static GrobidModel modelFor(final String name) {

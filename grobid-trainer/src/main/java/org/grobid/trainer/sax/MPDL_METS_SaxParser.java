@@ -165,7 +165,7 @@ public class MPDL_METS_SaxParser extends DefaultHandler {
                 }
             } catch (Exception e) {
                 //        		e.printStackTrace();
-                throw new GrobidException("An exception occured while running Grobid.", e);
+                throw new GrobidException("An exception occurred while running Grobid.", e);
             }
             accumulator.setLength(0);
         }
