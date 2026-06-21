@@ -159,6 +159,8 @@ subprojects {
     configurations {
         all*.exclude group: 'org.slf4j', module: "slf4j-log4j12"
         all*.exclude group: 'log4j', module: "log4j"
+        // Mockito as an explicit Java agent (JDK 21+ disallows self-attaching agents by default)
+        mockitoAgent
     }
 
     ext {
@@ -183,9 +185,12 @@ subprojects {
             because("Only needed to run tests in a version of IntelliJ IDEA that bundles older versions")
         }
         testImplementation('org.junit.jupiter:junit-jupiter')
+        // JUnit 4 API (run via the vintage engine above). Previously pulled in transitively by
+        // powermock-module-junit4; declared explicitly now that PowerMock is removed.
+        testImplementation 'junit:junit:4.13.2'
         testImplementation 'org.easymock:easymock:5.6.0'
-        testImplementation "org.powermock:powermock-api-easymock:2.0.9"
-        testImplementation "org.powermock:powermock-module-junit4:2.0.9"
+        testImplementation "org.mockito:mockito-core:5.20.0"
+        mockitoAgent("org.mockito:mockito-core:5.20.0") { transitive = false }
         testImplementation "org.xmlunit:xmlunit-matchers:2.10.3"
         testImplementation "org.xmlunit:xmlunit-legacy:2.10.3"
         testImplementation "org.hamcrest:hamcrest-all:1.3"
@@ -235,11 +240,12 @@ subprojects {
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
             jvmArgs "--add-opens", "java.base/java.util.stream=ALL-UNNAMED",
                 "--add-opens", "java.base/java.io=ALL-UNNAMED",
-                "--add-opens", "java.xml/jdk.xml.internal=ALL-UNNAMED",
-                // PowerMock compatibility with Java 21 - TODO: Replace PowerMock with Mockito/JUnit Jupiter
-                "--add-opens", "java.base/java.lang=ALL-UNNAMED",
-                "--add-opens", "java.base/java.util=ALL-UNNAMED"
+                "--add-opens", "java.xml/jdk.xml.internal=ALL-UNNAMED"
         }
+
+        // Attach Mockito explicitly so its inline mock maker (used for mockStatic) does not
+        // rely on self-attaching, which JDK 21+ warns about and will eventually disallow.
+        jvmArgs "-javaagent:${configurations.mockitoAgent.asPath}"
 
         systemProperty "java.library.path", "${javaLibraryPath}"
     }
