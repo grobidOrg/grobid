@@ -815,22 +815,11 @@ public class TextUtilities {
                     res += "ft";
                     break;
                 }
-                case '\u00E6' : {
-                    res += "ae";
-                    break;
-                }
-                case '\u00C6' : {
-                    res += "AE";
-                    break;
-                }
-                case '\u0153' : {
-                    res += "oe";
-                    break;
-                }
-                case '\u0152' : {
-                    res += "OE";
-                    break;
-                }
+                // NB: \u00E6/\u00C6 (U+00E6/U+00C6) and \u0153/\u0152 (U+0153/U+0152) are intentionally NOT
+                // folded here. Unlike the typographic ligatures above (\uFB00\uFB01\uFB02\u2026, genuine PDF
+                // rendering artifacts), these are distinct letters used deliberately in
+                // Danish, Norwegian, Icelandic, French, etc. Folding them to "ae"/"oe" was
+                // data loss for those languages (issue #728); they now pass through unchanged.
                 // quote
                 case '\u201C' : {
                     res += "\"";
