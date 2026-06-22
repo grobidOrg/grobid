@@ -834,10 +834,29 @@ public class BiblioItem {
 
     public void setNormalizedPublicationDate(Date theDate) {
         this.normalized_publication_date = theDate;
+        syncDateStringFieldsFromNormalized();
     }
 
     public void mergeNormalizedPublicationDate(Date theDate) {
         this.normalized_publication_date = Date.merge(this.normalized_publication_date, theDate);
+        syncDateStringFieldsFromNormalized();
+    }
+
+    /**
+     * Keep the textual year/month/day fields in sync with the normalized publication
+     * date. These fields used to be derived only inside toTEI(), so library callers and
+     * non-TEI output paths saw them as null even when the date was correctly parsed
+     * (issue #15). Already-set values are preserved.
+     */
+    private void syncDateStringFieldsFromNormalized() {
+        if (normalized_publication_date == null)
+            return;
+        if (this.year == null && normalized_publication_date.getYear() != -1)
+            this.year = String.valueOf(normalized_publication_date.getYear());
+        if (this.month == null && normalized_publication_date.getMonth() != -1)
+            this.month = String.valueOf(normalized_publication_date.getMonth());
+        if (this.day == null && normalized_publication_date.getDay() != -1)
+            this.day = String.valueOf(normalized_publication_date.getDay());
     }
 
     public void setEditors(String theEditors) {
