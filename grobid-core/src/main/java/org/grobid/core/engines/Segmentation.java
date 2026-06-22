@@ -25,6 +25,7 @@ import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidExceptionStatus;
 import org.grobid.core.features.FeatureFactory;
 import org.grobid.core.features.FeaturesVectorSegmentation;
+import org.grobid.core.lang.Language;
 import org.grobid.core.layout.*;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LanguageUtilities;
@@ -744,6 +745,11 @@ public class Segmentation extends AbstractParser {
                 String rese = label(fulltext);
                 StringBuffer bufferFulltext = trainingExtraction(rese, tokenizations, doc);
 
+                // detect the actual document language so the training TEI is annotated
+                // accordingly instead of always assuming English (issue #671); fall back
+                // to "en" when detection is inconclusive
+                String lang = detectLanguageOrDefault(rawtxt.toString());
+
                 // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                         File.separator +
@@ -752,7 +758,9 @@ public class Segmentation extends AbstractParser {
                         "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
                                 + id
                                 +
-                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"en\">\n");
+                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
+                                + lang
+                                + "\">\n");
 
                 writer.write(bufferFulltext.toString());
                 writer.write("\n\t</text>\n</tei>\n");
@@ -766,6 +774,26 @@ public class Segmentation extends AbstractParser {
         } finally {
             DocumentSource.close(documentSource, true, true, true);
         }
+    }
+
+    /**
+     * Detect the language of the given text for annotating generated training data,
+     * returning its ISO code or "en" when detection is unavailable or inconclusive
+     * (issue #671). Detection failures are non-fatal: training data generation should
+     * never abort because the language model is missing.
+     */
+    private String detectLanguageOrDefault(String text) {
+        if (isNotBlank(text)) {
+            try {
+                Language langID = languageUtilities.runLanguageId(text);
+                if (langID != null && isNotBlank(langID.getLang())) {
+                    return langID.getLang();
+                }
+            } catch (Exception e) {
+                LOGGER.warn("Language detection failed while generating training data, defaulting to 'en'.", e);
+            }
+        }
+        return "en";
     }
 
     /**
@@ -819,6 +847,9 @@ public class Segmentation extends AbstractParser {
 
             fulltext = rawtxt.toString();
             if (isNotBlank(fulltext)) {
+                // detect the actual document language instead of always assuming English (issue #671)
+                String lang = detectLanguageOrDefault(fulltext);
+
                 // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                         File.separator +
@@ -827,7 +858,9 @@ public class Segmentation extends AbstractParser {
                         "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"f"
                                 + id
                                 +
-                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"en\">\n");
+                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
+                                + lang
+                                + "\">\n");
 
                 writer.write(fulltext);
                 writer.write("\n\t</text>\n</tei>\n");
