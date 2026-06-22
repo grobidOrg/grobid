@@ -904,6 +904,50 @@ class BiblioItemTest {
         Assert.assertThat(bibtex, Matchers.containsString("{smith2023machine,"))
     }
 
+    // --- Date string fields kept in sync with the normalized date (issue #15) ---
+
+    @Test
+    fun setNormalizedPublicationDate_populatesYearMonthDay_issue15() {
+        val date = Date()
+        date.year = 2013
+        date.month = 6
+        date.day = 20
+
+        val biblio = BiblioItem()
+        biblio.setNormalizedPublicationDate(date)
+
+        // these used to stay null outside of toTEI()
+        Assert.assertThat(biblio.getYear(), CoreMatchers.`is`("2013"))
+        Assert.assertThat(biblio.getMonth(), CoreMatchers.`is`("6"))
+        Assert.assertThat(biblio.getDay(), CoreMatchers.`is`("20"))
+    }
+
+    @Test
+    fun setNormalizedPublicationDate_doesNotClobberExistingYear_issue15() {
+        val biblio = BiblioItem()
+        biblio.setYear("2010")
+
+        val date = Date()
+        date.year = 2013
+        biblio.setNormalizedPublicationDate(date)
+
+        // an explicitly-set value must be preserved
+        Assert.assertThat(biblio.getYear(), CoreMatchers.`is`("2010"))
+    }
+
+    @Test
+    fun setNormalizedPublicationDate_partialDateLeavesMissingFieldsNull_issue15() {
+        val date = Date()
+        date.year = 2013 // month and day remain unset (-1)
+
+        val biblio = BiblioItem()
+        biblio.setNormalizedPublicationDate(date)
+
+        Assert.assertThat(biblio.getYear(), CoreMatchers.`is`("2013"))
+        Assert.assertNull(biblio.getMonth())
+        Assert.assertNull(biblio.getDay())
+    }
+
     companion object {
         val LOGGER: Logger = LoggerFactory.getLogger(BiblioItemTest::class.java)
 

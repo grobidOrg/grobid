@@ -657,4 +657,26 @@ public class TextUtilitiesTest extends EngineTest {
         OffsetPosition url8 = offsetPositions.get(2);
         assertThat(input.substring(url8.start, url8.end), is("ERC"));
     }
+
+    @Test
+    public void testClean_preservesAeOeLetters_issue728() {
+        // æ/Æ and œ/Œ are distinct letters (Danish, Norwegian, Icelandic, French...),
+        // not typographic ligatures, so clean() must leave them untouched
+        assertThat(TextUtilities.clean("æÆœŒ"), is("æÆœŒ"));
+        assertThat(TextUtilities.clean("Halvdan Kjærgaard"), is("Halvdan Kjærgaard"));
+    }
+
+    @Test
+    public void testClean_stillExpandsTypographicLigatures_issue728() {
+        // the fi/fl/ff family are genuine PDF rendering artifacts and must still be expanded
+        assertThat(TextUtilities.clean("ﬀﬁﬂﬃﬄ"), is("fffiflffiffl"));
+    }
+
+    @Test
+    public void testNormaliseText_collapsesNonBreakingSpace_issue849() {
+        // A citation made only of non-breaking spaces (U+00A0) reduces to blank once
+        // normalised; this is why processCitationList returns empty content rather than
+        // throwing a NullPointerException (HTTP 500) on whitespace-only input (issue #849).
+        assertThat(UnicodeUtil.normaliseText("\u00A0\u00A0\u00A0\u00A0").trim(), is(""));
+    }
 }
