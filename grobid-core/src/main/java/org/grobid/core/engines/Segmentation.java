@@ -758,7 +758,9 @@ public class Segmentation extends AbstractParser {
                         "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
                                 + id
                                 +
-                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"" + lang + "\">\n");
+                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
+                                + lang
+                                + "\">\n");
 
                 writer.write(bufferFulltext.toString());
                 writer.write("\n\t</text>\n</tei>\n");
@@ -856,7 +858,9 @@ public class Segmentation extends AbstractParser {
                         "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"f"
                                 + id
                                 +
-                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"" + lang + "\">\n");
+                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
+                                + lang
+                                + "\">\n");
 
                 writer.write(fulltext);
                 writer.write("\n\t</text>\n</tei>\n");

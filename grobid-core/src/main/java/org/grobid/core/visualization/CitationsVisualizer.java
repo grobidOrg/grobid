@@ -172,8 +172,12 @@ public class CitationsVisualizer {
         Long pageNum = Long.valueOf(split[0], 10) - 1;
 
         if (pageNum < 0 || pageNum >= document.getNumberOfPages()) {
-            LOGGER.warn("Annotation skipped: page index " + (pageNum + 1)
-                    + " is out of range (document reports " + document.getNumberOfPages() + " page(s)).");
+            LOGGER.warn(
+                    "Annotation skipped: page index "
+                            + (pageNum + 1)
+                            + " is out of range (document reports "
+                            + document.getNumberOfPages()
+                            + " page(s)).");
             return;
         }
         PDPage page = document.getDocumentCatalog().getPages().get(pageNum.intValue());
