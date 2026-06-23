@@ -87,6 +87,47 @@ or the header model for the flavor `article/light-ref`:
 ./gradlew train_header_article_light_ref
 ```
 
+## Adding a new flavor (for developers)
+
+Flavors are registered explicitly in the code rather than derived from arbitrary strings. This is intentional: a flavor only makes sense when a real, trained model exists behind it, so registration acts as a validation gate. An unregistered flavor name resolves silently to the default parser at training time and to the standard model at inference time, which would let a typo go unnoticed — registering the flavor is what guarantees it maps to a validated model.
+
+Adding a new flavor `xxx/yyy` (here for the `segmentation` model, the same pattern applies to `header` and `fulltext`) requires the following small, fixed set of changes:
+
+1. **Register the flavor identifier** in the `Flavor` enum in [`grobid-core/.../GrobidModels.java`](../grobid-core/src/main/java/org/grobid/core/GrobidModels.java). This is the canonical registry used at both training and inference:
+
+   ```java
+   XXX_YYY("xxx/yyy");
+   ```
+
+2. **Add a SAX parser only if the TEI structure differs** from the standard model. The trainer selects the parser based on the flavor (see e.g. `SegmentationTrainer.addFeaturesSegmentation`); if the flavor reuses the standard TEI structure, skip this step and the default parser is used automatically. If the structure is different, add a parser under [`grobid-trainer/.../trainer/sax/`](../grobid-trainer/src/main/java/org/grobid/trainer/sax) and wire it into the relevant trainer's parser selection:
+
+   ```java
+   TEISegmentationSaxParser parser;
+   if (flavor == Flavor.XXX_YYY) {
+       parser = new TEISegmentationXxxYyySaxParser();
+   } else if (...) {
+       ...
+   } else {
+       parser = new TEISegmentationSaxParser();
+   }
+   ```
+
+3. **Register the trainer mapping** in [`grobid-trainer/.../TrainerRegistry.java`](../grobid-trainer/src/main/java/org/grobid/trainer/TrainerRegistry.java) (the "Flavor variants" block). This map is the single source of truth shared by both the training CLI (`TrainerRunner`) and the REST training endpoint (`GrobidRestProcessTraining`):
+
+   ```java
+   map.put("segmentation-xxx-yyy", () -> new SegmentationTrainer(Flavor.XXX_YYY));
+   ```
+
+4. **Add a Gradle training task** in the `complexTrainerTasks` map of [`build.gradle`](../build.gradle), passing the flavor label as the argument:
+
+   ```groovy
+   "train_segmentation_xxx_yyy": ["org.grobid.trainer.SegmentationTrainer", "xxx/yyy"],
+   ```
+
+5. **Place the training data** under the standard dataset path, as a subdirectory named after the flavor: `grobid-trainer/resources/dataset/segmentation/xxx/yyy/`.
+
+Once the enum entry exists and a trained model is present on disk, the flavor becomes selectable at inference via the `flavor` parameter (e.g. `--form "flavor=xxx/yyy"`); if no flavored model is found, processing falls back to the standard model. The sequence labelling engine and (for Deep Learning models) the architecture are inherited from the base model configuration unless explicitly overridden for the flavor.
+
 ## Benchmarking
 
 The evaluation of the flavors is performed in the same way as the standard processing for scientific articles:
