@@ -2313,13 +2313,17 @@ public class FullTextParser extends AbstractParser {
                 lastTag0.equals("<equation_marker>")) {
                 buffer.append("</ref>");
 
-                // Make sure that paragraph is closed when markers are at the end of it
+                // Make sure that paragraph is closed only when the marker is genuinely at the
+                // end of it, i.e. the next tag is neither the paragraph continuation nor another
+                // embedded marker. The condition below used '||' between mutually exclusive
+                // equality checks, which is always true, so a '</p>' was emitted even when the
+                // next token was another marker in the same paragraph, producing redundant and
+                // unbalanced tags in the generated training data (issue #465).
                 if (!currentTag0.equals("<paragraph>") &&
-                    (!currentTag0.equals("<citation_marker>") ||
-                        !currentTag0.equals("<figure_marker>") ||
-                        !currentTag0.equals("<table_marker>") ||
-                        !currentTag0.equals("<equation_marker>")
-                    )
+                    !currentTag0.equals("<citation_marker>") &&
+                    !currentTag0.equals("<figure_marker>") &&
+                    !currentTag0.equals("<table_marker>") &&
+                    !currentTag0.equals("<equation_marker>")
                 ) {
                     buffer.append("</p>\n\n");
                 }
