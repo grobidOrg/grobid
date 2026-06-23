@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import nu.xom.Element;
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.MutableTriple;
 import org.apache.commons.lang3.tuple.Pair;
@@ -166,7 +167,7 @@ public class Engine implements Closeable {
             return finalResults;
 
         List<BiblioItem> results = parsers.getCitationParser().processingStringMultiple(references, 0);
-        if (results.size() == 0)
+        if (CollectionUtils.isEmpty(results))
             return finalResults;
 
         // consolidation in a second stage to take advantage of parallel calls
