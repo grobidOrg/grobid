@@ -9,7 +9,7 @@
 - **Clients**: Grobid is written in Java, but, fear not, various clients in Python and other languages are available. See [here](Grobid-service.md#clients-for-grobid-web-services) for more information.
 - **Consolidation:** Grobid can merge and reconcile extracted bibliographic data and citations using Crossref. With great power comes great responsibility, read [here](Consolidation.md) before using consolidation. **Consolidation has impact on performances**.
 - **Deep Learning & GPU:** Grobid’s best accuracy relies on deep learning models, which benefit from GPU acceleration. For fulltext-only extraction, use the CPU-only lightweight image. 
-- **Production configuration**: See [here](Frequently-asked-questions.md#could-we-have-some-guidance-for-server-configuration-in-production) for tuning Grobid for production use.
+- **Production configuration**: See [here](Frequently-asked-questions.md#guidance-for-server-configuration-in-production) for tuning Grobid for production use.
 
 !!! tip
     Keep reading until the end of the page.
@@ -19,6 +19,9 @@
 The simpler way to play with Grobid is to use the [Grobid instance](https://grobidOrg-grobid.hf.space) or [Mirror Grobid instance](https://grobidOrg-grobid2.hf.space) where a **light instance** of Grobid is deployed.
 You can use it to process a PDF file, or to test the Grobid web service. 
 The space is free and does not require any authentication.
+
+!!! note "Full (Deep Learning) instances available"
+    **Full instances**, running the Deep Learning models and producing better results (in particular for reference and citation extraction), are also deployed at [https://grobidOrg-grobid-full.hf.space](https://grobidOrg-grobid-full.hf.space) and the mirror [https://grobidOrg-grobid-full2.hf.space](https://grobidOrg-grobid-full2.hf.space).
 
 !!! warning "Grobid space is for demonstration only"
     This grobid space is not intended for production use, it is only a demonstration of Grobid capabilities. For production use, please deploy a local version or contact us.

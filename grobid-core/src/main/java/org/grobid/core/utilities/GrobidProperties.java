@@ -59,7 +59,7 @@ public class GrobidProperties {
     private static GrobidConfig grobidConfig = null;
 
     /**
-     * Map models specified inthe config file to their parameters
+     * Map models specified in the config file to their parameters
      */
     private static Map<String, ModelParameters> modelMap = null;
 
@@ -363,7 +363,7 @@ public class GrobidProperties {
     }
 
     /**
-     * Returns the temprorary path of grobid
+     * Returns the temporary path of grobid
      *
      * @return a directory for temp files
      */
@@ -641,10 +641,20 @@ public class GrobidProperties {
     }
 
     public static String getGrobidEngineName(final String modelName) {
-        ModelParameters param = getGrobidModelParameters(modelName);
-        if (param == null)
-            return null;
-        return param.engine;
+        // Field-level prefix-fallback: a flavor entry that does not declare an engine
+        // inherits it from the closest ancestor (by stripping trailing "-suffix" tokens)
+        // that does. This lets flavor entries focus on per-flavor overrides (e.g. a
+        // different DeLFT architecture) without having to repeat the base's engine.
+        String name = modelName;
+        while (name != null) {
+            ModelParameters param = modelMap.get(name);
+            if (param != null && StringUtils.isNotBlank(param.engine)) {
+                return param.engine;
+            }
+            int ind = name.lastIndexOf("-");
+            name = (ind == -1) ? null : name.substring(0, ind);
+        }
+        return null;
     }
 
     public static GrobidCRFEngine getGrobidEngine(final String modelName) {
@@ -663,7 +673,7 @@ public class GrobidProperties {
         if (modelMap.get(model.getModelName()) == null) {
             // model is either:
             // - a flavor without config, but that should fallback to the parent model config
-            //   if no specific config exists. If it is the case, the model path is infered
+            //   if no specific config exists. If it is the case, the model path is inferred
             //   from the flavor model name
             // - a normal model not specified in the config, so returning null
 
@@ -879,17 +889,21 @@ public class GrobidProperties {
     }
 
     public static String getDelftArchitecture(final String modelName) {
-        ModelParameters param = getGrobidModelParameters(modelName);
-        if (param == null) {
-            LOGGER.debug("No configuration parameter defined for model " + modelName);
-            return null;
+        // Field-level prefix-fallback: a flavor entry without `delft.architecture`
+        // inherits the architecture from the closest ancestor that sets it.
+        String name = modelName;
+        while (name != null) {
+            ModelParameters param = modelMap.get(name);
+            if (param != null
+                    && param.delft != null
+                    && StringUtils.isNotBlank(param.delft.architecture)) {
+                return param.delft.architecture;
+            }
+            int ind = name.lastIndexOf("-");
+            name = (ind == -1) ? null : name.substring(0, ind);
         }
-        DelftModelParameters delftParam = param.delft;
-        if (delftParam == null) {
-            LOGGER.debug("No configuration parameter defined for DeLFT engine for model " + modelName);
-            return null;
-        }
-        return param.delft.architecture;
+        LOGGER.debug("No DeLFT architecture configured for model " + modelName + " or any ancestor");
+        return null;
     }
 
     public static String getDelftEmbeddingsName(final String modelName) {

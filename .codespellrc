@@ -1,0 +1,29 @@
+[codespell]
+# Skip: git files, binary/generated files, training data/models, test resources, lexicons, caches.
+# EngineTest.java is skipped wholesale because it is ~150 lines of raw PDF/OCR text fixtures;
+# DiffMatchPatch.java is a verbatim vendored copy of Google's diff-match-patch (Apache-2.0),
+# skipped wholesale so we don't edit upstream code for spelling (e.g. its "compatability" typo);
+# all other per-file false positives are suppressed locally with inline `codespell:ignore`
+# directives so the rest of those files stay under check.
+skip = *.pdf,./doc/*.graffle,./.idea/*,.git,*.svg,*.css,.codespellrc,grobid-home,./grobid-trainer/resources/dataset,*/src/test/resources,*.bcmap,./grobid-service/src/main/resources/web/resources,./grobid-service/src/test/sample,./grobid-core/src/test/java/org/grobid/core/engines/EngineTest.java,./grobid-core/src/main/java/org/grobid/core/utilities/matching/DiffMatchPatch.java
+check-hidden = true
+# Ignore legitimate words:
+#   serie - French for "series" in bibliographic context
+#   blockin - ML feature label (not "blocking")
+#   punctuations - variable name for punctuation character set
+#   ther - abbreviation for "Therapeutics/Therapy" in journal titles
+#   ist - appears in patent/lexicon-related code
+#   usre - US patent reissue prefix
+#   theses - legitimate plural of "thesis"
+#   ue - German umlaut transcription (ü→ue, Ü→UE)
+#   consol - variable name abbreviation for "consolidation" (not "console")
+#   countr - variable for 2-character country code (not "counter")
+#   inpu - loop variable, singular form of "inputs"
+#   currenty - typo form of coordinate variable "currentY" (not "currently")
+#   currentx - typo form of coordinate variable "currentX"
+#   bloc - geopolitical term (e.g., NATO bloc, Eastern bloc), not "block"
+#   aline - first name (Aline Tribollet) in a triple-quoted TEI test fixture where inline ignore is impossible
+ignore-words-list = serie,blockin,punctuations,ther,ist,usre,theses,ue,consol,countr,inpu,currenty,currentx,bloc,aline
+# Ignore words only when they appear inside URIs (kept spell-checked in prose):
+#   groupes - French for "groups" in the RENATER mailing-list URL (groupes.renater.fr)
+uri-ignore-words-list = groupes

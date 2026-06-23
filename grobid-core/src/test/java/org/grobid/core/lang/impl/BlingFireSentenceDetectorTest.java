@@ -56,6 +56,22 @@ public class BlingFireSentenceDetectorTest {
     }
 
     @Test
+    public void testDetect_noTrailingWhitespaceOrEmptySpans() {
+        // BlingFire reconstructs offsets via indexOf over its sentence strings, so multiple spaces between
+        // sentences could otherwise be carried into a span; every returned span must be non-empty and have
+        // no surrounding whitespace
+        String text = "First sentence.   Second sentence.    Third one here.";
+        List<OffsetPosition> result = detector.detect(text);
+
+        assertThat(result, is(not(empty())));
+        for (OffsetPosition span : result) {
+            String s = text.substring(span.start, span.end);
+            assertThat(s.isEmpty(), is(false));
+            assertThat(s, is(s.strip()));
+        }
+    }
+
+    @Test
     public void testDetect_longScientificText_noOutOfBounds() {
         String text = "Lung cancer is the most common cause of cancer--related death worldwide, "
                 +

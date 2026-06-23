@@ -404,7 +404,7 @@ public class Person {
         // first name can be initial with a dot, e.g. "M." or without a dot
         // <forename type="first">H</forename>
 
-        // fistname can be intials with appended middlename also as initials,
+        // fistname can be initials with appended middlename also as initials,
         // with or without space, e.g. "M. L." or
         // <forename type="first">L.S.</forename>
 

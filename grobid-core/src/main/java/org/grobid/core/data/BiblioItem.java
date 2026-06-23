@@ -836,10 +836,29 @@ public class BiblioItem {
 
     public void setNormalizedPublicationDate(Date theDate) {
         this.normalized_publication_date = theDate;
+        syncDateStringFieldsFromNormalized();
     }
 
     public void mergeNormalizedPublicationDate(Date theDate) {
         this.normalized_publication_date = Date.merge(this.normalized_publication_date, theDate);
+        syncDateStringFieldsFromNormalized();
+    }
+
+    /**
+     * Keep the textual year/month/day fields in sync with the normalized publication
+     * date. These fields used to be derived only inside toTEI(), so library callers and
+     * non-TEI output paths saw them as null even when the date was correctly parsed
+     * (issue #15). Already-set values are preserved.
+     */
+    private void syncDateStringFieldsFromNormalized() {
+        if (normalized_publication_date == null)
+            return;
+        if (this.year == null && normalized_publication_date.getYear() != -1)
+            this.year = String.valueOf(normalized_publication_date.getYear());
+        if (this.month == null && normalized_publication_date.getMonth() != -1)
+            this.month = String.valueOf(normalized_publication_date.getMonth());
+        if (this.day == null && normalized_publication_date.getDay() != -1)
+            this.day = String.valueOf(normalized_publication_date.getDay());
     }
 
     public void setEditors(String theEditors) {
@@ -2136,7 +2155,7 @@ public class BiblioItem {
     }
 
     /**
-     * Check if the identifier pubnum is a DOI or an arXiv identifier. If yes, instanciate
+     * Check if the identifier pubnum is a DOI or an arXiv identifier. If yes, instantiate
      * the corresponding field and reset the generic pubnum field.
      */
     public void checkIdentifier() {
@@ -4107,7 +4126,7 @@ public class BiblioItem {
         if (bibo.getJournal() != null) {
             bib.setJournal(bibo.getJournal());
             // document type consistency (correction might change overall item type, and some
-            // fields become unconsistent)
+            // fields become inconsistent)
             if (bibo.getBookTitle() == null) {
                 bib.setBookTitle(null);
             }
@@ -4318,7 +4337,7 @@ public class BiblioItem {
 
     /**
      *  Check is the biblio item can be considered as a minimally valid bibliographical reference.
-     *  A certain minimal number of core metadata have to be instanciated. Otherwise, the biblio
+     *  A certain minimal number of core metadata have to be instantiated. Otherwise, the biblio
      *  item can be considered as "garbage" extracted incorrectly.
      */
     public boolean rejectAsReference() {

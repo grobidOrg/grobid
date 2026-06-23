@@ -193,7 +193,7 @@ public class CrossrefRequest<T extends Object> extends Observable {
                         try {
                             message.concurrencyLimit = Integer.parseInt(concurrencyLimitHeader.getValue().trim());
                         } catch (NumberFormatException e) {
-                            // ignore unparseable header
+                            // ignore unparsable header
                         }
                     }
                     Header apiPoolHeader = response.getFirstHeader("x-api-pool");

@@ -147,7 +147,7 @@ public class ShorttextTrainer extends AbstractTrainer {
             writer2.close();
             os2.close();
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running short text training.", e);
+            throw new GrobidException("An exception occurred while running short text training.", e);
         }
         return totalExamples;
     }

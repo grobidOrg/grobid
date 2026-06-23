@@ -107,7 +107,7 @@ public class Document implements Serializable {
     // header of the document - if extracted and processed
     protected transient BiblioItem resHeader = null;
 
-    // full text as tructure TEI - if extracted and processed
+    // full text as structure TEI - if extracted and processed
     protected String tei;
 
     protected transient ReferenceMarkerMatcher referenceMarkerMatcher;
@@ -1478,7 +1478,7 @@ public class Document implements Serializable {
     //                                            Document doc) {
     //        try {
     //            List<GraphicObject> localImages = null;
-    //            // set the intial figure area based on its layout tokens
+    //            // set the initial figure area based on its layout tokens
     //            LayoutToken startToken = figure.getStartToken();
     //            LayoutToken endToken = figure.getEndToken();
     //            int start = figure.getStart();

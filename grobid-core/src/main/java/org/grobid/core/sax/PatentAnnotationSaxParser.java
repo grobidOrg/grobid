@@ -185,7 +185,7 @@ public class PatentAnnotationSaxParser extends DefaultHandler {
             }
         } catch (Exception e) {
             //		    e.printStackTrace();
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 
@@ -227,7 +227,7 @@ public class PatentAnnotationSaxParser extends DefaultHandler {
             }
         } catch (Exception e) {
             //		    e.printStackTrace();
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 

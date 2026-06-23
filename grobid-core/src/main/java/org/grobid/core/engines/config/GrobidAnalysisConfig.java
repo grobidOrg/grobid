@@ -94,6 +94,10 @@ public class GrobidAnalysisConfig {
     // if true, the TEI text will be segmented into sentences
     private boolean withSentenceSegmentation = false;
 
+    // when non-null, parsers append their raw CRF labelling output to this collector
+    // so the REST layer can return it in debug mode instead of the TEI XML
+    private DebugLabelingCollector debugLabelingCollector = null;
+
     public boolean isIncludeDiscardedText() {
         return includeDiscardedText;
     }
@@ -215,6 +219,11 @@ public class GrobidAnalysisConfig {
             return this;
         }
 
+        public GrobidAnalysisConfigBuilder debugLabelingCollector(DebugLabelingCollector collector) {
+            config.debugLabelingCollector = collector;
+            return this;
+        }
+
         public GrobidAnalysisConfig build() {
             postProcessAndValidate();
             return config;
@@ -259,6 +268,7 @@ public class GrobidAnalysisConfig {
         sb.append(", generateTeiIds=").append(generateTeiIds);
         sb.append(", generateTeiCoordinates=").append(generateTeiCoordinates);
         sb.append(", flavor=").append(flavor);
+        sb.append(", debugLabelingCollector=").append(debugLabelingCollector != null ? "enabled" : "disabled");
 
         return sb.toString();
     }
@@ -341,5 +351,9 @@ public class GrobidAnalysisConfig {
 
     public String getFlavor() {
         return flavor;
+    }
+
+    public DebugLabelingCollector getDebugLabelingCollector() {
+        return debugLabelingCollector;
     }
 }

@@ -79,7 +79,7 @@ public class FeaturesVectorFulltext {
         // line information (1)
         res.append(" " + lineStatus);
 
-        // line position/identation (1)
+        // line position/indentation (1)
         res.append(" " + alignmentStatus);
 
         // font information (1)

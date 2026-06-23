@@ -834,33 +834,35 @@ public class ReferenceExtractor implements Closeable {
                 int k = 0;
                 List<BiblioItem> bibResults = parsers.getCitationParser()
                         .processingStringMultiple(allReferencesNPL, consolidate);
-                for (String ref : allReferencesNPL) {
-                    BiblioItem result = bibResults.get(k);
-                    if (result == null) {
+                if (bibResults != null) {
+                    for (String ref : allReferencesNPL) {
+                        BiblioItem result = bibResults.get(k);
+                        if (result == null) {
+                            k++;
+                            continue;
+                        }
+                        BibDataSet bds = new BibDataSet();
+                        result.setReference(ref);
+                        bds.setResBib(result);
+                        bds.setRawBib(ref);
+                        bds.addOffset(allOffsetsNPL.get(k).intValue());
+                        bds.setConfidence(allProbNPL.get(k).doubleValue());
+                        articles.add(bds);
+                        //allIndexSegmentNPL.add(localIndexSegmentNPL.get(k));
+
+                        List<BibDataSet> localList = articlesBySegment.get(localIndexSegmentNPL.get(k));
+                        if (localList == null) {
+                            localList = new ArrayList<>();
+                        }
+                        localList.add(bds);
+                        articlesBySegment.put(localIndexSegmentNPL.get(k), localList);
+
                         k++;
-                        continue;
                     }
-                    BibDataSet bds = new BibDataSet();
-                    result.setReference(ref);
-                    bds.setResBib(result);
-                    bds.setRawBib(ref);
-                    bds.addOffset(allOffsetsNPL.get(k).intValue());
-                    bds.setConfidence(allProbNPL.get(k).doubleValue());
-                    articles.add(bds);
-                    //allIndexSegmentNPL.add(localIndexSegmentNPL.get(k));
-
-                    List<BibDataSet> localList = articlesBySegment.get(localIndexSegmentNPL.get(k));
-                    if (localList == null) {
-                        localList = new ArrayList<>();
-                    }
-                    localList.add(bds);
-                    articlesBySegment.put(localIndexSegmentNPL.get(k), localList);
-
-                    k++;
                 }
             }
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
 
         StringBuilder resultTEI = new StringBuilder();
@@ -1382,24 +1384,26 @@ public class ReferenceExtractor implements Closeable {
                 int k = 0;
                 List<BiblioItem> bibResults = parsers.getCitationParser()
                         .processingStringMultiple(referencesNPL, consolidate);
-                for (String ref : referencesNPL) {
-                    BiblioItem result = bibResults.get(k);
-                    if (result == null) {
+                if (bibResults != null) {
+                    for (String ref : referencesNPL) {
+                        BiblioItem result = bibResults.get(k);
+                        if (result == null) {
+                            k++;
+                            continue;
+                        }
+                        BibDataSet bds = new BibDataSet();
+                        result.setReference(ref);
+                        bds.setResBib(result);
+                        bds.setRawBib(ref);
+                        bds.addOffset(offsets_NPL.get(k).intValue());
+                        //bds.setConfidence(probNPL.get(k).doubleValue());
+                        articles.add(bds);
                         k++;
-                        continue;
                     }
-                    BibDataSet bds = new BibDataSet();
-                    result.setReference(ref);
-                    bds.setResBib(result);
-                    bds.setRawBib(ref);
-                    bds.addOffset(offsets_NPL.get(k).intValue());
-                    //bds.setConfidence(probNPL.get(k).doubleValue());
-                    articles.add(bds);
-                    k++;
                 }
             }
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
         int nbs = 0;
         if (patents != null) {
@@ -1588,7 +1592,7 @@ public class ReferenceExtractor implements Closeable {
             System.out.println(contentString);
 
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 
@@ -1605,7 +1609,7 @@ public class ReferenceExtractor implements Closeable {
         if (!documentPath.endsWith(".xml") && !documentPath.endsWith(".xml.gz")) {
             throw new GrobidResourceException("Only patent XML files (ST.36 or Marec) can be processed to "
                     +
-                    "generate traning data.");
+                    "generate training data.");
         }
 
         File documentFile = new File(documentPath);
@@ -1762,7 +1766,7 @@ public class ReferenceExtractor implements Closeable {
 
             }
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 
@@ -1784,7 +1788,7 @@ public class ReferenceExtractor implements Closeable {
                 return true;
             }
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 
@@ -1852,7 +1856,7 @@ public class ReferenceExtractor implements Closeable {
             writer.close();
             tos.close();
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 

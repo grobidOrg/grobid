@@ -22,7 +22,7 @@ import org.grobid.core.document.Document;
 import org.grobid.core.utilities.XQueryProcessor;
 
 /**
- * Workign with vector graphics
+ * Working with vector graphics
  */
 public class VectorGraphicBoxCalculator {
     private static final Logger LOGGER = LoggerFactory.getLogger(VectorGraphicBoxCalculator.class);

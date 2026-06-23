@@ -24,7 +24,7 @@ On Linux, for having the library portable and not dynamically linking to the ins
 ```bash
 > ../collect-dependencies.sh libwapiti.so .
 ```
-The script will copy the required libaries together with `libwapiti.so`.
+The script will copy the required libraries together with `libwapiti.so`.
 
 + The local linking will be prioritize to ensure portability of the JNI, which can be checked on Linux by:
 ```bash

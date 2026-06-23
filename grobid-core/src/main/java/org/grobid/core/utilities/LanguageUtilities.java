@@ -74,7 +74,7 @@ public class LanguageUtilities {
     }
 
     /**
-     * Less basic run for language identification, where a maxumum length of text is used to
+     * Less basic run for language identification, where a maximum length of text is used to
      * identify the language. The goal is to avoid wasting resources using a too long piece of
      * text, when normally only a small chunk is enough for a safe language prediction.
      * Return a Language object consisting of the language code and a confidence score.

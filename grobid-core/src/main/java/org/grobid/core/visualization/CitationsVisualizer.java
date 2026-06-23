@@ -42,7 +42,7 @@ import org.grobid.core.utilities.LayoutTokensUtil;
 import org.grobid.core.utilities.Pair;
 
 /**
- *  Utilities for visualizing citation markers and biblographical references, wither directly
+ *  Utilities for visualizing citation markers and biblographical references, either directly
  *  in the PDF using the PDF annotation layer or as annotations in JSON for supporting
  *  web based rendering (e.g. with PDF.js) and interactive HTML layer.
  *  See the web console/demo for actual examples of usage.
@@ -56,7 +56,7 @@ public class CitationsVisualizer {
      *  Augment a PDF with bibliographical annotation, for bib. ref. and bib markers.
      *  The PDF annotation layer is used with "GoTo" and "URI" action links.
      *  The annotations of the bibliographical references can be associated to an URL in order
-     *  to have clickable references direclty in the PDF.
+     *  to have clickable references directly in the PDF.
      *  The Apache PDFBox library is used.
      *
      *  @param document PDDocument object resulting from the PDF parsing with PDFBox
@@ -170,6 +170,16 @@ public class CitationsVisualizer {
         String[] split = coords.split(",");
 
         Long pageNum = Long.valueOf(split[0], 10) - 1;
+
+        if (pageNum < 0 || pageNum >= document.getNumberOfPages()) {
+            LOGGER.warn(
+                    "Annotation skipped: page index "
+                            + (pageNum + 1)
+                            + " is out of range (document reports "
+                            + document.getNumberOfPages()
+                            + " page(s)).");
+            return;
+        }
         PDPage page = document.getDocumentCatalog().getPages().get(pageNum.intValue());
 
         PDRectangle mediaBox = page.getCropBox();

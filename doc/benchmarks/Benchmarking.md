@@ -10,7 +10,7 @@ See the [End-to-end evaluation](../End-to-end-evaluation.md) page for explanatio
 
 - As the evaluation data come from XML PMC and the scientific publishers, it contains some encoding errors (publisher data are far from perfect) and are not always complete (for instance some bibliographical references are provided as raw string and not structured). The results are therefore more a relative indication of error rates than trustful absolute accuracy performances.
 
-- We think that these metrics are very good to compare improvements over time and to catch possible regressions, because relative improvements can be reliable with slighty imperfect evaluation data. 
+- We think that these metrics are very good to compare improvements over time and to catch possible regressions, because relative improvements can be reliable with slightly imperfect evaluation data. 
 
 More recent versions of these benchmarks (for master snapshots) are available [here](https://github.com/kermitt2/grobid/tree/master/grobid-trainer/doc).
 

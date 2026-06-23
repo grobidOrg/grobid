@@ -15,6 +15,9 @@ import org.slf4j.LoggerFactory;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Person;
+import org.grobid.core.engines.config.DebugCaptureContext;
+import org.grobid.core.engines.config.DebugLabelingCollector;
+import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.engines.tagging.GenericTagger;
@@ -69,6 +72,11 @@ public class AuthorParser {
      * Processing of authors in citations
      */
     public List<Person> processingCitation(String input) throws Exception {
+        DebugCaptureContext.warnIfActive(GrobidModels.NAMES_CITATION, "AuthorParser.processingCitation(String)");
+        return processingCitation(input, null);
+    }
+
+    public List<Person> processingCitation(String input, GrobidAnalysisConfig config) throws Exception {
         if (StringUtils.isEmpty(input)) {
             return null;
         }
@@ -81,20 +89,34 @@ public class AuthorParser {
 
         // set the language to English for the analyser to avoid any bad surprises
         List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input, new Language("en", 1.0));
-        return processing(tokens, null, false);
+        return processing(tokens, null, false, config);
     }
 
     public List<Person> processingCitationLayoutTokens(List<LayoutToken> tokens) throws Exception {
+        DebugCaptureContext.warnIfActive(
+                GrobidModels.NAMES_CITATION,
+                "AuthorParser.processingCitationLayoutTokens(List<LayoutToken>)");
+        return processingCitationLayoutTokens(tokens, null);
+    }
+
+    public List<Person> processingCitationLayoutTokens(
+            List<LayoutToken> tokens,
+            GrobidAnalysisConfig config) throws Exception {
         if (CollectionUtils.isEmpty(tokens)) {
             return null;
         }
-        return processing(tokens, null, false);
+        return processing(tokens, null, false, config);
     }
 
     /**
      * Processing of authors in authors
      */
     public List<Person> processingHeader(String input) throws Exception {
+        DebugCaptureContext.warnIfActive(GrobidModels.NAMES_HEADER, "AuthorParser.processingHeader(String)");
+        return processingHeader(input, null);
+    }
+
+    public List<Person> processingHeader(String input, GrobidAnalysisConfig config) throws Exception {
         if (StringUtils.isEmpty(input)) {
             return null;
         }
@@ -107,11 +129,21 @@ public class AuthorParser {
 
         // set the language to English for the analyser to avoid any bad surprises
         List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input, new Language("en", 1.0));
-        return processing(tokens, null, true);
+        return processing(tokens, null, true, config);
     }
 
     public List<Person> processingHeaderWithLayoutTokens(List<LayoutToken> inputs, List<PDFAnnotation> pdfAnnotations) {
-        return processing(inputs, pdfAnnotations, true);
+        DebugCaptureContext.warnIfActive(
+                GrobidModels.NAMES_HEADER,
+                "AuthorParser.processingHeaderWithLayoutTokens(List, List)");
+        return processing(inputs, pdfAnnotations, true, null);
+    }
+
+    public List<Person> processingHeaderWithLayoutTokens(
+            List<LayoutToken> inputs,
+            List<PDFAnnotation> pdfAnnotations,
+            GrobidAnalysisConfig config) {
+        return processing(inputs, pdfAnnotations, true, config);
     }
 
     /**
@@ -119,9 +151,20 @@ public class AuthorParser {
      *
      * @param tokens list of LayoutToken object to process
      * @param head - if true use the model for header's name, otherwise the model for names in citation
-     * @return List of identified Person entites as POJO.
+     * @return List of identified Person entities as POJO.
      */
     public List<Person> processing(List<LayoutToken> tokens, List<PDFAnnotation> pdfAnnotations, boolean head) {
+        DebugCaptureContext.warnIfActive(
+                head ? GrobidModels.NAMES_HEADER : GrobidModels.NAMES_CITATION,
+                "AuthorParser.processing(List, List, boolean)");
+        return processing(tokens, pdfAnnotations, head, null);
+    }
+
+    public List<Person> processing(
+            List<LayoutToken> tokens,
+            List<PDFAnnotation> pdfAnnotations,
+            boolean head,
+            GrobidAnalysisConfig config) {
         if (CollectionUtils.isEmpty(tokens)) {
             return null;
         }
@@ -139,6 +182,10 @@ public class AuthorParser {
                 return null;
             GenericTagger tagger = head ? namesHeaderParser : namesCitationParser;
             String res = tagger.label(sequence);
+            if (config != null && config.getDebugLabelingCollector() != null) {
+                DebugLabelingCollector collector = config.getDebugLabelingCollector();
+                collector.record(head ? GrobidModels.NAMES_HEADER : GrobidModels.NAMES_CITATION, res);
+            }
             //System.out.println(res);
             TaggingTokenClusteror clusteror = new TaggingTokenClusteror(
                     head ? GrobidModels.NAMES_HEADER : GrobidModels.NAMES_CITATION, res, tokens);
@@ -564,7 +611,7 @@ public class AuthorParser {
             }
         } catch (Exception e) {
             //			e.printStackTrace();
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
         return buffer;
     }

@@ -22,7 +22,7 @@ public class TextSaxParser extends DefaultHandler {
                                         // for possible segmentations if more than one chunk of text is present under the
                                         // filter element(s)
 
-    private boolean accumule = true;
+    private boolean accumulate = true;
 
     public String currentPatentNumber = null;
     public String country = null;
@@ -34,14 +34,14 @@ public class TextSaxParser extends DefaultHandler {
     }
 
     public void characters(char[] buffer, int start, int length) {
-        if (accumule) {
+        if (accumulate) {
             accumulator.append(buffer, start, length);
         }
     }
 
     public void setFilter(List<String> filt) {
         filters = filt;
-        accumule = false;
+        accumulate = false;
     }
 
     public void addFilter(String filt) {
@@ -49,7 +49,7 @@ public class TextSaxParser extends DefaultHandler {
             filters = new ArrayList<>();
         if (!filters.contains(filt))
             filters.add(filt);
-        accumule = false;
+        accumulate = false;
     }
 
     public String getText() {
@@ -72,9 +72,9 @@ public class TextSaxParser extends DefaultHandler {
             if (localText.trim().length() > 0)
                 texts.add(localText);
             accumulator.setLength(0);
-            accumule = false;
+            accumulate = false;
         }
-        if (accumule) {
+        if (accumulate) {
             if (qName.equals("row") || qName.equals("p") || qName.equals("heading")) {
                 accumulator.append(" ");
             }
@@ -122,7 +122,7 @@ public class TextSaxParser extends DefaultHandler {
         }
 
         if (filters.contains(qName)) {
-            accumule = true;
+            accumulate = true;
         }
     }
 

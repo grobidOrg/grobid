@@ -32,7 +32,7 @@ public class TestCitationParser extends EngineTest {
 
         String text = "(1) Ahrens, M. Home fires that began with upholstered furniture; National Fire Protection Association: Quincy, Massachusetts, 2011.\n"
                 +
-                "(2) Evarts, B. Home fires that began with matresses and bedding; National Fire Protection Association: Quincy, Massachusetts, 2011.\n"
+                "(2) Evarts, B. Home fires that began with mattresses and bedding; National Fire Protection Association: Quincy, Massachusetts, 2011.\n"
                 +
                 "(3) Kramer, R. H.; Zammarano, M.; Linteris, G. T.; Gedde, U. W.; Gilman, J. W. Polym. Degrad. Stab. 2010, 95, 1115−1122.\n"
                 +

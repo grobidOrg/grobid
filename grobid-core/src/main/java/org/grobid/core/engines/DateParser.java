@@ -16,6 +16,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.grobid.core.GrobidModel;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.data.Date;
+import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.engines.label.TaggingLabel;
 import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.exceptions.GrobidException;
@@ -48,6 +49,11 @@ public class DateParser extends AbstractParser {
     }
 
     public List<Date> process(String input) {
+        warnIfDebugUncaptured("DateParser.process(String)");
+        return process(input, null);
+    }
+
+    public List<Date> process(String input, GrobidAnalysisConfig config) {
         List<String> dateBlocks = new ArrayList<>();
         // force English language for the tokenization only
         List<String> tokenizations = analyzer.tokenize(input, new Language("en", 1.0));
@@ -63,10 +69,15 @@ public class DateParser extends AbstractParser {
             }
         }
 
-        return processCommon(dateBlocks);
+        return processCommon(dateBlocks, config);
     }
 
     public List<Date> process(List<LayoutToken> input) {
+        warnIfDebugUncaptured("DateParser.process(List<LayoutToken>)");
+        return process(input, null);
+    }
+
+    public List<Date> process(List<LayoutToken> input, GrobidAnalysisConfig config) {
         List<String> dateBlocks = new ArrayList<>();
         for (LayoutToken tok : input) {
             if (!" ".equals(tok.getText()) && !"\n".equals(tok.getText())) {
@@ -76,16 +87,20 @@ public class DateParser extends AbstractParser {
             }
         }
 
-        return processCommon(dateBlocks);
+        return processCommon(dateBlocks, config);
     }
 
     protected List<Date> processCommon(List<String> input) {
+        return processCommon(input, null);
+    }
+
+    protected List<Date> processCommon(List<String> input, GrobidAnalysisConfig config) {
         if (CollectionUtils.isEmpty(input))
             return null;
 
         try {
             String features = FeaturesVectorDate.addFeaturesDate(input);
-            String res = label(features);
+            String res = labelAndCapture(features, config);
 
             List<LayoutToken> tokenization = input.stream()
                     .map(token -> new LayoutToken(token.split(" ")[0]))
@@ -94,7 +109,8 @@ public class DateParser extends AbstractParser {
             // extract results from the processed file
             return resultExtraction(res, tokenization);
         } catch (Exception e) {
-            throw new GrobidException("An exception on " + this.getClass().getName() + " occured while running Grobid.",
+            throw new GrobidException(
+                    "An exception on " + this.getClass().getName() + " occurred while running Grobid.",
                     e);
         }
     }
@@ -525,7 +541,7 @@ public class DateParser extends AbstractParser {
             }
         } catch (Exception e) {
             //			e.printStackTrace();
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
         return buffer;
     }

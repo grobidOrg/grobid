@@ -394,7 +394,7 @@ public class DocumentSource {
             }
         }
 
-        // if cleanOutline is true, we also remoce the additional outline file
+        // if cleanOutline is true, we also remove the additional outline file
         if (cleanOutline) {
             try {
                 if (pathToXml != null) {

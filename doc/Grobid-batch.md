@@ -10,7 +10,7 @@
 
 Be sure that the GROBID project is built, see [Install GROBID](Install-Grobid.md).
 
-Go under the project directy `grobid/`:
+Go under the project directory `grobid/`:
 ```bash
 > cd grobid/
 ```
@@ -25,7 +25,7 @@ Be sure to replace `<current version>` with the current version of GROBID that y
 > java -Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep -jar grobid-core/build/libs/grobid-core-0.9.0-onejar.jar -h
 ```
 
-The available batch commands are listed bellow. For those commands, at least `-Xmx1G` is used to set the JVM memory to avoid *OutOfMemoryException* given the current size of the Grobid models and the crazyness of some PDF. For complete fulltext processing, which involve all the GROBID models, `-Xmx4G` is recommended (although allocating less memory is usually fine). 
+The available batch commands are listed below. For those commands, at least `-Xmx1G` is used to set the JVM memory to avoid *OutOfMemoryException* given the current size of the Grobid models and the crazyness of some PDF. For complete fulltext processing, which involve all the GROBID models, `-Xmx4G` is recommended (although allocating less memory is usually fine). 
 
 The so called "GROBID home" in GROBID is the path to `grobid-home` (by default `grobid/grobid-home`). Pay attention that it is not the installation path to the full grobid project (e.g. to `grobid/`). In the following batch command lines, the GROBID home path can be specified with parameters `-gH` (default is `grobid/grobid-home`). 
 

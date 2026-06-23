@@ -3,21 +3,21 @@
     <head>
         <meta charset="utf-8">
         <title>Grobid Web Application</title>
-		<link rel="icon" type="image/x-icon" href="resources/img/favicon.ico"/> 
+		<link rel="icon" type="image/x-icon" href="resources/img/favicon.ico"/>
 		<link rel="shortcut icon" type="image/x-icon" href="resources/img/favicon.ico"/>
 
-		<script type="text/javascript" src="resources/js/jquery-3.5.1.min.js"></script> 
+		<script type="text/javascript" src="resources/js/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="resources/js/jquery.form.js"></script>
-        <script type="text/javascript" src="resources/bootstrap/js/bootstrap.min.js"></script>  
+        <script type="text/javascript" src="resources/bootstrap/js/bootstrap.min.js"></script>
 
-        <script type="text/javascript" src="resources/bootstrap/js/prettify.js"></script> 
+        <script type="text/javascript" src="resources/bootstrap/js/prettify.js"></script>
 		<script type="text/javascript" src="resources/js/vkbeautify.js"></script>
 
-        <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" media="screen"/> 
-		<link rel="stylesheet" href="resources/bootstrap/css/prettify.css"/>		
-		
-        <link rel="stylesheet" href="resources/css/style.css"/>    
-		
+        <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" media="screen"/>
+		<link rel="stylesheet" href="resources/bootstrap/css/prettify.css"/>
+
+        <link rel="stylesheet" href="resources/css/style.css"/>
+
 		<link rel="stylesheet" href="resources/font-awesome/css/font-awesome.min.css">
 
 		<!-- PDF.js stuff -->
@@ -29,38 +29,38 @@
     	<script type="text/javascript" src="resources/pdf.js/build_/pdf.js"></script>
 
  		<!-- The Grobid Javascript library -->
-        <script src="grobid/grobid.js"></script>    
+        <script src="grobid/grobid.js"></script>
 
     </head>
-    
-    <body>  
+
+    <body>
     	<!--div  class="alert alert-danger" class="col-md-8" style="margin-top:-20px; margin-bottom: 0px; padding-top: 10px; padding-bottom: 0px; width: 100%; display: flex; justify-content: center;">
             <p> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> This server uses CRF models and CPU, for best accuracy select Deep Learning models and use GPU</p>
         </div-->
-		<div class="container">  
-			
-		  <div class="content">  
-			
+		<div class="container">
+
+		  <div class="content">
+
 		    <div class="page-header">
 			<span id="health-indicator" title="Checking service status..."></span>
-	             <h1><span style="color:#333;">Grobid<!--img src="resources/img/grobid_header_logo.png" /--> 
+	             <h1><span style="color:#333;">Grobid<!--img src="resources/img/grobid_header_logo.png" /-->
 					 <h2>
 						<small>
-			<a class="section-active" id="about" href="#">About</a> 
-				<span style="padding-left:20px;">&nbsp;</span> 	
-			<a class="section-not-active" id="rest" href="#">Process</a> 
-				<span style="padding-left:20px;">&nbsp;</span> 
-			<a class="section-not-active" id="pdf" href="#">Annotate PDF</a> 
-				<span style="padding-left:20px;">&nbsp;</span> 	
-			<a class="section-not-active" id="patent" href="#">Patents</a> 
+			<a class="section-active" id="about" href="#">About</a>
 				<span style="padding-left:20px;">&nbsp;</span>
-			<!--a class="section-not-active" id="admin" href="#">Admin</a> 
+			<a class="section-not-active" id="rest" href="#">Process</a>
+				<span style="padding-left:20px;">&nbsp;</span>
+			<a class="section-not-active" id="pdf" href="#">Annotate PDF</a>
+				<span style="padding-left:20px;">&nbsp;</span>
+			<a class="section-not-active" id="patent" href="#">Patents</a>
+				<span style="padding-left:20px;">&nbsp;</span>
+			<!--a class="section-not-active" id="admin" href="#">Admin</a>
 				<span style="padding-left:20px;">&nbsp;</span-->
 						</small>
 					</h2>
 				</h1>
 	        </div>
-	
+
 			<span id="subTitle" style="display:none;"></span>
 					<div id="divAbout">
 						<p><large><b>Grobid</b> (GeneRation Of BIbliographic Data) is a machine learning library for extracting, parsing, and restructuring raw documents such as PDF into structured TEI-encoded documents, with a particular focus on technical and scientific publications.</p>
@@ -106,7 +106,7 @@
 
 						<p><b>Contact:</b> <a style="color:#70695C;" href="mailto:patrice.lopez@science-miner.com,luca@sciencialab.com?subject=GROBID">Patrice Lopez and Luca Foppiano</a>.</p>
 					</div>
-			
+
 	        <div id="divRestI">
 				<p style="margin-top:0; margin-bottom:8px; color:#555; font-size:14px;">Extract structured data (headers, references, citations) from PDFs or raw text</p>
 				<form class="form-horizontal" method="post" id="gbdForm" target=_blank accept-charset="UTF-8">
@@ -127,7 +127,7 @@
 				                    	<option value="processAffiliations">Process Affiliations</option>
 				                    	<option value="processCitation">Process Citation</option>
 				                    	<option value="processFundingAcknowledgement">Process Funding/Acknowledgement</option>
-									</optgroup>	
+									</optgroup>
 								</select>
 							</td>
 						</tr>
@@ -140,29 +140,29 @@
 										<table>
 											<tr>
 												<td>
-													<label class="checkbox" id="consolidateBlock1" style="display: inherit;">	
+													<label class="checkbox" id="consolidateBlock1" style="display: inherit;">
 														<input type="checkbox" id="consolidateHeader" name="consolidateHeader" value="1" checked="">Consolidate header</input>
 													</label>
 												</td>
 												<td>
-													<label class="checkbox" id="consolidateBlock2" style="display: inherit;">	
+													<label class="checkbox" id="consolidateBlock2" style="display: inherit;">
 														<input type="checkbox" id="consolidateCitations" name="consolidateCitations" value="1">Consolidate citations&nbsp;&nbsp;</input>
 													</label>
 												</td>
 												<td>
-													<label class="checkbox" id="consolidateBlock3" style="display: inherit;">	
+													<label class="checkbox" id="consolidateBlock3" style="display: inherit;">
 														<input type="checkbox" id="consolidateFunders" name="consolidateFunders" value="1">Consolidate funders</input>
 													</label>
 												</td>
 											</tr>
 											<tr>
 												<td>
-													<label class="checkbox" id="includeRawAffiliationsBlock" style="display: inherit;">	
+													<label class="checkbox" id="includeRawAffiliationsBlock" style="display: inherit;">
 														<input type="checkbox" id="includeRawAffiliations" name="includeRawAffiliations" value="1">Include raw affiliations&nbsp;</input>
 													</label>
 												</td>
 												<td>
-													<label class="checkbox" id="includeRawCitationsBlock" style="display: inherit;">	
+													<label class="checkbox" id="includeRawCitationsBlock" style="display: inherit;">
 														<input type="checkbox" id="includeRawCitations" name="includeRawCitations" value="1">Include raw citations</input>
 													</label>
 												</td>
@@ -174,12 +174,12 @@
 											</tr>
 											<tr>
 												<td>
-													<label class="checkbox" id="segmentSentencesBlock" style="display: inherit;">	
+													<label class="checkbox" id="segmentSentencesBlock" style="display: inherit;">
 														<input type="checkbox" id="segmentSentences" name="segmentSentences" value="1">Segment sentences</input>
 													</label>
 												</td>
 												<td>
-													<label class="checkbox" id="teiCoordinatesBlock" style="display: inherit;">	
+													<label class="checkbox" id="teiCoordinatesBlock" style="display: inherit;">
 														<input type="checkbox" id="teiCoordinates" name="teiCoordinates" value="ref">Add coordinates</input>
 													</label>
 												</td>
@@ -202,7 +202,7 @@
 											<span class="fileupload-preview" style="white-space:normal;"></span>
 										</div>
 										<span class="">
-											
+
 										<span class="btn btn-file" id="btn_block_1">
 											<span class="fileupload-new" id="labelFile">Select file</span>
 											<span class="fileupload-exists">Change</span>
@@ -220,14 +220,14 @@
 												<td><span style='padding-left:20px;'>&nbsp;</span></td>
 											</tr>
 										</table>
-									</div>					
+									</div>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>&nbsp;</td><td colspan="2"><input id="submitRequest" type="submit" value="Submit" class="btn btn-success"/>
 							<input id="btn_download" class="btn" value="Download TEI Result"/></td>
-						</tr>	
+						</tr>
 			        </table>
 				</form>
 				<br>
@@ -245,9 +245,9 @@
 									<optgroup label="JSON-based dynamic layer">
 					                    <option value="referenceAnnotations" selected>PDF reference annotations</option>
 					                </optgroup>
-					                <optgroup label="augmented PDF">    
+					                <optgroup label="augmented PDF">
 				                    	<option value="annotatePDF">add layer to PDF</option>
-				                    </optgroup>	
+				                    </optgroup>
 								</select>
 							</td>
 						</tr>
@@ -269,7 +269,7 @@
 											<span class="fileupload-preview" style="white-space:normal;"></span>
 										</div>
 										<span class="">
-											
+
 										<span class="btn btn-file">
 											<span class="fileupload-new" id="labelFile2">Select file</span>
 											<span class="fileupload-exists">Change</span>
@@ -277,13 +277,13 @@
 										</span>
 										<a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
 									  </div>
-									</div>				
+									</div>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>&nbsp;</td><td colspan="2"><input id="submitRequest2" value="Submit" class="btn btn-success"/></td>
-						</tr>	
+						</tr>
 			        </table>
 				</form>
 				<br>
@@ -304,7 +304,7 @@
 										<option value="processCitationPatentST36">Extract Citation patent ST.36</option>
 										<option value="processCitationPatentTXT">Extract Citation patent text</option>
 										<option value="processCitationPatentPDF">Extract Citation patent PDF</option>
-									</optgroup>	
+									</optgroup>
 									<optgroup label="Patent PDF annotation of citations">
 					                    <option value="citationPatentAnnotations">PDF reference annotations</option>
 					                </optgroup>
@@ -326,7 +326,7 @@
 											<span class="fileupload-preview" style="white-space:normal;"></span>
 										</div>
 										<span class="">
-										
+
 										<span class="btn btn-file" id="btn_block_3">
 											<span class="fileupload-new" id="labelFile3">Select file</span>
 											<span class="fileupload-exists">Change</span>
@@ -344,20 +344,20 @@
 												<td><span style='padding-left:20px;'>&nbsp;</span></td>
 											</tr>
 										</table>
-									</div>					
+									</div>
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td>&nbsp;</td><td colspan="2"><input id="submitRequest3" value="Submit" class="btn btn-success"/>
 							<input id="btn_download3" class="btn" value="Download TEI Result"/></td>
-						</tr>	
+						</tr>
 			        </table>
 				</form>
 				<br>
 				<div id="requestResult3"></div>
 			</div>
-	
+
 			<!--div id="divAdmin">
 				<form method="post" class="form-horizontal" id="adminForm">
 					<span>Enter administrator password &nbsp;</span>
@@ -373,11 +373,11 @@
 				<div id="TabAdminProps">
 				</div>
 			</div-->
-	
+
 		<div id="sideLinks" style="text-align:right; padding:10px 15px;">
 			<a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" title="Apache 2.0 License" style="color:#333; font-size:18px;"><i class="icon-legal"></i> <span style="font-size:12px;">Apache 2.0</span></a>
-			<a href="https://hub.docker.com/r/lfoppiano/grobid/" target="_blank" title="Grobid on Docker Hub" style="color:#333; margin-left:12px; display:inline-block; vertical-align:middle;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="28" height="28" fill="currentColor"><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg></a>
-			<a href="https://github.com/kermitt2/grobid" target="_blank" title="Grobid on GitHub" style="color:#333; font-size:28px; margin-left:12px;"><i class="icon-github"></i></a>
+			<a href="https://hub.docker.com/r/grobid/grobid/" target="_blank" title="Grobid on Docker Hub" style="color:#333; margin-left:12px; display:inline-block; vertical-align:middle;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="28" height="28" fill="currentColor"><path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"/></svg></a>
+			<a href="https://github.com/grobidOrg/grobid" target="_blank" title="Grobid on GitHub" style="color:#333; font-size:28px; margin-left:12px;"><i class="icon-github"></i></a>
 		</div>
 
 	    </div>
@@ -386,6 +386,6 @@
 		  <p><span style="color:#848484;">&copy; Grobid contributors 2026</span> <span id="grobid-version" style="color:#848484;"></span></p>
 		  </footer>
 		</div>
-		
+
     </body>
 </html>

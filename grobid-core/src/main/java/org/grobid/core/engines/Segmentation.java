@@ -25,6 +25,7 @@ import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.exceptions.GrobidExceptionStatus;
 import org.grobid.core.features.FeatureFactory;
 import org.grobid.core.features.FeaturesVectorSegmentation;
+import org.grobid.core.lang.Language;
 import org.grobid.core.layout.*;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LanguageUtilities;
@@ -103,7 +104,7 @@ public class Segmentation extends AbstractParser {
             if (config.getAnalyzer() != null)
                 doc.setAnalyzer(config.getAnalyzer());
             doc.addTokenizedDocument(config);
-            doc = prepareDocument(doc);
+            doc = prepareDocument(doc, config);
 
             // if assets is true, the images are still there under directory pathXML+"_data"
             // we copy them to the assetPath directory
@@ -131,6 +132,11 @@ public class Segmentation extends AbstractParser {
     }
 
     public Document prepareDocument(Document doc) {
+        warnIfDebugUncaptured("Segmentation.prepareDocument(Document)");
+        return prepareDocument(doc, null);
+    }
+
+    public Document prepareDocument(Document doc, GrobidAnalysisConfig config) {
 
         List<LayoutToken> tokenizations = doc.getTokenizations();
         if (tokenizations.size() > GrobidProperties.getPdfTokensMax()) {
@@ -145,7 +151,7 @@ public class Segmentation extends AbstractParser {
         doc.produceStatistics();
         String content = getAllLinesFeatured(doc);
         if (isNotEmpty(trim(content))) {
-            String labelledResult = label(content);
+            String labelledResult = labelAndCapture(content, config);
             // set the different sections of the Document object
             doc = BasicStructureBuilder.generalResultSegmentation(doc, labelledResult, tokenizations);
         }
@@ -739,7 +745,12 @@ public class Segmentation extends AbstractParser {
                 String rese = label(fulltext);
                 StringBuffer bufferFulltext = trainingExtraction(rese, tokenizations, doc);
 
-                // write the TEI file to reflect the extact layout of the text as extracted from the pdf
+                // detect the actual document language so the training TEI is annotated
+                // accordingly instead of always assuming English (issue #671); fall back
+                // to "en" when detection is inconclusive
+                String lang = detectLanguageOrDefault(rawtxt.toString());
+
+                // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                         File.separator +
                         PDFFileName.replace(".pdf", ".training.segmentation.tei.xml")), false), "UTF-8");
@@ -747,7 +758,9 @@ public class Segmentation extends AbstractParser {
                         "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
                                 + id
                                 +
-                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"en\">\n");
+                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
+                                + lang
+                                + "\">\n");
 
                 writer.write(bufferFulltext.toString());
                 writer.write("\n\t</text>\n</tei>\n");
@@ -755,7 +768,7 @@ public class Segmentation extends AbstractParser {
             }
 
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid training"
+            throw new GrobidException("An exception occurred while running Grobid training"
                     +
                     " data generation for segmentation model.", e);
         } finally {
@@ -764,8 +777,28 @@ public class Segmentation extends AbstractParser {
     }
 
     /**
+     * Detect the language of the given text for annotating generated training data,
+     * returning its ISO code or "en" when detection is unavailable or inconclusive
+     * (issue #671). Detection failures are non-fatal: training data generation should
+     * never abort because the language model is missing.
+     */
+    private String detectLanguageOrDefault(String text) {
+        if (isNotBlank(text)) {
+            try {
+                Language langID = languageUtilities.runLanguageId(text);
+                if (langID != null && isNotBlank(langID.getLang())) {
+                    return langID.getLang();
+                }
+            } catch (Exception e) {
+                LOGGER.warn("Language detection failed while generating training data, defaulting to 'en'.", e);
+            }
+        }
+        return "en";
+    }
+
+    /**
      * Get the content of the pdf and produce a blank training data TEI file, i.e. a text only TEI file
-     * without any tags. This is usefull to start from scratch the creation of training data at the same
+     * without any tags. This is useful to start from scratch the creation of training data at the same
      * level as the segmentation parser.
      *
      * @param inputFile    input file
@@ -814,7 +847,10 @@ public class Segmentation extends AbstractParser {
 
             fulltext = rawtxt.toString();
             if (isNotBlank(fulltext)) {
-                // write the TEI file to reflect the extact layout of the text as extracted from the pdf
+                // detect the actual document language instead of always assuming English (issue #671)
+                String lang = detectLanguageOrDefault(fulltext);
+
+                // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                         File.separator +
                         PDFFileName.replaceAll("(?i)\\.pdf$", ".training.blank.tei.xml")), false), "UTF-8");
@@ -822,7 +858,9 @@ public class Segmentation extends AbstractParser {
                         "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"f"
                                 + id
                                 +
-                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"en\">\n");
+                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
+                                + lang
+                                + "\">\n");
 
                 writer.write(fulltext);
                 writer.write("\n\t</text>\n</tei>\n");
@@ -830,7 +868,7 @@ public class Segmentation extends AbstractParser {
             }
 
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid training"
+            throw new GrobidException("An exception occurred while running Grobid training"
                     +
                     " data generation for segmentation model.", e);
         } finally {
@@ -841,7 +879,7 @@ public class Segmentation extends AbstractParser {
     /**
      * Extract results from a labelled full text in the training format without any string modification.
      *
-     * @param result        reult
+     * @param result        result
      * @param tokenizations toks
      * @return extraction
      */
@@ -1098,7 +1136,7 @@ public class Segmentation extends AbstractParser {
 
             return buffer;
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 
@@ -1146,7 +1184,7 @@ public class Segmentation extends AbstractParser {
                 }
                 buffer.append(outField).append(line);
             } /*else {
-                // otherwise we continue by ouputting the token
+                // otherwise we continue by outputting the token
                 buffer.append(line);
               }*/
         }

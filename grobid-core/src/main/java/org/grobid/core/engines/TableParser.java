@@ -37,9 +37,17 @@ public class TableParser extends AbstractParser {
      * sub-segmenting several tables that appears one after the other.
      */
     public List<Table> processing(List<LayoutToken> tokenizationTable, String featureVector) {
+        warnIfDebugUncaptured("TableParser.processing(List, String)");
+        return processing(tokenizationTable, featureVector, null);
+    }
+
+    public List<Table> processing(
+            List<LayoutToken> tokenizationTable,
+            String featureVector,
+            org.grobid.core.engines.config.GrobidAnalysisConfig config) {
         String res;
         try {
-            res = label(featureVector);
+            res = labelAndCapture(featureVector, config);
         } catch (Exception e) {
             throw new GrobidException("Sequence labeling with table model fails.", e);
         }

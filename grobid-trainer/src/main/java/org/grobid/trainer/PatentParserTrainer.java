@@ -437,7 +437,7 @@ public class PatentParserTrainer extends AbstractTrainer {
                                 }
                             }
                         } catch (Exception e) {
-                            throw new GrobidException("An exception occured while running Grobid.", e);
+                            throw new GrobidException("An exception occurred while running Grobid.", e);
                         }
                     }
                 }

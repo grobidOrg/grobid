@@ -29,7 +29,7 @@ public class ConsolidationIntegrationTest {
     }
 
     @Test
-    @Ignore("Crossref API not realiable enough")
+    @Ignore("Crossref API not reliable enough")
     public void testConsolidationDOISimple() throws Exception {
         BiblioItem biblio = new BiblioItem();
         biblio.setDOI(DOIs[0]);

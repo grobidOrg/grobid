@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 import nu.xom.Element;
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.MutableTriple;
 import org.apache.commons.lang3.tuple.Pair;
@@ -129,7 +130,7 @@ public class Engine implements Closeable {
      *
      * @param dateBlocks - the list of strings each containing raw dates.
      * @return the list of all structured date objects recognized in the string
-     *         for each inputed string.
+     *         for each inputted string.
      */
     /*public List<List<org.grobid.core.data.Date>> processDates(List<String> dateBlocks) {
         return null;
@@ -166,7 +167,7 @@ public class Engine implements Closeable {
             return finalResults;
 
         List<BiblioItem> results = parsers.getCitationParser().processingStringMultiple(references, 0);
-        if (results.size() == 0)
+        if (CollectionUtils.isEmpty(results))
             return finalResults;
 
         // consolidation in a second stage to take advantage of parallel calls
@@ -190,7 +191,7 @@ public class Engine implements Closeable {
                 resConsolidation = consolidator.consolidate(bibDataSetResults);
             } catch (Exception e) {
                 throw new GrobidException(
-                        "An exception occured while running consolidation on bibliographical references.", e);
+                        "An exception occurred while running consolidation on bibliographical references.", e);
             }
             if (resConsolidation != null) {
                 for (int i = 0; i < bibDataSetResults.size(); i++) {
@@ -251,8 +252,21 @@ public class Engine implements Closeable {
      *         with citation contexts
      */
     public List<BibDataSet> processReferences(File inputFile, String md5Str, int consolidate) {
+        return processReferences(inputFile, md5Str, consolidate, null);
+    }
+
+    public List<BibDataSet> processReferences(
+            File inputFile,
+            String md5Str,
+            int consolidate,
+            GrobidAnalysisConfig config) {
         return parsers.getCitationParser()
-                .processingReferenceSection(inputFile, md5Str, parsers.getReferenceSegmenterParser(), consolidate);
+                .processingReferenceSection(
+                        inputFile,
+                        md5Str,
+                        parsers.getReferenceSegmenterParser(),
+                        consolidate,
+                        config);
     }
 
     /**
@@ -646,7 +660,7 @@ public class Engine implements Closeable {
      * Process all the PDF in a given directory with a segmentation process and
      * produce the corresponding training data format files for manual
      * correction. The goal of this method is to help to produce additional
-     * traning data based on an existing model.
+     * training data based on an existing model.
      *
      * @param directoryPath - the path to the directory containing PDF to be processed.
      * @param resultPath    - the path to the directory where the results as XML file
@@ -682,7 +696,7 @@ public class Engine implements Closeable {
                     createTraining(pdfFile, resultPath, resultPath, ind + n, flavor);
                 } catch (final Exception exp) {
                     LOGGER.error(
-                            "An error occured while processing the following pdf: "
+                            "An error occurred while processing the following pdf: "
                                     + pdfFile.getPath(),
                             exp);
                 }
@@ -692,7 +706,7 @@ public class Engine implements Closeable {
 
             return refFiles.length;
         } catch (final Exception exp) {
-            throw new GrobidException("An exception occured while running Grobid batch.", exp);
+            throw new GrobidException("An exception occurred while running Grobid batch.", exp);
         }
     }
 
@@ -700,7 +714,7 @@ public class Engine implements Closeable {
      * Process all the PDF in a given directory with a monograph process and
      * produce the corresponding training data format files for manual
      * correction. The goal of this method is to help to produce additional
-     * traning data based on an existing model.
+     * training data based on an existing model.
      *
      * @param directoryPath - the path to the directory containing PDF to be processed.
      * @param resultPath    - the path to the directory where the results as XML files
@@ -736,7 +750,7 @@ public class Engine implements Closeable {
                     createTrainingMonograph(pdfFile, resultPath, resultPath, ind + n);
                 } catch (final Exception exp) {
                     LOGGER.error(
-                            "An error occured while processing the following pdf: "
+                            "An error occurred while processing the following pdf: "
                                     + pdfFile.getPath(),
                             exp);
                 }
@@ -746,7 +760,7 @@ public class Engine implements Closeable {
 
             return refFiles.length;
         } catch (final Exception exp) {
-            throw new GrobidException("An exception occured while running Grobid batch.", exp);
+            throw new GrobidException("An exception occurred while running Grobid batch.", exp);
         }
     }
 
@@ -789,7 +803,7 @@ public class Engine implements Closeable {
                     createTrainingBlank(pdfFile, resultPath, resultPath, ind + n);
                 } catch (final Exception exp) {
                     LOGGER.error(
-                            "An error occured while processing the following pdf: "
+                            "An error occurred while processing the following pdf: "
                                     + pdfFile.getPath(),
                             exp);
                 }
@@ -799,7 +813,7 @@ public class Engine implements Closeable {
 
             return refFiles.length;
         } catch (final Exception exp) {
-            throw new GrobidException("An exception occured while running Grobid batch.", exp);
+            throw new GrobidException("An exception occurred while running Grobid batch.", exp);
         }
     }
 
@@ -891,7 +905,7 @@ public class Engine implements Closeable {
 
     /**
      * Extract and parse both patent and non patent references within a patent text. Result are provided as a BibDataSet
-     * with offset position instanciated relative to input text and as PatentItem containing both "WISIWIG" results (the
+     * with offset position instantiated relative to input text and as PatentItem containing both "WISIWIG" results (the
      * patent reference attributes as they appear in the text) and the attributes in DOCDB format (format according to
      * WIPO and ISO standards). Patent references' offset positions are also given in the PatentItem object.
      *
@@ -936,9 +950,9 @@ public class Engine implements Closeable {
      * object.
      *
      * @param nplResults           the list of extracted and parsed non patent references as BiblioItem object. This
-     *                             list must be instanciated before calling the method for receiving the results.
+     *                             list must be instantiated before calling the method for receiving the results.
      * @param patentResults        the list of extracted and parsed patent references as PatentItem object. This list
-     *                             must be instanciated before calling the method for receiving the results.
+     *                             must be instantiated before calling the method for receiving the results.
      * @param consolidateCitations the consolidation option allows GROBID to exploit Crossref web services for improving
      *                             header information. 0 (no consolidation, default value), 1 (consolidate the citation
      *                             and inject extra metadata) or 2 (consolidate the citation and inject DOI only)
@@ -969,7 +983,7 @@ public class Engine implements Closeable {
     /**
      * Extract and parse both patent and non patent references within a patent
      * in PDF format. Result are provided as a BibDataSet with offset position
-     * instanciated relative to input text and as PatentItem containing both
+     * instantiated relative to input text and as PatentItem containing both
      * "WISIWIG" results (the patent reference attributes as they appear in the
      * text) and the attributes in DOCDB format (format according to WIPO and
      * ISO standards). Patent references' offset positions are also given in the
@@ -977,10 +991,10 @@ public class Engine implements Closeable {
      *
      * @param pdfPath              pdf path
      * @param nplResults           the list of extracted and parsed non patent references as
-     *                             BiblioItem object. This list must be instanciated before
+     *                             BiblioItem object. This list must be instantiated before
      *                             calling the method for receiving the results.
      * @param patentResults        the list of extracted and parsed patent references as
-     *                             PatentItem object. This list must be instanciated before
+     *                             PatentItem object. This list must be instantiated before
      *                             calling the method for receiving the results.
      * @param consolidateCitations the consolidation option allows GROBID to exploit Crossref web services for improving
      *                             header information. 0 (no consolidation, default value), 1 (consolidate the citation
@@ -1013,7 +1027,7 @@ public class Engine implements Closeable {
     /**
      * Extract and parse both patent and non patent references within a patent
      * in PDF format. Results are provided as JSON annotations with coordinates
-     * of the annotations in the orignal PDF and reference informations in DOCDB
+     * of the annotations in the original PDF and reference information in DOCDB
      * format (format according to WIPO and ISO standards).
      *
      * @param pdfPath              pdf path
@@ -1053,7 +1067,7 @@ public class Engine implements Closeable {
             inputStream.close();
             output.close();
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }*/
 
@@ -1061,7 +1075,7 @@ public class Engine implements Closeable {
      * Process an XML patent document with a patent citation extraction and
      * produce the corresponding training data format files for manual
      * correction. The goal of this method is to help to produce additional
-     * traning data based on an existing model.
+     * training data based on an existing model.
      *
      * @param pathXML    - the path to the XML patent document to be processed.
      * @param resultPath - the path to the directory where the results as XML files
@@ -1076,7 +1090,7 @@ public class Engine implements Closeable {
      * Process all the XML patent documents in a given directory with a patent
      * citation extraction and produce the corresponding training data format
      * files for manual correction. The goal of this method is to help to
-     * produce additional traning data based on an existing model.
+     * produce additional training data based on an existing model.
      *
      * @param directoryPath - the path to the directory containing XML files to be
      *                      processed.
@@ -1109,7 +1123,7 @@ public class Engine implements Closeable {
 
             return refFiles.length;
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 
@@ -1117,7 +1131,7 @@ public class Engine implements Closeable {
      * Extract chemical names from text.
      *
      * @param text - text to be processed.
-     * @return List of chemical entites as POJO.
+     * @return List of chemical entities as POJO.
      */
     public List<ChemicalEntity> extractChemicalEntities(String text) throws Exception {
         return parsers.getChemicalParser().extractChemicalEntities(text);
@@ -1209,7 +1223,7 @@ public class Engine implements Closeable {
                     }
                 } catch (final Exception exp) {
                     LOGGER.error(
-                            "An error occured while processing the following pdf: "
+                            "An error occurred while processing the following pdf: "
                                     + txtFile.getPath(),
                             exp);
                 }
@@ -1218,7 +1232,7 @@ public class Engine implements Closeable {
 
             return refFiles.length;
         } catch (final Exception exp) {
-            throw new GrobidException("An exception occured while running Grobid batch.", exp);
+            throw new GrobidException("An exception occurred while running Grobid batch.", exp);
         }
     }
 
@@ -1240,7 +1254,7 @@ public class Engine implements Closeable {
 
     /**
      * Process a text corresponding to a funding and/or acknowledgement section
-     * and retun the extracted entities as JSON annotations
+     * and return the extracted entities as JSON annotations
      */
     public String processFundingAcknowledgement(String text, GrobidAnalysisConfig config) throws Exception {
         StringBuilder result = new StringBuilder();

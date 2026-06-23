@@ -78,6 +78,8 @@ public class GrobidRestService implements GrobidPaths {
     public static final String INCLUDE_DISCARDED_TEXT = "includeDiscardedText";
     public static final String INCLUDE_RAW_COPYRIGHTS = "includeRawCopyrights";
     public static final String INCLUDE_FIGURES_TABLES = "includeFiguresTables";
+    public static final String DEBUG_MODE = "debugMode";
+    public static final String MODELS = "models";
 
     @Inject
     private GrobidRestProcessFiles restProcessFiles;
@@ -168,7 +170,9 @@ public class GrobidRestService implements GrobidPaths {
             @DefaultValue("0") @FormDataParam(INCLUDE_RAW_COPYRIGHTS) String includeRawCopyrights,
             @DefaultValue("0") @FormDataParam(INCLUDE_DISCARDED_TEXT) String includeDiscardedText,
             @DefaultValue("0") @FormDataParam("start") int startPage,
-            @DefaultValue("2") @FormDataParam("end") int endPage) {
+            @DefaultValue("2") @FormDataParam("end") int endPage,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) {
         int consol = validateConsolidationParam(consolidate);
         return restProcessFiles.processStatelessHeaderDocument(
                 inputStream,
@@ -178,7 +182,9 @@ public class GrobidRestService implements GrobidPaths {
                 validateIncludeRawParam(includeDiscardedText),
                 startPage,
                 endPage,
-                ExpectedResponseType.XML);
+                ExpectedResponseType.XML,
+                validateIncludeRawParam(debugMode),
+                models);
     }
 
     @Path(PATH_HEADER_FUNDING)
@@ -214,7 +220,9 @@ public class GrobidRestService implements GrobidPaths {
             @DefaultValue("0") @FormDataParam(INCLUDE_RAW_COPYRIGHTS) String includeRawCopyrights,
             @DefaultValue("0") @FormDataParam(INCLUDE_DISCARDED_TEXT) String includeDiscardedText,
             @DefaultValue("0") @FormDataParam("start") int startPage,
-            @DefaultValue("2") @FormDataParam("end") int endPage) {
+            @DefaultValue("2") @FormDataParam("end") int endPage,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) {
         return processHeaderDocumentReturnXml_post(
                 inputStream,
                 consolidate,
@@ -222,7 +230,9 @@ public class GrobidRestService implements GrobidPaths {
                 includeRawCopyrights,
                 includeDiscardedText,
                 startPage,
-                endPage);
+                endPage,
+                debugMode,
+                models);
     }
 
     @Path(PATH_HEADER)
@@ -235,14 +245,21 @@ public class GrobidRestService implements GrobidPaths {
             @DefaultValue("0") @FormDataParam(INCLUDE_RAW_AFFILIATIONS) String includeRawAffiliations,
             @DefaultValue("0") @FormDataParam(INCLUDE_RAW_COPYRIGHTS) String includeRawCopyrights,
             @DefaultValue("0") @FormDataParam("start") int startPage,
-            @DefaultValue("2") @FormDataParam("end") int endPage) {
+            @DefaultValue("2") @FormDataParam("end") int endPage,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) {
         int consol = validateConsolidationParam(consolidate);
         return restProcessFiles.processStatelessHeaderDocument(
                 inputStream,
                 consol,
                 validateIncludeRawParam(includeRawAffiliations),
                 validateIncludeRawParam(includeRawCopyrights),
-                ExpectedResponseType.BIBTEX);
+                false,
+                startPage,
+                endPage,
+                ExpectedResponseType.BIBTEX,
+                validateIncludeRawParam(debugMode),
+                models);
     }
 
     @Path(PATH_HEADER)
@@ -255,14 +272,18 @@ public class GrobidRestService implements GrobidPaths {
             @DefaultValue("0") @FormDataParam(INCLUDE_RAW_AFFILIATIONS) String includeRawAffiliations,
             @DefaultValue("0") @FormDataParam(INCLUDE_RAW_COPYRIGHTS) String includeRawCopyrights,
             @DefaultValue("0") @FormDataParam("start") int startPage,
-            @DefaultValue("2") @FormDataParam("end") int endPage) {
+            @DefaultValue("2") @FormDataParam("end") int endPage,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) {
         return processHeaderDocumentReturnBibTeX_post(
                 inputStream,
                 consolidate,
                 includeRawAffiliations,
                 includeRawCopyrights,
                 startPage,
-                endPage);
+                endPage,
+                debugMode,
+                models);
     }
 
     @Path(PATH_FULL_TEXT)
@@ -283,7 +304,9 @@ public class GrobidRestService implements GrobidPaths {
             @DefaultValue("-1") @FormDataParam("end") int endPage,
             @FormDataParam("generateIDs") String generateIDs,
             @FormDataParam("segmentSentences") String segmentSentences,
-            @FormDataParam("teiCoordinates") List<FormDataBodyPart> coordinates) throws Exception {
+            @FormDataParam("teiCoordinates") List<FormDataBodyPart> coordinates,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) throws Exception {
         return processFulltext(
                 inputStream,
                 flavor,
@@ -298,7 +321,9 @@ public class GrobidRestService implements GrobidPaths {
                 endPage,
                 generateIDs,
                 segmentSentences,
-                coordinates);
+                coordinates,
+                debugMode,
+                models);
     }
 
     @Path(PATH_FULL_TEXT)
@@ -319,7 +344,9 @@ public class GrobidRestService implements GrobidPaths {
             @DefaultValue("-1") @FormDataParam("end") int endPage,
             @FormDataParam("generateIDs") String generateIDs,
             @FormDataParam("segmentSentences") String segmentSentences,
-            @FormDataParam("teiCoordinates") List<FormDataBodyPart> coordinates) throws Exception {
+            @FormDataParam("teiCoordinates") List<FormDataBodyPart> coordinates,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) throws Exception {
         return processFulltext(
                 inputStream,
                 flavor,
@@ -334,7 +361,9 @@ public class GrobidRestService implements GrobidPaths {
                 endPage,
                 generateIDs,
                 segmentSentences,
-                coordinates);
+                coordinates,
+                debugMode,
+                models);
     }
 
     private Response processFulltext(
@@ -351,13 +380,16 @@ public class GrobidRestService implements GrobidPaths {
             int endPage,
             String generateIDs,
             String segmentSentences,
-            List<FormDataBodyPart> coordinates) throws Exception {
+            List<FormDataBodyPart> coordinates,
+            String debugMode,
+            String models) throws Exception {
         int consolHeader = validateConsolidationParam(consolidateHeader);
         int consolCitations = validateConsolidationParam(consolidateCitations);
         int consolFunders = validateConsolidationParam(consolidateFunders);
         boolean includeRaw = validateIncludeRawParam(includeRawCitations);
         boolean generate = validateGenerateIdParam(generateIDs);
         boolean segment = validateGenerateIdParam(segmentSentences);
+        boolean debug = validateIncludeRawParam(debugMode);
         GrobidModels.Flavor flavorValidated = validateModelFlavor(flavor);
 
         List<String> teiCoordinates = collectCoordinates(coordinates);
@@ -386,7 +418,9 @@ public class GrobidRestService implements GrobidPaths {
                 endPage,
                 generate,
                 segment,
-                teiCoordinates);
+                teiCoordinates,
+                debug,
+                models);
     }
 
     private GrobidModels.Flavor validateModelFlavor(String flavor) {
@@ -445,7 +479,9 @@ public class GrobidRestService implements GrobidPaths {
             @DefaultValue("-1") @FormDataParam("end") int endPage,
             @FormDataParam("generateIDs") String generateIDs,
             @FormDataParam("segmentSentences") String segmentSentences,
-            @FormDataParam("teiCoordinates") List<FormDataBodyPart> coordinates) throws Exception {
+            @FormDataParam("teiCoordinates") List<FormDataBodyPart> coordinates,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) throws Exception {
         return processStatelessFulltextAssetHelper(
                 inputStream,
                 flavor,
@@ -459,7 +495,9 @@ public class GrobidRestService implements GrobidPaths {
                 endPage,
                 generateIDs,
                 segmentSentences,
-                coordinates);
+                coordinates,
+                debugMode,
+                models);
     }
 
     @Path(PATH_FULL_TEXT_ASSET)
@@ -479,7 +517,9 @@ public class GrobidRestService implements GrobidPaths {
             @DefaultValue("-1") @FormDataParam("end") int endPage,
             @FormDataParam("generateIDs") String generateIDs,
             @FormDataParam("segmentSentences") String segmentSentences,
-            @FormDataParam("teiCoordinates") List<FormDataBodyPart> coordinates) throws Exception {
+            @FormDataParam("teiCoordinates") List<FormDataBodyPart> coordinates,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) throws Exception {
         return processStatelessFulltextAssetHelper(
                 inputStream,
                 flavor,
@@ -493,7 +533,9 @@ public class GrobidRestService implements GrobidPaths {
                 endPage,
                 generateIDs,
                 segmentSentences,
-                coordinates);
+                coordinates,
+                debugMode,
+                models);
     }
 
     private Response processStatelessFulltextAssetHelper(
@@ -509,13 +551,16 @@ public class GrobidRestService implements GrobidPaths {
             int endPage,
             String generateIDs,
             String segmentSentences,
-            List<FormDataBodyPart> coordinates) throws Exception {
+            List<FormDataBodyPart> coordinates,
+            String debugMode,
+            String models) throws Exception {
         int consolHeader = validateConsolidationParam(consolidateHeader);
         int consolCitations = validateConsolidationParam(consolidateCitations);
         int consolFunders = validateConsolidationParam(consolidateFunders);
         boolean includeRaw = validateIncludeRawParam(includeRawCitations);
         boolean generate = validateGenerateIdParam(generateIDs);
         boolean segment = validateGenerateIdParam(segmentSentences);
+        boolean debug = validateIncludeRawParam(debugMode);
         List<String> teiCoordinates = collectCoordinates(coordinates);
         GrobidModels.Flavor validatedModelFlavor = validateModelFlavor(flavor);
 
@@ -532,7 +577,9 @@ public class GrobidRestService implements GrobidPaths {
                 endPage,
                 generate,
                 segment,
-                teiCoordinates);
+                teiCoordinates,
+                debug,
+                models);
     }
 
     /*@Path(PATH_CITATION_PATENT_TEI)
@@ -764,11 +811,18 @@ public class GrobidRestService implements GrobidPaths {
     public Response processStatelessReferencesDocumentReturnXml_post(
             @FormDataParam(INPUT) InputStream inputStream,
             @DefaultValue("0") @FormDataParam(CONSOLIDATE_CITATIONS) String consolidate,
-            @DefaultValue("0") @FormDataParam(INCLUDE_RAW_CITATIONS) String includeRawCitations) {
+            @DefaultValue("0") @FormDataParam(INCLUDE_RAW_CITATIONS) String includeRawCitations,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) {
         int consol = validateConsolidationParam(consolidate);
         boolean includeRaw = validateIncludeRawParam(includeRawCitations);
-        return restProcessFiles
-                .processStatelessReferencesDocument(inputStream, consol, includeRaw, ExpectedResponseType.XML);
+        return restProcessFiles.processStatelessReferencesDocument(
+                inputStream,
+                consol,
+                includeRaw,
+                ExpectedResponseType.XML,
+                validateIncludeRawParam(debugMode),
+                models);
     }
 
     @Path(PATH_REFERENCES)
@@ -778,8 +832,15 @@ public class GrobidRestService implements GrobidPaths {
     public Response processStatelessReferencesDocumentReturnXml(
             @FormDataParam(INPUT) InputStream inputStream,
             @DefaultValue("0") @FormDataParam(CONSOLIDATE_CITATIONS) String consolidate,
-            @DefaultValue("0") @FormDataParam(INCLUDE_RAW_CITATIONS) String includeRawCitations) {
-        return processStatelessReferencesDocumentReturnXml_post(inputStream, consolidate, includeRawCitations);
+            @DefaultValue("0") @FormDataParam(INCLUDE_RAW_CITATIONS) String includeRawCitations,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) {
+        return processStatelessReferencesDocumentReturnXml_post(
+                inputStream,
+                consolidate,
+                includeRawCitations,
+                debugMode,
+                models);
     }
 
     @Path(PATH_REFERENCES)
@@ -789,11 +850,18 @@ public class GrobidRestService implements GrobidPaths {
     public Response processStatelessReferencesDocumentReturnBibTeX_post(
             @FormDataParam(INPUT) InputStream inputStream,
             @DefaultValue("0") @FormDataParam(CONSOLIDATE_CITATIONS) String consolidate,
-            @DefaultValue("0") @FormDataParam(INCLUDE_RAW_CITATIONS) String includeRawCitations) {
+            @DefaultValue("0") @FormDataParam(INCLUDE_RAW_CITATIONS) String includeRawCitations,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) {
         int consol = validateConsolidationParam(consolidate);
         boolean includeRaw = validateIncludeRawParam(includeRawCitations);
-        return restProcessFiles
-                .processStatelessReferencesDocument(inputStream, consol, includeRaw, ExpectedResponseType.BIBTEX);
+        return restProcessFiles.processStatelessReferencesDocument(
+                inputStream,
+                consol,
+                includeRaw,
+                ExpectedResponseType.BIBTEX,
+                validateIncludeRawParam(debugMode),
+                models);
     }
 
     @Path(PATH_REFERENCES)
@@ -803,8 +871,15 @@ public class GrobidRestService implements GrobidPaths {
     public Response processStatelessReferencesDocumentReturnBibTeX(
             @FormDataParam(INPUT) InputStream inputStream,
             @DefaultValue("0") @FormDataParam(CONSOLIDATE_CITATIONS) String consolidate,
-            @DefaultValue("0") @FormDataParam(INCLUDE_RAW_CITATIONS) String includeRawCitations) {
-        return processStatelessReferencesDocumentReturnBibTeX_post(inputStream, consolidate, includeRawCitations);
+            @DefaultValue("0") @FormDataParam(INCLUDE_RAW_CITATIONS) String includeRawCitations,
+            @DefaultValue("0") @FormDataParam(DEBUG_MODE) String debugMode,
+            @FormDataParam(MODELS) String models) {
+        return processStatelessReferencesDocumentReturnBibTeX_post(
+                inputStream,
+                consolidate,
+                includeRawCitations,
+                debugMode,
+                models);
     }
 
     @Path(PATH_PDF_ANNOTATION)

@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.grobid.core.lang.Language;
 import org.grobid.core.lang.SentenceDetector;
 import org.grobid.core.utilities.OffsetPosition;
+import org.grobid.core.utilities.SentenceUtilities;
 
 /**
  * Implementation of sentence segmentation via Microsoft BlingFire.
@@ -43,12 +44,19 @@ public class BlingFireSentenceDetector implements SentenceDetector {
             if (sentence.isEmpty()) {
                 continue;
             }
-            int start = text.indexOf(sentence, pos);
+            // strip surrounding whitespace so the matched span stops at the last non-space character
+            // (BlingFire may return a sentence string with trailing spaces, which indexOf would then
+            // carry into the offset)
+            String sentenceClean = sentence.strip();
+            if (sentenceClean.isEmpty()) {
+                continue;
+            }
+            int start = text.indexOf(sentenceClean, pos);
             if (start == -1) {
                 LOGGER.warn("Extracted sentence does not match original text - " + sentence);
                 start = pos;
             }
-            int end = start + sentence.length();
+            int end = start + sentenceClean.length();
             if (end > text.length()) {
                 end = text.length();
             }
@@ -56,6 +64,8 @@ public class BlingFireSentenceDetector implements SentenceDetector {
             pos = end;
         }
 
-        return result;
+        // belt-and-suspenders: drop any empty/whitespace-only span and trim residual whitespace,
+        // consistent with the other segmenters
+        return SentenceUtilities.trimAndFilterSentenceOffsets(text, result);
     }
 }

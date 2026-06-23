@@ -12,30 +12,22 @@ import java.util.stream.Collectors;
 import org.apache.commons.lang3.tuple.Triple;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.powermock.api.easymock.PowerMock;
-import org.powermock.core.classloader.annotations.PrepareForTest;
-import org.powermock.modules.junit4.PowerMockRunner;
 
 import org.grobid.core.GrobidModels;
 import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Date;
 import org.grobid.core.features.FeaturesVectorDate;
 import org.grobid.core.layout.LayoutToken;
-import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.utilities.GrobidConfig;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.GrobidTestUtils;
 
-@RunWith(PowerMockRunner.class)
-@PrepareForTest(Lexicon.class)
 public class DateParserTest {
 
     private DateParser target;
 
     @Before
     public void setUp() throws Exception {
-        PowerMock.mockStatic(Lexicon.class);
         GrobidConfig.ModelParameters modelParameters = new GrobidConfig.ModelParameters();
         modelParameters.name = "bao";
         GrobidProperties.addModel(modelParameters);

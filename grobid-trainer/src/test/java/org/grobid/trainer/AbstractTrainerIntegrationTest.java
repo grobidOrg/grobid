@@ -81,7 +81,7 @@ public class AbstractTrainerIntegrationTest {
         List<String> expected = Arrays.asList(
                 "Available available A Av Ava Avai e le ble able LINESTART INITCAP NODIGIT 0 0 0 NOPUNCT I-<other>\n"
                         +
-                        "online online o on onl onli e ne ine line LINEIN NOCAPS NODIGIT 0 0 0 NOPUNCT <other>\n"
+                        "online online o on onl onli e ne ine line LINEIN NOCAPS NODIGIT 0 0 0 NOPUNCT <other>\n" // codespell:ignore onl,ine
                         +
                         "18 18 1 18 18 18 8 18 18 18 LINEIN NOCAPS ALLDIGIT 0 0 0 NOPUNCT I-<day>\n"
                         +
@@ -209,7 +209,7 @@ public class AbstractTrainerIntegrationTest {
         List<String> orderedTrainingData = Arrays.asList(
                 "Available available A Av Ava Avai e le ble able LINESTART INITCAP NODIGIT 0 0 0 NOPUNCT I-<other>\n"
                         +
-                        "online online o on onl onli e ne ine line LINEIN NOCAPS NODIGIT 0 0 0 NOPUNCT <other>\n"
+                        "online online o on onl onli e ne ine line LINEIN NOCAPS NODIGIT 0 0 0 NOPUNCT <other>\n" // codespell:ignore onl,ine
                         +
                         "18 18 1 18 18 18 8 18 18 18 LINEIN NOCAPS ALLDIGIT 0 0 0 NOPUNCT I-<day>\n"
                         +

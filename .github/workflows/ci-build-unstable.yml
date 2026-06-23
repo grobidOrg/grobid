@@ -48,6 +48,7 @@ jobs:
 
   docker-build-amd64:
     needs: [build]
+    if: github.event.repository.fork == false
     runs-on: ubuntu-latest
     outputs:
       digest: ${{ steps.build.outputs.digest }}
@@ -89,6 +90,7 @@ jobs:
 
   docker-build-arm64:
     needs: [build]
+    if: github.event.repository.fork == false
     runs-on: ubuntu-24.04-arm
     outputs:
       digest: ${{ steps.build.outputs.digest }}

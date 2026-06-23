@@ -9,10 +9,10 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.powermock.reflect.Whitebox;
 
 import org.grobid.core.GrobidModels;
 import org.grobid.core.main.LibraryLoader;
+import org.grobid.core.utilities.GrobidTestUtils;
 
 public class TaggerFactoryTest {
 
@@ -20,12 +20,12 @@ public class TaggerFactoryTest {
     public void setUp() throws Exception {
         LibraryLoader.load();
 
-        Whitebox.setInternalState(TaggerFactory.class, "cache", new HashMap<>());
+        GrobidTestUtils.setStaticField(TaggerFactory.class, "cache", new HashMap<>());
     }
 
     @After
     public void tearDown() throws Exception {
-        Whitebox.setInternalState(TaggerFactory.class, "cache", new HashMap<>());
+        GrobidTestUtils.setStaticField(TaggerFactory.class, "cache", new HashMap<>());
     }
 
     @Test

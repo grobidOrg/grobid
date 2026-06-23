@@ -289,7 +289,7 @@ public final class FastMatcher {
                 {
                     t2 = (Map) tt.get("#");
                     if (t2 != null) {
-                        // end of the current term, matching sucesssful
+                        // end of the current term, matching successful
                         OffsetPosition ofp = new OffsetPosition();
                         ofp.start = startPos.get(i).intValue();
                         ofp.end = lastNonSeparatorPos.get(i).intValue();
@@ -319,7 +319,7 @@ public final class FastMatcher {
             for (Map tt : t) {
                 Map t2 = (Map) tt.get("#");
                 if (t2 != null) {
-                    // end of the current term, matching sucesssful
+                    // end of the current term, matching successful
                     OffsetPosition ofp = new OffsetPosition();
                     ofp.start = startPos.get(i).intValue();
                     ofp.end = lastNonSeparatorPos.get(i).intValue();

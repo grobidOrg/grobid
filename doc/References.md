@@ -55,7 +55,7 @@ For archeological purposes, the following first paper has been the main motivati
 
 - Fuchun Peng and Andrew McCallum. [Accurate Information Extraction from Research Papers using Conditional Random Fields](https://www.aclweb.org/anthology/N04-1042.pdf). Proceedings of Human Language Technology Conference and North American Chapter of the Association for Computational Linguistics (HLT-NAACL), 2004.
 
-- Isaac G. Councill, C. Lee Giles, Min-Yen Kan. [ParsCit: An open-source CRF reference string parsing package](http://www.lrec-conf.org/proceedings/lrec2008/pdf/166_paper.pdf). In Proceedings of the Language Resources and Evaluation Conference (LREC), Marrakesh, Morrocco, 2008.
+- Isaac G. Councill, C. Lee Giles, Min-Yen Kan. [ParsCit: An open-source CRF reference string parsing package](http://www.lrec-conf.org/proceedings/lrec2008/pdf/166_paper.pdf). In Proceedings of the Language Resources and Evaluation Conference (LREC), Marrakesh, Morocco, 2008.
 
 ## Datasets
 

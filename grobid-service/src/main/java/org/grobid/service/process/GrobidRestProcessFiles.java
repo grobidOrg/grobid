@@ -7,6 +7,7 @@ import java.security.MessageDigest;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Set;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -29,6 +30,8 @@ import org.grobid.core.data.PatentItem;
 import org.grobid.core.document.Document;
 import org.grobid.core.document.DocumentSource;
 import org.grobid.core.engines.Engine;
+import org.grobid.core.engines.config.DebugCaptureContext;
+import org.grobid.core.engines.config.DebugLabelingCollector;
 import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.factory.GrobidPoolingFactory;
 import org.grobid.core.utilities.GrobidProperties;
@@ -40,6 +43,7 @@ import org.grobid.core.visualization.FigureTableVisualizer;
 import org.grobid.service.exceptions.GrobidServiceException;
 import org.grobid.service.util.BibTexMediaType;
 import org.grobid.service.util.ExpectedResponseType;
+import org.grobid.service.util.GrobidDebugUtils;
 import org.grobid.service.util.GrobidRestUtils;
 
 /**
@@ -53,6 +57,25 @@ public class GrobidRestProcessFiles {
     @Inject
     public GrobidRestProcessFiles() {
 
+    }
+
+    /**
+     * Build the debug-mode response body from a populated collector.
+     * Returns 204 if no model fired (e.g. corrupt PDF), 200 otherwise.
+     */
+    private static Response buildDebugResponse(DebugLabelingCollector collector, Set<String> modelsFilter) {
+        if (collector == null || collector.isEmpty()) {
+            return Response.status(Status.NO_CONTENT).build();
+        }
+        String body = GrobidDebugUtils.formatResponseBody(collector, modelsFilter);
+        if (body.isEmpty()) {
+            // models filter excluded everything that was captured
+            return Response.status(Status.NO_CONTENT).build();
+        }
+        return Response.status(Status.OK)
+                .entity(body)
+                .header(HttpHeaders.CONTENT_TYPE, MediaType.TEXT_PLAIN + "; charset=UTF-8")
+                .build();
     }
 
     /**
@@ -108,11 +131,39 @@ public class GrobidRestProcessFiles {
             int startPage,
             int endPage,
             ExpectedResponseType expectedResponseType) {
+        return processStatelessHeaderDocument(
+                inputStream,
+                consolidate,
+                includeRawAffiliations,
+                includeRawCopyrights,
+                includeDiscardedText,
+                startPage,
+                endPage,
+                expectedResponseType,
+                false,
+                null);
+    }
+
+    public Response processStatelessHeaderDocument(
+            final InputStream inputStream,
+            final int consolidate,
+            final boolean includeRawAffiliations,
+            final boolean includeRawCopyrights,
+            final boolean includeDiscardedText,
+            int startPage,
+            int endPage,
+            ExpectedResponseType expectedResponseType,
+            final boolean debugMode,
+            final String modelsParam) {
         LOGGER.debug(methodLogIn());
+
+        Set<String> modelsFilter = debugMode ? GrobidDebugUtils.parseModelsFilter(modelsParam) : null;
+
         String retVal = null;
         Response response = null;
         File originFile = null;
         Engine engine = null;
+        DebugLabelingCollector debugCollector = debugMode ? new DebugLabelingCollector() : null;
         try {
             engine = Engine.getEngine(true);
             // conservative check, if no engine is free in the pool a NoSuchElementException is normally thrown
@@ -137,19 +188,31 @@ public class GrobidRestProcessFiles {
 
             BiblioItem result = new BiblioItem();
 
-            // starts conversion process
-            retVal = engine.processHeader(
-                    originFile.getAbsolutePath(),
-                    md5Str,
-                    consolidate,
-                    includeRawAffiliations,
-                    includeRawCopyrights,
-                    includeDiscardedText,
-                    startPage,
-                    endPage,
-                    result);
+            GrobidAnalysisConfig config = GrobidAnalysisConfig.builder()
+                    .startPage(startPage)
+                    .endPage(endPage)
+                    .consolidateHeader(consolidate)
+                    .includeRawAffiliations(includeRawAffiliations)
+                    .includeRawCopyrights(includeRawCopyrights)
+                    .includeDiscardedText(includeDiscardedText)
+                    .debugLabelingCollector(debugCollector)
+                    .build();
 
-            if (GrobidRestUtils.isResultNullOrEmpty(retVal)) {
+            // starts conversion process
+            if (debugMode) {
+                DebugCaptureContext.activate();
+            }
+            try {
+                retVal = engine.processHeader(originFile.getAbsolutePath(), md5Str, config, result);
+            } finally {
+                if (debugMode) {
+                    DebugCaptureContext.clear();
+                }
+            }
+
+            if (debugMode) {
+                response = buildDebugResponse(debugCollector, modelsFilter);
+            } else if (GrobidRestUtils.isResultNullOrEmpty(retVal)) {
                 response = Response.status(Response.Status.NO_CONTENT).build();
             } else if (expectedResponseType == ExpectedResponseType.BIBTEX) {
                 response = Response.status(Response.Status.OK)
@@ -184,7 +247,7 @@ public class GrobidRestProcessFiles {
     /**
      * Uploads the origin document which shall be extracted into TEI and
      * extracts only the header and funding information, this still requires a full read and segmentation of the document,
-     * but non-relevant parts are skipt.
+     * but non-relevant parts are skipped.
      *
      * @param inputStream the data of origin document
      * @param consolidateHeader consolidation parameter for the header extraction
@@ -296,12 +359,53 @@ public class GrobidRestProcessFiles {
             final boolean generateIDs,
             final boolean segmentSentences,
             final List<String> teiCoordinates) throws Exception {
+        return processFulltextDocument(
+                inputStream,
+                flavor,
+                consolidateHeader,
+                consolidateCitations,
+                consolidateFunders,
+                includeRawAffiliations,
+                includeRawCitations,
+                includeRawCopyrights,
+                includeDiscardedText,
+                startPage,
+                endPage,
+                generateIDs,
+                segmentSentences,
+                teiCoordinates,
+                false,
+                null);
+    }
+
+    public Response processFulltextDocument(
+            final InputStream inputStream,
+            final GrobidModels.Flavor flavor,
+            final int consolidateHeader,
+            final int consolidateCitations,
+            final int consolidateFunders,
+            final boolean includeRawAffiliations,
+            final boolean includeRawCitations,
+            final boolean includeRawCopyrights,
+            final boolean includeDiscardedText,
+            final int startPage,
+            final int endPage,
+            final boolean generateIDs,
+            final boolean segmentSentences,
+            final List<String> teiCoordinates,
+            final boolean debugMode,
+            final String modelsParam) throws Exception {
         LOGGER.debug(methodLogIn());
+
+        // Validate the models filter up front so a bad request fails fast with a 400
+        // before we burn engine + parsing time.
+        Set<String> modelsFilter = debugMode ? GrobidDebugUtils.parseModelsFilter(modelsParam) : null;
 
         String retVal = null;
         Response response = null;
         File originFile = null;
         Engine engine = null;
+        DebugLabelingCollector debugCollector = debugMode ? new DebugLabelingCollector() : null;
         try {
             engine = Engine.getEngine(true);
             // conservative check, if no engine is free in the pool a NoSuchElementException is normally thrown
@@ -338,11 +442,23 @@ public class GrobidRestProcessFiles {
                     .generateTeiCoordinates(teiCoordinates)
                     .withSentenceSegmentation(segmentSentences)
                     .flavor(flavor)
+                    .debugLabelingCollector(debugCollector)
                     .build();
 
-            retVal = engine.fullTextToTEI(originFile, flavor, md5Str, config);
+            if (debugMode) {
+                DebugCaptureContext.activate();
+            }
+            try {
+                retVal = engine.fullTextToTEI(originFile, flavor, md5Str, config);
+            } finally {
+                if (debugMode) {
+                    DebugCaptureContext.clear();
+                }
+            }
 
-            if (GrobidRestUtils.isResultNullOrEmpty(retVal)) {
+            if (debugMode) {
+                response = buildDebugResponse(debugCollector, modelsFilter);
+            } else if (GrobidRestUtils.isResultNullOrEmpty(retVal)) {
                 response = Response.status(Response.Status.NO_CONTENT).build();
             } else {
                 response = Response.status(Response.Status.OK)
@@ -474,13 +590,51 @@ public class GrobidRestProcessFiles {
             final boolean generateIDs,
             final boolean segmentSentences,
             final List<String> teiCoordinates) throws Exception {
+        return processStatelessFulltextAssetDocument(
+                inputStream,
+                flavor,
+                consolidateHeader,
+                consolidateCitations,
+                consolidateFunders,
+                includeRawAffiliations,
+                includeRawCitations,
+                includeRawCopyrights,
+                startPage,
+                endPage,
+                generateIDs,
+                segmentSentences,
+                teiCoordinates,
+                false,
+                null);
+    }
+
+    public Response processStatelessFulltextAssetDocument(
+            final InputStream inputStream,
+            final GrobidModels.Flavor flavor,
+            final int consolidateHeader,
+            final int consolidateCitations,
+            final int consolidateFunders,
+            final boolean includeRawAffiliations,
+            final boolean includeRawCitations,
+            final boolean includeRawCopyrights,
+            final int startPage,
+            final int endPage,
+            final boolean generateIDs,
+            final boolean segmentSentences,
+            final List<String> teiCoordinates,
+            final boolean debugMode,
+            final String modelsParam) throws Exception {
 
         LOGGER.debug(methodLogIn());
+
+        Set<String> modelsFilter = debugMode ? GrobidDebugUtils.parseModelsFilter(modelsParam) : null;
+
         Response response = null;
         String retVal = null;
         File originFile = null;
         Engine engine = null;
         String assetPath = null;
+        DebugLabelingCollector debugCollector = debugMode ? new DebugLabelingCollector() : null;
         try {
             engine = Engine.getEngine(true);
             // conservative check, if no engine is free in the pool a NoSuchElementException is normally thrown
@@ -520,11 +674,23 @@ public class GrobidRestProcessFiles {
                     .pdfAssetPath(new File(assetPath))
                     .withSentenceSegmentation(segmentSentences)
                     .flavor(flavor)
+                    .debugLabelingCollector(debugCollector)
                     .build();
 
-            retVal = engine.fullTextToTEI(originFile, flavor, md5Str, config);
+            if (debugMode) {
+                DebugCaptureContext.activate();
+            }
+            try {
+                retVal = engine.fullTextToTEI(originFile, flavor, md5Str, config);
+            } finally {
+                if (debugMode) {
+                    DebugCaptureContext.clear();
+                }
+            }
 
-            if (GrobidRestUtils.isResultNullOrEmpty(retVal)) {
+            if (debugMode) {
+                response = buildDebugResponse(debugCollector, modelsFilter);
+            } else if (GrobidRestUtils.isResultNullOrEmpty(retVal)) {
                 response = Response.status(Status.NO_CONTENT).build();
             } else {
 
@@ -744,10 +910,30 @@ public class GrobidRestProcessFiles {
             final int consolidate,
             final boolean includeRawCitations,
             ExpectedResponseType expectedResponseType) {
+        return processStatelessReferencesDocument(
+                inputStream,
+                consolidate,
+                includeRawCitations,
+                expectedResponseType,
+                false,
+                null);
+    }
+
+    public Response processStatelessReferencesDocument(
+            final InputStream inputStream,
+            final int consolidate,
+            final boolean includeRawCitations,
+            ExpectedResponseType expectedResponseType,
+            final boolean debugMode,
+            final String modelsParam) {
         LOGGER.debug(methodLogIn());
+
+        Set<String> modelsFilter = debugMode ? GrobidDebugUtils.parseModelsFilter(modelsParam) : null;
+
         Response response;
         File originFile = null;
         Engine engine = null;
+        DebugLabelingCollector debugCollector = debugMode ? new DebugLabelingCollector() : null;
         try {
             engine = Engine.getEngine(true);
             // conservative check, if no engine is free in the pool a NoSuchElementException is normally thrown
@@ -770,9 +956,24 @@ public class GrobidRestProcessFiles {
             String md5Str = DatatypeConverter.printHexBinary(digest).toUpperCase();
 
             // starts conversion process
-            List<BibDataSet> bibDataSetList = engine.processReferences(originFile, md5Str, consolidate);
+            GrobidAnalysisConfig debugConfig = debugMode
+                    ? GrobidAnalysisConfig.builder().debugLabelingCollector(debugCollector).build()
+                    : null;
+            List<BibDataSet> bibDataSetList;
+            if (debugMode) {
+                DebugCaptureContext.activate();
+            }
+            try {
+                bibDataSetList = engine.processReferences(originFile, md5Str, consolidate, debugConfig);
+            } finally {
+                if (debugMode) {
+                    DebugCaptureContext.clear();
+                }
+            }
 
-            if (bibDataSetList.isEmpty()) {
+            if (debugMode) {
+                response = buildDebugResponse(debugCollector, modelsFilter);
+            } else if (bibDataSetList.isEmpty()) {
                 response = Response.status(Status.NO_CONTENT).build();
             } else if (expectedResponseType == ExpectedResponseType.BIBTEX) {
                 StringBuilder result = new StringBuilder();

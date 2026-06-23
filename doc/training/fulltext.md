@@ -2,7 +2,7 @@
 
 ## Introduction
 
-As mentioned elsewhere (TODO:link), there are several models that are used to analyze the contents of a PDF file. One of them is the `fulltext` model which attempts to recognize and struture items appearing in the body text of an article or a publication.  This is different from for example the `segmentation` model which tries to recognize the general sections (title page, front, body, bibliography) and which is applied before the `fulltext` model.
+As mentioned elsewhere (TODO:link), there are several models that are used to analyze the contents of a PDF file. One of them is the `fulltext` model which attempts to recognize and structure items appearing in the body text of an article or a publication.  This is different from for example the `segmentation` model which tries to recognize the general sections (title page, front, body, bibliography) and which is applied before the `fulltext` model.
 
 !!! tip "Whitespaces and newlines are allowed" 
     Whitespace is not important in the XML that Grobid uses. You can add newline characters and spaces to make the XML document more legible.
@@ -68,7 +68,7 @@ Paragraphs constitute the main bulk of most typical articles or publications and
 </p>
 ```
 !!! warn "Avoid modify the text flow, while line breaks can be adjusted"
-    The `<lb/>` (line break) elements are there because they have been recognized as such in the PDF in the text flow. However, the fact that they are located within or outside a tagged paragraph or section title has no impact. Just be sure NOT to modify the order of the text flow and `<lb/>` as mentionned [here](General-principles.md#correcting-pre-annotated-files).
+    The `<lb/>` (line break) elements are there because they have been recognized as such in the PDF in the text flow. However, the fact that they are located within or outside a tagged paragraph or section title has no impact. Just be sure NOT to modify the order of the text flow and `<lb/>` as mentioned [here](General-principles.md#correcting-pre-annotated-files).
 
 Following the TEI, formulas should be on the same hierarchical level as paragraphs, and not be contained inside paragraphs:
 
@@ -127,12 +127,12 @@ The next example illustrates similarly that in TEI list items should contained i
 
 A photo, picture or other graphical representation (this could be a chart or another figure) and boxes, are to be marked up using the `<figure>` element. This element contains the title, the figure/table/boxed content/photo itself, captions, any legend or notes it may have.
 
-Note that following the TEI, a table is maked as figure of type "table" (the actual `<table>` element appears in the `table` model applied in cascade) and a boxed content is marked as a figure of type "box".
+Note that following the TEI, a table is marked as figure of type "table" (the actual `<table>` element appears in the `table` model applied in cascade) and a boxed content is marked as a figure of type "box".
 
 The following XML sample shows one figure (`<figure>`) followed by two tables which are marked up as `<figure type="table">` elements.
 
 ```xml
-<figure>Figure 1. Hypothetical model for ceramide and S1P-induced autophagy and thei	consequences on cell fate. An<lb/>
+<figure>Figure 1. Hypothetical model for ceramide and S1P-induced autophagy and their	consequences on cell fate. An<lb/>
   ...
   <lb/>
   ....
@@ -194,7 +194,7 @@ The corrected XML (note the `<figure type="table">` element):
 
 The `<formula>` tag is used to identify a formula appearing as an independent block in the text body. This formula often comes with a label, its "reference marker", which can be used for callout to the formula in the text body. Shorter inline formulas are not specifically annotated, they are considered as part of the body.  
 
-The label of a formula is usually a number, but can be any symbols. It is tagged with the element `<label>`, as illustrated bellow:
+The label of a formula is usually a number, but can be any symbols. It is tagged with the element `<label>`, as illustrated below:
 
 
 ```xml
@@ -274,7 +274,7 @@ in Lolle et al. <ref type="biblio">1</ref>
 
 Note that the bracket/parenthesis symbols are **included** in the tagged content.
 
-Bellow, as the label within the brackets fully qualifies the reference, we don't further annotate the callout with the author names:
+Below, as the label within the brackets fully qualifies the reference, we don't further annotate the callout with the author names:
 
 ```xml
 <p>The clinical entity of cervical flexion myelopa-<lb/>
@@ -377,7 +377,7 @@ the semi-cylindrical drum. The dynamics of the avalanches of eqs.
 </p>
 ```
 
-As visible in the examples, markers to figure, table or formula are annotated by including only the key information of the refered object. Brackets, parenthesis, extra wording, extra information are left outside of the tagged text (in contrast to bibliographical markers, where we keep the brackets and parenthesis by convention). 
+As visible in the examples, markers to figure, table or formula are annotated by including only the key information of the referred object. Brackets, parenthesis, extra wording, extra information are left outside of the tagged text (in contrast to bibliographical markers, where we keep the brackets and parenthesis by convention). 
 Here are some more short examples for figure markers:
 
 ```xml

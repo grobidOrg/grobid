@@ -20,6 +20,7 @@ import org.grobid.core.document.DocumentPiece;
 import org.grobid.core.document.DocumentPointer;
 import org.grobid.core.engines.citations.LabeledReferenceResult;
 import org.grobid.core.engines.citations.ReferenceSegmenter;
+import org.grobid.core.engines.config.GrobidAnalysisConfig;
 import org.grobid.core.engines.label.SegmentationLabels;
 import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.engines.tagging.GenericTaggerUtils;
@@ -64,18 +65,37 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
      *              example: <"[1]", "Hu W., Barkana, R., &amp; Gruzinov A. Phys. Rev. Lett. 85, 1158">
      */
     public List<LabeledReferenceResult> extract(Document doc) {
-        return extract(doc, false);
+        warnIfDebugUncaptured("ReferenceSegmenterParser.extract(Document)");
+        return extract(doc, false, null);
+    }
+
+    public List<LabeledReferenceResult> extract(Document doc, GrobidAnalysisConfig config) {
+        return extract(doc, false, config);
     }
 
     public List<LabeledReferenceResult> extract(Document doc, boolean training) {
+        warnIfDebugUncaptured("ReferenceSegmenterParser.extract(Document, boolean)");
+        return extract(doc, training, null);
+    }
+
+    public List<LabeledReferenceResult> extract(Document doc, boolean training, GrobidAnalysisConfig config) {
         SortedSet<DocumentPiece> referencesParts = doc.getDocumentPart(SegmentationLabels.REFERENCES);
-        return extract(doc, referencesParts, training);
+        return extract(doc, referencesParts, training, config);
     }
 
     public List<LabeledReferenceResult> extract(
             Document doc,
             SortedSet<DocumentPiece> referencesParts,
             boolean training) {
+        warnIfDebugUncaptured("ReferenceSegmenterParser.extract(Document, SortedSet, boolean)");
+        return extract(doc, referencesParts, training, null);
+    }
+
+    public List<LabeledReferenceResult> extract(
+            Document doc,
+            SortedSet<DocumentPiece> referencesParts,
+            boolean training,
+            GrobidAnalysisConfig config) {
 
         Pair<String, List<LayoutToken>> featSeg = getReferencesSectionFeatured(doc, referencesParts);
         String res;
@@ -96,6 +116,10 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
             return null;
         }
 
+        if (config != null && config.getDebugLabelingCollector() != null) {
+            config.getDebugLabelingCollector().record(model, res);
+        }
+
         // if we extract for generating training data, we also give back the used features
         List<Triple<String, String, String>> labeled = GenericTaggerUtils.getTokensWithLabelsAndFeatures(res, training);
 
@@ -114,14 +138,14 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
         // this does not apply to CRF which can process "infinite" input sequence
         // this is relevant to the reference segmenter RNN model, which is position-free in its
         // application, but could not be generalized to other RNN or transformer model long inputs
-        if (GrobidProperties.getGrobidEngine(GrobidModels.REFERENCE_SEGMENTER) == GrobidCRFEngine.DELFT) {
+        if (GrobidProperties.getGrobidEngine(this.model) == GrobidCRFEngine.DELFT) {
             String[] featureVectorLines = featureVector.split("\n");
 
             int originalMaxSequence = 2000;
             if (GrobidProperties.getInstance()
-                    .getDelftRuntimeMaxSequenceLength(GrobidModels.REFERENCE_SEGMENTER.getModelName()) != -1) {
+                    .getDelftRuntimeMaxSequenceLength(this.model.getModelName()) != -1) {
                 originalMaxSequence = GrobidProperties.getInstance()
-                        .getDelftRuntimeMaxSequenceLength(GrobidModels.REFERENCE_SEGMENTER.getModelName());
+                        .getDelftRuntimeMaxSequenceLength(this.model.getModelName());
             }
 
             if (featureVectorLines.length < originalMaxSequence || originalMaxSequence < 600) {
@@ -613,7 +637,7 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
         int currentLineLength = 0;
         //int lineIndex = 0;
 
-        // we calculate current max line length and intialize the body tokenization structure
+        // we calculate current max line length and initialize the body tokenization structure
         for (DocumentPiece docPiece : referencesParts) {
             DocumentPointer dp1 = docPiece.getLeft();
             DocumentPointer dp2 = docPiece.getRight();

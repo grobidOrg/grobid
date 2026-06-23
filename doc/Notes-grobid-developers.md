@@ -294,7 +294,7 @@ test {
 }
 ```
    
-The DUMMY model (``GrobidModels.DUMMY``) is an artifact to instantiate a GrobidParser wihtout having the model under the grobid-home. 
+The DUMMY model (``GrobidModels.DUMMY``) is an artifact to instantiate a GrobidParser without having the model under the grobid-home. 
 
 This is useful for unit test of different part of the parser, for example if you have a method that read the sequence labelling results and assemble into a set of objects. 
 

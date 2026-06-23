@@ -144,7 +144,7 @@ public class TEIHeaderSaxParserOCRTraining extends DefaultHandler {
                     writer.write("\n");
                 } catch (IOException e) {
                     //					e.printStackTrace();
-                    throw new GrobidException("An exception occured while running Grobid.", e);
+                    throw new GrobidException("An exception occurred while running Grobid.", e);
                 }
             }
 

@@ -47,7 +47,7 @@ There are different ways to generate the new model and run the evaluation, wheth
 
 ### Train and evaluation in one command (simple mode)
 
-For simple training without particular parameters, a single command can be used as follow. All the available annotated files under `grobid/grobid-trainer/resources/dataset/*MODEL*/corpus` will be used for trainng and all available annotated files under `grobid/grobid-trainer/resources/dataset/*MODEL*/evaluation/` will be used for evaluation.
+For simple training without particular parameters, a single command can be used as follow. All the available annotated files under `grobid/grobid-trainer/resources/dataset/*MODEL*/corpus` will be used for training and all available annotated files under `grobid/grobid-trainer/resources/dataset/*MODEL*/evaluation/` will be used for evaluation.
 
 Under the main project directory `grobid/`, run the following command to execute both training and evaluation: 
 
@@ -73,7 +73,7 @@ Examples for training the model for names in header:
 
 To have more flexibility and options for training and evaluating the models, use the following commands. 
 
-First be sure to have the full project libraries locally built (see [Install GROBID](Install-Grobid.md) for nore details): 
+First be sure to have the full project libraries locally built (see [Install GROBID](Install-Grobid.md) for more details): 
 
 ```bash
 > ./gradlew clean build
@@ -124,7 +124,7 @@ Launching an incremental training is similar as the previous commands, but addin
 > java -Xmx1024m -Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep -jar grobid-trainer/build/libs/grobid-trainer-<current version>-onejar.jar 0 <name of the model> -gH grobid-home -i
 ```
 
-Note that a full training from scratch with all training data should normally provide better accuracy for a model than several iterative training with a partition of the training data. Using incremental training makes sense for exemple when the model has been trained with a lot of data during days/weeks, and an update is required, or for the development of training data when the update of a model must be quick to generate new trainng data. 
+Note that a full training from scratch with all training data should normally provide better accuracy for a model than several iterative training with a partition of the training data. Using incremental training makes sense for example when the model has been trained with a lot of data during days/weeks, and an update is required, or for the development of training data when the update of a model must be quick to generate new training data. 
 
 In incremental training phases, the training parameters might require some update to stop the training earlier than in normal full training. 
 
@@ -151,13 +151,15 @@ For instance for a 10-fold evaluation of the date model:
 
 ## Generation of training data
 	
-To generate some training datas from some input pdf, the batch grobid-core-`<current version>`.onejar.jar can be used: [Grobid batch](Grobid-batch.md) (`createTraining`).
+To generate some training data from some input pdf, the batch grobid-core-`<current version>`.onejar.jar can be used: [Grobid batch](Grobid-batch.md) (`createTraining`).
 
 For each pdf in input directory, GROBID generates different files because each model has separate training data, and thus uses separate files. So we have one file for header (`*.training.header.tei.xml`), one for dates (`*.training.date.tei.xml`), one for names, etc...
 
 When a model uses PDF layout features, an additional feature file (for example `*.training.header` for the header model) is generated without `.tei.xml` extension. 
 
 If you wish to maintain the training corpus as gold standard, these automatically generated data have to be checked and corrected manually before being moved to the training/evaluation folder of the corresponding model. For correcting/checking these data, the guidelines presented in the next section must be followed to ensure the consistency of the whole training sets. 
+
+The correction can be done in any text/XML editor, or with a dedicated graphical tool: the web-based [PDF-TEI Editor](PDF-TEI-Editor.md) lets you edit the pre-annotated TEI side-by-side with the source PDF, with schema validation and version control. See the [dedicated page](PDF-TEI-Editor.md) for details.
 
 
 ## Training guidelines
@@ -171,7 +173,7 @@ Annotation guidelines for creating the training data corresponding to the differ
 
 ([#139](https://github.com/kermitt2/grobid/issues/139), [#610](https://github.com/kermitt2/grobid/issues/610))
 
-Yes. [pdf-tei-editor](https://github.com/mpilhlt/pdf-tei-editor/) is a web-based tool for editing GROBID TEI training data alongside the PDF. The typical workflow is: use `createTraining` to pre-annotate, then open the generated TEI XML files in pdf-tei-editor for visual correction.
+Yes. The web-based [PDF-TEI Editor](PDF-TEI-Editor.md) lets you edit GROBID TEI training data alongside the PDF. The typical workflow is: use `createTraining` to pre-annotate, then open the generated TEI XML files in the editor for visual correction. See the [dedicated page](PDF-TEI-Editor.md) for details.
 
 ### Can I generate training data automatically (e.g., from BibTeX)?
 

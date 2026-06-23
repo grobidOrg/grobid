@@ -16,7 +16,7 @@ import org.grobid.core.utilities.TextUtilities;
  */
 
 public class Funder {
-    // prefered full name
+    // preferred full name
     private String fullName = null;
     private List<LayoutToken> fullNameLayoutTokens = new ArrayList<>();
 

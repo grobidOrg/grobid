@@ -101,20 +101,25 @@ public class XmlBuilderUtils {
     }
 
     public static String stripNonValidXMLCharacters(String in) {
-        StringBuffer out = new StringBuffer(); // Used to hold the output.
-        char current; // Used to reference the current character.
-
         if (in == null || ("".equals(in)))
             return "";
-        for (int i = 0; i < in.length(); i++) {
-            current = in.charAt(i);
+        StringBuilder out = new StringBuilder(in.length());
+        // Iterate by Unicode code point, not by char: supplementary characters (e.g. mathematical-italic
+        // letters, U+1D400+) are stored as a UTF-16 surrogate pair, and each surrogate (0xD800-0xDFFF)
+        // falls outside every valid range when tested individually. A char-wise filter therefore strips
+        // them, and the original `current >= 0x10000` test was dead code because a `char` never exceeds
+        // 0xFFFF. codePointAt() yields the combined scalar value so valid astral characters are preserved,
+        // while genuinely invalid lone surrogates are still dropped.
+        for (int i = 0; i < in.length();) {
+            int current = in.codePointAt(i);
             if ((current == 0x9) ||
                     (current == 0xA) ||
                     (current == 0xD) ||
                     ((current >= 0x20) && (current <= 0xD7FF)) ||
                     ((current >= 0xE000) && (current <= 0xFFFD)) ||
                     ((current >= 0x10000) && (current <= 0x10FFFF)))
-                out.append(current);
+                out.appendCodePoint(current);
+            i += Character.charCount(current);
         }
         return out.toString();
     }

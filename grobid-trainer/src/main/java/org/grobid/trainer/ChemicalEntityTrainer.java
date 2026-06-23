@@ -209,7 +209,7 @@ public class ChemicalEntityTrainer extends AbstractTrainer {
                                     Integer numbi = Integer.parseInt(numb);
                                     next = next.substring(0, ind + 1) + (numbi + 1);
                                 } catch (NumberFormatException e) {
-                                    throw new GrobidException("An exception occured while running Grobid.", e);
+                                    throw new GrobidException("An exception occurred while running Grobid.", e);
                                 }
                                 if (!next.equals(first)) {
                                     chemicalAnnotationsList.add(next);
@@ -245,7 +245,7 @@ public class ChemicalEntityTrainer extends AbstractTrainer {
                                     Integer numbi = Integer.parseInt(numb);
                                     next = next.substring(0, ind + 1) + (numbi + 1);
                                 } catch (NumberFormatException e) {
-                                    throw new GrobidException("An exception occured while running Grobid.", e);
+                                    throw new GrobidException("An exception occurred while running Grobid.", e);
                                 }
                                 if (!next.equals(first)) {
                                     chemicalFormulasList.add(next);
@@ -281,7 +281,7 @@ public class ChemicalEntityTrainer extends AbstractTrainer {
                                     Integer numbi = Integer.parseInt(numb);
                                     next = next.substring(0, ind + 1) + (numbi + 1);
                                 } catch (NumberFormatException e) {
-                                    throw new GrobidException("An exception occured while running Grobid.", e);
+                                    throw new GrobidException("An exception occurred while running Grobid.", e);
                                 }
                                 if (!next.equals(first)) {
                                     chemicalSubstancesList.add(next);
@@ -317,7 +317,7 @@ public class ChemicalEntityTrainer extends AbstractTrainer {
                                     Integer numbi = Integer.parseInt(numb);
                                     next = next.substring(0, ind + 1) + (numbi + 1);
                                 } catch (NumberFormatException e) {
-                                    throw new GrobidException("An exception occured while running Grobid.", e);
+                                    throw new GrobidException("An exception occurred while running Grobid.", e);
                                 }
                                 if (!next.equals(first)) {
                                     chemicalClassNamesList.add(next);
@@ -353,7 +353,7 @@ public class ChemicalEntityTrainer extends AbstractTrainer {
                                     Integer numbi = Integer.parseInt(numb);
                                     next = next.substring(0, ind + 1) + (numbi + 1);
                                 } catch (NumberFormatException e) {
-                                    throw new GrobidException("An exception occured while running Grobid.", e);
+                                    throw new GrobidException("An exception occurred while running Grobid.", e);
                                 }
                                 if (!next.equals(first)) {
                                     chemicalLigandList.add(next);
@@ -376,7 +376,7 @@ public class ChemicalEntityTrainer extends AbstractTrainer {
                     thefileWords = new File(thefile.getParent() + File.separator
                             + thefile.getName().replace(".HC.chemical-names.xml", ".words.xml"));
                 } catch (Exception e) {
-                    throw new GrobidException("An exception occured while running Grobid.", e);
+                    throw new GrobidException("An exception occurred while running Grobid.", e);
                 }
 
                 List<String> labeled;
@@ -397,7 +397,7 @@ public class ChemicalEntityTrainer extends AbstractTrainer {
 
             writer2.close();
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
         return totalExamples;
     }
@@ -427,7 +427,7 @@ public class ChemicalEntityTrainer extends AbstractTrainer {
                 posit++;
             }
         } catch (Exception e) {
-            throw new GrobidException("An exception occured while running Grobid.", e);
+            throw new GrobidException("An exception occurred while running Grobid.", e);
         }
     }
 

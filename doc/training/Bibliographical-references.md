@@ -28,7 +28,7 @@ Then the following tags are used for structuring the bibliographical references:
 
 * `<date>` the date sequence (excluding parenthesis, etc.)
 
-* `<biblScope unit="page">` the full range of pages of the article. `unit="page"` is prefered over the legacy `unit="pp"`.
+* `<biblScope unit="page">` the full range of pages of the article. `unit="page"` is preferred over the legacy `unit="pp"`.
 
 * `<biblScope unit="volume">` the value of the volume (e.g. `vol. <biblScope unit="volume">7</biblScope>,`)
 
@@ -50,7 +50,7 @@ Then the following tags are used for structuring the bibliographical references:
 
 * `<note>` for any indications related to the reference and not covered by one of the previous tags (for instance "personal communication")
 
-Additional text/characters that do not belong to one of these elements (punctuations, syntactic sugar, etc.) has to be be left untagged under the `<bibl>` elements. This is the case for instance for the tag `<date>`, the caracters such as parenthesis have to be put outside this element (see the example bellow).
+Additional text/characters that do not belong to one of these elements (punctuations, syntactic sugar, etc.) has to be be left untagged under the `<bibl>` elements. This is the case for instance for the tag `<date>`, the characters such as parenthesis have to be put outside this element (see the example below).
 
 Example: _Biostatistics (2008), 9(2), pp. 234–248_
 

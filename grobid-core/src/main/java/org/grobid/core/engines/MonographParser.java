@@ -729,7 +729,7 @@ public class MonographParser extends AbstractParser {
 
         } catch (Exception e) {
             e.printStackTrace();
-            throw new GrobidException("An exception occured while running Grobid training"
+            throw new GrobidException("An exception occurred while running Grobid training"
                     +
                     " data generation for monograph.", e);
         } finally {

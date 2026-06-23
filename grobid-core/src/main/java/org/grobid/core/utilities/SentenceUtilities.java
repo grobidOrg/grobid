@@ -72,7 +72,7 @@ public class SentenceUtilities {
         if (text == null)
             return null;
         try {
-            return sdf.getInstance().detect(text);
+            return trimAndFilterSentenceOffsets(text, sdf.getInstance().detect(text));
         } catch (Exception e) {
             LOGGER.warn("Cannot detect sentences. ", e);
             return null;
@@ -93,7 +93,7 @@ public class SentenceUtilities {
         if (text == null)
             return null;
         try {
-            return sdf.getInstance().detect(text, lang);
+            return trimAndFilterSentenceOffsets(text, sdf.getInstance().detect(text, lang));
         } catch (Exception e) {
             LOGGER.warn("Cannot detect sentences. ", e);
             return null;
@@ -144,7 +144,7 @@ public class SentenceUtilities {
 
             // to be sure, we sort the forbidden positions
             if (forbidden == null)
-                return sentencePositions;
+                return trimAndFilterSentenceOffsets(text, sentencePositions);
             Collections.sort(forbidden);
 
             // cancel sentence boundaries within the forbidden spans
@@ -171,7 +171,7 @@ public class SentenceUtilities {
             }
 
             if (textLayoutTokens == null || textLayoutTokens.size() == 0)
-                return finalSentencePositions;
+                return trimAndFilterSentenceOffsets(text, finalSentencePositions);
 
             int pos = 0;
 
@@ -182,9 +182,14 @@ public class SentenceUtilities {
                     finalSentencePositions.get(currentSentenceIndex).end);
             boolean moved = false;
 
+            // running character offset of the consumed layout tokens in the original text, used to check
+            // whether a candidate superscript reference marker actually falls inside a forbidden span
+            StringBuilder accumulator = new StringBuilder();
+
             // iterate on layout tokens in sync with sentences
             for (int i = 0; i < textLayoutTokens.size(); i++) {
                 LayoutToken token = textLayoutTokens.get(i);
+                accumulator.append(token);
                 if (token.getText() == null || token.getText().length() == 0)
                     continue;
 
@@ -220,7 +225,11 @@ public class SentenceUtilities {
                             continue;
                         }
 
-                        if (this.isValidSuperScriptNumericalReferenceMarker(nextToken)) {
+                        // only push the boundary past the superscript marker when it actually falls
+                        // inside a forbidden span (a real reference marker), otherwise we leave the
+                        // sentence boundary as is (avoids cutting words a few characters too far)
+                        if (this.isValidSuperScriptNumericalReferenceMarker(nextToken)
+                                && isNextTokenFallingIntoAForbiddenInterval(accumulator.length() + j, forbidden)) {
                             pushedEnd += buffer + nextToken.getText().length();
                             buffer = 0;
                         } else
@@ -269,7 +278,7 @@ public class SentenceUtilities {
             // here, for instance non-breakable italic or bold chunks, or adding sentence split based on
             // spacing/indent
 
-            return finalSentencePositions;
+            return trimAndFilterSentenceOffsets(text, finalSentencePositions);
         } catch (Exception e) {
             LOGGER.warn("Cannot detect sentences. ", e);
             return null;
@@ -301,6 +310,55 @@ public class SentenceUtilities {
             finalSentencePositions.add(position);
         }
         return finalSentencePositions;
+    }
+
+    /**
+     * Guarantee the invariant that every returned sentence span is non-empty and carries no
+     * leading/trailing whitespace, measured against the original text. For each position we clamp
+     * the end into [0, text.length()], advance the start past leading whitespace, retract the end
+     * past trailing whitespace, and drop the span when it becomes empty (end &lt;= start) or was
+     * invalid (start &lt; 0). This runs on every detector output so the guarantee holds for all
+     * sentence segmentation implementations (it prevents both empty/whitespace-only {@code <s>}
+     * elements and a trailing space being left inside a sentence).
+     *
+     * @param text
+     *            the original text the offsets refer to
+     * @param positions
+     *            the sentence offset positions to normalise (not modified)
+     * @return a new list of normalised, non-empty offset positions
+     */
+    public static List<OffsetPosition> trimAndFilterSentenceOffsets(String text, List<OffsetPosition> positions) {
+        if (positions == null || text == null)
+            return positions;
+        int length = text.length();
+        List<OffsetPosition> result = new ArrayList<>(positions.size());
+        for (OffsetPosition position : positions) {
+            if (position == null)
+                continue;
+            int start = position.start;
+            int end = Math.min(position.end, length);
+            if (start < 0 || start > length)
+                continue;
+            // advance past leading whitespace
+            while (start < end && Character.isWhitespace(text.charAt(start)))
+                start++;
+            // retract past trailing whitespace
+            while (end > start && Character.isWhitespace(text.charAt(end - 1)))
+                end--;
+            if (end <= start)
+                continue; // empty or whitespace-only -> drop
+            result.add(new OffsetPosition(start, end));
+        }
+        return result;
+    }
+
+    /**
+     * Return true if the given offset falls inside one of the forbidden intervals (typically a
+     * reference marker span). Used to decide whether a superscript numerical marker following a
+     * sentence boundary should be attached to the sentence.
+     */
+    private static boolean isNextTokenFallingIntoAForbiddenInterval(int currentOffset, List<OffsetPosition> forbidden) {
+        return forbidden.stream().anyMatch(o -> currentOffset >= o.start && currentOffset < o.end);
     }
 
     /**

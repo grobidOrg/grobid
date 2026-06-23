@@ -86,7 +86,7 @@ public class FeaturesVectorSegmentation {
         if (lineStatus != null)
             res.append(" " + lineStatus);
 
-        // line alignment/identation information (1)
+        // line alignment/indentation information (1)
         //res.append(" " + alignmentStatus);
 
         // page information (1)

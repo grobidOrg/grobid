@@ -62,7 +62,7 @@ def getGitRevision() {
     try {
         def stdout = new ByteArrayOutputStream()
         println("Checking git under ${rootProject.rootDir}")
-        def proc = ['git', 'describe', '--tags', '--always', '--first-parent'].execute(null, rootProject.rootDir)
+        def proc = ['git', 'describe', '--tags', '--always'].execute(null, rootProject.rootDir)
         proc.waitFor()
         gitRevision = proc.in.text.trim()
         println "Current Git revision: ${gitRevision}"
@@ -159,6 +159,8 @@ subprojects {
     configurations {
         all*.exclude group: 'org.slf4j', module: "slf4j-log4j12"
         all*.exclude group: 'log4j', module: "log4j"
+        // Mockito as an explicit Java agent (JDK 21+ disallows self-attaching agents by default)
+        mockitoAgent
     }
 
     ext {
@@ -183,9 +185,12 @@ subprojects {
             because("Only needed to run tests in a version of IntelliJ IDEA that bundles older versions")
         }
         testImplementation('org.junit.jupiter:junit-jupiter')
+        // JUnit 4 API (run via the vintage engine above). Previously pulled in transitively by
+        // powermock-module-junit4; declared explicitly now that PowerMock is removed.
+        testImplementation 'junit:junit:4.13.2'
         testImplementation 'org.easymock:easymock:5.6.0'
-        testImplementation "org.powermock:powermock-api-easymock:2.0.9"
-        testImplementation "org.powermock:powermock-module-junit4:2.0.9"
+        testImplementation "org.mockito:mockito-core:5.20.0"
+        mockitoAgent("org.mockito:mockito-core:5.20.0") { transitive = false }
         testImplementation "org.xmlunit:xmlunit-matchers:2.10.3"
         testImplementation "org.xmlunit:xmlunit-legacy:2.10.3"
         testImplementation "org.hamcrest:hamcrest-all:1.3"
@@ -200,15 +205,15 @@ subprojects {
         implementation "org.apache.commons:commons-collections4:4.5.0"
         implementation 'org.apache.commons:commons-text:1.15.0'
         implementation "commons-dbutils:commons-dbutils:1.8.1"
-        implementation "com.google.guava:guava:33.5.0-jre"
+        implementation "com.google.guava:guava:33.6.0-jre"
         implementation "org.apache.httpcomponents:httpclient:4.5.14"
         implementation "black.ninia:jep:4.3.1"
         implementation 'com.github.pemistahl:lingua:1.2.2'
 
-        implementation "com.fasterxml.jackson.core:jackson-core:2.21.1"
-        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.1"
-        implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.21.1"
-        implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.1"
+        implementation "com.fasterxml.jackson.core:jackson-core:2.21.3"
+        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.3"
+        implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.21.3"
+        implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.3"
     }
 
     tasks.register('sourceJar', Jar) {
@@ -235,15 +240,12 @@ subprojects {
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
             jvmArgs "--add-opens", "java.base/java.util.stream=ALL-UNNAMED",
                 "--add-opens", "java.base/java.io=ALL-UNNAMED",
-                "--add-opens", "java.xml/jdk.xml.internal=ALL-UNNAMED",
-                // PowerMock compatibility with Java 21 - TODO: Replace PowerMock with Mockito/JUnit Jupiter
-                "--add-opens", "java.base/java.lang=ALL-UNNAMED",
-                "--add-opens", "java.base/java.util=ALL-UNNAMED",
-                "--add-opens", "java.base/java.util.stream=ALL-UNNAMED",
-                "--add-opens", "java.base/java.lang.reflect=ALL-UNNAMED",
-                "--add-opens", "java.xml/javax.xml.parsers=ALL-UNNAMED",
-                "--add-exports", "java.xml/jdk.xml.internal=ALL-UNNAMED"
+                "--add-opens", "java.xml/jdk.xml.internal=ALL-UNNAMED"
         }
+
+        // Attach Mockito explicitly so its inline mock maker (used for mockStatic) does not
+        // rely on self-attaching, which JDK 21+ warns about and will eventually disallow.
+        jvmArgs "-javaagent:${configurations.mockitoAgent.asPath}"
 
         systemProperty "java.library.path", "${javaLibraryPath}"
     }
@@ -269,11 +271,13 @@ project("grobid-core") {
             }
         }
 
-        // Logs
-        implementation 'org.slf4j:slf4j-api:1.7.36'
-        implementation 'ch.qos.logback:logback-classic:1.2.13'
+        // Logs — slf4j 2.0.x + logback 1.5.x must move together: OpenNLP 2.5.x (and Dropwizard 5) pull
+        // slf4j-api 2.0.x, whose ServiceLoader binding (SLF4JServiceProvider) only exists in logback 1.5.x.
+        // logback 1.2.x would leave slf4j with no provider (NOP logging) in batch/standalone mode.
+        implementation 'org.slf4j:slf4j-api:2.0.17'
+        implementation 'ch.qos.logback:logback-classic:1.5.26'
 
-        implementation "org.apache.pdfbox:pdfbox:2.0.35"
+        implementation "org.apache.pdfbox:pdfbox:2.0.36"
 
         api "xerces:xercesImpl:2.12.2"
         api "net.arnx:jsonic:1.3.10"
@@ -284,7 +288,13 @@ project("grobid-core") {
         implementation "joda-time:joda-time:2.14.0"
         implementation "org.apache.lucene:lucene-analyzers-common:4.5.1"
         implementation 'black.ninia:jep:4.3.1'
-        implementation 'org.apache.opennlp:opennlp-tools:1.9.4'
+        implementation 'org.apache.opennlp:opennlp-tools:2.5.9'
+
+        // NOTE: jruby-complete bundles a vulnerable BouncyCastle (CVE-2026-5598) under its gem stdlib,
+        // but GROBID only uses jruby for the optional, non-default Pragmatic sentence segmenter, which
+        // never invokes Ruby's openssl — so the BC code is never loaded and the CVE is not triggerable.
+        // No released jruby ships a fixed BouncyCastle yet (latest bundles 1.83; the fix needs 1.84), so
+        // we leave it as-is and wait for an upstream jruby release with BouncyCastle >= 1.84.
         implementation group: 'org.jruby', name: 'jruby-complete', version: '9.4.12.1'
 
         shadedLib "org.apache.lucene:lucene-analyzers-common:4.5.1"
@@ -402,22 +412,31 @@ project(":grobid-service") {
         implementation project(':grobid-core')
         implementation project(':grobid-trainer')
 
-        //Dropwizard
-        implementation 'ru.vyarus:dropwizard-guicey:7.3.1'
+        //Dropwizard 5.x (Jakarta EE 10 / Jetty 12). guicey 8.x is the Dropwizard-5-compatible line.
+        implementation 'ru.vyarus:dropwizard-guicey:8.0.2'
 
-        implementation 'io.dropwizard:dropwizard-bom:4.0.17'
-        implementation 'io.dropwizard:dropwizard-core:4.0.17'
-        implementation 'io.dropwizard:dropwizard-assets:4.0.17'
-        implementation 'io.dropwizard:dropwizard-testing:4.0.17'
-        implementation 'io.dropwizard.modules:dropwizard-testing-junit4:4.0.16'
-        implementation 'io.dropwizard:dropwizard-forms:4.0.17'
-        implementation 'io.dropwizard:dropwizard-client:4.0.17'
-        implementation 'io.dropwizard:dropwizard-auth:4.0.17'
+        // Dropwizard 5.0.1 ships Jetty 12.1.5, but CVE-2026-2332 (HTTP request smuggling) is only fixed
+        // on the 12.1.x line at 12.1.7+. Import the Jetty BOMs at 12.1.9 so every Jetty artifact is
+        // forced past the vulnerable version (Gradle picks the higher of the two BOM-managed versions).
+        implementation platform('org.eclipse.jetty:jetty-bom:12.1.9')
+        implementation platform('org.eclipse.jetty.ee10:jetty-ee10-bom:12.1.9')
+
+        implementation 'io.dropwizard:dropwizard-bom:5.0.1'
+        implementation 'io.dropwizard:dropwizard-core:5.0.1'
+        implementation 'io.dropwizard:dropwizard-assets:5.0.1'
+        implementation 'io.dropwizard:dropwizard-testing:5.0.1'
+        implementation 'io.dropwizard.modules:dropwizard-testing-junit4:5.0.0'
+        implementation 'io.dropwizard:dropwizard-forms:5.0.1'
+        implementation 'io.dropwizard:dropwizard-client:5.0.1'
+        implementation 'io.dropwizard:dropwizard-auth:5.0.1'
         implementation 'io.dropwizard.metrics:metrics-core:4.2.38'
         implementation 'io.dropwizard.metrics:metrics-servlets:4.2.38'
-        implementation 'io.dropwizard:dropwizard-json-logging:4.0.17'
+        implementation 'io.dropwizard:dropwizard-json-logging:5.0.1'
+        // Jetty 12 split utility servlets/filters into the ee10 environment artifact; needed for
+        // org.eclipse.jetty.ee10.servlets.CrossOriginFilter (CORS). Version managed by jetty-ee10-bom.
+        implementation 'org.eclipse.jetty.ee10:jetty-ee10-servlets'
 
-        implementation "org.apache.pdfbox:pdfbox:2.0.35"
+        implementation "org.apache.pdfbox:pdfbox:2.0.36"
         implementation "javax.activation:activation:1.1.1"
         implementation "io.prometheus:simpleclient_dropwizard:0.16.0"
         implementation "io.prometheus:simpleclient_servlet:0.16.0"
@@ -474,9 +493,9 @@ project(":grobid-trainer") {
         implementation "com.rockymadden.stringmetric:stringmetric-core_2.10:0.27.3"
         implementation "me.tongfei:progressbar:0.9.5"
 
-        // logs
-        implementation 'org.slf4j:slf4j-api:1.7.36'
-        implementation 'ch.qos.logback:logback-classic:1.2.13'
+        // logs — see grobid-core: slf4j 2.0.x needs logback 1.5.x for its ServiceLoader binding.
+        implementation 'org.slf4j:slf4j-api:2.0.17'
+        implementation 'ch.qos.logback:logback-classic:1.5.26'
     }
 
     configurations {

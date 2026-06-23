@@ -140,6 +140,7 @@ public class LexiconIntegrationTest {
      **/
     @Test
     public void testGetPositionInOrgForm() throws Exception {
+        Lexicon.builder().withOrgForms().build();
         final String input = "Matusa Inc. was bought by Bayer";
         final List<OffsetPosition> positions = target.charPositionsOrgForm(input);
 
@@ -150,6 +151,7 @@ public class LexiconIntegrationTest {
 
     @Test
     public void testGetPositionInOrgForm_tokenised() throws Exception {
+        Lexicon.builder().withOrgForms().build();
         final String input = "Matusa Inc. was bought by Bayer";
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
 
@@ -165,6 +167,7 @@ public class LexiconIntegrationTest {
      */
     @Test
     public void testGetPositionInOrganisationNames() throws Exception {
+        Lexicon.builder().withOrganisations().build();
         final String input = "Matusa Inc. was bought by Bayer";
         final List<OffsetPosition> positions = target.charPositionsOrganisationNames(input);
 
@@ -175,6 +178,7 @@ public class LexiconIntegrationTest {
 
     @Test
     public void testGetPositionInOrganisationNames_tokenised() throws Exception {
+        Lexicon.builder().withOrganisations().build();
         final String input = "Matusa Inc. was bought by Bayer";
         List<LayoutToken> tokenisedInput = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
 

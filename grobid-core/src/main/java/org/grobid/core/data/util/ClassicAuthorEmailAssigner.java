@@ -17,13 +17,13 @@ public class ClassicAuthorEmailAssigner implements AuthorEmailAssigner {
             if ((emails.size() == 1) && (fullAuthors.size() == 1)) {
                 fullAuthors.get(0).setEmail(emails.get(0));
             } else {
-                // we asociate emails to the authors based on string proximity
+                // we associate emails to the authors based on string proximity
                 for (String mail : emails) {
                     int maxDist = 1000;
                     int best = -1;
                     int ind = mail.indexOf("@");
                     if (ind != -1) {
-                        String nam = mail.substring(0, ind).toLowerCase();
+                        String name = mail.substring(0, ind).toLowerCase();
                         int k = 0;
                         for (Person aut : fullAuthors) {
                             Integer kk = k;
@@ -34,7 +34,7 @@ public class ClassicAuthorEmailAssigner implements AuthorEmailAssigner {
                                 for (String variant : emailVariants) {
                                     variant = variant.toLowerCase();
 
-                                    int dist = TextUtilities.getLevenshteinDistance(nam, variant);
+                                    int dist = TextUtilities.getLevenshteinDistance(name, variant);
                                     if (dist < maxDist) {
                                         best = k;
                                         maxDist = dist;
@@ -45,7 +45,7 @@ public class ClassicAuthorEmailAssigner implements AuthorEmailAssigner {
                         }
 
                         // make sure that the best candidate found is not too far
-                        if (best != -1 && maxDist < nam.length() / 2) {
+                        if (best != -1 && maxDist < name.length() / 2) {
                             Person winner = fullAuthors.get(best);
                             winner.setEmail(mail);
                             winners.add(best);

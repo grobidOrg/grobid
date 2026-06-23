@@ -48,7 +48,7 @@ Current latest version:
 
 The image will automatically use the GPU and CUDA version available on your host machine, but only on Linux. GPU usage via a container on Windows and MacOS machine is currently not supported by Docker. If no GPU are available, CPU will be used. 
 
-Note that starting the container with option `--ulimit core=0` avoids having possible core dumped inside the container, which can happen overwise due to the crash of the PDF parsing C++ component. Starting the container with parameter `-it` allows to interact with the docker run process, which is of limited use here, except conveniently stopping the docker container with control-c.
+Note that starting the container with option `--ulimit core=0` avoids having possible core dumped inside the container, which can happen otherwise due to the crash of the PDF parsing C++ component. Starting the container with parameter `-it` allows to interact with the docker run process, which is of limited use here, except conveniently stopping the docker container with control-c.
 
 To specify to use only certain GPUs (see the [nvidia container toolkit user guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/user-guide.html#gpu-enumeration) for more details):
 

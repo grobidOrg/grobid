@@ -329,7 +329,7 @@ public class EndToEndEvaluation {
             report.append("\n======= Fulltext structures ======= \n");
             reportMD.append("\n## Fulltext structures \n\n");
             reportMD.append(
-                    "Fulltext structure contents are complicated to capture from JATS NLM files. They are often normalized and different from the actual PDF content and are can be inconsistent from one document to another. The scores of the following metrics are thus not very meaningful in absolute term, in particular for the strict matching (textual content of the srtructure can be very long). As relative values for comparing different models, they seem however useful.\n\n");
+                    "Fulltext structure contents are complicated to capture from JATS NLM files. They are often normalized and different from the actual PDF content and can be inconsistent from one document to another. The scores of the following metrics are thus not very meaningful in absolute term, in particular for the strict matching (textual content of the structure can be very long). As relative values for comparing different models, they seem however useful.\n\n");
             report.append(evaluationRun(GROBID, FULLTEXT, reportMD));
         }
 
@@ -496,7 +496,7 @@ public class EndToEndEvaluation {
             labels = fulltextLabels;
         }
 
-        // statics about citation matching
+        // statistics about citation matching
         int match1 = 0;
         int match2 = 0;
         int match3 = 0;
@@ -687,7 +687,7 @@ public class EndToEndEvaluation {
                             List<String> goldIds = new ArrayList<>();
 
                             for (int i = 0; i < nodeList.getLength(); i++) {
-                                // sometimes we just have the raw citation bellow this, so we will have to further
+                                // sometimes we just have the raw citation below this, so we will have to further
                                 // test if we have something structured
                                 Map<String, List<String>> fieldsValues = new HashMap<>();
                                 Node node = nodeList.item(i);
@@ -810,7 +810,7 @@ public class EndToEndEvaluation {
                                  * We introduce 4 sequential alignment rules to match an extracted citation with an expected citation.
                                  * If the first rule is not working, we test the second one, and so on until the last one.
                                  * If all rules fail, the extracted citation is considered as false positive for its non-empty fields.
-                                 * - first rule: matching of the "soft" title (title ignoring case, punctuation ans space mismatches) and year
+                                 * - first rule: matching of the "soft" title (title ignoring case, punctuation and space mismatches) and year
                                  * - second rule: matching all of "soft" authors and year
                                  * - third rule: matching of "soft" inTitle (title of Journal or Conference), volume and first page
                                  * - forth rule: matching of first author last name and title, or inTitle if title is empty
@@ -1244,7 +1244,7 @@ public class EndToEndEvaluation {
                                 }
                                 totalObservedReferences += grobidBibRefIds.size();
 
-                                // Map associating the identifiers present in the reference callout with their number of occurences
+                                // Map associating the identifiers present in the reference callout with their number of occurrences
                                 Map<String, Integer> refCalloutRefIds = new HashMap<>();
                                 Map<String, Integer> grobidCalloutRefIds = new HashMap<>();
 
@@ -1297,7 +1297,7 @@ public class EndToEndEvaluation {
                                     }
                                 }
 
-                                // simple estimation of correct citation identifications by checking overlaped ids and map
+                                // simple estimation of correct citation identifications by checking overlapped ids and map
                                 int nbCorrect = 0;
                                 int nbWrong = 0;
                                 for (Map.Entry<String, Integer> entry : grobidCalloutRefIds.entrySet()) {

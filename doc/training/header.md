@@ -4,7 +4,7 @@
 
 For the following guidelines, it is expected that training data has been generated as explained [here](../Training-the-models-of-Grobid.md#generation-of-training-data).
 
-In Grobid, the document "header" corresponds to the bibliographical/metadata information sections about the document. This is typically all the information at the beginning of the article (often called the "front", title, authors, publication information, affiliations, abstrac, keywords, correspondence information, submission information, etc.), before the start of the document body (e.g. typically before the introduction section), but not only. Some of these elements can be located in the footnotes of the first page (e.g. affiliation of the authors), or at the end of the article (full list of authors, detailed affiliation and contact, how to cite, copyrights/licence and Open Access information). 
+In Grobid, the document "header" corresponds to the bibliographical/metadata information sections about the document. This is typically all the information at the beginning of the article (often called the "front", title, authors, publication information, affiliations, abstract, keywords, correspondence information, submission information, etc.), before the start of the document body (e.g. typically before the introduction section), but not only. Some of these elements can be located in the footnotes of the first page (e.g. affiliation of the authors), or at the end of the article (full list of authors, detailed affiliation and contact, how to cite, copyrights/licence and Open Access information). 
 
 For identifying the exact pieces of information to be part of the "header" segments, see the [annotation guidelines of the segmentation model](segmentation.md). 
 
@@ -34,7 +34,7 @@ The following TEI elements are used by the header model:
 * `<meeting>` to identify the meeting information associated to the publication, if relevant ([notes](#meeting-information))
 * `<publisher>` for identifying mention of the publisher appearing in isolation ([notes](#publisher))
 
-Note that the mark-up follows approximatively the [TEI](http://www.tei-c.org) when used for inline encoding. 
+Note that the mark-up follows approximately the [TEI](http://www.tei-c.org) when used for inline encoding. 
 
 Encoding the header section is challenging because of the variety of information that can appear in these parts, sometimes in unexpected imbricated manners. In addition, some information are often redundant (for example authors and affiliations mentioned two times with different level of details). These annotation guidelines are thus particularly important to follow to ensure stable encoding practices in the complete training data and to avoid the machine learning models to learn contradictory labelling, resulting in poorer performance and less valuable training data. 
 
@@ -47,7 +47,7 @@ The following sections provide detailed information and examples on how to handl
 
 ### Space and new lines
 
-Spaces and new line in the XNL annotated files are not significant and will be all considered by the XML parser as default separator. So it is possible to add and remove freely space charcaters and new lines to improve the readability of the annotated document without any impacts. 
+Spaces and new line in the XNL annotated files are not significant and will be all considered by the XML parser as default separator. So it is possible to add and remove freely space characters and new lines to improve the readability of the annotated document without any impacts. 
 
 Similarly, line break tags `<lb/>` are present in the generated XML training data, but they will be considered as a default separator by the XML parser. They are indicated to help the annotator to identify a piece of text in the original PDF if necessary. Actual line breaks are identified in the PDF and added by aligning the XML TEI with the feature file generated in parallel which contains all the PDF layout information. 
 
@@ -125,7 +125,7 @@ CORRESPONDENCE<lb/> Address correspondence to
 
 As illustrated above, titles like "Ph.D.", "MD", "Dr.", etc. must be **included** in the author field. 
 
-The only exception is when indication of authors are given around an email or a phone number. In this case we consider that the occurence of an author name (including abbreviated names) is purely for practical reasons and should be ignored. 
+The only exception is when indication of authors are given around an email or a phone number. In this case we consider that the occurrence of an author name (including abbreviated names) is purely for practical reasons and should be ignored. 
 
 ```xml
 Email: Calum J Maclean* -
@@ -268,7 +268,7 @@ If the title of the journal where the atticle is published appears in isolation,
 
 ### Emails
 
-Email must be tagged in a way that is limited to an actual email, exlcuding "Email" word, punctuations and person name information. 
+Email must be tagged in a way that is limited to an actual email, excluding "Email" word, punctuations and person name information. 
 
 ```xml
     Email: Ren H Wu -
@@ -305,7 +305,7 @@ Be careful not to include publication date information under this block, the pub
     This is an Open Access article distributed under the terms of the Creative 
     Commons Attribution-NonCommercial-NoDerivatives<lb/> 
     License (http://creativecommons.org/licenses/by-nc-nd/4.0/), which permits 
-    non-commercial re-use, distribution, and reproduc-<lb/>
+    non-commercial reuse, distribution, and reproduc-<lb/>
     tion in any medium, provided the original work is properly cited, and is not 
     altered, transformed, or built upon in any way.</note>
 ```
@@ -339,7 +339,7 @@ There is no need to specify the type of strong identifier (it will be inferred b
 
 ### Phone number
 
-We label phone number, including international prefix symbols, but not fax numbers. Punctation and words like "phone", "telephone", etc. must be excluded from the label field. 
+We label phone number, including international prefix symbols, but not fax numbers. Punctuation and words like "phone", "telephone", etc. must be excluded from the label field. 
 
 ```xml
     <address>Box 457, SE 405 30<lb/> Göteborg, Sweden.</address>
@@ -397,7 +397,7 @@ Publications can be associated to a particular meeting event, in particular a co
     </meeting>
 ```  
 
-If the meeting information is part of a larger reference (e.g. defintion the citation information of the Proceedings of a conference where the article is published), then it has to be labelled also as `<reference>` (this is similar to the journal title case just above). For instance, in the following example, pages are indicated and we refer to the container of the article and not just to a meeting. 
+If the meeting information is part of a larger reference (e.g. definition the citation information of the Proceedings of a conference where the article is published), then it has to be labelled also as `<reference>` (this is similar to the journal title case just above). For instance, in the following example, pages are indicated and we refer to the container of the article and not just to a meeting. 
 
 ```xml
     In:

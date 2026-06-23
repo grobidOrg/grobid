@@ -139,7 +139,7 @@ public class GrobidPropertiesTest {
     public void testGetInstance() throws Exception {
         GrobidProperties.reset();
         GrobidProperties.getInstance();
-        // test the resue of the instance created previously
+        // test the reuse of the instance created previously
         GrobidProperties.reset();
         assertTrue(
                 "GrobidProperties.getInstance() does not return an instance of GrobidProperties",

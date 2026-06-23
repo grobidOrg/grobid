@@ -957,7 +957,7 @@ public class TEIFormatter {
 
         // keywords here !! Normally the keyword field has been preprocessed
         // if the segmentation into individual keywords worked, the first conditional
-        // statement will be used - otherwise the whole keyword field is outputed
+        // statement will be used - otherwise the whole keyword field is outputted
         if (CollectionUtils.isNotEmpty(biblio.getKeywords())) {
             textClassWritten = true;
             tei.append("\t\t\t<textClass>\n");

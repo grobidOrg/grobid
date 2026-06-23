@@ -124,7 +124,7 @@ public class ProcessEngine implements Closeable {
                     }
                 } catch (final Exception exp) {
                     LOGGER.error(
-                            "An error occured while processing the file "
+                            "An error occurred while processing the file "
                                     + currPdf.getAbsolutePath()
                                     + ". Continuing the process for the other files",
                             exp);
@@ -250,7 +250,7 @@ public class ProcessEngine implements Closeable {
                     }
                 } catch (final Exception exp) {
                     LOGGER.error(
-                            "An error occured while processing the file "
+                            "An error occurred while processing the file "
                                     + currPdf.getAbsolutePath()
                                     + ". Continuing the process for the other files",
                             exp);
@@ -420,7 +420,7 @@ public class ProcessEngine implements Closeable {
                     }
                 } catch (final Exception exp) {
                     LOGGER.error(
-                            "An error occured while processing the file "
+                            "An error occurred while processing the file "
                                     + currPdf.getAbsolutePath()
                                     + ". Continuing the process for the other files",
                             exp);
@@ -520,7 +520,7 @@ public class ProcessEngine implements Closeable {
                             pGbdArgs.getPath2Output() + File.separator + currTEI.getName(), 0);
                 }
             } catch (final Exception exp) {
-                LOGGER.error("An error occured while processing the file " + currTEI.getAbsolutePath()
+                LOGGER.error("An error occurred while processing the file " + currTEI.getAbsolutePath()
                         + ". Continuing the process for the other files", exp);
             }
         }
@@ -564,7 +564,7 @@ public class ProcessEngine implements Closeable {
                 }
             } catch (final Exception exp) {
                 LOGGER.error(
-                        "An error occured while processing the file "
+                        "An error occurred while processing the file "
                                 + currXML.getAbsolutePath()
                                 + ". Continuing the process for the other files",
                         exp);
@@ -598,7 +598,7 @@ public class ProcessEngine implements Closeable {
                 }
             } catch (final Exception exp) {
                 LOGGER.error(
-                        "An error occured while processing the file "
+                        "An error occurred while processing the file "
                                 + currTXT.getAbsolutePath()
                                 + ". Continuing the process for the other files",
                         exp);
@@ -644,7 +644,7 @@ public class ProcessEngine implements Closeable {
                 }
             } catch (final Exception exp) {
                 LOGGER.error(
-                        "An error occured while processing the file "
+                        "An error occurred while processing the file "
                                 + currPDF.getAbsolutePath()
                                 + ". Continuing the process for the other files",
                         exp);
@@ -703,7 +703,7 @@ public class ProcessEngine implements Closeable {
                 }
             } catch (final Exception exp) {
                 LOGGER.error(
-                        "An error occured while processing the file "
+                        "An error occurred while processing the file "
                                 + currPDF.getAbsolutePath()
                                 + ". Continuing the process for the other files",
                         exp);

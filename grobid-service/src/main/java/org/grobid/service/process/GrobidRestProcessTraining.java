@@ -46,7 +46,7 @@ public class GrobidRestProcessTraining {
     }
 
     /**
-     * Cehck if a model name matches an existing GROBID model, as declared in the GrobidModels registry.
+     * Check if a model name matches an existing GROBID model, as declared in the GrobidModels registry.
      */
     public static boolean containsModel(String targetModel) {
         for (GrobidModels model : GrobidModels.values()) {
@@ -316,7 +316,7 @@ public class GrobidRestProcessTraining {
      * of following the advancement of the training and eventually get back the associated evaluation.
      * Depending on the state of the training, the service will returns:
      * - if the training is ongoing, an indication of advancement as a string
-     * - it the training is completed, evaluation statistics dependeing on the selected type of training
+     * - it the training is completed, evaluation statistics depending on the selected type of training
      *
      * @return a response object containing information on the training corresponding to the token
      */

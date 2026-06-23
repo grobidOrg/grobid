@@ -135,7 +135,7 @@ public class IOUtilities {
             return File.createTempFile(fileName, extension, GrobidProperties.getTempPath());
         } catch (IOException e) {
             throw new GrobidResourceException(
-                    "Could not create temprorary file, '"
+                    "Could not create temporary file, '"
                             + fileName
                             + "."
                             +
@@ -156,7 +156,7 @@ public class IOUtilities {
             return newFile.toFile();
         } catch (IOException e) {
             throw new GrobidResourceException(
-                    "Could not create temprorary file, with extension '" + extension + "' under path tmp system path.",
+                    "Could not create temporary file, with extension '" + extension + "' under path tmp system path.",
                     e);
         }
     }

@@ -6,7 +6,7 @@ grobid:
 
   # path relative to the grobid-home path (e.g. tmp for grobid-home/tmp) or absolute path (/tmp)
   temp: "tmp"
-  
+
   # normally nothing to change here, path relative to the grobid-home path (e.g. grobid-home/lib)
   nativelibrary: "lib"
 
@@ -23,7 +23,7 @@ grobid:
     tokensMax: 1000000
 
   consolidation:
-    # define the bibliographical data consolidation service to be used, either "crossref" for CrossRef REST API or 
+    # define the bibliographical data consolidation service to be used, either "crossref" for CrossRef REST API or
     # "glutton" for https://github.com/kermitt2/biblio-glutton
     service: "crossref"
     #service: "glutton"
@@ -50,8 +50,8 @@ grobid:
       postValidation: true
   proxy:
     # proxy to be used when doing external call to the consolidation service
-    host: 
-    port: 
+    host:
+    port:
 
   # CORS configuration for the GROBID web API service
   corsAllowedOrigins: "*"
@@ -66,18 +66,18 @@ grobid:
   #sentenceDetectorFactory: "org.grobid.core.lang.impl.PragmaticSentenceDetectorFactory"
   sentenceDetectorFactory: "org.grobid.core.lang.impl.OpenNLPSentenceDetectorFactory"
   #sentenceDetectorFactory: "org.grobid.core.lang.impl.BlingFireSentenceDetectorFactory"
-  
+
   # maximum concurrency allowed to GROBID server for processing parallel requests - change it according to your CPU/GPU capacities
   # for a production server running only GROBID, set the value slightly above the available number of threads of the server
   # to get the best performance and security
   concurrency: 10
-  # when the pool is full, for queries waiting for the availability of a Grobid engine, this is the maximum time wait to try 
+  # when the pool is full, for queries waiting for the availability of a Grobid engine, this is the maximum time wait to try
   # to get an engine (in seconds) - normally never change it
   poolMaxWait: 1
 
   delft:
     # DeLFT global parameters
-    # delft installation path if Deep Learning architectures are used to implement one of the sequence labeling model, 
+    # delft installation path if Deep Learning architectures are used to implement one of the sequence labeling model,
     # embeddings are usually compiled as lmdb under delft/data (this parameter is ignored if only featured-engineered CRF are used)
     install: "../delft"
     pythonVirtualEnv:
@@ -90,9 +90,27 @@ grobid:
   models:
     # we configure here how each sequence labeling model should be implemented
     # for feature-engineered CRF, use "wapiti" and possible training parameters are window, epsilon and nbMaxIterations
-    # for Deep Learning, use "delft" and select the target DL architecture (see DeLFT library), the training 
-    # parameters then depends on this selected DL architecture 
-    
+    # for Deep Learning, use "delft" and select the target DL architecture (see DeLFT library), the training
+    # parameters then depends on this selected DL architecture
+    #
+    # Flavor inheritance
+    # ------------------
+    # Flavor entries (whose name extends a base, e.g. "segmentation-article-light" for
+    # base "segmentation") inherit each field from the closest ancestor that sets it.
+    # To override a field for a specific flavor, set it explicitly on that flavor entry.
+    #
+    # This applies in particular to:
+    #   - engine:           if omitted, follows the base. Set it to override —
+    #                       e.g. a Wapiti-only flavor of a DeLFT base must set
+    #                       `engine: "wapiti"` (see header-sdo-ietf below).
+    #   - delft.architecture: if omitted, follows the base. Set it to pick a
+    #                       different DL architecture per flavor.
+    #
+    # The resolved engine for a flavor must match the model that exists on disk.
+    # If the resolved engine is DeLFT but no DL model directory is present (or vice
+    # versa for Wapiti), the system logs a "not available" message and falls back
+    # to the base model.
+
     - name: "segmentation"
       # at this time, must always be CRF wapiti, the input sequence size is too large for a Deep Learning implementation
       engine: "wapiti"
@@ -116,7 +134,7 @@ grobid:
           batch_size: 10
 
     - name: "segmentation-article-light"
-      engine: "wapiti"
+      # engine inherited from "segmentation"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.0000001
@@ -124,7 +142,7 @@ grobid:
         nbMaxIterations: 2000
 
     - name: "segmentation-article-light-ref"
-      engine: "wapiti"
+      # engine inherited from "segmentation"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.0000001
@@ -132,6 +150,7 @@ grobid:
         nbMaxIterations: 2000
 
     - name: "segmentation-sdo-ietf"
+      # explicit: only a Wapiti model is available for this flavor
       engine: "wapiti"
       wapiti:
         # wapiti training parameters, they will be used at training time only
@@ -152,7 +171,7 @@ grobid:
       engine: "wapiti"
       #engine: "delft"
       wapiti:
-        # wapiti training parameters, they will be used at training time only  
+        # wapiti training parameters, they will be used at training time only
         epsilon: 0.000001
         window: 30
         nbMaxIterations: 1500
@@ -174,30 +193,25 @@ grobid:
           batch_size: 9
 
     - name: "header-article-light"
-      engine: "wapiti"
-#      engine: "delft"
+      # engine inherited from "header"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.000001
         window: 30
         nbMaxIterations: 1500
-      delft:
-        architecture: "BidLSTM_ChainCRF_FEATURES"
-        useELMo: false
+
 
     - name: "header-article-light-ref"
+      # engine inherited from "header"
       engine: "wapiti"
-#      engine: "delft"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.000001
         window: 30
         nbMaxIterations: 1500
-      delft:
-        architecture: "BidLSTM_ChainCRF_FEATURES"
-        useELMo: false
 
     - name: "header-sdo-ietf"
+      # engine override: only a Wapiti model is available for this flavor
       engine: "wapiti"
       wapiti:
         # wapiti training parameters, they will be used at training time only
@@ -264,7 +278,7 @@ grobid:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.00001
         window: 20
-      delft:  
+      delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF"
 
@@ -295,7 +309,7 @@ grobid:
           batch_size: 30
         training:
           # parameters used for training
-          max_sequence_length: 500  
+          max_sequence_length: 500
           batch_size: 50
 
     - name: "patent-citation"
@@ -338,11 +352,11 @@ grobid:
           batch_size: 20
         training:
           # parameters used for training
-          max_sequence_length: 500  
+          max_sequence_length: 500
           batch_size: 40
 
     - name: "copyright"
-      # at this time, we only have a DeLFT implementation, 
+      # at this time, we only have a DeLFT implementation,
       # use "wapiti" if the deep learning library JNI is not available and model will then be ignored
       #engine: "delft"
       engine: "wapiti"
@@ -363,10 +377,10 @@ grobid:
         #architecture: "bert"
         #transformer: "allenai/scibert_scivocab_cased"
 
-  # for **service only**: how to load the models, 
-  # false -> models are loaded when needed, avoiding putting in memory useless models (only in case of CRF) but slow down 
+  # for **service only**: how to load the models,
+  # false -> models are loaded when needed, avoiding putting in memory useless models (only in case of CRF) but slow down
   #          significantly the service at first call
-  # true -> all the models are loaded into memory at the server startup (default), slow the start of the services 
+  # true -> all the models are loaded into memory at the server startup (default), slow the start of the services
   #         and models not used will take some more memory (only in case of CRF), but server is immediatly warm and ready
   modelPreload: true
 
