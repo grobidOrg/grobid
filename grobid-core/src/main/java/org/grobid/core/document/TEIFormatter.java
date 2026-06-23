@@ -1858,6 +1858,16 @@ public class TEIFormatter {
                         if (pos > matchingPosition.start)
                             break;
 
+                        // Defensive guard against a malformed or overlapping callout interval
+                        // (e.g. two footnotes sharing the same superscript marker) where
+                        // start > end or end is out of range. Without this, the subList calls
+                        // below throw IllegalArgumentException (fromIndex > toIndex) and abort
+                        // the whole document (issue #1024).
+                        if (matchingPosition.start > matchingPosition.end
+                                || matchingPosition.end > clusterTokens.size()) {
+                            continue;
+                        }
+
                         List<LayoutToken> before = clusterTokens.subList(pos, matchingPosition.start);
                         String clusterContentBefore = LayoutTokensUtil.normalizeDehyphenizeText(before);
 
