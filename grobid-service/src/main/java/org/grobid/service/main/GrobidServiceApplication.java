@@ -10,8 +10,9 @@ import io.dropwizard.core.Application;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
 import io.dropwizard.forms.MultiPartBundle;
-import io.dropwizard.metrics.servlets.MetricsServlet;
 import io.prometheus.client.dropwizard.DropwizardExports;
+import io.prometheus.client.hotspot.DefaultExports;
+import io.prometheus.client.servlet.jakarta.exporter.MetricsServlet;
 import jakarta.servlet.DispatcherType;
 import jakarta.servlet.FilterRegistration;
 import jakarta.servlet.ServletRegistration;
@@ -61,7 +62,14 @@ public final class GrobidServiceApplication extends Application<GrobidServiceCon
         environment.healthChecks().register("health-check", new HealthResource(configuration));
 
         LOGGER.info("Service config={}", configuration);
+        // Bridge the application's Dropwizard metrics into the Prometheus registry and also
+        // export JVM/process metrics (heap, GC, threads, CPU). The Prometheus exposition format
+        // is served at /metrics/prometheus on the admin connector so that a Prometheus server can
+        // scrape it (and Grafana can then dashboard/alert on it). Previously this endpoint was
+        // wired to Dropwizard's JSON MetricsServlet, so it served the wrong format with mismatched
+        // metric names (issue #920).
         new DropwizardExports(environment.metrics()).register();
+        DefaultExports.initialize();
         ServletRegistration.Dynamic registration = environment.admin().addServlet("Prometheus", new MetricsServlet());
         registration.addMapping("/metrics/prometheus");
         environment.jersey().setUrlPattern(RESOURCES + "/*");
