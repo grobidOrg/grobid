@@ -9,7 +9,7 @@ The tool is developed as part of the *Legal Theory Knowledge Graph* project at t
 
 ## Why use it
 
-When you [generate pre-annotated training data](Training-the-models-of-Grobid.md#generation-of-training-data) with GROBID's `createTraining` batch command, the output is a set of TEI XML files that **must be reviewed and corrected** before they can be added to the gold-standard corpus. Doing this in a raw text editor is tedious: you constantly switch between the XML and the original PDF to check whether a label is on the right span of text, and it is easy to accidentally alter the text stream — which [must be kept untouched](training/General-principles.md#correcting-pre-annotated-files).
+When you [generate pre-annotated training data](Training-the-models-of-Grobid.md#generation-of-training-data) with GROBID's `createTraining` (via the service API or in batch), the output is a set of TEI XML files that **must be reviewed and corrected** before they can be added to the gold-standard corpus. Doing this in a raw text editor is tedious: you constantly switch between the XML and the original PDF to check whether a label is on the right span of text, and it is easy to accidentally alter the text stream — which [must be kept untouched](training/General-principles.md#correcting-pre-annotated-files).
 
 The PDF-TEI Editor addresses this by:
 
