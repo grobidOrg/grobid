@@ -672,4 +672,12 @@ public class TextUtilitiesTest extends EngineTest {
         assertThat(TextUtilities.clean("ﬀﬁﬂﬃﬄ"), is("fffiflffiffl"));
     }
 
+    @Test
+    public void testNormaliseText_collapsesNonBreakingSpace_issue849() {
+        // A citation made only of non-breaking spaces (U+00A0) reduces to blank once
+        // normalised; this is why processCitationList returns empty content rather than
+        // throwing a NullPointerException (HTTP 500) on whitespace-only input (issue #849).
+        assertThat(UnicodeUtil.normaliseText("\u00A0\u00A0\u00A0\u00A0").trim(), is(""));
+    }
+
 }

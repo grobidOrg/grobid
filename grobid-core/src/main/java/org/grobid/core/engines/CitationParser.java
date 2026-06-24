@@ -80,15 +80,19 @@ public class CitationParser extends AbstractParser {
             return null;
         List<List<LayoutToken>> tokenList = new ArrayList<>();
         for (String input : inputs) {
-            if (StringUtils.isBlank(input))
+            // normalize first so non-breaking spaces etc. become regular spaces
+            input = UnicodeUtil.normaliseText(input);
+            if (StringUtils.isBlank(input)) {
                 tokenList.add(new ArrayList<LayoutToken>());
-            else {
-                // some cleaning
-                input = UnicodeUtil.normaliseText(input);
+            } else {
                 input = TextUtilities.removeLeadingAndTrailingChars(input, "[({.,])}: \n", " \n");
-                List<LayoutToken> tokens = analyzer.tokenizeWithLayoutToken(input);
-                tokens = analyzer.retokenizeSubdigitsFromLayoutToken(tokens);
-                tokenList.add(tokens);
+                if (StringUtils.isBlank(input)) {
+                    tokenList.add(new ArrayList<LayoutToken>());
+                } else {
+                    List<LayoutToken> tokens = analyzer.tokenizeWithLayoutToken(input);
+                    tokens = analyzer.retokenizeSubdigitsFromLayoutToken(tokens);
+                    tokenList.add(tokens);
+                }
             }
         }
 
@@ -291,6 +295,8 @@ public class CitationParser extends AbstractParser {
         }
 
         List<BiblioItem> bibList = processingLayoutTokenMultiple(allRefBlocks, 0);
+        if (bibList == null)
+            return results;
         int i = 0;
         for (LabeledReferenceResult ref : segm) {
             if (ref.getTokens() == null || ref.getTokens().size() == 0)
