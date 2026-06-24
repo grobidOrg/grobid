@@ -985,7 +985,9 @@ public class AffiliationAddressParser extends AbstractParser {
 
             String output = writeField(s1, lastTag0, s2, "<marker>", "<marker>", addSpace, 7);
             if (output != null) {
-                if (s1.startsWith("I-")) {
+                // output != null implies writeField matched on s1, so s1 is non-null here; the
+                // explicit guard keeps that obvious to static analysis (CodeQL) and at runtime.
+                if (s1 != null && s1.startsWith("I-")) {
                     // start of a new marker: it begins a new affiliation block, so close the
                     // previous affiliation/address before opening a fresh <affiliation><marker>.
                     if (hasAddressTag) {
