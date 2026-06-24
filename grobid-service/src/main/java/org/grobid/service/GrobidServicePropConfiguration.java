@@ -27,6 +27,9 @@ public class GrobidServicePropConfiguration {
     @JsonProperty
     private String corsAllowedHeaders = "X-Requested-With,Content-Type,Accept,Origin";
 
+    @JsonProperty
+    private OtlpConfiguration otlp = new OtlpConfiguration();
+
     public String getGrobidHome() {
         return grobidHome;
     }
@@ -81,5 +84,13 @@ public class GrobidServicePropConfiguration {
 
     public void setCorsAllowedHeaders(String corsAllowedHeaders) {
         this.corsAllowedHeaders = corsAllowedHeaders;
+    }
+
+    public OtlpConfiguration getOtlp() {
+        return otlp;
+    }
+
+    public void setOtlp(OtlpConfiguration otlp) {
+        this.otlp = otlp;
     }
 }

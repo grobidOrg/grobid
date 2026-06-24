@@ -52,7 +52,28 @@ You can check whether the service is up and running by opening the following URL
 The service provides also an admin console, reachable at <http://yourhost:8071> where some additional checks like ping, metrics, hearthbeat are available.
 We recommend, in particular to have a look at the metrics (using the [Metric library](https://metrics.dropwizard.io/3.1.0/getting-started/)) which are providing the rate of execution as well as the throughput of each entry point.
 
-In addition, [Prometheus](https://prometheus.io/) format export metrics are available at <http://yourhost:8071/metrics/prometheus>.  
+In addition, [Prometheus](https://prometheus.io/) format export metrics are available at <http://yourhost:8071/metrics/prometheus>. This is a **pull**-based endpoint: a Prometheus server scrapes it on an interval.
+
+### Push-based metrics export (OTLP)
+
+For environments where a metrics backend cannot reach the service to scrape it (containers behind NAT, ephemeral/batch runs), GROBID can instead **push** metrics over [OTLP](https://opentelemetry.io/docs/specs/otlp/) to an OpenTelemetry Collector, [Grafana Alloy](https://grafana.com/docs/alloy/latest/)/Agent, or a hosted backend such as Grafana Cloud (which Grafana then dashboards). Note that Grafana itself does not ingest metrics — it queries a time-series store (Prometheus, Mimir, Grafana Cloud, …); OTLP pushes into that store.
+
+When enabled, the service periodically exports JVM/process runtime metrics (heap, GC, threads, CPU, classes). It is **disabled by default**; configure it under `grobid.otlp` in `grobid-home/config/grobid.yaml`:
+
+```yaml
+grobid:
+  otlp:
+    enabled: true
+    endpoint: "http://localhost:4318"   # base URL; 4318 for http/protobuf (the "/v1/metrics" path is added automatically), 4317 for grpc
+    protocol: "http/protobuf"           # or "grpc"
+    intervalSeconds: 60
+    serviceName: "grobid-service"
+    # extra headers for backend auth, e.g. Grafana Cloud:
+    #headers:
+    #  Authorization: "Basic <base64 of instanceID:apiToken>"
+```
+
+The pull (Prometheus) and push (OTLP) paths are independent — you can enable either, both, or neither.
 
 ## Configure the server
 

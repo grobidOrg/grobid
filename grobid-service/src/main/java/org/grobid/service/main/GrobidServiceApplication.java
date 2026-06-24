@@ -22,6 +22,7 @@ import org.slf4j.LoggerFactory;
 import ru.vyarus.dropwizard.guice.GuiceBundle;
 
 import org.grobid.service.GrobidServiceConfiguration;
+import org.grobid.service.metrics.OtlpMetricsReporter;
 import org.grobid.service.modules.GrobidServiceModule;
 import org.grobid.service.resources.HealthResource;
 
@@ -64,6 +65,11 @@ public final class GrobidServiceApplication extends Application<GrobidServiceCon
         new DropwizardExports(environment.metrics()).register();
         ServletRegistration.Dynamic registration = environment.admin().addServlet("Prometheus", new MetricsServlet());
         registration.addMapping("/metrics/prometheus");
+
+        // Push-based metrics export over OTLP (disabled by default; see grobid.otlp in grobid.yaml).
+        // Managed by the Dropwizard lifecycle so it flushes a final batch on graceful shutdown.
+        environment.lifecycle().manage(new OtlpMetricsReporter(configuration.getGrobid().getOtlp()));
+
         environment.jersey().setUrlPattern(RESOURCES + "/*");
 
         String allowedOrigins = configuration.getGrobid().getCorsAllowedOrigins();
