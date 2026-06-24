@@ -1927,6 +1927,10 @@ public class FullTextParser extends AbstractParser {
             String s1 = null;
             String s2 = null;
             String lastTag = null;
+            // tracks the last non-marker structural label, i.e. the block (paragraph/figure/table)
+            // that currently encloses any embedded in-text marker, so that a marker at the end of
+            // that block is closed with the right tag (</p> vs </figure>) — see testClosingTag.
+            String lastContainerTag0 = null;
             //System.out.println(tokenizations.toString());
             //System.out.println(result);
             // current token position
@@ -2009,7 +2013,7 @@ public class FullTextParser extends AbstractParser {
 
                 boolean closeParagraph = false;
                 if (lastTag != null) {
-                    closeParagraph = testClosingTag(buffer, currentTag0, lastTag0, s1);
+                    closeParagraph = testClosingTag(buffer, currentTag0, lastTag0, s1, lastContainerTag0);
                 }
 
                 boolean output;
@@ -2048,19 +2052,23 @@ public class FullTextParser extends AbstractParser {
                         addSpace, 3, false);
                 }
                 if (!output) {
-                    output = writeField(buffer, s1, lastTag0, s2, "<section>",
+                    // when the previous block was just closed (closeParagraph) — e.g. the prior
+                    // token was an embedded marker ending its block — force the opening tag by
+                    // passing an empty lastTag, otherwise writeField suppresses the opening tag
+                    // after a marker and a later </head> would be emitted with no matching <head>.
+                    output = writeField(buffer, s1, closeParagraph ? "" : lastTag0, s2, "<section>",
                         "<head>", addSpace, 3, false);
                 }
                 /*if (!output) {
-                    output = writeField(buffer, s1, lastTag0, s2, "<subsection>", 
+                    output = writeField(buffer, s1, lastTag0, s2, "<subsection>",
 						"<head>", addSpace, 3, false);
                 }*/
                 if (!output) {
-                    output = writeField(buffer, s1, lastTag0, s2, "<equation>",
+                    output = writeField(buffer, s1, closeParagraph ? "" : lastTag0, s2, "<equation>",
                         "<formula>", addSpace, 4, false);
                 }
                 if (!output) {
-                    output = writeField(buffer, s1, lastTag0, s2, "<equation_label>",
+                    output = writeField(buffer, s1, closeParagraph ? "" : lastTag0, s2, "<equation_label>",
                         "<label>", addSpace, 4, false);
                 }
                 if (!output) {
@@ -2068,12 +2076,26 @@ public class FullTextParser extends AbstractParser {
                         "<ref type=\"figure\">", addSpace, 3, false);
                 }
                 if (!output) {
-                    output = writeField(buffer, s1, lastTag0, s2, "<figure>",
-                        "<figure>", addSpace, 3, false);
+                    // a figure/table is a self-contained block: when the previous block was just
+                    // closed (closeParagraph), force the opening tag by passing an empty lastTag,
+                    // otherwise consecutive figures/tables (each a new I- segment) would be merged
+                    // into a single, never-reopened element and leave unbalanced tags (issue #465).
+                    if (closeParagraph) {
+                        output = writeField(buffer, s1, "", s2, "<figure>",
+                            "<figure>", addSpace, 3, false);
+                    } else {
+                        output = writeField(buffer, s1, lastTag0, s2, "<figure>",
+                            "<figure>", addSpace, 3, false);
+                    }
                 }
                 if (!output) {
-                    output = writeField(buffer, s1, lastTag0, s2, "<table>",
-                        "<figure type=\"table\">", addSpace, 3, false);
+                    if (closeParagraph) {
+                        output = writeField(buffer, s1, "", s2, "<table>",
+                            "<figure type=\"table\">", addSpace, 3, false);
+                    } else {
+                        output = writeField(buffer, s1, lastTag0, s2, "<table>",
+                            "<figure type=\"table\">", addSpace, 3, false);
+                    }
                 }
                 // for item we must distinguish starting and closing tags
                 if (!output) {
@@ -2083,9 +2105,35 @@ public class FullTextParser extends AbstractParser {
 
                 lastTag = s1;
 
+                // Remember the enclosing block for any subsequent embedded marker: a marker does
+                // not change the current container, so only update on non-marker structural labels.
+                if (currentTag0 != null
+                    && !currentTag0.equals("<citation_marker>")
+                    && !currentTag0.equals("<figure_marker>")
+                    && !currentTag0.equals("<table_marker>")
+                    && !currentTag0.equals("<equation_marker>")) {
+                    lastContainerTag0 = currentTag0;
+                }
+
                 if (!st.hasMoreTokens()) {
                     if (lastTag != null) {
-                        testClosingTag(buffer, "", currentTag0, s1);
+                        // close the last open block; if the final token was an embedded marker,
+                        // close its enclosing container (lastContainerTag0) instead, which testClosingTag
+                        // would otherwise skip because a marker tag never closes anything.
+                        boolean lastIsMarker = currentTag0 != null
+                            && (currentTag0.equals("<citation_marker>")
+                            || currentTag0.equals("<figure_marker>")
+                            || currentTag0.equals("<table_marker>")
+                            || currentTag0.equals("<equation_marker>"));
+                        if (lastIsMarker) {
+                            buffer.append("</ref>");
+                            String containerClose = closingTagForContainer(lastContainerTag0);
+                            if (containerClose != null) {
+                                buffer.append(containerClose);
+                            }
+                        } else {
+                            testClosingTag(buffer, "", currentTag0, s1, lastContainerTag0);
+                        }
                     }
                 }
                 if (start) {
@@ -2278,16 +2326,57 @@ public class FullTextParser extends AbstractParser {
      * @param currentTag
      * @return
      */
+    /**
+     * Returns the closing tag for a structural block that may enclose an embedded in-text marker,
+     * or null if the given label is not such a block. Used to close the enclosing block with the
+     * correct tag when a marker is the last token inside it.
+     */
+    private static String closingTagForContainer(String containerTag0) {
+        if (containerTag0 == null)
+            return null;
+        switch (containerTag0) {
+            case "<paragraph>":
+                return "</p>\n\n";
+            case "<figure>":
+            case "<table>":
+                return "</figure>\n\n";
+            case "<equation>":
+                return "</formula>\n\n";
+            case "<equation_label>":
+                return "</label>\n\n";
+            case "<section>":
+            case "<subsection>":
+                return "</head>\n\n";
+            case "<item>":
+                return "</item>\n\n";
+            case "<other>":
+                return "</note>\n\n";
+            default:
+                return null;
+        }
+    }
+
     private static boolean testClosingTag(StringBuilder buffer,
                                           String currentTag0,
                                           String lastTag0,
-                                          String currentTag) {
+                                          String currentTag,
+                                          String lastContainerTag0) {
         boolean res = false;
         // reference_marker and citation_marker are two exceptions because they can be embedded
 
-        if (!currentTag0.equals(lastTag0) || currentTag.equals("I-<paragraph>") || currentTag.equals("I-<item>")) {
+        if (!currentTag0.equals(lastTag0) || currentTag.equals("I-<paragraph>") || currentTag.equals("I-<item>")
+            || currentTag.equals("I-<figure>") || currentTag.equals("I-<table>")) {
             if (currentTag0.equals("<citation_marker>") || currentTag0.equals("<equation_marker>") ||
                 currentTag0.equals("<figure_marker>") || currentTag0.equals("<table_marker>")) {
+                // The current token is itself an embedded marker, so it must not close the
+                // enclosing block. But if the previous token was a *different* marker, its <ref>
+                // is still open: close it now, otherwise two adjacent markers of different types
+                // nest into each other and leave an unbalanced <ref>.
+                if ((lastTag0.equals("<citation_marker>") || lastTag0.equals("<equation_marker>") ||
+                    lastTag0.equals("<figure_marker>") || lastTag0.equals("<table_marker>"))
+                    && !lastTag0.equals(currentTag0)) {
+                    buffer.append("</ref>");
+                }
                 return res;
             }
 
@@ -2315,8 +2404,10 @@ public class FullTextParser extends AbstractParser {
                 buffer.append("</label>\n\n");
             } else if (lastTag0.equals("<table>")) {
                 buffer.append("</figure>\n\n");
+                res = true;
             } else if (lastTag0.equals("<figure>")) {
                 buffer.append("</figure>\n\n");
+                res = true;
             } else if (lastTag0.equals("<item>")) {
                 buffer.append("</item>\n\n");
             } else if (lastTag0.equals("<citation_marker>") ||
@@ -2325,15 +2416,25 @@ public class FullTextParser extends AbstractParser {
                 lastTag0.equals("<equation_marker>")) {
                 buffer.append("</ref>");
 
-                // Make sure that paragraph is closed when markers are at the end of it
-                if (!currentTag0.equals("<paragraph>") &&
-                    (!currentTag0.equals("<citation_marker>") ||
-                        !currentTag0.equals("<figure_marker>") ||
-                        !currentTag0.equals("<table_marker>") ||
-                        !currentTag0.equals("<equation_marker>")
-                    )
-                ) {
-                    buffer.append("</p>\n\n");
+                // A marker is embedded inside an enclosing block (a paragraph, or — when the model
+                // places a callout inside an annex/legend — a figure/table). Close that block only
+                // when the marker is genuinely at its end, i.e. the next token neither continues the
+                // same block nor is another embedded marker. We close with the tag matching the
+                // actual enclosing block (lastContainerTag0): </p> for a paragraph, </figure> for a
+                // figure/table. The previous code unconditionally emitted </p>, which both used an
+                // always-true '||' guard (issue #465) and produced a spurious </p> — and never
+                // closed the figure — when the marker was inside a figure/table.
+                boolean markerStillEmbedded =
+                    currentTag0.equals("<citation_marker>") ||
+                    currentTag0.equals("<figure_marker>") ||
+                    currentTag0.equals("<table_marker>") ||
+                    currentTag0.equals("<equation_marker>");
+                if (!markerStillEmbedded && !currentTag0.equals(lastContainerTag0)) {
+                    String containerClose = closingTagForContainer(lastContainerTag0);
+                    if (containerClose != null) {
+                        buffer.append(containerClose);
+                        res = true;
+                    }
                 }
             } else {
                 res = false;

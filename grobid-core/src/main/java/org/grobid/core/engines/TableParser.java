@@ -226,7 +226,12 @@ public class TableParser extends AbstractParser {
 
             String output = null;
             if (lastTag != null) {
-                testClosingTag(sb, plainLabel, lastTag, addSpace, addEOL);
+                // A label starting with "I-" marks the beginning of a NEW segment. Force the
+                // previous element to close even when the base label is unchanged (e.g. two
+                // consecutive <note> or <head> regions), otherwise the previous element is never
+                // closed while writeField opens a new one, producing unbalanced training XML.
+                String closingTrigger = label.startsWith("I-") ? "" : plainLabel;
+                testClosingTag(sb, closingTrigger, lastTag, addSpace, addEOL);
             }
 
             output = writeField(label, lastTag, tok, "<figure_head>", "<head>", addSpace, addEOL, 3);
@@ -271,7 +276,7 @@ public class TableParser extends AbstractParser {
                 }
                 sb.append(output);
             }
-            output = writeField(label, lastTag, tok, "<other>", "<other>", addSpace, addEOL, 2);
+            output = writeField(label, lastTag, tok, "<other>", "", addSpace, addEOL, 2);
             if (output != null) {
                 sb.append(output);
             }
@@ -322,7 +327,10 @@ public class TableParser extends AbstractParser {
                     buffer.append("<lb/>");
                 if (addSpace)
                     buffer.append(" ");
-                buffer.append("<other>\n");
+                // <other> content is emitted as bare text (no wrapping element), so we must
+                // not append an opening "<other>" tag here — doing so left a stray, never-closed
+                // tag in the generated table training data (unbalanced XML). Mirror FigureParser.
+                buffer.append("\n");
             } else if (lastTag.equals("<figure_head>")) {
                 if (addEOL)
                     buffer.append("<lb/>");
