@@ -1047,9 +1047,21 @@ public class FullTextParser extends AbstractParser {
                 if (blockIndex == dp2.getBlockPtr()) {
                     lastPos = dp2.getTokenBlockPos() + 1;
                     if (lastPos > tokens.size()) {
-                        LOGGER.warn("DocumentPointer for block " + blockIndex + " points to " +
-                            dp2.getTokenBlockPos() + " token, but block token size is " +
-                            tokens.size());
+                        // The end DocumentPointer references a token position beyond this
+                        // block's actual token count: a block/segmentation desynchronisation.
+                        // We clamp and carry on (the document is still processed), but log the
+                        // page and a text excerpt so the offending region is locatable in the
+                        // source PDF -- earlier reports of this could never be reproduced for
+                        // lack of any locating information (issue #716).
+                        String blockExcerpt = (localText == null) ? "" :
+                            localText.replaceAll("[\\n\\r\\t ]+", " ").trim();
+                        if (blockExcerpt.length() > 80) {
+                            blockExcerpt = blockExcerpt.substring(0, 80) + "...";
+                        }
+                        LOGGER.warn("DocumentPointer for block " + blockIndex + " (page " +
+                            block.getPageNumber() + ") points to token " + dp2.getTokenBlockPos() +
+                            ", but block token size is " + tokens.size() + "; clamping. " +
+                            "Block starts with: \"" + blockExcerpt + "\"");
                         lastPos = tokens.size();
                     }
                 }
