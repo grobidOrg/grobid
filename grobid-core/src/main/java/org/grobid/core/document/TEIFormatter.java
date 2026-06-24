@@ -1865,10 +1865,18 @@ public class TEIFormatter {
                         // the whole document (issue #1024).
                         if (matchingPosition.start > matchingPosition.end
                                 || matchingPosition.end > clusterTokens.size()) {
-                            LOGGER.warn("Skipping a malformed callout interval [" + matchingPosition.start
-                                    + ", " + matchingPosition.end + "] for " + type + " '"
-                                    + referenceInformation.getLeft() + "' (cluster size "
-                                    + clusterTokens.size() + ")");
+                            LOGGER.warn(
+                                    "Skipping a malformed callout interval ["
+                                            + matchingPosition.start
+                                            + ", "
+                                            + matchingPosition.end
+                                            + "] for "
+                                            + type
+                                            + " '"
+                                            + referenceInformation.getLeft()
+                                            + "' (cluster size "
+                                            + clusterTokens.size()
+                                            + ")");
                             continue;
                         }
 
