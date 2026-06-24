@@ -180,7 +180,12 @@ class FigureParser extends AbstractParser {
 
             String output;
             if (lastTag != null) {
-                testClosingTag(sb, plainLabel, lastTag, addSpace, addEOL);
+                // A label starting with "I-" marks the beginning of a NEW segment. Force the
+                // previous element to close even when the base label is unchanged (e.g. two
+                // consecutive <head> regions), otherwise the previous element is never closed
+                // while writeField opens a new one, producing unbalanced training XML.
+                String closingTrigger = label.startsWith("I-") ? "" : plainLabel;
+                testClosingTag(sb, closingTrigger, lastTag, addSpace, addEOL);
             }
 
             output = writeField(label, lastTag, tok, "<figure_head>", "<head>", addSpace, addEOL, 3);
@@ -290,11 +295,15 @@ class FigureParser extends AbstractParser {
                     buffer.append("</label>\n");
                     break;
                 case "<content>" :
+                    // Figure <content> is emitted as bare text (the writeField special-case
+                    // below does not open a "<content>" element, and the shipped figure
+                    // training corpus has no <content> element at all). Closing with
+                    // "</content>" therefore produced an unbalanced tag. Keep it bare like <other>.
                     if (addEOL)
                         buffer.append("<lb/>");
                     if (addSpace)
                         buffer.append(" ");
-                    buffer.append("</content>\n");
+                    buffer.append("\n");
                     break;
                 default :
                     res = false;
