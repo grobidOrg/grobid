@@ -79,6 +79,9 @@ public final class GrobidServiceApplication extends Application<GrobidServiceCon
         registration.addMapping("/metrics/prometheus");
         environment.jersey().setUrlPattern(RESOURCES + "/*");
 
+        // Application-level Prometheus counters for processed files and errors (multipart uploads).
+        environment.jersey().register(new GrobidMetricsFilter());
+
         String allowedOrigins = configuration.getGrobid().getCorsAllowedOrigins();
         String allowedMethods = configuration.getGrobid().getCorsAllowedMethods();
         String allowedHeaders = configuration.getGrobid().getCorsAllowedHeaders();

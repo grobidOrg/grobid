@@ -1,0 +1,22 @@
+# Local Prometheus config for testing GROBID's /metrics/prometheus endpoint.
+#
+# Run (Prometheus installed natively, e.g. `brew install prometheus`):
+#   prometheus --config.file=monitoring/prometheus.yml
+# then open http://localhost:9090
+#
+# Validate this file without starting the server:
+#   promtool check config monitoring/prometheus.yml
+
+global:
+  scrape_interval: 5s      # short interval so you see data quickly while testing
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: grobid
+    metrics_path: /metrics/prometheus
+    static_configs:
+      # GROBID's Dropwizard *admin* connector (grobid.yaml: server.adminConnectors port 8071),
+      # not the application connector on 8070.
+      - targets: ["localhost:8071"]
+        labels:
+          instance: grobid-local
