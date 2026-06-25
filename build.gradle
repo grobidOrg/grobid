@@ -432,9 +432,6 @@ project(":grobid-service") {
         implementation 'io.dropwizard.metrics:metrics-core:4.2.38'
         implementation 'io.dropwizard.metrics:metrics-servlets:4.2.38'
         implementation 'io.dropwizard:dropwizard-json-logging:5.0.1'
-        // Jetty 12 split utility servlets/filters into the ee10 environment artifact; needed for
-        // org.eclipse.jetty.ee10.servlets.CrossOriginFilter (CORS). Version managed by jetty-ee10-bom.
-        implementation 'org.eclipse.jetty.ee10:jetty-ee10-servlets'
 
         implementation "org.apache.pdfbox:pdfbox:2.0.36"
         implementation "io.prometheus:simpleclient_dropwizard:0.16.0"

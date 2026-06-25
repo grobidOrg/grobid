@@ -2,7 +2,9 @@ package org.grobid.service.main;
 
 import java.io.File;
 import java.util.Arrays;
-import java.util.EnumSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import com.google.inject.AbstractModule;
 import io.dropwizard.assets.AssetsBundle;
@@ -12,11 +14,9 @@ import io.dropwizard.core.setup.Environment;
 import io.dropwizard.forms.MultiPartBundle;
 import io.dropwizard.metrics.servlets.MetricsServlet;
 import io.prometheus.client.dropwizard.DropwizardExports;
-import jakarta.servlet.DispatcherType;
-import jakarta.servlet.FilterRegistration;
 import jakarta.servlet.ServletRegistration;
 import org.apache.commons.lang3.ArrayUtils;
-import org.eclipse.jetty.ee10.servlets.CrossOriginFilter;
+import org.eclipse.jetty.server.handler.CrossOriginHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import ru.vyarus.dropwizard.guice.GuiceBundle;
@@ -66,25 +66,36 @@ public final class GrobidServiceApplication extends Application<GrobidServiceCon
         registration.addMapping("/metrics/prometheus");
         environment.jersey().setUrlPattern(RESOURCES + "/*");
 
-        String allowedOrigins = configuration.getGrobid().getCorsAllowedOrigins();
-        String allowedMethods = configuration.getGrobid().getCorsAllowedMethods();
-        String allowedHeaders = configuration.getGrobid().getCorsAllowedHeaders();
-
-        // Enable CORS headers
-        final FilterRegistration.Dynamic cors = environment.servlets().addFilter("CORS", CrossOriginFilter.class);
-
-        // Configure CORS parameters
-        cors.setInitParameter(CrossOriginFilter.ALLOWED_ORIGINS_PARAM, allowedOrigins);
-        cors.setInitParameter(CrossOriginFilter.ALLOWED_METHODS_PARAM, allowedMethods);
-        cors.setInitParameter(CrossOriginFilter.ALLOWED_HEADERS_PARAM, allowedHeaders);
-
-        // Add URL mapping
-        cors.addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true, RESOURCES + "/*");
+        // Enable CORS via Jetty's CrossOriginHandler (replaces the removed-for-deprecation
+        // org.eclipse.jetty.ee10.servlets.CrossOriginFilter). The handler is inserted above the
+        // Dropwizard application context, so it applies to all served paths.
+        CrossOriginHandler cors = new CrossOriginHandler();
+        cors.setAllowedOriginPatterns(toSet(configuration.getGrobid().getCorsAllowedOrigins()));
+        cors.setAllowedMethods(toSet(configuration.getGrobid().getCorsAllowedMethods()));
+        cors.setAllowedHeaders(toSet(configuration.getGrobid().getCorsAllowedHeaders()));
+        // GROBID is a stateless API with no cookies/auth; "*" origins + credentials is insecure and
+        // rejected by browsers, so credentials are explicitly disabled.
+        cors.setAllowCredentials(false);
+        environment.getApplicationContext().insertHandler(cors);
 
         //Error handling
         //        environment.jersey().register(new GrobidExceptionMapper());
         //        environment.jersey().register(new GrobidServiceExceptionMapper());
         //        environment.jersey().register(new WebApplicationExceptionMapper());
+    }
+
+    /**
+     * Splits a comma-separated configuration value (e.g. "OPTIONS,GET,POST") into a set of
+     * trimmed, non-empty entries, preserving order, as expected by {@link CrossOriginHandler}.
+     */
+    private static Set<String> toSet(String csv) {
+        if (csv == null) {
+            return Set.of();
+        }
+        return Arrays.stream(csv.split(","))
+                .map(String::trim)
+                .filter(s -> !s.isEmpty())
+                .collect(Collectors.toCollection(LinkedHashSet::new));
     }
 
     // ========== static ==========
