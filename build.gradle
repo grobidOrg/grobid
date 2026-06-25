@@ -210,10 +210,10 @@ subprojects {
         implementation "black.ninia:jep:4.3.1"
         implementation 'com.github.pemistahl:lingua:1.2.2'
 
-        implementation "com.fasterxml.jackson.core:jackson-core:2.21.3"
-        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.3"
-        implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.21.3"
-        implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.3"
+        implementation "com.fasterxml.jackson.core:jackson-core:2.21.4"
+        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.4"
+        implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.21.4"
+        implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.4"
     }
 
     tasks.register('sourceJar', Jar) {

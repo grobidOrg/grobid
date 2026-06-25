@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Security
 - Remove the vulnerable JLine telnet server module from the classpath by depending on `jline-terminal` only instead of the `org.jline:jline` uber-jar pulled in transitively by `progressbar` (GHSA-47qp-hqvx-6r3f, GHSA-2r2c-cx56-8933).
+- Upgrade jackson (core, databind, afterburner, dataformat-yaml) to 2.21.4 to address CVE-2026-54513 (array-element type allowlist bypass in polymorphic type validation).
 
 ## [0.9.0] - 2026-04-07
 
