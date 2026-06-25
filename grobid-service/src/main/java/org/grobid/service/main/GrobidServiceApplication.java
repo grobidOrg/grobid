@@ -10,7 +10,6 @@ import io.dropwizard.core.Application;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
 import io.dropwizard.forms.MultiPartBundle;
-import io.prometheus.client.dropwizard.DropwizardExports;
 import io.prometheus.client.hotspot.DefaultExports;
 import io.prometheus.client.servlet.jakarta.exporter.MetricsServlet;
 import jakarta.servlet.DispatcherType;
@@ -68,7 +67,13 @@ public final class GrobidServiceApplication extends Application<GrobidServiceCon
         // scrape it (and Grafana can then dashboard/alert on it). Previously this endpoint was
         // wired to Dropwizard's JSON MetricsServlet, so it served the wrong format with mismatched
         // metric names (issue #920).
-        new DropwizardExports(environment.metrics()).register();
+        //
+        // GrobidDropwizardExports makes the bridged metrics idiomatic for Prometheus so that
+        // "promtool check metrics" stays clean: it snake_cases the camelCase Java metric names,
+        // drops Dropwizard's JVM gauge sets (redundant with the hotspot DefaultExports below and
+        // carrying promtool-rejected _count suffixes), and renames Jersey's "total" timers off the
+        // counter-reserved _total suffix.
+        new GrobidDropwizardExports(environment.metrics()).register();
         DefaultExports.initialize();
         ServletRegistration.Dynamic registration = environment.admin().addServlet("Prometheus", new MetricsServlet());
         registration.addMapping("/metrics/prometheus");
