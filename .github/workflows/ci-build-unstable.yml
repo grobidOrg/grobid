@@ -32,7 +32,7 @@ jobs:
         run: ./gradlew assemble test jacocoTestReport --info --stacktrace
 
       - name: Run Coveralls Gradle task
-        if: ${{ matrix.os == 'ubuntu-latest' }}
+        if: matrix.os == 'ubuntu-latest'
         run: ./gradlew coveralls --info --stacktrace
 
       - name: Publish Test Report
@@ -42,7 +42,7 @@ jobs:
           report_paths: '**/build/test-results/test/TEST-*.xml'
 
       - name: Coveralls GitHub Action
-        if: ${{ matrix.os == 'ubuntu-latest' }}
+        if: matrix.os == 'ubuntu-latest'
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
