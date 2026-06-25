@@ -491,7 +491,14 @@ project(":grobid-trainer") {
         }
         implementation project(':grobid-core')
         implementation "com.rockymadden.stringmetric:stringmetric-core_2.10:0.27.3"
-        implementation "me.tongfei:progressbar:0.9.5"
+        // progressbar pulls in the org.jline:jline uber-jar, which bundles the vulnerable
+        // jline-remote-telnet server (GHSA-47qp-hqvx-6r3f, GHSA-2r2c-cx56-8933). GROBID never
+        // starts a telnet server and progressbar only uses the terminal API, so we exclude the
+        // uber-jar and depend solely on jline-terminal, removing the telnet module entirely.
+        implementation("me.tongfei:progressbar:0.9.5") {
+            exclude group: 'org.jline', module: 'jline'
+        }
+        implementation "org.jline:jline-terminal:3.21.0"
 
         // logs — see grobid-core: slf4j 2.0.x needs logback 1.5.x for its ServiceLoader binding.
         implementation 'org.slf4j:slf4j-api:2.0.17'
