@@ -493,6 +493,11 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
                 } else {
                     output = writeField(label, lastTag, tok, "<other>", "", addSpace, addEOL, 2);
                     if (output != null) {
+                        // close any open <bibl> before emitting the <other> content,
+                        // otherwise the generated training XML is unbalanced (issue #1355)
+                        if (refOpen) {
+                            sb.append("</bibl>");
+                        }
                         sb.append(output);
                         refOpen = false;
                     }

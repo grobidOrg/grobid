@@ -29,7 +29,11 @@ jobs:
         run: ./gradlew spotlessCheck
         continue-on-error: false
       - name: Build and test
-        run: ./gradlew assemble test jacocoTestReport coveralls --info --stacktrace
+        run: ./gradlew assemble test jacocoTestReport --info --stacktrace
+
+      - name: Run Coveralls Gradle task
+        if: matrix.os == 'ubuntu-latest'
+        run: ./gradlew coveralls --info --stacktrace
 
       - name: Publish Test Report
         uses: mikepenz/action-junit-report@v4
@@ -38,7 +42,7 @@ jobs:
           report_paths: '**/build/test-results/test/TEST-*.xml'
 
       - name: Coveralls GitHub Action
-        if: matrix.os != 'macos-15-intel'
+        if: matrix.os == 'ubuntu-latest'
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
