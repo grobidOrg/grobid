@@ -49,6 +49,7 @@ nav:
     - 'Configuration': 'Configuration.md'
     - 'Consolidation service': 'Consolidation.md'
     - 'Specialized processes': 'Grobid-specialized-processes.md'
+    - 'Monitoring with Prometheus': 'Monitoring.md'
   - About:
     - 'Introduction': 'Introduction.md'
     - 'How GROBID works': 'Principles.md'
