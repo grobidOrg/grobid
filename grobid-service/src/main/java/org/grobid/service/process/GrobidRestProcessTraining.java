@@ -235,7 +235,9 @@ public class GrobidRestProcessTraining {
             // distinct models, so they are keyed separately and do not block each other.
             String modelKey = model.toLowerCase();
             if (!tryClaim(modelKey)) {
-                LOGGER.warn("Rejected training request for model '{}': a training for this model is already in progress.", model);
+                LOGGER.warn(
+                        "Rejected training request for model '{}': a training for this model is already in progress.",
+                        model);
                 return Response.status(Status.CONFLICT)
                         .entity("{\"error\": \"A training for model '" + model + "' is already in progress.\"}")
                         .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON + "; charset=UTF-8")
@@ -252,7 +254,8 @@ public class GrobidRestProcessTraining {
                 }
 
                 ExecutorService executorService = Executors.newFixedThreadPool(1);
-                TrainTask trainTask = new TrainTask(trainer, type, token, ratio, n, incremental, modelKey, modelsInTraining);
+                TrainTask trainTask = new TrainTask(trainer, type, token, ratio, n, incremental, modelKey,
+                        modelsInTraining);
                 FileUtils.writeStringToFile(new File(tokenPath + "/status"), "ongoing", "UTF-8");
                 executorService.submit(trainTask);
                 // Orderly shutdown so the worker thread terminates once the submitted training
@@ -307,7 +310,7 @@ public class GrobidRestProcessTraining {
         private final Set<String> registry;
 
         public TrainTask(AbstractTrainer trainer, String type, String token, double ratio, int n, boolean incremental,
-                         String modelKey, Set<String> registry) {
+                String modelKey, Set<String> registry) {
             this.trainer = trainer;
             this.type = type;
             this.token = token;
