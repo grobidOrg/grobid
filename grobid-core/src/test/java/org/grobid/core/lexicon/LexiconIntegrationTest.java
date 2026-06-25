@@ -415,4 +415,20 @@ public class LexiconIntegrationTest {
         assertThat(positions.get(0).start, is(4));
         assertThat(positions.get(0).end, is(6));
     }
+
+    /**
+     * Research infrastructure acronym-to-name mapping. Regression test for the map being
+     * loaded from research_infrastructures_map.txt (the ';'-delimited file) rather than
+     * the flat gazetteer research_infrastructures.txt, which left the mapping empty.
+     */
+    @Test
+    public void testGetOrganizationNamingInfo() throws Exception {
+        final List<Lexicon.OrganizationRecord> records = target.getOrganizationNamingInfo("EBRAINS");
+
+        assertNotNull(records);
+        assertThat(records, hasSize(1));
+        assertThat(records.get(0).name, is("EBRAINS"));
+        assertThat(records.get(0).fullName, is("European Brain ReseArch INfrastructureS"));
+        assertThat(records.get(0).lang, is("en"));
+    }
 }

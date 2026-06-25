@@ -833,7 +833,9 @@ public class Lexicon {
             // store some name mapping
             researchOrganizations = new TreeMap<>();
 
-            File file = getFile(infrastructureFilePath, "infrastructure names");
+            String infrastructureMapFilePath = GrobidProperties.getGrobidHomePath()
+                    + "/lexicon/organisations/research_infrastructures_map.txt";
+            File file = getFile(infrastructureMapFilePath, "infrastructure names");
             InputStream ist = null;
             BufferedReader dis = null;
             try {

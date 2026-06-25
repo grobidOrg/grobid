@@ -985,19 +985,30 @@ public class AffiliationAddressParser extends AbstractParser {
 
             String output = writeField(s1, lastTag0, s2, "<marker>", "<marker>", addSpace, 7);
             if (output != null) {
-                if (hasAddressTag) {
-                    bufferAffiliation.append("\t\t\t\t\t\t\t</address>\n");
+                // output != null implies writeField matched on s1, so s1 is non-null here; the
+                // explicit guard keeps that obvious to static analysis (CodeQL) and at runtime.
+                if (s1 != null && s1.startsWith("I-")) {
+                    // start of a new marker: it begins a new affiliation block, so close the
+                    // previous affiliation/address before opening a fresh <affiliation><marker>.
+                    if (hasAddressTag) {
+                        bufferAffiliation.append("\t\t\t\t\t\t\t</address>\n");
+                        hasAddressTag = false;
+                    }
+                    if (hasAffiliationTag) {
+                        bufferAffiliation.append("\t\t\t\t\t\t</affiliation>\n");
+                        hasAffiliationTag = false;
+                    }
+                    bufferAffiliation.append("\t\t\t\t\t\t<affiliation>\n" + output);
+                    hasAffiliationTag = true;
                     hasAddressTag = false;
+                    hasAddress = false;
+                    hasAffiliation = false;
+                } else {
+                    // continuation of the current marker: only append its text, so that a
+                    // multi-token marker stays inside the same <marker> element instead of
+                    // re-opening the affiliation and crossing the (still open) </marker>.
+                    bufferAffiliation.append(output);
                 }
-                if (hasAffiliationTag) {
-                    bufferAffiliation.append("\t\t\t\t\t\t</affiliation>\n");
-                    hasAffiliationTag = false;
-                }
-                bufferAffiliation.append("\t\t\t\t\t\t<affiliation>\n" + output);
-                hasAffiliationTag = true;
-                hasAddressTag = false;
-                hasAddress = false;
-                hasAffiliation = false;
                 lastTag = s1;
                 continue;
             } else {
