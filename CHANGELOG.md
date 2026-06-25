@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Security
 - Prevent command injection through crafted PDF file names in the non-server `pdfalto` path: the command is no longer interpolated into a `bash -c` string but passed as positional parameters and exec'd via `"$@"` (GHSA-mgxf-7mg7-qpmf).
+- Stop leaking a JVM thread per request on the `/api/modelTraining` endpoint by shutting down the per-request executor (GHSA-g2r5-4c8r-c84f).
 
 ## [0.9.0] - 2026-04-07
 

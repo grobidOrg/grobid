@@ -215,6 +215,10 @@ public class GrobidRestProcessTraining {
             TrainTask trainTask = new TrainTask(trainer, type, token, ratio, n, incremental);
             FileUtils.writeStringToFile(new File(tokenPath + "/status"), "ongoing", "UTF-8");
             executorService.submit(trainTask);
+            // Orderly shutdown so the worker thread terminates once the submitted training
+            // task completes. Without this the FixedThreadPool keeps its core thread alive
+            // indefinitely and every request would permanently leak one JVM thread (DoS).
+            executorService.shutdown();
 
             if (GrobidRestUtils.isResultNullOrEmpty(token)) {
                 // it should never be the case, but let's be conservative!
