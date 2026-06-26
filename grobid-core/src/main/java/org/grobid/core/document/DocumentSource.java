@@ -2,7 +2,6 @@ package org.grobid.core.document;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
@@ -173,18 +172,7 @@ public class DocumentSource {
                 tmpPathXML = processPdfaltoServerMode(pdfPath, tmpPathXML, cmd);
             } else {
                 if (!SystemUtils.IS_OS_WINDOWS && !SystemUtils.IS_OS_MAC) {
-                    cmd = Arrays.asList(
-                            "bash",
-                            "-c",
-                            "ulimit -Sv "
-                                    +
-                                    GrobidProperties.getPdfaltoMemoryLimitMb() * 1024
-                                    + " && "
-                                    + pdftoxml0
-                                    + " '"
-                                    + pdfPath
-                                    + "' "
-                                    + tmpPathXML);
+                    cmd = wrapWithUlimit(cmd, GrobidProperties.getPdfaltoMemoryLimitMb() * 1024L);
                 }
                 LOGGER.debug("Executing command: " + cmd);
 
@@ -212,6 +200,30 @@ public class DocumentSource {
                         + (System.currentTimeMillis() - time)
                         + "ms");
         return tmpPathXML;
+    }
+
+    /**
+     * Wrap an already tokenized command so that it runs under a memory {@code ulimit} on
+     * Unix-like systems. The command is passed to {@code bash} as positional parameters and
+     * exec'd via {@code "$@"}, so each argument (in particular the attacker-controllable PDF
+     * file name) is handed to the program verbatim and is never re-interpreted by the shell.
+     * <p>
+     * This deliberately avoids interpolating the file paths into the {@code bash -c} script
+     * string: a file name containing a single quote followed by shell syntax would otherwise
+     * break out of the quoting and inject arbitrary commands (command injection).
+     *
+     * @param cmd        the program and its arguments (e.g. {@code [pdfalto, -opt, in.pdf, out.xml]})
+     * @param memLimitKb the virtual memory limit in kilobytes for {@code ulimit -Sv}
+     * @return a new command list invoking {@code bash -c 'ulimit ... && exec "$@"'} over {@code cmd}
+     */
+    protected static List<String> wrapWithUlimit(List<String> cmd, long memLimitKb) {
+        List<String> bashCmd = new ArrayList<>();
+        bashCmd.add("bash");
+        bashCmd.add("-c");
+        bashCmd.add("ulimit -Sv " + memLimitKb + " && exec \"$@\"");
+        bashCmd.add("pdfalto"); // $0, used only as the script name in messages
+        bashCmd.addAll(cmd);
+        return bashCmd;
     }
 
     /**

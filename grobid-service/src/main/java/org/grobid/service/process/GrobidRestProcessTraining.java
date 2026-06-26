@@ -6,6 +6,8 @@ import java.nio.file.Path;
 import java.security.DigestInputStream;
 import java.security.MessageDigest;
 import java.util.NoSuchElementException;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.zip.ZipEntry;
@@ -41,8 +43,31 @@ public class GrobidRestProcessTraining {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GrobidRestProcessTraining.class);
 
+    /**
+     * Set of models (by lowercase name) whose training is currently running. Used to reject a
+     * new training request for a model that is already being trained. The class is a singleton,
+     * so this instance field is shared across all requests in the JVM. A ConcurrentHashMap-backed
+     * set gives an atomic claim ({@code add} returns false when the key is already present).
+     */
+    private final Set<String> modelsInTraining = ConcurrentHashMap.newKeySet();
+
     @Inject
     public GrobidRestProcessTraining() {
+    }
+
+    /**
+     * Atomically claim the in-training slot for a model. Returns {@code false} if a training for
+     * this model is already running (the slot was not claimed by this caller).
+     */
+    boolean tryClaim(String modelKey) {
+        return modelsInTraining.add(modelKey);
+    }
+
+    /**
+     * Release the in-training slot for a model so it can be trained again.
+     */
+    void release(String modelKey) {
+        modelsInTraining.remove(modelKey);
     }
 
     /**
@@ -205,16 +230,44 @@ public class GrobidRestProcessTraining {
             File home = GrobidProperties.getInstance().getGrobidHomePath();
             AbstractTrainer trainer = getTrainer(model);
 
-            String tokenPath = home.getAbsolutePath() + "/training-history/" + token;
-            File tokenDir = new File(tokenPath);
-            if (!tokenDir.exists()) {
-                tokenDir.mkdirs();
+            // Reject the request if a training for the same model is already running. Flavor
+            // variants (e.g. "header" vs "header-light") write different model files and are
+            // distinct models, so they are keyed separately and do not block each other.
+            String modelKey = model.toLowerCase();
+            if (!tryClaim(modelKey)) {
+                LOGGER.warn(
+                        "Rejected training request for model '{}': a training for this model is already in progress.",
+                        model);
+                return Response.status(Status.CONFLICT)
+                        .entity("{\"error\": \"A training for model '" + model + "' is already in progress.\"}")
+                        .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON + "; charset=UTF-8")
+                        .header("Access-Control-Allow-Origin", "*")
+                        .header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
+                        .build();
             }
 
-            ExecutorService executorService = Executors.newFixedThreadPool(1);
-            TrainTask trainTask = new TrainTask(trainer, type, token, ratio, n, incremental);
-            FileUtils.writeStringToFile(new File(tokenPath + "/status"), "ongoing", "UTF-8");
-            executorService.submit(trainTask);
+            try {
+                String tokenPath = home.getAbsolutePath() + "/training-history/" + token;
+                File tokenDir = new File(tokenPath);
+                if (!tokenDir.exists()) {
+                    tokenDir.mkdirs();
+                }
+
+                ExecutorService executorService = Executors.newFixedThreadPool(1);
+                TrainTask trainTask = new TrainTask(trainer, type, token, ratio, n, incremental, modelKey,
+                        modelsInTraining);
+                FileUtils.writeStringToFile(new File(tokenPath + "/status"), "ongoing", "UTF-8");
+                executorService.submit(trainTask);
+                // Orderly shutdown so the worker thread terminates once the submitted training
+                // task completes. Without this the FixedThreadPool keeps its core thread alive
+                // indefinitely and every request would permanently leak one JVM thread (DoS).
+                executorService.shutdown();
+            } catch (Exception e) {
+                // The worker never took ownership of the claim (it releases it on completion),
+                // so release it here to avoid leaving the model permanently blocked.
+                release(modelKey);
+                throw e;
+            }
 
             if (GrobidRestUtils.isResultNullOrEmpty(token)) {
                 // it should never be the case, but let's be conservative!
@@ -253,14 +306,19 @@ public class GrobidRestProcessTraining {
         private int n = 10;
         private double ratio = 1.0;
         private boolean incremental = false;
+        private final String modelKey;
+        private final Set<String> registry;
 
-        public TrainTask(AbstractTrainer trainer, String type, String token, double ratio, int n, boolean incremental) {
+        public TrainTask(AbstractTrainer trainer, String type, String token, double ratio, int n, boolean incremental,
+                String modelKey, Set<String> registry) {
             this.trainer = trainer;
             this.type = type;
             this.token = token;
             this.ratio = ratio;
             this.n = n;
             this.incremental = incremental;
+            this.modelKey = modelKey;
+            this.registry = registry;
         }
 
         @Override
@@ -305,8 +363,12 @@ public class GrobidRestProcessTraining {
                 if (results != null) {
                     FileUtils.writeStringToFile(new File(tokenPath + "/report.txt"), results, "UTF-8");
                 }
-            } catch (IOException e) {
-                LOGGER.error("Failed to write training results for token " + token, e);
+            } catch (Exception e) {
+                LOGGER.error("Training failed for token " + token, e);
+            } finally {
+                // Release the per-model lock so the same model can be trained again, even if the
+                // training above failed (e.g. a runtime exception from the underlying trainer).
+                registry.remove(this.modelKey);
             }
         }
     }
