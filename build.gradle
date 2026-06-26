@@ -195,7 +195,6 @@ subprojects {
         testImplementation "org.xmlunit:xmlunit-legacy:2.10.3"
         testImplementation "org.hamcrest:hamcrest-all:1.3"
         testImplementation 'org.jetbrains.kotlin:kotlin-test'
-        testImplementation "io.mockk:mockk:1.13.17"
 
         implementation "com.cybozu.labs:langdetect:1.1-20120112"
         implementation "com.rockymadden.stringmetric:stringmetric-core_2.11:0.27.4"
@@ -204,16 +203,14 @@ subprojects {
         implementation "org.apache.commons:commons-lang3:3.20.0"
         implementation "org.apache.commons:commons-collections4:4.5.0"
         implementation 'org.apache.commons:commons-text:1.15.0'
-        implementation "commons-dbutils:commons-dbutils:1.8.1"
         implementation "com.google.guava:guava:33.6.0-jre"
         implementation "org.apache.httpcomponents:httpclient:4.5.14"
         implementation "black.ninia:jep:4.3.1"
         implementation 'com.github.pemistahl:lingua:1.2.2'
 
-        implementation "com.fasterxml.jackson.core:jackson-core:2.21.3"
-        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.3"
-        implementation "com.fasterxml.jackson.module:jackson-module-afterburner:2.21.3"
-        implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.3"
+        implementation "com.fasterxml.jackson.core:jackson-core:2.21.4"
+        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.4"
+        implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.4"
     }
 
     tasks.register('sourceJar', Jar) {
@@ -280,7 +277,10 @@ project("grobid-core") {
         implementation "org.apache.pdfbox:pdfbox:2.0.36"
 
         api "xerces:xercesImpl:2.12.2"
-        api "net.arnx:jsonic:1.3.10"
+        // jsonic has no direct GROBID usage, but the bundled langdetect localLib (the default
+        // language detector) needs it at runtime to parse its language profiles. Keep it as a
+        // runtime-only dependency rather than exposing it on grobid-core's compile API.
+        runtimeOnly "net.arnx:jsonic:1.3.10"
         api "net.sf.saxon:Saxon-HE:9.6.0-9"
         api "xom:xom:1.3.9"
         api 'javax.xml.bind:jaxb-api:2.3.0'
@@ -432,12 +432,8 @@ project(":grobid-service") {
         implementation 'io.dropwizard.metrics:metrics-core:4.2.38'
         implementation 'io.dropwizard.metrics:metrics-servlets:4.2.38'
         implementation 'io.dropwizard:dropwizard-json-logging:5.0.1'
-        // Jetty 12 split utility servlets/filters into the ee10 environment artifact; needed for
-        // org.eclipse.jetty.ee10.servlets.CrossOriginFilter (CORS). Version managed by jetty-ee10-bom.
-        implementation 'org.eclipse.jetty.ee10:jetty-ee10-servlets'
 
         implementation "org.apache.pdfbox:pdfbox:2.0.36"
-        implementation "javax.activation:activation:1.1.1"
         implementation "io.prometheus:simpleclient_dropwizard:0.16.0"
         implementation "io.prometheus:simpleclient_servlet:0.16.0"
     }
@@ -490,8 +486,14 @@ project(":grobid-trainer") {
             }
         }
         implementation project(':grobid-core')
-        implementation "com.rockymadden.stringmetric:stringmetric-core_2.10:0.27.3"
-        implementation "me.tongfei:progressbar:0.9.5"
+        // progressbar pulls in the org.jline:jline uber-jar, which bundles the vulnerable
+        // jline-remote-telnet server (GHSA-47qp-hqvx-6r3f, GHSA-2r2c-cx56-8933). GROBID never
+        // starts a telnet server and progressbar only uses the terminal API, so we exclude the
+        // uber-jar and depend solely on jline-terminal, removing the telnet module entirely.
+        implementation("me.tongfei:progressbar:0.9.5") {
+            exclude group: 'org.jline', module: 'jline'
+        }
+        implementation "org.jline:jline-terminal:3.21.0"
 
         // logs — see grobid-core: slf4j 2.0.x needs logback 1.5.x for its ServiceLoader binding.
         implementation 'org.slf4j:slf4j-api:2.0.17'
