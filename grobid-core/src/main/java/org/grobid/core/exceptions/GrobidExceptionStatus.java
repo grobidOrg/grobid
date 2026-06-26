@@ -9,5 +9,6 @@ public enum GrobidExceptionStatus {
     NO_BLOCKS,
     PDFALTO_CONVERSION_FAILURE,
     TOO_MANY_TOKENS,
+    MEMORY_LIMIT_EXCEEDED,
     GENERAL
 }

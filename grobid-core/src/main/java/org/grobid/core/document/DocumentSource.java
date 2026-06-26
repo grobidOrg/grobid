@@ -28,6 +28,8 @@ public class DocumentSource {
     private static final int MISSING_LIBXML2 = 127;
     private static final int MISSING_PDFALTO = 126;
     public static final int PDFALTO_FILES_AMOUNT_LIMIT = 5000;
+    // how often pdfalto's resident memory is sampled while it runs, to enforce the memory ceiling
+    private static final long MEMORY_POLL_INTERVAL_MS = 250L;
 
     private File pdfFile;
     private File xmlFile;
@@ -249,11 +251,30 @@ public class DocumentSource {
         worker.start();
 
         try {
-            if (timeout != null) {
-                worker.join(timeout);
-            } else {
-                worker.join(GrobidProperties.getPdfaltoTimeoutMs()); // max 50 second even without predefined
-                // timeout
+            long effectiveTimeoutMs = (timeout != null) ? timeout : GrobidProperties.getPdfaltoTimeoutMs();
+            // Enforce a resident-memory (RSS) ceiling by polling while pdfalto runs. This works on every
+            // platform - notably macOS, where the shell `ulimit -Sv` cannot be used (it caps virtual
+            // address space, which modern processes over-reserve, so any limit would fail every PDF).
+            long memLimitBytes = (long) GrobidProperties.getPdfaltoMemoryLimitMb() * 1024L * 1024L;
+            long deadline = System.currentTimeMillis() + effectiveTimeoutMs;
+            while (worker.getExitStatus() == null) {
+                long remaining = deadline - System.currentTimeMillis();
+                if (remaining <= 0) {
+                    break; // overall timeout reached, handled by the null-exit branch below
+                }
+                worker.join(Math.min(MEMORY_POLL_INTERVAL_MS, remaining));
+                if (worker.getExitStatus() != null) {
+                    break; // pdfalto finished
+                }
+                if (memLimitBytes > 0 && worker.currentRssKb() * 1024L > memLimitBytes) {
+                    tmpPathXML = null;
+                    worker.killProcess();
+                    close(true, true, true);
+                    throw new GrobidException(
+                            "PDF to XML conversion exceeded the memory limit of "
+                                    + GrobidProperties.getPdfaltoMemoryLimitMb() + " MB",
+                            GrobidExceptionStatus.MEMORY_LIMIT_EXCEEDED);
+                }
             }
             if (worker.getExitStatus() == null) {
                 tmpPathXML = null;
