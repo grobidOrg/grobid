@@ -52,7 +52,7 @@ You can check whether the service is up and running by opening the following URL
 The service provides also an admin console, reachable at <http://yourhost:8071> where some additional checks like ping, metrics, hearthbeat are available.
 We recommend, in particular to have a look at the metrics (using the [Metric library](https://metrics.dropwizard.io/3.1.0/getting-started/)) which are providing the rate of execution as well as the throughput of each entry point.
 
-In addition, [Prometheus](https://prometheus.io/) format export metrics are available at <http://yourhost:8071/metrics/prometheus>.
+In addition, metrics in [Prometheus](https://prometheus.io/) exposition format are available at <http://yourhost:8071/metrics/prometheus>. This includes both the application metrics (rate/throughput per entry point) and JVM/process metrics (heap, GC, threads, CPU). A Prometheus server can scrape this endpoint and the metrics can then be visualised and alerted on in [Grafana](https://grafana.com/). See [Monitoring with Prometheus](Monitoring.md) for a step-by-step setup.  
 
 ## Configure the server
 
@@ -868,6 +868,8 @@ The following web services can be used to launch the training of a particular mo
 
 Launch a training for a given model. The service return back a training token (as a string) to be used to follow the advancement of the training and eventually get back the associated evaluation.
 
+Only one training per model can run at a time: if a training for the same model is already in progress, the request is rejected with a `409 Conflict`. A different model (or a different flavor, e.g. `header` and `header-light`) can still be trained concurrently.
+
 |   method  |  request type       | response type        |  parameters  | requirement   |   description             |
 |---        |---                  |---                   |---           |---            |---                        |
 | POST | application/x-www-form-urlencoded |  application/json |   model      |   required    | name of the model to train  |
@@ -889,6 +891,7 @@ Response status codes:
 |---                   |---                                                     |
 |         200          |     Successful operation.                              |
 |         400          |     Wrong request, missing or invalid model name, invalid optional parameter, missing header  |
+|         409          |     A training for the same model is already in progress.  |
 |         500          |     Indicate an internal service error, further described by a provided message           |
 
 

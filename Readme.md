@@ -1,7 +1,7 @@
 # GROBID
 
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
-[![Coverage Status](https://coveralls.io/repos/kermitt2/grobid/badge.svg)](https://coveralls.io/r/kermitt2/grobid)
+[![Coverage Status](https://coveralls.io/repos/github/grobidOrg/grobid/badge.svg?branch=master)](https://coveralls.io/github/grobidOrg/grobid?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/grobid/badge/?version=latest)](https://readthedocs.org/projects/grobid/?badge=latest)
 [![GitHub release](https://img.shields.io/github/release/grobidOrg/grobid.svg)](https://github.com/grobidOrg/grobid/releases/)
 [![Demo grobidOrg-grobid.hf.space](https://img.shields.io/website-up-down-green-red/https/grobidOrg-grobid.hf.space.svg)](https://grobidOrg-grobid.hf.space)

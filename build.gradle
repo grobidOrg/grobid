@@ -435,7 +435,8 @@ project(":grobid-service") {
 
         implementation "org.apache.pdfbox:pdfbox:2.0.36"
         implementation "io.prometheus:simpleclient_dropwizard:0.16.0"
-        implementation "io.prometheus:simpleclient_servlet:0.16.0"
+        implementation "io.prometheus:simpleclient_servlet_jakarta:0.16.0"
+        implementation "io.prometheus:simpleclient_hotspot:0.16.0"
     }
 
     shadowJar {
