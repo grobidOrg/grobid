@@ -10,6 +10,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Lexicon: introduced `Lexicon.builder()` to optionally pre-load chosen gazetteers *eagerly* (`.withDefaults()`, `.withJournals()`, `.withFunders()`, `.withOrganisations()`, etc.). Loading stays **lazy by default**: any gazetteer not named in the builder loads transparently on first lookup, so a `Lexicon` from any entry point is always fully functional and never throws for a missing gazetteer — `withX()` only controls *when* a gazetteer loads, not whether a lookup succeeds. `withDefaults()` eagerly loads the original constructor's set (wordforms, people, countries). `Lexicon.getInstance()` is now `@Deprecated` (prefer the builder) but its behavior is unchanged: eager wordforms/people/countries, everything else lazy.
 - Lexicon: added 4 missing ISO 3166-1 country codes (BQ, CW, SS, SX) and migrated AN (Netherlands Antilles) to its ISO 3166-3 transitional form ANHH.
 
+### Security
+- Prevent command injection through crafted PDF file names in the non-server `pdfalto` path: the command is no longer interpolated into a `bash -c` string but passed as positional parameters and exec'd via `"$@"` (GHSA-mgxf-7mg7-qpmf).
+- Stop leaking a JVM thread per request on the `/api/modelTraining` endpoint by shutting down the per-request executor (GHSA-g2r5-4c8r-c84f).
+- Remove the vulnerable JLine telnet server module from the classpath by depending on `jline-terminal` only instead of the `org.jline:jline` uber-jar pulled in transitively by `progressbar` (GHSA-47qp-hqvx-6r3f, GHSA-2r2c-cx56-8933).
+- Upgrade jackson (core, databind, afterburner, dataformat-yaml) to 2.21.4 to address CVE-2026-54513 (array-element type allowlist bypass in polymorphic type validation).
+
 ## [0.9.0] - 2026-04-07
 
 ### Added

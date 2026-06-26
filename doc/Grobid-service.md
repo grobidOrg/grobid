@@ -1,10 +1,10 @@
 # GROBID Service API
 
-The GROBID Web API provides a simple and efficient way to use the tool. A service console is available to test GROBID in a human friendly manner. For production and benchmarking, we strongly recommend to use this web service mode on a multi-core machine and to avoid running GROBID in the batch mode.  
+The GROBID Web API provides a simple and efficient way to use the tool. A service console is available to test GROBID in a human friendly manner. For production and benchmarking, we strongly recommend to use this web service mode on a multi-core machine and to avoid running GROBID in the batch mode.
 
 ## Start the server with Docker
 
-This is the recommended and standard way to run the Grobid web services, see [here](getting_started.md). 
+This is the recommended and standard way to run the Grobid web services, see [here](getting_started.md).
 
 ## Start a development server with Gradle
 
@@ -20,7 +20,7 @@ The following command will start the server on the default port __8070__:
 
 ## Install and run the service as standalone application
 
-From a development installation, you can also build and install the service as a standalone service - here let's supposed the destination directory is grobid-installation: 
+From a development installation, you can also build and install the service as a standalone service - here let's supposed the destination directory is grobid-installation:
 
 ```console
 ./gradlew clean assemble
@@ -52,28 +52,7 @@ You can check whether the service is up and running by opening the following URL
 The service provides also an admin console, reachable at <http://yourhost:8071> where some additional checks like ping, metrics, hearthbeat are available.
 We recommend, in particular to have a look at the metrics (using the [Metric library](https://metrics.dropwizard.io/3.1.0/getting-started/)) which are providing the rate of execution as well as the throughput of each entry point.
 
-In addition, [Prometheus](https://prometheus.io/) format export metrics are available at <http://yourhost:8071/metrics/prometheus>. This is a **pull**-based endpoint: a Prometheus server scrapes it on an interval.
-
-### Push-based metrics export (OTLP)
-
-For environments where a metrics backend cannot reach the service to scrape it (containers behind NAT, ephemeral/batch runs), GROBID can instead **push** metrics over [OTLP](https://opentelemetry.io/docs/specs/otlp/) to an OpenTelemetry Collector, [Grafana Alloy](https://grafana.com/docs/alloy/latest/)/Agent, or a hosted backend such as Grafana Cloud (which Grafana then dashboards). Note that Grafana itself does not ingest metrics — it queries a time-series store (Prometheus, Mimir, Grafana Cloud, …); OTLP pushes into that store.
-
-When enabled, the service periodically exports JVM/process runtime metrics (heap, GC, threads, CPU, classes). It is **disabled by default**; configure it under `grobid.otlp` in `grobid-home/config/grobid.yaml`:
-
-```yaml
-grobid:
-  otlp:
-    enabled: true
-    endpoint: "http://localhost:4318"   # base URL; 4318 for http/protobuf (the "/v1/metrics" path is added automatically), 4317 for grpc
-    protocol: "http/protobuf"           # or "grpc"
-    intervalSeconds: 60
-    serviceName: "grobid-service"
-    # extra headers for backend auth, e.g. Grafana Cloud:
-    #headers:
-    #  Authorization: "Basic <base64 of instanceID:apiToken>"
-```
-
-The pull (Prometheus) and push (OTLP) paths are independent — you can enable either, both, or neither.
+In addition, metrics in [Prometheus](https://prometheus.io/) exposition format are available at <http://yourhost:8071/metrics/prometheus>. This includes both the application metrics (rate/throughput per entry point) and JVM/process metrics (heap, GC, threads, CPU). A Prometheus server can scrape this endpoint and the metrics can then be visualised and alerted on in [Grafana](https://grafana.com/). The service can also **push** metrics over OTLP (e.g. to Grafana Cloud) instead of being scraped. See [Monitoring with Prometheus](Monitoring.md) for a step-by-step setup of both the pull and push paths.  
 
 ## Configure the server
 
@@ -81,25 +60,25 @@ If required, modify the file under `grobid/grobid-home/config/grobid.yaml` for s
 
 See the [configuration page](Configuration.md) for details on how to set the different parameters of the `grobid.yaml` configuration file. Service and logging parameters are also set in this configuration file.
 
-If Docker is used, see [here](Grobid-docker.md#configure-using-the-yaml-config-file) on how to start a Grobid container with a modified configuration file. 
+If Docker is used, see [here](Grobid-docker.md#configure-using-the-yaml-config-file) on how to start a Grobid container with a modified configuration file.
 
-### Model loading strategy 
-You can choose to load all the models at the start of the service or lazily when a model is used the first time. 
+### Model loading strategy
+You can choose to load all the models at the start of the service or lazily when a model is used the first time.
 Preloading all the models at server start is the default setting. Loading all models at startup will slow down the start of the server and will use more memory than the lazy mode in case only a few services will be used. You can switch to lazy loading of the model:
 
 ```yaml
 grobid:
-  # for **service only**: how to load the models, 
-  # false -> models are loaded when needed, avoiding putting in memory useless models (only in case of CRF) but slow down 
+  # for **service only**: how to load the models,
+  # false -> models are loaded when needed, avoiding putting in memory useless models (only in case of CRF) but slow down
   #          significantly the service at first call
-  # true -> all the models are loaded into memory at the server startup (default), slow the start of the services 
+  # true -> all the models are loaded into memory at the server startup (default), slow the start of the services
   #         and models not used will take some more memory (only in case of CRF), but server is immediately warm and ready
   modelPreload: true
-```  
+```
 
 ## Errors handling
 
-The structure of errors is organised as follows: 
+The structure of errors is organised as follows:
 
 | HTTP Status code  | reason                                                                                    |
 |-------------------|-------------------------------------------------------------------------------------------|
@@ -109,8 +88,8 @@ The structure of errors is organised as follows:
 | 500               | Indicate an internal service error, further described by a provided message               |
 | 503               | The service is not available, which usually means that all the threads are currently used |
 
-However, there are some specific errors related to the processing that should be considered. 
-The following table provides the Grobid error codes, the related HTTPS error and a description and suggestion/explanation:   
+However, there are some specific errors related to the processing that should be considered.
+The following table provides the Grobid error codes, the related HTTPS error and a description and suggestion/explanation:
 
 | Error Code                    | HTTP Status Code            | Description                                                                                         | Possible Cause / Suggested Action                                                          |
 |-------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
@@ -125,8 +104,8 @@ The following table provides the Grobid error codes, the related HTTPS error and
 | `PDFALTO_CONVERSION_FAILURE`  | 500 (Internal Server Error) | The PDF could not be converted by pdfalto (damaged file or pdfalto bug).                            | Try opening the PDF manually; if valid, report the issue with the file.                    |
 
 !!! tip
-    - "Blocks" refer to logical text regions detected in the PDF (e.g., paragraphs, headers).  
-    - "Tokens" refer to individual words or symbols.  
+    - "Blocks" refer to logical text regions detected in the PDF (e.g., paragraphs, headers).
+    - "Tokens" refer to individual words or symbols.
     - "Tagging" refers to the process of assigning labels to tokens using statistical models.
     - When **reporting issues** related to the error of type `GENERAL`, please **provide as much detail as possible**, such as input PDF document, log files.
 
@@ -139,7 +118,7 @@ The configuration can be modified, for example to restrict origin, methods and h
 grobid:
   corsAllowedOrigins: "grobid.com"
   corsAllowedMethods: "OPTIONS,GET,PUT,POST,DELETE,HEAD"
-  corsAllowedHeaders: "X-Requested-With,Content-Type,Accept,Origin"  
+  corsAllowedHeaders: "X-Requested-With,Content-Type,Accept,Origin"
 ```
 
 ## Clients for GROBID Web Services
@@ -191,7 +170,7 @@ The consolidation parameters (`consolidateHeader`, `consolidateCitations`, `cons
 * `1`, means consolidation against CrossRef/biblio-glutton and update of metadata: when we have a DOI match, the publisher metadata are combined with the metadata extracted from the PDF, possibly correcting them
 * `2`, means consolidation against CrossRef/biblio-glutton and, if matching, addition of the DOI only
 
-The consolidation for header can use a fourth value (`3`), restricting the consolidation to the usage of DOI only, if a DOI has been extracted in the header section. 
+The consolidation for header can use a fourth value (`3`), restricting the consolidation to the usage of DOI only, if a DOI has been extracted in the header section.
 
 ### PDF to TEI conversion services
 
@@ -213,7 +192,7 @@ Extract the header of the input PDF document, normalize it and convert it into a
 |           |                       |                   | `models`                 | optional         | Comma-separated list of model names to include in the debug response (e.g. `segmentation,header`). Only meaningful when `debugMode` is enabled. The pipeline still runs in full; this only filters the response. Unknown model names yield `400`. |
 
 
-Use `Accept: application/x-bibtex` to retrieve BibTeX format instead of XML TEI. 
+Use `Accept: application/x-bibtex` to retrieve BibTeX format instead of XML TEI.
 
 However, please bear in mind that the TEI XML format is much richer and structured, it should be preferred if there is no particular reason to use BibTeX, so we recommend to always use `Accept: application/xml`.
 
@@ -771,7 +750,7 @@ which will return:
 
 #### /api/processCitationPatentST36
 
-Extract and parse the patent and non patent citations in the description of a patent publication encoded in ST.36. Results are returned as a list of TEI citations. 
+Extract and parse the patent and non patent citations in the description of a patent publication encoded in ST.36. Results are returned as a list of TEI citations.
 
 |  method   |  request type         |  response type     |  parameters            |  requirement  |  description  |
 |---        |---                    |---                 |---                     |---            |---            |
@@ -835,9 +814,9 @@ curl --form input=@/home/lopez/grobid/grobid-core/src/test/resources/s/006271747
 
 #### /api/processCitationPatentPDF
 
-Extract and parse the patent and non patent citations in the description of a patent publication sent as PDF. Results are returned as a list of TEI citations. Note that the text layer must be available in the PDF to be processed (which is, surprisingly in this century, very rarely the case with the PDF available from the main patent offices - however the patent publications that can be downloaded from Google Patents for instance have been processed by a good quality OCR). 
+Extract and parse the patent and non patent citations in the description of a patent publication sent as PDF. Results are returned as a list of TEI citations. Note that the text layer must be available in the PDF to be processed (which is, surprisingly in this century, very rarely the case with the PDF available from the main patent offices - however the patent publications that can be downloaded from Google Patents for instance have been processed by a good quality OCR).
 
-Extract and parse the patent and non patent citations in the description of a patent encoded in ST.36. Results are returned as a list of TEI citations. 
+Extract and parse the patent and non patent citations in the description of a patent encoded in ST.36. Results are returned as a list of TEI citations.
 
 |  method   |  request type         |  response type     |  parameters            |  requirement  |  description  |
 |---        |---                    |---                 |---                     |---            |---            |
@@ -887,7 +866,9 @@ The following web services can be used to launch the training of a particular mo
 
 #### /api/modelTraining
 
-Launch a training for a given model. The service return back a training token (as a string) to be used to follow the advancement of the training and eventually get back the associated evaluation. 
+Launch a training for a given model. The service return back a training token (as a string) to be used to follow the advancement of the training and eventually get back the associated evaluation.
+
+Only one training per model can run at a time: if a training for the same model is already in progress, the request is rejected with a `409 Conflict`. A different model (or a different flavor, e.g. `header` and `header-light`) can still be trained concurrently.
 
 |   method  |  request type       | response type        |  parameters  | requirement   |   description             |
 |---        |---                  |---                   |---           |---            |---                        |
@@ -910,6 +891,7 @@ Response status codes:
 |---                   |---                                                     |
 |         200          |     Successful operation.                              |
 |         400          |     Wrong request, missing or invalid model name, invalid optional parameter, missing header  |
+|         409          |     A training for the same model is already in progress.  |
 |         500          |     Indicate an internal service error, further described by a provided message           |
 
 
@@ -945,7 +927,7 @@ curl -v -X POST -d "token=Fq2WYPw5M6" localhost:8070/api/trainingResult
 
 #### /api/model
 
-Get a model in the form of an archive (`.zip`), given a model name. 
+Get a model in the form of an archive (`.zip`), given a model name.
 
 |   method  |  request type       | response type        |  parameters  | requirement   |   description             |
 |---        |---                  |---                   |---           |---            |---                        |
@@ -973,9 +955,9 @@ or with a GET query:
 curl -v -X GET localhost:8070/api/model?model=date > model.zip
 ```
 
-#### Create training data 
+#### Generate training data
 
-Generate the training data for the grobid models for a PDF document provided in input. 
+Generate the training data for the grobid models for a PDF document provided in input.
 The service will return a ZIP archive with the training data in TEI XML format which may need to be corrected, because it can be used.
 
 
@@ -1022,14 +1004,14 @@ grobid:
   # maximum concurrency allowed to GROBID server for processing parallel requests - change it according to your CPU/GPU capacities
   # for a production server running only GROBID, set the value slightly above the available number of threads of the server
   # to get best performance and security
-  concurrency: 10 
+  concurrency: 10
 ```
 
 The threads in GROBID service are managed as a pool. When processing a document, the service will request a thread from this pool, and release it to the pool after completion of the request. If all the threads present in the pool are used, it is possible to set the maximum amount of time (in seconds) the request for a thread will wait before considering that no thread will be available and return a http code `503` to the client:
 
 ```yaml
 grobid:
-  # when the pool is full, for queries waiting for the availability of a Grobid engine, this is the maximum time wait to try 
+  # when the pool is full, for queries waiting for the availability of a Grobid engine, this is the maximum time wait to try
   # to get an engine (in seconds) - normally never change it
   poolMaxWait: 1
 ```

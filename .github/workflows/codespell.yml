@@ -5,12 +5,27 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  codespell:
+  # Automatic check on every push/PR: documentation only (fast, low false-positive surface).
+  codespell-docs:
+    if: github.event_name != 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: codespell-project/actions-codespell@v2
+        with:
+          path: doc Readme.md CHANGELOG.md
+          check_filenames: true
+          check_hidden: true
+
+  # Full-repository check: run manually only (Actions tab → Run workflow).
+  codespell-full:
+    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

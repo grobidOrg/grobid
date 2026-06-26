@@ -834,29 +834,31 @@ public class ReferenceExtractor implements Closeable {
                 int k = 0;
                 List<BiblioItem> bibResults = parsers.getCitationParser()
                         .processingStringMultiple(allReferencesNPL, consolidate);
-                for (String ref : allReferencesNPL) {
-                    BiblioItem result = bibResults.get(k);
-                    if (result == null) {
+                if (bibResults != null) {
+                    for (String ref : allReferencesNPL) {
+                        BiblioItem result = bibResults.get(k);
+                        if (result == null) {
+                            k++;
+                            continue;
+                        }
+                        BibDataSet bds = new BibDataSet();
+                        result.setReference(ref);
+                        bds.setResBib(result);
+                        bds.setRawBib(ref);
+                        bds.addOffset(allOffsetsNPL.get(k).intValue());
+                        bds.setConfidence(allProbNPL.get(k).doubleValue());
+                        articles.add(bds);
+                        //allIndexSegmentNPL.add(localIndexSegmentNPL.get(k));
+
+                        List<BibDataSet> localList = articlesBySegment.get(localIndexSegmentNPL.get(k));
+                        if (localList == null) {
+                            localList = new ArrayList<>();
+                        }
+                        localList.add(bds);
+                        articlesBySegment.put(localIndexSegmentNPL.get(k), localList);
+
                         k++;
-                        continue;
                     }
-                    BibDataSet bds = new BibDataSet();
-                    result.setReference(ref);
-                    bds.setResBib(result);
-                    bds.setRawBib(ref);
-                    bds.addOffset(allOffsetsNPL.get(k).intValue());
-                    bds.setConfidence(allProbNPL.get(k).doubleValue());
-                    articles.add(bds);
-                    //allIndexSegmentNPL.add(localIndexSegmentNPL.get(k));
-
-                    List<BibDataSet> localList = articlesBySegment.get(localIndexSegmentNPL.get(k));
-                    if (localList == null) {
-                        localList = new ArrayList<>();
-                    }
-                    localList.add(bds);
-                    articlesBySegment.put(localIndexSegmentNPL.get(k), localList);
-
-                    k++;
                 }
             }
         } catch (Exception e) {
@@ -1382,20 +1384,22 @@ public class ReferenceExtractor implements Closeable {
                 int k = 0;
                 List<BiblioItem> bibResults = parsers.getCitationParser()
                         .processingStringMultiple(referencesNPL, consolidate);
-                for (String ref : referencesNPL) {
-                    BiblioItem result = bibResults.get(k);
-                    if (result == null) {
+                if (bibResults != null) {
+                    for (String ref : referencesNPL) {
+                        BiblioItem result = bibResults.get(k);
+                        if (result == null) {
+                            k++;
+                            continue;
+                        }
+                        BibDataSet bds = new BibDataSet();
+                        result.setReference(ref);
+                        bds.setResBib(result);
+                        bds.setRawBib(ref);
+                        bds.addOffset(offsets_NPL.get(k).intValue());
+                        //bds.setConfidence(probNPL.get(k).doubleValue());
+                        articles.add(bds);
                         k++;
-                        continue;
                     }
-                    BibDataSet bds = new BibDataSet();
-                    result.setReference(ref);
-                    bds.setResBib(result);
-                    bds.setRawBib(ref);
-                    bds.addOffset(offsets_NPL.get(k).intValue());
-                    //bds.setConfidence(probNPL.get(k).doubleValue());
-                    articles.add(bds);
-                    k++;
                 }
             }
         } catch (Exception e) {
