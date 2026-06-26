@@ -1,5 +1,7 @@
 package org.grobid.service.metrics;
 
+import java.time.Duration;
+
 import io.dropwizard.lifecycle.Managed;
 import io.opentelemetry.api.common.AttributeKey;
 import io.opentelemetry.exporter.otlp.http.metrics.OtlpHttpMetricExporter;
@@ -14,8 +16,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import org.grobid.service.OtlpConfiguration;
-
-import java.time.Duration;
 
 /**
  * Pushes metrics to an OTLP receiver on a fixed interval, as the push-based counterpart to the
@@ -52,8 +52,12 @@ public class OtlpMetricsReporter implements Managed {
         // They are collected and pushed on every interval; closed in stop().
         this.runtimeMetrics = RuntimeMetrics.create(openTelemetry);
 
-        LOGGER.info("OTLP metrics push enabled -> {} ({}), every {}s, service.name={}",
-                config.getEndpoint(), config.getProtocol(), config.getIntervalSeconds(), config.getServiceName());
+        LOGGER.info(
+                "OTLP metrics push enabled -> {} ({}), every {}s, service.name={}",
+                config.getEndpoint(),
+                config.getProtocol(),
+                config.getIntervalSeconds(),
+                config.getServiceName());
     }
 
     @Override
@@ -75,7 +79,8 @@ public class OtlpMetricsReporter implements Managed {
      * produced by {@link #createExporter()}.
      */
     private OpenTelemetrySdk buildOpenTelemetry() {
-        Resource resource = Resource.getDefault().toBuilder()
+        Resource resource = Resource.getDefault()
+                .toBuilder()
                 .put(AttributeKey.stringKey("service.name"), config.getServiceName())
                 .build();
 
@@ -84,10 +89,11 @@ public class OtlpMetricsReporter implements Managed {
                 .build();
 
         return OpenTelemetrySdk.builder()
-                .setMeterProvider(SdkMeterProvider.builder()
-                        .setResource(resource)
-                        .registerMetricReader(reader)
-                        .build())
+                .setMeterProvider(
+                        SdkMeterProvider.builder()
+                                .setResource(resource)
+                                .registerMetricReader(reader)
+                                .build())
                 .build();
     }
 
