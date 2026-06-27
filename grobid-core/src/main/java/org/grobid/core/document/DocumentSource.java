@@ -272,7 +272,8 @@ public class DocumentSource {
                     close(true, true, true);
                     throw new GrobidException(
                             "PDF to XML conversion exceeded the memory limit of "
-                                    + GrobidProperties.getPdfaltoMemoryLimitMb() + " MB",
+                                    + GrobidProperties.getPdfaltoMemoryLimitMb()
+                                    + " MB",
                             GrobidExceptionStatus.MEMORY_LIMIT_EXCEEDED);
                 }
             }
