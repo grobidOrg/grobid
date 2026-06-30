@@ -105,7 +105,8 @@ public class LibraryLoader {
                             "The grobid-home path contains a space character which is not supported "
                                     + "when using the Wapiti sequence labeller. "
                                     + "Please move grobid-home to a path without spaces. "
-                                    + "Current path: " + grobidHomePath);
+                                    + "Current path: "
+                                    + grobidHomePath);
                 }
 
                 File[] wapitiLibFiles = libraryFolder.listFiles(new FilenameFilter() {
