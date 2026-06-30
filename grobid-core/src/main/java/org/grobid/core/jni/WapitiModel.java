@@ -1,9 +1,6 @@
 package org.grobid.core.jni;
 
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 import fr.limsi.wapiti.SWIGTYPE_p_mdl_t;
 import fr.limsi.wapiti.Wapiti;
@@ -64,48 +61,13 @@ public class WapitiModel {
     }
 
     public static void train(File template, File trainingData, File outputModel, String params) {
-        String templatePath = template.getAbsolutePath();
-        String trainingDataPath = trainingData.getAbsolutePath();
-        String outputModelPath = outputModel.getAbsolutePath();
-
-        boolean needsSafeDir = templatePath.contains(" ")
-                || trainingDataPath.contains(" ")
-                || outputModelPath.contains(" ");
-
-        Path tempDir = null;
-        try {
-            if (needsSafeDir) {
-                // The Wapiti JNI argument parser splits on whitespace, so paths with spaces
-                // must be accessed via temporary symlinks that have space-free paths.
-                tempDir = Files.createTempDirectory("grobid-wapiti");
-                if (templatePath.contains(" ")) {
-                    templatePath = WapitiWrapper.createSafeSymlink(template.toPath(), tempDir)
-                            .toAbsolutePath().toString();
-                }
-                if (trainingDataPath.contains(" ")) {
-                    trainingDataPath = WapitiWrapper.createSafeSymlink(trainingData.toPath(), tempDir)
-                            .toAbsolutePath().toString();
-                }
-                if (outputModelPath.contains(" ")) {
-                    // On Unix, writing to a symlink transparently writes to the symlink
-                    // target, so Wapiti will create the model at the correct output path.
-                    outputModelPath = WapitiWrapper.createSafeSymlink(outputModel.toPath(), tempDir)
-                            .toAbsolutePath().toString();
-                }
-            }
-
-            String args = String.format(
-                    "train " + params + " -p %s %s %s",
-                    templatePath,
-                    trainingDataPath,
-                    outputModelPath);
-            //System.out.println("Training with equivalent command line: \n" + "wapiti " + args);
-            Wapiti.runWapiti(args);
-        } catch (IOException e) {
-            throw new GrobidException("Failed to create safe paths for wapiti training", e);
-        } finally {
-            WapitiWrapper.deleteTempDir(tempDir);
-        }
+        String args = String.format(
+                "train " + params + " -p %s %s %s",
+                template.getAbsolutePath(),
+                trainingData.getAbsolutePath(),
+                outputModel.getAbsolutePath());
+        //System.out.println("Training with equivalent command line: \n" + "wapiti " + args);
+        Wapiti.runWapiti(args);
     }
 
 }

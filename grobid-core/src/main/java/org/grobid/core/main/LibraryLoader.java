@@ -96,6 +96,18 @@ public class LibraryLoader {
             }
 
             if (CollectionUtils.containsAny(distinctModels, Collections.singletonList(GrobidCRFEngine.WAPITI))) {
+                // The Wapiti JNI argument parser splits on whitespace, so any space in
+                // the grobid-home path would silently corrupt all model and training paths.
+                // Fail fast here with a clear message rather than producing mysterious errors later.
+                String grobidHomePath = GrobidProperties.getGrobidHome().getAbsolutePath();
+                if (grobidHomePath.contains(" ")) {
+                    throw new RuntimeException(
+                            "The grobid-home path contains a space character which is not supported "
+                                    + "when using the Wapiti sequence labeller. "
+                                    + "Please move grobid-home to a path without spaces. "
+                                    + "Current path: " + grobidHomePath);
+                }
+
                 File[] wapitiLibFiles = libraryFolder.listFiles(new FilenameFilter() {
                     @Override
                     public boolean accept(File dir, String name) {
