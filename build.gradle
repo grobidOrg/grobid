@@ -4,6 +4,7 @@ plugins {
     id 'com.adarshr.test-logger' version '4.0.0' apply false
     id 'com.github.kt3k.coveralls' version '2.12.2' apply false
     id 'net.researchgate.release' version '3.1.0' apply false
+    id 'com.vanniktech.maven.publish' version '0.36.0' apply false
     id 'com.diffplug.spotless' version '8.2.1' apply false
 }
 
@@ -82,6 +83,39 @@ tasks.register('collectGitRevision') {
     }
 }
 
+// Shared POM metadata for Maven Central publishing.
+// Each published module calls rootProject.applyGrobidPomMetadata(mavenPom) from
+// its mavenPublishing { pom { ... } } block. The list of developers is a TODO
+// that must be filled in before the first Central release.
+def applyGrobidPomMetadata(pom) {
+    pom.url = "https://github.com/kermitt2/grobid"
+    pom.inceptionYear = "2008"
+    pom.licenses {
+        license {
+            name = "Apache License 2.0"
+            url = "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            distribution = "repo"
+        }
+    }
+    pom.developers {
+        developer {
+            id = "kermitt2"
+            name = "Patrice Lopez"
+            email = "patrice.lopez@science-miner.com"
+        }
+        developer {
+            id = "lfoppiano"
+            name = "Luca Foppiano"
+        }
+    }
+    pom.scm {
+        connection = "scm:git:git://github.com/kermitt2/grobid.git"
+        developerConnection = "scm:git:ssh://github.com:kermitt2/grobid.git"
+        url = "https://github.com/kermitt2/grobid"
+    }
+}
+ext.applyGrobidPomMetadata = this.&applyGrobidPomMetadata
+
 allprojects {
     apply plugin: 'net.researchgate.release'
 
@@ -122,16 +156,9 @@ subprojects {
         }
     }
 
-    publishing {
-        publications {
-            mavenJava(MavenPublication) {
-                from components.java
-                //artifact jar
-            }
-        }
-        repositories {
-            mavenLocal()
-        }
+    tasks.withType(Javadoc).configureEach {
+        failOnError = false
+        options.addStringOption('Xdoclint:none', '-quiet')
     }
 
     java {
@@ -253,6 +280,20 @@ subprojects {
 project("grobid-core") {
     apply plugin: 'com.gradleup.shadow'
     apply plugin: 'jacoco'
+    apply plugin: 'com.vanniktech.maven.publish'
+
+    mavenPublishing {
+        coordinates("org.grobid", "grobid-core", project.version.toString())
+        pom { mavenPom ->
+            mavenPom.name = "GROBID Core"
+            mavenPom.description = "Core ML library for extracting structured bibliographic data from PDF documents"
+            rootProject.applyGrobidPomMetadata(mavenPom)
+        }
+    }
+
+    components.java {
+        withVariantsFromConfiguration(configurations.shadowRuntimeElements) { skip() }
+    }
 
     configurations {
         shadedLib
@@ -382,6 +423,20 @@ project(":grobid-service") {
     apply plugin: 'application'
     apply plugin: 'jacoco'
     apply plugin: 'com.gradleup.shadow'
+    apply plugin: 'com.vanniktech.maven.publish'
+
+    mavenPublishing {
+        coordinates("org.grobid", "grobid-service", project.version.toString())
+        pom { mavenPom ->
+            mavenPom.name = "GROBID Service"
+            mavenPom.description = "REST API web service for GROBID document processing"
+            rootProject.applyGrobidPomMetadata(mavenPom)
+        }
+    }
+
+    components.java {
+        withVariantsFromConfiguration(configurations.shadowRuntimeElements) { skip() }
+    }
 
     application {
         mainClass = 'org.grobid.service.main.GrobidServiceApplication'
@@ -476,6 +531,20 @@ project(":grobid-service") {
 project(":grobid-trainer") {
     apply plugin: 'com.gradleup.shadow'
     apply plugin: 'jacoco'
+    apply plugin: 'com.vanniktech.maven.publish'
+
+    mavenPublishing {
+        coordinates("org.grobid", "grobid-trainer", project.version.toString())
+        pom { mavenPom ->
+            mavenPom.name = "GROBID Trainer"
+            mavenPom.description = "Training and evaluation framework for GROBID ML models"
+            rootProject.applyGrobidPomMetadata(mavenPom)
+        }
+    }
+
+    components.java {
+        withVariantsFromConfiguration(configurations.shadowRuntimeElements) { skip() }
+    }
 
     dependencies {
         implementation(group: 'xml-apis', name: 'xml-apis') {
