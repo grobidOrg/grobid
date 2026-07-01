@@ -70,8 +70,17 @@ public class ZipUtils {
                         + tempDir.getAbsolutePath());
             }
 
+            File canonicalTempDir = tempDir.getCanonicalFile();
             while (entries.hasMoreElements()) {
                 ZipEntry entry = (ZipEntry) entries.nextElement();
+
+                // Resolve and validate the output path before any filesystem
+                // operation to prevent path traversal (Zip Slip).
+                File outFile = new File(canonicalTempDir.getAbsolutePath() + File.separator + entry.getName())
+                        .getCanonicalFile();
+                if (!outFile.toPath().startsWith(canonicalTempDir.toPath())) {
+                    throw new IOException("Bad zip entry: " + entry.getName());
+                }
 
                 if (entry.isDirectory()) {
                     // Assume directories are stored parents first then
@@ -80,13 +89,7 @@ public class ZipUtils {
                             "Extracting directory: "
                                     + entry.getName());
                     // This is not robust, just for demonstration purposes.
-
-                    File dir = new File(tempDir.getAbsolutePath() + File.separator + entry.getName())
-                            .getCanonicalFile();
-                    if (!dir.toPath().startsWith(tempDir.toPath())) {
-                        throw new IOException("Bad zip entry: " + entry.getName());
-                    }
-                    dir.mkdir();
+                    outFile.mkdir();
                     continue;
                 }
 
@@ -94,16 +97,7 @@ public class ZipUtils {
 
                 copyInputStream(
                         zipFile.getInputStream(entry),
-                        new BufferedOutputStream(new FileOutputStream(new File(tempDir
-                                .getAbsolutePath()
-                                + File.separator
-                                + entry.getName()).getCanonicalFile())));
-                File outFile = new File(tempDir.getAbsolutePath() + File.separator + entry.getName())
-                        .getCanonicalFile();
-                if (!outFile.toPath().startsWith(tempDir.toPath())) {
-                    throw new IOException("Bad zip entry: " + entry.getName());
-                }
-                copyInputStream(zipFile.getInputStream(entry), new BufferedOutputStream(new FileOutputStream(outFile)));
+                        new BufferedOutputStream(new FileOutputStream(outFile)));
             }
 
             zipFile.close();
