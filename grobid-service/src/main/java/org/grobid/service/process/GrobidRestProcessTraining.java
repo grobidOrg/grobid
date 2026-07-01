@@ -5,11 +5,15 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.DigestInputStream;
 import java.security.MessageDigest;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -50,6 +54,7 @@ public class GrobidRestProcessTraining {
      * set gives an atomic claim ({@code add} returns false when the key is already present).
      */
     private final Set<String> modelsInTraining = ConcurrentHashMap.newKeySet();
+    private final Map<String, Future<?>> trainingsInProgress = new ConcurrentHashMap<>();
 
     @Inject
     public GrobidRestProcessTraining() {
@@ -255,9 +260,10 @@ public class GrobidRestProcessTraining {
 
                 ExecutorService executorService = Executors.newFixedThreadPool(1);
                 TrainTask trainTask = new TrainTask(trainer, type, token, ratio, n, incremental, modelKey,
-                        modelsInTraining);
+                        modelsInTraining, trainingsInProgress);
                 FileUtils.writeStringToFile(new File(tokenPath + "/status"), "ongoing", "UTF-8");
-                executorService.submit(trainTask);
+                Future<?> trainingFuture = executorService.submit(trainTask);
+                trainingsInProgress.put(token, trainingFuture);
                 // Orderly shutdown so the worker thread terminates once the submitted training
                 // task completes. Without this the FixedThreadPool keeps its core thread alive
                 // indefinitely and every request would permanently leak one JVM thread (DoS).
@@ -308,9 +314,10 @@ public class GrobidRestProcessTraining {
         private boolean incremental = false;
         private final String modelKey;
         private final Set<String> registry;
+        private final Map<String, Future<?>> trainingsInProgress;
 
         public TrainTask(AbstractTrainer trainer, String type, String token, double ratio, int n, boolean incremental,
-                String modelKey, Set<String> registry) {
+                String modelKey, Set<String> registry, Map<String, Future<?>> trainingsInProgress) {
             this.trainer = trainer;
             this.type = type;
             this.token = token;
@@ -319,13 +326,15 @@ public class GrobidRestProcessTraining {
             this.incremental = incremental;
             this.modelKey = modelKey;
             this.registry = registry;
+            this.trainingsInProgress = trainingsInProgress;
         }
 
         @Override
         public void run() {
+            String tokenPath = null;
             try {
                 File home = GrobidProperties.getInstance().getGrobidHomePath();
-                String tokenPath = home.getAbsolutePath() + "/training-history/" + this.token;
+                tokenPath = home.getAbsolutePath() + "/training-history/" + this.token;
                 File tokenDir = new File(tokenPath);
 
                 String results = null;
@@ -365,12 +374,100 @@ public class GrobidRestProcessTraining {
                 }
             } catch (Exception e) {
                 LOGGER.error("Training failed for token " + token, e);
+                try {
+                    writeTrainingStatus(tokenPath, Thread.currentThread().isInterrupted() ? "killed" : "failed");
+                } catch (IOException ioException) {
+                    LOGGER.error("Could not update status for token " + token, ioException);
+                }
             } finally {
                 // Release the per-model lock so the same model can be trained again, even if the
                 // training above failed (e.g. a runtime exception from the underlying trainer).
                 registry.remove(this.modelKey);
+                trainingsInProgress.remove(this.token);
             }
         }
+    }
+
+    public Response allTraining() {
+        Response response;
+        try {
+            File home = GrobidProperties.getInstance().getGrobidHomePath();
+            File historyDir = new File(home.getAbsolutePath() + "/training-history");
+            List<String> tokens = new ArrayList<>();
+
+            File[] tokenDirectories = historyDir.listFiles(File::isDirectory);
+            if (tokenDirectories != null) {
+                for (File tokenDirectory : tokenDirectories) {
+                    File status = new File(tokenDirectory, "status");
+                    if (status.exists()) {
+                        String statusString = FileUtils.readFileToString(status, "UTF-8");
+                        if ("ongoing".equals(statusString)) {
+                            tokens.add(tokenDirectory.getName());
+                        }
+                    }
+                }
+            }
+
+            response = Response.status(Response.Status.OK)
+                    .entity(new ObjectMapper().writeValueAsString(Map.of("tokens", tokens)))
+                    .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON + "; charset=UTF-8")
+                    .header("Access-Control-Allow-Origin", "*")
+                    .header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
+                    .build();
+        } catch (Exception exp) {
+            LOGGER.error("An unexpected exception occurs. ", exp);
+            response = Response.status(Status.INTERNAL_SERVER_ERROR).entity(exp.getMessage()).build();
+        }
+
+        return response;
+    }
+
+    public Response killTraining(String token) {
+        Response response;
+        try {
+            // Validate the token to prevent directory traversal
+            if (token.contains("..") || token.contains("/") || token.contains("\\")) {
+                throw new GrobidServiceException("Invalid token", Status.BAD_REQUEST);
+            }
+
+            File home = GrobidProperties.getInstance().getGrobidHomePath();
+            File tokenDirectory = new File(home.getAbsolutePath() + "/training-history/" + token);
+            if (!tokenDirectory.exists() || !tokenDirectory.isDirectory()) {
+                throw new GrobidServiceException(
+                        "The indicated token " + token + " is not matching an existing training.", Status.BAD_REQUEST);
+            }
+
+            File statusFile = new File(tokenDirectory, "status");
+            String statusString = statusFile.exists() ? FileUtils.readFileToString(statusFile, "UTF-8") : null;
+
+            Future<?> future = trainingsInProgress.remove(token);
+            if (future != null) {
+                future.cancel(true);
+            }
+
+            if ("ongoing".equals(statusString)) {
+                writeTrainingStatus(tokenDirectory.getAbsolutePath(), "killed");
+            }
+
+            response = Response.status(Response.Status.OK)
+                    .entity("{\"status\": \"killed\"}")
+                    .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON + "; charset=UTF-8")
+                    .header("Access-Control-Allow-Origin", "*")
+                    .header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
+                    .build();
+        } catch (GrobidServiceException exp) {
+            LOGGER.error("Service cannot be realized: " + exp.getMessage());
+            response = Response.status(exp.getResponseCode()).entity(exp.getMessage()).build();
+        } catch (Exception exp) {
+            LOGGER.error("An unexpected exception occurs. ", exp);
+            response = Response.status(Status.INTERNAL_SERVER_ERROR).entity(exp.getMessage()).build();
+        }
+
+        return response;
+    }
+
+    private static void writeTrainingStatus(String tokenPath, String status) throws IOException {
+        FileUtils.writeStringToFile(new File(tokenPath + "/status"), status, "UTF-8");
     }
 
     /**

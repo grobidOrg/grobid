@@ -990,6 +990,21 @@ public class GrobidRestService implements GrobidPaths {
         return restProcessTraining.resultTraining(token);
     }
 
+    @Path(PATH_ALL_TRAINING)
+    @Produces(MediaType.APPLICATION_JSON)
+    @GET
+    public Response allTraining() {
+        return restProcessTraining.allTraining();
+    }
+
+    @Path(PATH_KILL_TRAINING)
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    @Produces(MediaType.APPLICATION_JSON)
+    @POST
+    public Response killTraining(@FormParam("token") String token) {
+        return restProcessTraining.killTraining(token);
+    }
+
     @Path(PATH_MODEL)
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     @Produces("application/zip")

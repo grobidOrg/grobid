@@ -170,6 +170,8 @@ public interface GrobidPaths {
      * the evaluation metrics of the new model if the training is completed
      */
     String PATH_TRAINING_RESULT = "trainingResult";
+    String PATH_ALL_TRAINING = "allTraining";
+    String PATH_KILL_TRAINING = "killTraining";
 
     String PATH_CREATE_TRAINING = "createTraining";
 }

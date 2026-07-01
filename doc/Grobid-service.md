@@ -862,7 +862,7 @@ A `503` error with the default parallel mode normally means that all the threads
 
 ### Training web API
 
-The following web services can be used to launch the training of a particular model (`/api/modelTraining`), monitor traing advancement (`/api/trainingResult`) and retrieve a model (`/api/model`).
+The following web services can be used to launch the training of a particular model (`/api/modelTraining`), monitor training advancement (`/api/trainingResult`), list ongoing training tokens (`/api/allTraining`), interrupt a training (`/api/killTraining`) and retrieve a model (`/api/model`).
 
 #### /api/modelTraining
 
@@ -923,6 +923,47 @@ Response status codes:
 Example for a training associated to the token `Fq2WYPw5M6`:
 ```bash
 curl -v -X POST -d "token=Fq2WYPw5M6" localhost:8070/api/trainingResult
+```
+
+#### /api/allTraining
+
+List all tokens currently marked as ongoing.
+
+|   method  |  request type       | response type        |  parameters  | requirement   |   description             |
+|---        |---                  |---                   |---           |---            |---                        |
+| GET |  - | application/json | - | - | list training tokens currently in `ongoing` state |
+
+Response status codes:
+
+|     HTTP Status code |   reason                                               |
+|---                   |---                                                     |
+|         200          |     Successful operation.                              |
+|         500          |     Indicate an internal service error, further described by a provided message           |
+
+Example:
+```bash
+curl -v localhost:8070/api/allTraining
+```
+
+#### /api/killTraining
+
+Interrupt a training process corresponding to a token. If the token is still marked `ongoing`, its status is set to `killed`.
+
+|   method  |  request type       | response type        |  parameters  | requirement   |   description             |
+|---        |---                  |---                   |---           |---            |---                        |
+| POST |  application/x-www-form-urlencoded | application/json | token | required | training token to interrupt |
+
+Response status codes:
+
+|     HTTP Status code |   reason                                               |
+|---                   |---                                                     |
+|         200          |     Successful operation.                              |
+|         400          |     Wrong request, missing or invalid training token, missing header  |
+|         500          |     Indicate an internal service error, further described by a provided message           |
+
+Example:
+```bash
+curl -v -X POST -d "token=Fq2WYPw5M6" localhost:8070/api/killTraining
 ```
 
 #### /api/model
