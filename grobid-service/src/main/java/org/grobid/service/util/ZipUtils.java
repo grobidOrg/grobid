@@ -31,21 +31,17 @@ public class ZipUtils {
             return pb;
     }
 
-    public static final void copyInputStream(InputStream in, OutputStream out)
+    private static void copyInputStream(InputStream in, OutputStream out)
             throws IOException {
         byte[] buffer = new byte[1024];
         int len;
 
         while ((len = in.read(buffer)) >= 0)
             out.write(buffer, 0, len);
-
-        in.close();
-        out.close();
     }
 
     public static final void main(String[] args) {
         Enumeration entries;
-        ZipFile zipFile;
 
         if (args.length != 1) {
             System.err.println("Usage: Unzip zipfile");
@@ -53,9 +49,7 @@ public class ZipUtils {
         }
 
         String pPath = args[0];
-        try {
-            zipFile = new ZipFile(pPath);
-
+        try (ZipFile zipFile = new ZipFile(pPath)) {
             entries = zipFile.entries();
 
             File tempDir = IOUtilities.newTempFile(
@@ -89,18 +83,20 @@ public class ZipUtils {
                             "Extracting directory: "
                                     + entry.getName());
                     // This is not robust, just for demonstration purposes.
-                    outFile.mkdir();
+                    if (!outFile.mkdir() && !outFile.isDirectory()) {
+                        throw new IOException("Could not create directory: " + outFile.getAbsolutePath());
+                    }
                     continue;
                 }
 
                 System.err.println("Extracting file: " + entry.getName());
 
-                copyInputStream(
-                        zipFile.getInputStream(entry),
-                        new BufferedOutputStream(new FileOutputStream(outFile)));
+                try (InputStream in = zipFile.getInputStream(entry);
+                        FileOutputStream fos = new FileOutputStream(outFile);
+                        OutputStream out = new BufferedOutputStream(fos)) {
+                    copyInputStream(in, out);
+                }
             }
-
-            zipFile.close();
         } catch (IOException ioe) {
             System.err.println("Unhandled exception:");
             ioe.printStackTrace();
