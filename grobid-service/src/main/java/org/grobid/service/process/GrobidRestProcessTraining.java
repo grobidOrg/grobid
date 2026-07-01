@@ -400,7 +400,7 @@ public class GrobidRestProcessTraining {
                 for (File tokenDirectory : tokenDirectories) {
                     File status = new File(tokenDirectory, "status");
                     if (status.exists()) {
-                        String statusString = FileUtils.readFileToString(status, "UTF-8");
+                        String statusString = FileUtils.readFileToString(status, "UTF-8").trim();
                         if ("ongoing".equals(statusString)) {
                             tokens.add(tokenDirectory.getName());
                         }
@@ -438,19 +438,24 @@ public class GrobidRestProcessTraining {
             }
 
             File statusFile = new File(tokenDirectory, "status");
-            String statusString = statusFile.exists() ? FileUtils.readFileToString(statusFile, "UTF-8") : null;
+            String statusString = statusFile.exists() ? FileUtils.readFileToString(statusFile, "UTF-8").trim() : null;
 
             Future<?> future = trainingsInProgress.remove(token);
+            boolean killed = false;
             if (future != null) {
-                future.cancel(true);
+                killed = future.cancel(true);
+            } else if ("ongoing".equals(statusString)) {
+                // stale training state from a previously interrupted process/container
+                killed = true;
             }
 
-            if ("ongoing".equals(statusString)) {
+            if (killed && "ongoing".equals(statusString)) {
                 writeTrainingStatus(tokenDirectory.getAbsolutePath(), "killed");
             }
+            String responseStatus = killed ? "killed" : (statusString != null ? statusString : "unknown");
 
             response = Response.status(Response.Status.OK)
-                    .entity("{\"status\": \"killed\"}")
+                    .entity("{\"status\": \"" + responseStatus + "\"}")
                     .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON + "; charset=UTF-8")
                     .header("Access-Control-Allow-Origin", "*")
                     .header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
