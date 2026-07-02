@@ -1,3 +1,18 @@
+/*
+ * Copyright 2008-2026 GROBID contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.grobid.service.util;
 
 import java.io.BufferedOutputStream;
@@ -31,21 +46,17 @@ public class ZipUtils {
             return pb;
     }
 
-    public static final void copyInputStream(InputStream in, OutputStream out)
+    private static void copyInputStream(InputStream in, OutputStream out)
             throws IOException {
         byte[] buffer = new byte[1024];
         int len;
 
         while ((len = in.read(buffer)) >= 0)
             out.write(buffer, 0, len);
-
-        in.close();
-        out.close();
     }
 
     public static final void main(String[] args) {
         Enumeration entries;
-        ZipFile zipFile;
 
         if (args.length != 1) {
             System.err.println("Usage: Unzip zipfile");
@@ -53,9 +64,7 @@ public class ZipUtils {
         }
 
         String pPath = args[0];
-        try {
-            zipFile = new ZipFile(pPath);
-
+        try (ZipFile zipFile = new ZipFile(pPath)) {
             entries = zipFile.entries();
 
             File tempDir = IOUtilities.newTempFile(
@@ -70,8 +79,17 @@ public class ZipUtils {
                         + tempDir.getAbsolutePath());
             }
 
+            File canonicalTempDir = tempDir.getCanonicalFile();
             while (entries.hasMoreElements()) {
                 ZipEntry entry = (ZipEntry) entries.nextElement();
+
+                // Resolve and validate the output path before any filesystem
+                // operation to prevent path traversal (Zip Slip).
+                File outFile = new File(canonicalTempDir.getAbsolutePath() + File.separator + entry.getName())
+                        .getCanonicalFile();
+                if (!outFile.toPath().startsWith(canonicalTempDir.toPath())) {
+                    throw new IOException("Bad zip entry: " + entry.getName());
+                }
 
                 if (entry.isDirectory()) {
                     // Assume directories are stored parents first then
@@ -80,33 +98,20 @@ public class ZipUtils {
                             "Extracting directory: "
                                     + entry.getName());
                     // This is not robust, just for demonstration purposes.
-
-                    File dir = new File(tempDir.getAbsolutePath() + File.separator + entry.getName())
-                            .getCanonicalFile();
-                    if (!dir.toPath().startsWith(tempDir.toPath())) {
-                        throw new IOException("Bad zip entry: " + entry.getName());
+                    if (!outFile.mkdir() && !outFile.isDirectory()) {
+                        throw new IOException("Could not create directory: " + outFile.getAbsolutePath());
                     }
-                    dir.mkdir();
                     continue;
                 }
 
                 System.err.println("Extracting file: " + entry.getName());
 
-                copyInputStream(
-                        zipFile.getInputStream(entry),
-                        new BufferedOutputStream(new FileOutputStream(new File(tempDir
-                                .getAbsolutePath()
-                                + File.separator
-                                + entry.getName()).getCanonicalFile())));
-                File outFile = new File(tempDir.getAbsolutePath() + File.separator + entry.getName())
-                        .getCanonicalFile();
-                if (!outFile.toPath().startsWith(tempDir.toPath())) {
-                    throw new IOException("Bad zip entry: " + entry.getName());
+                try (InputStream in = zipFile.getInputStream(entry);
+                        FileOutputStream fos = new FileOutputStream(outFile);
+                        OutputStream out = new BufferedOutputStream(fos)) {
+                    copyInputStream(in, out);
                 }
-                copyInputStream(zipFile.getInputStream(entry), new BufferedOutputStream(new FileOutputStream(outFile)));
             }
-
-            zipFile.close();
         } catch (IOException ioe) {
             System.err.println("Unhandled exception:");
             ioe.printStackTrace();
