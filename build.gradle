@@ -105,9 +105,18 @@ subprojects {
     spotless {
         java {
             target 'src/**/*.java'
+            // Exclude files carrying inherited third-party license headers (ASF and
+            // Google diff-match-patch) so their required attribution is preserved.
+            targetExclude(
+                'src/main/java/org/grobid/core/analyzers/ArabicChars.java',
+                'src/main/java/org/grobid/core/analyzers/GrobidDefaultAnalyzer.java',
+                'src/main/java/org/grobid/core/analyzers/GrobidFilterDeleteSpaceBetweenSameAlphabet.java',
+                'src/main/java/org/grobid/core/utilities/matching/DiffMatchPatch.java'
+            )
             eclipse().configFile(rootProject.file('eclipse-formatter.xml'))
             removeUnusedImports()
             importOrder('java', 'javax', '', 'org.grobid')
+            licenseHeaderFile(rootProject.file('config/license-header.txt'))
             trimTrailingWhitespace()
             endWithNewline()
         }
@@ -117,6 +126,7 @@ subprojects {
                 'ktlint_standard_no-wildcard-imports': 'disabled',
                 'max_line_length': 'off'
             ])
+            licenseHeaderFile(rootProject.file('config/license-header.txt'))
             trimTrailingWhitespace()
             endWithNewline()
         }
@@ -127,6 +137,14 @@ subprojects {
             mavenJava(MavenPublication) {
                 from components.java
                 //artifact jar
+                pom {
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                }
             }
         }
         repositories {
