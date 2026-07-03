@@ -280,13 +280,15 @@ public class GrobidRestProcessTraining {
                 TrainTask trainTask = new TrainTask(trainer, type, token, ratio, n, incremental, modelKey,
                         modelsInTraining, trainingsInProgress, tokenModelKey);
                 FileUtils.writeStringToFile(new File(tokenPath + "/status"), "ongoing", StandardCharsets.UTF_8);
-                // Pre-register the token before submit() to avoid an orphan entry: if the
-                // task completes (and calls remove()) before the put() below runs, the entry
-                // would remain in the map forever. By inserting null first, any race leaves
-                // at most a null value, which killTraining already handles.
+                // Step 1 – pre-register a null placeholder BEFORE submit().
+                // Without this, a fast-finishing task could call remove() before the real
+                // Future is put(), leaving a permanent orphan entry in the map.
                 trainingsInProgress.put(token, null);
                 tokenModelKey.put(token, modelKey);
                 Future<?> trainingFuture = executorService.submit(trainTask);
+                // Step 2 – replace the placeholder with the real Future so killTraining can
+                // call cancel(). The two-step write is intentional: putIfAbsent would leave
+                // the null placeholder in place when the key already exists.
                 trainingsInProgress.put(token, trainingFuture);
                 // Orderly shutdown so the worker thread terminates once the submitted training
                 // task completes. Without this the FixedThreadPool keeps its core thread alive
@@ -517,11 +519,14 @@ public class GrobidRestProcessTraining {
     }
 
     /**
-     * Validate a training token to prevent directory-traversal attacks.
+     * Validate a training token to prevent directory-traversal attacks and reject blank input.
      *
-     * @throws GrobidServiceException (BAD_REQUEST) if the token contains path-separator characters.
+     * @throws GrobidServiceException (BAD_REQUEST) if the token is null/blank or contains path-separator characters.
      */
     private static void validateToken(String token) {
+        if (token == null || token.isBlank()) {
+            throw new GrobidServiceException("Token must not be empty", Status.BAD_REQUEST);
+        }
         if (token.contains("..") || token.contains("/") || token.contains("\\")) {
             throw new GrobidServiceException("Invalid token", Status.BAD_REQUEST);
         }

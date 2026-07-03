@@ -98,7 +98,7 @@ public class GrobidRestProcessTrainingTasksTest {
     }
 
     @Test
-    public void allTraining_responseJsonShouldContainTokensKey() throws Exception {
+    public void allTraining_shouldReturnJsonWithTokensKey() throws Exception {
         Response response = target.allTraining();
 
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
