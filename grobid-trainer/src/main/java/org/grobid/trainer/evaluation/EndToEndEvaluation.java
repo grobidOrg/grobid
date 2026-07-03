@@ -179,11 +179,21 @@ public class EndToEndEvaluation {
         int totalCorrectObservedCitations = 0;
         int totalWrongObservedCitations = 0;
 
+        // citation signature level 1: title + date
         int match1 = 0;
+        // citation signature level 2: all author names + date
         int match2 = 0;
+        // citation signature level 3: journal + volume + page
         int match3 = 0;
+        // citation signature level 4: fuzzy title + date + at least one author or first page
         int match4 = 0;
 
+        /**
+         * Accumulates counts from {@code other} into this result.
+         * Called from the aggregation step after all per-document futures have completed.
+         *
+         * @param other the per-document result to merge; a {@code null} value is silently ignored
+         */
         void merge(DocumentEvaluationResult other) {
             if (other == null)
                 return;
@@ -272,6 +282,14 @@ public class EndToEndEvaluation {
         }
     }
 
+    /**
+     * Callable that processes a single document directory and returns its evaluation results.
+     * Instances are submitted to a fixed thread pool in {@code evaluationRun()} so that the
+     * matching phase runs in parallel across documents.  The callable is a non-static inner
+     * class so that it can read the outer {@code flavor} and {@code inputType} fields without
+     * additional parameters.  On any per-document error the callable logs the exception and
+     * returns {@code null}; the caller excludes {@code null} results from the final merge.
+     */
     private class DocumentEvaluationCallable implements Callable<DocumentEvaluationResult> {
         private final File dir;
         private final int runType;
