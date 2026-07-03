@@ -962,7 +962,7 @@ Response status codes:
 |     HTTP Status code |   reason                                               |
 |---                   |---                                                     |
 |         200          |     Successful operation.                              |
-|         400          |     Wrong request, missing or invalid training token, missing header  |
+|         400          |     Wrong request, missing or invalid training token  |
 |         500          |     Indicate an internal service error, further described by a provided message           |
 
 Example:

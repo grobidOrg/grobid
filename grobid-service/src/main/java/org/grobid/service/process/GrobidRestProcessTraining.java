@@ -25,7 +25,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
-import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -64,12 +63,13 @@ public class GrobidRestProcessTraining {
     private static final Logger LOGGER = LoggerFactory.getLogger(GrobidRestProcessTraining.class);
 
     /**
-     * Set of models (by lowercase name) whose training is currently running. Used to reject a
-     * new training request for a model that is already being trained. The class is a singleton,
-     * so this instance field is shared across all requests in the JVM. A ConcurrentHashMap-backed
-     * set gives an atomic claim ({@code add} returns false when the key is already present).
+     * Models (by lowercase name) whose training is currently running, mapped to the token of the
+     * training that owns the claim. Used to reject a new training request for a model that is
+     * already being trained. The class is a singleton, so this instance field is shared across all
+     * requests in the JVM. The map value (the owning token) lets a release be owner-checked, so a
+     * stale kill of an old token cannot free a claim that a newer training of the same model holds.
      */
-    private final Set<String> modelsInTraining = ConcurrentHashMap.newKeySet();
+    private final Map<String, String> modelsInTraining = new ConcurrentHashMap<>();
     private final Map<String, Future<?>> trainingsInProgress = new ConcurrentHashMap<>();
     /** Maps token → modelKey so that killTraining can release the per-model claim. */
     private final Map<String, String> tokenModelKey = new ConcurrentHashMap<>();
@@ -79,18 +79,22 @@ public class GrobidRestProcessTraining {
     }
 
     /**
-     * Atomically claim the in-training slot for a model. Returns {@code false} if a training for
-     * this model is already running (the slot was not claimed by this caller).
+     * Atomically claim the in-training slot for a model on behalf of {@code token}. Returns
+     * {@code false} if a training for this model is already running (the slot was not claimed by
+     * this caller).
      */
-    boolean tryClaim(String modelKey) {
-        return modelsInTraining.add(modelKey);
+    boolean tryClaim(String modelKey, String token) {
+        return modelsInTraining.putIfAbsent(modelKey, token) == null;
     }
 
     /**
-     * Release the in-training slot for a model so it can be trained again.
+     * Release the in-training slot for a model so it can be trained again, but only if it is still
+     * owned by {@code token}. This owner check (an atomic {@code remove(key, value)}) prevents a
+     * kill/cleanup of a finished training from freeing a claim that a newer training of the same
+     * model has since acquired.
      */
-    void release(String modelKey) {
-        modelsInTraining.remove(modelKey);
+    void release(String modelKey, String token) {
+        modelsInTraining.remove(modelKey, token);
     }
 
     /**
@@ -257,7 +261,7 @@ public class GrobidRestProcessTraining {
             // variants (e.g. "header" vs "header-light") write different model files and are
             // distinct models, so they are keyed separately and do not block each other.
             String modelKey = model.toLowerCase();
-            if (!tryClaim(modelKey)) {
+            if (!tryClaim(modelKey, token)) {
                 LOGGER.warn(
                         "Rejected training request for model '{}': a training for this model is already in progress.",
                         model);
@@ -286,10 +290,11 @@ public class GrobidRestProcessTraining {
                 trainingsInProgress.put(token, null);
                 tokenModelKey.put(token, modelKey);
                 Future<?> trainingFuture = executorService.submit(trainTask);
-                // Step 2 – replace the placeholder with the real Future so killTraining can
-                // call cancel(). The two-step write is intentional: putIfAbsent would leave
-                // the null placeholder in place when the key already exists.
-                trainingsInProgress.put(token, trainingFuture);
+                // Step 2 – swap the placeholder for the real Future so killTraining can call
+                // cancel(). replace() (not put()) is intentional: if the task already finished and
+                // its finally-block removed the entry, replace() is a no-op, so a completed Future
+                // is not re-inserted as a permanent orphan.
+                trainingsInProgress.replace(token, trainingFuture);
                 // Orderly shutdown so the worker thread terminates once the submitted training
                 // task completes. Without this the FixedThreadPool keeps its core thread alive
                 // indefinitely and every request would permanently leak one JVM thread (DoS).
@@ -297,8 +302,9 @@ public class GrobidRestProcessTraining {
             } catch (Exception e) {
                 // The worker never took ownership of the claim (it releases it on completion),
                 // so release it here to avoid leaving the model permanently blocked.
-                release(modelKey);
+                release(modelKey, token);
                 tokenModelKey.remove(token);
+                trainingsInProgress.remove(token);
                 throw e;
             }
 
@@ -340,12 +346,12 @@ public class GrobidRestProcessTraining {
         private double ratio = 1.0;
         private boolean incremental = false;
         private final String modelKey;
-        private final Set<String> registry;
+        private final Map<String, String> registry;
         private final Map<String, Future<?>> trainingsInProgress;
         private final Map<String, String> tokenModelKey;
 
         public TrainTask(AbstractTrainer trainer, String type, String token, double ratio, int n, boolean incremental,
-                String modelKey, Set<String> registry, Map<String, Future<?>> trainingsInProgress,
+                String modelKey, Map<String, String> registry, Map<String, Future<?>> trainingsInProgress,
                 Map<String, String> tokenModelKey) {
             this.trainer = trainer;
             this.type = type;
@@ -414,7 +420,8 @@ public class GrobidRestProcessTraining {
             } finally {
                 // Release the per-model lock so the same model can be trained again, even if the
                 // training above failed (e.g. a runtime exception from the underlying trainer).
-                registry.remove(this.modelKey);
+                // Owner-checked (remove(key, value)) so we only release a claim we still own.
+                registry.remove(this.modelKey, this.token);
                 trainingsInProgress.remove(this.token);
                 tokenModelKey.remove(this.token);
             }
@@ -491,12 +498,12 @@ public class GrobidRestProcessTraining {
                 if ("ongoing".equals(statusString)) {
                     writeTrainingStatus(tokenDirectory.getAbsolutePath(), "killed");
                 }
-                // Release the per-model claim so the same model can be trained again. When a
-                // live future exists we own the claim; for a stale entry the claim is already
-                // gone (the original JVM released it), so remove() is a safe no-op.
+                // Release the per-model claim so the same model can be trained again. The release
+                // is owner-checked (keyed by this token), so if the worker already finished and a
+                // newer training of the same model has claimed the slot, we do not free its claim.
                 String modelKey = tokenModelKey.remove(token);
                 if (modelKey != null) {
-                    release(modelKey);
+                    release(modelKey, token);
                 }
             }
             String responseStatus = killed ? "killed" : (statusString != null ? statusString : "unknown");
@@ -566,7 +573,7 @@ public class GrobidRestProcessTraining {
             if (!status.exists()) {
                 LOGGER.warn("Status file is missing in the training history corresponding to token " + token);
             } else {
-                statusString = FileUtils.readFileToString(status, StandardCharsets.UTF_8);
+                statusString = FileUtils.readFileToString(status, StandardCharsets.UTF_8).trim();
             }
 
             if (statusString != null && statusString.equals("ongoing")) {
