@@ -80,6 +80,32 @@ public class GrobidRestProcessTrainingTasksTest {
         assertEquals(Response.Status.BAD_REQUEST.getStatusCode(), response.getStatus());
     }
 
+    @Test
+    public void killTraining_shouldReturnCurrentStatusForDoneToken() throws Exception {
+        String token = createTokenWithStatus("done");
+
+        Response response = target.killTraining(token);
+
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+        String body = (String) response.getEntity();
+        assertTrue("Response should contain the existing status", body.contains("done"));
+    }
+
+    @Test
+    public void killTraining_shouldReturnBadRequestForTraversalToken() {
+        Response response = target.killTraining("../etc/passwd");
+        assertEquals(Response.Status.BAD_REQUEST.getStatusCode(), response.getStatus());
+    }
+
+    @Test
+    public void allTraining_responseJsonShouldContainTokensKey() throws Exception {
+        Response response = target.allTraining();
+
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+        String body = (String) response.getEntity();
+        assertTrue("JSON response must contain 'tokens' key", body.contains("\"tokens\""));
+    }
+
     private String createTokenWithStatus(String status) throws IOException {
         String token = "unit-training-" + System.nanoTime();
         File tokenDirectory = new File(getTrainingHistoryDirectory(), token);

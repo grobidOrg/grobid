@@ -949,9 +949,13 @@ curl -v localhost:8070/api/allTraining
 
 Interrupt a training process corresponding to a token. If the token is still marked `ongoing`, its status is set to `killed`.
 
+> **Note:** `killTraining` interrupts the JVM thread. Native training processes (Wapiti, DeLFT) may
+> ignore thread interruption and continue running in the background; the `killed` status is therefore
+> optimistic for native-process back-ends.
+
 |   method  |  request type       | response type        |  parameters  | requirement   |   description             |
 |---        |---                  |---                   |---           |---            |---                        |
-| POST |  application/x-www-form-urlencoded | application/json | token | required | training token to interrupt |
+| DELETE |  - | application/json | token | required | training token to interrupt (query parameter) |
 
 Response status codes:
 
@@ -963,7 +967,7 @@ Response status codes:
 
 Example:
 ```bash
-curl -v -X POST -d "token=Fq2WYPw5M6" localhost:8070/api/killTraining
+curl -v -X DELETE "localhost:8070/api/killTraining?token=Fq2WYPw5M6"
 ```
 
 #### /api/model

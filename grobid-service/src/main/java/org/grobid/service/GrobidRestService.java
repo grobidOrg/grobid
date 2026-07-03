@@ -1013,10 +1013,9 @@ public class GrobidRestService implements GrobidPaths {
     }
 
     @Path(PATH_KILL_TRAINING)
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     @Produces(MediaType.APPLICATION_JSON)
-    @POST
-    public Response killTraining(@FormParam("token") String token) {
+    @DELETE
+    public Response killTraining(@QueryParam("token") String token) {
         return restProcessTraining.killTraining(token);
     }
 

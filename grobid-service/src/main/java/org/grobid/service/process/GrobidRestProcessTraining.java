@@ -16,6 +16,7 @@
 package org.grobid.service.process;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.DigestInputStream;
@@ -70,6 +71,8 @@ public class GrobidRestProcessTraining {
      */
     private final Set<String> modelsInTraining = ConcurrentHashMap.newKeySet();
     private final Map<String, Future<?>> trainingsInProgress = new ConcurrentHashMap<>();
+    /** Maps token → modelKey so that killTraining can release the per-model claim. */
+    private final Map<String, String> tokenModelKey = new ConcurrentHashMap<>();
 
     @Inject
     public GrobidRestProcessTraining() {
@@ -275,8 +278,14 @@ public class GrobidRestProcessTraining {
 
                 ExecutorService executorService = Executors.newFixedThreadPool(1);
                 TrainTask trainTask = new TrainTask(trainer, type, token, ratio, n, incremental, modelKey,
-                        modelsInTraining, trainingsInProgress);
-                FileUtils.writeStringToFile(new File(tokenPath + "/status"), "ongoing", "UTF-8");
+                        modelsInTraining, trainingsInProgress, tokenModelKey);
+                FileUtils.writeStringToFile(new File(tokenPath + "/status"), "ongoing", StandardCharsets.UTF_8);
+                // Pre-register the token before submit() to avoid an orphan entry: if the
+                // task completes (and calls remove()) before the put() below runs, the entry
+                // would remain in the map forever. By inserting null first, any race leaves
+                // at most a null value, which killTraining already handles.
+                trainingsInProgress.put(token, null);
+                tokenModelKey.put(token, modelKey);
                 Future<?> trainingFuture = executorService.submit(trainTask);
                 trainingsInProgress.put(token, trainingFuture);
                 // Orderly shutdown so the worker thread terminates once the submitted training
@@ -287,6 +296,7 @@ public class GrobidRestProcessTraining {
                 // The worker never took ownership of the claim (it releases it on completion),
                 // so release it here to avoid leaving the model permanently blocked.
                 release(modelKey);
+                tokenModelKey.remove(token);
                 throw e;
             }
 
@@ -330,9 +340,11 @@ public class GrobidRestProcessTraining {
         private final String modelKey;
         private final Set<String> registry;
         private final Map<String, Future<?>> trainingsInProgress;
+        private final Map<String, String> tokenModelKey;
 
         public TrainTask(AbstractTrainer trainer, String type, String token, double ratio, int n, boolean incremental,
-                String modelKey, Set<String> registry, Map<String, Future<?>> trainingsInProgress) {
+                String modelKey, Set<String> registry, Map<String, Future<?>> trainingsInProgress,
+                Map<String, String> tokenModelKey) {
             this.trainer = trainer;
             this.type = type;
             this.token = token;
@@ -342,6 +354,7 @@ public class GrobidRestProcessTraining {
             this.modelKey = modelKey;
             this.registry = registry;
             this.trainingsInProgress = trainingsInProgress;
+            this.tokenModelKey = tokenModelKey;
         }
 
         @Override
@@ -381,24 +394,27 @@ public class GrobidRestProcessTraining {
                 //java.lang.System.setErr(java.lang.System.err);
 
                 // update status
-                FileUtils.writeStringToFile(new File(tokenPath + "/status"), "done", "UTF-8");
+                FileUtils.writeStringToFile(new File(tokenPath + "/status"), "done", StandardCharsets.UTF_8);
 
                 // write results, if any
                 if (results != null) {
-                    FileUtils.writeStringToFile(new File(tokenPath + "/report.txt"), results, "UTF-8");
+                    FileUtils.writeStringToFile(new File(tokenPath + "/report.txt"), results, StandardCharsets.UTF_8);
                 }
             } catch (Exception e) {
                 LOGGER.error("Training failed for token " + token, e);
-                try {
-                    writeTrainingStatus(tokenPath, Thread.currentThread().isInterrupted() ? "killed" : "failed");
-                } catch (IOException ioException) {
-                    LOGGER.error("Could not update status for token " + token, ioException);
+                if (tokenPath != null) {
+                    try {
+                        writeTrainingStatus(tokenPath, Thread.currentThread().isInterrupted() ? "killed" : "failed");
+                    } catch (IOException ioException) {
+                        LOGGER.error("Could not update status for token " + token, ioException);
+                    }
                 }
             } finally {
                 // Release the per-model lock so the same model can be trained again, even if the
                 // training above failed (e.g. a runtime exception from the underlying trainer).
                 registry.remove(this.modelKey);
                 trainingsInProgress.remove(this.token);
+                tokenModelKey.remove(this.token);
             }
         }
     }
@@ -410,12 +426,14 @@ public class GrobidRestProcessTraining {
             File historyDir = new File(home.getAbsolutePath() + "/training-history");
             List<String> tokens = new ArrayList<>();
 
+            // This scans the filesystem, so it may surface stale "ongoing" entries from crashed
+            // runs. Callers should treat returned tokens as advisory; use killTraining to clean up.
             File[] tokenDirectories = historyDir.listFiles(File::isDirectory);
             if (tokenDirectories != null) {
                 for (File tokenDirectory : tokenDirectories) {
                     File status = new File(tokenDirectory, "status");
                     if (status.exists()) {
-                        String statusString = FileUtils.readFileToString(status, "UTF-8").trim();
+                        String statusString = FileUtils.readFileToString(status, StandardCharsets.UTF_8).trim();
                         if ("ongoing".equals(statusString)) {
                             tokens.add(tokenDirectory.getName());
                         }
@@ -440,10 +458,7 @@ public class GrobidRestProcessTraining {
     public Response killTraining(String token) {
         Response response;
         try {
-            // Validate the token to prevent directory traversal
-            if (token.contains("..") || token.contains("/") || token.contains("\\")) {
-                throw new GrobidServiceException("Invalid token", Status.BAD_REQUEST);
-            }
+            validateToken(token);
 
             File home = GrobidProperties.getInstance().getGrobidHomePath();
             File tokenDirectory = new File(home.getAbsolutePath() + "/training-history/" + token);
@@ -453,19 +468,34 @@ public class GrobidRestProcessTraining {
             }
 
             File statusFile = new File(tokenDirectory, "status");
-            String statusString = statusFile.exists() ? FileUtils.readFileToString(statusFile, "UTF-8").trim() : null;
+            String statusString = statusFile.exists()
+                    ? FileUtils.readFileToString(statusFile, StandardCharsets.UTF_8).trim()
+                    : null;
 
             Future<?> future = trainingsInProgress.remove(token);
             boolean killed = false;
             if (future != null) {
+                // Note: future.cancel(true) only interrupts the JVM thread. Native training
+                // processes (Wapiti, DeLFT) typically ignore thread interruption and may keep
+                // running; "killed" status here is therefore optimistic.
                 killed = future.cancel(true);
             } else if ("ongoing".equals(statusString)) {
-                // stale training state from a previously interrupted process/container
+                // Stale training state from a previously interrupted process/container — mark as
+                // killed so the model can be retrained.
                 killed = true;
             }
 
-            if (killed && "ongoing".equals(statusString)) {
-                writeTrainingStatus(tokenDirectory.getAbsolutePath(), "killed");
+            if (killed) {
+                if ("ongoing".equals(statusString)) {
+                    writeTrainingStatus(tokenDirectory.getAbsolutePath(), "killed");
+                }
+                // Release the per-model claim so the same model can be trained again. When a
+                // live future exists we own the claim; for a stale entry the claim is already
+                // gone (the original JVM released it), so remove() is a safe no-op.
+                String modelKey = tokenModelKey.remove(token);
+                if (modelKey != null) {
+                    release(modelKey);
+                }
             }
             String responseStatus = killed ? "killed" : (statusString != null ? statusString : "unknown");
 
@@ -486,8 +516,19 @@ public class GrobidRestProcessTraining {
         return response;
     }
 
+    /**
+     * Validate a training token to prevent directory-traversal attacks.
+     *
+     * @throws GrobidServiceException (BAD_REQUEST) if the token contains path-separator characters.
+     */
+    private static void validateToken(String token) {
+        if (token.contains("..") || token.contains("/") || token.contains("\\")) {
+            throw new GrobidServiceException("Invalid token", Status.BAD_REQUEST);
+        }
+    }
+
     private static void writeTrainingStatus(String tokenPath, String status) throws IOException {
-        FileUtils.writeStringToFile(new File(tokenPath + "/status"), status, "UTF-8");
+        FileUtils.writeStringToFile(new File(tokenPath + "/status"), status, StandardCharsets.UTF_8);
     }
 
     /**
@@ -502,10 +543,7 @@ public class GrobidRestProcessTraining {
     public Response resultTraining(String token) {
         Response response = null;
         try {
-            // Validate the token to prevent directory traversal
-            if (token.contains("..") || token.contains("/") || token.contains("\\")) {
-                throw new GrobidServiceException("Invalid token", Status.BAD_REQUEST);
-            }
+            validateToken(token);
 
             // access report file under token subdirectory
             File home = GrobidProperties.getInstance().getGrobidHomePath();
@@ -523,7 +561,7 @@ public class GrobidRestProcessTraining {
             if (!status.exists()) {
                 LOGGER.warn("Status file is missing in the training history corresponding to token " + token);
             } else {
-                statusString = FileUtils.readFileToString(status, "UTF-8");
+                statusString = FileUtils.readFileToString(status, StandardCharsets.UTF_8);
             }
 
             if (statusString != null && statusString.equals("ongoing")) {
@@ -543,7 +581,7 @@ public class GrobidRestProcessTraining {
                                     + " is not matching an existing ongoing or completed training.",
                             Status.BAD_REQUEST);
                 } else {
-                    String reportStr = FileUtils.readFileToString(report, "UTF-8");
+                    String reportStr = FileUtils.readFileToString(report, StandardCharsets.UTF_8);
 
                     response = Response.status(Response.Status.OK)
                             .entity(
