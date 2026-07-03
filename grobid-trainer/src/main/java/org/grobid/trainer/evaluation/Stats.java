@@ -56,6 +56,22 @@ public final class Stats {
         this.labelStats.remove(label);
     }
 
+    /**
+     * Merges the counts from another Stats object into this one.
+     * This is used to aggregate results from parallel evaluation tasks.
+     *
+     * @param other the Stats object to merge into this one
+     */
+    public void merge(Stats other) {
+        for (String label : other.getLabels()) {
+            LabelStat otherStat = other.getLabelStat(label);
+            this.incrementExpected(label, otherStat.getExpected());
+            this.incrementObserved(label, otherStat.getObserved());
+            this.incrementFalsePositive(label, otherStat.getFalsePositive());
+            this.incrementFalseNegative(label, otherStat.getFalseNegative());
+        }
+    }
+
     public void incrementFalsePositive(String label) {
         this.incrementFalsePositive(label, 1);
     }

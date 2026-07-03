@@ -400,4 +400,40 @@ public class StatsTest {
         assertThat(target.getMacroAveragePrecision(), is(0.7777777777777777)); //77.78
     }
 
+    @Test
+    public void testMerge_shouldCombineStats() throws Exception {
+        target.getLabelStat("FOO").setExpected(4);
+        target.getLabelStat("FOO").setObserved(3);
+        target.getLabelStat("FOO").setFalsePositive(1);
+        target.getLabelStat("FOO").setFalseNegative(1);
+
+        Stats other = new Stats();
+        other.getLabelStat("FOO").setExpected(2);
+        other.getLabelStat("FOO").setObserved(1);
+        other.getLabelStat("FOO").setFalsePositive(2);
+        other.getLabelStat("FOO").setFalseNegative(1);
+        other.getLabelStat("BAR").setExpected(3);
+        other.getLabelStat("BAR").setObserved(3);
+
+        target.merge(other);
+
+        assertThat(target.getLabelStat("FOO").getExpected(), is(6));
+        assertThat(target.getLabelStat("FOO").getObserved(), is(4));
+        assertThat(target.getLabelStat("FOO").getFalsePositive(), is(3));
+        assertThat(target.getLabelStat("FOO").getFalseNegative(), is(2));
+        assertThat(target.getLabelStat("BAR").getExpected(), is(3));
+        assertThat(target.getLabelStat("BAR").getObserved(), is(3));
+    }
+
+    @Test
+    public void testMerge_emptySourceShouldNotChange() throws Exception {
+        target.getLabelStat("FOO").setExpected(4);
+        target.getLabelStat("FOO").setObserved(3);
+
+        target.merge(new Stats());
+
+        assertThat(target.getLabelStat("FOO").getExpected(), is(4));
+        assertThat(target.getLabelStat("FOO").getObserved(), is(3));
+    }
+
 }
