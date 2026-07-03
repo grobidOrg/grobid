@@ -327,18 +327,16 @@ public class EndToEndEvaluation {
                 });
 
                 if (refFiles2 == null || refFiles2.length == 0) {
-                    System.out.println("warning: no evaluation (gold) XML data file found under " + dir.getPath());
+                    LOGGER.warn("No evaluation (gold) XML data file found under {}", dir.getPath());
                     return null;
                 }
             }
 
             if (refFiles2.length != 1) {
-                System.out.println(
-                        "warning: more than one evaluation (gold) XML data files found under " + dir.getPath());
-                for (int m = 0; m < refFiles2.length; m++) {
-                    System.out.println(refFiles2[m].getPath());
-                }
-                System.out.println("processing only the first one...");
+                LOGGER.warn(
+                        "More than one evaluation (gold) XML data file found under {}, processing only the first one: {}",
+                        dir.getPath(),
+                        Arrays.toString(refFiles2));
             }
 
             File goldFile = refFiles2[0];
@@ -366,13 +364,14 @@ public class EndToEndEvaluation {
                     File[] refFiles3 = dir.listFiles((dir1, name) -> name.endsWith(fileSuffix));
 
                     if ((refFiles3 == null) || (refFiles3.length == 0)) {
-                        System.out.println("warning: no Grobid TEI file found under " + dir.getPath());
+                        LOGGER.warn("No Grobid TEI file found under {}", dir.getPath());
                         return null;
                     }
 
                     if (refFiles3.length != 1) {
-                        System.out.println("warning: more than one Grobid TEI files found under " + dir.getPath());
-                        System.out.println("processing only the first one...");
+                        LOGGER.warn(
+                                "More than one Grobid TEI file found under {}, processing only the first one",
+                                dir.getPath());
                     }
 
                     File teiFile = refFiles3[0];
@@ -1905,24 +1904,27 @@ public class EndToEndEvaluation {
         }
 
         // Process documents in parallel using a thread pool
-        int nbEvalThreads = Runtime.getRuntime().availableProcessors();
+        int nbEvalThreads = GrobidProperties.getInstance().getMaxConcurrency();
         ExecutorService evalExecutor = Executors.newFixedThreadPool(nbEvalThreads);
-        List<Future<DocumentEvaluationResult>> evalFutures = new ArrayList<>();
+        CompletionService<DocumentEvaluationResult> completion = new ExecutorCompletionService<>(evalExecutor);
+        int submitted = 0;
         for (File dir : selectedDirs) {
-            evalFutures.add(evalExecutor.submit(new DocumentEvaluationCallable(dir, runType, sectionType, fields)));
+            completion.submit(new DocumentEvaluationCallable(dir, runType, sectionType, fields));
+            submitted++;
         }
 
-        // Collect and merge results with a progress bar
+        // Collect and merge results with a progress bar; results are taken in completion
+        // order so the bar advances as each document finishes, not in submission order
         DocumentEvaluationResult mergedResult = new DocumentEvaluationResult();
         System.out.println("\n");
-        try (ProgressBar pb = createProgressBar("Evaluation " + typeEval, evalFutures.size())) {
-            for (Future<DocumentEvaluationResult> future : evalFutures) {
+        try (ProgressBar pb = createProgressBar("Evaluation " + typeEval, submitted)) {
+            for (int i = 0; i < submitted; i++) {
                 try {
-                    DocumentEvaluationResult docResult = future.get();
+                    DocumentEvaluationResult docResult = completion.take().get();
                     pb.step();
                     mergedResult.merge(docResult);
                 } catch (InterruptedException | ExecutionException e) {
-                    e.printStackTrace();
+                    LOGGER.error("Error collecting evaluation result", e);
                 }
             }
         } finally {

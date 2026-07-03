@@ -93,4 +93,87 @@ public class EndToEndEvaluationTest {
         assertThat(labelSpecification, hasSize(0));
     }
 
+    @Test
+    public void testDocumentEvaluationResultMerge_shouldCombineCountsAndStats() throws Exception {
+        EndToEndEvaluation.DocumentEvaluationResult target = new EndToEndEvaluation.DocumentEvaluationResult();
+        target.nbFile = 1;
+        target.totalExpectedInstances = 10;
+        target.totalObservedInstances = 8;
+        target.totalCorrectInstancesStrict = 5;
+        target.totalCorrectInstancesSoft = 6;
+        target.totalCorrectInstancesLevenshtein = 7;
+        target.totalCorrectInstancesRatcliffObershelp = 7;
+        target.totalExpectedReferences = 20;
+        target.totalObservedReferences = 18;
+        target.totalExpectedCitations = 15;
+        target.totalObservedCitations = 14;
+        target.totalCorrectObservedCitations = 12;
+        target.totalWrongObservedCitations = 2;
+        target.match1 = 1;
+        target.match2 = 2;
+        target.match3 = 3;
+        target.match4 = 4;
+        target.strictStats.getLabelStat("FOO").setExpected(4);
+        target.strictStats.getLabelStat("FOO").setObserved(3);
+
+        EndToEndEvaluation.DocumentEvaluationResult other = new EndToEndEvaluation.DocumentEvaluationResult();
+        other.nbFile = 2;
+        other.totalExpectedInstances = 5;
+        other.totalObservedInstances = 4;
+        other.totalCorrectInstancesStrict = 3;
+        other.totalCorrectInstancesSoft = 3;
+        other.totalCorrectInstancesLevenshtein = 4;
+        other.totalCorrectInstancesRatcliffObershelp = 4;
+        other.totalExpectedReferences = 10;
+        other.totalObservedReferences = 9;
+        other.totalExpectedCitations = 8;
+        other.totalObservedCitations = 7;
+        other.totalCorrectObservedCitations = 6;
+        other.totalWrongObservedCitations = 1;
+        other.match1 = 10;
+        other.match2 = 20;
+        other.match3 = 30;
+        other.match4 = 40;
+        other.strictStats.getLabelStat("FOO").setExpected(2);
+        other.strictStats.getLabelStat("FOO").setObserved(1);
+        other.strictStats.getLabelStat("BAR").setExpected(3);
+
+        target.merge(other);
+
+        assertThat(target.nbFile, is(3));
+        assertThat(target.totalExpectedInstances, is(15));
+        assertThat(target.totalObservedInstances, is(12));
+        assertThat(target.totalCorrectInstancesStrict, is(8));
+        assertThat(target.totalCorrectInstancesSoft, is(9));
+        assertThat(target.totalCorrectInstancesLevenshtein, is(11));
+        assertThat(target.totalCorrectInstancesRatcliffObershelp, is(11));
+        assertThat(target.totalExpectedReferences, is(30));
+        assertThat(target.totalObservedReferences, is(27));
+        assertThat(target.totalExpectedCitations, is(23));
+        assertThat(target.totalObservedCitations, is(21));
+        assertThat(target.totalCorrectObservedCitations, is(18));
+        assertThat(target.totalWrongObservedCitations, is(3));
+        assertThat(target.match1, is(11));
+        assertThat(target.match2, is(22));
+        assertThat(target.match3, is(33));
+        assertThat(target.match4, is(44));
+        assertThat(target.strictStats.getLabelStat("FOO").getExpected(), is(6));
+        assertThat(target.strictStats.getLabelStat("FOO").getObserved(), is(4));
+        assertThat(target.strictStats.getLabelStat("BAR").getExpected(), is(3));
+    }
+
+    @Test
+    public void testDocumentEvaluationResultMerge_nullShouldNotChange() throws Exception {
+        EndToEndEvaluation.DocumentEvaluationResult target = new EndToEndEvaluation.DocumentEvaluationResult();
+        target.nbFile = 1;
+        target.totalExpectedInstances = 10;
+        target.strictStats.getLabelStat("FOO").setExpected(4);
+
+        target.merge(null);
+
+        assertThat(target.nbFile, is(1));
+        assertThat(target.totalExpectedInstances, is(10));
+        assertThat(target.strictStats.getLabelStat("FOO").getExpected(), is(4));
+    }
+
 }
