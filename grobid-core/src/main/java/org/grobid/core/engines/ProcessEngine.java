@@ -39,6 +39,7 @@ import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.main.batch.GrobidMainArgs;
 import org.grobid.core.utilities.IOUtilities;
+import org.grobid.core.utilities.counters.impl.CntManagerReportRepresentation;
 import org.grobid.core.visualization.CitationsVisualizer;
 
 public class ProcessEngine implements Closeable {
@@ -185,7 +186,7 @@ public class ProcessEngine implements Closeable {
                     elementCoordinates,
                     pGbdArgs.getSegmentSentences(),
                     pGbdArgs.getAddElementId());
-            System.out.println(Engine.getCntManager());
+            System.out.println(new CntManagerReportRepresentation().getRepresentation(Engine.getCntManager()));
         }
     }
 

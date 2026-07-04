@@ -199,11 +199,12 @@ class CntManagerImpl implements CntManager {
     public synchronized String toString() {
         return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                 .append("counters", getAllCounters())
-                .append("metrics", materializeMetrics())
+                .append("metrics", getMetricsRepresentation())
                 .toString();
     }
 
-    private Map<String, String> materializeMetrics() {
+    @Override
+    public synchronized Map<String, String> getMetricsRepresentation() {
         if (metrics == null || metrics.isEmpty()) {
             return Collections.emptyMap();
         }

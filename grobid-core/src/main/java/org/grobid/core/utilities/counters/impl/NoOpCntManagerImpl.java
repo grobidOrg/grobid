@@ -15,6 +15,7 @@
  */
 package org.grobid.core.utilities.counters.impl;
 
+import java.util.Collections;
 import java.util.Map;
 
 import org.grobid.core.engines.counters.Countable;
@@ -91,5 +92,10 @@ class NoOpCntManagerImpl implements CntManager {
     @Override
     public void removeMetric(String name) {
 
+    }
+
+    @Override
+    public Map<String, String> getMetricsRepresentation() {
+        return Collections.emptyMap();
     }
 }

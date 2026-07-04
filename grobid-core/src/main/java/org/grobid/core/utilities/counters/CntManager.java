@@ -48,4 +48,6 @@ public interface CntManager extends Serializable {
     void addMetric(String name, CntsMetric cntsMetric);
 
     void removeMetric(String name);
+
+    Map<String, String> getMetricsRepresentation();
 }

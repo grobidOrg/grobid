@@ -49,6 +49,7 @@ import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.utilities.Consolidation.GrobidConsolidationService;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.TextUtilities;
+import org.grobid.core.utilities.counters.impl.CntManagerReportRepresentation;
 import org.grobid.trainer.evaluation.utilities.NamespaceContextMap;
 
 /**
@@ -798,7 +799,7 @@ public class EvaluationDOIMatching {
                 System.out.println(report);
             }
 
-            System.out.println(Engine.getCntManager());
+            System.out.println(new CntManagerReportRepresentation().getRepresentation(Engine.getCntManager()));
         } catch (Exception e) {
             e.printStackTrace();
         }

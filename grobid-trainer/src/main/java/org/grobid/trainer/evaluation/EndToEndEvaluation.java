@@ -54,6 +54,7 @@ import org.grobid.core.factory.GrobidPoolingFactory;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.utilities.UnicodeUtil;
+import org.grobid.core.utilities.counters.impl.CntManagerReportRepresentation;
 import org.grobid.trainer.evaluation.utilities.FieldSpecification;
 import org.grobid.trainer.evaluation.utilities.FieldSpecificationFlavors;
 import org.grobid.trainer.evaluation.utilities.NamespaceContextMap;
@@ -2372,7 +2373,7 @@ public class EndToEndEvaluation {
             String report = eval.evaluationGrobid(runGrobidVal, reportMD);
 
             System.out.println(report);
-            System.out.println(Engine.getCntManager());
+            System.out.println(new CntManagerReportRepresentation().getRepresentation(Engine.getCntManager()));
 
             // write markdown report
             File fileMarkDown = new File(
