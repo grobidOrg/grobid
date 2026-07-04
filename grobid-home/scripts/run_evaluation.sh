@@ -6,11 +6,13 @@
 # Before running the datasets, it performs a pre-flight check of grobid.yaml
 # (./gradlew checkEvalConfig): biblio-glutton consolidation must be enabled and
 # reachable, and the DeLFT-recommended models must use engine: "delft". If the
-# check fails the run is aborted. Bypass it with -k / --skip-checks (or SKIP_CHECKS=1).
+# check fails the run is aborted. Use -w / --warn to only report problems and run
+# anyway, or -k / --skip-checks (or SKIP_CHECKS=1) to skip the check entirely.
 #
 # Usage examples:
 #   sh run_evaluation.sh -d /abs/path/to/dataset_root -s master
 #   sh run_evaluation.sh -d /data/grobid-eval -s master -r 0 -f 0.1 -o /tmp/reports -n
+#   sh run_evaluation.sh -d /data/grobid-eval --warn          # report config issues but still run
 #   sh run_evaluation.sh -d /data/grobid-eval --skip-checks   # skip the config pre-flight check
 
 set -o pipefail
@@ -30,6 +32,7 @@ Options:
   -o OUT_DIR          Directory where per-dataset reports will be written (default: current directory)
   -p PATTERN          Glob pattern for dataset directories inside EVAL_ROOT (default: '*')
   -k                  Skip the grobid.yaml pre-flight config check (--skip-checks, or SKIP_CHECKS=1)
+  -w                  Warn only: report config problems but run the evaluation anyway (--warn)
   -n                  Dry-run: print commands but do not execute them
   -h                  Show this help
 
@@ -49,6 +52,7 @@ PATTERN='*'
 DRY_RUN=0
 JAVA_NATIVE_LIB=""
 SKIP_CHECKS="${SKIP_CHECKS:-0}"
+CHECK_MODE="${CHECK_MODE:-strict}"
 
 # record where the user invoked the script from (so ./gradlew is picked from here)
 START_PWD="$(pwd)"
@@ -67,13 +71,14 @@ for a in "$@"; do
   case "$a" in
     --dry-run) NEWARGS+=("-n") ;;
     --skip-checks) NEWARGS+=("-k") ;;
+    --warn) NEWARGS+=("-w") ;;
     *) NEWARGS+=("$a") ;;
   esac
 done
 set -- "${NEWARGS[@]}"
 
 # parse short options; we'll handle long options (like --dry-run) after getopts
-while getopts ":d:s:r:f:l:g:j:o:p:knh" opt; do
+while getopts ":d:s:r:f:l:g:j:o:p:kwnh" opt; do
   case ${opt} in
     d ) EVAL_ROOT="$OPTARG" ;;
     s ) REPORT_SUFFIX="$OPTARG" ;;
@@ -85,6 +90,7 @@ while getopts ":d:s:r:f:l:g:j:o:p:knh" opt; do
     o ) OUT_DIR="$OPTARG" ;;
     p ) PATTERN="$OPTARG" ;;
     k ) SKIP_CHECKS=1 ;; # short flag and mapped --skip-checks
+    w ) CHECK_MODE="warn" ;; # short flag and mapped --warn (report config problems but continue)
     n ) DRY_RUN=1 ;; # legacy short flag and mapped --dry-run
     h ) usage; exit 0 ;;
     \? ) echo "Invalid option: -$OPTARG" >&2; usage; exit 2 ;;
@@ -100,6 +106,9 @@ for arg in "$@"; do
   fi
   if [ "${arg}" = "--skip-checks" ]; then
     SKIP_CHECKS=1
+  fi
+  if [ "${arg}" = "--warn" ]; then
+    CHECK_MODE="warn"
   fi
 done
 
@@ -159,21 +168,25 @@ echo "run=${RUN}, fileRatio=${FILERATIO}, flavor='${FLAVOR}', pattern='${PATTERN
 
 # Pre-flight: validate grobid.yaml is configured for evaluation (biblio-glutton
 # enabled and reachable, DeLFT-recommended models enabled) before running anything.
-check_cmd=("${GRADLEW_PATH}" --console=plain checkEvalConfig)
+# In "warn" mode (--warn) problems are reported but the evaluation still proceeds.
+check_cmd=("${GRADLEW_PATH}" --console=plain checkEvalConfig "-PcheckMode=${CHECK_MODE}")
 if [ "${SKIP_CHECKS}" = "1" ]; then
   echo "Skipping grobid.yaml pre-flight config check (--skip-checks)."
 elif [ ${DRY_RUN} -eq 1 ]; then
   echo "DRY: ${check_cmd[*]}"
 else
-  echo "===== Pre-flight: checking grobid.yaml configuration ====="
+  echo "===== Pre-flight: checking grobid.yaml configuration (mode=${CHECK_MODE}) ====="
   (cd "${START_PWD}" && "${check_cmd[@]}")
   check_exit=$?
-  if [ ${check_exit} -ne 0 ]; then
+  if [ "${CHECK_MODE}" = "warn" ]; then
+    echo "===== Pre-flight check completed (warn mode; see report above) ====="
+  elif [ ${check_exit} -ne 0 ]; then
     echo "Aborting: grobid.yaml is not correctly configured for evaluation." >&2
-    echo "Fix the configuration (see doc/End-to-end-evaluation.md) or re-run with --skip-checks to bypass." >&2
+    echo "Fix the configuration (see doc/End-to-end-evaluation.md), or re-run with --warn (report only) or --skip-checks (bypass)." >&2
     exit ${check_exit}
+  else
+    echo "===== Pre-flight check passed ====="
   fi
-  echo "===== Pre-flight check passed ====="
 fi
 
 overall_status=0

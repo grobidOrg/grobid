@@ -651,9 +651,13 @@ project(":grobid-trainer") {
     // Pre-flight check of grobid.yaml before running the end-to-end evaluation:
     // verifies biblio-glutton consolidation is enabled and reachable, and that the
     // DeLFT-recommended models are set to engine: "delft". Fails (exit 1) if not.
+    // Pass -PcheckMode=warn to only report problems without failing (exit 0).
     task(checkEvalConfig, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
         mainClass = 'org.grobid.trainer.evaluation.EvaluationConfigCheck'
         classpath = sourceSets.main.runtimeClasspath
+        if (getArg('checkMode', 'strict') == 'warn') {
+            args 'warn'
+        }
         def javaLibraryPath = getJavaLibraryPath()
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
             jvmArgs '-Xmx1024m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"

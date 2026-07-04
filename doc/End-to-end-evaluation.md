@@ -91,13 +91,22 @@ Because a misconfigured `grobid.yaml` silently produces degraded results over a 
 
 It verifies that consolidation is set to biblio-glutton **and** that the glutton URL actually answers, and that the five models above resolve to the DeLFT engine. It prints an itemized report and exits non-zero if anything is wrong.
 
-The multi-dataset runner script `grobid-home/scripts/run_evaluation.sh` (which loops over every dataset sub-directory under a root folder and runs `jatsEval` on each) runs this check automatically before starting and aborts if it fails. Bypass it with `--skip-checks` (or `-k`, or `SKIP_CHECKS=1`):
+If you intentionally want to benchmark a non-standard configuration (for example CRF instead of DeLFT for a given model, or without glutton), run the check in **warn mode** — it still reports what differs from the recommended setup but exits 0:
 
 ```bash
-# run the four gold corpora, with the pre-flight config check
+> ./gradlew checkEvalConfig -PcheckMode=warn
+```
+
+The multi-dataset runner script `grobid-home/scripts/run_evaluation.sh` (which loops over every dataset sub-directory under a root folder and runs `jatsEval` on each) runs this check automatically before starting and aborts if it fails. Use `--warn` (`-w`) to report problems but run anyway, or `--skip-checks` (`-k`, or `SKIP_CHECKS=1`) to skip the check entirely:
+
+```bash
+# run the four gold corpora, with the pre-flight config check (aborts if misconfigured)
 > sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets -s master -r 1
 
-# skip the pre-flight check
+# report config issues but run anyway (e.g. benchmarking a variant configuration)
+> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets --warn
+
+# skip the pre-flight check entirely
 > sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets --skip-checks
 ```
 
