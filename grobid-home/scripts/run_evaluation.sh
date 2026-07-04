@@ -2,15 +2,22 @@
 
 # run_evaluation.sh
 # Parameterized evaluation runner for Grobid end-to-end evaluation (jatsEval)
+#
+# Before running the datasets, it performs a pre-flight check of grobid.yaml
+# (./gradlew checkEvalConfig): biblio-glutton consolidation must be enabled and
+# reachable, and the DeLFT-recommended models must use engine: "delft". If the
+# check fails the run is aborted. Bypass it with -k / --skip-checks (or SKIP_CHECKS=1).
+#
 # Usage examples:
 #   sh run_evaluation.sh -d /abs/path/to/dataset_root -s master
 #   sh run_evaluation.sh -d /data/grobid-eval -s master -r 0 -f 0.1 -o /tmp/reports -n
+#   sh run_evaluation.sh -d /data/grobid-eval --skip-checks   # skip the config pre-flight check
 
 set -o pipefail
 
 usage() {
     cat <<EOF
-Usage: $0 -d EVAL_ROOT [-s REPORT_SUFFIX] [-r RUN] [-f FILERATIO] [-l FLAVOR] [-g GRADLEW] [-j JAVA_NATIVE_LIB] [-o OUT_DIR] [-p PATTERN] [-n]
+Usage: $0 -d EVAL_ROOT [-s REPORT_SUFFIX] [-r RUN] [-f FILERATIO] [-l FLAVOR] [-g GRADLEW] [-j JAVA_NATIVE_LIB] [-o OUT_DIR] [-p PATTERN] [-k] [-n]
 
 Options:
   -d EVAL_ROOT        Root folder containing one subdirectory per article-dataset (required)
@@ -22,6 +29,7 @@ Options:
   -j JAVA_NATIVE_LIB  Path to lmdb native library (optional). If provided, sets JAVA_TOOL_OPTIONS accordingly.
   -o OUT_DIR          Directory where per-dataset reports will be written (default: current directory)
   -p PATTERN          Glob pattern for dataset directories inside EVAL_ROOT (default: '*')
+  -k                  Skip the grobid.yaml pre-flight config check (--skip-checks, or SKIP_CHECKS=1)
   -n                  Dry-run: print commands but do not execute them
   -h                  Show this help
 
@@ -40,6 +48,7 @@ OUT_DIR="."
 PATTERN='*'
 DRY_RUN=0
 JAVA_NATIVE_LIB=""
+SKIP_CHECKS="${SKIP_CHECKS:-0}"
 
 # record where the user invoked the script from (so ./gradlew is picked from here)
 START_PWD="$(pwd)"
@@ -57,13 +66,14 @@ NEWARGS=()
 for a in "$@"; do
   case "$a" in
     --dry-run) NEWARGS+=("-n") ;;
+    --skip-checks) NEWARGS+=("-k") ;;
     *) NEWARGS+=("$a") ;;
   esac
 done
 set -- "${NEWARGS[@]}"
 
 # parse short options; we'll handle long options (like --dry-run) after getopts
-while getopts ":d:s:r:f:l:g:j:o:p:nh" opt; do
+while getopts ":d:s:r:f:l:g:j:o:p:knh" opt; do
   case ${opt} in
     d ) EVAL_ROOT="$OPTARG" ;;
     s ) REPORT_SUFFIX="$OPTARG" ;;
@@ -74,6 +84,7 @@ while getopts ":d:s:r:f:l:g:j:o:p:nh" opt; do
     j ) JAVA_NATIVE_LIB="$OPTARG" ;;
     o ) OUT_DIR="$OPTARG" ;;
     p ) PATTERN="$OPTARG" ;;
+    k ) SKIP_CHECKS=1 ;; # short flag and mapped --skip-checks
     n ) DRY_RUN=1 ;; # legacy short flag and mapped --dry-run
     h ) usage; exit 0 ;;
     \? ) echo "Invalid option: -$OPTARG" >&2; usage; exit 2 ;;
@@ -86,6 +97,9 @@ shift $((OPTIND -1))
 for arg in "$@"; do
   if [ "${arg}" = "--dry-run" ]; then
     DRY_RUN=1
+  fi
+  if [ "${arg}" = "--skip-checks" ]; then
+    SKIP_CHECKS=1
   fi
 done
 
@@ -142,6 +156,25 @@ echo "Output dir: ${OUT_DIR}"
 echo "Gradle wrapper: ${GRADLEW_PATH}"
 echo "run=${RUN}, fileRatio=${FILERATIO}, flavor='${FLAVOR}', pattern='${PATTERN}', report_suffix=${REPORT_SUFFIX}"
 [ ${DRY_RUN} -eq 1 ] && echo "DRY RUN: commands will not be executed"
+
+# Pre-flight: validate grobid.yaml is configured for evaluation (biblio-glutton
+# enabled and reachable, DeLFT-recommended models enabled) before running anything.
+check_cmd=("${GRADLEW_PATH}" --console=plain checkEvalConfig)
+if [ "${SKIP_CHECKS}" = "1" ]; then
+  echo "Skipping grobid.yaml pre-flight config check (--skip-checks)."
+elif [ ${DRY_RUN} -eq 1 ]; then
+  echo "DRY: ${check_cmd[*]}"
+else
+  echo "===== Pre-flight: checking grobid.yaml configuration ====="
+  (cd "${START_PWD}" && "${check_cmd[@]}")
+  check_exit=$?
+  if [ ${check_exit} -ne 0 ]; then
+    echo "Aborting: grobid.yaml is not correctly configured for evaluation." >&2
+    echo "Fix the configuration (see doc/End-to-end-evaluation.md) or re-run with --skip-checks to bypass." >&2
+    exit ${check_exit}
+  fi
+  echo "===== Pre-flight check passed ====="
+fi
 
 overall_status=0
 

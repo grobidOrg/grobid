@@ -641,11 +641,28 @@ project(":grobid-trainer") {
     }
 
     // run like this:
+    // ./gradlew checkEvalConfig
     // ./gradlew jatsEval -Pp2t=/path/to/goldenSet
     // ./gradlew jatsEval -Pp2t=/path/to/goldenSet -Prun=1 -PfileRatio=0.1
     // ./gradlew teiEval -Pp2t=/path/to/goldenSet
     // ./gradlew PrepareDOIMatching -Pp2t=ABS_PATH_TO_PMC/PMC_sample_1943
     // ./gradlew EvaluateDOIMatching -Pp2t=ABS_PATH_TO_PMC/PMC_sample_1943
+
+    // Pre-flight check of grobid.yaml before running the end-to-end evaluation:
+    // verifies biblio-glutton consolidation is enabled and reachable, and that the
+    // DeLFT-recommended models are set to engine: "delft". Fails (exit 1) if not.
+    task(checkEvalConfig, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
+        mainClass = 'org.grobid.trainer.evaluation.EvaluationConfigCheck'
+        classpath = sourceSets.main.runtimeClasspath
+        def javaLibraryPath = getJavaLibraryPath()
+        if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
+            jvmArgs '-Xmx1024m', "--add-opens", "java.base/java.lang=ALL-UNNAMED"
+        } else {
+            jvmArgs '-Xmx1024m'
+        }
+        systemProperty "java.library.path", "${javaLibraryPath}"
+    }
+
     task(jatsEval, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
         mainClass = 'org.grobid.trainer.evaluation.EndToEndEvaluation'
         classpath = sourceSets.main.runtimeClasspath

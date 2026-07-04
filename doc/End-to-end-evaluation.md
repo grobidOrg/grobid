@@ -71,6 +71,36 @@ For running the evaluation, the tool assumes that the files are organised in a s
 
 JATS/NLM is a very loose XML format, in the sense that there are multiple ways to encode the same information. As a consequence, there are a variety of JATS flavors depending on the publisher and it is not possible to guarantee that any JATS files will be supported as gold standard dataset by the `jatsEval` process. PMC and bioRxiv JATS articles are supported, but for a larger variety of JATS files it is recommended to convert them first into TEI with [Pub2TEI](https://github.com/kermitt2/Pub2TEI) and use the `teiEval` process. [Pub2TEI](https://github.com/kermitt2/Pub2TEI) supports all the JATS/NLM variants we are aware of, and convert them into a constrained and unambiguous single TEI format without information loss. 
 
+## Configuration for evaluation
+
+The evaluation tasks (`jatsEval`/`teiEval`) load the default `grobid-home/config/grobid.yaml`. For results comparable to the published [benchmarks](benchmarks/Benchmarking.md), that configuration must be set up as follows:
+
+* **Consolidation via biblio-glutton** — bibliographical reference matching must use a running [biblio-glutton](https://github.com/kermitt2/biblio-glutton) service, not the default CrossRef REST API. In `grobid.yaml`, set `consolidation.service: "glutton"` and point `consolidation.glutton.url` at your glutton instance. See [Consolidation](Consolidation.md).
+
+* **Deep Learning (DeLFT) models** — the models for which Deep Learning significantly outperforms CRF must use `engine: "delft"`: `citation`, `affiliation-address`, `reference-segmenter`, `header` and `funding-acknowledgement`. See [Deep Learning models](Deep-Learning-models.md).
+
+A ready-made preset with both already configured is shipped as `grobid-home/config/grobid-evaluation.yaml` — copy it over `grobid.yaml` (adjusting the glutton URL) as the simplest way to satisfy the requirements.
+
+### Pre-flight configuration check
+
+Because a misconfigured `grobid.yaml` silently produces degraded results over a run that can take hours, a pre-flight check is provided:
+
+```bash
+> ./gradlew checkEvalConfig
+```
+
+It verifies that consolidation is set to biblio-glutton **and** that the glutton URL actually answers, and that the five models above resolve to the DeLFT engine. It prints an itemized report and exits non-zero if anything is wrong.
+
+The multi-dataset runner script `grobid-home/scripts/run_evaluation.sh` (which loops over every dataset sub-directory under a root folder and runs `jatsEval` on each) runs this check automatically before starting and aborts if it fails. Bypass it with `--skip-checks` (or `-k`, or `SKIP_CHECKS=1`):
+
+```bash
+# run the four gold corpora, with the pre-flight config check
+> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets -s master -r 1
+
+# skip the pre-flight check
+> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets --skip-checks
+```
+
 ## Running and evaluating 
 
 ### JATS encoded corpus, e.g. PubMed Central, bioRxiv, PLOS, eLife
