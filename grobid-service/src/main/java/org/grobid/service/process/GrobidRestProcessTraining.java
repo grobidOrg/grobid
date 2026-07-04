@@ -29,6 +29,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -284,17 +285,15 @@ public class GrobidRestProcessTraining {
                 TrainTask trainTask = new TrainTask(trainer, type, token, ratio, n, incremental, modelKey,
                         modelsInTraining, trainingsInProgress, tokenModelKey);
                 FileUtils.writeStringToFile(new File(tokenPath + "/status"), "ongoing", StandardCharsets.UTF_8);
-                // Step 1 – pre-register a null placeholder BEFORE submit().
-                // Without this, a fast-finishing task could call remove() before the real
-                // Future is put(), leaving a permanent orphan entry in the map.
-                trainingsInProgress.put(token, null);
+                // Register the real Future BEFORE the task can run. Building a FutureTask ourselves
+                // (instead of submit(), which returns only after the task may already have started)
+                // lets us put() the handle first, so killTraining can always find it and a
+                // fast-finishing task's finally-block cannot remove() before we register. A null
+                // placeholder is not an option: ConcurrentHashMap forbids null values.
+                FutureTask<Void> trainingFuture = new FutureTask<>(trainTask, null);
+                trainingsInProgress.put(token, trainingFuture);
                 tokenModelKey.put(token, modelKey);
-                Future<?> trainingFuture = executorService.submit(trainTask);
-                // Step 2 – swap the placeholder for the real Future so killTraining can call
-                // cancel(). replace() (not put()) is intentional: if the task already finished and
-                // its finally-block removed the entry, replace() is a no-op, so a completed Future
-                // is not re-inserted as a permanent orphan.
-                trainingsInProgress.replace(token, trainingFuture);
+                executorService.execute(trainingFuture);
                 // Orderly shutdown so the worker thread terminates once the submitted training
                 // task completes. Without this the FixedThreadPool keeps its core thread alive
                 // indefinitely and every request would permanently leak one JVM thread (DoS).
