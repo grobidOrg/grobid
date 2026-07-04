@@ -927,11 +927,13 @@ curl -v -X POST -d "token=Fq2WYPw5M6" localhost:8070/api/trainingResult
 
 #### /api/allTraining
 
-List all tokens currently marked as ongoing.
+List the tokens of the trainings currently running in this server instance. The list reflects live,
+in-memory state, so after a server restart it is empty (a training runs in-process and does not
+survive a restart) even if a `status` file was left as `ongoing` on disk.
 
 |   method  |  request type       | response type        |  parameters  | requirement   |   description             |
 |---        |---                  |---                   |---           |---            |---                        |
-| GET |  - | application/json | - | - | list training tokens currently in `ongoing` state |
+| GET |  - | application/json | - | - | list tokens of trainings currently running in this instance |
 
 Response status codes:
 

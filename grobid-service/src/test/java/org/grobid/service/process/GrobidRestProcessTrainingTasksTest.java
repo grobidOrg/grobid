@@ -51,16 +51,30 @@ public class GrobidRestProcessTrainingTasksTest {
     }
 
     @Test
-    public void allTraining_shouldListOnlyOngoingTokens() throws Exception {
-        String ongoingToken = createTokenWithStatus("ongoing");
-        String doneToken = createTokenWithStatus("done");
+    public void allTraining_shouldListTrainingsRunningInThisJvm() {
+        target.registerRunningTrainingForTest("running-token");
 
         Response response = target.allTraining();
 
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
         String body = (String) response.getEntity();
-        assertTrue(body.contains(ongoingToken));
-        assertFalse(body.contains(doneToken));
+        assertTrue(body.contains("running-token"));
+    }
+
+    @Test
+    public void allTraining_afterRestart_doesNotReportOrphanedOngoingStatusFile() throws Exception {
+        // Reproduces the restart bug: an "ongoing" status file is left on disk by a previous JVM,
+        // but a fresh instance has an empty registry. allTraining reports live trainings only, so
+        // the orphaned token must NOT appear as running.
+        String orphanedToken = createTokenWithStatus("ongoing");
+
+        Response response = target.allTraining();
+
+        assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
+        String body = (String) response.getEntity();
+        assertFalse(
+                "an orphaned on-disk 'ongoing' status must not be reported as running",
+                body.contains(orphanedToken));
     }
 
     @Test

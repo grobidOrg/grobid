@@ -99,6 +99,16 @@ public class GrobidRestProcessTraining {
     }
 
     /**
+     * Visible for testing: register {@code token} in the live registry as a currently running
+     * training, as {@link #trainModel} does. Lets tests exercise {@link #allTraining()} without
+     * spinning up a real trainer (constructing one requires a full GROBID engine).
+     */
+    void registerRunningTrainingForTest(String token) {
+        trainingsInProgress.put(token, new FutureTask<Void>(() -> {
+        }, null));
+    }
+
+    /**
      * Check if a model name matches an existing GROBID model, as declared in the GrobidModels registry.
      */
     public static boolean containsModel(String targetModel) {
@@ -430,24 +440,12 @@ public class GrobidRestProcessTraining {
     public Response allTraining() {
         Response response;
         try {
-            File home = GrobidProperties.getInstance().getGrobidHomePath();
-            File historyDir = new File(home.getAbsolutePath() + "/training-history");
-            List<String> tokens = new ArrayList<>();
-
-            // This scans the filesystem, so it may surface stale "ongoing" entries from crashed
-            // runs. Callers should treat returned tokens as advisory; use killTraining to clean up.
-            File[] tokenDirectories = historyDir.listFiles(File::isDirectory);
-            if (tokenDirectories != null) {
-                for (File tokenDirectory : tokenDirectories) {
-                    File status = new File(tokenDirectory, "status");
-                    if (status.exists()) {
-                        String statusString = FileUtils.readFileToString(status, StandardCharsets.UTF_8).trim();
-                        if ("ongoing".equals(statusString)) {
-                            tokens.add(tokenDirectory.getName());
-                        }
-                    }
-                }
-            }
+            // Report the trainings actually running in this JVM, taken from the in-memory registry
+            // rather than from the on-disk "ongoing" status files. A training runs in-process and
+            // cannot survive a restart, so the registry is the authoritative source of what is live:
+            // after a restart it is empty and no orphaned "ongoing" status file is reported as
+            // running. The status files remain the history record consulted by resultTraining.
+            List<String> tokens = new ArrayList<>(trainingsInProgress.keySet());
 
             response = Response.status(Response.Status.OK)
                     .entity(new ObjectMapper().writeValueAsString(Map.of("tokens", tokens)))
