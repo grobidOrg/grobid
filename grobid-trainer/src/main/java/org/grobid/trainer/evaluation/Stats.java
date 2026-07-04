@@ -1,3 +1,18 @@
+/*
+ * Copyright 2008-2026 GROBID contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.grobid.trainer.evaluation;
 
 import java.util.Set;
@@ -39,6 +54,22 @@ public final class Stats {
 
     public void removeLabel(String label) {
         this.labelStats.remove(label);
+    }
+
+    /**
+     * Merges the counts from another Stats object into this one.
+     * This is used to aggregate results from parallel evaluation tasks.
+     *
+     * @param other the Stats object to merge into this one
+     */
+    public void merge(Stats other) {
+        for (String label : other.getLabels()) {
+            LabelStat otherStat = other.getLabelStat(label);
+            this.incrementExpected(label, otherStat.getExpected());
+            this.incrementObserved(label, otherStat.getObserved());
+            this.incrementFalsePositive(label, otherStat.getFalsePositive());
+            this.incrementFalseNegative(label, otherStat.getFalseNegative());
+        }
     }
 
     public void incrementFalsePositive(String label) {

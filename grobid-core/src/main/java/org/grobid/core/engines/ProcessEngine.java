@@ -1,3 +1,18 @@
+/*
+ * Copyright 2008-2026 GROBID contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.grobid.core.engines;
 
 import static org.apache.commons.collections4.CollectionUtils.isEmpty;
@@ -24,6 +39,7 @@ import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.main.batch.GrobidMainArgs;
 import org.grobid.core.utilities.IOUtilities;
+import org.grobid.core.utilities.counters.impl.CntManagerReportRepresentation;
 import org.grobid.core.visualization.CitationsVisualizer;
 
 public class ProcessEngine implements Closeable {
@@ -170,7 +186,7 @@ public class ProcessEngine implements Closeable {
                     elementCoordinates,
                     pGbdArgs.getSegmentSentences(),
                     pGbdArgs.getAddElementId());
-            System.out.println(Engine.getCntManager());
+            System.out.println(new CntManagerReportRepresentation().getRepresentation(Engine.getCntManager()));
         }
     }
 

@@ -1,15 +1,35 @@
+/*
+ * Copyright 2008-2026 GROBID contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.grobid.service.process;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.DigestInputStream;
 import java.security.MessageDigest;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
-import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.FutureTask;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -44,30 +64,48 @@ public class GrobidRestProcessTraining {
     private static final Logger LOGGER = LoggerFactory.getLogger(GrobidRestProcessTraining.class);
 
     /**
-     * Set of models (by lowercase name) whose training is currently running. Used to reject a
-     * new training request for a model that is already being trained. The class is a singleton,
-     * so this instance field is shared across all requests in the JVM. A ConcurrentHashMap-backed
-     * set gives an atomic claim ({@code add} returns false when the key is already present).
+     * Models (by lowercase name) whose training is currently running, mapped to the token of the
+     * training that owns the claim. Used to reject a new training request for a model that is
+     * already being trained. The class is a singleton, so this instance field is shared across all
+     * requests in the JVM. The map value (the owning token) lets a release be owner-checked, so a
+     * stale kill of an old token cannot free a claim that a newer training of the same model holds.
      */
-    private final Set<String> modelsInTraining = ConcurrentHashMap.newKeySet();
+    private final Map<String, String> modelsInTraining = new ConcurrentHashMap<>();
+    private final Map<String, Future<?>> trainingsInProgress = new ConcurrentHashMap<>();
+    /** Maps token → modelKey so that killTraining can release the per-model claim. */
+    private final Map<String, String> tokenModelKey = new ConcurrentHashMap<>();
 
     @Inject
     public GrobidRestProcessTraining() {
     }
 
     /**
-     * Atomically claim the in-training slot for a model. Returns {@code false} if a training for
-     * this model is already running (the slot was not claimed by this caller).
+     * Atomically claim the in-training slot for a model on behalf of {@code token}. Returns
+     * {@code false} if a training for this model is already running (the slot was not claimed by
+     * this caller).
      */
-    boolean tryClaim(String modelKey) {
-        return modelsInTraining.add(modelKey);
+    boolean tryClaim(String modelKey, String token) {
+        return modelsInTraining.putIfAbsent(modelKey, token) == null;
     }
 
     /**
-     * Release the in-training slot for a model so it can be trained again.
+     * Release the in-training slot for a model so it can be trained again, but only if it is still
+     * owned by {@code token}. This owner check (an atomic {@code remove(key, value)}) prevents a
+     * kill/cleanup of a finished training from freeing a claim that a newer training of the same
+     * model has since acquired.
      */
-    void release(String modelKey) {
-        modelsInTraining.remove(modelKey);
+    void release(String modelKey, String token) {
+        modelsInTraining.remove(modelKey, token);
+    }
+
+    /**
+     * Visible for testing: register {@code token} in the live registry as a currently running
+     * training, as {@link #trainModel} does. Lets tests exercise {@link #allTraining()} without
+     * spinning up a real trainer (constructing one requires a full GROBID engine).
+     */
+    void registerRunningTrainingForTest(String token) {
+        trainingsInProgress.put(token, new FutureTask<Void>(() -> {
+        }, null));
     }
 
     /**
@@ -234,7 +272,7 @@ public class GrobidRestProcessTraining {
             // variants (e.g. "header" vs "header-light") write different model files and are
             // distinct models, so they are keyed separately and do not block each other.
             String modelKey = model.toLowerCase();
-            if (!tryClaim(modelKey)) {
+            if (!tryClaim(modelKey, token)) {
                 LOGGER.warn(
                         "Rejected training request for model '{}': a training for this model is already in progress.",
                         model);
@@ -255,9 +293,17 @@ public class GrobidRestProcessTraining {
 
                 ExecutorService executorService = Executors.newFixedThreadPool(1);
                 TrainTask trainTask = new TrainTask(trainer, type, token, ratio, n, incremental, modelKey,
-                        modelsInTraining);
-                FileUtils.writeStringToFile(new File(tokenPath + "/status"), "ongoing", "UTF-8");
-                executorService.submit(trainTask);
+                        modelsInTraining, trainingsInProgress, tokenModelKey);
+                FileUtils.writeStringToFile(new File(tokenPath + "/status"), "ongoing", StandardCharsets.UTF_8);
+                // Register the real Future BEFORE the task can run. Building a FutureTask ourselves
+                // (instead of submit(), which returns only after the task may already have started)
+                // lets us put() the handle first, so killTraining can always find it and a
+                // fast-finishing task's finally-block cannot remove() before we register. A null
+                // placeholder is not an option: ConcurrentHashMap forbids null values.
+                FutureTask<Void> trainingFuture = new FutureTask<>(trainTask, null);
+                trainingsInProgress.put(token, trainingFuture);
+                tokenModelKey.put(token, modelKey);
+                executorService.execute(trainingFuture);
                 // Orderly shutdown so the worker thread terminates once the submitted training
                 // task completes. Without this the FixedThreadPool keeps its core thread alive
                 // indefinitely and every request would permanently leak one JVM thread (DoS).
@@ -265,7 +311,9 @@ public class GrobidRestProcessTraining {
             } catch (Exception e) {
                 // The worker never took ownership of the claim (it releases it on completion),
                 // so release it here to avoid leaving the model permanently blocked.
-                release(modelKey);
+                release(modelKey, token);
+                tokenModelKey.remove(token);
+                trainingsInProgress.remove(token);
                 throw e;
             }
 
@@ -307,10 +355,13 @@ public class GrobidRestProcessTraining {
         private double ratio = 1.0;
         private boolean incremental = false;
         private final String modelKey;
-        private final Set<String> registry;
+        private final Map<String, String> registry;
+        private final Map<String, Future<?>> trainingsInProgress;
+        private final Map<String, String> tokenModelKey;
 
         public TrainTask(AbstractTrainer trainer, String type, String token, double ratio, int n, boolean incremental,
-                String modelKey, Set<String> registry) {
+                String modelKey, Map<String, String> registry, Map<String, Future<?>> trainingsInProgress,
+                Map<String, String> tokenModelKey) {
             this.trainer = trainer;
             this.type = type;
             this.token = token;
@@ -319,13 +370,16 @@ public class GrobidRestProcessTraining {
             this.incremental = incremental;
             this.modelKey = modelKey;
             this.registry = registry;
+            this.trainingsInProgress = trainingsInProgress;
+            this.tokenModelKey = tokenModelKey;
         }
 
         @Override
         public void run() {
+            String tokenPath = null;
             try {
                 File home = GrobidProperties.getInstance().getGrobidHomePath();
-                String tokenPath = home.getAbsolutePath() + "/training-history/" + this.token;
+                tokenPath = home.getAbsolutePath() + "/training-history/" + this.token;
                 File tokenDir = new File(tokenPath);
 
                 String results = null;
@@ -357,20 +411,133 @@ public class GrobidRestProcessTraining {
                 //java.lang.System.setErr(java.lang.System.err);
 
                 // update status
-                FileUtils.writeStringToFile(new File(tokenPath + "/status"), "done", "UTF-8");
+                FileUtils.writeStringToFile(new File(tokenPath + "/status"), "done", StandardCharsets.UTF_8);
 
                 // write results, if any
                 if (results != null) {
-                    FileUtils.writeStringToFile(new File(tokenPath + "/report.txt"), results, "UTF-8");
+                    FileUtils.writeStringToFile(new File(tokenPath + "/report.txt"), results, StandardCharsets.UTF_8);
                 }
             } catch (Exception e) {
                 LOGGER.error("Training failed for token " + token, e);
+                if (tokenPath != null) {
+                    try {
+                        writeTrainingStatus(tokenPath, Thread.currentThread().isInterrupted() ? "killed" : "failed");
+                    } catch (IOException ioException) {
+                        LOGGER.error("Could not update status for token " + token, ioException);
+                    }
+                }
             } finally {
                 // Release the per-model lock so the same model can be trained again, even if the
                 // training above failed (e.g. a runtime exception from the underlying trainer).
-                registry.remove(this.modelKey);
+                // Owner-checked (remove(key, value)) so we only release a claim we still own.
+                registry.remove(this.modelKey, this.token);
+                trainingsInProgress.remove(this.token);
+                tokenModelKey.remove(this.token);
             }
         }
+    }
+
+    public Response allTraining() {
+        Response response;
+        try {
+            // Report the trainings actually running in this JVM, taken from the in-memory registry
+            // rather than from the on-disk "ongoing" status files. A training runs in-process and
+            // cannot survive a restart, so the registry is the authoritative source of what is live:
+            // after a restart it is empty and no orphaned "ongoing" status file is reported as
+            // running. The status files remain the history record consulted by resultTraining.
+            List<String> tokens = new ArrayList<>(trainingsInProgress.keySet());
+
+            response = Response.status(Response.Status.OK)
+                    .entity(new ObjectMapper().writeValueAsString(Map.of("tokens", tokens)))
+                    .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON + "; charset=UTF-8")
+                    .header("Access-Control-Allow-Origin", "*")
+                    .header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
+                    .build();
+        } catch (Exception exp) {
+            LOGGER.error("An unexpected exception occurs. ", exp);
+            response = Response.status(Status.INTERNAL_SERVER_ERROR).entity(exp.getMessage()).build();
+        }
+
+        return response;
+    }
+
+    public Response killTraining(String token) {
+        Response response;
+        try {
+            validateToken(token);
+
+            File home = GrobidProperties.getInstance().getGrobidHomePath();
+            File tokenDirectory = new File(home.getAbsolutePath() + "/training-history/" + token);
+            if (!tokenDirectory.exists() || !tokenDirectory.isDirectory()) {
+                throw new GrobidServiceException(
+                        "The indicated token " + token + " is not matching an existing training.", Status.BAD_REQUEST);
+            }
+
+            File statusFile = new File(tokenDirectory, "status");
+            String statusString = statusFile.exists()
+                    ? FileUtils.readFileToString(statusFile, StandardCharsets.UTF_8).trim()
+                    : null;
+
+            Future<?> future = trainingsInProgress.remove(token);
+            boolean killed = false;
+            if (future != null) {
+                // Note: future.cancel(true) only interrupts the JVM thread. Native training
+                // processes (Wapiti, DeLFT) typically ignore thread interruption and may keep
+                // running; "killed" status here is therefore optimistic.
+                killed = future.cancel(true);
+            } else if ("ongoing".equals(statusString)) {
+                // Stale training state from a previously interrupted process/container — mark as
+                // killed so the model can be retrained.
+                killed = true;
+            }
+
+            if (killed) {
+                if ("ongoing".equals(statusString)) {
+                    writeTrainingStatus(tokenDirectory.getAbsolutePath(), "killed");
+                }
+                // Release the per-model claim so the same model can be trained again. The release
+                // is owner-checked (keyed by this token), so if the worker already finished and a
+                // newer training of the same model has claimed the slot, we do not free its claim.
+                String modelKey = tokenModelKey.remove(token);
+                if (modelKey != null) {
+                    release(modelKey, token);
+                }
+            }
+            String responseStatus = killed ? "killed" : (statusString != null ? statusString : "unknown");
+
+            response = Response.status(Response.Status.OK)
+                    .entity("{\"status\": \"" + responseStatus + "\"}")
+                    .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON + "; charset=UTF-8")
+                    .header("Access-Control-Allow-Origin", "*")
+                    .header("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
+                    .build();
+        } catch (GrobidServiceException exp) {
+            LOGGER.error("Service cannot be realized: " + exp.getMessage());
+            response = Response.status(exp.getResponseCode()).entity(exp.getMessage()).build();
+        } catch (Exception exp) {
+            LOGGER.error("An unexpected exception occurs. ", exp);
+            response = Response.status(Status.INTERNAL_SERVER_ERROR).entity(exp.getMessage()).build();
+        }
+
+        return response;
+    }
+
+    /**
+     * Validate a training token to prevent directory-traversal attacks and reject blank input.
+     *
+     * @throws GrobidServiceException (BAD_REQUEST) if the token is null/blank or contains path-separator characters.
+     */
+    private static void validateToken(String token) {
+        if (token == null || token.isBlank()) {
+            throw new GrobidServiceException("Token must not be empty", Status.BAD_REQUEST);
+        }
+        if (token.contains("..") || token.contains("/") || token.contains("\\")) {
+            throw new GrobidServiceException("Invalid token", Status.BAD_REQUEST);
+        }
+    }
+
+    private static void writeTrainingStatus(String tokenPath, String status) throws IOException {
+        FileUtils.writeStringToFile(new File(tokenPath + "/status"), status, StandardCharsets.UTF_8);
     }
 
     /**
@@ -385,10 +552,7 @@ public class GrobidRestProcessTraining {
     public Response resultTraining(String token) {
         Response response = null;
         try {
-            // Validate the token to prevent directory traversal
-            if (token.contains("..") || token.contains("/") || token.contains("\\")) {
-                throw new GrobidServiceException("Invalid token", Status.BAD_REQUEST);
-            }
+            validateToken(token);
 
             // access report file under token subdirectory
             File home = GrobidProperties.getInstance().getGrobidHomePath();
@@ -406,7 +570,7 @@ public class GrobidRestProcessTraining {
             if (!status.exists()) {
                 LOGGER.warn("Status file is missing in the training history corresponding to token " + token);
             } else {
-                statusString = FileUtils.readFileToString(status, "UTF-8");
+                statusString = FileUtils.readFileToString(status, StandardCharsets.UTF_8).trim();
             }
 
             if (statusString != null && statusString.equals("ongoing")) {
@@ -426,7 +590,7 @@ public class GrobidRestProcessTraining {
                                     + " is not matching an existing ongoing or completed training.",
                             Status.BAD_REQUEST);
                 } else {
-                    String reportStr = FileUtils.readFileToString(report, "UTF-8");
+                    String reportStr = FileUtils.readFileToString(report, StandardCharsets.UTF_8);
 
                     response = Response.status(Response.Status.OK)
                             .entity(

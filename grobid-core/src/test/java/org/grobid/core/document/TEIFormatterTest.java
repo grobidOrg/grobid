@@ -1,3 +1,18 @@
+/*
+ * Copyright 2008-2026 GROBID contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.grobid.core.document;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -17,7 +32,10 @@ import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Figure;
 import org.grobid.core.data.Note;
 import org.grobid.core.data.Table;
+import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.tokenization.LabeledTokensContainer;
+import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LayoutTokensUtil;
 
@@ -406,6 +424,30 @@ public class TEIFormatterTest {
         assertThat(nodes.get(3).toXML(), is("&amp;"));
         assertThat(nodes.get(4).toXML(), is(""));
         assertThat(nodes.get(5).toXML(), is(" "));
+    }
+
+    @Test
+    public void testIsNewParagraph_afterMarkerWithBeginningParagraphLabel() {
+        TaggingTokenCluster paragraphCluster = new TaggingTokenCluster(TaggingLabels.PARAGRAPH);
+        paragraphCluster.addLabeledTokensContainer(
+                new LabeledTokensContainer(List.of(), "Because", TaggingLabels.PARAGRAPH, true));
+
+        boolean isNewParagraph = TEIFormatter
+                .isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), paragraphCluster);
+
+        assertThat(isNewParagraph, is(true));
+    }
+
+    @Test
+    public void testIsNewParagraph_afterMarkerWithoutBeginningParagraphLabel() {
+        TaggingTokenCluster paragraphCluster = new TaggingTokenCluster(TaggingLabels.PARAGRAPH);
+        paragraphCluster.addLabeledTokensContainer(
+                new LabeledTokensContainer(List.of(), "continuation", TaggingLabels.PARAGRAPH, false));
+
+        boolean isNewParagraph = TEIFormatter
+                .isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), paragraphCluster);
+
+        assertThat(isNewParagraph, is(false));
     }
 
 }

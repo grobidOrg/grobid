@@ -34,6 +34,13 @@ The models are located under `grobid/grobid-home/models`. Each of these models c
 
 ## Train and evaluate
 
+> **Two ways to run a training.** The command line (the Gradle `train_*` tasks described in this
+> section) is the main and recommended way to train and evaluate models. Alternatively, a training
+> can be launched and controlled remotely through GROBID's REST API — start a training, follow its
+> progress, list the ongoing trainings and interrupt one. See the
+> [Training web API](Grobid-service.md#training-web-api) (`/api/modelTraining`,
+> `/api/trainingResult`, `/api/allTraining`, `/api/killTraining`) for details.
+
 The sub-project grobid-trainer is be used for training. The training data is located under the grobid-trainer/resources folder, more precisely under `grobid/grobid-trainer/resources/dataset/*MODEL*/corpus/`
 where *MODEL* is the name of the model (so for instance, `grobid/grobid-trainer/resources/dataset/date/corpus/`).
 

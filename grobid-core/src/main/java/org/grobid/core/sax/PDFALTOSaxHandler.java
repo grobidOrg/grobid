@@ -1,3 +1,18 @@
+/*
+ * Copyright 2008-2026 GROBID contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.grobid.core.sax;
 
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
@@ -16,6 +31,7 @@ import org.xml.sax.helpers.DefaultHandler;
 import org.grobid.core.analyzers.Analyzer;
 import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.document.Document;
+import org.grobid.core.lang.Language;
 import org.grobid.core.layout.*;
 import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.utilities.UnicodeUtil;
@@ -58,6 +74,7 @@ public class PDFALTOSaxHandler extends DefaultHandler {
     private int currentPage = 0;
     private Page page = null; // the current page object
     private Analyzer analyzer = GrobidAnalyzer.getInstance(); // use the default one by default ;)
+    private Language language = null; // the language of the document being parsed
 
     private int currentOffset = 0;
 
@@ -65,6 +82,13 @@ public class PDFALTOSaxHandler extends DefaultHandler {
         doc = d;
         images = im;
         tokenizations = new ArrayList<>();
+        if (d.getLanguage() != null) {
+            try {
+                this.language = new Language(d.getLanguage());
+            } catch (Exception e) {
+                LOGGER.warn("Could not set language for PDFALTOSaxHandler: " + d.getLanguage() + ", " + e.getMessage());
+            }
+        }
     }
 
     public void setAnalyzer(Analyzer analyzer) {
@@ -73,6 +97,14 @@ public class PDFALTOSaxHandler extends DefaultHandler {
 
     public Analyzer getAnalyzer() {
         return this.analyzer;
+    }
+
+    public void setLanguage(Language language) {
+        this.language = language;
+    }
+
+    public Language getLanguage() {
+        return this.language;
     }
 
     private void addToken(LayoutToken layoutToken) {
@@ -458,8 +490,7 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                 //		TextUtilities.delimiters, true);
                 List<String> subTokenizations = new ArrayList<>();
                 try {
-                    // TBD: pass a language object to the tokenize method call
-                    subTokenizations = analyzer.tokenize(tok0);
+                    subTokenizations = analyzer.tokenize(tok0, language);
                 } catch (Exception e) {
                     LOGGER.debug("Sub-tokenization of pdfalto token has failed.");
                 }

@@ -1,3 +1,18 @@
+/*
+ * Copyright 2008-2026 GROBID contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.grobid.core.document;
 
 import static org.grobid.core.document.xml.XmlBuilderUtils.addXmlId;
@@ -42,6 +57,7 @@ import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.lang.Language;
 import org.grobid.core.layout.*;
 import org.grobid.core.lexicon.Lexicon;
+import org.grobid.core.tokenization.LabeledTokensContainer;
 import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.tokenization.TaggingTokenClusteror;
 import org.grobid.core.utilities.*;
@@ -1785,7 +1801,7 @@ public class TEIFormatter {
 
                 if (CollectionUtils.isEmpty(matchedLabelPositions)) {
                     String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(clusterTokens);
-                    if (isNewParagraph(lastClusterLabel, curParagraph)) {
+                    if (isNewParagraph(lastClusterLabel, curParagraph, cluster)) {
                         if (curParagraph != null && config.isWithSentenceSegmentation()) {
                             segmentIntoSentences(curParagraph, curParagraphTokens, config, doc.getLanguage());
                         }
@@ -1816,7 +1832,7 @@ public class TEIFormatter {
                     curParagraph.appendChild(clusterContent);
                     curParagraphTokens.addAll(clusterTokens);
                 } else {
-                    if (isNewParagraph(lastClusterLabel, curParagraph)) {
+                    if (isNewParagraph(lastClusterLabel, curParagraph, cluster)) {
                         if (curParagraph != null && config.isWithSentenceSegmentation()) {
                             segmentIntoSentences(
                                     curParagraph,
@@ -2138,9 +2154,32 @@ public class TEIFormatter {
         return ref;
     }
 
+    public static boolean isNewParagraph(
+            TaggingLabel lastClusterLabel,
+            Element curParagraph,
+            TaggingTokenCluster currentCluster) {
+        if (curParagraph == null) {
+            return true;
+        }
+
+        if (!MARKER_LABELS.contains(lastClusterLabel)
+                && lastClusterLabel != TaggingLabels.FIGURE
+                && lastClusterLabel != TaggingLabels.TABLE) {
+            return true;
+        }
+
+        if (MARKER_LABELS.contains(lastClusterLabel)
+                && currentCluster != null
+                && CollectionUtils.isNotEmpty(currentCluster.getLabeledTokensContainers())) {
+            LabeledTokensContainer firstContainer = currentCluster.getLabeledTokensContainers().get(0);
+            return firstContainer.isBeginning();
+        }
+
+        return false;
+    }
+
     public static boolean isNewParagraph(TaggingLabel lastClusterLabel, Element curParagraph) {
-        return (!MARKER_LABELS.contains(lastClusterLabel) && lastClusterLabel != TaggingLabels.FIGURE
-                && lastClusterLabel != TaggingLabels.TABLE) || curParagraph == null;
+        return isNewParagraph(lastClusterLabel, curParagraph, null);
     }
 
     public void segmentIntoSentences(

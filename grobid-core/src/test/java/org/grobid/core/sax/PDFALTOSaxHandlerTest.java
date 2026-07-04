@@ -1,7 +1,24 @@
+/*
+ * Copyright 2008-2026 GROBID contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.grobid.core.sax;
 
 import static org.easymock.EasyMock.createMock;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertThat;
@@ -19,6 +36,7 @@ import org.junit.Test;
 
 import org.grobid.core.document.Document;
 import org.grobid.core.document.DocumentSource;
+import org.grobid.core.lang.Language;
 import org.grobid.core.layout.GraphicObject;
 import org.grobid.core.layout.LayoutToken;
 
@@ -140,6 +158,27 @@ public class PDFALTOSaxHandlerTest {
         assertThat(tokenList.get(39).isSuperscript(), is(true));
         assertThat(tokenList.get(39).isBold(), is(false));
         assertThat(tokenList.get(39).isItalic(), is(true));
+    }
+
+    @Test
+    public void testLanguage_notSet_shouldResultInNullLanguage() {
+        assertThat(target.getLanguage(), is(nullValue()));
+    }
+
+    @Test
+    public void testLanguage_setOnDocument_shouldBeUsedByHandler() {
+        document.setLanguage("ja");
+        target = new PDFALTOSaxHandler(document, images);
+        assertThat(target.getLanguage(), is(notNullValue()));
+        assertThat(target.getLanguage().getLang(), is("ja"));
+    }
+
+    @Test
+    public void testLanguage_setDirectlyOnHandler_shouldBeUsed() {
+        Language language = new Language("zh");
+        target.setLanguage(language);
+        assertThat(target.getLanguage(), is(notNullValue()));
+        assertThat(target.getLanguage().getLang(), is("zh"));
     }
 
 }

@@ -1,3 +1,18 @@
+/*
+ * Copyright 2008-2026 GROBID contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.grobid.trainer;
 
 import static org.hamcrest.Matchers.is;
@@ -383,6 +398,42 @@ public class StatsTest {
 
         // same as above
         assertThat(target.getMacroAveragePrecision(), is(0.7777777777777777)); //77.78
+    }
+
+    @Test
+    public void testMerge_shouldCombineStats() throws Exception {
+        target.getLabelStat("FOO").setExpected(4);
+        target.getLabelStat("FOO").setObserved(3);
+        target.getLabelStat("FOO").setFalsePositive(1);
+        target.getLabelStat("FOO").setFalseNegative(1);
+
+        Stats other = new Stats();
+        other.getLabelStat("FOO").setExpected(2);
+        other.getLabelStat("FOO").setObserved(1);
+        other.getLabelStat("FOO").setFalsePositive(2);
+        other.getLabelStat("FOO").setFalseNegative(1);
+        other.getLabelStat("BAR").setExpected(3);
+        other.getLabelStat("BAR").setObserved(3);
+
+        target.merge(other);
+
+        assertThat(target.getLabelStat("FOO").getExpected(), is(6));
+        assertThat(target.getLabelStat("FOO").getObserved(), is(4));
+        assertThat(target.getLabelStat("FOO").getFalsePositive(), is(3));
+        assertThat(target.getLabelStat("FOO").getFalseNegative(), is(2));
+        assertThat(target.getLabelStat("BAR").getExpected(), is(3));
+        assertThat(target.getLabelStat("BAR").getObserved(), is(3));
+    }
+
+    @Test
+    public void testMerge_emptySourceShouldNotChange() throws Exception {
+        target.getLabelStat("FOO").setExpected(4);
+        target.getLabelStat("FOO").setObserved(3);
+
+        target.merge(new Stats());
+
+        assertThat(target.getLabelStat("FOO").getExpected(), is(4));
+        assertThat(target.getLabelStat("FOO").getObserved(), is(3));
     }
 
 }

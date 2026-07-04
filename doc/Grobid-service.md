@@ -862,7 +862,7 @@ A `503` error with the default parallel mode normally means that all the threads
 
 ### Training web API
 
-The following web services can be used to launch the training of a particular model (`/api/modelTraining`), monitor traing advancement (`/api/trainingResult`) and retrieve a model (`/api/model`).
+The following web services can be used to launch the training of a particular model (`/api/modelTraining`), monitor training advancement (`/api/trainingResult`), list ongoing training tokens (`/api/allTraining`), interrupt a training (`/api/killTraining`) and retrieve a model (`/api/model`).
 
 #### /api/modelTraining
 
@@ -923,6 +923,53 @@ Response status codes:
 Example for a training associated to the token `Fq2WYPw5M6`:
 ```bash
 curl -v -X POST -d "token=Fq2WYPw5M6" localhost:8070/api/trainingResult
+```
+
+#### /api/allTraining
+
+List the tokens of the trainings currently running in this server instance. The list reflects live,
+in-memory state, so after a server restart it is empty (a training runs in-process and does not
+survive a restart) even if a `status` file was left as `ongoing` on disk.
+
+|   method  |  request type       | response type        |  parameters  | requirement   |   description             |
+|---        |---                  |---                   |---           |---            |---                        |
+| GET |  - | application/json | - | - | list tokens of trainings currently running in this instance |
+
+Response status codes:
+
+|     HTTP Status code |   reason                                               |
+|---                   |---                                                     |
+|         200          |     Successful operation.                              |
+|         500          |     Indicate an internal service error, further described by a provided message           |
+
+Example:
+```bash
+curl -v localhost:8070/api/allTraining
+```
+
+#### /api/killTraining
+
+Interrupt a training process corresponding to a token. If the token is still marked `ongoing`, its status is set to `killed`.
+
+> **Note:** `killTraining` interrupts the JVM thread. Native training processes (Wapiti, DeLFT) may
+> ignore thread interruption and continue running in the background; the `killed` status is therefore
+> optimistic for native-process back-ends.
+
+|   method  |  request type       | response type        |  parameters  | requirement   |   description             |
+|---        |---                  |---                   |---           |---            |---                        |
+| DELETE |  - | application/json | token | required | training token to interrupt (query parameter) |
+
+Response status codes:
+
+|     HTTP Status code |   reason                                               |
+|---                   |---                                                     |
+|         200          |     Successful operation.                              |
+|         400          |     Wrong request, missing or invalid training token  |
+|         500          |     Indicate an internal service error, further described by a provided message           |
+
+Example:
+```bash
+curl -v -X DELETE "localhost:8070/api/killTraining?token=Fq2WYPw5M6"
 ```
 
 #### /api/model
