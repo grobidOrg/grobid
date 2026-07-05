@@ -4515,6 +4515,24 @@ public class BiblioItem {
                         }
                     }
                 }
+                if (bibo.getFullAuthors().size() == bib.getFullAuthors().size()) {
+                    for (int i = 0; i < bibo.getFullAuthors().size(); i++) {
+                        Person consolidatedAuthor = bibo.getFullAuthors().get(i);
+                        Person extractedAuthor = bib.getFullAuthors().get(i);
+                        if (CollectionUtils.isEmpty(consolidatedAuthor.getAffiliations())
+                                && !CollectionUtils.isEmpty(extractedAuthor.getAffiliations())) {
+                            consolidatedAuthor.setAffiliations(extractedAuthor.getAffiliations());
+                        }
+                        if (CollectionUtils.isEmpty(consolidatedAuthor.getAffiliationBlocks())
+                                && !CollectionUtils.isEmpty(extractedAuthor.getAffiliationBlocks())) {
+                            consolidatedAuthor.setAffiliationBlocks(extractedAuthor.getAffiliationBlocks());
+                        }
+                        if (CollectionUtils.isEmpty(consolidatedAuthor.getAffiliationMarkers())
+                                && !CollectionUtils.isEmpty(extractedAuthor.getAffiliationMarkers())) {
+                            consolidatedAuthor.setAffiliationMarkers(extractedAuthor.getAffiliationMarkers());
+                        }
+                    }
+                }
                 bib.setFullAuthors(bibo.getFullAuthors());
             }
         }

@@ -448,6 +448,35 @@ class BiblioItemTest {
     }
 
     @Test
+    fun correct_2authors_shouldPreserveAffiliationByPosition_whenNameMatchFails() {
+        val extractedBiblio = BiblioItem()
+        var authors: MutableList<Person?> = ArrayList<Person?>()
+        authors.add(createPerson("Barreiro", "FH", "CERN"))
+        authors.add(createPerson("Jane", "Will", "Harward"))
+        extractedBiblio.setFullAuthors(authors)
+
+        val crossrefBiblio = BiblioItem()
+        authors = ArrayList<Person?>()
+        authors.add(createPerson("F H", "Barreiro"))
+        authors.add(createPerson("Jane", "Will"))
+        crossrefBiblio.setFullAuthors(authors)
+
+        BiblioItem.correct(extractedBiblio, crossrefBiblio)
+
+        Assert.assertThat(extractedBiblio.getFullAuthors(), Matchers.hasSize<Person?>(2))
+        Assert.assertThat(extractedBiblio.getFullAuthors().get(0).getFirstName(), CoreMatchers.`is`("F H"))
+        Assert.assertThat(extractedBiblio.getFullAuthors().get(0).getLastName(), CoreMatchers.`is`("Barreiro"))
+        Assert.assertThat(
+            extractedBiblio.getFullAuthors().get(0).getAffiliations().get(0).getAffiliationString(),
+            CoreMatchers.`is`("CERN"),
+        )
+        Assert.assertThat(
+            extractedBiblio.getFullAuthors().get(1).getAffiliations().get(0).getAffiliationString(),
+            CoreMatchers.`is`("Harward"),
+        )
+    }
+
+    @Test
     fun correct_2authors_shouldKeepCrossrefOrcid_whenPdfHasNone() {
         // CrossRef result (bibo) has ORCIDs
         val biblio1 = BiblioItem()
