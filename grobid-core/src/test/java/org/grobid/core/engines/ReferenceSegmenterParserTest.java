@@ -23,14 +23,14 @@ import org.grobid.core.document.DocumentPiece;
 import org.grobid.core.document.DocumentPointer;
 import org.grobid.core.engines.label.SegmentationLabels;
 import org.grobid.core.factory.AbstractEngineFactory;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ReferenceSegmenterParserTest {
-    @BeforeClass
+    @BeforeAll
     public static void setInitialContext() {
         AbstractEngineFactory.init();
     }
