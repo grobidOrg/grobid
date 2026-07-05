@@ -4457,6 +4457,10 @@ public class BiblioItem {
                 // we have the complete list of authors so we can take them from the second
                 // biblio item and merge some possible extra from the first when a match is
                 // reliable
+                // track the extracted authors already consumed by a reliable name-based match,
+                // so the positional fallback below never reuses their affiliation for a
+                // different consolidated author (identity comparison, Person may override equals)
+                Set<Person> nameMatchedExtractedAuthors = Collections.newSetFromMap(new IdentityHashMap<>());
                 for (Person aut : bibo.getFullAuthors()) {
                     // try to find the author in the first item (we know it's not empty)
                     for (Person aut2 : bib.getFullAuthors()) {
@@ -4507,6 +4511,7 @@ public class BiblioItem {
                                             if (StringUtils.isBlank(aut.getORCID())
                                                     && StringUtils.isNotBlank(aut2.getORCID()))
                                                 aut.setORCID(aut2.getORCID());
+                                            nameMatchedExtractedAuthors.add(aut2);
                                             break;
                                         }
                                     }
@@ -4515,10 +4520,18 @@ public class BiblioItem {
                         }
                     }
                 }
+                // positional fallback: when the name-based match above missed (e.g. atypical
+                // name tokenization) but the two author lists are aligned by document order,
+                // carry over the extracted affiliation data by position. Skip extracted authors
+                // already consumed by a name match, otherwise their affiliation could be
+                // reassigned to a different consolidated author when the lists are reordered.
                 if (bibo.getFullAuthors().size() == bib.getFullAuthors().size()) {
                     for (int i = 0; i < bibo.getFullAuthors().size(); i++) {
                         Person consolidatedAuthor = bibo.getFullAuthors().get(i);
                         Person extractedAuthor = bib.getFullAuthors().get(i);
+                        if (nameMatchedExtractedAuthors.contains(extractedAuthor)) {
+                            continue;
+                        }
                         if (CollectionUtils.isEmpty(consolidatedAuthor.getAffiliations())
                                 && !CollectionUtils.isEmpty(extractedAuthor.getAffiliations())) {
                             consolidatedAuthor.setAffiliations(extractedAuthor.getAffiliations());

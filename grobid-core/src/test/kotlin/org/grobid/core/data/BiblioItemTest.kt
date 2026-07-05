@@ -477,6 +477,37 @@ class BiblioItemTest {
     }
 
     @Test
+    fun correct_2authors_shouldNotReassignAffiliationByPosition_whenExtractedAlreadyNameMatched() {
+        // Lists are the same size but in a different order: the CrossRef author at position 0
+        // has no counterpart in the PDF, while the extracted author at position 0 was already
+        // consumed by a name match at another position. The positional fallback must NOT hand
+        // that already-claimed affiliation to the unrelated CrossRef author.
+        val extractedBiblio = BiblioItem()
+        var authors: MutableList<Person?> = ArrayList<Person?>()
+        authors.add(createPerson("Jane", "Will", "Harvard"))
+        authors.add(createPerson("Foo", "Bar", "SomeAff"))
+        extractedBiblio.setFullAuthors(authors)
+
+        val crossrefBiblio = BiblioItem()
+        authors = ArrayList<Person?>()
+        authors.add(createPerson("Xyz", "Newauthor"))
+        authors.add(createPerson("Jane", "Will"))
+        crossrefBiblio.setFullAuthors(authors)
+
+        BiblioItem.correct(extractedBiblio, crossrefBiblio)
+
+        Assert.assertThat(extractedBiblio.getFullAuthors(), Matchers.hasSize<Person?>(2))
+        // The unrelated CrossRef author keeps no affiliation instead of inheriting "Harvard"
+        Assert.assertThat(extractedBiblio.getFullAuthors().get(0).getLastName(), CoreMatchers.`is`("Newauthor"))
+        Assert.assertTrue(extractedBiblio.getFullAuthors().get(0).getAffiliations().isNullOrEmpty())
+        // The name-matched author still receives its affiliation from the PDF
+        Assert.assertThat(
+            extractedBiblio.getFullAuthors().get(1).getAffiliations().get(0).getAffiliationString(),
+            CoreMatchers.`is`("Harvard"),
+        )
+    }
+
+    @Test
     fun correct_2authors_shouldKeepCrossrefOrcid_whenPdfHasNone() {
         // CrossRef result (bibo) has ORCIDs
         val biblio1 = BiblioItem()
