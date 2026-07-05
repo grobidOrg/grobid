@@ -500,7 +500,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
             return;
         }
 
-        Map<String, Integer> survivingAnnotationCounts = collectSurvivingAnnotationCounts(paragraph);
+        Map<AnnotationSignature, Integer> survivingAnnotationCounts = collectSurvivingAnnotationCounts(paragraph);
         if (survivingAnnotationCounts.isEmpty()) {
             localEntities.setFundings(new ArrayList<>());
             return;
@@ -515,8 +515,8 @@ public class FundingAcknowledgementParser extends AbstractParser {
         localEntities.setFundings(survivingFundings);
     }
 
-    private static Map<String, Integer> collectSurvivingAnnotationCounts(Element paragraph) {
-        Map<String, Integer> survivingAnnotationCounts = new HashMap<>();
+    private static Map<AnnotationSignature, Integer> collectSurvivingAnnotationCounts(Element paragraph) {
+        Map<AnnotationSignature, Integer> survivingAnnotationCounts = new HashMap<>();
         Nodes survivingAnnotations = paragraph.query(".//*[local-name()='rs']");
         for (int i = 0; i < survivingAnnotations.size(); i++) {
             Node survivingAnnotation = survivingAnnotations.get(i);
@@ -530,7 +530,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 continue;
             }
 
-            String key = annotationKey(typeAttribute.getValue(), annotationElement.getValue());
+            AnnotationSignature key = new AnnotationSignature(typeAttribute.getValue(), annotationElement.getValue());
             survivingAnnotationCounts.merge(key, 1, Integer::sum);
         }
 
@@ -539,7 +539,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
 
     private static boolean consumeFirstMatchingFundingAnnotation(
             Funding funding,
-            Map<String, Integer> survivingAnnotationCounts) {
+            Map<AnnotationSignature, Integer> survivingAnnotationCounts) {
         return consumeAnnotation("funder", funding.getFunder() != null ? funding.getFunder().getFullName() : null,
                 survivingAnnotationCounts)
                 || consumeAnnotation("grantNumber", funding.getGrantNumber(), survivingAnnotationCounts)
@@ -551,14 +551,14 @@ public class FundingAcknowledgementParser extends AbstractParser {
     private static boolean consumeAnnotation(
             String type,
             String value,
-            Map<String, Integer> survivingAnnotationCounts) {
+            Map<AnnotationSignature, Integer> survivingAnnotationCounts) {
         if (StringUtils.isBlank(value)) {
             return false;
         }
 
-        String key = annotationKey(type, value);
+        AnnotationSignature key = new AnnotationSignature(type, value);
         Integer count = survivingAnnotationCounts.get(key);
-        if (count == null || count == 0) {
+        if (count == null) {
             return false;
         }
 
@@ -571,8 +571,31 @@ public class FundingAcknowledgementParser extends AbstractParser {
         return true;
     }
 
-    private static String annotationKey(String type, String value) {
-        return type + "\u0000" + value;
+    private static class AnnotationSignature {
+        private final String type;
+        private final String value;
+
+        private AnnotationSignature(String type, String value) {
+            this.type = type;
+            this.value = value;
+        }
+
+        @Override
+        public boolean equals(Object other) {
+            if (this == other) {
+                return true;
+            }
+            if (!(other instanceof AnnotationSignature)) {
+                return false;
+            }
+            AnnotationSignature that = (AnnotationSignature) other;
+            return Objects.equals(type, that.type) && Objects.equals(value, that.value);
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(type, value);
+        }
     }
 
     /**

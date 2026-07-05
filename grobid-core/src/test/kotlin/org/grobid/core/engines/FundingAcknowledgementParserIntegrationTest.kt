@@ -301,18 +301,18 @@ class FundingAcknowledgementParserIntegrationTest {
     }
 
     private class StubFundingAcknowledgementParser(
-        private val funderTokens: List<String>,
+        private val tokensToLabelAsFunder: List<String>,
     ) : FundingAcknowledgementParser(GrobidModels.DUMMY) {
         override fun label(data: String): String {
             val lines = data.lineSequence()
                 .filter { it.isNotBlank() }
                 .toList()
-            val start = (lines.size - funderTokens.size).coerceAtLeast(0)
+            val start = (lines.size - tokensToLabelAsFunder.size).coerceAtLeast(0)
 
             return lines.mapIndexed { index, line ->
                 val label = when {
                     index == start -> "I-<funderName>"
-                    index in (start + 1) until (start + funderTokens.size) -> "<funderName>"
+                    index in (start + 1) until (start + tokensToLabelAsFunder.size) -> "<funderName>"
                     index == 0 -> "I-<other>"
                     else -> "<other>"
                 }
