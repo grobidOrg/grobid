@@ -15,19 +15,20 @@
  */
 package org.grobid.core.engines;
 
+import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 import com.google.common.collect.SortedSetMultimap;
 import com.google.common.collect.TreeMultimap;
 import org.apache.commons.lang3.tuple.Pair;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+
 import org.grobid.core.document.Document;
 import org.grobid.core.document.DocumentPiece;
 import org.grobid.core.document.DocumentPointer;
 import org.grobid.core.engines.label.SegmentationLabels;
 import org.grobid.core.factory.AbstractEngineFactory;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-
-import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ReferenceSegmenterParserTest {
     @BeforeAll
@@ -41,8 +42,8 @@ public class ReferenceSegmenterParserTest {
         SortedSetMultimap<String, DocumentPiece> labeledBlocks = TreeMultimap.create();
         int lastTokenIndex = doc.getTokenizations().size() - 1;
         DocumentPiece references = new DocumentPiece(
-            new DocumentPointer(doc, 0, 0),
-            new DocumentPointer(doc, 0, lastTokenIndex));
+                new DocumentPointer(doc, 0, 0),
+                new DocumentPointer(doc, 0, lastTokenIndex));
         labeledBlocks.put(SegmentationLabels.REFERENCES.getLabel(), references);
         doc.setLabeledBlocks(labeledBlocks);
 
