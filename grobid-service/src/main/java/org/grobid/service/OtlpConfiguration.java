@@ -37,6 +37,14 @@ public class OtlpConfiguration {
     @JsonProperty
     private int intervalSeconds = 60;
 
+    /**
+     * Per-export timeout, in seconds, before the exporter gives up on an unreachable/slow receiver.
+     * Bounds how long a single push may block the exporter thread each interval. Defaults to the
+     * OTLP exporter's own default of 10s.
+     */
+    @JsonProperty
+    private int timeoutSeconds = 10;
+
     /** Value of the {@code service.name} resource attribute — how this instance shows up in dashboards. */
     @JsonProperty
     private String serviceName = "grobid-service";
@@ -78,6 +86,14 @@ public class OtlpConfiguration {
 
     public void setIntervalSeconds(int intervalSeconds) {
         this.intervalSeconds = intervalSeconds;
+    }
+
+    public int getTimeoutSeconds() {
+        return timeoutSeconds;
+    }
+
+    public void setTimeoutSeconds(int timeoutSeconds) {
+        this.timeoutSeconds = timeoutSeconds;
     }
 
     public String getServiceName() {

@@ -399,6 +399,8 @@ grobid:
     protocol: "http/protobuf"
     # how often a batch of metrics is pushed, in seconds
     intervalSeconds: 60
+    # per-export timeout in seconds; bounds how long one push may block on a slow/unreachable receiver
+    timeoutSeconds: 10
     # how this instance is identified in dashboards (the service.name resource attribute)
     serviceName: "grobid-service"
     # extra headers on every OTLP request -- typically auth for a hosted backend, e.g. Grafana Cloud:

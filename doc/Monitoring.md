@@ -182,6 +182,7 @@ grobid:
     endpoint: "http://localhost:4318"   # base URL; 4318 for http/protobuf (the "/v1/metrics" path is added automatically), 4317 for grpc
     protocol: "http/protobuf"           # or "grpc"
     intervalSeconds: 60
+    timeoutSeconds: 10                  # per-export timeout; bounds how long one push waits on a slow/unreachable receiver
     serviceName: "grobid-service"
     # extra headers for backend auth, e.g. Grafana Cloud:
     #headers:
@@ -221,6 +222,7 @@ grobid:
     endpoint: "https://otlp-gateway-prod-eu-central-0.grafana.net/otlp"
     protocol: "http/protobuf"
     intervalSeconds: 60
+    timeoutSeconds: 10
     serviceName: "grobid-service"
     headers:
       Authorization: "Basic <base64 of instanceID:apiToken>"

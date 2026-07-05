@@ -1,11 +1,47 @@
 package org.grobid.service.metrics;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 
+import io.opentelemetry.exporter.otlp.http.metrics.OtlpHttpMetricExporter;
+import io.opentelemetry.exporter.otlp.metrics.OtlpGrpcMetricExporter;
+import io.opentelemetry.sdk.metrics.export.MetricExporter;
 import org.junit.Test;
 
+import org.grobid.service.OtlpConfiguration;
+
 public class OtlpMetricsReporterTest {
+
+    private static MetricExporter exporterFor(String protocol) {
+        OtlpConfiguration config = new OtlpConfiguration();
+        config.setProtocol(protocol);
+        return new OtlpMetricsReporter(config).createExporter();
+    }
+
+    @Test
+    public void createExporter_selectsGrpcExporterForGrpcProtocol() {
+        assertTrue(exporterFor("grpc") instanceof OtlpGrpcMetricExporter);
+    }
+
+    @Test
+    public void createExporter_selectsHttpExporterForHttpProtobuf() {
+        assertTrue(exporterFor("http/protobuf") instanceof OtlpHttpMetricExporter);
+    }
+
+    @Test
+    public void createExporter_fallsBackToHttpForUnrecognisedProtocol() {
+        assertTrue(exporterFor("carrier-pigeon") instanceof OtlpHttpMetricExporter);
+    }
+
+    @Test
+    public void isGrpc_matchesOnlyGrpcProtocols() {
+        assertTrue(OtlpMetricsReporter.isGrpc("grpc"));
+        assertTrue(OtlpMetricsReporter.isGrpc("GRPC"));
+        assertFalse(OtlpMetricsReporter.isGrpc("http/protobuf"));
+        assertFalse(OtlpMetricsReporter.isGrpc(null));
+    }
 
     @Test
     public void httpMetricsEndpoint_appendsSignalPathToBaseUrl() {

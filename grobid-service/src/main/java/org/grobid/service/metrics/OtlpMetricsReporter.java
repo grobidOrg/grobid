@@ -98,45 +98,65 @@ public class OtlpMetricsReporter implements Managed {
     }
 
     /**
-     * Builds the OTLP {@link MetricExporter} from {@link #config}.
-     *
-     * <p>TODO(you): implement this. Both {@link OtlpHttpMetricExporter} and
-     * {@link OtlpGrpcMetricExporter} implement {@link MetricExporter} and share the same builder
-     * shape: {@code .setEndpoint(String)}, {@code .addHeader(String, String)},
-     * {@code .setTimeout(Duration)}, {@code .build()}. The meaningful decisions:</p>
+     * Builds the OTLP {@link MetricExporter} from {@link #config}. Both
+     * {@link OtlpHttpMetricExporter} and {@link OtlpGrpcMetricExporter} implement
+     * {@link MetricExporter} and share the same builder shape, so this method only decides which
+     * one to instantiate and how to configure it:
      *
      * <ul>
-     *   <li><b>Protocol</b> — pick the gRPC exporter when {@code config.getProtocol()} indicates
-     *       grpc (port 4317), otherwise the HTTP/protobuf exporter (port 4318). HTTP is the
-     *       firewall-friendly default; gRPC streams more efficiently.</li>
-     *   <li><b>Headers</b> — apply every entry of {@code config.getHeaders()} via
+     *   <li><b>Protocol</b> — the gRPC exporter (bare {@code host:port}, port 4317) when
+     *       {@link #isGrpc(String)} is true, otherwise the HTTP/protobuf exporter (port 4318,
+     *       endpoint resolved through {@link #httpMetricsEndpoint(String)}). HTTP is the
+     *       firewall-friendly default; gRPC streams more efficiently. An unrecognised protocol
+     *       falls back to HTTP with a warning.</li>
+     *   <li><b>Headers</b> — every entry of {@code config.getHeaders()} is applied via
      *       {@code addHeader}; this is how auth tokens reach a hosted backend (e.g. Grafana Cloud's
      *       {@code Authorization} header).</li>
-     *   <li><b>Timeout</b> — optional; the default is 10s. Consider whether a slow/unreachable
-     *       receiver should block the exporter thread that long every interval.</li>
+     *   <li><b>Timeout</b> — {@code config.getTimeoutSeconds()} bounds how long a single push may
+     *       block the exporter thread against a slow/unreachable receiver.</li>
      * </ul>
+     *
+     * <p>Package-private so exporter selection can be unit-tested.</p>
      *
      * @return a configured exporter; never null (it is read once at {@link #start()}).
      */
-    private MetricExporter createExporter() {
-        boolean grpc = config.getProtocol() != null
-                && config.getProtocol().toLowerCase().contains("grpc");
+    MetricExporter createExporter() {
+        Duration timeout = Duration.ofSeconds(config.getTimeoutSeconds());
 
-        if (grpc) {
+        if (isGrpc(config.getProtocol())) {
             var builder = OtlpGrpcMetricExporter.builder()
-                    .setEndpoint(config.getEndpoint());
+                    .setEndpoint(config.getEndpoint())
+                    .setTimeout(timeout);
             if (config.getHeaders() != null) {
                 config.getHeaders().forEach(builder::addHeader);
             }
             return builder.build();
         }
 
+        if (config.getProtocol() != null && !isHttp(config.getProtocol())) {
+            LOGGER.warn(
+                    "Unrecognised OTLP protocol '{}'; falling back to http/protobuf. "
+                            + "Use 'http/protobuf' or 'grpc'.",
+                    config.getProtocol());
+        }
+
         var builder = OtlpHttpMetricExporter.builder()
-                .setEndpoint(httpMetricsEndpoint(config.getEndpoint()));
+                .setEndpoint(httpMetricsEndpoint(config.getEndpoint()))
+                .setTimeout(timeout);
         if (config.getHeaders() != null) {
             config.getHeaders().forEach(builder::addHeader);
         }
         return builder.build();
+    }
+
+    /** True when {@code protocol} names the gRPC transport (port 4317). */
+    static boolean isGrpc(String protocol) {
+        return protocol != null && protocol.toLowerCase().contains("grpc");
+    }
+
+    /** True when {@code protocol} names an HTTP transport (e.g. {@code http/protobuf}). */
+    static boolean isHttp(String protocol) {
+        return protocol != null && protocol.toLowerCase().contains("http");
     }
 
     /**
