@@ -244,6 +244,8 @@ public class FundingAcknowledgementParser extends AbstractParser {
                     updateParagraphNodeWithAnnotations(paragraph, annotations);
                 }
 
+                synchronizeExtractedEntitiesWithAnnotations((Element) paragraph, localEntities);
+
                 // update extracted entities
                 if (globalResult == null) {
                     globalResult = MutablePair.of(
@@ -489,6 +491,88 @@ public class FundingAcknowledgementParser extends AbstractParser {
 
             sentenceStartOffset += sentenceText.length();
         }
+    }
+
+    private static void synchronizeExtractedEntitiesWithAnnotations(
+            Element paragraph,
+            FundingAcknowledgmentParse localEntities) {
+        if (localEntities == null || CollectionUtils.isEmpty(localEntities.getFundings())) {
+            return;
+        }
+
+        Map<String, Integer> survivingAnnotationCounts = collectSurvivingAnnotationCounts(paragraph);
+        if (survivingAnnotationCounts.isEmpty()) {
+            localEntities.setFundings(new ArrayList<>());
+            return;
+        }
+
+        List<Funding> survivingFundings = new ArrayList<>();
+        for (Funding funding : localEntities.getFundings()) {
+            if (consumeFirstMatchingFundingAnnotation(funding, survivingAnnotationCounts)) {
+                survivingFundings.add(funding);
+            }
+        }
+        localEntities.setFundings(survivingFundings);
+    }
+
+    private static Map<String, Integer> collectSurvivingAnnotationCounts(Element paragraph) {
+        Map<String, Integer> survivingAnnotationCounts = new HashMap<>();
+        Nodes survivingAnnotations = paragraph.query(".//*[local-name()='rs']");
+        for (int i = 0; i < survivingAnnotations.size(); i++) {
+            Node survivingAnnotation = survivingAnnotations.get(i);
+            if (!(survivingAnnotation instanceof Element)) {
+                continue;
+            }
+
+            Element annotationElement = (Element) survivingAnnotation;
+            Attribute typeAttribute = annotationElement.getAttribute("type");
+            if (typeAttribute == null) {
+                continue;
+            }
+
+            String key = annotationKey(typeAttribute.getValue(), annotationElement.getValue());
+            survivingAnnotationCounts.merge(key, 1, Integer::sum);
+        }
+
+        return survivingAnnotationCounts;
+    }
+
+    private static boolean consumeFirstMatchingFundingAnnotation(
+            Funding funding,
+            Map<String, Integer> survivingAnnotationCounts) {
+        return consumeAnnotation("funder", funding.getFunder() != null ? funding.getFunder().getFullName() : null,
+                survivingAnnotationCounts)
+                || consumeAnnotation("grantNumber", funding.getGrantNumber(), survivingAnnotationCounts)
+                || consumeAnnotation("grantName", funding.getGrantName(), survivingAnnotationCounts)
+                || consumeAnnotation("programName", funding.getProgramFullName(), survivingAnnotationCounts)
+                || consumeAnnotation("projectName", funding.getProjectFullName(), survivingAnnotationCounts);
+    }
+
+    private static boolean consumeAnnotation(
+            String type,
+            String value,
+            Map<String, Integer> survivingAnnotationCounts) {
+        if (StringUtils.isBlank(value)) {
+            return false;
+        }
+
+        String key = annotationKey(type, value);
+        Integer count = survivingAnnotationCounts.get(key);
+        if (count == null || count == 0) {
+            return false;
+        }
+
+        if (count == 1) {
+            survivingAnnotationCounts.remove(key);
+        } else {
+            survivingAnnotationCounts.put(key, count - 1);
+        }
+
+        return true;
+    }
+
+    private static String annotationKey(String type, String value) {
+        return type + "\u0000" + value;
     }
 
     /**

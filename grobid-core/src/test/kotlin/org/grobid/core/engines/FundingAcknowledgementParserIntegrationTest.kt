@@ -15,10 +15,13 @@
  */
 package org.grobid.core.engines
 
+import org.grobid.core.GrobidModels
 import org.grobid.core.engines.config.GrobidAnalysisConfig
 import org.grobid.core.factory.AbstractEngineFactory
 import org.grobid.core.utilities.GrobidConfig
 import org.grobid.core.utilities.GrobidProperties
+import org.hamcrest.CoreMatchers.containsString
+import org.hamcrest.CoreMatchers.not
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.hasSize
 import org.junit.Before
@@ -273,6 +276,49 @@ class FundingAcknowledgementParserIntegrationTest {
         val (element, mutableTriple) = target.processingXmlFragment(input, config)
 
         assertThat(element.toXML(), CompareMatcher.isIdenticalTo(output))
+    }
+
+    @Test
+    fun testXmlFragmentProcessing_shouldDropFundingWithoutInjectableAnnotation() {
+        val input = """
+            <div type="acknowledgement">
+            <div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p><s>provide public access to these results of federally sponsored research in accordance with the DOE Public Access Plan <ref type="url" target="https://example.org/public-access">http</ref></s></p></div>
+            </div>
+        """.trimIndent()
+
+        val parser = StubFundingAcknowledgementParser(
+            listOf("DOE", "Public", "Access", "Plan", "http"),
+        )
+
+        val config = GrobidAnalysisConfig.GrobidAnalysisConfigBuilder()
+            .withSentenceSegmentation(true)
+            .build()
+
+        val (element, mutableTriple) = parser.processingXmlFragment(input, config)
+
+        assertThat(mutableTriple.left, hasSize(0))
+        assertThat(element.toXML(), not(containsString("type=\"funder\"")))
+    }
+
+    private class StubFundingAcknowledgementParser(
+        private val funderTokens: List<String>,
+    ) : FundingAcknowledgementParser(GrobidModels.DUMMY) {
+        override fun label(data: String): String {
+            val lines = data.lineSequence()
+                .filter { it.isNotBlank() }
+                .toList()
+            val start = (lines.size - funderTokens.size).coerceAtLeast(0)
+
+            return lines.mapIndexed { index, line ->
+                val label = when {
+                    index == start -> "I-<funderName>"
+                    index in (start + 1) until (start + funderTokens.size) -> "<funderName>"
+                    index == 0 -> "I-<other>"
+                    else -> "<other>"
+                }
+                "$line\t$label"
+            }.joinToString("\n")
+        }
     }
 
     companion object {
