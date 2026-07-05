@@ -540,7 +540,9 @@ public class FundingAcknowledgementParser extends AbstractParser {
     private static boolean consumeFirstMatchingFundingAnnotation(
             Funding funding,
             Map<AnnotationSignature, Integer> survivingAnnotationCounts) {
-        return consumeAnnotation("funder", funding.getFunder() != null ? funding.getFunder().getFullName() : null,
+        return consumeAnnotation(
+                "funder",
+                funding.getFunder() != null ? funding.getFunder().getFullName() : null,
                 survivingAnnotationCounts)
                 || consumeAnnotation("grantNumber", funding.getGrantNumber(), survivingAnnotationCounts)
                 || consumeAnnotation("grantName", funding.getGrantName(), survivingAnnotationCounts)
