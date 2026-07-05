@@ -58,8 +58,13 @@ public class EvaluationConfigCheck {
             "funding-acknowledgement"
     };
 
-    /** biblio-glutton health endpoint, appended to the configured glutton base URL. */
-    private static final String GLUTTON_ISALIVE_PATH = "/service/isalive";
+    /**
+     * biblio-glutton liveness endpoint, appended to the configured glutton base URL.
+     * biblio-glutton has no {@code /service/isalive} route; {@code /service/data} is a
+     * no-parameter endpoint that always answers 200 and returns index statistics, so it
+     * doubles as a health probe that confirms the databases are loaded.
+     */
+    private static final String GLUTTON_HEALTH_PATH = "/service/data";
 
     private static final int GLUTTON_PING_TIMEOUT_MS = 5000;
 
@@ -128,7 +133,7 @@ public class EvaluationConfigCheck {
             return;
         }
 
-        String isAliveUrl = StringUtils.removeEnd(gluttonUrl, "/") + GLUTTON_ISALIVE_PATH;
+        String isAliveUrl = StringUtils.removeEnd(gluttonUrl, "/") + GLUTTON_HEALTH_PATH;
         if (!isReachable(isAliveUrl)) {
             problems.add(
                     "biblio-glutton is not reachable at "
