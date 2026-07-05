@@ -44,6 +44,11 @@ public class AuthorAffiliationAssigner {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AuthorAffiliationAssigner.class);
 
+    // Minimum shorter/longer length ratio for a substring containment to count as
+    // a content-duplicate affiliation (below this the shorter string is a distinct,
+    // narrower affiliation rather than a mirror of the same institution).
+    private static final double CONTENT_DUPLICATE_MIN_RATIO = 0.8;
+
     /**
      * Main entry point. Assigns affiliations to authors using the priority
      * strategy.
@@ -299,15 +304,13 @@ public class AuthorAffiliationAssigner {
             return Collections.emptyList();
         }
 
-        // Concatenate the span's raw token texts so hyphenated and multi-word
-        // surnames (e.g. "Leyton-Brown", "Ojeda Valencia") survive intact.
-        StringBuilder spanBuilder = new StringBuilder();
-        for (LayoutToken tok : clusterTokens) {
-            if (tok.getText() != null) {
-                spanBuilder.append(tok.getText());
-            }
-        }
-        String spanText = spanBuilder.toString().toLowerCase(Locale.ROOT);
+        // Ordered lowercase letter-run "words" of the span, extracted per token so
+        // that boundaries between adjacent names survive whether or not the cluster
+        // carries inter-token whitespace. Matching a surname as a contiguous
+        // subsequence of these words keeps multi-word ("Ojeda Valencia") and
+        // hyphenated ("Leyton-Brown") surnames intact while preventing a short
+        // surname ("Li") from matching inside a longer one ("Lin").
+        List<String> spanWords = toWords(clusterTokens);
 
         List<String> capWords = new ArrayList<>();
         for (LayoutToken tok : clusterTokens) {
@@ -330,18 +333,15 @@ public class AuthorAffiliationAssigner {
         }
         String firstInitial = capWords.size() > 1 ? capWords.get(0).substring(0, 1) : null;
 
-        // Primary match: Person.lastName appears in the span text. Strip
-        // whitespace from both sides — spanText is built by concatenating
-        // raw token texts (no inter-token spaces), so a surname like "van
-        // Willigenburg" (with internal space) wouldn't otherwise match.
-        String spanTextCompact = spanText.replaceAll("\\s+", "");
+        // Primary match: the author's surname words appear as a contiguous run
+        // within the span words.
         List<Person> candidates = new ArrayList<>();
         for (Person aut : authors) {
             if (StringUtils.isBlank(aut.getLastName())) {
                 continue;
             }
-            String lnCompact = aut.getLastName().toLowerCase(Locale.ROOT).replaceAll("\\s+", "");
-            if (spanTextCompact.contains(lnCompact)) {
+            List<String> surnameWords = toWords(aut.getLastName());
+            if (!surnameWords.isEmpty() && containsWordRun(spanWords, surnameWords)) {
                 candidates.add(aut);
             }
         }
@@ -395,6 +395,64 @@ public class AuthorAffiliationAssigner {
             }
         }
         return Collections.emptyList();
+    }
+
+    /**
+     * Ordered lowercase letter-run words extracted from a sequence of layout
+     * tokens. Words are split at every non-letter character and per token, so the
+     * boundary between two adjacent name tokens is preserved even when the cluster
+     * carries no inter-token whitespace.
+     */
+    private static List<String> toWords(List<LayoutToken> tokens) {
+        List<String> words = new ArrayList<>();
+        for (LayoutToken tok : tokens) {
+            if (tok.getText() != null) {
+                addWords(words, tok.getText());
+            }
+        }
+        return words;
+    }
+
+    /** Ordered lowercase letter-run words of a plain string (e.g. a surname). */
+    private static List<String> toWords(String text) {
+        List<String> words = new ArrayList<>();
+        if (text != null) {
+            addWords(words, text);
+        }
+        return words;
+    }
+
+    private static void addWords(List<String> words, String text) {
+        for (String w : text.toLowerCase(Locale.ROOT).split("[^\\p{L}]+")) {
+            if (!w.isEmpty()) {
+                words.add(w);
+            }
+        }
+    }
+
+    /**
+     * Whether {@code needle} appears as a contiguous run within {@code haystack}
+     * (word-for-word equality). This prevents a short surname ("Li") from matching
+     * inside a longer one ("Lin") while still matching multi-word ("Ojeda
+     * Valencia") and hyphenated ("Leyton-Brown") surnames.
+     */
+    private static boolean containsWordRun(List<String> haystack, List<String> needle) {
+        if (needle.isEmpty() || needle.size() > haystack.size()) {
+            return false;
+        }
+        for (int i = 0; i + needle.size() <= haystack.size(); i++) {
+            boolean match = true;
+            for (int j = 0; j < needle.size(); j++) {
+                if (!haystack.get(i + j).equals(needle.get(j))) {
+                    match = false;
+                    break;
+                }
+            }
+            if (match) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**
@@ -476,6 +534,26 @@ public class AuthorAffiliationAssigner {
             return;
         }
 
+        // Pre-compute each author's surname position in the (lowercased) author string.
+        // The search advances progressively so that co-authors sharing a surname
+        // (e.g. "L. Wang 1, J. Wang 2") get distinct positions instead of all
+        // collapsing onto the first occurrence.
+        String original = originalAuthors.toLowerCase();
+        int[] namePositions = new int[authors.size()];
+        int searchFrom = 0;
+        for (int q = 0; q < authors.size(); q++) {
+            String ln = authors.get(q).getLastName();
+            if (ln != null && ln.length() > 0) {
+                int pos = original.indexOf(ln.toLowerCase(), searchFrom);
+                namePositions[q] = pos;
+                if (pos != -1) {
+                    searchFrom = pos + ln.length();
+                }
+            } else {
+                namePositions[q] = -1;
+            }
+        }
+
         int indexAffiliation = 0;
         for (Affiliation aff : affiliations) {
             // circuit breaker
@@ -502,7 +580,7 @@ public class AuthorAffiliationAssigner {
                         // single special char matching double special char
                         if (marker.length() == 1) {
                             if (Character.isDigit(marker.charAt(0))) {
-                                if (ind - 1 > 0) {
+                                if (ind - 1 >= 0) {
                                     if (Character.isDigit(originalAuthors.charAt(ind - 1))) {
                                         bad = true;
                                     }
@@ -513,7 +591,7 @@ public class AuthorAffiliationAssigner {
                                     }
                                 }
                             } else if (Character.isLetter(marker.charAt(0))) {
-                                if (ind - 1 > 0) {
+                                if (ind - 1 >= 0) {
                                     if (Character.isLetter(originalAuthors.charAt(ind - 1))) {
                                         bad = true;
                                     }
@@ -524,7 +602,7 @@ public class AuthorAffiliationAssigner {
                                     }
                                 }
                             } else if (marker.charAt(0) == '*') {
-                                if (ind - 1 > 0) {
+                                if (ind - 1 >= 0) {
                                     if (originalAuthors.charAt(ind - 1) == '*') {
                                         bad = true;
                                     }
@@ -539,7 +617,7 @@ public class AuthorAffiliationAssigner {
                         if (marker.length() == 2) {
                             // case with ** as marker
                             if ((marker.charAt(0) == '*') && (marker.charAt(1) == '*')) {
-                                if (ind - 2 > 0) {
+                                if (ind - 2 >= 0) {
                                     if ((originalAuthors.charAt(ind - 1) == '*') &&
                                             (originalAuthors.charAt(ind - 2) == '*')) {
                                         bad = true;
@@ -551,7 +629,7 @@ public class AuthorAffiliationAssigner {
                                         bad = true;
                                     }
                                 }
-                                if ((ind - 1 > 0) && (ind + 1 < originalAuthors.length())) {
+                                if ((ind - 1 >= 0) && (ind + 1 < originalAuthors.length())) {
                                     if ((originalAuthors.charAt(ind - 1) == '*') &&
                                             (originalAuthors.charAt(ind + 1) == '*')) {
                                         bad = true;
@@ -563,23 +641,18 @@ public class AuthorAffiliationAssigner {
 
                     if ((ind != -1) && !bad) {
                         // find the associated author name by proximity in string
-                        String original = originalAuthors.toLowerCase();
                         int p = 0;
                         int best = -1;
                         int bestDistance = Integer.MAX_VALUE;
                         for (Person aut : authors) {
                             if (!winners.contains(Integer.valueOf(p))) {
                                 String lastname = aut.getLastName();
-
-                                if (lastname != null) {
-                                    lastname = lastname.toLowerCase();
-                                    int namePos = original.indexOf(lastname);
-                                    if (namePos != -1) {
-                                        int dist = Math.abs(ind - (namePos + lastname.length()));
-                                        if (dist < bestDistance) {
-                                            best = p;
-                                            bestDistance = dist;
-                                        }
+                                int namePos = namePositions[p];
+                                if (lastname != null && namePos != -1) {
+                                    int dist = Math.abs(ind - (namePos + lastname.length()));
+                                    if (dist < bestDistance) {
+                                        best = p;
+                                        bestDistance = dist;
                                     }
                                 }
                             }
@@ -602,12 +675,7 @@ public class AuthorAffiliationAssigner {
                     }
                     if ((ind != -1) && bad) {
                         from = ind + 1;
-                        bad = false;
                     }
-
-                    // circuit breaker
-                    if (ind > originalAuthors.length() || ind > 1000)
-                        break;
                 }
             }
             indexAffiliation++;
@@ -803,6 +871,15 @@ public class AuthorAffiliationAssigner {
 
         LOGGER.debug("Orphan rescue: {} affiliations still unassigned", orphans.size());
 
+        // Author centroids are invariant across orphans — compute them once.
+        Map<Person, double[]> authorCentroids = new HashMap<>();
+        for (Person aut : authors) {
+            double[] c = computeCentroid(aut.getLayoutTokens());
+            if (c != null) {
+                authorCentroids.put(aut, c);
+            }
+        }
+
         for (Affiliation orphan : orphans) {
             double[] orphanCentroid = computeCentroid(orphan.getLayoutTokens());
 
@@ -812,7 +889,7 @@ public class AuthorAffiliationAssigner {
                 // Try proximity-based assignment
                 double bestDist = Double.MAX_VALUE;
                 for (Person aut : authors) {
-                    double[] autCentroid = computeCentroid(aut.getLayoutTokens());
+                    double[] autCentroid = authorCentroids.get(aut);
                     if (autCentroid != null) {
                         double dist = distance(autCentroid, orphanCentroid);
                         if (dist < bestDist) {
@@ -877,8 +954,19 @@ public class AuthorAffiliationAssigner {
             if (StringUtils.isBlank(e)) {
                 continue;
             }
-            if (e.contains(c) || c.contains(e)) {
+            if (e.equals(c)) {
                 return true;
+            }
+            // Only treat a containment as a duplicate when the two strings are
+            // close in length (a genuine mirror of the same institution), not when
+            // one is merely a short substring of a longer, distinct affiliation
+            // ("Dept of Physics" vs "Dept of Physics and Astronomy").
+            if (e.contains(c) || c.contains(e)) {
+                int shorter = Math.min(c.length(), e.length());
+                int longer = Math.max(c.length(), e.length());
+                if (longer > 0 && (double) shorter / longer >= CONTENT_DUPLICATE_MIN_RATIO) {
+                    return true;
+                }
             }
         }
         return false;

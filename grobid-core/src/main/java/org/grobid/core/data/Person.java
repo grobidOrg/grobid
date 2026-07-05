@@ -771,11 +771,13 @@ public class Person {
                     // Drop a phantom middle initial introduced by ALLCAPS firstName
                     // splitting in Person.normalizeName (e.g., front "YI" -> firstName="Y",
                     // middleName="I" then merged with back "Yi" leaves a redundant middle "I").
-                    // Guarded by anyShortFirstName so a real middle initial like "John F.
-                    // Kennedy" merging with "John Kennedy" (no length-1 firstName) is preserved.
+                    // Restricted to a 2-char reconstructed firstName (the shape that split
+                    // produces) so a real middle initial on a longer first name — "Anna A.
+                    // Smith" merging with "A. Smith", "David D." with "D." — is preserved;
+                    // also guarded by anyShortFirstName.
                     if (anyShortFirstName
                             && localMiddleName != null && localMiddleName.length() == 1
-                            && localFirstName != null && localFirstName.length() >= 2
+                            && localFirstName != null && localFirstName.length() == 2
                             && localFirstName.endsWith(localMiddleName)) {
                         localPerson.setMiddleName(null);
                         localMiddleName = null;

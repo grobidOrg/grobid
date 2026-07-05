@@ -328,6 +328,34 @@ public class PersonDeduplicationTest {
     }
 
     @Test
+    public void test_real_middle_initial_preserved_when_firstname_ends_with_initial_letter() {
+        // "Anna A. Smith" merged with "A. Smith": the merged firstName "Anna"
+        // coincidentally ends with the middle initial "A", but it is a real middle
+        // initial on a multi-char first name, so it must be preserved. The phantom
+        // guard only applies to a 2-char reconstructed firstName (ALLCAPS split).
+        target = new Person();
+        target.setFirstName("Anna");
+        target.setMiddleName("A");
+        target.setLastName("Smith");
+        target.normalizeName();
+
+        Person other = new Person();
+        other.setFirstName("A");
+        other.setLastName("Smith");
+        other.normalizeName();
+
+        List<Person> persons = new ArrayList<Person>();
+        persons.add(target);
+        persons.add(other);
+
+        target.deduplicate(persons);
+
+        assertThat(persons.size(), is(1));
+        assertThat(persons.get(0).getMiddleName(), is("A"));
+        assertThat(persons.get(0).getLastName(), is("Smith"));
+    }
+
+    @Test
     public void test_real_middle_initial_preserved_when_one_short_firstname_does_not_overlap() {
         // anyShortFirstName=true via the J. variant, but the upgraded firstName
         // ("John") does not end with the middle initial ("F"), so the middle

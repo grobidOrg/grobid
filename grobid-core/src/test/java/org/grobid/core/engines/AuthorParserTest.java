@@ -16,6 +16,7 @@
 package org.grobid.core.engines;
 
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
@@ -139,5 +140,18 @@ public class AuthorParserTest {
         assertThat("Worrell", got.get("Worrell"), containsInAnyOrder("b", "c"));
         assertThat("Miller", got.get("Miller"), containsInAnyOrder("b", "d"));
         assertThat("Hermes", got.get("Hermes"), containsInAnyOrder("*", "b", "c", "e"));
+    }
+
+    @Test
+    public void test_splitMarkers_keepsAlphanumericMarkerTogether() {
+        // A mixed alphanumeric marker like "1a" must stay a single token so it
+        // matches an affiliation whose marker is the literal "1a"; splitting it
+        // into "1"/"a" would let the stray "1" match a different affiliation.
+        assertThat(AuthorParser.splitMarkers("1a"), contains("1a"));
+        // Comma-separated markers still split; digit and letter runs still group.
+        assertThat(AuthorParser.splitMarkers("1, 2"), contains("1", "2"));
+        assertThat(AuthorParser.splitMarkers("11"), contains("11"));
+        // The literal "**" stays grouped; other symbols become individual markers.
+        assertThat(AuthorParser.splitMarkers("1**"), contains("1", "**"));
     }
 }

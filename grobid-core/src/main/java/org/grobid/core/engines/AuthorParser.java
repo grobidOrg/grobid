@@ -59,12 +59,13 @@ public class AuthorParser {
 
     /**
      * Splits a raw &lt;marker&gt; cluster string (e.g. "1,2,3*", "1, 2", "**")
-     * into individual markers. Digit runs and letter runs stay grouped (so
-     * "11" and "ii" remain single markers); the literal "**" stays grouped
-     * (it is conventionally a single corresponding-author marker); other
-     * symbols (`*`, `†`, etc.) become individual markers.
+     * into individual markers. Alphanumeric runs stay grouped (so "11", "ii" and
+     * a mixed marker like "1a" each remain a single marker matching an affiliation
+     * marker of the same text); the literal "**" stays grouped (it is
+     * conventionally a single corresponding-author marker); other symbols
+     * (`*`, `†`, etc.) become individual markers.
      */
-    private static final Pattern MARKER_SPLIT_PATTERN = Pattern.compile("[0-9]+|[a-zA-Z]+|\\*\\*|[^0-9a-zA-Z,\\s]");
+    private static final Pattern MARKER_SPLIT_PATTERN = Pattern.compile("[0-9a-zA-Z]+|\\*\\*|[^0-9a-zA-Z,\\s]");
 
     static List<String> splitMarkers(String markerCluster) {
         List<String> result = new ArrayList<>();

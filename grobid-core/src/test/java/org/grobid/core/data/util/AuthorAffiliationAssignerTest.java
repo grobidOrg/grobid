@@ -205,6 +205,46 @@ public class AuthorAffiliationAssignerTest {
         assertThat(authors.get(1).getAffiliations().get(0).getRawAffiliationString(), is("Stanford"));
     }
 
+    @Test
+    public void testMarkerMatching_duplicateSurnameGetsDistinctAffiliation() {
+        // Two co-authors share a surname. The marker-in-string tier must locate
+        // each Wang at its own position (progressive search) so marker "1" goes to
+        // the first Wang and "2" to the second — not both to the first.
+        List<Person> authors = authors("Wang", "Wang");
+
+        Affiliation aff1 = affiliation("MIT");
+        aff1.setMarker("1");
+        Affiliation aff2 = affiliation("Stanford");
+        aff2.setMarker("2");
+        List<Affiliation> affs = Arrays.asList(aff1, aff2);
+
+        AuthorAffiliationAssigner.assign(authors, affs, "L. Wang 1, J. Wang 2");
+
+        assertThat(authors.get(0).getAffiliations(), hasSize(1));
+        assertThat(authors.get(0).getAffiliations().get(0).getRawAffiliationString(), is("MIT"));
+        assertThat(authors.get(1).getAffiliations(), hasSize(1));
+        assertThat(authors.get(1).getAffiliations().get(0).getRawAffiliationString(), is("Stanford"));
+    }
+
+    @Test
+    public void test_preLink_shortSurnameNotMatchedInsideLongerSurname() {
+        // A short surname ("Li") must not match inside a longer author cluster
+        // whose surname merely contains it ("Lin"); the cluster "Q. Lin" resolves
+        // to Lin, never Li.
+        Person li = new Person();
+        li.setFirstName("Lars");
+        li.setLastName("Li");
+        Person lin = new Person();
+        lin.setFirstName("Qi");
+        lin.setLastName("Lin");
+
+        List<LayoutToken> spanTokens = makeTokens("Q", ".", " ", "Lin");
+        Person matched = AuthorAffiliationAssigner.matchPersonByCluster(spanTokens, Arrays.asList(li, lin));
+
+        assertNotNull("longer surname must match", matched);
+        assertEquals("Lin", matched.getLastName());
+    }
+
     // --- Proximity matching tests ---
 
     @Test

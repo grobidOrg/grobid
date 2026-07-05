@@ -82,34 +82,29 @@ public class HeaderParser extends AbstractParser {
 
     HeaderParser(GrobidModel model) {
         super(model);
-        //        this.languageUtilities = LanguageUtilities.getInstance();
     }
 
     public HeaderParser(EngineParsers parsers, CntManager cntManager) {
         super(GrobidModels.HEADER, cntManager);
         this.parsers = parsers;
         GrobidProperties.getInstance();
-        //        this.languageUtilities = LanguageUtilities.getInstance();
     }
 
     public HeaderParser(EngineParsers parsers) {
         super(GrobidModels.HEADER);
         this.parsers = parsers;
-        //        this.languageUtilities = LanguageUtilities.getInstance();
         GrobidProperties.getInstance();
     }
 
     public HeaderParser(EngineParsers parsers, CntManager cntManager, Flavor flavor) {
         super(GrobidModels.getModelFlavor(GrobidModels.HEADER, flavor), cntManager);
         this.parsers = parsers;
-        //        this.languageUtilities = LanguageUtilities.getInstance();
         GrobidProperties.getInstance();
     }
 
     public HeaderParser(EngineParsers parsers, Flavor flavor) {
         super(GrobidModels.getModelFlavor(GrobidModels.HEADER, flavor));
         this.parsers = parsers;
-        //        this.languageUtilities = LanguageUtilities.getInstance();
         GrobidProperties.getInstance();
     }
 
@@ -275,7 +270,6 @@ public class HeaderParser extends AbstractParser {
                 resHeader.setFullAffiliations(
                         parsers.getAffiliationAddressParser().processingLayoutTokens(tokenizationsAffiliation, config));
                 resHeader.attachEmails();
-                resHeader.attachEditorEmails();
 
                 // Deduplicate authors BEFORE attachAffiliations: the HEADER model can label
                 // a corresponding-author footnote ("Corresponding author: X (email)") as
@@ -298,6 +292,8 @@ public class HeaderParser extends AbstractParser {
                     // TBD: consider segments also for editors, like for authors above
                     resHeader
                             .setFullEditors(parsers.getAuthorParser().processingHeader(resHeader.getEditors(), config));
+                    // must run AFTER fullEditors is populated, otherwise it is a no-op
+                    resHeader.attachEditorEmails();
                 }
 
                 // below using the reference strings to improve the metadata extraction, it will
