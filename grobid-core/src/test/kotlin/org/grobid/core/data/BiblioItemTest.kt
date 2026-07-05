@@ -270,7 +270,7 @@ class BiblioItemTest {
         val biblio2 = BiblioItem()
         authors = ArrayList<Person?>()
         authors.add(createPerson("John", "Doe", "UCLA"))
-        authors.add(createPerson("Jane", "Will", "Harward"))
+        authors.add(createPerson("Jane", "Will", "Harvard"))
         biblio2.setFullAuthors(authors)
 
         BiblioItem.correct(biblio1, biblio2)
@@ -388,7 +388,7 @@ class BiblioItemTest {
         val biblio1 = BiblioItem()
         var authors: MutableList<Person?> = ArrayList<Person?>()
         authors.add(createPerson("John", "Doe", "ULCA"))
-        authors.add(createPerson("Jane", "Will", "Harward"))
+        authors.add(createPerson("Jane", "Will", "Harvard"))
         biblio1.setFullAuthors(authors)
 
         val biblio2 = BiblioItem()
@@ -452,7 +452,7 @@ class BiblioItemTest {
         val extractedBiblio = BiblioItem()
         var authors: MutableList<Person?> = ArrayList<Person?>()
         authors.add(createPerson("Barreiro", "FH", "CERN"))
-        authors.add(createPerson("Jane", "Will", "Harward"))
+        authors.add(createPerson("Jane", "Will", "Harvard"))
         extractedBiblio.setFullAuthors(authors)
 
         val crossrefBiblio = BiblioItem()
@@ -472,7 +472,7 @@ class BiblioItemTest {
         )
         Assert.assertThat(
             extractedBiblio.getFullAuthors().get(1).getAffiliations().get(0).getAffiliationString(),
-            CoreMatchers.`is`("Harward"),
+            CoreMatchers.`is`("Harvard"),
         )
     }
 
