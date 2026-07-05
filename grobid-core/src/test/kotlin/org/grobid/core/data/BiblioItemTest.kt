@@ -238,12 +238,12 @@ class BiblioItemTest {
     @Test
     fun correct_1author_shouldWork() {
         val biblio1 = BiblioItem()
-        var authors: MutableList<Person?> = ArrayList<Person?>()
+        var authors: MutableList<Person?> = mutableListOf()
         authors.add(createPerson("John", "Doe"))
         biblio1.setFullAuthors(authors)
 
         val biblio2 = BiblioItem()
-        authors = ArrayList<Person?>()
+        authors = mutableListOf()
         authors.add(createPerson("John1", "Doe"))
         biblio2.setFullAuthors(authors)
 
@@ -262,13 +262,13 @@ class BiblioItemTest {
     @Test
     fun correct_2authors_shouldMatchFullName_shouldUpdateAffiliation() {
         val biblio1 = BiblioItem()
-        var authors: MutableList<Person?> = ArrayList<Person?>()
+        var authors: MutableList<Person?> = mutableListOf()
         authors.add(createPerson("John", "Doe"))
         authors.add(createPerson("Jane", "Will"))
         biblio1.setFullAuthors(authors)
 
         val biblio2 = BiblioItem()
-        authors = ArrayList<Person?>()
+        authors = mutableListOf()
         authors.add(createPerson("John", "Doe", "UCLA"))
         authors.add(createPerson("Jane", "Will", "Harvard"))
         biblio2.setFullAuthors(authors)
@@ -302,13 +302,13 @@ class BiblioItemTest {
     @Test
     fun correct_2authors_shouldMatchFullName_shouldKeepAffiliation() {
         val biblio1 = BiblioItem()
-        var authors: MutableList<Person?> = ArrayList<Person?>()
+        var authors: MutableList<Person?> = mutableListOf()
         authors.add(createPerson("John", "Doe", "Stanford"))
         authors.add(createPerson("Jane", "Will", "Cambridge"))
         biblio1.setFullAuthors(authors)
 
         val biblio2 = BiblioItem()
-        authors = ArrayList<Person?>()
+        authors = mutableListOf()
         authors.add(createPerson("John", "Doe"))
         authors.add(createPerson("Jane", "Will", "UCLA"))
         biblio2.setFullAuthors(authors)
@@ -346,13 +346,13 @@ class BiblioItemTest {
     @Test
     fun correct_2authors_initial_2_shouldUpdateAuthor() {
         val biblio1 = BiblioItem()
-        var authors: MutableList<Person?> = ArrayList<Person?>()
+        var authors: MutableList<Person?> = mutableListOf()
         authors.add(createPerson("John", "Doe", "ULCA"))
         authors.add(createPerson("J", "Will", "Harward"))
         biblio1.setFullAuthors(authors)
 
         val biblio2 = BiblioItem()
-        authors = ArrayList<Person?>()
+        authors = mutableListOf()
         authors.add(createPerson("John1", "Doe", "Stanford"))
         authors.add(createPerson("Jane", "Will", "Berkeley"))
         biblio2.setFullAuthors(authors)
@@ -386,13 +386,13 @@ class BiblioItemTest {
     @Test
     fun correct_2authors_initial_shouldUpdateAuthor() {
         val biblio1 = BiblioItem()
-        var authors: MutableList<Person?> = ArrayList<Person?>()
+        var authors: MutableList<Person?> = mutableListOf()
         authors.add(createPerson("John", "Doe", "ULCA"))
         authors.add(createPerson("Jane", "Will", "Harvard"))
         biblio1.setFullAuthors(authors)
 
         val biblio2 = BiblioItem()
-        authors = ArrayList<Person?>()
+        authors = mutableListOf()
         authors.add(createPerson("John1", "Doe", "Stanford"))
         authors.add(createPerson("J", "Will", "Berkeley"))
         biblio2.setFullAuthors(authors)
@@ -424,14 +424,14 @@ class BiblioItemTest {
     fun correct_2authors_shouldPreservePdfOrcid_whenCrossrefHasNone() {
         // CrossRef result (bibo) has no ORCIDs
         val biblio1 = BiblioItem()
-        var authors: MutableList<Person?> = ArrayList<Person?>()
+        var authors: MutableList<Person?> = mutableListOf()
         authors.add(createPerson("John", "Doe"))
         authors.add(createPerson("Jane", "Will"))
         biblio1.setFullAuthors(authors)
 
         // PDF-extracted (bib) has ORCIDs from PDF annotations
         val biblio2 = BiblioItem()
-        authors = ArrayList<Person?>()
+        authors = mutableListOf()
         val pdfAuthor1 = createPerson("John", "Doe")
         pdfAuthor1.setORCID("0000-0001-2345-6789")
         authors.add(pdfAuthor1)
@@ -450,13 +450,13 @@ class BiblioItemTest {
     @Test
     fun correct_2authors_shouldPreserveAffiliationByPosition_whenNameMatchFails() {
         val extractedBiblio = BiblioItem()
-        var authors: MutableList<Person?> = ArrayList<Person?>()
+        var authors: MutableList<Person?> = mutableListOf()
         authors.add(createPerson("Barreiro", "FH", "CERN"))
         authors.add(createPerson("Jane", "Will", "Harvard"))
         extractedBiblio.setFullAuthors(authors)
 
         val crossrefBiblio = BiblioItem()
-        authors = ArrayList<Person?>()
+        authors = mutableListOf()
         authors.add(createPerson("F H", "Barreiro"))
         authors.add(createPerson("Jane", "Will"))
         crossrefBiblio.setFullAuthors(authors)
@@ -483,13 +483,13 @@ class BiblioItemTest {
         // consumed by a name match at another position. The positional fallback must NOT hand
         // that already-claimed affiliation to the unrelated CrossRef author.
         val extractedBiblio = BiblioItem()
-        var authors: MutableList<Person?> = ArrayList<Person?>()
+        var authors: MutableList<Person?> = mutableListOf()
         authors.add(createPerson("Jane", "Will", "Harvard"))
         authors.add(createPerson("Foo", "Bar", "SomeAff"))
         extractedBiblio.setFullAuthors(authors)
 
         val crossrefBiblio = BiblioItem()
-        authors = ArrayList<Person?>()
+        authors = mutableListOf()
         authors.add(createPerson("Xyz", "Newauthor"))
         authors.add(createPerson("Jane", "Will"))
         crossrefBiblio.setFullAuthors(authors)
@@ -508,10 +508,69 @@ class BiblioItemTest {
     }
 
     @Test
+    fun correct_2authors_shouldPreserveAffiliationBlocksAndMarkersByPosition_whenNameMatchFails() {
+        // The positional fallback carries over all three affiliation-related fields, not just the
+        // affiliation list: affiliationBlocks and affiliationMarkers must survive as well.
+        val extracted = Person()
+        extracted.setFirstName("Barreiro")
+        extracted.setLastName("FH")
+        val aff = Affiliation()
+        aff.setAffiliationString("CERN")
+        extracted.setAffiliations(mutableListOf(aff))
+        extracted.setAffiliationBlocks(mutableListOf("CERN, Geneva"))
+        extracted.setAffiliationMarkers(mutableListOf("1"))
+
+        val extractedBiblio = BiblioItem()
+        extractedBiblio.setFullAuthors(mutableListOf(extracted, createPerson("Jane", "Will", "Harvard")))
+
+        val crossrefBiblio = BiblioItem()
+        crossrefBiblio.setFullAuthors(mutableListOf(createPerson("F H", "Barreiro"), createPerson("Jane", "Will")))
+
+        BiblioItem.correct(extractedBiblio, crossrefBiblio)
+
+        val author0 = extractedBiblio.getFullAuthors().get(0)
+        Assert.assertThat(author0.getLastName(), CoreMatchers.`is`("Barreiro"))
+        Assert.assertThat(author0.getAffiliations().get(0).getAffiliationString(), CoreMatchers.`is`("CERN"))
+        Assert.assertThat(author0.getAffiliationBlocks(), CoreMatchers.`is`(mutableListOf("CERN, Geneva")))
+        Assert.assertThat(author0.getAffiliationMarkers(), CoreMatchers.`is`(mutableListOf("1")))
+    }
+
+    @Test
+    fun correct_2authors_shouldNotMisassignByPosition_whenListsReorderedAndNameMatchPartiallyFails() {
+        // Lists are reordered AND one author fails to name-match (atypical tokenization). Position
+        // is therefore unreliable: the fallback must not hand the mistokenized author's affiliation
+        // to the unrelated consolidated author that happens to sit at the same index.
+        // extracted: [Barreiro (tokenized as first=Barreiro/last=FH) with CERN, Jones (no aff)]
+        val extractedBiblio = BiblioItem()
+        var authors: MutableList<Person?> = mutableListOf()
+        authors.add(createPerson("Barreiro", "FH", "CERN"))
+        authors.add(createPerson("John", "Jones"))
+        extractedBiblio.setFullAuthors(authors)
+
+        // crossref (reordered): [Jones, Barreiro]
+        val crossrefBiblio = BiblioItem()
+        authors = mutableListOf()
+        authors.add(createPerson("John", "Jones"))
+        authors.add(createPerson("F H", "Barreiro"))
+        crossrefBiblio.setFullAuthors(authors)
+
+        BiblioItem.correct(extractedBiblio, crossrefBiblio)
+
+        Assert.assertThat(extractedBiblio.getFullAuthors(), Matchers.hasSize<Person?>(2))
+        // Jones (name-matched, at index 0) must NOT inherit Barreiro's CERN affiliation by position
+        Assert.assertThat(extractedBiblio.getFullAuthors().get(0).getLastName(), CoreMatchers.`is`("Jones"))
+        Assert.assertTrue(extractedBiblio.getFullAuthors().get(0).getAffiliations().isNullOrEmpty())
+        // Barreiro sits at index 1 where the extracted counterpart (Jones) was name-matched, so the
+        // fallback correctly refuses to guess rather than risk a wrong affiliation
+        Assert.assertThat(extractedBiblio.getFullAuthors().get(1).getLastName(), CoreMatchers.`is`("Barreiro"))
+        Assert.assertTrue(extractedBiblio.getFullAuthors().get(1).getAffiliations().isNullOrEmpty())
+    }
+
+    @Test
     fun correct_2authors_shouldKeepCrossrefOrcid_whenPdfHasNone() {
         // CrossRef result (bibo) has ORCIDs
         val biblio1 = BiblioItem()
-        var authors: MutableList<Person?> = ArrayList<Person?>()
+        var authors: MutableList<Person?> = mutableListOf()
         val crossrefAuthor1 = createPerson("John", "Doe")
         crossrefAuthor1.setORCID("0000-0001-1111-1111")
         authors.add(crossrefAuthor1)
@@ -522,7 +581,7 @@ class BiblioItemTest {
 
         // PDF-extracted (bib) has no ORCIDs
         val biblio2 = BiblioItem()
-        authors = ArrayList<Person?>()
+        authors = mutableListOf()
         authors.add(createPerson("John", "Doe"))
         authors.add(createPerson("Jane", "Will"))
         biblio2.setFullAuthors(authors)
@@ -538,7 +597,7 @@ class BiblioItemTest {
     fun correct_2authors_shouldNotOverwriteCrossrefOrcid_whenBothHaveOrcid() {
         // CrossRef result (bibo) has ORCIDs
         val biblio1 = BiblioItem()
-        var authors: MutableList<Person?> = ArrayList<Person?>()
+        var authors: MutableList<Person?> = mutableListOf()
         val crossrefAuthor1 = createPerson("John", "Doe")
         crossrefAuthor1.setORCID("0000-0001-1111-1111")
         authors.add(crossrefAuthor1)
@@ -547,7 +606,7 @@ class BiblioItemTest {
 
         // PDF-extracted (bib) has different ORCIDs
         val biblio2 = BiblioItem()
-        authors = ArrayList<Person?>()
+        authors = mutableListOf()
         val pdfAuthor1 = createPerson("John", "Doe")
         pdfAuthor1.setORCID("0000-0001-9999-9999")
         authors.add(pdfAuthor1)
@@ -568,13 +627,13 @@ class BiblioItemTest {
     fun correct_1author_shouldPreservePdfOrcid_whenCrossrefHasNone() {
         // CrossRef result (bibo) with single author, no ORCID
         val biblio1 = BiblioItem()
-        var authors: MutableList<Person?> = ArrayList<Person?>()
+        var authors: MutableList<Person?> = mutableListOf()
         authors.add(createPerson("John", "Doe"))
         biblio1.setFullAuthors(authors)
 
         // PDF-extracted (bib) with ORCID
         val biblio2 = BiblioItem()
-        authors = ArrayList<Person?>()
+        authors = mutableListOf()
         val pdfAuthor = createPerson("John", "Doe")
         pdfAuthor.setORCID("0000-0001-2345-6789")
         authors.add(pdfAuthor)
@@ -661,7 +720,7 @@ class BiblioItemTest {
         val person = createPerson(firstName, secondName)
         val affiliation1 = Affiliation()
         affiliation1.setAffiliationString(affiliation)
-        val affiliations: MutableList<Affiliation?> = ArrayList<Affiliation?>()
+        val affiliations: MutableList<Affiliation?> = mutableListOf()
         affiliations.add(affiliation1)
         person.setAffiliations(affiliations)
         return person

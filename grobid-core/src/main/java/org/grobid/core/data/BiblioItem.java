@@ -4457,10 +4457,13 @@ public class BiblioItem {
                 // we have the complete list of authors so we can take them from the second
                 // biblio item and merge some possible extra from the first when a match is
                 // reliable
-                // track the extracted authors already consumed by a reliable name-based match,
-                // so the positional fallback below never reuses their affiliation for a
-                // different consolidated author (identity comparison, Person may override equals)
+                // track the authors already paired by a reliable name-based match, on both sides,
+                // so the positional fallback below only fires for the "leftover" indices where
+                // neither side was matched. A name match that crosses positions is evidence the
+                // two lists are reordered, and position can no longer be trusted for the rest.
+                // (identity comparison, Person may override equals)
                 Set<Person> nameMatchedExtractedAuthors = Collections.newSetFromMap(new IdentityHashMap<>());
+                Set<Person> nameMatchedConsolidatedAuthors = Collections.newSetFromMap(new IdentityHashMap<>());
                 for (Person aut : bibo.getFullAuthors()) {
                     // try to find the author in the first item (we know it's not empty)
                     for (Person aut2 : bib.getFullAuthors()) {
@@ -4512,6 +4515,7 @@ public class BiblioItem {
                                                     && StringUtils.isNotBlank(aut2.getORCID()))
                                                 aut.setORCID(aut2.getORCID());
                                             nameMatchedExtractedAuthors.add(aut2);
+                                            nameMatchedConsolidatedAuthors.add(aut);
                                             break;
                                         }
                                     }
@@ -4522,14 +4526,16 @@ public class BiblioItem {
                 }
                 // positional fallback: when the name-based match above missed (e.g. atypical
                 // name tokenization) but the two author lists are aligned by document order,
-                // carry over the extracted affiliation data by position. Skip extracted authors
-                // already consumed by a name match, otherwise their affiliation could be
-                // reassigned to a different consolidated author when the lists are reordered.
+                // carry over the extracted affiliation data by position. Only fire for indices
+                // where neither side was name-matched: if either the consolidated or the
+                // extracted author at this position was already paired by name, position is
+                // unreliable and copying could reassign an affiliation to the wrong author.
                 if (bibo.getFullAuthors().size() == bib.getFullAuthors().size()) {
                     for (int i = 0; i < bibo.getFullAuthors().size(); i++) {
                         Person consolidatedAuthor = bibo.getFullAuthors().get(i);
                         Person extractedAuthor = bib.getFullAuthors().get(i);
-                        if (nameMatchedExtractedAuthors.contains(extractedAuthor)) {
+                        if (nameMatchedConsolidatedAuthors.contains(consolidatedAuthor)
+                                || nameMatchedExtractedAuthors.contains(extractedAuthor)) {
                             continue;
                         }
                         if (CollectionUtils.isEmpty(consolidatedAuthor.getAffiliations())
