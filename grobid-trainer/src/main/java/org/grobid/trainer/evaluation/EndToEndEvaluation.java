@@ -2199,7 +2199,10 @@ public class EndToEndEvaluation {
             String affiliationNote = "\nNote: the \"affiliation_linked\" field above is a "
                     + "linking-aware metric (each author is paired with its gold counterpart and "
                     + "their attached affiliations compared). Computed from "
-                    + articlesWithLinkedAffiliation + " of " + nbFile + " evaluated articles "
+                    + articlesWithLinkedAffiliation
+                    + " of "
+                    + nbFile
+                    + " evaluated articles "
                     + "(those with at least one explicit gold affiliation link). Its support is a "
                     + "different population (per-author links, not per-article), so it is not "
                     + "comparable to the other header fields and inflates the \"all fields\" "
