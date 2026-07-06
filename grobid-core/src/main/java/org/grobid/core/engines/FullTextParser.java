@@ -1500,28 +1500,30 @@ public class FullTextParser extends AbstractParser {
                 //String tei = parsers.getReferenceSegmenterParser().createTrainingData2(referencesStr, id);
                 Pair<String, String> result =
                     parsers.getReferenceSegmenterParser().createTrainingData(doc, id);
-                String tei = result.getLeft();
-                String raw = result.getRight();
-                if (tei != null) {
-                    String outPath = pathTEI + "/" +
-                        pdfFileName.replaceAll("(?i)\\.pdf$", ".training.references.referenceSegmenter.tei.xml");
-                    writer = new OutputStreamWriter(new FileOutputStream(new File(outPath), false), StandardCharsets.UTF_8);
-                    writer.write(tei + "\n");
-                    writer.close();
+                if (result != null) {
+                    String tei = result.getLeft();
+                    String raw = result.getRight();
+                    if (tei != null) {
+                        String outPath = pathTEI + "/" +
+                            pdfFileName.replaceAll("(?i)\\.pdf$", ".training.references.referenceSegmenter.tei.xml");
+                        writer = new OutputStreamWriter(new FileOutputStream(new File(outPath), false), StandardCharsets.UTF_8);
+                        writer.write(tei + "\n");
+                        writer.close();
 
-                    // generate also the raw vector file with the features
-                    outPath = pathTEI + "/" + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.references.referenceSegmenter");
-                    writer = new OutputStreamWriter(new FileOutputStream(new File(outPath), false), StandardCharsets.UTF_8);
-                    writer.write(raw + "\n");
-                    writer.close();
+                        // generate also the raw vector file with the features
+                        outPath = pathTEI + "/" + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.references.referenceSegmenter");
+                        writer = new OutputStreamWriter(new FileOutputStream(new File(outPath), false), StandardCharsets.UTF_8);
+                        writer.write(raw + "\n");
+                        writer.close();
 
-                    // also write the raw text as it is before reference segmentation
-                    outPathRawtext = pathTEI + "/" + pdfFileName
-                        .replace(".pdf", ".training.references.referenceSegmenter.rawtxt");
-                    Writer strWriter = new OutputStreamWriter(
-                        new FileOutputStream(new File(outPathRawtext), false), StandardCharsets.UTF_8);
-                    strWriter.write(referencesStr + "\n");
-                    strWriter.close();
+                        // also write the raw text as it is before reference segmentation
+                        outPathRawtext = pathTEI + "/" + pdfFileName
+                            .replace(".pdf", ".training.references.referenceSegmenter.rawtxt");
+                        Writer strWriter = new OutputStreamWriter(
+                            new FileOutputStream(new File(outPathRawtext), false), StandardCharsets.UTF_8);
+                        strWriter.write(referencesStr + "\n");
+                        strWriter.close();
+                    }
                 }
             }
 
