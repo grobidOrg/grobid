@@ -1972,6 +1972,18 @@ public class EndToEndEvaluation {
         Stats documentLevelStatementsRatioStat = mergedResult.documentLevelStatementsRatioStat;
         int totalExpectedInstances = mergedResult.totalExpectedInstances;
         int articlesWithLinkedAffiliation = mergedResult.articlesWithLinkedAffiliation;
+
+        // Report affiliation_linked's support as the number of contributing articles (same unit as
+        // the other header fields), not its raw per-author-link count. P/R/F1 are unaffected.
+        if (sectionType == HEADER) {
+            Map<String, Long> affSupport = Collections.singletonMap(
+                    AFFILIATION_LINKED_LABEL,
+                    (long) articlesWithLinkedAffiliation);
+            strictStats.setSupportOverride(affSupport);
+            softStats.setSupportOverride(affSupport);
+            levenshteinStats.setSupportOverride(affSupport);
+            ratcliffObershelpStats.setSupportOverride(affSupport);
+        }
         int totalObservedInstances = mergedResult.totalObservedInstances;
         int totalCorrectInstancesStrict = mergedResult.totalCorrectInstancesStrict;
         int totalCorrectInstancesSoft = mergedResult.totalCorrectInstancesSoft;
@@ -2198,15 +2210,10 @@ public class EndToEndEvaluation {
         } else if (sectionType == this.HEADER) {
             String affiliationNote = "\nNote: the \"affiliation_linked\" field above is a "
                     + "linking-aware metric (each author is paired with its gold counterpart and "
-                    + "their attached affiliations compared). Computed from "
-                    + articlesWithLinkedAffiliation
-                    + " of "
-                    + nbFile
-                    + " evaluated articles "
-                    + "(those with at least one explicit gold affiliation link). Its support is a "
-                    + "different population (per-author links, not per-article), so it is not "
-                    + "comparable to the other header fields and inflates the \"all fields\" "
-                    + "support total.\n"
+                    + "their attached affiliations compared). Its support column reports the number "
+                    + "of articles the metric is computed from (those with at least one explicit "
+                    + "gold affiliation link), while precision/recall/F1 are measured over the "
+                    + "individual author-affiliation links.\n"
                     + "Only authors whose gold affiliation link is explicit are scored; "
                     + "affiliations encoded purely positionally in the gold (no xref/@rid and no "
                     + "nested aff) are out of scope, not counted as misses.\n"

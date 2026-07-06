@@ -436,4 +436,47 @@ public class StatsTest {
         assertThat(target.getLabelStat("FOO").getObserved(), is(3));
     }
 
+    @Test
+    public void testSupportOverride_changesDisplayedSupportAndTotalOnly() throws Exception {
+        target.getLabelStat("FOO").setExpected(4);
+        target.getLabelStat("FOO").setObserved(4);
+
+        target.getLabelStat("AFF").setExpected(10);
+        target.getLabelStat("AFF").setObserved(8);
+        target.getLabelStat("AFF").setFalseNegative(2);
+        target.getLabelStat("AFF").setFalsePositive(2);
+
+        double microPrecisionBefore = target.getMicroAveragePrecision();
+
+        String before = target.getMarkDownReport();
+        assertThat(supportCellOf("| AFF ", before), is("10"));
+        assertThat(supportCellOf("micro avg", before), is("14"));
+
+        // Report AFF's support as an article count (3) instead of its 10 links.
+        target.setSupportOverride(java.util.Collections.singletonMap("AFF", 3L));
+        String after = target.getMarkDownReport();
+
+        // Displayed support for AFF and the support column total now reflect the override...
+        assertThat(supportCellOf("| AFF ", after), is("3"));
+        assertThat(supportCellOf("micro avg", after), is("7"));
+        // ...while precision/recall/F1 are computed from the underlying counts, unchanged.
+        assertThat(target.getMicroAveragePrecision(), is(microPrecisionBefore));
+        assertThat(target.getLabelStat("AFF").getPrecision(), is(0.8));
+        assertThat(target.getLabelStat("AFF").getRecall(), is(0.8));
+    }
+
+    /** Returns the trimmed support (last markdown cell) of the row whose text contains {@code needle}. */
+    private static String supportCellOf(String needle, String markdownReport) {
+        for (String line : markdownReport.split("\n")) {
+            if (line.contains(needle)) {
+                String trimmed = line.trim();
+                if (trimmed.endsWith("|")) {
+                    trimmed = trimmed.substring(0, trimmed.length() - 1).trim();
+                }
+                return trimmed.substring(trimmed.lastIndexOf('|') + 1).trim();
+            }
+        }
+        return null;
+    }
+
 }
