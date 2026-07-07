@@ -24,7 +24,7 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - uses: gradle/actions/setup-gradle@v4
+      - uses: gradle/actions/setup-gradle@v6
       - name: Check code formatting
         run: ./gradlew spotlessCheck
         continue-on-error: false
