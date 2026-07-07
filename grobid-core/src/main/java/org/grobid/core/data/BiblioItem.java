@@ -4286,174 +4286,177 @@ public class BiblioItem {
     /**
      * Correct fields of the first biblio item based on the second one and the reference string
      *
-     * @param bib extracted from document
-     * @param bibo fetched from metadata provider (biblioglutton, crossref..)
+     * @param extractedBiblio extracted from document
+     * @param consolidatedBiblio fetched from metadata provider (biblioglutton, crossref..)
      */
-    public static void correct(BiblioItem bib, BiblioItem bibo) {
+    public static void correct(BiblioItem extractedBiblio, BiblioItem consolidatedBiblio) {
         //System.out.println("correct: \n" + bib.toTEI(0));
         //System.out.println("with: \n" + bibo.toTEI(0));
-        if (bibo.getDOI() != null)
-            bib.setDOI(bibo.getDOI());
-        if (bibo.getPMID() != null)
-            bib.setPMID(bibo.getPMID());
-        if (bibo.getPMCID() != null)
-            bib.setPMCID(bibo.getPMCID());
-        if (bibo.getPII() != null)
-            bib.setPII(bibo.getPII());
-        if (bibo.getIstexId() != null)
-            bib.setIstexId(bibo.getIstexId());
-        if (bibo.getArk() != null)
-            bib.setArk(bibo.getArk());
-        if (bibo.getHalId() != null)
-            bib.setHalId(bibo.getHalId());
+        if (consolidatedBiblio.getDOI() != null)
+            extractedBiblio.setDOI(consolidatedBiblio.getDOI());
+        if (consolidatedBiblio.getPMID() != null)
+            extractedBiblio.setPMID(consolidatedBiblio.getPMID());
+        if (consolidatedBiblio.getPMCID() != null)
+            extractedBiblio.setPMCID(consolidatedBiblio.getPMCID());
+        if (consolidatedBiblio.getPII() != null)
+            extractedBiblio.setPII(consolidatedBiblio.getPII());
+        if (consolidatedBiblio.getIstexId() != null)
+            extractedBiblio.setIstexId(consolidatedBiblio.getIstexId());
+        if (consolidatedBiblio.getArk() != null)
+            extractedBiblio.setArk(consolidatedBiblio.getArk());
+        if (consolidatedBiblio.getHalId() != null)
+            extractedBiblio.setHalId(consolidatedBiblio.getHalId());
 
-        if (bibo.getOAURL() != null)
-            bib.setOAURL(bibo.getOAURL());
+        if (consolidatedBiblio.getOAURL() != null)
+            extractedBiblio.setOAURL(consolidatedBiblio.getOAURL());
 
-        if (bibo.getJournal() != null) {
-            bib.setJournal(bibo.getJournal());
+        if (consolidatedBiblio.getJournal() != null) {
+            extractedBiblio.setJournal(consolidatedBiblio.getJournal());
             // document type consistency (correction might change overall item type, and some
             // fields become inconsistent)
-            if (bibo.getBookTitle() == null) {
-                bib.setBookTitle(null);
+            if (consolidatedBiblio.getBookTitle() == null) {
+                extractedBiblio.setBookTitle(null);
             }
         }
-        if (bibo.getAuthors() != null)
-            bib.setAuthors(bibo.getAuthors());
-        if (bibo.getEditors() != null)
-            bib.setEditors(bibo.getEditors());
-        if (bibo.getBookTitle() != null) {
-            bib.setBookTitle(bibo.getBookTitle());
+        if (consolidatedBiblio.getAuthors() != null)
+            extractedBiblio.setAuthors(consolidatedBiblio.getAuthors());
+        if (consolidatedBiblio.getEditors() != null)
+            extractedBiblio.setEditors(consolidatedBiblio.getEditors());
+        if (consolidatedBiblio.getBookTitle() != null) {
+            extractedBiblio.setBookTitle(consolidatedBiblio.getBookTitle());
             // document type consistency
-            if (bibo.getJournal() == null) {
-                bib.setJournal(null);
+            if (consolidatedBiblio.getJournal() == null) {
+                extractedBiblio.setJournal(null);
             }
         }
-        if (bibo.getVolume() != null)
-            bib.setVolume(bibo.getVolume());
-        if (bibo.getVolumeBlock() != null)
-            bib.setVolumeBlock(bibo.getVolumeBlock(), false);
-        if (bibo.getIssue() != null)
-            bib.setIssue(bibo.getIssue());
-        if (bibo.getBeginPage() != -1)
-            bib.setBeginPage(bibo.getBeginPage());
-        if (bibo.getEndPage() != -1)
-            bib.setEndPage(bibo.getEndPage());
-        if (bibo.getPageRange() != null)
-            bib.setPageRange(bibo.getPageRange());
-        if (bibo.getPublicationDate() != null)
-            bib.setPublicationDate(bibo.getPublicationDate());
-        if (bibo.getSubmissionDate() != null)
-            bib.setSubmissionDate(bibo.getSubmissionDate());
-        if (bibo.getDownloadDate() != null)
-            bib.setDownloadDate(bibo.getDownloadDate());
+        if (consolidatedBiblio.getVolume() != null)
+            extractedBiblio.setVolume(consolidatedBiblio.getVolume());
+        if (consolidatedBiblio.getVolumeBlock() != null)
+            extractedBiblio.setVolumeBlock(consolidatedBiblio.getVolumeBlock(), false);
+        if (consolidatedBiblio.getIssue() != null)
+            extractedBiblio.setIssue(consolidatedBiblio.getIssue());
+        if (consolidatedBiblio.getBeginPage() != -1)
+            extractedBiblio.setBeginPage(consolidatedBiblio.getBeginPage());
+        if (consolidatedBiblio.getEndPage() != -1)
+            extractedBiblio.setEndPage(consolidatedBiblio.getEndPage());
+        if (consolidatedBiblio.getPageRange() != null)
+            extractedBiblio.setPageRange(consolidatedBiblio.getPageRange());
+        if (consolidatedBiblio.getPublicationDate() != null)
+            extractedBiblio.setPublicationDate(consolidatedBiblio.getPublicationDate());
+        if (consolidatedBiblio.getSubmissionDate() != null)
+            extractedBiblio.setSubmissionDate(consolidatedBiblio.getSubmissionDate());
+        if (consolidatedBiblio.getDownloadDate() != null)
+            extractedBiblio.setDownloadDate(consolidatedBiblio.getDownloadDate());
 
-        if (bibo.getNormalizedPublicationDate() != null) {
-            if (bib.getNormalizedPublicationDate() != null) {
-                bib.mergeNormalizedPublicationDate(bibo.getNormalizedPublicationDate());
+        if (consolidatedBiblio.getNormalizedPublicationDate() != null) {
+            if (extractedBiblio.getNormalizedPublicationDate() != null) {
+                extractedBiblio.mergeNormalizedPublicationDate(consolidatedBiblio.getNormalizedPublicationDate());
             } else {
-                bib.setNormalizedPublicationDate(bibo.getNormalizedPublicationDate());
+                extractedBiblio.setNormalizedPublicationDate(consolidatedBiblio.getNormalizedPublicationDate());
             }
         }
-        if (bibo.getYear() != null)
-            bib.setYear(bibo.getYear());
-        if (bibo.getMonth() != null)
-            bib.setMonth(bibo.getMonth());
-        if (bibo.getDay() != null)
-            bib.setDay(bibo.getDay());
-        if (bibo.getE_Year() != null)
-            bib.setE_Year(bibo.getE_Year());
-        if (bibo.getE_Month() != null)
-            bib.setE_Month(bibo.getE_Month());
-        if (bibo.getE_Day() != null)
-            bib.setE_Day(bibo.getE_Day());
-        if (bibo.getA_Year() != null)
-            bib.setA_Year(bibo.getA_Year());
-        if (bibo.getA_Month() != null)
-            bib.setA_Month(bibo.getA_Month());
-        if (bibo.getA_Day() != null)
-            bib.setA_Day(bibo.getA_Day());
-        if (bibo.getS_Year() != null)
-            bib.setS_Year(bibo.getS_Year());
-        if (bibo.getS_Month() != null)
-            bib.setS_Month(bibo.getS_Month());
-        if (bibo.getS_Day() != null)
-            bib.setS_Day(bibo.getS_Day());
+        if (consolidatedBiblio.getYear() != null)
+            extractedBiblio.setYear(consolidatedBiblio.getYear());
+        if (consolidatedBiblio.getMonth() != null)
+            extractedBiblio.setMonth(consolidatedBiblio.getMonth());
+        if (consolidatedBiblio.getDay() != null)
+            extractedBiblio.setDay(consolidatedBiblio.getDay());
+        if (consolidatedBiblio.getE_Year() != null)
+            extractedBiblio.setE_Year(consolidatedBiblio.getE_Year());
+        if (consolidatedBiblio.getE_Month() != null)
+            extractedBiblio.setE_Month(consolidatedBiblio.getE_Month());
+        if (consolidatedBiblio.getE_Day() != null)
+            extractedBiblio.setE_Day(consolidatedBiblio.getE_Day());
+        if (consolidatedBiblio.getA_Year() != null)
+            extractedBiblio.setA_Year(consolidatedBiblio.getA_Year());
+        if (consolidatedBiblio.getA_Month() != null)
+            extractedBiblio.setA_Month(consolidatedBiblio.getA_Month());
+        if (consolidatedBiblio.getA_Day() != null)
+            extractedBiblio.setA_Day(consolidatedBiblio.getA_Day());
+        if (consolidatedBiblio.getS_Year() != null)
+            extractedBiblio.setS_Year(consolidatedBiblio.getS_Year());
+        if (consolidatedBiblio.getS_Month() != null)
+            extractedBiblio.setS_Month(consolidatedBiblio.getS_Month());
+        if (consolidatedBiblio.getS_Day() != null)
+            extractedBiblio.setS_Day(consolidatedBiblio.getS_Day());
 
-        if (bibo.getD_Year() != null)
-            bib.setD_Year(bibo.getD_Year());
-        if (bibo.getD_Month() != null)
-            bib.setD_Month(bibo.getD_Month());
-        if (bibo.getD_Day() != null)
-            bib.setD_Day(bibo.getD_Day());
+        if (consolidatedBiblio.getD_Year() != null)
+            extractedBiblio.setD_Year(consolidatedBiblio.getD_Year());
+        if (consolidatedBiblio.getD_Month() != null)
+            extractedBiblio.setD_Month(consolidatedBiblio.getD_Month());
+        if (consolidatedBiblio.getD_Day() != null)
+            extractedBiblio.setD_Day(consolidatedBiblio.getD_Day());
 
-        if (bibo.getLocation() != null)
-            bib.setLocation(bibo.getLocation());
-        if (bibo.getPublisher() != null)
-            bib.setPublisher(bibo.getPublisher());
-        if (bibo.getTitle() != null) {
-            bib.setTitle(bibo.getTitle());
+        if (consolidatedBiblio.getLocation() != null)
+            extractedBiblio.setLocation(consolidatedBiblio.getLocation());
+        if (consolidatedBiblio.getPublisher() != null)
+            extractedBiblio.setPublisher(consolidatedBiblio.getPublisher());
+        if (consolidatedBiblio.getTitle() != null) {
+            extractedBiblio.setTitle(consolidatedBiblio.getTitle());
         }
-        if (bibo.getArticleTitle() != null) {
-            bib.setArticleTitle(bibo.getArticleTitle());
+        if (consolidatedBiblio.getArticleTitle() != null) {
+            extractedBiblio.setArticleTitle(consolidatedBiblio.getArticleTitle());
         }
-        if (bibo.getJournalAbbrev() != null) {
-            bib.setJournalAbbrev(bibo.getJournalAbbrev());
+        if (consolidatedBiblio.getJournalAbbrev() != null) {
+            extractedBiblio.setJournalAbbrev(consolidatedBiblio.getJournalAbbrev());
         }
-        if (bibo.getISSN() != null)
-            bib.setISSN(bibo.getISSN());
-        if (bibo.getISSNe() != null)
-            bib.setISSNe(bibo.getISSNe());
-        if (bibo.getISBN10() != null)
-            bib.setISBN10(bibo.getISBN10());
-        if (bibo.getISBN13() != null)
-            bib.setISBN13(bibo.getISBN13());
-        if (bibo.getHalId() != null)
-            bib.setHalId(bibo.getHalId());
+        if (consolidatedBiblio.getISSN() != null)
+            extractedBiblio.setISSN(consolidatedBiblio.getISSN());
+        if (consolidatedBiblio.getISSNe() != null)
+            extractedBiblio.setISSNe(consolidatedBiblio.getISSNe());
+        if (consolidatedBiblio.getISBN10() != null)
+            extractedBiblio.setISBN10(consolidatedBiblio.getISBN10());
+        if (consolidatedBiblio.getISBN13() != null)
+            extractedBiblio.setISBN13(consolidatedBiblio.getISBN13());
+        if (consolidatedBiblio.getHalId() != null)
+            extractedBiblio.setHalId(consolidatedBiblio.getHalId());
 
-        if (bibo.getItem() != -1) {
-            bib.setItem(bibo.getItem());
+        if (consolidatedBiblio.getItem() != -1) {
+            extractedBiblio.setItem(consolidatedBiblio.getItem());
         }
-        if (bibo.getCollaboration() != null) {
-            bib.setCollaboration(bibo.getCollaboration());
+        if (consolidatedBiblio.getCollaboration() != null) {
+            extractedBiblio.setCollaboration(consolidatedBiblio.getCollaboration());
         }
 
         // authors present in fullAuthors list should be in the existing resources
         // at least the corresponding author
-        if (!CollectionUtils.isEmpty(bibo.getFullAuthors())) {
-            if (CollectionUtils.isEmpty(bib.getFullAuthors()))
-                bib.setFullAuthors(bibo.getFullAuthors());
-            else if (bibo.getFullAuthors().size() == 1) {
+        if (!CollectionUtils.isEmpty(consolidatedBiblio.getFullAuthors())) {
+            if (CollectionUtils.isEmpty(extractedBiblio.getFullAuthors()))
+                extractedBiblio.setFullAuthors(consolidatedBiblio.getFullAuthors());
+            else if (consolidatedBiblio.getFullAuthors().size() == 1) {
                 // we have the corresponding author
                 // check if the author exists in the obtained list
-                Person auto = (Person) bibo.getFullAuthors().get(0);
-                List<Person> auts = bib.getFullAuthors();
-                if (auts != null) {
-                    for (Person aut : auts) {
-                        if (StringUtils.isNotBlank(aut.getLastName()) && StringUtils.isNotBlank(auto.getLastName())) {
-                            if (aut.getLastName().toLowerCase().equals(auto.getLastName().toLowerCase())) {
-                                if (StringUtils.isBlank(aut.getFirstName()) ||
-                                        (auto.getFirstName() != null &&
-                                                aut.getFirstName().length() <= auto.getFirstName().length() &&
-                                                auto.getFirstName()
+                Person consolidatedAuthor = consolidatedBiblio.getFullAuthors().getFirst();
+                List<Person> extractedAuthors = extractedBiblio.getFullAuthors();
+                if (extractedAuthors != null) {
+                    for (Person extractedAuthor : extractedAuthors) {
+                        if (StringUtils.isNotBlank(extractedAuthor.getLastName())
+                                && StringUtils.isNotBlank(consolidatedAuthor.getLastName())) {
+                            if (extractedAuthor.getLastName().equalsIgnoreCase(consolidatedAuthor.getLastName())) {
+                                if (StringUtils.isBlank(extractedAuthor.getFirstName()) ||
+                                        (consolidatedAuthor.getFirstName() != null &&
+                                                extractedAuthor.getFirstName()
+                                                        .length() <= consolidatedAuthor.getFirstName().length()
+                                                &&
+                                                consolidatedAuthor.getFirstName()
                                                         .toLowerCase()
-                                                        .startsWith(aut.getFirstName().toLowerCase()))) {
-                                    aut.setFirstName(auto.getFirstName());
-                                    aut.setCorresp(true);
-                                    if (StringUtils.isNotBlank(auto.getEmail()))
-                                        aut.setEmail(auto.getEmail());
+                                                        .startsWith(extractedAuthor.getFirstName().toLowerCase()))) {
+                                    extractedAuthor.setFirstName(consolidatedAuthor.getFirstName());
+                                    extractedAuthor.setCorresp(true);
+                                    if (StringUtils.isNotBlank(consolidatedAuthor.getEmail()))
+                                        extractedAuthor.setEmail(consolidatedAuthor.getEmail());
                                     // should we also check the country ? affiliation?
-                                    if (StringUtils.isNotBlank(auto.getMiddleName())
-                                            && (StringUtils.isBlank(aut.getMiddleName())))
-                                        aut.setMiddleName(auto.getMiddleName());
+                                    if (StringUtils.isNotBlank(consolidatedAuthor.getMiddleName())
+                                            && (StringUtils.isBlank(extractedAuthor.getMiddleName())))
+                                        extractedAuthor.setMiddleName(consolidatedAuthor.getMiddleName());
                                     // crossref is considered more reliable than PDF annotations
-                                    aut.setORCID(auto.getORCID());
+                                    extractedAuthor.setORCID(consolidatedAuthor.getORCID());
                                 }
                             }
                         }
                     }
                 }
-            } else if (bibo.getFullAuthors().size() > 1) {
+            } else if (consolidatedBiblio.getFullAuthors().size() > 1) {
                 // we have the complete list of authors so we can take them from the second
                 // biblio item and merge some possible extra from the first when a match is
                 // reliable
@@ -4464,58 +4467,63 @@ public class BiblioItem {
                 // (identity comparison, Person may override equals)
                 Set<Person> nameMatchedExtractedAuthors = Collections.newSetFromMap(new IdentityHashMap<>());
                 Set<Person> nameMatchedConsolidatedAuthors = Collections.newSetFromMap(new IdentityHashMap<>());
-                for (Person aut : bibo.getFullAuthors()) {
+                for (Person consolidatedAuthor : consolidatedBiblio.getFullAuthors()) {
                     // try to find the author in the first item (we know it's not empty)
-                    for (Person aut2 : bib.getFullAuthors()) {
+                    for (Person extractedAuthor : extractedBiblio.getFullAuthors()) {
 
-                        if (StringUtils.isNotBlank(aut2.getLastName())) {
-                            String aut2_lastname = aut2.getLastName().toLowerCase();
+                        if (StringUtils.isNotBlank(extractedAuthor.getLastName())) {
+                            String extractedLastName = extractedAuthor.getLastName().toLowerCase();
 
-                            if (StringUtils.isNotBlank(aut.getLastName())) {
-                                String aut_lastname = aut.getLastName().toLowerCase();
+                            if (StringUtils.isNotBlank(consolidatedAuthor.getLastName())) {
+                                String consolidatedLastName = consolidatedAuthor.getLastName().toLowerCase();
 
-                                if (aut_lastname.equals(aut2_lastname)) {
+                                if (consolidatedLastName.equals(extractedLastName)) {
                                     // check also first name if present - at least for the initial
-                                    if (StringUtils.isBlank(aut2.getFirstName()) ||
-                                            (StringUtils.isNotBlank(aut2.getFirstName())
-                                                    && StringUtils.isNotBlank(aut.getFirstName()))) {
+                                    if (StringUtils.isBlank(extractedAuthor.getFirstName()) ||
+                                            (StringUtils.isNotBlank(extractedAuthor.getFirstName())
+                                                    && StringUtils.isNotBlank(consolidatedAuthor.getFirstName()))) {
                                         // we have no first name or a match (full first name)
 
-                                        if (StringUtils.isBlank(aut2.getFirstName())
+                                        if (StringUtils.isBlank(extractedAuthor.getFirstName())
                                                 ||
-                                                aut.getFirstName().equals(aut2.getFirstName())
+                                                consolidatedAuthor.getFirstName().equals(extractedAuthor.getFirstName())
                                                 ||
-                                                (aut.getFirstName().length() == 1 &&
-                                                        aut.getFirstName()
-                                                                .equals(aut2.getFirstName().substring(0, 1)))) {
+                                                (consolidatedAuthor.getFirstName().length() == 1 &&
+                                                        consolidatedAuthor.getFirstName()
+                                                                .equals(
+                                                                        extractedAuthor.getFirstName()
+                                                                                .substring(0, 1)))) {
                                             // we have a match (full or initial)
-                                            if (StringUtils.isNotBlank(aut2.getFirstName()) &&
-                                                    aut2.getFirstName().length() > aut.getFirstName().length())
-                                                aut.setFirstName(aut2.getFirstName());
-                                            if (StringUtils.isBlank(aut.getMiddleName()))
-                                                aut.setMiddleName(aut2.getMiddleName());
-                                            if (StringUtils.isBlank(aut.getTitle()))
-                                                aut.setTitle(aut2.getTitle());
-                                            if (StringUtils.isBlank(aut.getSuffix()))
-                                                aut.setSuffix(aut2.getSuffix());
-                                            if (StringUtils.isBlank(aut.getEmail()))
-                                                aut.setEmail(aut2.getEmail());
-                                            if (!CollectionUtils.isEmpty(aut2.getAffiliations()))
-                                                aut.setAffiliations(aut2.getAffiliations());
-                                            if (!CollectionUtils.isEmpty(aut2.getAffiliationBlocks()))
-                                                aut.setAffiliationBlocks(aut2.getAffiliationBlocks());
-                                            if (!CollectionUtils.isEmpty(aut2.getAffiliationMarkers()))
-                                                aut.setAffiliationMarkers(aut2.getAffiliationMarkers());
-                                            if (!CollectionUtils.isEmpty(aut2.getMarkers()))
-                                                aut.setMarkers(aut2.getMarkers());
-                                            if (!CollectionUtils.isEmpty(aut2.getLayoutTokens()))
-                                                aut.setLayoutTokens(aut2.getLayoutTokens());
+                                            if (StringUtils.isNotBlank(extractedAuthor.getFirstName()) &&
+                                                    extractedAuthor.getFirstName()
+                                                            .length() > consolidatedAuthor.getFirstName().length())
+                                                consolidatedAuthor.setFirstName(extractedAuthor.getFirstName());
+                                            if (StringUtils.isBlank(consolidatedAuthor.getMiddleName()))
+                                                consolidatedAuthor.setMiddleName(extractedAuthor.getMiddleName());
+                                            if (StringUtils.isBlank(consolidatedAuthor.getTitle()))
+                                                consolidatedAuthor.setTitle(extractedAuthor.getTitle());
+                                            if (StringUtils.isBlank(consolidatedAuthor.getSuffix()))
+                                                consolidatedAuthor.setSuffix(extractedAuthor.getSuffix());
+                                            if (StringUtils.isBlank(consolidatedAuthor.getEmail()))
+                                                consolidatedAuthor.setEmail(extractedAuthor.getEmail());
+                                            if (!CollectionUtils.isEmpty(extractedAuthor.getAffiliations()))
+                                                consolidatedAuthor.setAffiliations(extractedAuthor.getAffiliations());
+                                            if (!CollectionUtils.isEmpty(extractedAuthor.getAffiliationBlocks()))
+                                                consolidatedAuthor
+                                                        .setAffiliationBlocks(extractedAuthor.getAffiliationBlocks());
+                                            if (!CollectionUtils.isEmpty(extractedAuthor.getAffiliationMarkers()))
+                                                consolidatedAuthor
+                                                        .setAffiliationMarkers(extractedAuthor.getAffiliationMarkers());
+                                            if (!CollectionUtils.isEmpty(extractedAuthor.getMarkers()))
+                                                consolidatedAuthor.setMarkers(extractedAuthor.getMarkers());
+                                            if (!CollectionUtils.isEmpty(extractedAuthor.getLayoutTokens()))
+                                                consolidatedAuthor.setLayoutTokens(extractedAuthor.getLayoutTokens());
                                             // preserve PDF-extracted ORCID when crossref doesn't have one
-                                            if (StringUtils.isBlank(aut.getORCID())
-                                                    && StringUtils.isNotBlank(aut2.getORCID()))
-                                                aut.setORCID(aut2.getORCID());
-                                            nameMatchedExtractedAuthors.add(aut2);
-                                            nameMatchedConsolidatedAuthors.add(aut);
+                                            if (StringUtils.isBlank(consolidatedAuthor.getORCID())
+                                                    && StringUtils.isNotBlank(extractedAuthor.getORCID()))
+                                                consolidatedAuthor.setORCID(extractedAuthor.getORCID());
+                                            nameMatchedExtractedAuthors.add(extractedAuthor);
+                                            nameMatchedConsolidatedAuthors.add(consolidatedAuthor);
                                             break;
                                         }
                                     }
@@ -4530,10 +4538,10 @@ public class BiblioItem {
                 // where neither side was name-matched: if either the consolidated or the
                 // extracted author at this position was already paired by name, position is
                 // unreliable and copying could reassign an affiliation to the wrong author.
-                if (bibo.getFullAuthors().size() == bib.getFullAuthors().size()) {
-                    for (int i = 0; i < bibo.getFullAuthors().size(); i++) {
-                        Person consolidatedAuthor = bibo.getFullAuthors().get(i);
-                        Person extractedAuthor = bib.getFullAuthors().get(i);
+                if (consolidatedBiblio.getFullAuthors().size() == extractedBiblio.getFullAuthors().size()) {
+                    for (int i = 0; i < consolidatedBiblio.getFullAuthors().size(); i++) {
+                        Person consolidatedAuthor = consolidatedBiblio.getFullAuthors().get(i);
+                        Person extractedAuthor = extractedBiblio.getFullAuthors().get(i);
                         if (nameMatchedConsolidatedAuthors.contains(consolidatedAuthor)
                                 || nameMatchedExtractedAuthors.contains(extractedAuthor)) {
                             continue;
@@ -4552,11 +4560,11 @@ public class BiblioItem {
                         }
                     }
                 }
-                bib.setFullAuthors(bibo.getFullAuthors());
+                extractedBiblio.setFullAuthors(consolidatedBiblio.getFullAuthors());
             }
         }
-        bib.setStatus(bibo.getStatus());
-        bib.setConsolidationService(bibo.getConsolidationService());
+        extractedBiblio.setStatus(consolidatedBiblio.getStatus());
+        extractedBiblio.setConsolidationService(consolidatedBiblio.getConsolidationService());
     }
 
     /**
