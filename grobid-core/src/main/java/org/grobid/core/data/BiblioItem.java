@@ -4457,107 +4457,79 @@ public class BiblioItem {
                     }
                 }
             } else if (consolidatedBiblio.getFullAuthors().size() > 1) {
-                // we have the complete list of authors so we can take them from the second
-                // biblio item and merge some possible extra from the first when a match is
-                // reliable
-                // track the authors already paired by a reliable name-based match, on both sides,
-                // so the positional fallback below only fires for the "leftover" indices where
-                // neither side was matched. A name match that crosses positions is evidence the
-                // two lists are reordered, and position can no longer be trusted for the rest.
-                // (identity comparison, Person may override equals)
-                Set<Person> nameMatchedExtractedAuthors = Collections.newSetFromMap(new IdentityHashMap<>());
-                Set<Person> nameMatchedConsolidatedAuthors = Collections.newSetFromMap(new IdentityHashMap<>());
-                for (Person consolidatedAuthor : consolidatedBiblio.getFullAuthors()) {
-                    // try to find the author in the first item (we know it's not empty)
-                    for (Person extractedAuthor : extractedBiblio.getFullAuthors()) {
+                // We keep the complete author list from the metadata provider (consolidatedBiblio)
+                // but enrich each consolidated author with data extracted from the PDF
+                // (affiliations, markers, ORCID, ...) taken from the matching extracted author.
+                // Authors are paired in rounds, from most to least reliable, and each side is
+                // consumed at most once (identity comparison, Person may override equals):
+                //   1. exact last-name match (+ compatible first name),
+                //   2. soft last-name match (Ratcliff/Obershelp >= threshold) on the leftovers,
+                //   3. positional fallback when the two lists have the same size.
+                List<Person> consolidatedAuthors = consolidatedBiblio.getFullAuthors();
+                List<Person> extractedAuthors = extractedBiblio.getFullAuthors();
+                Set<Person> matchedConsolidatedAuthors = Collections.newSetFromMap(new IdentityHashMap<>());
+                Set<Person> matchedExtractedAuthors = Collections.newSetFromMap(new IdentityHashMap<>());
 
-                        if (StringUtils.isNotBlank(extractedAuthor.getLastName())) {
-                            String extractedLastName = extractedAuthor.getLastName().toLowerCase();
-
-                            if (StringUtils.isNotBlank(consolidatedAuthor.getLastName())) {
-                                String consolidatedLastName = consolidatedAuthor.getLastName().toLowerCase();
-
-                                if (consolidatedLastName.equals(extractedLastName)) {
-                                    // check also first name if present - at least for the initial
-                                    if (StringUtils.isBlank(extractedAuthor.getFirstName()) ||
-                                            (StringUtils.isNotBlank(extractedAuthor.getFirstName())
-                                                    && StringUtils.isNotBlank(consolidatedAuthor.getFirstName()))) {
-                                        // we have no first name or a match (full first name)
-
-                                        if (StringUtils.isBlank(extractedAuthor.getFirstName())
-                                                ||
-                                                consolidatedAuthor.getFirstName().equals(extractedAuthor.getFirstName())
-                                                ||
-                                                (consolidatedAuthor.getFirstName().length() == 1 &&
-                                                        consolidatedAuthor.getFirstName()
-                                                                .equals(
-                                                                        extractedAuthor.getFirstName()
-                                                                                .substring(0, 1)))) {
-                                            // we have a match (full or initial)
-                                            if (StringUtils.isNotBlank(extractedAuthor.getFirstName()) &&
-                                                    extractedAuthor.getFirstName()
-                                                            .length() > consolidatedAuthor.getFirstName().length())
-                                                consolidatedAuthor.setFirstName(extractedAuthor.getFirstName());
-                                            if (StringUtils.isBlank(consolidatedAuthor.getMiddleName()))
-                                                consolidatedAuthor.setMiddleName(extractedAuthor.getMiddleName());
-                                            if (StringUtils.isBlank(consolidatedAuthor.getTitle()))
-                                                consolidatedAuthor.setTitle(extractedAuthor.getTitle());
-                                            if (StringUtils.isBlank(consolidatedAuthor.getSuffix()))
-                                                consolidatedAuthor.setSuffix(extractedAuthor.getSuffix());
-                                            if (StringUtils.isBlank(consolidatedAuthor.getEmail()))
-                                                consolidatedAuthor.setEmail(extractedAuthor.getEmail());
-                                            if (!CollectionUtils.isEmpty(extractedAuthor.getAffiliations()))
-                                                consolidatedAuthor.setAffiliations(extractedAuthor.getAffiliations());
-                                            if (!CollectionUtils.isEmpty(extractedAuthor.getAffiliationBlocks()))
-                                                consolidatedAuthor
-                                                        .setAffiliationBlocks(extractedAuthor.getAffiliationBlocks());
-                                            if (!CollectionUtils.isEmpty(extractedAuthor.getAffiliationMarkers()))
-                                                consolidatedAuthor
-                                                        .setAffiliationMarkers(extractedAuthor.getAffiliationMarkers());
-                                            if (!CollectionUtils.isEmpty(extractedAuthor.getMarkers()))
-                                                consolidatedAuthor.setMarkers(extractedAuthor.getMarkers());
-                                            if (!CollectionUtils.isEmpty(extractedAuthor.getLayoutTokens()))
-                                                consolidatedAuthor.setLayoutTokens(extractedAuthor.getLayoutTokens());
-                                            // preserve PDF-extracted ORCID when crossref doesn't have one
-                                            if (StringUtils.isBlank(consolidatedAuthor.getORCID())
-                                                    && StringUtils.isNotBlank(extractedAuthor.getORCID()))
-                                                consolidatedAuthor.setORCID(extractedAuthor.getORCID());
-                                            nameMatchedExtractedAuthors.add(extractedAuthor);
-                                            nameMatchedConsolidatedAuthors.add(consolidatedAuthor);
-                                            break;
-                                        }
-                                    }
-                                }
-                            }
+                // Round 1: exact last-name match (case-insensitive) with a compatible first name.
+                for (Person consolidatedAuthor : consolidatedAuthors) {
+                    for (Person extractedAuthor : extractedAuthors) {
+                        if (matchedExtractedAuthors.contains(extractedAuthor))
+                            continue;
+                        if (StringUtils.isNotBlank(consolidatedAuthor.getLastName())
+                                && StringUtils.isNotBlank(extractedAuthor.getLastName())
+                                && consolidatedAuthor.getLastName().equalsIgnoreCase(extractedAuthor.getLastName())
+                                && firstNameCompatible(consolidatedAuthor, extractedAuthor)) {
+                            mergeAuthorMetadataFromExtracted(consolidatedAuthor, extractedAuthor);
+                            matchedConsolidatedAuthors.add(consolidatedAuthor);
+                            matchedExtractedAuthors.add(extractedAuthor);
+                            break;
                         }
                     }
                 }
-                // positional fallback: when the name-based match above missed (e.g. atypical
-                // name tokenization) but the two author lists are aligned by document order,
-                // carry over the extracted affiliation data by position. Only fire for indices
-                // where neither side was name-matched: if either the consolidated or the
-                // extracted author at this position was already paired by name, position is
-                // unreliable and copying could reassign an affiliation to the wrong author.
-                if (consolidatedBiblio.getFullAuthors().size() == extractedBiblio.getFullAuthors().size()) {
-                    for (int i = 0; i < consolidatedBiblio.getFullAuthors().size(); i++) {
-                        Person consolidatedAuthor = consolidatedBiblio.getFullAuthors().get(i);
-                        Person extractedAuthor = extractedBiblio.getFullAuthors().get(i);
-                        if (nameMatchedConsolidatedAuthors.contains(consolidatedAuthor)
-                                || nameMatchedExtractedAuthors.contains(extractedAuthor)) {
+
+                // Round 2: soft last-name match on the leftovers. A high Ratcliff/Obershelp
+                // similarity recovers dirty extracted names (stray markers, glyphs, diacritics)
+                // that the exact match missed; the first-name compatibility guard prevents merging
+                // two different people who merely share a similar surname.
+                for (Person consolidatedAuthor : consolidatedAuthors) {
+                    if (matchedConsolidatedAuthors.contains(consolidatedAuthor)
+                            || StringUtils.isBlank(consolidatedAuthor.getLastName()))
+                        continue;
+                    Person bestExtractedAuthor = null;
+                    double bestSimilarity = SOFT_LASTNAME_SIMILARITY_THRESHOLD;
+                    for (Person extractedAuthor : extractedAuthors) {
+                        if (matchedExtractedAuthors.contains(extractedAuthor)
+                                || StringUtils.isBlank(extractedAuthor.getLastName())
+                                || !firstNameCompatible(consolidatedAuthor, extractedAuthor))
                             continue;
+                        double similarity = TextUtilities.getRatcliffObershelpSimilarity(
+                                consolidatedAuthor.getLastName(),
+                                extractedAuthor.getLastName(),
+                                false);
+                        if (similarity >= bestSimilarity) {
+                            bestSimilarity = similarity;
+                            bestExtractedAuthor = extractedAuthor;
                         }
-                        if (CollectionUtils.isEmpty(consolidatedAuthor.getAffiliations())
-                                && !CollectionUtils.isEmpty(extractedAuthor.getAffiliations())) {
-                            consolidatedAuthor.setAffiliations(extractedAuthor.getAffiliations());
-                        }
-                        if (CollectionUtils.isEmpty(consolidatedAuthor.getAffiliationBlocks())
-                                && !CollectionUtils.isEmpty(extractedAuthor.getAffiliationBlocks())) {
-                            consolidatedAuthor.setAffiliationBlocks(extractedAuthor.getAffiliationBlocks());
-                        }
-                        if (CollectionUtils.isEmpty(consolidatedAuthor.getAffiliationMarkers())
-                                && !CollectionUtils.isEmpty(extractedAuthor.getAffiliationMarkers())) {
-                            consolidatedAuthor.setAffiliationMarkers(extractedAuthor.getAffiliationMarkers());
-                        }
+                    }
+                    if (bestExtractedAuthor != null) {
+                        mergeAuthorMetadataFromExtracted(consolidatedAuthor, bestExtractedAuthor);
+                        matchedConsolidatedAuthors.add(consolidatedAuthor);
+                        matchedExtractedAuthors.add(bestExtractedAuthor);
+                    }
+                }
+
+                // Round 3: positional fallback. When the two lists are the same size and aligned by
+                // document order, carry affiliation data over by position for the indices where
+                // neither side was matched by name. Position is the weakest signal, so only
+                // affiliation data is copied here (never names/email/ORCID).
+                if (consolidatedAuthors.size() == extractedAuthors.size()) {
+                    for (int i = 0; i < consolidatedAuthors.size(); i++) {
+                        Person consolidatedAuthor = consolidatedAuthors.get(i);
+                        Person extractedAuthor = extractedAuthors.get(i);
+                        if (matchedConsolidatedAuthors.contains(consolidatedAuthor)
+                                || matchedExtractedAuthors.contains(extractedAuthor))
+                            continue;
+                        copyAffiliationData(consolidatedAuthor, extractedAuthor);
                     }
                 }
                 extractedBiblio.setFullAuthors(consolidatedBiblio.getFullAuthors());
@@ -4565,6 +4537,76 @@ public class BiblioItem {
         }
         extractedBiblio.setStatus(consolidatedBiblio.getStatus());
         extractedBiblio.setConsolidationService(consolidatedBiblio.getConsolidationService());
+    }
+
+    /** Minimum last-name Ratcliff/Obershelp similarity to accept a soft author match. */
+    private static final double SOFT_LASTNAME_SIMILARITY_THRESHOLD = 0.90;
+
+    /**
+     * True when the extracted author's first name is compatible with the consolidated author's:
+     * the extracted first name is blank, the two are equal, or the consolidated first name is a
+     * single initial matching the first character of the extracted first name.
+     */
+    private static boolean firstNameCompatible(Person consolidatedAuthor, Person extractedAuthor) {
+        String extractedFirstName = extractedAuthor.getFirstName();
+        if (StringUtils.isBlank(extractedFirstName))
+            return true;
+        String consolidatedFirstName = consolidatedAuthor.getFirstName();
+        if (StringUtils.isBlank(consolidatedFirstName))
+            return false;
+        if (consolidatedFirstName.equals(extractedFirstName))
+            return true;
+        return consolidatedFirstName.length() == 1
+                && consolidatedFirstName.equals(extractedFirstName.substring(0, 1));
+    }
+
+    /**
+     * Enrich a consolidated (metadata-provider) author in place with data from the matching
+     * extracted (PDF) author: adopt the longer extracted first name, fill blank
+     * middle/title/suffix/email, carry over affiliation data, markers and layout tokens, and keep
+     * the PDF-extracted ORCID when the consolidated one is missing. The last name is never
+     * overwritten so the metadata-provider surname is always preserved.
+     */
+    private static void mergeAuthorMetadataFromExtracted(Person consolidatedAuthor, Person extractedAuthor) {
+        if (StringUtils.isNotBlank(extractedAuthor.getFirstName())
+                && StringUtils.isNotBlank(consolidatedAuthor.getFirstName())
+                && extractedAuthor.getFirstName().length() > consolidatedAuthor.getFirstName().length())
+            consolidatedAuthor.setFirstName(extractedAuthor.getFirstName());
+        if (StringUtils.isBlank(consolidatedAuthor.getMiddleName()))
+            consolidatedAuthor.setMiddleName(extractedAuthor.getMiddleName());
+        if (StringUtils.isBlank(consolidatedAuthor.getTitle()))
+            consolidatedAuthor.setTitle(extractedAuthor.getTitle());
+        if (StringUtils.isBlank(consolidatedAuthor.getSuffix()))
+            consolidatedAuthor.setSuffix(extractedAuthor.getSuffix());
+        if (StringUtils.isBlank(consolidatedAuthor.getEmail()))
+            consolidatedAuthor.setEmail(extractedAuthor.getEmail());
+        copyAffiliationData(consolidatedAuthor, extractedAuthor);
+        if (!CollectionUtils.isEmpty(extractedAuthor.getMarkers()))
+            consolidatedAuthor.setMarkers(extractedAuthor.getMarkers());
+        if (!CollectionUtils.isEmpty(extractedAuthor.getLayoutTokens()))
+            consolidatedAuthor.setLayoutTokens(extractedAuthor.getLayoutTokens());
+        // preserve PDF-extracted ORCID when the metadata provider doesn't have one
+        if (StringUtils.isBlank(consolidatedAuthor.getORCID())
+                && StringUtils.isNotBlank(extractedAuthor.getORCID()))
+            consolidatedAuthor.setORCID(extractedAuthor.getORCID());
+    }
+
+    /**
+     * Carry the three affiliation-related fields from the extracted author onto the consolidated
+     * author, filling each only when the consolidated author lacks it and the extracted author has
+     * it. Metadata-provider authors (e.g. from CrossRef) carry no affiliation, so this recovers the
+     * PDF-extracted affiliation while never clobbering an affiliation the provider did supply.
+     */
+    private static void copyAffiliationData(Person consolidatedAuthor, Person extractedAuthor) {
+        if (CollectionUtils.isEmpty(consolidatedAuthor.getAffiliations())
+                && !CollectionUtils.isEmpty(extractedAuthor.getAffiliations()))
+            consolidatedAuthor.setAffiliations(extractedAuthor.getAffiliations());
+        if (CollectionUtils.isEmpty(consolidatedAuthor.getAffiliationBlocks())
+                && !CollectionUtils.isEmpty(extractedAuthor.getAffiliationBlocks()))
+            consolidatedAuthor.setAffiliationBlocks(extractedAuthor.getAffiliationBlocks());
+        if (CollectionUtils.isEmpty(consolidatedAuthor.getAffiliationMarkers())
+                && !CollectionUtils.isEmpty(extractedAuthor.getAffiliationMarkers()))
+            consolidatedAuthor.setAffiliationMarkers(extractedAuthor.getAffiliationMarkers());
     }
 
     /**

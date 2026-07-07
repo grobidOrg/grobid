@@ -709,6 +709,258 @@ class BiblioItemTest {
         Assert.assertThat<String?>(cleanDoi, Matchers.`is`<String?>("10.1063/1.1905789"))
     }
 
+    // ------------------------------------------------------------------------------------------
+    // Multi-round author consolidation matching (exact -> soft -> positional) in BiblioItem.correct
+    // correct(extractedBiblio, consolidatedBiblio): consolidatedBiblio (CrossRef) wins the author
+    // list; each consolidated author is enriched from the matching extracted (PDF) author.
+    // ------------------------------------------------------------------------------------------
+
+    private fun biblioOf(vararg authors: Person?): BiblioItem {
+        val biblio = BiblioItem()
+        biblio.setFullAuthors(authors.toMutableList())
+        return biblio
+    }
+
+    private fun affiliationStringOf(biblio: BiblioItem, index: Int): String? {
+        val affiliations = biblio.getFullAuthors().get(index).getAffiliations()
+        return if (affiliations.isNullOrEmpty()) null else affiliations.get(0).getAffiliationString()
+    }
+
+    // ---- Round 1: exact last-name match ----
+
+    @Test
+    fun correct_exact_twoAuthors_copiesAffiliations() {
+        val pdf = biblioOf(createPerson("John", "Doe", "MIT"), createPerson("Jane", "Roe", "Yale"))
+        val crossref = biblioOf(createPerson("John", "Doe"), createPerson("Jane", "Roe"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("MIT"))
+        Assert.assertThat(affiliationStringOf(pdf, 1), CoreMatchers.`is`("Yale"))
+    }
+
+    @Test
+    fun correct_exact_caseInsensitiveSurname_copies() {
+        val pdf = biblioOf(createPerson("John", "SMITH", "MIT"), createPerson("Amy", "JONES", "UCLA"))
+        val crossref = biblioOf(createPerson("John", "smith"), createPerson("Amy", "jones"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("MIT"))
+        Assert.assertThat(affiliationStringOf(pdf, 1), CoreMatchers.`is`("UCLA"))
+    }
+
+    @Test
+    fun correct_exact_consolidatedInitial_pdfFullName_copiesAndAdoptsFullName() {
+        val pdf = biblioOf(createPerson("John", "Smith", "MIT"), createPerson("Amy", "Jones", "UCLA"))
+        val crossref = biblioOf(createPerson("J", "Smith"), createPerson("A", "Jones"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(pdf.getFullAuthors().get(0).getFirstName(), CoreMatchers.`is`("John"))
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("MIT"))
+    }
+
+    @Test
+    fun correct_exact_pdfBlankFirstName_copies() {
+        val pdf = biblioOf(createPerson(null, "Smith", "MIT"), createPerson(null, "Jones", "UCLA"))
+        val crossref = biblioOf(createPerson("John", "Smith"), createPerson("Amy", "Jones"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("MIT"))
+        Assert.assertThat(affiliationStringOf(pdf, 1), CoreMatchers.`is`("UCLA"))
+    }
+
+    @Test
+    fun correct_exact_incompatibleFirstNames_doesNotCopy() {
+        // unequal list sizes (2 vs 3) so the positional fallback cannot mask the guard
+        val pdf = biblioOf(
+            createPerson("John", "Smith", "MIT"),
+            createPerson("Amy", "Jones", "UCLA"),
+            createPerson("Zed", "Extra"),
+        )
+        val crossref = biblioOf(createPerson("Jane", "Smith"), createPerson("Amy", "Jones"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertTrue(pdf.getFullAuthors().get(0).getAffiliations().isNullOrEmpty())
+        Assert.assertThat(affiliationStringOf(pdf, 1), CoreMatchers.`is`("UCLA"))
+    }
+
+    @Test
+    fun correct_exact_extractedAuthorConsumedOnce() {
+        // two consolidated "Smith", only one extracted "Smith" -> only the first is enriched
+        val pdf = biblioOf(
+            createPerson("John", "Smith", "MIT"),
+            createPerson("Amy", "Jones", "UCLA"),
+            createPerson("Zed", "Extra"),
+        )
+        val crossref = biblioOf(createPerson("John", "Smith"), createPerson("Jon", "Smith"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("MIT"))
+        Assert.assertTrue(pdf.getFullAuthors().get(1).getAffiliations().isNullOrEmpty())
+    }
+
+    @Test
+    fun correct_exact_consolidatedAlreadyHasAffiliation_isNotOverwritten() {
+        val pdf = biblioOf(createPerson("John", "Smith", "Madrid"), createPerson("Amy", "Jones", "UCLA"))
+        val crossref = biblioOf(createPerson("John", "Smith", "ProviderAff"), createPerson("Amy", "Jones"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("ProviderAff"))
+        Assert.assertThat(affiliationStringOf(pdf, 1), CoreMatchers.`is`("UCLA"))
+    }
+
+    // ---- Round 2: soft last-name match ----
+
+    @Test
+    fun correct_soft_strayMarkerInSurname_recoversAffiliation() {
+        val pdf = biblioOf(createPerson("Andrea", "Enguita-Marruedo \$", "Madrid"), createPerson("Bob", "Other", "X"))
+        val crossref = biblioOf(createPerson("Andrea", "Enguita-Marruedo"), createPerson("Bob", "Other"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("Madrid"))
+    }
+
+    @Test
+    fun correct_soft_accentedSurname_recoversAffiliation() {
+        val pdf = biblioOf(createPerson("Maria", "Martín", "Madrid"), createPerson("Bob", "Other", "X"))
+        val crossref = biblioOf(createPerson("Maria", "Martin"), createPerson("Bob", "Other"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("Madrid"))
+    }
+
+    @Test
+    fun correct_soft_belowThreshold_doesNotCopy() {
+        val pdf = biblioOf(
+            createPerson("John", "Johnson", "MIT"),
+            createPerson("Amy", "Jones", "UCLA"),
+            createPerson("Zed", "Extra"),
+        )
+        val crossref = biblioOf(createPerson("John", "Smith"), createPerson("Amy", "Jones"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertTrue(pdf.getFullAuthors().get(0).getAffiliations().isNullOrEmpty())
+        Assert.assertThat(affiliationStringOf(pdf, 1), CoreMatchers.`is`("UCLA"))
+    }
+
+    @Test
+    fun correct_soft_firstNameGuard_blocksCrossAssignment() {
+        // "Smithe" ~ "Smith" >= 0.90 but different first names -> must NOT merge
+        val pdf = biblioOf(
+            createPerson("John", "Smith", "MIT"),
+            createPerson("Amy", "Jones", "UCLA"),
+            createPerson("Zed", "Extra"),
+        )
+        val crossref = biblioOf(createPerson("Jane", "Smithe"), createPerson("Amy", "Jones"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertTrue(pdf.getFullAuthors().get(0).getAffiliations().isNullOrEmpty())
+        Assert.assertThat(affiliationStringOf(pdf, 1), CoreMatchers.`is`("UCLA"))
+    }
+
+    @Test
+    fun correct_soft_picksQualifyingCandidateOverNonQualifying() {
+        val pdf = biblioOf(
+            createPerson("Maria", "Rodriguez!", "Madrid"),
+            createPerson("Maria", "Johnson", "Berlin"),
+            createPerson("Zed", "Extra"),
+        )
+        val crossref = biblioOf(createPerson("Maria", "Rodriguez"), createPerson("X", "Y"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("Madrid"))
+    }
+
+    @Test
+    fun correct_soft_picksHigherSimilarityAmongQualifying() {
+        val pdf = biblioOf(
+            createPerson("Maria", "Zimmermann.", "AFF_CLOSER"),
+            createPerson("Maria", "Zimmerman", "AFF_FARTHER"),
+            createPerson("Zed", "Extra"),
+        )
+        val crossref = biblioOf(createPerson("Maria", "Zimmermann"), createPerson("X", "Y"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("AFF_CLOSER"))
+    }
+
+    @Test
+    fun correct_soft_doesNotReuseExactMatchedExtracted() {
+        val pdf = biblioOf(createPerson("John", "Smith", "MIT"), createPerson("Zed", "Extra"))
+        val crossref = biblioOf(createPerson("John", "Smith"), createPerson("John", "Smithh"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("MIT"))
+        // the second consolidated "Smithh" must not steal the already-consumed extracted "Smith"
+        Assert.assertTrue(pdf.getFullAuthors().get(1).getAffiliations().isNullOrEmpty())
+    }
+
+    // ---- Round 3: positional fallback ----
+
+    @Test
+    fun correct_positional_unequalSize_doesNotCopy() {
+        val pdf = biblioOf(
+            createPerson("Aaa", "Bbb", "Madrid"),
+            createPerson("Ccc", "Ddd", "Berlin"),
+            createPerson("Eee", "Fff", "Paris"),
+        )
+        val crossref = biblioOf(createPerson("Ggg", "Hhh"), createPerson("Iii", "Jjj"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertTrue(pdf.getFullAuthors().get(0).getAffiliations().isNullOrEmpty())
+        Assert.assertTrue(pdf.getFullAuthors().get(1).getAffiliations().isNullOrEmpty())
+    }
+
+    @Test
+    fun correct_positional_onlyCopiesAffiliation_notOrcidOrEmail() {
+        val pdfAuthor = createPerson("Eee", "Fff", "Madrid")
+        pdfAuthor.setORCID("0000-0001-2222-3333")
+        pdfAuthor.setEmail("eee@example.org")
+        val pdf = biblioOf(pdfAuthor, createPerson("Ggg", "Hhh", "Berlin"))
+        val crossref = biblioOf(createPerson("Aaa", "Bbb"), createPerson("Ccc", "Ddd"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("Madrid"))
+        Assert.assertTrue(pdf.getFullAuthors().get(0).getORCID().isNullOrEmpty())
+        Assert.assertTrue(pdf.getFullAuthors().get(0).getEmail().isNullOrEmpty())
+    }
+
+    @Test
+    fun correct_positional_doesNotOverwriteExistingConsolidatedAffiliation() {
+        val pdf = biblioOf(createPerson("Eee", "Fff", "Madrid"), createPerson("Ggg", "Hhh", "Berlin"))
+        val crossref = biblioOf(createPerson("Aaa", "Bbb", "ProviderAff"), createPerson("Ccc", "Ddd"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("ProviderAff"))
+    }
+
+    // ---- Edge / unlikely cases ----
+
+    @Test
+    fun correct_extractedAuthorsEmpty_takesConsolidatedList() {
+        val pdf = BiblioItem()
+        val crossref = biblioOf(createPerson("A", "B"), createPerson("C", "D"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(pdf.getFullAuthors(), Matchers.hasSize<Person?>(2))
+    }
+
+    @Test
+    fun correct_nullSurnames_doNotCrash() {
+        val pdf = biblioOf(createPerson("A", null, "Madrid"), createPerson("C", "D", "Berlin"))
+        val crossref = biblioOf(createPerson("A", null), createPerson("C", "D"))
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 1), CoreMatchers.`is`("Berlin"))
+    }
+
+    @Test
+    fun correct_softMatch_blankConsolidatedSurname_isSkipped() {
+        val pdf = biblioOf(createPerson("A", "Something", "Madrid"), createPerson("C", "D", "Berlin"))
+        val crossref = biblioOf(createPerson("A", null), createPerson("C", "D"))
+        BiblioItem.correct(pdf, crossref)
+        // consolidated[0] has a blank surname -> no soft match attempted; only positional may apply
+        Assert.assertThat(affiliationStringOf(pdf, 1), CoreMatchers.`is`("Berlin"))
+    }
+
+    @Test
+    fun correct_manyAuthors_mixedExactSoftPositional() {
+        val pdf = biblioOf(
+            createPerson("John", "Doe", "AFF_DOE"), // exact
+            createPerson("Maria", "García", "AFF_GARCIA"), // soft (accent)
+            createPerson("Xy", "Zz-marker \$", "AFF_POS"), // positional (surname too different for soft)
+        )
+        val crossref = biblioOf(
+            createPerson("John", "Doe"),
+            createPerson("Maria", "Garcia"),
+            createPerson("Xy", "Zz"),
+        )
+        BiblioItem.correct(pdf, crossref)
+        Assert.assertThat(affiliationStringOf(pdf, 0), CoreMatchers.`is`("AFF_DOE"))
+        Assert.assertThat(affiliationStringOf(pdf, 1), CoreMatchers.`is`("AFF_GARCIA"))
+        Assert.assertThat(affiliationStringOf(pdf, 2), CoreMatchers.`is`("AFF_POS"))
+    }
+
     private fun createPerson(firstName: String?, secondName: String?): Person {
         val person = Person()
         person.setFirstName(firstName)

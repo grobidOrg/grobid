@@ -15,19 +15,16 @@
  */
 package org.grobid.core.utilities;
 
-import static org.apache.commons.lang3.StringUtils.isNotEmpty;
 import static org.grobid.core.data.BiblioItem.cleanDOI;
 
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.rockymadden.stringmetric.similarity.RatcliffObershelpMetric;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import scala.Option;
 
 import org.grobid.core.data.BibDataSet;
 import org.grobid.core.data.BiblioItem;
@@ -518,25 +515,7 @@ public class Consolidation {
     }
 
     private double ratcliffObershelpDistance(String string1, String string2, boolean caseDependent) {
-        if (StringUtils.isBlank(string1) || StringUtils.isBlank(string2))
-            return 0.0;
-        Double similarity = 0.0;
-        if (!caseDependent) {
-            string1 = string1.toLowerCase();
-            string2 = string2.toLowerCase();
-        }
-        if (string1.equals(string2)) {
-            similarity = 1.0;
-        }
-
-        if (isNotEmpty(string1) && isNotEmpty(string2)) {
-            Option<Object> similarityObject = RatcliffObershelpMetric.compare(string1, string2);
-            if (similarityObject.isDefined()) {
-                similarity = (Double) similarityObject.get();
-            }
-        }
-
-        return similarity;
+        return TextUtilities.getRatcliffObershelpSimilarity(string1, string2, caseDependent);
     }
 
     public Funder consolidateFunder(Funder funder) {
