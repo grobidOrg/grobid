@@ -49,7 +49,7 @@ jobs:
           git fetch --tags --force
           echo "value=$(git describe --tags --always --first-parent)" >> "$GITHUB_OUTPUT"
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
@@ -90,7 +90,7 @@ jobs:
           git fetch --tags --force
           echo "value=$(git describe --tags --always --first-parent)" >> "$GITHUB_OUTPUT"
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
