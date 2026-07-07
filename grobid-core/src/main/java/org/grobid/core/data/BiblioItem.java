@@ -4464,7 +4464,8 @@ public class BiblioItem {
                 // consumed at most once (identity comparison, Person may override equals):
                 //   1. exact last-name match (+ compatible first name),
                 //   2. soft last-name match (Ratcliff/Obershelp >= threshold) on the leftovers,
-                //   3. positional fallback when the two lists have the same size.
+                //   3. same-position fallback validated by surname containment or first-name
+                //      compatibility (never blind position).
                 List<Person> consolidatedAuthors = consolidatedBiblio.getFullAuthors();
                 List<Person> extractedAuthors = extractedBiblio.getFullAuthors();
                 Set<Person> matchedConsolidatedAuthors = Collections.newSetFromMap(new IdentityHashMap<>());
@@ -4518,10 +4519,17 @@ public class BiblioItem {
                     }
                 }
 
-                // Round 3: positional fallback. When the two lists are the same size and aligned by
-                // document order, carry affiliation data over by position for the indices where
-                // neither side was matched by name. Position is the weakest signal, so only
-                // affiliation data is copied here (never names/email/ORCID).
+                // Round 3: position-based fallback, only when the two lists have the same size and
+                // for positions where BOTH the consolidated and the extracted author are still
+                // unmatched after rounds 1-2. Using the original index (not a compacted leftover
+                // list) keeps this reorder-safe: an unmatched author lined up with a cross-position
+                // match is never assigned. Blind position is never trusted on its own - the pair is
+                // only accepted when there is independent evidence the two are the same person:
+                //   - a surname prefix/suffix containment, which handles truncation and multi-token
+                //     surnames such as "Megino" <- "Barreiro Megino" (too dissimilar for the soft
+                //     round), or
+                //   - a compatible first name.
+                // Only affiliation data is carried over here (never names/email/ORCID).
                 if (consolidatedAuthors.size() == extractedAuthors.size()) {
                     for (int i = 0; i < consolidatedAuthors.size(); i++) {
                         Person consolidatedAuthor = consolidatedAuthors.get(i);
@@ -4529,7 +4537,8 @@ public class BiblioItem {
                         if (matchedConsolidatedAuthors.contains(consolidatedAuthor)
                                 || matchedExtractedAuthors.contains(extractedAuthor))
                             continue;
-                        copyAffiliationData(consolidatedAuthor, extractedAuthor);
+                        if (positionalPairAcceptable(consolidatedAuthor, extractedAuthor))
+                            copyAffiliationData(consolidatedAuthor, extractedAuthor);
                     }
                 }
                 extractedBiblio.setFullAuthors(consolidatedBiblio.getFullAuthors());
@@ -4558,6 +4567,71 @@ public class BiblioItem {
             return true;
         return consolidatedFirstName.length() == 1
                 && consolidatedFirstName.equals(extractedFirstName.substring(0, 1));
+    }
+
+    /**
+     * True when the two surnames share a prefix/suffix containment relationship (case- and
+     * accent-insensitive): one surname starts or ends with the other. This is a lightweight
+     * same-person signal for the position-based fallback - it recognises truncated or multi-token
+     * surnames (e.g. "Megino" within "Barreiro Megino") that are too dissimilar for the soft round,
+     * without matching unrelated surnames. The shorter surname must have at least 3 characters so a
+     * spurious 1-2 character overlap does not trigger a match.
+     */
+    private static boolean surnamesShareContainment(Person consolidatedAuthor, Person extractedAuthor) {
+        String consolidatedLastName = consolidatedAuthor.getLastName();
+        String extractedLastName = extractedAuthor.getLastName();
+        if (StringUtils.isBlank(consolidatedLastName) || StringUtils.isBlank(extractedLastName))
+            return false;
+        String consolidatedFolded = TextUtilities.removeAccents(consolidatedLastName.toLowerCase());
+        String extractedFolded = TextUtilities.removeAccents(extractedLastName.toLowerCase());
+        String shorter = consolidatedFolded.length() <= extractedFolded.length()
+                ? consolidatedFolded
+                : extractedFolded;
+        String longer = consolidatedFolded.length() <= extractedFolded.length()
+                ? extractedFolded
+                : consolidatedFolded;
+        if (shorter.length() < 3)
+            return false;
+        return longer.startsWith(shorter) || longer.endsWith(shorter);
+    }
+
+    /**
+     * Whether a same-position, otherwise-unmatched consolidated/extracted author pair carries enough
+     * independent evidence to be treated as the same person by the position-based fallback (so blind
+     * position is never trusted on its own). Accepted when any of:
+     *   - the first names are compatible;
+     *   - the surnames share a prefix/suffix containment (truncation / multi-token surname);
+     *   - the two authors share a significant name token (>= 4 characters) across their
+     *     first/middle/last name fields. This catches mis-segmentation that scatters surname tokens
+     *     into the wrong field, e.g. extracted first="F" surname="H Barreiro" vs consolidated
+     *     first="F H" surname="Barreiro Megino" (shared token "Barreiro").
+     */
+    private static boolean positionalPairAcceptable(Person consolidatedAuthor, Person extractedAuthor) {
+        if (firstNameCompatible(consolidatedAuthor, extractedAuthor))
+            return true;
+        if (surnamesShareContainment(consolidatedAuthor, extractedAuthor))
+            return true;
+        Set<String> sharedTokens = significantNameTokens(consolidatedAuthor);
+        sharedTokens.retainAll(significantNameTokens(extractedAuthor));
+        return !sharedTokens.isEmpty();
+    }
+
+    /**
+     * Case- and accent-folded name tokens of length >= 4 taken from the first, middle and last name
+     * fields (split on whitespace, dots and hyphens). Short tokens and initials are excluded so
+     * particles and single letters do not create spurious matches.
+     */
+    private static Set<String> significantNameTokens(Person person) {
+        Set<String> tokens = new HashSet<>();
+        for (String field : Arrays.asList(person.getFirstName(), person.getMiddleName(), person.getLastName())) {
+            if (StringUtils.isBlank(field))
+                continue;
+            for (String token : TextUtilities.removeAccents(field.toLowerCase()).split("[\\s.\\-]+")) {
+                if (token.length() >= 4)
+                    tokens.add(token);
+            }
+        }
+        return tokens;
     }
 
     /**
