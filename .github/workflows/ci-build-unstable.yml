@@ -50,9 +50,33 @@ jobs:
           file: build/reports/jacoco/codeCoverageReport/codeCoverageReport.xml
           debug: true
 
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      code: ${{ steps.filter.outputs.code }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          # 'code' is true when at least one changed file is NOT docs-only.
+          # Last-match-wins (gitignore semantics): match everything, subtract docs.
+          filters: |
+            code:
+              - '**'
+              - '!doc/**'
+              - '!**/*.md'
+              - '!.github/ISSUE_TEMPLATE/**'
+              - '!LICENSE'
+              - '!**/*.png'
+              - '!**/*.jpg'
+              - '!**/*.jpeg'
+              - '!**/*.gif'
+              - '!**/*.svg'
+
   docker-build-amd64:
-    needs: [build]
-    if: github.event.repository.fork == false
+    needs: [build, changes]
+    if: github.event.repository.fork == false && needs.changes.outputs.code == 'true'
     runs-on: ubuntu-latest
     outputs:
       digest: ${{ steps.build.outputs.digest }}
@@ -93,8 +117,8 @@ jobs:
           cache-to: type=gha,scope=amd64,mode=max
 
   docker-build-arm64:
-    needs: [build]
-    if: github.event.repository.fork == false
+    needs: [build, changes]
+    if: github.event.repository.fork == false && needs.changes.outputs.code == 'true'
     runs-on: ubuntu-24.04-arm
     outputs:
       digest: ${{ steps.build.outputs.digest }}
