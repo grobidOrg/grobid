@@ -129,18 +129,7 @@ If you intentionally want to benchmark a non-standard configuration (for example
 > ./gradlew checkEvalConfig -PcheckMode=warn
 ```
 
-The multi-dataset runner script `grobid-home/scripts/run_evaluation.sh` (which loops over every dataset sub-directory under a root folder and runs `jatsEval` on each) runs this check automatically before starting and aborts if it fails. Use `--warn` (`-w`) to report problems but run anyway, or `--skip-checks` (`-k`, or `SKIP_CHECKS=1`) to skip the check entirely:
-
-```bash
-# run the four gold corpora, with the pre-flight config check (aborts if misconfigured)
-> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets -s master -r 1
-
-# report config issues but run anyway (e.g. benchmarking a variant configuration)
-> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets --warn
-
-# skip the pre-flight check entirely
-> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets --skip-checks
-```
+The [multi-dataset runner script](#multi-dataset-runner-script) `grobid-home/scripts/run_evaluation.sh` runs this check automatically before starting and aborts if it fails (unless invoked with `--warn` or `--skip-checks`).
 
 ## Running and evaluating
 
@@ -176,6 +165,68 @@ It is also possible to set a ratio of evaluation data to be used expressed as a 
 ```bash
 > ./gradlew teiEval -Pp2t=ABS_PATH_TO_TEI/ -Prun=0 -PfileRatio=0.1
 ```
+
+### Multi-dataset runner script
+
+The Gradle tasks above evaluate one dataset at a time. To benchmark GROBID over several gold corpora in one go (e.g. `PMC_sample_1943`, `biorxiv-10k-test-2000`, `PLOS_1000` and `eLife_984` together), use the wrapper script `grobid-home/scripts/run_evaluation.sh`.
+
+It expects a single root folder containing one sub-directory per dataset, iterates (non-recursively) over the matching sub-directories, and runs `jatsEval` on each:
+
+```
+grobid-eval-datasets/            <- the root folder passed with -d
+├── PMC_sample_1943/
+├── biorxiv-10k-test-2000/
+├── PLOS_1000/
+└── eLife_984/
+```
+
+Before running anything, the script performs the [pre-flight configuration check](#pre-flight-configuration-check) and aborts if `grobid.yaml` is not correctly configured for evaluation.
+
+For each dataset, it writes two files into the output directory (`-o`, default: current directory), named after the dataset and the report suffix (`-s`):
+
+* `report-<dataset>-<suffix>.txt` — the captured Gradle console output of the run.
+* `report-<dataset>-<suffix>.md` — the Markdown benchmark report produced by `jatsEval` (moved from `grobid-home/tmp/report.md`).
+
+Typical invocations:
+
+```bash
+# run every dataset under the root, executing GROBID on the PDFs, with the pre-flight check
+> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets -s master -r 1
+
+# only re-evaluate existing TEI (do not re-run GROBID) on 10% of the files, writing reports to ./reports
+> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets -r 0 -f 0.1 -o ./reports
+
+# restrict to a subset of datasets with a glob pattern
+> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets -p 'PLOS_*'
+
+# report config issues but run anyway (e.g. benchmarking a variant configuration)
+> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets --warn
+
+# skip the pre-flight check entirely
+> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets --skip-checks
+
+# print the commands without executing them
+> sh grobid-home/scripts/run_evaluation.sh -d ABS_PATH_TO/grobid-eval-datasets --dry-run
+```
+
+Options (run with `-h` for the full list):
+
+| Option | Meaning | Default |
+|---|---|---|
+| `-d EVAL_ROOT` | Root folder containing one sub-directory per dataset (**required**) | — |
+| `-s REPORT_SUFFIX` | Suffix appended to the report file names | `master` |
+| `-r RUN` | Run GROBID on the PDFs (`1`) or only evaluate existing TEI (`0`) | `1` |
+| `-f FILERATIO` | Ratio of files to evaluate, `0.0`–`1.0` | `1` |
+| `-l FLAVOR` | Optional `flavor` passed to Gradle | empty |
+| `-g GRADLEW_PATH` | Path to the `gradlew` executable | `./gradlew` |
+| `-j JAVA_NATIVE_LIB` | Path to the LMDB native library (sets `JAVA_TOOL_OPTIONS`) | unset |
+| `-o OUT_DIR` | Directory where the per-dataset reports are written | current dir |
+| `-p PATTERN` | Glob pattern selecting the dataset sub-directories | `*` |
+| `-k` / `--skip-checks` | Skip the pre-flight config check (or `SKIP_CHECKS=1`) | off |
+| `-w` / `--warn` | Report config problems but run anyway | off |
+| `-n` / `--dry-run` | Print the commands without executing them | off |
+
+The script exits non-zero if any single dataset evaluation fails, but continues with the remaining datasets so a run over several corpora is not aborted by one failure.
 
 ## Evaluation results
 

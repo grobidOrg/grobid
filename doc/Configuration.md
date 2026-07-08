@@ -85,17 +85,31 @@ CORS for the GROBID web API service can be configured by the following yaml part
 
 GROBID uses external implementation for recognizing the language used in a publication and for performing sentence disambiguation. 
 
-There is currently only one possible language recognition implementation possible (Cybozu Language Detector) and two possible sentence segmenters (OpenNLP (default) and the Pragmatic Segmenter).
+Two language recognition implementations are available (Cybozu, the default, and Lingua) and three sentence segmenters (OpenNLP, the default, the Pragmatic Segmenter, and BlingFire). Each is selected by pointing the corresponding factory setting at the desired implementation class:
 
 ```yml 
-  # the actual implementation for language recognition to be used
+  # the actual implementation for language recognition to be used (Cybozu or Lingua)
   languageDetectorFactory: "org.grobid.core.lang.impl.CybozuLanguageDetectorFactory"
+  #languageDetectorFactory: "org.grobid.core.lang.impl.LinguaLanguageDetectorFactory"
 
-  # the actual implementation for optional sentence segmentation to be used (PragmaticSegmenter or OpenNLP)
+  # the actual implementation for optional sentence segmentation to be used (PragmaticSegmenter, OpenNLP or BlingFire)
   #sentenceDetectorFactory: "org.grobid.core.lang.impl.PragmaticSentenceDetectorFactory"
   sentenceDetectorFactory: "org.grobid.core.lang.impl.OpenNLPSentenceDetectorFactory"  
+  #sentenceDetectorFactory: "org.grobid.core.lang.impl.BlingFireSentenceDetectorFactory"
 ```
-**NOTE**: While OpenNLP is 60 time faster than the Pragmatic Segmenter, it performs "slightly" worst. The pragmatic segmenter runs with the JRuby Interpreter.  
+
+#### Language recognition
+
+- **Cybozu** (`CybozuLanguageDetectorFactory`, default) — based on [language-detection](https://github.com/shuyo/language-detection) (`com.cybozu.labs:langdetect`). Lightweight, pure Java, no native dependency.
+- **Lingua** (`LinguaLanguageDetectorFactory`) — based on [Lingua](https://github.com/pemistahl/lingua) (`com.github.pemistahl:lingua`). It is generally more accurate than Cybozu, especially on short texts, at the cost of a larger memory footprint. GROBID uses it in low-accuracy mode (`withLowAccuracyMode()`) over all supported languages to keep resource usage reasonable.
+
+#### Sentence segmentation
+
+- **OpenNLP** (`OpenNLPSentenceDetectorFactory`, default) — Apache OpenNLP (`org.apache.opennlp:opennlp-tools`).
+- **Pragmatic Segmenter** (`PragmaticSentenceDetectorFactory`) — a port of the [Pragmatic Segmenter](https://github.com/diasks2/pragmatic_segmenter), running on the JRuby interpreter.
+- **BlingFire** (`BlingFireSentenceDetectorFactory`) — Microsoft [BlingFire](https://github.com/microsoft/BlingFire) via a native library. It uses BlingFire's built-in default model (no external `sbd.bin` required) and is language-agnostic.
+
+**NOTE**: While OpenNLP is 60 time faster than the Pragmatic Segmenter, it performs "slightly" worst. The pragmatic segmenter runs with the JRuby Interpreter. BlingFire is a fast, language-agnostic alternative relying on a native (JNI) library.  
 
 ### Service configuration
 
