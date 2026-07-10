@@ -42,13 +42,13 @@ Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 8.66      | 8.33      | 8.49      | 984     |
-| affiliation_linked          | 1.92      | 2.09      | 2         | 10492   |
+| affiliation_linked          | 1.94      | 2.08      | 2         | 981     |
 | authors                     | 78.18     | 77.62     | 77.9      | 983     |
 | first_author                | 93.95     | 93.38     | 93.67     | 982     |
 | title                       | 88.8      | 87.8      | 88.3      | 984     |
 |                             |           |           |           |         |
-| **all fields (micro avg.)** | **18.65** | **19.72** | **19.17** | 14425   |
-| all fields (macro avg.)     | 54.3      | 53.85     | 54.07     | 14425   |
+| **all fields (micro avg.)** | **18.65** | **19.72** | **19.17** | 4914   |
+| all fields (macro avg.)     | 54.3      | 53.85     | 54.07     | 4914   |
 
 #### Soft Matching (ignoring punctuation, case and space characters mismatches)
 
@@ -57,13 +57,13 @@ Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 21.54     | 20.73     | 21.13     | 984     |
-| affiliation_linked          | 68.98     | 74.83     | 71.79     | 10492   |
+| affiliation_linked          | 68.98     | 74.83     | 71.79     | 981   |
 | authors                     | 78.59     | 78.03     | 78.31     | 983     |
 | first_author                | 93.95     | 93.38     | 93.67     | 982     |
 | title                       | 95.79     | 94.72     | 95.25     | 984     |
 |                             |           |           |           |         |
-| **all fields (micro avg.)** | **69.96** | **73.98** | **71.91** | 14425   |
-| all fields (macro avg.)     | 71.77     | 72.34     | 72.03     | 14425   |
+| **all fields (micro avg.)** | **69.96** | **73.98** | **71.91** | 4914   |
+| all fields (macro avg.)     | 71.77     | 72.34     | 72.03     | 4914   |
 
 #### Levenshtein Matching (Minimum Levenshtein distance at 0.8)
 
@@ -72,13 +72,13 @@ Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 46.67     | 44.92     | 45.78     | 984     |
-| affiliation_linked          | 73.26     | 79.47     | 76.24     | 10492   |
+| affiliation_linked          | 73.26     | 79.47     | 76.24     | 981   |
 | authors                     | 89.86     | 89.22     | 89.54     | 983     |
 | first_author                | 94.26     | 93.69     | 93.97     | 982     |
 | title                       | 97.23     | 96.14     | 96.68     | 984     |
 |                             |           |           |           |         |
-| **all fields (micro avg.)** | **75.55** | **79.88** | **77.65** | 14425   |
-| all fields (macro avg.)     | 80.26     | 80.69     | 80.44     | 14425   |
+| **all fields (micro avg.)** | **75.55** | **79.88** | **77.65** | 4914   |
+| all fields (macro avg.)     | 80.26     | 80.69     | 80.44     | 4914   |
 
 #### Ratcliff/Obershelp Matching (Minimum Ratcliff/Obershelp similarity at 0.95)
 
@@ -87,17 +87,23 @@ Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 43.4      | 41.77     | 42.57     | 984     |
-| affiliation_linked          | 71.08     | 77.11     | 73.97     | 10492   |
+| affiliation_linked          | 71.08     | 77.11     | 73.97     | 981   |
 | authors                     | 83.3      | 82.71     | 83        | 983     |
 | first_author                | 93.95     | 93.38     | 93.67     | 982     |
 | title                       | 97.23     | 96.14     | 96.68     | 984     |
 |                             |           |           |           |         |
-| **all fields (micro avg.)** | **73.28** | **77.48** | **75.32** | 14425   |
-| all fields (macro avg.)     | 77.79     | 78.22     | 77.98     | 14425   |
+| **all fields (micro avg.)** | **73.28** | **77.48** | **75.32** | 4914   |
+| all fields (macro avg.)     | 77.79     | 78.22     | 77.98     | 4914   |
 
 Note: the "affiliation_linked" field above is a linking-aware metric (each author is paired with its gold counterpart
-and their attached affiliations compared). Only authors whose gold affiliation link is explicit are scored; affiliations
-encoded purely positionally in the gold are out of scope.
+and their attached affiliations compared). Its support column reports the number of articles the metric is computed
+from (those with at least one explicit gold affiliation link), while precision/recall/F1 are measured over the
+individual author-affiliation links.
+Only authors whose gold affiliation link is explicit are scored; affiliations encoded purely positionally in the gold (
+no xref/@rid and no nested aff) are out of scope, not counted as misses.
+Ground truth: single-affiliation papers (exactly one <aff>) have been completed by linking every author to that sole
+affiliation (~1,649 authors across PMC, bioRxiv and PLOS). Still to be done: multi-affiliation papers that encode the
+author-to-affiliation mapping only positionally, which require the PDF superscripts to disambiguate.
 
 #### Instance-level results
 

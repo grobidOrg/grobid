@@ -43,14 +43,14 @@ Evaluation on 1999 random PDF files out of 1998 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 2.31      | 2.26      | 2.28      | 1989    |
-| affiliation_linked          | 0.83      | 0.83      | 0.83      | 16325   |
+| affiliation_linked          | 0.83      | 0.83      | 0.83      | 1961   |
 | authors                     | 84.85     | 84.38     | 84.62     | 1998    |
 | first_author                | 96.73     | 96.29     | 96.51     | 1996    |
 | keywords                    | 57.33     | 57.33     | 57.33     | 839     |
 | title                       | 77.26     | 76.49     | 76.87     | 1999    |
 |                             |           |           |           |         |
-| **all fields (micro avg.)** | **23.23** | **23.06** | **23.14** | 25146   |
-| all fields (macro avg.)     | 53.22     | 52.93     | 53.07     | 25146   |
+| **all fields (micro avg.)** | **23.23** | **23.06** | **23.14** | 10777   |
+| all fields (macro avg.)     | 53.22     | 52.93     | 53.07     | 10777   |
 
 #### Soft Matching (ignoring punctuation, case and space characters mismatches)
 
@@ -59,14 +59,14 @@ Evaluation on 1999 random PDF files out of 1998 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 59.54     | 58.37     | 58.95     | 1989    |
-| affiliation_linked          | 72.82     | 72.34     | 72.58     | 16325   |
+| affiliation_linked          | 72.82     | 72.34     | 72.58     | 1961   |
 | authors                     | 85.35     | 84.88     | 85.12     | 1998    |
 | first_author                | 96.98     | 96.54     | 96.76     | 1996    |
 | keywords                    | 63.05     | 63.05     | 63.05     | 839     |
 | title                       | 79.48     | 78.69     | 79.08     | 1999    |
 |                             |           |           |           |         |
-| **all fields (micro avg.)** | **74.91** | **74.35** | **74.63** | 25146   |
-| all fields (macro avg.)     | 76.21     | 75.65     | 75.92     | 25146   |
+| **all fields (micro avg.)** | **74.91** | **74.35** | **74.63** | 10777   |
+| all fields (macro avg.)     | 76.21     | 75.65     | 75.92     | 10777   |
 
 #### Levenshtein Matching (Minimum Levenshtein distance at 0.8)
 
@@ -75,14 +75,14 @@ Evaluation on 1999 random PDF files out of 1998 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 80.1      | 78.53     | 79.31     | 1989    |
-| affiliation_linked          | 75.63     | 75.13     | 75.38     | 16325   |
+| affiliation_linked          | 75.63     | 75.13     | 75.38     | 1961   |
 | authors                     | 92.55     | 92.04     | 92.3      | 1998    |
 | first_author                | 97.23     | 96.79     | 97.01     | 1996    |
 | keywords                    | 78.19     | 78.19     | 78.19     | 839     |
 | title                       | 91.92     | 91        | 91.45     | 1999    |
 |                             |           |           |           |         |
-| **all fields (micro avg.)** | **80.42** | **79.83** | **80.12** | 25146   |
-| all fields (macro avg.)     | 85.94     | 85.28     | 85.61     | 25146   |
+| **all fields (micro avg.)** | **80.42** | **79.83** | **80.12** | 10777   |
+| all fields (macro avg.)     | 85.94     | 85.28     | 85.61     | 10777   |
 
 #### Ratcliff/Obershelp Matching (Minimum Ratcliff/Obershelp similarity at 0.95)
 
@@ -91,23 +91,29 @@ Evaluation on 1999 random PDF files out of 1998 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 77.03     | 75.52     | 76.26     | 1989    |
-| affiliation_linked          | 73.85     | 73.37     | 73.61     | 16325   |
+| affiliation_linked          | 73.85     | 73.37     | 73.61     | 1961   |
 | authors                     | 88.48     | 87.99     | 88.23     | 1998    |
 | first_author                | 96.73     | 96.29     | 96.51     | 1996    |
 | keywords                    | 70.32     | 70.32     | 70.32     | 839     |
 | title                       | 87.67     | 86.79     | 87.23     | 1999    |
 |                             |           |           |           |         |
-| **all fields (micro avg.)** | **78.06** | **77.48** | **77.77** | 25146   |
-| all fields (macro avg.)     | 82.35     | 81.71     | 82.03     | 25146   |
+| **all fields (micro avg.)** | **78.06** | **77.48** | **77.77** | 10777   |
+| all fields (macro avg.)     | 82.35     | 81.71     | 82.03     | 10777   |
 
 Note: the "affiliation_linked" field above is a linking-aware metric (each author is paired with its gold counterpart
-and their attached affiliations compared). Only authors whose gold affiliation link is explicit are scored; affiliations
-encoded purely positionally in the gold are out of scope.
+and their attached affiliations compared). Its support column reports the number of articles the metric is computed
+from (those with at least one explicit gold affiliation link), while precision/recall/F1 are measured over the
+individual author-affiliation links.
+Only authors whose gold affiliation link is explicit are scored; affiliations encoded purely positionally in the gold (
+no xref/@rid and no nested aff) are out of scope, not counted as misses.
+Ground truth: single-affiliation papers (exactly one <aff>) have been completed by linking every author to that sole
+affiliation (~1,649 authors across PMC, bioRxiv and PLOS). Still to be done: multi-affiliation papers that encode the
+author-to-affiliation mapping only positionally, which require the PDF superscripts to disambiguate.
 
 #### Instance-level results
 
 ```
-Total expected instances: 	1999
+Total expected instances: 	1998
 Total correct instances: 	37 (strict)
 Total correct instances: 	724 (soft)
 Total correct instances: 	1223 (Levenshtein)
