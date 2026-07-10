@@ -26,17 +26,33 @@ Any similar PubMed Central set of articles could normally be used, as long they 
 
 We suppose in the following that the archive is decompressed under `PATH_TO_PMC/PMC_sample_1943/`.
 
+#### Author–affiliation linking corrections
+
+Manual/curation changes to the author→affiliation links (see [Author–affiliation linking in the gold data](#authoraffiliation-linking-in-the-gold-data)). For `PMC_sample_1943`: **965 authors across 282 files** were auto-linked from a single affiliation, **3 files** completed by forced bijection, and **37** id-less affiliations were given ids for hand-linking; **20** collaboration/consortium contributors were marked and excluded. Two files remain unrecoverable and stay unlinked (out of scope): `Cases_J_2010_Mar_9_3_76` (one author with no affiliation in the JATS *or* the PDF) and `Cryst_Growth_Des_2011_Jun_1_11(6)_2107-2111` (13 authors — the PDF lists the affiliations but prints no author superscripts).
+
 ### The bioRxiv gold-standard data 
 
 For evaluation on preprint articles, we are using the balanced bioRxiv 10k dataset originally compiled with care and published by Daniel Ecer ([eLife](https://elifesciences.org)), available on [Hugging Face](https://huggingface.co/datasets/sciencialab/grobid-evaluation). More precisely we publish benchmarks using the test subset of 2000 articles. The zip archive is similar in structure to the above PMC sample 1943 dataset and further documented below. 
+
+#### Author–affiliation linking corrections
+
+For `biorxiv-10k-test-2000`: **643 authors across 203 files** were auto-linked from a single affiliation, **9** id-less affiliations were given ids for hand-linking, and **39** collaboration contributors were marked and excluded; individual files were repaired by hand (e.g. a dangling `rid` in `050567v1`, and `244319v1` where the affiliation text itself names the author). Eight files remain unlinked (out of scope), mostly source gaps where the JATS dropped the author superscripts (e.g. `338731v1`) or the superscript points to an affiliation not printed in the document.
 
 ### The PLOS 1000 dataset
 
 This is a set of 1000 PLOS articles, called `PLOS_1000` and available on [Hugging Face](https://huggingface.co/datasets/sciencialab/grobid-evaluation), randomly selected from the full [PLOS Open Access collection](https://allof.plos.org/allofplos.zip). Again, for each article, the published PDF is available with the corresponding publisher JATS XML file, around 1.3GB total size.
 
+#### Author–affiliation linking corrections
+
+For `PLOS_1000`: PLOS encodes explicit `<xref>` affiliation links, so almost no completion was needed — **6** authors were linked under the single-real-affiliation pattern (the academic-editor affiliation excluded) plus one single-affiliation case, and **43** collaboration contributors were marked and excluded. No files remain to complete.
+
 ### eLife 984 dataset
 
 The `eLife_984` dataset is a set of 984 articles from eLife, available on [Hugging Face](https://huggingface.co/datasets/sciencialab/grobid-evaluation), randomly selected from their [open collection available on GitHub](https://github.com/elifesciences/elife-article-xml). Every articles come with the published PDF, the publisher JATS XML file and the eLife public HTML file (as bonus, not used), all in their latest version, around 4.5G total.
+
+#### Author–affiliation linking corrections
+
+For `eLife_984`: eLife already encodes explicit affiliation links, so no single-affiliation completion was required. The apparent gaps were **collaboration consortiums** — e.g. 28721's "Swiss HIV Cohort Study" and 72779's "Barwon Infant Study Investigator team", whose nested member rolls were mis-read as unlinked authors — now flagged `specific-use="collaboration"` and excluded (**12** contributors), together with editorial and peer-review affiliations from `<sub-article>` and editorial-board contrib-groups. **8** id-less affiliations were given ids. No author→affiliation completion remains.
 
 ## Getting publisher gold-standard data 
 
@@ -208,6 +224,33 @@ The references 2 and 3 are thus missing.
 
 GROBID expends intervals and will likely identify and match these "intermediary" callouts (including 2 and 3 in the above example). However these additional correct extractions and matching from GROBID will be counted as false positive in the evaluation because missing from the "gold" data.
 
+
+### Author–affiliation linking in the gold data
+
+The end-to-end evaluation includes an `affiliation_linked` metric: each extracted author is paired with its gold counterpart (by normalised surname, with forename initial as tie-break) and the affiliations attached to each are compared. Scoring an author requires a *machine-readable* author→affiliation link in the gold JATS — an `<xref ref-type="aff" rid="..."/>` placed **inside** the `<contrib contrib-type="author">`, or an `<aff>` nested directly in that contrib. The `<aff>` element itself lives as a sibling inside the `<contrib-group>` (or is referenced by id); it is the `xref` *inside the contrib* that establishes the link.
+
+In practice, publisher JATS frequently encodes the association only *positionally* — the author's printed superscript is resolved by the PDF layout — or drops it entirely during conversion. Authors with no resolvable link are treated as **out of scope**: they are skipped, not counted as missed. The raw metric therefore understates performance on these corpora unless the gold links are completed.
+
+To make the metric meaningful, the gold affiliation links were curated with a tiered pipeline (scripts under `doc/affiliation-triage/`), from safe/automatic to manual:
+
+1. **single affiliation** — a contributor group with exactly one `<aff>`: every author is linked to it;
+2. **single real affiliation** — the same, once editor affiliations are excluded (the PLOS academic-editor pattern);
+3. **forced bijection** — exactly one unlinked author and exactly one unreferenced affiliation;
+4. **unlabeled default** — a group whose single *unlabeled* `<aff>` is the shared default for every author that carries no superscript;
+5. **id backfill** — an `id` is added to id-less `<aff>` elements so the remainder can be hand-linked;
+6. **manual** — the author→affiliation mapping is read from the PDF superscripts and added by hand.
+
+Two classes of contributor are deliberately **excluded**, not missing:
+
+- **Collaboration / consortium group authors** (`<collab>`, e.g. eLife 28721's "Swiss HIV Cohort Study") are flagged `specific-use="collaboration"` on their wrapping `<contrib>` and skipped — they are group authors, not individually affiliated, and their nested member rolls are never scored.
+- **Editors and reviewers** — eLife peer-review `<sub-article>` blocks and editorial-board `<contrib-group content-type="section">` — are out of scope for author-affiliation scoring.
+
+Finally, some links are **genuinely unrecoverable** and are left unlinked, because the source itself is incomplete:
+
+- an author printed with **no superscript anywhere** (neither JATS nor PDF), so no affiliation is asserted for them;
+- a superscript that **points to an affiliation that was never printed** in the document.
+
+These are source-data gaps that no author→affiliation metric can score; they remain documented known gaps rather than extraction errors. The manual-completion checklist and the remaining gaps are tracked in `doc/affiliation-triage/manual-ground-truth-todo.md`.
 
 ### Character encoding and glyphs
 
