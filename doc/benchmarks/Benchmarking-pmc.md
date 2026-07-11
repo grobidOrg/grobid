@@ -42,7 +42,7 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 16.34     | 16.06     | 16.2      | 1911    |
-| affiliation_linked          | 0.53      | 0.53      | 0.53      | 1927   |
+| affiliation_linked          | 0.53      | 0.53      | 0.53      | 1927    |
 | authors                     | 92.89     | 92.84     | 92.86     | 1941    |
 | first_author                | 96.7      | 96.65     | 96.68     | 1941    |
 | keywords                    | 63.19     | 61.09     | 62.12     | 1380    |
@@ -58,7 +58,7 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 62.96     | 61.9      | 62.43     | 1911    |
-| affiliation_linked          | 54.02     | 54.31     | 54.17     | 1927   |
+| affiliation_linked          | 54.02     | 54.31     | 54.17     | 1927    |
 | authors                     | 94.85     | 94.8      | 94.82     | 1941    |
 | first_author                | 97.16     | 97.11     | 97.14     | 1941    |
 | keywords                    | 71.14     | 68.77     | 69.93     | 1380    |
@@ -74,7 +74,7 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 89.84     | 88.33     | 89.08     | 1911    |
-| affiliation_linked          | 56.53     | 56.84     | 56.68     | 1927   |
+| affiliation_linked          | 56.53     | 56.84     | 56.68     | 1927    |
 | authors                     | 96.7      | 96.65     | 96.68     | 1941    |
 | first_author                | 97.37     | 97.32     | 97.35     | 1941    |
 | keywords                    | 84.71     | 81.88     | 83.27     | 1380    |
@@ -90,7 +90,7 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 | label                       | precision | recall    | f1       | support |
 |-----------------------------|-----------|-----------|----------|---------|
 | abstract                    | 85.74     | 84.3      | 85.01    | 1911    |
-| affiliation_linked          | 55.05     | 55.35     | 55.2     | 1927   |
+| affiliation_linked          | 55.05     | 55.35     | 55.2     | 1927    |
 | authors                     | 95.77     | 95.72     | 95.75    | 1941    |
 | first_author                | 96.7      | 96.65     | 96.68    | 1941    |
 | keywords                    | 78.26     | 75.65     | 76.93    | 1380    |
@@ -303,4 +303,4 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 | **all fields (micro avg.)** | **0**     | **0**  | **0** | 0       |
 | all fields (macro avg.)     | 0         | 0      | 0     | 0       |
 
-Evaluation metrics produced in 160.381 seconds
+Evaluation metrics produced in 159.838 seconds
