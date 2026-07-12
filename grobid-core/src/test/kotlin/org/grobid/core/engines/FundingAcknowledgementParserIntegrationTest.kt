@@ -300,6 +300,30 @@ class FundingAcknowledgementParserIntegrationTest {
         assertThat(element.toXML(), not(containsString("type=\"funder\"")))
     }
 
+    @Test
+    fun testXmlFragmentProcessing_shouldKeepFundingWithInjectableAnnotation() {
+        // The funder span falls entirely within plain text (no overlapping inline element),
+        // so its annotation can be injected and the funding must be retained.
+        val input = """
+            <div type="acknowledgement">
+            <div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p><s>This work was supported by the National Science Foundation</s></p></div>
+            </div>
+        """.trimIndent()
+
+        val parser = StubFundingAcknowledgementParser(
+            listOf("National", "Science", "Foundation"),
+        )
+
+        val config = GrobidAnalysisConfig.GrobidAnalysisConfigBuilder()
+            .withSentenceSegmentation(true)
+            .build()
+
+        val (element, mutableTriple) = parser.processingXmlFragment(input, config)
+
+        assertThat(mutableTriple.left, hasSize(1))
+        assertThat(element.toXML(), containsString("type=\"funder\""))
+    }
+
     private class StubFundingAcknowledgementParser(
         private val tokensToLabelAsFunder: List<String>,
     ) : FundingAcknowledgementParser(GrobidModels.DUMMY) {

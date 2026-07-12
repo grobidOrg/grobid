@@ -224,11 +224,13 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 for (int i = 0; i < annotationsPositionText.size(); i++) {
                     annotationsWithPosRefToText.add(
                             new AnnotatedXMLElement(annotations.get(i).getAnnotationNode(),
-                                    annotationsPositionText.get(i)));
+                                    annotationsPositionText.get(i),
+                                    annotations.get(i).getEntity()));
                 }
 
                 annotations = annotationsWithPosRefToText;
 
+                Set<AnnotatedXMLElement> injectedAnnotations = Collections.newSetFromMap(new IdentityHashMap<>());
                 if (sentenceSegmentation) {
                     Nodes sentences = paragraph.query(".//s");
 
@@ -236,15 +238,18 @@ public class FundingAcknowledgementParser extends AbstractParser {
                         // Overly careful - we should never end up here.
                         LOGGER.warn(
                                 "While the configuration claim that paragraphs must be segmented, we did not find any sentence. ");
-                        updateParagraphNodeWithAnnotations(paragraph, annotations);
+                        injectedAnnotations.addAll(updateParagraphNodeWithAnnotations(paragraph, annotations));
                     }
                     mergeSentencesFallingOnAnnotations(sentences, annotations, config);
-                    updateSentencesNodesWithAnnotations(sentences, annotations);
+                    injectedAnnotations.addAll(updateSentencesNodesWithAnnotations(sentences, annotations));
                 } else {
-                    updateParagraphNodeWithAnnotations(paragraph, annotations);
+                    injectedAnnotations.addAll(updateParagraphNodeWithAnnotations(paragraph, annotations));
                 }
 
-                synchronizeExtractedEntitiesWithAnnotations((Element) paragraph, localEntities);
+                // Drop the extracted entities whose annotations could not be injected back into the
+                // XML (e.g. because they overlap a pre-existing inline element): keeping them would
+                // yield entities with no corresponding inline annotation in the output.
+                pruneEntitiesWithoutInjectedAnnotation(localEntities, annotations, injectedAnnotations);
 
                 // update extracted entities
                 if (globalResult == null) {
@@ -411,7 +416,10 @@ public class FundingAcknowledgementParser extends AbstractParser {
         return sentencePositions;
     }
 
-    private static void updateParagraphNodeWithAnnotations(Node paragraph, List<AnnotatedXMLElement> annotations) {
+    private static Set<AnnotatedXMLElement> updateParagraphNodeWithAnnotations(
+            Node paragraph,
+            List<AnnotatedXMLElement> annotations) {
+        Set<AnnotatedXMLElement> injectedAnnotations = Collections.newSetFromMap(new IdentityHashMap<>());
         int pos = 0;
         List<Node> newChildren = new ArrayList<>();
         for (int i = 0; i < paragraph.getChildCount(); i++) {
@@ -429,6 +437,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 if (CollectionUtils.isNotEmpty(annotationsInThisChunk)) {
                     List<Node> nodes = getNodesAnnotationsInTextNode(currentNode, annotationsInThisChunk, pos);
                     newChildren.addAll(nodes);
+                    injectedAnnotations.addAll(annotationsInThisChunk);
                 } else {
                     newChildren.add(currentNode);
                 }
@@ -446,9 +455,14 @@ public class FundingAcknowledgementParser extends AbstractParser {
             node.detach();
             ((Element) paragraph).appendChild(node);
         }
+
+        return injectedAnnotations;
     }
 
-    private static void updateSentencesNodesWithAnnotations(Nodes sentences, List<AnnotatedXMLElement> annotations) {
+    private static Set<AnnotatedXMLElement> updateSentencesNodesWithAnnotations(
+            Nodes sentences,
+            List<AnnotatedXMLElement> annotations) {
+        Set<AnnotatedXMLElement> injectedAnnotations = Collections.newSetFromMap(new IdentityHashMap<>());
         int pos = 0;
         int sentenceStartOffset = 0;
         for (Node sentence : sentences) {
@@ -469,6 +483,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                     if (CollectionUtils.isNotEmpty(annotationsInThisChunk)) {
                         List<Node> nodes = getNodesAnnotationsInTextNode(currentNode, annotationsInThisChunk, pos);
                         newChildren.addAll(nodes);
+                        injectedAnnotations.addAll(annotationsInThisChunk);
                     } else {
                         newChildren.add(currentNode);
                     }
@@ -491,113 +506,73 @@ public class FundingAcknowledgementParser extends AbstractParser {
 
             sentenceStartOffset += sentenceText.length();
         }
+
+        return injectedAnnotations;
     }
 
-    private static void synchronizeExtractedEntitiesWithAnnotations(
-            Element paragraph,
-            FundingAcknowledgmentParse localEntities) {
-        if (localEntities == null || CollectionUtils.isEmpty(localEntities.getFundings())) {
+    /**
+     * Removes the extracted entities (fundings, persons, affiliations) whose annotations were all
+     * dropped during injection into the XML. An entity is kept when it has no recorded annotation
+     * at all, or when at least one of its annotations was successfully injected; it is dropped only
+     * when it had annotations and none of them survived. The correspondence is resolved by object
+     * identity through {@link AnnotatedXMLElement#getEntity()}, so entities sharing the same textual
+     * value (e.g. two fundings with the same funder name) remain distinct.
+     */
+    private static void pruneEntitiesWithoutInjectedAnnotation(
+            FundingAcknowledgmentParse localEntities,
+            List<AnnotatedXMLElement> allAnnotations,
+            Set<AnnotatedXMLElement> injectedAnnotations) {
+        if (localEntities == null) {
             return;
         }
 
-        Map<AnnotationSignature, Integer> survivingAnnotationCounts = collectSurvivingAnnotationCounts(paragraph);
-        if (survivingAnnotationCounts.isEmpty()) {
-            localEntities.setFundings(new ArrayList<>());
-            return;
-        }
-
-        List<Funding> survivingFundings = new ArrayList<>();
-        for (Funding funding : localEntities.getFundings()) {
-            if (consumeFirstMatchingFundingAnnotation(funding, survivingAnnotationCounts)) {
-                survivingFundings.add(funding);
+        Set<Object> entitiesWithAnyAnnotation = Collections.newSetFromMap(new IdentityHashMap<>());
+        for (AnnotatedXMLElement annotation : allAnnotations) {
+            if (annotation.getEntity() != null) {
+                entitiesWithAnyAnnotation.add(annotation.getEntity());
             }
         }
-        localEntities.setFundings(survivingFundings);
+
+        Set<Object> entitiesWithInjectedAnnotation = Collections.newSetFromMap(new IdentityHashMap<>());
+        for (AnnotatedXMLElement annotation : injectedAnnotations) {
+            if (annotation.getEntity() != null) {
+                entitiesWithInjectedAnnotation.add(annotation.getEntity());
+            }
+        }
+
+        localEntities.setFundings(
+                retainEntitiesWithInjectedAnnotation(
+                        localEntities.getFundings(),
+                        entitiesWithAnyAnnotation,
+                        entitiesWithInjectedAnnotation));
+        localEntities.setPersons(
+                retainEntitiesWithInjectedAnnotation(
+                        localEntities.getPersons(),
+                        entitiesWithAnyAnnotation,
+                        entitiesWithInjectedAnnotation));
+        localEntities.setAffiliations(
+                retainEntitiesWithInjectedAnnotation(
+                        localEntities.getAffiliations(),
+                        entitiesWithAnyAnnotation,
+                        entitiesWithInjectedAnnotation));
     }
 
-    private static Map<AnnotationSignature, Integer> collectSurvivingAnnotationCounts(Element paragraph) {
-        Map<AnnotationSignature, Integer> survivingAnnotationCounts = new HashMap<>();
-        Nodes survivingAnnotations = paragraph.query(".//*[local-name()='rs']");
-        for (int i = 0; i < survivingAnnotations.size(); i++) {
-            Node survivingAnnotation = survivingAnnotations.get(i);
-            if (!(survivingAnnotation instanceof Element)) {
-                continue;
+    private static <T> List<T> retainEntitiesWithInjectedAnnotation(
+            List<T> entities,
+            Set<Object> entitiesWithAnyAnnotation,
+            Set<Object> entitiesWithInjectedAnnotation) {
+        if (CollectionUtils.isEmpty(entities)) {
+            return entities;
+        }
+
+        List<T> retained = new ArrayList<>();
+        for (T entity : entities) {
+            if (!entitiesWithAnyAnnotation.contains(entity)
+                    || entitiesWithInjectedAnnotation.contains(entity)) {
+                retained.add(entity);
             }
-
-            Element annotationElement = (Element) survivingAnnotation;
-            Attribute typeAttribute = annotationElement.getAttribute("type");
-            if (typeAttribute == null) {
-                continue;
-            }
-
-            AnnotationSignature key = new AnnotationSignature(typeAttribute.getValue(), annotationElement.getValue());
-            survivingAnnotationCounts.merge(key, 1, Integer::sum);
         }
-
-        return survivingAnnotationCounts;
-    }
-
-    private static boolean consumeFirstMatchingFundingAnnotation(
-            Funding funding,
-            Map<AnnotationSignature, Integer> survivingAnnotationCounts) {
-        return consumeAnnotation(
-                "funder",
-                funding.getFunder() != null ? funding.getFunder().getFullName() : null,
-                survivingAnnotationCounts)
-                || consumeAnnotation("grantNumber", funding.getGrantNumber(), survivingAnnotationCounts)
-                || consumeAnnotation("grantName", funding.getGrantName(), survivingAnnotationCounts)
-                || consumeAnnotation("programName", funding.getProgramFullName(), survivingAnnotationCounts)
-                || consumeAnnotation("projectName", funding.getProjectFullName(), survivingAnnotationCounts);
-    }
-
-    private static boolean consumeAnnotation(
-            String type,
-            String value,
-            Map<AnnotationSignature, Integer> survivingAnnotationCounts) {
-        if (StringUtils.isBlank(value)) {
-            return false;
-        }
-
-        AnnotationSignature key = new AnnotationSignature(type, value);
-        Integer count = survivingAnnotationCounts.get(key);
-        if (count == null) {
-            return false;
-        }
-
-        if (count == 1) {
-            survivingAnnotationCounts.remove(key);
-        } else {
-            survivingAnnotationCounts.put(key, count - 1);
-        }
-
-        return true;
-    }
-
-    private static class AnnotationSignature {
-        private final String type;
-        private final String value;
-
-        private AnnotationSignature(String type, String value) {
-            this.type = type;
-            this.value = value;
-        }
-
-        @Override
-        public boolean equals(Object other) {
-            if (this == other) {
-                return true;
-            }
-            if (!(other instanceof AnnotationSignature)) {
-                return false;
-            }
-            AnnotationSignature that = (AnnotationSignature) other;
-            return Objects.equals(type, that.type) && Objects.equals(value, that.value);
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(type, value);
-        }
+        return retained;
     }
 
     /**
@@ -737,6 +712,8 @@ public class FundingAcknowledgementParser extends AbstractParser {
 
         List<Element> elements = new ArrayList<>();
         List<OffsetPosition> positions = new ArrayList<>();
+        // the extracted entity each annotation belongs to, aligned with elements/positions
+        List<Object> owners = new ArrayList<>();
 
         int posTokenization = 0;
         int posCharacters = 0;
@@ -802,6 +779,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 entity.addAttribute(new Attribute("type", "funder"));
                 entity.appendChild(clusterContent);
                 elements.add(entity);
+                owners.add(funding);
 
                 positions.add(new OffsetPosition(posTokenization, endPosTokenization));
             } else if (clusterLabel.equals(FUNDING_GRANT_NAME)) {
@@ -821,6 +799,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 entity.addAttribute(new Attribute("type", "grantName"));
                 entity.appendChild(clusterContent);
                 elements.add(entity);
+                owners.add(funding);
 
                 positions.add(new OffsetPosition(posTokenization, endPosTokenization));
 
@@ -840,6 +819,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 entity.addAttribute(new Attribute("type", "person"));
                 entity.appendChild(clusterContent);
                 elements.add(entity);
+                owners.add(person);
 
                 positions.add(new OffsetPosition(posTokenization, endPosTokenization));
 
@@ -859,6 +839,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 entity.addAttribute(new Attribute("type", "affiliation"));
                 entity.appendChild(clusterContent);
                 elements.add(entity);
+                owners.add(affiliation);
 
                 positions.add(new OffsetPosition(posTokenization, endPosTokenization));
 
@@ -878,6 +859,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 entity.addAttribute(new Attribute("type", "institution"));
                 entity.appendChild(clusterContent);
                 elements.add(entity);
+                owners.add(institution);
 
                 positions.add(new OffsetPosition(posTokenization, endPosTokenization));
 
@@ -898,6 +880,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 entity.addAttribute(new Attribute("subtype", "infrastructure"));
                 entity.appendChild(clusterContent);
                 elements.add(entity);
+                owners.add(institution);
 
                 positions.add(new OffsetPosition(posTokenization, endPosTokenization));
 
@@ -927,6 +910,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 entity.addAttribute(new Attribute("type", "grantNumber"));
                 entity.appendChild(clusterContent);
                 elements.add(entity);
+                owners.add(funding);
 
                 positions.add(new OffsetPosition(posTokenization, endPosTokenization));
 
@@ -947,6 +931,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 entity.addAttribute(new Attribute("type", "programName"));
                 entity.appendChild(clusterContent);
                 elements.add(entity);
+                owners.add(funding);
 
                 positions.add(new OffsetPosition(posTokenization, endPosTokenization));
 
@@ -967,6 +952,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 entity.addAttribute(new Attribute("type", "projectName"));
                 entity.appendChild(clusterContent);
                 elements.add(entity);
+                owners.add(funding);
 
                 positions.add(new OffsetPosition(posTokenization, endPosTokenization));
 
@@ -1005,7 +991,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
         List<AnnotatedXMLElement> annotations = new ArrayList<>();
 
         for (int i = 0; i < elements.size(); i++) {
-            annotations.add(new AnnotatedXMLElement(elements.get(i), positions.get(i)));
+            annotations.add(new AnnotatedXMLElement(elements.get(i), positions.get(i), owners.get(i)));
         }
 
         return MutablePair.of(annotations, parsedStatement);
