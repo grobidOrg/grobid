@@ -12,7 +12,7 @@ For actual benchmarks, see the [Benchmarking page](benchmarks/Benchmarking.md). 
 
 ## Datasets
 
-The corpus used for the end-to-end evaluation of Grobid are all available in a single Hugging Face dataset: [https://huggingface.co/datasets/sciencialab/grobid-evaluation](https://huggingface.co/datasets/sciencialab/grobid-evaluation). Some of these datasets have been further annotated to make the evaluation of certain sub-structures possible (in particular code and data availability sections & funding sections).
+The corpus used for the end-to-end evaluation of Grobid are all available in a single Hugging Face dataset: [https://huggingface.co/datasets/sciencialab/grobid-evaluation](https://huggingface.co/datasets/sciencialab/grobid-evaluation) (DOI: [10.57967/hf/9553](https://doi.org/10.57967/hf/9553)). Some of these datasets have been further annotated to make the evaluation of certain sub-structures possible (in particular code and data availability sections & funding sections).
 
 *Previously, these datasets were archived on Zenodo at [https://zenodo.org/record/7708580](https://zenodo.org/record/7708580). The Hugging Face repository is now the canonical source.*
 
