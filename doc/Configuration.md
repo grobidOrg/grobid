@@ -107,9 +107,9 @@ Two language recognition implementations are available (Cybozu, the default, and
 
 - **OpenNLP** (`OpenNLPSentenceDetectorFactory`, default) — Apache OpenNLP (`org.apache.opennlp:opennlp-tools`).
 - **Pragmatic Segmenter** (`PragmaticSentenceDetectorFactory`) — a port of the [Pragmatic Segmenter](https://github.com/diasks2/pragmatic_segmenter), running on the JRuby interpreter.
-- **BlingFire** (`BlingFireSentenceDetectorFactory`) — Microsoft [BlingFire](https://github.com/microsoft/BlingFire) via a native library. It uses BlingFire's built-in default model (no external `sbd.bin` required) and is language-agnostic.
+- **BlingFire** (`BlingFireSentenceDetectorFactory`) — Microsoft [BlingFire](https://github.com/microsoft/BlingFire) via a native library, using a [fork](https://github.com/lfoppiano/Blingfire) that adds ARM support. It uses BlingFire's built-in default model (no external `sbd.bin` required) and is language-agnostic.
 
-**NOTE**: While OpenNLP is 60 time faster than the Pragmatic Segmenter, it performs "slightly" worst. The pragmatic segmenter runs with the JRuby Interpreter. BlingFire is a fast, language-agnostic alternative relying on a native (JNI) library.  
+**NOTE**: While OpenNLP is 60 times faster than the Pragmatic Segmenter, it performs "slightly" worse. The Pragmatic Segmenter runs on the JRuby interpreter. BlingFire, a language-agnostic segmenter relying on a native (JNI) library, is generally faster than OpenNLP and more accurate.  
 
 ### Service configuration
 
