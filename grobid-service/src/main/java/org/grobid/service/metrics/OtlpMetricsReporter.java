@@ -31,13 +31,15 @@ public class OtlpMetricsReporter implements Managed {
     private static final Logger LOGGER = LoggerFactory.getLogger(OtlpMetricsReporter.class);
 
     private final OtlpConfiguration config;
+    private final ApplicationMetrics applicationMetrics;
 
     // Held so stop() can flush + shut them down. Null while disabled or before start().
     private OpenTelemetrySdk openTelemetry;
     private RuntimeMetrics runtimeMetrics;
 
-    public OtlpMetricsReporter(OtlpConfiguration config) {
+    public OtlpMetricsReporter(OtlpConfiguration config, ApplicationMetrics applicationMetrics) {
         this.config = config;
+        this.applicationMetrics = applicationMetrics;
     }
 
     @Override
@@ -51,6 +53,12 @@ public class OtlpMetricsReporter implements Managed {
         // Registers observable gauges/counters for JVM + process internals against the SDK's meter.
         // They are collected and pushed on every interval; closed in stop().
         this.runtimeMetrics = RuntimeMetrics.create(openTelemetry);
+        // Hand the live SDK meter to the application-metrics holder so the business counters/
+        // histograms (documents, latency, errors, in-flight, size) are pushed over OTLP too. Until
+        // this call they record only to Prometheus via no-op OTel instruments.
+        if (applicationMetrics != null) {
+            applicationMetrics.bind(openTelemetry.getMeter(ApplicationMetrics.INSTRUMENTATION_SCOPE));
+        }
 
         LOGGER.info(
                 "OTLP metrics push enabled -> {} ({}), every {}s, service.name={}",

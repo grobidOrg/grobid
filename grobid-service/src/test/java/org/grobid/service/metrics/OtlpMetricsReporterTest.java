@@ -17,7 +17,7 @@ public class OtlpMetricsReporterTest {
     private static MetricExporter exporterFor(String protocol) {
         OtlpConfiguration config = new OtlpConfiguration();
         config.setProtocol(protocol);
-        return new OtlpMetricsReporter(config).createExporter();
+        return new OtlpMetricsReporter(config, null).createExporter();
     }
 
     @Test

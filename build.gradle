@@ -448,6 +448,8 @@ project(":grobid-service") {
         implementation "io.opentelemetry:opentelemetry-sdk"
         implementation "io.opentelemetry:opentelemetry-exporter-otlp"
         implementation "io.opentelemetry.instrumentation:opentelemetry-runtime-telemetry-java17"
+        // In-memory metric reader for asserting the OTLP-side instruments in unit tests.
+        testImplementation "io.opentelemetry:opentelemetry-sdk-testing"
     }
 
     shadowJar {

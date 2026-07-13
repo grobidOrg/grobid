@@ -9,6 +9,7 @@ import jakarta.ws.rs.ext.ExceptionMapper;
 import jakarta.ws.rs.ext.Provider;
 
 import org.grobid.core.exceptions.GrobidException;
+import org.grobid.service.metrics.ApplicationMetrics;
 
 @Provider
 public class GrobidExceptionMapper implements ExceptionMapper<GrobidException> {
@@ -22,13 +23,23 @@ public class GrobidExceptionMapper implements ExceptionMapper<GrobidException> {
     @Inject
     private GrobidExceptionsTranslationUtility mapper;
 
-    @Inject
-    public GrobidExceptionMapper() {
+    private final ApplicationMetrics metrics;
 
+    @Inject
+    public GrobidExceptionMapper(ApplicationMetrics metrics) {
+        this.metrics = metrics;
     }
 
     @Override
     public Response toResponse(GrobidException exception) {
+        // Break errors down by GROBID reason (TOO_MANY_TOKENS, NO_BLOCKS, TIMEOUT, ...) — only known
+        // here, not in the response filter, which sees just the HTTP status.
+        metrics.recordError(endpoint(), String.valueOf(exception.getStatus()));
         return mapper.processException(exception, GrobidStatusToHttpStatusMapper.getStatusCode(exception.getStatus()));
+    }
+
+    private String endpoint() {
+        String path = uriInfo != null ? uriInfo.getPath() : null;
+        return path == null || path.isBlank() ? "unknown" : path.replaceAll("^/+|/+$", "");
     }
 }
