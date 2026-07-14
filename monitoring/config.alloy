@@ -34,8 +34,6 @@ prometheus.scrape "grobid" {
 // 2. Keep the metric set lean before shipping (Grafana Cloud bills on active series).
 //    GROBID's endpoint emits the app counters + full JVM/process hotspot exports, which
 //    is a lot of series you may not care about. This stage decides what actually ships.
-//
-//    >>> This is the decision I'd like you to make — see the TODO below. <<<
 // ---------------------------------------------------------------------------------------
 prometheus.relabel "filter" {
 	forward_to = [prometheus.remote_write.grafana_cloud.receiver]

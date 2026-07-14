@@ -3,14 +3,8 @@ package org.grobid.service.metrics;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertSame;
 
-import java.util.Collection;
-
-import io.opentelemetry.api.metrics.Meter;
-import io.opentelemetry.sdk.metrics.SdkMeterProvider;
-import io.opentelemetry.sdk.metrics.data.MetricData;
-import io.opentelemetry.sdk.testing.exporter.InMemoryMetricReader;
 import io.prometheus.client.CollectorRegistry;
 import org.junit.Before;
 import org.junit.Test;
@@ -98,48 +92,11 @@ public class ApplicationMetricsTest {
     }
 
     @Test
-    public void bind_pushesTheSameRecordingsToOtel() {
-        InMemoryMetricReader reader = InMemoryMetricReader.create();
-        try (SdkMeterProvider provider = SdkMeterProvider.builder().registerMetricReader(reader).build()) {
-            Meter meter = provider.get(ApplicationMetrics.INSTRUMENTATION_SCOPE);
-            metrics.bind(meter);
-
-            metrics.recordRequest("processFulltextDocument", 200, 0.5, 1000);
-            metrics.recordRequest("processFulltextDocument", 200, 0.7, 2000);
-            metrics.recordError("processFulltextDocument", "TIMEOUT");
-
-            Collection<MetricData> exported = reader.collectAllMetrics();
-
-            assertTrue(
-                    "grobid.requests should be exported over OTLP",
-                    exported.stream().anyMatch(m -> m.getName().equals("grobid.requests")));
-            assertTrue(
-                    "grobid.request.duration should be exported over OTLP",
-                    exported.stream().anyMatch(m -> m.getName().equals("grobid.request.duration")));
-            assertTrue(
-                    "grobid.errors should be exported over OTLP",
-                    exported.stream().anyMatch(m -> m.getName().equals("grobid.errors")));
-
-            long requestCount = exported.stream()
-                    .filter(m -> m.getName().equals("grobid.requests"))
-                    .flatMap(m -> m.getLongSumData().getPoints().stream())
-                    .mapToLong(p -> p.getValue())
-                    .sum();
-            assertEquals(2, requestCount);
-        }
-    }
-
-    @Test
-    public void recordingBeforeBind_isSafeAndPrometheusStillWorks() {
-        // No bind() called: OTel instruments are no-ops, but Prometheus must still record.
-        metrics.recordRequest("processDate", 204, 0.02, 12);
-        assertEquals(
-                1.0,
-                sample(
-                        "grobid_requests_total",
-                        new String[]{"endpoint", "http_status"},
-                        new String[]{"processDate", "204"}),
-                0.0);
+    public void defaultInstance_isSharedAndSafeToRequestRepeatedly() {
+        // The default registry rejects duplicate collector names, so requesting the instance twice
+        // (as happens when several Guice injectors exist in one JVM) must reuse the same object
+        // rather than re-register.
+        assertSame(ApplicationMetrics.defaultInstance(), ApplicationMetrics.defaultInstance());
     }
 
     private double sample(String name, String[] labelNames, String[] labelValues) {

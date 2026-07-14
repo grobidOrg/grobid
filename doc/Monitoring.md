@@ -198,11 +198,13 @@ Note that Grafana itself does not ingest metrics — it queries a time-series st
 Grafana Cloud, …). OTLP pushes into that store, which Grafana then dashboards. The pull and push paths are
 independent: you can enable either, both, or neither.
 
-When enabled, the service periodically exports the **same metrics available on the pull endpoint** — the
+When enabled, the service periodically exports the **same series the pull endpoint serves** — the
 application/business metrics (`grobid_requests_total`, `grobid_request_duration_seconds`,
-`grobid_errors_total`, `grobid_requests_in_flight`, `grobid_request_size_bytes`) and the JVM/process
-runtime metrics (heap, GC, threads, CPU, classes). It is **disabled by default**; configure it under
-`grobid.otlp` in `grobid-home/config/grobid.yaml`:
+`grobid_errors_total`, `grobid_requests_in_flight`, `grobid_request_size_bytes`), the Dropwizard `@Timed`
+REST summaries, and the JVM/process runtime metrics (heap, GC, threads, CPU). Internally the existing
+Prometheus registry is bridged to the [Prometheus Java client's OTLP
+exporter](https://prometheus.github.io/client_java/otel/otlp/), so the two paths cannot drift apart. It is
+**disabled by default**; configure it under `grobid.otlp` in `grobid-home/config/grobid.yaml`:
 
 ```yaml
 grobid:
@@ -218,13 +220,12 @@ grobid:
     #  Authorization: "Basic <base64 of instanceID:apiToken>"
 ```
 
-> **Naming across the two paths:** the OTLP instruments follow OpenTelemetry naming conventions (dotted,
-> e.g. `grobid.requests`, `grobid.request.duration`) and are translated to Prometheus-style names
-> (`grobid_requests_total`, `grobid_request_duration_seconds`) by whatever OTLP→Prometheus store ingests
-> them (Collector, Mimir, Grafana Cloud). An OTel `target_info` series carries the `service.name`
-> resource identity. The Dropwizard `@Timed` REST summaries (`org_grobid_service_*`) remain a
-> pull-endpoint-only view; the richer, lower-cardinality `grobid_*` metrics above cover the same
-> throughput/latency questions on both paths.
+> **Naming across the two paths:** the exporter maps Prometheus conventions to OTLP metadata on the way
+> out (a counter's `_total` suffix and a histogram's unit suffix become OTLP properties), and the
+> OTLP→Prometheus store that ingests them (Collector, Mimir, Grafana Cloud) translates them back — so the
+> names you query in Grafana are the same ones the scrape endpoint serves, e.g. `grobid_requests_total`
+> and `grobid_request_duration_seconds`. An OTel `target_info` series carries the `service.name` resource
+> identity.
 
 ### Grafana Cloud — worked example
 

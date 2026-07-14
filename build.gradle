@@ -438,18 +438,12 @@ project(":grobid-service") {
         implementation "io.prometheus:simpleclient_servlet_jakarta:0.16.0"
         implementation "io.prometheus:simpleclient_hotspot:0.16.0"
 
-        // OpenTelemetry: push-based metrics export over OTLP (complements the pull-based
-        // Prometheus scrape endpoint). The stable SDK + OTLP exporter come from opentelemetry-bom;
-        // the JVM runtime-metrics module is an experimental instrumentation artifact, so its
-        // version is managed by the separate -alpha instrumentation BOM. SDK 1.49.0 lines up with
-        // instrumentation 2.15.0 (the +34 minor-version offset the two release trains keep).
-        implementation platform("io.opentelemetry:opentelemetry-bom:1.49.0")
-        implementation platform("io.opentelemetry.instrumentation:opentelemetry-instrumentation-bom-alpha:2.15.0-alpha")
-        implementation "io.opentelemetry:opentelemetry-sdk"
-        implementation "io.opentelemetry:opentelemetry-exporter-otlp"
-        implementation "io.opentelemetry.instrumentation:opentelemetry-runtime-telemetry-java17"
-        // In-memory metric reader for asserting the OTLP-side instruments in unit tests.
-        testImplementation "io.opentelemetry:opentelemetry-sdk-testing"
+        // Push-based metrics export over OTLP (complements the pull-based Prometheus scrape
+        // endpoint): the Prometheus Java client's own OTLP exporter, fed through the simpleclient
+        // bridge so the exact series set of the scrape endpoint (application metrics + hotspot
+        // JVM/process exports) is pushed — no second instrumentation with the OpenTelemetry SDK.
+        implementation "io.prometheus:prometheus-metrics-exporter-opentelemetry:1.8.0"
+        implementation "io.prometheus:prometheus-metrics-simpleclient-bridge:1.8.0"
     }
 
     shadowJar {

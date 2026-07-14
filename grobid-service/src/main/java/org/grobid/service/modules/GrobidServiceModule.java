@@ -26,10 +26,6 @@ public class GrobidServiceModule extends DropwizardAwareModule<GrobidServiceConf
     public void configure() {
         bind(HealthResource.class);
 
-        // Shared holder for application metrics, recorded once and exported to both Prometheus and
-        // OTLP. Eager so its Prometheus instruments are registered exactly once at startup.
-        bind(ApplicationMetrics.class).asEagerSingleton();
-
         //REST
         bind(GrobidRestService.class);
         bind(GrobidRestProcessFiles.class);
@@ -42,6 +38,13 @@ public class GrobidServiceModule extends DropwizardAwareModule<GrobidServiceConf
         bind(GrobidExceptionsTranslationUtility.class);
         bind(GrobidExceptionMapper.class);
         bind(WebApplicationExceptionMapper.class);
+    }
+
+    @Provides
+    protected ApplicationMetrics provideApplicationMetrics() {
+        // JVM-wide instance: its Prometheus collectors register into the global default registry
+        // exactly once, even when several injectors are created in the same JVM (as the tests do).
+        return ApplicationMetrics.defaultInstance();
     }
 
     @Provides

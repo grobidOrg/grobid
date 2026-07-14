@@ -84,15 +84,14 @@ public final class GrobidServiceApplication extends Application<GrobidServiceCon
         registration.addMapping("/metrics/prometheus");
 
         // Shared holder for the application/business metrics (documents, latency, errors, in-flight,
-        // size). Recorded once and exported on both paths: Prometheus (the servlet above) and OTLP.
+        // size). Recorded once into the default Prometheus registry, which serves both delivery
+        // paths: the Prometheus servlet above and the OTLP push below.
         ApplicationMetrics applicationMetrics = guiceBundle.getInjector().getInstance(ApplicationMetrics.class);
 
         // Push-based metrics export over OTLP (disabled by default; see grobid.otlp in grobid.yaml).
-        // Managed by the Dropwizard lifecycle so it flushes a final batch on graceful shutdown. It also
-        // binds the live SDK meter into applicationMetrics so the business metrics reach OTLP.
-        environment.lifecycle()
-                .manage(
-                        new OtlpMetricsReporter(configuration.getGrobid().getOtlp(), applicationMetrics));
+        // Bridges the default Prometheus registry to an OTLP exporter, so the pushed series are the
+        // same ones the scrape endpoint serves. Managed by the Dropwizard lifecycle for clean shutdown.
+        environment.lifecycle().manage(new OtlpMetricsReporter(configuration.getGrobid().getOtlp()));
 
         environment.jersey().setUrlPattern(RESOURCES + "/*");
 
