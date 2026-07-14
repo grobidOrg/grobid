@@ -1,5 +1,6 @@
 package org.grobid.service;
 
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -105,10 +106,11 @@ public class OtlpConfiguration {
     }
 
     public Map<String, String> getHeaders() {
-        return headers;
+        return Collections.unmodifiableMap(headers);
     }
 
     public void setHeaders(Map<String, String> headers) {
-        this.headers = headers;
+        // Defensive copy: never alias the caller's map, and keep the field non-null.
+        this.headers = headers == null ? new LinkedHashMap<>() : new LinkedHashMap<>(headers);
     }
 }

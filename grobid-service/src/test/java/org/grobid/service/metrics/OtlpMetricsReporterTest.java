@@ -1,5 +1,7 @@
 package org.grobid.service.metrics;
 
+import java.util.Map;
+
 import org.junit.Test;
 
 import org.grobid.service.OtlpConfiguration;
@@ -13,7 +15,7 @@ public class OtlpMetricsReporterTest {
         config.setEndpoint(endpoint);
         // Long interval so no export is attempted while the test runs.
         config.setIntervalSeconds(3600);
-        config.getHeaders().put("Authorization", "Basic dGVzdDp0ZXN0");
+        config.setHeaders(Map.of("Authorization", "Basic dGVzdDp0ZXN0"));
         return config;
     }
 
