@@ -387,9 +387,11 @@ grobid:
   # for **service only**: push-based metrics export over OTLP (OpenTelemetry Protocol).
   # This is the push counterpart to the pull-based Prometheus scrape endpoint at
   # /metrics/prometheus on the admin connector. When enabled, the service periodically pushes
-  # JVM/process runtime metrics (heap, GC, threads, CPU, classes) to an OTLP receiver -- an
-  # OpenTelemetry Collector, Grafana Alloy/Agent, or a hosted backend such as Grafana Cloud --
-  # which Grafana then queries. Disabled by default.
+  # the same series the scrape endpoint serves -- the application metrics (grobid_requests_total,
+  # grobid_request_duration_seconds, ...), the Dropwizard REST timers, and the JVM/process runtime
+  # metrics (heap, GC, threads, CPU) -- to an OTLP receiver: an OpenTelemetry Collector,
+  # Grafana Alloy/Agent, or a hosted backend such as Grafana Cloud, which Grafana then queries.
+  # Disabled by default.
   otlp:
     enabled: false
     # OTLP receiver base endpoint. Match the port to the protocol: 4318 for http/protobuf, 4317 for

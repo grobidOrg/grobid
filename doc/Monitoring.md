@@ -93,7 +93,10 @@ scrape_configs:
 ```
 
 Replace `grobid:8071` with the host and admin port reachable from your Prometheus server (for a local
-Docker GROBID with the mapping above, use `host.docker.internal:8081` or the host IP).
+Docker GROBID with the mapping above, use `host.docker.internal:8081` or the host IP). A ready-made minimal
+configuration for testing against a locally running GROBID is available at
+[`monitoring/prometheus.yml`](https://github.com/kermitt2/grobid/blob/master/monitoring/prometheus.yml)
+in the repository.
 
 ## 2. Run the monitoring stack
 
@@ -198,6 +201,15 @@ Note that Grafana itself does not ingest metrics — it queries a time-series st
 Grafana Cloud, …). OTLP pushes into that store, which Grafana then dashboards. The pull and push paths are
 independent: you can enable either, both, or neither.
 
+!!! tip "Hybrid alternative: scrape locally, forward remotely"
+    Instead of GROBID pushing OTLP itself, you can run [Grafana Alloy](https://grafana.com/docs/alloy/latest/)
+    *next to* GROBID: Alloy scrapes the local `/metrics/prometheus` endpoint and `remote_write`s the samples
+    out to Grafana Cloud. GROBID needs no configuration change, and only outbound access is required. A
+    ready-made configuration for this setup — with a cost-control relabel filter, and all credentials
+    injected from environment variables (as used for the GROBID Hugging Face Spaces) — is available at
+    [`monitoring/config.alloy`](https://github.com/kermitt2/grobid/blob/master/monitoring/config.alloy)
+    in the repository.
+
 When enabled, the service periodically exports the **same series the pull endpoint serves** — the
 application/business metrics (`grobid_requests_total`, `grobid_request_duration_seconds`,
 `grobid_errors_total`, `grobid_requests_in_flight`, `grobid_request_size_bytes`), the Dropwizard `@Timed`
@@ -274,7 +286,7 @@ open **Explore** in Grafana Cloud, select the stack's Prometheus/Mimir data sour
 
 ```promql
 target_info{service_name="grobid-service"}        # the resource/identity series — easiest heartbeat
-jvm_memory_used_bytes{service_name="grobid-service"}
+jvm_memory_bytes_used{service_name="grobid-service"}
 ```
 
 !!! warning "Keep the token out of version control"

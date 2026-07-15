@@ -122,6 +122,8 @@ When executing the service, models can be loaded in a lazy manner (if you plan t
   modelPreload: true
 ```
 
+The service can also push its metrics over OTLP to an OpenTelemetry Collector or a hosted backend such as Grafana Cloud, configured with the `otlp` block (disabled by default). See [Monitoring with Prometheus and Grafana](Monitoring.md#push-based-export-otlp) for the available parameters and a step-by-step setup.
+
 Finally, the following part specifies the port to be used by the GROBID web service:
 
 ```yml
