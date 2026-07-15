@@ -298,7 +298,7 @@ The end-to-end evaluation includes an `affiliation_linked` metric: each extracte
 
 In practice, publisher JATS frequently encodes the association only *positionally* — the author's printed superscript is resolved by the PDF layout — or drops it entirely during conversion. Authors with no resolvable link are treated as **out of scope**: they are skipped, not counted as missed. The raw metric therefore understates performance on these corpora unless the gold links are completed.
 
-To make the metric meaningful, the gold affiliation links were curated with a tiered pipeline (scripts under `doc/affiliation-triage/`), from safe/automatic to manual:
+To make the metric meaningful, the gold affiliation links were curated with a tiered pipeline, from safe/automatic to manual:
 
 1. **single affiliation** — a contributor group with exactly one `<aff>`: every author is linked to it;
 2. **single real affiliation** — the same, once editor affiliations are excluded (the PLOS academic-editor pattern);
@@ -317,7 +317,7 @@ Finally, some links are **genuinely unrecoverable** and are left unlinked, becau
 - an author printed with **no superscript anywhere** (neither JATS nor PDF), so no affiliation is asserted for them;
 - a superscript that **points to an affiliation that was never printed** in the document.
 
-These are source-data gaps that no author→affiliation metric can score; they remain documented known gaps rather than extraction errors. The manual-completion checklist and the remaining gaps are tracked in `doc/affiliation-triage/manual-ground-truth-todo.md`.
+These are source-data gaps that no author→affiliation metric can score; they remain documented known gaps rather than extraction errors.
 
 ### Statement sections: author contributions and competing interests
 
