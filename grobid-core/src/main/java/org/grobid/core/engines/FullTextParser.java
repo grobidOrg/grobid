@@ -1483,7 +1483,7 @@ public class FullTextParser extends AbstractParser {
                 writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                     File.separator +
                     pdfFileName.replaceAll("(?i)\\.pdf$", ".training.segmentation.tei.xml")), false), StandardCharsets.UTF_8);
-                writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + id +
+                writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"_" + id +
                     "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"en\">\n");
 
                 writer.write(bufferFulltext.toString());
@@ -1561,7 +1561,7 @@ public class FullTextParser extends AbstractParser {
                     if (id == -1) {
                         writerReference.write("\t<teiHeader/>\n\t<text>\n\t\t<front/>\n\t\t<body/>\n\t\t<back>\n");
                     } else {
-                        writerReference.write("\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + id +
+                        writerReference.write("\t<teiHeader>\n\t\t<fileDesc xml:id=\"_" + id +
                             "\"/>\n\t</teiHeader>\n\t<text>\n\t\t<front/>\n\t\t<body/>\n\t\t<back>\n");
                     }
                     writerReference.write("<listBibl>\n");
@@ -1638,7 +1638,7 @@ public class FullTextParser extends AbstractParser {
                     if (id == -1) {
                         writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader/>\n\t<text xml:lang=\"en\">\n");
                     } else {
-                        writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + id +
+                        writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"_" + id +
                             "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"en\">\n");
                     }
                     writer.write(bufferFulltext.toString());
@@ -1817,7 +1817,7 @@ public class FullTextParser extends AbstractParser {
                     writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI + File.separator
                         + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.header.tei.xml")), false), StandardCharsets.UTF_8);
                     writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
-                        + pdfFileName.replaceAll("(?i)\\.pdf$", "")
+                        + TextUtilities.sanitizeXmlId(pdfFileName.replaceAll("(?i)\\.pdf$", ""))
                         + "\"/>\n\t</teiHeader>\n\t<text");
 
                     if (lang != null) {

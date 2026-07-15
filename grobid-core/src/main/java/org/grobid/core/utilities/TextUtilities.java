@@ -1312,6 +1312,36 @@ public class TextUtilities {
     }
 
     /**
+     * Turn an arbitrary string (typically a PDF file name) into a valid value for an
+     * xml:id attribute, i.e. a valid NCName, see https://www.w3.org/TR/xml-names/#NT-NCName
+     * The first character must be a letter or '_', the following characters letters,
+     * digits, '.', '-' or '_'. Any other character is replaced by '_', and a '_' is
+     * prepended when the string starts with a character not allowed in first position
+     * (e.g. a digit).
+     *
+     * @param id the candidate identifier, e.g. a PDF file name without extension
+     * @return a valid NCName, never null nor empty
+     */
+    public static String sanitizeXmlId(String id) {
+        if (StringUtils.isEmpty(id)) {
+            return "_";
+        }
+        StringBuilder sanitized = new StringBuilder(id.length() + 1);
+        for (char c : id.toCharArray()) {
+            if (Character.isLetterOrDigit(c) || c == '.' || c == '-' || c == '_') {
+                sanitized.append(c);
+            } else {
+                sanitized.append('_');
+            }
+        }
+        char first = sanitized.charAt(0);
+        if (!Character.isLetter(first) && first != '_') {
+            sanitized.insert(0, '_');
+        }
+        return sanitized.toString();
+    }
+
+    /**
      * Test for the current string contains at least one digit.
      *
      * @param tok the string to be processed.

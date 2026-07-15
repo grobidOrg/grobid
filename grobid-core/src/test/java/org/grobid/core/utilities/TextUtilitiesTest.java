@@ -43,6 +43,41 @@ public class TextUtilitiesTest extends EngineTest {
     }
 
     @Test
+    public void sanitizeXmlId_digitStart_shouldPrefixUnderscore() {
+        assertThat(TextUtilities.sanitizeXmlId("356report"), is("_356report"));
+    }
+
+    @Test
+    public void sanitizeXmlId_invalidCharacters_shouldReplaceWithUnderscore() {
+        assertThat(TextUtilities.sanitizeXmlId("my file (final)"), is("my_file__final_"));
+    }
+
+    @Test
+    public void sanitizeXmlId_validNCName_shouldReturnUnchanged() {
+        assertThat(TextUtilities.sanitizeXmlId("paper-1.section_2"), is("paper-1.section_2"));
+    }
+
+    @Test
+    public void sanitizeXmlId_underscorePrefixedFileName_shouldReturnUnchanged() {
+        assertThat(TextUtilities.sanitizeXmlId("_356report.pdf"), is("_356report.pdf"));
+    }
+
+    @Test
+    public void sanitizeXmlId_null_shouldReturnUnderscore() {
+        assertThat(TextUtilities.sanitizeXmlId(null), is("_"));
+    }
+
+    @Test
+    public void sanitizeXmlId_empty_shouldReturnUnderscore() {
+        assertThat(TextUtilities.sanitizeXmlId(""), is("_"));
+    }
+
+    @Test
+    public void sanitizeXmlId_unicodeLetters_shouldBePreserved() {
+        assertThat(TextUtilities.sanitizeXmlId("émile2020"), is("émile2020"));
+    }
+
+    @Test
     public void getRatcliffObershelpSimilarity_identicalStrings_isOne() {
         assertThat(TextUtilities.getRatcliffObershelpSimilarity("Smith", "Smith", false), is(1.0));
     }

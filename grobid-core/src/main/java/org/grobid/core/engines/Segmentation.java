@@ -770,7 +770,7 @@ public class Segmentation extends AbstractParser {
                         File.separator +
                         PDFFileName.replace(".pdf", ".training.segmentation.tei.xml")), false), "UTF-8");
                 writer.write(
-                        "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
+                        "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"_"
                                 + id
                                 +
                                 "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
