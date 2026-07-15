@@ -1631,30 +1631,30 @@ public class HeaderParser extends AbstractParser {
      * Consolidate an existing list of recognized citations based on access to
      * external internet bibliographic databases.
      *
-     * @param resHeader original biblio item
+     * @param extractedBiblio original biblio item
      * @return consolidated biblio item
      */
-    public BiblioItem consolidateHeader(BiblioItem resHeader, int consolidate) {
+    public BiblioItem consolidateHeader(BiblioItem extractedBiblio, int consolidate) {
         if (consolidate == 0) {
             // no consolidation
-            return resHeader;
+            return extractedBiblio;
         }
         Consolidation consolidator = null;
         try {
             consolidator = Consolidation.getInstance();
             if (consolidator.getCntManager() == null)
                 consolidator.setCntManager(cntManager);
-            BiblioItem bib = consolidator.consolidate(resHeader, null, consolidate);
-            if (bib != null) {
+            BiblioItem consolidatedBiblio = consolidator.consolidate(extractedBiblio, null, consolidate);
+            if (consolidatedBiblio != null) {
                 if (consolidate == 1 || consolidate == 3)
-                    BiblioItem.correct(resHeader, bib);
+                    BiblioItem.correct(extractedBiblio, consolidatedBiblio);
                 else if (consolidate == 2)
-                    BiblioItem.injectIdentifiers(resHeader, bib);
+                    BiblioItem.injectIdentifiers(extractedBiblio, consolidatedBiblio);
             }
         } catch (Exception e) {
             throw new GrobidException("An exception occurred while running bibliographical data consolidation.", e);
         }
-        return resHeader;
+        return extractedBiblio;
     }
 
     @Override

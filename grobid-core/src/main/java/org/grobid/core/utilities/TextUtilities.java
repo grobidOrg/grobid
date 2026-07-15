@@ -25,7 +25,9 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.rockymadden.stringmetric.similarity.RatcliffObershelpMetric;
 import org.apache.commons.lang3.StringUtils;
+import scala.Option;
 
 import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.exceptions.GrobidException;
@@ -330,6 +332,29 @@ public class TextUtilities {
      * @param input the string to be processed.
      * @return Returns the string without accent.
      */
+    /**
+     * Ratcliff/Obershelp similarity ratio in [0,1] between two strings. Blank input yields 0.0,
+     * identical strings yield 1.0. When caseDependent is false the strings are lowercased and
+     * accent-folded (e.g. "Martín" vs "Martin") before comparison so diacritics do not lower the
+     * score. This is the same metric the end-to-end evaluation reports as "Ratcliff/Obershelp".
+     */
+    public static double getRatcliffObershelpSimilarity(String string1, String string2, boolean caseDependent) {
+        if (StringUtils.isBlank(string1) || StringUtils.isBlank(string2))
+            return 0.0;
+        if (!caseDependent) {
+            string1 = removeAccents(string1.toLowerCase());
+            string2 = removeAccents(string2.toLowerCase());
+        }
+        if (string1.equals(string2))
+            return 1.0;
+        double similarity = 0.0;
+        Option<Object> similarityObject = RatcliffObershelpMetric.compare(string1, string2);
+        if (similarityObject.isDefined()) {
+            similarity = (Double) similarityObject.get();
+        }
+        return similarity;
+    }
+
     public final static String removeAccents(String input) {
         if (input == null)
             return null;

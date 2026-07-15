@@ -412,6 +412,9 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
         String lastTag = null;
         boolean refOpen = false;
         for (Pair<String, String> l : labeled) {
+            if (l == null || l.getLeft() == null || l.getRight() == null) {
+                continue;
+            }
             String tok = l.getLeft();
             String label = l.getRight();
 

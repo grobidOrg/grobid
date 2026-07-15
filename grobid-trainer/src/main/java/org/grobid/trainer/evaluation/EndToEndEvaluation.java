@@ -173,6 +173,8 @@ public class EndToEndEvaluation {
         int nbFile = 0;
         int totalExpectedInstances = 0;
         int totalObservedInstances = 0;
+        // number of articles that contributed at least one scoreable author to affiliation_linked
+        int articlesWithLinkedAffiliation = 0;
         int totalCorrectInstancesStrict = 0;
         int totalCorrectInstancesSoft = 0;
         int totalCorrectInstancesLevenshtein = 0;
@@ -211,6 +213,7 @@ public class EndToEndEvaluation {
             nbFile += other.nbFile;
             totalExpectedInstances += other.totalExpectedInstances;
             totalObservedInstances += other.totalObservedInstances;
+            articlesWithLinkedAffiliation += other.articlesWithLinkedAffiliation;
             totalCorrectInstancesStrict += other.totalCorrectInstancesStrict;
             totalCorrectInstancesSoft += other.totalCorrectInstancesSoft;
             totalCorrectInstancesLevenshtein += other.totalCorrectInstancesLevenshtein;
@@ -1270,7 +1273,7 @@ public class EndToEndEvaluation {
                         // author and compares their *linked* affiliations. Accumulated under the
                         // dedicated label "affiliation_linked" on the four matching variants.
                         try {
-                            evaluateLinkedAffiliations(
+                            int linkedScoredAuthors = evaluateLinkedAffiliations(
                                     gold,
                                     tei,
                                     inputType,
@@ -1279,6 +1282,9 @@ public class EndToEndEvaluation {
                                     result.softStats,
                                     result.levenshteinStats,
                                     result.ratcliffObershelpStats);
+                            if (linkedScoredAuthors > 0) {
+                                result.articlesWithLinkedAffiliation++;
+                            }
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -1965,6 +1971,19 @@ public class EndToEndEvaluation {
         Stats ratcliffObershelpStats = mergedResult.ratcliffObershelpStats;
         Stats documentLevelStatementsRatioStat = mergedResult.documentLevelStatementsRatioStat;
         int totalExpectedInstances = mergedResult.totalExpectedInstances;
+        int articlesWithLinkedAffiliation = mergedResult.articlesWithLinkedAffiliation;
+
+        // Report affiliation_linked's support as the number of contributing articles (same unit as
+        // the other header fields), not its raw per-author-link count. P/R/F1 are unaffected.
+        if (sectionType == HEADER) {
+            Map<String, Long> affSupport = Collections.singletonMap(
+                    AFFILIATION_LINKED_LABEL,
+                    (long) articlesWithLinkedAffiliation);
+            strictStats.setSupportOverride(affSupport);
+            softStats.setSupportOverride(affSupport);
+            levenshteinStats.setSupportOverride(affSupport);
+            ratcliffObershelpStats.setSupportOverride(affSupport);
+        }
         int totalObservedInstances = mergedResult.totalObservedInstances;
         int totalCorrectInstancesStrict = mergedResult.totalCorrectInstancesStrict;
         int totalCorrectInstancesSoft = mergedResult.totalCorrectInstancesSoft;
@@ -2191,9 +2210,18 @@ public class EndToEndEvaluation {
         } else if (sectionType == this.HEADER) {
             String affiliationNote = "\nNote: the \"affiliation_linked\" field above is a "
                     + "linking-aware metric (each author is paired with its gold counterpart and "
-                    + "their attached affiliations compared). Only authors whose gold affiliation "
-                    + "link is explicit are scored; affiliations encoded purely positionally in the "
-                    + "gold are out of scope.\n";
+                    + "their attached affiliations compared). Its support column reports the number "
+                    + "of articles the metric is computed from (those with at least one explicit "
+                    + "gold affiliation link), while precision/recall/F1 are measured over the "
+                    + "individual author-affiliation links.\n"
+                    + "Only authors whose gold affiliation link is explicit are scored; "
+                    + "affiliations encoded purely positionally in the gold (no xref/@rid and no "
+                    + "nested aff) are out of scope, not counted as misses.\n"
+                    + "Ground truth: single-affiliation papers (exactly one <aff>) have been "
+                    + "completed by linking every author to that sole affiliation (~1,649 authors "
+                    + "across PMC, bioRxiv and PLOS). Still to be done: multi-affiliation papers "
+                    + "that encode the author-to-affiliation mapping only positionally, which "
+                    + "require the PDF superscripts to disambiguate.\n";
             report.append(affiliationNote);
             reportMD.append(affiliationNote);
 
@@ -2334,8 +2362,12 @@ public class EndToEndEvaluation {
      * or a nested {@code aff}, or a nested {@code affiliation} in pub2TEI gold) are scored. Gold
      * documents that encode affiliations purely positionally are out of scope (such authors are
      * skipped, not counted as missed). Collaboration "authors" are skipped.</p>
+     *
+     * @return the number of gold authors actually scored (those with an explicit, resolvable
+     *     affiliation link). A return value {@code > 0} means this article contributes to the
+     *     affiliation_linked metric; the caller uses it to count contributing articles.
      */
-    private void evaluateLinkedAffiliations(
+    private int evaluateLinkedAffiliations(
             Document gold,
             Document tei,
             String inputType,
@@ -2353,6 +2385,7 @@ public class EndToEndEvaluation {
         Stats[] allStats = {strictStats, softStats, levenshteinStats, ratcliffObershelpStats};
 
         boolean[] consumed = new boolean[grobidAuthors.size()];
+        int scoredAuthors = 0;
         for (AuthorAff goldAuthor : goldAuthors) {
             if (goldAuthor.surnameNorm.isEmpty()) {
                 // collaboration or otherwise unnamed contributor: out of scope
@@ -2376,6 +2409,7 @@ public class EndToEndEvaluation {
             for (int level = 0; level < allStats.length; level++) {
                 scoreAuthorAffiliations(goldAuthor.affs, grobidAffs, level, allStats[level]);
             }
+            scoredAuthors++;
         }
 
         // grobid authors that were never paired but still carry affiliation text:
@@ -2391,6 +2425,8 @@ public class EndToEndEvaluation {
                 }
             }
         }
+
+        return scoredAuthors;
     }
 
     /**

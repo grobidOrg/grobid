@@ -15,6 +15,8 @@
  */
 package org.grobid.trainer.evaluation;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -44,8 +46,24 @@ public final class Stats {
     private double cumulated_expected = 0;
     private int totalValidFields = 0;
 
+    // Optional per-label override for the *displayed* support (and the support column total).
+    // Does not affect precision/recall/F1, which stay computed from the underlying counts. Used
+    // so an add-on metric such as "affiliation_linked" can report its support as a number of
+    // articles - the same unit as the other header fields - rather than its raw per-link count.
+    private Map<String, Long> supportOverride = new HashMap<>();
+
     public Stats() {
         this.labelStats = new TreeMap<>();
+    }
+
+    /**
+     * Overrides the support value <em>displayed</em> for the given labels (and summed into the
+     * support column total). Precision, recall and F1 are unaffected. Intended for add-on metrics
+     * whose natural support unit differs from the plain fields (e.g. reporting article coverage
+     * for {@code affiliation_linked} instead of its per-link count).
+     */
+    public void setSupportOverride(Map<String, Long> overrides) {
+        this.supportOverride = (overrides == null) ? new HashMap<>() : new HashMap<>(overrides);
     }
 
     public Set<String> getLabels() {
@@ -346,7 +364,7 @@ public final class Stats {
 
             LabelStat labelStat = getLabelStat(label);
 
-            long support = labelStat.getSupport();
+            long support = supportOverride.getOrDefault(label, labelStat.getSupport());
             report.append(
                     String.format(
                             "%-20s %-12s %-12s %-12s %-12s %-7s\n",
@@ -400,7 +418,7 @@ public final class Stats {
             }
 
             LabelStat labelStat = getLabelStat(label);
-            long support = labelStat.getSupport();
+            long support = supportOverride.getOrDefault(label, labelStat.getSupport());
             report.append(
                     "| "
                             + label

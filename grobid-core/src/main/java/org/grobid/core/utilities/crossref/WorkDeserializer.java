@@ -19,6 +19,7 @@ import java.util.Iterator;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import org.apache.commons.lang3.StringUtils;
 
 import org.grobid.core.data.BiblioItem;
 import org.grobid.core.data.Date;
@@ -120,6 +121,15 @@ public class WorkDeserializer extends CrossrefDeserializer<BiblioItem> {
                     }
                     if (authorNode.get("ORCID") != null && !authorNode.get("ORCID").isMissingNode()) {
                         person.setORCID(authorNode.get("ORCID").asText());
+                    }
+                    // skip CrossRef author entries carrying no personal name, e.g. "name"-only
+                    // collaboration/group entries (ATLAS Collaboration, etc.). They would
+                    // otherwise become invalid null-named authors and inflate the author count,
+                    // which in turn defeats the position-based affiliation merge in
+                    // BiblioItem.correct (its list-size equality guard).
+                    if (StringUtils.isBlank(person.getFirstName())
+                            && StringUtils.isBlank(person.getLastName())) {
+                        continue;
                     }
                     // for cases like JM Smith and for case normalisation
                     person.normalizeName();
