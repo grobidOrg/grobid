@@ -28,6 +28,7 @@ import org.grobid.service.exceptions.mapper.GrobidExceptionMapper;
 import org.grobid.service.exceptions.mapper.GrobidExceptionsTranslationUtility;
 import org.grobid.service.exceptions.mapper.GrobidServiceExceptionMapper;
 import org.grobid.service.exceptions.mapper.WebApplicationExceptionMapper;
+import org.grobid.service.metrics.ApplicationMetrics;
 import org.grobid.service.process.GrobidRestProcessFiles;
 import org.grobid.service.process.GrobidRestProcessGeneric;
 import org.grobid.service.process.GrobidRestProcessString;
@@ -52,6 +53,13 @@ public class GrobidServiceModule extends DropwizardAwareModule<GrobidServiceConf
         bind(GrobidExceptionsTranslationUtility.class);
         bind(GrobidExceptionMapper.class);
         bind(WebApplicationExceptionMapper.class);
+    }
+
+    @Provides
+    protected ApplicationMetrics provideApplicationMetrics() {
+        // JVM-wide instance: its Prometheus collectors register into the global default registry
+        // exactly once, even when several injectors are created in the same JVM (as the tests do).
+        return ApplicationMetrics.defaultInstance();
     }
 
     @Provides

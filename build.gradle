@@ -455,6 +455,13 @@ project(":grobid-service") {
         implementation "io.prometheus:simpleclient_dropwizard:0.16.0"
         implementation "io.prometheus:simpleclient_servlet_jakarta:0.16.0"
         implementation "io.prometheus:simpleclient_hotspot:0.16.0"
+
+        // Push-based metrics export over OTLP (complements the pull-based Prometheus scrape
+        // endpoint): the Prometheus Java client's own OTLP exporter, fed through the simpleclient
+        // bridge so the exact series set of the scrape endpoint (application metrics + hotspot
+        // JVM/process exports) is pushed — no second instrumentation with the OpenTelemetry SDK.
+        implementation "io.prometheus:prometheus-metrics-exporter-opentelemetry:1.8.0"
+        implementation "io.prometheus:prometheus-metrics-simpleclient-bridge:1.8.0"
     }
 
     shadowJar {

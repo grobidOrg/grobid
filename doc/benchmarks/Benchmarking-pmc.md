@@ -42,13 +42,13 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 16.34     | 16.06     | 16.2      | 1911    |
-| affiliation_linked          | 0.49      | 0.48      | 0.49      | 1927    |
-| authors                     | 92.94     | 92.89     | 92.91     | 1941    |
+| affiliation_linked          | 0.53      | 0.53      | 0.53      | 1927    |
+| authors                     | 92.89     | 92.84     | 92.86     | 1941    |
 | first_author                | 96.7      | 96.65     | 96.68     | 1941    |
 | keywords                    | 63.19     | 61.09     | 62.12     | 1380    |
 | title                       | 84.4      | 84.1      | 84.25     | 1943    |
 |                             |           |           |           |         |
-| **all fields (micro avg.)** | **32.04** | **31.34** | **31.68** | 11043   |
+| **all fields (micro avg.)** | **31.4**  | **31.36** | **31.38** | 11043   |
 | all fields (macro avg.)     | 59.01     | 58.54     | 58.77     | 11043   |
 
 #### Soft Matching (ignoring punctuation, case and space characters mismatches)
@@ -58,14 +58,14 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 62.96     | 61.9      | 62.43     | 1911    |
-| affiliation_linked          | 54.17     | 52.46     | 53.3      | 1927    |
-| authors                     | 94.9      | 94.85     | 94.87     | 1941    |
+| affiliation_linked          | 54.02     | 54.31     | 54.17     | 1927    |
+| authors                     | 94.85     | 94.8      | 94.82     | 1941    |
 | first_author                | 97.16     | 97.11     | 97.14     | 1941    |
 | keywords                    | 71.14     | 68.77     | 69.93     | 1380    |
 | title                       | 92.05     | 91.71     | 91.88     | 1943    |
 |                             |           |           |           |         |
-| **all fields (micro avg.)** | **67.68** | **66.19** | **66.93** | 11043   |
-| all fields (macro avg.)     | 78.73     | 77.8      | 78.26     | 11043   |
+| **all fields (micro avg.)** | **67.31** | **67.23** | **67.27** | 11043   |
+| all fields (macro avg.)     | 78.7      | 78.1      | 78.39     | 11043   |
 
 #### Levenshtein Matching (Minimum Levenshtein distance at 0.8)
 
@@ -74,30 +74,30 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
 | abstract                    | 89.84     | 88.33     | 89.08     | 1911    |
-| affiliation_linked          | 56.59     | 54.8      | 55.68     | 1927    |
-| authors                     | 96.75     | 96.7      | 96.73     | 1941    |
+| affiliation_linked          | 56.53     | 56.84     | 56.68     | 1927    |
+| authors                     | 96.7      | 96.65     | 96.68     | 1941    |
 | first_author                | 97.37     | 97.32     | 97.35     | 1941    |
 | keywords                    | 84.71     | 81.88     | 83.27     | 1380    |
 | title                       | 98.24     | 97.89     | 98.07     | 1943    |
 |                             |           |           |           |         |
-| **all fields (micro avg.)** | **73.18** | **71.58** | **72.37** | 11043   |
-| all fields (macro avg.)     | 87.25     | 86.15     | 86.69     | 11043   |
+| **all fields (micro avg.)** | **72.8**  | **72.72** | **72.76** | 11043   |
+| all fields (macro avg.)     | 87.23     | 86.49     | 86.85     | 11043   |
 
 #### Ratcliff/Obershelp Matching (Minimum Ratcliff/Obershelp similarity at 0.95)
 
 **Field-level results**
 
-| label                       | precision | recall    | f1        | support |
-|-----------------------------|-----------|-----------|-----------|---------|
-| abstract                    | 85.74     | 84.3      | 85.01     | 1911    |
-| affiliation_linked          | 55.16     | 53.42     | 54.28     | 1927    |
-| authors                     | 95.82     | 95.78     | 95.8      | 1941    |
-| first_author                | 96.7      | 96.65     | 96.68     | 1941    |
-| keywords                    | 78.26     | 75.65     | 76.93     | 1380    |
-| title                       | 96.23     | 95.88     | 96.06     | 1943    |
-|                             |           |           |           |         |
-| **all fields (micro avg.)** | **71.25** | **69.68** | **70.46** | 11043   |
-| all fields (macro avg.)     | 84.65     | 83.61     | 84.13     | 11043   |
+| label                       | precision | recall    | f1       | support |
+|-----------------------------|-----------|-----------|----------|---------|
+| abstract                    | 85.74     | 84.3      | 85.01    | 1911    |
+| affiliation_linked          | 55.05     | 55.35     | 55.2     | 1927    |
+| authors                     | 95.77     | 95.72     | 95.75    | 1941    |
+| first_author                | 96.7      | 96.65     | 96.68    | 1941    |
+| keywords                    | 78.26     | 75.65     | 76.93    | 1380    |
+| title                       | 96.23     | 95.88     | 96.06    | 1943    |
+|                             |           |           |          |         |
+| **all fields (micro avg.)** | **70.84** | **70.76** | **70.8** | 11043   |
+| all fields (macro avg.)     | 84.63     | 83.93     | 84.27    | 11043   |
 
 Note: the "affiliation_linked" field above is a linking-aware metric (each author is paired with its gold counterpart
 and their attached affiliations compared). Its support column reports the number of articles the metric is computed
@@ -113,15 +113,15 @@ author-to-affiliation mapping only positionally, which require the PDF superscri
 
 ```
 Total expected instances: 	1943
-Total correct instances: 	205 (strict)
-Total correct instances: 	878 (soft)
-Total correct instances: 	1431 (Levenshtein)
-Total correct instances: 	1260 (ObservedRatcliffObershelp)
+Total correct instances: 	204 (strict)
+Total correct instances: 	877 (soft)
+Total correct instances: 	1430 (Levenshtein)
+Total correct instances: 	1259 (ObservedRatcliffObershelp)
 
-Instance-level recall:	10.55	(strict)
-Instance-level recall:	45.19	(soft)
-Instance-level recall:	73.65	(Levenshtein)
-Instance-level recall:	64.85	(RatcliffObershelp)
+Instance-level recall:	10.5	(strict)
+Instance-level recall:	45.14	(soft)
+Instance-level recall:	73.6	(Levenshtein)
+Instance-level recall:	64.8	(RatcliffObershelp)
 ```
 
 ## Citation metadata
@@ -303,5 +303,4 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 | **all fields (micro avg.)** | **0**     | **0**  | **0** | 0       |
 | all fields (macro avg.)     | 0         | 0      | 0     | 0       |
 
-Evaluation metrics produced in 158.976 seconds
-
+Evaluation metrics produced in 159.838 seconds

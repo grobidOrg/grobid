@@ -1,0 +1,66 @@
+// Grafana Alloy configuration for scraping GROBID and shipping metrics to Grafana Cloud.
+//
+// This file runs INSIDE the Hugging Face Space container, next to GROBID. It scrapes
+// GROBID's Prometheus endpoint on the admin connector (localhost:8071 — not exposed
+// publicly by the Space) and remote_writes the samples out to Grafana Cloud over HTTPS.
+//
+// All secrets/URLs come from environment variables so nothing sensitive lives in git.
+// On Hugging Face, set these under  Space → Settings → Variables and secrets:
+//   GRAFANA_CLOUD_PROM_URL   (variable) e.g. https://prometheus-prod-XX-...grafana.net/api/prom/push
+//   GRAFANA_CLOUD_PROM_USER  (variable) the numeric Prometheus instance / user id
+//   GRAFANA_CLOUD_API_KEY    (secret)   a Grafana Cloud access policy token with metrics:write
+//   GROBID_INSTANCE          (variable) a label to tell your Spaces apart, e.g. grobid-crf
+
+// ---------------------------------------------------------------------------------------
+// 1. Scrape GROBID's in-container Prometheus endpoint.
+// ---------------------------------------------------------------------------------------
+prometheus.scrape "grobid" {
+	targets = [
+		{
+			__address__ = "localhost:8071",
+			// "job" and "instance" become labels on every series in Grafana Cloud.
+			job      = "grobid",
+			instance = sys.env("GROBID_INSTANCE"),
+		},
+	]
+	metrics_path    = "/metrics/prometheus"
+	scrape_interval = "30s"
+
+	// Send scraped samples through the relabel filter (cost control) before remote_write.
+	forward_to = [prometheus.relabel.filter.receiver]
+}
+
+// ---------------------------------------------------------------------------------------
+// 2. Keep the metric set lean before shipping (Grafana Cloud bills on active series).
+//    GROBID's endpoint emits the app counters + full JVM/process hotspot exports, which
+//    is a lot of series you may not care about. This stage decides what actually ships.
+// ---------------------------------------------------------------------------------------
+prometheus.relabel "filter" {
+	forward_to = [prometheus.remote_write.grafana_cloud.receiver]
+
+	// No rules: ship every scraped series as-is. This is the simplest setup; add rule { }
+	// blocks here to trim the metric set if Grafana Cloud active-series billing becomes a concern.
+	//
+	// Example — keep only GROBID app metrics + core JVM health, drop the rest:
+	//
+	// rule {
+	//   source_labels = ["__name__"]
+	//   regex         = "grobid_.*|jvm_memory_.*|jvm_gc_.*|process_cpu_.*|up"
+	//   action        = "keep"
+	// }
+}
+
+// ---------------------------------------------------------------------------------------
+// 3. Push to Grafana Cloud's hosted Prometheus (remote_write). Alloy buffers to a WAL on
+//    disk and retries, so brief network blips don't drop data.
+// ---------------------------------------------------------------------------------------
+prometheus.remote_write "grafana_cloud" {
+	endpoint {
+		url = sys.env("GRAFANA_CLOUD_PROM_URL")
+
+		basic_auth {
+			username = sys.env("GRAFANA_CLOUD_PROM_USER")
+			password = sys.env("GRAFANA_CLOUD_API_KEY")
+		}
+	}
+}

@@ -43,6 +43,48 @@ public class TextUtilitiesTest extends EngineTest {
     }
 
     @Test
+    public void getRatcliffObershelpSimilarity_identicalStrings_isOne() {
+        assertThat(TextUtilities.getRatcliffObershelpSimilarity("Smith", "Smith", false), is(1.0));
+    }
+
+    @Test
+    public void getRatcliffObershelpSimilarity_caseInsensitiveByDefault_isOne() {
+        assertThat(TextUtilities.getRatcliffObershelpSimilarity("SMITH", "smith", false), is(1.0));
+    }
+
+    @Test
+    public void getRatcliffObershelpSimilarity_accentFolded_isOne() {
+        assertThat(TextUtilities.getRatcliffObershelpSimilarity("Martín", "Martin", false), is(1.0));
+        assertThat(TextUtilities.getRatcliffObershelpSimilarity("García", "Garcia", false), is(1.0));
+    }
+
+    @Test
+    public void getRatcliffObershelpSimilarity_blankOrNull_isZero() {
+        assertThat(TextUtilities.getRatcliffObershelpSimilarity("", "Smith", false), is(0.0));
+        assertThat(TextUtilities.getRatcliffObershelpSimilarity("   ", "Smith", false), is(0.0));
+        assertThat(TextUtilities.getRatcliffObershelpSimilarity(null, "Smith", false), is(0.0));
+        assertThat(TextUtilities.getRatcliffObershelpSimilarity("Smith", null, false), is(0.0));
+        assertThat(TextUtilities.getRatcliffObershelpSimilarity(null, null, false), is(0.0));
+    }
+
+    @Test
+    public void getRatcliffObershelpSimilarity_differentSurnames_belowThreshold() {
+        assertTrue(TextUtilities.getRatcliffObershelpSimilarity("Smith", "Johnson", false) < 0.90);
+    }
+
+    @Test
+    public void getRatcliffObershelpSimilarity_strayMarkerAndTokenizationNoise_aboveThreshold() {
+        assertTrue(
+                TextUtilities.getRatcliffObershelpSimilarity("Enguita-Marruedo $", "Enguita-Marruedo", false) >= 0.90);
+        assertTrue(TextUtilities.getRatcliffObershelpSimilarity("Martín-Ruiz", "Martin Ruiz", false) >= 0.90);
+    }
+
+    @Test
+    public void getRatcliffObershelpSimilarity_caseDependent_doesNotFoldCase() {
+        assertTrue(TextUtilities.getRatcliffObershelpSimilarity("SMITH", "smith", true) < 1.0);
+    }
+
+    @Test
     public void testHTMLEncode_partial() throws Exception {
         String test = "Dé&amps, C &";
         String result = TextUtilities.HTMLEncode(test);

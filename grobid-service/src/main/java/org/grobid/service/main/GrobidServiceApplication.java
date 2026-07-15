@@ -37,6 +37,8 @@ import org.slf4j.LoggerFactory;
 import ru.vyarus.dropwizard.guice.GuiceBundle;
 
 import org.grobid.service.GrobidServiceConfiguration;
+import org.grobid.service.metrics.ApplicationMetrics;
+import org.grobid.service.metrics.OtlpMetricsReporter;
 import org.grobid.service.modules.GrobidServiceModule;
 import org.grobid.service.resources.HealthResource;
 
@@ -44,6 +46,9 @@ public final class GrobidServiceApplication extends Application<GrobidServiceCon
     private static final Logger LOGGER = LoggerFactory.getLogger(GrobidServiceApplication.class);
     private static final String[] DEFAULT_CONF_LOCATIONS = {"grobid-home/config/grobid.yaml"};
     private static final String RESOURCES = "/api";
+
+    // Retained so run() can pull Guice singletons (e.g. the shared ApplicationMetrics) from the injector.
+    private GuiceBundle guiceBundle;
 
     // ========== Application ==========
 
@@ -54,7 +59,7 @@ public final class GrobidServiceApplication extends Application<GrobidServiceCon
 
     @Override
     public void initialize(Bootstrap<GrobidServiceConfiguration> bootstrap) {
-        GuiceBundle guiceBundle = GuiceBundle.builder()
+        guiceBundle = GuiceBundle.builder()
                 .modules(getGuiceModules())
                 .build();
         bootstrap.addBundle(guiceBundle);
@@ -92,10 +97,22 @@ public final class GrobidServiceApplication extends Application<GrobidServiceCon
         DefaultExports.initialize();
         ServletRegistration.Dynamic registration = environment.admin().addServlet("Prometheus", new MetricsServlet());
         registration.addMapping("/metrics/prometheus");
+
+        // Shared holder for the application/business metrics (documents, latency, errors, in-flight,
+        // size). Recorded once into the default Prometheus registry, which serves both delivery
+        // paths: the Prometheus servlet above and the OTLP push below.
+        ApplicationMetrics applicationMetrics = guiceBundle.getInjector().getInstance(ApplicationMetrics.class);
+
+        // Push-based metrics export over OTLP (disabled by default; see grobid.otlp in grobid.yaml).
+        // Bridges the default Prometheus registry to an OTLP exporter, so the pushed series are the
+        // same ones the scrape endpoint serves. Managed by the Dropwizard lifecycle for clean shutdown.
+        environment.lifecycle().manage(new OtlpMetricsReporter(configuration.getGrobid().getOtlp()));
+
         environment.jersey().setUrlPattern(RESOURCES + "/*");
 
-        // Application-level Prometheus counters for processed files and errors (multipart uploads).
-        environment.jersey().register(new GrobidMetricsFilter());
+        // Instruments every request (count/latency/size/in-flight + upload counters) for both metrics
+        // paths and writes a structured access log carrying client provenance.
+        environment.jersey().register(new GrobidMetricsFilter(applicationMetrics));
 
         // Enable CORS via Jetty's CrossOriginHandler (replaces the removed-for-deprecation
         // org.eclipse.jetty.ee10.servlets.CrossOriginFilter). The handler is inserted above the

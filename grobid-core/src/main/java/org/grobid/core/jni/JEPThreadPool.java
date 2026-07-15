@@ -19,6 +19,7 @@ import java.io.*;
 import java.nio.file.Path;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import jep.Jep;
 import jep.JepConfig;
@@ -43,6 +44,7 @@ public class JEPThreadPool {
 
     private final ExecutorService executor;
     private final ConcurrentMap<Long, Jep> jepInstances;
+    private final AtomicBoolean shutdownStarted = new AtomicBoolean(false);
 
     private static volatile JEPThreadPool instance;
 
@@ -67,7 +69,12 @@ public class JEPThreadPool {
     private JEPThreadPool() {
         // creating a pool of POOL_SIZE threads
         //executor = Executors.newFixedThreadPool(POOL_SIZE);
-        executor = Executors.newSingleThreadExecutor();
+        // daemon thread so that a wedged Python interpreter can never prevent the JVM from exiting
+        executor = Executors.newSingleThreadExecutor(r -> {
+            Thread t = new Thread(r, "jep-pool-worker");
+            t.setDaemon(true);
+            return t;
+        });
         // each of these threads is associated to a JEP instance
         jepInstances = new ConcurrentHashMap<>();
 
@@ -229,17 +236,32 @@ public class JEPThreadPool {
     /**
      * Close all JEP instances and shutdown the executor.
      * This should be called when the application is shutting down.
+     * JEP only allows a Python interpreter to be closed by the thread that
+     * created it, so the close is delegated to the executor worker thread;
+     * not synchronized, otherwise the worker could deadlock against the
+     * caller on the singleton monitor.
      */
-    public synchronized void shutdown() {
+    public void shutdown() {
+        if (!shutdownStarted.compareAndSet(false, true)) {
+            return;
+        }
         LOGGER.info("Shutting down JEPThreadPool");
-        // Close all JEP instances
-        for (Map.Entry<Long, Jep> entry : jepInstances.entrySet()) {
-            try {
-                LOGGER.info("Closing JEP instance for thread " + entry.getKey());
-                entry.getValue().close();
-            } catch (JepException e) {
-                LOGGER.error("Failed to close JEP instance for thread " + entry.getKey(), e);
-            }
+        try {
+            Future<?> closeTask = executor.submit(this::closeCurrentJEPInstance);
+            closeTask.get(10, TimeUnit.SECONDS);
+        } catch (RejectedExecutionException | ExecutionException | TimeoutException e) {
+            LOGGER.warn("Could not close JEP instance on its owning thread", e);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+
+        // remaining instances belong to dead or replaced threads and cannot be
+        // closed by any other thread without corrupting the Python thread state
+        for (Long threadId : jepInstances.keySet()) {
+            LOGGER.warn(
+                    "Abandoning JEP instance of thread "
+                            + threadId
+                            + ", it can only be closed by its creating thread");
         }
         jepInstances.clear();
 
@@ -251,6 +273,7 @@ public class JEPThreadPool {
             }
         } catch (InterruptedException e) {
             executor.shutdownNow();
+            Thread.currentThread().interrupt();
         }
     }
 }

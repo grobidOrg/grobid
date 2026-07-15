@@ -59,7 +59,7 @@ START_PWD="$(pwd)"
 
 # determine the script dir and repository root (repo root = parent of grobid-home)
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
-REPO_ROOT="$(cd "${SCRIPT_DIR}/.." >/dev/null 2>&1 && pwd)"
+REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." >/dev/null 2>&1 && pwd)"
 # default absolute report source path (repo-root based)
 REPORT_SRC_DEFAULT="${REPO_ROOT}/grobid-home/tmp/report.md"
 # also consider start-pwd rooted path when gradle output differs by working dir
@@ -190,6 +190,8 @@ else
 fi
 
 overall_status=0
+# per-dataset outcomes: "<name>|OK" or "<name>|FAILED|<reason>|<log_path>"
+results=( )
 
 # iterate over matching subdirectories (non-recursive)
 shopt_cmd=""
@@ -209,12 +211,17 @@ esac
 # Build an array of dataset directories matching the pattern
 cd "${EVAL_ROOT}" || { echo "Failed to cd into ${EVAL_ROOT}" >&2; exit 2; }
 
-# Expand pattern safely
+# Expand pattern safely; keep only directories that look like datasets (contain PDFs)
 datasets=( )
 for entry in ${PATTERN}; do
-  if [ -d "${entry}" ]; then
-    datasets+=("${EVAL_ROOT}/${entry}")
+  if [ ! -d "${entry}" ]; then
+    continue
   fi
+  if [ -z "$(find "${EVAL_ROOT}/${entry}" -maxdepth 2 -iname '*.pdf' -print -quit 2>/dev/null)" ]; then
+    echo "Skipping ${entry}: no PDFs found, not a dataset"
+    continue
+  fi
+  datasets+=("${EVAL_ROOT}/${entry}")
 done
 
 if [ ${#datasets[@]} -eq 0 ]; then
@@ -237,12 +244,17 @@ for ds in "${datasets[@]}"; do
     echo "DRY: ${cmd[*]}"
     echo "DRY: would write log to ${log_dst}"
   else
+    # remove any stale report so a leftover from a previous dataset/run can
+    # never be moved as if it were this dataset's result
+    rm -f "${REPORT_SRC_DEFAULT}" "${REPORT_SRC_STARTPWD}"
+
     # execute gradlew from the directory where the script was invoked (START_PWD)
     (cd "${START_PWD}" && "${cmd[@]}") | tee "${log_dst}"
     exit_code=${PIPESTATUS[0]}
 
     if [ $exit_code -ne 0 ]; then
-      echo "Gradle jatsEval failed for ${ds_basename} with exit code ${exit_code}" >&2
+      echo "Gradle jatsEval failed for ${ds_basename} with exit code ${exit_code}, see ${log_dst}" >&2
+      results+=("${ds_basename}|FAILED|gradle exit ${exit_code}|${log_dst}")
       overall_status=1
       # continue with other datasets
     else
@@ -256,10 +268,17 @@ for ds in "${datasets[@]}"; do
       fi
 
       if [ -f "${report_src}" ]; then
-        mv "${report_src}" "${report_dst}" || { echo "Failed to move report to ${report_dst}" >&2; overall_status=1; }
-        echo "Report saved to ${report_dst}"
+        if mv "${report_src}" "${report_dst}"; then
+          echo "Report saved to ${report_dst}"
+          results+=("${ds_basename}|OK")
+        else
+          echo "Failed to move report to ${report_dst}" >&2
+          results+=("${ds_basename}|FAILED|could not move report|${log_dst}")
+          overall_status=1
+        fi
       else
         echo "Warning: report not found at ${REPORT_SRC_DEFAULT} or ${REPORT_SRC_STARTPWD} after evaluation of ${ds_basename}" >&2
+        results+=("${ds_basename}|FAILED|report not found after successful build|${log_dst}")
         overall_status=1
       fi
     fi
@@ -273,10 +292,30 @@ if [ ${DRY_RUN} -eq 1 ]; then
   exit 0
 fi
 
+echo "===== Summary ====="
+for result in "${results[@]}"; do
+  ds_name="${result%%|*}"
+  rest="${result#*|}"
+  status="${rest%%|*}"
+  if [ "${status}" = "OK" ]; then
+    printf '%-30s : OK\n' "${ds_name}"
+  else
+    reason_and_log="${rest#*|}"
+    reason="${reason_and_log%%|*}"
+    log_path="${reason_and_log#*|}"
+    printf '%-30s : FAILED (%s) — see %s\n' "${ds_name}" "${reason}" "${log_path}"
+  fi
+done
+
 if [ ${overall_status} -eq 0 ]; then
   echo "All evaluations completed successfully."
 else
-  echo "One or more evaluations failed. Check output above." >&2
+  echo "One or more evaluations failed:" >&2
+  for result in "${results[@]}"; do
+    case "${result}" in
+      *"|FAILED|"*) echo "  ${result%%|*}" >&2 ;;
+    esac
+  done
 fi
 
 exit ${overall_status}
