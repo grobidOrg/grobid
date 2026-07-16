@@ -1609,6 +1609,64 @@ public class TEIFormatter {
         return buffer;
     }
 
+    /**
+     * Result of matching the section heads of a text piece against the PDF outline. Depths are
+     * keyed by cluster identity (not head text, which can repeat across a document).
+     */
+    static class SectionDepthInfo {
+        final Map<TaggingTokenCluster, Integer> depths;
+        final int minDepth;
+        // true when outline-based head structuring should be applied to this text piece
+        final boolean active;
+
+        SectionDepthInfo(Map<TaggingTokenCluster, Integer> depths, int minDepth, boolean active) {
+            this.depths = depths;
+            this.minDepth = minDepth;
+            this.active = active;
+        }
+    }
+
+    /**
+     * Match the SECTION clusters of a text piece against the document outline and record the outline
+     * depth of each matched head. Outline structuring is only activated when the piece contains at
+     * least one pair of adjacent section heads (evidence of a head/sub-head hierarchy) and at least
+     * one head could be located in the outline.
+     */
+    static SectionDepthInfo computeSectionDepths(List<TaggingTokenCluster> clusters, DocumentNode outlineRoot) {
+        Map<TaggingTokenCluster, Integer> depths = new IdentityHashMap<>();
+        int minDepth = Integer.MAX_VALUE;
+
+        boolean hasAdjacentSectionHeads = false;
+        TaggingLabel previousLabel = null;
+        for (TaggingTokenCluster cluster : clusters) {
+            if (cluster == null) {
+                continue;
+            }
+            TaggingLabel clusterLabel = cluster.getTaggingLabel();
+            if (TaggingLabels.SECTION.equals(clusterLabel) && TaggingLabels.SECTION.equals(previousLabel)) {
+                hasAdjacentSectionHeads = true;
+            }
+            previousLabel = clusterLabel;
+        }
+
+        if (hasAdjacentSectionHeads && outlineRoot != null) {
+            for (TaggingTokenCluster cluster : clusters) {
+                if (cluster == null || !TaggingLabels.SECTION.equals(cluster.getTaggingLabel())) {
+                    continue;
+                }
+                String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(cluster.concatTokens());
+                int depth = DocumentNode.findNodeDepth(outlineRoot, clusterContent, 0);
+                if (depth > 0) {
+                    depths.put(cluster, depth);
+                    minDepth = Math.min(minDepth, depth);
+                }
+            }
+        }
+
+        boolean active = hasAdjacentSectionHeads && !depths.isEmpty();
+        return new SectionDepthInfo(depths, minDepth, active);
+    }
+
     public StringBuilder toTEITextPiece(
             StringBuilder buffer,
             String result,
@@ -1638,6 +1696,12 @@ public class TEIFormatter {
 
         List<Element> divResults = new ArrayList<>();
 
+        // When the PDF provides an outline (table of content) and the section heads form a
+        // hierarchy (i.e. some heads are sub-heads of others), we use the outline to keep sub-heads
+        // inside their parent section's <div> instead of opening a new (empty) <div> per head.
+        SectionDepthInfo sectionDepthInfo = computeSectionDepths(clusters, doc.getOutlineRoot());
+        boolean useOutlineStructuring = sectionDepthInfo.active;
+
         Element curDiv = teiElement("div");
         if (config.isGenerateTeiIds()) {
             String divID = KeyGen.getKey().substring(0, 7);
@@ -1657,7 +1721,16 @@ public class TEIFormatter {
             Engine.getCntManager().i(clusterLabel);
             if (clusterLabel.equals(TaggingLabels.SECTION)) {
                 String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(cluster.concatTokens());
-                curDiv = teiElement("div");
+                // A new <div> opens at outline-confirmed main-level heads (depth == minDepth) and,
+                // as a safety fallback, at heads not found in the outline. Sub-heads (deeper in the
+                // outline) append their <head> into the current div, so a main head no longer ends
+                // up alone in an empty container. When outline structuring is inactive this reduces
+                // to the legacy behavior: one div per head.
+                Integer depth = sectionDepthInfo.depths.get(cluster);
+                boolean openNewDiv = !useOutlineStructuring || depth == null || depth == sectionDepthInfo.minDepth;
+                if (openNewDiv) {
+                    curDiv = teiElement("div");
+                }
                 Element head = teiElement("head");
                 // section numbers
                 org.grobid.core.utilities.Pair<String, String> numb = getSectionNumber(clusterContent);
@@ -1681,7 +1754,9 @@ public class TEIFormatter {
                 }
 
                 curDiv.appendChild(head);
-                divResults.add(curDiv);
+                if (openNewDiv) {
+                    divResults.add(curDiv);
+                }
             } else if (clusterLabel.equals(TaggingLabels.EQUATION) ||
                     clusterLabel.equals(TaggingLabels.EQUATION_LABEL)) {
                 // get starting position of the cluster
@@ -2088,10 +2163,15 @@ public class TEIFormatter {
             buffer.append(XmlBuilderUtils.toXml(curDiv));
 
         // we apply some overall cleaning and simplification
-        buffer = TextUtilities.replaceAll(
-                buffer,
-                "</head><head",
-                "</head>\n\t\t\t</div>\n\t\t\t<div>\n\t\t\t\t<head");
+        if (!useOutlineStructuring) {
+            // Legacy safety net: force consecutive heads into separate divs. Skipped when outline
+            // structuring is active (there, consecutive heads are the intended sub-head grouping),
+            // and scoped to the region this call appended: the buffer is shared across body/annex
+            // calls, so a full-buffer replace here would re-split an already-structured body.
+            String region = buffer.substring(startPosition);
+            region = region.replace("</head><head", "</head>\n\t\t\t</div>\n\t\t\t<div>\n\t\t\t\t<head");
+            buffer.replace(startPosition, buffer.length(), region);
+        }
         buffer = TextUtilities.replaceAll(buffer, "</p>\t\t\t\t<p>", " ");
 
         //TODO: work on reconnection

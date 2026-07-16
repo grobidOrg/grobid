@@ -32,7 +32,11 @@ import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Figure;
 import org.grobid.core.data.Note;
 import org.grobid.core.data.Table;
+import org.grobid.core.document.TEIFormatter.SectionDepthInfo;
+import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.tokenization.LabeledTokensContainer;
+import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LayoutTokensUtil;
 
@@ -421,6 +425,93 @@ public class TEIFormatterTest {
         assertThat(nodes.get(3).toXML(), is("&amp;"));
         assertThat(nodes.get(4).toXML(), is(""));
         assertThat(nodes.get(5).toXML(), is(" "));
+    }
+
+    private static TaggingTokenCluster sectionCluster(String text) {
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(text);
+        TaggingTokenCluster cluster = new TaggingTokenCluster(TaggingLabels.SECTION);
+        cluster.addLabeledTokensContainer(
+                new LabeledTokensContainer(tokens, text, TaggingLabels.SECTION, true));
+        return cluster;
+    }
+
+    private static TaggingTokenCluster paragraphCluster(String text) {
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(text);
+        TaggingTokenCluster cluster = new TaggingTokenCluster(TaggingLabels.PARAGRAPH);
+        cluster.addLabeledTokensContainer(
+                new LabeledTokensContainer(tokens, text, TaggingLabels.PARAGRAPH, true));
+        return cluster;
+    }
+
+    // outline: root -> title -> "2 Methods" -> "2.1 Data"
+    private static DocumentNode buildOutline() {
+        DocumentNode root = new DocumentNode();
+        DocumentNode title = new DocumentNode("Some Article Title", null);
+        DocumentNode methods = new DocumentNode("2 Methods", null);
+        DocumentNode data = new DocumentNode("2.1 Data", null);
+        root.addChild(title);
+        title.addChild(methods);
+        methods.addChild(data);
+        return root;
+    }
+
+    @Test
+    public void testComputeSectionDepths_inactiveWithoutAdjacentHeads() {
+        TaggingTokenCluster methods = sectionCluster("2 Methods");
+        TaggingTokenCluster para = paragraphCluster("Some body text.");
+        TaggingTokenCluster data = sectionCluster("2.1 Data");
+
+        SectionDepthInfo info = TEIFormatter.computeSectionDepths(
+                List.of(methods, para, data),
+                buildOutline());
+
+        // no two section heads are adjacent, so the mechanism stays off
+        assertThat(info.active, is(false));
+    }
+
+    @Test
+    public void testComputeSectionDepths_inactiveWithoutOutline() {
+        TaggingTokenCluster methods = sectionCluster("2 Methods");
+        TaggingTokenCluster data = sectionCluster("2.1 Data");
+
+        SectionDepthInfo info = TEIFormatter.computeSectionDepths(List.of(methods, data), null);
+
+        assertThat(info.active, is(false));
+    }
+
+    @Test
+    public void testComputeSectionDepths_mainHeadOpensDivSubHeadDoesNot() {
+        TaggingTokenCluster methods = sectionCluster("2 Methods");
+        TaggingTokenCluster data = sectionCluster("2.1 Data");
+        TaggingTokenCluster para = paragraphCluster("Body of the data section.");
+
+        SectionDepthInfo info = TEIFormatter.computeSectionDepths(
+                List.of(methods, data, para),
+                buildOutline());
+
+        assertThat(info.active, is(true));
+        assertThat(info.minDepth, is(2));
+        // main head is at the minimum matched depth -> opens a new div
+        assertThat(info.depths.get(methods), is(2));
+        assertThat(info.depths.get(methods) == info.minDepth, is(true));
+        // sub head is deeper -> stays inside the current div
+        assertThat(info.depths.get(data), is(3));
+        assertThat(info.depths.get(data) == info.minDepth, is(false));
+    }
+
+    @Test
+    public void testComputeSectionDepths_unmatchedHeadNotRecorded() {
+        TaggingTokenCluster methods = sectionCluster("2 Methods");
+        TaggingTokenCluster data = sectionCluster("2.1 Data");
+        // a head that does not exist in the outline: must not be recorded (falls back to a new div)
+        TaggingTokenCluster unknown = sectionCluster("Appendix Z Nonexistent");
+
+        SectionDepthInfo info = TEIFormatter.computeSectionDepths(
+                List.of(methods, data, unknown),
+                buildOutline());
+
+        assertThat(info.active, is(true));
+        assertThat(info.depths.containsKey(unknown), is(false));
     }
 
 }
