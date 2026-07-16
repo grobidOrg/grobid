@@ -712,13 +712,11 @@ public class Segmentation extends AbstractParser {
      * @param inputFile    input file
      * @param pathFullText path to fulltext
      * @param pathTEI      path to TEI
-     * @param id           id
      */
     public void createTrainingSegmentation(
             String inputFile,
             String pathFullText,
-            String pathTEI,
-            int id) {
+            String pathTEI) {
         DocumentSource documentSource = null;
         try {
             File file = new File(inputFile);
@@ -743,25 +741,17 @@ public class Segmentation extends AbstractParser {
             List<LayoutToken> tokenizations = doc.getTokenizations();
 
             // we write the full text untagged (but featurized)
-            String outPathFulltext = pathFullText
-                    + File.separator
-                    +
-                    baseName
-                    + ".training.segmentation";
-            Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false), "UTF-8");
-            writer.write(fulltext + "\n");
-            writer.close();
+            String outPathFulltext = pathFullText + File.separator + baseName + ".training.segmentation";
+            try (Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false), "UTF-8")) {
+                writer.write(fulltext + "\n");
+            }
 
             // also write the raw text as seen before segmentation
             StringBuffer rawtxt = new StringBuffer();
             for (LayoutToken txtline : tokenizations) {
                 rawtxt.append(txtline.getText());
             }
-            String outPathRawtext = pathFullText
-                    + File.separator
-                    +
-                    baseName
-                    + ".training.segmentation.rawtxt";
+            String outPathRawtext = pathFullText + File.separator + baseName + ".training.segmentation.rawtxt";
             FileUtils.writeStringToFile(new File(outPathRawtext), rawtxt.toString(), "UTF-8");
 
             if (isNotBlank(fulltext)) {
@@ -774,23 +764,18 @@ public class Segmentation extends AbstractParser {
                 String lang = detectLanguageOrDefault(rawtxt.toString());
 
                 // write the TEI file to reflect the exact layout of the text as extracted from the pdf
-                writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI
-                        +
-                        File.separator
-                        +
-                        baseName
-                        + ".training.segmentation.tei.xml"), false), "UTF-8");
-                writer.write(
-                        "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
-                                + baseName
-                                +
-                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
-                                + lang
-                                + "\">\n");
+                File teiFile = new File(pathTEI + File.separator + baseName + ".training.segmentation.tei.xml");
+                try (Writer writer = new OutputStreamWriter(new FileOutputStream(teiFile, false), "UTF-8")) {
+                    writer.write(
+                            "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
+                                    + baseName
+                                    + "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
+                                    + lang
+                                    + "\">\n");
 
-                writer.write(bufferFulltext.toString());
-                writer.write("\n\t</text>\n</tei>\n");
-                writer.close();
+                    writer.write(bufferFulltext.toString());
+                    writer.write("\n\t</text>\n</tei>\n");
+                }
             }
 
         } catch (Exception e) {
@@ -830,13 +815,11 @@ public class Segmentation extends AbstractParser {
      * @param inputFile    input file
      * @param pathFullText path to fulltext
      * @param pathTEI      path to TEI
-     * @param id           id
      */
     public void createBlankTrainingData(
             File file,
             String pathFullText,
-            String pathTEI,
-            int id) {
+            String pathTEI) {
         DocumentSource documentSource = null;
         try {
             //File file = new File(inputFile);
@@ -861,14 +844,10 @@ public class Segmentation extends AbstractParser {
             List<LayoutToken> tokenizations = doc.getTokenizations();
 
             // we write the full text untagged (but featurized)
-            String outPathFulltext = pathFullText
-                    + File.separator
-                    +
-                    baseName
-                    + ".training.blank";
-            Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false), "UTF-8");
-            writer.write(fulltext + "\n");
-            writer.close();
+            String outPathFulltext = pathFullText + File.separator + baseName + ".training.blank";
+            try (Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false), "UTF-8")) {
+                writer.write(fulltext + "\n");
+            }
 
             // also write the raw text as seen before segmentation
             StringBuffer rawtxt = new StringBuffer();
@@ -882,23 +861,18 @@ public class Segmentation extends AbstractParser {
                 String lang = detectLanguageOrDefault(fulltext);
 
                 // write the TEI file to reflect the exact layout of the text as extracted from the pdf
-                writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI
-                        +
-                        File.separator
-                        +
-                        baseName
-                        + ".training.blank.tei.xml"), false), "UTF-8");
-                writer.write(
-                        "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
-                                + baseName
-                                +
-                                "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
-                                + lang
-                                + "\">\n");
+                File teiFile = new File(pathTEI + File.separator + baseName + ".training.blank.tei.xml");
+                try (Writer writer = new OutputStreamWriter(new FileOutputStream(teiFile, false), "UTF-8")) {
+                    writer.write(
+                            "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
+                                    + baseName
+                                    + "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
+                                    + lang
+                                    + "\">\n");
 
-                writer.write(fulltext);
-                writer.write("\n\t</text>\n</tei>\n");
-                writer.close();
+                    writer.write(fulltext);
+                    writer.write("\n\t</text>\n</tei>\n");
+                }
             }
 
         } catch (Exception e) {

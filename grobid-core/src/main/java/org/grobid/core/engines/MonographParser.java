@@ -657,13 +657,11 @@ public class MonographParser extends AbstractParser {
      * @param inputFile input PDF file
      * @param pathFullText path to raw monograph featured sequence
      * @param pathTEI path to TEI
-     * @param id id
      */
     public Document createTrainingFromPDF(
             File inputFile,
             String pathRaw,
-            String pathTEI,
-            int id) {
+            String pathTEI) {
         if (tmpPath == null)
             throw new GrobidResourceException("Cannot process pdf file, because temp path is null.");
         if (!tmpPath.exists()) {
@@ -691,8 +689,8 @@ public class MonographParser extends AbstractParser {
                 throw new GrobidResourceException("Cannot train for monograph, because directory '" +
                        pathTEI + "' is not valid.");
             }*/
-            File outputRawFile = new File(pathRaw + "/" + baseName + ".monograph.raw");
-            /*if (!outputRawFile.exists()) {
+            /*File outputRawFile = new File(pathRaw + "/" + baseName + ".monograph.raw");
+            if (!outputRawFile.exists()) {
                 throw new GrobidResourceException("Cannot train for monograph, because directory '" +
                        pathRaw + "' is not valid.");
             }*/
@@ -740,9 +738,9 @@ public class MonographParser extends AbstractParser {
             builder.append("\t</text>\n</tei>");
 
             // write the TEI file
-            Writer writer = new OutputStreamWriter(new FileOutputStream(outputTEIFile, false), "UTF-8");
-            writer.write(builder.toString());
-            writer.close();
+            try (Writer writer = new OutputStreamWriter(new FileOutputStream(outputTEIFile, false), "UTF-8")) {
+                writer.write(builder.toString());
+            }
 
         } catch (Exception e) {
             e.printStackTrace();

@@ -162,6 +162,10 @@ public class HeaderTrainer extends AbstractTrainer {
                 File refDir2 = new File(headerPath);
                 String headerFile = null;
                 File[] refFiles2 = refDir2.listFiles();
+                if (refFiles2 == null) {
+                    System.out.println("raw header data path " + headerPath + " is not a valid directory");
+                    continue;
+                }
                 // the pdf name is taken from the xml:id of the TEI; getPDFName() strips the
                 // leading underscore added when sanitizing the id, but recent training data
                 // keeps that underscore in the feature file name, so both forms are checked

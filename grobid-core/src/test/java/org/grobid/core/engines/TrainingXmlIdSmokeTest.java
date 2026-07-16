@@ -26,6 +26,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.After;
 import org.junit.Test;
 
 import org.grobid.core.test.EngineTest;
@@ -41,10 +42,19 @@ public class TrainingXmlIdSmokeTest extends EngineTest {
     private static final Pattern NCNAME = Pattern.compile("[\\p{L}_][\\p{L}\\p{N}._-]*");
     private static final Pattern FILE_DESC_XML_ID = Pattern.compile("<fileDesc xml:id=\"([^\"]*)\"");
 
+    private File outDir;
+
+    @After
+    public void cleanUpOutputDirectory() throws Exception {
+        if (outDir != null) {
+            FileUtils.deleteDirectory(outDir);
+        }
+    }
+
     @Test
     public void createTraining_digitStartFileName_producesValidXmlIds() throws Exception {
         File source = new File("src/test/resources/sample2/sample.pdf");
-        File outDir = Files.createTempDirectory("training-xmlid-test").toFile();
+        outDir = Files.createTempDirectory("training-xmlid-test").toFile();
         File pdf = new File(outDir, "123 sample report.pdf");
         FileUtils.copyFile(source, pdf);
 
@@ -106,7 +116,5 @@ public class TrainingXmlIdSmokeTest extends EngineTest {
                     "raw header feature file missing for " + headerTei.getName(),
                     new File(outDir, expectedBaseName + ".training.header").exists());
         }
-
-        FileUtils.deleteDirectory(outDir);
     }
 }
