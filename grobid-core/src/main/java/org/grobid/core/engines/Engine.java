@@ -1185,8 +1185,11 @@ public class Engine implements Closeable {
             // we process all pdf files in the directory
             File[] refFiles = path.listFiles(new FilenameFilter() {
                 public boolean accept(File dir, String name) {
-                    System.out.println(name);
-                    return name.endsWith(".txt");
+                    boolean isTxt = name.toLowerCase().endsWith(".txt");
+                    if (isTxt) {
+                        System.out.println(name);
+                    }
+                    return isTxt;
                 }
             });
 
