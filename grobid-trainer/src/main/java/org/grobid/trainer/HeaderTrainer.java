@@ -167,8 +167,9 @@ public class HeaderTrainer extends AbstractTrainer {
                     continue;
                 }
                 // the pdf name is taken from the xml:id of the TEI; getPDFName() strips the
-                // leading underscore added when sanitizing the id, but recent training data
-                // keeps that underscore in the feature file name, so both forms are checked
+                // leading underscore added when sanitizing the id, matching the feature file
+                // name which does not carry it; the '_'-prefixed form is also checked as a
+                // fallback for training data generated when file names kept the prefix
                 List<String> pdfNames = new ArrayList<>();
                 if (parser.getPDFName() != null) {
                     pdfNames.add(parser.getPDFName());

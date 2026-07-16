@@ -80,10 +80,12 @@ public class TrainingXmlIdSmokeTest extends EngineTest {
         assertThat("no xml:id found in generated TEI files", checked, greaterThan(0));
         assertTrue(errors.toString(), errors.length() == 0);
 
-        // the training file names must carry the same sanitized base name as the xml:id values,
-        // starting with an underscore instead of the digit, so that the trainers can pair each
-        // TEI file with its raw feature file
-        String expectedBaseName = "_123_sample_report";
+        // the training file names carry the sanitized base name WITHOUT the leading
+        // underscore, which is only prepended to the xml:id values to make them valid
+        // NCNames; the trainers pair a TEI file with its raw feature file by stripping
+        // the leading underscore from the xml:id
+        String expectedBaseName = "123_sample_report";
+        String expectedXmlId = "_123_sample_report";
         File[] trainingFiles = outDir.listFiles((dir, name) -> name.contains(".training"));
         assertThat("no training files generated", trainingFiles.length, greaterThan(0));
         for (File trainingFile : trainingFiles) {
@@ -92,7 +94,7 @@ public class TrainingXmlIdSmokeTest extends EngineTest {
                     trainingFile.getName().startsWith(expectedBaseName + ".training"));
         }
 
-        // every fileDesc xml:id, whatever the model, must carry the document base name
+        // every fileDesc xml:id, whatever the model, must carry the document xml:id
         for (File tei : teiFiles) {
             String content = FileUtils.readFileToString(tei, StandardCharsets.UTF_8);
             Matcher m = FILE_DESC_XML_ID.matcher(content);
@@ -101,8 +103,8 @@ public class TrainingXmlIdSmokeTest extends EngineTest {
                         tei.getName()
                                 + ": fileDesc xml:id \""
                                 + m.group(1)
-                                + "\" does not match the document base name",
-                        m.group(1).equals(expectedBaseName));
+                                + "\" does not match the document xml:id",
+                        m.group(1).equals(expectedXmlId));
             }
         }
 
@@ -110,8 +112,8 @@ public class TrainingXmlIdSmokeTest extends EngineTest {
         if (headerTei.exists()) {
             String headerContent = FileUtils.readFileToString(headerTei, StandardCharsets.UTF_8);
             assertTrue(
-                    "header TEI xml:id does not match the training file base name",
-                    headerContent.contains("xml:id=\"" + expectedBaseName + "\""));
+                    "header TEI xml:id does not carry the expected NCName",
+                    headerContent.contains("xml:id=\"" + expectedXmlId + "\""));
             assertTrue(
                     "raw header feature file missing for " + headerTei.getName(),
                     new File(outDir, expectedBaseName + ".training.header").exists());

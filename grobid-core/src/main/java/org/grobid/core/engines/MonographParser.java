@@ -680,9 +680,10 @@ public class MonographParser extends AbstractParser {
                         inputFile.getAbsolutePath()
                         + "' does not exists.");
             }
-            // sanitized so that generated training file names never start with a digit,
-            // keeping them identical to the xml:id values used in the TEI
-            String baseName = TextUtilities.sanitizeXmlId(inputFile.getName().replaceAll("(?i)\\.pdf$", ""));
+            // the sanitized base name is used for the training file names, while the xml:id
+            // carries an additional leading '_' when required to be a valid NCName
+            String baseName = TextUtilities.sanitizeFileName(inputFile.getName().replaceAll("(?i)\\.pdf$", ""));
+            String xmlId = TextUtilities.sanitizeXmlId(baseName);
 
             File outputTEIFile = new File(pathTEI + "/" + baseName + ".training.monograph.tei.xml");
             /* // commented out because it was making a test of the existence of a file before it was even created
@@ -711,7 +712,7 @@ public class MonographParser extends AbstractParser {
             StringBuilder builder = new StringBuilder();
             builder.append(
                     "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
-                            + baseName
+                            + xmlId
                             +
                             "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
                             + lang

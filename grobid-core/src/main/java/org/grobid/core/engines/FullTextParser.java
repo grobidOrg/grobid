@@ -1440,10 +1440,12 @@ public class FullTextParser extends AbstractParser {
                 throw new GrobidResourceException("Cannot train for fulltext, because file '" +
                     inputFile.getAbsolutePath() + "' does not exists.");
             }
-            // the base name is used both for the training file names and the xml:id values in the
-            // generated TEI: it must be a valid NCName (in particular it cannot start with a digit)
-            // so that the trainers can map the TEI back to the corresponding raw feature files
-            String baseName = TextUtilities.sanitizeXmlId(inputFile.getName().replaceAll("(?i)\\.pdf$", ""));
+            // the sanitized base name is used for the training file names, while the xml:id values
+            // written in the generated TEI carry an additional leading '_' when the name starts
+            // with a character not allowed as first character of an NCName (e.g. a digit); the
+            // trainers map a TEI back to its raw feature files by stripping that leading '_'
+            String baseName = TextUtilities.sanitizeFileName(inputFile.getName().replaceAll("(?i)\\.pdf$", ""));
+            String xmlId = TextUtilities.sanitizeXmlId(baseName);
 
             // SEGMENTATION MODEL
             documentSource = DocumentSource.fromPdf(inputFile, -1, -1, false, true, true);
@@ -1483,7 +1485,7 @@ public class FullTextParser extends AbstractParser {
                 try (Writer writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                     File.separator +
                     baseName + ".training.segmentation.tei.xml"), false), StandardCharsets.UTF_8)) {
-                    writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + baseName +
+                    writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + xmlId +
                         "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"en\">\n");
 
                     writer.write(bufferFulltext.toString());
@@ -1557,7 +1559,7 @@ public class FullTextParser extends AbstractParser {
                         writerReference.write("<?xml version=\"1.0\" ?>\n<TEI xml:space=\"preserve\" xmlns=\"http://www.tei-c.org/ns/1.0\" " +
                             "xmlns:xlink=\"http://www.w3.org/1999/xlink\" " +
                             "\n xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n");
-                        writerReference.write("\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + baseName +
+                        writerReference.write("\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + xmlId +
                             "\"/>\n\t</teiHeader>\n\t<text>\n\t\t<front/>\n\t\t<body/>\n\t\t<back>\n");
                         writerReference.write("<listBibl>\n");
 
@@ -1630,7 +1632,7 @@ public class FullTextParser extends AbstractParser {
                     try (Writer writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                         File.separator +
                         baseName + ".training.fulltext.tei.xml"), false), StandardCharsets.UTF_8)) {
-                        writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + baseName +
+                        writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + xmlId +
                             "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"en\">\n");
                         writer.write(bufferFulltext.toString());
                         writer.write("\n\t</text>\n</tei>\n");
@@ -1808,7 +1810,7 @@ public class FullTextParser extends AbstractParser {
                     try (Writer writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI + File.separator
                         + baseName + ".training.header.tei.xml"), false), StandardCharsets.UTF_8)) {
                         writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
-                            + baseName
+                            + xmlId
                             + "\"/>\n\t</teiHeader>\n\t<text");
 
                         if (lang != null) {

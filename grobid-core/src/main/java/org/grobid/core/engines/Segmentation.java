@@ -726,9 +726,10 @@ public class Segmentation extends AbstractParser {
             documentSource = DocumentSource.fromPdf(file, -1, -1, true, true, true);
             Document doc = new Document(documentSource);
 
-            // sanitized so that generated training file names never start with a digit,
-            // keeping them identical to the xml:id values used in the TEI
-            String baseName = TextUtilities.sanitizeXmlId(file.getName().replaceAll("(?i)\\.pdf$", ""));
+            // the sanitized base name is used for the training file names, while the xml:id
+            // carries an additional leading '_' when required to be a valid NCName
+            String baseName = TextUtilities.sanitizeFileName(file.getName().replaceAll("(?i)\\.pdf$", ""));
+            String xmlId = TextUtilities.sanitizeXmlId(baseName);
             doc.addTokenizedDocument(GrobidAnalysisConfig.defaultInstance());
 
             if (doc.getBlocks() == null) {
@@ -771,7 +772,7 @@ public class Segmentation extends AbstractParser {
                         StandardCharsets.UTF_8)) {
                     writer.write(
                             "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
-                                    + baseName
+                                    + xmlId
                                     + "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
                                     + lang
                                     + "\">\n");
@@ -831,9 +832,10 @@ public class Segmentation extends AbstractParser {
             documentSource = DocumentSource.fromPdf(file, -1, -1, true, true, true);
             Document doc = new Document(documentSource);
 
-            // sanitized so that generated training file names never start with a digit,
-            // keeping them identical to the xml:id values used in the TEI
-            String baseName = TextUtilities.sanitizeXmlId(file.getName().replaceAll("(?i)\\.pdf$", ""));
+            // the sanitized base name is used for the training file names, while the xml:id
+            // carries an additional leading '_' when required to be a valid NCName
+            String baseName = TextUtilities.sanitizeFileName(file.getName().replaceAll("(?i)\\.pdf$", ""));
+            String xmlId = TextUtilities.sanitizeXmlId(baseName);
             doc.addTokenizedDocument(GrobidAnalysisConfig.defaultInstance());
 
             if (doc.getBlocks() == null) {
@@ -870,7 +872,7 @@ public class Segmentation extends AbstractParser {
                         StandardCharsets.UTF_8)) {
                     writer.write(
                             "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
-                                    + baseName
+                                    + xmlId
                                     + "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
                                     + lang
                                     + "\">\n");

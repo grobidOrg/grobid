@@ -388,10 +388,11 @@ public class ProcessEngine implements Closeable {
                             outputPathFile.mkdir();
                         }
 
-                        // sanitized so that the output file name never starts with a digit,
-                        // keeping it identical to the xml:id value used in the TEI
-                        String baseName = TextUtilities.sanitizeXmlId(
+                        // the sanitized base name is used for the output file name, while the xml:id
+                        // carries an additional leading '_' when required to be a valid NCName
+                        String baseName = TextUtilities.sanitizeFileName(
                                 currPdf.getName().replaceAll("(?i)\\.pdf$", ""));
+                        String xmlId = TextUtilities.sanitizeXmlId(baseName);
 
                         StringBuilder result = new StringBuilder();
                         // dummy header
@@ -404,7 +405,7 @@ public class ProcessEngine implements Closeable {
 
                         result.append(
                                 "\t<teiHeader>\n\t\t<fileDesc xml:id=\""
-                                        + baseName
+                                        + xmlId
                                         +
                                         "\"/>\n\t</teiHeader>\n");
 

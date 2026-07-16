@@ -1312,33 +1312,49 @@ public class TextUtilities {
     }
 
     /**
-     * Turn an arbitrary string (typically a PDF file name) into a valid value for an
-     * xml:id attribute, i.e. a valid NCName, see https://www.w3.org/TR/xml-names/#NT-NCName
-     * The first character must be a letter or '_', the following characters letters,
-     * digits, '.', '-' or '_'. Any other character is replaced by '_', and a '_' is
-     * prepended when the string starts with a character not allowed in first position
-     * (e.g. a digit).
+     * Turn an arbitrary string (typically a PDF file name without extension) into a safe
+     * base name for generated files: letters, digits, '.', '-' and '_' are kept, any
+     * other character is replaced by '_'. Contrary to {@link #sanitizeXmlId(String)},
+     * no '_' is prepended: this is the name to be used for files on disk, while the
+     * corresponding xml:id is obtained by applying sanitizeXmlId to this value.
      *
-     * @param id the candidate identifier, e.g. a PDF file name without extension
-     * @return a valid NCName, never null nor empty
+     * @param name the candidate name, e.g. a PDF file name without extension
+     * @return a sanitized name, never null nor empty
      */
-    public static String sanitizeXmlId(String id) {
-        if (StringUtils.isEmpty(id)) {
+    public static String sanitizeFileName(String name) {
+        if (StringUtils.isEmpty(name)) {
             return "_";
         }
-        StringBuilder sanitized = new StringBuilder(id.length() + 1);
-        for (char c : id.toCharArray()) {
+        StringBuilder sanitized = new StringBuilder(name.length());
+        for (char c : name.toCharArray()) {
             if (Character.isLetterOrDigit(c) || c == '.' || c == '-' || c == '_') {
                 sanitized.append(c);
             } else {
                 sanitized.append('_');
             }
         }
+        return sanitized.toString();
+    }
+
+    /**
+     * Turn an arbitrary string (typically a PDF file name) into a valid value for an
+     * xml:id attribute, i.e. a valid NCName, see https://www.w3.org/TR/xml-names/#NT-NCName
+     * The first character must be a letter or '_', the following characters letters,
+     * digits, '.', '-' or '_'. Any other character is replaced by '_', and a '_' is
+     * prepended when the string starts with a character not allowed in first position
+     * (e.g. a digit). Consumers resolving the file the xml:id refers to should strip
+     * the leading '_', as the generated file names do not carry it.
+     *
+     * @param id the candidate identifier, e.g. a PDF file name without extension
+     * @return a valid NCName, never null nor empty
+     */
+    public static String sanitizeXmlId(String id) {
+        String sanitized = sanitizeFileName(id);
         char first = sanitized.charAt(0);
         if (!Character.isLetter(first) && first != '_') {
-            sanitized.insert(0, '_');
+            return '_' + sanitized;
         }
-        return sanitized.toString();
+        return sanitized;
     }
 
     /**

@@ -1224,10 +1224,11 @@ public class Engine implements Closeable {
                     if (bufferReference != null) {
                         bufferReference.append("\n");
 
-                        // sanitized so that the training file name never starts with a digit,
-                        // keeping it identical to the xml:id value used in the TEI
-                        String baseName = TextUtilities.sanitizeXmlId(
+                        // the sanitized base name is used for the training file name, while the xml:id
+                        // carries an additional leading '_' when required to be a valid NCName
+                        String baseName = TextUtilities.sanitizeFileName(
                                 txtFile.getName().replaceAll("(?i)\\.txt$", ""));
+                        String xmlId = TextUtilities.sanitizeXmlId(baseName);
 
                         File teiFile = new File(
                                 resultPath + File.separator + baseName + ".training.references.tei.xml");
@@ -1241,7 +1242,7 @@ public class Engine implements Closeable {
 
                             writerReference.write(
                                     "\t<teiHeader>\n\t\t<fileDesc xml:id=\""
-                                            + baseName
+                                            + xmlId
                                             + "\"/>\n\t</teiHeader>\n\t<text>\n\t\t<front/>\n\t\t<body/>\n\t\t<back>\n");
 
                             writerReference.write("<listBibl>\n");

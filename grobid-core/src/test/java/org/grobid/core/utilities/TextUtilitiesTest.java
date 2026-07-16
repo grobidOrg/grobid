@@ -48,6 +48,26 @@ public class TextUtilitiesTest extends EngineTest {
     }
 
     @Test
+    public void sanitizeFileName_digitStart_shouldNotPrefixUnderscore() {
+        assertThat(TextUtilities.sanitizeFileName("356report"), is("356report"));
+    }
+
+    @Test
+    public void sanitizeFileName_invalidCharacters_shouldReplaceWithUnderscore() {
+        assertThat(TextUtilities.sanitizeFileName("123 sample report"), is("123_sample_report"));
+    }
+
+    @Test
+    public void sanitizeFileName_null_shouldReturnUnderscore() {
+        assertThat(TextUtilities.sanitizeFileName(null), is("_"));
+    }
+
+    @Test
+    public void sanitizeFileName_empty_shouldReturnUnderscore() {
+        assertThat(TextUtilities.sanitizeFileName(""), is("_"));
+    }
+
+    @Test
     public void sanitizeXmlId_invalidCharacters_shouldReplaceWithUnderscore() {
         assertThat(TextUtilities.sanitizeXmlId("my file (final)"), is("my_file__final_"));
     }
