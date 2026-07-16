@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<TOCITEMS nbPages="20">
+    <TOCITEMLIST level="0">
+        <ITEM ID="0">
+            <STRING>Synthesis of N-&#xAD;aminophalimides derived from &#x3B1;-&#xAD;amino acids: Theoretical study to
+                find them as HDAC8 inhibitors by docking simulations and in vitro assays
+            </STRING>
+            <LINK page="1" top="104.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+            <TOCITEMLIST level="1" idItemParent="0">
+                <ITEM ID="1">
+                    <STRING>Abstract</STRING>
+                    <LINK page="1" top="241.362" bottom="0.0000" left="202.000" right="0.0000"/>
+                </ITEM>
+                <ITEM ID="2">
+                    <STRING>1|INTRODUCTION</STRING>
+                    <LINK page="1" top="592.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                </ITEM>
+                <ITEM ID="3">
+                    <STRING>2|EXPERIMENTAL SECTION</STRING>
+                    <LINK page="2" top="631.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                    <TOCITEMLIST level="2" idItemParent="3">
+                        <ITEM ID="4">
+                            <STRING>2.1|General procedures and materials</STRING>
+                            <LINK page="2" top="657.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                        </ITEM>
+                        <ITEM ID="5">
+                            <STRING>2.2|Chemistry</STRING>
+                            <LINK page="3" top="306.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                            <TOCITEMLIST level="3" idItemParent="5">
+                                <ITEM ID="6">
+                                    <STRING>2.2.1|Synthesis of tert-&#xAD;Butoxy acetic acid (2)</STRING>
+                                    <LINK page="3" top="332.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="7">
+                                    <STRING>2.2.2|General procedure for the synthesis of compounds 3(a&#x2013;&#xAD;c)
+                                    </STRING>
+                                    <LINK page="3" top="605.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="8">
+                                    <STRING>2.2.3|Synthesis of methyl 2-&#xAD;(2-&#xAD;(tert-&#xAD;butoxy)acetamido)acetate
+                                        (3a)
+                                    </STRING>
+                                    <LINK page="3" top="176.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="9">
+                                    <STRING>2.2.4|Synthesis of (S)-&#xAD;methyl 2-&#xAD;(2-&#xAD;(tert-&#xAD;butoxy)acetamido)-&#xAD;3-&#xAD;phenylpropanoate
+                                        (3b)
+                                    </STRING>
+                                    <LINK page="3" top="332.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="10">
+                                    <STRING>2.2.5|Synthesis of (S)-&#xAD;methyl 2-&#xAD;(2-&#xAD;(tert-&#xAD;butoxy)acetamido)-&#xAD;3-&#xAD;(1H-&#xAD;indol-&#xAD;3-&#xAD;yl)propanoate
+                                        (3c)
+                                    </STRING>
+                                    <LINK page="3" top="527.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="11">
+                                    <STRING>2.2.6|General procedure for the synthesis of compounds 4(a&#x2013;&#xAD;c)
+                                    </STRING>
+                                    <LINK page="4" top="46.3620" bottom="0.0000" left="45.0000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="12">
+                                    <STRING>2.2.7|Synthesis of 2-&#xAD;(2-&#xAD;(tert-&#xAD;butoxy)acetamido)acetic acid
+                                        (4a)
+                                    </STRING>
+                                    <LINK page="4" top="241.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="13">
+                                    <STRING>2.2.8|Synthesis of (S)-&#xAD;2-&#xAD;(2-&#xAD;(tert-&#xAD;butoxy)acetamido)-&#xAD;3-&#xAD;phenylpropanoic
+                                        acid (4b)
+                                    </STRING>
+                                    <LINK page="4" top="410.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="14">
+                                    <STRING>2.2.9|Synthesis of (S)-&#xAD;2-&#xAD;(2-&#xAD;(tert-&#xAD;butoxy)acetamido)-&#xAD;3-&#xAD;(1H-&#xAD;indol-&#xAD;3-&#xAD;yl)propanoic
+                                        acid (4c)
+                                    </STRING>
+                                    <LINK page="4" top="618.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="15">
+                                    <STRING>2.2.10|General procedure for the synthesis of compounds
+                                        5(a&#x2013;&#xAD;c)
+                                    </STRING>
+                                    <LINK page="4" top="163.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="16">
+                                    <STRING>2.2.11|Synthesis of 2-&#xAD;(tert-&#xAD;butoxy)-&#xAD;N-&#xAD;(2-&#xAD;((1,3-&#xAD;dioxoisoindolin-&#xAD;2-&#xAD;yl)amino)-&#xAD;2-&#xAD;oxoethyl)acetamide
+                                        (5a)
+                                    </STRING>
+                                    <LINK page="4" top="410.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="17">
+                                    <STRING>2.2.12|Synthesis of (S)-&#xAD;2-&#xAD;(2-&#xAD;(tert-&#xAD;butoxy)acetamido)-&#xAD;N-&#xAD;(1,3-&#xAD;dioxoisoindolin-&#xAD;2-&#xAD;yl)-&#xAD;3-&#xAD;phenyl-&#xAD;propanamide
+                                        (5b)
+                                    </STRING>
+                                    <LINK page="4" top="605.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="18">
+                                    <STRING>2.2.13|Synthesis of (S)-&#xAD;2-&#xAD;(2-&#xAD;(tert-&#xAD;butoxy)acetamido)-&#xAD;N-&#xAD;(1,3-&#xAD;dioxoisoindolin-&#xAD;2-&#xAD;yl)-&#xAD;3-&#xAD;(1H-&#xAD;indol-&#xAD;3-&#xAD;yl)
+                                        propanamide (5c)
+                                    </STRING>
+                                    <LINK page="5" top="150.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="19">
+                                    <STRING>2.2.14|General procedure for the synthesis of compounds 6a&#x2013;&#xAD;6c
+                                    </STRING>
+                                    <LINK page="5" top="397.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="20">
+                                    <STRING>2.2.15|Synthesis of N-&#xAD;(1,3-&#xAD;dioxoisoindolin-&#xAD;2-&#xAD;yl)-&#xAD;2-&#xAD;(2-&#xAD;hydroxyacetamido)acetamide
+                                        (6a)
+                                    </STRING>
+                                    <LINK page="5" top="566.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="21">
+                                    <STRING>2.2.16|Synthesis of (S)-&#xAD;N-&#xAD;(1,3-&#xAD;dioxoisoindolin-&#xAD;2-&#xAD;yl)-&#xAD;2-&#xAD;(2-&#xAD;hydroxyacetamido)-&#xAD;3-&#xAD;phenylpropa-&#xAD;namide
+                                        (6b)
+                                    </STRING>
+                                    <LINK page="5" top="46.3620" bottom="0.0000" left="306.000" right="0.0000"/>
+                                </ITEM>
+                                <ITEM ID="22">
+                                    <STRING>2.2.17|Synthesis of (S)-&#xAD;N-&#xAD;(1,3-&#xAD;dioxoisoindolin-&#xAD;2-&#xAD;yl)-&#xAD;2-&#xAD;(2-&#xAD;hydroxyacetamido)-&#xAD;3-&#xAD;(1H-&#xAD;indol-&#xAD;3-&#xAD;yl)propanamide
+                                        (6c)
+                                    </STRING>
+                                    <LINK page="5" top="280.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                                </ITEM>
+                            </TOCITEMLIST>
+                        </ITEM>
+                        <ITEM ID="23">
+                            <STRING>2.3|Crystal structure determination of 4a, 5a, 5b, 6a, and 6b</STRING>
+                            <LINK page="5" top="553.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                        </ITEM>
+                        <ITEM ID="24">
+                            <STRING>2.4|Computational methodology</STRING>
+                            <LINK page="6" top="124.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                        </ITEM>
+                        <ITEM ID="25">
+                            <STRING>2.5|HDAC8 inhibition assay</STRING>
+                            <LINK page="6" top="540.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                        </ITEM>
+                    </TOCITEMLIST>
+                </ITEM>
+                <ITEM ID="26">
+                    <STRING>3|RESULTS AND DISCUSSION</STRING>
+                    <LINK page="6" top="189.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                    <TOCITEMLIST level="2" idItemParent="26">
+                        <ITEM ID="27">
+                            <STRING>3.1|Chemistry</STRING>
+                            <LINK page="6" top="215.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                        </ITEM>
+                        <ITEM ID="28">
+                            <STRING>3.2|Spectroscopy</STRING>
+                            <LINK page="6" top="514.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                        </ITEM>
+                        <ITEM ID="29">
+                            <STRING>3.3|X-&#xAD;ray structures</STRING>
+                            <LINK page="8" top="293.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                        </ITEM>
+                    </TOCITEMLIST>
+                </ITEM>
+                <ITEM ID="30">
+                    <STRING>4|MOLECULAR DOCKING STUDY</STRING>
+                    <LINK page="8" top="319.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                    <TOCITEMLIST level="2" idItemParent="30">
+                        <ITEM ID="31">
+                            <STRING>4.1|Binding modes of compounds 3(a&#x2013;&#xAD;c) with HDAC8</STRING>
+                            <LINK page="10" top="631.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                        </ITEM>
+                        <ITEM ID="32">
+                            <STRING>4.2|Binding modes of compounds 4(a&#x2013;&#xAD;c) with HDAC8</STRING>
+                            <LINK page="11" top="293.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                        </ITEM>
+                        <ITEM ID="33">
+                            <STRING>4.3|Binding modes of compounds 5(a&#x2013;&#xAD;c) with HDAC8</STRING>
+                            <LINK page="12" top="371.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                        </ITEM>
+                        <ITEM ID="34">
+                            <STRING>4.4|Binding modes of compounds 6(a&#x2013;&#xAD;c) with HDAC8</STRING>
+                            <LINK page="14" top="449.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                        </ITEM>
+                    </TOCITEMLIST>
+                </ITEM>
+                <ITEM ID="35">
+                    <STRING>5|HDAC8 INHIBITORY ASSAY</STRING>
+                    <LINK page="15" top="345.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                </ITEM>
+                <ITEM ID="36">
+                    <STRING>6|CONCLUSION</STRING>
+                    <LINK page="16" top="527.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                </ITEM>
+                <ITEM ID="37">
+                    <STRING>ACKNOWLEDGMENTS</STRING>
+                    <LINK page="16" top="594.362" bottom="0.0000" left="306.000" right="0.0000"/>
+                </ITEM>
+                <ITEM ID="38">
+                    <STRING>FUNDING INFORMATION</STRING>
+                    <LINK page="17" top="152.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                </ITEM>
+                <ITEM ID="39">
+                    <STRING>CONFLICT OF INTEREST STATEMENT</STRING>
+                    <LINK page="17" top="191.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                    <TOCITEMLIST level="2" idItemParent="39">
+                        <ITEM ID="40">
+                            <STRING>DATA AVAILABILITY STATEMENT</STRING>
+                            <LINK page="17" top="230.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                        </ITEM>
+                    </TOCITEMLIST>
+                </ITEM>
+                <ITEM ID="41">
+                    <STRING>REFERENCES</STRING>
+                    <LINK page="17" top="339.362" bottom="0.0000" left="45.0000" right="0.0000"/>
+                </ITEM>
+            </TOCITEMLIST>
+        </ITEM>
+    </TOCITEMLIST>
+</TOCITEMS>
