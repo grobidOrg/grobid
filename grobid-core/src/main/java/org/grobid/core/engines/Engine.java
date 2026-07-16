@@ -553,7 +553,7 @@ public class Engine implements Closeable {
      *                     derived from the input file name
      */
     public void createTrainingMonograph(File inputFile, String pathRaw, String pathTEI, int id) {
-        Document doc = parsers.getMonographParser().createTrainingFromPDF(inputFile, pathRaw, pathTEI);
+        parsers.getMonographParser().createTrainingFromPDF(inputFile, pathRaw, pathTEI);
     }
 
     /**
@@ -584,7 +584,7 @@ public class Engine implements Closeable {
      */
     public void createTraining(File inputFile, String pathRaw, String pathTEI, int id, GrobidModels.Flavor flavor) {
         System.out.println(inputFile.getPath());
-        Document doc = parsers.getFullTextParser(flavor).createTraining(inputFile, pathRaw, pathTEI, flavor);
+        parsers.getFullTextParser(flavor).createTraining(inputFile, pathRaw, pathTEI, flavor);
     }
 
     /**

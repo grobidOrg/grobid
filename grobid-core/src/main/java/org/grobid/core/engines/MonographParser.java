@@ -18,6 +18,7 @@ package org.grobid.core.engines;
 import static org.apache.commons.lang3.StringUtils.*;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.regex.Matcher;
 
@@ -738,7 +739,7 @@ public class MonographParser extends AbstractParser {
             builder.append("\t</text>\n</tei>");
 
             // write the TEI file
-            try (Writer writer = new OutputStreamWriter(new FileOutputStream(outputTEIFile, false), "UTF-8")) {
+            try (Writer writer = new OutputStreamWriter(new FileOutputStream(outputTEIFile, false), StandardCharsets.UTF_8)) {
                 writer.write(builder.toString());
             }
 

@@ -19,6 +19,7 @@ import static org.apache.commons.lang3.StringUtils.*;
 
 import java.awt.image.BufferedImage;
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.regex.Matcher;
 
@@ -743,7 +744,7 @@ public class Segmentation extends AbstractParser {
             // we write the full text untagged (but featurized)
             String outPathFulltext = pathFullText + File.separator + baseName + ".training.segmentation";
             try (Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false),
-                    "UTF-8")) {
+                    StandardCharsets.UTF_8)) {
                 writer.write(fulltext + "\n");
             }
 
@@ -753,7 +754,7 @@ public class Segmentation extends AbstractParser {
                 rawtxt.append(txtline.getText());
             }
             String outPathRawtext = pathFullText + File.separator + baseName + ".training.segmentation.rawtxt";
-            FileUtils.writeStringToFile(new File(outPathRawtext), rawtxt.toString(), "UTF-8");
+            FileUtils.writeStringToFile(new File(outPathRawtext), rawtxt.toString(), StandardCharsets.UTF_8);
 
             if (isNotBlank(fulltext)) {
                 String rese = label(fulltext);
@@ -766,7 +767,7 @@ public class Segmentation extends AbstractParser {
 
                 // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 File teiFile = new File(pathTEI + File.separator + baseName + ".training.segmentation.tei.xml");
-                try (Writer writer = new OutputStreamWriter(new FileOutputStream(teiFile, false), "UTF-8")) {
+                try (Writer writer = new OutputStreamWriter(new FileOutputStream(teiFile, false), StandardCharsets.UTF_8)) {
                     writer.write(
                             "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
                                     + baseName
@@ -847,7 +848,7 @@ public class Segmentation extends AbstractParser {
             // we write the full text untagged (but featurized)
             String outPathFulltext = pathFullText + File.separator + baseName + ".training.blank";
             try (Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false),
-                    "UTF-8")) {
+                    StandardCharsets.UTF_8)) {
                 writer.write(fulltext + "\n");
             }
 
@@ -864,7 +865,7 @@ public class Segmentation extends AbstractParser {
 
                 // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 File teiFile = new File(pathTEI + File.separator + baseName + ".training.blank.tei.xml");
-                try (Writer writer = new OutputStreamWriter(new FileOutputStream(teiFile, false), "UTF-8")) {
+                try (Writer writer = new OutputStreamWriter(new FileOutputStream(teiFile, false), StandardCharsets.UTF_8)) {
                     writer.write(
                             "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
                                     + baseName
