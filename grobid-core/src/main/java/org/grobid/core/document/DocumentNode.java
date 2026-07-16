@@ -18,10 +18,12 @@ package org.grobid.core.document;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 import org.grobid.core.layout.BoundingBox;
+import org.grobid.core.utilities.TextUtilities;
 
 /**
  * Class corresponding to a node of the structure of a hierarchically organized document (i.e. for a table
@@ -221,5 +223,56 @@ public class DocumentNode {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    // similarity threshold above which an outline label is considered to match a section head
+    private static final double NODE_MATCH_THRESHOLD = 0.90;
+
+    /**
+     * Normalize an outline label or a section head for soft comparison. Outline labels extracted
+     * from the PDF bookmarks carry non-breaking spaces, soft hyphens, '|' number separators and
+     * multi-line indentation runs, none of which are meaningful for matching.
+     */
+    private static String normalizeForMatching(String value) {
+        if (value == null) {
+            return null;
+        }
+        String normalized = value
+                .replace('\u00A0', ' ')  // non-breaking space
+                .replace("\u00AD", "")   // soft hyphen
+                .replace('|', ' ');
+        return StringUtils.normalizeSpace(normalized);
+    }
+
+    /**
+     * Given the label of a potential node (typically a section head), find it in the hierarchy
+     * rooted at {@code rootNode} using soft string matching and return its depth.
+     *
+     * @param rootNode the node to search from
+     * @param label    the section head text to look up
+     * @param depth    the depth of {@code rootNode} in the hierarchy (0 for the outline root)
+     * @return the depth of the first matching node, or -1 if no node matches
+     */
+    public static int findNodeDepth(DocumentNode rootNode, String label, int depth) {
+        if (rootNode == null || label == null) {
+            return -1;
+        }
+        String normalizedLabel = normalizeForMatching(label);
+        String nodeLabel = normalizeForMatching(rootNode.getLabel());
+        if (StringUtils.isNotBlank(nodeLabel)) {
+            double score = TextUtilities.getRatcliffObershelpSimilarity(nodeLabel, normalizedLabel, false);
+            if (score >= NODE_MATCH_THRESHOLD) {
+                return depth;
+            }
+        }
+        if (rootNode.getChildren() != null) {
+            for (DocumentNode child : rootNode.getChildren()) {
+                int childDepth = findNodeDepth(child, label, depth + 1);
+                if (childDepth != -1) {
+                    return childDepth;
+                }
+            }
+        }
+        return -1;
     }
 }
