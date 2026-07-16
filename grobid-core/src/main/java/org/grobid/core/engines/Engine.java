@@ -1229,7 +1229,8 @@ public class Engine implements Closeable {
                         String baseName = TextUtilities.sanitizeXmlId(
                                 txtFile.getName().replaceAll("(?i)\\.txt$", ""));
 
-                        File teiFile = new File(resultPath + File.separator + baseName + ".training.references.tei.xml");
+                        File teiFile = new File(
+                                resultPath + File.separator + baseName + ".training.references.tei.xml");
                         try (Writer writerReference = new OutputStreamWriter(new FileOutputStream(teiFile, false),
                                 StandardCharsets.UTF_8)) {
 

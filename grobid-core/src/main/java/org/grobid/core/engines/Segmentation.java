@@ -742,7 +742,8 @@ public class Segmentation extends AbstractParser {
 
             // we write the full text untagged (but featurized)
             String outPathFulltext = pathFullText + File.separator + baseName + ".training.segmentation";
-            try (Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false), "UTF-8")) {
+            try (Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false),
+                    "UTF-8")) {
                 writer.write(fulltext + "\n");
             }
 
@@ -845,7 +846,8 @@ public class Segmentation extends AbstractParser {
 
             // we write the full text untagged (but featurized)
             String outPathFulltext = pathFullText + File.separator + baseName + ".training.blank";
-            try (Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false), "UTF-8")) {
+            try (Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false),
+                    "UTF-8")) {
                 writer.write(fulltext + "\n");
             }
 
