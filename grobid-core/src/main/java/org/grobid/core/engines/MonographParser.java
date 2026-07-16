@@ -739,7 +739,8 @@ public class MonographParser extends AbstractParser {
             builder.append("\t</text>\n</tei>");
 
             // write the TEI file
-            try (Writer writer = new OutputStreamWriter(new FileOutputStream(outputTEIFile, false), StandardCharsets.UTF_8)) {
+            try (Writer writer = new OutputStreamWriter(new FileOutputStream(outputTEIFile, false),
+                    StandardCharsets.UTF_8)) {
                 writer.write(builder.toString());
             }
 

@@ -767,7 +767,8 @@ public class Segmentation extends AbstractParser {
 
                 // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 File teiFile = new File(pathTEI + File.separator + baseName + ".training.segmentation.tei.xml");
-                try (Writer writer = new OutputStreamWriter(new FileOutputStream(teiFile, false), StandardCharsets.UTF_8)) {
+                try (Writer writer = new OutputStreamWriter(new FileOutputStream(teiFile, false),
+                        StandardCharsets.UTF_8)) {
                     writer.write(
                             "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
                                     + baseName
@@ -865,7 +866,8 @@ public class Segmentation extends AbstractParser {
 
                 // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 File teiFile = new File(pathTEI + File.separator + baseName + ".training.blank.tei.xml");
-                try (Writer writer = new OutputStreamWriter(new FileOutputStream(teiFile, false), StandardCharsets.UTF_8)) {
+                try (Writer writer = new OutputStreamWriter(new FileOutputStream(teiFile, false),
+                        StandardCharsets.UTF_8)) {
                     writer.write(
                             "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
                                     + baseName
