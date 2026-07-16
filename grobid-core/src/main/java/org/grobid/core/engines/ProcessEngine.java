@@ -39,6 +39,7 @@ import org.grobid.core.exceptions.GrobidResourceException;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.main.batch.GrobidMainArgs;
 import org.grobid.core.utilities.IOUtilities;
+import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.utilities.counters.impl.CntManagerReportRepresentation;
 import org.grobid.core.visualization.CitationsVisualizer;
 
@@ -378,7 +379,6 @@ public class ProcessEngine implements Closeable {
     private void processReferencesDirectory(File[] files, final GrobidMainArgs pGbdArgs, String outputPath) {
         if (files != null) {
             boolean recurse = pGbdArgs.isRecursive();
-            int id = 0;
             for (final File currPdf : files) {
                 try {
                     if (currPdf.getName().toLowerCase().endsWith(".pdf")) {
@@ -387,6 +387,11 @@ public class ProcessEngine implements Closeable {
                         if (!outputPathFile.exists()) {
                             outputPathFile.mkdir();
                         }
+
+                        // sanitized so that the output file name never starts with a digit,
+                        // keeping it identical to the xml:id value used in the TEI
+                        String baseName = TextUtilities.sanitizeXmlId(
+                                currPdf.getName().replaceAll("(?i)\\.pdf$", ""));
 
                         StringBuilder result = new StringBuilder();
                         // dummy header
@@ -398,8 +403,8 @@ public class ProcessEngine implements Closeable {
                                         "\n xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n");
 
                         result.append(
-                                "\t<teiHeader>\n\t\t<fileDesc xml:id=\"f_"
-                                        + id
+                                "\t<teiHeader>\n\t\t<fileDesc xml:id=\""
+                                        + baseName
                                         +
                                         "\"/>\n\t</teiHeader>\n");
 
@@ -410,19 +415,9 @@ public class ProcessEngine implements Closeable {
                         }
                         result.append("\t\t\t</listBibl>\n\t\t</back>\n\t</text>\n</TEI>\n");
 
-                        if (currPdf.getName().endsWith(".pdf")) {
-                            IOUtilities.writeInFile(
-                                    outputPath + File.separator
-                                            + new File(currPdf.getAbsolutePath()).getName()
-                                                    .replace(".pdf", ".references.tei.xml"),
-                                    result.toString());
-                        } else if (currPdf.getName().endsWith(".PDF")) {
-                            IOUtilities.writeInFile(
-                                    outputPath + File.separator
-                                            + new File(currPdf.getAbsolutePath()).getName()
-                                                    .replace(".PDF", ".references.tei.xml"),
-                                    result.toString());
-                        }
+                        IOUtilities.writeInFile(
+                                outputPath + File.separator + baseName + ".references.tei.xml",
+                                result.toString());
                     } else if (recurse && currPdf.isDirectory()) {
                         File[] newFiles = currPdf.listFiles();
                         if (newFiles != null) {
@@ -441,7 +436,6 @@ public class ProcessEngine implements Closeable {
                                     + ". Continuing the process for the other files",
                             exp);
                 }
-                id++;
             }
         }
     }

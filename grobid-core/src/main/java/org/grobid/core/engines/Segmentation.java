@@ -727,7 +727,9 @@ public class Segmentation extends AbstractParser {
             documentSource = DocumentSource.fromPdf(file, -1, -1, true, true, true);
             Document doc = new Document(documentSource);
 
-            String PDFFileName = file.getName();
+            // sanitized so that generated training file names never start with a digit,
+            // keeping them identical to the xml:id values used in the TEI
+            String baseName = TextUtilities.sanitizeXmlId(file.getName().replaceAll("(?i)\\.pdf$", ""));
             doc.addTokenizedDocument(GrobidAnalysisConfig.defaultInstance());
 
             if (doc.getBlocks() == null) {
@@ -741,8 +743,11 @@ public class Segmentation extends AbstractParser {
             List<LayoutToken> tokenizations = doc.getTokenizations();
 
             // we write the full text untagged (but featurized)
-            String outPathFulltext = pathFullText + File.separator +
-                    PDFFileName.replace(".pdf", ".training.segmentation");
+            String outPathFulltext = pathFullText
+                    + File.separator
+                    +
+                    baseName
+                    + ".training.segmentation";
             Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false), "UTF-8");
             writer.write(fulltext + "\n");
             writer.close();
@@ -752,8 +757,11 @@ public class Segmentation extends AbstractParser {
             for (LayoutToken txtline : tokenizations) {
                 rawtxt.append(txtline.getText());
             }
-            String outPathRawtext = pathFullText + File.separator +
-                    PDFFileName.replace(".pdf", ".training.segmentation.rawtxt");
+            String outPathRawtext = pathFullText
+                    + File.separator
+                    +
+                    baseName
+                    + ".training.segmentation.rawtxt";
             FileUtils.writeStringToFile(new File(outPathRawtext), rawtxt.toString(), "UTF-8");
 
             if (isNotBlank(fulltext)) {
@@ -766,12 +774,15 @@ public class Segmentation extends AbstractParser {
                 String lang = detectLanguageOrDefault(rawtxt.toString());
 
                 // write the TEI file to reflect the exact layout of the text as extracted from the pdf
-                writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
-                        File.separator +
-                        PDFFileName.replace(".pdf", ".training.segmentation.tei.xml")), false), "UTF-8");
+                writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI
+                        +
+                        File.separator
+                        +
+                        baseName
+                        + ".training.segmentation.tei.xml"), false), "UTF-8");
                 writer.write(
-                        "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"_"
-                                + id
+                        "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
+                                + baseName
                                 +
                                 "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
                                 + lang
@@ -834,7 +845,9 @@ public class Segmentation extends AbstractParser {
             documentSource = DocumentSource.fromPdf(file, -1, -1, true, true, true);
             Document doc = new Document(documentSource);
 
-            String PDFFileName = file.getName();
+            // sanitized so that generated training file names never start with a digit,
+            // keeping them identical to the xml:id values used in the TEI
+            String baseName = TextUtilities.sanitizeXmlId(file.getName().replaceAll("(?i)\\.pdf$", ""));
             doc.addTokenizedDocument(GrobidAnalysisConfig.defaultInstance());
 
             if (doc.getBlocks() == null) {
@@ -848,8 +861,11 @@ public class Segmentation extends AbstractParser {
             List<LayoutToken> tokenizations = doc.getTokenizations();
 
             // we write the full text untagged (but featurized)
-            String outPathFulltext = pathFullText + File.separator +
-                    PDFFileName.replaceAll("(?i)\\.pdf$", ".training.blank");
+            String outPathFulltext = pathFullText
+                    + File.separator
+                    +
+                    baseName
+                    + ".training.blank";
             Writer writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false), "UTF-8");
             writer.write(fulltext + "\n");
             writer.close();
@@ -866,12 +882,15 @@ public class Segmentation extends AbstractParser {
                 String lang = detectLanguageOrDefault(fulltext);
 
                 // write the TEI file to reflect the exact layout of the text as extracted from the pdf
-                writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
-                        File.separator +
-                        PDFFileName.replaceAll("(?i)\\.pdf$", ".training.blank.tei.xml")), false), "UTF-8");
+                writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI
+                        +
+                        File.separator
+                        +
+                        baseName
+                        + ".training.blank.tei.xml"), false), "UTF-8");
                 writer.write(
-                        "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"f"
-                                + id
+                        "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
+                                + baseName
                                 +
                                 "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
                                 + lang

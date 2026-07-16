@@ -66,7 +66,7 @@ public class ReferenceSegmenterParserTest {
                 }
                 return output.toString();
             }
-        }.createTrainingData(doc, 1);
+        }.createTrainingData(doc, "sample");
 
         assertThat(result, notNullValue());
         assertThat(result.getLeft(), notNullValue());

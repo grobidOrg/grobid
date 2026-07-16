@@ -629,6 +629,7 @@ public class GrobidRestProcessTraining {
         String retVal = null;
         File originFile = null;
         Engine engine = null;
+        String inputPath = null;
         String outputPath = null;
         try {
             engine = Engine.getEngine(true);
@@ -641,7 +642,19 @@ public class GrobidRestProcessTraining {
             MessageDigest md = MessageDigest.getInstance("MD5");
             DigestInputStream dis = new DigestInputStream(inputStream, md);
 
-            originFile = IOUtilities.writeInputFile(dis);
+            // write the input document in its own temporary directory, keeping the original
+            // filename: the names of the generated training files and the xml:id values they
+            // contain are derived from it
+            String inputFileName = FilenameUtils.getName(filename);
+            if (StringUtils.isBlank(inputFileName)) {
+                inputFileName = "input.pdf";
+            } else if (!StringUtils.endsWithIgnoreCase(inputFileName, ".pdf")) {
+                inputFileName += ".pdf";
+            }
+            inputPath = GrobidProperties.getTempPath().getPath() + File.separator + KeyGen.getKey();
+            Files.createDirectories(Path.of(inputPath));
+
+            originFile = IOUtilities.writeInputFile(dis, new File(inputPath, inputFileName));
             byte[] digest = md.digest();
             if (originFile == null) {
                 LOGGER.error("The input file cannot be written.");
@@ -655,20 +668,7 @@ public class GrobidRestProcessTraining {
             Files.createDirectories(Path.of(outputPath));
             engine.createTraining(originFile, outputPath, outputPath, -1, flavor);
 
-            // Rename all the generated output files with the original filename as suffix
-            File[] outputFileList = new File(outputPath).listFiles();
-            if (ArrayUtils.isNotEmpty(outputFileList)) {
-                String[] split = outputFileList[0].getName().split(".training");
-                String trainingDataBaseName = split[0];
-                String inputFileBaseName = FilenameUtils.getBaseName(filename);
-                for (File file : outputFileList) {
-                    if (file.isFile() && file.getName().startsWith(trainingDataBaseName)) {
-                        String newFileName = file.getName().replace(trainingDataBaseName, inputFileBaseName);
-                        File newFile = new File(outputPath, newFileName);
-                        Files.move(file.toPath(), newFile.toPath());
-                    }
-                }
-            } else {
+            if (ArrayUtils.isEmpty(new File(outputPath).listFiles())) {
                 LOGGER.warn("No training files generated.");
             }
 
@@ -701,7 +701,7 @@ public class GrobidRestProcessTraining {
             }
             out.finish();
 
-            String outputFilename = StringUtils.replaceIgnoreCase(filename, "pdf", "zip");
+            String outputFilename = FilenameUtils.getBaseName(inputFileName) + ".zip";
 
             response = Response
                     .ok()
@@ -718,8 +718,9 @@ public class GrobidRestProcessTraining {
             LOGGER.error("An unexpected exception occurs. ", exp);
             response = Response.status(Status.INTERNAL_SERVER_ERROR).entity(exp.getMessage()).build();
         } finally {
-            if (originFile != null)
-                IOUtilities.removeTempFile(originFile);
+            if (inputPath != null) {
+                IOUtilities.removeTempDirectory(inputPath);
+            }
 
             if (outputPath != null) {
                 IOUtilities.removeTempDirectory(outputPath);

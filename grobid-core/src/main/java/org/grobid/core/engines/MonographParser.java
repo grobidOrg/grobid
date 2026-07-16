@@ -681,15 +681,17 @@ public class MonographParser extends AbstractParser {
                         inputFile.getAbsolutePath()
                         + "' does not exists.");
             }
-            String pdfFileName = inputFile.getName();
+            // sanitized so that generated training file names never start with a digit,
+            // keeping them identical to the xml:id values used in the TEI
+            String baseName = TextUtilities.sanitizeXmlId(inputFile.getName().replaceAll("(?i)\\.pdf$", ""));
 
-            File outputTEIFile = new File(pathTEI + "/" + pdfFileName.replace(".pdf", "training.monograph.tei.xml"));
+            File outputTEIFile = new File(pathTEI + "/" + baseName + ".training.monograph.tei.xml");
             /* // commented out because it was making a test of the existence of a file before it was even created
                if (!outputTEIFile.exists()) {
                 throw new GrobidResourceException("Cannot train for monograph, because directory '" +
                        pathTEI + "' is not valid.");
             }*/
-            File outputRawFile = new File(pathRaw + "/" + pdfFileName.replace(".pdf", ".monograph.raw"));
+            File outputRawFile = new File(pathRaw + "/" + baseName + ".monograph.raw");
             /*if (!outputRawFile.exists()) {
                 throw new GrobidResourceException("Cannot train for monograph, because directory '" +
                        pathRaw + "' is not valid.");
@@ -709,8 +711,8 @@ public class MonographParser extends AbstractParser {
             doc.produceStatistics();
             StringBuilder builder = new StringBuilder();
             builder.append(
-                    "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"_"
-                            + id
+                    "<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
+                            + baseName
                             +
                             "\"/>\n\t</teiHeader>\n\t<text xml:lang=\""
                             + lang

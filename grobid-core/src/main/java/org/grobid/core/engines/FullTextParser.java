@@ -1443,7 +1443,10 @@ public class FullTextParser extends AbstractParser {
                 throw new GrobidResourceException("Cannot train for fulltext, because file '" +
                     inputFile.getAbsolutePath() + "' does not exists.");
             }
-            String pdfFileName = inputFile.getName();
+            // the base name is used both for the training file names and the xml:id values in the
+            // generated TEI: it must be a valid NCName (in particular it cannot start with a digit)
+            // so that the trainers can map the TEI back to the corresponding raw feature files
+            String baseName = TextUtilities.sanitizeXmlId(inputFile.getName().replaceAll("(?i)\\.pdf$", ""));
 
             // SEGMENTATION MODEL
             documentSource = DocumentSource.fromPdf(inputFile, -1, -1, false, true, true);
@@ -1461,7 +1464,7 @@ public class FullTextParser extends AbstractParser {
             List<LayoutToken> tokenizations = doc.getTokenizations();
 
             // we write first the full text untagged (but featurized with segmentation features)
-            String outPathFulltext = pathFullText + File.separator + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.segmentation");
+            String outPathFulltext = pathFullText + File.separator + baseName + ".training.segmentation";
             Writer writer = new OutputStreamWriter(new FileOutputStream(outPathFulltext, false), StandardCharsets.UTF_8);
             writer.write(fulltext + "\n");
             writer.close();
@@ -1472,7 +1475,7 @@ public class FullTextParser extends AbstractParser {
                 rawtxt.append(txtline.getText());
             }
             String outPathRawtext = pathFullText + File.separator +
-                pdfFileName.replaceAll("(?i)\\.pdf$", ".training.segmentation.rawtxt");
+                baseName + ".training.segmentation.rawtxt";
             FileUtils.writeStringToFile(new File(outPathRawtext), rawtxt.toString(), StandardCharsets.UTF_8);
 
             if (isNotBlank(fulltext)) {
@@ -1482,8 +1485,8 @@ public class FullTextParser extends AbstractParser {
                 // write the TEI file to reflect the exact layout of the text as extracted from the pdf
                 writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                     File.separator +
-                    pdfFileName.replaceAll("(?i)\\.pdf$", ".training.segmentation.tei.xml")), false), StandardCharsets.UTF_8);
-                writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"_" + id +
+                    baseName + ".training.segmentation.tei.xml"), false), StandardCharsets.UTF_8);
+                writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + baseName +
                     "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"en\">\n");
 
                 writer.write(bufferFulltext.toString());
@@ -1499,26 +1502,25 @@ public class FullTextParser extends AbstractParser {
             if (!referencesStr.isEmpty()) {
                 //String tei = parsers.getReferenceSegmenterParser().createTrainingData2(referencesStr, id);
                 Pair<String, String> result =
-                    parsers.getReferenceSegmenterParser().createTrainingData(doc, id);
+                    parsers.getReferenceSegmenterParser().createTrainingData(doc, baseName);
                 if (result != null) {
                     String tei = result.getLeft();
                     String raw = result.getRight();
                     if (tei != null) {
                         String outPath = pathTEI + "/" +
-                            pdfFileName.replaceAll("(?i)\\.pdf$", ".training.references.referenceSegmenter.tei.xml");
+                            baseName + ".training.references.referenceSegmenter.tei.xml";
                         writer = new OutputStreamWriter(new FileOutputStream(new File(outPath), false), StandardCharsets.UTF_8);
                         writer.write(tei + "\n");
                         writer.close();
 
                         // generate also the raw vector file with the features
-                        outPath = pathTEI + "/" + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.references.referenceSegmenter");
+                        outPath = pathTEI + "/" + baseName + ".training.references.referenceSegmenter";
                         writer = new OutputStreamWriter(new FileOutputStream(new File(outPath), false), StandardCharsets.UTF_8);
                         writer.write(raw + "\n");
                         writer.close();
 
                         // also write the raw text as it is before reference segmentation
-                        outPathRawtext = pathTEI + "/" + pdfFileName
-                            .replace(".pdf", ".training.references.referenceSegmenter.rawtxt");
+                        outPathRawtext = pathTEI + "/" + baseName + ".training.references.referenceSegmenter.rawtxt";
                         Writer strWriter = new OutputStreamWriter(
                             new FileOutputStream(new File(outPathRawtext), false), StandardCharsets.UTF_8);
                         strWriter.write(referencesStr + "\n");
@@ -1553,17 +1555,13 @@ public class FullTextParser extends AbstractParser {
 
                     Writer writerReference = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                         File.separator +
-                        pdfFileName.replaceAll("(?i)\\.pdf$", ".training.references.tei.xml")), false), StandardCharsets.UTF_8);
+                        baseName + ".training.references.tei.xml"), false), StandardCharsets.UTF_8);
 
                     writerReference.write("<?xml version=\"1.0\" ?>\n<TEI xml:space=\"preserve\" xmlns=\"http://www.tei-c.org/ns/1.0\" " +
                         "xmlns:xlink=\"http://www.w3.org/1999/xlink\" " +
                         "\n xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n");
-                    if (id == -1) {
-                        writerReference.write("\t<teiHeader/>\n\t<text>\n\t\t<front/>\n\t\t<body/>\n\t\t<back>\n");
-                    } else {
-                        writerReference.write("\t<teiHeader>\n\t\t<fileDesc xml:id=\"_" + id +
-                            "\"/>\n\t</teiHeader>\n\t<text>\n\t\t<front/>\n\t\t<body/>\n\t\t<back>\n");
-                    }
+                    writerReference.write("\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + baseName +
+                        "\"/>\n\t</teiHeader>\n\t<text>\n\t\t<front/>\n\t\t<body/>\n\t\t<back>\n");
                     writerReference.write("<listBibl>\n");
 
                     writerReference.write(bufferReference.toString());
@@ -1574,7 +1572,7 @@ public class FullTextParser extends AbstractParser {
                     // BIBLIO REFERENCE AUTHOR NAMES
                     Writer writerName = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                         File.separator +
-                        pdfFileName.replaceAll("(?i)\\.pdf$", ".training.references.authors.tei.xml")), false), StandardCharsets.UTF_8);
+                        baseName + ".training.references.authors.tei.xml"), false), StandardCharsets.UTF_8);
 
                     writerName.write("<?xml version=\"1.0\" ?>\n<TEI xml:space=\"preserve\" xmlns=\"http://www.tei-c.org/ns/1.0\" " +
                         "xmlns:xlink=\"http://www.w3.org/1999/xlink\" " +
@@ -1621,7 +1619,7 @@ public class FullTextParser extends AbstractParser {
 
                     // we write the full text untagged
                     outPathFulltext = pathFullText + File.separator
-                        + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.fulltext");
+                        + baseName + ".training.fulltext";
                     writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFulltext), false), StandardCharsets.UTF_8);
                     writer.write(bodytext + "\n");
                     writer.close();
@@ -1634,44 +1632,40 @@ public class FullTextParser extends AbstractParser {
                     // write the TEI file to reflect the extract layout of the text as extracted from the pdf
                     writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                         File.separator +
-                        pdfFileName.replaceAll("(?i)\\.pdf$", ".training.fulltext.tei.xml")), false), StandardCharsets.UTF_8);
-                    if (id == -1) {
-                        writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader/>\n\t<text xml:lang=\"en\">\n");
-                    } else {
-                        writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"_" + id +
-                            "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"en\">\n");
-                    }
+                        baseName + ".training.fulltext.tei.xml"), false), StandardCharsets.UTF_8);
+                    writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\"" + baseName +
+                        "\"/>\n\t</teiHeader>\n\t<text xml:lang=\"en\">\n");
                     writer.write(bufferFulltext.toString());
                     writer.write("\n\t</text>\n</tei>\n");
                     writer.close();
 
                     // training data for FIGURES
-                    Pair<String, String> trainingFigure = processTrainingDataFigures(rese, tokenizationsBody, inputFile.getName());
+                    Pair<String, String> trainingFigure = processTrainingDataFigures(rese, tokenizationsBody, baseName);
                     if (trainingFigure.getLeft().trim().length() > 0) {
                         String outPathFigures = pathFullText + File.separator
-                            + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.figure");
+                            + baseName + ".training.figure";
                         writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFigures), false), StandardCharsets.UTF_8);
                         writer.write(trainingFigure.getRight() + "\n\n");
                         writer.close();
 
                         String outPathFiguresTEI = pathTEI + File.separator
-                            + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.figure.tei.xml");
+                            + baseName + ".training.figure.tei.xml";
                         writer = new OutputStreamWriter(new FileOutputStream(new File(outPathFiguresTEI), false), StandardCharsets.UTF_8);
                         writer.write(trainingFigure.getLeft() + "\n");
                         writer.close();
                     }
 
                     // training data for TABLES
-                    Pair<String, String> trainingTable = processTrainingDataTables(rese, tokenizationsBody, inputFile.getName());
+                    Pair<String, String> trainingTable = processTrainingDataTables(rese, tokenizationsBody, baseName);
                     if (trainingTable.getLeft().trim().length() > 0) {
                         String outPathTables = pathFullText + File.separator
-                            + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.table");
+                            + baseName + ".training.table";
                         writer = new OutputStreamWriter(new FileOutputStream(new File(outPathTables), false), StandardCharsets.UTF_8);
                         writer.write(trainingTable.getRight() + "\n\n");
                         writer.close();
 
                         String outPathTablesTEI = pathTEI + File.separator
-                            + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.table.tei.xml");
+                            + baseName + ".training.table.tei.xml";
                         writer = new OutputStreamWriter(new FileOutputStream(new File(outPathTablesTEI), false), StandardCharsets.UTF_8);
                         writer.write(trainingTable.getLeft() + "\n");
                         writer.close();
@@ -1700,7 +1694,7 @@ public class FullTextParser extends AbstractParser {
 
                 if ((header != null) && (header.trim().length() > 0)) {
                     // we write the header untagged
-                    String outPathHeader = pathTEI + File.separator + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.header");
+                    String outPathHeader = pathTEI + File.separator + baseName + ".training.header";
                     writer = new OutputStreamWriter(new FileOutputStream(new File(outPathHeader), false), StandardCharsets.UTF_8);
                     writer.write(header + "\n");
                     writer.close();
@@ -1815,9 +1809,9 @@ public class FullTextParser extends AbstractParser {
                     // write the training TEI file for header which reflects the extract layout of the text as
                     // extracted from the pdf
                     writer = new OutputStreamWriter(new FileOutputStream(new File(pathTEI + File.separator
-                        + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.header.tei.xml")), false), StandardCharsets.UTF_8);
+                        + baseName + ".training.header.tei.xml"), false), StandardCharsets.UTF_8);
                     writer.write("<?xml version=\"1.0\" ?>\n<tei xml:space=\"preserve\">\n\t<teiHeader>\n\t\t<fileDesc xml:id=\""
-                        + TextUtilities.sanitizeXmlId(pdfFileName.replaceAll("(?i)\\.pdf$", ""))
+                        + baseName
                         + "\"/>\n\t</teiHeader>\n\t<text");
 
                     if (lang != null) {
@@ -1834,7 +1828,7 @@ public class FullTextParser extends AbstractParser {
                         if (bufferAffiliation.length() > 0) {
                             Writer writerAffiliation = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                                 File.separator
-                                + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.header.affiliation.tei.xml")), false), StandardCharsets.UTF_8);
+                                + baseName + ".training.header.affiliation.tei.xml"), false), StandardCharsets.UTF_8);
                             writerAffiliation.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
                             writerAffiliation.write("\n<tei xml:space=\"preserve\" xmlns=\"http://www.tei-c.org/ns/1.0\""
                                 + " xmlns:xlink=\"http://www.w3.org/1999/xlink\" " + "xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">");
@@ -1855,7 +1849,7 @@ public class FullTextParser extends AbstractParser {
                         if (bufferDate.length() > 0) {
                             Writer writerDate = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                                 File.separator
-                                + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.header.date.xml")), false), StandardCharsets.UTF_8);
+                                + baseName + ".training.header.date.xml"), false), StandardCharsets.UTF_8);
                             writerDate.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
                             writerDate.write("<dates>\n");
 
@@ -1871,7 +1865,7 @@ public class FullTextParser extends AbstractParser {
                         if (bufferName.length() > 0) {
                             Writer writerName = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                                 File.separator
-                                + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.header.authors.tei.xml")), false), StandardCharsets.UTF_8);
+                                + baseName + ".training.header.authors.tei.xml"), false), StandardCharsets.UTF_8);
                             writerName.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
                             writerName.write("\n<tei xml:space=\"preserve\" xmlns=\"http://www.tei-c.org/ns/1.0\"" + " xmlns:xlink=\"http://www.w3.org/1999/xlink\" "
                                 + "xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">");
@@ -1894,7 +1888,7 @@ public class FullTextParser extends AbstractParser {
                         if (bufferReference.length() > 0) {
                             Writer writerReference = new OutputStreamWriter(new FileOutputStream(new File(pathTEI +
                                 File.separator
-                                + pdfFileName.replaceAll("(?i)\\.pdf$", ".training.header.reference.xml")), false), StandardCharsets.UTF_8);
+                                + baseName + ".training.header.reference.xml"), false), StandardCharsets.UTF_8);
                             writerReference.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
                             writerReference.write("<citations>\n");
 

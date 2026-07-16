@@ -16,6 +16,7 @@
 package org.grobid.trainer;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
@@ -161,24 +162,33 @@ public class HeaderTrainer extends AbstractTrainer {
                 File refDir2 = new File(headerPath);
                 String headerFile = null;
                 File[] refFiles2 = refDir2.listFiles();
+                // the pdf name is taken from the xml:id of the TEI; getPDFName() strips the
+                // leading underscore added when sanitizing the id, but recent training data
+                // keeps that underscore in the feature file name, so both forms are checked
+                List<String> pdfNames = new ArrayList<>();
+                if (parser.getPDFName() != null) {
+                    pdfNames.add(parser.getPDFName());
+                    pdfNames.add("_" + parser.getPDFName());
+                }
                 for (File aRefFiles2 : refFiles2) {
                     String localFileName = aRefFiles2.getName();
-                    if (parser.getPDFName() != null) {
-                        if (localFileName.equals(parser.getPDFName() + ".header") ||
-                                localFileName.equals(parser.getPDFName() + ".training.header")) {
+                    for (String pdfName : pdfNames) {
+                        if (localFileName.equals(pdfName + ".header") ||
+                                localFileName.equals(pdfName + ".training.header")) {
                             headerFile = localFileName;
                             break;
                         }
-                        if ((localFileName.startsWith(parser.getPDFName() + "._")) &&
+                        if ((localFileName.startsWith(pdfName + "._")) &&
                                 (localFileName.endsWith(".header") || localFileName.endsWith(".training.header"))) {
                             headerFile = localFileName;
                             break;
                         }
                     }
-                    if (headerFile == null) {
-                        if (localFileName.equals(name.replace(".tei.xml", ""))) {
-                            headerFile = localFileName;
-                        }
+                    if (headerFile != null) {
+                        break;
+                    }
+                    if (localFileName.equals(name.replace(".tei.xml", ""))) {
+                        headerFile = localFileName;
                     }
                 }
 

@@ -367,7 +367,7 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
         return resultList;
     }
 
-    public Pair<String, String> createTrainingData(Document doc, int id) {
+    public Pair<String, String> createTrainingData(Document doc, String id) {
         SortedSet<DocumentPiece> referencesParts = doc.getDocumentPart(SegmentationLabels.REFERENCES);
         Pair<String, List<LayoutToken>> featSeg = getReferencesSectionFeatured(doc, referencesParts);
         String res;
@@ -396,8 +396,8 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
                         +
                         "    <teiHeader>\n"
                         +
-                        "        <fileDesc xml:id=\"_"
-                        + id
+                        "        <fileDesc xml:id=\""
+                        + TextUtilities.sanitizeXmlId(id)
                         + "\"/>\n"
                         +
                         "    </teiHeader>\n"

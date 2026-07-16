@@ -100,13 +100,20 @@ public class IOUtilities {
      * Write an input stream in temp directory.
      */
     public static File writeInputFile(InputStream inputStream) {
+        return writeInputFile(inputStream, newTempFile("origin", ".pdf"));
+    }
+
+    /**
+     * Write an input stream to the given target file.
+     *
+     * @return the target file, or null if the file could not be written
+     */
+    public static File writeInputFile(InputStream inputStream, File targetFile) {
         LOGGER.debug(">> set origin document for stateless service'...");
 
-        File originFile = null;
+        File originFile = targetFile;
         OutputStream out = null;
         try {
-            originFile = newTempFile("origin", ".pdf");
-
             out = new FileOutputStream(originFile);
 
             byte buf[] = new byte[1024];

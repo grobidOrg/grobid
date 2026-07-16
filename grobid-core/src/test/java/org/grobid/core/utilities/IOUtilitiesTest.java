@@ -17,8 +17,11 @@ package org.grobid.core.utilities;
 
 import static org.junit.Assert.*;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 
 import org.junit.Test;
 
@@ -29,6 +32,24 @@ public class IOUtilitiesTest {
         File file = File.createTempFile("temp", "test");
         IOUtilities.writeInFile(file.getAbsolutePath(), getString());
         assertEquals("Not expected value", getString(), IOUtilities.readFile(file.getAbsolutePath()));
+    }
+
+    @Test
+    public void testWriteInputFileToTargetFile() throws IOException {
+        File targetDir = Files.createTempDirectory("writeInputFile-test").toFile();
+        File target = new File(targetDir, "002634.full.pdf");
+
+        File written = IOUtilities.writeInputFile(
+                new ByteArrayInputStream(getString().getBytes(StandardCharsets.UTF_8)),
+                target);
+
+        assertNotNull(written);
+        assertEquals(target.getAbsolutePath(), written.getAbsolutePath());
+        assertEquals("002634.full.pdf", written.getName());
+        assertEquals(getString(), new String(Files.readAllBytes(written.toPath()), StandardCharsets.UTF_8));
+
+        written.delete();
+        targetDir.delete();
     }
 
     private static String getString() {

@@ -39,6 +39,7 @@ import org.grobid.core.factory.GrobidPoolingFactory;
 import org.grobid.core.lang.Language;
 import org.grobid.core.utilities.Consolidation;
 import org.grobid.core.utilities.LanguageUtilities;
+import org.grobid.core.utilities.TextUtilities;
 import org.grobid.core.utilities.Utilities;
 import org.grobid.core.utilities.counters.CntManager;
 import org.grobid.core.utilities.counters.impl.CntManagerFactory;
@@ -691,8 +692,11 @@ public class Engine implements Closeable {
             // we process all pdf files in the directory
             File[] refFiles = path.listFiles(new FilenameFilter() {
                 public boolean accept(File dir, String name) {
-                    System.out.println(name);
-                    return name.endsWith(".pdf") || name.endsWith(".PDF");
+                    boolean isPdf = name.toLowerCase().endsWith(".pdf");
+                    if (isPdf) {
+                        System.out.println(name);
+                    }
+                    return isPdf;
                 }
             });
 
@@ -745,8 +749,11 @@ public class Engine implements Closeable {
             // we process all pdf files in the directory
             File[] refFiles = path.listFiles(new FilenameFilter() {
                 public boolean accept(File dir, String name) {
-                    System.out.println(name);
-                    return name.endsWith(".pdf") || name.endsWith(".PDF");
+                    boolean isPdf = name.toLowerCase().endsWith(".pdf");
+                    if (isPdf) {
+                        System.out.println(name);
+                    }
+                    return isPdf;
                 }
             });
 
@@ -798,8 +805,11 @@ public class Engine implements Closeable {
             // we process all pdf files in the directory
             File[] refFiles = path.listFiles(new FilenameFilter() {
                 public boolean accept(File dir, String name) {
-                    System.out.println(name);
-                    return name.endsWith(".pdf") || name.endsWith(".PDF");
+                    boolean isPdf = name.toLowerCase().endsWith(".pdf");
+                    if (isPdf) {
+                        System.out.println(name);
+                    }
+                    return isPdf;
                 }
             });
 
@@ -1211,9 +1221,17 @@ public class Engine implements Closeable {
                     if (bufferReference != null) {
                         bufferReference.append("\n");
 
-                        Writer writerReference = new OutputStreamWriter(new FileOutputStream(new File(resultPath +
-                                File.separator +
-                                txtFile.getName().replace(".txt", ".training.references.tei.xml")), false),
+                        // sanitized so that the training file name never starts with a digit,
+                        // keeping it identical to the xml:id value used in the TEI
+                        String baseName = TextUtilities.sanitizeXmlId(
+                                txtFile.getName().replaceAll("(?i)\\.txt$", ""));
+
+                        Writer writerReference = new OutputStreamWriter(new FileOutputStream(new File(resultPath
+                                +
+                                File.separator
+                                +
+                                baseName
+                                + ".training.references.tei.xml"), false),
                                 StandardCharsets.UTF_8);
 
                         writerReference.write(
@@ -1224,8 +1242,8 @@ public class Engine implements Closeable {
                                         "\n xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n");
 
                         writerReference.write(
-                                "\t<teiHeader>\n\t\t<fileDesc xml:id=\"_"
-                                        + n
+                                "\t<teiHeader>\n\t\t<fileDesc xml:id=\""
+                                        + baseName
                                         +
                                         "\"/>\n\t</teiHeader>\n\t<text>\n\t\t<front/>\n\t\t<body/>\n\t\t<back>\n");
 
