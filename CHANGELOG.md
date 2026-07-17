@@ -7,18 +7,56 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
-- Training web API: list ongoing trainings (`GET /api/allTraining`) and interrupt a running training (`DELETE /api/killTraining`). Killing a training releases the per-model lock so the model can be retrained; interruption is best-effort for native (Wapiti/DeLFT) back-ends.
+- Training web API: list ongoing trainings (`GET /api/allTraining`) and interrupt a running training (`DELETE /api/killTraining`). Killing a training releases the per-model lock so the model can be retrained; interruption is best-effort for native (Wapiti/DeLFT) back-ends #1483
+- Development / model debug API exposing the first-level models, for inspecting intermediate results #1439
+- Optional push-based export of JVM/process runtime metrics over OTLP (OpenTelemetry Protocol) to a collector or hosted backend, complementing the pull-based Prometheus scrape endpoint #1479
+- The `/metrics/prometheus` admin endpoint now serves the Prometheus exposition format (instead of Dropwizard JSON) and includes JVM/process metrics; added documentation for setting up a Prometheus/Grafana monitoring dashboard #1473
+- Affiliation evaluation in the end-to-end evaluation: a linking-aware `affiliation_linked` metric in the HEADER section pairs each author with its gold counterpart and compares the attached affiliations #1493 #1467
+- Rootless Docker images (Kubernetes/OpenShift friendly) #1442
+- Fail fast at startup with a clear error when the grobid-home path contains spaces and Wapiti is the configured engine, instead of failing mysteriously at model load time #1481
+- Apache 2.0 licence headers in source files #1485
+- Documentation: community page and CI check for broken links #1447, PDF-TEI Editor reference #1448, instructions for adding new model flavors #1465
+- CI: CodeQL code analysis workflow #1475, dependabot updates for GitHub Actions #1494, runs on forks without publishing credentials #1451
 
 ### Changed
-- Lexicon: introduced `Lexicon.builder()` to optionally pre-load chosen gazetteers *eagerly* (`.withDefaults()`, `.withJournals()`, `.withFunders()`, `.withOrganisations()`, etc.). Loading stays **lazy by default**: any gazetteer not named in the builder loads transparently on first lookup, so a `Lexicon` from any entry point is always fully functional and never throws for a missing gazetteer — `withX()` only controls *when* a gazetteer loads, not whether a lookup succeeds. `withDefaults()` eagerly loads the original constructor's set (wordforms, people, countries). `Lexicon.getInstance()` is now `@Deprecated` (prefer the builder) but its behavior is unchanged: eager wordforms/people/countries, everything else lazy.
+- Reworked author–affiliation linking: extracted from `HeaderParser` into a dedicated, unit-tested `AuthorAffiliationAssigner` with a priority-based strategy (single-author/affiliation distribution, direct marker matching, raw-string marker search, layout-coordinate proximity, sequential fallback). Markerless authors are no longer blanket-assigned when their peers carry explicit markers, and content-duplicate affiliations are collapsed #1467
+- Extracted affiliations are preserved when header consolidation rewrites authors, via staged reconciliation: exact surname+forename match, high-threshold soft last-name match, then positional allocation with guards against false positives #1488
+- Parallelized the scoring phase of the end-to-end evaluation (from ~20 minutes to ~2 minutes on average); the Python evaluation script can now verify upfront that models, consolidation configuration, and biblio-glutton are correctly set up #1487
+- Sentence segmentation re-alignment rewritten as a forward two-pointer alignment that cannot drift and never drops text (including paragraph-final footnotes/citations); language detection made thread-safe, fixing nondeterministic text loss under concurrent requests #1457
+- Tokenization in `PDFALTOSaxHandler` is now language-sensitive instead of always using the default analyzer #1480
+- Only one training per model can run at a time: a second request for a model whose training is still in progress is rejected with 409 Conflict (flavor variants are distinct models and do not block each other) #1477
+- Uniformed training-data file generation between the web API and batch mode, with automatic closing of resources #1508
+- Lexicon: introduced `Lexicon.builder()` to optionally pre-load chosen gazetteers *eagerly* (`.withDefaults()`, `.withJournals()`, `.withFunders()`, `.withOrganisations()`, etc.). Loading stays **lazy by default**: any gazetteer not named in the builder loads transparently on first lookup, so a `Lexicon` from any entry point is always fully functional and never throws for a missing gazetteer — `withX()` only controls *when* a gazetteer loads, not whether a lookup succeeds. `withDefaults()` eagerly loads the original constructor's set (wordforms, people, countries). `Lexicon.getInstance()` is now `@Deprecated` (prefer the builder) but its behavior is unchanged: eager wordforms/people/countries, everything else lazy #1440
 - Lexicon: added 4 missing ISO 3166-1 country codes (BQ, CW, SS, SX) and migrated AN (Netherlands Antilles) to its ISO 3166-3 transitional form ANHH.
-- Documentation: expanded the End-to-end evaluation guide (dedicated multi-dataset runner-script section for `run_evaluation.sh` with an options table and more invocation examples) and the Configuration reference; recorded the Hugging Face DOI (10.57967/hf/9553) for the `grobid-evaluation` dataset.
+- Documentation: expanded the End-to-end evaluation guide (dedicated multi-dataset runner-script section for `run_evaluation.sh` with an options table and more invocation examples) and the Configuration reference; recorded the Hugging Face DOI (10.57967/hf/9553) for the `grobid-evaluation` dataset; various corrections and updated Crossref links #1419 #1430 #1501
+- Dependency updates: Apache OpenNLP 1.9.4 → 2.5, Jetty, jackson 2.21.4, DeLFT 0.4.6; dropped unused dependencies (mockk, commons-dbutils, jackson-afterburner, javax.activation, stringmetric) #1449 #1469 #1423
+- Replaced Powermock with Mockito #1458
+- Adopted Spotless for code formatting #1384, rewrote `toString()` and other overloaded methods #1401, added codespell spell-checking (restricted in CI to documentation) #1365 #1450 #1478
+
+### Fixed
+- JVM shutdown deadlock when closing JEP Python interpreters: close is now delegated to the owning worker thread, executor threads are named daemons, and shutdown is idempotent — the JVM no longer hangs after DeLFT evaluations #1506
+- HTTP 500 from `processFulltextDocument` when two footnotes share the same superscript marker, caused by a malformed (reversed) callout interval in `toTEITextPiece`; such callouts now gracefully fall back to plain text #1472 (also fixes a regression introduced by the Lexicon refactoring #1440)
+- TEI paragraph boundaries no longer collapse when a paragraph starts right after a trailing reference marker #1482
+- Invalid/unbalanced XML in generated training data across models (unclosed `<p>` after reference markers, stray table tags, spurious figure `</content>`, consecutive same-label blocks, markers inside non-paragraph blocks, multi-token affiliation markers) #1470, and unclosed `<bibl>` before `<other>` in reference-segmenter training data #1466
+- `xml:id` values in generated training files are now valid NCNames #1508
+- NPE in reference-segmenter training-data generation after segmentation retraining #1490
+- Document language is detected for segmentation training data instead of hardcoding `xml:lang="en"` #1460
+- Textual year/month/day fields stay in sync with the normalized publication date for library callers and non-TEI output paths #1463
+- `TextUtilities.clean()` no longer folds the letters æ/Æ and œ/Œ to ASCII "ae"/"oe"; typographic ligature expansion (fi/fl/ff) is unchanged #1461
+- Guard against out-of-range page index in citation annotation, which surfaced as HTTP 500 on malformed PDFs #1459
+- Model selection with mixed DeLFT/Wapiti engines and flavor selections, with clearer logging when a flavor falls back to the base model #1455
+- Citations consisting only of non-breaking spaces now return 204 No Content instead of HTTP 500 #1407
+- biblio-glutton health probe in the evaluation configuration check now targets an existing endpoint (`/service/data`) instead of always reporting a healthy glutton as unreachable #1492
+- Block/segmentation desync warning now includes the page number and a text excerpt so occurrences can be located and reproduced #1471
+- `./gradlew install` #1427, git revision information #1433, and Docker image summary #1429
 
 ### Security
-- Prevent command injection through crafted PDF file names in the non-server `pdfalto` path: the command is no longer interpolated into a `bash -c` string but passed as positional parameters and exec'd via `"$@"` (GHSA-mgxf-7mg7-qpmf).
-- Stop leaking a JVM thread per request on the `/api/modelTraining` endpoint by shutting down the per-request executor (GHSA-g2r5-4c8r-c84f).
-- Remove the vulnerable JLine telnet server module from the classpath by depending on `jline-terminal` only instead of the `org.jline:jline` uber-jar pulled in transitively by `progressbar` (GHSA-47qp-hqvx-6r3f, GHSA-2r2c-cx56-8933).
-- Upgrade jackson (core, databind, afterburner, dataformat-yaml) to 2.21.4 to address CVE-2026-54513 (array-element type allowlist bypass in polymorphic type validation).
+- Prevent command injection through crafted PDF file names in the non-server `pdfalto` path: the command is no longer interpolated into a `bash -c` string but passed as positional parameters and exec'd via `"$@"` (GHSA-mgxf-7mg7-qpmf) #1477
+- Stop leaking a JVM thread per request on the `/api/modelTraining` endpoint by shutting down the per-request executor (GHSA-g2r5-4c8r-c84f) #1477
+- Remove the vulnerable JLine telnet server module from the classpath by depending on `jline-terminal` only instead of the `org.jline:jline` uber-jar pulled in transitively by `progressbar` (GHSA-47qp-hqvx-6r3f, GHSA-2r2c-cx56-8933) #1469
+- Upgrade jackson (core, databind, afterburner, dataformat-yaml) to 2.21.4 to address CVE-2026-54513 (array-element type allowlist bypass in polymorphic type validation) #1469
+- Upgrade Apache OpenNLP to 2.5 (arbitrary class loading via model manifest) and Jetty (HTTP request smuggling via chunked extension quoted-string parsing) #1449
+- Harden `ZipUtils` against zip-slip: each entry's canonical output path is validated against the target directory before any write (flagged by CodeQL) #1486
 
 ## [0.9.0] - 2026-04-07
 
