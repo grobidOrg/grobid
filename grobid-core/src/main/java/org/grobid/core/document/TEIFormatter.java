@@ -1610,31 +1610,29 @@ public class TEIFormatter {
     }
 
     /**
-     * Result of matching the section heads of a text piece against the PDF outline. Depths are
-     * keyed by cluster identity (not head text, which can repeat across a document).
+     * Result of matching the section heads of a text piece against the PDF outline. The matched
+     * outline node is kept per SECTION cluster (keyed by cluster identity, not head text, which can
+     * repeat across a document) so that grouping can test ancestry rather than raw depth.
      */
-    static class SectionDepthInfo {
-        final Map<TaggingTokenCluster, Integer> depths;
-        final int minDepth;
+    static class SectionGroupingInfo {
+        final Map<TaggingTokenCluster, DocumentNode> nodes;
         // true when outline-based head structuring should be applied to this text piece
         final boolean active;
 
-        SectionDepthInfo(Map<TaggingTokenCluster, Integer> depths, int minDepth, boolean active) {
-            this.depths = depths;
-            this.minDepth = minDepth;
+        SectionGroupingInfo(Map<TaggingTokenCluster, DocumentNode> nodes, boolean active) {
+            this.nodes = nodes;
             this.active = active;
         }
     }
 
     /**
-     * Match the SECTION clusters of a text piece against the document outline and record the outline
-     * depth of each matched head. Outline structuring is only activated when the piece contains at
+     * Match the SECTION clusters of a text piece against the document outline and record the matched
+     * outline node of each head. Outline structuring is only activated when the piece contains at
      * least one pair of adjacent section heads (evidence of a head/sub-head hierarchy) and at least
      * one head could be located in the outline.
      */
-    static SectionDepthInfo computeSectionDepths(List<TaggingTokenCluster> clusters, DocumentNode outlineRoot) {
-        Map<TaggingTokenCluster, Integer> depths = new IdentityHashMap<>();
-        int minDepth = Integer.MAX_VALUE;
+    static SectionGroupingInfo computeSectionNodes(List<TaggingTokenCluster> clusters, DocumentNode outlineRoot) {
+        Map<TaggingTokenCluster, DocumentNode> nodes = new IdentityHashMap<>();
 
         boolean hasAdjacentSectionHeads = false;
         TaggingLabel previousLabel = null;
@@ -1655,16 +1653,82 @@ public class TEIFormatter {
                     continue;
                 }
                 String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(cluster.concatTokens());
-                int depth = DocumentNode.findNodeDepth(outlineRoot, clusterContent, 0);
-                if (depth > 0) {
-                    depths.put(cluster, depth);
-                    minDepth = Math.min(minDepth, depth);
+                DocumentNode node = findOutlineNodeForHead(outlineRoot, clusterContent);
+                // ignore a match on the outline root itself (e.g. the article title): a body section
+                // head is never the root, and the root has no meaningful ancestry to group under
+                if (node != null && node != outlineRoot) {
+                    nodes.put(cluster, node);
                 }
             }
         }
 
-        boolean active = hasAdjacentSectionHeads && !depths.isEmpty();
-        return new SectionDepthInfo(depths, minDepth, active);
+        boolean active = hasAdjacentSectionHeads && !nodes.isEmpty();
+        return new SectionGroupingInfo(nodes, active);
+    }
+
+    /**
+     * Locate the outline node matching a section head. Tries the head as labelled first, so that the
+     * section number keeps disambiguating same-titled sections. Many outlines however store the title
+     * without its number ("Results" for a "2. Results" head), which a short label pushes below the
+     * similarity threshold, so fall back to the number-stripped title.
+     */
+    static DocumentNode findOutlineNodeForHead(DocumentNode outlineRoot, String headText) {
+        DocumentNode node = DocumentNode.findNode(outlineRoot, headText);
+        if (node == null) {
+            org.grobid.core.utilities.Pair<String, String> numb = getSectionNumber(headText);
+            if (numb != null && StringUtils.isNotBlank(numb.a)) {
+                node = DocumentNode.findNode(outlineRoot, numb.a);
+            }
+        }
+        return node;
+    }
+
+    private static final Pattern DOTTED_DECIMAL = Pattern.compile("\\d+(\\.\\d+)*\\.?");
+
+    /**
+     * True when both {@code parentNumber} and {@code childNumber} are dotted-decimal section numbers
+     * (e.g. "2", "3.1.") and the child is NOT a numeric descendant of the parent — i.e. the numbering
+     * says they belong to different branches (a sibling "3" under "2", or an unrelated "4.1" under
+     * "2"). Used as a guard so a degenerate PDF outline cannot fold numerically-unrelated sections
+     * together. Returns false whenever either number is absent or non-decimal (roman/letter/none),
+     * leaving the decision to the outline alone.
+     */
+    static boolean numberingContradictsNesting(String parentNumber, String childNumber) {
+        int[] parent = parseDottedDecimal(parentNumber);
+        int[] child = parseDottedDecimal(childNumber);
+        if (parent == null || child == null) {
+            return false;
+        }
+        // numeric descendant: child strictly extends parent (parent is a prefix of child)
+        if (child.length <= parent.length) {
+            return true;
+        }
+        for (int i = 0; i < parent.length; i++) {
+            if (child[i] != parent[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static int[] parseDottedDecimal(String number) {
+        if (number == null) {
+            return null;
+        }
+        String trimmed = number.trim();
+        if (trimmed.isEmpty() || !DOTTED_DECIMAL.matcher(trimmed).matches()) {
+            return null;
+        }
+        String[] parts = trimmed.replaceAll("\\.$", "").split("\\.");
+        int[] result = new int[parts.length];
+        for (int i = 0; i < parts.length; i++) {
+            try {
+                result[i] = Integer.parseInt(parts[i]);
+            } catch (NumberFormatException e) {
+                return null;
+            }
+        }
+        return result;
     }
 
     public StringBuilder toTEITextPiece(
@@ -1699,8 +1763,11 @@ public class TEIFormatter {
         // When the PDF provides an outline (table of content) and the section heads form a
         // hierarchy (i.e. some heads are sub-heads of others), we use the outline to keep sub-heads
         // inside their parent section's <div> instead of opening a new (empty) <div> per head.
-        SectionDepthInfo sectionDepthInfo = computeSectionDepths(clusters, doc.getOutlineRoot());
-        boolean useOutlineStructuring = sectionDepthInfo.active;
+        SectionGroupingInfo sectionGroupingInfo = computeSectionNodes(clusters, doc.getOutlineRoot());
+        boolean useOutlineStructuring = sectionGroupingInfo.active;
+        // outline node and section number of the head that opened the current div (when available)
+        DocumentNode currentDivHeadNode = null;
+        String currentDivHeadNumber = null;
 
         Element curDiv = teiElement("div");
         if (config.isGenerateTeiIds()) {
@@ -1721,19 +1788,29 @@ public class TEIFormatter {
             Engine.getCntManager().i(clusterLabel);
             if (clusterLabel.equals(TaggingLabels.SECTION)) {
                 String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(cluster.concatTokens());
-                // A new <div> opens at outline-confirmed main-level heads (depth == minDepth) and,
-                // as a safety fallback, at heads not found in the outline. Sub-heads (deeper in the
-                // outline) append their <head> into the current div, so a main head no longer ends
-                // up alone in an empty container. When outline structuring is inactive this reduces
-                // to the legacy behavior: one div per head.
-                Integer depth = sectionDepthInfo.depths.get(cluster);
-                boolean openNewDiv = !useOutlineStructuring || depth == null || depth == sectionDepthInfo.minDepth;
-                if (openNewDiv) {
-                    curDiv = teiElement("div");
-                }
-                Element head = teiElement("head");
                 // section numbers
                 org.grobid.core.utilities.Pair<String, String> numb = getSectionNumber(clusterContent);
+                String headNumber = numb != null ? numb.b : null;
+                // A sub-head folds into the current section's <div> only when the outline says it is
+                // a descendant of the head that opened that div. Any other head — a new top section,
+                // an unmatched head, or a sub-head whose parent heading was missed by the sequence
+                // labeller — opens a fresh <div>. Testing ancestry (rather than raw depth) keeps a
+                // missed mid-level heading from pulling the next section's sub-heads into the wrong
+                // div. As a second, independent signal, when both heads carry a dotted-decimal number
+                // the sub-head number must also be a numeric descendant, which overrides a degenerate
+                // PDF outline that linearly nests unrelated sections. When outline structuring is
+                // inactive this reduces to one div per head.
+                DocumentNode headNode = sectionGroupingInfo.nodes.get(cluster);
+                boolean openNewDiv = !useOutlineStructuring
+                        || headNode == null
+                        || !DocumentNode.isDescendantOf(headNode, currentDivHeadNode)
+                        || numberingContradictsNesting(currentDivHeadNumber, headNumber);
+                if (openNewDiv) {
+                    curDiv = teiElement("div");
+                    currentDivHeadNode = headNode;
+                    currentDivHeadNumber = headNumber;
+                }
+                Element head = teiElement("head");
                 if (numb != null) {
                     head.addAttribute(new Attribute("n", numb.b));
                     head.appendChild(numb.a);
@@ -2461,7 +2538,7 @@ public class TEIFormatter {
         return result;
     }
 
-    private org.grobid.core.utilities.Pair<String, String> getSectionNumber(String text) {
+    private static org.grobid.core.utilities.Pair<String, String> getSectionNumber(String text) {
         Matcher m1 = BasicStructureBuilder.headerNumbering1.matcher(text);
         Matcher m2 = BasicStructureBuilder.headerNumbering2.matcher(text);
         Matcher m3 = BasicStructureBuilder.headerNumbering3.matcher(text);

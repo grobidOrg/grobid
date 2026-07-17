@@ -32,7 +32,7 @@ import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Figure;
 import org.grobid.core.data.Note;
 import org.grobid.core.data.Table;
-import org.grobid.core.document.TEIFormatter.SectionDepthInfo;
+import org.grobid.core.document.TEIFormatter.SectionGroupingInfo;
 import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.tokenization.LabeledTokensContainer;
@@ -443,25 +443,29 @@ public class TEIFormatterTest {
         return cluster;
     }
 
-    // outline: root -> title -> "2 Methods" -> "2.1 Data"
+    // outline: root -> title -> { "2 Methods" -> "2.1 Data", "3 Results" -> "3.1 Findings" }
     private static DocumentNode buildOutline() {
         DocumentNode root = new DocumentNode();
         DocumentNode title = new DocumentNode("Some Article Title", null);
         DocumentNode methods = new DocumentNode("2 Methods", null);
         DocumentNode data = new DocumentNode("2.1 Data", null);
+        DocumentNode results = new DocumentNode("3 Results", null);
+        DocumentNode findings = new DocumentNode("3.1 Findings", null);
         root.addChild(title);
         title.addChild(methods);
         methods.addChild(data);
+        title.addChild(results);
+        results.addChild(findings);
         return root;
     }
 
     @Test
-    public void testComputeSectionDepths_inactiveWithoutAdjacentHeads() {
+    public void testComputeSectionNodes_inactiveWithoutAdjacentHeads() {
         TaggingTokenCluster methods = sectionCluster("2 Methods");
         TaggingTokenCluster para = paragraphCluster("Some body text.");
         TaggingTokenCluster data = sectionCluster("2.1 Data");
 
-        SectionDepthInfo info = TEIFormatter.computeSectionDepths(
+        SectionGroupingInfo info = TEIFormatter.computeSectionNodes(
                 List.of(methods, para, data),
                 buildOutline());
 
@@ -470,48 +474,101 @@ public class TEIFormatterTest {
     }
 
     @Test
-    public void testComputeSectionDepths_inactiveWithoutOutline() {
+    public void testComputeSectionNodes_inactiveWithoutOutline() {
         TaggingTokenCluster methods = sectionCluster("2 Methods");
         TaggingTokenCluster data = sectionCluster("2.1 Data");
 
-        SectionDepthInfo info = TEIFormatter.computeSectionDepths(List.of(methods, data), null);
+        SectionGroupingInfo info = TEIFormatter.computeSectionNodes(List.of(methods, data), null);
 
         assertThat(info.active, is(false));
     }
 
     @Test
-    public void testComputeSectionDepths_mainHeadOpensDivSubHeadDoesNot() {
+    public void testComputeSectionNodes_subHeadIsDescendantOfMainHead() {
         TaggingTokenCluster methods = sectionCluster("2 Methods");
         TaggingTokenCluster data = sectionCluster("2.1 Data");
         TaggingTokenCluster para = paragraphCluster("Body of the data section.");
 
-        SectionDepthInfo info = TEIFormatter.computeSectionDepths(
+        SectionGroupingInfo info = TEIFormatter.computeSectionNodes(
                 List.of(methods, data, para),
                 buildOutline());
 
         assertThat(info.active, is(true));
-        assertThat(info.minDepth, is(2));
-        // main head is at the minimum matched depth -> opens a new div
-        assertThat(info.depths.get(methods), is(2));
-        assertThat(info.depths.get(methods) == info.minDepth, is(true));
-        // sub head is deeper -> stays inside the current div
-        assertThat(info.depths.get(data), is(3));
-        assertThat(info.depths.get(data) == info.minDepth, is(false));
+        // the sub-head is a descendant of the main head -> it folds into the same div
+        assertThat(
+                DocumentNode.isDescendantOf(info.nodes.get(data), info.nodes.get(methods)),
+                is(true));
     }
 
     @Test
-    public void testComputeSectionDepths_unmatchedHeadNotRecorded() {
+    public void testComputeSectionNodes_missedParentHeadDoesNotFoldSubHead() {
+        // GROBID missed the "3 Results" heading: its sub-head "3.1 Findings" appears right after the
+        // "2 Methods" section. It must NOT be treated as a descendant of Methods (else it would fold
+        // into the Methods div), so grouping degrades to opening a fresh div for it.
+        TaggingTokenCluster methods = sectionCluster("2 Methods");
+        TaggingTokenCluster data = sectionCluster("2.1 Data");
+        TaggingTokenCluster findings = sectionCluster("3.1 Findings");
+
+        SectionGroupingInfo info = TEIFormatter.computeSectionNodes(
+                List.of(methods, data, findings),
+                buildOutline());
+
+        assertThat(info.active, is(true));
+        assertThat(
+                DocumentNode.isDescendantOf(info.nodes.get(findings), info.nodes.get(methods)),
+                is(false));
+    }
+
+    @Test
+    public void testFindOutlineNodeForHead_matchesWhenOutlineOmitsSectionNumber() {
+        // Many outlines store the plain title while the detected head carries a number. A short
+        // title like "Results" scores below the similarity threshold against "2. Results", so the
+        // number-stripped fallback is what makes the parent head matchable at all.
+        DocumentNode root = new DocumentNode();
+        DocumentNode results = new DocumentNode("Results", null);
+        DocumentNode sub = new DocumentNode("Design of Primers for U. virens Detection", null);
+        root.addChild(results);
+        results.addChild(sub);
+
+        assertThat(TEIFormatter.findOutlineNodeForHead(root, "2. Results"), is(results));
+        // the long sub-head still matches directly, number prefix and all
+        assertThat(
+                TEIFormatter.findOutlineNodeForHead(root, "2.1. Design of Primers for U. virens Detection"),
+                is(sub));
+        // and the sub-head is a descendant of the now-matched parent -> it can fold in
+        assertThat(DocumentNode.isDescendantOf(sub, results), is(true));
+    }
+
+    @Test
+    public void testNumberingContradictsNesting() {
+        // consistent nesting -> does not contradict
+        assertThat(TEIFormatter.numberingContradictsNesting("2", "2.1"), is(false));
+        assertThat(TEIFormatter.numberingContradictsNesting("2.", "2.3.1"), is(false));
+        assertThat(TEIFormatter.numberingContradictsNesting("3.1", "3.1.2"), is(false));
+        // sibling or unrelated -> contradicts (guards against a degenerate outline)
+        assertThat(TEIFormatter.numberingContradictsNesting("2", "3"), is(true));
+        assertThat(TEIFormatter.numberingContradictsNesting("2", "3.1"), is(true));
+        assertThat(TEIFormatter.numberingContradictsNesting("2.1", "2.2"), is(true));
+        assertThat(TEIFormatter.numberingContradictsNesting("2", "2"), is(true));
+        // missing / non-decimal numbering (roman, letter, none) -> defer to the outline, no contradiction
+        assertThat(TEIFormatter.numberingContradictsNesting(null, "2.1"), is(false));
+        assertThat(TEIFormatter.numberingContradictsNesting("II", "1"), is(false));
+        assertThat(TEIFormatter.numberingContradictsNesting("A", "2"), is(false));
+    }
+
+    @Test
+    public void testComputeSectionNodes_unmatchedHeadNotRecorded() {
         TaggingTokenCluster methods = sectionCluster("2 Methods");
         TaggingTokenCluster data = sectionCluster("2.1 Data");
         // a head that does not exist in the outline: must not be recorded (falls back to a new div)
         TaggingTokenCluster unknown = sectionCluster("Appendix Z Nonexistent");
 
-        SectionDepthInfo info = TEIFormatter.computeSectionDepths(
+        SectionGroupingInfo info = TEIFormatter.computeSectionNodes(
                 List.of(methods, data, unknown),
                 buildOutline());
 
         assertThat(info.active, is(true));
-        assertThat(info.depths.containsKey(unknown), is(false));
+        assertThat(info.nodes.containsKey(unknown), is(false));
     }
 
 }

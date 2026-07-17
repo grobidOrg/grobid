@@ -254,25 +254,63 @@ public class DocumentNode {
      * @return the depth of the first matching node, or -1 if no node matches
      */
     public static int findNodeDepth(DocumentNode rootNode, String label, int depth) {
-        if (rootNode == null || label == null) {
+        DocumentNode node = findNode(rootNode, label);
+        if (node == null) {
             return -1;
+        }
+        int d = depth;
+        DocumentNode cursor = node;
+        while (cursor != rootNode && cursor.getFather() != null) {
+            d++;
+            cursor = cursor.getFather();
+        }
+        return d;
+    }
+
+    /**
+     * Find the first node in the hierarchy rooted at {@code rootNode} whose label softly matches
+     * {@code label} (depth-first). Returns the matching node itself, or null if none matches.
+     */
+    public static DocumentNode findNode(DocumentNode rootNode, String label) {
+        if (rootNode == null || label == null) {
+            return null;
         }
         String normalizedLabel = normalizeForMatching(label);
         String nodeLabel = normalizeForMatching(rootNode.getLabel());
         if (StringUtils.isNotBlank(nodeLabel)) {
             double score = TextUtilities.getRatcliffObershelpSimilarity(nodeLabel, normalizedLabel, false);
             if (score >= NODE_MATCH_THRESHOLD) {
-                return depth;
+                return rootNode;
             }
         }
         if (rootNode.getChildren() != null) {
             for (DocumentNode child : rootNode.getChildren()) {
-                int childDepth = findNodeDepth(child, label, depth + 1);
-                if (childDepth != -1) {
-                    return childDepth;
+                DocumentNode found = findNode(child, label);
+                if (found != null) {
+                    return found;
                 }
             }
         }
-        return -1;
+        return null;
+    }
+
+    /**
+     * Whether {@code node} is a strict descendant of {@code ancestor} in the outline tree, walking
+     * the father chain. Used to decide whether a sub-head belongs under the currently open section:
+     * if its outline parent heading was missed by the sequence labeller, the sub-head is not a
+     * descendant of the open section and must start a new div rather than fold into it.
+     */
+    public static boolean isDescendantOf(DocumentNode node, DocumentNode ancestor) {
+        if (node == null || ancestor == null) {
+            return false;
+        }
+        DocumentNode cursor = node.getFather();
+        while (cursor != null) {
+            if (cursor == ancestor) {
+                return true;
+            }
+            cursor = cursor.getFather();
+        }
+        return false;
     }
 }
