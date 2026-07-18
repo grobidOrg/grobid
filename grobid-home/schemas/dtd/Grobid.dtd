@@ -1539,7 +1539,8 @@ value CDATA  #IMPLIED >
  %tei_att.global.attributes;
  %tei_att.typed.attributes;
  %tei_att.placement.attributes;
- %tei_att.written.attributes; >
+ %tei_att.written.attributes;
+ level CDATA #IMPLIED >
 <!--doc:(highlighted) marks a word or phrase as graphically distinct from the surrounding text, for reasons concerning which no claim is made. [3.3.2.2. Emphatic Words and Phrases 3.3.2. Emphasis, Foreign Words, and Unusual Language] -->
 <!ELEMENT hi %macro.paraContent;>
 <!ATTLIST hi xmlns CDATA "http://www.tei-c.org/ns/1.0">

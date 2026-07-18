@@ -3583,6 +3583,7 @@ Suggested values include: 1] gloss (gloss); 2] index (index); 3] instructions (i
       <xs:attributeGroup ref="tei:tei_att.typed.attributes"/>
       <xs:attributeGroup ref="tei:tei_att.placement.attributes"/>
       <xs:attributeGroup ref="tei:tei_att.written.attributes"/>
+      <xs:attribute name="level" type="xs:string"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="note">
