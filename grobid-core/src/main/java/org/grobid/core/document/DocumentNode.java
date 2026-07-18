@@ -293,24 +293,4 @@ public class DocumentNode {
         }
         return null;
     }
-
-    /**
-     * Whether {@code node} is a strict descendant of {@code ancestor} in the outline tree, walking
-     * the father chain. Used to decide whether a sub-head belongs under the currently open section:
-     * if its outline parent heading was missed by the sequence labeller, the sub-head is not a
-     * descendant of the open section and must start a new div rather than fold into it.
-     */
-    public static boolean isDescendantOf(DocumentNode node, DocumentNode ancestor) {
-        if (node == null || ancestor == null) {
-            return false;
-        }
-        DocumentNode cursor = node.getFather();
-        while (cursor != null) {
-            if (cursor == ancestor) {
-                return true;
-            }
-            cursor = cursor.getFather();
-        }
-        return false;
-    }
 }

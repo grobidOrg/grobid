@@ -73,7 +73,7 @@ class DocumentNodeTest {
     }
 
     @Test
-    fun testFindNodeAndDescendant() {
+    fun testFindNode() {
         // root -> title -> { methods -> data , results -> findings }
         val root = DocumentNode("root", "0")
         val title = DocumentNode("Some Article Title", null)
@@ -90,15 +90,11 @@ class DocumentNodeTest {
         // findNode returns the matched node itself
         assertEquals(methods, DocumentNode.findNode(root, "2 Methods"))
         assertEquals(data, DocumentNode.findNode(root, "2.1 Data"))
+        assertEquals(findings, DocumentNode.findNode(root, "3.1 Findings"))
         assertEquals(null, DocumentNode.findNode(root, "Nonexistent section"))
 
-        // ancestry: a sub-head belongs under its true parent, not a sibling section
-        assertEquals(true, DocumentNode.isDescendantOf(data, methods))
-        assertEquals(true, DocumentNode.isDescendantOf(findings, results))
-        assertEquals(true, DocumentNode.isDescendantOf(data, title)) // transitive
-        // the missed-parent case: 3.1 Findings is NOT a descendant of 2 Methods
-        assertEquals(false, DocumentNode.isDescendantOf(findings, methods))
-        assertEquals(false, DocumentNode.isDescendantOf(methods, methods)) // not a descendant of itself
-        assertEquals(false, DocumentNode.isDescendantOf(methods, data)) // parent is not descendant of child
+        // findNodeDepth measures from the passed root (depth 0): title=1, section=2, sub=3
+        assertEquals(2, DocumentNode.findNodeDepth(root, "2 Methods", 0))
+        assertEquals(3, DocumentNode.findNodeDepth(root, "2.1 Data", 0))
     }
 }
