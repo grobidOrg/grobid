@@ -303,5 +303,6 @@ Evaluation on 1943 random PDF files out of 1941 PDF (ratio 1.0).
 | **all fields (micro avg.)** | **0**     | **0**  | **0** | 0       |
 | all fields (macro avg.)     | 0         | 0      | 0     | 0       |
 
-Evaluation metrics produced in 164.25 seconds
+Evaluation metrics produced in 285.628 seconds
+
 

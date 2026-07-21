@@ -288,7 +288,7 @@ Evaluation on 1999 random PDF files out of 1998 PDF (ratio 1.0).
 | figure_title                | 4.25      | 2.36      | 3.03      | 22972   |
 | funding_stmt                | 3.84      | 23.96     | 6.62      | 747     |
 | reference_citation          | 71.96     | 70.95     | 71.45     | 147455  |
-| reference_figure            | 70.31     | 76.99     | 73.5      | 47976   |
+| reference_figure            | 70.31     | 76.98     | 73.5      | 47976   |
 | reference_table             | 45.11     | 84.74     | 58.88     | 5956    |
 | section_title               | 69.08     | 68.62     | 68.85     | 32391   |
 | table_title                 | 6.98      | 2.55      | 3.73      | 3924    |
@@ -308,7 +308,7 @@ Evaluation on 1999 random PDF files out of 1998 PDF (ratio 1.0).
 | figure_title                | 66.77     | 36.97     | 47.59     | 22972   |
 | funding_stmt                | 4.1       | 25.57     | 7.06      | 747     |
 | reference_citation          | 84.29     | 83.11     | 83.69     | 147455  |
-| reference_figure            | 70.97     | 77.71     | 74.19     | 47976   |
+| reference_figure            | 70.97     | 77.7      | 74.18     | 47976   |
 | reference_table             | 45.5      | 85.48     | 59.39     | 5956    |
 | section_title               | 74.49     | 74        | 74.25     | 32391   |
 | table_title                 | 81.22     | 29.64     | 43.43     | 3924    |
@@ -327,4 +327,5 @@ Evaluation on 1999 random PDF files out of 1998 PDF (ratio 1.0).
 | **all fields (micro avg.)** | **89.88** | **96.09** | **92.88** | 1664    |
 | all fields (macro avg.)     | 89.62     | 96.2      | 92.56     | 1664    |
 
-Evaluation metrics produced in 206.556 seconds
+Evaluation metrics produced in 291.439 seconds
+

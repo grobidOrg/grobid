@@ -311,4 +311,5 @@ Evaluation on 1000 random PDF files out of 998 PDF (ratio 1.0).
 | **all fields (micro avg.)** | **99.71** | **99.83** | **99.77** | 1741    |
 | all fields (macro avg.)     | 99.69     | 99.89     | 99.79     | 1741    |
 
-Evaluation metrics produced in 101.785 seconds
+Evaluation metrics produced in 123.164 seconds
+
