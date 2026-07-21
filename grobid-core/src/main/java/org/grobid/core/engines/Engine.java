@@ -577,7 +577,7 @@ public class Engine implements Closeable {
             String pathTEI,
             int id,
             GrobidModels.Flavor flavor) {
-        parsers.getSegmentationParser(flavor).createBlankTrainingData(inputFile, pathRaw, pathTEI, id);
+        parsers.getSegmentationParser(flavor).createBlankTrainingData(inputFile, pathRaw, pathTEI);
     }
 
     /**
