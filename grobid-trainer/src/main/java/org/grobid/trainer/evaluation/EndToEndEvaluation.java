@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.stream.Collectors;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -2694,20 +2695,20 @@ public class EndToEndEvaluation {
         if (args.length > 5 || args.length == 0) {
             System.err
                     .println("usage: command [path to the (gold) evaluation XML dataset] Run[0|1] fileRatio[0.0-1.0]");
-            return;
+            System.exit(1);
         }
 
         String inputType = args[0];
         if (StringUtils.isBlank(inputType) || (!inputType.equals("nlm") && !inputType.equals("tei"))) {
             System.err.println("Input type is not correctly set, should be [tei|nlm]");
-            return;
+            System.exit(1);
         }
 
         boolean runGrobidVal = true;
         String xmlInputPath = args[1];
         if (StringUtils.isBlank(xmlInputPath)) {
             System.err.println("Path to evaluation (gold) XML data is not correctly set");
-            return;
+            System.exit(1);
         }
 
         String runGrobid = args[2];
@@ -2717,7 +2718,7 @@ public class EndToEndEvaluation {
             runGrobidVal = true;
         } else {
             System.err.println("Invalid value for last argument (run): [0|1]");
-            return;
+            System.exit(1);
         }
 
         // optional file ratio for applying the evaluation
@@ -2729,7 +2730,7 @@ public class EndToEndEvaluation {
                     fileRatio = Double.parseDouble(fileRatioString);
                 } catch (Exception e) {
                     System.err.println("Invalid argument fileRatio, must be a double, e.g. 0.1");
-                    return;
+                    System.exit(1);
                 }
             }
         }
@@ -2737,10 +2738,20 @@ public class EndToEndEvaluation {
         GrobidModels.Flavor parsedFlavor = null;
         if (args.length > 4) {
             String flavor = args[4];
-            parsedFlavor = GrobidModels.Flavor.fromLabel(flavor);
-            if (parsedFlavor == null) {
-                System.out.println("Flavor was not specified, or was empty. Using default Grobid process. ");
+            if (StringUtils.isBlank(flavor)) {
+                System.out.println("Flavor was not specified. Using default Grobid process. ");
             } else {
+                parsedFlavor = GrobidModels.Flavor.fromLabel(flavor);
+                if (parsedFlavor == null) {
+                    // Falling back to the default process here would silently evaluate
+                    // something other than what was asked for, and the report gives no hint
+                    // that the flavor was ignored.
+                    System.err.println("Unknown flavor '" + flavor + "'. Known flavors: "
+                            + Arrays.stream(GrobidModels.Flavor.values())
+                                    .map(GrobidModels.Flavor::getLabel)
+                                    .collect(Collectors.joining(", ")));
+                    System.exit(1);
+                }
                 System.out.println("Setting flavor to: " + parsedFlavor);
             }
         }
@@ -2749,11 +2760,11 @@ public class EndToEndEvaluation {
             File xmlPath = new File(xmlInputPath);
             if (!xmlPath.exists()) {
                 System.err.println("Path to evaluation (gold) XML data does not exist");
-                return;
+                System.exit(1);
             }
             if (!xmlPath.isDirectory()) {
                 System.err.println("Path to evaluation (gold) XML data is not a directory");
-                return;
+                System.exit(1);
             }
         } catch (Exception e) {
             e.printStackTrace();
