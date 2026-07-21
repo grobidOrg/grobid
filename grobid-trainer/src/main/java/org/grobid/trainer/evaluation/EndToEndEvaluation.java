@@ -2746,10 +2746,13 @@ public class EndToEndEvaluation {
                     // Falling back to the default process here would silently evaluate
                     // something other than what was asked for, and the report gives no hint
                     // that the flavor was ignored.
-                    System.err.println("Unknown flavor '" + flavor + "'. Known flavors: "
-                            + Arrays.stream(GrobidModels.Flavor.values())
-                                    .map(GrobidModels.Flavor::getLabel)
-                                    .collect(Collectors.joining(", ")));
+                    System.err.println(
+                            "Unknown flavor '"
+                                    + flavor
+                                    + "'. Known flavors: "
+                                    + Arrays.stream(GrobidModels.Flavor.values())
+                                            .map(GrobidModels.Flavor::getLabel)
+                                            .collect(Collectors.joining(", ")));
                     System.exit(1);
                 }
                 System.out.println("Setting flavor to: " + parsedFlavor);
