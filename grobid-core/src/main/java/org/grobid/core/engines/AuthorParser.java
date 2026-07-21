@@ -70,8 +70,7 @@ public class AuthorParser {
     // A single comma separates markers; two or more are a marker in their own right.
     // Runs must not be split: turning "§§§§" into four "§" makes it collide with the
     // distinct affiliation marked "§", which then gets assigned once per character.
-    private static final Pattern MARKER_SPLIT_PATTERN =
-            Pattern.compile("[0-9a-zA-Z]+|,{2,}|([^0-9a-zA-Z,\\s])\\1*");
+    private static final Pattern MARKER_SPLIT_PATTERN = Pattern.compile("[0-9a-zA-Z]+|,{2,}|([^0-9a-zA-Z,\\s])\\1*");
 
     static List<String> splitMarkers(String markerCluster) {
         List<String> result = new ArrayList<>();
