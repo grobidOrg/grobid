@@ -84,6 +84,7 @@ public class ProcessRunner extends Thread {
         process = null;
         try {
             ProcessBuilder builder = new ProcessBuilder(cmd);
+            ProcessEnvironment.setTempDirectory(builder);
             process = builder.start();
 
             if (useStreamGobbler) {

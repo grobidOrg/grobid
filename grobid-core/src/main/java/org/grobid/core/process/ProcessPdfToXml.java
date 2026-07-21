@@ -38,6 +38,7 @@ public class ProcessPdfToXml {
         String message = "error message cannot be retrieved";
         try {
             builder = new ProcessBuilder(cmd);
+            ProcessEnvironment.setTempDirectory(builder);
             builder.redirectErrorStream(true);
             process = builder.start();
 
