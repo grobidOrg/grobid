@@ -57,7 +57,6 @@ import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.lang.Language;
 import org.grobid.core.layout.*;
 import org.grobid.core.lexicon.Lexicon;
-import org.grobid.core.tokenization.LabeledTokensContainer;
 import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.tokenization.TaggingTokenClusteror;
 import org.grobid.core.utilities.*;
@@ -1801,7 +1800,7 @@ public class TEIFormatter {
 
                 if (CollectionUtils.isEmpty(matchedLabelPositions)) {
                     String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(clusterTokens);
-                    if (isNewParagraph(lastClusterLabel, curParagraph, cluster)) {
+                    if (isNewParagraph(lastClusterLabel, curParagraph, cluster, curParagraphTokens)) {
                         if (curParagraph != null && config.isWithSentenceSegmentation()) {
                             segmentIntoSentences(curParagraph, curParagraphTokens, config, doc.getLanguage());
                         }
@@ -1832,7 +1831,7 @@ public class TEIFormatter {
                     curParagraph.appendChild(clusterContent);
                     curParagraphTokens.addAll(clusterTokens);
                 } else {
-                    if (isNewParagraph(lastClusterLabel, curParagraph, cluster)) {
+                    if (isNewParagraph(lastClusterLabel, curParagraph, cluster, curParagraphTokens)) {
                         if (curParagraph != null && config.isWithSentenceSegmentation()) {
                             segmentIntoSentences(
                                     curParagraph,
@@ -2154,32 +2153,159 @@ public class TEIFormatter {
         return ref;
     }
 
+    /**
+     * Decide whether the current cluster opens a new paragraph, or continues the one
+     * interrupted by the preceding cluster.
+     * <p>
+     * Any preceding label other than a marker, figure or table always starts a new
+     * paragraph. Those three can sit <em>inside</em> a paragraph (a citation callout, an
+     * inline figure/table reference), so after one the decision is made from the layout of
+     * the text that resumes, relative to the text before the interruption.
+     * <p>
+     * The sequence label cannot make this decision: an interruption starts a fresh labelled
+     * sequence, so the resumed text always looks like a "beginning" whether it continues the
+     * paragraph or not, and keying off that splits at nearly every callout (issue #1482).
+     * The layout is read as a typesetter would: the resumed text opens a new paragraph only
+     * when it starts a new line, that line sits <em>below</em> with more vertical space than
+     * the paragraph's own line spacing, it is aligned to the column's left edge (an offset
+     * or centred line is a display equation, not a paragraph), and it reads like the start
+     * of a sentence. Anything short of that - same line, wrapped to a new column, a plain
+     * wrapped line, an offset line - continues the paragraph, so an unclear layout degrades
+     * to the 0.9.0 behaviour of never splitting after a marker rather than to a new failure
+     * mode.
+     *
+     * @param precedingTokens the tokens accumulated in the current paragraph, whose last
+     *                        positioned element is where the interruption happened. When null
+     *                        or empty there is no layout evidence, and the paragraph is
+     *                        continued.
+     */
     public static boolean isNewParagraph(
             TaggingLabel lastClusterLabel,
             Element curParagraph,
-            TaggingTokenCluster currentCluster) {
+            TaggingTokenCluster currentCluster,
+            List<LayoutToken> precedingTokens) {
         if (curParagraph == null) {
             return true;
         }
 
-        if (!MARKER_LABELS.contains(lastClusterLabel)
-                && lastClusterLabel != TaggingLabels.FIGURE
-                && lastClusterLabel != TaggingLabels.TABLE) {
+        boolean interrupting = MARKER_LABELS.contains(lastClusterLabel)
+                || lastClusterLabel == TaggingLabels.FIGURE
+                || lastClusterLabel == TaggingLabels.TABLE;
+        if (!interrupting) {
             return true;
         }
 
-        if (MARKER_LABELS.contains(lastClusterLabel)
-                && currentCluster != null
-                && CollectionUtils.isNotEmpty(currentCluster.getLabeledTokensContainers())) {
-            LabeledTokensContainer firstContainer = currentCluster.getLabeledTokensContainers().get(0);
-            return firstContainer.isBeginning();
+        // From here the preceding cluster interrupted a paragraph; decide from the layout.
+        if (CollectionUtils.isEmpty(precedingTokens) || currentCluster == null) {
+            return false;
+        }
+        LayoutToken interrupted = lastPositionedToken(precedingTokens);
+        LayoutToken resumed = firstPositionedToken(currentCluster.concatTokens());
+        if (interrupted == null || resumed == null) {
+            return false;
         }
 
-        return false;
+        // Across a page break the coordinates are not comparable, and a paragraph does run
+        // over a page boundary, so this is not evidence of a break either way.
+        if (interrupted.getPage() != resumed.getPage()) {
+            return false;
+        }
+
+        // Same line as the interruption: the resumed text is bound to it. The dominant case
+        // (a callout inside a line of running text). Note LayoutToken.isNewLineAfter() cannot
+        // be used to detect the line change: it is only populated by enrichWithNewLineInfo(),
+        // which the fulltext path never calls, so it is always false here - the new line is
+        // read from the Y coordinate instead.
+        double verticalGap = resumed.getY() - interrupted.getY();
+        double sameLineTolerance = Math.max(1.0, interrupted.getHeight() / 2.0);
+        if (Math.abs(verticalGap) <= sameLineTolerance) {
+            return false;
+        }
+
+        // Resumed higher up the page: it wrapped to the top of the next column. A column
+        // break, not a paragraph break.
+        if (verticalGap < 0) {
+            return false;
+        }
+
+        // The resumed line must be aligned to the column's left edge. Text of a new paragraph
+        // starts at the left margin (or indents by about one em); a display equation is set in
+        // much further, and is otherwise indistinguishable - it starts a new line below with
+        // the same extra vertical space. The horizontal position is what tells them apart. The
+        // tolerance is one em (the resumed text's own font size), so it scales with the
+        // document rather than assuming a fixed point size.
+        double leftEdge = leftEdge(precedingTokens);
+        double oneEm = resumed.getFontSize() > 0 ? resumed.getFontSize() : resumed.getHeight();
+        if (leftEdge >= 0 && resumed.getX() - leftEdge > oneEm) {
+            return false;
+        }
+
+        // Finally, a paragraph reads like one: it opens with a capital or a digit. This
+        // rejects continuations resuming on lower case, and the punctuation closing the
+        // interrupted sentence.
+        return startsLikeASentence(resumed.getText());
     }
 
+    /**
+     * Backward-compatible overload with no layout information: reproduces the 0.9.0 behaviour
+     * of never splitting after a marker, figure or table. Used where no callout context is
+     * available (e.g. {@link org.grobid.core.data.Table}).
+     */
     public static boolean isNewParagraph(TaggingLabel lastClusterLabel, Element curParagraph) {
-        return isNewParagraph(lastClusterLabel, curParagraph, null);
+        return isNewParagraph(lastClusterLabel, curParagraph, null, null);
+    }
+
+    private static boolean startsLikeASentence(String text) {
+        if (StringUtils.isBlank(text)) {
+            return false;
+        }
+        char first = text.charAt(0);
+        return Character.isUpperCase(first) || Character.isDigit(first);
+    }
+
+    /** Left edge (minimum X) of the paragraph's positioned tokens, or -1 if unknown. */
+    private static double leftEdge(List<LayoutToken> tokens) {
+        double min = Double.MAX_VALUE;
+        for (LayoutToken t : tokens) {
+            if (isPositioned(t) && t.getX() < min) {
+                min = t.getX();
+            }
+        }
+        return min == Double.MAX_VALUE ? -1 : min;
+    }
+
+    /**
+     * The last token carrying layout coordinates. Whitespace tokens are synthesised without
+     * position (x = y = -1), and the token immediately before a cluster boundary is very
+     * often one of those, so taking the last token blindly compares against a token that has
+     * no place on the page.
+     */
+    private static LayoutToken lastPositionedToken(List<LayoutToken> tokens) {
+        for (int i = tokens.size() - 1; i >= 0; i--) {
+            if (isPositioned(tokens.get(i))) {
+                return tokens.get(i);
+            }
+        }
+        return null;
+    }
+
+    private static LayoutToken firstPositionedToken(List<LayoutToken> tokens) {
+        if (CollectionUtils.isEmpty(tokens)) {
+            return null;
+        }
+        for (LayoutToken token : tokens) {
+            if (isPositioned(token)) {
+                return token;
+            }
+        }
+        return null;
+    }
+
+    private static boolean isPositioned(LayoutToken token) {
+        return token != null
+                && StringUtils.isNotBlank(token.getText())
+                && token.getX() >= 0
+                && token.getY() >= 0;
     }
 
     public void segmentIntoSentences(
