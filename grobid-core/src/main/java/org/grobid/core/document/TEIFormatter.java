@@ -2157,20 +2157,25 @@ public class TEIFormatter {
      * Decide whether the current cluster opens a new paragraph, or continues the one
      * interrupted by the preceding cluster.
      * <p>
-     * Only the marker/figure/table case is interesting: any other preceding label always
-     * starts a new paragraph. A citation, figure or table callout sits <em>inside</em> a
-     * paragraph far more often than it ends one, so the default after a callout is to
-     * continue.
+     * Any preceding label other than a marker, figure or table always starts a new
+     * paragraph. Those three can sit <em>inside</em> a paragraph (a citation callout, an
+     * inline figure/table reference), so after one the decision is made from the layout of
+     * the text that resumes, relative to the text before the interruption.
      * <p>
-     * The sequence label cannot make this decision. A callout interrupts the labelled
-     * sequence, so the resumed text is always a fresh {@code I-<paragraph>} - it carries
-     * "beginning of sequence" whether it continues the interrupted paragraph or starts a new
-     * one, and keying off it splits at nearly every callout (issue #1482). The signal has to
-     * come from the layout instead: text resuming on the same line as the callout is bound
-     * to it, and a genuine paragraph break additionally shows up as a new block.
+     * The sequence label cannot make this decision: an interruption starts a fresh labelled
+     * sequence, so the resumed text always looks like a "beginning" whether it continues the
+     * paragraph or not, and keying off that splits at nearly every callout (issue #1482).
+     * The layout is read as a typesetter would: the resumed text opens a new paragraph only
+     * when it starts a new line, that line sits <em>below</em> with more vertical space than
+     * the paragraph's own line spacing, it is aligned to the column's left edge (an offset
+     * or centred line is a display equation, not a paragraph), and it reads like the start
+     * of a sentence. Anything short of that - same line, wrapped to a new column, a plain
+     * wrapped line, an offset line - continues the paragraph, so an unclear layout degrades
+     * to the 0.9.0 behaviour of never splitting after a marker rather than to a new failure
+     * mode.
      *
      * @param precedingTokens the tokens accumulated in the current paragraph, whose last
-     *                        element is the callout the current cluster follows. When null
+     *                        positioned element is where the interruption happened. When null
      *                        or empty there is no layout evidence, and the paragraph is
      *                        continued.
      */
@@ -2183,17 +2188,62 @@ public class TEIFormatter {
             return true;
         }
 
-        if (!MARKER_LABELS.contains(lastClusterLabel)
-                && lastClusterLabel != TaggingLabels.FIGURE
-                && lastClusterLabel != TaggingLabels.TABLE) {
+        boolean interrupting = MARKER_LABELS.contains(lastClusterLabel)
+                || lastClusterLabel == TaggingLabels.FIGURE
+                || lastClusterLabel == TaggingLabels.TABLE;
+        if (!interrupting) {
             return true;
         }
 
-        if (MARKER_LABELS.contains(lastClusterLabel)) {
-            return startsNewParagraphAfterCallout(precedingTokens, currentCluster);
+        // From here the preceding cluster interrupted a paragraph; decide from the layout.
+        if (CollectionUtils.isEmpty(precedingTokens) || currentCluster == null) {
+            return false;
+        }
+        LayoutToken interrupted = lastPositionedToken(precedingTokens);
+        LayoutToken resumed = firstPositionedToken(currentCluster.concatTokens());
+        if (interrupted == null || resumed == null) {
+            return false;
         }
 
-        return false;
+        // Across a page break the coordinates are not comparable, and a paragraph does run
+        // over a page boundary, so this is not evidence of a break either way.
+        if (interrupted.getPage() != resumed.getPage()) {
+            return false;
+        }
+
+        // Same line as the interruption: the resumed text is bound to it. The dominant case
+        // (a callout inside a line of running text). Note LayoutToken.isNewLineAfter() cannot
+        // be used to detect the line change: it is only populated by enrichWithNewLineInfo(),
+        // which the fulltext path never calls, so it is always false here - the new line is
+        // read from the Y coordinate instead.
+        double verticalGap = resumed.getY() - interrupted.getY();
+        double sameLineTolerance = Math.max(1.0, interrupted.getHeight() / 2.0);
+        if (Math.abs(verticalGap) <= sameLineTolerance) {
+            return false;
+        }
+
+        // Resumed higher up the page: it wrapped to the top of the next column. A column
+        // break, not a paragraph break.
+        if (verticalGap < 0) {
+            return false;
+        }
+
+        // The resumed line must be aligned to the column's left edge. Text of a new paragraph
+        // starts at the left margin (or indents by about one em); a display equation is set in
+        // much further, and is otherwise indistinguishable - it starts a new line below with
+        // the same extra vertical space. The horizontal position is what tells them apart. The
+        // tolerance is one em (the resumed text's own font size), so it scales with the
+        // document rather than assuming a fixed point size.
+        double leftEdge = leftEdge(precedingTokens);
+        double oneEm = resumed.getFontSize() > 0 ? resumed.getFontSize() : resumed.getHeight();
+        if (leftEdge >= 0 && resumed.getX() - leftEdge > oneEm) {
+            return false;
+        }
+
+        // Finally, a paragraph reads like one: it opens with a capital or a digit. This
+        // rejects continuations resuming on lower case, and the punctuation closing the
+        // interrupted sentence.
+        return startsLikeASentence(resumed.getText());
     }
 
     /**
@@ -2205,67 +2255,23 @@ public class TEIFormatter {
         return isNewParagraph(lastClusterLabel, curParagraph, null, null);
     }
 
-    /**
-     * Layout test for text following a callout. Returns true only on positive evidence of a
-     * paragraph break, so that an unknown layout continues the paragraph as before #1482.
-     */
-    private static boolean startsNewParagraphAfterCallout(
-            List<LayoutToken> precedingTokens,
-            TaggingTokenCluster currentCluster) {
-        if (CollectionUtils.isEmpty(precedingTokens) || currentCluster == null) {
-            return false;
-        }
-
-        LayoutToken callout = lastPositionedToken(precedingTokens);
-        LayoutToken resumed = firstPositionedToken(currentCluster.concatTokens());
-        if (callout == null || resumed == null) {
-            return false;
-        }
-
-        // Across a page break the coordinates are not comparable. A paragraph does run over
-        // a page boundary, so this is not evidence of a break either way - continue.
-        if (callout.getPage() != resumed.getPage()) {
-            return false;
-        }
-
-        // Text resuming on the same line as the callout is bound to it. This is both the
-        // most common case and the one that needs no further evidence. Note that
-        // LayoutToken.isNewLineAfter() cannot be used here: it is only populated by
-        // enrichWithNewLineInfo(), which the fulltext path never calls, so it is always
-        // false on these tokens.
-        double sameLineTolerance = Math.max(1.0, callout.getHeight() / 2.0);
-        if (Math.abs(resumed.getY() - callout.getY()) <= sameLineTolerance) {
-            return false;
-        }
-
-        // Text that resumes higher up the page has wrapped to the top of the next column.
-        // That is a column break, not a paragraph break.
-        if (resumed.getY() < callout.getY()) {
-            return false;
-        }
-
-        // A line break alone proves nothing: a paragraph interrupted by a callout near the
-        // right margin also wraps. A new paragraph is a new block in the layout, so require
-        // that. Blocks are the unit pdfalto groups paragraphs into, which makes a block
-        // change the closest thing to a paragraph boundary the layout offers.
-        if (callout.getBlockPtr() == resumed.getBlockPtr()) {
-            return false;
-        }
-
-        // The block signal on its own splits about as often wrongly as rightly: a block
-        // boundary also falls inside a paragraph. A paragraph that genuinely starts here
-        // also reads like one, so require the resumed text to open the way a sentence does.
-        // This is what rejects the continuations that resume on lower case and the fragments
-        // that begin with the punctuation closing the previous sentence.
-        return startsLikeASentence(resumed.getText());
-    }
-
     private static boolean startsLikeASentence(String text) {
         if (StringUtils.isBlank(text)) {
             return false;
         }
         char first = text.charAt(0);
         return Character.isUpperCase(first) || Character.isDigit(first);
+    }
+
+    /** Left edge (minimum X) of the paragraph's positioned tokens, or -1 if unknown. */
+    private static double leftEdge(List<LayoutToken> tokens) {
+        double min = Double.MAX_VALUE;
+        for (LayoutToken t : tokens) {
+            if (isPositioned(t) && t.getX() < min) {
+                min = t.getX();
+            }
+        }
+        return min == Double.MAX_VALUE ? -1 : min;
     }
 
     /**
