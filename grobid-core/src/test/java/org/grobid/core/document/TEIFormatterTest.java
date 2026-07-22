@@ -32,7 +32,10 @@ import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Figure;
 import org.grobid.core.data.Note;
 import org.grobid.core.data.Table;
+import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.tokenization.LabeledTokensContainer;
+import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LayoutTokensUtil;
 
@@ -423,4 +426,164 @@ public class TEIFormatterTest {
         assertThat(nodes.get(5).toXML(), is(" "));
     }
 
+    // --- isNewParagraph: layout-based split after a callout (replaces #1482) ---
+    // The two #1482 scenarios are kept here as the first two cases, now asserting the
+    // corrected (layout-driven) contract instead of the isBeginning() one.
+
+    @Test
+    public void testIsNewParagraph_afterMarkerBeginningLabel_noLayoutEvidenceContinues() {
+        // #1482 asserted this split because the resumed cluster carried isBeginning(). That
+        // flag is uninformative after a callout, so with no layout to go on the paragraph
+        // continues.
+        TaggingTokenCluster paragraphCluster = new TaggingTokenCluster(TaggingLabels.PARAGRAPH);
+        paragraphCluster.addLabeledTokensContainer(
+                new LabeledTokensContainer(List.of(), "Because", TaggingLabels.PARAGRAPH, true));
+
+        boolean isNewParagraph = TEIFormatter
+                .isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), paragraphCluster, null);
+
+        assertThat(isNewParagraph, is(false));
+    }
+
+    @Test
+    public void testIsNewParagraph_afterMarkerContinuationLabel_continues() {
+        TaggingTokenCluster paragraphCluster = new TaggingTokenCluster(TaggingLabels.PARAGRAPH);
+        paragraphCluster.addLabeledTokensContainer(
+                new LabeledTokensContainer(List.of(), "continuation", TaggingLabels.PARAGRAPH, false));
+
+        boolean isNewParagraph = TEIFormatter
+                .isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), paragraphCluster, null);
+
+        assertThat(isNewParagraph, is(false));
+    }
+
+    @Test
+    public void testIsNewParagraph_nonMarkerLabelAlwaysStartsANewParagraph() {
+        assertThat(
+                TEIFormatter.isNewParagraph(TaggingLabels.SECTION, new Element("p"), null, null),
+                is(true));
+    }
+
+    @Test
+    public void testIsNewParagraph_nullParagraphAlwaysStartsANewParagraph() {
+        assertThat(
+                TEIFormatter.isNewParagraph(TaggingLabels.CITATION_MARKER, null, null, null),
+                is(true));
+    }
+
+    @Test
+    public void testIsNewParagraph_twoArgOverloadKeeps090Behaviour() {
+        // The Table path and any external caller use the 2-arg overload: never split after a
+        // marker/figure/table, split after anything else.
+        assertThat(TEIFormatter.isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p")), is(false));
+        assertThat(TEIFormatter.isNewParagraph(TaggingLabels.FIGURE, new Element("p")), is(false));
+        assertThat(TEIFormatter.isNewParagraph(TaggingLabels.SECTION, new Element("p")), is(true));
+    }
+
+    @Test
+    public void testIsNewParagraph_textResumingOnTheSameLineContinuesTheParagraph() {
+        List<LayoutToken> preceding = List.of(token("]", 300.0, 400.0, 0));
+        TaggingTokenCluster cluster = clusterOf(token("Because", 310.0, 400.0, 0));
+
+        assertThat(
+                TEIFormatter.isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), cluster, preceding),
+                is(false));
+    }
+
+    @Test
+    public void testIsNewParagraph_newLineInTheSameBlockContinuesTheParagraph() {
+        List<LayoutToken> preceding = List.of(token("]", 500.0, 400.0, 7));
+        TaggingTokenCluster cluster = clusterOf(token("Because", 72.0, 412.0, 7));
+
+        assertThat(
+                TEIFormatter.isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), cluster, preceding),
+                is(false));
+    }
+
+    @Test
+    public void testIsNewParagraph_newBlockOnANewLineStartsANewParagraph() {
+        List<LayoutToken> preceding = List.of(token("]", 500.0, 400.0, 7));
+        TaggingTokenCluster cluster = clusterOf(token("Because", 72.0, 412.0, 8));
+
+        assertThat(
+                TEIFormatter.isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), cluster, preceding),
+                is(true));
+    }
+
+    @Test
+    public void testIsNewParagraph_newBlockResumingOnLowerCaseContinuesTheParagraph() {
+        List<LayoutToken> preceding = List.of(token("]", 500.0, 400.0, 7));
+        TaggingTokenCluster cluster = clusterOf(token("because", 72.0, 412.0, 8));
+
+        assertThat(
+                TEIFormatter.isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), cluster, preceding),
+                is(false));
+    }
+
+    @Test
+    public void testIsNewParagraph_newBlockResumingOnPunctuationContinuesTheParagraph() {
+        List<LayoutToken> preceding = List.of(token("]", 500.0, 400.0, 7));
+        TaggingTokenCluster cluster = clusterOf(token(".", 72.0, 412.0, 8));
+
+        assertThat(
+                TEIFormatter.isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), cluster, preceding),
+                is(false));
+    }
+
+    @Test
+    public void testIsNewParagraph_textWrappingToTheTopOfTheNextColumnContinuesTheParagraph() {
+        List<LayoutToken> preceding = List.of(token("]", 280.0, 700.0, 7));
+        TaggingTokenCluster cluster = clusterOf(token("Because", 320.0, 90.0, 8));
+
+        assertThat(
+                TEIFormatter.isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), cluster, preceding),
+                is(false));
+    }
+
+    @Test
+    public void testIsNewParagraph_acrossAPageBreakContinuesTheParagraph() {
+        List<LayoutToken> preceding = List.of(pageToken("]", 280.0, 700.0, 7, 4));
+        TaggingTokenCluster cluster = clusterOf(pageToken("Because", 72.0, 90.0, 8, 5));
+
+        assertThat(
+                TEIFormatter.isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), cluster, preceding),
+                is(false));
+    }
+
+    @Test
+    public void testIsNewParagraph_unpositionedTrailingSpaceIsSkipped() {
+        LayoutToken blank = new LayoutToken();
+        blank.setText(" ");
+        blank.setX(-1.0);
+        blank.setY(-1.0);
+        List<LayoutToken> preceding = List.of(token("]", 300.0, 400.0, 7), blank);
+        TaggingTokenCluster cluster = clusterOf(token("Because", 310.0, 400.0, 7));
+
+        assertThat(
+                TEIFormatter.isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), cluster, preceding),
+                is(false));
+    }
+
+    private static LayoutToken token(String text, double x, double y, int blockPtr) {
+        return pageToken(text, x, y, blockPtr, 1);
+    }
+
+    private static LayoutToken pageToken(String text, double x, double y, int blockPtr, int page) {
+        LayoutToken t = new LayoutToken();
+        t.setText(text);
+        t.setX(x);
+        t.setY(y);
+        t.setHeight(10.0);
+        t.setBlockPtr(blockPtr);
+        t.setPage(page);
+        return t;
+    }
+
+    private static TaggingTokenCluster clusterOf(LayoutToken... tokens) {
+        TaggingTokenCluster cluster = new TaggingTokenCluster(TaggingLabels.PARAGRAPH);
+        cluster.addLabeledTokensContainer(
+                new LabeledTokensContainer(
+                        List.of(tokens), tokens[0].getText(), TaggingLabels.PARAGRAPH, true));
+        return cluster;
+    }
 }
