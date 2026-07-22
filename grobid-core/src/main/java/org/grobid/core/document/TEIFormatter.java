@@ -1800,7 +1800,7 @@ public class TEIFormatter {
 
                 if (CollectionUtils.isEmpty(matchedLabelPositions)) {
                     String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(clusterTokens);
-                    if (isNewParagraph(lastClusterLabel, curParagraph, cluster, curParagraphTokens)) {
+                    if (isNewParagraph(lastClusterLabel, curParagraph)) {
                         if (curParagraph != null && config.isWithSentenceSegmentation()) {
                             segmentIntoSentences(curParagraph, curParagraphTokens, config, doc.getLanguage());
                         }
@@ -1831,7 +1831,7 @@ public class TEIFormatter {
                     curParagraph.appendChild(clusterContent);
                     curParagraphTokens.addAll(clusterTokens);
                 } else {
-                    if (isNewParagraph(lastClusterLabel, curParagraph, cluster, curParagraphTokens)) {
+                    if (isNewParagraph(lastClusterLabel, curParagraph)) {
                         if (curParagraph != null && config.isWithSentenceSegmentation()) {
                             segmentIntoSentences(
                                     curParagraph,
@@ -2153,153 +2153,9 @@ public class TEIFormatter {
         return ref;
     }
 
-    /**
-     * Decide whether the current cluster opens a new paragraph, or continues the one
-     * interrupted by the preceding cluster.
-     * <p>
-     * Only the marker/figure/table case is interesting: any other preceding label always
-     * starts a new paragraph. A citation, figure or table callout sits <em>inside</em> a
-     * paragraph far more often than it ends one, so the default after a callout is to
-     * continue.
-     * <p>
-     * The sequence label cannot make this decision. A callout interrupts the labelled
-     * sequence, so the resumed text is always a fresh {@code I-<paragraph>} - it carries
-     * "beginning of sequence" whether it continues the interrupted paragraph or starts a new
-     * one, and keying off it splits at nearly every callout (issue #1482). The signal has to
-     * come from the layout instead: text resuming on the same line as the callout is bound
-     * to it, and a genuine paragraph break additionally shows up as a new block.
-     *
-     * @param precedingTokens the tokens accumulated in the current paragraph, whose last
-     *                        element is the callout the current cluster follows. When null
-     *                        or empty there is no layout evidence, and the paragraph is
-     *                        continued.
-     */
-    public static boolean isNewParagraph(
-            TaggingLabel lastClusterLabel,
-            Element curParagraph,
-            TaggingTokenCluster currentCluster,
-            List<LayoutToken> precedingTokens) {
-        if (curParagraph == null) {
-            return true;
-        }
-
-        if (!MARKER_LABELS.contains(lastClusterLabel)
-                && lastClusterLabel != TaggingLabels.FIGURE
-                && lastClusterLabel != TaggingLabels.TABLE) {
-            return true;
-        }
-
-        if (MARKER_LABELS.contains(lastClusterLabel)) {
-            return startsNewParagraphAfterCallout(precedingTokens, currentCluster);
-        }
-
-        return false;
-    }
-
-    /**
-     * Backward-compatible overload with no layout information: reproduces the 0.9.0 behaviour
-     * of never splitting after a marker, figure or table. Used where no callout context is
-     * available (e.g. {@link org.grobid.core.data.Table}).
-     */
     public static boolean isNewParagraph(TaggingLabel lastClusterLabel, Element curParagraph) {
-        return isNewParagraph(lastClusterLabel, curParagraph, null, null);
-    }
-
-    /**
-     * Layout test for text following a callout. Returns true only on positive evidence of a
-     * paragraph break, so that an unknown layout continues the paragraph as before #1482.
-     */
-    private static boolean startsNewParagraphAfterCallout(
-            List<LayoutToken> precedingTokens,
-            TaggingTokenCluster currentCluster) {
-        if (CollectionUtils.isEmpty(precedingTokens) || currentCluster == null) {
-            return false;
-        }
-
-        LayoutToken callout = lastPositionedToken(precedingTokens);
-        LayoutToken resumed = firstPositionedToken(currentCluster.concatTokens());
-        if (callout == null || resumed == null) {
-            return false;
-        }
-
-        // Across a page break the coordinates are not comparable. A paragraph does run over
-        // a page boundary, so this is not evidence of a break either way - continue.
-        if (callout.getPage() != resumed.getPage()) {
-            return false;
-        }
-
-        // Text resuming on the same line as the callout is bound to it. This is both the
-        // most common case and the one that needs no further evidence. Note that
-        // LayoutToken.isNewLineAfter() cannot be used here: it is only populated by
-        // enrichWithNewLineInfo(), which the fulltext path never calls, so it is always
-        // false on these tokens.
-        double sameLineTolerance = Math.max(1.0, callout.getHeight() / 2.0);
-        if (Math.abs(resumed.getY() - callout.getY()) <= sameLineTolerance) {
-            return false;
-        }
-
-        // Text that resumes higher up the page has wrapped to the top of the next column.
-        // That is a column break, not a paragraph break.
-        if (resumed.getY() < callout.getY()) {
-            return false;
-        }
-
-        // A line break alone proves nothing: a paragraph interrupted by a callout near the
-        // right margin also wraps. A new paragraph is a new block in the layout, so require
-        // that. Blocks are the unit pdfalto groups paragraphs into, which makes a block
-        // change the closest thing to a paragraph boundary the layout offers.
-        if (callout.getBlockPtr() == resumed.getBlockPtr()) {
-            return false;
-        }
-
-        // The block signal on its own splits about as often wrongly as rightly: a block
-        // boundary also falls inside a paragraph. A paragraph that genuinely starts here
-        // also reads like one, so require the resumed text to open the way a sentence does.
-        // This is what rejects the continuations that resume on lower case and the fragments
-        // that begin with the punctuation closing the previous sentence.
-        return startsLikeASentence(resumed.getText());
-    }
-
-    private static boolean startsLikeASentence(String text) {
-        if (StringUtils.isBlank(text)) {
-            return false;
-        }
-        char first = text.charAt(0);
-        return Character.isUpperCase(first) || Character.isDigit(first);
-    }
-
-    /**
-     * The last token carrying layout coordinates. Whitespace tokens are synthesised without
-     * position (x = y = -1), and the token immediately before a cluster boundary is very
-     * often one of those, so taking the last token blindly compares against a token that has
-     * no place on the page.
-     */
-    private static LayoutToken lastPositionedToken(List<LayoutToken> tokens) {
-        for (int i = tokens.size() - 1; i >= 0; i--) {
-            if (isPositioned(tokens.get(i))) {
-                return tokens.get(i);
-            }
-        }
-        return null;
-    }
-
-    private static LayoutToken firstPositionedToken(List<LayoutToken> tokens) {
-        if (CollectionUtils.isEmpty(tokens)) {
-            return null;
-        }
-        for (LayoutToken token : tokens) {
-            if (isPositioned(token)) {
-                return token;
-            }
-        }
-        return null;
-    }
-
-    private static boolean isPositioned(LayoutToken token) {
-        return token != null
-                && StringUtils.isNotBlank(token.getText())
-                && token.getX() >= 0
-                && token.getY() >= 0;
+        return (!MARKER_LABELS.contains(lastClusterLabel) && lastClusterLabel != TaggingLabels.FIGURE
+                && lastClusterLabel != TaggingLabels.TABLE) || curParagraph == null;
     }
 
     public void segmentIntoSentences(
