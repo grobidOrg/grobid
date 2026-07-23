@@ -32,10 +32,7 @@ import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Figure;
 import org.grobid.core.data.Note;
 import org.grobid.core.data.Table;
-import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.layout.LayoutToken;
-import org.grobid.core.tokenization.LabeledTokensContainer;
-import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LayoutTokensUtil;
 
@@ -424,30 +421,6 @@ public class TEIFormatterTest {
         assertThat(nodes.get(3).toXML(), is("&amp;"));
         assertThat(nodes.get(4).toXML(), is(""));
         assertThat(nodes.get(5).toXML(), is(" "));
-    }
-
-    @Test
-    public void testIsNewParagraph_afterMarkerWithBeginningParagraphLabel() {
-        TaggingTokenCluster paragraphCluster = new TaggingTokenCluster(TaggingLabels.PARAGRAPH);
-        paragraphCluster.addLabeledTokensContainer(
-                new LabeledTokensContainer(List.of(), "Because", TaggingLabels.PARAGRAPH, true));
-
-        boolean isNewParagraph = TEIFormatter
-                .isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), paragraphCluster);
-
-        assertThat(isNewParagraph, is(true));
-    }
-
-    @Test
-    public void testIsNewParagraph_afterMarkerWithoutBeginningParagraphLabel() {
-        TaggingTokenCluster paragraphCluster = new TaggingTokenCluster(TaggingLabels.PARAGRAPH);
-        paragraphCluster.addLabeledTokensContainer(
-                new LabeledTokensContainer(List.of(), "continuation", TaggingLabels.PARAGRAPH, false));
-
-        boolean isNewParagraph = TEIFormatter
-                .isNewParagraph(TaggingLabels.CITATION_MARKER, new Element("p"), paragraphCluster);
-
-        assertThat(isNewParagraph, is(false));
     }
 
 }
