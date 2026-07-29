@@ -265,7 +265,7 @@ Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
 
 | label                       | precision | recall    | f1        | support |
 |-----------------------------|-----------|-----------|-----------|---------|
-| availability_stmt           | 25.28     | 26.67     | 25.96     | 585     |
+| availability_stmt           | 25.61     | 27.01     | 26.29     | 585     |
 | figure_title                | 0.1       | 0.03      | 0.05      | 31718   |
 | funding_stmt                | 6.24      | 28.77     | 10.26     | 921     |
 | reference_citation          | 57.07     | 54.91     | 55.97     | 108949  |
@@ -275,7 +275,7 @@ Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
 | table_title                 | 0         | 0         | 0         | 1925    |
 |                             |           |           |           |         |
 | **all fields (micro avg.)** | **56.27** | **48.09** | **51.86** | 237236  |
-| all fields (macro avg.)     | 37.82     | 38.91     | 37.4      | 237236  |
+| all fields (macro avg.)     | 37.87     | 38.95     | 37.45     | 237236  |
 
 #### Soft Matching (ignoring punctuation, case and space characters mismatches)
 
@@ -304,6 +304,6 @@ Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
 | **all fields (micro avg.)** | **93.48** | **100** | **96.63** | 585     |
 | all fields (macro avg.)     | 93.48     | 100     | 99.12     | 585     |
 
-Evaluation metrics produced in 189.013 seconds
+Evaluation metrics produced in 200.023 seconds
 
 
