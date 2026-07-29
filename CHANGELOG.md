@@ -7,39 +7,40 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 ### Added
-- Training web API: list ongoing trainings (`GET /api/allTraining`) and interrupt a running training (`DELETE /api/killTraining`). Killing a training releases the per-model lock so the model can be retrained; interruption is best-effort for native (Wapiti/DeLFT) back-ends #1483
-- Development / model debug API exposing the first-level models, for inspecting intermediate results #1439
-- Optional push-based export of JVM/process runtime metrics over OTLP (OpenTelemetry Protocol) to a collector or hosted backend, complementing the pull-based Prometheus scrape endpoint #1479
-- The `/metrics/prometheus` admin endpoint now serves the Prometheus exposition format (instead of Dropwizard JSON) and includes JVM/process metrics; added documentation for setting up a Prometheus/Grafana monitoring dashboard #1473
-- Affiliation evaluation in the end-to-end evaluation: a linking-aware `affiliation_linked` metric in the HEADER section pairs each author with its gold counterpart and compares the attached affiliations #1493 #1467
+- Training web API to list ongoing trainings and interrupt a running one, releasing the per-model lock #1483
+- Development/model debug API exposing the first-level models for inspecting intermediate results #1439
+- Push-based export of JVM/process runtime metrics over OTLP, complementing the Prometheus scrape endpoint #1479
+- `/metrics/prometheus` endpoint now serves the Prometheus exposition format with JVM/process metrics, plus Prometheus/Grafana setup docs #1473
+- Linking-aware `affiliation_linked` metric in the end-to-end HEADER evaluation #1493 #1467
 - Rootless Docker images (Kubernetes/OpenShift friendly) #1442
-- Fail fast at startup with a clear error when the grobid-home path contains spaces and Wapiti is the configured engine, instead of failing mysteriously at model load time #1481
+- Fail fast at startup when the grobid-home path contains spaces and Wapiti is the configured engine #1481
 - Apache 2.0 licence headers in source files #1485
-- Documentation: community page and CI check for broken links #1447, PDF-TEI Editor reference #1448, instructions for adding new model flavors #1465
-- CI: CodeQL code analysis workflow #1475, dependabot updates for GitHub Actions #1494, runs on forks without publishing credentials #1451
+- Documentation: community page #1447, PDF-TEI Editor reference #1448, and instructions for adding new model flavors #1465
+- CI: CodeQL analysis workflow #1475, dependabot updates for GitHub Actions #1494, and runs on forks without publishing credentials #1451
 
 ### Changed
-- Reworked author–affiliation linking: extracted from `HeaderParser` into a dedicated, unit-tested `AuthorAffiliationAssigner` with a priority-based strategy (single-author/affiliation distribution, direct marker matching, raw-string marker search, layout-coordinate proximity, sequential fallback). Markerless authors are no longer blanket-assigned when their peers carry explicit markers, and content-duplicate affiliations are collapsed #1467
-- Extracted affiliations are preserved when header consolidation rewrites authors, via staged reconciliation: exact surname+forename match, high-threshold soft last-name match, then positional allocation with guards against false positives #1488
-- Parallelized the scoring phase of the end-to-end evaluation (from ~20 minutes to ~2 minutes on average); the Python evaluation script can now verify upfront that models, consolidation configuration, and biblio-glutton are correctly set up #1487
-- Sentence segmentation re-alignment rewritten as a forward two-pointer alignment that cannot drift and never drops text (including paragraph-final footnotes/citations); language detection made thread-safe, fixing nondeterministic text loss under concurrent requests #1457
-- Tokenization in `PDFALTOSaxHandler` is now language-sensitive instead of always using the default analyzer #1480
-- Only one training per model can run at a time: a second request for a model whose training is still in progress is rejected with 409 Conflict (flavor variants are distinct models and do not block each other) #1477
-- Uniformed training-data file generation between the web API and batch mode, with automatic closing of resources #1508
 - Updated pdfalto to 0.6.2. Notable for GROBID: deterministic output (an uninitialised read and a use-after-free made line/block grouping depend on heap contents, so the same PDF could yield different `<TextLine>`/`<TextBlock>` structure across runs), bounded peak memory on very large or vector-heavy documents, superscript citation/affiliation callouts separated from adjacent words (token boundary now driven by pdfalto's own superscript detection), and several text-extraction fixes. The command-line options GROBID passes are unchanged.
 - pdfalto is now given GROBID's configured temp directory (`grobid.temp`, by default `grobid-home/tmp`) through `TMPDIR`. Since 0.6.1 pdfalto streams large page DOMs to a scratch file to bound peak memory and picks its location from `TMPDIR`, falling back to `/tmp` — which is tmpfs in most containers, so spilling there leaves peak memory unchanged and risks ENOSPC.
-- Lexicon: introduced `Lexicon.builder()` to optionally pre-load chosen gazetteers *eagerly* (`.withDefaults()`, `.withJournals()`, `.withFunders()`, `.withOrganisations()`, etc.). Loading stays **lazy by default**: any gazetteer not named in the builder loads transparently on first lookup, so a `Lexicon` from any entry point is always fully functional and never throws for a missing gazetteer — `withX()` only controls *when* a gazetteer loads, not whether a lookup succeeds. `withDefaults()` eagerly loads the original constructor's set (wordforms, people, countries). `Lexicon.getInstance()` is now `@Deprecated` (prefer the builder) but its behavior is unchanged: eager wordforms/people/countries, everything else lazy.
-- Lexicon: added 4 missing ISO 3166-1 country codes (BQ, CW, SS, SX) and migrated AN (Netherlands Antilles) to its ISO 3166-3 transitional form ANHH.
-- Documentation: expanded the End-to-end evaluation guide (dedicated multi-dataset runner-script section for `run_evaluation.sh` with an options table and more invocation examples) and the Configuration reference; recorded the Hugging Face DOI (10.57967/hf/9553) for the `grobid-evaluation` dataset; various corrections and updated Crossref links #1419 #1430 #1501
-- Dependency updates: Apache OpenNLP 1.9.4 → 2.5, Jetty, jackson 2.21.4, DeLFT 0.4.6; dropped unused dependencies (mockk, commons-dbutils, jackson-afterburner, javax.activation, stringmetric) #1449 #1469 #1423
+- Reworked author–affiliation linking into a dedicated, unit-tested `AuthorAffiliationAssigner` with a priority-based strategy #1467
+- Preserve extracted affiliations when header consolidation rewrites authors, via staged reconciliation #1488
+- Parallelized the end-to-end evaluation scoring phase (~20 min → ~2 min), with upfront setup verification in the Python script #1487
+- Rewrote sentence-segmentation re-alignment as a drift-free forward two-pointer alignment and made language detection thread-safe #1457
+- Language-sensitive tokenization in `PDFALTOSaxHandler` instead of always using the default analyzer #1480
+- Only one training per model at a time; a concurrent request for the same model returns 409 Conflict #1477
+- Unified training-data file generation between the web API and batch mode #1508
+- Lexicon: added `Lexicon.builder()` for optional eager gazetteer pre-loading (lazy stays the default); `getInstance()` is now deprecated #1440
+- Lexicon: added 4 missing ISO 3166-1 country codes (BQ, CW, SS, SX) and migrated AN to its ISO 3166-3 form ANHH
+- Documentation: expanded the end-to-end evaluation and configuration guides and recorded the `grobid-evaluation` dataset DOI #1419 #1430 #1501
+- Dependency updates: OpenNLP 1.9.4 → 2.5, Jetty, jackson 2.21.4, DeLFT 0.4.6; dropped unused dependencies #1449 #1469 #1423
 - Replaced Powermock with Mockito #1458
-- Adopted Spotless for code formatting #1384, rewrote `toString()` and other overloaded methods #1401, added codespell spell-checking (restricted in CI to documentation) #1365 #1450 #1478
+- Adopted Spotless for code formatting #1384, rewrote overloaded methods #1401, and added codespell spell-checking #1365 #1450 #1478
 
 ### Fixed
-- JVM shutdown deadlock when closing JEP Python interpreters: close is now delegated to the owning worker thread, executor threads are named daemons, and shutdown is idempotent — the JVM no longer hangs after DeLFT evaluations #1506
-- HTTP 500 from `processFulltextDocument` when two footnotes share the same superscript marker, caused by a malformed (reversed) callout interval in `toTEITextPiece`; such callouts now gracefully fall back to plain text #1472 (also fixes a regression introduced by the Lexicon refactoring #1440)
+- Handle the exit codes pdfalto 0.6.1 introduced. Code 5 reports that the ALTO was written correctly but page streaming was disabled mid-run, so peak memory was no longer bounded; both execution paths rejected any non-zero exit and would have discarded these successful conversions. It is now a logged warning. Codes 4 (ALTO write failed) and 98 (allocation failure) are reported as `PDFALTO_CONVERSION_FAILURE` instead of falling through to `BAD_INPUT_DATA`, which blamed the PDF for a pdfalto-side failure.
+- JVM shutdown deadlock when closing JEP Python interpreters: close now runs on the owning worker thread and is idempotent #1506
+- HTTP 500 from `processFulltextDocument` when two footnotes share the same superscript marker; such callouts now fall back to plain text #1472
 - TEI paragraph boundaries no longer collapse when a paragraph starts right after a trailing reference marker #1482
-- Invalid/unbalanced XML in generated training data across models (unclosed `<p>` after reference markers, stray table tags, spurious figure `</content>`, consecutive same-label blocks, markers inside non-paragraph blocks, multi-token affiliation markers) #1470, and unclosed `<bibl>` before `<other>` in reference-segmenter training data #1466
+- Invalid/unbalanced XML in generated training data across models #1470, and unclosed `<bibl>` before `<other>` in reference-segmenter training data #1466
 - `xml:id` values in generated training files are now valid NCNames #1508
 - NPE in reference-segmenter training-data generation after segmentation retraining #1490
 - Document language is detected for segmentation training data instead of hardcoding `xml:lang="en"` #1460
@@ -51,9 +52,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - biblio-glutton health probe in the evaluation configuration check now targets an existing endpoint (`/service/data`) instead of always reporting a healthy glutton as unreachable #1492
 - Block/segmentation desync warning now includes the page number and a text excerpt so occurrences can be located and reproduced #1471
 - `./gradlew install` #1427, git revision information #1433, and Docker image summary #1429
-
-### Fixed
-- Handle the exit codes pdfalto 0.6.1 introduced. Code 5 reports that the ALTO was written correctly but page streaming was disabled mid-run, so peak memory was no longer bounded; both execution paths rejected any non-zero exit and would have discarded these successful conversions. It is now a logged warning. Codes 4 (ALTO write failed) and 98 (allocation failure) are reported as `PDFALTO_CONVERSION_FAILURE` instead of falling through to `BAD_INPUT_DATA`, which blamed the PDF for a pdfalto-side failure.
 
 ### Security
 - Prevent command injection through crafted PDF file names in the non-server `pdfalto` path: the command is no longer interpolated into a `bash -c` string but passed as positional parameters and exec'd via `"$@"` (GHSA-mgxf-7mg7-qpmf) #1477
