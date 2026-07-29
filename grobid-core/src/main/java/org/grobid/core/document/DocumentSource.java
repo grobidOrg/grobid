@@ -42,6 +42,21 @@ public class DocumentSource {
     private static final int KILLED_DUE_2_TIMEOUT = 143;
     private static final int MISSING_LIBXML2 = 127;
     private static final int MISSING_PDFALTO = 126;
+    // Exit codes introduced by pdfalto 0.6.1.
+    //
+    // 5 means the ALTO was written correctly, but page streaming was disabled mid-run
+    // so peak memory was no longer bounded. It is a warning, not a failure: the output
+    // is complete and usable. Treating it as an error would reject perfectly good
+    // conversions, so it is handled as success with a logged warning.
+    private static final int PDFALTO_STREAMING_DISABLED = 5;
+    // 4 means writing/serializing the final ALTO failed - the output may be missing or
+    // truncated, so this is fatal.
+    private static final int PDFALTO_WRITE_FAILED = 4;
+    // 98 is an allocation failure: pdfalto now catches GMemException in main() as the
+    // other xpdf front-ends do, where before the exception escaped and the process died
+    // on SIGABRT. Without this case it falls through to the generic branch below and an
+    // out-of-memory in pdfalto is reported as BAD_INPUT_DATA, blaming the PDF.
+    private static final int PDFALTO_OUT_OF_MEMORY = 98;
     public static final int PDFALTO_FILES_AMOUNT_LIMIT = 5000;
 
     private File pdfFile;
@@ -278,7 +293,13 @@ public class DocumentSource {
                 throw new GrobidException("PDF to XML conversion timed out", GrobidExceptionStatus.TIMEOUT);
             }
 
-            if (worker.getExitStatus() != 0) {
+            if (worker.getExitStatus() == PDFALTO_STREAMING_DISABLED) {
+                LOGGER.warn(
+                        "pdfalto could not buffer pages to disk while converting {}, so its peak memory was "
+                                + "unbounded. The conversion succeeded. Point TMPDIR at a writable on-disk "
+                                + "directory to re-enable streaming.",
+                        pdfPath);
+            } else if (worker.getExitStatus() != 0) {
                 String errorStreamContents = worker.getErrorStreamContents();
                 close(true, true, true);
                 throw new GrobidException("PDF to XML conversion failed on pdf file "
@@ -322,6 +343,19 @@ public class DocumentSource {
         } else if (exitCode == MISSING_LIBXML2) {
             throw new GrobidException(
                     "PDF to XML conversion failed. pdfalto cannot be executed correctly. Has libxml2 been installed in the system? More information can be found in the logs. ",
+                    GrobidExceptionStatus.PDFALTO_CONVERSION_FAILURE);
+        } else if (exitCode == PDFALTO_STREAMING_DISABLED) {
+            LOGGER.warn(
+                    "pdfalto could not buffer pages to disk while converting {}, so its peak memory was "
+                            + "unbounded. The conversion succeeded. Point TMPDIR at a writable on-disk "
+                            + "directory to re-enable streaming.",
+                    pdfPath);
+        } else if (exitCode == PDFALTO_WRITE_FAILED) {
+            throw new GrobidException(
+                    "PDF to XML conversion failed while writing the ALTO output, which may be missing or truncated",
+                    GrobidExceptionStatus.PDFALTO_CONVERSION_FAILURE);
+        } else if (exitCode == PDFALTO_OUT_OF_MEMORY) {
+            throw new GrobidException("PDF to XML conversion ran out of memory",
                     GrobidExceptionStatus.PDFALTO_CONVERSION_FAILURE);
         } else if (exitCode != 0) {
             throw new GrobidException("PDF to XML conversion failed with error code: " + exitCode,

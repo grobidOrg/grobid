@@ -153,6 +153,12 @@ public class Person {
     public void addAffiliation(org.grobid.core.data.Affiliation f) {
         if (affiliations == null)
             affiliations = new ArrayList<>();
+        // An author never holds the same affiliation twice. The assignment tiers in
+        // AuthorAffiliationAssigner run in sequence rather than exclusively, and a shared
+        // affiliation may carry several markers, so the same instance can be offered more
+        // than once for one author - guard here rather than at each call site.
+        if (affiliations.contains(f))
+            return;
         affiliations.add(f);
     }
 

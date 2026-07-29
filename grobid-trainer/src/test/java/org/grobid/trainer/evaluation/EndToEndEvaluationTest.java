@@ -41,17 +41,11 @@ public class EndToEndEvaluationTest {
         field2.fieldName = "miao";
         fieldSpecification.add(field2);
 
-        List<String> labelSpecification = new ArrayList<>();
-        labelSpecification.add("bao");
-        labelSpecification.add("miao");
-
-        EndToEndEvaluation.removeFieldsFromEvaluation(Arrays.asList("bao"), fieldSpecification, labelSpecification);
+        EndToEndEvaluation.removeFieldsFromEvaluation(Arrays.asList("bao"), fieldSpecification);
 
         assertThat(fieldSpecification, hasSize(1));
-        assertThat(labelSpecification, hasSize(1));
 
         assertThat(fieldSpecification.get(0).fieldName, is("miao"));
-        assertThat(labelSpecification.get(0), is("miao"));
     }
 
     @Test
@@ -66,31 +60,22 @@ public class EndToEndEvaluationTest {
         field2.fieldName = "miao";
         fieldSpecification.add(field2);
 
-        List<String> labelSpecification = new ArrayList<>();
-        labelSpecification.add("bao");
-        labelSpecification.add("miao");
-
-        EndToEndEvaluation.removeFieldsFromEvaluation(Arrays.asList("zao"), fieldSpecification, labelSpecification);
+        EndToEndEvaluation.removeFieldsFromEvaluation(Arrays.asList("zao"), fieldSpecification);
 
         assertThat(fieldSpecification, hasSize(2));
-        assertThat(labelSpecification, hasSize(2));
 
         assertThat(fieldSpecification.get(0).fieldName, is("bao"));
-        assertThat(labelSpecification.get(0), is("bao"));
 
         assertThat(fieldSpecification.get(1).fieldName, is("miao"));
-        assertThat(labelSpecification.get(1), is("miao"));
     }
 
     @Test
     public void testRemoveFieldsFromEvaluationEmpty_ShouldNotFail() throws Exception {
         List<FieldSpecification> fieldSpecification = new ArrayList<>();
-        List<String> labelSpecification = new ArrayList<>();
 
-        EndToEndEvaluation.removeFieldsFromEvaluation(Arrays.asList("bao"), fieldSpecification, labelSpecification);
+        EndToEndEvaluation.removeFieldsFromEvaluation(Arrays.asList("bao"), fieldSpecification);
 
         assertThat(fieldSpecification, hasSize(0));
-        assertThat(labelSpecification, hasSize(0));
     }
 
     @Test
@@ -138,7 +123,14 @@ public class EndToEndEvaluationTest {
         other.strictStats.getLabelStat("FOO").setObserved(1);
         other.strictStats.getLabelStat("BAR").setExpected(3);
 
+        target.documentCountByField.put("affiliation_linked", 3);
+        other.documentCountByField.put("affiliation_linked", 4);
+        other.documentCountByField.put("other_field", 7);
+
         target.merge(other);
+
+        assertThat(target.documentCountByField.get("affiliation_linked"), is(7));
+        assertThat(target.documentCountByField.get("other_field"), is(7));
 
         assertThat(target.nbFile, is(3));
         assertThat(target.totalExpectedInstances, is(15));

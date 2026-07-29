@@ -151,7 +151,39 @@ public class AuthorParserTest {
         // Comma-separated markers still split; digit and letter runs still group.
         assertThat(AuthorParser.splitMarkers("1, 2"), contains("1", "2"));
         assertThat(AuthorParser.splitMarkers("11"), contains("11"));
-        // The literal "**" stays grouped; other symbols become individual markers.
+        // The literal "**" stays grouped.
         assertThat(AuthorParser.splitMarkers("1**"), contains("1", "**"));
+    }
+
+    @Test
+    public void test_splitMarkers_keepsRepeatedSymbolRunTogether() {
+        // A run of one repeated symbol is a single marker, whatever the symbol and
+        // however long the run. "**" used to be special-cased; the rule is general.
+        assertThat(AuthorParser.splitMarkers("**"), contains("**"));
+        assertThat(AuthorParser.splitMarkers("***"), contains("***"));
+        assertThat(AuthorParser.splitMarkers("††"), contains("††"));
+        assertThat(AuthorParser.splitMarkers("‡‡‡"), contains("‡‡‡"));
+        assertThat(AuthorParser.splitMarkers("§§§§"), contains("§§§§"));
+
+        // Runs of different symbols stay separate markers.
+        assertThat(AuthorParser.splitMarkers("*†"), contains("*", "†"));
+        assertThat(AuthorParser.splitMarkers("§§ §"), contains("§§", "§"));
+
+        // A longer run must not be conflated with the shorter marker it repeats:
+        // an author marked "§§§§" is not affiliated to the institution marked "§".
+        assertThat(
+                AuthorParser.splitMarkers("*,§§§§"),
+                contains("*", "§§§§"));
+    }
+
+    @Test
+    public void test_splitMarkers_treatsRepeatedCommaAsMarker() {
+        // A single comma separates markers, but a run of commas is itself a marker.
+        assertThat(AuthorParser.splitMarkers("a,b"), contains("a", "b"));
+        assertThat(AuthorParser.splitMarkers("a,,b"), contains("a", ",,", "b"));
+        assertThat(AuthorParser.splitMarkers(",,,"), contains(",,,"));
+        assertThat(
+                AuthorParser.splitMarkers("‡,,§"),
+                contains("‡", ",,", "§"));
     }
 }

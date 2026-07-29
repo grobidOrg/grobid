@@ -217,7 +217,7 @@ Options (run with `-h` for the full list):
 | `-s REPORT_SUFFIX` | Suffix appended to the report file names | `master` |
 | `-r RUN` | Run GROBID on the PDFs (`1`) or only evaluate existing TEI (`0`) | `1` |
 | `-f FILERATIO` | Ratio of files to evaluate, `0.0`–`1.0` | `1` |
-| `-l FLAVOR` | Optional `flavor` passed to Gradle | empty |
+| `-l FLAVOR` | Optional `flavor` passed to Gradle (see below) | empty |
 | `-g GRADLEW_PATH` | Path to the `gradlew` executable | `./gradlew` |
 | `-j JAVA_NATIVE_LIB` | Path to the LMDB native library (sets `JAVA_TOOL_OPTIONS`) | unset |
 | `-o OUT_DIR` | Directory where the per-dataset reports are written | current dir |
@@ -227,6 +227,20 @@ Options (run with `-h` for the full list):
 | `-n` / `--dry-run` | Print the commands without executing them | off |
 
 The script exits non-zero if any single dataset evaluation fails, but continues with the remaining datasets so a run over several corpora is not aborted by one failure.
+
+### Flavors
+
+A model flavor evaluates a different document shape from the full model, so it evaluates a different set of fields. Which fields each flavor scores is declared in `EvaluationFieldSelection` (`grobid-trainer/.../evaluation/utilities/`), naming entries of the field catalogue held by `FieldSpecification`:
+
+| Flavor (`-l` / `-Pflavor`) | header | full text | citations |
+|---|---|---|---|
+| *(none — the full model)* | `title`, `authors`, `first_author`, `affiliation_linked`, `abstract`, `keywords` | all structures | all fields |
+| `article/light` | `title`, `authors`, `first_author` | *not evaluated* | *not evaluated* |
+| `article/light-ref` | `title`, `authors`, `first_author` | *not evaluated* | all fields |
+
+The remaining flavors (`blank`, `sdo/3gpp`, `sdo/ietf`) are **not supported** by the end-to-end evaluation — there is no JATS/TEI gold corpus of that document shape — and are rejected with an explicit error rather than silently producing an empty report.
+
+To evaluate a field that is in the catalogue but currently selected by no flavor (for instance `publisher` on citations, or the flat `affiliations` header field), add its name to the relevant list in `EvaluationFieldSelection`; there is no need to touch `FieldSpecification`.
 
 ## Evaluation results
 
@@ -294,7 +308,7 @@ GROBID expends intervals and will likely identify and match these "intermediary"
 
 ### Author–affiliation linking in the gold data
 
-The end-to-end evaluation includes an `affiliation_linked` metric: each extracted author is paired with its gold counterpart (by normalised surname, with forename initial as tie-break) and the affiliations attached to each are compared. Scoring an author requires a *machine-readable* author→affiliation link in the gold JATS — an `<xref ref-type="aff" rid="..."/>` placed **inside** the `<contrib contrib-type="author">`, or an `<aff>` nested directly in that contrib. The `<aff>` element itself lives as a sibling inside the `<contrib-group>` (or is referenced by id); it is the `xref` *inside the contrib* that establishes the link.
+The end-to-end evaluation includes an `affiliation_linked` metric: each extracted author is paired with its gold counterpart (by normalised surname, with forename initial as tie-break) and the affiliations attached to each are compared. It is evaluated for the **default (full) model only**: the `article/light` and `article/light-ref` flavors target documents where author affiliations are not the object of the extraction, and their field selection is reduced to `title`, `authors` and `first_author` (see `EvaluationFieldSelection`). Scoring an author requires a *machine-readable* author→affiliation link in the gold JATS — an `<xref ref-type="aff" rid="..."/>` placed **inside** the `<contrib contrib-type="author">`, or an `<aff>` nested directly in that contrib. The `<aff>` element itself lives as a sibling inside the `<contrib-group>` (or is referenced by id); it is the `xref` *inside the contrib* that establishes the link.
 
 In practice, publisher JATS frequently encodes the association only *positionally* — the author's printed superscript is resolved by the PDF layout — or drops it entirely during conversion. Authors with no resolvable link are treated as **out of scope**: they are skipped, not counted as missed. The raw metric therefore understates performance on these corpora unless the gold links are completed.
 

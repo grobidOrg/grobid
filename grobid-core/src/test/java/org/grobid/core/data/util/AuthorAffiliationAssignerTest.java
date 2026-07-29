@@ -28,6 +28,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import org.grobid.core.data.Affiliation;
@@ -110,6 +111,91 @@ public class AuthorAffiliationAssignerTest {
         assertThat(authors.get(0).getAffiliations().get(0).getMarker(), is("1"));
         assertThat(authors.get(1).getAffiliations(), hasSize(1));
         assertThat(authors.get(1).getAffiliations().get(0).getMarker(), is("2"));
+    }
+
+    @Test
+    public void testMarkerMatching_sameAffiliationAssignedOnlyOnce() {
+        // An affiliation already attached to an author must not be attached again,
+        // whatever route offers it a second time. Here the author carries the same
+        // marker twice - which the split pattern no longer produces, but the tiers
+        // in assign() run in sequence rather than exclusively, so the guard has to
+        // hold on its own.
+        List<Person> authors = new ArrayList<>();
+        authors.add(personWithMarkers("Smith", "J", "§", "§"));
+
+        List<Affiliation> affs = Arrays.asList(affWithMarker("University of Mersin", "§"));
+
+        AuthorAffiliationAssigner.assign(authors, affs, "Smith §");
+
+        assertThat(authors.get(0).getAffiliations(), hasSize(1));
+        assertThat(authors.get(0).getAffiliations().get(0).getMarker(), is("§"));
+    }
+
+    @Test
+    public void testMarkerMatching_repeatedSymbolRunDoesNotRepeatTheShorterMarker() {
+        // "§§§§" marks an equal-contribution footnote, not the affiliation marked
+        // "§". Before the split pattern took symbol runs whole, "§§§§" became four
+        // separate "§" and each one matched, so the author collected the same
+        // affiliation four times over.
+        //
+        // Note this asserts the no-duplicate invariant, not that the author ends up
+        // with nothing: rescueOrphanAffiliations deliberately attaches an otherwise
+        // unlinked affiliation to the nearest author, which is a separate concern.
+        List<Person> authors = new ArrayList<>();
+        authors.add(personWithMarkers("Persinoti", "G", "*"));
+        authors.add(personWithMarkers("Martinez", "D", "§§§§"));
+
+        Affiliation saoPaulo = affWithMarker("University of Sao Paulo", "*");
+        Affiliation mersin = affWithMarker("University of Mersin", "§");
+        List<Affiliation> affs = Arrays.asList(saoPaulo, mersin);
+
+        AuthorAffiliationAssigner.assign(authors, affs, "Persinoti *, Martinez §§§§");
+
+        // Marker matching still links Persinoti to the affiliation marked "*".
+        assertTrue(
+                "Persinoti should be linked to the affiliation marked '*'",
+                authors.get(0).getAffiliations().contains(saoPaulo));
+
+        // No author holds the same affiliation more than once.
+        for (Person author : authors) {
+            List<Affiliation> got = author.getAffiliations();
+            if (got == null) {
+                continue;
+            }
+            assertThat(
+                    "duplicate affiliation on " + author.getLastName(),
+                    new HashSet<>(got).size(),
+                    is(got.size()));
+        }
+    }
+
+    @Ignore("Documents intended behaviour that is not implemented yet. "
+            + "An affiliation that no marker claims is currently handed to the nearest "
+            + "author by rescueOrphanAffiliations, so a footnote-only marker such as "
+            + "\"§§§§\" (equal contribution) still drags an unrelated affiliation onto "
+            + "the author. Arguably the rescue should only run when the header carries "
+            + "no markers at all - with markers present, an unclaimed affiliation is "
+            + "more likely to belong to nobody than to the nearest name.")
+    @Test
+    public void testMarkerMatching_unclaimedAffiliationIsNotForcedOntoAnAuthor() {
+        List<Person> authors = new ArrayList<>();
+        authors.add(personWithMarkers("Persinoti", "G", "*"));
+        authors.add(personWithMarkers("Martinez", "D", "§§§§"));
+
+        Affiliation saoPaulo = affWithMarker("University of Sao Paulo", "*");
+        Affiliation mersin = affWithMarker("University of Mersin", "§");
+        List<Affiliation> affs = Arrays.asList(saoPaulo, mersin);
+
+        AuthorAffiliationAssigner.assign(authors, affs, "Persinoti *, Martinez §§§§");
+
+        // Persinoti is marked "*" only, so only Sao Paulo should be attached.
+        assertThat(authors.get(0).getAffiliations(), hasSize(1));
+        assertThat(authors.get(0).getAffiliations().get(0).getMarker(), is("*"));
+        // "§§§§" claims no affiliation, so Martinez should get none.
+        assertTrue(
+                "Martinez should not inherit an affiliation no marker claims",
+                authors.get(1).getAffiliations() == null
+                        || authors.get(1).getAffiliations().isEmpty());
     }
 
     @Test
