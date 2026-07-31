@@ -86,7 +86,7 @@ ENV LANG=C.UTF-8
 # install system dependencies and Python 3.11 via deadsnakes PPA
 RUN apt-get update && \
     apt-get -y --no-install-recommends install \
-    bash build-essential gcc libxml2 libfontconfig unzip curl \
+    bash build-essential gcc libxml2 libfontconfig unzip curl git \
     musl gfortran software-properties-common && \
     add-apt-repository ppa:deadsnakes/ppa && \
     apt-get update && \
@@ -106,15 +106,17 @@ WORKDIR /opt/grobid
 COPY --from=builder /opt/grobid .
 
 # install DeLFT (PyTorch backend) + torch.
+# Pinned to the delft git branch/ref (dev) until the next PyPI release (1.0.2) is published;
+# dev carries the tag-time num_workers=0 default and the logging fixes.
 # On amd64 we pull the CUDA 12.8 build via the [gpu] extra and the PyTorch index.
 # On arm64 we take the default (CPU) torch wheel from PyPI.
 # torch / transformers / pytorch-crf come in transitively; no tensorflow / tf_keras.
-ARG DELFT_VERSION=1.0.1
+ARG DELFT_REF=dev
 RUN if [ "$TARGETARCH" = "amd64" ]; then \
-    pip3 install --no-cache-dir "delft[gpu]==${DELFT_VERSION}" \
+    pip3 install --no-cache-dir "delft[gpu] @ git+https://github.com/kermitt2/delft.git@${DELFT_REF}" \
       --extra-index-url https://download.pytorch.org/whl/cu128; \
     else \
-    pip3 install --no-cache-dir "delft==${DELFT_VERSION}"; \
+    pip3 install --no-cache-dir "delft @ git+https://github.com/kermitt2/delft.git@${DELFT_REF}"; \
     fi
 
 # Build JEP with temporary access to full JDK (needs javac + JNI headers).
