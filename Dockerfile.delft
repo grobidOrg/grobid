@@ -122,16 +122,6 @@ RUN if [ "$TARGETARCH" = "amd64" ]; then \
 RUN --mount=from=builder,source=/opt/java/openjdk,target=/opt/java/openjdk-jdk \
     JAVA_HOME=/opt/java/openjdk-jdk pip3 install --no-cache-dir jep==4.3.1
 
-# Replace the legacy TF/Keras models (model_weights.hdf5, unusable under delft 1.0.0)
-# with the PyTorch models (model_weights.pt) published on the delft GitHub repo. Only the
-# models set to `engine: delft` in grobid-full.yaml are fetched, renamed from delft's
-# "grobid-<model>-<arch>" to GROBID's "<model>-<arch>" convention.
-# NOTE: patent-citation has no PyTorch model in delft 1.0.0 (not used by processFulltextDocument).
-ARG DELFT_MODELS_REF=v1.0.1
-COPY --from=builder /opt/grobid-source/grobid-home/scripts/fetch_delft_pytorch_models.sh /tmp/fetch_delft_pytorch_models.sh
-RUN bash /tmp/fetch_delft_pytorch_models.sh /opt/grobid/grobid-home/models "$DELFT_MODELS_REF" && \
-    rm /tmp/fetch_delft_pytorch_models.sh
-
 # link the data directory to /data
 # the current working directory will most likely be /opt/grobid
 RUN mkdir -p /data \
