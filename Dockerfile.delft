@@ -109,7 +109,7 @@ COPY --from=builder /opt/grobid .
 # On amd64 we pull the CUDA 12.8 build via the [gpu] extra and the PyTorch index.
 # On arm64 we take the default (CPU) torch wheel from PyPI.
 # torch / transformers / pytorch-crf come in transitively; no tensorflow / tf_keras.
-ARG DELFT_VERSION=1.0.0
+ARG DELFT_VERSION=1.0.1
 RUN if [ "$TARGETARCH" = "amd64" ]; then \
     pip3 install --no-cache-dir "delft[gpu]==${DELFT_VERSION}" \
       --extra-index-url https://download.pytorch.org/whl/cu128; \
@@ -127,7 +127,7 @@ RUN --mount=from=builder,source=/opt/java/openjdk,target=/opt/java/openjdk-jdk \
 # models set to `engine: delft` in grobid-full.yaml are fetched, renamed from delft's
 # "grobid-<model>-<arch>" to GROBID's "<model>-<arch>" convention.
 # NOTE: patent-citation has no PyTorch model in delft 1.0.0 (not used by processFulltextDocument).
-ARG DELFT_MODELS_REF=v1.0.0
+ARG DELFT_MODELS_REF=v1.0.1
 COPY --from=builder /opt/grobid-source/grobid-home/scripts/fetch_delft_pytorch_models.sh /tmp/fetch_delft_pytorch_models.sh
 RUN bash /tmp/fetch_delft_pytorch_models.sh /opt/grobid/grobid-home/models "$DELFT_MODELS_REF" && \
     rm /tmp/fetch_delft_pytorch_models.sh
