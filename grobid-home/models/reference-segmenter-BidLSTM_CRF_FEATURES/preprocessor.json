@@ -1,10 +1,10 @@
 {
     "padding": true,
-    "return_lengths": true,
-    "return_word_embeddings": true,
+    "return_lengths": false,
+    "return_word_embeddings": false,
     "return_casing": false,
     "return_features": true,
-    "return_chars": true,
+    "return_chars": false,
     "return_bert_embeddings": false,
     "vocab_char": {
         "<PAD>": 0,

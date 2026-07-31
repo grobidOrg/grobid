@@ -36,12 +36,11 @@
     "case_embedding_size": 5,
     "dropout": 0.5,
     "recurrent_dropout": 0.5,
-    "use_crf": true,
+    "use_crf": false,
     "use_chain_crf": false,
     "fold_number": 1,
     "batch_size": 5,
     "transformer_name": null,
-    "use_ELMo": false,
     "features_map_to_index": {
         "9": {
             "LINEEND": 1,
