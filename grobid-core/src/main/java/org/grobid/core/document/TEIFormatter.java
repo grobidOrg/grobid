@@ -1587,6 +1587,32 @@ public class TEIFormatter {
             Document doc,
             GrobidAnalysisConfig config) throws Exception {
         if ((result == null) || (tokenizations == null)) {
+            // No annex text segment was labelled, but there may still be figures/tables to
+            // serialize here (e.g. typed-area figures are routed to the annex bucket). Without
+            // this, toTEITextPiece is never reached and those figures are silently dropped for
+            // any document that has no annex/back-matter division.
+            boolean hasFigures = (figures != null) && !figures.isEmpty();
+            boolean hasTables = (tables != null) && !tables.isEmpty();
+            if (hasFigures || hasTables) {
+                buffer.append("\t\t\t<div type=\"annex\">\n");
+                if (hasFigures) {
+                    for (Figure figure : figures) {
+                        String figSeg = figure.toTEI(config, doc, this, markerTypes);
+                        if (figSeg != null) {
+                            buffer.append(figSeg).append("\n");
+                        }
+                    }
+                }
+                if (hasTables) {
+                    for (Table table : tables) {
+                        String tabSeg = table.toTEI(config, doc, this, markerTypes);
+                        if (tabSeg != null) {
+                            buffer.append(tabSeg).append("\n");
+                        }
+                    }
+                }
+                buffer.append("\t\t\t</div>\n");
+            }
             return buffer;
         }
 

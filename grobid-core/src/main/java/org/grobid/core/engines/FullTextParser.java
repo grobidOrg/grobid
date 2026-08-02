@@ -4114,32 +4114,56 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
         // Process figure areas using the figure ML model - each area separately, so that each
         // user-provided region yields its own <figure> (processing them as a single combined token
         // blob produced one malformed figure that was then dropped at TEI serialization).
-        if (!doc.getFigureAreas().isEmpty() && !doc.getFigureTokensByArea().isEmpty()) {
+        // Iterate over ALL figure areas, not only those that captured text tokens. A figure region
+        // that is a pure bitmap/vector graphic (scheme, micrograph, plot) has no text layer, so it
+        // gets no entry in figureTokensByArea; such regions must still yield a <figure> built from the
+        // graphic objects inside them (Figure.isCompleteForTEI() accepts a graphic-only figure).
+        if (!doc.getFigureAreas().isEmpty()) {
             if (doc.getAnnexFigures() == null) {
                 doc.setAnnexFigures(new ArrayList<>());
             }
 
-            for (Map.Entry<TypedArea, List<LayoutToken>> entry : doc.getFigureTokensByArea().entrySet()) {
-                TypedArea area = entry.getKey();
-                List<LayoutToken> areaTokens = entry.getValue();
-                if (areaTokens.isEmpty()) {
-                    continue;
+            Map<TypedArea, List<LayoutToken>> figureTokensByArea = doc.getFigureTokensByArea();
+            for (TypedArea area : doc.getFigureAreas()) {
+                List<LayoutToken> areaTokens = figureTokensByArea.getOrDefault(area, new ArrayList<>());
+
+                // Graphic objects (bitmaps and vector boxes) located inside the figure area.
+                List<GraphicObject> areaGraphics = new ArrayList<>();
+                if (CollectionUtils.isNotEmpty(doc.getImages())) {
+                    for (GraphicObject graphicObject : doc.getImages()) {
+                        if (area.intersects(graphicObject.getBoundingBox())) {
+                            areaGraphics.add(graphicObject);
+                        }
+                    }
+                }
+
+                // Fallback: if GROBID extracted no graphic inside this region (e.g. a vector/SVG
+                // figure whose artwork is not extracted at all), synthesize a graphic from the
+                // detector-provided area box. This keeps the figure complete for TEI and reintegrated
+                // at its known location, so figure recovery does not depend on GROBID's own graphic
+                // extraction succeeding for the region.
+                if (areaGraphics.isEmpty()) {
+                    BoundingBox areaBox = BoundingBox.fromPointAndDimensions(
+                        area.getPage(), area.getX(), area.getY(), area.getWidth(), area.getHeight());
+                    areaGraphics.add(new GraphicObject(areaBox, GraphicObjectType.VECTOR_BOX));
                 }
 
                 Figure figure = null;
-                try {
-                    Pair<String, List<LayoutToken>> featurePair =
-                        generateFeaturesForTokens(areaTokens, doc);
-                    if (featurePair != null && isNotBlank(featurePair.getLeft())) {
-                        figure = parsers.getFigureParser().processing(
-                            featurePair.getRight(), featurePair.getLeft());
+                if (!areaTokens.isEmpty()) {
+                    try {
+                        Pair<String, List<LayoutToken>> featurePair =
+                            generateFeaturesForTokens(areaTokens, doc);
+                        if (featurePair != null && isNotBlank(featurePair.getLeft())) {
+                            figure = parsers.getFigureParser().processing(
+                                featurePair.getRight(), featurePair.getLeft());
+                        }
+                    } catch (Exception e) {
+                        LOGGER.warn("Figure ML processing failed for area {}, falling back to direct construction", area, e);
                     }
-                } catch (Exception e) {
-                    LOGGER.warn("Figure ML processing failed for area {}, falling back to direct construction", area, e);
                 }
 
                 if (figure == null) {
-                    // Fallback: create Figure directly from tokens
+                    // No tokens, or ML processing failed/blank: construct the figure directly.
                     figure = new Figure();
                     figure.setContent(new StringBuilder(LayoutTokensUtil.toText(areaTokens)));
                 }
@@ -4151,19 +4175,12 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
                     }
                 }
 
-                // Attach the graphic objects (bitmaps/vector boxes) located inside the figure area.
-                // This both captures the figure's actual image and makes it complete for TEI: a
-                // user-provided figure region usually has no model-labelled caption, and without any
-                // graphic Figure.isCompleteForTEI() would drop it entirely.
-                if (CollectionUtils.isNotEmpty(doc.getImages())) {
-                    List<GraphicObject> areaGraphics = new ArrayList<>();
-                    for (GraphicObject graphicObject : doc.getImages()) {
-                        if (area.intersects(graphicObject.getBoundingBox())) {
-                            areaGraphics.add(graphicObject);
-                        }
-                    }
-                    if (CollectionUtils.isNotEmpty(areaGraphics)) {
-                        figure.setGraphicObjects(areaGraphics);
+                // Attach the graphic objects. For token-less regions these graphics are what make the
+                // figure complete for TEI, and supply the page number that tokens cannot.
+                if (CollectionUtils.isNotEmpty(areaGraphics)) {
+                    figure.setGraphicObjects(areaGraphics);
+                    if (figure.getPage() <= 0) {
+                        figure.setPage(areaGraphics.get(0).getPage());
                     }
                 }
 
@@ -4174,7 +4191,7 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
                 doc.getAnnexFigures().add(figure);
             }
             LOGGER.info("Created {} figure(s) from {} typed areas",
-                doc.getAnnexFigures().size(), doc.getFigureTokensByArea().size());
+                doc.getAnnexFigures().size(), doc.getFigureAreas().size());
         }
 
         // Process table areas using the table ML model - each area separately
