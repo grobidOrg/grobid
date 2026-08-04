@@ -106,12 +106,13 @@ WORKDIR /opt/grobid
 COPY --from=builder /opt/grobid .
 
 # install DeLFT (PyTorch backend) + torch.
-# Pinned to the delft git branch/ref (dev) until the next PyPI release (1.0.2) is published;
-# dev carries the tag-time num_workers=0 default and the logging fixes.
+# Pinned to the delft git branch/ref (feature/improve-pytorch-performances) until the
+# next PyPI release (1.0.2) is published; this branch carries the PyTorch performance
+# improvements on top of the dev num_workers=0 default and logging fixes.
 # On amd64 we pull the CUDA 12.8 build via the [gpu] extra and the PyTorch index.
 # On arm64 we take the default (CPU) torch wheel from PyPI.
 # torch / transformers / pytorch-crf come in transitively; no tensorflow / tf_keras.
-ARG DELFT_REF=dev
+ARG DELFT_REF=feature/improve-pytorch-performances
 RUN if [ "$TARGETARCH" = "amd64" ]; then \
     pip3 install --no-cache-dir "delft[gpu] @ git+https://github.com/kermitt2/delft.git@${DELFT_REF}" \
       --extra-index-url https://download.pytorch.org/whl/cu128; \
