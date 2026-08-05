@@ -7,7 +7,7 @@ This page lists the breaking changes users should be aware of when upgrading an 
 
 ## Upgrading to 0.9.1
 
-Version 0.9.1 is mainly a maintenance and dependency-refresh release. The shipped models, the Deep Learning runtime (DeLFT / TensorFlow / Python) and the JDK 21 / Gradle 9 build requirement are **unchanged from 0.9.0** — no retraining and no environment change are needed. The one thing to check is the **service configuration**, because 0.9.1 upgrades the embedded web framework.
+Version 0.9.1 is mainly a maintenance and dependency-refresh release. The shipped models, the JDK 21 / Gradle 9 build requirement, and the Deep Learning runtime (TensorFlow 2.17, Python 3.10–3.11) are unchanged from 0.9.0 — DeLFT is bumped a single patch (0.4.4 → 0.4.6), but no retraining and no environment change are needed. The one thing to check is the **service configuration**, because 0.9.1 upgrades the embedded web framework.
 
 ### At a glance
 
@@ -174,7 +174,7 @@ For the full list of changes, see the [0.9.0 CHANGELOG entry](https://github.com
 
 After upgrading, a quick end-to-end smoke test:
 
-1. Start the service: `./gradlew :grobid-service:run` (or `docker run ... grobid/grobid:0.9.0-full`).
-2. Open <http://localhost:8070> — the landing page now shows version and revision information, so you can confirm you are on 0.9.0.
+1. Start the service: `./gradlew :grobid-service:run` (or `docker run ... grobid/grobid:0.9.1-full`).
+2. Open <http://localhost:8070> — the landing page now shows version and revision information, so you can confirm you are on 0.9.1.
 3. Check `/api/health` — it now fails early when models are only partially initialized, so a green status is a stronger signal than before.
 4. Process a known PDF through the `/api/processFulltextDocument` endpoint and compare the output against a pre-upgrade baseline.

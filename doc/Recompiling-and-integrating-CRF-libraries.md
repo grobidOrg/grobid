@@ -55,7 +55,7 @@ Finally, the JNI jar file has to be deployed in the local repository in grobid-c
 ```bash
 > mvn install:install-file -Dfile=wapiti-1.5.0.jar -DgroupId="fr.limsi.wapiti" -DartifactId="wapiti" -Dversion="1.5.0" -Dpackaging="jar" -DlocalRepositoryPath="GROBID-ROOT-DIRECTORY/grobid-core/lib"
 ```
-If the Wapiti library version changes, the dependency version in grobid-core/pom.xml has to be updated.
+If the Wapiti library version changes, the dependency version of wapiti in `build.gradle` has to be updated.
 
 
 ## CRF++

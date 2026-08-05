@@ -20,7 +20,7 @@ Current neural models can be up to 50 times slower than CRF, depending on the ar
 
 By default, only CRF models are used by Grobid. You need to select the Deep Learning models you would like to use in the GROBID configuration yaml file (`grobid/grobid-home/config/grobid.yaml`). See [here](Configuration.md#configuring-the-models) for more details on how to select these models. The most convenient way to use the Deep Learning models is to use the full GROBID Docker image and pass a configuration file at launch of the container describing the selected models to be used instead of the default CRF ones. Note that the full GROBID Docker image is already configured to use Deep Learning models for bibliographical reference and affiliation-address parsing. 
 
-For current GROBID version 0.9.0, we recommend considering the usage of the following Deep Learning models: 
+For current GROBID version 0.9.1, we recommend considering the usage of the following Deep Learning models: 
 
 - `citation` model: for bibliographical parsing, the `BidLSTM_CRF_FEATURES` architecture provides currently the best accuracy, significantly better than CRF (+3 to +5 points in F1-Score). With a GPU, there is normally no runtime impact by selecting this model. SciBERT fine-tuned model performs currently at  lower accuracy. 
 
@@ -38,7 +38,7 @@ Finally, the model `fulltext` (structuring the content body of a document) is cu
 
 ### Getting started with Deep Learning
 
-Using Deep Learning model in GROBID with a normal installation/build is not straightforward at the present time, due to the required availability of various native libraries and to the Python dynamic linking and packaging mess, which leads to force some strict version and system dependencies. GROBID 0.9.0 supports Python environment managers (virtualenv, conda) for DeLFT integration, which simplifies the setup compared to earlier versions.
+Using Deep Learning model in GROBID with a normal installation/build is not straightforward at the present time, due to the required availability of various native libraries and to the Python dynamic linking and packaging mess, which leads to force some strict version and system dependencies. GROBID supports Python environment managers (virtualenv, conda) for DeLFT integration, which simplifies the setup compared to earlier versions.
 
 The most simple solution is to use the ["full" GROBID docker image](Grobid-docker.md), which allows to use Deep Learning models without further installation and which provides automatic GPU support. 
 
@@ -51,12 +51,12 @@ However, if you need a "local" library installation and build, prepare a lot of 
 The following was tested with Java 21.
 
 <span>1.</span> install [DeLFT](https://github.com/kermitt2/delft), see instructions [here](https://github.com/kermitt2/delft#install).
-DeLFT version `0.4.4` has been tested successfully with Python 3.10-3.11. For GPU support, CUDA >=11.2 must be installed. 
+DeLFT version `0.4.6` has been tested successfully with Python 3.10-3.11. For GPU support, CUDA >=11.2 must be installed. 
 
 <span>2.</span> Test your DeLFT installation for GROBID models: 
 
 ```shell
-cd deflt/
+cd delft/
 python -m delft.applications.grobidTagger citation tag --architecture BidLSTM_CRF
 ```
 
@@ -98,7 +98,7 @@ If you are using a Python environment for the DeLFT installation, you can set th
 
 ```yaml
   delft:
-    python_virtualEnv: /where/my/damned/python/virtualenv/is/ 
+    pythonVirtualEnv: /where/my/damned/python/virtualenv/is/ 
 ```
 
 Normally by setting the Python environment path in the config file (e.g. `pythonVirtualEnv: "../delft/env"`), you will not need to launch GROBID in the same activated environment. 
@@ -158,7 +158,7 @@ GROBID allows running models in mixed mode, i.e. to use DeLFT Deep Learning arch
 
 By default, all the models are set to use Wapiti CRF as sequence labeling implementation. Each model has its own configuration block, where it is possible to select a particular model implementation, with its own parameters. 
 
-The following models (citation) will run with DeLFT `BidLSTM-BidLSTM_CRF_FEATURES` by adding: 
+The following models (citation) will run with DeLFT `BidLSTM_CRF_FEATURES` by adding: 
 
 ```yaml
   models:

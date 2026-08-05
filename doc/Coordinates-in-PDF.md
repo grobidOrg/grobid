@@ -49,7 +49,7 @@ Generating coordinates can also been obtained with the batch mode by adding the 
 Example (under the project main directory `grobid/`): 
 
 ```bash
-> java -Xmx1024m -Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep -jar grobid-core/build/libs/grobid-core-0.5.0-onejar.jar -gH grobid-home -dIn /path/to/input/directory -dOut /path/to/output/directory -teiCoordinates -exe processFullText 
+> java -Xmx1024m -Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep -jar grobid-core/build/libs/grobid-core-0.9.1-onejar.jar -gH grobid-home -dIn /path/to/input/directory -dOut /path/to/output/directory -teiCoordinates -exe processFullText 
 ```
 
 See the [batch mode details](https://grobid.readthedocs.io/en/latest/Grobid-batch/#processfulltext). With the batch mode, it is currently not possible to cherry pick up certain elements, coordinates will appear for all. Again, we recommend to use the service for significantly better performances and more customization options. 
@@ -72,7 +72,7 @@ In addition, contrary to usage in computer science, the index associated to the 
 
 The processing of a PDF document by the GROBID result in JSON containing two specific structures for positioning entity annotations in the PDF :
 
-* the list of page size, introduced by the JSON attribute `pages`. The dimension of each page is given successively by two attributes `page_height` and `page_height`.
+* the list of page size, introduced by the JSON attribute `pages`. The dimension of each page is given successively by two attributes `page_height` and `page_width`.
 
 Example: 
 ```json

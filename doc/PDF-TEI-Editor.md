@@ -45,7 +45,7 @@ Pre-annotation quality directly determines how much manual correction you have t
 - **Run your own full GROBID instance** — recommended once you settle into iterative sessions of correction and retraining. Hosting it yourself removes the rate/availability limits of the public space and, more importantly, lets you point the editor at *your own* freshly retrained models so each correction cycle pre-annotates with the improvements from the previous one. Use the *full* image (`grobid/grobid:{version}-full`, or the mirror `lfoppiano/grobid:{version}-full`); see [Run with Docker](Grobid-docker.md) for the full instructions. GROBID's REST API listens on port `8070`, so the URL is typically `http://localhost:8070`:
 
 ```bash
-docker run --rm --gpus all --init --ulimit core=0 -p 8070:8070 grobid/grobid:0.9.0-full
+docker run --rm --gpus all --init --ulimit core=0 -p 8070:8070 grobid/grobid:0.9.1-full
 ```
 
 ### Running the editor (Docker)

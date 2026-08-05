@@ -84,7 +84,7 @@ For running the evaluation, the tool assumes that the files are organised in a s
 
 * each article sub-directory containing at least the PDF version and a gold XML structured version of the article (in NLM format for PubMedCentral evaluation or in TEI format for the Pub2TEI-based evaluation). See the diagram below - the name of the sub-directory and the files is free.
 
-* extension for files generated with [Pub2TEI](https://github.com/kermitt2/Pub2TEI) is `.pub2tei.tei.xml`. Extension for NLM files is `.nxlm` (PMC) or `xml` (bioRxiv). GROBID will generate additional TEI files with extension `.fulltext.tei.xml`.
+* extension for files generated with [Pub2TEI](https://github.com/kermitt2/Pub2TEI) is `.pub2tei.tei.xml`. Extension for NLM files is `.nxml` (PMC) or `.xml` (bioRxiv). GROBID will generate additional TEI files with extension `.fulltext.tei.xml`.
 
 ```
 ├── article1
@@ -246,7 +246,7 @@ To evaluate a field that is in the catalogue but currently selected by no flavor
 
 The evaluation provides precision, recall and F1-score for the different fields in the header and bibliographical references. In addition, the scores are also computed at *instance* level, which means at the level of a complete header or complete citation.
 
-An experimental evaluation for the structures of the full text body is also proposed. This is not reliable in the current state, because most of the annotations of the full texts in PudMed Central are not uniform. For instance, the numbering of the section header is sometime included in the section header annotation, sometime not. The PubMed Central annotations will need to be standardized as a pre-process for a meaningful evaluation, which is a task planned in the next releases.
+An experimental evaluation for the structures of the full text body is also proposed. This is not reliable in the current state, because most of the annotations of the full texts in PubMed Central are not uniform. For instance, the numbering of the section header is sometime included in the section header annotation, sometime not. The PubMed Central annotations will need to be standardized as a pre-process for a meaningful evaluation, which is a task planned in the next releases.
 
 ## Matching techniques
 

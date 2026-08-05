@@ -27,9 +27,9 @@ From a development installation, you can also build and install the service as a
 cd ..
 mkdir grobid-installation
 cd grobid-installation
-unzip ../grobid/grobid-service/build/distributions/grobid-service-0.9.0.zip
-mv grobid-service-0.9.0 grobid-service
-unzip ../grobid/grobid-home/build/distributions/grobid-home-0.9.0.zip
+unzip ../grobid/grobid-service/build/distributions/grobid-service-0.9.1.zip
+mv grobid-service-0.9.1 grobid-service
+unzip ../grobid/grobid-home/build/distributions/grobid-home-0.9.1.zip
 ./grobid-service/bin/grobid-service
 ```
 
@@ -254,7 +254,7 @@ Response status codes:
 
 A `503` error with the default parallel mode normally means that all the threads available to GROBID are currently used. The client need to re-send the query after a wait time that will allow the server to free some threads. The wait time depends on the service and the capacities of the server, we suggest 5-10 seconds for the `processFulltextDocument` service.
 
-The optional sentence segmentation in the TEI XML result is based on the algorithm selected in the Grobid configuration file (under `grobid-home/config/grobid.yaml`). As of August 2020, available segmenters are [OpenNLP sentence detector](https://opennlp.apache.org/docs/1.5.3/manual/opennlp.html#tools.sentdetect) (recommended for scientific articles after evaluation) and the [Pragmatic_Segmenter](https://github.com/diasks2/pragmatic_segmenter).
+The optional sentence segmentation in the TEI XML result is based on the algorithm selected in the Grobid configuration file (under `grobid-home/config/grobid.yaml`). The available segmenters are the [OpenNLP sentence detector](https://opennlp.apache.org/docs/1.5.3/manual/opennlp.html#tools.sentdetect) (recommended for scientific articles after evaluation), the [Pragmatic Segmenter](https://github.com/diasks2/pragmatic_segmenter), and [BlingFire](https://github.com/microsoft/BlingFire).
 
 You can test this service with the **cURL** command lines, for instance fulltext extraction (header, body and citations) from a PDF file in the current directory:
 
@@ -873,7 +873,7 @@ Only one training per model can run at a time: if a training for the same model 
 |   method  |  request type       | response type        |  parameters  | requirement   |   description             |
 |---        |---                  |---                   |---           |---            |---                        |
 | POST | application/x-www-form-urlencoded |  application/json |   model      |   required    | name of the model to train  |
-|           |                     |                      | architecture | optional | name of the architecture to use for training the model, possible values are `CRF` (default), `BiLSTM-CRF`, `BiLSMT-CRF-ELMo` |
+|           |                     |                      | architecture | optional | name of the architecture to use for training the model, possible values are `CRF` (default), `BiLSTM-CRF`, `BiLSTM-CRF-ELMo` |
 |           |                     |                      | type | optional | type of training, `full`, `holdout`, `split`, `nfold`, default is `split` |
 |           |                     |                      | ratio | optional | only considered for `split` training mode, give the ratio (number between 0 and 1) of training and evaluation data when splitting the annotated data, default is `0.9` |
 |           |                     |                      | n | optional | only considered for `nfold` training mode, give the number of folds to be used, default is `10` |
