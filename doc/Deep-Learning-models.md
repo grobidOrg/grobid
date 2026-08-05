@@ -51,7 +51,7 @@ However, if you need a "local" library installation and build, prepare a lot of 
 The following was tested with Java 21.
 
 <span>1.</span> install [DeLFT](https://github.com/kermitt2/delft), see instructions [here](https://github.com/kermitt2/delft#install).
-DeLFT version `0.4.6` has been tested successfully with Python 3.10-3.11. For GPU support, CUDA >=11.2 must be installed. 
+DeLFT version `0.4.6` has been tested successfully with Python 3.10-3.11. For GPU support, CUDA 12.x (12.3, as required by TensorFlow 2.17) must be installed. 
 
 <span>2.</span> Test your DeLFT installation for GROBID models: 
 
@@ -130,7 +130,7 @@ INFO  [2020-10-30 23:04:07,756] org.grobid.core.jni.DeLFTModel: Loading DeLFT mo
 INFO  [2020-10-30 23:04:07,758] org.grobid.core.jni.JEPThreadPool: Creating JEP instance for thread 44
 ```
 
-It is then possible to [benchmark end-to-end](End-to-end-evaluation.md) the selected Deep Learning models as any usual GROBID benchmarking exercise. In practice, the CRF models should be mixed with Deep Learning models to keep the process reasonably fast and memory-hungry. In addition, note that, currently, due to the limited amount of training data, Deep Learning models perform significantly better than CRF only for a few models (`citation`, `affiliation-address`, `reference-segmenter`). This should of course certainly change in the future! 
+It is then possible to [benchmark end-to-end](End-to-end-evaluation.md) the selected Deep Learning models as any usual GROBID benchmarking exercise. In practice, the CRF models should be mixed with Deep Learning models to keep the process reasonably fast and memory-hungry. In addition, note that, currently, due to the limited amount of training data, Deep Learning models perform better than CRF for a subset of models (`citation`, `affiliation-address`, `reference-segmenter`, `header` and `funding-acknowledgement`). This should of course certainly change in the future! 
 
 #### Anaconda 
 

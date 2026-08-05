@@ -50,7 +50,7 @@ You can check whether the service is up and running by opening the following URL
 * <http://yourhost:8070/api/health> **(readiness)** returns a JSON object with detailed status including initialization state, engine pool metrics (active/idle/max engines), and configuration checks. Returns HTTP 200 when ready to process requests, HTTP 503 otherwise. Suitable for use as a readiness probe.
 
 The service provides also an admin console, reachable at <http://yourhost:8071> where some additional checks like ping, metrics, hearthbeat are available.
-We recommend, in particular to have a look at the metrics (using the [Metric library](https://metrics.dropwizard.io/3.1.0/getting-started/)) which are providing the rate of execution as well as the throughput of each entry point.
+We recommend, in particular to have a look at the metrics (using the [Metric library](https://metrics.dropwizard.io/4.2.0/getting-started/)) which are providing the rate of execution as well as the throughput of each entry point.
 
 In addition, metrics in [Prometheus](https://prometheus.io/) exposition format are available at <http://yourhost:8071/metrics/prometheus>. This includes both the application metrics (rate/throughput per entry point) and JVM/process metrics (heap, GC, threads, CPU). A Prometheus server can scrape this endpoint and the metrics can then be visualised and alerted on in [Grafana](https://grafana.com/). The service can also **push** metrics over OTLP (e.g. to Grafana Cloud) instead of being scraped. See [Monitoring with Prometheus](Monitoring.md) for a step-by-step setup of both the pull and push paths.  
 
