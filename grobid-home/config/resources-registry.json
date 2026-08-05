@@ -76,38 +76,6 @@
         }
     ],
     "embeddings-contextualized": [
-        {
-            "name": "elmo-en",
-            "path-config": "/opt/elmo/elmo_2x4096_512_2048cnn_2xhighway_5.5B_options.json",
-            "path_weights": "/opt/elmo/elmo_2x4096_512_2048cnn_2xhighway_5.5B_weights.hdf5",
-            "path-vocab": "data/models/ELMo/en/vocab.txt",
-            "path-cache": "data/models/ELMo/en/",
-            "cache-training": true,
-            "lang": "en",
-            "url_config": "https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway_5.5B/elmo_2x4096_512_2048cnn_2xhighway_5.5B_options.json",
-            "url_weights": "https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway_5.5B/elmo_2x4096_512_2048cnn_2xhighway_5.5B_weights.hdf5"
-        },
-        {
-            "name": "elmo-pubmed",
-            "path-config": "",
-            "path_weights": "",
-            "path-vocab": "data/models/ELMo/en/vocab.txt",
-            "path-cache": "data/models/ELMo/en/",
-            "cache-training": true,
-            "lang": "en",
-            "url_config": "https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/contributed/pubmed/elmo_2x4096_512_2048cnn_2xhighway_options.json",
-            "url_weights": "https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/contributed/pubmed/elmo_2x4096_512_2048cnn_2xhighway_weights_PubMed_only.hdf5"
-        },
-        {
-            "name": "elmo-fr",
-            "path-config": "/opt/elmo_fr/elmo_fr_020_options.json",
-            "path_weights": "/opt/elmo_fr/elmo_fr_020/elmo_fr_020_weights.hdf5",
-            "path-vocab": "data/models/ELMo/fr/vocab.txt",
-            "path-cache": "data/models/ELMo/fr/",
-            "cache-training": true,
-            "lang": "fr",
-            "url": "https://traces1.inria.fr/oscar/files/models/cc/fr.zip"
-        }
     ],
     "transformers": [
     ]

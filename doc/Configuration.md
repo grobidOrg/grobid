@@ -202,7 +202,6 @@ For instance, the citation model is configured below to use a `BidLSTM_CRF_FEATU
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
-        useELMo: false
         runtime:
           # parameters used at runtime/prediction
           max_sequence_length: 3000

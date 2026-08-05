@@ -61,12 +61,6 @@ To appreciate the runtime impact of Deep Learning models over CRF Wapiti, we rep
 | 150 | 30,247|
 | 200 | 30,520|
 
-| BiLSTM-CRF+ELMo||
-| ---| --- |
-| batch size | tokens/s|
-| 5 | 271|
-| 7 | 365|
-
 | SciBERT+CRF||
 | ---| --- |
 | batch size | tokens/s|
