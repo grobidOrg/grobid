@@ -106,13 +106,19 @@ WORKDIR /opt/grobid
 COPY --from=builder /opt/grobid .
 
 # install DeLFT (PyTorch backend) + torch.
-# Pinned to the delft git branch/ref (feature/improve-pytorch-performances) until the
-# next PyPI release (1.0.2) is published; this branch carries the PyTorch performance
-# improvements on top of the dev num_workers=0 default and logging fixes.
+# Pinned to a delft commit until the next PyPI release (1.0.2) is published; this
+# one is the tip of feature/improve-pytorch-performances, carrying the PyTorch
+# performance improvements on top of the dev num_workers=0 default and logging fixes.
+#
+# A commit SHA, not a branch name: Docker keys this layer on the command string, so
+# a branch name never changes and rebuilds silently reuse whatever the branch pointed
+# at when the layer was first built. New commits on the branch would be invisible.
+# Bump this line to pick them up (--no-cache-dir is a pip flag; it does not help here).
+#
 # On amd64 we pull the CUDA 12.8 build via the [gpu] extra and the PyTorch index.
 # On arm64 we take the default (CPU) torch wheel from PyPI.
 # torch / transformers / pytorch-crf come in transitively; no tensorflow / tf_keras.
-ARG DELFT_REF=feature/improve-pytorch-performances
+ARG DELFT_REF=b8f4e7f131ae41b5da57ebce2c476e340eade79b
 RUN if [ "$TARGETARCH" = "amd64" ]; then \
     pip3 install --no-cache-dir "delft[gpu] @ git+https://github.com/kermitt2/delft.git@${DELFT_REF}" \
       --extra-index-url https://download.pytorch.org/whl/cu128; \
