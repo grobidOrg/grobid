@@ -873,7 +873,7 @@ Only one training per model can run at a time: if a training for the same model 
 |   method  |  request type       | response type        |  parameters  | requirement   |   description             |
 |---        |---                  |---                   |---           |---            |---                        |
 | POST | application/x-www-form-urlencoded |  application/json |   model      |   required    | name of the model to train  |
-|           |                     |                      | architecture | optional | name of the architecture to use for training the model, possible values are `CRF` (default), `BiLSTM-CRF`, `BiLSTM-CRF-ELMo` |
+|           |                     |                      | architecture | optional | name of the architecture to use for training the model, possible values are `CRF` (default) and `BiLSTM-CRF` |
 |           |                     |                      | type | optional | type of training, `full`, `holdout`, `split`, `nfold`, default is `split` |
 |           |                     |                      | ratio | optional | only considered for `split` training mode, give the ratio (number between 0 and 1) of training and evaluation data when splitting the annotated data, default is `0.9` |
 |           |                     |                      | n | optional | only considered for `nfold` training mode, give the number of folds to be used, default is `10` |
