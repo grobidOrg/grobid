@@ -254,7 +254,7 @@ Response status codes:
 
 A `503` error with the default parallel mode normally means that all the threads available to GROBID are currently used. The client need to re-send the query after a wait time that will allow the server to free some threads. The wait time depends on the service and the capacities of the server, we suggest 5-10 seconds for the `processFulltextDocument` service.
 
-The optional sentence segmentation in the TEI XML result is based on the algorithm selected in the Grobid configuration file (under `grobid-home/config/grobid.yaml`). The available segmenters are the [OpenNLP sentence detector](https://opennlp.apache.org/docs/1.5.3/manual/opennlp.html#tools.sentdetect) (recommended for scientific articles after evaluation), the [Pragmatic Segmenter](https://github.com/diasks2/pragmatic_segmenter), and [BlingFire](https://github.com/microsoft/BlingFire).
+The optional sentence segmentation in the TEI XML result is based on the algorithm selected in the Grobid configuration file (under `grobid-home/config/grobid.yaml`; see [Sentence segmentation](Configuration.md#sentence-segmentation)). The available segmenters are the [OpenNLP sentence detector](https://opennlp.apache.org/docs/1.5.3/manual/opennlp.html#tools.sentdetect) (recommended for scientific articles after evaluation), the [Pragmatic Segmenter](https://github.com/diasks2/pragmatic_segmenter), and [BlingFire](https://github.com/microsoft/BlingFire).
 
 You can test this service with the **cURL** command lines, for instance fulltext extraction (header, body and citations) from a PDF file in the current directory:
 
