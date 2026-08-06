@@ -24,6 +24,9 @@ docs_dir: doc
 extra_css:
   - css/custom.css
 
+extra_javascript:
+  - readthedocs.js
+
 markdown_extensions:
   - admonition
   - pymdownx.details
