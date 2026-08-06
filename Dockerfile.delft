@@ -141,6 +141,18 @@ RUN mkdir -p /data \
 ENV PYTHONWARNINGS="ignore"
 ENV JAVA_OPTS=-Xmx4g
 
+# Pin the PyTorch/oneDNN intra-op pool to a single thread.
+# GROBID serializes all DL inference onto one JEP thread while processing many PDFs
+# in parallel (document-level concurrency). Left unset, torch sizes its OpenMP pool to
+# the host core count (ignoring any container CPU quota) and each inference grabs every
+# core, thrashing against the concurrent PDF workers and erasing PyTorch's speed. With
+# parallelism already at the document level, 1 thread/inference is optimal. delft's
+# configure_threads() bails out when OMP_NUM_THREADS is set, so this cleanly caps torch.
+# Harmless for the CRF backends (TF/Eigen is thread-insensitive here; Wapiti labelling is
+# single-threaded at inference). Raise it only if you run few PDFs at high per-doc latency.
+ENV OMP_NUM_THREADS=1
+ENV MKL_NUM_THREADS=1
+
 # set python version and library paths (both arch paths included; only one will exist at runtime)
 ENV PYTHON_VERSION=3.11
 ENV LD_LIBRARY_PATH=/usr/local/lib/python3.11/dist-packages/jep:grobid-home/lib/lin-64:grobid-home/lib/lin_arm-64
