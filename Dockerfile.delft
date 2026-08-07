@@ -118,7 +118,7 @@ COPY --from=builder /opt/grobid .
 # On amd64 we pull the CUDA 12.8 build via the [gpu] extra and the PyTorch index.
 # On arm64 we take the default (CPU) torch wheel from PyPI.
 # torch / transformers / pytorch-crf come in transitively; no tensorflow / tf_keras.
-ARG DELFT_REF=b8f4e7f131ae41b5da57ebce2c476e340eade79b
+ARG DELFT_REF=2fb73159b251ad0d537f5ba5bcebe9405037bc51
 RUN if [ "$TARGETARCH" = "amd64" ]; then \
     pip3 install --no-cache-dir "delft[gpu] @ git+https://github.com/kermitt2/delft.git@${DELFT_REF}" \
       --extra-index-url https://download.pytorch.org/whl/cu128; \
@@ -141,17 +141,20 @@ RUN mkdir -p /data \
 ENV PYTHONWARNINGS="ignore"
 ENV JAVA_OPTS=-Xmx4g
 
-# Pin the PyTorch/oneDNN intra-op pool to a single thread.
-# GROBID serializes all DL inference onto one JEP thread while processing many PDFs
-# in parallel (document-level concurrency). Left unset, torch sizes its OpenMP pool to
-# the host core count (ignoring any container CPU quota) and each inference grabs every
-# core, thrashing against the concurrent PDF workers and erasing PyTorch's speed. With
-# parallelism already at the document level, 1 thread/inference is optimal. delft's
-# configure_threads() bails out when OMP_NUM_THREADS is set, so this cleanly caps torch.
-# Harmless for the CRF backends (TF/Eigen is thread-insensitive here; Wapiti labelling is
-# single-threaded at inference). Raise it only if you run few PDFs at high per-doc latency.
-ENV OMP_NUM_THREADS=1
-ENV MKL_NUM_THREADS=1
+# Deliberately NOT setting OMP_NUM_THREADS/MKL_NUM_THREADS.
+#
+# An earlier revision pinned them to 1, on the theory that torch's pool would thrash
+# against the concurrent PDF workers. Measurement says otherwise: with ten documents in
+# flight, one thread tags 43% slower than torch's default (3.47s vs 1.99s, header model).
+# The pool is idle-blocked while the JVM workers run, so it is not competing for the
+# cores it holds. The pin also hits the PyTorch backend alone -- TensorFlow's Eigen
+# intra-op pool does not read OMP_NUM_THREADS (9.91s vs 9.89s) -- which made every
+# TF-vs-PyTorch comparison run TF on the whole machine and PyTorch on one core.
+#
+# Sizing now lives in delft's configure_threads(), which caps the pool at the container's
+# cgroup CPU quota -- the one thing torch gets wrong on its own. Setting either variable
+# here would switch that off, since configure_threads() defers to an operator who has
+# already sized the pool.
 
 # set python version and library paths (both arch paths included; only one will exist at runtime)
 ENV PYTHON_VERSION=3.11
