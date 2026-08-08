@@ -289,7 +289,7 @@ project("grobid-core") {
         // Logs — slf4j 2.0.x + logback 1.5.x must move together: OpenNLP 2.5.x (and Dropwizard 5) pull
         // slf4j-api 2.0.x, whose ServiceLoader binding (SLF4JServiceProvider) only exists in logback 1.5.x.
         // logback 1.2.x would leave slf4j with no provider (NOP logging) in batch/standalone mode.
-        implementation 'org.slf4j:slf4j-api:2.0.17'
+        implementation 'org.slf4j:slf4j-api:2.0.18'
         implementation 'ch.qos.logback:logback-classic:1.5.26'
 
         implementation "org.apache.pdfbox:pdfbox:2.0.36"
@@ -522,7 +522,7 @@ project(":grobid-trainer") {
         implementation "org.jline:jline-terminal:3.21.0"
 
         // logs — see grobid-core: slf4j 2.0.x needs logback 1.5.x for its ServiceLoader binding.
-        implementation 'org.slf4j:slf4j-api:2.0.17'
+        implementation 'org.slf4j:slf4j-api:2.0.18'
         implementation 'ch.qos.logback:logback-classic:1.5.26'
     }
 
