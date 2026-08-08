@@ -118,7 +118,7 @@ COPY --from=builder /opt/grobid .
 # On amd64 we pull the CUDA 12.8 build via the [gpu] extra and the PyTorch index.
 # On arm64 we take the default (CPU) torch wheel from PyPI.
 # torch / transformers / pytorch-crf come in transitively; no tensorflow / tf_keras.
-ARG DELFT_REF=cfd8be5f5e2e020e5bcb5de414a36f679ff44112
+ARG DELFT_REF=6ab1ef9645d882bee1b7d7505d0b89e20782dba6
 RUN if [ "$TARGETARCH" = "amd64" ]; then \
     pip3 install --no-cache-dir "delft[gpu] @ git+https://github.com/kermitt2/delft.git@${DELFT_REF}" \
       --extra-index-url https://download.pytorch.org/whl/cu128; \
