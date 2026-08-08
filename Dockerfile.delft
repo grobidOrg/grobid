@@ -118,7 +118,7 @@ COPY --from=builder /opt/grobid .
 # On amd64 we pull the CUDA 12.8 build via the [gpu] extra and the PyTorch index.
 # On arm64 we take the default (CPU) torch wheel from PyPI.
 # torch / transformers / pytorch-crf come in transitively; no tensorflow / tf_keras.
-ARG DELFT_REF=2fb73159b251ad0d537f5ba5bcebe9405037bc51
+ARG DELFT_REF=cfd8be5f5e2e020e5bcb5de414a36f679ff44112
 RUN if [ "$TARGETARCH" = "amd64" ]; then \
     pip3 install --no-cache-dir "delft[gpu] @ git+https://github.com/kermitt2/delft.git@${DELFT_REF}" \
       --extra-index-url https://download.pytorch.org/whl/cu128; \
@@ -151,10 +151,12 @@ ENV JAVA_OPTS=-Xmx4g
 # intra-op pool does not read OMP_NUM_THREADS (9.91s vs 9.89s) -- which made every
 # TF-vs-PyTorch comparison run TF on the whole machine and PyTorch on one core.
 #
-# Sizing now lives in delft's configure_threads(), which caps the pool at the container's
-# cgroup CPU quota -- the one thing torch gets wrong on its own. Setting either variable
-# here would switch that off, since configure_threads() defers to an operator who has
-# already sized the pool.
+# Sizing now lives in delft's configure_threads(), which caps the pool at whatever the
+# container was actually given -- the CFS quota from "--cpus", or the affinity mask from
+# "--cpuset-cpus". Both are invisible to torch, which counts host cores. Setting either
+# variable here would switch that off, since configure_threads() defers to an operator
+# who has already sized the pool; pass -e OMP_NUM_THREADS=N at "docker run" to override
+# per-run without a rebuild.
 
 # set python version and library paths (both arch paths included; only one will exist at runtime)
 ENV PYTHON_VERSION=3.11
