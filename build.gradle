@@ -439,17 +439,17 @@ project(":grobid-service") {
         implementation platform('org.eclipse.jetty:jetty-bom:12.1.9')
         implementation platform('org.eclipse.jetty.ee10:jetty-ee10-bom:12.1.9')
 
-        implementation 'io.dropwizard:dropwizard-bom:5.0.1'
-        implementation 'io.dropwizard:dropwizard-core:5.0.1'
-        implementation 'io.dropwizard:dropwizard-assets:5.0.1'
-        implementation 'io.dropwizard:dropwizard-testing:5.0.1'
+        implementation 'io.dropwizard:dropwizard-bom:5.0.2'
+        implementation 'io.dropwizard:dropwizard-core:5.0.2'
+        implementation 'io.dropwizard:dropwizard-assets:5.0.2'
+        implementation 'io.dropwizard:dropwizard-testing:5.0.2'
         implementation 'io.dropwizard.modules:dropwizard-testing-junit4:5.0.0'
-        implementation 'io.dropwizard:dropwizard-forms:5.0.1'
-        implementation 'io.dropwizard:dropwizard-client:5.0.1'
-        implementation 'io.dropwizard:dropwizard-auth:5.0.1'
+        implementation 'io.dropwizard:dropwizard-forms:5.0.2'
+        implementation 'io.dropwizard:dropwizard-client:5.0.2'
+        implementation 'io.dropwizard:dropwizard-auth:5.0.2'
         implementation 'io.dropwizard.metrics:metrics-core:4.2.38'
         implementation 'io.dropwizard.metrics:metrics-servlets:4.2.38'
-        implementation 'io.dropwizard:dropwizard-json-logging:5.0.1'
+        implementation 'io.dropwizard:dropwizard-json-logging:5.0.2'
 
         implementation "org.apache.pdfbox:pdfbox:2.0.36"
         implementation "io.prometheus:simpleclient_dropwizard:0.16.0"
