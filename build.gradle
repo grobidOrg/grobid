@@ -436,8 +436,8 @@ project(":grobid-service") {
         // Dropwizard 5.0.1 ships Jetty 12.1.5, but CVE-2026-2332 (HTTP request smuggling) is only fixed
         // on the 12.1.x line at 12.1.7+. Import the Jetty BOMs at 12.1.9 so every Jetty artifact is
         // forced past the vulnerable version (Gradle picks the higher of the two BOM-managed versions).
-        implementation platform('org.eclipse.jetty:jetty-bom:12.1.9')
-        implementation platform('org.eclipse.jetty.ee10:jetty-ee10-bom:12.1.9')
+        implementation platform('org.eclipse.jetty:jetty-bom:12.1.12')
+        implementation platform('org.eclipse.jetty.ee10:jetty-ee10-bom:12.1.12')
 
         implementation 'io.dropwizard:dropwizard-bom:5.0.1'
         implementation 'io.dropwizard:dropwizard-core:5.0.1'
