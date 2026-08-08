@@ -304,7 +304,7 @@ project("grobid-core") {
         api 'javax.xml.bind:jaxb-api:2.3.0'
 
         implementation "joda-time:joda-time:2.14.0"
-        implementation "org.apache.lucene:lucene-analyzers-common:4.5.1"
+        implementation "org.apache.lucene:lucene-analyzers-common:4.10.4"
         implementation 'black.ninia:jep:4.3.1'
         implementation 'org.apache.opennlp:opennlp-tools:2.5.11'
 
@@ -315,7 +315,7 @@ project("grobid-core") {
         // we leave it as-is and wait for an upstream jruby release with BouncyCastle >= 1.84.
         implementation "org.jruby:jruby-complete:9.4.12.1"
 
-        shadedLib "org.apache.lucene:lucene-analyzers-common:4.5.1"
+        shadedLib "org.apache.lucene:lucene-analyzers-common:4.10.4"
     }
 
     jar {
