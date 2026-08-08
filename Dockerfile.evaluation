@@ -65,7 +65,7 @@ WORKDIR /opt/grobid/evaluation
 # -------------------
 
 # use NVIDIA Container Toolkit to automatically recognize possible GPU drivers on the host machine
-FROM tensorflow/tensorflow:2.17.2-gpu
+FROM tensorflow/tensorflow:2.21.0-gpu
 
 # setting locale is likely useless but to be sure
 ENV LANG=C.UTF-8
