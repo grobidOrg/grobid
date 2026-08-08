@@ -13,7 +13,7 @@
 # -------------------
 # build builder image
 # -------------------
-FROM eclipse-temurin:21.0.11_10-jdk-noble AS builder
+FROM eclipse-temurin:23.0.2_7-jdk-noble AS builder
 
 USER root
 
@@ -74,7 +74,7 @@ RUN rm -rf grobid-source
 # -------------------
 # build runtime image
 # -------------------
-FROM eclipse-temurin:21.0.11_10-jre-noble
+FROM eclipse-temurin:23.0.2_7-jre-noble
 
 RUN apt-get update && \
     apt-get -y upgrade && \
