@@ -25,7 +25,7 @@ extra_css:
   - css/custom.css
 
 extra_javascript:
-    - doc/readthedocs-search.js
+  - readthedocs.js
 
 markdown_extensions:
   - admonition

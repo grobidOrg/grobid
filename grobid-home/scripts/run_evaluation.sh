@@ -112,6 +112,19 @@ for arg in "$@"; do
   fi
 done
 
+# -f is the file ratio, not the flavor - passing a flavor here used to be accepted
+# silently and only surfaced much later as a missing report
+case "${FILERATIO}" in
+  ''|*[!0-9.]*|*.*.*)
+    echo "Error: -f must be a ratio between 0.0 and 1.0, got '${FILERATIO}'" >&2
+    if [ "${FILERATIO#*/}" != "${FILERATIO}" ]; then
+      echo "       That looks like a flavor - use -l '${FILERATIO}' instead." >&2
+    fi
+    usage
+    exit 2
+    ;;
+esac
+
 # required
 if [ -z "${EVAL_ROOT}" ]; then
   echo "Error: evaluation root folder must be provided with -d" >&2

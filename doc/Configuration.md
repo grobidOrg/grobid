@@ -173,7 +173,7 @@ Under `delft`, we find the generic parameters of the DeLFT engine. For using Dee
     # delft installation path if Deep Learning architectures are used to implement one of the sequence labeling model, 
     # embeddings are usually compiled as lmdb under delft/data (this parameter is ignored if only featured-engineered CRF are used)
     install: "../delft"
-    pythonVirtualEnv: ../delft/env"
+    pythonVirtualEnv: "../delft/env"
 ```
 
 ### Configuring the models
@@ -202,7 +202,6 @@ For instance, the citation model is configured below to use a `BidLSTM_CRF_FEATU
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
-        useELMo: false
         runtime:
           # parameters used at runtime/prediction
           max_sequence_length: 3000

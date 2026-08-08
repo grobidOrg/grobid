@@ -8,8 +8,8 @@ A model variant (or flavor) is for example an alternative header model trained w
 To process a document with alternative model(s), we use a string called "flavor" to identify it. 
 If the flavor is indicated, the selected model will use the "flavor" model if it exists, and the normal model if the flavor does exist for this model (so defaulting back then to the standard models).
 
-Flavor model training data are always located as subdirectories of the standard training data path, e.g. for the flavor "sdo/ietf", the training data of the header model for this flavor will be under `grobid-trainer/resources/dataset/header/article/light-ref`. 
-The training data of the segmentation model for this flavor will be under `grobid-trainer/resources/dataset/segmentation/article/light`, and so on.
+Flavor model training data are always located as subdirectories of the standard training data path, e.g. for the flavor "sdo/ietf", the training data of the header model for this flavor will be under `grobid-trainer/resources/dataset/header/sdo/ietf`. 
+The training data of the segmentation model for this flavor will be under `grobid-trainer/resources/dataset/segmentation/sdo/ietf`, and so on.
 
 For running grobid following a particular flavor, we add the flavor name as additional parameter of the service.
 

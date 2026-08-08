@@ -97,7 +97,6 @@ grobid:
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
-        useELMo: false
         runtime:
           # parameters used at runtime/prediction
           max_sequence_length: 3000
@@ -144,7 +143,6 @@ grobid:
         # deep learning parameters
         architecture: "BidLSTM_ChainCRF_FEATURES"
         #transformer: "allenai/scibert_scivocab_cased"
-        useELMo: false
         runtime:
           # parameters used at runtime/prediction
           #max_sequence_length: 510
@@ -167,7 +165,6 @@ grobid:
         nbMaxIterations: 1500
       delft:
         architecture: "BidLSTM_ChainCRF_FEATURES"
-        useELMo: false
 
     - name: "header-article-light-ref"
 #      engine: "wapiti"
@@ -179,7 +176,6 @@ grobid:
         nbMaxIterations: 1500
       delft:
         architecture: "BidLSTM_ChainCRF_FEATURES"
-        useELMo: false
 
     - name: "header-sdo-ietf"
       engine: "wapiti"
@@ -199,7 +195,6 @@ grobid:
       delft:
         # deep learning parameters
         architecture: "BidLSTM_ChainCRF_FEATURES"
-        useELMo: false
         runtime:
           # parameters used at runtime/prediction (for this model, use same max_sequence_length as training)
           max_sequence_length: 3000
@@ -272,7 +267,6 @@ grobid:
         architecture: "BidLSTM_CRF_FEATURES"
         #architecture: "BERT_CRF"
         #transformer: "michiyasunaga/LinkBERT-base"
-        useELMo: false
         runtime:
           # parameters used at runtime/prediction
           max_sequence_length: 500
@@ -315,7 +309,6 @@ grobid:
         architecture: "BidLSTM_CRF_FEATURES"
         #architecture: "BERT_CRF"
         #transformer: "michiyasunaga/LinkBERT-base"
-        useELMo: false
         runtime:
           # parameters used at runtime/prediction
           max_sequence_length: 800

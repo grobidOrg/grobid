@@ -1,0 +1,60 @@
+name: Publish GitHub release
+
+# When a release tag is pushed (e.g. by the Gradle release plugin), create the
+# corresponding GitHub release with the notes taken from the matching version
+# section of CHANGELOG.md. Falls back to GitHub's auto-generated notes when the
+# changelog has no section for the tag.
+
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Extract release notes from CHANGELOG.md
+        run: |
+          set -euo pipefail
+          VERSION="${GITHUB_REF_NAME#v}"
+
+          # Print everything between "## [<version>]" and the next "## [" heading.
+          awk -v ver="$VERSION" '
+            $0 ~ ("^## \\[" ver "\\]") { found=1; next }
+            found && /^## \[/ { exit }
+            found { print }
+          ' CHANGELOG.md > release-notes.md
+
+          if [ -s release-notes.md ]; then
+            echo "Release notes for $VERSION extracted from CHANGELOG.md:"
+            cat release-notes.md
+          else
+            echo "::warning::No CHANGELOG.md section found for version $VERSION; the release will use auto-generated notes"
+          fi
+
+      - name: Create or update the GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        run: |
+          set -euo pipefail
+          TAG="$GITHUB_REF_NAME"
+
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1; then
+            echo "Release $TAG already exists"
+            if [ -s release-notes.md ]; then
+              gh release edit "$TAG" --repo "$GITHUB_REPOSITORY" --notes-file release-notes.md
+            fi
+          elif [ -s release-notes.md ]; then
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --verify-tag \
+              --title "GROBID $TAG" --notes-file release-notes.md
+          else
+            gh release create "$TAG" --repo "$GITHUB_REPOSITORY" --verify-tag \
+              --title "GROBID $TAG" --generate-notes
+          fi

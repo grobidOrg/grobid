@@ -5,6 +5,100 @@ This page lists the breaking changes users should be aware of when upgrading an 
 !!! tip "Docker users have the easiest path"
     If you run GROBID via the official Docker images ([`grobid/grobid`](https://hub.docker.com/r/grobid/grobid)), upgrading is simply a matter of pulling the new tag — the image already bundles matching model files, DeLFT, TensorFlow and Python versions. The notes below mostly concern users who build GROBID from source, use custom-trained models, or deploy without Docker.
 
+## Upgrading to 0.9.1
+
+Version 0.9.1 is mainly a maintenance and dependency-refresh release. The shipped models, the JDK 21 / Gradle 9 build requirement, and the Deep Learning runtime (TensorFlow 2.17, Python 3.10–3.11) are unchanged from 0.9.0 — DeLFT is bumped a single patch (0.4.4 → 0.4.6), but no retraining and no environment change are needed. The one thing to check is the **service configuration**, because 0.9.1 upgrades the embedded web framework.
+
+### At a glance
+
+- **Web framework** → Dropwizard **4 → 5** (Jakarta EE 10, **Jetty 11 → 12**).
+- **Custom service config** → the `server.maxQueuedRequests` option was removed and now **prevents the service from starting** if present.
+- **Downstream services** that embed `grobid-service` → must move off the Jetty‑11 `CrossOriginFilter` / `QoSFilter` (removed in Jetty 12).
+- **OpenNLP** → 1.9.4 → 2.5.x. No configuration change.
+- The stock `grobid-home/config/grobid.yaml` shipped with GROBID is already compatible — these notes only affect **customised** configs and downstream applications.
+
+### Service configuration: Dropwizard 5 / Jetty 12
+
+Dropwizard 5 validates the `server:` block more strictly than Dropwizard 4 and rejects a few options that Jetty 12 removed. If you kept the default `grobid.yaml` you have nothing to do; if you maintain a customised one, check the following.
+
+#### Remove `server.maxQueuedRequests`
+
+Dropwizard 5's `DefaultServerFactory` no longer accepts `maxQueuedRequests`. If your config still sets it, GROBID aborts at startup:
+
+```
+io.dropwizard.configuration.ConfigurationParsingException: grobid.yaml has an error:
+  * Unrecognized field at: server.maxQueuedRequests
+...
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException:
+  Unrecognized field "maxQueuedRequests"
+  (class io.dropwizard.core.server.DefaultServerFactory), not marked as ignorable
+```
+
+The fix is to delete the line from the `server:` block:
+
+```diff
+ server:
+   type: custom
+   ...
+   maxThreads: 2048
+-  maxQueuedRequests: 2048
+```
+
+#### Keep connector-only options on the connector
+
+`idleTimeout` and `acceptQueueSize` are properties of the HTTP **connector**, not of the server factory. If you had set them at the top `server:` level they must move under the relevant `applicationConnectors` / `adminConnectors` entry (this is also where the stock config already puts them):
+
+```yaml
+server:
+  type: custom
+  applicationConnectors:
+    - type: http
+      port: 8070
+      idleTimeout: 120 seconds   # on the connector, not at the server level
+      acceptQueueSize: 2048       # on the connector, not at the server level
+```
+
+### Downstream services that embed grobid-service
+
+If you build a service **on top of** `grobid-service` (for example grobid-quantities, datastet, software-mentions, or your own Dropwizard application), note that Jetty 12 **removed** the servlet filters these applications commonly used for CORS and request throttling:
+
+- `org.eclipse.jetty.servlets.CrossOriginFilter`
+- `org.eclipse.jetty.servlets.QoSFilter`
+
+Referencing them now throws `NoClassDefFoundError` at startup. Replace them with the equivalent Jetty 12 server **handlers**, inserted above the application context:
+
+```java
+import org.eclipse.jetty.server.handler.CrossOriginHandler;
+import org.eclipse.jetty.server.handler.QoSHandler;
+
+// CORS
+CrossOriginHandler cors = new CrossOriginHandler();
+cors.setAllowedOriginPatterns(Set.of("*"));
+cors.setAllowedMethods(Set.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD"));
+cors.setAllowedHeaders(Set.of("X-Requested-With", "Content-Type", "Accept", "Origin"));
+cors.setAllowCredentials(false);
+environment.getApplicationContext().insertHandler(cors);
+
+// optional: cap concurrent requests (replaces QoSFilter's maxRequests)
+QoSHandler qos = new QoSHandler();
+qos.setMaxRequestCount(maxParallelRequests);
+environment.getApplicationContext().insertHandler(qos);
+```
+
+Bump your own web-stack dependencies to match GROBID 0.9.1: `io.dropwizard:*:5.0.1`, `ru.vyarus:dropwizard-guicey:8.0.2`, and the Jetty 12 BOMs `org.eclipse.jetty:jetty-bom:12.1.9` and `org.eclipse.jetty.ee10:jetty-ee10-bom:12.1.9`. The `grobid-service` `GrobidServiceApplication` is the reference implementation.
+
+### New: metrics export (opt-in)
+
+0.9.1 adds a Prometheus scrape endpoint (`/metrics/prometheus` on the admin connector) and an optional push-based OTLP exporter — both **disabled by default**, so no action is needed to upgrade. To enable them, see [Monitoring with Prometheus](Monitoring.md).
+
+### Other changes
+
+- **OpenNLP 1.9.4 → 2.5.x** (sentence segmentation): no configuration change, but the OpenNLP API differs if you call it directly from custom code.
+- **Fail-fast on spaces in `grobid-home`** when Wapiti is the configured engine: if your install path contains spaces, move it to a path without spaces.
+- **pdfalto temporary directory**: pdfalto now writes its scratch files to GROBID's configured `grobid.temp` (default `grobid-home/tmp`) via `TMPDIR`, instead of `/tmp`.
+
+For the full list of changes, see the [0.9.1 CHANGELOG entry](https://github.com/grobidOrg/grobid/blob/master/CHANGELOG.md).
+
 ## Upgrading to 0.9.0
 
 Version 0.9.0 is a **major release** with changes that affect the build environment, the Deep Learning runtime, and the shipped models. Existing 0.8.x installations will **not** work as-is after pulling 0.9.0 — you must update several components.
@@ -80,7 +174,7 @@ For the full list of changes, see the [0.9.0 CHANGELOG entry](https://github.com
 
 After upgrading, a quick end-to-end smoke test:
 
-1. Start the service: `./gradlew :grobid-service:run` (or `docker run ... grobid/grobid:0.9.0-full`).
-2. Open <http://localhost:8070> — the landing page now shows version and revision information, so you can confirm you are on 0.9.0.
+1. Start the service: `./gradlew :grobid-service:run` (or `docker run ... grobid/grobid:0.9.1-full`).
+2. Open <http://localhost:8070> — the landing page now shows version and revision information, so you can confirm you are on 0.9.1.
 3. Check `/api/health` — it now fails early when models are only partially initialized, so a green status is a stronger signal than before.
 4. Process a known PDF through the `/api/processFulltextDocument` endpoint and compare the output against a pre-upgrade baseline.

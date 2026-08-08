@@ -226,8 +226,8 @@ subprojects {
         implementation "black.ninia:jep:4.3.1"
         implementation 'com.github.pemistahl:lingua:1.2.2'
 
-        implementation "com.fasterxml.jackson.core:jackson-core:2.21.4"
-        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.4"
+        implementation "com.fasterxml.jackson.core:jackson-core:2.21.5"
+        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.5"
         implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.4"
     }
 
@@ -277,7 +277,7 @@ project("grobid-core") {
     }
 
     dependencies {
-        implementation(group: 'xml-apis', name: 'xml-apis') {
+        implementation("xml-apis:xml-apis") {
             // otherwise xml-apis 2.0.1 will come from XOM and will result in
             // java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
             //TODO: sort out this problem better
@@ -313,7 +313,7 @@ project("grobid-core") {
         // never invokes Ruby's openssl — so the BC code is never loaded and the CVE is not triggerable.
         // No released jruby ships a fixed BouncyCastle yet (latest bundles 1.83; the fix needs 1.84), so
         // we leave it as-is and wait for an upstream jruby release with BouncyCastle >= 1.84.
-        implementation group: 'org.jruby', name: 'jruby-complete', version: '9.4.12.1'
+        implementation "org.jruby:jruby-complete:9.4.12.1"
 
         shadedLib "org.apache.lucene:lucene-analyzers-common:4.5.1"
     }
@@ -503,7 +503,7 @@ project(":grobid-trainer") {
     apply plugin: 'jacoco'
 
     dependencies {
-        implementation(group: 'xml-apis', name: 'xml-apis') {
+        implementation("xml-apis:xml-apis") {
             // otherwise xml-apis 2.0.1 will come from XOM and will result in
             // java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
             //TODO: sort out this problem better

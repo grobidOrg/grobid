@@ -4,21 +4,62 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
+## [0.9.1] - 2026-08-04
 
 ### Added
-- Training web API: list ongoing trainings (`GET /api/allTraining`) and interrupt a running training (`DELETE /api/killTraining`). Killing a training releases the per-model lock so the model can be retrained; interruption is best-effort for native (Wapiti/DeLFT) back-ends.
+- Training web API to list ongoing trainings and interrupt a running one, releasing the per-model lock #1483
+- Development/model debug API exposing the first-level models for inspecting intermediate results #1439
+- Push-based export of JVM/process runtime metrics over OTLP, complementing the Prometheus scrape endpoint #1479
+- `/metrics/prometheus` endpoint now serves the Prometheus exposition format with JVM/process metrics, plus Prometheus/Grafana setup docs #1473
+- Linking-aware `affiliation_linked` metric in the end-to-end HEADER evaluation #1493 #1467
+- Rootless Docker images (Kubernetes/OpenShift friendly) #1442
+- Fail fast at startup when the grobid-home path contains spaces and Wapiti is the configured engine #1481
+- Apache 2.0 licence headers in source files #1485
+- Documentation: community page #1447, PDF-TEI Editor reference #1448, and instructions for adding new model flavors #1465
+- CI: CodeQL analysis workflow #1475, dependabot updates for GitHub Actions #1494, and runs on forks without publishing credentials #1451
 
 ### Changed
-- Lexicon: introduced `Lexicon.builder()` to optionally pre-load chosen gazetteers *eagerly* (`.withDefaults()`, `.withJournals()`, `.withFunders()`, `.withOrganisations()`, etc.). Loading stays **lazy by default**: any gazetteer not named in the builder loads transparently on first lookup, so a `Lexicon` from any entry point is always fully functional and never throws for a missing gazetteer — `withX()` only controls *when* a gazetteer loads, not whether a lookup succeeds. `withDefaults()` eagerly loads the original constructor's set (wordforms, people, countries). `Lexicon.getInstance()` is now `@Deprecated` (prefer the builder) but its behavior is unchanged: eager wordforms/people/countries, everything else lazy.
-- Lexicon: added 4 missing ISO 3166-1 country codes (BQ, CW, SS, SX) and migrated AN (Netherlands Antilles) to its ISO 3166-3 transitional form ANHH.
-- Documentation: expanded the End-to-end evaluation guide (dedicated multi-dataset runner-script section for `run_evaluation.sh` with an options table and more invocation examples) and the Configuration reference; recorded the Hugging Face DOI (10.57967/hf/9553) for the `grobid-evaluation` dataset.
+- Updated pdfalto to 0.6.2. Notable for GROBID: deterministic output (an uninitialised read and a use-after-free made line/block grouping depend on heap contents, so the same PDF could yield different `<TextLine>`/`<TextBlock>` structure across runs), bounded peak memory on very large or vector-heavy documents, superscript citation/affiliation callouts separated from adjacent words (token boundary now driven by pdfalto's own superscript detection), and several text-extraction fixes. The command-line options GROBID passes are unchanged.
+- pdfalto is now given GROBID's configured temp directory (`grobid.temp`, by default `grobid-home/tmp`) through `TMPDIR`. Since 0.6.1 pdfalto streams large page DOMs to a scratch file to bound peak memory and picks its location from `TMPDIR`, falling back to `/tmp` — which is tmpfs in most containers, so spilling there leaves peak memory unchanged and risks ENOSPC.
+- Reworked author–affiliation linking into a dedicated, unit-tested `AuthorAffiliationAssigner` with a priority-based strategy #1467
+- Preserve extracted affiliations when header consolidation rewrites authors, via staged reconciliation #1488
+- Parallelized the end-to-end evaluation scoring phase (~20 min → ~2 min), with upfront setup verification in the Python script #1487
+- Rewrote sentence-segmentation re-alignment as a drift-free forward two-pointer alignment and made language detection thread-safe #1457
+- Language-sensitive tokenization in `PDFALTOSaxHandler` instead of always using the default analyzer #1480
+- Only one training per model at a time; a concurrent request for the same model returns 409 Conflict #1477
+- Unified training-data file generation between the web API and batch mode #1508
+- Lexicon: added `Lexicon.builder()` for optional eager gazetteer pre-loading (lazy stays the default); `getInstance()` is now deprecated #1440
+- Lexicon: added 4 missing ISO 3166-1 country codes (BQ, CW, SS, SX) and migrated AN to its ISO 3166-3 form ANHH
+- Documentation: expanded the end-to-end evaluation and configuration guides and recorded the `grobid-evaluation` dataset DOI #1419 #1430 #1501
+- Dependency updates: OpenNLP 1.9.4 → 2.5, Jetty, jackson 2.21.4, DeLFT 0.4.6; dropped unused dependencies #1449 #1469 #1423
+- Replaced Powermock with Mockito #1458
+- Adopted Spotless for code formatting #1384, rewrote overloaded methods #1401, and added codespell spell-checking #1365 #1450 #1478
+
+### Fixed
+- Handle the exit codes pdfalto 0.6.1 introduced. Code 5 reports that the ALTO was written correctly but page streaming was disabled mid-run, so peak memory was no longer bounded; both execution paths rejected any non-zero exit and would have discarded these successful conversions. It is now a logged warning. Codes 4 (ALTO write failed) and 98 (allocation failure) are reported as `PDFALTO_CONVERSION_FAILURE` instead of falling through to `BAD_INPUT_DATA`, which blamed the PDF for a pdfalto-side failure.
+- JVM shutdown deadlock when closing JEP Python interpreters: close now runs on the owning worker thread and is idempotent #1506
+- HTTP 500 from `processFulltextDocument` when two footnotes share the same superscript marker; such callouts now fall back to plain text #1472
+- TEI paragraph boundaries no longer collapse when a paragraph starts right after a trailing reference marker #1482
+- Invalid/unbalanced XML in generated training data across models #1470, and unclosed `<bibl>` before `<other>` in reference-segmenter training data #1466
+- `xml:id` values in generated training files are now valid NCNames #1508
+- NPE in reference-segmenter training-data generation after segmentation retraining #1490
+- Document language is detected for segmentation training data instead of hardcoding `xml:lang="en"` #1460
+- Textual year/month/day fields stay in sync with the normalized publication date for library callers and non-TEI output paths #1463
+- `TextUtilities.clean()` no longer folds the letters æ/Æ and œ/Œ to ASCII "ae"/"oe"; typographic ligature expansion (fi/fl/ff) is unchanged #1461
+- Guard against out-of-range page index in citation annotation, which surfaced as HTTP 500 on malformed PDFs #1459
+- Model selection with mixed DeLFT/Wapiti engines and flavor selections, with clearer logging when a flavor falls back to the base model #1455
+- Citations consisting only of non-breaking spaces now return 204 No Content instead of HTTP 500 #1407
+- biblio-glutton health probe in the evaluation configuration check now targets an existing endpoint (`/service/data`) instead of always reporting a healthy glutton as unreachable #1492
+- Block/segmentation desync warning now includes the page number and a text excerpt so occurrences can be located and reproduced #1471
+- `./gradlew install` #1427, git revision information #1433, and Docker image summary #1429
 
 ### Security
-- Prevent command injection through crafted PDF file names in the non-server `pdfalto` path: the command is no longer interpolated into a `bash -c` string but passed as positional parameters and exec'd via `"$@"` (GHSA-mgxf-7mg7-qpmf).
-- Stop leaking a JVM thread per request on the `/api/modelTraining` endpoint by shutting down the per-request executor (GHSA-g2r5-4c8r-c84f).
-- Remove the vulnerable JLine telnet server module from the classpath by depending on `jline-terminal` only instead of the `org.jline:jline` uber-jar pulled in transitively by `progressbar` (GHSA-47qp-hqvx-6r3f, GHSA-2r2c-cx56-8933).
-- Upgrade jackson (core, databind, afterburner, dataformat-yaml) to 2.21.4 to address CVE-2026-54513 (array-element type allowlist bypass in polymorphic type validation).
+- Prevent command injection through crafted PDF file names in the non-server `pdfalto` path: the command is no longer interpolated into a `bash -c` string but passed as positional parameters and exec'd via `"$@"` (GHSA-mgxf-7mg7-qpmf) #1477
+- Stop leaking a JVM thread per request on the `/api/modelTraining` endpoint by shutting down the per-request executor (GHSA-g2r5-4c8r-c84f) #1477
+- Remove the vulnerable JLine telnet server module from the classpath by depending on `jline-terminal` only instead of the `org.jline:jline` uber-jar pulled in transitively by `progressbar` (GHSA-47qp-hqvx-6r3f, GHSA-2r2c-cx56-8933) #1469
+- Upgrade jackson (core, databind, afterburner, dataformat-yaml) to 2.21.4 to address CVE-2026-54513 (array-element type allowlist bypass in polymorphic type validation) #1469
+- Upgrade Apache OpenNLP to 2.5 (arbitrary class loading via model manifest) and Jetty (HTTP request smuggling via chunked extension quoted-string parsing) #1449
+- Harden `ZipUtils` against zip-slip: each entry's canonical output path is validated against the target directory before any write (flagged by CodeQL) #1486
 
 ## [0.9.0] - 2026-04-07
 
@@ -535,7 +576,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 + More robust synchronization of CRF sequence with PDF areas, resulting in improved bounding box calculations for locating annotations in the PDF documents.
 + Improved general robustness thanks to better token alignments.
 
-[Unreleased]: https://github.com/kermitt2/grobid/compare/0.7.0...HEAD
+[Unreleased]: https://github.com/kermitt2/grobid/compare/0.9.1...HEAD
+[0.9.1]: https://github.com/kermitt2/grobid/compare/0.9.0...0.9.1
+[0.9.0]: https://github.com/kermitt2/grobid/compare/0.8.2...0.9.0
+[0.8.2]: https://github.com/kermitt2/grobid/compare/0.8.1...0.8.2
+[0.8.1]: https://github.com/kermitt2/grobid/compare/0.8.0...0.8.1
+[0.8.0]: https://github.com/kermitt2/grobid/compare/0.7.2...0.8.0
+[0.7.2]: https://github.com/kermitt2/grobid/compare/0.7.1...0.7.2
+[0.7.1]: https://github.com/kermitt2/grobid/compare/0.7.0...0.7.1
 [0.7.0]: https://github.com/kermitt2/grobid/compare/0.6.2...0.7.0
 [0.6.2]: https://github.com/kermitt2/grobid/compare/0.6.1...0.6.2
 [0.6.1]: https://github.com/kermitt2/grobid/compare/0.6.0...0.6.1

@@ -47,17 +47,17 @@ javac -version
 
 ### Latest stable release
 
-The [latest stable release](https://github.com/grobidOrg/grobid#latest-version) of GROBID is version ```0.9.0``` which can be downloaded as follow: 
+The [latest stable release](https://github.com/grobidOrg/grobid#latest-version) of GROBID is version ```0.9.1``` which can be downloaded as follow: 
 ```bash
-> wget https://github.com/grobidOrg/grobid/archive/0.9.0.zip
-> unzip 0.9.0.zip
+> wget https://github.com/grobidOrg/grobid/archive/0.9.1.zip
+> unzip 0.9.1.zip
 ```
 
 or using the [docker](Grobid-docker.md) container. 
 
 ### Current development version
 
-The current development version is ```0.9.1-SNAPSHOT```, which can be downloaded from GitHub and built as follow:
+The current development version is ```0.9.2-SNAPSHOT```, which can be downloaded from GitHub and built as follow:
 
 Clone source code from github:
 ```bash
