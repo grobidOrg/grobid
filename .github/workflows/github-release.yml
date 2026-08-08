@@ -41,7 +41,7 @@ jobs:
 
       - name: Create or update the GitHub release
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         run: |
           set -euo pipefail
           TAG="$GITHUB_REF_NAME"

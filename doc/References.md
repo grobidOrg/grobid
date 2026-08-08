@@ -3,7 +3,7 @@
 If you want to cite this work, please simply refer to the github project:
 
 ```
-GROBID (2008-2025) <https://github.com/grobidOrg/grobid>
+GROBID (2008-2026) <https://github.com/grobidOrg/grobid>
 ```
 
 Please do not include a particular person name to emphasize the project and the tool ! 
@@ -17,7 +17,7 @@ Here's a BibTeX entry using the [Software Heritage](https://www.softwareheritage
     title = {GROBID},
     howpublished = {\url{https://github.com/grobidOrg/grobid}},
     publisher = {GitHub},
-    year = {2008--2025},
+    year = {2008--2026},
     archivePrefix = {swh},
     eprint = {1:dir:dab86b296e3c3216e2241968f0d63b68e8209d3c}
 }

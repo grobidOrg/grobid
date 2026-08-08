@@ -319,12 +319,16 @@ public class FundingAcknowledgementParser extends AbstractParser {
 
                 if (needToMergeCoordinates) {
                     destCoordinates = destination.getAttribute("coords");
-                    String coordinates = destCoordinates.getValue();
-                    boundingBoxes = Arrays.stream(coordinates.split(";"))
-                            .filter(StringUtils::isNotBlank)
-                            .map(BoundingBox::fromString)
-                            .collect(Collectors.toList());
-                    destination.removeAttribute(destCoordinates);
+                    // a sentence may have no coordinates when none of its tokens carry
+                    // bounding boxes (e.g. certain segmenter splits); guard against it
+                    if (destCoordinates != null) {
+                        String coordinates = destCoordinates.getValue();
+                        boundingBoxes = Arrays.stream(coordinates.split(";"))
+                                .filter(StringUtils::isNotBlank)
+                                .map(BoundingBox::fromString)
+                                .collect(Collectors.toList());
+                        destination.removeAttribute(destCoordinates);
+                    }
                 }
 
                 for (int i = 1; i < toMerge.size(); i++) {
@@ -334,12 +338,15 @@ public class FundingAcknowledgementParser extends AbstractParser {
                     // Merge coordinates
                     if (needToMergeCoordinates) {
                         Attribute coords = ((Element) sentenceToMerge).getAttribute("coords");
-                        String coordinates = coords.getValue();
-                        boundingBoxes.addAll(
-                                Arrays.stream(coordinates.split(";"))
-                                        .filter(StringUtils::isNotBlank)
-                                        .map(BoundingBox::fromString)
-                                        .collect(Collectors.toList()));
+                        // skip sentences that carry no coordinates instead of failing with a NPE
+                        if (coords != null) {
+                            String coordinates = coords.getValue();
+                            boundingBoxes.addAll(
+                                    Arrays.stream(coordinates.split(";"))
+                                            .filter(StringUtils::isNotBlank)
+                                            .map(BoundingBox::fromString)
+                                            .collect(Collectors.toList()));
+                        }
 
                         // Group by page, then merge
                         List<BoundingBox> postMergeBoxes = new ArrayList<>();

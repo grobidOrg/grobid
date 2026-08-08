@@ -14,7 +14,7 @@ For historical reasons, there are certain error 500 responses that are not criti
 
 ## How to make sure that the GPU is being used
 
-If you are using the full Docker image (e.g. `grobid/grobid:0.9.0-full`), the GPU will be automatically detected on Linux if available; however, to be sure, we recommend using `nvtop` (similar to `htop` for CPU).
+If you are using the full Docker image (e.g. `grobid/grobid:0.9.1-full`), the GPU will be automatically detected on Linux if available; however, to be sure, we recommend using `nvtop` (similar to `htop` for CPU).
 
 ## How to avoid DeLFT's Tensorflow (TF) to allocate the full GPU memory
 
@@ -23,7 +23,7 @@ This can be changed by setting the environment variable `TF_FORCE_GPU_ALLOW_GROW
 With docker, for example you can this command:
 
 ```shell
-docker run --rm --gpus all --init --ulimit core=0 -e TF_FORCE_GPU_ALLOW_GROWTH='true' -p 8070:8070 grobid/grobid:0.9.0-full
+docker run --rm --gpus all --init --ulimit core=0 -e TF_FORCE_GPU_ALLOW_GROWTH='true' -p 8070:8070 grobid/grobid:0.9.1-full
 ```
 
 ## JEP/DeLFT fails with `CXXABI` or `libstdc++` version errors
@@ -64,7 +64,7 @@ Exploiting the `503` mechanism is already implemented in the different GROBID cl
 Occasionally, [people have reported](https://github.com/kermitt2/grobid/issues/1234) timeout issues when using Grobid, especially when processing large quantities of PDF files locally. This can happen if the server takes too long to respond, leading to a 408 Request Timeout error.
 
 To resolve this issue, there are several options:
- - Check that you are running the proper image for your hardware. If you are not sure, use the image `grobid/grobid:0.9.0-crf` which is the most lightweight and fastest image.
+ - Check that you are running the proper image for your hardware. If you are not sure, use the image `grobid/grobid:0.9.1-crf` which is the most lightweight and fastest image.
  - Make sure you don't send too many requests at the same time, as this can overload the server. If you are using the Grobid Python client, you can set the `n` parameter to a lower value (e.g. 1 or 2) to limit the number of concurrent requests.
  - Increase the timeout value in your client. If you are using the Grobid Python client, you can set the `timeout` parameter to a higher value (e.g. 90 seconds) in the `config.json` to give the server more time to respond. **If consolidation is enabled** (`consolidateHeader` or `consolidateCitations`), you should increase the timeout much further — to **200–600 seconds** — because each document now waits for multiple external API lookups on top of PDF processing.
 
@@ -103,7 +103,7 @@ The latest versions of the default configuration files are located [here](https:
 Once you have downloaded the configuration file locally, for example located at `/path/to/your/grobid.yaml`, you can run the Docker container with the following command:
 
 ```shell
-docker run --rm --gpus all --init --ulimit core=0 -v /path/to/your/grobid.yaml:/opt/grobid/grobid-home/config/grobid.yaml -p 8070:8070 grobid/grobid:0.9.0-full
+docker run --rm --gpus all --init --ulimit core=0 -v /path/to/your/grobid.yaml:/opt/grobid/grobid-home/config/grobid.yaml -p 8070:8070 grobid/grobid:0.9.1-full
 ```
 
 
@@ -167,7 +167,7 @@ In case of running on limited memory hardware, there are various ways to deal wi
 
 - reduce the number of parallel processing at client side: this is the parameter `n` in the grobid python client command line
 
-- reduce the maximum amount of memory dedicated to the PDF parsing by pdfalto: in `grobid/grobid-home/config/grobid.yaml` change the parameter `memory_limit_mb` a lower amount (note: not too low, PDF parsing remains memory-hungry).
+- reduce the maximum amount of memory dedicated to the PDF parsing by pdfalto: in `grobid/grobid-home/config/grobid.yaml` change the parameter `memoryLimitMb` a lower amount (note: not too low, PDF parsing remains memory-hungry).
 
 
 ## I would also like to extract images from PDFs
@@ -175,7 +175,7 @@ In case of running on limited memory hardware, there are various ways to deal wi
 You will get the embedded images converted into `.png` by using the normal batch command. For instance:
 
 ```console
-java -Xmx4G -Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep -jar grobid-core/build/libs/grobid-core-0.9.0-onejar.jar -gH grobid-home -dIn ~/test/in/ -dOut ~/test/out -exe processFullText
+java -Xmx4G -Djava.library.path=grobid-home/lib/lin-64:grobid-home/lib/lin-64/jep -jar grobid-core/build/libs/grobid-core-0.9.1-onejar.jar -gH grobid-home -dIn ~/test/in/ -dOut ~/test/out -exe processFullText
 ```
 
 There is a web service doing the same, returning everything in a big zip file, `processFulltextAssetDocument`, still usable but deprecated.

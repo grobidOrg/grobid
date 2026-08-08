@@ -27,9 +27,9 @@ From a development installation, you can also build and install the service as a
 cd ..
 mkdir grobid-installation
 cd grobid-installation
-unzip ../grobid/grobid-service/build/distributions/grobid-service-0.9.0.zip
-mv grobid-service-0.9.0 grobid-service
-unzip ../grobid/grobid-home/build/distributions/grobid-home-0.9.0.zip
+unzip ../grobid/grobid-service/build/distributions/grobid-service-0.9.1.zip
+mv grobid-service-0.9.1 grobid-service
+unzip ../grobid/grobid-home/build/distributions/grobid-home-0.9.1.zip
 ./grobid-service/bin/grobid-service
 ```
 
@@ -50,7 +50,7 @@ You can check whether the service is up and running by opening the following URL
 * <http://yourhost:8070/api/health> **(readiness)** returns a JSON object with detailed status including initialization state, engine pool metrics (active/idle/max engines), and configuration checks. Returns HTTP 200 when ready to process requests, HTTP 503 otherwise. Suitable for use as a readiness probe.
 
 The service provides also an admin console, reachable at <http://yourhost:8071> where some additional checks like ping, metrics, hearthbeat are available.
-We recommend, in particular to have a look at the metrics (using the [Metric library](https://metrics.dropwizard.io/3.1.0/getting-started/)) which are providing the rate of execution as well as the throughput of each entry point.
+We recommend, in particular to have a look at the metrics (using the [Metric library](https://metrics.dropwizard.io/4.2.0/getting-started/)) which are providing the rate of execution as well as the throughput of each entry point.
 
 In addition, metrics in [Prometheus](https://prometheus.io/) exposition format are available at <http://yourhost:8071/metrics/prometheus>. This includes both the application metrics (rate/throughput per entry point) and JVM/process metrics (heap, GC, threads, CPU). A Prometheus server can scrape this endpoint and the metrics can then be visualised and alerted on in [Grafana](https://grafana.com/). The service can also **push** metrics over OTLP (e.g. to Grafana Cloud) instead of being scraped. See [Monitoring with Prometheus](Monitoring.md) for a step-by-step setup of both the pull and push paths.  
 
@@ -254,7 +254,7 @@ Response status codes:
 
 A `503` error with the default parallel mode normally means that all the threads available to GROBID are currently used. The client need to re-send the query after a wait time that will allow the server to free some threads. The wait time depends on the service and the capacities of the server, we suggest 5-10 seconds for the `processFulltextDocument` service.
 
-The optional sentence segmentation in the TEI XML result is based on the algorithm selected in the Grobid configuration file (under `grobid-home/config/grobid.yaml`). As of August 2020, available segmenters are [OpenNLP sentence detector](https://opennlp.apache.org/docs/1.5.3/manual/opennlp.html#tools.sentdetect) (recommended for scientific articles after evaluation) and the [Pragmatic_Segmenter](https://github.com/diasks2/pragmatic_segmenter).
+The optional sentence segmentation in the TEI XML result is based on the algorithm selected in the Grobid configuration file (under `grobid-home/config/grobid.yaml`; see [Sentence segmentation](Configuration.md#sentence-segmentation)). The available segmenters are the [OpenNLP sentence detector](https://opennlp.apache.org/docs/1.5.3/manual/opennlp.html#tools.sentdetect) (recommended for scientific articles after evaluation), the [Pragmatic Segmenter](https://github.com/diasks2/pragmatic_segmenter), and [BlingFire](https://github.com/microsoft/BlingFire).
 
 You can test this service with the **cURL** command lines, for instance fulltext extraction (header, body and citations) from a PDF file in the current directory:
 
@@ -873,7 +873,7 @@ Only one training per model can run at a time: if a training for the same model 
 |   method  |  request type       | response type        |  parameters  | requirement   |   description             |
 |---        |---                  |---                   |---           |---            |---                        |
 | POST | application/x-www-form-urlencoded |  application/json |   model      |   required    | name of the model to train  |
-|           |                     |                      | architecture | optional | name of the architecture to use for training the model, possible values are `CRF` (default), `BiLSTM-CRF`, `BiLSMT-CRF-ELMo` |
+|           |                     |                      | architecture | optional | name of the architecture to use for training the model, possible values are `CRF` (default) and `BiLSTM-CRF` |
 |           |                     |                      | type | optional | type of training, `full`, `holdout`, `split`, `nfold`, default is `split` |
 |           |                     |                      | ratio | optional | only considered for `split` training mode, give the ratio (number between 0 and 1) of training and evaluation data when splitting the annotated data, default is `0.9` |
 |           |                     |                      | n | optional | only considered for `nfold` training mode, give the number of folds to be used, default is `10` |

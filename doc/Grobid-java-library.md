@@ -36,15 +36,15 @@ Here an example of `grobid-core` dependency:
     </dependency>
 ```
 
-If you want to work on a SNAPSHOT development version, you need to download and build the current master yourself, and include in your pom file the path to the local snapshot Grobid jar file, for instance as follow (if necessary replace `0.9.1-SNAPSHOT` by the valid `<current version>`):
+If you want to work on a SNAPSHOT development version, you need to download and build the current master yourself, and include in your pom file the path to the local snapshot Grobid jar file, for instance as follow (if necessary replace `0.9.2-SNAPSHOT` by the valid `<current version>`):
 
 ```xml
 	<dependency>
 	    <groupId>org.grobid</groupId>
 	    <artifactId>grobid-core</artifactId>
-	    <version>0.9.1-SNAPSHOT</version>
+	    <version>0.9.2-SNAPSHOT</version>
 	    <scope>system</scope>
-	    <systemPath>${project.basedir}/lib/grobid-core-0.9.1-SNAPSHOT.jar</systemPath>
+	    <systemPath>${project.basedir}/lib/grobid-core-0.9.2-SNAPSHOT.jar</systemPath>
 	</dependency>
 ```
 

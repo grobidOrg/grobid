@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
+## [0.9.1] - 2026-08-04
 
 ### Added
 - Training web API to list ongoing trainings and interrupt a running one, releasing the per-model lock #1483
@@ -576,7 +576,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 + More robust synchronization of CRF sequence with PDF areas, resulting in improved bounding box calculations for locating annotations in the PDF documents.
 + Improved general robustness thanks to better token alignments.
 
-[Unreleased]: https://github.com/kermitt2/grobid/compare/0.7.0...HEAD
+[Unreleased]: https://github.com/kermitt2/grobid/compare/0.9.1...HEAD
+[0.9.1]: https://github.com/kermitt2/grobid/compare/0.9.0...0.9.1
+[0.9.0]: https://github.com/kermitt2/grobid/compare/0.8.2...0.9.0
+[0.8.2]: https://github.com/kermitt2/grobid/compare/0.8.1...0.8.2
+[0.8.1]: https://github.com/kermitt2/grobid/compare/0.8.0...0.8.1
+[0.8.0]: https://github.com/kermitt2/grobid/compare/0.7.2...0.8.0
+[0.7.2]: https://github.com/kermitt2/grobid/compare/0.7.1...0.7.2
+[0.7.1]: https://github.com/kermitt2/grobid/compare/0.7.0...0.7.1
 [0.7.0]: https://github.com/kermitt2/grobid/compare/0.6.2...0.7.0
 [0.6.2]: https://github.com/kermitt2/grobid/compare/0.6.1...0.6.2
 [0.6.1]: https://github.com/kermitt2/grobid/compare/0.6.0...0.6.1

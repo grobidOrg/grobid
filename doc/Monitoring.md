@@ -106,7 +106,7 @@ The quickest way to get Prometheus and Grafana running is Docker Compose. The fo
 ```yml
 services:
   grobid:
-    image: grobid/grobid:0.9.0
+    image: grobid/grobid:0.9.1
     ports:
       - "8070:8070"   # REST API
       - "8071:8071"   # admin connector (metrics)
