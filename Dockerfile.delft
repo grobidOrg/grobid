@@ -110,10 +110,16 @@ COPY --from=builder /opt/grobid .
 # one is the tip of feature/improve-pytorch-performances, carrying the PyTorch
 # performance improvements on top of the dev num_workers=0 default and logging fixes.
 #
-# A commit SHA, not a branch name: Docker keys this layer on the command string, so
-# a branch name never changes and rebuilds silently reuse whatever the branch pointed
-# at when the layer was first built. New commits on the branch would be invisible.
-# Bump this line to pick them up (--no-cache-dir is a pip flag; it does not help here).
+# A commit SHA rather than a branch name, for provenance: the Dockerfile alone then
+# says which delft is in a given image, which a branch name cannot. Bump it to move.
+#
+# Not for cache-busting. This layer sits below "COPY --from=builder /opt/grobid .",
+# whose contents change with every grobid commit, so it is rebuilt on every real build
+# whatever the pin says -- the CI runs take 40-70 minutes each, doing exactly that. A
+# branch name would only go stale when rebuilding identical grobid source.
+#
+# Either way the image records what pip actually resolved, in
+# delft-*.dist-info/direct_url.json (PEP 610). That is the authoritative check.
 #
 # On amd64 we pull the CUDA 12.8 build via the [gpu] extra and the PyTorch index.
 # On arm64 we take the default (CPU) torch wheel from PyPI.
