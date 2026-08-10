@@ -235,8 +235,8 @@ grobid:
           batch_size: 10
 
     - name: "name-header"
-#      engine: "wapiti"
-      engine: "delft"
+      engine: "wapiti"
+#      engine: "delft"
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
