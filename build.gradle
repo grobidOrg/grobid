@@ -737,6 +737,25 @@ project(":grobid-trainer") {
 
 /** JACOCO **/
 
+// Coverage instrumentation is opt-out, for CI legs that do not publish it.
+//
+// The jacoco agent attaches to every forked test JVM, and `forkEvery = 1` above means one
+// fork per test class -- currently 113 of them, run one at a time. Only one CI leg feeds
+// coveralls; on the others the instrumentation is paid 113 times and thrown away.
+//
+// configureEach (rather than a plain withType) so this resolves after the subprojects have
+// applied the jacoco plugin, and findByType so projects without it are simply skipped.
+if (providers.gradleProperty('skipCoverage').present) {
+    allprojects {
+        tasks.withType(Test).configureEach {
+            def jacocoExtension = it.extensions.findByType(JacocoTaskExtension)
+            if (jacocoExtension != null) {
+                jacocoExtension.enabled = false
+            }
+        }
+    }
+}
+
 tasks.register("codeCoverageReport", JacocoReport) {
     // If a subproject applies the 'jacoco' plugin, add the result it to the report
     subprojects { subproject ->
