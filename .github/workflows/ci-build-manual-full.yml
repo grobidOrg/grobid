@@ -66,8 +66,16 @@ jobs:
             GROBID_VERSION=${{ steps.version.outputs.value }}
           tags: |
             lfoppiano/grobid:latest-full,lfoppiano/grobid:${{ github.event.inputs.custom_tag }}
-          cache-from: type=gha,scope=full
-          cache-to: type=gha,mode=max,scope=full
+          # Registry cache rather than type=gha. The GitHub Actions cache is capped at
+          # 10GB per repository with LRU eviction, and mode=max on this image exports far
+          # more than that -- the torch/CUDA wheels alone are ~5GB and the embeddings lmdb
+          # ~2GB -- so entries were being evicted between runs and the "cached" layers
+          # rebuilt anyway. Docker Hub has no such ceiling, and the push happens over the
+          # login already done above.
+          #
+          # ignore-error keeps a failed cache export from failing the build itself.
+          cache-from: type=registry,ref=lfoppiano/grobid:buildcache
+          cache-to: type=registry,ref=lfoppiano/grobid:buildcache,mode=max,ignore-error=true
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
       - name: Docker Image Summary
