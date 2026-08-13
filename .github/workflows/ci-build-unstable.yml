@@ -35,8 +35,8 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: ./gradlew assemble test --info --stacktrace
 
-      # Every other leg skips the jacoco agent -- its output is never published, and with
-      # forkEvery = 1 the instrumentation is attached once per test class.
+      # Every other leg skips the jacoco agent: its output is never published, and the agent
+      # instruments classes as they load in the test JVM.
       - name: Build and test
         if: matrix.os != 'ubuntu-latest'
         run: ./gradlew assemble test -PskipCoverage --info --stacktrace

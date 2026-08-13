@@ -246,8 +246,23 @@ subprojects {
         useJUnitPlatform()
 
         testLogging.showStandardStreams = true
-        // enable for having separate test executor for different tests
-        forkEvery = 1
+
+        // One JVM per test task, not one per test class.
+        //
+        // This was forkEvery = 1, which spawns a fresh JVM for every test class -- 109 of
+        // them, run strictly one at a time (maxParallelForks is 1, and
+        // org.gradle.workers.max=1 in gradle.properties would cap it regardless). Each
+        // start pays JVM boot, the 1g heap below, the Mockito -javaagent, and
+        // java.library.path native library loading.
+        //
+        // Measured locally with `test --rerun-tasks -PskipCoverage`, same machine:
+        // 9m20s at forkEvery = 1 against 4m07s here, running an identical 812 tests across
+        // 109 classes with no failures. The difference is almost entirely process startup.
+        //
+        // The tests do share a JVM now, so anything depending on per-class isolation --
+        // static state in GrobidProperties, or a native library loaded through
+        // LibraryLoader -- would surface here rather than being papered over.
+        forkEvery = 0
         maxHeapSize = "1024m"
 
         def javaLibraryPath = getJavaLibraryPath()
@@ -739,9 +754,8 @@ project(":grobid-trainer") {
 
 // Coverage instrumentation is opt-out, for CI legs that do not publish it.
 //
-// The jacoco agent attaches to every forked test JVM, and `forkEvery = 1` above means one
-// fork per test class -- currently 113 of them, run one at a time. Only one CI leg feeds
-// coveralls; on the others the instrumentation is paid 113 times and thrown away.
+// The jacoco agent attaches to every forked test JVM and instruments classes as they load.
+// Only one CI leg feeds coveralls; on the others that cost is paid and thrown away.
 //
 // configureEach (rather than a plain withType) so this resolves after the subprojects have
 // applied the jacoco plugin, and findByType so projects without it are simply skipped.
