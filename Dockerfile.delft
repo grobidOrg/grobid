@@ -74,6 +74,14 @@ RUN unzip -o /opt/grobid-source/grobid-home/build/distributions/grobid-home-*.zi
     chmod -R 755 /opt/grobid/grobid-home/pdfalto
 RUN rm -rf grobid-source
 
+# -----------------------------------------------
+# JDK, as a bind-mount source for the JEP build
+# -----------------------------------------------
+
+# Same image the builder starts from, so it costs no extra pull, but -- unlike `builder` --
+# its content does not move with the grobid source, which keeps the JEP layer cacheable.
+FROM eclipse-temurin:21.0.11_10-jdk-noble AS jdk
+
 # -------------------
 # build runtime image
 # -------------------
@@ -109,21 +117,44 @@ RUN if [ "$TARGETARCH" = "amd64" ]; then \
 
 WORKDIR /opt/grobid
 
-COPY --from=builder /opt/grobid .
+# Everything from here to the "COPY --from=builder /opt/grobid ." below is ordered
+# stable-first, on purpose. The Java distribution changes with every grobid commit, so it
+# goes last: the DeLFT install, the JEP build and the glove preload (~2GB downloaded, then
+# loaded into lmdb) all sit above it and stay cached across ordinary source changes. Only a
+# version bump, a base-image change or a resources-registry edit rebuilds them.
+
+# link the data directory to /data
+# the current working directory will most likely be /opt/grobid
+# (must precede the embeddings preload: the registry writes the lmdb under ./data)
+RUN mkdir -p /data \
+    && ln -s /data /opt/grobid/data \
+    && ln -s /data ./data
 
 # install DeLFT
 RUN pip3 install --no-cache-dir delft==0.4.6
 
 # Build JEP with temporary access to full JDK (needs javac + JNI headers).
 # The bind mount is only visible during this RUN step — zero overhead in the final image.
-RUN --mount=from=builder,source=/opt/java/openjdk,target=/opt/java/openjdk-jdk \
+# Mounted from the `jdk` stage rather than from `builder`, so this layer does not depend on
+# a stage that is rebuilt on every commit.
+RUN --mount=from=jdk,source=/opt/java/openjdk,target=/opt/java/openjdk-jdk \
     JAVA_HOME=/opt/java/openjdk-jdk pip3 install --no-cache-dir jep==4.3.1
 
-# link the data directory to /data
-# the current working directory will most likely be /opt/grobid
-RUN mkdir -p /data \
-    && ln -s /data /opt/grobid/data \
-    && ln -s /data ./data
+# preload embeddings, for GROBID all the RNN models use glove-840B (default for the script), ELMo is currently not loaded
+# to be done: mechanism to download GROBID fine-tuned models based on SciBERT if selected (but not good enough for the moment)
+# Only these two files are taken from the builder, and BuildKit keys the layer on their
+# content, so the preload is rebuilt when the registry changes -- not on every commit.
+COPY --from=builder /opt/grobid-source/grobid-home/scripts/preload_embeddings.py .
+COPY --from=builder /opt/grobid-source/grobid-home/config/resources-registry.json .
+# The lmdb permissions are set here rather than in the chgrp/chmod step at the end of the
+# file: a recursive chmod in a later layer copies up every file it touches, which would put
+# a second copy of the multi-GB embeddings database in the image.
+RUN python3 preload_embeddings.py --registry ./resources-registry.json &&  \
+    ln -s /opt/grobid /opt/delft && \
+    chgrp -R 0 /data && chmod -R g=u /data
+
+RUN mkdir delft && \
+    cp ./resources-registry.json delft/
 
 # disable python warnings (and fix logging)
 ENV PYTHONWARNINGS="ignore"
@@ -142,19 +173,14 @@ ENTRYPOINT ["/tini", "-s", "--"]
 
 WORKDIR /opt/grobid
 
-# preload embeddings, for GROBID all the RNN models use glove-840B (default for the script), ELMo is currently not loaded
-# to be done: mechanism to download GROBID fine-tuned models based on SciBERT if selected (but not good enough for the moment)
-COPY --from=builder /opt/grobid-source/grobid-home/scripts/preload_embeddings.py .
-COPY --from=builder /opt/grobid-source/grobid-home/config/resources-registry.json .
-RUN python3 preload_embeddings.py --registry ./resources-registry.json &&  \
-    ln -s /opt/grobid /opt/delft
-
-RUN mkdir delft && \
-    cp ./resources-registry.json delft/
+# The Java distribution, last: it changes with every grobid commit, so nothing cacheable
+# should sit below it.
+COPY --from=builder /opt/grobid .
 
 # Set the group to avoid running the docker image in a rootless environment
-RUN chgrp -R 0 /opt/grobid /data /tmp && \
-    chmod -R g=u /opt/grobid /data /tmp
+# (/data is handled above, in the layer that fills it)
+RUN chgrp -R 0 /opt/grobid /tmp && \
+    chmod -R g=u /opt/grobid /tmp
 
 CMD ["./grobid-service/bin/grobid-service"]
 
