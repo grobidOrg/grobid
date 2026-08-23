@@ -2406,6 +2406,24 @@ public class TEIFormatter {
         }
     }
 
+    /**
+     * Normalize a reference label (BibDataSet.refSymbol) into a candidate @n grouping value.
+     * Strips leading/trailing punctuation and whitespace (e.g. "15." or "(15)" -> "15") and
+     * returns null when nothing usable remains.
+     *
+     * @param refSymbol the propagated reference label (footnote number), possibly null
+     * @return the normalized label, or null when blank/absent
+     */
+    protected static String deriveGroupLabel(String refSymbol) {
+        if (StringUtils.isBlank(refSymbol)) {
+            return null;
+        }
+        String label = TextUtilities
+                .removeLeadingAndTrailingChars(refSymbol, "([{<,. \n", ")}]>,.: \n")
+                .trim();
+        return StringUtils.isBlank(label) ? null : label;
+    }
+
     public StringBuilder toTEIReferences(
             StringBuilder tei,
             List<BibDataSet> bds,
@@ -2422,6 +2440,10 @@ public class TEIFormatter {
                 for (BibDataSet bib : bds) {
                     BiblioItem bit = bib.getResBib();
                     bit.setReference(bib.getRawBib());
+                    // expose the reference label (the footnote number propagated in the
+                    // dh-law-footnotes flavour) as @n so consumers can group references that
+                    // belong to the same footnote.
+                    bit.setTeiGroupLabel(deriveGroupLabel(bib.getRefSymbol()));
                     if (bit != null) {
                         tei.append("\n" + bit.toTEI(p, 0, config));
                     } else {

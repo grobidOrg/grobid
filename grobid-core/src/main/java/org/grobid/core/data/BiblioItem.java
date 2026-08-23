@@ -64,6 +64,9 @@ public class BiblioItem {
     private String teiId;
     //TODO: keep in sync with teiId - now teiId is generated in many different places
     private Integer ordinal;
+    // optional grouping label emitted as @n on the biblStruct (e.g. the footnote number shared by
+    // several references belonging to the same footnote in the dh-law-footnotes flavour)
+    private String teiGroupLabel;
     private List<BoundingBox> coordinates = null;
 
     // map of labels (e.g. <title> or <abstract>) to LayoutToken
@@ -792,6 +795,14 @@ public class BiblioItem {
 
     public String getReference() {
         return reference;
+    }
+
+    public String getTeiGroupLabel() {
+        return teiGroupLabel;
+    }
+
+    public void setTeiGroupLabel(String teiGroupLabel) {
+        this.teiGroupLabel = teiGroupLabel;
     }
 
     public String getCopyright() {
@@ -2300,12 +2311,19 @@ public class BiblioItem {
                 tei.append(" source=\"" + getConsolidationService() + "\"");
             tei.append(" ");
 
+            // optional grouping attribute: references sharing the same @n belong to the same footnote
+            // (dh-law-footnotes flavour). Additive only - the xml:id "b{n}" is left untouched so that
+            // body callouts <ref target="#bN"> keep resolving.
+            String groupLabelAttr = StringUtils.isBlank(teiGroupLabel)
+                    ? ""
+                    : " n=\"" + TextUtilities.HTMLEncode(teiGroupLabel) + "\"";
+
             if (!StringUtils.isEmpty(language)) {
                 if (n == -1) {
                     tei.append("xml:lang=\"" + language + ">\n");
                 } else {
                     teiId = "b" + n;
-                    tei.append("xml:lang=\"" + language + "\" xml:id=\"" + teiId + "\">\n");
+                    tei.append("xml:lang=\"" + language + "\" xml:id=\"" + teiId + "\"" + groupLabelAttr + ">\n");
                 }
                 // TBD: we need to ensure that the language is normalized following xml lang attributes !
             } else {
@@ -2313,7 +2331,7 @@ public class BiblioItem {
                     tei.append(">\n");
                 } else {
                     teiId = "b" + n;
-                    tei.append("xml:id=\"" + teiId + "\">\n");
+                    tei.append("xml:id=\"" + teiId + "\"" + groupLabelAttr + ">\n");
                 }
             }
 

@@ -66,6 +66,16 @@ public class FeaturesVectorSegmentation {
 
     public int spacingWithPreviousBlock = 0; // discretized
     public int characterDensity = 0; // discretized
+    public int relativeBlockHorizontalPosition = 0; // discretized
+    public int blockWidthRatio = 0; // discretized
+
+    // extended features (dh-law-footnotes flavour only)
+    public boolean extendedFeatures = false;
+    public int relativeFontSize = 0; // discretized, relative to doc average
+    public int distanceFromPageBottom = 0; // discretized
+    public int parenthesesCountInLine = 0; // discretized
+    public int commaCountInLine = 0; // discretized
+    public int capitalizedWordCountInLine = 0; // discretized
 
     public String printVector() {
         if (string == null)
@@ -237,12 +247,25 @@ public class FeaturesVectorSegmentation {
         }
 
         // space with previous block, discretised (1)
-        //res.append(" " + spacingWithPreviousBlock);
-        //res.append(" " + 0);
+        res.append(" " + spacingWithPreviousBlock);
 
-        // character density of the previous block, discretised (1)
-        //res.append(" " + characterDensity);
-        //res.append(" " + 0);
+        // character density of the block, discretised (1)
+        res.append(" " + characterDensity);
+
+        // relative block horizontal position (1)
+        res.append(" " + relativeBlockHorizontalPosition);
+
+        // block width ratio (1)
+        res.append(" " + blockWidthRatio);
+
+        // extended features (dh-law-footnotes flavour only)
+        if (extendedFeatures) {
+            res.append(" " + relativeFontSize);
+            res.append(" " + distanceFromPageBottom);
+            res.append(" " + parenthesesCountInLine);
+            res.append(" " + commaCountInLine);
+            res.append(" " + capitalizedWordCountInLine);
+        }
 
         // label - for training data (1)
         /*if (label != null)
@@ -256,4 +279,216 @@ public class FeaturesVectorSegmentation {
         return res.toString();
     }
 
+    /**
+     * Token-level variant of printVector(). Unlike printVector(), this method always emits
+     * lineStatus (column 8) and punctType (column 24), producing a fixed column layout
+     * regardless of token type. This shifts all subsequent columns by +2 compared to
+     * the line-level printVector() when both are null.
+     *
+     * Column layout:
+     * 0: string, 1: secondString, 2: lowercase, 3-6: prefix 1-4,
+     * 7: blockStatus, 8: lineStatus, 9: pageStatus, 10: fontStatus, 11: fontSize,
+     * 12: bold, 13: italic, 14: capitalisation, 15: digit, 16: singleChar,
+     * 17-23: dict (properName, commonName, firstName, year, month, email, http),
+     * 24: punctType, 25: relativeDocPosition, 26: relativePagePositionChar,
+     * 27: punctuationProfile, 28: punctuationCount, 29: lineLength,
+     * 30: bitmapAround, 31: vectorAround, 32: repetitivePattern, 33: firstRepetitivePattern,
+     * 34: inMainArea, 35: spacingWithPreviousBlock, 36: characterDensity,
+     * 37: relativeBlockHorizontalPosition, 38: blockWidthRatio,
+     * [extended] 39: relativeFontSize, 40: distanceFromPageBottom,
+     * 41: parenthesesCountInLine, 42: commaCountInLine, 43: capitalizedWordCountInLine
+     */
+    public String printVectorTokenLevel() {
+        if (string == null)
+            return null;
+        if (string.length() == 0)
+            return null;
+        StringBuffer res = new StringBuffer();
+
+        // token string (0)
+        res.append(string);
+
+        // second token string (1)
+        if (secondString != null)
+            res.append(" " + secondString);
+        else
+            res.append(" " + string);
+
+        // lowercase string (2)
+        res.append(" " + string.toLowerCase());
+
+        // prefix (3-6)
+        res.append(" " + TextUtilities.prefix(string, 1));
+        res.append(" " + TextUtilities.prefix(string, 2));
+        res.append(" " + TextUtilities.prefix(string, 3));
+        res.append(" " + TextUtilities.prefix(string, 4));
+
+        // block information (7) - always emitted
+        if (blockStatus != null)
+            res.append(" " + blockStatus);
+        else
+            res.append(" BLOCKIN");
+
+        // line information (8) - always emitted (unlike printVector)
+        if (lineStatus != null)
+            res.append(" " + lineStatus);
+        else
+            res.append(" LINEIN");
+
+        // page information (9)
+        res.append(" " + pageStatus);
+
+        // font information (10)
+        res.append(" " + fontStatus);
+
+        // font size information (11)
+        res.append(" " + fontSize);
+
+        // bold (12)
+        if (bold)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        // italic (13)
+        if (italic)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        // capitalisation (14)
+        if (digit.equals("ALLDIGIT"))
+            res.append(" NOCAPS");
+        else
+            res.append(" " + capitalisation);
+
+        // digit information (15)
+        res.append(" " + digit);
+
+        // character information (16)
+        if (singleChar)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        // lexical information (17-23)
+        if (properName)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        if (commonName)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        if (firstName)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        if (year)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        if (month)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        if (email)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        if (http)
+            res.append(" 1");
+        else
+            res.append(" 0");
+
+        // punctuation type (24) - always emitted (unlike printVector)
+        if (punctType != null)
+            res.append(" " + punctType);
+        else
+            res.append(" NOPUNCT");
+
+        // relative document position (25)
+        res.append(" " + relativeDocumentPosition);
+
+        // relative page position characters (26)
+        res.append(" " + relativePagePositionChar);
+
+        // punctuation profile (27-28)
+        if ((punctuationProfile == null) || (punctuationProfile.length() == 0)) {
+            res.append(" no");
+            res.append(" 0");
+        } else {
+            res.append(" " + punctuationProfile);
+            res.append(" " + punctuationProfile.length());
+        }
+
+        // line length (29)
+        res.append(" " + lineLength);
+
+        // bitmap (30)
+        if (bitmapAround) {
+            res.append(" 1");
+        } else {
+            res.append(" 0");
+        }
+
+        // vector (31)
+        if (vectorAround) {
+            res.append(" 1");
+        } else {
+            res.append(" 0");
+        }
+
+        // repetitive pattern (32)
+        if (repetitivePattern) {
+            res.append(" 1");
+        } else {
+            res.append(" 0");
+        }
+
+        // first repetitive pattern (33)
+        if (firstRepetitivePattern) {
+            res.append(" 1");
+        } else {
+            res.append(" 0");
+        }
+
+        // in main area (34)
+        if (inMainArea) {
+            res.append(" 1");
+        } else {
+            res.append(" 0");
+        }
+
+        // space with previous block (35)
+        res.append(" " + spacingWithPreviousBlock);
+
+        // character density (36)
+        res.append(" " + characterDensity);
+
+        // relative block horizontal position (37)
+        res.append(" " + relativeBlockHorizontalPosition);
+
+        // block width ratio (38)
+        res.append(" " + blockWidthRatio);
+
+        // extended features (39-43)
+        if (extendedFeatures) {
+            res.append(" " + relativeFontSize);
+            res.append(" " + distanceFromPageBottom);
+            res.append(" " + parenthesesCountInLine);
+            res.append(" " + commaCountInLine);
+            res.append(" " + capitalizedWordCountInLine);
+        }
+
+        res.append("\n");
+
+        return res.toString();
+    }
 }

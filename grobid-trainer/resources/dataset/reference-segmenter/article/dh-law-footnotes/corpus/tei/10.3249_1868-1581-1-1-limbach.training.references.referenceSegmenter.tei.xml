@@ -1,0 +1,102 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.3249_1868-1581-1-1-limbach">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:00:20.756634Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-70-gc35e48387</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-24T08:00:20.756634Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-25T07:02:08.079Z" status="unfinished" who="#li">
+      <note type="label">v2 (li)</note>
+      <desc>1. pass started</desc>
+    </change>
+    <change when="2026-03-25T07:07:30.396Z" status="draft" who="#li">
+      <desc>1. pass done</desc>
+    </change>
+    <change when="2026-03-26T13:51:34.874Z" status="draft" who="#sandfort">
+      <note type="label">v3 (sandfort)</note>
+      <desc>2. Pass</desc>
+    </change>
+    <change when="2026-03-26T13:53:51.956Z" status="checked" who="#sandfort">
+      <desc>2. Pass done</desc>
+    </change>
+    <change when="2026-04-21T15:11:00.338Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-21T15:21:51.747Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>2</label><lb/> Aharon Barak, Introduction: The Supreme Court and the Problem of Terrorism, in:<lb/> Israel Supreme Court (ed.), Judgments of the Israel Supreme Court: Fighting<lb/> Terrorism within the Law, 2005, 5.<lb/> </bibl>
+        <bibl><label>3</label><lb/> European Convention for the Protection of Human Rights and Fundamental Freedoms<lb/> and its protocols, 4 November 1950, 213 U.N.T.S. 222.<lb/></bibl> 
+          <bibl><label>4</label><lb/> Gesetz zur Bekämpfung des internationalen Terrorismus, 9 January 2002,<lb/> (Terrorismusbekämpfungsgesetz), Bundesgesetzblatt (BGBl.) I 361, 3142.<lb/> </bibl>
+        <bibl><label>5</label><lb/> Gesetz zur Neuregelung der Telekommunikationsüberwachung und anderer<lb/> verdeckter Ermittlungsmaßnahmen sowie zur Umsetzung der Richtlinie 2006/24/EG,<lb/> 21 December 2007, BGBl. I, 3198.<lb/></bibl> 
+          <bibl><label>6</label><lb/> Directive 2006/24/EC of the European Parliament and of the Council, O.J. L105/54<lb/> (2006).<lb/></bibl> <bibl><label>7</label><lb/> Grundgesetz, 23 May 1949, BGBl. I 1, latest amendment, 28 August 2006, BGBl. I<lb/> 2034.<lb/> </bibl>
+        <bibl><label>8</label><lb/> Bundesverfassungsgericht (German Federal Constitutional Court), BVerfGE 57, 250,<lb/> 276.<lb/> </bibl>
+        <bibl><label>9</label><lb/> The Israeli High Court of Justice, HCJ 5100/94 The Public Committee Against<lb/> Torture in Israel v. The State of Israel; reprinted in: Judgments of the Israel Supreme<lb/> Court: Fighting Terrorism within the Law, 43.<lb/></bibl> 
+          <bibl><label>10</label><lb/> BVerfGE 109, 279.<lb/></bibl> <bibl><label>11</label><lb/> BVerfGE 107, 229.<lb/></bibl>
+
+       <!-- below is part of body -->   
+          15<lb/> 
+          
+          <bibl><label>12</label><lb/> BVerfGE, 115, 320.<lb/></bibl> 
+          <bibl><label>13</label><lb/> BVerfGE, 107, 229, 328.<lb/></bibl> <bibl><label>14</label><lb/> BVerfGE, 115, 320, 342.<lb/></bibl> <bibl><label>15</label><lb/> BVerfGE, 115, 320, 354 -355.<lb/> </bibl>
+          
+        <bibl><label>16</label><lb/> Martin Kutscha, Mit Riesenschritten auf dem Weg in den Überwachungsstaat, Das<lb/> Sicherheitspaket der Bundesregierung: Schutz oder Gefährdung der Demokratie?,<lb/> Frankfurter Rundschau, (7 November 2001).<lb/> </bibl>
+        <bibl><label>17</label><lb/> Martin Klingst, In der Sicherheitsfalle, Zeit Online, 44 (2001) available at<lb/> http://www.zeit.de/2001/44/200144_1._leiter.xml (last visited 8 August 2008).<lb/></bibl> 
+        <!-- below is part of body -->
+          18<lb/> 
+          
+<bibl><label>18</label><lb/> HCJ 5100/94 The Public Committee against Torture in Israel v. The State of Israel, 53<lb/> (4) PD 817, 854.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

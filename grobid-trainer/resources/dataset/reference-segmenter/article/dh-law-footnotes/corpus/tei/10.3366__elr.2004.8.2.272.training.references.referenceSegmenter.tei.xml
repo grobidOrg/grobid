@@ -1,0 +1,173 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.3366__elr.2004.8.2.272">
+    <titleStmt>
+      <title level="a">A Note on Edictal Intimation.</title>
+      <author>
+        <persName>
+          <forename>Ross Gilbert</forename>
+          <surname>Anderson</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Edinburgh University Press</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2004</date>
+      <idno type="DOI">10.3366/elr.2004.8.2.272</idno>
+      <ptr target="https://doi.org/10.3366/elr.2004.8.2.272"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Ross Gilbert Anderson. (2004). A Note on Edictal Intimation.. Edinburgh Law Review, 8(2), 272-276. DOI: 10.3366/elr.2004.8.2.272</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">A Note on Edictal Intimation.</title>
+          <author>
+            <persName>
+              <forename>Ross Gilbert</forename>
+              <surname>Anderson</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Edinburgh Law Review</title>
+          <imprint>
+            <biblScope unit="volume">8</biblScope>
+            <biblScope unit="issue">2</biblScope>
+            <biblScope unit="page" from="272" to="276">272-276</biblScope>
+            <date when="2004">2004</date>
+            <publisher>Edinburgh University Press</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.3366/elr.2004.8.2.272</idno>
+        <ptr target="https://doi.org/10.3366/elr.2004.8.2.272"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-04-29T16:46:45.394379Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-81-g2739f2ef4</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-04-29T16:46:45.394379Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-04-29T16:51:54.237Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-05-19T11:54:12.986Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-16T16:51:06.250Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-16T17:07:42.634Z" status="checked" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> See generally, R Campbell, The Law and Practice of Citation and Diligence (1862) 31 et seq; AE J G<lb/> Mackay, Manual of Practice in the Court of Session (1877) 398 et seq; </bibl>
+      <bibl>AE J G Mackay, Manual of Court of<lb/> Session Practice (1893) 200; </bibl>
+      <bibl>J Graham Stewart, Treatise on the Law of Diligence (1898) 319; </bibl>
+      <bibl>J Chisholm<lb/> (ed), Green's Encyclopaedia of the Law of Scotland, 2nd edn (1910) vol 5, 58; Lord Dunedin et al (eds),<lb/> Encyclopaedia of the Law of Scotland (1928) vol 3, para 897 and vol 5, para 57; </bibl>
+      <bibl>J A Maclaren, Court of<lb/> Session Practice (1916) 334 et seq; Anon, "Some notes on edictal citations" (1945) 61 Scottish Law<lb/> Review 37; D Maxwell, The Practice of the Court of Session (1980) 180.<lb/> </bibl>
+      <bibl><label>2</label> Stair, Institutions, 3.1.6; </bibl>
+      <bibl>Bankton, Institute, 3.1.6; </bibl>
+      <bibl>Creditors of Benjendward, Competing (1753) Mor 743<lb/> at 744; </bibl>
+      <bibl>Kames Sel Dec 75 per Lord Kames; Liquidators of Union Club Ltd v Edinburgh Life Assurance<lb/> Co (1906) 8 F 1143 at 1146 per Lord McLaren.<lb/> </bibl>
+      <bibl><label>3</label> Edmund v Mags of Aberdeen (1855) 18 D 47 at 55 per Lord Curriehill;</bibl>
+      <bibl>aff'd (1858) 3 Macq 116.<lb/> </bibl>
+      <bibl><label>4</label> W M Gloag and J M Irvine, The Law of Rights in Security (1897) 476-477, approved in Gallemos Ltd (in<lb/> receivership) v Barratt Falkirk Ltd 1989 SC 239 at 243 per Lord Dunpark. </bibl>
+      <bibl>Cf G Marty, P Raynaud and<lb/> P Jestaz, Droit Civil, Les Obligations, 2nd edn (1989) para 357.<lb/> </bibl>
+      <bibl><label>5</label> A debtor is furth of Scotland if he or she has left the country with no intention of returning: Brown v<lb/> Blaikie (1849) 11 D 475 at 482 per Lord Jeffrey; </bibl>
+      <bibl>C Shand, Practice of the Court of Session (1848) 238-9.<lb/> </bibl>
+      <bibl>Even if the debtor has left family in Scotland, citation or intimation must be edictal: Cribbes v Ross<lb/> (1851) 13 D 1369.<lb/> </bibl>
+      <bibl><label>6</label> Duke of Atholl v Robertson (1872) 10 M 298 suggests that intimation to a suitably authorised agent may<lb/> be sufficient.<lb/> </bibl>
+      <bibl><label>7</label> R Bruce Wood, in F Salinger, Factoring: the Law and Practice of Invoice Finance, 3rd edn (1999), ch 7.<lb/> </bibl>
+      <bibl><label>8</label> See O Lando, E Clive, A Prüm and R Zimmermann (eds), Principles of European Contract Law, part 3,<lb/> (2003) and the commentaries to the provisions of Art 11.<lb/> </bibl>
+      <bibl><label>9</label> In Black v Scott (1830) 8 S 367 the possibility of an uncooperative debtor was recognised but not discussed.<lb/> </bibl>
+      <bibl><label>10</label> Similar to that found in the American Uniform Commercial Code. Cf UNCITRAL draft Convention on<lb/> Assignment of Receivables in International Trade, 13 Mar 2001, A/CN.9/489, Annex to the draft<lb/> Convention, "Priority based on registration".<lb/> </bibl>
+      <bibl><label>11</label> H Kötz (ed), International Encyclopaedia of Comparative Law vol 7, ch 13, at 82, para 90.<lb/> </bibl>
+      <bibl><label>12</label> Home v Libberton (1491) Mor 3707; </bibl>
+      <bibl>Balfour, Practicks, No 41, perhaps the oldest case in Morison's<lb/> Dictionary. It involved a vagrant. Why anyone would want to sue a vagrant is perplexing.<lb/> </bibl>
+      <bibl><label>13</label> This seems to be the only instance where a court officer was required for intimation of an assignation. Cf<lb/> the position in France: Code civil Art 1690 and Nouveau code de procédure civile Arts 651 et seq.<lb/> </bibl>
+      <bibl><label>14</label> This was an essential element: Gordon v Forbes (1681) Mor 3768; </bibl>
+      <bibl>Preston v Sir John Clark (1715) Mor<lb/> 3769.<lb/> </bibl>
+      <bibl type="footnote"><label>15</label> Issued by the court, for which see below.<lb/> </bibl>
+      <bibl><label>16</label> Quite how this worked in detail is obscure. Failure to read at the Market Cross was fatal (Christie v Jack<lb/> (1631) Mor 3712; </bibl>
+      <bibl>Ewing v Rochead (1681) Mor 3803) as was a failure to read at the Pier and Shore<lb/> (Stewart v Achanay (1626) Mor 3803).<lb/> </bibl>
+      <bibl><label>17</label> Stair, Institutions, 4.38.16. </bibl>
+      <bibl>See also Balfour, Practicks, No 305.<lb/> </bibl>
+      <bibl><label>18</label> Section 51.<lb/> </bibl>
+      <bibl><label>19</label> See G Watson (ed), Bell's Dictionary and Digest of the Law of Scotland, 7th edn (1890), "Supplement"<lb/> and references there cited.<lb/> </bibl>
+      
+      <bibl><label>20</label> The procedure was extended to the service of an arrestment in the hands of a party furth of Scotland by<lb/> the Debtors (Scotland) Act 1838 (the "Personal Diligence Act"), s 18.<lb/> </bibl>
+      <bibl><label>21</label> The office of the Keeper of the Records was established by Court of Session (Records) Act 1815. It was<lb/> abolished from 1839: Court of Session Act (No 2) 1838, ss 20 and 21. The responsibility thereafter passed<lb/> to the Office of the Keeper of Edictal Citations and of the Minute Book.<lb/> </bibl>
+      <bibl><label>22</label> See Act of Sederunt 24 Dec 1838, s 7. </bibl>
+      <bibl>An edictal citation served on the Keeper of the Records was held<lb/> bad after the passing of the Act of Sederunt: Stephenson v Dunlop (1840) 2 D 1366.<lb/> </bibl>
+      <bibl><label>23</label> S R &amp; O No 588 1929 made under Reorganisation of Offices (Scotland) Act 1928, s 8.<lb/> </bibl>
+      <bibl><label>24</label> Public Records (Scotland) Act 1937, s 13.<lb/> </bibl>
+      <bibl><label>25</label> Public Registers and Records (Scotland) Act 1948, s 1(3).<lb/> </bibl>
+      <bibl><label>26</label> W W McBryde, The Law of Contract in Scotland, 2nd edn (2001) para 12-125. </bibl>
+      <bibl>Professor McBryde has<lb/> now corrected this in his Second Cumulative Supplement (2003) para 12-124.<lb/> </bibl>
+      <bibl><label>27</label> Court of Session Act 1988, Sch 2. The recommendations for reform were published as an appendix to<lb/> Scottish Law Commission Report No 111, 1988. There was no report as such however, just an appendix<lb/> thereto containing the draft bill. Neither a discussion paper nor a memorandum preceded the report.<lb/> </bibl>
+      <bibl><label>28</label> The relevant law for service of summonses abroad is now to be found in RCS r 16.5.<lb/> </bibl>
+      <bibl><label>29</label> Act of Sederunt 24 Dec 1838, s 7.<lb/> </bibl>
+      <bibl><label>30</label> Cf MacKintosh's Trs v Davidson and Sharp (1898) 25 R 554; </bibl>
+      <bibl> Morrison v Vallentine's Exrs 1907 SC 999;<lb/></bibl>
+      <bibl>Young v Harper 1970 SC 174 OH.<lb/> </bibl>
+      <bibl><label>31</label> A simplified form is provided in the Transmission of Moveable Property (Scotland) Act 1862.<lb/></bibl>
+      
+      <bibl><label>32</label> Section 19 (1). </bibl>
+      <bibl>See W A Wilson and A G M Duncan, Trusts, Trustees and Executors, 2nd edn (1995) at<lb/> para 22-30.<lb/></bibl>
+      <bibl><label>33</label> Rules of the Court of Session, r 16.12(4).<lb/> </bibl>
+      <bibl><label>34</label> Rules of the Court of Session, r 16.12(5).<lb/> </bibl>
+      <bibl><label>35</label> See McBryde, Contract para 12-125 and textbooks cited at note 32.<lb/> </bibl>
+      <bibl><label>36</label> Rules of the Court of Session, r 16.5;</bibl>
+      <bibl>Ordinary Cause Rules, r 5.5 and r 5.6. Both the Rules of the Court<lb/> of Session and the Ordinary Cause Rules are available online at &lt;www.scotcourts.gov.uk&gt;.<lb/> </bibl>
+      <bibl><label>37</label> Carter v McIntosh (1862) 24 D 925 at 934 per Lord Justice-Clerk Inglis.<lb/> </bibl>
+      <bibl><label>38</label> Stair, Institutions, 4.40.33. </bibl>
+      <bibl>Cf Erskine, Institute, 3.4.3.</bibl> 
+      <bibl>An arrestee is now protected by statute: Debts<lb/> Securities (Scotland) Act 1856, s 1, cited by W A Wilson, The Scottish Law of Debt 2nd edn (1991) para 17.5.<lb/> </bibl>
+      <bibl><label>39</label> See note 38 above.<lb/> </bibl>
+      <bibl><label>40</label> The doctrine of data certa is a feature of some continental European systems. Although there are few<lb/> references to this doctrine in the Scottish sources, this must have been one of the motivations for the<lb/> creation of the Books of Council and Session: see The Laws of Scotland: Stair Memorial Encyclopaedia<lb/> vol 19 (1990), J Imrie, "Public registers and records", para 839.<lb/> </bibl>
+      <bibl><label>41</label> Tod's Trs v Wilson (1869) 7 M 1100.<lb/> </bibl>
+      
+      
+      <bibl><label>1</label> 2003 SLT 910. References are to the paragraph numbers of the report. </bibl>
+      <bibl>See also J Thomson, "Limiting<lb/> Smith" 2003 SLG 158.<lb/> </bibl>
+      <bibl><label>2</label> S Eden, "Cautionary tales -the continued development of Smith v Bank of Scotland" (2003) 7 EdinLR 107.<lb/> </bibl>
+      
+      <bibl type="footnote"><label>3</label> There were in fact two actions against each of two Wilson brothers and their respective wives. One loan<lb/> was for the purchase of a home, the other for the construction of a conservatory. The facts are sufficiently<lb/> similar to raise identical issues, although there are two Mrs Wilsons.</bibl>
+    </listBibl>
+  </text>
+</TEI>

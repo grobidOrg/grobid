@@ -589,23 +589,26 @@ project(":grobid-trainer") {
         "train_table"                  : "org.grobid.trainer.TableTrainer",
         "train_citation"               : "org.grobid.trainer.CitationTrainer",
         "train_date"                   : "org.grobid.trainer.DateTrainer",
-        "train_reference_segmentation" : "org.grobid.trainer.ReferenceSegmenterTrainer",
         "train_patent_citation"        : "org.grobid.trainer.PatentParserTrainer",
         "train_funding_acknowledgement": "org.grobid.trainer.FundingAcknowledgementTrainer"
     ]
 
     def complexTrainerTasks = [
-        "train_header"                        : ["org.grobid.trainer.HeaderTrainer", ""],
-        "train_header_article_light"          : ["org.grobid.trainer.HeaderTrainer", "article/light"],
-        "train_header_article_light_ref"      : ["org.grobid.trainer.HeaderTrainer", "article/light-ref"],
-        "train_header_ietf"                   : ["org.grobid.trainer.HeaderTrainer", "sdo/ietf"],
-        "train_segmentation"                  : ["org.grobid.trainer.SegmentationTrainer", ""],
-        "train_segmentation_article_light"    : ["org.grobid.trainer.SegmentationTrainer", "article/light"],
-        "train_segmentation_article_light_ref": ["org.grobid.trainer.SegmentationTrainer", "article/light-ref"],
-        "train_segmentation_ietf"             : ["org.grobid.trainer.SegmentationTrainer", "sdo/ietf"],
-        "train_fulltext"                      : ["org.grobid.trainer.FulltextTrainer", ""],
-        "train_fulltext_article_light"        : ["org.grobid.trainer.FulltextTrainer", "article/light"],
-        "train_fulltext_article_light_ref"    : ["org.grobid.trainer.FulltextTrainer", "article/light-ref"],
+        "train_header"                                          : ["org.grobid.trainer.HeaderTrainer", ""],
+        "train_header_article_light"                            : ["org.grobid.trainer.HeaderTrainer", "article/light"],
+        "train_header_article_light_ref"                        : ["org.grobid.trainer.HeaderTrainer", "article/light-ref"],
+        "train_header_ietf"                                     : ["org.grobid.trainer.HeaderTrainer", "sdo/ietf"],
+        "train_segmentation"                                    : ["org.grobid.trainer.SegmentationTrainer", ""],
+        "train_segmentation_article_light"                      : ["org.grobid.trainer.SegmentationTrainer", "article/light"],
+        "train_segmentation_article_light_ref"                  : ["org.grobid.trainer.SegmentationTrainer", "article/light-ref"],
+        "train_segmentation_article_dh_law_footnotes"           : ["org.grobid.trainer.SegmentationTrainer", "article/dh-law-footnotes"],
+        "train_segmentation_article_dh_law_footnotes_token"     : ["org.grobid.trainer.SegmentationTrainer", "article/dh-law-footnotes-token"],
+        "train_reference_segmenter"                             : ["org.grobid.trainer.ReferenceSegmenterTrainer", ""],
+        "train_reference_segmenter_article_dh_law_footnotes"    : ["org.grobid.trainer.ReferenceSegmenterTrainer", "article/dh-law-footnotes"],
+        "train_segmentation_ietf"                               : ["org.grobid.trainer.SegmentationTrainer", "sdo/ietf"],
+        "train_fulltext"                                        : ["org.grobid.trainer.FulltextTrainer", ""],
+        "train_fulltext_article_light"                          : ["org.grobid.trainer.FulltextTrainer", "article/light"],
+        "train_fulltext_article_light_ref"                      : ["org.grobid.trainer.FulltextTrainer", "article/light-ref"],
     ]
 
     def libraries = ""

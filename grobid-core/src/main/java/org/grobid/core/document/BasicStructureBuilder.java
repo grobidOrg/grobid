@@ -304,6 +304,97 @@ public class BasicStructureBuilder {
     }
 
     /**
+     * Token-level variant of generalResultSegmentation. Instead of receiving one label per
+     * document-line, this method receives one label per token and maps them directly to
+     * DocumentPiece boundaries.
+     */
+    static public Document generalResultSegmentationTokenLevel(
+            Document doc,
+            String labeledResult,
+            List<LayoutToken> documentTokens) {
+        List<Pair<String, String>> labeledTokens = GenericTaggerUtils.getTokensAndLabels(labeledResult);
+
+        SortedSetMultimap<String, DocumentPiece> labeledBlocks = TreeMultimap.create();
+        doc.setLabeledBlocks(labeledBlocks);
+
+        List<Block> docBlocks = doc.getBlocks();
+        if (docBlocks == null || docBlocks.isEmpty() || documentTokens == null || documentTokens.isEmpty()) {
+            return doc;
+        }
+
+        // build a mapping from tokenDocPos -> blockIndex
+        int[] tokenToBlock = new int[documentTokens.size()];
+        for (int bi = 0; bi < docBlocks.size(); bi++) {
+            Block block = docBlocks.get(bi);
+            int start = block.getStartToken();
+            int end = block.getEndToken();
+            if (start == -1 || end == -1)
+                continue;
+            for (int t = start; t <= end && t < documentTokens.size(); t++) {
+                tokenToBlock[t] = bi;
+            }
+        }
+
+        int docTokenPos = 0; // position in documentTokens
+        String lastPlainLabel = null;
+        int segmentStartPos = -1; // tokenDocPos where the current segment starts
+        int segmentEndPos = -1;   // tokenDocPos where the current segment ends
+
+        String ignoredLabel = "@IGNORED_LABEL@";
+        for (Pair<String, String> labeledTokenPair : Iterables.concat(
+                labeledTokens,
+                Collections.singleton(Pair.of("IgnoredToken", ignoredLabel)))) {
+            if (labeledTokenPair == null) {
+                continue;
+            }
+
+            String curLabel = labeledTokenPair.getRight();
+            String curPlainLabel = GenericTaggerUtils.getPlainLabel(curLabel);
+            String labeledTokenText = labeledTokenPair.getLeft();
+
+            // advance docTokenPos to find the matching document token (skip whitespace/newlines)
+            while (docTokenPos < documentTokens.size()) {
+                String docTokText = documentTokens.get(docTokenPos).getText();
+                if (docTokText != null && docTokText.trim().length() > 0
+                        && !docTokText.equals("\n") && !docTokText.equals("\r")
+                        && !docTokText.equals(" ") && !docTokText.equals("\t")) {
+                    break;
+                }
+                docTokenPos++;
+            }
+
+            if (docTokenPos >= documentTokens.size()) {
+                break;
+            }
+
+            int currentTokenDocPos = docTokenPos;
+            docTokenPos++; // advance for next iteration
+
+            // handle label transitions
+            if (!curPlainLabel.equals(lastPlainLabel) && lastPlainLabel != null) {
+                // close the previous segment
+                if (segmentStartPos != -1 && segmentEndPos != -1 && segmentStartPos <= segmentEndPos) {
+                    int startBlockIdx = tokenToBlock[segmentStartPos];
+                    int endBlockIdx = tokenToBlock[segmentEndPos];
+                    DocumentPointer pointerA = new DocumentPointer(doc, startBlockIdx, segmentStartPos);
+                    DocumentPointer pointerB = new DocumentPointer(doc, endBlockIdx, segmentEndPos);
+                    labeledBlocks.put(lastPlainLabel, new DocumentPiece(pointerA, pointerB));
+                }
+                segmentStartPos = currentTokenDocPos;
+            }
+
+            if (segmentStartPos == -1) {
+                segmentStartPos = currentTokenDocPos;
+            }
+            segmentEndPos = currentTokenDocPos;
+
+            lastPlainLabel = curPlainLabel;
+        }
+
+        return doc;
+    }
+
+    /**
      * Set the main segments of the document based on the full text parsing results
      *
      * @param doc           a document

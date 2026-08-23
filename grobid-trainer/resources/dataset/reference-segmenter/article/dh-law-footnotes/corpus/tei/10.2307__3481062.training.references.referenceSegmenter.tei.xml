@@ -1,0 +1,509 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.2307__3481062">
+    <titleStmt>
+      <title level="a">How the García Cousins Lost Their Accents: Understanding the Language of Title VII Decisions Approving English-Only Rules as the Product of Racial Dualism, Latino Invisibility, and Legal Indeterminacy</title>
+      <author>
+        <persName>
+          <forename>Christopher David Ruiz</forename>
+          <surname>Cameron</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>JSTOR</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">1997</date>
+      <idno type="DOI">10.2307/3481062</idno>
+      <ptr target="https://doi.org/10.2307/3481062"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Christopher David Ruiz Cameron. (1997). How the García Cousins Lost Their Accents: Understanding the Language of Title VII Decisions Approving English-Only Rules as the Product of Racial Dualism, Latino Invisibility, and Legal Indeterminacy. California Law Review, 85(5), 1347. DOI: 10.2307/3481062</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">How the García Cousins Lost Their Accents: Understanding the Language of Title VII Decisions Approving English-Only Rules as the Product of Racial Dualism, Latino Invisibility, and Legal Indeterminacy</title>
+          <author>
+            <persName>
+              <forename>Christopher David Ruiz</forename>
+              <surname>Cameron</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">California Law Review</title>
+          <imprint>
+            <biblScope unit="volume">85</biblScope>
+            <biblScope unit="issue">5</biblScope>
+            <biblScope unit="page">1347</biblScope>
+            <date when="1997">1997</date>
+            <publisher>JSTOR</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.2307/3481062</idno>
+        <ptr target="https://doi.org/10.2307/3481062"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:03:08.743663Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-70-gc35e48387</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-24T08:03:08.743663Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-31T13:55:06.559Z" status="unfinished" who="#li">
+      <note type="label">v2 (li)</note>
+      <desc>1. pass started</desc>
+    </change>
+    <change when="2026-03-31T14:17:53.742Z" status="unfinished" who="#li">
+      <desc>1. pass started  (bis Label 30)</desc>
+    </change>
+    <change when="2026-03-31T14:32:17.169Z" status="unfinished" who="#li">
+      <desc>1. pass started  (bis Label 39)</desc>
+    </change>
+    <change when="2026-04-16T10:45:06.073Z" status="unfinished" who="#cboulanger">
+      <note type="label">v3 (cboulanger)</note>
+      <desc>1st pass continued</desc>
+    </change>
+    <change when="2026-04-16T11:16:52.399Z" status="draft" who="#cboulanger">
+      <desc>Finished 1st pass</desc>
+    </change>
+    <change when="2026-04-29T10:19:43.513Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-29T11:25:16.453Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label>.<lb/> JULIA ALVAREZ, HOW THE GARCfA GIRLS LOST THEIR ACCENTS 81 (1991).<lb/> </bibl>
+      <bibl><label>2</label>. Garcfa v. Gloor, 618 F.2d 264,266 (5th Cir. 1980).<lb/> </bibl>
+      <bibl><label>3</label>. Id. at 267.</bibl> <bibl>Given a choice, I prefer the term "Latino." See generally Angel R. Oquendo,<lb/> Re-imagining the Latinola Race, 12 HARV. BLACKLETTER J. 93, 96-99 (1995) (discussing the origins<lb/> and meanings of the terms "Hispanic" and "Latino" and arguing that "Latino" is the preferable<lb/> term). However, I shall use the term used by the litigant or court where appropriate.<lb/></bibl> 
+      <bibl><label>4</label>. Garcia, 618 F.2d at 267.<lb/></bibl> <bibl><label>5</label>. Id. at 269.<lb/> </bibl>
+      
+      <bibl><label>6</label>. Id. at 266.</bibl> 
+      <bibl>Precisely what the offending Spanish words or phrases were does not appear in<lb/> the decision-a remarkable omission by itself because uttering them got Mr. Garcfa fired. See infra<lb/> Part II.A.<lb/></bibl> 
+      <bibl><label>7</label>. See Garcia, 618 F.2d at 266.<lb/> </bibl>
+      <bibl><label>8</label>. See Garcfa v. Spun Steak Co., 998 F.2d 1480 (9th Cir. 1993). The opinion does not specify<lb/> Ms. Garcfa's ancestry, other than to suggest she is "Hispanic."<lb/></bibl> 
+      <bibl><label>9</label>. Id. at 1483 ("Virtually all of the Spanish-speaking employees are Hispanic.").<lb/></bibl> 
+      <bibl><label>10</label>. Id.<lb/></bibl> 
+      <bibl><label>11</label>. See id.<lb/></bibl> 
+      <bibl><label>12</label>. Id.<lb/></bibl> 
+      <bibl><label>13</label>. Id.<lb/></bibl> 
+      <bibl><label>14</label>. See id.<lb/></bibl> 
+      
+      <bibl><label>15</label>. See id. at 1484.<lb/> </bibl>
+      <bibl><label>16</label>. ALVAREZ, supra note 1, at 7, 19, 168; </bibl>
+      <bibl>cf. Man J. Matsuda, Voices of America: Accent,<lb/> Antidiscrimination Law, and a Jurisprudence for the Last Reconstruction, 100 YALE L.J. 1329 (1991)<lb/> (examining related problem of whether classification based on employee's accent is national origin<lb/> discrimination).</bibl> 
+      <bibl>Professor Alvarez's book has provided useful illustrations for some of my colleagues<lb/> as well. See. e.g., Rachel F. Moran, Foreword: Demography and Distrust: The Latino Challenge to<lb/> Civil Rights and Immigration Policy in the 1990s and Beyond, 8 LA RAZA L.J. 1, 19 (1995)<lb/> (recounting story from Alvarez's book about how Papi became a U.S. citizen).</bibl> 
+      <bibl>Professor Alvarez<lb/> has elaborated on the adventures of the de ]a Torre family, this time from the perspective of<lb/> everyone other than Yolanda. See Julia Alvarez, iYo! (1997).<lb/> </bibl>
+      <bibl><label>17</label>. See, e.g., ALVAREZ, supra note 1, at 3-23 (describing Yolanda's antojos, or cravings, for<lb/> things from her Dominican Republic homeland).<lb/></bibl> 
+      <bibl><label>18</label>. Id. at 170.<lb/></bibl> 
+      <bibl><label>19</label> Id. at 171.<lb/> </bibl>
+      
+      <bibl><label>20</label>. See Garcfa v. Gloor, 618 F.2d 264(5th Cir. 1980).<lb/> </bibl>
+      <bibl><label>21</label>. See Garcia v. Spun Steak Co., 998 F.2d 1480 (9th Cir. 1993).<lb/> </bibl>
+      <bibl><label>22</label>. The Ninth Circuit panel remanded to the district court to determine whether the company's<lb/> English-only rule discriminated against monolingual Spanish-speakers. See id. at 1490.<lb/></bibl> 
+      <bibl><label>23</label>. See Garcla, 618 F.2d at 270; Garcla, 998 F.2d at 1487-88.<lb/> </bibl>
+      <bibl><label>24</label>. See Espinoza v. Farah Mfg. Co., 414 U.S. 86, 95 (1973).<lb/></bibl> 
+      <bibl><label>25</label>. 42 U.S.C. § 3604 (1994).<lb/> </bibl>
+      <bibl><label>26</label>. The provision reads as follows:<lb/> [Ut shall be unlawful-<lb/>(a) To refuse to sell or to rent after the making of a bona fide offer ... a dwelling to any<lb/> person because of... national origin.<lb/> (b) To discriminate against any person in the terms, conditions, or privileges of sale or<lb/> rental of a dwelling.., because of... national origin.<lb/> Id. 42 U.S.C. § 3604(a)-(b).<lb/> </bibl>
+      
+      <bibl><label>27</label>. See Hernandez v. New York, 500 U.S. 352, 369 (1991).<lb/></bibl> 
+      <bibl><label>28</label>. See id. at 356.<lb/></bibl> 
+      <bibl><label>29</label>. Id. at 371.<lb/> </bibl>
+      
+      <bibl><label>30</label>. At least eighteen states have adopted "official English" laws, including Alabama, ALA.<lb/> CoNsT. amend. DIX; Arkansas, ARK. CODE ANN. § 1-4-117 (Michie 1996); </bibl>
+      <bibl>Arizona, ARIZ. CONST.<lb/> art. XXVIII;</bibl> 
+      <bibl>California, CAL. CONST. art. III, § 6;</bibl> 
+      <bibl>Colorado, COLO. CONST. art. II, § 30a; </bibl>
+      <bibl>Florida,<lb/> FLA. CONSr. art. II, § 9;</bibl> 
+      <bibl>Georgia, 1986 Ga. Laws 529; </bibl>
+      <bibl>Hawaii, HAw. CoNsT. art. XV, § 4;</bibl> 
+      <bibl>Illinois, 5<lb/> ILL. COMP. STAT. ANN. § 460/20 (West 1993); </bibl>
+      <bibl>Indiana, IND. CODE ANN. § 1-2-10-1 (West Supp.<lb/> 1996); </bibl>
+      <bibl>Kentucky, KY. REV. STAT. ANN. § 2.013 (Michie 1992); </bibl>
+      <bibl>Mississippi, Miss. CODE ANN. § 3-3-<lb/>31 (1991); </bibl>
+      <bibl>Nebraska, NEB. CONSr. art. I, § 27;</bibl> 
+      <bibl>North Carolina, N.C. GEN. STAT. § 145-12 (1995);<lb/> </bibl>
+      <bibl>North Dakota, N.D. CENT. CODE § 54-02-13 (1989); </bibl>
+      <bibl>South Carolina, S.C. CODE ANN. § 1-1-696<lb/> (Law Co-op. Supp. 1996); </bibl>
+      <bibl>Tennessee, TENN. CODE ANN. § 4-1-404 (1991); </bibl>
+      <bibl>and Virginia, VA. CODE<lb/> ANN. § 22.1-212.1 (Michie Supp. 1996).<lb/> </bibl>
+      
+      <bibl><label>31</label>. See Yniguez v. Arizonans for Official English, 69 F.3d 920 (9th Cir. 1995) (en banc), cert.<lb/> granted sub nom. Arizonans for Official English v. Arizona, 116 S. Ct. 1316 (1996) (granting review<lb/> of question whether ARiz. CoNsr. art. XXVIII, requiring state government officials and employees<lb/> to "act" in English only, unconstitutionally restricts free expression), vacated as moot, 117 S. Ct. 1055<lb/> (1997).</bibl> 
+      <bibl>Yniguez marks the second time the Supreme Court has vacated as moot an important Ninth<lb/> Circuit opinion by Judge Stephen Reinhardt finding an English-only rule to constitute national origin<lb/> discrimination. See Gutierrez v. Mun. Court, 838 F.2d 1031 (9th Cir. 1988), vacated as moot, 409 U.S.<lb/> 1016 (1989).</bibl> 
+      <bibl>For an analysis of Yniquez see Ivan A. Tamayo, "Official Language Legislation: Literal<lb/> Silencing/Silenciando La Lengua, 13 HARV. BLACKLErER J. 107 (1997).<lb/> </bibl>
+      
+      <bibl><label>32</label>.<lb/> (a) It shall be an unlawful employment practice for an employer-<lb/>(1) to fail or refuse to hire or to discharge any individual, or otherwise to discriminate<lb/> against any individual with respect to his compensation, terms, conditions, or privileges of<lb/> employment, because of such individual's.., national origin; or<lb/> (2) to limit, segregate, or classify his employees or applicants for employment in any way<lb/> which would deprive or tend to deprive any individual of employment opportunities<lb/> or otherwise adversely affect his status as an employee, because of such<lb/> individual's ... national origin.<lb/> 42 U.S.C. § 2000e-2(a) (1)-(2) (1994).<lb/> </bibl>
+      
+      <bibl><label>33</label>. See, e.g., Griggs v. Duke Power Co., 401 U.S. 424, 430-31 (1971) (holding that an<lb/> employer's requirement, as applied to Black applicants, that prospective employees possess a high<lb/> school diploma or pass an aptitude test when the practice is unrelated to job performance establishes<lb/> a paradigmatic prima facie Title VII violation).<lb/> </bibl>
+      
+      <bibl><label>34</label>. See id.</bibl> 
+      <bibl>But even a Black plaintiff will face serious obstacles in attempting to make out a<lb/> prima facie case if he presents a discrimination charge that falls outside this immediately<lb/> recognizable paradigm. See, e.g., Odima v. Westin Tucson Hotel, 53 F.3d 1484 (9th Cir. 1995)<lb/> (reversing grant of summary judgment against national origin discrimination challenge by qualified<lb/> Nigerian-born Black, who spoke clear but accented English, for hotel's failure to promote him from<lb/> laundry room to accounting department);</bibl> 
+      <bibl>Rogers v. American Airlines, 527 F. Supp. 229 (S.D.N.Y.<lb/> 1981) (granting summary judgment against race and sex discrimination challenge by African-<lb/>American woman to airline's rule prohibiting the wearing of braided hairstyles).</bibl> 
+      <bibl>For an insightful<lb/> critique of judicial reliance on false dichotomies, including the purported contrast between "mutable"<lb/> (e.g., hairstyle) and "immutable" (e.g., "race") characteristics in cases like Rogers, see Paulette M.<lb/> Caldwell, A Hair Piece: Perspectives on the Intersection of Race and Gender, 1991 DuE LJ. 365,<lb/> 370 ("Hair seems to be such a little thing. Yet it is the little things, the small everyday realities of life,<lb/> that reveal the deepest recesses and values of a culture... ).<lb/> </bibl>
+      
+      <bibl><label>35</label>. See, e.g., Garcfa v. Spun Steak Co., 13 F.3d 296, 298 (9th Cir. 1993) (</bibl>
+      <bibl>Reinhardt, J.,<lb/> dissenting) (denial of rehearing en banc);</bibl> 
+      <bibl>accord McLaurin v. Oklahoma State Regents for Higher<lb/> Educ., 339 U.S. 637 (1950) (segregating Black public law school student by requiring him to sit only<lb/> in portion of classroom reserved for his exclusive use violated the Equal Protection Clause).<lb/> </bibl>
+      
+      <bibl><label>36</label>. Neither this Essay nor my criticisms of the cases cited herein is primarily concerned with<lb/> the employer's right, as protected by long established Title VII law, to adopt and enforce English-<lb/>only rules demanded by business necessity, such as the need for safety during work hours. Instead, I<lb/> focus here on challenges to such rules preventing the speaking of non-English languages, especially<lb/> Spanish, between employees during working hours when there is no proof in the record that tangible<lb/> harm to the employer's business either has been caused or could be caused by such activity. See ,<lb/> e.g., Garcfa v. Spun Steak Co., 13 F.3d 296, 302 &amp; n.1l (9th Cir. 1993) (Reinhardt, J., dissenting)<lb/> (denial of rehearing en banc) ("No reasonable person would suggest that Title VII requires the<lb/> operator of an English language radio station to permit a hired broadcaster to broadcast in whole or in<lb/> part in another language, contrary to the station's policies.");</bibl> 
+      <bibl>see also Juan F. Perea, English-Only<lb/> Rules and the Right to Speak One's Primary Language in the Workplace, 23 U. MICH. J.1. REFORM<lb/> 265, 299 (1990) ("[A] bilingual stage actor cast in the role of Hamlet would not have a right to<lb/> deliver the soliloquy in Spanish .... [The actor's use of Spanish] would constitute poor performance,<lb/> and the employer could properly discipline or discharge a poorly performing employee.").<lb/> </bibl>
+      
+      <bibl><label>37</label>. See, e.g., Alfredo Mirand6, "En la Tierra del Ciego, El Tuerto Es Rey" ("In the Land of the<lb/> Blind, the One Eyed Person Is King"): Bilingualism as Disability, 26 N.M. L. REv. 75 (1996). <lb/></bibl>
+      
+      <bibl><label>38</label>. See supra pp. 11-13. For purposes of writing this Essay, I have identified, labeled, and<lb/> perhaps oversimplified these themes as I understand them to be present in the body of literature cited<lb/> herein and in the thinking of some but not all of the panelists who presented papers at the First<lb/> Latino/a Legal Critical Studies Conference held in May 1996 in La Jolla, California. I make no<lb/> representations that the authors whose work I have cited would agree with my characterizations,<lb/> understandings, or uses of these themes.<lb/></bibl> 
+      <bibl>For a word of caution on the difficulty of undertaking "Latino" scholarship in general, see Kevin<lb/> R. Johnson, Some Thoughts on the Future of Latino Legal Scholarship, 2 HARV.-LATINO L REV.<lb/> (forthcoming 1997) (offering "circumspection about the possibility of formulating a coherent 'Latino'<lb/> vision," but contending there exists "a distinct need for the development of Latino legal scholarship").<lb/> </bibl>
+      
+      <bibl><label>39</label>. See, e.g., Robert S. Chang, Toward an Asian American Legal Scholarship: Critical Race<lb/> Theory, Post-Structuralism, and Narrative Space, 81 CALIF. L. REV. 1241, 1245-50 (1993); </bibl>
+      <bibl>Kevin R.<lb/> Johnson, Civil Rights and Immigration: Challenges for the Latino Community in the Twenty-First<lb/> Century, 8 LA RAZA L.J. 42,64-66 (1995); </bibl>
+      <bibl>Moran, supra note 16, at 10-13, 16-19; </bibl><bibl>Oquendo, supra<lb/> note 3, at 99-102; </bibl>
+      <bibl>Juan F. Perea, Ethnicity and the Constitution: Beyond the Black and White Binary<lb/> Constitution, 36 WM. &amp; MARY L REV. 571, 571-72 (1995); </bibl>
+      <bibl>Deborah Ramirez, Multicultural<lb/> Empowerment: It's Not Just Black and White Anymore, 47 STAN. L REV. 957, 958-60 (1995);<lb/> </bibl>
+      <bibl>William R. Tamayo, When the "Coloreds" Are Neither Black Nor Citizens: The United States Civil<lb/> Rights Movement and Global Migration, 2 ASIAN L.J. 1, 9-11 (1995); </bibl>
+      <bibl>see generally IAN F. HANEY<lb/> L6PEZ, WHITE BY LAW: THE LEGAL CONSTRUCTION OF RACE 63-80 (1996) (discussing how<lb/> Latinos, Asians, and other minorities sought to characterize themselves as "Whites" rather than<lb/> "Blacks" so as to enjoy the benefits of White persons codified in federal immigration laws).<lb/> </bibl>
+      
+      <bibl><label>40</label>. See, e.g., ANDREW HACKER, Two NATIONS: BLACK AND WHITE, SEPARATE, HOSTILE,<lb/> UNEQUAL (rev. ed. 1995); RAPHAEL J. SONENSHEIN, POLITICS IN BLACK AND WHITE: RACE AND<lb/> POWER IN Los ANGELES (1993).</bibl>
+      <bibl>Americans who get their news from television rather than from<lb/> print media sampled this perspective recently when a popular network program hosted by journalist<lb/> Ted Koppel broadcasted an otherwise insightful series on race relations. See Nightline: America in<lb/> Black and White (ABC television broadcasts, Sept. 23-27, 1996).<lb/> </bibl>
+      
+      <bibl><label>41</label>. See LA RAZA: FORGOTTEN AMERICANS (Julian Samora ed., 1966); </bibl>
+      <bibl>Kevin R. Johnson, Los<lb/> Olvidados: Images of the Immigrant, Political Power of Noncitizens, and Immigration Law and<lb/> Enforcement, 1993 BYU L. REV. 1139 (1993); </bibl>
+      <bibl>Juan F. Perea, Los Olvidados: On the Making of an<lb/> Invisible People, 70 N.Y.U. L. REV. 965 (1995); </bibl>
+      <bibl>see also GEORGE I. SANCHEZ, FORGOTTEN PEOPLE<lb/> (1967) (recounting the history of New Mexicans).<lb/> </bibl>
+      <bibl><label>42</label>. See George A. Martinez, Legal Indeterminacy, Judicial Discretion, and the Mexican-<lb/>American Litigation Experience: 1930-1980, 27 U.C. DAVIS L REV. 555, 557-60 (1994); </bibl>
+      <bibl>see<lb/> generally THE POLITICS OF LAW: A PROGRESSIVE CRITIQUE (David Kairys ed., 1982); </bibl>
+      <bibl>RICHARD A<lb/> POSNER, THE PROBLEMS OF JURISPRUDENCE (1990); Joseph William Singer, The Player and the<lb/> Cards: Nihilism and Legal Theory, 94 YALE L.J. 1 (1984); </bibl>
+      <bibl>Mark V. Tushnet, Following the Rules Laid<lb/> Down: A Critique of Interpretivism and Neutral Principles, 96 HARV. L. REV. 781 (1983).<lb/> </bibl>
+      
+      <bibl><label>43</label>. ALVAREZ, supra note 1, at 72.<lb/> </bibl>
+      <bibl><label>44</label>. See Moran, supra note 16, at 4, 10.<lb/> </bibl>
+      <bibl><label>45</label>. See id. at 13, 16-17.<lb/> </bibl>
+      
+      <bibl><label>46</label>. Oquendo, supra note 3, at 99.<lb/> </bibl>
+      <bibl><label>47</label>. Id. at 99-100.<lb/> </bibl>
+      
+      <bibl><label>48</label>. See Moran, supra note 16, at 10.<lb/> </bibl>
+      
+      <bibl type="footnote"><label>49</label>. My grandfather Frank X. Ruiz and my colleague J. Michael Echevarria, each bearing a<lb/> phenotype much darker and more Indian than mine, have both related to me childhood stories in<lb/> which Anglo youths welcomed them to a new neighborhood or school by calling out, "Hi, nigger!"<lb/> Conversation with Frank X. Ruiz (July 1996); Conversation with J. Michael Echevarria (July 1992).<lb/> </bibl>
+      
+      <bibl><label>50</label>. Which is not to deny the essential role that race played in the establishment and<lb/> stratification of Mexican colonial society following the Conquest. As the historian Ram6n Eduardo<lb/> Ruiz has put it:<lb/> The Spaniards... had established a pigmentocracy, with status based, to a large extent, on<lb/> appearance. To be light of skin, a European characteristic, was a mark of honor and<lb/> prestige; to be dark of skin, or moreno, was not.<lb/> Whites, whether peninsulares, criollos, or fair-skinned mestizos, were the "happy<lb/> few." Without a close examination of racial pedigrees, they made up, at best, no more than<lb/> one-fifth of the population. Of New Spain's 6.1 million inhabitants in 1810, just over 1<lb/> million were of the "white race."...<lb/> Given these statistics, and the value ittached to being of Spanish descent, one's racial<lb/> classification acquired major importance. Everyone wanted to be white ....<lb/> RAM6N EDUARDO Ruiz, TRIUMPH AND TRAGEDY: A HISTORY OF THE MEXICAN PEOPLE 119<lb/> (1992).<lb/> </bibl>
+      <bibl><label>51</label>. See generally RICHARD GRISWOLD DEL CASTILLO, THE TREATY OF GUADALUPE<lb/> HIDALGO: A LEGACY OF CONFLICT (1990) (offering excellent in-depth study of the events leading<lb/> up to and following the Treaty of Guadalupe Hidalgo, which transferred about one-half of sovereign<lb/> Mexican lands to the U.S.).<lb/> </bibl>
+      
+      <bibl><label>52</label>. See Moran, supra note 16, at 17.<lb/> </bibl>
+      <bibl><label>53</label>. See generally GRISWOLD DEL CASTILLO, supra note 51.<lb/> </bibl>
+      <bibl><label>54</label>. See Perea, supra note 41, at 972; Juan F. Perea, Demography and Distrust: An Essay on<lb/> American Languages, Cultural Pluralism, and Official English, 77 MINN. L. REv. 269, 271-81 (1992).<lb/> </bibl>
+      <bibl><label>55</label>. See BILL PiATT, LANGUAGE ON THE JOB 4-5 (1993); </bibl>
+      <bibl>BILL PIATT, LONLY ENGLISH? LAW<lb/> AND LANGUAGE POLICY IN THE UNITED STATES 3-11 (1990) [hereinafter PIATr, LONLY<lb/> ENGLISH?].<lb/> </bibl>
+      <bibl><label>56</label>. See PIATT, LONLY ENGLISH?, supra note 55, at 11-12.<lb/> </bibl>
+      
+      <bibl><label>57</label>. Garcfa v. Spun Steak Co., 998 F.2d 1480, 1486 (9th Cir. 1993) (emphasis added).<lb/> </bibl>
+      <bibl><label>58</label>. Id. at 1487-88.<lb/> </bibl>
+      <bibl><label>59</label>. See id. at 1488.<lb/> </bibl>
+      <bibl><label>60</label>. Id. (emphasis in original). Judge O'Scannlain also explained that there is no disparate<lb/> impact with respect to a privilege of employment "if the rule is one that the affected employee can<lb/> readily observe and nonobservance is a matter of individual preference." Id. at 1487 (quoting Garcfa<lb/> v. Gloor, 618 F.2d 264,270 (5th Cir. 1980)).<lb/> </bibl>
+      
+      <bibl><label>61</label>.<lb/> Compare id. at 1486 (citing Connecticut v. Teal, 457 U.S. 440, 446 (1981)), with id. at 1488<lb/> (citing no authorities whatsoever). Teal does not use the modifier "significant" to describe adverse<lb/> impact.<lb/> </bibl>
+      <bibl><label>62</label>. In making this point, I understand Judge O'Scannlain to be assigning to the term<lb/> "significant" the meaning that most laypersons would assign to it-namely, "meaningful,"<lb/> "important," or "weighty." WEBSTER'S II NEw RIVERSIDE DICTIONARY 643 (1984). Nowhere does<lb/> Title VII use the adjective "significant" in such a way. I recognize, however, that it is long-settled<lb/> under Title VII that a plaintiff seeking to prove that a purportedly neutral employment policy<lb/> discriminates against a protected class of persons must offer statistically significant evidence of its<lb/> disparate impact, which is quite another matter altogether. See, e.g., MACK A. PLAYER, FEDERAL<lb/> LAW OF EMPLOYMENT DISCRIMINATION 90 (3d ed. 1991).<lb/> </bibl>
+      <bibl><label>63</label>. See supra note 32 (reprinting text of Title VII).<lb/> </bibl>
+      
+      <bibl><label>64</label>. See generally Jeanne M. Jorgensen, Comment, "English Only" in the Workplace and Title<lb/> VII Disparate Impact: The Ninth Circuit's Misplaced Application of "Ability to Comply" Should be<lb/> Rejected in Favor of the EEOC's Business Necessity Test, 25 Sw. U. L REV. 407 (1996).<lb/> </bibl>
+      <bibl><label>65</label>. Garcfa v. Spun Steak Co., 998 F.2d 1480, 1488 (9th Cir. 1993).<lb/> </bibl>
+      <bibl><label>66</label>. See Odima v. Westin Tucson Hotel, 53 F.3d 1484, 1494 (9th Cir. 1995) (finding national<lb/> origin discrimination against qualified Nigerian-born Black who spoke clear but accented English).<lb/> </bibl>
+      <bibl><label>67</label>. Cf. HANEY L6PEZ, supra note 39, at 56-57, 61, 163 (discussing our law's difficulty<lb/> addressing racial hierarchies imposed by socialization); see also supra note 34 (discussing Rogers v.<lb/> American Airlines, 527 F. Supp. 229 (S.D.N.Y. 1981) as a non-traditional case, brought by an<lb/> African-American woman, that failed).<lb/> </bibl>
+      <bibl><label>68</label>. Garcia v. Gloor, 618 F.2d 264, 270 (5th Cir. 1980).<lb/> </bibl>
+      <bibl><label>69</label>. Jurado v. Eleven-Fifty Corp., 813 F.2d 1406, 1411 (9th Cir. 1987).<lb/> </bibl>
+      
+      <bibl><label>70</label>. Dimaranan v. Pomona Valley Hosp. Med. Ctr., 775 F. Supp. 338, 344 (C.D. Cal. 1991).<lb/> Curiously, Judge Rafeedie insisted that the hospital's no-Tagaog rule was not really an English-only<lb/> rule. See id. at 342-43.<lb/> </bibl>
+      <bibl><label>71</label>.<lb/> In light of the recent debate over whether teachers in the Oakland, California public school<lb/> system ought to teach Black English, or "Ebonics," to their pupils, I take care not to overstate the<lb/> point.<lb/> </bibl>
+      <bibl><label>72</label>. Oquendo, supra note 3, at 94; </bibl>
+      <bibl>see also Deborah A. Ramirez, Excluded Voices: The<lb/> Disenfranchisement of Ethnic Groups From Jury Service, 1993 Wis. L REv. 761, 762 n.5 (citing U.S.<lb/> Bureau of the Census data that 75% of all Latinos speak Spanish).<lb/> </bibl>
+      <bibl><label>73</label>. Like many second-and third-generation Latinos, I did not learn Spanish in my parents'<lb/> home, and the Spanish that I do speak I learned in high school or here and there around older<lb/> relatives-as did my mother, who grew up in my bilingual, Mexican-born grandfather's home. Many<lb/> of my contemporaries tell a similar story. See, e.g., Steven W. Bender, Consumer Protection for<lb/> Latinos: Overcoming Language Fraud and English-Only in the Marketplace, 45 AM. U. L REV. 1027,<lb/> 1032 n.17 (1996) ("Although I was born and raised in an East Los Angeles barrio, I spoke English at<lb/> school and home and know only some Spanish."); </bibl>
+      <bibl>Kevin R. Johnson, Civil Rights and Immigration:<lb/> Challenges for the Latino Community in the Twenty-First Century, 8 LA RAZA LJ. 42, 67-72 (1995)<lb/> ("My mother speaks some Spanish but never taught the language to her sons.").<lb/> </bibl>
+      <bibl><label>74</label>. See JOSHUA A. FISHMAN, THE RISE AND FALL OF THE ETHNIC REVIVAL: PERSPECTIVES<lb/> ON LANGUAGE AND ETHNICITY 71, 146 (1985); </bibl>
+      <bibl>see also Perea, supra note 36, at 276-79<lb/> (summarizing views of sociologists and sociolinguists).<lb/> </bibl>
+      
+      <bibl><label>75</label>. FISHMAN, supra note 74, at 4 (internal quotations omitted).<lb/> </bibl>
+      <bibl><label>76</label>. See Lawrence Greenfield, Situational Measures of Normative Language Views in Relation<lb/> to Person, Place, and Topic Among Puerto Rican Bilinguals, in 2 ADVANCES IN THE SOCIOLOGY OF<lb/> LANGUAGE 17, 33 (Joshua A. Fishman ed., 1972); </bibl>
+      <bibl>see also Joshua Fishman, The Sociology of<lb/> Language: An Interdisciplinary Social Science Approach to Language in Society, in 1 ADVANCES IN<lb/> THE SOCIOLOGY OF LANGUAGE 217, 251 (Joshua Fishman ed., 1971) [hereinafter Fishman, The<lb/> Sociology of Language] (stating that, among bilinguals, Spanish is primarily associated with family and<lb/> friendship, which constitute the "intimacy value cluster").<lb/> </bibl>
+      <bibl><label>77</label>. Fishman, The Sociology of Language, supra note 76, at 219 (emphasis in original).<lb/> </bibl>
+      <bibl><label>78</label>. See, e.g., NANCY FAIRES CONKLIN &amp; MARGARET A. LOURIE, A HosT OF TONGUES:<lb/> LANGUAGE COMMUNITIES IN THE UNITED STATES 193 (1983).<lb/> </bibl>
+      <bibl><label>79</label>. Id. at 192.<lb/> </bibl>
+      <bibl><label>80</label>. See ALVAREZ, supra note 1, at 171.<lb/> </bibl>
+      <bibl><label>81</label>. Oquendo, supra note 3, at 94.<lb/> </bibl>
+      <bibl><label>82</label>. See, e.g., Juan F. Perea, Presentation to the First Latino/a Critical Legal Studies Conference<lb/> in La Jolla, California (May 2-5, 1996). I was impressed by the courage of Professor Perea, who<lb/> publicly shared the torments he suffered as the immigrant son of parents from Colombia and Costa<lb/> Rica, when on U.S. schoolyards his classmates called him "greaser" and taunted him for speaking<lb/> English with an accent.<lb/> </bibl>
+      
+      <bibl><label>83</label>. See, e.g., Jorge C. Rangel &amp; Carlos Alcala, Project Report: De Jure Segregation of<lb/> Chicanos in Texas Schools, 7 HARV. C.R.-C.L. L REV. 307, 310 n.20 (1972) ("Even today, some<lb/> schools in Texas have what is referred to as Spanish detention, whereby a child caught speaking<lb/> Spanish is usually held after school. Persistence by the child in using his native language may result in<lb/> a spanking from the principal or even expulsion.").<lb/> </bibl>
+      <bibl><label>84</label>. See, e.g., Kevin Baxter, Finding His Roots-and a Powerful Voice, L.A. Times, Apr. 19,<lb/> 1996, at 81 (relating classroom experiences of author Victor Villasefior).<lb/> </bibl>
+      <bibl><label>85</label>. Although the analogy is mine, I am indebted to Margaret Montoya for underscoring the<lb/> frequency of this experience among Mexican Americans who grew up in Arizona, California, New<lb/> Mexico, and Texas. See, e.g., United States v. Texas, 506 F. Supp. 405, 412 (E.D. Tex. 1981)<lb/> ("Mexican-American children were prohibited from speaking their native language anywhere on<lb/> school grounds. Those who violated the 'no Spanish' rule were severely punished."), rev'd on other<lb/> grounds, 680 F.2d 356 (5th Cir. 1982).<lb/> </bibl>
+      <bibl><label>86</label>. See Hernandez v. New York, 500 U.S. 352, 369 (1991).<lb/> </bibl>
+      <bibl><label>87</label>. See Fullilove v. Klutznick, 448 U.S. 448,454 (1980).<lb/> </bibl>
+      <bibl><label>88</label>. See, e.g., Rachel F. Moran, Bilingual Education as a Status Conflict, 75 CALIF. L REV. 321,<lb/> 345-55 (1987) (analyzing controversy over bilingual education as representing status conflict<lb/> between Latinos and Anglos). In saying this, however, I am mindful that the discourse of<lb/> "essentialism" has many pitfalls. </bibl>
+      <bibl>See, e.g., Francisco Valdes, Foreword: Under Construction: LatCrit<lb/> Consciousness, Community, and Theory, 85 CALIF. L. REV. 1087, 1106-08 (1997), 10 LA RAZA LJ.<lb/> 1, 20-22 (1997); </bibl>
+      <bibl>see generally Angela P. Harris, Race and Essentialism in Feminist Legal Theory, 42<lb/> STAN. L. REV. 581 (1990) (criticizing essentialism for silencing important voices, including those of<lb/> Black women).<lb/> </bibl>
+      <bibl><label>89</label>. See SANDRA CISNEROS, WOMAN HOLLERING CREEK 146, 153 (1991) (describing Flavio<lb/> Mungufa Galindo: "When Flavio accidentally hammered his thumb, he never yelled 'iOuch!' he said<lb/> 'iAay!' The true test of a native Spanish speaker.").<lb/> </bibl>
+      <bibl><label>90</label>. See OcrAvo PAZ, THE LABYRINTH OF SOLITUDE 18 (Lysander Kemp trans., Grove Press<lb/> ed. 1985) (describing reaction of author's "Mexican friend" who, upon visiting Berkeley, California,<lb/> agreed that the town was "lovely" but that she "didn't belong" there because "[e]ven the birds speak<lb/> English").<lb/> </bibl>
+      <bibl><label>91</label>. See EARL SHoRRIs, LATINOs: A BIOGRAPHY OF THE PEOPLE 3 (1992) (describing the<lb/> demise of Jewish immigrant Bienvenida Peti6n, who dies "not of illness but of English" when she is<lb/> confined to a nursing home where nobody else speaks Spanish).<lb/> </bibl>
+      
+      <bibl><label>92</label>. See James Harvey Domengeaux, Comment, Native-Born Acadians and the Equality Ideal,<lb/> 46 LA. L REV. 1151, 1167 (1986) ("Language is the lifeblood of every ethnic group. To<lb/> economically and psychologically penalize a person for practicing his native tongue is to strike at the<lb/> core of ethnicity.").<lb/> </bibl>
+      <bibl><label>93</label>. Antoinette Sedillo Lopez, Introduction to LATINO LANGUAGE AND EDUCATION:<lb/> COMMUNICATION AND THE DREAM DEFERRED ix (Antoinette Sedillo Lopez ed., 1995).<lb/> </bibl>
+      <bibl><label>94</label>. Garcfa v. Spun Steak Co., 13 F.3d 296, 298 (9th Cir. 1993) (Reinhardt, J., dissenting).<lb/> </bibl>
+      <bibl><label>95</label>. Garcfa v. Gloor, 618 F.2d 264,269 (5th Cir. 1980).<lb/> </bibl>
+      <bibl><label>96</label>. See id.<lb/> </bibl>
+      
+      <bibl><label>97</label>. Id. at 269-70 (emphases added).<lb/> </bibl>
+      <bibl><label>98</label>. This value is also reflected in federal laws forbidding discrimination based on an<lb/> individual's disability. See Americans with Disabilities Act of 1990, 42 U.S.C. § § 12101-12213<lb/> (1994).<lb/> </bibl>
+      <bibl><label>99</label>. See Garcfa v. Gloor, 618 F.2d at 269 ("Equal employment opportunity may be secured only<lb/> when employers are barred from discriminating against employees on the basis of immutable<lb/> characteristics, such as race and national origin ... ") (emphasis omitted) (quoting Willingham v.<lb/> Macon Tel. Publ'g Co., 507 F.2d 1084, 1091 (5th Cir. 1975)).<lb/> </bibl>
+      <bibl><label>100</label>.<lb/> To a person who speaks only one tongue or to a person who has difficulty using another<lb/> language than the one spoken in his home, language might well be an immutable<lb/> characteristic like skin color, sex or place of birth. However, the language a person who is<lb/> multi-lingual elects to speak at a particular time is by definition a matter of choice. No<lb/> claim is made that Garcfa and the other employees engaged in sales were unable to speak<lb/> English. Indeed, it is conceded that all could do so and that this ability was an occupational<lb/> qualification because of the requirement that they wait on customers who spoke only<lb/> English or who used that language by choice.<lb/> Id. at 270.<lb/> </bibl>
+      
+      <bibl><label>101</label>. See ADOLPH M. KOVEN &amp; SUSAN L. SMITH, JUST CAUSE: THE SEVEN TESTS 245 (Donald<lb/> Farwell ed., rev. ed. 1992) (noting that insubordination is usually considered just cause supporting<lb/> termination).<lb/> </bibl>
+      <bibl><label>102</label>. Garcfa v. Gloor, 618 F.2d 264, 271 (5th Cir. 1980).<lb/> </bibl>
+      <bibl><label>103</label>. Id. at 268<lb/> </bibl>
+      <bibl><label>104</label>. Jurado v. Eleven-Fifty Corp., 813 F.2d 1406, 1411 (9th Cir. 1987).<lb/> </bibl>
+      <bibl><label>105</label>. Dimaranan v. Pomona Valley Hosp. Med. Ctr., 775 F. Supp. 338, 344 (C.D. Cal. 1991).<lb/> </bibl>
+      <bibl><label>106</label>. See Garcta v. Gloor, 618 F.2d at 269 (asserting that, "[s]ave for religion," Title VII bans<lb/> discrimination based on immutable characteristics or the exercise of fundamental rights).<lb/> </bibl>
+      <bibl><label>107</label>.<lb/> We need not here explore the extent to which the EEO Act forbids discrimination based on<lb/> characteristics that are not immutable. For the purpose of this opinion, we accept the thesis<lb/> that there may be a disparate impact based on some mutable conditions, such as where an<lb/> employee lives. Religion is, of course, a forbidden criterion, even though a matter of<lb/> individual choice.<lb/> Id. at 270 n.6.<lb/> </bibl>
+      <bibl><label>108</label>. An increasingly dubious assumption, especially in light of the literature making the<lb/> persuasive case that so much of one's ethnic, racial, and even sexual identity is a matter of personal<lb/> choice as well as social construction. See works cited infra notes 112-114.<lb/> </bibl>
+      <bibl><label>109</label>. See discussion infra Part III (discussing legal indeterminacy under Title VII).<lb/> </bibl>
+      
+      <bibl><label>110</label>. See, e.g., HANEY L6PEz, supra note 39, at 79-80, 102-07; MARY C. WATERS, ETHNIC<lb/> OrIoTNS: CHOOSING IDENTITIES 166 (1990); </bibl>
+      <bibl>Ian F. Haney L6pez, The Social Construction of Race:<lb/> Some Observations on Illusion, Fabrication, and Choice, 29 HARV. C.R.-C.L. L REV. 1, 47 (1994).<lb/> </bibl>
+      <bibl><label>111</label>. See, e.g., Kenneth L. Karst, Myths of Identity: Individual and Group Portraits of Race and<lb/> Sexual Orientation, 43 UCLA L REV. 263, 283-84 (1995) (discussing how peoples are assigned to<lb/> "Yes or No" categories to identify labels, including homosexual or heterosexual). </bibl>
+      <bibl>For an interesting<lb/> discussion of the latter, see generally Francisco Valdes, Queers, Sissies, Dykes, and Tomboys:<lb/> Deconstructing the Conflation of "Sex," "Gender," and "Sexual Orientation" in Euro-American Law<lb/> and Society, 83 CALIF. L REV. 1 (1995).<lb/> </bibl>
+      <bibl><label>112</label>. See Kevin R. Johnson, Racial Restrictions on Naturalization: The Recurring Intersection of<lb/> Race and Gender in Immigration and Citizenship Law, 11 BERKELEY WOMEN'S L.J, 142, 151-52<lb/> (1996) (discussing racial hierarchies and multiracial issues among Latinos); </bibl>
+      <bibl>Kevin R. Johnson,<lb/> "Melting Pot" or "Ring of Fire"?: Assimilation and the Mexican-American Experience, 85 CALIF. L<lb/> REV. 1259, 1262-63 (1997), 10 LA RAZA LJ. 173, 176-77 (1997) (relating mixed Anglo and<lb/> Mexican-American heritage of author and his family to same among greater Latino population).<lb/> </bibl>
+      <bibl><label>113</label>. See Oquendo, supra note 3, at 95 (recalling author's reaction to the query on the Scholastic<lb/> Aptitude Test ("SAT') that he identify his heritage by checking a single appropriate box).<lb/> </bibl>
+      <bibl><label>114</label>. See Ramirez, supra note 39, at 964-69 (discussing how commonly the heritage of Latinos<lb/> and other minorities is found to be multiracial).<lb/> </bibl>
+      <bibl><label>115</label>. Juan Perea has gone a step further by making the persuasive case, supported by linguists'<lb/> research, that an adult's primary language ability is practically immutable. See Perea, supra note 36,<lb/> at 279-87.<lb/> </bibl>
+      
+      <bibl><label>116</label>. PAZ, supra note 90, at 18.<lb/> </bibl>
+      <bibl><label>117</label>. ALVAREZ, supra note 1, at 88-89.<lb/> </bibl>
+      <bibl><label>118</label>. Id. at 89.<lb/> </bibl>
+      <bibl><label>119</label>. Id.<lb/> </bibl>
+      <bibl><label>120</label>.<lb/> For the hundredth time, I cursed my immigrant origins. If only I too had been born in<lb/> Connecticut or Virginia, I too would understand the jokes everyone was making on the last<lb/> two digits of the year, 1969; I too would be having sex and smoking dope; I too would have<lb/> suntanned parents who took me skiing in Colorado over Christmas break, and I would say<lb/> things like "no shit," without feeling like I was imitating someone else.<lb/> Id. at 94-95.<lb/> </bibl>
+      <bibl><label>121</label>. See id. at 72.<lb/> </bibl>
+      
+      <bibl><label>122</label>. Id. at 170<lb/> </bibl>
+      <bibl><label>123</label>. See, e.g., Johnson, supra note 38, at 12-13 ("The predominance of seeing race issues as<lb/> black/white conflict contributed to the call for the first annual Lat/Crit conference, where a group of<lb/> Latino/as, as well as other minorities and kindred spirits thinking critically about issues of race, came<lb/> together to explore changing the tenor of the dialogue.").<lb/> </bibl>
+      <bibl><label>124</label>. See, e.g., Perea, supra note 41, at 970 ("When I travel, I spend a lot of time in bookstores<lb/> searching for books on Latino life and history. It is hard to find such books.").<lb/> </bibl>
+      
+      <bibl><label>125</label>. See, e.g., Moran, supra note 16, at 10 (Although the Black/White race paradigm "has<lb/> elevated race and ethnicity to a position of central importance in defining equality of<lb/> opportunity... race and ethnicity have proven to be somewhat artificial organizing principles for<lb/> Latinos because they have different racial origins and come from a range of countries."); Ramirez,<lb/> supra note 39, at 958 n.5 ("When courts and legislatures first created race-conscious remedies in the<lb/> 1960s, the United States was seen as a black and white society.... [B]lacks were, for all practical<lb/> purposes, the only racial minority group of significant size.").<lb/> </bibl>
+      <bibl><label>126</label>. See, e.g., GRISWOLD DEL CASTILLO, supra note 51, at 113 (discussing an influential college<lb/> textbook that emphasized political and military aspects of the Mexican-American War and Treaty of<lb/> Guadalupe Hidalgo, but ignored their effects on "the 100,000 Mexicans citizens annexed in the<lb/> bargain" who "remained invisible in this national history.").<lb/> </bibl>
+      <bibl><label>127</label>. See, e.g., Johnson, supra note 38, at 9 ("Los Angeles' [Eastside], the area east of<lb/> downtown-from East Los Angeles to Montebello to the San Gabriel Valley-where a great many<lb/> Latinos live, simply does not exist in the eyes of the regional newspaper of record, the Los Angeles<lb/> Times.").<lb/> </bibl>
+      <bibl><label>128</label>. See Kevin R. Johnson, Civil Rights and Immigration: Challenges for the Latino Community in<lb/> the Twenty-first Century, 8 LA RAZA L.J. 42, 64 (1995) ("[L]et us return briefly to the disturbances in<lb/> South Central Los Angeles in the spring 1992. In the reconstruction process, Latino leaders<lb/> complained that government ignored the impact of the violence on the Latino community.").<lb/> </bibl>
+      <bibl><label>129</label>. See, e.g., Johnson, supra note 38, at 9 ("When East Lost Angeles is mentioned in the news,<lb/> it generally is a story about crime, a shooting, robbery, gangs, and the like."); see also Johnson, supra<lb/> note 41, at 1144-47.<lb/> </bibl>
+      <bibl><label>130</label>. See Johnson, supra note 41, at 1139.<lb/> </bibl>
+      <bibl><label>131</label>. See Perea, supra note 41, at 966.<lb/> </bibl>
+      <bibl><label>132</label>. See id.<lb/> </bibl>
+      <bibl><label>133</label>. See Johnson, supra note 38, at 13 ("The long history of subordination of Asian Americans,<lb/> Mexican Americans, Native Americans, and other groups in the United States demonstrates the<lb/> unfortunate richness of subordination American style."); </bibl>
+      <bibl>see generally RONALD TAKAKI, A<lb/> DIFFERENT MIRROR: A HISTORY OF MULTICULTURAL AMERICA (1993).<lb/> </bibl>
+      
+      <bibl><label>134</label>. See, e.g., Richard Delgado, Rodrigo's Fourteenth Chronicle: American Apocalypse, 32<lb/> Harv. C.R.-C.L. L. Rev. 275, 296 (1997) (discussing pressure on Latinos to assimilate); </bibl>
+      <bibl>Johnson, supra<lb/> note 39, at 79 (collecting statements about why Latinos should give up Spanish and adopt English).<lb/> </bibl>
+      <bibl><label>135</label>. See, e.g., ARTHUR M. SCHLESINGER, JR., THE DISUNITING OF AMERICA 107-10 (1992)<lb/> (criticizing bilingual education spurred by a "flood of immigration from Spanish-speaking<lb/> countries"); </bibl>
+      <bibl>see also PETER BRIMELOW, ALIEN NATION: COMMON SENSE ABOUT AMERICA'S<lb/> IMMIGRATION DISASTER 272 (1995) (identifying "bright spots" in Hispanics' chances for<lb/> assimilation).<lb/> </bibl>
+      <bibl><label>136</label>. See, e.g., George A. Martinez, Latinos, Assimilation and the Law: A Philosophical<lb/> Perspective 19 UCLA CHICANO-LATINO L. REV. (forthcoming 1998) (paper prepared for Yale Law<lb/> School's 10th Anniversary Critical Race Theory Conference); </bibl>
+      <bibl>see also Sylvia Lazos Vargas, Coming<lb/> to Terms with Diversity: A Trans-disciplinary Critique of Homogeneity "as Cultural Ideology 72 TUL. L<lb/> R. (forthcoming 1998) (criticizing law and legal institutions for elevating homogeneity over<lb/> diversity).<lb/> </bibl>
+      
+      <bibl type="footnote"><label>137</label>. "Where's the Spanish?"<lb/> </bibl>
+      <bibl type="footnote"><label>138</label>. These ten cases actually produced 16 published opinions, of which only Justice Kennedy's<lb/> opinion for the Supreme Court in Hernandez contains even a word of the offending language.<lb/> </bibl>
+      
+      <bibl><label>139</label>. See Gutierrez v. Municipal Court, 838 F.2d 1031 (9th Cir. 1988); </bibl>
+      <bibl>Flores v. Hartford Police<lb/> Dep't, 25 Fair Empl. Prac. Cas. (BNA) 180 (D. Conn. 1981); </bibl>
+      <bibl>Saucedo v. Brothers Well Serv., Inc.,<lb/> 464 F. Supp. 919 (S.D. Tex. 1979); </bibl>
+      <bibl>see also Hernandez v. Region Nine Housing Corp., 670 A.2d 95<lb/> (App. Div.), rev'd, 684 A.2d 1385 (1996) (allowing challenge to plaintiff's termination for speaking<lb/> Spanish in the apartment lobby where he worked despite EEOC's having issued adverse<lb/> administrative determination).<lb/> </bibl>
+      
+      <bibl><label>140</label>. See Garcfa v. Spun Steak Co., 998 F.2d 1480 (9th Cir. 1993); </bibl>
+      <bibl>Garcfa v. Gloor, 609 F.2d 156<lb/> (5th Cir. 1980); </bibl>
+      <bibl>Dimaranan v. Pomona Valley Hosp. Med. Ctr., 775 F. Supp. 338 (C.D. Cal. 1991);<lb/> </bibl>
+      <bibl>Jurado v. Eleven-Fifty Corp., 630 F. Supp. 569 (C.D. Cal. 1986), aft'd, 813 F.2d 1406 (9th Cir. 1987);<lb/> </bibl>
+      <bibl>see also Long v. First Union Corp. of Va., No. 95-1986, 1996 U.S. App. LEXIS 12431 (4th Cir. May<lb/> 29, 1996) (rejecting challenge to alleged discriminatory application of bank's English-only rule); </bibl>
+      <bibl>De<lb/> Ia Cruz v. New York City Human Resources Admin. DSS, 884 F. Supp. 112 (S.D.N.Y. 1995)<lb/> (rejecting challenge to plaintiff's transfer to another department despite the charge that a supervisor<lb/> had told plaintiff to "shut up" when she heard him speaking Spanish), </bibl>
+      <bibl>aft'd, 82 F.3d 16 (2d Cir. 1996).<lb/> </bibl>
+      
+      <bibl><label>141</label>. Compare Yu Cong Eng v. Trinidad, 271 U.S. 500 (1926) (sustaining free expression<lb/> challenge to Philippines Island law outlawing the keeping of business records in any language except<lb/> English, Spanish, or a Filipino dialect), </bibl>
+      <bibl>Meyer v. Nebraska, 262 U.S. 390 (1923) (same), Farrington v.<lb/> Tokushige, 11 F.2d 710 (9th Cir. 1926), aff'd, 273 U.S. 284 (1927) (sustaining free expression<lb/> challenge to state law strictly regulating Japanese language schools), </bibl>
+      <bibl>Hernandez v. Erlenbusch, 368<lb/> F. Supp. 752 (D. Or. 1993) (sustaining 42 U.S.C. § 1981 challenge to English-only rule in public<lb/> tavern), </bibl>
+      <bibl>Yniguez v. Mofford, 730 F. Supp. 309 (D. Ariz. 1990), aff'd sub nom. Yniguez v. Arizonans<lb/> for Official English, </bibl>
+      <bibl>42 F.3d 1217 (9th Cir. 1994), reh'g granted, 53 F.3d 1084, aff'd en banc, 69 F.3d<lb/> 920 (9th Cir. 1995), vacated as moot, </bibl>
+      <bibl>117 S. Ct. 1055 (1997) (sustaining First Amendment challenge to<lb/> English-only rule for state government officials and employees), </bibl>
+      <bibl>Asian Am. Bus. Group v. City of<lb/> Pomona, 716 F. Supp. 1328 (C.D. Cal. 1989) (enjoining enforcement of municipal ordinance requiring<lb/> business sign with foreign alphabetical letters to devote at least 50% of sign space to English), and<lb/> </bibl>
+      <bibl>Bartels v. Iowa, 132 N.E. 20 (Ohio 1921), rev'd, 262 U.S. 404 (1923) (sustaining free expression<lb/> challenge to statute forbidding teaching of German and other non-English languages to school<lb/> children), </bibl>
+      <bibl>with Vazquez v. McAllen Bag &amp; Supply Co., 660 F.2d 686 (5th Cir. Unit A 1981) (rejecting<lb/> 42 U.S.C. § 1981 challenge to English-only rule for hiring truck drivers), and </bibl>
+      <bibl>Hemandez v. State, 528<lb/> N.Y.S.2d 625 (1986) (rejecting equal protection challenge to listen-to-English-tmnslation-only rule<lb/> for bilingual Latinos called to jury duty in criminal cases in which official interpreter relates<lb/> testimony of Spanish-speaking witnesses), af'd, </bibl>
+      <bibl>75 N.Y.2d 350, 552 N.E.2d 621 (1990), affd sub<lb/> nom. </bibl>
+      <bibl>Hernandez v. New York, 500 U.S. 352, 369 (1991). </bibl>
+      <bibl>Although in Hernandez Justice Kennedy<lb/> omitted the Spanish words or phrases that might have been at issue in that case, he did, in a footnote,<lb/> report the prosecutor's citation of United States v. Perez, 658 F.2d 654 (9th Cir. 1981), to illustrate<lb/> "the sort of problems that may arise where a juror fails to accept the official translation of foreign-<lb/>language testimony":<lb/> DOROTHY KIM (JUROR NO. 8): Your honor, is it proper to ask the interpreter a<lb/> question? I'm uncertain about the word La Vado [sic]. You say that is a bar.<lb/> THE COURT: The Court cannot permit jurors to ask questions directly. If you want to<lb/> phrase your question to me-<lb/>DOROTHY KIM: I understood it to be a restroom. I could better believe that they would<lb/> meet in a restroom rather than a public bar if he is undercover.<lb/> THE COURT: These are matters for you to consider. If you have any misunderstanding of<lb/> what the witness testified to, tell the Court now what you didn't understand and we'll place<lb/> the-<lb/>DOROTHY KIM: I understand the word La Vado [sic]-I thought it meant restroom. She<lb/> translates it as bar.<lb/> MS. IANZITI: In the first place, jurors are not to listen to the Spanish but to the English. I<lb/> am a certified court interpreter.<lb/> DOROTHY KIM: You're an idiot.<lb/> Hernandez, 500 U.S. at 360-61 n.3 (quoting Perez, 658 F.2d at 663). </bibl>
+      <bibl>Upon further questioning, Justice<lb/> Kennedy reported, "the witness indicated that none of the conversations in issue occurred in the<lb/> restroom. The juror later explained that she had said 'it's an idiom' rather than 'you're an idiot,' but<lb/> she was nevertheless dismissed from the jury." Id. at 361 (quoting Perez, 658 F.2d at 663) (citation<lb/> omitted).<lb/> </bibl>
+      
+      <bibl><label>142</label>. See supra Part II.A.<lb/> </bibl>
+      <bibl><label>143</label>. Garcia v. Spun Steak, 998 F.2d at 1483.<lb/> </bibl>
+      <bibl><label>144</label>. Of course, an employer should take steps to combat such hostile conduct even if the<lb/> harassment and insults are made in a language the victims can understand. Such conduct often takes<lb/> the form of racial or ethnic slurs. See, e.g., Richard Delgado, Words That Wound: A Tort Action for<lb/> Racial Insults, Epithets, and Name Calling, 17 HARV. C.R.-C.L. L REV. 133, 146 (1982) (contending<lb/> racial insults cause psychological harm because they evoke and intensify past "stigmatization,<lb/> labeling, and disrespectful treatment").<lb/> </bibl>
+      <bibl><label>145</label>. See Garcia v. Spun Steak, 998 F.2d at 1487.<lb/> </bibl>
+      <bibl><label>146</label>. See id.<lb/> </bibl>
+      
+      <bibl><label>147</label>. In fact, Judge O'Scannlain's point is irrelevant. Title VII clearly outlaws discrimination<lb/> against any individual "with respect to ... privileges of employment" based on national origin. 42<lb/> U.S.C § 2000e-2(a) (1) (1994) (emphasis added).<lb/> </bibl>
+      <bibl><label>148</label>. See De La Cruz v. New York City Human Resources Admin. DSS, 82 F.3d 16, 19 (2d Cir.<lb/> 1996).<lb/> </bibl>
+      <bibl><label>149</label>. Jurado v. Eleven-Fifty Corp., 813 F.2d 1406, 1408, 1411 (9th Cir. 1987).<lb/> </bibl>
+      <bibl><label>150</label>. Saucedo v. Brothers Well Serv., Inc., 464 F. Supp. 919, 921 (S.D. Tex. 1979).<lb/> </bibl>
+      <bibl><label>151</label>. Id. The words were probably, "IDonde va?" ("Where do you want it?").<lb/> </bibl>
+      <bibl><label>152</label>. Id. at 922.<lb/> </bibl>
+      <bibl><label>153</label>. Garcfa v. Spun Steak Co., 998 F.2d 1480, 1487 (9th Cir. 1993).<lb/> </bibl>
+      <bibl><label>154</label>. Id. (emphasis added).<lb/> </bibl>
+      
+      <bibl><label>155</label>. See Chaplinsky v. New Hampshire, 315 U.S. 568, 572 (1942). </bibl>
+      <bibl>But see Cohen v. California,<lb/> 403 U.S. 15, 16 (1971) (reversing conviction under California "offensive conduct" law for wearing<lb/> jacket emblazoned with inscription "Fuck the Draft"); Yniguez v. Arizonans for Official English, 69<lb/> F.3d 920, 935 (9th Cir. 1995) (en banc) ("Under Article XXVIII, of course, the state [of Arizona] is<lb/> not singling out one word for repression, but rather entire vocabularies.").<lb/> </bibl>
+      <bibl><label>156</label>. See Yniguez, 69 F.3d at 935 ("Mhe languages of Cervantes, Proust, Tolstoy, and Lao-Tze,<lb/> among others, can hardly be described as 'scurrilous."'). As someone who specializes in labor and<lb/> employment issues, I find the solution to the alleged problem of bilingual employees misbehaving in<lb/> their native tongues to be quite simple: hire bilingual supervisors. This seems to me to be not only<lb/> more desirable than banning non-English languages but also necessary to manage the workforce.<lb/> </bibl>
+      <bibl><label>157</label>.<lb/> JOHN 0. WEST, MEXICAN AMERICAN FOLKLORE: LEGENDS, SONGS, FESTIVALS,<lb/> PROVERBS, CRAFTS, TALES OF SAINTS, OF REVOLUTIONARIES, AND MORE 105 (1988) (emphasis<lb/> added).<lb/> </bibl>
+      
+      <bibl><label>158</label>. Long v. First Union Corp. of Va., 1996 U.S. App. LEXIS 12431, at *3 n.5 (4th Cir. May 29,<lb/> 1996). The manager also called one of the plaintiffs, who refused to acknowledge the memo by<lb/> signing it, a "troublemaker." Id. at *3.<lb/> </bibl>
+      <bibl><label>159</label>. Dimaranan v. Pomona Valley Hosp. Med. Ctr., 775 F. Supp. 338, 341 (C.D. Cal. 1991).<lb/> </bibl>
+      <bibl><label>160</label>. See Yniguez v. Arizonans for Official English, 69 F.3d 920, 936, 943 (9th Cir. 1995) (en<lb/> banc), vacated as moot sub nom., </bibl>
+      <bibl>Arizonans for Official English v. Arizona, 117 S. Ct. 1055 (1997).<lb/> </bibl>
+      <bibl><label>161</label>. See, e.g., Harris v. Forklift Sys., Inc., 510 U.S. 17, 19 (1994) (upholding hostile work<lb/> environment claim of female plaintiff whose employer told her, "You're just a dumb woman, what do<lb/> you know" and "Let's go to the Holiday Inn to negotiate [your] raise."). </bibl>
+      <bibl>For a more recent example,<lb/> see Delph v. Dr. Pepper Bottling Co., No. 1:94-CV-71 (E.D. Mo. Sept. 19, 1996), reported in 1996<lb/> Daily Lab. Rep. (BNA) No. 185, at p. D-12 (Sept. 24, 1996) (awarding Black plaintiff, whose<lb/> supervisor frequently called him "nigger," damages of $225,000 in hostile racial working<lb/> environment case). </bibl>
+      <bibl>Even Judge Reinhardt, whose authorship of the majority opinions in Gutierrez and<lb/> Yniguez and whose dissent from denial of rehearing and suggestion for en banc in Garcia v. Spun<lb/> Steak Co. stand out as especially sensitive to Latino language issues, failed to report what Spanish<lb/> words and phrases offended. But making an analogy to the speaker's protected use of a well-known<lb/> but controversial idiom, he did not hesitate to defend the bilingual plaintiff's choice of the Spanish<lb/> language to communicate with bilingual members of the public:<lb/> The Supreme Court recognized the First Amendment status of choice of language in<lb/> somewhat different circumstances when it ratified a speaker's freedom to say "fuck the<lb/> draft" rather than "I strongly oppose the draft." Like the proponents of Article XXVIII, the<lb/> state in Cohen had described Cohen's choice of language as conduct equivalent to burning<lb/> a draft card [which is prohibited as unprotected conduct rather than free speech]. The<lb/> Court unequivocally rejected the comparison, stating that Cohen's conviction rested "solely<lb/> upon speech."<lb/> Yniguez, 69 F.3d at 935 (Reinhardt, J.) (citations ommitted).<lb/> </bibl>
+      
+      <bibl><label>162</label>. Perea, supra note 41, at 965. Conversely, Professor Perea has speculated, it is because<lb/> Spanish also frightens many Latinos, "for it proclaims their identity as Latinos, for all to hear." Id.<lb/> The price for becoming so identified may include the loss of a job, scapegoating, or simply invisibility<lb/> as an outsider-a price that, for some Latinos, may be simply too high to pay. See id.<lb/> </bibl>
+      
+      <bibl type="footnote"><label>163</label>. Of course, I must be among the first to concede that having a traditional Spanish surname is<lb/> not the definitive marker of a Latino; in my own case, I have my father's Anglo surname. Indeed, in<lb/> my own extended Mexican-American family, many surnames-such as Adam, Carr, and Mallett, to<lb/> mention but a few-would seem to belie our family's heritage just as others-such as Ruiz, Nevarez,<lb/> and Zamora-would seem to confirm it.<lb/> </bibl>
+      
+      <bibl><label>164</label>. See Garcfa v. Gloor, 618 F.2d 264, 266 (5th Cir. 1980); </bibl>
+      <bibl>see also, e.g., Yniguez, 69 F.3d at<lb/> 924 (involving plaintiff Maria-Kelley Yniguez, a medical malpractice claims administrator who, prior<lb/> to the enactment of Arizona's English-only law, communicated in Spanish with monolingual Spanish-<lb/>speaking claimants and in a combination of Spanish and English with bilingual claimants); </bibl>
+      <bibl>Gutierrez<lb/> v. Municipal Court, 838 F.2d 1031, 1036 (1988) (in addition to her other duties, plaintiff Alva<lb/> Gutierrez, a bilingual deputy court clerk with the Los Angeles Municipal Court, translated for the<lb/> non-English-speaking public).<lb/> </bibl>
+      
+      <bibl><label>165</label>. See Saucedo v. Brothers Well Serv., Inc., 464 F. Supp. 919, 920 (S.D. Tex. 1979)<lb/> (identifying one of owners of employer as Jarrel Nohavistza); </bibl>
+      <bibl>cf. Odima v. Westin Tucson Hotel, 53<lb/> F.3d 1484 (9th Cir. 1995) (identifying laundry room supervisor of Nigerian-born plaintiff, who<lb/> brought accent discrimination claim against hotel, as Larry Garcfa).<lb/> </bibl>
+      <bibl><label>166</label>. A Spaniard born in the New World. See, e.g., JUAN G6mEz-QuI&amp;ONES, MEXICAN-<lb/>AMERICAN LABOR, 1790-1990 at 19 (1994); </bibl>
+      <bibl>RAM6N EDUARDO Ruiz, TRIUMPHS AND TRAGEDY: A<lb/> HISToRY OF THE MEXICAN PEOPLE 54 (1992).<lb/> </bibl>
+      <bibl><label>167</label>. According to historian Juan G6mez-Quifiones:<lb/> The group consciousness and identity of this population [Mexicans) developed in a manner<lb/> consistent with the fact that they were neither Indian nor Spaniard. Regardless of the<lb/> attitudes of the criollos (American-born Spaniards), the mestizos' consciousness and<lb/> numbers were to be important in the future. Mestizaje mitigated distinct ethnic divisions.<lb/> Furthermore, although criollo, mestizo, negro, and indio all held prejudices against each<lb/> other, they all suffered prejudice from a common source-the Spaniards-for the common<lb/> reason of colonization.<lb/> G6MEz-QuIF4oNES, supra note 166, at 19.<lb/> </bibl>
+      <bibl><label>168</label>. See id. at 39, 45. Ken Bums' recent six-part documentary for public television about the<lb/> settlement of the American West illustrated the extent to which Mexican descendants of the<lb/> Spaniards and others who first settled the California, New Mexico, and Texas territories were treated<lb/> as "foreigners" and displaced from their centuries-old homelands by American Anglos in the mid-to<lb/> late-nineteenth century. The West (PBS broadcasts Sept. 15-18 &amp; 23-24, 1996).<lb/> </bibl>
+      <bibl><label>169</label>. G6MEZ-QUIRONES, supra note 166, at 3.<lb/> </bibl>
+      
+      <bibl type="footnote"><label>170</label>. "The Boss." Even my mother, an easygoing Mexican-American woman who prides herself<lb/> on treating employees with respect and dignity, says the Latino workers she has managed in various<lb/> distribution warehouses tend to refer to her as La Patrofia. Conversation with Sylvia Ruiz Cameron<lb/> (July, 1991).<lb/> </bibl>
+     
+      <bibl><label>171</label>.<lb/> A chapter of one book, entitled "The Anglo Perception of the Mexican Worker," contains<lb/> quotation after quotation from employers who alternately praise and scorn Mexicans and Mexican<lb/> Americans for their willingness to work under difficult conditions. See MARK REISLER, By THE<lb/> SWEAT OF THEIR BROW: MEXICAN IMMIGRANT LABOR IN THE UNITED STATES, 1900-1940 at 127-<lb/>50 (1976).<lb/> </bibl>
+      <bibl><label>172</label>. G6MEZ-QuIRONeS, supra note 166, at 17 (quoting Walter Colton).<lb/> </bibl>
+      <bibl><label>173</label>. Id. ht 3 (quoting unidentified grower).<lb/> </bibl>
+      <bibl><label>174</label>. REISLER, supra note 171, at 132 (citations omitted).<lb/> </bibl>
+      <bibl><label>175</label>. PAZ, supra note 90, at 70.<lb/> </bibl>
+      <bibl><label>176</label>. See id. at 71.<lb/> </bibl>
+      <bibl><label>177</label>. Id. at 70. </bibl>
+      <bibl>For a feminist perspective on the wearing of masks by Latinas, see Margaret E.<lb/> Montoya, Mascaras, Trenzas, y Greflas: Un/Masking the Self While Un/Braiding Latina Stories and<lb/> Legal Discourse, 17 HARV. WOMEN'S L.J. 185, 193 (1994).<lb/> </bibl>
+      
+      <bibl><label>178</label>. Saucedo v. Brothers Well Serv., Inc., 464 F. Supp. 919, 922 (S.D. Tex. 1979). What is<lb/> remarkable about Judge Cowan's statement in Saucedo is not that he thought it probative to describe<lb/> Perez as "fairly well educated" but that he thought it necessary to say Perez was a "fairly well-<lb/>educated Mexican-American"-suggesting there was something unusual about discovering a Chicano<lb/> who actually had attended a postsecondary institution other than a trade school. It is doubtful that<lb/> Judge Cowan would have bothered to describe in quite the same way an Anglo witness cast in<lb/> Perez's role (viz., "Perry is a fairly well educated Anglo").<lb/> The remark reminds me of a recent incident in my own home involving my 80-year-old<lb/> grandfather, who was born in Aguascalientes, Mexico, and entered the U.S. when he was 3. My<lb/> abuelo came to live with us during a period when his advancing age made it difficult for my<lb/> grandmother to take care of him by herself. Like most folks in my neighborhood, our family pays a<lb/> Latino man who works for himself to mow the lawn and trim the shrubs once a week. One day, an<lb/> elderly but vigorous Anglo man came to the door to promote his landscaping business. I had<lb/> answered the door when my abuelo came shuffling up behind me. The man was explaining how<lb/> thorough his work would be when my abuelo interrupted, "Will you do all the work yourself?."<lb/> "Heavens no," came the reply. "I have a couple of Mexican fellas do it." I put my arm around my<lb/> grandfather and said: "You know, we're a couple of Mexican fellas." Without batting an eye, the<lb/> man added: "They're very hard workers, the Mexican fellas, they just need some guidance. I show<lb/> them how they can make more money working for me." Now, when I help my abuelo with things like<lb/> getting in the car, he winks at me and says, "Sometimes, I just need some guidance." Our parents and<lb/> grandparents often have important stories to tell. See, e.g., Michael A. Olivas, The Chronicles, My<lb/> Grandfather's Stories, and Immigration Law: The Slave Traders Chronicles as Racial History, 34 ST.<lb/> Louis U. L.J. 425 (1990).<lb/> The employer in Saucedo did not put so fine a spin on things. Steve Perez, the protesting<lb/> employee, was beaten by Cleighton E. ("Doc") Holliday, an Anglo who "simply did not tolerate<lb/> 'Mesican' talk" at work, for daring to complain. See Saucedo, 464 F. Supp. at 921. (The decision<lb/> suggests but does not say that Holliday was a foreman.) Even though the employer's owner<lb/> witnessed the assault, Holliday was not so much as disciplined. See id. at 922. Yet John Saucedo, the<lb/> employee who violated the English-only rule by asking Perez "in two words of Spanish" where to put<lb/> a heavy part, was fired for his transgression. See id. at 921.<lb/> </bibl>
+      
+      <bibl><label>179</label>. Jurado v. Eleven-Fifty Corp., 813 F.2d 1406, 1410 (9th Cir. 1987). The employer's decision<lb/> was curious for two more reasons: first, because a prior station program director actually had<lb/> encouraged Valentine Jurado, the disc jockey, to speak some Spanish on the air in order to attract a<lb/> Hispanic audience; and second, because the station continued to permit Rick Dees, an Anglo disc<lb/> jockey, to use some Spanish on his program. Id. at 1408, 1410.<lb/> </bibl>
+      <bibl><label>180</label>. Long v. First Union Corp. of Va., No. 95-1986, 1996 U.S. App. LEXIS 12431, at *7 n.6 (4th<lb/> Cir. May 29, 1996).<lb/> </bibl>
+      
+      <bibl><label>181</label>. PAZ, supra note 90, at 44. Paz elaborated with the plot summary of a morality play<lb/> contrasting an outgoing patriarch named "Don No One" with his self-effacing son called "Nobody":<lb/> Don No One, who is Nobody's Spanish father, is able, well fed, well respected; he has<lb/> a bank account and speaks in a loud, self-assured voice. Don No One fills the world with<lb/> his empty, garrulous presence.... He either holds office or wields influence, and his<lb/> manner of not-being is aggressive and conceited. Nobody is quiet, timid and resigned. He<lb/> is also intelligent and sensitive. He always smiles. He always waits. When he wants to say<lb/> something, he meets a wall of silence; when he pleads or weeps or cries out, his gestures<lb/> and cries are lost in the emptiness created by Don No One's interminable chatter ....<lb/> It would be a mistake to believe that others prevent [Nobody] from existing. They<lb/> simply dissimulate his existence and behave as if he did not exist. They nullify him, cancel<lb/> him out, turn him into nothingness. It is futile for Nobody to talk, to publish books, to paint<lb/> pictures, to stand on his head. He is the name we always and inevitably forget, the eternal<lb/> absentee, the guest we never invite, the emptiness we can never fill.<lb/> Id. at 45.<lb/> </bibl>
+      <bibl><label>182</label>. ALVAREZ, supra note 1, at 11.<lb/> </bibl>
+      
+      <bibl><label>183</label>.<lb/> H.L.A. HART, THE CONCEPT OF LAW 132 (1961).<lb/> </bibl>
+      <bibl><label>184</label>. See, e.g., JEROME FRANK, LAW AND THE MODERN MIND 7 (1936) ("In fields other than<lb/> law there is today a willingness to accept probabilities and to forego the hope of finding the absolute<lb/> certain.... Since legal tentativeness is inevitable and often socially desirable, it should not be<lb/> considered an avoidable evil."); </bibl>
+      <bibl>KARL N. LLEWELLYN, JURISPRUDENCE: REALISM IN THEORY AND<lb/> PRACTICE 122-23 (1962) ("[W]hen the urges of justice and policy are clear enough, [judges] can<lb/> find a distinction to avoid or whittle almost any precedent.... Mhe precedents are capable of being<lb/> shaped as they are followed or applied, so as to bring judgment out on one side or the other."); Felix<lb/> S. Cohen, Transcendental Nonsense and the Functional Approach, 35 COLUM. L REv. 809, 833<lb/> (1935) ("[Ihe really creative legal thinkers of the future will not devote themselves.., to the<lb/> taxonomy of legal concepts and to the systematic explication of principles of 'justice' and 'reason,'<lb/> buttressed by 'correct' cases. Great legal thought will more and more look behind the pretty array of<lb/> 'correct' cases to the actual facts of judicial behavior."); </bibl>
+      <bibl>vRoscoe Pound, The Call for a Realist<lb/> Jurisprudence, 44 HARV. L. REV. 697, 707 (1931) ("Radical neo-realism seems to deny that there are<lb/> rules or principles or conceptions or doctrines at all, because all judicial action, or at times much<lb/> judicial action, can not be referred to them; because there is no definite determination whereby we<lb/> may be absolutely assured that judicial action would proceed on the basis of one rather than another<lb/> of two competing principles .... ").<lb/> </bibl>
+      <bibl><label>185</label>. See, e.g., RICHARD A. POSNER, THE PROBLEMS OF JURISPRUDENCE 23 (1990) ("[T]he<lb/> American legal tradition is now so rich, variegated, conflicted, and ambivalent that a strand of it can<lb/> easily be found to support either side in difficult cases.").<lb/> </bibl>
+      <bibl><label>186</label>. See, e.g., DAVID KAIRYs, THE POLITICS OF LAW: A PROGRESSIVE CRITIQUE 140, 160-61<lb/> (1982) ("Since precedents and reasoning can be distinguished, modified, or discarded, they do not<lb/> require any particular rule or result.... [T]he law merely provides a variety of bases for justifying<lb/> choices made on other grounds."); </bibl>
+      <bibl>Mark V. Tushnet, Following the Rules Laid Down: A Critique of<lb/> Interpretivism and Neutral Principles, 96 HARv. L REv. 781, 819 (1983) (arguing prior decisions<lb/> cannot restrain present decisions because "it turns out that the limits of craft are so broad that in any<lb/> interesting case any reasonably skilled lawyer can reach whatever result he or she wants.").<lb/> </bibl>
+      <bibl><label>187</label>. See Martfnez, supra note 42, at 558.<lb/> </bibl>
+      <bibl><label>188</label>. See id. at 559, 573, 584, 606, 611, 618; </bibl>
+      <bibl>see also George A. Martfnez, Some Thoughts on<lb/> Law and Interpretation, 50 SMU L. Rev. 1651, 1653-62 (1997) (discussing distinctive role of<lb/> interpretation in law from a philosophical perspective).<lb/> </bibl>
+      <bibl><label>189</label>. Id. at 583.<lb/> </bibl>
+      
+      <bibl><label>190</label>. Id. at 560.<lb/> </bibl>
+      <bibl><label>191</label>. 42 U.S.C. § 2000e-2(a) (1) (1994).<lb/> </bibl>
+      <bibl><label>192</label>. Espinoza v. Farah Mfg. Co., 414 U.S. 86, 89 (1973).<lb/> </bibl>
+      <bibl><label>193</label>. 110 CONG. REc. 2549 (1964) (remarks of Rep. Roosevelt). Tellingly, the few examples<lb/> offered by Congressman Roosevelt were of persons of European origin only.<lb/> </bibl>
+      <bibl><label>194</label>. H.R. REP. No. 88-7152, at 804 (1963) (emphasis added).<lb/> </bibl>
+      <bibl><label>195</label>. See H.R. REP. No. 88-914, at 87 (1963).<lb/> </bibl>
+      <bibl><label>196</label>. See Espinoza, 414 U.S. at 89.<lb/> </bibl>
+      
+      <bibl><label>197</label>. See supra Part I.A.<lb/> </bibl>
+      <bibl><label>198</label>. See Garcfa v. Gloor, 618 F.2d 264, 269-71 (5th Cir. 1980) (Garcia I).<lb/> </bibl>
+      <bibl><label>199</label>. Id. at 271 (emphasis added).<lb/> </bibl>
+      <bibl><label>200</label>. See Garcfa v. Spun Steak Co., 13 F.3d 296, 299 n.5 (1993) (Reinhardt, J., dissenting from<lb/> denial of rehearing en banc) ("In fact, the Guideline at issue here was enacted shortly after (the<lb/> lower court decided the case], probably in order to reserve the effect of that decision.").<lb/> </bibl>
+      <bibl><label>201</label>. 45 Fed. Reg. 85, 636 (1980) (codified at 29 C.F.R. § 1606.7 (1996)). In pertinent part, the<lb/> Guidelines provide:<lb/> (a) When applied at all times. A rule requiring employees to speak English only at all times<lb/> in the workplace is a burdensome term and condition of employment. The primary<lb/> language of an individual is often an essential national origin characteristic. Prohibiting<lb/> employees at all times, in the workplace, from speaking their primary language or the<lb/> language they speak most comfortably, disadvantages an individual's employment<lb/> opportunities on the basis of national origin. It may also create an atmosphere of inferiority,<lb/> isolation and intimidation based on national origin which could result in a discriminatory<lb/> working environment. Therefore, the Commission will presume that such a rule violates<lb/> title VII and will closely scrutinize it.<lb/> (b) When applied only at certain times. An employer may have a rule requiring that<lb/> employees speak only in English at certain times where the employer can show that the rule<lb/> is justified by business necessity.<lb/> 29 C.F.R. § 1606.7(a)-(b).<lb/> </bibl>
+      <bibl><label>202</label>. See 29 C.F.R. § 1606.7(a) n.7 (1996) (citing EEOC decisions).<lb/> </bibl>
+      <bibl><label>203</label>. See id. § 1606.7(a).<lb/> </bibl>
+      <bibl><label>204</label>. See id. § 1606.7(b). The six reasons most commonly proffered by employers to defend<lb/> English-only rules out of business necessity are (1) ensuring worker safety, (2) assuring effective<lb/> supervision, (3) increasing productivity and efficiency, (4) promoting worker harmony, (5) improving<lb/> customer relations and satisfaction, and (6) improving employees' English proficiency.<lb/> See<lb/> Jorgensen, supra note 64, at 421-27 (explaining application of same). But see Perea, supra note 36, at<lb/> 302-17 (critiquing application of same).<lb/> </bibl>
+      
+      <bibl><label>205</label>. 813 F.2d 1406 (9th Cir. 1987).<lb/> </bibl>
+      <bibl><label>206</label>. 838 F.2d 1031 (9th Cir. 1988), vacated as moot, 490 U.S. 1016 (1989).<lb/> </bibl>
+      <bibl><label>207</label>. 998 F.2d 1480 (9th Cir. 1993).<lb/> </bibl>
+      <bibl><label>208</label>. 813 F.2d at 1408.<lb/> </bibl>
+      <bibl><label>209</label>. See supra Part I.A. (discussing court's references to bilingual Jurado's "ability to conform"<lb/> to the English-only rule); see also Jurado, 813 F.2d at 1411.<lb/> </bibl>
+      <bibl><label>210</label>. Jurado, 813 F.2d at 1409.<lb/> </bibl>
+      <bibl><label>211</label>. Id.at 1410.<lb/> </bibl>
+      <bibl><label>212</label>. See id.<lb/> </bibl>
+      <bibl><label>213</label>. Id.<lb/> </bibl>
+      
+      <bibl><label>214</label>. Jurado made a strong case that the ratings defense was a smokescreen for racial animus.<lb/> For example, a consultant wrote that the station was "preoccupied with ethnicity to a frightening<lb/> degree." And the program director thought Jurado's show was "too ethnic" and claimed that the<lb/> station "did not need the Mexicans or the blacks to win in L.A." Id. at 1410.<lb/> </bibl>
+      <bibl><label>215</label>. See id. at 1411 (citing 29 C.F.R. § 1606.7).<lb/> </bibl>
+      <bibl><label>216</label>. See Gutierrez v. Municipal Court, 838 F.2d 1031, 1041 (9th Cir. 1988) (characterizing<lb/> Jurado as such).<lb/> </bibl>
+      <bibl><label>217</label>. See id. at 1036.<lb/> </bibl>
+      <bibl><label>218</label>. See id. at 1039 n.7 (Reinhardt, J.) (citing Espinoza v. Farah Mfg. Co., 414 U.S. 86, 94-95<lb/> (1973)).<lb/> </bibl>
+      <bibl><label>219</label>. Id. at 1040.<lb/> </bibl>
+      <bibl><label>220</label>. See id. at 1041.<lb/> </bibl>
+      <bibl><label>221</label>. 490U.S. 1016 (1989).<lb/> </bibl>
+      
+      <bibl><label>222</label>. Garcfa v. Spun Steak Co., 998 F.2d 1480, 1487 (9th Cir. 1993); </bibl>
+      <bibl>see also 13A CHARLES A<lb/> WRIGHT &amp; ARTHUR R. MILLER, FEDERAL PRACTICE AND PROCEDURE § 3533.10 (1984) (vacating<lb/> court of appeals judgment as moot vacates opinion's status as binding precedent but not its<lb/> persuasiveness); </bibl>
+      <bibl>accord Garcfa v. Spun Steak Co., 13 F.3d 296, 301 (9th Cir. 1993) (Reinhardt, J.,<lb/> dissenting from denial of rehearing en banc) (citing same).<lb/> </bibl>
+      <bibl><label>223</label>. See Garcia v. Spun Steak, 998 F.2d at 1487, 1489 (9th Cir. 1993) (citing Garcfa v. Gloor,<lb/> 618 F.2d 264 (5th Cir. 1980)).<lb/> </bibl>
+      <bibl><label>224</label>. See supra Part L.A-B.<lb/> </bibl>
+      <bibl><label>225</label>. Garcia v. Spun Steak, 998 F.2d at 1488.<lb/> </bibl>
+      <bibl><label>226</label>. See id. at 1487-88.<lb/> </bibl>
+      <bibl><label>227</label>. See id. at 1487 n.1 ("The Spanish-speaking employees rely on the reasoning in<lb/> Gutierrez ... which held that English-only policies adversely impact Spanish-speaking employees.<lb/> The case has no precedential authority, however, because it was vacated as moot by the Supreme<lb/> Court. We are in no way bound by its reasoning.") (citations omitted).<lb/> </bibl>
+      <bibl><label>228</label>. Id. at 1489.<lb/> </bibl>
+      <bibl><label>229</label>. Id. (quoting Espinoza v. Farah Mfg. Co., 414 U.S. 86, 94 (1973)).<lb/> </bibl>
+      <bibl><label>230</label>. See id. at 1490.<lb/> </bibl>
+      <bibl><label>231</label>. Id. at 1489.<lb/> </bibl>
+      
+      <bibl><label>232</label>. See Garcfa v. Spun Steak Co., 13 F.3d 296 (9th Cir. 1993) (Reinhardt, J., dissenting from<lb/> denial of rehearing en banc).<lb/> </bibl>
+      <bibl><label>233</label>. See id. at 299-301.<lb/> </bibl>
+      <bibl><label>234</label>. See id. at 301.<lb/> </bibl>
+      <bibl><label>235</label>. See id. (citing 13A CHARLES A. WRIGHT JR. &amp; ARTHUR R. MILLER, FEDERAL PRACTICE<lb/> AND PROCEDURE § 3533.10 (1984)).<lb/> </bibl>
+      <bibl><label>236</label>. See id. at 301 n.10. (quoting Garcia v. Gloor, 618 F.2d 264, 268 n.1 (5th Cir. 1980)) (The<lb/> EEOC "has adopted neither a regulation stating a standard for testing such language rules nor any<lb/> general policy, presumed to be derived from the statute, prohibiting them. We therefore approach<lb/> the problem on the basis of the statute itself and the case law.").<lb/> </bibl>
+      <bibl><label>237</label>. Id. at 229.<lb/> </bibl>
+      <bibl><label>238</label>. Id. at 300.<lb/> </bibl>
+      <bibl><label>239</label>. Id. at 300 &amp; n.7.<lb/> </bibl>
+      
+      <bibl><label>240</label>. See Martfnez, supra note 42, at 618.<lb/> </bibl>
+      <bibl><label>241</label>.<lb/> ALVAREZ, supra note 1, at 13.<lb/> </bibl>
+      <bibl><label>242</label>. WEs'r, supra note 157, at 92 (reprinting popular version of this tale).</bibl>
+    </listBibl>
+  </text>
+</TEI>

@@ -1,0 +1,174 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.19164__ijple.v6i1.1296">
+    <titleStmt>
+      <title level="a">The Art of Adapting Open Educational Resources for Street Law: Copyright the Card Game a Case Study</title>
+      <author>
+        <persName>
+          <forename>Jane</forename>
+          <surname>Secker</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Chris</forename>
+          <surname>Morrison</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Frances</forename>
+          <surname>Ridout</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="admin">Administrator</persName>
+        <resp>editor</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Northumbria University Library</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2022</date>
+      <idno type="DOI">10.19164/ijple.v6i1.1296</idno>
+      <ptr target="https://doi.org/10.19164/ijple.v6i1.1296"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Jane Secker, Chris Morrison, Frances Ridout. (2022). The Art of Adapting Open Educational Resources for Street Law: Copyright the Card Game a Case Study. International Journal of Public Legal Education, 6(1), 83-104. DOI: 10.19164/ijple.v6i1.1296</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">The Art of Adapting Open Educational Resources for Street Law: Copyright the Card Game a Case Study</title>
+          <author>
+            <persName>
+              <forename>Jane</forename>
+              <surname>Secker</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Chris</forename>
+              <surname>Morrison</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Frances</forename>
+              <surname>Ridout</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">International Journal of Public Legal Education</title>
+          <imprint>
+            <biblScope unit="volume">6</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page" from="83" to="104">83-104</biblScope>
+            <date when="2022">2022</date>
+            <publisher>Northumbria University Library</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.19164/ijple.v6i1.1296</idno>
+        <ptr target="https://doi.org/10.19164/ijple.v6i1.1296"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-18T09:14:44.336949Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">fd543f4</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-18T09:14:44.336949Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-19T06:56:07.269Z" status="unfinished" who="#li">
+      <note type="label">1.Mengjiao</note>
+      <desc>1.Pass</desc>
+    </change>
+    <change when="2026-03-20T06:34:12.416Z" status="draft" who="#li">
+      <desc>1.Pass</desc>
+    </change>
+    <change when="2026-03-23T13:36:00.230Z" status="draft" who="#sandfort">
+      <note type="label">v4 (sandfort)</note>
+      <desc>2.Pass</desc>
+    </change>
+    <change when="2026-03-23T13:41:23.469Z" status="checked" who="#sandfort">
+      <desc>2.Pass</desc>
+    </change>
+    <change when="2026-04-06T11:00:38.996Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-06T11:12:16.511Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>4</label> CILIP Definition of Information Literacy (2018) Available at: www.cilip.org.uk/news/421972/What-is-<lb/>information-literacy.htm &lt;accessed 13.06.2022&gt;<lb/> </bibl>
+        <bibl><label>5</label> "Creative Commons licenses give everyone from individual creators to large institutions a standardised way to<lb/> grant the public permission to use their creative work under copyright law."<lb/> www.creativecommons.org/about/cclicences/ &lt;accessed 13.06.2022&gt;.<lb/> </bibl>
+        <bibl><label>6</label> Cronin, C., 2017. Openness and praxis: Exploring the use of open educational practices in higher<lb/> education. International Review of Research in Open and Distributed Learning: IRRODL, 18(5), pp.15-34.<lb/> </bibl>
+        <bibl><label>7</label> See https://en.wikipedia.org/wiki/Budapest_Open_Access_Initiative<lb/> </bibl>
+        <bibl><label>8</label> See UNESCO page on Open Educational Resources https://www.unesco.org/en/communication-<lb/>information/open-solutions/open-educational-resources &lt;accessed 13.06.2022&gt;.<lb/> </bibl>
+        <bibl><label>9</label> Per Lord Bingham "the law must be accessible and so far as possible intelligible, clear and predictable."<lb/> Bingham, L. (2007) "THE RULE OF LAW," The Cambridge Law Journal. Cambridge University Press, 66(1),<lb/> pp. 67-85.<lb/> </bibl>
+        <bibl><label>10</label> Arthurs, S., Cooperman, M., Gallagher, J., Grealy, F., Lunney, J., Marrs, R. and Roe, R.L., 2017. From zero<lb/> to 60: Building belief, capacity and community in Street Law instructors in one weekend. Int'l J. Clinical Legal<lb/> Educ., 24, p.118.<lb/> </bibl>
+        <bibl><label>11</label> Examples include, but are not limited to, those freely available from Street Law Inc. https://store.streetlaw.org<lb/> &lt;accessed 13.06.2022&gt;,</bibl> 
+          <bibl>McQuoid-Mason, D.J., 1994. Democracy for all: education towards a democratic<lb/> culture. Juta and Company Ltd.<lb/> www.google.co.uk/books/edition/Democracy_for_All/Vgnu448i15IC?hl=en&amp;gbpv=1&amp;pg=PP1&amp;printsec=front<lb/> cover &lt;accessed 13.06.2022&gt;,</bibl> 
+          <bibl>and content in archive editions of this journal; the International Journal of Public<lb/> Legal Education.<lb/> </bibl>
+
+       <!-- This is not a reference nor a footnote-->
+    <!-- was mistakenly annotated as listbibl, updated it in the segmentation model 
+          Social justice<lb/> equity and<lb/> access to<lb/> information<lb/> • Pro-bono / free<lb/> • Empowering<lb/> communities<lb/> • Collaboration<lb/> • Democratising<lb/> • Demystifying<lb/> • Decoding the law<lb/> • Confidence accessing law<lb/> • Learner-centred knowledge<lb/> discovery<lb/> • Open Licensing<lb/> • Open access publishing<lb/> • All rights reserved vs Creative Commons<lb/> -->
+        
+        <bibl><label>12</label> Elaine Campbell (2015) A dangerous method? Defending the rise of business law clinics in the UK, The Law<lb/> Teacher, 49:2, 165-175.<lb/> </bibl>
+        <bibl><label>13</label> Hargreaves, I. (2011). 'Digital Opportunity: A Review of Intellectual Property and Growth'.<lb/> </bibl>
+        <bibl><label>14</label> Secker J and Morrison C. (2016) Copyright and E-learning: a guide for practitioners. Facet Publishing:<lb/> London. Chapter 6: Copyright education and training:<lb/> https://ukcopyrightliteracy.files.wordpress.com/2016/07/chapter-6_secker-m_copyright-e-learning-2nd-edn.pdf<lb/> &lt;accessed 13.06.2022&gt;.<lb/></bibl> <bibl><label>15</label> https://copyrightliteracy.org/resources/copyright-the-card-game/ &lt;accessed 13.06.2022&gt;.<lb/> </bibl>
+        <bibl><label>16</label> Wakaruk, A., Gareau-Brennan, C., Pietrosanu, P. (2021). Introducing the Copyright Anxiety Scale. Journal of<lb/> Copyright in Education and Librarianship, 5(1), 1-38 www.jcel-pub.org/article/view/15212 &lt;accessed<lb/> 13.06.2022&gt;.<lb/></bibl> 
+          <bibl><label>17</label> https://www.gov.uk/government/publications/online-media-literacy-strategy &lt;accessed 13.06.2022&gt;.<lb/></bibl> <bibl><label>18</label> https://www.gov.uk/government/publications/ipo-strategy-2018-to-2021 &lt;accessed 13.06.2022&gt;.<lb/> </bibl>
+        <bibl><label>19</label> Gibbs G (1988). Learning by Doing: A guide to teaching and learning methods. Further Education Unit.<lb/> Oxford Polytechnic: Oxford.<lb/> </bibl>
+        <bibl><label>20</label> The National Co-ordinating Centre for Public Engagement describe the importance of "an open, two-way<lb/> conversation" with communities (https://www.publicengagement.ac.uk/about-engagement/what-public-<lb/>engagement) &lt;accessed 13.06.2022&gt;<lb/> </bibl>
+<bibl>21 There are some excellent resources available such as 'Should it be a Crime?' and 'Who gets a Heart' in:<lb/> Arthurs, S., Cooperman, M., Gallagher, J., Grealy, F., Lunney, J., Marrs, R. and Roe, R.L., 2017. From zero to<lb/> 60: Building belief, capacity and community in Street Law instructors in one weekend. Int'l J. Clinical Legal<lb/> Educ., 24, p.118.<lb/> </bibl>
+        <bibl><label>22</label> Wallace, A., &amp; Perdue, B. (2020). Preparing Lawyers for Practice: Developing Cultural Competency,<lb/> Communication Skills, and Content Knowledge through Street Law Programs. Journal of Legal Education<lb/> (forthcoming).<lb/> </bibl>
+        <bibl><label>23</label> Thomas. L., 2018, 'It puts the law they've learnt in theory into practice', Reimagining Clinical Legal<lb/> Education. Bloomsbury Publishing, 127-154.<lb/> </bibl>
+        <bibl><label>24</label> Grimes. R, McQuoid-Mason. D, O'Brien. E, Zimmer.J., (2011) StreetLaw and Social Justice Education The<lb/> Global Clinical Movement, 2011, Edited by Bloch. F., Oxford University Press.<lb/></bibl> 
+          
+        <bibl type="footnote"><label>25</label> &lt;accessed 13.06.2022&gt;.<lb/> </bibl>
+          
+        <bibl><label>26</label> The full version of the documentary is available here: https://www.youtube.com/watch?v=HM_nWsdbNvQ<lb/> &lt;accessed 13.06.2022&gt;.<lb/></bibl> 
+          <bibl><label>27</label> https://open.ed.ac.uk/how-to-guides-old/where-to-find-oers/ &lt;accessed 13.06.2022&gt;.<lb/></bibl> 
+          <bibl><label>28</label> https://www.streetlaw.org/ &lt;accessed 13.06.2022&gt;.<lb/> </bibl>
+        <bibl><label>29</label> McQuoid-Mason, D. J. (1994). Democracy for all: education towards a democratic culture. Juta and<lb/> Company Ltd.<lb/> </bibl>
+        <bibl><label>30</label> See https://copyrightliteracy.org/resources/copyright-the-card-game/ &lt;accessed 13.06.2022&gt;.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

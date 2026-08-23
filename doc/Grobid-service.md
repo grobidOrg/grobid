@@ -1038,6 +1038,19 @@ curl --location 'http://localhost:8070/api/createTraining' \
 
 The zip file will contain the training data as described in the [general principles](training/General-principles.md) of GROBID training data.
 
+### createTrainingBlank
+
+Generate blank training data (raw features + empty TEI template) from a PDF without requiring a trained model. This is useful for creating training data from scratch.
+
+```bash
+curl --location 'http://localhost:8070/api/createTrainingBlank' \
+--form 'input=@"PATH_DOCUMENT"' \
+--form 'flavor=article/dh-law-footnotes-token' \
+--output output_name.zip
+```
+
+The `flavor` parameter is optional. When set, the generated raw feature files will use the feature extraction strategy of that flavor (e.g., token-level features for `article/dh-law-footnotes-token`).
+
 ## Parallel mode
 
 The Grobid REST API provides a very efficient way to use the library out of the box, because the service exploits multithreading.

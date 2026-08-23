@@ -101,6 +101,8 @@ public class GrobidConfig {
         public double epsilon = 0.00001;
         public int window = 20;
         public int nbMaxIterations = 2000;
+        public double l1 = 0.5;
+        public double l2 = 0.0001;
     }
 
     public static class DelftModelParameters {
