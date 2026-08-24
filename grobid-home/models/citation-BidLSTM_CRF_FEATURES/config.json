@@ -31,7 +31,7 @@
     ],
     "features_embedding_size": 4,
     "features_lstm_units": 4,
-    "max_sequence_length": 500,
+    "max_sequence_length": 3000,
     "word_embedding_size": 300,
     "num_word_lstm_units": 100,
     "case_embedding_size": 5,
