@@ -127,8 +127,9 @@ RUN mkdir -p /data \
 
 # install DeLFT (PyTorch backend) + torch.
 # Pinned to a delft commit until the next PyPI release (1.0.2) is published; this
-# one is the tip of feature/improve-pytorch-performances, carrying the PyTorch
-# performance improvements on top of the dev num_workers=0 default and logging fixes.
+# one is "chore: retrain with embeddings" (model configs re-enable glove-840B word
+# embeddings), on top of the merge of "Improve pytorch performances" (#230) and the
+# padded-token masking fixes (#231-#234).
 #
 # A commit SHA rather than a branch name, for provenance: the Dockerfile alone then
 # says which delft is in a given image, which a branch name cannot. Bump it to move.
@@ -143,7 +144,7 @@ RUN mkdir -p /data \
 # On amd64 we pull the CUDA 12.8 build via the [gpu] extra and the PyTorch index.
 # On arm64 we take the default (CPU) torch wheel from PyPI.
 # torch / transformers / pytorch-crf come in transitively; no tensorflow / tf_keras.
-ARG DELFT_REF=6ab1ef9645d882bee1b7d7505d0b89e20782dba6
+ARG DELFT_REF=a7dc7df47b19d590b2e2866e9ebdaf2ba34fa34d
 RUN if [ "$TARGETARCH" = "amd64" ]; then \
     pip3 install --no-cache-dir "delft[gpu] @ git+https://github.com/kermitt2/delft.git@${DELFT_REF}" \
       --extra-index-url https://download.pytorch.org/whl/cu128; \
@@ -178,22 +179,31 @@ RUN mkdir delft && \
 ENV PYTHONWARNINGS="ignore"
 ENV JAVA_OPTS=-Xmx4g
 
-# Deliberately NOT setting OMP_NUM_THREADS/MKL_NUM_THREADS.
+# Intra-op threads: 4, the measured plateau.
 #
-# An earlier revision pinned them to 1, on the theory that torch's pool would thrash
-# against the concurrent PDF workers. Measurement says otherwise: with ten documents in
-# flight, one thread tags 43% slower than torch's default (3.47s vs 1.99s, header model).
-# The pool is idle-blocked while the JVM workers run, so it is not competing for the
-# cores it holds. The pin also hits the PyTorch backend alone -- TensorFlow's Eigen
-# intra-op pool does not read OMP_NUM_THREADS (9.91s vs 9.89s) -- which made every
-# TF-vs-PyTorch comparison run TF on the whole machine and PyTorch on one core.
+# The history of this knob, all measured:
+#   - pinned to 1 (earliest): with ten documents in flight, one thread tags 43% slower
+#     than torch's default (3.47s vs 1.99s, header model). Too narrow.
+#   - unset (previous revision): delft's configure_threads() sizes the pool from what
+#     the container was given -- the whole cpuset. Correct for one document at a time,
+#     but under concurrent load a pool as wide as the container makes every document's
+#     threads fight every other document's. Too wide.
+#   - 4 (this revision): the 2026-08 grid5000 sweeps (cpus x concurrency x threads,
+#     10/20-core containers, 1000- and 10000-PDF corpora) put the plateau at 4 on
+#     every container width: vs 1 thread, 4 is ~35% faster at the throughput optimum
+#     (conc = cores/2); vs 8, equal wall time for ~23% more CPU burnt. delft agrees --
+#     its MIN_INTRA_OP_THREADS is 4 for the same reason.
 #
-# Sizing now lives in delft's configure_threads(), which caps the pool at whatever the
-# container was actually given -- the CFS quota from "--cpus", or the affinity mask from
-# "--cpuset-cpus". Both are invisible to torch, which counts host cores. Setting either
-# variable here would switch that off, since configure_threads() defers to an operator
-# who has already sized the pool; pass -e OMP_NUM_THREADS=N at "docker run" to override
-# per-run without a rebuild.
+# Setting the variables here (rather than calling torch.set_num_threads) is deliberate:
+# OpenMP reads them when the native libraries load, at "import torch", and
+# configure_threads() sees them and defers, so the pool is 4 however delft evolves.
+# TensorFlow images are unaffected -- Eigen's intra-op pool does not read
+# OMP_NUM_THREADS (9.91s vs 9.89s). Pass -e OMP_NUM_THREADS=N at "docker run" to
+# override per-run without a rebuild. (There is no run-time way back to
+# configure_threads() sizing: "-e OMP_NUM_THREADS=" leaves an empty variable in the
+# environment, which configure_threads() still defers to and OpenMP misparses.)
+ENV OMP_NUM_THREADS=4 \
+    MKL_NUM_THREADS=4
 
 # set python version and library paths (both arch paths included; only one will exist at runtime)
 ENV PYTHON_VERSION=3.11
