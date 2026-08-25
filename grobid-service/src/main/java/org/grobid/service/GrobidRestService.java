@@ -503,8 +503,9 @@ public class GrobidRestService implements GrobidPaths {
         }
 
         if (rootNode == null || !rootNode.isArray()) {
-            throw badTypedAreas("typedAreas must be a JSON array, received: "
-                    + abbreviate(typedAreasJson));
+            throw badTypedAreas(
+                    "typedAreas must be a JSON array, received: "
+                            + abbreviate(typedAreasJson));
         }
 
         List<String> rejections = new ArrayList<>();
@@ -515,20 +516,21 @@ public class GrobidRestService implements GrobidPaths {
                     rejections.add("[" + index + "] missing required 'type' field");
                     continue;
                 }
-                for (String field : new String[] { "page", "x", "y", "width", "height" }) {
+                for (String field : new String[]{"page", "x", "y", "width", "height"}) {
                     if (!node.has(field)) {
                         throw new IllegalArgumentException("missing required '" + field + "' field");
                     }
                 }
                 org.grobid.core.layout.AreaType areaType = org.grobid.core.layout.AreaType
                         .fromString(node.get("type").asText());
-                typedAreasList.add(new org.grobid.core.layout.TypedArea(
-                        node.get("page").asInt(),
-                        node.get("x").asDouble(),
-                        node.get("y").asDouble(),
-                        node.get("width").asDouble(),
-                        node.get("height").asDouble(),
-                        areaType));
+                typedAreasList.add(
+                        new org.grobid.core.layout.TypedArea(
+                                node.get("page").asInt(),
+                                node.get("x").asDouble(),
+                                node.get("y").asDouble(),
+                                node.get("width").asDouble(),
+                                node.get("height").asDouble(),
+                                areaType));
             } catch (Exception e) {
                 rejections.add("[" + index + "] " + e.getMessage());
             } finally {
@@ -540,16 +542,24 @@ public class GrobidRestService implements GrobidPaths {
             String detail = rejections.size() <= 5
                     ? String.join("; ", rejections)
                     : String.join("; ", rejections.subList(0, 5))
-                            + "; and " + (rejections.size() - 5) + " more";
+                            + "; and "
+                            + (rejections.size() - 5)
+                            + " more";
             LOGGER.warn("Rejected {} of {} typed areas: {}", rejections.size(), index, detail);
-            throw badTypedAreas("typedAreas: rejected " + rejections.size() + " of " + index
-                    + " entries: " + detail);
+            throw badTypedAreas(
+                    "typedAreas: rejected "
+                            + rejections.size()
+                            + " of "
+                            + index
+                            + " entries: "
+                            + detail);
         }
 
         Map<AreaType, Long> countsByType = typedAreasList.stream()
-                .collect(java.util.stream.Collectors.groupingBy(
-                        org.grobid.core.layout.TypedArea::getType,
-                        java.util.stream.Collectors.counting()));
+                .collect(
+                        java.util.stream.Collectors.groupingBy(
+                                org.grobid.core.layout.TypedArea::getType,
+                                java.util.stream.Collectors.counting()));
         LOGGER.info("Accepted all {} typed areas: {}", typedAreasList.size(), countsByType);
 
         return typedAreasList;
