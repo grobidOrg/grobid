@@ -429,20 +429,68 @@ public class FullTextParser extends AbstractParser {
                 doc.setAnnexEquations(annexEquations);
             }
 
-            // Merge typed area figures and tables back (they were overwritten by annex processing)
+            // Merge the typed-area figures and tables back in (annex processing above
+            // overwrote the lists they were parked in), routing each one to the body or the
+            // annex according to where it actually sits in the document. They were parked in
+            // the annex list purely as a holding pen -- emitting them all from <back> put 94%
+            // of the figures of a masked run into the back matter on a corpus where plain
+            // GROBID puts 0.7% there, which is wrong for every downstream consumer of the TEI.
+            double[] annexStart = annexStartPosition(doc);
             if (!typedAreaFigures.isEmpty()) {
-                if (annexFigures == null) {
-                    annexFigures = new ArrayList<>();
+                List<Figure> typedBodyFigures = new ArrayList<>();
+                List<Figure> typedAnnexFigures = new ArrayList<>();
+                for (Figure figure : typedAreaFigures) {
+                    if (startsAfter(firstBoundingBox(figure), annexStart)) {
+                        typedAnnexFigures.add(figure);
+                    } else {
+                        typedBodyFigures.add(figure);
+                    }
                 }
-                annexFigures.addAll(typedAreaFigures);
-                doc.setAnnexFigures(annexFigures);
+                if (!typedBodyFigures.isEmpty()) {
+                    // bodyFigures, not doc.getFigures(): toTEI() below is handed these locals,
+                    // so updating only the Document would silently drop them from the output.
+                    if (bodyFigures == null) {
+                        bodyFigures = new ArrayList<>();
+                    }
+                    bodyFigures.addAll(typedBodyFigures);
+                    doc.setFigures(bodyFigures);
+                }
+                if (!typedAnnexFigures.isEmpty()) {
+                    if (annexFigures == null) {
+                        annexFigures = new ArrayList<>();
+                    }
+                    annexFigures.addAll(typedAnnexFigures);
+                    doc.setAnnexFigures(annexFigures);
+                }
+                LOGGER.info("Typed-area figures routed: {} to the body, {} to the annex",
+                    typedBodyFigures.size(), typedAnnexFigures.size());
             }
             if (!typedAreaTables.isEmpty()) {
-                if (annexTables == null) {
-                    annexTables = new ArrayList<>();
+                List<Table> typedBodyTables = new ArrayList<>();
+                List<Table> typedAnnexTables = new ArrayList<>();
+                for (Table table : typedAreaTables) {
+                    if (startsAfter(firstBoundingBox(table), annexStart)) {
+                        typedAnnexTables.add(table);
+                    } else {
+                        typedBodyTables.add(table);
+                    }
                 }
-                annexTables.addAll(typedAreaTables);
-                doc.setAnnexTables(annexTables);
+                if (!typedBodyTables.isEmpty()) {
+                    if (bodyTables == null) {
+                        bodyTables = new ArrayList<>();
+                    }
+                    bodyTables.addAll(typedBodyTables);
+                    doc.setTables(bodyTables);
+                }
+                if (!typedAnnexTables.isEmpty()) {
+                    if (annexTables == null) {
+                        annexTables = new ArrayList<>();
+                    }
+                    annexTables.addAll(typedAnnexTables);
+                    doc.setAnnexTables(annexTables);
+                }
+                LOGGER.info("Typed-area tables routed: {} to the body, {} to the annex",
+                    typedBodyTables.size(), typedAnnexTables.size());
             }
 
             // post-process reference and footnote callout to keep them consistent (e.g. for example avoid that a footnote
@@ -4103,6 +4151,55 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
      * Process typed areas (figures, tables) using specialized models.
      * This method applies the appropriate figure and table parsers to pre-identified areas.
      */
+    /**
+     * Where the ANNEX segment begins, as {page, y}, or null when the document has no annex.
+     *
+     * Typed areas come from a detector and carry page coordinates but no position in the token
+     * stream, and a region that is pure artwork captures no tokens at all, so the body/annex
+     * decision has to be made geometrically rather than by token index.
+     */
+    private static double[] annexStartPosition(Document doc) {
+        SortedSet<DocumentPiece> annexParts = doc.getDocumentPart(SegmentationLabels.ANNEX);
+        if (CollectionUtils.isEmpty(annexParts)) {
+            return null;
+        }
+        List<LayoutToken> tokenizations = doc.getTokenizations();
+        if (CollectionUtils.isEmpty(tokenizations)) {
+            return null;
+        }
+        int firstTokenPos = Integer.MAX_VALUE;
+        for (DocumentPiece piece : annexParts) {
+            firstTokenPos = Math.min(firstTokenPos, piece.getLeft().getTokenDocPos());
+        }
+        if (firstTokenPos < 0 || firstTokenPos >= tokenizations.size()) {
+            return null;
+        }
+        LayoutToken first = tokenizations.get(firstTokenPos);
+        return new double[] { first.getPage(), first.getY() };
+    }
+
+    /** First graphic bounding box of a figure or table, or null if it has none. */
+    private static BoundingBox firstBoundingBox(Figure figure) {
+        if (CollectionUtils.isEmpty(figure.getGraphicObjects())) {
+            return null;
+        }
+        return figure.getGraphicObjects().get(0).getBoundingBox();
+    }
+
+    /**
+     * Whether a region lies at or after the start of the annex. Unknown position counts as
+     * body: the body is where a figure belongs unless we can show otherwise.
+     */
+    private static boolean startsAfter(BoundingBox box, double[] annexStart) {
+        if (annexStart == null || box == null) {
+            return false;
+        }
+        if (box.getPage() != (int) annexStart[0]) {
+            return box.getPage() > annexStart[0];
+        }
+        return box.getY() >= annexStart[1];
+    }
+
     protected void processTypedAreas(Document doc) {
         if (doc == null) {
             return;
