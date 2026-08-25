@@ -19,9 +19,9 @@ grobid:
       timeoutSec: 120
       # drop glyphs lying entirely outside the current clip path: figures embedded as PDF
       # frequently carry the invisible text of the page they were exported from, which is
-      # otherwise extracted as duplicated paragraphs and headings. Requires a pdfalto build
-      # with -discardClippedText support, therefore disabled by default.
-      discardClippedText: false
+      # otherwise extracted as duplicated paragraphs and headings. Set to false only when
+      # using a pdfalto build that predates the -discardClippedText option.
+      discardClippedText: true
 
     # security relative to the PDF parsing result
     blocksMax: 200000
