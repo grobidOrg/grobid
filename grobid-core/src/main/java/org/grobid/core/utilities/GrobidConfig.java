@@ -55,6 +55,9 @@ public class GrobidConfig {
         public String path;
         public int memoryLimitMb = 6096;
         public int timeoutSec = 60;
+        // drop glyphs lying entirely outside the current clip path (hidden text carried by
+        // embedded figure PDFs); requires pdfalto with -discardClippedText support
+        public boolean discardClippedText = true;
     }
 
     public static class ConsolidationParameters {
