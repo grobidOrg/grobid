@@ -20,6 +20,7 @@ import java.util.List;
 
 import org.grobid.core.GrobidModels;
 import org.grobid.core.analyzers.Analyzer;
+import org.grobid.core.layout.TypedArea;
 
 /**
  * A class representing the runtime configuration values needed in the analysis chain
@@ -112,6 +113,9 @@ public class GrobidAnalysisConfig {
     // when non-null, parsers append their raw CRF labelling output to this collector
     // so the REST layer can return it in debug mode instead of the TEI XML
     private DebugLabelingCollector debugLabelingCollector = null;
+
+    // list of typed areas for specialized processing
+    private List<TypedArea> typedAreas = null;
 
     public boolean isIncludeDiscardedText() {
         return includeDiscardedText;
@@ -236,6 +240,11 @@ public class GrobidAnalysisConfig {
 
         public GrobidAnalysisConfigBuilder debugLabelingCollector(DebugLabelingCollector collector) {
             config.debugLabelingCollector = collector;
+            return this;
+        }
+
+        public GrobidAnalysisConfigBuilder typedAreas(List<TypedArea> areas) {
+            config.typedAreas = areas;
             return this;
         }
 
@@ -370,5 +379,13 @@ public class GrobidAnalysisConfig {
 
     public DebugLabelingCollector getDebugLabelingCollector() {
         return debugLabelingCollector;
+    }
+
+    public List<TypedArea> getTypedAreas() {
+        return typedAreas;
+    }
+
+    public void setTypedAreas(List<TypedArea> typedAreas) {
+        this.typedAreas = typedAreas;
     }
 }

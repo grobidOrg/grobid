@@ -29,10 +29,14 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.IdentityHashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.SortedSet;
+import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.stream.Collectors;
 
@@ -76,6 +80,7 @@ import org.grobid.core.layout.GraphicObjectType;
 import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.layout.PDFAnnotation;
 import org.grobid.core.layout.Page;
+import org.grobid.core.layout.TypedArea;
 import org.grobid.core.layout.VectorGraphicBoxCalculator;
 import org.grobid.core.sax.*;
 import org.grobid.core.utilities.*;
@@ -167,6 +172,21 @@ public class Document implements Serializable {
     protected transient List<Table> annexTables;
     protected transient List<Equation> equations;
     protected transient List<Equation> annexEquations;
+
+    // typed areas for specialized processing
+    protected transient List<TypedArea> figureAreas = new ArrayList<>();
+    protected transient List<TypedArea> tableAreas = new ArrayList<>();
+    protected transient List<TypedArea> ignoredAreas = new ArrayList<>();
+
+    // tokens extracted from typed areas for specialized processing
+    protected transient List<LayoutToken> figureTokens = new ArrayList<>();
+    protected transient Map<TypedArea, List<LayoutToken>> figureTokensByArea = new LinkedHashMap<>();
+    protected transient List<LayoutToken> tableTokens = new ArrayList<>();
+    protected transient Map<TypedArea, List<LayoutToken>> tableTokensByArea = new LinkedHashMap<>();
+    protected transient List<LayoutToken> ignoredTokens = new ArrayList<>();
+
+    // tokens that fall within typed areas and should be excluded from body processing
+    protected transient Set<LayoutToken> excludedTokens = Collections.newSetFromMap(new IdentityHashMap<>());
 
     // the analyzer/tokenizer used for processing this document
     protected transient Analyzer analyzer = GrobidAnalyzer.getInstance();
@@ -1749,5 +1769,268 @@ public class Document implements Serializable {
 
     public void setAnnexFigures(List<Figure> annexFigures) {
         this.annexFigures = annexFigures;
+    }
+
+    // Typed area getters and setters
+    public List<TypedArea> getFigureAreas() {
+        return figureAreas;
+    }
+
+    public void setFigureAreas(List<TypedArea> figureAreas) {
+        this.figureAreas = figureAreas != null ? figureAreas : new ArrayList<>();
+    }
+
+    public List<TypedArea> getTableAreas() {
+        return tableAreas;
+    }
+
+    public void setTableAreas(List<TypedArea> tableAreas) {
+        this.tableAreas = tableAreas != null ? tableAreas : new ArrayList<>();
+    }
+
+    public List<TypedArea> getIgnoredAreas() {
+        return ignoredAreas;
+    }
+
+    public void setIgnoredAreas(List<TypedArea> ignoredAreas) {
+        this.ignoredAreas = ignoredAreas != null ? ignoredAreas : new ArrayList<>();
+    }
+
+    // Token getters and setters for typed areas
+    public List<LayoutToken> getFigureTokens() {
+        return figureTokens;
+    }
+
+    public void setFigureTokens(List<LayoutToken> figureTokens) {
+        this.figureTokens = figureTokens != null ? figureTokens : new ArrayList<>();
+    }
+
+    public Map<TypedArea, List<LayoutToken>> getFigureTokensByArea() {
+        return figureTokensByArea;
+    }
+
+    public List<LayoutToken> getTableTokens() {
+        return tableTokens;
+    }
+
+    public void setTableTokens(List<LayoutToken> tableTokens) {
+        this.tableTokens = tableTokens != null ? tableTokens : new ArrayList<>();
+    }
+
+    public Map<TypedArea, List<LayoutToken>> getTableTokensByArea() {
+        return tableTokensByArea;
+    }
+
+    public List<LayoutToken> getIgnoredTokens() {
+        return ignoredTokens;
+    }
+
+    public void setIgnoredTokens(List<LayoutToken> ignoredTokens) {
+        this.ignoredTokens = ignoredTokens != null ? ignoredTokens : new ArrayList<>();
+    }
+
+    private boolean isTokenExcluded(LayoutToken token) {
+        return excludedTokens.contains(token);
+    }
+
+    /**
+     * Filters document pieces by splitting them around excluded token runs.
+     * Returns new pieces that skip over any tokens in the excludedTokens set.
+     */
+    public SortedSet<DocumentPiece> filterDocumentPiecesByExcludedTokens(SortedSet<DocumentPiece> pieces) {
+        if (excludedTokens.isEmpty() || pieces == null || pieces.isEmpty()) {
+            return pieces;
+        }
+        SortedSet<DocumentPiece> filtered = new TreeSet<>();
+        for (DocumentPiece piece : pieces) {
+            int startPos = piece.getLeft().getTokenDocPos();
+            int endPos = piece.getRight().getTokenDocPos();
+            int runStart = -1;
+            for (int i = startPos; i <= endPos; i++) {
+                LayoutToken token = tokenizations.get(i);
+                if (!excludedTokens.contains(token)) {
+                    if (runStart == -1)
+                        runStart = i;
+                } else {
+                    if (runStart != -1) {
+                        filtered.add(createPiece(runStart, i - 1));
+                        runStart = -1;
+                    }
+                }
+            }
+            if (runStart != -1) {
+                filtered.add(createPiece(runStart, endPos));
+            }
+        }
+        return filtered;
+    }
+
+    private DocumentPiece createPiece(int startTokenDocPos, int endTokenDocPos) {
+        int startBlock = tokenizations.get(startTokenDocPos).getBlockPtr();
+        int endBlock = tokenizations.get(endTokenDocPos).getBlockPtr();
+        return new DocumentPiece(
+                new DocumentPointer(this, startBlock, startTokenDocPos),
+                new DocumentPointer(this, endBlock, endTokenDocPos));
+    }
+
+    /**
+     * Filters out layout tokens that fall within the specified typed areas and categorizes them by type.
+     * Tokens in figure/table areas are collected for ML-based processing; tokens in ignore areas are discarded.
+     *
+     * @param typedAreas list of typed areas for specialized processing
+     */
+    public void filterLayoutTokensByTypedAreas(List<TypedArea> typedAreas) {
+        if (typedAreas == null || typedAreas.isEmpty() || tokenizations == null || tokenizations.isEmpty()) {
+            return;
+        }
+
+        LOGGER.debug("Processing {} typed areas", typedAreas.size());
+
+        // Clear previous token lists
+        figureTokens.clear();
+        figureTokensByArea.clear();
+        tableTokens.clear();
+        tableTokensByArea.clear();
+        ignoredTokens.clear();
+        figureAreas.clear();
+        tableAreas.clear();
+        ignoredAreas.clear();
+
+        // Categorize areas by type
+        for (TypedArea area : typedAreas) {
+            if (area.getType() == null) {
+                continue;
+            }
+
+            switch (area.getType()) {
+                case FIGURE :
+                    figureAreas.add(area);
+                    break;
+                case TABLE :
+                    tableAreas.add(area);
+                    break;
+                case IGNORE :
+                    ignoredAreas.add(area);
+                    break;
+                case PARATEXT :
+                    ignoredAreas.add(area);
+                    break;
+            }
+        }
+
+        excludedTokens.clear();
+        int figureTokenCount = 0;
+        int tableTokenCount = 0;
+        int ignoredTokenCount = 0;
+
+        // First pass: resolve the owning area for each coordinate-bearing token. Whitespace tokens
+        // (" ", "\n") carry no coordinates (x=y=-1, width=0), so they can never satisfy
+        // TypedArea.contains(); they are resolved from their neighbours in the second pass.
+        int nbTokens = tokenizations.size();
+        TypedArea[] tokenAreas = new TypedArea[nbTokens];
+        for (int i = 0; i < nbTokens; i++) {
+            LayoutToken token = tokenizations.get(i);
+            if (isLayoutWhitespace(token)) {
+                continue;
+            }
+            for (TypedArea area : typedAreas) {
+                if (area.getType() != null && area.contains(token)) {
+                    tokenAreas[i] = area;
+                    break;
+                }
+            }
+        }
+
+        // Second pass: attach a whitespace token to an area only when both of its immediate
+        // non-whitespace neighbours belong to that same area. This preserves the inter-word spaces
+        // inside a figure/table region (otherwise toText() would concatenate the words, e.g.
+        // "NewPhotometryofKnownRBCClusters") while still dropping the boundary spaces separating a
+        // region from the surrounding text.
+        for (int i = 0; i < nbTokens; i++) {
+            if (!isLayoutWhitespace(tokenizations.get(i))) {
+                continue;
+            }
+            TypedArea previousArea = null;
+            for (int j = i - 1; j >= 0; j--) {
+                if (!isLayoutWhitespace(tokenizations.get(j))) {
+                    previousArea = tokenAreas[j];
+                    break;
+                }
+            }
+            TypedArea nextArea = null;
+            for (int j = i + 1; j < nbTokens; j++) {
+                if (!isLayoutWhitespace(tokenizations.get(j))) {
+                    nextArea = tokenAreas[j];
+                    break;
+                }
+            }
+            if (previousArea != null && previousArea == nextArea) {
+                tokenAreas[i] = previousArea;
+            }
+        }
+
+        // Third pass: bucket each token by its resolved area.
+        for (int i = 0; i < nbTokens; i++) {
+            TypedArea area = tokenAreas[i];
+            if (area == null) {
+                continue;
+            }
+            LayoutToken token = tokenizations.get(i);
+            switch (area.getType()) {
+                case FIGURE :
+                    figureTokens.add(token);
+                    figureTokensByArea.computeIfAbsent(area, k -> new ArrayList<>()).add(token);
+                    figureTokenCount++;
+                    break;
+                case TABLE :
+                    tableTokens.add(token);
+                    tableTokensByArea.computeIfAbsent(area, k -> new ArrayList<>()).add(token);
+                    tableTokenCount++;
+                    break;
+                case IGNORE :
+                case PARATEXT :
+                    ignoredTokens.add(token);
+                    ignoredTokenCount++;
+                    break;
+            }
+            excludedTokens.add(token);
+        }
+
+        recalculateBlockPointers();
+
+        LOGGER.debug(
+                "Processed typed areas: {} figure tokens, {} table tokens, {} ignored tokens, {} excluded total",
+                figureTokenCount,
+                tableTokenCount,
+                ignoredTokenCount,
+                excludedTokens.size());
+    }
+
+    /**
+     * A layout whitespace token is a space (" ") or newline ("\n") separator. These tokens carry no
+     * usable coordinates, so they are positioned by their neighbours rather than by geometry.
+     */
+    private static boolean isLayoutWhitespace(LayoutToken token) {
+        String text = token.getText();
+        return text != null && (LayoutTokensUtil.spaceyToken(text) || LayoutTokensUtil.newLineToken(text));
+    }
+
+    /**
+     * Recalculate blockPtr for all tokens based on the current blocks list.
+     * Ensures that each token's blockPtr correctly points to the block
+     * whose startToken <= tokenDocPos < nextBlock.startToken.
+     */
+    private void recalculateBlockPointers() {
+        if (blocks == null || blocks.isEmpty() || tokenizations == null || tokenizations.isEmpty()) {
+            return;
+        }
+        int blockIdx = 0;
+        for (int i = 0; i < tokenizations.size(); i++) {
+            while (blockIdx < blocks.size() - 1
+                    && blocks.get(blockIdx + 1).getStartToken() <= i) {
+                blockIdx++;
+            }
+            tokenizations.get(i).setBlockPtr(blockIdx);
+        }
     }
 }

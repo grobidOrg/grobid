@@ -51,6 +51,8 @@ Building, training, and extending GROBID.
 
 * [Build from source](Install-Grobid.md) — set up a development environment
 
+* [Typed Areas API](Typed-Areas-API.md) — region-based PDF processing control
+
 * [Training and evaluating models](Training-the-models-of-Grobid.md) — retrain or fine-tune GROBID models
 
 * [End-to-end evaluation](End-to-end-evaluation.md) — evaluate full pipeline performance

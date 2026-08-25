@@ -122,6 +122,11 @@ public class HeaderParser extends AbstractParser {
             documentSource.setMD5(md5Str);
             Document doc = parsers.getSegmentationParser().processing(documentSource, config);
 
+            // Apply typed areas filtering if configured
+            if (config.getTypedAreas() != null && !config.getTypedAreas().isEmpty()) {
+                doc.filterLayoutTokensByTypedAreas(config.getTypedAreas());
+            }
+
             String tei = processingHeaderSection(config, doc, resHeader, true);
             return new ImmutablePair<String, Document>(tei, doc);
         } finally {

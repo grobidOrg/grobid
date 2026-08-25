@@ -156,7 +156,17 @@ public class FullTextParser extends AbstractParser {
         try {
             // general segmentation
             Document doc = parsers.getSegmentationParser(flavor).processing(documentSource, config);
+
+            // Apply typed areas filtering if configured
+            if (config.getTypedAreas() != null && !config.getTypedAreas().isEmpty()) {
+                doc.filterLayoutTokensByTypedAreas(config.getTypedAreas());
+                // Apply specialized processing for figures and tables
+                processTypedAreas(doc);
+            }
+
             SortedSet<DocumentPiece> documentBodyParts = doc.getDocumentPart(SegmentationLabels.BODY);
+            // Filter body pieces to exclude typed area regions
+            documentBodyParts = doc.filterDocumentPiecesByExcludedTokens(documentBodyParts);
 
             // header processing
             BiblioItem headerResults = new BiblioItem();
@@ -278,7 +288,11 @@ public class FullTextParser extends AbstractParser {
                 bodyFigures = processFigures(bodyResults, bodyTokenization.getTokenization(), 0, config);
                 doc.setFigures(bodyFigures);
 
-                bodyResults = fixFiguresLabellingResults(doc, bodyResults);
+                // Skip graphic object reassignment when user provided figure areas,
+                // since those areas already account for their graphic objects
+                if (doc.getFigureAreas().isEmpty()) {
+                    bodyResults = fixFiguresLabellingResults(doc, bodyResults);
+                }
 
                 // Figures
 
@@ -333,6 +347,13 @@ public class FullTextParser extends AbstractParser {
             } else {
                 LOGGER.debug("Fulltext model: The featured body is empty");
             }
+
+            // Save typed area figures and tables before annex processing (which overwrites
+            // doc.annexFigures / doc.annexTables via setAnnexFigures()/setAnnexTables())
+            List<Figure> typedAreaFigures = doc.getAnnexFigures() != null
+                ? new ArrayList<>(doc.getAnnexFigures()) : new ArrayList<>();
+            List<Table> typedAreaTables = doc.getAnnexTables() != null
+                ? new ArrayList<>(doc.getAnnexTables()) : new ArrayList<>();
 
             // possible annexes (view as a piece of full text similar to the body)
             documentBodyParts = doc.getDocumentPart(SegmentationLabels.ANNEX);
@@ -406,6 +427,70 @@ public class FullTextParser extends AbstractParser {
                     CollectionUtils.size(bodyEquations)
                 );
                 doc.setAnnexEquations(annexEquations);
+            }
+
+            // Merge the typed-area figures and tables back in (annex processing above
+            // overwrote the lists they were parked in), routing each one to the body or the
+            // annex according to where it actually sits in the document. They were parked in
+            // the annex list purely as a holding pen -- emitting them all from <back> put 94%
+            // of the figures of a masked run into the back matter on a corpus where plain
+            // GROBID puts 0.7% there, which is wrong for every downstream consumer of the TEI.
+            double[] annexStart = annexStartPosition(doc);
+            if (!typedAreaFigures.isEmpty()) {
+                List<Figure> typedBodyFigures = new ArrayList<>();
+                List<Figure> typedAnnexFigures = new ArrayList<>();
+                for (Figure figure : typedAreaFigures) {
+                    if (startsAfter(firstBoundingBox(figure), annexStart)) {
+                        typedAnnexFigures.add(figure);
+                    } else {
+                        typedBodyFigures.add(figure);
+                    }
+                }
+                if (!typedBodyFigures.isEmpty()) {
+                    // bodyFigures, not doc.getFigures(): toTEI() below is handed these locals,
+                    // so updating only the Document would silently drop them from the output.
+                    if (bodyFigures == null) {
+                        bodyFigures = new ArrayList<>();
+                    }
+                    bodyFigures.addAll(typedBodyFigures);
+                    doc.setFigures(bodyFigures);
+                }
+                if (!typedAnnexFigures.isEmpty()) {
+                    if (annexFigures == null) {
+                        annexFigures = new ArrayList<>();
+                    }
+                    annexFigures.addAll(typedAnnexFigures);
+                    doc.setAnnexFigures(annexFigures);
+                }
+                LOGGER.info("Typed-area figures routed: {} to the body, {} to the annex",
+                    typedBodyFigures.size(), typedAnnexFigures.size());
+            }
+            if (!typedAreaTables.isEmpty()) {
+                List<Table> typedBodyTables = new ArrayList<>();
+                List<Table> typedAnnexTables = new ArrayList<>();
+                for (Table table : typedAreaTables) {
+                    if (startsAfter(firstBoundingBox(table), annexStart)) {
+                        typedAnnexTables.add(table);
+                    } else {
+                        typedBodyTables.add(table);
+                    }
+                }
+                if (!typedBodyTables.isEmpty()) {
+                    if (bodyTables == null) {
+                        bodyTables = new ArrayList<>();
+                    }
+                    bodyTables.addAll(typedBodyTables);
+                    doc.setTables(bodyTables);
+                }
+                if (!typedAnnexTables.isEmpty()) {
+                    if (annexTables == null) {
+                        annexTables = new ArrayList<>();
+                    }
+                    annexTables.addAll(typedAnnexTables);
+                    doc.setAnnexTables(annexTables);
+                }
+                LOGGER.info("Typed-area tables routed: {} to the body, {} to the annex",
+                    typedBodyTables.size(), typedAnnexTables.size());
             }
 
             // post-process reference and footnote callout to keep them consistent (e.g. for example avoid that a footnote
@@ -724,6 +809,13 @@ public class FullTextParser extends AbstractParser {
         try {
             // general segmentation
             Document doc = parsers.getSegmentationParser().processing(documentSource, config);
+
+            // Apply typed areas filtering if configured
+            if (config.getTypedAreas() != null && !config.getTypedAreas().isEmpty()) {
+                doc.filterLayoutTokensByTypedAreas(config.getTypedAreas());
+                // Apply specialized processing for figures and tables
+                processTypedAreas(doc);
+            }
 
             // header processing
             BiblioItem resHeader = new BiblioItem();
@@ -1076,6 +1168,7 @@ public class FullTextParser extends AbstractParser {
                     }
 
                     LayoutToken token = tokens.get(n);
+
                     layoutTokens.add(token);
 
                     features = new FeaturesVectorFulltext();
@@ -3672,6 +3765,596 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
             labeledTokenSequences.add(currentTokenization);
 
         return labeledTokenSequences;
+    }
+
+    /**
+     * Generate fulltext-format feature vectors from a flat list of layout tokens.
+     * This mirrors getBodyTextFeatured() but operates on a List&lt;LayoutToken&gt; instead of DocumentPieces.
+     *
+     * @param tokens the tokens to generate features for
+     * @param doc    the document (used for graphics proximity, page dimensions, etc.)
+     * @return a pair of (feature string, filtered tokens that produced feature lines), or null if no features
+     */
+    static Pair<String, List<LayoutToken>> generateFeaturesForTokens(List<LayoutToken> tokens, Document doc) {
+        if (CollectionUtils.isEmpty(tokens)) {
+            return null;
+        }
+
+        FeatureFactory featureFactory = FeatureFactory.getInstance();
+        StringBuilder fulltext = new StringBuilder();
+        String currentFont = null;
+        int currentFontSize = -1;
+
+        List<Block> blocks = doc.getBlocks();
+        if (CollectionUtils.isEmpty(blocks)) {
+            return null;
+        }
+
+        FeaturesVectorFulltext features;
+        FeaturesVectorFulltext previousFeatures = null;
+
+        int mm = 0; // page position
+        int nn = 0; // document position
+        double lineStartX = Double.NaN;
+        boolean indented = false;
+        boolean previousNewline = false;
+        boolean newline;
+
+        // Compute total text length for relative position
+        int fulltextLength = 0;
+        for (LayoutToken t : tokens) {
+            String text = t.getText();
+            if (text != null) {
+                String cleaned = text.replace(" ", "");
+                if (!cleaned.isEmpty() && !cleaned.equals("\n")) {
+                    fulltextLength += cleaned.length();
+                }
+            }
+        }
+
+        // Track block boundaries and graphics per block
+        int previousBlockPtr = -1;
+        boolean graphicVector = false;
+        boolean graphicBitmap = false;
+        double density = 0.0;
+        double spacingPreviousBlock = 0.0;
+        double lowestPos = 0.0;
+        int currentPage = -1;
+
+        for (int i = 0; i < tokens.size(); i++) {
+            LayoutToken token = tokens.get(i);
+
+            // Detect block boundary changes
+            int blockPtr = token.getBlockPtr();
+            boolean isNewBlock = (blockPtr != previousBlockPtr);
+
+            if (isNewBlock && blockPtr >= 0 && blockPtr < blocks.size()) {
+                Block block = blocks.get(blockPtr);
+                graphicVector = false;
+                graphicBitmap = false;
+
+                double pageHeight = block.getPage().getHeight();
+                int localPage = block.getPage().getNumber();
+                if (localPage != currentPage) {
+                    currentPage = localPage;
+                    mm = 0;
+                    lowestPos = 0.0;
+                    spacingPreviousBlock = 0.0;
+                }
+
+                if (lowestPos > block.getY()) {
+                    spacingPreviousBlock = doc.getMaxBlockSpacing() / 5.0;
+                } else {
+                    spacingPreviousBlock = block.getY() - lowestPos;
+                }
+
+                String localText = block.getText();
+                if (localText != null && !localText.contains("@PAGE") && !localText.contains("@IMAGE")) {
+                    if (block.getHeight() != 0.0 && block.getWidth() != 0.0) {
+                        density = (double) localText.length() / (block.getHeight() * block.getWidth());
+                    }
+                }
+
+                List<GraphicObject> localImages = Document.getConnectedGraphics(block, doc);
+                if (localImages != null) {
+                    for (GraphicObject localImage : localImages) {
+                        if (localImage.getType() == GraphicObjectType.BITMAP)
+                            graphicBitmap = true;
+                        if (localImage.getType() == GraphicObjectType.VECTOR || localImage.getType() == GraphicObjectType.VECTOR_BOX)
+                            graphicVector = true;
+                    }
+                }
+
+                previousBlockPtr = blockPtr;
+            }
+
+            features = new FeaturesVectorFulltext();
+            features.token = token;
+
+            double coordinateLineY = token.getY();
+
+            String text = token.getText();
+            if (text == null || text.isEmpty()) {
+                continue;
+            }
+            text = text.replace(" ", "");
+            if (text.isEmpty()) {
+                mm++;
+                nn++;
+                continue;
+            }
+            if (text.equals("\n")) {
+                previousNewline = true;
+                mm++;
+                nn++;
+                continue;
+            }
+            newline = false;
+
+            // final sanitisation and filtering
+            text = text.replaceAll("[ \n]", "");
+            if (TextUtilities.filterLine(text)) {
+                continue;
+            }
+
+            if (previousNewline) {
+                newline = true;
+                previousNewline = false;
+                if (previousFeatures != null) {
+                    double previousLineStartX = lineStartX;
+                    lineStartX = token.getX();
+                    double characterWidth = token.width / text.length();
+                    if (!Double.isNaN(previousLineStartX)) {
+                        if (previousLineStartX - lineStartX > characterWidth)
+                            indented = false;
+                        else if (lineStartX - previousLineStartX > characterWidth)
+                            indented = true;
+                    }
+                }
+            }
+
+            features.string = text;
+
+            if (graphicBitmap) {
+                features.bitmapAround = true;
+            }
+            if (graphicVector) {
+                features.vectorAround = true;
+            }
+
+            if (newline) {
+                features.lineStatus = "LINESTART";
+                lineStartX = token.getX();
+                if (previousFeatures != null) {
+                    if (!"LINESTART".equals(previousFeatures.lineStatus))
+                        previousFeatures.lineStatus = "LINEEND";
+                }
+            }
+
+            Matcher m0 = featureFactory.isPunct.matcher(text);
+            if (m0.find()) {
+                features.punctType = "PUNCT";
+            }
+            if (text.equals("(") || text.equals("[")) {
+                features.punctType = "OPENBRACKET";
+            } else if (text.equals(")") || text.equals("]")) {
+                features.punctType = "ENDBRACKET";
+            } else if (text.equals(".")) {
+                features.punctType = "DOT";
+            } else if (text.equals(",")) {
+                features.punctType = "COMMA";
+            } else if (text.equals("-")) {
+                features.punctType = "HYPHEN";
+            } else if (text.equals("\"") || text.equals("\'") || text.equals("`")) {
+                features.punctType = "QUOTE";
+            }
+
+            if (indented) {
+                features.alignmentStatus = "LINEINDENT";
+            } else {
+                features.alignmentStatus = "ALIGNEDLEFT";
+            }
+
+            if (isNewBlock) {
+                features.lineStatus = "LINESTART";
+                if (previousFeatures != null) {
+                    if (!"LINESTART".equals(previousFeatures.lineStatus))
+                        previousFeatures.lineStatus = "LINEEND";
+                }
+                lineStartX = token.getX();
+                features.blockStatus = "BLOCKSTART";
+            } else {
+                // Look ahead for end of line
+                boolean endline = false;
+                boolean endblock = false;
+                int ii = 1;
+                boolean endloop = false;
+                while ((i + ii < tokens.size()) && (!endloop)) {
+                    LayoutToken tok = tokens.get(i + ii);
+                    if (tok != null) {
+                        String toto = tok.getText();
+                        if (toto != null) {
+                            if (toto.equals("\n")) {
+                                endline = true;
+                                endloop = true;
+                            } else {
+                                if (toto.length() != 0
+                                    && !toto.startsWith("@IMAGE")
+                                    && !toto.startsWith("@PAGE")
+                                    && !text.contains(".pbm")
+                                    && !text.contains(".svg")
+                                    && !text.contains(".png")
+                                    && !text.contains(".jpg")) {
+                                    endloop = true;
+                                }
+                            }
+                        }
+                    }
+                    // Check if we're switching blocks
+                    if (tok.getBlockPtr() != token.getBlockPtr()) {
+                        endblock = true;
+                        endline = true;
+                        endloop = true;
+                    }
+                    if (i + ii == tokens.size() - 1) {
+                        endblock = true;
+                        endline = true;
+                    }
+                    ii++;
+                }
+
+                if (!endline && !newline) {
+                    features.lineStatus = "LINEIN";
+                } else if (!newline) {
+                    features.lineStatus = "LINEEND";
+                    previousNewline = true;
+                }
+
+                if (!endblock && features.blockStatus == null)
+                    features.blockStatus = "BLOCKIN";
+                else if (features.blockStatus == null) {
+                    features.blockStatus = "BLOCKEND";
+                }
+            }
+
+            if (text.length() == 1) {
+                features.singleChar = true;
+            }
+
+            if (Character.isUpperCase(text.charAt(0))) {
+                features.capitalisation = "INITCAP";
+            }
+
+            if (featureFactory.test_all_capital(text)) {
+                features.capitalisation = "ALLCAP";
+            }
+
+            if (featureFactory.test_digit(text)) {
+                features.digit = "CONTAINSDIGITS";
+            }
+
+            Matcher m = featureFactory.isDigit.matcher(text);
+            if (m.find()) {
+                features.digit = "ALLDIGIT";
+            }
+
+            if (currentFont == null) {
+                currentFont = token.getFont();
+                features.fontStatus = "NEWFONT";
+            } else if (!currentFont.equals(token.getFont())) {
+                currentFont = token.getFont();
+                features.fontStatus = "NEWFONT";
+            } else {
+                features.fontStatus = "SAMEFONT";
+            }
+
+            int newFontSize = (int) token.getFontSize();
+            if (currentFontSize == -1) {
+                currentFontSize = newFontSize;
+                features.fontSize = "HIGHERFONT";
+            } else if (currentFontSize == newFontSize) {
+                features.fontSize = "SAMEFONTSIZE";
+            } else if (currentFontSize < newFontSize) {
+                features.fontSize = "HIGHERFONT";
+                currentFontSize = newFontSize;
+            } else {
+                features.fontSize = "LOWERFONT";
+                currentFontSize = newFontSize;
+            }
+
+            if (token.isBold())
+                features.bold = true;
+
+            if (token.isItalic())
+                features.italic = true;
+
+            if (features.capitalisation == null)
+                features.capitalisation = "NOCAPS";
+
+            if (features.digit == null)
+                features.digit = "NODIGIT";
+
+            if (features.punctType == null)
+                features.punctType = "NOPUNCT";
+
+            features.relativeDocumentPosition = featureFactory
+                .linearScaling(nn, fulltextLength, NBBINS_POSITION);
+
+            features.relativePagePositionChar = featureFactory
+                .linearScaling(mm, 0, NBBINS_POSITION);
+
+            double pageHeight = 1.0;
+            if (token.getPage() >= 0 && doc.getPages() != null && token.getPage() < doc.getPages().size()) {
+                Page page = doc.getPages().get(token.getPage());
+                if (page != null) {
+                    pageHeight = page.getHeight();
+                }
+            }
+            int pagePos = featureFactory.linearScaling(coordinateLineY, pageHeight, NBBINS_POSITION);
+            if (pagePos > NBBINS_POSITION)
+                pagePos = NBBINS_POSITION;
+            features.relativePagePosition = pagePos;
+
+            if (spacingPreviousBlock != 0.0) {
+                features.spacingWithPreviousBlock = featureFactory
+                    .linearScaling(spacingPreviousBlock - doc.getMinBlockSpacing(),
+                        doc.getMaxBlockSpacing() - doc.getMinBlockSpacing(), NBBINS_SPACE);
+            }
+
+            if (density != -1.0) {
+                features.characterDensity = featureFactory
+                    .linearScaling(density - doc.getMinCharacterDensity(),
+                        doc.getMaxCharacterDensity() - doc.getMinCharacterDensity(), NBBINS_DENSITY);
+            }
+
+            features.calloutType = "UNKNOWN";
+            features.calloutKnown = false;
+
+            if (token.isSuperscript()) {
+                features.superscript = true;
+            }
+
+            // Deferred print pattern: print previous features before overwriting
+            if (previousFeatures != null) {
+                if (features.blockStatus.equals("BLOCKSTART") &&
+                    previousFeatures.blockStatus.equals("BLOCKIN")) {
+                    previousFeatures.blockStatus = "BLOCKEND";
+                    previousFeatures.lineStatus = "LINEEND";
+                }
+                fulltext.append(previousFeatures.printVector());
+            }
+
+            mm += text.length();
+            nn += text.length();
+            previousFeatures = features;
+        }
+
+        // Flush last feature
+        if (previousFeatures != null) {
+            fulltext.append(previousFeatures.printVector());
+        }
+
+        if (fulltext.length() == 0) {
+            return null;
+        }
+
+        // Return the full token list (whitespace included) rather than only the feature-bearing
+        // tokens: the figure/table parser realigns the labelled result with these tokens via
+        // TaggingTokenClusteror, and LayoutTokensUtil.toText() relies on the space/newline tokens
+        // to render inter-word spacing. Dropping them here concatenated the words (e.g.
+        // "NewPhotometryofKnownRBCClusters"). This mirrors getBodyTextFeatured(), which adds every
+        // token to its returned LayoutTokenization before any filtering.
+        return Pair.of(fulltext.toString(), tokens);
+    }
+
+    /**
+     * Process typed areas (figures, tables) using specialized models.
+     * This method applies the appropriate figure and table parsers to pre-identified areas.
+     */
+    /**
+     * Where the ANNEX segment begins, as {page, y}, or null when the document has no annex.
+     *
+     * Typed areas come from a detector and carry page coordinates but no position in the token
+     * stream, and a region that is pure artwork captures no tokens at all, so the body/annex
+     * decision has to be made geometrically rather than by token index.
+     */
+    private static double[] annexStartPosition(Document doc) {
+        SortedSet<DocumentPiece> annexParts = doc.getDocumentPart(SegmentationLabels.ANNEX);
+        if (CollectionUtils.isEmpty(annexParts)) {
+            return null;
+        }
+        List<LayoutToken> tokenizations = doc.getTokenizations();
+        if (CollectionUtils.isEmpty(tokenizations)) {
+            return null;
+        }
+        int firstTokenPos = Integer.MAX_VALUE;
+        for (DocumentPiece piece : annexParts) {
+            firstTokenPos = Math.min(firstTokenPos, piece.getLeft().getTokenDocPos());
+        }
+        if (firstTokenPos < 0 || firstTokenPos >= tokenizations.size()) {
+            return null;
+        }
+        LayoutToken first = tokenizations.get(firstTokenPos);
+        return new double[] { first.getPage(), first.getY() };
+    }
+
+    /** First graphic bounding box of a figure or table, or null if it has none. */
+    private static BoundingBox firstBoundingBox(Figure figure) {
+        if (CollectionUtils.isEmpty(figure.getGraphicObjects())) {
+            return null;
+        }
+        return figure.getGraphicObjects().get(0).getBoundingBox();
+    }
+
+    /**
+     * Whether a region lies at or after the start of the annex. Unknown position counts as
+     * body: the body is where a figure belongs unless we can show otherwise.
+     */
+    private static boolean startsAfter(BoundingBox box, double[] annexStart) {
+        if (annexStart == null || box == null) {
+            return false;
+        }
+        if (box.getPage() != (int) annexStart[0]) {
+            return box.getPage() > annexStart[0];
+        }
+        return box.getY() >= annexStart[1];
+    }
+
+    protected void processTypedAreas(Document doc) {
+        if (doc == null) {
+            return;
+        }
+
+        LOGGER.debug("Processing typed areas: {} figures, {} tables",
+                    doc.getFigureAreas().size(), doc.getTableAreas().size());
+
+        // Process figure areas using the figure ML model - each area separately, so that each
+        // user-provided region yields its own <figure> (processing them as a single combined token
+        // blob produced one malformed figure that was then dropped at TEI serialization).
+        // Iterate over ALL figure areas, not only those that captured text tokens. A figure region
+        // that is a pure bitmap/vector graphic (scheme, micrograph, plot) has no text layer, so it
+        // gets no entry in figureTokensByArea; such regions must still yield a <figure> built from the
+        // graphic objects inside them (Figure.isCompleteForTEI() accepts a graphic-only figure).
+        if (!doc.getFigureAreas().isEmpty()) {
+            if (doc.getAnnexFigures() == null) {
+                doc.setAnnexFigures(new ArrayList<>());
+            }
+
+            Map<TypedArea, List<LayoutToken>> figureTokensByArea = doc.getFigureTokensByArea();
+            for (TypedArea area : doc.getFigureAreas()) {
+                List<LayoutToken> areaTokens = figureTokensByArea.getOrDefault(area, new ArrayList<>());
+
+                // Graphic objects (bitmaps and vector boxes) located inside the figure area.
+                List<GraphicObject> areaGraphics = new ArrayList<>();
+                if (CollectionUtils.isNotEmpty(doc.getImages())) {
+                    for (GraphicObject graphicObject : doc.getImages()) {
+                        if (area.intersects(graphicObject.getBoundingBox())) {
+                            areaGraphics.add(graphicObject);
+                        }
+                    }
+                }
+
+                // Fallback: if GROBID extracted no graphic inside this region (e.g. a vector/SVG
+                // figure whose artwork is not extracted at all), synthesize a graphic from the
+                // detector-provided area box. This keeps the figure complete for TEI and reintegrated
+                // at its known location, so figure recovery does not depend on GROBID's own graphic
+                // extraction succeeding for the region.
+                if (areaGraphics.isEmpty()) {
+                    BoundingBox areaBox = BoundingBox.fromPointAndDimensions(
+                        area.getPage(), area.getX(), area.getY(), area.getWidth(), area.getHeight());
+                    areaGraphics.add(new GraphicObject(areaBox, GraphicObjectType.VECTOR_BOX));
+                }
+
+                Figure figure = null;
+                if (!areaTokens.isEmpty()) {
+                    try {
+                        Pair<String, List<LayoutToken>> featurePair =
+                            generateFeaturesForTokens(areaTokens, doc);
+                        if (featurePair != null && isNotBlank(featurePair.getLeft())) {
+                            figure = parsers.getFigureParser().processing(
+                                featurePair.getRight(), featurePair.getLeft());
+                        }
+                    } catch (Exception e) {
+                        LOGGER.warn("Figure ML processing failed for area {}, falling back to direct construction", area, e);
+                    }
+                }
+
+                if (figure == null) {
+                    // No tokens, or ML processing failed/blank: construct the figure directly.
+                    figure = new Figure();
+                    figure.setContent(new StringBuilder(LayoutTokensUtil.toText(areaTokens)));
+                }
+                figure.setLayoutTokens(areaTokens);
+                for (LayoutToken lt : areaTokens) {
+                    if (!LayoutTokensUtil.spaceyToken(lt.t()) && !LayoutTokensUtil.newLineToken(lt.t())) {
+                        figure.setPage(lt.getPage());
+                        break;
+                    }
+                }
+
+                // Attach the graphic objects. For token-less regions these graphics are what make the
+                // figure complete for TEI, and supply the page number that tokens cannot.
+                if (CollectionUtils.isNotEmpty(areaGraphics)) {
+                    figure.setGraphicObjects(areaGraphics);
+                    if (figure.getPage() <= 0) {
+                        figure.setPage(areaGraphics.get(0).getPage());
+                    }
+                }
+
+                LOGGER.info("Typed area figure from {}: caption={}, graphics={}, tokenCount={}",
+                    area, StringUtils.isNotBlank(figure.getCaption()),
+                    figure.getGraphicObjects() != null ? figure.getGraphicObjects().size() : 0,
+                    figure.getLayoutTokens() != null ? figure.getLayoutTokens().size() : 0);
+                doc.getAnnexFigures().add(figure);
+            }
+            LOGGER.info("Created {} figure(s) from {} typed areas",
+                doc.getAnnexFigures().size(), doc.getFigureAreas().size());
+        }
+
+        // Process table areas using the table ML model - each area separately
+        if (!doc.getTableAreas().isEmpty() && !doc.getTableTokensByArea().isEmpty()) {
+            if (doc.getAnnexTables() == null) {
+                doc.setAnnexTables(new ArrayList<>());
+            }
+
+            for (Map.Entry<TypedArea, List<LayoutToken>> entry : doc.getTableTokensByArea().entrySet()) {
+                TypedArea area = entry.getKey();
+                List<LayoutToken> areaTokens = entry.getValue();
+                if (areaTokens.isEmpty()) {
+                    continue;
+                }
+
+                List<Table> tables = null;
+                try {
+                    Pair<String, List<LayoutToken>> featurePair =
+                        generateFeaturesForTokens(areaTokens, doc);
+                    if (featurePair != null && isNotBlank(featurePair.getLeft())) {
+                        tables = parsers.getTableParser().processing(
+                            featurePair.getRight(), featurePair.getLeft());
+                    }
+                } catch (Exception e) {
+                    LOGGER.warn("Table ML processing failed for area {}, falling back to direct construction", area, e);
+                }
+
+                if (CollectionUtils.isNotEmpty(tables)) {
+                    for (Table table : tables) {
+                        // The region is user-provided, so keep the table even if the model did not
+                        // label a head/caption (otherwise Table.toTEI() would drop it and its coords).
+                        table.setFromTypedArea(true);
+                        for (LayoutToken lt : areaTokens) {
+                            if (!LayoutTokensUtil.spaceyToken(lt.t()) && !LayoutTokensUtil.newLineToken(lt.t())) {
+                                table.setPage(lt.getPage());
+                                break;
+                            }
+                        }
+                        LOGGER.info("Typed area table from {}: hasContent={}, tokenCount={}",
+                            area, table.getContent() != null && table.getContent().length() > 0,
+                            table.getLayoutTokens() != null ? table.getLayoutTokens().size() : 0);
+                        doc.getAnnexTables().add(table);
+                    }
+                } else {
+                    // Fallback: create Table directly from tokens
+                    Table table = new Table();
+                    table.setFromTypedArea(true);
+                    table.setLayoutTokens(areaTokens);
+                    table.getContentTokens().addAll(areaTokens);
+                    table.setContent(new StringBuilder(LayoutTokensUtil.toText(areaTokens)));
+                    for (LayoutToken lt : areaTokens) {
+                        if (!LayoutTokensUtil.spaceyToken(lt.t()) && !LayoutTokensUtil.newLineToken(lt.t())) {
+                            table.setPage(lt.getPage());
+                            break;
+                        }
+                    }
+                    LOGGER.info("Typed area table (fallback) from {}: tokenCount={}", area, areaTokens.size());
+                    doc.getAnnexTables().add(table);
+                }
+            }
+            LOGGER.info("Created {} table(s) from {} typed areas",
+                doc.getAnnexTables().size(), doc.getTableTokensByArea().size());
+        }
+
+        // Note: ignored areas are intentionally discarded and no further processing is performed
+        LOGGER.debug("Typed area processing completed");
     }
 
     @Override
