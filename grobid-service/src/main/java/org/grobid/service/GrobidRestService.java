@@ -479,12 +479,17 @@ public class GrobidRestService implements GrobidPaths {
     /**
      * Parse the typedAreas form parameter into typed areas.
      *
-     * Strict on purpose: an unparseable payload, a payload that is not a JSON array, or any
-     * single unusable entry aborts the request with HTTP 400. Earlier this method logged and
-     * carried on, so a malformed mask set produced a perfectly ordinary 200 whose content had
-     * silently fallen back towards plain GROBID -- partly (some boxes dropped) or entirely (an
-     * unparseable payload yields no areas at all). That is invisible to the caller and ruins
-     * batch experiments, which is exactly the case worth failing loudly on.
+     * Two different failures, deliberately handled differently.
+     *
+     * A payload that cannot be read as a list of areas at all -- not JSON, or JSON that is not
+     * an array -- is treated as no typed areas: the request proceeds unmasked, as if the
+     * parameter had been omitted, and the reason is logged at ERROR. The caller plainly did not
+     * supply a mask list, and failing the whole request adds nothing.
+     *
+     * A payload that *is* a list but carries an unusable entry aborts with HTTP 400. This is the
+     * dangerous case: previously such entries were skipped, so the request returned an ordinary
+     * 200 having applied only a subset of the masks -- invisible to the caller, and quietly
+     * contaminating a batch run. Applying part of a mask set is never what the caller wanted.
      *
      * An absent or empty parameter is not an error: it simply means no masking.
      */
@@ -499,13 +504,18 @@ public class GrobidRestService implements GrobidPaths {
         try {
             rootNode = new ObjectMapper().readTree(typedAreasJson);
         } catch (Exception e) {
-            throw badTypedAreas("typedAreas is not valid JSON: " + e.getMessage());
+            LOGGER.error(
+                    "typedAreas is not valid JSON, proceeding without typed areas: {} ({})",
+                    e.getMessage(),
+                    abbreviate(typedAreasJson));
+            return typedAreasList;
         }
 
         if (rootNode == null || !rootNode.isArray()) {
-            throw badTypedAreas(
-                    "typedAreas must be a JSON array, received: "
-                            + abbreviate(typedAreasJson));
+            LOGGER.error(
+                    "typedAreas is not a JSON array, proceeding without typed areas: {}",
+                    abbreviate(typedAreasJson));
+            return typedAreasList;
         }
 
         List<String> rejections = new ArrayList<>();
