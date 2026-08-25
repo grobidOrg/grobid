@@ -476,6 +476,18 @@ public class GrobidRestService implements GrobidPaths {
         return teiCoordinates;
     }
 
+    /**
+     * Parse the typedAreas form parameter into typed areas.
+     *
+     * Strict on purpose: an unparseable payload, a payload that is not a JSON array, or any
+     * single unusable entry aborts the request with HTTP 400. Earlier this method logged and
+     * carried on, so a malformed mask set produced a perfectly ordinary 200 whose content had
+     * silently fallen back towards plain GROBID -- partly (some boxes dropped) or entirely (an
+     * unparseable payload yields no areas at all). That is invisible to the caller and ruins
+     * batch experiments, which is exactly the case worth failing loudly on.
+     *
+     * An absent or empty parameter is not an error: it simply means no masking.
+     */
     private List<org.grobid.core.layout.TypedArea> parseTypedAreas(String typedAreasJson) {
         List<org.grobid.core.layout.TypedArea> typedAreasList = new ArrayList<>();
 
@@ -483,54 +495,76 @@ public class GrobidRestService implements GrobidPaths {
             return typedAreasList;
         }
 
+        JsonNode rootNode;
         try {
-            // Parse JSON array of typed areas
-            ObjectMapper mapper = new ObjectMapper();
-            JsonNode rootNode = mapper.readTree(typedAreasJson);
+            rootNode = new ObjectMapper().readTree(typedAreasJson);
+        } catch (Exception e) {
+            throw badTypedAreas("typedAreas is not valid JSON: " + e.getMessage());
+        }
 
-            if (rootNode.isArray()) {
-                for (JsonNode node : rootNode) {
-                    try {
-                        int page = node.get("page").asInt();
-                        double x = node.get("x").asDouble();
-                        double y = node.get("y").asDouble();
-                        double width = node.get("width").asDouble();
-                        double height = node.get("height").asDouble();
+        if (rootNode == null || !rootNode.isArray()) {
+            throw badTypedAreas("typedAreas must be a JSON array, received: "
+                    + abbreviate(typedAreasJson));
+        }
 
-                        // New format: "type" field is required and should be "figure", "table", "ignore", or "paratext"
-                        if (!node.has("type")) {
-                            LOGGER.warn("Typed area missing required 'type' field: " + node.toString());
-                            continue;
-                        }
-
-                        String typeString = node.get("type").asText();
-                        org.grobid.core.layout.AreaType areaType = org.grobid.core.layout.AreaType
-                                .fromString(typeString);
-
-                        org.grobid.core.layout.TypedArea area = new org.grobid.core.layout.TypedArea(page, x, y, width,
-                                height, areaType);
-                        typedAreasList.add(area);
-                    } catch (Exception e) {
-                        LOGGER.warn("Failed to parse typed area from JSON: " + node.toString(), e);
+        List<String> rejections = new ArrayList<>();
+        int index = 0;
+        for (JsonNode node : rootNode) {
+            try {
+                if (!node.has("type")) {
+                    rejections.add("[" + index + "] missing required 'type' field");
+                    continue;
+                }
+                for (String field : new String[] { "page", "x", "y", "width", "height" }) {
+                    if (!node.has(field)) {
+                        throw new IllegalArgumentException("missing required '" + field + "' field");
                     }
                 }
-            } else {
-                LOGGER.warn("typedAreas should be a JSON array, but received: " + typedAreasJson);
+                org.grobid.core.layout.AreaType areaType = org.grobid.core.layout.AreaType
+                        .fromString(node.get("type").asText());
+                typedAreasList.add(new org.grobid.core.layout.TypedArea(
+                        node.get("page").asInt(),
+                        node.get("x").asDouble(),
+                        node.get("y").asDouble(),
+                        node.get("width").asDouble(),
+                        node.get("height").asDouble(),
+                        areaType));
+            } catch (Exception e) {
+                rejections.add("[" + index + "] " + e.getMessage());
+            } finally {
+                index++;
             }
-        } catch (Exception e) {
-            LOGGER.error("Failed to parse typed areas JSON: " + typedAreasJson, e);
         }
 
-        if (!typedAreasList.isEmpty()) {
-            Map<AreaType, Long> countsByType = typedAreasList.stream()
-                    .collect(
-                            java.util.stream.Collectors.groupingBy(
-                                    org.grobid.core.layout.TypedArea::getType,
-                                    java.util.stream.Collectors.counting()));
-            LOGGER.info("Received {} typed areas: {}", typedAreasList.size(), countsByType);
+        if (!rejections.isEmpty()) {
+            String detail = rejections.size() <= 5
+                    ? String.join("; ", rejections)
+                    : String.join("; ", rejections.subList(0, 5))
+                            + "; and " + (rejections.size() - 5) + " more";
+            LOGGER.warn("Rejected {} of {} typed areas: {}", rejections.size(), index, detail);
+            throw badTypedAreas("typedAreas: rejected " + rejections.size() + " of " + index
+                    + " entries: " + detail);
         }
+
+        Map<AreaType, Long> countsByType = typedAreasList.stream()
+                .collect(java.util.stream.Collectors.groupingBy(
+                        org.grobid.core.layout.TypedArea::getType,
+                        java.util.stream.Collectors.counting()));
+        LOGGER.info("Accepted all {} typed areas: {}", typedAreasList.size(), countsByType);
 
         return typedAreasList;
+    }
+
+    private static String abbreviate(String s) {
+        return s.length() <= 200 ? s : s.substring(0, 200) + "...";
+    }
+
+    private static jakarta.ws.rs.WebApplicationException badTypedAreas(String message) {
+        return new jakarta.ws.rs.WebApplicationException(
+                Response.status(Response.Status.BAD_REQUEST)
+                        .entity(message)
+                        .type(jakarta.ws.rs.core.MediaType.TEXT_PLAIN)
+                        .build());
     }
 
     private boolean validateGenerateIdParam(String generateIDs) {
