@@ -76,7 +76,7 @@
       <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-05-14T19:01:25.010327Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.9.0-62-gdd0608bb6</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -108,7 +108,7 @@
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
     <listBibl>
       <bibl><label>1</label> EWHC 3368 (Admin).<lb/> </bibl>
-      <bibl><label>2</label> ibid. at 106, which noted that those 'aspects of well-being which are of particular relevance to the<lb/> issues in this case are:"(b) physical and mental health and emotional well-being"."(f) participation in …<lb/> recreation"."(g) domestic, family and personal relationships." (emphasis added).'</bibl> 
+      <bibl><label>2</label> ibid. at 106, which noted that those 'aspects of well-being which are of particular relevance to the<lb/> issues in this case are:"(b) physical and mental health and emotional well-being"."(f) participation in …<lb/> recreation"."(g) domestic, family and personal relationships." (emphasis added).'</bibl>
       <bibl>See also 2(2)(g) of the<lb/> 2015 Regulations which concerns 'Developing or Maintaining Family or other Personal Relationships.'<lb/> </bibl>
       <bibl><label>4</label> Suffolk above, note i, at 9.<lb/> </bibl>
       <bibl><label>5</label> See further B Schwehr, 'Where councils are going wrong in their implementation of the Care Act' Com-<lb/>munity Care(2018) https://www.communitycare.co.uk/2018/06/08/councils-going-wrong-implementa-<lb/>tion-care-act/ (last visited 2nd April, 2022). Schwehr argues further that 'In legal terms… loose language<lb/> could indicate predetermination or a fetter of assessment or care planning discretion; it could indicate<lb/> a disregard of the principle that resources are relevant to how needs must be met, but not to whether.'<lb/> </bibl>
@@ -146,16 +146,16 @@
       <bibl><label>37</label> Mc Donald v United Kingdom (2014) 4241/12; (https://hudoc.echr.coe.int/eng) (last visited 28th March<lb/> 2022). In respect of her earlier care, the court did however find a violation of Article 8 ECHR, awarding<lb/> only pecuniary damages, however.<lb/> </bibl>
       <bibl><label>38</label> ibid., at 53.<lb/> </bibl>
       <bibl><label>39</label> ibid. at 55.<lb/> </bibl>
-        
-        References<lb/> 
-      
+
+        References<lb/>
+
       <bibl>Barclay, L. 2018. 'Disability with Dignity: Justice, Human Rights and Equal Status'. Routledge: New<lb/> York.<lb/> </bibl>
       <bibl>Clements, L., et al. 2019. 'Community Care and The Law (. Legal Action Group.<lb/> </bibl>
       <bibl>Kadivar, L., et al. 2018. 'Concept Analysis of Human Dignity in Patient Care: Rodgers' Evolutionary<lb/> Approach'. Journal of Medical Ethics and History of Medicine 11 (4): 1-11.<lb/> </bibl>
       <bibl>Kelly, B. 2017. 'Dignity, Mental Health and Human Rights: Coercion and the Law'. New York: Routledge.<lb/> Northern Ireland Human Rights Commission 'NIHRC consultation response to Department of Health's<lb/> Regional Policy on the use of Restrictive Practices in Health and Social Care Settings' (2021).<lb/> </bibl>
       <bibl>Schwehr, B. 'Where councils are going wrong in their implementation of the Care Act' Community Care<lb/> (2018).<lb/> </bibl>
       <bibl>Whitehouse, J '. 2020. The Value of Human Rights in Health and Social Care: from Covid-19 and beyond'.<lb/> British Institute of Human Rights (Blog).</bibl>
-      
+
     </listBibl>
   </text>
 </TEI>

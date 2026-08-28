@@ -46,7 +46,7 @@
         <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-12-12T15:43:31.310458Z" type="extractor">
           <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
           <label type="revision">536e79c</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <label type="variant-id">grobid.training.segmentation</label>
           <ref target="https://github.com/kermitt2/grobid"/>
         </application>
@@ -82,17 +82,17 @@
   </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
 
-	  
+
 			<note place="footnote">«Diciottesimo Secolo», anno I, 2016, pp. 62-76. <lb/></note>
-				
+
 				<front>ABSTRACT <lb/>Beginning in 1789 and escalating in intensity into at least 1793, a new temporal <lb/>schema took shape in which revolutionary time pulverized the foundations of <lb/>the old order. Revolution came to mean rejecting the past, introducing a sense <lb/>of rupture in secular time, maximizing and elongating the present in order to <lb/>turn it into a moment of personal and collective transformation, and shaping the <lb/>future in accordance with the discoveries made in the present. Time ceased <lb/>being a given. It became a medium of endless potential for change that could be <lb/>willed, that is, enacted by conscious choice. <lb/></front>
 
 			<body>In the opening lines of his report to the National Convention on the <lb/>new republican calendar, P.F.N. Fabre d'Eglantine explained the <lb/>logic of the revolutionary reform of time: «The regeneration of the <lb/>French people, the establishment of the republic, have necessarily led <lb/>to the reform of the common era [l'ère vulgaire]. We can no longer <lb/>count the years in which kings oppressed us as a time in which we <lb/>have lived». A new calendar, he argued, would produce a new <lb/>people: «it is therefore necessary to replace these visions of ignorance <lb/>with the realities of reason and priestly prestige with the truth of <lb/>nature» 1 . <lb/>The «realities of reason» and «truth of nature» required a rational <lb/>calendar divided into twelve equal months of 30 days each. The <lb/></body>
 
 			<listBibl>1 P.F.N. Fabre d'Églantine, Rapport fait à la Convention nationale dans la séance du 3 <lb/>du second mois de la seconde année de la République française, au nom de la Commission <lb/>chargée de la confection du calendrier par P.F.N. Fabre-d'Eglantine, Imprimé par ordre de <lb/>la Convention, Paris 1793, pp. 1-2. <lb/></listBibl>
-				
+
     <front>Revolutionary Time and Regeneration <lb/>LYNN HUNT <lb/></front>
-    
+
     <note place="headnote">LYNN HUNT <lb/></note>
 
 			<page>63 <lb/></page>

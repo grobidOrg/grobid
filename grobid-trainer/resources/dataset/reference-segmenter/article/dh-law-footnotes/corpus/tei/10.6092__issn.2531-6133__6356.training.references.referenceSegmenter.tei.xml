@@ -65,7 +65,7 @@
           <label>GROBID</label>
           <label type="variant-id">grobid.training.references.referenceSegmenter</label>
           <label type="revision">7272991</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <ref target="https://github.com/grobidOrg/grobid"/>
           <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
         </application>
@@ -114,17 +114,17 @@
 <bibl>ROBERT COOTER &amp; THOMAS<lb/> ULEN, LAW &amp; ECONOMICS (2000); </bibl>
 <bibl>ROBIN P. MALLOY, LAW AND MARKET ECONOMY: REINTERPRETING THE<lb/> VALUES OF LAW AND ECONOMICS (2000); </bibl>
 <bibl>NICHOLAS MERCURO &amp; STEVEN G. MEDEMA, ECONOMICS AND THE<lb/> LAW: FROM POSNER TO POST-MODERNISM AND BEYOND (2d ed. 2006).<lb/> </bibl>
-          
+
         <bibl><label>3</label> See POSNER [THE ECONOMICS OF JUSTICE], supra note 2;</bibl>
           <bibl> POSNER [ECONOMIC ANALYSIS OF LAW], supra<lb/> note 2;</bibl>
           <bibl> COOTER AND ULEN supra note 2;</bibl>
           <bibl> MALLOY, supra note 2;</bibl>
           <bibl> ROBIN PAUL MALLOY, LAW IN A MARKET<lb/> CONTEXT: AN INTRODUCTION TO MARKET CONCEPTS IN LEGAL REASONING (2004).<lb/> </bibl>
-          
+
         <bibl><label>4</label> See MALLOY, supra note 2;</bibl>
           <bibl> MALLOY, supra note 3;</bibl>
           <bibl> Malloy, supra note 1.<lb/> </bibl>
-          
+
         <bibl><label>5</label> ADAM SMITH, THE THEORY OF MORAL SENTIMENTS (1759); </bibl>
 <bibl>ADAM SMITH, AN INQUIRY INTO THE NATURE<lb/> AND CAUSES OF THE WEALTH OF NATIONS (1776); </bibl>
 <bibl>ADAM SMITH, LECTURES ON JURISPRUDENCE (Glasgow<lb/> ed., Lexicos Publishing 1982) (1896).<lb/> </bibl>
@@ -133,7 +133,7 @@
           <bibl> Neil McCormick, Adam Smith on Law,<lb/> Peter Stein, Adam Smith's Jurisprudence-Between Morality and Economics,</bibl>
           <bibl> David Lieberman, Adam<lb/> Smith on Justice, Rights, and Law,</bibl>
           <bibl> Fabrizio Simon, Adam Smith and the Law, in ADAM SMITH AND LAW<lb/> (Robin Paul Malloy ed., forthcoming Feb. 2017).<lb/> </bibl>
-          
+
         <bibl><label>8</label> See MALLOY, supra note 2;</bibl>
           <bibl> MALLOY, supra note 3;</bibl>
           <bibl> Malloy, supra note 1.<lb/> </bibl>
@@ -141,13 +141,13 @@
         <bibl><label>10</label> MALLOY, supra note 2.<lb/> </bibl>
         <bibl><label>11</label> MALLOY, supra note 3<lb/> </bibl>
         <bibl><label>12</label> Id., MALLOY, supra note 2.<lb/> </bibl>
-          
+
         <bibl><label>13</label> MALLOY, supra note 2;</bibl><bibl> MALLOY, supra note 3.<lb/> </bibl>
         <bibl><label>14</label> See, e.g., DE SOTO HERNANDO, THE MYSTERY OF CAPITAL: WHY CAPITALISM TRIUMPHS IN THE WEST AND<lb/> FAILS EVERYWHERE ELSE (2000); </bibl>
 <bibl>MALLOY, supra note 2, at 109.<lb/> </bibl>
         <bibl><label>15</label> See, e.g., DE SOTO, supra note 14;</bibl>
           <bibl> MALLOY, supra note 14.<lb/> </bibl>
-          
+
         <bibl><label>16</label> MALLOY, supra note 14;</bibl>
           <bibl> MALLOY, supra note 3.<lb/> </bibl>
         <bibl><label>17</label> MALLOY, supra note 3.<lb/> </bibl>
@@ -158,12 +158,12 @@
         <bibl><label>20</label> Malloy, supra note 1.<lb/> </bibl>
         <bibl><label>21</label> See STEPHANIE YANG, 5 Years Ago Bernie Madoff Was Sentenced to 150 Years In Prison -Here's How His<lb/> Scheme Worked, BUSINESS INSIDER, (Jul. 1, 2014), http://www.businessinsider.com/how-bernie-<lb/>madoffs-ponzi-scheme-worked-2014-7.<lb/> </bibl>
         <bibl><label>22</label> Malloy, supra note 1.<lb/> </bibl>
-          
+
         <bibl><label>23</label> See FRANCIS FUKUYAMA, TRUST: THE SOCIAL VIRTUES AND THE CREATION OF PROSPERITY (1996).<lb/> </bibl>
-          
+
         <bibl><label>24</label> See generally Joseph C. Smith, Comparative Aspects of Commonwealth and U.S. Law Since the<lb/> Collision Convention, 57 TUL. L. REV. 1092 (1983).<lb/> </bibl>
         <bibl><label>25</label> See FRANKLIN A. GEVURTZ, CORPORATION LAW 38-40 (2d ed. 2000).<lb/> </bibl>
-          
+
         <bibl><label>26</label> See, e.g., Robin Paul Malloy, Real Estate Transactions and Entrepreneurship: Transforming Value<lb/> Through Exchange, 43 IND. L. REV. 1150 (2010); </bibl>
 <bibl>DE SOTO, supra note 14.<lb/> </bibl>
         <bibl><label>27</label> Malloy, supra note 26.<lb/> </bibl>
@@ -171,10 +171,10 @@
         <bibl><label>29</label> Malloy, supra note 26.<lb/> </bibl>
         <bibl><label>30</label> See JOSEPH WILLIAM SINGER, PROPERTY LAW: RULES, POLICIES AND PRACTICES (4th ed. 2006).<lb/> </bibl>
         <bibl><label>31</label> See RICHARD H. THALER AND CASS R. SUNSTEIN, NUDGE: IMPROVING DECISIONS ABOUT HEALTH, WEALTH<lb/> AND HAPPINESS (2008).<lb/> </bibl>
-          
+
         <bibl><label>32</label> Malloy, supra note 26.<lb/> </bibl>
         <bibl><label>33</label> Malloy, supra note 26.<lb/> </bibl>
-          
+
         <bibl><label>34</label> TOM ALLEN, THE RIGHT TO PROPERTY IN COMMONWEALTH CONSTITUTIONS (2000).<lb/> </bibl>
         <bibl><label>35</label> See JEFFREY J. HAAS, CORPORATE FINANCE 25 (2014).<lb/> </bibl>
         <bibl><label>36</label> Id. at 157.<lb/> </bibl>
@@ -185,7 +185,7 @@
         <bibl>1 MANUEL<lb/> CASTELLS, THE RISE OF THE NETWORK SOCIETY: THE INFORMATION AGE -ECONOMY, SOCIETY, AND CULTURE<lb/> (2nd ed. 2010); </bibl>
 <bibl>KECHENG LIU, SEMIOTICS IN INFORMATION SYSTEMS ENGINEERING (2000).<lb/> </bibl>
         <bibl><label>38</label> Malloy, supra note 1.<lb/> </bibl>
-          
+
         <bibl><label>39</label> See EVE PREMINGER ET AL., TRUSTS AND ESTATES PRACTICE IN N.Y. § 9:249 (Volume D-E New York<lb/> Practice Series)(explaining that the three most common methods used to determine the fair<lb/> market value of real property are cost method, income capitalization and the comparable sales<lb/> method); </bibl>
 <bibl>see also MALLOY, supra note 3 (discussing contingent and hedonic value);</bibl>
           <bibl> see also HAAS,<lb/> supra note 35, at 53-5 (explaining how to calculate discounted present value).<lb/> </bibl>

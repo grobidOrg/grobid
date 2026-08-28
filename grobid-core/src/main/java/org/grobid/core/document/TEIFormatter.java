@@ -2441,7 +2441,7 @@ public class TEIFormatter {
                     BiblioItem bit = bib.getResBib();
                     bit.setReference(bib.getRawBib());
                     // expose the reference label (the footnote number propagated in the
-                    // dh-law-footnotes flavour) as @n so consumers can group references that
+                    // article/footnotes-refs flavour) as @n so consumers can group references that
                     // belong to the same footnote.
                     bit.setTeiGroupLabel(deriveGroupLabel(bib.getRefSymbol()));
                     if (bit != null) {

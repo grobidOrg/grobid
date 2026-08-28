@@ -72,7 +72,7 @@
           <label>GROBID</label>
           <label type="variant-id">grobid.training.references.referenceSegmenter</label>
           <label type="revision">7272991</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <ref target="https://github.com/grobidOrg/grobid"/>
           <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
         </application>
@@ -115,9 +115,9 @@
 <bibl>For history see M Mahruf C Shohel and others, 'Police Education in the United Kingdom: Challenges and Future<lb/> Directions.' In: Nugmanova, M., Mikkola, H., Rozanov, A., and Komleva, V. (eds) Education, Human Rights and Peace in<lb/> Sustainable Development. Intech Open, 2020.<lb/> </bibl>
         <bibl><label>4</label> Peter Neyroud, Review of Police Leadership and Training (2011). London: Home Office, at 129.<lb/> </bibl>
         <bibl><label>5</label> Ibid.<lb/> </bibl>
-        <bibl><label>6</label> See Pauline Ramshaw and Sarah Soppitt, 'Educating the recruited and recruiting the educated: Can the new<lb/> Police Education Qualifications Framework in England and Wales succeed where others have faltered.' [2018]<lb/> Police Science &amp; Management, 20(4): 243-250;</bibl> 
+        <bibl><label>6</label> See Pauline Ramshaw and Sarah Soppitt, 'Educating the recruited and recruiting the educated: Can the new<lb/> Police Education Qualifications Framework in England and Wales succeed where others have faltered.' [2018]<lb/> Police Science &amp; Management, 20(4): 243-250;</bibl>
          <bibl> Jyoti Belur and others, 'A Systematic Review of Police<lb/> Recruit Training Programmes' [2019] Policing 14(1): 76-90.<lb/> </bibl>
-        <bibl><label>7</label> Katie Strudwick 'Learning through practice: Collaborative policing partnerships in teaching in higher<lb/> education' [2021] The Police Journal: Theory, Practice and Principles, 94(1) 58-74;</bibl> 
+        <bibl><label>7</label> Katie Strudwick 'Learning through practice: Collaborative policing partnerships in teaching in higher<lb/> education' [2021] The Police Journal: Theory, Practice and Principles, 94(1) 58-74;</bibl>
           <bibl>Colin Rogers and James<lb/> Gravelle, 'Implementing a police foundation degree -insights from South Wales'[2019] Policing: A Journal of<lb/> Policy and Practice, 1-13<lb/> </bibl>
         <bibl><label>8</label> College of Policing. Policing Education Qualifications Framework, Initial Entry Routes into Policing: Police<lb/> Constable. A Strategic Overview [2018] at 13 cited in Belur and others (n. 4) at 77.<lb/> </bibl>
         <bibl><label>9</label> Cheryl Simmill-Binning and Jude Towers, Education, training and learning in policing in England and Wales'<lb/> [2017] N8 Policing Research Partnership. Lancaster: Lancaster University.<lb/> </bibl>

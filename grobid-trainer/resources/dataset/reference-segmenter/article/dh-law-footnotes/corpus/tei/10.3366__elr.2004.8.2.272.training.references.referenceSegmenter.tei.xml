@@ -64,7 +64,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-04-29T16:46:45.394379Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.8.2-81-g2739f2ef4</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -129,7 +129,7 @@
       <bibl>See also Balfour, Practicks, No 305.<lb/> </bibl>
       <bibl><label>18</label> Section 51.<lb/> </bibl>
       <bibl><label>19</label> See G Watson (ed), Bell's Dictionary and Digest of the Law of Scotland, 7th edn (1890), "Supplement"<lb/> and references there cited.<lb/> </bibl>
-      
+
       <bibl><label>20</label> The procedure was extended to the service of an arrestment in the hands of a party furth of Scotland by<lb/> the Debtors (Scotland) Act 1838 (the "Personal Diligence Act"), s 18.<lb/> </bibl>
       <bibl><label>21</label> The office of the Keeper of the Records was established by Court of Session (Records) Act 1815. It was<lb/> abolished from 1839: Court of Session Act (No 2) 1838, ss 20 and 21. The responsibility thereafter passed<lb/> to the Office of the Keeper of Edictal Citations and of the Minute Book.<lb/> </bibl>
       <bibl><label>22</label> See Act of Sederunt 24 Dec 1838, s 7. </bibl>
@@ -146,7 +146,7 @@
       <bibl> Morrison v Vallentine's Exrs 1907 SC 999;<lb/></bibl>
       <bibl>Young v Harper 1970 SC 174 OH.<lb/> </bibl>
       <bibl><label>31</label> A simplified form is provided in the Transmission of Moveable Property (Scotland) Act 1862.<lb/></bibl>
-      
+
       <bibl><label>32</label> Section 19 (1). </bibl>
       <bibl>See W A Wilson and A G M Duncan, Trusts, Trustees and Executors, 2nd edn (1995) at<lb/> para 22-30.<lb/></bibl>
       <bibl><label>33</label> Rules of the Court of Session, r 16.12(4).<lb/> </bibl>
@@ -156,17 +156,17 @@
       <bibl>Ordinary Cause Rules, r 5.5 and r 5.6. Both the Rules of the Court<lb/> of Session and the Ordinary Cause Rules are available online at &lt;www.scotcourts.gov.uk&gt;.<lb/> </bibl>
       <bibl><label>37</label> Carter v McIntosh (1862) 24 D 925 at 934 per Lord Justice-Clerk Inglis.<lb/> </bibl>
       <bibl><label>38</label> Stair, Institutions, 4.40.33. </bibl>
-      <bibl>Cf Erskine, Institute, 3.4.3.</bibl> 
+      <bibl>Cf Erskine, Institute, 3.4.3.</bibl>
       <bibl>An arrestee is now protected by statute: Debts<lb/> Securities (Scotland) Act 1856, s 1, cited by W A Wilson, The Scottish Law of Debt 2nd edn (1991) para 17.5.<lb/> </bibl>
       <bibl><label>39</label> See note 38 above.<lb/> </bibl>
       <bibl><label>40</label> The doctrine of data certa is a feature of some continental European systems. Although there are few<lb/> references to this doctrine in the Scottish sources, this must have been one of the motivations for the<lb/> creation of the Books of Council and Session: see The Laws of Scotland: Stair Memorial Encyclopaedia<lb/> vol 19 (1990), J Imrie, "Public registers and records", para 839.<lb/> </bibl>
       <bibl><label>41</label> Tod's Trs v Wilson (1869) 7 M 1100.<lb/> </bibl>
-      
-      
+
+
       <bibl><label>1</label> 2003 SLT 910. References are to the paragraph numbers of the report. </bibl>
       <bibl>See also J Thomson, "Limiting<lb/> Smith" 2003 SLG 158.<lb/> </bibl>
       <bibl><label>2</label> S Eden, "Cautionary tales -the continued development of Smith v Bank of Scotland" (2003) 7 EdinLR 107.<lb/> </bibl>
-      
+
       <bibl type="footnote"><label>3</label> There were in fact two actions against each of two Wilson brothers and their respective wives. One loan<lb/> was for the purchase of a home, the other for the construction of a conservatory. The facts are sufficiently<lb/> similar to raise identical issues, although there are two Mrs Wilsons.</bibl>
     </listBibl>
   </text>

@@ -68,7 +68,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:50:34.135080Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">fd543f4</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -121,8 +121,8 @@
       <bibl>In addition to evidence in newspapers, publications on the OP riots did appear after the cessation of<lb/> hostilities, notable among which is Thomas Tegg's The Rise, Progress, and Termination of the O. P. War,<lb/> in Poetic Epistles (London: Thomas Tegg, 1810).<lb/> </bibl>
       <bibl><label>8</label> M. Baer, Theatre and Disorder in Late Georgian London (Oxford: Clarendon Press, 1992).<lb/> </bibl>
       <bibl><label>9</label> J. Moody, Illegitimate Theatre in London, 1770-1840 (Cambridge: Cambridge University Press, 2000).<lb/> </bibl>
-      <bibl><label>10</label> P. Spence, The Birth of Romantic Radicalism: War, Popular Politics, and English Radical Reformism,<lb/> 1800-1815 (Aldershot: Ashfield, 1996).</bibl> 
-      <bibl>The conflict does not feature, for example, in either John Ste-<lb/>venson, Popular Disturbances in England, 1700-1870 (London: Longman, 1979)</bibl> 
+      <bibl><label>10</label> P. Spence, The Birth of Romantic Radicalism: War, Popular Politics, and English Radical Reformism,<lb/> 1800-1815 (Aldershot: Ashfield, 1996).</bibl>
+      <bibl>The conflict does not feature, for example, in either John Ste-<lb/>venson, Popular Disturbances in England, 1700-1870 (London: Longman, 1979)</bibl>
       <bibl>or John Stevenson,<lb/> Popular Disturbances in England, 1700-1832 (London: Longman, 1992).<lb/> </bibl>
       <bibl><label>11</label> McPherson, 'Theatrical Riots,' 7.<lb/> </bibl>
       <bibl><label>12</label> R. Poole, 'The March to Peterloo: Politics and Festivity in Late Georgian England,' Past and Present<lb/> 192.1 (2006).<lb/> </bibl>
@@ -138,13 +138,13 @@
       <bibl><label>21</label> An argument made in J. M. Beattie, Policing and Punishment in London, 1660-1750 (Oxford: Oxford<lb/> University Press, 2001).<lb/> </bibl>
       <bibl><label>22</label> See Joanna Innes and John Styles, 'The Crime Wave: Recent Wrtiing on Crime and Criminal Justice in<lb/> Eighteenth-Century England,' Journal of British Studies 25 (1986), 380-435.<lb/> </bibl>
       <bibl><label>23</label> Beattie, First English Detectives, pp. 167-205.<lb/> </bibl>
-      <bibl><label>24</label> I. Cruikshank and G. Cruikshank, ACTING MAGISTRATES committing themselves being their first<lb/> appearance on this stage as performed at the National Theatre Covent Garden. Sepr 18 1809 (1809;<lb/> British Museum Satires 11418).</bibl> 
+      <bibl><label>24</label> I. Cruikshank and G. Cruikshank, ACTING MAGISTRATES committing themselves being their first<lb/> appearance on this stage as performed at the National Theatre Covent Garden. Sepr 18 1809 (1809;<lb/> British Museum Satires 11418).</bibl>
       <bibl>For the function of reportage in satirical prints published during the<lb/> OP War see J. Baker, 'The OP War, Libertarian Communication and Graphic Reportage in Georgian<lb/> London,' European Comic Art 4.1 (2011).<lb/> </bibl>
       <bibl><label>25</label> Old Bailey Proceedings Online (www.oldbaileyonline.org, version 7.0), 21 February 1810, trial of Abra-<lb/>ham Hart and Edward White (t18100221-108).<lb/> </bibl>
       <bibl><label>26</label> The Times, 13 November 1809.<lb/> </bibl>
-      
+
       <bibl type="footnote"><label>27</label> The fact that Brandon tended to speak for the prosecution at Bow Street means few other names are<lb/> mentioned with regards to arrest. Indeed the ire OPs developed against the Covent Garden doorman<lb/> meant that most testimonies for the defence addressed Brandon directly, except in cases where one<lb/> member of the audience arrested another and brought them to Bow Street. Reports do make mention<lb/> of witnesses for the prosecution, though it is rarely clear if they were constables or hired-hands.<lb/> </bibl>
-      
+
       <bibl><label>28</label> Morning Chronicle, 17 October 1809; The Times, 23 October 1809.<lb/> </bibl>
       <bibl><label>29</label> The Times, 21 September 1809.<lb/> </bibl>
       <bibl><label>30</label> The Times, 11 October, 13 November, 27 November 1809.<lb/> </bibl>
@@ -156,16 +156,16 @@
       <bibl><label>33</label> The Times, 16 October 1809.<lb/> </bibl>
       <bibl><label>34</label> Examiner, 29 October 1809; The Times, 21 November 1809.<lb/> </bibl>
       <bibl><label>35</label> The Times, 22 September 1809.<lb/> </bibl>
-      <bibl><label>36</label> The Times, 11 October 1809; The Morning Chronicle, 11 October 1809; Examiner, 15 October 1809.<lb/> 
-      
+      <bibl><label>36</label> The Times, 11 October 1809; The Morning Chronicle, 11 October 1809; Examiner, 15 October 1809.<lb/>
+
         <bibl><label>37</label> The Times, 6 November 1809.<lb/> </bibl>
       <bibl><label>38</label> The Times, 19 November 1809.<lb/> </bibl>
       <bibl><label>39</label> The Times, 26 October 1809.<lb/> </bibl>
       <bibl><label>40</label> Examiner, 29 October 1809.<lb/> </bibl>
-        
+
       <bibl><label>41</label> The legal system did on many occasions work to the advantage of the OPs. A Jewish pugilist, presumed<lb/> to have been hired by the Covent Garden Theatre management, was prosecuted at Bow Street on<lb/> 10 November (The Times, 11 November 1809). </bibl>
         John Winholt, an OP who visited the magistrates' office<lb/> on over four occasions in Autumn 1809, had on 22 November a hat returned to him that had been<lb/> stolen whilst he protested at Covent Garden Theatre (The Times, 23 November 1809).<lb/> </bibl>
-        
+
       <bibl><label>42</label> Henry Hoskins, who appeared at the Old Bailey on 1 November 1809 charged with highway robbery,<lb/> went so far as to use his reluctance to accompany his accuser to Covent Garden Theatre 'because<lb/> his intention was to kick up a row in the house' as evidence of his good character. It is tempting, if<lb/> unsubstantiated, to suggest that given the magistracy's distate for the OPs that this played a part in<lb/> his acquittal. Old Bailey Proceedings Online, 1 November 1809, trial of Henry Hoskins (t18091101-45).<lb/> </bibl>
       <bibl><label>43</label> The Times, 21 November 1809.<lb/> </bibl>
       <bibl><label>44</label> I. Haywood and J. Reed (eds.), The Gordon Riots: Politics, Culture and Insurrection in Late Eighteenth-<lb/>Century Britain (Cambridge: Cambridge University Press, 2012).<lb/> </bibl>
@@ -176,12 +176,12 @@
       <bibl><label>49</label> Morning Chronicle, 13 October 1809.<lb/> </bibl>
       <bibl><label>50</label> Morning Chronicle, 14 October 1809.<lb/> </bibl>
       <bibl><label>51</label> The Times, 16 October 1809; Morning Chronicle, 16 October 1809.<lb/> </bibl>
-      
+
       <bibl type="footnote"><label>52</label> This John Soane is not to be confused with the famous architect John Soane.<lb/> </bibl>
-      
+
       <bibl><label>53</label> The Times, 16 October 1809.<lb/> </bibl>
       <bibl><label>54</label> Morning Chronicle, 16 October 1809.<lb/> </bibl>
-     
+
       <bibl><label>55</label> Reports suggest that in late-November 1809 numerous arrests for making noise were made without<lb/> clearly verifying the identity of the offender; see for example The Times, 23 November 1809.<lb/> </bibl>
       <bibl><label>56</label> Baer, Theatre and Disorder, 113.<lb/> </bibl>
       <bibl><label>57</label> Morning Post, 1 December 1809.<lb/> </bibl>
@@ -197,10 +197,10 @@
       <bibl><label>67</label> Morning Chronicle, 13 October 1809.<lb/> </bibl>
       <bibl><label>68</label> Morning Chronicle, 16 October 1809.<lb/> </bibl>
       <bibl><label>69</label> The Times, 20 October 1809.<lb/> </bibl>
-     
+
       <!-- the following seems to be a single reference -->
       <bibl><label>70</label> O. P. Riots. Exhibitions. -Panoramas. -Peace Jubilee and Sundries. 1809-1814. 1809-1814. MS Radi-<lb/>cal Politics and the Working Man in England: Part Two: Sets 47-49, 51-53, 55-63, and 65-72 Set 59;<lb/> Vol 2. British Library, 30. Nineteenth Century Collections Online. Web. 14 Oct. 2014. http://tinyurl.<lb/> galegroup.com/tinyurl/Ktan6<lb/> </bibl>
-      
+
       <bibl><label>71</label> Tegg, The O. P. War. For his style of business see J. Barnes and P. Barnes, 'Reassessing the Reputation of<lb/> Thomas Tegg, London Publisher, 1776-1846,' Book History 3 (2000).<lb/> </bibl>
       <bibl><label>72</label> Morning Chronicle, 3 November 1809.<lb/> </bibl>
       <bibl><label>73</label> Ibid.<lb/> </bibl>

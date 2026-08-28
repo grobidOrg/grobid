@@ -64,7 +64,7 @@
       <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-05-19T15:08:31.577628Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.9.0-62-gdd0608bb6</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -98,12 +98,12 @@
       <bibl><label>1</label> Beccy Baird, et al., Understanding Pressures in General Practice (King's Fund 2016).<lb/> </bibl>
       <bibl><label>2</label> Ruth Robertson et al., Clinical Commissioning: GPs in Charge (King's Fund 2016); </bibl>
       <bibl>Jonathan Botting et al.,<lb/> 'Safety of Community-Based Minor Surgery Performed by GPs: An Audit in Different Settings' (2016) 66 British<lb/> Journal of General Practice e323.<lb/> </bibl>
-      
+
       <bibl><label>4</label> Aneez Esmail et al., Case Studies in Litigation: Claims Reviews in Four Specialties (Manchester Centre for<lb/> Healthcare Management, University of Manchester 2004).<lb/> </bibl>
       <bibl><label>5</label> Kevin Williams, 'Doctors as Good Samaritans: Some Empirical Evidence Concerning Emergency Medical<lb/> Treatment in Britain' (2003) 30 Journal of Law and Society 258.<lb/> </bibl>
-      
+
       <bibl type="footnote"><label>6</label> A Freedom of Information Request was submitted by the author to the NHSLA on 16/10/2017, requesting data<lb/> on claims made against GPs over the last six years. The NHSLA's response, sent on 2/11/2017, provided data on<lb/> all the claims made against GPs over the last six years since its CNST Scheme began in 1995. The data reflected<lb/> the cumulative number of claims made during that time period. Thus, in 2012, the total number of claims made<lb/> against GPs since 1995 was 363. In 2013, the figure was 446. In 2014, the figure was 524. In 2015, the figure<lb/> was 550. In 2016, the figure was 672. Thus, as of 31/3/17, the total number of claims made against GPs since<lb/> 1995 is 727. The most significant increase in claims was between 2015 and 2016. It is difficult to discern from<lb/> the data above why this may have been the case. One possible reason is the changes made to the Clinical<lb/> Negligence Pre-Action Protocol, which came into force in April 2015. Equally, the continued impact of one-way<lb/> costs-shifting, introduced in April 2013 for personal injury (including clinical negligence) claims, may have<lb/> affected the figures. However, it is impossible to tell from the data provided.<lb/> </bibl>
-      
+
       <bibl><label>7</label> Baird et al., n 1.<lb/> </bibl>
       <bibl><label>8</label> Rob Heywood and José Miola, 'The Changing Face of Pre-Operative Medical Disclosure: Placing the Patient at<lb/> the Heart of the Matter' (2017) 133 Law Quarterly Review 296; </bibl>
       <bibl>Harvey Teff, Reasonable Care: Legal<lb/> Perspectives on the Doctor Patient Relationship (OUP 1996).<lb/> </bibl>
@@ -117,10 +117,10 @@
       <bibl><label>14</label> Maynard v West Midlands Regional Health Authority [1984] 1 WLR 634.<lb/> </bibl>
       <bibl><label>15</label> Harvey Teff, 'The Standard of Care in Clinical Negligence -Moving on from Bolam' (1998) 18 Oxford Journal<lb/> of Legal Studies 473 at 481.<lb/> </bibl>
       <bibl><label>16</label> Michael Jones, 'The Bolam Test and the Reasonable Expert' (1999) 7 Tort Law Review 226.<lb/> </bibl>
-      <bibl><label>17</label> Hucks v Cole (1968) [1993] 4</bibl> 
+      <bibl><label>17</label> Hucks v Cole (1968) [1993] 4</bibl>
       <bibl>Med LR 393 at 397. It should be noted that this case was actually decided in<lb/> 1968, and only reported later in 1993.<lb/> </bibl>
       <bibl><label>18</label> Bolitho v City &amp; Hackney Health Authority [1998] AC 232. See Andrew Grubb, 'Negligence: Causation and<lb/> Bolam' (1998) 6 Medical Law Review 378. It should be noted that Lord Browne-Wilkinson restricted his reasoning<lb/> only to matters of diagnosis and treatment. Disclosure of risks fell outside the scope of the judgment.<lb/> </bibl>
-      <bibl><label>19</label> Margaret Brazier and José Miola, 'Bye Bolam: A Medical Litigation Revolution?' (2000) 8 Medical Law Review<lb/> 85;</bibl> 
+      <bibl><label>19</label> Margaret Brazier and José Miola, 'Bye Bolam: A Medical Litigation Revolution?' (2000) 8 Medical Law Review<lb/> 85;</bibl>
       <bibl>John Keown, 'Reining in the Bolam Test' (1998) 57 Cambridge Law Journal 248.<lb/> </bibl>
       <bibl><label>20</label> Bolitho, n 18. Per Lord Browne-Wilkinson at p. 243.<lb/> </bibl>
       <bibl><label>21</label> Grubb, n 18.<lb/> </bibl>
@@ -135,24 +135,24 @@
       <bibl><label>28</label> Judy M Laing, 'Delivering Informed Consent post-Montgomery: Implications for Medical Practice and<lb/> Professionalism' (2017) 33 Journal of Professional Negligence 128, at pp. 142 -152.<lb/> </bibl>
       <bibl><label>29</label> Tallis, n 10.<lb/> </bibl>
       <bibl><label>30</label> Kay's Tutor v Ayrshire and Arran Health Board [1987] 2 All ER 417.<lb/> </bibl>
-      <bibl><label>31</label> Maguire v Northwest Strategic Health Authority [2012] EWHC 3272 at [18] - [19]. Similar arguments have<lb/> also been made in respect of pharmacists, who also should have noticed errors on the part of a GP. See Dwyer v<lb/> Roderick (1983) 127 SJ 806;</bibl> 
+      <bibl><label>31</label> Maguire v Northwest Strategic Health Authority [2012] EWHC 3272 at [18] - [19]. Similar arguments have<lb/> also been made in respect of pharmacists, who also should have noticed errors on the part of a GP. See Dwyer v<lb/> Roderick (1983) 127 SJ 806;</bibl>
       <bibl>Prendergast v Sam and Dee Ltd [1990] 1 Med LR 36.<lb/></bibl>
-      
+
       <bibl><label>32</label> [2011] EWCA Civ 669; [2013] QB 312.<lb/> </bibl>
       <bibl><label>33</label> Ibid at [37].<lb/> </bibl>
-      
+
       <bibl><label>34</label> Ibid at [61].<lb/> </bibl>
-      <bibl><label>35</label> Nicholas J McBride and Sandy Steel, 'Suing For The Loss of a Right to Sue: Why Wright is Wrong' (2012) 28<lb/> Journal of Professional Negligence 27;</bibl> 
+      <bibl><label>35</label> Nicholas J McBride and Sandy Steel, 'Suing For The Loss of a Right to Sue: Why Wright is Wrong' (2012) 28<lb/> Journal of Professional Negligence 27;</bibl>
       <bibl>Kumaralingam Amirthalingam, 'Causation and the Medical Duty to Refer'<lb/> (2012) 128 Law Quarterly Review 208.<lb/> </bibl>
-      <bibl><label>36</label> Baxter and Others v McCann [2010] EWHC 1330; [2010] Med LR 473;</bibl> 
+      <bibl><label>36</label> Baxter and Others v McCann [2010] EWHC 1330; [2010] Med LR 473;</bibl>
       <bibl>A v Enskat [2003] EWHC 1630.<lb/> </bibl>
-      <bibl><label>37</label> [2005] UKHL 2; [2005] 2 AC 176 at [5].</bibl> 
+      <bibl><label>37</label> [2005] UKHL 2; [2005] 2 AC 176 at [5].</bibl>
       <bibl>See Emmanuel Voyiakis, 'The Great Illusion: Tort Law and Exposure<lb/> to Danger of Physical Harm (2009) 72 Modern Law Review 909.<lb/> </bibl>
       <bibl><label>38</label> Ibid.<lb/> </bibl>
       <bibl><label>39</label> Lords Nicholls and Hope dissented.<lb/> </bibl>
       <bibl><label>40</label> Wright, n 32 at [84].<lb/> </bibl>
       <bibl><label>41</label> National Health Service Litigation Authority, Factsheet 3 (August 2017). Since 1995, the total number of<lb/> claims made against GPs currently stands at 727. By comparison, in the same time period, the number of surgical<lb/> claims stands at 50, 432, and the number of obstetrics and gynaecology claims stands at 23,415.<lb/> </bibl>
-      
+
       <bibl><label>42</label> Margaret Brazier and Emma Cave, Medicine, Patients and the Law (6 th edn, Manchester University Press 2016)<lb/> at 220.<lb/> </bibl>
       <bibl><label>43</label> Denis Campbell and Sarah Boseley, 'GP Negligence Claims: Alarming Rise Revealed' The Guardian (London,<lb/> 29 July 2011) &lt;https://www.theguardian.com/society/2011/jul/29/gps-missing-serious-illnesses&gt; accessed 2<lb/> October 2017.<lb/> </bibl>
       <bibl><label>44</label> See https://www.gmc-uk.org/concerns/hearings_and_decisions/an_introduction_to_adjudication.asp.<lb/> </bibl>
@@ -165,34 +165,34 @@
       <bibl><label>49</label> Heywood and Miola, n 8.<lb/> </bibl>
       <bibl><label>50</label> Goodwin et al., n 47; </bibl>
       <bibl>Baird et al., n 1.<lb/> </bibl>
-      
+
       <bibl><label>51</label> See n 6.<lb/> </bibl>
       <bibl><label>52</label> Campbell and Boseley, n 43. Medical defence organisations, such as the Medical Defence Union and the<lb/> Medical Protection Society, provide indemnity for GP members against clinical negligence claims. They are not,<lb/> however, insurers.<lb/> </bibl>
       <bibl><label>53</label> Brazier and Cave, n 42 at 219.<lb/> </bibl>
       <bibl><label>54</label> Esmail et al., n 4.<lb/> </bibl>
       <bibl><label>55</label> Bolitho, n 18.<lb/> </bibl>
       <bibl><label>56</label> Bolam, n 11.<lb/> </bibl>
-      
+
       <bibl><label>57</label> Some information on abandoned claims can be found in the Medical Protection Society and Medical Defence<lb/> Union annual reports. See https://www.medicalprotection.org/uk/resources/case-reports. It should also be noted<lb/> that the coverage of case law across different legal databases does not always match, and the search in this study<lb/> did not take account of cases which may have appeared on either LexisNexis or Bailii. Prison doctors, who fulfil<lb/> the role of GP for prisoners, were included in the scope of the study.<lb/> </bibl>
-      
-      <bibl><label>58</label> Goodwin et al., n 47 at p. 46;</bibl> 
+
+      <bibl><label>58</label> Goodwin et al., n 47 at p. 46;</bibl>
       <bibl>Esmail et al., n 4.<lb/> </bibl>
       <bibl><label>59</label> Ibid.<lb/> </bibl>
-      
-      <bibl><label>60</label> [2013] EWCA Civ 547;</bibl> 
+
+      <bibl><label>60</label> [2013] EWCA Civ 547;</bibl>
       <bibl>[2013] Med LR 327.<lb/> </bibl>
       <bibl><label>61</label> Ibid at [27].<lb/> </bibl>
-      <bibl><label>62</label> [2007] EWHC 1602;</bibl> 
+      <bibl><label>62</label> [2007] EWHC 1602;</bibl>
       <bibl>[2007] LS Law Medical 676 at [39].<lb/> </bibl>
       <bibl><label>63</label> Baird et al., n 1 at 30; Health and Social Care Information Centre (HSCIC), 2006/07 UK General Practice<lb/> Workload Survey (Health &amp; Social Care Information Centre 2007).<lb/> Available at:<lb/> https://digital.nhs.uk/catalogue/PUB01028.<lb/></bibl>
-      
+
       <bibl><label>64</label> [2011] EWHC 219.<lb/> </bibl>
       <bibl><label>65</label> Ibid at [117].<lb/></bibl>
       <bibl><label>66</label> Teff, n 15; Jones, n 16.<lb/></bibl>
       <bibl><label>67</label> See Coakley v Rosie [2014] EWHC 1790 at [60] -[61].<lb/> </bibl>
-      
+
       <bibl><label>68</label> Enskat, n 36 at [161] -[162].<lb/> </bibl>
-      
+
       <bibl><label>69</label> FB v Rana [2015] EWHC 1536; </bibl>
       <bibl>W v Johnson [2015] EWHC 276; </bibl>
       <bibl>Doy, n 60; J v Hillard and Others, 24 th May<lb/> 2001, Unreported.<lb/> </bibl>
@@ -202,119 +202,119 @@
       <bibl><label>73</label> Ibid at [34].<lb/> </bibl>
       <bibl><label>74</label> Ibid at [41].<lb/> </bibl>
       <bibl><label>75</label> Ibid at [90], and [94] -[95].<lb/> </bibl>
-      
+
       <bibl><label>76</label> [2008] EWHC 1937 at [112].<lb/> </bibl>
       <bibl><label>77</label> Ibid at [43].<lb/> </bibl>
       <bibl><label>78</label> Coakley, n 67 at [62].<lb/> </bibl>
       <bibl><label>79</label> [2006] EWHC 2880; (2007) 93 BMLR 166.<lb/> </bibl>
-      
+
       <bibl><label>80</label> Alan Gardner et al., 'Cauda Equina Syndrome: A Review of the Current Clinical and Medico-Legal Position<lb/> (2011) 20 European Spine Journal 690.<lb/> </bibl>
       <bibl><label>81</label> Zarb, n 79 at [15].<lb/> </bibl>
       <bibl><label>82</label> Ibid at [3].<lb/> </bibl>
       <bibl><label>83</label> Ibid at [111].<lb/> </bibl>
-      
-      <bibl><label>84</label> See Large, n 76;</bibl> 
-      <bibl>Coakely, n 67;</bibl> 
+
+      <bibl><label>84</label> See Large, n 76;</bibl>
+      <bibl>Coakely, n 67;</bibl>
       <bibl>and Ganz v Childs [2011] EWHC 13; [2011] Med LR 113.<lb/> </bibl>
       <bibl><label>85</label> Mulheron; Heywood, n 22.<lb/> </bibl>
       <bibl><label>86</label> Marriott, above n 23.<lb/> </bibl>
       <bibl><label>87</label> [2008] EWHC 741 at Conclusions, [xiv].<lb/> </bibl>
-      
-      <bibl type="footnote"><label>88</label> It should be noted that the number of treatment cases in this study was statistically very small.<lb/></bibl> 
-      
-      <bibl><label>89</label> Maguire, n 31.<lb/></bibl> 
-      
+
+      <bibl type="footnote"><label>88</label> It should be noted that the number of treatment cases in this study was statistically very small.<lb/></bibl>
+
+      <bibl><label>89</label> Maguire, n 31.<lb/></bibl>
+
       <bibl><label>91</label> Maguire, n 31 at [30]. The tilt test is a relatively simple and non-invasive diagnostic procedure, the aim of<lb/> which is to assess whether or not any fistula has healed, or if there is still evidence of a recurrent leak when the<lb/> patient experiences downward pressure.<lb/> </bibl>
       <bibl><label>92</label> Ibid at [118].<lb/> </bibl>
       <bibl><label>93</label> Indeed, HHJ Cotter QC was satisfied that a responsible body of clinicians would not have undertaken a tilt test,<lb/> at [116].<lb/> </bibl>
       <bibl><label>94</label> [2004] EWHC 2424. For the purposes of analysis this was classified as a treatment case, which the claimant<lb/> lost. A subsequent allegation of negligent disclosure was heard before the Court of Appeal, discussed below.<lb/> </bibl>
-      
+
       <bibl><label>95</label> Ibid at [18] -[20].<lb/> </bibl>
       <bibl><label>96</label> Ibid at [17].<lb/> </bibl>
       <bibl><label>97</label> Ibid at [22]. The delay would not have placed the child in any immediate danger.<lb/> </bibl>
       <bibl><label>98</label> The 1996 edition of the "Green Book" was identified by both experts as the definitive work which a reasonably<lb/> competent GP should apply. See Thompson, n 94 at [23].<lb/> </bibl>
       <bibl><label>99</label> The claimant in Thompson eventually lost, which the Court of Appeal later affirmed. See [2005] EWCA Civ<lb/> 1439;</bibl>
       <bibl>[2006] Lloyd's Rep Med 95. For an interesting criminal law example of a GP case in which a judge engaged<lb/> with the expert opinion in a thorough manner, which effectively led to the Crown being hoist by its own petard,<lb/> see R v Rudling [2016] EWCA Crim 741.<lb/> </bibl>
-      
+
       <bibl><label>100</label> Ganz, n 84. Emphasis in the original judgment at [101].<lb/> </bibl>
       <bibl><label>101</label> Ibid.<lb/> </bibl>
       <bibl><label>102</label> [2010] EWCA Civ 694 at [23].<lb/> </bibl>
       <bibl><label>103</label> Ibid at [14] - [18]. The defendant relied upon the then NICE 2005 Guidelines on Diagnosis of Breast Cancer,<lb/> and the Kent &amp; Medway Cancer Network Guidelines.<lb/></bibl>
       <bibl><label>104</label> See NICE Guideline (NG 12) 'Suspected Cancer: Recognition and Referral', June 2015, at [1.4] and [1.16].<lb/> </bibl>
-      
-      <bibl><label>105</label>  Denis Campbell et al., 'GP Practices "Offered Rewards" For Not Referring Patients To Hospitals', The<lb/> Guardian, Thursday 1 st October, 2015.</bibl> 
+
+      <bibl><label>105</label>  Denis Campbell et al., 'GP Practices "Offered Rewards" For Not Referring Patients To Hospitals', The<lb/> Guardian, Thursday 1 st October, 2015.</bibl>
       <bibl>Also, Robertson, n 2.<lb/> </bibl>
       <bibl><label>106</label> For an example see the judgment of Gross J in Mellor v Sheffield Teaching Hospitals NHS Trust and Others<lb/> [2004] EWHC 780 at [228] (1) (iii) (c).<lb/> </bibl>
       <bibl><label>107</label>  Communication errors, and the need for good communication, is not a new problem manifested solely in this<lb/> study. See, for example, Judith Laing and Jean McHale (eds), Principles of Medical Law (4 th edn, OUP 2017) at<lb/> [4.83];</bibl>
       <bibl>GMC, Good Medical Practice (GMC 2013) at pp 13-18.<lb/> </bibl>
       <bibl><label>108</label>  Debra Roter and Judith A Hall, Doctors Talking with Patients/Patients Talking with Doctors: Improving<lb/> Communication in Medical Visits (2 nd edn, Praeger 2006); </bibl>
-      <bibl>LML Ong et al., 'Doctor-Patient Communication: A<lb/> Review of the Literature' (1995) 40 Social Science and Medicine 903.<lb/> </bibl> 
-      <bibl><label>109</label> Jimmy Nguyen, 'Communication-Related Allegations Against Physicians Caring for Premature Infants (2017)<lb/> 37 Journal of Perinatology 1148;</bibl> 
+      <bibl>LML Ong et al., 'Doctor-Patient Communication: A<lb/> Review of the Literature' (1995) 40 Social Science and Medicine 903.<lb/> </bibl>
+      <bibl><label>109</label> Jimmy Nguyen, 'Communication-Related Allegations Against Physicians Caring for Premature Infants (2017)<lb/> 37 Journal of Perinatology 1148;</bibl>
       <bibl>Joseph Domino et al., 'Lack of Physician-Patient Communication as a Key<lb/> Factor Associated with Malpractice Litigation in Neonatal Brachial Plexus Palsy' (2014) 13 Journal of<lb/> Neurosurgery: Pediatrics 238.<lb/> </bibl>
-      
-      <bibl><label>110</label> Karen L Posner et al., The Role of Informed Consent in Patient Complaints: Reducing Hidden Health System<lb/> Costs and Improving Patient Engagement Through Shared Decision Making' (2015) 35 Journal of Healthcare<lb/> Risk Management 38;</bibl> 
+
+      <bibl><label>110</label> Karen L Posner et al., The Role of Informed Consent in Patient Complaints: Reducing Hidden Health System<lb/> Costs and Improving Patient Engagement Through Shared Decision Making' (2015) 35 Journal of Healthcare<lb/> Risk Management 38;</bibl>
       <bibl>Steven R. Eastaugh, 'Reducing Litigation Costs Through Better Patient Communication'<lb/> (2004) 30 Physician Executive 36.<lb/> </bibl>
       <bibl><label>111</label> [2014] EWHC 720.<lb/> </bibl>
       <bibl><label>112</label> Large, n 76 at [104].<lb/> </bibl>
       <bibl><label>113</label> Maguire, n 31.<lb/> </bibl>
-      
+
       <bibl><label>114</label> Ibid at [92].<lb/> </bibl>
       <bibl><label>115</label> Jonathan Herring et al., 'Elbow Room for Best Practice? Montgomery, Patients' Values, and Balanced<lb/> Decision-Making in Person-Centred Clinical Care', Medical Law Review doi:10.1093/medlaw/fwx029.<lb/> </bibl>
       <bibl><label>116</label> Per HHJ Cotter QC in Maguire, n 31 at [78].<lb/> </bibl>
       <bibl><label>117</label> A classic example of the potential consequences of failing to initiate an appropriate dialogue with a patient is<lb/> found in the adult GP referral case of Holt v Edge [2007] EWCA Civ 602; (2007) 97 BMLR 74, a Court of Appeal<lb/> decision included in this study. Here it was recognised that the GP did not engage is sufficient 'direct' questioning<lb/> of the patient in order to illicit an accurate diagnosis. The claim eventually failed because it was determined that,<lb/> even if the GP had asked the appropriate direct question, it would not have prompted a response which would<lb/> have necessitated an immediate hospital referral.<lb/> </bibl>
-      <bibl><label>118</label> McCabe v Moore and Others [2015] EWHC 260;</bibl> 
+      <bibl><label>118</label> McCabe v Moore and Others [2015] EWHC 260;</bibl>
       <bibl>Donald and Others v Ayrshire &amp; Arran Health Board and<lb/> Others [2013] CSOH 23;</bibl>
       <bibl>2013 GWD 7-166; </bibl>
-      <bibl>Ganz, n 84;</bibl> 
-      <bibl>Large, n 76;</bibl> 
+      <bibl>Ganz, n 84;</bibl>
+      <bibl>Large, n 76;</bibl>
       <bibl>Langdon, n 87.<lb/> </bibl>
       <bibl><label>119</label> Ibid.<lb/> </bibl>
       <bibl><label>120</label> The need for accurate contemporaneous note taking by doctors is already contained in the GMC's Good<lb/> Medical Practice. See GMC Good Medical Practice, n 107 at p 9. The guidance stipulates that the documents<lb/> doctors should make (including clinical records) to formally record work must be clear, accurate and legible.<lb/> Records should be made at the same time as the events being recorded or as soon as possible afterwards (at [19]).<lb/> Clinical records should include: relevant clinical findings; the decisions made and actions agreed, and who is<lb/> making the decisions and agreeing the actions; the information given to patients; any drugs prescribed or other<lb/> investigation or treatment; who is making the record and when (at [21]).<lb/> </bibl>
-      
+
       <bibl><label>121</label> Doy, n 60 at [51].<lb/> </bibl>
       <bibl><label>122</label> Montgomery, n 24.<lb/> </bibl>
       <bibl><label>123</label> Laing, n 28 at 143, citing Phil Whitaker, 'How One Tragic Case Changed The Law About Medical Consent<lb/> For Us All' (2015) New Statesman 28 May.<lb/> </bibl>
       <bibl><label>124</label> Ibid.<lb/> </bibl>
       <bibl><label>125</label> Thompson, n 94.<lb/> </bibl>
-      
+
       <bibl><label>126</label> Ibid at [27].<lb/> </bibl>
       <bibl><label>127</label> [2005] EWCA Civ 1439;</bibl>
       <bibl>[2006] Lloyd's Rep Med 95.<lb/> </bibl>
-      
+
       <bibl><label>129</label> Montgomery, n 24.<lb/> </bibl>
       <bibl><label>130</label> Botting et al., n 2.<lb/> </bibl>
-      
-      <bibl><label>131</label> Baxter, n 36 at [113] and [123];</bibl> 
+
+      <bibl><label>131</label> Baxter, n 36 at [113] and [123];</bibl>
       <bibl>Bulled v McClure [2006] EWHC 2444 at [81] -[85].<lb/> </bibl>
       <bibl><label>132</label> Toth v Jarman [2006] EWCA Civ 1028; </bibl> <bibl>[2006] 4 All ER 1276.<lb/> </bibl>
-      <bibl><label>133</label> Large, n 76 at [116];</bibl> 
+      <bibl><label>133</label> Large, n 76 at [116];</bibl>
       <bibl>Coakley, n 67 at [111].<lb/> </bibl>
       <bibl><label>134</label> Rana, n 69.<lb/> </bibl>
       <bibl><label>135</label> Ibid at [173] -[175].<lb/> </bibl>
-      <bibl><label>136</label> Coakley, n 67 at [118].</bibl> 
-      <bibl>See Bailey v Ministry of Defence [2008] EWCA Civ 883;</bibl> 
-      <bibl>[2009] 1</bibl> 
+      <bibl><label>136</label> Coakley, n 67 at [118].</bibl>
+      <bibl>See Bailey v Ministry of Defence [2008] EWCA Civ 883;</bibl>
+      <bibl>[2009] 1</bibl>
       <bibl>WLR 1052.<lb/> </bibl>
       <bibl><label>137</label> Bailey, ibid. Per Waller LJ at [46].<lb/> </bibl>
-      
+
       <bibl><label>138</label> Jane Stapleton and Sandy Steel, 'Causes and Contributions' (2016) 132 Law Quarterly Review 363.<lb/> </bibl>
       <bibl><label>139</label> Fallon v Wilson [2010] EWHC 2978 at [76].<lb/> </bibl>
       <bibl><label>140</label> Rana, n 69 at [174].<lb/> </bibl>
       <bibl><label>141</label> Fallon, n 139 at [76].<lb/> </bibl>
-      
+
       <bibl><label>142</label> Gregg, n 37.<lb/> </bibl>
       <bibl><label>143</label> Gregg, n 37 at [206] -[207].<lb/> </bibl>
       <bibl><label>144</label> Recovery predicated on any proof of lost years alone may yield very little in damages. Thus, alongside proof<lb/> of lost years, damages may also be recovered for pain and suffering, and financial losses, associated with a delayed<lb/> correct diagnosis. See, for discussion, Rachael Mulheron, Principles of Tort Law (CUP 2016) at 474 -475.<lb/> </bibl>
-      <bibl><label>145</label> [2012] EWHC 3063; </bibl> 
-      <bibl>[2013] Med LR 291 at [46]. </bibl> 
+      <bibl><label>145</label> [2012] EWHC 3063; </bibl>
+      <bibl>[2013] Med LR 291 at [46]. </bibl>
       <bibl>See also Patterson J in Cutting, n 111 at [105].<lb/> </bibl>
       <bibl><label>146</label> JD, ibid at [48].<lb/> </bibl>
-      
+
       <bibl><label>147</label> Ibid at [46] -[47].<lb/> </bibl>
       <bibl><label>148</label> On the relevance of statistical evidence, see Gordon C Wishart and Andrew Axon, 'Proof of Causation: A New<lb/> Approach in Cancer Cases' (2013) 19 Clinical Risk 130.<lb/> </bibl>
       <bibl><label>149</label> Oliver v Williams [2013] EWHC 600; </bibl>
       <bibl>[2013] Med LR 344 at [42].<lb/> </bibl>
-      <bibl><label>150</label> See Michael Jones, Medical Negligence (5 th edn, Sweet and Maxwell 2018) at pp 588 -592;</bibl> 
+      <bibl><label>150</label> See Michael Jones, Medical Negligence (5 th edn, Sweet and Maxwell 2018) at pp 588 -592;</bibl>
       <bibl>Michael A Jones,<lb/> 'Another Lost Opportunity' (2003) 19 Journal of Professional Negligence 542.<lb/> </bibl>
       <bibl><label>151</label> Jane Stapleton, 'Loss of the Chance of Cure from Cancer' (2005) 68 Modern Law Review 996.<lb/> </bibl>
       <bibl><label>152</label> See GMC Good Medical Practice, n 107.<lb/> </bibl>

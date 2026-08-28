@@ -84,7 +84,7 @@
         <label>GROBID</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">7272991</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
         <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
       </application>
@@ -141,20 +141,20 @@
         <bibl><label>11</label> Richtlinie 2001/29/EG des Europäischen Parlaments und des Rates vom 22. Mai 2001 zur<lb/> Harmonisierung bestimmter Aspekte des Urheberrechts und der verwandten Schutzrechte<lb/> in der Informationsgesellschaft, ABl. EG 2001 L 167/10.<lb/> </bibl>
         <bibl><label>12</label> Vgl. dazu: de la Durantaye, GRUR 2017, 558 ff.<lb/> </bibl>
         <bibl><label>13</label> Vgl. dazu nur: Raue, CR 2017, 656 ff.;</bibl><bibl> Spindler, ZGE 2018, 273 ff.;</bibl>
-          <bibl> Specht, OdW 2018, 285.<lb/> </bibl> 
+          <bibl> Specht, OdW 2018, 285.<lb/> </bibl>
         <bibl><label>14</label> § 142 UrhG.<lb/> </bibl>
         <bibl><label>15</label> Richtlinie (EU) 2019/790 des Europäischen Parlaments und des Rates vom 17. April 2019<lb/> über das Urheberrecht und die verwandten Schutzrechte im digitalen Binnenmarkt und zur<lb/> Änderung der Richtlinien 96/9/EG und 2001/29/EG, ABl. EU 2019 L 130/92.<lb/> </bibl>
         <bibl><label>16</label> Dies gilt insbesondere für Art. 15 und 17 DSM-RL, die dem Leistungsschutzrecht für Pres-<lb/>severleger bzw. der Haftung von Plattformbetreibern gewidmet sind.<lb/> </bibl>
         <bibl><label>17</label> ErwGr. 5;</bibl> <bibl>zum Verhältnis der Schranken der DSM-Richtlinie zu jenen der InfoSoc-Richtli-<lb/>nie, vgl. nur: Stieper, GRUR 2020, 1 ff.<lb/> </bibl>
-        <bibl><label>18</label> Vgl. dazu nur: Raue, ZUM 2019, 684 ff.;</bibl> 
+        <bibl><label>18</label> Vgl. dazu nur: Raue, ZUM 2019, 684 ff.;</bibl>
           <bibl>Stieper, GRUR 2020, 1, 4.<lb/> </bibl>
         <bibl><label>19</label> So sieht es auch der Diskussionsentwurf des BMJV für ein Erstes Gesetz zur Anpassung des<lb/> Urheberrechts an die Erfordernisse des digitalen Binnenmarkts vom 15. Januar 2020 vor, ab-<lb/>rufbar unter: https://www.bmjv.de/SharedDocs/Gesetzgebungsverfahren/Dokumente/Disk<lb/> E_Anpassung%20Urheberrecht_digitaler_Binnenmarkt_Versendungsschreiben.html?nn=67<lb/> 12350, zuletzt abgerufen am 27.1.2020.<lb/> </bibl>
         <bibl><label>20</label> So auch: Stieper, GRUR 2020, 1, 5.<lb/> </bibl>
-        <bibl><label>21</label> Vgl. dazu nur: de la Durantaye/Kuschel, ZUM 2019, 694 ff.;</bibl> 
+        <bibl><label>21</label> Vgl. dazu nur: de la Durantaye/Kuschel, ZUM 2019, 694 ff.;</bibl>
           <bibl>de la Durantaye, GRUR 2020,<lb/> 7 ff.<lb/> </bibl>
         <bibl><label>23</label> Richtlinie 2012/28/EU des Europäischen Parlaments und des Rates vom 25.10.2012 über be-<lb/>stimmte zulässige Formen der Nutzung verwaister Werke, ABl. EU 2012 L 299/5. </bibl>
           <bibl><label>25</label> Orphan Works Database, abrufbar unter: https://euipo.europa.eu/orphanworks/#search/basi<lb/> c/all, zuletzt abgerufen am 23.1.2020. Darin enthalten sind 6.902 eingebettete Werke.<lb/> </bibl>
-          
+
         <bibl><label>26</label> Marrakesh Treaty to Faclitate Access to Published Works for Persons Who Are Blind, Vi-<lb/>sually Impaired or Otherwise Print Disabled, abrufbar unter: https://wipolex.wipo.int/en/te<lb/> xt/301016, zuletzt abgerufen am 27.2.2020.<lb/> </bibl>
         <bibl><label>27</label> Vgl. dazu: Schmidt, Maximalschutz im internationalen und europäischen Urheberrecht,<lb/> 2018, Kapitel 3.<lb/> </bibl>
         <bibl><label>28</label> Richtlinie (EU) 2017/1564 des Europäischen Parlaments und des Rates vom 13. September<lb/> 2017 über bestimmte zulässige Formen der Nutzung bestimmter urheberrechtlich oder<lb/> durch verwandte Schutzrechte geschützter Werke und sonstiger Schutzgegenstände zuguns-<lb/>ten blinder, sehbehinderter oder anderweitig lesebehinderter Personen und zur Änderung<lb/> der Richtlinie 2001/29/EG zur Harmonisierung bestimmter Aspekte des Urheberrechts und<lb/> der verwandten Schutzrechte in der Informationsgesellschaft, ABl. EU 2017 L 242/6.<lb/> </bibl>
@@ -172,18 +172,18 @@
         <bibl><label>37</label> Bei mehreren Autoren richtet sich der Fristbeginn nach dem Tod des Längstlebenden, § 65<lb/> Abs. 1 UrhG.<lb/> </bibl>
         <bibl><label>38</label> Vgl.: Triaille/de Meeüs d 'Argenteuil/de Francquen, Study on the legal framework of text and<lb/> data mining, 2014, S. 47 f.;</bibl>
           <bibl> Schöch, Digitale Wissensproduktion, in: Jannidis/Kohle/Rehbein,<lb/> Digital Humanities -Eine Einführung, 2017, S. 223, 227 ff.<lb/> </bibl>
-        <bibl><label>39</label> Dazu etwa: Spindler, GRUR 2016, 1112, 1113 f.;</bibl> 
+        <bibl><label>39</label> Dazu etwa: Spindler, GRUR 2016, 1112, 1113 f.;</bibl>
           <bibl>Specht, OdW 2018, 285.<lb/> </bibl>
-          
+
           <bibl><label>40</label> Vgl. etwa: Ohly, GRUR 2017, 964, 967 f. m.w.N.<lb/> </bibl>
-        <bibl><label>41</label> ErwGr. 9 Richtlinie (EU) 2019/790 des Europäischen Parlaments und des Rates vom<lb/> 17. April 2019 über das Urheberrecht und die verwandten Schutzrechte im digitalen Binnen-<lb/>markt und zur Änderung der Richtlinien 96/9/EG und 2001/29/EG. ABl. EU 2019 L<lb/> 130/92;</bibl> 
+        <bibl><label>41</label> ErwGr. 9 Richtlinie (EU) 2019/790 des Europäischen Parlaments und des Rates vom<lb/> 17. April 2019 über das Urheberrecht und die verwandten Schutzrechte im digitalen Binnen-<lb/>markt und zur Änderung der Richtlinien 96/9/EG und 2001/29/EG. ABl. EU 2019 L<lb/> 130/92;</bibl>
           <bibl>ferner Dreier/Schulze-Dreier, Urheberrechtsgesetz, 6. Aufl. 2018, § 60 d Rn. 1, 4;<lb/> </bibl>
-<bibl>Fromm/Nordemann-A. Nordemann, Urheberrecht, 12. Aufl. 2018, § 60 d Rn. 4;</bibl> 
-          <bibl>Dreyer/<lb/> Kotthoff/Meckel-Hentsch, Urheberrecht, 4. Aufl. 2018, § 60 d Rn. 3;</bibl> 
+<bibl>Fromm/Nordemann-A. Nordemann, Urheberrecht, 12. Aufl. 2018, § 60 d Rn. 4;</bibl>
+          <bibl>Dreyer/<lb/> Kotthoff/Meckel-Hentsch, Urheberrecht, 4. Aufl. 2018, § 60 d Rn. 3;</bibl>
           <bibl>Raue, ZUM 2019, 684,<lb/> 685.<lb/> </bibl>
-        <bibl><label>42</label> Dazu etwa: Obergfell, Big Data und Urheberrecht, in: Ahrens/Bornkamm/Fezer/Koch/<lb/> McGuire/Würtenberger, FS Büscher, 2018, S. 223, 228 ff.;</bibl> 
-          <bibl>Raue, CR 2017, 656 ff.;</bibl> 
-          <bibl>Spindler,<lb/> ZGE 2018, 273, 277 ff.;</bibl> 
+        <bibl><label>42</label> Dazu etwa: Obergfell, Big Data und Urheberrecht, in: Ahrens/Bornkamm/Fezer/Koch/<lb/> McGuire/Würtenberger, FS Büscher, 2018, S. 223, 228 ff.;</bibl>
+          <bibl>Raue, CR 2017, 656 ff.;</bibl>
+          <bibl>Spindler,<lb/> ZGE 2018, 273, 277 ff.;</bibl>
           <bibl>Specht, OdW 2018, 285.<lb/> </bibl>
         <bibl><label>43</label> Vgl. dazu den Diskussionsentwurf des Bundesministeriums der Justiz und für Verbraucher-<lb/>schutz, Entwurf eines Ersten Gesetzes zur Anpassung des Urheberrechts an die Erfordernis-<lb/>se des digitalen Binnenmarkts v. 15.1.2020.<lb/> </bibl>
         <bibl><label>44</label> Specht, OdW 2018, 285, 287;</bibl> <bibl>Raue, CR 2017, 656, 660.<lb/> </bibl>

@@ -68,7 +68,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:02:15.659573Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.8.2-70-gc35e48387</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -106,11 +106,11 @@
 </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
         <listBibl>
-        <bibl><label>2</label> Imperial Tobacco Ltd v Lord Advocate [2012] UKSC 
-        61.<lb/></bibl> 
-          
+        <bibl><label>2</label> Imperial Tobacco Ltd v Lord Advocate [2012] UKSC
+        61.<lb/></bibl>
+
           <bibl><label>3</label> Scottish Government, Scotland's Place in Europe (December 2016).</bibl>
-          
+
         </listBibl>
     </text>
 

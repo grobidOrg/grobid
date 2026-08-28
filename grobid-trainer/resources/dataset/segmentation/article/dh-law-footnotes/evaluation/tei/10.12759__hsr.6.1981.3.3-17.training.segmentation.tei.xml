@@ -47,7 +47,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-01-15T20:35:18.297427Z" type="extractor">
         <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
         <label type="revision">536e79c</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.segmentation</label>
         <ref target="https://github.com/kermitt2/grobid"/>
       </application>
@@ -120,9 +120,9 @@
 			<page>-12 -<lb/></page>
 
 			<listBibl>8 K . Lockridge, &quot;Historical Demography&quot;, p . 55. <lb/>9 The tendency to generalize from these unrepresentative early <lb/>community samples, as well as a series of methodological problems <lb/>in these studies and successors, has been noted by critics . For <lb/>an excellent, if highly critical, methodological review of the <lb/>field of colonial demographic history, see D .S . Smith, &quot;The <lb/>Estimates of Early American Historical Demographers : Two Steps <lb/>Forward, One Step Back, What Steps in the Future?&quot; Historical <lb/>Methods 12 (1979), 24-38. <lb/>10 D .S . Smith, &quot;The Demographic History of Colonial New England&quot;, <lb/>Journal of Economic History 32 (1972), 165-183. <lb/>11 See, for example, &quot;Towards a Socio-Economic Theory of Fertility: <lb/>A Survey of Recent Research on Economic Factors in American <lb/>Fertility&quot;, in Fertility and Family Planning, S .J . Behrman et <lb/>al . (eds .) (Ann Arbor, 1969) ; &quot;An Economic Framework for Fer-<lb/>tility Analysis&quot;, Studies in Family Planning 6 (1974), 54-63. <lb/>12 R .A . Easterlin, &quot;Factors in the Decline of Farm Fertility in the <lb/>United States : Some Preliminary Results&quot;, Journal of American <lb/>History 63 (1976), 600-614 ; R .A . Easterlin, &quot;Population Change and <lb/>Farm Settlement in the Northern United States&quot;, Journal of Economic <lb/>History 37 (1976), 45-75 ; R .A . Easterlin, G . Alter, and G .A. <lb/>Condran, &quot;Farms and Farm Families in New and Old Areas : The United <lb/>States in 1860&quot;, Family and Population <lb/>in: Nineteenth-Century <lb/>America, T .K . Hareven and M . Vinovskis, (eds .) (Princeton, 1978). <lb/>13 J . Modell, &quot;Fertility on the Indiana Frontier&quot;, 1820, &quot;American <lb/>Quarterly 23 (1971), 505-538 ; P . Lindert, &quot;American Fertility <lb/>Patterns Since the Civil War&quot;, in Population Patterns in the <lb/>Past, Ronald Lee, (ed .) (New York, 1977). <lb/></listBibl>
-    
+
     <note place="footnote">14 This project, still in its early stages, has produced no published <lb/>results to date. <lb/></note>
-    
+
     <listBibl>15 M .A . Vinovskis, &quot;Socio-economic Determinants of Interstate Fer-<lb/>tility Differentials in the United States, 1850 and 1860&quot;, <lb/>The Journal of Interdisciplinary History 6 (1976), 375-396; <lb/>T .K . Hareven and M . Vinovskis, &quot;Marital Fertility, Ethnicity <lb/>and Occupation in Urban Families : . An Analysis of South Boston <lb/>and the South End in 1880&quot;, Journal of Social History 8 (1975), <lb/>79-93. <lb/>16 For an interesting recent assessment of the evolution, problems <lb/>and promise of U .S . urban history, see M . Frisch, &quot;American <lb/>Urban History as an Example of Recent Historiography&quot;, History <lb/>and Theory 18 (1979), 350-377, also available in German trans-<lb/>lation in the German edition of New Directions in European Hist-<lb/>oriography, G . Iggers, (ed .), published as Neue Geschichtswis-<lb/>senschaft : Von Historismus zur Historischen Sozialwissenschaft <lb/>(München, 1978) . In the particular area of urban family history, <lb/>the work of Tamara Hareven has been important, see her article, <lb/>&quot;The Historical Study of the Family in Urban Society&quot;, Journal <lb/>of Urban History 1 (1975), 259-267 and a collection of essays <lb/>which she edited, Family and Kin in Urban Communities, 1700-1930 <lb/>(New York, 1977) . <lb/></listBibl>
 
 			<page>-13 -<lb/></page>

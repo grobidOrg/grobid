@@ -37,7 +37,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:00:58.050925Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.8.2-70-gc35e48387</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -75,35 +75,35 @@
 </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
         <listBibl>
-        <bibl><label>1</label><lb/> In Anlehnung an den Interviewband New Materialism: Interviews &amp; Cartographies (hg. v. Rick Dolphijn und Iris van der Tuin, Ann<lb/> Arbor: Open Humanities Press 2012) verwende ich den Begriff des Neuen Materialismus als Oberbegriff für die eigentlich<lb/> heterogenen Strömungen des Neuen Materialismus im engeren Sinne (vertreten bspw. durch Rosi Braidotti und Manuel<lb/> DeLanda), des Spekulativen Realismus (z. B. Quentin Meillassoux) und des Agentiellen Realismus (Karen Barad).</bibl> <bibl>Für einen<lb/> Überblick siehe vor allem Diana Coole u. Samantha Frost (Hg.): New Materialisms. Ontology, Agency, and Politics,<lb/> Durham/London: Duke University Press 2010</bibl> 
-          <bibl>sowie Levi Bryant, Nick Srnicek u. Graham Harman (Hg.): The Speculative Turn.<lb/> Continental Materialism and Realism, Melbourne: re.press 2012.</bibl> 
+        <bibl><label>1</label><lb/> In Anlehnung an den Interviewband New Materialism: Interviews &amp; Cartographies (hg. v. Rick Dolphijn und Iris van der Tuin, Ann<lb/> Arbor: Open Humanities Press 2012) verwende ich den Begriff des Neuen Materialismus als Oberbegriff für die eigentlich<lb/> heterogenen Strömungen des Neuen Materialismus im engeren Sinne (vertreten bspw. durch Rosi Braidotti und Manuel<lb/> DeLanda), des Spekulativen Realismus (z. B. Quentin Meillassoux) und des Agentiellen Realismus (Karen Barad).</bibl> <bibl>Für einen<lb/> Überblick siehe vor allem Diana Coole u. Samantha Frost (Hg.): New Materialisms. Ontology, Agency, and Politics,<lb/> Durham/London: Duke University Press 2010</bibl>
+          <bibl>sowie Levi Bryant, Nick Srnicek u. Graham Harman (Hg.): The Speculative Turn.<lb/> Continental Materialism and Realism, Melbourne: re.press 2012.</bibl>
           <bibl>Des Weiteren: Quentin Meillassoux: Après la Finitude. Essai sur la<lb/> nécessité de la contingence. Paris: Éd. du Seuil 2006</bibl> <bibl>und Karan Barad: Meeting the Universe Halfway. Quantum Physics and the<lb/> Entanglement of Matter and Meaning, Durham/London: Duke University Press 2007.<lb/> </bibl>
         <bibl><label>2</label><lb/> Diana Coole u. Samantha Frost: Introducing the New Materialisms, in: dies. (Hg.) New Materialisms, S. 1-46, hier: S. 3.<lb/> </bibl>
-        <bibl><label>3</label><lb/> Ebd., S. 6.<lb/></bibl> 
-          <bibl><label>4</label>-<lb/> Ebd., S. 15.<lb/></bibl> <bibl><label>5</label><lb/> Rosi Braidotti: Interview, in: Dolphijn u. van der Tuin (Hg.): New Materialism, S. 21.<lb/></bibl> 
-          <bibl><label>6</label><lb/> Ebd.<lb/></bibl> 
-          <bibl><label>7</label><lb/> Ebd.<lb/></bibl> 
-          <bibl><label>8</label><lb/> Quentin Meillassoux: Interview, in Dolphijn u. van der Tuin (Hg.): New Materialism, S. 77.<lb/></bibl> <bibl><label>9</label><lb/> Dolphijn u. van der Tuin: New Materialism, S. 167.<lb/></bibl> 
+        <bibl><label>3</label><lb/> Ebd., S. 6.<lb/></bibl>
+          <bibl><label>4</label>-<lb/> Ebd., S. 15.<lb/></bibl> <bibl><label>5</label><lb/> Rosi Braidotti: Interview, in: Dolphijn u. van der Tuin (Hg.): New Materialism, S. 21.<lb/></bibl>
+          <bibl><label>6</label><lb/> Ebd.<lb/></bibl>
+          <bibl><label>7</label><lb/> Ebd.<lb/></bibl>
+          <bibl><label>8</label><lb/> Quentin Meillassoux: Interview, in Dolphijn u. van der Tuin (Hg.): New Materialism, S. 77.<lb/></bibl> <bibl><label>9</label><lb/> Dolphijn u. van der Tuin: New Materialism, S. 167.<lb/></bibl>
           <bibl><label>10 Ebd.</label><lb/> </bibl>
-          
-        <bibl type="footnote"><label>11</label> Hier ließe sich einwenden, dass Barads Kritik auf einer Überbewertung bzw. Verabsolutierung von Foucaults Disziplinarmacht-<lb/>Analysen basiert. Während die Thematik der Disziplinarmacht v. a. in der ersten Hälfte der 1970er Jahre dominierte, wurde diese<lb/> sukzessiv um die Konzeption der Biomacht und die Gouvernementalitätsthematik ergänzt. Ich danke Maurice Erb für diesen<lb/> Hinweis.<lb/></bibl> 
-          
+
+        <bibl type="footnote"><label>11</label> Hier ließe sich einwenden, dass Barads Kritik auf einer Überbewertung bzw. Verabsolutierung von Foucaults Disziplinarmacht-<lb/>Analysen basiert. Während die Thematik der Disziplinarmacht v. a. in der ersten Hälfte der 1970er Jahre dominierte, wurde diese<lb/> sukzessiv um die Konzeption der Biomacht und die Gouvernementalitätsthematik ergänzt. Ich danke Maurice Erb für diesen<lb/> Hinweis.<lb/></bibl>
+
           <bibl><label>12</label> Barad: Meeting the Universe Halfway, S. 200.<lb/> </bibl>
         <bibl><label>13</label> Quentin Meillassoux: Nach der Endlichkeit. Versuch über die Notwendigkeit der Kontingenz, übers. v. Roland Frommel,<lb/> Zürich/Berlin: diaphanes 2014 [franz. 2006], S. 165-166.<lb/> </bibl>
         <bibl><label>14</label> Ebd., S. 19.<lb/> </bibl>
         <bibl><label>15</label> Ebd., S. 70.<lb/> </bibl>
         <bibl><label>16</label> Ebd., S. 67, S. 69ff.<lb/></bibl> <bibl><label>17</label> Michel Foucault: Einführung in Kants Anthropologie, übers. v. Ute Frietsch, Berlin: Suhrkamp 2010 [franz. 2008].<lb/> </bibl>
         <bibl><label>18</label> Ebd., v.a. S. 66ff.<lb/></bibl> <bibl><label>19</label> Ebd., S. 115.<lb/> </bibl>
-        <bibl><label>20</label> Ebd., S. 111.<lb/></bibl> 
+        <bibl><label>20</label> Ebd., S. 111.<lb/></bibl>
           <bibl><label>21</label> Martin Heidegger: Kant und das Problem der Metaphysik, 7. Aufl., Frankfurt/M: Vittorio Klostermann 2010 [1929].<lb/> </bibl>
-        <bibl><label>22</label> Bei Heidegger findet sich die Stelle zur 'Frage nach dem Menschen' zu Beginn des vierten Teils seines Kantbuches; er spricht<lb/> vom plötzlichen 'Auftauchen' der Frage "Was ist der Mensch?" in der Logik, die so wirke, als sei sie "äußerlich angefügt und<lb/> zudem überflüssig", und die außerdem die Harmonie der drei Disziplinen der Metaphysik -Kosmologie, Psychologie, Theologie<lb/> -störe (Heidegger: Kant und das Problem der Metaphysik, S. 207).</bibl> 
+        <bibl><label>22</label> Bei Heidegger findet sich die Stelle zur 'Frage nach dem Menschen' zu Beginn des vierten Teils seines Kantbuches; er spricht<lb/> vom plötzlichen 'Auftauchen' der Frage "Was ist der Mensch?" in der Logik, die so wirke, als sei sie "äußerlich angefügt und<lb/> zudem überflüssig", und die außerdem die Harmonie der drei Disziplinen der Metaphysik -Kosmologie, Psychologie, Theologie<lb/> -störe (Heidegger: Kant und das Problem der Metaphysik, S. 207).</bibl>
           <bibl>Das Foucault'sche Äquivalent klingt entsprechend so: "Eine<lb/> vierte Frage: Was ist der Mensch? erscheint und diese folgt den drei ersten nur, um sie in einer Referenz aufzugreifen, die sie alle<lb/> umfaßt: Denn alle müssen sich auf sie beziehen, wodurch der Anthropologie auch die Metaphysik, die Moral und die Religion in<lb/> Rechnung zu stellen sind. Verrät diese brüske Bewegung, welche die drei Fragestellungen auf das anthropologische Thema hin<lb/> kippen läßt, nicht einen Bruch im Denken?" (Foucault: Einführung in Kants Anthropologie, S. 68).<lb/> </bibl>
         <bibl><label>23</label> Federico Luisetti: The Kantian Sleep. On the Limits of the 'Foucault-Effect'', in: Revista de Estudios Sociales, 43 (2012), S. 121-130,<lb/> hier: S. 126.<lb/> </bibl>
         <bibl><label>24</label> Ebd., S. 125.<lb/> </bibl>
-        <bibl><label>25</label> Michel Foucault: Die Ordnung der Dinge. Eine Archäologie der Humanwissenschaften. Frankfurt/M: Suhrkamp 1974 [franz. 1966],<lb/> S. 412.<lb/></bibl> 
-          <bibl><label>26</label> Ebd.<lb/></bibl> 
-          <bibl><label>27</label> Ebd., S. 310.<lb/></bibl> 
-          <bibl><label>28</label> Meillassoux: Nach der Endlichkeit, S. 31.<lb/></bibl> 
+        <bibl><label>25</label> Michel Foucault: Die Ordnung der Dinge. Eine Archäologie der Humanwissenschaften. Frankfurt/M: Suhrkamp 1974 [franz. 1966],<lb/> S. 412.<lb/></bibl>
+          <bibl><label>26</label> Ebd.<lb/></bibl>
+          <bibl><label>27</label> Ebd., S. 310.<lb/></bibl>
+          <bibl><label>28</label> Meillassoux: Nach der Endlichkeit, S. 31.<lb/></bibl>
           <bibl><label>29</label> Gilles Deleuze: Foucault, Frankfurt/M: Suhrkamp 1992 [franz. 1986], S. 159 u. 152ff.<lb/> </bibl>
         <bibl><label>30</label> Ebd., S. 142.<lb/> </bibl>
         <bibl><label>31</label> Ebd., S. 142f., S. 147f., S. 167.<lb/> </bibl>

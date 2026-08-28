@@ -72,7 +72,7 @@
         <label>GROBID</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">7272991</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
         <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
       </application>
@@ -123,24 +123,24 @@
         <bibl><label>10</label> National Street Law Institute &amp; District of Columbia Project on Community Legal Assistance. (1975).<lb/> Street law: a course in practical law. West.<lb/> </bibl>
         <bibl><label>11</label> The American Bar Association replaced Update on Law Related Education with Insights on Law and Society<lb/> in 2000.<lb/> </bibl>
         <bibl><label>12</label> Law-Related Education Act of 1978, Pub. L. No. 95-561, 92 Stat. 2216 (1978) repealed by 20 U.S.C. §<lb/> 3863(a)(1) (1982). https://perma.cc/G75R-AFKD and https://perma.cc/8TAQ-M8R6<lb/> </bibl>
-        <bibl><label>13</label> North Carolina Bar Association Young Lawyers Division Civic Education Outreach Committee. (2015).<lb/> 
+        <bibl><label>13</label> North Carolina Bar Association Young Lawyers Division Civic Education Outreach Committee. (2015).<lb/>
 Life &amp; Laws 101: Citizenship Rights and Responsibilities Over 18.<lb/> http://web.archive.org/web/20150923012636/http://www.ncbar.org/media/95451/Life-and-Laws-101.pdf </bibl>
           <!--Number 14 is missing and bibliographic-->
-        <bibl><label>15</label> Ward, L. (2015). Practical life lessons [PowerPoint slides]. 
+        <bibl><label>15</label> Ward, L. (2015). Practical life lessons [PowerPoint slides].
 SlideShare.<lb/> https://www.slideshare.net/practicallifelessons<lb/> </bibl>
-        <bibl><label>16</label> Green, T. (2014, February 28). Who Is Dana Snay? College Student's Facebook Bragging Costs Father<lb/> $80,000 
+        <bibl><label>16</label> Green, T. (2014, February 28). Who Is Dana Snay? College Student's Facebook Bragging Costs Father<lb/> $80,000
 Lawsuit Settlement. International Business Times. https://archive.ph/6Q0ga<lb/> </bibl>
         <bibl><label>17</label> Phipps, C. (2015, April 28). Who were the eight people executed by Indonesia? The Guardian.<lb/> https://perma.cc/9PPQ-E5M6<lb/> </bibl>
-        <bibl><label>18</label> Ward, L. (2015, October 24). A Sea of Information: Navigating the Waters of Digital Citizenship, Rights, and<lb/> Responsibilities [Conference Session]. 
+        <bibl><label>18</label> Ward, L. (2015, October 24). A Sea of Information: Navigating the Waters of Digital Citizenship, Rights, and<lb/> Responsibilities [Conference Session].
 North Carolina School Library Media Association Conference,<lb/> Winston-Salem, NC, United States.<lb/> </bibl>
         <bibl><label>19</label> Ward, L. (2016). Five Key Points for Developing an Informative "Know Your Rights" Seminar. American<lb/> Bar Association Young Lawyers Division Public Education Committee Newsletter, 2(1). https://perma.cc/9STS-<lb/>2VTU<lb/> </bibl>
           <bibl><label>20</label> National Street Law Institute &amp; District of Columbia Project on Community Legal Assistance, supra<lb/> note 9.<lb/> </bibl>
         <bibl><label>21</label> Stamper, N. (2006). Breaking rank: a top cop's exposé of the dark side of American policing. Nation Books.<lb/> </bibl>
         <bibl><label>22</label> Salky, S.M., et al. (2014). The privilege of silence: Fifth Amendment protections against self-incrimination.<lb/> American Bar Association.<lb/> </bibl>
-        <bibl><label>23</label> Ward, L. (2015). Practical life lessons [PowerPoint slides]. 
+        <bibl><label>23</label> Ward, L. (2015). Practical life lessons [PowerPoint slides].
 SlideShare.<lb/> https://www.slideshare.net/practicallifelessons<lb/> </bibl>
         <bibl><label>24</label> Cassidy, W. &amp; Yates, R. (2005). Once upon a crime: using stories, simulations, and mock trials to explore<lb/> justice and citizenship in elementary school. Detselig Enterprises.<lb/> </bibl>
-        <bibl><label>25</label> Johnson, G. &amp; Hunter, R. (1985). Law-Related Education as a Delinquency Prevention Strategy: A Three-Year<lb/> Evaluation of the Impact of LRE on Students (adapted from Law-Related Education Project Final Report, Phase II,<lb/> year 3) (Publication Number 99991). National Criminal Justice Reference Service. https://perma.cc/9ZYA-<lb/>EZQA<lb/> </bibl><bibl><label>26</label> 
+        <bibl><label>25</label> Johnson, G. &amp; Hunter, R. (1985). Law-Related Education as a Delinquency Prevention Strategy: A Three-Year<lb/> Evaluation of the Impact of LRE on Students (adapted from Law-Related Education Project Final Report, Phase II,<lb/> year 3) (Publication Number 99991). National Criminal Justice Reference Service. https://perma.cc/9ZYA-<lb/>EZQA<lb/> </bibl><bibl><label>26</label>
 Feinstein &amp; Wood, supra note 3.<lb/> </bibl>
         <bibl><label>27</label> Law-Related Education Act of 1978, Pub. L. No. 95-561, 92 Stat. 2216 (1978) repealed by 20 U.S.C. §<lb/> 3863(a)(1) (1982). https://perma.cc/G75R-AFKD and https://perma.cc/8TAQ-M8R6<lb/> </bibl>
 
@@ -234,7 +234,7 @@ American Legislative Exchange Council. (n.d.). Civic Literacy Act. https://perma
         <bibl><label>117</label> S.B. 1776. 87th Leg., Regul. Sess. (Tex. 2021). https://perma.cc/5A6Y-72WP<lb/> </bibl>
         <bibl><label>118</label> Boston Public Library. (2020). Know Your Rights Workshop for Teens. https://perma.cc/ZKR8-4N6N<lb/> </bibl>
         <bibl><label>119</label> City of Glendale. (2019). Teen Workshop (Ages 13-17): Know Your Rights. https://perma.cc/P8M2-FRFQ<lb/> </bibl>
-          
+
         <bibl><label>120</label> The write-around activity allows students time to think about answers to a question and make<lb/> connections between concepts before engaging in a large group discussion. There are many variations of<lb/> write-arounds (which are discussed in the book entitled The Best-Kept Teaching Secret: How Written<lb/> Conversations Engage Kids, Activate Learning, and Grow Fluent Writers, K-12. Daniels, H. &amp; Daniels, E.<lb/> (2013).</bibl>
         <bibl> The best-kept teaching secret: how written conversations engage kids, activate learning, and grow fluent<lb/> writers, K-12. Corwin.<lb/> </bibl>
         <bibl><label>121</label> "When two or more circuits in the United States court of appeals reach opposite interpretations of<lb/> federal law. This is sometimes a reason for the Supreme Court to grant certiorari." Wex. (n.d.). Circuit<lb/> Split. https://perma.cc/693C-WC7Q<lb/> </bibl>

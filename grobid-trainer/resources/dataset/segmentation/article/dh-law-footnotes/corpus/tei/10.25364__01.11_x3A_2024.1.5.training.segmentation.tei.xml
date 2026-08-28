@@ -40,7 +40,7 @@
           <label>A machine learning software for extracting information from scholarly documents</label>
           <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
           <label type="revision">e13aa19</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <label type="variant-id">grobid.training.segmentation</label>
           <ref target="https://github.com/kermitt2/grobid"/>
         </application>
@@ -204,18 +204,18 @@
         <body>IV. Changing Legal Opportunity Structures; Opportunities Yet to <lb/>be Seized <lb/>The KlimaSeniorinnen judgement can be qualified as revolutionary as it 97 brings about <lb/>major changes for the position of associations and their opportunities to challenge <lb/>human rights violations caused by insufficient climate mitigation measures. Given that <lb/>this is a new development, it is unsurprising and not uncommon for this new doctrine to <lb/>come with some unanswered questions. These questions relate, inter alia, to the <lb/>applicability of the doctrine (whether "only" in climate litigation cases or beyond) and the <lb/>precise criteria associations must fulfil to be granted standing. It remains to be seen how <lb/>this development will impact domestic legal opportunity structures 98 and ensuing climate <lb/>litigation. As of yet, restrictive admissibility criteria often hinder substantive decisions on <lb/>climate issues at the domestic level. 99 <lb/>From a substantive perspective, the Court developed its environmental case-law <lb/>coherently, taking into account the specificities of the climate crisis. A strong focus was <lb/>placed on procedural safeguards, which the Court derived from Article 8 ECHR. According <lb/>to the Court, Article 8 ECHR imposes a general obligation of Contracting States to <lb/>"undertake measures for the substantial and progressive reduction of their respective <lb/>GHG emission levels, with a view to reaching net neutrality within, in principle, the next <lb/>three decades" 100 . <lb/></body>
 
         <listBibl>97 As the ambiguity of the title of this essay might already suggest to some readers, it is justified to see both the <lb/>ECtHR and the association KlimaSeniorinnen (as well as the many individuals involved in the litigation efforts) <lb/>as drivers of the resulting change in legal opportunity structures. <lb/>98 For the concept of legal opportunity structures see Vanhala, Legal Opportunity Structures and the Paradox of <lb/>Legal Mobilization by the Environmental Movement in the UK, Law &amp; Society Review 46:3 (2012) 523 (526 ff); <lb/>Vanhala, Shaping the Structure of Legal Opportunities: Environmental NGOs Bringing International <lb/>Environmental Procedural Rights Back Home, Law &amp; Policy 40:1 (2018) 110 ff; Andersen, Out of the Closets &amp; <lb/>into the Courts. Legal Opportunity Structure and Gay Rights Litigation (2006) Ann Arbor: University of Michigan <lb/>Press, 204 ff. <lb/>99 For a comparative perspective on admissibility criteria in Austria, Germany and Switzerland see Marhold, <lb/>Klimaklagen. Zulässigkeitsprüfung im Rechtsvergleich (2024) Vienna, Linde Verlag; cf Madner, Climate Change as <lb/>a Challenge for Constitutional Courts: Fundamental Freedoms and Duties of Protection -A Perspective from <lb/>Austria, Human Rights Law Journal (2023) 354 ff. <lb/>100 Para 548. <lb/></listBibl>
-  
+
 		<page>116</page>
 
         <note place="headnote">KlimaSeniorinnen: Changing Legal Opportunity Structures in the Face of the Climate Crisis (Weber) <lb/></note>
-  
+
         <body>While it is true that this judgement is only one piece within the larger puzzle of necessary <lb/>transformative steps, 101 it could become a very important piece. 102 It remains to be seen <lb/>how the new opportunities will be utilized by legislators, governments, courts and civil <lb/>society alike. 103</body> <lb/>
-  
+
         <listBibl>101 Positioning litigation as one of many avenues to strengthen climate protection: Vanhala, Coproducing the <lb/>Endangered Polar Bear: Science, Climate Change, and Legal Mobilization, Law &amp; Policy 42:2 (2020) 105 ff. For a <lb/>fundamental critique of the role of courts for social change cf eg Rosenberg, Tilting at Windmills: Brown II and <lb/>the Hopeless Quest to Resolve Deep-Seated Social Conflict through Litigation, Law &amp; Inequality: A Journal of <lb/>Theory and Practice 24:1 (2006) 31 ff; however, Rosenberg also points to the relevance of legislative action, and <lb/>this is exactly what KlimaSeniorinnen and further climate litigation efforts aim at triggering. <lb/>102 It should also be noted that there are a few climate cases still pending, most notably Müllner / Austria; cf <lb/>Prantl, After Switzerland Comes Austria. Why the ECtHR could soon grant individual standing in a climate <lb/>mitigation case for the first time, Verfassungsblog, 24.05.2024, https://verfassungsblog.de/after-switzerland-<lb/>comes-austria/. <lb/>103 Possible consequences for the EU system of legal protection are discussed by Eeckhout, From Strasbourg to <lb/>Luxembourg? The KlimaSeniorinnen judgment and EU remedies, Verfassungsblog, 05.06.2024, <lb/>https://verfassungsblog.de/from-strasbourg-to-luxembourg/. Observations on the role of collective actors (that <lb/>has been strengthened by the KlimaSeniorinnen judgement) for mobilizing the law with many references: Hahn, <lb/>Strategische Prozessführung im Klagekollektiv (2024) BadenBaden Nomos, 215 ff.</listBibl>
 
 	</text>
 
 
-  
-  
+
+
 </TEI>

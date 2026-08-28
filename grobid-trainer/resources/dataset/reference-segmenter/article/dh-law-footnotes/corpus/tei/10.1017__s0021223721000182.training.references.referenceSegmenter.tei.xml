@@ -64,7 +64,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-05-07T18:55:03.868746Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.8.2-81-g2739f2ef4</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -99,35 +99,35 @@
       <bibl>Pauline Boss, Ambiguous Loss: Learning to Live with Unresolved Grief (Harvard University Press 2000);<lb/> </bibl>
       <bibl>Iosif Kovras, Grassroots Activism and the Evolution of Transitional Justice: Families of the Disappeared<lb/> (Cambridge University Press 2017).<lb/> </bibl>
       <bibl><label>2</label> See Section 3 for relevant IHL treaty law. For relevant rules in customary IHL see Jean-Marie Henckaerts and<lb/> Louise Doswald-Beck, Customary International Humanitarian Law, Vol I: Rules (International Committee of the<lb/> Red Cross (ICRC) and Cambridge University Press 2005, rev'd 2009) (ICRC Study), rule 98 ('Enforced<lb/> disappearance is prohibited') 340; rule 105 ('Family life must be respected as far as possible') 379; rule 112<lb/> ('Whenever circumstances permit, and particularly after an engagement, each party to the conflict must, without<lb/> delay, take all possible measures to search for, collect and evacuate the dead without adverse distinction') 406; rule<lb/> 116 ('With a view to the identification of the dead, each party to the conflict must record all available information<lb/> prior to disposal and mark the location of the graves') 417; and rule 117 ('Each party to the conflict must take all<lb/> feasible measures to account for persons reported missing as a result of armed conflict and must provide their fam-<lb/>ily members with any information it has on their fate') 421.<lb/> </bibl>
-      
+
       <bibl type="footnote"><label>3</label> See Section 2.1.<lb/> </bibl>
-      
+
       <bibl><label>4</label> ICRC, 'The Missing and Their Families', National Implementation of IHL Database, https://ihl-databases.icrc.<lb/> org/applic/ihl/ihl-nat.nsf/vwLawsByCountry.xsp?xp_topicSelected=GVAL-992BUF (ICRC Database). The<lb/> ICRC database seeks to share information on implementation measures collected by the ICRC Advisory<lb/> Service and provided by states. </bibl>
-      
+
       <bibl type="footnote"><label>6</label> There is no data that allows a detailed comparison of the number of missing persons in different countries (which,<lb/> among other factors, is because of underreporting in certain regions). However, the database includes legislation<lb/> from most relevant countries; see introduction to Section 5 for further information.<lb/> </bibl>
-      
+
       <bibl><label>7</label> eg, two Argentinian laws on enforced disappearances: Ley núm. 24.321 [junio 8 de 1994]: desaparición forzada<lb/> de personas; Ley núm. 24.411 [diciembre 28 de 1994]: desaparición forzada de personas. For further examples see<lb/> Section 5.<lb/> </bibl>
-      
+
       <bibl><label>8</label> eg, Ley 19.123 que crea la Corporación Nacional de Reparación y Reconciliación (Chile). For more examples see<lb/> Section 5.3.<lb/> </bibl>
-      
+
       <bibl type="footnote"><label>9</label> See also Section 4 on how this difference is present in the framework of enforced disappearances.<lb/> </bibl>
       <bibl><label>10</label> International Convention for the Protection of All Persons from Enforced Disappearance (entered into force<lb/> 23 December 2010) 2716 UNTS 3 (ICPPED).<lb/> </bibl>
       <bibl><label>11</label> Marco Sassòli, International Humanitarian Law: Rules, Controversies, and Solutions to Problems Arising in<lb/> Warfare (Edward Elgar 2019) 339; </bibl>
       <bibl>Anna Petrig, 'eSearch for Missing Persons' in Andrew Clapham, Paola<lb/> Gaeta and Marco Sassòli (eds), The 1949 Geneva Conventions: A Commentary (Oxford University Press 2015)<lb/> 258. </bibl>
       <bibl>See also Yves Sandoz, Christophe Swinarski and Bruno Zimmermann, Commentary on the Additional<lb/> Protocols of 8 June 1977 to the Geneva Conventions of 12 August 1949 (ICRC and Martinus Nijhoff 1987)<lb/> 351, para 1229 (Commentary to Additional Protocols (1987)) (explaining how 'missing' is understood in<lb/> Additional Protocol 1 (n 27). States (and sometimes non-state parties) also conclude agreements in which they<lb/> address missing persons; for an overview of such agreements see Alessandra La Vaccara, When the Conflict<lb/> Ends, While Uncertainty Continues: Accounting for Missing Persons between War and Peace in International<lb/> Law (Hart 2019) 264-71.<lb/> </bibl>
-      
+
       <bibl><label>12</label> ICRC, 'Q&amp;A: The ICRC's Engagement on the Missing and Their Families' (2017) 99 International Review of<lb/> the Red Cross 535, 536.<lb/> </bibl>
       <bibl><label>13</label> For more on the ICRC and its influence on the development of IHL, see Robin Geiß, Andreas Zimmermann and<lb/> Stefanie Haumer (eds), Humanizing the Laws of War: The Red Cross and the Development of International<lb/> Humanitarian Law (Cambridge University Press 2017).<lb/> </bibl>
       <bibl><label>14</label> ICRC, Advisory Service on International Humanitarian Law, 'Guiding Principles/Model Law on the Missing',<lb/> 28 Feb. 2009, https://www.icrc.org/en/document/guiding-principles-model-law-missing-model-law.<lb/> </bibl>
       <bibl><label>15</label> ibid art 2.<lb/> </bibl>
       <bibl><label>16</label> See Henckaerts and Doswald-Beck (n 2) rule 98 'Enforced disappearance is prohibited'.<lb/></bibl>
       <bibl><label>17</label> See ICPPED (n 10) art 2. As regards the mutual influences between IHL and international human rights law in<lb/> the context of enforced disappearances, see Gloria Gaggioli, 'The Prohibition of Enforced Disappearances:<lb/> A Meaningful Example of a Partial Merger between Human Rights Law and International Humanitarian Law'<lb/> in Robert Kolb and Gloria Gaggioli (eds), Research Handbook on Human Rights and Humanitarian Law<lb/> (Edward Elgar 2013) 320, 321-22 (how international human rights law has been able to influence IHL by creating<lb/> a non-derogable right and giving birth to customary rules applicable in armed conflict) and 325-26 (how IHL has<lb/> influenced international human rights law beyond the right to know). Gaggioli states that in the context of enforced<lb/> disappearances the formation of customary international law 'provides a fine example of the dynamic interplay<lb/> between' international human rights law and IHL. For a perspective on missing persons in international human<lb/> rights law and IHL see also La Vaccara (n 11).<lb/> </bibl>
-      
+
       <bibl><label>18</label> While originally the term 'enforced disappearance' was used predominantly in the context of non-international<lb/> armed conflict only (see, eg, Gloria Gaggioli (n 17) 322), this is changing. </bibl>
       <bibl>The Inter-American Convention on the<lb/> Forced Disappearance of Persons (entered into force 28 March 1996) 68 OAS 1429, adopted in 1994, states expli-<lb/>citly that it does not apply during international armed conflict governed by the Geneva Conventions and their<lb/> Additional Protocols (art 15), while the ICPPED (n 10), adopted in 2006, does not contain such a clause, stating<lb/> only that the Convention 'is without prejudice to the provisions of International Humanitarian Law' (art 43). The<lb/> UN Working Group on Enforced or Involuntary Disappearances initially did not accept requests concerning dis-<lb/>appearances that happened during armed conflict, but this practice was changed in 2012. On the Working Group,<lb/> see Olivier de Frouville, 'Working Out a Working Group: A View from a Former Working Group Member' in<lb/> </bibl>
       <bibl>Aoife Nolan, Rosa Freedman and Therese Murphy (eds), The United Nations Special Procedures System (Brill<lb/> Nijhoff 2017) 223, 235.<lb/></bibl>
       <bibl><label>19</label> ICPPED (n 10) art 3. There is a fine line between a disappearance committed by non-state actors, which would<lb/> fall under art 3 ICPPED, and 'acquiescence' by the state, which would make the situation an enforced disappear-<lb/>ance. No legal document clarifies this matter. The UN Working Group on Enforced or Involuntary Disappearances<lb/> added in its annual report published in June 2019 an interesting voice to the discussion about disappearances by<lb/> non-state actors: 'For a number of years, the Working Group has been receiving information about increasing<lb/> instances of abductions carried out by non-State actors, which may be tantamount to acts of enforced disappear-<lb/>ances. In light of its humanitarian mandate and the fact that the victims of these acts do not have any remedy to<lb/> address their plight, the Working Group has decided to document cases concerning enforced or involuntary dis-<lb/>appearances allegedly perpetrated by non-State actors that exercise effective control and/or government-like func-<lb/>tions over a territory': Human Rights Committee, Report of the Working Group on Enforced or Involuntary<lb/> Disappearances (30 July 2019), UN Doc A/HRC/42/40, para 94.<lb/> </bibl>
-      
+
       <bibl><label>20</label> UN Human Rights Committee, General Comment No 31: The Nature of the Legal Obligations Imposed on State<lb/> Parties to the Covenant (29 March 2004), UN Doc CCPR/C/21/Rev.1/Add.13, para 8. See also the following judg-<lb/>ments of the Inter-American Court of Human Rights (IACtHR) on due diligence: IACtHR, Velásquez-Rodríguez v<lb/> Honduras, Judgment (Merits), 29 June 1988, Ser C, No 4, para 172; </bibl>
       <bibl>IACtHR, González and Others ('Cotton<lb/> Field') v Mexico, Judgment (Preliminary Objection, Merits, Reparations, and Costs), 16 November 2009, paras<lb/> 283-84. </bibl>
       <bibl>For an analysis see La Vaccara (n 11) 208-21, and Lene Guercke, 'State Responsibility for a Failure<lb/> to Prevent Violations of the Right to Life by Organized Criminal Groups: Disappearances in Mexico' (2021)<lb/> 21 Human Rights Law Review 329.<lb/> </bibl>
@@ -136,7 +136,7 @@
       <bibl>Limiting enforced disappearances in inter-<lb/>national human rights law to acts requiring state involvement has been criticised also from an IHL perspective<lb/> (Gaggioli (n 17) 328); </bibl>
       <bibl>for the arguments for including non-state actors as perpetrators of enforced disappearances,<lb/> see Giorgou (ibid 1011-15). </bibl>
       <bibl>See also the justification of the human rights approach to enforced disappearances in<lb/> Tulio Scovazzi and Gabriella Citroni, The Struggle Against Enforced Disappearance and the 2007 United Nations<lb/> Convention (Leiden 2007) 278-83.<lb/> </bibl>
-      
+
       <bibl><label>22</label> To address these terminological problems, Jeremy Sarkin argues for using the same procedures for both forcibly<lb/> disappeared and missing persons: Jeremy Sarkin, 'The Need to Deal with All Missing Persons Including Those<lb/> Missing as a Result of Armed Conflict, Disaster, Migration, Human Trafficking and Human Rights Violations<lb/> (Including Enforced Disappearances) in International and Domestic Law and Processes' (2015) 8<lb/> </bibl>
       <bibl>Inter-American and European Human Rights Journal 116, 140-41; </bibl>
       <bibl>Jeremy Sarkin, 'Why Victimology Should<lb/> Focus on All Victims, Including All Missing and Disappeared Persons' (2019) 25 International Review of<lb/> Victimology 249.<lb/> </bibl>
@@ -165,9 +165,9 @@
       <bibl><label>45</label> ibid 343-44, paras 1196-98; 345, paras 1211-12. </bibl><bibl>For more on the discussions about the right to truth in this<lb/> context see also Gaggioli (n 17) 321-22.<lb/> </bibl>
       <bibl><label>46</label> Additional Protocol I (n 27) art 33(1).<lb/> </bibl>
       <bibl><label>47</label> Bothe, Partsch and Solf (n 43) 194-95. As an example, the drafters of the Commentary point to the situation<lb/> where grave sites exist but agreements under art 34.2 have not yet been concluded.<lb/> </bibl>
-      
-      <bibl><label>49</label> See, eg, Robins (n 1).</bibl> 
-      <bibl>On the specific effects that disappearances have on women see, eg, Polly Dewhirst and<lb/> Amrita Kapur, 'The Disappeared and Invisible: Revealing the Enduring Impact of Enforced Disappearance on<lb/> Women', International Center for Transitional Justice, 15 March 2015, https://www.ictj.org/sites/default/files/<lb/> ICTJ-Global-Gender-Disappearances-2015.pdf;</bibl> 
+
+      <bibl><label>49</label> See, eg, Robins (n 1).</bibl>
+      <bibl>On the specific effects that disappearances have on women see, eg, Polly Dewhirst and<lb/> Amrita Kapur, 'The Disappeared and Invisible: Revealing the Enduring Impact of Enforced Disappearance on<lb/> Women', International Center for Transitional Justice, 15 March 2015, https://www.ictj.org/sites/default/files/<lb/> ICTJ-Global-Gender-Disappearances-2015.pdf;</bibl>
       <bibl>Human Rights Council, General Comment on Women Affected<lb/> by Enforced Disappearances Adopted by the Working Group on Enforced or Involuntary Disappearances at its<lb/> Ninety-eighth Session (31 October-9 November 2012), UN Doc A/HRC/WGEID/98/2.<lb/> </bibl>
       <bibl><label>50</label> Families of forcibly disappeared persons have themselves been found to be victims of human rights violations<lb/> by international courts. On the development of the case law of the European Court of Human Rights (ECtHR) see<lb/> Tamar Feldman, 'Indirect Victims, Direct Injury: Recognizing Relatives as Victims under the European Human<lb/> Rights System' (2009) 1 European Human Rights Law Review 50;</bibl> <bibl>Grażyna Baranowska, 'Families of<lb/> Disappeared Persons in the Jurisprudence of the European Court of Human Rights' (2018) 5 European Human<lb/> Rights Law Review 505; for a broader perspective of the approach by both the ECtHR and the IACtHR to family<lb/> members see also Ruth Rubio-Marín, Clara Sandoval and Catalina Díaz, 'Repairing Family Members: Gross<lb/> Human Rights Violations and Communities of Harm' in Ruth Rubio-Marín (ed), The Gender of Reparations:<lb/> Unsettling Sexual Hierarchies while Redressing Human Rights Violations (Cambridge University Press 2009)<lb/> 215.<lb/> </bibl>
       <bibl><label>51</label> ICPPED (n 10) art 24(4).<lb/> </bibl>
@@ -185,11 +185,11 @@
       <bibl><label>62</label> This also led to the creation of a number of international bodies specifically for post-Yugoslav countries with the<lb/> aim of assisting families of missing persons, among other things: Grażyna Baranowska, Rights of Families of<lb/> Disappeared Persons: How International Bodies Address the Needs of Families of Disappeared Persons in<lb/> Europe (Intersentia 2021) 133-72, 199-208.<lb/> </bibl>
       <bibl><label>63</label> A country not included in the database -although it has a widespread problem -is Iraq. For an overview of<lb/> missing persons throughout the world, see Human Rights Council, Annual Reports by the ICRC and the UN<lb/> Working Group on Enforced or Involuntary Disappearances, https://www.ohchr.org/en/issues/disappearances/<lb/> pages/annual.aspx.<lb/> </bibl>
       <bibl><label>64</label> Ligj nr. 7624, datë 14.10.1992, për aderimin në Protokollet shtesë të Konventës së Gjenevës të vitit 1949<lb/> (Albania).<lb/> </bibl>
-      <bibl><label>65</label> Circulaire n°126/DEF/EMA/ESMG/JUROPS du 2 février 2010 relative au bureau national de renseignements<lb/> sur les prisonniers de guerre, 2010 (France);</bibl> 
+      <bibl><label>65</label> Circulaire n°126/DEF/EMA/ESMG/JUROPS du 2 février 2010 relative au bureau national de renseignements<lb/> sur les prisonniers de guerre, 2010 (France);</bibl>
       <bibl>Decreto no. 5.684 por el cual se asigna a la Dirección de Asuntos<lb/> Jurídicos, Derechos Humanos y Derecho Internacional Humanitario del Ministerio de Defensa Nacional, las fun-<lb/>ciones de Oficina Nacional de Información en Caso de Conflicto Armado, de conformidad a lo previsto en los<lb/> Convenios III y IV de Ginebra de 1949 y sus Protocolos Adicionales (Paraguay).<lb/> </bibl>
       <bibl><label>66</label> eg, Ley 26.679 (Delitos contra la libertad) modifícanse el Código Penal y el Código Procesal Penal de la Nación,<lb/> 2011 (Argentina).<lb/> </bibl>
       <bibl><label>67</label> eg, Code Civil, 1804 (Belgium); </bibl><bibl>Decreto con Fuerza de Ley 1, fija texti refundido, coordinado y sistemazido del<lb/> Codigo Civil (Chile).<lb/> </bibl>
-      <bibl><label>68</label> eg, Decreto 187/83 sobre la Comision Nacional sobre la Desaparicion de Personas, 1983 (Argentina);</bibl> 
+      <bibl><label>68</label> eg, Decreto 187/83 sobre la Comision Nacional sobre la Desaparicion de Personas, 1983 (Argentina);</bibl>
       <bibl>Acuerdo<lb/> Gubernativo No 264-2006 (Guatemala).<lb/> </bibl>
       <bibl><label>69</label> Decreto núm. 45 [5 de octubre de 2004]: créase la Comisión Interinstitucional de Búsqueda de Niños y Niñas<lb/> Desaparecidos a Consecuencia del Conflicto Armado en El Salvador.<lb/> </bibl>
       <bibl><label>70</label> Decreto No 8-2016 mediante el cual se decreta la Ley de Búsqueda Inmediata de Mujeres Desaparecidas<lb/> (Guatemala).<lb/> </bibl>
@@ -204,18 +204,18 @@
       <bibl><label>78</label> Christalla Yakinthou, 'The Quiet Deflation of Den Xehno? Changes in the Greek Cypriot Communal Narrative<lb/> on the Missing Persons in Cyprus' (2008) 20(1) The Cyprus Review 15. On missing persons in Cyprus see also<lb/> Nasia Hadjigeorgiou, 'Truth and Closure in a Frozen Conflict: An Assessment of the Committee on Missing<lb/> Persons in Cyprus' (2021) 55 Israel Law Review, https://doi.org/10.1017/S0021223721000121.<lb/> </bibl>
       <bibl><label>79</label> Iosif Kovras and Neophytos Loizides, 'Delaying Truth Recovery for Missing Persons' (2011) 17 Nations and<lb/> Nationalism 520, 526.<lb/> </bibl>
       <bibl><label>80</label> Office on Missing Persons (Establishment, Administration and Discharge of Functions) Act, No. 14 of 2016<lb/> (Sri Lanka), art 27.<lb/> </bibl>
-      
-      <bibl><label>81</label> Law of Ukraine, 'On the Legal Status of the Missing Person' (2018), art 1.<lb/></bibl> 
-      <bibl><label>82</label> ICRC (n 14) art 2: any person who is missing 'in connection with armed conflict, internal violence, natural cat-<lb/>astrophes, or any other situation that would require the intervention of state authority'.<lb/></bibl> 
-      <bibl><label>83</label> Law of Ukraine (n 81) arts 2-8, 17-22.<lb/></bibl> 
-      <bibl><label>84</label> ibid arts 10-11 (in particular the territory of Donetsk and Luhansk regions).<lb/></bibl> 
-      <bibl><label>85</label> ibid arts 12-16.<lb/><lb/> </bibl> 
+
+      <bibl><label>81</label> Law of Ukraine, 'On the Legal Status of the Missing Person' (2018), art 1.<lb/></bibl>
+      <bibl><label>82</label> ICRC (n 14) art 2: any person who is missing 'in connection with armed conflict, internal violence, natural cat-<lb/>astrophes, or any other situation that would require the intervention of state authority'.<lb/></bibl>
+      <bibl><label>83</label> Law of Ukraine (n 81) arts 2-8, 17-22.<lb/></bibl>
+      <bibl><label>84</label> ibid arts 10-11 (in particular the territory of Donetsk and Luhansk regions).<lb/></bibl>
+      <bibl><label>85</label> ibid arts 12-16.<lb/><lb/> </bibl>
       <bibl><label>86</label> Baranowska (n 62) 24-25.</bibl>
-      
+
       <bibl><label>87</label> Armed Forces, US Code, Title 10, Ch 76 (Missing Persons Act), (2001) US, art C. The other US enactments in<lb/> the ICRC database also concern members of armed forces: Department of Defense, Instruction No. 1000.1,<lb/> 16 April 2012 (incorporating Change 1, 9 June 2014); </bibl><bibl>Department of Defense, Instruction No. 1300.18,<lb/> 8 January 2008 (incorporating Change 1, 14 August 2009). The regulations foresee a procedure whereby each<lb/> person is declared to be in one of the following four categories: missing, deserted, absent without leave, or<lb/> dead: Missing Persons Act, para 1503(d) 3. </bibl>
       <bibl>For the developments of US politics and regulations in this area see<lb/> Michael Allen, Until the Last Man Comes Home: POWs, MIAs, and the Unending Vietnam War (University of<lb/> North Carolina Press 2009); </bibl>
       <bibl>Michael R Dolski, 'When X Doesn't Mark the Spot: Historical Investigation and<lb/> Identifying Remains from the Korean War' in Derek Congram (ed), Missing Persons: Multidisciplinary<lb/> Perspectives on the Disappeared (Canadian Scholar's Press 2016) 137.<lb/> </bibl>
-      
+
       <bibl><label>88</label> Law of the Republic of Azerbaijan on Perpetuating the Memory of Martyrs and Benefits of Families of Martyrs<lb/> (Azerbaijan), art 1.<lb/> </bibl>
       <bibl><label>89</label> Loi no 2011-087 du 30 décembre 2011 portant Code des personnes et de la famille (Mali), art 76.<lb/> </bibl>
       <bibl><label>90</label> ICRC (n 14) 16. This includes continuing the search even after the missing person is declared dead, if the<lb/> remains of the person are not found.<lb/> </bibl>
@@ -223,10 +223,10 @@
       <bibl><label>92</label> However, it is not entirely clear for how long a person should reasonably be considered alive. Some families<lb/> hold on to the hope of their loved ones returning after decades without any information; suffice it to consider<lb/> how the opening of borders between the northern and southern parts of Cyprus in 2003 awakened the hopes of<lb/> some of the families that their loved ones might still return when their relatives went missing 30 to 40 years earlier:<lb/> Öncel Polili, 'Kuzey Kibris'ta kayip kisiler ve ailelerinin insan haklari' (2012) 9 Kibrisli Türk I ̇nsan Haklari Vakfi<lb/> Yayinlari, Appendix 2.<lb/> </bibl>
       <bibl><label>93</label> eg, Code Civil (Belgium) (n 67); </bibl>
       <bibl>Decreto con Fuerza de Ley 1 (Chile) (67).<lb/> </bibl>
-      
+
       <bibl><label>94</label> For more on the 'declaration of absence' see Gabriella Citroni, 'The Pitfalls of Regulating the Legal Status of<lb/> Disappeared Persons through Declaration of Death' (2014) 12 Journal of International Criminal Justice 787.<lb/> </bibl>
-      <bibl><label>95</label> In addition to persons missing as a result of armed conflict the law also explicitly included persons who disap-<lb/>peared in concentration gaps or have been arrested and then disappeared: Loi du 20 août 1948 relative aux<lb/> déclarations de décès et de présomption de décès et à la transcription et la rectification administrative de certains<lb/> actes de décès, art 4 (Belgium).</bibl> 
-      <bibl>On the post-Second World War Convention on the Declaration of Death of<lb/> Missing Persons, which aimed to manage the legal positions of thousands of families who were waiting for<lb/> answers, see also La Vaccara (n 11) 51-52.</bibl> 
+      <bibl><label>95</label> In addition to persons missing as a result of armed conflict the law also explicitly included persons who disap-<lb/>peared in concentration gaps or have been arrested and then disappeared: Loi du 20 août 1948 relative aux<lb/> déclarations de décès et de présomption de décès et à la transcription et la rectification administrative de certains<lb/> actes de décès, art 4 (Belgium).</bibl>
+      <bibl>On the post-Second World War Convention on the Declaration of Death of<lb/> Missing Persons, which aimed to manage the legal positions of thousands of families who were waiting for<lb/> answers, see also La Vaccara (n 11) 51-52.</bibl>
       <bibl>For examples of laws from the nineteenth century on accounting<lb/> for missing persons and family reunification of soldiers, see La Vaccara, ibid 40-42.<lb/> </bibl>
       <bibl><label>96</label> Zakon o nestalim osobama (Bosnia and Herzegovina) (n 72) art 29.<lb/> </bibl>
       <bibl><label>97</label> Ley n°20377 (Chile) (n 75) art 1.<lb/> </bibl>
@@ -237,18 +237,18 @@
       <bibl><label>102</label> Spanish Civil Code (1990 as of 2012), arts 181-93.<lb/> </bibl>
       <bibl><label>103</label> Decreto Legislativo n°295, Codigo Civil (1984) (Peru), arts 49-66.<lb/></bibl>
       <bibl><label>104</label> Registration of Deaths (Temporary Provisions) (Amendment) Act, No. 16 of 2016 (Sri Lanka), art 8k(2).<lb/></bibl>
-      
-      <bibl><label>105</label> Civil Code of the Kyrgyz Republic (1996), arts 79-80.<lb/></bibl> 
-      <bibl><label>106</label> Law of Ukraine (n 81) art 4.4.<lb/></bibl> 
-      <bibl><label>107</label> Codigo Civil Federal (Mexico) (n 100) art 705; for more on the presumption of death of a disappeared person,<lb/> see arts 706-14.<lb/></bibl> 
-      <bibl><label>108</label> Ley General en materia de personas desaparecidas (Mexico) (n 77) art 148.<lb/></bibl> 
-      <bibl><label>109</label> Codigo Civil (1984) (Peru) (n 103) arts 49-66.<lb/></bibl> 
+
+      <bibl><label>105</label> Civil Code of the Kyrgyz Republic (1996), arts 79-80.<lb/></bibl>
+      <bibl><label>106</label> Law of Ukraine (n 81) art 4.4.<lb/></bibl>
+      <bibl><label>107</label> Codigo Civil Federal (Mexico) (n 100) art 705; for more on the presumption of death of a disappeared person,<lb/> see arts 706-14.<lb/></bibl>
+      <bibl><label>108</label> Ley General en materia de personas desaparecidas (Mexico) (n 77) art 148.<lb/></bibl>
+      <bibl><label>109</label> Codigo Civil (1984) (Peru) (n 103) arts 49-66.<lb/></bibl>
       <bibl><label>110</label> Ley No 28413 (Peru) (n 76) art 3; Resolucion Defensorial N°04-2005-DP (Peru) (n 76) art. 1.<lb/> </bibl>
       <bibl><label>111</label> See, eg, Presumption of Death Act. R.S., c 354, s 1 (consolidated to 18 April 2012): An Act Respecting<lb/> Presumption of Death (Nova Scotia, Canada); Presumption of Death Act, R.S.N.L. 1990, c p-20: An Act to<lb/> Provide for the Making of Orders Declaring that Persons Named in the Orders are Presumed to be Dead<lb/> (Newfoundland and Labrador, Canada).<lb/> </bibl>
       <bibl><label>112</label> Loi no 2011-087 (Mali) (n 89) arts 76-83 and 190; see art 83.1 on reappearance.<lb/> </bibl>
       <bibl><label>113</label> Law No 2 of 2006 amending some provisions of Act No 25 of 1929 concerning certain personal status provi-<lb/>sions (Egypt), art 1.<lb/> </bibl>
       <bibl><label>114</label> ICRC (n 14) 16; </bibl><bibl>see also art 8 'Recognition of absence' and commentary, 19-20.<lb/> </bibl>
-      
+
       <bibl><label>115</label> Human Rights Committee (HRC), Communication No 1997/2010, Views Adopted by the Committee at its<lb/> 110th Session (10-18 March 2014), UN Doc CCPR/C/110/D/1997/2010 (Rizvanovic v Bosnia and<lb/> Herzegovina), para 9. 6. </bibl>
       <bibl>In the decisions issued a year earlier it found that a very similar case was a violation<lb/> of the obligation to provide an effective remedy: HRC, Communication Nos 1917/2009, 1918/2009, 1925/<lb/> 2009, 1953/2010, Views Adopted by the Committee at its 107 th Session (10-28 March 2014), UN Doc.<lb/> CCPR/C/107/D/1917/2009, 1918/2009, 1925/2209, 1953/2010 (Fatima Prutina and Others v Bosnia and<lb/> Herzegovina), para 9. 6. </bibl>
       <bibl>The line of reasoning from Rizvanovic (violation of the prohibition of inhuman and<lb/> degrading treatment) was subsequently repeated in a number of cases: HRC, Communication No 1956/2010,<lb/> Views Adopted by the Committee at its 111th Session (7-25 July 2014), UN Doc CCPR/C/111/D/1956/2010<lb/> (Duric v Bosnia and Herzegovina), para 9.8; </bibl>
@@ -276,7 +276,7 @@
       <bibl><label>134</label> ICPPED (n 10) arts 24(4) and (6).<lb/> </bibl>
       <bibl><label>135</label> With the exception of a number of civil codes listed in the database, which contain provisions that address the<lb/> effect that a person going missing has on his or her assets and family: see, eg, Code Civil (Belgium) (n 67);<lb/> </bibl>
       <bibl>Decreto con Fuerza de Ley 1 (Chile) (n 67).</bibl>
-      
+
     </listBibl>
   </text>
 </TEI>

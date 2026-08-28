@@ -37,7 +37,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:00:38.810464Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.8.2-70-gc35e48387</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -93,26 +93,26 @@
         <bibl><label>16</label> Foucault, Sécurité, territoire, population, 13.<lb/> </bibl>
           <bibl><label>17</label> Foucault, Du gouvernement des vivants, 8.<lb/> </bibl>
           <bibl><label>18</label> Dardot et Laval, La nouvelle raison du monde, 410.<lb/> </bibl>
-          <bibl><label>19</label> 
+          <bibl><label>19</label>
 Foucault, Sécurité, territoire, population, 284.<lb/> </bibl>
         <bibl><label>20</label> Foucault, Sécurité, territoire, population, 458.<lb/> </bibl>
         <bibl><label>21</label> Foucault, Naissance de la biopolitique, 265.<lb/> </bibl>
           <bibl><label>22</label> Foucault, Naissance de la biopolitique, 265.<lb/> </bibl>
-          
+
         <bibl><label>24</label> Dardot et Laval, La nouvelle raison du monde, 419.<lb/> </bibl>
           <bibl><label>25</label> Foucault, Naissance de la biopolitique, 124.<lb/> </bibl>
           <bibl><label>26</label> Foucault, Naissance de la biopolitique, 124.<lb/> </bibl>
-          
+
         <bibl><label>28</label> Dardot et Laval, La nouvelle raison du monde, 458.<lb/> </bibl>
         <bibl><label>29</label> Dardot et Laval, La nouvelle raison du monde, 413.<lb/> </bibl>
-          
+
           <bibl><label>32</label> Foucault, Naissance de la biopolitique, 225.<lb/> </bibl>
         <bibl><label>33</label> Foucault, Les mots et les choses: Une archéologie des sciences humaines (Paris: Gallimard, 2005 [1966]), 333.<lb/> </bibl>
         <bibl><label>34</label> Sur la thèse du corps en tant qu'espace vide et sa portée politique, je me permets d'indiquer le travail<lb/> où les arguments sont développés de manière plus étendue: Monica Stival, Politique et morale chez<lb/> Foucault: Entre la critique et le nominalisme (Paris: L'Harmattan, 2018).<lb/> </bibl>
         <bibl><label>35</label> Foucault, Sécurité, territoire, population, 187.<lb/> </bibl>
         <bibl><label>36</label> Dardot et Laval, La nouvelle raison du monde, 459.<lb/> </bibl>
-          
- Bibliographie<lb/> 
+
+ Bibliographie<lb/>
           <bibl>Dardot, Pierre, et Christian Laval. La nouvelle raison du monde: Essai sur la société<lb/> néolibérale. Paris: La Découverte, 2010.<lb/> </bibl>
 <bibl>Foucault, Michel. Du gouvernement des vivants: Cours au Collège de France<lb/> (1979-1980). Paris: EHESS/Gallimard/Seuil, 2012.<lb/> </bibl>
 <bibl>Foucault, Michel. Les mots et les choses: Une archéologie des sciences humaines. Paris:<lb/> Gallimard, 2005 [1966].<lb/> </bibl>

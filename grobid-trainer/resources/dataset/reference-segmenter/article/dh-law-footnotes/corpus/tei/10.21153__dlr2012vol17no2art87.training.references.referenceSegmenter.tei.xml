@@ -64,7 +64,7 @@
       <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-05-20T20:59:02.569133Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.9.0-62-gdd0608bb6</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -97,8 +97,8 @@
     <listBibl>
       <bibl><label>1</label> Silvia D'Ascoli, Sentencing in International Criminal Law: The UN ad hoc Tribunals and<lb/> Future Perspectives for the ICC (Hart, 2011).<lb/> </bibl>
       <bibl><label>2</label> I have written: The Sentencing Code of Canada: Principles and Objectives (LexisNexis, 2009);<lb/> </bibl>
-      <bibl>Les Misérables on Sentencing (Academic Press, 2007);</bibl> 
-      <bibl>Speaking to Sentence: A Practical Guide<lb/> (Carswell, 2005);</bibl> 
+      <bibl>Les Misérables on Sentencing (Academic Press, 2007);</bibl>
+      <bibl>Speaking to Sentence: A Practical Guide<lb/> (Carswell, 2005);</bibl>
       <bibl>Principes de la détermination de la peine (Les Éditions Yvon Blais, 2004).<lb/> </bibl>
       <bibl><label>3</label> Two recent outstanding examples follow: AP Simester and Andreas von Hirsch, Crimes, Harms,<lb/> and Wrongs: On the Principles of Criminalisation (Hart Publishing, 2011) reviewed by the<lb/> undersigned in (2012) 36 Criminal Law Journal 192; </bibl>
       <bibl>Julian V Roberts (ed), Mitigation and<lb/> Aggravation at Sentencing (Cambridge University Press, 2011) also reviewed by the<lb/> undersigned, in (2012) 36 Criminal Law Journal 317.<lb/> </bibl>

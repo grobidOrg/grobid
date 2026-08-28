@@ -52,7 +52,7 @@ You can check whether the service is up and running by opening the following URL
 The service provides also an admin console, reachable at <http://yourhost:8071> where some additional checks like ping, metrics, hearthbeat are available.
 We recommend, in particular to have a look at the metrics (using the [Metric library](https://metrics.dropwizard.io/4.2.0/getting-started/)) which are providing the rate of execution as well as the throughput of each entry point.
 
-In addition, metrics in [Prometheus](https://prometheus.io/) exposition format are available at <http://yourhost:8071/metrics/prometheus>. This includes both the application metrics (rate/throughput per entry point) and JVM/process metrics (heap, GC, threads, CPU). A Prometheus server can scrape this endpoint and the metrics can then be visualised and alerted on in [Grafana](https://grafana.com/). The service can also **push** metrics over OTLP (e.g. to Grafana Cloud) instead of being scraped. See [Monitoring with Prometheus](Monitoring.md) for a step-by-step setup of both the pull and push paths.  
+In addition, metrics in [Prometheus](https://prometheus.io/) exposition format are available at <http://yourhost:8071/metrics/prometheus>. This includes both the application metrics (rate/throughput per entry point) and JVM/process metrics (heap, GC, threads, CPU). A Prometheus server can scrape this endpoint and the metrics can then be visualised and alerted on in [Grafana](https://grafana.com/). The service can also **push** metrics over OTLP (e.g. to Grafana Cloud) instead of being scraped. See [Monitoring with Prometheus](Monitoring.md) for a step-by-step setup of both the pull and push paths.
 
 ## Configure the server
 
@@ -1045,11 +1045,11 @@ Generate blank training data (raw features + empty TEI template) from a PDF with
 ```bash
 curl --location 'http://localhost:8070/api/createTrainingBlank' \
 --form 'input=@"PATH_DOCUMENT"' \
---form 'flavor=article/dh-law-footnotes-token' \
+--form 'flavor=article/footnotes-refs-token' \
 --output output_name.zip
 ```
 
-The `flavor` parameter is optional. When set, the generated raw feature files will use the feature extraction strategy of that flavor (e.g., token-level features for `article/dh-law-footnotes-token`).
+The `flavor` parameter is optional. When set, the generated raw feature files will use the feature extraction strategy of that flavor (e.g., token-level features for `article/footnotes-refs-token`).
 
 ## Parallel mode
 

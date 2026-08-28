@@ -72,7 +72,7 @@
         <label>GROBID</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">7272991</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
         <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
       </application>
@@ -126,10 +126,10 @@
 <bibl>G. C. Browder, Hitler's Enforcers: The Gestapo and the SS Security Service in the Nazi Revolution (Oxford, 1996);<lb/> </bibl>
 <bibl>K. Paehler, The Third Reich's Intelligence Services: The Career of Walter Schellenberg (Cambridge, 2017); </bibl>
 <bibl>N. West,<lb/> Hitler's Trojan Horse: The Fall of the Abwehr (London, 2022), among many others.<lb/> </bibl>
-          
-        <bibl><label>2</label> Some of these references are M. Faulkner, 'The Kriegsmarine, Signals Intelligence and the Development of the<lb/> B-Dienst before the Second World War', Intelligence and National Security, 25, 4 (2010), pp. 521-46; </bibl>          
+
+        <bibl><label>2</label> Some of these references are M. Faulkner, 'The Kriegsmarine, Signals Intelligence and the Development of the<lb/> B-Dienst before the Second World War', Intelligence and National Security, 25, 4 (2010), pp. 521-46; </bibl>
           <bibl>D. Syrett,<!--Only half the content of this reference would be given here.And more references are missing--><lb/> </bibl>
-          
+
         <bibl><label>3</label> See, for example, M. M. Hull, 'The Irish Interlude: German Intelligence in Ireland', Journal of Military History, 66, 3<lb/> (2002), pp. 695-717; </bibl>
           <bibl>H. L. Trefousse, 'Failure of German Intelligence in the United States, 1935-1945', Mississippi Valley<lb/> Historical Review, 42, 1 (1955), pp. 84-100; </bibl>
 <bibl>S. E. Hilton, Hitler's Secret War in South America, 1939-1945 (London,<lb/> 1999); </bibl>
@@ -150,10 +150,10 @@
 <bibl>J. J. Díaz Benítez, 'Los proyectos británicos para ocupar las Islas Atlánticas durante<lb/> la no beligerancia española (1940-1943)', Hispania Nova: Revista de Historia Contemporánea, 11 (2013), pp.<lb/> 1-28; </bibl>
 <bibl>M. García Cabrera, 'Operation Warden: British Sabotage Planning in the Canary Islands during the Second<lb/> World War', Intelligence and National Security, 35, 2 (2020), pp. 252-68.<lb/> </bibl>
         <bibl><label>6</label> M. García Cabrera, 'British Geographic Intelligence during the Second World War: A Case Study of the Canary<lb/> Islands', Intelligence and National Security, 37 (2022), pp. 262-80; </bibl><bibl>M. García Cabrera, 'Información operacional<lb/> para una guerra internacional: la inteligencia militar norteamericana y la descripción de las islas Canarias', Anuario<lb/> de Estudios Atlánticos, 69 (2023), pp. 1-22.<lb/> </bibl>
-          
+
 <!--missing part of the references from footnote 2; and the other refercen after the "halfreference"<bibl>&apos;German Meteorological Intelligence from the Arctic and North Atlantic, 1940-1945&apos;, Mariner&apos;s Mirror, 71, 3<lb/> (1985), pp. 325-33; </bibl>
 <bibl>R. Erskine, &apos;Eavesdropping on &quot;Bodden&quot;: ISOS v. the Abwehr in the Straits of Gibraltar&apos;,<lb/> Intelligence and National Security, 12, 3 (1997), pp. 110-29; </bibl><bibl>and R. Erskine, &apos;From the Archives: A Bletchley Park<lb/> Assessment of German Intelligence on Torch&apos;, Cryptologia, 13, 2 (1989), pp. 135-42.<lb/> </bibl>-->
-          
+
         <bibl><label>7</label> See, for example, J. J. Díaz Benítez, 'The Etappe Kanaren: A Case Study of the Secret Supply of the German Navy<lb/> in Spain during the Second World War', International Journal of Maritime History, 30, 3 (2018), pp. 472-87.<lb/> </bibl>
         <bibl><label>8</label> A. Almeida Aguiar, 'Adoctrinar con la palabra: prensa y propaganda nacionalsocialista en las islas Canarias<lb/> durante la Guerra Civil', Historia y Comunicación Social, 25, 2 (2020), pp. 379-88, </bibl>
           <bibl>and M. García Cabrera,<lb/> Deutsche auf den Inseln! La colonia alemana de Canarias y la huella del nazismo (1930-1946) (Madrid, 2023).<lb/> </bibl>
@@ -192,7 +192,7 @@
           <bibl>Rodríguez González,<lb/> 'Los servicios secretos', p. 82, </bibl>
           <bibl>and D. Kahn, Covert Warfare: The Final Solution of the Abwehr (New York, 1989),<lb/> p. 276. </bibl>
           <bibl>See also NARA, RG 65/A1-136/124, FBI report on the German secret service, Aug. 1942.<lb/> </bibl>
-        <bibl><label>27</label> NARA, RG 65/A1-136/124, FBI report, Aug. 1942,</bibl> 
+        <bibl><label>27</label> NARA, RG 65/A1-136/124, FBI report, Aug. 1942,</bibl>
           <bibl>and The National Archives, London (henceforth TNA), KV<lb/> 2/2654, Rudolf's report, n.d.<lb/> </bibl>
         <bibl><label>28</label> TNA, KV 2/2654, French intelligence report on KO-Morocco, n.d.<lb/> </bibl>
         <bibl><label>29</label> TNA, KV 2/207 and 208, British file on Hans Karl Scharf, 1945-1946.<lb/> </bibl>
@@ -200,12 +200,12 @@
           <bibl>RG 59/Decimal File 45-49/6748,<lb/> Report on the German espionage organization in Spain and its material used during World War II, 4 June 1946;<lb/> </bibl>
           <bibl>RG 226/A1-210/35, Officers, agents and employees of the Axis intelligence services in Spain, 1945; </bibl>
           <bibl>and RG 65/<lb/> A1-136/124, FBI report on the German secret service, Aug. 1942. </bibl>
-          <bibl>See also Rodríguez González, 'Los servicios<lb/> secretos', pp. 87-8.<lb/> </bibl> 
+          <bibl>See also Rodríguez González, 'Los servicios<lb/> secretos', pp. 87-8.<lb/> </bibl>
         <bibl><label>31</label> NARA, RG 59/Decimal File 45-49/6748, Report on the German espionage organization in Spain, 4 June 1946.<lb/> </bibl>
         <bibl><label>32</label> NARA, RG 59/Decimal File 45-49/6748, List of German intelligence agents in Spain, 26 Sept. 1946.<lb/> </bibl>
         <bibl><label>33</label> NARA, RG 65/A1-136/124, FBI report on the German secret service, Aug. 1942.<lb/> </bibl>
         <bibl><label>34</label> NARA, RG 59/Decimal File 45-49/6748, Report on the German espionage organization in Spain, 4 June 1946.<lb/> </bibl>
-          <bibl><label>35</label> 
+          <bibl><label>35</label>
 Díaz Benítez, 'Etappe Kanaren', pp. 6-8.<lb/> </bibl>
         <bibl><label>36</label> J. Ponce Marrero, 'Canarias y la expansión de los imperialismos: de la Europa Bismarckiana a la crisis finisecular,<lb/> 1880-1899', Vegueta: Anuario de la Facultad de Geografía e Historia, 1 (1993), pp. 167-77; </bibl>
           <bibl>J. Ponce Marrero,<lb/> Canarias en la Gran Guerra, 1914-1918: estrategia y diplomacia. Un estudio sobre la política exterior de España<lb/> (Las Palmas de Gran Canaria, 2006), among others.<lb/> </bibl>
@@ -214,7 +214,7 @@ Díaz Benítez, 'Etappe Kanaren', pp. 6-8.<lb/> </bibl>
           <bibl>Díaz Benítez, Anglofilia y autarquía en Canarias; </bibl>
           <bibl>and Díaz Benítez, 'Los<lb/> proyectos británicos'. </bibl>
           <bibl>On British intelligence and propaganda in the islands, see M. García Cabrera and J. J. Díaz<lb/> Benítez, 'Organización y contenidos de la propaganda de guerra británica en Canarias durante la Segunda Guerra<lb/> Mundial', Vegueta, 19 (2019), pp. 513-33.<lb/> </bibl>
-        <bibl><label>39</label> Díaz Benítez, 'Etappe Kanaren', pp. 474-5,</bibl> 
+        <bibl><label>39</label> Díaz Benítez, 'Etappe Kanaren', pp. 474-5,</bibl>
           <bibl>and J. J. Díaz Benítez, 'German Supply Ships and Blockade Runners in<lb/> the Canary Islands in the Second World War', Mariners Mirror, 104, 3 (2008), pp. 318-29.<lb/> </bibl>
         <bibl><label>40</label> Díaz Benítez, 'Etappe Kanaren', pp. 474-5, </bibl>
           <bibl>and Díaz Benítez, 'German Supply Ships'.<lb/> </bibl>
@@ -230,11 +230,11 @@ Díaz Benítez, 'Etappe Kanaren', pp. 6-8.<lb/> </bibl>
           <bibl>RG 165/77/1706, Volume on<lb/> German activities in the Canary Islands, 15 Feb. 1942, </bibl>
           <bibl>and TNA, WO 204/12405, Report on the German intelli-<lb/>gence in the Canaries and the Spanish Sahara, 1944.<lb/> </bibl>
         <bibl><label>48</label> Politisches Archiv des Auswärtigen Amts, Berlin (henceforth PAAA), RAV-Las Palmas 1 and RAV 163/847, Walter<lb/> Sauermann's files, 1938-1944; </bibl>
-          <bibl>NARA, RG 38/98B/413, Intelligence reports from the US consul in Las Palmas, 21<lb/> 
+          <bibl>NARA, RG 38/98B/413, Intelligence reports from the US consul in Las Palmas, 21<lb/>
 Sept. 1944, and Jordan intelligence report, 4 Aug. 1945. </bibl>
           <bibl>On Flick, see NARA, RG 38/98B/413, Jordan report, 26<lb/> July and 4 Aug. 1945; </bibl>
           <bibl>RG 226/19A/254, Report on Flick, 12 Sept. 1945, </bibl>
-          <bibl>and PAAA, RAV-Las Palmas 2.<lb/> </bibl> 
+          <bibl>and PAAA, RAV-Las Palmas 2.<lb/> </bibl>
         <bibl><label>49</label> On Ahlers, see PAAA, RAV 163/847, Ahlers' personal file, 8 Mar. 1944; </bibl>
           <bibl>NARA, RG 165/77/1706, Volume of stra-<lb/>tegic information on the Canary Islands, 15 Feb. 1942; </bibl>
           <bibl>RG 226/A1-210/35, Officials, agents and employees of<lb/> the Axis in Spain, 1945; </bibl>
@@ -357,7 +357,7 @@ Sept. 1944, and Jordan intelligence report, 4 Aug. 1945. </bibl>
         <bibl><label>93</label> NARA, RG 84/2245/37, Letter from Tower, 28 Aug. 1946, </bibl>
           <bibl>and RG 226/127/4, Repatriation by air, 23 Aug. 1946.<lb/> </bibl>
         <!-- This is not a reference at all,maybe should be change into <front>-->
-          <!-- the below should be actually headnote 
+          <!-- the below should be actually headnote
           <bibl type="footnote">Downloaded from https://academic.oup.com/gh/article/42/4/540/7887681 by Max-Planck Society user on 17 September 2025</bibl> -->
         </listBibl>
     </text>

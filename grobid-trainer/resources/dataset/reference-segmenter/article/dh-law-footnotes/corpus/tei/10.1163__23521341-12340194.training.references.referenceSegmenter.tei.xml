@@ -68,7 +68,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:50:22.605889Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">fd543f4</label>
         <ref target="https://github.com/grobidOrg/grobid"/>

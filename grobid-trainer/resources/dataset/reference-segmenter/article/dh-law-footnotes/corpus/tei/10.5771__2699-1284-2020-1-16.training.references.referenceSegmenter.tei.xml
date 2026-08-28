@@ -72,7 +72,7 @@
         <label>GROBID</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">7272991</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
         <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
       </application>

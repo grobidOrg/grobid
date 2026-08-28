@@ -69,7 +69,7 @@
         <label>GROBID</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">7272991</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
         <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
       </application>
@@ -280,7 +280,7 @@
           <bibl> But see infra note 235.<lb/> </bibl>
         <bibl><label>94</label> Helmholz , supra note 55, at 20;</bibl>
       <bibl> see also D'ENTRÈVES, supra note 61, at 119 n.1.<lb/></bibl>
-        <bibl><label> 95</label> 
+        <bibl><label> 95</label>
 McKnight, supra note 2, at 407-09.<lb/> </bibl>
         <bibl><label>96</label> See Milsom, supra note 18, at 11-12. Milsom here speaks of fit according to patterns of legal<lb/> rules, but the notion of judges in a sense creating rules that at the same time are seen as<lb/> compelled by antecedent norms is apropos.<lb/> </bibl>
         <bibl><label>97</label> See Cook, supra note 12, at 169.<lb/> </bibl>
@@ -354,7 +354,7 @@ McKnight, supra note 2, at 407-09.<lb/> </bibl>
         <bibl><label>142</label> See ATKINSON, supra note 106, at 47.<lb/></bibl>
         <bibl><label>143</label> See id. at 54.<lb/> </bibl>
         <bibl><label>144</label> Berman, supra note 107, at 1664-66.<lb/> </bibl>
-          
+
 <bibl><label>145</label> See id. at 1666.<lb/> </bibl>
         <bibl><label>146</label> See BOORSTIN, supra note 1, at 36;</bibl>
           <bibl> LIEBERMAN, supra note 15, at 42;</bibl>
@@ -377,15 +377,15 @@ McKnight, supra note 2, at 407-09.<lb/> </bibl>
         <bibl>2 Id. at<lb/> 2, 210-11, 491 for pertinent passages from the Commentaries.<lb/> </bibl>
         <bibl><label>153</label> 1 BLACKSTONE, supra note 23, at 55.<lb/> </bibl>
 
-        <bibl><label>154</label> Id. at 185.<lb/></bibl> 
-          <bibl><label>155</label> 3 id. at 87.<lb/></bibl> 
+        <bibl><label>154</label> Id. at 185.<lb/></bibl>
+          <bibl><label>155</label> 3 id. at 87.<lb/></bibl>
         <bibl><label>156</label> So, as for Hooker, such human law is "grounded upon the Word," 1 HOOKER, supra note<lb/> 108, at 309, but not dictated by it.<lb/> </bibl>
         <bibl><label>157</label> See infra notes 305-12 and accompanying text.<lb/> </bibl>
         <bibl><label>158</label> See Berman, supra note 107, at 1690-93.<lb/> </bibl>
         <bibl><label>159</label> See Berman &amp; Reid, supra note 50, at 443, 489-94;</bibl>
           <bibl> Cairns, supra note 54, at 340, 352;<lb/></bibl>
           <bibl> Finnis, supra note 24, at 164-65;</bibl><bibl> Watson, supra note 23, at 810-12.<lb/> </bibl>
-        <bibl><label>160</label> See Berman, supra note 107, at 1709.<lb/></bibl> 
+        <bibl><label>160</label> See Berman, supra note 107, at 1709.<lb/></bibl>
           <bibl><label>161</label> See id. at 1722.<lb/> </bibl>
         <bibl><label>162</label> See id. at 1708, 1711-14.<lb/> </bibl>
         <bibl><label>163</label> See id. at 1733.<lb/> </bibl>
@@ -395,22 +395,22 @@ McKnight, supra note 2, at 407-09.<lb/> </bibl>
         <bibl><label>167</label> See ERNEST CAMPELL MOSSNER, BISHOP BUTLER AND THE AGE OF REASON: A STUDY IN THE<lb/> HISTORY OF THOUGHT (1936).<lb/> </bibl>
         <bibl><label>168</label> See SPELLMAN, supra note 166, at 120.<lb/> </bibl>
 
-        <bibl><label>169</label> See id. at 7.<lb/></bibl> 
+        <bibl><label>169</label> See id. at 7.<lb/></bibl>
           <bibl><label>170</label> See id. at 4, 61, 128.<lb/></bibl> <bibl><label>171</label> See id. at 157.<lb/></bibl>
         <bibl><label>172</label> See id. at 70. Other Latitudinarian notions to find their way into the Commentaries are the<lb/> endorsement of strong civil government, id. at 122,</bibl>
           <bibl> and self-interest as sound motivation,<lb/> see id. at 118-19, 122.<lb/> </bibl>
 
-      <!-- footnote numbers for label 173-187 are missing --> 
+      <!-- footnote numbers for label 173-187 are missing -->
 <bibl>See James R. Jacob &amp; Margaret C. Jacob, The Anglican Origins of Modern Science: The<lb/> Metaphysical Foundations of the Whig Constitution, 71 ISIS 251, 258 (1980); </bibl>
 <bibl>SPELLMAN, supra<lb/> note 166, at 6-7.<lb/> </bibl>
 <bibl>See Jacob &amp; Jacob, supra note 173, at 254, 262, 265.</bibl>
           <bibl> The Anglican mix of authority from the<lb/> Bible, reason, and the senses-a mix hospitable to science-is one of its distinctives. See<lb/> id. at 256;</bibl>
-          <bibl> Tumbleson, supra note 105, at 134-35, 139, 148, 151-53, 156.<lb/></bibl> 
-          <bibl>SPELLMAN, supra note 166, at 111.<lb/></bibl> 
-          <bibl>See id. at 74-77.<lb/></bibl> 
-          <bibl>See id. at 87-88, 160.<lb/></bibl> 
-          <bibl>See id. at 4.<lb/></bibl> 
-          <bibl>See id. at 156.<lb/></bibl> 
+          <bibl> Tumbleson, supra note 105, at 134-35, 139, 148, 151-53, 156.<lb/></bibl>
+          <bibl>SPELLMAN, supra note 166, at 111.<lb/></bibl>
+          <bibl>See id. at 74-77.<lb/></bibl>
+          <bibl>See id. at 87-88, 160.<lb/></bibl>
+          <bibl>See id. at 4.<lb/></bibl>
+          <bibl>See id. at 156.<lb/></bibl>
           <bibl>See id. at 83-86.<lb/></bibl>
           <bibl> See id. at 106-07.<lb/> </bibl>
 <bibl>See id. at 8, 66, 76-77, 81-82.</bibl>
@@ -422,7 +422,7 @@ McKnight, supra note 2, at 407-09.<lb/> </bibl>
           <bibl> The project of natural theology itself received impetus<lb/> from Hooker. See Kirby, supra note 113, at 270-71.</bibl>
           <bibl> Butler also aligned himself with the<lb/> empiricism of Locke and Newton. MOSSNER, supra note 167, at 82.<lb/></bibl>
           <bibl> See supra notes 24-27 and accompanying text.<lb/> </bibl>
-          
+
         <bibl><label>188</label> See JOSEPH BUTLER, THE ANALOGY OF RELIGION NATURAL AND REVEALED 245 (J.M. Dent &amp; Co.<lb/> 1906) (1736).<lb/> </bibl>
         <bibl><label>189</label> See id. at 105.<lb/> </bibl>
         <bibl><label>190</label> See id. at 243.</bibl><bibl> So, for those designed for society God's laws prescribe justice and charity.<lb/> Id. at 245.<lb/> </bibl>
@@ -438,10 +438,10 @@ McKnight, supra note 2, at 407-09.<lb/> </bibl>
         <bibl><label>194</label> See BUTLER, supra note 188, at xxx.<lb/> </bibl>
         <bibl><label>195</label> See ATKINSON, supra note 106, at 91-92, 98.<lb/> </bibl>
         <bibl><label>196</label> JOSEPH BUTLER, FIFTEEN SERMONS PREACHED AT THE ROLLS CHAPEL AND A DISSERTATION UPON<lb/> THE NATURE OF VIRTUE 237-38 (G. Bell Sons 1914) (1726).<lb/> </bibl>
-        <bibl><label>197</label> See BUTLER, supra note 188, at 143.<lb/></bibl> 
+        <bibl><label>197</label> See BUTLER, supra note 188, at 143.<lb/></bibl>
         <bibl><label>198</label> See id. at 152-53.<lb/> </bibl>
         <bibl><label>199</label> See MOSSNER, supra note 167, at 105, 117.<lb/></bibl><bibl><label>200</label> See id. at 96.<lb/> </bibl>
-        <bibl><label>201</label> See BUTLER, supra note 188, at xviii, xxx, 79.<lb/></bibl> 
+        <bibl><label>201</label> See BUTLER, supra note 188, at xviii, xxx, 79.<lb/></bibl>
           <bibl><label>202</label> See id. at 25, 180.<lb/> </bibl>
         <bibl><label>203</label> See id. at 104, 143-44, 148. </bibl>
           <bibl>As Blackstone would remark regarding the changing of human<lb/> laws, see infra notes 272-78 and accompanying text, Butler observed that we hazard<lb/> unknown effects by changing the regime God has instituted for his rule. </bibl>
@@ -455,7 +455,7 @@ McKnight, supra note 2, at 407-09.<lb/> </bibl>
         <bibl><label>208</label> See Conklin, supra note 23, at 213-15. Conklin points out especially the affinity in<lb/> epistemology and the role of happiness.<lb/> </bibl>
         <bibl><label>209</label> See Blackstone's probabilism here, for example: "But this [move of the Restoration<lb/> Parliament] was for the necessity of the thing, which supersedes all law; for if they had<lb/> not so met, it was morally impossible that the kingdom should have been settled in peace."<lb/> 1 BLACKSTONE, supra note 23, at 147 (emphasis added).</bibl>
           <bibl> And here: "So that it is morally<lb/> impossible to trace out, with any degree of accuracy, when the several mutations of the<lb/> common law were made . . . ." 4 id. at 402 (first emphasis added).</bibl>
-          <bibl> The probabilism in<lb/> this use of "morally impossible" finds an explanation from Blackstone's contemporary,<lb/> Samuel Johnson:<lb/> He thus defined the difference between physical and moral truth:<lb/> "Physical truth is, when you tell a thing as it actually is. Moral truth<lb/> is, when you tell a thing sincerely and precisely as it appears to you.<lb/> I say such a one walked across the street; if he really did so, I told a<lb/> physical truth. If I thought so, though I should have been mistaken, I<lb/> told a moral truth."<lb/> 
+          <bibl> The probabilism in<lb/> this use of "morally impossible" finds an explanation from Blackstone's contemporary,<lb/> Samuel Johnson:<lb/> He thus defined the difference between physical and moral truth:<lb/> "Physical truth is, when you tell a thing as it actually is. Moral truth<lb/> is, when you tell a thing sincerely and precisely as it appears to you.<lb/> I say such a one walked across the street; if he really did so, I told a<lb/> physical truth. If I thought so, though I should have been mistaken, I<lb/> told a moral truth."<lb/>
 JAMES BOSWELL, THE LIFE OF SAMUEL JOHNSON 510-11 (C.P. Chadsey ed., Doubleday 1946)<lb/> (1791).<lb/> </bibl>
         <bibl><label>210</label> See BOORSTIN, supra note 1, at 23.<lb/> </bibl>
         <bibl><label>211</label> See id. 55, 117-19.</bibl><bibl> In these last commitments, Blackstone owed a debt also to Locke, id. at<lb/> 31,</bibl><bibl> and the Common Sense school of philosophy, Conklin, supra note 23, at 216-17.<lb/> </bibl>
@@ -501,7 +501,7 @@ JAMES BOSWELL, THE LIFE OF SAMUEL JOHNSON 510-11 (C.P. Chadsey ed., Doubleday 19
           <bibl> In like manner, Maine has remarked the importance of<lb/> simplicity, harmony, and elegance as guides to Roman jurisconsults. MAINE, supra note<lb/> 24, at 65.<lb/> </bibl>
         <bibl><label>231</label> See BOORSTIN, supra note 1, at 28.<lb/> </bibl>
         <bibl><label>232</label> See Finnis, supra note 24, at 176.<lb/> </bibl>
-        <bibl><label>233</label> See BOORSTIN, supra note 1, at 92.<lb/></bibl> 
+        <bibl><label>233</label> See BOORSTIN, supra note 1, at 92.<lb/></bibl>
           <bibl><label>234</label> See id. at 98.<lb/> </bibl>
         <bibl><label>235</label> See Lobban, supra note 50, at 332-33.</bibl>
           <bibl> Emily Kadens has emphasized that Blackstone's<lb/> approach to the law differed in its systemization and generalization from that of the<lb/> practitioner. Kadens, supra note 5, at 1559;</bibl>
@@ -550,11 +550,11 @@ JAMES BOSWELL, THE LIFE OF SAMUEL JOHNSON 510-11 (C.P. Chadsey ed., Doubleday 19
         <bibl><label>258</label> See Alschuler, supra note 1, at 37-38.<lb/> </bibl>
         <bibl><label>259</label> See BOORSTIN, supra note 1, at 81;</bibl>
           <bibl> LIEBERMAN, supra note 15, at 43-44.<lb/> </bibl>
-          
+
         <bibl><label>260</label> 4 BLACKSTONE, supra note 23, at 436.</bibl>
           <bibl> Other passages urging modification of English law<lb/> include id. at 3-5, 88-89, 165-66, 175, 239, 278-79, 349, 353, 381-82, and 409.<lb/> </bibl>
         <bibl><label>261</label> MAINE, supra note 24, at 64.<lb/> </bibl>
-        <bibl><label>262</label> See BOORSTIN, supra note 1, at 111, 145.<lb/></bibl> 
+        <bibl><label>262</label> See BOORSTIN, supra note 1, at 111, 145.<lb/></bibl>
           <bibl><label>263</label> See id. at 146-50.<lb/> </bibl>
 <bibl><label>264</label> The classic discussion is to be found in MAINE, supra note 24, at 17-36.<lb/> </bibl>
         <bibl><label>265</label> See LIEBERMAN, supra note 15, at 47.<lb/> </bibl>
@@ -563,7 +563,7 @@ JAMES BOSWELL, THE LIFE OF SAMUEL JOHNSON 510-11 (C.P. Chadsey ed., Doubleday 19
           <bibl> Allen would have this use of fictions establish that the<lb/> Commentaries sees the law as a fabrication that does not reflect the way things really are.<lb/> Id. at 205.</bibl>
           <bibl> Fabrication the law may be, see supra text accompanying note 260, but the<lb/> point of fictions is to shape this fabric more accurately to reflect the way things really are<lb/> notwithstanding formulations of the positive law that otherwise would depart from the<lb/> way things really are.</bibl>
           <bibl> After all, that is the driving force behind fictions. See MAINE, supra<lb/> note 24, at 17-36.<lb/> </bibl>
-          
+
         <bibl><label>268</label> See, e.g., Stretton, supra note 205, at 119-20, 122, 126-27 (casting Blackstone's (?) "one<lb/> person" theory of marriage as a legal fiction to serve his "scientific organizing principle"<lb/> though, according to Stretton, not directly dictated by natural law).<lb/> </bibl>
         <bibl><label>269</label> Again, the classic discussion is to be found in MAINE, supra note 24, at 17-36.<lb/> </bibl>
         <bibl><label>270</label> See Lobban, supra note 50, at 325.<lb/> </bibl>
@@ -575,7 +575,7 @@ JAMES BOSWELL, THE LIFE OF SAMUEL JOHNSON 510-11 (C.P. Chadsey ed., Doubleday 19
         <bibl><label>273</label> See Conklin, supra note 23, at 220-24.<lb/> </bibl>
         <bibl><label>274</label> Prest, supra note 3, at 115-18.<lb/></bibl>
           <bibl><label> 275</label> See id. at 118-21.<lb/> </bibl>
-          
+
 <bibl><label>276</label> See id. at 104.<lb/> </bibl>
         <bibl><label>277</label> See Cook, supra note 12, at 175-76 (noting Blackstone's preference for the common law<lb/> over statutes); </bibl>
 <bibl>Kadens, supra note 5, at 1561 (discussing Blackstone's imagery of the law<lb/> as a house deformed by statutes).<lb/> </bibl>
@@ -591,7 +591,7 @@ JAMES BOSWELL, THE LIFE OF SAMUEL JOHNSON 510-11 (C.P. Chadsey ed., Doubleday 19
           <bibl> 2 id. at 258;</bibl>
           <bibl> 3 id. at<lb/> 108;</bibl>
           <bibl> 4 id. at 181, 237, 241.<lb/> </bibl>
-          
+
         <bibl><label>284</label> See supra notes 116-18 and accompanying text.<lb/> </bibl>
         <bibl><label>285</label> See Cook, supra note 12, at 175.<lb/> </bibl>
         <bibl><label>286</label> See supra text accompanying note 39.</bibl>
@@ -599,7 +599,7 @@ JAMES BOSWELL, THE LIFE OF SAMUEL JOHNSON 510-11 (C.P. Chadsey ed., Doubleday 19
         <bibl><label>287</label> See Wilfrid Prest, William Blackstone's Anglicanism, in GREAT CHRISTIAN JURISTS IN ENGLISH<lb/> HISTORY 213, 231-32 (Mark Hill &amp; R. H. Helmholz eds., 2017).<lb/> </bibl>
         <bibl><label>288</label> See DAVIES, supra note 151, at 16, 21.<lb/> </bibl>
         <bibl><label>289</label> In keeping with its comparatist approach, the Commentaries with seeming approval notes<lb/> within or alongside the common law itself a diversity of sources and even of rules of law.<lb/> See 1 BLACKSTONE, supra note 23, at 63-64, 74-78; 4 Id. at 403.<lb/> </bibl>
-          
+
         <bibl><label>290</label> See Alschuler, supra note 1, at 2, 24-27.<lb/> </bibl>
         <bibl><label>291</label> See id. at 26.<lb/> </bibl>
         <bibl><label>292</label> See 1 BLACKSTONE, supra note 23, at 410, 423;</bibl>
@@ -618,7 +618,7 @@ JAMES BOSWELL, THE LIFE OF SAMUEL JOHNSON 510-11 (C.P. Chadsey ed., Doubleday 19
           <bibl> Posner discovers the<lb/> maximization of welfare in Blackstone's approach, Posner 573-74,</bibl>
           <bibl> much as Maine found<lb/> "utilitarianism" in the Roman law, McKnight, supra note 2, at 406 n.67.</bibl>
           <bibl> Finnis notes<lb/> that Blackstone in some respects bases even the human institution of rights upon reason.<lb/> Finnis, supra note 24, at 166.<lb/> </bibl>
-          
+
         <bibl><label>298</label> Lobban describes this as supplying a natural law "external test of reasonableness of the<lb/> law." Lobban, supra note 50, at 333.<lb/> </bibl>
         <bibl><label>299</label> See BOORSTIN, supra note 1, at 27.<lb/></bibl>
           <bibl><label>300</label> See id.<lb/> </bibl>
@@ -632,7 +632,7 @@ JAMES BOSWELL, THE LIFE OF SAMUEL JOHNSON 510-11 (C.P. Chadsey ed., Doubleday 19
         <bibl><label>304</label> This search for sound reasons is not for Blackstone an individual affair; he distrusted<lb/> individual reason. See BOORSTIN, supra note 1, at 50, 103, 117;</bibl>
           <bibl> Posner, supra note 45, at<lb/> 603.<lb/></bibl>
           <bibl><label> 305</label> See supra notes 147-56 and accompanying text.<lb/> </bibl>
-          
+
         <bibl><label>306</label> See supra note 240 and accompanying text.<lb/></bibl>
           <bibl><label> 307 </label>Social contract theory plays a role in Blackstone's development of natural law, see Finnis,<lb/> supra note 24, at 178-79,</bibl>
           <bibl> and even property rights are contingent, developed in the context<lb/> of society, see supra note 152 and accompanying text;</bibl>
@@ -670,7 +670,7 @@ JAMES BOSWELL, THE LIFE OF SAMUEL JOHNSON 510-11 (C.P. Chadsey ed., Doubleday 19
           <bibl> That Blackstone does not subscribe to judicial review, see 1<lb/> BLACKSTONE, supra note 23, at 91;</bibl>
           <bibl> Helmholz, supra note 55, at 14, in no way compromises<lb/> his commitment to natural law.</bibl><bibl> Finnis, supra note 24, at 169-70.<lb/> </bibl>
         <bibl><label>324</label> Finnis, supra note 24, at 182-83 (footnote omitted).<lb/> </bibl>
-          
+
         <bibl><label>325</label> See Alschuler, supra note 1, at 54;</bibl>
           <bibl> cf. Allen, supra note 21, at 198 (stating that "the<lb/> Commentaries is a checkerboard of natural law and positivist perspectives").<lb/> </bibl>
         <bibl><label>326</label> See Berman &amp; Reid, supra note 50, at 521.<lb/> </bibl>

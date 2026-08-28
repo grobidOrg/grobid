@@ -713,7 +713,7 @@ public class Segmentation extends AbstractParser {
                                 .linearScaling(block.getWidth(), referenceWidth, NBBINS_POSITION);
                     }
 
-                    // additional visual + content features (dh-law-footnotes flavour only)
+                    // additional visual + content features (article/footnotes-refs flavour only)
                     if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES || flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN) {
                         features.extendedFeatures = true;
 

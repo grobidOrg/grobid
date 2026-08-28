@@ -42,7 +42,7 @@
         <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-12-12T15:43:14.253728Z" type="extractor">
           <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
           <label type="revision">536e79c</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <label type="variant-id">grobid.training.segmentation</label>
           <ref target="https://github.com/kermitt2/grobid"/>
         </application>
@@ -72,11 +72,11 @@
 		<front>ABSTRACT <lb/>Horkheimer and Adorno's Dialektik der Aufklärung is one of the much-discussed <lb/>books about Enlightenment of the 20 th century, but the ground in which it has <lb/>its origins is not yet satisfactorily investigated in all its different aspects. This es-<lb/>say tries to fill this gap showing how the debate of the first decades of the Nine-<lb/>teenth century is at the origin of Horkheimer and Adorno's spiritual categories <lb/>and especially of their wide interpretation of Aufklärung, which they make coin-<lb/>cide with all the modernity and even with the whole Western thought. <lb/></front>
 	  <body>1. Immagini filosofiche <lb/>Il Novecento ha conosciuto un grande fervore di studi sui Lumi e la <lb/>storiografia ha prodotto varie ondate di ripensamenti, rivalutazioni, <lb/>ridimensionamenti rispetto allo stato dell'arte lasciatoci in eredità <lb/>dalla cultura ottocentesca 1 . Il 'processo ai Lumi' di cui mi propongo <lb/></body>
 
-			<listBibl>1 Un'interessante messa a punto in N. Weill (éd.), L'Esprit des Lumières est-il per-<lb/>du?, 18 ° forum « Le Monde » (Le Mans, 17-19 novembre 2006), Presses universi-<lb/>taires de Rennes, Rennes 2007; ma cfr. anche A. Compagnon, Les antimodernes de <lb/>Joseph de Maistre à Roland Barthes, Gallimard, Paris 2005 ; J. Schmidt (ed.), What is <lb/>Enlightenment? Eighteenth-Century Answers and Twentieth-Century Questions, University <lb/>of California Press, Berkeley 1996; V. Ferrone, D. Roche, Postfazione. Storia e sto-<lb/>riografia dell'Illuminismo, in V. Ferrone, D. Roche (a cura di), L'Illuminismo. Diziona-<lb/>rio storico, Laterza, Roma-Bari 1997, pp. 511-592 (poi ripubblicato come volume <lb/>autonomo: V. Ferrone, D. Roche, L'Illuminismo nella cultura contemporanea, Later-<lb/>za, Roma-Bari, 2002); G. Ricuperati, Frontiere e limiti della ragione. Dalla crisi della <lb/>coscienza europea all'Illuminismo, Utet, Torino 2006; S. Fleischacker, What is En-<lb/></listBibl>	  
-	  
+			<listBibl>1 Un'interessante messa a punto in N. Weill (éd.), L'Esprit des Lumières est-il per-<lb/>du?, 18 ° forum « Le Monde » (Le Mans, 17-19 novembre 2006), Presses universi-<lb/>taires de Rennes, Rennes 2007; ma cfr. anche A. Compagnon, Les antimodernes de <lb/>Joseph de Maistre à Roland Barthes, Gallimard, Paris 2005 ; J. Schmidt (ed.), What is <lb/>Enlightenment? Eighteenth-Century Answers and Twentieth-Century Questions, University <lb/>of California Press, Berkeley 1996; V. Ferrone, D. Roche, Postfazione. Storia e sto-<lb/>riografia dell'Illuminismo, in V. Ferrone, D. Roche (a cura di), L'Illuminismo. Diziona-<lb/>rio storico, Laterza, Roma-Bari 1997, pp. 511-592 (poi ripubblicato come volume <lb/>autonomo: V. Ferrone, D. Roche, L'Illuminismo nella cultura contemporanea, Later-<lb/>za, Roma-Bari, 2002); G. Ricuperati, Frontiere e limiti della ragione. Dalla crisi della <lb/>coscienza europea all'Illuminismo, Utet, Torino 2006; S. Fleischacker, What is En-<lb/></listBibl>
+
 		<front>La dialettica dell'Illuminismo prima di Horkheimer e Adorno. <lb/>Aspetti del processo ai Lumi nel Novecento <lb/>CARLO BORGHERO <lb/></front>
 
-	
+
 	<note place="headnote">CARLO BORGHERO <lb/></note>
 
 		<page>2 <lb/></page>

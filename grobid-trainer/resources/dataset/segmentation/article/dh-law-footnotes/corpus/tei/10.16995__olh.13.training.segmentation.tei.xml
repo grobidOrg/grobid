@@ -46,7 +46,7 @@
         <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-11-28T13:58:03.095049Z" type="extractor">
           <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
           <label type="revision">536e79c</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <label type="variant-id">grobid.training.segmentation</label>
           <ref target="https://github.com/kermitt2/grobid"/>
         </application>
@@ -70,8 +70,8 @@
   </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
 			<front>Article <lb/>How to Cite: Baker, J 2016 The Covent Garden Old Price Riots: Protest <lb/>and Justice in Late-Georgian London. Open Library of Humanities, 2(1): e4, <lb/>pp. 1-36, DOI: http://dx.doi.org/10.16995/olh.13 <lb/>Published: 24 February 2016 <lb/>Peer Review: <lb/>This article has been peer reviewed through the double-blind process of Open Library of Humanities, <lb/>which is a journal published by the Open Library of Humanities. <lb/>Copyright: <lb/>© 2016 The Author(s). This is an open-access article distributed under the terms of the Creative <lb/>Commons Attribution 4.0 International License (CC-BY 4.0), which permits unrestricted use, distri-<lb/>bution, and reproduction in any medium, provided the original author and source are credited. See <lb/>http://creativecommons.org/licenses/by/4.0/. <lb/>Open Access: <lb/>Open Library of Humanities is a peer-reviewed open access journal. <lb/>Digital Preservation: <lb/>The Open Library of Humanities and all its journals are digitally preserved in the CLOCKSS scholarly <lb/>archive service. <lb/>James Baker, 'The Covent Garden Old Price Riots: Protest and <lb/>Justice in Late-Georgian London' (2016) 2(1): e4 Open Library of <lb/>Humanities, DOI: http://dx.doi.org/10.16995/olh.13 <lb/></front><!-- The header / footer of the first page (or the first two pages, if the header is 2 pages long should be in <front>) -->
-					
-					
+
+
 					<front>ARTICLE <lb/>The Covent Garden Old Price Riots: Protest <lb/>and Justice in Late-Georgian London <lb/>James Baker 1 <lb/>1 School of History, Art History and Philosophy, University of Sussex, UK <lb/>james.baker@sussex.ac.uk <lb/>This article explores perceptions of the law and of how agents of the law <lb/>responded to events at Covent Garden Theatre during the bitter months <lb/>between mid-October and late-November 1809, the height of the Covent <lb/>Garden Old Price riots. It does so through the lens of the periodical press, a <lb/>vital and voluminous source of not only what happened during the riots but <lb/>also of opinions on what happened and of perceptions of what happened, <lb/>opinions and perceptions that are the primary concern of this article. The <lb/>article begins with a discussion of how the magistrates, 'police officers,' <lb/>justices, and lawyers who together were agents of the legal system were <lb/>seen, where they were seen, and what they did. It moves on to examine how <lb/>the actions of those agents and the legal system they represented were <lb/>reported upon. And it concludes with a discussion of how theatregoers and <lb/>Londoners were seen to have responded to those actions, moving a signifi-<lb/>cant element of the conflict outside of Covent Garden Theatre and into the <lb/>public press in a direct response to how they were policed as threats to <lb/>public order and security. It argues that the Covent Garden Old Price riots <lb/>was a significant urban act of multi-class protest because of the ways that <lb/>it intersected with wider late-Georgian concerns, with discursive arenas <lb/>where British liberty and the freedom of her subjects were contested and <lb/>at stake. <lb/></front>
 
 			<note place="headnote">Baker: The Covent Garden Old Price Riots <lb/></note>
@@ -87,7 +87,7 @@
 			<page>3 <lb/></page>
 
 			<body>such spurious crimes as having sung, whistled, or sneezed during a performance. In <lb/>short, the OPs were, by 18 October, rioting not because of an increase in admission <lb/>price by itself but rather because of a perceived affront to their freedoms and asso-<lb/>ciated customary rights as 'Free-Born Englishmen.' 3 They were loyalists rather than <lb/>radicals, pragmatists rather than theoreticians affronted, as they saw it, by the actions <lb/>of a theatre management in league both with agents of state justice and with wealthy <lb/>elites. <lb/>However, MINIMUS did not, as many OPs had and would, use his letter to address <lb/>these issues directly. Instead his purpose was to share with the public a passage from <lb/>the farce Eurydice Hiss'd, written circa 1740 'by that able Lawyer, upright Magistrate, <lb/>and learned man, Henry Fielding, Esq. who was at the time he wrote it an eminent <lb/>Barrister, and afterwards placed at the head of the Police of the City of Westminster.' <lb/>The selected passage reads thus: <lb/>DRAMATUS PERSONA <lb/>PILLAGE, the Manager. -HONESTUS <lb/>PILLAGE -O, on me ye Gods bestow the pence, <lb/>And give your fame to any fools you please! <lb/>HONESTUS -Your love of pence sufficiently you show, <lb/>By raising still your prices on the Town. <lb/>PIL -The Town for their own sakes those prices pay, <lb/>Which the additional expenses demands. <lb/>HON -In former times, <lb/>When better Actors acted better Plays, <lb/>The Town paid less. <lb/></body>
-				
+
 				<listBibl>3 The concept of the 'Free-Born Englishman' has a long heritage, stretching back to the seventeenth <lb/>century and the Levellers. It was revived in 1790s in response to restrictions to freedom and ero-<lb/>sions of privacy imposed on Britons as a consequence of the French Revolutionary Wars, not least <lb/>the suspension of habeus corpus in 1794. See J. Barrell, The Spirit of Despotism: Invasions of Privacy <lb/>in the 1790s (Oxford: Oxford University Press, 2006); G, Cruikshank, A FREE BORN ENGLISHMAN! <lb/>THE ADMIRATION OF THE WORLD!!! AND THE ENVY OF SURROUNDING NATIONS!!!!! (1819; British <lb/>Museum Satires 13287A); B. Hilton, A Mad, Bad, and Dangerous People?: England 1783-1846 (Oxford: <lb/>Oxford University Press, 2006), pp. 65-74. <lb/></listBibl>
 
 			<note place="headnote">Baker: The Covent Garden Old Price Riots <lb/></note>
@@ -344,9 +344,9 @@
 			<page>36 <lb/></page>
 
 			<body>concerns and that the OPs and their supporters -hardly radicals in their behaviour <lb/>and outlook -were dogged in their use of disorder and public pronouncements to <lb/>protest the injustices they alleged, reveals a fractured consensus regarding the rule <lb/>of law in the liberty of the subject and the extent to which law and liberty were avail-<lb/>able for reinterpretation. <lb/></body>
-	  
+
 	  <div type="conflict">Competing Interests <lb/>The author declares that they have no competing interests. <lb/></div>
-	  
+
 	  <div type="acknowledgment">Acknowledgments <lb/>I thank anonymous peer reviewers and Melodee Beals -the history section editor <lb/>for The Open Library of Humanities -for their critical, rigerous, productive, and <lb/>encouraging comments on manuscript versions of the present article. An early ver-<lb/>sion of this paper was delivered at New Approaches to the History of Popular Pro-<lb/>test and Resistance in Britain and Ireland (1500-1900), University of Gloucestershire, <lb/>2 March 2013. I thank the workshop organisers and participants for their comments <lb/>and reflections. <lb/></div>
 
 			<front>How to cite this article: Baker, J 2016 The Covent Garden Old Price Riots: Protest <lb/>and Justice in Late-Georgian London. Open Library of Humanities, 2(1): e4, pp. 1-36, <lb/>DOI: http://dx.doi.org/10.16995/olh.13 <lb/>Published: 24 February 2016 <lb/>Copyright: © 2016 The Author(s). This is an open-access article distributed under the <lb/>terms of the Creative Commons Attribution 4.0 International License (CC-BY 4.0), which <lb/>permits unrestricted use, distribution, and reproduction in any medium, provided the <lb/>original author and source are credited. See http://creativecommons.org/licenses/by/4.0/. <lb/>OPEN ACCESS <lb/>Open Library of Humanities is a peer-reviewed open <lb/>access journal published by Open Library of Humanities. </front>
@@ -355,6 +355,6 @@
 	</text>
 
 
-  
-  
+
+
 </TEI>

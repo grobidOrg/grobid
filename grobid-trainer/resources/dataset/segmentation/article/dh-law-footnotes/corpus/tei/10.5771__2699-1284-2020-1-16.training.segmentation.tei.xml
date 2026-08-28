@@ -44,7 +44,7 @@
           <label>A machine learning software for extracting information from scholarly documents</label>
           <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
           <label type="revision">e13aa19</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <label type="variant-id">grobid.training.segmentation</label>
           <ref target="https://github.com/kermitt2/grobid"/>
         </application>
@@ -160,9 +160,9 @@
 			<body>mit einer sehr weiten Lizenz ausgestattet sind, die funktional einer urheberrechtlichen <lb/>Erschöpfung entspricht und Nutzerinnen und Nutzer zu einer selbst organisierten Zu-<lb/>gänglichkeit ermächtigt. 30 Open Access ist dabei keine Relativierung oder Aushöhlung <lb/>des Urheberrechts, wie gerne behauptet wird, sondern eine aus der Logik eines umfas-<lb/>senden Verwertungsrechts heraus mit den Mitteln des Urheberrechts gestaltete Publi-<lb/>kation. Die dabei eingeräumte Lizenz wird als unentgeltlich eingeräumtes "einfaches <lb/>Nutzungsrecht für jedermann" im Urheberrechtsgesetz in § 32 Abs. 3 S. 3 UrhG sogar <lb/>ausdrücklich erwähnt und anerkannt. <lb/>Zugang durch Digitalisierung <lb/>Open Access bezieht sich auf genuin digital publizierte Inhalte und deren Zugänglich-<lb/>keit. Da durch die Digitalisierung aber nicht bloß ein Medienbruch, sondern mittler-<lb/>weile auch eine gesamtgesellschaftliche Änderung im Informationsverhalten zu beob-<lb/>achten ist, wonach man Inhalte, die nicht online zur Verfügung stehen, nur noch nach-<lb/>rangig, wenn überhaupt noch zur Kenntnis nimmt, sehen es Bibliotheken als ihre Auf-<lb/>gabe an, den Medienbruch zwischen gedruckten und digitalen Angeboten zu überwin-<lb/>den, indem der konventionelle Bestand sukzessive digitalisiert und online zur Verfü-<lb/>gung gestellt wird. 31 <lb/>Da bei der retrospektiven Digitalisierung das Vervielfältigungsrecht als urheber-<lb/>rechtliches Verwertungsrecht sowie bei der anschließenden Onlinestellung zusätzlich <lb/>noch das Recht der öffentlichen Zugänglichmachung in Anspruch genommen werden, <lb/>haben Bibliotheken sich zunächst darauf konzentriert, gemeinfreie ältere Werke zu di-<lb/>gitalisieren und zur Verfügung zu stellen. Diese Praxis hat zu der paradoxen Situation <lb/>geführt, dass unter dem Gesichtspunkt ihrer digitalen Sichtbarkeit nur ganz alte oder <lb/>zeitgenössische Werke online zu finden sind, während der zeitgeschichtlich bedeuten-<lb/>de Bestand aus der ersten Hälfte des 20 Jahrhunderts bis zur etwa Mitte der 90er Jahr <lb/>kaum sichtbar ist, ein aus rechtlichen Gründen künstlich geschaffenes informationelles <lb/>"dark age". Zwar konnten jedenfalls seit dem Gesetz zur Regelung des Urheberrechts <lb/>in der Informationsgesellschaft vom 10. September 2003 auf Grundlage der so genann-<lb/>ten Archivschranke von § 53 Abs. 2 S. 1 Nr. 2, S. 2 UrhG a.F. praktisch alle Werke im <lb/>Bestand von Bibliotheken nicht nur analog vervielfältigt, sondern auch digitalisiert <lb/>werden, 32 doch war eine Nutzung dieser Digitalisate durch die Öffentlichkeit prak-<lb/>tisch ausgeschlossen und wurde erst durch das Zweite Gesetz zur Regelung des Urhe-<lb/>berrechts in der Informationsgesellschaft vom 31. Oktober 2007 am elektronischen <lb/>VI. <lb/></body>
 		<!-- mixed reference -->
 		<listBibl>30 Vgl.: Bartlakowski/Talke/Steinhauer, Bibliotheksurheberrecht, 2010, S. 173-176. <lb/></listBibl>
-		
+
 		<note place="footnote">31 Aus heutiger Sicht wird der digitale Zwischenschritt der 80er und 90er Jahre leicht überse-<lb/>hen, durch die Digitalisierung der Kataloge die alte Literatur überhaupt wieder sichtbar und <lb/>dann über die Fernleihe relativ schnell verfügbar zu machen. Die Retrokonversion der Kata-<lb/>loge war als erste Welle der Bibliotheksdigitalisierung zwar eine gewaltige Anstrengung, ver-<lb/>ursachte aber keine nennenswerten rechtlichen Schwierigkeiten. <lb/></note>
-		
+
 		<listBibl>32 BGBl. I 2003, S. 1774-1788. <lb/></listBibl>
 
 			<page>24 <lb/></page>
@@ -238,5 +238,5 @@
 
 	</text>
 
-	
+
 </TEI>

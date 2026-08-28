@@ -68,7 +68,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:01:47.695920Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.8.2-70-gc35e48387</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -110,16 +110,16 @@
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
         <listBibl>
         <bibl><label>1</label><lb/> Final Report, Recommendations, Independent Commission on Banking, September 2011, http://bankingcommission.<lb/> independent.gov.uk/<lb/> </bibl>
-          
+
         <bibl type="footnote"><label>2</label><lb/> The large UK banking groups are required to hold equity and other regulatory capital to absorb losses. Also, four key areas<lb/> form the focus of the Banking Reforms Act: supervision, culture, competition, and structure.<lb/> </bibl>
-          
+
         <bibl><label>3</label><lb/> B Morgan and K Yeung, An Introduction to Law and Regulation (CUP 2007), 80-85; </bibl>
 <bibl>R Baldwin and M Cave, Understanding<lb/> Regulation (2nd edn OUP 2012), 106-107; </bibl>
 <bibl>R Baldwin, 'Regulation: After Command and Control', in K Hawkins (ed.), The<lb/> Human Face of Law (OUP 1997); </bibl>
 <bibl>T Daintith, 'The Techniques of Government' in J Jowell and D Oliver (eds.), The Changing<lb/> Constitution (Oxford: Clarendon Press), 209-236; </bibl>
 <bibl>C Veljanovski, 'Economic Approaches to Regulation', in R Baldwin,<lb/> M Cave and M Lodge, The Oxford Handbook of Regulation (OUP 2010), 27-28 and 33-34; </bibl>
           <bibl>see also C Coglianese and E<lb/> Mendelson, 'Meta-Regulation and Self-Regulation', in R Baldwin, M Cave and M Lodge, The Oxford Handbook of Regulation<lb/> (OUP 2010), 146-151.<lb/> </bibl>
-          
+
         <bibl><label>4</label><lb/> See M Blair, G Waker and R Purves, Financial Services Law (OUP 2014), 648-652.<lb/> </bibl>
         <bibl><label>5</label><lb/> The Government response to the ICB recommendations was published on 19 December 2011; see Cm 8252 Government<lb/> response to the Independent Commission on Banking. Further developed Government proposals were set in the White Paper,<lb/> Cm 8356 Banking reforms: delivering stability and supporting a sustainable economy.<lb/> </bibl>
         <bibl><label>6</label><lb/> R Baldwin and M Cave, (n 1) 20;</bibl> <bibl>IG MacNeil, An Introduction to The Law on Financial Investment (Hart 2012), 31-32; see<lb/> generally, G Calabresi, The Cost of Accidents: A Legal and Economic Analysis (New Haven 1970).<lb/> </bibl>
@@ -129,18 +129,18 @@
 <bibl>X Freixas, C<lb/> Giannini, G Hoggarth and F Soussa, 'Lender of Last Resort -A Review of the Literature', in C Goodhart and G Illing (eds),<lb/> Financial Crisis, Contagion, and the Lender of the Last Resort (OUP 2002); </bibl>
 <bibl>A Campbell and R Lastra, 'Revisiting the Lender<lb/> of Last Resort-The Role of the Bank of England', in I MacNeil and O'Brien (eds), The Future of Financial Regulation, 2010,<lb/> 161-178.<lb/> </bibl>
         <bibl><label>9</label><lb/> The Bill was published on 10 October 2012 in Cm 8453 Sound Banking: Delivering Reform. This was to enable pre-legislative<lb/> scrutiny of the Bill by the PCBS.<lb/> </bibl>
-        <bibl><label>10</label><lb/> See PCBS First report (HL98-HC848), Second report (HL 126-HC 1012) and the Final report, Changing Banking for<lb/> Good (HL 27-1-HC 175-1).<lb/> 
-          
+        <bibl><label>10</label><lb/> See PCBS First report (HL98-HC848), Second report (HL 126-HC 1012) and the Final report, Changing Banking for<lb/> Good (HL 27-1-HC 175-1).<lb/>
+
           11<lb/> </bibl>
 <bibl>HL Paper 126 HC 1012.<lb/> </bibl>
-          
-        <bibl><label>12</label><lb/> Parliamentary Commission on Banking Standards' Final Report (n 11).<lb/></bibl> <bibl><label>13</label><lb/> First Report, paras 63-78, (n 11), and HL Paper 98 of session 1012.<lb/> </bibl><bibl><label>14</label><lb/> 
+
+        <bibl><label>12</label><lb/> Parliamentary Commission on Banking Standards' Final Report (n 11).<lb/></bibl> <bibl><label>13</label><lb/> First Report, paras 63-78, (n 11), and HL Paper 98 of session 1012.<lb/> </bibl><bibl><label>14</label><lb/>
 First Report, para 94 (n 11).<lb/> </bibl>
-        <bibl><label>15</label><lb/> See Second Report, para 5; </bibl><bibl>also First Report, para 126. The Commission's report was supported by Sir John Vickers as to<lb/> increasing the durability and permanence of the ring-fence (quoted in Second Report, para 5).<lb/></bibl> <bibl><label>16</label><lb/> 
+        <bibl><label>15</label><lb/> See Second Report, para 5; </bibl><bibl>also First Report, para 126. The Commission's report was supported by Sir John Vickers as to<lb/> increasing the durability and permanence of the ring-fence (quoted in Second Report, para 5).<lb/></bibl> <bibl><label>16</label><lb/>
 See Second Report, para 8.<lb/> </bibl>
         <bibl><label>17</label><lb/> A Tyrie MP said that '[F]or the ring-fence to succeed, banks need to be discouraged from gaming the rules. All history tells<lb/> us they will do this unless incentivised not to', 21 December 2012, The Telegraph.<lb/> </bibl>
         <bibl><label>18</label><lb/> Second Report, para 10: The first power would 'enable the regulator to take steps that could lead to a specific banking group<lb/> affected by the ring-fence being required to divest itself fully of either its ring-fenced or its non-ring-fenced bank. This power<lb/> could thus be exercised in respect of an individual bank (or more than one if necessary) while retaining the benefits across<lb/> the sector as a whole of diversification…'<lb/></bibl> <bibl>Second Report, para 11: An individual banking group could be obliged to full separation of retail and wholesale activities. See,<lb/> how the first reserve power might work, and also several safeguards: ' a) A stipulation that the regulator could only commence the<lb/> process if it felt there was a significant risk to the objectives of the ring-fence; b) A provision that the power would not be exercis-<lb/>able before the first independent review of the effectiveness of the ring-fence (an independent review which we discuss in the next<lb/> section of this Report); c) A requirement for the regulator to give a banking group early notice of any intention to use the reserve<lb/> power; d) The appointment of an external reviewer to consider the relationship between the banking group concerned and the<lb/> regulator; e) A right of appeal in relation to the exercise of the power; and f) A Treasury power to override implementation.'<lb/> </bibl><bibl><label>19</label><lb/> See FSMA 2000, section 142.<lb/> </bibl>
-        <bibl><label>20</label><lb/> Second Report, para 25: 'Alongside our proposal for a group-specific regulatory power to enforce full structural separation,<lb/> we recommended that the independent review should be required to assess the case for a move to full separation across the<lb/> banking sector as a whole'.</bibl> <bibl>See also First Report, paras 164, 171.<lb/> </bibl><bibl><label>21</label><lb/> 
+        <bibl><label>20</label><lb/> Second Report, para 25: 'Alongside our proposal for a group-specific regulatory power to enforce full structural separation,<lb/> we recommended that the independent review should be required to assess the case for a move to full separation across the<lb/> banking sector as a whole'.</bibl> <bibl>See also First Report, paras 164, 171.<lb/> </bibl><bibl><label>21</label><lb/>
 Second Report, paras 25-28. The government rejected the case for a 'second reserve power on various grounds: 'First, it con-<lb/>tends that passing such legislation would entail the Government pursuing a 'different policy' from that contained in the Bill, a<lb/> policy which in the Government's view would be based on the assumption that the ring-fence might fail, when the Government<lb/> does not itself believe that the ring-fence will fail. Second, the Government argues that 'it is not necessary to legislate now for<lb/> a reserve power to abandon ring-fencing at some point in the future', because this is a decision best made by Government and<lb/> Parliament at the time. Third, it contends that it would be wrong for the final decision on whether to bring in such a radical<lb/> change to be in the hands of the regulator rather than for Government and Parliament.' (Second Report, para 26).<lb/> </bibl>
         <bibl><label>22</label><lb/> Before 1979, with some exceptions, a deposit-taking institution in the United Kingdom did not require any licence or author-<lb/>ization: see Lord Steyn eloquently elaborates this fact in his judgment in Three Rivers District Council and Others v Governor<lb/> and Company of the Bank of England (HL) 18 May 2000, 2000 WL 571203; </bibl>
 <bibl>C Hadjiemmanuil, 'The Bank of England and the<lb/> Lessons from Barings: UK Banking Regulation under Parliamentary Scrutiny', 1 Y.B. Int'l Fin. &amp; Econ. L. 1996, 333.<lb/> </bibl>
@@ -163,7 +163,7 @@ Second Report, paras 25-28. The government rejected the case for a 'second reser
         <bibl type="footnote"><label>43</label><lb/> The National Bank Act 1864 established the OCC and the federal bank charter; it introduced limitations on bank's capacity<lb/> to engage in non-banking activities which ring-fenced the banks prior to the US deposit insurance. Before that a number of<lb/> States that had banking charters (e.g. New York) had same type of provisions.<lb/> </bibl>
         <bibl type="footnote"><label>44</label><lb/> The Gramm-Leach-Bliley Act, also known as the Financial Services Modernisation Act of 1999 [enacted on November<lb/> 12 1999] repealed part of the Glass-Steagall Act of 1933. The repeal removed barriers in the market among banking, securi-<lb/>ties, and insurance companies that prohibited any one financial institution from acting as any combination of an invest-<lb/>ment bank, a commercial bank and an insurance company. Gramm-Leach-Bliley Act enabled commercial banks, investment<lb/> banks, securities firms, and insurance companies to consolidate under one roof.<lb/> </bibl>
         <bibl type="footnote"><label>45</label><lb/> To get around the ring-fence most banks created affiliates. For example, National City Bank in 1911 and Chase National Bank in 1917,<lb/> both established affiliates that wereable to transact securities business through their 'parent' banks prohibited from. National City Bank<lb/> being a New York state charted bank and Chase National Bank being a National Bank were subject to the National Bank Act.<lb/> </bibl>
-        <bibl><label>46</label><lb/> See generally, JG Benston, 'Is Government Regulation of Banks Necessary?'[2000] Journal 
+        <bibl><label>46</label><lb/> See generally, JG Benston, 'Is Government Regulation of Banks Necessary?'[2000] Journal
 of Financial Services Research<lb/> 18(2/3), 186.<lb/> </bibl>
           <bibl><label>47</label><lb/> For example, The Glass-Steagall Act was chipped away by a series of administrative developments and rulings which allowed<lb/> commercial banks to indulge in investment activities, see F Tregenna, 'The Fat Years: The Structure and Profitability of the<lb/> US Banking Sector in the Pre-Crisis Period' Cambridge Journal of Economics 33(4), 609-632.<lb/> </bibl>
           <bibl><label>48</label><lb/> See 'capture' or 'special interest' theories of regulation: G Stigler, 'Theories of Economic Regulation' [1971] Bell Journal of<lb/> Economics, 3-21; </bibl><bibl>S Peltzman, 'Toward a More General Theory of Regulation' [1976] The Journal of Law Economics 19(2),<lb/> 211;</bibl> <bibl>F McChesney, 'Rent Extraction and Rent Creation in the Economic Theory of Regulation' [1987] Journal of Legal<lb/> Studies 16(1), 101. These authors question the motives and capabilities of the regulators.<lb/> </bibl>

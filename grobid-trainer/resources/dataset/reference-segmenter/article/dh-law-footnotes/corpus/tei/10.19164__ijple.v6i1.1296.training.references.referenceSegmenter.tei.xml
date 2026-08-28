@@ -96,7 +96,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-18T09:14:44.336949Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">fd543f4</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -141,30 +141,30 @@
         <bibl><label>8</label> See UNESCO page on Open Educational Resources https://www.unesco.org/en/communication-<lb/>information/open-solutions/open-educational-resources &lt;accessed 13.06.2022&gt;.<lb/> </bibl>
         <bibl><label>9</label> Per Lord Bingham "the law must be accessible and so far as possible intelligible, clear and predictable."<lb/> Bingham, L. (2007) "THE RULE OF LAW," The Cambridge Law Journal. Cambridge University Press, 66(1),<lb/> pp. 67-85.<lb/> </bibl>
         <bibl><label>10</label> Arthurs, S., Cooperman, M., Gallagher, J., Grealy, F., Lunney, J., Marrs, R. and Roe, R.L., 2017. From zero<lb/> to 60: Building belief, capacity and community in Street Law instructors in one weekend. Int'l J. Clinical Legal<lb/> Educ., 24, p.118.<lb/> </bibl>
-        <bibl><label>11</label> Examples include, but are not limited to, those freely available from Street Law Inc. https://store.streetlaw.org<lb/> &lt;accessed 13.06.2022&gt;,</bibl> 
-          <bibl>McQuoid-Mason, D.J., 1994. Democracy for all: education towards a democratic<lb/> culture. Juta and Company Ltd.<lb/> www.google.co.uk/books/edition/Democracy_for_All/Vgnu448i15IC?hl=en&amp;gbpv=1&amp;pg=PP1&amp;printsec=front<lb/> cover &lt;accessed 13.06.2022&gt;,</bibl> 
+        <bibl><label>11</label> Examples include, but are not limited to, those freely available from Street Law Inc. https://store.streetlaw.org<lb/> &lt;accessed 13.06.2022&gt;,</bibl>
+          <bibl>McQuoid-Mason, D.J., 1994. Democracy for all: education towards a democratic<lb/> culture. Juta and Company Ltd.<lb/> www.google.co.uk/books/edition/Democracy_for_All/Vgnu448i15IC?hl=en&amp;gbpv=1&amp;pg=PP1&amp;printsec=front<lb/> cover &lt;accessed 13.06.2022&gt;,</bibl>
           <bibl>and content in archive editions of this journal; the International Journal of Public<lb/> Legal Education.<lb/> </bibl>
 
        <!-- This is not a reference nor a footnote-->
-    <!-- was mistakenly annotated as listbibl, updated it in the segmentation model 
+    <!-- was mistakenly annotated as listbibl, updated it in the segmentation model
           Social justice<lb/> equity and<lb/> access to<lb/> information<lb/> • Pro-bono / free<lb/> • Empowering<lb/> communities<lb/> • Collaboration<lb/> • Democratising<lb/> • Demystifying<lb/> • Decoding the law<lb/> • Confidence accessing law<lb/> • Learner-centred knowledge<lb/> discovery<lb/> • Open Licensing<lb/> • Open access publishing<lb/> • All rights reserved vs Creative Commons<lb/> -->
-        
+
         <bibl><label>12</label> Elaine Campbell (2015) A dangerous method? Defending the rise of business law clinics in the UK, The Law<lb/> Teacher, 49:2, 165-175.<lb/> </bibl>
         <bibl><label>13</label> Hargreaves, I. (2011). 'Digital Opportunity: A Review of Intellectual Property and Growth'.<lb/> </bibl>
         <bibl><label>14</label> Secker J and Morrison C. (2016) Copyright and E-learning: a guide for practitioners. Facet Publishing:<lb/> London. Chapter 6: Copyright education and training:<lb/> https://ukcopyrightliteracy.files.wordpress.com/2016/07/chapter-6_secker-m_copyright-e-learning-2nd-edn.pdf<lb/> &lt;accessed 13.06.2022&gt;.<lb/></bibl> <bibl><label>15</label> https://copyrightliteracy.org/resources/copyright-the-card-game/ &lt;accessed 13.06.2022&gt;.<lb/> </bibl>
-        <bibl><label>16</label> Wakaruk, A., Gareau-Brennan, C., Pietrosanu, P. (2021). Introducing the Copyright Anxiety Scale. Journal of<lb/> Copyright in Education and Librarianship, 5(1), 1-38 www.jcel-pub.org/article/view/15212 &lt;accessed<lb/> 13.06.2022&gt;.<lb/></bibl> 
+        <bibl><label>16</label> Wakaruk, A., Gareau-Brennan, C., Pietrosanu, P. (2021). Introducing the Copyright Anxiety Scale. Journal of<lb/> Copyright in Education and Librarianship, 5(1), 1-38 www.jcel-pub.org/article/view/15212 &lt;accessed<lb/> 13.06.2022&gt;.<lb/></bibl>
           <bibl><label>17</label> https://www.gov.uk/government/publications/online-media-literacy-strategy &lt;accessed 13.06.2022&gt;.<lb/></bibl> <bibl><label>18</label> https://www.gov.uk/government/publications/ipo-strategy-2018-to-2021 &lt;accessed 13.06.2022&gt;.<lb/> </bibl>
         <bibl><label>19</label> Gibbs G (1988). Learning by Doing: A guide to teaching and learning methods. Further Education Unit.<lb/> Oxford Polytechnic: Oxford.<lb/> </bibl>
         <bibl><label>20</label> The National Co-ordinating Centre for Public Engagement describe the importance of "an open, two-way<lb/> conversation" with communities (https://www.publicengagement.ac.uk/about-engagement/what-public-<lb/>engagement) &lt;accessed 13.06.2022&gt;<lb/> </bibl>
 <bibl>21 There are some excellent resources available such as 'Should it be a Crime?' and 'Who gets a Heart' in:<lb/> Arthurs, S., Cooperman, M., Gallagher, J., Grealy, F., Lunney, J., Marrs, R. and Roe, R.L., 2017. From zero to<lb/> 60: Building belief, capacity and community in Street Law instructors in one weekend. Int'l J. Clinical Legal<lb/> Educ., 24, p.118.<lb/> </bibl>
         <bibl><label>22</label> Wallace, A., &amp; Perdue, B. (2020). Preparing Lawyers for Practice: Developing Cultural Competency,<lb/> Communication Skills, and Content Knowledge through Street Law Programs. Journal of Legal Education<lb/> (forthcoming).<lb/> </bibl>
         <bibl><label>23</label> Thomas. L., 2018, 'It puts the law they've learnt in theory into practice', Reimagining Clinical Legal<lb/> Education. Bloomsbury Publishing, 127-154.<lb/> </bibl>
-        <bibl><label>24</label> Grimes. R, McQuoid-Mason. D, O'Brien. E, Zimmer.J., (2011) StreetLaw and Social Justice Education The<lb/> Global Clinical Movement, 2011, Edited by Bloch. F., Oxford University Press.<lb/></bibl> 
-          
+        <bibl><label>24</label> Grimes. R, McQuoid-Mason. D, O'Brien. E, Zimmer.J., (2011) StreetLaw and Social Justice Education The<lb/> Global Clinical Movement, 2011, Edited by Bloch. F., Oxford University Press.<lb/></bibl>
+
         <bibl type="footnote"><label>25</label> &lt;accessed 13.06.2022&gt;.<lb/> </bibl>
-          
-        <bibl><label>26</label> The full version of the documentary is available here: https://www.youtube.com/watch?v=HM_nWsdbNvQ<lb/> &lt;accessed 13.06.2022&gt;.<lb/></bibl> 
-          <bibl><label>27</label> https://open.ed.ac.uk/how-to-guides-old/where-to-find-oers/ &lt;accessed 13.06.2022&gt;.<lb/></bibl> 
+
+        <bibl><label>26</label> The full version of the documentary is available here: https://www.youtube.com/watch?v=HM_nWsdbNvQ<lb/> &lt;accessed 13.06.2022&gt;.<lb/></bibl>
+          <bibl><label>27</label> https://open.ed.ac.uk/how-to-guides-old/where-to-find-oers/ &lt;accessed 13.06.2022&gt;.<lb/></bibl>
           <bibl><label>28</label> https://www.streetlaw.org/ &lt;accessed 13.06.2022&gt;.<lb/> </bibl>
         <bibl><label>29</label> McQuoid-Mason, D. J. (1994). Democracy for all: education towards a democratic culture. Juta and<lb/> Company Ltd.<lb/> </bibl>
         <bibl><label>30</label> See https://copyrightliteracy.org/resources/copyright-the-card-game/ &lt;accessed 13.06.2022&gt;.</bibl>

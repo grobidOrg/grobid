@@ -47,7 +47,7 @@
         <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-01-16T21:11:13.920406Z" type="extractor">
           <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
           <label type="revision">536e79c</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <label type="variant-id">grobid.training.segmentation</label>
           <ref target="https://github.com/kermitt2/grobid"/>
         </application>

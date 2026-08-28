@@ -68,7 +68,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:50:27.925096Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">fd543f4</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -176,20 +176,20 @@
       <bibl><label>57</label><lb/> Ibid., 1-4.<lb/> </bibl>
       <bibl><label>58</label><lb/> Chen Tianhua 陳天華, Jingshi zhong, Meng huitou 警世鐘•猛回頭 (Beijing: Huaxia<lb/> chubanshe, 2002).<lb/> </bibl>
       <bibl><label>59</label><lb/> Sun Zhongshan 孫中山 [Sun Yat-sen], "Mingbao fakan ci"《民報》發刊詞, in Sun<lb/> Zhongshan quanji 孫中山全集 (Beijing: Zhonghua shuju, 2011), 1: 288.<lb/> </bibl>
-      
-      <bibl><label>60</label> 
+
+      <bibl><label>60</label>
       62<lb/> Sun Zhongshan, "Zhongguo guomindang xuanyan" 中國國民黨宣言, in Sun Zhongshan<lb/> quanji, 7: 3.<lb/> </bibl>
       <!--missing 60 and 61 bibliographic, label 60 is actual label 62-->
     <!-- correctly annotated in the segmentation model still missing here -->
-      
+
       <bibl><label>63</label><lb/> Sun Zhongshan, "Sanmin zhuyi" 三民主義, in Sun Zhongshan quanji, 9: 184-85.<lb/> </bibl>
       <bibl><label>64</label><lb/> Ibid., 242.<lb/> </bibl>
       <bibl><label>65</label><lb/> Wang Tonglin 王桐齡, Zhongguo minzu shi 中國民族史 (Changchun: Jilin chuban<lb/> jituan, 2010), 9.<lb/> </bibl>
       <bibl><label>66</label><lb/> Lü Simian 呂思勉, Zhongguo minzu shi 中國民族史 (Beijing: Dongfang chubanshe,<lb/> 1996), 3.<lb/> </bibl>
       <bibl><label>67</label><lb/> Lin Huixiang 林惠祥, Zhongguo minzu shi 中國民族史 (Beijing: Shangwu yinshu guan,<lb/> 1998), 2.<lb/> </bibl>
-      
-      Works Cited<lb/> 
-      
+
+      Works Cited<lb/>
+
       <bibl>Chen, Jianming 陳建明. "Chuanjiaoshi zai xinan shaoshu minzu diqu de wenzi chuang-<lb/>zhi huodong" 傳教士在西南少數民族地區的文字創制活動. Zongjiaoxue yanjiu<lb/> 宗教學研究, no. 4 (2010): 142-49.<lb/> </bibl>
       <bibl>Chen, Tianhua 陳天華. Jingshi zhong, Meng huitou警世鐘•猛回頭. Beijing: Huaxia<lb/> chubanshe, 2002.<lb/> </bibl>
       <bibl>Dikötter, Frank 馮克. Jindai Zhongguo zhi zhongzu guannian 近代中國之種族觀念<lb/> (The Discourse of Race in Modern China). Translated by Yang Lihua 楊立華. Nanjing:<lb/> Jiangsu renmin chubanshe, 1999.<lb/> </bibl>
@@ -224,7 +224,7 @@
       <bibl>Zhang, Zhirong 張植榮. Guoji guanxi yu Xizang wenti 國際關係與西藏問題. Beijing:<lb/> Lüyou jiaoyu chubanshe, 1994.<lb/> </bibl>
       <bibl>Zheng, Zhenduo 鄭振鐸. Wan Qing wenxuan 晚清文選. Beijing: Zhongguo shehuixue<lb/> chubanshe, 2002.<lb/> </bibl>
       <bibl>Zou, Rong 邹容. Geming jun 革命軍. Beijing: Huaxia chubanshe, 2002.</bibl>
-      
+
     </listBibl>
   </text>
 </TEI>

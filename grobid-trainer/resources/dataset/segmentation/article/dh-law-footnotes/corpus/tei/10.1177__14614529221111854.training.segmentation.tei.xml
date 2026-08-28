@@ -46,7 +46,7 @@
         <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-12-19T14:43:19.928212Z" type="extractor">
           <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
           <label type="revision">536e79c</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <label type="variant-id">grobid.training.segmentation</label>
           <ref target="https://github.com/kermitt2/grobid"/>
         </application>
@@ -183,12 +183,12 @@
 
 			<page>19 <lb/></page>
 
-			<body>analysis of their possible impact, looking both inwardly and outwardly. Inwardly, businesses <lb/>will unavoidably be moved by the need to react to the regulations, and this should, in turn, <lb/>lead to greater ESG considerations within the private sector. That said, the exact risk <lb/>management processes that will be created in the light of the amending regulations falls <lb/>outside the scope of this piece of work and may be left for further research. Additionally, <lb/>there is likely to also be outward effects of the need to report climate change risks and <lb/>opportunities more greatly. Reporting will inevitably create reputational risks for businesses, <lb/>and a failure to meet the ESG criterion may lead to, inter alia, increased public scrutiny and a <lb/>lack of investor confidence, with this legislative comment noting empirical evidence of the <lb/>possible link between reporting and greater ESG consideration, through the amendments that <lb/>have been made to occupational pension schemes. <lb/></body>    
-    
+			<body>analysis of their possible impact, looking both inwardly and outwardly. Inwardly, businesses <lb/>will unavoidably be moved by the need to react to the regulations, and this should, in turn, <lb/>lead to greater ESG considerations within the private sector. That said, the exact risk <lb/>management processes that will be created in the light of the amending regulations falls <lb/>outside the scope of this piece of work and may be left for further research. Additionally, <lb/>there is likely to also be outward effects of the need to report climate change risks and <lb/>opportunities more greatly. Reporting will inevitably create reputational risks for businesses, <lb/>and a failure to meet the ESG criterion may lead to, inter alia, increased public scrutiny and a <lb/>lack of investor confidence, with this legislative comment noting empirical evidence of the <lb/>possible link between reporting and greater ESG consideration, through the amendments that <lb/>have been made to occupational pension schemes. <lb/></body>
+
     <div type="annex">Word Count: 4,725 (inc. footnotes) <lb/></div>
-    
+
     <div type="conflict">Declaration of conflicting interests <lb/>The author declared no potential conflicts of interest with respect to the research, authorship, <lb/>and/or publication of this article. <lb/></div>
-    
+
     <div type="funding"> Funding <lb/>The author received no financial support for the research, authorship, and/or publication of <lb/>this article. <lb/></div>
 
 			<page>20 </page>

@@ -65,7 +65,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:49:55.274148Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">fd543f4</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -126,9 +126,9 @@
           <bibl>idem, "Conflicts-Law Constitutionalism:<lb/> Ambitions and Problems", in M. CREMONA, P. HILPOLD, N. LAVRANOS, S.S. SCHNEIDER and A.R.<lb/> ZIEGLER (eds), Reflections on the Constitutionalisation of International Economic Law: Liber Amicorum for Ernst-<lb/>Ulrich Petersmann, Leiden, Brill/Nijhoff, 2014, 111-138, also at:<lb/> http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2182092.<lb/> </bibl>
         <bibl><label>13</label> See his "Wiederherstellung des Privatrechts", (1946) Süddeutsche Juristenzeitung, 1 et seq.<lb/> </bibl>
         <bibl><label>14</label> W. HALLSTEIN, Die Europäische Gemeinschaft, 5th ed., Düsseldorf, Econ, 1979, 33.<lb/> </bibl>
-          
+
         <bibl type="footnote"><label>15</label> An anecdote may explain my hesitation to search for a translation: "Ordnungspolitik" was the German<lb/> name of Working Group VI in the European Convention in 2003. The English name was "Economic<lb/> Governance". Was this an innovative translation? Not really. It was the Convention Secretariat that was<lb/> responsible for the introduction of the term, in which someone remembered the fierce controversies<lb/> between "Ordnungspolitik" and "industrial policy" in the Maastricht Intergovernmental Conference in<lb/> 1991 -a case of "linguistic-discursive path-dependency", according to Andreas Maurer, which confirms<lb/> that the German notion is resistant to translation.<lb/> </bibl>
-          
+
         <bibl><label>16</label> R. DEHOUSSE and J.H.H. WEILER, "The Legal Dimension", in W. WALLACE (ed), The Dynamics of<lb/> European Integration, London, Pinter, 1990, 242-60, at 243. </bibl>
           <bibl>On this legacy, see D. AUGENSTEIN, "Integration<lb/> through Law" Revisited: The Making of the European Polity, Farnham, Ashgate, 2012.<lb/> </bibl>
           <bibl><label>17</label> See the re-construction in K.W. NÖRR, Die Republik der Wirtschaft. Teil I. Von der Besatzungszeit bis zur<lb/> Großen Koalition, Tübingen, Mohr Siebeck, 1999, passim. </bibl>

@@ -41,7 +41,7 @@
           <label>A machine learning software for extracting information from scholarly documents</label>
           <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
           <label type="revision">e13aa19</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <label type="variant-id">grobid.training.segmentation</label>
         </application>
       </appInfo>
@@ -118,7 +118,7 @@
 		<listBibl>30 Vgl Marhold, Die Koalitionsfreiheit im österreichischen Recht, DRdA 2015, 413 ff. <lb/>31 Vgl Rebhahn, Arbeitskampf in einer Druckerei, DRdA 1982, 130 (Teil I) und DRdA 1982, 222 (Teil II); Marhold, DRdA <lb/>2015, 413. <lb/><!-- mixed-reference -->32 Kollektive Maßnahmen stehen mit den Grundfreiheiten in einem Spannungsverhältnis, weswegen sie daraufhin ge-<lb/>prüft werden, ob ihre Zielsetzung unionsverträglich ist, öffentliches Interesse darauf drängt und sie adäquat sind. Vgl <lb/>EuGH 1.12.2007, C-438/05, Slg 2007, I-10779; EuGH 18.12.2007, C-341/05, Slg 2007, I-11767; Mosler, Menschenbild <lb/>und soziales Ideal im europäischen Arbeitsrecht, in GedS Rebhahn, 349 ff; Hartmann, Zehn Jahre Viking und Laval: zu <lb/>Existenz und Notwendigkeit eines funktionalen Arbeitskampfbegriffs im Unionsrecht, EuZA 2018, 1 f. <lb/><!-- mixed-reference -->33 Vgl Jacobs, The Law of Strikes and Lockouts, in Blanpain, Comparative Labour Law and Industrial Relations in Industri-<lb/>alized Market Economies 11 (2014), 731 ff. Diverse Regelungen dienen im Ländervergleich der Wahrung der Verhältnis-<lb/>mäßigkeit. Urabstimmungen in den teilnehmenden Betrieben finden sich zB in England und für nicht gewerkschaftliche <lb/>Arbeitskämpfe auch in Spanien und Portugal. Der in Deutschland und wohl auch in Schweden und Dänemark, anders als <lb/>in Frankreich, Italien, Spanien und Portugal, anerkannte Grundsatz der "Kampfparität" dient in seiner Anwendung auch <lb/>der Wahrung von Verhältnismäßigkeit. Vgl Rebhahn, Collective Labour Law in Europe in a Comparative Perspective II, <lb/>The International Journal of Comparative Labour Law and Industrial Relations 20/2004/1, 113 ff; Jacobs, Labour and the <lb/>Law in Europe, 129 ff; Schlachter, Streiks in der Daseinsvorsorge in rechtsvergleichender Betrachtung, EuZA 2019, 81; <lb/>Berding, Urabstimmung vor Arbeitskämpfen im britischen Recht: Der "de minimis"-Grundsatz, EuZA 2015, 65. <lb/></listBibl>
 
 		<note place="footnote">34 § 2 Koalitionsgesetz. § § 13 und 9 Abs 3 AlVG, § 10 AuslBG sowie § 9 AÜG bekräftigen diese "Neutralität", indem sie <lb/>mit Bezug auf Betriebe, die von Streiks oder Aussperrungen betroffen sind, die Zahlung von Arbeitslosengeld sowie die <lb/>Erteilung von Beschäftigungsbewilligungen versagen und die Vermittlung oder Überlassung von Arbeitskräften untersa-<lb/>gen. <lb/></note>
-		
+
 		<listBibl>35 Vgl § 155 ArbVG. <lb/>36 Art 6 Abs 4 ESC (revidiert). Vgl Pačić, Revidierte Europäische Sozialcharta in Österreich, Deutschland und Ungarn, ALJ <lb/>2022, 129 (141 f). <lb/>37 Art 12 StGG galt als nicht tragfähig, um daraus ein Arbeitskampf-und insb ein Streikrecht zu entfalten. Vgl Rebhahn, <lb/>Neues zum Streikrecht? JBl 1992, 497. <lb/>38 Art 28 GRC. <lb/></listBibl>
 
 		<page>7</page>
@@ -358,5 +358,5 @@
 
 	</text>
 
-  
+
 </TEI>

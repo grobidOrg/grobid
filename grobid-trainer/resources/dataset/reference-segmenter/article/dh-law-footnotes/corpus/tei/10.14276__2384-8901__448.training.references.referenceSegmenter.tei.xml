@@ -65,7 +65,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:49:58.771774Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">fd543f4</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -111,21 +111,21 @@
       <bibl>V. FIORILLO, Strasburgo si adegua: le<lb/> modifiche del regolamento parlamentare europeo in risposta al Trattato di Lisbona, in Forum on line di Quaderni<lb/> costituzionali, (15 dicembre 2009).<lb/> </bibl>
       <bibl><label>5</label> Su cui v. S. CECCANTI , Le elezioni dei quattro vincitori e le possibili conseguenze nel futuro prossimo, in federalismi.it,<lb/> 8 maggio 2014 e </bibl>
       <bibl>B. GUASTAFERRO, La prima volta del Presidente della Commissione "eletto" dal Parlamento<lb/> europeo. Riflessioni sui limiti del mimetismo istituzionale, in Forum di Quaderni costituzionali (10 ottobre 2014).<lb/> </bibl>
-      <bibl><label>6</label> V. almeno P. KIIVER, The Early Warning System for the Principle of Subsidiarity. Constitutional theory and<lb/> empirical reality, Routledge, London and New York, 2012;</bibl> 
-      <bibl>S. FABBRINI e K. GRANAT, 'Yellow Card, But no<lb/> Foul': The Role of the National Parliaments Under the Subsidiarity Protocol and the Commission Proposal for an EU<lb/> regulation on the right to strike', in Common Market Law Review, Vol. 50, 2013, pp. 115-144.<lb/></bibl> 
+      <bibl><label>6</label> V. almeno P. KIIVER, The Early Warning System for the Principle of Subsidiarity. Constitutional theory and<lb/> empirical reality, Routledge, London and New York, 2012;</bibl>
+      <bibl>S. FABBRINI e K. GRANAT, 'Yellow Card, But no<lb/> Foul': The Role of the National Parliaments Under the Subsidiarity Protocol and the Commission Proposal for an EU<lb/> regulation on the right to strike', in Common Market Law Review, Vol. 50, 2013, pp. 115-144.<lb/></bibl>
       <bibl><label>7</label> In Italia v. N. LUPO, 'National and Regional Parliaments in the EU decision-making process, after the Treaty of<lb/> Lisbon and the Euro-crisis', in Perspective on Federalism, Vol. 5, No. 2/2013.<lb/> </bibl>
       <bibl><label>8</label> Sul ruolo delle seconde camere v. M. ROMANIELLO, Beyond the Constitutional 'Bicameral Blueprint':<lb/> Europeanization and National Identities in Belgium, in M. CARTABIA, N. LUPO e A. SIMONCINI (a cura di),<lb/> Democracy and Subsdiarity in the EU. National Parliaments, Regions and Civil Society in the Decision-Making Process,<lb/> Series 'Percorsi-Nova Universitas', Il Mulino, Bologna, 2013, pp. 285-318.<lb/> </bibl>
       <bibl><label>9</label> In generale si vedano sul tema: G. ALLEGRI, Il diritto di iniziativa dei cittadini europei (ECI) e la democrazia<lb/> partecipativa nell'Unione europea: prime riflessioni, in federalismi.it, n. 23/2010; </bibl>
       <bibl>C. BOVA, Il diritto d'iniziativa dei<lb/> cittadini europei ed i confermati limiti dell'iniziativa legislativa popolare in Italia, in Forum on line di Quaderni<lb/> costituzionali, 2010, pp.1-13; </bibl>
       <bibl>F. DAU, La democrazia partecipativa alla prova dell'ordinamento comunitario.<lb/> L'iniziativa legislativa dei cittadini europei, in Diritto pubblico comparato ed europeo online n. 2014-1, pp. 1-15;</bibl> <bibl>G. DE<lb/> TOGNI, L'iniziativa dei cittadini europei (Ice). Tra democrazia rappresentativa e prove di democrazia partecipativa, in<lb/> Osservatorio costituzionale AIC, settembre 2014.<lb/> </bibl>
-      <bibl><label>10</label> M. MEZZANOTTE, Il diritto di petizione nell'Unione europea: strumento davvero mineur?, in federalismi.it, n.<lb/> 21/2012.<lb/></bibl> 
-      <bibl><label>11</label> Si veda la Risoluzione Doc. XVIII n. 27 del 28 aprile 2010, adottata dalla I Commissione nella cd. fase<lb/> ascendente su preparazione di atti comunitari.<lb/></bibl> 
+      <bibl><label>10</label> M. MEZZANOTTE, Il diritto di petizione nell'Unione europea: strumento davvero mineur?, in federalismi.it, n.<lb/> 21/2012.<lb/></bibl>
+      <bibl><label>11</label> Si veda la Risoluzione Doc. XVIII n. 27 del 28 aprile 2010, adottata dalla I Commissione nella cd. fase<lb/> ascendente su preparazione di atti comunitari.<lb/></bibl>
       <bibl><label>12</label> Più precisamente il numero minimo di firmatari richiesti in ciascuno Stato membro dovrebbe essere<lb/> pari al numero di membri del Parlamento europeo eletti in ciascuno Stato membro moltiplicato per<lb/> settecentocinquanta (art. 7 par. 2 del Regolamento). È interessante notare come con quest'ultimo calcolo<lb/> numerico si sia creato un ulteriore collegamento , ancorché di carattere concettuale, tra un istituto di<lb/> democrazia partecipativa e il Parlamento, organo che incarna quella democrazia rappresentativa su cui<lb/> dichiaratamente l'Unione si fonda (art. 10 TUE).<lb/> </bibl>
       <bibl><label>13</label> L'allegato 1 del Regolamento, recante la tabella con il numero minimo di firmatari per Stato membro è<lb/> stato infatti successivamente modificato con il Regolamento delegato (UE) n. 268/2012. L'ordinamento<lb/> italiano a sua volta ha individuato le modalità attuative del Regolamento n. 211/2011 con il D.P.R. 18<lb/> ottobre 2012 , n. 193, nel quale è stato stabilito che il Ministero dell'interno è autorità competente per la<lb/> verifica e la certificazione delle dichiarazioni di sostegno delle iniziative dei cittadini, mentre l'Agenzia per<lb/> l'Italia Digitale è competente per la certificazione dei sistemi di raccolta elettronica.<lb/> </bibl>
       <bibl><label>14</label> Ad oggi sono state finora presentate 49 iniziative, a circa una ventina delle quali è stata negata la<lb/> registrazione per carenza dei requisiti regolamentari, mentre tra le rimanenti, solo 7 hanno finora<lb/> raggiunto il numero di firme necessarie e sono state presentate alla Commissione o sono in procinto di<lb/> esserlo Cfr. http://ec.europa.eu/citizens-initiative/public/welcome.<lb/> </bibl>
       <bibl><label>15</label> In generale sul ruolo dei parlamenti nazionali nell'Unione europea si veda M. OLIVETTI, voce Parlamenti<lb/> nazionali nell'Unione europea, in Digesto delle discipline pubblicistiche. Aggiornamento, Torino, Utet, 2012, p. 565 ss.<lb/> </bibl>
       <bibl type="footnote"><label>16</label> L'acronimo sta per Conferenza degli organi specializzati in affari comunitari, cui partecipano<lb/> rappresentanti delle Commissioni parlamentari competenti in materia di ogni Stato membro.</bibl>
-    
+
     </listBibl>
   </text>
 </TEI>

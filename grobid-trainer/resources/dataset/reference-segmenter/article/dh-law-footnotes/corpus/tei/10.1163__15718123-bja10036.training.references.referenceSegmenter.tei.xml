@@ -68,7 +68,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:02:07.604467Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.8.2-70-gc35e48387</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -140,7 +140,7 @@
         <bibl><label>21</label> ICC, Prosecutor v. Ruto et al., No. ICC-01/09-01/11, Appeals Chamber, Joint Separate Opinion of<lb/> Erkki Kourula and Anita Ušaka to the Judgment on the appeal of the Prosecutor against the decision of<lb/> Trial Chamber V(a) of 18 June 2013 entitled "Decision on Mr Ruto's Request for Excusal from<lb/> Continuous Presence at Trial", 25 October 2013, para. 5.<lb/> </bibl>
           <bibl><label>22</label> Ibid., para. 10.<lb/> </bibl>
           <bibl><label>23</label> Ibid., para. 3.<lb/> </bibl>
-          
+
         <bibl><label>24</label> ICC, Prosecutor v. Ruto et al., No. ICC-01/09-01/11, Trial Chamber, Dissenting Opinion of Judge<lb/> Herrera Carbuccia to the Public Decision on Mr Ruto's Request for Excusal from Continuous Presence<lb/> at Trial, 13 June 2013, para. 5.<lb/> </bibl>
         <bibl><label>25</label> ICC, Prosecutor v. Kenyatta, No. ICC-01/09-02/11, Trial Chamber, Partial Dissenting Opinion of<lb/> Judge Ozaki to the Public Decision on Defence Request for Conditional Excusal from Continuous<lb/> Presence at Trial, 18 October 2013), para. 7.<lb/> </bibl>
           <bibl><label>26</label> Ibid.<lb/> </bibl>
@@ -150,32 +150,32 @@
           <bibl><label>30</label> Ibid., Art. 21(3).<lb/> </bibl>
           <bibl><label>31</label> Gbagbo Appeals Decision, supra note 4, para. 70.<lb/> </bibl>
           <bibl><label>32</label> Ibid.<lb/> </bibl>
-          
+
           <bibl><label>33</label> Ibid.<lb/> </bibl>
         <bibl><label>34</label> UNHRC, Mbenge v. Zaire, Comm. No. 16/1977, Views, 25 March 1983, paras. 1.2-2.2.<lb/> </bibl>
           <bibl><label>35</label> Ibid., para. 2.2.<lb/> </bibl>
           <bibl><label>36</label> Ibid., para. 14.1.<lb/> </bibl>
-        <bibl><label>37</label> UNHRC, Osiyuk v. Belarus, Comm. No. 1311/2004, Views, 30 July 2009, para. 
+        <bibl><label>37</label> UNHRC, Osiyuk v. Belarus, Comm. No. 1311/2004, Views, 30 July 2009, para.
         8.3; </bibl>
           <bibl>see also United<lb/> Nations Human Rights Committee, 'General Comment No 32: Right of Equality Before Courts and<lb/> Tribunals and to Fair Trial' (CCPR/C/GC/32), para. 36.<lb/> </bibl>
-          <bibl><label>38</label> 
+          <bibl><label>38</label>
 ECtHR, Sibgatullin v. Russia, App. No. 32165/02, Judgment, 14 September 2009, para. 46.<lb/> </bibl>
           <bibl><label>39</label> Gbagbo Appeals Decision, supra note 4, para. 68.<lb/> </bibl>
           <bibl><label>40</label> Ibid.<lb/> </bibl>
           <bibl><label>41</label> ICC Statute, supra note 13, Art. 60.<lb/> </bibl>
           <bibl><label>42</label> Gbagbo Appeals Decision, supra note 4, para. 70.<lb/> </bibl>
-          
+
         <bibl><label>43</label> ECtHR, Shkalla v. Albania, App. No. 26866/05, Judgment, 10 August 2011, para. 70; </bibl>
           <bibl>citing ECtHR,<lb/> Iavarazzo v. Italy, App. No. 50489/99, Judgment, 4 December 2001.<lb/> </bibl>
         <bibl><label>44</label> ICC Statute, supra note 13, Art. 61; </bibl>
           <bibl>the second of these two clauses relates to an absconding<lb/> accused, which is discussed in detail in section 3.2.3.<lb/> </bibl>
           <bibl><label>45</label> Rule 124, International Criminal Court Rules of Procedure and Evidence (as amended 2013) ('ICC<lb/> RPE').<lb/> </bibl>
           <bibl><label>46</label> Ibid.<lb/> </bibl>
-          <bibl><label>47</label> ICC, Prosecutor v. Katanga, ICC-01/04-01/07, Pre-Trial Chamber, Transcript, Confirmation of<lb/> Charges Hearing, 11 July 2008, p. 23, lines 23-25; 24, lines 1-10; 
+          <bibl><label>47</label> ICC, Prosecutor v. Katanga, ICC-01/04-01/07, Pre-Trial Chamber, Transcript, Confirmation of<lb/> Charges Hearing, 11 July 2008, p. 23, lines 23-25; 24, lines 1-10;
         </bibl>
           <bibl>ICC, Prosecutor v. Banda and<lb/> Jerbo, ICC-02/05-03/09, Pre-Trial Chamber, Decision on Issues Related to the Hearing on the<lb/> Confirmation of Charges, 17 November 2010, para. 4.<lb/> </bibl>
         <bibl><label>48</label> Gregory S. Gordon, 'Toward an International Criminal Procedure: Due Process Aspirations and<lb/> Limitations', 45 Colum J Transnatl L (2007) 635-710, 683.<lb/> </bibl>
-          
+
         <bibl><label>49</label> Statements made by the representatives of Botswana, Republic of Congo, Côte d'Ivoire, the Gambia,<lb/> Ghana, Namibia, Nigeria, South Africa, and Uganda (on behalf of the African Union) during the<lb/> General Debate, 12 Session of the Assembly of States Parties to the Rome Statute of the International<lb/> Criminal Court, 21 November 2013,<lb/> &lt;asp.icccpi.int/en_menus/asp/sessions/general%20debate/Pages/general%20debate%20_%20twelfth%<lb/> 20session.aspx&gt;, accessed 13 August 2020.<lb/> </bibl>
         <bibl><label>50</label> Statement by the representative of New Zealand, 12 th Session of the Assembly of State Parties to the<lb/> Rome Statute of the International Criminal Court, 21 November 2013, &lt;asp.icccpi.int/iccdocs/<lb/> asp_docs/ASP12/GenDeba/ICC-ASP12-GenDeba-NZ-ENG.pdf&gt;, accessed on 13 August 2020.<lb/> </bibl>
           <bibl><label>51</label> ICC RPE, supra note 45, Rule 134 ter.<lb/> </bibl>
@@ -201,10 +201,10 @@ ECtHR, Sibgatullin v. Russia, App. No. 32165/02, Judgment, 14 September 2009, pa
           <bibl><label>66</label> Ibid., para. 109.<lb/> </bibl>
           <bibl><label>67</label> Ibid., para. 116.<lb/> </bibl>
         <bibl><label>68</label> ICTY, Prosecutor v. Delalić et al., Case No. IT-96-21, Trial Chamber, Trial Transcript, 16 April<lb/> 1998, p. 11262, lines 2-3.<lb/> </bibl>
-        <bibl><label>69</label> SCSL, Prosecutor v. Taylor, Case No. SCSL-03-01-T, Trial Chamber, Trial Transcript, 4 June 2007,<lb/> p. 258, lines 28-29; p. 259, line 1; p. 267, lines 4-16; 
+        <bibl><label>69</label> SCSL, Prosecutor v. Taylor, Case No. SCSL-03-01-T, Trial Chamber, Trial Transcript, 4 June 2007,<lb/> p. 258, lines 28-29; p. 259, line 1; p. 267, lines 4-16;
         </bibl>
           <bibl>SCSL, Prosecutor v. Taylor, Case No. SCSL-03-<lb/>01-T, Trial Chamber, Trial Transcript, 25 June 2007, p. 342, lines 13-19.<lb/> </bibl>
-          
+
         <bibl><label>70</label> William A. Schabas, 'In Absentia Proceedings Before International Criminal Courts', in Göran<lb/> Sluiter and Sergey Vasiliev (eds.), International Criminal Procedure: Towards a Coherent Body of<lb/> Law (CMP Publishing, London, 2009), p. 378.<lb/> </bibl>
           <bibl><label>71</label> Cassese, supra note 57, p. 402.<lb/> </bibl>
         <bibl><label>72</label> ICC Statute, supra note 13, Art. 61(2)(b).<lb/> </bibl>
@@ -214,7 +214,7 @@ ECtHR, Sibgatullin v. Russia, App. No. 32165/02, Judgment, 14 September 2009, pa
         <bibl><label>76</label> Federal Rules of Criminal Procedure, United States of America (2017), rule 43(c).<lb/> </bibl>
         <bibl><label>77</label> Crosby v. The United States, 506 U.S. 255, 261 (1993).<lb/> </bibl>
         <bibl><label>78</label> William Blackstone, Blackstone's Commentaries on the Laws of England, Book IV, Chapter 24.<lb/> </bibl>
-        <bibl><label>79</label> R. v. Jones (Anthony William), [2002] 
+        <bibl><label>79</label> R. v. Jones (Anthony William), [2002]
         UKHL 5 [HL]; (Sweet &amp; Maxwell, London, 2015), p. 335; </bibl>
 <bibl>R.<lb/> v. Leigh James O'Hare, [2006] EWCA Crim 471.<lb/> </bibl>
         <bibl><label>80</label> R. v. Jones, supra note 79, paras. 12, 22.<lb/> </bibl>
@@ -224,19 +224,19 @@ ECtHR, Sibgatullin v. Russia, App. No. 32165/02, Judgment, 14 September 2009, pa
           <bibl><label>84</label> Kenya Code of Criminal Procedure (revised edition 2012), section 206.<lb/> </bibl>
           <bibl><label>85</label> Ibid.<lb/> </bibl>
           <bibl><label/>86 Ibid., section 194.<lb/> </bibl>
-        <bibl><label>87</label> Douglas Brown, Criminal Procedure in Uganda and Kenya (Sweet &amp; Maxwell, London, 1965), p.<lb/> 
+        <bibl><label>87</label> Douglas Brown, Criminal Procedure in Uganda and Kenya (Sweet &amp; Maxwell, London, 1965), p.<lb/>
         47;</bibl> <bibl>see also Kenya Code of Criminal Procedure, supra note 84, section 153.<lb/> </bibl>
         <bibl><label>88</label> Pakistan Code of Criminal Procedure (1898, as amended by Act 2 of 1997), Art. 512.<lb/> </bibl>
         <bibl><label>89</label> India Code of Criminal Procedure (1973), Art. 299(1).<lb/> </bibl>
-        <bibl><label>90</label> Rule 61(a), ICTY Rules of Procedure and Evidence (as amended 8 July 2015); 
+        <bibl><label>90</label> Rule 61(a), ICTY Rules of Procedure and Evidence (as amended 8 July 2015);
         Rule 61(a), ICTR<lb/> Rules of Procedure and Evidence (as amended 13 May 2015).<lb/> </bibl>
-          
+
         <bibl><label>91</label> Rule 61(
-        b), ICTY Rules of Procedure and Evidence (as amended 8 July 2015);</bibl> 
+        b), ICTY Rules of Procedure and Evidence (as amended 8 July 2015);</bibl>
           <bibl>Rule 61(b), ICTR<lb/> Rules of Procedure and Evidence (as amended 13 May 2015).<lb/> </bibl>
         <bibl><label>92</label> Rule 61(
-        c), ICTY Rules of Procedure and Evidence (as amended 8 July 2015);</bibl> 
-          <bibl>Rule 
+        c), ICTY Rules of Procedure and Evidence (as amended 8 July 2015);</bibl>
+          <bibl>Rule
         61(
         c), ICTR<lb/> Rules of Procedure and Evidence (as amended 13 May 2015).<lb/> </bibl>
         <bibl><label>93</label> The German Code of Criminal Procedure (as amended 23 April 2014), section 231(2).<lb/> </bibl>
@@ -251,7 +251,7 @@ ECtHR, Sibgatullin v. Russia, App. No. 32165/02, Judgment, 14 September 2009, pa
           <bibl>Ruto Trial Chamber Decision, supra note 10, para. 42.<lb/> </bibl>
           <bibl><label>103</label> Kenyatta Dissent, supra note 10, para. 79.<lb/> </bibl>
           <bibl><label>104</label> Ibid.<lb/> </bibl>
-          <bibl><label>105</label> 
+          <bibl><label>105</label>
 Martin Böse, 'Harmonizing Procedural Rights Indirectly: The Framework Decision on Trials in<lb/> Absentia', 37 N.C. JIL &amp; Comm. Reg. (2011) 489-510, 500; </bibl>
 <bibl>Christoph J.M. Safferling, International<lb/> Criminal Procedure (Oxford University Press, Oxford, 2012), p. 400.<lb/> </bibl>
           <bibl><label>106</label> Peter Westen, 'Away from Waiver: A Rationale for the Forfeiture of Constitutional Rights in<lb/> Criminal Procedure', 75 Michigan LR (1977) 1214-1261, 1214, 1235-37.<lb/> </bibl>

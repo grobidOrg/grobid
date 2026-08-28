@@ -54,7 +54,7 @@
           <label>A machine learning software for extracting information from scholarly documents</label>
           <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
           <label type="revision">e13aa19</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <label type="variant-id">grobid.training.segmentation</label>
           <ref target="https://github.com/kermitt2/grobid"/>
         </application>
@@ -81,18 +81,18 @@
   </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
       <front>Urheberrecht <lb/>Prof. Dr. Katharina de la Durantaye und Prof. Dr. Benjamin Raue * <lb/>Urheberrecht und Zugang in einer digitalen Welt <lb/>-Urheberrechtliche Fragestellungen des Zugangs für <lb/>Gedächtnisinstitutionen und die Digital Humanities -<lb/></front>
-      
+
       <body><!-- missing "I."-->Einleitung <lb/>Das Urheberrecht gewährt dem Urheber Ausschließlichkeitsrechte an Werken. Techni-<lb/>sche und werkvermittelnde Leistungen werden durch Leistungsschutzrechte ge-<lb/>schützt. Wo diese Rechte anfangen und aufhören, wer ein Werk unter welchen Um-<lb/>ständen und auf welche Weise nutzen darf, sind Kernfragen des Urheberrechts. Es <lb/>muss einen Ausgleich schaffen zwischen Exklusivitäts-und Zugangsinteressen. 1 <lb/>In der analogen Welt wurden Zugangsfragen im Urheberrecht dennoch selten pro-<lb/>blematisiert. Der Eigentümer eines Buches konnte es selbstverständlich aufschlagen <lb/>und lesen, ohne den Urheber um Erlaubnis bitten zu müssen. Der analoge Werkgenuss <lb/>war urheberrechtlich irrelevant. Das Urheberrecht mussten im Wesentlichen professio-<lb/>nelle Verwerter beachten. Private und wissenschaftliche Nutzer konnten es hingegen <lb/>weitgehend ignorieren. <lb/>Die Digitalisierung hat die Verhältnisse grundlegend geändert und den Anwen-<lb/>dungsbereich des Urheberrechts erheblich ausgedehnt: 2 Wer ein digitales Werkstück <lb/>nutzt, vervielfältigt es in aller Regel jedenfalls im Arbeitsspeicher seines Geräts. Er <lb/>nimmt damit eine Handlung vor, für die er grundsätzlich der Zustimmung des Urhe-<lb/>bers bedarf. 3 Urheberrecht ist Alltagsrecht geworden. Das stellt das Urheberrecht stär-<lb/>ker als früher vor die Herausforderung, die berechtigten Interessen der Urheber und <lb/><!-- misplaced "I."-->I. <lb/></body>
-      
+
       <front>* Katharina de la Durantaye ist Inhaberin des Lehrstuhls für Bürgerliches Recht und Privates <lb/>Medienrecht an der Europa-Universität Viadrina; Benjamin Raue ist Inhaber der Professur für <lb/>Zivilrecht, Recht der Informationsgesellschaft und des Geistigen Eigentums sowie Direktor <lb/>des Instituts für Recht und Digitalisierung (IRDT) an der Universität Trier. <lb/></front>
-      
+
       <!-- mixed-reference -->
       <listBibl>1 Dazu ausführlich: Peukert, GRUR-Beilage 2014, 77 ff. <lb/>2 Dazu etwa: Hofmann, ZGE 2016, 482, 498; Becker, ZGE 2016, 239, 273; Raue, ZGE 2014, <lb/>387, 389. <lb/>3 Zur Frage, ob der Erwerb eines (digitalen) Werkexemplars mit dem Erwerb eines dinglichen <lb/>Genussrechts verbunden ist, vgl.: Kuschel, Der Erwerb digitaler Werkexemplare zur privaten <lb/>Nutzung, 2019. <lb/></listBibl>
-      
+
       <front>DOI: 10.5771/2699-1284-2020-1-83 <lb/>https://doi.org/10.5771/2699-1284-2020-1-83, am 11.07.2025, 10:55:52 <lb/>Open Access -<lb/>-https://www.nomos-elibrary.de/de/agb <lb/></front>
 
       <!-- missing header -->
-      
+
         <body>sonstigen Rechteinhaber mit den Allgemeininteressen auf Informationsfreiheit und <lb/>Kommunikation in Einklang zu bringen. 4 <lb/>Es wundert daher nicht, dass Fragen des Zugangs in den letzten Jahren nicht nur in <lb/>den Fokus der Wissenschaft, sondern auch der Gesetzgebung und der Rechtsprechung <lb/>geraten sind. 5 <lb/>Diese Zeitschrift wird in ihrem urheberrechtlichen Teil das Spannungsverhältnis <lb/>zwischen urheberrechtlichen Ausschließlichkeitsrechten einerseits und Zugangsrech-<lb/>ten bzw. -interessen andererseits beleuchten und die aktuellen Entwicklungen kritisch <lb/>begleiten. Ihnen ist der erste Teil dieses Beitrags gewidmet. Weil wir in dieser Zeit-<lb/>schrift auch interdisziplinäre Fragestellungen erörtern wollen, werden im zweiten Teil <lb/>urheberrechtliche Fragestellungen der Digital Humanities skizziert. <lb/><!-- missing "II." -->Gedächtnisinstitutionen <lb/>Digitale Technologien eröffnen Gedächtnisinstitutionen neue Möglichkeiten, um ihren <lb/>Bestand zu erhalten, zu erweitern und zugänglich zu machen. Nicht all diese Möglich-<lb/>keiten werden in der Praxis auch genutzt. Neben wirtschaftlichen hat dies vor allem <lb/>rechtliche Gründe: Digitale Pendants analoger Nutzungen, die zustimmungsfrei zuläs-<lb/>sig waren, bedürfen zum Teil der Zustimmung des Rechteinhabers. <lb/>Das liegt zunächst an der oben bereits genannten Ausweitung des Urheberrechts. <lb/>Grund ist aber auch der Zuschnitt der gesetzlichen Erlaubnistatbestände. Sie erklären <lb/>urheberrechtlich relevante Nutzungen unter bestimmten Voraussetzungen ohne Er-<lb/>laubnis des Rechteinhabers für zulässig. Die Tatbestände entstammen der analogen <lb/>Welt. Nicht alle passten daher auf digitale Sachverhalte. Zudem waren die Vorausset-<lb/>zungen und der Anwendungsbereich der Tatbestände oft unklar -alleine schon, weil <lb/>sie viele unbestimmte Rechtsbegriffe enthielten. Gedächtnisinstitutionen konnten <lb/>darum oftmals nur schwer einschätzen, welche Nutzungen erlaubnisfrei gestattet wa-<lb/>ren und welche nicht. 6 <lb/>In den letzten Jahren haben sowohl der nationale als auch der europäische und der <lb/>internationale Gesetzgeber bestehende gesetzliche Erlaubnistatbestände bzw. deren <lb/>Vorgaben verändert und neue geschaffen, um dieses Problem zu adressieren. 7 Bislang <lb/>sind viele Fragen noch nicht oder nicht umfassend erforscht. Dazu gehören Inhalt und <lb/><!--misplaced "II."-->II. <lb/></body>
 
       <!-- mixed-reference -->
@@ -126,12 +126,12 @@
         <page>86 <lb/></page>
 
         <note place="headnote">de la Durantaye und Raue • Urheberrecht und Zugang <lb/></note>
-      
+
         <note place="footnote">https://doi.org/10.5771/2699-1284-2020-1-83, am 11.07.2025, 10:55:52 <lb/>Open Access -<lb/>-https://www.nomos-elibrary.de/de/agb <lb/></note>
 
       <!-- missing header -->
         <body>sen Mitgliedstaaten auch das Text und Data Mining für kommerzielle Zwecke erlauben <lb/>(Art. 4 DSM-RL). <lb/>Nach Art. 5 DSM-RL müssen Mitgliedstaaten überdies, anders als es das geltende <lb/>Recht in Deutschland ( § 60a UrhG) derzeit vorsieht, den grenzüberschreitenden remo-<lb/>te access zu Materialien erlauben, die digital zur Veranschaulichung von Unterricht <lb/>oder Lehre zur Verfügung gestellt wurden. Fraglich ist, ob Bereichsausnahmen für be-<lb/>stimmte Werkgattungen, wie sie das deutsche Recht derzeit enthält, künftig Bestand <lb/>haben können. <lb/>Dem Erhalt des kulturellen Erbes ist Art. 6 DSM-RL gewidmet. Danach müssen <lb/>Mitgliedstaaten Einrichtungen des Kulturerbes gestatten, Werke und sonstige Schutz-<lb/>gegenstände für Zwecke der Erhaltung in dem dafür erforderlichen Umfang, mithin <lb/>auch redundant, zu vervielfältigen -und zwar unabhängig vom konkreten Format <lb/>oder Medium. Bildungseinrichtungen gehören nach der DSM-RL nicht zu den Ein-<lb/>richtungen des Kulturerbes (vgl. Art. 2 Nr. 3 DSM-RL). Im deutschen Recht werden <lb/>sie hingegen in § 60d Abs. 1. i.V.m. § 60e Abs. 1 UrhG privilegiert. Das darf auch künf-<lb/>tig so bleiben: Bildungseinrichtungen werden von Art. 5 Abs. 2 lit. c InfoSoc-RL er-<lb/>fasst. Seinen Anwendungsbereich lässt die DSM-RL unberührt (vgl. Art. 25 DSM-<lb/>RL). 20 <lb/>Wichtig für Gedächtnisinstitutionen ist, dass die Schranken -mit Ausnahme des <lb/>kommerziellen Textes und Data Mining gem. Art. 4 DSM-RL -lizenzfest sind und <lb/>sich auch gegenüber technischen Schutzmaßnahmen durchsetzen (Art. 7 DSM-RL). <lb/>Erleichterung der Lizenzierungspraxis <lb/>Überdies enthält die Richtlinie Vorgaben, die den Abschluss von Lizenzverträgen er-<lb/>leichtern sollen -vor allem in Bezug auf vergriffene Werke. Nach Art. 8 Abs. 1 DSM-<lb/>RL müssen die Mitgliedstaaten festlegen, dass Verwertungsgesellschaften mit Einrich-<lb/>tungen des Kulturerbes Lizenzvereinbarungen über die nicht-kommerzielle Nutzung <lb/>vergriffener Werke und sonstiger Schutzgegenstände abschließen dürfen, deren Rech-<lb/>teinhaber die Verwertungsgesellschaft nicht mit der Wahrnehmung ihrer Rechte be-<lb/>traut haben (sog. Außenseiter). 21 <lb/>Dafür muss die betreffende Verwertungsgesellschaft in zweifacher Hinsicht reprä-<lb/>sentativ sein: erstens für die Art von Werken und sonstigen Schutzgegenständen und <lb/>zweitens für die Rechte, auf die sich die Vereinbarung bezieht. Ist die Verwertungsge-<lb/>sellschaft -gegebenenfalls vermittelt über Gegenseitigkeitsverträge -in mehreren Mit-<lb/>gliedstaaten repräsentativ, kann sie Lizenzen für all diese Länder erteilen. Für Bereiche, <lb/>in denen keine repräsentative Verwertungsgesellschaft existiert, müssen die Mitglied-<lb/>staaten ihren Einrichtungen des Kulturerbes über eine Schranke ermöglichen, Werke <lb/>und sonstige Schutzgegenstände aus ihren Sammlungen für nicht-kommerzielle Zwe-<lb/></body><!-- misplaced "b)"-->b) <lb/>
-      
+
         <listBibl>20 So auch: Stieper, GRUR 2020, 1, 5. <lb/>21 Vgl. dazu nur: de la Durantaye/Kuschel, ZUM 2019, 694 ff.; de la Durantaye, GRUR 2020, <lb/>7 ff. <lb/></listBibl>
 
         <!-- misplaced header, wrong line break after page number and duplicated page number -->
@@ -153,13 +153,13 @@
         <page>88 <lb/></page>
 
         <note place="headnote">de la Durantaye und Raue • Urheberrecht und Zugang <lb/></note>
-      
+
         <note place="footnote">https://doi.org/10.5771/2699-1284-2020-1-83, am 11.07.2025, 10:55:52 <lb/>Open Access -<lb/>-https://www.nomos-elibrary.de/de/agb <lb/></note>
 
         <!-- missing header -->
-      
+
         <body>Werken (Vertrag von Marrakesch) 26 in Kraft. Er ist der erste völkerrechtliche Vertrag, <lb/>der ausschließlich Ausnahmen und Beschränkungen des Urheberrechts gewidmet ist. 27 <lb/>Die EU hat die Vorgaben des Vertrags in der Marrakesch-RL umgesetzt. 28 Das deut-<lb/>sche Umsetzungsgesetz trat am 1. Januar 2019 in Kraft. 29 <lb/>Die neuen § § 45b-d UrhG modifizieren und ergänzen den Erlaubnistatbestand zu-<lb/>gunsten von Menschen mit Behinderungen ( § 45a UrhG). Sie erlauben Blinden und <lb/>sehbehinderten Menschen, veröffentlichte Texte und darin eingebettete Illustrationen <lb/>in barrierefreie Formate zu konvertieren und konvertieren zu lassen, ohne den Rechte-<lb/>inhaber um Zustimmung bitten zu müssen ( § 45b Abs. 1 UrhG). Auch Einrichtungen <lb/>für Blinde und sehbehinderte Menschen -insbesondere barrierefreie Bibliotheken -<lb/>dürfen solche konvertierten Exemplare erstellen ( § 45c Abs. 1 UrhG). Sie dürfen sie <lb/>untereinander tauschen und ihren Kunden sowohl analog als auch digital zur Verfü-<lb/>gung stellen ( § 45c Abs. 2 UrhG), unabhängig davon, ob die Rechteinhaber barriere-<lb/>freie Versionen anbieten. Die Erlaubnistatbestände sind lizenzfest ( § 45d UrhG). Im <lb/>Gegenzug enthält der Urheber einen Anspruch auf angemessene Vergütung ( § 45c <lb/>Abs. 4 UrhG). <lb/><!-- missing "III." -->Digital Humanities <lb/>Wissenschaftliche Erkenntnis beruhte im analogen Zeitalter fast ausschließlich auf <lb/>Leistungen des menschlichen Geistes und deren Vermittlung auf menschlichen Fähig-<lb/>keiten. Durch das Aufkommen von Computern und der zunehmenden Digitalisierung <lb/>von Erkenntnisquellen unterstützen Algorithmen immer stärker den menschlichen Er-<lb/>kenntnisprozess und erweitern die Möglichkeit, Informationen übersichtlich darzu-<lb/>stellen. Dieses Potential des Digitalen nutzen zunehmend auch Geisteswissenschaftler. <lb/>Die systematische Nutzung computergestützter Verfahren und digitaler Ressourcen in <lb/>den Geisteswissenschaften werden schlagwortartig als "Digital Humanities" bezeich-<lb/>net. 30 <lb/><!-- misplaced "III."-->III. <lb/></body>
-      
+
             <!-- mixed-reference -->
         <listBibl>26 Marrakesh Treaty to Faclitate Access to Published Works for Persons Who Are Blind, Vi-<lb/>sually Impaired or Otherwise Print Disabled, abrufbar unter: https://wipolex.wipo.int/en/te <lb/>xt/301016, zuletzt abgerufen am 27.2.2020. <lb/>27 Vgl. dazu: Schmidt, Maximalschutz im internationalen und europäischen Urheberrecht, <lb/>2018, Kapitel 3. <lb/>28 Richtlinie (EU) 2017/1564 des Europäischen Parlaments und des Rates vom 13. September <lb/>2017 über bestimmte zulässige Formen der Nutzung bestimmter urheberrechtlich oder <lb/>durch verwandte Schutzrechte geschützter Werke und sonstiger Schutzgegenstände zuguns-<lb/>ten blinder, sehbehinderter oder anderweitig lesebehinderter Personen und zur Änderung <lb/>der Richtlinie 2001/29/EG zur Harmonisierung bestimmter Aspekte des Urheberrechts und <lb/>der verwandten Schutzrechte in der Informationsgesellschaft, ABl. EU 2017 L 242/6. <lb/>29 BGBl. 2018 Teil I Nr. 40, S. 2014 ff. <lb/>30 Erste Vorläufer entwickelten sich -unter anderen Namen -schon in den frühen 1960er Jah-<lb/>ren. Ein geschichtlicher Überblick der Digital Humanities findet sich etwa bei: Thaller, Ge-<lb/>schichte der Digital Humanities, in: Jannidis/Kohle/Rehbein, Digital Humanities -Eine Ein-<lb/>führung, 2017, S. 2 ff. <lb/></listBibl>
             <!-- misplaced header, duplicated page number, wrong line break after page number -->
@@ -183,7 +183,7 @@
         <page>90 <lb/></page>
 
         <note place="headnote">de la Durantaye und Raue • Urheberrecht und Zugang <lb/></note>
-      
+
         <note place="footnote">https://doi.org/10.5771/2699-1284-2020-1-83, am 11.07.2025, 10:55:52 <lb/>Open Access -<lb/>-https://www.nomos-elibrary.de/de/agb <lb/></note>
 
       <!-- missing header -->
@@ -191,7 +191,7 @@
         <body><!-- missing "1."-->Recherche-und Materialsammelphase <lb/>In der Recherche-und Materialsammelphase stellen sich Zugangsfragen, die bei priva-<lb/>ten Informationsinhabern nicht nur urheberrechtliche, sondern auch eigentums-und <lb/>vertragsrechtliche Fragen aufwerfen sowie bei Informationen der öffentlichen Hand <lb/>Fragen des Informationszugangs 35 und deren Weiterverwendung. Urheberrechtlich re-<lb/>levant ist im Forschungskontext, ob bereits das Betrachten bzw. Lesen digitaler Quel-<lb/>len, zu denen dem Wissenschaftler rechtswidrig Zugang verschafft wurde, eine Urhe-<lb/>berrechtsverletzung darstellt. 36 Denn die Schutzgegenstände müssen dafür vorüberge-<lb/>hend im Arbeitsspeicher des digital device gespeichert werden. <lb/>Wer digitale Materialien dauerhaft speichert und aufbereitet, muss das Urheberrecht <lb/>beachten. Das gilt uneingeschränkt, wenn das Material urheberrechtlich geschützt ist. <lb/>Die Schutzdauer für urheberrechtliche Verwertungshandlungen, die in Deutschland <lb/>stattfinden, ist 70 Jahre nach dem Tod des Autors ( § 64 UrhG). 37 Aber auch an sich ge-<lb/>meinfreie Werke können dem Urheberrecht unterfallen. So können etwa (nicht-ma-<lb/>schinelle) Übersetzungen urheberrechtlich geschützter Werke auch nach Ablauf der <lb/>Schutzfrist des Originalwerks als Bearbeitungen nach § 3 UrhG geschützt sein. Ihr <lb/>Schutz läuft erst 70 Jahre nach dem Tod des Übersetzers aus. Darüber hinaus genießen <lb/>wissenschaftliche Ausgaben, also Ausgaben urheberrechtlich nicht geschützter Werke <lb/>oder Texte, die das Ergebnis wissenschaftlich sichtender Tätigkeit sind und sich we-<lb/>sentlich von den bisher bekannten Ausgaben unterscheiden, ab Erscheinen 25 Jahre <lb/>lang Schutz ( § 70 UrhG). Für die wissenschaftliche Praxis ebenfalls relevant ist, dass <lb/>die Vervielfältigung von Datenbanken oder die Entnahme von Texten aus ihnen gegen <lb/>das Urheberrecht verstoßen kann, wenn die Datenbanken entweder das Ergebnis <lb/>schöpferischer Leistung ( § 4 Abs. 2 UrhG) oder wesentlicher Investitionen ( § 87 a <lb/>UrhG) sind. <lb/><!-- missing "2." -->Aufbereitungsphase <lb/>Um digitale Korpora für anspruchsvolle wissenschaftliche Fragestellungen nutzen zu <lb/>können, müssen diese im Regelfall aufbereitet werden. 38 Über die Frage nach dem Ver-<lb/>vielfältigungsrecht hinaus stellt sich dabei die Frage, inwiefern dadurch in das Bearbei-<lb/>tungsrecht eingegriffen wird. 39 Der deutsche Gesetzgeber hat "ausschließlich technisch <lb/>bedingte Änderungen eines Werkes nach § 60d Absatz 1, § 60e Absatz 1 sowie § 60f <lb/><!-- misplaced "1." and "2." -->1. <lb/>2. <lb/></body>
 
         <listBibl>35 Zu den urheberrechtlichen Einschränkungen der Informationszugangsansprüche etwa: Raue, <lb/>JZ 2013, 280 ff. <lb/>36 Dazu: Raue, ZGE 2017, 514, 530 ff. <lb/>37 Bei mehreren Autoren richtet sich der Fristbeginn nach dem Tod des Längstlebenden, § 65 <lb/>Abs. 1 UrhG. <lb/>38 Vgl.: Triaille/de Meeüs d 'Argenteuil/de Francquen, Study on the legal framework of text and <lb/>data mining, 2014, S. 47 f.; Schöch, Digitale Wissensproduktion, in: Jannidis/Kohle/Rehbein, <lb/>Digital Humanities -Eine Einführung, 2017, S. 223, 227 ff. <lb/>39 Dazu etwa: Spindler, GRUR 2016, 1112, 1113 f.; Specht, OdW 2018, 285. <lb/></listBibl>
-    
+
     <page>91 <lb/></page>
     <note place="headnote">de la Durantaye und Raue • Urheberrecht und Zugang <lb/></note>
 
@@ -208,7 +208,7 @@
         <page>92 <lb/></page>
 
         <note place="headnote">de la Durantaye und Raue • Urheberrecht und Zugang <lb/></note>
-      
+
         <note place="footnote">https://doi.org/10.5771/2699-1284-2020-1-83, am 11.07.2025, 10:55:52 <lb/>Open Access -<lb/>-https://www.nomos-elibrary.de/de/agb <lb/></note>
         <!-- missing header -->
 
@@ -240,8 +240,8 @@
 
 	</text>
 
-	
-  
-  
-  
+
+
+
+
 </TEI>

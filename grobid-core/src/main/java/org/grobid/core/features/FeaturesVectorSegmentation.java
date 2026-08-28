@@ -69,7 +69,7 @@ public class FeaturesVectorSegmentation {
     public int relativeBlockHorizontalPosition = 0; // discretized
     public int blockWidthRatio = 0; // discretized
 
-    // extended features (dh-law-footnotes flavour only)
+    // extended features (article/footnotes-refs flavour only)
     public boolean extendedFeatures = false;
     public int relativeFontSize = 0; // discretized, relative to doc average
     public int distanceFromPageBottom = 0; // discretized
@@ -258,7 +258,7 @@ public class FeaturesVectorSegmentation {
         // block width ratio (1)
         res.append(" " + blockWidthRatio);
 
-        // extended features (dh-law-footnotes flavour only)
+        // extended features (article/footnotes-refs flavour only)
         if (extendedFeatures) {
             res.append(" " + relativeFontSize);
             res.append(" " + distanceFromPageBottom);

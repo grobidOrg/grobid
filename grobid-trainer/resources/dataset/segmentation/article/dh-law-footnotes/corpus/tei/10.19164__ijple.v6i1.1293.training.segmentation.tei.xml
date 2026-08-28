@@ -37,7 +37,7 @@
           <label>A machine learning software for extracting information from scholarly documents</label>
           <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
           <label type="revision">e13aa19</label>
-          <label type="flavor">article/dh-law-footnotes</label>
+          <label type="flavor">article/footnotes-refs</label>
           <label type="variant-id">grobid.training.segmentation</label>
         </application>
       </appInfo>
@@ -89,11 +89,11 @@
 		<body>published the textbook, Street Law: A Course in Practical Law for schools across the nation. 10 <lb/>In 1977, the American Bar Association published the first issue of Update on Law Related <lb/>Education. 11 In 1978, Congress passed the Law-Related Education Act of 1978. 12 <lb/>Practical Life Lessons <lb/>Law-related education programs continue to this day. As a member of the Young <lb/>Lawyers Division of the North Carolina Bar Association, I was invited to speak to a group <lb/>of high school students regarding the North Carolina Bar Association publication entitled <lb/>Life &amp; Laws 101: Citizenship Rights and Responsibilities Over 18. 13 I began thinking about <lb/>how to present rights and responsibilities concepts to high schoolers and my interest in <lb/>law-related education continued well after the presentation had concluded. I began <lb/>saving news articles that dealt with issues of civics education. 14 Later, as part of my course <lb/>work in the Master of Science in Library Science degree program at the University of <lb/>North Carolina at Chapel Hill, I designed and completed a service-learning project called <lb/></body>
 
 		<listBibl>10 National Street Law Institute &amp; District of Columbia Project on Community Legal Assistance. (1975). <lb/>Street law: a course in practical law. West. <lb/></listBibl>
-        
+
         <note place="footnote">11 The American Bar Association replaced Update on Law Related Education with Insights on Law and Society <lb/>in 2000. <lb/></note>
-        
+
         <listBibl>12 Law-Related Education Act of 1978, Pub. L. No. 95-561, 92 Stat. 2216 (1978) repealed by 20 U.S.C. § <lb/>3863(a)(1) (1982). https://perma.cc/G75R-AFKD and https://perma.cc/8TAQ-M8R6 <lb/>13 North Carolina Bar Association Young Lawyers Division Civic Education Outreach Committee. (2015). <lb/>Life &amp; Laws 101: Citizenship Rights and Responsibilities Over 18. <lb/>http://web.archive.org/web/20150923012636/http://www.ncbar.org/media/95451/Life-and-Laws-101.pdf <lb/>13 North Carolina Bar Association Young Lawyers Division Civic Education Outreach Committee. (2015). <lb/>Life &amp; Laws 101: Citizenship Rights and Responsibilities Over 18. <lb/>http://web.archive.org/web/20150923012636/http://www.ncbar.org/media/95451/Life-and-Laws-101.pdf <lb/></listBibl>
-		
+
 	 <!-- mixed-reference -->
 		<listBibl>14 Also, during this time, I read a book entitled No One Will Lissen by Lois Forer about Forer's work as an <lb/>attorney for indigent youth in the late 1960s in Philadelphia. While the book focused on access to justice <lb/>for youth rather than law-related education, it was useful for the insights that Forer provided about <lb/>youth and the legal system. Forer, L.G. (1971). "No one will lissen": how our legal system brutalizes the <lb/>youthful poor. Grosset &amp; Dunlap. <lb/></listBibl>
 
@@ -219,7 +219,7 @@
 
 			<body>was to prompt students to think about why different courts have different rationales <lb/>when making decisions about similar sets of facts. <lb/>Conclusion <lb/>From the inception of law-related education, organizers of law-related education <lb/>programs have endeavored to make the programs practical by covering topics that the <lb/>students would need to know in daily life. Although the federal Law-Related Education <lb/>Act was repealed in 1982, states continue to address K-12 civics education in their <lb/>statutes. Recently, state legislatures that have used the term "law-related education" in <lb/>the K-12 context have focused on law-related education for violence prevention and <lb/>within the context of youth courts. Law-related education is about knowing one's rights <lb/>and responsibilities as a citizen even in situations where one has not been accused of <lb/>breaking the law and there needs to be a concerted effort to bring the essence of law-<lb/>related education within the purview of state legislatures. Additional programs aimed <lb/>toward teenagers that are organized outside the K-12 school context such as "Know Your <lb/>Rights Workshops" and other programs, for example the Cornell Law Institute for High <lb/>School Students, are also valuable in educating youth regarding civics and law-related <lb/>education. Law-related education is more than violence prevention. It is a branch of civics <lb/>that is a necessary part of K-12 education. </body>
 
-  
+
 	</text>
 
 

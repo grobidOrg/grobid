@@ -38,7 +38,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:50:37.869602Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">fd543f4</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -76,49 +76,49 @@
 </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
     <listBibl>
-      
+
       <!-- unusual label with bibliographic reference -->
       <bibl><label>*</label> R. Diana, Migrations of Concepts. From Philosophical Text to Scene, Brepols, Turnhout, 2023.<lb/> </bibl>
-      
+
       <bibl><label>1</label> Ivi, p. 9 (l'autore mi ha gentilmente fornito il testo del libro italiano sul quale è stata condotta la traduzione in inglese e da<lb/> cui sono tratte le citazioni in questo lavoro).<lb/> </bibl>
       <bibl><label>2</label> Cfr. ibid.<lb/> </bibl>
       <bibl><label>3</label> Cfr. ivi, p. 190.<lb/> </bibl>
       <bibl><label>4</label> Tale trasposizione è qualcosa di diverso dal riadattamento -pensiamo ad esempio all'adattamento teatrale o cinematografico<lb/> di un romanzo. Questi tipi di traduzione conservano una qualche comunanza strutturale di fondo, ossia la matrice narrativa<lb/> (cfr. ibid.).<lb/> </bibl>
-      
+
       <bibl><label>5</label> Rosalba Quindici ha realizzato, a partire dal 2013, una serie di melologhi su temi filosofici -su libretto di Rosario Diana -<lb/>in collaborazione con l'Istituto per la storia del pensiero filosofico e scientifico moderno (Consiglio nazionale delle ricerche)<lb/> e altri importanti enti artistico-culturali. Nel processo di composizione musicale attuato ad hoc per i testi di Diana, la musica<lb/> non è mai qualcosa che possa essere derubricato a elemento di secondo piano rispetto alla parola, ma diviene «un vero e<lb/> proprio personaggio» che interagisce con la parola attraverso un suo linguaggio specifico (cfr. ivi, p. 125).<lb/> </bibl>
-      
-      <bibl><label>6</label> Il riferimento è al saggio Conceit and Collapse of the I. Beckett and Geulincx (ivi, pp. 21-38).</bibl> 
-      <bibl>In un modo inatteso, è Beckett<lb/> stesso ad attingere a un filosofo come Geulincx (1624-1669) che sembra rappresentare ciò che c'è di più distante dal XX<lb/> secolo, in cui Beckett risulta ben radicato. Questa inconsueta vicinanza viene indagata da Rosario Diana alla luce del tema<lb/> comune del tracollo dell'Io: nel caso del filosofo fiammingo, tale tracollo si declina come dis-appartenenza dell'Io a se stesso,<lb/> poiché interamente radicato in Dio; nel caso del drammaturgo irlandese, essendo assente ogni divinità, la disillusione di un Io<lb/> agente si rivela invece «una sorta di saggia acquiescenza alla catastrofe dell'inattività», la quale si traduce spesso in una<lb/> «degenerazione delle capacità motorie dei protagonisti» (ivi, pp. 33-34)</bibl> 
+
+      <bibl><label>6</label> Il riferimento è al saggio Conceit and Collapse of the I. Beckett and Geulincx (ivi, pp. 21-38).</bibl>
+      <bibl>In un modo inatteso, è Beckett<lb/> stesso ad attingere a un filosofo come Geulincx (1624-1669) che sembra rappresentare ciò che c'è di più distante dal XX<lb/> secolo, in cui Beckett risulta ben radicato. Questa inconsueta vicinanza viene indagata da Rosario Diana alla luce del tema<lb/> comune del tracollo dell'Io: nel caso del filosofo fiammingo, tale tracollo si declina come dis-appartenenza dell'Io a se stesso,<lb/> poiché interamente radicato in Dio; nel caso del drammaturgo irlandese, essendo assente ogni divinità, la disillusione di un Io<lb/> agente si rivela invece «una sorta di saggia acquiescenza alla catastrofe dell'inattività», la quale si traduce spesso in una<lb/> «degenerazione delle capacità motorie dei protagonisti» (ivi, pp. 33-34)</bibl>
       <bibl>-si pensi appunto a Murphy e alla sua sedia a dondolo,<lb/> che lo mostra simbolicamente come un «antieroe dell'inattività» (ivi, p. 36).<lb/> </bibl>
       <bibl><label>7</label> Il saggio è intitolato The Ontopoietic Eye. Beckett and Berkeley (ivi, pp. 39-48). L'utilizzo beckettiano di un principio<lb/> filosofico quale l'«esse est percipi» nella sceneggiatura di Film risulta una feconda esemplificazione delle contaminazioni tra<lb/> filosofia e arti. Anche in questo caso è fondamentale il tema della dis-appartenenza dell'Io, un Io che in Film risulta<lb/> «condannato a percepirsi e a essere percepito» (ivi, p. 48). Tale inaggirabilità dell'autopercezione è ciò che porta al massimo<lb/> sviluppo lo strutturale conflitto dell'Io con se stesso, un Io costretto a soccombere al peso dell'esistenza (cfr. ibid.).<lb/> </bibl>
-      
+
       <bibl><label>8</label> Il testo scritto da Rosario Diana dialoga con la musica per pianoforte preparato composta da Rosalba Quindici.<lb/> </bibl>
       <bibl><label>9</label> Nei passaggi della Fenomenologia dello spirito (G.W.F. Hegel, Phänomenologie des Geistes, in Werke in zwanzig Bänden,<lb/> Bd. 3, Suhrkamp, Frankfurt a.M., 1970; a cura di G. Garelli, La fenomenologia dello spirito, Einaudi, Torino, 2008) </bibl>
       <bibl>dedicati<lb/> a Signoria e servitù, se la componente dell'angoscia (Angst) che ha provato il servo nel mettere a repentaglio la vita è ciò che<lb/> lo ha reso servo e che continua a riconfermarlo nel ruolo servile, «il fare che dà-forma (das formierende Tun)» (ivi, p. 154;<lb/> tr. it. cit., p. 135)</bibl>
       <bibl> è l'elemento in cui si attua il passaggio dal senso estraneo al senso proprio, e dunque in cui si ha propriamente<lb/> formazione (cfr. «sie [die Arbeit] bildet», ivi, pp. 153; tr. it. cit. p. 135), perché il lavoro di trasformazione dell'oggetto è ciò<lb/> in cui la coscienza riconosce come propria essenza non più il soddisfacimento dei desideri del signore, ma piuttosto la propria<lb/> negatività come elemento del permanere.</bibl> <bibl>Mi pare interessante l'elemento dell'"artigianalità disciplinata", perché<lb/> nell'operazione della «trasposizione interformale» sembra essere in gioco la materialità di un concetto che lavora con la<lb/> propria forma (nel senso del Formieren), per potersi dare a una nuova forma e che in questa negatività di sé riconosce il<lb/> proprio formarsi (nel senso della Bildung). Se però nella Fenomenologia il lavoro materiale del servo è proprio il fattore che<lb/> permetterà al servo di divenire stoico e dunque di potersi affidare unicamente alla purezza astratta del concetto, qui invece è<lb/> proprio il concetto che, abbandonando la sua purezza astratta, deve divenire artigiano di se stesso, in quanto richiamato a una<lb/> Bildung che non sia solo concettuale, ma che sia radicata piuttosto in un «fare che dà-forma» (ivi, p. 154; tr. it. cit. p. 135),<lb/> vale a dire in questo caso: il fare artistico.<lb/> </bibl>
-      
+
       <bibl><label>10</label> Cfr. S. Mazzoni, Maschera: storie di un oggetto teatrale, in M.G. Profeti (a cura di), La maschera e l'altro, Alinea Editrice,<lb/> Firenze, 2005 (pp. 59-73). </bibl>
       <bibl>Svariate sono le ragioni ipotizzate per l'uso della maschera nei teatri antichi, tra cui ad esempio la<lb/> facilitazione del riconoscimento dei personaggi, vista l'ampia distanza tra attori e pubblico, e l'interpretazione di più parti<lb/> assunte da uno stesso attore, in virtù della regola fissa dei tre attori. Inoltre, l'immobilizzazione della mimica facciale<lb/> implicava un potenziamento dei gesti corporei che arrivavano chiaramente molto più lontano della sola espressività del volto.<lb/> Tuttavia, «fu la voce, chiara potente duttile, il fattore decisivo della téchne hypokritikè» (ivi, p. 72).<lb/> </bibl>
-      
+
       <bibl><label>12</label> Cfr. R. Diana, Migrations of Concepts. From Philosophical Text to Scene, cit., p. 189.<lb/> </bibl>
-      <bibl><label>13</label> Ivi, pp. 83-84.</bibl> 
-      
+      <bibl><label>13</label> Ivi, pp. 83-84.</bibl>
+
       <bibl><label>15</label> Cfr. ivi, p. 82.<lb/> </bibl>
-      <bibl><label>16</label> H.-G. Gadamer, Verità e metodo, a cura di G. Vattimo, Bompiani, Milano, 2000, p. 815.<lb/></bibl> 
+      <bibl><label>16</label> H.-G. Gadamer, Verità e metodo, a cura di G. Vattimo, Bompiani, Milano, 2000, p. 815.<lb/></bibl>
       <bibl><label>17</label> Corsivi miei.<lb/> </bibl>
-      
+
       <bibl><label>18</label> Il carattere astorico della coscienza estetica viene tematizzato criticamente da Gadamer in connessione con la problematica<lb/> esclusione dell'esperienza artistica da ogni possibile forma di partecipazione alla verità: l'arte è così condannata a rivestire il<lb/> ruolo di mondo apparente che procede parallelamente al mondo reale. «L'arte -domanda Gadamer -non ha davvero nulla<lb/> che fare con la conoscenza? Non c'è nell'esperienza dell'arte una rivendicazione di verità, diversa certo da quella della<lb/> scienza, ma altrettanto certamente non subordinabile ad essa?» (ivi, p. 219).<lb/> </bibl>
-      
+
       <bibl><label>19</label> Cfr. ivi, p. 361: «Hegel enuncia qui una verità decisiva, in quanto l'essenza dello spirito storico non consiste nella<lb/> restituzione del passato, ma nella mediazione, operata dal pensiero, con la vita presente. Hegel ha ragione a non vedere tale<lb/> mediazione pensante come un fatto esteriore e accidentale, ma a porla invece allo stesso livello della verità dell'arte stessa. In<lb/> ciò, egli ha radicalmente superato l'idea schleiermacheriana di ermeneutica. Anche noi, attraverso il problema della verità<lb/> dell'arte, siamo stati condotti a una critica della coscienza estetica come di quella storica, giacché il problema che abbiamo<lb/> posto riguarda la verità che si manifesta nell'arte e nella storia».<lb/> </bibl>
       <bibl><label>20</label> Cfr. ivi, p. 625: «Essere storico significa non poter mai risolversi totalmente in autotrasparenza. Ogni sapere di sé sorge in<lb/> una datità storica, che possiamo chiamare, con Hegel, "sostanza", in quanto costituisce la base di ogni riflessione e<lb/> comportamento del soggetto, e quindi definisce e circoscrive anche ogni possibilità, da parte del soggetto, di capire un dato<lb/> storico trasmesso nella sua alterità».<lb/> </bibl>
-      
+
       <bibl><label>21</label> Ivi, p. 797.<lb/> </bibl>
       <bibl><label>22</label> Questa costante e unitaria poiesi che si rigenera nel suo procedere, e che è dunque al contempo differenziata al proprio<lb/> interno, è d'altronde il senso stesso del processo ermeneutico che si sviluppa intorno a un testo: l'evento ermeneutico è un<lb/> accadere, poiché ri-colloca il testo in una storia che non è circoscrivibile solo al testo in quanto oggetto del passato. Gadamer<lb/> a tal proposito sottolinea come «attraverso la riattualizzazione subita nell'atto dell'interpretazione, i testi vengono inseriti in<lb/> un autentico accadere allo stesso titolo per cui gli eventi storici permangono vivi nei loro effetti e sviluppi. È questo ciò che<lb/> abbiamo voluto indicare con la messa in evidenza del riferimento alla storia degli effetti implicito nell'esperienza ermeneutica.<lb/> Ogni attualizzazione operata nell'interpretazione ha la capacità di riconoscersi come una possibilità storica del suo oggetto.<lb/> È costitutivo della finitezza storica della nostra esistenza l'esser consapevoli che, dopo di noi, altri interpreteranno in modo<lb/> sempre diverso. Ma altrettanto indubitabile, per la nostra esperienza ermeneutica, è il fatto che sempre una e identica è l'opera<lb/> la cui ricchezza di significati si dispiega nelle vicende mutevoli delle interpretazioni, come sempre una e identica è la storia<lb/> che, attraverso i suoi sviluppi, si viene di continuo ulteriormente determinando e definendo» (ivi, p. 769).<lb/> </bibl>
-      
+
       <bibl><label>23</label> R. Diana, Migrations of Concepts. From Philosophical Text to Scene, cit., p. 78.<lb/> </bibl>
-      
+
       <bibl><label>24</label> Per quanto riguarda la natura attiva dello spettatore, Diana riprende il filosofo Jacques Rancière, in particolare la sua opera<lb/> Le spectateur émancipé (J. Rancière, Le spectateur émancipé, La Fabrique éditions, Paris, 2008; a cura di D. Mansella, Derive<lb/> e Approdi, Roma, 2018) dove, nell'omonimo primo capitolo, si tematizza il paradosso dello spettatore, secondo Rancière<lb/> ancora più importante di quello dell'attore: non si può infatti fare teatro senza pubblico, ma al contempo essere spettatori è<lb/> solitamente sinonimo di ignoranza e passività. Questo paradosso offre l'occasione a Rancière per spostare lo spettatore dallo<lb/> stato di passività classicamente attribuitogli a una dimensione di autorialità e di attorialità, vista la storia che egli<lb/> inevitabilmente costruisce. In ciò ha un ruolo politico emancipatore proprio la nozione di comunità, perché revoca il punto di<lb/> vista privilegiato dalla scena teatrale e lo rimette nelle mani di una collettività radunatasi per raccontare una storia, che si<lb/> tradurrà a sua volta in storie eterogenee e differenziate. Una tale posizione ci permette di spostarci dalla classica categoria<lb/> concettuale di causa-effetto, proprio perché -se ciascun spettatore si rivela autonomo e attivo nel recepire la storia e<lb/> soprattutto nel ritradurla in qualcosa di nuovo -i risultati del processo autoriale non possono che essere imponderabili.<lb/> </bibl>
-      
+
       <bibl><label>25</label> R. Diana, Migrations of Concepts. From Philosophical Text to Scene, cit., p. 190.<lb/> </bibl>
       <bibl><label>26</label> H.-G. Gadamer, Verità e metodo, cit., p. 805.</bibl>
     </listBibl>

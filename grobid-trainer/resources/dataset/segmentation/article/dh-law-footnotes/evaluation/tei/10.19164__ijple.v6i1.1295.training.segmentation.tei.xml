@@ -40,7 +40,7 @@
         <label>A machine learning software for extracting information from scholarly documents</label>
         <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
         <label type="revision">ed8032b</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.segmentation</label>
         <ref target="https://github.com/kermitt2/grobid"/>
       </application>
@@ -65,7 +65,7 @@
 </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
 			<front>55 <lb/>The Power of Teaching Police through the Prism of Human Rights 1 <lb/>Sean Molloy 2 <lb/>Abstract <lb/>As part of their training in England and Wales, police recruits are required to engage with a <lb/>complex mix of law, often with no prior background in legal education. In addition, they must <lb/>learn, understand, and apply the content of a highly descriptive national police curriculum <lb/>(NPC). The combination of these tasks, amongst other things, can limit the extent to which <lb/>police training can cultivate critical thinking, a central objective of efforts to professionalise the <lb/>police in recent times. In this article and based on the author&apos;s experience of teaching law to <lb/>police recruits, the challenges of the current approach to police training are explored through <lb/>Freire&apos;s pedagogy of the oppressed and what he terms the banking model of education. After <lb/>drawing connections between this model and the current approach to police training, a human <lb/>rights-based approach to police teaching is offered as an example of Freire&apos;s preferred problem-<lb/>solving method. Central to this model is utilising the views of recruits regarding the role of the <lb/>police in balancing rights to help understand the law as it exists. <lb/>Keywords: Police Pedagogy; Pedagogy of the Oppressed; College of Policing; Police <lb/>Education Qualification Framework; Stop and Search; Human Rights <lb/></front>
-	  
+
 	  <body>Introduction <lb/></body>
 
 			<front>1 The author wishes to think Professor Colin Murray, Professor Chris Ashford, Dr Conall Mallory, and Dr Helene Tyrell for <lb/>comments on earlier drafts. Any errors that remain are my sole responsibility. <lb/>2 Sean Molloy is a NUAcT Fellow in Law and Newcastle Law School, Newcastle University. <lb/></front>
@@ -141,9 +141,9 @@
 			<page>68 <lb/></page>
 
 			<body>Each learning outcome then disaggregates further to encompass a range of what is <lb/>known as minimum core content-the bare minimum that each learning outcome must <lb/>achieve. These are specific aspects that must be addressed. If we-Effectively use <lb/>personal protection equipment, physical and mechanical restraints-the MCC are as <lb/>follows: <lb/>Box 3: Example of PNC Minimum Core Content <lb/>1. Use of an authorised issue baton <lb/>2. Use of an authorised incapacitant spray, including the effects of such usage and <lb/>aftercare requirements <lb/>3. Application of physical and mechanical restraints <lb/>4. Multi-officer techniques <lb/>5. Possible medical implications following use of restraints and personal safety <lb/>equipment <lb/>6. How to evaluate the use of personal protection equipment <lb/>Thus, notwithstanding the aspirations of the PEQF to develop and harness critical <lb/>thinking police officers, the NPC is, to put it mildly, &apos;very prescriptive about what <lb/>should be taught and as a result of this prescriptive nature [and] this could prevent all <lb/>the benefits of higher education being accessed by the students who undertake these <lb/></body>
-	  
+
 	  <page>69 <lb/></page>
-	  
+
 	  <body>programmes.&apos; 28 The reality that emerges is that police recruits enter the PEQF process <lb/>often with little experience in dealing with the law. The law in England and Wales is <lb/>itself highly complex and multi-tiered, deriving from the constitutional set-up of the <lb/>UK and includes primary and secondary law, common law and judge developed law, <lb/>in addition to a range of additional standards, codes and guidelines. Given the scope <lb/>of police powers and responsibilities, this complex web or information is replicated <lb/>and repeated across different law-related topics, which include but are not limited to <lb/>powers of arrest; entry, search, and seizure; detention and questioning; <lb/>counterterrorism; public protection; and public order, as examples. Added to this, <lb/>police recruits must also engage in a range of non-law topics as defined in the College <lb/>of Policing Curriculum. <lb/>It is the sheer scale and complexity of the task that necessitates a banking approach to <lb/>education. Yet, paradoxically, it is this approach which severely limits the extent to <lb/>which the critical faculties of the recipients are developed. The question that emerges, <lb/>therefore, is how those responsible for delivering police training can cover the <lb/>necessary content while doing so in a manner that cultivates the overarching goal of <lb/>harnessing critical thinking? Against this backdrop, the remainder of this article <lb/>articulates a human rights-based approach to teaching police about their powers. It <lb/>utilizes insights from Paulo Freire&apos;s Pedagogy of the oppressed as the theoretical <lb/>framework. <lb/></body>
 
 			<listBibl>28 See Shohel and others (n.2). <lb/></listBibl>

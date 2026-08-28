@@ -64,7 +64,7 @@
       <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-05-20T21:55:56.261732Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.9.0-62-gdd0608bb6</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -105,36 +105,36 @@
       <bibl><label>4</label> Delaney v Secretary of State for Transport [2014] EWHC 1785 (QB); </bibl>
       <bibl>[2014] WLR (D) 253.<lb/> </bibl>
       <bibl><label>5</label> Although see Lisa Schultz Bressman, and Abbe, R, Gluck, 'Statutory Interpretation from the Inside -<lb/>An Empirical Study of Congressional Drafting, Delegation, and the Canons: Part II' (2014) 66 Stanford<lb/> Law Review 725 for an analysis and critique of the theories underpinning the textualist and purposivist<lb/> approaches to statutory interpretation. The authors conclude that an alternative paradigm is required,<lb/> adopting a pragmatic approach to interpretation.<lb/> </bibl>
-      
+
       <bibl><label>6</label> The current annual report is: EU Commission (2014) 'Report from the Commission: 31st Annual<lb/> Report on Monitoring the Application of EU Law (2013)' Brussels, 1.10.2014 COM(2014) 612 final.<lb/> </bibl>
       <bibl><label>7</label> ibid, 3. 18 of these cases were against the UK, 4.<lb/> </bibl>
       <bibl><label>8</label> One of nine Member States.<lb/> </bibl>
       <bibl><label>9</label> n 6, 11.<lb/> </bibl>
-      <bibl><label>10</label> As confirmed by the Court of Justice in Case 247/87 Star Fruit v Commission [1989] ECR 291-302<lb/> [11];</bibl> 
-      <bibl>Case C-87/89 Sonito and Others v Commission [1990] ECR I-1981 [6];</bibl> 
+      <bibl><label>10</label> As confirmed by the Court of Justice in Case 247/87 Star Fruit v Commission [1989] ECR 291-302<lb/> [11];</bibl>
+      <bibl>Case C-87/89 Sonito and Others v Commission [1990] ECR I-1981 [6];</bibl>
       <bibl>and Case C-111/11 P<lb/> Ruipérez Aguirre and ATC Petition v Commission [2011] ECR I-104 [11 and 12].<lb/> </bibl>
       <bibl><label>11</label> Joined Cases C-514/11 P and C-605/11 P Liga para a Protecção da Natureza (LPN), Republic of<lb/> Finland v European Commission [2013] ECLI:EU:C:2013:738.<lb/> </bibl>
-      
+
       <bibl><label>12</label> See Veerle Heyvaert, Justine Thornton and Richard Drabble 'With Reference to the Environment:<lb/> The Preliminary Reference Procedure, Environmental Decisions and the Domestic Judiciary' (2014)<lb/> 130 Law Quarterly Review 413.<lb/> </bibl>
       <bibl><label>13</label> Established in Case C-283/81 Srl CILFIT and Lanificio di Gavardo SpA v Ministry of Health [1982]<lb/> ECR 341.<lb/> </bibl>
-      <bibl><label>14</label> Including Royscot Leasing Ltd and others v Commissioners of Customs and Excise, Court of<lb/> Appeal, 5 November 1998, FC3 98/7287/4;</bibl> 
-      <bibl>Customs and Excise v First Choice Holidays Plc, Court of<lb/> Appeal (Civil Division), 7 March 2001, A3/2000/2534;</bibl> 
+      <bibl><label>14</label> Including Royscot Leasing Ltd and others v Commissioners of Customs and Excise, Court of<lb/> Appeal, 5 November 1998, FC3 98/7287/4;</bibl>
+      <bibl>Customs and Excise v First Choice Holidays Plc, Court of<lb/> Appeal (Civil Division), 7 March 2001, A3/2000/2534;</bibl>
       <bibl>Three Rivers District Council and others v The<lb/> Governor and Company of the Bank of England, House of Lords, 2000 -particularly concerning here<lb/> given the opinion to the contrary provided by Auld LJ in in the Court of Appeal (Three Rivers District<lb/> Council and Others v Governor and Company of the Bank of England (No 3) [2000] 2 WLR 15).<lb/> </bibl>
       <bibl><label>15</label> These examples have been referred to as 'borderline cases' and are commonly not referred to the<lb/> CJEU under the reference procedure -see Tobias Lock 'Is Private Enforcement of EU Law Through<lb/> State Liability a Myth? An Assessment 20 Years After Francovich' (2012) 49 Common Market Law<lb/> Review 1675.<lb/> </bibl>
       <bibl><label>16</label> See Victor J.J.M. Bekkers, Jacqueline M. Bonnes, and Wim J.M. Voermans 'Succes-en<lb/> faalfactoren bij de uitvoering van EG-beleid, De uitvoering van EG-richtlijnen kwalitatief bezien' (1993)<lb/> Bestuurskunde 1993/4, 192, 193.<lb/> </bibl>
       <bibl><label>17</label> For example, as contained in the Collective Redundancies Directive -Council Directive 98/59/EC of<lb/> 20 July 1998 on the approximation of the laws of the Member States relating to collective<lb/> redundancies. Here the Directive gave Member States a legislative choice between two thresholds<lb/> (and appropriate calculations) at which the duty to consult over collective redundancies was<lb/> 'triggered.'<lb/> </bibl>
       <bibl><label>18</label> Joined Cases C-46/93 and C-48/93 Brasserie du Pêcheur v Germany and R v Secretary of State<lb/> for Transport, ex p. Factortame (III) [1996] ECR I-1029; [1996] 1 CMLR 889.<lb/> </bibl>
-      
+
       <bibl><label>19</label> Thomas König, and Lars Mäder, 'Non-Conformable, Partial and Conformable Transposition: A<lb/> Competing Risk Analysis of the Transposition Process of Directives in the EU15' (2013) 14 European<lb/> Union Politics 46.<lb/> </bibl>
       <bibl><label>20</label> See Miriam Hartlapp, and Gerda Falkner, (2009) 'Problems of Operationalisation and Data in EU<lb/> Compliance Research' 10 European Union Politics 281, 287.<lb/> 21 n 19, 49.<lb/> </bibl>
       <bibl><label>22</label> See Clifford J. Carrubba, 'Courts and Compliance in International Regulatory Regimes' (2005) 67<lb/> Journal of Politics 669; </bibl>
-      <bibl>Gerda Falkner, Oliver Treib, Miriam Hartlapp, and Simone Leiber, Complying<lb/> with Europe, (2005, Cambridge: Cambridge University Press);</bibl> 
+      <bibl>Gerda Falkner, Oliver Treib, Miriam Hartlapp, and Simone Leiber, Complying<lb/> with Europe, (2005, Cambridge: Cambridge University Press);</bibl>
       <bibl>and Thomas König and Brooke<lb/> Luetgert, 'Troubles with Transposition? Explaining Trends in Member State Notification and the<lb/> Delayed Transposition of EU Directives' (2009) 39 British Journal of Political Science 163.<lb/> </bibl>
       <bibl><label>23</label> Cleary, depending upon the nature and scope of the Directive's provisions, a new legislative<lb/> instrument may be required but this is not the situation in each case. Amending existing legislation<lb/> can be a method adopted by the Member State, but the former action involves far greater uncertainty,<lb/> costs and risks in conformable transposition than does the latter (see Brooke Luetgert, and Tanya<lb/> Dannwolf, (2009) 'Mixing methods: A Nested Analysis of EU Transposition Patterns' (2009) 10<lb/> European Union Politics 307.<lb/> </bibl>
       <bibl><label>24</label> See Tanja A. Boerzel, 'Non-Compliance in the European Union: Pathology or Statistical Artifact?'<lb/> (2001) 8 Journal of European Public Policy 803.<lb/> </bibl>
       <bibl><label>25</label> See Robert Thompson, 'Opposition Through the Back Door in the Transposition of EU Directives'<lb/> (2010) 11 European Union Politics 577, 591 'In the absence of explicit support for a provision from the<lb/> Commission, states with incentives to deviate are three times more likely to exhibit protracted non-<lb/>compliance than are states without incentives to deviate.'<lb/> </bibl>
       <bibl><label>26</label> n 19, 65.<lb/> </bibl>
-      
+
       <bibl><label>27</label> n 19, 65.<lb/> </bibl>
       <bibl><label>28</label> Council Directive 2000/78/EC of 27 November 2000 establishing a general framework for equal<lb/> treatment in employment and occupation, OJ L 303, Art 1, and transposed in the UK through the<lb/> Disability Discrimination Act 1995 and the Equality Act 2010.<lb/> </bibl>
       <bibl><label>29</label> Council Directive 2000/78/EC of 27 November 2000 establishing a general framework for equal<lb/> treatment in employment and occupation, OJ L 303, Art 1.<lb/> </bibl>
@@ -143,31 +143,31 @@
       <bibl><label>32</label> Council Directive 77/187/EEC of 14 February 1977 on the approximation of the laws of the Member<lb/> States relating to the safeguarding of employees' rights in the event of transfers of undertakings,<lb/> businesses or parts of businesses, OJ L 061, and Council Directive 2001/23/EC of 12 March 2001 on<lb/> the approximation of the laws of the Member States relating to the safeguarding of employees' rights<lb/> in the event of transfers of undertakings, businesses or parts of undertakings or businesses, OJ L 82.<lb/> </bibl>
       <bibl><label>33</label> Council Directive 98/59/EC of 20 July 1998 on the approximation of the laws of the Member States<lb/> relating to collective redundancies, and transposed in the UK through The Trade Union and Labour<lb/> Relations (Consolidation) Act 1992, amended by the Collective Redundancies and Transfer of<lb/> Undertakings (Protection of Employment) (Amendment) Regulations 1995 and </bibl>
       <bibl>The Transfer of<lb/> Undertakings (Protection of Employment) Regulations 1981, amended by the Collective<lb/> Redundancies and Transfer of Undertakings (Protection of Employment) (Amendment) Regulations<lb/> 1995 and 1999.<lb/> </bibl>
-      
-      <bibl><label>34</label> Case 26/62 Van Gend en Loos v Nederlandse Administratie der Belastingen [1963] ECR1, [1963]<lb/> CMLR105;</bibl> 
+
+      <bibl><label>34</label> Case 26/62 Van Gend en Loos v Nederlandse Administratie der Belastingen [1963] ECR1, [1963]<lb/> CMLR105;</bibl>
       <bibl>Case 6/64 Costa (Flaminio) v ENEL [1964] ECR 585, [1964] CMLR 425, </bibl>
       <bibl>and Case 11/70<lb/> Internationale Handelsgesellschaft mbH v Einfuhr-und Vorratsstelle fuer Getreide und Futtermittel<lb/> [1970] ECR 1125, [1972] CMLR 255.<lb/> </bibl>
       <bibl><label>35</label> Erika Szyszczak,' Making Europe More Relevant to its Citizens: Effective Judicial Process' (1996)<lb/> 21 European Law Review 351.<lb/> </bibl>
-      <bibl><label>36</label> ibid at 358.</bibl> 
-      
+      <bibl><label>36</label> ibid at 358.</bibl>
+
       <bibl><label>38</label> Although see Bob Hepple and Angela Byre, 'EEC Labour Law in the United Kingdom -A New<lb/> Approach' 18 Industrial Law Journal (1989), 129, 131 for a critique of the inequalities in the use of the<lb/> Court of Justice's own criteria for establishing the direct effect of Directives. The article is relatively<lb/> old, identifying subsequently repealed legislation, but through the following example of the Court of<lb/> Justice's double standards, demonstrate a problem in consistency of approach and rationale<lb/> explanation and justification for its decision-making. </bibl>
       <bibl>Article 119 (Case 43/75 Defrenne v Sabena<lb/> [1976] ECR 455, [1976] 2 CMLR 98) </bibl>
       <bibl>and Directive 75/117 (Council Directive 75/117/EEC of 10<lb/> February 1975 on the approximation of the laws of the Member States relating to the application of<lb/> the principle of equal pay for men and women) 'which facilitates the practical application of Article<lb/> 119' both having been granted with the status of being horizontally directly effective, </bibl>
       <bibl>whilst Directive<lb/> 76/207 (Council Directive 76/207/EEC of 9 February 1976 on the implementation of the principle of<lb/> equal treatment for men and women as regards access to employment, vocational training and<lb/> promotion, and working conditions) was only judged to possess vertical direct effect (Case 152/84<lb/> Marshall v Southampton and South-West Hampshire Health Authority [1986] ECR 723).<lb/> </bibl>
-      
+
       <bibl><label>39</label> Case C-91/92 Dori (Faccini) v Recreb Srl [1994] ECR I-3325.<lb/> </bibl>
       <bibl><label>40</label> See opinions of A-G Jacobs in Case C-316/93, Vaneetveld v SA Le Foger [1994] ECR I-763, 2<lb/> CMLR 852 </bibl>
       <bibl>and A-G Lenz in Case 91/92 Faccini Dori [1994] ECR I-3325.<lb/> </bibl>
       <bibl><label>41</label> Despite the lack of horizontal application of Directives, it has been argued that the Marleasing<lb/> decision was in essence a de facto horizontal application of a Directive. See John, J, Barceló III, 'The<lb/> Paradox of Excluding WTO Direct and Indirect Effect in U.S. Law' (2006) Cornell Law Faculty<lb/> Publications Paper 9. http://scholarship.law.cornell.edu/facpub/9, 151.<lb/> </bibl>
-      <bibl><label>42</label> Defined by the Court of Justice as 'a body, whatever its legal form, which has been made<lb/> responsible, pursuant to a measure adopted by the state, for providing a public service under the<lb/> control of the state and has for that purpose special powers beyond that which result from the normal<lb/> rules applicable in relations between individuals.' E.g. a former nationalized utility company -Case C-<lb/>188/89 Foster v British Gas plc. [1990] ECR I-3313;</bibl> 
-      <bibl>health authorities -Case 152/84 Marshall v<lb/> Southampton and South-West Hampshire Health Authority [1986] ECR 723;</bibl> 
-      <bibl>local government bodies<lb/> -Case 103/88 Fratelli Costanzo v Comune di Milano [1989] ECR I-1839;</bibl> 
+      <bibl><label>42</label> Defined by the Court of Justice as 'a body, whatever its legal form, which has been made<lb/> responsible, pursuant to a measure adopted by the state, for providing a public service under the<lb/> control of the state and has for that purpose special powers beyond that which result from the normal<lb/> rules applicable in relations between individuals.' E.g. a former nationalized utility company -Case C-<lb/>188/89 Foster v British Gas plc. [1990] ECR I-3313;</bibl>
+      <bibl>health authorities -Case 152/84 Marshall v<lb/> Southampton and South-West Hampshire Health Authority [1986] ECR 723;</bibl>
+      <bibl>local government bodies<lb/> -Case 103/88 Fratelli Costanzo v Comune di Milano [1989] ECR I-1839;</bibl>
       <bibl>and a police force -Case<lb/> C-222/84 Johnston v Chief Constable of the RUC [1986] ECR 1651.<lb/> </bibl>
       <bibl><label>43</label> Vertical direct effect was attributed to Directives by the Court of Justice in Case 41/74 Van Duyn v<lb/> Home Office [1974] ECR 1337, 1 CMLR 1 [1975].<lb/> </bibl>
-      
+
       <bibl><label>44</label> However, the Court of Justice has been relatively unhelpful, despite exploring concepts of State<lb/> and public bodies, on providing detailed guidance on this important issue -see Erika Ssyszczak,<lb/> 'Foster v British Gas' (1990) 27 Common Market Law Review 859.<lb/> </bibl>
       <bibl><label>45</label> Declaration 17, annexed to the Final Act of the Intergovernmental Conference which Adopted the<lb/> Treaty of Lisbon, signed on 13 December 2007, concerning primacy '… in accordance with well<lb/> settled case law of the Court of Justice of the European Union, the Treaties and the law adopted by<lb/> the Union on the basis of the Treaties have primacy over the law of Member States, under the<lb/> conditions laid down by the said case law'.<lb/> </bibl>
-      <bibl><label>46</label> The obligation does not extend to nullify the law, but rather '… the national court is, however,<lb/> obliged to disapply that (incompatible) rule, provided always that this obligation does not restrict the<lb/> power of the competent national courts to apply, from among the various procedures available under<lb/> national law, those which are appropriate for protecting the individual rights conferred by Community<lb/> law'. (Cases C-10-22/97 Ministero delle Finanze v IN.CO.'90 Srl [1998] ECR I-6307, [21];</bibl> 
+      <bibl><label>46</label> The obligation does not extend to nullify the law, but rather '… the national court is, however,<lb/> obliged to disapply that (incompatible) rule, provided always that this obligation does not restrict the<lb/> power of the competent national courts to apply, from among the various procedures available under<lb/> national law, those which are appropriate for protecting the individual rights conferred by Community<lb/> law'. (Cases C-10-22/97 Ministero delle Finanze v IN.CO.'90 Srl [1998] ECR I-6307, [21];</bibl>
       <bibl>Case C-<lb/>314/08 Krzysztof Filipiak, 19 November 2009 [18].<lb/> </bibl>
       <bibl><label>47</label> Or, in other words, to fulfill the (doctrine of) consistent interpretation of ALL sources of EU law (cf.<lb/> Advocate General Tizzano in Case C-144/04 Werner Mangold v Rüdiger Helm [2005] ECR I-9981).<lb/> </bibl>
       <bibl><label>48</label> Similar to the duty of interpretation of the Human Rights Act 1998 s. 3 as articulated in<lb/> Ghaidan v Godin Mendoza [2004] 2 AC 557.<lb/> </bibl>
@@ -179,18 +179,18 @@
       <bibl><label>54</label> ibid [33].<lb/> </bibl>
       <bibl><label>55</label> ibid [121].<lb/> </bibl>
       <bibl><label>56</label> ibid [14].<lb/> </bibl>
-      
+
       <bibl><label>57</label> ibid [49].<lb/> </bibl>
       <bibl><label>58</label> USDAW v Ethel Austin Ltd (In Administration) [2013] UKEAT/0547/12/KN, </bibl>
       <bibl>and USDAW and Wilson v<lb/> Unite the Union, WW Realisation 1 Ltd and Secretary of State for Business, Innovation &amp; Skills [2013]<lb/> UKEAT/0548/12/KN.<lb/> </bibl>
       <bibl><label>59</label> The Act gives implementation in the United Kingdom of the 1975 Collective Redundancies Directive<lb/> and the 1977 Acquired Rights Directive (Council Directive 77/187/EEC).<lb/> </bibl>
       <bibl><label>60</label> Council Directive 98/59/EC of 20 July 1998 on the approximation of the laws of the Member States<lb/> relating to collective redundancies.<lb/> </bibl>
       <bibl><label>61</label> The original wording of s.188, amended following enactment of the Trade Union Reform and<lb/> Employment Rights Act 1993 and proceedings to the Court of Justice, had restricted the consultation<lb/> requirements to a single redundant employee who was represented by a recognised independent<lb/> trade union -Court of Justice of the European Union in cases C382/92 and C383/92, Commission of<lb/> the European Communities v United Kingdom of Great Britain and Northern Ireland [1994] ICR 664.<lb/> </bibl>
-      
+
       <bibl><label>63</label> n 58.<lb/> </bibl>
       <bibl><label>64</label> [2010] IRLR 346.<lb/> </bibl>
       <bibl><label>65</label> As previously stated by Lord Nicholls in Autologic Holdings v IRC [2006] 1 AC 118 HL [16].<lb/> </bibl>
-      
+
       <bibl><label>66</label> Per Barceló III, John J., 'The Paradox of Excluding WTO Direct and Indirect Effect in U.S. Law'<lb/> (2006) Cornell Law Faculty Publications Paper 9. http://scholarship.law.cornell.edu/facpub/9 'In other<lb/> words, the ECJ would not force national judges to make a mockery of "interpretation" in order to bring<lb/> national law into conformity. In sum, despite the latent force and importance of indirect effect, it has<lb/> implicit limits', 152.<lb/> </bibl>
       <bibl><label>67</label> '… when transposing EU law, the Government will: (d) always use copy-out for transposition where<lb/> it is available, except where doing so would adversely affect UK interests e.g. by putting UK<lb/> businesses at a competitive disadvantage compared with their European counterparts or going<lb/> beyond the minimum requirements of the measure that is being transposed.' HM Government.<lb/> Department for Business Innovation &amp; Skills (2013) 'Transposition Guidance: How to implement<lb/> European Directives effectively' URN 11/775, 3.<lb/> </bibl>
       <bibl><label>68</label> The requirement to consistently interpret the law was established throughout case law of the Court<lb/> of Justice and, given that in Case C-177/88 Dekker v Stichting Vormingscentrum voor Jong<lb/> Volwassenen [1990] ECR I-3941 the national law of the Netherlands was interpreted almost contra<lb/> legem, the EAT's interpretation certainly could not be argued to have extend that far.<lb/> </bibl>
@@ -199,24 +199,24 @@
       <bibl><label>71</label> Due to Part XII ss.182 and 189 of the Employment Rights Act 1996 where the Secretary of State<lb/> underwrites claims from individuals owed wages / payments from their insolvent employer.<lb/> </bibl>
       <bibl><label>72</label> See Case C-392/93 The Queen v HM Treasury, ex parte British Telecommunications [1996] ECR I-<lb/>1631. </bibl>
       <bibl>In the matter affecting Woolworths and Ethel Austin, it is questionable whether the incorrect<lb/> transposition of the Direction in TULRCA 1992 was a justifiable error -differences between joined<lb/> Cases C-283, 291 and 292/94 Denkavit International BV and others v Bundesamt Fur Finanzen<lb/> [1996] ECR I-5063 and s.188 exist.<lb/> </bibl>
-      
+
       <bibl><label>73</label> Judgment of the Court (First Chamber) Case C-456/98 Centrosteel Srl v Adipol GmbH [2000] ECR<lb/> I-6007, [16]. Art. 189 now Art. 288 TFEU.<lb/> </bibl>
       <bibl><label>74</label> Case C-449/93, Rockfon A/S v Specialarbejderforbundet i Danmark (Nielsen) [1995] ECR I-4291 -<lb/>'The national court is bound, when applying provisions of domestic law predating or postdating the<lb/> said Directive, to interpret those provisions, so far as possible, in the light of the wording and purpose<lb/> of the Directive, so that those provisions are applied in a manner consistent with the result pursued by<lb/> the Directive.' [19].<lb/> </bibl>
       <bibl><label>75</label> Lyttle and others v Bluebird UK Bidco 2 Ltd [2013] NIIT 00555_12IT.<lb/> </bibl>
       <bibl><label>76</label> Case C 182/13.<lb/> </bibl>
       <bibl><label>77</label> at [61].<lb/> </bibl>
       <bibl><label>78</label> USDAW and Another v Ethel Austin Ltd and Others [2014] EWCA Civ 142 LJ Kay remarked 'The<lb/> submission for the employees on this point, "vertical direct effect", is said to gain support from Foster<lb/> v British Gas [1990] ECR 13313. The EAT accepted this submission, albeit "with slightly less<lb/> confidence." In my view, it would be appropriate for this question to be the subject of the reference. It<lb/> is not currently before the CJEU in the Lyttle case. The Court may take the view that vertical direct<lb/> effect does not yet arise in this case, but the point is not free from doubt. Accordingly, if my Lord and<lb/> my Lady agree, I would make a reference in relation to the construction of the Directive and the<lb/> vertical direct effect point.' [12].<lb/> </bibl>
-      
+
       <bibl><label>79</label> Although the EAT stated that it was minded to agree with this argument, albeit 'with slightly less<lb/> confidence' [62].<lb/> </bibl>
       <bibl><label>80</label> See Robert Thompson, 'Opposition Through the Back Door in the Transposition of EU Directives'<lb/> (2010) 11 European Union Politics 577.<lb/> </bibl>
-      <bibl><label>81</label> Bradley, Ball and others v Secretary of State for Employment (1997, unreported).</bibl> 
-      
+      <bibl><label>81</label> Bradley, Ball and others v Secretary of State for Employment (1997, unreported).</bibl>
+
       <bibl><label>83</label> '3.36: The Commission opened 57 infringement procedures against the UK for late transposition of<lb/> various Directives in 2011.' (Thirty-second Report of Session 2012-13 -European Scrutiny<lb/> Committee, (34581) 18034/12 COM(12) 714).<lb/> </bibl>
       <bibl><label>84</label> See Miriam Hartlapp, and Gerda Falkner, 'Problems of Operationalization and Data in EU<lb/> Compliance Research' (2009) European Union Politics 10, 281.<lb/> </bibl>
       <bibl><label>85</label> For example, the UK's transposition of the Acquired Rights Directive (ARD) (Directive 77/187/EC<lb/> [1977] OJ L61/ 27) was belatedly implemented through The Transfer of Undertakings (Protection of<lb/> Employment) Regulations 1981. </bibl>
       <bibl>The delay, in part was due to a 'lack of enthusiasm' -comments<lb/> made by the Minister, David Waddington (14 HC Deb 680, 8 December 1981). </bibl>
       <bibl>Amending legislation<lb/> to the original ARD (Directive 98/50/EC [1998] OJ L201/ 88) was due to be transposed by 2001, but<lb/> the UK did not comply until five years after this deadline (The Transfer of Undertakings (Protection of<lb/> Employment) Regulations 2006 (SI 2006 No.246)).<lb/> </bibl>
-      
+
       <bibl><label>86</label> In R v Secretary of State for Trade and Industry ex p. Unison [1996] ICR 1003 CA where a<lb/> challenge as to the validity of the amendment was raised in the Court of Appeal, the issue as to the 'at<lb/> one establishment' wording was not raised.<lb/> </bibl>
       <bibl><label>87</label> However, as Van Harten and Nauta observe 'Infringement proceedings under art.258 TFEU have<lb/> not been modelled for the practices of private parties. They are aimed at Member State behaviour'.<lb/> </bibl>
       <bibl>Herman Van Harten, and Thomas Nauta, 'Towards Horizontal Direct Effect for the Free Movement of<lb/> Goods? Comment on Fra.bo' 38 European Law Review (2013) 677, 692.<lb/> </bibl>
@@ -232,23 +232,23 @@
       <bibl>Further, In Autologic Holdings Plc v Inland Revenue<lb/> Commissioners [2004] EWCA Civ 690 [2004] 2 All ER 957 Gibson LJ stated: 'The importance of the<lb/> principle of effectiveness in Community law cannot be overstated. Any provision of national law which<lb/> makes the exercise of a right conferred by Community law practically impossible or extremely difficult<lb/> cannot prevail.' [25].<lb/> </bibl>
       <bibl><label>97</label> at [51].<lb/> </bibl>
       <bibl><label>98</label> n 18.<lb/> </bibl>
-      
+
       <bibl type="footnote"><label>99</label> From a dishonorable cause an action does not arise.<lb/> </bibl>
-      
+
       <bibl><label>100</label> Delaney v Picket [2011] EWCA Civ 1532.<lb/> </bibl>
       <bibl><label>101</label> The law in the UK relating to insurance had been largely the same since the Road Traffic Act 1930<lb/> (as amended in 1934), with only minor amendments incorporated following each Directive. </bibl>
-      <bibl>Whilst the<lb/> UK did not transpose the effects of the Directive through the Road Traffic Act 1988, Delaney's case<lb/> against the State was justified on the existence of the effects of three Directives (Directive<lb/> 72/166/EEC, Directive 84/5/EEC and Directive 90/232/EEC) -subsequently replaced by Directive<lb/> 2009/103/EC of the European Parliament and of the Council of 16 September 2009 relating to<lb/> insurance against civil liability in respect of the use of motor vehicles, and the enforcement of the<lb/> obligation to insure against such liability.</bibl> 
-      
+      <bibl>Whilst the<lb/> UK did not transpose the effects of the Directive through the Road Traffic Act 1988, Delaney's case<lb/> against the State was justified on the existence of the effects of three Directives (Directive<lb/> 72/166/EEC, Directive 84/5/EEC and Directive 90/232/EEC) -subsequently replaced by Directive<lb/> 2009/103/EC of the European Parliament and of the Council of 16 September 2009 relating to<lb/> insurance against civil liability in respect of the use of motor vehicles, and the enforcement of the<lb/> obligation to insure against such liability.</bibl>
+
       <bibl><label>103</label> Delaney v Secretary of State for Transport [2014] EWHC 1785 (QB); </bibl>
       <bibl>[2014] WLR (D) 253.<lb/> </bibl>
-      
+
       <bibl><label>104</label> at [60].<lb/> </bibl>
       <bibl><label>105</label> at [65-68].<lb/> </bibl>
       <bibl><label>106</label> at [68-71].<lb/> </bibl>
       <bibl><label>107</label> at [72].<lb/> </bibl>
       <bibl><label>108</label> at [51].<lb/> </bibl>
       <bibl><label>109</label> The Court of Justice has provided guidance as to the factors to be taken into consideration when<lb/> assessing the existence of a sufficiently serious breach -'Those factors include, in particular, in<lb/> addition to the clarity and precision of the rule infringed and the measure of discretion left by that rule<lb/> to the national authorities, whether the infringement or the damage caused was intentional or<lb/> involuntary, whether any error of law was excusable or inexcusable, and the fact that the position<lb/> taken by a Community institution may have contributed towards the adoption or maintenance of<lb/> national measures or practices contrary to Community law.' Case C-278/05 Robins v Secretary of<lb/> State for Work and Pensions [2007] ECR I-1053 [77].<lb/> </bibl>
-      <bibl><label>110</label> R v Secretary of State for the Home Department ex p. Gallagher [1996] 2 CMLR 951;</bibl> 
+      <bibl><label>110</label> R v Secretary of State for the Home Department ex p. Gallagher [1996] 2 CMLR 951;</bibl>
       <bibl>Bowden v<lb/> South West Water Services Ltd [1998] 3 CMLR 330; </bibl>
       <bibl>R v Ministry of Agriculture, Fisheries and Food<lb/> ex p. Lay and Gage [1998] COD 387; </bibl>
       <bibl>Boyd Line Management Services Ltd v Ministry of Agriculture,<lb/> Fisheries and Food (No.1) [1999] Eu. L.R. 44; </bibl>
@@ -270,7 +270,7 @@
       <bibl>R (on the application of Negassi) v Secretary of<lb/> State for the Home Department [2011] EWHC 386 (Admin); </bibl>
       <bibl>Test Claimants in Thin Cap Group<lb/> Litigation v Revenue and Customs Commissioners [2011] EWCA Civ 127; </bibl>
       <bibl>Harmon CFEM Facades<lb/> (UK) Ltd v Corporate Officer of the House of Commons [1999] 67 Con. LR 1.<lb/> </bibl>
-      
+
       <bibl><label>111</label> R v Department of Social Security Ex p. Scullion, Para 64.<lb/> </bibl>
       <bibl><label>112</label> at [66].<lb/> </bibl>
       <bibl><label>113</label> [2008] EWCA Civ 574.<lb/> </bibl>
@@ -283,7 +283,7 @@
       <bibl><label>119</label> Per Factortame [2000] 1 AC 524.<lb/> </bibl>
       <bibl><label>120</label> at [81-84].<lb/></bibl>
       <bibl><label>121</label> See Marie-Pierre F. Granger, 'National Applications of Francovich and the Construction of a<lb/> European Administrative ius commune' (2007) 32 European Law Review 157.<lb/> </bibl>
-      
+
       <bibl><label>122</label> at 104.<lb/> </bibl>
       <bibl><label>123</label> at 105.<lb/> </bibl>
       <bibl><label>124</label> [2013] EWHC 3091 (Ch).<lb/> </bibl>

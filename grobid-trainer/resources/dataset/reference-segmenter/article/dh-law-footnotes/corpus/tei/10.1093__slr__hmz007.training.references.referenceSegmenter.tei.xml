@@ -68,7 +68,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:01:57.887041Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.8.2-70-gc35e48387</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -111,28 +111,28 @@
         <listBibl>
         <bibl><label>1</label> "Brexit: Theresa May to trigger Article 50 by end of March" BBC News (2 October 2016),<lb/> http://www.bbc.co.uk/news/uk-politics-37532364 (Accessed 15 November 2018).<lb/> </bibl>
         <bibl><label>2</label> In fact, this label may still be influencing coverage. As of June 2018, Sky was still referring to it as the<lb/> Great Repeal Bill (Faisal Islam, "Brexit moves from procedure to substance" Sky News (21 June 2018,<lb/> https://news.sky.com/story/brexit-moves-from-procedure-to-substance-11411631<lb/> (Accessed<lb/> 15<lb/> November 2018)).<lb/> </bibl>
-          
+
         <bibl><label>3</label> D.A. Green, "Whatever happened to the 'Great' Repeal Bill?" Financial Times (21 June 2017),<lb/> https://www.ft.com/content/05253602-ce4a-3f64-8ace-6a6f0387603f (Accessed 15 November 2018).<lb/> Green notes in his article that when he questioned why name would not be used for the short title, they<lb/> responded that, they "can't use it because it is a parliamentary thing".<lb/> </bibl>
-          
+
         <bibl type="footnote"><label>4</label> At least, this applies to bills that originate in the government's legislative programme, and are therefore<lb/> approved at the Cabinet level. Some statutes, of course, may also go on to be approved by the judiciary,<lb/> which would then make three branches sanctioning these important documents.<lb/> </bibl>
-          
-        <bibl><label>5</label> R (on the application of Miller and another) v Secretary of State for Exiting the European Union, [2017]<lb/> UKSC 
+
+        <bibl><label>5</label> R (on the application of Miller and another) v Secretary of State for Exiting the European Union, [2017]<lb/> UKSC
         5.<lb/> </bibl>
-          
+
         <bibl type="footnote"><label>6</label> No, this is not a reference to the Daily Mail "enemies of the people" headline after the High Court<lb/> decision. Even after that judgment, a speech by Lady Hale caused controversy, as did the Twitter habits<lb/> of Lord Neuberger's wife.<lb/> </bibl>
-          
+
         <bibl><label>7</label> See, e.g., all the UKCLA Blog entries on the subject here: https://ukconstitutionallaw.org/tag/miller-v-<lb/>secretary-of-state-for-exiting-the-european-union/ (Accessed 15 November 2018).<lb/> </bibl>
         <bibl><label>8</label> M. Elliott, "Sovereignty, Primacy and the Common Law Constitution: What has EU Membership<lb/> Taught Us?" Public Law for Everyone (https://publiclawforeveryone.com/2018/07/20/sovereignty-<lb/>primacy-and-the-common-law-constitution-what-has-eu-membership-taught-us/)(Accessed<lb/> 15<lb/> November 2018).<lb/> </bibl>
         <bibl><label>9</label> A. Young, Will Brexit change the UK constitution? Hansard Society Blog (7 August 2018)<lb/> https://www.hansardsociety.org.uk/blog/will-brexit-change-the-uk-constitution (Accessed 15 November<lb/> 2018).<lb/> </bibl>
-          
+
         <bibl><label>10</label> E.C. Page, "Their Word is Law: Parliamentary Counsel and Creative Policy Analysis" (2009) PL 790,<lb/> 791.<lb/> </bibl>
-          
+
           <bibl><label>11</label> Search performed on Westlaw UK (15 November 2018).<lb/> </bibl>
         <bibl><label>12</label> T. Daintith and A Page, The Executive in the Constitution: Structure, Autonomy and Internal Control<lb/> (Oxford: Oxford University Press, 1999) 254.<lb/> </bibl>
           <bibl><label>13</label> Human Rights Act 1998, s 19.<lb/> </bibl>
           <bibl><label>14</label> Human Rights Act 1998, s 4.<lb/> </bibl>
         <bibl><label>15</label> Daintith and Page, The Executive in the Constitution: Structure, Autonomy and Internal Control, 256.<lb/> </bibl>
-          
+
         <bibl><label>16</label> D. Greenberg, Laying Down the Law: A Discussion of the People, Processes, and Problems that Shape<lb/> Acts of Parliament (London: Sweet &amp; Maxwell, 2011) 83.<lb/> </bibl>
         <bibl><label>17</label> House of Commons Information Office, "The Clerk of the House: Factsheet G16" (2006),<lb/> https://www.parliament.uk/documents/commons-information-office/g16.pdf (Accessed 15 November<lb/> 2018).<lb/> </bibl>
         <bibl><label>18</label> Miller v Secretary of State [2017].<lb/> </bibl>
@@ -147,17 +147,17 @@
         <bibl><label>27</label> See, e.g., the oath for officers in Virginia: "I do solemnly swear (or affirm) that I will support the<lb/> Constitution of the United States, and the Constitution of the Commonwealth of Virginia, and that I will<lb/> faithfully and impartially discharge all the duties incumbent upon me as ____________________<lb/> according to the best of my ability, so help me God". Virginia Code, Title 49, § 49-1.<lb/> </bibl>
         <bibl><label>28</label> See, e.g., the oath for attorneys in the State of New York: "I do solemnly swear (or affirm) that I will<lb/> support the constitution of the United States, and the constitution of the State of New York, and that I<lb/> will faithfully discharge the duties of the office of [attorney and counselor-at-law], according to the best<lb/> of my ability". (Supreme Court of the State of New York, "Orientation to the Profession",<lb/> http://www.courts.state.ny.us/courts/ad2/forms/law%20guardian%20handbook/orientationtotheprofessi<lb/> onprogrammaterials.pdf (Accessed 15 November 2018).<lb/> </bibl>
         <bibl><label>29</label> See, e.g., the oath for police officers in Tulsa, Oklahoma: https://www.tulsapolice.org/join-tpd/oath-<lb/>of-office.aspx (Accessed 15 November 2018).<lb/> </bibl>
-          
+
         <bibl type="footnote"><label>30</label> Those such as police officers, who have law enforcement functions, may be considered back-end<lb/> constitutional actors: even if they do not possess the final word, they also have little influence on those<lb/> designing laws or constructing policies.<lb/> </bibl>
-          
+
         <bibl><label>31</label> Just as Alexis de Tocqueville said, "[s]carcely any political question arises in the United States that is<lb/> not resolved, sooner or later, into a judicial question" (A de Tocqueville, Democracy in America).<lb/> </bibl>
         <bibl><label>32</label> See, e.g., when Lord Neuberger, then president of the UK Supreme Court, declared, "[I]t may be said<lb/> with considerable force that we have no constitution as such at all, merely constitutional conventions,<lb/> and that it is as a consequence of this that we have parliamentary sovereignty" (Lord Neuberger, "The<lb/> British and Europe", Cambridge Freshfields Annual Lecture (12 Feb 2014), para 26<lb/> https://www.supremecourt.uk/docs/speech-140212.pdf)(Accessed 15 November 2018).<lb/> </bibl>
         <bibl><label>33</label> See, e.g., the Freedom House scores, which include measures on political rights and civil liberties. The<lb/> UK scores 94/100 on this indicator (https://freedomhouse.org/report/freedom-world/2018/united-<lb/>kingdom)(Accessed 15 November 2018).<lb/> </bibl>
         <bibl><label>34</label> However the UK courts have challenged this, most prominently in Thoburn v Sunderland City Council<lb/> [2002] EWHC 195 (Admin), where they articulated a number of "constitutional statutes" that can only<lb/> be repealed through explicit wording, rather through any type of implied repeal.<lb/> </bibl>
-          
+
         <bibl type="footnote"><label>35</label> Although, perhaps it could be argued that if the sovereign is the ultimate symbol of the state, then the<lb/> oaths are not necessarily to the sovereign, but to the present unwritten constitution.<lb/> </bibl>
-          
-        <bibl><label>36</label> As the Scottish Parliament notes: "Any Member who refuses to take the oath or the affirmation will be<lb/> unable to take part in any other proceedings of the Parliament and will not be paid any salary and<lb/> allowances until he or she has done so. 
+
+        <bibl><label>36</label> As the Scottish Parliament notes: "Any Member who refuses to take the oath or the affirmation will be<lb/> unable to take part in any other proceedings of the Parliament and will not be paid any salary and<lb/> allowances until he or she has done so.
 If any Member has not taken the oath or affirmation within two<lb/> months of the day of their election they shall cease to be a Member of the Parliament (unless the<lb/> Parliament agrees to extend this period" (http
         ://www.parliament.scot/newsandmediacentre/99397.aspx)<lb/> (Accessed 15 November 2018).<lb/> </bibl>
         <bibl><label>37</label><lb/> UK<lb/> Parliament,<lb/> "Swearing<lb/> in<lb/> and<lb/> the<lb/> parliamentary<lb/> oath",<lb/> https://www.parliament.uk/about/how/elections-and-voting/swearingin/ (Accessed 15 November 2018).<lb/> </bibl>
@@ -167,7 +167,7 @@ If any Member has not taken the oath or affirmation within two<lb/> months of th
         <bibl><label>40</label> A.V. Dicey, The Law of the Constitution, edited by JWF Allison (Oxford: Oxford University Press,<lb/> 2013).<lb/> </bibl>
         <bibl><label>41</label> Miller v Secretary of State [2017].<lb/> </bibl>
         <bibl type="footnote"><label>42</label> Although, it should be noted that Private Members' Bills have at times had a significant impact, and<lb/> that there is also the relatively recent Backbench Business Committee, which has provided more time to<lb/> debates initiated by backbenchers.<lb/> </bibl>
-        
+
           <bibl><label>43</label> See, e.g., R (on the application of Evans) v Attorney General [2015] UKSC 21
 ; </bibl>
 <bibl>R (on the application<lb/> of UNISON) v Lord Chancellor [2017] UKSC 51.<lb/> </bibl>
@@ -175,7 +175,7 @@ If any Member has not taken the oath or affirmation within two<lb/> months of th
         <bibl><label>45</label> R. Cornes, "Reforming the House of Lords: the Role of the Law Lords" (1999), UCL Constitution<lb/> Unit, pp 6-9.<lb/> </bibl>
         <bibl type="footnote"><label>46</label> However after retirement former UKSC justices can go back and sit in the Lords.<lb/> </bibl>
           <bibl type="footnote"><label>47</label> Lord Hailsham coined this phrase in 1976, whilst arguing for a written constitution.<lb/> </bibl>
-          
+
         <bibl><label>48</label> S. Katilowski, "Rubber Stamp or Cockpit? The Impact of Parliament on Government Legislation"<lb/> (2008) 61(4) Parliamentary Affairs 694.<lb/> </bibl>
         <bibl><label>49</label> G. Brady, "Parliament is weak and ineffective -it needs to change" The Spectator (20 March 2015),<lb/> https://blogs.spectator.co.uk/2015/03/parliament-is-weak-and-ineffective-it-needs-to-change/ (Accessed<lb/> 15 November 2018).<lb/> </bibl>
         <bibl><label>50</label> J. Waldron, The Dignity of Legislation (Cambridge: Cambridge University Press, 1999) 2.<lb/> </bibl>
@@ -184,10 +184,10 @@ If any Member has not taken the oath or affirmation within two<lb/> months of th
         <bibl><label>53</label> Page, "Their Word is Law: Parliamentary Counsel and Creative Policy Analysis" (2009) PL 790, 791.<lb/> </bibl>
         <bibl><label>54</label> Page, "Their Word is Law: Parliamentary Counsel and Creative Policy Analysis" (2009) PL 790, 810.<lb/> </bibl>
         <bibl><label>55</label> C. Stefanou, "Drafters, Drafting and the Policy Process" in C Stefanou and H Xanthaki, Drafting<lb/> Legislation: A Modern Approach (Ashgate Publishing, 2008) 333.<lb/> </bibl>
-        <bibl><label>56</label> Daintith and Page, The Executive in the Constitution: Structure, Autonomy and Internal Control, 254.<lb/> 
+        <bibl><label>56</label> Daintith and Page, The Executive in the Constitution: Structure, Autonomy and Internal Control, 254.<lb/>
 They note especially values such as: non-retrospection, proper use of delegation and respect for the<lb/> liberties of the subject, amongst others.<lb/> </bibl>
           <bibl><label>57</label> Daintith and Page, The Executive in the Constitution: Structure, Autonomy and Internal Control, 154.<lb/> </bibl>
-          
+
         <bibl><label>58</label> Interview with S. Laws (London: 19 February 2018).<lb/> </bibl>
         <bibl><label>59</label> Interview with D. Greenberg (London: 20 February 2018).<lb/> </bibl>
         <bibl><label>60</label> Interview with L. Laurence Smyth (London: 19 February 2018).<lb/> </bibl>
@@ -195,12 +195,12 @@ They note especially values such as: non-retrospection, proper use of delegation
         <bibl><label>62</label> Interview with C. Stefanou (London: 20 February 2018).<lb/> </bibl>
         <bibl><label>63</label> Interview with M. Zander via telephone (28 February 2018).<lb/> </bibl>
         <bibl><label>64</label> Interview with H. Xanthaki (London: 20 February 2018).<lb/> </bibl>
-          
+
         <bibl><label>65</label> A. Bertlin, "What works best for the reader? A study on drafting and presenting legislation" The<lb/> Loophole<lb/> (May<lb/> 2014),<lb/> p<lb/> 27<lb/> https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/3269<lb/> 37/Loophole_-_2014-2__2014-05-09_-What_works_best_for_the_reader.pdf (Accessed 15 November<lb/> 2018).<lb/> </bibl>
         <bibl><label>66</label> Interview with H. Xanthaki (London: 20 February 2018).<lb/> </bibl>
         <bibl><label>67</label> T. Bingham, The Rule of Law (London: Penguin, 2010) 37.<lb/> </bibl>
         <bibl><label>68</label> Interview with M. Zander (28 February 2018).<lb/> </bibl>
-          
+
         <bibl><label>69</label> Interview with D. Greenberg (London: 20 February 2018).<lb/> </bibl>
         <bibl><label>70</label> Interview with S. Laws (London: 19 February 2018).<lb/> </bibl>
         <bibl><label>71</label> For more on the psychological aspects of statutory law, see: D. Feldman, "Legislation Which Bears<lb/> No Law" (2016) 37(3) Statute Law Review 212.<lb/> </bibl>
@@ -208,25 +208,25 @@ They note especially values such as: non-retrospection, proper use of delegation
         <bibl><label>73</label> Sir M. Jack, Erskine May's Parliamentary Practice: The Law, Privileges, Proceedings and Usage of<lb/> Parliament (24th Ed.)(London: LexisNexis, 2011) 526.<lb/> </bibl>
         <bibl><label>74</label> Miller v Secretary of State [2017].<lb/> </bibl>
         <bibl><label>75</label> Interview with L. Laurence Smyth (London: 19 February 2018).<lb/> </bibl>
-          
+
         <bibl type="footnote"><label>76</label> House of Commons Standing Orders accord private Members Bills thirteen plenary sittings a year,<lb/> all on Fridays.<lb/> </bibl>
-          
+
         <bibl><label>77</label> Interview with M. Zander (28 February 2018).<lb/> </bibl>
         <bibl><label>78</label> Interview with S. Salimi (London: 20 February 2018).<lb/> </bibl>
         <bibl><label>79</label> Interview with L. Laurence Smyth (London: 19 February 2018).<lb/> </bibl>
         <bibl><label>80</label> G. Orr, "Names without Frontiers" (2001) Statute Law Review 188, at 189. The titles he focused on<lb/> were: "A New Tax System", "More Jobs, Better Pay", and "Fair Access and Better Prices for All".<lb/> </bibl>
-        <bibl><label>81</label> D. Feldman, "Legislation Which Bears No Law" (2016) 37(3) 
+        <bibl><label>81</label> D. Feldman, "Legislation Which Bears No Law" (2016) 37(3)
 Statute Law Review 212, 224.<lb/> </bibl>
-          
+
           <bibl><label>82</label> Feldman, "Legislation Which Bears No Law" (2016) 37(3) Statute Law Review 212, 224.<lb/> </bibl>
           <bibl><label>83</label> D. Greenberg, "Dangerous trends in modern legislation" (2015) PL 96, 110.<lb/> </bibl>
           <bibl><label>84</label> Interview with D. Greenberg (London: 20 February 2018).<lb/> </bibl>
-          
+
           <bibl><label>85</label> Interview with S. Laws (London: 19 February 2018).<lb/> </bibl>
           <bibl><label>86</label><lb/> Kuczborski<lb/> v<lb/> Queensland<lb/> [2014]<lb/> HCA<lb/> 46<lb/> (14<lb/> November<lb/> 2014),<lb/> http://austlii.edu.au/au/cases/cth/HCA/2014/46.html, para 14 (Accessed 15 November 2018).<lb/> </bibl>
           <bibl><label>87</label> Kuczborski v Queensland [2014] HCA 67.<lb/> </bibl>
           <bibl type="footnote"><label>88 </label>In this way the EU (Withdrawal) Act is similar to the Abolition of Domestic Rates etc. (Scotland) Act<lb/> 1987, which accomplished its title in Section 1, and then went about implementing the poll tax.<lb/> </bibl>
-          
+
           <bibl><label>89</label> 570 U.S. 744 (2013).<lb/> </bibl>
           <bibl><label>90</label> 576 U.S. ____ (2015).<lb/> </bibl>
           <bibl><label>91</label> __________, "SCOTUS Short Title Turmoil: Time for a Congressional Bill Naming Authority" (2013)<lb/> 32(1) Yale Law &amp; Policy Review Inter Alia 25.<lb/> </bibl>
@@ -234,21 +234,21 @@ Statute Law Review 212, 224.<lb/> </bibl>
           <bibl><label>93</label> _________, "Personalised Bills as Commemorations: A Problem for House Rules" (2013) 46(9)<lb/> Connecticut Law Review Online 11.<lb/> </bibl>
           <bibl><label>94</label> Transcript of Oral Argument at 47-48, Shelby Cnty., 133 S. Ct. 2612 (No. 12-96), available at<lb/> http://www.supremecourt.gov/oral_arguments/argument_transcripts/12-96.pdf (Accessed 15 November<lb/> 2018).<lb/> </bibl>
           <bibl><label>95</label> Bertlin, "What works best for the reader? A study on drafting and presenting legislation" The Loophole<lb/> (May 2014), 27.<lb/> </bibl>
-          
+
           <bibl><label>96</label> Bowman, "Why is there a Parliamentary Counsel Office?" (2005) 26(2) Statute Law Review 69, 73.<lb/> He did add, "Of course, it is not enough to merely destroy bad ideas. The capacity to contribute fresh and<lb/> constructive ideas is also important".<lb/> </bibl>
           <bibl><label>97</label> Greenberg, "Dangerous trends in modern legislation" (2015) PL 96, 103.<lb/> </bibl>
           <bibl><label>98</label> Interview with D. Greenberg (London: 20 February 2018).<lb/> </bibl>
           <bibl><label>99</label> Interview with L. Laurence Smyth (London: 19 February 2018).<lb/> </bibl>
-          
+
           <bibl><label>100</label> Greenberg, "Dangerous trends in modern legislation" (2015) PL 96, 103.<lb/> </bibl>
           <bibl><label>101</label> Interview with H. Xanthaki (London: 20 February 2018).<lb/> </bibl>
           <bibl><label>102</label> Interview with C. Stefanou (London: 20 February 2018).<lb/> </bibl>
           <bibl><label>103</label> Interview with M. Zander (28 February 2018).<lb/> </bibl>
           <bibl><label>104</label> Interview with S. Laws (London: 19 February 2018).<lb/> </bibl>
-          
+
           <bibl><label>105</label> P. Sales, "The Contribution of Legislative Drafting to the Rule of Law" (2018) 77(3) C.L.J. 630; </bibl><bibl>R.<lb/> Mulheron, "Legislating Dangerously: Bad Samaritans, Good Society, and the Heroism Act 2015" (2017)<lb/> 80(1) Modern Law Review 88.<lb/> </bibl>
           <bibl><label>106</label> Interview with D. Greenberg (London: 20 February 2018). Mr Greenberg further noted, "On a very,<lb/> very good day, maybe as much as 1% of what you draft will be considered carefully by anybody else".<lb/> </bibl>
-          
+
           <bibl><label>107</label> J.A.G. Griffith, The Politics of the Judiciary (5th ed)(London: Fontana Press, 1997) 342.<lb/> </bibl>
           <bibl><label>108</label> Interview with M. Zander (28 February 2018).</bibl>
         </listBibl>

@@ -37,7 +37,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:01:17.275921Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">0.8.2-70-gc35e48387</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -82,45 +82,45 @@
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
         <listBibl>
         <bibl><label>2</label> A Constituição brasileira de 1988, em seu artigo 4°, intitulado Dos Princípios Fundamentais, afirma o seguinte:<lb/> "A República Federativa do Brasil rege--se nas suas relações internacionais pelos seguintes princípios: (i)<lb/> independência nacional; (ii) prevalência dos direitos humanos; (iii) auto--determinação dos povos; (iv) não--<lb/>intervenção."A dificuldade aqui é conciliarmos adequadamente a exigência pela prevalência dos direitos<lb/> humanos, com a exigência da não--intervenção.</bibl>
-<bibl>E 
+<bibl>E
         esta dificuldade se reflete também, do modo bem mais<lb/> amplo, no texto da Carta das Nações Unidas, de junho de 1945, que prescreve tanto o respeito aos direitos<lb/> humanos quanto o princípio da não--intervenção na soberania dos Estados. Cf. The Charter of the United<lb/> Nations: "Chapter 1, article 2, §7": Nothing contained in the present Charter shall authorize the United Nations<lb/> to intervene in matters which are essentially within the domestic jurisdiction of any state or shall require the<lb/> Members to submit such matters to settlement under the present Charter;
-but this principle shall not prejudice<lb/> the application of enforcement measures 
-        under Chapter VII.</bibl> 
+but this principle shall not prejudice<lb/> the application of enforcement measures
+        under Chapter VII.</bibl>
           <bibl>O capítulo VII, no entanto, tem como rubrica<lb/> "Action with Respect to Threats to the Peace, Breaches of The Peace, and Acts of Aggression", mas não<lb/> menciona "razões humanitárias" como uma justificativa para a violação da soberania de um Estado nacional. É<lb/> justamente em torno do texto "Chapter 1, article 2, §7" da Carta das Nações Unidas que se articula o debate<lb/> em torno da legalidade das intervenções humanitárias.<lb/> </bibl>
-          
+
         <bibl><label>3</label> Citado em W. Thomas, The Ethics of Destruction: Norms and Force in International Relations, 2001, p. 5. Cf.<lb/> também Morgenthau, NY, Alfred A. Knopf, 1973, p. 10: Politics Among Nations: The Struggle for Power and<lb/> Peace: "... the state has no right to let its moral disapprobation get in way of successful political action, itself<lb/> inspired by the moral principle of national survival."<lb/> </bibl>
         <bibl><label>4</label> Cf. e.g. Chris Brown, Understanding International Relations, London, MacMillan, 1997, p.
-        24.</bibl> 
+        24.</bibl>
           <bibl>Cf. tabém Miles<lb/> Kahler: "Inventing international relations: international relations theory theory after 1945", in (orgs.) M. W.<lb/> Doyle &amp; G. J. Ikenberry, New Thinking in International Theory, Westview Press, 1997, p. 20--53.<lb/> </bibl>
         <bibl><label>5</label> Ver e.g. D. Long &amp; P. Wilson: Thinkers of the Twenty Years' Crisis, Oxford, Clarendon Press, 1995.<lb/> </bibl>
         <bibl><label>6</label> Cf. e.g. Georg Cavallar, "Kant's Society of Nations: Free Federation or World Republic?" in Journal of the<lb/> History of Philosophy, 1994, vol. 32, p. 461--482; </bibl>
 <bibl>Kevin Dodson: Kant's Perpetual Peace: Universal Civil Society<lb/> or League of States? in: Southwest Philosophical Studies, vol. 15, p. 1--9, 1993.<lb/> </bibl>
-        <bibl><label>77</label><lb/> Para Kant, certos interesses são bons tendo em vista tais e tais fins, mas apenas o "interesse" que temos na<lb/> moralidade seria absolutamente e em si mesmo bom. O interesse na moralidade seria, assim, o "interesse<lb/> supremo" (das höchste Interesse), ao qual todos os outros interesses deveriam estar subordinados. Esta tese é<lb/> claramente formulada em uma passagem da Kritik der Urteilskraft Crítica do Juízo (1790) (vol. 8, p. 286): "Aber,<lb/> ungeachtet aller dieser Verschiedenheit zwischen dem Angenehmen und Guten, kommen beide doch darin<lb/> überein: daß sie jederzeit mit einem Interesse an ihrem Gegenstand verbunden sind, nicht allein das Angenehme<lb/> ( §3), und das mittelbar Gute (das Nützliche), welches als Mittel zu irgend einer Annehmlichkeit gefällt, sondern<lb/> auch das schlechterdings und in aller Absicht Gute, nämlich das moralische, welches das höchste Interesse bei<lb/> sich führt. Denn das Gute ist das Objekt des Willens (d.i. eines durch Vernunft bestimmten<lb/> Begehrungsvemögens). Etwas aber wollen, und an dem Dasein desselben ein Wohlgefallen haben, d.i. daran ein<lb/> Interesse nehmen, ist identisch." (Kritik der Urteilskraft, Einleitung, §4).</bibl> 
-          <bibl>Cf. também Kritik der praktischen<lb/> Vernunft (vol. 6, p. 200--201): "Aus dem Begriffe einer Triebfeder entspringt der eines Interesse; welches niemals<lb/> einem Wesen, als was Vernunft hat, beigelegt wird, und eine Triebfeder des Willens bedeutet, so fern sie durch<lb/> Vernunft vorgestellt wird. Da das Gesetz selbst in einem moralisch--guten Willen die Triebfeder sein muß, so ist<lb/> das moralische Interesse ein reines sinnenfreies Interesse der bloßen praktischen Vernunft. Auf dem Begriffe<lb/> eines Interesse gründet sich auch der einer Maxime. Diese ist also nur alsdenn moralisch echt, wenn sie auf dem<lb/> bloßen Interesse, das man an der Befolgung des Gesetzes nimmt, beruht."</bibl> 
-          <bibl>Cf. também Grundlegung zur<lb/> Metaphysik der Sitten, (vol. 6, p. 28): "Alles moralische so genannte Interesse besteht lediglich in der Achtung<lb/> fürs Gesetz."<lb/></bibl> 
-          
+        <bibl><label>77</label><lb/> Para Kant, certos interesses são bons tendo em vista tais e tais fins, mas apenas o "interesse" que temos na<lb/> moralidade seria absolutamente e em si mesmo bom. O interesse na moralidade seria, assim, o "interesse<lb/> supremo" (das höchste Interesse), ao qual todos os outros interesses deveriam estar subordinados. Esta tese é<lb/> claramente formulada em uma passagem da Kritik der Urteilskraft Crítica do Juízo (1790) (vol. 8, p. 286): "Aber,<lb/> ungeachtet aller dieser Verschiedenheit zwischen dem Angenehmen und Guten, kommen beide doch darin<lb/> überein: daß sie jederzeit mit einem Interesse an ihrem Gegenstand verbunden sind, nicht allein das Angenehme<lb/> ( §3), und das mittelbar Gute (das Nützliche), welches als Mittel zu irgend einer Annehmlichkeit gefällt, sondern<lb/> auch das schlechterdings und in aller Absicht Gute, nämlich das moralische, welches das höchste Interesse bei<lb/> sich führt. Denn das Gute ist das Objekt des Willens (d.i. eines durch Vernunft bestimmten<lb/> Begehrungsvemögens). Etwas aber wollen, und an dem Dasein desselben ein Wohlgefallen haben, d.i. daran ein<lb/> Interesse nehmen, ist identisch." (Kritik der Urteilskraft, Einleitung, §4).</bibl>
+          <bibl>Cf. também Kritik der praktischen<lb/> Vernunft (vol. 6, p. 200--201): "Aus dem Begriffe einer Triebfeder entspringt der eines Interesse; welches niemals<lb/> einem Wesen, als was Vernunft hat, beigelegt wird, und eine Triebfeder des Willens bedeutet, so fern sie durch<lb/> Vernunft vorgestellt wird. Da das Gesetz selbst in einem moralisch--guten Willen die Triebfeder sein muß, so ist<lb/> das moralische Interesse ein reines sinnenfreies Interesse der bloßen praktischen Vernunft. Auf dem Begriffe<lb/> eines Interesse gründet sich auch der einer Maxime. Diese ist also nur alsdenn moralisch echt, wenn sie auf dem<lb/> bloßen Interesse, das man an der Befolgung des Gesetzes nimmt, beruht."</bibl>
+          <bibl>Cf. também Grundlegung zur<lb/> Metaphysik der Sitten, (vol. 6, p. 28): "Alles moralische so genannte Interesse besteht lediglich in der Achtung<lb/> fürs Gesetz."<lb/></bibl>
+
           <bibl type="footnote"><label>8</label> Há alguma discussão quanto à interpretação desta passagem. Bull e Beitz negam que a interpretação<lb/> tradicional, à qual me referi acima, seja a correta. Também Locke, no Second Treatise of Government, sustenta<lb/> que, entre Estados, e entre cidadãos de Estados diferentes, prevalece o estado de natureza.<lb/> </bibl>
-          
+
         <bibl><label>9</label> Cf. e.g. depoimento de Gauthier na coletânea de entrevistas Key Philosophers in Conversation, London,<lb/> Routledge, 1999, p. 133--134. </bibl>
 <bibl>A idéia segundo a qual Estados procuram manter sua reputação na comunicade<lb/> internacional é examinada e.g. por Cristine Bicchieri: "Reputation", in Rationality and Coordination, Cambridge,<lb/> Cambridge University Press, p. 188--192. </bibl>
 <bibl>Ver também John Charvet, "Contractarianism and international politcal<lb/> theory", in D. Boucher and P. Kelly (orgs.), The Social Contract from Hobbes to Rawls, 1998, p. 128.<lb/> </bibl>
         <bibl><label>10</label><lb/> Cf. Morals by Agreement, p. 182--183: "A choice is rational if and only if it maximizes the actor's expected<lb/> utility. We identify rationality with utility--maximization at the level of dispositions to choose. A disposition is<lb/> rational if and only if an actor holding it can expect his choices to yield no less utility than the choices he would<lb/> make were he to hold any alternative disposition."<lb/> </bibl>
         <bibl><label>11</label><lb/> Cf. Peter Stemmer, Handeln zugunsten anderer: Eine moralphilosophische Untersuchung, 2000, p. 73ss.<lb/></bibl>
           <bibl><label>12</label><lb/> Lord Palmerston: "The balance of power" (1864), citado por Evans Luard: Basic Texts in International<lb/> Relations, MacMillan, 1993, p. 444, grifo meu.<lb/> </bibl>
-          
-        <bibl><label>13</label><lb/> Cf. Hedely Bull: "The balance of power and international order", in The Anarchical Society: A Study of Order in<lb/> World Politics, 1977, Columbia University Press, p. 101--126.</bibl> <bibl>Ver também Martin Wight: "The balance of<lb/> power", in Power Politics, Leicester University Press, 1995, p. 168--185.<lb/></bibl> 
-          
-         Referências Bibliográficas:<lb/> 
-          
+
+        <bibl><label>13</label><lb/> Cf. Hedely Bull: "The balance of power and international order", in The Anarchical Society: A Study of Order in<lb/> World Politics, 1977, Columbia University Press, p. 101--126.</bibl> <bibl>Ver também Martin Wight: "The balance of<lb/> power", in Power Politics, Leicester University Press, 1995, p. 168--185.<lb/></bibl>
+
+         Referências Bibliográficas:<lb/>
+
         <bibl><label>1</label>. W. Thomas. The Ethics of Destruction: Norms and Force in International Relations.<lb/> Ithaca: Cornell University Press,2001.<lb/> </bibl>
         <bibl><label>2</label>. Morgenthau, NY, Alfred A. Knopf. Politics Among Nations: The Struggle for Power and<lb/> Peace. New York: Alfred A. Knopf, 1973.<lb/> </bibl>
         <bibl><label>3</label>. BROWN, Chris. Understanding International Relations. London: MacMillan, 1997.<lb/> </bibl>
-          
-        <bibl><label>14</label><lb/> Cf. e.g. Morals by Agreement, p. 4: "Our claim is that in certain situations involving interaction with others, an<lb/> individual chooses rationally only in so far as he constrains his pursuit of his own interest or advantage to<lb/> conform principles expressing the impartiality characteristic of morality."<lb/></bibl> 
+
+        <bibl><label>14</label><lb/> Cf. e.g. Morals by Agreement, p. 4: "Our claim is that in certain situations involving interaction with others, an<lb/> individual chooses rationally only in so far as he constrains his pursuit of his own interest or advantage to<lb/> conform principles expressing the impartiality characteristic of morality."<lb/></bibl>
           <bibl><label>15</label><lb/> Um exame do problema das intevenções humanitárias a partir de uma perspectiva contratualista tem ainda a<lb/> vantagem, ao meu ver, de tornar menos relevante a constatação de que algumas agências de ajuda<lb/> humanitária terem se tornado nos últimos anos um negócio bastante lucrativo. (Cf. e.g. Bob Cliford:<lb/> "Merchants of morality", in Foreign Policy, March / April, 2002). </bibl>
 <bibl>Com relação a problemas deste tipo, cf. e.g. a<lb/> afirmação de Andreas Hasenclever: Die Macht der Moral in der internationalen Politik: Militärische<lb/> Interventionen westlicher Staaten in Somalia, Ruanda und Bosnien--Herzegowina, Frankfurt, Campus Verlag,<lb/> 2000, p. 209: "Für die Medien haben humanitäre Krisensituationen einen Nachrichtenwert, für private<lb/> Organisationen sind sie paradoxienweise die Existenzgrunlage und Abgeordnete dürfen hoffen, dass ihre<lb/> Wähler und Wählerinen den Einsatz für Menschen in Not honorieren. Alle drei Akteursgruppen müssen mit<lb/> anderen Worten nicht altuistisch handeln, sondern können durchaus ihr eigenes Fortkommen im Auge haben."<lb/> </bibl>
-          
-        <bibl><label>4</label>. KAHLER, Miles. "Inventing international relations: international relations theory theory<lb/> after 1945". In (orgs.) 
+
+        <bibl><label>4</label>. KAHLER, Miles. "Inventing international relations: international relations theory theory<lb/> after 1945". In (orgs.)
 M. W. Doyle &amp; G. J. Ikenberry, New Thinking in International Theory.<lb/> Westview Press, 1997.<lb/> </bibl>
         <bibl><label>5</label>. D. Long &amp; P. Wilson. Thinkers of the Twenty Years' Crisis. Oxford: Clarendon Press, 1995.<lb/> </bibl>
         <bibl><label>6</label>. Georg Cavallar, "Kant's Society of Nations: Free Federation or World Republic?". in Journal<lb/> of the History of Philosophy, vol. 32, 1994, p. 461--482.<lb/> </bibl>

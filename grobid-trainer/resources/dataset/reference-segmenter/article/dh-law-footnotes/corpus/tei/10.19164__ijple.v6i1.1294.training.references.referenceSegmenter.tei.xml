@@ -72,7 +72,7 @@
       <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-18T09:19:08.666061Z" type="extractor">
         <label>GROBID</label>
         <label type="model">reference-segmenter</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">fd543f4</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
@@ -131,26 +131,26 @@
         <bibl><label>16</label> Frances Gibb, "Administrative Justice and Tribunals Service comes out of the shadows"<lb/> https://www.thetimes.co.uk/article/administrative-justice-and-tribunals-service-comes-out-of-the-<lb/>shadows-bqfpjjzsv5p accessed 25th July 2022<lb/> </bibl>
         <bibl><label>17</label> Andrew Marr, "The Making of Modern Britain" (Macmillan 2010)<lb/> </bibl>
         <bibl><label>18</label> Harrison, "The Rise, Fall and Rise of Political Consensus in Britain since 1940" (Vol. 84, No. 274 April<lb/> 1999) pp. 301-324<lb/> </bibl>
-        <bibl><label>19</label> There are numerous indicators of this cross-party appreciation for PLE including the All-Party<lb/> Parliamentary Group on PLE and Pro Bono, which has been chaired by a Conservative MP in successive<lb/> Parliamentary sessions: https://publications.parliament.uk/pa/cm/cmallparty/220722/public-legal-<lb/>education-and-pro-bono.htm accessed 25th July 2022<lb/></bibl> 
+        <bibl><label>19</label> There are numerous indicators of this cross-party appreciation for PLE including the All-Party<lb/> Parliamentary Group on PLE and Pro Bono, which has been chaired by a Conservative MP in successive<lb/> Parliamentary sessions: https://publications.parliament.uk/pa/cm/cmallparty/220722/public-legal-<lb/>education-and-pro-bono.htm accessed 25th July 2022<lb/></bibl>
           <bibl><label>20</label> Firearms (Amendment) Act 1997<lb/> </bibl>
         <bibl><label>21</label> Wintersteiger, "Legal Needs, Legal Capability and the Role of Public Legal Education A Report by Law<lb/> for Life: the Foundation for Public Legal Education" (Law for Life 2015)<lb/> https://www.lawforlife.org.uk/wp-content/uploads/Legal-needs-Legal-capability-and-the-role-of-Public-<lb/>Legal-Education.pdf accessed 25 th July 2022<lb/> </bibl>
 
         <bibl><label>22</label> PLEAS Taskforce Report cited above at footnote 2<lb/></bibl>
         <bibl><label>23</label> UNGA, Res 66/137 Declaration on Human Rights Education and Training (19 December 2011)<lb/> </bibl>
-        <bibl><label>24</label> Council of Europe, Recommendation CM/Rec(2010)7 of the Committee of Ministers to member states<lb/> on the Council of Europe Charter on Education for Democratic Citizenship and Human Rights Education<lb/></bibl> 
-          
+        <bibl><label>24</label> Council of Europe, Recommendation CM/Rec(2010)7 of the Committee of Ministers to member states<lb/> on the Council of Europe Charter on Education for Democratic Citizenship and Human Rights Education<lb/></bibl>
+
           <bibl type="footnote"><label>25</label> Searches for these instruments in Hansard suggest that the Charter and Declaration have never been<lb/> referred to in proceedings of the Commons or the Lords.<lb/> </bibl>
-        
-          <bibl><label>26</label> HC Deb 15 May 2018, vol 641 col 80WH<lb/></bibl> 
+
+          <bibl><label>26</label> HC Deb 15 May 2018, vol 641 col 80WH<lb/></bibl>
           <bibl><label>27</label> Department for Education, "Promoting fundamental British values as part of SMSC in schools<lb/> Departmental advice for maintained schools" (November 2014)<lb/> https://www.gov.uk/government/publications/promoting-fundamental-british-values-through-smsc<lb/> accessed 25 th July 2022 pg 4<lb/> </bibl>
-        <bibl><label>28</label> Hugh Starkey "Human rights, cosmopolitanism and utopias: implications for citizenship education"<lb/> (2012) Cambridge Journal of Education<lb/></bibl> 
-          <bibl><label>29</label> UK Government, "New Panel Launched To Drive Public Legal Education"<lb/> https://www.gov.uk/government/news/new-panel-launched-to-drive-legal-education<lb/></bibl> 
-          
+        <bibl><label>28</label> Hugh Starkey "Human rights, cosmopolitanism and utopias: implications for citizenship education"<lb/> (2012) Cambridge Journal of Education<lb/></bibl>
+          <bibl><label>29</label> UK Government, "New Panel Launched To Drive Public Legal Education"<lb/> https://www.gov.uk/government/news/new-panel-launched-to-drive-legal-education<lb/></bibl>
+
     <bibl type="footnote"><label>30</label> Members included Young Citizens, Law for Life, the Law Society, the Bar Council, Inns of Court, the<lb/> Bingham Centre for the Rule of Law, the Magistrates' Association, the Legal Services Board, the National<lb/> Justice Museum and others.<lb/> </bibl>
-          
-        <bibl><label>31</label> The Solicitor General's Public Legal Education Committee, "10 Year Vision for PLE"<lb/> https://www.lawworks.org.uk/sites/default/files/files/10YearVisionForPLE-web.pdf accessed 25th July<lb/> 2022<lb/></bibl> 
+
+        <bibl><label>31</label> The Solicitor General's Public Legal Education Committee, "10 Year Vision for PLE"<lb/> https://www.lawworks.org.uk/sites/default/files/files/10YearVisionForPLE-web.pdf accessed 25th July<lb/> 2022<lb/></bibl>
           <bibl><label>32</label> Attorney General's Office, "Press release Our vision for legal education' Solicitor General Robert<lb/> Buckland QC MP launches a new PLE vision statement" (October 2018)<lb/> </bibl>
-        <bibl><label>33</label> Attorney General's Office, "AGO Business Plan 2020-2021"<lb/> (https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/9061<lb/> 
+        <bibl><label>33</label> Attorney General's Office, "AGO Business Plan 2020-2021"<lb/> (https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/9061<lb/>
         62/2020-21_AGO_Business_Plan.pdf accessed 25th July 2022<lb/></bibl> <bibl><label>34</label> The Advisory Group for Citizenship, "Education for citizenship<lb/> and the teaching of democracy in schools: Final report of the Advisory Group on Citizenship"<lb/> (Qualifications and Curriculum Authority 1998) https://dera.ioe.ac.uk/4385/1/crickreport1998.pdf<lb/> accessed 25th July 2022<lb/> </bibl>
         <bibl><label>35</label> Council of Europe, "Knowledge for Critical Understanding, Education for Democratic Citizenship"<lb/> Figure 20A. Knowledge and critical understanding of politics, law and human rights<lb/> </bibl>
         <bibl><label>36</label> Commons Library, "House of Commons Briefing Paper Number 06798: The school curriculum in<lb/> England" (26 March 2021) pg 5 para 1.3<lb/> https://researchbriefings.files.parliament.uk/documents/SN06798/SN06798.pdf<lb/> </bibl>
@@ -161,19 +161,19 @@
         <bibl><label>41</label> R (Miller and others) v Prime Minister 2019 UKSC 41<lb/> </bibl>
         <bibl><label>42</label> The Bingham Centre, "The Article 50 'Brexit' Appeal: The Rule of Law After Miller"<lb/> https://youtu.be/F1CKnGRSSvA?t=3467 accessed at 25 th July 2022<lb/> </bibl>
         <bibl><label>43</label> YouGov, "By 49% to 30%, Britons agree with the Supreme Court's ruling that proroguing Parliament<lb/> was unlawful" https://yougov.co.uk/topics/politics/articles-reports/2019/09/24/49-30-britons-agree-<lb/>supreme-courts-ruling-prorogui accessed 25th July 2022<lb/> </bibl>
-        <bibl><label>44</label> The Media Leader, "Nielsen confirms £164 million government ad spend for 2020" https://the-media-<lb/>leader.com/nielsen-confirms-164-million-government-ad-spend-for-2020/ accessed 25th July 2022<lb/></bibl> 
+        <bibl><label>44</label> The Media Leader, "Nielsen confirms £164 million government ad spend for 2020" https://the-media-<lb/>leader.com/nielsen-confirms-164-million-government-ad-spend-for-2020/ accessed 25th July 2022<lb/></bibl>
           <bibl><label>45</label> Cabinet Office, "Why the Government Believes That Voting To Remain In The European Union Is The<lb/> Best Decision For The UK"Accessed 25 th July 2022<lb/> https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/51506<lb/>
-        8/why-the-government-believes-that-voting-to-remain-in-the-european-union-is-the-best-decision-for-<lb/>the-uk.pdf<lb/></bibl> 
-          <bibl><label>46</label> Conservative and Unionist Party, "Get Brexit Done: Unleash Britain's Potential The Conservative and<lb/> Unionist Party Manifesto 2019" Accessed 25 th July 2022 pg 48 https://assets-global.website-<lb/>files.com/5da42e2cae7ebd3f8bde353c/5dda924905da587992a064ba_Conservative%202019%20Manifesto.p<lb/> df<lb/></bibl> 
+        8/why-the-government-believes-that-voting-to-remain-in-the-european-union-is-the-best-decision-for-<lb/>the-uk.pdf<lb/></bibl>
+          <bibl><label>46</label> Conservative and Unionist Party, "Get Brexit Done: Unleash Britain's Potential The Conservative and<lb/> Unionist Party Manifesto 2019" Accessed 25 th July 2022 pg 48 https://assets-global.website-<lb/>files.com/5da42e2cae7ebd3f8bde353c/5dda924905da587992a064ba_Conservative%202019%20Manifesto.p<lb/> df<lb/></bibl>
           <bibl><label>47</label> Open Democracy, "This Tory manifesto is chilling -liberals must vote tactically to protect democracy"<lb/> https://www.opendemocracy.net/en/opendemocracyuk/tory-manifesto-chilling-liberals-must-vote-<lb/>tactically-protect-democracy/ Accessed 25 th July 2022<lb/> </bibl>
         <bibl><label>48</label> Aitchinson, 'This Tory manifesto is chilling -liberals must vote tactically to protect democracy'<lb/></bibl> <bibl><label>49</label> The Independent Human Rights Act Review available at:<lb/> https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/10405<lb/> 25/ihrar-final-report.pdf<lb/> </bibl>
-        <bibl><label>50</label> Ministry of Justice, "Human Rights Act Reform: A Modern Bill Of Rights A consultation to reform the<lb/> Human Rights Act 1998" (2019)<lb/> https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/10404<lb/> 
-        09/human-rights-reform-consultation.pdf Accessed 25 th July 2022<lb/></bibl> 
+        <bibl><label>50</label> Ministry of Justice, "Human Rights Act Reform: A Modern Bill Of Rights A consultation to reform the<lb/> Human Rights Act 1998" (2019)<lb/> https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/10404<lb/>
+        09/human-rights-reform-consultation.pdf Accessed 25 th July 2022<lb/></bibl>
           <bibl><label>51</label> UCL, "The Human Rights Act-Reviewed" (2022) https://www.youtube.com/watch?v=uKe10pYbQXA<lb/> Accessed 25 th July 2022<lb/> </bibl>
         <bibl><label>52</label> M A Olatokun, "Consult beyond the usual suspects to renew the constitution" Times Red Box<lb/></bibl> <bibl><label>53</label>
 Alan Renwick, "People want politicians to act with integrity, says citizens' assembly" (UCL<lb/> Constitution Unit) https://www.ucl.ac.uk/constitution-unit/news/2022/jan/people-want-politicians-act-<lb/>integrity-says-citizens-assembly Accessed 25 th July 2022<lb/> </bibl>
-        <bibl><label>54</label> Wendy Williams, "Windrush Lessons Learned Review"<lb/> https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/87402<lb/> 
-        2/6.5577_HO_Windrush_Lessons_Learned_Review_WEB_v2.pdf Accessed 25 th July 2022<lb/></bibl> 
+        <bibl><label>54</label> Wendy Williams, "Windrush Lessons Learned Review"<lb/> https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/87402<lb/>
+        2/6.5577_HO_Windrush_Lessons_Learned_Review_WEB_v2.pdf Accessed 25 th July 2022<lb/></bibl>
           <bibl><label>55</label> Wintersteiger et al, "Effectiveness of Public Legal Education Initiatives A literature review" (2021)<lb/> https://legalservicesboard.org.uk/wp-content/uploads/2021/02/PLE-systematic-review-report-Feb-<lb/>2021.pdf Accessed 25th July 2022<lb/> </bibl>
         <bibl><label>56</label> UNESCO, "Strengthening the rule of law through education: a guide for policymakers" (2018)<lb/> https://unesdoc.unesco.org/ark:/48223/pf0000366771 Accessed 25/7/2022</bibl>
         </listBibl>

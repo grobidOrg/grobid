@@ -69,7 +69,7 @@
         <label>GROBID</label>
         <label type="variant-id">grobid.training.references.referenceSegmenter</label>
         <label type="revision">7272991</label>
-        <label type="flavor">article/dh-law-footnotes</label>
+        <label type="flavor">article/footnotes-refs</label>
         <ref target="https://github.com/grobidOrg/grobid"/>
         <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
       </application>
@@ -147,7 +147,7 @@
         <bibl><label>2</label> Vgl Luhmann, Ausdifferenzierung des Rechts (1999), 273-307 (281 f).<lb/> </bibl>
         <bibl><label>3</label> Vgl Luhmann, Rechtssoziologie (1972), 239.<lb/> </bibl>
         <bibl><label>4</label> Vgl Flecker, Arbeit und Beschäftigung (2017), 9-44. </bibl>
-          <bibl>Böhle, Arbeit als Handeln, in Böhle/Voß/Wachtler (Hrsg), Handbuch<lb/> Arbeitssoziologie (2010), 151-176, bestimmte ‚Arbeit' als ein "instrumentell-gegenstandsbezogenes und planmäßig-<lb/>rationales Handeln". </bibl>  
+          <bibl>Böhle, Arbeit als Handeln, in Böhle/Voß/Wachtler (Hrsg), Handbuch<lb/> Arbeitssoziologie (2010), 151-176, bestimmte ‚Arbeit' als ein "instrumentell-gegenstandsbezogenes und planmäßig-<lb/>rationales Handeln". </bibl>
         <bibl><label>6</label> Vgl Krebs, Arbeit und Liebe (2002); </bibl>
 <bibl>Jahoda, Wieviel Arbeit braucht der Mensch? (1986); </bibl>
 <bibl>More-Hollerweger/Rameder,<lb/> Freiwilligenarbeit in Nonprofit-Organisationen, in Simsa et al (Hrsg), Handbuch der Nonprofit-Organisation (2013), 381-<lb/>399.<lb/> </bibl>
@@ -159,15 +159,15 @@
 <bibl><label>9</label> Mit der marktgeregelten Geldwirtschaft ist einsichtig geworden, dass Arbeit als Gut knapp ist, weil dafür bezahlt wer-<lb/>den muss. Vgl Luhmann, Die Wirtschaft der Gesellschaft 9 (2019), 217.<lb/> </bibl>
         <bibl><label>10</label> Polanyi, The Great Transformation (2001), 71 ff, hat Boden, Arbeit und Geld als fiktive Waren bezeichnet, weil es sich<lb/> dabei nicht um Güter handelt, die eigens für den Handel (Markt) produziert worden sind.<lb/> </bibl>
          <bibl><label>11</label> Vgl Art 1 der Charta der Grundrechte der Europäischen Union (GRC) und Art 1 Abs 1 des Grundgesetzes für die Bun-<lb/>desrepublik Deutschland (GG).<lb/> </bibl>
-          <bibl><label>12</label> Eine Norm ist dann rechtsverbindlich, dh sie gilt dann als Rechtsnorm, wenn sie ein Verhalten, das durch einen<lb/> Rechtsakt für gewollt erklärt worden ist, als gesollt setzt. Ein Rechtsakt ist eine Satzung oder Gewohnheit, die nach der<lb/> Verfassung als rechtsetzender Willensakt zu deuten ist. Die Frage nach der Effektivität und der Legitimität der Verfas-<lb/>sung ist für die Rechtsdogmatik eine Vorfrage, weshalb sie die Maßgeblichkeit der Verfassung, auf deren Grundlage Ge-<lb/>richte urteilen, voraussetzt. Diese Voraussetzung heißt ‚Grundnorm', weil sie die Rechtsgeltung der maßgebenden<lb/> Norm begründet. Mit der Grundnorm markiert die Rechtsdogmatik lediglich den Ort des Abbruchs ihres Verfahrens der<lb/> Begründung von Verbindlichkeit und hält derart das als Rechtsordnung normativ geschlossen operierende Rechtssys-<lb/>tem kognitiv offen. Im Wort ‚Sollen' drängt sich unentwegt eine Nachfrage nach der Fairness des Verfahrens zur Recht-<lb/>setzung und der Verantwortbarkeit von Sanktionen bei Zuwiderhandeln 
+          <bibl><label>12</label> Eine Norm ist dann rechtsverbindlich, dh sie gilt dann als Rechtsnorm, wenn sie ein Verhalten, das durch einen<lb/> Rechtsakt für gewollt erklärt worden ist, als gesollt setzt. Ein Rechtsakt ist eine Satzung oder Gewohnheit, die nach der<lb/> Verfassung als rechtsetzender Willensakt zu deuten ist. Die Frage nach der Effektivität und der Legitimität der Verfas-<lb/>sung ist für die Rechtsdogmatik eine Vorfrage, weshalb sie die Maßgeblichkeit der Verfassung, auf deren Grundlage Ge-<lb/>richte urteilen, voraussetzt. Diese Voraussetzung heißt ‚Grundnorm', weil sie die Rechtsgeltung der maßgebenden<lb/> Norm begründet. Mit der Grundnorm markiert die Rechtsdogmatik lediglich den Ort des Abbruchs ihres Verfahrens der<lb/> Begründung von Verbindlichkeit und hält derart das als Rechtsordnung normativ geschlossen operierende Rechtssys-<lb/>tem kognitiv offen. Im Wort ‚Sollen' drängt sich unentwegt eine Nachfrage nach der Fairness des Verfahrens zur Recht-<lb/>setzung und der Verantwortbarkeit von Sanktionen bei Zuwiderhandeln
         auf. Vgl Pačić, Bereinigte Rechtslogik (2022),<lb/> 58, 61-64.<lb/>
         </bibl>
-        <bibl><label>13</label> Vgl Pačić, Das Recht der Arbeit in Europa (2020), 87;</bibl> 
+        <bibl><label>13</label> Vgl Pačić, Das Recht der Arbeit in Europa (2020), 87;</bibl>
         <bibl>Gruber-Risak, Where do weg o from here? Trends in der Arbeits-<lb/>welt und ihre Auswirkungen auf das Arbeitsrecht, DRdA 2022, 105 (106).<lb/> </bibl>
         <bibl><label>14</label> Vgl Pfordten, Rechtsphilosophie (2013), 53-62.<lb/> </bibl>
         <bibl><label>15</label> Vgl Pačić, Arbeitsrecht à venir, JRP 2022, 79 (80).<lb/> </bibl>
-        <bibl><label>16</label> Arbeit betreffende Fragen lassen sich schwerlich von Fragen trennen, die die Wirtschaft betreffen, ebenso lassen sie<lb/> sich kaum von Fragen sozialer Sicherheit ablösen. Vgl für das Unionsrecht Schrammel/Windisch-Graetz, Europäisches<lb/> Arbeits-und Sozialrecht 2 (2018), 19 ff;</bibl> 
-        <bibl>Rebhahn, Principles of European Interpretation, EuZA 2017, 151;</bibl> 
+        <bibl><label>16</label> Arbeit betreffende Fragen lassen sich schwerlich von Fragen trennen, die die Wirtschaft betreffen, ebenso lassen sie<lb/> sich kaum von Fragen sozialer Sicherheit ablösen. Vgl für das Unionsrecht Schrammel/Windisch-Graetz, Europäisches<lb/> Arbeits-und Sozialrecht 2 (2018), 19 ff;</bibl>
+        <bibl>Rebhahn, Principles of European Interpretation, EuZA 2017, 151;</bibl>
         <bibl>Rebhahn, Zur<lb/> Methodenlehre des Unionsrechts, Sonderdruck aus Henssler et al (Hrsg), Moderne Arbeitswelt, FS Wank (2014); </bibl>
 <bibl>Kuras,<lb/> Europarecht quo vadis? in Kietaibl et al (Hrsg), GedS Rebhahn (2019), 287 ff; </bibl>
           <bibl>Herberger, Die Auslegung von Ausnahme-<lb/>vorschriften im Europäischen Arbeitsrecht, EuZA 2019, 310. </bibl>
@@ -183,15 +183,15 @@
 <bibl>Barnhewer, Der Firmentarifvertrag in Europa, Ein Vergleich<lb/> der Rechtslage in Deutschland, Großbritannien und Frankreich (2006). </bibl>
           <bibl>Die Zulässigkeit von Unternehmenstarifverträgen<lb/> allein sagt noch nichts über die Verteilung, nichts über die wachsende Bedeutung in verschiedenen Ländern und nichts<lb/> über die Gründe für diese Entwicklung aus. Vgl Rebhahn, ZEuP 2002, 446.<lb/> </bibl>
         <bibl><label>22</label> Während in Westeuropa, wie auch in Brasilien und Argentinien, Tarifverträge üblich sind, die große "Flächen" erfas-<lb/>sen, sind zB in Ungarn und Polen, den USA, Kanada, Australien, Japan und Südamerika eher "kleinflächigere" Tarifver-<lb/>träge üblich. Vgl Pittard/Butterworth, The rich panoply of sources of labour law: National, regional and international, in<lb/> Finkin/Mundlak (Hrsg), Comparative Labour Law (2015), 21 (33); </bibl>
-<bibl>Kovács et al, Labour law in transition: From a centrally<lb/> planned to a free market economy in Central and Eastern Europe, in Finkin/Mundlak, Comparative Labour Law, 403<lb/> 
+<bibl>Kovács et al, Labour law in transition: From a centrally<lb/> planned to a free market economy in Central and Eastern Europe, in Finkin/Mundlak, Comparative Labour Law, 403<lb/>
         (413).<lb/> </bibl>
         <bibl><label>23</label> Vgl Rebhahn, Flächen-oder Unternehmenstarifvertrag -eine rechtsvergleichende Umschau, NZA Blg 2011, 65; </bibl>
           <bibl>Nieto,<lb/> Spanisches Arbeitsrecht in den Jahren 2010 bis 2012, EuZA 2012, 570;</bibl>
           <bibl> Temming, Griechisches und deutsches Arbeits-<lb/>und Sozialrecht im Vergleich, EuZA 2014, 51 (57).<lb/> </bibl>
-        <bibl><label>24</label> Nach 
+        <bibl><label>24</label> Nach
 § 6 ArbVG gibt es insofern einen Vorrang der freiwilligen Berufsvereinigung, als bei Abschluss eines Kollektivver-<lb/>trages vonseiten einer solchen Vereinigung die gesetzliche Interessenvertretung hinsichtlich der Mitglieder der Berufs-<lb/>vereinigung für die Dauer der Geltung und für den Geltungsbereich des von der Berufsvereinigung abgeschlossenen<lb/> Kollektivvertrages die Kollektivvertragsfähigkeit verliert. Vgl Winkler, Relations between Employees and Employers at a<lb/> National Level, in Tomandl/Winkler, A Brief Outline of Austrian Labor Law (1990), 14 ff; </bibl>
           <bibl>Obwaller, Kollektivvertrag und<lb/> Betriebsvereinbarung, JAP 2022/2023, 121.<lb/> </bibl>
-        <bibl><label>25</label> Vgl Rebhahn, Die Zukunft der Kollektivautonomie in Europa, EuZA 2010, 62 (70).<lb/> </bibl>    
+        <bibl><label>25</label> Vgl Rebhahn, Die Zukunft der Kollektivautonomie in Europa, EuZA 2010, 62 (70).<lb/> </bibl>
         <bibl><label>26</label> Vgl Brameshuber, Das Recht auf Streik nach Art. 28 Grundrechtecharta, Ein Beitrag zur inhaltlichen Verortung, EuZA<lb/> 2016, 46. </bibl>
           <bibl>Die Verbreitung von Tarifverträgen wird von der Möglichkeit zum Arbeitskampf beeinflusst: Die mittel-und<lb/> osteuropäischen Staaten zeigen zwar, dass die weitreichende Zulässigkeit von Streiks nicht unbedingt zu hoher Tarifbin-<lb/>dung führt, doch kann die Ausgestaltung des Arbeitskampfes die Verhandlungsebene beeinflussen; so stützt die Offen-<lb/>heit für Boykottmaßnahmen in Schweden und Dänemark die Verbandstarife. Vgl Rebhahn, NZA-Beilage 2011, 65. </bibl>
           <bibl>In der<lb/> Lit wird zT befunden, dass die Konfrontation innerhalb der Arbeitsbeziehungen im Rückgang begriffen sei, ohne, dass<lb/> die Kooperation ansteige, was auf schwindenden Einfluss der Gewerkschaften oder auf vermehrte gesetzgeberische<lb/> Aktivität hinweisen könnte. Vgl Rebhahn, EuZA 2010, 80; </bibl><bibl>Le Friant, Kollektivautonomie als Aufgabe und Herausforde-<lb/>rung, EuZA 2010, 23.<lb/> </bibl>
@@ -238,7 +238,7 @@
           <bibl>Rebhahn, EuZA 2008, 39 (55); </bibl>
 <bibl>Junker, RdA-Beilage 2009, 9; </bibl>
           <bibl>Dimitriu, Romania's First Year<lb/> within the EU, Some Characteristics oft he Romanian Labour Law, EJLL 2008, 89 (94); </bibl>
-<bibl>Häußling, Arbeitsrecht in Schwe-<lb/>den, 22.<lb/> </bibl>   
+<bibl>Häußling, Arbeitsrecht in Schwe-<lb/>den, 22.<lb/> </bibl>
         <bibl><label>47</label> Vgl Jacobs, Collective Labour Relations, in Hepple/Veneziani (Hrsg), The Transformation of Labour Law in Europe, A<lb/> comparative study of 15 countries 1945-2004 (2009), 201 ff;</bibl>
           <bibl> Bogg/Ewing, Freedom of association, in Finkin/Mundlak,<lb/> Comparative Labour Law, 296 (328).<lb/> </bibl>
         <bibl><label>48</label> Vgl Rebhahn, EuZA 2008, 39-67; </bibl>
@@ -277,7 +277,7 @@ Erstere gelten für gewöhnlich für verbandsan-<lb/>gehörige Arbeitgebende, do
 <bibl>Dolce/de Luca, Arbeitsrecht in Italien<lb/> (2016), 14 f; </bibl><bibl>Häußling, Arbeitsrecht in Schweden, 1.<lb/> </bibl>
         <bibl><label>58</label> Sofern ein Tarifvertrag nicht allgemeinverbindlich ist, stellt sich die Frage, inwieweit sich die Arbeitgebenden durch<lb/> Verbandsaustritt davon lösen können. Das wird kaum zugelassen, doch einige Staaten, wie Spanien und Polen, gestat-<lb/>ten es, die Tarifgebundenheit bei wirtschaftlichen Schwierigkeiten zeitweise auszusetzen. Vgl Rebhahn, EuZA 2010, 80.<lb/> </bibl>
           <bibl>Die Erstreckungsregelungen sind übrigens eine von vielen arbeitsrechtlichen Nahtstellen zwischen dem öffentlichen<lb/> Recht und dem Privatrecht. Vgl Rebhahn, RdA 2002, 215.<lb/></bibl>
-          <bibl><label>59</label> Art 4 Abs 2 RL (EU) 2022/2041. Das betrifft zB Deutschland mit 52 % und Ungarn mit 22 %. Vgl AK Wien, Die Europäi-<lb/>sche Mindestlohn-Richtlinie, infobrief eu &amp; international 1/2023.<lb/> </bibl> 
+          <bibl><label>59</label> Art 4 Abs 2 RL (EU) 2022/2041. Das betrifft zB Deutschland mit 52 % und Ungarn mit 22 %. Vgl AK Wien, Die Europäi-<lb/>sche Mindestlohn-Richtlinie, infobrief eu &amp; international 1/2023.<lb/> </bibl>
         <bibl><label>60</label> Eine Erstreckung vermag aber auch die tariflichen Arbeitsbedingungen zu sichern, kollektive Verhandlungen zu unter-<lb/>stützen sowie zum Verbandsbeitritt zu motivieren, was in den Niederlanden, Italien und Spanien betont wird. Vgl<lb/> Rebhahn, DRdA 2002, 215 ff; </bibl>
           <bibl>Rebhahn, EuZA 2010, 69; </bibl>
           <bibl>Jacobs, Labour and the Law in Europe, 43.<lb/> </bibl>
@@ -293,7 +293,7 @@ Erstere gelten für gewöhnlich für verbandsan-<lb/>gehörige Arbeitgebende, do
         <bibl><label>67</label> Vgl Rebhahn, Der Vorrang der günstigeren Regelung aus rechtsvergleichender Sicht, EuZA 2008, 39 (60).<lb/> </bibl>
         <bibl><label>68</label> Tarifmehrheit wird in Deutschland aufgelöst, indem der Tarifvertrag der Gewerkschaft zur Anwendung kommt, die im<lb/> Betrieb mehr Arbeitnehmende vertritt. In Schweden geht der früher abgeschlossene dem späteren Vertrag vor und in<lb/> der Schweiz hat der für allgemeinverbindlich erklärte Tarifvertrag Vorrang, allerdings lässt der Vorrang dort günstigere<lb/> abweichende Bestimmungen unberührt. Vgl Franzen, Allgemeine Fragestellungen des Tarifvertragsrechts, in GedS Reb-<lb/>hahn, 68 f; </bibl>
           <bibl>Häußling, Arbeitsrecht in Schweden, 98; </bibl>
-          <bibl>Senne, Arbeitsrecht 10 , 8 f; 352.<lb/> </bibl> 
+          <bibl>Senne, Arbeitsrecht 10 , 8 f; 352.<lb/> </bibl>
         <bibl><label>69</label> Vgl Kotthoff, Betriebliche Sozialordnung, in Hirsch-Kreinsen/Minssen (Hrsg), Lexikon der Arbeits-und Industriesoziolo-<lb/>gie, 140-146; </bibl>
           <bibl>Kotthoff/Reindl, Die soziale Welt kleiner Betriebe (1990); </bibl>
 <bibl>Altreiter, Subjekt und Klasse (2017), 217. Thomp-<lb/>son, The nature of work (1989), 172 f; </bibl>
@@ -317,7 +317,7 @@ Vgl Kurz, Arbeitsrecht in Schweden, in Henssler/Braun, Arbeitsrecht in Europa 3 
 
         <bibl><label>74</label> Der österreichische wie auch der deutsche Betriebsrat sind Gesamtvertretungen, in Frankreich gibt es nicht nur Per-<lb/>sonaldelegierte für die Überwachung der Einhaltung von Rechtsnormen und Betriebsräte für die Mitbetreuung von be-<lb/>trieblichen Einrichtungen sowie zur Information und zur Anhörung zu wirtschaftlichen Fragen, sondern außerdem be-<lb/>triebliche Gewerkschaftsvertretungen. Vgl Kammerer/Roß-Kirsch, Arbeitsrecht in Frankreich, 223 ff; </bibl>
           <bibl>Schregle, Die öster-<lb/>reichische Betriebsverfassung aus rechtsvergleichender Sicht, DRdA 1987, 82 ff. </bibl>
-          <bibl>Das spanische und schweizerische Mo-<lb/>dell ist zT am französischen orientiert. Vgl Schlachter/Seifert, Employee voice outside collective bargaining, in<lb/> 
+          <bibl>Das spanische und schweizerische Mo-<lb/>dell ist zT am französischen orientiert. Vgl Schlachter/Seifert, Employee voice outside collective bargaining, in<lb/>
 Finkin/Mundlak, Comparative Labour Law, 330 (340). </bibl>
           <bibl>In Litauen ist kürzlich ein Betriebsrat nach deutschem Vorbild kon-<lb/>zipiert worden. Vgl Davulis, Reform des Arbeitsrechts in Litauen, Ein Beispiel des Liberalismus oder die Suche nach<lb/> Gleichgewicht? EuZA 2018, 122. </bibl>
           <bibl>In Ungarn ist ein Betriebsrat vorgesehen, doch mangelt es ihm, wie auch dem schwei-<lb/>zerischen, im Vergleich mit Deutschland und Österreich an ähnlichen Kompetenzen iZm Betriebsvereinbarungen. Vgl<lb/> Portmann/Wildhaber, Schweizerisches Arbeitsrecht 4 , 366; </bibl>
@@ -365,7 +365,7 @@ Finkin/Mundlak, Comparative Labour Law, 330 (340). </bibl>
         <bibl><label>91</label> Vgl Rubery, Institutionalizing the Employment Relationship, in Morgan et al (Hrsg), The Oxford Handbook of Compar-<lb/>ative Institutional Analysis (2010), 495-525 (501 f); </bibl>
 <bibl>ILO, Non-Standard Employment Around the World (2016), 8;<lb/> </bibl>
 <bibl>Woltersdorff, Prekarisierung und Heteronormativität von Erwerbsarbeit? Queertheoretische Überlegungen zum Ver-<lb/>hältnis von Sexualität, Arbeit und Neoliberalismus, in Manske/Pühl (Hrsg), Prekarisierung zwischen Anomie und Normal-<lb/>isierung (2010), 228-251; </bibl>
-<bibl>Rittich/Mundlak, The challange to comparative labour law in a globalized era, in<lb/> 
+<bibl>Rittich/Mundlak, The challange to comparative labour law in a globalized era, in<lb/>
 Finkin/Mundlak, Comparative Labour Law, 80 ff; </bibl><bibl>Ladas, Crowdworking als Arbeitsleistungsphänomen nach griechischem<lb/> Recht, EuZA 2021, 25.<lb/> </bibl>
         <bibl><label>92</label> Vgl Gardner, The Contractualisation of Labour Law, in Collins et al (Hrsg), Philosophical Foundations of Labour Law<lb/> (2018), 33 ff.<lb/> </bibl>
         <bibl><label>93</label> Treue/Fürsorge; lat. bona fides; engl. good faith/fair dealing, duty of loyalty, mutual trust and confidence.<lb/> </bibl>
@@ -457,7 +457,7 @@ Finkin/Mundlak, Comparative Labour Law, 80 ff; </bibl><bibl>Ladas, Crowdworking 
           <bibl><label>123</label> Art 31 GRC, in Abs 2 findet auch der bezahlte Jahresurlaub ausdrückliche Erwähnung. Vgl RL 89/391/EWG, RL<lb/> 91/383/EWG.<lb/> </bibl>
           <bibl><label>124</label> RL 2003/88/EG.<lb/> </bibl>
         <bibl><label>125</label> Vgl Huger, Employment Law in CEE, 61, 96; </bibl>
-          <bibl>Niksova/Pacic, EuZA 2008, 78 (80 f). <lb/> </bibl> 
+          <bibl>Niksova/Pacic, EuZA 2008, 78 (80 f). <lb/> </bibl>
         <bibl><label>127</label> In Frankreich liegt die Normalarbeitszeit bei 35 Stunden, was aber nicht per se bedeutet, dass dort weniger (oder<lb/> deutlich weniger) gearbeitet wird; auch hinsichtlich der Jahres-Soll-Arbeitszeit sind zB das Urlaubsausmaß und die An-<lb/>zahl der Feiertage zu berücksichtigen. Falls der Kollektivvertrag keinen Zuschlag vorsieht, besteht in Frankreich ein ge-<lb/>setzlicher Anspruch auf 25 % von der 36. bis zur 43. Stunde und 50 % ab der 44. Stunde. Keine Zuschläge gibt es (gesetz- <lb/>lich) hingegen zB in Deutschland und Schweden. Wo es welche gibt, da bestehen sie iHv von 15 % bis 100%. Vgl Huger,<lb/> Employment Law in CEE, 61, 96; </bibl>
           <bibl>Niksova/Pacic, EuZA 2008, 78 (80 f); </bibl>
 <bibl>Rebhahn, ZEuP 2002, 436; </bibl>
@@ -514,7 +514,7 @@ Finkin/Mundlak, Comparative Labour Law, 80 ff; </bibl><bibl>Ladas, Crowdworking 
           <bibl>Tröger/Roß-Kirsch, Arbeitsrecht in Großbri-<lb/>tannien 2 , 171; Senne, Arbeitsrecht 10 , 306; </bibl>
           <bibl>Flößer, Laienbeteiligung an den englischen Emoployment Tribunals, EuZA<lb/> 2021, 443.<lb/> </bibl>
         <bibl><label>145</label> VO (EU) 1215/2012 -EuGVVO (neu), auch Brüssel Ia. Im Verhältnis zwischen den Mitgliedstaaten der EU und der<lb/> Schweiz, Norwegen oder Island -nicht aber gegenüber Liechtenstein -gilt das Lugano-Übereinkommen. Vgl Nunner-<lb/>Krautgasser, Internationale Zuständigkeit in Arbeitsrechtssachen, in Kozak (Hrsg), Globales Arbeiten (2018), 67-89. </bibl>
-        <bibl><label>147</label> 147 VO (EG) 593/2008 -Rom I-VO. 
+        <bibl><label>147</label> 147 VO (EG) 593/2008 -Rom I-VO.
 Kann der gewöhnliche Arbeitsort nicht eruiert werden, so ist nach Art 8 Rom I-VO<lb/> das Recht des Staates, in dem sich die Niederlassung befindet, die den Arbeitnehmer/die Arbeitnehmerin eingestellt<lb/> hat, maßgeblich. Bei einer Gesamtbetrachtung der Umstände kann sich eine engere Verbindung zu einem anderen<lb/> Staat ergeben. Art 9 Rom I-VO erlaubt die Wahrung von "Eingriffsnormen" ungeachtet des anwendbaren Rechts; das<lb/> sind außerordentlich bedeutende zwingende Vorschriften. Vgl Windisch-Graetz, Grenzüberschreitende Arbeitsverhält-<lb/>nisse im Spannungsfeld von Rom I und Entsenderichtlinie, ZfRV 2015, 192; </bibl>
           <bibl>Blefgen, Die Anknüpfung an die einstellende<lb/> Niederlassung des Arbeitgebers im Internationalen Arbeitsvertragsrecht (2006); </bibl>
 <bibl>Pfeil, Grenzüberschreitender Einsatz<lb/> von Arbeitnehmern, DRdA 2008, 3.<lb/> 148 RL 96/71/EG, RL (EU) 2018/957. </bibl>
@@ -558,7 +558,7 @@ Kann der gewöhnliche Arbeitsort nicht eruiert werden, so ist nach Art 8 Rom I-V
         <bibl><label>163</label> Statista (Stand 2023), zum Vergleich: Griechenland und Italien in etwa 21 %, Großbritannien 12,7 %, Deutschland<lb/> 10,2 %.<lb/>  </bibl>
         <bibl><label>164</label> Vgl Rebhahn, Individualarbeitsrecht zwischen private und öffentlichem Recht? EuZA 2011, 143; </bibl>
           <bibl>Junker, Gesetzlicher<lb/> Mindestlohn und Europäische Grundfreiheiten, EuZA 2015, 399f. </bibl>
-          <bibl>In Frankreich scheint Arbeitsrecht in höheren Maße<lb/> im Wege der öffentlichen Verwaltung und des Strafrechts durchgesetzt zu werden als in Deutschland und in Österreich.<lb/> 
+          <bibl>In Frankreich scheint Arbeitsrecht in höheren Maße<lb/> im Wege der öffentlichen Verwaltung und des Strafrechts durchgesetzt zu werden als in Deutschland und in Österreich.<lb/>
         Vgl Kammerer/Roß-Kirsch, Arbeitsrecht in Frankreich, 273. </bibl><bibl>Dieselbe Rechtsfrage kann von Staat mitunter unterschied-<lb/>lich eingeordnet, dem Privatrecht oder dem öffentlichen Recht zugeordnet werden. Vgl Rebhahn, ZEuP 2002, 445. </bibl>
           <bibl>Es<lb/> gibt aber auch gänzlich anderen Ansätze: In Großbritannien wird zB eine Liste jener Arbeitgeber:innen, die sich nicht an<lb/> den Mindestlohn gehalten haben, veröffentlicht, um öffentlichen Druck zur Einhaltung aufzubauen. Vgl<lb/> https://www.theemploymentlawsolicitors.co.uk/news/2022/02/18/named-and-shamed-15/ (Stand 11.5.2023).<lb/> </bibl>
         <bibl><label>165</label> § 54 ASGG, § 105 Abs 4 ArbVG.<lb/> </bibl>
@@ -578,7 +578,7 @@ Kann der gewöhnliche Arbeitsort nicht eruiert werden, so ist nach Art 8 Rom I-V
         <bibl><label>177</label> Die EU anerkennt das Recht auf Zugang zur ärztlichen Versorgung; die Leistungen im Krankheitsfall unterliegen der<lb/> gemeinschaftlichen Koordinierung. Vgl Art 34, 35 GRC; </bibl>
           <bibl>Art 3 VO (EG) 883/2004; </bibl>
           <bibl>Resch, Der Arbeitgeber als "Träger" für<lb/> Leistungen der sozialen Sicherheit im europäischen Sozialrecht, ZIAS 1998, 215; </bibl>
-          <bibl>Kammerer/Roß-Kirsch, Arbeitsrecht in<lb/> 
+          <bibl>Kammerer/Roß-Kirsch, Arbeitsrecht in<lb/>
 Frankreich, 142 ff.<lb/> </bibl>
           <bibl><label>78</label> In den USA besteht grds nur ein Anspruch auf unbezahlte Freistellung, doch setzt sich allmählich ein Modell durch,<lb/> demzufolge für eine bezahlte Krankenstandstunde zuvor eine bestimmte Anzahl an Arbeitsstunden geleistet worden<lb/> sein müssen. Vgl Löschnigg/Schnittler, Arbeits-und Sozialrecht in den USA, 31; </bibl>
           <bibl>Senne, Arbeitsrecht 10 , 152.<lb/> </bibl>
@@ -694,7 +694,7 @@ Frankreich, 142 ff.<lb/> </bibl>
           <bibl>Trö-<lb/>ger/Roß-Kirsch, Arbeitsrecht in Großbritannien 2 , 72; </bibl>
           <bibl>Senne, Arbeitsrecht 10 , 86.<lb/> </bibl>
         <bibl><label>224</label> Nur dann, wenn der/die Arbeitgeber:in das Arbeitsverhältnis aufkündigt, ohne, dass der/die Arbeitnehmer:in dazu<lb/> "durch schuldbares Verhalten" Anlass gegeben hat, hat der/die Arbeitgebende, sofern er/sie die Einhaltung der Konkur-<lb/>renzklausel wünscht, dem/der Arbeitnehmer:in das ihm/ihr "zuletzt zukommende Entgelt" zu zahlen. Vgl § 2c Abs 4<lb/> AVRAG. </bibl>
-          <bibl>Wenn jedoch der/die Arbeitnehmer/in selbst kündigt, ohne, dass der/die Arbeitgeber:in Schuld daran trägt,<lb/> dann entfällt die Zahlungspflicht.<lb/></bibl> 
+          <bibl>Wenn jedoch der/die Arbeitnehmer/in selbst kündigt, ohne, dass der/die Arbeitgeber:in Schuld daran trägt,<lb/> dann entfällt die Zahlungspflicht.<lb/></bibl>
         <bibl><label>225</label> § 2c Abs 5 iVm § 2c AVRAG; </bibl><bibl>§ 1336 Abs 2 ABGB. Vgl für Schweden Häußling, Arbeitsrecht in Schweden, 27.<lb/> </bibl>
         <bibl><label>226</label> Vgl Tröger/Roß-Kirsch, Arbeitsrecht in Großbritannien 2 , 165; </bibl>
           <bibl>Senne, Arbeitsrecht 10 , 289; </bibl><bibl>Portmann/Wildhaber,<lb/> Schweizerisches Arbeitsrecht 4 , 155.<lb/> </bibl>
