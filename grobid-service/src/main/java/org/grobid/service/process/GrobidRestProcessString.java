@@ -347,6 +347,9 @@ public class GrobidRestProcessString {
             } else if (expectedResponseType == ExpectedResponseType.BIBTEX) {
                 StringBuilder responseContent = new StringBuilder();
                 for (BiblioItem biblioItem : biblioItems) {
+                    if (biblioItem == null) {
+                        continue;
+                    }
                     responseContent.append(biblioItem.toBibTeX(biblioItem.generateBibTeXKey(), config));
                     responseContent.append("\n");
                 }
@@ -369,8 +372,10 @@ public class GrobidRestProcessString {
                                 "<body/>\n\t\t<back>\n\t\t\t<div>\n\t\t\t\t<listBibl>\n");
                 int n = 0;
                 for (BiblioItem biblioItem : biblioItems) {
-                    responseContent.append(biblioItem.toTEI(n, config));
-                    responseContent.append("\n");
+                    if (biblioItem != null) {
+                        responseContent.append(biblioItem.toTEI(n, config));
+                        responseContent.append("\n");
+                    }
                     n++;
                 }
                 responseContent.append("\t\t\t\t</listBibl>\n\t\t\t</div>\n\t\t</back>\n\t</text>\n</TEI>\n");
