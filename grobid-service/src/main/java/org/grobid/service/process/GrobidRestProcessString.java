@@ -346,12 +346,16 @@ public class GrobidRestProcessString {
                 response = Response.status(Status.NO_CONTENT).build();
             } else if (expectedResponseType == ExpectedResponseType.BIBTEX) {
                 StringBuilder responseContent = new StringBuilder();
+                int n = 0;
                 for (BiblioItem biblioItem : biblioItems) {
                     if (biblioItem == null) {
-                        continue;
+                        // Keep output length aligned with input so clients can zip lists.
+                        responseContent.append("@misc{b").append(n).append(",\n}\n");
+                    } else {
+                        responseContent.append(biblioItem.toBibTeX(biblioItem.generateBibTeXKey(), config));
+                        responseContent.append("\n");
                     }
-                    responseContent.append(biblioItem.toBibTeX(biblioItem.generateBibTeXKey(), config));
-                    responseContent.append("\n");
+                    n++;
                 }
                 response = Response.status(Status.OK)
                         .entity(responseContent.toString())
@@ -372,7 +376,10 @@ public class GrobidRestProcessString {
                                 "<body/>\n\t\t<back>\n\t\t\t<div>\n\t\t\t\t<listBibl>\n");
                 int n = 0;
                 for (BiblioItem biblioItem : biblioItems) {
-                    if (biblioItem != null) {
+                    if (biblioItem == null) {
+                        // Keep output length aligned with input so clients can zip lists.
+                        responseContent.append("\t\t\t\t\t<biblStruct xml:id=\"b").append(n).append("\"/>\n");
+                    } else {
                         responseContent.append(biblioItem.toTEI(n, config));
                         responseContent.append("\n");
                     }

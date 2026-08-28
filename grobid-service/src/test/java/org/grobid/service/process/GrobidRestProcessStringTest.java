@@ -66,6 +66,10 @@ public class GrobidRestProcessStringTest {
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
         String body = (String) response.getEntity();
         assertTrue(body.contains(TEI_FRAGMENT));
+        // Output biblStruct count must match input citation count (including empty slots).
+        assertEquals(citations.size(), countOccurrences(body, "<biblStruct"));
+        assertTrue(body.contains("xml:id=\"b1\""));
+        assertTrue(body.contains("xml:id=\"b2\""));
     }
 
     @Test
@@ -79,6 +83,18 @@ public class GrobidRestProcessStringTest {
         assertEquals(Response.Status.OK.getStatusCode(), response.getStatus());
         String body = (String) response.getEntity();
         assertTrue(body.contains(BIBTEX_FRAGMENT));
+        // One BibTeX entry per input citation, including empty slots.
+        assertEquals(citations.size(), countOccurrences(body, "@"));
+    }
+
+    private static int countOccurrences(String haystack, String needle) {
+        int count = 0;
+        int from = 0;
+        while ((from = haystack.indexOf(needle, from)) >= 0) {
+            count++;
+            from += needle.length();
+        }
+        return count;
     }
 
     private BiblioItem parsedItem() {
