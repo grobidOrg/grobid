@@ -42,8 +42,8 @@ public class GrobidRestProcessStringTest {
     private static final String VALID_CITATION = "Graff, Expert. Opin. Ther. Targets (2002) 6(1): 103-113";
     private static final String EMPTY_CITATION = "";
     private static final String NBSP_CITATION = "\u00A0";
-    private static final String TEI_FRAGMENT = "<biblStruct xml:id=\"b0\"/>";
-    private static final String BIBTEX_FRAGMENT = "@article{graff2002,}";
+    private static final String TEI_FRAGMENT = "<biblStruct xml:id=\"b0\"/>\n";
+    private static final String BIBTEX_FRAGMENT = "@article{graff2002,}\n";
 
     private GrobidRestProcessString target;
     private GrobidAnalysisConfig config;
@@ -70,6 +70,8 @@ public class GrobidRestProcessStringTest {
         assertEquals(citations.size(), countOccurrences(body, "<biblStruct"));
         assertTrue(body.contains("xml:id=\"b1\""));
         assertTrue(body.contains("xml:id=\"b2\""));
+        // Real citations already end with a newline; do not insert a blank line after them.
+        assertEquals(-1, body.indexOf(TEI_FRAGMENT + "\n"));
     }
 
     @Test
@@ -85,6 +87,7 @@ public class GrobidRestProcessStringTest {
         assertTrue(body.contains(BIBTEX_FRAGMENT));
         // One BibTeX entry per input citation, including empty slots.
         assertEquals(citations.size(), countOccurrences(body, "@"));
+        assertEquals(-1, body.indexOf(BIBTEX_FRAGMENT + "\n"));
     }
 
     private static int countOccurrences(String haystack, String needle) {

@@ -353,7 +353,6 @@ public class GrobidRestProcessString {
                         responseContent.append("@misc{b").append(n).append(",\n}\n");
                     } else {
                         responseContent.append(biblioItem.toBibTeX(biblioItem.generateBibTeXKey(), config));
-                        responseContent.append("\n");
                     }
                     n++;
                 }
@@ -381,7 +380,6 @@ public class GrobidRestProcessString {
                         responseContent.append("\t\t\t\t\t<biblStruct xml:id=\"b").append(n).append("\"/>\n");
                     } else {
                         responseContent.append(biblioItem.toTEI(n, config));
-                        responseContent.append("\n");
                     }
                     n++;
                 }
