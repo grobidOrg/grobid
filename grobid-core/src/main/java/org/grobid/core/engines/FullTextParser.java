@@ -464,6 +464,28 @@ public class FullTextParser extends AbstractParser {
                 }
                 LOGGER.info("Typed-area figures routed: {} to the body, {} to the annex",
                     typedBodyFigures.size(), typedAnnexFigures.size());
+
+                // Reconcile native and typed-area output before it reaches TEI. A captionless
+                // overlapping copy cannot contribute to caption-based figure matching.
+                List<Figure> allFigures = new ArrayList<>();
+                if (bodyFigures != null) {
+                    allFigures.addAll(bodyFigures);
+                }
+                if (annexFigures != null) {
+                    allFigures.addAll(annexFigures);
+                }
+                Set<Figure> duplicateFigures = findCaptionlessDuplicateFigures(allFigures);
+                if (!duplicateFigures.isEmpty()) {
+                    if (bodyFigures != null) {
+                        bodyFigures.removeIf(duplicateFigures::contains);
+                        doc.setFigures(bodyFigures);
+                    }
+                    if (annexFigures != null) {
+                        annexFigures.removeIf(duplicateFigures::contains);
+                        doc.setAnnexFigures(annexFigures);
+                    }
+                    LOGGER.info("Removed {} captionless duplicate figure(s)", duplicateFigures.size());
+                }
             }
             if (!typedAreaTables.isEmpty()) {
                 List<Table> typedBodyTables = new ArrayList<>();
@@ -4184,6 +4206,59 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
             return null;
         }
         return figure.getGraphicObjects().get(0).getBoundingBox();
+    }
+
+    private static final int MIN_FIGURE_CAPTION_CHARS = 10;
+    private static final double MIN_DUPLICATE_FIGURE_COVERAGE = 0.5;
+
+    /** Find captionless figures covered by a caption-bearing figure on the same page. */
+    static Set<Figure> findCaptionlessDuplicateFigures(List<Figure> figures) {
+        Set<Figure> duplicates = Collections.newSetFromMap(new IdentityHashMap<>());
+        if (CollectionUtils.size(figures) < 2) {
+            return duplicates;
+        }
+        List<Figure> captionedFigures = figures.stream()
+            .filter(FullTextParser::hasUsableCaption)
+            .collect(Collectors.toList());
+        for (Figure candidate : figures) {
+            if (hasUsableCaption(candidate) || CollectionUtils.isEmpty(candidate.getCoordinates())) {
+                continue;
+            }
+            for (Figure captioned : captionedFigures) {
+                if (sameFigure(candidate, captioned)) {
+                    duplicates.add(candidate);
+                    break;
+                }
+            }
+        }
+        return duplicates;
+    }
+
+    private static boolean hasUsableCaption(Figure figure) {
+        return figure != null && StringUtils.trimToEmpty(figure.getCaption()).length() >= MIN_FIGURE_CAPTION_CHARS;
+    }
+
+    private static boolean sameFigure(Figure first, Figure second) {
+        for (BoundingBox firstBox : first.getCoordinates()) {
+            for (BoundingBox secondBox : second.getCoordinates()) {
+                if (firstBox.getPage() != secondBox.getPage()) {
+                    continue;
+                }
+                double intersectionWidth = Math.min(firstBox.getX2(), secondBox.getX2())
+                    - Math.max(firstBox.getX(), secondBox.getX());
+                double intersectionHeight = Math.min(firstBox.getY2(), secondBox.getY2())
+                    - Math.max(firstBox.getY(), secondBox.getY());
+                if (intersectionWidth <= 0 || intersectionHeight <= 0) {
+                    continue;
+                }
+                double smallerArea = Math.min(firstBox.area(), secondBox.area());
+                if (smallerArea > 0 && intersectionWidth * intersectionHeight / smallerArea
+                    >= MIN_DUPLICATE_FIGURE_COVERAGE) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     /**

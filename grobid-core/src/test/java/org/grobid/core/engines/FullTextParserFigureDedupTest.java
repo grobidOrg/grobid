@@ -1,0 +1,79 @@
+/*
+ * Copyright 2008-2026 GROBID contributors
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ */
+package org.grobid.core.engines;
+
+import org.grobid.core.data.Figure;
+import org.grobid.core.layout.BoundingBox;
+import org.grobid.core.layout.GraphicObject;
+import org.grobid.core.layout.GraphicObjectType;
+import org.grobid.core.factory.GrobidFactory;
+import org.grobid.core.main.LibraryLoader;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Set;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+public class FullTextParserFigureDedupTest {
+
+    @BeforeClass
+    public static void init() {
+        LibraryLoader.load();
+        GrobidFactory.getInstance().createEngine();
+    }
+
+    @Test
+    public void dropsCaptionlessFigureCoveredByCaptionedFigure() {
+        Figure captioned = figure(1, 10, 10, 200, 200, "Figure 1. A useful caption");
+        Figure captionless = figure(1, 50, 50, 50, 50, null);
+        Set<Figure> duplicates = FullTextParser.findCaptionlessDuplicateFigures(
+            Arrays.asList(captioned, captionless));
+        assertTrue(duplicates.contains(captionless));
+        assertFalse(duplicates.contains(captioned));
+    }
+
+    @Test
+    public void keepsCaptionlessFigureWithoutCaptionedOverlap() {
+        Figure captioned = figure(1, 10, 10, 50, 50, "Figure 1. A useful caption");
+        Figure captionless = figure(1, 100, 100, 50, 50, null);
+        assertTrue(FullTextParser.findCaptionlessDuplicateFigures(
+            Arrays.asList(captioned, captionless)).isEmpty());
+    }
+
+    @Test
+    public void keepsBothCaptionedOverlappingFigures() {
+        Figure first = figure(1, 10, 10, 100, 100, "Figure 1. First caption");
+        Figure second = figure(1, 20, 20, 100, 100, "Figure 2. Second caption");
+        assertTrue(FullTextParser.findCaptionlessDuplicateFigures(
+            Arrays.asList(first, second)).isEmpty());
+    }
+
+    @Test
+    public void requiresHalfOfSmallerBoxToOverlap() {
+        Figure captioned = figure(1, 0, 0, 100, 100, "Figure 1. A useful caption");
+        Figure belowThreshold = figure(1, 90, 0, 100, 100, null);
+        Figure atThreshold = figure(1, 50, 0, 100, 100, null);
+        Set<Figure> duplicates = FullTextParser.findCaptionlessDuplicateFigures(
+            Arrays.asList(captioned, belowThreshold, atThreshold));
+        assertFalse(duplicates.contains(belowThreshold));
+        assertTrue(duplicates.contains(atThreshold));
+    }
+
+    private static Figure figure(int page, double x, double y, double width, double height,
+                                 String caption) {
+        Figure figure = new Figure();
+        BoundingBox box = BoundingBox.fromPointAndDimensions(page, x, y, width, height);
+        figure.setGraphicObjects(Collections.singletonList(
+            new GraphicObject(box, GraphicObjectType.VECTOR_BOX)));
+        if (caption != null) {
+            figure.setCaption(new StringBuilder(caption));
+        }
+        return figure;
+    }
+}
