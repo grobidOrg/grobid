@@ -18,8 +18,10 @@ package org.grobid.core.engines;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 import java.util.Set;
 
 import org.junit.BeforeClass;
@@ -77,6 +79,49 @@ public class FullTextParserFigureDedupTest {
                 Arrays.asList(captioned, belowThreshold, atThreshold));
         assertFalse(duplicates.contains(belowThreshold));
         assertTrue(duplicates.contains(atThreshold));
+    }
+
+    /**
+     * A multi-panel figure carries one box per panel, so a typed region sitting between
+     * the panels overlaps none of them individually while clearly covering the same
+     * figure. Comparing the per-page union catches it; comparing box by box does not.
+     */
+    @Test
+    public void matchesAcrossThePerPageUnionOfPanelBoxes() {
+        Figure captioned = multiBoxFigure(
+                1,
+                "Figure 1. A multi-panel caption",
+                BoundingBox.fromPointAndDimensions(1, 0, 0, 10, 10),
+                BoundingBox.fromPointAndDimensions(1, 90, 0, 10, 10));
+        Figure captionless = figure(1, 40, 0, 20, 10, null);
+        Set<Figure> duplicates = FullTextParser.findCaptionlessDuplicateFigures(
+                Arrays.asList(captioned, captionless));
+        assertTrue(duplicates.contains(captionless));
+        assertFalse(duplicates.contains(captioned));
+    }
+
+    @Test
+    public void doesNotMergeBoxesAcrossPages() {
+        Figure captioned = multiBoxFigure(
+                1,
+                "Figure 1. Spans two pages",
+                BoundingBox.fromPointAndDimensions(1, 0, 0, 10, 10),
+                BoundingBox.fromPointAndDimensions(2, 90, 0, 10, 10));
+        Figure captionless = figure(2, 40, 0, 20, 10, null);
+        assertTrue(
+                FullTextParser.findCaptionlessDuplicateFigures(
+                        Arrays.asList(captioned, captionless)).isEmpty());
+    }
+
+    private static Figure multiBoxFigure(int page, String caption, BoundingBox... boxes) {
+        Figure figure = new Figure();
+        List<GraphicObject> objects = new ArrayList<>();
+        for (BoundingBox box : boxes) {
+            objects.add(new GraphicObject(box, GraphicObjectType.VECTOR_BOX));
+        }
+        figure.setGraphicObjects(objects);
+        figure.setCaption(new StringBuilder(caption));
+        return figure;
     }
 
     private static Figure figure(

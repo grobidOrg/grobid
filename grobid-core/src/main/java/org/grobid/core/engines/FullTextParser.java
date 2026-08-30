@@ -4238,24 +4238,39 @@ System.out.println("majorityEquationarkerType: " + majorityEquationarkerType);*/
         return figure != null && StringUtils.trimToEmpty(figure.getCaption()).length() >= MIN_FIGURE_CAPTION_CHARS;
     }
 
+    /**
+     * Union of a figure's boxes on each page it appears on. A figure is compared as one
+     * region per page, not box by box: a typed area spans the panels of a whole figure
+     * while the native figure carries one box per panel, so no individual pair need reach
+     * the coverage threshold even when the two clearly describe the same figure.
+     */
+    private static Map<Integer, BoundingBox> pageBoxes(Figure figure) {
+        Map<Integer, BoundingBox> boxes = new HashMap<>();
+        for (BoundingBox box : figure.getCoordinates()) {
+            boxes.merge(box.getPage(), box, BoundingBox::boundBox);
+        }
+        return boxes;
+    }
+
     private static boolean sameFigure(Figure first, Figure second) {
-        for (BoundingBox firstBox : first.getCoordinates()) {
-            for (BoundingBox secondBox : second.getCoordinates()) {
-                if (firstBox.getPage() != secondBox.getPage()) {
-                    continue;
-                }
-                double intersectionWidth = Math.min(firstBox.getX2(), secondBox.getX2())
-                    - Math.max(firstBox.getX(), secondBox.getX());
-                double intersectionHeight = Math.min(firstBox.getY2(), secondBox.getY2())
-                    - Math.max(firstBox.getY(), secondBox.getY());
-                if (intersectionWidth <= 0 || intersectionHeight <= 0) {
-                    continue;
-                }
-                double smallerArea = Math.min(firstBox.area(), secondBox.area());
-                if (smallerArea > 0 && intersectionWidth * intersectionHeight / smallerArea
-                    >= MIN_DUPLICATE_FIGURE_COVERAGE) {
-                    return true;
-                }
+        Map<Integer, BoundingBox> secondBoxes = pageBoxes(second);
+        for (Map.Entry<Integer, BoundingBox> entry : pageBoxes(first).entrySet()) {
+            BoundingBox firstBox = entry.getValue();
+            BoundingBox secondBox = secondBoxes.get(entry.getKey());
+            if (secondBox == null) {
+                continue;
+            }
+            double intersectionWidth = Math.min(firstBox.getX2(), secondBox.getX2())
+                - Math.max(firstBox.getX(), secondBox.getX());
+            double intersectionHeight = Math.min(firstBox.getY2(), secondBox.getY2())
+                - Math.max(firstBox.getY(), secondBox.getY());
+            if (intersectionWidth <= 0 || intersectionHeight <= 0) {
+                continue;
+            }
+            double smallerArea = Math.min(firstBox.area(), secondBox.area());
+            if (smallerArea > 0 && intersectionWidth * intersectionHeight / smallerArea
+                >= MIN_DUPLICATE_FIGURE_COVERAGE) {
+                return true;
             }
         }
         return false;
