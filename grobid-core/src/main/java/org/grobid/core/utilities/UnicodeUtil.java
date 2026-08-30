@@ -138,9 +138,20 @@ public class UnicodeUtil {
             + "\\u25CF"  // black circle
             + "\\u26AB"  // medium black circle
             + "\\u2B24"  // black large circle
-            + "\\u00B7"  // middle dot
             + "]";
     private static final Pattern BULLET_CHARS_PATTERN = Pattern.compile(bullet_chars);
+
+    // U+00B7 MIDDLE DOT is deliberately NOT part of bullet_chars above, because it is
+    // ambiguous: it is a common list bullet, but it is also a letter-level character
+    // *inside* words. The main case is the Catalan "punt volat" separating a geminate l,
+    // as in "intel·ligència" or "cel·lular", but it also occurs in chemical formulas of
+    // hydrates ("CuSO4·5H2O") and as a multiplication/dot-product sign. Rewriting it to
+    // a bullet there corrupts the token and, because U+2022 is one of
+    // TextUtilities.delimiters while U+00B7 is not, additionally splits the word into
+    // three tokens ("intel", "•", "ligència"), degrading every downstream model.
+    // So only treat a middle dot as a bullet when it is not between two word characters.
+    private static final Pattern MIDDLE_DOT_BULLET_PATTERN = Pattern
+            .compile("(?<![\\p{L}\\p{N}])\\u00B7|\\u00B7(?![\\p{L}\\p{N}])");
 
     // opening parenthesis
     public static String open_parenthesis = "["
@@ -203,6 +214,9 @@ public class UnicodeUtil {
 
         // bullet normalisation
         text = BULLET_CHARS_PATTERN.matcher(text).replaceAll("•");
+
+        // middle dot: a bullet only when not used inside a word (see the pattern above)
+        text = MIDDLE_DOT_BULLET_PATTERN.matcher(text).replaceAll("•");
 
         // opening parenthesis normalisation
         text = OPEN_PARENTHESIS_PATTERN.matcher(text).replaceAll("(");
