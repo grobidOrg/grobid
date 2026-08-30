@@ -45,7 +45,7 @@ public class FullTextParserFigureDedupTest {
         Figure captioned = figure(1, 10, 10, 200, 200, "Figure 1. A useful caption");
         Figure captionless = figure(1, 50, 50, 50, 50, null);
         Set<Figure> duplicates = FullTextParser.findCaptionlessDuplicateFigures(
-            Arrays.asList(captioned, captionless));
+                Arrays.asList(captioned, captionless));
         assertTrue(duplicates.contains(captionless));
         assertFalse(duplicates.contains(captioned));
     }
@@ -54,16 +54,18 @@ public class FullTextParserFigureDedupTest {
     public void keepsCaptionlessFigureWithoutCaptionedOverlap() {
         Figure captioned = figure(1, 10, 10, 50, 50, "Figure 1. A useful caption");
         Figure captionless = figure(1, 100, 100, 50, 50, null);
-        assertTrue(FullTextParser.findCaptionlessDuplicateFigures(
-            Arrays.asList(captioned, captionless)).isEmpty());
+        assertTrue(
+                FullTextParser.findCaptionlessDuplicateFigures(
+                        Arrays.asList(captioned, captionless)).isEmpty());
     }
 
     @Test
     public void keepsBothCaptionedOverlappingFigures() {
         Figure first = figure(1, 10, 10, 100, 100, "Figure 1. First caption");
         Figure second = figure(1, 20, 20, 100, 100, "Figure 2. Second caption");
-        assertTrue(FullTextParser.findCaptionlessDuplicateFigures(
-            Arrays.asList(first, second)).isEmpty());
+        assertTrue(
+                FullTextParser.findCaptionlessDuplicateFigures(
+                        Arrays.asList(first, second)).isEmpty());
     }
 
     @Test
@@ -72,17 +74,23 @@ public class FullTextParserFigureDedupTest {
         Figure belowThreshold = figure(1, 90, 0, 100, 100, null);
         Figure atThreshold = figure(1, 50, 0, 100, 100, null);
         Set<Figure> duplicates = FullTextParser.findCaptionlessDuplicateFigures(
-            Arrays.asList(captioned, belowThreshold, atThreshold));
+                Arrays.asList(captioned, belowThreshold, atThreshold));
         assertFalse(duplicates.contains(belowThreshold));
         assertTrue(duplicates.contains(atThreshold));
     }
 
-    private static Figure figure(int page, double x, double y, double width, double height,
-                                 String caption) {
+    private static Figure figure(
+            int page,
+            double x,
+            double y,
+            double width,
+            double height,
+            String caption) {
         Figure figure = new Figure();
         BoundingBox box = BoundingBox.fromPointAndDimensions(page, x, y, width, height);
-        figure.setGraphicObjects(Collections.singletonList(
-            new GraphicObject(box, GraphicObjectType.VECTOR_BOX)));
+        figure.setGraphicObjects(
+                Collections.singletonList(
+                        new GraphicObject(box, GraphicObjectType.VECTOR_BOX)));
         if (caption != null) {
             figure.setCaption(new StringBuilder(caption));
         }
