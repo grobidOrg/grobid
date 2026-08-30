@@ -1,0 +1,299 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1017__s0021223721000066">
+    <titleStmt>
+      <title level="a">International Refugee Regime: An Alternative Form of Protection for Human Rights Defenders?</title>
+      <author>
+        <persName>
+          <forename>Aikaterini-Christina</forename>
+          <surname>Koula</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Cambridge University Press (CUP)</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2021</date>
+      <idno type="DOI">10.1017/s0021223721000066</idno>
+      <ptr target="https://doi.org/10.1017/s0021223721000066"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Aikaterini-Christina Koula. (2021). International Refugee Regime: An Alternative Form of Protection for Human Rights Defenders?. Israel Law Review, 54(3), 340-368. DOI: 10.1017/s0021223721000066</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">International Refugee Regime: An Alternative Form of Protection for Human Rights Defenders?</title>
+          <author>
+            <persName>
+              <forename>Aikaterini-Christina</forename>
+              <surname>Koula</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Israel Law Review</title>
+          <imprint>
+            <biblScope unit="volume">54</biblScope>
+            <biblScope unit="issue">3</biblScope>
+            <biblScope unit="page" from="340" to="368">340-368</biblScope>
+            <date when="2021">2021</date>
+            <publisher>Cambridge University Press (CUP)</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.1017/s0021223721000066</idno>
+        <ptr target="https://doi.org/10.1017/s0021223721000066"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-05-19T12:12:40.754805Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-62-gdd0608bb6</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-19T12:12:40.754805Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-19T12:30:09.969Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-05-19T13:28:28.871Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-08T12:23:47.833Z" status="in-review" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-08T12:56:40.920Z" status="checked" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>2</label> Martin Jones, 'Protecting Human Rights Defenders at Risk: Asylum and Temporary International Relocation'<lb/> (2015) 19 International Journal of Human Rights 935.<lb/> </bibl>
+      <bibl><label>3</label> Declaration on the Right and Responsibility of Individuals, Groups and Organs of Society to Promote and Protect<lb/> Universally Recognized Human Rights and Fundamental Freedoms, UNGA Res 53/144 (8 March 1999), UN Doc<lb/> A/RES/53/144 (Declaration on HRDs).<lb/> </bibl>
+      <bibl><label>4</label> UN Office of the High Commissioner for Human Rights, Fact Sheet No 29, Human Rights Defenders: Protecting<lb/> the Right to Defend Human Rights (April 2004) (Fact Sheet 29), https://www.ohchr.org/Documents/Publications/<lb/> FactSheet29en.pdf. </bibl>
+
+      <bibl><label>6</label> Fact Sheet 29 (n 4).<lb/> </bibl>
+
+      <bibl><label>7</label> Philip Alston and Ryan Goodman, International Human Rights (1st edn, Oxford University Press 2013) 743;<lb/> Fact Sheet 29 (n 4) 7.<lb/> </bibl>
+      <bibl><label>8</label> UN Committee on Economic, Social and Cultural Rights, Human Rights Defenders and Economic, Social and<lb/> Cultural Rights (7 October 2016), UN Doc E/C.12/2016/2;</bibl>
+      <bibl>UN Economic and Social Council, Report submitted<lb/> by the Special Representative of the Secretary-General on Human Rights Defenders, Hina Jinali (23 January<lb/> 2006), UN Doc E/CN.4/2006/95;</bibl>
+      <bibl>UN Special Rapporteur on the Situation of Human Rights Defenders, 'How<lb/> Are Human Rights Defenders Defined?', https://www.protecting-defenders.org/en/content/how-are-human-<lb/>rights-defenders-defined;</bibl>         <bibl>Council of Europe, Commissioner for Human Rights, 'Council of Europe Colloquy<lb/> on Protecting and Supporting Human Rights Defenders in Europe', 13-14 November 2006, CommDH(2006)2,<lb/> 1, https://rm.coe.int/09000016806dab16;</bibl>
+      <bibl>Council of Europe, 'Conclusions of Council of Europe Commissioner<lb/> for Human Rights, Mr Thomas Hammerberg: Colloquy on Protecting and Supporting Human Rights<lb/> Defenders' (13-14 November 2006), Doc CommDH (2006)19, https://rm.coe.int/09000016806da64b;</bibl>
+      <bibl>European<lb/> Union, 'Ensuring Protection: EU Guidelines on Human Rights Defenders' (2004), https://eeas.europa.eu/sites/<lb/> eeas/files/eu_guidelines_hrd_en.pdf;</bibl>
+      <bibl>African Commission on Human and Peoples' Rights, Res 69 on the<lb/> Protection of Human Rights Defenders in Africa (4 June 2004), ACHPR/69(XXXV)03; </bibl>
+      <bibl>Organization of<lb/> American States, 'Human Rights Defenders: Support for Individuals, Groups, and Organizations of Civil<lb/> Society Working to Promote and Protect Human Rights in the Americas', San Pedro Sula (4 June 2004), Res<lb/> </bibl>
+      <bibl>AG/RES. 2517 (XXXIX-O/09).<lb/> </bibl>
+
+      <bibl><label>9</label> Front Line Defenders and the International Federation for Human Rights (FIDH) are organisations that were<lb/> founded and work with the specific aim of protecting HRDs and use the definition deriving from the<lb/> Declaration and Fact Sheet 29; see Front Line Defenders, 'The Front Line Defenders Story', https://www.frontli-<lb/>nedefenders.org/en/who-we-are.<lb/> </bibl>
+      <bibl><label>10</label> Yvonne Donders, 'Defending the Human Rights Defenders' (2016) 34 Netherlands Quarterly of Human Rights<lb/> 282; </bibl>
+      <bibl>Alice Nah and others, 'A Research Agenda for the Protection of Human Rights Defenders' (2013) 5 Journal<lb/> of Human Rights Practice 401; </bibl>
+      <bibl>Aikaterini-Christina Koula, 'The UN Definition of Human Rights Defenders:<lb/> Alternative Interpretative Approaches' (2019) 5 Queen Mary Human Rights Law Review 1; International<lb/> Service for Human Rights (ISHR), 'Model Law for the Recognition and Protection of Human Rights<lb/> Defenders', 2016, 2, https://www.ishr.ch/sites/default/files/documents/model_law_full_digital_updated_15-<lb/>june2016.pdf.<lb/> </bibl>
+      <bibl><label>11</label> Ilder Etikan, Sulaiman Abubakar Musa and Rukayya Sunusi Alkassim, 'Comparison of Convenience and<lb/> Purposive Sampling' (2016) 5 American Journal of Theoretical and Applied Statistics 1.<lb/> </bibl>
+      <bibl><label>12</label> UN General Assembly, Report of the UN Special Rapporteur on the Situation of Human Rights Defenders<lb/> (Margaret Sekaggya) (4 August 2010), UN Doc A/65/223, paras 5, 10;</bibl>
+      <bibl>Fact Sheet 29 (n 4) 10.<lb/> </bibl>
+      <bibl><label>13</label> Fact Sheet (n 4) 11.<lb/> </bibl>
+      <bibl><label>14</label> International Law Association (ILA), 'ILA Study Group on Due Diligence in International Law First Report',<lb/> January 2014, 14; ILA, ILA Study Group on Due Diligence in International Law Second Report, July 2016, 8;<lb/> </bibl>
+      <bibl>IACtHR, Case of Velásquez Rodriguez v Honduras, Judgment of 29 July 1988, para 172.<lb/> </bibl>
+      <bibl><label>15</label> See, eg, Andrew Clapham, 'The Use of International Human Rights Law by Civil Society Organisations' in<lb/> </bibl>
+      <bibl>Scott Sheeran and Nigel Rodley (eds), Handbook of International Human Rights Law (Routledge 2013) 153;<lb/> </bibl>
+      <bibl>Rachel Brett, 'Non-Governmental Organizations and Human Rights' in Catarina Krause and Martin Scheinin<lb/> (eds), International Protection of Human Rights: A Textbook (Turku/Abo 2009) 679; </bibl>
+      <bibl>Thomas Risse, Stephen<lb/> Ropp and Kathryn Sikkink, The Persistent Power of Human Rights: From Commitment to Compliance<lb/> (Cambridge University Press 2013).<lb/> </bibl>
+      <bibl><label>16</label> Eileen Denza, 'The Relationship between International and National Law' in Malcolm D Evans (ed),<lb/> International Law (5th edn, Oxford University Press 2014) 393-415; </bibl>
+      <bibl>David Harris and Sandesh Sivakumaran,<lb/> Cases and Materials on International Law (8th edn, Sweet &amp; Maxwell 2015); </bibl>
+      <bibl>Andrew Clapham, Human Rights<lb/> Obligations of Non-State Actors (Oxford University Press 2006); </bibl>
+      <bibl>Nicolas Carrillo Santarelli, 'Non-State Actors<lb/> Human Rights Obligations and Responsibility under International Law' (2008) 15 Revista Electronica de<lb/> Estudios Internationales 1.<lb/> </bibl>
+      <bibl><label>17</label> The article uses the term 'refugee defender' to refer to those individuals who used to act as defenders in their<lb/> country of origin, regardless of whether they continue to work as HRDs in their country of residence or<lb/> have decided to keep a low profile. The author consciously avoids using the terms 'human rights defenders in<lb/> exile' or 'exiled human rights defenders' (EHRDs) because they are quite broad. In particular, EHRDs may<lb/> encompass not only HRDs who have been granted refugee status, but also those living in self-imposed exile to<lb/> safeguard their life and liberty. The latter may not have applied for asylum but live legally within the territory<lb/> of the state (e.g. by visa or dual citizenship). On the other hand, it is worth noting that McQuaid seems to use<lb/> the term 'refugee defender' in the same way, but for her it also includes those individuals who started fighting<lb/> for refugee rights, and human rights in general, once they arrived in their country of residence: Katie<lb/> McQuaid, 'Defenders Across Borders: Congolese Human Rights Defenders in Uganda's Refugee Regime',<lb/> Centre for Applied Human Rights, University of York, Human Rights Defender Hub Working Paper<lb/> Series, Working Paper 4, March 2018, https://static1.squarespace.com/static/58a1a2bb9f745664e6b41612/t/<lb/> 5ad0a19a70a6adbfd8917dbc/1523622302374/HRD+Hub+Working+Paper+No.+4+April+2018.pdf.<lb/> </bibl>
+      <bibl><label>18</label> Convention relating to the Status of Refugees (entered into force 22 April 1954) 189 UNTS 137 (1951<lb/> Convention).<lb/> </bibl>
+      <bibl><label>19</label> Protocol relating to the Status of Refugees (entered into force 4 October 1967) 606 UNTS 267.<lb/> </bibl>
+      <bibl><label>20</label> Jane McAdam, 'Interpretation of the 1951 Convention' in Andreas Zimmermann, Jonas Dörschner and Felix<lb/> Machts (eds), The 1951 Convention relating to the Status of Refugees and Its 1967 Protocol (Oxford<lb/> University Press 2011) 75.<lb/> </bibl>
+      <bibl><label>21</label> 1951 Convention (n 18) arts 3-43.</bibl>
+
+      <bibl><label>23</label> Jones (n 2).<lb/> </bibl>
+      <bibl><label>24</label> Art 1(A)(2) states that '[…] owing to well-founded fear of being persecuted for reasons of race, religion, nation-<lb/>ality, membership of a particular social group or political opinion, is outside the country of his nationality and is<lb/> unable or, owing to such fear, is unwilling to avail himself of the protection of that country'.<lb/> </bibl>
+      <bibl><label>25</label> 1951 Convention (n 18) art 1(F) (a-c).<lb/> </bibl>
+      <bibl><label>26</label> ibid art 1(D).<lb/> </bibl>
+      <bibl><label>27</label> Jones (n 2) 940.<lb/> </bibl>
+      <bibl><label>28</label> 1951 Convention (n 18) art 31.<lb/> </bibl>
+      <bibl><label>29</label> James C Hathaway, 'Reconceiving Refugee Law as Human Rights Protection' (1991) 4 Journal of Refugee<lb/> Studies 113, 122; </bibl>
+      <bibl>Paul Weis, 'The Concept of the Refugee in International Law' (1960) 87 Journal du Droit<lb/> International 928, 984-86.<lb/> </bibl>
+      <bibl><label>30</label> UN High Commissioner for Refugees (UNHCR), Handbook on the Procedures and Criteria for Determining<lb/> Refugee Status under the 1951 Convention and the 1967 Protocol relating to the Status of Refugees (re-edited<lb/> January 1992), UN Doc HCR/IP/4/Eng/REV.1 (UNHCR Handbook), para 56.<lb/> </bibl>
+      <bibl><label>31</label> ibid.<lb/> </bibl>
+      <bibl><label>32</label> Hugo Grotius, De Jure Belli ac Pacis II, para xvi (cited in Dallal Stevens, UK Asylum Law and Policy:<lb/> Historical and Contemporary Perspectives (Sweet and Maxwell 2004) 12).<lb/> </bibl>
+      <bibl><label>33</label> ECtHR, Chahal v United Kingdom, App no 70/1995/576/662, 11 November 1996, paras 98, 102, 108; ECtHR,<lb/> Vilvarajah v United Kingdom, App no 13163/87, 30 October 1991, para 108; ECtHR, Soering v United Kingdom,<lb/> App No 14038/88, 25 January 1989.<lb/> </bibl>
+      <bibl><label>34</label> International Covenant on Civil and Political Rights (entered into force 23 March 1976) 999 UNTS 171<lb/> (ICCPR).<lb/> </bibl>
+      <bibl><label>35</label> UN Human Rights Committee, General Comment No 20 'Article 7 Prohibition of Torture, or Other Cruel,<lb/> Inhuman or Degrading Treatment or Punishment' (10 March 1992), UN Doc HRI/GEN/1/Rev.7, para 9.<lb/> </bibl>
+      <bibl><label>36</label> The criminalisation of HRDs is a major obstacle to their work; see, eg, Inter-American Commission on Human<lb/> Rights, 'Criminalization of the Work of Human Rights Defenders', 31 December 2015, OEA/Ser.L/V/II. Doc.<lb/> 49/15 60;</bibl>
+      <bibl>and Front Line Defenders, 'Annual Report on Human Rights Defenders at Risk in 2017',<lb/> 22 January 2018, 7, 15-16, https://www.frontlinedefenders.org/en/resource-publication/annual-report-human-<lb/>rights-defenders-risk-2017.<lb/> </bibl>
+      <bibl><label>37</label> UNHCR Handbook (n 30) para 156;</bibl> <bibl>Jones (n 2) 941.<lb/> </bibl>
+      <bibl><label>38</label> UNHCR Handbook (n 30) para 52.<lb/> </bibl>
+      <bibl><label>39</label> ibid.<lb/> </bibl>
+      <bibl><label>40</label> Legal Services Unit of the Immigration and Refugee Board of Canada, 'Interpretation of the Convention<lb/> Refugee Definition in the Case Law', 31 March 2019, para 4.5, https://irb-cisr.gc.ca/en/legal-policy/legal-con-<lb/>cepts/Pages/RefDefPoints.aspx.<lb/> </bibl>
+      <bibl><label>41</label> Canada (Attorney General) v Ward [1993] 2 SCR 689, 103 DLR (4th 1, 20 Imm L.4 (2d) 85, para 739.<lb/> </bibl>
+      <bibl><label>42</label> ibid 738, 745.<lb/> </bibl>
+      <bibl><label>43</label> ibid 738-39, 745.<lb/> </bibl>
+      <bibl><label>44</label> UNHCR, Eligibility Guidelines for Assessing the International Protection Needs of Asylum-Seekers from<lb/> Guatemala (January 2018), UN Doc HCR/EG/GTM/18/01, 39-40.<lb/> </bibl>
+      <bibl><label>45</label> James Hathaway, 'Special Feature Seventh Colloquium on Challenges in International Refugee Law:<lb/> Introduction' (2016) 37 Michigan Journal of International Law 229.<lb/> </bibl>
+      <bibl><label>46</label> James C Hathaway and Michelle Foster, The Law of Refugee Status (2nd edn, Cambridge University Press<lb/> 2014) 362-441.<lb/> </bibl>
+      <bibl><label>47</label> Stephen Meili, 'The Constitutional Right to Asylum: The Wave of the Future in International Refugee Law'<lb/> (2018) 41 Fordham International Law Journal 383, 389.<lb/> </bibl>
+      <bibl><label>48</label> The definition of the term 'human rights defender' derives from art 1 of the Declaration on HRDs (n 3) and is<lb/> interpreted in the light of Fact Sheet 29 (n 4), which established the three requirements for being considered a<lb/> defender: (i) a defender should accept the universality of human rights; (ii) the defender's arguments should<lb/> not necessarily be factually or legally correct; and (iii) the defender should promote human rights through 'peace-<lb/>ful actions'.<lb/> </bibl>
+      <bibl><label>49</label> 1951 Convention (n 18) art 33.<lb/> </bibl>
+      <bibl><label>50</label> ibid arts 18, 24.<lb/> </bibl>
+      <bibl><label>51</label> ibid art 4.<lb/> </bibl>
+      <bibl><label>52</label> ibid art 26.<lb/> </bibl>
+      <bibl><label>53</label> ibid art 28.<lb/> </bibl>
+      <bibl><label>54</label> Joel R Paul, 'Comity in International Law' (1991) 32 Harvard International Law Journal 1, 5.<lb/> </bibl>
+      <bibl><label>55</label> eg, in Germany, those on a spousal visa are on a fast track to naturalisation.<lb/> </bibl>
+      <bibl><label>56</label> Jones (n 2) 943.<lb/> </bibl>
+      <bibl><label>57</label> ibid 944, 949.<lb/> </bibl>
+      <bibl><label>58</label> ibid 935.<lb/> </bibl>
+      <bibl><label>59</label> James C Hathaway, The Rights of Refugees under International Law (Cambridge University Press 2005) 999;<lb/> </bibl><bibl>Gil Loescher, 'The International Refugee Regime: Stretched to the Limit?' (1994) 47 Journal of International<lb/> Affairs 351, 351-53.<lb/> </bibl>
+      <bibl><label>60</label> Jeff Crisp, 'A New Asylum Paradigm? Globalization, Migration and the Uncertain Future of the International<lb/> Refugee Regime', UNHCR Evaluation and Policy Analysis Unit, Working Paper No 100, December 2003, 5,<lb/> http://www.unhcr.org/3fe16d835.pdf.<lb/> </bibl>
+      <bibl><label>61</label> James C Hathaway, 'A Reconsideration of the Underlying Premise of Refugee Law' (1990) 31 Harvard<lb/> International Law Journal 129, 177. </bibl>
+
+      <bibl><label>63</label> Erika Feller, 'The Evolution of the International Refugee Protection Regime' (2001) 5 Washington University<lb/> Journal of Law and Policy 129, 134.<lb/> </bibl>
+      <bibl><label>64</label> See, eg, Stephanie J Nawyn, 'Refugees in the United States and the Politics of Crisis' in The Oxford Handbook<lb/> of Migration Crises (Oxford University Press 2018)1, 1-18; </bibl>
+      <bibl>Francois Murphy and Thomas Escritt, 'Germany,<lb/> Austria Set Talks with Italy to Shut Southern Migrant Route to Europe' Reuters, 5 July 2018, https://uk.reu-<lb/>ters.com/article/uk-europe-migrants/germany-austria-set-talks-with-italy-to-shut-southern-migrant-route-to-eur-<lb/>ope-idUKKBN1JV2F0;</bibl>
+      <bibl>Shaun Walker, 'No Entry: Hungary's Crackdown on Helping Refugees', The Guardian,<lb/> 4 June 2018, https://www.theguardian.com/world/2018/jun/04/no-entry-hungarys-crackdown-on-helping-<lb/>refugees.<lb/> </bibl>
+      <bibl><label>65</label> The New York Declaration for Refugees and Migrants (New York Declaration) was passed unanimously on<lb/> 19 September 2016 and was considered a 'game changer', promoting the principles of refugee protection and<lb/> enhancing the international refugee regime. The Global Compact on Refugees was adopted by the vast majority<lb/> of states in 2018 with the purpose of providing a basis for predictable and equitable burden, and responsibility<lb/> sharing among all UN member states. On the other hand, at the same time several states -such as Hungary,<lb/> Poland, the United States, Australia and Austria -refused to sign the Global Compact for Migration, which<lb/> was introduced to boost international cooperation on migration, under the pretext of national sovereignty. The<lb/> Global Compact on Refugees is in total contradiction to the migration policy of several states. Consequently, it<lb/> is, in practice, impossible to have a different agenda on issues that are interrelated. See UNGA Res 71/1,<lb/> New York Declaration for Refugees and Migrants (3 October 2016), UN Doc A/RES/71/1;</bibl>
+      <bibl>UNHCR, The<lb/> Global Compact on Refugees, Draft 3 (4 June 2018), http://www.unhcr.org/events/conferences/5b1579427/offi-<lb/>cial-version-draft-3-global-compact-refugees-4-june-2018.html;</bibl>
+      <bibl>UNHCR, The Global Compact on Refugees,<lb/> Final Draft (26 June 2018), https://www.un.org/pga/72/wp-content/uploads/sites/51/2018/07/Global-Compact-<lb/>on-Refugees.pdf; </bibl>
+      <bibl>UNHCR, The Global Compact for Safe, Orderly and Regular Migration, Final Draft (11 July<lb/> 2018), https://www.un.org/pga/72/wp-content/uploads/sites/51/2018/07/migration.pdf.<lb/> </bibl>
+      <bibl><label>67</label> Brian Gorlick, 'Human Rights and Refugees: Enhancing Protection through International Human Rights Law'<lb/> (2000) 69 Nordic Journal of International Law 117, 122.<lb/> </bibl>
+      <bibl><label>68</label> Alice Edwards believes that is a rights-based and rights-granting instrument on the basis that arts 3-34 are of the<lb/> same nature as some rights granted under various human rights instruments: Alice Edwards, 'Human Rights,<lb/> Refugees, and the Right "To Enjoy" Asylum' (2005) 17 International Journal of Refugee Law 293; </bibl>
+      <bibl>Margaret<lb/> G Wachenfeld and Hanne Christensen, 'Note: An Introduction to Refugees and Human Rights' (1990) 59<lb/> Nordic Journal of International Law 178.<lb/> </bibl>
+      <bibl><label>69</label> Vincent Chetail, 'Are Refugee Rights Human Rights? An Unorthodox Questioning of the Relations Between<lb/> Refugee Law and Human Rights Law' in Ruth Rubio-Marin (ed), Human Rights and Immigration (Oxford<lb/> University Press 2014) 19.<lb/> </bibl>
+      <bibl><label>70</label> Roger Zetter, 'Labelling Refugees: Forming and Transforming a Bureaucratic Identity' (1991) 4 Journal of<lb/> Refugee Studies, 39, 39.<lb/> 71 Hathaway (n 45) 278-369; </bibl>
+      <bibl>McAdam (n 20) 1327; </bibl>
+      <bibl>Guy S Goodwin-Gill and Jane McAdam, The Refugee in<lb/> International Law (3rd edn, Oxford University Press 2007) 201; </bibl>
+      <bibl>Elihu Lauterpacht and Daniel Bethlehem,<lb/> 'The Scope and Content of the Principle of Non-Refoulement: Opinion' in Erika Feller, Volker Türk and<lb/> Frances Nicholson (eds), Refugee Protection in International Law (Cambridge University Press 2003) 87.<lb/> </bibl>
+      <bibl><label>73</label> Ministerial Meeting of States Parties, Declaration of States Parties to the 1951 Convention and/or its 1967<lb/> Protocol relating to the Status of Refugees (13 December 2001), UN Doc HRC/MMSP/2001/09, para 4. The<lb/> Declaration was endorsed by UNGA Res 57/187 (6 February 2003), UN Doc A/RES/57/187, para. 3;<lb/> </bibl>
+      <bibl>Lauterpacht and Bethlehem (n 71) 87-177.<lb/> </bibl>
+      <bibl><label>74</label> Terje Einarsen, 'The European Convention on Human Rights and the Notion of an Implied Right to De Facto<lb/> Asylum' (1990) 2 International Journal of Refugee Law 361; </bibl>
+      <bibl>Richard Plender and Nuala Mole, 'Beyond the<lb/> Geneva Convention: Constructing a De Facto Right of Asylum from International Human Rights Instruments'<lb/> in Frances Nicholson and Patrick Twomey (eds), Refugee Rights and Realities: Evolving International<lb/> Concepts and Regimes (Cambridge University Press 1999) 364.<lb/> </bibl>
+      <bibl><label>75</label> Chetail (n 69) 31.<lb/> </bibl>
+      <bibl><label>76</label> 1951 Convention (n 18) art 31(B).<lb/> </bibl>
+      <bibl><label>77</label> Universal Declaration of Human Rights, UNGA Res 217A (III) (10 December 1948), UN Doc A/810, art 14(1)<lb/> of which provides that '[e]veryone has the right to seek and to enjoy in other countries asylum from persecution'.<lb/> </bibl>
+      <bibl><label>78</label> Edwards (n 68) 301.<lb/> </bibl>
+      <bibl><label>79</label> UN Conference of Plenipotentiaries on the Status of Refugees and Stateless Persons, Summary Record of the<lb/> Thirteenth Meeting (22 November 1951), UN Doc A/CONF.2/SR13 (France).<lb/></bibl>
+
+      <bibl><label>80</label> Crisp (n 60) 8.<lb/> </bibl>
+
+      <bibl><label>81</label> James Hathaway, 'Why Refugee Law Still Matters' (2007) 8 Melbourne Journal of International Law, 89, 101.<lb/> </bibl>
+      <bibl><label>82</label> Guy Goodwin-Gill, 'The Dynamics of International Refugee Law' (2014) 25 International Journal of Refugee<lb/> Law 651, 655; </bibl>
+      <bibl>Jaya Ramji-Nogales, 'Moving beyond the Refugee Law Paradigm' (2017) 111 American Journal of<lb/> International Law 8, 10.<lb/> </bibl>
+      <bibl><label>83</label> Statute of the Office of the United Nations High Commissioner for Refugees, UNGA Res 428(V) (14 December<lb/> 1950), UN Doc A/RES/428(V).<lb/> </bibl>
+      <bibl><label>84</label> Hathaway believes that the establishment of an additional supervisory mechanism for the 1951 Convention on<lb/> the model of monitoring treaty bodies would be unnecessary in the sense that the UNHCR seems to be in a more<lb/> favourable position compared with treaty monitoring mechanisms that rely on the under-resourced UN High<lb/> Commissioner for Human Rights to support their work: James Hathaway, 'Epilogue: Challenges to the<lb/> Viability of Refugee Rights' in James Hathaway (ed), The Rights of Refugees under International<lb/> Law (Cambridge University Press 2005) 995.<lb/></bibl>
+
+      <bibl><label>85</label> UNHCR Handbook (n 30).<lb/> </bibl>
+      <bibl><label>86</label> James Hathaway, 'New Directions to Avoid Hard Problems: The Distortion of the Palliative Role of Refugee<lb/> Protection' (1995) 8 Journal of Refugee Studies 288.<lb/> </bibl>
+      <bibl><label>87</label> ibid.<lb/> </bibl>
+      <bibl><label>88</label> Goodwin-Gill (n 82) 655.<lb/> </bibl>
+      <bibl><label>89</label> Anja Seibert-Fohr, 'The Fight Against Impunity under the International Covenant on Civil and Political Rights'<lb/> (2002) 6 Max Planck Yearbook of United Nations Law Online 301, 310.<lb/> </bibl>
+      <bibl><label>90</label> Nuala Mole, Asylum and the European Convention on Human Rights (Council of Europe 2003) 8, 17.<lb/> </bibl>
+
+      <bibl><label>91</label> Eurostat, '1.2 Million First Time Asylum Seekers Registered in 2016', 16 March 2017, Doc 46/2017, https://ec.<lb/> europa.eu/eurostat/documents/2995521/7921609/3-16032017-BP-EN.pdf/e5fa98bb-5d9d-4297-9168-d07c67d1c9e1;<lb/> </bibl>
+      <bibl>Eurostat, 'Statistics Explained: Countries of Origin of (Non-EU) Asylum Seekers in the EU 28 Member States, 2015<lb/> and 2016', 15 March 2017, https://ec.europa.eu/eurostat/statistics-explained/index.php/File:Countries_of_origin_of_<lb/> (non-EU)_asylum_seekers_in_the_EU-28_Member_States,_2015_and_2016_(thousands_of_first_time_applicants)<lb/> _YB17.png.<lb/> </bibl>
+      <bibl><label>92</label> The Dublin Regulation sets out which country is responsible for the examination of asylum claims presented by<lb/> people who arrive in Europe. On the other hand, the Asylum Procedure Directive, which is a distinct piece of law,<lb/> is intended to harmonise procedural guarantees and ensure the quality of asylum decision making within the<lb/> Union: Regulation (EU) No 604/2013 of 26 June 2013 establishing the Criteria and Mechanisms for<lb/> Determining the Member State Responsible for Examining an Application for International Protection Lodged<lb/> in One of the Member States by a Third-Country National or a Stateless Person (recast) [2013] OJ L 180/31<lb/> (Dublin Regulation);</bibl>
+      <bibl>Directive 2013/32/EU of 26 June 2013 on Common Procedures for Granting and<lb/> Withdrawing International Protection [2013] OJ L 180/60.<lb/> </bibl>
+      <bibl><label>93</label> See, eg, Council Regulation (EC) No 2725/2000 of 11 December 2000 concerning the Establishment of<lb/> 'Eurodac' for the Comparison of Fingerprints for the Effective Application of the Dublin Convention [2000]<lb/> </bibl>
+      <bibl>OJ L 316/1; Council Directive 2003/9/EC of 27 January 2003 laying down Minimum Standards for the<lb/> Reception of Asylum Seekers [2003] OJ L 31/18.<lb/> </bibl>
+      <bibl><label>94</label> Maryellen Fullerton, 'Refugees and the Primacy of European Human Rights Law' (2017) 21 UCLA Journal of<lb/> International Law and Foreign Affairs 45, 54-55.<lb/> </bibl>
+
+      <bibl><label>95</label> Front Line Defenders, 'Global Analysis 2020', 28-35, 44-49, https://www.frontlinedefenders.org/sites/default/<lb/> files/fld_global_analysis_2020.pdf.<lb/> </bibl>
+      <bibl><label>96</label> UNHCR, States Parties to the Status of Refugees and the 1967 Protocol, April 2015, https://www.unhcr.org/pro-<lb/>tect/PROTECTION/3b73b0d63.pdf.<lb/> </bibl>
+      <bibl><label>97</label> Martin Jones, 'Expanding the Frontiers of Refugee Law: Developing a Broader Law of Asylum in the Middle<lb/> East and Europe' (2017) 9 Journal of Human Rights Practice 212, 214.<lb/> </bibl>
+      <bibl><label>98</label> eg, Hungary took the drastic measure of building fences along its borders with Serbia and Croatia to keep out<lb/> refugees: Ferruccio Pastorea and Giulia Henry, 'Explaining the Crisis of the European Migration and Asylum<lb/> Regime' (2016) 51 The International Spectator 44, 54.<lb/> </bibl>
+      <bibl><label>99</label> Dublin Regulation (n 92).<lb/> </bibl>
+      <bibl><label>100</label> Fullerton (n 94) 56.</bibl>
+
+      <bibl><label>102</label> European Commission, Communication 'A European Agenda on Migration', 13 May 2015, COM (2015) 240<lb/> final 5.<lb/> </bibl>
+      <bibl><label>103</label> European Commission Migration and Home Affairs, 'The Hotspot Approach to Managing Exceptional<lb/> Migration Flows', 11 September 2015, https://ec.europa.eu/home-affairs/sites/homeaffairs/files/what-we-do/pol-<lb/>icies/european-agenda-migration/background-information/docs/2_hotspots_en.pdf;</bibl>
+      <bibl>Arne Niemann and Natascha<lb/> Zaun, 'EU Refugee Policies and Politics in Times of Crisis: Theoretical and Empirical Perspectives' (2018)<lb/> 56(1) Journal of Common Market Studies 3, 5-6.<lb/> </bibl>
+      <bibl><label>104</label> European Commission Migration and Home Affairs, ibid.<lb/> </bibl>
+      <bibl><label>105</label> European Court of Auditors, 'EU Response to the Refugee Crisis: The "Hotspot" Approach', Special Report<lb/> No 06/2017, 68-74, https://op.europa.eu/webpub/eca/special-reports/refugee-crisis-hotspots-06-2017/en;</bibl>
+      <bibl>Darren<lb/> Neville, Sarah Sy and Amalia Rigon, 'On the Frontline: The Hotspot Approach to Managing Migration',<lb/> European Parliament Policy Department C: Citizens' Rights and Constitutional Affairs, May 2016, http://www.<lb/> europarl.europa.eu/RegData/etudes/STUD/2016/556942/IPOL_STU(2016)556942_EN.pdf.<lb/> </bibl>
+      <bibl><label>106</label> Agustín José Menendez, 'The Refugee Crisis: Between Human Tragedy and Symptom of the Structural Crisis<lb/> of European Integration' (2016) 22 European Law Journal 388, 408;</bibl>
+      <bibl>Satoko Horii, 'Accountability, Dependency,<lb/> and EU Agencies: The Hotspot Approach in the Refugee Crisis' (2018) 38 Refugees Survey Quarterly 204, 204.<lb/> </bibl>
+      <bibl><label>107</label> eg, the Moria hotspot (refugee camp on the Greek island of Lesvos) is so overcrowded that it is now two and a<lb/> half times over its capacity. Asylum seekers do not enjoy a standard of adequate living, personal security and well-<lb/>being, while camps are harmful to the environment and public health. Greece is no exception to the rule; it is rather<lb/> an indicative example of what happens in other hotspots in Italy and in refugee camps such as that in Calais<lb/> (France), which is known as the 'Jungle'. See further Anna Papoutsi and others, 'The EC Hotspot Approach in<lb/> Greece: Creating Liminal EU Territory' (2019) 45(12) Journal of Ethnic and Migration Studies 2200, 2200;<lb/> </bibl>
+      <bibl>Ioanna Pervou, 'Refugees and Vulnerability: The Crisis and the Shift in Human Rights Protection' (2017) 4<lb/> Queen Mary Human Rights Law Review 1, 11;</bibl>
+      <bibl>Helene Lambert, Paul Tiedemann and Francesco Messineo,<lb/> 'Comparative Perspectives of Constitutional Asylum in France, Italy and Germany: Requiescat in Pace?'<lb/> (2008) 27 Refugee Survey Quarterly 16, 25.<lb/> </bibl>
+      <bibl><label>108</label> Izabella Majcher, 'The EU Hotspot Approach: Blurred Lines between Restriction on and Deprivation of Liberty<lb/> (Part II)', Border Criminologies Blog, 5 April 2018, https://www.law.ox.ac.uk/research-subject-groups/centre-<lb/>criminology/centreborder-criminologies/blog/2018/04/eu-hotspot-0.<lb/> </bibl>
+
+      <bibl><label>109</label> James Milner and Gil Loescher, 'Responding to Protracted Refugee Situations: Lessons from a Decade of<lb/> Discussion', Refugee Studies Centre, Oxford Department of International Development, University of Oxford,<lb/> Forced Migration Policy Briefing 6, January 2011, 4, https://www.rsc.ox.ac.uk/files/files-1/pb6-responding-pro-<lb/>tracted-refugee-situations-2011.pdf.<lb/> </bibl>
+      <bibl><label>110</label> Fullerton (n 94) 50.<lb/> </bibl>
+      <bibl><label>111</label> ECtHR, MSS v Greece and Belgium, App no 30696/09, 21 January 2011, para 424.<lb/> </bibl>
+      <bibl><label>112</label> ibid para 253;</bibl>
+      <bibl>ECtHR, Budina v Russia, App no 45603/05, 18 June 2009, para 3.<lb/> </bibl>
+      <bibl><label>113</label> ECtHR, Khlaifia and Others v Italy, App No 14483/12,1 September 2015, para 194<lb/></bibl>
+      <bibl><label>114</label> Moritz Baumgartel, 'Facing the Challenge of Migratory Vulnerability in the European Court of Human Rights'<lb/> (2020) 38 Netherlands Quarterly of Human Rights 12, 23-25.<lb/> </bibl>
+      <bibl><label>115</label> Khlaifia and Others v Italy (n 113) para 185.<lb/> </bibl>
+      <bibl><label>116</label> ECtHR, JR and Others v Greece, App no 22696/16, 25 January 2018, para 116.<lb/> </bibl>
+
+      <bibl><label>117</label> ibid para 112.<lb/> </bibl>
+      <bibl><label>118</label> ibid paras 139, 143;</bibl>
+      <bibl>Khlaifia and Others v Italy (n 113) para 185.<lb/> </bibl>
+      <bibl><label>119</label> Marie-Benedicte Dembour, When Humans Become Migrants: Study of the European Court of Human Rights<lb/> with an Inter-American Counterpoint (Oxford University Press 2015);</bibl> <bibl>Cathryn Costello, The Human Rights of<lb/> Migrants and Refugees in European Law (Oxford University Press 2015).<lb/> </bibl>
+      <bibl><label>120</label> Pervou (n 107) 14.<lb/> </bibl>
+      <bibl><label>121</label> Ramji-Nogale (n 82) 10.<lb/> </bibl>
+      <bibl><label>122</label> Lyra Jakulevičienė, 'Migration Related Restrictions by the EU Member States in the Aftermath of the 2015<lb/> Refugee "Crisis" in Europe: What Did We Learn?' (2017) 3 International Comparative Jurisprudence 222, 225.<lb/> </bibl>
+      <bibl><label>123</label> ibid.<lb/> </bibl>
+      <bibl><label>124</label> The argument that there is no violation of the prohibition of non-refoulement, because the individual never<lb/> entered the territory of the state and sought asylum and the Convention does not include a right of entry to an<lb/> asylum country, is not valid as the individual was prevented from entering the state: ibid 225.<lb/> </bibl>
+
+      <bibl><label>125</label> Patryk Kugiel, 'The Refugee Crisis in Europe: True Causes, False Solutions' (2016) 25(4) Polish Quarterly of<lb/> International Affairs 41, 50.<lb/> </bibl>
+      <bibl><label>126</label> Bedrudin Brljavac, 'Refugee Crisis in Europe: The Case Studies of Sweden and Slovakia' (2017) 3 Journal of<lb/> Liberty and International Affairs 91, 94.<lb/> </bibl>
+      <bibl><label>127</label> Kees van der Veer and others, 'Cross-National Measure of Fear-Based Xenophobia: Development of a<lb/> Cumulative Scale' (2011) 109(1) Psychological Reports 27.<lb/> </bibl>
+
+      <bibl><label>128</label> Jan Cienski, 'Why Poland Doesn't Want Refugees', Politico, 21 May 2017, https://www.politico.eu/article/pol-<lb/>itics-nationalism-and-religion-explain-why-poland-doesnt-want-refugees.<lb/> </bibl>
+      <bibl><label>129</label> Andreas H Eiset and Christian Wejse, 'Review of Infectious Diseases in Refugees and Asylum Seekers:<lb/> Current Status and Going Forward' (2017) 38(22) Public Health Reviews 1, 7.<lb/> </bibl>
+      <bibl><label>130</label> Crisp (n 60) 10.<lb/> </bibl>
+      <bibl><label>131</label> McQuaid (n 17) 18.<lb/> </bibl>
+      <bibl><label>132</label> ibid 17.<lb/> </bibl>
+
+      <bibl><label>133</label> Refugees Act, 2006 (Uganda), art 35(d) and (e).<lb/> </bibl>
+      <bibl><label>134</label> UNHCR, Guidelines on International Protection No. 9: Claims to Refugee Status based on Sexual Orientation<lb/> and/or Gender Identity within the context of Article 1A(2) of the 1951 Convention and/or its 1967 Protocol relat-<lb/>ing to the Status of Refugees (23 October 2012), UN Doc HCR/GIP/12/01, paras 30-33;</bibl>
+      <bibl>UNHCR, Guidelines on<lb/> International Protection No. 13: Applicability of Article 1D of the 1951 Convention relating to the Status of<lb/> Refugees to Palestinian Refugees (December 2017), UN Doc HCR/GIP/17/13, para 28.<lb/> </bibl>
+      <bibl><label>135</label> Will Englund, 'Snowden Says He Will Seek Asylum in Russia', The Washington Post, 12 July 2013, https://www.<lb/> washingtonpost.com/world/snowden-wants-meeting-with-human-rights-activists-lawyers/2013/07/12/237d5254-eac6-<lb/>11e2-a301-ea5a8116d211_story.html?utm_term=.7032a3d04d0a.<lb/> </bibl>
+      <bibl><label>136</label> ibid.<lb/> </bibl>
+      <bibl><label>137</label> Ashley Fantz, Phil Black and Michael Martinez, 'Snowden out of Airport, still in Moscow', CNN, 2 August<lb/> 2013, https://edition.cnn.com/2013/08/01/us/nsa-snowden/index.html.<lb/> </bibl>
+      <bibl><label>138</label> Human Rights Council, Report of the Special Representative on the Situation of Human Rights Defenders<lb/> (1 February 2016), UN Doc A/HRC/31/55/, para 72.<lb/> </bibl>
+
+      <bibl><label>139</label> Human Rights Council, Report of the Special Rapporteur on the Situation of Human Rights Defenders<lb/> (16 January 2018), UN Doc A/HRC/37/51, paras 59-60 (Human Rights Council (2018)).<lb/> </bibl>
+      <bibl><label>140</label> McQuaid (n 17) 16.<lb/> </bibl>
+      <bibl><label>141</label> Human Rights Council (2018) (n 139) para 37.<lb/> </bibl>
+      <bibl><label>142</label> ibid para 38.<lb/> </bibl>
+
+      <bibl><label>143</label> Alice M Nah, 'Countering the Stigmatisation of Human Rights Defenders', Centre for Applied Human Rights,<lb/> University of York, Human Rights Defender Hub, Policy Paper 5, October 2018, https://www.york.ac.uk/media/<lb/> cahr/documents/Countering%20the%20Stigmatization%20of%20Human%20Rights%20Defenders,%20Human%<lb/> 20Rights%20Defender%20Policy%20Brief%205.pdf.<lb/> </bibl>
+      <bibl><label>144</label> Inter-American Commission on Human Rights, Criminalization of the Work of Human Rights Defenders,<lb/> 31 December 2015, OEA/Ser.L/V/II. Doc. 49/15, 60;</bibl>
+      <bibl>Sarah M Brooks, '"Troublemakers" and "Foreign<lb/> Agents": The Situation of Corporate Human Rights Defenders -Submission to the African Commission on<lb/> Human and Peoples' Rights Working Group on Extractive Industries, Environment and Human Rights<lb/> Violations', International Service for Human Rights, July 2015, https://www.ishr.ch/sites/default/files/article/<lb/> files/submission_to_the_african_commission_v2.pdf;</bibl>
+      <bibl>Protection International, 'Criminalisation of Human Rights<lb/> Defenders: Categorisation of the Problem and Measures in Response', December 2015, https://www.protectionin-<lb/>ternational.org/wp-content/uploads/2012/02/ProtectionInternational_English_Update.pdf.</bibl>
+
+    </listBibl>
+  </text>
+</TEI>

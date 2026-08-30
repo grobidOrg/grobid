@@ -169,7 +169,7 @@ public class SegmentationTrainer extends AbstractTrainer {
 
                 List<String> labeled = parser.getLabeledResult();
 
-                // For dh-law-footnotes flavor, remap low-support labels
+                // For article/footnotes-refs flavor, remap low-support labels
                 //                if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES) {
                 //                    labeled = remapLowSupportLabels(labeled);
                 //                }
@@ -287,7 +287,7 @@ public class SegmentationTrainer extends AbstractTrainer {
     }
 
     /**
-     * Remap low-support segmentation labels to parent labels for the dh-law-footnotes flavor.
+     * Remap low-support segmentation labels to parent labels for the article/footnotes-refs flavor.
      * <acknowledgement>/<annex>/<funding>/<conflict> → <body>
      */
     private static List<String> remapLowSupportLabels(List<String> labeled) {

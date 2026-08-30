@@ -65,7 +65,7 @@ public class BiblioItem {
     //TODO: keep in sync with teiId - now teiId is generated in many different places
     private Integer ordinal;
     // optional grouping label emitted as @n on the biblStruct (e.g. the footnote number shared by
-    // several references belonging to the same footnote in the dh-law-footnotes flavour)
+    // several references belonging to the same footnote in the article/footnotes-refs flavour)
     private String teiGroupLabel;
     private List<BoundingBox> coordinates = null;
 
@@ -2312,7 +2312,7 @@ public class BiblioItem {
             tei.append(" ");
 
             // optional grouping attribute: references sharing the same @n belong to the same footnote
-            // (dh-law-footnotes flavour). Additive only - the xml:id "b{n}" is left untouched so that
+            // (article/footnotes-refs flavour). Additive only - the xml:id "b{n}" is left untouched so that
             // body callouts <ref target="#bN"> keep resolving.
             String groupLabelAttr = StringUtils.isBlank(teiGroupLabel)
                     ? ""

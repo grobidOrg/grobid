@@ -1,0 +1,230 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1163__23521341-12340137">
+    <titleStmt>
+      <title level="a">China under Western Aggression: Discourse Transformations, Identity Shifts, and National Reconstruction</title>
+      <author>
+        <persName>
+          <forename>Rong</forename>
+          <surname>Ma</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Walter de Gruyter GmbH</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2022</date>
+      <idno type="DOI">10.1163/23521341-12340137</idno>
+      <ptr target="https://doi.org/10.1163/23521341-12340137"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Rong Ma. (2022). China under Western Aggression: Discourse Transformations, Identity Shifts, and National Reconstruction. Journal of Chinese Humanities, 8(3), 279-302. DOI: 10.1163/23521341-12340137</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">China under Western Aggression: Discourse Transformations, Identity Shifts, and National Reconstruction</title>
+          <author>
+            <persName>
+              <forename>Rong</forename>
+              <surname>Ma</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Journal of Chinese Humanities</title>
+          <imprint>
+            <biblScope unit="volume">8</biblScope>
+            <biblScope unit="issue">3</biblScope>
+            <biblScope unit="page" from="279" to="302">279-302</biblScope>
+            <date when="2022">2022</date>
+            <publisher>Walter de Gruyter GmbH</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.1163/23521341-12340137</idno>
+        <ptr target="https://doi.org/10.1163/23521341-12340137"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:50:27.925096Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">fd543f4</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-17T17:50:27.925096Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-20T16:35:30.157Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-03-20T16:51:59.592Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-03-23T13:59:18.231Z" status="draft" who="#sandfort">
+      <note type="label">v3 (sandfort)</note>
+      <desc>2. Pass started</desc>
+    </change>
+    <change when="2026-03-23T14:32:36.366Z" status="draft" who="#sandfort">
+      <desc>2. Pass nearly finished</desc>
+    </change>
+    <change when="2026-03-23T14:43:47.135Z" status="checked" who="#sandfort">
+      <desc>2. Pass done</desc>
+    </change>
+    <change when="2026-04-20T15:01:39.009Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-20T16:20:07.801Z" status="checked" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-21T09:33:44.319Z" status="checked" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-21T09:34:07.518Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> Lu Fanzhi 魯凡之, Zhongguo fazhan yu wenhua jiegou 中國發展與文化結構 (Hong Kong:<lb/> Jixian she, 1998), 26.<lb/> </bibl>
+      <bibl><label>2</label> The four signs of a "Civil ethnic polity" include: 1. territory forged by historical circumstance;<lb/> 2 a unified legal and governmental body; 3. legal and political legal rights; 4. shared culture<lb/> and awareness. See Anthony D. Smith, National Identity (Reno: University of Nevada Press,<lb/> 1991), 11.<lb/> </bibl>
+      <bibl><label>3</label> "… twelve major civilizations, seven of which no longer exist (Mesopotamian, Egyptian,<lb/> Cretan, Classical, Byzantine, Middle American, Andean) and five which do (Chinese, Japanese,<lb/> Indian, Islamic, and Western)." See Samuel P. Huntington, The Clash of Civilizations and the<lb/> Remaking of World Order (New York: Simon &amp; Schuster, 1996), 45.<lb/> </bibl>
+      <bibl><label>4</label> Zhan Zhonghe 湛中和, "Dizhonghai wenhuaquan yu xifang wenming dutexing de genyuan"<lb/> 地中海文化圈與西方文明獨特性的根源, Hunan shifan daxue shehui kexue xuebao 湖南<lb/> 師範大學社會科學學報, no. 4 (2010): 128-31.<lb/> </bibl>
+      <bibl><label>5</label> Xiao Zhiqin 肖志欽 and Xiao Jian'an 肖建安, "Limadou jiqi dui Zhongguo fanyi shi de<lb/> gongxian" 利瑪竇及其對中國翻譯史的貢獻, Loudi shizhuan xuebao 婁底師專學報,<lb/> no. 4 (2003): 33-35.<lb/> </bibl>
+      <bibl><label>6</label> It would seem that, after unsuccessful attempts at opening trade routes with Tibet, British<lb/> troops -invaded Tibet in 1903, occupying Lhasa and finally, in 1906, forcing the Qing gov-<lb/>ernment to sign the "Sino-British Convention on British and Tibetan Relations." See Zhang<lb/> Zhirong 張植榮, Guoji guanxi yu Xizang wenti 國際關係與西藏問題 (Beijing: Lüyou jiaoyu<lb/> chubanshe, 1994), 42-44.<lb/> </bibl>
+      <bibl><label>7</label> Western ideas of "sovereignty (zhuquan 主權)" and "suzerainty (zongzhuquan 宗主權)" and<lb/> the distinctions between them do not exist in Sinitic traditions. At the Simla Conference<lb/> of 1913, England suggested dividing Tibet into "inner Tibet" (to include Qinghai the Kham<lb/> region) and "outer Tibet" (consisting of Ü-Tsang), with the central Chinese government hold-<lb/>ing suzerainty, but not sovereignty, over the latter. See Zhang Zhirong, Guoji guanxi yu Xizang<lb/> wenti, 62.<lb/> </bibl>
+      <bibl><label>8</label> From the end of the 19th century to the 1930s, missionaries active in Yunnan, Guizhou,<lb/> and Sichuan provinces preached to ethnic minorities. Around that time, they devised and<lb/> published on several ethnic minority orthographies. The British Methodist missionary Sam<lb/> Pollard devised Old Miao script. The British James O. Fraser of the Inner China Mission<lb/> developed Old Lisu script with Sara Ba Thaw, a preacher of the Karen peoples of Myanmar.<lb/> Missionaries of the American Baptist Mission Society such as Josiah Nelson Cushing and<lb/> O. Hanson devised Singpho writing. Vincent M. Young of the American Baptist Convention<lb/> developed both the Lahu and Wa scripts. Australian missionary Gladstone Porteous devised<lb/> Yi script. See Chen Jianming 陳建明, "Chuanjiaoshi zai xinan shaoshu minzu diqu<lb/> de wenzi chuangzhi huodong" 傳教士在西南少數民族地區的文字創制活動.<lb/> Zongjiaoxue yanjiu 宗教學研究, no. 4 (2010): 142-49.<lb/> </bibl>
+      <bibl><label>9</label><lb/> "Even the terms 'Manchu' and 'Han' referring to ethnicities is very modern …… it wasn't<lb/> until the post-1900 hostility broke out between loyalists and revolutionaries that the<lb/> Manchu-Han conflict came to a head. However, the concept of 'Han ethnicity' was also<lb/> being re-invented." See Sun Longji 孫隆基, Lishixue jia de jingxian 歷史學家的經線<lb/> (Guilin: Guangxi shifan daxue chubanshe, 2004), 17.<lb/> </bibl>
+      <bibl><label>10</label>label&gt;<lb/> "Imperial China … at the end of the Qing dynasty was forced into the straightjacket of a<lb/> 'nation-state.'" Sun Longji, Lishixue jia de jingxian, 21.<lb/> </bibl>
+      <bibl><label>11</label><lb/> The Qing government pursued a "diverse empire" where each district administered itself<lb/> via the principle of "governing according to customary practice" (yin su er zhi 因俗而治).<lb/> See Wang Ke 王柯, Zhongguo, cong "tianxia" dao minzu guojia 中國，從 "天下" 到民族<lb/> 國家 (Taipei: Zhengda chubanshe, 2014), 101.<lb/> </bibl>
+      <bibl><label>12</label><lb/> Mao Haijian 茅海建, Jindai de chidu: liangci Yapian Zhanzheng junshi yu waijiao 近代的<lb/> 尺度：兩次鴉片戰爭軍事與外交 (Bejiing: Shenghuo dushu xinzhi sanlian shudian,<lb/> 2011), 250.<lb/> </bibl>
+      <bibl><label>13</label><lb/> "The British conquest of India was an act of urging Indian people to kill Indian people."<lb/> See Yang Du 楊度, "'Youxue yibian' xu" "遊學譯編" 敘, in Xinhai geming qianshinian jian<lb/> shi lun xuan ji 辛亥革命前十年間時論選集, ed. Zhang Nan 張柟 and Wang Renzhi<lb/> 王忍之 (Beijing: Shenghuo dushu xinzhi sanlian shudian, 1960), 1: 251.<lb/> </bibl>
+      <bibl><label>14</label><lb/> Datongbao 大同報, a newspaper created by Chinese and Manchu bannermen studying<lb/> in Japan, strongly promoted "Equality between Manchu and Han people and unity of<lb/> Manchu, Han, Mongol, Hui, and Tibetan people as citizens of one great nation." See Huang<lb/> Xingtao 黃興濤, Chongsu Zhonghua: jindai Zhongguo "Zhonghua minzu" guannian<lb/> yanjiu 重塑中華：近代中國 "中華民族" 觀念研究 (Hong Kong: Sanlian shudian,<lb/> 2017), 101-2.<lb/> </bibl>
+      <bibl><label>15</label><lb/> Elie Kedourie, Nationalism (New York: F.A. Praeger, 1960.), 12-13. </bibl>
+      <bibl>For further discussion<lb/> on the evolution of the term "nation," see Liah Greenfeld, Nationalism: Five Roads to<lb/> Modernity (Cambridge: Harvard University Press, 1993), 4-8.<lb/> </bibl>
+      <bibl><label>16</label><lb/> Kedourie, Nationalism, 14.<lb/> </bibl>
+      <bibl><label>17</label><lb/> Eric J. Hobsbawm, Nations and Nationalism since 1780: Programme, Myth, Reality (Cambridge:<lb/> Cambridge University Press, 1990), 3.<lb/> </bibl>
+      <bibl><label>18</label><lb/> Kedourie, Nationalism, 9.<lb/> </bibl>
+      <bibl><label>19</label><lb/> The original text renders Yinjili guo with the characters 英咭唎国, showing that the<lb/> transliteration of names of countries continued to undergo revision and reconsideration.<lb/> See Zheng Zhenduo 鄭振鐸, Wan Qing wenxuan 晚清文選 (Beijing: Zhongguo shehu-<lb/>ixue chubanshe, 2002), 4.<lb/> </bibl>
+      <bibl><label>20</label><lb/> Lin Zexu 林則徐, Sizhou zhi 四洲志 (Beijing: Huaxia chubanshe, 2002), 114-17.<lb/> </bibl>
+      <bibl><label>21</label><lb/> Lydia H. Liu, Translingual Practice: Literature, National Culture, and Translated Modernity -<lb/>China, 1900-1937 (Stanford: Stanford University Press, 1995), 360.<lb/> </bibl>
+      <bibl><label>22</label><lb/> Yan Fu 嚴復, Tianyan lun 天演論 (Beijing: Huaxia chubanshe, 2002), 10. </bibl>
+      <bibl><label>24</label><lb/> Lin Zexu, Sizhou zhi, 114-17.<lb/> </bibl>
+      <bibl><label>25</label><lb/> Liang Qichao 梁啟超, "Chunqiu Zhongguo yidi bian xu" 春秋中國夷狄辨序, in Yin<lb/> bingshi heji: Wenji 飲冰室合集：文集 (Beijing: Zhonghua shuju, 1989), 2: 57.<lb/> </bibl>
+      <bibl><label>26</label><lb/> Gu Jiegang 顧颉剛, "'Zhongguo benbu' yi ming jiying feiqi" "中國本部"一名極應廢<lb/> 棄, Yishibao 益世報, January 1, 1939.<lb/> </bibl>
+      <bibl type="footnote"><label>27</label><lb/> At the end of 1919, Chen Wangdao 陳望道 translated the Japanese version of The<lb/> Communist Manifesto into Chinese. Chen Duxiu 陳獨秀 and Li Dazhao 李大釗 proof-<lb/>read it. It was published in August of 1920 by the Shanghai Socialist Research Publishing<lb/> Company.<lb/> </bibl>
+      <bibl><label>28</label><lb/> Wang Binbin 王彬彬, "Gezai Zhong-Xi zhijian de Riben -xiandai hanyu zhong de riyu<lb/> 'wai lai yu' wenti" 隔在中西之間的日本 -現代漢語中的日語"外來語"問題,<lb/> Shanghai wenxue 上海文學, no. 8 (1998): 71-80.<lb/> </bibl>
+      <bibl><label>29</label><lb/> Pei Yu 裴鈺, "Hunshen fama: bu jiang 'Riben hanyu' jiu buneng shuohua" 渾身發麻： 不講<lb/> "日本漢語"就不能說話, Lianhe zaobao 聯合早報, Feb. 9, 2009.<lb/> </bibl>
+      <bibl><label>30</label><lb/> Liang Qichao, "Lun xue Ribenwen zhi yi" 論學日本文之益, in Yinbingshi heji, 4: 80.<lb/> </bibl>
+      <bibl><label>31</label><lb/> Liang Qichao, "Chunqiu Zhongguo yidi bian xu," 2: 58.<lb/> </bibl>
+      <bibl><label>32</label><lb/> Ge Zhaoguang 葛兆光, Zhai zi Zhongguo: Chongjian youguan "Zhongguo" de lishi lunshu<lb/> 宅兹中國：重建有關"中國"的歷史論述 (Beijing: Zhonghua shuju, 2011), 186.<lb/> </bibl>
+      <bibl><label>33</label><lb/> Lin Zexu, Sizhou zhi, 114.<lb/> </bibl>
+      <bibl><label>34</label><lb/> Lydia H. Liu, The Clash of Empires: The Invention of China in Modern World Making<lb/> (Cambridge: Harvard University Press, 2004), 63-65.<lb/> </bibl>
+      <bibl><label>35</label><lb/> Ibid., 70-71.<lb/> </bibl>
+      <bibl><label>36</label><lb/> Ibid., 35.<lb/> </bibl>
+      <bibl><label>37</label><lb/> Ibid., 34.<lb/> </bibl>
+      <bibl><label>38</label><lb/> Ibid., 43. </bibl>
+      <bibl>This passage appears in the following passage from The Mencius: "Shun was born<lb/> in Zhu Ping, moved to Fu Xia, and died in Ming Tiao. He was a man of the Eastern yi<lb/> lands. King Wen was born in Qi Zhou and died in Bi Ying. He was a man of the Western yi<lb/> lands. The distance between the two lands was over a thousand li. The two men lived over<lb/> a thousand years apart. But when it came to realizing their wishes in the central plains,<lb/> the two were as one. Both the former and the latter are sages; both stood by the same<lb/> principles." See Jiao Xun 焦循, Mengzi Zhengyi 孟子正義, annot. Shen Wenzhuo 沈文倬<lb/> (Beijing: Zhonghua shuju, 1987), 537-40.<lb/> </bibl>
+      <bibl><label>39</label><lb/> "With careful research into various examples of minzu's usage in premodern China, it<lb/> is not hard to realize that its meaning is not clear, seeming to encompass many defini-<lb/>tions, and is largely used to express 'minzhi zushu 民之族属 [people's clan affiliation]' or<lb/> 'minzhi zulei 民之族类 [people's clan].' Its meaning is very similar to zulei." See Huang<lb/> Xingtao, Chongsu Zhonghua: jindai Zhongguo "Zhonghua minzu" guannian yanjiu, 70.<lb/> </bibl>
+      <bibl><label>40</label><lb/> Ya Hanzhang 牙含章, ed., "Minzu juan" 民族卷, in Zhongguo da baike quanshu 中國大<lb/> 百科全書 (Beijing: Zhongguo da baike chubanshe, 1986), 302.<lb/> </bibl>
+      <bibl><label>41</label><lb/> Liang Qichao emphasized in particular the difference between traditional and modern<lb/> notions of state (guojia 國家): "The state refers to the nation as the private property of a<lb/> group. The premodern idea of the state necessarily began with the family … and referred<lb/> to the nation as the public property of its citizens." Liang Qichao, "Datong yishu ju xuli"<lb/> 大同譯書局敘例, in Yinbingshi heji, 2: 56.<lb/> </bibl>
+      <bibl><label>42</label><lb/> Huang Xingtao, Chongsu Zhonghua: jindai Zhongguo "Zhonghua minzu" guannian yanjiu,<lb/> 72.<lb/> </bibl>
+      <bibl><label>43</label>label&gt;<lb/> See "Ren wu fen lei shuo" 人五分類說 in Gezhi huibian 格致彙編 7.2 (1892) cited in<lb/> Frank Dikötter 馮克, Jindai Zhongguo zhi zhongzu guannian 近代中國之種族觀念 (The<lb/> Discourse of Race in Modern China), trans. Yang Lihua 楊立華 (Nanjing: Jiangsu renmin<lb/> chubanshe, 1999), 52.<lb/> </bibl>
+      <bibl><label>44</label><lb/> Dikötter, Jindai Zhongguo zhi zhongzu guannian, 63.<lb/> </bibl>
+      <bibl><label>45</label><lb/> Liang Qichao, "Bianfa tongyi, lunyi shu" 變法通議•論譯書, in Yinbingshi heji, 1: 77.<lb/> </bibl>
+      <bibl><label>46</label><lb/> Liang Qichao, "Chunqiu Zhongguo yidi bian xu," 2: 48.<lb/> </bibl>
+      <bibl><label>47</label><lb/> Liang Qichao, "Lun Zhongguo yu Ouzhou guoti yitong" 論中國與歐洲國體異同, in<lb/> Yinbingshi heji, 4: 64.<lb/> </bibl>
+      <bibl><label>48</label><lb/> Wang Ke 王柯, Minzu zhuyi yu jindai Zhongri guanxi 民族主義與近代中日關係 (Hong<lb/> Kong: Xianggang Zhongwen daxue chubanshe, 2015), 45 and 54.<lb/> </bibl>
+      <bibl><label>49</label><lb/> Ibid., 54.<lb/> </bibl>
+      <bibl><label>50</label><lb/> Ibid., 60-61.<lb/> </bibl>
+      <bibl><label>51</label><lb/> Jin Guantao 金觀濤 and Liu Qingfeng 劉青峰, Guannian shi yanjiu: Zhongguo xiandai<lb/> zhongyao zhengzhi shuyu de xingcheng 觀念史研究：中國現代重要政治術語的<lb/> 形成 (Beijing: Falü chubanshe, 2009), 242.<lb/> </bibl>
+      <bibl><label>52</label><lb/> Liang Qichao, "Zhongguo shi xulun" 中國史敘論, in Yinbingshi heji, 4: 6, 11, and 19.<lb/> </bibl>
+      <bibl><label>53</label><lb/> "齊, 海國也。上古時代，我中華民族之有海思想者厥惟齊。 " Liang Qichao, "Lun<lb/> Zhongguo xueshu sixiang bianqian zhi dashi" 論中國學術思想變遷之大勢, in Yin bing<lb/> shi heji, 7: 21. </bibl>
+      <bibl>Shen Songqiao 沈松橋 renders "nation," "nationalism," and "nation-state" as<lb/> "國族," "國族主義," and "國族-國家," respectively. See "Wo yi wo xie jian Xuanyuan -<lb/>Huangdi shenhua yu wan Qing de guozu jiangou" 我以我血薦軒轅 -皇帝神話與晚清<lb/> 的國族建構, Taiwan shehui yanjiu jikan 台灣社會研究季刊 28 (1997): 1-77.<lb/> </bibl>
+      <bibl><label>54</label><lb/> Liang Qichao, "Xin shi xue" 新史學, in Yinbingshi heji, 9: 11.<lb/> </bibl>
+      <bibl><label>55</label><lb/> Liang Qichao, "Zhengzhixue dajia Bolunzhili zhi xueshuo" 政治學大家伯倫知理之<lb/> 學說, in Yinbingshi heji, 13: 75-76.<lb/> </bibl>
+      <bibl><label>56</label><lb/> Zou Rong 邹容, Gemingjun 革命軍 (Beijing: Huaxia chubanshe, 2002), 5, 7, 37, and 42.<lb/> </bibl>
+      <bibl><label>57</label><lb/> Ibid., 1-4.<lb/> </bibl>
+      <bibl><label>58</label><lb/> Chen Tianhua 陳天華, Jingshi zhong, Meng huitou 警世鐘•猛回頭 (Beijing: Huaxia<lb/> chubanshe, 2002).<lb/> </bibl>
+      <bibl><label>59</label><lb/> Sun Zhongshan 孫中山 [Sun Yat-sen], "Mingbao fakan ci"《民報》發刊詞, in Sun<lb/> Zhongshan quanji 孫中山全集 (Beijing: Zhonghua shuju, 2011), 1: 288.<lb/> </bibl>
+
+      <bibl><label>60</label>
+      62<lb/> Sun Zhongshan, "Zhongguo guomindang xuanyan" 中國國民黨宣言, in Sun Zhongshan<lb/> quanji, 7: 3.<lb/> </bibl>
+      <!--missing 60 and 61 bibliographic, label 60 is actual label 62-->
+    <!-- correctly annotated in the segmentation model still missing here -->
+
+      <bibl><label>63</label><lb/> Sun Zhongshan, "Sanmin zhuyi" 三民主義, in Sun Zhongshan quanji, 9: 184-85.<lb/> </bibl>
+      <bibl><label>64</label><lb/> Ibid., 242.<lb/> </bibl>
+      <bibl><label>65</label><lb/> Wang Tonglin 王桐齡, Zhongguo minzu shi 中國民族史 (Changchun: Jilin chuban<lb/> jituan, 2010), 9.<lb/> </bibl>
+      <bibl><label>66</label><lb/> Lü Simian 呂思勉, Zhongguo minzu shi 中國民族史 (Beijing: Dongfang chubanshe,<lb/> 1996), 3.<lb/> </bibl>
+      <bibl><label>67</label><lb/> Lin Huixiang 林惠祥, Zhongguo minzu shi 中國民族史 (Beijing: Shangwu yinshu guan,<lb/> 1998), 2.<lb/> </bibl>
+
+      Works Cited<lb/>
+
+      <bibl>Chen, Jianming 陳建明. "Chuanjiaoshi zai xinan shaoshu minzu diqu de wenzi chuang-<lb/>zhi huodong" 傳教士在西南少數民族地區的文字創制活動. Zongjiaoxue yanjiu<lb/> 宗教學研究, no. 4 (2010): 142-49.<lb/> </bibl>
+      <bibl>Chen, Tianhua 陳天華. Jingshi zhong, Meng huitou警世鐘•猛回頭. Beijing: Huaxia<lb/> chubanshe, 2002.<lb/> </bibl>
+      <bibl>Dikötter, Frank 馮克. Jindai Zhongguo zhi zhongzu guannian 近代中國之種族觀念<lb/> (The Discourse of Race in Modern China). Translated by Yang Lihua 楊立華. Nanjing:<lb/> Jiangsu renmin chubanshe, 1999.<lb/> </bibl>
+      <bibl>Ge, Zhaoguang 葛兆光. Zhaizi Zhongguo: Chongjian youguan "Zhongguo" de lishi<lb/> lunshu宅兹中國:重建有關"中國"的歷史論述. Beijing: Zhonghua shuju, 2011.<lb/> </bibl>
+      <bibl>Greenfeld, Liah. Nationalism: Five Roads to Modernity. Cambridge: Harvard University<lb/> Press, 1992.<lb/> </bibl>
+      <bibl>Gu, Jiegang 顧颉剛. "'Zhongguo benbu' yi ming jiying feiqi" "中國本部"一名極應廢<lb/> 棄. Yishibao 益世報, January 1, 1939.<lb/> </bibl>
+      <bibl>Hobsbawm, Eric J. Nations and Nationalism since 1780: Programme, Myth, Reality.<lb/> Cambridge: Cambridge University Press, 1990.<lb/> </bibl>
+      <bibl>Huang, Xingtao 黃興濤. Chongsu Zhonghua: jindai Zhongguo "Zhonghua minzu" guan<lb/> nian yanjiu 重塑中華:近代中國"中華民族"觀念研究. Hong Kong: Sanlian shudian,<lb/> 2017.<lb/> </bibl>
+      <bibl>Huntington, Samuel P. The Clash of Civilizations and the Remaking of World Order. New<lb/> York: Simon &amp; Schuster, 1996.<lb/> </bibl>
+      <bibl>Jiao, Xun 焦循. Mengzi Zhengyi 孟子正義. Annotated by Shen Wenzhuo 沈文倬.<lb/> Beijing: Zhonghua shuju, 1987.<lb/> </bibl>
+      <bibl>Jin, Guantao 金觀濤 and Liu Qingfeng 劉青峰. Guannian shi yanjiu: Zhongguo xian<lb/> dai zhongyao zhengzhi shuyu de xingcheng 觀念史研究:中國現代重要政治術語的<lb/> 形成. Beijing: Falü chubanshe, 2009.<lb/> </bibl>
+      <bibl>Kedourie, Elie. Nationalism. New York: F.A. Praeger, 1960.<lb/> </bibl>
+      <bibl>Liang, Qichao 梁啟超. Yinbingshi heji: Wenji 飲冰室合集:文集. Beijing: Zhonghua<lb/> shuju, 1989.<lb/> </bibl>
+      <bibl>Lin, Huixiang 林惠祥. Zhongguo minzu shi 中國民族史. Beijing: Shangwu yinshu guan,<lb/> 1998.<lb/> Lin, Zexu 林則徐. Sizhou zhi 四洲志. Beijing: Huaxia chubanshe, 2002.<lb/> </bibl>
+      <bibl>Liu, Lydia H. The Clash of Empires: the Invention of China in Modern World Making.<lb/> Cambridge: Harvard University Press, 2004.<lb/> </bibl>
+      <bibl>Liu, Lydia H. Translingual Practice: Literature, National Culture, and Translated<lb/> Modernity -China, 1900-1937. Stanford: Standford University Press, 1995.<lb/> </bibl>
+      <bibl>Lu, Fanzhi 魯凡之. Zhongguo fazhan yu wenhua jiegou 中國發展與文化結構. Hong<lb/> Kong: Ji xian she, 1998.<lb/> </bibl>
+      <bibl>Lü, Simian 呂思勉. Zhongguo minzu shi中國民族史. Beijing: Dongfang chubanshe,<lb/> 1996.<lb/> </bibl><bibl>Mao, Haijian 茅海建. Jindai de chidu: liangci Yapian Zhanzheng junshi yu waijiao<lb/> 近代的尺度:兩次鴉片戰爭軍事與外交. Bejiing: Shenghuo dushu xinhe sanlian<lb/> shudian, 2011.<lb/> </bibl>
+      <bibl>Pei, Yu 裴鈺. "Hunshen fama: bu jiang 'Riben hanyu' jiu buneng shuohua" 渾身發麻:<lb/> 不講"日本漢語"就不能說話. Lianhe zaobao 聯合早報, Feb. 9, 2009.<lb/> </bibl>
+      <bibl>Shen, Songqiao 沈松橋. "Wo yi wo xie jian Xuanyuan -Huangdi shenhua yu wan Qing<lb/> de guozu jiangou" 我以我血薦軒轅 -皇帝神話與晚清的國族建構. Taiwan shehui<lb/> yanjiu jikan 台灣社會研究季刊 28 (1997): 1-77.<lb/> </bibl>
+      <bibl>Smith, Anthony D. National Identity. Reno: University of Nevada Press, 1991.<lb/> </bibl><bibl>Sun, Longji 孫隆基. Lishixue jia de jingxian 歷史學家的經線. Guilin: Guangxi shifan<lb/> daxue chubanshe, 2004.<lb/> </bibl>
+      <bibl>Sun, Zhongshan 孫中山 [Sun Yat-sen]. Sun Zhongshan quanji 孫中山全集. Beijing:<lb/> Zhonghua shuju, 2011.<lb/> </bibl>
+      <bibl>Wang, Binbin 王彬彬. "Gezai Zhong-Xi zhijian de Riben -xiandai hanyu zhong de<lb/> riyu 'wai lai yu' wenti" 隔在中西之間的日本 -現代漢語中的日語"外來語"問題.<lb/> Shanghai wenxue 上海文學, no. 8 (1998): 71-80.<lb/> </bibl>
+      <bibl>Wang, Ke 王柯. Minzu zhuyi yu jindai Zhong Ri guanxi 民族主義與近代中日關係. Hong<lb/> Kong: Xianggang Zhongwen daxue chubanshe, 2015.<lb/> </bibl>
+      <bibl>Wang, Ke 王柯. Zhongguo, cong "tianxia" dao minzu guojia 中國，從 "天下" 到民族<lb/> 國家. Taipei: Zhengda chubanshe, 2014.<lb/> </bibl>
+      <bibl>Wang, Tonglin 王桐齡. Zhongguo minzu shi 中國民族史. Changchun: Jilin chuban<lb/> jituan, 2010.<lb/> </bibl>
+      <bibl>Xiao, Zhiqin 肖志欽, and Jian'an Xiao 肖建安. "Limadou ji qi dui Zhongguo fanyi shi de<lb/> gongxian" 利瑪竇及其對中國翻譯史的貢獻. Loudi shizhuan xuebao 婁底師專學報,<lb/> no. 4 (2003): 33-35.<lb/> </bibl>
+      <bibl>Ya, Hanzhang 牙含章, ed. "Minzu juan" 民族卷. In Zhongguo dabaike quanchu 中國大<lb/> 百科全書. Beijing: Zhongguo dabaike chubanshe, 1986.<lb/> </bibl>
+      <bibl>Yan, Fu 嚴復. Tianyan lun 天演論. Beijing: Huaxia chubanshe, 2002.<lb/> </bibl>
+      <bibl>Yang, Du 楊度. "'Youxue yibian' xu" "遊學譯編"敘. In Xinhai geming qianshinian jian<lb/> shi lun xuan ji 辛亥革命前十年間時論選集, edited by Zhang Nan 張柟 and Wang<lb/> Renzhi 王忍之. Beijing: Shenhuo dushu xinhe sanlian shudian, 1960.<lb/> </bibl>
+      <bibl>Zhan, Zhonghe 湛中和. "Dizhonghai wenhuaquan yu qifang wenming dutexing de<lb/> genyuan" 地中海文化圈與西方文明獨特性的根源. Hunan shifan daxue shehui kexue<lb/> xuebao 湖南師範大學社會科學學報, no. 4 (2010): 128-31.<lb/> </bibl>
+      <bibl>Zhang, Zhirong 張植榮. Guoji guanxi yu Xizang wenti 國際關係與西藏問題. Beijing:<lb/> Lüyou jiaoyu chubanshe, 1994.<lb/> </bibl>
+      <bibl>Zheng, Zhenduo 鄭振鐸. Wan Qing wenxuan 晚清文選. Beijing: Zhongguo shehuixue<lb/> chubanshe, 2002.<lb/> </bibl>
+      <bibl>Zou, Rong 邹容. Geming jun 革命軍. Beijing: Huaxia chubanshe, 2002.</bibl>
+
+    </listBibl>
+  </text>
+</TEI>

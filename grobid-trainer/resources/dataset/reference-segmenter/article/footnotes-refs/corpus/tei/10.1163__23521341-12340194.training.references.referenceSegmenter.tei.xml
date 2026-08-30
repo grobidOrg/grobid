@@ -1,0 +1,149 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1163__23521341-12340194">
+    <titleStmt>
+      <title level="a">The Bias and Consequences of Prioritizing Public Morality over Private Morality in Modern China</title>
+      <author>
+        <persName>
+          <forename>Lai</forename>
+          <surname>Chen</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Walter de Gruyter GmbH</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2025</date>
+      <idno type="DOI">10.1163/23521341-12340194</idno>
+      <ptr target="https://doi.org/10.1163/23521341-12340194"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Lai Chen. (2025). The Bias and Consequences of Prioritizing Public Morality over Private Morality in Modern China. Journal of Chinese Humanities, 11(2), 109-124. DOI: 10.1163/23521341-12340194</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">The Bias and Consequences of Prioritizing Public Morality over Private Morality in Modern China</title>
+          <author>
+            <persName>
+              <forename>Lai</forename>
+              <surname>Chen</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Journal of Chinese Humanities</title>
+          <imprint>
+            <biblScope unit="volume">11</biblScope>
+            <biblScope unit="issue">2</biblScope>
+            <biblScope unit="page" from="109" to="124">109-124</biblScope>
+            <date when="2025">2025</date>
+            <publisher>Walter de Gruyter GmbH</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.1163/23521341-12340194</idno>
+        <ptr target="https://doi.org/10.1163/23521341-12340194"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:50:22.605889Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">fd543f4</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-17T17:50:22.605889Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-21T17:59:36.870Z" status="unfinished" who="#cboulanger">
+      <note type="label">v7 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-03-21T18:13:54.969Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-03-22T20:21:34.081Z" status="draft" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Renamed to v2 (cboulanger)</desc>
+    </change>
+    <change when="2026-03-23T14:44:21.662Z" status="draft" who="#sandfort">
+      <note type="label">v3 (sandfort)</note>
+      <desc>Renamed to v2 (cboulanger)</desc>
+    </change>
+    <change when="2026-03-23T14:53:40.951Z" status="checked" who="#sandfort">
+      <desc>Renamed to v2 (cboulanger)</desc>
+    </change>
+    <change when="2026-03-23T14:55:17.135Z" status="checked" who="#sandfort">
+      <desc>2. Pass done</desc>
+    </change>
+    <change when="2026-04-20T16:28:43.856Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-20T16:33:41.807Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> Liao Shenbai 廖申白, "Gongmin lunli yu Rujia lunli" 公民倫理與儒家倫理, Zhexue yanjiu<lb/> 哲學研究, no. 11 (2001): 67-74.<lb/> </bibl>
+        <bibl><label>2</label> Wu Qiantao 吳潛濤, ed., Lun gonggong lunli yu gongde 論公共倫理與公德 (Wuhan: Hubei<lb/> renmin chubanshe, 2008), 64.<lb/> </bibl>
+        <bibl><label>3</label> Xu Yuangao 徐元誥, Guoyu jijie 國語集解, annot. Wang Shumin 王樹民 and Shen Changyun<lb/> 沈長雲 (Beijing: Zhonghua shuju, 2002), 89-90.<lb/> </bibl>
+        <bibl><label>4</label> Chen Lai 陳來, Gudai sixiang wenhua de shijie: Chunqiu shidai de zongjiao, lunli yu shehui six-<lb/>iang 古代思想文化的世界-春秋時代的宗教、倫理與社會思想 (Beijing: Shenghuo<lb/> dushu xinzhi sanlian shudian, 2002), 344.<lb/> </bibl>
+        <bibl><label>5</label> It is generally believed that Liang Qichao's concept of the state was directly influenced by<lb/> Konrad Bornhak and Johann K. Bluntschli. Issues 11 to 31 of Qingyi bao 清議報 featured an<lb/> anonymously translated work titled "Deguo Bolunzhili zhu Guojia lun" 德國伯倫知理著<lb/> 國家論.<lb/> </bibl>
+        <bibl><label>6</label> Liang Qichao 梁啟超, Xinmin shuo 新民說 (Beijing: Shangwu yinshuguan, 2016), 19.<lb/> </bibl>
+        <bibl><label>7</label> Ibid., 20.<lb/> </bibl>
+        <bibl><label>8</label> Xiajian Zhishu 狹間直樹 [Naoki Hazama], "Xinmin shuo lüelun" 新民說略論, in Liang<lb/> Qichao Mingzhi Riben Xifang: Riben Jingdu daxue renwen kexue yanjiusuo gongtong yanjiu<lb/> baogao 梁啟超•明治日本•西方-日本京都大學人文科學研究所共同研究報告<lb/> (Beijing: Shehui kexue wenxian chubanshe, 2001), 75-76.<lb/> </bibl>
+<bibl><label>9</label><lb/> Liang Qichao, Xinmin shuo, 19.<lb/> </bibl>
+<bibl><label>10</label><lb/> Ibid., 19.<lb/> </bibl>
+<bibl><label>11</label><lb/> Ibid., 17.<lb/> </bibl>
+        <bibl><label>12</label><lb/> Liu Shipei 劉師培, Jingxue jiaokeshu Lunli jiaokeshu 經學教科書 倫理教科書 (Yangzhou:<lb/> Guangling shushe, 2016), 128.<lb/> </bibl>
+<bibl><label>13</label><lb/> Ibid., 132.<lb/> </bibl>
+<bibl><label>14</label><lb/> Ibid., 132.<lb/> </bibl>
+<bibl><label>15</label><lb/> Ibid., 132.<lb/> </bibl>
+<bibl><label>16</label><lb/> Ibid., 209.<lb/> </bibl>
+<bibl><label>17</label><lb/> Ibid., 209-10.<lb/> </bibl>
+<bibl><label>18</label><lb/> Ibid., 210.<lb/> </bibl>
+<bibl><label>19</label><lb/> Ibid., 237.<lb/> </bibl>
+<bibl><label>20</label><lb/> Ibid., 239.<lb/> </bibl>
+<bibl><label>21</label><lb/> Ibid., 240.<lb/> </bibl>
+<bibl><label>22</label><lb/> Ibid., 242.<lb/> </bibl>
+        <bibl><label>23</label><lb/> Ma Junwu 馬君武, "Lun gongde" 論公德, in Ma Junwu wenxuan 馬君武文選, ed. Zeng<lb/> Degui 曾德珪 (Guilin: Guangxi shifan daxue chubanshe, 2000), 189.<lb/> </bibl>
+<bibl><label>24</label><lb/> Ibid., 189-90.<lb/> </bibl>
+<bibl><label>25</label><lb/> Ibid., 189-90.<lb/> </bibl>
+        <bibl><label>26</label><lb/> Chen Ruoshuo 陳弱水, Gongong yishi yu Zhongguo wenhua 公共意識與中國文化<lb/> (Beijing: Xinxing chubanshe, 2006), 110.<lb/> </bibl>
+        <bibl><label>27</label><lb/> Zhang Yong 張勇, "'Daode' yu 'geming': Xinmin wanbao yu Minbao shiqi Liang Rengong yu<lb/> Zhang Taiyan de 'daode' jiaoshe" "道德"與"革命"-《新民晚報》與《民報》時<lb/> 期梁任公與章太炎的"道德"交涉, Zhongguo xueshu 中國學術 33: 125.<lb/> </bibl>
+<bibl><label>28</label><lb/> Zhang Binglin 章炳麟, "Geming zhi daode" 革命之道德, in Zhang Taiyan zhenglun<lb/> xuanji 章太炎政論選集, ed. Tang Zhijun 湯志鈞 (Beijing: Zhonghua shuju, 1977), 1:<lb/> 314-18.<lb/> </bibl>
+        <bibl><label>29</label><lb/> Xu Teli 徐特立, "Lun guomin gongde" 論國民公德, in Xu Teli wenji 徐特立文集<lb/> (Changsha: Hunan renmin chubanshe, 1980), 437.<lb/> </bibl>
+<bibl><label>30</label><lb/> Ibid., 438.<lb/> </bibl>
+<bibl><label>31</label><lb/> Ibid., 438.</bibl>
+        </listBibl>
+    </text>
+</TEI>

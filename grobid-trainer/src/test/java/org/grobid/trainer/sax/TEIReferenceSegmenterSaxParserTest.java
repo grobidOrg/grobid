@@ -110,7 +110,7 @@ public class TEIReferenceSegmenterSaxParserTest {
     }
 
     /**
-     * The new-style TEI training files (e.g. dh-law-footnotes flavor) carry a full
+     * The new-style TEI training files (e.g. article/footnotes-refs flavor) carry a full
      * <teiHeader> with <sourceDesc><bibl>, application <label>s ("GROBID",
      * "PDF-TEI Editor") and lots of free text. None of that is part of the
      * reference list; it must not be counted toward totalReferences and must not

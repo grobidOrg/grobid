@@ -1,0 +1,685 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.6092__issn.2531-6133__10402">
+    <titleStmt>
+      <title level="a">A Mistake of Natural Law: Sir William Blackstone and the Anglican Way</title>
+      <author>
+        <persName>
+          <forename>Craig A.</forename>
+          <surname>Stern</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>University of Bologna Law Review</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2019</date>
+      <idno type="DOI">10.6092/issn.2531-6133/10402</idno>
+      <ptr target="https://bolognalawreview.unibo.it/article/view/10402"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Craig A. Stern. (2019). A Mistake of Natural Law: Sir William Blackstone and the Anglican Way. University of Bologna Law Review. DOI: 10.6092/issn.2531-6133/10402</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">A Mistake of Natural Law: Sir William Blackstone and the Anglican Way</title>
+          <author>
+            <persName>
+              <forename>Craig A.</forename>
+              <surname>Stern</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">University of Bologna Law Review</title>
+          <imprint>
+            <date when="2019">2019</date>
+            <publisher>University of Bologna Law Review</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.6092/issn.2531-6133/10402</idno>
+        <ptr target="https://bolognalawreview.unibo.it/article/view/10402"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T13:43:01.228477Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T13:43:01.228477Z" status="extraction">
+      <note type="label">review</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-02-18T18:46:40.203Z" status="unfinished" who="#li">
+      <desc>Started first pass</desc>
+    </change>
+    <change when="2026-02-22T16:00:13.518Z" status="unfinished" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-23T09:26:41.551Z" status="draft" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-23T09:26:41.584Z" status="draft" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-24T14:28:12.329Z" status="draft" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-24T14:46:26.228Z" status="draft" who="#sandfort">
+      <desc>started</desc>
+    </change>
+    <change when="2026-02-24T15:03:25.230Z" status="draft" who="#sandfort">
+      <desc>Corrections to 37</desc>
+    </change>
+    <change when="2026-03-02T09:26:46.829Z" status="draft" who="#sandfort">
+      <desc>Corrections till 101</desc>
+    </change>
+    <change when="2026-03-05T14:51:34.317Z" status="draft" who="#sandfort">
+      <desc>Corrections till 221</desc>
+    </change>
+    <change when="2026-03-05T15:12:23.369Z" status="checked" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-06T17:09:03.118Z" status="in-review" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-04-02T14:37:34.081Z" status="in-review" who="#lfoppiano">
+      <note type="label">v6 (lfoppiano)</note>
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-04-02T14:38:23.126Z" status="in-review" who="#lfoppiano">
+      <desc>post-corrections</desc>
+    </change>
+    <change when="2026-05-09T11:57:18.207Z" status="approved" who="#lfoppiano">
+      <desc>post-corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> DANIEL J. BOORSTIN, THE MYSTERIOUS SCIENCE OF THE LAW, at vii (Peter Smith 1973) (1941);<lb/> </bibl>
+<bibl>see also Albert W. Alschuler, Rediscovering Blackstone, 145 U. PA. L. REV. 1, 2 (1996). </bibl>
+          <bibl>The<lb/> Commentaries was hugely popular in the eighteenth and nineteenth centuries. See WILFRID<lb/> PREST, WILLIAM BLACKSTONE 307 (2008).<lb/> </bibl>
+        <bibl><label>2</label> See BOORSTIN, supra note 1, at iii; </bibl>
+          <bibl>see also Alschuler, supra note 1, at 5-9; </bibl>
+<bibl>Joseph W.<lb/> McKnight, Blackstone: Quasi-Jurisprudent, 13 SW L.J. 399, 411 (1959). </bibl>
+          <bibl>The present article<lb/> happens to highlight elements of the Commentaries that commended it to Americans<lb/> of the Founding: "Even those who rejected Blackstone's anti-republican emphasis on<lb/> parliamentary omnipotence . . . had no difficulty in accepting the validity of Blackstone's<lb/> exposition of English common law as founded on custom, divine law, and the law of<lb/> nature, hence providing an entirely appropriate legal foundation for the incipient USA."<lb/> Wilfrid Prest, General Editor's Introduction to 1 WILLIAM BLACKSTONE, COMMENTARIES ON THE<lb/> LAWS OF ENGLAND, at vii, xiv (Wilfrid Prest ed., Oxford Univ. Press 2016) (1765) (footnote<lb/> omitted).<lb/> </bibl>
+        <bibl><label>3</label> See Wilfrid Prest, Blackstone as Architect: Constructing the Commentaries, 15 YALE J.L. &amp;<lb/> HUMAN. 103, 107-08 (2003).<lb/> </bibl>
+        <bibl><label>4</label> McKnight, supra note 2, at 401.<lb/> </bibl>
+        <bibl><label>5</label> See Emily Kadens, Justice Blackstone's Common Law Orthodoxy, 103 NW. U. L. REV. 1553,<lb/> 1566 (2009).<lb/> </bibl>
+        <bibl><label>6</label> See infra notes 45-54 and accompanying text.<lb/> </bibl>
+        <bibl><label>7</label> Sometimes the Commentaries seems to use "natural law" or some similar term for the law<lb/> of nature. See infra text accompanying notes 41-42. </bibl>
+          <bibl>This seeming lack of uniformity and<lb/> rigor in terminology certainly does not foster coherence in the Commentaries. On the other<lb/> hand, Aquinas seems to do likewise. See infra note 33.<lb/> </bibl>
+        <bibl><label>8</label> See infra notes 34-44 and accompanying text.<lb/> </bibl>
+<bibl><label>9</label> In the early sixteenth century, St. German wrote Doctor and Student, "the first major law<lb/> book published in English," "also the first purely analytical English law book," a work<lb/> of "analytical theology and philosophy." DANIEL R. COQUILLETTE, THE ANGLO-AMERICAN<lb/> LEGAL HERITAGE: INTRODUCTORY MATERIALS 187-88 (2d ed. 2004). </bibl>
+          <bibl>He drew in part upon<lb/> Aquinas. CHRISTOPHER SAINT GERMAN, ST. GERMAN'S DOCTOR AND STUDENT, at xxiii-iv, li,<lb/> lvi (T. F. T. Plucknett &amp; J. L. Barton eds., 1975).<lb/> </bibl>
+        <bibl><label>10</label> See infra notes 55-96 and accompanying text.<lb/> </bibl>
+        <bibl><label>11</label> See infra notes 97-329 and accompanying text.<lb/> </bibl>
+        <bibl><label>12</label> See Douglas H. Cook, Sir William Blackstone: A Life and Legacy Set Apart for God's Work, 13<lb/> REGENT U. L. REV. 169, 172-173 (2000-01).<lb/> </bibl>
+        <bibl><label>13</label> See McKnight, supra note 2, at 400.<lb/> </bibl>
+        <bibl><label>14</label> See John H. Langbein, Blackstone on Judging, in BLACKSTONE AND HIS COMMENTARIES:<lb/> BIOGRAPHY, LAW, HISTORY 65, 77 (Wilfrid Prest ed., 2009).<lb/> </bibl>
+        <bibl><label>15</label> DAVID LIEBERMAN, THE PROVINCE OF LEGISLATION DETERMINED: LEGAL THEORY IN<lb/> EIGHTEENTH-CENTURY BRITAIN 65 (1989).<lb/> </bibl>
+        <bibl><label>16</label> See Robert C. Berring, The Ultimate Oldie But Goodie: William Blackstone's Commentaries on<lb/> the Law of England, 4 J.L. 189, 190 (2014).</bibl>
+          <bibl> This is not to say that Blackstone disregarded<lb/> the education of lawyers by means of his Commentaries. See David Lemmings, Blackstone<lb/> and Law Reform by Education: Preparation for the Bar and Lawyerly Culture in Eighteenth-<lb/>Century England, 16 LAW HIST. REV. 211, 215, 251-52 (1998); </bibl>
+<bibl>Prest, supra note 2, at ix.<lb/> </bibl>
+        <bibl><label>17</label> See LIEBERMAN, supra note 15, at 56, 66.<lb/> </bibl>
+        <bibl><label>18</label> See S. F. C. Milsom, The Nature of Blackstone's Achievement, 1 OXFORD J. LEGAL STUD. 1, 4, 6<lb/> (1981).<lb/> </bibl>
+        <bibl><label>19</label> See id. at 2, 5, 12.<lb/> </bibl>
+        <bibl><label>20</label> Id. at 10, 12;</bibl>
+          <bibl> see also Lemmings, supra note 16, at 243, 252.<lb/> </bibl>
+        <bibl><label>21</label> See Jessie Allen, Law and Artifice in Blackstone's Commentaries, 4 J.L. 195, 195 (2014).<lb/> </bibl>
+        <bibl><label>22</label> See LIEBERMAN, supra note 15, at 33-36.<lb/> </bibl>
+        <bibl><label>23</label> See 1 WILLIAM BLACKSTONE, COMMENTARIES ON THE LAWS OF ENGLAND 37 (The Legal Classics<lb/> Library 1983) (1765-70) (quoting with approval John Fortescue's endorsement that<lb/> lay students "trace[] up the principles and grounds of the law, even to their original<lb/> elements"). </bibl>
+          <bibl>&gt;Blackstone's use of natural law in the Commentaries may also reflect his<lb/> own introduction to the law. It was St. German's Doctor and Student, a work integrating<lb/> theological and legal thought, that drew Blackstone to the law. Cook, supra note 12, at<lb/> 170.</bibl>
+          <bibl>Perhaps for similar reasons, the Commentaries turned students from theology to law.<lb/> McKnight, supra note 2, at 401.<lb/></bibl>
+          <bibl> Note that the pagination of the various editions of the Commentaries has become more or<lb/> less standardized. This move is not without its problems, however. See Alschuler, supra<lb/> note 1, at 3 n.4;</bibl><bibl> cf.Carli N. Conklin, The Origins of the Pursuit of Happiness, 7 WASH. U. JURIS.<lb/>REV. 195, 200 (2015)) (selecting for use the first edition, as does the present article); </bibl>
+<bibl>Alan<lb/> Watson, The Structure of Blackstone's Commentaries, 97 YALE L.J. 795, 801 (1988) (same).<lb/> </bibl>
+        <bibl><label>24</label> See 1 BLACKSTONE, supra note 23, at 38-62. Blackstone's approach reflects Christian and<lb/> classical roots.</bibl>
+          <bibl>Conklin, supra note 23, at 246.</bibl><bibl> It owes a debt to Burlamaqui,HENRY SUMNER<lb/> MAINE, ANCIENT LAW 94 (Oxford Univ. Press 1931) (1861).;</bibl>
+          <bibl> McKnight, supra note 2, at 406-<lb/>07, but not in its definition of law, J. M. Finnis, Blackstone's Theoretical Intentions, 12 NAT.<lb/> L.F. 163, 171 (1967).</bibl>
+          <bibl> Blackstone's definition of municipal law follows his organization of<lb/> the Commentaries. See id. at 167-69.<lb/> </bibl>
+        <bibl><label>25</label> 1 BLACKSTONE, supra note 23, at 39.<lb/> </bibl>
+        <bibl><label>26</label> Id.<lb/> </bibl>
+        <bibl><label>27</label> See THOMAS AQUINAS, THE SUMMA THEOLOGICA 209 (Daniel J. Sullivan ed., Fathers of the<lb/> English Dominican Province trans., Encyclopaedia Britannica 1952) (1265-73). (I-II, 91, 2,<lb/> observing, "Now among all others, the rational creature is subject to Divine providence in<lb/> the most excellent way, in so far as it partakes of a share of providence, by being provident<lb/> both for itself and for others. Therefore it has a share of the Eternal Reason, by which it<lb/> has a natural inclination to its due act and end; and this participation of the eternal law in<lb/> the rational creature is called the natural law . . . [T]he natural law is nothing else than<lb/> the rational creature's participation of the eternal law").<lb/> </bibl>
+        <bibl><label>28</label> 1 BLACKSTONE, supra note 23, at 40.<lb/> </bibl>
+        <bibl><label>29</label> Id.<lb/> </bibl>
+          <bibl><label>30</label> Id. at 41.<lb/> </bibl>
+        <bibl><label>31</label> Id.<lb/> </bibl>
+        <bibl><label>32</label> Id.<lb/> </bibl>
+        <bibl><label>33</label> See 2 AQUINAS, supra note 27, at 227-28 (I-II, 95, 2, observing, in an article on the relation<lb/> of "human law" to "natural law," that "every human law has just so much of the character<lb/> of law as it is derived from the law of nature. But if in any point it differs from the law of<lb/> nature, it is no longer a law but a corruption of law.").<lb/> </bibl>
+        <bibl><label>34</label> See supra text accompanying note 31.<lb/></bibl>
+          <bibl><label> 35</label> See supra note 27.<lb/> </bibl>
+        <bibl><label>36</label> 1 BLACKSTONE, supra note 23, at 41.</bibl>
+          <bibl> For discussions of Aquinas's approach to the impact<lb/> of the Fall upon the operation of the natural law,</bibl>
+          <bibl> see also CHARLES E. RICE, 50 QUESTIONS<lb/> ON THE NATURAL LAW 159-63 (1993) and Russell Hittinger, Natural Law and Catholic Moral<lb/> Philosophy, in A PRESERVING GRACE 1, 7-8 (Michael Cromartie ed., 1997).</bibl>
+          <bibl> Hittinger finds<lb/> that Aquinas, "[i]n his last recorded remarks on the subject of natural law," said:<lb/> Now although God in creating man gave him this law of nature,<lb/> the devil oversowed another law in man, namely, the law of<lb/> concupiscence. . . . Since then the law of nature was destroyed by<lb/> concupiscence, man needed to be brought back to works of virtue, and<lb/> to be drawn away from vice: for which purpose he needed the written<lb/> law.<lb/> Id. at 7 (citing Thomas Aquinas, Collations in Decem Praeceptis (1273)).<lb/> </bibl>
+        <bibl><label>37</label> 1 BLACKSTONE, supra note 23, at 42.<lb/> </bibl>
+        <bibl><label>38</label> Id. In tension with his formulation here, elsewhere in the Commentaries Blackstone will<lb/> write of "divine law, either natural or revealed," 2 id. at 420, and "divine law both natural<lb/> and revealed," id. at 455.</bibl>
+          <bibl> In these two instances, it appears that he uses "divine" to denote<lb/> the divine origin of the law of nature rather than to denote divine law proper. So, in yet<lb/> a third place, he writes of "those laws which the creator has given us; the divine laws, I<lb/> mean, of either nature or revelation." 4 id. at 177.<lb/> </bibl>
+
+        <bibl><label>39</label> 1 id. at 42.<lb/></bibl>
+          <bibl><label> 40</label> Id.<lb/></bibl>
+        <bibl><label>41</label> Id. Examples of Blackstone's references to the divine law include his discussion of the law<lb/> of nuisance as enforcing "that excellent rule of gospel-morality, of 'doing to others as we<lb/> would they should do unto ourselves,'" 3 id. at 218, and of the criminal law, 4 id. at 11, 30,<lb/> 42, 43, 60, including laws against homicide, id. at 177, dueling, id. at 199, and sodomy,<lb/> id. at 216.</bibl>
+          <bibl> John Finnis has noted that Blackstone's endorsement of the role divine law is<lb/> to play in the formulation of human law does not lead him to confuse crime with sin. See<lb/> Finnis, supra note 24, at 177.<lb/> </bibl>
+        <bibl><label>42</label> See supra note 7.<lb/> </bibl>
+        <bibl><label>43</label> See 2 AQUINAS, supra note 27, at 209-10 (I-II, 91, 3, observing that, "it is from the precepts<lb/> of the natural law, as from general and indemonstrable principles, that the human reason<lb/> needs to proceed to the more particular determination of certain matters. These particular<lb/> determinations, devised by human reason, are called human laws . . .").</bibl>
+          <bibl>The Commentaries<lb/> is not wholly lacking this approach. For example: "And sometimes, where the thing itself<lb/> has it's [sic] rise from the law of nature, the particular circumstances and mode of doing<lb/> it become right or wrong, as the laws of the land shall direct." 1 BLACKSTONE, supra note<lb/> 23, at 55.<lb/> </bibl>
+
+        <bibl><label>44</label> The significant role in the Commentaries for human law to supply rules for matters<lb/> indifferent does not preclude a role for the law of nature (or natural law) in supplying<lb/> specific rules for human law. See, e.g., 1 BLACKSTONE, supra note 23, at 435-36, 441<lb/> (discussing parents and children); </bibl>
+<bibl>2 Id. at 390, 392-93 (discussing property in animals);<lb/> </bibl>
+        <bibl>4 Id. at 11 (discussing capital punishment), 29 (discussing wife's defense of duress),<lb/> 30 (discussing self-defense), 42 (discussing guilt from crime), 67, 117 (discussing<lb/> international law).<lb/> </bibl>
+        <bibl><label>45</label> Richard A. Posner, Blackstone and Bentham, 19 J.L. &amp; ECON. 569, 570 (1976) (quoting C.<lb/> HERBERT STUART FIFOOT, LORD MANSFIELD 26 (1936)).</bibl>
+          <bibl>The early classic effort to debunk the<lb/> Commentaries is JEREMY BENTHAM, A FRAGMENT ON GOVERNMENT (London, Thomas Payne<lb/> et al. 1776), but Bentham's target is as much the notion of natural law as the Commentaries<lb/> itself. Posner's article explains that Bentham's is a "fundamentally misconceived attack<lb/> on the Commentaries." Id. at 569.<lb/> </bibl>
+        <bibl><label>46</label> Alschuler, supra note 1, at 2.<lb/> </bibl>
+        <bibl><label>47</label> See BOORSTIN, supra note 1, at 189.<lb/> </bibl>
+        <bibl><label>48</label> See Posner, supra note 45, at 571.<lb/> </bibl>
+        <bibl><label>49</label> See McKnight, supra note 2, at 402.<lb/> </bibl>
+        <bibl><label>50</label> See Michael Lobban, Blackstone and the Science of Law, 30 HIST. J. 311, 311 (1987); </bibl>
+<bibl>McKnight,<lb/> supra note 2, at 402, 404.</bibl>
+          <bibl>Lobban's criticisms are answered in Harold J. Berman &amp; Charles<lb/> J. Reid, Jr., The Transformation of English Legal Science: From Hale to Blackstone, 45 EMORY<lb/> L.J. 437, 490 n.107 (1996).<lb/> </bibl>
+        <bibl><label>51</label> See supra notes 41 and 44 for instances where the Commentaries explicitly draws upon<lb/> specific rules of the law of nature, natural law, or divine law.<lb/> </bibl>
+        <bibl><label>52</label> H. L. A. Hart, Blackstone's Use of the Law of Nature, 1956 BUTTERWORTHS S. AFR. L. REV. 169,<lb/> 169-71.<lb/> </bibl>
+        <bibl><label>53</label> See Finnis, supra note 24, at 171-74.<lb/> </bibl>
+        <bibl><label>54</label> McKnight concurs in Hart's view of Blackstone's treatment of the law of nature and sees<lb/> it as making way for Blackstone's focus on indifferent matters. See McKnight, supra<lb/> note 2, at 405.</bibl>
+          <bibl> McKnight's understanding also supports, if ironically, the argument that<lb/> Blackstone thereby paves the way for his own brand of natural law analysis. See infra notes<lb/> 309-12 and accompanying text.<lb/></bibl>
+          <bibl> Two other criticisms of the Commentaries deserve scant mention here. First, the radical<lb/> critique of Duncan Kennedy, The Structure of Blackstone's Commentaries, 28 BUFF. L. REV.<lb/> 205 (1979), that finds Blackstone "supremely unconvincing." Id. at 211.</bibl>
+          <bibl> Kennedy's<lb/> critique itself has been found supremely unconvincing. See, e.g., Alschuler, supra note 1, at<lb/> 45-46; </bibl>
+<bibl>Berman &amp; Reid, supra note 50, at 492 n.108;</bibl>
+          <bibl> John W. Cairns, Blackstone, an English<lb/> Institutist: Legal Literature and the Rise of the Nation State, 4 OXFORD J. LEGAL STUD. 318,<lb/> 350-52 (1984); </bibl>
+<bibl>Watson, supra note 23, at 795, 802.</bibl>
+          <bibl> Second, some commentators criticize<lb/> Blackstone on his discussion of absolute rights, as if his use of "absolute" means incapable<lb/> of diminishment or compromise. See, e.g., Lobban, supra note 50, at 329-30;</bibl>
+          <bibl> McKnight,<lb/> supra note 2, at 401 n.16.</bibl>
+          <bibl> This criticism falls aside upon paying more careful attention to<lb/> Blackstone's usage:<lb/> THE rights of persons considered in their natural capacities are<lb/> also of two sorts, absolute, and relative. Absolute, which are such as<lb/> appertain and belong to particular men, merely as individuals or single<lb/> persons: relative, which are incident to them as members of society,<lb/> and standing in various relations to each other.<lb/>
+       1 BLACKSTONE, supra note 23, at 119.</bibl>
+          <bibl> "Absolute" means apart from social context, not<lb/> sacrosanct. See Watson, supra note 23, at 803.<lb/> </bibl>
+        <bibl><label>55</label> For an introduction to Justinian and his work, see Craig A. Stern, Justinian: Lieutenant of<lb/> Christ, Legislator for Christendom, 11 REGENT U. L. REV. 1 (1998).</bibl>
+          <bibl> Helmholz has remarked<lb/> that Blackstone was perhaps one-fifth a civilian, R.H. Helmholz, Natural Law and Human<lb/> Rights in English Law: From Bracton to Blackstone, 3 AVE MARIA L. REV. 1, 5 (2005), not so<lb/> small a fraction considering how imbued Blackstone was with the common law.<lb/> </bibl>
+        <bibl><label>56</label> See Cook, supra note 12, at 170-72.<lb/> </bibl>
+        <bibl><label>57</label> See supra text accompanying note 18.<lb/> </bibl>
+        <bibl><label>58</label> See Berring, supra note 16, at 191;</bibl>
+          <bibl> Watson, supra note 23, at 810. It may be that Blackstone<lb/> came to this method owing to his "academic persona." Wilfrid Prest, The Religion of a<lb/> Lawyer?: William Blackstone's Anglicanism, 21 PARERGON 153, 158 (2004).<lb/> </bibl>
+        <bibl><label>59</label> See Milsom , supra note 18, at 10-11;</bibl>
+          <bibl> Watson, supra note 23, at 810 (finding the<lb/> Commentaries to be a "direct descendant of Justinian's Institutes");</bibl>
+          <bibl> see also Cairns, supra<lb/> note 54, at 320, 340, 350, 359 (finding the Commentaries to be largely an "Institutional"<lb/> work).<lb/> </bibl>
+        <bibl><label>60</label> See BOORSTIN, supra note 1, at 3.</bibl>
+          <bibl> Others have written that Blackstone's work is<lb/> fundamentally unlike Justinian's, Berman &amp; Reid, supra note 50, at 492-96,</bibl>
+          <bibl> or failed<lb/> fundamentally by forcing the content of the common law into an unwelcoming structure<lb/> from Roman law. Lobban, supra note 50, at 312, 321-23.<lb/> </bibl>
+        <bibl><label>61</label> See ALEXANDER PASSERIN D'ENTRÈVES, NATURAL LAW 24-25, 27-33 (Transaction Publishers<lb/> 1994) (1951).<lb/> </bibl>
+        <bibl><label>62</label> See id. at 23-24, 31-32.<lb/> </bibl>
+        <bibl><label>63</label> See MAINE, supra note 24, at 60, 63-64.<lb/> </bibl>
+        <bibl><label>64</label> Id. at 44-45, 60-63.<lb/> </bibl>
+        <bibl><label>65</label> See id. at 63, 73.<lb/> </bibl>
+        <bibl><label>66</label> See BARRY NICHOLAS, AN INTRODUCTION TO ROMAN LAW 57 (1962).<lb/> </bibl>
+        <bibl><label>67</label> See id.<lb/> </bibl>
+        <bibl><label>68</label> See D'ENTRÈVES, supra note 61, at 148;</bibl>
+          <bibl> see also McKnight, supra note 2, at 406 n.67 (agreeing<lb/> with Maine on the somewhat utilitarian cast of Roman natural law).<lb/> </bibl>
+        <bibl><label>69</label> Although it may be that Blackstone never explicitly asserted that one could discover the<lb/> law of nature from English law, or vice versa. McKnight, supra note 2, at 403 n.33.</bibl>
+          <bibl> At<lb/> least one commentator has written that the common-law tradition reflects the notion that<lb/> innate reason has led the positive law to hold within itself the natural law. Lobban, supra<lb/> note 50, at 314.</bibl>
+          <bibl> Similar to this link is the one Blackstone approvingly found to be advanced<lb/> by Aristotle: learning positive law is a good way to learn ethics. See Conklin, supra note 23,<lb/> at 205.<lb/> </bibl>
+        <bibl><label>70</label> See LIEBERMAN, supra note 15, at 49-55.<lb/> </bibl>
+<bibl><label>71</label> See id. at 46.<lb/> </bibl>
+        <bibl><label>72</label> See Langbein, supra note 14, at 77.<lb/> </bibl>
+        <bibl><label>73</label> See PREST, supra note 1, at 310; see also Posner, supra note 45, at 576 (pronouncing<lb/> Blackstone "better at particulars than at generalization").<lb/> </bibl>
+        <bibl><label>74</label> See D'ENTRÈVES, supra note 61, at 151.<lb/> </bibl>
+        <bibl><label>75</label> See BOORSTIN, supra note 1, at 60.</bibl>
+          <bibl> One commentator has tagged Blackstone a "natural law<lb/> maverick" for constructing a "pastiche" of natural law and his own views. McKnight,<lb/> supra note 2, at 407. Perhaps the link of is with ought in his romanesque approach invites<lb/> such criticism.<lb/> </bibl>
+        <bibl><label>76</label> See infra notes 290-97 and accompanying text.<lb/> </bibl>
+        <bibl><label>77</label> Nicole Graham, Restoring the "Real" to Real Property Law: A Return to Blackstone?, in<lb/> BLACKSTONE AND HIS COMMENTARIES, supra note 14, at 151.<lb/> </bibl>
+        <bibl><label>78</label> See id. at 154-55, 160.<lb/> </bibl>
+        <bibl><label>79</label> The Commentaries suggests that natural law inheres in the nature of things in such<lb/> language as, "when the supreme being formed the universe, and created matter out<lb/> of nothing, he impressed certain principles upon that matter, from which it can never<lb/> depart, and without which it would cease to be." 1 BLACKSTONE, supra note 23, at 38.</bibl>
+          <bibl> If<lb/> Blackstone tags the law of property as governing things indifferent, see infra note 152 and<lb/> accompanying text,</bibl>
+          <bibl> he does not thereby hold that property law is wholly without natural<lb/> law principles. See infra notes 309-12 and accompanying text.<lb/></bibl>
+        <bibl><label>80</label> See 1 BLACKSTONE, supra note 23, at 40.<lb/> </bibl>
+          <bibl><label>81</label> See id. at 58.<lb/> </bibl>
+        <bibl><label>82</label> Id. at 354, 358.<lb/> </bibl>
+
+        <bibl><label>83</label> See id. at 410.<lb/></bibl>
+        <bibl><label>84</label> See 2 id. at 4, 7.<lb/></bibl>
+        <bibl><label>85</label> See 3 id. at 146.<lb/></bibl>
+        <bibl><label>86</label> See id. at 4, 22, 116, 379, 434.<lb/> </bibl>
+        <bibl><label>87</label> See 4 id. at 20-21, 27, 74, 186, 216.<lb/> </bibl>
+        <bibl><label>88</label> See D'ENTRÈVES, supra note 61, at 32-33;</bibl>
+          <bibl> MAINE, supra note 24, at 46;</bibl>
+          <bibl> NICHOLAS, supra note<lb/> 66, at 55.<lb/> </bibl>
+        <bibl><label>89</label> See infra notes 279-89 and accompanying text.<lb/> </bibl>
+        <bibl><label>90</label> See NICHOLAS, supra note 66, at 28-32.<lb/> </bibl>
+        <bibl><label>91</label> See 2 EDWARD GIBBON, THE DECLINE AND FALL OF THE ROMAN EMPIRE 80 (Encyclopaedia<lb/> Britannica Inc. 1952) (1788).<lb/> </bibl>
+        <bibl><label>92</label> See 2 FREDERICK POLLOCK &amp; FREDERIC WILLIAM MAITLAND, THE HISTORY OF ENGLISH LAW<lb/> BEFORE THE TIME OF EDWARD I 585 (Liberty Fund, Inc. 2010) (1898).</bibl>
+          <bibl> So the English were<lb/> "more Roman than the Romanists," those who received as authority the Corpus Juris Civilis<lb/> rather than adhering to the method by which Roman law developed. Id. at 705.<lb/> </bibl>
+        <bibl><label>93</label> See Berman &amp; Reid, supra note 50, at 503.</bibl>
+          <bibl> But see infra note 235.<lb/> </bibl>
+        <bibl><label>94</label> Helmholz , supra note 55, at 20;</bibl>
+      <bibl> see also D'ENTRÈVES, supra note 61, at 119 n.1.<lb/></bibl>
+        <bibl><label> 95</label>
+McKnight, supra note 2, at 407-09.<lb/> </bibl>
+        <bibl><label>96</label> See Milsom, supra note 18, at 11-12. Milsom here speaks of fit according to patterns of legal<lb/> rules, but the notion of judges in a sense creating rules that at the same time are seen as<lb/> compelled by antecedent norms is apropos.<lb/> </bibl>
+        <bibl><label>97</label> See Cook, supra note 12, at 169.<lb/> </bibl>
+        <bibl><label>98</label> See Prest, supra note 58, at 163.<lb/> </bibl>
+        <bibl><label>99</label> See Cook, supra note 12, at 174.<lb/> </bibl>
+        <bibl><label>100</label> See PREST, supra note 1, at 309;</bibl><bibl> Prest, supra note 3, at 123;</bibl>
+          <bibl> Prest, supra note 58, at 161.<lb/> </bibl>
+        <bibl><label>101</label> See WILLIAM BLACKSTONE, THE PANTHEON 27-32 (photo. reprint, Gale ECCO Print Editions<lb/> 2010) (1747).</bibl>
+          <bibl> Prest has called Blackstone a "comparative theologian." Prest, supra note 3,<lb/> at 110.<lb/> </bibl>
+        <bibl><label>102</label> See Prest, supra note 58, at 153, 165-66.<lb/> </bibl>
+        <bibl><label>103</label> See id. at 155-56.<lb/> </bibl>
+        <bibl><label>104</label> See BOORSTIN, supra note 1, at 74-75.<lb/> </bibl>
+        <bibl><label>105</label> See Raymond D. Tumbleson, "Reason and Religion": The Science of Anglicanism, 57 J. HIST.<lb/> IDEAS 131, 133, 151 (1996).<lb/> </bibl>
+        <bibl><label>106</label> See NIGEL ATKINSON, RICHARD HOOKER AND THE AUTHORITY OF SCRIPTURE, TRADITION AND<lb/> REASON, at ix (1997).</bibl>
+          <bibl> Though such, his work earned surprising approval from the leader of<lb/> the Roman Catholic Church. See RUSSELL KIRK, THE ROOTS OF AMERICAN ORDER 246 (1974).<lb/> </bibl>
+        <bibl><label>107</label> Harold Berman highlights Hooker's influence as to political authority and consent,<lb/> the importance of history, and the large role played by matters indifferent-those not<lb/> determined by transcendent sources of law. See Harold J. Berman, The Origins of Historical<lb/> Jurisprudence: Coke, Selden, Hale, 103 YALE L.J. 1651, 1665-66 (1994).<lb/> </bibl>
+        <bibl><label>108</label> 1 RICHARD HOOKER, OF THE LAWS OF ECCLESIASTICAL POLITY 232 (J.M. Dent &amp; Sons, Ltd. 1907)<lb/> (1594, 1597).<lb/> </bibl>
+        <bibl><label>109</label> See W.J. TORRANCE KIRBY, RICHARD HOOKER, REFORMER AND PLATONIST 48 (2005).</bibl>
+          <bibl> "Perhaps<lb/> the most influential Anglican thinker to make explicit use of natural law is the Elizabethan<lb/> divine, Richard Hooker . . . ." Will Adam, Natural Law in the Anglican Tradition, in<lb/> CHRISTIANITY AND NATURAL LAW 58, 63 (Norman Doe ed., 2017).<lb/> </bibl>
+        <bibl><label>110</label> See id. at 55.<lb/> </bibl>
+        <bibl><label>111</label> See ROBERT K. FAULKNER, RICHARD HOOKER AND THE POLITICS OF A CHRISTIAN ENGLAND 114-16<lb/> (1981).<lb/> </bibl>
+        <bibl><label>112</label> See KIRBY, supra note 109, at 52, 58-78.<lb/> </bibl>
+        <bibl><label>113</label> See W.J. Torrance Kirby, Reason and Law, in A COMPANION TO RICHARD HOOKER 251, 253, 255<lb/> (Torrance Kirby ed., 2008).<lb/> </bibl>
+        <bibl><label>114</label> See KIRBY, supra note 109, at 51;</bibl>
+          <bibl> Kirby, supra note 113, at 251.<lb/> </bibl>
+        <bibl><label>115</label> 1 HOOKER, supra note 108, at 150.<lb/> </bibl>
+        <bibl><label>116</label> See Kirby, supra note 113, at 265.</bibl>
+          <bibl> Elsewhere, Kirby notes that the question of Hooker's<lb/> doctrine of natural law is controversial. See KIRBY, supra note 109, at 57.<lb/> </bibl>
+        <bibl><label>117</label> See L.S. THORNTON, RICHARD HOOKER 32, 107 (1924).</bibl>
+          <bibl> In this context Hooker calls law<lb/> "positive" if express revelation is necessary to know it. 1 HOOKER, supra note 108, at 220<lb/> n.1.</bibl>
+          <bibl> Also, apparently unlike Blackstone, Hooker observes that the evidence of the senses<lb/> is clear and strong while that of revelation is complicated and complex. THORNTON, supra,<lb/> at 16.</bibl>
+          <bibl> At the same time, however, the object held out in the Scriptures is more certain than<lb/> that in the senses. Id. at 18.<lb/> </bibl>
+        <bibl><label>118</label> NIGEL VOAK, RICHARD HOOKER AND REFORMED THEOLOGY 117 (2003);</bibl>
+          <bibl> see also FAULKNER, supra<lb/> note 111, at 114 (reading Hooker to state that human law is discovered naturally, but<lb/> that the authority to do so is from God); </bibl>
+<bibl>Rowan Williams, Foreword: Of the Lawes of<lb/> Ecclesiastical Politie Revisited, in A COMPANION TO RICHARD HOOKER, supra note 113, at xv,<lb/> xviii-xix (distinguishing in Hooker laws for humanity from laws for particular societies,<lb/> with both legitimate and binding).<lb/> </bibl>
+        <bibl><label>119</label> See infra notes 305-12 and accompanying text.</bibl>
+          <bibl> Also finding its way into the Commentaries<lb/> is Hooker's usage of the term lex gentium to mean international law rather than something<lb/> like the Roman usage of jus gentium discussed above at notes 88 to 89. Finnis, supra note<lb/> 24, at 177.<lb/> </bibl>
+        <bibl><label>120</label> Of course, some role for human reason is found in standard views on the making of law,<lb/> with perhaps the classic being that of Aquinas. See, e.g., supra note 43.</bibl>
+          <bibl> Nevertheless, the<lb/> uses to which Hooker and Blackstone put reason bear a special affinity, as discussed below.<lb/> See infra notes 305-12 and accompanying text.<lb/> </bibl>
+        <bibl><label>121</label> See KIRBY, supra note 109, at 74;</bibl><bibl> see also KIRK, supra note 106, at 243.<lb/> </bibl>
+        <bibl><label>122</label> ATKINSON, supra note 106, at 13.<lb/> </bibl>
+        <bibl><label>123</label> Id.<lb/> </bibl>
+        <bibl><label>124</label> KIRBY, supra note 109, at 51.<lb/> </bibl>
+        <bibl><label>125</label> See THORNTON, supra note 117, at 13;</bibl>
+          <bibl> see also Adam, supra note 109, at 63 (Hooker "often<lb/> uses the term 'law of reason' as synonymous with 'natural law'"), 73 (Hooker took "the<lb/> explicit doctrine of natural law of the Thomistic tradition and repackaged it as the law of<lb/> reason"), 76 ("The concept of natural law, and its derivative-the law of reason, played a<lb/> central role in the thought of Richard Hooker . . . .").<lb/> </bibl>
+        <bibl><label>126</label> See FAULKNER, supra note 11, at 63, 72.<lb/> </bibl>
+        <bibl><label>127</label> KIRBY, supra note 109, at 55.</bibl>
+          <bibl> And reason shows the good, THORNTON, supra note 117, at<lb/> 37, presumably the key to the happiness all humans seek.</bibl>
+          <bibl> See KIRBY, supra note 109, at<lb/> 75;</bibl>
+          <bibl> THORNTON, supra note 117, at 38.</bibl>
+          <bibl> This idea too finds its way into Blackstone. See supra<lb/> notes 28-31 and accompanying text.<lb/> </bibl>
+        <bibl><label>128</label> See ATKINSON, supra note 106, at 14.<lb/> </bibl>
+        <bibl><label>129</label> See THORNTON, supra note 117, at 36-37.<lb/> </bibl>
+<bibl>FAULKNER, supra note 111, at 115.<lb/> </bibl>
+        <bibl><label>131</label> See infra notes 305-12 and accompanying text.<lb/></bibl>
+
+     <bibl><label>132</label> ATKINSON, supra note 106, at 50.<lb/> </bibl>
+        <bibl><label>133</label> See FAULKNER, supra note 111, at 103, 111.<lb/></bibl>
+        <bibl><bibl>134</bibl> See id. at 112.<lb/> </bibl>
+        <bibl><label>135</label> See 1 HOOKER, supra note 108, at 422;</bibl>
+            <bibl>see also ATKINSON, supra note 106, at 55;</bibl>
+            <bibl>KIRK, supra<lb/> note 106, at 244.<lb/> </bibl>
+        <bibl><label>136</label> See KIRK, supra note 106, at 244-45;</bibl>
+            <bibl>Williams, supra note 118, at xix.<lb/> </bibl>
+        <bibl><label>137</label> See BOORSTIN, supra note 1, at 73.<lb/> </bibl>
+        <bibl><label>138</label> See THORNTON, supra note 117, at 17.<lb/> </bibl>
+        <bibl><label>139</label> See FAULKNER, supra note 111, at 114.<lb/> </bibl>
+        <bibl><label>140</label> See THORNTON, supra note 117, at 45-46.<lb/> </bibl>
+        <bibl><label>141</label> See id. at 37.</bibl>
+            <bibl>Such a commitment to historical development, adapted to local conditions,<lb/> lies at the core of Hooker's chief aim-to explain and defend the ecclesiastical polity of<lb/> the Church of England. See ATKINSON, supra note 106, at 58.<lb/> </bibl>
+        <bibl><label>142</label> See ATKINSON, supra note 106, at 47.<lb/></bibl>
+        <bibl><label>143</label> See id. at 54.<lb/> </bibl>
+        <bibl><label>144</label> Berman, supra note 107, at 1664-66.<lb/> </bibl>
+
+<bibl><label>145</label> See id. at 1666.<lb/> </bibl>
+        <bibl><label>146</label> See BOORSTIN, supra note 1, at 36;</bibl>
+          <bibl> LIEBERMAN, supra note 15, at 42;</bibl>
+          <bibl> Conklin, supra note 23,<lb/> at 218.</bibl>
+          <bibl> Lobban finds in Blackstone a commitment to authority and history over deductive<lb/> reasoning, see Lobban, supra note 50, at 328,</bibl>
+          <bibl> and views the Commentaries as intertwining<lb/> theory with history. Id. at 330.</bibl>
+          <bibl> And Boorstin finds a telling example of Blackstone's<lb/> commitment to history in his treatment of the Revolution of 1688. BOORSTIN, supra note 1,<lb/> at 26.<lb/> </bibl>
+        <bibl><label>147</label> See ATKINSON, supra note 106, at 59-60.<lb/> </bibl>
+        <bibl><label>148</label> See 2 HOOKER, supra note 108, at 363.<lb/> </bibl>
+        <bibl><label>149</label> THORNTON, supra note 117, at 32.<lb/> </bibl>
+        <bibl><label>150</label> See FAULKNER, supra note 111, at 113;</bibl>
+          <bibl> see also id. at 100 (observing that, after the law<lb/> of reason, human law holds prominence for Hooker), 112 (observing that, once natural<lb/> necessity calls for a rule, nearly any rule will do).<lb/> </bibl>
+        <bibl><label>151</label> While for Blackstone "indifferent" can mean diverse things, Finnis, supra note 24,<lb/> at 172-73</bibl>
+          <bibl> Blackstone imitates Hooker on biblical law, for example, acceding to its<lb/> authority but finding its still-obligatory moral law pertinent to very few issues. See<lb/> D. SEABORN DAVIES, THE BIBLE IN ENGLISH LAW 20 (1954).</bibl>
+          <bibl> As to one such instance, it is<lb/> both intriguing and relevant to note that Blackstone observes that blood guilt-a concept<lb/> harking back to biblical standards-would adhere to Parliament were it to over-extend<lb/> capital punishment. 4 BLACKSTONE, supra note 23, at 11.</bibl>
+          <bibl> The Bible also speaks specifically<lb/> of blood guilt for over-extension of capital punishment. See DEUTERONOMY 19:4-10.</bibl>
+          <bibl> See<lb/> generally Craig A. Stern, Torah and Murder: The Cities of Refuge and Anglo-American Law,<lb/> 35 VAL. U. L. REV. 461 (2001) (demonstrating the influence of the biblical law of homicide<lb/> upon the Anglo-American law of homicide).<lb/> </bibl>
+        <bibl><label>152</label> BOORSTIN, supra note 1, at 170-74, 179-80.</bibl>
+          <bibl> See 1 BLACKSTONE, supra note 23, at 185; </bibl>
+        <bibl>2 Id. at<lb/> 2, 210-11, 491 for pertinent passages from the Commentaries.<lb/> </bibl>
+        <bibl><label>153</label> 1 BLACKSTONE, supra note 23, at 55.<lb/> </bibl>
+
+        <bibl><label>154</label> Id. at 185.<lb/></bibl>
+          <bibl><label>155</label> 3 id. at 87.<lb/></bibl>
+        <bibl><label>156</label> So, as for Hooker, such human law is "grounded upon the Word," 1 HOOKER, supra note<lb/> 108, at 309, but not dictated by it.<lb/> </bibl>
+        <bibl><label>157</label> See infra notes 305-12 and accompanying text.<lb/> </bibl>
+        <bibl><label>158</label> See Berman, supra note 107, at 1690-93.<lb/> </bibl>
+        <bibl><label>159</label> See Berman &amp; Reid, supra note 50, at 443, 489-94;</bibl>
+          <bibl> Cairns, supra note 54, at 340, 352;<lb/></bibl>
+          <bibl> Finnis, supra note 24, at 164-65;</bibl><bibl> Watson, supra note 23, at 810-12.<lb/> </bibl>
+        <bibl><label>160</label> See Berman, supra note 107, at 1709.<lb/></bibl>
+          <bibl><label>161</label> See id. at 1722.<lb/> </bibl>
+        <bibl><label>162</label> See id. at 1708, 1711-14.<lb/> </bibl>
+        <bibl><label>163</label> See id. at 1733.<lb/> </bibl>
+        <bibl><label>164</label> See id. at 1715, 1729.<lb/> </bibl>
+        <bibl><label>165</label> See infra notes 241-46, 291-93 and accompanying text.<lb/> </bibl>
+        <bibl><label>166</label> See W. M. SPELLMAN, THE LATITUDINARIANS AND THE CHURCH OF ENGLAND 1600-1700 10-83<lb/> (1993).<lb/> </bibl>
+        <bibl><label>167</label> See ERNEST CAMPELL MOSSNER, BISHOP BUTLER AND THE AGE OF REASON: A STUDY IN THE<lb/> HISTORY OF THOUGHT (1936).<lb/> </bibl>
+        <bibl><label>168</label> See SPELLMAN, supra note 166, at 120.<lb/> </bibl>
+
+        <bibl><label>169</label> See id. at 7.<lb/></bibl>
+          <bibl><label>170</label> See id. at 4, 61, 128.<lb/></bibl> <bibl><label>171</label> See id. at 157.<lb/></bibl>
+        <bibl><label>172</label> See id. at 70. Other Latitudinarian notions to find their way into the Commentaries are the<lb/> endorsement of strong civil government, id. at 122,</bibl>
+          <bibl> and self-interest as sound motivation,<lb/> see id. at 118-19, 122.<lb/> </bibl>
+
+      <!-- footnote numbers for label 173-187 are missing -->
+<bibl>See James R. Jacob &amp; Margaret C. Jacob, The Anglican Origins of Modern Science: The<lb/> Metaphysical Foundations of the Whig Constitution, 71 ISIS 251, 258 (1980); </bibl>
+<bibl>SPELLMAN, supra<lb/> note 166, at 6-7.<lb/> </bibl>
+<bibl>See Jacob &amp; Jacob, supra note 173, at 254, 262, 265.</bibl>
+          <bibl> The Anglican mix of authority from the<lb/> Bible, reason, and the senses-a mix hospitable to science-is one of its distinctives. See<lb/> id. at 256;</bibl>
+          <bibl> Tumbleson, supra note 105, at 134-35, 139, 148, 151-53, 156.<lb/></bibl>
+          <bibl>SPELLMAN, supra note 166, at 111.<lb/></bibl>
+          <bibl>See id. at 74-77.<lb/></bibl>
+          <bibl>See id. at 87-88, 160.<lb/></bibl>
+          <bibl>See id. at 4.<lb/></bibl>
+          <bibl>See id. at 156.<lb/></bibl>
+          <bibl>See id. at 83-86.<lb/></bibl>
+          <bibl> See id. at 106-07.<lb/> </bibl>
+<bibl>See id. at 8, 66, 76-77, 81-82.</bibl>
+          <bibl> The association of reason with natural law is typically<lb/> English. Helmholz, supra note 55, at 12, 21.<lb/> </bibl>
+<bibl>See Conklin, supra note 23, at 213.<lb/></bibl>
+          <bibl> See MOSSNER, supra note 167, at 178-87.<lb/> </bibl>
+<bibl>See THORNTON, supra note 117, at 103.<lb/> </bibl>
+<bibl>See BOORSTIN, supra note 1, at 15.</bibl>
+          <bibl> The project of natural theology itself received impetus<lb/> from Hooker. See Kirby, supra note 113, at 270-71.</bibl>
+          <bibl> Butler also aligned himself with the<lb/> empiricism of Locke and Newton. MOSSNER, supra note 167, at 82.<lb/></bibl>
+          <bibl> See supra notes 24-27 and accompanying text.<lb/> </bibl>
+
+        <bibl><label>188</label> See JOSEPH BUTLER, THE ANALOGY OF RELIGION NATURAL AND REVEALED 245 (J.M. Dent &amp; Co.<lb/> 1906) (1736).<lb/> </bibl>
+        <bibl><label>189</label> See id. at 105.<lb/> </bibl>
+        <bibl><label>190</label> See id. at 243.</bibl><bibl> So, for those designed for society God's laws prescribe justice and charity.<lb/> Id. at 245.<lb/> </bibl>
+        <bibl><label>191</label> See MOSSNER, supra note 167, at 14.</bibl>
+          <bibl> Butler did not suppose that all elements of moral<lb/> government are clear to humans. Id. at 90.</bibl>
+          <bibl> Mossner also discerns some sleight of hand in<lb/> Butler's treatment of the matter of law and will. Id. at 102.<lb/> </bibl>
+        <bibl><label>192</label> Compare 1 BLACKSTONE, supra note 23, at 45, 54,</bibl>
+          <bibl> with BUTLER, supra note 188, at 37-38, 41,<lb/> 98.<lb/> </bibl>
+        <bibl><label>193</label> See supra text accompanying note 191.</bibl>
+          <bibl> Again, this emphasis reminds one of Hooker,<lb/> ATKINSON, supra note 106, at 13,</bibl>
+          <bibl> as does Butler's division of the precepts of religion into<lb/> moral and positive according as the reasons for the precept are seen or not seen, MOSSNER,<lb/> supra note 167, at 92,</bibl>
+          <bibl> and the acknowledgement that reason needs support from God's<lb/> inspiration, id. at 123-24.<lb/> </bibl>
+        <bibl><label>194</label> See BUTLER, supra note 188, at xxx.<lb/> </bibl>
+        <bibl><label>195</label> See ATKINSON, supra note 106, at 91-92, 98.<lb/> </bibl>
+        <bibl><label>196</label> JOSEPH BUTLER, FIFTEEN SERMONS PREACHED AT THE ROLLS CHAPEL AND A DISSERTATION UPON<lb/> THE NATURE OF VIRTUE 237-38 (G. Bell Sons 1914) (1726).<lb/> </bibl>
+        <bibl><label>197</label> See BUTLER, supra note 188, at 143.<lb/></bibl>
+        <bibl><label>198</label> See id. at 152-53.<lb/> </bibl>
+        <bibl><label>199</label> See MOSSNER, supra note 167, at 105, 117.<lb/></bibl><bibl><label>200</label> See id. at 96.<lb/> </bibl>
+        <bibl><label>201</label> See BUTLER, supra note 188, at xviii, xxx, 79.<lb/></bibl>
+          <bibl><label>202</label> See id. at 25, 180.<lb/> </bibl>
+        <bibl><label>203</label> See id. at 104, 143-44, 148. </bibl>
+          <bibl>As Blackstone would remark regarding the changing of human<lb/> laws, see infra notes 272-78 and accompanying text, Butler observed that we hazard<lb/> unknown effects by changing the regime God has instituted for his rule. </bibl>
+          <bibl>See BUTLER, supra<lb/> note 188, at 101, 106, 108-09. With the results yet to be experienced, we cannot assess the<lb/> outcome of such a move.<lb/> </bibl>
+        <bibl><label>204</label> See Crane Brinton, Book Review, 55 HARV. L. REV. 703, 703 (1942) (reviewing The Mysterious<lb/> Science of the Law: An Essay on Blackstone's Commentaries (1941)).<lb/> </bibl>
+        <bibl><label>205</label> See PREST, supra note 1, at 308; </bibl>
+          <bibl>Graham, supra note 77, at 152; </bibl>
+          <bibl>Tim Stretton, Coverture and<lb/> Unity of Person in Blackstone's Commentaries, in BLACKSTONE AND HIS COMMENTARIES, supra<lb/> note 14, at 111, 125.<lb/> </bibl>
+        <bibl><label>206</label> See BUTLER, supra note 188, at 162.<lb/> </bibl>
+        <bibl><label>207</label> See MOSSNER, supra note 167, at 189.<lb/> </bibl>
+        <bibl><label>208</label> See Conklin, supra note 23, at 213-15. Conklin points out especially the affinity in<lb/> epistemology and the role of happiness.<lb/> </bibl>
+        <bibl><label>209</label> See Blackstone's probabilism here, for example: "But this [move of the Restoration<lb/> Parliament] was for the necessity of the thing, which supersedes all law; for if they had<lb/> not so met, it was morally impossible that the kingdom should have been settled in peace."<lb/> 1 BLACKSTONE, supra note 23, at 147 (emphasis added).</bibl>
+          <bibl> And here: "So that it is morally<lb/> impossible to trace out, with any degree of accuracy, when the several mutations of the<lb/> common law were made . . . ." 4 id. at 402 (first emphasis added).</bibl>
+          <bibl> The probabilism in<lb/> this use of "morally impossible" finds an explanation from Blackstone's contemporary,<lb/> Samuel Johnson:<lb/> He thus defined the difference between physical and moral truth:<lb/> "Physical truth is, when you tell a thing as it actually is. Moral truth<lb/> is, when you tell a thing sincerely and precisely as it appears to you.<lb/> I say such a one walked across the street; if he really did so, I told a<lb/> physical truth. If I thought so, though I should have been mistaken, I<lb/> told a moral truth."<lb/>
+JAMES BOSWELL, THE LIFE OF SAMUEL JOHNSON 510-11 (C.P. Chadsey ed., Doubleday 1946)<lb/> (1791).<lb/> </bibl>
+        <bibl><label>210</label> See BOORSTIN, supra note 1, at 23.<lb/> </bibl>
+        <bibl><label>211</label> See id. 55, 117-19.</bibl><bibl> In these last commitments, Blackstone owed a debt also to Locke, id. at<lb/> 31,</bibl><bibl> and the Common Sense school of philosophy, Conklin, supra note 23, at 216-17.<lb/> </bibl>
+        <bibl><label>212</label> See BOORSTIN, supra note 1, at 31-40, 55.<lb/> </bibl>
+        <bibl><label>213</label> Blackstone's crucial use of happiness has been noted already in these pages. See supra<lb/> notes 29-31 and accompanying text.<lb/> </bibl>
+        <bibl><label>214</label> See BUTLER, supra note 188, at 93, 238.<lb/></bibl><bibl><label>215</label> See id. at 26, 236, 271.<lb/> </bibl>
+        <bibl><label>216</label> See BUTLER, supra note 196, at 68.<lb/> </bibl>
+        <bibl><label>217</label> MOSSNER, supra note 167, at 100.</bibl><bibl> So probabilism is the method for pursuing happiness. See<lb/> BUTLER, supra note 188, at xxv-xxvii.<lb/> </bibl>
+        <bibl><label>218</label> See Butler, supra note 188, at xxx, 36, 56, 61, 72, 93, 112, 268-70;</bibl>
+          <bibl> BUTLER, supra note 196, at<lb/> 240.</bibl><bibl> At the same time, God has given us some power over the happiness of others. BUTLER,<lb/> supra note 188, at 42.<lb/> </bibl>
+        <bibl><label>219</label> See supra notes 29-31 and accompanying text;</bibl>
+          <bibl> see also BOORSTIN, supra note 1, at 92;<lb/></bibl>
+          <bibl> Alschuler, supra note 1, at 52.<lb/> </bibl>
+        <bibl><label>220</label> Compare BUTLER, supra note 196, at 68 (for Butler)</bibl>
+          <bibl> with BOORSTIN, supra note 1, at 53 (for<lb/> Blackstone).</bibl><bibl> Conklin also finds that the pursuit of happiness is a linchpin for Blackstone,<lb/> Conklin, supra note 23, at 224, 260,</bibl><bibl> but she places his approach also within the Common<lb/> Sense school, id. at 215-17.</bibl>
+          <bibl> She attributes the phrase "the pursuit of happiness" in the<lb/> Declaration of Independence to Blackstone. Id. at 200-02.</bibl>
+          <bibl> But see Craig A. Stern &amp; Gregory<lb/> M. Jones, The Coherence of Natural Inalienable Rights, 76 UMKC L. REV. 939, 973-74 (2008).<lb/> </bibl>
+        <bibl><label>221</label> While Blackstone does subscribe to the notion that natural law bounds the validity of<lb/> human law, see supra text accompanying notes 32, 41;</bibl>
+          <bibl> Posner, supra note 45, at 605,</bibl>
+          <bibl> his<lb/> use of natural law embraces far more, Finnis, supra note 24, at 183.<lb/> </bibl>
+        <bibl><label>222</label> See BOORSTIN, supra note 1, at 78;</bibl>
+          <bibl> see also 2 BLACKSTONE, supra note 23, at 58 (describing<lb/> the "ingenuity" of the middle ages as one "which perplexed all theology with the subtilty<lb/> of scholastic disquisitions, and bewildered philosophy in the mazes of metaphysical<lb/> jargon"); </bibl>
+<bibl>4 id. at 410-11 (bemoaning the scholastic intricacies of Norman jurisprudence).<lb/></bibl>
+          <bibl> Blackstone's approach avoided the complexities of the scholastics. See Conklin, supra<lb/> note 23, at 224.</bibl>
+          <bibl> At the same time, while some note Blackstone's modern emphasis on<lb/> individual rights rather than on the classic common good, Finnis, supra note 24, at 181,<lb/></bibl>
+          <bibl> and on peace as the end of civil society, BOORSTIN, supra note 1, at 179, </bibl>
+          <bibl>and his "social"<lb/> rather than philosophical consistency, Brinton, supra note 204, at 704, </bibl>
+          <bibl>Blackstone does<lb/> hold that society has a "moral purpose," BOORSTIN, supra note 1, at 190,</bibl>
+          <bibl> and shares also<lb/> with Aquinas, see, e.g., 2 AQUINAS, supra note 27, at 213-14 (I-II, 92, 1), 232-33 (I-II, 96,<lb/> 3),</bibl>
+          <bibl> the belief that law has moral content, teaches right and wrong, and improves human<lb/> beings. See 1 BLACKSTONE, supra note 23, at 27, 45;</bibl>
+          <bibl> 2 id. at 8;</bibl>
+          <bibl> 3 id. at 162.<lb/> </bibl>
+        <bibl><label>223</label> See Conklin, supra note 23, at 211.<lb/> </bibl>
+        <bibl><label>224</label> Cf. Helmholz, supra note 55, at 21-22 (noting that English lawyers traditionally assumed<lb/> that the common law and natural law "complemented each other").</bibl>
+          <bibl> But see Allen, supra<lb/> note 21, at 196-98 (questioning the impact of natural law upon the Commentaries).<lb/> </bibl>
+        <bibl><label>225</label> See LIEBERMAN, supra note 15, at 38-55.<lb/> </bibl>
+        <bibl><label>226</label> See Lobban, supra note 50, at 323.<lb/> </bibl>
+        <bibl><label>227</label> See LIEBERMAN, supra note 15, at 37;</bibl>
+          <bibl> Finnis, supra note 24, at 175-76 (listing scores of<lb/> references in note 94).<lb/> </bibl>
+        <bibl><label>228</label> See BOORSTIN, supra note 1, at 142.<lb/></bibl>
+          <bibl><label>229</label> See id. at 30.<lb/> </bibl>
+        <bibl><label>230</label> See BOORSTIN, supra note 1, at 85.</bibl>
+          <bibl> In like manner, Maine has remarked the importance of<lb/> simplicity, harmony, and elegance as guides to Roman jurisconsults. MAINE, supra note<lb/> 24, at 65.<lb/> </bibl>
+        <bibl><label>231</label> See BOORSTIN, supra note 1, at 28.<lb/> </bibl>
+        <bibl><label>232</label> See Finnis, supra note 24, at 176.<lb/> </bibl>
+        <bibl><label>233</label> See BOORSTIN, supra note 1, at 92.<lb/></bibl>
+          <bibl><label>234</label> See id. at 98.<lb/> </bibl>
+        <bibl><label>235</label> See Lobban, supra note 50, at 332-33.</bibl>
+          <bibl> Emily Kadens has emphasized that Blackstone's<lb/> approach to the law differed in its systemization and generalization from that of the<lb/> practitioner. Kadens, supra note 5, at 1559;</bibl>
+          <bibl>see also id. 1563 (stating that the Commentaries<lb/> was said to depart from the common law as practiced), 1575 (stating that even in practice<lb/> Blackstone acted as if legal questions held one correct answer without doubt), 1605<lb/> (stating that Blackstone even as judge knew the law, but not the "legal mind").<lb/> </bibl>
+        <bibl><label>236</label> See BOORSTIN, supra note 1, at 58.<lb/> </bibl>
+        <bibl><label>237</label> See id. at 53, 60.</bibl>
+          <bibl> Following Hale, Blackstone in the Commentaries treats the general<lb/> phenomenon of law under the guise of the law of England as an example historically<lb/> considered. Id. at 35-36.</bibl>
+          <bibl> The experience of generations of wise men had rendered the<lb/> common law the nearest human approach to the natural law. KIRK, supra note 106, at 371.<lb/> </bibl>
+        <bibl><label>238</label> See Watson, supra note 23, at 795.<lb/> </bibl>
+        <bibl><label>239</label> 1 BLACKSTONE, supra note 23, at 17;</bibl>
+          <bibl> cf. 4 Id. at 256 (rooting a legal principle in "the genius<lb/> and spirit of the law of England").<lb/> </bibl>
+        <bibl><label>240</label> See infra notes 306-08 and accompanying text.</bibl>
+          <bibl> Blackstone emphasized English civil<lb/> freedom, LIEBERMAN, supra note 15, at 39-40,</bibl>
+          <bibl> and liberty, BOORSTIN, supra note 1, at 154,<lb/></bibl>
+          <bibl> giving rights a central position in his analysis, id. at 162;</bibl>
+          <bibl> see also Allen, supra note 21, at<lb/> 196-97.<lb/> </bibl>
+        <bibl><label>241</label> See supra notes 173-74 and accompanying text;</bibl>
+          <bibl> Berman &amp; Reid, supra note 50, at 498-500,<lb/> 511.<lb/> </bibl>
+        <bibl><label>242</label> See Lobban, supra note 50, at 333.<lb/> </bibl>
+        <bibl><label>243</label> See 1 BLACKSTONE, supra note 23, at 59.<lb/> </bibl>
+        <bibl><label>244</label> See id. at 34; 2 id. at 2.<lb/> </bibl>
+        <bibl><label>245</label> See BOORSTIN, supra note 1, at 11-12, 20-23.<lb/> </bibl>
+        <bibl><label>246</label> See LIEBERMAN, supra note 15, at 37.</bibl>
+          <bibl> Blackstone's dedication to the scientific approach<lb/> to the common law did not rule out what Boorstin calls "mystery" when needed to<lb/> supplement science, much as Edmund Burke called upon mystery in aid of his arguments.<lb/> BOORSTIN, supra note 1, at 25.</bibl>
+          <bibl> Similarly, the Commentaries has been tagged as "formalistic,<lb/> in the sense of describing the nominal power relationships, while failing to acknowledge<lb/> what he and other lawyers of his day knew to be the actual division of power and<lb/> influence." Langbein, supra note 14, at 70.<lb/> </bibl>
+        <bibl><label>247</label> Hooker's use of history is treated above at notes 138 to 145.<lb/> </bibl>
+        <bibl><label>248</label> See BOORSTIN, supra note 1, at 62-64, 78.<lb/> </bibl>
+        <bibl><label>249</label> See id. at 72-73;</bibl>
+          <bibl> RICHARD TUCK, NATURAL RIGHTS THEORIES 84 (1979).</bibl>
+          <bibl> One is reminded<lb/> also of Maine's characterization of the Roman law as aspiring to an "indefinite<lb/> approximation" to perfect law. See MAINE, supra note 24, at 63. Here again, Blackstone's<lb/> roots in Roman law complement his Anglicanism.<lb/> </bibl>
+        <bibl><label>250</label> See BOORSTIN, supra note 1, at 104.<lb/> </bibl>
+        <bibl><label>251</label> See LIEBERMAN, supra note 15, at 45.</bibl>
+          <bibl> Boorstin writes that Blackstone employs a fiction that<lb/> English law expresses both "the perfection of reason" and "the fullness of experience,"<lb/> BOORSTIN, supra note 1, at 135,</bibl>
+          <bibl> but Blackstone asserts that legal customs, while often<lb/> rooted in natural law, are not always reasonable and so may stand in need of correction.<lb/> Compare, e.g., 1 BLACKSTONE, supra note 23, at 251 (suggesting that a custom "seems<lb/> dictated by nature herself")</bibl>
+          <bibl> with id. at 280 (observing how an ancient rule of common law<lb/> "was consonant neither to reason nor humanity" and so endorsing its later alteration).<lb/> </bibl>
+        <bibl><label>252</label> See BOORSTIN, supra note 1, at 63.<lb/> </bibl>
+        <bibl><label>253</label> LIEBERMAN, supra note 15, at 49.</bibl>
+          <bibl> This approach was typical of English eighteenth-century<lb/> treatment of the law. Berman &amp; Reid, supra note 50, at 438.<lb/> </bibl>
+        <bibl><label>254</label> See 1 BLACKSTONE, supra note 23, at 137 (asserting that the law of England "is permanent,<lb/> fixed, and unchangeable, unless by authority of parliament"); </bibl>
+<bibl>3 id. at 429 (observing<lb/> that "truth and justice are always uniform").</bibl>
+          <bibl> Langbein suggests that Blackstone himself<lb/> viewed the fixed and settled character of the law as a myth. Langbein, supra note 14, at 68.<lb/> </bibl>
+        <bibl><label>255</label> See BOORSTIN, supra note 1, at 57.<lb/> </bibl>
+        <bibl><label>256</label> See 1 BLACKSTONE, supra note 23, at 226 (opining that the terms of the theoretical social<lb/> contract are "only deducible by reason and the rules of natural law; in which deduction<lb/> different understandings might very considerably differ").<lb/> </bibl>
+        <bibl><label>257</label> See PREST, supra note 1, at 307-08.</bibl>
+          <bibl> Elsewhere Prest notes Blackstone's Tory opposition to<lb/> the Whig establishment. Prest, supra note 58, at 154.<lb/> </bibl>
+        <bibl><label>258</label> See Alschuler, supra note 1, at 37-38.<lb/> </bibl>
+        <bibl><label>259</label> See BOORSTIN, supra note 1, at 81;</bibl>
+          <bibl> LIEBERMAN, supra note 15, at 43-44.<lb/> </bibl>
+
+        <bibl><label>260</label> 4 BLACKSTONE, supra note 23, at 436.</bibl>
+          <bibl> Other passages urging modification of English law<lb/> include id. at 3-5, 88-89, 165-66, 175, 239, 278-79, 349, 353, 381-82, and 409.<lb/> </bibl>
+        <bibl><label>261</label> MAINE, supra note 24, at 64.<lb/> </bibl>
+        <bibl><label>262</label> See BOORSTIN, supra note 1, at 111, 145.<lb/></bibl>
+          <bibl><label>263</label> See id. at 146-50.<lb/> </bibl>
+<bibl><label>264</label> The classic discussion is to be found in MAINE, supra note 24, at 17-36.<lb/> </bibl>
+        <bibl><label>265</label> See LIEBERMAN, supra note 15, at 47.<lb/> </bibl>
+        <bibl><label>266</label> See BOORSTIN, supra note 1, at 69.<lb/> </bibl>
+        <bibl><label>267</label> Allen, supra note 21, at 202-05.</bibl>
+          <bibl> Allen would have this use of fictions establish that the<lb/> Commentaries sees the law as a fabrication that does not reflect the way things really are.<lb/> Id. at 205.</bibl>
+          <bibl> Fabrication the law may be, see supra text accompanying note 260, but the<lb/> point of fictions is to shape this fabric more accurately to reflect the way things really are<lb/> notwithstanding formulations of the positive law that otherwise would depart from the<lb/> way things really are.</bibl>
+          <bibl> After all, that is the driving force behind fictions. See MAINE, supra<lb/> note 24, at 17-36.<lb/> </bibl>
+
+        <bibl><label>268</label> See, e.g., Stretton, supra note 205, at 119-20, 122, 126-27 (casting Blackstone's (?) "one<lb/> person" theory of marriage as a legal fiction to serve his "scientific organizing principle"<lb/> though, according to Stretton, not directly dictated by natural law).<lb/> </bibl>
+        <bibl><label>269</label> Again, the classic discussion is to be found in MAINE, supra note 24, at 17-36.<lb/> </bibl>
+        <bibl><label>270</label> See Lobban, supra note 50, at 325.<lb/> </bibl>
+        <bibl><label>271</label> See 1 BLACKSTONE, supra note 23, at 86, 353;</bibl>
+          <bibl> 3 Id. at 328, 410;</bibl>
+          <bibl> 4 Id. at 431-33.</bibl>
+          <bibl> Blackstone<lb/> presupposed and endorsed ameliorative legislation in his charge quoted above at note 260.<lb/> </bibl>
+        <bibl><label>272</label> 1 BLACKSTONE, supra note 23, at 10.<lb/> </bibl>
+        <bibl><label>273</label> See Conklin, supra note 23, at 220-24.<lb/> </bibl>
+        <bibl><label>274</label> Prest, supra note 3, at 115-18.<lb/></bibl>
+          <bibl><label> 275</label> See id. at 118-21.<lb/> </bibl>
+
+<bibl><label>276</label> See id. at 104.<lb/> </bibl>
+        <bibl><label>277</label> See Cook, supra note 12, at 175-76 (noting Blackstone's preference for the common law<lb/> over statutes); </bibl>
+<bibl>Kadens, supra note 5, at 1561 (discussing Blackstone's imagery of the law<lb/> as a house deformed by statutes).<lb/> </bibl>
+        <bibl><label>278</label> 1 BLACKSTONE, supra note 23, at 353.<lb/> </bibl>
+        <bibl><label>279</label> See supra text accompanying notes 63-65;</bibl>
+          <bibl> MAINE, supra note 24, at 41-43.<lb/> </bibl>
+        <bibl><label>280</label> See BOORSTIN, supra note 1, at 47.<lb/> </bibl>
+        <bibl><label>281</label> See generally Alschuler, supra note 1, at 27;</bibl>
+          <bibl> McKnight, supra note 2, at 404.<lb/> </bibl>
+        <bibl><label>282</label> See MOSSNER, supra note 167, at 26.<lb/> </bibl>
+        <bibl><label>283</label> See BOORSTIN, supra note 1, at 43.</bibl>
+          <bibl> Blackstone reflects upon comparative law several times<lb/> in the Commentaries. See 1 BLACKSTONE, supra note 23, at 5, 21, 35-36;</bibl>
+          <bibl> 2 id. at 258;</bibl>
+          <bibl> 3 id. at<lb/> 108;</bibl>
+          <bibl> 4 id. at 181, 237, 241.<lb/> </bibl>
+
+        <bibl><label>284</label> See supra notes 116-18 and accompanying text.<lb/> </bibl>
+        <bibl><label>285</label> See Cook, supra note 12, at 175.<lb/> </bibl>
+        <bibl><label>286</label> See supra text accompanying note 39.</bibl>
+          <bibl> Again, this paper uses the term "natural law" for<lb/> what Blackstone usually called "the law of nature." He himself defined "natural law" to<lb/> be human theorizing about the law of nature, see id., though his actual usage seems not to<lb/> be uniform on this point, see supra note 7.<lb/> </bibl>
+        <bibl><label>287</label> See Wilfrid Prest, William Blackstone's Anglicanism, in GREAT CHRISTIAN JURISTS IN ENGLISH<lb/> HISTORY 213, 231-32 (Mark Hill &amp; R. H. Helmholz eds., 2017).<lb/> </bibl>
+        <bibl><label>288</label> See DAVIES, supra note 151, at 16, 21.<lb/> </bibl>
+        <bibl><label>289</label> In keeping with its comparatist approach, the Commentaries with seeming approval notes<lb/> within or alongside the common law itself a diversity of sources and even of rules of law.<lb/> See 1 BLACKSTONE, supra note 23, at 63-64, 74-78; 4 Id. at 403.<lb/> </bibl>
+
+        <bibl><label>290</label> See Alschuler, supra note 1, at 2, 24-27.<lb/> </bibl>
+        <bibl><label>291</label> See id. at 26.<lb/> </bibl>
+        <bibl><label>292</label> See 1 BLACKSTONE, supra note 23, at 410, 423;</bibl>
+          <bibl> 2 id. at 8-13, 258, 293;</bibl>
+          <bibl> 3 id. at 145, 168, 208,<lb/> 327;</bibl>
+          <bibl> 4 id. at 3, 9-12, 42, 375.<lb/> </bibl>
+        <bibl><label>293</label> Posner, supra note 45, at 579, 590.</bibl>
+          <bibl> The Commentaries is so dedicated to this tracing of<lb/> reasons that at least one commentator tags the reasons as "often shallow, formalistic,<lb/> indeed sometimes plain dishonest." Langbein, supra note 14, at 77.<lb/> </bibl>
+        <bibl><label>294</label> See MOSSNER, supra note 167, at 25.<lb/> </bibl>
+        <bibl><label>295</label> BOORSTIN, supra note 1, at 121.<lb/> </bibl>
+        <bibl><label>296</label> See Berman &amp; Reid, supra note 50, at 502.</bibl>
+          <bibl> Although reasonableness became a hallmark of<lb/> Butler and the Latitudinarians, reasonableness figures in Hooker's work also. See VOAK,<lb/> supra note 118, at 137.</bibl>
+          <bibl> Perhaps in some distinction from "reasonableness," "reason" had<lb/> longed served as a touchstone of English law. See NORMAN DOE, FUNDAMENTAL AUTHORITY<lb/> IN LATE MEDIEVAL ENGLISH LAW 83, 106-31, 153, 176-77 (1990). Blackstone no doubt draws<lb/> upon this tradition as well as upon post-Reformation Anglicanism.<lb/> </bibl>
+        <bibl><label>297</label> See Lobban, supra note 50, at 334;</bibl>
+          <bibl> Posner, supra note 45, at 572.</bibl>
+          <bibl> Posner discovers the<lb/> maximization of welfare in Blackstone's approach, Posner 573-74,</bibl>
+          <bibl> much as Maine found<lb/> "utilitarianism" in the Roman law, McKnight, supra note 2, at 406 n.67.</bibl>
+          <bibl> Finnis notes<lb/> that Blackstone in some respects bases even the human institution of rights upon reason.<lb/> Finnis, supra note 24, at 166.<lb/> </bibl>
+
+        <bibl><label>298</label> Lobban describes this as supplying a natural law "external test of reasonableness of the<lb/> law." Lobban, supra note 50, at 333.<lb/> </bibl>
+        <bibl><label>299</label> See BOORSTIN, supra note 1, at 27.<lb/></bibl>
+          <bibl><label>300</label> See id.<lb/> </bibl>
+        <bibl><label>301</label> 1 BLACKSTONE, supra note 23, at 70 (footnote omitted);</bibl>
+          <bibl> see also id. at 77-78, 91.<lb/> </bibl>
+        <bibl><label>302</label> See id. at 47, 146, 148, 150, 163, 165, 185-86, 211, 226-27, 238, 246, 280, 287, 411, 443,<lb/> 446, 449-50, 464;</bibl>
+          <bibl> 2 id. at 4, 8, 10-15, 68, 128, 162, 210-11, 228, 230, 385, 390, 401, 411-<lb/>12, 453-54, 486;</bibl><bibl> 3 id. at 31, 158, 161, 176-77, 188, 219, 226, 241, 244, 271, 379-80, 385,<lb/> 430, 434;</bibl><bibl> 4 id. at 14-16, 32, 51, 103, 105, 186, 216, 237, 248, 280, 364, 382-81, 409-12, 416,<lb/> 425, 428-29.<lb/> </bibl>
+        <bibl><label>303</label> See 1 id. at 61;</bibl>
+          <bibl> 3 id. at 192, 207, 226, 392, 429;</bibl>
+          <bibl> 4 id. at 423.<lb/> </bibl>
+        <bibl><label>304</label> This search for sound reasons is not for Blackstone an individual affair; he distrusted<lb/> individual reason. See BOORSTIN, supra note 1, at 50, 103, 117;</bibl>
+          <bibl> Posner, supra note 45, at<lb/> 603.<lb/></bibl>
+          <bibl><label> 305</label> See supra notes 147-56 and accompanying text.<lb/> </bibl>
+
+        <bibl><label>306</label> See supra note 240 and accompanying text.<lb/></bibl>
+          <bibl><label> 307 </label>Social contract theory plays a role in Blackstone's development of natural law, see Finnis,<lb/> supra note 24, at 178-79,</bibl>
+          <bibl> and even property rights are contingent, developed in the context<lb/> of society, see supra note 152 and accompanying text;</bibl>
+          <bibl> Allen, supra note 21, at 197. Natural<lb/> liberty yields to social convention, but only for good reasons.<lb/> </bibl>
+        <bibl><label>308</label> 1 BLACKSTONE, supra note 23, at 122.<lb/> </bibl>
+        <bibl><label>309</label> See, e.g., id. at 54-55, 185;</bibl>
+          <bibl> 2 id. at 2, 211, 491;</bibl>
+          <bibl> 3 id. at 87; 4 id. at 238;</bibl>
+          <bibl> see also supra notes<lb/> 147-56 and accompanying text.<lb/> </bibl>
+        <bibl><label>310</label> See Finnis, supra note 24, at 181;</bibl>
+          <bibl> David Lemmings, Editor's Introduction to Book I of 1<lb/> BLACKSTONE, supra note 2, at xvii, xxxi.</bibl>
+          <bibl> H.L.A. Hart has suggested that Blackstone's<lb/> presentation of natural law is expressly to provide gaps to be filled by human law settling<lb/> matters indifferent, Hart, supra note 52, at 174,</bibl>
+          <bibl> but Finnis has demonstrated the difficulty<lb/> with Hart's view. See Finnis, supra note 24, at 171-74.<lb/> </bibl>
+        <bibl><label>311</label> See Lobban, supra note 50, at 324;</bibl>
+          <bibl> McKnight, supra note 2, at 404-06.<lb/> </bibl>
+        <bibl><label>312</label> Again, it bears repeating that "the reality of things" speaks not only of mere physicality<lb/> but also of the norms appropriate to the situation at hand. The reality of things holds as<lb/> much ought as is. See supra notes 66-76 and accompanying text.<lb/> </bibl>
+        <bibl><label>313</label> See BOORSTIN, supra note 1, at 65, 68.<lb/> </bibl>
+        <bibl><label>314</label> See Posner, supra note 45, at 604.<lb/> </bibl>
+        <bibl><label>315</label> See BOORSTIN, supra note 1, at 70.<lb/></bibl>
+          <bibl><label> 316</label> Id. at 69.<lb/> </bibl>
+        <bibl><label>317</label> See id. at 83-84; </bibl>
+<bibl>McKnight, supra note 2, at 403;</bibl>
+          <bibl> Posner, supra note 45, at 583;</bibl>
+          <bibl> cf. MAINE,<lb/> supra note 24, at 60 (noting that Roman lawyers respected the natural law within their own<lb/> law for its "descent from the aboriginal reign of nature"). Presumably, Blackstone melds<lb/> his endorsement of both Saxon primitivism and historical development in the notion of<lb/> sound development upon Saxon principle.<lb/> </bibl>
+        <bibl><label>318</label> 1 BLACKSTONE, supra note 23, at 69;</bibl>
+          <bibl> see also 3 id. at 327 ("For though in many other<lb/> countries every thing is left in the breast of the judge to determine, yet with us he is only<lb/> to declare and pronounce, not to make or new-model, the law").</bibl>
+          <bibl> This understanding of<lb/> the work of the judge is in keeping with Blackstone's view of the use of reason in law to<lb/> discover, not to invent. See BOORSTIN, supra note 1, at 51, 123.</bibl><bibl> So law apparently created by<lb/> human beings has also a divine quality. Id. at 59.<lb/> </bibl>
+        <bibl><label>319</label> See, e.g., JOHN CHIPMAN GRAY, THE NATURE AND SOURCES OF THE LAW 59-64 (David Campbell<lb/> &amp; Philip Thomas eds., Dartmouth Publ'g 1997) (1921); </bibl>
+<bibl>William S. Brewbaker III, Found<lb/> Law, Made Law and Creation: Reconsidering Blackstone's Declaratory Theory, 22 J.L. &amp;<lb/> RELIGION 255 (2006).<lb/> </bibl>
+        <bibl><label>320</label> See Alschuler, supra note 1, at 4, 37, 42.<lb/> </bibl>
+        <bibl><label>321</label> See, e.g., Frankland &amp; Moore v. Regina [1987] 1 AC 576, 585, 594 (PC) (appeals taken from<lb/> Isle of Man).<lb/> </bibl>
+        <bibl><label>322</label> At the same time, however, Helmholz has noted the traditional role for natural law in<lb/> adjudging cases, Helmholz, supra note 55, at 18,</bibl>
+          <bibl> and one may wonder how the rule of law<lb/> could be respected were judges to invent rules to apply to cases before them but arising<lb/> from facts long past. See STEVEN D. SMITH, LAW'S QUANDARY 61-64 (2004).<lb/> </bibl>
+        <bibl><label>323</label> Apparently, on the bench Blackstone himself adhered to the declaratory theory and<lb/> faithfully applied precedent. See Kadens, supra note 5, at 1556-58, 1578, 1580, 1583,<lb/> 1586, 1590, 1598, 1600-01.</bibl>
+          <bibl> That Blackstone does not subscribe to judicial review, see 1<lb/> BLACKSTONE, supra note 23, at 91;</bibl>
+          <bibl> Helmholz, supra note 55, at 14, in no way compromises<lb/> his commitment to natural law.</bibl><bibl> Finnis, supra note 24, at 169-70.<lb/> </bibl>
+        <bibl><label>324</label> Finnis, supra note 24, at 182-83 (footnote omitted).<lb/> </bibl>
+
+        <bibl><label>325</label> See Alschuler, supra note 1, at 54;</bibl>
+          <bibl> cf. Allen, supra note 21, at 198 (stating that "the<lb/> Commentaries is a checkerboard of natural law and positivist perspectives").<lb/> </bibl>
+        <bibl><label>326</label> See Berman &amp; Reid, supra note 50, at 521.<lb/> </bibl>
+        <bibl><label>327</label> See OLIVER WENDELL HOLMES, JR., THE COMMON LAW (1881).<lb/> </bibl>
+        <bibl><label>328</label> See RICHARD A. POSNER, ECONOMIC ANALYSIS OF LAW (9th ed. 2014).<lb/> </bibl>
+        <bibl><label>329</label> This approach bears a resemblance to the natural law of Roman law, "smuggling" into<lb/> the law values under the guise of a merely "technological" approach. See D'ENTRÈVES,supra<lb/> note 61, at 151.</bibl>
+          <bibl> Also, Lon Fuller's explanation of the development of the common law case-<lb/>by-case comes to mind: he described each case presenting to the court the opportunity to<lb/> discern the necessary implications of the enterprise the law at issue is to govern. See Lon<lb/> L. Fuller, The Forms and Limits of Adjudication, 92 HARV. L. REV. 353, 357-77 (1978).</bibl>
+        </listBibl>
+    </text>
+
+
+</TEI>
