@@ -534,7 +534,7 @@ project(":grobid-trainer") {
         implementation("me.tongfei:progressbar:0.9.5") {
             exclude group: 'org.jline', module: 'jline'
         }
-        implementation "org.jline:jline-terminal:3.21.0"
+        implementation "org.jline:jline-terminal:3.30.16"
 
         // logs — see grobid-core: slf4j 2.0.x needs logback 1.5.x for its ServiceLoader binding.
         implementation 'org.slf4j:slf4j-api:2.0.18'
