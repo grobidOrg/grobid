@@ -371,6 +371,8 @@ The models captured are:
 
 The `models` parameter — a comma-separated list of canonical model names — restricts the response to a subset of these. The full pipeline still runs (cascaded models depend on upstream output), so `models` is purely a response filter. Unknown names cause a `400 Bad Request`.
 
+When a request also sets `flavor`, the models that have a flavored variant are reported under their flavored name — `segmentation` becomes `segmentation-article-footnotes-refs` for `flavor=article/footnotes-refs`, for instance — so that the dump makes explicit which model actually ran. Filtering on the base name (`models=segmentation`) selects the flavored variants too.
+
 > **Note:** the dump format is the raw CRF tagger output and tracks the underlying feature-vector schema of each model, so it is **not guaranteed stable across GROBID releases**.
 
 Examples:

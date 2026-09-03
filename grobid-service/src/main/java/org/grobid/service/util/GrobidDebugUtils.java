@@ -28,6 +28,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import org.grobid.core.GrobidModel;
 import org.grobid.core.GrobidModels;
 import org.grobid.core.engines.config.DebugLabelingCollector;
 import org.grobid.service.exceptions.GrobidServiceException;
@@ -98,17 +99,42 @@ public final class GrobidDebugUtils {
     }
 
     /**
+     * True when {@code recordedName} is selected by the {@code models} filter.
+     *
+     * <p>A request run with a flavor records its output under the flavored model
+     * name — {@code segmentation} becomes {@code segmentation-article-footnotes-refs}
+     * — because {@link GrobidModel#getModelName()} hyphenates the flavor folder path.
+     * Matching on equality alone would therefore drop every section as soon as a
+     * flavor is in play, so a requested base name also selects its flavored
+     * variants. The flavored name of a model is always the base name followed by
+     * {@code -} and the flavor label, which makes the prefix test unambiguous:
+     * no two base model names are related that way.
+     */
+    private static boolean isSelected(String recordedName, Set<String> modelsFilter) {
+        if (modelsFilter == null || modelsFilter.contains(recordedName)) {
+            return true;
+        }
+        for (String requested : modelsFilter) {
+            if (recordedName.startsWith(requested + "-")) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
      * Render a debug-mode response body. Sections appear in the order entries
      * were recorded; if a model fired more than once, each occurrence gets an
      * "(occurrence i of n)" suffix. When {@code modelsFilter} is non-null, only
-     * sections whose key is in the filter are emitted.
+     * sections selected by the filter are emitted — see {@link #isSelected}, which
+     * also accepts the flavored variants of a requested model.
      */
     public static String formatResponseBody(DebugLabelingCollector collector, Set<String> modelsFilter) {
         StringBuilder sb = new StringBuilder();
         Map<String, List<String>> snapshot = collector.snapshot();
         for (Map.Entry<String, List<String>> entry : snapshot.entrySet()) {
             String modelName = entry.getKey();
-            if (modelsFilter != null && !modelsFilter.contains(modelName)) {
+            if (!isSelected(modelName, modelsFilter)) {
                 continue;
             }
             List<String> occurrences = entry.getValue();
