@@ -171,7 +171,7 @@ public class Segmentation extends AbstractParser {
         if (isNotEmpty(trim(content))) {
             String labelledResult = labelAndCapture(content, config);
             // set the different sections of the Document object
-            if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN) {
+            if (flavor == Flavor.ARTICLE_FOOTNOTES_REFS_TOKEN) {
                 doc = BasicStructureBuilder.generalResultSegmentationTokenLevel(doc, labelledResult, tokenizations);
             } else {
                 doc = BasicStructureBuilder.generalResultSegmentation(doc, labelledResult, tokenizations);
@@ -290,7 +290,7 @@ public class Segmentation extends AbstractParser {
      * Regarding layout features: font, size and style are the one associated to the first token of the line.
      */
     public String getAllFeatured(Document doc) {
-        if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN) {
+        if (flavor == Flavor.ARTICLE_FOOTNOTES_REFS_TOKEN) {
             return getAllTokensFeatured(doc);
         } else {
             return getAllLinesFeatured(doc);
@@ -714,7 +714,7 @@ public class Segmentation extends AbstractParser {
                     }
 
                     // additional visual + content features (article/footnotes-refs flavour only)
-                    if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES || flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN) {
+                    if (flavor == Flavor.ARTICLE_FOOTNOTES_REFS || flavor == Flavor.ARTICLE_FOOTNOTES_REFS_TOKEN) {
                         features.extendedFeatures = true;
 
                         // relative font size compared to document average
@@ -1006,7 +1006,7 @@ public class Segmentation extends AbstractParser {
                     int parenthesesCount = 0;
                     int commaCount = 0;
                     int capitalizedWordCount = 0;
-                    if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES || flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN) {
+                    if (flavor == Flavor.ARTICLE_FOOTNOTES_REFS || flavor == Flavor.ARTICLE_FOOTNOTES_REFS_TOKEN) {
                         for (int i = 0; i < lineText.length(); i++) {
                             if (lineText.charAt(i) == '(')
                                 parenthesesCount++;
@@ -1222,8 +1222,8 @@ public class Segmentation extends AbstractParser {
                         }
 
                         // extended features
-                        if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES
-                                || flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN) {
+                        if (flavor == Flavor.ARTICLE_FOOTNOTES_REFS
+                                || flavor == Flavor.ARTICLE_FOOTNOTES_REFS_TOKEN) {
                             features.extendedFeatures = true;
 
                             double avgFontSize = doc.getAverageFontSize();

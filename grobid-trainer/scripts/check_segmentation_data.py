@@ -133,7 +133,7 @@ def discover_splits(root_dir):
     """
     Recursively find all tei/ directories under *root_dir* and return
     (label, tei_dir, raw_dir) tuples.  The label is the relative path
-    from root to the parent of tei/, e.g. "article/dh-law-footnotes/corpus".
+    from root to the parent of tei/, e.g. "article/footnotes-refs/corpus".
     """
     root = Path(root_dir)
     splits = []

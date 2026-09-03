@@ -151,7 +151,7 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
         // For article/footnotes-refs: propagate labels forward to references that have no label.
         // In law/humanities footnotes, a numbered footnote (e.g. "1") may be followed by
         // multiple references that all belong to the same footnote number.
-        if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES) {
+        if (flavor == Flavor.ARTICLE_FOOTNOTES_REFS) {
             propagateLabels(results);
         }
 

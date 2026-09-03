@@ -43,8 +43,8 @@ public class FieldSpecificationTest {
             GrobidModels.Flavor.BLANK,
             GrobidModels.Flavor._3GPP,
             GrobidModels.Flavor.IETF,
-            GrobidModels.Flavor.ARTICLE_DH_LAW_FOOTNOTES,
-            GrobidModels.Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN);
+            GrobidModels.Flavor.ARTICLE_FOOTNOTES_REFS,
+            GrobidModels.Flavor.ARTICLE_FOOTNOTES_REFS_TOKEN);
 
     /**
      * Every flavor must resolve to an explicit decision: either a field selection, or a clear

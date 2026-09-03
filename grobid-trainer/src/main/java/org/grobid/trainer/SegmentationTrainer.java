@@ -157,7 +157,7 @@ public class SegmentationTrainer extends AbstractTrainer {
                     parser = new TEISegmentationArticleLightSaxParser();
                 } else if (flavor == Flavor.ARTICLE_LIGHT_WITH_REFERENCES) {
                     parser = new TEISegmentationArticleLightRefSaxParser();
-                } else if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN) {
+                } else if (flavor == Flavor.ARTICLE_FOOTNOTES_REFS_TOKEN) {
                     parser = new TEISegmentationTokenLevelSaxParser();
                 } else {
                     parser = new TEISegmentationSaxParser();
@@ -170,7 +170,7 @@ public class SegmentationTrainer extends AbstractTrainer {
                 List<String> labeled = parser.getLabeledResult();
 
                 // For article/footnotes-refs flavor, remap low-support labels
-                //                if (flavor == Flavor.ARTICLE_DH_LAW_FOOTNOTES) {
+                //                if (flavor == Flavor.ARTICLE_FOOTNOTES_REFS) {
                 //                    labeled = remapLowSupportLabels(labeled);
                 //                }
 
