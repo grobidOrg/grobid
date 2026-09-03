@@ -132,7 +132,7 @@ grobid:
           max_sequence_length: 3000
           batch_size: 10
 
-    - name: "segmentation-article-article-footnotes-refs"
+    - name: "segmentation-article-footnotes-refs"
       # engine inherited from "segmentation"
       wapiti:
         # wapiti training parameters, they will be used at training time only
@@ -142,7 +142,7 @@ grobid:
         l1: 1
         l2: 1e-3
 
-    - name: "segmentation-article-article-footnotes-refs-token"
+    - name: "segmentation-article-footnotes-refs-token"
       # engine inherited from "segmentation"
       wapiti:
         epsilon: 0.0000001
@@ -255,7 +255,7 @@ grobid:
           max_sequence_length: 3000
           batch_size: 10
 
-    - name: "reference-segmenter-article-article-footnotes-refs"
+    - name: "reference-segmenter-article-footnotes-refs"
       # engine inherited from "reference-segmenter"
       wapiti:
         epsilon: 0.00001

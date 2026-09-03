@@ -1,6 +1,6 @@
 {
-    "model_name": "reference-segmenter-article-dh-law-footnotes-BidLSTM_ChainCRF_FEATURES",
-    "architecture": "BidLSTM_ChainCRF_FEATURES",
+    "model_name": "reference-segmenter-article-footnotes-refs-BidLSTM_CRF_FEATURES",
+    "architecture": "BidLSTM_CRF_FEATURES",
     "embeddings_name": "glove-840B",
     "char_vocab_size": 517,
     "case_vocab_size": 8,
@@ -37,7 +37,7 @@
     "dropout": 0.5,
     "recurrent_dropout": 0.5,
     "use_crf": true,
-    "use_chain_crf": true,
+    "use_chain_crf": false,
     "fold_number": 1,
     "batch_size": 3,
     "transformer_name": null,
