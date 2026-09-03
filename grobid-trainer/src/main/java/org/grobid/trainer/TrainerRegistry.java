@@ -54,18 +54,17 @@ public class TrainerRegistry {
         map.put("header-ietf", () -> new HeaderTrainer(Flavor.IETF));
         map.put("header-light", () -> new HeaderTrainer(Flavor.ARTICLE_LIGHT));
         map.put("header-light-ref", () -> new HeaderTrainer(Flavor.ARTICLE_LIGHT_WITH_REFERENCES));
-        map.put("segmentation-article-footnotes-refs", () -> new SegmentationTrainer(Flavor.ARTICLE_DH_LAW_FOOTNOTES));
+        map.put("segmentation-article-footnotes-refs", () -> new SegmentationTrainer(Flavor.ARTICLE_FOOTNOTES_REFS));
         map.put("segmentation-ietf", () -> new SegmentationTrainer(Flavor.IETF));
         map.put("segmentation-light", () -> new SegmentationTrainer(Flavor.ARTICLE_LIGHT));
         map.put("segmentation-light-ref", () -> new SegmentationTrainer(Flavor.ARTICLE_LIGHT_WITH_REFERENCES));
-        map.put("segmentation-article-footnotes-refs", () -> new SegmentationTrainer(Flavor.ARTICLE_DH_LAW_FOOTNOTES));
         map.put(
                 "segmentation-article-footnotes-refs-token",
-                () -> new SegmentationTrainer(Flavor.ARTICLE_DH_LAW_FOOTNOTES_TOKEN));
+                () -> new SegmentationTrainer(Flavor.ARTICLE_FOOTNOTES_REFS_TOKEN));
 
         map.put(
                 "reference-segmenter-article-footnotes-refs",
-                () -> new ReferenceSegmenterTrainer(Flavor.ARTICLE_DH_LAW_FOOTNOTES));
+                () -> new ReferenceSegmenterTrainer(Flavor.ARTICLE_FOOTNOTES_REFS));
 
         REGISTRY = Collections.unmodifiableMap(map);
     }

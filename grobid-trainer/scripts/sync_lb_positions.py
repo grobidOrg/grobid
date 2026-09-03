@@ -31,7 +31,7 @@ _DEFAULT_DIR_A = (
     / "dataset"
     / "segmentation"
     / "article"
-    / "dh-law-footnotes"
+    / "footnotes-refs"
 )
 _DEFAULT_DIR_B = Path("/Users/lfoppiano/Downloads/grobid-law/segmentation-generated")
 
