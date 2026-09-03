@@ -380,9 +380,7 @@ public class FullTextParser extends AbstractParser {
                     .filter(r -> r.endsWith("I-" + TaggingLabels.TABLE_LABEL))
                     .count();
 
-                List<Table> badAnnexTables = annexTables.stream()
-                    .filter(t -> !(t.isCompleteForTEI() && t.validateTable()))
-                    .collect(Collectors.toList());
+                List<Table> badAnnexTables = getBadTables(annexTables);
 
                 if (CollectionUtils.isNotEmpty(badAnnexTables)) {
                     LOGGER.info("Number of tables badly formatted or incomplete we identified in Annex: " + badAnnexTables.size());
