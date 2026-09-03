@@ -165,18 +165,18 @@ public class FullTextParser extends AbstractParser {
             // using the segmentation model to identify the header zones
             parsers.getHeaderParser(flavor).processingHeaderSection(config, doc, headerResults, false);
 
-            // The commented part below makes use of the PDF embedded metadata (the so-called XMP) if available 
-            // as fall back to set author and title if they have not been found. 
+            // The commented part below makes use of the PDF embedded metadata (the so-called XMP) if available
+            // as fall back to set author and title if they have not been found.
             // However tests on PMC set 1942 did not improve recognition. This will have to be re-evaluated with
-            // another, more diverse, testing set and with further updates of the header model. 
+            // another, more diverse, testing set and with further updates of the header model.
 
             // ---> DO NOT DELETE !
-            
+
             /*if (isBlank(resHeader.getTitle()) || isBlank(resHeader.getAuthors()) || CollectionUtils.isEmpty(resHeader.getFullAuthors())) {
                 // try to exploit PDF embedded metadata (the so-called XMP) if we are still without title/authors
                 // this is risky as those metadata are highly unreliable, but as last chance, why not :)
                 Metadata metadata = doc.getMetadata();
-                if (metadata != null) { 
+                if (metadata != null) {
                     boolean titleUpdated = false;
                     boolean authorsUpdated = false;
 
@@ -200,8 +200,8 @@ public class FullTextParser extends AbstractParser {
                         }
                     }
 
-                    // if title and author have been updated with embedded PDF metadata, we try to consolidate 
-                    // again as required 
+                    // if title and author have been updated with embedded PDF metadata, we try to consolidate
+                    // again as required
                     if ( titleUpdated || authorsUpdated ) {
                         parsers.getHeaderParser().consolidateHeader(resHeader, config.getConsolidateHeader());
                     }
@@ -226,7 +226,7 @@ public class FullTextParser extends AbstractParser {
             }
 
             // citation processing
-            // consolidation, if selected, is not done individually for each citation but 
+            // consolidation, if selected, is not done individually for each citation but
             // in a second stage for all citations which is much faster
             List<BibDataSet> resCitations = parsers.getCitationParser().
                 processingReferenceSection(doc, parsers.getReferenceSegmenterParser(), 0, config);
@@ -791,7 +791,7 @@ public class FullTextParser extends AbstractParser {
                 posStartPiece = getDocIndexToken(doc, token);
                 startBlockPtr = token.getBlockPtr();
             } else if (token.getOffset() != currentOffset + previousToken.getText().length()) {
-                // new DocumentPiece to be added 
+                // new DocumentPiece to be added
                 DocumentPointer dp1 = new DocumentPointer(doc, startBlockPtr, posStartPiece);
                 DocumentPointer dp2 = new DocumentPointer(doc,
                     previousToken.getBlockPtr(),
@@ -807,7 +807,7 @@ public class FullTextParser extends AbstractParser {
             previousToken = token;
         }
         // we still need to add the last document piece
-        // conditional below should always be true because abstract is not null if we reach this part, but paranoia is good when programming 
+        // conditional below should always be true because abstract is not null if we reach this part, but paranoia is good when programming
         if (posStartPiece != -1) {
             DocumentPointer dp1 = new DocumentPointer(doc, startBlockPtr, posStartPiece);
             DocumentPointer dp2 = new DocumentPointer(doc,
@@ -961,7 +961,7 @@ public class FullTextParser extends AbstractParser {
 
             //int blockPos = dp1.getBlockPtr();
             for (int blockIndex = dp1.getBlockPtr(); blockIndex <= dp2.getBlockPtr(); blockIndex++) {
-//System.out.println("blockIndex: " + blockIndex);			
+//System.out.println("blockIndex: " + blockIndex);
                 boolean graphicVector = false;
                 boolean graphicBitmap = false;
                 Block block = blocks.get(blockIndex);
@@ -992,7 +992,7 @@ public class FullTextParser extends AbstractParser {
 	            }*/
 
                 if (lowestPos > block.getY()) {
-                    // we have a vertical shift, which can be due to a change of column or other particular layout formatting 
+                    // we have a vertical shift, which can be due to a change of column or other particular layout formatting
                     spacingPreviousBlock = doc.getMaxBlockSpacing() / 5.0; // default
                 } else
                     spacingPreviousBlock = block.getY() - lowestPos;
@@ -1317,7 +1317,7 @@ public class FullTextParser extends AbstractParser {
                     if (pagePos > NBBINS_POSITION)
                         pagePos = NBBINS_POSITION;
                     features.relativePagePosition = pagePos;
-//System.out.println((coordinateLineY) + " " + (pageHeight) + " " + NBBINS_POSITION + " " + pagePos); 
+//System.out.println((coordinateLineY) + " " + (pageHeight) + " " + NBBINS_POSITION + " " + pagePos);
 
                     if (spacingPreviousBlock != 0.0) {
                         features.spacingWithPreviousBlock = featureFactory
@@ -2559,7 +2559,7 @@ public class FullTextParser extends AbstractParser {
                 }
                 // parse the recognized figure area
 //System.out.println(tokenizationsFigure.toString());
-//System.out.println(figureBlock.toString()); 
+//System.out.println(figureBlock.toString());
                 //adjustment
                 if ((p != tokenizations.size()) && (tokenizations.get(p).getText().equals("\n") ||
                     tokenizations.get(p).getText().equals("\r") ||
@@ -2782,7 +2782,7 @@ public class FullTextParser extends AbstractParser {
                 }
                 // parse the recognized table area
 //System.out.println(tokenizationsTable.toString());
-//System.out.println(tableBlock.toString()); 
+//System.out.println(tableBlock.toString());
                 //adjustment
                 if ((p != tokenizations.size()) && (tokenizations.get(p).getText().equals("\n") ||
                     tokenizations.get(p).getText().equals("\r") ||
