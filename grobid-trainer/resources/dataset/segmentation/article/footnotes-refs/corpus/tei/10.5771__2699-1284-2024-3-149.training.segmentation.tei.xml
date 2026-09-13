@@ -1,101 +1,105 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-    <fileDesc xml:id="_10.5771__2699-1284-2024-3-149">
-      <titleStmt>
-        <title level="a">Legal status of Derived Text Formats – 2nd deliverable of Text+ AG Legal and Ethical Issues –</title>
-        <author>
-          <persName>
-            <forename>Gianna</forename>
-            <surname>Iacino</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Paweł</forename>
-            <surname>Kamocki</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Keli</forename>
-            <surname>Du</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Christof</forename>
-            <surname>Schöch</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Andreas</forename>
-            <surname>Witt</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Philippe</forename>
-            <surname>Genêt</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>José Calvo</forename>
-            <surname>Tello</surname>
-          </persName>
-        </author>
-        <respStmt>
-          <persName xml:id="cboulanger">Christian Boulanger</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-        <respStmt>
-          <persName xml:id="lfoppiano">Luca Foppiano</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Nomos Verlag</publisher>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
-        </availability>
-        <date type="publication">2024</date>
-        <idno type="DOI">10.5771/2699-1284-2024-3-149</idno>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>Gianna Iacino, Paweł Kamocki, Keli Du, Christof Schöch, Andreas Witt, Philippe Genêt, José Calvo Tello. (2024). Legal status of Derived Text Formats – 2nd deliverable of Text+ AG Legal and Ethical Issues –. RuZ - Recht und Zugang, 5(3), 149-172. DOI: 10.5771/2699-1284-2024-3-149</bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="1.0" ident="pdf-tei-editor" type="editor">
-          <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
-        </application>
-        <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-09-17T20:01:29.244628Z" type="extractor">
-          <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
-          <label type="revision">0707645</label>
-          <label type="flavor">article/footnotes-refs</label>
-          <label type="variant-id">grobid.training.segmentation</label>
-          <ref target="https://github.com/kermitt2/grobid"/>
-        </application>
-      </appInfo>
-    </encodingDesc>
-    <revisionDesc>
-      <change when="2025-09-17T20:01:29.244628Z" status="extraction">
-        <note type="label">GitHub version</note>
-        <desc>Extraction</desc>
-      </change>
-      <change when="2025-09-17T21:19:30Z" status="draft" who="#cboulanger">
-        <desc>Corrections</desc>
-      </change>
-      <change when="2025-10-25T10:24:36.872Z" status="published" who="#lfoppiano">
-        <desc>Review and publication on GitHub</desc>
-      </change>
-      <change when="2026-01-16T11:28:19.988Z" status="published" who="#cboulanger">
-        <desc>Added XML schema and formatting</desc>
-      </change>
-    </revisionDesc>
-  </teiHeader>
+  <fileDesc xml:id="_10.5771__2699-1284-2024-3-149">
+    <titleStmt>
+      <title level="a">Legal status of Derived Text Formats – 2nd deliverable of Text+ AG Legal and Ethical Issues –</title>
+      <author>
+        <persName>
+          <forename>Gianna</forename>
+          <surname>Iacino</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Paweł</forename>
+          <surname>Kamocki</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Keli</forename>
+          <surname>Du</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Christof</forename>
+          <surname>Schöch</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Andreas</forename>
+          <surname>Witt</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Philippe</forename>
+          <surname>Genêt</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>José Calvo</forename>
+          <surname>Tello</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Nomos Verlag</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2024</date>
+      <idno type="DOI">10.5771/2699-1284-2024-3-149</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Gianna Iacino, Paweł Kamocki, Keli Du, Christof Schöch, Andreas Witt, Philippe Genêt, José Calvo Tello. (2024). Legal status of Derived Text Formats – 2nd deliverable of Text+ AG Legal and Ethical Issues –. RuZ - Recht und Zugang, 5(3), 149-172. DOI: 10.5771/2699-1284-2024-3-149</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2025-09-17T20:01:29.244628Z" type="extractor">
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">0707645</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+        <ref target="https://github.com/kermitt2/grobid"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2025-09-17T20:01:29.244628Z" status="extraction">
+      <note type="label">GitHub version</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2025-09-17T21:19:30Z" status="draft" who="#cboulanger">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2025-10-25T10:24:36.872Z" status="published" who="#lfoppiano">
+      <desc>Review and publication on GitHub</desc>
+    </change>
+    <change when="2026-01-16T11:28:19.988Z" status="published" who="#cboulanger">
+      <desc>Added XML schema and formatting</desc>
+    </change>
+    <change when="2026-09-16T17:50:35.670Z" status="published" who="#lfoppiano">
+      <note type="label">v3 (lfoppiano)</note>
+      <desc>post- fixes</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
 
     <front>Urheberrecht <lb/>Ass. iur. Gianna Iacino, LL.M., Dr. iur. Paweł Kamocki, Dr. phil. Keli Du, Prof. Dr. <lb/>Christof Schöch, Prof. Dr. Andreas Witt, Philippe Genêt and Dr. José Calvo Tello * <lb/>Legal status of Derived Text Formats <lb/>-2 nd deliverable of Text+ AG Legal and Ethical Issues -<lb/>This document was created in the context of the work of the association German <lb/>National Research Data Infrastructure (NFDI) e.V. NFDI is financed by the Federal <lb/>Republic of Germany and the 16 federal states, and the consortium Text+ is funded by <lb/>the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) -project <lb/>number 460033370. The authors would like to thank for the funding and support. <lb/>Furthermore, thanks also include all institutions and actors who are committed to the <lb/>association and its goals. <lb/></front>
@@ -342,7 +346,6 @@
 
     <note place="footnote">10.5771/2699-1284-2024-3-149 -am 11.08.2025, 18:08:59. https://www.nomos-elibrary.de/de/agb -Open Access -</note>
 
-	</text>
-
+  </text>
 
 </TEI>

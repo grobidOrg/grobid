@@ -1,68 +1,79 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-    <fileDesc xml:id="_10.19164__ijple.v6i1.1296">
-      <titleStmt>
-        <title level="a">The Art of Adapting Open Educational Resources for Street Law: Copyright the Card Game a Case Study</title>
-        <author>
-          <persName>
-            <forename>Jane</forename>
-            <surname>Secker</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Chris</forename>
-            <surname>Morrison</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Frances</forename>
-            <surname>Ridout</surname>
-          </persName>
-        </author>
-        <respStmt>
-          <persName xml:id="cboulanger">Christian Boulanger</persName>
-          <resp>Annotator</resp>
-        </respStmt>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>Northumbria University Library</publisher>
-        <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
-        </availability>
-        <date type="publication">2022</date>
-        <idno type="DOI">10.19164/ijple.v6i1.1296</idno>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>Jane Secker, Chris Morrison, Frances Ridout. (2022). The Art of Adapting Open Educational Resources for Street Law: Copyright the Card Game a Case Study. International Journal of Public Legal Education, 6(1), 83-104. DOI: 10.19164/ijple.v6i1.1296</bibl>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="1.0" ident="pdf-tei-editor" type="editor">
-          <label>PDF-TEI Editor</label>
-          <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
-        </application>
-        <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-01-16T21:11:13.920406Z" type="extractor">
-          <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
-          <label type="revision">536e79c</label>
-          <label type="flavor">article/footnotes-refs</label>
-          <label type="variant-id">grobid.training.segmentation</label>
-          <ref target="https://github.com/kermitt2/grobid"/>
-        </application>
-      </appInfo>
-    </encodingDesc>
-    <revisionDesc>
-      <change when="2026-01-16T21:11:13.920406Z" status="extraction">
-        <note type="label">GitHub version</note>
-        <desc>Extraction</desc>
-      </change>
-      <change when="2026-01-16T21:21:08.392Z" status="published" who="#cboulanger">
-        <desc>Corrections &amp; update on GitHub</desc>
-      </change>
-    </revisionDesc>
-  </teiHeader>
+  <fileDesc xml:id="_10.19164__ijple.v6i1.1296">
+    <titleStmt>
+      <title level="a">The Art of Adapting Open Educational Resources for Street Law: Copyright the Card Game a Case Study</title>
+      <author>
+        <persName>
+          <forename>Jane</forename>
+          <surname>Secker</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Chris</forename>
+          <surname>Morrison</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Frances</forename>
+          <surname>Ridout</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Northumbria University Library</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2022</date>
+      <idno type="DOI">10.19164/ijple.v6i1.1296</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Jane Secker, Chris Morrison, Frances Ridout. (2022). The Art of Adapting Open Educational Resources for Street Law: Copyright the Card Game a Case Study. International Journal of Public Legal Education, 6(1), 83-104. DOI: 10.19164/ijple.v6i1.1296</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-01-16T21:11:13.920406Z" type="extractor">
+        <desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+        <label type="revision">536e79c</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.segmentation</label>
+        <ref target="https://github.com/kermitt2/grobid"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-01-16T21:11:13.920406Z" status="extraction">
+      <note type="label">GitHub version</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-01-16T21:21:08.392Z" status="published" who="#cboulanger">
+      <desc>Corrections &amp; update on GitHub</desc>
+    </change>
+    <change when="2026-04-06T11:04:54.358Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-06T11:13:50.982Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
     <page>83 <lb/></page>
 
@@ -92,9 +103,7 @@
 
     <page>87 <lb/></page>
 
-    <body>Figure 1: The relationship between Street Law, information literacy and open <lb/>educational practices <lb/>Copyright might, at first glance, feel like an unusual topic for a Street Law activity, it <lb/>being initially associated with the restriction of individual's rights, and business law. <lb/>Through the diagram above, we have sought to demonstrate that it is in fact a direct <lb/>fit with the social justice mission of clinical legal education. Perhaps, most <lb/>importantly, clinicians need to provide suitable opportunities for the students <lb/>engaging with Street Law projects in this area to see these connections. Ultimately, <lb/>developing information literacy skills in the area of copyright will serve many <lb/>individuals, protect culture and perhaps ultimately support small businesses in the <lb/>Street Law (part of <lb/>public legal <lb/>education) <lb/>Information literacy / <lb/>copyright education <lb/>Open educational <lb/>practices <lb/></body>
-
-    <listBibl>Social justice <lb/>equity and <lb/>access to <lb/>information <lb/>• Pro-bono / free <lb/>• Empowering <lb/>communities <lb/>• Collaboration <lb/>• Democratising <lb/>• Demystifying <lb/>• Decoding the law <lb/>• Confidence accessing law <lb/>• Learner-centred knowledge <lb/>discovery <lb/>• Open Licensing <lb/>• Open access publishing <lb/>• All rights reserved vs Creative Commons <lb/></listBibl>
+    <body>Figure 1: The relationship between Street Law, information literacy and open <lb/>educational practices <lb/>Copyright might, at first glance, feel like an unusual topic for a Street Law activity, it <lb/>being initially associated with the restriction of individual's rights, and business law. <lb/>Through the diagram above, we have sought to demonstrate that it is in fact a direct <lb/>fit with the social justice mission of clinical legal education. Perhaps, most <lb/>importantly, clinicians need to provide suitable opportunities for the students <lb/>engaging with Street Law projects in this area to see these connections. Ultimately, <lb/>developing information literacy skills in the area of copyright will serve many <lb/>individuals, protect culture and perhaps ultimately support small businesses in the <lb/>Street Law (part of <lb/>public legal <lb/>education) <lb/>Information literacy / <lb/>copyright education <lb/>Open educational <lb/>practices <lb/>Social justice <lb/>equity and <lb/>access to <lb/>information <lb/>• Pro-bono / free <lb/>• Empowering <lb/>communities <lb/>• Collaboration <lb/>• Democratising <lb/>• Demystifying <lb/>• Decoding the law <lb/>• Confidence accessing law <lb/>• Learner-centred knowledge <lb/>discovery <lb/>• Open Licensing <lb/>• Open access publishing <lb/>• All rights reserved vs Creative Commons <lb/></body>
 
     <page>88 <lb/></page>
 
