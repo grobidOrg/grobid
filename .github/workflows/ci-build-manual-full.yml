@@ -54,6 +54,13 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME_LFOPPIANO }}
           password: ${{ secrets.DOCKERHUB_TOKEN_LFOPPIANO }}
+      # The image push and the build cache export are two separate steps on purpose.
+      # With mode=max the cache export of this image is several GB (torch/CUDA wheels,
+      # embeddings lmdb) and takes far longer than the image push itself. Done in the
+      # same step, the image would already be on Docker Hub while the step, the digest
+      # and the summary all stay pending until the export ends. Splitting them makes
+      # the pushed image visible as soon as it is tagged; the cache export then runs
+      # afterwards and, whatever happens to it, never fails the job.
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v7
@@ -72,15 +79,13 @@ jobs:
           # ~2GB -- so entries were being evicted between runs and the "cached" layers
           # rebuilt anyway. Docker Hub has no such ceiling, and the push happens over the
           # login already done above.
-          #
-          # ignore-error keeps a failed cache export from failing the build itself.
           cache-from: type=registry,ref=lfoppiano/grobid:buildcache
-          cache-to: type=registry,ref=lfoppiano/grobid:buildcache,mode=max,ignore-error=true
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
       - name: Docker Image Summary
         env:
           CUSTOM_TAG: ${{ github.event.inputs.custom_tag }}
+          DIGEST: ${{ steps.docker_build.outputs.digest }}
         run: |
           {
             echo "## 🐳 Docker Image Uploaded Successfully"
@@ -92,10 +97,43 @@ jobs:
             echo "- **Tags:**"
             echo "  - \`latest-full\`"
             echo "  - \`${CUSTOM_TAG}\`"
+            echo "- **Digest:** \`${DIGEST}\`"
             echo "- **Platforms:** linux/amd64"
             echo ""
             echo "**Usage:**"
             echo '```bash'
             echo "docker pull lfoppiano/grobid:${CUSTOM_TAG}"
             echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+      # Same build inputs as above, so every layer is a hit in the builder's local
+      # cache and this step only exports them to the registry cache. `type=cacheonly`
+      # keeps it from producing (and pushing) a second image.
+      #
+      # continue-on-error and ignore-error together keep a failed or slow cache export
+      # from failing a job whose image is already published.
+      - name: Export build cache
+        id: cache_export
+        continue-on-error: true
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          file: Dockerfile.delft
+          platforms: linux/amd64
+          build-args: |
+            GROBID_VERSION=${{ steps.version.outputs.value }}
+          outputs: type=cacheonly
+          cache-from: type=registry,ref=lfoppiano/grobid:buildcache
+          cache-to: type=registry,ref=lfoppiano/grobid:buildcache,mode=max,ignore-error=true
+      - name: Build cache summary
+        env:
+          CACHE_OUTCOME: ${{ steps.cache_export.outcome }}
+        run: |
+          {
+            echo ""
+            echo "## 📦 Build Cache"
+            if [ "$CACHE_OUTCOME" = "success" ]; then
+              echo "Registry build cache \`lfoppiano/grobid:buildcache\` updated."
+            else
+              echo "Registry build cache export did not complete (outcome: \`${CACHE_OUTCOME}\`). The image above is published regardless."
+            fi
           } >> "$GITHUB_STEP_SUMMARY"
