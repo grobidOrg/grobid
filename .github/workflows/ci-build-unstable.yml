@@ -32,7 +32,7 @@ jobs:
         continue-on-error: false
       # jacocoTestReport is deliberately not invoked here: it writes per-subproject reports
       # that nothing downstream reads. Coveralls is fed by the aggregate `codeCoverageReport`
-      # task, which the `coveralls` step below derives from the test execution data.
+      # task below, which derives its XML report from the test execution data.
       - name: Build and test (with coverage)
         if: matrix.os == 'ubuntu-latest'
         run: ./gradlew assemble test --info --stacktrace
@@ -43,10 +43,9 @@ jobs:
         if: matrix.os != 'ubuntu-latest'
         run: ./gradlew assemble test -PskipCoverage --info --stacktrace
 
-      # Coverage upload needs a writable GITHUB_TOKEN, which fork pull requests do not get.
-      - name: Run Coveralls Gradle task
+      - name: Aggregate coverage report
         if: matrix.os == 'ubuntu-latest' && github.event_name == 'push'
-        run: ./gradlew coveralls --info --stacktrace
+        run: ./gradlew codeCoverageReport --info --stacktrace
 
       - name: Publish Test Report
         uses: mikepenz/action-junit-report@v6
@@ -56,6 +55,7 @@ jobs:
         with:
           report_paths: '**/build/test-results/test/TEST-*.xml'
 
+      # Coverage upload needs a writable GITHUB_TOKEN, which fork pull requests do not get.
       - name: Coveralls GitHub Action
         if: matrix.os == 'ubuntu-latest' && github.event_name == 'push'
         uses: coverallsapp/github-action@v2

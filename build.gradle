@@ -2,7 +2,6 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '2.4.10' apply false
     id 'com.gradleup.shadow' version '8.3.10' apply false
     id 'com.adarshr.test-logger' version '4.0.0' apply false
-    id 'com.github.kt3k.coveralls' version '2.12.2' apply false
     id 'net.researchgate.release' version '3.1.0' apply false
     id 'com.diffplug.spotless' version '8.2.1' apply false
 }
@@ -50,7 +49,6 @@ def getJavaLibraryPath = {
 }
 
 apply plugin: 'jacoco'
-apply plugin: 'com.github.kt3k.coveralls'
 
 jacoco {
     toolVersion = '0.8.14'
@@ -755,7 +753,7 @@ project(":grobid-trainer") {
 // Coverage instrumentation is opt-out, for CI legs that do not publish it.
 //
 // The jacoco agent attaches to every forked test JVM and instruments classes as they load.
-// Only one CI leg feeds coveralls; on the others that cost is paid and thrown away.
+// Only one CI leg publishes it (to Coveralls); on the others that cost is paid and thrown away.
 //
 // configureEach (rather than a plain withType) so this resolves after the subprojects have
 // applied the jacoco plugin, and findByType so projects without it are simply skipped.
@@ -789,7 +787,7 @@ tasks.register("codeCoverageReport", JacocoReport) {
         }
     }
 
-    // XML -> coveralls,
+    // XML -> Coveralls (uploaded by the coverallsapp/github-action step in CI),
     // HTML -> for manual check
     reports {
         xml.required = true
@@ -798,15 +796,6 @@ tasks.register("codeCoverageReport", JacocoReport) {
         html.required = true
     }
 
-}
-
-/** COVERALLS **/
-coveralls {
-        sourceDirs = files(subprojects.findAll { it.plugins.hasPlugin('java') }.sourceSets.main.allSource.srcDirs).files.absolutePath
-}
-
-tasks.coveralls {
-    dependsOn codeCoverageReport
 }
 
 wrapper {
