@@ -32,6 +32,7 @@ import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.hasSize
 import org.junit.Before
 import org.junit.Test
+import java.lang.StringBuilder
 
 class FundingAcknowledgementParserTest {
 
@@ -181,6 +182,25 @@ class FundingAcknowledgementParserTest {
         assertThat(funder1.fullName, `is`("Ministry of Education, Culture, Sports, Science and Technology"))
         assertThat(fundingAcknowledgmentParse.persons, hasSize(0))
         assertThat(fundingAcknowledgmentParse.affiliations, hasSize(0))
+    }
+
+    @Test
+    fun testClosingTag_funderFull_appendsClosingTag() {
+        val testClosingTag =
+            FundingAcknowledgementParser::class.java.getDeclaredMethod(
+                "testClosingTag",
+                StringBuilder::class.java,
+                String::class.java,
+                String::class.java,
+                Boolean::class.javaPrimitiveType,
+            )
+        testClosingTag.isAccessible = true
+
+        val buffer = StringBuilder()
+        val closed = testClosingTag.invoke(target, buffer, "<other>", "<funderFull>", false) as Boolean
+
+        assertThat(closed, `is`(true))
+        assertThat(buffer.toString(), `is`("</funderFull>\n"))
     }
 
     @Test

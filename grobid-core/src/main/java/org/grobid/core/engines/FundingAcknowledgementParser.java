@@ -1095,7 +1095,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
             if (lastTag.equals("<funderFull>")) {
                 if (addSpace)
                     buffer.append(" ");
-                buffer.append("<funderFull>\n");
+                buffer.append("</funderFull>\n");
             } else if (lastTag.equals("<funderAbbrv>")) {
                 if (addSpace)
                     buffer.append(" ");
