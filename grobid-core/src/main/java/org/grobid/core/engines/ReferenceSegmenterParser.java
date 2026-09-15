@@ -25,6 +25,7 @@ import java.util.regex.Matcher;
 import com.google.common.base.Function;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -305,7 +306,7 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
                 features.append(container.getFeatureString());
                 features.append('\n');
                 if (container.isBeginning()) {
-                    if (reference.length() != 0) {
+                    if (StringUtils.isNotBlank(reference)) {
                         resultList.add(
                                 new LabeledReferenceResult(
                                         referenceLabel.length() == 0 ? null : referenceLabel.toString().trim(),
@@ -351,8 +352,9 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
                 // NOP
             }
 
-            // Handle last one.
-            if (!iterator.hasNext()) {
+            // Handle last one. A trailing chunk without reference text (e.g. a bare label at
+            // the end of the section) is dropped, consistently with the other references above.
+            if (!iterator.hasNext() && StringUtils.isNotBlank(reference)) {
                 resultList.add(
                         new LabeledReferenceResult(
                                 referenceLabel.length() == 0 ? null : referenceLabel.toString().trim(),
