@@ -99,7 +99,7 @@ public class FullTextParser extends AbstractParser {
                                GrobidAnalysisConfig config) throws Exception {
         DocumentSource documentSource =
             DocumentSource.fromPdf(inputPdf, config.getStartPage(), config.getEndPage(),
-                config.getPdfAssetPath() != null, true, false);
+                config.getPdfAssetPath() != null, true, true);
         documentSource.setMD5(md5Str);
         return processing(documentSource, flavor, config);
     }
