@@ -30,6 +30,8 @@ jobs:
   docker-build-full:
     needs: [ build ]
     runs-on: ubuntu-latest
+    outputs:
+      digest: ${{ steps.docker_build.outputs.digest }}
 
     steps:
       - name: Create more disk space
@@ -54,13 +56,11 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME_LFOPPIANO }}
           password: ${{ secrets.DOCKERHUB_TOKEN_LFOPPIANO }}
-      # The image push and the build cache export are two separate steps on purpose.
-      # With mode=max the cache export of this image is several GB (torch/CUDA wheels,
-      # embeddings lmdb) and takes far longer than the image push itself. Done in the
-      # same step, the image would already be on Docker Hub while the step, the digest
-      # and the summary all stay pending until the export ends. Splitting them makes
-      # the pushed image visible as soon as it is tagged; the cache export then runs
-      # afterwards and, whatever happens to it, never fails the job.
+      # This job only builds and pushes the image; the registry build cache export is
+      # done by the docker-cache-export job below. With mode=max that export is several
+      # GB (torch/CUDA wheels, embeddings lmdb) and takes far longer than the image push
+      # itself: done here, the image would already be on Docker Hub while this job, the
+      # digest and the summary all stay pending until the export ends.
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v7
@@ -105,15 +105,45 @@ jobs:
             echo "docker pull lfoppiano/grobid:${CUSTOM_TAG}"
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
-      # Same build inputs as above, so every layer is a hit in the builder's local
-      # cache and this step only exports them to the registry cache. `type=cacheonly`
-      # keeps it from producing (and pushing) a second image.
-      #
-      # continue-on-error and ignore-error together keep a failed or slow cache export
-      # from failing a job whose image is already published.
+
+  # Refreshes lfoppiano/grobid:buildcache once the image is published. It runs on a
+  # fresh runner, so it rebuilds the image with the same inputs: the multi-GB layers
+  # (pip install, embeddings preload) sit above the source-dependent layers and are
+  # cache hits from the registry, only the gradle stage is actually rebuilt. Blobs
+  # already present in the registry are not re-uploaded by the export.
+  #
+  # `type=cacheonly` keeps it from producing (and pushing) a second image, and
+  # continue-on-error plus ignore-error keep a failed or slow export from failing
+  # a workflow whose image is already published.
+  docker-cache-export:
+    needs: [ docker-build-full ]
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    steps:
+      - name: Create more disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+          sudo rm -rf "/usr/local/share/boost"
+          sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+      - uses: actions/checkout@v7
+        with:
+          fetch-tags: true
+          fetch-depth: 0
+      - name: Compute GROBID version
+        id: version
+        run: |
+          git fetch --tags --force
+          echo "value=$(git describe --tags --always --first-parent)" >> "$GITHUB_OUTPUT"
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+      - name: Login to Docker Hub
+        uses: docker/login-action@v4
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME_LFOPPIANO }}
+          password: ${{ secrets.DOCKERHUB_TOKEN_LFOPPIANO }}
       - name: Export build cache
-        id: cache_export
-        continue-on-error: true
         uses: docker/build-push-action@v7
         with:
           context: .
@@ -126,14 +156,9 @@ jobs:
           cache-to: type=registry,ref=lfoppiano/grobid:buildcache,mode=max,ignore-error=true
       - name: Build cache summary
         env:
-          CACHE_OUTCOME: ${{ steps.cache_export.outcome }}
+          DIGEST: ${{ needs.docker-build-full.outputs.digest }}
         run: |
           {
-            echo ""
             echo "## 📦 Build Cache"
-            if [ "$CACHE_OUTCOME" = "success" ]; then
-              echo "Registry build cache \`lfoppiano/grobid:buildcache\` updated."
-            else
-              echo "Registry build cache export did not complete (outcome: \`${CACHE_OUTCOME}\`). The image above is published regardless."
-            fi
+            echo "Registry build cache \`lfoppiano/grobid:buildcache\` updated for image digest \`${DIGEST}\`."
           } >> "$GITHUB_STEP_SUMMARY"
