@@ -334,7 +334,7 @@ project("grobid-core") {
         // slf4j-api 2.0.x, whose ServiceLoader binding (SLF4JServiceProvider) only exists in logback 1.5.x.
         // logback 1.2.x would leave slf4j with no provider (NOP logging) in batch/standalone mode.
         implementation 'org.slf4j:slf4j-api:2.0.18'
-        implementation 'ch.qos.logback:logback-classic:1.5.38'
+        implementation 'ch.qos.logback:logback-classic:1.6.3'
 
         implementation "org.apache.pdfbox:pdfbox:2.0.36"
 
@@ -515,10 +515,10 @@ project(":grobid-service") {
             implementation('org.apache.httpcomponents.client5:httpclient5:5.6.4') {
                 because 'CVE-2026-64607: connection leak on decode error, fixed in httpclient5 5.6.3'
             }
-            implementation('ch.qos.logback:logback-classic:1.5.38') {
+            implementation('ch.qos.logback:logback-classic:1.6.3') {
                 because 'CVE-2026-10532 and CVE-2026-9828: fixed in logback 1.5.34 / 1.5.33'
             }
-            implementation('ch.qos.logback:logback-core:1.5.38') {
+            implementation('ch.qos.logback:logback-core:1.6.3') {
                 because 'CVE-2026-10532 and CVE-2026-9828: fixed in logback 1.5.34 / 1.5.33'
             }
         }
@@ -595,7 +595,7 @@ project(":grobid-trainer") {
 
         // logs — see grobid-core: slf4j 2.0.x needs logback 1.5.x for its ServiceLoader binding.
         implementation 'org.slf4j:slf4j-api:2.0.18'
-        implementation 'ch.qos.logback:logback-classic:1.5.38'
+        implementation 'ch.qos.logback:logback-classic:1.6.3'
     }
 
     configurations {
