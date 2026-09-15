@@ -466,6 +466,20 @@ project(":grobid-service") {
         implementation 'io.dropwizard.metrics:metrics-servlets:4.2.38'
         implementation 'io.dropwizard:dropwizard-json-logging:5.0.2'
 
+        // dropwizard-client 5.0.2 brings httpclient5 5.6.1, which declares httpcore5-h2 5.4 (and httpcore5
+        // 5.4, raised to 5.4.2 by dropwizard). Both are affected by two memory-exhaustion DoS issues in
+        // core5 <= 5.4.2, fixed in 5.4.3: CVE-2026-54399 (HTTP/1.1 parser, excessive headers) and
+        // CVE-2026-54428 (HTTP/2 HPACK decoder, oversized header blocks). Hold both core5 artifacts at
+        // 5.4.3 until an upstream bump.
+        constraints {
+            implementation('org.apache.httpcomponents.core5:httpcore5:5.4.3') {
+                because 'CVE-2026-54399 and CVE-2026-54428: header-based DoS, fixed in httpcore5 5.4.3'
+            }
+            implementation('org.apache.httpcomponents.core5:httpcore5-h2:5.4.3') {
+                because 'CVE-2026-54399 and CVE-2026-54428: header-based DoS, fixed in httpcore5 5.4.3'
+            }
+        }
+
         implementation "org.apache.pdfbox:pdfbox:2.0.36"
         implementation "io.prometheus:simpleclient_dropwizard:0.16.0"
         implementation "io.prometheus:simpleclient_servlet_jakarta:0.16.0"
