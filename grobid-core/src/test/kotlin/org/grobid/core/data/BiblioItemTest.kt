@@ -325,22 +325,19 @@ class BiblioItemTest {
             biblio1.getFullAuthors().get(0).getFirstName(),
             CoreMatchers.`is`<String?>(biblio2.getFullAuthors().get(0).getFirstName()),
         )
-        // biblio1 affiliations not empty, we keep biblio1 as is
+        // biblio2 has no affiliation for the first author: the one extracted in biblio1 is kept
         Assert.assertThat<String?>(
             biblio1.getFullAuthors().get(0).getAffiliations().get(0).getAffiliationString(),
-            CoreMatchers.`is`<String?>(biblio1.getFullAuthors().get(0).getAffiliations().get(0).getAffiliationString()),
+            CoreMatchers.`is`<String?>("Stanford"),
         )
         Assert.assertThat<String?>(
             biblio1.getFullAuthors().get(1).getFirstName(),
             CoreMatchers.`is`<String?>(biblio2.getFullAuthors().get(1).getFirstName()),
         )
+        // biblio2 has an affiliation for the second author: it wins over the extracted one
         Assert.assertThat<String?>(
             biblio1.getFullAuthors().get(1).getAffiliations().get(0).getAffiliationString(),
-            CoreMatchers.`is`<String?>(biblio1.getFullAuthors().get(1).getAffiliations().get(0).getAffiliationString()),
-        )
-        Assert.assertThat<String?>(
-            biblio1.getFullAuthors().get(1).getAffiliations().get(0).getAffiliationString(),
-            CoreMatchers.`is`<String?>(biblio2.getFullAuthors().get(1).getAffiliations().get(0).getAffiliationString()),
+            CoreMatchers.`is`<String?>("UCLA"),
         )
     }
 
@@ -348,8 +345,8 @@ class BiblioItemTest {
     fun correct_2authors_initial_2_shouldUpdateAuthor() {
         val biblio1 = BiblioItem()
         var authors: MutableList<Person?> = mutableListOf()
-        authors.add(createPerson("John", "Doe", "ULCA"))
-        authors.add(createPerson("J", "Will", "Harward"))
+        authors.add(createPerson("John", "Doe", "UCLA"))
+        authors.add(createPerson("J", "Will", "Harvard"))
         biblio1.setFullAuthors(authors)
 
         val biblio2 = BiblioItem()
@@ -369,10 +366,10 @@ class BiblioItemTest {
             biblio1.getFullAuthors().get(0).getFirstName(),
             CoreMatchers.`is`<String?>(biblio2.getFullAuthors().get(0).getFirstName()),
         )
-        // affiliation should be kept though since not empty
+        // biblio2 carries affiliations for both authors: they are not overwritten by biblio1's
         Assert.assertThat<String?>(
             biblio1.getFullAuthors().get(0).getAffiliations().get(0).getAffiliationString(),
-            CoreMatchers.`is`<String?>(biblio1.getFullAuthors().get(0).getAffiliations().get(0).getAffiliationString()),
+            CoreMatchers.`is`<String?>("Stanford"),
         )
         Assert.assertThat<String?>(
             biblio1.getFullAuthors().get(1).getFirstName(),
@@ -380,7 +377,7 @@ class BiblioItemTest {
         )
         Assert.assertThat<String?>(
             biblio1.getFullAuthors().get(1).getAffiliations().get(0).getAffiliationString(),
-            CoreMatchers.`is`<String?>(biblio1.getFullAuthors().get(1).getAffiliations().get(0).getAffiliationString()),
+            CoreMatchers.`is`<String?>("Berkeley"),
         )
     }
 
@@ -388,7 +385,7 @@ class BiblioItemTest {
     fun correct_2authors_initial_shouldUpdateAuthor() {
         val biblio1 = BiblioItem()
         var authors: MutableList<Person?> = mutableListOf()
-        authors.add(createPerson("John", "Doe", "ULCA"))
+        authors.add(createPerson("John", "Doe", "UCLA"))
         authors.add(createPerson("Jane", "Will", "Harvard"))
         biblio1.setFullAuthors(authors)
 
@@ -409,15 +406,15 @@ class BiblioItemTest {
             biblio1.getFullAuthors().get(0).getFirstName(),
             CoreMatchers.`is`<String?>(biblio2.getFullAuthors().get(0).getFirstName()),
         )
-        // affiliation should be kept though
+        // biblio2 carries affiliations for both authors: they are not overwritten by biblio1's
         Assert.assertThat<String?>(
             biblio1.getFullAuthors().get(0).getAffiliations().get(0).getAffiliationString(),
-            CoreMatchers.`is`<String?>(biblio1.getFullAuthors().get(0).getAffiliations().get(0).getAffiliationString()),
+            CoreMatchers.`is`<String?>("Stanford"),
         )
         // assertThat(biblio1.getFullAuthors().get(1).getFirstName(), is(biblio2.getFullAuthors().get(0).getFirstName()));
         Assert.assertThat<String?>(
             biblio1.getFullAuthors().get(1).getAffiliations().get(0).getAffiliationString(),
-            CoreMatchers.`is`<String?>(biblio1.getFullAuthors().get(1).getAffiliations().get(0).getAffiliationString()),
+            CoreMatchers.`is`<String?>("Berkeley"),
         )
     }
 

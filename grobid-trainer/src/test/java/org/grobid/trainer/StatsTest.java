@@ -100,7 +100,7 @@ public class StatsTest {
         target.getLabelStat("ZIAO").setObserved(3);
         target.getLabelStat("ZIAO").setFalsePositive(1);
 
-        assertThat(target.getLabelStat("ZIAO").getPrecision(), is(0.75));
+        assertThat(target.getLabelStat("ZIAO").getRecall(), is(0.75));
     }
 
     // Average measures
@@ -253,7 +253,7 @@ public class StatsTest {
         final double f1Bao = target.getLabelStat("BAO").getF1Score();
         final double f1Miao = target.getLabelStat("MIAO").getF1Score();
         final double f1Ciao = target.getLabelStat("CIAO").getF1Score();
-        final double f1Ziao = target.getLabelStat("ZIAO").getRecall();
+        final double f1Ziao = target.getLabelStat("ZIAO").getF1Score();
 
         assertThat(
                 target.getMacroAverageF1(),
@@ -378,8 +378,8 @@ public class StatsTest {
         organisationTypeLabelStats.setObserved(2);
         organisationTypeLabelStats.setExpected(2);
 
-        assertThat(locationTypeLabelStats.getPrecision(), is(1.0));
-        assertThat(locationTypeLabelStats.getRecall(), is(1.0));
+        assertThat(organisationTypeLabelStats.getPrecision(), is(1.0));
+        assertThat(organisationTypeLabelStats.getRecall(), is(1.0));
 
         LabelStat personLabelStats = target.getLabelStat("PERSON");
         personLabelStats.setFalsePositive(1);

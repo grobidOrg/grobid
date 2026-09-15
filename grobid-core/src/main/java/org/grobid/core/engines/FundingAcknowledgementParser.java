@@ -943,7 +943,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
                 if (tokenizations.get(tokPtr2).getText().equals(" ")) {
                     addSpace = true;
                 } else if (tokenizations.get(tokPtr2).getText().equals("\n") ||
-                        tokenizations.get(tokPtr).getText().equals("\r")) {
+                        tokenizations.get(tokPtr2).getText().equals("\r")) {
                     addSpace = true;
                 } else {
                     break;
@@ -1095,7 +1095,7 @@ public class FundingAcknowledgementParser extends AbstractParser {
             if (lastTag.equals("<funderFull>")) {
                 if (addSpace)
                     buffer.append(" ");
-                buffer.append("<funderFull>\n");
+                buffer.append("</funderFull>\n");
             } else if (lastTag.equals("<funderAbbrv>")) {
                 if (addSpace)
                     buffer.append(" ");
