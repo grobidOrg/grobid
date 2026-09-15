@@ -334,7 +334,7 @@ project("grobid-core") {
         // slf4j-api 2.0.x, whose ServiceLoader binding (SLF4JServiceProvider) only exists in logback 1.5.x.
         // logback 1.2.x would leave slf4j with no provider (NOP logging) in batch/standalone mode.
         implementation 'org.slf4j:slf4j-api:2.0.18'
-        implementation 'ch.qos.logback:logback-classic:1.5.26'
+        implementation 'ch.qos.logback:logback-classic:1.5.38'
 
         implementation "org.apache.pdfbox:pdfbox:2.0.36"
 
@@ -500,12 +500,26 @@ project(":grobid-service") {
         // core5 <= 5.4.2, fixed in 5.4.3: CVE-2026-54399 (HTTP/1.1 parser, excessive headers) and
         // CVE-2026-54428 (HTTP/2 HPACK decoder, oversized header blocks). Hold both core5 artifacts at
         // 5.4.3 until an upstream bump.
+        // httpclient5 5.6.1 (also via dropwizard-client) leaks pooled connections on a
+        // Content-Encoding decode error (CVE-2026-64607, fixed in 5.6.3); 5.6.4 is the current 5.6.x
+        // and itself declares httpcore5 5.4.3. The dropwizard-bom manages logback at 1.5.33, which
+        // still has CVE-2026-10532 (object injection through HardenedObjectInputStream, fixed in
+        // 1.5.34): align the service on the same 1.5.38 as grobid-core and grobid-trainer.
         constraints {
             implementation('org.apache.httpcomponents.core5:httpcore5:5.4.3') {
                 because 'CVE-2026-54399 and CVE-2026-54428: header-based DoS, fixed in httpcore5 5.4.3'
             }
             implementation('org.apache.httpcomponents.core5:httpcore5-h2:5.4.3') {
                 because 'CVE-2026-54399 and CVE-2026-54428: header-based DoS, fixed in httpcore5 5.4.3'
+            }
+            implementation('org.apache.httpcomponents.client5:httpclient5:5.6.4') {
+                because 'CVE-2026-64607: connection leak on decode error, fixed in httpclient5 5.6.3'
+            }
+            implementation('ch.qos.logback:logback-classic:1.5.38') {
+                because 'CVE-2026-10532 and CVE-2026-9828: fixed in logback 1.5.34 / 1.5.33'
+            }
+            implementation('ch.qos.logback:logback-core:1.5.38') {
+                because 'CVE-2026-10532 and CVE-2026-9828: fixed in logback 1.5.34 / 1.5.33'
             }
         }
 
@@ -581,7 +595,7 @@ project(":grobid-trainer") {
 
         // logs — see grobid-core: slf4j 2.0.x needs logback 1.5.x for its ServiceLoader binding.
         implementation 'org.slf4j:slf4j-api:2.0.18'
-        implementation 'ch.qos.logback:logback-classic:1.5.26'
+        implementation 'ch.qos.logback:logback-classic:1.5.38'
     }
 
     configurations {
