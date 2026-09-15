@@ -5,11 +5,11 @@ buildscript {
     // log4j-api 2.25.5 (CVE-2026-49844) and plexus-utils 4.0.3 (CVE-2025-67030). Hold them there.
     dependencies {
         constraints {
-            classpath('org.apache.logging.log4j:log4j-core:2.25.5') {
+            classpath('org.apache.logging.log4j:log4j-core:2.26.1') {
                 because 'CVE-2026-34477, CVE-2026-34478, CVE-2026-34480: fixed in log4j-core 2.25.4'
             }
-            classpath('org.apache.logging.log4j:log4j-api:2.25.5') {
-                because 'CVE-2026-49844: fixed in log4j-api 2.25.5'
+            classpath('org.apache.logging.log4j:log4j-api:2.26.1') {
+                because 'CVE-2026-49844: fixed in log4j-api 2.26.1'
             }
             classpath('org.codehaus.plexus:plexus-utils:4.0.3') {
                 because 'CVE-2025-67030: directory traversal in extractFile, fixed in plexus-utils 4.0.3'
