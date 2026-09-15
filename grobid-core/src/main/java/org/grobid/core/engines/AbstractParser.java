@@ -33,6 +33,9 @@ import org.grobid.core.utilities.counters.impl.CntManagerFactory;
 public abstract class AbstractParser implements GenericTagger, Closeable {
     private static final Logger LOGGER = LoggerFactory.getLogger(AbstractParser.class);
     private GenericTagger genericTagger;
+    // The flavor-aware model this parser was constructed with. Subclasses re-query the engine
+    // and DeLFT runtime params against this model (not against a hardcoded base constant), so
+    // that flavor overrides are honored.
     protected final GrobidModel model;
     protected GrobidAnalyzer analyzer = GrobidAnalyzer.getInstance();
 

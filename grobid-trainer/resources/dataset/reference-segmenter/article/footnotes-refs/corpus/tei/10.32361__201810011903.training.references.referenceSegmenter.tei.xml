@@ -1,0 +1,197 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.32361__201810011903">
+    <titleStmt>
+      <title level="a">MEDIAÇÃO JUDICIAL NO BRASIL: BREVES NOTAS CONCEITUAIS  À LUZ DE PRINCÍPIOS CONSTITUCIONAIS</title>
+      <author>
+        <persName>
+          <forename>Tânia Maria dos</forename>
+          <surname>Santos</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>editor</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Revista de Direito</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2018</date>
+      <idno type="DOI">10.32361/201810011903</idno>
+      <ptr target="https://doi.org/10.32361/201810011903"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Tânia Maria dos Santos. (2018). MEDIAÇÃO JUDICIAL NO BRASIL: BREVES NOTAS CONCEITUAIS  À LUZ DE PRINCÍPIOS CONSTITUCIONAIS. Revista de Direito, 10(01), 195. DOI: 10.32361/201810011903</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">MEDIAÇÃO JUDICIAL NO BRASIL: BREVES NOTAS CONCEITUAIS  À LUZ DE PRINCÍPIOS CONSTITUCIONAIS</title>
+          <author>
+            <persName>
+              <forename>Tânia Maria dos</forename>
+              <surname>Santos</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Revista de Direito</title>
+          <imprint>
+            <biblScope unit="volume">10</biblScope>
+            <biblScope unit="issue">01</biblScope>
+            <biblScope unit="page">195</biblScope>
+            <date when="2018">2018</date>
+            <publisher>Revista de Direito</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.32361/201810011903</idno>
+        <ptr target="https://doi.org/10.32361/201810011903"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-23T16:29:41.259052Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-69-gbdd99a453</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-23T16:29:41.259052Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-23T16:31:21.890Z" status="draft" who="#cboulanger">
+      <note type="label">Extraction (new)</note>
+      <desc>Renamed to Extraction (new)</desc>
+    </change>
+    <change when="2026-03-23T16:32:10.817Z" status="unfinished" who="#cboulanger">
+      <note type="label">v4 (cboulanger)</note>
+      <desc>1st pas started</desc>
+    </change>
+    <change when="2026-03-23T17:15:07.915Z" status="draft" who="#cboulanger">
+      <desc>1st pas done</desc>
+    </change>
+    <change when="2026-03-24T06:39:38.892Z" status="unfinished" who="#li">
+      <note type="label">v4 (li)</note>
+      <desc>2.pass started</desc>
+    </change>
+    <change when="2026-03-24T07:10:05.232Z" status="checked" who="#li">
+      <desc>2.pass started</desc>
+    </change>
+    <change when="2026-04-06T14:05:23.699Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-06T14:12:40.235Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-21T09:39:08.438Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+        <bibl><label>1</label> É de uma envergadura considerável esse novo cenário, levando-se em conta que nos EUA<lb/> a mediação goza de grande prestígio e é disseminada em mais duas mil leis e regulamentações<lb/> estaduais. Porém, é reclamada a ausência de uma legislação nacional de caráter unificador como<lb/> a do Brasil neste sentido ressaltado no Centro de Mediadores de Brasília/DF na capacitação<lb/> internacional em mediação e arbitragem e mediação Curso ministrado pelo Dr. Marcelo Markus<lb/> Teixeira Módulo 1, 1.4, p. 2, em 2016.<lb/> </bibl>
+        <bibl><label>2</label> Art. 3º da Lei de Mediação: "Pode ser objeto de mediação o conflito que verse sobre<lb/> direitos disponíveis ou sobre direitos indisponíveis que admitam transação. § 1º A mediação<lb/> pode versar sobre todo o conflito ou parte dele. § 2º O consenso das partes envolvendo<lb/> direitos indisponíveis, mas transigíveis, deve ser homologado em juízo, exigida a oitiva do<lb/> Ministério Público".<lb/> </bibl>
+        <bibl><label>3</label> A Resolução nº 118/2014, do CNMP, distingue a conciliação da mediação. Em seus arts. 9º e<lb/> 10, a mediação é indicada para solucionar controvérsias ou conflitos nos quais seja necessária<lb/> a atuação integrada de ambas as partes divergentes com o objetivo de se pacificarem. Indica-<lb/>se, ainda, que haja confidencialidade quando necessário e recomenda-se que as mediações<lb/> comunitárias e escolares sejam informais (BRASIL. Conselho Nacional do Ministério Público.<lb/> Resolução n. 118/2014. Disponível em: &lt;www.cnmp.mp.br&gt;. Acesso em: 23 jan. 2017).<lb/> </bibl>
+        <bibl><label>4</label> Destacando que as atividades da ciência do direito, no sentido mais estrito e próprio, ocorrem<lb/> em pelo menos três situações, que são: na descrição do direito vigente, na análise sistemática<lb/> e conceitual e na elaboração de propostas para solução de casos jurídico-problemáticos. Neste<lb/> sentido, HOLLERBACH, A. Ciência do direito. Tradução Eduardo Schenato Piñeiro. In: HECK,<lb/> L. A. (org.). Direito natural, direito positivo, direito discursivo. Porto Alegre: Livraria do Advogado,<lb/> 2010, p. 13-24.<lb/> </bibl>
+        <bibl><label>5</label> O discurso transforma-se, de fato, em mera conversa, quando as palavras nada revelam<lb/> senão apenas um meio para alcançar um fim. Em BURKARD, F.-P.; PRECHET, P. (orgs.).<lb/> Metzler Lexukon Philosophie. 3. Auflage. Stuttgart: Verlag J. B. Metzler, 2008, S. 106. O conceito<lb/> geral de discurso é a designação de um diálogo realizado à base de argumentos.<lb/> </bibl>
+
+        <bibl type="footnote"><label>6</label><lb/> Aqui correção de raciocínio é no sentido de deixar a coisa ou a pessoa<lb/> falar; é ser reflexivo; é levar o outro lado a sério.<lb/> </bibl>
+
+        <bibl><label>7</label> Nesse sentido, LUDWIG, R. J. A norma de direito fundamental associada: direito, moral e<lb/> razão em Robert Alexy. Porto Alegre: SAFE, 2014, p. 302-306.<lb/> </bibl>
+        <bibl><label>8</label> ALEXY, 2011, p. 75-76, direciona que a jurisdição constitucional protege do risco da<lb/> constitucionalização expansiva.<lb/> </bibl>
+        <bibl><label>9</label> A noção de conflito é intuitiva porque são essenciais à vida humana; os conflitos nunca<lb/> desaparecem completamente, mas pela natureza exigem uma espécie de gerência a qual<lb/> provoca uma análise, por vezes, complexa. No momento, cumpre apenas destacar que a<lb/> estrutura mínima do conflito é, universalmente, triangular, composta por duas pessoas e uma<lb/> questão, e que nele atua-se sempre em três dimensões: a universal, a cultural e a individual,<lb/> porque são compreendidos "como universalmente similares, culturalmente distintos e<lb/> individualmente únicos", neste sentido ver AUGSBURGER, David W. Conflict mediation across<lb/> cultures: pathways and patterns. Louisville KY: Westminster/John Knox Press, 1992, p. 17 </bibl>
+      <bibl>apud<lb/> BIANCHI, A.A.; JONATHAN, E.; MEURER, O.A. Teorias do conflito. In: ALMEIDA, T.; PELAJO,<lb/> S.; JONATHAN, E. Mediação de conflitos. Salvador: Juspodivm, 2016, p. 72. O livro de Ausburger<lb/> é citado regularmente pela doutrina quando se busca analisar o conflito sob ângulo cultural,<lb/> guiando sobre a transformação de conflitos (e não sobre a gestão ou resolução do conflito);<lb/> destaca que a evitação de conflitos é uma orientação da sociedade chinesa, mas que pode levar<lb/> à evasão do confronto e não a uma verdadeira resolução de conflitos. Daí as máximas: quanto<lb/> mais orientado para a harmonia de um grupo, mais sensível ao conflito será o grupo; quanto<lb/> mais comprometido o grupo a praticar o valor cultural da harmonia, mais intensamente o conflito<lb/> será internalizado.</bibl>
+      <bibl>Outro livro pertinente e muito interessante é do ENTELMAN, R.F. Teoría de<lb/> conflitos -hacia un nuevo paradigma. Barcelona: Gedisa, 2009, no qual ele foge do lugar<lb/> comum de confrontos entre grupos ou indivíduos como conflitos específicos e que não analizam<lb/> o que lhes é comum, ou que pode ser aplicado a outros conflitos e apresenta ferramentas<lb/> conceituais com pretensão de universalizar resultados.<lb/> </bibl>
+
+        <bibl type="footnote"><label>10</label> Etapas importantes na construção de um argumento são interpretação, pretensão de<lb/> correção e a verificação pública, se for o caso, ou privada. Isto é, há de se ter o reconhecimento<lb/> intersubjetivo de todos os envolvidos para concessões e assentimentos.<lb/> </bibl>
+
+        <bibl><label>11</label> TARTUCE, F. Mediação nos conflitos civis. 2. ed. Rio de Janeiro: Forense, 2015.<lb/></bibl>
+      <bibl><label>12</label> Arts. 565 e 695 do Código de Processo Civil.<lb/> </bibl>
+        <bibl><label>13</label> Pode-se consultar o regulamento da American Arbitration Association (EUA) em https://<lb/> www.mediation.org/mediation/faces/mediator_resources/standards_rules_procedures?_<lb/> afrLoop=418453775973812&amp;_afrWindowMode=0&amp;_afrWindowId=87o5jj6h_1#%40%3F_<lb/> a f r W i n d o w I d % 3 D 8 7 o 5 j j 6 h _ 1 % 2 6 _ a f r L o o p % 3 D 4 1 8 4 5 3 7 7 5 9 7 3 8 1 2 % 2 6 _<lb/> afrWindowMode%3D0%26_adf.ctrl-state%3D87o5jj6h_37; bem como da Câmara Internacional<lb/> de Comércio (Paris) http://www.iccwbo.org/products-and-services/arbitration-and-adr/mediation/<lb/> rules/; e Deutsch Institution für Schiedsgerichtsbarkeit -Instituto Alemão de Arbitragem<lb/> (Alemanha), http://www.dis-arb.de/en/16/rules/dis-mediation-rulesid31. </bibl>
+      <bibl>E, ainda, sobre<lb/> programas de mediação e conciliação de conflitos coletivos, ver SOUZA, L. M. de. Mediação de<lb/> conflitos coletivos: a aplicação dos meios consensuais à solução de controvérsias que envolvem<lb/> políticas públicas de concretização de direitos fundamentais. Belo Horizonte: Fórum, 2012, p.<lb/> 173-201.<lb/> </bibl>
+        <bibl><label>14</label> O art. 694 do CPC/2015 esclareceu acerca do dever disposição do auxílio de profissionais<lb/> de outras áreas de conhecimento para a mediação e conciliação, quando todos os esforços<lb/> serão empreendidos para a solução consensual da controvérsia em ações de família.<lb/> </bibl>
+        <bibl><label>15</label> Sobre técnicas de mediação ver SPENGLER, F. M. Retalhos de mediação [recurso<lb/> eletrônico]. Santa Cruz do Sul: Essere nel Mondo, 2014, p. 44 a 71.<lb/> </bibl>
+        <bibl type="footnote"><label>16</label> Cresce no Brasil o novo modelo, não exclusivamente punitivo, que foi definido pela<lb/> Declaração da Costa Rica de Justiça Restaurativa que é processo capaz de colocar vítima<lb/> e ofensor frente a frente com a finalidade de fomentar o arrependimento, a restituição, a<lb/> reabilitação e a integração social.<lb/> </bibl>
+        <bibl><label>17</label> Lei 13.140/2015. Art. 17. Considera-se instituída a mediação na data para a qual for<lb/> marcada a primeira reunião de mediação. Parágrafo único. Enquanto transcorrer o procedimento<lb/> de mediação, ficará suspenso o prazo prescricional.<lb/> </bibl>
+        <bibl><label>18</label> Art. 169 do CPC/2015. "As partes podem escolher, de comum acordo, o conciliador, o<lb/> mediador ou a câmara privada de conciliação e de mediação. § 1º O conciliador ou mediador<lb/> escolhido pelas partes poderá ou não estar cadastrado junto ao tribunal. § 2º Inexistindo acordo<lb/> na escolha do mediador ou conciliador, haverá distribuição entre aqueles cadastrados no<lb/> registro do tribunal, observada a respectiva formação. § 3º Sempre que recomendável, haverá<lb/> a designação de mais de um mediador ou conciliador."<lb/> </bibl>
+        <bibl><label>19</label> VEZZULLA, J.C. Mediação de conflitos: a questão coletiva, p. 45 in Comissão Técnica de<lb/> Conceitos do Programa Mediação de Conflitos -CTC -PMC. Programa mediação de conflitos:<lb/> uma experiência de mediação comunitária no contexto das políticas públicas. Belo Horizonte:<lb/> Arraes Editores, 2011.<lb/> </bibl>
+        <bibl><label>20</label> Ibidem, p. 45-46.<lb/> </bibl>
+        <bibl><label>21</label> I Congresso Internacional de Mediação. Porto Alegre 1º e 2/12/2016.<lb/> </bibl>
+        <bibl><label>22</label> Mais sobre essa temática encontra-se em pode ser HALLAK, E. Impedimentos,<lb/> impossibilidades e penalidades referentes ao mediador, p. 169-178. </bibl>
+      <bibl>ALMEIDA, D.A.R.;<lb/> PANTOJA, F.M.; PELAJO, S. A mediação no novo código de processo civil. Rio de Janeiro:<lb/> Forense, 2015.<lb/> </bibl>
+        <bibl><label>23</label> A doutrina apresenta diferenças entre pré-mediação (que pode ser tanto numa sessão<lb/> quanto numa audiência), sessão de mediação (sigilo parcial ou total) e audiência de mediação<lb/> (publicidade), neste sentido ver GALVÃO FILHO, M.V. Audiência(s) e sessão(ões) de Mediação<lb/> na lei de Mediação (Lei 13.140/2015). In: ZANETI JR., H.; CABRAL, T.N.X. Justiça multiportas:<lb/> mediação, conciliação, arbitragem e outros meios de solução de conflitos. Salvador: Juspodivm,<lb/> 2016, p. 509 a 528.<lb/> </bibl>
+        <bibl><label>24</label> ALMEIDA, T.; PELAJO, S.; JONATHAN, E. Mediação de conflitos. Salvador: Juspodivm,<lb/> 2016, p. 189-240; </bibl>
+      <bibl>MENDONÇA, R. A ética da mediação ambiental. Rio de Janeiro: Lúmen Juris,<lb/> 2014, p. 56-46. Nesta obra e páginas citadas levantam-se questões interessantes, destacando-<lb/>se a classificação de Ellen Waldman baseada na postura do mediador frente às normas sociais<lb/> e sua relevância para resultado da mediação.<lb/> </bibl>
+        <bibl><label>25</label> O art. 166 prevê no § 3º a admissão de técnicas negociais, com o objetivo de proporcionar<lb/> ambiente favorável à autocomposição.<lb/> </bibl>
+        <CABRAL><label>26</label> Sobre a mediação sem mediador ou negociação direta ou resolução colaborativa ver<lb/> CABRAL, A. do P.; CUNHA, L. C. Negociação direta ou resolução colaborativa de disputas<lb/> (collaborative law): "Mediação sem mediador". In: ZANETI JR., H.; CABRAL, T. N. X. Justiça<lb/> multiportas: mediação, conciliação, arbitragem e outros meios de solução de conflitos. Salvador:<lb/> Juspodivm, 2016, p. 709 a 726.<lb/> </CABRAL>
+        <bibl><label>27</label> Neste trabalho o foco não é a mediação extrajudicial, que é uma forma extraordinariamente<lb/> criativa em relação à experiência mundial, tampouco é sobre a mediação privada que é um<lb/> mercado em formação no país. A Lei 13.140/2015 regula com profundidade aspectos da<lb/> mediação judicial, extrajudicial e envolvimento de entes públicos. O que salta aos olhos é que a<lb/> mediação privada é eletista e a mediação decorrente da demanda pública é voltada para muitos<lb/> ou maior número de pessoas. Neste sentido ver ASSMAR, G.; PINHO, D. Mediação privada -<lb/>um mercado em formação no Brasil. In: ZANETI JR., H.; CABRAL, T. N. X. Justiça multiportas:<lb/> mediação, conciliação, arbitragem e outros meios de solução de conflitos. Salvador: Juspodivm,<lb/> 2016, p. 589 a 606.<lb/> </bibl>
+        <bibl><label>28</label> WRASSE, H.P.; DORNELLES, G.D. Fórum múltiplas portas e os possíveis caminhos para<lb/> solucionar os conflitos, p. 27-45. In: SPENGLER, F.M.; SPENGLER NETO, T. (orgs.). Do conflito<lb/> à solução adequada: mediação, conciliação, negociação, jurisdição e arbitragem [recurso<lb/> eletrônico]. Santa Cruz do Sul: Essere nel Mondo, 2015.<lb/> </bibl>
+        <bibl><label>29</label> BALTAZAR JUNIOR, J. P. A doutrina da proibição de insuficiência ("Untermassverbot").<lb/> In: HECK, L. A. (org.). Direitos fundamentais, teoria dos princípios e argumentação. Porto<lb/> Alegre: SAFE, 2014, p. 74. Nas p. 81-88 o jurista brasileiro apresenta as críticas da proibição<lb/> de insuficiência, destacando a autonomia da proibição de insuficiência frente à proibição de<lb/> excesso e a compatibilidade entre proibição de insuficiência e proibição de excesso.<lb/> </bibl>
+        <bibl><label>30</label> ALEXY, R. Teoria dos direitos fundamentais. Tradução Virgílio Afonso da Silva. São Paulo:<lb/> Malheiros, 2008, p. 352 e 611, quando ressalta que os direitos fundamentais não podem ser<lb/> divididos de uma forma tão refinada que excluam impasses estruturais que poderiam torná-los<lb/> sem importância ou impasses reais no sopesamento, de forma a torná-los praticamente sem<lb/> importância.</bibl>
+      <bibl>Importa registrar que um grande objetivo da teoria alexyana foi a construção de<lb/> um conceito do direito, que inseriu correção com conceitos morais. Ver a tradução do conceito<lb/> de direito de Alexy em LUDWIG, 2014, p. 321. </bibl>
+      <bibl>Há outra tradução do conceito em ALEXY, R.<lb/> Conceito e validade do direito. Trad. Gercélia Batista de Oliveira Mendes. São Paulo: Martins<lb/> Fontes, 2011a, p. 151.<lb/></bibl>
+        <bibl><label>31</label> DIDIER JR., F.; ZANETTI JR., H. Justiça multiportas e tutela constitucional adequada:<lb/> autocomposição em direitos coletivos. In: ZANETTI JR., H.; CABRAL, T. N. X. Justiça multiportas:<lb/> mediação, conciliação, arbitragem e outros meios de solução adequada para conflitos. Salvador,<lb/> Juspodivm, 2016, p. 36.<lb/> </bibl>
+        <bibl><label>32</label> A argumentação dos princípios é a parte importante da argumentação sistemática, todos<lb/> os princípios de direito e todas as normas jurídicas têm caráter deontológico (de dever). De<lb/> modo amplo, tem-se que cuidar com sedutores parâmetros como da primazia do bem coletivo<lb/> sobre direitos individuais, pois essa situação pode desembocar no holismo jurídico, "segundo<lb/> qual todas premissas já estão contidas ou escondidas no sistema jurídico e, ainda, somente<lb/> precisam ser descobertas" em Constitucionalismo discursivo. 3. ed. Porto Alegre: Livraria do<lb/> Advogado, 2007, p. 39.<lb/></bibl>
+      <bibl><label>33</label> LUDWIG, op. cit., p. 448.<lb/> </bibl>
+        <bibl><label>34</label> PEIXOTO, R. Os "princípios" da mediação e da conciliação: uma análise da Res. 125/2010<lb/> do CNJ, do CPC/2015 e da Lei 13.140/2015. In: ZANETI JR., H.; CABRAL, T. N. X. Justiça<lb/> multiportas: mediação, conciliação, arbitragem e outros meios de solução de conflitos. Salvador:<lb/> Juspodivm, 2016, p. 91 a 108.<lb/> </bibl>
+        <bibl><label>35</label> A especificidade do último. 2016. Disponível em: &lt;fonamec.tjmt.jus.br/FichaInscricao/<lb/> Fonamec4 /#realizarinscricoes&gt; Acesso em: 7 fev. 2017.<lb/> </bibl>
+        <bibl><label>36</label> Disponível em: &lt;http://www.cnj.jus.br/busca-atos-adm?documento=2579&gt; Acesso em: 7<lb/> fev. 2017.<lb/> </bibl>
+        <bibl><label>37</label> MORI, A. H. Princípios gerais aplicáveis aos processos de mediação e de conciliação. In:<lb/> GUNTHER, L. E.; PIMPÃO, R. D. Conciliação: um caminho para a paz social. Curitiba: Juruá,<lb/> 2013, p. 176 a 195, apresenta os princípios aplicáveis à mediação e conciliação, os relacionados<lb/> com os participantes, os relacionados com o procedimento e com os mediadores.<lb/> </bibl>
+        <bibl><label>38</label><lb/> Assegurada na Constituição Federal art. 5º, caput e especificamente nos<lb/> incisos II, IV, X e LIV.<lb/></bibl> <bibl><label>39</label><lb/> Ver LUDWIG, R. J. A norma de direito fundamental associada: direito,<lb/> moral e razão em Robert Alexy. Porto Alegre: SAFE, 2014, p. 168-179. Essa obra, em várias<lb/> passagens, retoma pensamento kantiano, especialmente como um expoente da consciência<lb/> da finitude humana e um divisor de água para a compreensão da razão humana prática.<lb/> Demonstrou, em várias passagens, que tentar colocar no lugar da lei moral máximas particulares<lb/> e não universalizáveis é espontaneísmo moral ou heteronomia que se afina com a postura<lb/> solopsista.<lb/> </bibl>
+        <bibl><label>40</label> A necessidade da representação foi desenvolvida pelos maiores pensadores, conforme<lb/> ressaltam doutrinadores. Em Montesquieu, "A grande vantagem dos representantes é que eles<lb/> são capazes de discutir os assuntos. O povo não é nem um pouco capaz disso, o que constitui<lb/> um dos grandes inconvenientes da democracia" (Cfr. MONTESQUIEU. O espírito das leis.<lb/> 3. ed. São Paulo: Martins Fontes, 2005, p. 171.</bibl> <bibl>Aristóteles, já antevira o perigo, inerente às<lb/> democracias, de que a força do número da maioria imperaria sobre as pessoas de bem; </bibl><bibl>por essa<lb/> razão recomendou que não se entreguem os cargos mais importantes à maioria dos cidadãos<lb/> livres por causa da sua corrupção e ignorância, mas que, ao invés disso, pudessem participar<lb/> através da eleição e censura (Cfr. ARISTÓTELES. A política. 3. ed. São Paulo: Martins Fontes,<lb/> 2006, p. 173. </bibl>
+      <bibl>Em KANT, I. Sobre la paz perpétua. Madrid: Aliança, 2012, p. 56, sentenciou:<lb/> "Toda forma de governo que no sea representativa es em propriedade uma no forma [...]", em<lb/> português À paz perpétua e outros opúsculos. Lisboa: Edições 70, 2008, p. 141).<lb/> </bibl>
+        <bibl><label>41</label> ALEXY, R. Minha filosofia do direito a institucionalização da razão. Constitucionalismo<lb/> discursivo. Porto Alegre: Livraria do Advogado, 2011b, p. 28.<lb/> </bibl>
+        <bibl><label>42</label> Art. 5º, XXXV, CF/88: "a lei não excluirá da apreciação do Poder Judiciário lesão ou ameaça<lb/> a direito".<lb/> </bibl>
+        <bibl><label>43</label> Ver GUTIERREZ, D. M.; CUNHA, J.P. Jurisdição processual e democracia: advento da<lb/> audiência de conciliação e mediação, efetivação dos meios equivalentes e acesso à justiça.<lb/> Revista Opinião Jurídica -Revista do curso de Direito da Unichristus, Fortaleza, n. 17, p. 108-<lb/>131, 2015.<lb/> </bibl>
+        <bibl><label>44</label> Art. 17, parágrafo único.<lb/> </bibl>
+        <bibl><label>45</label> Vários dispositivos constitucionais estão relacionados com o princípio da solidariedade, tais<lb/> como os artigos 40, 194, 195, 196, 203, 205, 227 e 230.<lb/> </bibl>
+
+        REFERÊNCIAS<lb/>
+
+        <bibl>ALEXY, R. La teoría de la argumentación jurídica -la teoria del<lb/> discurso racional como teoría de la fundamentacion jurídica.<lb/> Madrid: Centro de Estudios Constitucionales, 1997.<lb/> </bibl>
+        <bibl>______. Constitucionalismo discursivo. 3. ed. Porto Alegre: Livraria do<lb/> Advogado, 2007.<lb/> </bibl>
+        <bibl>ASSMAR, G.; PINHO, D. Mediação privada -um mercado em formação<lb/> no Brasil. In: ZANETI JR., H.; CABRAL, T. N. X. Justiça multiportas:<lb/> mediação, conciliação, arbitragem e outros meios de solução de<lb/> conflitos. Salvador: Juspodivm, 2016. p. 589-606.<lb/> </bibl>
+        <bibl>BALTAZAR JUNIOR, J. P. A doutrina da proibição de insuficiência<lb/> ("Untermassverbot"). In: HECK, L. A. (org.). Direitos fundamentais,<lb/> teoria dos princípios e argumentação. Porto Alegre: SAFE, 2014.<lb/> </bibl>
+        <bibl>BIANCHI, A. A.; JONATHAN, E.; MEURER, O. A. Teorias do conflito.<lb/> In: ALMEIDA, T.; PELAJO, S.; JONATHAN, E. Mediação de<lb/> conflitos. Salvador: Juspodivm, 2016. p. 71-83.<lb/> </bibl>
+        <bibl>BURKARD, F.-P.; PRECHET, P. (orgs.). Metzler Lexukon<lb/> Philosophie. 3. Auflage. Stuttgart: Verlag J. B. Metzler, 2008.<lb/> </bibl>
+        <bibl>COMISSÃO TÉCNICA DE CONCEITOS DO PROGRAMA MEDIAÇÃO<lb/> DE CONFLITOS -CTC -PMC. Programa mediação de conflitos: uma<lb/> experiência de mediação comunitária no contexto das políticas públicas.<lb/> Belo Horizonte: Arraes Editores, 2011.<lb/> </bibl>
+        <bibl>CUNHA, L. C. Negociação direta ou resolução colaborativa de disputas<lb/> (collaborative law): "Mediação sem mediador". In: ZANETI JR., H.;<lb/> CABRAL, T. N. X. Justiça multiportas: mediação, conciliação, arbitragem<lb/> e outros meios de solução de conflitos. Salvador: Juspodivm, 2016.<lb/> p. 709-726.<lb/> </bibl>
+        <bibl>ENTELMAN, R. F. Teoría de conflitos -Hacia un nuevo paradigma.<lb/> Barcelona: Gedisa, 2009.<lb/> </bibl>
+        <bibl>GALVÃO FILHO, M. V. Audiência(s) e sessão(ões) de mediação na<lb/> lei de mediação (Lei n. 13.140/2015). In: ZANETI JR., H.; CABRAL, T.<lb/> N. X. Justiça multiportas: mediação, conciliação, arbitragem e outros<lb/> meios de solução de conflitos. Salvador: Juspodivm, 2016. p. 509-528.<lb/> </bibl>
+        <bibl>GUTIERREZ, D. M.; CUNHA, J. P. Jurisdição processual e democracia:<lb/> advento da audiência de conciliação e mediação, efetivação dos meios<lb/> equivalentes e acesso à justiça. Revista Opinião Jurídica -Revista<lb/> do curso de Direito da Unichristus, Fortaleza, n. 17, p. 108-131, 2015.<lb/> </bibl>
+        <bibl>HALLAK, E. Impedimentos, impossibilidades e penalidades referentes<lb/> ao mediador, p. 169-178. In: ALMEIDA, D.A.R.; PANTOJA, F.M.;<lb/> PELAJO, S. A mediação no novo código de processo civil. Rio de<lb/> Janeiro: Forense, 2015.<lb/> </bibl>
+        <bibl>HOLLERBACH, A. Ciência do direito. Tradução Eduardo Schenato<lb/> Piñeiro. In: HECK, L. A. (org.). Direito natural, direito positivo, direito<lb/> discursivo. Porto Alegre: Livraria do Advogado, 2010. p. 13-24.<lb/> </bibl>
+        <bibl>LUDWIG, R. J. A norma de direito fundamental associada: direito, moral<lb/> e razão em Robert Alexy. Porto Alegre: SAFE, 2014.<lb/> </bibl>
+        <bibl>MENDONÇA, R. A ética da mediação ambiental. Rio de Janeiro: Lúmen<lb/> Juris, 2014.<lb/> </bibl>
+        <bibl>MORI, A. H. Princípios gerais aplicáveis aos processos de mediação e<lb/> de conciliação. In: GUNTHER, L. E.; PIMPÃO, R. D. Conciliação: um<lb/> caminho para a paz social. Curitiba: Juruá, 2013. p. 165-198.<lb/> </bibl>
+        <bibl>SPENGLER, F. M. Retalhos de mediação [recurso eletrônico]. Santa<lb/> Cruz do Sul: Essere nel Mondo, 2014.<lb/> </bibl>
+        <bibl>SOUZA, L. M. de. Mediação de conflitos coletivos: a aplicação dos<lb/> meios consensuais à solução de controvérsias que envolvem políticas<lb/> públicas de concretização de direitos fundamentais. Belo Horizonte:<lb/> Fórum, 2012.<lb/> </bibl>
+        <bibl>TARTUCE, F. Mediação nos conflitos civis. 2. ed. Rio de Janeiro:<lb/> Forense, 2015.<lb/> </bibl>
+        <bibl>VEZZULLA, J. C. Mediação de conflitos: a questão coletiva. In:<lb/> Comissão Técnica de Conceitos do Programa Mediação de Conflitos<lb/> -CTC -PMC. Programa mediação de conflitos: uma experiência<lb/> de mediação comunitária no contexto das políticas públicas. Belo<lb/> Horizonte: Arraes Editores, 2011. p. 45.</bibl>
+      </listBibl>
+    </text>
+</TEI>

@@ -1,0 +1,202 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.5771__2699-1284-2020-1-83">
+    <titleStmt>
+      <title level="a">Urheberrecht und Zugang in einer digitalen Welt – Urheberrechtliche Fragestellungen des Zugangs für Gedächtnisinstitutionen und die Digital Humanities –</title>
+      <author>
+        <persName>
+          <forename>Katharina de la</forename>
+          <surname>Durantaye</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Benjamin</forename>
+          <surname>Raue</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="sperber">Marcia Sperber</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Nomos Verlag</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2020</date>
+      <idno type="DOI">10.5771/2699-1284-2020-1-83</idno>
+      <ptr target="https://doi.org/10.5771/2699-1284-2020-1-83"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Katharina de la Durantaye, Benjamin Raue. (2020). Urheberrecht und Zugang in einer digitalen Welt – Urheberrechtliche Fragestellungen des Zugangs für Gedächtnisinstitutionen und die Digital Humanities –. RuZ - Recht und Zugang, 1(1), 83-94. DOI: 10.5771/2699-1284-2020-1-83</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Urheberrecht und Zugang in einer digitalen Welt – Urheberrechtliche Fragestellungen des Zugangs für Gedächtnisinstitutionen und die Digital Humanities –</title>
+          <author>
+            <persName>
+              <forename>Katharina de la</forename>
+              <surname>Durantaye</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Benjamin</forename>
+              <surname>Raue</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">RuZ - Recht und Zugang</title>
+          <imprint>
+            <biblScope unit="volume">1</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page" from="83" to="94">83-94</biblScope>
+            <date when="2020">2020</date>
+            <publisher>Nomos Verlag</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.5771/2699-1284-2020-1-83</idno>
+        <ptr target="https://doi.org/10.5771/2699-1284-2020-1-83"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T13:42:24.441144Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T13:42:24.441144Z" status="extraction">
+      <note type="label">review</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-02-22T10:38:03.076Z" status="draft" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-23T10:30:09.385Z" status="draft" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-23T11:00:31.188Z" status="draft" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-24T12:55:18.995Z" status="draft" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-24T14:18:53.696Z" status="checked" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-06T13:34:13.737Z" status="in-review" who="#kazuyo">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-05-09T11:54:46.618Z" status="in-review" who="#lfoppiano">
+      <note type="label">v6 (lfoppiano)</note>
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-05-09T11:56:13.856Z" status="approved" who="#lfoppiano">
+      <desc>Corrections</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> Dazu ausführlich: Peukert, GRUR-Beilage 2014, 77 ff.<lb/> </bibl>
+        <bibl><label>2</label> Dazu etwa: Hofmann, ZGE 2016, 482, 498; </bibl>
+          <bibl>Becker, ZGE 2016, 239, 273; </bibl>
+          <bibl>Raue, ZGE 2014,<lb/> 387, 389.<lb/> </bibl>
+        <bibl><label>3</label> Zur Frage, ob der Erwerb eines (digitalen) Werkexemplars mit dem Erwerb eines dinglichen<lb/> Genussrechts verbunden ist, vgl.: Kuschel, Der Erwerb digitaler Werkexemplare zur privaten<lb/> Nutzung, 2019.<lb/> </bibl>
+        <bibl><label>4</label> Vgl. nur: EuGH, Urt. v. 8.9.2016 -C-160/15, ECLI:EU:C:2016:644 = GRUR 2016, 1152 Tz.<lb/> 31 -GS Media/Sanoma;</bibl>
+          <bibl> EuGH, Urt. v. 8.9.2016 -C-160/15, ECLI:EU:C:2014:1195 = GRUR<lb/> 2014, 654 Tz. 24 -PRCA/NLA; EuGH, Urt. v. 4.10.2011 -C-403/08 und C-429/08,<lb/> ECLI:EU:C:2011:631 = GRUR 2012, 156 Tz. 164 -FAPL u. Murphy; Schack, Urheber-und<lb/> Urhebervertragsrecht, 9. Aufl. 2019, Rn. 9;</bibl>
+          <bibl> Raue, ZGE 2017, 514, 515.<lb/> </bibl>
+        <bibl><label>5</label> Grundlegend dazu etwa: Wielsch, Zugangsregeln, 2008.<lb/> </bibl>
+        <bibl><label>6</label> Vgl. dazu nur: de la Durantaye, Allgemeine Bildungs-und Wissenschaftsschranke, 2014,<lb/> S. 274 ff.<lb/> </bibl>
+        <bibl><label>7</label> Daneben hat auch der EuGH einige Urteile gefällt, die für Gedächtnisinstitutionen von erheb-<lb/>licher Bedeutung sind, vgl. nur: EuGH, Urt. v. 19.12.2019 -C-263/18, ECLI:EU:C:2019:1111<lb/> = GRUR 2020, 179, 179 ff. -Tom Kabinet zur Zulässigkeit des Weiterverkaufs "gebrauchter"<lb/> E-Books.<lb/> </bibl>
+        <bibl><label>8</label> Vgl. nur: Koalitionsvertrag von CDU, CSU und SPD, Deutschlands Zukunft gestalten,<lb/> S. 134, abrufbar unter: www.cdu.de/artikel/der-koalitionsvertrag-von-cdu-csu-und-spd,<lb/> zuletzt abgerufen am 27.1.2020.<lb/> </bibl>
+        <bibl><label>9</label> Art. 4 UrhWissG, BGBl. 2017 I Nr. 61, S. 3351.<lb/> </bibl>
+        <bibl><label>10</label> Vgl.: BT-Drs. 18/12329, S. 2.<lb/> </bibl>
+        <bibl><label>11</label> Richtlinie 2001/29/EG des Europäischen Parlaments und des Rates vom 22. Mai 2001 zur<lb/> Harmonisierung bestimmter Aspekte des Urheberrechts und der verwandten Schutzrechte<lb/> in der Informationsgesellschaft, ABl. EG 2001 L 167/10.<lb/> </bibl>
+        <bibl><label>12</label> Vgl. dazu: de la Durantaye, GRUR 2017, 558 ff.<lb/> </bibl>
+        <bibl><label>13</label> Vgl. dazu nur: Raue, CR 2017, 656 ff.;</bibl><bibl> Spindler, ZGE 2018, 273 ff.;</bibl>
+          <bibl> Specht, OdW 2018, 285.<lb/> </bibl>
+        <bibl><label>14</label> § 142 UrhG.<lb/> </bibl>
+        <bibl><label>15</label> Richtlinie (EU) 2019/790 des Europäischen Parlaments und des Rates vom 17. April 2019<lb/> über das Urheberrecht und die verwandten Schutzrechte im digitalen Binnenmarkt und zur<lb/> Änderung der Richtlinien 96/9/EG und 2001/29/EG, ABl. EU 2019 L 130/92.<lb/> </bibl>
+        <bibl><label>16</label> Dies gilt insbesondere für Art. 15 und 17 DSM-RL, die dem Leistungsschutzrecht für Pres-<lb/>severleger bzw. der Haftung von Plattformbetreibern gewidmet sind.<lb/> </bibl>
+        <bibl><label>17</label> ErwGr. 5;</bibl> <bibl>zum Verhältnis der Schranken der DSM-Richtlinie zu jenen der InfoSoc-Richtli-<lb/>nie, vgl. nur: Stieper, GRUR 2020, 1 ff.<lb/> </bibl>
+        <bibl><label>18</label> Vgl. dazu nur: Raue, ZUM 2019, 684 ff.;</bibl>
+          <bibl>Stieper, GRUR 2020, 1, 4.<lb/> </bibl>
+        <bibl><label>19</label> So sieht es auch der Diskussionsentwurf des BMJV für ein Erstes Gesetz zur Anpassung des<lb/> Urheberrechts an die Erfordernisse des digitalen Binnenmarkts vom 15. Januar 2020 vor, ab-<lb/>rufbar unter: https://www.bmjv.de/SharedDocs/Gesetzgebungsverfahren/Dokumente/Disk<lb/> E_Anpassung%20Urheberrecht_digitaler_Binnenmarkt_Versendungsschreiben.html?nn=67<lb/> 12350, zuletzt abgerufen am 27.1.2020.<lb/> </bibl>
+        <bibl><label>20</label> So auch: Stieper, GRUR 2020, 1, 5.<lb/> </bibl>
+        <bibl><label>21</label> Vgl. dazu nur: de la Durantaye/Kuschel, ZUM 2019, 694 ff.;</bibl>
+          <bibl>de la Durantaye, GRUR 2020,<lb/> 7 ff.<lb/> </bibl>
+        <bibl><label>23</label> Richtlinie 2012/28/EU des Europäischen Parlaments und des Rates vom 25.10.2012 über be-<lb/>stimmte zulässige Formen der Nutzung verwaister Werke, ABl. EU 2012 L 299/5. </bibl>
+          <bibl><label>25</label> Orphan Works Database, abrufbar unter: https://euipo.europa.eu/orphanworks/#search/basi<lb/> c/all, zuletzt abgerufen am 23.1.2020. Darin enthalten sind 6.902 eingebettete Werke.<lb/> </bibl>
+
+        <bibl><label>26</label> Marrakesh Treaty to Faclitate Access to Published Works for Persons Who Are Blind, Vi-<lb/>sually Impaired or Otherwise Print Disabled, abrufbar unter: https://wipolex.wipo.int/en/te<lb/> xt/301016, zuletzt abgerufen am 27.2.2020.<lb/> </bibl>
+        <bibl><label>27</label> Vgl. dazu: Schmidt, Maximalschutz im internationalen und europäischen Urheberrecht,<lb/> 2018, Kapitel 3.<lb/> </bibl>
+        <bibl><label>28</label> Richtlinie (EU) 2017/1564 des Europäischen Parlaments und des Rates vom 13. September<lb/> 2017 über bestimmte zulässige Formen der Nutzung bestimmter urheberrechtlich oder<lb/> durch verwandte Schutzrechte geschützter Werke und sonstiger Schutzgegenstände zuguns-<lb/>ten blinder, sehbehinderter oder anderweitig lesebehinderter Personen und zur Änderung<lb/> der Richtlinie 2001/29/EG zur Harmonisierung bestimmter Aspekte des Urheberrechts und<lb/> der verwandten Schutzrechte in der Informationsgesellschaft, ABl. EU 2017 L 242/6.<lb/> </bibl>
+        <bibl><label>29</label> BGBl. 2018 Teil I Nr. 40, S. 2014 ff.<lb/> </bibl>
+        <bibl><label>30</label> Erste Vorläufer entwickelten sich -unter anderen Namen -schon in den frühen 1960er Jah-<lb/>ren. Ein geschichtlicher Überblick der Digital Humanities findet sich etwa bei: Thaller, Ge-<lb/>schichte der Digital Humanities, in: Jannidis/Kohle/Rehbein, Digital Humanities -Eine Ein-<lb/>führung, 2017, S. 2 ff.<lb/> </bibl>
+        <bibl><label>31</label> Vgl. nur § 16 Abs. 1 UrhG: "gleichviel ob vorübergehend" und Dreier/Schulze-Schulze, Ur-<lb/>heberrechtsgesetz, 6. Aufl. 2018, § 16 Rn. 12 m.w.N.<lb/> </bibl>
+        <bibl><label>32</label> Raue, ZGE 2017, 514, 530 ff., 534.<lb/> </bibl>
+        <bibl><label>33</label> Nach dem EuGH muss die grundrechtliche Dimension der Nutzungsrechte dem Eigen-<lb/>tumsrecht der Urheber gegenübergestellt werden; sie muss praktische Wirksamkeit entfalten,<lb/> vgl. etwa: EuGH, Urt. v. 29.7.2019 -C-516/17, ECLI:EU:C:2019:625 = GRUR 2019, 940<lb/> </bibl>
+<bibl>Tz. 42 -Spiegel Online/Volker Beck.<lb/> </bibl>
+        <bibl><label>34</label> Urheberrechtlich relevant können auch unterlassene Vorsichts-und Beseitigungsmaßnahmen<lb/> durch Verletzungen von Verkehrspflichten sein, im wissenschaftlichen Kontext etwa beim<lb/> Betreiben von Repositorien. Vgl. allgemein zu (Verkehrs-)Pflichten von Plattformen: EuGH,<lb/> Urt. v. 14.6.2017 -C-610/15, ECLI:EU:C:2017:456 = GRUR 2017, 790 Tz. 35 ff. -Stichting<lb/> Brein/ Ziggo u.a. (Pirate Bay) und Art. 17 DSM-RL; letzterer ist nur auf kommerzielle Platt-<lb/>formen anwendbar (Art. 2 Nr. 6 DSM-RL). </bibl>
+          <bibl>Zur Urheberrechtswidrigkeit der Nutzung sol-<lb/>cher Schattenbibliotheken: Steinhauer, Die Nutzung einer "Schattenbibliothek" im Licht des<lb/> Urheberrechts: Einige Überlegungen am Beispiel von Sci-Hub, 2016, abrufbar unter: http://<lb/> nbn-resolving.de/urn:nbn:de:hbz:708-dh4052, zuletzt abgerufen am 27.1.2020.<lb/> </bibl>
+<bibl><label>35</label> Zu den urheberrechtlichen Einschränkungen der Informationszugangsansprüche etwa: Raue,<lb/> JZ 2013, 280 ff.<lb/> </bibl>
+        <bibl><label>36</label> Dazu: Raue, ZGE 2017, 514, 530 ff.<lb/> </bibl>
+
+        <bibl><label>37</label> Bei mehreren Autoren richtet sich der Fristbeginn nach dem Tod des Längstlebenden, § 65<lb/> Abs. 1 UrhG.<lb/> </bibl>
+        <bibl><label>38</label> Vgl.: Triaille/de Meeüs d 'Argenteuil/de Francquen, Study on the legal framework of text and<lb/> data mining, 2014, S. 47 f.;</bibl>
+          <bibl> Schöch, Digitale Wissensproduktion, in: Jannidis/Kohle/Rehbein,<lb/> Digital Humanities -Eine Einführung, 2017, S. 223, 227 ff.<lb/> </bibl>
+        <bibl><label>39</label> Dazu etwa: Spindler, GRUR 2016, 1112, 1113 f.;</bibl>
+          <bibl>Specht, OdW 2018, 285.<lb/> </bibl>
+
+          <bibl><label>40</label> Vgl. etwa: Ohly, GRUR 2017, 964, 967 f. m.w.N.<lb/> </bibl>
+        <bibl><label>41</label> ErwGr. 9 Richtlinie (EU) 2019/790 des Europäischen Parlaments und des Rates vom<lb/> 17. April 2019 über das Urheberrecht und die verwandten Schutzrechte im digitalen Binnen-<lb/>markt und zur Änderung der Richtlinien 96/9/EG und 2001/29/EG. ABl. EU 2019 L<lb/> 130/92;</bibl>
+          <bibl>ferner Dreier/Schulze-Dreier, Urheberrechtsgesetz, 6. Aufl. 2018, § 60 d Rn. 1, 4;<lb/> </bibl>
+<bibl>Fromm/Nordemann-A. Nordemann, Urheberrecht, 12. Aufl. 2018, § 60 d Rn. 4;</bibl>
+          <bibl>Dreyer/<lb/> Kotthoff/Meckel-Hentsch, Urheberrecht, 4. Aufl. 2018, § 60 d Rn. 3;</bibl>
+          <bibl>Raue, ZUM 2019, 684,<lb/> 685.<lb/> </bibl>
+        <bibl><label>42</label> Dazu etwa: Obergfell, Big Data und Urheberrecht, in: Ahrens/Bornkamm/Fezer/Koch/<lb/> McGuire/Würtenberger, FS Büscher, 2018, S. 223, 228 ff.;</bibl>
+          <bibl>Raue, CR 2017, 656 ff.;</bibl>
+          <bibl>Spindler,<lb/> ZGE 2018, 273, 277 ff.;</bibl>
+          <bibl>Specht, OdW 2018, 285.<lb/> </bibl>
+        <bibl><label>43</label> Vgl. dazu den Diskussionsentwurf des Bundesministeriums der Justiz und für Verbraucher-<lb/>schutz, Entwurf eines Ersten Gesetzes zur Anpassung des Urheberrechts an die Erfordernis-<lb/>se des digitalen Binnenmarkts v. 15.1.2020.<lb/> </bibl>
+        <bibl><label>44</label> Specht, OdW 2018, 285, 287;</bibl> <bibl>Raue, CR 2017, 656, 660.<lb/> </bibl>
+        <bibl><label>45</label> EuGH, Urt. v. 8.9.2016 -C-160/15, ECLI:EU:C:2016:644 = GRUR 2016, 1152, 1152 ff. -<lb/>GS Media/Sanoma;</bibl>
+          <bibl> überholt daher: BGH, Urt. v. 17.7.2003 -I ZR 259/00, GRUR 2003, 958,<lb/> 961 f. -Paperboy.<lb/> </bibl>
+        <bibl><label>46</label> Dazu allgemein: Dreyer/Kotthoff/Meckel-Dreyer, Urheberrecht, 4. Aufl. 2018, § 15 d<lb/> Rn. 81 ff.;</bibl> <bibl>Raue, ZGE 2017, 514, 528 f.<lb/> </bibl>
+        <bibl><label>47</label> Vgl. etwa: DFG, Leitlinien zur Sicherung guter wissenschaftlicher Praxis, Kodex, 2019, Leit-<lb/>linie 12, 13, 17 sowie Max-Planck-Gesellschaft, Regeln zur Sicherung guter wissenschaftli-<lb/>cher Praxis, abrufbar unter: https://www.mpg.de/229457/Regeln_guter_wiss_Praxis__Vollte<lb/> xt-Dokument_.pdf, zuletzt abgerufen am 27.1.2020.<lb/> </bibl>
+        <bibl><label>48</label> Vgl. dazu etwa den Workshop "Strategien für die Nutzbarmachung urheberrechtlich ge-<lb/>schützter Textbestände für die Forschung durch Dritte", abrufbar unter: http://text-und-dat<lb/> a-mining.de/workshops, zuletzt abgerufen am 27.1.2020.<lb/> </bibl>
+        <bibl><label>49</label> Dazu: Raue, CR 2017, 656, 661;</bibl> <bibl>Spindler, ZGE 2018, 273, 285.<lb/> </bibl>
+        <bibl><label>50</label> § 60d Abs. 5 UrhG des Diskussions-Entwurfs lautet: "(5) Berechtigte nach Absatz 2 Satz 1<lb/> und Absatz 3 Nummer 1 dürfen Vervielfältigungen nach Absatz 1 mit angemessenen Sicher-<lb/>heitsvorkehrungen gegen unbefugte Benutzung aufbewahren, solange sie für Zwecke der<lb/> wissenschaftlichen Forschung oder zur Überprüfung wissenschaftlicher Erkenntnisse erfor-<lb/>derlich sind.".</bibl>
+    </listBibl>
+</text>
+
+
+
+</TEI>

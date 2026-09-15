@@ -43,4 +43,12 @@ public interface GenericTrainer {
     public int getNbMaxIterations();
 
     public void setNbMaxIterations(int iterations);
+
+    public double getL1();
+
+    public void setL1(double l1);
+
+    public double getL2();
+
+    public void setL2(double l2);
 }
