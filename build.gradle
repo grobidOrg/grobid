@@ -1,14 +1,22 @@
 buildscript {
-    // The shadow plugin (8.3.x is the last non-major line) puts log4j and plexus-utils on the build
-    // classpath. GROBID itself logs through slf4j/logback and never uses log4j; shadow only needs it
-    // for Log4j2PluginsCacheFileTransformer, which this build does not apply (mergeServiceFiles only).
-    // Drop log4j from the build classpath entirely rather than chase its advisories. plexus-utils is
-    // genuinely used by shadow (relocation path selectors), so hold it at a patched release:
-    // CVE-2025-67030 is fixed from plexus-utils 4.0.3 on.
-    configurations.classpath {
-        exclude group: 'org.apache.logging.log4j'
-    }
+    // The shadow plugin (8.3.x and 9.x alike) declares log4j-core at runtime scope but only touches
+    // it in Log4j2PluginsCacheFileTransformer, which none of the shadowJar tasks here register via
+    // transform(). GROBID itself logs through slf4j/logback. Strip log4j from shadow's dependencies
+    // rather than chase its advisories with version pins. The rule is scoped to shadow on purpose:
+    // a blanket classpath exclude would also silently drop log4j from any future plugin that needs it.
+    // plexus-utils stays: shadow's transformers (including the ServiceFileTransformer behind
+    // mergeServiceFiles()) and relocation selectors use it, and shadow declares 4.0.2, below the
+    // CVE-2025-67030 fix (4.0.3).
     dependencies {
+        components {
+            withModule('com.gradleup.shadow:shadow-gradle-plugin') {
+                allVariants {
+                    withDependencies { deps ->
+                        deps.removeAll { it.group == 'org.apache.logging.log4j' }
+                    }
+                }
+            }
+        }
         constraints {
             classpath('org.codehaus.plexus:plexus-utils:4.1.0') {
                 because 'CVE-2025-67030: directory traversal in extractFile, fixed in plexus-utils 4.0.3'
