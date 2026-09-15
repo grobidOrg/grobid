@@ -4,13 +4,13 @@ buildscript {
     // for Log4j2PluginsCacheFileTransformer, which this build does not apply (mergeServiceFiles only).
     // Drop log4j from the build classpath entirely rather than chase its advisories. plexus-utils is
     // genuinely used by shadow (relocation path selectors), so hold it at a patched release:
-    // plexus-utils 4.0.3 fixes CVE-2025-67030.
+    // CVE-2025-67030 is fixed from plexus-utils 4.0.3 on.
     configurations.classpath {
         exclude group: 'org.apache.logging.log4j'
     }
     dependencies {
         constraints {
-            classpath('org.codehaus.plexus:plexus-utils:4.0.3') {
+            classpath('org.codehaus.plexus:plexus-utils:4.1.0') {
                 because 'CVE-2025-67030: directory traversal in extractFile, fixed in plexus-utils 4.0.3'
             }
         }
