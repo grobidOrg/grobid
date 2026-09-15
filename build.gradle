@@ -1,3 +1,23 @@
+buildscript {
+    // The shadow plugin (8.3.x is the last non-major line; 8.3.11 pins the same versions) puts
+    // log4j 2.25.3 and plexus-utils 4.0.2 on the build classpath. Both have patch releases fixing
+    // open advisories: log4j-core 2.25.4 (CVE-2026-34477, CVE-2026-34478, CVE-2026-34480),
+    // log4j-api 2.25.5 (CVE-2026-49844) and plexus-utils 4.0.3 (CVE-2025-67030). Hold them there.
+    dependencies {
+        constraints {
+            classpath('org.apache.logging.log4j:log4j-core:2.25.5') {
+                because 'CVE-2026-34477, CVE-2026-34478, CVE-2026-34480: fixed in log4j-core 2.25.4'
+            }
+            classpath('org.apache.logging.log4j:log4j-api:2.25.5') {
+                because 'CVE-2026-49844: fixed in log4j-api 2.25.5'
+            }
+            classpath('org.codehaus.plexus:plexus-utils:4.0.3') {
+                because 'CVE-2025-67030: directory traversal in extractFile, fixed in plexus-utils 4.0.3'
+            }
+        }
+    }
+}
+
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '2.4.10' apply false
     id 'com.gradleup.shadow' version '8.3.10' apply false
@@ -223,6 +243,17 @@ subprojects {
         implementation "org.apache.httpcomponents:httpclient:4.5.14"
         implementation "black.ninia:jep:4.3.1"
         implementation 'com.github.pemistahl:lingua:1.2.2'
+        // lingua 1.2.2 (its latest release) depends on moshi 1.13.0, which brings okio 2.10.0
+        // (CVE-2023-3635, fixed in okio 3.4.0). moshi 1.15.2, same major line, moves to okio 3.7.0;
+        // moshi-kotlin is kept at the same version as moshi.
+        constraints {
+            implementation('com.squareup.moshi:moshi:1.15.2') {
+                because 'CVE-2023-3635: okio < 3.4.0 via moshi 1.13.0; moshi 1.15.2 brings okio 3.7.0'
+            }
+            implementation('com.squareup.moshi:moshi-kotlin:1.15.2') {
+                because 'keep moshi-kotlin aligned with moshi'
+            }
+        }
 
         implementation "com.fasterxml.jackson.core:jackson-core:2.21.5"
         implementation "com.fasterxml.jackson.core:jackson-databind:2.21.5"
