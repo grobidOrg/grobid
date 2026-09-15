@@ -1,16 +1,15 @@
 buildscript {
-    // The shadow plugin (8.3.x is the last non-major line; 8.3.11 pins the same versions) puts
-    // log4j 2.25.3 and plexus-utils 4.0.2 on the build classpath. Both have patch releases fixing
-    // open advisories: log4j-core 2.25.4 (CVE-2026-34477, CVE-2026-34478, CVE-2026-34480),
-    // log4j-api 2.25.5 (CVE-2026-49844) and plexus-utils 4.0.3 (CVE-2025-67030). Hold them there.
+    // The shadow plugin (8.3.x is the last non-major line) puts log4j and plexus-utils on the build
+    // classpath. GROBID itself logs through slf4j/logback and never uses log4j; shadow only needs it
+    // for Log4j2PluginsCacheFileTransformer, which this build does not apply (mergeServiceFiles only).
+    // Drop log4j from the build classpath entirely rather than chase its advisories. plexus-utils is
+    // genuinely used by shadow (relocation path selectors), so hold it at a patched release:
+    // plexus-utils 4.0.3 fixes CVE-2025-67030.
+    configurations.classpath {
+        exclude group: 'org.apache.logging.log4j'
+    }
     dependencies {
         constraints {
-            classpath('org.apache.logging.log4j:log4j-core:2.25.5') {
-                because 'CVE-2026-34477, CVE-2026-34478, CVE-2026-34480: fixed in log4j-core 2.25.4'
-            }
-            classpath('org.apache.logging.log4j:log4j-api:2.25.5') {
-                because 'CVE-2026-49844: fixed in log4j-api 2.25.5'
-            }
             classpath('org.codehaus.plexus:plexus-utils:4.0.3') {
                 because 'CVE-2025-67030: directory traversal in extractFile, fixed in plexus-utils 4.0.3'
             }
