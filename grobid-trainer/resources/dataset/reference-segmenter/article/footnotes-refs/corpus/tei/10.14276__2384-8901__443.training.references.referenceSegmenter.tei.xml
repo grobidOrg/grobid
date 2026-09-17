@@ -1,0 +1,202 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.14276__2384-8901__443">
+    <titleStmt>
+      <title level="a">Flaws, Old and New, of Economic Governance in Europe</title>
+      <author>
+        <persName>
+          <forename>Christian</forename>
+          <surname>Joerges</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Cultura giuridica e diritto vivente</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2015</date>
+      <idno type="DOI">10.14276/2384-8901/443</idno>
+      <ptr target="http://ojs.uniurb.it/index.php/cgdv/article/view/443"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Christian Joerges. (2015). Flaws, Old and New, of Economic Governance in Europe. Cultura giuridica e diritto vivente. DOI: 10.14276/2384-8901/443</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Flaws, Old and New, of Economic Governance in Europe</title>
+          <author>
+            <persName>
+              <forename>Christian</forename>
+              <surname>Joerges</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Cultura giuridica e diritto vivente</title>
+          <imprint>
+            <date when="2015">2015</date>
+            <publisher>Cultura giuridica e diritto vivente</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.14276/2384-8901/443</idno>
+        <ptr target="http://ojs.uniurb.it/index.php/cgdv/article/view/443"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:49:55.274148Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">fd543f4</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-17T17:49:55.274148Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-18T12:29:59.841Z" status="unfinished" who="#schulze">
+      <note type="label">v4 (schulze)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-03-18T13:10:08.123Z" status="draft" who="#schulze">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-03-20T06:34:57.672Z" status="unfinished" who="#li">
+      <note type="label">2. Mengjiao</note>
+      <desc>2.Pass</desc>
+    </change>
+    <change when="2026-03-20T07:35:26.098Z" status="unfinished" who="#li">
+      <desc>2.Pass</desc>
+    </change>
+    <change when="2026-03-23T07:25:39.580Z" status="checked" who="#li">
+      <desc>2.Pass finished</desc>
+    </change>
+    <change when="2026-04-06T09:50:23.577Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-06T10:05:43.170Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> E.g., The interview "Ora in Europa il populismo sta conquistando anche i governi", available at:<lb/> http://www.repubblica.it/esteri/2014/12/02/news/habermas_ora_in_europa_il_populismo_sta_conqui<lb/> stando_anche_i_governi-101916768/Repubblica; </bibl>
+          <bibl>"Una partita a poker per i posti di potere ma così<lb/> l'Europa sarà colpita al cuore", La Repubblica, 31 May 2014, available at:<lb/> http://www.repubblica.it/esteri/2014/05/31/news/jrgen_habermas_una_partita_a_poker_per_i_posti_<lb/> di_potere_ma_cos_l_europa_sar_colpita_al_cuore-87728583/; </bibl>
+          <bibl>"Più democrazia, meno mercati<lb/> finanziari", La Repubblica, 19 March 2012, available at: http://temi.repubblica.it/micromega-<lb/>online/europa-habermas-piu-democrazia-meno-mercati-finanziari, etc., etc.<lb/> </bibl>
+        <bibl><label>2</label> U. BECK, German Europe, Cambridge, Polity Press, 2013, VII.<lb/> </bibl>
+        <bibl><label>3</label> C. JOERGES and S. GIUBBONI, "Diritto e politica nella crisi europea", (2013) 31 Rivista critica del diritto<lb/> privato, 343-367; </bibl>
+          <bibl>a co-authored essay is a nice step, but not yet what I envisage.<lb/> </bibl>
+        <bibl><label>4</label> A. BOLAFFI, Cuore Tedesco. Il modello Germania, l'Italia e la crisi europea, Roma, Donzelli Editore, 2013<lb/> [Deutsches Herz. Das Modell Deutschland und die europäische Krise, Stuttgart, Klett-Cotta, 2014].<lb/> </bibl>
+        <bibl><label>5</label> See C. OFFE, Europe Entrapped, Cambridge, Polity Press, 2015, 90-108.<lb/> </bibl>
+        <bibl><label>6</label> See U. MADER, "Die Wirtschaft ist das Schicksal!' Walther Rathenau als Reichsminister 1921 und 1922",<lb/> WRG-Mitteilungen 2002, available at: www.waltherrathenau.de/fileadmin/Material/Mitteilungen/WRG-<lb/>Mitteilungen-2002.pdf.<lb/> </bibl>
+        <bibl><label>7</label> K. POLANYI, The Great Transformation: The Political and Economic Origins of Our Time [1944], Boston MA,<lb/> Beacon Press, 1957.<lb/> </bibl>
+        <bibl><label>8</label> P.A. HALL and D. SOSKICE (eds), Varieties of Capitalism: The Institutional Foundations of Comparative<lb/> Advantage, Oxford, Oxford University Press, 2005.<lb/> </bibl>
+        <bibl><label>9</label> T. IVERSEN and D. SOSKICE, "A Structural-Institutional Explanation of the Eurozone Crisis",<lb/> Cambridge MA, Harvard University, Department of Government.<lb/> </bibl>
+        <bibl><label>10</label> W. ABELSHAUSER, "Europa in Vielfalt einigen. Eine Denkschrift", available at: http://wwwhomes.uni-<lb/>bielefeld.de/wabelsha/Denkschrift.pdf; </bibl>
+          <bibl>see, also, W. ABELSHAUSER, Kulturkampf: Der deutsche Weg in die<lb/> Neue Wirtschaft und die amerikanische Herausforderung, Berlin, Kadmos, 2003; </bibl>
+          <bibl>id., D. GILGEN and A.<lb/> LEUTZSCH (eds), Kulturen der Weltwirtschaft, Göttingen, Vandenhoek und Ruprecht, 2013.<lb/> </bibl>
+        <bibl><label>11</label> G. MAJONE, Rethinking the Union of Europe Post-crisis, Cambridge, Cambridge University Press, 2014.<lb/> </bibl>
+        <bibl><label>12</label> C. JOERGES, "Unity in Diversity as Europe's Vocation and Conflicts Law as Europe's Constitutional<lb/> Form", in R. NICKEL and A. GREPPI (eds), The Changing Role of Law in the Age of Supra-and Transnational<lb/> Governance,<lb/> Baden-Baden,<lb/> Nomos<lb/> Verlag,<lb/> 2014,<lb/> 125-176,<lb/> also<lb/> available<lb/> at:<lb/> http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1723249; </bibl>
+          <bibl>idem, "Conflicts-Law Constitutionalism:<lb/> Ambitions and Problems", in M. CREMONA, P. HILPOLD, N. LAVRANOS, S.S. SCHNEIDER and A.R.<lb/> ZIEGLER (eds), Reflections on the Constitutionalisation of International Economic Law: Liber Amicorum for Ernst-<lb/>Ulrich Petersmann, Leiden, Brill/Nijhoff, 2014, 111-138, also at:<lb/> http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2182092.<lb/> </bibl>
+        <bibl><label>13</label> See his "Wiederherstellung des Privatrechts", (1946) Süddeutsche Juristenzeitung, 1 et seq.<lb/> </bibl>
+        <bibl><label>14</label> W. HALLSTEIN, Die Europäische Gemeinschaft, 5th ed., Düsseldorf, Econ, 1979, 33.<lb/> </bibl>
+
+        <bibl type="footnote"><label>15</label> An anecdote may explain my hesitation to search for a translation: "Ordnungspolitik" was the German<lb/> name of Working Group VI in the European Convention in 2003. The English name was "Economic<lb/> Governance". Was this an innovative translation? Not really. It was the Convention Secretariat that was<lb/> responsible for the introduction of the term, in which someone remembered the fierce controversies<lb/> between "Ordnungspolitik" and "industrial policy" in the Maastricht Intergovernmental Conference in<lb/> 1991 -a case of "linguistic-discursive path-dependency", according to Andreas Maurer, which confirms<lb/> that the German notion is resistant to translation.<lb/> </bibl>
+
+        <bibl><label>16</label> R. DEHOUSSE and J.H.H. WEILER, "The Legal Dimension", in W. WALLACE (ed), The Dynamics of<lb/> European Integration, London, Pinter, 1990, 242-60, at 243. </bibl>
+          <bibl>On this legacy, see D. AUGENSTEIN, "Integration<lb/> through Law" Revisited: The Making of the European Polity, Farnham, Ashgate, 2012.<lb/> </bibl>
+          <bibl><label>17</label> See the re-construction in K.W. NÖRR, Die Republik der Wirtschaft. Teil I. Von der Besatzungszeit bis zur<lb/> Großen Koalition, Tübingen, Mohr Siebeck, 1999, passim. </bibl>
+          <bibl>The reference to the legal validity of the<lb/> constitutional "Sozialstaatsgebot" usually recalls the seminal Abendroth/Forsthoff debate, re-constructed,<lb/> e.g., in C. JOERGES, "The Rechtsstaat and Social Europe: How a Classical Tension Resurfaces in the<lb/> European Integration Process", (2010) 9 Comparative Sociology, 65-85.<lb/> </bibl>
+        <bibl><label>18</label> Bundesverfassungsgericht, Judgment of 20 July 1954, Investitionshilfegesetz, BVerfGE 5, 7 ff.<lb/> </bibl>
+          <bibl><label>19</label> BVerfG 50, 290, unfortunately never translated.<lb/> </bibl>
+          <bibl><label>20</label> Judgment of 12 October 1993, Brunner v European Union Treaty, (1994) 57 CMLR, 1.<lb/> </bibl>
+        <bibl><label>21</label> See, e.g., G. MAJONE, Rethinking the Union, n. 11 above (passim); </bibl>
+<bibl>F.W. SCHARPF, Community and Autonomy.<lb/> Institutions, Policies and Legitimacy in Multilevel Europe, Frankfurt/New York: Campus Verlag, 2010.<lb/> </bibl>
+        <bibl><label>22</label> See, for an early and still valuable collection of pertinent analyses, R. DEHOUSSSE (ed), Europe after<lb/> Maastricht: An Ever Closer Union?, Munich, C.H. Beck, 1994.<lb/> </bibl>
+        <bibl><label>23</label> See J.H.H. WEILER, "Does Europe Need a Constitution? Reflections on Demos, Telos and the German<lb/> Maastricht Decision", (1995) 1 European Law Journal, 219-258.<lb/> </bibl>
+        <bibl><label>24</label> On the intense controversies in Germany over the common currency at the time of its introduction,<lb/> see, recently, F. HEINEMANN, "Zwischen 'Kernschmelze' und 'Fass ohne Boden' -zum Dissens<lb/> deutscher Ökonomen in der Schuldenkrise", (2013) 60 Zeitschrift für Politikwissenschaft, 207-219.<lb/> </bibl>
+        <bibl><label>25</label> "Not kennt keine Gebot" (necessity knows no rules), Neue Züricher Zeitung, 21 June 2010, available at:<lb/> http://www.nzz.ch/nachrichten/kultur/literatur_und_kunst/kennt_die_europaeische_not_kein_gebot_1<lb/> .6182412.html.<lb/> </bibl>
+          <bibl><label>26</label> Decision of 31 March 1998 -2 BvR 1877/97 und 2 BvR 50/98 -available at:<lb/> http://www.bverfg.de/entscheidungen/rs19980331_2bvr187797en.html.<lb/> </bibl>
+        <bibl><label>27</label> See, in more detail, C. JOERGES, "The Market without a State? States without Markets? Two Essays on<lb/> the Law of the European Economy", EUI Working Paper Law 1/96, San Domenico di Fiesole, 1996,<lb/> available at: http://eiop.or.at/eiop/texte/1997-019 and -020.htm.<lb/> </bibl>
+          <bibl><label>28</label> Note 18 above.<lb/> </bibl>
+          <bibl><label>29</label> Note 19 above.<lb/> </bibl>
+        <bibl><label>30</label> This is the core assumption of "The Idea of a Three-dimensional Conflicts Law as Constitutional<lb/> Form", in: C. JOERGES and E.-U. PETERSMANN (eds.), Constitutionalism, Multilevel Trade Governance and Social<lb/> Regulation, Oxford-Portland OR, Hart Publishing, 2011, 2nd ed., 413-455.<lb/> </bibl>
+        <bibl><label>31</label> "Council Regulation (EC) 1467/97: On speeding up and clarifying the implementation of the excessive<lb/> deficit procedure", OJ L 209, 2.8.1997, 1.<lb/> </bibl>
+        <bibl><label>32</label> For more detail on the following, see C. JOERGES, "What is left of the European Economic<lb/> Constitution? A Melancholic Eulogy", (2005) 30 European Law Review, 461-489, at 476-478.<lb/> </bibl>
+        <bibl><label>33</label> S. FABBRINI, "The Euro Crisis and its Constitutional Implications", in S. CHAMPEAU, C. CLOSA, D.<lb/> INNERARITY and M. POIARES MADURO (eds), The Future of Europe. Democracy, Legitimacy and Justice After the<lb/> Euro Crisis, London-New York, Rowman and Littlefield, 2015, 19-36.<lb/> </bibl>
+        <bibl><label>34</label> KAARLO TUORI and KLAUS TUORI, The Eurozone Crisis. A Constitutional Analysis, Cambridge, Cambridge<lb/> University Press, 2014, 13-60.<lb/> </bibl>
+        <bibl><label>35</label> See K. DYSON, States, Debts and Power. Saints and Sinners in European History and Integration, Oxford,<lb/> Oxford University Press, 2014, 609 ff.<lb/> </bibl>
+        <bibl><label>36</label> What kind of power this "co-ordination" mandate confers is thoroughly discussed by B. BRAAMS,<lb/> Koordinierung als Kompetenzkategorie, Tübingen, Mohr Siebeck, 2013. As she underlines, at 228 ff., even the<lb/> soft powers of recommendations and co-ordination are subject to the rule of law and that their exercise<lb/> must be legalised by an amendment of the TFEU.<lb/> </bibl>
+        <bibl><label>37</label> E.-J. MESTMÄCKER, "Macht-Recht-Wirtschaftsverfassung", (1973) 137 Zeitschrift für das gesamte<lb/> Handelsrecht und Wirtschaftsrecht, 97-118, at 109 ["Power, law and economic constitution", (1973) 11 The<lb/> German Economic Review, 177-192 (1973)].<lb/> </bibl>
+        <bibl><label>38</label> P.A. HALL, "The Political Origins of our Economic Discontents. Contemporary Adjustment Problems<lb/> in Historical Perspective", in M. KAHLER and D.A. LAKE (eds), Politics in the New Hard Times, Ithaca NY,<lb/> Cornell University Press, 2013, 129-149. </bibl>
+          <bibl>For a summary of the argument, see P.A. HALL, "Brother, Can<lb/> You Paradigm?", (2013) 26 Governance: An International Journal of Policy, Administration, and Institutions, 189-<lb/>192.<lb/> </bibl>
+          <bibl><label>39</label> The short story has been retold ad nauseam. For an instructive, if euphemistic, recent summary, see S.<lb/> FERNANDES, "Who Calls the Shots in the Euro Area: 'Brussels' or the Member States?", Notre Europe,<lb/> Policy Paper 111, 15 MAY 2014, available at: http://www.notre-europe.eu/media/emugovernance-<lb/>fernandes-ne-jdi-may14.pdf?pdf=ok. </bibl>
+          <bibl>In more detail, see C. JOERGES, "Europe's Economic Constitution<lb/> in Crisis and the Emergence of a New Constitutional Constellation", (2014) 15 German Law Journal, 985-<lb/>1028, available at: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2179595.<lb/> </bibl>
+        <bibl><label>40</label> All of these acts can be found at a Commission website which is constantly being updated:<lb/> http://ec.europa.eu/economy_finance/publications/legal_texts/compendium2014_en.htm.<lb/> </bibl>
+        <bibl><label>41</label> As is well known, the objections raised by Mr Thomas Pringle, Member of the Irish Parliament, against<lb/> the legality of this amendment were rejected by the CJEU in Case C-370/12 Pringle v Ireland, nyr.<lb/> </bibl>
+        <bibl><label>42</label> Cf., the listing of pertinent requests in M. DAWSON and F. DE WITTE, "Constitutional Balance in the<lb/> EU after the Euro-Crisis", (2013) 76 Modern Law Review, 817-844, at 825-7, notes 33-37.<lb/> </bibl>
+        <bibl><label>43</label> See the intriguing and concerned analysis by M. EVERSON, "The Fault of (European) Law in (Political<lb/> and Social) Economic Crisis," (2013) 24 Law and Critique, 107-129.<lb/> </bibl>
+        <bibl><label>44</label> See, e.g., A. WATT, "Commission Makes a Mockery of Imbalance Procedure", Social Europe Journal of 19<lb/> April 2013, available at: http://www.social-europe.eu/author/andrew-watt.<lb/> </bibl>
+        <bibl><label>45</label> See, e.g., the much cited essay on "The long shadow of ordo-liberalism" is the title of a much-cited<lb/> paper by U. GUÉROT and S. DULLIEN, available at: http://www.ecfr.eu/page/-<lb/>/ECFR49_GERMANY_BRIEF_AW.pdf, the symposium "Critical Exchange on Neoliberalism and<lb/> Europe. Europe and the political philosophy of neoliberalism", (2013) Contemporary Political Theory<lb/> (advance online publication, 6 August 2013), with contributions by T. BIEBRICHER, J. HIEN, N. JABKO<lb/> and A. CHARI and from Italy S. CESARATTO and A. STIRATI, "Germany and the European and Global<lb/> Crises", 39 (2010) International Journal of Political Economy, 56-86. </bibl>
+          <bibl>Unfortunately, all of these contributions<lb/> treat the legal philosophy of ordo-liberalism with benign neglect and fail to mention the harsh critique<lb/> European crisis politics by leading proponants of the ordoliberal legacy; </bibl>
+          <bibl>see, in particular, E.-J.<lb/> Mestmäcker's worried interventions "Der Schamfleck ist die Geldverachtung" (the shaming flaw is the<lb/> disdainfulness of money), in: Frankfurter Allgemeine Zeitung, 18 November 2011, 33; </bibl>
+          <bibl>and<lb/> "Ordnungspolitische Grundlagen einer politischen Union" (foundational principles for the ordering of a<lb/> political union), in Frankfurter Allgemeine Zeitung, 12 November 2012, 12.<lb/> </bibl>
+        <bibl><label>46</label> Böckenförde, note 25 above.<lb/> </bibl>
+        <bibl><label>47</label> Section IV.2.<lb/> </bibl>
+        <bibl><label>48</label> J. HABERMAS, "A Pact for or against Europe?", in U. GUÉROT and J. HÉNARD (eds), What does Germany<lb/> Think about Europe?, European Council on Foreign Relations, Berlin, 83-89.<lb/> </bibl>
+        <bibl><label>49</label> D. CHALMERS, "European Restatements of Sovereignty", LSE Working Paper 10/2013.<lb/> </bibl>
+        <bibl><label>50</label> W. STREECK, Gekaufte Zeit. Die vertagte Krise des demokratischen Kapitalismus, Berlin, Suhrkamp Verlag,<lb/> 2013, Chapter III.<lb/> </bibl>
+        <bibl><label>51</label> C. JOERGES and M. WEIMER, "A Crisis of Executive Managerialism in the EU: No Alternative?", in G.<lb/> DE BÚRCA, C. KILPATRICK and J. SCOTT (eds), Liber Amicorum for David M Trubek, Oxford, Hart<lb/> Publishing, 2014, 295-322, available at http://ssrn.com/abstract=2190362.<lb/> </bibl>
+        <bibl><label>52</label> F.W. SCHARPF, "Political Legitimacy in a Non-optimal Currency Area", MPIfG Discussion Paper<lb/> 12/15, Cologne, 2013.<lb/> </bibl>
+        <bibl><label>53</label> D.M. CURTIN, "Challenging Executive Dominance in European Democracy", Chorley Lecture, London 2013,<lb/> (2014) 77 Modern Law Review, 1-32.<lb/> </bibl>
+        <bibl><label>54</label> G. MAJONE, Rethinking the Union of Europe Post-crisis, note 8 above, 179-207.<lb/> </bibl>
+        <bibl><label>55</label> J.H.H. WEILER, "Europe in Crisis -On 'Political Messianism', 'Legitimacy' and the 'Rule of Law'",<lb/> (2012) Singapore Law Journal, 248-268.<lb/> </bibl>
+        <bibl><label>56</label> M. RUFFERT, "Annotation to Pringle", (2013) 69 Juiristenzeitung, 257-259.<lb/> </bibl>
+        <bibl><label>57</label> C. OFFE, Europe Entrapped, Cambridge: Cambridge: Polity Press, 2015.<lb/> </bibl>
+        <bibl><label>58</label> M.-S. KUO, "The Moment of Schmittian Truth: Conceiving of the State of Exception in the Wake of<lb/> the Financial Crisis", in C. JOERGES and C. GLINSKI (eds), The European Crisis and the Transformation of<lb/> Transnational Governance: Authoritarian Managerialism versus Democratic Governance, Oxford-Portland OR, Hart<lb/> Publishing, 2014, 83-100.<lb/> </bibl>
+        <bibl><label>59</label> K. DYSON, "Sworn to Grim Necessity? Imperfections of European Economic Governance, Normative<lb/> Political Theory, and Supreme Emergency", (2013) 35 Journal of European Integration, 207-222, at 211.<lb/> </bibl>
+        <bibl><label>60</label> See F.A. VON HAYEK, "The Pretence of Knowledge", (1989) 79 The American Economic Review, 3-7.<lb/> </bibl>
+        <bibl><label>61</label> Acórdão No 187/2013, Processo no 2/2013, 5/2013, 8/2013 e 11/2013, Plenário, English translation<lb/> available at: http://www.tribunalconstitucional.pt/tc/en/acordaos/20130187s.html; </bibl>
+          <bibl>A Fischer-Lescano<lb/> has summarised the broad spectre of human rights violations through austerity measures in a pertinent<lb/> study: "Human Rights in Times of Austerity Policy The EU institutions and the conclusion of<lb/> Memoranda of Understanding", available at: http://www.jura.uni-bremen.de/institute/zentrum-fuer-<lb/>europaeische-rechtspolitik/aktuelles.<lb/> </bibl>
+        <bibl><label>62</label> Conflicts-Law Constitutionalism's "second dimension" as elaborated, for example, in the contribution<lb/> cited in note 15 above.<lb/> </bibl>
+        <bibl><label>63</label> (But where danger threatens, that which saves from it also grows) F. HÖLDERLIN, Patmos. Dem<lb/> Landgrafen von Homburg überreichte Handschrift, 1802 (quoted from F. HÖLDERLIN, Werke, Salzburg-Stuttgart,<lb/> Bergland, 1954, 379; </bibl>
+          <bibl>English translation by M. HAMBURGER, in F. HÖLDERLIN, Selected Poems and<lb/> Fragments, London, Penguin Books, 1994, 243).<lb/> </bibl>
+        <bibl><label>64</label> D. RODRIK, The Globalization Paradox: Democracy and the Future of the World Economy, New York-London,<lb/> W.W. Norton, 2011.<lb/> </bibl>
+          <bibl><label>65</label> The Future of European Democracy, Princeton, available at:<lb/> https://www.sss.ias.edu/files/pdfs/Rodrik/Commentary/Future-of-Democracy-in-Europe.pdf.<lb/> </bibl>
+        <bibl><label>66</label> D. RODRIK, ibid., 6.<lb/> </bibl>
+        <bibl><label>67</label> Italy, united for so long, provides a challenging example; </bibl>
+          <bibl>see G. MAJONE, "Strength through Union?<lb/> Not Always: The Case of Italian Unification, 1861 to the present. Ms. Florence 2014 (on file with author).<lb/> </bibl>
+        <bibl><label>68</label> See the works of W. ABELSHAUSER cited in note 10 above, and his The Dynamics of German Industry: The<lb/> German Road toward the New Economy and the American Challenge, Providence-Oxford, Berghahn Books, 2005.<lb/> </bibl>
+        <bibl><label>69</label> See C. JOERGES, "Unity in Diversity", note 12 above.<lb/> </bibl>
+        <bibl><label>70</label> See C. JOERGES and C. GLINSKI (eds), The European Crisis and the Transformation of Transnational<lb/> Governance. Authoritarian Managerialism versus Democratic Governance, Oxford-Portland OR, Hart Publishing,<lb/> 2014.</bibl>
+        </listBibl>
+    </text>
+
+
+</TEI>

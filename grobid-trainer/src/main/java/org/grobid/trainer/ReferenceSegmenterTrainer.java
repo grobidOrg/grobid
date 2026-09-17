@@ -16,6 +16,7 @@
 package org.grobid.trainer;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 import java.util.StringTokenizer;
 
@@ -33,13 +34,36 @@ import org.grobid.trainer.sax.TEIReferenceSegmenterSaxParser;
 public class ReferenceSegmenterTrainer extends AbstractTrainer {
     public static final Logger LOGGER = LoggerFactory.getLogger(ReferenceSegmenterTrainer.class);
 
+    private final GrobidModels.Flavor flavor;
+
     public ReferenceSegmenterTrainer() {
         super(GrobidModels.REFERENCE_SEGMENTER);
+        flavor = null;
+    }
+
+    public ReferenceSegmenterTrainer(GrobidModels.Flavor modelFlavor) {
+        super(GrobidModels.getModelFlavor(GrobidModels.REFERENCE_SEGMENTER, modelFlavor));
+        flavor = modelFlavor;
     }
 
     @Override
     public int createCRFPPData(File corpusPath, File trainingOutputPath) {
         return createCRFPPData(corpusPath, trainingOutputPath, null, 1.0);
+    }
+
+    @Override
+    protected File getCorpusPath() {
+        if (flavor != null) {
+            // Use the flavor's folder path directly for the corpus, because getModelFlavor
+            // may have fallen back to the base model (when no trained model file exists yet),
+            // which would resolve to the wrong corpus directory.
+            String flavorFolder = "reference-segmenter/" + flavor.getLabel();
+            File theFile = new File(getFilePath2Resources(), "dataset/" + flavorFolder + "/corpus");
+            if (theFile.exists()) {
+                return theFile;
+            }
+        }
+        return super.getCorpusPath();
     }
 
     @Override
@@ -84,7 +108,7 @@ public class ReferenceSegmenterTrainer extends AbstractTrainer {
             Writer trainingWriter = null;
             if (trainingOutputPath != null) {
                 trainingOS = new FileOutputStream(trainingOutputPath);
-                trainingWriter = new OutputStreamWriter(trainingOS, "UTF8");
+                trainingWriter = new OutputStreamWriter(trainingOS, StandardCharsets.UTF_8);
             }
 
             // the file for writing the evaluation data
@@ -92,7 +116,7 @@ public class ReferenceSegmenterTrainer extends AbstractTrainer {
             Writer evaluationWriter = null;
             if (evaluationOutputPath != null) {
                 evaluationOS = new FileOutputStream(evaluationOutputPath);
-                evaluationWriter = new OutputStreamWriter(evaluationOS, "UTF8");
+                evaluationWriter = new OutputStreamWriter(evaluationOS, StandardCharsets.UTF_8);
             }
 
             System.out.println("training data under: " + trainingOutputPath);
@@ -234,6 +258,6 @@ public class ReferenceSegmenterTrainer extends AbstractTrainer {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        AbstractTrainer.trainAndEvaluate(ReferenceSegmenterTrainer::new);
+        AbstractTrainer.trainAndEvaluate(args, ReferenceSegmenterTrainer::new, ReferenceSegmenterTrainer::new);
     }
 }
