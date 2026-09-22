@@ -248,7 +248,7 @@ subprojects {
         implementation 'org.apache.commons:commons-text:1.15.0'
         implementation "com.google.guava:guava:33.6.0-jre"
         implementation "org.apache.httpcomponents:httpclient:4.5.14"
-        implementation "black.ninia:jep:4.3.1"
+        implementation "black.ninia:jep:4.3.2"
         implementation 'com.github.pemistahl:lingua:1.2.2'
         // lingua 1.2.2 (its latest release) depends on moshi 1.13.0, which brings okio 2.10.0
         // (CVE-2023-3635, fixed in okio 3.4.0). moshi 1.15.2, same major line, moves to okio 3.7.0;
@@ -356,7 +356,7 @@ project("grobid-core") {
 
         implementation "joda-time:joda-time:2.14.3"
         implementation "org.apache.lucene:lucene-analyzers-common:4.10.4"
-        implementation 'black.ninia:jep:4.3.1'
+        implementation 'black.ninia:jep:4.3.2'
         implementation 'org.apache.opennlp:opennlp-tools:2.5.11'
 
         // NOTE: jruby-complete bundles a vulnerable BouncyCastle (CVE-2026-5598) under its gem stdlib,
