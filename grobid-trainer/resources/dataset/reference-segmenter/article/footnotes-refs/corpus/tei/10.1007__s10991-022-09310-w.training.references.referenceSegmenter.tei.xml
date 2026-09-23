@@ -1,0 +1,161 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1007__s10991-022-09310-w">
+    <titleStmt>
+      <title level="a">The Significance of R(BG and Anor) v Suffolk CC (2021): Meeting ‘Eligible Need[s]’ in Social Care?</title>
+      <author>
+        <persName>
+          <forename>Alice</forename>
+          <surname>Diver</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Belinda</forename>
+          <surname>Schwehr</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Springer Science and Business Media LLC</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2022</date>
+      <idno type="DOI">10.1007/s10991-022-09310-w</idno>
+      <ptr target="https://doi.org/10.1007/s10991-022-09310-w"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Alice Diver, Belinda Schwehr. (2022). The Significance of R(BG and Anor) v Suffolk CC (2021): Meeting ‘Eligible Need[s]’ in Social Care?. Liverpool Law Review, 43(3), 539-550. DOI: 10.1007/s10991-022-09310-w</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">The Significance of R(BG and Anor) v Suffolk CC (2021): Meeting ‘Eligible Need[s]’ in Social Care?</title>
+          <author>
+            <persName>
+              <forename>Alice</forename>
+              <surname>Diver</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Belinda</forename>
+              <surname>Schwehr</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Liverpool Law Review</title>
+          <imprint>
+            <biblScope unit="volume">43</biblScope>
+            <biblScope unit="issue">3</biblScope>
+            <biblScope unit="page" from="539" to="550">539-550</biblScope>
+            <date when="2022">2022</date>
+            <publisher>Springer Science and Business Media LLC</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.1007/s10991-022-09310-w</idno>
+        <ptr target="https://doi.org/10.1007/s10991-022-09310-w"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-05-14T19:01:25.010327Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-62-gdd0608bb6</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-14T19:01:25.010327Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-14T19:01:51.685Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-05-15T05:53:32.854Z" status="draft" who="#cboulanger">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-06-08T12:15:47.577Z" status="in-review" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-06-08T12:23:14.059Z" status="checked" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> EWHC 3368 (Admin).<lb/> </bibl>
+      <bibl><label>2</label> ibid. at 106, which noted that those 'aspects of well-being which are of particular relevance to the<lb/> issues in this case are:"(b) physical and mental health and emotional well-being"."(f) participation in …<lb/> recreation"."(g) domestic, family and personal relationships." (emphasis added).'</bibl>
+      <bibl>See also 2(2)(g) of the<lb/> 2015 Regulations which concerns 'Developing or Maintaining Family or other Personal Relationships.'<lb/> </bibl>
+      <bibl><label>4</label> Suffolk above, note i, at 9.<lb/> </bibl>
+      <bibl><label>5</label> See further B Schwehr, 'Where councils are going wrong in their implementation of the Care Act' Com-<lb/>munity Care(2018) https://www.communitycare.co.uk/2018/06/08/councils-going-wrong-implementa-<lb/>tion-care-act/ (last visited 2nd April, 2022). Schwehr argues further that 'In legal terms… loose language<lb/> could indicate predetermination or a fetter of assessment or care planning discretion; it could indicate<lb/> a disregard of the principle that resources are relevant to how needs must be met, but not to whether.'<lb/> </bibl>
+      <bibl><label>6</label> Suffolk above note i, at 142.<lb/> </bibl>
+      <bibl><label>7</label> ibid.<lb/> </bibl>
+      <bibl><label>8</label> ibid. at 143.<lb/> </bibl>
+      <bibl><label>9</label> ibid. at 102.<lb/> </bibl>
+      <bibl><label>10</label> ibid. at 103. The duty is broadly set out in s.1(2) of the 2014 Act, with further explanation contained in<lb/> the 2015 Statutory Guidance (paragraphs 1.1 to 1.11) (issued under s. 78 of The Care Act 014) (https://<lb/> www.gov.uk/government/publications/care-act-statutory-guidance/care-and-support-statutory-guidance,<lb/> last visited 29th March, 2022).<lb/> </bibl>
+      <bibl><label>11</label> ibid. at 104.<lb/> </bibl>
+      <bibl><label>12</label> ibid. at 105 (in respect of all the aspects of well-being set out in Sect. 1(2) CA 2014).<lb/> </bibl>
+      <bibl><label>13</label> ibid at 135<lb/> </bibl>
+      <bibl><label>14</label> ibid. at 158.<lb/> </bibl>
+      <bibl><label>15</label> ibid. at 53.<lb/> </bibl>
+      <bibl><label>16</label> s. 1 (2) aims to define well-being as relating to any of the following: (a) personal dignity (including<lb/> treatment of the individual with respect); (b) physical and mental health and emotional well-being; (c)<lb/> protection from abuse and neglect; (d) control by the individual over day-to-day life (including over care<lb/> and support, or support, provided to the individual and the way in which it is provided); (e) participation<lb/> in work, education, training or recreation; (f) social and economic well-being; (g) domestic, family and<lb/> personal relationships; (h) suitability of living accommodation; (i) the individual's contribution to society<lb/> (emphases added).<lb/> </bibl>
+      <bibl><label>17</label> See for example Harrison [2009] EWHC 574 (Admin) which made it clear that the definition of 'ser-<lb/>vices' within the NHS legislation did not cover the concept of cash: separate legislation specifically pro-<lb/>viding for the provision of personal health budgets was therefore required.<lb/> </bibl>
+      <bibl><label>18</label> https://www.legislation.gov.uk/ukdsi/2014/9780111124185 (last visited March 31st 2022).<lb/> </bibl>
+      <bibl><label>19</label> Statutory Guidance (2015) above, note x.<lb/> </bibl>
+      <bibl><label>20</label> Suffolk, above, note I, para 110.<lb/> </bibl>
+      <bibl><label>21</label> As Clements L., et al. 'Community Care and The Law (2019) Legal Action Group have also observed,<lb/> during the Care and Support Bill's drafting the scrutinising Committee had expressed the hope that the<lb/> follow-up Guidance would 'make clear that the list is not intended to limit the ways in which a local<lb/> authority might meet any eligible needs or agreed outcomes, removing any possible ambiguity on that<lb/> point' (at para 170). Arguably, the Council's approach in this case disregards this.<lb/> </bibl>
+      <bibl><label>22</label> See further The 2015 Guidance at para 1. 8. 'A local authority can promote a person's wellbeing in many<lb/> ways. How this happens will depend on the circumstances, including the person's needs, goals and wishes,<lb/> and how these impact on their wellbeing. There is no set approach -a local authority should consider each<lb/> case on its own merits, consider what the person wants to achieve, and how the action which the local<lb/> authority is taking may affect the wellbeing of the individual.'<lb/> </bibl>
+      <bibl><label>23</label> Suffolk, above note i, at 114<lb/> </bibl>
+      <bibl><label>24</label> ibid. at 110.<lb/> </bibl>
+      <bibl><label>25</label> ibid. at 112.<lb/> </bibl>
+      <bibl><label>26</label> See further para 11.41, of the 2015 Guidance: 'This may be, for example, a course of relaxation classes,<lb/> training on stress management, gym or leisure centre membership, adult learning, development of new<lb/> work skills or refreshing existing skills (so they might be able to stay in paid employment alongside caring<lb/> or take up return to paid work), pursuit of hobbies such as the purchase of a garden shed, or purchase of a<lb/> laptop so they can stay in touch with family and friends."<lb/> </bibl>
+      <bibl><label>27</label> It is noteworthy too that things such as 'adaptations', 'equipment', 'travel' and 'holidays' (despite being<lb/> included within The Chronically Sick and Disabled Persons Act 1970) were seen -somewhat conten-<lb/>tiously -as having been left out by the scrutinising Committee tasked with considering the draft Care and<lb/> Support Bill: the ministerial intent was apparently consolidatory here, not exclusionary.<lb/> </bibl>
+      <bibl><label>28</label> As Clements (2019, para 8.90), points out also, the National Assistance Act 1948 was aimed at the<lb/> abolition of workhouses and the rather 'joyless oppressive Poor Law culture' that still then predominated<lb/> within the U.K. Likewise, the notion of having 'packages' of care (within the 1990 Community Care<lb/> reforms) could be seen as not dissimilar to the concept of the 'package holiday' which was then gaining<lb/> in popularity.<lb/> </bibl>
+      <bibl><label>29</label> Suffolk, above note i, at 121.<lb/> </bibl>
+      <bibl><label>30</label> Schwehr (2018), above note v, argues also that CP v NE Lincolnshire Council(2018) EWHC 220<lb/> (Admin), 'a judicial review challenge against the provision offered to a 22-year-old woman with complex<lb/> and multiple disabilities reiterates that an indicative allocation cannot be set on the assumption that infor-<lb/>mal carers' ongoing willingness can be taken for granted.'<lb/> </bibl>
+      <bibl><label>31</label> M King (Response to Question 63): Oral evidence session: Protecting human rights in care settings,<lb/> HC 714 (Joint Parliamentary Human Rights Committee) Wednesday 23 March 2022. The inquiry is tasked<lb/> with looking 'at human rights concerns in care settings in England, highlighting areas in which the human<lb/> rights of patients, older people and others living with long-term disabilities, including learning disabili-<lb/>ties and autism, are currently undermined or at risk… The inquiry will cover people living in residential<lb/> care homes, hospitals and supported housing, as well as those receiving social care services in their own<lb/> homes' (emphasis added). https://committees.parliament.uk/work/1495/protecting-human-rights-in-care-<lb/>settings/ (last visited 3rd April, 2022).<lb/> </bibl>
+      <bibl><label>32</label> ibid. at 4.<lb/> </bibl>
+      <bibl><label>33</label> R (D) v Worcestershire CC [2013] EWHC 2490.<lb/> </bibl>
+      <bibl><label>34</label> See for example Northern Ireland Human Rights Commission 'NIHRC consultation response to<lb/> Department of Health's Regional Policy on the use of Restrictive Practices in Health and Social Care Set-<lb/>tings' (2021) https://nihrc.org/publication/detail/nihrc-consultation-response-to-department-of-healths-<lb/>regional-policy-on-the-use-of-restrictive-practices-in-health-and-social-care-settings (last visited 25th<lb/> March 2022).<lb/> </bibl>
+      <bibl><label>35</label> ibid.<lb/> </bibl>
+      <bibl><label>36</label> As Whitehouse (2020) recently predicted, 'The reality of the situation is that adults with care needs may<lb/> see a reduction or even complete removal of the care they have been receiving so far.' (https://www.bihr.<lb/> org.uk/blog/hr-health-social-care-from-covid-19-and-beyond last visited 22nd March 2022).<lb/> </bibl>
+      <bibl><label>37</label> Mc Donald v United Kingdom (2014) 4241/12; (https://hudoc.echr.coe.int/eng) (last visited 28th March<lb/> 2022). In respect of her earlier care, the court did however find a violation of Article 8 ECHR, awarding<lb/> only pecuniary damages, however.<lb/> </bibl>
+      <bibl><label>38</label> ibid., at 53.<lb/> </bibl>
+      <bibl><label>39</label> ibid. at 55.<lb/> </bibl>
+
+        References<lb/>
+
+      <bibl>Barclay, L. 2018. 'Disability with Dignity: Justice, Human Rights and Equal Status'. Routledge: New<lb/> York.<lb/> </bibl>
+      <bibl>Clements, L., et al. 2019. 'Community Care and The Law (. Legal Action Group.<lb/> </bibl>
+      <bibl>Kadivar, L., et al. 2018. 'Concept Analysis of Human Dignity in Patient Care: Rodgers' Evolutionary<lb/> Approach'. Journal of Medical Ethics and History of Medicine 11 (4): 1-11.<lb/> </bibl>
+      <bibl>Kelly, B. 2017. 'Dignity, Mental Health and Human Rights: Coercion and the Law'. New York: Routledge.<lb/> Northern Ireland Human Rights Commission 'NIHRC consultation response to Department of Health's<lb/> Regional Policy on the use of Restrictive Practices in Health and Social Care Settings' (2021).<lb/> </bibl>
+      <bibl>Schwehr, B. 'Where councils are going wrong in their implementation of the Care Act' Community Care<lb/> (2018).<lb/> </bibl>
+      <bibl>Whitehouse, J '. 2020. The Value of Human Rights in Health and Social Care: from Covid-19 and beyond'.<lb/> British Institute of Human Rights (Blog).</bibl>
+
+    </listBibl>
+  </text>
+</TEI>

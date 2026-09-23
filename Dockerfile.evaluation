@@ -87,6 +87,8 @@ COPY --from=builder /opt/grobid .
 RUN python3 -m pip install pip --upgrade --no-cache-dir
 
 # install DeLFT
+# pin lmdb to avoid breaking change in 2.0.0 (duplicate env open rejection)
+RUN pip3 install --no-cache-dir "lmdb<2.0.0"
 RUN pip3 install --no-cache-dir delft==0.4.6
 
 # link the data directory to /data

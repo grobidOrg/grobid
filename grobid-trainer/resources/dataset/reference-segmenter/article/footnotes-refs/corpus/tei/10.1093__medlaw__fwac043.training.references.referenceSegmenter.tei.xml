@@ -1,0 +1,257 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1093__medlaw__fwac043">
+    <titleStmt>
+      <title level="a">Inequality by design: The politics behind forced migrants’ access to healthcare</title>
+      <author>
+        <persName>
+          <forename>Mechthild</forename>
+          <surname>Roos</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Oxford University Press (OUP)</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2022</date>
+      <idno type="DOI">10.1093/medlaw/fwac043</idno>
+      <ptr target="https://doi.org/10.1093/medlaw/fwac043"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Mechthild Roos. (2022). Inequality by design: The politics behind forced migrants’ access to healthcare. Medical Law Review, 30(4), 658-679. DOI: 10.1093/medlaw/fwac043</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Inequality by design: The politics behind forced migrants’ access to healthcare</title>
+          <author>
+            <persName>
+              <forename>Mechthild</forename>
+              <surname>Roos</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Medical Law Review</title>
+          <imprint>
+            <biblScope unit="volume">30</biblScope>
+            <biblScope unit="issue">4</biblScope>
+            <biblScope unit="page" from="658" to="679">658-679</biblScope>
+            <date when="2022">2022</date>
+            <publisher>Oxford University Press (OUP)</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.1093/medlaw/fwac043</idno>
+        <ptr target="https://doi.org/10.1093/medlaw/fwac043"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-05-19T14:17:25.701347Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-62-gdd0608bb6</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-19T14:17:25.701347Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-19T14:18:22.490Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-05-19T15:06:35.233Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-08T15:44:02.122Z" status="in-review" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-08T15:48:33.265Z" status="in-review" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-08T15:51:19.787Z" status="in-review" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-08T15:52:46.651Z" status="in-review" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-08T16:00:07.053Z" status="in-review" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-08T16:03:46.237Z" status="checked" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label><lb/> I use the term 'forced migrants' to include all persons seeking protection in a country other than that of their origin,<lb/> both before and after a host country has assigned (or rejected) a legal status of protection and residence to them, with different<lb/> concomitant sets of rights and claims. I consider these persons as belonging to one societal group in the context of this article,<lb/> mainly because 'migrants' legal status is not always clear to them or to [health] care providers': H Bradby, 'Refugee and migrant<lb/> health: A perspective from weden' in A Kra ¨mer and F Fischer (eds), Refugee Migration and Health. Challenges for Germany and<lb/> Europe (Springer Nature 2019) 185-93, 187. I also adopt this approach because these persons are frequently subject to the<lb/> same political as well as societal stigmatisation as 'outsiders', as I explain in this article.<lb/> </bibl>
+
+        <bibl><label>2</label><lb/> I use the term 'incorporation' (rather than the more broadly used term of 'integration') when referring to sets of rules<lb/> and measures regulating and implementing migrants' entry and participation in a host country, its welfare system, economy<lb/> and society. Following, for example, S Castles, 'How nation-states respond to immigration and ethnic diversity' (1995) 21 New<lb/> Community 293-308; </bibl>
+          <bibl>D Sainsbury, Welfare States and Immigrant Rights. The Politics of Inclusion and Exclusion (OUP 2012), in<lb/>-corporation is considered the overarching term for different types and forms of such regulation and implementation (such as<lb/> more restrictive or more liberal measures, creating systems, for example, of inclusion, exclusion, assimilation or pluralism). By<lb/> contrast to the concept of integration, which assumes a long-term/permanent and holistic approach to migrants' residence and<lb/> concomitant rights in a host country, the concept of incorporation presupposes no specific duration of a migrant's stay and<lb/> includes measures of a fragmented, vague and non-comprehensive nature, as well as formal and informal procedures shaping<lb/> migrants' lives in a host country. </bibl>
+          <bibl>See also B Nieswand and H Drotbohm, 'Einleitung: Die reflexive Wende in der<lb/> Migrationsforschung' in B Nieswand and H Drotbohm (eds), Kultur, Gesellschaft, Migration. Die reflexive Wende in der<lb/> Migrationsforschung (Springer 2014) 1-37.<lb/> </bibl>
+
+        <bibl><label>3</label><lb/> See, eg, L Dalingwater and others, 'Policies on marginalized migrant communities during Covid-19: migration manage-<lb/>ment prioritized over population health' (2022) Critical Policy Studies, DOI: 10.1080/19460171.2022.2102046.<lb/> </bibl>
+        <bibl><label>4</label><lb/> M Cacace and J Pundt, 'Einleitung' in J Pundt and M Cacace (eds), Diversita ¨t und gesundheitliche Chancengleichheit<lb/> (Apollon University Press 2019) 13-26, 13.<lb/> </bibl>
+        <bibl><label>5</label><lb/> P Marx and E Naumann, 'Do right-wing parties foster welfare chauvinistic attitudes? A longitudinal study of the 2015<lb/> "refugee crisis" in Germany' (2018) 52 Electoral Studies 111-16, 111.<lb/> </bibl>
+
+        <bibl><label>6</label><lb/> Constitution of the World Health Organization (&lt;https://apps.who.int/gb/bd/PDF/bd47/EN/constitution-<lb/>en.pdf?ua¼1&gt; accessed 3 November 2022).<lb/> </bibl>
+        <bibl><label>7</label><lb/> C Wolf and C Wendt, 'Perspektiven der Gesundheitssoziologie' in C Wendt and C Wolf (eds), Soziologie der<lb/> Gesundheit (VS Verlag fu ¨r Sozialwissenschaften 2006) 9-33, 20.<lb/> </bibl>
+        <bibl><label>8</label><lb/> Indeed, hardly any country in Europe, and none of those examined here, offers the same healthcare access to its citi-<lb/>zens/denizens as to asylum seekers. See, eg, A Kra ¨mer and F Fischer, 'Refugee Health: Public Health Theory and Disease<lb/> Dynamics' 3-18;</bibl> <bibl>I Beauclercq and others, 'Overview of Migration and Health in Europe' 19-37, both in Kra ¨mer and Fischer<lb/> (n 1).<lb/> </bibl>
+        <bibl><label>9</label><lb/> J Butenop and others, 'Future challenges for the public and curative health sector' in Kra ¨mer and Fischer (n 1) 119-<lb/>32; </bibl>
+          <bibl>CA O'Donnell, 'Health care access for migrants in Europe' in DV McQueen (ed) Oxford Research Encyclopedia of Global<lb/> Public Health (Oxford University Press 2018), DOI: 10.1093/acrefore/9780190632366.013.6.<lb/></bibl>
+
+          <bibl><label>10</label><lb/> Bradby (n 1) 189; </bibl>
+          <bibl>J Wenner and others, 'Migrants, refugees, asylum seekers: Use and misuse of labels in public health<lb/> research' in Kra ¨mer and Fischer (n 1) 49-62, 53-54.<lb/> </bibl>
+
+        <bibl><label>11</label><lb/> S Parker, 'Inhibiting integration and strengthening inequality? The effects of UK policymaking on refugees and asylum<lb/> seekers in Wales' (2021) 15 People, Place and Policy 72, 77-78; </bibl>
+          <bibl>K Bozorgmehr and others, 'Health policy and systems<lb/> responses to forced migration: An introduction' in K Bozorgmehr and others (eds), Health Policy and Systems Responses to<lb/> Forced Migration (Springer 2020) 1-14, 3; Bradby (n 1) 190-91.<lb/> </bibl>
+        <bibl><label>12</label><lb/> D Schmalz, 'Verantwortungsteilung im Flu ¨chtlingsschutz: Zu den Problemen "globaler Lo ¨sungen"' 1 (1) (2017)<lb/> Z'Flucht 9-40, 12.<lb/> </bibl>
+        <bibl><label>13</label><lb/> F Bora ¨ng, National Institutions-International Migration. Labour Markets, Welfare States and Immigration Policy (ECPR<lb/> Press/Rowman &amp; Littlefield International 2018) 46.<lb/> </bibl>
+        <bibl><label>14</label><lb/> Contrary to the European Social Charter, the European Convention on Human Rights (ECHR)-while setting the<lb/> larger frame of asylum seekers' and refugees' fundamental rights in the signatory states-contains no express provision on<lb/> healthcare. Nevertheless, there have been several attempts (some successful, some not, and many of them controversial) by<lb/> forced migrants to invoke Articles of the ECHR to avoid refoulement with reference to (threats to) their health and wellbeing,<lb/> notably Articles 2 (the right to life), 3 )the prohibition of torture and inhuman or degrading treatment), and 8 (the right to re-<lb/>spect for private and family life). Examples are discussed in T Spijkerboer, 'Gender, sexuality, asylum and European human<lb/> rights' (2018) 29 Law and Critique 221-39; </bibl>
+          <bibl>V Stoyanova, 'How exceptional must "very exceptional" be? Non-Refoulement,<lb/> socio-economic deprivation, and Paposhvili v Belgium' (2017) 29 International Journal of Refugee Law 580-616; contributions<lb/> by J Ruiz Ramos, M Ineli-Ciger and C D ıaz Morgado in D Moya and G Milios (eds), Aliens before the European Court of<lb/> Human Rights. Ensuring Minimum Standards of Human Rights Protection (Brill Nijhoff 2021)).The analysis underlying this arti-<lb/>cle could not, however, trace any impact of these instances of individual challenges to national asylum decisions with reference<lb/> to health rights on legislation and policy-making concerning forced migrants' access to healthcare in the four countries under<lb/> examination. Rather, they might constitute evidence for the fact that neither related EU Directives nor the ECHR system (and<lb/> its case law) have born sufficient legal or normative weight with national governments to contain the politically driven lowering<lb/> of standards towards forced migrants discussed in this article.<lb/> </bibl>
+
+        <bibl><label>16</label><lb/> SP Jua ´rez and others, 'Effects of non-health-targeted policies on migrant health: A systematic review and meta-analysis'<lb/> (2019) 7 The Lancet Global Health E420-E435, E433.<lb/> </bibl>
+        <bibl><label>17</label><lb/> See also TK Hervey and JV McHale, European Union Health Law. Themes and Implications (Cambridge University<lb/> Press 2015) 178.<lb/> </bibl>
+
+        <bibl><label>18</label><lb/> Bora ¨ng (n 12) 9.<lb/> </bibl>
+        <bibl><label>19</label><lb/> See, eg, Parker (n 10);</bibl> <bibl>Bora ¨ng (n 12);</bibl>
+          <bibl>Sainsbury (n 2).<lb/> </bibl>
+
+        <bibl><label>21</label><lb/> G Baldi and S Wallace Goodman, 'Migrants into members: Social rights, civic requirements, and citizenship in western<lb/> Europe' (2015) 38 West European Politics 1152-73;</bibl>
+          <bibl>Sainsbury (n 2).<lb/> </bibl>
+
+        <bibl><label>23</label><lb/> D Giudici, 'The list. On discretion and refusal in the Italian asylum system' (2020) 23 European Journal of Social Work<lb/> 437-48, 440.<lb/> </bibl>
+        <bibl><label>24</label><lb/> V Federico and P Pannia, 'The ever-changing picture of the legal framework of migration: A comparative analysis of<lb/> common trends in Europe and beyond' in S Barthoma and O ¨A C ¸etrez (eds), Responding to Migration. A Holistic Perspective on<lb/> Migration Governance (Acta Universitatis Upsaliensis 2021) 15-43, 25.<lb/> </bibl>
+
+        <bibl><label>26</label><lb/> J Oltmer, 'Einfu ¨hrung: Steuerung und Verwaltung von Migration in Deutschland seit dem spa ¨ten 19. Jahrhundert' in<lb/> J Oltmer (ed), Migration steuern und verwalten (VR unipress 2003) 9-56, 11-12.<lb/> </bibl>
+        <bibl><label>27</label><lb/> W Kymlicka, 'The multicultural welfare state' in PA Hall and M Lamont (eds), Successful Societies: How Institutions and<lb/> Culture Affect Health (CUP 2009) 226-53, 229.<lb/> </bibl>
+        <bibl><label>28</label><lb/> K Banting and W Kymlicka, 'Introduction. The political sources of solidarity in diverse societies' in K Banting and W<lb/> Kymlicka (eds), The Strains of Commitment. The Political Sources of Solidarity in Diverse Societies (Oxford University Press 2017)<lb/> 1-58, 8.<lb/> </bibl>
+        <bibl><label>29</label><lb/> J Phillimore, 'Approaches to health provisions in the age of super-diversity: Accessing the NHS in Britain's most diverse<lb/> city' (2010) 31 Critical Social Policy 5-29, 11.<lb/> </bibl>
+        <bibl><label>30</label><lb/> Parker (n 10);</bibl>
+          <bibl>Bora ¨ng (n 12);</bibl>
+          <bibl>D Sainsbury (n 2);</bibl> <bibl>G Kuhn-Zuber, Sozialleistungsanspru ¨che fu ¨r Flu ¨chtlinge und<lb/> Unionsbu ¨rger (Nomos 2018).<lb/> </bibl>
+
+        <bibl><label>31</label><lb/> See, eg, Eurostat, newsrelease 44/2016 (4 March 2016 &lt;https://ec.europa.eu/eurostat/documents/2995521/<lb/> 7203832/3-04032016-AP-EN.pdf/790eba01-381c-4163-bcd2-a54959b99ed6&gt; accessed 28 July 2022).<lb/> </bibl>
+        <bibl><label>32</label><lb/> See, eg, Bradby (n 1) 185; </bibl>
+          <bibl>P Nedergaard, 'Borders and the EU legitimacy problem: The 2015-16 European refugee cri-<lb/>sis' (2018) 40 Policy Studies 80-91, 86.<lb/> </bibl>
+        <bibl><label>33</label><lb/> C de Freitas and others, Asylum Challenges, Debates and Reforms. How Germany, Poland, Portugal and Sweden have<lb/> Developed their Asylum Systems since 2015 (Bertelsmann Stiftung 2021) 165.<lb/> </bibl>
+
+        <bibl><label>36</label><lb/> F Trauner and J Turton, '"Welcome culture": The emergence and transformation of a public debate on migration'<lb/> (2017) 46 OZP-Austrian Journal of Political Science 33-42, 36.<lb/> </bibl>
+        <bibl><label>37</label><lb/> See, eg, Asylverfahrensbeschleunigungsgesetz, Bundesgesetzblatt, Part I No 40 (2015), 23 October 2015, 1722-35. For a<lb/> detailed overview of provisions added to the German Asylum Seekers' Benefit Act (Asylbewerberleistungsgesetz, &lt;https://www.<lb/> gesetze-im-internet.de/asylblg/BJNR107410993.html&gt; accessed 1 August 2022), see Federal Government Commissioner for<lb/> Migration, Refugees and Integration: 11. Bericht der Beauftragten der Bundesregierung fu ¨r Migration, Flu ¨chtlinge und<lb/> Integration-Teilhabe, Chancengleichheit und Rechtsentwicklung in der Einwanderungsgesellschaft Deutschland (December<lb/> 2016), especially 587-91.<lb/> </bibl>
+        <bibl><label>38</label><lb/> A Stocchiero, 'Italy. The public debate on the Italian isolation in the European Union migration crisis' in M Barlai and<lb/> others (eds), The Migrant Crisis: European Perspectives and National Discourses (LIT Verlag 2017) 169-91.<lb/> </bibl>
+
+        <bibl><label>39</label><lb/> In Italy, the government may adopt a decree law-a regulatory act with provisional legal force-in case of urgently re-<lb/>quired action. This decree law, however, needs to be implemented through adoption of a respective legislative act by parlia-<lb/>ment, potentially including amendments, in order to have definite legal force.<lb/> </bibl>
+        <bibl><label>40</label><lb/> Geddes and Pettrarchin (n 63) 237.<lb/> </bibl>
+        <bibl><label>41</label><lb/> ibid 236.<lb/> </bibl>
+
+        <bibl><label>43</label><lb/> See Y Namer and others, 'Discrimination as a health systems response to forced migration' in K Bozorgmehr and<lb/> others (n 10) 195-211, 203.<lb/> </bibl>
+        <bibl><label>44</label><lb/> See i.a. A Kaya and A-K Nagel, 'Reception policies, practices and responses' in S Barthoma and O ¨A C ¸etrez (n 23) 227-<lb/>56, 233; </bibl>
+          <bibl>F Webber, 'On the creation of the UK's "hostile environment"' (2019) 60 Race &amp; Class 76-87.<lb/> </bibl>
+        <bibl><label>45</label><lb/> See the description of the Consultation outcome: New Plan for Immigration, 24 March 2021 (&lt;https://www.gov.uk/<lb/> government/consultations/new-plan-for-immigration&gt; accessed 20 January 2022), including this quote as well as a reference<lb/> to 'those [migrants] with no right to be here'.<lb/> </bibl>
+        <bibl><label>46</label><lb/> Quote from the UK government's 'Guidance' on the 2016 Immigration Act, 12 July 2016 (see &lt;https://www.gov.uk/gov<lb/> ernment/publications/immigration-bill-2015-overarching-documents/immigration-bill-201516-overview-factsheet&gt; accessed 20<lb/> January 2022).<lb/> </bibl>
+        <bibl><label>47</label><lb/> On the conceptualisation and definition of politicisation, see W van der Brug and others, 'A Framework for Studying<lb/> the Politicisation of Immigration' in W van der Brug and others (eds), The Politicisation of Migration (Routledge 2015) 1-18,<lb/> 4-8.<lb/> </bibl>
+        <bibl><label>48</label><lb/> Bora ¨ng (n 12) 156.<lb/> </bibl>
+        <bibl><label>49</label><lb/> P Scholten and S Verbeek, 'Politicization and expertise: Changing research-policy dialogues on migrant integration in<lb/> Europe' (2015) 42 Science and Public Policy 188-200, 192.<lb/> </bibl>
+        <bibl><label>50</label><lb/> ibid, 193-34;</bibl> <bibl>Bora ¨ng (n 12) 133-34;</bibl> <bibl>Sainsbury (n 2) 223.<lb/> </bibl>
+
+        <bibl><label>52</label><lb/> S Castles and C-U Schierup, 'Migration and ethnic minorities' in FG Castles and others (eds), The Welfare State<lb/> (Oxford University Press 2010) 278-91, 288.<lb/> </bibl>
+        <bibl><label>54</label><lb/> Ruedin, 'Citizenship regimes and the politicization of immigrant groups' (2017) 46 OZP-Austrian Journal of Political<lb/> Science 7-19, 8.<lb/> </bibl>
+        <bibl><label>55</label><lb/> C Green-Pedersen, The Reshaping of West European Party Politics. Agenda-Setting and Party Competition in Comparative<lb/> Perspective (Oxford University Press 2019) 152-53.<lb/> </bibl>
+        <bibl><label>57</label><lb/> ibid 153.<lb/> </bibl>
+        <bibl><label>58</label><lb/> Federico and Pannia (n 23) 36.<lb/> </bibl>
+
+        <bibl><label>61</label><lb/> ibid 45;</bibl>
+          <bibl>see also PA Hall, 'The political sources of social solidarity' in Banting and Kymlicka (n 27) 201-32, 219;</bibl>
+          <bibl>F<lb/> Roosma and others, 'The achilles' heel of welfare state legitimacy: perceptions of overuse and underuse of social benefits in<lb/> Europe' (2016) 23 Journal of European Public Policy 177-96, 182-83, 186, who trace high perceptions of welfare overuse and<lb/> underuse in the Mediterranean countries.<lb/> </bibl>
+        <bibl><label>62</label><lb/> See eg Marx and Naumann (n 5) for Germany; A Pellegata and F Visconti, 'Transnationalism and welfare chauvinism<lb/> in Italy: Evidence from the 2018 election campaign' (2020) 26 South European Society and Politics 55-82 for Italy; </bibl>
+          <bibl>M<lb/> Goossen and others, 'Suspicion of welfare overuse in Sweden: The role of left-right ideology, anti-immigrant attitudes and gen-<lb/>der' (2021) 44 Scandinavian Political Studies 115-39 for Sweden; </bibl>
+          <bibl>B Leruth and P Taylor-Gooby, 'Does political discourse mat-<lb/>ter? comparing party positions and public attitudes on immigration in England' (2019) 39 Politics 154-169 for the UK.<lb/> </bibl>
+
+        <bibl><label>63</label><lb/> C Ferna ´ndez, 'Cosmopolitanism at the crossroads. Swedish immigration policy after the 2015 refugee crisis' in EM<lb/> Gozdziak and others (eds), Europe and the Refugee Response. A Crisis of Values? (Routledge 2020) 220-35, 230.<lb/> </bibl>
+        <bibl><label>64</label><lb/> M Neureiter, 'The effect of immigrant integration policies on public immigration attitudes: Evidence from a survey ex-<lb/>periment in the United Kingdom' (2021) International Migration Review (first online, DOI: 10.1177/01979183211063499),<lb/> 1-29, 2; </bibl>
+          <bibl>A Geddes and A Pettrachin, 'Italian migration policy and politics: exacerbating paradoxes' (2020) 12 Contemporary<lb/> Italian Politics 227-42; </bibl>
+          <bibl>de Freitas and others, (n 32) 165.<lb/> </bibl>
+
+        <bibl><label>66</label><lb/> See, eg, Sainsbury (n 2);</bibl>
+          <bibl>F Ro ¨mer, 'Generous to all or "insiders only"? The relationship between welfare state generos-<lb/>ity and immigrant welfare rights' (2017) 27 Journal of European Social Policy 173-96.<lb/> </bibl>
+        <bibl><label>67</label><lb/> Press release by the Swedish Prime Minister's Office: 'Government proposes measures to create respite for Swedish ref-<lb/>ugee reception', 24 November 2015 (&lt;https://www.government.se/articles/2015/11/government-proposes-measures-to-cre<lb/> ate-respite-for-swedish-refugee-reception/&gt; accessed 20 January 2022).<lb/> </bibl>
+        <bibl><label>68</label><lb/> Terlizzi (n 8) 107.<lb/> </bibl>
+        <bibl><label>69</label><lb/> For a discussion of the 'safe country of origin' concept, see M. Hunt, 'The Safe Country of Origin Concept in<lb/> European Asylum Law: Past, Present and Future' (2014) 26 (4) International Journal of Refugee Law 500-35.<lb/> </bibl>
+        <bibl><label>70</label><lb/> See eg W Kluth, 'Die besonderen Bedu ¨rfnisse von schutzbedu ¨rftigen Personen im System des europa ¨ischen und deut-<lb/>schen Migrationsrechts' 4 (2020) Zeitschrift fu ¨r Ausla ¨nderrecht und Ausla ¨nderpolitik 119-26, 123; </bibl>
+          <bibl>Kuhn-Zuber (n 29) 53,<lb/> 101-02.<lb/> </bibl>
+
+        <bibl><label>72</label><lb/> See, eg, speech by Theresa May on 'An immigration system that works in the national interest', 12 December 2012<lb/> (&lt;https://www.gov.uk/government/speeches/home-secretary-speech-on-an-immigration-system-that-works-in-the-national-interest&gt;<lb/> accessed 4 August 2022).<lb/> </bibl>
+        <bibl><label>73</label><lb/> Quote by Immigration Minister James Brokenshire, included in the UK government's 'Guidance' on the 2016<lb/> Immigration Act, 12 July 2016 (see &lt;https://www.gov.uk/government/publications/immigration-bill-2015-overarching-docu<lb/> ments/immigration-bill-201516-overview-factsheet&gt; accessed 20 January 2022).<lb/> </bibl>
+
+        <bibl><label>76</label><lb/> C Kang and others, 'Access to primary healthcare for asylum seekers and refugees: A qualitative study of service user<lb/> experiences in the UK' (2019) 60 British Journal of General Practice e537-45, e537 (DOI: https://doi.org/10.3399/<lb/> bjgp19X701309).<lb/> </bibl>
+        <bibl><label>77</label><lb/> S Barthoma and O ¨A C ¸etrez, 'Introduction' in Barthoma and C ¸etrez (n 23) 1-12, 1.<lb/> </bibl>
+        <bibl><label>78</label><lb/> ibid 6-7.<lb/> </bibl>
+
+        <bibl><label>81</label><lb/> See, eg, Geddes and Pettrarchin (n 63) 231; </bibl>
+          <bibl>T Caponio and TM Cappiali, 'Italian migration policies in times of crisis:<lb/> The policy gap reconsidered' (2018) 23 South European Society and Politics 115-32, 125.<lb/> </bibl>
+
+        <bibl><label>82</label><lb/> A Terlizzi, 'The Italian migration governance regime and the role of narratives in the policy-making process (2011-<lb/>2018)' in Barthoma and C ¸etrez (n 23) 101-19, 113.<lb/> </bibl>
+        <bibl><label>83</label><lb/> In the UK, for instance, 70% of persons who applied for asylum between 2016 and 2018 appealed against the initial de-<lb/>cision on their legal status (see The Migration Observatory, 'Asylum and refugee resettlement in the UK' (11 May 2021,<lb/> &lt;https://migrationobservatory.ox.ac.uk/resources/briefings/migration-to-the-uk-asylum/&gt; accessed 28 July 2022).<lb/> </bibl>
+
+        <bibl><label>85</label><lb/> See eg BN Kumar and others, 'Reducing the impact of the coronavirus on disadvantaged migrants and ethnic minori-<lb/>ties' (2021) 31 European Journal of Public Health iv9-iv13.<lb/></bibl>
+
+          <bibl><label>87</label><lb/> See eg Ferna ´ndez (n 62) 228; </bibl>
+          <bibl>S Masocha and MK Simpson, 'Xenoracism: Towards a critical understanding of the con-<lb/>struction of asylum seekers and its implications for social work practice' (2011) 23 Practice 5-18, 13.<lb/></bibl>
+
+          <bibl><label>88</label><lb/> Neureiter (n 63) 6.<lb/> </bibl>
+
+          <bibl><label>90</label><lb/> A Shahvisi, 'Austerity or xenophobia? The causes and costs of the "hostile environment" in the NHS"' (2019) 27<lb/> Health Care Analysis 202-19.<lb/> </bibl>
+        <bibl><label>91</label><lb/> I McManus, 'The case of the United Kingdom Independence Party (UKIP)' in M Falkenbach and SL Greer (eds), The<lb/> Populist Radical Right and Health. National Policies and Global Trends (Springer 2021) 139-55, 148.<lb/> </bibl>
+
+        <bibl><label>94</label><lb/> See, eg, Jua ´rez and others (n 15); K Bozorgmehr and O Razum, 'Effect of restricting access to health care on health<lb/> expenditures among asylum-seekers and refugees: A quasi-experimental study in Germany, 1994-2013' (2015) 10 PLoS One<lb/> e0131483.<lb/> </bibl>
+        <bibl><label>95</label><lb/> H Zeeb and others, 'Migration und Gesundheitliche Ungleichheit' in Pundt and Cacace (n 4) 117-36, 126-7.<lb/> </bibl>
+        <bibl><label>98</label><lb/> While UKIP has lost significantly in votes and influence in the aftermath of the 2016 Brexit referendum, it did leave a<lb/> noteworthy mark-in and beyond the referendum-on the public and political discourse, with regard to the areas of immigra-<lb/>tion and asylum policies and healthcare (see, eg, McManus (n 89)).<lb/> </bibl>
+        <bibl><label>99</label><lb/> PD Ko ¨nig, 'Intra-party dissent as a constraint in policy competition: Mapping and analysing the positioning of political<lb/> parties in the German refugee debate from August to November 2015' (2018) 26 German Politics 337-59;</bibl>
+          <bibl>Marx and<lb/> Naumann (n 5).<lb/> </bibl>
+        <bibl><label>100</label><lb/> J Dennison and A Geddes, 'The centre no longer holds: The Lega, Matteo Salvini and the remaking of Italian immigra-<lb/>tion politics' (2022) 48 Journal of Ethnic and Migration Studies 441-60 (DOI: 10.1080/1369183X.2020.1853907);</bibl>
+          <bibl>Geddes<lb/> and Pettrachrin (n 63).<lb/> </bibl>
+
+        <bibl><label>101</label><lb/> McManus (n 89) 139, 147-48.<lb/> </bibl>
+
+          <bibl><label>103</label><lb/> D Di Mauro and L Verzichelli, 'Political elites and immigration in Italy: Party competition, polarization and new clea-<lb/>vages' (2019) 11 Contemporary Italian Politics 401-14, 410.<lb/> </bibl>
+
+        <bibl><label>107</label><lb/> ibid.<lb/> </bibl>
+        <bibl><label>108</label><lb/> de Freitas and others (n 32) 165.<lb/> </bibl>
+        <bibl><label>109</label><lb/> Ferna ´ndez (n 62) 229.<lb/> </bibl>
+
+          <bibl><label>111</label><lb/> DS Atzpodien, 'Die SPD im Spagat zwischen Regierungsverantwortung und U ¨berzeugung-Migration im parlamentar-<lb/>ischen Parteienwettbewerb' 14 (2020) Zeitschrift fu ¨r Vergleichende Politikwissenschaft 123-48, 140-41.<lb/> </bibl>
+
+          <bibl><label>115</label><lb/> Barthoma and C ¸etrez (n 23) 1.<lb/> </bibl>
+
+          <bibl><label>117</label><lb/> See A ¨ndrade regler i utla ¨nningslagen. Socialfo ¨rsa ¨kringsutskottets beta ¨nkande 2020/21: SfU28, adopted by the Swedish<lb/> Parliament on 22 June 2021 (&lt;https://www.riksdagen.se/sv/dokument-lagar/arende/betankande/andrade-regler-i-utlanning<lb/> slagen_H801SfU28&gt; accessed 24 January 2022).<lb/> </bibl>
+        <bibl><label>118</label><lb/> See B Duffy and others, Divided Britain? Polarisation and Fragmentation Trends in the UK (&lt;https://www.kcl.ac.uk/pol<lb/> icy-institute/assets/divided-britain.pdf&gt; 2019, accessed 25 January 2022) 67.<lb/> </bibl>
+        <bibl><label>119</label><lb/> See Koalitionsvertrag 2021-2025 zwischen FDP, Bu ¨ndnis 90/Die Gru ¨nen und FDP: Mehr Fortschritt wagen. Bu ¨ndnis<lb/> fu ¨r Freiheit, Gerechtigkeit und Nachhaltigkeit, adopted on 24 November 2021 (&lt;https://www.bundesregierung.de/resource/<lb/> blob/974430/1990812/04221173eef9a6720059cc353d759a2b/2021-12-10-koav2021-data.pdf?download=1&gt; accessed 24<lb/> January 2022) p 140.<lb/> </bibl>
+
+          <bibl><label>121</label><lb/> C Bove/Association for Legal Studies on Immigration (ASGI), Country Report: Italy. 2020 Update (Asylum<lb/> Information Database/European Council of Refugees and Exiles, &lt;https://asylumineurope.org/wp-content/uploads/2021/<lb/> 06/AIDA-IT_2020update.pdf&gt; accessed 24 January 2022), 48-50.</bibl>
+
+        </listBibl>
+    </text>
+</TEI>

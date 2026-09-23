@@ -44,6 +44,7 @@ public class EngineParsers implements Closeable {
     private Map<Flavor, Segmentation> segmentationParsers = null;
     private Map<Flavor, FullTextParser> fullTextParsers = null;
     private ReferenceSegmenterParser referenceSegmenterParser = null;
+    private Map<Flavor, ReferenceSegmenterParser> referenceSegmenterParsers = null;
     private FigureParser figureParser = null;
     private TableParser tableParser = null;
     private MonographParser monographParser = null;
@@ -209,14 +210,31 @@ public class EngineParsers implements Closeable {
     }
 
     public ReferenceSegmenterParser getReferenceSegmenterParser() {
-        if (referenceSegmenterParser == null) {
-            synchronized (this) {
-                if (referenceSegmenterParser == null) {
-                    referenceSegmenterParser = new ReferenceSegmenterParser();
+        return getReferenceSegmenterParser(null);
+    }
+
+    public ReferenceSegmenterParser getReferenceSegmenterParser(Flavor flavor) {
+        if (flavor == null) {
+            if (referenceSegmenterParser == null) {
+                synchronized (this) {
+                    if (referenceSegmenterParser == null) {
+                        referenceSegmenterParser = new ReferenceSegmenterParser();
+                    }
                 }
             }
+            return referenceSegmenterParser;
         }
-        return referenceSegmenterParser;
+        {
+            synchronized (this) {
+                if (referenceSegmenterParsers == null || referenceSegmenterParsers.get(flavor) == null) {
+                    ReferenceSegmenterParser localParser = new ReferenceSegmenterParser(flavor);
+                    if (referenceSegmenterParsers == null)
+                        referenceSegmenterParsers = new EnumMap<>(Flavor.class);
+                    referenceSegmenterParsers.put(flavor, localParser);
+                }
+            }
+            return referenceSegmenterParsers.get(flavor);
+        }
     }
 
     public ChemicalParser getChemicalParser() {
