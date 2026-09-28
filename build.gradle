@@ -498,8 +498,8 @@ project(":grobid-service") {
         implementation 'io.dropwizard:dropwizard-forms:5.0.2'
         implementation 'io.dropwizard:dropwizard-client:5.0.2'
         implementation 'io.dropwizard:dropwizard-auth:5.0.2'
-        implementation 'io.dropwizard.metrics:metrics-core:4.2.38'
-        implementation 'io.dropwizard.metrics:metrics-servlets:4.2.38'
+        implementation 'io.dropwizard.metrics:metrics-core:4.2.40'
+        implementation 'io.dropwizard.metrics:metrics-servlets:4.2.40'
         implementation 'io.dropwizard:dropwizard-json-logging:5.0.2'
 
         // dropwizard-client 5.0.2 brings httpclient5 5.6.1, which declares httpcore5-h2 5.4 (and httpcore5
