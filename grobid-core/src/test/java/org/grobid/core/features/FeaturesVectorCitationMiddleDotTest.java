@@ -70,9 +70,17 @@ public class FeaturesVectorCitationMiddleDotTest {
                 expected.add(token.getText());
         }
 
-        String features = FeaturesVectorCitation.addFeaturesCitation(tokens, null,
-                new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>(),
-                new ArrayList<>(), new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+        String features = FeaturesVectorCitation.addFeaturesCitation(
+                tokens,
+                null,
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>(),
+                new ArrayList<>());
 
         List<String> actual = new ArrayList<>();
         for (String line : features.split("\n")) {
