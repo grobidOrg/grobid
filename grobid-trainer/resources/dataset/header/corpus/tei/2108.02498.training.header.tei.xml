@@ -1,0 +1,138 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2108.02498">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-09T09:57:20.433828Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-09T09:57:20.433828Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-09T10:14:14.644Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<idno>arXiv:2108.02498v1 [stat.CO]</idno>
+
+	<date>5 Aug 2021</date>
+
+	1<lb/>
+	<docTitle>
+	<titlePart>The No-U-Turn Sampler as a Proposal Distribution<lb/> in a Sequential Monte Carlo Sampler with a<lb/> Near-Optimal L-Kernel<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Lee Devlin</docAuthor>,
+	</byline>
+
+    <byline>
+	<docAuthor>Paul Horridge</docAuthor>,
+	</byline>
+
+    	<byline>
+	<docAuthor>Peter L. Green</docAuthor>, and
+	</byline>
+
+    	<byline>
+	<docAuthor>Simon Maskell<lb/></docAuthor>
+	</byline>
+
+	Abstract-
+	<div type="abstract">Markov Chain Monte Carlo (MCMC) is a powerful<lb/> method for drawing samples from non-standard probability<lb/> distributions and is utilized across many fields and disciplines.<lb/> Methods such as Metropolis-Adjusted Langevin (MALA) and<lb/> Hamiltonian Monte Carlo (HMC), which use gradient infor-<lb/>mation to explore the target distribution, are popular variants<lb/> of MCMC. The Sequential Monte Carlo (SMC) sampler is an<lb/> alternative sampling method which, unlike MCMC, can readily<lb/> utilise parallel computing architectures and also has tuning<lb/> parameters not available to MCMC. One such parameter is the<lb/> L-kernel which can be used to minimise the variance of the<lb/> estimates from an SMC sampler. In this letter, we show how the<lb/> proposal used in the No-U-Turn Sampler (NUTS), an advanced<lb/> variant of HMC, can be incorporated into an SMC sampler to<lb/> improve the efficiency of the exploration of the target space. We<lb/> also show how the SMC sampler can be optimized using both a<lb/> near-optimal L-kernel and a Hamiltonian proposal.<lb/></div>
+
+	Index Terms-
+	<keyword>Bayesian inference, Markov chain Monte Carlo,<lb/> Monte Carlo methods, Sequential Monte carlo<lb/></keyword>
+
+	This work has been submitted
+	<note type="submission">to the IEEE for possible publication.<lb/></note>
+
+	Copyright may be transferred without notice, after which this version may no<lb/> longer be accessible. 
+          
+    <note type="funding"> Work funded by the Engineering and Physical Sciences<lb/>Research Council, as part of the grant 'Big Hypotheses: a Fully Parallelised<lb/> Bayesian Inference Solution' (EP/R018537/1)<lb/></note>
+          
+	<byline>
+	<docAuthor>Lee Devlin</docAuthor>, 
+	</byline>
+
+    <byline>
+	<docAuthor>Paul Horridge</docAuthor> and 
+	</byline>
+
+     <byline>
+	<docAuthor>Simon Maskell</docAuthor>
+	</byline>
+          
+	are with 
+
+      <byline>
+    <affiliation>the Department of<lb/> Electrical Engineering and Electronics</affiliation>
+        </byline>
+        
+    , and 
+
+          <byline>
+         <docAuthor>Peter Green</docAuthor>
+         </byline>
+          
+          is with 
+	<byline>
+	<affiliation>the Depart-<lb/>ment of Mechanical Engineering, University of Liverpool,</affiliation>
+	</byline>
+
+	<address>Liverpool L69 3GJ,<lb/> U.K.</address>
+
+	(e-mail:
+	<email>Lee.Devlin@liverpool.ac.uk</email>
+
+	;
+	<email>Paul.Horridge@liverpool.ac.uk</email>
+
+	;<lb/>
+	<email>plgreen@liverpool.ac.uk</email>
+
+	;
+	<email>S.Maskell@liverpool.ac.uk</email>
+
+	).
+		</front>
+	</text>
+
+</TEI>

@@ -1,0 +1,149 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_1906.08208">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-11T11:33:18.055856Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-11T11:33:18.055856Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-11T11:37:54.756Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<idno>OJ-SP-00004-2019</idno>
+
+	1<lb/>
+	<docTitle>
+	<titlePart>Clock synchronization over networks -Identifiability of the<lb/> sawtooth model<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Pol del Aguila Pla, Member, IEEE, Lissy Pellaco, Student Member, IEEE, Satyam Dwivedi, Member, IEEE<lb/> Peter Händel, Senior Member, IEEE, and Joakim Jaldén, Senior Member, IEEE<lb/></docAuthor>
+	</byline>
+
+	<div type="abstract">In this paper, we analyze the two-node joint clock synchronization and ranging problem. We focus on the case of nodes that<lb/> employ time-to-digital converters to determine the range between them precisely. This specific design choice leads to a sawtooth<lb/> model for the captured signal, which has not been studied before from an estimation theoretic standpoint. In the study of this model,<lb/> we recover the basic conclusion of a well-known article by Freris, Graham, and Kumar in clock synchronization. More importantly,<lb/> we discover a surprising identifiability result on the sawtooth signal model: noise improves the theoretical condition of the estimation<lb/> of the phase and offset parameters. To complete our study, we provide performance references for joint clock synchronization and<lb/> ranging using the sawtooth signal model by presenting an exhaustive simulation study on basic estimation strategies under different<lb/> realistic conditions. With our contributions in this paper, we enable further research in the estimation of sawtooth signal models<lb/> and pave the path towards their industrial use for clock synchronization and ranging.<lb/></div>
+
+	Index Terms-
+	<keyword>Clock synchronization, ranging, identifiability, sawtooth model, sensor networks, round-trip time (RTT).<lb/></keyword>
+
+	<note type="submission">Manuscript received October 23, 2019; revised February 18, 2020; accepted<lb/> February 29, 2020.</note>
+
+	The associate editor coordinating the review of this<lb/> manuscript and approving it for publication was Prof. Christos Masouros.<lb/> (Corresponding author: Pol del Aguila Pla)<lb/>
+	<note type="funding">This work was supported by the SRA ICT TNG project Privacy-preserved<lb/> Internet Traffic Analytics (PITA).<lb/></note>
+
+	<byline>
+	<docAuthor>Pol del Aguila</docAuthor>
+	</byline>
+
+	Pla is with 
+			
+	<byline>
+	<affiliation>&gt;the Center for Biomedical Imaging</affiliation>
+	</byline>, in 
+			
+	<address>Switzer-<lb/>land</address>, and with the
+
+	<byline>
+	<affiliation>Biomedical Imaging Group, École polytechnique fédérale<lb/> de Lausanne,</affiliation>
+	</byline>
+
+	<address>Switzerland</address>
+
+	(email:
+	<email>pol.delaguilapla@epfl.ch</email>
+
+	). Pol performed<lb/> the work while at 
+			
+	<byline>
+	<affiliation>the KTH Royal Institute of Technology.<lb/></affiliation>
+	</byline>
+			
+	<byline>
+	<docAuthor>Lissy Pellaco</docAuthor>
+	</byline>
+
+	,
+	<byline>
+	<docAuthor>Peter Händel</docAuthor>
+	</byline>
+
+	and 
+			
+	<byline>
+	<docAuthor>Joakim Jaldén</docAuthor>
+	</byline> 
+			are with 
+			
+	<byline>
+	<affiliation>the Division of<lb/>Information Science and Engineering, School of Electrical Engineering and<lb/> Computer Science, KTH Royal Institute of Technology,</affiliation>
+	</byline>
+
+	<address>Stockholm, Sweden<lb/></address>
+
+	(e-mail:
+	<email>pellaco@kth.se, ph@kth.se</email>
+
+	, and
+	<email>jalden@kth.se</email>
+
+	).<lb/> 
+			
+	<byline>
+	<docAuthor>Satyam Dwivedi</docAuthor>
+	</byline> 
+			is with
+			
+	<byline>
+	<affiliation>Ericsson Research,</affiliation>
+	</byline>
+
+	<address>Stockholm, Sweden</address>
+
+	(e-mail:<lb/>
+	<email>dwivedi@kth.se</email>
+
+	).<lb/> This paper has supplementary downloadable material available at<lb/> http://ieeexplore.ieee.org., provided by the authors. The material includes<lb/> derivations that, although lengthy or challenging, have not been included in<lb/> the paper. This material is 245 KB in size.
+		</front>
+	</text>
+
+</TEI>

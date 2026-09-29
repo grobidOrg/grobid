@@ -1,0 +1,105 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_1708.03598">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-08T16:44:03.007773Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-08T16:44:03.007773Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-08T16:46:33.978Z" status="checked" who="#lfoppiano">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>Stability and behavior of the outer array of small<lb/> water Cherenkov detectors, outriggers, in the HAWC observatory<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>T. Capistrán * a , I. Torres a , E. Moreno b</docAuthor>
+	</byline>
+
+	and for
+	<note type="group">the HAWC Collaboration c<lb/></note>
+
+	<byline>
+	<affiliation>a Instituto Nacional de Astrofísica, Óptica y Electrónica,</affiliation>
+	</byline>
+
+	<address>Luis Enrique Erro 1, Tonantzintla,<lb/> Puebla 72840, México<lb/></address>
+
+	<byline>
+	<affiliation>b Facultad de Ciencias Físico Matemáticas, Benemérita Universidad Autónoma de Puebla,<lb/></affiliation>
+	</byline>
+
+	<address>Ciudad Universitaria, Colonia San Manuel Puebla, México<lb/></address>
+
+	c For a complete author list, see http://www.hawc-observatory.org/collaboration/icrc2017.php.<lb/>
+
+	Email:
+	<email>tcapistran@inaoep.mx</email>
+
+	,
+	<email>ibrahim@inaoep.mx</email>
+
+	,
+	<email>emoreno@fcfm.buap.mx<lb/></email>
+
+	* Speaker.<lb/>
+	<note type="copyright">c Copyright owned by the author(s) under the terms of the Creative Commons<lb/> Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).<lb/> http://pos.sissa.it/<lb/></note>
+
+	<idno>arXiv:1708.03598v3 [astro-ph.IM]</idno>
+
+	<date>17 Aug 2017<lb/></date>
+
+	<docTitle>
+	<titlePart>Stability and behavior of the array of outriggers in the HAWC observatory<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>T. Capistrán</docAuthor>
+	</byline>
+
+		</front>
+	</text>
+
+</TEI>

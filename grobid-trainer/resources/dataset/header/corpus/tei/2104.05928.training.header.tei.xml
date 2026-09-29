@@ -1,0 +1,114 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2104.05928">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-08T17:31:27.035275Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-08T17:31:27.035275Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-08T17:42:38.148Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>Semantic maps and metrics for science<lb/> using deep transformer encoders<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Brendan Chambers<lb/></docAuthor>
+	</byline>
+
+     
+    <byline>
+    <affiliation>QuillBot<lb/></affiliation>         
+     </byline>
+
+	<byline>
+	<affiliation>Knowledge Lab at the University of Chicago<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<docAuthor>James Evans<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Department of Sociology and Knowledge Lab, University of Chicago<lb/> </affiliation>
+	</byline>
+
+    <byline>
+    <affiliation>Santa Fe Institute<lb/></affiliation>
+    </byline>
+          
+	Corresponding author<lb/>
+	<byline>
+	<docAuthor>Brendan Chambers,</docAuthor>
+	</byline>
+
+	<email>brendan.chambers@quillbot.com<lb/></email>
+
+	<byline>
+	<docAuthor>James Evans,</docAuthor>
+	</byline>
+
+	<email>jevans@uchicago.edu<lb/></email>
+
+	Affiliation address<lb/>
+	<byline>
+	<affiliation>Knowledge Lab<lb/> University of Chicago<lb/></affiliation>
+	</byline>
+
+	<address>1155 E 60th St | Room 211<lb/> Chicago, IL 60637<lb/></address>
+
+	<titlePart>Semantic maps and metrics of science using deep transformer encoders</titlePart>
+
+	ABSTRACT<lb/>
+	<div type="abstract">The growing deluge of scientific publications demands text analysis tools that can help scientists<lb/> and policy-makers navigate, forecast and beneficially guide scientific research. Recent<lb/> advances in natural language understanding driven by deep transformer networks offer new<lb/> possibilities for mapping science. Because the same surface text can take on multiple and<lb/> sometimes contradictory specialized senses across distinct research communities, sensitivity to<lb/> context is critical for infometric applications. Transformer embedding models such as BERT<lb/> capture shades of association and connotation that vary across the different linguistic contexts<lb/> of any particular word or span of text. Here we report a procedure for encoding scientific<lb/> documents with these tools, measuring their improvement over static word embeddings in a<lb/> nearest-neighbor retrieval task. We find discriminability of contextual representations is strongly<lb/> influenced by choice of pooling strategy for summarizing the high-dimensional network<lb/> activations. Importantly, we note that fundamentals such as domain-matched training data are<lb/> more important than state-of-the-art NLP tools. Yet state-of-the-art models did offer significant<lb/> gains. The best approach we investigated combined domain-matched pretraining, sound<lb/> pooling, and state-of-the-art deep transformer network encoders. Finally, with the goal of<lb/> leveraging contextual representations from deep encoders, we present a range of<lb/> measurements for understanding and forecasting research communities in science. HIGHLIGHTS<lb/> Pretrained transformer network encoders such as BERT have become the champion<lb/> architecture for modeling contextual representations in text data.<lb/> These models benefit greatly from fine-tuning on labeled datasets, so there is ongoing<lb/> discussion as to whether they are suitable for unsupervised embeddings.<lb/> We develop and validate a pipeline for mapping content across scientific publications using an<lb/> unsupervised sciBERT encoder.<lb/> Two key design considerations for practitioners are highlighted: pretraining history, and pooling<lb/> strategy.<lb/> We also provide a streamlined parser for acquiring PubMed tile/abstract text and writing to a<lb/> relational database.<lb/></div>
+
+	KEYWORDS<lb/>
+	<keyword>science of science<lb/> contextual embedding<lb/> transformer network encoder<lb/> embedding metrics<lb/></keyword>
+
+	PubMed/MEDLINE sciBERT<lb/> 1.1
+		</front>
+	</text>
+
+</TEI>

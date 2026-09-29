@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>a</marker>
+							<orgName type="laboratory">State Key Laboratory of Advanced Technology for Materials Synthesis and Processing</orgName>,
+							<orgName type="institution">Wuhan<lb/> University of Technology</orgName>,
+							<address>
+								<settlement>Wuhan</settlement>
+								<postCode>430070</postCode>,
+								<country>P.R. China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>b</marker>
+							<orgName type="department">Department of Radiology</orgName>,
+							<orgName type="institution">Shengjing Hospital of China Medical University</orgName>,
+							<address>
+								<settlement>Shenyang</settlement>,
+								<postCode>110004</postCode>,
+							<lb/>
+								<country>P.R. China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>c</marker>
+							<orgName type="department">Department of Bioengineering</orgName>,
+							<orgName type="institution">University of California</orgName>,
+							<address>
+								<addrLine>Los Angeles</addrLine>,
+								<settlement>Los Angeles</settlement>,
+								<region>California</region>
+							<lb/>
+								<postCode>90095</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>d</marker>
+							<orgName type="department">Department of Materials Science and Engineering</orgName>,
+							<orgName type="institution">Stanford University</orgName>,
+							<address>
+								<settlement>Stanford</settlement>,
+								<region>California</region>
+							<lb/>
+								<postCode>94306</postCode>,
+								<country>USA</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

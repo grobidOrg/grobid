@@ -1,0 +1,134 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="institution">World Foundation for AIDS Research and Prevention</orgName>,
+							<lb/>
+							<address>
+								<settlement>Paris</settlement>;
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">Nanectis Biotechnologies</orgName>,
+							<address>
+								<settlement>Jouy-en-Josas</settlement>,
+							<lb/>
+								<country>France</country>;
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Dipartimento di Fisica "E.R. Caianiello"</orgName>,
+							<lb/>
+							<orgName type="institution">Universitá di Salerno and INFN</orgName>,
+							<lb/>
+							<address>
+								<postCode>84084</postCode>
+								<settlement>Fisciano (Salerno)</settlement>,
+							<lb/>
+								<country>Italy</country>;
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="department">Departments of Psychology and Neuroscience,<lb/> Computer Science, and Clinical Immunology</orgName>,
+							<lb/>
+							and 
+							<orgName type="laboratory">Clinical Systems Biology Group</orgName>,
+							<lb/>
+							<orgName type="department">Institute for Neuro-Immune Medicine</orgName>,
+							<lb/>
+							<orgName type="institution">Nova Southeastern University</orgName>,
+							<address>
+								<settlement>Fort Lauderdale</settlement>,
+							<lb/>
+								<region>FL</region>
+								<postCode>33314</postCode>,
+								<country>USA</country>;
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>5</marker>
+							<orgName type="department">National Human Genome Center</orgName> and
+							<orgName type="department">Department of Medicine</orgName>,
+							<lb/>
+							<orgName type="institution">Howard University College of Medicine</orgName>,
+							<lb/>
+							<address>
+								<settlement>Washington</settlement>,
+								<region>DC</region>
+								<postCode>20059</postCode>,
+							<lb/>
+								<country>USA</country>
+							</address>
+						</affiliation>
+                               ;
+							
+						<affiliation>
+							<orgName type="laboratory">Computational Physics Laboratory</orgName>,
+							<lb/>
+							<orgName type="institution">Howard University</orgName>,
+							<address>
+								<settlement>Washington</settlement>,
+							<lb/>
+								<region>DC</region>
+								<postCode>20059</postCode>,
+								<country>USA</country>;
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>6</marker>
+							<orgName type="department">Dipartimento di Scienze e Tecnologie</orgName>,
+							<lb/>
+							<orgName type="institution">Universitá del Sannio</orgName>,
+							<address>
+								<settlement>Benevento</settlement>,
+								<country>Italy</country> and
+							</address>
+						</affiliation>
+
+						<affiliatioon>
+							<orgName type="department">SPIN-CNR</orgName>,
+							<lb/>
+							<orgName type="institution">Universitá di Salerno</orgName>,
+							<address>
+								<settlement>Fisciano</settlement>
+								<region>(SA)</region>,
+							<lb/>
+								<country>Italy</country>;
+							</address>
+						</affiliatioon>
+
+							
+						<affiliation>
+							<marker>7</marker>
+							<orgName type="institution">WHITE Holographic Bioresonance</orgName>,
+							<lb/>
+							<address>
+								<settlement>Milano</settlement>,
+								<country>Italy</country>;
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

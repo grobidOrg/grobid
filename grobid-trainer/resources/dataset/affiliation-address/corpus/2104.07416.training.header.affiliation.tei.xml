@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+(
+						<affiliation>
+							<marker>a</marker>)
+							<orgName type="institution">Indian Institute of Technology Dharwad</orgName>,
+							<address>
+							<country>India</country>
+							<lb/> (
+							</address>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>b</marker>)
+							<orgName type="institution">Indian Statistical Institute</orgName>,
+							<address>
+								<settlement>Kolkata</settlement>,
+								<country>India</country>
+							<lb/> (
+							</address>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>c</marker>)
+							<orgName type="institution">Institute of Engineering and Management</orgName>,
+							<address>
+								<country>India</country>
+							<lb/>
+							</address>
+                        </affiliation>
+
+                          (
+                        <affiliation>
+                    <marker>d</marker>) 
+				<orgName type="institution">ESSEC Business School</orgName>
+							<address>
+								<settlement>Cergy</settlement>,
+								<country>France</country>
+							</address>
+                        </affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

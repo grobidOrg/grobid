@@ -1,0 +1,176 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2102.00075">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-11T10:15:41.716761Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-11T10:15:41.716761Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-11T10:21:08.549Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>RecSSD: Near Data Processing for<lb/> Solid State Drive Based Recommendation Inference<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Mark Wilkening<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Harvard University<lb/></affiliation>
+	</byline>
+
+	<address>Cambridge, Massachusetts, USA<lb/></address>
+
+	<email>wilkening@g.harvard.edu<lb/></email>
+
+	<byline>
+	<docAuthor>Udit Gupta<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Harvard University<lb/> Facebook<lb/></affiliation>
+	</byline>
+
+	<address>Cambridge, Massachusetts, USA<lb/></address>
+
+	<email>ugupta@g.harvard.edu<lb/></email>
+
+	<byline>
+	<docAuthor>Samuel Hsia<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Harvard University<lb/></affiliation>
+	</byline>
+
+	<address>Cambridge, Massachusetts, USA<lb/></address>
+
+	<email>shsia@g.harvard.edu<lb/></email>
+
+	<byline>
+	<docAuthor>Caroline Trippel<lb/> </docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Facebook<lb/></affiliation>
+	</byline>
+
+	<address>Menlo Park, California, USA<lb/></address>
+
+	<email>ctrippel@fb.com<lb/></email>
+
+	<byline>
+	<docAuthor>Carole-Jean Wu<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation> Facebook<lb/></affiliation>
+	</byline>
+
+	<address>Menlo Park, California, USA<lb/></address>
+
+	<email>carolejeanwu@fb.com<lb/></email>
+
+	<byline>
+	<docAuthor>David Brooks<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Harvard University<lb/></affiliation>
+	</byline>
+
+	<address>Cambridge, Massachusetts, USA<lb/></address>
+
+	<email>dbrooks@eecs.harvard.edu<lb/></email>
+
+	<byline>
+	<docAuthor>Gu-Yeon Wei<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Harvard University<lb/></affiliation>
+	</byline>
+
+	<address>Cambridge, Massachusetts, USA<lb/></address>
+
+	<email>guyeon@seas.harvard.edu</email>
+
+	ABSTRACT<lb/>
+	<div type="abstract">Neural personalized recommendation models are used across a wide<lb/> variety of datacenter applications including search, social media,<lb/> and entertainment. State-of-the-art models comprise large embed-<lb/>ding tables that have billions of parameters requiring large memory<lb/> capacities. Unfortunately, large and fast DRAM-based memories<lb/> levy high infrastructure costs. Conventional SSD-based storage<lb/> solutions offer an order of magnitude larger capacity, but have<lb/> worse read latency and bandwidth, degrading inference perfor-<lb/>mance. RecSSD is a near data processing based SSD memory sys-<lb/>tem customized for neural recommendation inference that reduces<lb/> end-to-end model inference latency by 2× compared to using COTS<lb/> SSDs across eight industry-representative models.<lb/></div>
+
+	<keyword>CCS CONCEPTS<lb/> • Hardware → External storage; • Computer systems organi-<lb/>zation → Neural networks.</keyword>
+
+	KEYWORDS<lb/>
+	<keyword>near data processing, neural networks, solid state drives<lb/></keyword>
+
+	ACM Reference Format:<lb/>
+	<byline>
+	<docAuthor>Mark Wilkening, Udit Gupta, Samuel Hsia, Caroline Trippel</docAuthor>
+	</byline>
+
+	<reference>, Carole-Jean<lb/> Wu, David Brooks, and Gu-Yeon Wei. 2021. RecSSD: Near Data Processing<lb/> for Solid State Drive Based Recommendation Inference. In Proceedings of the<lb/> 26th ACM International Conference on Architectural Support for Programming<lb/> Languages and Operating Systems (ASPLOS '21), April 19-23, 2021, Virtual,<lb/></reference>
+
+	<note type="copyright">Permission to make digital or hard copies of all or part of this work for personal or<lb/> classroom use is granted without fee provided that copies are not made or distributed<lb/> for profit or commercial advantage and that copies bear this notice and the full citation<lb/> on the first page. Copyrights for components of this work owned by others than ACM<lb/> must be honored. Abstracting with credit is permitted. To copy otherwise, or republish,<lb/> to post on servers or to redistribute to lists, requires prior specific permission and/or a<lb/> fee. Request permissions from permissions@acm.org.<lb/></note>
+
+	<reference>ASPLOS '21, April 19-23, 2021, Virtual, USA<lb/></reference>
+
+	<note type="copyright">© 2021 Association for Computing Machinery.<lb/></note>
+
+	<idno>ACM ISBN 978-1-4503-8317-2/21/04. .</idno>
+
+	. $15.00<lb/>
+	<idno>https://doi.org/10.1145/3445814.3446763<lb/></idno>
+
+	<reference>USA. ACM, New York, NY, USA, 13 pages.</reference>
+
+	<idno>https://doi.org/10.1145/3445814. 3446763<lb/> arXiv:2102.00075v1 [cs.AR]</idno>
+
+	<date>29 Jan 2021</date>
+
+		</front>
+	</text>
+
+</TEI>

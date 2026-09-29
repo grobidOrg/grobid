@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="laboratory">LIRIS</orgName>,
+							<lb/>
+							<orgName type="laboratory">UMR<lb/> CNRS<lb/> 5205</orgName>,
+							<lb/>
+							<orgName type="institution">Université<lb/> de<lb/> Lyon</orgName>,
+							<lb/>
+							<orgName type="institution">INSA-Lyon</orgName>,
+							<lb/>
+							<address>
+								<settlement>Villeurbanne</settlement>,
+							<lb/>
+								<country>France</country>.
+							<lb/>
+							</address>
+						</affiliation>
+
+	<!-- this is the author -->
+				Laetitia Matignon is with 
+					
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">Univ Lyon</orgName>,
+							<orgName type="laboratory">UCBL</orgName>,
+							<orgName type="institution">CNRS</orgName>,
+							<lb/>
+							<orgName type="institution">INSA-Lyon</orgName>,
+					        <orgName type="institution">LIRIS</orgName>,
+							<orgName type="laboratory">UMR5205</orgName>,
+							<address>
+								<postCode>F-69622</postCode>
+								<settlement>Villeurbanne</settlement>,
+								<country>France.</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="institution">INSA Lyon</orgName>,
+							<orgName type="laboratory">CITI Lab</orgName>,
+							<orgName type="institution">INRIA Chroma team</orgName>,
+							<lb/>
+							<address>
+								<settlement>Villeurbanne</settlement>,
+								<country>France</country>.
+							</address>
+						</affiliation>
+							
+			<!-- this is the author -->				
+	Christian<lb/> Wolf<lb/> is<lb/> with<lb/> 
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="institution">Naver<lb/> Labs<lb/> Europe</orgName>,
+							<lb/>
+							<address>
+								<country>France</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

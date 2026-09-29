@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="laboratory">Key Lab of Universal<lb/> Wireless Communications</orgName>,
+							<orgName type="department">Ministry of Education</orgName>,
+							<orgName type="institution">Beijing University of Posts<lb/> and Telecommunications</orgName>,
+							<address>
+								<settlement>Beijing</settlement>,
+								<postCode>100876</postCode>
+								<country>China</country>
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="institution">National Chiao Tung University</orgName>,
+							<address>
+								<settlement>Hsinchu</settlement>,
+								<country>Taiwan</country>
+							<lb/>
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="institution">Chinese University of Hong Kong</orgName>,
+							<lb/>
+							<address>
+                            <settlement>Shenzhen</settlement>
+                            </address>
+                              and
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="institution">Shenzhen Research Institute of Big Data</orgName>,
+							<address>
+								<settlement>Shenzhen</settlement>
+								<postCode>518172</postCode>,
+							<lb/>
+								<country>China</country>
+							</address>
+                        </affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

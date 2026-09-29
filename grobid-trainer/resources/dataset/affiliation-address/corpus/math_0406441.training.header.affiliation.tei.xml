@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">Department of Mathematics</orgName>,
+							<orgName type="institution">Ben-Gurion University of the Negev</orgName>,
+							<address>
+								<settlement>Beer-<lb/>Sheva</settlement>,
+								<country>Israel</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+						<affiliation>
+							<orgName type="department">Department of Mathematics</orgName>,
+							<orgName type="institution">Ben-Gurion University of the Negev</orgName>,
+							<address>
+								<settlement>Beer-<lb/>Sheva</settlement>,
+								<country>Israel,</country> and ,
+							</address>
+						</affiliation>
+
+						<affiliation>						
+							<orgName type="department">Institute of Mathematics</orgName>,
+							<orgName type="institution">University of Silesia</orgName>,
+							<address>
+								<settlement>Katowice</settlement>,
+							<lb/>
+								<country>Poland</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+						<affiliation>
+							<orgName type="department">Institute of Mathematics</orgName>,
+							<orgName type="institution">Hebrew University of Jerusalem</orgName>,
+							<address>
+								<settlement>Israel</settlement>, and ,
+							<lb/>
+							</address>
+						</affiliation>
+
+						<affiliation>
+							<orgName type="department">Department of Mathematics</orgName>
+							<orgName type="institution">Rutgers University</orgName>,
+							<address>
+								<settlement>New-Brunswick</settlement>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

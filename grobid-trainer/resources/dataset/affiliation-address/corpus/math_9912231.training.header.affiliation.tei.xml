@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="laboratory">Bogoliubov Laboratory of Theoretical Physics</orgName>,
+							<orgName type="institution">JINR</orgName>
+							<lb/>
+							<address>
+								<postCode>141980</postCode>
+								<settlement>Dubna</settlement>,
+								<settlement>Moscow Region &amp; </settlement>
+								<country>Russia</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>1</marker>
+							<lb/>
+							<orgName type="department">Center of Theoretical Physics</orgName>,
+							<address>
+								<addrLine>Luminy</addrLine>
+							<lb/>
+								<postCode>13288</postCode>
+								<settlement>Marseille</settlement> &amp;
+								<country>France</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+					 <affiliation>
+							<orgName type="laboratory">Bogoliubov Laboratory of Theoretical Physics</orgName>,
+							<orgName type="institution">JINR</orgName>
+							<lb/>
+							<address>
+								<postCode>141980</postCode>
+								<settlement>Dubna</settlement>,
+								<settlement>Moscow</settlement>
+								<country>Region &amp; Russia</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>1</marker> On leave of absence from 
+					<orgName type="department">P. N. Lebedev Physical Institute</orgName>,
+							<address>
+								<addrLine>Leninsky Pr. 53</addrLine>,
+								<postCode>117924</postCode>
+								<settlement>Moscow</settlement>,
+							<lb/>
+								<country>Russia</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

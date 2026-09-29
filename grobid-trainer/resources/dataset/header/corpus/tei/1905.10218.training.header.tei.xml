@@ -1,0 +1,161 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_1905.10218">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-09T11:15:07.674495Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-09T11:15:07.674495Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-09T11:22:19.238Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<note type="doctype">Noname manuscript</note>
+
+	No.<lb/> (will be inserted by the editor)<lb/>
+	<docTitle>
+	<titlePart>Functional Segmentation through Dynamic Mode<lb/> Decomposition: Automatic Quantification of Kidney Function<lb/> in DCE-MRI Images<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Santosh Tirunagari</docAuthor> • 
+	</byline>
+
+	<byline>
+	<docAuthor>Norman Poh</docAuthor> • 
+	</byline>
+
+	<byline>
+	<docAuthor>Kevin Wells</docAuthor> • 
+	</byline>
+
+	<byline>
+	<docAuthor>Miroslaw Bober</docAuthor> •<lb/> 
+	</byline>
+
+	<byline>
+	<docAuthor>Isky Gorden</docAuthor> • 
+	</byline>
+
+	<byline>
+	<docAuthor>David Windridge<lb/></docAuthor>
+	</byline>
+
+	<note type="submission">Received: date / Accepted: date<lb/></note>
+
+	Abstract
+	<div type="abstract">Quantification of kidney function in Dynamic<lb/> Contrast Enhanced Magnetic Resonance imaging (DCE-<lb/>MRI) requires careful segmentation of the renal region<lb/> of interest (ROI). Traditionally, human experts are re-<lb/>quired to manually delineate the kidney ROI across<lb/> multiple images in the dynamic sequence. This approach<lb/> is costly, time-consuming and labour intensive, and there-<lb/>fore acts to limit patient throughout and acts as one of<lb/> the factors limiting the wider adoption of DCR-MRI in<lb/> clinical practice.<lb/> Therefore, to address this issue, we present the first<lb/> use of Dynamic Mode Decomposition (DMD) as a the<lb/> basis for automatic segmentation of a dynamic sequence,<lb/> in this case, kidney ROIs in DCE-MRI. Using DMD<lb/> coupled combined with thresholding and connected com-<lb/>ponent analysis is first validated on synthetically gener-<lb/>ated data with known ground-truth, and then applied<lb/> to ten healthy volunteers DCE-MRI datasets.<lb/></div>
+
+	Santosh Tirunagari and Norman Poh have benefited from the<lb/> Medical Research Council (
+	<div type="abstract">MRC) funded project "Modelling<lb/> the Progression of Chronic Kidney Disease" under the grant<lb/> number R/M023281/1.<lb/></div>
+
+	<byline>
+	<docAuthor>S. Tirunagari</docAuthor> • 
+	</byline>
+
+	<byline>
+	<docAuthor>N. Poh<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Department of Computer Science, University of Surrey,<lb/></affiliation>
+	</byline>
+
+	<address>Guildford, Surrey GU2 7XH, UK.<lb/></address>
+
+	Tel.: +44-(0)1483-6179.<lb/>
+			
+	<byline>
+	<docAuthor>S. Tirunagari</docAuthor> • 
+	</byline>
+
+	<byline>
+	<docAuthor>K. Wells</docAuthor> • 
+	</byline>
+
+	<byline>
+	<docAuthor>M. Bober<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Center for Vision, Speech and Signal Processing (CVSSP),<lb/> University of Surrey,</affiliation>
+	</byline>
+
+	<address>Guildford, Surrey GU2 7XH, UK.<lb/></address>
+
+    <byline>
+	<docAuthor>I. Gorden<lb/></docAuthor>
+	</byline>
+			
+	<byline>
+	<affiliation> University College London (UCL) Institute of Child Health,<lb/></affiliation>
+	</byline>
+
+	<address>30 Guildford Street, London WCIN lEH, UK.<lb/></address>
+
+	<byline>
+	<docAuthor>D. Windridge<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Department of Computer Science, Middlesex University,</affiliation>
+	</byline>
+
+	<address>The<lb/> Burroughs, Hendon, London NW4 4BT, UK.<lb/></address>
+
+	E-mail:
+	<email>{s.tirunagari, n.poh, k.wells, m.bober}@surrey.ac.uk<lb/></email>
+
+	<div type="abstract">We find that the segmentation result obtained from<lb/> our proposed DMD framework is comparable to that<lb/> of expert observers and very significantly better than<lb/> that of an a-priori bounding box segmentation. Our re-<lb/>sult gives a mean Jaccard coefficient of 0.87, compared<lb/> to mean scores of 0.85, 0.88 and 0.87 produced from<lb/> three independent manual annotations. This represents<lb/> the first use of DMD as a robust automatic data driven<lb/> segmentation approach without requiring any human<lb/> intervention. This is a viable, efficient alternative ap-<lb/>proach to current manual methods of isolation of kidney<lb/> function in DCE-MRI.<lb/></div>
+
+	Keywords
+	<keyword>DMD • W-DMD • R-DMD • WR-DMD •<lb/> DCE-MRI • Movement correction<lb/></keyword>
+
+	<idno>arXiv:1905.10218v1 [eess.IV]</idno>
+
+	<date>24 May 2019</date>
+
+		</front>
+	</text>
+
+</TEI>

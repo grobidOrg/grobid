@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+(
+						<affiliation>
+							<marker>1</marker>)
+							<orgName type="institution">LAGIS<lb/> Ecole Centrale de Lille</orgName>,
+							<address>
+								<addrLine>Scientific city -BP 48</addrLine>-
+								<postCode>59651</postCode>
+							<lb/>
+								<settlement>Villeneuve d'Ascq Cedex -</settlement>
+								<country>France</country>
+							<lb/> (
+							</address>
+						</affiliation>
+                          
+						<affiliation>
+							<marker>2</marker>)
+							<orgName type="institution">LACS<lb/> Ecole Nationale des Ingénieurs de Tunis</orgName> -
+							<address>
+								<addrLine>BP 37</addrLine>,
+								<addrLine>Le<lb/> Belvédère</addrLine>,
+								<postCode>1002</postCode>
+								<settlement>Tunis</settlement> -
+								<country>Tunisia</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

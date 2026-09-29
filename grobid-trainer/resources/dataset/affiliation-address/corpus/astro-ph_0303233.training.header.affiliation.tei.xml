@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Physics Department</orgName>,
+							<orgName type="institution">Rome University "La Sapienza"</orgName>,
+							<address>
+								<addrLine>Ple.A.Moro 2</addrLine>,
+								<postCode>00185</postCode>,
+								<settlement>Rome</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">INFN, Sezione di Roma</orgName>,
+							<address>
+								<settlement>Rome</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Center for Cosmo-particle Physics "Cosmion"</orgName>
+							and
+							<orgName type="institution">M.V.Keldysh Institute of Applied<lb/> Mathematics RAS</orgName>,
+							<address>
+								<postCode>125047</postCode>,
+								<settlement>Moscow</settlement>,
+								<country>Russia</country> 
+							</address>
+						</affiliation>
+                            and
+						<affiliation>
+							<orgName type="institution">Moscow Engineering Physics Institute<lb/> Technical University</orgName>,
+							<address>
+								<settlement>Moscow</settlement>,
+								<country>Russia</country>.
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="department">Department of Physics</orgName>,
+							<orgName type="institution">New York University</orgName>,
+							<address>
+								<settlement>New York</settlement>,
+								<region>NY</region>
+								<postCode>10003</postCode> 
+							</address>
+						</affiliation>
+                           and
+						<affiliation>
+							<orgName type="institution">Manhattan<lb/> College</orgName>,
+							<address>
+								<settlement>Riverdale</settlement>,
+								<region>New York</region>,
+								<region>NY</region>
+								<postCode>10471</postCode>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

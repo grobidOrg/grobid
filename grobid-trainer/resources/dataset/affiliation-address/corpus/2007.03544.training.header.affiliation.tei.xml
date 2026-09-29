@@ -1,0 +1,163 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Max-Planck-Institute for Chemical Physics of Solids</orgName>,
+							<address>
+								<addrLine>N öthnitzer Str. 40</addrLine>,
+								<postCode>D-01187</postCode>
+								<settlement>Dresden</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="department">Institute of Applied Magnetics</orgName>,
+							<orgName type="laboratory">Key Lab for Magnetism and Magnetic Materials of</orgName> the
+							<orgName type="department">Ministry of Education</orgName>,
+							<lb/>
+							<orgName type="institution">Lanzhou University</orgName>,
+							<address>
+								<settlement>Lanzhou</settlement>
+								<postCode>730000</postCode>,
+								<country>People's Republic of China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">National Synchrotron Radiation Research Center (NSRRC)</orgName>,
+							<address>
+								<addrLine>101 Hsin-Ann Road</addrLine>,
+								<settlement>Hsinchu</settlement>
+								<postCode>30076</postCode>,
+								<country>Taiwan</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="department">ISIS Facility</orgName>,
+							<orgName type="institution">STFC Rutherford Appleton Laboratory</orgName>,
+							<address>
+								<addrLine>Harwell Oxford</addrLine>,
+								<settlement>Didcot</settlement>,
+								<postCode>OX11 0QX</postCode>,
+								<country>United Kingdom</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>5</marker>
+							<orgName type="institution">Forschungszentrum J ülich GmbH</orgName>,
+							<orgName type="department">J ülich Centre for Neutron Science at ILL</orgName>,
+							<address>
+								<addrLine>71 avenue des Martyrs</addrLine>,
+								<postCode>38000</postCode>
+							<lb/>
+								<settlement>Grenoble</settlement>,
+								<country>France</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>6</marker>
+							<orgName type="institution">Institut Laue-Langevin</orgName>,
+							<address>
+								<addrLine>Boite Postale 156X</addrLine>,
+								<postCode>F-38042</postCode>
+								<settlement>Grenoble Cedex 9</settlement>,
+								<country>France</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>7</marker>
+							<orgName type="institution">IKERBASQUE</orgName>,
+							<orgName type="institution">Basque Foundation for Science</orgName>,
+							<address>
+								<postCode>48013</postCode>
+								<settlement>Bilbao</settlement>,
+								<region>Basque Country</region>,
+								<country>Spain</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>8</marker>
+							<orgName type="institution">Donostia International Physics Center</orgName>,
+							<orgName type="institution">DIPC</orgName>,
+							<address>
+								<postCode>20018</postCode>
+								<settlement>Donostia-San Sebastian</settlement>,
+								<settlement>Basque Country</settlement>,
+								<country>Spain</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>9</marker>
+							<orgName type="institution">European X-ray Free Electron Laser Facility GmbH</orgName>,
+							<address>
+								<addrLine>Holzkoppel 4</addrLine>,
+								<postCode>22869</postCode>
+								<settlement>Schenefeld</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>10</marker>
+							<orgName type="institution">Helmholtz-Zentrum Berlin für Materialien und Energie GmbH</orgName>,
+							<address>
+								<addrLine>Albert-Einstein-Str. 15</addrLine>,
+								<postCode>12489</postCode>
+								<settlement>Berlin</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>11</marker>
+							<orgName type="department">Physics Institute II</orgName>,
+							<orgName type="institution">University of Cologne</orgName>,
+							<address>
+								<addrLine>Z ülpicher Str. 77</addrLine>,
+								<postCode>50937</postCode>
+								<settlement>Cologne</settlement>,
+								<country>Germany</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

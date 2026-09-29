@@ -1,0 +1,89 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<lb/>
+							<orgName type="institution">CRHEA-CNRS</orgName>,
+							<address>
+								<addrLine>Rue Bernard Gregory</addrLine>,
+								<postCode>06560</postCode>
+								<settlement>Valbonne</settlement>,
+								<country>FRANCE</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">Université de Nice Sophia-Antipolis</orgName>,
+							<address>
+								<postCode>06103</postCode>
+								<settlement>Nice</settlement>,
+								<country>France</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<lb/>
+							<orgName type="department">Institut Pascal</orgName>,
+							<orgName type="department">PHOTON-N2</orgName>,
+							<orgName type="institution">Clermont Université</orgName>,
+							<orgName type="institution">CNRS</orgName>
+						</affiliation>
+							and
+						<affiliation>
+							<orgName type="institution">Université Blaise Pascal</orgName>,
+							<address>
+								<addrLine>24 Avenue des<lb/> Landais</addrLine>,
+								<postCode>63177</postCode>
+								<settlement>Aubière cedex</settlement>,
+								<country>FRANCE</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>4</marker>
+							<lb/>
+							<orgName type="institution">Université de Montpellier 2</orgName>,
+							<orgName type="institution">CNRS</orgName>,
+							<orgName type="laboratory">Laboratoire Charles Coulomb</orgName>,
+							<orgName type="laboratory">UMR 5221</orgName>,
+							<address>
+								<postCode>34095</postCode>
+								<settlement>Montpellier</settlement>,
+							<lb/>
+								<country>FRANCE</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>5</marker>
+							<lb/>
+							<orgName type="laboratory">LPN-CNRS</orgName>,
+							<address>
+								<addrLine>Route de Nozay</addrLine>,
+								<postCode>91460</postCode>
+								<settlement>Marcoussis</settlement>,
+								<country>FRANCE</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

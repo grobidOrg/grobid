@@ -1,0 +1,110 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_1311.6439">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-30T10:11:48.875029Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-30T10:11:48.875029Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-30T10:13:21.655Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>Robust Transceiver Optimization for Downlink Multiuser<lb/> MIMO Systems<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Tadilo Endeshaw, Batu Krishna Chalise and Luc Vandendorpe<lb/></docAuthor>
+	</byline>
+
+	Abstract-
+	<div type="abstract">This paper addresses the joint transceiver design for<lb/> downlink multiuser multiple-input multiple-output (MIMO) systems,<lb/> with imperfect channel state information (CSI) at the base station (BS)<lb/> and mobile stations (MSs). By incorporating antenna correlation at both<lb/> ends of the channel and taking channel estimation errors into account,<lb/> we solve two robust design problems: minimization of the weighted sum<lb/> mean-square-error (MSE) and minimization of the maximum weighted<lb/> MSE. These problems are solved as follows: first, we establish three<lb/> kinds of MSE uplink-downlink duality by transforming only the power<lb/> allocation matrices from uplink channel to downlink channel and vice<lb/> versa. Second, in the uplink channel, we formulate the power allocation<lb/> part of each problem ensuring global optimality. Finally, based on the<lb/> solution of the uplink power allocation and the MSE duality results,<lb/> for each problem, we propose an iterative algorithm that performs<lb/> optimization alternatively between the uplink and downlink channels.<lb/> Computer simulations verify the robustness of the proposed design<lb/> compared to the non-robust/naive design.<lb/></div>
+
+	The authors would like to thank the Region Wallonne for the financial<lb/> support of the project MIMOCOM in the framework of which this work<lb/> has been achieved. Part of this work has been published in the 3rd
+	<meeting>IEEE<lb/> International Workshop on CAMSAP, Dec 2009.</meeting>
+
+
+    <byline>
+    <docAuthor>Tadilo Endeshaw and Luc<lb/> Vandendorpe</docAuthor>
+    </byline>
+	 are with the
+	<byline>
+	<affiliation>Communication and Remote Sensing Laboratory,<lb/> Université catholique de Louvain,</affiliation>
+	</byline>
+
+	<address>Place du Levant 2, 1348 -Louvain La<lb/> Neuve, Belgium.</address>
+
+	Email:
+	<email>{tadilo.bogale, luc.vandendorpe}@uclouvain.be</email>
+
+	,<lb/> Phone: +3210478071, Fax: +3210472089.
+	<byline>
+	<docAuthor>Batu K. Chalise</docAuthor>
+	</byline>
+
+	was with the 
+	<byline>
+	<affiliation>Com-<lb/>munication and Remote Sensing Laboratory, Universite catholique de Louvain,<lb/></affiliation>
+	</byline>
+
+	<address>Belgium</address>
+
+	when this work was completed. He is currently with the
+	<byline>
+	<affiliation>Center<lb/> for Advanced Communications, Villanova University,</affiliation>
+	</byline>
+
+	<address>800 Lancaster Avenue,<lb/> Villanova, PA, 19085, USA,</address>
+
+	Phone: +16105197371, Fax: +16105196118,<lb/> Email:
+	<email>batu.chalise@villanova.edu.<lb/></email>
+
+	<idno>arXiv:1311.6439v1 [math.OC]</idno>
+
+	<date>25 Nov 2013</date>
+
+		</front>
+	</text>
+
+</TEI>

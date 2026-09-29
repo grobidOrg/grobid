@@ -1,0 +1,51 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">School of Physics</orgName>,
+							<orgName type="institution">Dalian University of Technology</orgName>,
+							<address>
+								<postCode>116024</postCode>
+								<settlement>Dalian</settlement>,
+								<country>China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="department">Instituto de Física</orgName>,
+							<orgName type="institution">Universidade Federal de Goiás</orgName>,
+							<address>
+								<addrLine>74.001-970</addrLine>,
+								<settlement>Goiânia -GO</settlement>,
+								<country>Brazil</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Department of Physics</orgName>,
+							<orgName type="institution">Zhejiang Normal University</orgName>,
+							<address>
+								<settlement>Jinhua</settlement>
+								<postCode>321004</postCode>,
+								<settlement>Zhejiang</settlement>,
+								<country>P. R. China</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

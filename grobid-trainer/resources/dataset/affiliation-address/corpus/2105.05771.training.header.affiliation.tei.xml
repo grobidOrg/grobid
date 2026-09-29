@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="institution">Univ Coimbra</orgName>,
+							<orgName type="department">Faculdade de Ciências e Tecnologia da</orgName>
+							<orgName type="institution">Universidade de Coimbra</orgName>,
+							<address>
+								<addrLine>Rua Larga</addrLine>,
+								<postCode>3004-516</postCode>
+								<settlement>Coimbra</settlement>,
+								<country>Portugal</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">CFisUC</orgName>,
+							<address>
+								<addrLine>Rua Larga</addrLine>,
+								<postCode>3004-516</postCode>
+								<settlement>Coimbra</settlement>,
+								<country>Portugal</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Departamento de Física</orgName> da
+							<orgName type="institution">Universidade de Aveiro</orgName>,
+							<address>
+								<addrLine>Campus de Santiago</addrLine>,
+								<postCode>3810-183</postCode>
+								<settlement>Aveiro</settlement>,
+								<country>Portugal</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="institution">CIDMA</orgName>,
+							<address>
+								<addrLine>Campus de Santiago</addrLine>,
+								<postCode>3810-183</postCode>
+								<settlement>Aveiro</settlement>,
+								<country>Portugal</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

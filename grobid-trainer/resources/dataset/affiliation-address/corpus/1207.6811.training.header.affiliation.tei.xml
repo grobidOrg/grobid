@@ -1,0 +1,77 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>a</marker>
+							<orgName type="department">Institut für Theoretische Physik</orgName>,
+							<orgName type="institution">Johann Wolfgang Goethe-Universität</orgName>,
+							<lb/>
+							<address>
+								<addrLine>Max-von-Laue-Str. 1</addrLine>,
+								<postCode>D-60438</postCode>
+								<settlement>Frankfurt am Main</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>b</marker>
+							<orgName type="department">Department of Physics</orgName>,
+							<address>
+								<postBox>P.O. Box 35 (YFL)</postBox>
+								<postCode>FI-40014</postCode>
+							</address>
+							<orgName type="institution">University of Jyväskylä</orgName>,
+							<address>
+								<country>Finland</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>c</marker>
+							<orgName type="institution">Frankfurt Institute for Advanced Studies</orgName>,
+							<address>
+								<addrLine>Ruth-Moufang-Str. 1</addrLine>,
+								<postCode>D-60438</postCode>
+								<settlement>Frankfurt am Main</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>d</marker>
+							<orgName type="department">MTA-KFKI</orgName>,
+							<orgName type="institution">Research Institute of Particle and Nuclear Physics</orgName>,
+							<address>
+								<postCode>H-1525</postCode>
+								<settlement>Budapest</settlement>,
+								<postBox>P.O.Box 49</postBox>,
+								<country>Hungary</country> and
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>e</marker>
+							<orgName type="department">Department of Physics</orgName>,
+							<orgName type="institution">Tsinghua University</orgName>,
+							<address>
+								<settlement>Beijing</settlement>
+								<postCode>100084</postCode>,
+								<country>China</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

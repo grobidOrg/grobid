@@ -1,0 +1,138 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2107.06011">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-28T14:41:33.859368Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-28T14:41:33.859368Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-28T14:51:46.269Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>Teaching Agents how to Map:<lb/> Spatial Reasoning for Multi-Object Navigation<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Pierre Marza 1 , Laetitia Matignon 2 , Olivier Simonin 3 and Christian Wolf 4<lb/></docAuthor>
+	</byline>
+
+	Project Page:
+	<note type="availability">https://</note>
+
+	<note type="funding">pierremarza.github.io/projects/teaching agents how to map/<lb/></note>
+
+	Abstract-
+	<div type="abstract">In the context of visual navigation, the capacity to<lb/> map a novel environment is necessary for an agent to exploit its<lb/> observation history in the considered place and efficiently reach<lb/> known goals. This ability can be associated with spatial rea-<lb/>soning, where an agent is able to perceive spatial relationships<lb/> and regularities, and discover object characteristics. Recent<lb/> work introduces learnable policies parametrized by deep neural<lb/> networks and trained with Reinforcement Learning (RL). In<lb/> classical RL setups, the capacity to map and reason spatially<lb/> is learned end-to-end, from reward alone. In this setting, we<lb/> introduce supplementary supervision in the form of auxiliary<lb/> tasks designed to favor the emergence of spatial perception<lb/> capabilities in agents trained for a goal-reaching downstream<lb/> objective. We show that learning to estimate metrics quantifying<lb/> the spatial relationships between an agent at a given location<lb/> and a goal to reach has a high positive impact in Multi-<lb/>Object Navigation settings. Our method significantly improves<lb/> the performance of different baseline agents, that either build<lb/> an explicit or implicit representation of the environment, even<lb/> matching the performance of incomparable oracle agents taking<lb/> ground-truth maps as input. A learning-based agent from the<lb/> literature trained with the proposed auxiliary losses was the<lb/> winning entry to the Multi-Object Navigation Challenge, part of<lb/> the CVPR 2021 Embodied AI Workshop.<lb/></div>
+
+	1
+	<byline>
+	<docAuthor>Pierre<lb/> Marza<lb/></docAuthor>
+	</byline>
+
+	is<lb/> with<lb/>
+	<byline>
+	<affiliation>LIRIS,<lb/> UMR<lb/> CNRS<lb/> 5205,<lb/> Université<lb/> de<lb/> Lyon,<lb/> INSA-Lyon,<lb/></affiliation>
+	</byline>
+
+	<address>Villeurbanne,<lb/> France.<lb/></address>
+
+	<email>pierre.marza@insa-lyon.fr</email>
+
+	,<lb/>
+
+			2 
+			
+	<byline>
+	<docAuthor>Laetitia Matignon</docAuthor>
+	</byline>
+
+	 is with
+			
+	<byline>
+	<affiliation>Univ Lyon, UCBL, CNRS,<lb/> INSA-Lyon, LIRIS, UMR5205,</affiliation>
+	</byline>
+
+	<address>F-69622 Villeurbanne, France.<lb/></address>
+
+	<email>laetitia.matignon@univ-lyon1.fr<lb/></email>
+
+	3
+
+	<byline>
+	<docAuthor>Olivier Simonin</docAuthor>
+	</byline>
+
+	is with
+	<byline>
+	<affiliation>INSA Lyon, CITI Lab, INRIA Chroma team,<lb/></affiliation>
+	</byline>
+
+	<address>Villeurbanne, France.</address>
+
+	<email>olivier.simonin@insa-lyon.fr<lb/></email>
+
+	4 
+    <byline>
+	<docAuthor>Christian<lb/> Wolf<lb/></docAuthor>
+	</byline>
+
+	 is<lb/> with<lb/> 
+
+	<byline>
+	<affiliation>Naver<lb/> Labs<lb/> Europe,</affiliation>
+	</byline>
+
+	<address>France<lb/></address>
+
+	<email>christian.wolf@naverlabs.com<lb/></email>
+
+	<idno>arXiv:2107.06011v4 [cs.CV]</idno>
+
+	<date>25 Apr 2023</date>
+
+		</front>
+	</text>
+
+</TEI>

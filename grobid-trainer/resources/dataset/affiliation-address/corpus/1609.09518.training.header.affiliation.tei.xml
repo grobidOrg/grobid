@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Department of Mechanical Science and Engineering</orgName>
+							<lb/>
+						</affiliation>
+                          
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="department">Department of Electrical and Computer Engineering</orgName>
+							<lb/>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="institution">University of Illinois at Urbana-Champaign</orgName>,
+							<address>
+								<settlement>Urbana</settlement>,
+								<region>Illinois</region>
+								<postCode>61801</postCode>,
+								<country>USA</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

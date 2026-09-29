@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">DISAT and Center for Computational Sciences</orgName>,
+							<orgName type="institution">Politecnico di Torino</orgName>,
+							<address>
+								<addrLine>Corso Duca degli Abruzzi 24</addrLine>,
+								<postCode>10129</postCode>
+								<settlement>Torino</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">Collegio Carlo Alberto</orgName>,
+							<address>
+								<addrLine>Via Real Collegio 30</addrLine>,
+								<postCode>10024</postCode>
+								<settlement>Moncalieri</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="institution">Human Genetics Foundation</orgName>,
+							<address>
+								<addrLine>Via Nizza 52</addrLine>,
+								<postCode>10126</postCode>
+								<settlement>Torino</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="department">DET</orgName>,
+							<orgName type="institution">Politecnico di Torino</orgName>,
+							<address>
+								<addrLine>Corso Duca degli Abruzzi 24</addrLine>,
+								<postCode>10129</postCode>
+								<settlement>Torino</settlement>,
+								<country>Italy</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

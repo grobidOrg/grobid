@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">School of Information Engineering</orgName> and
+							<orgName type="department">with Postdoctoral Research Station of Environmental Science<lb/> and Engineering</orgName>,
+							<orgName type="institution">Nanchang University</orgName>,
+							<address>
+								<country>P.R. China</country>,
+								<postCode>330031</postCode>,
+							</address>
+						</affiliation>
+
+					<affiliation>
+							<orgName type="department">Department of Electrical and Computer Engineering</orgName>
+							<lb/> at
+							<orgName type="institution">Utah State University</orgName>,
+							<address>
+								<settlement>Logan</settlement>,
+								<region>UT</region>
+								<postCode>84322</postCode>
+								<country>USA</country>
+							</address>
+					</affiliation>
+
+					<affiliation>
+							<orgName type="department">Department of Electronic Engineering</orgName>,
+							<orgName type="institution">Shanghai Jiao Tong University</orgName>,
+							<address>
+								<country>P. R. China,</country>
+								<postCode>200240</postCode>
+							</address>
+					</affiliation>
+
+					<affiliation>
+							<orgName type="department">Electrical and Computer Engineering Department</orgName>,
+							<orgName type="institution">Utah State University</orgName>,
+							<address>
+								<settlement>Logan</settlement>,
+								<region>UT</region>
+								<postCode>84322</postCode>
+								<country>USA</country>
+							<lb/>
+							</address>
+					</affiliation>
+
+					<affiliation>
+							<orgName type="department">School of Information Engineering</orgName>,
+							<orgName type="institution">Nanchang University</orgName>,
+							<address>
+								<country>P. R. China</country>,
+								<postCode>330031</postCode>
+							</address>
+					</affiliation>
+
+					<affiliation>
+							<orgName type="department">Department of Electronic and Electrical Engineering</orgName>,
+							<orgName type="institution">University College London</orgName>,
+							<address>
+								<postCode>WC1E 7JE</postCode>,
+								<country>United<lb/> Kingdom</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

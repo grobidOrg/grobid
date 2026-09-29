@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>*</marker>
+							<orgName type="laboratory">Laboratoire J. Kuntzmann</orgName>,
+							<orgName type="institution">Université de Grenoble.</orgName>
+							<address>
+								<addrLine>51, rue des Mathématiques</addrLine>,
+							</address>
+						</affiliation>
+
+					  <affiliation>
+					<orgName type="laboratory">umr<lb/> CNRS 5224</orgName>,
+							<address>
+								<postCode>bp 53X</postCode>,
+								<postCode>F38041</postCode>
+								<settlement>Grenoble</settlement>,
+								<country>France</country>,
+							</address>
+
+					  
+							<orgName type="institution">Claude Shannon Institute of the<lb/> University College Dublin</orgName>,
+							<address>
+								<country>Ireland,</country> under
+							</address>
+						</affiliation>
+						<affiliation>
+							<marker>a</marker>
+							<orgName type="laboratory">CNRS grant.<lb/> † Laboratoire LIG</orgName>,
+							<orgName type="institution">Université de Grenoble. umr CNRS</orgName>,
+							<orgName type="laboratory">F38330 Montbonnot</orgName>,
+							<address>
+								<country>France</country>.
+							<lb/>
+							</address>
+							<orgName type="institution">University Complutense</orgName>,
+							<address>
+								<settlement>Madrid</settlement>,
+							<lb/>
+								<country>Spain.</country>
+							<lb/>
+							</address>
+						</affiliation>
+						<affiliation>
+							<marker>‡</marker>
+							<orgName type="institution">University of Delaware</orgName>,
+							<orgName type="department">Computer and Information Science Department</orgName>.
+							<address>
+								<settlement>Newark</settlement> /
+								<region>DE</region> /
+							<lb/>
+								<postCode>19716</postCode>,
+								<country>USA.</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

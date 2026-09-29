@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>a</marker>
+							<orgName type="institution">Instituto Nacional de Astrofísica</orgName>,
+							<orgName type="department">Óptica y Electrónica</orgName>,
+							<address>
+								<addrLine>Luis Enrique Erro 1</addrLine>,
+								<addrLine>Tonantzintla</addrLine>,
+							<lb/>
+								<region>Puebla</region>
+								<postCode>72840</postCode>,
+								<country>México</country>
+							<lb/>
+							</address>
+						</affiliation>
+                          
+						<affiliation>
+							<marker>b</marker>
+							<orgName type="department">Facultad de Ciencias Físico Matemáticas</orgName>,
+							<orgName type="institution">Benemérita Universidad Autónoma de Puebla</orgName>,
+							<lb/>
+							<orgName type="institution">Ciudad Universitaria</orgName>,
+							<address>
+								<settlement>Colonia San Manuel Puebla</settlement>,
+								<country>México</country>
+							<lb/>
+							</address>
+                        </affiliation>
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>
