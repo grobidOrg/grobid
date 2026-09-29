@@ -248,4 +248,19 @@ public class UnicodeUtil {
         // parano sanitising
         return NORMALISE_REGEX_PATTERN.matcher(normaliseText(text)).replaceAll("");
     }
+
+    /**
+     * Removes spaces and newlines from a token text, without normalising it.
+     * To be used on tokens that come from an already normalised text: normalising a
+     * sub-token again is not safe, because some rules depend on the surrounding
+     * characters (e.g. the middle dot in "MgSO4·12H2O" is preserved in the full
+     * token, but the isolated sub-token "·12" would be rewritten to "•12").
+     * @param text token text, already normalised
+     * @return the token text without spaces, legible for Wapiti feature generation
+     */
+    public static String removeSpaces(String text) {
+        if (text == null)
+            return null;
+        return NORMALISE_REGEX_PATTERN.matcher(text).replaceAll("");
+    }
 }
