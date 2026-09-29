@@ -28,9 +28,22 @@ public class AnnotatedXMLElement {
     private OffsetPosition offsetPosition;
     private Element annotationNode;
 
+    /**
+     * The extracted entity this annotation was derived from (a Funding, Person or Affiliation).
+     * Kept so that, when an annotation cannot be injected back into the XML, the corresponding
+     * entity can be identified and dropped by reference instead of by fragile text matching.
+     */
+    private Object entity;
+
     public AnnotatedXMLElement(Element annotationNode, OffsetPosition offsetPosition) {
         this.annotationNode = annotationNode;
         this.offsetPosition = offsetPosition;
+    }
+
+    public AnnotatedXMLElement(Element annotationNode, OffsetPosition offsetPosition, Object entity) {
+        this.annotationNode = annotationNode;
+        this.offsetPosition = offsetPosition;
+        this.entity = entity;
     }
 
     public OffsetPosition getOffsetPosition() {
@@ -47,5 +60,13 @@ public class AnnotatedXMLElement {
 
     public void setAnnotationNode(Element annotationNode) {
         this.annotationNode = annotationNode;
+    }
+
+    public Object getEntity() {
+        return entity;
+    }
+
+    public void setEntity(Object entity) {
+        this.entity = entity;
     }
 }
