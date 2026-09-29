@@ -1,0 +1,282 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.5771__2699-1284-2024-3-149">
+    <titleStmt>
+      <title level="a">Legal status of Derived Text Formats – 2nd deliverable of Text+ AG Legal and Ethical Issues –</title>
+      <author>
+        <persName>
+          <forename>Gianna</forename>
+          <surname>Iacino</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Paweł</forename>
+          <surname>Kamocki</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Keli</forename>
+          <surname>Du</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Christof</forename>
+          <surname>Schöch</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Andreas</forename>
+          <surname>Witt</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Philippe</forename>
+          <surname>Genêt</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>José Calvo</forename>
+          <surname>Tello</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Nomos Verlag</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2024</date>
+      <idno type="DOI">10.5771/2699-1284-2024-3-149</idno>
+      <ptr target="https://doi.org/10.5771/2699-1284-2024-3-149"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Gianna Iacino, Paweł Kamocki, Keli Du, Christof Schöch, Andreas Witt, Philippe Genêt, José Calvo Tello. (2024). Legal status of Derived Text Formats – 2nd deliverable of Text+ AG Legal and Ethical Issues –. RuZ - Recht und Zugang, 5(3), 149-172. DOI: 10.5771/2699-1284-2024-3-149</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Legal status of Derived Text Formats – 2nd deliverable of Text+ AG Legal and Ethical Issues –</title>
+          <author>
+            <persName>
+              <forename>Gianna</forename>
+              <surname>Iacino</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Paweł</forename>
+              <surname>Kamocki</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Keli</forename>
+              <surname>Du</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Christof</forename>
+              <surname>Schöch</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Andreas</forename>
+              <surname>Witt</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Philippe</forename>
+              <surname>Genêt</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>José Calvo</forename>
+              <surname>Tello</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">RuZ - Recht und Zugang</title>
+          <imprint>
+            <biblScope unit="volume">5</biblScope>
+            <biblScope unit="issue">3</biblScope>
+            <biblScope unit="page" from="149" to="172">149-172</biblScope>
+            <date when="2024">2024</date>
+            <publisher>Nomos Verlag</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.5771/2699-1284-2024-3-149</idno>
+        <ptr target="https://doi.org/10.5771/2699-1284-2024-3-149"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:23:02.849626Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:23:02.849626Z" status="extraction">
+      <note type="label">2 Schulze</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-10T11:48:43.410Z" status="unfinished" who="#sandfort">
+      <desc>unfinished</desc>
+    </change>
+    <change when="2026-03-10T12:19:52.008Z" status="unfinished" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-13T13:30:34.866Z" status="draft" who="#sandfort">
+      <desc>1. Finished</desc>
+    </change>
+    <change when="2026-03-14T09:07:18.103Z" status="draft" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-14T09:24:57.470Z" status="checked" who="#schulze">
+      <desc>2 pass done</desc>
+    </change>
+    <change when="2026-04-04T14:30:29.928Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-04T14:38:30.075Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> Directive (EU) 2019/790 of the European Parliament and of the Council of 17 April 2019 on<lb/> copyright and related rights in the Digital Single Market and amending Directives 96/9/EC<lb/> and 2001/29/EC, DSM Directive, https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?<lb/> uri=CELEX:32019L0790.<lb/> </bibl>
+        <bibl><label>2</label> See art. 2.2 DSM Directive.<lb/> </bibl>
+        <bibl><label>3</label> For a comprehensive analysis of the TDM exceptions in the DSM Directive, their transpo<lb/> sition into German law and the limitations concerning storage, publication and re-use of<lb/> datasets, see: G. Iacino, P. Kamocki, P. Leinen, Assessment of the Impact of the DSM-Direc<lb/> tive on Text+, https://zenodo.org/doi/10.5281/zenodo.12759959.<lb/> </bibl>
+        <bibl><label>4</label> See e.g., Y. Lin, J.-B. Michel, E. Aiden Lieberman, J. Orwant, W. Brockman, S. Petrov,<lb/> Syntactic Annotations for the Google Books NGram Corpus, in: Proceedings of the ACL<lb/> 2012 System Demonstrations, Association for Computational Linguistics, Jeju Island, Korea,<lb/> 2012, pp. 169-174, https://aclanthology.org/P12-3029; </bibl>
+<bibl>S. Bhattacharyya, P. Organisciak, J. S.<lb/> Downie, A Fragmentizing Interface to a Large Corpus of Digitized Text: (Post)humanism and<lb/> Non-consumptive Reading via Features, Interdisciplinary Science Reviews 40 (2015) 61-77,<lb/> http://www.tandfonline.com/doi/; </bibl>
+          <bibl>J. Jett, B. Capitanu, D. Kudeki, T. Cole, Y. Hu, P. Organis<lb/> ciak, T. Underwood, E. Dickson Koehl, R. Dubnicek, J. S. Downie, The HathiTrust Research<lb/> Center Extracted Features Dataset (2.0), 2020, https://wiki.htrc.illinois.edu/pages/viewpage<lb/> .action?pageId= 79069329, doi:10.13012/R2TE-C227; </bibl>
+<bibl>C. Schöch, F. Döhl, A. Rettinger, E.<lb/> Gius, P. Trilcke, P. Leinen, F. Jannidis, M. Hinzmann, J. Röpke, Abgeleitete Textformate: Text<lb/> und Data Mining mit urheberrechtlich geschützten Textbeständen (2020), http://zfdg.de/202<lb/> 0_006. doi:10.17175/2020_006; </bibl>
+          <bibl>P. Organisciak, J. S. Downie, Research access to in-copyright<lb/> texts in the humanities, in: Information and Knowledge Organisation in Digital Humanities,<lb/> Routledge, 2021, pp. 157-177.<lb/> </bibl>
+        <bibl><label>5</label> J. Baudry (2023), Non-consumptive research use, an analysis of the legal situation, on<lb/> Couperin.org, https://www.couperin.org/le-consortium/actus/non-consumptive-research-us<lb/> e/.<lb/> </bibl>
+        <bibl><label>6</label> Some authors distinguish between "token-based" and "vector-based" DTF, see Schöch et al.<lb/> 2020, F. Barth, J. Calvo Tello, K. Du, P. Genêt, L. Keller, J. Knappen, Liste der Abgeleiteten<lb/> Textformate (working title), forthcoming, 2025.<lb/> </bibl>
+<bibl type="footnote"><label>7</label> Note that for a number of kinds of statistical DTFs, a conversion into transformative DTFs<lb/> with identical information content is possible, and vice versa, so that these two types are not<lb/> necessarily fundamentally different.<lb/> </bibl>
+<bibl><label>8</label> https://textgridrep.org/search?query=&amp;order=relevance&amp;limit=20&amp;mode=list&amp;filter=format<lb/> :application%2Fxml%3Bderived%3Dtrue&amp;filter=project.id%3ATGPR-8b44ca41-6fa1-9b49-<lb/>67b7-6374d97e29eb.<lb/> </bibl>
+<bibl><label>9</label> See e.g. C. Schöch, F. Döhl, A. Rettinger, E. Gius, P. Trilcke, P. Leinen, F. Jannidis, M.<lb/> Hinzmann, J. Röpke, Abgeleitete Textformate: Text und Data Mining mit urheberrechtlich<lb/> geschützten Textbeständen (2020), http://zfdg.de/2020_006,. doi:10.17175/2020_006; </bibl>
+          <bibl>Hessel,<lb/> J., &amp; Schofield, A. (2021, August). How effective is BERT without word ordering? implica<lb/> tions for language understanding and data privacy. In Proceedings of the 59th Annual Meeting<lb/> of the Association for Computational Linguistics and the 11th International Joint Conference<lb/> on Natural Language Processing (Volume 2: Short Papers) (pp. 204-211); </bibl>
+          <bibl>Keli Du &amp; Christof<lb/> Schöch: "Shifting Sentiments? What happens to BERT-based Sentiment Classification when<lb/> derived text formats are used for fine-tuning" (long presentation). In: Karajgikar, J., Janco, A.,<lb/> &amp; Otis, J. (2024). DH2024 Book of Abstracts. Zenodo, https://doi.org/10.5281/zenodo.13761<lb/> 079.<lb/> </bibl>
+        <bibl><label>10</label> See § 64 Urheberrechtsgesetz (UrhG) for the German legal framework, https://www.gesetze<lb/> -im-internet.de/englisch_urhg/.<lb/> </bibl>
+        <bibl><label>11</label> See § 5 UrhG.<lb/> </bibl>
+        <bibl><label>12</label> The Court of Justice of the European Union ruled that texts as short as 11 consecutive words<lb/> can be protected by copyright; however, very short texts (around 4 words and shorter) are<lb/> generally regarded as too short to be protected by copyright, see CJEU, judgement of 16<lb/> July 2009, Infopaq, Case C-5/08, ECLI:EU:C:2009:465, https://curia.europa.eu/juris/docum<lb/> ent/document.jsf?docid=72482&amp;doclang=EN.<lb/> </bibl>
+        <bibl><label>13</label> See e.g. LG München I, Urteil vom 12.12.2017, 33 O 15792/16, https://openjur.de/u/970910.<lb/> html.<lb/> </bibl>
+        <bibl><label>14</label> Directive 2001/29/EC of the European Parliament and of the Council of 22 May 2001 on the<lb/> harmonisation of certain aspects of copyright and related rights in the information society,<lb/> InfoSoc Directive, https://eur-lex.europa.eu/eli/dir/2001/29/oj.<lb/> </bibl>
+        <bibl><label>15</label> WTO, Report of the Panel, WT/DS160/R, 15 June 2000, para 6.229.<lb/> </bibl>
+        <bibl><label>16</label> M. Senftleben, The International Three-Step Test: A Model Provision for EC Fair Use<lb/> Legislation, 1 (2010) JIPITEC 67, para. 1, https://www.jipitec.eu/archive/issues/jipitec-1-2-2<lb/> 010/2605/JIPITEC%202%20-%20Senftleben-Three%20Step%20Test.pdf.<lb/> </bibl>
+        <bibl><label>17</label> See esp. M. Senftleben, The International Three-Step Test: A Model Provision for EC Fair<lb/> Use Legislation, 1 (2010) Journal of Intellectual Property, Information Technology and<lb/> E-Commerce Law, Vol. 1, No. 2, pp. 67-82; </bibl>
+          <bibl>see also Gervais, Daniel J., Towards a New Core<lb/> International Copyright Norm: The Reverse Three-Step Test, SRRN, https://ssrn.com/abstr<lb/> act=499924.<lb/> </bibl>
+        <bibl><label>18</label> The beneficiaries mentioned in the DSM directive are limited to research organisations<lb/> (including universities and public research institutes) and cultural heritage institutions<lb/> (libraries, museums, archives…). Going beyond the wording of the DSM Directive, the Ger<lb/> man transposition adds to the list "citizen scientists", i.e. researchers without academic affili<lb/> ation, as long as they are acting for non-commercial purposes. This addition was possible<lb/> due to a creative fusion of Art. 3 of the DSM Directive with the "general" exception for non-<lb/>commercial scientific research in Art. 5(3)(a) DSM DIrective.<lb/> </bibl>
+        <bibl><label>19</label> For a more detailed analysis of § 60 d UrhG, G. Iacino, P. Kamocki, P. Leinen, Assessment of<lb/> the Impact of the DSM-Directive on Text+.<lb/> </bibl>
+        <bibl><label>20</label> BeckOK UrhR/Grübler, 42. Ed. 1.5.2024, UrhG § 60c Rn. 5; </bibl>
+          <bibl>Dreier/Schulze/Dreier, 7. Aufl.<lb/> 2022, UrhG § 60c Rn. 1.<lb/> </bibl>
+        <bibl><label>21</label> LG Hamburg, Urteil vom 27.9.2024, Az.: 310 O 227/23, Rz. 113, https://openjur.de/u/24956<lb/> 51.html.<lb/> </bibl>
+        <bibl><label>22</label> See Recital 9 DSM Directive.<lb/> </bibl>
+        <bibl><label>23</label> CJEU, judgement of 26 April 2017, Stichting Brein, Case C-527/15, ECLI:EU:C:2017:300:<lb/> https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=190142&amp;pageIndex=0&amp;<lb/> doclang=EN&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=8019316.<lb/> </bibl>
+        <bibl><label>24</label> CJEU, Infopaq, para 64.<lb/> </bibl>
+        <bibl><label>25</label> CJEU, order of 17 January 2012, Infopaq II, Case C-302/10, ECLI:EU:C:2012,16,para<lb/> 39, https://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=118441&amp;pageIndex=<lb/> 0&amp;doclang=EN&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=8021836.<lb/> </bibl>
+          <bibl><label>26</label> Recital 33 of the InfoSoc Directive; CJEU, Infopaq II, para 42.<lb/> </bibl>
+        <bibl><label>27</label> CJEU, Infopaq II, para 54.<lb/> </bibl>
+        <bibl><label>28</label> CJEU, Infopaq, para 39.<lb/> </bibl>
+        <bibl><label>29</label> CJEU, Infopaq, para 50.<lb/> </bibl>
+        <bibl><label>30</label> CJEU, Pelham, 29 July 2019, para 39.<lb/> </bibl>
+        <bibl><label>31</label> CJEU, Infopaq, para 45-46.<lb/> </bibl>
+        <bibl><label>32</label> CJEU, Infopaq, para 47-48.<lb/> </bibl>
+        <bibl><label>33</label> First formulated in A. Elster, Gewerblicher rechtsschutz, umfassend Urheber-und Verlags<lb/> recht, Patent-und Musterschutzrecht, Warenzeichenrecht und Wettbewerbsrecht, De Gruy<lb/> ter, 1921.<lb/> </bibl>
+        <bibl><label>34</label> OLG Düsseldorf, 28.2.1964, 2 U 76/63.<lb/> </bibl>
+        <bibl><label>35</label> OLG Frankfurt, 4.8.1986, 6 W 134/8.<lb/> </bibl>
+        <bibl><label>36</label> LG Mannheim, 11.12.2009, 7 O 343/08.<lb/> </bibl>
+        <bibl><label>37</label> OLG Köln, 8.4.2016, 6 U 120/15.<lb/> </bibl>
+        <bibl><label>38</label> OLG Köln, 30.9.2011, I-6 U 82/11.<lb/> </bibl>
+        <bibl><label>39</label> LG Frankenthal, 3.11.2020, 6 O 102/20.<lb/> </bibl>
+        <bibl><label>40</label> OLG Köln, 8.4.2016, 6 U 120/15.<lb/> </bibl>
+        <bibl><label>41</label> CJEU, Infopaq, para 50.<lb/> </bibl>
+        <bibl><label>42</label> K. Du (2024), Rekonstruierbarkeit von abgeleiteten Textformaten, https://events.gwdg.de/ev<lb/> ent/607/contributions/1408/.<lb/> </bibl>
+        <bibl><label>43</label> K. Kugler, S. Münker, J. Höhmann, A. Rettinger (2023), InvBERT: Reconstructing Text<lb/> from Contextualized Word Embeddings by inverting the BERT pipeline, Journal of Compu<lb/> tational Literary Studies 2(1), 1-18, doi: https://doi.org/10.48694/jcls.3572.<lb/> </bibl>
+        <bibl><label>44</label> B. Raue, C. Schöch, Zugang zu großen Textkorpora…; </bibl>
+          <bibl>cf. in the context of anonymisation of<lb/> personal data Recital 26 of the GDPR.<lb/> </bibl>
+        <bibl><label>45</label> CJEU, C-476/17, Pelham, 29 July 2019, para 39.<lb/> </bibl>
+        <bibl><label>46</label> M. Senftleben, Flexibility Grave -Partial Reproduction Focus and Closed System Fetishism<lb/> in CJEU, Pelham, IIC, 2020, 51, pp.751 -769. </bibl>
+          <bibl>See also K. Grisse, Nutzbarmachung urheber<lb/> rechtlich geschützter Textbestände für die Forschung durch Dritte -Rechtliche Bedingungen<lb/> und Möglichkeiten, Recht und Zugang, 2020, 2, pp. 143-159.<lb/> </bibl>
+<bibl><label>47</label> Ibid.<lb/> </bibl>
+        <bibl><label>48</label> K. Chang, M. Cramer, S. Soni, D. Bamman, (2023, December). Speak, Memory: An Archae<lb/> ology of Books Known to ChatGPT/GPT-4 (2023), in: Proceedings of the 2023 Conference<lb/> on Empirical Methods in Natural Language Processing (pp. 7312-7327).<lb/> </bibl>
+
+          <bibl>Bibliography<lb/> </bibl>
+          <bibl>https:&gt;https://zfdg.de/2020_006<lb/> </bibl>
+          <bibl>https://www.nomos-elibrary.de/10.5771/2699-1284-2020-2-118/zugang-zu-grossen-te<lb/> xtkorpora-des-20-und-21-jahrhunderts-mit-hilfe-abgeleiteter-textformate-versoehnun<lb/> g-von-urheberrecht-und-textbasierter-forschung-jahrgang-1-2020-heft-2?page=1<lb/> </bibl>
+          <bibl>https://www.nomos-elibrary.de/10.5771/2699-1284-2020-2-143.pdf<lb/> </bibl>
+          <bibl>https://www.nomos-elibrary.de/10.5771/2699-1284-2020-2-128.pdf<lb/> </bibl>
+          <bibl>Keli Du &amp; Christof Schöch: "Shifting Sentiments? What happens to BERT-based<lb/> Sentiment Classification when derived text formats are used for fine-tuning" (long pre<lb/> sentation). In: Karajgikar, J., Janco, A., &amp; Otis, J. (2024). DH2024 Book of Abstracts.<lb/> Zenodo. https://doi.org/10.5281/zenodo.13761079.<lb/> </bibl>
+<bibl>Kent Chang, Mackenzie Cramer, Sandeep Soni, and David Bamman. 2023. Speak,<lb/> Memory: An Archaeology of Books Known to ChatGPT/GPT-4. In Proceedings of<lb/> the 2023 Conference on Empirical Methods in Natural Language Processing, pages<lb/> 7312-7327, Singapore. Association for Computational Linguistics. https://doi.org/10.1<lb/> 8653/v1/2023.emnlp-main.453.<lb/> </bibl>
+<bibl>Karina Grisse, "Nutzbarmachung urheberrechtlich geschützter Textbestände für die<lb/> Forschung durch Dritte -Rechtliche Bedingungen und Möglichkeiten", Recht und<lb/> Zugang, 2020, 2, pp. 143-159.<lb/> </bibl>
+<bibl>Kai Kugler, Simon Münker, Johannes Höhmann, &amp; Achim Rettinger (2023),<lb/> "InvBERT: Reconstructing Text from Contextualized Word Embeddings by inverting<lb/> the BERT pipeline", Journal of Computational Literary Studies 2(1), 1-18. doi: https://<lb/> doi.org/10.48694/jcls.3572.<lb/> </bibl>
+<bibl>Y. Lin, J.-B. Michel, E. Aiden Lieberman, J. Orwant, W. Brockman, S. Petrov, Syntac<lb/> tic Annotations for the Google Books NGram Corpus, in: Proceedings of the ACL<lb/> 2012 System Demonstrations, Association for Computational Linguistics, Jeju Island,<lb/> Korea, 2012, pp. 169-174. URL: https://aclanthology.org/P12-3029.<lb/> </bibl>
+<bibl>S. Bhattacharyya, P. Organisciak, J. S. Downie, A Fragmentizing Interface to a Large<lb/> Corpus of Digitized Text: (Post)humanism and Non-consumptive Reading via Fea<lb/> tures, Interdisciplinary Science Reviews 40 (2015) 61-77. URL: http://www.tandfonli<lb/> VI.<lb/> ne.com/doi/full/10.1179/0308018814Z.000000000105. doi:10.1179/0308018814Z.00000<lb/> 0000105.<lb/> </bibl>
+<bibl>J. Jett, B. Capitanu, D. Kudeki, T. Cole, Y. Hu, P. Organisciak, T. Underwood,<lb/> E. Dickson Koehl, R. Dubnicek, J. S. Downie, The HathiTrust Research Center<lb/> Extracted Features Dataset (2.0), 2020. URL: https://wiki.htrc.illinois.edu/pages/viewp<lb/> age.action?pageId=79069329. doi:10.13012/R2TE-C227.<lb/> </bibl>
+<bibl>C. Schöch, F. Döhl, A. Rettinger, E. Gius, P. Trilcke, P. Leinen, F. Jannidis, M. Hinz<lb/> mann, J. Röpke, Abgeleitete Textformate: Text und Data Mining mit urheberrechtlich<lb/> geschützten Textbeständen (2020). URL: http://zfdg.de/2020_006. doi:10.17175/2020_<lb/>
+        006.<lb/> </bibl>
+          <bibl>P. Organisciak, J. S. Downie, Research access to in-copyright texts in the humanities,<lb/> in: Information and Knowledge Organisation in Digital Humanities, Routledge, 2021,<lb/> pp. 157-177.<lb/> </bibl>
+<bibl>P. Organisciak, B. Capitanu, T. Underwood, J. S. Downie, Access to Billions of Pages<lb/> for Large-Scale Text Analysis, iConference 2017 Proceedings Vol. 2 (2017). URL:<lb/> https://hdl.handle.net/2142/98873.<lb/> </bibl>
+<bibl>N. N. Parulian, R. Dubnicek, G. Worthey, D. J. Evans, J. A. Walsh, J. S. Downie,<lb/> Uncovering Black Fantastic: Piloting A Word Feature Analysis and Machine Learning<lb/> Approach for Genre Classification, Proceedings of the Association for Information<lb/> Science and Technology 59 (2022) 242-250. URL: https://onlinelibrary.wiley.com/doi/<lb/> 10.1002/pra2.620. doi:10.1002/pra2.620.<lb/> </bibl>
+<bibl>Michel, J. B., Shen, Y. K., Aiden, A. P., Veres, A., Gray, M. K., Google Books Team,...<lb/>
+&amp; Aiden, E. L. (2011). Quantitative analysis of culture using millions of digitized<lb/> books. science, 331(6014), 176-182.<lb/> </bibl>
+<bibl>Richey, S., &amp; Taylor, J. B. (2020). Google Books Ngrams and political science: Two<lb/> validity tests for a novel data source. PS: Political Science &amp; Politics, 53(1), 72-77.<lb/> </bibl>
+<bibl>El-Ebshihy, A., El-Makky, N. M., &amp; Nagi, K. (2018). Using Google Books Ngram in<lb/> Detecting Linguistic Shifts over Time. In KDIR (pp. 330-337).<lb/> </bibl>
+<bibl>Hessel, J., &amp; Schofield, A. (2021, August). How effective is BERT without word<lb/> ordering? implications for language understanding and data privacy. In Proceedings of<lb/> the 59th Annual Meeting of the Association for Computational Linguistics and the<lb/> 11 th International Joint Conference on Natural Language Processing (Volume 2: Short<lb/> Papers) (pp. 204-211).<lb/> </bibl>
+<bibl>G. Iacino, P. Kamocki, P. Leinen, Assessment of the Impact of the DSM-Directive on<lb/>
+Text+<lb/> </bibl>
+          <bibl>F. Barth, J. Calvo Tello, K. Du, P. Genêt, L. Keller, J. Knappen, Liste der Abgeleiteten<lb/> Textformate (working title), forthcoming, 2025.<lb/> </bibl>
+<bibl>J. Baudry (2023). Non-consumptive research use, an analysis of the legal situation, on<lb/> Couperin.org, https://www.couperin.org/le-consortium/actus/non-consumptive-resea<lb/> rch-use/.<lb/> </bibl>
+<bibl>WTO, Report of the Panel, WT/DS160/R, 15 June 2000, para 6.229.<lb/> </bibl>
+          <bibl>Martin Senftleben, The International Three-Step Test: A Model Provision for EC Fair<lb/> Use Legislation, 1 (2010) Journal of Intellectual Property, Information Technology and<lb/> E-Commerce Law, Vol. 1, No. 2, pp. 67-82.<lb/> </bibl>
+<bibl>Gervais, Daniel J., Towards a New Core International Copyright Norm: The Reverse<lb/> Three-Step Test. Available at SSRN: https://ssrn.com/abstract=499924.<lb/> </bibl>
+          <bibl>BeckOK UrhR/Grübler, 42. Ed. 1.5.2024, UrhG § 60c Rn<lb/> </bibl>
+          <bibl>Dreier/Schulze/Dreier, 7. Aufl. 2022, UrhG § 60c Rn. 1<lb/> </bibl>
+<bibl>First formulated in A. Elster, Gewerblicher rechtsschutz, umfassend Urheber-und<lb/> Verlagsrecht, Patent-und Musterschutztrecht, Warenzeichenrecht und Wettbewerbs<lb/> recht, De Gruyter, 1921.<lb/> </bibl>
+<bibl>N. Carlini et al., "Extracting Training Data from Large Language Models" in: Pro<lb/> ceedings of the 30th USENIX Security Symposium (August 11-13, 2021), USENIX<lb/> Association, 2021, pp. 2633-2650.<lb/> </bibl>
+<bibl>Keli Du (2024), "Rekonstruierbarkeit von abgeleiteten Textformaten", https://events.g<lb/> wdg.de/event/607/contributions/1408/.<lb/> </bibl>
+<bibl>M. Senftleben, "Flexibility Grave -Partial Reproduction Focus and Closed System<lb/> Fetishism in CJEU, Pelham", IIC, 2020, 51, pp.751 -769.<lb/> </bibl>
+<bibl>Calvo Tello, José, Mathias Göbel, Ubbo Veentjer, Stefan E. Funk, Nanette Rißler-<lb/>Pipika, and Keli Du. 2025 (accepted). 'FAIR Derived Data in TEI and Its Publication<lb/> in the TextGrid Repository'. jTEI.<lb/> </bibl>
+<bibl>Burnard, Lou. 2004. 'Metadata for Corpus Work'. In Developing Linguistic Corpora:<lb/> A Guide to Good Practice, edited by Martin Wynne. Oxford: AHDS Literature, Lan<lb/> guages and Linguistics. https://ota.ox.ac.uk/documents/creating/dlc/chapter3.htm.<lb/> </bibl>
+<bibl>Wilkinson, Mark D., Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Apple<lb/> ton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. 'The FAIR Guiding<lb/> Principles for Scientific Data Management and Stewardship'. Scientific Data 3 (March).<lb/> https://doi.org/10.1038/sdata.2016.18.</bibl>
+
+        </listBibl>
+    </text>
+
+
+</TEI>

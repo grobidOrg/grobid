@@ -1,0 +1,544 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.26031__2023.001">
+    <titleStmt>
+      <title level="a">Futurities of Law. Toward the Legal Design of the Next Society</title>
+      <author>
+        <persName>
+          <forename>Malte-Christian</forename>
+          <surname>Gruber</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="dfejzo">Daniel Fejzo</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Ancilla Iuris</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2023</date>
+      <idno type="DOI">10.26031/2023.001</idno>
+      <ptr target="https://www.anci.ch/articles/820"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Malte-Christian Gruber. (2023). Futurities of Law. Toward the Legal Design of the Next Society. DOI: 10.26031/2023.001</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Futurities of Law. Toward the Legal Design of the Next Society</title>
+          <author>
+            <persName>
+              <forename>Malte-Christian</forename>
+              <surname>Gruber</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <imprint>
+            <date when="2023">2023</date>
+            <publisher>Ancilla Iuris</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.26031/2023.001</idno>
+        <ptr target="https://www.anci.ch/articles/820"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-22T16:06:14.381267Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-70-g77a8a2219</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-22T16:06:14.381267Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-26T13:10:54.641Z" status="unfinished" who="#dfejzo">
+      <note type="label">v2 (dfejzo)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-29T10:43:20.647Z" status="draft" who="#dfejzo">
+      <desc>Revision 1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-03T16:20:38.623Z" status="unfinished" who="#dfejzo">
+      <desc>Revision 1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-06T16:03:40.124Z" status="unfinished" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Revision 1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-06T16:09:30.116Z" status="unfinished" who="#kazuyo">
+      <desc>Revision 1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-08T14:07:33.163Z" status="unfinished" who="#kazuyo">
+      <desc>Revision 1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-08T14:24:04.395Z" status="checked" who="#kazuyo">
+      <desc>Revision 1st pass Daniel</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label><lb/> For R.W. from M.G. in memory of the "3rd Floor"! For valuable comments<lb/> and suggestions I would like to thank Alina De Col, Andreas Fischer-Les-<lb/>cano, Fabienne Graf, Dario Haux, Steve Howe, Vaios Karavas, Michele<lb/> Luminati, Suad Salihu and Gunther Teubner. The German version of this<lb/> article was written as part of the Lucerne SNSF project "Future Gener-<lb/>ations in Swiss and European Private Law", first published in: Archiv für<lb/> Rechts-und Sozialphilosophie 107 (2021), 367-391.<lb/></bibl>
+
+      <bibl><label>1</label><lb/> Für R.W. von M.G. in Erinnerung an den "3. Stock"! Für wertvolle Kom-<lb/>mentare und Anregungen danke ich Alina De Col, Andreas Fischer-Les-<lb/>cano, Fabienne Graf, Dario Haux, Steve Howe, Vaios Karavas, Michele<lb/> Luminati, Suad Salihu und Gunther Teubner. Der Beitrag ist im Rahmen<lb/> des vom Schweizerischen Nationalfonds (SNF) geförderten Projekts<lb/> "Future Generations in Swiss and European Private Law" entstanden.<lb/></bibl>
+
+      <bibl><label>2</label> Rudolf v. Jhering, Unsere Aufgabe, in: Gerber/Jhering (eds.), Jahrbücher<lb/> für die Dogmatik des heutigen römischen und deutschen Privatrechts,<lb/> vol. I (1857), 1-52, 2.<lb/></bibl>
+      <bibl><label>3</label><lb/> Cf. ibid, 16.<lb/></bibl>
+      <bibl><label>4</label> Cf. Rudolf Wiethölter, Zur Regelbildung in der Dogmatik des Zivil-<lb/>rechts, in: Zumbansen/Amstutz (eds.), Recht in Recht-Fertigungen<lb/> (1992/2014), 143-160, 146.<lb/></bibl>
+      <bibl><label>5</label><lb/> Cf. Bernhard Windscheid, Recht und Rechtswissenschaft (Leipziger<lb/> Rektoratsrede, 31 October 1884), in: Häuser (ed.), Die Leipziger Rek-<lb/>toratsreden 1871-1933 (2009), 375-386, 383.<lb/></bibl>
+      <bibl><label>6</label> See the interesting switch between civil and constitutional judicial<lb/> observation perspectives in this regard: BVerfG, Order of 12.12.2012<lb/> -2 BvR 1750/12, MDR 2013, 294.<lb/></bibl>
+      <bibl><label>7</label><lb/> Cf. Rudolf Wiethölter, Rechtswissenschaft (1968/1986), 38, with direct<lb/> reference to Bernhard Windscheid;</bibl>
+      <bibl> also Wiethölter, Anforderungen an<lb/> den Juristen heute, in: Zumbansen/Amstutz (eds.), Recht in Recht-Fer-<lb/>tigungen (1992/2014), 525-541, 527 and 534: "A 'useful lawyer' -that<lb/> would be, after all, a man who knows nothing at all and can do everything:<lb/> the man who is literally 'capable of anything.'"<lb/></bibl>
+      <bibl><label>8</label> Cf. for example, Richard Susskind, Tomorrow's Lawyers (2017); </bibl>
+      <bibl>Markus Hartung et al. (eds.), Legal Tech. The Digitalisation des Rechtsmarkts<lb/> (2018).<lb/><lb/></bibl>
+
+      <bibl><label>2</label> Rudolf v. Jhering, Unsere Aufgabe, in: Jahrbücher für die Dogmatik des<lb/> heutigen römischen und deutschen Privatrechts, Band I, hg. von C. F. v.<lb/> Gerber/R. v. Jhering, 1857, 1-52, 2.<lb/></bibl>
+      <bibl><label>3</label><lb/> Vgl. ebd., 16.<lb/></bibl>
+      <bibl><label>4</label> Vgl. Rudolf Wiethölter, Zur Regelbildung in der Dogmatik des Zivilrechts,<lb/> in: Recht in Recht-Fertigungen, hg. von P. Zumbansen/M. Amstutz,<lb/> 1992/2014, 143-160, 146.<lb/></bibl>
+      <bibl><label>5</label><lb/> Vgl. Bernhard Windscheid, Recht und Rechtswissenschaft (Leipziger<lb/> Rektoratsrede vom 31. Oktober 1884), in: Die Leipziger Rektoratsreden<lb/> 1871-1933, hg. von F. Häuser, 2009, 375-386, 383.<lb/></bibl>
+      <bibl><label>6</label> Siehe den in dieser Hinsicht interessanten Wechsel zwischen zivil-und<lb/> verfassungsrichterlicher Beobachtungsperspektive: BVerfG, Beschluss<lb/> v. 12.12.2012 -2 BvR 1750/12, MDR 2013, 294.<lb/></bibl>
+      <bibl><label>7</label><lb/> Vgl. Rudolf Wiethölter, Rechtswissenschaft, 1968/1986, 38, mit direk-<lb/>tem Bezug auf Bernhard Windscheid; ferner ders., Anforderungen an<lb/> den Juristen heute, in: Recht in Recht-Fertigungen, hg. von P. Zumban-<lb/>sen/M. Amstutz, 1992/2014, 525-541, 527 und 534: "Ein ‚nützlicher Ju-<lb/>rist' -das wäre dann doch wohl ein Mann, der gar nichts weiß und alles<lb/> kann: der Mann, der eben buchstäblich ‚zu allem fähig ist'."<lb/></bibl>
+      <bibl><label>8</label> Vgl. etwa Richard Susskind, Tomorrow's Lawyers, 2nd edition, 2017;<lb/></bibl>
+      <bibl>Markus Hartung/Micha-Manuel Bues/Gernot Halbleib (Hg.), Legal<lb/> Tech. Die Digitalisierung des Rechtsmarkts, 2018.<lb/></bibl>
+
+      <bibl><label>9</label> On this point, see Gustav Radbruch, Rechtsphilosophie (1932), § 14, 106<lb/> et seq.: "A good lawyer would cease to be a good lawyer if, at every mo-<lb/>ment of his professional life, he were not fully aware at once of both the<lb/> necessity and the profound questionableness of his profession. [...] Only<lb/> the philistine feels himself at every moment to be an unquestionably use-<lb/>ful member of human society."<lb/></bibl>
+      <bibl><label>10</label> See on this Christoph Menke, "Unsere Zerrissenheit ist doch das Beste<lb/> an der Moderne, was wir haben," DIE ZEIT 20(2017): "[Law] is not re-<lb/>flexively political, it does not recognize what responsibility it itself bears.<lb/> It must forever follow up and correct social developments -as in a nev-<lb/>er-ending cycle. That is why we constantly experience that all attempts<lb/> to control legal regulation through new legal regulation lead to the same<lb/> problems. This corrective logic must not be imagined too innocuously;<lb/> this is not a free experiment of society with itself. It destroys living con-<lb/>ditions when it produces exploitation and deprivation of freedom. I, for<lb/> one, cannot see in this a successful self-correction of the law. The cycle<lb/> of law bears traits of fatality and destiny -I would even say stupidity."<lb/></bibl>
+      <bibl><label>11</label> Cf. on this Wiethölter, (fn. 7), Anforderungen, 533 et seq.<lb/></bibl>
+      <bibl><label>12</label> Cf. Andreas Fischer-Lescano, Als Ob! Der Philosoph als wahrer Revolu-<lb/>tionär des Rechts, in: Khurana et al. (eds.), Negativität. Kunst -Recht -<lb/>Politik (2018), 207-219, 212 et seq.<lb/></bibl>
+
+      <bibl><label>9</label> Siehe hierzu Gustav Radbruch, Rechtsphilosophie, 1932, § 14, 106 f.: "Ein<lb/> guter Jurist würde aufhören, ein guter Jurist zu sein, wenn ihm in jedem<lb/> Augenblick seines Berufslebens zugleich mit der Notwendigkeit nicht<lb/> auch die tiefe Fragwürdigkeit seines Berufes voll bewußt wäre. […] Nur<lb/> der Banause fühlt sich in jedem Augenblick als fraglos nützliches Glied<lb/> der menschlichen Gesellschaft."<lb/></bibl>
+      <bibl><label>10</label> Siehe hierzu Christoph Menke, "Unsere Zerrissenheit ist doch das Beste<lb/> an der Moderne, was wir haben", DIE ZEIT Nr. 20/2017, Interview<lb/> (Assheuer) vom 10.05.2017: "[Recht] ist nicht reflexiv politisch, es<lb/> erkennt nicht, welche Verantwortung es selbst trägt. Es muss immer<lb/> wieder den sozialen Entwicklungen nacharbeiten und sie korrigieren<lb/> -wie in einem unendlichen Kreislauf. Deshalb machen wir ständig die<lb/> Erfahrung, dass alle Versuche, eine rechtliche Regulierung durch neue<lb/> rechtliche Regulierung zu steuern, in dieselben Probleme führen. Diese<lb/> Korrekturlogik darf man sich nicht zu harmlos vorstellen, das ist kein<lb/> freies Experiment der Gesellschaft mit sich selbst. Es zerstört Lebens-<lb/>verhältnisse, wenn es Ausbeutung und Freiheitsberaubung hervor-<lb/>bringt. Ich jedenfalls kann darin keine gelingende Selbstkorrektur des<lb/> Rechts erkennen. Der Kreislauf des Rechts trägt Züge von Fatalität und<lb/> Schicksalhaftigkeit -ich würde sogar sagen: von Dummheit."<lb/></bibl>
+      <bibl><label>11</label> Vgl. hierzu Wiethölter, (Fn. 7), Anforderungen, 533 f.<lb/></bibl>
+      <bibl><label>12</label> Vgl. Andreas Fischer-Lescano, Als Ob! Der Philosoph als wahrer<lb/> Revolutionär des Rechts, in: Negativität. Kunst -Recht -Politik, hg. von<lb/> T. Khurana/D. Quadflieg/F. Raimondi/J. Rebentisch/D. Setton, 2018,<lb/> 207-219, 212 ff.<lb/></bibl>
+
+      <bibl><label>13</label> See, for example, Thomas Gutmann, Der Holzkopf des Phädrus -Pers-<lb/>pektiven der Grundlagenfächer, Juristenzeitung (JZ) 68 (2013), 697-<lb/>700, 698.<lb/></bibl>
+      <bibl><label>14</label> Already earlier Wiethölter, (fn. 7), Rechtswissenschaft, 27: "Understand-<lb/>ing of 'law today' cannot at all be conveyed already from the self-under-<lb/>standing of this very law, which almost without exception is not at all<lb/> aware of itself."<lb/></bibl>
+      <bibl><label>15</label> Cf. Wiethölter, (fn. 7), Rechtswissenschaft, 7.<lb/></bibl>
+      <bibl><label>16</label> See Rudolf Wiethölter, Recht-Fertigungen eines Gesellschafts-Rechts, in:<lb/> Zumbansen/Amstutz (eds.), Recht in Recht-Fertigungen (2003/2014),<lb/> 101-109, 108: "Perhaps in the emancipation of such law from the law in<lb/> rival social theories, which arguably does not (yet) seem obsolete as 'oth-<lb/>er than law' or 'other law,' a towards an 'other of law' there lies a potential<lb/> step towards realization [...]."<lb/></bibl>
+
+      <bibl><label>13</label> Siehe etwa Thomas Gutmann, Der Holzkopf des Phädrus -Perspektiven<lb/> der Grundlagenfächer, Juristenzeitung (JZ) 68 (2013), 697-700, 698.<lb/></bibl>
+      <bibl><label>14</label> Bereits früher Wiethölter, (Fn. 7), Rechtswissenschaft, 27: "Verständnis<lb/> für ‚Recht heute' läßt sich schlechterdings nicht schon aus dem Selbst-<lb/>verständnis eben dieses Rechts vermitteln, das nahezu ausnahmslos<lb/> seiner selbst überhaupt nicht bewußt ist."<lb/></bibl>
+      <bibl><label>15</label> Vgl. Wiethölter, (Fn. 7), Rechtswissenschaft, 7.<lb/></bibl>
+      <bibl><label>16</label> Siehe hierzu Rudolf Wiethölter, Recht-Fertigungen eines Gesellschafts-<lb/>Rechts, in: Recht in Recht-Fertigungen, hg. von P. Zumbansen/M. Am-<lb/>stutz, 2003/2014, 101-109, 108: "Vielleicht liegt in der Emanzipation<lb/> solchen Rechts vom Recht in den rivalisierenden Gesellschaftstheorien,<lb/> das wohl als ‚Anderes als Recht' oder ‚anderes Recht' (noch) nicht über-<lb/>holt scheint, hin zu einem ‚Anderen des Rechts' ein Verwirklichungs-<lb/>Chancenschritt [...]."<lb/></bibl>
+
+      <bibl><label>17</label> Cf. Wiethölter, (fn. 7), Rechtswissenschaft, 9 and 28.<lb/></bibl>
+      <bibl><label>18</label> Cf. Wissenschaftsrat, Perspektiven der Rechtswissenschaft in Deutsch-<lb/>land. Situation, Analysen, Empfehlungen (Drs. 2558-12 v. 09.11.2012),<lb/> 56 et seq., https://www.wissenschaftsrat.de/download/archiv/2558-12.<lb/> html, last accessed: 20 March 2022.<lb/></bibl>
+      <bibl><label>19</label> Cf. Gutmann, (fn. 13), 699.<lb/></bibl>
+      <bibl><label>20</label> On this entirely justified objective, see Wissenschaftsrat, (fn. 18), 7: "Law<lb/> can look back on a long academic tradition and is a quantitatively as<lb/> well as qualitatively important subject to which both science policy and<lb/> representatives of other subjects have high performance expectations.<lb/> Both the object of study of jurisprudence and its current structures are<lb/> challenged by the structural changes in law, the transformation of the<lb/> academic system, and the increasing responsibility of academic institu-<lb/>tions for their own governance. In the interest of actively shaping these<lb/> challenges, the Council of Science and Humanities therefore considers<lb/> it necessary to strengthen legal science in research and studies. This in-<lb/>cludes strengthening the basic subjects, intensifying interdisciplinary<lb/> as well as disciplinary exchange, and opening up law to the university as<lb/> well as to the academic system."<lb/></bibl>
+      <bibl><label>21</label> On these "most critical zones" of jurisprudence and the legal system,<lb/> which can probably also be discerned today, see Wiethölter, (fn. 7),<lb/> Rechtswissenschaft, 10.<lb/></bibl>
+
+      <bibl><label>17</label> Vgl. Wiethölter, (Fn. 7), Rechtswissenschaft, 9 und 28.<lb/></bibl>
+      <bibl><label>18</label> Vgl. Wissenschaftsrat, Perspektiven der Rechtswissenschaft in Deutsch-<lb/>land. Situation, Analysen, Empfehlungen (Drs. 2558-12 v. 09.11.2012),<lb/> 56 ff., abrufbar unter: https://www.wissenschaftsrat.de/download/ar-<lb/>chiv/2558-12.html (20.03.2022).<lb/></bibl>
+      <bibl><label>19</label> Vgl. Gutmann, (Fn. 13), 699.<lb/></bibl>
+      <bibl><label>20</label> Zu dieser durchaus berechtigten Zielsetzung siehe Wissenschaftsrat,<lb/> (Fn. 18), 7: "Die Rechtswissenschaft blickt auf eine lange akademische<lb/> Tradition zurück und ist ein quantitativ wie qualitativ gewichtiges Fach,<lb/> an das auch die Wissenschaftspolitik wie Vertreterinnen und Vertreter<lb/> anderer Fächer hohe Leistungserwartungen richten. Sowohl der Unter-<lb/>suchungsgegenstand der Rechtswissenschaft als auch ihre gegenwärti-<lb/>gen Strukturen werden durch die Strukturveränderungen des Rechts,<lb/> den Wandel des Wissenschaftssystems und die zunehmende Verantwor-<lb/>tung der wissenschaftlichen Einrichtungen für ihre Selbststeuerung he-<lb/>rausgefordert. Im Interesse einer aktiven Gestaltung dieser Herausfor-<lb/>derungen ist es aus Sicht des Wissenschaftsrates deshalb erforderlich,<lb/> dass die Rechtswissenschaft in Forschung und Studium gestärkt wird.<lb/> Dies beinhaltet die Stärkung der Grundlagenfächer, die Intensivierung<lb/> des interdisziplinären wie disziplinären Austausches und eine Öffnung<lb/> der Rechtswissenschaft in die Universität wie in das Wissenschaftssys-<lb/>tem."<lb/></bibl>
+      <bibl><label>21</label> Zu diesen wohl auch heute auszumachenden "kritischsten Zonen"<lb/> von Rechtswissenschaft und Rechtssystem siehe Wiethölter, (Fn. 7),<lb/> Rechtswissenschaft, 10.<lb/></bibl>
+
+      <bibl><label>22</label> Cf. Niklas Luhmann, "Was ist der Fall?" and "Was steckt dahinter?" -Die<lb/> zwei Soziologien und die Gesellschaftstheorie, Zeitschrift für Soziologie<lb/> (ZfS) 22 (1993), 245-260, 256.<lb/></bibl>
+      <bibl><label>23</label> See on this Fischer-Lescano, (fn. 12), 212.<lb/></bibl>
+      <bibl><label>24</label> Locus classicus: Immanuel Kant, Der Streit der Fakultäten (1798/2005).<lb/></bibl>
+      <bibl><label>25</label> See Immanuel Kant, Die Metaphysik der Sitten, in: Kant, Werke in zwölf<lb/> Bänden, vol. VIII (1797/1968), AB 32: "A mere empirical doctrine of law<lb/> is (like the wooden head in Phaedrus' fable) a head that may be beautiful,<lb/> only pity! that it has no brain."<lb/></bibl>
+      <bibl><label>26</label> Similarly Gutmann, (fn. 13), 698, which, however, apparently wants to<lb/> keep the groundwork out of everyday legal practice: "The concrete prob-<lb/>lems can usually be solved -and must be solved -without first agreeing<lb/> on the 'ultimate things.' The law only works because we don't always<lb/> think things through. If we were to overload every question of our day-<lb/>to-day legal business with a meta-analysis of legal philosophy, history, or<lb/> sociology, the legal system would grind to a halt with a loud groan."<lb/></bibl>
+      <bibl><label>27</label> Cf. Wiethölter, (fn. 7), Rechtswissenschaft, 18.<lb/></bibl>
+      <bibl><label>28</label> Cf. Christoph Menke, Genealogie, Paradoxie, Transformation: Grunde-<lb/>lemente einer Kritik der Rechte, in: Fischer-Lescano et al. (eds.), Ge-<lb/></bibl>
+
+      <bibl><label>22</label> Vgl. Niklas Luhmann, "Was ist der Fall?" und "Was steckt dahinter?" -Die<lb/> zwei Soziologien und die Gesellschaftstheorie, Zeitschrift für Soziologie<lb/> (ZfS) 22 (1993), 245-260, 256.<lb/></bibl>
+      <bibl><label>23</label> Siehe hierzu Fischer-Lescano, (Fn. 12), 212.<lb/></bibl>
+      <bibl><label>24</label> Locus classicus: Immanuel Kant, Der Streit der Fakultäten, 1798/2005.<lb/></bibl>
+      <bibl><label>25</label> Siehe Immanuel Kant, Die Metaphysik der Sitten, Werke in zwölf Bän-<lb/>den (hg. von W. Weischedel), Bd. VIII, 1797/1968, AB 32: "Eine bloß em-<lb/>pirische Rechtslehre ist (wie der hölzerne Kopf in Phädrus' Fabel) ein<lb/> Kopf, der schön sein mag, nur schade! daß er kein Gehirn hat."<lb/></bibl>
+      <bibl><label>26</label> Ähnlich Gutmann, (Fn. 13), 698, welcher die Grundlagenarbeit aber<lb/> offenbar aus der alltäglichen Rechtspraxis heraushalten möchte: "Die<lb/> konkreten Probleme lassen sich in der Regel lösen -und müssen sich<lb/> lösen lassen -, ohne dass man sich zuerst über die "letzten Dinge" einigt.<lb/> Das Recht funktioniert nur, weil wir nicht immer alles zu Ende denken.<lb/> Würden wir alle Fragen unseres juristischen Tagesgeschäfts mit einer<lb/> rechtsphilosophischen, -historischen oder -soziologischen Meta-Anal-<lb/>yse überfrachten, müsste das Rechtssystem mit einem lauten Ächzen<lb/> zum Stillstand kommen."<lb/></bibl>
+      <bibl><label>27</label> Vgl. hierzu Wiethölter, (Fn. 7), Rechtswissenschaft, 18.<lb/></bibl>
+
+      <bibl>genrechte. Recht jenseits des Subjekts (2018), 13-31, 18.<lb/></bibl>
+      <bibl><label>29</label> Malte-Christian Gruber, Bioinformationsrecht. Zur Persönlichkeitsent-<lb/>faltung des Menschen in technisierter Verfassung (2015), 89, with fur-<lb/>ther references.<lb/></bibl>
+      <bibl><label>30</label> Christoph Menke, Kritik der Rechte (2015), 164.<lb/></bibl>
+      <bibl><label>31</label> Cf. Fischer-Lescano, (fn. 12), 209: "Moral universalism from Kant to<lb/> Rawls, economic critiques of law from Smith to Coase to Posner, and po-<lb/>litical critiques of law from Schmitt to Morgenthau are false critiques,<lb/> dogmatic critiques, untrue critiques, because they place the law one-sid-<lb/>edly in the service of their own profession, because they substitute their<lb/> own standards of evaluation 'judging from the outside' for the law, ele-<lb/>vate themselves in an autological maneuver to the status of controllers<lb/> of the law, and do not set the contradictions of the law freely but by their<lb/> own standards. If the law unilaterally adopts external standards of criti-<lb/>cism, it capitulates to non-juridical theoretical models. A misconceived<lb/> interdisciplinarity then engaged in an unexamined importation of theory<lb/> into law, to measure the law by the lasts of foreign disciplines and ratio-<lb/>nalities."<lb/></bibl>
+      <bibl><label>32</label> For further insights into one's own failure to see such critiques, see es-<lb/>pecially Niklas Luhmann, Ich sehe was, was Du nicht siehst, in: Soziolo-<lb/>gische Aufklärung 5: Konstruktivistische Perspektiven (1990), 228-234,<lb/> 228 et seq.; </bibl>
+      <bibl>specifically with regard to the multiplicity of social (partial)<lb/> justices Gunther Teubner, Selbstsubversive Gerechtigkeit: Kontingenz-<lb/>oder Transzendenzformel des Rechts?, Zeitschrift für Rechtssoziologie<lb/> 29 (2008), 9-36, 32 et seq.: "They all promise to be able to produce a good<lb/> society by their means, when in fact they can only give extremely limited<lb/> partial answers for their field. 'Justification' of society as an attempt to<lb/> bring the whole of society to justice with legal instruments is one of the<lb/> baleful rationality imperialisms of modernity, of economization, politi-<lb/>cization, scientization, moralization, medicalization of society -a uni-<lb/>directional process of increased juridical justice against which political<lb/> vigilance is sorely needed."<lb/></bibl>
+
+      <bibl><label>33</label> See above, (fn. 27).<lb/></bibl>
+      <bibl><label>34</label> Cf. Wiethölter, (fn. 7), Anforderungen, 28.<lb/></bibl>
+      <bibl><label>35</label> Wiethölter, (fn. 7), Rechtswissenschaft, 18.<lb/></bibl>
+      <bibl><label>36</label> Andreas Fischer-Lescano, Wozu Rechtsphilosophie?, JZ 73 (2018), 161-<lb/>170, 170.<lb/></bibl>
+
+      <bibl><label>28</label> Vgl. Christoph Menke, Genealogie, Paradoxie, Transformation: Grundele-<lb/>mente einer Kritik der Rechte, in: Gegenrechte. Recht jenseits des Sub-<lb/>jekts, hg. von A. Fischer-Lescano/H. Franzki/J. Horst, 2018, 13-31, 18.<lb/></bibl>
+      <bibl><label>29</label> Malte-Christian Gruber, Bioinformationsrecht. Zur Persönlichkeitsent-<lb/>faltung des Menschen in technisierter Verfassung, 2015, 89, mwN.<lb/></bibl>
+      <bibl><label>30</label> Christoph Menke, Kritik der Rechte, 2015, 164.<lb/></bibl>
+      <bibl><label>31</label> Vgl. Fischer-Lescano, (Fn. 12), 209: "Moralischer Universalismus von<lb/> Kant bis Rawls, ökonomische Kritik des Rechts von Smith über Coase zu<lb/> Posner und politische Kritiken des Rechts von Schmitt bis Morgenthau<lb/> sind falsche Kritiken, dogmatische Kritiken, unwahre Kritiken, weil sie<lb/> das Recht einseitig in den Dienst ihrer eigenen Profession stellen, weil<lb/> sie ihre eigenen Bewertungsmaßstäbe ,urteilend von außen' an die Stelle<lb/> des Rechts setzen, sich in einem autologischen Manöver zu Rechtskon-<lb/>trolleuren erheben und die Widersprüche des Rechts nicht frei, sondern<lb/> durch ihre eigenen Maßstäbe be-setzen. Übernimmt das Recht einseitig<lb/> externe Kritikmaßstäbe, kapituliert es vor nicht-juridischen Theorie-<lb/>modellen. Eine falsch verstandene Interdisziplinarität betriebe dann<lb/> einen ungeprüften Theorieimporthandel ins Recht, um Recht nach den<lb/> Leisten fremder Disziplinen und Rationalitäten zu bemessen."<lb/></bibl>
+      <bibl><label>32</label> Für weitere Einsichten in das eigene Nichtsehenkönnen solcher Kriti-<lb/>ken siehe vor allem Niklas Luhmann, Ich sehe was, was Du nicht siehst,<lb/> in: Soziologische Aufklärung 5: Konstruktivistische Perspektiven, 1990,<lb/> 228-234, 228 ff.; </bibl>
+      <bibl>speziell mit Blick auf die Vielheit gesellschaftlicher<lb/> (Teil-)Gerechtigkeiten Gunther Teubner, Selbstsubversive Gerechtig-<lb/>keit: Kontingenz-oder Transzendenzformel des Rechts?, Zeitschrift für<lb/> Rechtssoziologie 29 (2008), 9-36, 32 f.: "Sie alle versprechen, eine gute<lb/> Gesellschaft mit ihren Mitteln herstellen zu können, obwohl sie doch nur<lb/> äußerst begrenzte Teilantworten für ihren Bereich geben können. ‚Ver-<lb/>gerechtlichung' der Gesellschaft als Versuch, die gesamte Gesellschaft<lb/> mit Rechtsinstrumentarien zur Gerechtigkeit zu bringen, ist einer der<lb/> unheilvollen Rationalitätenimperialismen der Moderne, der Ökonomi-<lb/>sierung, Politisierung, Verwissenschaftlichung, Moralisierung, Medika-<lb/>lisierung der Gesellschaft -ein unidirektionaler Steigerungsprozess der<lb/> juridischen Gerechtigkeit, gegen den politische Wachsamkeit Not tut."<lb/></bibl>
+      <bibl><label>33</label> Siehe oben, (Fn. 27).<lb/></bibl>
+      <bibl><label>34</label> Vgl. Wiethölter, (Fn. 7), Anforderungen, 28.<lb/></bibl>
+      <bibl><label>35</label> Wiethölter, (Fn. 7), Rechtswissenschaft, 18.<lb/></bibl>
+      <bibl><label>36</label> Andreas Fischer-Lescano, Wozu Rechtsphilosophie?, JZ 73 (2018), 161-<lb/>170, 170.<lb/></bibl>
+
+      <bibl><label>37</label> Cf. Alain Badiou, Die gegenwärtige Welt und das Begehren der Philos-<lb/>ophie, in: Badiou/Rancière (eds.), Politik der Wahrheit (2010), 7-35, 7<lb/> et seq..; </bibl>
+      <bibl>Pascal's wager, appropriately employed here, also offers a good<lb/> argument against doubters to make future-oriented action rationally in-<lb/>sightful, specifically in terms of ecological responsibility for future gen-<lb/>erations: see Serres, Der Naturvertrag (1994), 17.<lb/></bibl>
+
+      <bibl><label>38</label> Badiou, (fn. 37), 24.<lb/></bibl>
+      <bibl><label>39</label> Cf. Michel Foucault, Was ist Kritik? (1992), 15.<lb/></bibl>
+      <bibl><label>40</label> On the localization of the critique of law, society and culture "at the<lb/> limits of philosophy, entirely with it, entirely against it, at its expense,<lb/> in view of a coming philosophy or instead of any possible philosophy":<lb/> Foucault, (fn. 39), 7 et seq.<lb/></bibl>
+      <bibl><label>41</label> See Immanuel Kant, Beantwortung der Frage: Was ist Aufklärung?, Ber-<lb/>linische Monatsschrift 12 (1784), 481-494, 481.<lb/></bibl>
+      <bibl><label>42</label> Foucault, (fn. 39), 18.<lb/></bibl>
+      <bibl><label>43</label> See Foucault, (fn. 39), 12.<lb/></bibl>
+      <bibl><label>44</label> Fischer-Lescano, (fn. 12), 209.<lb/></bibl>
+      <bibl><label>45</label> See only Rudolf Wiethölter, Ist unserem Recht der Prozeß zu machen?, in:<lb/> Zumbansen/Amstutz (eds.), Recht in Recht-Fertigungen (1989/2014),<lb/> 55-66, 66: "The legal model of a court of reason -history has taught us<lb/> otherwise."<lb/></bibl>
+      <bibl><label>46</label> Cf. Foucault, (fn. 39), 21.<lb/></bibl>
+      <bibl><label>47</label> Foucault, (fn. 39), 19 et seq.<lb/></bibl>
+      <bibl><label>48</label> On the critique of knowledge overcoming the enlightenment of reason,<lb/> but with the help of second-order observation and "self-reference," see<lb/> Luhmann, (fn. 32), 7 et seq.<lb/></bibl>
+      <bibl><label>49</label> Cf. on this Teubner, (fn. 32), 33; </bibl>
+      <bibl>further Teubner, Die anonyme Matrix: Zu<lb/> Menschenrechtsverletzungen durch 'private' transnationale Akteure,<lb/> Der Staat 45 (2006), 161-187, 170 et seq.; </bibl>
+      <bibl>Gruber, Warum Nicht-Men-<lb/>schenrechte?, Zeitschrift für Medien-und Kulturforschung (ZMK) 7/2<lb/> (2016), 63-69, 63 et seq.<lb/></bibl>
+
+      <bibl><label>37</label> Vgl. Alain Badiou, Die gegenwärtige Welt und das Begehren der Philos-<lb/>ophie, in: Politik der Wahrheit, hg. von A. Badiou/J. Rancière, 2. A. 2010,<lb/> 7-35, 7 f.; </bibl>
+      <bibl>die hier entsprechend eingesetzte Pascalsche Wette bietet<lb/> zudem ein gutes Argument gegen Zweifler, um zukunftsorientiertes<lb/> Handeln, speziell im Sinne ökologischer Verantwortung für die zukün-<lb/>ftigen Generationen, rational einsichtig zu machen: siehe Serres, Der<lb/> Naturvertrag, 1994, 17 ff.<lb/></bibl>
+      <bibl><label>38</label> Badiou, (Fn. 37), 24.<lb/></bibl>
+      <bibl><label>39</label> Vgl. hierzu Michel Foucault, Was ist Kritik?, 1992, 15.<lb/></bibl>
+      <bibl><label>40</label> Zur Lokalisierung der Rechts-, Gesellschafts-und Kulturkritik "an den<lb/> Grenzen der Philosophie, ganz bei ihr, ganz gegen sie, auf ihre Kosten, im<lb/> Hinblick auf eine kommende Philosophie oder anstelle jeder möglichen<lb/> Philosophie": Foucault, (Fn. 39), 7 f.<lb/></bibl>
+      <bibl><label>41</label> Siehe Immanuel Kant, Beantwortung der Frage: Was ist Aufklärung?,<lb/> Berlinische Monatsschrift 1784, H. 12, 481-494, 481.<lb/></bibl>
+      <bibl><label>42</label> Foucault, (Fn. 39), 18.<lb/></bibl>
+      <bibl><label>43</label> Siehe Foucault, (Fn. 39), 12.<lb/></bibl>
+      <bibl><label>44</label> Fischer-Lescano, (Fn. 12), 209.<lb/></bibl>
+      <bibl><label>45</label> Vgl. Foucault, (Fn. 39), 21.<lb/></bibl>
+      <bibl><label>46</label> Siehe nur Rudolf Wiethölter, Ist unserem Recht der Prozeß zu machen?,<lb/> in: in: Recht in Recht-Fertigungen, hg. von P. Zumbansen/M. Amstutz,<lb/> 1989/2014, 55-66, 66: "Das Rechtsmodell eines Gerichtshofes der Ver-<lb/>nunft -die Geschichte hat uns eines Besseren belehrt."<lb/></bibl>
+      <bibl><label>47</label> Foucault, (Fn. 39), 19 f.<lb/></bibl>
+      <bibl><label>48</label> Zur Kritik des Wissens unter Überwindung der Vernunftaufklärung,<lb/> jedoch in Anknüpfung mithilfe der Beobachtung zweiter Ordnung und<lb/> "Selbstreferenz", siehe Luhmann, (Fn. 32), 7 f.<lb/></bibl>
+
+      <bibl><label>50</label> Symptomatic of this is the juridical re-functioning of formerly individual<lb/> self-determination for the cynical purposes of a subjectivizing subordi-<lb/>nation of people to alleged constructive requirements of the existing (su-<lb/>per) order. Thus, illiberally-oriented legal thinking can seemingly hide<lb/> without contradiction behind pseudo-liberal conceptual facades. As an<lb/> example, Bijan Fateh-Moghadam, Selbstbestimmung im biotechnischen<lb/> Zeitalter, Basler Juristische Mitteilungen (BJM) (2018), 205-232, 231:<lb/> "What about the possibility of self-determination in the biotechnical<lb/> age? The answer depends first of all on whether one understands self-de-<lb/>termination as a factual ability or as a legal construction of a liberal legal<lb/> order. According to the reading proposed here, autonomous subjects ex-<lb/>ist in the legal sense because and as long as the modern form of subjective<lb/> rights exists. The autonomous subject is a normative construction that<lb/> fundamental rights-based legal orders presuppose as a condition of their<lb/> functioning."<lb/></bibl>
+
+      <bibl><label>51</label> Among the critiques of this unholy alliance of neo-liberalist and transhu-<lb/>manist thinking, see for instance Peter Wehling, Selbstbestimmung oder<lb/> sozialer Optimierungsdruck? Perspektiven einer kritischen Soziologie<lb/> der Biopolitik, Leviathan 36 (2008), 249-273, 256 (self-determination as<lb/> an "ambivalent biopolitical guiding idea"); </bibl>
+      <bibl>Jens Kersten, Die Konsistenz<lb/> des Menschlichen. Post-und transhumane Visionen des Autonomie-<lb/>verständnisses, in: Bumke/Röthel (eds.), Autonomie im Recht. Gegen-<lb/>wartsdebatten über einen rechtlichen Grundbegriff (2017), 315-352,<lb/> 327 ("normative reversal in force of the guarantee of human dignity"); </bibl>
+      <bibl>cf.<lb/> further Vagias Karavas, Körperverfassungsrecht. Entwurf eines inklusi-<lb/>ven Biomedizinrechts (2018), 222 et seq. and 251 et seq.; </bibl>
+      <bibl>Gruber, (fn. 29),<lb/> 37 et seq., 70 et seq., 119 and 327 et seq.<lb/></bibl>
+      <bibl><label>52</label> For a necessary clarification of the traditional understanding of (Ver-<lb/>nunft-)Aufklärung, see especially Niklas Luhmann, Soziologische Auf-<lb/>klärung, in: Luhmann: Soziologische Aufklärung 1: Aufsätze zur Theorie<lb/> sozialer Systeme (1970), 66-91.<lb/></bibl>
+      <bibl><label>53</label> Matthias Mahlmann, Der politische Moment der Rechtsphilosophie,<lb/> Rechtswissenschaft (RW) 8 (2017), 181-220, 182.<lb/></bibl>
+      <bibl><label>54</label> Mahlmann, (fn. 53), 219 et seq.<lb/></bibl>
+      <bibl><label>55</label> Cf. Luhmann, (fn. 22), 246.<lb/></bibl>
+
+      <bibl><label>49</label> Vgl. hierzu Teubner, (Fn. 32), 33; </bibl>
+      <bibl>ferner ders., Die anonyme Matrix: Zu<lb/> Menschenrechtsverletzungen durch "private" transnationale Akteure,<lb/> Der Staat 45 (2006), 161-187, 170 ff.; </bibl>
+      <bibl>Gruber, Warum Nicht-Menschen-<lb/>rechte?, Zeitschrift für Medien-und Kulturforschung (ZMK) 7/2 (2016),<lb/> 63-69, 63 ff.<lb/></bibl>
+
+      <bibl><label>50</label> Symptomatisch dafür ist die juridische Umfunktionierung der vormals<lb/> individuellen Selbstbestimmung zu zynischen Zwecken einer sub-<lb/>jektivierenden Unterordnung von Menschen unter angebliche konst-<lb/>ruktive Erfordernisse der bestehenden (Über-)Ordnung. Damit kann<lb/> sich unfreiheitliches Rechtsdenken scheinbar widerspruchslos hinter<lb/> pseudoliberalen Begriffsfassaden verbergen. Beispielhaft etwa Bijan Fa-<lb/>teh-Moghadam, Selbstbestimmung im biotechnischen Zeitalter, Basler<lb/> Juristische Mitteilungen (BJM) 2018, 205-232, 231: "Wie steht es um<lb/> die Möglichkeit der Selbstbestimmung im biotechnischen Zeitalter? Die<lb/> Antwort hängt zunächst davon ab, ob man Selbstbestimmung als eine<lb/> faktische Fähigkeit oder als rechtliche Konstruktion einer freiheitlichen<lb/> Rechtsordnung versteht. Gemäss der hier vorgeschlagenen Lesart gibt<lb/> es im Rechtssinne autonome Subjekte, weil und solange es die moderne<lb/> Form der subjektiven Rechte gibt. Das autonome Subjekt ist eine norma-<lb/>tive Konstruktion, die grundrechtebasierte Rechtsordnungen als Bedin-<lb/>gung ihrer Funktionsfähigkeit voraussetzen."<lb/></bibl>
+      <bibl><label>51</label> Unter den Kritiken an dieser unheilvollen Allianz von neo-liberalisti-<lb/>schem und transhumanistischem Denken siehe etwa Peter Wehling,<lb/> Selbstbestimmung oder sozialer Optimierungsdruck? Perspektiven ei-<lb/>ner kritischen Soziologie der Biopolitik, Leviathan 36 (2008), 249-273,<lb/> 256 (Selbstbestimmung als "ambivalente biopolitische Leitidee"); </bibl>
+      <bibl>Jens<lb/> Kersten, Die Konsistenz des Menschlichen. Post-und transhumane Vi-<lb/>sionen des Autonomieverständnisses, in: Autonomie im Recht. Gegen-<lb/>wartsdebatten über einen rechtlichen Grundbegriff, hg. von C. Bumke/A.<lb/> Röthel, 2017, 315-352, 327 ("normative Schubkraftumkehr der Men-<lb/>schenwürdegarantie"); </bibl>
+      <bibl>vgl. ferner Vagias Karavas, Körperverfassungs-<lb/>recht. Entwurf eines inklusiven Biomedizinrechts, 2018, 222 ff. und<lb/> 251 ff.; </bibl>
+      <bibl>Gruber, (Fn. 29), 37 f., 70 ff., 119 und 327 ff.<lb/></bibl>
+      <bibl><label>52</label> Zur notwendigen Abklärung des traditionellen Verständnisses von<lb/> (Vernunft-)Aufklärung siehe vor allem Niklas Luhmann, Soziologische<lb/> Aufklärung, in: Soziologische Aufklärung 1: Aufsätze zur Theorie sozial-<lb/>er Systeme, 1970, 66-91.<lb/></bibl>
+      <bibl><label>53</label> Matthias Mahlmann, Der politische Moment der Rechtsphilosophie,<lb/> Rechtswissenschaft (RW) 8 (2017), 181-220, 182.<lb/></bibl>
+      <bibl><label>54</label> Mahlmann, (Fn. 53), 219 f.<lb/></bibl>
+      <bibl><label>55</label> Vgl. Luhmann, (Fn. 22), 246.<lb/></bibl>
+
+      <bibl><label>56</label> On this, see Eva Kocher, Rechtssoziologie: Das Recht der Gesellschaft<lb/> und die Gesellschaft des Rechts, Rechtswissenschaft (RW) 8 (2017),<lb/> 153-180, 174 et seq.<lb/></bibl>
+      <bibl><label>57</label> Cf. Wiethölter, (fn. 7), Rechtswissenschaft, 26.<lb/></bibl>
+      <bibl><label>58</label> In this sense, in the search for how critical self-reflection could be trig-<lb/>gered in social communication, one already encounters the general ques-<lb/>tion: "Muß es denn Vernunft und Gewalt sein?" -see on this Niklas Luh-<lb/>mann, Die Wirtschaft der Gesellschaft (1988), 84.<lb/></bibl>
+      <bibl><label>59</label> Cf. Badiou, (fn. 37), 9.<lb/></bibl>
+
+      <bibl><label>56</label> Siehe hierzu Eva Kocher, Rechtssoziologie: Das Recht der Gesellschaft<lb/> und die Gesellschaft des Rechts, Rechtswissenschaft (RW) 8 (2017),<lb/> 153-180, 174 ff.<lb/></bibl>
+      <bibl><label>57</label> Vgl. Wiethölter, (Fn. 7), Rechtswissenschaft, 26.<lb/></bibl>
+      <bibl><label>58</label> In diesem Sinne stößt man auf der Suche danach, wie kritische Selbstre-<lb/>flexion in der gesellschaftlichen Kommunikation ausgelöst werden kön-<lb/>nte, schon auf die generelle Frage: "Muß es denn Vernunft und Gewalt<lb/> sein?" -siehe hierzu Niklas Luhmann, Die Wirtschaft der Gesellschaft,<lb/> 1988, 84.<lb/></bibl>
+      <bibl><label>59</label> Vgl. Badiou, (Fn. 37), 9.<lb/></bibl>
+
+      <bibl><label>60</label> Vgl. Malte-Christian Gruber, Formationen paternaler Bindungen als<lb/> Normierungsmotive rechtlicher Paternalismen, in: Die Unsicherheit der<lb/> Väter. Zur Herausbildung paternaler Bindungen, hg. von M.-C. Gruber/S.<lb/> Ziemann, 2009, 33-48, 35 ff.<lb/></bibl>
+      <bibl><label>61</label> Für einen derartigen radikalen Individualismus etwa Christoph Men-<lb/>ke, Subjektive Rechte und Menschenwürde. Zur Einleitung, Trivium 3<lb/> (2009), Rn. 9 f., abrufbar unter: http://trivium.revues.org/index3296.<lb/> html (20.03.2022); </bibl>
+      <bibl>grundsätzlicher, unter Berufung auf den erst durch<lb/> die System-Umwelt-Differenz möglichen "radikalen Individualismus in<lb/> der Umwelt des Systems", vor allem Niklas Luhmann, Einführung in die<lb/> Systemtheorie, 2. A. 2004, 257; </bibl>
+      <bibl>ders., Das Recht der Gesellschaft, 1993,<lb/> 35 und 48 f.<lb/></bibl>
+      <bibl><label>62</label> Wiethölter, (Fn. 7), Rechtswissenschaft, 26.<lb/></bibl>
+      <bibl><label>63</label> Für ein berühmtes Beispiel: Hannah Arendt, Es gibt nur ein einziges<lb/> Menschenrecht, Die Wandlung 4 (1949), 754-770.<lb/></bibl>
+      <bibl><label>64</label> Wiethölter, (Fn. 7), Rechtswissenschaft, 9 f. und 17 f.<lb/></bibl>
+      <bibl><label>65</label> Näher hierzu Gunther Teubner, Verrätselungen und Verhexungen: Von<lb/> einem neuerdings erhobenen enigmatischen Ton in der Rechtswissen-<lb/>schaft, in: Politische Rechtstheorie Revisited. Rudolf Wiethölter zum<lb/> 100. Semester, hg. von C. Joerges/P. Zumbansen, ZERP-Diskussionspa-<lb/>pier 1/2013, 177-181.<lb/></bibl>
+      <bibl><label>66</label> Vgl. Immanuel Kant, Kritik der reinen Vernunft, Vorrede zur zweiten<lb/> Auflage, in: Werke in zwölf Bänden (hg. von W. Weischedel), Band III,<lb/> 1787/1968, B XIV; diese Formel für die Kritik an der bisherigen besser-<lb/>wisserischen Rechtskritik aufgreifend Wiethölter, (Fn. 46), 55.<lb/></bibl>
+
+      <bibl><label>60</label> Cf. Malte-Christian Gruber, Formationen paternaler Bindungen als Nor-<lb/>mierungsmotive rechtlicher Paternalismen, in: Gruber/Ziemann (eds.),<lb/> Die Unsicherheit der Väter. Zur Herausbildung paternaler Bindungen<lb/> (2009), 33-48, 35 et seq.<lb/></bibl>
+      <bibl><label>61</label> For such a radical individualism, for example, Christoph Menke, Sub-<lb/>jektive Rechte und Menschenwürde. Zur Einleitung, Trivium 3 (2009),<lb/> Rn. 9 et seq., http://trivium.revues.org/index3296.html, last accessed:<lb/> 20 March 2022; </bibl>
+      <bibl>more fundamentally, citing the "radical individualism<lb/> in the environment of the system" that is only possible through the sys-<lb/>tem-environment difference, especially Niklas Luhmann, Einführung<lb/> in die Systemtheorie (2004), 257; </bibl>
+      <bibl>Luhmann, Das Recht der Gesellschaft<lb/> (1993), 35 and 48 et seq.<lb/></bibl>
+      <bibl><label>62</label> Wiethölter, (fn. 7), Rechtswissenschaft, 26.<lb/></bibl>
+      <bibl><label>63</label> For a famous example: Hannah Arendt, Es gibt nur ein einziges Men-<lb/>schenrecht, Die Wandlung 4 (1949), 754-770.<lb/></bibl>
+      <bibl><label>64</label> Wiethölter, (fn. 7), Rechtswissenschaft, 9 et seq. and 17 et seq.<lb/></bibl>
+      <bibl><label>65</label> For more details see Gunther Teubner, Verrätselungen und Verhexungen:<lb/> Von einem neuerdings erhobenen enigmatischen Ton in der Rechtswis-<lb/>senschaft, in: Joerges/Zumbansen (eds.), Politische Rechtstheorie Re-<lb/>visited. Rudolf Wiethölter zum 100. Semester, ZERP-Diskussionspapier<lb/> 1 (2013), 177-181.<lb/></bibl>
+      <bibl><label>66</label> Cf. Immanuel Kant, Kritik der reinen Vernunft, Vorrede zur zweiten Au-<lb/>flage, in: Kant, Werke in zwölf Bänden, vol. III (1787/1968), vol. XIV; tak-<lb/>ing up this formula to criticize the previously know-it-all legal critique<lb/> Wiethölter, (fn. 46), 55.<lb/></bibl>
+
+      <bibl><label>67</label> Vgl. Franz Wieacker, Privatrechtsgeschichte der Neuzeit, 1967, 586 ff.<lb/></bibl>
+      <bibl><label>68</label> Vgl. ebd., 621 ff.<lb/></bibl>
+      <bibl><label>69</label> Vgl. Stephan Meder, Rudolf von Jhering und der Aufstand gegen den<lb/> rechtswissenschaftlichen Formalismus, JZ 74 (2019), 689-696, 695.<lb/></bibl>
+      <bibl><label>70</label> Siehe etwa Hartung/Bues/Halbleib (Hg.), (Fn. 8); </bibl>
+      <bibl>mit deutlicher Ref-<lb/>erenz auf die loci classici dieses neuen Themenfeldes: Susskind, The<lb/> Future of Law, 1996; </bibl>
+      <bibl>ders., Transforming the Law, 2000; </bibl>
+      <bibl>ders., The End<lb/> of Lawyers?, 2008; </bibl>
+      <bibl>ders., (Fn. 8).<lb/></bibl>
+      <bibl><label>71</label> In diesem Sinne Wieacker, (Fn. 67), 614 ff.<lb/></bibl>
+      <bibl><label>72</label> Vgl. hierzu Wiethölter, (Fn. 7), Rechtswissenschaft, 179 ff.<lb/></bibl>
+
+      <bibl><label>67</label> Cf. Franz Wieacker, Privatrechtsgeschichte der Neuzeit (1967), 586 et seq.<lb/></bibl>
+      <bibl><label>68</label> Cf. ibid., 621 et seq.<lb/></bibl>
+      <bibl><label>69</label> Cf. Stephan Meder, Rudolf von Jhering und der Aufstand gegen den<lb/> rechtswissenschaftlichen Formalismus, JZ 74 (2019), 689-696, 695.<lb/></bibl>
+      <bibl><label>70</label> See, for example, Hartung et al. (eds.), (fn. 8); </bibl>
+      <bibl>with clear reference to the<lb/> loci classici of this new subject area: Richard Susskind, The Future of<lb/> Law (1996); </bibl>
+      <bibl>Susskind, Transforming the Law, 2000; </bibl>
+      <bibl>Susskind, The End<lb/> of Lawyers?, 2008; </bibl>
+      <bibl>Susskind, (fn. 8).<lb/></bibl>
+      <bibl><label>71</label> In this sense Wieacker, (fn. 67), 614 et seq.<lb/></bibl>
+      <bibl><label>72</label> Cf. on this Wiethölter, (fn. 7), Rechtswissenschaft, 179 et seq.<lb/></bibl>
+      <bibl><label>73</label> On the need for a renewed "legitimation of the private law system" and<lb/></bibl>
+
+      <bibl><label>73</label> Zum Erfordernis einer erneuerten "Legitimation der Privatrechts-<lb/>ordnung" und zu den "materialen Schicksalsfragen" der Privatrechts-<lb/>wissenschaft, insbesondere "in den Randfeldern auf der Schnittlinie<lb/> zwischen Gesellschaftsgestaltung und privatem Interessenschutz" sie-<lb/>he entsprechend Wieacker, (Fn. 67), 621, 624 sowie weiter 618 ff.: "Der<lb/> Mensch des technischen Zeitalters hat die angemessenen moralischen<lb/> und rechtlichen Ordnungsmodelle, von rühmlichen Ausnahmen (wie<lb/> der Sozialversicherung, dem Arbeitsrecht, der Selbststeuerung der Er-<lb/>zeugung, dem Gesundheitssystem) abgesehen, zu finden erst begonnen.<lb/> […] Inzwischen bleibt es die Verantwortung des Menschen, aus den Kräf-<lb/>ten des selbständigen Gewissens eine Politik der Moral, d. h. die morali-<lb/>sche Technik nachzuholen, die den äußeren technischen Möglichkeiten<lb/> angemessen und gewachsen ist. […] Die Krisis des Rechtsgedankens in<lb/> den letzten hundert Jahren offenbart sich weit auffälliger als im Privat-<lb/>recht in den Beziehungen der Völker untereinander und im Verhältnis<lb/> des Staats und der gesellschaftlichen Gruppen zum Einzelnen, also in<lb/> Völkerrecht, Verfassungsrecht, Verwaltungsrecht, in Strafrecht und<lb/> Sozialrecht. Es könnte danach scheinen, als bestehe nur ein recht ent-<lb/>fernter Zusammenhang zwischen der Privatrechtsgeschichte und der<lb/> allgemeinen Bedrohung oder Erneuerung des Rechtsgedankens […].<lb/> In Wahrheit hat sich immer gezeigt, wie sehr auch das Auf und Ab der<lb/> Privatrechtswissenschaft durch das allgemeine Verständnis der Epo-<lb/>chen bedingt war. Ohne eine Neubegründung des Rechtsglaubens wird<lb/> es auch keine Zukunft des europäischen Privatrechts geben. Die Bedin-<lb/>gungen dieser Revision sind somit auch die dringendsten Vorfragen der<lb/> Zukunft des Privatrechts. Die zweite Frage ist, ob die Privatrechtswis-<lb/>senschaft wieder zu einer vollständigen und richtigen Wahrnehmung<lb/> der sozialen Wirklichkeit und zu einer methodisch-systematischen<lb/> Einformung dieser Wirklichkeit gelangen wird. […] Eine Abbildung der<lb/> werdenden und kommenden Gesellschaft unseres Landes und unseres<lb/> Erdteils in adäquaten rechtswissenschaftlichen Systemen und Begriffen<lb/> ist gegenwärtig vielleicht noch gar nicht möglich -und doch bleibt sie die<lb/> zweite dringende Aufgabe der Privatrechtswissenschaft."<lb/></bibl>
+      <bibl><label>74</label> Vgl. die begriffliche Reminiszenz an dieses weithin in den Hintergrund<lb/> verdrängte Juristenbild in der Präambel des Juristenausbildungsgesetz-<lb/>es (JAG) für das Bundesland Hessen: "Ziel der juristischen Ausbildungs-<lb/>reform ist der kritische, aufgeklärt rational handelnde Jurist, der sich<lb/> seiner Verpflichtung als Wahrer des freiheitlich demokratischen und<lb/> sozialen Rechtsstaats bewusst ist und der in der Lage ist, die Aufgaben<lb/> der Rechtsfortbildung zu erkennen."<lb/></bibl>
+      <bibl><label>75</label> Siehe Wiethölter, (Fn. 7), Rechtswissenschaft, 179: "Im Bürgerlichen<lb/> Recht brauchen wir heute neue Modelle. Franz Wieacker spricht von<lb/> der Ablösung formaler Pflichtethik durch materiale Verantwortungs-<lb/>ethik. Ich selbst möchte die Aufgabe kennzeichnen als Politisierung des<lb/> Bürgerlichen Rechts. Dabei ist ‚politisch' zu verstehen als Zielvorstellung<lb/> von der ‚guten Ordnung' eines Gemeinwesens, für die Menschenbild,<lb/> Geschichtlichkeit der Existenz und Verfassung die wichtigsten Leit-<lb/>linien für die methodischen Wege setzen. Selbstverständlich ist auch<lb/> das liberale Bürgerliche Recht politisch, aber nicht im Sinne seines<lb/> Selbstverständnisses von Politik, das Politik mit Staatlichkeit verknüpft,<lb/> überhaupt als Mittel, nicht als Ziel empfindet. Die Politisierung des Bür-<lb/>gerlichen Rechts orientiert sich an der politischen Einheit der Rechts-<lb/>ordnung, kann sich also auf die Dualismen von Staat und Gesellschaft,<lb/> von öffentlichem und privatem Recht nicht stützen. Daß diese Dualis-<lb/>men unser allgemeines Rechtsbewußtsein, unser Rechtssystem, unsere<lb/> rechtlichen Begriffe und Vokabeln aber weithin noch heute beherrschen,<lb/> führt zu Schwierigkeiten der juristischen Arbeit, die ohne Gesellschafts-<lb/>theorie, ohne Methodik zwangsläufig irrational, zufällig, blind, wider-<lb/>sprüchlich ausfallen muß."<lb/></bibl>
+      <bibl><label>76</label> Denn solche "Materialisierungen zwingen indessen zu sehr komplexen<lb/> Groß-und Überzweckprogrammen, für die alle Rechte dann ihrerseits<lb/> zu Mitteln werden" -so Wiethölter, (Fn. 46), 61 f.<lb/></bibl>
+
+      <bibl>on the "material questions of fate" of private law scholarship, especially<lb/> "in the marginal fields on the intersection between the shaping of society<lb/> and the protection of private interests," see accordingly Wieacker, (fn.<lb/> 67), 621, 624, and further 618 et seq: "Man of the technical age has only<lb/> begun to find the appropriate moral and legal models of order, apart from<lb/> laudable exceptions (such as social security, labor law, the self-control<lb/> of production, the health system). [...] In the meantime, it remains the<lb/> responsibility of man to catch up with a politics of morality, i.e. moral<lb/> technology, out of the forces of his independent conscience, which is ap-<lb/>propriate and equal to the external technical possibilities .[...] The crisis<lb/> of legal thought in the last hundred years reveals itself far more conspic-<lb/>uously than in private law in the relations of peoples among themselves<lb/> and in the relations of the state and social groups to the individual, that<lb/> is, in international law, constitutional law, administrative law, criminal<lb/> law and social law. It might seem accordingly that there is only a rath-<lb/>er remote connection between the history of private law and the gen-<lb/>eral threat or renewal of legal thought [...]. In truth, it has always been<lb/> shown how much the ups and downs of private law scholarship have also<lb/> been conditioned by the general understanding of the ages. Without a<lb/> re-foundation of legal faith, there will be no future for European private<lb/> law either. The conditions of this revision are thus also the most urgent<lb/> preliminary questions of the future of private law. The second question<lb/> is whether private jurisprudence will again arrive at a complete and cor-<lb/>rect sense of social reality and at a methodical-systematic shaping of this<lb/> reality. [...] A depiction of the emerging and coming society of our country<lb/> and our continent in adequate jurisprudential systems and concepts is<lb/> perhaps not even possible at present -and yet it remains the second ur-<lb/>gent task of private jurisprudence."<lb/></bibl>
+
+      <bibl><label>74</label> Cf. the conceptual reminiscence of this image of the jurist, which has<lb/> largely been relegated to the background, in the preamble to the Juris-<lb/>tenausbildungsgesetz (JAG) for the Federal State of Hesse: "The goal of<lb/> legal education reform is the critical, enlightened, rational lawyer who is<lb/> aware of his obligation as the upholder of the free democratic and social<lb/> rule of law and who is able to recognize the tasks of the further develop-<lb/>ment of the law."<lb/></bibl>
+      <bibl><label>75</label> See Wiethölter, (fn. 7), Rechtswissenschaft, 179: "In civil law today, we<lb/> need new models. Franz Wieacker speaks of the replacement of formal<lb/> ethics of duty by material ethics of responsibility. I myself would like to<lb/> characterize the task as politicization of civil law. In this context, 'politi-<lb/>cal' is to be understood as a conception of the 'good order' of a communi-<lb/>ty, for which the conception of man, the historicity of existence and the<lb/> constitution set the most important guidelines for the methodological<lb/> paths. Of course, liberal civil law is also political, but not in the sense of<lb/> its self-understanding of politics, which links politics with statehood and<lb/> perceives it as a means rather than an end. The politicization of civil law<lb/> is oriented towards the political unity of the legal order, and thus cannot<lb/> rely on the dualisms of state and society, of public and private law. But<lb/> the fact that these dualisms still largely dominate our general legal con-<lb/>sciousness, our legal system, our legal concepts and vocabulary, leads to<lb/> difficulties in legal work, which, without social theory, without method-<lb/>ology, must inevitably turn out irrational, random, blind, contradictory."<lb/></bibl>
+
+      <bibl><label>76</label> For such "materializations, however, force to very complex large-scale<lb/> and over-purpose programs, for which all rights then in turn become<lb/> means" -according to Wiethölter, (fn. 46), 61 et seq.<lb/></bibl>
+      <bibl><label>77</label> Rudolf Wiethölter, Materialisierungen und Prozeduralisierungen von<lb/> Recht, in: Zumbansen/Amstutz (eds.), Recht in Recht-Fertigungen<lb/> (1984/2014), 423-450, 445.<lb/></bibl>
+
+      <bibl><label>77</label> Rudolf Wiethölter, Materialisierungen und Prozeduralisierungen von<lb/> Recht, in: Recht in Recht-Fertigungen, hg. von P. Zumbansen/M. Am-<lb/>stutz, 1984/2014, 423-450, 445.<lb/></bibl>
+      <bibl><label>78</label> Siehe Christoph Menke, Mutsprünge der Reflexion, Kritische Justiz (KJ)<lb/> 52 (2019), 543-548, mit Bezug auf Wiethölter, (Fn. 46), 55.<lb/></bibl>
+      <bibl><label>79</label> Besonders aufschlussreich diesbezüglich Gunther Teubner, Von<lb/> "Wirtschaftsverfassung I, II" zum "selbstgerechten Verfassungsrecht":<lb/> Zur Kritizität von Rudolf Wiethölters kritischer Systemtheorie, KJ 52<lb/> (2019), 601-625, 607 ff.<lb/></bibl>
+      <bibl><label>80</label> Kant, (Fn. 41), 481.<lb/></bibl>
+      <bibl><label>81</label> Wiethölter, (Fn. 16), 108.<lb/></bibl>
+      <bibl><label>82</label> Wiethölter, (Fn. 16).<lb/></bibl>
+      <bibl><label>83</label> Siehe Teubner, (Fn. 79), 611.<lb/></bibl>
+      <bibl><label>84</label> Siehe ebd., 610.<lb/></bibl>
+      <bibl><label>85</label> Jacques Derrida, Gesetzeskraft: Der "mystische Grund der Autorität",<lb/> Frankfurt a. M. 1996, 56 f.<lb/></bibl>
+
+      <bibl><label>78</label> See Christoph Menke, Mutsprünge der Reflexion, Kritische Justiz (KJ)<lb/> 52 (2019), 543-548, with reference to Wiethölter, (fn. 46), 55.<lb/></bibl>
+      <bibl><label>79</label> Particularly insightful in this regard: Gunther Teubner, Von<lb/> "Wirtschaftsverfassung I, II" zum "selbstgerechten Verfassungsrecht":<lb/> Zur Kritizität von Rudolf Wiethölters kritischer Systemtheorie, KJ 52<lb/> (2019), 601-625, 607 et seq.<lb/></bibl>
+      <bibl><label>80</label> Kant, (fn. 41), 481.<lb/></bibl>
+      <bibl><label>81</label> Wiethölter, (fn. 16), 108.<lb/></bibl>
+      <bibl><label>82</label> Wiethölter, (fn. 16).<lb/></bibl>
+      <bibl><label>83</label> See Teubner, (fn. 79), 611.<lb/></bibl>
+      <bibl><label>84</label> See ibid, 610.<lb/></bibl>
+      <bibl><label>85</label> Jacques Derrida, Gesetzeskraft: Der "mystische Grund der Autorität"<lb/> (1996), 56 et seq.<lb/></bibl>
+      <bibl><label>86</label> Thus Teubner, (fn. 79), 611.<lb/></bibl>
+
+      <bibl><label>86</label> So Teubner, (Fn. 79), 611. </bibl>
+
+      <bibl><label>88</label> Siehe dazu Michael Blecher, Rechts-Bewegungs-Kunst für das 21.<lb/> Jahrhundert. Rudolf Wiethölter zum 80. Geburtstag, KJ 42 (2009),<lb/> 427-434; </bibl>
+      <bibl>sowie ders., Geschichte und Eigensinn: Rudolf Wiethölters<lb/> Rechts-Bewegungs-Kunst im 100. Semester, in: Politische Rechtstheo-<lb/>rie Revisited. Rudolf Wiethölter zum 100. Semester, hg. von C. Joerges/P.<lb/> Zumbansen, ZERP-Diskussionspapier 1/2013, 31-43.<lb/></bibl>
+      <bibl><label>89</label> Es genügt daher gerade nicht, sich für das Alltagsrecht mit "incomplete-<lb/>ly theorized agreements" zufriedenzugeben und damit die Grundlagen-<lb/>fächer aus der Verantwortung für eine vermeintlich lösungsorientierte<lb/> rechtsdogmatische Praxis zu entlassen. Siehe jedoch Thomas Gutmann,<lb/> Der Holzkopf des Phädrus -Perspektiven der Grundlagenfächer, JZ<lb/> 2013, 697-700, 697 f.<lb/></bibl>
+      <bibl><label>90</label> Siehe entsprechend Wiethölter, (Fn. 7), Anforderungen, 528: "Für die<lb/> Hilflosigkeit der Rechtswissenschaft in unserer Zeit wäre geradezu eine<lb/> Wissenschaft der Hilflosigkeit vonnöten."<lb/></bibl>
+      <bibl><label>91</label> Häufig zitierter "Schulfall" (nach Wiethölter): "Ehemann A erschießt<lb/> seine Ehefrau B. Wem gehört die Kugel, wenn Gütertrennung besteht?";<lb/></bibl>
+      <bibl>siehe hierzu Thomas-M. Seibert, Die Lehre vom Rechtszeichen. Entwurf<lb/> einer allgemeinen Rechtslehre, 2017, 404 ff.: "Die Ausbildungsfälle der<lb/> Juristen sagen wenig über die Welt […], sie sagen nur, was Juristen dafür<lb/> halten. Der Schulfall ist das Instrument, das Juristen, die sich im Besitz<lb/> von Wissen glauben, gegenüber anderen verwenden, die erst noch Juris-<lb/>ten werden bzw. das dazu notwendige Wissen in der Rechtsschule erst<lb/> noch erwerben wollen" (405).<lb/></bibl>
+
+      <bibl type="footnote"><label>87</label> I owe this linguistic twist to a discussion paper by my colleague V. Kara-<lb/>vas in the Lucerne Seminar on Interdisciplinary Legal Studies of the Fall<lb/> 2019 semester.<lb/></bibl>
+
+      <bibl><label>88</label> On this, see Michael Blecher, Rechts-Bewegungs-Kunst für das 21.<lb/> Jahrhundert. Rudolf Wiethölter zum 80. Geburtstag, KJ 42 (2009), 427-<lb/>434; </bibl>
+      <bibl>as well as Blecher, Geschichte und Eigensinn: Rudolf Wiethölters<lb/> Rechts-Bewegungs-Kunst im 100. Semester, in: Joerges/Zumbansen,<lb/> Politische Rechtstheorie Revisited. Rudolf Wiethölter zum 100. Semes-<lb/>ter, ZERP-Diskussionspapier 1 (2013), 31-43.<lb/></bibl>
+      <bibl><label>89</label> It is therefore not enough to be satisfied with "incompletely theorized<lb/> agreements" for everyday law and thus to release the basic subjects from<lb/> the responsibility for a supposedly solution-oriented legal dogmatic<lb/> practice. See, however, Thomas Gutmann, Der Holzkopf des Phädrus -<lb/>Perspektiven der Grundlagenfächer, JZ (2013), 697-700, 697 et seq.<lb/></bibl>
+
+      <bibl><label>90</label> See accordingly Wiethölter, (fn. 7), Anforderungen, 528: "For the help-<lb/>lessness of jurisprudence in our time, a science of helplessness would be<lb/> precisely what is needed."<lb/></bibl>
+      <bibl><label>91</label> Frequently cited "textbook case" (according to Wiethölter): "Husband A<lb/> shoots his wife B. To whom does the bullet belong if there is separation<lb/> of property?"; </bibl>
+      <bibl>see on this Thomas-M. Seibert, Die Lehre vom Rechtszei-<lb/>chen. Entwurf einer allgemeinen Rechtslehre (2017), 404 et seq.: "The<lb/> training cases of lawyers say little about the world [...], they say only what<lb/> lawyers think they say. The textbook case is the tool that lawyers who be-<lb/>lieve themselves to be in possession of knowledge use over others who<lb/> are yet to become lawyers or are yet to acquire the knowledge necessary<lb/> to do so in law school" (405).<lb/></bibl>
+      <bibl><label>92</label> For a corresponding definition of jurisprudence education, see<lb/> Wiethölter, (fn. 7), Anforderungen, 525.<lb/></bibl>
+
+      <bibl><label>92</label> Zu einer entsprechenden Bestimmung von Juristenaufklärung siehe<lb/> Wiethölter, (Fn. 7), Anforderungen, 525.<lb/></bibl>
+      <bibl><label>93</label> Zu diesem keineswegs bloß metaphorisch aufzufassenden Konzept der<lb/> sozialen Immunologie bereits Niklas Luhmann, Soziale Systeme, 1984,<lb/> 504 ff.; </bibl>
+      <bibl>ders., (Fn. 61), Recht der Gesellschaft, 565 ff.<lb/></bibl>
+      <bibl><label>94</label> Vgl. Gruber, (Fn. 29), 74 ff.<lb/></bibl>
+      <bibl><label>95</label> Zu einem entsprechenden Übergang auf ein "experimentierendes<lb/> […] Herstellen von Ordnungen" siehe Gunther Teubner, Der Umgang<lb/> mit Rechtsparadoxien: Derrida, Luhmann, Wiethölter, in: Rechtsver-<lb/>fassungsrecht, hg. von C. Joerges/G. Teubner, 2003, 25-46, 31; </bibl>
+      <bibl>vgl. ferner<lb/> Gruber, (Fn. 29), 103 f.<lb/></bibl>
+      <bibl><label>96</label> Siehe Niklas Luhmann, Das Paradox der Menschenrechte und drei For-<lb/>men seiner Entfaltung, in: Soziologische Aufklärung 6: Die Soziologie<lb/> und der Mensch, 1995, 229-236, 236.<lb/></bibl>
+
+      <bibl><label>93</label> On this concept of social immunology, which is by no means to be under-<lb/>stood merely metaphorically, already Niklas Luhmann, Soziale Systeme<lb/> (1984), 504 et seq.; </bibl>
+      <bibl>Luhmann (fn. 61), Recht der Gesellschaft, 565 et seq.<lb/></bibl>
+      <bibl><label>94</label> Cf. Gruber, (fn. 29), 74 et seq.<lb/></bibl>
+      <bibl><label>95</label> On a corresponding transition to an "experimenting [...] production of<lb/> orders," see Gunther Teubner, Der Umgang mit Rechtsparadoxien: Der-<lb/>rida, Luhmann, Wiethölter, in: Joerges/Teubner, Rechtsverfassungsrecht<lb/> (2003), 25-46, 31; </bibl>
+      <bibl>see further Gruber, (fn. 29), 103 et seq.<lb/></bibl>
+      <bibl><label>96</label> See Niklas Luhmann, Das Paradox der Menschenrechte und drei Formen<lb/> seiner Entfaltung, in: Luhmann, Soziologische Aufklärung 6: Die Sozio-<lb/>logie und der Mensch (1995), 229-236, 236.<lb/></bibl>
+      <bibl><label>97</label> Pointing the way to dealing with paradoxes in the sense of their unfold-<lb/>ing above all Niklas Luhmann, Die Paradoxie des Entscheidens, Verwal-<lb/>tungs-Archiv 84 (1993), 287-310, 294 et seq.: "Unfolding a paradox is<lb/> nothing other than the relocation of the observer's blind spot to anoth-<lb/>er, less disturbing place. [...] Stable identities are reintroduced, against<lb/> better judgment, which are easier to hold. [...] But identities can only be<lb/> designated with the help of distinctions, and even these distinctions are<lb/> prone to paradox. One has to accept this in every unfolding of an initial<lb/> paradox. The gain, then, can never be in a paradox-free assured construc-<lb/>tion of the world, but it can be in organizational advantages of cogni-<lb/>tion; or even in greater historical plausibility of knowledge in situations<lb/> where old distinctions are spent and all too easily 'questioned.'"<lb/></bibl>
+
+      <bibl><label>97</label> Richtungsweisend zum Umgang mit Paradoxien im Sinne ihrer Entfal-<lb/>tung vor allem Niklas Luhmann, Die Paradoxie des Entscheidens, Ver-<lb/>waltungs-Archiv 84 (1993), 287-310, 294 f.: "Entfaltung einer Paradoxie<lb/> ist nichts anderes als die Verlagerung des blinden Flecks des Beobach-<lb/>ters an eine andere, weniger störende Stelle. […] Es werden, wider besse-<lb/>res Wissen, wieder stabile Identitäten eingeführt, die sich besser halten<lb/> lassen. […] Aber Identitäten kann man nur mit Hilfe von Unterscheidun-<lb/>gen bezeichnen, und auch diese Unterscheidungen sind paradoxieträch-<lb/>tig. Das muß man bei jeder Entfaltung einer Ausgangsparadoxie in Kauf<lb/> nehmen. Der Gewinn kann also nie in einer paradoxiefrei gesicherten<lb/> Weltkonstruktion liegen, wohl aber in Organisationsvorteilen der Ko-<lb/>gnition; oder auch in größerer historischer Plausibilität des Wissens in<lb/> Situationen, in denen alte Unterscheidungen verbraucht sind und allzu<lb/> leicht ‚hinterfragt' werden können."<lb/></bibl>
+      <bibl><label>98</label> Antoine de Saint-Exupéry, Nachtflug, 1955, 124.<lb/></bibl>
+      <bibl><label>99</label> Siehe etwa Bruno Latour, Wir sind nie modern gewesen. Versuch einer<lb/> symmetrischen Anthropologie, 2008, 82 f.; </bibl>
+      <bibl>Gruber, (Fn. 29), 346 f.<lb/></bibl>
+      <bibl><label>100</label> Vgl. Latour, (Fn. 99), 80 ff.; </bibl>
+      <bibl>Badiou, (Fn. 37), 35.<lb/></bibl>
+      <bibl><label>101</label> Zur entsprechenden Entfremdung von Sozialkonflikten zu Entschei-<lb/>dungszwecken siehe Gunther Teubner/Peer Zumbansen, Rechtsent-<lb/>fremdungen: Zum gesellschaftlichen Mehrwert des zwölften Kamels,<lb/> Zeitschrift für Rechtssoziologie 21 (2000), 189-215, 190 ff.<lb/></bibl>
+
+      <bibl><label>98</label> Antoine de Saint-Exupéry, Night Flight (1932), 75.<lb/></bibl>
+      <bibl><label>99</label> See, for example, Bruno Latour, Wir sind nie modern gewesen. Versuch<lb/> einer symmetrischen Anthropologie (2008), 82 et seq.; </bibl>
+      <bibl>Gruber, (fn. 29),<lb/> 346 et seq.<lb/></bibl>
+      <bibl><label>100 </label>Cf. Latour, (fn. 99), 80 ff; </bibl>
+      <bibl>Badiou, (fn. 37), 35.<lb/></bibl>
+      <bibl><label>101</label> On the corresponding alienation of social conflicts for decision-making<lb/> purposes, see Gunther Teubner/Peer Zumbansen, Rechtsentfremdungen:<lb/> Zum gesellschaftlichen Mehrwert des zwölften Kamels, Zeitschrift für<lb/> Rechtssoziologie 21 (2000), 189-215, 190 et seq.<lb/></bibl>
+
+      <bibl><label>102</label> Luhmann, (Fn. 61), Recht der Gesellschaft, 565.<lb/></bibl>
+      <bibl><label>103</label> Zu diesem Beispiel einer Zukunftsorientierung im Recht siehe Gruber,<lb/> (Fn. 29), 294 ff.<lb/></bibl>
+      <bibl><label>104</label> Vgl. hierzu Gruber, (Fn. 29), 294 ff.<lb/></bibl>
+      <bibl><label>105</label> Vgl. Derrida, (Fn. 85), 40.<lb/></bibl>
+      <bibl><label>106</label> Vgl. Blecher, (Fn. 88), 40 ff.<lb/></bibl>
+      <bibl><label>107</label> Für eine solche Empathie des Rechts siehe Gruber, (Fn. 29), 77 ff.<lb/></bibl>
+
+      <bibl><label>102</label> Luhmann, (fn. 61), Recht der Gesellschaft, 565.<lb/></bibl>
+      <bibl><label>103</label> On this example of a future orientation in law, see Gruber, (fn. 29), 294 et<lb/> seq.<lb/></bibl>
+      <bibl><label>104</label> Cf. Gruber, (fn. 29), 294 et seq.<lb/></bibl>
+      <bibl><label>105</label> Cf. Derrida, (fn. 85), 40.<lb/></bibl>
+      <bibl><label>106</label> Cf. Blecher, (fn. 88), 40 et seq.<lb/></bibl>
+      <bibl><label>107 </label>For this empathy of law see Gruber, (fn. 29), 77 et seq.<lb/></bibl>
+
+      <bibl><label>108</label> Vgl. Gruber, (Fn. 29), 88 f.<lb/></bibl>
+      <bibl><label>109</label> Vgl. hierzu Luhmann, Literatur als fiktionale Realität, in: Schriften zu<lb/> Kunst und Literatur, hg. von Niels Werber, 2008, 276-291, 280 f.<lb/></bibl>
+      <bibl><label>110</label> Siehe Menke, (Fn. 28), 30.<lb/></bibl>
+      <bibl><label>111</label> Zu einer entsprechenden Einordnung als "poietisches Unsystem" vgl.<lb/> Wiethölter, (Fn. 16), 106 ff.; </bibl>
+      <bibl>siehe auch die weitere Charakterisierung<lb/> dieses Methodenprogramms bei Blecher, (Fn. 88), 41.<lb/></bibl>
+      <bibl><label>112</label> Vgl. Gruber, (Fn. 49), 67 ff.<lb/></bibl>
+      <bibl><label>113</label> Ein zentrales Motiv hierfür findet sich bei Franz Kafka, Fürsprecher<lb/> (1936), in: Die Erzählungen (hg. von R. Hermes), 10. Aufl. 2008, 389-391;<lb/></bibl>
+      <bibl>vgl. hierzu Rüdiger Campe, Synegoria und Advokatur. Entwurf zu einer<lb/> kritischen Geschichte der Fürsprache, in: Empathie und Erzählung, hg.<lb/></bibl>
+
+      <bibl><label>108</label> Cf. Gruber, (fn. 29), 88 et seq.<lb/></bibl>
+      <bibl><label>109</label> Cf. on this Luhmann, Literatur als fiktionale Realität, in: Werber (eds.),<lb/> Schriften zu Kunst und Literatur, (2008), 276-291, 280 et seq.<lb/></bibl>
+      <bibl><label>110</label> See Menke, (fn. 28), 30.<lb/></bibl>
+      <bibl><label>111</label> For a corresponding classification as "poietic unsystem" cf. Wiethölter,<lb/> (fn. 16), 106 et seq.; </bibl>
+      <bibl>see also the further characterization of this method-<lb/>ological program in Blecher, (fn. 88), 41.<lb/></bibl>
+      <bibl><label>112</label> Cf. Gruber, (fn. 49), 67 et seq.<lb/></bibl>
+      <bibl><label>113</label> A central motif for this can be found in Franz Kafka, Fürsprecher (1936),<lb/> in: Hermes (eds.), Die Erzählungen (2008), 389-391; </bibl>
+      <bibl>cf. on this Rüdiger<lb/> Campe, Synegoria und Advokatur. Entwurf zu einer kritischen Geschich-<lb/>te der Fürsprache, in: Breger/Breithaupt (eds.), Empathie und Erzählung<lb/></bibl>
+
+      <bibl>von C. Breger/F. Breithaupt, 2010, 53-84; </bibl>
+      <bibl>ders., Kafkas Fürsprache, in:<lb/> Kafkas Institutionen, hg. von A. Höcker/O. Simons, 2007, 189-212; </bibl>
+      <bibl>zur<lb/> entsprechenden empathischen Fähigkeit der Parteinahme in sozialen<lb/> Beziehungen insbesondere Fritz Breithaupt, Kulturen der Empathie,<lb/> 2009, 152.<lb/></bibl>
+      <bibl><label>114</label> Zur normengenerierenden Potenz solchen Unrechts -als "Unrecht auf<lb/> jeden Fall" -siehe Niklas Luhmann, Gibt es in unserer Gesellschaft noch<lb/> unverzichtbare Normen?, in: Die Moral der Gesellschaft, hg. von D. Hor-<lb/>ster, 2008, 228-252, 249 ff.<lb/></bibl>
+      <bibl><label>115</label> Siehe Fischer-Lescano, (Fn. 12), 215 f.: "Wahre Rechtskritik nimmt<lb/> vielmehr den Kampf ums Recht im Recht an und sucht die irreduzible<lb/> Kluft zwischen Gerechtigkeit und dem Recht gerade nicht dadurch zu<lb/> verringern, dass das Recht ausradiert wird, sondern dadurch, dass das<lb/> Recht den Anforderungen der Gerechtigkeit ausgesetzt wird."<lb/></bibl>
+      <bibl><label>116</label> Siehe Alfred North Whitehead, Denkweisen, 2001, 199.<lb/></bibl>
+
+      <bibl>(2010), 53-84; </bibl>
+      <bibl>Campe, Kafkas Fürsprache, in: Höcker/Simons (eds.),<lb/> Kafkas Institutionen (2007), 189-212; </bibl>
+      <bibl>on the corresponding empathic<lb/> capacity for partisanship in social relations, especially Fritz Breithaupt,<lb/> Kulturen der Empathie (2009), 152.<lb/></bibl>
+      <bibl><label>114</label> On the norm-generating potency of such injustice -as "injustice in any<lb/> case" -see Niklas Luhmann, Gibt es in unserer Gesellschaft noch unver-<lb/>zichtbare Normen?, in: Horster (ed.), Die Moral der Gesellschaft (2008),<lb/> 228-252, 249 et seq.<lb/></bibl>
+      <bibl><label>115</label> See Fischer-Lescano, (fn. 12), 215 et seq.: "True legal criticism, rather,<lb/> takes on the struggle for justice in law and seeks to narrow the irreduc-<lb/>ible gap between justice and the law precisely not by erasing the law but<lb/> by exposing the law to the demands of justice."<lb/></bibl>
+      <bibl>116 See Alfred North Whitehead, Denkweisen (2001), 199.<lb/></bibl>
+
+      <bibl><label>117</label> Ebd., 102.<lb/></bibl>
+      <bibl><label>118</label> Zur entsprechenden Anknüpfung an die Aufklärung im Sinne einer<lb/> "ständige[n] Reaktivierung einer Haltung -das heißt eines philoso-<lb/>phischen Ethos, das als permanente Kritik unseres historischen Seins<lb/> beschrieben werden könnte": Michel Foucault, Was ist Aufklärung?, in:<lb/> Ethos der Moderne: Foucaults Kritik der Aufklärung, hg. von E. Erdman-<lb/>n/R. Forst/A. Honneth, Frankfurt/New York 1990, 35-54, 45 ff.; </bibl>
+      <bibl>siehe<lb/> bereits oben, (Fn. 43).<lb/></bibl>
+      <bibl><label>119</label> Vgl. Whitehead, (Fn. 116), 97.<lb/></bibl>
+      <bibl><label>120</label> Siehe Ino Augsberg, "Das moralische Gefühl in mir" -Zu Kants Konzep-<lb/>tion menschlicher Freiheit und Würde als Auto-Heteronomie, JZ 68<lb/> (2013), 533-539, 539.<lb/></bibl>
+       <bibl><label>121</label> Aufschlussreich zum Verhältnis Recht/Literatur vor allem Rudolf<lb/> Wiethölter, "L'essentiel est invisible pour les yeux", Rede vom 2.12.2012,<lb/> in: Politische Rechtstheorie Revisited. Rudolf Wiethölter zum 100. Se-<lb/>mester, hg. von C. Joerges/P. Zumbansen, ZERP-Diskussionspapier<lb/> 1/2013, 183-192, 189: "[…] und wir wollen nicht verhandeln über Lite-<lb/>ratur im Recht und wir wollen auch nicht über Recht in Literatur ver-<lb/>handeln, sondern wir wollen über den Schrägstrich verhandeln, d.h. wir<lb/> verhandeln im Kern darüber, jetzt unter Literaturgesichtspunkten, was<lb/> das ist: Recht als Recht durch Recht mit Recht gegen Recht kraft Rechts.<lb/> Denn das ist ja das Numinose, und jedes Numinose hat ein Faszinosum<lb/> und auch ein Tremendum, so sagen jedenfalls die Theologen. Das klingt,<lb/> wenn Sie wollen, archaisch, nach Träumereien. Diese Art von Recht ist<lb/> eben nicht Recht als solches. Es ist auch nicht die Ökonomisierung oder<lb/> ähnliches. Es ist die Frage, was das sein könnte. Also darüber verhandeln<lb/> wir jetzt, ob vielleicht Literatur hilfreich sein kann. Das Recht können<lb/> wir nicht an eine archimedische Stelle anhängen, und das Recht kann<lb/> eigentlich auch nicht immanent begründet sein. Was wir suchen […],<lb/> sind sozusagen die Bedingungen von Möglichkeiten immanenter Tran-<lb/>szendenz."<lb/> </bibl>
+       <bibl><label>122 </label>Vgl. hierzu Helge Dedek, Die Schönheit der Vernunft -(Ir-)Rationalität<lb/> von Rechtswissenschaft in Mittelalter und Moderne, Rechtswissen-<lb/>schaft (RW) 1 (2010), 58-85, 68 ff., mit weiterem Hinweis auf die Be-<lb/>zeichnung und Ausgrenzung dieser rechtsästhetischen Perspektiven<lb/> als Betrachtungen einer vermeintlich unjuristischen "apocryphal juris-<lb/>prudence". Siehe dazu insbesondere Desmond Manderson, Apocryphal<lb/> Jurisprudence, Australian Journal of Legal Philosophy 26 (2001), 27-59,<lb/> 31 ff.<lb/></bibl>
+      <bibl><label>123</label> Dedek, (Fn. 122), 82.<lb/></bibl>
+
+      <bibl><label>117</label> Ibid, 102.<lb/></bibl>
+      <bibl><label>118</label> For the corresponding link to the Enlightenment in the sense of a "con-<lb/>stant reactivation of an attitude -that is, of a philosophical ethos that<lb/> could be described as a permanent critique of our historical being": Mi-<lb/>chel Foucault, Was ist Aufklärung?, in: Erdmann et al. (eds.), Ethos der<lb/> Moderne: Foucaults Kritik der Aufklärung (1990), 35-54, 45 et seq.; </bibl>
+      <bibl>see<lb/> already above, (fn. 43).<lb/></bibl>
+      <bibl><label>119</label> Cf. Whitehead, (fn. 116), 97.<lb/></bibl>
+      <bibl><label>120</label> See Ino Augsberg, "Das moralische Gefühl in mir" -Zu Kants Konzeption<lb/> menschlicher Freiheit und Würde als Auto-Heteronomie, JZ 68 (2013),<lb/> 533-539, 539.<lb/></bibl>
+      <bibl><label>121</label> Insightful on the relationship law/literature especially Rudolf<lb/> Wiethölter, "L'essentiel est invisible pour les yeux," speech from 2 De-<lb/>cember 2012, in: Joerges/Zumbansen (eds.), Politische Rechtstheorie<lb/> Revisited. Rudolf Wiethölter zum 100. Semester, ZERP-Diskussionspa-<lb/>pier 1 (2013), 183-192, 189: "[...] and we do not want to negotiate litera-<lb/>ture in law and we do not want to negotiate law in literature, but we want<lb/> to negotiate the slash, that is, we are negotiating in essence, now from a<lb/> literature point of view, what that is: law as law by law with law against<lb/> law by virtue of law. For this is the numinous, and every numinous has a<lb/> fascinosum and also a tremendum, at least so the theologians say. That<lb/> sounds archaic, if you will, like reverie. This kind of law is not law as such.<lb/> It is not economization or anything like that either. It is a question of<lb/> what that might be. So that's what we're negotiating now, whether maybe<lb/> literature can be helpful. We cannot attach the law to an Archimedean<lb/> position, and the law cannot in fact be immanently grounded. What we<lb/> are looking for [...] are, so to speak, the conditions of possibilities of im-<lb/>manent transcendence."<lb/> </bibl>
+         <bibl><label>122 </label> Cf. on this Helge Dedek, Die Schönheit der Vernunft -(Ir-)Rationalität<lb/> von Rechtswissenschaft in Mittelalter und Moderne, Rechtswissen-<lb/>schaft (RW) 1 (2010), 58-85, 68 et seq., with further reference to the<lb/> designation and exclusion of these legal-aesthetic perspectives as re-<lb/>flections of a supposedly unjuristic "apocryphal jurisprudence." See<lb/> especially Desmond Manderson, Apocryphal Jurisprudence, Australian<lb/> Journal of Legal Philosophy 26 (2001), 27-59, 31 et seq.<lb/>
+        </bibl><bibl><label>123</label> Dedek, (fn. 122), 82.<lb/></bibl>
+
+      <bibl><label>124</label> Siehe Amir Eshel, Zukünftigkeit. Die zeitgenössische Literatur und die<lb/> Vergangenheit, 2012, 16.<lb/></bibl>
+      <bibl><label>125</label> Vgl. ebd., 38 f. und 295 f.<lb/></bibl>
+      <bibl><label>126</label> Ebd., 11; </bibl> siehe auch ebd., 32: "Tatsächlich ist die einzige Zukunft, die uns<lb/> zu fehlen scheint, diejenige, die von den grossen sozialen Utopien des 19.<lb/> und 20. Jahrhunderts imaginiert wurde."<lb/>
+      <bibl><label>127</label> Vgl. etwa Francis Fukuyama, Das Ende des Menschen, 2. Aufl. 2002.<lb/></bibl>
+      <bibl><label>128</label> Vgl. Wiethölter, (Fn. 16), 106.<lb/></bibl>
+      <bibl><label>129</label> So die entsprechende Charakterisierung von Wiethölters "Recht-Ferti-<lb/>gung" als Prozeduralisierungsform bei Teubner, (Fn. 65), 180.<lb/></bibl>
+      <bibl><label>130</label> Wiethölter, (Fn. 16), 106 f.<lb/> 131 Wiethölter, (Fn. 16), 105; </bibl>
+      <bibl>in prägnanter Zuspitzung ders., (Fn. 46), 60:<lb/> "Das Rechtsparadoxon in nuce: Recht setzt voraus, was es zu bewirken<lb/> hat, jenes eingeschlossene, ausgeschlossene Dritte, das zugleich für Aus-<lb/>zehrungen wie Regenerierbarkeit seiner eigenen Möglichkeitsbedin-<lb/>gungen sorgt, also für Unverfügbarkeiten der ‚Recht-Fertigungen' wie<lb/> für ihre Verfügungen."<lb/></bibl>
+      <bibl><label>132</label> Siehe oben, (Fn. 98).<lb/></bibl>
+
+      <bibl><label>124</label> See Amir Eshel, Zukünftigkeit. Die zeitgenössische Literatur und die<lb/> Vergangenheit (2012), 16.<lb/></bibl>
+      <bibl><label>125</label> Cf. ibid., 38 et seq. and 295 et seq.<lb/></bibl>
+      <bibl><label>126</label> Ibid. 11; see also ibid., 32: "In fact, the only future we seem to be missing<lb/> is the one imagined by the great social utopias of the 19th and 20th cen-<lb/>turies."<lb/></bibl>
+      <bibl><label>127</label> Cf. for example, Francis Fukuyama, The End of History and the Last Man<lb/> (2002).<lb/></bibl>
+      <bibl><label>128</label> Cf. Wiethölter, (fn. 16), 106.<lb/></bibl>
+      <bibl><label>129</label> Thus the corresponding characterization of Wiethölter's "Recht-Ferti-<lb/>gung" as a form of proceduralization in Teubner, (fn. 65), 180.<lb/></bibl>
+      <bibl><label>130</label> Wiethölter, (fn. 16), 106 et seq.<lb/></bibl>
+      <bibl><label>131</label> Wiethölter, (fn. 16), 105; </bibl>
+      <bibl>concisely exaggerated Wiethölter, (fn. 46), 60:<lb/> "The paradox of the law in nuce: law presupposes what it must affect, that<lb/> enclosed, excluded third party, which at the same time provides for de-<lb/>pletions as well as regenerability of its own conditions of possibility, that<lb/> is, for unavailabilities of 'just-ifications' ['Recht-Fertigungen'] as well as<lb/> for their dispositions."<lb/></bibl>
+     <bibl><label>132</label> See above, (fn. 98).<lb/></bibl>
+
+     <bibl><label>133</label> Hannah Arendt, Vom Leben des Geistes, Band 1: Das Denken, 1989, 107.<lb/></bibl>
+     <bibl><label>134</label> Hannah Arendt, Vita activa oder Vom tätigen Leben, 1981, 165 f.<lb/>
+     </bibl><bibl><label>135</label> Ebd., 167.<lb/></bibl>
+     <bibl><label>136</label> Zum entsprechenden Verständnis von Hannah Arendts Konzept der<lb/> "Einschaltung" oder "Einfügung" des Menschen siehe vor allem Eshel,<lb/> (Fn. 124), 32 ff., insbesondere 36 f.: "Arendt schreibt die jüdisch-christ-<lb/>liche messianische Tradition um, indem sie ‚Geburt' nicht als vergan-<lb/>gene oder zukünftige Ankunft eines Messias, sondern als die Tatsache<lb/> definiert, dass jeder einzelne Mensch die Wirklichkeit, die er betritt, die<lb/> Umstände, mit denen er konfrontiert ist, neu gestaltet. Durch das Leben<lb/> in einer von Pluralismus definierten Welt ist jeder Mensch von Geburt<lb/> an Teil eines Netzwerks aus anderen sprechenden und handelnden Men-<lb/>schen. Aus der Notwendigkeit, sich darin zu orientieren, entsteht Han-<lb/>deln und damit die ständige Entwicklung unserer Wirklichkeit."<lb/></bibl>
+      <bibl><label>137 </label>Hannah Arendt, Zwischen Vergangenheit und Zukunft: Übungen im<lb/> politischen Denken I, 1994, 132.<lb/></bibl>
+      <bibl><label>138</label> Siehe Teubner, (Fn. 65), 180.<lb/></bibl>
+      <bibl><label>139</label> Teubner, (Fn. 65), 180 f.<lb/></bibl>
+      <bibl><label>140</label> Zur poetischen Bedeutung des Witzes als verbindendes Element von<lb/> Wissen und Kunst siehe vor allem Jean Paul: "Witz ist Bemerkung des<lb/> Verhältnisses zwischen entfernten Ideen; Tiefsinn Bemerkung des Ver-<lb/>hältnisses zwischen den nächsten. Der Witzige durchläuft gleichsam in<lb/> der Länge, was der Nachdenkende in der Tiefe der Ideen durchzieht; der<lb/> Eine hat ein teleskopisches Auge, der Andre ein mikroskopisches." (Jean<lb/> Pauls' sämmtliche Werke LXII, 13. Lieferung, 2. Band, hg. von E. Förster,<lb/> 1837, 230).<lb/></bibl>
+      <bibl><label>141</label> Vgl. Whitehead, (Fn. 116), 102 f.: "Die Art von Ideen, die wir beachten, und<lb/> diejenigen, die wir in den unbedeutenden Hintergrund stellen, bestim-<lb/>men unsere Hoffnungen, unsere Ängste und beherrschen unser Verhal-<lb/>ten. So, wie wir denken, leben wir."<lb/></bibl>
+      <bibl><label>142 </label>Teubner, (Fn. 65), 181.<lb/></bibl>
+      <bibl><label>143</label> Derrida, (Fn. 85), 42.<lb/></bibl>
+      <bibl><label>144</label> Weiter-und tiefergehend hierzu Wiethölter, (Fn. 16), 107 f.<lb/></bibl>
+
+      <bibl><label>133</label> Hannah Arendt, Vom Leben des Geistes, Band 1: Das Denken (1989), 107.<lb/></bibl>
+      <bibl><label>134</label> Hannah Arendt, Vita activa oder Vom tätigen Leben (1981), 165 et seq.<lb/></bibl>
+      <bibl><label>135</label> Ibid, 167.<lb/></bibl>
+      <bibl><label>136</label> On the corresponding understanding of Hannah Arendt's concept of the<lb/> "intercalation" or "insertion" of man, see especially Eshel, (fn. 124), 32 et<lb/> seq, especially 36 et seq: "Arendt rewrites the Judeo-Christian messianic<lb/> tradition by defining 'birth' not as the past or future arrival of a messiah,<lb/> but as the fact that each individual human being reshapes the reality he<lb/> or she enters, the circumstances he or she confronts. By living in a world<lb/> defined by pluralism, from birth, everyone is part of a network of other<lb/> speaking and acting people. From the need to orient ourselves in it, ac-<lb/>tion arises and with it the constant development of our reality."<lb/></bibl>
+      <bibl><label>137</label> Hannah Arendt, Zwischen Vergangenheit und Zukunft: Übungen im<lb/> politischen Denken I (1994), 132.<lb/></bibl>
+      <bibl><label>138</label> See Teubner, (fn. 65), 180.<lb/></bibl>
+      <bibl><label>139</label> Teubner, (fn. 65), 180 et seq.<lb/></bibl>
+      <bibl><label>140</label> On the poetic significance of wit as a connecting element of knowledge<lb/> and art, see above all Jean Paul: "Wit is remark of the relation between<lb/> distant ideas; profundity remark of the relation between the nearest. The<lb/> witty man runs through, as it were, in length what the thoughtful man<lb/> runs through in depth of ideas; the one has a telescopic eye, the other a<lb/> microscopic one." (Förster (ed.), Jean Pauls' sämmtliche Werke LXII,<lb/> 13th instalment, vol. 2 (1837), 230).<lb/></bibl>
+      <bibl><label>141</label> Cf. Whitehead, (fn. 116), 102 et seq.: "The kinds of ideas we pay attention<lb/> to, and those we place in the insignificant background, determine our<lb/> hopes, our fears, and govern our behavior. The way we think is the way<lb/> we live."<lb/><lb/></bibl>
+      <bibl><label>142</label> Teubner, (fn. 65), 181.</bibl>
+      <bibl><label>143</label> Derrida, (fn. 85), 42.<lb/></bibl>
+      <bibl><label>144</label> Further and more profoundly on this Wiethölter, (fn. 16), 107 et seq.<lb/></bibl>
+
+      <bibl><label>145</label> Vgl. Eshel, (Fn. 124), 14<lb/></bibl>
+      <bibl><label>146</label> Vgl. hierzu Eshel, (Fn. 124), 18, mit Bezug auf Percy Bysshe Shelley, A De-<lb/>fence of Poetry, 1821/1840.<lb/></bibl>
+      <bibl><label>147</label> Vgl. Malte-Christian Gruber, Mensch oder Maschine. Zur Humanität des<lb/> Rechts nach dem Ende des Menschen, in: Menschenbilder im Recht, hg.<lb/> von A. Funke/K. U. Schmolke, 2019, 43-59, 51 f.<lb/></bibl>
+
+      <bibl><label>145</label> Cf. Eshel, (fn. 124), 14<lb/></bibl>
+      <bibl><label>146</label> Cf. Eshel, (fn. 124), 18, with reference to Percy Bysshe Shelley, A Defence<lb/> of Poetry, (1821/1840).<lb/></bibl>
+      <bibl><label>147</label> Cf. Malte-Christian Gruber, Mensch oder Maschine. Zur Humanität des<lb/> Rechts nach dem Ende des Menschen, in: Funke/Schmolke (eds.), Men-<lb/>schenbilder im Recht (2019), 43-59, 51 et seq.<lb/></bibl>
+
+      <bibl><label>148</label> Siehe etwa Bruno Latour, Eine neue Soziologie für eine neue Gesell-<lb/>schaft, 2007, 76 ff., 186 und 352 ff.<lb/></bibl>
+      <bibl><label>149</label> Vgl. hierzu etwa Andrew Pickering, Kybernetik und Neue Ontologien,<lb/> 2007, 8 ff.<lb/></bibl>
+      <bibl><label>150</label> Siehe hierzu Pickering, (Fn. 149), 67, der anhand mehrerer Beispiele aus<lb/> Wissenschaft, Technik und Kunst darstellt, "[…] wie genuine Neuheit<lb/> genuin in der Zeit entstehen kann, inmitten der Dinge, in der Überschnei-<lb/>dung von Menschlichem und Nicht-Menschlichem, in einem vorwärts-<lb/>gerichteten Suchprozeß mit Versuch und Irrtum und offenem Ende."<lb/></bibl>
+      <bibl><label>151</label> Vgl. Peter Drucker, The Next Society: A Survey of the Near Future, The<lb/> Economist, Vol. 361, No. 8246, 3-9 November 2001.<lb/></bibl>
+      <bibl><label>152</label> Vgl. hierzu Dirk Baecker, Studien zur nächsten Gesellschaft, 2007, 7 ff.<lb/></bibl>
+      <bibl><label>153</label> Siehe Baecker, Das Relativitätsprinzip, in: Studien zur nächsten Ge-<lb/>sellschaft, 2007, 206-228, 228.<lb/></bibl>
+      <bibl><label>154</label> Dass der "cult of reason" der westlichen Rechtstradition den vormoder-<lb/></bibl>
+
+      <bibl><label>148</label> See, for example, Bruno Latour, Eine neue Soziologie für eine neue Ge-<lb/>sellschaft (2007), 76 et seq., 186 and 352 et seq.<lb/></bibl>
+      <bibl><label>149</label> On this see, for example, Andrew Pickering/Keith Guzik (eds.), The Man-<lb/>gle in Practice: Science, Society and Becoming (2008), VII et seq.<lb/></bibl>
+      <bibl><label>150 </label>See Pickering, (fn. 149), 3, who uses several examples from science,<lb/> technology, and art to illustrate "[...] how genuine novelty can genuinely<lb/> emerge in time, in the thick of things, in the intersection of the human<lb/> and the nonhuman, in a trial-and-error search process that is open ended<lb/> and forward looking."<lb/></bibl>
+      <bibl><label>151</label> Cf. Peter Drucker, The Next Society: A Survey of the Near Future, The<lb/> Economist 361/8246 (3-9 November 2001).<lb/></bibl>
+      <bibl><label>152</label> Cf. Dirk Baecker, Studien zur nächsten Gesellschaft (2007), 7 et seq.<lb/></bibl>
+      <bibl><label>153</label> See Baecker, Das Relativitätsprinzip, in: Baecker (ed.), Studien zur näch-<lb/>sten Gesellschaft (2007), 206-228, 228.<lb/></bibl>
+      <bibl><label>154</label> That the "cult of reason" of the Western legal tradition is closer to the<lb/></bibl>
+
+      <bibl>nen Methoden der scholastischen Jurisprudenz nähersteht als er selbst<lb/> glauben möchte, verdeutlicht Dedek, (Fn. 122), 61 ff.<lb/></bibl>
+      <bibl><label>155</label> Dann allerdings würde sich Luhmanns Vermutung bewahrheiten, "daß<lb/> die gegenwärtige Prominenz des Rechtssystems und die Angewiesenheit<lb/> der Gesellschaft selbst und der meisten ihrer Funktionssysteme auf ein<lb/> Funktionieren des Rechtscodes nichts weiter ist als eine europäische<lb/> Anomalie, die sich in der Evolution einer Weltgesellschaft abschwächen<lb/> wird" (ders., (Fn. 61), Recht der Gesellschaft, 585 f.).<lb/></bibl>
+      <bibl><label>156</label> Dedek, (Fn. 122), 82.<lb/></bibl>
+      <bibl><label>157</label> Vgl. Baecker, (Fn. 153), 227 f.<lb/></bibl>
+      <bibl><label>158 </label>In die Zukunft weist der Aufruf von Taiwans Digitalministerin Au-<lb/>drey Tang auf der Berliner re;publica (6.-8. Mai 2019, abrufbar unter<lb/> https://19.re-publica.com/de/news/audrey-tang, 20.03.2022): "Wenn<lb/> wir ‚Internet der Dinge' sehen, lasst es uns zu einem Internet der We-<lb/>sen machen./Wenn wir ‚virtuelle Realität' sehen, lasst uns daraus<lb/> geteilte Realität machen./Wenn wir ‚maschinelles Lernen' sehen,<lb/> machen wir daraus gemeinsames Lernen./Wenn wir ‚User Experi-<lb/>ence' sehen, lasst uns menschliche Erfahrung daraus machen./Wenn<lb/> wir hören, dass ‚die Eigenartigkeit naht', erinnern wir uns: Die Plural-<lb/>ität ist hier."<lb/></bibl>
+
+      <bibl>pre-modern methods of scholastic jurisprudence than it would like to<lb/> believe itself is made clear by Dedek, (fn. 122), 61 et seq.<lb/></bibl>
+      <bibl><label>155</label> Then, however, Luhmann's assumption would come true "that the pres-<lb/>ent prominence of the legal system and the dependence of society itself<lb/> and most of its functional systems on a functioning of the legal code is<lb/> nothing more than a European anomaly that will weaken in the evolu-<lb/>tion of a world society" (Luhmann, (fn. 61), Recht der Gesellschaft, 585 et<lb/> seq.).<lb/></bibl>
+      <bibl><label>156 </label>Dedek, (fn. 122), 82.<lb/></bibl>
+      <bibl><label>157</label> Cf. Baecker, (fn. 153), 227 et seq.<lb/></bibl>
+      <bibl><label>158 </label>Pointing to the future is Taiwan's Digital Minister Audrey Tang's call at<lb/> Berlin's re;publica (May 6-8, 2019, https://19.re-publica.com/en/news/<lb/> audrey-tang, last accessed: 20 March 2022): "When we see 'internet of<lb/> things,' let's make it an internet of beings. When we see 'virtual reality,'<lb/> let's make it a shared reality. When we see 'machine learning,' let's make<lb/> it collaborative learning. When we see 'user experience,' let's make it<lb/> about human experience. When we hear "the singularity is near," let us<lb/> remember: the Plurality is here."<lb/></bibl>
+
+      <bibl><label>159</label> Vgl. Nordmann, Technikphilosophie zur Einführung, 2. Aufl. 2015, 15.<lb/></bibl>
+      <bibl><label>160</label> Vgl. Latour, (Fn. 99), 10.<lb/></bibl>
+
+      <bibl><label>159</label> Cf. Nordmann, Technikphilosophie zur Einführung (2015), 15.<lb/> </bibl>
+      <bibl><label>160</label> Cf. Latour, (fn. 99), 10.</bibl>
+    </listBibl>
+  </text>
+</TEI>

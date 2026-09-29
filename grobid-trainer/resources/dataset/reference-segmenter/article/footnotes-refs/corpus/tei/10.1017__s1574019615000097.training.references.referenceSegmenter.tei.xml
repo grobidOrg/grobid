@@ -1,0 +1,199 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1017__s1574019615000097">
+    <titleStmt>
+      <title level="a">Minimum Harmonisation after &lt;i&gt;Alemo-Herron&lt;/i&gt;: The Janus Face of EU Fundamental Rights Review</title>
+      <author>
+        <persName>
+          <forename>Marija</forename>
+          <surname>Bartl</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Candida</forename>
+          <surname>Leone</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="admin">Administrator</persName>
+        <resp>editor</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Cambridge University Press (CUP)</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2015</date>
+      <idno type="DOI">10.1017/s1574019615000097</idno>
+      <ptr target="https://doi.org/10.1017/s1574019615000097"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Marija Bartl, Candida Leone. (2015). Minimum Harmonisation after &lt;i&gt;Alemo-Herron&lt;/i&gt;: The Janus Face of EU Fundamental Rights Review. European Constitutional Law Review, 11(1), 140-154. DOI: 10.1017/s1574019615000097</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Minimum Harmonisation after &lt;i&gt;Alemo-Herron&lt;/i&gt;: The Janus Face of EU Fundamental Rights Review</title>
+          <author>
+            <persName>
+              <forename>Marija</forename>
+              <surname>Bartl</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Candida</forename>
+              <surname>Leone</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">European Constitutional Law Review</title>
+          <imprint>
+            <biblScope unit="volume">11</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page" from="140" to="154">140-154</biblScope>
+            <date when="2015">2015</date>
+            <publisher>Cambridge University Press (CUP)</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.1017/s1574019615000097</idno>
+        <ptr target="https://doi.org/10.1017/s1574019615000097"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-31T15:33:23.759817Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-71-g595835ed0</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-31T15:33:23.759817Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-31T15:46:55.587Z" status="extraction" who="#admin">
+      <note type="label">Extraction (use this)</note>
+      <desc>Renamed to Extraction (use this)</desc>
+    </change>
+    <change when="2026-04-15T14:05:26.986Z" status="unfinished" who="#cboulanger">
+      <note type="label">v3 (cboulanger)</note>
+      <desc>Started draft</desc>
+    </change>
+    <change when="2026-04-15T14:52:08.626Z" status="draft" who="#cboulanger">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-03T16:24:20.584Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-03T17:14:19.670Z" status="checked" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> ECJ 14 March 2013, Case C-415/11, Mohamed Aziz v Caixa d´Estalvis de Catalunya,<lb/> Tarragona i Manresa.<lb/> </bibl>
+        <bibl><label>2</label> ECJ 27 July 2014, Case C-169/14, Sanchez Morcillo And Abril Garcia v Banco Bilbao Vizcaya<lb/> Argentaria SA.<lb/> </bibl>
+        <bibl><label>3</label> C. Mak, 'On Beauty and Being Fair -The Interaction of National and Supranational<lb/> Judiciaries in the Development of a European Law on Remedies', in K. Purnhagen and P. Rott<lb/> (eds.), Varieties of European Economic Law and Regulation (Springer International Publishing 2014)<lb/> p. 823; </bibl>
+<bibl>G. Comparato and H.W. Micklitz, 'Regulated Autonomy between Market Freedoms and<lb/> Fundamental Rights in the Case Law of the CJEU', in U. Bernitz et al. (eds.), General Principles of<lb/> EU Law and European Private Law (Kluwer Law International 2013) p. 121.<lb/> </bibl>
+          
+        <bibl type="footnote"><label>4</label> We will often refer to 'the Alemo Court'. While this practice might appear unusual, we aim by it<lb/> to underline, on the one hand, that we hope Alemo will stay a contingency in the ECJ's case law and<lb/> not become the Court's standard approach in similar matters; on the other hand, that there is<lb/> something odd to a decision of this importance being swiftly taken by a five-judge chamber, largely<lb/> relying on the (re)interpretation of a previous decision authored by the same rapporteur (see infra for<lb/> the discussion of this older decision).<lb/> </bibl>
+        <bibl><label>5</label> Council Directive 2001/23/EC of 12 March 2001 on the approximation of the laws of the<lb/> Member States relating to the safeguarding of employees' rights in the event of transfers of<lb/> undertakings, businesses or parts of undertakings or businesses, OJ 2001 L82/16.<lb/></bibl> 
+        <bibl><label>6</label> Cited from Alemo-Herron, para. 10.<lb/> </bibl>
+        
+        <bibl><label>7</label> C. Wynn-Evans, 'TUPE, Collective Agreements and the Static-Dynamic Debate' [case note<lb/> on Alemo-Herron and Others v Parkwood Leisure Ltd [2010] IRLR 298, CA], 39 ILJ (2010) p. 275 at<lb/> p. 278.<lb/> </bibl>
+          
+        <bibl type="footnote"><label>8</label> Limited in time, since the concerned agreement remains applicable 'until it expires or is<lb/> replaced by a new agreement'. The article also grants member states the option to limit in time this<lb/> 'extended applicability' of collective agreements -an option which, in any case, the UK did not make<lb/> use of.<lb/> </bibl>
+          
+        <bibl><label>9</label> ECJ 9 March 2006, Case C-499/04, Hans Werhof v Freeway Traffic Systems GmbH &amp; Co. KG,<lb/> para. 37, emphasis added.<lb/> </bibl>
+        <bibl><label>10</label> Werhof, para. 31.<lb/> </bibl>
+        <bibl><label>11</label> It 'had been of relevance [in Werhof] because of the way German employment law deals with<lb/> collective agreements. It was not a concern in this case, because the matter depended entirely on the<lb/> domestic law of contract', see Parkwood Leisure Ltd v Alemo-Herron and others [2011] UKSC 26,<lb/> para. 47. The UK Supreme Court had already considered that the solution to the case was<lb/> unambiguous, in light of the fact that the precedents on which it was based 'amount to no more than<lb/> a conventional application of ordinary principles of contract law to the statutory consequences<lb/> apparently created by regulation 5 of TUPE'.<lb/> </bibl>
+        <bibl><label>12</label> Alemo-Herron, para. 24.<lb/> </bibl>
+        <bibl><label>13</label> S. Weatherhill, 'Use and Abuse of the EU's Charter of Fundamental Rights: On the Improper<lb/> Veneration of 'Freedom of Contract'', 10 European Review of Contract Law (2014) p. 167; </bibl>
+          <bibl>J. Prassl,<lb/> 'Freedom of Contract as a General Principle of EU Law? Transfers of Undertakings and the<lb/> Protection of Employer Rights in EU Labour Law Case C-426/11 Alemo-Herron and Others v<lb/> Parkwood Leisure Ltd', 42 ILJ (2013) p. 434.<lb/> </bibl>
+        <bibl><label>14</label> Alemo-Herron, para. 25, emphasis added.<lb/> </bibl>
+        <bibl><label>15</label> For criticism: see Prassl, supra n. 14, </bibl><bibl>and, more generally, Weatherhill, supra n. 14.<lb/> </bibl>
+        <bibl><label>16</label> At the hand, as was mentioned supra, n. 4, of the same judge rapporteur.<lb/> </bibl>
+        <bibl><label>17</label> Alemo Herron, para. 25, emphasis added.<lb/> </bibl>
+        <bibl><label>18</label> Alemo Herron, para. 27, emphasis added.<lb/> </bibl>
+        <bibl><label>19</label> ECJ 10 February 1988, Case 324/86, Foreningen af Arbejdsledere i Danmark v Daddy's Dance<lb/> Hall paras. 15 and 17; </bibl>
+        <bibl>ECJ 6 November 2003, Case C-4/01, Martin and others v South Bank<lb/> University, para. 40.<lb/> </bibl>
+          
+        <bibl type="footnote"><label>20</label> Needless to say, we need not mourn the fate of fundamental rights protection in such a case.<lb/> Such protection obviously takes place also outside the 'scope' of EU law; it will just be other (national<lb/> and international) institutions to engage in their interpretation and enforcement.<lb/> </bibl>
+          
+        <bibl><label>21</label> See also ECJ 7 May 2013, Case C-617/10, Åklagaren v Hans Åkerberg Fransson, para. 29.<lb/> </bibl>
+        <bibl><label>22</label> A. Rosas, 'When is the EU Charter of Fundamental Rights Applicable at National Level?', 19<lb/> Jurisprudence (2012) p. 1269, &lt;repository.mruni.eu/bitstream/handle/007/10752/101-209-1-SM.<lb/> pdf?sequence=3&gt;, visited 13 January 2015.<lb/> </bibl>
+        <bibl><label>23</label> J.H. Jans, 'Minimum Harmonisation and the Role of the Principle of Proportionality', in<lb/> M. Führ et al. (eds.), Umweltrecht und Umweltwissenschaft: Festschrift für Eckard Rehbinder (Erich<lb/> Schmidt Verlag 2007) p. 705, &lt;www.user.uni-bremen.de/∼avosetta/janjansarticle1.pdf&gt;, visited<lb/> 13 January 2015.<lb/> </bibl>
+        <bibl><label>24</label> P.P. Craig and G. de Búrca, EU Law: Text, Cases, and Materials (Oxford University Press 2008)<lb/> p. 626.<lb/> </bibl>
+        <bibl><label>25</label> ECJ 14 April 2005, Case C-6/03, Deponiezweckverband Eiterköpfe v Land Rheinland-Pfalz.<lb/> </bibl>
+        <bibl><label>26</label> ECJ 14 April 2005, Case C-6/03, Deponiezweckverband Eiterköpfe v Land Rheinland-Pfalz,<lb/> para. 64: 'Deponiezweckverband the Community-law principle of proportionality is not applicable so<lb/> far as concerns more stringent protective measures of domestic law adopted by virtue of Article 176<lb/> EC and going beyond the minimum requirements laid down by a Community directive in the<lb/> sphere of the environment, inasmuch as other provisions of the Treaty are not involved'.<lb/> </bibl>
+        <bibl><label>27</label> ECJ 25 March 2004, Case C-71/02, Herbert Karner Industrie-Auktionen GmbH v Troostwijk<lb/> GmbH.<lb/> </bibl>
+          
+        <bibl><label>28</label> J. Stuyck, 'Case C-71/02, Herbert Karner Industrie-Auktionen GmbH v. Troostwijk GmbH,<lb/> Judgment of the Fifth Chamber of 25 March 2004', 41 CMLRev (2004) p. 1683; </bibl>
+<bibl>A. Egger,<lb/> 'EU-Fundamental Rights in the National Legal Order: The Obligations of Member States<lb/> Revisited', 25 YEL (2006) p. 513 at p. 515.<lb/> </bibl>
+          
+        <bibl type="footnote"><label>29</label> Almost incidentally, the Advocate General seized an important point: are member states (not)<lb/> allowed to permit the parties to include dynamic clauses? Does EU freedom of contract require, in<lb/> this case, setting aside the contractual principle of pacta sunt servanda?<lb/> </bibl>
+          
+        <bibl><label>30</label> Alemo-Herron, Opinion AG Cruz Villalón, para. 47.<lb/> </bibl>
+        <bibl><label>31</label> ECJ 13 July 1989, Case C-5/88, Hubert Wachauf v Bundesamt für Ernährung und<lb/> Forstwirtschaft. Catherine Barnard, notices how, with reference to the fundamental principles of<lb/> EU law, the case law in turn addressed cases in which the states were implementing EU law<lb/> (Wachauf), derogating from it (ERT) or, more recently, acting within its scope (Annibaldi). </bibl>
+          <bibl>What this<lb/> scope is supposed to encompass, however, is precisely the question which appears most relevant here.<lb/> See C. Barnard, EU Employment Law (Oxford University Press 2012) p. 31.<lb/> </bibl>
+          
+        <bibl><label>32</label> ECJ 18 June 1991 Case C-260/89, Elliniki Radiophonia Tileorassi AE (ERT) v. Dimotiki<lb/> Etairia Pliroforissis and Siotirios Kouvelas.<lb/> </bibl>
+        <bibl><label>33</label> See for instance P.P. Craig and G. de Búrca, supra n. 25, </bibl>
+          <bibl>or Egger, supra n. 29.<lb/> </bibl>
+        <bibl><label>34</label> For a compelling analysis see G. Majone, Dilemmas of European Integration: The Ambiguities and<lb/> Pitfalls of Integration by Stealth (Oxford University Press 2009).<lb/> </bibl>
+        <bibl><label>35</label> R.L. Hale, 'Coercion and Distribution in a Supposedly Non-Coercive State', 38 Political<lb/> Science Quarterly (1923) p. 470; </bibl>
+          <bibl>K. Polanyi, The Great Transformation: The Political and Economic<lb/> Origins of Our Time, 2nd ed. (Beacon Press 2002).<lb/> </bibl>
+        <bibl><label>36</label> P. Oliver, 'What Purpose Does Article 16 of the Charter Serve?', in U. Bernitz et al., General<lb/> Principles of EU Law and European Private Law (Kluwer Law International 2013) p. 281.<lb/> </bibl>
+        <bibl><label>37</label> H. Gillman, The Constitution Besieged: The Rise and Demise of Lochner Era Police Powers<lb/> Jurisprudence (Duke University Press 1993).<lb/> </bibl>
+        <bibl><label>38</label> The guidelines can be found online &lt;eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:<lb/> C:2007:303:0017:0035:en:PDF&gt;, visited 13 January 2015. </bibl>
+          <bibl> In particular, freedom of contract is<lb/> said to be based on, inter alia, ECJ 28 June 1978, Case C-151/78 Sukkerfabriken Nykøbing Limiteret<lb/> v Ministry of Agriculture, and ECJ 5 October 1999, Case C-240/97, Spain v Commission. Both cases<lb/> indeed recognised the existence of freedom of contract as something that, broadly speaking, is not to<lb/> be restricted without an appropriate procedure and legal basis, without saying much as to its nature<lb/> or as to what it entails. In addition, Weatherill in his comment argues that the cases fail to tell much<lb/> about the status of freedom to contract in EU law. </bibl>
+          <bibl>More generally, Prassl, supra n. 14, p. 442, notes<lb/> how 'even proponents of the recognitions and strengthening of freedom of contract as a general<lb/> principle of Union law have noted that the notion does not currently form part of the EU legal<lb/> order'.<lb/> </bibl>
+        <bibl><label>39</label> X. Groussot et al., 'Weak Right, Strong Court -The Freedom to Conduct Business and<lb/> the EU Charter of Fundamental Rights', Lund University Legal Research Paper Series No 01/2014,<lb/> &lt;papers.ssrn.com/sol3/papers.cfm?abstract_id=2428181&gt;, visited 14 January 2015; </bibl>
+          <bibl>P. Oliver,<lb/> supra n. 36.<lb/> </bibl>
+        <bibl><label>40</label> See ECJ 22 January 2013, Case C-283/11, C-283/11, Sky Österreich GmbH v Österreichischer<lb/> Rundfunk, para. 47: 'On the basis of [the Court's] case law and in the light of the wording of Article<lb/> 16 of the Charter, which differs from the wording of the other fundamental freedoms laid down in<lb/> Title II thereof, yet is similar to that of certain provisions of Title IV of the Charter, the freedom to<lb/> conduct a business may be subject to a broad range of interventions on the part of public authorities which<lb/> may limit the exercise of economic activity in the public interest', emphasis added.<lb/> </bibl>
+          
+        <bibl><label>41</label> Weatherhill, supra n. 14.<lb/> </bibl>
+        <bibl><label>42</label> Governments' submissions to the ECJ are not publicly available. The fact is mentioned by<lb/> Prassl, supra n. 14, p. 437, who derives it from &lt;blog.rubensteinpublishing.com/dynamic-<lb/>interpretation-of-tupe-precluded/&gt;, visited 13 January 2015.<lb/> </bibl>
+        <bibl><label>43</label> Sky Österreich, supra n. 40, para. 47.<lb/> </bibl>
+        <bibl><label>44</label> Alemo-Herron, para. 25.<lb/> </bibl>
+        <bibl><label>45</label> Alemo-Herron, para. 27.<lb/> </bibl>
+        <bibl><label>46</label> Alemo-Herron, para. 34. </bibl>
+        <bibl><label>49</label> Martin and others, supra n. 20, paras. 42-43.<lb/> </bibl>
+        <bibl><label>50</label> This reasoning is not affected by the ECJ's precedents restricting the possibility to agree<lb/> contractual amendments justified by the fact itself of the transfer, such as Daddy's Dance Hall, supra n. 20,<lb/> </bibl>
+          <bibl>D'Urso (ECJ 25 July 1991, C-362/89, </bibl>
+          <bibl>Giuseppe d'Urso, Adriana Ventadori a.o. v Ercole Marelli<lb/> Elettromeccanica Generale SpA a.o.), Rask (ECJ 12 November 1992 , C-209/91, </bibl>
+          <bibl>Anne Watson Rask and<lb/> Kirsten Christensen v Iss Kantineservice A/S) and Martin, supra, n. 20. The meaning of these decisions<lb/> cannot be possibly stretched to imply that the parties would at this point be able to re-negotiate their<lb/> contracts. The Court's precedents should rather be understood as aiming to avoid the circumvention of<lb/> the Directive's by way of contractual arrangements. As highlighted by its Art. 3, the Directive's effects -<lb/>including those derived from its interpretation -are not meant to last eternally. If the arguments<lb/> brought forward in those cases have any bearing in this context, this should rather work against the<lb/> Court's assumption that transfers automatically require adapting the applicable working conditions.<lb/> This assumption is not compatible with the courts previous assertion that a transfer alone should not be<lb/> a sufficient ground for changing the terms of employment. </bibl>
+          
+        <bibl><label>54</label> And as Oliver Wendell Holmes Jr. remarked in his dissenting opinion in Lochner v. New York,<lb/> 198 U.S. 45 (1905): '[t]he Fourteenth Amendment does not enact Mr. Herbert Spencer's Social<lb/> Statics'.<lb/> </bibl>
+        <bibl><label>55</label> N. Fligstein and A. Stone Sweet, 'Constructing Polities and Markets: An Institutionalist<lb/> Account of European Integration,' 107 American Journal of Sociology (2002) p. 1206.<lb/> </bibl>
+        <bibl><label>56</label> E. Stein, 'Lawyers, Judges, and the Making of a Transnational Constitution', 75 American<lb/> Journal of International Law (1981) p. 1; </bibl>
+          <bibl>A Stone Sweet, The Judicial Construction of Europe (Oxford<lb/> University Press 2004); </bibl>
+          <bibl>H. Unberath and A. Johnston, 'The Double-Headed Approach of the ECJ<lb/> Concerning Consumer Protection', 44 CMLRev (2007) p. 1237; </bibl>
+          <bibl>A. Vauchez, 'Keeping the Dream<lb/> Alive: The European Court of Justice and the Transnational Fabric of Integrationist Jurisprudence, 4<lb/> European Political Science Review (2012) p. 51.</bibl>
+        </listBibl>
+    </text>
+</TEI>

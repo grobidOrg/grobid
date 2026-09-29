@@ -1,0 +1,311 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.26321__s.marino.01.2025.06">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+      <idno type="DOI">10.26321/s.marino.01.2025.06</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None. DOI: 10.26321/s.marino.01.2025.06</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:24:20.723996Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:24:20.723996Z" status="extraction">
+      <note type="label">1 Schulze</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-14T09:03:51.536Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-14T09:39:51.806Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-16T13:55:40.909Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-16T14:30:53.206Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-17T11:28:10.820Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-17T11:52:59.971Z" status="draft" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-20T12:48:30.918Z" status="draft" who="#sandfort">
+      <note type="label">2. Sandfort</note>
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-20T13:27:17.653Z" status="draft" who="#sandfort">
+      <desc>Corrections till 21</desc>
+    </change>
+    <change when="2026-03-23T13:34:31.990Z" status="draft" who="#sandfort">
+      <desc>Corrections till 111</desc>
+    </change>
+    <change when="2026-03-24T12:49:59.733Z" status="checked" who="#sandfort">
+      <desc>2. Pass done</desc>
+    </change>
+    <change when="2026-04-04T14:07:34.193Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-04T14:29:42.570Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> A. L. CALVO CARAVACA, J. CARRASCOSA GONZÁLEZ, El Derecho internacional privado de la Unión<lb/> Europea frente a las acciones por daños anticompetitivos, in Cuadernos de derecho transnacional, 2018,<lb/> n. 2, pp. 7-178; </bibl>
+<bibl>B. J. RODGER, M. SOUSA FERRO, F. MARCOS (eds.), Research handbook on private<lb/> enforcement of competition law in the EU, Cheltenham, 2023; </bibl>
+          <bibl>P.&gt;P.&gt;P. CARO DE SOUSA, The private enforcement<lb/> of competition law, Oxford, 2024.<lb/> </bibl>
+        <bibl><label>2</label> Directive 2014/104/EU of the European Parliament and of the Council, on certain rules governing actions<lb/> for damages under national law for infringements of the competition law provisions of the Member States<lb/> and of the European Union, of 26 November 2014, in OJ L297, 4 November 2011, pp. 1-8; </bibl>
+          <bibl>P.L. PARCU, G.<lb/> MONTI, M. BOTTA (eds.), Private enforcement of EU competition law: the impact of the damages directive,<lb/> Cheltenham, 2018; </bibl>
+          <bibl>M. STRAND, V. BASTIDAS, M.C. IACOVIDES (eds.), EU Competition Litigation.<lb/> Transposition and First Experiences of the New Regime, London, 2023; </bibl>
+          <bibl>F. DÍEZ ESTELLA, Una década de<lb/> la Directiva 2014/104/UE, de acciones de daños antitrust, a través de las sentencias del TJUE, in<lb/> Cuadernos de derecho transnacional, 2024, n. 2, pp. 539-551.<lb/> </bibl>
+        <bibl><label>3</label> We only need to think of the "trucks case" (Commission decision, Cartel, AT.39824, Trucks, of 27<lb/> September 2017) that hit the headlines of both specialised and general communication media (see, for<lb/> example,<lb/> in<lb/> Italy,<lb/> the<lb/> ANSA<lb/> news,<lb/> available<lb/> at:<lb/> https://www.ansa.it/pressrelease/economia/2024/03/04/new-class-action-against-the-truck-cartel-another-<lb/>chance-for_d6d3669a-a4ca-4f01-a538-23aebd720ebc.html).<lb/> </bibl>
+        <bibl><label>4</label> The "trucks cartel" lasted 14 years and had as object the price increase of the goods. It has originated a<lb/> big amount of private enforcement claims, although mostly purely internal: B. BORNEMAN, J. SUDEROW,<lb/> España a la cabeza en la litigación derivada del cartel de los fabricantes de camiones. Primeras sentencias<lb/> del Tribunal Supremo Español y su relevancia en Europa, in Cuadernos de derecho transnacional, 2023,<lb/> n. 2, pp. 1040-1050.<lb/> </bibl>
+<bibl><label>5</label> Recital 6 of the Directive 2014/104; Court of Justice, Second Chamber, judgment of 14 March 2019,<lb/> Skanska Industrial Solutions and others, case C-724/17, par. 45.<lb/> </bibl>
+        <bibl><label>6</label> Neither Council Regulation (EC) 1/2003, on the implementation of the rules on competition laid down in<lb/> Articles 81 and 82 of the Treaty, of 16 December 2002, in OJ L1, 4 January 2003, pp. 1-25 </bibl>
+          <bibl>nor Directive<lb/> (EU) 2019/1 of the European Parliament and of the Council, to empower the competition authorities of the<lb/> Member States to be more effective enforcers and to ensure the proper functioning of the internal market,<lb/> of 11 December 2018, in OJ L11, 14 January 2019, pp. 3-33 </bibl>
+          <bibl>establish criteria for the determination of the<lb/> proper Competition Authority to investigate the antitrust infringement, thus creating potential problems of<lb/> functional competence and coordination (A.M. ROMITO, Ruolo e funzioni dell'European Competition<lb/> Network, Bari, 2020, pp. 38-49).<lb/> </bibl>
+        <bibl><label>7</label> P. IANNUCCELLI, La responsabilità delle imprese nel diritto della concorrenza dell'Unione Europea e la<lb/> direttiva 2014/104, Milano, 2015, pp. 157-216; </bibl>
+<bibl>G. BRUZZONE, A. SAIJA, Private e public enforcement dopo<lb/> il recepimento della direttiva. Più di un aggiustamento al margine?, in Mercato, concorrenza, regole, 2017,<lb/> pp. 9-36; </bibl>
+<bibl>O. PALLOTTA, Public e private antitrust enforcement alla luce della direttiva 2014/104/UE:<lb/> l'equilibrio alterato, in Studi sull'integrazione europea, 2017, pp. 621-640; </bibl>
+<bibl>W.P.J. WILS, Private<lb/> Enforcement of EU Antitrust Law and Its Relationship with Public Enforcement: Past, Present, Future, in<lb/> World Competition: Law and Economics Review, 2017, pp. 3-46.<lb/> </bibl>
+        <bibl><label>8</label> Regulation (EU) 1215/2012 of the European Parliament and of the Council, on jurisdiction and the<lb/> recognition and enforcement of judgments in civil and commercial matters, of 12 December 2012, in OJ<lb/> L351, 20 December 2012, pp. 1-32.<lb/> </bibl>
+<bibl><label>9</label> Regulation (EC) 864/2007 of the European Parliament and of the Council, on the law applicable to non-<lb/>contractual obligations (Rome II), of 11 July 2007, in OJ L199, 31 July 2007, pp. 40-49.<lb/> </bibl>
+        <bibl><label>10</label> C. HONORATI, Regolamento n. 864/2007 sulla legge applicabile alle obbligazioni non contrattuali, in F.<lb/> PREITE, A. GAZZANTI PUGLIESE (a cura di), Atti notarili. Diritto comunitario e internazionale, Torino, 2011,<lb/> p. 536.<lb/> </bibl>
+        <bibl><label>11</label> A. A. EHRENZWEIG, Specific Principles of Private Transnational Law, in The Hague Academy Collected<lb/> Courses, Volume 124, 1968; </bibl>
+          <bibl>G. VAN HECKE, Principes et méthodes de solution des conflits de lois, in The<lb/> Hague Academy Collected Courses, Volume 126, 1969; </bibl>
+          <bibl>K. LIPSTEIN, The General Principles of Private<lb/> International Law, in The Hague Academy Collected Courses, Volume 135, 1972; </bibl>
+          <bibl>recently: O. BOSKOVIC<lb/> (ed.), Localisation of Damage in Private International Law, Leiden, Boston, 2024.<lb/> </bibl>
+          <bibl><label>12</label> Recital 34 of the Regulation 1215/2012; Court of Justice, Third Chamber, judgment of 12 September<lb/> 2013, Sunico, case C-49/12, par. 32; </bibl>
+          <bibl>recently: Court of Justice, Third Chamber, judgment of 20 May 2021,<lb/> CNP spółka z ograniczoną odpowiedzialnością, case C-913/19, par. 49; </bibl>
+          <bibl>Court of Justice, Third Chamber,<lb/> judgment of 8 June 2023, BNP Paribas SA, case C-567/21, par. 39; </bibl>
+          <bibl>Court of Justice, Seventh Chamber,<lb/> judgment of 14 September 2023, Club La Costa, case C-821/21, par. 41.<lb/> </bibl>
+        <bibl><label>13</label> 1968 Brussels Convention on jurisdiction and the enforcement of judgments in civil and commercial<lb/> matters, in OJ L299, 31 December 1972, pp. 32-42.<lb/> </bibl>
+        <bibl><label>14</label> This rule is subject to exceptions, as exclusive grounds of jurisdiction according to Article 24 (for its<lb/> operation, Court of Justice, Grand Chamber, judgment of 25 February 2025, BSH Hausgeräte GmbH, case<lb/> C-339/22); </bibl>
+          <bibl>choice of court agreements pursuant to Article 25; some rules devoted to the protection of<lb/> weaker contractual parties.<lb/> </bibl>
+        <bibl type="footnote"><label>15</label> For the claims in competition matters, the case of the natural person as defendant seems a mere theoretical<lb/> hypothesis.<lb/> </bibl>
+        <bibl><label>16</label> Court of Justice, judgment of 9 March 1999, Centros, case C-212/97; <bibl/>Court of Justice, Third Chamber,<lb/> judgment of 25 April 2024, Edil Work 2 Srl, case C-276/22.<lb/> </bibl>
+        <bibl><label>17</label> This possibility is subject to exceptions (exclusive grounds of jurisdiction) and limitations (rules of<lb/> jurisdiction concerning consumer, insurance and employment contracts), that do not pertain to the private<lb/> enforcement of EU Competition Law. Ex multis: F. MARONGIU BUONAIUTI, Le obbligazioni non<lb/> contrattuali nel diritto internazionale privato, Milano, 2013, p. 71; </bibl>
+          <bibl>F. GARCIMARTÍN ALFÉREZ, Prorogation<lb/> of Jurisdiction, in A. DICKINSON, E. LEIN (eds.), The Brussels I Regulation Recast, Oxford, 2015, pp. 277-<lb/>312; </bibl>
+<bibl>J. NOWAG, L. TARKKILA, How much effectiveness for the EU Damages Directive? Contractual<lb/> Clauses and Antitrust Damages Actions, in Common Market Law Review, 2020, p. 440.<lb/> </bibl>
+        <bibl><label>18</label> Court of Justice, Third Chamber, judgment of 24 October 2018, Apple, case C-595/17.<lb/> </bibl>
+        <bibl><label>19</label> L. IDOT, Précisions importantes sur l'application des articles 5, point 3, et point 5, du règlement aux<lb/> actions en réparation du fait de pratiques anticoncurrentielles, in Europe, 2018, p. 102; </bibl>
+          <bibl>P. GOFFINET, R.<lb/> SPANGENBERG, Les clauses attributives de jurisdiction à l'épreuve du droit de la concurrence, in Journal<lb/> de droit européen, 2019, pp. 199-201.<lb/> </bibl>
+        <bibl><label>20</label> N. SAUVAGE, La dangereuse notion de « prévisibilité raisonnable » et l'exigence de sécurité juridique,<lb/> in Revue de l'Union européenne, 2012, p. 518.<lb/> </bibl>
+        <bibl><label>21</label> Court of Justice, Third Chamber, CNP spółka z ograniczoną odpowiedzialnością, cit., par. 52. </bibl>
+          <bibl>In the<lb/> same sense: Court of Justice, Grand Chamber, judgment of 19 July 2012, Mahamdia, case C-154/11, par.<lb/> 48; </bibl>
+          <bibl>Court of Justice, Second Chamber, judgment of 5 July 2018, flyLAL, case C-27/17, par. 59; </bibl>
+          <bibl>Court of<lb/> Justice, Third Chamber, judgment of 11 April 2019, Ryanair, case C-464/18, par. 33.<lb/> </bibl>
+        <bibl><label>22</label> It follows that a claim on the ownership of business premises where an undertaking carries out activities<lb/> is excluded from the scope of application of the rule (Court of Justice, Sixth Chamber, order of 19 July<lb/> 2019, INA, case C-200/19). Moreover, the mere existence of a subsidiary is irrelevant, if it has not had any<lb/> role in the conclusion and in the implementation of the claimed contract (Court of Justice, Second Chamber,<lb/> Ryanair, cit.).<lb/> </bibl>
+        <bibl><label>23</label> Court of Justice, Grand Chamber, judgment of 6 October 2021, Sumal, case C-882/19.<lb/> </bibl>
+        <bibl><label>24</label> Court of Justice, judgment of 14 July 1972, Imperial Chemical Industries v. Commission, case 48/69,<lb/> par. 140; </bibl>
+          <bibl>Court of Justice, Third Chamber, judgment of 14 December 2006, Confederación Española de<lb/> Empresarios de Estaciones de Servicio, case C-217/05, par. 41; </bibl>
+          <bibl>Court of Justice, Third Chamber, judgment<lb/> of 10 September 2009, Akzo Nobel and others v. Commission, case C-97/08 P, parr. 54 and 55; </bibl>
+          <bibl>Court of<lb/> Justice, Second Chamber, judgment of 1 July 2010, Knauf Gips v. Commission, case C-407/08 P, parr. 84<lb/> and 86; </bibl>
+          <bibl>Court of Justice, Fifth Chamber, judgment of 27 April 2017, Akzo Nobel and others v. Commission,<lb/> case C-516/15 P, parr. 47 and 48.<lb/> </bibl>
+        <bibl><label>25</label> Court of Justice, First Chamber, judgments of 26 January 2017, Villeroy &amp; Boch v. Commission, case C-<lb/>625/13 P; </bibl>
+          <bibl>Court of Justice, Second Chamber, judgments of 25 November 2020, Commission v. GEA Group,<lb/> case C-823/18 P; </bibl>
+          <bibl>Court of Justice, Fifth Chamber, judgment of 13 February 2025, Athenian Brewery, case<lb/> C-393/23.<lb/> </bibl>
+          <bibl><label>26</label> Court of Justice, Grand Chamber, Sumal, cit., par. 51.<lb/> </bibl>
+        <bibl><label>27</label> The principle of economic unity cannot be interpreted so extensively as to allow the service of judicial<lb/> documents to the subsidiary, when the action is started against the parent company (Court of Justice, Fifth<lb/> Chamber, judgment of 11 July 2024, Volvo, case C-632/22). The claimant has the possibility to choose the<lb/> defendant and the competent court and must pursue proceedings accordingly, giving the defendant the<lb/> opportunity to defend through a personal service of documents instituting the claim.<lb/> </bibl>
+        <bibl><label>28</label> Some EU Member States' law offer wider connection possibility, that allows to sue co-defendants<lb/> wherever domiciled. This opportunity has proved useful in some climate change cases, such as the Hague<lb/> District Court, judgment of 26 May 2021, Mileudefensie v. Shell. </bibl>
+          <bibl>In Competition Law, this rule would be<lb/> useful too. Indeed, EU Competition Law covers all misconduct that produces effects in the internal market<lb/> despite the seat of the tortfeasor (Court of Justice, judgment of 25 November 1971, Béguelin, case 22/71).<lb/> Therefore, it could be convenient to join all claims against all cartels' participants before one national court<lb/> for the same infringement of EU Competition Law.<lb/> </bibl>
+        <bibl><label>29</label> S. SMITH, The Indirect Purchaser Rule and Private Enforcement of Antitrust Law: A Reassessment, in<lb/> Journal of competition law &amp; economics, 2021, pp. 642-685.<lb/> </bibl>
+        <bibl><label>30</label> EU Commission, Study on the Passing-on of Overcharges, 2016, final report.<lb/> </bibl>
+          <bibl><label>31</label> Jurisdiction must be confirmed even if the case against the anchor defendant is inadmissible: Court of<lb/> Justice, Second Chamber, judgment of 13 July 2006, Reisch Montage, case C-103/05.<lb/> </bibl>
+        <bibl><label>32</label> Court of Justice, Third Chamber, judgment of 11 October 2011, Freeport, case C-98/06.<lb/> </bibl>
+        <bibl><label>33</label> Court of Justice, Fifth Chamber, judgment of 21 May 2015, CDC, case C-352/13.<lb/> </bibl>
+        <bibl><label>34</label> G. VAN CALSTER, The EU Rules on Jurisdiction for and the Law Applicable to, Follow-on, and Stand-<lb/>alone Damages Following Competition Infringement, in Journal of European comparative law and<lb/> practice, 2020, p. 153.<lb/> </bibl>
+        <bibl><label>35</label> Court of Justice, Third Chamber, judgment of 23 October 2014, flyLAL I, case C-302/13.<lb/> </bibl>
+        <bibl><label>36</label> Council Regulation (EC) 44/2001, on jurisdiction and the recognition and enforcement of judgments in<lb/> civil and commercial matters, of 22 December 2000, in OJ L12, 16 January 2001, pp. 1-23.<lb/> </bibl>
+        <bibl><label>37</label> Court of Justice, Fifth Chamber, CDC, cit.; </bibl>
+          <bibl>Court of Justice, Sixth Chamber, judgment of 29 July 2019,<lb/> Tibor Trans, case C-451/18.<lb/> </bibl>
+        <bibl><label>38</label> The CJEU call for a parallel interpretation of the Regulations on jurisdiction and on applicable law (see,<lb/> for example, Court of Justice, Eight Chamber, judgment of 10 February 2022, UE, case C-595/20), </bibl>
+          <bibl>with<lb/> limited exceptions (the most remarkable is Court of Justice, Fourth Chamber, judgment of 16 January 2014,<lb/> Kainz, case C-45/13, where the CJEU did not interpret Article 5(3) of the Regulation 44/2001 according to<lb/> Article 5 of the Regulation 864/2007, since it would have been " unconnected to the scheme and objectives<lb/> pursued by that regulation", par. 20). </bibl>
+          <bibl>Further: E. LEIN, La nouvelle synergie Rome I/ Rome II/ Bruxelles I,<lb/> in Yearbook of Private International Law, 2008, pp. 27-48; </bibl>
+<bibl>E.B. CRAWFORD, J. M. CARRUTHERS,<lb/> Connection and Coherence between and Among European Instruments in the Private International Law of<lb/> Obligations, in The International and Comparative Law Quarterly, 2014, pp. 1-29.<lb/> </bibl>
+        <bibl><label>39</label> Court of Justice, judgment of 19 September 1995, Marinari, case 364/93; </bibl>
+          <bibl>Court of Justice, Fifth Chamber,<lb/> judgment of 27 September 1988, Kalfelis, case 189/87; </bibl>
+          <bibl>Court of Justice, Fifth Chamber, judgment of 15<lb/> January 2004, Blijdenstein, case C-433/01; </bibl>
+          <bibl>Court of Justice, Second Chamber, judgment of 10 June 2004,<lb/> Kronhofer, case C-168/02.<lb/> </bibl>
+        <bibl><label>40</label> Recently: D. MARTINY, Coordination of contractual and tort claims in the European law of jurisdiction,<lb/> in Cuadernos de derecho transnacional, 2024, n. 2, pp. 1099-1113.<lb/> </bibl>
+<bibl type="footnote"><label>41</label> The applicant, a distributor who concluded a distribution agreement with Apple, claimed that the<lb/> defendant abused its dominant position while preferring its own chain of distribution, thus jeopardising its<lb/> business.<lb/> </bibl>
+        <bibl><label>42</label> Court of Justice, Grand Chamber, judgment of 24 November 2020, case C-59/19, Wikingerhof.<lb/> </bibl>
+        <bibl><label>43</label> W. WURMNEST, Plotting the boundary between contract and tort jurisdiction in private actions against<lb/> abuses of dominance: Wikingerhof v. Booking, in Common Market Law Review, 2021, p. 1581.<lb/> </bibl>
+        <bibl><label>44</label> Court of Justice, Third Chamber, judgment of 28 July 2016, Amazon, case C-191/15.<lb/> </bibl>
+        <bibl><label>45</label> Court of Justice, judgment of 20 September 2001, Courage, case C-453/99. </bibl>
+          <bibl>In the same sense: M.<lb/> HELLNER, Unfair Competition and Acts Restricting Free Competition. A Commentary on Article 6 of the<lb/> Rome II Regulation, in Yearbook of Private International Law, 2007, p. 66.<lb/> </bibl>
+        <bibl><label>46</label> Or, on the opposite, on nullity: M. FALLON, S. FRANCQ, Private Enforcement of Antitrust Provisions and<lb/> the Rome I Regulation, in J. BASEDOW, S. FRANCQ, L. IDOT (eds.), International Antitrust Litigation, Oxford<lb/> and Portland, 2012, p. 83.<lb/> </bibl>
+        <bibl><label>47</label> Court of Justice, judgment of 30 November 1976, Bier, case 21/76.<lb/> </bibl>
+        <bibl><label>48</label> Court of Justice, judgment of 7 March 1995, Shevill, case C-68/93.<lb/> </bibl>
+        <bibl><label>49</label> P. MANKOWSKI, Art. 7, in U. MAGNUS, P. MANKOWSKI (eds.), European Commentaries on Private<lb/> International Law, Brussels Ibis Regulation, vol. I, Köln, 2023, p. 260.<lb/> </bibl>
+        <bibl><label>50</label> P. MANKOWSKI, Article 7, in U. MAGNUS, P. MANKOWSKI (eds.), European Commentaries on Private<lb/> International Law, Brussels Ibis Regulation, vol. I, Köln, 2016, p. 333.<lb/> </bibl>
+          <bibl><label>51</label> Communication from the Commission, Commission Notice on the definition of the relevant market for<lb/> the purposes of Union competition law (C/2024/1645), in OJ 22 February 2024, pp. 1-35.<lb/> </bibl>
+        <bibl><label>52</label> E. LEIN, Special Jurisdiction, in A. DICKINSON, E. LEIN (eds.), The Brussels I Regulation Recast, Oxford,<lb/> 2015, p. 156.<lb/> </bibl>
+        <bibl><label>53</label> Court of Justice, Grand Chamber, judgment of 25 October 2011, eDate, joined cases C-509/09 and C-<lb/>161/10.<lb/> </bibl>
+        <bibl><label>54</label> M. BECKER, Kartelldeliktsrecht: § 826 BGB als "Zuständigkeitshebel" im Anwendungsbereich der<lb/> EuGVO?, in Europäisches Wirtschafts-und Steuerrecht, 2008, p. 230; </bibl>
+          <bibl>J. BASEDOW, Der Handlungsort im<lb/> internationalen Kartellrecht, in FIW FORSCHUNGSINSTITUT FÜR WIRTSCHAFTSVERFASSUNG (hrsg.),<lb/> Wettbewerbspolitik und Kartellrecht in der Marktwirtschaft, 50 Jahre FIW 1960-2010, Köln, 2010, pp.<lb/> 129-142; </bibl>
+<bibl>E. LEIN, Special Jurisdiction, cit., p. 164. </bibl>
+          <bibl>Therefore, the place of the conduct should be set aside,<lb/> or considered secondary: S. BARIATTI, Problemi di giurisdizione e di diritto internazionale privato<lb/> nell'azione antitrust, in L.F. PACE (a cura di), Dizionario sistematico del diritto della concorrenza, Napoli,<lb/> 2013, p. 269.<lb/> </bibl>
+        <bibl><label>55</label> P. MANKOWSKI, Article 7, cit., 2016, p. 300.<lb/> </bibl>
+        <bibl><label>56</label> L. IDOT, Précisions, cit., p. 64.<lb/> </bibl>
+        <bibl><label>57</label> L. IDOT, Contentieux international des actions en réparation pour violation du droit de la concurrence:<lb/> l'arrêt CDC revisité, in Revue critique de droit international privé, 2019, p. 804.<lb/> </bibl>
+        <bibl><label>58</label> The mosaic principle was developed by the CJEU for the purposes of jurisdiction in respect of violations<lb/> of privacy or personality rights (Court of Justice, Shevill, cit.; </bibl>
+          <bibl>Court of Justice, Grand Chamber, eDate, cit.;<lb/> </bibl>
+          <bibl>Court of Justice, Grand Chamber, judgment of 21 December 2021, Gtflix Tv, case C-251/20).<lb/> </bibl>
+        <bibl><label>59</label> Court of Justice, Courage, cit.; </bibl>
+          <bibl>Court of Justice, Fifth Chamber, judgment of 5 June 2014, Kone and<lb/> others, case C-557/12; </bibl>
+          <bibl>Court of Justice, Second Chamber, Skanska Industrial Solutions and others, cit.;<lb/> </bibl>
+          <bibl>Court of Justice, Fifth Chamber, judgment of 12 December 2019, OTIS, case C-435/18.<lb/> </bibl>
+        <bibl><label>60</label> Court of Justice, First Chamber, judgment of 16 July 2009, Zuid-Chemie, case C-189/08, par. 27.<lb/> </bibl>
+          <bibl><label>61</label> Court of Justice, Sixth Chamber, judgment of 11 January 1990, Dumez, case C-220/88.<lb/> </bibl>
+        <bibl><label>62</label> M. REQUEJO ISIDRO, E. WAGNER, M. GARGANTINI, Article 7, in M. REQUEJO ISIDRO (ed.), Brussels Ibis,<lb/> a Commentary on Regulation (EU) No 1215/2012, Cheltenham, 2022, p. 115.<lb/> </bibl>
+        <bibl><label>63</label> P. MANKOWSKI, Article 7, cit., 2023, p. 292.<lb/> </bibl>
+        <bibl><label>64</label> Court of Justice, Fifth Chamber, judgment of 4 July 2024, MOL, case C-425/22.<lb/> </bibl>
+          <bibl><label>65</label> For example, the Court of Justice, First Chamber, judgment of 9 July 2020, Verein für<lb/> Konsumenteninformation, case C-343/19 did not consider relevant the financial loss of the consumer, buyer<lb/> of a vehicle with defective devices. Indeed, the damage is the purchase of car that does not have the<lb/> advertised environmentally friendly features, and the financial loss (in the bank account of the consumer)<lb/> is derivative only.<lb/> </bibl>
+        <bibl><label>66</label> H. RÖSLER, Protection of the Weaker Party in European Contract Law: Standardized and Individual<lb/> Inferiority in Multi-level Private Law, in European Review of Private Law, 2010, pp. 729-756; </bibl>
+<bibl>V. VAN DEN<lb/> EECKHOUT, Private International Law in an Era of Globalisation. 'Neutral' Private International Law!?<lb/> An Analysis Through the Lens of Protection of Weak c.q. Vulnerable Parties, 2020, available at SSRN:<lb/> https://ssrn.com/abstract=3677937.<lb/> </bibl>
+        <bibl><label>67</label> L. MARI, Il diritto processuale civile della Convenzione di Bruxelles I, Il sistema della competenza,<lb/> Padova, 1999, p. 389; </bibl>
+          <bibl>S.M. CARBONE, C. TUO, Il nuovo spazio giudiziario europeo in materia civile e<lb/> commerciale, Torino, 2016, p. 135; </bibl>
+          <bibl>according to M. REQUEJO ISIDRO, E. WAGNER, M. GARGANTINI, Article<lb/> 7, cit., p. 111 the decisions on online defamation challenge this assumption.<lb/> </bibl>
+        <bibl><label>68</label> P. MANKOWSKI, Article 7, cit., 2023, p. 290.<lb/> </bibl>
+        <bibl><label>69</label> P. MANKOWSKI, Article 7, cit., 2023, p. 260.<lb/> </bibl>
+          <bibl><label>70</label> This was expressly stated already in the Bier judgment, par. 21.<lb/> </bibl>
+        <bibl><label>71</label> P. PICONE, Les méthodes de coordination entre ordres juridiques en droit international privé, Cours<lb/> général de droit international privé, in Recueil des cours de l'Académie de La Haye, 1999, Volume 276,<lb/> pp. 9 ff.<lb/> </bibl>
+        <bibl><label>72</label> J. BASEDOW, International Cartels and the Place of Acting under Article 5(3) of the Brussels Regulation,<lb/> in J. BASEDOW, S. FRANCQ, L. IDOT (eds.), op. cit., p. 33; </bibl>
+          <bibl>M. BECKER, Kartelldeliktsrecht, cit., p. 231.<lb/> </bibl>
+        <bibl><label>73</label> See also Cour de Cassation, Civ. 1 ere , 1 February 2012, in Revue critique de droit international privé,<lb/> 2013, p. 464.<lb/> </bibl>
+        <bibl><label>74</label> The German literature has been focussing on the Marktortprinzip as the place of the direct harm, even<lb/> before the outbreak of the CJEU's case law; see, for example: H. I. MAIER, Marktortanknüpfung im<lb/> internationalen Kartelldeliktsrecht, Frankfurt am Main, 2011; </bibl>
+          <bibl>W. WURMNEST, Internationale<lb/> Zuständigkeit und anwendbares Recht bei grenzüberschreitenden Kartelldelickte, in Europäische<lb/> Zeitschrift Für Wirtschaftsrecht, 2012, p. 934. </bibl>
+          <bibl>More recently: A. STADLER, Schadensersatzklagen im<lb/> Kartellrecht -Forum shopping welcome! Zugleich Besprechungvon EuGH, Urteil v. 21.5.2015 -C-352/13,<lb/> in JuristenZeitung, 2015, pp. 1138-1149; </bibl>
+<bibl>B. SCRABACK, Marktortanknüpfung bei Kartellen?, in Zeitschrift<lb/> für das Privatrecht der Europäischen Union, 2019, n. 2, p. 69; </bibl>
+          <bibl>H. MEYLE, Rethinking "the place of the<lb/> damage rule" in private international law, in Yearbook of Private International Law, 2020/2021, p. 505;<lb/> </bibl>
+          <bibl>for further remarks on German literature and reactions to the CJEU's case law: R. MONICO, La giurisdizione<lb/> in materia extracontrattuale nello spazio giudiziario europeo, Torino, 2022, p. 250.<lb/> </bibl>
+        <bibl><label>75</label> Therefore, the violation of EU Competition Law does not cause purely economic losses. These torts<lb/> continue challenging the case law (Court of Justice, Marinari, cit.; </bibl>
+          <bibl>Court of Justice, Second Chamber,<lb/> judgment of 16 July 2016, Universal Music International Holding, case C-12/15; </bibl>
+          <bibl>further: T. HARTLEY,<lb/> Jurisdiction in tort claims for non-physical harm under Brussels 2012, Article 7(2), in International and<lb/> Comparative Law Quarterly, 2018, pp. 987-1003).<lb/> </bibl>
+        <bibl><label>76</label> Court of Justice, judgment of 1 June 1999, Eco Swiss, case C-126/97.<lb/> </bibl>
+        <bibl><label>77</label> A mere prima facie evidence is satisfactory, because it is not possible to fully instruct the case for the<lb/> sole purpose of the establishment of jurisdiction (Court of Justice, Fourth Chamber, judgment of 28 January<lb/> 2015, Kolassa, case C-375/13, paras. 61-63; </bibl>
+          <bibl>Court of Justice, Fifth Chamber, Athenian Brewery, cit., par.<lb/>
+        42). </bibl>
+          <bibl>The court shall rely on the available uncontested facts (Court of Justice, Fifth Chamber, judgment of 7<lb/> April 2022, VA, case C-645/20, par. 42). </bibl>
+          <bibl>Even if the court must consider all the elements at disposal (Court<lb/> of Justice, Second Chamber, Universal Music International Holding, cit., par. 45), </bibl>
+          <bibl>the applicant does not<lb/> need to satisfy a disproportionate burden of the proof (Court of Justice, Fourth Chamber, judgment of 6<lb/> July 2023, BM, case C-462/22, par. 37).<lb/> </bibl>
+        <bibl><label>78</label> Therefore, Article 7 of the Regulation 1215/2012 does not need a reform that considers expressly antitrust<lb/> claims (B. VILÀ COSTA, How to Apply Articles 5(1) and 5(3) Brussels I Regulation to Private Enforcement<lb/> of Competition Law. A Coherent Approach, in J. BASEDOW, S. FRANCQ, L. IDOT (eds.), op. cit., p. 19.<lb/> </bibl>
+        <bibl><label>79</label> R. FENTIMAN, Introduction to Articles 29-30, in U. MAGNUS, P. MANKOWSKI (eds.), European<lb/> Commentaries on Private International Law, cit., 2023, p. 728 analyses whether a parent company and a<lb/> subsidiary can be considered the same economic entity for the purposes of lis alibi pendens. Being its<lb/> requirements quite strict, the only possibility would appear to be the exploitation of the principle of<lb/> economic unity.<lb/> </bibl>
+        <bibl><label>80</label> Court of Justice, First Chamber, judgment of 25 October 2012, Folien Fischer, case C-133/11.<lb/> </bibl>
+          <bibl><label>81</label> The best solution would be to assume the existence of a causal event and to identify the place where it<lb/> would have caused injuries. According to Bundesgerichtshof, judgment of 29 January 2013, KZR 8/10<lb/>
+       (BPatG), in Gewerblicher Rechtsschutz und Urheberrecht, Rechtsprechungs-Report, 2013, p. 228, if two<lb/> foreign companies compete in Germany, here can be found a place of the injury even for a negative<lb/> declaration.<lb/> </bibl>
+        <bibl><label>82</label> O. GEISS, D. HOSRT, Cartel damage Claims (CDC) Hydrogen Peroxide SA v Akzo Nobel NV and Others:<lb/> A summary and critique of the judgment of the European Court of Justice of May 21, 2015, in European<lb/> Competition Law Review, 2015, p. 430; </bibl>
+          <bibl>K. HAVU, Private Claims Based on EU Competition Law.<lb/> Jurisdictional Issues and Effective Enforcement Case C-352/13 CDC Hydrogen Peroxide, EU:C:2015:335,<lb/> in Maastricht Journal of European and Comparative Law, 2015, p. 879; </bibl>
+          <bibl>A. STADLER,<lb/> Schadensersatzklagen im Kartellrecht -Forum shopping welcome! Zugleich Besprechung von EuGH,<lb/> Urteil v. 21.5.2015 -C-352/13, in JuristenZeitung, 2015, pp. 1138-1149; </bibl>
+<bibl>W. WURMNEST, International<lb/> jurisdiction in competition damages cases under the Brussels I Regulation: CDC Hydrogen Peroxide, in<lb/> Common Market Law Review, 2016, p. 225.<lb/> </bibl>
+        <bibl><label>83</label> A. PATO, Collective redress for cartel damage claims in the European Union after CDC v Akzo NV and<lb/> others, in Yearbook of Private international Law, 2015/2016, p. 491; </bibl>
+          <bibl>L. IDOT, Précisions, cit., p. 64; </bibl>
+          <bibl>H.<lb/> MEYLE, Rethinking "the place of the damage rule", cit., p. 484.<lb/> </bibl>
+        <bibl><label>84</label> L. IDOT, Contentieux international, cit., p. 805; </bibl>
+          <bibl>ID., Contentieux en réparation pour violation du droit de<lb/> la concurrence: de nouvelles précisions sur le lieu de matérialisation du dommage, in Revue critique de<lb/> droit international privé, 2020, p. 135; </bibl>
+          <bibl>H. MEYLE, Rethinking "the place of the damage rule", cit., p. 491;<lb/> </bibl>
+<bibl>L. RADEMACHER, Quieta movere -but please do not do it quietly: the ECJ on international jurisdiction in<lb/> antitrust damages actions (Tibor-Trans, C-451/18), in Cuadernos de derecho transnacional, 2020, n. 1, p.<lb/> 677; </bibl>
+<bibl>M. REQUEJO ISIDRO, E. WAGNER, M. GARGANTINI, Article 7, cit., p. 129.<lb/> </bibl>
+        <bibl><label>85</label> M. WELLER, J. WÄSCHLE, Kommentar, in Recht der Internationalen Wirtschaft, 2015, p. 603.<lb/> </bibl>
+        <bibl><label>86</label> Directive (EU) 2020/1828 of the European Parliament and of the Council, on representative actions for<lb/> the protection of the collective interests of consumers and repealing Directive 2009/22/EC, of 25 November<lb/> 2020, in OJ L409, 4 December 2020, pp. 1-27.<lb/> </bibl>
+        <bibl><label>87</label> D.-U. GALETTA, Procedural Autonomy of EU Member States: Paradise Lost?: A Study on the<lb/> "Functionalized Procedural Competence" of EU Member States, Berlin, Heidelberg, 2010; </bibl><bibl>B. KRANS, A.<lb/> NYLUND (eds.), Aspects of Procedural Autonomy, Cambridge, 2020.<lb/> </bibl>
+        <bibl><label>88</label> Court of Justice, Sixth Chamber, judgment of 1 October 2022, Henkel, case C-167/00.<lb/> </bibl>
+        <bibl><label>89</label> The rule refers to non-contractual obligations arising out of a restriction of competition. This black letter<lb/> formulation leaves open the possibility of contractual claims, to be regulated according to Regulation (EC)<lb/> 593/2008 of the European Parliament and of the Council, on the law applicable to contractual obligations<lb/> (Rome I), of 17 June 2008, in OJ L177, 4 July 2008, pp. 6-16</bibl>
+          <bibl> (E. RODRIGUEZ PINEAU, Conflict of Laws<lb/> Comes to the Rescue of Competition Law: the New Rome II Regulation, in Journal of Private International<lb/> Law, 2009, p. 320), </bibl>
+          <bibl>specially arts. 3, 4 and 6 (M. ILLMER, Article 6, in U. MAGNUS, P. MANKOWSKI (eds.),<lb/> Rome II Regulation -Commentary, Köln, 2019, p. 274). </bibl>
+          <bibl>Following the CJEU's clarifications in<lb/> Wikingerhof (see above, para. 4) contractual obligations arise only to the extent that the claimant seeks the<lb/> full and correct implementation of the contract.<lb/> </bibl>
+        <bibl><label>90</label> C. HONORATI, The Law applicable to Unfair Competition, in A. MALATESTA (ed.), The Unification of<lb/> Choice of Law Rules in Torts and Other Non-Contractual Obligations in Europe, Padova, 2006, p. 151; </bibl>
+          <bibl>P.<lb/> FRANZINA, Il regolamento n. 864/2007/CE sulla legge applicabile alle obbligazioni extracontrattuali<lb/> («Roma II»), in Le nuove leggi civili commentate, 2008, p. 1008; </bibl>
+          <bibl>E. RODRIGUEZ PINEAU, Conflict of Laws,<lb/> cit., p. 312; </bibl>
+<bibl>M. ILLMER, Article 6, cit., p. 272.<lb/> </bibl>
+        <bibl><label>91</label> C. HONORATI, Regolamento n. 864/2007, cit., p. 534. This element must be stressed, because Article 6(1)<lb/> on unfair competition refers to the collective interests of the consumers, making clear the different values<lb/> protected by the rules.<lb/> </bibl>
+        <bibl><label>92</label> Court of Justice, Second Chamber, flyLAL, cit., par. 41; </bibl>
+          <bibl>Court of Justice, Sixth Chamber, Tibor Trans,<lb/> cit., par. 35; </bibl>
+          <bibl>Court of Justice, Fifth Chamber, Volvo, cit., par. 32; </bibl>
+          <bibl>Court of Justice, Fifth Chamber, MOL,<lb/> cit., par. 40.<lb/> </bibl>
+        <bibl><label>93</label> Notwithstanding some characterisation problems (T. ROSENKRANZ, E. ROHDE, The Law Applicable to<lb/> Non-contractual Obligations Arising out of Acts of Unfair Competition and Acts Restricting Free<lb/> Competition under Article 6 Rome II Regulation, in Nederlands Internationaal Privaatrecht, 2008, p. 436;<lb/> </bibl>
+<bibl>J. FITCHEN, Choice of Law in International Claims Based on Restrictions of Competition: Article 6(3) of<lb/> the Rome II Regulation, in Journal of Private International Law, 2009, p. 347; </bibl>
+          <bibl>E. RODRIGUEZ PINEAU,<lb/> Conflict of Laws, cit., p. 319; </bibl>
+          <bibl>M. ILLMER, Article 6, cit., p. 260; </bibl>
+          <bibl>G. VAN CALSTER, The EU Rules on<lb/> Jurisdiction, cit., p. 154), infringements of Article 101 or 102 of the TFEU are surely included in the scope<lb/> of application of Article 6(3) (recital 23 of the Regulation).<lb/> </bibl>
+        <bibl><label>94</label> Court of Justice, judgment of 30 June 1966, LTM-MBU, case 56/65; </bibl>
+          <bibl>Court of Justice, judgment of 13<lb/> July 1966, Costen and Grunding, joined cases 56 and 58/64; </bibl>
+          <bibl>Court of Justice, judgment of 25 November<lb/> 1971, Béguelin, case 22/71; </bibl>
+          <bibl>Court of Justice, judgment of 14 July 1972, Imperial Chemical Industries Ltd.<lb/> v. Commission (ICI), case 48/69; </bibl>
+          <bibl>Court of Justice, judgment of 21 February 1973, Europemballage<lb/> Corporation and Continetal Can Company Inc. v. Commission (Continental Can), case 6/72; </bibl>
+          <bibl>Court of<lb/> Justice, judgment of 6 March 1974, Istituto Chemioterapeutico, joined cases 6 and 7/73.<lb/> </bibl>
+          <bibl><label>95</label> This remark shall be combined with the partial harmonisation of the private enforcement of EU<lb/> Competition Law realised by the Directive 2014/104 in EU purely internal situations. Indeed, the relevant<lb/> applicable Competition Law is that of the EU Treaties; Member States' national laws on damages actions<lb/> after infringement of Competition Law are consistent and coherent with the set of principles and rules<lb/> established by the Directive. It becomes apparent that conflict of laws issues is becoming less cutting with<lb/> regards to private enforcement in EU cases (T. BALLARINO, L'art. 6 del regolamento Roma II e il diritto<lb/> antitrust comunitario: conflitto di leggi e principio territorialistico, in Rivista di diritto internazionale,<lb/> 2008, p. 74; </bibl>
+<bibl>M. ILLMER, Article 6, cit., p. 274).<lb/> </bibl>
+        <bibl><label>96</label> P. FRANZINA, Il regolamento n. 864/2007/CE, cit., p. 1009; </bibl>
+          <bibl>F. MARONGIU BUONAIUTI, Le obbligazioni<lb/> non contrattuali, cit., p. 129; </bibl>
+          <bibl>J. FITCHEN, Choice of Law, cit., p. 344. </bibl>
+          <bibl>In general: TH. M. DE BOER, Party<lb/> Autonomy and its Limitations in the Rome II Regulation, in Yearbook of Private International Law, 2007,<lb/> pp. 24-25.<lb/> </bibl>
+        <bibl type="footnote"><label>97</label> Therefore, damages actions of indirect victims are governed by the law of the State of the affected market,<lb/> regardless of the place where they suffered from the loss. This solution is consistent with the determination<lb/> of jurisdiction.<lb/> </bibl>
+        <bibl><label>98</label> M. HELLNER, Unfair Competition, cit., p. 59; </bibl>
+          <bibl>T. ROSENKRANZ, E. ROHDE, The Law Applicable to Non-<lb/>contractual Obligations, cit., p. 437; </bibl>
+          <bibl>J. FITCHEN, Choice of Law, cit., p. 360; </bibl>
+          <bibl>S. FRANCQ, W. WURMNEST,<lb/> International Antitrust Claims under the Rome II Regulation, in J. BASEDOW, S. FRANCQ, L. IDOT (eds.),<lb/> op. cit., p. 120; </bibl>
+          <bibl>M. ILLMER, Article 6, cit., p. 270; </bibl>
+          <bibl>P. MANKOWSKI, Article 7, cit., 2023, p. 324. Despite the<lb/> different positions, the CJEU has not yet had the opportunity to interpret this notion.<lb/> </bibl>
+        <bibl type="footnote"><label>99</label> In this, there might be differences whether the claim is a stand-alone or follow on action, since a decision<lb/> from a Competition Authority might help in the definition of the relevant market.<lb/> </bibl>
+        <bibl><label>100</label> W. WURMNEST, Internationale Zuständigkeit, cit., p. 938.<lb/> </bibl>
+        <bibl><label>101</label> In EU civil judicial cooperation there is no margin of appreciation in the assessment of jurisdiction:<lb/> Court of Justice, Grand Chamber, judgment of 1 March 2005, Owusu, case C-281/02.<lb/> </bibl>
+        <bibl><label>102</label> J. FITCHEN, Choice of Law, cit., p. 357.<lb/> </bibl>
+        <bibl><label>103</label> In the Report from the Commission to the European Parliament, the Council and the European Economic<lb/> and Social Committee on the application of Regulation (EC) No 864/2007 on the law applicable to<lb/> noncontractual obligations (Rome II Regulation), {SWD(2025) 9 final}, of 31 January 2025, COM(2025)<lb/> 20 final, a short statement is devoted to collective redress (p. 10), only to state that further reflections are<lb/> needed on the potential benefits of a future reform of the Regulation on the topic.<lb/> </bibl>
+        <bibl><label>104</label> The fact that the loss should be direct is already contemplated in Article 6(3)(a), it being a necessary<lb/> quality according to Article 4 of the Regulation 864/2007.<lb/> </bibl>
+        <bibl><label>105</label> The analysis should be done on a case by case. Elements could be market shares; turnover; absolute<lb/> number of goods or services (M. ILLMER, Article 6, cit., p. 284).<lb/> </bibl>
+          <bibl><label>106</label> E. RODRIGUEZ PINEAU, Conflict of Laws, cit., p. 327.<lb/> </bibl>
+        <bibl><label>107</label> The rule protects an EU interest (E. RODRIGUEZ PINEAU, Conflict of Laws, cit., p. 323; </bibl>
+          <bibl>P. MANKOWSKI,<lb/> Ausgewählte Einzelfragen zur RomII-VO: Internationales Umwelthaftungsrecht, Internationales<lb/> Kartellrecht, Renvoi, Parteiautonomie, in IPRax, 2010, p. 389; </bibl>
+          <bibl>C. HONORATI, Regolamento n. 864/2007<lb/> cit., p. 538; </bibl>
+          <bibl>S. FRANCQ, W. WURMNEST, International Antitrust Claims, cit., p. 100). Without the choice, a<lb/> non-EU national law could be applicable to the part of the harm to the market affected in a third Country,<lb/> as one of the laws cumulatively concurring. The choice, framed and limited under Article 6(3)(b) can only<lb/> lead to a law of a Member State, and does not contradict the universal application of the rules on the<lb/> applicable law according to Article 3 of the Regulation.<lb/> </bibl>
+        <bibl type="footnote"><label>108</label> This is clearly due to the fact that the Brussels regulations replace the Brussels Convention of 1968,<lb/> conceived to deal exclusively with jurisdiction and judgments, in civil and commercial matters, while the<lb/> Rome II Regulation was intended to complete the unification of choice of law rules in matters of obligations<lb/> initiated with the Rome Convention of 1980. At that initial stage, it was not realistically feasible to adopt<lb/> an instrument dealing at the same time with jurisdiction and with applicable law. Therefore, the tentative<lb/> coordination of Article 6(3) shows a very positive attitude.<lb/> </bibl>
+          <bibl><label>109</label> This procedural safeguard is indeed established in Article 6(3) only, while similar problems can arise in<lb/> the scope of application of other provisions of the Rome II Regulation (C. HONORATI, Regolamento n.<lb/> 864/2007, cit., p. 539).<lb/> </bibl>
+        <bibl><label>110</label> The sole rule protecting victims in the Rome II Regulation is Article 7, on environmental damages: S.<lb/> LAMONT-BLACK, E. GUINCHARD, Environmental Law -the Black Sheep in Rome II's Drive for Legal<lb/> Certainty: Article 7 of Regulation (EC) No. 864/2007 on the Law Applicable to Non-Contractual<lb/> Obligations in Context, in Environmental Liability: Law, Policy and Practice, 2009, pp. 161-172.<lb/> </bibl>
+        <bibl><label>111</label> C. HONORATI, Regolamento n. 864/2007, cit., p. 536.</bibl>
+        </listBibl>
+    </text>
+
+
+</TEI>

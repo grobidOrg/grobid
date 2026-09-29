@@ -1,0 +1,188 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.12775__clr.2013.008">
+    <titleStmt>
+      <title level="a">The Efficiency of Administrative Courts (in the Light of European and Polish Experiences)</title>
+      <author>
+        <persName>
+          <forename>Zbigniew</forename>
+          <surname>Kmieciak</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Uniwersytet Mikolaja Kopernika/Nicolaus Copernicus University</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2013</date>
+      <idno type="DOI">10.12775/clr.2013.008</idno>
+      <ptr target="https://doi.org/10.12775/clr.2013.008"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Zbigniew Kmieciak. (2013). The Efficiency of Administrative Courts (in the Light of European and Polish Experiences). Comparative Law Review, 15(0), 135. DOI: 10.12775/clr.2013.008</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">The Efficiency of Administrative Courts (in the Light of European and Polish Experiences)</title>
+          <author>
+            <persName>
+              <forename>Zbigniew</forename>
+              <surname>Kmieciak</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Comparative Law Review</title>
+          <imprint>
+            <biblScope unit="volume">15</biblScope>
+            <biblScope unit="issue">0</biblScope>
+            <biblScope unit="page">135</biblScope>
+            <date when="2013">2013</date>
+            <publisher>Uniwersytet Mikolaja Kopernika/Nicolaus Copernicus University</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.12775/clr.2013.008</idno>
+        <ptr target="https://doi.org/10.12775/clr.2013.008"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:23:40.429545Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:23:40.429545Z" status="extraction">
+      <note type="label">2.Mengjiao</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-11T10:09:59.810Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-12T08:09:26.934Z" status="draft" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-16T08:43:48.592Z" status="unfinished" who="#li">
+      <desc>2. Pass unfinished</desc>
+    </change>
+    <change when="2026-03-16T09:11:35.258Z" status="checked" who="#li">
+      <desc>2 Pass completed</desc>
+    </change>
+    <change when="2026-04-03T11:37:01.195Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-03T11:45:49.220Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> Cf. Council of Europe's Project Group on Administrative Law, Principles of Administrative<lb/> Law Concerning the Relations Between Administrative Authorities and Private Persons, Strasbourg:<lb/> Council of Europe Pub. 1996, p. 29.<lb/> </bibl>
+        <bibl><label>2</label> More on this in: J. Chlebny, Standardy Rady Europy i Europejskiego Trybunału Praw Człowieka<lb/> w procedurze administracyjnej i sądowoadministracyjnej [Standards of the Council of Europe and<lb/> of the European Court of Human Rights in Administrative and Administrative Court Procedure],<lb/> [in:] Z. Kmieciak (ed.), Postępowanie administracyjne w Europie [Administrative Procedure<lb/> in Europe], Warszawa: Wolters Kluwer Polska 2010, pp. 31-42.<lb/> </bibl>
+<bibl><label>3</label> The two co-existing and complementary jurisdiction models are studied especially by<lb/> French and British writers -cf. e.g., R. Chapus, Droit du contentieux administratif, Paris:<lb/> Montchrestien 2001, p. 187 et seq.; </bibl>
+          <bibl>J.-C. Ricci, Contentieux administratif, Paris: Hachette 2007,<lb/> p. 41 et seq.; </bibl>
+          <bibl>A. Carroll, Constitutional and Administrative Law, Edinburgh 2002, p. 269 et seq.,<lb/> 329 et seq.; </bibl>
+          <bibl>W. Wade, C. Forsyth, Administrative Law, Oxford, New York: Oxford University<lb/> Press 2009, p. 473 et seq. </bibl>
+          <bibl>In the context of recours objectif and recours subjectif it is discussed by<lb/> A. J. Bok, Judicial Review of Administrative Decisions by the Dutch Administrative Courts:<lb/> Recours Objectif or Recours Subjectif? A Survey Including French and German Law,<lb/> [in:] F. Stroink, E. van der Linden (eds), Judicial Lawmaking and Administrative Law, Antwerp:<lb/> Intersentia 2005, p. 153 et seq. </bibl>
+          <bibl>A survey of solutions applied in Europe is to be found<lb/> in: Council of Europe's Project Group on Administrative Law, supra note 1, pp. 173-198.<lb/> </bibl>
+        <bibl><label>4</label> More on this distinction -cf. Z. Kmieciak, Efektywność sądowej kontroli administracji<lb/> publicznej [The Efficiency of the Judicial Control over Public Administration], Państwo i Prawo<lb/> [State and Law] 2010, no. 11, p. 22.<lb/> </bibl>
+        <bibl><label>5</label> Similarly in, among others: A. Kubiak, Konstytucyjna zasada prawa do sądu w świetle<lb/> orzecznictwa Trybunału Konstytucyjnego [Constitutional Principle of the Right to Court in the Light<lb/> of the Consititutional Court's Case Law], Łódź: Wydawnictwo Uniwersytetu Łódzkiego 2006,<lb/> pp. 70-71. </bibl>
+          <bibl>Representative of the trend is the judgment of the Constitutional Tribunal<lb/> of 24.02.2003 (K 28/02) in which it acknowledges that "it is the task of the lawmaker to create<lb/> a normative situation ensuring not only the right to have one's case heard by an independent<lb/> court but also to have its judgment executed".<lb/> </bibl>
+        <bibl><label>6</label> Bok, supra note 3, p. 176. </bibl>
+          <bibl>In the Polish literature -cf. Z. Kmieciak, Postępowanie<lb/> administracyjne i sądowoadministracyjne a prawo europejskie [Administrative and Administrative<lb/> Court Proceedings v. European Law], Warszawa: Wolters Kluwer Polska 2010, p. 106. </bibl>
+          <bibl>A decision<lb/> mentioned in (1) is possible when there is only one lawful alternative to the disputed act<lb/> or when because of a factual dispute the court conducts proceedings to establish facts; as to<lb/> the Italian system of administrative jurisdiction -see V. Parisio, Concentrazione, garanzia<lb/> e pregiudiziale di annullamento: cenni, [in:] V. Parisio (ed.), I processi amministrativi in Europa tra<lb/> celerità e garanzia, Milano: Giuffre 2009, p. 181 et seq. </bibl>
+          <bibl>After the enforcement of Law<lb/> No. 2005/2000, one may notice the concentration of legal claims and actions towards<lb/> administrative courts, while before that time the applicant had to address two different<lb/> judges: the administrative court in order to quash the illegal administrative decision and,<lb/> after that, the civil one, in order to obtain the demanded indemnity.<lb/> </bibl>
+        <bibl><label>7</label> Bok, supra note 3, p. 176.<lb/> </bibl>
+        <bibl><label>8</label> Cf. Kmieciak, supra note 6, pp. 158-159; </bibl>
+          <bibl>see also A. Skoczylas, Modele uprawnień<lb/> orzeczniczych sądów administracyjnych w Europie [Models of the Adjudicatory Powers<lb/> of Administrative Courts in Europe], Państwo i Prawo [State and Law] 2012, no. 10, p. 25.<lb/> </bibl>
+<bibl><label>9</label> To realise the importance of this measure in the French system -especially useful for the<lb/> determination of the appropriate remedy -cf. Chapus, supra note 3, pp. 880-881 </bibl>
+          <bibl>and<lb/> O. Gohin, Contentieux administratif, Paris: Litec 2009, pp. 272-273. </bibl>
+          <bibl>The alternative dispute<lb/> resolution concept and typology of its implementation are presented by T. Sourdin,<lb/> Alternative Dispute Resolution, Sydney: Lawbook Co. 2002; </bibl>
+          <bibl>for disputes between an individual<lb/> and an administrative authority -cf. Z. Kmieciak, Mediacja i koncyliacja w prawie<lb/> administracyjnym [Mediation and Conciliation in Administrative Law], Kraków: Zakamycze 2004,<lb/> p. 129 et seq.<lb/> </bibl>
+        <bibl><label>10</label> As to the Austrian, cassation-type model of administrative jurisdiction -cf. A. Merkl,<lb/> Allgemeines Verwalungsrecht, Wien, Berlin: Verlag von Julius Springer 1927, p. 375;<lb/> </bibl>
+<bibl>W. Antoniolli, E. Koja, Allgemeines Verwaltungsrecht, Wien: Manz 1996, p. 833;<lb/> </bibl>
+<bibl>C. Grabenwarter, Verwaltungsverfahrensrecht und Verwaltungsgerichtsbarkeit, Wien: Springer<lb/> 2011, p. 178.<lb/> </bibl>
+        <bibl><label>11</label> Cf. D. R. Kijowski, Austria [Austria], [in:] Kmieciak (ed.), supra note 2, pp. 70-76 and 80-81;<lb/> </bibl>
+<bibl>K. Sobieralski, Z problematyki sądownictwa administracyjnego w Austrii [Issues of Administrative<lb/> Judiciary in Austria], Zeszyty Naukowe Sądownictwa Administracyjnego [Administrative<lb/> Courts Scientific Review] 2006, no. 1, p. 173 </bibl>
+          <bibl>and J. Łętowski, Austria [Austria],<lb/> [in:] L. Garlicki (ed.), Sądownictwo administracyjne w Europie Zachodniej [Administrative Courts<lb/> in Western Europe], Warszawa: Państwowe Wydawnictwo Naukowe 1990, pp. 170-171.<lb/> </bibl>
+          <bibl>The latter of the authors deciding a case on its merits when the plaint, which is about the<lb/> omission to act by an administrative authority, goes beyond the limits of sequentiality and<lb/> cassationality of court judgments and may be tout court qualified as "co-administration";<lb/> </bibl>
+          <bibl>as to interpretative competences of the Administrative Court in this kind of cases<lb/> (Säumnissbeschwerde) -F. Dolp, R. Dolp, Die Verwaltungsgerichtsbarkeit, Wien: O sterreichische<lb/> Staatsdruckerei 1987, p. 55.<lb/> </bibl>
+        <bibl><label>12</label> Cf. Verwaltungsgerichtsbarkeits-Novelle 2012 (BGBl. I Nr. 51/2012)</bibl>
+          <bibl>-the Act adopted by one<lb/> of the two houses of the Austrian parliament (National Council, Nationalrat) has abolished<lb/> previous independent administrative senates and i.a. several other administrative bodies that<lb/> exercised quasi-judicial functions, hearing cases concerning issues such as environment<lb/> (Independent Environment Tribunal, Unabhängiger Umweltsenat), taxes and customs<lb/> (Independent Financial Tribunal, Unabhängiger Finanzsenat) and awards of public contracts<lb/> (Federal Procurement Authority, Bundesvergabeamt) and also a separate Court for Asylum<lb/> Affairs (Asylgerichtshof).<lb/> </bibl>
+        <bibl><label>13</label> Cf. e.g., J. P. Langrod, Kontrola administracji. Studja [Administrative Control. Studies],<lb/> Warszawa-Kraków: nakładem Ksie garni J. Czerneckiego 1929, p. 160 et seq. </bibl>
+          <bibl>and<lb/> P. Kasznica, Polskie prawo administracyjne [Polish Administrative Law], Poznań: Księgarnia<lb/> Akademicka 1946, p. 198.<lb/> </bibl>
+        <bibl><label>14</label> This term and the notion of an "effective judicial review", were used by the ECHR in its<lb/> judgment of 28.06.1990 (application no. 11761/85) on the widely-known Obermeier v. Austria<lb/> case.<lb/> </bibl>
+          <bibl><label>15</label> This is the case with many ECHR judgments, among others of 16.12.2008 (application<lb/> no. 42619/04) Vlahović v. Serbia and of 6.04.2010 (application no. 35852/04) Ursan v. Romania.<lb/> </bibl>
+          <bibl>The Court expressed its stance that the execution of a binding court judgment should be<lb/> viewed as "an integral part of the trial" under Article 6 of EC. </bibl>
+          <bibl>Also in the literature of<lb/> the subject, acts of an administrative authority pursuant to a judgment recognising the claim<lb/> as legitimate are regarded as "a phase of the process" -cf. e.g., B. J. Schueler, Settling<lb/> of Disputes in Administrative Law in the Netherlands, [in:] Y. Zhang (ed.), Comparative Studies on<lb/> the Judicial Review System in East and Southeast Asia, The Hague-London-Boston: Kluwer Law<lb/> International 1997, p. 234; </bibl>
+          <bibl>Ch. P. Moukiou, European Convention of Human Rights and Greek<lb/> Public Law, [in:] V. Parisio (ed.), Diritti interni, diritto comunitario e principi sovranazionali,<lb/> Milano: Giuffre 2009, p. 230 </bibl>
+          <bibl>and D. J. Harris, M. O'Boyle, E. P. Bates, C. M. Buckley, Law<lb/> of the European Convention on Human Rights, Oxford-New York: Oxford University Press 2009,<lb/> pp. 228-229.<lb/> </bibl>
+        <bibl><label>16</label> W. Sawczyn, Środki dyscyplinowania administracji publicznej w prawie o postępowaniu przed<lb/> sądami administracyjnymi [The Disciplinary Measures of Public Administration in Law<lb/> on Proceedings before Administrative Courts], Warszawa: Wydawnictwo C. H. Beck 2010, p. 60.<lb/> </bibl>
+          <bibl><label>17</label> Ibid., p. 63.<lb/> </bibl>
+        <bibl><label>18</label> Dz. U. [Journal of Laws] No. 74, item 368, lapsed -Dz. U. [Journal of Laws] 2002, No. 153,<lb/> item 1271.<lb/> </bibl>
+        <bibl><label>19</label> Dz. U. [Journal of Laws] No. 153, item 1270, with changes.<lb/> </bibl>
+        <bibl><label>20</label> Kmieciak, supra note 4, p. 27.<lb/> </bibl>
+        <bibl><label>21</label> Sawczyn, supra note 16, p. 177.<lb/> </bibl>
+        <bibl><label>22</label> Z. Kmieciak, Czy sądy administracyjne stosują przepisy prawa materialnego? [Do Administrative<lb/> Courts Apply Material Law?], Zeszyty Naukowe Sądownictwa Administracyjnego<lb/> [Administrative Courts Scientific Review] 2011, no. 2, p. 14.<lb/> </bibl>
+        <bibl><label>23</label> Cf. Z. Kmieciak, Zjednoczone Królestwo [United Kingdom], [in:] Kmieciak (ed.), supra note 2,<lb/> p. 433.<lb/> </bibl>
+        <bibl><label>24</label> S. Jansen, Towards an Adjustment of the Trias Politica: The Administrative Courts as<lb/> (Procedural) Lawmaker; A Study of the Influence of the European Human Rights Convention<lb/> and the Case Law by the European Court of Human Rights on the Trias Politica, in Particular<lb/> the Position of Dutch Administrative Courts in Relation to the Administration, [in:] Stroink,<lb/> van der Linden (eds), supra note 3, p. 54. The author underlined, "that Article 6 ECHR<lb/> not only prescribes effective access to a court, but also access to an effective court!" (p. 55).<lb/> </bibl>
+        <bibl><label>25</label> Cf. Y. Kreins, From the Secretary-General's Desk, [in:] ACA-Europe -Newsletter, 09.2012,<lb/> no. 28, p. 3, </bibl>
+          <bibl>see also statement of J.-M. Sauvé, Introduction, p. 5: "the aims of this seminar are<lb/> to better understand the powers possessed by European administrative courts, to compare<lb/> them, and to draw conclusions from this study as to the effectiveness of court rulings".<lb/> </bibl>
+        <bibl><label>26</label> Bok, supra note 3, p. 177 </bibl><bibl>and Jansen, supra note 24, p. 47.<lb/> </bibl>
+          <bibl><label>27</label> Increasing the Efficiency of the Supreme Administrative Court's Powers -Questionnaire,<lb/> ACA-Europe, 1-2.03.2012, Brussels, p. 1; </bibl>
+          <bibl>see also Polish report -Z. Kmieciak, Wzmocnienie<lb/> kompetencji najwyższych sądów administracyjnych i jego wpływ na efektywność orzecznictwa<lb/> [The Strengthening of the Competences of the Highest Adminsitrative Courts and Its Influence<lb/> on the Effectiveness of Jurisprudence], Zeszyty Naukowe Sądownictwa Administracyjnego<lb/> [Administrative Courts Scientific Review] 2012, no. 4, pp. 165-175.<lb/> </bibl>
+        <bibl><label>28</label> Jansen, supra note 24, p. 47.<lb/> </bibl>
+        <bibl><label>29</label> G. ten Berge, P. Langbroek, Towards Integrated Lawmaking by Administrative Courts<lb/> and Public Authorities. On Instruments and Possibilities for Constructive Integration Between<lb/> the Administration and the Administrative Courts in Relation to Administrative Decision Making,<lb/> Administrative Objection and Appeal, [in:] Stroink, van der Linden (eds), supra note 3, p. 263.<lb/> </bibl>
+        <bibl><label>30</label> Ibid., pp. 263-264.<lb/> </bibl>
+        <bibl><label>31</label> Bok, supra note 3, p. 177. </bibl>
+          <bibl>The issue of an "administrative loop" was discussed in details<lb/> by B. J. Schueler, Vernietigen en opnieuw voorzien, Utrecht, Zwolle: W.E.J. Tjeenk Willink 1994<lb/></bibl>
+          <bibl>and B. J. van Ettekoven, Alternatieven van er voor de bestuursrechter, VAR-preadviezen 2001,<lb/> Den Haag: Boom Juridische uitgevers 2001.<lb/> </bibl>
+        <bibl><label>32</label> Cf. Kmieciak, supra note 27, p. 172; </bibl>
+          <bibl>as to power of injunction -generally:<lb/> B. A. Garner (ed.), Black's Law Dictionary, St. Paul, Minn.: Thomson/West 2004, p. 800 </bibl>
+          <bibl>and<lb/> Increasing the Efficiency of the Supreme Administrative Court's Powers -Questionnaire,<lb/> ACA-Europe, 1-2.03.2012, Brussels, pp. 3-5; </bibl>
+          <bibl>in English law -Wade, Forsyth, supra note 3,<lb/> p. 474 et seq.; </bibl>
+          <bibl>in French law (l'injonction) -Gohin, supra note 9, p. 359 et seq.<lb/> </bibl>
+        <bibl><label>33</label> Cf. Skoczylas, supra note 8, p. 30 </bibl>
+          <bibl>and Z. Kmieciak, Instancyjność postępowania<lb/> administracyjnego w świetle Konstytucji RP [The Principle of Instances in Administrative Procedure<lb/> in the Light of the Polish Constitution], Państwo i Prawo [State and Law] 2012, no. 5, pp. 3-5.<lb/> </bibl>
+        <bibl><label>34</label> See also two reports: Efficient, high-quality administrative justice/Une justice administrative<lb/> efficace et de qualité, and The EU Justice Scoreboard: a Tool to Promote Effective Justice and Growth,<lb/> [in:] Seminar held under the auspices of the Council of State of France and ACA-Europe, Paris<lb/> 26-28.05.2013, p. 1 et seq. </bibl>
+          <bibl>In its Annual Growth Survey 2013 -COM(2012) 750 final,<lb/> the European Commission has highlighted the importance of improving the quality,<lb/> independence and efficiency of national judicial systems. </bibl>
+          <bibl>The second report indicates:<lb/> "Before formulating Country Specific Recommendations in this area, there is a need for<lb/> a systematic overview of the functioning of justice systems in all Member States, one that<lb/> takes fully into account the different national legal traditions. Objective, reliable, and<lb/> comparable data are necessary to support the justice reforms engaged for a renewed growth"<lb/> (p. 2).<lb/> </bibl>
+        <bibl><label>35</label> Cf. R. Walter, Kassatorische oder reformatorische Entscheidung?, [in:] F. Lehne, E. Loebenstein,<lb/> B. Schimetschek (ed.), Die Entwicklung der österreichischen Verwaltungsgerichtsbarkeit,<lb/> Wien, New York: Springer-Verlag 1976, pp. 392-393.<lb/> </bibl>
+        <bibl><label>36</label> Cf. e.g., Kmieciak, supra note 4, p. 34; </bibl>
+          <bibl>Skoczylas, supra note 8, p. 32 </bibl>
+          <bibl>and M. Bogusz,<lb/> Uwagi na tle przepisu art. 154 § 2 -Prawo o postępowaniu przed sądami administracyjnymi<lb/> [Remarks on the Art. 154 § 2 of the Law on Procedure Before the Administrative Courts], [in:]<lb/>
+        D. R. Kijowski, A. Miruć, A. Suławko-Karetko (eds), Jakość prawa administracyjnego [Quality<lb/> of Adminsitrative Law], Warszawa: Lex a Wolters Kluwer business 2012, p. 160.</bibl>
+        </listBibl>
+    </text>
+
+
+</TEI>

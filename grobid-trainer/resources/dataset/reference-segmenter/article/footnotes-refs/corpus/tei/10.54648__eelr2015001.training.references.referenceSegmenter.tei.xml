@@ -1,0 +1,286 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.54648__eelr2015001">
+    <titleStmt>
+      <title level="a">Achieving the EU Air Policy Objectives in Due Time: A Reality or a Hoax?</title>
+      <author>
+        <persName>
+          <forename>Samvel</forename>
+          <surname>Varvaštian</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="admin">Administrator</persName>
+        <resp>editor</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Kluwer Law International BV</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2015</date>
+      <idno type="DOI">10.54648/eelr2015001</idno>
+      <ptr target="https://doi.org/10.54648/eelr2015001"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Samvel Varvaštian. (2015). Achieving the EU Air Policy Objectives in Due Time: A Reality or a Hoax?. European Energy and Environmental Law Review, 24(Issue 1), 2-11. DOI: 10.54648/eelr2015001</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Achieving the EU Air Policy Objectives in Due Time: A Reality or a Hoax?</title>
+          <author>
+            <persName>
+              <forename>Samvel</forename>
+              <surname>Varvaštian</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">European Energy and Environmental Law Review</title>
+          <imprint>
+            <biblScope unit="volume">24</biblScope>
+            <biblScope unit="issue">Issue 1</biblScope>
+            <biblScope unit="page" from="2" to="11">2-11</biblScope>
+            <date when="2015">2015</date>
+            <publisher>Kluwer Law International BV</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.54648/eelr2015001</idno>
+        <ptr target="https://doi.org/10.54648/eelr2015001"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-31T15:33:02.399696Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-71-g595835ed0</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-31T15:33:02.399696Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-31T15:50:13.582Z" status="draft" who="#admin">
+      <note type="label">Extraction (use this)</note>
+      <desc>Renamed to Extraction (use this)</desc>
+    </change>
+    <change when="2026-04-16T17:53:59.905Z" status="unfinished" who="#cboulanger">
+      <note type="label">v3 (cboulanger)</note>
+      <desc>Pre-draft</desc>
+    </change>
+    <change when="2026-04-17T16:20:37.645Z" status="draft" who="#cboulanger">
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-10T12:58:22.968Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-10T13:51:31.522Z" status="checked" who="#kazuyo">
+      <desc>Finished first pass</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> Communication from the Commission to the Council and the European Parliament. Thematic Strategy on air pollution.<lb/> COM(2005) 446 final (TSAP), </bibl>
+      <bibl><label>2</label>.<lb/> 2 See: the definition of air pollution in ECE Convention on Long-Range Transboundary Air Pollution (adopted 13<lb/> November 1979, entered into force 16 March 1983) 1302 UNTS 217 (CLRTAP) art 1(a).<lb/> </bibl>
+      
+      <bibl><label>3</label> European Environment Agency, &lt;http://www.eea.europa.eu/publications/2599XXX/page010.html&gt; accessed 17<lb/> August 2014.<lb/> </bibl>
+      <bibl><label>4</label> United States (US) Environmental Protection Agency, &lt;http://www.epa.gov/air/toxicair/newtoxics.html&gt; accessed 17<lb/> August 2014.<lb/> </bibl>
+      <bibl><label>5</label> Impact Assessment, SWD(2013)531, (Impact Assessment) 90-91.<lb/> </bibl>
+      <bibl><label>6</label> ibid.<lb/> </bibl>
+      <bibl><label>7</label> ibid, 90.<lb/> </bibl>
+      <bibl><label>8</label> &lt;http://www.who.int/mediacentre/news/releases/2014/air-pollution/en/&gt; accessed 17 August 2014.<lb/> </bibl>
+      <bibl><label>9</label> Impact Assessment, 18.<lb/> </bibl>
+      
+      <bibl><label>10</label> ibid, 91. Acidification is a process related to the build-up of acid in soils and water, thereby causing a reduction of the<lb/> pH value. It is caused primarily through acid rain and damages plant and animal life in forests, lakes and rivers, as well<lb/> as buildings and historical sites by corrosion.<lb/> </bibl>
+      
+      <bibl><label>11</label> ibid, 92 and 14. Eutrophication is a process of pollution in rivers and lakes resulting from an excess of plant nutrients,<lb/> which leads to the overabundance of aquatic plants. The decomposition of overabundant plant life requires significant<lb/> amounts of oxygen, leaving the water lifeless. Therefore, eutrophication poses a serious threat to biodiversity. About<lb/> 62% of the EU area, including 71% of Natura 2000 ecosystems, was exposed to this process in 2010.<lb/> </bibl>
+      
+      <bibl><label>12</label> ibid, 92.<lb/> </bibl>
+      <bibl><label>13</label> PCC, 2013: Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth<lb/> Assessment Report of the Intergovernmental Panel on Climate Change [Stocker, T.F., D. Qin, G.-K. Plattner, M. Tignor,<lb/> S.K. Allen, J. Boschung, A. Nauels, Y. Xia, V. Bex and P.M. Midgley (eds.)]. Cambridge University Press, Cambridge,<lb/> United Kingdom and New York, NY, USA, 1535 pp, at 127.<lb/> </bibl>
+      <bibl><label>14</label> Impact Assessment, 14.<lb/> </bibl>
+      <bibl><label>15</label> &lt;http://ec.europa.eu/environment/air/index_en.htm&gt; accessed 17 August 2014.<lb/> </bibl>
+      
+      <bibl><label>16</label> Communication from the Commission to the European Parliament, the Council, the European Economic and Social<lb/> Committee and the Committee of the Regions. A Clean Air Programme for Europe. COM(2013) 918 final (Clean Air<lb/> Programme), at 10. </bibl>
+      <bibl>China, for example, has recently announced additional investments on air pollution control and,<lb/> being the 'world's biggest carbon emitter', initiated major changes in national environmental protection laws, tightening<lb/> policy with regard to polluters. See: &lt;http://www.bloomberg.com/news/2014-04-24/china-enacts-biggest-pollution-<lb/>curbs-in-25-years.html&gt; accessed 17 August 2014.<lb/></bibl>
+      
+      <bibl><label>17</label> Decision No 1386/2013/EU of the European Parliament and of the Council of 20 November 2013 on a General Union<lb/> Environment Action Programme to 2020 'Living well, within the limits of our planet' [2013] OJ L354/171 (7 th EAP),<lb/> paras 6, 7, 19 and 26 of the Annex.<lb/> </bibl>
+      
+      <bibl><label>18</label> European Union emission inventory report 1990-2010 under the CLRTAP, at 11-13. See:<lb/> &lt;http://www.eea.europa.eu/publications/eu-emission-inventory-report-1990-2010/at_download/file&gt;<lb/> accessed<lb/> 17<lb/> August 2014.<lb/> </bibl>
+      
+      <bibl><label>19</label><lb/> European Union emission inventory report 1990-2011 under the CLRTAP, 13-15. See:<lb/> &lt;http://www.eea.europa.eu/publications/eu-emission-inventory-report-lrtap/at_download/file&gt; accessed 17 August<lb/> 2014.<lb/> </bibl>
+      
+      <bibl><label>20</label> 7 th EAP, par. 44 and 45 of the Annex. </bibl>
+      <bibl>See also Impact Assessment, 17-18.<lb/> </bibl>
+      
+      <bibl><label>21</label> Clean Air Programme, 10.<lb/> </bibl>
+      <bibl><label>22</label> Katharina Holzinger, Christoph Knill and Ansgar Schäfer, 'Rhetoric or Reality? 'New Governance' in EU<lb/> Environmental Policy' (2006) 12 European Law Journal 403, 404.<lb/> </bibl>
+      <bibl><label>23</label> See: Consolidated Version of the Treaty on the Functioning of the European Union [2012] OJ C326/47, art 191(1).<lb/> </bibl>
+      <bibl><label>24</label> Mark Wilde, 'The new directive on ambient air quality and cleaner air for Europe' (2010) 12 Environmental Law<lb/> Review 282, 283.<lb/> </bibl>
+      <bibl><label>25</label> Impact Assessment, 14.<lb/> </bibl>
+      <bibl><label>26</label> Katharina Holzinger, Christoph Knill and Ansgar Schäfer, 410-413.<lb/> </bibl>
+      
+      <bibl><label>27</label> Decision No 1600/2002/EC of the European Parliament and of the Council of 22 July 2002 laying down the Sixth<lb/> Community Environment Action Programme [2002] OJ L242/1, art 7(1).<lb/> </bibl>
+      <bibl><label>28</label> 7 th EAP, Recitals 3 and 15.<lb/> </bibl>
+      <bibl><label>29</label> Impact Assessment, 15.<lb/> </bibl>
+      <bibl><label>30</label> ibid.<lb/> </bibl>
+      <bibl><label>31</label> TSAP, 5.<lb/> </bibl>
+      
+      <bibl><label>32</label> Directive 2008/50/EC of the European Parliament and of the Council of 21 May 2008 on ambient air quality and<lb/> cleaner air for Europe [2008] OJ L152/1. The AAQD is a result of substantial revision and merging of five acts, namely<lb/> Directives 96/62/EC on ambient air quality assessment and management, 1999/30/EC relating to limit values for sulphur<lb/> dioxide, nitrogen dioxide and oxides of nitrogen, particulate matter and lead in ambient air, 2000/69/EC relating to limit<lb/> values for benzene and carbon monoxide in ambient air, 2002/3/EC relating to ozone in ambient air and Decision<lb/> 97/101/EC establishing a reciprocal exchange of information and data from networks and individual stations measuring<lb/> ambient air pollution within the Member States (Recital 3).<lb/> </bibl>
+      
+      <bibl><label>33</label> AAQD, art 1.<lb/> </bibl>
+      <bibl><label>34</label> Impact Assessment, 15.<lb/> </bibl>
+      <bibl><label>35</label> Zones and agglomerations are parts of Member States' territory, established by the Member States to carry out air<lb/> quality assessment and management pursuant to art 4 of the AAQD.<lb/> </bibl>
+      <bibl><label>36</label> A scientifically based level, with the aim of avoiding, preventing or reducing harmful effects on human health and/or<lb/> the environment as a whole, to be attained within a given period and not to be exceeded once attained (art 2(5)).<lb/> </bibl>
+      <bibl><label>37</label> A scientifically based level, above which direct adverse effects may occur on plants or ecosystems but not on humans<lb/> (art 2(9)).<lb/> </bibl>
+      
+      <bibl><label>38</label> AAQD, art 24(1). This rule follows from the decision of the European Court of Justice (ECJ) in the case C-237/07<lb/> Janecek v Freistaat Bayern [2008] ECR I-6221, based on art 7(3) of the preceding Directive 96/62/EC. The case<lb/> originated from the claim of a natural person, Mr Janecek, living on Munich's central ring road. The claimant was<lb/> concerned about the level of PM10, which exceeded the limit value fixed for this pollutant for much more than 35 times.<lb/> The ECJ stated that 'natural or legal persons directly concerned by a risk that the limit values or alert thresholds may be<lb/> exceeded must be in a position to require the competent authorities to draw up an action plan where such a risk exists, if<lb/> necessary by bringing an action before the competent courts.' (para 39)<lb/> </bibl>
+      
+      <bibl><label>39</label> AAQD, Recital 4.<lb/> </bibl>
+      <bibl><label>40</label> Wilde, 284.<lb/> </bibl>
+      <bibl><label>41</label> Directive 2004/107/EC of the European Parliament and of the Council of 15 December 2004 relating to arsenic,<lb/> cadmium, mercury, nickel and polycyclic aromatic hydrocarbons in ambient air [2005] OJ L23/3.<lb/> </bibl>
+      
+      <bibl><label>42</label> AAQD, Recital 4. The problem behind the implementation is related to the fact that due to the strong hazardous nature<lb/> of the pollutants in question, scientific evidence shows that there is no identifiable threshold below which these<lb/> substances do not pose a risk to human health. Yet, with a view to cost-effectiveness, ambient air concentrations of these<lb/> substances, which would not pose a significant risk to human health, cannot be achieved in specific areas (Directive<lb/> 2004/107/EC, Recital 3). </bibl>
+      <bibl>For that particular reason, the Directive limits itself on providing only target values rather than<lb/> binding limit values (Wilde, 288), though the introduction of the latter in the future is not per se impossible (Directive<lb/> 2004/107/EC, art 8(2)(b)). </bibl>
+      <bibl>Notably, the most difficult case proved to be mercury, which resulted in the absence of a<lb/> target value for this especially hazardous substance and the undertaking of a separate research programme that led to the<lb/> suspension of the setting of a target value in respect of this substance until the research is complete (Directive<lb/> 2004/107/EC, Recitals 9 and 10, Wilde, 288).<lb/> </bibl>
+      
+      <bibl><label>43</label> Directive 2001/81/EC of the European Parliament and of the Council of 23 October 2001 on national emission<lb/> ceilings for certain atmospheric pollutants [2001] OJ L309/22.<lb/> </bibl>
+      <bibl><label>44</label> ibid, art 1.<lb/> </bibl>
+      <bibl><label>45</label> ibid, art 4(1).<lb/> </bibl>
+      <bibl><label>46</label> NECD, art 4.<lb/> </bibl>
+      <bibl><label>47</label> ibid, Recital 12, art 6.<lb/> </bibl>
+      <bibl><label>48</label> Impact Assessment, 15.<lb/> </bibl>
+      <bibl><label>49</label> &lt;http://ec.europa.eu/environment/air/review_air_policy.htm&gt; accessed 17 August 2014.<lb/> </bibl>
+      <bibl><label>50</label> AAQD, Recital 2.<lb/> </bibl>
+      <bibl><label>51</label> Impact Assessment, 15.<lb/> </bibl>
+      
+      <bibl><label>52</label> ibid, 136.<lb/> </bibl>
+      <bibl><label>53</label> ibid, 137.<lb/> </bibl>
+      <bibl><label>54</label> Protocol to the 1979 Convention on Long-Range Transboundary Air Pollution to Abate Acidification, Eutrophication<lb/> and Ground-Level Ozone (adopted 30 November 1999, entered into force 17 May 2005) 2319 UNTS 81 (Gothenburg<lb/> Protocol).<lb/> </bibl>
+      <bibl><label>55</label> Thus, the effects-orientated policy of the Gothenburg Protocol, based on scientific and technical knowledge has been<lb/> endorsed by the EU and subsequently applied in EU legislation, for example, in the NECD. Impact Assessment, 137 and<lb/> 139.<lb/> </bibl>
+      <bibl><label>56</label> Gothenburg Protocol, art 2.<lb/> </bibl>
+      <bibl><label>57</label> ibid, Annex II.<lb/> </bibl>
+      <bibl><label>58</label> ibid, Annexes IV-VI.<lb/> </bibl>
+      <bibl><label>59</label> &lt;http://www.unece.org/fileadmin/DAM/env/documents/2013/air/eb/ECE.EB.AIR.114_ENG.pdf&gt; accessed 17 August<lb/> 2014.<lb/> </bibl>
+      <bibl><label>60</label> ibid, art 2.<lb/> </bibl>
+      <bibl><label>61</label> ibid, Annex II, etc.<lb/> </bibl>
+      <bibl><label>62</label> Impact Assessment, 15 and 19.<lb/> </bibl>
+      <bibl><label>63</label> Impact Assessment, 20.<lb/> </bibl>
+      <bibl><label>64</label> See: C-365/10 Commission v Slovenia [2011] ECR I-0040, C-479/10 Commission v Sweden [2011] ECR I-0070, (C-<lb/>34/11) Commission v Portugal [2012] (ECJ, 15 November, 2012), C-68/11 Commission v Italy [2012] (ECJ, 19<lb/> December, 2012).<lb/> </bibl>
+      <bibl><label>65</label> (n 32).<lb/> </bibl>
+      <bibl><label>66</label> Notably, in all these cases the Court did acknowledge the failure to fulfil the obligations of the Member States in<lb/> question under the preceding legislation in mid-2000s, but dismissed the actions with regard to the alleged breach of the<lb/> AAQD provisions due to ratione temporis. See: (n 64) Commission v Portugal, paras 50, 55 and 56, Commission v Italy,<lb/> paras 55, 56 and </bibl>
+      
+      <bibl><label>67</label>.<lb/> 67 Impact Assessment, 21.<lb/> </bibl>
+      <bibl><label>68</label> ibid, 21 and 22.<lb/> </bibl>
+      <bibl><label>69</label> Impact Assessment, 22.<lb/> </bibl>
+      <bibl><label>70</label> ibid, 21.<lb/> </bibl>
+      <bibl><label>71</label> ibid, 22.<lb/> </bibl>
+      <bibl><label>72</label> ibid.<lb/> </bibl>
+      <bibl><label>73</label> ibid, 22, 23.<lb/> </bibl>
+      <bibl><label>74</label> ibid, 25.<lb/> </bibl>
+      <bibl><label>75</label> ibid, 19. Thus the percentage of air quality management zones in compliance with AAQD requirements for PM10, NO2<lb/> and O3 in 2010 was 68%, 76% and 65% respectively, while the percentage of population exposed to the levels of these<lb/> pollutants above limit values calculated at about 40% in case of PM10, from 6% to 12% in case of NO2 and 35% in case<lb/> of O3. Meantime, the percentage of 108 national ceilings complying with the NECD requirements is estimated at 90%.<lb/> </bibl>
+      <bibl><label>76</label> Impact Assessment, 20.<lb/> </bibl>
+      <bibl><label>77</label> See: (n 59) Annex II, Tables 2-6 and NECD, Annex I. It should be noted that according to the projections, the<lb/> obligations of the amended Protocol are expected to be met without further measures, yet formal transposition into the<lb/> NECD is deemed necessary for ratification, to confirm the EU general commitment to the Gothenburg outcome and to<lb/> encourage the participation of other parties, including Eastern European, Caucasus and Central Asian states. Impact<lb/> Assessment, 20.<lb/> </bibl>
+      
+      <bibl><label>78</label> Thus, current EU standards for PM10, PM2.5 and O3 as provided in the AAQD are as follows: 40 μg/m 3 and 25 μg/m 3<lb/> averaged over a calendar year limit values for PM10 and PM2.5 respectively to be attained by 2010 (Annex XI and Annex<lb/> XIV respectively) with the decrease in limit value for PM2.5 to 20 μg/m 3 to be attained by 2020 (Annex XIV), and the<lb/> long-term objective for O3 averaged in a daily eight-hour mean within a calendar year set at 120 μg/m 3 (Annex VII).<lb/> </bibl>
+      <bibl>Meanwhile, the updated WHO 2005 guidelines set the concentrations for these pollutants at 20 μg/m 3 , 10 μg/m 3 and 100<lb/> μg/m 3 respectively. See: WHO Air quality guidelines for particulate matter, ozone, nitrogen dioxide and sulfur dioxide,<lb/> 2005,<lb/> summary<lb/> of<lb/> risk<lb/> assessment,<lb/> p.<lb/> 9<lb/> and<lb/> 14.<lb/> See:<lb/> &lt;http://whqlibdoc.who.int/hq/2006/WHO_SDE_PHE_OEH_06.02_eng.pdf?ua=1&gt; accessed 17 August 2014.<lb/> </bibl>
+      
+      <bibl><label>79</label> Impact Assessment, 24.<lb/> </bibl>
+      <bibl><label>80</label> Impact Assessment, 27.<lb/> </bibl>
+      <bibl><label>81</label> ibid.<lb/> </bibl>
+      <bibl><label>82</label> TSAP, 3.<lb/> </bibl>
+      <bibl><label>83</label> For example, the merging of different legislation into single AAQD.<lb/> </bibl>
+      <bibl><label>84</label> 7 th EAP, Recitals 3-5.<lb/> </bibl>
+      <bibl><label>85</label> (n 49).<lb/> </bibl>
+      <bibl><label>86</label> &lt;http://ec.europa.eu/environment/air/index_en.htm&gt; accessed 17 August 2014. Basically, the CAPP comprises four<lb/> documents: the Clean Air Programme, Proposal for a Directive on the limitation of emissions of certain pollutants into<lb/> the air from MCPs (MCPs Proposal), Proposal for a revised NECD (NECD Proposal) and Proposal for a Council<lb/> Decision on the acceptance of the amended Gothenburg Protocol.<lb/> </bibl>
+      
+      <bibl><label>87</label> Impact Assessment, 34 and 35. Notably, these objectives are aligned with the general priority objectives of the 7 th<lb/> EAP (art 2). Furthermore, 'strengthening efforts to reach full compliance with Union air quality legislation and defining<lb/> strategic targets and actions beyond 2020' is required as a particular tool in achieving the programme's key<lb/> environmental goals (para 28(v)).<lb/> </bibl>
+      <bibl><label>88</label> Impact Assessment, 35.<lb/> </bibl>
+      <bibl><label>89</label> Clean Air Programme, 3.<lb/> </bibl>
+      <bibl><label>90</label> Communication from the Commission to the European Parliament, the Council, the European Economic and Social<lb/> Committee and the Committee of the Regions. Cars 2020: Action Plan for a Competitive and Sustainable Automotive<lb/> Industry in Europe. COM(2012) 636 final, 11-12.<lb/> </bibl>
+      
+      <bibl><label>91</label> This commitment follows from Regulation (EC) No 715/2007 of the European Parliament and of the Council of 20<lb/> June 2007 on type approval of motor vehicles with respect to emissions from light passenger and commercial vehicles<lb/> (Euro 5 and Euro 6) and on access to vehicle repair and maintenance information [2007] OJ L171/1, art 14(3), which<lb/> requires from the Commission to 'keep under review the procedures, tests and requirements referred to in Article 5(3)<lb/> [such as requirements for tailpipe emissions, evaporative emissions, durability of pollution control devices, measurement<lb/> of greenhouse gas emissions, hybrid and alternative fuel vehicles, measurement of engine power, etc.] as well as the test<lb/> cycles used to measure emissions. If the review finds that these are no longer adequate or no longer reflect real world<lb/> emissions, they shall be adapted so as to adequately reflect the emissions generated by real driving on the road'.<lb/> </bibl>
+      <bibl><label>92</label> Clean Air Programme, 3.<lb/> </bibl>
+      <bibl><label>93</label> Impact Assessment, 37-45.<lb/> </bibl>
+      <bibl><label>94</label> ibid, 41-46.<lb/> </bibl>
+      
+      <bibl><label>95</label> ibid, 42-46.<lb/> </bibl>
+      <bibl><label>96</label> ibid.<lb/> </bibl>
+      <bibl><label>97</label> ibid, 39 and 40.<lb/> </bibl>
+      <bibl><label>98</label> Clean Air Programme, 4.<lb/> </bibl>
+      <bibl><label>99</label> Impact Assessment, 44.<lb/> </bibl>
+      <bibl><label>100</label> Clean Air Programme, 6.<lb/> </bibl>
+      <bibl><label>101</label> Impact Assessment, 35.<lb/> </bibl>
+      <bibl><label>102</label> ibid, 48. The percentage by which the new objectives would close the gap between the baseline scenario (0%) on one<lb/> hand, and the result of applying all (maximum) technically feasible reduction measures (100%), on the other.<lb/> </bibl>
+      <bibl><label>103</label> Combustion plants with a rated thermal input equal to or greater than 1 MW and less than 50 MW, irrespective of the<lb/> type of fuel used. Proposal for a Directive of the European Parliament and of the Council on the limitation of emissions<lb/> of certain pollutants into the air from medium combustion plants. COM(2013) 919 final, art 2(1).<lb/> </bibl>
+      <bibl><label>104</label> Impact Assessment, 48.<lb/> </bibl>
+      <bibl><label>105</label> ibid, 61.<lb/> </bibl>
+      
+      <bibl><label>106</label> ibid, 70.<lb/> </bibl>
+      <bibl><label>107</label> Impact Assessment, 49.<lb/> </bibl>
+      <bibl><label>108</label> ibid, 71. For example, as mentioned above, the number of premature deaths is estimated to drop by 60,000 by 2020,<lb/> but this trend fails to keep its pace in the following years. The chosen option, however, entails a further 60,000<lb/> premature deaths' decrease by 2025 and yet another 60,000 by 2030, thus keeping the current trend intact.<lb/> </bibl>
+      <bibl><label>109</label> Proposal for a Directive of the European Parliament and of the Council on the reduction of national emissions of<lb/> certain atmospheric pollutants and amending Directive 2003/35/EC. COM(2013) 920 final, 1.<lb/> </bibl>
+      <bibl><label>110</label> NECD Proposal, Recitals 5 and 6, art 4(1) and Annex II.<lb/> </bibl>
+      <bibl><label>111</label> Impact Assessment, 50. These trajectories stand as follows: -79% (-82%) for SO2, -64% (-69%) for NOx, -49% (-<lb/>51%) for PM2.5, -30% for NH3 and -50% (-51%) for VOC.<lb/> </bibl>
+      <bibl><label>112</label> NECD Proposal, Annex II. The proposal uses a slightly different emission reduction scheme than the trajectories: for<lb/> the 2020 -2029 interim period and beyond 2030. Accordingly, the reduction rates are: -59% (-81%) for SO2, -42% (-<lb/>69%) for NOx, -22% (-51%) for PM2.5, -6% (-27%) for NH3 and -28% (-50%) for VOC. Also, the Proposal introduces a<lb/> -33% reduction for CH4 beyond 2030.<lb/> </bibl>
+      <bibl><label>113</label> The amended Gothenburg Protocol (Annex II, Tables 2-6) sets the reduction rates for 2020 onwards, which<lb/> correspond to the 2020-29 interim period reduction rates, presented in the proposal for a revised NECD above.<lb/> </bibl>
+      <bibl><label>114</label> NECD Proposal, 3.<lb/> </bibl>
+      <bibl><label>115</label> ibid, Recital 13, art 6(2) and Annex III Part 1. The measures in question include prohibition of certain fertilizers,<lb/> strategic reduction of emissions from manure storages and animal housing, banning of open field burning of agricultural<lb/> harvest residue, waste and forest residue, etc.<lb/> </bibl>
+      
+      <bibl><label>116</label> ibid, art 5(1). The application of this mechanism though, is contingent on several conditions: a) that the emission<lb/> reductions occur in the sea areas that fall within the Member States' territorial seas, exclusive economic zones or in<lb/> pollution control zones if such zones have been established; b) that the Member States have adopted and implemented<lb/> effective monitoring and inspection measures to ensure a proper operation of this flexibility; c) that the Member States<lb/> have implemented measures to achieve lower NOx, SO2 and PM2.5 emissions from international maritime traffic than the<lb/> emissions levels that would be achieved by compliance with the Union standards applicable to emissions of NOx, SO2<lb/> and PM2.5 and have demonstrated an adequate quantification of the additional emission reductions resulting from these<lb/> measures; d) that the Member States have not offset more than 20% of the NOx, SO2 and PM2.5 emission reductions<lb/> calculated in accordance with point (c), provided that the offset does not result in non-compliance with the national<lb/> emission reduction commitments for 2020 set out in Annex II.<lb/> </bibl>
+      
+      <bibl><label>117</label> MCP Proposal, 2.<lb/> </bibl>
+      <bibl><label>118</label> ibid.<lb/> </bibl>
+      <bibl><label>119</label> ibid, art 4(1). The registration procedure includes a notification by the operator (art 4(2 and 3)), containing<lb/> information on the rated thermal input and the type of the MCP, type and share of fuels used, expected number of<lb/> operating hours, etc. (Annex I). The existing MCPs are exempted from this procedure, provided that the above-<lb/>mentioned information has been made available to the competent authorities (art 4(5)).<lb/> </bibl>
+      <bibl><label>120</label> ibid, art 5. It should be emphasized that the proposed Directive's limit values for the pollutants covered (namely SO2,<lb/> NOx and PM) are in line with those set in legislation for large combustion plants and derived from the amended<lb/> Gothenburg Protocol (at 4), opting for strategic emissions' reduction beyond 2020 (art 5(2) and Annex II).<lb/> </bibl>
+      <bibl><label>121</label> ibid, arts 6 and 7.<lb/> </bibl>
+      <bibl><label>122</label> Clean Air Programme, 5 and 6.<lb/> </bibl>
+      <bibl><label>123</label> Impact Assessment, 71.<lb/> </bibl>
+      <bibl><label>124</label> ibid, 70.<lb/> </bibl>
+      
+      <bibl><label>125</label> 7 th EAP, Recitals 4 and 5.<lb/> </bibl>
+      <bibl><label>126</label> Impact Assessment, 70.<lb/> </bibl>
+      <bibl><label>127</label> 7 th EAP, Recital 8.<lb/> </bibl>
+      <bibl><label>128</label> Impact Assessment, at 49, 70.<lb/> </bibl>
+      <bibl><label>129</label> ibid, 70.<lb/> </bibl>
+      <bibl><label>130</label> ibid.<lb/> </bibl>
+      <bibl><label>131</label> ibid, 70 and 200.<lb/> </bibl>
+      <bibl><label>132</label> See: Communication from the Commission. Europe 2020: A strategy for smart, sustainable and inclusive growth.<lb/> COM(2010) 2020, at 9-15. </bibl>
+      <bibl>See also 7 th EAP, Recital 8.<lb/> </bibl>
+      
+      <bibl><label>133</label> Clean Air Programme, 4.<lb/> </bibl>
+      
+      <bibl><label>134</label> See: 7 th EAP, Recital 7, WHO air quality guidelines for Europe, 2 nd edition, 2000 (WHO 2000 guidelines)<lb/> &lt;http://www.euro.who.int/__data/assets/pdf_file/0005/74732/E71922.pdf&gt; accessed 17 August 2014, 41.<lb/> </bibl>
+      <bibl><label>135</label> Notably, a similar situation occurred in Commission v Italy (n 64), where the latter claimed that its failure to fulfil the<lb/> obligations with regard to PM10 emission reduction was forced by the mentioned factors (paras 36, 40 and 41).<lb/> Furthermore, Italy stated that 'ensuring compliance with those limit values would have involved the adoption of drastic<lb/> economic and social measures and the infringement of fundamental rights and freedoms such as the free movement of<lb/> goods and persons, private economic initiative and the right of citizens to public utility services' (para 59).<lb/> The Court, however, deeming the force majeure situation possible (para 64), decided that in the present case, the<lb/> arguments put forward were too general and vague to constitute a case of it (para 65).<lb/> </bibl>
+      
+      <bibl><label>136</label> WHO 2000 guidelines, 160. With regard to Hg, the guidelines simply stated that 'to prevent possible health effects in<lb/> the near future […], ambient air levels of mercury should be kept as low as possible'.<lb/> </bibl>
+      <bibl><label>137</label> Wilde, 288.<lb/> </bibl>
+      <bibl><label>138</label> WHO air quality guidelines. Global update 2005. Particulate matter, ozone, nitrogen dioxide and sulfur dioxide. See:<lb/> &lt;http://www.euro.who.int/__data/assets/pdf_file/0005/78638/E90038.pdf&gt; accessed 17 August 2014, 1.<lb/> </bibl>
+      <bibl><label>139</label> Clean Air Programme, 11.<lb/> </bibl>
+      <bibl><label>140</label> ibid, 10.<lb/> </bibl>
+      <bibl><label>141</label> 7 th EAP, paras 47 and 48 of the Annex.</bibl>
+    </listBibl>
+  </text>
+</TEI>

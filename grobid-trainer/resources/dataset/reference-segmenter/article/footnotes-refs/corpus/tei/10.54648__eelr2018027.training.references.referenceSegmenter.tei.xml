@@ -1,0 +1,216 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.54648__eelr2018027">
+    <titleStmt>
+      <title level="a">Dilemmas on the Way to a New Renewable Energy Directive</title>
+      <author>
+        <persName>
+          <forename>Theodoros</forename>
+          <surname>Iliopoulos</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="dfejzo">Daniel Fejzo</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Kluwer Law International BV</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2018</date>
+      <idno type="DOI">10.54648/eelr2018027</idno>
+      <ptr target="https://doi.org/10.54648/eelr2018027"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Theodoros Iliopoulos. (2018). Dilemmas on the Way to a New Renewable Energy Directive. European Energy and Environmental Law Review, 27(Issue 6), 210-222. DOI: 10.54648/eelr2018027</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Dilemmas on the Way to a New Renewable Energy Directive</title>
+          <author>
+            <persName>
+              <forename>Theodoros</forename>
+              <surname>Iliopoulos</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">European Energy and Environmental Law Review</title>
+          <imprint>
+            <biblScope unit="volume">27</biblScope>
+            <biblScope unit="issue">Issue 6</biblScope>
+            <biblScope unit="page" from="210" to="222">210-222</biblScope>
+            <date when="2018">2018</date>
+            <publisher>Kluwer Law International BV</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.54648/eelr2018027</idno>
+        <ptr target="https://doi.org/10.54648/eelr2018027"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-22T16:12:32.665978Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-70-g77a8a2219</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-22T16:12:32.665978Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-07-03T10:47:03.037Z" status="unfinished" who="#dfejzo">
+      <note type="label">v2 (dfejzo)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-07-08T11:58:39.475Z" status="draft" who="#dfejzo">
+      <desc>1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-10T08:58:39.765Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-10T09:50:46.998Z" status="checked" who="#kazuyo">
+      <desc>1st pass Daniel</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> Kim Talus, EU Energy Law and Policy (Oxford University<lb/> Press 2013), 16±22. </bibl>
+      <bibl>See also M. Kanellakis, G. Martino-<lb/>poulos and T. Zachariadis, ``European Energy Policy ± A<lb/> Review'' 2013 (62) Energy Policy 1020, 1020.<lb/></bibl>
+      <bibl><label>2</label> Marie Vandendriessche, Angel Saz-Carranza and Jean-<lb/>Michel Glachant, ``The Governance of the EU's Energy<lb/> Union: Bridging the Gap?'' 2017 EUI Working Paper<lb/> RSCAS 2017/51 2. </bibl>
+      <bibl>See also Dieter Helm, ``The European<lb/> Framework for Energy and Climate Policies'' 2014 (64)<lb/> Energy Policy 29.<lb/></bibl>
+      <bibl><label>3</label> See for example Council Resolution of 16 September 1986<lb/> concerning new Community energy policy objectives for<lb/> 1995 and convergence of the policies of the Member States<lb/> (OJ 1986 C241, p. 1); </bibl>
+      <bibl>Council Decision 93/500/EEC of 13<lb/> September 1993 concerning the promotion of renewable<lb/> energy sources in the Community (Altener programme) (OJ<lb/> 1993, L235, p. 41); </bibl>
+      <bibl>Commission, ``An Energy Policy for the<lb/> European Union'' COM(95) 682 final (13 December 1995)<lb/> 9, 14, 31±32. </bibl>
+      <bibl> See also Kim Talus, EU Energy Law and Policy<lb/> (Oxford University Press 2013), 190±192.<lb/></bibl>
+      <bibl><label>4</label> See for example Commission, ``Energy for the Future:<lb/> Renewable Sources of Energy ± Green Paper for a<lb/> Community Strategy'' COM(96) 576 final (20 November<lb/> 1996).<lb/></bibl>
+      <bibl><label>5</label> Commission, ``Proposal for a Directive of the European<lb/> Parliament and of the Council on the promotion of the use<lb/> of energy from renewable sources (recast)'' COM(2016) 767<lb/> final/2 (23 February 2017).<lb/></bibl>
+      <bibl><label>6</label> European Parliament, ``Promotion of the use of energy<lb/> from renewable sources***|'' P8_TA-PROV(2018)0009 A8-<lb/>0392/2017 (17 January 2018).<lb/></bibl>
+
+      <bibl><label>7</label> Directive 2001/77/EC of the European Parliament and of<lb/> the Council of 27 September 2001 on the promotion of<lb/> electricity produced from renewable energy sources in the<lb/> internal electricity market (OJ 2001 L283, p.33).<lb/></bibl>
+      <bibl><label>8</label> In 2003, the first biofuels Directive was enacted. See<lb/> Directive 2003/30/EC of the European Parliament and of<lb/> the Council of 8 May 2003 on the promotion of the use of<lb/> biofuels or other renewable fuels for transport. It is out of<lb/> the scope of this article to delve specifically into biofuels<lb/> legislation.<lb/></bibl>
+    <bibl><label>9</label> Directive 2009/28/EC of the European Parliament and of<lb/> the Council of 23 April 2009 on the promotion of the use of<lb/> energy from renewable sources and amending and subse-<lb/>quently repealing Directives 2001/77/EC and 2003/30/EC<lb/> (OJ 2009 L140, p. 16).<lb/></bibl>
+      <bibl><label>10</label> Directive 2001/77/EC of the European Parliament and of<lb/> the Council of 27 September 2001 on the promotion of<lb/> electricity produced from renewable energy sources in the<lb/> internal electricity market (OJ 2001 L283, p. 33).<lb/></bibl>
+      <bibl><label>11</label> Gonzalo SaÂ enz de Miera and Miguel A Â ngel MunÄ oz<lb/> RodrõÂ guez, ``EU Policies and Regulation on CO 2 , Renew-<lb/>ables and Energy Efficiency: A Critical Assessment of<lb/> Recent Experiences'' in Alberto Ansuategi, Juan Delgado<lb/> and Ibon Galarraga (eds.) Green Energy and Efficiency<lb/> (Springer 2015), 32.<lb/></bibl>
+      <bibl><label>12</label> Council Resolution of 8 June 1998 on renewable sources<lb/> of energy (OJ 1998 C198, p. 1)<lb/></bibl>
+
+      <bibl><label>13</label> Ignacio MauleoÂ n, ``The Cost of Renewable Power: A<lb/> Survey of Recent Estimates'' in Alberto Ansuategi, Juan<lb/> Delgado and Ibon Galarraga (eds), Green Energy and<lb/> Efficiency (Springer 2015), 237±239; </bibl>
+      <bibl>Temitope Tunbi<lb/> Onifade, ``Global Clues for Choosing Suitable Support<lb/> Systems for Renewable Energy in the Power Sector'' 2015<lb/> (1) Renewable Energy Law and Policy 25, 26±28; </bibl>
+      <bibl>Nil Atmaca<lb/> and Ilaria Lojodice, ``The Impact of Support Schemes on<lb/> RES Installations and Retail Electricity Prices'' 2014 (1)<lb/> Renewable Energy Law and Policy 67, 67±68; </bibl>
+      <bibl>Craig A. Hart<lb/> and Dominic Marcellino, ``Subsidies or Free Markets to<lb/> Promote Renewables?'' 2012 (3) Renewable Energy Law and<lb/> Policy 196, 196±198.</bibl>
+    <bibl>See also Commission, ``Guidelines on<lb/> State aid for environmental protection and energy 2014-<lb/>2020'' OJ C200/1, 13±14; </bibl>
+   <bibl> Commission, ``European Commis-<lb/>sion guidance for the design of renewables support schemes''<lb/> COM(2013) 439 final (5 November 2013).<lb/></bibl>
+
+      <bibl><label>14</label> David Jacobs, ``Designing Financing Mechanisms for<lb/> Electricity from Renewable Energy Sources: The Role of the<lb/> European Commission as an Agenda Shaper'' in Jale<lb/> Tosun, Sophie Biesenbender and Kai Schulze (eds.), Energy<lb/> Policy Making in the EU (Springer 2015), 116±118.<lb/></bibl>
+      <bibl><label>15</label> See Philip Lowe, ``Regulating Renewable Energy in the<lb/> European Union'' 2010 (1) Renewable Energy Law and<lb/> Policy Review 17, 17.<lb/></bibl>
+      <bibl><label>16</label> Commission, ``Green Paper follow-up action ± Report on<lb/> progress in renewable electricity'' COM(2006) 849 final (10<lb/> January 2007).<lb/></bibl>
+      <bibl><label>17</label> Commission, ``Renewable Energy Road Map Renewable<lb/> energies in the 21st century: building a more sustainable<lb/> future'' SEC(2006) 1719 final (10 January 2007).<lb/></bibl>
+
+      <bibl><label>18</label> Directive 2009/28/EC of the European Parliament and of<lb/> the Council of 23 April 2009 on the promotion of the use of<lb/> energy from renewable sources and amending and subse-<lb/>quently repealing Directives 2001/77/EC and 2003/30/EC<lb/> (OJ 2009 L140, p. 16).<lb/></bibl>
+      <bibl><label>19</label> Angus Johnston and Eva Van Der Marel, ``How Binding<lb/> Are the EU's `Binding' Renewables Targets?'' 2016 (18)<lb/> Cambridge Yearbook of European Legal Studies, 176, 178.<lb/></bibl>
+      <bibl><label>20</label> It should be also noted that, contrarily to its predecessor,<lb/> the Directive 2009/28/EC does not only relate to electricity<lb/> from renewable sources, but to RE in general.<lb/></bibl>
+      <bibl><label>21</label> See also Commission, ``Energy 2020 A strategy for<lb/> competitive, sustainable and secure energy'' COM(2010)<lb/> 639 final (10 November 2010).<lb/></bibl>
+      <bibl><label>22</label> Hungary was the last Member State that submitted its<lb/> NREAP in January 2011. See L.W.M. Beurskens and M.<lb/> Hekkenberg, ``Renewable Energy Projections as Published<lb/> in the National Renewable Energy Action Plans of the<lb/> European Member States'' Energy Research Centre of the<lb/> Netherlands (ECN) and European Environment Agency<lb/> (EEA) (1 February 2011), 28.<lb/></bibl>
+      <bibl><label>23</label> Joined Cases C-215/16, C-216/16, C-220/16 and C-221/16<lb/> Elecdey Carcelen SA and Others v Comunidad AutoÂnoma de<lb/> Castilla-La Mancha [2017] published in the electronic<lb/> Reports of Cases. </bibl>
+
+      <bibl><label>25</label> Joined Cases C-215/16, C-216/16, C-220/16 and C-221/16<lb/> Elecdey Carcelen SA and Others v Comunidad AutoÂnoma de<lb/> Castilla-La Mancha [2017] published in the electronic<lb/> Reports of Cases, Opinion of AG Juliane Kokott, para. 27.<lb/></bibl>
+      <bibl><label>26</label> Joined Cases C-215/16, C-216/16, C-220/16 and C-221/16<lb/> Elecdey Carcelen SA and Others v Comunidad AutoÂnoma de<lb/> Castilla-La Mancha [2017] published in the electronic<lb/> Reports of Cases, Opinion of AG Juliane Kokott, para. 31. </bibl>
+
+      <bibl><label>28</label> Joined Cases C-215/16, C-216/16, C-220/16 and C-221/16<lb/> Elecdey Carcelen SA and Others v Comunidad AutoÂnoma de<lb/> Castilla-La Mancha [2017] published in the electronic<lb/> Reports of Cases, Opinion of AG Juliane Kokott, para. 74.<lb/></bibl>
+      <bibl><label>29</label> Joined Cases C-215/16, C-216/16, C-220/16 and C-221/16<lb/> Elecdey Carcelen SA and Others v Comunidad AutoÂnoma de<lb/> Castilla-La Mancha [2017] published in the electronic<lb/> Reports of Cases, Opinion of AG Juliane Kokott, paras<lb/> 33, 34.<lb/></bibl>
+      <bibl><label>30</label> European Environment Agency, ``Progress of renewable<lb/> energy sources'' 19 December 2017 &lt;https://www.eea.eur-<lb/>opa.eu/data-and-maps/daviz/actual-res-progress-indicative-<lb/>trajectory-6#tab-chart_2_filters=%7B%22rowFilter-<lb/>s%22%3A%7B%7D %3B%22columnFilters%22%<lb/> 3A%7B%22pre_config_country%22%3A%5B%22EU-<lb/>28%22%5D%7D%7D&gt; retrieved 10 April 2018.<lb/></bibl>
+      <bibl><label>31</label> Commission, ``Third Report on the State of the Energy<lb/> Union'' COM(2017) 688 final (23 November 2017).<lb/></bibl>
+
+      <bibl><label>32</label> See Commission Recommendation of 27 October 2011 on<lb/> the digitisation and online accessibility of cultural material<lb/> and digital preservation (OJ 2011 L283, p. 39).<lb/></bibl>
+      <bibl><label>33</label> Commission, ``Staff Working Document Accompanying<lb/> the documents Communication from the Commission to the<lb/> Council, the European Parliament, the European Economic<lb/> and Social Committee and he Committee of the Regions a<lb/> Clean Air Programme for Europe Proposal for a Directive<lb/> of the European Parliament and of the Council on the<lb/> limitation of emissions of certain pollutants into the air from<lb/> medium combustion plants Proposal for a Directive of the<lb/> European Parliament and of the Council on the reduction of<lb/> national emissions of certain atmospheric pollutants and<lb/> amending Directive 2003/35/EC Proposal for a Council<lb/> Decision on the acceptance of the Amendment to the 1999<lb/> Protocol to the 1979 Convention on Long-Range Trans-<lb/>boundary Air Pollution to Abate Acidification, Eutrophica-<lb/>tion and Ground-level Ozone'' SWD(2013) 532 final (18<lb/> December 2013).<lb/></bibl>
+      <bibl><label>34</label> See Joined Cases C-215/16, C-216/16, C-220/16 and C-<lb/>221/16 Elecdey Carcelen SA and Others v Comunidad<lb/> AutoÂnoma de Castilla-La Mancha [2017] published in the<lb/> electronic Reports of Cases, paras 31, 32.<lb/></bibl>
+      <bibl><label>35</label> Henrik Klinge Jacobsen et al., ``Cooperation mechanisms<lb/> to achieve EU renewable targets'' (2014) 63 Renewable<lb/> Energy, 345, 345±347.<lb/></bibl>
+      <bibl><label>36</label> Theodoros Iliopoulos, ``Renewable Energy Regulation:<lb/> Feed-in Tariff Schemes under Recession Conditions?''<lb/> (2016) 2 European Networks Law and Regulation, 110,<lb/> 116±117.<lb/></bibl>
+
+      <bibl><label>37</label> The cooperation between Sweden and Norway has been<lb/> the only cooperation mechanism until 2015. More recently,<lb/> more schemes have started to emerge, like the Baltic Energy<lb/> Market Interconnection Plan (BEMIP), the energy coopera-<lb/>tion between the North Sea Countries and the joint pilot<lb/> tender between Denmark and Germany. See Commission,<lb/> ``Annex 2 to the Third Report on the State of the Energy<lb/> Union'' COM(2017) 688 final (23 November 2017), 5;<lb/></bibl>
+      <bibl>Commission, ``Second Report on the State of the Energy<lb/> Union'' COM(2017) 53 final (1 February 2017), 9;<lb/></bibl>
+      <bibl>Commission, ``State of the Energy Union 2015''<lb/> COM(2015) 572 final (18 November 2015), 4.<lb/></bibl>
+      <bibl><label>38</label> See for example Case C-379/98 PreussenElektra AG v<lb/> Schhleswag AG, in the presence of Windpark ReuûenkoÈge III<lb/> GmbH and Land Schleswig-Holstein [2001] ECR I-2099 </bibl>
+     <bibl> and<lb/> Case C-206/06 Essent Netwerk Noord BV supported by<lb/> Nederlands Elektriciteit Administratiekantoor BV v Alumi-<lb/>nium Delfzijl BV, and in the indemnification proceedings<lb/> Aluminium Delfzijl BV v Staat der Nederlanden and in the<lb/> indemnification proceedings Essent Netwerk Noord BV v<lb/> Nederlands Elektriciteit Administratiekantoor BV and Sar-<lb/>anne BV [2008] ECR I-5497.<lb/></bibl>
+      <bibl><label>39</label> Case C-573/12 A Ê lands Vindkraft AB v Energimyndigheten<lb/> [2014] published in the electronic Reports of Cases.<lb/></bibl>
+
+      <bibl><label>40</label> Eurostat, ``Table ± Share of renewable energy in gross final<lb/> energy consumption'' January 2018 &lt;http://appsso.eurostat.<lb/> ec.europa.eu/nui/show.do?dataset=nrg_ind_335a&amp;lang<lb/> =en&gt; retrieved 10 April 2018.<lb/></bibl>
+      <bibl><label>41</label> Commission, Report, Renewable Energy Progress Re-<lb/>port, COM(2017) 57 final (1 February 2017), pp. 2±3;<lb/></bibl>
+      <bibl>Commission, ``REFIT Evaluation of the Directive 2009/28/<lb/> EC of the European Parliament and of the Council''<lb/> SWD(2016) 416 final (30 November 2016), 1, 21, 56.<lb/></bibl>
+      <bibl><label>42</label> 2016 data are preliminary estimations. See European<lb/> Environment Agency, ``Progress of renewable energy sources''<lb/> 19 December 2017 &lt;https://www.eea.europa.eu/data-and-<lb/>maps/daviz/actual-res-progress-indicative-trajectory-6#tab-<lb/>chart_2_filters=%7B%22rowFilters%22%3A%7B%7D%<lb/> 3B%22columnFilters%22%3A%7B%22pre_config_country<lb/> %22%3A%5B%22EU-28%22%5D%7D%7D&gt; retrieved<lb/> 10 April 2018<lb/></bibl>
+      <bibl><label>43</label> See Commission, ``Green Paper ± A 2030 Framework for<lb/> Climate and Energy Policies'' COM(2013) 169 final (27<lb/> March 2013), 8; </bibl>
+      <bibl>Commission, ``Renewable Energy: a Major<lb/> Player in the European Energy Market'' COM(2012) 271<lb/> final (6 June 2012), 12, 13.<lb/></bibl>
+      <bibl><label>44</label> Commission, ``A Policy Framework for Climate and<lb/> Energy in the Period from 2020 to 2030'' COM(2014) 15<lb/> final (22 November 2014), 6.<lb/></bibl>
+      <bibl><label>45</label> Commission, ``A Policy Framework for Climate and<lb/> Energy in the Period from 2020 to 2030'' COM(2014) 15<lb/> final (22 November 2014), 6.<lb/></bibl>
+      <bibl><label>46</label> Commission, ``A Policy Framework for Climate and<lb/> Energy in the Period from 2020 to 2030'' COM(2014) 15<lb/> final (22 November 2014), 5, 7.<lb/></bibl>
+      <bibl><label>47</label> Commission, ``Proposal for a Directive of the European<lb/> Parliament and of the Council on the Promotion of the Use<lb/> of Energy from Renewable Sources'' COM(2016) 767 final<lb/> (30 November 2016).<lb/></bibl>
+      <bibl><label>48</label> The Paris Agreement entered into force on 4 November<lb/> 2016. See UNFCCC, ``Paris Agreement ± Status of<lb/> Ratification'' February 2018 &lt;http://unfccc.int/paris_a-<lb/>greement/items/9444.php&gt; retrieved 5 April 2018.<lb/></bibl>
+      <bibl><label>49</label> Charlotte Streck, Paul Keenlyside and Moritz von Unger,<lb/> ``The Paris Agreement: A New Beginning'' 2016 (13) Journal<lb/> for European Environmental &amp; Planning Law 3.<lb/></bibl>
+
+      <bibl><label>50</label> Commission, ``Proposal for a Directive of the European<lb/> Parliament and of the Council on the Promotion of the Use<lb/> of Energy from Renewable Sources'' COM(2016) 767 final<lb/> (30 November 2016), Article 3(2).<lb/></bibl>
+
+      <bibl><label>51</label> Commission, ``Proposal for a Regulation of the of the<lb/> European Parliament and of the Council on the Governance<lb/> of the Energy Union, amending Directive 94/22/EC,<lb/> Directive 98/70/EC, Directive 2009/31/EC, Regulation<lb/> (EC) No 663/2009, Regulation (EC) No 715/2009, Directive<lb/> 2009/73/EC, Council Directive 2009/119/EC, Directive<lb/> 2010/31/EU, Directive 2012/27/EU, Directive 2013/30/EU<lb/> and Council Directive (EU) 2015/652 and repealing<lb/> Regulation (EU) No 525/2013'' COM(2016) 759 final (30<lb/> November 2016),<lb/></bibl>
+      <bibl><label>52</label> Commission, ``Proposal for a Regulation of the of the<lb/> European Parliament and of the Council on the Governance<lb/> of the Energy Union, amending Directive 94/22/EC,<lb/> Directive 98/70/EC, Directive 2009/31/EC, Regulation<lb/> (EC) No 663/2009, Regulation (EC) No 715/2009, Directive<lb/> 2009/73/EC, Council Directive 2009/119/EC, Directive<lb/> 2010/31/EU, Directive 2012/27/EU, Directive 2013/30/EU<lb/> and Council Directive (EU) 2015/652 and repealing<lb/> Regulation (EU) No 525/2013'' COM(2016) 759 final (30<lb/> November 2016), Articles 25, 27, 28.<lb/></bibl>
+      <bibl><label>53</label> See also Susana Galera Rodrigo, ``Changing the Energy<lb/> Model: Step Back on the Europe 2050 Strategy?'' 2016 (2)<lb/> European Energy and Environmental Law Review 65, 69.<lb/></bibl>
+      <bibl><label>54</label> European Parliament, ``Promotion of the use of energy<lb/> from renewable sources***|'' P8_TA-PROV(2018)0009 A8-<lb/>0392/2017 (17 January 2018).<lb/></bibl>
+      <bibl><label>55</label> European Parliament, ``Promotion of the use of energy<lb/> from renewable sources***|'' P8_TA-PROV(2018)0009 A8-<lb/>0392/2017 (17 January 2018), Amendment 2.<lb/></bibl>
+      <bibl><label>56</label> European Parliament, ``Promotion of the use of energy<lb/> from renewable sources***|'' P8_TA-PROV(2018)0009 A8-<lb/>0392/2017 (17 January 2018), Amendment 3.<lb/></bibl>
+
+      <bibl><label>57</label> European Parliament, ``Promotion of the use of energy<lb/> from renewable sources***|'' P8_TA-PROV(2018)0009 A8-<lb/>0392/2017 (17 January 2018), Amendments 3, 4, 7, 10 and<lb/> 324.<lb/></bibl>
+      <bibl><label>58</label> Commission, ``Proposal for a Directive of the European<lb/> Parliament and of the Council on the Promotion of the Use<lb/> of Energy from Renewable Sources'' COM(2016) 767 final<lb/> (30 November 2016), Explanatory Memorandum, 2.<lb/></bibl>
+      <bibl><label>59</label> European Parliament, ``Promotion of the use of energy<lb/> from renewable sources***|'' P8_TA-PROV(2018)0009 A8-<lb/>0392/2017 (17 January 2018), Explanatory Statement.<lb/></bibl>
+      <bibl><label>60</label> European Parliament, ``Promotion of the use of energy<lb/> from renewable sources***|'' P8_TA-PROV(2018)0009 A8-<lb/>0392/2017 (17 January 2018), Amendments 11, 109 and 324.<lb/></bibl>
+      <bibl><label>61</label> In 2016, the European Parliament had asked for at least<lb/> 30% share of RE by 2030. See European Parliament,<lb/> ``Resolution of 23 June 2016 on the renewable energy<lb/> progress report'' 2016/2041(INI) (23 June 2016), para. 22.<lb/></bibl>
+      <bibl><label>62</label> See European Parliament, ``Governance of the Energy<lb/> Union***|'' P8_TA-PROV(2018)0011 A8-0402/2017 (17<lb/> January 2018); </bibl>
+      <bibl>Commission, ``Proposal for a Regulation<lb/> of the of the European Parliament and of the Council on the<lb/> Governance of the Energy Union, amending Directive 94/<lb/> 22/EC, Directive 98/70/EC, Directive 2009/31/EC, Regula-<lb/>tion (EC) No 663/2009, Regulation (EC) No 715/2009,<lb/> Directive 2009/73/EC, Council Directive 2009/119/EC,<lb/> Directive 2010/31/EU, Directive 2012/27/EU, Directive<lb/> 2013/30/EU and Council Directive (EU) 2015/652 and<lb/> repealing Regulation (EU) No 525/2013'' COM(2016) 759<lb/> final (30 November 2016).<lb/></bibl>
+
+      <bibl><label>63</label> Commission, ``European Commission guidance for the<lb/> design of renewables support schemes'' COM(2013) 439<lb/> final (5 November 2013), 22.<lb/></bibl>
+      <bibl><label>64</label> There is also Article 2(i), which contains the definition of<lb/> the concept of support scheme, and Article 13, which has to<lb/> do with the voluntary decision of two or more Member<lb/> States to coordinate their support schemes. These Articles<lb/> are also present in the Directive 2009/28/EC, which is the<lb/> reason why no further analysis follows.<lb/></bibl>
+      <bibl><label>65</label> Commission, ``Proposal for a Directive of the European<lb/> Parliament and of the Council on the Promotion of the Use<lb/> of Energy from Renewable Sources'' COM(2016) 767 final<lb/> (30 November 2016), Article 4(1), (2).<lb/></bibl>
+      <bibl><label>66</label> Commission, ``Proposal for a Directive of the European<lb/> Parliament and of the Council on the Promotion of the Use<lb/> of Energy from Renewable Sources'' COM(2016) 767 final<lb/> (30 November 2016), Article 4(3).<lb/></bibl>
+      <bibl><label>67</label> Commission, ``European Commission guidance for the<lb/> design of renewables support schemes'' COM(2013) 439<lb/> final (5 November 2013).<lb/></bibl>
+      <bibl><label>68</label> Commission, ``European Commission guidance for the<lb/> design of renewables support schemes'' COM(2013) 439<lb/> final (5 November 2013), 5, 13.<lb/></bibl>
+
+      <bibl><label>69</label> Toby Couture and Yves Gagnon, ``An Analysis of Feed-<lb/>In Tariff Remuneration Models: Implications for Renew-<lb/>able Energy Investment'' 2010 (38) Energy Policy 955.<lb/></bibl>
+      <bibl><label>70</label> Pablo del RõÂ o et al., ``Overview of Design Elements for<lb/> RES-E Auction'' Report D2.2 (a), AURES ± EU Horizon<lb/> 2020, October 2015.<lb/></bibl>
+      <bibl><label>71</label> Commission, ``Guidelines on State aid for environmental<lb/> protection and energy 2014-2020'' OJ C200/1.<lb/></bibl>
+      <bibl><label>72</label> Commission, ``Guidelines on State aid for environmental<lb/> protection and energy 2014-2020'' OJ C200/1, paras 124±<lb/> 126.<lb/></bibl>
+      <bibl><label>73</label> European Parliament, ``Promotion of the use of energy<lb/> from renewable sources***|'' P8_TA-PROV(2018)0009 A8-<lb/>0392/2017 (17 January 2018), Amendment 322/rev.<lb/></bibl>
+
+      <bibl><label>74</label> European Parliament, ``Promotion of the use of energy<lb/> from renewable sources***|'' P8_TA-PROV(2018)0009 A8-<lb/>0392/2017 (17 January 2018), Amendments 117, 118 and<lb/> 122.<lb/></bibl>
+      <bibl><label>75</label> European Parliament, ``Promotion of the use of energy<lb/> from renewable sources***|'' P8_TA-PROV(2018)0009 A8-<lb/>0392/2017 (17 January 2018), Amendment 123.<lb/></bibl>
+      <bibl><label>76</label> European Parliament, ``Promotion of the use of energy<lb/> from renewable sources***|'' P8_TA-PROV(2018)0009 A8-<lb/>0392/2017 (17 January 2018), Amendment 124.<lb/></bibl>
+      <bibl><label>77</label> See Council of European Energy Regulators (CEER),<lb/> ``Status Review of Renewable Support Schemes in Europe''<lb/> Ref: C16-SDE TF-56-03 (CEER, 11 April 2017), p. 12.<lb/></bibl>
+
+      <bibl><label>78</label> See The World Bank, ``Electric power consumption (kWh<lb/> per capita)'' 2018, &lt;https://data.worldbank.org/indicator/<lb/> EG.USE.ELEC.KH.PC&gt; retrieved 5 April 2018.<lb/></bibl>
+      <bibl><label>79</label> Article 2 contains the definitions.<lb/></bibl>
+      <bibl><label>80</label> Caroline Wehlander, Services of General Economic Inter-<lb/>est as a Constitutional Concept of EU Law (T.M.C. Asser<lb/> Press/ Springer 2016), 117±120; </bibl>
+      <bibl>Panagiotis Delimatsis,<lb/> ``Services of General Interest and the External Dimension<lb/> of the EU Energy Policy'' in Markus Krajewski (ed.),<lb/> Services of General Interest Beyond the Single Market<lb/> (T.M.C. Asser Press/ Springer 2015). </bibl>
+      <bibl>See also Case T-289/<lb/> 03 British United Provident Association Ltd (BUPA), BUPA<lb/> Insurance Ltd and BUPA Ireland Ltd v Commission of the<lb/> European Communities [2008] ECR II-00081, para. 166.<lb/></bibl>
+      <bibl><label>81</label> Commission, ``European Commission guidance for the<lb/> design of renewables support schemes'' COM(2013) 439<lb/> final (5 November 2013), 22.<lb/></bibl>
+
+      <bibl><label>82</label> Commission, ``A Framework Strategy for a Resilient<lb/> Energy Union with a Forward-Looking Climate Change<lb/> Policy'' COM(2015) 80 final, (25 February 2015).<lb/></bibl>
+      <bibl><label>83</label> See Marc Ringel and MicheÁ le Knodt, ``The governance of<lb/> the European Energy Union: Efficiency, effectiveness and<lb/> acceptance of the Winter Package 2016'' 2018 (112) Energy<lb/> Policy, 209.</bibl>
+    </listBibl>
+  </text>
+</TEI>

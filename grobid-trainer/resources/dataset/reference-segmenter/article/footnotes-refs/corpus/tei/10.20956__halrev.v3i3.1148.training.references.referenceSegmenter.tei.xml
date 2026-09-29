@@ -1,0 +1,158 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.20956__halrev.v3i3.1148">
+    <titleStmt>
+      <title level="a">The Cancellation of Environmental License of PT. Semen Indonesia: A Strategic Environmental Assessment</title>
+      <author>
+        <persName>
+          <forename>Edy</forename>
+          <surname>Lisdiyono</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="pfaffe">Milena Pfaffe</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2018</date>
+      <idno type="DOI">10.20956/halrev.v3i3.1148</idno>
+      <ptr target="https://doi.org/10.20956/halrev.v3i3.1148"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Edy Lisdiyono. (2018). The Cancellation of Environmental License of PT. Semen Indonesia: A Strategic Environmental Assessment. Hasanuddin Law Review, 3(3), 322. DOI: 10.20956/halrev.v3i3.1148</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">The Cancellation of Environmental License of PT. Semen Indonesia: A Strategic Environmental Assessment</title>
+          <author>
+            <persName>
+              <forename>Edy</forename>
+              <surname>Lisdiyono</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Hasanuddin Law Review</title>
+          <imprint>
+            <biblScope unit="volume">3</biblScope>
+            <biblScope unit="issue">3</biblScope>
+            <biblScope unit="page">322</biblScope>
+            <date when="2018">2018</date>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.20956/halrev.v3i3.1148</idno>
+        <ptr target="https://doi.org/10.20956/halrev.v3i3.1148"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-09T06:48:36.164036Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-65-gd393236aa</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-09T06:48:36.164036Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-09T07:40:45.338Z" status="unfinished" who="#pfaffe">
+      <note type="label">v2 (pfaffe)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-09T08:58:09.605Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-19T13:22:15.691Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-19T13:28:58.533Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+      <listBibl>
+        <bibl><label>1</label><lb/> Brown, H.S., de Jong, M., &amp; Levy, D.L. (2009). "Building institutions based on information disclosure:<lb/> lessons from GRI's sustainability reporting." Journal of cleaner production, 17(6), p. 571; </bibl>
+        <bibl>Dingwerth, K., &amp;<lb/> Eichinger. M. (2010). "Tamed transparency: How information disclosure under the Global Reporting<lb/> Initiative fails to empower." Global Environmental Politics, 10(3), p. 74.<lb/> </bibl>
+        <bibl><label>2</label><lb/> Huber, E., and Stephens, J.D. (2001). Development and crisis of the welfare state: Parties and policies in global<lb/> markets. University of Chicago press.<lb/> </bibl>
+        
+        <bibl><label>3</label><lb/> Some studies have discussed the relationship as well as the tension between state development and<lb/> local wisdom. For instance, see Kongprasertamorn, K. (2007). Local wisdom environmental protection<lb/> and community development: the clam farmers in Tambon Bangkhunsai, Phetchaburi Province,<lb/> Thailand. Manusya: Journal of Humanities, 10(1): 1-10; </bibl>
+        <bibl>Lisdiyono, E. (2017), "Exploring the Strength of<lb/> Local Wisdom in Efforts to Ensure the Environmental Sustainability," International Journal of Civil<lb/> Engineering and Technology, 8(11): 340-347.<lb/> </bibl>
+        <bibl><label>4</label><lb/> Arianto, K.J. (2015). Contested land, contesting laws. A context of legal pluralism and industrialization<lb/> in Indonesia. Sortuz: Oñati Journal of Emergent Socio-Legal Studies, 6(2): 93-106; </bibl>
+        <bibl>Purnaweni, H. (2014).<lb/> Kebijakan Pengelolaan Lingkungan di Kawasan Kendeng Utara Provinsi Jawa Tengah. Jurnal Ilmu<lb/> Lingkungan, 12 (1): p. 53.; </bibl>
+        <bibl>Aziz, M. (2012).Identitas Kaum Samin Pasca Kolonia Pergulatan Negara,<lb/> Agama, dan Adat dalam Pro-Kontra Pembangunan Pabrik Semen di Sukolilo, Pati, Jawa<lb/> Tengah, Jurnal Kawistara, 2(3): 252-263.<lb/> </bibl>
+        <bibl><label>5</label><lb/> Pangayom, G.S., Sardini, N.H., &amp; Astuti, P. (2017), "Gerakan Perlawanan Masyarakat Pegunungan<lb/> Rembang Terhadap Pembangunan Pabrik Semen Indonesia Pada Tahun 2014-2017," Journal of Politics<lb/> and Government Studies, 6(4): 341-350; </bibl>
+        <bibl>Hidayatullah, U., Rini, H.S., &amp; Arsal, T. (2017), "Analisis Peta<lb/> Konflik Pembangunan Pabrik PT. Semen Indonesia di Kecamatan Gunem Kabupaten Rem-<lb/>bang," Solidarity: Journal of Education, Society and Culture, 5(1): 10-21.<lb/> </bibl>
+        
+        <bibl><label>6</label><lb/> See: https://putusan.mahkamahagung.go.id/putusan 99 PK/TUN/2016.<lb/> </bibl>
+        <bibl><label>7</label><lb/> The Verdict of the Supreme Judicial Review of the Indonesian Court No. 99 PK/TUN/2016, ibid, p. 115<lb/> </bibl>
+        
+        <bibl><label>8</label><lb/> Hopwood, B., Mellor, M., &amp; O'Brien, G. (2005), "Sustainable development: mapping different<lb/> approaches," Sustainable development, 13(1): 38-52.<lb/> </bibl>
+        <bibl><label>9</label><lb/> Keraf, A.S. (2010). Etika Lingkungan Hidup. Jakarta; Penerbit Buku Kompas, p. 168.<lb/> </bibl>
+        <bibl><label>10</label> Suparno. (2017), "Community Participation and the Creation of Social Justice," International Journal of<lb/> Civil Engineering and Technology, 8(8): 1095-1098.<lb/> </bibl>
+        
+        <bibl><label>11</label> Susilo, S., &amp; Syato, I. (2016). "Common identity framework of cultural knowledge and practices of<lb/> Javanese Islam," Indonesian Journal of Islam and Muslim Societies, 6(2), p. 184.<lb/> </bibl>
+        <bibl><label>12</label> Poerwanto, H. (2005). Kebudayaan dan Lingkungan Dalam Perspektif Antropologi (Culture and Environment<lb/> in Anthropological Perspective). Yogyakarta: Pustaka Pelajar, p. 222.<lb/> </bibl>
+        <bibl><label>13</label> Soemarwoto, O. (2004). Ekologi Lingkungan Hidup dan Pembangunan (Environmental Ecology and<lb/> Development), 4 th Edition. Jakarta: Djambatan, p. 161.<lb/> </bibl>
+        <bibl><label>14</label> Quarrie, J. (1992). Earth Summit'92. The United Nations Conference on Environment and Development, Rio<lb/> de Janeiro.<lb/> </bibl>
+        
+        <bibl><label>15</label> Keraf, A.S. (2010). Op.Cit., p. 167.<lb/> </bibl>
+        <bibl><label>16</label> Lisdiyono, E. (2017), "Environmental Legislation: A Study of the Shift of Spatial Policy in Local<lb/> Regulation," International Journal of Environmental and Science Education, 12 (4): 597-605.<lb/> </bibl>
+        <bibl><label>17</label> Rahmadi, T. (2015), Hukum Lingkungan di Indonesia. Jakarta: PT. Raja Grafindo Persada, p. 94<lb/> </bibl>
+        
+        <bibl><label>18</label> The legal consideration in the Judicial Review of the Supreme Court, p. 111 -114.<lb/> </bibl>
+        
+        <bibl><label>19</label> Supriadi, S. (2016). "Legal Standing of Coastal Reclamation: Islamic and Positive Law Perspectives."<lb/> Hasanuddin Law Review, 2(2): 258-276. doi: http://dx.doi.org/10.20956/halrev.v1i2.312. </bibl>
+        <bibl>For more detail<lb/> discussion of spatial planning from the legal perspective, see: Lisdiyono, E. (2008). Legislasi Penataan<lb/> Ruang Studi Tentang Pergeseran Kebijakan Hukum Tata Ruang Dalam Regulasi Daerah di Kota<lb/> Semarang (Dissertation). Semarang: Post-graduate Diponegoro University.<lb/> </bibl>
+        
+        <bibl><label>20</label> Faiz, P.M. (2016), "Perlindungan Terhadap Lingkungan Dalam Prespektif Konstitusi," Jurnal Konstitusi,<lb/> 13 (4): 771.<lb/> </bibl>
+        
+        References<lb/> 
+        
+        <bibl>Arianto, K.J. (2015). "Contested land, contesting laws. A context of legal pluralism and<lb/> industrialization in Indonesia." Sortuz: Oñati Journal of Emergent Socio-Legal<lb/> Studies, 6 (2): 93-106.<lb/> </bibl>
+        <bibl>Aziz, M. (2012). "Identitas Kaum Samin Pasca Kolonia Pergulatan Negara, Agama, dan<lb/> Adat dalam Pro-Kontra Pembangunan Pabrik Semen di Sukolilo, Pati, Jawa<lb/> Tengah," Jurnal Kawistara, 2(3): 252-263.<lb/> </bibl>
+        <bibl>Brown, H.S., de Jong, M., &amp; Levy, D.L. (2009). "Building institutions based on<lb/> information disclosure: lessons from GRI's sustainability reporting." Journal of<lb/> cleaner production, 17 (6): 571.<lb/></bibl>
+        <bibl> Dingwerth, K., &amp; Eichinger. M. (2010). "Tamed transparency: How information dis-<lb/>closure under the Global Reporting Initiative fails to empower." Global<lb/> Environmental Politics, 10 (3): 74.<lb/> </bibl>
+        <bibl>Faiz, P.M. (2016), "Perlindungan Terhadap Lingkungan Dalam Prespektif Konstitusi,"<lb/> Jurnal Konstitusi, 13 (4): 771.<lb/></bibl>
+        <bibl> Hidayatullah, U., Rini, H.S., &amp; Arsal, T. (2017), "Analisis Peta Konflik Pembangunan<lb/> Pabrik PT. Semen Indonesia di Kecamatan Gunem Kabupaten Rem-<lb/>bang" Solidarity: Journal of Education, Society and Culture, 5(1): 10-21.<lb/> </bibl>
+        <bibl>Hopwood, B., Mellor, M., &amp; O'Brien, G. (2005), "Sustainable development: mapping<lb/> different approaches," Sustainable development, 13(1): 38-52.<lb/></bibl>
+        <bibl> Huber, E., and Stephens, J.D. (2001). Development and crisis of the welfare state: Parties and<lb/> policies in global markets. University of Chicago press.<lb/></bibl>
+        <bibl> Keraf, A.S. (2010). Etika Lingkungan Hidup. Jakarta; Penerbit Buku Kompas.<lb/></bibl>
+        <bibl> Kongprasertamorn, K. (2007). "Local wisdom environmental protection and commu-<lb/>nity development: the clam farmers in Tambon Bangkhunsai, Phetchaburi<lb/> Province, Thailand." Manusya: Journal of Humanities, 10 (1): 1-10.<lb/></bibl>
+        <bibl> Lisdiyono, E. (2008). Legislasi Penataan Ruang Studi Tentang Pergeseran Kebijakan Hukum<lb/> Tata Ruang Dalam Regulasi Daerah di Kota Semarang (Dissertation). Semarang:<lb/> Post-graduate Diponegoro University.<lb/></bibl>
+        <bibl> Lisdiyono, E. (2017), "Environmental Legislation: A Study of the Shift of Spatial Policy<lb/> in Local Regulation," International Journal of Environmental and Science Education,<lb/> 12 (4): 597-605.<lb/></bibl>
+        <bibl> Lisdiyono, E. (2017). "Exploring the Strength of Local Wisdom in Efforts to Ensure the<lb/> Environmental Sustainability," International Journal of Civil Engineering and<lb/> Technology, 8(11): 340-347.<lb/> </bibl>
+        <bibl>Pangayom, G.S., Sardini, N.H., &amp; Astuti, P. (2017). "Gerakan Perlawanan Masyarakat<lb/> Pegunungan Rembang Terhadap Pembangunan Pabrik Semen Indonesia Pada<lb/> Tahun 2014-2017," Journal of Politics and Government Studies, 6(4): 341-350.<lb/></bibl>
+        <bibl> Poerwanto, H. (2005). Kebudayaan dan Lingkungan Dalam Perspektif Antropologi (Culture<lb/> and Environment in Anthropological Perspective). Yogyakarta: Pustaka Pelajar.<lb/></bibl>
+        <bibl> Purnaweni, H. (2014). "Kebijakan Pengelolaan Lingkungan di Kawasan Kendeng Utara<lb/> Provinsi Jawa Tengah." Jurnal Ilmu Lingkungan, 12 (1): 53.<lb/></bibl>
+        <bibl> Quarrie, J. (1992). Earth Summit'92. The United Nations Conference on Environment and<lb/> Development, Rio de Janeiro.<lb/></bibl>
+        <bibl> Rahmadi, T. (2015), Hukum Lingkungan di Indonesia. Jakarta: PT. Raja Grafindo Persada.<lb/></bibl>
+        <bibl> Soemarwoto, O. (2004). Ekologi Lingkungan Hidup dan Pembangunan (Environmental<lb/> Ecology and Development), 4 th Edition. Jakarta: Djambatan.<lb/></bibl>
+        <bibl> Suparno. (2017), "Community Participation and the Creation of Social Justice," Inter-<lb/>national Journal of Civil Engineering and Technology, 8(8): 1095-1098.<lb/></bibl>
+        <bibl> Supriadi, S. (2016). "Legal Standing of Coastal Reclamation: Islamic and Positive Law<lb/> Perspectives." Hasanuddin Law Review, 2(2): 258-276. doi: http://dx.doi.org/10.20956/<lb/> halrev.v1i2.312.<lb/> </bibl>
+        <bibl>Susilo, S., &amp; Syato, I. (2016). "Common identity framework of cultural knowledge and<lb/> practices of Javanese Islam," Indonesian Journal of Islam and Muslim Societies, 6(2),<lb/> 184.</bibl>
+        </listBibl>
+    </text>
+</TEI>

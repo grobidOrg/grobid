@@ -1,0 +1,259 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.54648__eelr2018019">
+    <titleStmt>
+      <title level="a">Still Searching for a Reliable Script: Access to Scientific Knowledge in Environmental Litigation in Italy</title>
+      <author>
+        <persName>
+          <forename>Roberto</forename>
+          <surname>Caranta</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="admin">Administrator</persName>
+        <resp>editor</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Kluwer Law International BV</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2018</date>
+      <idno type="DOI">10.54648/eelr2018019</idno>
+      <ptr target="https://doi.org/10.54648/eelr2018019"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Roberto Caranta. (2018). Still Searching for a Reliable Script: Access to Scientific Knowledge in Environmental Litigation in Italy. European Energy and Environmental Law Review, 27(Issue 4), 158-168. DOI: 10.54648/eelr2018019</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Still Searching for a Reliable Script: Access to Scientific Knowledge in Environmental Litigation in Italy</title>
+          <author>
+            <persName>
+              <forename>Roberto</forename>
+              <surname>Caranta</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">European Energy and Environmental Law Review</title>
+          <imprint>
+            <biblScope unit="volume">27</biblScope>
+            <biblScope unit="issue">Issue 4</biblScope>
+            <biblScope unit="page" from="158" to="168">158-168</biblScope>
+            <date when="2018">2018</date>
+            <publisher>Kluwer Law International BV</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.54648/eelr2018019</idno>
+        <ptr target="https://doi.org/10.54648/eelr2018019"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-31T15:32:40.411026Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-71-g595835ed0</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-31T15:32:40.411026Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-31T15:47:21.481Z" status="extraction" who="#admin">
+      <note type="label">Extraction (use this)</note>
+      <desc>Renamed to Extraction (use this)</desc>
+    </change>
+    <change when="2026-04-17T14:41:50.909Z" status="unfinished" who="#cboulanger">
+      <note type="label">v3 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-04-17T16:05:40.322Z" status="draft" who="#cboulanger">
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-11T09:27:10.641Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-11T10:19:57.224Z" status="checked" who="#kazuyo">
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-29T09:44:21.728Z" status="checked" who="#kazuyo">
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-29T10:27:08.987Z" status="checked" who="#lfoppiano">
+      <note type="label">v5 (lfoppiano)</note>
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-29T10:27:58.738Z" status="approved" who="#lfoppiano">
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-29T10:28:11.320Z" status="approved" who="#lfoppiano">
+      <desc>Double-checked</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> For the division of roles between EU and national courts based on a number of principles, including effective judicial<lb/> protection, and for further references see M. Eliantonio and T. Palonnitty 'The EU requirements for the standards of<lb/> review and for the duty of national courts to access scientific knowledge in environmental litigation: a story of moving<lb/> targets and vague guidance' in this same issue, p. 1 f.<lb/> </bibl>
+      <bibl><label>2</label> See generally M. Protto, 'Giurisdizione in generale' R. Caranta (dir.), Il nuovo processo amministrativo (Zanichelli,<lb/> 2011) pp. 113-172.<lb/> </bibl>
+      <bibl><label>3</label> Full text of all the judgments is available at www.giustizia-amministrativa.it (in Italian); the search engine is not very<lb/> good and a number of pay-for-access websites where judgments are indexed are normally used. It is to be noted that in<lb/> Italy cases are not referred to by the names of the parties; more bureaucratically, the sequence 'court, date, number' is<lb/> used; references in this contribution will conform to the national pattern.<lb/> </bibl>
+      <bibl><label>4</label> Further, if not fully updated, information may be found in the Italian report on the experience gained in the application<lb/> of<lb/> Directive<lb/> 2004/35/EC<lb/> Ares(2013)2770018<lb/> -<lb/>29.07.2013,<lb/> available<lb/> at:<lb/> http://ec.europa.eu/environment/legal/liability/pdf/eld_ms_reports/IT.pdf , p. 45 ff; </bibl>
+      <bibl>see also the EFFACE report on<lb/> Fighting<lb/> Environmental<lb/> Crime<lb/> in<lb/> Italy:<lb/> A<lb/> Country<lb/> Report<lb/> available<lb/> at<lb/> http://efface.eu/sites/default/files/EFFACE_Fighting%20Environmental%20Crime%20in%20Italy.pdf .<lb/> </bibl>
+      
+      <bibl><label>5</label> Cass. civ., Sez. Unite, 21 May 2014, n° 11229, Foro ital., 2015, I, 2481.<lb/> </bibl>
+      <bibl><label>6</label> See the detailed analysis by M. Eliantonio and T. Palonnitty 'The EU requirements for the standards of review and for<lb/> the duty of national courts to access scientific knowledge in environmental litigation: a story of moving targets and vague<lb/> guidance' above fn 1.<lb/> </bibl>
+      <bibl><label>7</label> For further analysis please refer to R. Caranta, 'Administrative Appeals in Italy', in J-B. Auby and T. Perroud (eds.),<lb/> Droit comparé de la procédure administrative. Comparative Law of Administrative Procedure (Bruylant, 2016) pp. 806<lb/> ff.<lb/> </bibl>
+      
+      <bibl><label>8</label> This was again consistent with the French model: M. Fromont, Droit administrative des Etats européens (PUF, 2006)<lb/> </bibl>
+      <bibl><label>9</label> See, also for references to the Italian legal literature M. Eliantonio, Europeanisation of Administrative Justice? (Europa<lb/> Law Publishing, 2008) p. 184.<lb/> </bibl>
+      <bibl><label>10</label> R. Caranta, 'On Discretion' in S. Prechal -B. van Roermund (eds), The Coherence of EU Law (Cambridge University<lb/> Press, 2008) pp. 191 ff.<lb/> </bibl>
+      <bibl><label>11</label> M. Eliantonio, Europeanisation of Administrative Justice? above fn 9, at p. 185; </bibl>
+      <bibl>see also A. Comino 'The Application<lb/> of the Aarhus Convention in Italy' in R. Caranta, A. Gerbrandy, B. Müller (eds), The Making of a New Legal Culture:<lb/> the Aarhus Convention (Europa Law Publishing, 2018) p. 176 f.<lb/> </bibl>
+      <bibl><label>12</label> E.g. T.A.R. Sicilia, Palermo Sec. I, 12 December 2011, n° 2333.<lb/> </bibl>
+      
+      <bibl><label>13</label> See also M. Eliantonio, Europeanisation of Administrative Justice? above fn 9, pp. 183 f.<lb/> </bibl>
+      <bibl><label>14</label> Ibid, p. 186.<lb/> </bibl>
+      <bibl><label>15</label> Ibid, pp. 181 ff.<lb/> </bibl>
+      <bibl><label>16</label> This influence is analysed by M. Eliantonio, Europeanisation of Administrative Justice? above fn 9, pp. 190 ff.<lb/></bibl>
+      <bibl><label>17</label> Ibid., p 190.<lb/> </bibl>
+      
+      <bibl><label>18</label> Cons. Stato, Sec. VI, 9 April 1999, n° 601<lb/> </bibl>
+      <bibl><label>19</label> The leading case is Cons. Stato, Sec. VI, 23 April 2002, n° 2199, Foro amm. CdS, 2002, 1007, note N. Rangone 'Intese<lb/> nel mercato assicurativo e sindacabilità dei provvedimenti antitrust', and Giur. comm. 2003, II, 170, note R. Caranta 'I<lb/> limiti del sindacato del giudice amministrativo sui provvedimenti dell'Autorità garante della concorrenza e del mercato'.<lb/> </bibl>
+      <bibl><label>20</label> M. Eliantonio, Europeanisation of Administrative Justice? above fn 9, pp. 190 f.<lb/> </bibl>
+      <bibl><label>21</label> For further discussion see M. Eliantonio, Europeanisation of Administrative Justice? above fn 9, pp. 190 ff.; </bibl>
+      <bibl>R. Caranta<lb/> and B. Marchetti, 'Judicial Review of Regulatory Decisions in Italy; Changing the Formula and Keeping the Substance?'<lb/> in O. Essens, A. Gerbrandy and S. Lavrijssen (eds.) National Courts and the Standard of Review in Competition Law and<lb/> Economic Regulation (Europa Law Publishing, 2009), 145-171, at 150 ff.<lb/> </bibl>
+      <bibl><label>22</label> Cons. Stato, Sec. VI, 13 September 2012, n° 4873; </bibl>
+      <bibl>Cons. Stato, Sez. VI, 7 November 2005, n° 6152.<lb/> </bibl>
+      <bibl><label>23</label> E.g. Cons. Stato, Sec. VI, 24 November 2015, n° 5327; </bibl>
+      <bibl>Cons. Stato, Sec. VI, 14 October 2015, n° 4747; </bibl>
+      <bibl>Cons. Stato,<lb/> Sec. V, 13 September 2012, n. 4873; </bibl>
+      <bibl>Cons. Stato, Sec. VI, 12 October 2011, n. 5519.<lb/> </bibl>
+      <bibl><label>24</label> V. Cerulli Irelli, Lineamenti di diritto amministrativo 5th (Giappichelli, 2016) 298 f.<lb/> </bibl>
+      
+      <bibl><label>25</label> Economics was brilliantly analysed with reference to philosophy of science by D.M. Hausmann, The inexact and<lb/> separate science of economics (Cambridge, 1992) spec. 152 ff.<lb/> </bibl>
+      <bibl><label>26</label> E.g. Cons. Stato, Sec. VI, 14 October 2015, n° 4747.<lb/> </bibl>
+      <bibl><label>27</label> Case C-12/03, Commission v. Tetra Laval ECLI:EU:C:2005:87, paragraph 38.<lb/><lb/> </bibl> 
+      <bibl><label>28</label> Paragraph 39.</bibl>
+      
+      <bibl><label>29</label> See for instance J. Mendes, 'Discretion, care and public interests in the EU administration: Probing the limits of law'<lb/> [2016] 53 Common Market Law Review, 427 ff; </bibl>
+      <bibl>A. Fritzsche, 'Discretion, Scope of Judicial Review and Institutional<lb/> Balance in European Law' [2010] 47 Common Market Law Review, 380; </bibl>
+      <bibl>M.F. Bay and J. Ruiz Calzado, 'Tetra Laval II:<lb/> the Coming of Age of the Judicial Review of Merger Decisions' [2005] 28 World Competition 437 ff; </bibl>
+      <bibl>for a well articulated<lb/> analysis of the different evaluation/assessment steps involved in a merger decision see A. Gerbrandy, Prospective<lb/> Analysis and Establishing Substantive truth in Review of Merger Decisions in Court' [2014] Netherlands Administrative<lb/> Law Library 8 ff and 13 (also available at http://www.nall.nl/tijdschrift/nall/2014/02/NALL-D-14-00001 ).<lb/> </bibl>
+      <bibl><label>30</label> See the analysis by M. Eliantonio and T. Palonnitty 'The EU requirements for the standards of review and for the duty<lb/> of national courts to access scientific knowledge in environmental litigation: a story of moving targets and vague guidance'<lb/> above fn 10 f.<lb/> </bibl>
+      <bibl><label>31</label> A. Gerbrandy, Prospective Analysis and Establishing Substantive truth in Review of Merger Decisions in Court' above<lb/> fn, p. 3.<lb/> </bibl>
+      <bibl><label>32</label> See also A. Lamorgese, La giurisdizione contesa. Cittadini e pubblica amministrazione (Giappichelli, 2014) 18.<lb/> </bibl>
+      <bibl><label>33</label> See also A. Sandulli, 'The Use of Comparative Law before the Italian Public Law Courts', in M. Andenas -D.<lb/> Fairgrieve (eds.), Courts and Comparative law (Oxford University Press, 2015) 266-278, at 274 f.<lb/> </bibl>
+      
+      <bibl><label>34</label> See R. Caranta and B. Marchetti, 'Judicial Review of Regulatory Decisions in Italy; Changing the Formula and Keeping<lb/> the Substance?' in O. Essens, A. Gerbrandy and S. Lavrijssen (eds.) National Courts and the Standard of Review in<lb/> Competition Law and Economic Regulation above fn 18, 145-171, spec. at 159 ff, where the cases are analysed.<lb/> </bibl>
+      
+      <bibl><label>35</label> T.A.R. Toscana, Sec. II, 19 May 2010, n° 1524.<lb/> </bibl>
+      <bibl><label>36</label> T.A.R. Lombardia, Brescia Sec. II, 18 March 2011, n° 440; </bibl>
+      <bibl>see also T.A.R. Lombardia, Brescia Sec. II, 2 February<lb/> 2011, n° 224, where the court held that the municipality was justified in considering unacceptable from an aesthetic point<lb/> of view a plastic fence in a wooded area; pictures are however not referred to in this latter case.<lb/> </bibl>
+      <bibl><label>37</label> M. Eliantonio, Europeanisation of Administrative Justice? above fn 9, p. 191<lb/> </bibl>
+      
+      <bibl><label>38</label> Legislation later consolidated in the Code now in force is analysed by M. Eliantonio, Europeanisation of Administrative<lb/> Justice? above fn 7, pp. 194 f; </bibl>
+      <bibl>see also See the analysis by M. Eliantonio and T. Palonnitty 'The EU requirements for the<lb/> standards of review and for the duty of national courts to access scientific knowledge in environmental litigation: a story<lb/> of moving targets and vague guidance' above fn 1, p. 20 ff.<lb/> </bibl>
+      <bibl><label>39</label> Ibid, pp. 186.<lb/> </bibl>
+      <bibl><label>40</label> See generally P. Chirulli, 'Istruttoria' in R. Caranta (dir.), Il nuovo processo amministrativo above fn 1, 521-572.<lb/> </bibl>
+      
+      <bibl><label>41</label> Cons. Stato, Sec. V, 7 June 2016, n° 2433; </bibl>
+      <bibl>Cons. Stato Sez. VI, 12 November 2014, n° 5552.<lb/> </bibl>
+      <bibl><label>42</label> See e.g. Cons. Stato, Sec. VI, 17 January 2017, n° 175; </bibl>
+      <bibl>breach of those safeguards will lead to the judgment being<lb/> quashed in appeal: Cons. Stato, Sec. V, 26 November 2013, n° 5610.<lb/> </bibl>
+      
+      <bibl><label>43</label> T.A.R. Piemonte, Sec. II, 17 April 2017, n° 611; see also, concerning the measurement of noise levels, T.A.R. Sicilia,<lb/> Palermo Sec. I, 12 December 2011, n° 2333.<lb/> </bibl>
+      <bibl><label>44</label> The difference between types of discretion is highlighted in M. Eliantonio and T. Palonnitty 'The EU requirements for<lb/> the standards of review and for the duty of national courts to access scientific knowledge in environmental litigation: a<lb/> story of moving targets and vague guidance' above fn 1, p. 3 f: </bibl>
+      <bibl>see also above, § 2.<lb/> </bibl>
+      
+      <bibl><label>45</label> R. Cross and J.W. Harris, 'Precedent in English Law (4 th edn., Clarendon Pres, 1991) p. 3.<lb/></bibl> 
+      <bibl><label>46</label> Ibid, p. 6; the authors discuss at length the distinction in Ch. 2.<lb/></bibl> 
+      <bibl><label>47</label> Simon Whittaker, 'Precedent in English Law: A View from the Citadel' [2006] Eur. Rev. Priv. Law 705, p. 718.<lb/> </bibl>
+      <bibl><label>48</label> Ibid.; </bibl>
+      <bibl>see also R. Cross and J.W. Harris, 'Precedent in English Law above fn, p. 43 f.<lb/> </bibl>
+      <bibl><label>49</label> Simon Whittaker, 'Precedent in English Law: A View from the Citadel' above fn 39, p. 720.<lb/> </bibl>
+      <bibl><label>50</label> Michael L. Wells, 'A Common Lawyer's Perspective on the European Perspective on Punitive Damages' [2010] 70<lb/> Louisiana Law Rev. 557, 560; </bibl>
+      <bibl>see also Simon Whittaker, ' Precedent in English Law: A View from the Citadel' [2006]<lb/>  Eur. Rev. Priv. Law 705, 711 f; </bibl>
+      <bibl>for a more qualified approach see however Rupert Cross and J.W. Harris, Precedent in<lb/> English Law (4 th edn., Clarendon Pres, 1991) p. 14 f.<lb/> </bibl>
+      <bibl><label>51</label> Concerning the Consiglio di Stato see Art. 99 of d.lgs. of 2 July 2010, n° 104 (the Code of judicial administrative<lb/> procedure); </bibl>
+      <bibl>see G. Corso, 'L'Adunanza plenaria e la funzione nomofilattica' (2014) Rassegna forense, 633-640.<lb/> </bibl>
+      
+      <bibl><label>52</label> See M. Sinisi, Il giusto processo amministrativo tra esigenze di celerità e garanzie di effettività della tutela<lb/> (Giappichelli, 2017) spec. pp. 288 ff.<lb/> </bibl>
+      <bibl><label>53</label> Which of course should not be the case: M. Ramajoli, 'La tipologia delle sentenze del giudice amministrativo' in R.<lb/> Caranta (dir.), Il nuovo processo amministrativo, above fn 1, 595-629, at p. 627.<lb/> </bibl>
+      <bibl><label>54</label> Cons. Stato Sec. V, 17 October 2012, n° 5294.<lb/> </bibl>
+      <bibl><label>55</label> Eg Cons. Stato Sec. VI, 22 February 2007, n° 933; </bibl>
+      <bibl>see A. Comino 'The Application of the Aarhus Convention in Italy'<lb/> above fn, 177.<lb/> </bibl>
+      <bibl><label>56</label> Cons. Stato, Sec. V, 2 October 2014, n° 4928.<lb/> </bibl>
+      
+      <bibl><label>57</label> Which is codified in Art. 16 of Directive 2008/98/EC on waste and repealing certain Directives (the so-called Waste<lb/> Framework Directive).<lb/> </bibl>
+      <bibl><label>58</label> See sect. 1 of the judgment.<lb/> </bibl>
+      <bibl><label>59</label> Ibid, sect. 7.1.<lb/> </bibl>
+      <bibl><label>60</label> Ibid.; see also sect. 7.2.3.<lb/> </bibl>
+      <bibl><label>61</label> Ibid, sect. 7.2.1.1.<lb/> </bibl>
+      
+      <bibl><label>62</label> Ibid, sect. 7.2.2.<lb/> </bibl>
+      <bibl><label>63</label> Sect. 7.2.3.<lb/> </bibl>
+      <bibl><label>64</label> See, also for a comparison of the standards laid down in Art. 9(29 and 9(3) of the Aarhus Convention, M. Eliantonio<lb/> and T. Palonnitty 'The EU requirements for the standards of review and for the duty of national courts to access scientific<lb/> knowledge in environmental litigation: a story of moving targets and vague guidance' above fn 10 ff,<lb/> </bibl>
+      <bibl><label>65</label> C(2017) 2016 final, paragraph 139.<lb/> </bibl>
+      
+      <bibl><label>66</label> See again T.A.R. Lombardia, Brescia Sec. II, 18 March 2011, n° 440, which was briefly discussed above.<lb/> </bibl>
+      <bibl><label>67</label> E.g. Case C-164/09, Commission v. Italy, ECLI:EU:C:2010:672.<lb/> </bibl>
+      <bibl><label>68</label> TA.R. Lombardia, Brescia Sec. II, 9 April 2010, n° 1532.<lb/></bibl> 
+      
+      <bibl><label>69</label> Ibid, sect. 3.<lb/></bibl> 
+      <bibl><label>70</label> Ibid, sect. 4.<lb/></bibl> 
+      <bibl><label>71</label> TA.R. Lombardia, Brescia Sec. II, 9 Apr 2010, n° 1532, sect 12 f.<lb/> <lb/> witness. It is to be noted that the experts named by the province had not challenged the findings by the expert named by<lb/> the court on this point.<lb/> </bibl>
+      <bibl><label>72</label> Ibid, sect. 14 ff, and specifically sect. 20 concerning the information derived from the report established by the expert</bibl>
+      <bibl><label>73</label> Ibid, sect. 22 ff.<lb/> </bibl>
+      <bibl><label>74</label> T.A.R. Lombardia, Brescia Sec. II, 9 Apr 2010, n° 1532, sect. 26.<lb/></bibl> 
+      <bibl><label>75</label> Ibid, sect. 5 and 6.<lb/></bibl> 
+      <bibl><label>76</label> A.D. Nagy 'The Aarhus-Acquis in the EU. Developments in the Dynamics of Implementing the Three Pillars Structure'<lb/> in R. Caranta, A. Gerbrandy, B. Müller (eds), The Making of a New Legal Culture: the Aarhus Convention above fn, p.<lb/> 47 ff,<lb/> </bibl>
+      <bibl><label>77</label> T.A.R. Toscana, Sec. II, 6 July 2010, n° 2316.<lb/> </bibl>
+      <bibl><label>78</label> T.A.R. Toscana, Sec. II, 19 May 2010, n° 1524.<lb/> </bibl>
+      <bibl><label>79</label> T.A.R. Toscana, Sec. II, 6 July 2010, n° 2316; here (again) the order included remedial measures for pollution which<lb/> was not attributable to its addressee.<lb/> </bibl>
+      <bibl><label>80</label> T.A.R. Puglia, Lecce Sec. I, 5 September 2014, n° 2304, sect. 3.1; </bibl><bibl>see also, between the same parties, T.A.R. Puglia,<lb/> Lecce Sec. I, 5 September 2014, n° 2305.<lb/> </bibl>
+      <bibl><label>81</label> T.A.R. Puglia, Lecce Sec. I, 5 September 2014, n° 2304, sect. 3.2.<lb/> </bibl>
+      <bibl><label>82</label> T.AR. Lazio, Sec. III Quater, 26 January 2016, n° 7528.<lb/> </bibl>
+      <bibl><label>83</label> Cons. Stato, Sec. VI, 4 November 2013, n° 5293, sect. 2.<lb/> </bibl>
+      <bibl><label>84</label> T.A.R. Lombardia, Brescia Sec. II, 18 March 2011, n° 440; </bibl>
+      <bibl>see also T.A.R. Lombardia, Brescia Sec. II, 2 February<lb/> 2011, n° 224, where the court held that the municipality was justified in considering unacceptable from an aesthetic point<lb/> of view a plastic fence in a wooded area; pictures are however not referred to in this latter case.<lb/> </bibl>
+      <bibl><label>85</label> Cons. Stato, Sec. VI, 4 November 2013, n° 5293, sect. 2.<lb/> </bibl>
+      <bibl><label>86</label> See A.D. Nagy 'The Aarhus-Acquis in the EU. Developments in the Dynamics of Implementing the Three Pillars<lb/> Structure' above fn, p. 47 ff.<lb/> </bibl>
+      <bibl><label>87</label> T.A.R. Campania, Sec. IV, 7 December 2016, n° 5708, sect. 8.5.<lb/> </bibl>
+      <bibl><label>88</label> This seems to be a quite general pattern in Europe: see D.C. Dragos and B. Neamtu 'Access to justice under the<lb/> Aarhus Convention: the Comparative View' in R. Caranta, A. Gerbrandy, B. Müller (eds), The Making of a New Legal<lb/> Culture: the Aarhus Convention above fn, p. 390.<lb/> </bibl>
+      <bibl><label>89</label> Eg T.A.R. Puglia, Lecce Sez. I, 5 September 2014, n° 2304, discussed above.<lb/> </bibl>
+      <bibl><label>90</label> See, also for further references, B. Marchetti, 'Il giudice amministrativo tra tutela soggettiva e oggettiva: riflessioni di<lb/> diritto comparato' in Diritto processuale amministrativo 2014, 2014, p. 74<lb/> </bibl>
+      <bibl><label>91</label> TA.R. Lombardia, Brescia Sez. II, 9 April 2010, n° 1532.<lb/> </bibl>
+      <bibl><label>92</label> E.g. Case C-71/14, East Sussex County Council, ECLI:EU:C:2015:656;</bibl> 
+      <bibl>Case C-120/97, Upjohn, EU:C:1999:14<lb/> </bibl> 
+      <bibl><label>93</label> C(2017) 2016 final, paragraph 139.<lb/> </bibl>
+      <bibl><label>94</label> See the analysis by M. Eliantonio and T. Palonnitty 'The EU requirements for the standards of review and for the duty<lb/> of national courts to access scientific knowledge in environmental litigation: a story of moving targets and vague guidance'<lb/> above fn, 18 f.<lb/> </bibl>
+      <bibl><label>95</label> See, also for a comparison between the standards laid down respectively in Art. 9(2) and 9(3) of the Aarhus Convention,<lb/> M. Eliantonio and T. Palonnitty 'The EU requirements for the standards of review and for the duty of national courts to<lb/> access scientific knowledge in environmental litigation: a story of moving targets and vague guidance' above fn, 10 ff,</bibl>
+    </listBibl>
+  </text>
+</TEI>

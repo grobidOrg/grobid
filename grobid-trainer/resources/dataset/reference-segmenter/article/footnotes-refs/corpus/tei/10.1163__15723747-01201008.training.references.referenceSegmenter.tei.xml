@@ -1,0 +1,338 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!-- corrects misclassification of styles that put issue number in front of journal name, such as "S. Charnovitz, 'Two Centuries of Participation: NGOs and<lb/> International Governance' (1997) 18 Michigan Journal of International Law, pp.183, 216 and 283" and of page numbers as footnote numbers -->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1163__15723747-01201008">
+    <titleStmt>
+      <title level="a">A Challenging Ménage à Trois?</title>
+      <author>
+        <persName>
+          <forename>Claire</forename>
+          <surname>La Hovary</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Walter de Gruyter GmbH</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2015</date>
+      <idno type="DOI">10.1163/15723747-01201008</idno>
+      <ptr target="https://doi.org/10.1163/15723747-01201008"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Claire La Hovary. (2015). A Challenging Ménage à Trois?. International Organizations Law Review, 12(1), 204-236. DOI: 10.1163/15723747-01201008</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">A Challenging Ménage à Trois?</title>
+          <author>
+            <persName>
+              <forename>Claire</forename>
+              <surname>La Hovary</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">International Organizations Law Review</title>
+          <imprint>
+            <biblScope unit="volume">12</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page" from="204" to="236">204-236</biblScope>
+            <date when="2015">2015</date>
+            <publisher>Walter de Gruyter GmbH</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.1163/15723747-01201008</idno>
+        <ptr target="https://doi.org/10.1163/15723747-01201008"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-01T16:18:58.294992Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-65-gd393236aa</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-01T16:18:58.294992Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-01T16:27:39.755Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-02T10:23:23.063Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-18T13:54:28.449Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-18T14:31:18.745Z" status="unfinished" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-18T14:34:25.920Z" status="unfinished" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-18T16:09:33.989Z" status="checked" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> See F. Maupain, The future of the International Labour Organization in the Global Economy (Hart, Oxford,<lb/> 2013). </bibl>
+    
+      <bibl><label>3</label> F. Maupain, 'L'OIT, la justice sociale et la mondialisation' (1999) 278 Collected Courses of The Hague<lb/> Academy of International Law, p. 331.<lb/> </bibl>
+      <bibl><label>4</label> NGOs have certainly been involved in international governance for quite some time but the ILO has been<lb/> deemed to be "the most daring of all international organisations in its approach to NGO participation" and its<lb/> form of governance is unlikely to be replicated (S. Charnovitz, 'Two Centuries of Participation: NGOs and<lb/> International Governance' (1997) 18 Michigan Journal of International Law, pp.183, 216 and 283).<lb/> International organisations with governmental and NGO members include the IUCN/World Conservation<lb/> Union, the World Tourism Organization (UNWTO) and the Arctic Council.<lb/> </bibl>
+      <bibl><label>5</label> ILO, Declaration on Social Justice for a Fair Globalisation (2008).<lb/> </bibl>
+      <bibl><label>6</label> Charnovitz, supra note 4, p. 216.<lb/> </bibl>
+      <bibl><label>7</label> ILO, Resolution concerning the Strengthening of Tripartism in the Over-all Activities of the International<lb/> Labour Organisation (1971). </bibl>
+      <bibl>Certainly, as Chinkin and Boyle remark, the ILO's structure is so unique that it<lb/> "makes it difficult to derive wider lessons about its significance for the institutional process of international law-<lb/>making in general" (C. Chinkin and A. Boyle, The Making of International Law (OUP, Oxford, 2007) p. 157).<lb/> </bibl>
+      <bibl><label>8</label> W.R. Simpson, 'The ILO and Tripartism: Some Reflections' (1994) 117 Monthly Labor Review, p. 41.<lb/> </bibl>
+      <bibl><label>9</label> C.W. Jenks, The international Protection of Trade Union Freedom (Stevens &amp; Sons, 1970) p. 513; </bibl>
+      <bibl>Maupain,<lb/> supra note 1, p.3 -</bibl><bibl>also ILO, 1971 resolution, preamble, supra note 7.<lb/> </bibl>
+      
+      <bibl><label>10</label> N. Valticos and G.W. Von Potobsky, International Labour Law (Kluwer, Deventer, 1995) p. 35. </bibl>
+      <bibl>Also, Jenks,<lb/> supra note 9, p. 513.<lb/> </bibl>
+      <bibl><label>11</label> Supra note 1, p. 7. What is 'legitimate' is of course very subjective.<lb/> </bibl>
+      <bibl><label>12</label> As has the concept of tripartism; we will not explore this line of criticism here.<lb/> </bibl>
+      <bibl><label>13</label> G. Standing, 'The ILO: An Agency for Globalization?' (2008) 39 Development and Change, pp. 379-80.<lb/> </bibl>
+      <bibl>These debates are by no means new, however. For example, in 1959, Béguin was already writing that<lb/> "[w]hether or not tripartism still has a contribution to make in enabling the Organisation to "work more<lb/> effectively" on its future tasks, and whether new interpretations can be given to this form of collaboration are<lb/> the questions that face [the] ILO as it enters its fifth decade" (B. Béguin, ILO and the tripartite system (Carnegie<lb/> Endowment for International Peace,1959) p. 33).<lb/> </bibl>
+      <bibl><label>14</label> A. Peters, 'Dual Democracy', in J. Klabbers, A. Peters, and G. Ulfstein, The Constitutionalization of<lb/> International Law (OUP, Oxford, 2009) p.321. </bibl>
+      <bibl>Not all conventions have low ratification rates however, and this<lb/> has probably more to do with the controversies concerning the subject matter of ILS than the tripartite nature of<lb/> the ILO itself. As Langille notes for example, "the ILO is centred upon the most sensitive political nerve of all<lb/> modern societies -the relationship of markets and politics and the questions of both the virtues and limits of<lb/> markets. In the ILO this general question is focused upon the most central and most difficult of all markets -the<lb/> labour market -a market in people, not commodities" (B. Langille, 'The ILO and the New Economy: New<lb/> Developments' (1999) 15 International Journal of Comparative Labour Law and Industrial Relations, p. 234).<lb/> Together with the controversy originating from dominant economic thinking surrounding the desirability of<lb/> regulating labour issues, this makes law-making in this field particularly difficult.<lb/> </bibl>
+      <bibl><label>15</label> J. Klabbers, 'Marginalised International Organizations: Three Hypotheses Concerning the ILO' in R.<lb/> Blanpain, U. Liukkunen and C. Yifeng, China and ILO Fundamental Principles and Rights at Work (Kluwer,<lb/> The Hague, 2014) p. 185.<lb/> </bibl>
+      <bibl><label>16</label> Supra note 3, p. 336.<lb/> </bibl>
+      <bibl><label>17</label> This issue of widening representation was already considered in the 1920s when Albert Thomas attempted to<lb/> give a formal role to cooperatives (M Louis, 'Syndicats contre coopératives? L'OIT et la représentation des<lb/> acteurs de la société civile' (2013) 154 Relations internationales p. 25). See also the successive failed attempts<lb/> by Director-Generals to include broader actors (see below).<lb/> </bibl>
+      
+      <bibl><label>18</label> A. Trebilcock, 'Putting the record straight about international labor standard setting' (2010) 31 Comparative<lb/> labor law and policy journal pp. 566-567.<lb/> </bibl>
+      <bibl><label>19</label> The ILO and tripartism are rarely mentioned in any depth, even in studies concerning non-state actors and<lb/> international law (e.g. J. D'Aspremont (ed.) Participants in the International Legal System -Multiple<lb/> perspectives on non-state actors in international law (Routledge, London, 2011); </bibl>
+      <bibl>A Peters et al., Non-State<lb/> Actors as Standard Setters (CUP, Cambridge, 2009). </bibl>
+      <bibl>See however, G. Nolte and S. Lagodinsky, 'The Role of<lb/> Non-Governmental Organizations in the International Labor Organization', in E. Benvenisti and G. Nolte (eds.)<lb/> The Welfare State, Globalization, and International Law (Springer, 2004). Some have compared ILO's<lb/> tripartism with the EU's social dialogue however (e.g. F. Milman-Sivan 'Representativity, Civil Society, and the<lb/> EU Social Dialogue: Lessons from the International Labour Organization' (2009) 16 Indiana Journal of Global<lb/> Legal Studies;</bibl>
+      <bibl>T. Novitz and P. Sypris 'Assessing Legitimate Structures for the Making of Transnational Labour<lb/> Law: The Durability of Corporatism' (2006) 35 Industrial Law Journal, pp. 367-394). </bibl>
+      
+      <bibl><label>21</label> J. Van Daele, 'Engineering Social Peace, Peace: Networks, Ideas, and the Founding of the International<lb/> Labour Organization' (2005) 50 International Review of Social History p. 466. Tripartism existed only in<lb/> England and France (T. Landelius, Workers, Employers and Governments: A Comparative Study of Delegations<lb/> and Groups at the International Labour Conference, 1919-1964 (Norstedt &amp; Söner, 1965) p. 21). More<lb/> generally, tripartism is attributed to Phelan, who believed that only an organisation which had the backing of all<lb/> interested parties would deliver results (ILO, Edward Phelan and the ILO (ILO, Geneva, 2009) pp.18 and 141).<lb/> </bibl>
+      <bibl>On the history of tripartism, see A.K. Tikriti, Tripartism and the International Labour Organisation -A Study<lb/> of the Legal Concept: Its origins, Function and Evolution in the Law of Nations (Almqvist and Wiksell,<lb/> Stockholm, 1982), pp.16-125 and 334-337.<lb/> </bibl>
+      <bibl><label>22</label> Béguin, supra note 13, p. 5.<lb/> </bibl>
+      <bibl><label>23</label> D. Maul, Human Rights, Development and Decolonization: The International Labour Organization, 1940-70<lb/> (Palgrave and ILO, Geneva, 2012) p. 2. Also B. Cabanes, The Great War and the Origins of Humanitarianism -<lb/>1918-1924 (CUP, Cambridge, 2014) p. 79; </bibl>
+      <bibl>and R.W. Cox, 'ILO: A Limited Monarchy', in R.W. Cox and H.K.<lb/> Jacobson (eds.) Anatomy of influence; </bibl>
+      <bibl>decision making in international organization (Yale University Press,<lb/> Yale and London, 1973), p. 102.<lb/> </bibl>
+      <bibl><label>24</label> L. Helfer, 'Understanding Change in International Organizations: Globalization and Innovation in the ILO'<lb/> 2006 Vanderbilt Law Review p. 679, referring to Robert Cox (supra note 23, p. 102). </bibl>
+      <bibl>Also Béguin, supra note<lb/> 13, p. 6. As is well known, it is, with the help of visionaries, the combination of the industrial revolution in the<lb/> 19 th century -which had led to the proliferation of abysmal working conditions -the ravages of the First World<lb/> War and the rise of Bolshevism that led to the ILO's creation.<lb/> </bibl>
+      <bibl><label>25</label> ILO, Committee on Freedom of Employers' and Workers' Organisations, GB.131/7/8, 1956, para. 9.<lb/> </bibl>
+      
+      <bibl><label>26</label> Ibid.<lb/> </bibl>
+      <bibl><label>27</label> Ten of these are "States of chief industrial importance" which are automatically Governing Body members<lb/> Art 7(1) -currently Brazil, China, France, Germany, India, Italy, Japan, the Russian Federation, the United<lb/> Kingdom and the United States. An amendment adopted by the ILC in 1986 abolishing this stipulation has not<lb/> received the necessary ratifications to come into force.<lb/> </bibl>
+      <bibl><label>28</label> Section 1.1.1, Standing Orders of the Governing Body. There are also 66 deputy members (28 Government<lb/> members, 19 Employers members and 19 Workers members).<lb/> </bibl>
+      <bibl><label>29</label> Jenks, supra note 9, p. 70. </bibl>
+     
+      <bibl><label>31</label> For a full list of duties, see ILO, Compendium of rules applicable to the Governing Body of the International<lb/> Labour Office (ILO, Geneva, 2011), paras. 5-6.<lb/> </bibl>
+      <bibl><label>32</label> 'Consensus' in the Governing Body means an "established practice under which every effort is made to reach<lb/> without vote an agreement that is generally accepted" (ibid, para.46). </bibl>
+      
+      <bibl><label>34</label> Section 4.2.3, Standing Orders of the Governing Body. Such Committees, which used to be quite numerous,<lb/> have almost all been eliminated following reforms adopted in 2011 (see ILO GB.310/9/1, para.10 and<lb/> GB.310/PV, para.129) -</bibl>
+      <bibl>according to Diller, these reforms have been instigated by Governments who favoured<lb/> plenary decision-making since they have a greater voting power (J. Diller, 'Taking Account of Human Values in<lb/> the International Economic Legal Order: Law and the Legal Counsel of the International Labour Organisation',<lb/> in A. Qureshi (ed.) The Role and Contribution of Legal Counsels to the Development of International Economic<lb/> Law (Kluwer Law International, 2012).<lb/> </bibl>
+      <bibl><label>35</label> PCIJ, Designation of the Workers' Delegate for the Netherlands at the Third Session of the International<lb/> Labour Conference, Advisory Opinion, 31 July 1922, p. 19 (in particular, pp. 23 and 25).<lb/> </bibl>
+      <bibl><label>36</label> This Committee may, "by two-thirds of the votes cast by the delegates present, refuse to admit any delegate or<lb/> adviser whom it deems not to have been nominated in accordance with this article" (Article 3(9) Constitution).<lb/> </bibl>
+      <bibl><label>37</label> See information on the ILO website (http://www.ilo.org/dyn/creds/credsbrowse.home?p_lang=en). For more<lb/> details of the Credential Committee, see Diller, 2012, supra note 34. </bibl>
+      <bibl>For a historical perspective, see Van der<lb/> Kooy, 'What is the Substance of Tripartism in the ILO?' (1977) 8 Nehterlands. Yearbook of International Law<lb/> p. 3. </bibl>
+      <bibl>For a perspective on its changing role in light of recent amendments to its mandate, see F. Milman-Sivan,<lb/> 'Freedom of Association in Deliberative Spaces: the ILO Credentials Committee' in A. Blackett and A.<lb/> Trebilcock (eds.), Research Handbook on Transnational Labour Law (Edgar Elgar, forthcoming, 2015).<lb/> </bibl>
+      <bibl><label>38</label> In the ILO, the adoption of an instrument does not follow a period of 'negotiations' but rather, of<lb/> 'discussions' (Valticos and Von Potobsky, supra note 10, p. 50).<lb/> </bibl>
+      
+      <bibl><label>39</label> ILO, Second Report of the Credential Committee, 103rd Session, 2014 -as compared to 1746 in 1981.<lb/> </bibl>
+      <bibl type="footnote"><label>40</label> Indeed, as has been recognised by the ILO itself, social dialogue takes time and shortcuts are not desirable.<lb/> </bibl>
+      <bibl><label>41</label> There are two exceptions, the Finance Committee which is composed only of Governments, and the Selection<lb/> Committee. On votes at the ILC, see generally Tikriti, supra note 21, p. 156, and H.G. Bartolomei de la Cruz et<lb/> al., International Labor Organization: the international standards system and basic human rights (Westview,<lb/> 1996) p. 7.<lb/> </bibl>
+      <bibl><label>42</label> W. C. Jenks, 'The Significance for International Law of the Tripartite Character of the International Labour<lb/> Organisation' 22 Transactions of the Grotius Society (1936) pp. 45-81.<lb/> </bibl>
+      <bibl><label>43</label> Tikriti, supra note 21, p. 155. </bibl>
+      <bibl>This is still the case today. As Cox further points out, "[i]n ILO practice few<lb/> decisions occur as a result of one actor's making a proposal that is first debated, then accepted or rejected by the<lb/> other decision makers. The origin of most initiatives is very complex and rarely apparent from the public record.<lb/> A tradition of building consensus has been carefully cultivated, and the process consists of many initial informal<lb/> stages in the gathering of support for a new proposal. The informal network of influentials manages the process<lb/> of forming a consensus; and generally overexposure as an initiator breeds failure" (Cox, supra note 23, p. 127).<lb/> </bibl>
+      <bibl><label>44</label> Asia and Pacific (ASPAG), Africa, Latin American and Caribbean Group (GRULAC), and the industrialized<lb/> market economy countries (IMEC).<lb/> </bibl>
+      <bibl><label>45</label> Jenks, supra note 42, 46-47 and note 9, pp. 515-517 -this balances the fact that there are more Governments'<lb/> representatives.<lb/> </bibl>
+      
+      <bibl><label>46</label> See the works of Albert Thomas and Georges Scelle, cited in Maupain, supra note 3, p. 364. </bibl>
+      <bibl>Also, Jenks,<lb/> supra note 9, pp. 517-518<lb/> </bibl>
+      <bibl><label>47</label> Maupain, ibid., p. 366. </bibl><bibl>Thomas justified his role by arguing that the Organisation had been created "for the<lb/> workers and to improve their conditions" (E. Phelan, Yes and Albert Thomas (Columbia University Press, 1936)<lb/> 246).<lb/> </bibl>
+      <bibl><label>48</label> See Cox's account (supra note 23) and Jenks, supra note 9, pp. 517-518 -Jenks explains that it is precisely<lb/> because he was elected by the combined votes of Employers and Workers that Albert Thomas was able to act<lb/> the way he did.<lb/> </bibl>
+      <bibl><label>49</label> Helfer, supra note 24, pp. 681 et seq.<lb/> </bibl>
+      <bibl><label>50</label> Maupain, supra note 3, pp. 365-366. </bibl>
+      <bibl>The Office usually makes suggestions to add items on the agenda (E.<lb/> Hass, Beyond the Nation-State -Functionalism and International Organization (ECPR Press, 2008 -first<lb/> published in 1964) p. 213). The role that Phelan had in drafting the Declaration of Philadelphia, and the role that<lb/> Maupain had regarding the 1998 and 2008 Declarations are well known, for example.<lb/> </bibl>
+      <bibl><label>51</label> As Maupain states, the "tripartite compromise" or the "excess of tripartite zeal" of the Office raises the "risk<lb/> … that in anticipation of negative reaction from one group or another, certain topics might be given up<lb/> completely, or that controversial conclusions might be emasculated" (supra note 1, p. 122).<lb/> </bibl>
+      <bibl><label>52</label> See Standing, supra note 13, pp. 372-373 </bibl>
+      <bibl>and G. Rodgers, et al., The ILO and the quest for Social Justice<lb/> (ILO, 2009) p. 234. </bibl>
+      <bibl>The problems raised are not unique to the ILO, however, as is well highlighted by the fact<lb/> that the WHO's field offices in Africa have been starkly exposed not to be "staffed with the most capable people<lb/> but with political appointees" during the recent Ebola crisis -see<lb/> http://www.theguardian.com/world/2014/oct/04/ebola-zaire-peter-piot-outbreak.<lb/> </bibl>
+      
+      <bibl><label>53</label> See Maupain, supra note 3, pp. 365-66; </bibl>
+      <bibl>ILO, Rec. of Proc. No7, 2013, 7/2 (for the Employers' view).<lb/> Information also obtained from interviews.<lb/> </bibl>
+      <bibl><label>54</label> Many criticism of the ILO relating to the fact that its ILS are not relevant to current issues (e.g. Klabbers,<lb/> supra note 15, pp. 185-186 -who does admit that this is not true of all ILS) should take into account this<lb/> particular feature of tripartism which is both an obvious strength and weakness. </bibl>
+      
+      <bibl><label>56</label> This includes ratifications by Ireland which has ratified the MLC and Convention No.189, and Kenya and<lb/> Belize, which have ratified the MLC, but also Switzerland which has ratified Convention No. 183 on maternity<lb/> leave, or Mauritius, Convention No. 155. See latest ratifications in NORMLEX (ILO website).<lb/> </bibl>
+      <bibl><label>57</label> Article 14(1), Constitution, states that the agenda of the Conference is "settled by the Governing Body, which<lb/> shall consider any suggestion as to the agenda that may be made by the government of any of the Members or<lb/> by any representative [employers' or workers'] organization … or by any public international organization".<lb/> </bibl>
+      <bibl><label>58</label> See Articles 34 and 35, Standing Orders of the Conference, for complete details.<lb/> </bibl>
+      <bibl><label>59</label> A single-discussion procedure is also possible -Art 38, Standing Orders of the Conference; </bibl>
+      <bibl>see also ILO,<lb/> Handbook of procedures relating to international labour Conventions and Recommendations (ILO, Geneva,<lb/> 2012) para. 2.<lb/> </bibl>
+      
+      <bibl><label>60</label> These consultations were added to the Standing Orders in 1987 -they were recommended by art 2(f) of<lb/> resolution of 1971 and Convention No. 144 on Tripartite Consultation (International Labour Standards) of 1976<lb/> makes them compulsory (138 States had ratified this 'governance convention' in January 2015).<lb/> </bibl>
+      <bibl><label>61</label> The 1998 discussions, which dealt with the social clause, revealed North/South divisions. Only affirmative<lb/> and negative votes are included in the quorum (Art 20(1), Standing Orders of the Conference). The quorum was<lb/> not reached when a convention on fishers was put to the vote in 2005 -the Employers explained that they<lb/> abstained because they did not want the ILO to be a "graveyard of [unratified] standards" (ILO, Rec. of Proc.,<lb/> 2005, 25/3 and 25/24).<lb/> </bibl>
+      <bibl><label>62</label> An important exception to this is the discussion that took place in 1997 and 1998 in view of adopting an<lb/> instrument on the theme of contract labour (workers dependant on an employer but not defined as employees)<lb/> which was abandoned because of Employers' resistance or, in their own words, "implacable opposition to the<lb/> adoption of any instrument on the subject of contract labour" (ILO, Records of Proceedings (ILC 1998) 16/3).<lb/> </bibl>
+      <bibl><label>63</label> ILO, Rec of Proc, 1994, 28/20. </bibl>
+      <bibl>Convention No. 177 on Home Work similarly did not get the support of<lb/> employers, who in this case even withdrew from the discussions about the instrument (See L. Vosko, Standard<lb/> Setting at the International Labour Organization: the Case of Precarious Employment, in J.J. Kirton and M.J.<lb/> Trebilcock (eds), Hard Choices, Soft Law: Voluntary Standards in Global Trade, Environment and Social<lb/> Governance (Ashgate, 2004) p. 140).<lb/> </bibl>
+      <bibl><label>64</label> ILO, Record of Proceedings, 2006.<lb/> </bibl>
+      <bibl><label>65</label> ILO, Record of Proceedings, 2011, 30/42-47.<lb/> </bibl>
+      <bibl><label>66</label> Out of the 33 delegates who voted against the adoption of this Convention, 31 were Employers' delegates<lb/> (ILO, Record of Proceedings, 1951, 447).<lb/> </bibl>
+      
+      <bibl><label>67</label> The aim of this recommendation may not be to enhance the protection of workers' rights however -see La<lb/> Hovary, 'The ILO and the Informal Economy: A Legal Perspective' (2014) International Journal of<lb/> Comparative Labour Law and Industrial Relations.<lb/> </bibl>
+      <bibl><label>68</label> For example, Jenks, supra note 42; </bibl>
+      <bibl>Valticos and Von Potobsky, supra note 10, pp. 50-51.<lb/> </bibl>
+      <bibl><label>69</label> Although Article 5 of Convention No. 144 on Tripartite Consultations requires consultations with employers<lb/> and workers organisations at appropriate intervals in this regard.<lb/> </bibl>
+      <bibl><label>70</label> Jenks, supra note 42, pp. 58-61. This was established and communicated to member States in 1920. </bibl>
+      <bibl>See also<lb/> E. Osieke, Constitutional law and practice in the International Labour Organisation (Martinus Nijhoff,<lb/> Dordrecht, 1985) pp. 154-56; </bibl>
+      <bibl>and G Raimondi., 'Réserves et conventions internationales du travail' in J-C.<lb/> Javillier, B. Gernigon and G. Politakis (eds.), Les normes internationales du travail: un patrimoine pour<lb/> l'avenir -Mélanges en l'honneur de Nicolas Valticos (ILO, Geneva, 2004) pp. 531-33. Of course, ILS have<lb/> adapted as a result and most allow for flexibility (ibid., pp. 535-37).<lb/> </bibl>
+      <bibl><label>71</label> E.g. Convention No. 131 on Minimum Wage Fixing provides that the authorities shall determine the group of<lb/> wage earners covered "in agreement or after full consultation with the representative organisations of employers<lb/> and workers concerned" and shall create or maintain a minimum wage setting machinery in consultation with<lb/> these organisations, and, if appropriate, with their participation.<lb/> </bibl>
+      <bibl><label>72</label> The ILO supervisory system has been described extensively -see e.g., F. Maupain, 'The Settlement of<lb/> Disputes within the International Labour Office' (1999) 2 Journal of International Economic Law, pp. 273-93;<lb/> </bibl>
+      <bibl>J-M. Servais, International Labour Law (Kluwer Law International 2011); </bibl>
+      <bibl>N. Valticos, 'Once More about the<lb/> ILO System of Supervision: In What Way is it Still a Compliance Model?' in N. M. Blokker and S. Muller<lb/> (eds.), Towards More Effective Supervision by International Organizations: Essays in Honour of Henry G.<lb/> Schermers (Vol. I) (Martinus Nijhoff, Dordrecht, 1994).<lb/> </bibl>
+      
+      <bibl><label>73</label> ILO, CEACR 2014, General Report, para.86. </bibl>
+      <bibl>There has not necessarily been a corresponding increase in the<lb/> quality of these reports -something that can also be said of Government reports (B. Creighton 'The Future of<lb/> Labour Law: Is there a role for International Labour Standards?' in C. Barnard et al. (eds) The Future of Labour<lb/> Law (Hart, 2004) p. 262).<lb/> </bibl>
+      
+      <bibl><label>74</label> See F. Maupain 'The ILO Regular Supervisory System: A Model in Crisis?'(2013) 10:1, International<lb/> Organisations Law Review, pp. 117-175.<lb/> </bibl>
+      <bibl><label>75</label> W. Sengenberger, The International Labour Organization -Goals, Functions and Political Impact (Friedrich<lb/> Ebert Stiftung 2013) p. 60.<lb/> </bibl>
+      <bibl><label>76</label> This resulted in the refusal of the majority of the Employers' Group to elect representatives of the employers<lb/> of socialist countries to the Governing Body (V-Y. Ghebali, The International Labour Organisation: a case<lb/> study on the evolution of U.N. specialised agencies (Martinus Nijhoff, 1988) p. 28). </bibl>
+      <bibl>This was resolved by the<lb/> 'Ago formula' (see Haas, supra note 50, p. 215).<lb/> </bibl>
+      
+      <bibl><label>77</label> Maul, supra note 23 (in particular, pp. 278-85).<lb/> </bibl>
+      <bibl><label>78</label> For thorough survey of these issues, see Tikriti, supra note 21, pp. 339-346; </bibl>
+      <bibl>Maupain, supra note 3, pp. 333-<lb/>344.<lb/> </bibl>
+      <bibl><label>79</label> E.g. J-M Bonvin, L'Organisation internationale du Travail: étude sur une agence productrice de normes<lb/> (PUF, Paris, 1998) pp. 68-69. The role of the ILO is still very much seen in this way today. It should be recalled<lb/> that fundamental Convention No. 87 on Freedom of Association and the Right to Organise establishes that all<lb/> workers and employers shall have the right to establish and to join organisations of their choice.<lb/> </bibl>
+      <bibl><label>80</label> See e.g. Peters, supra note 14, for a discussion of democracy in international law.<lb/> </bibl>
+      <bibl><label>81</label> S. Charnovitz, 'Nongovernmental Organizations and International Law' (2006) 100 American Journal of<lb/> International law, p. 363.<lb/> </bibl>
+      <bibl><label>82</label> Maupain, supra note 1, p. 10. Generally, see B. Hepple, Labour Laws and Global Trade (Hart 2005) pp. 53-<lb/>54; </bibl>
+      <bibl>S Cooney, 'Testing Times for the ILO: Institutional Reform for the New International Political Economy',<lb/> Com Lab. L. &amp; Policy Journal, vol. 20, nº 3, 1999, pp. 370-373.<lb/> </bibl>
+      
+      <bibl><label>83</label> Although this critique concerns employers just as much, if not more, it is often only levelled against trade<lb/> unions (see Bhatt, 'A long was to go', in Visions of the Future of Social Justice, p.73; </bibl>
+      <bibl>J. Klabbers, supra note<lb/> 15, p. 185; </bibl>
+      <bibl>J. Combacau and S. Sur Droit international public (Montchrestien, 2012) p. 729). </bibl>
+      <bibl>Nolte and<lb/> Lagodinsky argue, rightly, that representation issues are particularly acute with regards to indigenous people, the<lb/> unemployed and migrant workers (Nolte and Lagodinsky, supra note 19, pp. 336-338).<lb/> </bibl>
+      <bibl><label>84</label> The PCIJ has specified in 1922 that a Workers' delegate represents all the workers in its Member State -the<lb/> same goes for Employers' delegates, who represent all employers (PCIJ, 1922, p. 23).<lb/> </bibl>
+      <bibl><label>85</label> Novitz and Syrpis, supra note 19, p. 375. The same is true of Employers.<lb/> </bibl>
+      <bibl><label>86</label> As Marks argues, "misery is planned insofar as it is informed by the logic of existing socio-economic<lb/> arrangements-arrangements which, importantly, are themselves historically contingent and hence alterable" (S.<lb/> Marks, 'Backlash: the undeclared war against human rights' (2014) 4 European Human Rights Law Review, pp.<lb/> 325-326).<lb/> </bibl>
+      <bibl><label>87</label> Supra note 3, p. 367<lb/> </bibl>
+      <bibl><label>88</label> Standing, supra note 13, p. 373. </bibl>
+      <bibl>Deborah France, presently Head of ACTEMP, explains that being dependant<lb/> on the ILO, the IOE was seen as irrelevant by many Employers' organisations and almost disappeared before it<lb/> decided to reform itself at the end of the 90s (D. France, 'Employers and the International Labour Organisation'<lb/> in R. Blanpain and C. Engels (eds.), The ILO and the Social Challenge of the 21st Century (Kluwer Law<lb/> International, The Hague, 2001) p. 62).<lb/> </bibl>
+      
+      <bibl><label>89</label> Standing, supra note 13, p. 379.<lb/> </bibl>
+      <bibl><label>90</label> Maupain, supra note 1, p. 10.<lb/> </bibl>
+      <bibl><label>91</label> See ILO, Director General Report, 2013, para.90.<lb/> </bibl>
+      <bibl><label>92</label> It is well understood here that the threat that these factors pose on labour rights, and more generally on human<lb/> rights, is partly due to the response that governments have to them (e.g. A Clapham, Human Rights Obligations<lb/> of Non-State Actors (OUP, Oxford, 2006) p. 5). </bibl>
+      
+      <bibl><label>94</label> Article 12(3) of the Constitution provides that the ILO "may make suitable arrangements for … consultations<lb/> … with recognised [NGOs]" (around 150 NGOs have been granted observer status and are on a 'special list' -<lb/>see Art 2(4), Standing Orders of the ILC and the special list: http://www.ilo.org/pardev/civil-society/ngos/ilo-<lb/>special-list-of-ngos/lang--en/index.htm -462 representatives of international NGOs (many of which were<lb/> workers or employers NGOs) were present at the 2014 ILC); </bibl>
+      <bibl>Art 18 of the Constitution provides for the<lb/> presence of technical advisors appointed by the ILC in ILC Committees, and Art 56(8) of the Standing Orders<lb/> of the ILC provides for their participation in debates, with permission. </bibl>
+      <bibl>See also Art 1.10, Standing Orders of the<lb/> Governing Body. As an example, associations of domestic workers were included in the debates preceding the<lb/> adoption of a Convention on the topic in 2011. Generally, many NGOs work with trade unions. So called 'non-<lb/>standard' workers are represented by the ITUC -the Self Employed Women's Association (SEWA), is a<lb/> member of the ITUC, for example.<lb/> </bibl>
+      
+      <bibl><label>95</label> E.g. Convention No. 159 on Vocational Rehabilitation and Employment (Art 5) and Recommendation No.<lb/> 200 on HIV/Aids.<lb/> </bibl>
+      <bibl><label>96</label> Albert Thomas attempted to give a formal role to cooperatives (Louis, supra note 17).<lb/> </bibl>
+      <bibl><label>97</label> ILO, 1994, p. 35.<lb/> </bibl>
+      <bibl><label>98</label> Maupain, supra note 3, p. 382<lb/> </bibl>
+      <bibl><label>99</label> See ILO, Director General Report, Decent Work, ILC, 97th session, 1999, p. 40.<lb/> </bibl>
+      <bibl><label>100</label> On this resolution, see in particular L. Baccaro and V. Mele 'Pathology of Path Dependency? The ILO and<lb/> the Challenge of New Governance' (2012) 65 Industrial and Labor Relations Review, pp. 207-210. </bibl>
+      <bibl>The efforts<lb/> to involve NGOs failed for various reasons, according to Standing, revealing an "unholy alliance between the<lb/> Workers and Employers in the Governing Body and inside the ILO" according to which each had incentives to<lb/> maintain the status quo (Standing, supra note 13, p. 373)<lb/> </bibl>
+      <bibl><label>101</label>Baccaro and Mele, ibid., p. 209.<lb/> </bibl>
+      
+      <bibl><label>102</label> ILO, Director General Report, 2013, para. 98. The 2008 Declaration on Social Justice stated explicitly the<lb/> need to cooperate with new actors (II.A)v)).<lb/> </bibl>
+      <bibl><label>103</label> ILO, Rec. of proc. No.7, 2013, p. 7/3.<lb/> </bibl>
+      <bibl><label>104</label>Ibid. p. 7/4.<lb/> </bibl>
+      <bibl><label>105</label>Ibid. p. 7/3.<lb/> </bibl>
+      <bibl><label>106</label>ILO, Draft minutes of the Governing Body, GB.320/INS/PV/Draft march 2014, para. 76<lb/> </bibl>
+      <bibl><label>107</label> ILO, GB.321/INS/6, June 2014.<lb/> </bibl>
+      <bibl><label>108</label> Maupain, supra note 3, p. 384 and ILO, Director General Report, 1999, 40. </bibl>
+      <bibl>See also Charnovitz, supra note<lb/> 4, 275-77 and Nolte and Lagodinsky, supra note 19, p. 325; </bibl>
+      <bibl>L. Baccaro, 'Civil Society, NGOs, and Decent<lb/> Work Policies: Sorting out the Issues', Discussion Paper DP/127/2001, IILS, ILO.<lb/> </bibl>
+      <bibl><label>109</label> Bonvin, supra note 79, p. 69. </bibl>
+      <bibl>Similar comments have been voiced about the ITUC on the workers' side -<lb/>Standing argues that the ILO "is one of the very few means by which to retain international legitimacy (and<lb/> financial assistance for its members)" (supra note 13).<lb/> </bibl>
+      
+      <bibl><label>110</label> Standing goes much further, arguing with regard to representativity in the Governing Body, that both<lb/> Employers and Workers want "to retain their exclusive, monopolistic position and control the agenda with<lb/> which they are most comfortable [and] each would support the other if any effort was made to broaden<lb/> representativity" (ibid. pp. 379-380). </bibl>
+      <bibl>Others have pointed out that some Employers and Workers members stay<lb/> on "well past their 'use by' date" and make little positive contributions (Creighton, supra note 73, p. 266). </bibl>
+      <bibl>See<lb/> also Maupain, supra note 1, p. 249. The Workers' Group has been addressing these issues however. </bibl>
+      <bibl><label>112</label> Which is reported to be still very much alive (see eg. A. Chhachhi, 'Introduction: The 'Labour Question' in<lb/> Contemporary Capitalism' (2014) 45 Development and Change, p. 899).<lb/> </bibl>
+      <bibl><label>113</label> F. Hoffer, 'When Very Little is Already too Much: The Struggle for International Labour Standards' in R.<lb/> Sandbrook and A.B. Güven (eds.) Civilizing Globalization (SUNY Press 2014) p. 246. </bibl>Frank Hoffer works in<lb/> ACTRAV.<lb/> 
+      <bibl><label>114</label> See G. Rodgers et al., supra note 52, p. 24. </bibl>
+      <bibl>Also, Sengenberger, supra note 75, p. 65.<lb/> </bibl>
+      <bibl><label>115</label> Although several instruments were adopted in the 1990s on key themes such as part-time work, homework,<lb/> private employment agency, these have scarcely been ratified, and attempts to adopt an instrument on contract<lb/> labour have failed. All workers remain covered by the more general conventions however. Moreover, the<lb/> current discussions on a possible recommendation on formalising the informal economy fit very well into the<lb/> current power struggle between Workers and Employers (see La Hovary, supra note, 67).<lb/> </bibl>
+      
+      <bibl><label>116</label> Béguin, supra note 13, p. 7. The position of the IOE is that although there is a role for ILS, "the ILO is<lb/> harming its credibility by continuing to adopt standards that are increasingly less ratified" (France, supra note<lb/> 88, p. 63).<lb/> </bibl>
+      <bibl><label>117</label> This opposition was very reminiscent of a previous one during the Cold War period, when Socialist countries<lb/> became "increasingly hostile" towards the ILO supervisory system when it criticized them (Ghebali, supra note<lb/> 76, pp. 28 and 230-232). </bibl>
+      <bibl>As Cox notes, the Director-General and some others in the Office "played a broker's<lb/> role" in the resolution of this crisis (Cox, supra note 23, p. 107).<lb/> </bibl>
+      <bibl><label>118</label> ILO, Rec. of Proc. No 19(Rev.)/Part 1, 2012, para.150.<lb/> </bibl>
+      <bibl><label>119</label> ibid para. 22.</bibl> 
+      
+      <bibl><label>121</label> CEACR Report 2014, para.14.<lb/> </bibl>
+      <bibl><label>122</label> Reaffirming inter alia that "in order to exercise fully its constitutional responsibilities, it is essential for the<lb/> ILO to have an effective, efficient and authoritative standards supervisory system commanding the support of all<lb/> constituents" (ILO, GB.320/LILS/4, para.40-43).<lb/> </bibl>
+      <bibl><label>123</label> Article 37 provides a legal answer to such deadlocks: Article 37(1) concerns referral to the ICJ for "any<lb/> question of dispute" relating to the interpretation of the Constitution or of Conventions and article 37(2)<lb/> concerns the setting-up of a Tribunal for matters related to the interpretation of Conventions. Resort to Art 37<lb/> needs to be decided by the Governing Body, through a vote or consensus; there was still no consensus at the<lb/> Governing Body's meeting in November 2014 on either paths, Employers and some Governments not favouring<lb/> this avenue.<lb/> </bibl>
+      <bibl><label>124</label> CEACR, Report III (Part 1A), 2013 para. 33.<lb/> </bibl>
+      <bibl><label>125</label> Moreover, Employers questioned aspects of the application of Convention No 98 by the CEACR (see Croatia<lb/> (ILO, Provisional Record, ILC, 103st Session, 2014, No.13(Rev) Part II/70-74).<lb/> </bibl>
+      <bibl><label>126</label> This crisis has been examined from different angles by a range of scholars, including J. Bellace, 'The ILO<lb/> and the Right to Strike' (2014) International Labour Review; KD. Ewing, Myth and Reality of the Right to<lb/> Strike as a 'Fundamental Labour Right' (2013) 29 IJCLLIR pp. 145-65; </bibl>
+      <bibl>C. La Hovary, 'Showdown at the ILO?<lb/> A historical perspective on the Employers group's 2012 challenge to the right to strike' (2013) 42 Industrial<lb/> Law Journal, pp. 338-68; </bibl>
+      <bibl>Maupain, supra note 74, pp. 117-65; </bibl>
+      <bibl>L Swepston, 'Crisis in the ILO Supervisory<lb/> System: Dispute over the Right to Strike' (2013) 29 IJCLLIR pp. 199-218.<lb/> </bibl>
+      
+      <bibl><label>127</label> See e.g. Maupain, supra note 74; </bibl>
+      <bibl>C. La Hovary, 'The ILO's Supervisory Bodies' 'Soft Law Jurisprudence',<lb/> A Blackett and A Trebilcock (eds.) Research Handbook on Transnational Labour Law (Edgar Elgar,<lb/> forthcoming, 2015). </bibl>
+      
+      <bibl><label>129</label> Ibid.<lb/> </bibl>
+      <bibl><label>130</label> ILC, Rec. of Proc. No. 13 Part I, 2014, paras. 11 and 228.<lb/> </bibl>
+      <bibl><label>131</label> ILO, Matters arising out of the work of the International Labour Conference, Governing Body, 317 th<lb/> Session, 2013, GB.317/INS/4/1, para. 19-20.<lb/> </bibl>
+      <bibl><label>132</label> See IOE News Release, "Employers call for a change to the Functioning of the ILO Regular Supervisory<lb/> System" (IOE, 2 February 2013).<lb/> </bibl>
+      <bibl><label>133</label> IOE, Discussing the "standards initiative": a holistic approach -A specific proposal with timeframe and<lb/> objectives, 10 October 2014 http://www.ioe-<lb/>emorg/fileadmin/ioe_documents/publications/Policy%20Areas/international_labour_standards/EN/_2014-10-<lb/>10__G-641.R-102_A_holistic_approach_to_issues_in_the_ILO_Supervisory_System.pdf (consulted on 21<lb/> October 2014).<lb/> </bibl>
+      <bibl><label>134</label> See the ILS Policy and the documents adopted by the Governing Body's Committee on Legal Issues and<lb/> International Labour Standards.<lb/> </bibl>
+      
+      <bibl><label>135</label> ILC, Rec. of Proc. No. 13 Part I, 2014, para.50. It should be added that consensus was not always the norm.<lb/> </bibl>
+      <bibl><label>136</label> Ibid., para. 209.<lb/> </bibl>
+      <bibl><label>137</label> R. Hyman, 'Social dialogue and industrial relations during the economic crisis: Innovative practices or<lb/> business as usual?' (2010) Working Paper No 11, Industrial and Employment Relations Department, ILO.<lb/> </bibl>
+      <bibl><label>138</label> ILO, Rec. of Proc. No. 19(Rev)/Part 1, 2012, para. 213.</bibl> 
+      
+      <bibl><label>140</label> Ibid. </bibl>
+      
+      <bibl><label>142</label> ILC, Rec. of Proc. No. 13 Part I, 2014, para. 67.<lb/> </bibl>
+      <bibl><label>143</label> Ibid. para. 67.<lb/> </bibl>
+      <bibl><label>144</label> Ibid. para. 57.<lb/> </bibl>
+      <bibl><label>145</label> Ibid. para. 55. </bibl>
+      <bibl>At the Employers' request, the CEACR met with the Worker and the Employer's Chairperson<lb/> before its meeting, in an unprecedented move (ILO, CEACR Report, 2013, para.10). </bibl>
+      <bibl>As a result, the Experts<lb/> declared that "some adjustments been made" as to the length and the presentation of information to the 2014<lb/> CEACR report (see CEACR 2014 (I), para. 26).<lb/> </bibl>
+      <bibl><label>146</label> The events of 2012 have been brought to the attention of national and international courts to dispute the<lb/> CEACR's work (see e.g. RMT v. United Kingdom (Application No 31045/10), 8 April 2014, para. 69 -while<lb/> the ECtHR stated that it was not reconsidering the CEACR's "role as a point of reference and guidance for the<lb/> interpretation of certain provisions of Convention No 87" -it did not, however, apply the CEACR's<lb/> jurisprudence on sympathy strikes, which are crucial in a globalised world).<lb/> </bibl>
+      <bibl><label>147</label> La Hovary, supra note 126, pp. 345-46 for a summary.<lb/> </bibl>
+      
+      <bibl><label>148</label> Maupain has suggested a re-balancing of the available means of supervision (supra note 74).<lb/> </bibl>
+      <bibl><label>149</label> V. Leary, 'Lessons from the Experience of the International Labour Organisation', in P. Alston (ed.) The<lb/> United Nations and Human Rights: a Critical appraisal (Clarendon Press, Oxford, 1992) p. 613.<lb/> </bibl>
+      <bibl><label>150</label> See CAS 2012 para.153.</bibl> 
+      <bibl>Cox, supra note 23, p. 112;</bibl> 
+      <bibl>Creighton, supra note 73, p. 261. </bibl>
+      
+      <bibl><label>152</label> Sengenberger, supra note 75, p. 63. This was manifest in the 2011 discussions of the Convention No. 189 on<lb/> Domestic Workers. Generally, Sengenberger points out to the fact that "the ILO framework of international<lb/> governance may be said to be more democratic and more up -to -date with the distribution of the present<lb/> economic and political weight in the world than the system of governance of the international financial<lb/> institutions" (ibid).<lb/> </bibl>
+      <bibl><label>153</label> Maupain, supra note 1, p. 59.<lb/> </bibl>
+      <bibl><label>154</label> Haas, for example, argued that while historically some Governments were likely to take the side of the<lb/> Workers (Haas, supra note 50, p. 213; also Landelius, supra note 21, p. 522), the State is now supporting<lb/> capital. It can certainly be contended that it has abandoned its mediating role between capital and labour<lb/> (Chhachhi, supra note 112, p. 902). Information also obtained from interviews. </bibl>
+      
+      <bibl><label>156</label> Indeed, Governments have half the votes compared to a quarter each for Employers and Workers in plenary<lb/> meetings and they are the only constituents empowered to vote on the ILO's budget, which they finance. They<lb/> are moreover the only constituents directly consulted by the Office during the preparation of ILS -ILS are<lb/> addressed to them, although the procedural rules provide they do need to consult Employers and Workers -and<lb/> they nominate the Workers and Employers representatives to the ILC (Haas, supra note 50, p. 213), which under<lb/> the Constitution are to be the "most representative" in the country.<lb/> </bibl>
+      <bibl><label>157</label> ILO, Report of the Director-General (Part I), Defending values, promoting changes, ILC, 81 st session, 35<lb/> </bibl>
+      <bibl><label>158</label> Ibid.</bibl>
+    </listBibl>
+  </text>
+</TEI>

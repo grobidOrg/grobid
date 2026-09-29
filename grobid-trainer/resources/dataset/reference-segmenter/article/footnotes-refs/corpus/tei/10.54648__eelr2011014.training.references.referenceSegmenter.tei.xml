@@ -1,0 +1,204 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.54648__eelr2011014">
+    <titleStmt>
+      <title level="a">The Implementation of European Environmental Directives: Are Problems Caused by the Quality of the Directives?</title>
+      <author>
+        <persName>
+          <forename>Barbara A.</forename>
+          <surname>Beijen</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="dfejzo">Daniel Fejzo</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Kluwer Law International BV</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2011</date>
+      <idno type="DOI">10.54648/eelr2011014</idno>
+      <ptr target="https://doi.org/10.54648/eelr2011014"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Barbara A. Beijen. (2011). The Implementation of European Environmental Directives: Are Problems Caused by the Quality of the Directives?. European Energy and Environmental Law Review, 20(Issue 4), 150-163. DOI: 10.54648/eelr2011014</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">The Implementation of European Environmental Directives: Are Problems Caused by the Quality of the Directives?</title>
+          <author>
+            <persName>
+              <forename>Barbara A.</forename>
+              <surname>Beijen</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">European Energy and Environmental Law Review</title>
+          <imprint>
+            <biblScope unit="volume">20</biblScope>
+            <biblScope unit="issue">Issue 4</biblScope>
+            <biblScope unit="page" from="150" to="163">150-163</biblScope>
+            <date when="2011">2011</date>
+            <publisher>Kluwer Law International BV</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.54648/eelr2011014</idno>
+        <ptr target="https://doi.org/10.54648/eelr2011014"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-22T16:11:21.205122Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-70-g77a8a2219</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-22T16:11:21.205122Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-07-02T17:36:40.166Z" status="unfinished" who="#dfejzo">
+      <note type="label">v2 (dfejzo)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-07-03T10:38:36.477Z" status="draft" who="#dfejzo">
+      <desc>1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-08T11:30:46.171Z" status="draft" who="#dfejzo">
+      <desc>1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-09T15:50:53.227Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-09T16:11:19.028Z" status="checked" who="#kazuyo">
+      <desc>1st pass Daniel</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> This article is largely based on B.A. Beijen, De kwaliteit<lb/> van milieurichtlijnen, diss. Utrecht University, The Hague:<lb/> BJu 2010.<lb/></bibl>
+
+      <bibl><label>2</label> Prof. Dr. P. Pagh, Prof. Dr. E.M. Basse, Prof. Dr. H.T.<lb/> Anker and H. Soja LLM from Denmark, Prof .Dr. G.<lb/> LuÈ bbe-Wolff, Prof. Dr. E. Rehbinder, Prof. Dr. E. Bohne<lb/> M.A., Prof. Dr. G. Winter and Prof. Dr. H.D. Jarass LL.M<lb/> from Germany and Prof. Dr. J.H. Jans, Prof. Dr. H.G.<lb/> Sevenster, Th.G. Drupsteen LL.M and J.Teekens LL.M<lb/> from the Netherlands.<lb/></bibl>
+      <bibl><label>3</label> Council Directive 92/43/EEC of 21 May 1992 on the<lb/> conservation of natural habitats and of wild flora and<lb/> fauna, OJ 1992, L 206/7.<lb/></bibl>
+      <bibl><label>4</label> Council Directive 85/337/EEC of 27 June 1985 on the<lb/> assessments of the effects of certain public and private<lb/> projects on the environment, OJ 1985, L 175/40.<lb/></bibl>
+      <bibl><label>5</label> Case C-127/02, Landelijke vereniging tot behoud van de<lb/> Waddenzee, [2004] ECR I-07405, par. 26.<lb/></bibl>
+
+      <bibl><label>6</label> Council Directive 75/442/EEC of 15 July 1975 on waste,<lb/> OJ 1975, L 194/39.<lb/></bibl>
+      <bibl><label>7</label> Case C-486/04, Commission v Italy, [2006] ECR I-11025.<lb/></bibl>
+      <bibl><label>8</label> Council Directive 91/271/EEC of 21 May 1991 concerning<lb/> urban waste-water treatment, OJ 1991, L 135/40.<lb/></bibl>
+     <bibl><label>9</label> Directive 2000/60/EC of the European Parliament and of<lb/> the Council of 23 October 2000 establishing a framework for<lb/> Community action in the field of water policy, OJ 2000, L<lb/> 327/1.<lb/></bibl>
+      <bibl><label>10</label> Directive 2006/11/EC of the European Parliament and of<lb/> the Council of 15 February 2006 on pollution caused by<lb/> certain dangerous substances discharged into the aquatic<lb/> environment of the Community, OJ 2006, L 64/52.<lb/></bibl>
+      <bibl><label>11</label> Case C-252/05, Thames Water Utilities, [2007] ECR I-<lb/>03883.<lb/></bibl>
+      <bibl><label>12</label> Council Directive 91/414/EEC of 15 July 1991 concerning<lb/> the placing of plant protection products on the market, OJ<lb/> 1991, L 230/1.<lb/></bibl>
+      <bibl><label>13</label> Directive 2003/4/EC of the European Parliament and of<lb/> the Council of 28 January 2003 on public access to<lb/> environmental information and repealing Council Directive<lb/> 90/313/EEC, OJ 2003, L 41/26.<lb/></bibl>
+      <bibl><label>14</label> Case C-266/09, Stichting Natuur &amp; Milieu, [2010] ECR<lb/> 00000.<lb/></bibl>
+      <bibl><label>15</label> For example, Cases C-304/94 and others, Tombesi, [1997]<lb/> ECR I-03561,</bibl>
+      <bibl>Case C-9/00, Palin Granit, [2002] ECR I-<lb/>03533,</bibl>
+      <bibl>Case C-444/00, Mayer Parry Recycling, [2003] ECR<lb/> I-06163,</bibl>
+      <bibl>and L.A. Versteyl, ``Der Abfallbegriff im Euro-<lb/>paÈ ischen Recht. Eine unendliche Geschichte?'', in: Euro-<lb/>paÈische Zeitschrift fuÈr Wirtschaftsrecht 2000, p. 585-591</bibl>
+    <bibl>  and<lb/> J.R.C. Tieman, ``The broad concept of waste and the case of<lb/> ARCO-Chemie and Hees/EPON'', in: EELR 2000, p. 327-<lb/>335.<lb/></bibl>
+      <bibl><label>16</label> Council Directive 96/61/EC of 24 September 1996<lb/> concerning integrated pollution prevention and control,<lb/> OJ 1996, L 257/26.<lb/></bibl>
+      <bibl><label>17</label> M.P. Jongma, De milieuvergunning, Deventer: Kluwer<lb/> 2002, p. 56-61.<lb/></bibl>
+      <bibl><label>18</label> H.F.M.W. van Rijswick, ``EC Water Law in Transition'',<lb/> in: H. Somsen (ed.), The Yearbook of European Environ-<lb/>mental Law, Oxford: Oxford University Press 2003, p. 290-<lb/>298.<lb/></bibl>
+
+      <bibl><label>19</label> Council Directive 79/409/EEC of 2 April 1979 on the<lb/> conservation of wild birds, OJ 1979, L 103/1.<lb/></bibl>
+      <bibl><label>20</label> Directive 2000/76/EC of the European Parliament and of<lb/> the Council of 4 December 2000 on the incineration of<lb/> waste, OJ 2000, L 332/91.<lb/></bibl>
+      <bibl><label>21</label> Directive 2003/87/EC of the European Parliament and of<lb/> the Council of 13 October 2003 establishing a scheme for<lb/> greenhouse gas emission allowance trading within the<lb/> Community and amending Council Directive 96/61/EC,<lb/> OJ 2003, L 275/32.<lb/></bibl>
+      <bibl><label>22</label> Council Directive 1999/13/EC of 11 March 1999 on the<lb/> limitation of emissions of volatile organic compounds due to<lb/> the use of organic solvents in certain activities and<lb/> installations, OJ 1999, L 85/1.<lb/></bibl>
+      <bibl><label>23</label> Directive 98/8/EC of the European Parliament and of the<lb/> Council of 16 February 1998 concerning the placing of<lb/> biocial products on the market, OJ 1998, L 123/1.<lb/></bibl>
+      <bibl><label>24</label> For example, Case C-72/95, Kraaijeveld, [1996] ECR I-<lb/>05403,  </bibl>
+     <bibl> Case C-392/96, Commission v Ireland, [1999] ECR I-<lb/>05901</bibl>
+     <bibl>and Case C-255/08, Commission v Netherlands, [2009]<lb/> ECR I-00167.<lb/></bibl>
+      <bibl><label>25</label> For example, Case C-3/96, Commission v Netherlands,<lb/> [1998] ECR I-03031.<lb/></bibl>
+
+      <bibl><label>26</label> Ch.W. Backes, ``Umsetzung, Anwendung und Vollzug<lb/> europaÈ ischer UmweltqualitaÈ tsnormen'', in: M. FuÈ hr, R.<lb/> Wahl &amp; P. von Wilmowsky (ed.), Umweltrecht und<lb/> Umweltwissenschaft. Festschrift fuÈr Eckard Rehbinder, Ber-<lb/>lin: Erich Schmidt Verlag 2007, p. 669-691.<lb/></bibl>
+      <bibl><label>27</label> Council Directive 76/160/EEC of 8 December 1975<lb/> concerning the quality of bathing water, OJ 1976, L 31/1<lb/> </bibl>
+      <bibl>and Directive 2006/7/EC of the European Parliament and of<lb/> the Council of 15 February 2006 concerning the manage-<lb/>ment of bathing water quality and repealing Directive 76/<lb/> 160/EEC, OJ 2006, L 64/37.<lb/></bibl>
+      <bibl><label>28</label> Case C-92/96, Commission v Spain, [1998] ECR I-00505;<lb/></bibl>
+      <bibl>Case C-307/98, Commission v Belgium, [2000] ECR I-03933;<lb/></bibl>
+      <bibl> case C-226/01, Commission v Denmark, [2003] ECR I-01219<lb/></bibl>
+      <bibl><label>29</label> Case T-182/06, Netherlands v Commission, [2007] ECR II-<lb/>01983 </bibl>
+      <bibl>and Case C-405/07 P, Netherlands v Commission,<lb/> [2008] ECR I-08301.<lb/></bibl>
+
+      <bibl><label>30</label> A. Keessen, A. Freriks &amp; M. van Rijswick, ``The Clash of<lb/> the Titans: The Relation Between the European Water and<lb/> Medicines Legislation'', in: CMLR 2010, p. 1429-1454.<lb/></bibl>
+      <bibl><label>31</label> A.M. Keessen, J.J.H. van Kempen &amp; H.M.F.W. van<lb/> Rijswick, ``Transboundary river basin management in<lb/> Europe. Legal instruments to comply with European water<lb/> management obligations in case of transboundary water<lb/> pollution and floods'', in: Utrecht Law Review 2008, Issue 3,<lb/> p. 35-56.<lb/></bibl>
+      <bibl><label>32</label> Directive 2001/81/EC of the European Parliament and of<lb/> the Council of 23 October 2001 on national emission ceilings<lb/> for certain atmospheric pollutants, OJ 2001, L 309/22.<lb/></bibl>
+      <bibl><label>33</label> Joint cases C-165/09, C-166/09 and C-167/09, Stichting<lb/> Natuur en Milieu, OJ 2009, C 193/2.<lb/></bibl>
+      <bibl><label>34</label> Joint cases C-165/09, C-166/09 and C-167/09, Stichting<lb/> Natuur en Milieu, OJ 2009, C 193/2, opinion of AG Kokott,<lb/> point 74-77.<lb/></bibl>
+      <bibl><label>35</label> Council Directive 91/676/EEC of 12 December 1991<lb/> concerning the protection of waters against pollution caused<lb/> by nitrates from agricultural sources, OJ 1991, L 375/1.<lb/></bibl>
+      <bibl><label>36</label> Council Directive 76/160/EEC of 8 December 1975<lb/> concerning the quality of bathing water, OJ 1976, L 31/1<lb/> </bibl>
+      <bibl>and Directive 2006/7/EC of the European Parliament and of<lb/> the Council of 15 February 2006 concerning the manage-<lb/>ment of bathing water quality and repealing Directive 76/<lb/> 160/EEC, OJ 2006, L 64/37.<lb/></bibl>
+      <bibl><label>37</label> B.A. Beijen, ``The implementation of area protection<lb/> provisions from European environmental Directives in the<lb/> Member States'', in: Utrecht Law Review 2009, Issue 1, p.<lb/> 101-116.<lb/></bibl>
+      <bibl><label>38</label> Case C-355/90, Commission v Spain, [1993] ECR I-04221<lb/></bibl>
+      <bibl>and Case C-3/96, Commission v Netherlands, [1998] ECR I-<lb/>03031.<lb/></bibl>
+
+      <bibl><label>39</label> For example case C-371/98, First Corporate Shipping,<lb/> [2000] ECR I-09235.<lb/></bibl>
+      <bibl><label>40</label> Case C-307/98, Commission/Belgium, [2000] ECR I-<lb/>03933.<lb/></bibl>
+      <bibl><label>41</label> Interview with Prof. Rehbinder in November 2007.<lb/></bibl>
+      <bibl><label>42</label> Interviews, B.A. Beijen, De kwaliteit van milieurichtlijnen,<lb/> diss. Utrecht University, The Hague: BJu 2010, p. 231 and<lb/> 243.<lb/></bibl>
+
+      <bibl><label>43</label> Case C-285/96, Commission v Italy, [1998] ECR I-05935;<lb/></bibl>
+      <bibl>Case C-384/97, Commission v Greece, [2000] ECR I-03823;<lb/></bibl>
+      <bibl>Case C-152/98, Commission v Netherlands, [2001] ECR I-<lb/>03463 (all relating to the Dangerous Substances Directive;<lb/> Case C-274/98, Commission v Spain, [2000] ECR I-02823;<lb/></bibl>
+      <bibl>Case C-69/99, Commission v United Kingdom, [2000] ECR I-<lb/>10979; </bibl>
+      <bibl>Case C-127/99, Commission v Italy, [2001] ECR I-<lb/>08305 (all relating to the Nitrates Directive).<lb/></bibl>
+      <bibl><label>44</label> Case C-266/00, Commission v Luxembourg, [2001] ECR I-<lb/>02073; </bibl>
+      <bibl>Case C-221/03, Commission v Belgium, [2005] ECR I-<lb/>08307.<lb/></bibl>
+      <bibl><label>45</label> Case C-237/07, Janecek, [2008] ECR I-06221.<lb/></bibl>
+      <bibl><label>46</label> H.F.M.W. van Rijswick, Moving Water and the Law,<lb/> Groningen: Europa Law Publishing 2008, p. 23-24.<lb/></bibl>
+      <bibl><label>47</label> Directive 2008/105/EC of the European Parliament and<lb/> of the Council of 16 December 2008 on environmental<lb/> quality standards in the field of water policy, amending and<lb/> subsequently repealing Council Directives 82/176/EEC, 83/<lb/> 513/EEC, 84/156/EEC, 84/491/EEC, 86/280/EEC </bibl>
+     <bibl>and<lb/> amending Directive 2000/60/EC of the European Parlia-<lb/>ment and of the Council, OJ 2008, L 348/84.<lb/></bibl>
+
+      <bibl><label>48</label> Commission Directive 2009/90/EC of 31 July 2009 laying<lb/> down, pursuant to Directive 2000/60/EC of the European<lb/> Parliament and of the Council, technical specifications for<lb/> chemical analysis and monitoring of water status, OJ 2009,<lb/> L 201/36.<lb/></bibl>
+      <bibl><label>49</label> H.F.M.W. van Rijswick, ``EC Water Law in Transition'',<lb/> in: H. Somsen (ed.), The Yearbook of European Environ-<lb/>mental Law, Oxford: Oxford University Press 2003, p. 251-<lb/>258.<lb/></bibl>
+      <bibl><label>50</label> Case C-381/07, Association nationale pour la protection<lb/> des eaux et rivieÁres ± TOS, [2008] ECR I-08281.<lb/></bibl>
+      <bibl><label>51</label> Directive 2001/80/EC of the European Parliament and of<lb/> the Council of 23 October 2001 on the limitation of<lb/> emissions of certain pollutants into the air from large<lb/> combustion plants, OJ 2001, L 309/1.<lb/></bibl>
+
+      <bibl><label>52</label> Council Directive 1999/30/EC of 22 April 1999 relating to<lb/> limit values for sulphur dioxide, nitrogen dioxide and oxides<lb/> of nitrogen, particulate matter and lead in ambient air, OJ<lb/> 1999, L 163/41.<lb/></bibl>
+      <bibl><label>53</label> Case C-396/92, Bund Naturschutz in Bayern, [1994] ECR<lb/> I-03717, par. 19; </bibl>
+      <bibl>Case C-431/92, Commission v Germany<lb/> (Grobkrotzenburg),[1995] ECR I-02189, par. 23-33; </bibl>
+      <bibl>Case C-<lb/>301/95, Commission v Germany, [1998] ECR I-06135, par.<lb/> 11-17 and 25-29; </bibl>
+      <bibl>Case C-150/97, Commission v Portugal,<lb/> [1999] ECR I-00259, par. 13, 18, 19, 21 and 23.<lb/></bibl>
+      <bibl><label>54</label> Council Directive 97/11/EC of 3 March 1997 amending<lb/> Directive 85/337/EEC on the assessment of the effects of<lb/> certain public and private projects on the environment, OJ<lb/> 1997, L 73/5.<lb/></bibl>
+      <bibl><label>55</label> Directive 2001/42/EC of the European Parliament and of<lb/> the Council of 27 June 2001 on the assessment of the effects<lb/> of certain plans and programmes on the environment, OJ<lb/> 2001, L 197/30.<lb/></bibl>
+      <bibl><label>56</label> E.M. Vogelezang-Stoute, ``European Community Legis-<lb/>lation on the Marketing and Use of Pesticides'', in: Review<lb/> of European Community &amp; International Environmental Law<lb/> 1999, p. 144-151.<lb/></bibl>
+      <bibl><label>57</label> Case C-316/04, Stichting Zuid-Hollandse Milieufederatie,<lb/> [2005] ECR I-09759.<lb/></bibl>
+
+      <bibl><label>58</label> Case C-138/05, Stichting Zuid-Hollandse Milieufederatie,<lb/> [2006] ECR I-08339.<lb/></bibl>
+      <bibl><label>59</label> Council Directive 96/62/EC of 27 September 1996 on<lb/> ambient air quality assessment and management, OJ 1996,<lb/> L 296/55.<lb/></bibl>
+      <bibl><label>60</label> See further G.J. Brandsma, Backstage Europe: comitol-<lb/>ogy, accountability and democracy in the European Union,<lb/> diss. Utrecht University, Arnhem: 2010.<lb/></bibl>
+      <bibl><label>61</label> Case C-205/08, Umweltanwalt von KaÈrnten, [2009] ECR I-<lb/>11525.<lb/></bibl>
+      <bibl><label>62</label> Case C-142/07, Ecologistas, [2008] ECR I-06097.<lb/></bibl>
+      <bibl><label>63</label> &lt;http://ec.europa.eu/environment/air/pollutants/station-<lb/>ary/ippc/pdf/capacity_guidance.pdf&gt;<lb/> </bibl>
+
+      <bibl><label>64</label> Case C-161/00, Commission v Germany, [2002] ECR I-<lb/>02753</bibl>
+      <bibl>and Case C-322/00, Commission v Netherlands, [2003]<lb/> ECR I-11267.<lb/></bibl>
+      <bibl><label>65</label> Case C-342/05, Commission v Finland, [2007] ECR I-<lb/>04713.<lb/></bibl>
+      <bibl><label>66</label> L.A.J. Senden, ``Soft law and its implications for<lb/> institutional balance in the EC'', in: Utrecht Law Review<lb/> 2005, Issue 2, p. 77-99.<lb/></bibl>
+
+      <bibl><label>67</label> Guidance Document on the strict protection of animal<lb/> species of Community interest under the Habitats Directive<lb/> 92/43/EEC (final version, February 2007), http://circa.eur-<lb/>opa.eu/Public/irc/env/species_protection/library?l=/<lb/> commission_guidance/english/final-completepdf/<lb/> _EN_1.0_&amp;a=d.</bibl>
+    </listBibl>
+  </text>
+</TEI>

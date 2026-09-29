@@ -1,0 +1,427 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.30722__slr.19653">
+    <titleStmt>
+      <title level="a">Act of Grace Payments and the Constitution</title>
+      <author>
+        <persName>
+          <forename>Oscar</forename>
+          <surname>Roos</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Yee-Fui</forename>
+          <surname>Ng</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="admin">Administrator</persName>
+        <resp>editor</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>The University of Sydney Library</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2024</date>
+      <idno type="DOI">10.30722/slr.19653</idno>
+      <ptr target="https://doi.org/10.30722/slr.19653"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Oscar Roos, Yee-Fui Ng. (2024). Act of Grace Payments and the Constitution. Sydney Law Review, 46(1), 55-86. DOI: 10.30722/slr.19653</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Act of Grace Payments and the Constitution</title>
+          <author>
+            <persName>
+              <forename>Oscar</forename>
+              <surname>Roos</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Yee-Fui</forename>
+              <surname>Ng</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Sydney Law Review</title>
+          <imprint>
+            <biblScope unit="volume">46</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page" from="55" to="86">55-86</biblScope>
+            <date when="2024">2024</date>
+            <publisher>The University of Sydney Library</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.30722/slr.19653</idno>
+        <ptr target="https://doi.org/10.30722/slr.19653"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-31T15:32:05.962961Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-71-g595835ed0</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-31T15:32:05.962961Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-31T15:49:51.582Z" status="draft" who="#admin">
+      <note type="label">Extraction (use this)</note>
+      <desc>Renamed to Extraction (use this)</desc>
+    </change>
+    <change when="2026-04-15T16:34:18.239Z" status="unfinished" who="#cboulanger">
+      <note type="label">v3 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-04-15T18:11:39.535Z" status="unfinished" who="#cboulanger">
+      <desc>Done until Fn. 103</desc>
+    </change>
+    <change when="2026-04-16T06:45:38.492Z" status="unfinished" who="#cboulanger">
+      <note type="label">v4 (cboulanger)</note>
+      <desc>Continue with Fn. 103</desc>
+    </change>
+    <change when="2026-04-16T07:10:17.010Z" status="draft" who="#cboulanger">
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-04T16:14:41.035Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-08T18:29:42.944Z" status="in-review" who="#kazuyo">
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-09T09:16:49.701Z" status="checked" who="#kazuyo">
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-29T06:16:32.184Z" status="checked" who="#lfoppiano">
+      <note type="label">v6 (lfoppiano)</note>
+      <desc>Finished first pass</desc>
+    </change>
+    <change when="2026-09-29T10:26:29.908Z" status="approved" who="#lfoppiano">
+      <desc>Finished first pass</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label><lb/> Victoria v Commonwealth (1975) 134 CLR 338 ('AAP (Australian Assistance Plan) Case').<lb/> </bibl>
+        <bibl><label>2</label><lb/> See Cheryl Saunders, 'The Sources and Scope of Commonwealth Power to Spend' (2009) 20(4)<lb/> Public Law Review 256; </bibl>
+        <bibl>Cheryl Saunders, 'The Development of the Commonwealth Spending<lb/> Power' (1978) 11(3) Melbourne University Law Review 369.<lb/> </bibl>
+        <bibl><label>3</label><lb/> Shipra Chordia, Andrew Lynch and George Williams, 'Williams v Commonwealth: Commonwealth<lb/> Executive Power and Australian Federalism' (2013) 37(1) Melbourne University Law Review 189,<lb/> 190-1.<lb/> </bibl>
+        <bibl><label>4</label><lb/> Pape v Federal Commissioner of Taxation (2009) 238 CLR 1, 55 [111] (French CJ), 73-5 [178]-<lb/>[183] (Gummow, Crennan and Bell JJ), 113 [320] (Hayne and Kiefel JJ), 210-11 [601]-[602]<lb/> (Heydon J) ('Pape'); </bibl>
+          <bibl>Peta Stephenson, Nationhood, Executive Power and the Australian Constitution<lb/> (Hart Publishing, 2022) 54.<lb/> </bibl>
+        <bibl><label>5</label><lb/> Williams v Commonwealth (2012) 248 CLR 156, 180 [4], 192-3 [35]-[37], 216 [83] (French CJ),<lb/> 236-9 [150]-[159] (Gummow and Bell JJ), 258-9 [215]-[217], 271 [252]-[253] (Hayne J), 353<lb/> [524] (Crennan J), 368-74 [576]-[595] (Kiefel J) ('Williams No 1').<lb/> </bibl>
+        <bibl><label>6</label><lb/> Ibid 179-80 [4], 187 [27], 192-3 [36]-[37], 216-17 [83] (French CJ), 232-3 [134]-[137] (Gummow<lb/> and Bell JJ), 356-8 [539]-[544] (Crennan J). </bibl>
+        <bibl>See also Stephenson (n 4) 28-31.<lb/> </bibl>
+          
+        <bibl><label>7</label><lb/> Williams v Commonwealth [No 2] (2014) 252 CLR 416, 469-70 [85]-[87] (French CJ, Hayne,<lb/> Kiefel, Bell and Keane JJ) ('Williams No 2').<lb/> </bibl>
+        <bibl><label>8</label><lb/> Commonwealth Ombudsman, To Compensate or Not To Compensate? Own Motion Investigation of<lb/> Commonwealth Arrangements for Providing Financial Redress for Maladministration (Report,<lb/> September 1999) 74 ('To Compensate').<lb/> </bibl>
+        <bibl><label>9</label><lb/> Stephen Winter, 'Australia's Ex Gratia Redress' (2009) 13(1) Australian Indigenous Law Review 49.<lb/> </bibl>
+        <bibl><label>10</label><lb/> See Butterworths Australian Legal Dictionary (Butterworths, 1997) 'Act of grace payment'.<lb/> </bibl>
+        <bibl><label>11</label><lb/> To Compensate (n 8) 34. </bibl><bibl>See also at 45, 76, 83, 88; Commonwealth Ombudsman, Executive Schemes<lb/> (Report No 12, August 2009) 8. </bibl>
+          <bibl>This distinction is not universally observed: see, eg, Treasury (NSW),<lb/> Ex Gratia Payments (Circular, NSW TC 11/02, 1 February 2011) ('NSW Treasury Circular').<lb/> </bibl>
+        <bibl><label>12</label><lb/> To Compensate (n 8) 37.<lb/> </bibl>
+        <bibl><label>13</label><lb/> For example, in 2020-21 the Commonwealth government paid $16 million in act of grace payments<lb/> under s 65 of the Public Governance, Performance and Accountability Act 2013 (Cth) ('PGPA Act'),<lb/> and $45 million in 2019-20: Department of Finance, Decisions Made on Waivers of Commonwealth<lb/> Debts under Section 63 and Act of Grace Payments under Section 65 of the Public Governance,<lb/> Accountability and Performance Act 2013 (PGPA Act) (Report, 2021).<lb/> </bibl>
+        <bibl><label>14</label><lb/> See, eg, Pearce v Minister for Finance (2020) 352 FLR 34.<lb/> </bibl>
+          
+        <bibl><label>15</label><lb/> ACT Gambling and Racing Commission, Annual Report 2019-20 (Report, May 2019) 52-3.<lb/> </bibl>
+        <bibl><label>16</label><lb/> Legal suit between parties.<lb/> </bibl>
+        <bibl><label>17</label><lb/> Gabrielle Appleby and Stephen McDonald, 'Looking at the Executive Power through the High<lb/> Court's New Spectacles' (2013) 35(2) Sydney Law Review 253, 280.<lb/> </bibl>
+        <bibl><label>18</label><lb/> Pape (n 4) 34-6 [45]-[53] (French CJ), 68-9 [150]-[159] (Gummow, Crennan, and Bell JJ), 98-9<lb/> [399]-[402] (Hayne and Kiefel JJ), 137-8 [271]-[274] (Heydon J); Williams No 1 (n 5) 223-4 [111]-<lb/>[112] (Gummow and Bell JJ), 288-93 [315]-[331] (Heydon J).<lb/> </bibl>
+        <bibl><label>19</label><lb/> See, eg, Commonwealth, Parliamentary Debates, Senate, 29 September 1910, 3947;<lb/> </bibl>
+          <bibl>Commonwealth, Parliamentary Debates, House of Representatives, 7 October 1909, 4275;<lb/> </bibl>
+          <bibl>Commonwealth, Parliamentary Debates, House of Representatives, 15 September 1909, 3472;<lb/> </bibl>
+          <bibl>Commonwealth, Parliamentary Debates, House of Representatives, 5 June 1908, 12197;<lb/> </bibl>
+          <bibl>Commonwealth, Parliamentary Debates, Senate, 2 April 1908, 10060; </bibl>
+          <bibl>Commonwealth,<lb/> Parliamentary Debates, Senate, 14 December 1907, 7496; </bibl>
+          <bibl>Commonwealth, Parliamentary Debates,<lb/> House of Representatives, 27 June 1901, 1778.<lb/> </bibl>
+        <bibl><label>20</label><lb/> Will Bateman, Public Finance and Parliamentary Constitutionalism (Cambridge University Press,<lb/> 2020) 231, </bibl>
+          <bibl>quoting Judith N Shklar, 'Political Theory and the Rule of Law' in Allan Hutchinson </bibl>
+          <bibl>and<lb/> Patrick J Monahan (eds), The Rule of Law: Ideal or Ideology (Carswell, 1987) 1, 3.<lb/> </bibl>
+        <bibl><label>21</label><lb/> Wotton v Queensland (2012) 246 CLR 1, 9 [9] (French CJ, Gummow, Hayne, Crennan and Bell JJ).<lb/></bibl>
+          <bibl>See Public Service Act 1999 (Cth) s 13(4).<lb/> </bibl>
+        <bibl><label>22</label><lb/> W Bateman (n 20) 267-7.<lb/> </bibl>
+          
+        <bibl><label>23</label><lb/> Senate Legal and Constitutional Affairs References Committee, Parliament of Australia, Review of<lb/> Government Compensation Payments (Report, December 2010) ('Review of Government<lb/> Compensation Payments').<lb/> </bibl>
+        <bibl><label>24</label><lb/> Repealed by Audit (Transitional and Miscellaneous) Amendment Act 1997 (Cth) sch 1.<lb/> </bibl>
+          
+        <bibl><label>25</label><lb/> To Compensate (n 8) 102-3.<lb/> </bibl>
+        <bibl><label>26</label><lb/> Ibid 86.<lb/> </bibl>
+        <bibl><label>27</label><lb/> Ibid 69, 73, 81, 83, 104.<lb/> </bibl>
+        <bibl><label>28</label><lb/> Janina Boughey, Ellen Rock and Greg Weeks, Government Liability: Principles and Remedies<lb/> (LexisNexis Butterworths, 2019) 295.<lb/> </bibl>
+        <bibl><label>29</label><lb/> PGPA Act (n 13) s 65.<lb/> </bibl>
+          
+        <bibl><label>30</label><lb/> Dobie v Minister for Finance [2022] FCA 528, [29] (Rangiah J) ('Dobie'). </bibl>
+          <bibl>See also Toomer v Slipper<lb/> [2001] FCA 981, [28]-[32] ('Toomer'); Dennis v Minister for Finance [2017] FCCA 45, [46], [59],<lb/> [64]; Tomson v Minister for Finance and Deregulation (2013) 136 ALD 610, 620 [35].<lb/> </bibl>
+        <bibl><label>31</label><lb/> Dobie (n 30) [27] (Rangiah J).<lb/> </bibl>
+        <bibl><label>32</label><lb/> Ashby v Commonwealth (2021) 386 ALR 23, 32-5 [40]-[53]; </bibl>
+          <bibl>Ashby v Commonwealth (2022) 291<lb/> FCR 585, 589-90 [15]-[17], 592-3 [31]-[39].<lb/> </bibl>
+          
+        <bibl><label>33</label><lb/> Boughey, Rock and Weeks (n 28) 309.<lb/> </bibl>
+        <bibl><label>34</label><lb/> Ibid 302-7.<lb/> </bibl>
+        <bibl><label>35</label><lb/> Department of Finance, Scheme for Compensation for Detriment Caused by Defective Administration<lb/> (Resource Management Guide 409) [13] ('RMG 409').<lb/> </bibl>
+        <bibl><label>36</label><lb/> Ibid 66.<lb/> </bibl>
+        <bibl><label>37</label><lb/> Commonwealth Ombudsman, Putting Things Right: Compensating for Defective Administration:<lb/> Administration of Decision-Making under the Scheme for Compensation for Detriment Caused by<lb/> Defective Administration (Report, August 2009) 31 ('Putting Things Right').<lb/> </bibl>
+        <bibl><label>38</label><lb/> To Compensate (n 8) 36.<lb/> </bibl>
+        <bibl><label>39</label><lb/> Ibid 67-8.<lb/> </bibl>
+        <bibl><label>40</label><lb/> Ibid 67.<lb/> </bibl>
+        <bibl><label>41</label><lb/> Ellen Rock, Measuring Accountability in Public Governance Regimes (Cambridge University Press,<lb/> 2022) 265.<lb/> </bibl>
+        <bibl><label>42</label><lb/> RMG 409 (n 35).<lb/> </bibl>
+        <bibl><label>43</label><lb/> Ibid[2], [7]-[9].<lb/> </bibl>
+          
+        <bibl><label>44</label><lb/> Ibid [23].<lb/> </bibl>
+        <bibl><label>45</label><lb/> Ibid [17].<lb/> </bibl>
+        <bibl><label>46</label><lb/> Putting Things Right (n 37) 2.<lb/> </bibl>
+        <bibl><label>47</label><lb/> Administrative Decisions (Judicial Review) Act 1977 (Cth) s 3 ('ADJR Act').<lb/> </bibl>
+          
+        <bibl><label>48</label><lb/> Smith v Oakenfull (2004) 134 FCR 413. This case was, however, decided before the enactment of the<lb/> Financial Framework Legislation Amendment Act (No 3) 2012 (Cth) ('FFLA Act No 3') which, it<lb/> has been claimed, places the CDDA Scheme on a statutory footing: see below in Part II(C)(2). We<lb/> dispute that claim and, if we are right, the reasoning in Smith v Oakenfull is accordingly unaffected<lb/> by the enactment of the FFLA Act No 3. However, even if we are wrong on this point, the ADJR Act<lb/> ibid still does not apply to CDDA Scheme decisions. This is because: (1) the substantive power 'to<lb/> make, vary or administer the arrangement or grant' referred to in Financial Framework<lb/> (Supplementary Powers) Regulations 1997 (Cth) is found in s 32B of the Financial Framework<lb/> (Supplementary Powers) Act 1997 (Cth) ('FF(SP) Act'); (2) s 32B decisions are decisions under pt 2<lb/> of that Act; and (3) FF(SP) Act pt 2 decisions are decisions to which the ADJR Act does not apply:<lb/> see ADJR Act ibid sch 1(he).<lb/> </bibl>
+          
+        <bibl><label>49</label><lb/> Putting Things Right (n 37) 19.<lb/> </bibl>
+        <bibl><label>50</label><lb/> Review of Government Compensation Payments (n 23).<lb/> </bibl>
+        <bibl><label>51</label><lb/> Ibid 47 [3.33].<lb/> </bibl>
+          
+        <bibl><label>52</label><lb/> Ibid 1 [1.1].<lb/> </bibl>
+        <bibl><label>53</label><lb/> Constitution s 97 (emphasis added).<lb/> </bibl>
+          
+        <bibl><label>54</label><lb/> See below footnote 130 and accompanying text.<lb/> </bibl>
+        <bibl><label>55</label><lb/> John Quick and Robert Randolph Garran, The Annotated Constitution of the Australian<lb/> Commonwealth (Angus &amp; Robertson, 1901) 872.<lb/> </bibl>
+        <bibl><label>56</label><lb/> John Trone, Lumb, Moens and Trone: The Constitution of the Commonwealth of Australia Annotated<lb/> (LexisNexis, 10 th ed, 2021) 467.<lb/> </bibl>
+        <bibl><label>57</label><lb/> Re Residential Tenancies Tribunal (NSW); Ex parte Defence Housing Authority (1997) 190 CLR<lb/> 410, 435-6 (Dawson, Toohey and Gaudron JJ), 424 (Brennan CJ), 449 (McHugh J), 462 (Gummow<lb/> J); Quick and Garran (n 55) 660-1, 715; </bibl>
+          <bibl>Trone (n 56) 423, 517-18.<lb/> </bibl>
+          
+        <bibl><label>58</label><lb/> Clubb v Edwards (2019) 267 CLR 171, 313 [416] (Edelman J) ('Clubb').<lb/> </bibl>
+        <bibl><label>59</label><lb/> PGPA Act (n 13) s 50 (emphasis added).<lb/> </bibl>
+        <bibl><label>60</label><lb/> Ibid s 5(c)(iii) (emphasis added).<lb/> </bibl>
+        <bibl><label>61</label><lb/> Ibid s 5(a) (emphasis added).<lb/> </bibl>
+        <bibl><label>62</label><lb/> Ibid s 8 (emphasis added).<lb/> </bibl>
+        <bibl><label>63</label><lb/> Ibid (emphasis added).<lb/> </bibl>
+        <bibl><label>64</label><lb/> Pidoto v Victoria (1943) 68 CLR 87, 108 (Latham CJ) ('Pidoto').<lb/> </bibl>
+        <bibl><label>65</label><lb/> Victoria v Commonwealth (1996) 187 CLR 416, 502 (Brennan CJ, Toohey, Gaudron, McHugh and<lb/> Gummow JJ) ('Industrial Relations Act Case').<lb/> </bibl>
+        <bibl><label>66</label><lb/> Pidoto (n 64) 108 (Latham CJ).<lb/> </bibl>
+        <bibl><label>67</label><lb/> Re Tracey; Ex parte Ryan (1989) 166 CLR 518, 577 (Brennan and Toohey JJ).<lb/> </bibl>
+        <bibl><label>68</label><lb/> Clubb (n 58) 317 [422] (Edelman J).<lb/> </bibl>
+          
+        <bibl><label>69</label><lb/> Newcastle &amp; Hunter River Steamship Co Ltd v A-G (Cth) (1921) 29 CLR 357, 369 (Knox CJ,<lb/> Higgins, Gavan Duffy, Powers, Richard Starke JJ).<lb/> </bibl>
+        <bibl><label>70</label><lb/> Williams No 2 (n 7) 462-3 [52]-[55], 469-70 [85]-[87] (French CJ, Hayne, Kiefel, Bell and<lb/> Keane JJ).<lb/> </bibl>
+        <bibl><label>71</label><lb/> AAP Case (n 1) 397.<lb/> </bibl>
+        <bibl><label>72</label><lb/> Stephenson (n 4) 65.<lb/> </bibl>
+        <bibl><label>73</label><lb/> Williams No 2 (n 7) 467-8 [78] (French CJ, Hayne, Kiefel, Bell and Keane JJ), quoting from the<lb/> defendants' submissions.<lb/> </bibl>
+          
+        <bibl><label>74</label><lb/> Davis v Commonwealth (1988) 166 CLR 79, 111 (Brennan J) ('Davis').<lb/> </bibl>
+        <bibl><label>75</label><lb/> Ibid 94 (Mason CJ, Deane and Gaudron JJ). </bibl>
+          <bibl>See also Pape (n 4) 60 [127] (French CJ), 90-1 [239]<lb/> (Gummow, Crennan and Bell JJ).<lb/> </bibl>
+        <bibl><label>76</label><lb/> Williams No 1 (n 5) 348 [503] (Crennan J).<lb/> </bibl>
+        <bibl><label>77</label><lb/> Pape (n 4) 87 [228], </bibl>
+          <bibl>approving the formulation in Davis (n 74) 111 (Brennan J) </bibl>
+          <bibl>of the principle stated<lb/> in AAP Case (n 1) 397 (Mason J).<lb/> </bibl>
+        <bibl><label>78</label><lb/> Pape (n 4) 24 [10] (French CJ), 92 [244]-[245] (Gummow, Crennan and Bell JJ).<lb/> </bibl>
+        <bibl><label>79</label><lb/> Williams No 2 (n 7) 466-7 [72] (French CJ, Hayne, Kiefel, Bell and Keane JJ) (emphasis in original).<lb/> </bibl>
+        <bibl><label>80</label><lb/> Peta Stephenson, 'Justice Mason in the Australian Assistance Plan Case (1975): Nationhood,<lb/> Federalism and Commonwealth Executive Power' in Andrew Lynch (ed), Great Australian Dissents<lb/> (Cambridge University Press, 2016) 169, 180-3. </bibl>
+          <bibl>See also Williams No 1 (n 5) 348 [503] (Crennan<lb/> J).<lb/> </bibl>
+        <bibl><label>81</label><lb/> AAP Case (n 1) 397 (Mason J) (emphasis added). </bibl>
+          <bibl>See also Pape (n 4) 63 [133] (French CJ); </bibl>
+          <bibl>Williams<lb/> No 2 (n 7) 466 [71] (French CJ, Hayne, Kiefel, Bell and Keane JJ).<lb/> </bibl>
+        <bibl><label>82</label><lb/> AAP Case (n 1) 397 (Mason J) (emphasis added).<lb/> </bibl>
+        <bibl><label>83</label><lb/> Peter Hanks, Frances Gordon and Graeme Hill, Constitutional Law in Australia (LexisNexis<lb/> Butterworths, 4 th ed, 2017) 214.<lb/> </bibl>
+        <bibl><label>84</label><lb/> Stephenson (n 4) 57 (emphasis added).<lb/> </bibl>
+        <bibl><label>85</label><lb/> Ibid 54.<lb/> </bibl>
+        <bibl><label>86</label><lb/> Project Blue Sky Inc v Australian Broadcasting Authority (1998) 194 CLR 355.<lb/> </bibl>
+          
+        <bibl><label>87</label><lb/> Williams No 2 (n 7) 457 [36] (French CJ, Hayne, Keifel, Bell and Keane JJ); Industrial Relations Act<lb/> Case (n 65) 501-3 (Brennan CJ, Toohey, Gaudron, McHugh and Gummow JJ).<lb/> </bibl>
+        <bibl><label>88</label><lb/> Department of Finance, Requests for Discretionary Financial Assistance under the Public<lb/> Governance, Performance and Accountability Act 2013 (Resource Management Guide 401) ('RMG<lb/> 401').<lb/> </bibl>
+        <bibl><label>89</label><lb/> Sharp v Wakefield [1891] AC 173, 179 (Lord Halsbury LC).<lb/> </bibl>
+        <bibl><label>90</label><lb/> Marbury v Madison, 5 US (1 Cranch) 137, 177 (1803).<lb/> </bibl>
+          
+        <bibl><label>91</label><lb/> W Bateman (n 20) 184.<lb/> </bibl>
+        <bibl><label>92</label><lb/> RMG 401 (n 88) [10].<lb/> </bibl>
+        <bibl><label>93</label><lb/> 'Scheme for Compensation for Detriment caused by Defective Administration (CDDA Scheme)',<lb/> Department of Finance (Web Page, 2024) &lt;https://www.finance.gov.au&gt;.<lb/> </bibl>
+        <bibl><label>94</label><lb/> Boughey, Rock and Weeks (n 28) 293-4.<lb/> </bibl>
+          
+        <bibl><label>95</label><lb/> Ibid 293.<lb/> </bibl>
+          
+        <bibl><label>96</label><lb/> Amanda Sapienza, Judicial Review of Non-Statutory Executive Action (Federation Press, 2020) 37<lb/> n 205.<lb/> </bibl>
+        <bibl><label>97</label><lb/> W Bateman (n 20) 185.<lb/> </bibl>
+        <bibl><label>98</label><lb/> Ibid 187.<lb/> </bibl>
+        <bibl><label>99</label><lb/> FFLA Act No 3 (n 48) sch 2.<lb/> </bibl>
+          
+        <bibl><label>100</label> Review of Government Compensation Payments (n 23) 50 [342]; </bibl>
+          <bibl>Safety, Rehabilitation and<lb/> Compensation Amendment (Improving the Comcare Scheme) Bill 2015 (Cth) cl 70C; </bibl>
+          <bibl>Explanatory<lb/> Memorandum, Safety, Rehabilitation and Compensation Amendment (Improving the Comcare<lb/> Scheme) Bill (Cth) 27-8, 32-3.<lb/></bibl>
+        <bibl><label>101</label> Committee on Ministers' Powers (UK), Report (Cmd 4060, 1932) 112.<lb/> </bibl>
+        <bibl><label>102</label> Joseph Chitty, A Treatise on the Law of the Prerogatives of the Crown (Butterworth, 1820) 5.<lb/> </bibl>
+        <bibl><label>103</label> Boughey, Rock and Weeks (n 28) 290-1.<lb/> </bibl>
+        <bibl><label>104</label> Williams No 1 (n 5) 249 [193] (Hayne J) (emphasis added) (citations omitted). </bibl>
+          <bibl>See also at 361 [558],<lb/> 366 [569] (Kiefel J).<lb/> </bibl>
+          
+        <bibl><label>105</label> Discussed above in Part II(C)(1)(iii).<lb/> </bibl>
+        <bibl><label>106</label> AAP Case (n 1) 397 (Mason J); </bibl>
+          <bibl>Williams No 1 (n 5) 249-52 [194]-[198], 267 [240] (Hayne J), 362<lb/> [559], 370-3 [582]-[594] (Kiefel J), 346-9 [497]-[507], 357 [542] (Crennan J). See also at 180 [4],<lb/> 184-5 [22], 188-91 [29]-[34], 216-17 [83] (French CJ), 230-1 [131], 234-5 [144]-[146] (Gummow<lb/> and Bell JJ), 272 [256] (Hayne J), 342 [485], 355 [535] (Crennan J), 361 [558] (Kiefel J).<lb/> </bibl>
+          
+        <bibl><label>107</label> For a discussion of the use of the concepts of breadth and depth to analyse Commonwealth executive<lb/> power, see Stephenson (n 4) 36-8. For a discussion of the limitations on the nationhood power framed<lb/> by those concepts, see at 59-70.<lb/> </bibl>
+          
+        <bibl><label>108</label> See above Part II(C)(1)(iii) for our discussion of the possible engagement of the nationhood power,<lb/> in combination with s 51(xxxix) of the Constitution, to provide constitutional support to s 65 of the<lb/> PGPA Act (n 13).<lb/> </bibl>
+        <bibl><label>109</label> AAP Case (n 1) 397 (Mason J) (emphasis added).<lb/> </bibl>
+        <bibl><label>110</label> Ibid 397 (Mason J) (emphasis added).<lb/> </bibl>
+        <bibl><label>111</label> Hanks, Gordon and Hill (n 83) 214.<lb/> </bibl>
+        <bibl><label>112</label> Williams No 1 (n 5) 233-4 [139]-[141] (Gummow and Bell JJ), 255-6 [208]-[209] (Hayne J), 342<lb/> [484], 343 [487], 345 [493], 353-5 [525]-[534] (Crennan J). See at 370 [582] (Kiefel J). </bibl>
+          <bibl>In Williams<lb/> No 1, the existence of the ordinary functions exception was not in dispute between the parties:<lb/> Williams No 1 (n 5) 233 [139] (Gummow and Bell JJ), 342 [482]-[484], 345 [493] (Crennan J), 370<lb/> [582] (Kiefel J).<lb/> </bibl>
+          
+        <bibl><label>113</label> RMG 409 (n 35) [1].<lb/> </bibl>
+          
+        <bibl><label>114</label> Williams No 1 (n 5) 216 [83] (French CJ), 342 [484], 343 [487], 358 [544] (Crennan J), 373 [594]<lb/> (Kiefel J). </bibl>
+          <bibl>See generally at 184-6 [22]-[25] (French CJ), 227-8 [123]-[124] (Gummow and Bell JJ).<lb/> </bibl>
+          <bibl>The existence of the prerogative exception was not in dispute between the parties in Williams No 1:<lb/> Williams No 1 (n 5) 342 [482]-[484], 345 [493] (Crennan J); 370 [582] (Kiefel J).<lb/> </bibl>
+          
+        <bibl><label>115</label> L v South Australia (2017)  129 SASR 180, 188 [29]-[30] (Kourakis CJ).<lb/> </bibl>
+        <bibl><label>116</label> Ibid 31 [107] (Kourakis CJ).<lb/> </bibl>
+        <bibl><label>117</label> Ibid 30 [102] (Kourakis CJ). </bibl>
+          <bibl>See also Stephenson (n 4) 21.<lb/> </bibl>
+        <bibl><label>118</label> Hanks, Gordon and Hill (n 83) 214.<lb/> </bibl>
+        <bibl><label>119</label> Plaintiff M68/2015 v Minister for Immigration and Border Protection (2016) 257 CLR 42, 98 [134]<lb/> ('Plaintiff M68').<lb/> </bibl>
+        <bibl><label>120</label> Ibid.<lb/> </bibl>
+        <bibl><label>121</label> Chitty (n 102) 25.<lb/> </bibl>
+          
+        <bibl><label>122</label> Plaintiff M68/2015 (n 119) 98 [135] (Gageler J).<lb/> </bibl>
+        <bibl><label>123</label> Stephenson (n 4) 64.<lb/> </bibl>
+        <bibl><label>124</label> Plaintiff M68 (2016) 257 CLR 42, 98 [135] (Gageler J) (citations omitted).<lb/> </bibl>
+        <bibl><label>125</label> 'You shall find it to be the law almost in every case of the King, that is law in no case of a subject':<lb/> Sir Henry Finch, Law or a Discourse Thereof in Four Books (Henry Lintot, 1759) 85.<lb/> </bibl>
+        <bibl><label>126</label> Chitty (n 102) 4; </bibl><bibl>HV Evatt, The Royal Prerogative (Law Book Company, 1987) 11-12.<lb/> </bibl>
+        <bibl><label>127</label> R v Ministry of Defence; Ex parte Walker (2000) 2 All ER 917, 928<lb/> </bibl>
+        <bibl><label>128</label> Stephenson (n 4) 19-21.<lb/></bibl>
+        <bibl><label>129</label> See, eg, United Kingdom, Parliamentary Debates, House of Commons, 28 July 1896, 827.<lb/> </bibl>
+          
+        <bibl><label>130</label> Paul Finn, Law and Government in Colonial Australia (Oxford University Press, 1987) 75. </bibl>
+          <bibl>See, eg,<lb/> Western Australia, Parliamentary Debates, Legislative Assembly, 20 February 1891;</bibl> 
+          <bibl>Western<lb/> Australia, Parliamentary Debates, Legislative Assembly, 18 January 1892, 285; </bibl>
+          <bibl>Western Australia,<lb/> Parliamentary Debates, Legislative Assembly, 19 December 1892, 447-8; </bibl>
+          <bibl>Parliament of New South<lb/> Wales, Sessional Papers, 1899(3) 462-3, 870, 867.<lb/> </bibl>
+          
+        <bibl><label>131</label> Finn (n 130) 75. </bibl>
+          <bibl>See also Parramatta River Steamers &amp; Tramway Co v Hixson (1895) 16 NSWLR<lb/> 105, 109 (Martin CJ), 109-10 (Windeyer J), 110 (Innes J) ('Parramatta River Steamers'); </bibl>
+          <bibl>Twaddell<lb/> v Driver [1877] Knox Reports 459 ('Twaddell').<lb/> </bibl>
+        <bibl><label>132</label> Finn (n 130) 75.<lb/> </bibl>
+        <bibl><label>133</label> Parramatta River Steamers (n 131) 109 (Martin CJ), 109-10 (Windeyer J), 110 (Innes J). </bibl>
+          <bibl>See<lb/> Twaddell (n 131).<lb/> </bibl>
+        <bibl><label>134</label> See above n 112 and accompanying text.<lb/> </bibl>
+          
+        <bibl><label>135</label> Green v Daniels (1977) 13 ALR 1.<lb/> </bibl>
+        <bibl><label>136</label> Sapienza (n 96) 177.<lb/> </bibl>
+        <bibl><label>137</label> Ibid 141; Stephenson (n 4) 25.<lb/> </bibl>
+        <bibl><label>138</label> British Broadcasting Corporation v Johns [1965] Ch 32, 79 (Diplock LJ).<lb/> </bibl>
+        <bibl><label>139</label> Nicholas Condylis, 'Debating the Nature and Ambit of the Commonwealth's Non-Statutory<lb/> Executive Power' (2015) 39(2) Melbourne University Law Review 385, 406, </bibl>
+          <bibl>quoting George<lb/> Winterton, 'The Prerogative in Novel Situations' (1983) 99 Law Quarterly Review 407, 408<lb/> (emphasis in original).<lb/> </bibl>
+        <bibl><label>140</label> Case of Proclamations (1610) 12 Co Rep 74; 77 ER 1352.<lb/> </bibl>
+        <bibl><label>141</label> SA de Smith, Judicial Review of Administrative Action (Stevens &amp; Sons, 1959) 118.<lb/> </bibl>
+        <bibl><label>142</label> Council of Civil Service Unions v Minister for the Civil Service [1985] AC 374.<lb/> </bibl>
+        <bibl><label>143</label> Clement v Minister for Finance &amp; Deregulation [2009] FMCA 43, [32] (Neville FM) ('Clement').<lb/> </bibl>
+        <bibl><label>144</label> Ibid [25], [30], [38]; Hartigan v Treasurer (ACT) (2018) 228 FLR 324, 329 [29] ('Hartigan').<lb/> </bibl>
+        <bibl><label>145</label> See, eg, Toomer (n 30) [47].<lb/> </bibl>
+          
+        <bibl><label>146</label> Clement (n 143) [31] (Neville FM).<lb/> </bibl>
+        <bibl><label>147</label> Sapienza (n 96) 151-2.<lb/> </bibl>
+        <bibl><label>148</label> Tickner v Chapman (1995) 57 FCR 451, 455, 465.<lb/> </bibl>
+        <bibl><label>149</label> The Commonwealth Ombudsman identified a similar problem with the way in which Centrelink's<lb/> Customer Compensation Handbook described the CDDA Scheme: Putting Things Right (n 37) 25-<lb/>7, 32.<lb/> </bibl>
+        <bibl><label>150</label> Review of Government Compensation Payments (n 23) 52 [3.47], referring to concerns of the Acting<lb/> Commonwealth Ombudsman.<lb/> </bibl>
+          
+        <bibl><label>151</label> Ibid, </bibl>
+          <bibl>quoting Women's Legal Service NSW, Submission No 108 to Senate Legal and Constitutional<lb/> Affairs References Committee, Parliament of Australia, Review of Government Compensation<lb/> Payments (2010) 3.<lb/> </bibl>
+        <bibl><label>152</label> Hartigan (n 144) 335-8 [76]-[93].<lb/> </bibl>
+        <bibl><label>153</label> Hartigan v Commissioner for Social Housing (ACT) (2017) 319 FLR 158.<lb/> </bibl>
+        <bibl><label>154</label> Boughey, Rock and Weeks (n 28) 319-20.<lb/> </bibl>
+        <bibl><label>155</label> Hartigan (n 144) 326 [4].<lb/> </bibl>
+        <bibl><label>156</label> Ibid 331 [47] (McWilliam AsJ).<lb/> </bibl>
+          
+        <bibl><label>157</label> Western Australia distinguishes between 'act of grace payments' under the Financial Management<lb/> Act 2006 (WA) and 'ex gratia payments' made 'under non-statutory executive power': 'Treasurer's<lb/> Instruction 319: Act of Grace Payments' in Treasury (WA), Financial Administration Bookcase<lb/> (Update 92, November 2023) ('WA Treasurer's Instruction'). </bibl>
+          <bibl>By contrast, in New South Wales the<lb/> two terms are treated as interchangeable: NSW Treasury Circular (n 11).<lb/> </bibl>
+        <bibl><label>158</label> Williams No 2 (n 7) 464 [64] (French CJ, Hayne, Kiefel, Bell and Keane JJ).<lb/> </bibl>
+        <bibl><label>159</label> See, eg, Hanks, Gordon and Hill (n 83) 220, 236-7; </bibl>
+          <bibl>Selena Bateman, 'Constitutional Dimensions of<lb/> State Executive Power: An Analysis of the Power to Contract and Spend' (2015) 26(4) Public Law<lb/> Review 255.<lb/> </bibl>
+        <bibl><label>160</label> Williams No 1 (n 5) 254 [206] (Hayne J).<lb/> </bibl>
+        <bibl><label>161</label> With the arguable exception of WA: see Constitution Act 1889 (WA) s 64. However, in contrast to s<lb/> 81 of the Constitution which is entrenched (and binds the Commonwealth Parliament), s 64 of the<lb/> Constitution Act 1889 is not entrenched.<lb/> </bibl>
+        <bibl><label>162</label> Anne Twomey, 'Post-Williams Expenditure: When Can the Commonwealth Spend Public Money<lb/> without Parliamentary Authorisation?' (2014) 33(1) University of Queensland Law Journal 9, 25.<lb/> </bibl>
+        <bibl><label>163</label> Kathleen Foley, 'What is the Relevance of Williams and Plaintiff M61 for the Exercise of State<lb/> Executive Power?' (2013) 36(2) University of Western Australia Law Review 168, 179.<lb/> </bibl>
+        
+        <bibl><label>164</label> Plaintiff M61/2010E v Commonwealth (2010) 243 CLR 319.<lb/> </bibl>
+        <bibl><label>165</label> Foley (n 163) 179.<lb/> </bibl>
+        <bibl><label>166</label> Appleby and McDonald (n 17) 270. </bibl>
+          <bibl>See Williams No 1 (n 5) 241 [173] (Hayne J).<lb/> </bibl>
+          
+        <bibl><label>167</label> Appleby and McDonald (n 17) 253.<lb/> </bibl>
+        <bibl><label>168</label> W Bateman (n 20) 185. </bibl>
+          <bibl>See Williams No 1 (n 5) 192-3 [37] (French CJ); </bibl>
+          <bibl>Williams No 2 (n 7) 468-9<lb/> [79]-[83] (French CJ, Hayne, Kiefel, Bell and Keane JJ).<lb/> </bibl>
+          
+        <bibl><label>169</label> Appleby and McDonald (n 17) 280.<lb/> </bibl>
+        
+        <bibl type="footnote"><label>170</label> For example, the Commonwealth's legislative powers are directly conferred by the Constitution,<lb/> whereas the states enjoy the 'unexpressed residuary' of legislative power; and s 109 gives<lb/> Commonwealth laws paramountcy over inconsistent state laws.<lb/> </bibl>
+          
+        <bibl><label>171</label> Foley (n 163) 176, 178.<lb/> </bibl>
+        <bibl><label>172</label> Williams No 1 (n 5) 205 [60] (French CJ), 232 [136] (Gummow and Bell JJ).<lb/> </bibl>
+        <bibl><label>173</label> S Bateman (n 159) 269-70.<lb/> </bibl>
+        <bibl><label>174</label> Williams No 1 (n 5) 205 [60] (French CJ).<lb/> </bibl>
+          
+        <bibl><label>175</label> Section 62(1) of the Constitution Act 1934 (SA) provides that the South Australian Legislative<lb/> Council cannot amend any 'money clause', which is defined in s 60(4) as 'a clause of a Bill, which<lb/> clause appropriates revenue or other public money, or deals with taxation, or provides for raising or<lb/> guaranteeing any loan or for the repayment of any loan'. The Legislative Council can, however, under<lb/> s 62(2), 'return to the House of Assembly any Bill containing a money clause with a suggestion to<lb/> omit or amend such clause or to insert additional money clauses, or may send to the Assembly a Bill<lb/> containing suggested money clauses requesting, by message, that effect be given to the suggestion'.<lb/> However, s 62(3) provides that s 62(2) 'applies to a money clause contained in an appropriation Bill<lb/> only when such a clause contains some provision appropriating revenue or other public money for<lb/> some purpose other than a previously authorised purpose or dealing with some matter other than the<lb/> appropriation of revenue or other public money'. In Tasmania, s 42(1) of the Constitution Act 1934<lb/> (Tas) provides that the Legislative Council 'may not amend … a provision of a Bill for an<lb/> Appropriation Act … to meet the cost of the ordinary annual services of the Government' although<lb/> it may, under s 43(1) 'request, by message, the amendment of the Bill'.<lb/> </bibl>
+          
+        <bibl><label>176</label> Constitution Act 1975 (Vic) ss 62, 64, 65; Constitution Act 1902 (NSW) s 5A.<lb/> </bibl>
+        <bibl><label>177</label> Williams No 1 (n 5) 352 [519] (Crennan J).<lb/> </bibl>
+        <bibl><label>178</label> Ibid 236 [151] (Gummow and Bell JJ), 241 [173] (Hayne J).<lb/> </bibl>
+        <bibl><label>179</label> Ibid 236 [151] (Gummow and Bell JJ), 241 [173] (Hayne J), 368 [577] (Kiefel J).<lb/></bibl>
+        
+        <bibl><label>180</label> Twomey (n 162) 9.<lb/> </bibl>
+          
+        <bibl><label>181</label> Ibid 27.<lb/> </bibl>
+        <bibl><label>182</label> Those instruments are Treasury (SA), Ex Gratia Payments (Treasurer's Instruction 14, July 2020)<lb/> ('SA Treasurer's Instruction'); Treasury (Vic), Disclosure of Ex Gratia Expenses (Financial<lb/> Reporting Direction 11, April 2022) [6.1] (emphasis added) ('Victorian Treasurer's Direction') and<lb/> NSW Treasury Circular (n 11).<lb/> </bibl>
+        <bibl><label>183</label> WA Treasurer's Instruction (n 157).<lb/> </bibl>
+        <bibl><label>184</label> Victorian Treasurer's Direction (n 182) 6.1 (emphasis added).<lb/> </bibl>
+          
+        <bibl><label>185</label> NSW Treasury Circular (n 11); </bibl>
+          <bibl>SA Treasurer's Instruction (n 182).<lb/> </bibl>
+          
+        <bibl><label>186</label> Craig v South Australia (1995) 184 CLR 163, 179.<lb/> </bibl>
+        <bibl><label>187</label> Foley (n 163) 178-9.<lb/></bibl>
+          
+        <bibl><label>188</label> Twomey (n 162) 27.<lb/> </bibl>
+          
+        <bibl><label>189</label> R v Governor of South Australia (1907) 4 CLR 1497.<lb/> </bibl>
+          
+        <bibl><label>190</label> See above Part II(C)(2)(c).<lb/> </bibl>
+          
+        <bibl><label>191</label> Australian Capital Territory (Self-Government) Act 1988 (Cth) s 22; </bibl>
+          <bibl>Northern Territory (Self-<lb/>Government) Act 1978 (Cth) s 6. Section 22(2) of the former adds that 'power to make laws extends<lb/> to the power to make laws with respect to the exercise of powers by the Executive'.<lb/> </bibl>
+        <bibl><label>192</label> W Bateman (n 20) 179.<lb/> </bibl>
+        <bibl><label>193</label> Ibid 195.</bibl>
+        </listBibl>
+    </text>
+</TEI>

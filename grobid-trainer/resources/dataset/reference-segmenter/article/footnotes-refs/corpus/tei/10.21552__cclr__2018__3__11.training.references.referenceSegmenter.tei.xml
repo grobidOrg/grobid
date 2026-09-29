@@ -1,0 +1,200 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.21552__cclr__2018__3__11">
+    <titleStmt>
+      <title level="a">Climate Finance: Too Much on Detail, Too Little on the Big Picture?</title>
+      <author>
+        <persName>
+          <forename>R.</forename>
+          <surname>Bodle</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>V.</forename>
+          <surname>Noens</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="pfaffe">Milena Pfaffe</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Lexxion Verlag</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2018</date>
+      <idno type="DOI">10.21552/cclr/2018/3/11</idno>
+      <ptr target="https://doi.org/10.21552/cclr/2018/3/11"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>R. Bodle, V. Noens. (2018). Climate Finance: Too Much on Detail, Too Little on the Big Picture?. Carbon &amp;amp; Climate Law Review, 12(3), 248-257. DOI: 10.21552/cclr/2018/3/11</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Climate Finance: Too Much on Detail, Too Little on the Big Picture?</title>
+          <author>
+            <persName>
+              <forename>R.</forename>
+              <surname>Bodle</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>V.</forename>
+              <surname>Noens</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Carbon &amp;amp; Climate Law Review</title>
+          <imprint>
+            <biblScope unit="volume">12</biblScope>
+            <biblScope unit="issue">3</biblScope>
+            <biblScope unit="page" from="248" to="257">248-257</biblScope>
+            <date when="2018">2018</date>
+            <publisher>Lexxion Verlag</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.21552/cclr/2018/3/11</idno>
+        <ptr target="https://doi.org/10.21552/cclr/2018/3/11"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-16T09:39:50.537005Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-65-gd393236aa</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-16T09:39:50.537005Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-17T12:26:00.340Z" status="unfinished" who="#pfaffe">
+      <note type="label">v2 (pfaffe)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-17T13:37:48.332Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-17T13:45:14.639Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-07-02T12:35:06.544Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-07-02T13:00:51.456Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-07-02T13:24:55.441Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> Without prejudice to the discussion on definitions and terminolo-<lb/>gy, we use the term 'climate finance' in a broad sense, including<lb/> public, private and other finance. The UNFCCC website states<lb/> that '[c]limate finance refers to local, national or transnational<lb/> financing -drawn from public, private and alternative sources of<lb/> financing -that seeks to support mitigation and adaptation<lb/> actions that will address climate change', see &lt;https://unfccc.int/<lb/> topics/climate-finance/the-big-picture/introduction-to-climate<lb/> -finance&gt; accessed 20 September 2018.<lb/> </bibl>
+        <bibl><label>2</label> For details on the negotiating history see Jorge Gastelumendi and<lb/> Inka Gnittke, 'Climate Finance (Article 9)' in Daniel Klein and<lb/> others (eds), The Paris Agreement on Climate Change: Analysis<lb/> and Commentary (Oxford University Press, 2017 239, 240-242.<lb/> </bibl>
+          <bibl>See also the overviews on: &lt;https://unfccc.int/topics/climate<lb/> -finance/the-big-picture/introduction-to-climate-finance&gt;;<lb/> &lt;https://unfccc.int/topics/climate-finance/the-big-picture/climate<lb/> -finance-in-the-negotiations&gt;; and &lt;https://unfccc.int/<lb/> climatefinance?home&gt; accessed 20 September 2018.<lb/> </bibl>
+
+        <bibl><label>3</label> Articles without further specification refer to the Paris Agreement.<lb/> For ease of reference, in this article 'countries' and 'states' should<lb/> be read as including the European Union, unless otherwise stated.<lb/> </bibl>
+        <bibl><label>4</label> Paris Agreement (adopted 12 December 2015, entered into force<lb/> 4 November 2016) 55 ILM 740.<lb/> </bibl>
+        <bibl><label>5</label> UNFCCC 'Decision 1/CP.21, Adoption of the Paris Agreement'<lb/> UN Doc FCCC/CP/2015/10/Add.1 (29 January 2016). </bibl>
+          <bibl>For the<lb/> legal structure of the Paris outcome see Ralph Bodle and Sebast-<lb/>ian Oberthür, 'Legal Form of the Paris Agreement and Nature of<lb/> Obligations' in Klein and others (n 2) 91, 91-92.<lb/> </bibl>
+        <bibl><label>6</label> Decision 1/CP.21 (n 5) para 53. On the specific legal wording<lb/> used for the finance provisions see Sebastian Oberthür and Ralph<lb/> Bodle, 'Legal Form and Nature of the Paris Outcome' (2016) 6<lb/> Clim L 40, 54.<lb/> </bibl>
+        <bibl><label>7</label> See UNFCCC 'Informal notes prepared under their own responsi-<lb/>bility by the co-facilitators of agenda items 3-8 of the Ad Hoc<lb/> Working Group on the Paris Agreement' FC-<lb/>CC/APA/2018/L.2/Add.1 (10 May 2018), 162.<lb/> </bibl>
+        <bibl><label>8</label> Paris Agreement (n 4) art 9(5) builds on the periodic submissions<lb/> on the 'strategies and approaches' for scaling up climate finance<lb/> which were based on UNFCCC 'Decision 1/CP.18, Agreed Out-<lb/>come Pursuant to the Bali Action Plan' UN Doc FC-<lb/>CC/CP/2012/8/Add.1 (28 February 2013) para 67;</bibl>
+          <bibl> and 'Decision<lb/> 3/CP.19, Long-term Climate Finance' UN Doc FC-<lb/>CC/CP/2013/10/Add.1 (31 January 2014) para 12.<lb/> </bibl>
+        <bibl><label>9</label> Decision 1/CP.21 (n 5) para 55.<lb/> </bibl>
+        <bibl><label>10</label> See eg Decision 1/CP.21 (n 5) para 58,59, 63.<lb/> </bibl>
+        <bibl><label>11</label> ibid para 59; </bibl><bibl>UNFCCC 'Decision 1/CP.22, Preparations for the<lb/> Entry Into Force of the Paris Agreement and the First Session of the<lb/> Conference of the Parties Serving as the Meeting of the Parties to<lb/> the Paris Agreement' UN Doc FCCC/CP/2016/10/Add.1 (31 Janu-<lb/>ary 2017) para 14; </bibl><bibl>UNFCCC 'Decision 1/CMP. 13, Report of the<lb/> Adaptation Fund Board' UN Doc FCCC/KP/CMP/2017/7/Add.1 (8<lb/> February 2018) paras 12-14; </bibl><bibl>Ralph Czarnecki and Kaveh Guilan-<lb/>pour, 'The Adaptation Fund after Poznan' (2009) 3 CCLR 79.<lb/> </bibl>
+
+        <bibl><label>12</label> Paris Agreement (n 4) art 2(1)(c).<lb/> </bibl>
+        <bibl><label>13</label> Bodle and Oberthür (n 5) 96.<lb/> </bibl>
+        <bibl><label>14</label> ibid 96, 100.<lb/> </bibl>
+        <bibl><label>15</label> Ralph Bodle, Lena Donat and Matthias Duwe 'The Paris Agree-<lb/>ment: Analysis, Assessment and Outlook' (2016) 10 CCLR 5, 7.<lb/> </bibl>
+        <bibl><label>16</label> ibid 7, 16.<lb/> </bibl>
+
+        <bibl><label>17</label> Decision 1/CP.21 (n 5) para 43.<lb/> </bibl>
+        <bibl><label>18</label> Bodle and Oberthür (n 5) 96.<lb/> </bibl>
+        <bibl><label>19</label> Gastelumendi and Gnittke (n 2) 249, note the potential of the<lb/> Paris Decision including enabling environments in the 2016<lb/> facilitative dialogue, but it does not seem to have started a con-<lb/>structive debate.<lb/> </bibl>
+        <bibl><label>20</label> See, &lt;https://unfccc.int/documents&gt;.<lb/> </bibl>
+        <bibl><label>21</label> UNFCCC 'Additional tool under item 6 of the agenda. Matters<lb/> relating to the global stocktake referred to in Article 14 of the<lb/> Paris Agreement: (a) identification of the sources of input for the<lb/> global stocktake; and (b) development of the modalities of the<lb/> global stocktake', APA1.6.Informal.1.Add.4 (2 Augsut 2018). </bibl>
+          <bibl>See<lb/> also Jennifer Huang, 'What Can the Paris Agreement's Global<lb/> Stocktake Learn from the Sustainable Development Goals?'<lb/> (2018) 12 CCLR.<lb/> </bibl>
+        <bibl><label>22</label> UNFCCC (n 21) Annex, para 5, sub-options 2.1-2.3.<lb/> </bibl>
+        <bibl><label>23</label> ibid Annex, para 38, option 2.<lb/> </bibl>
+        <bibl><label>24</label> ibid Annex, paras 62(h) and 63(c).<lb/> </bibl>
+        <bibl><label>25</label> Regarding the global stocktake, see for instance UNFCCC, 'Re-<lb/>vised additional tool under item 6 of the agenda Matters relating<lb/> to the global stocktake referred to in Article 14 of the Paris Agree-<lb/>ment: (a) identification of the sources of input for the global<lb/> stocktake; </bibl>
+          <bibl>and (b) development of the modalities of the global<lb/> stocktake' (6 September 2018) (on file with the authors) paras 5,<lb/> 62(h), 63(c).<lb/> </bibl>
+        <bibl><label>26</label> UNFCCC 'Additional tool under item 3 of the agenda. Further<lb/> guidance in relation to the mitigation section of decision 1/CP.21<lb/> on: (a) features of nationally determined contributions, as speci-<lb/>fied in paragraph 26; (b) information to facilitate clarity, trans-<lb/>parency and understanding of nationally determined contribu-<lb/>tions, as specified in paragraph 28; and (c) accounting for Parties'<lb/> nationally determined contributions, as specified in paragraph<lb/> 31', APA1.6.Informal.1.Add.1 (6 August 2018) in the section on<lb/> 'information to facilitate clarity, transparency and understanding'<lb/> of NDCs, p. 17 line 435.<lb/> </bibl>
+        <bibl><label>27</label> See the overview at &lt;https://unfccc.int/topics/climate-finance/<lb/> resources/biennial-assessment-of-climate-finance&gt; accessed 20<lb/> September 2018.<lb/> </bibl>
+        <bibl><label>28</label> Bodle and Oberthür (n 5) 96.<lb/> </bibl>
+
+        <bibl><label>29</label> Cf the guiding questions in the co-chairs' tool regarding the<lb/> global stocktake in UNFCCC (n 21) paras 8-13.<lb/> </bibl>
+        <bibl><label>30</label> See 'SCF Forum' (Session 2) &lt;https://unfccc.int/topics/climate<lb/> -finance/events-meetings/scf-forum/2018-forum-of-the-standing<lb/> -committee-on-finance&gt; accessed 20 September 2018.<lb/> </bibl>
+        <bibl><label>31</label> Paris Agreement (n 4) arts 2(1), first sentence, and 2(2).<lb/> </bibl>
+        <bibl><label>32</label> Gastelumendi and Gnittke (n 2) 248.<lb/> </bibl>
+        <bibl><label>33</label> As argued with regard to 'enabling environments' in ibid 249.<lb/> </bibl>
+        <bibl><label>34</label> Commission (EU), 'Action Plan: Financing Sustainable Growth'<lb/> (Communication) COM(2018) 97 final (8 March 2018). </bibl>
+          <bibl>For an<lb/> overview of legislative proposals see &lt;https://ec.europa.eu/info/<lb/> publications/180524-proposal-sustainable-finance&gt; accessed 20<lb/> September 2018. </bibl>
+          <bibl>See also the European Parliament Resolution of<lb/> 29 May 2018 on sustainable finance (2018/2007(INI)).<lb/> </bibl>
+        <bibl><label>35</label> See Decision 3/CP.19 (n 8) and UNFCCC 'Decision 5/CP.20 Long-<lb/>term Climate Finance' UN Doc FCCC/CP/2014/10/Add.2 (2<lb/> February 2015); </bibl>
+          <bibl>See also &lt;https://unfccc.int/topics/climate<lb/> -finance/workstreams/long-term-climate-finance&gt; accessed 20<lb/> September 2018.<lb/> </bibl>
+
+        <bibl><label>36</label> These have also been discussed under the label of 'enabling<lb/> environments'; </bibl>
+          <bibl>see Gastelumendi and Gnittke (n 2) 250.<lb/> </bibl>
+        <bibl><label>37</label> Paris Agreement (n 4) arts 9, 10, 11, 13(9) and 13(10).<lb/> </bibl>
+        <bibl><label>38</label> ibid art 13(3).<lb/> </bibl>
+        <bibl><label>39</label> Paris Agreement (n 4) art 13(1). </bibl><bibl>See also Christopher Campbell-<lb/>Duruflé, 'Rain or Sunshine in Katowice? Transparency in the Paris<lb/> Agreement Rulebook' (2018) 12 CCLR.<lb/> </bibl>
+        <bibl><label>40</label> Bodle and Oberthür (n 5) 103.<lb/> </bibl>
+        <bibl><label>41</label> Paris Agreement (n 4) art 13(6).<lb/> </bibl>
+
+        <bibl><label>42</label> ibid art 13(9).<lb/> </bibl>
+        <bibl><label>43</label> ibid art 13(10).<lb/> </bibl>
+        <bibl><label>44</label> ibid art 13(1), (4) and (13).<lb/> </bibl>
+        <bibl><label>45</label> ibid art 9(7).<lb/> </bibl>
+        <bibl><label>46</label> ibid art 13(11-12).<lb/> </bibl>
+        <bibl><label>47</label> UNFCCC, 'Informal note by the co-facilitators (version 9 May<lb/> 2018) -Draft elements for APA agenda item 5 -Modalities,<lb/> procedures and guidelines for the transparency framework for<lb/> action and support referred to in Art 13 of the Paris Agreement' (9<lb/> May 2018) &lt;https://unfccc.int/sites/default/files/resource/APA1-5<lb/> _IN_i5_final.pdf?download&gt; accessed 20 September 2018.<lb/> </bibl>
+        <bibl><label>48</label> Yamide Dagnet and others, 'Mapping the Linkages between the<lb/> Transparency Framework and Other Provisions of the Paris Agree-<lb/>ment' (World Resources Institute 2017).<lb/> </bibl>
+        <bibl><label>49</label> Paris Agreement (n 4) art 13(6).<lb/> </bibl>
+        <bibl><label>50</label> ibid art 9(1).<lb/> </bibl>
+        <bibl><label>51</label> ibid art 9(3).<lb/> </bibl>
+
+        <bibl><label>52</label> Decision 1/CP.21 (n 5) para 53.<lb/> </bibl>
+        <bibl><label>53</label> Romain Weikmans J Timmons Roberts, 'The International Climate<lb/> Finance Accounting Muddle: Is There Hope on the Horizon?'<lb/> (2017 fc) Climate and Development.<lb/> </bibl>
+        <bibl><label>54</label> UNFCCC 'Decision 1/CP.15, Outcome of the Work of the Ad Hoc<lb/> Working Group on Long-term Cooperative Action under the<lb/> Convention' UN Doc FCCC/CP/2009/11/Add.1 (30 March 2010).<lb/> </bibl>
+        <bibl><label>55</label> UNFCCC 'Decision 1/CP.16, The Cancun Agreements: Outcome<lb/> of the Work of the Ad Hoc Working Group on Long-term Cooper-<lb/>ative Action under the Convention' UN Doc FC-<lb/>CC/CP/2010/7/Add.1 (15 March 2011).<lb/> </bibl>
+        <bibl><label>56</label> UNFCCC 'Decision 2/CP.17, Outcome of the Work of the Ad Hoc<lb/> Working Group on Long-term Cooperative Action under the<lb/> Convention' UN Doc FCCC/CP/2011/9/Add.1 (15 March 2012)<lb/> </bibl>
+        <bibl><label>57</label> UNFCCC 'Decision 19/CP.18, Common Tabular Format for<lb/> "UNFCCC Biennial Reporting Guidelines for Developed Country<lb/> Parties"' UN Doc FCCC/CP/2012/8/Add.3 (28 February 2013);<lb/> </bibl>
+          <bibl>UNFCCC 'Decision 9/CP.21, Methodologies for the Reporting of<lb/> Financial Information by Parties Included in Annex I to the Con-<lb/>vention' UN Doc FCCC/CP/2015/10/Add.2 (29 January 2016).<lb/> </bibl>
+
+        <bibl><label>58</label> Dagnet and others (n 45).<lb/> </bibl>
+        <bibl><label>59</label> The World Bank, 'Developing Common Principles for Tracking<lb/> Climate Finance' &lt;http://www.worldbank.org/en/news/feature/<lb/> 2015/04/03/common-principles-for-tracking-climate-finance&gt; ac-<lb/>cessed 20 September 2018.<lb/> </bibl>
+        <bibl><label>60</label> Decision 2/CP.17 (n 57).<lb/> </bibl>
+        <bibl><label>61</label> OECD, 'Climate Finance in 2013-14 and the USD 100 Billion<lb/> Goal: A Report by the OECD in Collaboration with Climate<lb/> Policy Initiative' (OECD Publishing 2015).<lb/> </bibl>
+        <bibl><label>62</label> Weikmans and Roberts (n 50).<lb/> </bibl>
+        <bibl><label>63</label> Dagnet and others (n 45).</bibl>
+        </listBibl>
+    </text>
+
+</TEI>
