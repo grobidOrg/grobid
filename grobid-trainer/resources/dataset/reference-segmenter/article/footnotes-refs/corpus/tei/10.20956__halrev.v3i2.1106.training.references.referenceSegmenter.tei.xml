@@ -1,0 +1,163 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.20956__halrev.v3i2.1106">
+    <titleStmt>
+      <title level="a">Reviewing the National Courts in Creating Orderly International Law and Community</title>
+      <author>
+        <persName>
+          <forename>Johanis</forename>
+          <surname>Leatemia</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2017</date>
+      <idno type="DOI">10.20956/halrev.v3i2.1106</idno>
+      <ptr target="https://doi.org/10.20956/halrev.v3i2.1106"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Johanis Leatemia. (2017). Reviewing the National Courts in Creating Orderly International Law and Community. Hasanuddin Law Review, 3(2), 148. DOI: 10.20956/halrev.v3i2.1106</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Reviewing the National Courts in Creating Orderly International Law and Community</title>
+          <author>
+            <persName>
+              <forename>Johanis</forename>
+              <surname>Leatemia</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Hasanuddin Law Review</title>
+          <imprint>
+            <biblScope unit="volume">3</biblScope>
+            <biblScope unit="issue">2</biblScope>
+            <biblScope unit="page">148</biblScope>
+            <date when="2017">2017</date>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.20956/halrev.v3i2.1106</idno>
+        <ptr target="https://doi.org/10.20956/halrev.v3i2.1106"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-02T13:56:49.441619Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-65-gd393236aa</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-02T13:56:49.441619Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-02T13:58:16.691Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-02T14:06:25.749Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-19T13:02:31.097Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-19T13:20:12.930Z" status="checked" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label><lb/> Burke-White, W.W. (2008). "Proactive Complementarity: The International Criminal Court and<lb/> National Courts in the Rome System of International Justice," Harvard International Law Journal, 49 (1):<lb/> 53-108<lb/> </bibl>
+      <bibl><label>2</label><lb/> Green, M.N.A. (1982). International Law, Law of Peace. London: Macdonald and Evans, page 1.<lb/> </bibl>
+      <bibl><label>3</label><lb/> Kusumaatmadja, M., and Etty, R. A. (2003). Pengantar Hukum Internasional. Bandung: Alumni, page 4.<lb/> </bibl>
+      <bibl><label>4</label><lb/> Tsani, M.B. (1990). Hukum dan hubungan internasional. Yogyakarta: Liberty, page 7.<lb/> </bibl>
+      <bibl><label>5</label><lb/> Kusumaatmadja, M., and Etty, R. A. (2003). Op.Cit, page 60.<lb/> </bibl>
+      <bibl><label>6</label><lb/> Sefriani. (2016). Hukum Internasional, Sebuah Pengantar. Jakarta: PT RajaGrafindo Persada, page 8.<lb/> </bibl>
+      <bibl><label>7</label><lb/> Starke, J.G;. (1988). Introduction To International Law. (Translated by: Sumitro L.S Danuredjo). Jakarta:<lb/> Aksara Persada Indonesia, page 7.<lb/> </bibl>
+      
+      <bibl><label>8</label><lb/> Bhakti, Y. The Development of Sovereignty State in the International Practice. Pro Justitia; </bibl>
+      <bibl>Faculty of Law,<lb/> Padjadjaran University; </bibl>
+      <bibl>Bandung No. 17. March 1982; page 9.<lb/> </bibl>
+      <bibl><label>9</label><lb/> Kusumaatmadja, M., and Etty, R. A. Op.Cit, page 151.<lb/> </bibl>
+      <bibl><label>10</label> Falf, R.A. (1964). The Role of Domestic Court In International Legal Order. New York: Syracuse University<lb/> Press, page 66.<lb/> </bibl>
+      
+      <bibl><label>11</label> Kusumaatmadja, M., and Etty, R. A. Op.Cit, page 12.<lb/> </bibl>
+      <bibl><label>12</label> Tsani, M.B. Op.Cit, page12.<lb/> </bibl>
+      <bibl><label>13</label> Sefriani. (2016). Peran Hukum Internasional Dalam Hubungan Internasional Kontemporer. Jakarta: PT.<lb/> RajaGrafindo Persada, page 18.<lb/> </bibl>
+      <bibl><label>14</label> Falk, R.A. Op.Cit, page 34.<lb/> </bibl>
+      
+      <bibl><label>15</label> Kusumaatmadja, M., and Etty, R. A. Op.Cit, page 9.<lb/> </bibl>
+      <bibl><label>16</label> Falk, R.A. Op.Cit, page 54.<lb/> </bibl>
+      <bibl><label>17</label> Mauna, B. (2001). Hukum Internasional: Pengertian, Peranan dan Fungsi dalam Era Dinamika Global.<lb/> Bandung: Alumni, page 15.<lb/> </bibl>
+      <bibl><label>18</label> Ibid, page 18.<lb/> </bibl>
+      
+      <bibl><label>19</label> Ibid., page 17.<lb/> </bibl>
+      <bibl><label>20</label> Falk, R.A. Op.Cit, page 102.<lb/> </bibl>
+      <bibl><label>21</label> Starke J.G. Op.Cit, page 184.<lb/> </bibl>
+      <bibl><label>22</label> Falk, R.A. Op.Cit, page 33.<lb/> </bibl>
+      
+      <bibl><label>23</label> Greig, D.W. (1976). International Law. London: Butterworths, page 358.<lb/> </bibl>
+      <bibl><label>24</label> Starke, J.G. Op.Cit, page 176.<lb/> </bibl>
+      <bibl><label>25</label> Gautama, S. (1990). Civil Law and International Trade. Bandung: Alumni, page 4<lb/> </bibl>
+      
+      <bibl><label>26</label> Waring, M.C. (1965). "Waiver of Sovereign Immunity," Jounal The Harvard International Law Club, 2:<lb/> 191.<lb/> </bibl>
+      <bibl><label>27</label> . Falk, R.A. Op.Cit, pages 140-142.<lb/> </bibl>
+      <bibl><label>28</label> . Ibid, page 143.<lb/> </bibl>
+      
+      <bibl><label>29</label> . Kusumaatmadja, Op Cit, page 141.<lb/> </bibl>
+      <bibl><label>30</label> . Falk, R.A. Op Cit, page 3.<lb/> </bibl>
+      <bibl><label>31</label> Parthiana, I.W. (2003). Pengantar Hukum Internasional. Bandung: Mandar Maju, page 3.<lb/> </bibl>
+      <bibl><label>32</label> Op.Cit, page 86.<lb/> </bibl>
+      <bibl><label>33</label> Sefriani. (2016). Op.Cit, pages 22-23.<lb/> </bibl>
+      
+      <bibl><label>34</label> Starke, J.G. Op cit, page 78.<lb/> </bibl>
+      <bibl><label>35</label> Falk, R.A. Op Cit, page 66.<lb/> </bibl>
+      <bibl><label>36</label> Kusumaatmadja, Op Cit, page 64.<lb/> </bibl>
+      
+      <bibl><label>37</label> Ibid, pages 63-64.<lb/></bibl>  
+      
+      References<lb/> 
+      <bibl>Bhakti, Y. The Development of Sovereignty State in the International Practice. Pro Justitia;<lb/> Faculty of Law, Padjadjaran University; Bandung No. 17: 9.<lb/> </bibl>
+      <bibl>Burke-White, W.W. (2008). "Proactive Complementarity: The International Criminal<lb/> Court and National Courts in the Rome System of International Justice," Harvard<lb/> International Law Journal, 49 (1): 53-108<lb/> </bibl>
+      <bibl>Falf, R.A. (1964). The Role of Domestic Court In International Legal Order. New York:<lb/> Syracuse University Press.<lb/> </bibl>
+      <bibl>Gautama, S. (1990). Civil Law and International Trade. Bandung: Alumni.<lb/> </bibl>
+      <bibl>Green, M.N.A. (1982). International Law, Law of Peace. London: Macdonald and Evans.<lb/> </bibl>
+      <bibl>Greig, D.W. (1976). International Law. London: Butterworths.<lb/> </bibl>
+      <bibl>Kusumaatmadja, M., and Etty, R. A. (2003). Pengantar Hukum Internasional. Bandung:<lb/> Alumni.<lb/> </bibl>
+      <bibl>Mauna, B. (2001). Hukum Internasional: Pengertian, Peranan dan Fungsi dalam Era<lb/> Dinamika Global. Bandung: Alumni.<lb/> </bibl>
+      <bibl>Parthiana, I.W. (2003). Pengantar Hukum Internasional. Bandung: Mandar Maju.<lb/> </bibl>
+      <bibl>Sefriani. (2016). Hukum Internasional, Sebuah Pengantar. Edisi Kedua. Jakarta: PT<lb/> RajaGrafindo Persada.<lb/> </bibl>
+      <bibl>Sefriani. (2016). Peran Hukum Internasional dalam Hubungan Internasional Kontemporer.<lb/> Jakarta: PT. RajaGrafindo Persada.<lb/> </bibl>
+      <bibl>Starke, J.G;. (1988).Introduction To International Law. (Translated by: Sumitro L.S<lb/> Danuredjo). Jakarta: Aksara Persada Indonesia.<lb/> </bibl>
+      <bibl>Tsani, M.B. (1990). Hukum dan hubungan internasional. Yogyakarta: Liberty.<lb/> </bibl>
+      <bibl>Waring, M.C. (1965). "Waiver of Sovereign Immunity," Jounal The Harvard International<lb/> Law Club, 2: 191.</bibl>
+    </listBibl>
+  </text>
+</TEI>

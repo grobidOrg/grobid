@@ -1,0 +1,162 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.12759__hsr.3.1978.1.3-10">
+    <titleStmt>
+      <title level="a">Medieval history and the computer in France</title>
+      <author>
+        <persName>
+          <forename>Jean-Philippe</forename>
+          <surname>Genet</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>GESIS - Leibniz Institute for the Social Sciences</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">1978</date>
+      <idno type="DOI">10.12759/hsr.3.1978.1.3-10</idno>
+      <ptr target="http://www.ssoar.info/ssoar/handle/document/5252"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Jean-Philippe Genet. (1978). Medieval history and the computer in France. Historical Social Research. DOI: 10.12759/hsr.3.1978.1.3-10</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Medieval history and the computer in France</title>
+          <author>
+            <persName>
+              <forename>Jean-Philippe</forename>
+              <surname>Genet</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Historical Social Research</title>
+          <imprint>
+            <date when="1978">1978</date>
+            <publisher>GESIS - Leibniz Institute for the Social Sciences</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.12759/hsr.3.1978.1.3-10</idno>
+        <ptr target="http://www.ssoar.info/ssoar/handle/document/5252"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:23:26.139999Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:23:26.139999Z" status="extraction">
+      <note type="label">2 Schulze</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-11T09:29:19.419Z" status="unfinished" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-11T09:47:06.865Z" status="unfinished" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-12T09:43:24.296Z" status="unfinished" who="#li">
+      <desc>1.Pass unfinished</desc>
+    </change>
+    <change when="2026-03-16T08:52:35.943Z" status="draft" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-16T10:03:11.066Z" status="draft" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-16T10:03:18.249Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-16T10:03:39.549Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-16T10:37:51.652Z" status="checked" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-16T10:39:33.060Z" status="checked" who="#schulze">
+      <desc>with comment because of "How annotate the text in screenshot? #27"</desc>
+    </change>
+    <change when="2026-04-03T08:15:25.785Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-03T08:28:13.594Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl type="footnote">(1)This was a study of the accounts of the harbour of Saint-Malo<lb/> in collaboration with Jean Delumeau.<lb/> </bibl>
+        <bibl><label>(2)</label> "Application x lA : fichier des noms des parties en proces de-<lb/>vant le Parlement de Paris de 1350 ä 1363", </bibl> <bibl>Direction des<lb/> Archives de France, Note d'Information du Service de 1'In-<lb/>formatique, 7, 1975,</bibl>
+          <bibl>and "Experiences et Realisations en<lb/> matiere de recherche documentaire", ibidem,9, 1977, p .6-7.<lb/> </bibl>
+        <bibl><label>(3)</label> The description of the project is given in : J . Metman,<lb/> D . Portal, A . Stiers, " Documentation et Informatique . Une<lb/> Application du systeme Socrate aux archives judiciaires<lb/> (Parlement de Paris)", in : Consilium Magnum, 1473-1973,<lb/> Commemoration du 500e anniversaire de la Creation du Parle-<lb/>ment de Grand Conseil de Malines, Bruxelles 1977, p .85-172 .<lb/> </bibl>
+        <bibl><label>(4)</label> For a survey of the different approaches to content analysis<lb/> and documentary processing in relevance to medieval data,<lb/> see L . Fossier and G .-P . Zarri, L ' indexation automatique des<lb/> sources documentaires anciennes, I .R .H .T ., Paris 1975<lb/> </bibl>
+        <bibl><label>(5)</label> See L . Fossier, "Ordinateur et Histoire Medievale", in:<lb/> Linguistica Matematica e calcolatori . Atti del convegno e<lb/> della prima scuola internazionale, Pisa 1970, Firenze 1973,<lb/> p .269-298,</bibl>
+          <bibl>and L . Fossier and M . Crehange, "Essai d'ex-<lb/>ploitation sur ordinateur des sources diplomatiques medie-<lb/>vales", Annales E .S .C ., 1970 (I), p .249-284.<lb/> </bibl>
+        <bibl><label>(6)</label> See for instance M . Mollat and P . Tombeur, Conciles oecu-<lb/>meniques medievaux : Les conciles de Latran I ä Latran IV,<lb/> Louvain 1974,</bibl>
+          <bibl>et M . Mollat and P . Tombeur, Les conciles de<lb/> Lyon I et Lyon II, Louvain 1974.<lb/> </bibl>
+        <bibl><label>(7)</label> L . Fossier, G . Contamine, J . Graff, P . Bichard-Breaud, Le<lb/> traitement automatique des documents diplomatiques du Haut<lb/> Moyen Age, (Cahiers du CRAL, 1ere .serie, 2I), Nancy 1973.<lb/> </bibl>
+          <bibl>Other projects of the C .R .A .L . are dealing with automatic<lb/> translation, textual analysis of the Bible etc . . ..<lb/> </bibl>
+        <bibl><label>(8)</label> Chartres originales anterieures ä II2I conservees dans le<lb/> d " epartement de la Meurthe-et-Moselle, (Cahiers du C .R .A .L .,<lb/> Iere . serie, 28), Nancy 1977 : each volume contains all the<lb/> charters deposited in one department, but several volumes<lb/> will be necessary for Paris.<lb/> </bibl>
+        <bibl><label>(9)</label> For an example of the highly sophisticated results achieved<lb/> with the programs of the centre, see Des Tracts en Mai 68.<lb/> Mesures de Vocabulaire et de Contenus, Paris 1975 ;</bibl>
+          <bibl>and the<lb/> programs are described in Enregistrement et Traitement auto-<lb/>matique des Textes, (Calcul et Sciences Humaines, C .N .R .S .),<lb/> Paris 1975.<lb/> </bibl>
+        <bibl><label>(10)</label> See J .-Ph . Genet, F . Hucher, J . Mondelli and E . Valensi,<lb/> "Un programme de traitement automatique des textes : ALINE " ,<lb/> Bulletin du Centre d'Analyse du Discours de 1'Universite de<lb/> Lille III, 1974, p .96-121,</bibl>
+          <bibl>and J .-Ph . Genet, "Ordinateur,<lb/> lexique, contexte", forthcoming in : Actes du Colloque sur le<lb/> Traitement automatique des Sources du Moyen-Age, Rome 1975,<lb/> Ecole Frangaise de Rome 1978, p .297-317.<lb/> </bibl>
+        <bibl><label>(11)</label> See G .-P . Zarri, M . Ornato, C . Bozzolo, Projet Reseda:<lb/> rapport sur les recherches effectuees du Ier . Octobre 1975<lb/> au Ier . Avril 1976, C .N .R .S ., Paris 1976 ;</bibl>
+          <bibl>and G .-P . Zarri,<lb/> M . Ornato, A . Zwiebel, L . Zarri-Baldi, C . Bozzolo, Projet<lb/> Reseda : rapport sur les recherches effectuees du Ier . Octo-<lb/>bre 1976 au Ier . Avril 1977, C .N .R .S ., Paris 1977.<lb/> </bibl>
+        <bibl><label>(12)</label> D . Herlihy, "Vieillir ä Florence au Quattrocento", Annales<lb/> E .S .C ., XXIV, 1969 (6), p .1338-1353, "Editing for the Com-<lb/>puter : the fiorentine Catasto of 1427", American Council of<lb/> Learned Societies Newsletter, XXII, 1971, p .1-7,</bibl>
+          <bibl>and "Map-<lb/>ping Households in Medieval Italy " , The Catholic Historical<lb/> Review, LVIII, 1972 (1), p .1-24 ;</bibl>
+          <bibl>Ch . Klapisch, "Fiscalite<lb/> -9 -<lb/>et demographie en Toscane (1427-1430)", Annales E .S .C .,<lb/> XXIV, 1969 (6), p .1313-1337, "Household and Family in<lb/> Tuscany in 1427", in P . Laslett</bibl> <bibl>and R . Wall, Household and<lb/> Family in past times, Cambridge 1972, p .267-283,</bibl>
+          <bibl>and Ch.<lb/> Klapisch and M . Demonet, "A uno pane e uno vino" . La famille<lb/> rurale toscane au debut du XVe siecle", Annales E .S .C .,<lb/> XXVII, 1972 (4-5), p .873-9o2 . </bibl>
+          <bibl>The general survey of the<lb/> results will normally appear in 1978.<lb/> </bibl>
+        <bibl><label>(13)</label> Mrs . Carpentier's thesis is still unpublished : see a valua -<lb/>ble report by Ch . Klapisch an the formal soutenance in<lb/> Revue Historique, 517, 1976 (1), p .244-247.<lb/> </bibl>
+        <bibl><label>(14)</label> Cf . Y . Aufray and J . Guiral, "Les peages du Royaume de<lb/> Valence (1494)", in : Melanges de la Casa de Velasquez,<lb/> XII, 1976.<lb/> </bibl>
+        <bibl><label>(15)</label> See M .-Th . Lor9in, "Pratique Successorale et Conjoncture<lb/> demographique", Bulletin du Centre d'Histoire Economique<lb/> et Sociale de la Region Lyonnaise, 1975 (4), p .39-62, </bibl>
+          <bibl>and<lb/> "La Pratique Successorale en Ville et au Village", ibidem,<lb/> 1976 (4), p .55-74 ; </bibl>
+          <bibl>also "Retraite des veuves et filles au<lb/> couvent", quelques aspects de la condition feminine ä la<lb/> fin du Moyen Age", Annales de Demographie Historique, 1977,<lb/> p .86-94.<lb/> </bibl>
+        <bibl><label>(16)</label> This project is presented in B . Guiliemain, "L'informatique<lb/> aux Archives du vatican", Compte-Rendus de 1'Academie des<lb/> Inscriptions et Belles-Lettres, 1977, p .86-94.<lb/> </bibl>
+        <bibl><label>(17)</label> See her report in Actes du Colloque . . ., op .cit . supra,<lb/> forthcoming 1978.<lb/> </bibl>
+        <bibl><label>(18)</label> For general remarks of the method of collective biographies,<lb/> see J .-Ph . Genet, "La biographie collective des micropopula-<lb/>tions : une methode de traitement, 1 ' analyse factorielle",<lb/> forthcoming (in German) in : Franz Irsigler (Hrsg .), Quanti-<lb/>tative Methoden in der Wirtschafts-und Sozialgeschichte der<lb/> Vorneuzeit, Stuttgart 1978 (= Historisch-Sozialwissenschaft-<lb/>liche Forschungen, Vol . IV) .</bibl>
+          <bibl>Classifying and cross-tabula-<lb/>tions are being dune with the BDP4 package, a package special-<lb/>ly designed for a small Computer (Philips P .880) : see X . De-<lb/>banne, BDP4 : systeme de programme, Paris 1976.<lb/> </bibl>
+        <bibl><label>(19)</label> H . Millet, Les chanoines du chapitre cathedral de Laon,<lb/> 1272-1412, 2 vol ., Paris 1977, typ.<lb/> </bibl>
+        <bibl><label>(20)</label> The best introduction to factor analysis is J .P . Benzecri,<lb/> L'analyse des donnees, 2 vo ., Paris 1973.<lb/> </bibl>
+        <bibl><label>(21)</label> F . Micheau, Traductions imprimees d'oeuvres arabes en Occi-<lb/>dent, Paris 1974, .typ.<lb/> </bibl>
+        <bibl><label>(22)</label> J . Lefort, " Fiscalite medievale et informatique : recherche<lb/> sur les baremes pour 1'imposition des paysans byzantins au<lb/> XlVeme siecle", Revue Historique 1974 (4), p .315-356 .<lb/></bibl> <bibl type="footnote">-10 -<lb/></bibl>
+          <bibl><label>(23)</label> Let us mention briefly important projects such as the inven-<lb/>tory of French medieval libraries (I .R .H .T . : Miss Genevois),<lb/> automatic edition of the catalogue of Saint-Victor (Veronika<lb/> Gerz von Buren) etc . . . .<lb/> </bibl>
+
+<!--no references <bibl>Jean-Philippe Genet<lb/> CONFERENCE REPORTS<lb/> THE USE OF QUANTITATIVE METHODS IN ECONOMIC AND SOCIAL HISTORY<lb/> (ZIF, UNIVERSITY OF BIELEFELD, NOVEMBER 5-6, 1977)<lb/> In their opening adresses Paul J ._Müller from QUANTUM and Franz<lb/> Irsigler (University of Trier) stressed that the conference was<lb/> planned to achieve two goals . First, to overcome the analytieal<lb/> deficiencies and the problems of often faint research questions<lb/> within quantitative history as had already been outlined at the<lb/> earlier ZiF conference in 1976 and proved by the QUANTUM documen-<lb/>tation published in 1977 . Second the sections aimed at presenting<lb/> new developments in sociological research which could be applied<lb/> in historical social science too.<lb/> In the section an "Methodological Developments as Foundation for<lb/> a new Encounter between History and Sociology" (chair : Wolfgang<lb/> Sick, QUANTUM) two papers were presented : Theodor Harder (Univer -<lb/>sity of Bielefeld) on "Data, Theory, and Model : A Dynamic Per -<lb/>spective " , Manfred Küchler (University of Frankfurt) on "Complex<lb/> Data Analysis in Practical Research : Multivariate Analyzing of<lb/> Nominal-Scaled Data " . Theodor Harder gave a paper on theory, data,<lb/> models, and real world . Harder portrayed a wide range of dynamic<lb/> non static models and theories of social science phenomenon . He<lb/> stressed the potentials these new models have for historical pro-<lb/>cesses . But these methods have not yet been widely used within<lb/> historical social science . Manfred Küchler presented a 'paper de-<lb/>scribing his DIEC-model for analyzing nominal scaled data . This<lb/> approach combines the Goodman and Harder models and makes it<lb/> possible to explain variances in a dependent dichotomous variable<lb/> by the combined effects of more than one dichotomous independent<lb/> variables . In the discussion it was stressed that especially<lb/> historical data are often available only as categorical data and<lb/> that therefore models based on low levels of measurement would be<lb/> very appropriate for historical research . Examples from historical<lb/> research mentioned by the audience made apparent the potentials of<lb/> this kind of data analysis techniques .</bibl> -->
+      <!-- correctly ignored in the segmentation model, still apprears here -->
+
+        </listBibl>
+    </text>
+
+
+</TEI>

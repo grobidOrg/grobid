@@ -1,0 +1,216 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.12759__hsr.6.1981.3.3-17">
+    <titleStmt>
+      <title level="a">Demographic history in the United States: The first fifteen years</title>
+      <author>
+        <persName>
+          <forename>Mary Jo</forename>
+          <surname>Maynes</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>GESIS - Leibniz Institute for the Social Sciences</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">1981</date>
+      <idno type="DOI">10.12759/hsr.6.1981.3.3-17</idno>
+      <ptr target="http://www.ssoar.info/ssoar/handle/document/3540"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Mary Jo Maynes. (1981). Demographic history in the United States: The first fifteen years. Historical Social Research. DOI: 10.12759/hsr.6.1981.3.3-17</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Demographic history in the United States: The first fifteen years</title>
+          <author>
+            <persName>
+              <forename>Mary Jo</forename>
+              <surname>Maynes</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Historical Social Research</title>
+          <imprint>
+            <date when="1981">1981</date>
+            <publisher>GESIS - Leibniz Institute for the Social Sciences</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.12759/hsr.6.1981.3.3-17</idno>
+        <ptr target="http://www.ssoar.info/ssoar/handle/document/3540"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:24:11.146522Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:24:11.146522Z" status="extraction">
+      <note type="label">2. Sandfort</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-10T09:56:26.732Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-11T10:34:32.938Z" status="unfinished" who="#schulze">
+      <desc>still one github question</desc>
+    </change>
+    <change when="2026-03-12T07:04:09.770Z" status="draft" who="#schulze">
+      <desc>1 pass done</desc>
+    </change>
+    <change when="2026-03-13T14:18:12.035Z" status="draft" who="#sandfort">
+      <desc>till 30</desc>
+    </change>
+    <change when="2026-03-20T12:46:05.155Z" status="checked" who="#sandfort">
+      <desc>finished</desc>
+    </change>
+    <change when="2026-04-03T08:28:49.999Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-03T08:42:58.077Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+
+        <bibl>FOOTNOTES</bibl><lb/>
+          <bibl><label>1</label> It should be noted at the outset that the essay will discuss<lb/> demographic historical work being done in the United
+        States and<lb/> will exclude Canadian research . At times, the distinction becomes<lb/> arbitrary, but it is the case that the historiographic traditions<lb/> of the two North American nations are somewhat divergent, and a<lb/> discussion of Canadian achievements in historical demography would<lb/> require a separate treatment . As for the U .S . origins of demo-<lb/>graphic historical study, Michael Gordon, editor of two volumes of<lb/> articles on American family history, both entitled The American<lb/> Family in Social Historical Perspective (New York, 1973 1 and 1978 2 ),<lb/> claims in the introduction to the second edition that it was the<lb/> U .S . publication of Peter Laslett's The World We Have Lost, in<lb/> 1965, that inspired many of the subsequent U .S . community studies<lb/> employing demographic historical techniques . Kenneth Lockridge,<lb/> one of the American pioneers in the field, recalls that it was<lb/> the work of Pierre Goubert which inspired his own . See K . Lock-<lb/>ridge, "Historical Demography", in C .F . Delzell, ed ., The Future<lb/> of History (Nashville, Tenn ., 1977).<lb/> </bibl>
+        <bibl><label>2</label> For a description in German of simultaneous developments in the<lb/> broader area of social history in the United States, see J.<lb/> Modell, "Die 'Neue Sozialgeschichte' in Amerika", Geschichte and<lb/> Gesellschaft 1 (1975), 155-170.<lb/> </bibl>
+        <bibl><label>3</label> A recent bibliography published under the auspices of the Journal<lb/> of Family History, G . Soliday's History of the Family and Kin-<lb/>ship : A Select International Bibliography (Millwood, N .Y ., 1980)<lb/> gives some indication of the extent of American contribution to<lb/> historical demographic research.<lb/> </bibl>
+<bibl><label>4</label> The demographic history of Native American people, it should be<lb/> noted, has been of less concern to historians, and only recently<lb/> has substantial attention begun to be paid to it . For a recent<lb/> .<lb/> bibliography, see H . Dobyns, Native American Historical Demography:<lb/> A Critical Bibliography (Bloomington, Ind ., 1976).<lb/> </bibl>
+        <bibl><label>5</label> "Notes on Life in the Plymouth Colony", William and Mary Quarterly<lb/> 22 (1965), 264-286 ; </bibl>
+          <bibl>"Families in Colonial Bristol, Rhode Island:<lb/> An Exercise in Historical Demography", William and Mary Quarterly<lb/> 25 (1968), 40-57 ; </bibl>
+          <bibl>A Little Commonwealth : Family Life in the<lb/> Plymouth Colony (Oxford, 1970).<lb/> </bibl>
+        <bibl><label>6</label> "The Population of Dedham, Massachusetts, 1636-1736", Economic<lb/> History Review 19 (1966), 318-344 ; </bibl>
+          <bibl> New England Town : The First<lb/> Hundred Years (New York, 1970).<lb/> </bibl>
+        <bibl><label>7</label> "Family Structure in Seventeenth-Century Andover, Massachusetts " ,<lb/> William and Mary Quarterly 23 (1966), 234-256 ; </bibl>
+          <bibl>Four Generations:<lb/> Population, Land and Family in Colonial Andover, Massachusetts<lb/> (Ithaca, N .Y ., 1970) .<lb/> </bibl>
+        <bibl><label>8</label> K . Lockridge, "Historical Demography", p . 55.<lb/> </bibl>
+<bibl><label>9</label> The tendency to generalize from these unrepresentative early<lb/> community samples, as well as a series of methodological problems<lb/> in these studies and successors, has been noted by critics . For<lb/> an excellent, if highly critical, methodological review of the<lb/> field of colonial demographic history, see D .S . Smith, "The<lb/> Estimates of Early American Historical Demographers : Two Steps<lb/> Forward, One Step Back, What Steps in the Future?" Historical<lb/> Methods 12 (1979), 24-38.<lb/> </bibl>
+        <bibl><label>10</label> D .S . Smith, "The Demographic History of Colonial New England",<lb/> Journal of Economic History 32 (1972), 165-183.<lb/> </bibl>
+        <bibl><label>11</label> See, for example, "Towards a Socio-Economic Theory of Fertility:<lb/> A Survey of Recent Research on Economic Factors in American<lb/> Fertility", in Fertility and Family Planning, S .J . Behrman et<lb/> al . (eds .) (Ann Arbor, 1969) ; </bibl>
+          <bibl>"An Economic Framework for Fer-<lb/>tility Analysis", Studies in Family Planning 6 (1974), 54-63.<lb/> </bibl>
+        <bibl><label>12</label> R .A . Easterlin, "Factors in the Decline of Farm Fertility in the<lb/> United States : Some Preliminary Results", Journal of American<lb/> History 63 (1976), 600-614 ; </bibl>
+          <bibl>R .A . Easterlin, "Population Change and<lb/> Farm Settlement in the Northern United States", Journal of Economic<lb/> History 37 (1976), 45-75 ; </bibl>
+          <bibl>R .A . Easterlin, G . Alter, and G .A.<lb/> Condran, "Farms and Farm Families in New and Old Areas : The United<lb/> States in 1860", Family and Population<lb/> in: Nineteenth-Century<lb/> America, T .K . Hareven and M . Vinovskis, (eds .) (Princeton, 1978).<lb/> </bibl>
+        <bibl><label>13</label> J . Modell, "Fertility on the Indiana Frontier", 1820, "American<lb/> Quarterly 23 (1971), 505-538 ; </bibl>
+          <bibl>P . Lindert, "American Fertility<lb/> Patterns Since the Civil War", in Population Patterns in the<lb/> Past, Ronald Lee, (ed .) (New York, 1977).<lb/> </bibl>
+        <bibl type="footnote">14 This project, still in its early stages, has produced no published<lb/> results to date.<lb/> </bibl>
+        <bibl><label>15</label> M .A . Vinovskis, "Socio-economic Determinants of Interstate Fer-<lb/>tility Differentials in the United States, 1850 and 1860",<lb/> The Journal of Interdisciplinary History 6 (1976), 375-396;<lb/> </bibl>
+<bibl>T .K . Hareven and M . Vinovskis, "Marital Fertility, Ethnicity<lb/> and Occupation in Urban Families : . An Analysis of South Boston<lb/> and the South End in 1880", Journal of Social History 8 (1975),<lb/> 79-93.<lb/> </bibl>
+        <bibl><label>16</label> For an interesting recent assessment of the evolution, problems<lb/> and promise of U .S . urban history, see M . Frisch, "American<lb/> Urban History as an Example of Recent Historiography", History<lb/> and Theory 18 (1979), 350-377, </bibl>
+          <bibl>also available in German trans-<lb/>lation in the German edition of New Directions in European Hist-<lb/>oriography, G . Iggers, (ed .), published as Neue Geschichtswis-<lb/>senschaft : Von Historismus zur Historischen Sozialwissenschaft<lb/> (München, 1978) . </bibl>
+          <bibl>In the particular area of urban family history,<lb/> the work of Tamara Hareven has been important, see her article,<lb/> "The Historical Study of the Family in Urban Society", Journal<lb/> of Urban History 1 (1975), 259-267 </bibl>
+          <bibl>and a collection of essays<lb/> which she edited, Family and Kin in Urban Communities, 1700-1930<lb/> (New York, 1977) .<lb/> </bibl>
+        <bibl><label>17</label> The role of the important Hamilton, Ontario Project should be no-<lb/>ted . This too is an interdisciplinary, collaborative study of the<lb/> population of the city of Hamilton, and its history . Again, be-<lb/>cause of the geographic confines of this essay, the Hamilton Pro-<lb/>ject will not be discussed here, but for the major publication<lb/> emerging from the project, see M . Katz, The People of -Hamilton,<lb/> Canada West : Family and Class in a Mid-nineteenth Century City<lb/> (Cambridge, Mass ., 1975).<lb/> </bibl>
+        <bibl><label>18</label> For a description of the project, and some published results, see<lb/> the special issue of the Historical Methods Newsletter 9 (1976),<lb/> Nos . 2 and 3, dedicated to the Philadelphia Social History Pro-<lb/>ject, and also, T . Hershberg, "The New Urban History : Toward<lb/> an Interdisciplinary History of the City", Journal of Urban<lb/> History 5 (1978), 3-40 . </bibl>
+          <bibl>The first collection of research results<lb/> has been published as : Philadelphia : Work, Space, Family and Group<lb/> Experience in the Nineteenth Century (Oxford, 1980).<lb/> </bibl>
+        <bibl><label>19</label> (Boston, 1974).<lb/> </bibl>
+        <bibl><label>20</label> See, for example, R . Farley, "The Demographic Rates and Social<lb/> Institutions of the nineteenth-century Negro Population : A Stable<lb/> Population Analysis", Demography 2 (1965), 386-398 ; </bibl>
+          <bibl>R . Farley,<lb/> Growth of the Black Population (Chicago, 1970) ; </bibl>
+<bibl>J.E. Eblen,<lb/> "New Estimates of the Vital Rates for the United States Black<lb/> Population during the Nineteenth Century", Demography, 11 (1974),<lb/> 301-319.<lb/> </bibl>
+          <bibl><label>21</label> 16 (1977).<lb/> </bibl>
+        <bibl><label>22</label> 3rd series, 35 (1978).<lb/> </bibl>
+        <bibl><label>23</label> R . Menard, "The Maryland Slave Population 1658 to 1730 : A De-<lb/>mographic Profile of Blacks in Four Counties", William and Mary<lb/> Quarterly, 3rd series, 32 (1975), 29-54 ; </bibl>
+<bibl>R . Menard, "From Ser-<lb/>vants to Slaves : The Transformation of the Chesapeake Labor<lb/> System", Southern Studies 16 (1977), 353-390.<lb/> </bibl>
+        <bibl><label>24</label> J . Trussell and R . Steckel, "The Age of Slaves at Menarche and<lb/> Their First Birth", The Journal of Interdisciplinary History<lb/> 8 (1978), 477-505 ; </bibl>
+          <bibl>a more recent article by Steckel, "Slave<lb/> Mortality : Analysis of Evidence from Plantation Records",<lb/> Social Science History 3 (1979), 86-114, employs crude regional<lb/> economic indexes and sloppy methodology, and generally compares<lb/> poorly with the more careful uses of plantation records cited<lb/> below.<lb/> </bibl>
+        <bibl><label>25</label> "A Prolifick People : Black Population Growth in the Chesapeake<lb/> Colonies, 1700-1790", Southern Studies 16 (1977), 391-428.<lb/> </bibl>
+        <bibl><label>26</label> "A Note on Changing Patterns of Slave Fertility in the South<lb/> Carolina Rice District, 1735-1865", Southern Studies 16 (1977),<lb/> 457-463, and also her forthcoming University of Minnesota<lb/> dissertation based on the records of the Ball plantation in<lb/> South Carolina.<lb/> </bibl>
+        <bibl><label>27</label> The Black Family in Slavery and Freedom (New York, 1976) .<lb/> </bibl>
+        <bibl><label>28</label> The debate generated by the Moynihan Report in the 1960s, between<lb/> those who regarded the black family as weakened by the historical<lb/> experience of American blacks, and those who preferred to emphasize<lb/> its strength and adaptability, illustrates the connections between<lb/> policy and social and historical research that has characterized<lb/> the study of black population . See L . Rainwater and W .L . Yancey,<lb/> (eds .), The Moynihan Report and the Politics of Controversy<lb/> (Cambridge, Mass ., 1967).<lb/> </bibl>
+        <bibl><label>29</label> For some methodological critiques, see R . Fogel, "Cliometrics and<lb/> Culture : Some Recent Developments in the Historiography of Slavery",<lb/> Journal of Social History 11 (1977), 34-51 ; </bibl>
+          <bibl>J . Modell, "Herbert<lb/> Gutman's The Black Family in Slavery and Freedom, 1750-1925",<lb/> Social Science History, 3:3 and 4 (1979), 45-55.<lb/> </bibl>
+<bibl type="footnote"><label>30</label> There are, of course, exceptions . Several current projects come to<lb/> mind -the comparative studies of Kenneth Lockridge and Daniel<lb/> Scott Smith which look at European and North American demographic<lb/> patterns, the work of Kathy Conzen comparing German families in<lb/> Germany and the United States, the new efforts of historians of<lb/> American slavery to view the system as part of a world economy.<lb/> With the exception of the already cited article by Smith (Note<lb/> 10), so far there has been little published in the way of com-<lb/>parative work of this sort.<lb/> </bibl>
+        <bibl><label>31</label> A .J . Coale, "The Decline of Fertility in Europe from the French<lb/> Revolution to World War II", in Fertility and Family Planning,<lb/> S .J . Behrman, et al . (eds .), (Ann Arbor, 1969), pp . 3-4.<lb/> </bibl>
+<bibl><label>32</label> Among the published works are : P . Demeny, "Early Fertility Dec-<lb/>line in Austria-Hungary", Daedalus 97 (1968), 502-522 ; </bibl>
+          <bibl>M . Livi-<lb/>Bacci, A Century of Portuguese Fertility (Princeton, N .J ., 1971);<lb/> </bibl>
+<bibl>E . van de Walle, The Female Population of France in the Nine-<lb/>teenth Century (Princeton, N .J ., 1974), an ingenious methodological<lb/> preface to his yet unpublished study of fertility decline ;</bibl>
+          <bibl> J.<lb/> Knodel, The Decline of Fertility in Germany, 1871-1939 (Princeton<lb/> 1974) ; </bibl>
+<bibl>R . Lesthaeghe, The Decline of Belgian Fertility, 1800-1970<lb/> (Princeton, N .J ., 1977).<lb/> </bibl>
+        <This><label>33</label> M . Haines, "Recent Development in Historical Demography : A Review<lb/> of the European Fertility Project With Some Comparisons from Ja-<lb/>pan", Historical Methods 11 (1978), 162-176 . This is a very useful<lb/> assessment of the goals and accomplishments of the project.<lb/> </This>
+        <bibl><label>34</label> Knodel's publications are numerous . See, for example, "<lb/> Ortssippenbücher als Daten für historische Demographie", Geschichte und<lb/> Gesellschaft 1 (1975), 288-324 ; </bibl>
+          <bibl>"Two and a Half Centuries of De-<lb/>mographic History in a Bavarian Village", Population Studies 24<lb/> (1970), 353-376 ; </bibl><bibl>"Natural Fertility in Pre-Industrial Germany " ,<lb/> Population Studies 32 (1978), 481-510.<lb/> </bibl>
+        <bibl><label>35</label> For a description of the Württemberg community history project,<lb/> see D . Sabean, "Verwandtschaft und Familie in einem württember-<lb/>gischen Dorf, 1500 bis 1870 : einige methodische Überlegungen",<lb/> in Sozialgeschichte der Familie in der Neuzeit Europas, W . Conze,<lb/> (ed .)(Stuttgart, 1976) </bibl>
+          <bibl>and D . Sabean "Household Formation and<lb/> Geographic Mobility : A Family Register Study for a Württemberg<lb/> Village, 1760-1900", Annales de Demographie Historique (1970),<lb/> 275-294 . </bibl>
+          <bibl>For his earlier work on the Peasant War, see D . Sabean,<lb/> "Familie et tenure paysanne : aux origines de la guerre des<lb/> paysans en Allemagne (1525)", Annales, E .S .C . 27 (1972), 103-122<lb/> and Landbesitz und Gesellschaft am Vorabend des Bauernkriegs<lb/> (Stuttgart, 1972).<lb/> </bibl>
+        <bibl><label>36</label> L . Berkner, The Stem Family and the Developmental Cycle of the<lb/> Peasant Household : An Eighteenth-Century Austrian Example",<lb/> American Historical Review 77 (1972), 398-418 ; </bibl>
+          <bibl>L . Berkner, "Pea-<lb/>sant Household Organization and Demographic Change in Lower<lb/> Saxony, 1689-1766", in Population Patterns in the Past, Ronald<lb/> Lee, ed . (New York, 1977) ; </bibl>
+<bibl>L . Berkner and F . Mendels, "Inheritance<lb/> Systems, Family Structure and Demographic Patterns in Western<lb/> Europe (1700-1900)", in Historical Studies in Changing Fertility,<lb/> C . Tilly, (ed .),(Princeton, N .J ., 1978).<lb/> </bibl>
+        <bibl><label>37</label> "Peasant Farmsteads and Households : The Baltic Littoral, 1797",<lb/> Comparative Studies in Society and History 17 (1975), 2-35;<lb/> </bibl>
+<bibl>"Familial Structure in the Russian Baltic Provinces : The Nine-<lb/>teenth Century", in Sozialgeschichte der Familie in der Neuzeit<lb/> Europas, W . Conze, (ed .) (Stuttgart, 1976).<lb/> </bibl>
+        <bibl><label>38</label> Probably the best example of a well-designed and ingeniously<lb/> argued historical study of proletarianization and population change<lb/> is that of the Canadian social historian David Levine, Family<lb/> Formation in an Age of Nascent Capitalism (New York, 1977).<lb/> </bibl>
+        <bibl><label>39</label> F .E . Mendels, "Proto-industrialization : the First Phase of the<lb/> Process of Industrialization", Journal of Economic History 32<lb/> (1972), 241-261 ; </bibl>
+<bibl>"F .E . Mendels, "La composition du menage pay-<lb/>san en France auf XIX e siecle : une analyse economique du mode<lb/> de production domestique", Annales, E .S .C . 33 (1978), 780-802.<lb/> </bibl>
+        <bibl><label>40</label> H . Kisch, "The Textile Industries in Silesia and the Rhineland:<lb/> A Comparative Study in Industrialization", Journal of Economic<lb/> History 19 (1959), 541-564 ; </bibl>
+          <bibl>R . Rudolph, "Family Structure and<lb/> Protoindustrialization in Russia", Journal of Economic History<lb/> 40 (1980), 111-118.<lb/> </bibl>
+        <bibl><label>41</label> See, for example, "Vielli a Florence au Quattrocento", Annales,<lb/> E .S .C ., 24 (1969), 1338-1352 ; </bibl>
+          <bibl>"The Tuscan Towns in the<lb/> Quattrocento : A Demographic Profile", Medievalia et Humanistica,<lb/> new series 1 (1970), 81-104.<lb/> </bibl>
+        <bibl><label>42</label> In L . Berkner, "Recent Research in the History of the Family in<lb/> Western Europe", Journal of Marriage and the Family 35 (1973),<lb/> 395-407.<lb/> </bibl>
+        <bibl><label>43</label> "Natural Decrease in Early Modern Cities : A Reconsideration",<lb/> Past and Present 79 (1978), 126-138.<lb/> </bibl>
+<bibl><label>44</label> Some results of Tilly's more recent work are published in "The<lb/> Family Wage Economy of a French Textile Town : Roubaix, 1872-1906",<lb/> Journal of Family History 4 (1979), 381-394 . </bibl>
+          <bibl>'The earlier study<lb/> referred to is Women, Work and Family (New York, 1978) .<lb/> </bibl>
+        <bibl><label>45</label> "Wanderungen in Duisburg während der Industrialisierung, 1850-1910"<lb/> in Historisch-Sozialwissenschaftliche Forschungen Bd . 8 : Moderne<lb/> Stadtgeschichte, W .H . Schröder (Hrsg .), 217-237 . </bibl>
+          <bibl>See also his<lb/> unpublished University of Minnesota dissertation "Family Life<lb/> and Urbanization in the Ruhr Valley, 1840-1890", (1980).<lb/> </bibl>
+        <bibl><label>46</label> Fertility and Occupation : Population Patterns in Industrialization<lb/> (New York, 1979) . </bibl>
+          <bibl>For a more detailed review of the contributions<lb/> and shortcomings of Haines' study, see my review in The Journal<lb/> of Interdisciplinary History 11 (1981), 712-714.<lb/> </bibl>
+        <bibl><label>47</label> "Urban and Rural Marriage Patterns in Imperial Germany", Journal<lb/> of Family History 1 (1976), 129-168.<lb/> </bibl>
+        <bibl><label>48</label> See "Population and Pedagogy in France", History of Education<lb/> Quarterly (1973), 113-128 ; </bibl><bibl>"The Historical Study of Vital Pro-<lb/>cesses", in Historical Studies in Changing Fertility, C . Tilly,<lb/> (ed .) (Princeton, N .J ., 1978) ; </bibl>
+          <bibl>"Did the Cake of Custom Break?"<lb/> in Consciousness and Class Experience in Nineteenth-Century<lb/> Europe, J . Merriman, (ed .), (London, 1979).<lb/> </bibl>
+        <bibl><label>49</label> "Estimating Series of Vital Rates and Age Structures from Baptisms<lb/> and Burials", Population Studies 28 (1974), 495-512 ; </bibl>
+          <bibl>"Methods<lb/> and Models for Analysing Historical Series of Births, Deaths<lb/> and Marriages", in Population Patterns in the Past, Ronald Lee,<lb/> (ed .) (New York, 1977).<lb/> </bibl>
+<bibl><label>SO</label>"Historical Demography as History and Demography", American Beha-<lb/>vioral Scientist 21 (1977), 245-262 ; </bibl>
+          <bibl>"Methods for Estimating Po-<lb/>pulation Totals, Age Distribution and Vital Rates in Family Re-<lb/>constitution Studies", Population Studies 32 (1978), 511-521.<lb/> </bibl>
+        <bibl><label>51</label> "A Homeo-static Demographic Regime : Patterns in Western European<lb/> Family Reconstitution Studies", in Population Patterns in the<lb/> Past, Ronald Lee, (ed .) (New York, 1977) ; </bibl>
+          <bibl>"The Estimates of<lb/> Early American Historical Demographers", Cited Above, Note 9.<lb/> </bibl>
+        <bibl><label>52</label> See, for example, "Recent Trends in American Historical Demo-<lb/>graphy : Some Methodological and Conceptual Considerations",<lb/> Annual Review of Sociology 4, (1978), 603-627.<lb/> </bibl>
+        <bibl><label>53</label> "Recent Research", cited above, Note 42 ; </bibl>
+          <bibl>"The Use and Misuse of<lb/> Census Data for Historical Analysis of Family Structure", The<lb/> Journal of Interdisciplinary History 5 (1975), 721-738.<lb/> </bibl>
+        <bibl><label>54</label> Household and Family in Past Time (Cambridge, 1972).<lb/> </bibl>
+        <bibl><label>55</label> Among the influential sociological writings are ; R . Hill, "Me-<lb/>thodological Issues in Family Development Research " , Family<lb/> Process 3 (1964), 186-205 </bibl>
+          <bibl>and G . Elder, Children of the Great<lb/> Depression (Chicago, 1974) . </bibl>
+          <bibl>For a historical discussion, see<lb/> T .K . Hareven, "The Family as Process : The Historical Study of<lb/> the Family Cycle", Journal of Social History 7 (1974), 322-329<lb/> </bibl>
+          <bibl>and T .K . Hareven, (ed .), Transitions : The Family and Life Course<lb/> in Historical Perspective (New York, 1978), a collection of<lb/> essays based largely on materials from Essex County, Massachusetts.<lb/> </bibl>
+          <bibl>See also, J . Modell, F .F . Furstenberg, Jr ., and D . Strong, "The<lb/> Timing of Marriage in the Transition to Adulthood : Continuity and<lb/> Change, 1860-1975", in Turning Points : . Historical and Sociological<lb/> Essays in the Family, J . Demos and S .S . Boocock, (eds .) (Chicago,<lb/> 1978) ; </bibl>
+<bibl>J . Modell, F .F . Furstenberg, Jr ., and T . Hershberg, "So-<lb/>cial Change and Transition to Adulthood in Historical Perspective",<lb/> Journal of Family History 1 (1976), 7-31 ; </bibl>
+          <bibl>D .S . Smith, "Life Course,<lb/> Norms, and the Family System of Older Americans in 1900", Journal<lb/> of Family History 4 (1979), 285-298.<lb/> </bibl>
+        <bibl><label>56</label> The Center publishes a newsletter, the first two issues of which<lb/> appeared in Spring 1978 and Spring 1980 . For a description of the<lb/> collections of the Geneological Society, see L .T . Wimmer and C .L.<lb/> Pope, "The Geneological Society Library of Salt Lake City : A<lb/> Source of Data for Economic and Social Historians", Historical<lb/> Methods Newsletter 8 (1975), 51-58.<lb/> </bibl>
+<bibl><label>57</label> For a description of the project, see L .L . Bean, et al ., "The<lb/> Mormon Historical Demography Project", Historical Methods 11<lb/> (1978), 45-53.<lb/> </bibl>
+        <bibl><label>58</label> For a description, see R .W .Fogel, et al ., "The Economics of<lb/> Mortality in North America, 1650-1910", Historical Methods 11<lb/> (1978), 75-108.<lb/> </bibl>
+        <bibl><label>59</label> D .S . Smith "A Community-Based Sample of the Older Population<lb/> From the 1880 and 1900 U .S . Manuscript Census, Historical Me-<lb/>thods, 11 (1978), 67-74 describes this study .</bibl>
+        </listBibl>
+    </text>
+
+
+</TEI>

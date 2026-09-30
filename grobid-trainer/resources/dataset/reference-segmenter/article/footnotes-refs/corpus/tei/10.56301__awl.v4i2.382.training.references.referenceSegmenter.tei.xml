@@ -1,0 +1,198 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.56301__awl.v4i2.382">
+    <titleStmt>
+      <title level="a">FORM OF LEGAL PROTECTION AGAINST VICTIMS OF PHYSICAL VIOLENCE IN HOUSEHOLD IN THE CONCEPT OF CRIMINAL LAW DECISION ANALYSIS NUMBER 2192/Pid.Sus/2020/PN.Mdn</title>
+      <author>
+        <persName>
+          <forename/>
+          <surname>Meliana Fransisca Sembiring</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename/>
+          <surname>Rizal Jackson Hutasoit</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename/>
+          <surname>Rizki</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Sekolah Tinggi Ilmu Hukum Awang Long</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2022</date>
+      <idno type="DOI">10.56301/awl.v4i2.382</idno>
+      <ptr target="https://doi.org/10.56301/awl.v4i2.382"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>None Meliana Fransisca Sembiring, None Rizal Jackson Hutasoit, None Rizki. (2022). FORM OF LEGAL PROTECTION AGAINST VICTIMS OF PHYSICAL VIOLENCE IN HOUSEHOLD IN THE CONCEPT OF CRIMINAL LAW DECISION ANALYSIS NUMBER 2192/Pid.Sus/2020/PN.Mdn. Awang Long Law Review, 4(2), 303-308. DOI: 10.56301/awl.v4i2.382</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">FORM OF LEGAL PROTECTION AGAINST VICTIMS OF PHYSICAL VIOLENCE IN HOUSEHOLD IN THE CONCEPT OF CRIMINAL LAW DECISION ANALYSIS NUMBER 2192/Pid.Sus/2020/PN.Mdn</title>
+          <author>
+            <persName>
+              <surname>Meliana Fransisca Sembiring</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <surname>Rizal Jackson Hutasoit</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <surname>Rizki</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Awang Long Law Review</title>
+          <imprint>
+            <biblScope unit="volume">4</biblScope>
+            <biblScope unit="issue">2</biblScope>
+            <biblScope unit="page" from="303" to="308">303-308</biblScope>
+            <date when="2022">2022</date>
+            <publisher>Sekolah Tinggi Ilmu Hukum Awang Long</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.56301/awl.v4i2.382</idno>
+        <ptr target="https://doi.org/10.56301/awl.v4i2.382"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:03:24.208560Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-70-gc35e48387</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-24T08:03:24.208560Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-30T13:41:26.387Z" status="unfinished" who="#li">
+      <note type="label">v2 (li)</note>
+      <desc>1. pass started</desc>
+    </change>
+    <change when="2026-03-30T13:49:08.474Z" status="draft" who="#li">
+      <desc>1. pass done</desc>
+    </change>
+    <change when="2026-03-30T15:54:27.671Z" status="draft" who="#sandfort">
+      <note type="label">v3 (sandfort)</note>
+      <desc>2. Pass</desc>
+    </change>
+    <change when="2026-03-30T15:59:54.122Z" status="checked" who="#sandfort">
+      <desc>2. Pass done</desc>
+    </change>
+    <change when="2026-04-29T15:16:40.632Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-29T15:16:52.946Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-29T15:34:36.867Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-29T15:39:13.337Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-08T09:21:54.759Z" status="checked" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-29T06:02:58.107Z" status="approved" who="#lfoppiano">
+      <note type="label">v5 (lfoppiano)</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-29T06:14:49.206Z" status="candidate" who="#lfoppiano">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+          <bibl><label>1</label> Melisa, Juridical Review of Criminal Acts of Domestic Violence Perpetrated by Husbands Against Wives (Case<lb/> Study Decision No. 17/Pid.Sus/2015/PN.Mrs), Hasanudin University Makassar, Makassar, 2016, p. 3.<lb/> </bibl>
+        <bibl><label>2</label> Sali Susiana, Domestic Violence During the Covid-19 Pandemic, A Brief Study of Actual and Strategic Issues, Vol.<lb/> XII, No. 24/II/Puslit/December/2020, p.14.<lb/> </bibl>
+        <!-- the pdf has a typo, 8 --> 
+        <bibl><label>3</label> Bahder Johan Nasution, Legal Research Methods, Bandung: CV. Mandar Maju, 2008, p.88.<lb/> </bibl>
+        <bibl><label>4</label> Peter Mahmud Marzuki, Legal Research, Jakarta: Kencana Penada Media Group, 2011, p.142.<lb/> </bibl>
+        <bibl><label>5</label> CST Kansil, Introduction to Indonesian Law and Legal Administration, Jakarta: Balai Pustaka, 1989, p.102.<lb/></bibl> 
+          
+        <bibl><label>6</label> PP Number 4/2006<lb/></bibl> 
+        <bibl><label>7</label> Ibid.<lb/></bibl> 
+        <bibl><label>8</label> MoertiHadiatiSoeroso, Domestic Violence, Cet.1, Jakarta: SinarGrafika, 2010, p. 135.<lb/> </bibl>
+        <bibl><label>9</label> Nova Selvia Ginting, Legal Protection Against Victims of Psychic Violence in the Domestic Sphere, Thesis, Medan,<lb/> 2019.<lb/> </bibl>
+          
+        <bibl><label>10</label> Devi Febriyani (et al), "Juridical Review of Judges' Decisions on Women as Victims of Criminal Acts of Domestic<lb/> Violence (Study of Decision No. 6/Pid.Sus/2017/PN.Pwd) " , Diponegoro Law Journal Vol. 8 No. 3, 2019, p.<lb/> 1883-1884.<lb/> </bibl>
+          
+        <bibl><label>11</label> Ojak Nainggolan, Introduction to Indonesian Law Science Media &amp; Law Policy Center, Medan, 2005, p.24.<lb/></bibl>
+          <bibl><label>12</label> Ibid<lb/></bibl> 
+          <bibl><label>13</label> Ibid<lb/></bibl> 
+          <bibl><label>14</label> Steven Gunawan, "A Juridical Review of Women as Victims of Domestic Violence Judging from Law No.23 of<lb/> 2004 concerning Domestic Violence, University of Surabaya Student Scientific Journal Vol. 4 No.2, 2015, p.<lb/> 11.<lb/></bibl> 
+          
+          REFERENCES<lb/> Book<lb/>
+          
+          <bibl>Kansil, C. (1989). Introduction to Indonesian Law and Legal Administration. Jakarta: Balai Pustaka.<lb/> </bibl>
+<bibl>Marzuki, PM (2011). Legal Research. Jakarta: Kencana Penada Media Group.<lb/> </bibl>
+<bibl>Nainggolan, O. (2005). Introduction to Legal Studies. Medan: Indonesia Media &amp; Law Policy Center.<lb/> </bibl>
+<bibl>Nasution, BJ (2008). Legal Research Methods. Bandung: CV. Forward Mandar.<lb/> </bibl>
+<bibl>Santoso, T. (2002). Violence Theory. Jakarta: Ghalia Indonesia.<lb/> </bibl>
+<bibl>Soerjonosoekanto, M. (2006). Introduction to Legal Research. Jakarta: UI-Perss.<lb/> </bibl>
+<bibl>Soeroso, MH (2010). Domestic Violence (KDRT), First Printing. Jakarta: Sinar Graphic.<lb/> </bibl>
+<bibl>Syahrani, R. (1999). Summary of the Essence of Legal Studies. Bandung: Image Publisher Aditya Bakti.<lb/> </bibl>
+<bibl>Wahid, A., &amp; Irfan, M. (2001). Protection of Victims of Sexual Violence. Bandung: Refika Aditama.<lb/></bibl> 
+          
+Journal<lb/>
+          
+<bibl>Febriyani, D., Rochaeti, N., &amp; Wijaningsih, D. (2019). Juridical Review of Judges' Decisions on Women<lb/> as Victims of Criminal Acts of Domestic Violence (Study of Decision No.<lb/> 6/Pid.Sus/2017/PN.Pwd). Diponegoro Law Journal , 1883-1884.<lb/> </bibl>
+<bibl>Gunawan, S. (2015). Juridical Review of Women as Victims of Domestic Violence Judging from Law<lb/> Number 23 of 2004 concerning the Elimination of Domestic Violence. University of Surabaya<lb/> Student Scientific Journal , 11.<lb/> </bibl>
+<bibl>Susiana, S. (2020). Domestic Violence During the Covid-19 Pandemic. A Brief Study of Actual and<lb/> Strategic Issues ,14.<lb/> </bibl>
+          
+Essay<lb/> 
+<bibl>Ginting, NS (2019). Legal Protection Against Victims of Psychic Violence in the Domestic Sphere.<lb/> Medan: University of North Sumatra.<lb/> </bibl>
+<bibl>Melissa. (2016). Juridical Review of Criminal Acts of Domestic Violence Perpetrated by Husbands<lb/> Against Wives (Case Study Decision No. 17/Pid.Sus/2015/PN.Mrs). Makassar: Hasanudin<lb/> University.<lb/></bibl> 
+          
+Legislation<lb/> 
+<bibl>Law Number 23 of 2004 concerning Elimination of Domestic Violence<lb/> </bibl>
+          <bibl>Government Regulation Number 4 of 2006 concerning Implementation and Cooperation in Recovery of<lb/> Victims of Domestic Violence</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

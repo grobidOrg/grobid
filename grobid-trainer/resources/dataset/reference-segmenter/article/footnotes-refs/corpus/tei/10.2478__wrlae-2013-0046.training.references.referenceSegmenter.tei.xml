@@ -1,0 +1,180 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.2478__wrlae-2013-0046">
+    <titleStmt>
+      <title level="a">Public Contracts by Negotiated Procedure in Cases of Urgency – A New Interpretation of the Legal Basis in Light of Experiences with Organization of the 2012 European Football Championships</title>
+      <author>
+        <persName>
+          <forename>Krzysztof</forename>
+          <surname>Horubski</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="pfaffe">Milena Pfaffe</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Walter de Gruyter GmbH</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2013</date>
+      <idno type="DOI">10.2478/wrlae-2013-0046</idno>
+      <ptr target="https://doi.org/10.2478/wrlae-2013-0046"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Krzysztof Horubski. (2013). Public Contracts by Negotiated Procedure in Cases of Urgency – A New Interpretation of the Legal Basis in Light of Experiences with Organization of the 2012 European Football Championships. Wroclaw Review of Law, Administration &amp;amp; Economics, 3(1), 104-118. DOI: 10.2478/wrlae-2013-0046</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Public Contracts by Negotiated Procedure in Cases of Urgency – A New Interpretation of the Legal Basis in Light of Experiences with Organization of the 2012 European Football Championships</title>
+          <author>
+            <persName>
+              <forename>Krzysztof</forename>
+              <surname>Horubski</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Wroclaw Review of Law, Administration &amp;amp; Economics</title>
+          <imprint>
+            <biblScope unit="volume">3</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page" from="104" to="118">104-118</biblScope>
+            <date when="2013">2013</date>
+            <publisher>Walter de Gruyter GmbH</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.2478/wrlae-2013-0046</idno>
+        <ptr target="https://doi.org/10.2478/wrlae-2013-0046"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-09T06:47:39.276034Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-65-gd393236aa</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-09T06:47:39.276034Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-16T09:00:53.559Z" status="unfinished" who="#pfaffe">
+      <note type="label">v2 (pfaffe)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-16T10:39:06.832Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-16T10:43:03.060Z" status="draft" who="#cboulanger">
+      <note type="label">v3 (cboulanger)</note>
+      <desc>Pre-Check</desc>
+    </change>
+    <change when="2026-06-16T10:45:52.821Z" status="checked" who="#cboulanger">
+      <desc>2nd pass done</desc>
+    </change>
+    <change when="2026-06-19T13:42:46.316Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>2nd pass done</desc>
+    </change>
+    <change when="2026-06-19T13:48:47.179Z" status="checked" who="#kazuyo">
+      <desc>2nd pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> See A Sołtysińska, Zamówienia publiczne w Unii Europejskiej (Zakamycze 2004) 145-146.<lb/> </bibl>
+        <bibl><label>2</label> The Treaty on the Functioning of the European Union [2010] OJ L 83/47.<lb/></bibl> 
+        <bibl><label>3</label>   Sołtysińska (n 1) 157-162. </bibl>
+          <bibl>See also M Szydło, 'Udzielanie zamówienia publicznego jako<lb/> pomoc państwa w rozumieniu art.87 ust.1 Traktatu ustanawiającego Wspólnotę Europejską'<lb/> (2007) 2 Kwartalnik Prawa Prywatnego 354-398.<lb/> </bibl>
+        <bibl><label>4</label> Directive 2004/18/EC of the European Parliament and of the Council of 31 March 2004 on<lb/> the coordination of procedures for the award of public works contracts, public supply<lb/> contracts and public service contracts [2004] OJ L134/114.<lb/> </bibl>
+        
+          <bibl><label>5</label> Directive 2004/17/EC of the European Parliament and of the Council of 31 March 2004<lb/> coordinating the procurement procedures of entities operating in the water, energy, transport<lb/> and postal services sectors [2004] OJ L134/1.<lb/> </bibl>
+        <bibl><label>6</label> Public Procurement Act 29 January 2004 (Journal of Laws 2010, no 113, item 759).<lb/> </bibl>
+        <bibl><label>7</label><lb/> Resolution<lb/> KIO/KD<lb/> 58/10of<lb/> 6<lb/> August<lb/> 2010<lb/> &lt;www.uzp.gov.pl/cmsws/page/GetFile1.aspx?attid=2102&gt; accessed 16 December 2012.<lb/> </bibl>
+        
+          <bibl><label>8</label> See Case C-57/94 Commission v Italy [1995] ECR I-1249, para 23; </bibl>
+          <bibl>Case C-318/94<lb/> Commission v Germany [1996] ECR I-1949, para 13; </bibl>
+          <bibl>Case C-385/02 Commission of the<lb/> European Communities v Italian Republic [2004] ECR I-08121, para 19.<lb/> </bibl>
+        <bibl><label>9</label> Case C-84/03 Commission of the European Communities v Kingdom of Spain [2005] ECR<lb/> I-00139, para 49.<lb/> </bibl>
+        <bibl><label>10</label> See Case C-107/92 Commission of the European Communities ν Italian Republic [1992]<lb/> ECR I-4655, para 12; </bibl>
+          <bibl>Case C-318/94 Commission v Germany (n 8) para 14; </bibl>
+          <bibl>Case C-394/02<lb/> Commission of the European Communities v Hellenic Republic [2005] ECR I-04713, para<lb/> 40.<lb/> </bibl>
+        <bibl><label>11</label> Case C-107/92 Commission of the European Communities ν Italian Republic (n 10), para<lb/> 15; </bibl>
+          <bibl>Case C-318/94 Commission v Germany (n 8), para 20.<lb/> </bibl>
+        <bibl><label>12</label> Case C-24/91 Commission of the European Communities v Kingdom of Spain [1992] ECR<lb/> I-01989, paras 6,8,15.<lb/> </bibl>
+        <bibl><label>13</label> See Article 15 of Council Directive 71/305/EEC of 26 July 1971 concerning the<lb/> coordination of procedures for the award of public works contracts [1971] OJ L185/5. Now<lb/> Article 38(8) of Directive 2004/18/EC.<lb/> </bibl>
+        <bibl><label>14</label> Case C-24/91 Commission of the European Communities v Kingdom of Spain (n 12), para<lb/> 4.<lb/> </bibl>
+        
+        <bibl><label>15</label> ibid, para 10.<lb/> </bibl>
+        <bibl><label>16</label> Case C-107/92 Commission of the European Communities ν Italian Republic (n 10), para<lb/> 8.<lb/> </bibl>
+        <bibl><label>17</label> C-385/02 Commission of the European Communities v Italian Republic (n 8), paras 25,<lb/> 27-28.<lb/> </bibl>
+        <bibl><label>18</label> Case C-126/03 Commission of the European Communities v Federal Republic of Germany<lb/> [2004] ECR I-11197.<lb/> </bibl>
+        
+        <bibl><label>19</label> The Court of Justice declared that, according to the facts of the case the city was at the<lb/> same time a contractor applying for awarding a contract by another entity, but it did not lose<lb/> its status of a contracting authority as regards the activity of contractual entrustment of a<lb/> subcontractor with performance of waste transport services for the benefit of the contracting<lb/> authority (C-126/03 Commission of the European Communities v Federal Republic of<lb/> Germany (n 18), para 18).<lb/> </bibl>
+        <bibl><label>20</label> ibid paras, 22-23.<lb/> </bibl>
+        <bibl><label>21</label> Case C-318/94 Commission v Germany (n 8), paras 2-5.<lb/> </bibl>
+        <bibl><label>22</label> ibid, paras 17-18.<lb/> </bibl>
+        <bibl><label>23</label> Case C-394/02 Commission of the European Communities v Hellenic Republic (n 10),<lb/> paras 6-8.<lb/> </bibl>
+       
+        <bibl><label>24</label> ibid, para 43.<lb/> </bibl>
+        <bibl><label>25</label> ibid, para 44.<lb/> </bibl>
+        <bibl><label>26</label> Case C-525/03 Commission of the European Communities v Italian Republic [2005] ECR<lb/> I-09405, paras 13-17.<lb/> </bibl>
+        <bibl><label>27</label> ibid, Opinion of AG Jacobs, para 61.<lb/> </bibl>
+        <bibl><label>28</label> ibid, paras 63-64, 66-67.<lb/> </bibl>
+        <bibl><label>29</label> M Motyka-Mojkowski, 'Obowiązek prounijnej wykładni Prawa zamówień publicznych na<lb/> przykładzie uchwały KIO w sprawie zasadności udzielenia zamówienia z wolnej ręki' (2011)<lb/> 15 Monitor Prawniczy 808.</bibl>
+          <bibl>See also A Sołtysińska, Europejskie prawo zamówień<lb/> publicznych (Zakamycze 2006) 259.<lb/> </bibl>
+       
+        <bibl><label>30</label> M Szydło, Swobody rynku wewnętrznego a reguły konkurencji. Między konwergencją a<lb/> dywergencją (TNOiK Dom Organizatora Toruń 2006) 67.<lb/> </bibl>
+        <bibl><label>31</label> See G Wicik, P Wiśniewski, Prawo zamówień publicznych. Komentarz (C.o. Beck 2012)<lb/> 379.<lb/> </bibl>
+          
+        <bibl><label>32</label> Control on the basis of Article 165-168a of the Public Procurement Law.<lb/> </bibl>
+        <bibl><label>33</label> Information on short-term control as regards legality of selection of a negotiated contract<lb/> awarding<lb/> procedure<lb/> dated<lb/> 9.07.2010,<lb/> UZP/DKD/KSR/2299/13638/10<lb/> &lt;www.uzp.gov.pl/cmsws/page/?PDF;1146&gt; accessed 16 December 2012.<lb/> </bibl>
+          
+        <bibl><label>34</label> KIO found it possible to adopt an assumption of a delay as a circumstance attributable to<lb/> the contractor on the basis of documents presented by contracting authorities. Such a finding<lb/> is specific to the proceedings adopted by KIO which aim at issuing opinions on reservations<lb/> of the contracting authority concerning results of post-control audits issued by the President<lb/> of the Public Procurement Office. The proceedings are not contradictory as they are not<lb/> conducted as part of proceedings to take evidence, but they consist in assessing audit<lb/> proceedings files of the President of PPO and adopting a position as regards reservations of<lb/> the contracting authorities (P Granecki, Prawo zamówień publicznych. Komentarz (C.o.<lb/> Beck 2012) 701). </bibl>
+          <bibl>The opinion issued by the KIO in such cases is binding for the contracting<lb/> authority (Article 167(4) of the Public Procurement Act).<lb/> </bibl>
+          
+        <bibl><label>35</label><lb/> Szydło (n 30) 471-496 judicial decisions provided therein.<lb/> </bibl>
+          
+        <bibl><label>36</label> Council Directive 89/665/EEC of 21 December 1989 on the coordination of the laws,<lb/> regulations and administrative provisions relating to the application of review procedures to<lb/> the award of public supply and public works contracts [1989] OJ L 395/33.<lb/> </bibl>
+        <bibl><label>37</label> Council Directive 92/13/EEC of 25 February 1992 coordinating the laws, regulations and<lb/> administrative provisions relating to the application of Community rules on the procurement<lb/> procedures of entities operating in the water, energy, transport and telecommunications<lb/> sectors [1992] OJ L 76/14.<lb/> </bibl>
+        <bibl><label>38</label> Directive 2007/66/EC of the European Parliament and of the Council of 11 December 2007<lb/> amending Council Directives 89/665/EEC and 92/13/EEC with regard to improving the<lb/> effectiveness of review procedures concerning the award of public contracts [2007] OJ L<lb/> 335/31.<lb/> </bibl>
+          
+        <bibl><label>39</label> Local self-government Act 8 March 1990 Article 1 (Journal of Laws 2001, no. 142, item<lb/> 1591).<lb/> </bibl>
+        <bibl><label>40</label> C-318/94 (n 10), Opinion of AG Elmer, paras 18-19.<lb/> </bibl>
+          
+        <bibl><label>41</label> On the contrary, M. Motyka-Mojkowski excludes the possibility of protecting commercial<lb/> interests (financial) on the basis of the premises provided for in Article 67(1) (3) of the Public<lb/> Procurement Act, (n 29) 810.<lb/> </bibl>
+        <bibl><label>42</label> See Granecki (n 34) 701, Sołtysińska (n 29) 257, Wicik, Wiśniewski (n 31) 379.<lb/> </bibl>
+          
+        <bibl><label>43</label> In this respect KIO departed from its view expressed in resolution KIO/KD 21/09 of<lb/> 13.08.2009. The resolution provided that "a crucial characteristic of a contract awarded on<lb/> the basis of the premise provided in Art. 67(1)(3) of the Public Procurement Act is the<lb/> immediacy of performance, quick reaction and short period of the contract, the main aim of<lb/> which is to eliminate imminent effects of an event which could not be foreseen. Awarding a<lb/> contract for the period of one year does not fulfil the premise specified in the provision".<lb/> </bibl>
+        <bibl><label>44</label> On the basis of media reports: &lt;http://www.gazetawroclawska.pl/artykul/480327,bruksela-<lb/>oskarzy-polske-za-budowe-wroclawskiego-stadionu,id,t.html&gt;,<lb/> &lt;http://www.polskieradio.pl/5/3/Artykul/494384,Bruksela-oskarza-Polske-Stadion-bez-<lb/>przetargu&gt; accessed 16 December 2012. </bibl>
+          
+        <bibl><label>46</label> Press announcement of the European Commission of 08.10.2009 (IP/09/1470) on filing a<lb/> justified opinion on breaching of Art. 226 of the Treaty of the European Community<lb/> (currently TFEU) with the Republic of Slovakia, 'Public procurement: Commission requests<lb/> Slovakia to review legal services contracts for motorway construction project'<lb/> &lt;http://europa.eu/rapid/press-release_IP-09-1470_en.htm#PR_metaPressRelease_bottom&gt;<lb/> accessed 16 December 2012.</bibl>
+          <bibl> The procedure concerning failure to comply with obligations<lb/> of a Member State was completed with the filing of a complaint by the Commission to the<lb/> Court of Justice (case C-531/10), however, judgment was not issued as the compliant was<lb/> withdrawn<lb/> by<lb/> the<lb/> Commission<lb/> &lt;http://curia.europa.eu/juris/document/document.jsf?text=&amp;docid=81924&amp;pageIndex=0&amp;d<lb/> oclang=FR&amp;mode=lst&amp;dir=&amp;occ=first&amp;part=1&amp;cid=107266&gt; accessed 16 December 2012.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

@@ -1,0 +1,141 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.30958__ajha.12-4-4">
+    <titleStmt>
+      <title level="a">Bodies’ Touch: The Poetics of Writing and/on the Body in Jean Luc Nancy’s Corpus</title>
+      <author>
+        <persName>
+          <forename>Boutheina</forename>
+          <surname>Boughnim</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Athens Institute for Education and Research ATINER</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2025</date>
+      <idno type="DOI">10.30958/ajha.12-4-4</idno>
+      <ptr target="https://doi.org/10.30958/ajha.12-4-4"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Boutheina Boughnim. (2025). Bodies’ Touch: The Poetics of Writing and/on the Body in Jean Luc Nancy’s Corpus. Athens Journal of Humanities &amp;amp; Arts, 12(4), 423-438. DOI: 10.30958/ajha.12-4-4</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Bodies’ Touch: The Poetics of Writing and/on the Body in Jean Luc Nancy’s Corpus</title>
+          <author>
+            <persName>
+              <forename>Boutheina</forename>
+              <surname>Boughnim</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Athens Journal of Humanities &amp;amp; Arts</title>
+          <imprint>
+            <biblScope unit="volume">12</biblScope>
+            <biblScope unit="issue">4</biblScope>
+            <biblScope unit="page" from="423" to="438">423-438</biblScope>
+            <date when="2025">2025</date>
+            <publisher>Athens Institute for Education and Research ATINER</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.30958/ajha.12-4-4</idno>
+        <ptr target="https://doi.org/10.30958/ajha.12-4-4"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:50:41.865448Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">fd543f4</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-17T17:50:41.865448Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-21T21:00:01.843Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Started 1st pass</desc>
+    </change>
+    <change when="2026-03-21T21:15:28.664Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-03-23T15:11:17.727Z" status="draft" who="#sandfort">
+      <note type="label">v3 (sandfort)</note>
+      <desc>2. pass started</desc>
+    </change>
+    <change when="2026-03-23T15:14:55.287Z" status="draft" who="#sandfort">
+      <desc>2. pass started</desc>
+    </change>
+    <change when="2026-03-23T15:19:51.889Z" status="checked" who="#sandfort">
+      <desc>2. pass done</desc>
+    </change>
+    <change when="2026-04-21T09:16:18.974Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-21T09:31:51.813Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-21T09:31:51.822Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label>. J. L. Nancy, The Birth to Presence (US: Stanford University Press, 1993), 320.<lb/> </bibl>
+      <bibl><label>2</label>. Ibid, 321.<lb/> </bibl>
+      <bibl><label>3</label>. Ibid, 320.<lb/> </bibl>
+      <bibl><label>4</label>. Nancy, Corpus (US: Fordham University Press, 2008).<lb/> </bibl>
+      <bibl><label>5</label>. M. Bakhtin, Rabelais and his World (Indiana University Press, 1984).<lb/> </bibl>
+      <bibl><label>6</label>. G. Bataille, Death and Sensuality: A Study of Eroticism and the Taboo (Walker and Company,<lb/> 1962), 44.<lb/> </bibl>
+      <bibl><label>7</label>. "… not subject to a treatise." (51)<lb/> </bibl>
+      <bibl><label>8</label>. Nancy's emphasis (33).<lb/> </bibl>
+      <bibl><label>9</label>. Exposition" doesn't mean that intimacy is extracted from its withdrawal, and carried<lb/> outside, put on display. Because then the body would be an exposition of the "self," in the<lb/> sense of a translation, an interpretation, or a staging. "Exposition," on the contrary, means<lb/> that expression itself is an intimacy and a withdrawal. The a-part-self is not translated or<lb/> incarnated into exposition, it is what it is there: this vertiginous withdrawal of the self from<lb/> the self that is needed to open the infinity of that withdrawal all the way up to self. The body<lb/> is this departure of self to self. (Corpus, 33)<lb/> </bibl>
+      <bibl><label>10</label>. Corpus, 86.<lb/> </bibl>
+
+      <bibl><label>12</label>. Derrida, Points, 163.<lb/> </bibl>
+      <bibl><label>13</label>. Derrida evokes a delicate episode in Nancy's own life course which is his heart<lb/> transplant which he relates in his book L'Intrus and which would deeply impact his<lb/> conception of himself and the other. (257)<lb/> </bibl>
+
+      Bibliography<lb/>
+
+      <bibl>Bakhtin, M. Rabelais and his World. Translated by Helen Iswolski. Indiana University Press,<lb/> 1984.<lb/> </bibl>
+      <bibl>Bataille, G. Death and Sensuality: A Study of Eroticism and the Taboo. Walker and Company, 1962.<lb/> </bibl>
+      <bibl>Derrida, J. Points…: Interviews, 1974-1994. Edited by E. Webber. Translated by Peggy Kamuff<lb/> and Others. US: Stanford University Press, 1995.<lb/> </bibl>
+      <bibl>____. On Touching: Jean Luc Nancy. US: Stanford University Press, 2005.<lb/> </bibl>
+      <bibl>Merleau-Ponty, M. Phenomenology of Perception. Translated by Donald A. Landes. Routledge,<lb/> 2012.<lb/> </bibl>
+      <bibl>Nancy, J. L. Corpus. Translated by R. A. Rand. US: Fordham University Press, 2008.<lb/> </bibl>
+      <bibl>____. The Birth to Presence. Translated by B. Holmes and Others. US: Stanford University<lb/> Press, 1993.</bibl>
+
+    </listBibl>
+  </text>
+</TEI>

@@ -1,0 +1,185 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.54648__eulr2019007">
+    <titleStmt>
+      <title level="a">Towards a Collective Regulatory System of Private Equity Funds in China: Legislative Progress and Political Challenges</title>
+      <author>
+        <persName>
+          <forename>Chi</forename>
+          <surname>Zhang</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="admin">Administrator</persName>
+        <resp>editor</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Kluwer Law International BV</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2019</date>
+      <idno type="DOI">10.54648/eulr2019007</idno>
+      <ptr target="https://doi.org/10.54648/eulr2019007"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Chi Zhang. (2019). Towards a Collective Regulatory System of Private Equity Funds in China: Legislative Progress and Political Challenges. European Business Law Review, 30(Issue 1), 183-197. DOI: 10.54648/eulr2019007</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Towards a Collective Regulatory System of Private Equity Funds in China: Legislative Progress and Political Challenges</title>
+          <author>
+            <persName>
+              <forename>Chi</forename>
+              <surname>Zhang</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">European Business Law Review</title>
+          <imprint>
+            <biblScope unit="volume">30</biblScope>
+            <biblScope unit="issue">Issue 1</biblScope>
+            <biblScope unit="page" from="183" to="197">183-197</biblScope>
+            <date when="2019">2019</date>
+            <publisher>Kluwer Law International BV</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.54648/eulr2019007</idno>
+        <ptr target="https://doi.org/10.54648/eulr2019007"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-31T15:32:23.363202Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-71-g595835ed0</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-31T15:32:23.363202Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-31T15:50:57.714Z" status="extraction" who="#admin">
+      <note type="label">Extraction (use this)</note>
+      <desc>Renamed to Extraction (use this)</desc>
+    </change>
+    <change when="2026-04-27T16:59:03.231Z" status="unfinished" who="#cboulanger">
+      <note type="label">v3 (cboulanger)</note>
+      <desc>Pre-draft</desc>
+    </change>
+    <change when="2026-04-27T17:41:32.394Z" status="draft" who="#cboulanger">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-11T15:06:38.259Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T08:28:22.343Z" status="checked" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>2</label> US Department of the Treasury, 'Agreement Among PWG and US Agency Principals on Principles and<lb/> Guidelines regarding Privet Pool of Capital' (Feb 2007), &lt; https://www.treasury.gov/resource-center/fin-<lb/>mkts/Documents/hp272_principles.pdf &gt; accessed 19 June 2017; </bibl>
+      <bibl>Financial Services Authority, Private Equity: A<lb/> Discussion of Risk and Regulatory Engagement (Discussion Paper 06/6, 2006).<lb/> </bibl>
+      <bibl><label>3</label> Zhifeng Xu, Qiuyu Wu and Jie Ouyang, A Comprehensive Report of the Fifth National Conference of<lb/> Financial Reform (16 July 2017), &lt; http://finance.people.com.cn/n1/2017/0716/c1004-29407471.html&gt; accessed<lb/> 19 July 2017.<lb/> </bibl>
+      
+      <bibl><label>4</label> Financial Services Authority, Private Equity: A Discussion of Risk and Regulatory Engagement (Discussion<lb/> Paper 06/6, 2006) 89-90.<lb/> </bibl>
+      <bibl><label>5</label> Ibid., at 90.<lb/> </bibl>
+      <bibl><label>6</label> Iain G. MacNeil, Private Equity: The UK Regulatory Response 3 Capital Markets Law Journal 18, 22 (2008).<lb/> </bibl>
+      <bibl><label>7</label> Zhi Zheng, Wentao Wang, Decoding the Trusts, 294 (Citic Press 2014).<lb/> </bibl>
+      
+      <bibl><label>10</label> The details of the CBIRC's regulatory framework of private equity investment trusts are available in: Chi Zhang,<lb/> Venture Capital Investment Trusts in China: Legal Framework, Challenges, and Reform 23 (7) Trusts &amp; Trustees<lb/> 806 (2017).<lb/> </bibl>
+      
+      <bibl><label>13</label> During the 2000s, the State Council of China cancelled or simplified 2,614 administrative approvals and the<lb/> further simplification of the administrative approval power of the NDRC was proposed. For more detail, see<lb/> Youliang Yan, 'A Leviathan? The NDRC is Being Powerful Again' Sina Finance News (Beijing, 30 May 2013).<lb/> &lt;http://finance.sina.com.cn/china/20130530/082015636012.shtml&gt; accessed 22 April 2017.<lb/> </bibl>
+      <bibl><label>14</label> Hereinafter referred to as the 'Interim Provisions (2005)'.<lb/> </bibl>
+      <bibl><label>15</label> According to the Interim Provisions (2005), all PE and VC funds shall be filed with the NDRC or other<lb/> related administrative departments of the provinces (s 4) and registered with the State Administration for<lb/> Industry and Commerce (SAIC) or local departments of the SAIC (s 8).<lb/> </bibl>
+      <bibl><label>16</label> Section 27, the Interim Provisions (2005).<lb/> </bibl>
+      <bibl><label>17</label> For instance, the so-called First Judicial Case of China's PE Funds was adjudicated by the First Intermediate<lb/> People's Court of Shanghai in 2010, in which a twenty-eight-year-old fund manager, Hao Huang, was accused of<lb/> fraud in the financing industry and finally sentenced to fifteen years in prison. In this case, Hao Huang the general<lb/> partner of the PE funds, raised around RMB 0.178 billion from as many as 720 natural persons in China. This<lb/> kind of unregulated PE scandal has been more common since China's Alternative Investment Market was<lb/> launched in October of 2010. Yonggang Liu, 'The First Private Equity Case in China: A Chinese Ponzi Scheme?'<lb/> China Economy Weekly (Beijing, 29 June 2010) &lt;http://finance.people.com.cn/GB/12001069.html&gt; accessed 23<lb/> April 2017.<lb/> </bibl>
+      
+      <bibl><label>20</label> In this early version of the Consultation Draft (July 2012), private investment funds (excluding investment trusts<lb/> which have been regulated by the CBIRC since 2007) was proposed to be regulated by the CSRC, according to<lb/> Arts 106 and 107 of the Consultation Draft, the investment funds whose fund managers shall bear unlimited<lb/> liability will be regulated by the law and the content of the term 'securities' includes all the stocks, bonds and any<lb/> other types of financial derivatives that can legally be exchanged or circulated in China. This means that the equity<lb/> of private companies that can be transacted privately is also expected to be regulated by the revised SIFL; in other<lb/> words, not only public investment funds, but also privately raised investment funds, including hedge funds, PE<lb/> and VC funds, will also be regulated by the new SIFL. The official version of this interim legislative document is<lb/> available at:<lb/> http://www.npc.gov.cn/npc/xinwen/lfgz/flca/2012-07/06/content_1729072.htm.<lb/> </bibl>
+      
+      <bibl><label>21</label> Clifford Chance LLP, 'The Amended Securities Investment Funds Law': Significant Changes but More<lb/> Expected' (25 January 2013)<lb/> &lt;http://www.cliffordchance.com/briefings/2013/01/the_amended_securitiesinvestmentfundslaw.html &gt; accessed<lb/> 28 April 2017; </bibl>
+      <bibl>Dongying Wang, 'The Regulatory Power of PE/VC Funds: NDRC PK CSRC', South Weekly<lb/> (2013) &lt;http://www.nbweekly.com/news/business/201306/33414.aspx &gt; accessed 28 April 2017.<lb/> </bibl>
+      
+      <bibl><label>22</label> Supra note, Dongying Wang; Dong Liu, 'The New Law of Securities Investment Funds: Private Equity and<lb/> Venture Capital Funds Are Still Free from Regulation' China Business News (Beijing, 25 December 2012) &lt;<lb/> http://finance.people.com.cn/fund/n/2012/1225/c201329-20003436.html&gt; accessed 17 April 2017; </bibl>
+      <bibl>Sha Xiao,<lb/> 'The Rent-seeking Behind the Legislative Activities Regarding Private Equity Funds: The Intense Competition<lb/> Between Administrative Departments' The Rule of Law Weekends (Beijing, 22 August 2012)<lb/> &lt;http://finance.sina.com.cn/money/smjj/20120822/153112922035.shtml&gt; accessed 17 April 2017.<lb/> </bibl>
+      
+      <bibl><label>23</label> The material compromising the final version of the law is reflected in Art. 95 of the SIFL (2012 Revision): the<lb/> term securities therein refers to any publicly issued stocks, bonds and any other types of financial derivatives that<lb/> can legally be exchanged or circulated in China. It is evident that the adjustment of the definitive scope of<lb/> 'securities' through the legislative procedure of the law makes PE funds free from the CSRC's high level of<lb/> regulation &lt;http://www.pkulaw.cn/fulltext_form.aspx?Gid=191978&gt; accessed 10 May 2017.<lb/> </bibl>
+      
+      <bibl type="footnote"><label>24</label> Hereinafter referred to as 'SCOPSR'.<lb/> </bibl>
+      
+      <bibl><label>25</label> The Notice of the Division of Regulatory Functions Regarding Private Equity Funds issued by SCOPSR, June<lb/> 2013 &lt; http://www.scopsr.gov.cn/bbyw/qwfb/201306/t20130627_227855.html&gt; accessed 10 June 2017.<lb/> </bibl>
+      <bibl><label>26</label> The Notice of the Issues Regarding Further Development of Venture Capital Investment Enterprises issued by<lb/> the General Office of NDRC (May 2014) http://www.ndrc.gov.cn/zcfb/zcfbtz/201405/t20140514_611509.html&gt;<lb/> accessed 10 June 2017.<lb/> </bibl>
+      <bibl><label>27</label> Hereinafter referred to as the 'Interim Measures (2014)'. CSRC, Interim Measures for the Supervision and<lb/> Administration of Privately Raised Investment Funds (2014)<lb/> &lt; http://www.amac.org.cn/cms/article/preview?ID=386993&gt; accessed 10 June 2017.<lb/> </bibl>
+      <bibl><label>28</label> According to s 2 of the Interim Measures (2014), the assets of a 'private investment fund' includes, but is not<lb/> limited to, stocks, equities, bonds, futures, options and fund units, in consideration of the separated financial<lb/> regulatory system, investment trusts that are exclusively regulated by the CBIRC are excluded from the regulatory<lb/> scope of the Interim Measures (2014). </bibl>
+      
+      <bibl><label>30</label> It is provided in Chapter 6 of the Interim Measures (2014) that 'AMAC is obliged to make self-regulatory rules<lb/> and examine the performance of its member institutions and related practitioners (s 29); in the circumstance where<lb/> any member institutions or related practitioners violate the laws, administrative regulations or self-regulatory<lb/> rules, AMAC is entitled to take actions and publish the violations to the public via its website (s 29); AMAC shall<lb/> establish a complaint-handling mechanism to accept investor complaints and mediate disputes (s 30).'<lb/> </bibl>
+      <bibl><label>31</label> Up to March 2017, AAMAC has blacklisted four fund management firms and five individuals who failed to<lb/> comply with the laws, regulations and self-regulatory rules &lt;http://www.amac.org.cn/xxgs/hmd/&gt; accessed<lb/> 15 June 2017.<lb/> </bibl>
+      <bibl><label>32</label> China Venture Capital and Private Equity Association (CVCA) and China Association of Private Equity<lb/> (CAPE). </bibl>
+      
+      <bibl><label>34</label> For instance, s 13 of the Articles of Association of Suzhou Association of Private Equity<lb/> &lt;http://www.szape.org/CompanyConstitution.aspx&gt; accessed 17 June 2017; </bibl>
+      <bibl>s 12 of the Articles of Association<lb/> of Beijing Association of Private Equity &lt; http://www.bpea.net.cn/article/ljxh/xhzc/&gt; accessed 17 June 2017. </bibl>
+      
+      <bibl><label>36</label> China Association of Private Equity (CAPE), 'The Principle Guidelines for China's Private Equity and Venture<lb/> Capital Industry' (2011) &lt;http://files.cbex.com.cn/bpea/201111/20111111133220846.pdf&gt; accessed 18 June<lb/> 2017. </bibl>
+      
+      <bibl><label>42</label> See the official website of the BVCA: http://www.bvca.co.uk/AboutUs.aspx.<lb/> </bibl>
+      <bibl><label>43</label> See the official website of the BVCA:<lb/> http://www.bvca.co.uk/AboutUs/CouncilCommitteesAdvisoryGroups/RegulatoryCommittee.aspx.<lb/> </bibl>
+      <bibl><label>44</label> Ibid.<lb/> </bibl>
+      <bibl><label>45</label> Hereinafter referred to as the 'Walker Guidelines (2007)'. BVCA, Guidelines for Disclosure and Transparency<lb/> in Private Equity (November 2007)<lb/> &lt;http://walker-gmg.co.uk/sites/10051/files/wwg_report_final.pdf&gt; accessed 21 May 2017.<lb/> </bibl>
+      <bibl><label>46</label> Ibid., at 26.<lb/> </bibl>
+      <bibl><label>47</label> Ibid., at 27.<lb/> </bibl>
+      <bibl><label>48</label> Ibid., at 24.<lb/> </bibl>
+      
+      <bibl><label>49</label> Hereinafter referred to as 'GMG'. Joseph A. McCahery and Erik P. M. Vermeulen, Private Equity Regulation:<lb/> A Comparative Analysis 16 Journal of Management &amp; Governance 197, 222 (2012).<lb/></bibl>
+      <bibl><label>50</label> MacNeil (n 6) at 30.<lb/> </bibl>
+      <bibl><label>51</label> According to the Review of Conformity with the Guidelines 2014, two PE firms, namely Camelot (Ontario<lb/> Teachers' Pension Plan) and Viridian Group (Arcapita) who failed to comply with the requirement of the Walker<lb/> Guidelines (2007) have been disclosed. Guidelines Monitoring Group, Seventeenth Report, December 2014, 24.<lb/> </bibl>
+      <bibl><label>52</label> The full name of the regulation is 'Directive 2011/61/EU of the European Parliament and of the Council of<lb/> 8 June 2011 on Alternative Investment Fund Managers and amending Directives (2003/41/EC and 2009/65/EC<lb/> and Regulations (EC) No. 1060/2009 and (EU) No. 1095/2010), hereinafter referred to as the 'AIFMD'.<lb/> </bibl>
+      
+      <bibl type="footnote"><label>53</label> Hereinafter referred to as 'AIFM.'<lb/> </bibl>
+      
+      <bibl><label>54</label> Art. 7 of the AIFMD.<lb/> </bibl>
+      <bibl><label>55</label> Arts 7 and 23 of the AIFMD. </bibl>
+      
+      <bibl><label>57</label> Art. 18 of the AIFMD.<lb/> </bibl>
+      <bibl><label>58</label> Art. 15 of the AIFMD.<lb/> </bibl>
+      
+      <bibl><label>59</label> See details from Chap. V of the AIFMD.<lb/> </bibl>
+      
+      <bibl><label>60</label> State Council of P. R. China, 'The Opinion on the Significant Issues as regard Deepening Economic Reform of<lb/> 2016' (31 March 2016).<lb/> </bibl>
+      <bibl><label>61</label> Lingyan Xu, Comparative Study on Legal System of Financial Supervision: Global Financial Legal System<lb/> Reform and China's Choice, 49-50 (Law Press 2016). </bibl>
+      
+      <bibl><label>63</label> Supra note 3.<lb/> </bibl>
+      
+      <bibl><label>64</label> Ching-Yi Chang et al, Analysis of the Factors that Influence Venture Capital Fundraising: An Empirical Study<lb/> in China 5 (12) African Journal of Business Management 4765 (2011).<lb/> </bibl>
+      <bibl><label>65</label> Lee Harris, A Critical Theory of Private Equity 35 (1) Delaware Journal of Corporate Law 1 (2010).<lb/> </bibl>
+      <bibl><label>66</label> Section 7 of the Interim Measures (2014) provides that:<lb/> 'A manager of Privately-raised Funds of any type shall, in accordance with the provisions of the AMAC, apply<lb/> for registration to the AMAC and submit the following basic materials: (1) Photocopies of the originals and<lb/> duplicates of its industrial and commercial registration certificate and business license; (2) Its articles of<lb/> association or partnership agreement; (3) The list of its major shareholders or partners; (4) Profiles of its senior<lb/> management personnel; and (5) Other materials required by the AMAC.'<lb/> </bibl>
+      <bibl><label>67</label> Section 8 of the Interim Measures (2014) provides that<lb/> after the fund-raising of a Privately-raised Fund of any type is completed, the manager of the Privately-<lb/>raised Fund shall, in accordance with the provisions of the AMAC, go through the record-filing procedures<lb/> for the Privately-raised Fund, and submit the following basic materials: (1) Information on the main<lb/> investment direction of the Privately-raised Fund and its fund category indicated according to the main<lb/> investment direction; (2) The fund contract and the articles of association or partnership agreement of the<lb/> company. The fund prospectus shall also be submitted if it has been provided for investors during fund-<lb/>raising. Where the Privately-raised Fund is established in the form of an enterprise, such as a company or<lb/> partnership, the industrial and commercial registration and photocopies of the original and duplicate of the<lb/> business license shall also be submitted; (3) Where the Privately-raised Fund is placed under entrusted<lb/> management, the agreement on entrusted management shall be submitted. Where the properties of the<lb/> Privately-raised Fund are entrusted to a custodian, the agreement on custody shall also be submitted; and<lb/> (4) Other materials required by the AMAC.<lb/> </bibl>
+      
+      <bibl type="footnote"><label>68</label>Referred to as 'LPAs'.</bibl>
+    </listBibl>
+  </text>
+</TEI>

@@ -1,0 +1,120 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1017__s1574019609003411">
+    <titleStmt>
+      <title level="a">On the &lt;i&gt;Lissabon-Urteil&lt;/i&gt;: Democracy and a Democratic Paradox</title>
+      <author>
+        <persName>
+          <forename/>
+          <surname>JHR</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename/>
+          <surname>LB</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Cambridge University Press (CUP)</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2009</date>
+      <idno type="DOI">10.1017/s1574019609003411</idno>
+      <ptr target="https://doi.org/10.1017/s1574019609003411"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>None JHR, None LB. (2009). On the &lt;i&gt;Lissabon-Urteil&lt;/i&gt;: Democracy and a Democratic Paradox. European Constitutional Law Review, 5(3), 341-344. DOI: 10.1017/s1574019609003411</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">On the &lt;i&gt;Lissabon-Urteil&lt;/i&gt;: Democracy and a Democratic Paradox</title>
+          <author>
+            <persName>
+              <surname>JHR</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <surname>LB</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">European Constitutional Law Review</title>
+          <imprint>
+            <biblScope unit="volume">5</biblScope>
+            <biblScope unit="issue">3</biblScope>
+            <biblScope unit="page" from="341" to="344">341-344</biblScope>
+            <date when="2009">2009</date>
+            <publisher>Cambridge University Press (CUP)</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.1017/s1574019609003411</idno>
+        <ptr target="https://doi.org/10.1017/s1574019609003411"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-31T15:32:09.752475Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-71-g595835ed0</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-31T15:32:09.752475Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-04-15T08:10:34.759Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-04-15T11:37:21.899Z" status="draft" who="#cboulanger">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-03T16:20:14.831Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-03T16:23:19.633Z" status="checked" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> See on a possible upcoming Greek constitutional identity control by the Greek Council of<lb/> State, the Michaniki case note by Vasiliki Kosta in this issue.<lb/> </bibl>
+        <bibl><label>2</label> Christian Calliess, Frankfurter Allgemeine Zeitung, 27 Aug. 2009.<lb/> </bibl>
+        <bibl><label>3</label> Editorial comments: 'Karlsruhe has spoken: "Yes" to the Lisbon Treaty, but…', CML Rev<lb/> (2009), p. 1023 (1023, 1033).<lb/> </bibl>
+        <bibl><label>4</label> &lt;www.whi-berlin.de/documents/whi-material0109.pdf&gt;: 'Ist in einem Verfahren vor dem<lb/> Bundesverfassungsgericht die Auslegung der vertraglichen Grundlagen der Europäischen Union<lb/> oder die Gültigkeit und die Auslegung der Handlungen der Organe, Einrichtungen oder sonstigen<lb/> Stellen der Europäischen Union entscheidungserheblich, ist das Bundesverfassungsgericht zur Vorlage<lb/> dieser Frage an den Gerichtshof der Europäischen Union verpflichtet'.<lb/> </bibl>
+        <bibl><label>5</label> German Law Journal, No. 8, p. 1241; </bibl>
+          <bibl>see also Christoph Schönberger, 'Lisbon in Karlsruhe:<lb/> Maastricht's Epigones At Sea', idem, p. 1201.<lb/> </bibl>
+        <bibl><label>6</label> See Schönberger, supra n. 5; </bibl>
+          <bibl>Halberstam &amp; Möllers, idem.<lb/> </bibl>
+        <bibl><label>7</label> Martin Nettesheim, 'Entmündigung der Politik', Frankfurter Allgemeine Zeitung, 27 Aug. 2009;<lb/> </bibl>
+<bibl>Calliess, supra n. 2.</bibl>
+        </listBibl>
+    </text>
+</TEI>

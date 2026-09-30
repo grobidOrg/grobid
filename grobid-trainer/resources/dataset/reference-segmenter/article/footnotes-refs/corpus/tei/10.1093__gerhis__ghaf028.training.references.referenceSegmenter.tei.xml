@@ -1,0 +1,257 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1093__gerhis__ghaf028">
+    <titleStmt>
+      <title level="a">A Farewell to the Thucydides Trap: The ‘Anglo-German Antagonism’ as History and International Relations Paradigm</title>
+      <author>
+        <persName>
+          <forename>Matthew P</forename>
+          <surname>Fitzpatrick</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sperber">Marcia Sperber</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Oxford University Press (OUP)</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2025</date>
+      <idno type="DOI">10.1093/gerhis/ghaf028</idno>
+      <ptr target="https://doi.org/10.1093/gerhis/ghaf028"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Matthew P Fitzpatrick. (2025). A Farewell to the Thucydides Trap: The ‘Anglo-German Antagonism’ as History and International Relations Paradigm. German History, 43(2), 161-180. DOI: 10.1093/gerhis/ghaf028</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">A Farewell to the Thucydides Trap: The ‘Anglo-German Antagonism’ as History and International Relations Paradigm</title>
+          <author>
+            <persName>
+              <forename>Matthew P</forename>
+              <surname>Fitzpatrick</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">German History</title>
+          <imprint>
+            <biblScope unit="volume">43</biblScope>
+            <biblScope unit="issue">2</biblScope>
+            <biblScope unit="page" from="161" to="180">161-180</biblScope>
+            <date when="2025">2025</date>
+            <publisher>Oxford University Press (OUP)</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.1093/gerhis/ghaf028</idno>
+        <ptr target="https://doi.org/10.1093/gerhis/ghaf028"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:23:12.274911Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.1-53-g0e80a72f8</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:23:12.274911Z" status="extraction">
+      <note type="label">2. Marcia</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-06T18:58:03.374Z" status="unfinished" who="#schulze">
+      <desc>1 round</desc>
+    </change>
+    <change when="2026-03-10T09:52:00.804Z" status="unfinished" who="#schulze">
+      <desc>still one github question</desc>
+    </change>
+    <change when="2026-03-11T10:05:16.968Z" status="draft" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-12T16:24:33.153Z" status="unfinished" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-27T14:20:47.175Z" status="checked" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-04-03T07:24:35.110Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-03T08:14:00.729Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-03T22:01:09.360Z" status="in-review" who="#lfoppiano">
+      <note type="label">v6 (lfoppiano)</note>
+      <desc>after-update-segmentation</desc>
+    </change>
+    <change when="2026-09-12T15:12:18.618Z" status="approved" who="#lfoppiano">
+      <desc>after-update-segmentation</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> F. E. Chadwick, 'The Anglo-German Tension and a Solution', American Journal of International Law, 6, 3 (1912),<lb/> pp. 601-13, here pp. 607-8.<lb/> </bibl>
+        <bibl><label>2</label> E. Crowe, 'Appendix A: Memorandum on the Present State of British Relations with France and Germany' [1 Jan.<lb/> 1907], in G. P. Gooch and H. Temperley (eds), British Documents on the Origins of the War, vol. 3: The Testing of<lb/> the Entente, 1904-6 (London, 1928), pp. 397-420, here pp. 402-20.<lb/> </bibl>
+        <bibl><label>3</label> T. Sanderson, 'Appendix B: Memorandum by Lord Sanderson' [21 Feb. 1907], in Gooch and Temperley, British<lb/> Documents on the Origins of the War, vol. 3, pp. 420-33.<lb/> </bibl>
+        <bibl><label>4</label> A. Skřivan and A. Skřivan, 'The Financial Battle for Beijing: The Great Powers and Loans to China, 1895-1898',<lb/> Historian, 79, 3 (2017), pp. 476-503; </bibl>
+<bibl>M. P. Fitzpatrick, 'Globalisation or Empire? Revolution, the State and the<lb/> Geopolitics of Chinese Debt, 1895-1914', Enterprise &amp; Society (2024), https://doi.org/10.1017/eso.2024.21; </bibl>
+        <bibl>G.<lb/> Moazzin, 'Networks of Capital: German Bankers and the Financial Internationalisation of China (1885-1919)',<lb/> Enterprise &amp; Society, 20, 4 (2019), pp. 796-808.<lb/> </bibl>
+        <bibl><label>5</label> Addis to Hillier, 4 Jan. 1915, in HSBC Archive HQ HSBCK 0003 Letters (unnumbered).<lb/> </bibl>
+        <bibl><label>6</label> Petition, 29 Aug. 1914, signed by Thomas Trood and ninety-two others, Bundesarchiv Berlin, R1001/2627,<lb/> 'Correspondence Relating to the Occupation of German Samoa by An Expeditionary Force from New Zealand', p.<lb/> 64.<lb/> </bibl>
+        <bibl><label>7</label> M. Fröhlich, Von Konfrontation zur Koexistenz: die deutsch-englischen Kolonialbeziehungen in Afrika zwischen<lb/> 1884 und 1914 (Bochum, 1990).<lb/> </bibl>
+        <bibl><label>8</label> P. Kennedy, The Rise of the Anglo-German Antagonism, 1860-1914 (London, 1980). </bibl>
+          <bibl>The most detailed and<lb/> wide-ranging historiographical assessment of the fate of this paradigm and its contribution to the broader<lb/> Sonderweg debate remains J. Rüger, 'Revisiting the Anglo-German Antagonism', Journal of Modern History, 83,<lb/> 3 (2011), pp. 579-617.<lb/> </bibl>
+        <bibl><label>9</label> On the relationship between missionary and secular colonizing endeavours, see J. Best, Heavenly Fatherland:<lb/> German Missionary Culture and Globalization in the Age of Empire (Toronto, 2020).<lb/> </bibl>
+        <bibl><label>10</label> C. Clark, The Sleepwalkers: How Europe Went to War in 1914 (London, 2012); </bibl>
+        <bibl>W. Mulligan, The Origins of the<lb/> First World War (Cambridge, 2017).<lb/> </bibl>
+        <bibl><label>11</label> D. Geppert and R. Gerwarth, 'Introduction', in D. Geppert and R. Gerwarth (eds), Wilhelmine Germany and<lb/> Edwardian Britain: Essays on Cultural Affinity (Oxford, 2008), pp. 1-13, here p. 3.<lb/> </bibl>
+        <bibl><label>12</label> Ibid., p. 13; </bibl>
+          <bibl>R. Muhs, J. Paulmann and W. Steinmetz (eds), Aneignung und Abwehr: interkultureller Transfer<lb/> zwischen Deutschland und Großbritannien im 19. Jahrhundert (Bodenheim, 1998); </bibl>
+          <bibl>Rüger, 'Revisiting the Anglo-<lb/>German Antagonism', pp. 581-5.<lb/> </bibl>
+        <bibl><label>13</label> J. M. Mackenzie, '"Mutual Goodwill and Admiration" or "Jealous Ill-Will"? Empire and Popular Culture', in<lb/> Geppert and Gerwarth, Wilhelmine Germany and Edwardian Britain, pp. 91-113, here p. 93.<lb/> </bibl>
+        <bibl><label>14</label> U. Lindner, Koloniale Begegnungen: Deutschland und Großbritannien als Imperialmächte in Afrika 1880-1914<lb/> (Frankfurt/Main, 2011), pp. 10-11.<lb/> </bibl>
+        <bibl><label>15</label> Fröhlich, Von Konfrontation zur Koexistenz, p. 311.<lb/> </bibl>
+        <bibl><label>16</label> Kennedy, Rise of the Anglo-German Antagonism, p. 464. Emphasis in the original.<lb/> </bibl>
+        <bibl><label>17</label> Ibid., p. 465.<lb/> </bibl>
+        <bibl><label>18</label> N. Ferguson, The Pity of War (London, 1998), pp. 34-6.<lb/> </bibl>
+        <bibl><label>19</label> Bernhard von Bülow, 11 Dec. 1899, in Stenographische Bericht über die Verhandlungen des Reichstages, 10.<lb/> Legislaturperiode, 1. Session, 1898/1900, vol. 4 (Berlin, 1900), 119. Sitzung, pp. 3292-5.<lb/> </bibl>
+        <bibl><label>20</label> Kennedy, Rise of the Anglo-German Antagonism, p. 467; </bibl>
+          <bibl>P. Kennedy, The Rise and Fall of the Great Powers:<lb/> Economic Change and Military Conflict from 1500 to 2000 (London, 1988), p. 213.<lb/> </bibl>
+        <bibl><label>21</label> Kennedy, Rise of the Anglo-German Antagonism, p. 468.<lb/> </bibl>
+        <bibl><label>22</label> This view, it is worth noting, is at odds with Kennedy's later axiomatic argument that 'the relative strengths of the<lb/> leading nations in world affairs never remain constant', </bibl>
+          <bibl>Kennedy, Rise and Fall of the Great Powers, p. xv.<lb/> </bibl>
+        <bibl><label>23</label> Kennedy, Rise of the Anglo-German Antagonism, p. 469.<lb/> </bibl>
+        <bibl><label>24</label> F. Meinecke, Geschichte des deutsch-englischen Bündnisproblems, 1890-1901 (Berlin, 1927), pp. 5-6.<lb/> </bibl>
+        <bibl><label>25</label> R. J. S. Hoffman, Great Britain and the German Trade Rivalry, 1875-1914 (Philadelphia, 1933), p. 279.<lb/> </bibl>
+        <bibl><label>26</label> H. Neuburger and H. H. Stokes, 'The Anglo-German Trade Rivalry, 1887-1913: A Counterfactual Outcome and Its<lb/> Implications', Social Science History, 3, 2 (1979), pp. 187-201.<lb/> </bibl>
+        <bibl><label>27</label> F. Fischer, Weltmacht oder Niedergang: Deutschland im ersten Weltkrieg (Frankfurt/Main, 1965), p. 37. </bibl>
+          <bibl>See also<lb/> F. Fischer, Griff nach der Weltmacht: die Kriegszielpolitik des kaiserlichen Deutschland 1914/1918 (Düsseldorf,<lb/> 1961), pp. 28-36.<lb/> </bibl>
+        <bibl><label>28</label> For an overview of the response to Fischer's work, see A. Mombauer, 'The Fischer Controversy, Documents and<lb/> the "Truth" about the Origins of the First World War', Journal of Contemporary History, 48, 2 (2013), pp. 290-<lb/>314. </bibl>
+          <bibl>The apogee of this view came with N. Ferguson, Empire: How Britain Made the Modern World (London,<lb/> 2004).<lb/> </bibl>
+        <bibl><label>29</label> P. Gopal, Insurgent Empire: Anticolonial Resistance and British Dissent (London, 2019); </bibl>
+          <bibl>S. Sanghera, Empireland:<lb/> How Imperialism Has Shaped Modern Britain (London, 2021).<lb/> </bibl>
+        <bibl><label>30</label> I. Geiss, Das Deutsche Reich und die Vorgeschichte des ersten Weltkriegs (Munich, 1978), p. 215.<lb/> </bibl>
+        <bibl><label>31</label> Kennedy, Rise of the Anglo-German Antagonism, p. 467; </bibl>
+          <bibl>F. Fischer, 'The Foreign Policy of Imperial Germany<lb/> and the Outbreak of the First World War', in G. Schöllgen (ed.), Escape into War? The Foreign Policy of Imperial<lb/> Germany (Oxford, 1990), pp. 19-40, here p. 21.<lb/> </bibl>
+        <bibl><label>32</label> A. Mombauer, 'Guilt or Responsibility? The Hundred-Year Debate on the Origins of World War I', Central European<lb/> History, 48, 4 (2015), pp. 541-64. </bibl>
+          <bibl>Rüger baulks at the work required to reconcile these rival historiographies,<lb/> noting that the 'challenge of bringing the two together in one narrative is immense' </bibl>
+          <bibl>('Revisiting the Anglo-<lb/>German Antagonism', p. 617), </bibl>
+          <bibl>but arguably a lack of historiographical consensus offers more scope for complex<lb/> historical landscapes.</bibl>
+          <bibl>See M. P. Fitzpatrick, 'Truth Telling, Historiographical Agonism, and the Colonial Past in<lb/> Germany and Australia', Australian Historical Studies, 55, 1 (2024), pp. 6-25.<lb/> </bibl>
+        <bibl><label>33</label> Kennedy, Rise of the Anglo-German Antagonism, p. 467; </bibl>
+          <bibl>G. Schmidt, 'Great Britain and Germany in the Age of<lb/> Imperialism', War and Society, 4, 1 (1986), pp. 31-51; </bibl><bibl>Clark, Sleepwalkers, p. 560; </bibl>
+          <bibl>Rüger, 'Revisiting the Anglo-<lb/>German Antagonism'. For incensed reviews of Sleepwalkers from an older generation of Germanists, see, for<lb/> example, J. C. G. Röhl, 'Goodbye to All That (Again)? The Fischer Thesis, the New Revisionism and the Meaning<lb/> of the First World War', International Affairs, 91, 1 (2015), pp. 153-66; </bibl>
+          <bibl>R. C. Moore, 'Neo-Revisionism and the<lb/> Origins of the First World War', London Journal of Research in Humanities and Social Sciences, 23, 22 (2023), pp.<lb/> 21-51; </bibl>
+          <bibl>J. A. Moses, 'Christopher Clark, the German Historians and the First World War: Telling It How It Essentially<lb/> Was?', ISAA Review, 17, 1 (2019), pp. 5-24.<lb/> </bibl>
+        <bibl><label>34</label> Rüger, 'Revisiting the Anglo-German Antagonism', p. 615; </bibl>
+          <bibl>J. Rüger, The Great Naval Game: Britain and Germany<lb/> in the Age of Empire (Cambridge, 2007), p. 248.<lb/> </bibl>
+        <bibl><label>35</label> Clark, Sleepwalkers, pp. 544-7.<lb/> </bibl>
+        <bibl><label>36</label> Mulligan, Origins of the First World War, p. 230.<lb/> </bibl>
+        <bibl><label>37</label> Kennedy, Rise and Fall of the Great Powers.<lb/> </bibl>
+        <bibl><label>38</label> A. Giddens, M. Mann and I. Wallerstein, 'Comments on Paul Kennedy's The Rise and Fall of the Great Powers',<lb/> review symposium, British Journal of Sociology, 40, 2 (1989), pp. 328-40, here p. 332.<lb/> </bibl>
+        <bibl><label>39</label> Thucydides, quoted in Kennedy, Rise and Fall of the Great Powers, p. 198.<lb/> </bibl>
+        <bibl><label>40</label> G. Allison, Destined for War: Can America and China Escape the Thucydides Trap? (London, 2018), p. 83.<lb/> </bibl>
+        <bibl><label>41</label> One reviewer summed up Allison's treatment of Thucydides as 'sloppy, superficial, oversimplified, overconfident<lb/> and repetitive'; </bibl>
+<bibl>see J. Kirschner, 'Handle Him with Care: The Importance of Getting Thucydides Right', Security<lb/> Studies, 28, 1 (2018), pp. 1-24, https://doi.org/10.1080/09636412.2018.1508634, here p. 12.<lb/> </bibl>
+        <bibl><label>42</label> Allison, Destined for War. The book was also the launching pad for an entire research project at Harvard<lb/> University devoted to seeking out further Thucydidean pairings across history. See https://www.belfercenter.org/<lb/> thucydides-trap/overview-thucydides-trap.<lb/> </bibl>
+        <bibl><label>43</label> https://www.belfercenter.org/thucydides-trap/case-file.<lb/> </bibl>
+        <bibl><label>44</label> R. Hanania, 'Graham Allison and the Thucydides Trap Myth', Strategic Studies Quarterly, 15, 4 (2021), pp. 13-24,<lb/> here p. 24.<lb/> </bibl>
+        <bibl><label>45</label> G. Allison, 'The Thucydides Trap: Are the US and China headed for War?', The Atlantic (24 Sept. 2015).<lb/> </bibl>
+        <bibl><label>46</label> G. Allison, 'How to Escape the Thucydides Trap', speech given at the 2019 Harvard Alumni China Public Policy<lb/> Forum, Center for China and Globalization, Beijing, 22 Mar. 2019, as quoted in H. H. Wang, Escaping Thucydides's<lb/> Trap: Dialogue with Graham Allison on China-US Relations (Singapore, 2023), pp. 82-3.<lb/> </bibl>
+        <bibl><label>47</label> G. Allison, 'Beyond Trade: The Confrontation between the U.S. and China', Security Times (Feb. 2020), web.<lb/> archive.org/20240226201603/https://www.the-security-times.com/beyond-trade-confrontation-us-china/.<lb/> </bibl>
+        <bibl><label>48</label> I. Geiss, 'The German Version of Imperialism, 1898-1914: Weltpolitik', in Schöllgen, Escape into War?, pp. 105-<lb/>120, here p. 117.<lb/> </bibl>
+        <bibl><label>49</label> M. Howard, 'Die Deutsch-britischen Beziehungen im 20. Jahrhundert: eine Haßliebe', in W. J. Mommsen (ed.), Die<lb/> ungleichen Partner: deutsche-britische Beziehungen im 19. und 20. Jahrhundert (Stuttgart, 1999), pp. 125-30,<lb/> here p. 130; </bibl>
+          <bibl>J. C. G. Röhl, '"The Worst of Enemies": Kaiser Wilhelm II and his Uncle Edward VII', in Geppert and<lb/> Gerwarth, Wilhelmine Germany and Edwardian Britain, pp. 41-66, here p. 62.<lb/> </bibl>
+        <bibl><label>50</label> K. C. Epstein, 'Scholarship and the Ship of State: Rethinking the Anglo-American Strategic Decline Analogy',<lb/> International Affairs, 91, 2 (2015), pp. 319-31, here pp. 320, 326, 330.<lb/> </bibl>
+        <bibl><label>51</label> Ibid., pp. 327-31.<lb/> </bibl>
+        <bibl><label>52</label> Allison, Destined for War, pp. 57-8.<lb/> </bibl>
+        <bibl><label>53</label> D. Stafford, Review Article, 'A Moral Tale: Anglo-German Relations, 1860-1914', International History Review, 4,<lb/> 2 (1982), pp. 249-63, here p. 251.<lb/> </bibl>
+        <bibl><label>54</label> Wang, Escaping Thucydides's Trap, pp. xxvi-xxvii.<lb/> </bibl>
+        <bibl><label>55</label> Ibid., pp. xxvi-xxvii.<lb/> </bibl>
+        <bibl><label>56</label> H. Gardner, 'Averting World War III: Beyond the World War I, World War II Analogies', SAIS Review, 8, 2 (1988),<lb/> pp. 121-35; </bibl>
+          <bibl>S. M. Lynn-Jones, 'Détente and Deterrence: Anglo-German Relations, 1911-1914', International<lb/> Security, 11, 2 (1986), pp. 121-50; </bibl>
+          <bibl>G. Schöllgen, 'Introduction: The Theme Reflected in Recent German Research',<lb/> and W. Gutsche, 'The Foreign Policy of Imperial Germany and the Outbreak of the War in the Historiography of<lb/> the GDR', in Schöllgen, Escape into War?, pp. 1-19 (here p. 1), and pp. 41-62 (here p. 57) respectively.<lb/> </bibl>
+        <bibl><label>57</label> P. Wolfowitz, 'Bridging Centuries: Fin de Siècle All Over Again', National Interest, 47 (1997), pp. 3-8.<lb/> </bibl>
+        <bibl><label>58</label> A. I. Johnston, 'Is China a Status Quo Power?', International Security, 27, 4 (2003), pp. 5-56.<lb/> </bibl>
+        <bibl><label>59</label> R. Wolf, 'Rising Powers, Status Ambition, and the Need to Reassure: What China Could Learn from Imperial<lb/> Germany's Failures', Chinese Journal of International Politics, 7, 2 (2014), pp. 185-219.<lb/> </bibl>
+        <bibl><label>60</label> H. Kissinger, On China (New York, 2011).<lb/> </bibl>
+        <bibl><label>61</label> Ibid., p. 514.<lb/> </bibl>
+        <bibl><label>62</label> Ibid., p. 516.<lb/> </bibl>
+        <bibl><label>63</label> Ibid., p. 522.<lb/> </bibl>
+        <bibl><label>64</label> Z. Steiner, 'The Last Years of the Old Foreign Office, 1898-1905', Historical Journal, 6, 1 (1963), pp. 59-90, here<lb/> pp. 76-7.<lb/> </bibl>
+        <bibl><label>65</label> Allison, Destined for War, pp. 58-61; Kissinger, On China, pp. 518-20.<lb/> </bibl>
+        <bibl><label>66</label> R. A. Cosgrove, 'The Crowe Memorandum and British Foreign Policy, 1907-1914', South Atlantic Quarterly, 72,<lb/> 4 (1973), pp. 527-39, here pp. 530-1.<lb/> </bibl>
+        <bibl><label>67</label> Ibid., p. 528.<lb/> </bibl>
+        <bibl><label>68</label> Crowe, 'Appendix A: Memorandum', pp. 397-417.<lb/> </bibl>
+        <bibl><label>69</label> Sanderson, 'Appendix B: Memorandum', pp. 428-9.<lb/> </bibl>
+        <bibl><label>70</label> Ibid., p. 428.<lb/> </bibl>
+        <bibl><label>71</label> Steiner, 'Last Years', pp. 76-8.<lb/> </bibl>
+        <bibl><label>72</label> Sanderson, 'Appendix B: Memorandum', p. 431.<lb/> </bibl>
+        <bibl><label>73</label> Ibid., pp. 421-2; </bibl>
+          <bibl>Steiner, 'Last Years', p. 79.<lb/> </bibl>
+        <bibl><label>74</label> Crowe, 'Appendix A: Memorandum', p. 402.<lb/> </bibl>
+        <bibl><label>75</label> Sanderson, 'Appendix B: Memorandum', p. 430.<lb/> </bibl>
+        <bibl><label>76</label> F. Thimme, 'Das Memorandum E. A. Crowes vom 1. Januar 1907. Seine Bedeutung für die Kriegsschuldfrage',<lb/> Berliner Monatshefte, 7, 8 (Aug. 1929), pp. 732-68, here pp. 757-8.<lb/> </bibl>
+        <bibl><label>77</label> Crowe, 'Appendix A: Memorandum', pp. 397-419.<lb/> </bibl>
+        <bibl><label>78</label> Sanderson, 'Appendix B: Memorandum', p. 430.<lb/> </bibl>
+        <bibl><label>79</label> Steiner, 'Last Years', pp. 76-7.<lb/> </bibl>
+        <bibl><label>80</label> Thimme, 'Das Memorandum E. A. Crowes vom 1. Januar 1907', pp. 752-7. </bibl>
+          <bibl>See also M. P. Fitzpatrick, The Kaiser<lb/> and the Colonies: Monarchy in the Age of Empire (Oxford, 2022), pp. 161-87.<lb/> </bibl>
+        <bibl><label>81</label> Sanderson, 'Appendix B: Memorandum', p. 420.<lb/> </bibl>
+        <bibl><label>82</label> Steiner, 'Last Years', p. 79.<lb/> </bibl>
+        <bibl><label>83</label> Thimme, 'Das Memorandum E. A. Crowes vom 1. Januar 1907', pp. 736-7.<lb/> </bibl>
+        <bibl><label>84</label> J. S. Dunn, The Crowe Memorandum: Sir Eyre Crowe and Foreign Office Perceptions of Germany, 1918-1925<lb/> (Newcastle, 2013), pp. 1-46.<lb/> </bibl>
+        <bibl><label>85</label> F. Thimme, 'Das "berühmte Schwindeldokument" E. A. Crowes', Berliner Monatshefte, 7, 9 (Sept. 1929), pp.<lb/> 874-9, here p. 879.<lb/> </bibl>
+        <bibl><label>86</label> Thimme, 'Das Memorandum E. A. Crowes vom 1. Januar 1907', p. 737.<lb/> </bibl>
+        <bibl><label>87</label> Ibid., p. 735.<lb/> </bibl>
+        <bibl><label>88</label> H. Lutz, Eyre Crowe: der böse Geist des Foreign Office (Berlin, 1931).<lb/> </bibl>
+        <bibl><label>89</label> I. Geiss, July 1914: The Outbreak of the First World War. Selected Documents (London, 1967), pp. 28-33.<lb/> </bibl>
+        <bibl><label>90</label> Clark, Sleepwalkers, pp. 162-7.<lb/> </bibl>
+        <bibl><label>91</label> Kissinger, On China, p. 519; </bibl>
+          <bibl>Allison, Destined for War, p. 59.<lb/> </bibl>
+        <bibl><label>92</label> Crowe, 'Appendix A: Memorandum', p. 403. </bibl>
+          <bibl>Unlike Allison's broader (and more pessimistic) reading of Crowe,<lb/> Kissinger posits the lesson of the memorandum is that turning minor events into talismanic struggles for he-<lb/>gemony leads only to disaster; </bibl>
+          <bibl>see Kissinger, On China, p. 522.<lb/> </bibl>
+        <bibl><label>93</label> J. Rogers and A. Lanoszka, 'A "Crowe Memorandum" for the Twenty-First Century: Preparing for Intensified<lb/> Geopolitical Competition', Council on Geostrategy Policy Paper, Mar. 2021, pp. 1-24, https://www.geostrategy.<lb/> org.uk/app/uploads/2021/05/Policy-Paper-GPPP01-02032021.pdf, here pp. 4-5.<lb/> </bibl>
+        <bibl><label>94</label> Ibid., p. 18.<lb/> </bibl>
+        <bibl><label>95</label> Zhengyu Wu, 'The Crowe Memorandum, the Rebalance to Asia, and Sino-US Relations', Journal of Strategic<lb/> Studies, 39, 3 (2016), pp. 389-416, here p. 392.<lb/> </bibl>
+        <bibl><label>96</label> Ibid., pp. 393-4.<lb/> </bibl>
+        <bibl><label>97</label> Ibid., p. 396.<lb/> </bibl>
+        <bibl><label>98</label> Ibid., pp. 399-400.<lb/> </bibl>
+        <bibl><label>99</label> Ibid., pp. 404-5.<lb/> </bibl>
+        <bibl><label>100</label> Ibid., pp. 407-8.<lb/> </bibl>
+        <bibl><label>101</label> J. Hemmings, 'Should the Quad Become a Formal Alliance?', Journal of Indo-Pacific Affairs (Mar./Apr. 2022), pp.<lb/> 65-77.<lb/> </bibl>
+        <bibl><label>102</label> Wolf, 'Rising Powers', p. 193.<lb/> </bibl>
+        <bibl><label>103</label> J. Mecklin, 'Interview with Graham Allison: Are the United States and China Charging into Thucydides's Trap?',<lb/> Bulletin of the Atomic Scientists, 78, 2 (2022), pp. 53-8, here p. 53.<lb/> </bibl>
+        <bibl><label>104</label> Ibid., pp. 57-8.</bibl>
+        </listBibl>
+    </text>
+
+
+</TEI>

@@ -1,0 +1,268 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.12775__clr.2013.002">
+    <titleStmt>
+      <title level="a">Classical Social Theory and Ideas of Responsibility and the State in France and Germany</title>
+      <author>
+        <persName>
+          <forename>Roger</forename>
+          <surname>Cotterrell</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Uniwersytet Mikolaja Kopernika/Nicolaus Copernicus University</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2013</date>
+      <idno type="DOI">10.12775/clr.2013.002</idno>
+      <ptr target="https://doi.org/10.12775/clr.2013.002"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Roger Cotterrell. (2013). Classical Social Theory and Ideas of Responsibility and the State in France and Germany. Comparative Law Review, 15(0), 21. DOI: 10.12775/clr.2013.002</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Classical Social Theory and Ideas of Responsibility and the State in France and Germany</title>
+          <author>
+            <persName>
+              <forename>Roger</forename>
+              <surname>Cotterrell</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Comparative Law Review</title>
+          <imprint>
+            <biblScope unit="volume">15</biblScope>
+            <biblScope unit="issue">0</biblScope>
+            <biblScope unit="page">21</biblScope>
+            <date when="2013">2013</date>
+            <publisher>Uniwersytet Mikolaja Kopernika/Nicolaus Copernicus University</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.12775/clr.2013.002</idno>
+        <ptr target="https://doi.org/10.12775/clr.2013.002"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:24:05.086698Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:24:05.086698Z" status="extraction">
+      <note type="label">2 schulze</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-04T06:13:33.325Z" status="draft" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-04T07:30:46.035Z" status="draft" who="#li">
+      <desc>1.Pass completed</desc>
+    </change>
+    <change when="2026-03-06T08:55:31.818Z" status="draft" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-09T07:39:28.792Z" status="checked" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-04-03T08:55:29.663Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-03T09:21:15.432Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-03T22:17:14.373Z" status="in-review" who="#lfoppiano">
+      <note type="label">v6 (lfoppiano)</note>
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-04T08:52:48.522Z" status="in-review" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-04T09:19:06.588Z" status="checked" who="#kazuyo">
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-04T10:06:27.630Z" status="checked" who="#kazuyo">
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-12T15:15:35.312Z" status="approved" who="#lfoppiano">
+      <note type="label">v7 (lfoppiano)</note>
+      <desc>updated-upstream-model</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> See S. P. Turner, R. A. Factor, Max Weber: The Lawyer as Social Thinker, London, New York:<lb/> Routledge 1994;</bibl> <bibl>P. Honigsheim, On Max Weber, London: Collier-Macmillan Limited 1968,<lb/> pp. 68-75; </bibl>
+<bibl>J. Radkau, Max Weber: A Biography, Cambridge: Polity Press 2009, pp. 258-9, 261-6;<lb/> </bibl>
+          <bibl>and, generally, M. Weber, Max Weber: A Biography, New York, London, Sydney, Toronto: John<lb/> Wiley and Sons 1975.<lb/> </bibl>
+        <bibl><label>2</label> R. Cotterrell, Living Law: Studies in Legal and Social Theory, Aldershot: Ashgate 2008, chs. 6<lb/> and 7; </bibl>
+<bibl>R. Cotterrell, Émile Durkheim: Law in a Moral Domain, Edinburgh: Edinburgh University<lb/> Press 1999, chap. 3.<lb/> </bibl>
+
+        <bibl><label>3</label> R. Cotterrell, The Politics of Jurisprudence: A Critical Introduction to Legal Philosophy, 2 nd edn.,<lb/> Oxford: Oxford University Press 2003.<lb/> </bibl>
+        <bibl><label>4</label> N. S. Timasheff, An Introduction to the Sociology of Law, Cambridge: Harvard University<lb/> Committee on Research in the Social Sciences 1939, p. 45.<lb/> </bibl>
+
+        <bibl><label>5</label> R. Aron, Main Currents of Sociological Thought, vol. 1, London: Weidenfeld &amp; Nicolson 1965,<lb/> pp. 101-2.<lb/> </bibl>
+        <bibl><label>6</label> A. Comte, Cours de philosophie positive (1830-42), vol. 6, Paris: J. B. Baillière et fils 1869,<lb/> pp. 651-2, [as quoted in:] Timasheff, supra note 6, p. 45.<lb/> </bibl>
+        <bibl><label>7</label> A. Comte [quoted in:] G. Gurvitch, Sociology of Law, London: Routledge &amp; Kegan Paul,<lb/> Trench, Trubner &amp; Co 1947, p. 12.<lb/> </bibl>
+
+        <bibl><label>8</label> A. Comte, Cours de philosophie positive, vol. 4, Paris: J. B. Baillière et fils 1864, pp. 429, 430-1,<lb/></bibl>
+          <bibl>[as quoted in:] S. Lukes, Émile Durkheim: His Life and Work, Harmondsworth: Penguin 1973,<lb/> pp. 141, 142.<lb/> </bibl>
+        <bibl><label>9</label> H. E. Barnes, The Social and Political Philosophy of Auguste Comte, [in:] H. E. Barnes,<lb/> An Introduction to the History of Sociology, Chicago: University of Chicago Press 1948,<lb/> pp. 81-109.</bibl>
+          <bibl>For the apparent change over time in Comte's ideas on the organisation and<lb/> radical decentralisation of governmental functions see e.g. R. Vernon, Auguste Comte and the<lb/> Withering-Away of the State, Journal of the History of Ideas 1984, vol. 45, p. 549.<lb/> </bibl>
+        <bibl><label>10</label> L. v. Stein, The History of the Social Movement in France, 1789-1850, Totowa, New Jersey:<lb/> Bedminster Press 1964.<lb/> </bibl>
+        <bibl><label>11</label> K. Mengelberg, Lorenz von Stein and his Contribution to Historical Sociology, Journal of the<lb/> History of Ideas 1961, vol. 22, pp. 267, 268.<lb/> </bibl>
+        <bibl><label>12</label> H. Marcuse, Reason and Revolution: Hegel and the Rise of Social Theory, London: Routledge<lb/> and Kegan Paul 1955, p. 375.<lb/> </bibl>
+
+        <bibl><label>13</label> Von Stein, Geschichte der sozialen Bewegung in Frankreich von 1789 bis auf unserer Tage, vol. 1,<lb/> Munchen: Drei Masken Verlag 1921, p. 209,</bibl>
+          <bibl>[as quoted in:] E.-W. Böckenförde, State, Society<lb/> and Liberty: Studies in Political Theory and Constitutional Law, New York: Berg 1991, p. 121.<lb/> </bibl>
+        <bibl><label>14</label> Böckenförde, supra note 13, p. 121.<lb/></bibl>
+          <bibl><label>15</label> Ibid., p. 126.<lb/></bibl>
+          <bibl><label>16</label> Ibid., p. 127.<lb/> </bibl>
+
+        <bibl><label>17</label> J. Singelmann, P. Singelmann, Lorenz von Stein and the Paradigmatic Bifurcation of Social<lb/> Theory in the Nineteenth Century, British Journal of Sociology 1986, vol. 37, pp. 431, 447;<lb/> </bibl>
+<bibl>Marcuse, supra note 12, p. 374.</bibl>
+          <bibl>As Werner Cahnman puts it, "Marx's sociology is therefore as<lb/> Steinian as his economics is Ricardian". See W. Cahnman, Book review: Lorenz von Stein:<lb/> The History of the Social Movement in France, 1789-1850;</bibl>
+          <bibl>Translated by Kaethe Mengelberg,<lb/> American Journal of Sociology 1966, vol. 71, p. 746.<lb/> </bibl>
+        <bibl><label>18</label> Böckenförde, supra note 13, pp. 117-18.<lb/> </bibl>
+        <bibl><label>19</label> Ibid. in chap. 6.<lb/> </bibl>
+        <bibl><label>20</label> Von Stein, supra note 13, p. 16,</bibl> <bibl>[as quoted in:] Singelmann, Singelmann, supra note 17,<lb/> p. 436.</bibl>
+          <bibl>See also Mengelberg, supra note 11, p. 269;</bibl> <bibl>Marcuse, supra note 12, p. 381.<lb/> </bibl>
+
+        <bibl><label>21</label> Von Stein, supra note 13, p. 49,</bibl> <bibl>[as quoted in:] Mengelberg, supra note 11, p. 269;</bibl>
+          <bibl>and see<lb/> Singelmann, Singelmann, supra note 17, pp. 437-8.<lb/> </bibl>
+
+        <bibl><label>22</label> Böckenförde, supra note 13, p. 133.<lb/> </bibl>
+        <bibl><label>23</label> C. Thornhill, The Domain of Public Administration, Journal of Public Administration 2006,<lb/> vol. 41, pp. 793, 794.<lb/> </bibl>
+        <bibl><label>24</label> M. R. Rutgers, Can the Study of Public Administration Do Without a Concept of the State?<lb/> Reflections on the Work of Lorenz von Stein, Administration &amp; Society 1994, vol. 26, p. 395.<lb/></bibl>
+          <bibl><label>25</label> In this perspective social science overwhelms juristic science. Unsurprisingly, from the<lb/> juristic side, the complaint was made that Von Stein's "conception of society shows the<lb/> modern tendency unduly to extend its meaning, and to include [in it] the functions<lb/> of government and law and national economics": F. Berolzheimer, The World's Legal<lb/> Philosophies, Boston: Boston Book Company 1912, p. 327.</bibl>
+          <bibl>Comte's subsuming of law and<lb/> government in the social attracted the same criticism: ibid., pp. 311-12.</bibl>
+          <bibl>Yet some jurists made<lb/> similar claims for the precedence of the social: Otto von Gierke wrote (in his Natural Law and<lb/> the Theory of Society, 1500 to 1800, Cambridge: Cambridge University Press 1950, p. 224) that<lb/> "We shall no longer ask whether the state is prior to law, or law is prior to the state. We shall<lb/> regard them both as inherent functions of the common life which is inseparable from the idea<lb/> of man". But such general juristic speculations (part of lawyers' "internal" debates) posed<lb/> no threat to lawyers' preserves, unlike the creation of entirely new research fields<lb/> of sociology or social theory to study law and government historically as social phenomena.<lb/> </bibl>
+
+        <bibl><label>26</label> F. Tönnies, Community and Association, London: Routledge &amp; Kegan Paul 1955, pp. 227-8.<lb/> </bibl>
+        <bibl><label>27</label> H. Liebersohn, Fate and Utopia in German Sociology 1870-1923, Cambridge, Massachusetts:<lb/> MIT Press 1988, pp. 11-12.</bibl>
+          <bibl>It has, however, been argued that, after the publication of his 1887<lb/> book, Tönnies' outlook gradually became more optimistic. This led him to a sustained search<lb/> for opportunities to recover, perhaps in new forms, aspects of Gemeinschaft in modern<lb/> conditions, or to transform Gesellschaft structures productively. See A. Mitzman, Tönnies and<lb/> German Society, 1887-1914: From Cultural Pessimism to Celebration of the Volksgemeinschaft, Journal<lb/> of the History of Ideas 1971, vol. 32, p. 507,</bibl>
+          <bibl>and C. Adair-Toteff, Ferdinand Tönnies: Utopian<lb/> Visionary, Sociological Theory 1995, vol. 13, p. 58.<lb/> </bibl>
+        <bibl><label>28</label> Tönnies, supra note 26, p. 48.<lb/></bibl>
+        <bibl><label>29</label> Ibid., p. 74.<lb/> </bibl>
+        <bibl><label>30</label> Ibid., pp. 225-7, 264.<lb/></bibl> <bibl><label>31</label> Ibid., p. 262.<lb/> </bibl>
+
+        <bibl><label>32</label> M. Weber, Economy and Society: An Outline of Interpretive Sociology, Berkeley, CA:<lb/> University of California Press 1978, pp. 641-900.<lb/> </bibl>
+        <bibl><label>33</label> Ibid., pp. 874-5.<lb/> </bibl>
+
+<bibl><label>34</label> Ibid., p. 657.<lb/></bibl>
+          <bibl><label>35</label> Ibid., p. 656.<lb/> </bibl>
+        <bibl><label>36</label> Ibid., pp. 882-9.<lb/> </bibl>
+<bibl><label>37</label> Ibid., p. 886.<lb/> </bibl>
+
+        <bibl><label>38</label> W. J. Mommsen, Max Weber and German Politics 1890-1920, Chicago: University of Chicago<lb/> Press 1984, p. 104.<lb/> </bibl>
+        <bibl><label>39</label> M. Weber, The Protestant Ethic and the Spirit of Capitalism, London: G. Allen &amp; Unwin 1930,<lb/> p. 181.<lb/> </bibl>
+        <bibl><label>40</label> Weber</bibl> <bibl>[quoted in:] Mommsen, supra note 38, p. 105.<lb/> </bibl>
+        <bibl><label>41</label> See Weber, supra note 32, p. 885.<lb/> </bibl>
+        <bibl><label>42</label> See e.g. O. v. Gierke, Associations and Law: The Classical and Early Christian Stages, Toronto,<lb/> Buffalo: University of Toronto Press 1977;</bibl>
+          <bibl>idem, Community in Historical Perspective,<lb/> Cambridge: Cambridge University Press 1990;</bibl>
+          <bibl>idem, Natural Law, supra note 25;<lb/></bibl>
+          <bibl>idem, Political Theories of the Middle Age, Cambridge: Cambridge University Press 1900;</bibl>
+          <bibl>idem,<lb/> The Development of Political Theory, New York: H. Fertig 1966.<lb/> </bibl>
+
+        <bibl><label>43</label> M. John, Politics and the Law in Late Nineteenth-Century Germany: The Origins of the Civil<lb/> Code, Oxford: Clarendon Press 1989, chap. 5.<lb/> </bibl>
+        <bibl><label>44</label> Ibid., pp. 109-11; </bibl>
+<bibl>Mitzman, supra note 27.<lb/> </bibl>
+        <bibl><label>45</label> M. F. John, The Politics of Legal Unity in Germany, 1870-1897, Historical Journal 1985, vol. 28,<lb/> pp. 28, 341.<lb/> </bibl>
+        <bibl><label>46</label> Mommsen, supra note 38, p. 11;</bibl> <bibl>W. J. Cahnman, R. Heberle (eds), Ferdinand Toennies on<lb/> Sociology: Pure, Applied and Empirical, Chicago: University of Chicago Press 1971, pp. 22, 32-33;<lb/> </bibl>
+<bibl>A. Brand, Against Romanticism: Max Weber and the Historical School of Law, Australian Journal<lb/> of Law and Society 1982, vol. 1, p. 94.<lb/> </bibl>
+        <bibl><label>47</label> Cf. A. Black, Editor's Introduction to Gierke, Community, supra note 42, pp. xiv, xxx: "Gierke<lb/> furnishes a splendid example of the kind of thinking against which (…) Weber (…) reacted<lb/> (…); he was the type case of what Weber called «the professor carrying the marshal's baton<lb/> of the statesman or reformer in his knapsack»".<lb/> </bibl>
+
+        <bibl><label>48</label> Cf. M. Weber, Politics as a Vocation and Science as a Vocation, [in:] H. H. Gerth,<lb/> C. W. Mills (eds), From Max Weber: Essays in Sociology, London: Routledge &amp; Kegan Paul 1948,<lb/> especially, pp. 115-17, 150-3.<lb/> </bibl>
+        <bibl><label>49</label> J.-J. Rousseau, The Social Contract and Discourses, London: Dent 1973, p. 205.<lb/> </bibl>
+
+        <bibl><label>50</label> C. Bouglé, Le solidarisme, Paris: M. Giard 1924, p. 7.<lb/> </bibl>
+        <bibl><label>51</label> Cf. Lukes, supra note 8, pp. 350-4.<lb/> </bibl>
+<bibl><label>52</label> The following summary draws especially on G. Gurvitch, L'idée du Droit Social: Notion<lb/> et système du droit social. Histoire doctrinale depuis le 17e siècle jusqu'à la fin du 19e siècle, Paris:<lb/> Librairie de Recueil Sirey 1932, pp. 567-89;</bibl>
+          <bibl>see also J. E. S. Hayward, Solidarity: The Social<lb/> History of an Idea in Nineteenth-Century France, International Review of Social History 1959,<lb/> vol. 4, p. 261.<lb/> </bibl>
+        <bibl><label>53</label> C. Secrétan, Philosophie de la liberté, vol. 2, Paris: A. Durand 1865, p. 471,</bibl>
+          <bibl>[as quoted in:]<lb/> Gurvitch, supra note 52, p. 572.<lb/> </bibl>
+        <bibl><label>54</label> C. Secrétan, Études sociales, Paris: F. Alcan 1889, pp. 176, 178,</bibl>
+          <bibl>[as quoted in:] Gurvitch,<lb/> supra note 52, p. 574.<lb/> </bibl>
+        <bibl><label>55</label> A. Fouillée, La science sociale contemporaine, Paris: Hachette et cie 1910,</bibl>
+          <bibl>[quoted in:]<lb/> Gurvitch, supra note 52, p. 577.<lb/> </bibl>
+        <bibl><label>56</label> Fouillée</bibl>
+          <bibl>[quoted in:] Gurvitch, supra note 52, p. 580.<lb/> </bibl>
+        <bibl><label>57</label> A. Fouillée, La democratie politique et sociale en France, Paris: F. Alcan 1923, p. 18,</bibl>
+          <bibl>[as quoted<lb/> in:] Gurvitch, supra note 52, p. 580.</bibl> <bibl>See generally, J. E. S. Hayward, 'Solidarity' and the<lb/> Reformist Sociology of Alfred Fouillée, American Journal of Economics and Sociology 1963,<lb/> vol. 22, pp. 205, 303.<lb/> </bibl>
+
+        <bibl><label>58</label> See M. Borgetto, La doctrine solidariste de Léon Bourgeois: une nouvelle definition des rapports entre<lb/> le politique, le social et le droit,&gt;[in:] C. M. Herrera (ed.), Les juristes face au politique: Le droit,<lb/> la gauche, la doctrine sous la IIIe République, Paris: ime 2003, pp. 35-56;</bibl>
+          <bibl>Gurvitch, supra note 52,<lb/> pp. 582-5;</bibl>
+          <bibl>and, generally, S. Audier, Léon Bourgeois: fonder la solidarité, Paris: Michalon 2007.<lb/></bibl>
+        <bibl><label>59</label> Gurvitch, supra note 52, pp. 575, 589;</bibl> <bibl>and see Borgetto, supra note 58, pp. 51-52.<lb/> </bibl>
+        <bibl><label>60</label> Gurvitch, supra note 52, p. 579.<lb/> </bibl>
+
+        <bibl><label>61</label> É. Durkheim, The Division of Labour in Society, Basingstoke: Macmillan 1984.<lb/></bibl>
+          <bibl><label>62</label> Ibid., p. 162.<lb/></bibl>
+        <bibl><label>63</label> É. Durkheim, Communauté et société selon Tönnies, 1889,</bibl>
+          <bibl>[reprinted in:] É. Durkheim, Te tes,<lb/> Tome 1: e le ments d'une the orie sociale, Paris: E ditions de Minuit 1975.<lb/> </bibl>
+        <bibl><label>64</label> Durkheim, supra note 61, bk 3.<lb/> </bibl>
+
+        <bibl><label>65</label> See J.-L. Génard, Responsabilité et normativité dans l'école et la pensée de Durkheim, [in:] P. Robert,<lb/> F. Soubiran-Paillet, M. Van Der Kerchove (eds), Normes, normes juridiques, normes pénales:<lb/> Pour une sociologie des frontiers, vol. 2, Paris: L'Harmattan 1997.<lb/> </bibl>
+        <bibl><label>66</label> É. Durkheim, Professional Ethics and Civic Morals, London: Routledge &amp; Kegan Paul 1957,<lb/> chap. 18; </bibl>
+<bibl>Durkheim, supra note 61, pp. 316-22; </bibl>
+<bibl>See, generally, C. J. Sirianni, Justice<lb/> and the Division of Labour: A Reconsideration of Durkheim's Division of Labour in Society, Sociological<lb/> Review 1984, vol. 32, p. 449.<lb/> </bibl>
+        <bibl><label>67</label> R. Cotterrell, Émile Durkheim: Law in a Moral Domain, Edinburgh: Edinburgh University<lb/> Press 1999, chs. 7-9.<lb/> </bibl>
+        <bibl><label>68</label> É. Durkheim, L'individualisme et les intellectuels, 1898</bibl>
+          <bibl>[reprinted in:] É. Durkheim, La science<lb/> sociale et l'action, Paris: Presses universitaires de France 1987.<lb/> </bibl>
+        <bibl><label>69</label> See É. Durkheim, Leçons de sociologie, Paris: Presses universitaires de France 1950, p. 199.<lb/> </bibl>
+
+        <bibl><label>70</label> J. F. Stone, The Search for Social Peace: Reform Legislation in France, 1890-1914, Albany:<lb/> State University of New York Press 1985.<lb/> </bibl>
+        <bibl><label>71</label> P. Fauconnet, La responsabilité. Étude de sociologie, Paris: F. Alcan 1928, p. 350;</bibl>
+          <bibl>cf. Cotterrell,<lb/> supra note 67, pp. 107-8; </bibl>
+<bibl>J. Piaget, The Moral Judgment of the Child, Harmondsworth:<lb/> Penguin 1977, pp. 315-28.<lb/> </bibl>
+
+        <bibl><label>72</label> On Huvelin's work see R. Cotterrell, Living Law: Studies in Legal and Social Theory,<lb/> Aldershot: Ashgate 2008, chap. 7.<lb/> </bibl>
+        <bibl><label>73</label> Cotterrell, supra note 67, chs. 10 and 11.<lb/> </bibl>
+
+        <bibl><label>74</label> C. Eisenmann, Léon Duguit, [in:] D. Sills (ed.), International Encyclopedia of the Social<lb/> Sciences, vol. 4, New York: Macmillan 1968, pp. 305, 306.<lb/> </bibl>
+        <bibl><label>75</label> L. Duguit, Objective Law, Columbia Law Review 1920, vol. 20, p. 817;</bibl>
+          <bibl>ibid. 1921, vol. 21,<lb/> pp. 17, 126 and 242.<lb/> </bibl>
+
+        <bibl><label>76</label> L. Duguit, Souveraineté et liberté, Paris: F. Alcan 1922, p. 168,</bibl>
+          <bibl>[as quoted in:]<lb/>
+J. E. S. Hayward, Solidarist Syndicalism: Durkheim and Duguit, Sociological Review 1960, vol. 8,<lb/> pp. 185, 194.<lb/> </bibl>
+        <bibl><label>77</label> See e.g. M. Hauriou, The Two Realisms, [in:] A. Broderick (ed.), The French Institutionalists:<lb/> Maurice Hauriou, Georges Renard, Joseph T. Delos, Cambridge, Mass.: Harvard University<lb/> Press 1970, pp. 45-51.<lb/> </bibl>
+        <bibl><label>78</label> E. Pisier-Kouchner, Le service public dans la théorie de l'état de Léon Duguit, Paris: Librairie<lb/> ge ne ral de droit et de jurisprudence 1972.<lb/> </bibl>
+        <bibl><label>79</label> Cotterrell, supra note 67, chap. 10.</bibl>
+        </listBibl>
+    </text>
+
+
+</TEI>

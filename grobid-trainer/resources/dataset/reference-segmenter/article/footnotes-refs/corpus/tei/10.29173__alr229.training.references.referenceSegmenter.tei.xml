@@ -1,0 +1,125 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.29173__alr229">
+    <titleStmt>
+      <title level="a">&amp;lt;i&amp;gt;Defining Rights and Wrongs: Bureaucracy, Human Rights, and Public Accountability&amp;lt;/i&amp;gt;, Rosanna L. Langer</title>
+      <author>
+        <persName>
+          <forename>Patricia</forename>
+          <surname>Paradis</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="pfaffe">Milena Pfaffe</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>University of Alberta Libraries</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2009</date>
+      <idno type="DOI">10.29173/alr229</idno>
+      <ptr target="https://doi.org/10.29173/alr229"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Patricia Paradis. (2009). &amp;lt;i&amp;gt;Defining Rights and Wrongs: Bureaucracy, Human Rights, and Public Accountability&amp;lt;/i&amp;gt;, Rosanna L. Langer. Alberta Law Review, 46(3), 859. DOI: 10.29173/alr229</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">&amp;lt;i&amp;gt;Defining Rights and Wrongs: Bureaucracy, Human Rights, and Public Accountability&amp;lt;/i&amp;gt;, Rosanna L. Langer</title>
+          <author>
+            <persName>
+              <forename>Patricia</forename>
+              <surname>Paradis</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Alberta Law Review</title>
+          <imprint>
+            <biblScope unit="volume">46</biblScope>
+            <biblScope unit="issue">3</biblScope>
+            <biblScope unit="page">859</biblScope>
+            <date when="2009">2009</date>
+            <publisher>University of Alberta Libraries</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.29173/alr229</idno>
+        <ptr target="https://doi.org/10.29173/alr229"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-09T06:52:24.329222Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-65-gd393236aa</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-09T06:52:24.329222Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-09T13:47:28.763Z" status="unfinished" who="#pfaffe">
+      <note type="label">v2 (pfaffe)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-09T13:49:49.610Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-19T16:50:09.756Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-19T16:51:43.914Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label><lb/> GA Res. 217(III), UN GAOR, 3d Sess., Supp. No.13, UN Doc. A/810 (1948) 71.<lb/> </bibl>
+        <bibl><label>2</label><lb/> Part I of the Constitution Act, 1982 being Schedule B to the Canada Act 1982 (U.K.), 1982, c.11.<lb/> </bibl>
+        <bibl><label>3</label><lb/> Rosannna L. Langer, Defining Rights and Wrongs: Bureaucracy, Human Rights, and Public<lb/> Accountability (Vancouver: University of British Columbia Press, 2007).<lb/> </bibl>
+        <bibl><label>4</label><lb/> See e.g. Human Rights Code, R.S.O 1990, c. H.19.<lb/> </bibl>
+        <bibl><label>5</label><lb/> Supra note 3 at c. 2. See e.g. 46-47.<lb/> </bibl>
+          
+        <bibl><label>6</label><lb/> Ibid. at 66.<lb/> </bibl>
+        <bibl><label>7</label><lb/> Ibid. at 72-75.<lb/> </bibl>
+        <bibl><label>8</label><lb/> Ibid. at 76-93.<lb/> </bibl>
+        <bibl><label>9</label><lb/> Ibid. at 55.<lb/> </bibl>
+        <bibl><label>10</label><lb/> Ibid. at 59.<lb/> </bibl>
+          
+        <bibl><label>11</label><lb/> Ibid. at 7-9.<lb/> </bibl>
+        <bibl><label>12</label><lb/> Ibid. at 11-12, 27-28.<lb/> </bibl>
+        <bibl><label>13</label><lb/> Ibid. at 98-129.<lb/> </bibl>
+        <bibl><label>14</label><lb/> Ibid. at 110.<lb/> </bibl>
+        <bibl><label>15</label><lb/> Ibid.<lb/> </bibl>
+        <bibl><label>16</label><lb/> Ibid. at 118-20.<lb/> </bibl>
+        <bibl><label>17</label><lb/> The Human Rights Code Amendment Act, 2006, S.O. 2006, c. 30, came into effect on 30 June 2008.<lb/> Under the new Act, the role of the Ontario Human Rights Commission in preventing discrimination and<lb/> promoting and advancing human rights in Ontario will be strengthened but it will no longer process<lb/> human rights complaints. That will be the mandate of the Human Rights Tribunal of Ontario. A new<lb/> body, the Human Rights Legal Support Centre, will offer independent human rights related legal and<lb/> support services to individuals, ranging from advice and support to legal representation.<lb/> </bibl>
+          
+        <bibl><label>18</label><lb/> Supra note 3 at 137.<lb/> </bibl>
+        <bibl><label>19</label><lb/> Ibid.<lb/> </bibl>
+        <bibl><label>20</label><lb/> Ibid. at 124.<lb/> </bibl>
+        <bibl><label>21</label><lb/> Ibid. at 124-25.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

@@ -1,0 +1,141 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1628__rabelsz-2021-0050">
+    <titleStmt>
+      <title level="a">Recht und Ökonomie im Spannungsfeld verschiedener Schulen</title>
+      <author>
+        <persName>
+          <forename>Katharina</forename>
+          <surname>Pistor</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Mohr Siebeck</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2021</date>
+      <idno type="DOI">10.1628/rabelsz-2021-0050</idno>
+      <ptr target="https://doi.org/10.1628/rabelsz-2021-0050"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Katharina Pistor. (2021). Recht und Ökonomie im Spannungsfeld verschiedener Schulen. Rabels Zeitschrift für ausländisches und internationales Privatrecht, 85(4), 876-889. DOI: 10.1628/rabelsz-2021-0050</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Recht und Ökonomie im Spannungsfeld verschiedener Schulen</title>
+          <author>
+            <persName>
+              <forename>Katharina</forename>
+              <surname>Pistor</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Rabels Zeitschrift für ausländisches und internationales Privatrecht</title>
+          <imprint>
+            <biblScope unit="volume">85</biblScope>
+            <biblScope unit="issue">4</biblScope>
+            <biblScope unit="page" from="876" to="889">876-889</biblScope>
+            <date when="2021">2021</date>
+            <publisher>Mohr Siebeck</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.1628/rabelsz-2021-0050</idno>
+        <ptr target="https://doi.org/10.1628/rabelsz-2021-0050"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-18T15:07:15.719561Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-70-g77a8a2219</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-18T15:07:15.719561Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-18T19:50:38.040Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-25T12:00:11.145Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-29T14:25:50.090Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-06-29T14:39:56.067Z" status="checked" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+        <bibl><label>1</label> Robert Cooter / Hans-Bernd Schäfer, Solomon's Knot: How Law Can End the Poverty of<lb/> Nations (2011).<lb/> </bibl>
+        <bibl><label>2</label> Max Weber, Wirtschaft und Gesellschaft5 (1980) 471.<lb/> </bibl>
+        <bibl><label>3</label> Henry Sumner Maine , Ancient Law (1861). Für die Entstehung neuer Ungleichheiten im<lb/> postfeudalistischen Zeitalter siehe umfassend Thomas Piketty , Capital and Ideology (2020), </bibl>
+      <bibl>dt.<lb/> Übers.: Kapital und Ideologie (2020).<lb/> </bibl>
+        <bibl><label>4</label> Neben Weher , Wirtschaft und Gesellschaft (Fn. 2), siehe John R. Commons , Legal Foun-<lb/>dations of Capitalism (1924); </bibl>
+      <bibl>ders ., Institutional Economics: Its Place in Political Economy<lb/> (1934); </bibl>
+      <bibl>Thorstein Vehlen, On the Nature of Capital, 22 The Quarterly Journal of Economics<lb/> 517-542 (1908).<lb/> </bibl>
+        <bibl><label>5</label> Douglass Cecil North , Institutions, Institutional Change, and Economic Performance<lb/> (1990); </bibl>
+      <bibl>Oliver E. Williamson, Markets and Hierarchies, Analysis and Antitrust Implications: A<lb/> Study in the Economics of Internal Organization (1975).<lb/> </bibl>
+        <bibl><label>6</label> Insbesondere an die Arbeiten von Kathleen Thelen und ihren Mitautoren. Siehe Wolf-<lb/>gang Streeck / Kathleen Thelen, Introduction: Institutional Change in Advanced Political Econ-<lb/>omies, in: Beyond Continuity: Institutional Change in Advanced Political Economies, hrsg.<lb/> von dens. (2005) 1-39; </bibl>
+      <bibl>James Mahoney / Kathleen Thelen, A Theory of Gradual Institutional<lb/> Change, in: Explaining Institutional Change, hrsg. von dens. (2010) 1-37; </bibl>
+      <bibl>Jacob S. Hacker/<lb/> Paul Pierson /Kathleen Thelen, Drift and Conversion: Hidden Faces of Institutional Change, in:<lb/> Advances in Comparative-Historical Analysis, hrsg. von James Mahoney /Kathleen Thelen<lb/> (2014) 180-210.<lb/> </bibl>
+        <bibl><label>7</label> Siehe grundlegend fiir diesen Ansatz Simon Deakin /David Gindis / Geoffrey M. Hodgson /<lb/> Huang Kainan / Katharina Pistor , Legal Institutionalism: Capitalism and the Constitutive Role<lb/> of Law, 45 Journal of Comparative Economics (J.Comp.Econ.) 188-200 (2017).<lb/> </bibl>
+        <bibl><label>8</label> Siehe insb. Katharina Pistor, A Legal Theory of Finance, 41 J.Comp.Econ. 315-330<lb/> (2013); </bibl>
+      <bibl>dies., Law in Finance, ebd. 311-314, sowie als Mitautorin in Deakin / Gindis et al, Legal<lb/> Institutionalism (Fn. 7).<lb/> </bibl>
+        <bibl><label>9</label> Marc Galanter, Why the "Haves" Come Out Ahead: Speculations on the Limits of Legal<lb/> Change, 9 Law &amp; Society Review 95-160 (1974). </bibl>
+      <bibl>Galanter bezieht sich in erster Linie auf den<lb/> Ausgang von Gerichtsprozessen, aber seine Argumente sind generalisierbar.<lb/> </bibl>
+        <bibl><label>10</label> So hat Piketty gezeigt, dass die Ungleichheit in den 1930er-Jahren rapide abgenommen<lb/> hat. Siehe Thomas Piketty , Capital in the Twenty-First Century (2014). </bibl>
+      <bibl>Im Kontrast hierzu<lb/> stehen die massiven Eingriffe der Zentralbanken in der großen Finanzkrise von 2008, die vor<lb/> allem die Inhaber von Finanzgütern vor Verlusten geschützt haben. Siehe hierzu umfassend<lb/> Adam Tooze , Crashed: How a Decade of Financial Crises Changed the World (2018), dt.<lb/> Übers.: Crashed: Wie zehn Jahre Finanzkrise die Welt verändert haben (2019).<lb/> </bibl>
+        <bibl><label>11</label> Francis Fukuyama , The End of History and the Last Man (1992); </bibl>
+      <bibl>Henry Hansmann /Rei-<lb/>nier Kraakman , The End of History for Corporate Law, 89 Georgetown Law Journal (Geo.L J.)<lb/> 439-441 (2001).<lb/> </bibl>
+        <bibl><label>12</label> Siehe stellvertretend für viele Morris R. Cohen , Property and Sovereignty, 13 Cornell<lb/> Law Quarterly 8-30 (1927).<lb/> </bibl>
+        <bibl><label>13</label> Siehe beispielsweise Robert C. Allen , Community and Market in England: Open Fields<lb/> and Enclosures Revisited, in: Communities and Markets in Economic Development, hrsg.<lb/> von Masahiko Aoki/Yujiro Hayami (2001) 42-69.<lb/> </bibl>
+        <bibl><label>14</label> Siehe hierzu im Einzelnen Kapitel 2 in meinem Buch, m. w. N.<lb/> </bibl>
+        <bibl><label>15</label> Siehe hierzu insb. Ciaire Priest , Creating an American Property Law: Alienability and<lb/> Its Limits in American History, 120 Harvard Law Review 385-459 (2006). </bibl>
+      <bibl>Vgl. auch dies.,<lb/> Credit Nation: Property Laws and Institutions in Early America (2021).<lb/> </bibl>
+        <bibl><label>16</label> J. Stuart Anderson , Property Rights in Land: Reforming the Heritage, in: The Oxford<lb/> History of the Laws of England, Bd. XII: 1820-1914 Private Law, hrsg. von William Cornish/<lb/> J. Stuart Anderson /Ray Cocks /Michael Lobban/ Patrick Polden/ Keith Smith (2010) 110 -<lb/>178.<lb/> </bibl>
+        <bibl><label>17</label> Jattis Sarra /Cheryl L. Wade , Predatory Lending and the Destruction of the African-<lb/>American Dream (2020).<lb/> </bibl>
+        <bibl><label>18</label> So auch Adam J. Levititi / Susan M. Wächter , Explaining the Housing Bubble, 100<lb/> Geo.L.J. 1177-1258 (2012).<lb/> </bibl>
+        <bibl><label>19</label> Für die Analyse der Finanzkrise unter dem Aspekt des "money view", siehe Perry Mehr-<lb/>ling , The New Lombard Street: How the Fed Became the Dealer of Last Resort (2011).<lb/> </bibl>
+        <bibl><label>20</label> Carmen Reinhart / Kenneth S. Rogoff, This Time is Different: Eight Centuries of Finan-<lb/>cial Folly (2009), dt. Übers.: Dieses Mal ist alles anders: Acht Jahrhunderte Finanzkrisen<lb/> (2010).<lb/> </bibl>
+      
+        <bibl><label>21</label> Kerry A. Dolati , Forbes' 35th Annual World's Billionaires List: Facts and Figures 2021<lb/> (6.4.2021), abrufbar unter &lt;www.forbes.com&gt; (4.5.2021).<lb/> </bibl>
+        <bibl><label>22</label> Die Zahlen sind abrufbar unter &lt;https://worldpopulationreview.com/&gt; (4.5.2021).<lb/> </bibl>
+      
+        <bibl><label>23</label> Ronald H. Coase , The Problem of Social Cost, 3 Journal of Law and Economics 1-44<lb/> (1960).<lb/> </bibl>
+        <bibl><label>24</label> Grundlegend zur Unvollständigkeit von Verträgen: Oliver Hart /John Moore , Founda-<lb/>tions of Incomplete Contracts, 66 Review of Economic Studies 115-138 (1999). </bibl>
+      <bibl>Zur Unvoll-<lb/>ständigkeit von Recht siehe Katharina Pistor / Chenggang Xu, Incomplete Law: A Conceptual<lb/> and Analytical Framework and its Application to the Evolution of Financial Market Regula-<lb/>tion, 35 Journal of International Law and Politics 931-1013 (2003).<lb/> </bibl>
+      
+        <bibl><label>25</label> Max Weber hat bereits daraufhingewiesen, dass die Bereitstellung typisierten, disposi-<lb/>tiven Rechts eine Ermächtigungsfunktion hat, und dem Nutzen dieser Rechtsfiguren de facto<lb/> Drittwirkung beigemessen. Siehe Weber , Wirtschaft und Gesellschaft (Fn. 2) 409.<lb/> </bibl>
+        <bibl><label>26</label> Siehe hierzu bereits Pistor/Xu , Incomplete Law (Fn. 24), wo Gerichte als reaktive<lb/> Rechtsorgane bezeichnet werden.</bibl>
+    </listBibl>
+  </text>
+</TEI>

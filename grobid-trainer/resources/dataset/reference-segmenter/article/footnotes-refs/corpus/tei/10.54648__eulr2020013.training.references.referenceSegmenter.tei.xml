@@ -1,0 +1,292 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.54648__eulr2020013">
+    <titleStmt>
+      <title level="a">Money Market Funds Reforms in the US and the EU: The Quest for Financial Stability</title>
+      <author>
+        <persName>
+          <forename>Mohammed K.</forename>
+          <surname>Alshaleel</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="admin">Administrator</persName>
+        <resp>editor</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Kluwer Law International BV</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2020</date>
+      <idno type="DOI">10.54648/eulr2020013</idno>
+      <ptr target="https://doi.org/10.54648/eulr2020013"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Mohammed K. Alshaleel. (2020). Money Market Funds Reforms in the US and the EU: The Quest for Financial Stability. European Business Law Review, 31(Issue 2), 303-335. DOI: 10.54648/eulr2020013</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Money Market Funds Reforms in the US and the EU: The Quest for Financial Stability</title>
+          <author>
+            <persName>
+              <forename>Mohammed K.</forename>
+              <surname>Alshaleel</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">European Business Law Review</title>
+          <imprint>
+            <biblScope unit="volume">31</biblScope>
+            <biblScope unit="issue">Issue 2</biblScope>
+            <biblScope unit="page" from="303" to="335">303-335</biblScope>
+            <date when="2020">2020</date>
+            <publisher>Kluwer Law International BV</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.54648/eulr2020013</idno>
+        <ptr target="https://doi.org/10.54648/eulr2020013"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-31T15:31:32.772179Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-71-g595835ed0</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-31T15:31:32.772179Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-31T15:46:24.881Z" status="extraction" who="#admin">
+      <note type="label">Extraction (use this)</note>
+      <desc>Renamed to Extraction (use this)</desc>
+    </change>
+    <change when="2026-04-27T17:42:51.266Z" status="unfinished" who="#cboulanger">
+      <note type="label">v3 (cboulanger)</note>
+      <desc>Pre-draft</desc>
+    </change>
+    <change when="2026-04-27T18:11:18.418Z" status="draft" who="#cboulanger">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T15:46:22.606Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T16:02:51.849Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T16:05:42.863Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T16:08:06.583Z" status="checked" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> Mark Perlow, Money Market Funds -Preserving Systemic Benefits, Minimizing Systemic Risks 8 Berkeley Bus.<lb/> L.J 80 (2011).<lb/> </bibl>
+      
+      <bibl><label>2</label> Latoya Brown, The Regulation of U.S. Money Market Funds: Lessons from Europe 9 Int'l L. &amp; Mgmt Rev 203<lb/> (2013).<lb/> </bibl>
+      <bibl><label>3</label> See, Hester Peirce and Robert Greene, Opening the Gate to Money Market Fund Reform 34 Pace L. Rev.<lb/> 1093-1168 (2014).<lb/> </bibl>
+      <bibl><label>4</label> Jill Fisch, The Broken Buck Stops Here: Embracing Sponsor Support in Money Market Fund Reform 93 N.C. L.<lb/> Rev. 979(2015).<lb/> </bibl>
+      <bibl><label>5</label> See, Carlton Price, What Money Market Mutual Fund Reform Means for Banks and Money Market Deposit<lb/> Accounts 19 N.C. Banking Inst 257(2015).<lb/> </bibl>
+      
+      <bibl><label>7</label> Jonathan Lim, Untangling the Money Market Fund Problem: A Public-Private Liquidity Fund Proposal 19 Stan.<lb/> J.L. Bus. &amp; Fin 71 (2013).<lb/> </bibl>
+      <bibl><label>8</label> Nicholas Broke, Money Market Funds and Systemic Risk: A Critique of the SEC's 2014 Reforms 14 Geo. J.L. &amp;<lb/> Pub 290 (2016).<lb/> </bibl>
+      <bibl><label>9</label> See, Frank Fabozzi, Capital Markets: Institutions, Instruments, and Risk Management 648 (5 th edn MIT Press,<lb/> Cambridge 2015).<lb/> </bibl>
+      <bibl><label>10</label> See, Jeff Madura, Financial Markets and Institutions 627 (11 th edn Cengage Learning, Stamford 2014).<lb/> </bibl>
+      <bibl><label>11</label> Charles Jones, Mutual Funds: Your Money, Your Choice: Take Control Now and Build Wealth Wisely 47 (FT<lb/> Press, New Jersey 2003).<lb/> </bibl>
+      <bibl><label>12</label> John Haslem, Mutual Funds: Portfolio Structures, Analysis, Management, and Stewardship 43 (John Wiley &amp;<lb/> Sons, New Jersey 2009).<lb/> </bibl>
+      
+      <bibl><label>13</label> Herbert Mayo, Financial Institutions Investments and Management ) 337 (8 th edn Thomson South-Western<lb/> USA 2004.<lb/> </bibl>
+      
+      <bibl><label>14</label> See, Fabozzi, (n 9) 648.<lb/> </bibl>
+      <bibl><label>15</label> See, Qingmin Yan and Jianhua, Regulating China's shadow banks 2 (Routledge, New York 2015).<lb/> </bibl>
+      <bibl><label>16</label> Fernando J. Cardim de Carvalho, Liquidity Preference and Monetary Economies 89 (Routledge, New York<lb/> 2015).<lb/> </bibl>
+      <bibl><label>17</label> See, Investment Company Institute, Money Market Funds in 2012: Money Market Funds Are Not Banks<lb/> (2012) available at https://www.ici.org/pdf/12_mmf_mmfs_are_not_banks.pdf accessed 5 August 2017.<lb/> </bibl>
+      <bibl><label>18</label> See, Ross Cranston, Principles of Banking Law 5 (3 rd edn, Oxford University Press, Oxford 2018).<lb/> </bibl>
+      
+      <bibl><label>19</label> See, Jones, (n 11) 47.<lb/> </bibl>
+      <bibl><label>20</label> See, Investment Company Institute (n 17).<lb/> </bibl>
+      <bibl><label>21</label> See, International Monetary Fund, Global Financial Stability Report, March 2002: Market Developments and<lb/> Issues 46 (2002).<lb/> </bibl>
+      <bibl><label>22</label> See, IOSCO, Peer Review of Regulation of Money Market Funds: Final Report (2015) available at<lb/> https://www.iosco.org/library/pubdocs/pdf/IOSCOPD502.pdf accessed 6 August 2017.<lb/> </bibl>
+      <bibl><label>23</label> See, Investment Company Institute, Worldwide Assets and Flows for Regulated Open-End Funds First<lb/> Quarter 2017 available at https://www.ici.org/research/stats/worldwide/ww_q1_17 accessed 6 August 2017.<lb/> </bibl>
+      <bibl><label>24</label> See, American Investment Company Institute, 2017 Investment Company Fact Book (57th Edition, 2017). The<lb/> American Investment Company Institute (ICI) publishes every year a Fact Book which updates the statistics of<lb/> the mutual funds industry in the USA and around the world.<lb/> </bibl>
+      
+      <bibl type="footnote"><label>25</label> CNAV is also called Stable NAV (SNAV) and VNAV is also called Floating NAV (FNAV).<lb/> </bibl>
+      
+      <bibl><label>26</label> Daniel Levin, Breaking the Buck: The End for Money Market Mutual Funds as We Know Them 28 Rev.<lb/> Banking &amp; Fin. L 751 (2009).<lb/> </bibl>
+      <bibl><label>27</label> Lim, (n 7).<lb/> </bibl>
+      
+      <bibl><label>28</label> For further information about discount securities see, Julian Walmsley, The Foreign Exchange and Money<lb/> Markets Guide 147 (2 nd edn John Wiley &amp; Sons, New Jersey 2000).<lb/> </bibl>
+      <bibl><label>29</label> See, Institutional Money Market Funds Association, The use of amortised cost accounting by money market<lb/> funds (2013) available at<lb/> https://www.immfa.org/assets/files/IMMFA%20The%20use%20of%20amortised%20cost%20accounting%20b<lb/> y%20MMF.pdf accessed 17 August 2017.<lb/> </bibl>
+      
+      <bibl><label>30</label> Brown, (n 2).<lb/> </bibl>
+      <bibl><label>31</label> William Birdthistle, Breaking Bucks in Money Market Funds 2010 Wis. L. Rev 1165 (2010).<lb/> </bibl>
+      <bibl><label>32</label> Levin, (n 26).<lb/> </bibl>
+      <bibl><label>33</label> Brown, (n 2).<lb/> </bibl>
+      <bibl><label>34</label> Robert Pozen and Theresa Hamacher, The Fund Industry: How Your Money is Managed 203 (2 nd edn John<lb/> Wiley &amp; Sons, New Jersey 2015).<lb/> </bibl>
+      <bibl><label>35</label> See, American Investment Company Institute, (n 24).<lb/> </bibl>
+      
+      <bibl><label>36</label> See, Institutional Money Market Funds Association IMMFA Assets Under Management (2017) available at<lb/> https://www.immfa.org/market-statistics/immfa-aum.html accessed 17 August 2017.<lb/> </bibl>
+      <bibl><label>37</label> Jorge A Chan-Lau and Li L Ong, U.S. Mutual Fund Retail Investors in International Equity Markets: Is the Tail<lb/> Wagging the Dog? (2005) International Monetary Fund Working Paper 05/162, 3<lb/> http://www.imf.org/en/Publications/WP/Issues/2016/12/31/U-S-18227 accessed 22 March 2018.<lb/> </bibl>
+      <bibl><label>38</label> Jason Kravitt, Securitization of Financial Assets 17-112 (Aspen Publishers Online, 2012).<lb/> </bibl>
+      <bibl><label>39</label> Birdthistle, (n 31).<lb/> </bibl>
+      <bibl><label>40</label> Pozen and Hamacher, (n 34) 203.<lb/> </bibl>
+      <bibl><label>41</label> Lim, (n 7).<lb/> </bibl>
+      
+      <bibl><label>42</label> International Monetary Fund, Compilation Guide on Financial Soundness Indicators (2004) available at<lb/> https://www.imf.org/external/np/sta/fsi/eng/2004/guide/index.htm accessed 20 June 2018.<lb/> </bibl>
+      <bibl><label>43</label> See, Madura, (n 10) 3.<lb/> </bibl>
+      <bibl><label>44</label> Garry Schinasi, Safeguarding Financial Stability: Theory and Practice 107 (International Monetary Fund,<lb/> washington 2006).<lb/> </bibl>
+      <bibl><label>45</label> International Monetary Fund, Responding to the Financial Crisis and Measuring Systemic Risks (2009)<lb/> available at http://www.imf.org/external/pubs/ft/gfsr/2009/01/ accessed 20 June 2018.<lb/> </bibl>
+      <bibl><label>46</label> Group of Ten, Report on Consolidation in the Financial Sector (2001) available at<lb/> https://www.bis.org/publ/gten05.pdf accessed 20 June 2018.<lb/> </bibl>
+      
+      <bibl><label>47</label> Frederic Mishkin, Global Financial Instability: Framework, Events, Issues 13 Journal of Economic<lb/> Perspectives 7 (1999.<lb/> </bibl>
+      <bibl><label>48</label> John Chant, Financial Stability as a Policy Goal 3 (2003) in Essays on Financial Stability, Technical Report No.<lb/> 95, Bank of Canada, available at<lb/> http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.172.8150&amp;rep=rep1&amp;type=pdf accessed 19 June<lb/> 2018.<lb/> </bibl>
+      <bibl><label>49</label> Andrew Crockett, Why is Financial Stability a Goal of Public Policy? 82 Economic Review 6 (1997).<lb/> </bibl>
+      
+      <bibl><label>50</label> Garry Schinasi, Defining Financial Stability (2004) IMF Working Paper No. WP/04/187, available at<lb/> https://www.imf.org/external/pubs/ft/wp/2004/wp04187.pdf accessed 20 June 2018.<lb/> </bibl>
+      <bibl><label>51</label> European Central Bank, Financial Stability Review (2012) available at<lb/> https://www.ecb.europa.eu/pub/pdf/other/financialstabilityreview201212en.pdf?f73875a2aa7884337314f4f1<lb/> c4db5a7d accessed 20 June 2018.<lb/> </bibl>
+      
+      <bibl><label>52</label> See, Viral V. Acharya, Thomas F. Cooley, Matthew P. Richardson and Ingo Walter, Regulating Wall<lb/> Street: The Dodd-Frank Act and the New Architecture of Global Finance 308 (John Wiley &amp; Sons, New Jersey<lb/> 2010).<lb/> </bibl>
+      <bibl><label>53</label> See, Gary Gorton, Misunderstanding Financial Crises: Why We Don't See Them Coming 49 (OUP USA, New<lb/> York 2012).<lb/> </bibl>
+      <bibl><label>54</label> Perlow, (n 1).<lb/> </bibl>
+      <bibl><label>55</label> Price, (n 5).<lb/> </bibl>
+      <bibl><label>56</label> Ibid.<lb/> </bibl>
+      <bibl><label>57</label> Lim, (n 7).<lb/> </bibl>
+      <bibl><label>58</label> Ibid.<lb/> </bibl>
+      <bibl><label>59</label> Evanoff Douglas and Moeller William, Dodd-Frank Wall Street Reform and Consumer Protection Act:<lb/> Purpose, Critique, Implementation Status and Policy Issues 128 (World Scientific, Singapore 2014).<lb/> </bibl>
+      
+      <bibl><label>60</label> See, Hal Scott, Connectedness and Contagion: Protecting the Financial System from Panics 72 (MIT Press,<lb/> Cambridge 2016).<lb/> </bibl>
+      <bibl><label>61</label> For further information about bank's run see, Gurbachan Singh, Banking Crises, Liquidity, and Credit Lines: A<lb/> Macroeconomic Perspective 24 (Routledge, New York 2012).<lb/> </bibl>
+      <bibl><label>62</label> Ibid, 24.<lb/> </bibl>
+      <bibl><label>63</label> Fisch, (n 4).<lb/> </bibl>
+      <bibl><label>64</label> Mayo, (n 13) 337.<lb/> </bibl>
+      
+      <bibl><label>65</label> See, European Commission, Proposal for a Regulation of the European Parliament and of the Council on<lb/> Money Market Funds available at http://eur-lex.europa.eu/legal-<lb/>content/EN/TXT/PDF/?uri=CELEX:52013SC0315&amp;from=da accessed 21 August 2017.<lb/> </bibl>
+      <bibl><label>66</label> See, Michael Brandl, Money, Banking, Financial Markets and Institutions 196 (Cengage Learning, Boston<lb/> 2016).<lb/> </bibl>
+      
+      <bibl><label>67</label> For further information about Systemically important financial institutions (SIFIs) see: FSB, Addressing SIFIs<lb/> available at http://www.fsb.org/what-we-do/policy-development/systematically-important-financial-<lb/>institutions-sifis/ accessed 26 August 2017.<lb/> </bibl>
+      <bibl><label>68</label> See, FSB, Shadow Banking: Strengthening Oversight and Regulation (2011) available at<lb/> http://www.fsb.org/wp-content/uploads/r_111027a.pdf accessed 6 June 2018.<lb/> </bibl>
+      <bibl><label>69</label> The IOSCO, Policy Recommendations for Money Market Funds Final Report (2012) available at<lb/> http://www.csrc.gov.cn/pub/csrc_en/affairs/AffairsIOSCO/201210/P020121010500138903810.pdf accessed<lb/> 26 August 2017.<lb/> </bibl>
+      
+      <bibl><label>70</label> Ibid.<lb/> </bibl>
+      <bibl><label>71</label> See, FSB, (n 68).<lb/> </bibl>
+      <bibl><label>72</label> See, Matthew P Fink, The Rise of Mutual Funds: An Insider's View 178 (2 nd edn Oxford University Press, New<lb/> York 2011).<lb/> </bibl>
+      <bibl><label>73</label> See, SEC, SEC Approves Money Market Fund Reforms to Better Protect Investors (2010) available at<lb/> https://www.sec.gov/news/press/2010/2010-14.htm accessed 29 August 2017.<lb/> </bibl>
+      
+      <bibl><label>74</label> Ibid.<lb/> </bibl>
+      <bibl><label>75</label> Ibid.<lb/> </bibl>
+      <bibl><label>76</label> See, the Investment Company Institute, ICI Analysis of SEC's 2010 Money Market Fund Reforms: Tested,<lb/> Working, and Have Enhanced Financial Stability (2013) available at<lb/> https://www.ici.org/mmfs/sec_reforms/news/13_2010_mmf_reforms_study accessed 29 August 2017.<lb/> </bibl>
+      <bibl><label>77</label> See, SEC, SEC Adopts Money Market Fund Reform Rules (2014) available at<lb/> https://www.sec.gov/news/press-release/2014-143 accessed 9 June 2018.<lb/> </bibl>
+      <bibl><label>78</label> Ibid.<lb/> </bibl>
+      
+      <bibl><label>79</label> Dodd-Frank Wall Street Reform and Consumer Protection Act of 2010 s. 111.<lb/> </bibl>
+      <bibl><label>80</label> Ibid, s. 120.<lb/> </bibl>
+      <bibl><label>81</label> See, Financial Stability Oversight Council, Proposed Recommendations Regarding Money Market Mutual<lb/> Fund Reform (2012) available at https://www.treasury.gov/press-center/press-releases/Pages/tg1764.aspx<lb/> accessed 29 August 2017.<lb/> </bibl>
+      <bibl><label>82</label> For further information, see, Martha Cochran, David Freeman, and Helen Clark, Money Market Fund Reform:<lb/> Sec Rulemaking in the FSOC Era 2015 Colum. Bus. L. Rev 862 (2015).<lb/> </bibl>
+      <bibl><label>83</label> See, SEC, Money Market Fund Reform; Amendments to Form PF 135 (2014).<lb/> </bibl>
+      
+      <bibl><label>84</label> Ibid, at 202.<lb/> </bibl>
+      <bibl><label>85</label> Ibid, at 223.<lb/> </bibl>
+      <bibl><label>86</label> See, Fabozzi, (n 9) 653.<lb/> </bibl>
+      
+      <bibl><label>87</label> See, Committee on Capital Markets Regulation, Comment letter to SEC (2013) available at<lb/> https://www.sec.gov/comments/s7-03-13/s70313-210.pdf accessed 5 September 2017.<lb/> </bibl>
+      <bibl><label>88</label> See, Goldman Sachs Asset Management, US Money Market Reform by the Numbers (January 2017) available<lb/> at https://www.gsam.com/content/gsam/us/en/advisors/market-insights/gsam-insights/2017/us-money-<lb/>market-reform-by-the-numbers.html accessed 4 September 2017.<lb/> </bibl>
+      <bibl><label>89</label> See, SEC, 'Money Market Fund Reform; Amendments to Form PF' (2014) at 39.<lb/></bibl> 
+      <bibl><label>90</label> Ibid, at 40.<lb/></bibl>
+      
+      <bibl><label>91</label> Ibid, at 40.<lb/></bibl> 
+      <bibl><label>92</label> Ibid, at 47.<lb/></bibl> 
+      
+      <bibl><label>93</label> Ibid, at 90.<lb/></bibl> 
+      <bibl><label>94</label> Ibid, at 168.<lb/></bibl> 
+      <bibl><label>95</label> Ibid, at 157 and 168.<lb/></bibl> 
+      <bibl><label>96</label> Ibid, at 291.<lb/></bibl> 
+      
+      <bibl><label>97</label> Ibid, at 335.<lb/></bibl> 
+      <bibl><label>98</label> Ibid, at 374.<lb/></bibl> 
+      <bibl><label>99</label> See, SEC, SEC Approves Money Market Fund Reforms to Better Protect Investors (2010) available at<lb/> https://www.sec.gov/news/press/2010/2010-14.htm accessed 29 March 2018.<lb/> </bibl>
+      
+      <bibl><label>100</label> See, SEC, 'Money Market Fund Reform; Amendments to Form PF' (2014) at 556.<lb/> </bibl>
+      <bibl><label>101</label> Ibid, at 568.<lb/> </bibl>
+      <bibl><label>102</label> The Basel Committee on Banking Supervision, Principles for sound stress testing practices and supervision<lb/> (2009) available at https://www.bis.org/publ/bcbs155.pdf accessed 10 Jun 18.<lb/> </bibl>
+      <bibl><label>103</label> M Szczepański, Money Market Funds: Measures to improve stability and liquidity (2017) European<lb/> Parliamentary Research Service, available at<lb/> http://www.europarl.europa.eu/RegData/etudes/BRIE/2017/608649/EPRS_BRI(2017)608649_EN.pdf accessed<lb/> 3 January 2018.<lb/> </bibl>
+      <bibl><label>104</label> For further information about UCITS Directive see, Mohammed Khair Alshaleel, Undertakings for the<lb/> Collective Investment in Transferable Securities Directive V: Increased Protection for Investors 13 ECL 14-22<lb/> (2016).<lb/> </bibl>
+      
+      <bibl><label>105</label> Available at: https://www.esma.europa.eu/sites/default/files/library/2015/11/10-<lb/>049_cesr_guidelines_mmfs_with_disclaimer.pdf accessed 30 March 2018.<lb/> </bibl>
+      <bibl><label>106</label> The European Commission's proposal available at:<lb/> http://ec.europa.eu/internal_market/investment/docs/money-market-funds/130904_mmfs-regulation_en.pdf<lb/> accessed 3 January 2018.<lb/> </bibl>
+      <bibl><label>107</label> Regulation (EU) 2017/1131 of the European Parliament and of the Council of 14 June 2017 on money<lb/> market funds [2017] OJ L 169/8, Article 24.<lb/> </bibl>
+      
+      <bibl><label>108</label> While WAM is used to measure the sensitivity of an MMF to changing money market interest rates, WAL is<lb/> used to measure the credit risk of an MMF's portfolio.<lb/> </bibl>
+      <bibl><label>109</label> Regulation (EU) 2017/1131 of the European Parliament and of the Council of 14 June 2017 on money<lb/> market funds [2017] OJ L 169/8, Article 25.<lb/> </bibl>
+      <bibl><label>110</label> Ibid, Article 3.<lb/> </bibl>
+      <bibl><label>111</label> Ibid, Article 29.<lb/> </bibl>
+      <bibl><label>112</label> Ibid, Article 24.<lb/> </bibl>
+      <bibl><label>113</label> Ibid, Article 34.<lb/> </bibl>
+      
+      <bibl><label>114</label> Ibid, Article 28.<lb/> </bibl>
+      <bibl><label>115</label> Ibid, Article 28 (4).<lb/> </bibl>
+      
+      <bibl><label>116</label> Ibid, Article 28 (6).<lb/> </bibl>
+      <bibl><label>117</label> Ibid, Article 35.<lb/> </bibl>
+      <bibl><label>118</label> See, for example, Investment Company Institute, Is SEC Data Misleading the Public on Sponsor Support of<lb/> Money Market Funds? (2012) available at https://www.ici.org/viewpoints/view_12_mmfs_fund_support<lb/> accessed 10 Jun 18, and Moody's, Sponsor Support Key to Money Market Funds (August 2009)<lb/> https://files.alston.com/files/docs/Moody's_Report.pdf, accessed 10 June 2018, and Parlatore, (n 122).<lb/> </bibl>
+      <bibl><label>119</label> Moody's, Sponsor Support Key to Money Market Funds (August 2009)<lb/> https://files.alston.com/files/docs/Moody's_Report.pdf, accessed 30 March 2018.<lb/> </bibl>
+      <bibl><label>120</label> Ibid.<lb/> </bibl>
+      
+      <bibl><label>121</label> See, Federal Reserve Bank of Dallas, Understanding the Risks Inherent in Shadow Banking: A Primer and<lb/> Practical Lessons Learned (November 2012)<lb/> https://www.dallasfed.org/~/media/documents/research/staff/staff1203.pdf accessed 30 March 2018.<lb/> </bibl>
+      <bibl><label>122</label> See, Cecilia Parlatore, Fragility in Money Market Funds: Sponsor Support and Regulation 121 JEF 596<lb/> (2016).<lb/> </bibl>
+      <bibl><label>123</label> See, SEC, 'Money Market Fund Reform; Amendments to Form PF' (2014) at 317.<lb/> </bibl>
+      <bibl><label>124</label> Ibid, at 358.<lb/> </bibl>
+      
+      <bibl><label>125</label> Mohamed Ariff, John Farrar and Ahmed Khalid, Regulatory Failure and the Global Financial Crisis: An<lb/> Australian Perspective 127 (Edward Elgar Publishing, Cheltenham 2012).<lb/> </bibl>
+      <bibl><label>126</label> Jeffrey Friedman and Wladimir Kraus, Engineering the Financial Crisis: Systemic Risk and the Failure of<lb/> Regulation 119 (University of Pennsylvania Press, Pennsylvania 2011).<lb/> </bibl>
+      <bibl><label>127</label> Ismael zadeh, Beyond Mainstream Explanations of the Financial Crisis: Parasitic Finance Capital 12<lb/> (Routledge, New York 2014).<lb/> </bibl>
+      <bibl><label>128</label> Dodd-Frank Wall Street Reform and Consumer Protection Act 2010.<lb/> </bibl>
+      
+      <bibl><label>129</label> R Buckley, E Avgouleas and D Arner, The Financial Stability Board and the Future of International Financial<lb/> Regulation, in Reconceptualising Global Finance and its Regulation 53 (Cambridge University Press, New York<lb/> 2016).<lb/> </bibl>
+      <bibl><label>130</label> See, Rainer Masera, CRR/CRD IV: The Trees and the Forest 67 PSL Quarterly Review 387 (2014).<lb/> </bibl>
+      <bibl><label>131</label> See, Andreas Krause, Systemic Risk, in Investment Risk Management 189 (Oxford University Press, New York<lb/> 2015).<lb/> </bibl>
+      <bibl><label>132</label> See, Xavier Freixas, Luc Laeven and José Peydró, Systemic Risk, Crises, and Macroprudential Regulation 251<lb/> (MIT Press, Massachusetts 2015).<lb/> </bibl>
+      <bibl><label>133</label> Damodaran Krishnamurti and Yejin Lee, Macroprudential Policy Framework: A Practice Guide 28 (World<lb/> Bank Publications, Washington 2014).<lb/></bibl>
+      <bibl><label>134</label> Ibid, 50.<lb/> </bibl>
+      <bibl><label>135</label> See, Matthias Haentjens and Pierre Gioia-Carabellese, European Banking and Financial Law 102 (Routledge,<lb/> New York 2015).<lb/> </bibl>
+
+      
+      <bibl><label>136</label> In Europe, the European Systemic Risk Board (ESRB) was established in 2010 as a response to the global<lb/> financial crisis. The ESRB is principally responsible for the macro-prudential oversight of the EU financial<lb/> system in order to prevent and mitigate systemic risks to financial stability in the EU. See, Miriam Goldby and<lb/> Anat Keller, The Commission's proposal for a new European Systemic Risk Board: an evaluation 4 Law &amp; Fin.<lb/> Mkt. Rev 48 (2010).<lb/> </bibl>
+      
+      <bibl><label>137</label> Basel III started in 2013 and with full implementation by 1 January 2019. See, Narissa Lyngen, Basel III:<lb/> Dynamics of State Implementation 53 Harv. Int'l L.J. 527 (2012).<lb/> </bibl>
+      
+      <bibl><label>138</label> See, U.S. Securities and Exchange Commission, Money Market Fund Statistics (July 2016) available at:<lb/> https://www.sec.gov/divisions/investment/mmf-statistics/mmf-statistics-2016-7.pdf accessed 14 March 2018,<lb/> and, </bibl>
+      <bibl>U.S. Securities and Exchange Commission, Money Market Fund Statistics (November 2017) available at:<lb/> https://www.sec.gov/divisions/investment/mmf-statistics/mmf-statistics-2017-11.pdf accessed 14 March<lb/> 2018.<lb/> </bibl>
+      <bibl><label>139</label> Ibid.<lb/> </bibl>
+      
+      <bibl><label>140</label> For further information about institutional investors see, K.A.D Camara, Classifying Institutional Investors 30<lb/> J. Corp. L 219 (2005).</bibl>
+    </listBibl>
+  </text>
+</TEI>

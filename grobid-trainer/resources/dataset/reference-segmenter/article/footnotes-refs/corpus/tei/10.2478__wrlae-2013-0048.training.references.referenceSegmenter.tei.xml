@@ -1,0 +1,163 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.2478__wrlae-2013-0048">
+    <titleStmt>
+      <title level="a">Forecasting Labour Productivity Growth in Norway for the Period 2012-2021 Using ARIMA Models</title>
+      <author>
+        <persName>
+          <forename>Pirooz</forename>
+          <surname>Samavati</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="pfaffe">Milena Pfaffe</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Walter de Gruyter GmbH</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2013</date>
+      <idno type="DOI">10.2478/wrlae-2013-0048</idno>
+      <ptr target="https://doi.org/10.2478/wrlae-2013-0048"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Pirooz Samavati. (2013). Forecasting Labour Productivity Growth in Norway for the Period 2012-2021 Using ARIMA Models. Wroclaw Review of Law, Administration &amp;amp; Economics, 3(1), 126-147. DOI: 10.2478/wrlae-2013-0048</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Forecasting Labour Productivity Growth in Norway for the Period 2012-2021 Using ARIMA Models</title>
+          <author>
+            <persName>
+              <forename>Pirooz</forename>
+              <surname>Samavati</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Wroclaw Review of Law, Administration &amp;amp; Economics</title>
+          <imprint>
+            <biblScope unit="volume">3</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page" from="126" to="147">126-147</biblScope>
+            <date when="2013">2013</date>
+            <publisher>Walter de Gruyter GmbH</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.2478/wrlae-2013-0048</idno>
+        <ptr target="https://doi.org/10.2478/wrlae-2013-0048"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-09T06:50:23.456282Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-65-gd393236aa</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-09T06:50:23.456282Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-09T09:18:52.288Z" status="unfinished" who="#pfaffe">
+      <note type="label">v2 (pfaffe)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-09T11:25:05.588Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-19T09:10:59.167Z" status="draft" who="#lfoppiano">
+      <note type="label">v3 (lfoppiano)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-19T13:53:48.715Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-19T14:18:05.859Z" status="unfinished" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-19T16:25:21.493Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> R Freeman, 'Labour Productivity Indicators' (2008) OECD Statistics Directorate, Division of<lb/> Structural Economic Statistics, 5-15 &lt; http://www.oecd.org/std/labour-stats/41354425.pdf &gt;<lb/> accessed 18 November 2013.<lb/> </bibl>
+        <bibl><label>2</label> N Kaldor, Causes of the Slow Growth in the United Kingdom (Cambridge: Cambridge<lb/> University Press 1966) 289; </bibl>
+          <bibl>J Schmookler, Invention and economic growth (Harvard University<lb/> Press,<lb/> Cambridge,<lb/> Massachussets<lb/> 1966)181-204<lb/> &lt;http://journals.cambridge.org/action/displayAbstract?fromPage=online&amp;aid=8326359<lb/> &gt;<lb/> accessed 18 November 2013; </bibl>
+          <bibl>JP Verdoorn, 'On the Factors Determining the Growth of Labour<lb/> Productivity' (1949) (in L. Pasinetti (ed.). Italian Economic Papers 59, Vol. II, Oxford: Oxford<lb/> University Press 1993) 3-10 ; </bibl>
+          <bibl>JSL McCombie , M Pugno, B Soro, 'Introduction' (In MP<lb/> McCombie, B Soro (eds), Productivity Growth and Economic Performance, Palgrave<lb/> Macmillan, London 2002) 1-27; </bibl>
+          <bibl>M Van Geenhuizen , DM Trzmielak , DV Gibson, M Urbaniak,<lb/> Value-Added Partnering and Innovation in a Changing World (Purdue University Press 2009)<lb/> 358-362<lb/> &lt;http://www.thepress.purdue.edu/titles/format/9781557535139&gt;<lb/> accessed<lb/> 18<lb/> November 2013; </bibl>
+          <bibl>C Kennedy 'Induced bias in innovation and the theory of distribution' (1964)<lb/> in Economic Journal, Vol. 74, 541-547 &lt;http://www.jstor.org/stable/2228295?origin=JSTOR-<lb/>below-page &gt; accessed 18 November 2013; </bibl>
+          <bibl>S Scarpetta, T Tressel, 'Boosting Productivity via<lb/> Innovation and Adoption of New Technologies: Any Role for Labour Market Institutions?'(2004)<lb/> World<lb/> Bank<lb/> Policy<lb/> Research<lb/> Working<lb/> Paper,<lb/> no.<lb/> 3273<lb/> &lt;http://ideas.repec.org/p/wbk/wbrwps/3273.html&gt; accessed 18 November 2013; </bibl>
+          <bibl>R Vergeer, A<lb/> Kleinknecht, 'Jobs versus Productivity? The causal link from wages to labour productivity<lb/> growth'<lb/> (2007)<lb/> TU<lb/> Delft,<lb/> The<lb/> Netherlands,<lb/> 2-6<lb/> &lt;http://www.fep.up.pt/conferencias/eaepe2007/Papers%20and%20abstracts_CD/Vergeer.pdf &gt;<lb/> accessed 18 November 2013. </bibl>
+          
+        <bibl><label>4</label> Ola Grytten, 'The Economic History of Norway' (2008) EH.Net Encyclopedia, edited by Robert<lb/> Whaples. March 16, 2008 &lt;http://eh.net/encyclopedia/article/grytten.norway&gt; accessed 18<lb/> November 2013; </bibl>
+          <bibl>K Hagelund, 'Productivity growth in Norway 1948-2008' (2009) Special<lb/> adviser, Economics Department, Norges Bank, Economic bulletin 2, 4-15 &lt;http://www.norges-<lb/>bank.no/Upload/77502/EN/Hele%20BUL.pdf&gt; accessed 18 November 2013; </bibl>
+          <bibl>IMF Executive<lb/> Board Concludes 2011 Article IV Consultation with Norway, Public Information Notice (PIN)<lb/> No. 12/9, February 2, 2012 &lt;http://www.imf.org/external/np/sec/pn/2012/pn1209.htm&gt; accessed<lb/> 18 November 2013.<lb/> </bibl>
+        <bibl><label>5</label> Hagelund (n 4).<lb/> </bibl>
+          
+        <bibl><label>9</label> KP Burnham, DR Anderson, Model Selection and Multimodel Inference: A Practical<lb/> Information-Theoretic Approach (2nd ed. Springer-Verlag 2002) Chapter 7<lb/> &lt;http://www.mun.ca/biology/quant/ModelSelectionMultimodelInference.pdf &gt; accessed 18<lb/> November 2013; </bibl>
+          <bibl>RJ Hyndman, G Athanasopoulos, Forecasting: principles and practice (An<lb/> online textbook, Monash University 2012) Section 8: ARIMA models &lt;http://otexts.com/fpp&gt;<lb/> accessed 18 November 2013.<lb/> </bibl>
+        <bibl><label>10</label> The R Project for Statistical Computing &lt;http://www.r-project.org/&gt; accessed 18 November<lb/> 2013. </bibl>
+        
+        <bibl><label>12</label> GEP Box, DR Cox, 'An analysis of transformations' (1964) (B) JRSS 26, 211-246<lb/> &lt;http://fisher.osu.edu/~schroeder.9/AMIS900/Box1964.pdf&gt; accessed 18 November 2013. </bibl>
+        
+        <bibl><label>15</label> GEP Box, GM Jenkins, GC Reinsel, Time Series Analysis: Forecasting and Control (3rd ed.<lb/> Englewood Cliffs, NJ: Prentice-Hall 1994) 32-33, 66, 68, 70-75, 188, 314-315, 547<lb/> &lt;http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0470272848.html&gt;<lb/> accessed<lb/> 18<lb/> November 2013; </bibl>
+          <bibl>Hyndman (n 9).<lb/> </bibl>
+        <bibl><label>16</label> Labour productivity growth data in Norway extracted in January 2013 from OECD.Stat &lt;http://<lb/> stats.oecd.org/&gt; accessed 18 November 2013. </bibl>
+          
+        <bibl><label>19</label> JD Hamilton, Time Series Analysis (Princeton University Press New Jersey 1994) 514-528<lb/> &lt;http://press.princeton.edu/titles/5386.html&gt; accessed 18 November 2013; </bibl>
+          <bibl>A Coghlan, A Little<lb/> Book of R For Time Series (Release 0.1. University College Cork, Cork, Ireland 2011) 13-65<lb/> &lt;http://stamash.org/hub/wp-content/uploads/2012/09/TimeSeries.pdf&gt; accessed 18 November<lb/> 2013; </bibl>
+          <bibl>Hyndman (n 9); </bibl>
+          <bibl>DA Dickey, WA Fuller WA, 'Distribution of the estimators for<lb/> autoregressive time series with a unit root' (1979) Journal of the American Statistical Association<lb/> 74, 427-431 &lt;http://www.deu.edu.tr/userweb/onder.hanedar/dosyalar/1979.pdf &gt; accessed 18<lb/> November 2013; </bibl>
+          <bibl>SE Said, DA Dickey, 'Testing for Unit Roots in Autoregressive-Moving Average<lb/> Models of Unknown Order' (1984) (3) Biometrika 71, 599-607. doi:10.1093/biomet/71.3.599<lb/> &lt;http://www.ssc.wisc.edu/~bhansen/718/SaidDickey1984.pdf&gt; accessed 18 November 2013; </bibl>
+          <bibl>D<lb/> Kwiatkowski, PCB Phillips, P Schmidt, Y Shin, 'Testing the Null Hypothesis of Stationarity<lb/> against the Alternative of a Unit Root' (1992) Journal of Econometrics 54, 159-178<lb/> &lt;http://www.ccee.edu.uy/ensenian/catmetec/material/KPSS.pdf &gt; accessed 18 November 2013 </bibl>
+          
+        <bibl><label>21</label> PJ Brockwell, RA Davis, Introduction to Time Series and Forecasting (Second edition,<lb/> Springer -Verlag, New York 2002) 238-250, 273-320 &lt;http://www.masys.url.tw/Download/2002-<lb/>Brockwell-Introduction%20Time%20Series%20and%20Forecasting.pdf&gt;<lb/> accessed<lb/> 18<lb/> November 2013; </bibl>
+          <bibl>Coghlan (n 19); </bibl>
+          <bibl>Hyndman (n 9). </bibl>
+          
+        <bibl><label>23</label> Hyndman (n 9).<lb/> </bibl>
+          
+        <bibl><label>25</label> Box (n 15); </bibl>
+          <bibl>GEP Box, DA Pierce, 'Distribution of Residual Autocorrelations in Autoregressive-<lb/>Integrated Moving Average Time Series Models' (1970) Journal of the American Statistical<lb/> Association 65, 1509-1526<lb/> &lt; http://www.stat.purdue.edu/~mlevins/STAT598K_2012/Box_Pierce_1970.pdf &gt; accessed 18<lb/> November 2013.<lb/> </bibl>
+        <bibl><label>26</label> SS Shapiro, MB Wilk, 'An analysis of variance test for normality (complete samples)' (1965)<lb/> (3-4)<lb/> Biometrika<lb/> 52,<lb/> 591-611.<lb/> doi:10.1093/biomet/52.3-4.591<lb/> &lt;http://sci2s.ugr.es/keel/pdf/algorithm/articulo/shapiro1965.pdf &gt; accessed 18 November 2013.<lb/> </bibl>
+        <bibl><label>27</label> J Chambers, W Cleveland, B Kleiner , P Tukey, Graphical Methods for Data Analysis<lb/> (Wadsworth<lb/> &amp;<lb/> Brooks/Cole,<lb/> Pacific<lb/> Grove,<lb/> CA<lb/> 1983) &lt;http://stat.bell-<lb/>labs.com/wsc/papersbooks.pdf&gt; accessed 18 November 2013. </bibl>
+          
+        <bibl><label>29</label> Hamilton (n 19) 43-117, 514-528; </bibl>
+          <bibl>Brockwell (n 21); </bibl>
+          <bibl>C Kleiber , A Zeileis, Applied<lb/> Econometrics<lb/> with<lb/> R<lb/> (Springer<lb/> -Verlag,<lb/> New<lb/> York<lb/> 2008)<lb/> &lt;http://uosis.mif.vu.lt/~rlapinskas/2012-2013/Ekonometrija%203k/KleibZeil%20-<lb/>%20AER.pdf&gt; accessed 18 November 2013; </bibl>
+          <bibl>PSP Cowpertwait, AV Metcalfe, Introductory Time<lb/> Series<lb/> with<lb/> R<lb/> (Springer-Verlag,<lb/> New<lb/> York<lb/> 2009)121-128,<lb/> 137-140<lb/> &lt;http://www.springer.com/statistics/statistical+theory+and+methods/book/978-0-387-88697-8&gt;<lb/> accessed 18 November 2013; </bibl>
+          <bibl>Coghlan (n 19); </bibl>
+          <bibl>RH Shumway, DS Stoffer, Time Series Analysis<lb/> and Its Applications: With R Examples (Springer Texts in Statistics 2010, 3rd ed. 2011) XII,<lb/> chapter<lb/> 3,<lb/> 83-154<lb/> &lt;http://www.springer.com/statistics/statistical+theory+and+methods/book/978-0-387-36276-2&gt;<lb/> accessed 18 November 2013; </bibl>
+          <bibl>Hyndman (n 9); </bibl>
+          <bibl>H Akaike, 'A new look at the statistical model<lb/> identification' (1974) (6) IEEE Transactions on Automatic Control 19, 716-723<lb/> &lt;http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=1100705&amp;abstractAccess=no&amp;userTy<lb/> pe=inst&gt; accessed 18 November 2013.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

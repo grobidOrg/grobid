@@ -1,0 +1,906 @@
+<?xml-model href="https://mpilhlt.github.io/fossil/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.2307__3480214">
+    <titleStmt>
+      <title level="a">Antitrust and Hospital Privileges: Testing the Conventional Wisdom</title>
+      <author>
+        <persName>
+          <forename>Philip C.</forename>
+          <surname>Kissam</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>William L.</forename>
+          <surname>Webber</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Lawrence W.</forename>
+          <surname>Bigus</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>John R.</forename>
+          <surname>Holzgraefe</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>JSTOR</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">1982</date>
+      <idno type="DOI">10.2307/3480214</idno>
+      <ptr target="https://doi.org/10.2307/3480214"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Philip C. Kissam, William L. Webber, Lawrence W. Bigus, John R. Holzgraefe. (1982). Antitrust and Hospital Privileges: Testing the Conventional Wisdom. California Law Review, 70(3), 595. DOI: 10.2307/3480214</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Antitrust and Hospital Privileges: Testing the Conventional Wisdom</title>
+          <author>
+            <persName>
+              <forename>Philip C.</forename>
+              <surname>Kissam</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>William L.</forename>
+              <surname>Webber</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Lawrence W.</forename>
+              <surname>Bigus</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>John R.</forename>
+              <surname>Holzgraefe</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">California Law Review</title>
+          <imprint>
+            <biblScope unit="volume">70</biblScope>
+            <biblScope unit="issue">3</biblScope>
+            <biblScope unit="page">595</biblScope>
+            <date when="1982">1982</date>
+            <publisher>JSTOR</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.2307/3480214</idno>
+        <ptr target="https://doi.org/10.2307/3480214"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:02:48.592583Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-70-gc35e48387</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-24T08:02:48.592583Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-30T16:00:38.243Z" status="unfinished" who="#sandfort">
+      <note type="label">v2 (sandfort)</note>
+      <desc>1. Pass started</desc>
+    </change>
+    <change when="2026-03-30T18:19:00.386Z" status="unfinished" who="#sandfort">
+      <desc>1. Pass labels</desc>
+    </change>
+    <change when="2026-03-31T17:29:53.801Z" status="draft" who="#sandfort">
+      <desc>1. Pass done</desc>
+    </change>
+    <change when="2026-04-27T10:19:58.946Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-27T12:32:04.069Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-08T09:20:58.434Z" status="checked" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-16T18:36:20.340Z" status="checked" who="#lfoppiano">
+      <note type="label">v4 (lfoppiano)</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-16T18:39:49.186Z" status="candidate" who="#lfoppiano">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-16T18:43:42.346Z" status="candidate" who="#lfoppiano">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label>. The term "medical staff privilege" refers to the right of a physician or dentist to partici-<lb/>pate in a hospital's governing structure as a member of its medical staff, and the term "clinical<lb/> privilege" refers to any health care practitioner's right to perform medical procedures within the<lb/> hospital. See JOINT COMMISSION ON ACCREDITATION OF HOSPITALS, ACCREDITATION MANUAL<lb/> FOR HOSPITALS: 1979 EDITION 53-55, 81-86 [hereinafter cited as JCAH MANUAL]. For conven-<lb/>ience, we shall often use the term "hospital privilege" or "privileges" to refer to both medical staff<lb/> and clinical privileges.<lb/> </bibl>
+          
+        <bibl><label>2</label>. See, e.g., Crane v. Intermountain Health Care, 637 F.2d 715 (10th Cir. 1981); </bibl>
+<bibl>Capili v.<lb/> Shott, 620 F.2d 439 (4th Cir. 1980); </bibl>
+<bibl>Harron v. United Hosp. Center, 522 F.2d 1133 (4th Cir. 1975),<lb/> cert. denied, 424 </bibl>
+<bibl>U.S. 916 (1976); </bibl>
+<bibl>Wolf v. Jane Phillips Episcopal-Memorial Medical Center, 513<lb/> F.2d 684 (10th Cir. 1975); </bibl>
+<bibl>Robinson v. Magovern, 521 F. Supp. 842 (W.D. Pa. 1981); </bibl>
+<bibl>Smith v.<lb/> Northern Mich. Hosps., 1981-2 Trade Cas. (CCH) 64,181 (
+W.D. Mich. July 15, 1981); </bibl>
+<bibl>United<lb/> 
+States v. Halifax Hosp. Medical Center, 1981-I Trade Cas. (CCH) 1 64,151 (
+M.D. Fla. June 24,<lb/> 1981) (consent agreement); </bibl>
+<bibl>Hyde v. J. Jefferson Parish Hosp. Dist. No. 2, 1981-1 Trade Cas.<lb/> (CCH) 63,932 (
+E.D. La. Jan. 26, 1981); </bibl>
+<bibl>Robbins v. Ong, 452 F. Supp. 110 (S.D. Ga. 1978);<lb/> </bibl>
+<bibl>Zamiri v. William Beaumont Hosp., 430 F. Supp. 875 (E.D. Mich. 1977); </bibl>
+<bibl>Sokol v. University<lb/> Hosp., 402 F. Supp. 1029 (E.D.N.Y. 1975); </bibl>
+          <bibl>Pollack v. Methodist Hosp., 392 F. Supp. 393 (E.D. La.<lb/> 1975); </bibl>
+<bibl>Datillo v. Tucson Gen. Hosp., 23 Ariz. App. 392, 533 P.2d 700 (1975); </bibl>
+<bibl>Douglas v. Hospital<lb/> of St. Raphael, 33 Conn. Supp. 216, 371 A.2d 396 (Super. Ct. 1976); </bibl>
+<bibl>Moles v. White, 336 So. 2d<lb/> 427 (Fla. Dist. Ct. App. 1976), cert. denied, 355 So. 2d 516 (Fla. 1978); </bibl>
+<bibl>Anne Arundel Gen. Hosp.<lb/> v. O'Brien, 49 Md. App. 362,432 A.2d 483 (Ct. Spec. App. July 13, 1981); </bibl>
+<bibl>Silver v. Queen's Hosp.,<lb/> 629 P.2d 1116 (Hawaii 1981); </bibl>
+          <bibl>see also New York v. American Medical Ass'n, 1980-2 Trade Cas.<lb/> (CCH) 63,456 (
+E.D.N.Y. June 9, 1980) (settlement by the American Hospital Association of the<lb/> state's antitrust claim that medical and hospital organizations have opposed chiropractors, includ-<lb/>ing their access to hospitals, in an illegal fashion); </bibl>
+          <bibl>Ohio v. Joint Comm'n on Accreditation of<lb/> Hosps., No. C-2-79-1158 (
+S.D. Ohio filed Dec. 14, 1979) (an antitrust attack on the JCAH stan-<lb/>dards that discourage the grant of hospital privileges to clinical psychologists).<lb/> </bibl>
+          
+        <bibl><label>3</label>. The Rule of Reason is the basic paradigm of antitrust reasoning. The standard requires<lb/> that substantive antitrust rules be based upon a consideration of the anticompetitive and procom-<lb/>petitive effects of different types of conduct. See National Soc'y of Professional Eng'rs v. United<lb/> States, 435 U.S. 679, 687-92 (1978); </bibl>
+          <bibl>Chicago Bd. of Trade v. United States, 246 U.S. 231, 238<lb/> (1918); </bibl>
+          <bibl>Standard Oil Co. v. United States, 221 U.S. 1, 55-75 (1911). </bibl>
+          <bibl>Within this paradigm, it is<lb/> conventional to talk about two kinds of analysis: one for activities whose general nature is so<lb/> clearly anticompetitive that the activities are deemed to be illegal per se, and the other for activi-<lb/>ties "whose effect can only be evaluated by analyzing the facts peculiar to the business, the history<lb/> of the restraint, and the reasons why it was imposed." National Soc'y of Professional Eng'rs, 435<lb/> 
+U.S. at 692. </bibl>
+          <bibl>These analytical categories are frequently referred to as the "per se" and "rule of<lb/> reason" approaches to antitrust analysis, and the latter is often thought to require an ad hoc bal-<lb/>ancing of the anticompetitive and procompetitive effects of the challenged behavior. Examples of<lb/> this apparent "balancing" may be found quite readily in antitrust hospital privilege cases, see, e.g.,<lb/> Robinson v. Magovern, 521 F. Supp. 842 (
+W.D. Pa. 1981); </bibl>
+          <bibl>Hyde v. J. Jefferson Parish Hosp. Dist.<lb/> No. 2, 1981-1 Trade Cas. (CCH) 163,932 (
+E.D. La. Jan. 26, 1981), </bibl>
+          <bibl>and in the existing literature on<lb/> the potential application of antitrust law to hospital privilege decisions, see M. THOMPSON, ANTI-<lb/>TRUST AND THE HEALTH CARE PROVIDER 149-69 (1979); </bibl>
+<bibl>Calvani &amp; James, Antitrust Law and the<lb/> Practice ofMedicine, 2 J. LEGAL MED. 75 (1980); </bibl>
+<bibl>Rich, Medical Staff Privileges and the Antitrust<lb/> Laws, 2 WHrrIER L. REV. 667 (1980). </bibl>
+          <bibl>The rule of reason or balancing approach to antitrust<lb/> analysis, however, does not logically preclude the recognition of general standards or rules that<lb/> are based upon a balancing of effects for entire categories of behavior. See, e.g., R. POSNER,<lb/> ANTITRUST LAW: AN ECONOMIC PERSPECTIVE 171-217 (1976).<lb/> </bibl>
+          <bibl>Much of this Article is devoted to the development of general standards that should guide<lb/> antitrust courts in applying antitrust's rule of reason or balancing approach to various categories<lb/> of hospital privilege decisions. See infra Part IV. </bibl>
+          <bibl>Another recent article also suggests a rule-<lb/>oriented approach to antitrust privilege cases, but the approach taken in that article would<lb/> threaten to turn hospitals into public utilities that must provide privileges to all licensed practi-<lb/>tioners who are competent within the terms of their licenses. See Dolan &amp; Ralston, HospitalAd-<lb/>mitting Privileges and the Sherman Act, 18 Hous. L. REv. 707 (1981). </bibl>
+          <bibl>For our critique of this<lb/> approach, see infra text accompanying notes 371-74.<lb/> </bibl>
+          
+        <bibl><label>4</label>. See infra Part IV. </bibl>
+          <bibl>Our discussion of "purpose based" rules in this Article draws on the<lb/> distinctions between motive, intent, and purpose that John Coons once suggested for analyzing<lb/> other kinds of anomalous antitrust behavior. Coons, Non-Commercial Purpose as a Sherman Act<lb/> Defense, 56 Nw. U.L. REv. 705, 709-12 (1962). </bibl>
+          <bibl>Thus, by -motive, we mean the subjective aspect<lb/> of an individual's will to do something. By "intent" we refer to the desire of individuals or groups<lb/> to effect certain means in order to accomplish ultimate goals. And by "purpose" we refer to an<lb/> individual's or group's ultimate goals, ends, objectives, or reasons for doing something. Cf. R.<lb/> DICKERSON, THE INTERPRETATION AND APPLICATION OF STATUTES 87-88 (1975) (drawing a simi-<lb/>lar distinction between the concepts of legislative intent and legislative purpose). With this no-<lb/>menclature, it does not make sense to speak of a hospital's motive to exclude practitioners,<lb/> although evidence of an individual's motives may be relevant in determining the hospital's pur-<lb/>pose for the exclusion. Similarly, it usually will not be controversial that the hospital intended to<lb/> exclude certain practitioners, but whether the hospital's purpose was to punish competitors of its<lb/> medical staff or to protect the quality of the hospital's services will often be the difficult question<lb/> that antitrust courts must resolve.<lb/> </bibl>
+        <bibl><label>5</label>. See Horan &amp; Nord, Application of Antitrust Law to the Health Care Delivery System, 9<lb/> CUM. L. REV. 684, 701-02 (1979).<lb/> </bibl>
+        <bibl><label>6</label>. See, eg., Holoweiko, FPs v. OBGs: a battle over babies, Med. Econ., June 15, 1979, at<lb/> 129-35; </bibl>
+<bibl>Sanders, We primar-care doctors are in a bind-and that's great, Med. Econ., Dec. 11,<lb/> 1978, at 165, 168.<lb/> </bibl>
+          
+        <bibl><label>7</label>. See Shaw v. Hospital Auth., 614 F.2d 946 (5th Cir. 1980); </bibl>
+<bibl>Levin v. Joint Comm'n on<lb/> Accreditation of Hosps., 354 F.2d 515 (
+D.C. Cir. 1965); </bibl>
+<bibl>Hollowell, The Growing Legal Contest-<lb/>Hospital Privileges for Podiatrists, 23 ST. 
+Louts U.L.J. 491 (1979).<lb/> </bibl>
+        <bibl><label>8</label>. See generally Dolan &amp; Ralston, supra note 3, at 709-21; </bibl>
+<bibl>W. Lazarus, E. Levine &amp; L.<lb/> Lewin, Competition Among Health Practitioners: The Influence of the Medical Profession on the<lb/> Health Manpower Market, at IV-1 to IV-66 (Report to the FTC, Feb. 1981).<lb/> </bibl>
+        <bibl><label>9</label>. See Katz, warner &amp; Whittington, The Supply of Physicians and Physicians' Incomes:<lb/> Some Projections, 2 J. HEALTH POL., PoC'Y &amp; L. 227 (1977); US. Report Projects Oversupply of<lb/> Doctors by 1990, N.Y. Times, April 14, 1980, at A-16.<lb/> </bibl>
+        <bibl><label>10</label>. These policies include certificate-of-need controls over entry, see The Certificate-of-Need<lb/> Laws in Health Planning, 1978 UTAI L. REV. 1, and other federal and state laws that are designed<lb/> to limit hospital revenues. See generally D.S. ABERNETHY &amp; D.A. PEARSON, REGULATING HosPI-<lb/>TAL COSTS: THE DEVELOPMENT OF PUBLIC POLICY (1979); </bibl>
+<bibl>Lewin, Somers &amp; Somers, State<lb/> Health Cost Regulation: Structure andAdministration, 6 U. TOL. L. REV. 647 (1975).<lb/> </bibl>
+        <bibl><label>11</label>. On the problems that physicians, particularly family practitioners and general practition-<lb/>ers, are experiencing in obtaining hospital privileges, see supra notes 6, 8. </bibl>
+          <bibl>On the problems of<lb/> nonphysicians, see Hollowell, supra note 7; </bibl>
+          <bibl>Note, Health Professionals' Access to Hospitals: 4<lb/> Retros<lb/> pective Analysis, 34 VAND. L. REV. 1161, 1185-98 (1981); </bibl>
+          <bibl>Chiropractors:<lb/> Pushingfor aplace on health-care team, Med. World News, Dec. 11, 1978, at 57-72.<lb/> </bibl>
+        <bibl><label>12</label>. See generallyAntitrust Jurisprudence;-A Symposium on the Economic, Political and Social<lb/> Goals of Antitrust Policy, 125 U. PA. L. REv. 1182 (1977). But cf R. BoRK, THE ANTITRUST<lb/> PARADOX: A POLICY AT WAR WITH ITSELF 15-89 (1978) (arguing that consumer welfare is the<lb/> only ultimate goal that is appropriate for antitrust law, although recognizing that fairness may be<lb/> promoted as an incidental effect).<lb/> </bibl>
+        <bibl><label>13</label>. See American Medical Ass'n v. United States, 317 U.S. 519 (1943); Group Health Coop.<lb/> v. King County Medical Soe'y, 39 Wash. 2d 586, 237 P.2d 737 (1951); Rayack, Restrictive Practices<lb/> of Organized Medicine, 13 ANTITRUST BULL. 659, 677-97, 711-12 (1968). </bibl>
+          <bibl>See generally Havig-<lb/>hurst, Professional Restraints on Innovation in Health Care Financing, 1978 DUKE L.J. 303; Kis-<lb/>sam, Health Maintenance Organizations and the Role ofAntitrust Law, 1978 DUKE L.J. 487.<lb/> </bibl>
+          
+        <bibl><label>14</label>. See Wolf v. Jane Phillips Episcopal-Memorial Medical Center, 513 F.2d 684, 686 (10th<lb/> Cir. 1975); </bibl>
+<bibl>Moles v. White, 336 So. 2d 427 (Fla. Dist. Ct. App. 1976), cert. denied, 355 So. 2d 516<lb/> (Fla. 1978); </bibl>
+<bibl>Willis v. Santa Ana Community Hosp. Ass'n, 58 Cal. 2d 806, 376 P.2d 568, 26 Cal.<lb/> Rptr. 640 (1962); </bibl>
+<bibl>cf Williamson v. Grant County Pub. Hosp. Dist., 65 Wash. 2d 245, 396 P.2d 879<lb/> (1964) (antitrust exemption for hospital privileges because of other state regulation).<lb/> </bibl>
+        <bibl><label>15</label>. See Wolf v. Jane Phillips Episcopal-Memorial Medical Center, 513 F.2d 684 (10th Cir.<lb/> 1975); </bibl>
+<bibl>see also Elizabeth Hosp., Inc. v. Richardson, 167 F. Supp. 155 (1958), a 9'd, 269 F.2d 167<lb/> (8th Cir.), cert. denied, 361 
+U.S. 884 (1959); </bibl>
+<bibl>Riggall v. Washington Medical Soey, 249 F.2d 266<lb/> (8th Cir. 1957), cert. denied, 355 
+U.S. 954 (1958); </bibl>
+          <bibl>Spears Free Clinic and Hosp. for Poor Children<lb/> v. Cleere, 197 F.2d 125 (10th Cir. 1952).<lb/> </bibl>
+        <bibl><label>16</label>. See National Soe'y of Professional Eng'rs v. United States, 435 U.S. 679 (1978); </bibl>
+          <bibl>Gold-<lb/>farb v. Virginia State Bar, 421 U.S. 773 (1975). </bibl>
+          <bibl>On the implications of these cases for other kinds<lb/> of professional practices, see Branca &amp; Steinberg, Attorney Fee Schedules and LegalAdvertising:<lb/> The Implications, 24 U.C.L.A. L. REv. 475 (1977); </bibl>
+<bibl>Canby &amp; Gelihorn, Physician Advertising: The<lb/> First Amendment and the Sherman Act, 1978 DUKE L.J. 543, 564-82; </bibl>
+<bibl>Havighurst, supra note 13;<lb/> </bibl>
+<bibl>Kissam, Anitrust Law, The FirstAmendment and Professional Self.Regulation of Technical Quality,<lb/> in REGULATING THE PROFESSIONS: A PUBLIC POLICY SYMPOSIUM 143 (R. Blair &amp; S. Rubin eds.<lb/> 1980) [hereinafter cited as Kissam, The First Amendment].<lb/> </bibl>
+        <bibl><label>17</label>. Hospital Bldg. Co. v. Trustees of Rex Hosp., 425 U.S. 738 (1976).<lb/> </bibl>
+        <bibl><label>18</label>. Compare Crane v. Intermountain Health Care, 637 F.2d 715 (10th Cir. 1981), Robinson<lb/> v. Magovern, 521 F. Supp. 842 (</bibl>
+<bibl>W.D. Pa. 1981) and Zamiri v. William Beaumont Hosp., 430 F.<lb/> Supp. 875 (E.D. Mich. 1977) with Capili v. Shott, 620 F.2d 439 (4th Cir. 1980).<lb/> </bibl>
+        <bibl><label>19</label>. See, e.g., Moles v. White, 336 So. 2d 427 (Fla. Dist. Ct. App. 1976), cert. denied, 355 So.<lb/> 2d 516 (Fla. 1978); New York v. Roth, 1981-1 Trade Cas. (CCH) 64,076 (
+N.Y. Apr. 2, 1981).<lb/> </bibl>
+        <bibl><label>20</label>. See Developments in State Antitrust Activities, in THE POLITICAL ECONOMY OF 
+ANTI-<lb/>TRUST: PRINCIPAL PAPER BY WILLIAM BAXTER 143-46 (R.D. Tollison ed. 1980); </bibl>
+          <bibl>State Enforce-<lb/>ment "Oaks" Grow/rom "Acorns"Planted by Congress, ANTITRUST &amp; TRADE REO. REP. (BNA),<lb/> April 4, 1979, at D-1 to D-4. But c. Hope Dims for Further Federal Funding of State Antitrust<lb/> Enforcement Programs, ANTITRUST &amp; TRADE REG. REP. (BNA) No. 967, at D-6, D-7 (June 5,<lb/> 1980). </bibl>
+          <bibl>See generally Rubin, Rethinking State Antitrust Enforcement, 26 U. FLA. L. REV. 653<lb/> (1974).<lb/> </bibl>
+          
+          <bibl><label>21</label>. A summary of nonantitrust standards that are applicable to hospital privilege decisions<lb/> may be found in Southwick, The Physician's Right to Due Process in Public and Private Hospitals:<lb/> Is There a Dffierence?, 6 Medicolegal News, Feb. 1981, at 4-8. Briefly, these standards include<lb/> hospital accreditation requirements that applicants for privileges be provided with notice and an<lb/> opportunity to be heard by the hospital, see JCAH MANUAL, supra note I, at 53-54, </bibl>
+          <bibl>constitutional<lb/> and common law requirements that privilege applicants be provided with fair process, see Shaw v.<lb/> Hospital Auth., 614 F.2d 946 (5th Cir. 1980); </bibl>
+          <bibl>Sosa v. Board of Managers of Vol Verde Memorial<lb/> Hosp., 437 F.2d 173 (5th Cir. 1971); Griesman v. Newcomb Hosp., 40 N.J. 389, 192 A.2d 817<lb/> (1963); </bibl>
+          <bibl>Cray, Due Process Considerations in Hospital Staff Privileges Cases, 7 HASTINGS CONST.<lb/> L.Q. 217 (1979); </bibl>
+          <bibl>McCall, A Hospital's Liabilityfor Denying, Suspending and Granting Staff Privi-<lb/>leges, 32 BAYLOR L. REV. 175 (1980), </bibl>
+          <bibl>particular state statutes that grant procedural or substantive<lb/> rights to certain groups of privilege applicants, see, e.g., CAL. ADMIN. CODE, tit. xxii, R. 70706.1<lb/> (1980) (privilege applications from nonphysicians must be considered); </bibl>
+          <bibl>N.Y. PUB. HEALTH LAW<lb/> § 2801-b (McKinney 1973) (privileges may not be denied without giving reasons), </bibl>
+          <bibl>and various<lb/> contract and tort doctrines that may be particularly relevant to decisions not to renew existing<lb/> privileges, see, e.g., Blank v. Palo Alto-Stanford Hosp. Center, 234 Cal. App. 2d 377, 44 Cal. Rptr.<lb/> 572 (1st Dist. 1965); </bibl>
+          <bibl>Margolin v. Morton F. Plant Hosp., 342 So. 2d 1090 (Fla. Dist. Ct. App.<lb/> 1977); </bibl>
+          <bibl>Burkhart v. Community Medical Center, 432 S.W.2d 433 (Ky. 1968).<lb/> </bibl>
+          <bibl><label>22</label>. See, e.g., Blackstone, The A.MA. and the Osteopaths: A Study of the Power of Organized<lb/> Medicine, 22 ANTITRUST BULL. 405 (1977); </bibl><bibl>Dolan &amp; Ralston, supra note 3, at 709-21.<lb/> </bibl>
+          <bibl><label>23</label>. The Reagan Administration's basic policy on health care appears to be based on the idea<lb/> of promoting economic competition among medical insurers and hospitals. See Health Chief Gives<lb/> Plans to Cut Costs-Schweiker Asserts Administration Seeks to Restore Competition by Hospitals<lb/> and.Insurers, N.Y. Times, June 12, 1981, at B-6. See generally Enthoven, Health Care Costs: Why<lb/> Regulation Fails, Why Competition Works, and How to Get Therefrom Here, I1 NAT'L J. 885<lb/> (1979); </bibl>
+          <bibl>Enthoven, Consumer Choice Health Plan, 298 NEw ENG. J. MED. 650, 709 (1978); </bibl>
+          <bibl>Havig-<lb/>hurst, supra note 13; </bibl>
+          <bibl>Havighurst, Health Maintenance Organizations and the Market for Health<lb/> Services, 35 LAw &amp; CONTEMP. PROBs. 716, 736-48 (1970).<lb/> </bibl>
+          
+          <bibl><label>24</label>. See infra Part 11.<lb/> </bibl>
+          <bibl><label>25</label>. See infra text accompanying notes 255-68.<lb/> </bibl>
+          <bibl><label>26</label>. See supra note 21.<lb/> </bibl>
+          <bibl><label>27</label>. See infra text accompanying notes 255-68.<lb/> </bibl>
+          <bibl><label>28</label>. See infra text accompanying notes 225-391.<lb/> </bibl>
+          <bibl><label>29</label>. See infra text accompanying notes 392-428.<lb/> </bibl>
+          <bibl><label>30</label>. The so-called Darling doctrine stems from a 1965 decision by the Illinois Supreme Court,<lb/> which held a hospital corporation liable for its failure to supervise the medical care provided by a<lb/> staff physician who was a private practitioner and not a hospital employee. Darling v. Charles-<lb/>town Comm. Memorial Hosp., 33 Ill. 2d 326, 211 N.E.2d 253 (1965), cert. denied, 383 U.S. 946<lb/> (1966). </bibl>
+          <bibl>See generally Horty &amp; Mulholland, The Legal Status ofthe Hospital Medical Staff, 22 ST.<lb/> Louis U.LJ. 485, 491-94 (1978); </bibl>
+          <bibl>McCall, supra note 21, at 205-13.<lb/> </bibl>
+          
+          <bibl><label>31</label>. See infra text accompanying notes 342-54.<lb/> </bibl>
+          <bibl><label>32</label>. See supra note 3 and accompanying text.<lb/> </bibl>
+          <bibl><label>33</label>. See infra Part IV.<lb/> </bibl>
+          <bibl><label>34</label>. 15 U.S.C. § 1 (1976).<lb/> </bibl>
+          
+          <bibl><label>35</label>. See infra text accompanying notes 269-300.<lb/> </bibl>
+          <bibl><label>36</label>. See infra text accompanying notes 301-70.<lb/> </bibl>
+          <bibl><label>37</label>. 15 U.S.C. § 2 (1976).<lb/> </bibl>
+          
+          <bibl><label>38</label>. See, ag., Hyde v. J. Jefferson Parish Hosp. Dist. No. 2, 1981-1 Trade Cas. (CCH)<lb/> 63,932 (E.D. La. Jan. 26, 1981). </bibl>
+          <bibl>See generally Landes &amp; Posner, Market Power in Antitrust Cases,<lb/> 94 HARV. L. REV. 937 (1981).<lb/> </bibl>
+          <bibl><label>39</label>. See Robinson v. Magovern, 521 F. Supp. 842 (W.D. Pa. 1981); Clark, Does the Nonproflt<lb/> Form Fit the Hospital Industry?, 93 HARV. L. REV. 1416, 1458 (1980); </bibl>
+          <bibl>Salkever, Competition<lb/> Among Hospitals, in FEDERAL TRADE COMMISSION, COMPETITION IN THE HEALTH CARE SEC-<lb/>TOR: PAST, PRESENT AND FUTURE 191, 195 (1978). </bibl>
+          <bibl>See generally M. ROEMER &amp; J. FRIEDMAN,<lb/> DOCTORS IN HOSPITALS: MEDICAL STAFF ORGANIZATION AND HOSPITAL PERFORMANCE (1971).<lb/> </bibl>
+          <bibl><label>40</label>. Cf. Robinson v. Magovern, 521 F. Supp. 842 (W.D. Pa. 1981).<lb/> </bibl>
+          <bibl><label>41</label>. See M. ROEMER &amp; J. FRIEDMAN, supra note 39.<lb/> </bibl>
+          
+          <bibl><label>42</label>. See id at 44-45.<lb/> </bibl>
+          <bibl><label>43</label>. On the influence of JCAH standards upon hospital bylaws, see JOINT COMMISSION ON<lb/> ACCREDITATION OF HOSPITALS, JCAH MONOGRAPH: MEDICAL STAFF BYLAWS 5 (1978). </bibl>
+          <bibl>See also<lb/> Worthington &amp; Silver, Regulation afQuality of Care in Hospitals: The Needfor Change, 35 LAW &amp;<lb/> CONTEMP. PROBs. 305 (1970).<lb/> </bibl>
+          <bibl><label>44</label>. JCAH MANUAL, supra note 1, at 53 (Standard IX).<lb/> </bibl>
+          <bibl><label>45</label>. Id at 53-54.<lb/> </bibl>
+          <bibl><label>46</label>. See Note, Physician-Hospital Conflict:, The Hospital Staff Priileges Controversy in New<lb/> York, 60 CORNELL L. Rav. 1075, 1076-77 (1975).<lb/> </bibl>
+          
+          <bibl><label>47</label>. See e.g., Cramer v. Hoffman, 390 F.2d 19, 23 (2d Cir. 1968); </bibl>
+          <bibl>Mayers v. Litow, 154 Cal.<lb/> App. 2d 413, 418, 316 P.2d 351, 354 (2d Dist. 1957). </bibl>
+          <bibl>See generally Comment, Piercing the Doctrine<lb/> of Corporate Hospital Liability, 17 SAN DIEGO L. REv. 383, 385 (1980).<lb/> </bibl>
+          <bibl><label>48</label>. Compare Horty &amp; Mulholland, supra note 30 (the medical staff should not be liable for<lb/> the hospital's failure to supervise medical care of attending physicians) with Comment, </bibl>
+          <bibl>supra note<lb/> 47 (staff physicians with supervisory responsibilities should be held liable for the failure to super-<lb/>vise with due care). </bibl>
+          <bibl>On the general issue of when agents of a corporate enterprise should be held<lb/> liable for corporate misconduct, see Stone, The Place ofEnterprise Liability in the Control of Cor-<lb/>porate Conduct, 90 YALE L.J. 1, 28-35 (1980).<lb/> </bibl>
+          <bibl><label>49</label>. See infra text accompanying notes 51-65.<lb/> </bibl>
+          <bibl><label>50</label>. See supra text accompanying notes 44-45.<lb/> </bibl>
+          
+          <bibl><label>51</label>. Horty &amp; Mulholland, supra note 30, at 487-88.<lb/> </bibl>
+          <bibl><label>52</label>. See generally Starr, Medicine andthe Waning fProfessional Sovereignty, 107 DAEDALUS<lb/> 175 (1978).<lb/> </bibl>
+          <bibl><label>53</label>. See id at 177-79, 182-9 1.<lb/> </bibl>
+          <bibl><label>54</label>. On the distinction between "technical" and "organizational" aspects of professional<lb/> work and the potential usefulness of this distinction in developing public policy toward the medi-<lb/>cal profession, see E. FREIDSON, PROFESSION OF MEDICINE: A STUDY OF THE SOCIOLOGY OF<lb/> APPLIED KNOwLEDGE 23-46 (1970). </bibl>
+          <bibl>On the potential role for this distinction in applying antitrust<lb/> law to the professions, see Kissam, supra note 16, at 146-56.<lb/> </bibl>
+          <bibl><label>55</label>. 33 Ill. 2d 326, 211 N.E.2d 253 (1965), cert. denied, 383 U.S. 946 (1966). </bibl>
+          <bibl>On the current<lb/> development of the Darling doctrine, see McCall, supra note 21, at 205-13.<lb/> </bibl>
+          
+          <bibl><label>56</label>. See McCall, supra note 21, at 205-13.<lb/> </bibl>
+          <bibl><label>57</label>. Dolan &amp; Ralston, supra note 3, at 718-19.<lb/> </bibl>
+          <bibl><label>58</label>. Pauly &amp; Redisch, The Not-for-Profit Hospitalas a Physicians' Cooperative, 63 AM. ECON.<lb/> REV. 87, 88 (1973).<lb/> </bibl>
+          <bibl><label>59</label>. See id; Harris, he Internal Organization o/Hospitals: Some Economic Implications, 8<lb/> BELL J. ECON. 467, 472-75 (1977).<lb/> </bibl>
+          <bibl><label>60</label>. Pauly &amp; Redisch, supra note 58, at 88-90.<lb/> </bibl>
+          
+          <bibl><label>61</label>. Id at 90-93.<lb/> </bibl>
+          <bibl><label>62</label>. See generally Havighurst &amp; Blumstein, Coping with Quality/Cost Trade-Offs in Medicare<lb/> Care: The Role ofPSROs, 70 Nw. U.L. REv. 6 (1975). Of course, a hospital that established a<lb/> competitive privileges system might discover that its patients and physicians are willing to pay for<lb/> the availability of slack capacity and the highest possible quality ofcare. This may be particularly<lb/> likely in view of the general availability of insurance for most hospital services.<lb/> </bibl>
+          <bibl><label>63</label>. See supra text accompanying note 53.<lb/> </bibl>
+          <bibl><label>64</label>. Harris, supra note 59.<lb/> </bibl>
+          
+          <bibl><label>65</label>. The usefulness of the dual firm model for analyzing privilege decisions will increase if<lb/> the current plans of the Reagan Administration for increasing competition among health insurers,<lb/> see supra note 23, are successfully implemented. </bibl>
+          <bibl>Cost-conscious health insurance plans presuma-<lb/>bly would employ many sorts of devices to establish greater cost-consciousness among hospitals.<lb/> See Havighurst, supra note 13, at 321-26. The general effect of these devices would be to increase<lb/> the hospital's resources and incentives to bargain with and control its medical staff on issues affect-<lb/>ig excess capacity. With greater incentives and resources to address excess capacity, hospital<lb/> administrations would have a corresponding incentive to award privileges on a more competitive<lb/> basis than the medical staff would like.<lb/> </bibl>
+          <bibl><label>66</label>. On the prevalence of competition among hospitals to obtain physicians, see Robinson v.<lb/> Magovern, 521 F. Supp. 842 (W.D. Pa. 1981); </bibl>
+          <bibl>Joskow, The Effects of Competition and Regulation<lb/> on Hospital Bed Supply and the Reservation Quality of the Hospital, 11 BELL J. ECON. 421, 432,<lb/> 445-46 (1980); </bibl>
+          <bibl>Salkever, supra note 39, at 195.<lb/> </bibl>
+          
+          <bibl><label>67</label>. See Kissam, supra note 13, at 503-08.<lb/> </bibl>
+          <bibl><label>68</label>. See, e.g., Armstrong v. Board of Directors, 553 S.W.2d 77 (Tenn. Ct. App. 1976);<lb/> Holoweiko, supra note 6.<lb/> </bibl>
+          <bibl><label>69</label>. See, e.g., Reynolds v. St. John's Riverside Hosp., 86 Misc. 2d 272, 382 N.Y.S.2d 618<lb/> (Sup. Ct. 1976). </bibl><bibl>See generally Kissam, Physkican's Assistant and Nurse Practitioner Laws: A Study<lb/> of(Health Law Reform, 24 KAN. L. REv. 1 (1975).<lb/> </bibl>
+          <bibl><label>70</label>. See supra text accompanying note 11.<lb/> </bibl>
+          <bibl><label>71</label>. See supra text accompanying note 66.<lb/> </bibl>
+          <bibl><label>72</label>. Id<lb/> </bibl>
+          
+          <bibl><label>73</label>. See M. ROEMER &amp; J. FRIEDMAN, supra note 39, at 124-26.<lb/> </bibl>
+          <bibl><label>74</label>. See, e.g., Robbins v. Ong, 452 F. Supp. 110 (S.D. Ga. 1978).<lb/> </bibl>
+          <bibl><label>75</label>. Cf. infra note 290 (FTC complaint that five physicians threatened to withdraw their serv-<lb/>ices from hospital if it hired another physician).<lb/> </bibl>
+          
+          <bibl><label>76</label>. 421 U.S. 773 (1975).<lb/> </bibl>
+          <bibl><label>77</label>. Id at 785-88.<lb/> </bibl>
+          <bibl><label>78</label>. For a suggestion of this sort, see Rigler, Professional Codes of Conduct after Goldfarb: A<lb/> Proposed Method of Analysis, 29 ARK. L. REv. 185 (1975).<lb/> </bibl>
+          <bibl><label>79</label>. See Selman v. Harvard Medical School, 1980-2 Trade Cas. (CCH) 63,371 (S.D.N.Y.<lb/> May 21, 1980) (medical school admissions decisions are exempt from Sherman Act); </bibl>
+          <bibl>Rigler, supra<lb/> note 78, at 189.<lb/> </bibl>
+          
+          <bibl><label>80</label>. 435 U.S. 679 (1978).<lb/> </bibl>
+          <bibl><label>81</label>. Dolan &amp; Ralston, supra note 3, at 712-14.<lb/> </bibl>
+          <bibl><label>82</label>. See supra note 54 and accompanying text.<lb/> </bibl>
+          <bibl><label>83</label>. See Veizaga v. National Bd. for Respiratory Therapy, 1977-1 Trade Cas. (CCH) 61,274<lb/> (N.D. IlL. Jan. 27, 1977) (per se antitrust rules apply only to the "commercial" practices of profes-<lb/>sionals); </bibl>
+          <bibl>see also Note, The Professions and Noncommercial Purposes: Appl'cability ofPer Se Rules<lb/> Under the Sherman Act, 11 U. MICH. J.L. REF. 387 (1978). </bibl>
+          <bibl>Cf. Feminist Women's Health Center,<lb/> Inc. v. Mohammad, 415 F. Supp. 1258, 1263, 1269 (N.D. Fla. 1976) (professionals may advance a<lb/> "good faith" defense to allegations of per se antitrust violations), rev'don other grounds, 586 F.2d<lb/> 530 (5th Cir. 1978).<lb/> </bibl>
+          
+          <bibl><label>84</label>. 435 U.S. at 696.<lb/> </bibl>
+          <bibl><label>85</label>. Id<lb/> </bibl>
+          <bibl><label>86</label>. Id at 691.<lb/> </bibl>
+          <bibl><label>87</label>. See, eg., Boddicker v. Arizona State Dental Ass'n, 549 F.2d 626 (9th Cir.), cert. denied,<lb/> 434 U.S. 825 (1977); </bibl><bibl>Veizaga v. National Bd. for Respiratory Therapy, 1977-1 Trade Cas. (CCH) 1<lb/> 61,274 (N.D. I11. Jan. 27, 1977); Feminist Women's Health Center, Inc. v. Mohammad, 415 F.<lb/> Supp. 1258 (N.D. Fla. 1976), rev'd on other grounds, 586 F.2d 530 (5th Cir. 1978), cert. denied, 444<lb/> U.S. 924 (1979).<lb/> </bibl>
+          <bibl><label>88</label>. 1980-2 Trade Cas. (CCH) 63,371 (S.D.N.Y. May 21, 1980).<lb/> </bibl>
+          <bibl><label>89</label>. Maijorie Webster Junior College, Inc. v. Middle States Ass'n of Colleges and Secondary<lb/> Schools, Inc., 432 F.2d 650, 654 (D.C. Cir.), cert. denied, 400 U.S. 965 (1970).<lb/> </bibl>
+          
+          <bibl><label>90</label>. See Moles v. White, 336 So. 2d 427, 429 (Fla. Dist. Ct. App., 1976), cert. denied, 355 So.<lb/> 2d 516 (Fla. 1978); </bibl>
+          <bibl>New York v. Roth, 1981-1 Trade Cas. (CCH) 64,026 (N.Y. Apr. 2, 1981).<lb/> </bibl>
+          <bibl><label>91</label>. See Rigler, supra note 78, at 189-98.<lb/> </bibl>
+          <bibl><label>92</label>. See Rubin, supra note 20, at 714; </bibl>
+          <bibl>cf. UNIF. ST. ANTITRUST AcT § 4,4 TRADE REG. REP.<lb/> (CCH) 1 30,101 (exemptions only for labor, agricultural and horticultural organizations).<lb/> </bibl>
+          <bibl><label>93</label>. See, eg., ARK. STAT. ANN. § 70-101 (1979 Replacement).<lb/> </bibl>
+          <bibl><label>94</label>. See Willis v. Santa Aria Community Hosp. Ass'n, 58 Cal. 2d 806, 809, 376 P.2d 568, 569-<lb/>70, 26 Cal. Rptr. 640, 641-42 (1962). But see Note, Shouldthe MedicalProfession be Exempt from<lb/> Calfornia Antitrust Law? Willis v. Santa Ana Community Hospital Association Reexamined, 7<lb/> W. ST. U.L. REV. 91, 102-03 (1979) (arguing that the nonantitrust statute relied upon in Willis<lb/> provided weak evidence of legislative intent to exempt the professions from the state's antitrust<lb/> law, because the reference to the professions in the nonantitrust statute was introduced in a<lb/> recodification enacted in the same year as, rather than before, the antitrust law).<lb/> </bibl>
+          <bibl><label>95</label>. Rubin, supra note 20, at 657-58.<lb/> </bibl>
+          <bibl><label>96</label>. See Friedman, Freedom of Contract and Occupational Licensing 1890-1910. A4 Legal and<lb/> Social Study, 53 CALIF. L. REV. 487, 489 (1965).<lb/> </bibl>
+          
+          <bibl><label>97</label>. On the basic purposes of professional licensure laws, see Frech, Occupational Licensure<lb/> and Health Care Productivit: The Issues and the Literature, in HEALTH MANPOWER AND PRO-<lb/>DUCIVITY 119-20 (J. Rafferty ed. 1974); </bibl>
+          <bibl>Friedman, supra note 96, at 499-502.<lb/> </bibl>
+          <bibl><label>98</label>. See New York v. Roth, 1981-1 Trade Cas. (CCH) 64,026 (N.Y. Apr. 2, 1981); </bibl>
+          <bibl>In re<lb/> Estate of Freeman, 34 N.Y.2d 1, 311 N.E.2d 480, 355 N.Y.S.2d 366 (1974).<lb/> </bibl>
+          <bibl><label>99</label>. See Willis v. Santa Ana Community Hosp. Ass'n, 58 Cal. 2d 806, 809, 376 P.2d 568, 570,<lb/> 26 Cal. Rptr. 640, 642 (1962).<lb/> </bibl>
+          <bibl><label>100</label>. See, eg., P. AREEDA, ANTITRUST ANALYSIS<lb/> 144 (3d ed. 1981).<lb/> </bibl>
+          <bibl><label>101</label>. See United States v. American Medical Ass'n, 110 F.2d 703, 709-11 (D.C. Cir.), cert.<lb/> denied, 310 U.S. 644 (1940).<lb/> </bibl>
+          <bibl><label>102</label>. See supra text accompanying note 30; </bibl><bibl>McCall, supra note 21, at 205-13.<lb/> </bibl>
+          <bibl><label>103</label>. See supra text accompanying notes 55-57.<lb/> </bibl>
+          
+          <bibl><label>104</label>. See California Retail Liquor Dealers Ass'n v. Midcal Aluminum, Inc., 445 U.S. 97, 103-<lb/>05 (1980); </bibl>
+          <bibl>New Motor Vehicle Bd. v. Orrin W. Fox Co., 439 U.S. 96, 109 (1978); City of Lafayette,<lb/> La. v. Louisiana Power &amp; Light Co., 435 U.S. 389, 413 (1978); Bates v. State Bar, 433 U.S. 350, 359<lb/> (1977); Cantor v. Detroit Edison Co., 428 U.S. 579, 589 (1976); Goldfarb v. Virginia State Bar, 421<lb/> U.S. 773, 788 (1975); Parker v. Brown, 317 U.S. 341, 350-51 (1943).<lb/> </bibl>
+          <bibl><label>105</label>. See, e.g., Silver v. New York Stock Exch., 373 U.S. 341, 357-61 (1963). </bibl>
+          <bibl>See generally<lb/> Handler, Regulation Versus Competition, 44 U. CIN. L. REV. 191, 194-206 (1975); </bibl>
+          <bibl>Shuman, The<lb/> 4pplication ofthe 4ntitrust Laws to Regulated Industries, 44 TENN. L. REV. 1, 16-28 (1976).<lb/> </bibl>
+          <bibl><label>106</label>. See California Motor Transp. Co. v. Trucking Unlimited, 404 U.S. 508, 509-11 (1972);<lb/> United Mine Workers v. Pennington, 381 U.S. 657, 669-70 (1965); </bibl>
+          <bibl>Eastern R.R. Presidents Con-<lb/>ference v. Noerr Motor Freight, Inc., 365 U.S. 127, 136-38 (1961). </bibl>
+          <bibl>See generally Fischel, Antitrust<lb/> Liability/or Attempts to Influence Government Action: The Basis and Limits of the Noerr-Pen-<lb/>nington Doctrine, 45 U. CHI. L. REv. 80, 104-10 (1977).<lb/> </bibl>
+          <bibl><label>107</label>. See Worthington &amp; Silver, supra note 43, at 308-10.<lb/> </bibl>
+          <bibl><label>108</label>. Id at 319 (discussing Michigan's 1970 hospital licensure law).<lb/> </bibl>
+          
+          <bibl><label>109</label>. See id at 318 n.56 (discussing New York's 1969 hospital licensure regulations promul-<lb/>gated by the state health department).<lb/> </bibl>
+          <bibl><label>110</label>. In the early 1970s, the New York state and city health departments were interested in<lb/> employing hospital licensure laws to enforce this kind of quality of care measure. Personal experi-<lb/>ence of Philip Kissam with New York City's Health Services Administration, 1970-73. A similar<lb/> policy apparently is being employed today in Rhode Island to reduce the number of physicians<lb/> with privileges to perform open heart surgery in Rhode Island hospitals. Phone conversation<lb/> between Philip Kissam and Ralph Giamma, Rhode Island attorney, Nov. 1980.<lb/> </bibl>
+          <bibl><label>111</label>. See, ag., FLA. STAT. ANN. §395.065(2) (West Supp. 1981).<lb/> </bibl>
+          <bibl><label>112</label>. Cf Horan &amp; Nord, supra note 5, at 702 (discussing benefits of exclusive privilege con-<lb/>tracts with physicians).<lb/> </bibl>
+          <bibl><label>113</label>. California Retail Liquor Dealers Ass'n v. Mideal Aluminum, Inc., 445 U.S. 97, 105<lb/> (1980).<lb/> </bibl>
+          <bibl><label>114</label>. Id at 106.<lb/> </bibl>
+          
+          <bibl><label>115</label>. See id. at 103-06.<lb/> </bibl>
+          <bibl><label>116</label>. 428 U.S. 579 (1976).<lb/> </bibl>
+          <bibl><label>117</label>. Id at 592-98.<lb/> </bibl>
+          <bibl><label>118</label>. See Verkuil, State Action, Due Process andAntitrust: Refections on Parker v. Brown, 75<lb/> COLUM. L. REV. 328, 329-58 (1975). </bibl>
+          <bibl>A lively academic debate has been conducted on the appro-<lb/>priateness of using federal antitrust law to preempt state laws that have substantial anticompeti-<lb/>tive effects. For a sampling of this debate, compare Posner, The Proper Relationshp Between State<lb/> Regulation and the FederalAntitrust Laws, 49 N.Y.U. L. REv. 693 (1974), with Handler, The Cur-<lb/>rent Attack on the Parker v. Brown State Action Doctrine, 76 COLuM. L. REv. 1 (1976) (other<lb/> contributions to this debate are listed in note 3 of the latter article). Our preference for the nonac-<lb/>tivist position espoused by Professors Handler and Verkuil is based fundamentally on our view<lb/> that relevant constitutional values should be employed to help resolve open questions of statutory<lb/> interpretation. See infra text accompanying notes 179-86. </bibl>
+          <bibl>To be sure, the "state action" issue in<lb/> antitrust law superficially involves a conflict between the supremacy clause and the federalism<lb/> provisions of the Constitution. But legitimate state regulations, even if anticompetitive in effect,<lb/> clearly implicate the federalism values of the Constitution. The same cannot be said for the<lb/> supremacy clause because Congress has not expressly indicated that the federal antitrust laws<lb/> should be used to preempt anticompetitive state regulations. See Parker v. Brown, 317 U.S. 341,<lb/> 350-51 (1943).<lb/> </bibl>
+          
+          <bibl><label>119</label>. In Bates v. State Bar, 433 U.S. 350, 359-63 (1977), the Court distinguished Cantor in<lb/> ways that suggest support for the argument in the text, but the Court did not disown either of the<lb/> two parts of the Cantor test.<lb/> </bibl>
+          <bibl><label>120</label>. Cf. id (a state court's regulation that prohibits advertising by lawyers is exempt from<lb/> federal antitrust law).<lb/> </bibl>
+          <bibl><label>121</label>. Cf. Feminist Women's Health Center, Inc. v. Mohammad, 586 F.2d 530, 541-45 (5th Cir.<lb/> 1978) (dismissing a medical staffs claim that a state-imposed responsibility to review staff privi-<lb/>leges supported a Noerr-Pennington defense for the staff's conspiracy against physicians associated<lb/> with an abortion clinic), cert. denied, 444 U.S. 924 (1979).<lb/> </bibl>
+          
+          <bibl><label>122</label>. See supra note 118 and accompanying text.<lb/> </bibl>
+          <bibl><label>123</label>. See infra Part IV.<lb/> </bibl>
+          <bibl><label>124</label>. See generally Komesar, In Search of a General Approach to LegalAnalysis: A Compara-<lb/>tive InsitutionaIAternative, 79 MICH. L. REV. 1350 (1981).<lb/> </bibl>
+          <bibl><label>125</label>. WASH. REv. CODE ANN. § 19.86.170 (1978). See N.J. STAT ANN. § 56:9-5 (West Supp.<lb/> 1981); </bibl>
+          <bibl>'VA. CODE § 59.1-9.4 (1981 Supp.). Williamson v. Grant County Pub. Hosp. Dist. No. 1, 65<lb/> Wash. 2d 245, 396 P.2d 879 (1964), held that Washington's antitrust law was inapplicable to an<lb/> osteopathic physician's suit against a public hospital and its medical staff for a denial of staff<lb/> privileges. The court relied upon a general immunity provision in the state's antitrust law for<lb/> "permitted, authorized or regulated" activities, WASH. REV. CODE ANN. § 19.86.170 (1978), and<lb/> upon a state statute which recognized that the management of hospital patients was subject to<lb/> approval of the hospital's medical staff. Id § 70.44.160 (1978).<lb/> </bibl>
+          <bibl><label>126</label>. 435 U.S. 389 (1978).<lb/> </bibl>
+          
+          <bibl><label>127</label>. Id at 413-17 (plurality opinion).<lb/> </bibl>
+          <bibl><label>128</label>. Id. at 418-26.<lb/> </bibl>
+          <bibl><label>129</label>. See, eg., KAN. STAT. ANN. § § 13-14b01 to 13-14b15 (1975 &amp; Supp. 1980).<lb/> </bibl>
+          <bibl><label>130</label>. See 435 U.S. at 418-20. The Chief Justice in Lafayette did not spell out a test for "pro-<lb/>prietary" activities, but he did rely upon both profitmaking and competition with private enter-<lb/>prise as indicia that could be used to establish the proprietary nature of government enterprises.<lb/> Id<lb/> </bibl>
+          <bibl><label>131</label>. See also Note, The Antitrust Liability of Municipalities Under the Parker Doctrine, 57<lb/> B.U.L. REv. 368, 384-86 (1977) (supporting an approach that is similar to the Chief Justice's<lb/> approach in Lafayette, and arguing the proprietary municipal enterprises should be those that<lb/> provide the same services as private entities and are capable of aggregating and exercising the<lb/> kinds of power that are the concern of antitrust law when exercised by private parties).<lb/> </bibl>
+          
+          <bibl><label>132</label>. 102 S. Ct. 835 (1982).<lb/> </bibl>
+          <bibl><label>133</label>. Id at 42-43.<lb/> </bibl>
+          <bibl><label>134</label>. See, e.g., KAN. STAT. ANN. § 13-14bl1 (1975 &amp; Supp. 1980) (the board of trustees of a<lb/> hospital established by a first class city "shall have exclusive control of the management and<lb/> operation of the hospital and shall make and adopt such rules and regulations for the government<lb/> of the hospital as may be deemed expedient for the economical and proper conduct thereof").<lb/> </bibl>
+          <bibl><label>135</label>. We do not mean to endorse the Supreme Court's decision in Community Communications<lb/> Co., which strikes us as an instance of judicial activism under the state action doctrine that is not<lb/> particularly desirable. See supra text accompanying notes 113-19. </bibl>
+          <bibl>See generaly Areeda, Antitrust<lb/> Immunityfor "State Action"After Lafayette, 95 HARV. L. REv. 435 (1981).<lb/> </bibl>
+          <bibl><label>136</label>. See Dolan &amp; Ralston, supra note 3, at 773-77; </bibl>
+          <bibl>Note, Physician Influence: Appl ng Noerr-<lb/>Pennington to the Medical Profession, 1978 DuKE L.J. 701, 715-19.<lb/> </bibl>
+          <bibl><label>137</label>. See supra note 106 and accompanying text.<lb/> </bibl>
+          
+          <bibl><label>138</label>. See, e.g., Feminist Women's Health Center, Inc. v. Mohammad, 586 F.2d 530, 541-45<lb/> (5th Cir. 1978), cert. denied, 444 U.S. 924 (1979).<lb/> </bibl>
+          <bibl><label>139</label>. On the nature of this mixed role, see supra Part II.<lb/> </bibl>
+          <bibl><label>140</label>. See In re Airport Car Rental Antitrust Litig., 474 F. Supp. 1072 (N.D. Cal. 1979), rev'd<lb/> on reassignment, 1981-1 Trade Cas. (CCH) 63,983 (N.D. Cal. Apr. 16, 1981).<lb/> </bibl>
+          <bibl><label>141</label>. See George R. Whitten, Jr., Inc., v. Paddock Pool Builders, Inc., 424 F.2d 25 (1st Cir.),<lb/> cert. denied, 400 U.S. 850 (1970), on remand, 376 F. Supp. 125 (D. Mass.), aj'd, 508 F.2d 547 (1st<lb/> Cir.), cert. denied, 421 U.S. 1004 (1975); </bibl>
+          <bibl>In re Airport Car Rental Antitrust Litig., 474 F. Supp.<lb/> 1072 (N.D. Cal. 1979), rev'don reassignment, 1981-1 Trade Cas. (CCH) 63,983 (N.D. Cal. Apr.<lb/> 16, 1981); </bibl>
+          <bibl>Dolan &amp; Ralston, supra note 3, at 774-76.<lb/> </bibl>
+          <bibl><label>142</label>. Compare Virginia State Bd. of Pharmacy v. Virginia Citizens Consumer Council, Inc.,<lb/> 425 U.S. 748 (1976) with George R. Whitten, Jr., Inc. v. Paddock Pool Builders, Inc., 424 F.2d 25<lb/> (lst Cir.), cert. denied, 400 U.S. 850 (1970).<lb/> </bibl>
+          <bibl><label>143</label>. Central Hudson Gas &amp; Elect. Corp. v. Public Serv. Comm'n, 447 U.S. 557, 562-63<lb/> (1980).<lb/> </bibl>
+          <bibl><label>144</label>. Id at 564.<lb/> </bibl>
+          
+          <bibl><label>145</label>. Id<lb/> </bibl>
+          <bibl><label>146</label>. See In re Airport Car Rental Antitrust Litig., 474 F. Supp. 1072 (N.D. Cal. 1979), rev'd<lb/> on reassignment 1981-1 Trade Cas. (CCH) 63,983 (N.D. Cal. Apr. 16, 1981).<lb/> </bibl>
+          
+          <bibl><label>147</label>. Cf. Stone, supra note 48, at 28-35 (on the need for complex adjustments in decisions that<lb/> impose liability on corporate agents for enterprise misconduct).<lb/> </bibl>
+          <bibl><label>148</label>. See infra text accompanying notes 301-31.<lb/> </bibl>
+          <bibl><label>149</label>. See infra text accompanying notes 269-300.<lb/> </bibl>
+          <bibl><label>150</label>. See generally Kissam, Applying Antitrust Law to Medical Credentialing, 7 AM. J. L. &amp;<lb/> MED. 1, 12-22 (1981); </bibl>
+          <bibl>Kissam, The First Amendment, supra note 16, at 156-66.<lb/> </bibl>
+          <bibl><label>151</label>. Sections I and 2 of the Sherman Act prohibit restraints of trade and monopolizing be-<lb/>havior that affect "trade or commerce among the several states, or with foreign nations." 15<lb/> U.S.C. § § 1, 2 (1976). Similarly, section 5 of the Federal Trade Commission Act prohibits unfair<lb/> methods of competition "in or affecting... commerce among the several states or with foreign<lb/> nations." 15 U.S.C. § § 44, 45(a)(1) (1976). These acts are the federal antitrust laws that are most<lb/> likely to be applied to hospital privilege decisions. The Clayton and Robinson-Patman Acts deal<lb/> only with specific kinds of anticompetitive behavior, and in any event, the interstate commerce<lb/> test for the application of these laws is narrower than the interstate commerce test under the<lb/> Sherman and Federal Trade Commission Acts. See L. SULLIVAN, HANDBOOK OF THE LAW OF<lb/> ANTITRUST § 233 (1977).<lb/> </bibl>
+          <bibl><label>152</label>. Las Vegas Merchant Plumbers Ass'n v. United States, 210 F.2d 732, 739 n.3 (9th Cir.),<lb/> cert. denied, 348 U.S. 817 (1954).<lb/> </bibl>
+          
+          <bibl><label>153</label>. United States v. Women's Sportswear Mfrs. Ass'n, 336 U.S. 460, 464 (1949).<lb/> </bibl>
+          <bibl><label>154</label>. Wolf v. Jane Phillips Episcopal-Memorial Medical Center, 513 F.2d 684, 686 (10th Cir.<lb/> 1975).<lb/> </bibl>
+          <bibl><label>155</label>. Id; </bibl>
+          <bibl>see United States v. Oregon State Medical Soe'y, 343 U.S. 326, 337-39 (1952); </bibl>
+          <bibl>Rig-<lb/>gall v. Washington County Medical Soe'y, 249 F.2d 266, 268 (8th Cir. 1957), cert. denied, 355 U.S.<lb/> 954 (1958); </bibl>
+          <bibl>Spears Free Clinic and Hosp. for Poor Children v. Cleere, 197 F.2d 125, 126 (10th Cir.<lb/> 1952); </bibl>
+          <bibl>Elizabeth Hosp., Inc. v. Richardson, 167 F. Supp. 155, 160 (W.D. Ark. 1958), a 'd, 269 F.2d<lb/> 167 (8th Cir.), cert. denied, 361 U.S. 884 (1959). </bibl>
+          <bibl>But see Doctors, Inc. v. Blue Cross, 490 F.2d 48<lb/> (3d Cir. 1973).<lb/> </bibl>
+          <bibl><label>156</label>. Eg., Burke v. Ford, 389 U.S. 320, 322 (1967); </bibl>
+          <bibl>United States v. Women's Sportswear<lb/> Mfrs. Ass'n, 336 U.S. 460, 464 (1949); </bibl>
+          <bibl>see Note, The MedicalProfession and the Sherman Act: Wolf<lb/> v. Jane Phillips Episcopal-Memorial Medical Center, 1976 UTAH L. REV. 196, 200-02.<lb/> </bibl>
+          <bibl><label>157</label>. 425 U.S. 738 (1976).<lb/> </bibl>
+          
+          <bibl><label>158</label>. Id at 741.<lb/> </bibl>
+          <bibl><label>159</label>. Id at 744.<lb/> </bibl>
+          <bibl><label>160</label>. See, e.g., S. LAW, BLUE CROSS: WHAT WENT WRONG? 31-58 (1976).<lb/> </bibl>
+          <bibl><label>161</label>. See Havighurst, supra note 23, at 780-81.<lb/> </bibl>
+          
+          <bibl><label>162</label>. 430 F. Supp. 875 (E.D. Mich. 1977).<lb/> </bibl>
+          <bibl><label>163</label>. Id at 877.<lb/> </bibl>
+          <bibl><label>164</label>. 456 F. Supp. 1000 (W.D. Pa. 1978), subsequent decision after trial, 521 F. Supp. 842<lb/> (W.D. Pa. 1981).<lb/> </bibl>
+          <bibl><label>165</label>. Id at 1005.<lb/> </bibl>
+          <bibl><label>166</label>. Moles v. Morton F. Plant Hosp., Inc., 617 F.2d 293 (5th Cir. 1980), cert. denied, 449 U.S.<lb/> 919 (1980); </bibl>
+          <bibl>Capili v. Shott, 620 F.2d 439 (4th Cir. 1980).<lb/> </bibl>
+          <bibl><label>167</label>. Crane v. Intermountain Health Care, 637 F.2d 715 (10th Cir. 1981). Accord Mishler v.<lb/> St. Anthony's Hosp. Sys., 1981-82 Trade Cas. (CCH) 64,342 (10th Cir. Nov. 2, 1981); McDonald<lb/> v. St. Joseph's Hosp. of Atlanta, 524 F. Supp. 122 (N.D. Ga. 1981); Malini v. Singleton &amp; Assocs.,<lb/> 516 F. Supp. 440 (S.D. Tex. 1981); </bibl>
+          <bibl>Feldman v. Jackson Memorial Hosp., 509 F. Supp. 815 (S.D.<lb/> Fla. 1981); </bibl>
+          <bibl>Denver v. Santa Barbara Comm. Dialysis Center, 1981-1 Trade Cas. (CCH) 1 63,946<lb/> (C.D. Cal. Feb. 26, 1981).<lb/> </bibl>
+          
+          <bibl><label>168</label>. Crane v. Intermountain Health Care, Inc., 1980-1 Trade Cas. (CCH) 1 63,122 (10th Cir.<lb/> Jan. 8, 1980), rev'd on rehearing en banc, 637 F.2d 715 (1981).<lb/> </bibl>
+          <bibl><label>169</label>. 444 U.S. 232 (1980).<lb/> </bibl>
+          <bibl><label>170</label>. Id at 242, 246.<lb/> </bibl>
+          <bibl><label>171</label>. Id at 244-45.<lb/> </bibl>
+          <bibl><label>172</label>. See id at 246.<lb/> </bibl>
+          <bibl><label>173</label>. See Western Waste Serv. v. Universal Waste Control, 616 F.2d 1094, 1097 (9th Cir.),<lb/> cert. denied, 449 U.S. 869 (1980); </bibl>
+          <bibl>Feldman v. Jackson Memorial Hosp., 509 F. Supp. 815, 819-21<lb/> (S.D. Fla. 1981).<lb/> </bibl>
+          
+          <bibl><label>174</label>. Crane v. Intermountain Health Care, 637 F.2d 715 (10th Cir. 1981); </bibl>
+          <bibl>Malini v. Singleton<lb/> &amp; Assocs., 516 F. Supp. 440 (S.D. Tex. 1981).<lb/> </bibl>
+          <bibl><label>175</label>. See Crane v. Intermountain Health Care, 637 F.2d 715 (10th Cir. 1981). </bibl>
+          <bibl>But cf. infra text<lb/> accompanying notes 177-78 (a proposal to abolish the interstate commerce test in antitrust law,<lb/> which the broad reading of McLain would accomplish implicitly).<lb/> </bibl>
+          <bibl><label>176</label>. See P. AREEDA &amp; D. TURNER, ANTITRUST LAW 232 (1978).<lb/> </bibl>
+          <bibl><label>177</label>. See id<lb/> 232e.<lb/> </bibl>
+          <bibl><label>178</label>. Id<lb/> </bibl>
+          <bibl><label>179</label>. See L. TRIBE, AMERICAN CONSTITrrIONAL LAW § 5-8 (1978). </bibl>
+          <bibl>See also Dworkin, Hard<lb/> Cases, 88 HARV. L. REv. 1057, 1085-87 (1975), reprinted in R. DWORKIN, TAKING RIGHTS SERI-<lb/>OUSLY 81, 107-09 (1977).<lb/> </bibl>
+          
+          <bibl><label>180</label>. See, e.g., Doctors, Inc. v. Blue Cross, 490 F.2d 48, 53-54 (3d Cir. 1973).<lb/> </bibl>
+          <bibl><label>181</label>. United States v. Southeastern Underwriters Ass'n, 322 U.S. 533, 558 (1944).<lb/> </bibl>
+          <bibl><label>182</label>. Id<lb/> </bibl>
+          <bibl><label>183</label>. The Supreme Court relied upon the idea that the Sherman Act had been extended to its<lb/> "utmost extent" in the recent McLain decision on the interstate commerce issue. See McLain v.<lb/> Real Estate Bd., 444 U.S. 232, 241 (1980). </bibl>
+          <bibl>This reliance was not necessary for the decision, how-<lb/>ever, and the better reading of the Court's use of this concept in interstate commerce cases is to<lb/> view this reference merely as support for the judicial broadening of Sherman Act jurisdiction<lb/> "along with expanding notions of congressional power," Hospital Bldg. Co. v. Trustees of Rex<lb/> Hosp., 425 U.S. 738, 743 n.2 (1976), rather than as a holding that Sherman Act jurisdiction is<lb/> identical to the commerce power. The Supreme Court precedents on the interstate commerce<lb/> issue thus continue to leave room for employment of the federalism principle.<lb/> </bibl>
+          <bibl><label>184</label>. For a good discussion of the judicial weighing of competing legal principles, see Dwor-<lb/>kin, The Model ofRules, 35 U. CHI. L. REv. 14 (1967), reprinted in R. DWOIusN, rupra note 179,<lb/> at 14.<lb/> </bibl>
+          <bibl><label>185</label>. See, e.g., Perez v. United States, 402 U.S. 146 (1971).<lb/> </bibl>
+          
+          <bibl><label>186</label>. See, e.g., Raymond Motor Transp., Inc. v. Rice, 434 U.S. 429 (1978).<lb/> </bibl>
+          <bibl><label>187</label>. See supra text accompanying notes 179-83.<lb/> </bibl>
+          <bibl><label>188</label>. See supra text accompanying notes 163-64.<lb/> </bibl>
+          <bibl><label>189</label>. In addition, the personal right to interstate travel is implicated by this type of privilege<lb/> decision. On the nature of this right, see Shapiro v. Thompson, 394 U.S. 618 (1969).<lb/> </bibl>
+          <bibl><label>190</label>. In Rex Hospital, a nonprofit hospital and major provider of health services in Raleigh,<lb/> North Carolina, was alleged to have conspired with other members of the local health planning<lb/> agency to block the expansion of a profit-making hospital that was managed and financed by out-<lb/>of-state companies. Since nonprofit hospitals traditionally have been established and supported<lb/> by leaders in the local community, and also have been extremely wary of price competition from<lb/> profit-making hospitals, which frequently are operated by interstate corporations, the implication<lb/> of "local protectionism" in this case seems relatively clear. </bibl>
+          <bibl>Similarly, in McLain, the Court could<lb/> discover a sufficient nexus between the alleged price fixing by real estate brokers in New Orleans<lb/> and interstate commerce because of out-of-state home purchasers and out-of-state mortgage<lb/> money which might be adversely affected by the higher purchase prices from such price fixing in a<lb/> major metropolitan community.<lb/> </bibl>
+          
+          <bibl><label>191</label>. See supra text accompanying notes 162-63.<lb/> </bibl>
+          
+          <bibl type="footnote"><label>192</label>. Examples of this latter type of privilege decision would include bylaws that restrict use of<lb/> hospital radiological equipment to radiologists and similar bylaws respecting pathologists.<lb/> </bibl>
+          
+          <bibl><label>193</label>. See Feminist Women's Health Center v. Mohammad, 586 F.2d 530, 539-41 (5th Cir.<lb/> 1978) (interstate commerce affected by an alleged boycott against an ambulatory abortion clinic),<lb/> cert. denied, 444 U.S. 924 (1979).<lb/> </bibl>
+          <bibl><label>194</label>. See Kissam, supra note 13, at 502.<lb/> </bibl>
+          <bibl><label>195</label>. See L. SULLIVAN, supra note 151, § 233a n.12.<lb/> </bibl>
+          
+          <bibl><label>196</label>. 456 F. Supp. 1000 (W.D. Pa. 1978).<lb/> </bibl>
+          <bibl><label>197</label>. See supra text accompanying notes 184-89.<lb/> </bibl>
+          
+          <bibl><label>198</label>. See supra text accompanying notes 34-37.<lb/> </bibl>
+          <bibl><label>199</label>. See Theatre Enters. v. Paramount Film Distrib. Corp., 346 U.S. 537, 541-42 (1954); In-<lb/>terstate Circuit v. United States, 306 U.S. 208, 221 (1939).<lb/> </bibl>
+          <bibl><label>200</label>. See Robinson v. Magovern, 521 F. Supp. 842, 906-07 (W.D. Pa. 1981); </bibl>
+          <bibl>Moles v. Morton<lb/> F. Plant Hosp., 1980-81 Trade Cas. (CCH) 1 63,600, at 77,188-90 (M.D. Fla. May 10, 1978), a'd,<lb/> 617 F.2d 293 (5th Cir.), cert. denied, 449 U.S. 919 (1980). </bibl>
+          <bibl>See generally L. SULLIVAN, supra note<lb/> 151, § 114.<lb/> </bibl>
+          <bibl><label>201</label>. See supra text accompanying notes 43-46.<lb/> </bibl>
+          <bibl><label>202</label>. See Harron v. United Hosp. Center, 522 F.2d 1133 (4th Cir. 1975), cert. denied, 424 U.S.<lb/> 916 (1976); </bibl>
+          <bibl>Robbins v. Ong, 452 F. Supp. 110, 116 (S.D. Ga. 1978); </bibl>
+          <bibl>Moles v. Morton F. Plant<lb/> Hosp., 1980-81 Trade Cas. (CCH) T 63,600 (M.D. Fla. May 10, 1978), a 'd, 617 F.2d 293 (5th<lb/> Cir.), cert. denied, 449 U.S. 919 (1980); </bibl>
+          <bibl>Pollock v. Methodist Hosp., 392 F. Supp. 393, 398 (E.D.<lb/> La. 1975). </bibl>
+          <bibl>These cases involved the denial of privileges to physicians either because of the physi-<lb/>cians' personal incompetence or because of an exclusive privileges contract with other physicians<lb/> in a hospital-based specialty. These are the paradigm situations of an employer hospital privilege<lb/> decision. See infra text accompanying notes 332-70.<lb/> </bibl>
+          
+          <bibl><label>203</label>. But cf. Hayden v. Stanford Univ. Hosp., No. P32039 (Cal. Super. Nov. 8, 1977), discussed<lb/> in Rich, supra note 3, at 678-79 (ordering that a radiologist be given privileges at a teaching<lb/> hospital and concluding that the hospital "may still close its staff in the appropriate circumstances,<lb/> but not without limitation").<lb/> </bibl>
+          <bibl><label>204</label>. See Pollock v. Methodist Hosp., 392 F. Supp. 393, 398 (E.D. La. 1975).<lb/> </bibl>
+          <bibl><label>205</label>. Cf. Robinson v. Magovem, 521 F. Supp. 842 (W.D. Pa. 1981) (denial of privileges for<lb/> failure to meet hospital's criteria upheld as reasonable, without need to address the agreement<lb/> issue).<lb/> </bibl>
+          <bibl><label>206</label>. See supra text accompanying notes 67-75.<lb/> </bibl>
+          <bibl><label>207</label>. L. SULLIVAN, supra note 150, § 114.<lb/> </bibl>
+          <bibl><label>208</label>. See supra text accompanying notes 42-48.<lb/> </bibl>
+          
+          <bibl><label>209</label>. See Robinson v. Magovern, 521 F. Supp. at 907 (personal stake of physicians in outcome<lb/> of a privileges decision may be sufficient to overcome intraenterprise conspiracy defense).<lb/> </bibl>
+          <bibl><label>210</label>. Eg., Poller v. Columbia Broadcasting Sys., 368 U.S. 464, 469-70 (1962); </bibl>
+          <bibl>Brehm v. Goe-<lb/>bel Brewing Co., 1953 Trade Cas. (CCH) 67,431 (W.D. Mich. 1953).<lb/> </bibl>
+          <bibl><label>211</label>. See infra text accompanying notes 269-300.<lb/> </bibl>
+          <bibl><label>212</label>. See supra Part H.<lb/> </bibl>
+          <bibl><label>213</label>. See supra text accompanying notes 51-57.<lb/> </bibl>
+          <bibl><label>214</label>. See supra text accompanying notes 58-62.<lb/> </bibl>
+          <bibl><label>215</label>. See supra text accompanying notes 43-46.<lb/> </bibl>
+          
+          <bibl><label>216</label>. Cf. O'Keeffe v. Smith, Hinchman &amp; Grylls Assocs., 380 U.S. 359 (1965); </bibl>
+          <bibl>O'Leary v.<lb/> Brown-Pacific-Maxon, 340 U.S. 504 (1951); </bibl>
+          <bibl>Universal Camera Corp. v. NLRB, 340 U.S. 474<lb/> (1951) (reviewing courts should uphold administrative agency determinations if they are based on<lb/> substantial evidence or have a rational basis).<lb/> </bibl>
+          <bibl><label>217</label>. In joint venture situations, where the hospital and medical staff may have different inter-<lb/>ests in the privilege decision, see supra text accompanying note 71, a hospital might argue that its<lb/> decision to deny privileges in light of the medical staff's similar recommendation is merely an<lb/> example of "conscious parallelism" that is not enough to establish the fact of agreement. See<lb/> Theatre Enters. v. Paramount Film Distrib. Corp., 346 U.S. 537, 540-41 (1954). </bibl>
+          <bibl>This argument is<lb/> unpersuasive in view of the "other factors" that are likely to be present, including the JCAH<lb/> standards and specific hospital bylaws that provide for coordination of privilege decision-making<lb/> by the hospital board and medical staff. See supra text accompanying notes 212-16.<lb/> </bibl>
+          <bibl><label>218</label>. On the identity of medical training for osteopathic and allopathic physicians, and on<lb/> patterns of exclusion of osteopaths from allopathic hospitals, see Blackstone, supra note 22, at 408-<lb/>14. </bibl>
+          <bibl>To be sure, osteopaths tend to be oriented toward general practice rather than specialization,<lb/> and in general osteopaths receive somewhat shorter, less expensive, and less specialized training<lb/> than today's highly specialized allopathic physicians. Id at 408-10. </bibl>
+          <bibl>This may justify limitations<lb/> on the privileges of osteopaths that are similar to limitations imposed upon general practice M.D.s<lb/> and family practitioners, but it would not seem to justify the total exclusion of osteopaths, particu-<lb/>larly when they are licensed in many states to perform the same medical services as allopathic<lb/> physicians. See id at 411.<lb/> </bibl>
+          <bibl><label>219</label>. See, ag., Florida Medical Group Faces Charges of Boycotting Doctors Workingfor HMO,<lb/> ANTITRUST &amp; TRADE REG. RP. (BNA), A-16, -17 (Nov. 30, 1978) (Justice Department complaint<lb/> alleged that a county medical society publicly advocated the lack of need for an HMO in the<lb/> county, while at the same time the credentials committee of the county hospital was denying<lb/> privileges to physicians who contemplated affiliation with the HMO). </bibl>
+          <bibl>This case subsequently was<lb/> settled. United States v. Halifax Hosp. Medical Center, 1981-1 Trade Cas. (CCH) 64,151 (M.D.<lb/> Fla. June 24, 1981) (consent agreement).<lb/> </bibl>
+          
+          <bibl><label>220</label>. See generally Note, A Suggested Role for Rebuttable Presumptions in the Antitrust Re-<lb/>straint of Trade Litigation, 1972 DuKE L. J. 595, 605-24.<lb/> </bibl>
+          <bibl><label>221</label>. See Liebenluft &amp; Pollard, Antitrust Scrutiny of the Health Professions: Developing a<lb/> FrameworkforAssessingPrivate Restraints, 34 VAND. L. REV. 927, 945-50 (1981); </bibl>
+          <bibl>Note, supra note<lb/> 220, at 595-97.<lb/> </bibl>
+          <bibl><label>222</label>. See Note, supra note 220, at 605.<lb/> </bibl>
+          <bibl><label>223</label>. A second reason for the recognition of a rebuttable presumption is a need to place the<lb/> burden of producing evidence on parties who control the evidence. Id<lb/> </bibl>
+          <bibl><label>224</label>. See supra text accompanying notes 67-75.<lb/> </bibl>
+          
+          <bibl><label>225</label>. See supra note 3.<lb/> </bibl>
+          <bibl><label>226</label>. See United States v. Socony-Vacuum Oil Co., 310 U.S. 150 (1940); </bibl>
+          <bibl>United States v.<lb/> Trenton Potteries Co., 273 U.S. 392 (1927).<lb/> </bibl>
+          <bibl><label>227</label>. See United States v. General Motors Corp. 384 U.S. 127 (1966); Silver v. New York<lb/> Stock Exch., 373 U.S. 341 (1963); </bibl>
+          <bibl>Radiant Burners Inc. v. Peoples Gas, Light &amp; Coke Co., 364<lb/> U.S. 656 (1961); </bibl>
+          <bibl>Klor's v. Broadway-Hale Stores, 359 U.S. 207 (1959); </bibl>
+          <bibl>Eastern States Retail Lum-<lb/>ber Dealers' Ass'n v. United States, 234 U.S. 600 (1914).<lb/> </bibl>
+          <bibl><label>228</label>. See United States Steel Corp., v. Fortner Enters., 429 U.S. 610 (1977); </bibl>
+          <bibl>Northern Pac. Ry.<lb/> Co. v. United States, 356 U.S. 1 (1958).<lb/> </bibl>
+          <bibl><label>229</label>. 421 U.S. at 788 n.17.<lb/> </bibl>
+          
+          <bibl><label>230</label>. 435 U.S. at 696.<lb/> </bibl>
+          <bibl><label>231</label>. See supra text accompanying notes 76-103.<lb/> </bibl>
+          
+          <bibl><label>232</label>. Veizaga v. National Bd. for Respiratory Therapy, 1977-1 Trade Cas. (CCH) 61,274<lb/> (N.D. Ill. 1977).<lb/> </bibl>
+          <bibl><label>233</label>. Boddicker v. Arizona State Dental Ass'n, 549 F.2d 626 (9th Cir.), cert. denied, 434 U.S.<lb/> 825 (1977); </bibl>
+          <bibl>Bauer, Professional4ctivities and the Antitrust Laws, 50 NOTRE DAME LAW. 570, 584-<lb/>92 (1975); </bibl>
+          <bibl>Note, The Professions and Noncommercial Purposes, supra note 83.<lb/> </bibl>
+          <bibl><label>234</label>. NoteAntitrust andNonprofit Entities, 94 HARV. L. REv. 802 (1981). </bibl>
+          <bibl>See also Liebenluft<lb/> &amp; Pollard, supra note 221 (professional behavior that would be subject to per se condemnation in<lb/> other industries should be only presumptively illegal in order to allow procompetitive professional<lb/> self-regulation for which there is no less restrictive alternative).<lb/> </bibl>
+          <bibl><label>235</label>. 373 U.S. 341 (1963).<lb/> </bibl>
+          <bibl><label>236</label>. See 421 U.S. at 780-83. The Court referred to the defendant's activities as "a classic<lb/> illustration of price fixing," id at 783, but the defendants did not put forward any affirmative<lb/> justification for this price-fixing and thus the full test of the per se rule (the refusal to consider<lb/> affirmative justifications) was not satisfied in this case.<lb/> </bibl>
+          <bibl><label>237</label>. 421 U.S. at 788 n.17.<lb/> </bibl>
+          <bibl><label>238</label>. United States v. National Soe'y of Professional Eng'rs, 389 F. Supp. 1193, 1199-200<lb/> (D.D.C. 1974), aj/'d, 555 F.2d 978, 981-84 (D.C. Cir. 1977), aft'd, 435 U.S. 679 (1978).<lb/> </bibl>
+          <bibl><label>239</label>. Arizona v. Maricopa County Medical Soe'y, 643 F.2d 553, 564-65 (9th Cir. 1980) (dis-<lb/>senting opinion), cert. granted, 450 U.S. 979 (1981). </bibl>
+          <bibl>In Professional Engineers the Supreme Court<lb/> appeared to hold that the professional society's ban on competitive bidding was illegal "[on its<lb/> face," 435 U.S. at 692-93, a clear reference to antitrust's per se rule against price fixing. On the<lb/> other hand, some uncertainty about the application of this per se rule to professional behavior<lb/> may remain because the Court went on to conclude that the professional society's affirmative<lb/> defense (that price competition would harm the quality of engineering services) "confirms rather<lb/> than refutes the anticompetitive purpose and effect of its agreement." Id at 693. </bibl>
+          <bibl>As Judge Larson<lb/> noted in his dissenting opinion in Maricopa County, this brief look at purpose and effect may<lb/> constitute something of a "truncated rule of reason" approach rather than a straightforward appli-<lb/>cation of the per se rule. 643 F.2d at 563.<lb/> Commentators differ on whether Professional Engineers applied a Rule of Reason or a per se<lb/> approach. The basic issue in Professional Engineers was whether the professional society should<lb/> have the opportunity to advance its affirmative defense that price competition would harm the<lb/> quality of engineering services. On this issue, the Court held that antitrust's Rule of Reason did<lb/> not allow recognition of the defense that competition itself was unreasonable. 435 U.S. at 692-96.<lb/> If this reference to the Rule of Reason is a reference to the paradigm of all antitrust reasoning, as<lb/> we believe, see supra note 3, then this holding would be consistent with the subsequent application<lb/> of a per se rule that merely represents one kind of analysis under the Rule of Reason. </bibl>
+          <bibl>Accord<lb/> Havighurst, supra note 13, at 348 n.194; </bibl>
+          <bibl>Kissam, supra note 16, at 149-50; </bibl>
+          <bibl>see supra note 3. </bibl>
+          <bibl>On the<lb/> other hand, if the Court's reference to the Rule of Reason was meant to indicate that the Court<lb/> was applying antitrust's alternative approach to per se analysis, as -others seem to believe, see<lb/> Liebenluft &amp; Pollard, supra note 221, at 938 n.64; </bibl>
+          <bibl>Sullivan &amp; Wiley, Recent Antitrust Develop-<lb/>ments: Dqyning the Scope oExemptions, Expanding Coverage, andReFning the Rule ofReason, 27<lb/> U.C.L.A. L. REv. 265, 322-25 (1979), then the Court in ProfessionalEngineers was perhaps avoid-<lb/>ing the application of per se analysis to professional behavior.<lb/> </bibl>
+          
+          <bibl><label>240</label>. See Arizona v. Maricopa County Medical Soc'y, 643 F.2d 553, 564-65 (9th Cir. 1980)<lb/> (dissenting opinion), cert. granted, 450 U.S. 979 (1981). </bibl>
+          <bibl>The justification for this prediction is that<lb/> any affirmative defense of price fixing behavior will necessarily involve some claim that price<lb/> competition is unreasonable. See P. AREEDA, supra note 100, 11306-11 (discussing possible social<lb/> justifications for price fixing by competitors). </bibl>
+          <bibl>In Professional Engineers, the Court was very clear<lb/> that this type of claim is untenable under the antitrust laws. See 435 U.S. at 692-96.<lb/> </bibl>
+          <bibl><label>241</label>. 435 U.S. at 696.<lb/> </bibl>
+          <bibl><label>242</label>. Id at 687-92.<lb/> </bibl>
+          
+          <bibl><label>243</label>. Id at 696.<lb/> </bibl>
+          <bibl><label>244</label>. See id, especially n.22.<lb/> </bibl>
+          <bibl><label>245</label>. Id at 690-92.<lb/> </bibl>
+          <bibl><label>246</label>. See Elzinga, The Compass of Competition for Professional Services, in R. BLAIR &amp; S.<lb/> RUBIN, REGULATING THE PROFESSIONS 107 (1980).<lb/> </bibl>
+          <bibl><label>247</label>. See Robinson v. Magovem, 521 F. Supp. 842 (W.D. Pa. 1981).<lb/> </bibl>
+          
+          <bibl><label>248</label>. For other instances in which antitrust courts have displayed such "fact sensitivity," see<lb/> Broadcast Music v. Columbia Broadcasting Sys., 441 U.S. 1 (1979) (per se rule against price-fixing<lb/> not applicable to an apparently unique market in the licensing of copyrighted material to broad-<lb/>casters); White Motor Co. v. United States, 372 U.S. 253 (1963) (application of per se rule to a new<lb/> fact situation should not be established on a motion for summary judgment); </bibl>
+          <bibl>United States v.<lb/> Jerrold Elec. Corp., 187 F. Supp. 545 (E.D. Pa. 1960), a f'der curiam, 365 U.S. 567 (1961) (recog-<lb/>nizing "infant industry" exception to the per se rule against tie-in sales).<lb/> </bibl>
+          <bibl><label>249</label>. 373 U.S. at 348-49 (emphasis added).<lb/> </bibl>
+          <bibl><label>250</label>. See Hatley v. American Quarter Horse Ass'n, 552 F.2d 646, 651-54 (5th Cir. 1977);<lb/> </bibl>
+          <bibl>United States Trotting Ass'n v. Chicago Downs Ass'n, Inc., 487 F. Supp. 1008, 1014-16 (N.D. Ill.<lb/> 1980); </bibl>
+          <bibl>McCreery Angus Farms v. American Angus Ass'n, 379 F. Supp. 1008, 1018 (S.D. Ill.), aft'd,<lb/> 506 F.2d 1404 (7th Cir. 1974); </bibl>
+          <bibl>Denver Rockets v. All-Pro Management, Inc., 325 F. Supp. 1049,<lb/> 1064-65 (C.D. Cal. 1971). </bibl>
+          <bibl>See also Bird, Sherman 4ct Limitations on Noncommercial Concerted<lb/> Refusals to Deal, 1970 DuKE LJ. 247, 288-292; </bibl>
+          <bibl>Note, The Professions and Noncommercial Pur-<lb/>poses, supra note 83.<lb/> </bibl>
+          <bibl><label>251</label>. See, e.g., Arizona v. Maricopa County Medical Soc'y, 643 F.2d 553 (9th Cir. 1980) (rule<lb/> of reason approach should be applied to maximum price fixing by physicians), cert. granted, 450<lb/> U.S. 979 (1981). </bibl>
+          <bibl>Boddicker v. Arizona State Dental Ass'n, 549 F.2d 626 (9th Cir.), cert. denied,<lb/> 434 U.S. 825 (1977) (Rule of Reason approach should be used to analyze an alleged tie-in by<lb/> professionals); Veizaga v. National Bd. for Respiratory Therapy, 1977-1 Trade Cas. (CCH)<lb/> 61,274 (per se rules should only apply to "commercial" professional behavior); </bibl>
+          <bibl>Feminist Women's<lb/> Health Center, Inc. v. Mohammad, 415 F. Supp. 1258 (N.D. Fla. 1976) (recognizing a "good<lb/> faith" defense to the claim of a per se illegal boycott), rev'd on other grounds, 586 F.2d 530 (5th<lb/> Cir. 1978), cert. denied, 444 U.S. 924 (1979).<lb/> </bibl>
+          <bibl><label>252</label>. See supra text accompanying notes 229-34.<lb/> </bibl>
+          
+          <bibl><label>253</label>. See, eg., Mackey v. National Football League, 543 F.2d 606 (8th Cir. 1976); </bibl>
+          <bibl>Note, The<lb/> Professions and Noncommercial Purposes, supra note 83, at 397 n.32.<lb/> </bibl>
+          <bibl><label>254</label>. See L. SULLIVAN, supra note 151, § § 86-88.<lb/> </bibl>
+          <bibl><label>255</label>. Seesupranote2l.<lb/> </bibl>
+          <bibl><label>256</label>. For example, the JCAH accreditation requirement of procedural due process is a very<lb/> general one. It fails to provide for the rights to confront adverse evidence and cross-examine<lb/> adverse witnesses and only notes the possibility of "the role, if any, of legal counsel." It also fails<lb/> to speak to the question of providing an impartial decisionmaker. See JCAH MANUAL, supra<lb/> note I, at 92. </bibl>
+          <bibl>These rights may be particularly crucial in view of the possible bias of medical staff<lb/> members in general, see supra Part H, </bibl>
+          <bibl>as well as the obvious importance of the chief of service in<lb/> any decision to deny privileges, see JCAH MANUAL, supra note 1, at 83. </bibl>
+          <bibl>In addition, the JCAH<lb/> does not expect full compliance with all standards and guidelines by accredited hospitals, Id at<lb/> xvii, and therefore violations of this due process standard will not necessarily be sanctioned by the<lb/> JCAH.<lb/> </bibl>
+          <bibl><label>257</label>. 15 U.S.C. § 15 (1976).<lb/> </bibl>
+          
+          <bibl><label>258</label>. 373 U.S. at 361-63.<lb/> </bibl>
+          <bibl><label>259</label>. Cf. Board of Curators of Univ. of Missouri v. Horowitz, 435 U.S. 78 (1978) (a medical<lb/> school's informal and ex parte procedures for excluding a medical student on academic grounds<lb/> satisfy the due process requirement of the United States Constitution). On the need to balance<lb/> interests of the decisionmaking organization against the needs of an applicant for a particular kind<lb/> of hearing in determining due process as a constitutional matter, see id; </bibl>
+          <bibl>Mathews v. Eldridge, 424<lb/> U.S. 319 (1976); </bibl>
+          <bibl>see also Cray, supra note 21, at 246-49 (balancing the interests of the hospital<lb/> against those of privilege applicants as a constitutional matter).<lb/> </bibl>
+          <bibl><label>260</label>. U.S. CONsT. amend. XIV, § 1. For discussion of hospital privilege cases decided under<lb/> this provision, see Cray, supra note 21; </bibl><bibl>McCall, supra note 21, at 188-95.<lb/> </bibl>
+          <bibl><label>261</label>. 614 F.2d 946 (5th Cir. 1980).<lb/> </bibl>
+          
+          <bibl><label>262</label>. Id at 951.<lb/> </bibl>
+          <bibl><label>263</label>. See supra note 256.<lb/> </bibl>
+          <bibl><label>264</label>. Cf. Gunther, Foreword-In Search ofEvolving Doctrine on a Changing Court.A Model/or<lb/> a Newer Equal Protection, 86 HAv. L. REV. 1 (1972) (courts should not question the particular<lb/> ends of government on economic and social policy issues).<lb/> </bibl>
+          <bibl><label>265</label>. See, eg., Robbins v. Ong, 452 F. Supp. 110 (S.D. Ga. 1978); Sosa v. Board of Managers,<lb/> 437 F.2d 173, 176-77 (5th Cir. 1971); </bibl>
+          <bibl>Miller v. Eisenhower Medical Center, 27 Cal. 3d 614, 614<lb/> P.2d 258, 166 Cal. Rptr. 826 (1980).<lb/> </bibl>
+          <bibl><label>266</label>. See Ludlam, Physician-HospitalRelations: The Role ofStaffPrivileges, 35 LAW &amp; CON-<lb/>TEMP. PRO s. 879, 885-88 (1970).<lb/> </bibl>
+          <bibl><label>267</label>. See, eg., Board of Curators of Univ. of Missouri v. Horowitz, 435 U.S. 78 (1978); </bibl>
+          <bibl>Shaw<lb/> v. Hosp. Auth., 614 F.2d 946 (5th Cir. 1980); Robbins v. Ong, 452 F. Supp. 110 (S.D. Ga. 1978);<lb/> Miller v. Eisenhower Medical Center, 27 Cal. 3d 614, 614 P.2d 258, 166 Cal. Rptr. 826 (1980).<lb/> </bibl>
+          
+          <bibl><label>268</label>. See supra text accompanying notes 67-75.<lb/> </bibl>
+          <bibl><label>269</label>. 317 U.S. 519 (1943).<lb/> </bibl>
+          <bibl><label>270</label>. See supra note 227 and accompanying text.<lb/> </bibl>
+          <bibl><label>271</label>. See supra text accompanying notes 229-54.<lb/> </bibl>
+          <bibl><label>272</label>. See, eg., Feminist Women's Health Center v. Mohammad, 586 F.2d 530 (5th Cir. 1978),<lb/> cert. denied, 444 U.S. 924 (1979).<lb/> </bibl>
+          
+          <bibl><label>273</label>. Fashion Originators' Guild of America v. FTC, 312 U.S. 457, 465-66 (1941).<lb/> </bibl>
+          <bibl><label>274</label>. See Kissam, supra note 13, at 504-08.<lb/> </bibl>
+          <bibl><label>275</label>. See Feminist Women's Health Center v. Mohammad, 415 F. Supp. 1258, 1265 (N.D.<lb/> Fla. 1976), rev'don other grounds, 586 F.2d 530 (5th Cir. 1978), cert. denied, 444 U.S. 924 (1979).<lb/> </bibl>
+          <bibl><label>276</label>. Cf. Doctors' Maximum Fee Agreements With Approved Insurers are Subject of Supreme<lb/> CourtArgument, ANTTrrusT &amp; TRADE REG. RaP. (BNA) No. 1038, at DD-2 (Nov. 5, 1981) (argu-<lb/>ment by the United States Solicitor General that antitrust courts should undertake a "preliminary<lb/> inquiry" or "quick look" to determine whether a price-fixing agreement, which appears to be per<lb/> se illegal on its face, may be an integral part of a "procompetitive" joint venture and thus deserv-<lb/>ing of further examination at trial under antitrust's Rule of Reason approach).<lb/> </bibl>
+          <bibl><label>277</label>. On the apparent prevalence of this type of exclusionary behavior, see Horan &amp; Nord,<lb/> supra note 5, at 701-02.<lb/> </bibl>
+          <bibl><label>278</label>. See id at 702; </bibl><bibl>infra text accompanying notes 332-70.<lb/> </bibl>
+          
+          <bibl><label>279</label>. One may doubt that the same number of physicians will enter a particular market when<lb/> a hospital only grants privileges to physicians who join existing partnerships of staff physicians.<lb/> Under this privilege system, the partnerships will have a veto over privilege applicants in their<lb/> specialty, and there is no reason to believe that medical partnerships will want to expand at an<lb/> optimal rate to meet market demand. Cf. Pauly &amp; Redisch, supra note 58 (physician: control over<lb/> hospital privileges may result in a suboptimal use of hospitals).<lb/> </bibl>
+          <bibl><label>280</label>. On the possibilities for price fixing by physicians who practice in the same local market,<lb/> see Havighurst &amp; Kissam, The Antitrust Implications of Relative Value Studies in Medicine, 4 J.<lb/> HEALTH POL., PoL'Y &amp; L. 48, 54-56, 63-65 (1979). </bibl>
+          <bibl>On collusive behavior by oligopolists in gen-<lb/>eral, see R. POSNER, supra note 3, at 39-77.<lb/> </bibl>
+          <bibl><label>281</label>. We owe this point to Stanley Wallack, Director of the Center for Health Policy and<lb/> Research at Brandeis University.<lb/> </bibl>
+          <bibl><label>282</label>. 326 U.S. 1 (1945).<lb/> </bibl>
+          <bibl><label>283</label>. Id at 12.<lb/> </bibl>
+          <bibl><label>284</label>. See id at 12-14.<lb/> </bibl>
+          <bibl><label>285</label>. See supra text accompanying notes 38-39.<lb/> </bibl>
+          <bibl><label>286</label>. For a recent case on point, see Tyson's Corner Regional Shopping Center, 85 F.T.C. 970<lb/> (1975) (a lease provision allowing a commercial tenant to veto any applicant for another tenancy<lb/> in the shopping center is per se illegal).<lb/> </bibl>
+          
+          <bibl><label>287</label>. See supra note 218 and accompanying text.<lb/> </bibl>
+          <bibl><label>288</label>. See Sanders, supra note 6.<lb/> </bibl>
+          <bibl><label>289</label>. Cf. American Medical Ass'n v. FTC, 638 F.2d 443 (2d Cir. 1980), a f'd by an equally<lb/> divided Court, 50 U.S.L.W. 4313 (U.S. Mar. 23, 1982) (the AMA's ethical rule against physician<lb/> advertising violates federal antitrust law).<lb/> </bibl>
+          <bibl><label>290</label>. Cf. In re Sherman A. Hope, M.D., 3 TRADE REG. REP. (CCH) T 21,791 (FTC consent<lb/> order, Aug. 5, 1981) (settlement of an FTC complaint that five doctors threatened to boycott a<lb/> Texas hospital for offering employment to a board certified obstetrician-gynecologist).<lb/> </bibl>
+          <bibl><label>291</label>. See supra note 219. </bibl>
+          <bibl>Attempts to control the number of physicians who serve a commu-<lb/>nity, like attempts to control the quality of medical care in the community at large, should be the<lb/> responsibility of public authorities rather than hospitals. See supra text accompanying notes 272-<lb/>73.<lb/> </bibl>
+          <bibl><label>292</label>. Cf. Ascherman v. St. Francis Memorial Hosp., 45 Cal. App. 3d 507, 119 Cal. Rptr. 507<lb/> (1st Dist. 1975) (requirement of three references from staff physicians is unreasonable and violates<lb/> the common law standards of fair procedure).<lb/> </bibl>
+          <bibl><label>293</label>. A case of this sort is discussed infra, text accompanying notes 396-99.<lb/> </bibl>
+          <bibl><label>294</label>. See generally THE NEw HAL.TH PRoFassIoNAI.s (A. Bliss &amp; E. Cohen eds. 1977); </bibl>
+          <bibl>Kis-<lb/>sam, supra note 69.<lb/> </bibl>
+          <bibl><label>295</label>. See Kissam, supra note 69, at 20-29, 31-34.<lb/> </bibl>
+          
+          <bibl><label>296</label>. On the issue of malpractice liability for nurse practitioners, see Note, A Revolution in<lb/> White-NewApproaches in Treating Nurses as Professionals, 30 VAND. L. Rnv. 839 855-79 (1977).<lb/> </bibl>
+          <bibl><label>297</label>. Cf. Sams v. Ohio Valley Gen. Hosp. Ass'n, 413 F.2d 826 (4th Cir. 1969) (hospital's re-<lb/>quirement that all medical staff members practice within county violates fourteenth amendment).<lb/> </bibl>
+          <bibl><label>298</label>. The leading group boycott cases are cited supra note 227. On the per se rule against<lb/> market division agreements, see United States v. Topco Assocs., Inc., 405 U.S. 596 (1972); United<lb/> States v. Associated Patents, Inc., 134 F. Supp. 74 (E.D. Mich. 1955), a f'dper curiam sub nor.<lb/> Mac Inv. Co. v. United States, 350 U.S. 960 (1956).<lb/> </bibl>
+          <bibl><label>299</label>. See Sams v. Ohio Valley Gen. Hosp. Ass'n, 413 F.2d 826, 830-32 (4th Cir. 1969) (dissent-<lb/>ing opinion).<lb/> </bibl>
+          <bibl><label>300</label>. This issue is discussed infra at text accompanying notes 330-31.<lb/> </bibl>
+          
+          <bibl><label>301</label>. See supra text accompanying notes 67-75.<lb/> </bibl>
+          <bibl><label>302</label>. The JCAH accreditation standards encourage the use of specialty board certification "as<lb/> an excellent benchmark to serve as a basis for privilege delineation." JCAH MANUAL, supra note<lb/> 1, at 84.<lb/> </bibl>
+          <bibl><label>303</label>. JCAH accreditation standards provide that hospitals "may" grant limited clinical privi-<lb/>leges to podiatrists, but these privileges are subject to consultation rules that include the require-<lb/>ment that podiatrists may admit and discharge patients only upon the concurrence of a physician.<lb/> </bibl>
+          <bibl>Id at 85. These standards also permit more limited kinds of privileges to be granted to "specified<lb/> professional personnel," who may only work under the "supervision or direction" of a physician<lb/> member of the medical staff who has "ultimate responsibility" for the patient. </bibl>
+          <bibl>Id at 86. These<lb/> latter kinds of privileges are presumably worthless for most independent allied health practition-<lb/>ers such as clinical psychologists or chiropractors.<lb/> </bibl>
+          <bibl><label>304</label>. The JCAH standards described supra note 303 appear to contemplate that physician<lb/> assistants and nurse practitioners who are supervised by physicians may work in hospitals that<lb/> desire to allow such practitioners.<lb/> </bibl>
+          <bibl><label>305</label>. On the use of privilege "moratoriums" to relieve overcrowding in hospitals, see Guerrero<lb/> v. Burlington County Memorial Hosp., 70 NJ. 344, 360 A.2d 334 (1976); </bibl>
+          <bibl>Walsky v. Pascack Val-<lb/>ley Hosp., 145 N.J. Super. 393, 367 A.2d 1204 (Ch. Div. 1976); Davis v. Morristown Memorial<lb/> Hosp., 106 N.J. Super. 33, 254 A.2d 125 (Ch. Div. 1969).<lb/> </bibl>
+          
+          <bibl><label>306</label>. See Pitofsky, Joint Ventures Under the Antitrust Laws: Some Refections on the Signo-<lb/>cance ofPenn-Olin, 82 HARv. L. REV. 1007, 1007 (1969).<lb/> </bibl>
+          <bibl><label>307</label>. See id at 1018.<lb/> </bibl>
+          <bibl><label>308</label>. Most measures of health care quality focus upon input and process characteristics rather<lb/> than health outcomes. See, e.g, Williams &amp; Brook, Quality Measurement andAssurance, HEALTH<lb/> &amp; MED. CARE SERV. REv., May-June 1978, at 1. Thus, even where hospital privilege denials are<lb/> based on professionally recognized standards of quality, there is likely to be a very significant<lb/> subjective element in the decision. </bibl>
+          <bibl>See also Dolan &amp; Ralston, supra note 3, at 728-31, 733-34.<lb/> </bibl>
+          <bibl><label>309</label>. See, e.g., Cooper, Attempts and Monopolization: A Mildly Expansionary Answer to the<lb/> Prophylactic Riddle ofSection Two, 72 MICH. L. REv. 373, 440-41 (1973).<lb/> </bibl>
+          <bibl><label>310</label>. See Kissam, supra note 16, at 146-56.<lb/> </bibl>
+          <bibl><label>311</label>. See Robinson v. Magovern, 521 F. Supp. 842, 904-13 (W.D. Pa. 1981); Dolan &amp; Ralston,<lb/> supra note 3, at 752-56. The leading cases that discuss this boycott theory are United States v.<lb/> General Motors Corp., 384 U.S. 127 (1966); </bibl>
+          <bibl>Radiant Burners v. Peoples Gas, Light &amp; Coke Co.,<lb/> 364 U.S. 656 (1961); </bibl>
+          <bibl>Kior's v. Broadway-Hale Stores, 359 U.S. 207 (1959).<lb/> </bibl>
+          <bibl><label>312</label>. See Robinson v. Magovern, supra note 311, at 842, 907-13.<lb/> </bibl>
+          
+          <bibl><label>313</label>. See supra text accompanying notes 269-300.<lb/> </bibl>
+          <bibl><label>314</label>. See Robinson v. Magovern, supra note 311, at 913; </bibl>
+          <bibl>Calvani &amp; James, supra note 3, at 81-<lb/>83; </bibl>
+          <bibl>Dolan &amp; Ralston, supra note 3, at 744-48. The leading case that would support this theory is<lb/> probably Hecht v. Pro-Football, 570 F.2d 982, 992-93 (D.C. Cir. 1977), cert. denied, 436 U.S. 956<lb/> (1978).<lb/> </bibl>
+          <bibl><label>315</label>. See Otter Tail Power v. United States, 410 U.S. 366, 377-78 (1973); </bibl>
+          <bibl>Hecht v. Pro-Foot-<lb/>ball, 570 F.2d 982, 988-92 (D.C. Cir. 1977), cert. denied, 436 U.S. 956 (1978); </bibl>
+          <bibl>Robinson v.<lb/> Magovern, 521 F. Supp. at 913.<lb/> </bibl>
+          <bibl><label>316</label>. See Otter Tail Power v. United States, 410 U.S. 366, 377-78 (1973); </bibl>
+          <bibl>Hecht v. Pro-Foot-<lb/>ball, 570 F.2d 982, 988-92 (D.C. Cir. 1977), cert. denied, 436 U.S. 956 (1978); </bibl>
+          <bibl>United States v.<lb/> Standard Oil Co., 362 F. Supp. 1331, 1341 (N.D. Cal. 1972), aft'd, 412 U.S. 924 (1973).<lb/> </bibl>
+          <bibl><label>317</label>. 224 U.S. 383 (1912).<lb/> </bibl>
+          <bibl><label>318</label>. Associated Press v. United States, 326 U.S. 1, 17 (1945).<lb/> </bibl>
+          
+          <bibl><label>319</label>. See supra note 307 and accompanying text.<lb/> </bibl>
+          <bibl><label>320</label>. See supra note 308.<lb/> </bibl>
+          <bibl><label>321</label>. See, eg., Structural Laminates, Inc. v. Douglas Fir Plywood Ass'n, 261 F. Supp. 154 (D.<lb/> Or. 1966), aft'd, 399 F.2d 155 (9th Cir. 1968), cert. denied, 393 U.S. 1024 (1969).<lb/> </bibl>
+          
+          <bibl><label>322</label>. The leading cases, Associated Press and Terminal Railroad Association, are discussed<lb/> supra in the text accompanying notes 301-02. </bibl>
+          <bibl>See also Gamco, Inc. v. Providence Fruit &amp; Pro-<lb/>duce Bldg., 194 F.2d 484, 488 (Ist Cir.), cert. denied, 344 U.S. 817 (1952) (the conjunction of<lb/> economic power and a motive to exclude, when the exclusion is not "justified by reasonable busi-<lb/>ness requirements, establishes a prima facie case of the purpose to monopolize"). Gamco uses § 2<lb/> analysis to condemn the exclusion of a tenant from a valuable commercial location, but the build-<lb/>ing was owned jointly by several of the tenant's competitors and Gamco may be viewed as a joint<lb/> venture case as well.<lb/> In addition, two courts of appeals have dealt with the exclusion of podiatrists and psycholo-<lb/>gists from 'Joint ventures" of physicians and hospitals. These decisions also suggest that a clear<lb/> anticompetitive purpose and substantial market power of the hospital may be required for anti-<lb/>trust condemnation ofjoint venture privilege decisions. </bibl>
+          <bibl>In Levin v. Joint Comm'n on Accred. of<lb/> Hosps., 345 F.2d 515 (D.C. Cir. 1965), a podiatrist claimed that the JCAH and a hospital had<lb/> conspired to deprive him of clinical privileges at the hospital. The District of Columbia Court of<lb/> Appeals reversed the district court's summary judgment for the hospital, but it did so on the<lb/> ground that summary procedures are to be used sparingly in complex antitrust litigation and that<lb/> the defendants' affidavits had left "some uncertainties as to the fact and extent of agreement, as<lb/> well as to the parties, purposes and motivations involved." </bibl>
+          <bibl>Id at 518. Then in Virginia Academy<lb/> of Clinical Psychols. v. Blue Shield, 642 F.2d 476 (4th Cir. 1980), cert. denied, 450 U.S. 916 (1981),<lb/> the Fourth Circuit held that two Blue Shield plans had violated the Sherman Act by refusing to<lb/> reimburse clinical psychologists directly, when the plans did reimburse physicians for psychologist<lb/> services provided under physician controL This court relied in part upon the "dominant" position<lb/> of the Blue Shield plans in the Virginia medical insurance market. </bibl>
+          <bibl>Id at 485. It also relied upon<lb/> evidence that the refusal to provide direct reimbursement had resulted from concerted action by<lb/> psychiatrists and other physicians to refuse to deal with "independent" psychologists. This latter<lb/> evidence included the fact that physicians controlled the Blue Shield plans, that each plan had<lb/> provided direct reimbursement to clinical psychologists at other times, and that the "quality of<lb/> care" claim about the need for medical supervision of psychologists' services was inconsistent with<lb/> the plans' reimbursement of psychologist services through any physician, psychiatrist or general<lb/> practitioner. </bibl>
+          <bibl>1d at 478-81, 484-86. In other words, it is fair to conclude that this court found that<lb/> the Blue Shield plans, as corporate entities, had no independent interest in the decision to exclude<lb/> clinical psychologists and that the decision was essentially the result of a physician cartel that had<lb/> market power and acted with a clear anticompetitive purpose.<lb/> </bibl>
+          <bibl><label>323</label>. See supra note 4.<lb/> </bibl>
+          <bibl><label>324</label>. Id<lb/> </bibl>
+          <bibl><label>325</label>. Our suggestion that antitrust courts employ a purpose-based test to grant deference to<lb/> hospital enterprises is analogous to the requirement that some racially motivated purpose is neces-<lb/>sary before facially neutral government acts with discriminatory impact on racial minorities may<lb/> be treated as racial classifications subject to strict judicial scrutiny under Equal Protection doc-<lb/>trine. See Washington v. Davis, 426 U.S. 229 (1976). </bibl>
+          <bibl>This constitutional test is also designed to<lb/> limit judicial activism in the review of enterprise decisionmaking. See Mishkin, Equality, 43 LAW<lb/> &amp; CONTEMP. PROBS. 51, 52-54 (Summer 1980).<lb/> </bibl>
+          
+          <bibl><label>326</label>. Cf. Cooper, supra note 309, at 400-01 (retaining the "substantial market power" require-<lb/>ment in the law of attempts to monopolize would yield the benefits noted in this paragraph).<lb/> </bibl>
+          <bibl><label>327</label>. See Chicago Bd. of Trade v. United States, 246 U.S. 231, 238 (1918); </bibl>
+          <bibl>see also supra note<lb/> </bibl>
+   <!-- the last part is missing, it should be see also supra note 3. -->
+          
+          
+          <bibl><label>328</label>. See Structural Laminates v. Douglas Fir Plywood Ass'n, 261 F. Supp. 154, 159 (D. Or.<lb/> 1966), aft'd, 399 F.2d 155 (9th Cir. 1968), cert. denied, 393 U.S. 1024 (1969) (no antitrust violation<lb/> despite the association's five-year delay in approving plaintiff's new form of plywood, which was<lb/> based on new technology not immediately available to most competitors and had passed perform-<lb/>ance tests for certified plywood but did not satisfy a structural definition used in the association's<lb/> existing standard); </bibl>
+          <bibl>Hughes Tool Co. v. Motion Picture Ass'n, 66 F. Supp. 1006, 1011 (S.D.N.Y.<lb/> 1946) (no antitrust violation despite the association's withdrawal of its seal of approval from a<lb/> successful commercial film on account of some mildly scandalous advertising, apparently largely<lb/> because the district judge was unwilling to interfere with the association's purpose to establish and<lb/> maintain the highest possible "moral and artistic" standards in motion picture production).<lb/> </bibl>
+          
+          <bibl type="footnote"><label>329</label>. This latter alternative would be possible if hospital attorneys should give "conservative"<lb/> legal advice and hospital managers should adopt "conservative" positions in order to avoid possi-<lb/>ble antitrust liability in the face of the substantial legal uncertainty that would result from an ad<lb/> hoc balancing approach to hospital privilege decisions. In our experience, the attorneys and man-<lb/>agers of nonprofit organizations are often prone to adopt conservative strategies in the face of<lb/> legal uncertainty. Perhaps this is because these organizations (including government) are highly<lb/> sensitive to public criticism and the negative publicity of law suits.<lb/> </bibl>
+          
+          <bibl><label>330</label>. See Rich, supra note 3, at 679-80.<lb/> </bibl>
+          <bibl><label>331</label>. See supra note 305.<lb/> </bibl>
+          <bibl><label>332</label>. See supra text accompanying notes 73-74. </bibl>
+          <bibl>Hospital-based specialties today include anes-<lb/>thesiology, pathology, radiology, and perhaps some of the specialties that emphasize newer medi-<lb/>cal technologies such as nuclear medicine, cardiothoracic surgery, and intensive renal dialysis.<lb/> See Feldman, Sloan &amp; Paringer, Compensation Arrangements Between Hospitals and Physicians,<lb/> 12 BELL J. ECON. 155, 156 (1981).<lb/> </bibl>
+          
+          <bibl><label>333</label>. See, M. THOMPSON, supra note 3, at 149-61; </bibl>
+          <bibl>Horan &amp; Nord, supra note 5, at 702.<lb/> </bibl>
+          <bibl><label>334</label>. See Tampa Elec. Co. v. Nashville Coal Co., 365 U.S. 320, 325-29 (1961).<lb/> </bibl>
+          <bibl><label>335</label>. See M. THOMPSON, supra note 3, at 149-61.<lb/> </bibl>
+          <bibl><label>336</label>. See Standard Oil Co. v. United States, 337 U.S. 293, 309 (1949).<lb/> </bibl>
+          
+          <bibl><label>337</label>. See supra note 332.<lb/> </bibl>
+          <bibl><label>338</label>. Both functionally and historically, pathologists and radiologists seem to have enjoyed<lb/> the closest relationships to internal hospital operations, as evidenced by the fact that these special-<lb/>ists frequently have worked for hospitals on a salaried rather than fee-for-service basis. M. ROE-<lb/>MER &amp; J. FRIEDMAN, supra note 39, at 63-69. </bibl>
+          <bibl>Anesthesiologists have more frequently worked on a<lb/> fee-for-service basis, id, which indicates that there may be a less intense relationship between<lb/> anesthesiologists and internal hospital operations in general. We conclude from this distinction<lb/> only that "sham" cases of exclusive privilege contracts, see supra text at note 75, may be more<lb/> likely with anesthesiologists and other hospital-based specialists than with radiologists or<lb/> pathologists.<lb/> </bibl>
+          <bibl><label>339</label>. See supra text accompanying notes 277-86.<lb/> </bibl>
+          <bibl><label>340</label>. See M. ROEMER &amp; J. FRIEDMAN, supra note 39, at 63-69; </bibl>
+          <bibl>Feldman, Sloan &amp; Paringer,<lb/> supra note 332, at 156.<lb/> </bibl>
+          <bibl><label>341</label>. See M. THOMPSON, supra note 3, at 149-61; </bibl>
+          <bibl>Borsody, The Antitrust Laws and the Health<lb/> Industty, 12 AKRON L. REV. 417, 452-54 (1979); </bibl>
+          <bibl>Rich, supra note 3, at 75-77.<lb/> </bibl>
+          <bibl><label>342</label>. Hyde v. J. Jefferson Parish Hosp. Dist. No. 2, 1981-1 Trade Cas. (CCH) 1 63,932 (C.D.<lb/> La. 1981); </bibl>
+          <bibl>see also Dolan &amp; Ralston, supra note 3, at 756-63.<lb/> </bibl>
+          
+          <bibl><label>343</label>. Hyde v. J. Jefferson Parish Hosp. Dist. No. 2, 1981-1 Trade Cas. (CCH) 1 63,932 (C.D.<lb/> La. 1981).<lb/> </bibl>
+          <bibl><label>344</label>. United States Steel Corp. v. Fortner Enters., Inc., 429 U.S. 610, 611-20 (1977).<lb/> </bibl>
+          <bibl><label>345</label>. 1981-1 Trade Cas. (CCH) 63,932.<lb/> </bibl>
+          <bibl><label>346</label>. See supra text accompanying note 58.<lb/> </bibl>
+          <bibl><label>347</label>. See supra text accompanying notes 229-48.<lb/> </bibl>
+          <bibl><label>348</label>. Times-Picayune Publishing Co. v. United States, 345 U.S. 594, 613-14 (1953).<lb/> </bibl>
+          <bibl><label>349</label>. See Siegel v. Chicken Delight, 448 F.2d 43, 48 (9th Cir. 1971), cert. denied, 405 U.S. 955<lb/> (1972); </bibl>
+          <bibl>Dehydrating Process Co. v. A.O. Smith Corp., 292 F.2d 653, 655 (Ist Cir. 1961); </bibl>
+          <bibl>Automatic<lb/> Radio Mfg. Co. v. Ford Motor Co., 242 F. Supp. 852, 855-58 (D. Mass. 1965); </bibl>
+          <bibl>United States v.<lb/> Jerrold Elecs. Corp., 187 F. Supp. 545, 559-60 (E.D. Pa. 1960), aft'dper cur/am, 365 U.S. 567<lb/> (196 1). </bibl>
+          <bibl>See generally Ross, The Single Product Issue in Antitrust Tying: A Functidnal Approach, 23<lb/> EMORY L. J. 963 (1974).<lb/> </bibl>
+          
+          <bibl><label>350</label>. See generally Landes &amp; Posner, supra note 38.<lb/> </bibl>
+          
+          <bibl type="footnote"><label>351</label>. We see no reason why any monopoly power of the hospital that is inherent in the situa-<lb/>tion could not be exploited by the hospital as easily under contracts with several groups of hospi-<lb/>tal-based specialists as under one contract with a single group.<lb/> </bibl>
+          
+          <bibl><label>352</label>. See Hyde v. J. Jefferson Parish Hosp. Dist. No. 2, 1981-1 Trade Cas. (CCH) 63,932<lb/> (C.D. La. 1981) (relying on these factors to justify the conclusion that a hospital's anesthesiology<lb/> services were separate from other hospital services). </bibl>
+          <bibl>Separate billing by the seller and separate<lb/> sales by competitors are two of the four factors in the frequently cited JerroldElectronics "test" for<lb/> determining whether there is one or two products in an alleged tying situation. United States v.<lb/> Jerrold Elecs. Corp., 187 F. Supp. 545, 559 (E.D. Pa. 1960), a f'dper curiam, 365 U.S. 567 (1961).<lb/> </bibl>
+          <bibl>The problems with this test include its failure to focus upon cost savings that may be generated by<lb/> particular couplings of items, see Ross, supra note 349, at 1006-08, </bibl>
+          <bibl>and, as admitted by the Jerrold<lb/> Electronics court itself, the ambiguity of several of these factors in determining the fundamental<lb/> issue, 187 F. Supp. at 559-60 (for example, separate billing for different items may have been used<lb/> because each set of services is "custom made" for a purchaser who is only interested in acquiring a<lb/> "single" product).<lb/> </bibl>
+          <bibl><label>353</label>. International Salt Co. v. United States, 332 U.S. 392, 397-98 (1947); International Busi-<lb/>ness Machines Corp. v. United States, 298 U.S. 131, 139-40 (1936).<lb/> </bibl>
+          <bibl><label>354</label>. R. POSNER, supra note 3, at 181. f Dehydrating Process Co. v. A.O. Smith Corp., 292<lb/> F.2d 653, 655 (1st Cir. 1961) (substantial good will defense justifies classification of silo and silo<lb/> unloader as "one product").<lb/> </bibl>
+          
+          <bibl><label>355</label>. See supra text accompanying notes 73-74.<lb/> </bibl>
+          <bibl><label>356</label>. See supra text accompanying notes 202-05.<lb/> </bibl>
+          <bibl><label>357</label>. See supra text accompanying notes 255-68.<lb/> </bibl>
+          <bibl><label>358</label>. 521 F. Supp. 842 (W.D. Pa. 1981).<lb/> </bibl>
+          <bibl><label>359</label>. See id at 848-49.<lb/> </bibl>
+          <bibl><label>360</label>. Id at 859-62.<lb/> </bibl>
+          <bibl><label>361</label>. Id at 851-52.<lb/> </bibl>
+          <bibl><label>362</label>. Id at 871.<lb/> </bibl>
+          <bibl><label>363</label>. Id<lb/> </bibl>
+          
+          <bibl><label>364</label>. Id at 852.<lb/> </bibl>
+          <bibl><label>365</label>. The main thrust of the plaintiff's antitrust theory was that Dr. Magovern, his profes-<lb/>sional corporation, and the hospital had conspired to boycott other cardiothoracic surgeons who<lb/> applied for or were using privileges at Allegheny General, a boycott that allegedly included spe-<lb/>cific attempts to discourage other cardiothoracic surgeons from obtaining or exercising privileges.<lb/> See Robinson v. Magovern, 521 F. Supp. 842, 892-913 (,V.D. Pa. 1981).<lb/> </bibl>
+          <bibl><label>366</label>. Although the defendants did not pursue this theory at trial, the fact that Dr. Magovem's<lb/> professional corporation performed almost all the cardiothoracic surgery at the hospital, 521 F.<lb/> Supp. at 852, and Dr. Magovern's extensive powers over all cardiothoracic surgeons at the hospi-<lb/>tal in his role as Director of Surgery, see 521 F. Supp. at 851-52, 860-62, suggest that the hospital<lb/> had granted de facto exclusive privileges to Dr. Magovern and his associates.<lb/> </bibl>
+          <bibl><label>367</label>. 521 F. Supp. at 927-28.<lb/> </bibl>
+          <bibl><label>368</label>. Id at 853.<lb/> </bibl>
+          <bibl><label>369</label>. Id at 891-96.<lb/> </bibl>
+          <bibl><label>370</label>. (d at 893-903.<lb/> </bibl>
+          
+          <bibl><label>371</label>. For proposals of this sort, see Calvani &amp; James, supra note 3; </bibl>
+          <bibl>Dolan &amp; Ralston, supra<lb/> note 3.<lb/> </bibl>
+          <bibl><label>372</label>. See supra text accompanying notes 58-62.<lb/> </bibl>
+          <bibl><label>373</label>. See Bird, supra note 250, at 281-82.<lb/> </bibl>
+          
+          <bibl><label>374</label>. See Associated Press v. United States, 326 U.S. 1, 25 (1945) (Douglas, J., concurring);<lb/> International News Serv. v. Associated Press, 248 U.S. 215, 262-63 (1918) (Brandeis, J.,<lb/> dissenting).<lb/> </bibl>
+          <bibl><label>375</label>. Cf M. ROEMER &amp; J. FRIEDMAN, supra note 39, at 110 (discussing a hospital's bylaw<lb/> requirement that all members of the medical staff must conduct the "major portion" of their hos-<lb/>pital practice at the hospital).<lb/> </bibl>
+          <bibl><label>376</label>. A requirement that physicians deal exclusively with one hospital may represent one of<lb/> the relatively few kinds of cases in which exclusive dealing might be used to monopolize a particu-<lb/>lar economic market. In the usual exclusive dealing situation, a supplier's promise to deal exclu-<lb/>sively with one buyer is unlikely to harm other buyers, who remain free to purchase services from<lb/> other suppliers and to encourage new suppliers to enter the market. In the hospital privileges<lb/> situation, however, physicians with existing practices in a community often may be relatively<lb/> unique suppliers of patients to hospitals. Competing hospitals, which are faced with an exclusive<lb/> dealing requirement imposed by one hospital, may not easily be able to substitute equivalent<lb/> physician suppliers for those foreclosed to them by the exclusive dealing. See generally R. Pos-<lb/>NER, supra note 3, at 201-03.<lb/> </bibl>
+          
+          <bibl><label>377</label>. See, ag., Cobb County-Kennestone Hosp. Auth. v. Prince, 242 Ga. 139, 249 S.E.2d 581<lb/> (1978) (physicians required to use the hospital's computer assisted tomoscope (C.A.T.) scanner on<lb/> all hospital inpatients needing this x-ray procedure).<lb/> </bibl>
+          <bibl><label>378</label>. See Havighurst, supra note 23, at 760-61; </bibl>
+          <bibl>Kissam, supra note 13, at 512-13.<lb/> </bibl>
+          <bibl><label>379</label>. The contrary argument will be that some medical staff physicians and the hospital want<lb/> the exclusive dealing requirement merely to ensure an adequate flow of patients to their medical<lb/> network and hospital rather than to competing hospitals. See supra note 376 and accompanying<lb/> text.<lb/> </bibl>
+          <bibl><label>380</label>. See, eg., Cobb County-Kennestone Hosp. Auth. v. Prince, 242 Ga. 139, 249 S.E.2d 581<lb/> (1978). The contrary argument, of course, will be that the hospital has imposed its exclusive use<lb/> requirement simply in order to monopolize the provision of certain medical services in the com-<lb/>munity. See id<lb/> </bibl>
+          
+          <bibl><label>381</label>. Section 2 of the Sherman Act provides that "[elvery person who shall monopolize, or<lb/> attempt to monopolize, or combine or conspire with any other person or persons, to monopolize<lb/> any part of the trade or commerce among the several states" shall be guilty of a felony. 15 U.S.C.<lb/> § 2 (1976). For our purposes, the relevant portions of this act are the "monopolization" and "at-<lb/>tempt to monopolize" violations that may be committed by single persons. "Conspiracies to mo-<lb/>nopolize" require an agreement, and the substantive analysis of conspiracies does not differ much<lb/> from that of restraints of trade under § 1 of the Sherman Act. See L. SULLIVAN, supra note 151,<lb/> §49.<lb/> </bibl>
+          <bibl><label>382</label>. On monopolization, the standard test today appears to be "(1) the possession of monop-<lb/>oly power in the relevant market and (2) the willful acquisition or maintenance of that power as<lb/> distinguished from growth or development as a consequence of a superior product, business acu-<lb/>men, or historic accident." United States v. Grinnell Corp., 384 U.S. 563, 570-71 (1966). On<lb/> attempts to monopolize, the current standard is more elusive but appears to require a "specific<lb/> intent to monopolize" and the fact that a defendant "has come dangerously near to unlawful<lb/> monopolization." See Cooper, supra note 309, at 375.<lb/> </bibl>
+          <bibl><label>383</label>. See, e.g., United States v. Aluminum Co. of America, 148 F.2d 416 (2d Cir. 1945) (sub-<lb/>stantial market power substituted for purposeful conduct).<lb/> </bibl>
+          <bibl><label>384</label>. See, ag., Lessig v. Tidewater Oil Co., 327 F.2d 459, 474 (9th Cir.), cert. denied, 377 U.S.<lb/> 993 (1964) (purposeful conduct substituted for market power).<lb/> </bibl>
+          <bibl><label>385</label>. Compare supra text accompanying notes 379-80 (possible procompetitive justifications<lb/> for a hospital's "monopolization" tactics) with supra notes 376, 379-80 (possible anticompetitive<lb/> purposes and effects of the same tactics).<lb/> </bibl>
+          <bibl><label>386</label>. See supra text accompanying notes 301-74.<lb/> </bibl>
+          
+          <bibl type="footnote"><label>387</label>. Such competition between hospitals and ambulatory surgical centers is likely to increase<lb/> in the future. The availability of medical insurance for surgical procedures and investment tax<lb/> credits for physician owners of capital equipment, as well as regulatory attempts to discourage<lb/> costly inpatient stays, are likely to encourage the development of ambulatory clinics that compete<lb/> with hospitals on many services that traditionally were only provided on an inpatient basis.<lb/> </bibl>
+          
+          <bibl><label>388</label>. See, e.g., Cobb County-Kennestone Hosp. Auth. v. Prince, 242 Ga. 139, 249 S.E.2d 581<lb/> (1978) (hospital resolution that patients be required to use hospital facilities for any procedure,<lb/> test, or service routinely offered by the hospital).<lb/> </bibl>
+          <bibl><label>389</label>. See, e.g., id (neurosurgeons operating their own C.A.T. scanner in an ambulatory facil-<lb/>ity to serve inpatients at the hospital).<lb/> </bibl>
+          <bibl><label>390</label>. See, e.g., id (these claims are the "pre-eminent" reason for finding that the hospital's<lb/> requirement is reasonable). To be sure, some inpatients probably could be moved to ambulatory<lb/> facilities for radiology services without harm. But the hospital's need to monitor the choice of<lb/> patients who could be moved would increase the hospital's transaction costs, as well as creating<lb/> the possibility of error. Moreover, it is not clear that hospitals could safely escape all responsibil-<lb/>ity for malpractice injuries that might occur in the course of providing outside radiology services<lb/> to inpatients.<lb/> </bibl>
+          <bibl><label>391</label>. See supra text accompanying notes 327-29.<lb/> </bibl>
+          
+          <bibl><label>392</label>. See, ag., American Medical Ass'n v: United States, 317 U.S. 519 (1943); supra note 219.<lb/> </bibl>
+          <bibl><label>393</label>. On professional accreditation and certification programs in medicine in general, see R.<lb/> STEVENS, AMERICAN MEDICINE AND THE PUBLIC INTEREST (1971).<lb/> </bibl>
+          <bibl><label>394</label>. See, e.g., American Medical Ass'n v. United States, 317 U.S. 519 (1943); </bibl>
+          <bibl>infra text ac-<lb/>companying notes 396-99.<lb/> </bibl>
+          <bibl><label>395</label>. See Levin v. JCAH, 354 F.2d 515 (D.C. Cir. 1965) (JCAH standard against privileges for<lb/> podiatrists allegedly violates the Sherman Act); </bibl>
+          <bibl>Ohio v. JCAH, No. C-2-79-1158 (S.D. Ohio filed<lb/> Dec. 14, 1979) (JCAH standard against independent admitting privileges for clinical psychologists<lb/> allegedly violates the Sherman Act). </bibl>
+          <bibl>See generally Kissam, supra note 150.<lb/> </bibl>
+          <bibl><label>396</label>. Aasum v. Good Samaritan Hosp., 395 F. Supp. 363 (D. Or. 1975), aj7'd, 542 F.2d 792<lb/> (9th Cir. 1976).<lb/> </bibl>
+          <bibl><label>397</label>. Cf Feminist Women's Health Center v. Mohammad, 586 F.2d 530, 547-51 (5th Cir.<lb/> 1978) (remand for trial on the issue of whether the executive director of the state licensing board<lb/> had acted outside the scope of his authority and conspired with other defendants to violate the<lb/> Sherman Act), cert. denied, 444 U.S. 924 (1979).<lb/> </bibl>
+          
+          <bibl><label>398</label>. JCAH MANUAL, supra note 1, at xvii ("Accreditation need not require one-hundred-<lb/>percent compliance with every item in the standards that is applicable to a given hospital. Accred-<lb/>itation decisions will be based on a careful and reasonable assessment of each individual case.")<lb/> </bibl>
+          <bibl><label>399</label>. See id at 81 ("Medical staff membership shall be limited, unless otherwise provided by<lb/> law, to individuals who are currently fully licensed to practice medicine and, in addition, to be<lb/> licensed dentists.").<lb/> </bibl>
+          <bibl><label>400</label>. See, e.g., supra note 219.<lb/> </bibl>
+          <bibl><label>401</label>. See generall, G. LAMB &amp; C. SHIELDS, TRADE ASSOCLATION LAW AND PRACTICE 86-96<lb/> (1971).<lb/> </bibl>
+          <bibl><label>402</label>. See Issan, .supra note 16; </bibl>
+          <bibl>Kissam, supra note 150; </bibl>
+          <bibl>Comment, Anticompetite Data Dis-<lb/>semination in the Medical Profession: The Conflict Between the Sherman Act and the First Amend-<lb/>ment, 1980 DUKE L. J. 1142.<lb/> </bibl>
+          <bibl><label>403</label>. See G. LAmB &amp; C. SHIELDS, supra note 401; </bibl>
+          <bibl>J. VON KALINOWSK1, 11 ANTITRUST LAWS<lb/> &amp; TRADE REGULATION § 75.04 (1980).<lb/> </bibl>
+          
+          <bibl><label>404</label>. See supra note 317 and accompanying text.<lb/> </bibl>
+          <bibl><label>405</label>. See United States v. Johns-Manville Corp., 1967 Trade Cas. (CCH) T 72,184 (E.D. Pa.<lb/> July 13, 1967); United States v. Johns-Manville Corp., 259 F. Supp. 440 (E.D. Pa. 1966).<lb/> </bibl>
+          <bibl><label>406</label>. See J. VON KALINOWSKI, supra note 403; </bibl>
+          <bibl>Jacobs, Statistical Standardization and Re-<lb/>search Activities, 6 A.B.A. SEc. ANTITRUST L. 80, 83-86 (1955).<lb/> </bibl>
+          <bibl><label>407</label>. Kissam, supra note 16, at 164.<lb/> </bibl>
+          <bibl><label>408</label>. For a more detailed statement of this argument, see Kissam, supra note 16; </bibl>
+          <bibl>Kissam,<lb/> supra note 150.<lb/> </bibl>
+          <bibl><label>409</label>. See Central Hudson Gas &amp; Elec. Corp. v. Public Serv. Comm'n, 447 U.S. 557 (1980); L.<lb/> TRIBE, supra note 179, § 12-15; </bibl>
+          <bibl>Barrett, "The UnchartedArea"-Commercial Speech and the First<lb/> Amendment, 13 U.C.D. L. REv. 175 (1980).<lb/> </bibl>
+          <bibl><label>410</label>. 447 U.S. 557 (1980).<lb/> </bibl>
+          <bibl><label>411</label>. Id at 564.<lb/> </bibl>
+          
+          <bibl><label>412</label>. Id<lb/> </bibl>
+          <bibl><label>413</label>. In other words, the government could choose to monitor incomplete medical society res-<lb/>olutions by regulating these statements in the same way that the Federal Trade Commission regu-<lb/>lates false and misleading advertising. See generally G. ROBINSON, E. GELLHORN &amp; H. BRUFF,<lb/> THE ADMINISTRATIVE PROCESS 469-72 (2d ed. 1980) (discussion of the elements of a false adver-<lb/>tising case).<lb/> </bibl><bibl><label>414</label>. See L. TRIBE, supra note 179, § 12.<lb/> </bibl>
+          <bibl><label>415</label>. See California Motor Transp. Co. v. Trucking Unlimited, 404 U.S. 508 (1972). </bibl><bibl>In the<lb/> absence of a dominant anticompetitive purpose, it might be argued that professional society state-<lb/>ments about medical care quality do not deserve first amendment protection because they are<lb/> "misleading" or "more likely to deceive the public than to inform it." Central Hudson Gas &amp;<lb/> Elec. Corp. v. Public Serv. Comm'n, 447 U.S. 557, 563 (1980). See Friedman v. Rogers, 440 U.S.<lb/> 1, 13, 15-16 (1979); </bibl><bibl>Obralik v. Ohio State Bar Ass'n, 436 U.S. 447, 464-65 (1978). </bibl><bibl>This argument<lb/> would be that the statement is likely to harm consumers by "misleading" health care institutions,<lb/> physicians, and consumers into providing and purchasing medical services that are either unneces-<lb/>sarily expensive or furnished by unduly limited types of providers. This argument, however,<lb/> would oversimplify the concept of false or misleading advertising, whose gravamen appears to be<lb/> the making of some misrepresentation of fact that limits the opportunities of listeners to make an<lb/> independent judgment about the purchase of services. See G. ROBINSON, E. GELLHORN &amp; H.<lb/> BRUFF, supra note 413, at 469-72. </bibl><bibl>By contrast, a professional society's statement about the quality<lb/> of medical care--even if technically worthless-is likely to be based upon sincere opinions about<lb/> the maintenance of high quality medical care. Thus, if these statements are free from conscious<lb/> misrepresentations of fact, or a dominant anticompetitive purpose, it seems unlikely that courts<lb/> would characterize them as misleading advertising. See Kissam, supra note 150, at 19.<lb/> </bibl>
+          <bibl><label>416</label>. Ohio v. Joint Comm'n on Accred. of Hosps., Civ. Action No. C-2-79-1158 (S.D. Ohio<lb/> filed Dec. 14, 1979). This complaint is summarized in 1980 ANTITRUST &amp; TRADE REG. REP.<lb/> (BNA), at D-2 (Jan. 24, 1980).<lb/> </bibl><bibl><label>417</label>. JCAH MANUAL, supra note 1, at 81.<lb/> </bibl><bibl><label>418</label>. See id at 85-86.<lb/> </bibl><bibl><label>419</label>. Id<lb/> </bibl>
+          <bibl><label>420</label>. See Havighurst, supra note 13, at 344-49, 355-62. </bibl><bibl>Professor Havighurst specifically dis-<lb/>cusses professional society statements that condemn cost reduction methods instituted by medical<lb/> insurance plans but do not specify any enforcement mechanism against the insurance plans. See<lb/> i d at 317-18. In the case of JCAH standards, there is in one sense an "enforcement mechanism"<lb/> built into the statement since the failure to comply with a standard may result in the loss of a<lb/> hospital's accreditation. This should not be thought of as a true enforcement mechanism, how-<lb/>ever, because the loss of accreditation for the failure to comply with JCAH standards may be a<lb/> voluntary act by the hospital and because the loss of accreditation also may be viewed as an<lb/> integral part of the JCAH's communicative act to tell the public about good quality hospital care.<lb/> </bibl>
+          <bibl><label>421</label>. See id at 356.<lb/> </bibl><bibl><label>422</label>. See L. TRmE, supra note 179, § 12-1,2.<lb/> </bibl><bibl><label>423</label>. On the historical beginnings of the bad tendency doctrine in first amendment law, see<lb/> Rabban, The First Amendment in Its Forgotten Years, 90 YALE L.J. 514, 533-39, 543-49 (1981).<lb/> </bibl><bibl><label>424</label>. Unlike psychologists, psychiatrists are licensed to prescribe drug therapies and also<lb/> trained to identify and treat the related medical problems of their patients.<lb/> </bibl>
+          <bibl><label>425</label>. Residency Review Committees are sponsored by the American Medical Association and<lb/> other interested professional organizations, and completion of a residency program approved by<lb/> one of these committees is necessary for a physician to become board certified in her specialty.<lb/> See R. STEvENs, supra note 393, at 389-96. </bibl><bibl>Residency Review Committees report to the Liaison<lb/> Committee on Graduate Medical Education, another AMA-sponsored organization, which is the<lb/> formal accrediting body for hospital residency programs in all specialties. See Medical Education<lb/> in the United States 1977-1978, 240 J. A.M.A. 2809, 2837 (1978) (AMA Annual Report).<lb/> </bibl>
+          <bibl><label>426</label>. In June, 1969, the AMA's House of Delegates approved a "joint statement of the AMA<lb/> and American Hospital Association" on the issue of hospital privileges for physicians and non-<lb/>physicians. This statement closely parallels the JCAH's current standards on privileges. Compare<lb/> AMA HousE OF DELEGATES, RESOLUTION-MEDICAL STAFF MEMBERSHIP AND STATUS OF AL-<lb/>LIED HEALTH PROFESSIONALS IN HosPrrALS (1969) with JCAH MANUAL, supra note 1, at 81-86.<lb/> The AMA's resolution did not give reasons for its recommended standards on privileges, but<lb/> neither did it specify sanctions or other enforcement mechanisms for physicians and hospitals that<lb/> fail to comply with these standards.<lb/> </bibl>
+          <bibl><label>427</label>. These facts would make this case similar to the dress manufacturers' boycott of the so-<lb/>called "style pirates" in Fashion Originators' Guild of America v. FTC, 312 U.S. 457 (1941). In<lb/> that case, original design dress manufacturers had refused to sell their dresses to retail stores that<lb/> carried copied dresses that were manufactured by "style pirates."<lb/> </bibl>
+          <bibl><label>428</label>. See Hollowell, supra note 7, at 500-01, especially n.55. This settlement included the<lb/> issuance of a statement by the JCAH that recognized the appropriateness of hospital privileges for<lb/> podiatrists who admit patients with the concurrence of physicians. Id<lb/> </bibl><bibl><label>429</label>. See supra text accompanying notes 104-96.<lb/> </bibl><bibl><label>430</label>. See supra text accompanying notes 122-25.<lb/> </bibl><bibl><label>431</label>. Id<lb/> </bibl><bibl><label>432</label>. See supra text accompanying notes 301-428.<lb/> </bibl><bibl><label>433</label>. On the possibility of such a policy, see supra note 23 and accompanying text.<lb/> </bibl><bibl><label>434</label>. On the possibilities for such incentives, see Havighurst, supra note 13.<lb/> </bibl><bibl><label>435</label>. See supra text accompanying notes 99, 136-45, 151-97. Cf. supra text accompanying<lb/> notes 408-28 (a possible first amendment defense against antitrust attacks upon professional<lb/> credentialing activities).<lb/> </bibl><bibl><label>436</label>. See supra text accompanying notes 301-70.<lb/> </bibl>
+          <bibl><label>437</label>. On the important distinction between "rights" and "policies" in the adjudication of hard<lb/> cases, see Dworkin, Hard Cases, supra note 179, reprinted in R. DwoRxIN, TAKING RIGHTS SERI-<lb/>OUSLY 81 (1977). In brief, Dworkin argues that the making of social policy lies primarily in the<lb/> domain of legislatures and that judicial decisions in civil cases "characteristically are and should<lb/> be generated by principle not policy." Arguments of "policy" attempt to justify a government<lb/> decision by showing that it would serve the collective welfare, in general. Arguments of "princi-<lb/>ple" are arguments from standards that justify a government decision by showing that the decision<lb/> would secure "some individual or group right." Thus, when no settled rule disposes of a case, a<lb/> party may nevertheless have a right to win because of preexisting legal principles that support the<lb/> party's claim. See Dworkin, Hard Cases, supra note 179, at 1058-60, reprinted in R. DWORKIN,<lb/> TAKING RIGHTS SERIOUSLY 81-84.<lb/> </bibl>
+          <bibl><label>438</label>. A major instance of the connection between individual rights and purpose-based legal<lb/> analysis is, of course, the mens rea concept in criminal law. See H.L.A. HART, PUNISHMENT AND<lb/> RESPONSIBILITY (1968); </bibl><bibl>cf. I. KANT, FOUNDATIONS OF THE METAPHYSICS OF MORALS 16-18 (L.<lb/> Beck trans. 1959) (fundamental morality, and fairness toward others, is obtained by acting in<lb/> accordance with duties that are specified by principles of universal applicability; thus, moral<lb/> worth and moral rights depend primarily upon "the principle of volition by which the act is done"<lb/> rather than upon the effects of actions).<lb/> </bibl>
+          <bibl><label>439</label>. On the history of legal realism and the realists' treatment of law as social policy, see<lb/> Woodard, The Limits of Legal Realism: An Historical Persfpective, 54 VA. L. REV. 689 (1968). </bibl><bibl>See<lb/> also Summers, Pragmatic Instrumentalism in Twentieth Century American Legal Thought-A Syn-<lb/>thesis and Critique of Our Dominant General Theory About Law and Its Use, 66 CORNELL L. REv.<lb/> 861 (1981). </bibl><bibl>For good examples of the realist view of antitrust law, see R. BORK, supra note 12; </bibl><bibl>C.<lb/> KAYSEN &amp; D. TURNER, ANTITRUST POLICY (1959); </bibl><bibl>R. POSNER, supra note 3.<lb/> </bibl>
+          <bibl><label>440</label>. See supra text accompanying notes 342-54.<lb/> </bibl><bibl><label>441</label>. See supra note 3 and accompanying text; supra text accompanying notes 371-74; </bibl><bibl>supra<lb/> text accompanying notes 375-428.<lb/> </bibl><bibl><label>442</label>. See, eg., Fortner Enter. v. United States Steel Corp., 394 U.S. 495 (1969); </bibl><bibl>Northern Pac.<lb/> Ry. Co. v. United States, 356 U.S. 1 (1958); </bibl><bibl>International Salt Co. v. United States, 332 U.S. 392<lb/> (1947). </bibl><bibl>For criticism of this approach, see R. POSNER, supra note 3, at 171-84.<lb/> </bibl>
+          <bibl><label>443</label>. On the substance of this "economic" tradition in antitrust law, see R. BORK, supra note<lb/> 12; </bibl><bibl>R. POSNER, supra note 3. On this tradition's apparent ascendancy at the current time, see<lb/> Continental T.V. v. GTE Sylvania, 433 U.S. 36 (1977); </bibl><bibl>Williamson, Commentary, On the Polilcal<lb/> Economy ofAntitrust: Groundsfor Cautious Optimism in R. TOLLISON, supra note 20, at 77. </bibl><bibl>To be<lb/> sure, the economic tradition of antitrust analysis does not logically require ad hoc judicial balanc-<lb/>ing as the preeminent analytic method, and in the hands of masters this tradition may indeed be<lb/> capable of generating categorical rules of some clarity and generality. See, e.g., R. POSNER, supra<lb/> note 3, at 171-211. </bibl><bibl>Yet, if the ultimate purpose of antitrust law is efficiency, it may be unreasona-<lb/>ble to expect that lawyers and judges in general will hew to a few efficiency-based rules and avoid<lb/> the temptation to look at each case on its facts to determine which antitrust result will promote<lb/> efficiency in the particular case. This seems to be one of the practical dilemmas of any Rule<lb/> Utilitarianism, which instructs persons to follow rules for the purpose of achieving the greatest<lb/> utility even though a particular application of the rule may not have (or appear to have) the<lb/> desired result. See generally R. SARTORIUS, INDIVIDUAL CONDUCT AND SOCIAL NORMS 11-18<lb/> (1975).<lb/> </bibl>
+          <bibl><label>444</label>. See, eg., Blake &amp; Jones, In Defense ofAntitrust, 65 COLUM. L. REV. 377 (1965). The<lb/> focus of the political antitrusters on policies of decentralizing the American economy and ex-<lb/>panding opportunities for small traders, at the expense of efficiency, has made this tradition a<lb/> relatively easy target for efficiency-minded analysts of antitrust law. This is because it can be<lb/> argued persuasively that antitrust law has not prevented the growth of big business by methods<lb/> that are beyond the reach of the antitrust laws and, furthermore, that encouraging monopolies<lb/> might be the best way to expand opportunities for small traders in general. The political antitrus-<lb/>ters' policies can thus be condemned as unrealistic, inconsistent, and perhaps counterproductive as<lb/> well. See, eg., R. POSNER, supra note 3, at 18-22.<lb/> </bibl>
+          <bibl><label>445</label>. See, eg., R. BORK, supra note 12; </bibl><bibl>R. POSNER, supra note 3.<lb/> </bibl><bibl><label>446</label>. Cf. Discussion" Public-Choice.Aspects ofAntitrust in THE POLITICAL ECONOMY OF ANTI-<lb/>TRUST, supra note 20, at 125-26 (discussion between Kenneth Dam and Victor Goldberg of a<lb/> "social property right" that legislatures and antitrust courts have recognized in situations in which<lb/> the property values of small businesses are adversely affected).<lb/> </bibl><bibl><label>447</label>. See H. THORELLI, THE FED Ra. ANTrrRUsT PoLicy 181-84 (1954). </bibl><bibl>But see R. BORK,<lb/> supra note 12, at 50-71.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

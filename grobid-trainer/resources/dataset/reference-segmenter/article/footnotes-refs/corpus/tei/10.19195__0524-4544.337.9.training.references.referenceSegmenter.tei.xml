@@ -1,0 +1,212 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.19195__0524-4544.337.9">
+    <titleStmt>
+      <title level="a">The evolution of the European Union’s energy policy</title>
+      <author>
+        <persName>
+          <forename>Renata</forename>
+          <surname>Kusiak-Winter</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Uniwersytet Wrocławski</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2024</date>
+      <idno type="DOI">10.19195/0524-4544.337.9</idno>
+      <ptr target="https://doi.org/10.19195/0524-4544.337.9"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Renata Kusiak-Winter. (2024). The evolution of the European Union’s energy policy. Prawo, 337, 105-116. DOI: 10.19195/0524-4544.337.9</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">The evolution of the European Union’s energy policy</title>
+          <author>
+            <persName>
+              <forename>Renata</forename>
+              <surname>Kusiak-Winter</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Prawo</title>
+          <imprint>
+            <biblScope unit="volume">337</biblScope>
+            <biblScope unit="page" from="105" to="116">105-116</biblScope>
+            <date when="2024">2024</date>
+            <publisher>Uniwersytet Wrocławski</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.19195/0524-4544.337.9</idno>
+        <ptr target="https://doi.org/10.19195/0524-4544.337.9"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:24:26.390392Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:24:26.390392Z" status="extraction">
+      <note type="label">2. Sandfort</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-09T08:58:17.180Z" status="unfinished" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-09T09:48:37.491Z" status="draft" who="#li">
+      <desc>1.Pass</desc>
+    </change>
+    <change when="2026-03-10T12:07:05.281Z" status="draft" who="#sandfort">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-13T13:48:34.050Z" status="checked" who="#sandfort">
+      <desc>finished</desc>
+    </change>
+    <change when="2026-04-04T07:51:55.590Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-04T08:38:45.549Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-03T22:25:16.624Z" status="in-review" who="#lfoppiano">
+      <note type="label">v5 (lfoppiano)</note>
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-03T22:32:11.257Z" status="in-review" who="#lfoppiano">
+      <note type="label">v7 (lfoppiano)</note>
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-04T10:07:22.191Z" status="in-review" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-04T11:11:44.559Z" status="checked" who="#kazuyo">
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-12T15:17:06.428Z" status="approved" who="#lfoppiano">
+      <note type="label">v8 (lfoppiano)</note>
+      <desc>updated-upstream-model</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+          <bibl><label>1</label> P. akaliyski, ch. Welzel, J. Hien, "a community of shared values? dimensions and dynam-<lb/>ics of cultural integration in the european Union," Journal of European Integration 44, 2021, no. 2,<lb/> pp. 1-22.<lb/> </bibl>
+
+          <bibl><label>2</label> a. sikora, "european green deal -legal and financial challenges of the climate change,"<lb/> ERA Forum 21, 2021, p. 681 et seq.<lb/> </bibl>
+          <bibl><label>3</label> J. Fullerton, Regenerative capitalism: How universal principles and patterns will shape the<lb/> new economy, capital institute 2015, pp. 1-120.<lb/></bibl>
+          <bibl><label>4</label> the objective of the measures applied by the eU and national institutions, as stipulated in<lb/> article 2(1) of decision 2022/591 of the european Parliament and of the council on a general<lb/> Union environment action Programme to 2030 (oJ L.2022.114.22 of 06.04.2022), is a well-be-<lb/>ing economy where growth is regenerative.</bibl>
+          <bibl>For more on regenerative growth, see also: F. capra,<lb/> H. Henderson, "Qualitative growth. a conceptual framework for finding solutions to our current<lb/> crisis that are economically sound, ecologically sustainable, and socially just," [in:] From Capital-<lb/>istic to Humanistic Business, eds. M. Pirson, U. steinvorth, c. Largacha-Martinez, c. dierksmeier,<lb/> London 2014, p. 35 et seq.<lb/></bibl>
+          <bibl><label>5</label> For more on this see: n. adamczewska, M. zajączkowska, "realizacja zrównoważonej poli-<lb/>tyki energetycznej Unii europejskiej w kontekście celów zrównoważonego rozwoju (sdg) -wy-<lb/>brane aspekty," Folia Iuridica Universitatis Wratislaviensis 11, 2022, no. 2, pp. 9-25.<lb/></bibl>
+          <bibl><label>6</label> Un general assembly resolution of 25 september 2015. transforming our World: the<lb/> 2030 agenda for sustainable development (a/res/70/1). the resolution was adopted by 193 coun-<lb/>tries of the United nations.<lb/></bibl>
+          <bibl><label>7</label> communication from the commission to the european Parliament, the european council,<lb/> the council, the european economic and social committee and the committee of the regions: The<lb/> European Green Deal, coM(2019) 640 final.<lb/></bibl>
+          <bibl><label>8</label> according to the data published by the energy Market agency (are), at the end of 2022,<lb/> the share of bituminous coal in the energy mix is 42.6% and lignite 26.5%. More than 21% of en-<lb/>the evolution of the european Union's energy policy<lb/> ergy came from res! see: M. Jakubiec, "Miks energetyczny i struktura produkcji energii w Polsce<lb/> w 2022 r.," Globenerga, 13.02.2023, https://globenergia.pl/ponad-21-energii-pochodzilo-z-oze-<lb/>miks-energetyczny-i-str  uktura-produkcji-energii-w-polsce-w-2022-r/ (accessed: 12.03.2023).<lb/></bibl>
+
+          <bibl type="footnote"><label>9</label> the treaty establishing the european coal and steel community, signed in Paris on<lb/> 18 april 1951, entered into force on 23 July 1952 and expired on 23 July 2002.<lb/></bibl>
+          <bibl type="footnote"><label>10</label> the treaty establishing the european atomic energy community signed in rome on<lb/> 25 March 1957, entered into force on 1 January 1958.<lb/> </bibl>
+
+          <bibl><label>11</label> F. Morata, s.i. sandoval, European Energy Policy, edward elgar, northampton 2012.<lb/></bibl>
+          <bibl><label>12</label> P. Lissoń, "rynek energetyczny" [in:] Prawo rynku wewnętrznego. System Prawa Unii<lb/> Europejskiej, ed. d. kornobis-romanowska, vol. 7, Warszawa 2020, p. 577 et seq.<lb/> </bibl>
+
+          <bibl><label>13</label> B. nowak, Wewnętrzny rynek energii w Unii Europejskiej. Studium porównawcze na pod-<lb/>stawie sektorów energii elektrycznej i gazu a sprawa (kwestia) Polski, Warszawa 2009, p. 24 et seq.<lb/></bibl>
+          <bibl><label>14</label> r. zięba, Wspólna Polityka Zagraniczna i Bezpieczeństwa Unii Europejskiej, Warszawa 2007,<lb/> p. 15 et seq.<lb/></bibl>
+          <bibl type="footnote"><label>15</label> these principles were introduced by directive 96/92/ec of the european Parliament and<lb/> of the council of 19 december 1996 concerning common rules for the internal market in electricity,<lb/> and were subsequently supplemented and extended by the so-called second Package introduced by<lb/> directive 2003/54/ec of the european Parliament and of the council of 26 June 2003 concerning<lb/> common rules for the internal market in electricity and repealing directive 96/92/ec.<lb/></bibl>
+
+          <bibl><label>16</label> see the treaty amending the treaty on european Union and the treaty establishing the<lb/> european community, signed at Lisbon on 13 december 2007 (oJ eU c no. 306, p. 1).<lb/></bibl>
+
+          <bibl type="footnote"><label>17</label> it should be pointed out that, in terms of energy policy, primary law contains a number<lb/> of other specific provisions, which primarily include article 122 tFeU (security of supply), arti-<lb/>cles 170-172 tFeU (energy networks), article 114 tFeU (internal electricity market) and articles<lb/> 216-218 tFeU (external energy policy).<lb/></bibl>
+
+          <bibl><label>18</label> the third package was targeted at the further integration of the national energy systems and<lb/> the development of competition. in particular, directive 2009/72/ec introduced the principle of<lb/> ownership unbundling, namely the unbundling of ownership of energy and natural gas transmission<lb/> activities from other energy activities, as well as the establishment of the acer agency, namely<lb/> the agency for the cooperation of energy regulators, under regulation 713/2009 for coordinating<lb/> regulatory activities in the Member states. see directive 2009/72/ec of the european Parliament<lb/> and of the council of 13 July 2009 concerning common rules for the internal market in electricity<lb/> and repealing directive 2003/54/ec; regulation (ec) no 713/2009 of the european Parliament and<lb/> of the council of 13 July 2009 establishing an agency for the cooperation of energy regulators.<lb/></bibl>
+
+          <bibl><label>19</label> t. Müller, "Umweltenergierecht als instrument transformativer Politik," dms -der moderne<lb/> staat -Zeitschrift für Public Policy, Recht und Management 12, 2019, no. 2, pp. 382-399.<lb/></bibl>
+          <bibl><label>20</label> see: United nations Framework convention on climate change, done at new york on<lb/> 9 May 1992, approved on behalf of the community by council decision 94/69/ec of 15 december<lb/> 1993 concerning the conclusion of the United nations Framework convention on climate change,<lb/> oJ L 33, 7.2.1994, p. 11.</bibl>
+          <bibl>the republic of Poland is also a party to the Framework convention (see:<lb/> Journal of Laws of 1996, no. 53, item 238 as amended).<lb/></bibl>
+
+          <bibl><label>21</label> the kyoto Protocol to the United nations Framework convention on climate change,<lb/> done at kyoto on 11 december 1997, approved by council decision 2002/358/ec of 25 april 2002,<lb/> oJ L 130, 15.5.2002, p. 1. </bibl>
+          <bibl>Poland also ratified the kyoto Protocol (Journal of Laws of 2005, no. 203,<lb/> item 1684 as amended).<lb/></bibl>
+
+          <bibl><label>22</label> communication of the european commission of 10/1/2007 to the european council and<lb/> the european Parliament entitled "european energy Policy", coM(2007) 1 final.<lb/></bibl>
+
+          <bibl><label>23</label> see: directive 2009/29/ec of the european Parliament and of the council of 23 april 2009<lb/> amending directive 2003/87/ec so as to improve and extend the greenhouse gas emission allow-<lb/>ance trading scheme of the community, oJ L 140, p. 63;</bibl>
+          <bibl>decision no. 2009/406/ec of the european<lb/> Parliament and of the council of 23 april 2009 on the effort of Member states to reduce their green-<lb/>house gas emissions to meet the community's greenhouse gas emission reduction commitments up<lb/> to 2020, oJ L 140, p. 136 as amended.<lb/></bibl>
+          <bibl><label>24</label> the so-called red i directive 2009/28/ec of the european Parliament and of the council<lb/> of 23 april 2009 on the promotion of the use of energy from renewable sources.<lb/></bibl>
+          <bibl><label>25</label> directive 2012/27/eU of the european Parliament and of the council of 25 october 2012 on<lb/> energy efficiency.<lb/></bibl>
+
+          <bibl><label>26</label> see: r. Maruszkin, EU ETS, czyli system handlu przydziałami emisji gazów cieplarnianych<lb/> w Unii Europejskiej. Komentarze praktyczne, LeX/el. 2020.<lb/></bibl>
+
+          <bibl><label>27</label> communication from the commission to the european Parliament, the european council,<lb/> the european economic and social committee, the committee of the regions and the european<lb/> investment Bank, the energy Union Package. a Framework strategy for a resilient energy Union with<lb/> a Forward-Looking climate change Policy, Brussels, 25 February 2015, coM(2015) 80 final.<lb/></bibl>
+
+          <bibl type="footnote"><label>28</label> Paris agreement to the United nations Framework convention on climate change, done at<lb/> new york on 9 May 1992, adopted in Paris on 12 december 2015. almost 190 countries have joined<lb/> the agreement, including the european Union and its Member states.<lb/></bibl>
+
+          <bibl><label>29</label> see: council decision (eU) 2016/1841 of 5 october 2016 on the conclusion, on behalf of<lb/> the european Union, of the Paris agreement adopted under the United nations Framework conven-<lb/>tion on climate change (oJ L 282 of 19.10.2016, pp. 1-3).<lb/> </bibl>
+
+        <bibl><label>30</label> Poland has also ratified the convention (see: Journal of Laws of 2017, item 36, as amended).<lb/> </bibl>
+
+        <bibl><label>31</label> k. sobieraj, "Wpływ Porozumienia paryskiego na zmianę polityki klimatyczno-energe-<lb/>tycznej Unii europejskiej i unijnych regulacji prawnych w tym zakresie," Ruch Prawniczy, Ekono-<lb/>miczny i Socjologiczny 74, 2017, no. 4, p. 177 et seq.<lb/></bibl>
+          <bibl><label>32</label>coM(2016) 860 final.<lb/></bibl>
+
+          <bibl><label>33</label> regulation (eU) 2018/1999 of the european Parliament and of the council of 11 decem-<lb/>ber 2018 on the governance of the energy Union and climate action, amending certain regulations<lb/> and directives.<lb/></bibl>
+
+          <bibl><label>34</label> regulation (eU) 2021/1119 of the european Parliament and of the council of 30 June 2021<lb/> establishing the framework for achieving climate neutrality and amending regulations (ec)<lb/> no. 401/2009 and (eU) 2018/1999 (european climate Law) (oJ.L 243/1 of 2021).<lb/> </bibl>
+        <bibl><label>35</label> J. s. Przyborowicz, "european climate Law -new legal revolution towards climate neu-<lb/>trality in the eU," Opolskie Studia Administracyjno-Prawne 4, 2021, no. 19, p. 39.<lb/></bibl>
+          <bibl><label>36</label>communication from the commission to the european Parliament, the council, the eu-<lb/>ropean economic and social committee and the committee of the regions "Fit for 55": delivering<lb/> the eU's 2030 climate target on the way to climate neutrality (coM/2021/550 final).<lb/></bibl>
+
+          <bibl><label>37</label> see: "Pakiet gotowi na 55," Biuletyn Europejski 45, 2022, no. 3, pp. 1-4.<lb/></bibl>
+          <bibl><label>38</label> "energy policy: general principles," european Parliament. Fact Sheets on the European<lb/> Union 2022, see https://www.europarl.europa.eu/factsheets/en/sheet/68/energy-policy-general-prin-<lb/>ciples (accessed: 22.04.2023).<lb/></bibl>
+          <bibl><label>39</label> communication from the commission to the european Parliament, the european council,<lb/> the european economic and social committee and the committee of the regions rePowereU Plan<lb/> (coM/2022/230 final).<lb/></bibl>
+
+          references<lb/>
+
+<bibl>adamczewska n., zajączkowska M., "realizacja zrównoważonej polityki energetycznej Unii eu-<lb/>ropejskiej w kontekście celów zrównoważonego rozwoju (sdg) -wybrane aspekty," Folia<lb/> Iuridica Universitatis Wratislaviensis 11, 2002, no. 2, pp. 9-25.<lb/> </bibl>
+<bibl>akaliyski P., Welzel ch., Hien J., "a community of shared values? dimensions and dynamics of<lb/> cultural integration in the european Union," Journal of European Integration 44, 2021, no. 2,<lb/> pp. 1-22.<lb/> </bibl>
+<bibl>capra F., Henderson H., "Qualitative growth. a conceptual framework for finding solutions to our<lb/> current crisis that are economically sound, ecologically sustainable, and socially just," [in:]<lb/> From Capitalistic to Humanistic Business, eds. M. Pirson, U. steinvorth, c. Largacha-Marti-<lb/>nez, c. dierksmeier, London 2014, pp. 35-47.<lb/> </bibl>
+<bibl>Fullerton J., Regenerative Capitalism: How Universal Principles and Patterns Will Shape the New<lb/> Economy, capital institute 2015.<lb/> </bibl>
+<bibl>Jakubiec M., "Miks energetyczny i struktura produkcji energii w Polsce w 2022 r.," Globenerga,<lb/> 13.02.2023, https://globenergia.pl/ponad-21-energii-pochodzilo-z-oze-miks-energetyczny-i-<lb/>struktura-produkcji-energii-w-polsce-w-2022-r/ (accessed: 12.03.2023).<lb/> </bibl>
+<bibl>Lissoń P., "rynek energetyczny," [in:] Prawo rynku wewnętrznego. System Prawa Unii Europejskiej, ed.<lb/> d. kornobis-romanowska, vol. 7, Warszawa 2020, pp. 577-594.<lb/> </bibl>
+<bibl>Maruszkin r., EU ETS, czyli system handlu przydziałami emisji gazów cieplarnianych w Unii Eu-<lb/>ropejskiej. Komentarze praktyczne, LeX/el. 2020.<lb/> </bibl>
+<bibl>Morata F., sandoval s.i., European Energy Policy, edward elgar, northampton 2012.<lb/> Müller t., "Umweltenergierecht als instrument transformativer Politik," dms -der moderne staat<lb/> 2019, no. 2, pp. 382-399.<lb/> </bibl>
+<bibl>nowak B., Wewnętrzny rynek energii w Unii Europejskiej. Studium porównawcze na podstawie<lb/> sektorów energii elektrycznej i gazu a sprawa (kwestia) Polski, Warszawa 2009.<lb/></bibl>
+          <bibl>"Pakiet gotowi na 55", Biuletyn Europejski 45, 2022, no. 3.<lb/></bibl>
+          <bibl>"energy policy: general principles," european Parliament. Fact Sheets on the European Union 2022,<lb/> see: https://www.europarl.europa.eu/factsheets/en/sheet/68/energy-policy-general-principles.<lb/> </bibl>
+<bibl>Przyborowicz J. s., "european climate Law -new legal revolution towards climate neutrality in the<lb/> eU," Opolskie Studia Administracyjno-Prawne 4, 2021, no. 19, pp. 39-53.<lb/> </bibl>
+<bibl>sikora a., "european green deal -legal and financial challenges of the climate change," ERA Fo-<lb/>rum 2021, vol. 21, pp. 681-697.<lb/> </bibl>
+<bibl>sobieraj k., "Wpływ Porozumienia paryskiego na zmianę polityki klimatyczno-energetycznej Unii<lb/> europejskiej i unijnych regulacji prawnych w tym zakresie," Ruch Prawniczy, Ekonomiczny<lb/> i Socjologiczny 74, 2017, no. 4, pp. 177-190.<lb/> </bibl>
+<bibl>zięba r., Wspólna Polityka Zagraniczna i Bezpieczeństwa Unii Europejskiej, Warszawa 2007.</bibl>
+        </listBibl>
+    </text>
+
+
+</TEI>

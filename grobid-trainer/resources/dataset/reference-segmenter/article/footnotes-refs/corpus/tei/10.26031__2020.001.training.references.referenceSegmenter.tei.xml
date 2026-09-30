@@ -1,0 +1,445 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.26031__2020.001">
+    <titleStmt>
+      <title level="a">Von „Wirtschaftsverfassung I, II“ zum „selbstgerechten Rechtsverfassungsrecht“: Zur Kritizität von Rudolf Wiethölters „kritischer Systemtheorie“ - From “Economic Constitution I, II” to the “Self-justifying Law of Constitutional Law”: On the criticality of Rudolf Wiethölter’s Critical Systems Theory</title>
+      <author>
+        <persName>
+          <forename>Gunther</forename>
+          <surname>Teubner</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="dfejzo">Daniel Fejzo</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Ancilla Iuris</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2020</date>
+      <idno type="DOI">10.26031/2020.001</idno>
+      <ptr target="https://www.anci.ch/articles/578"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Gunther Teubner. (2020). Von „Wirtschaftsverfassung I, II“ zum „selbstgerechten Rechtsverfassungsrecht“: Zur Kritizität von Rudolf Wiethölters „kritischer Systemtheorie“ - From “Economic Constitution I, II” to the “Self-justifying Law of Constitutional Law”: On the criticality of Rudolf Wiethölter’s Critical Systems Theory. DOI: 10.26031/2020.001</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Von „Wirtschaftsverfassung I, II“ zum „selbstgerechten Rechtsverfassungsrecht“: Zur Kritizität von Rudolf Wiethölters „kritischer Systemtheorie“ - From “Economic Constitution I, II” to the “Self-justifying Law of Constitutional Law”: On the criticality of Rudolf Wiethölter’s Critical Systems Theory</title>
+          <author>
+            <persName>
+              <forename>Gunther</forename>
+              <surname>Teubner</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <imprint>
+            <date when="2020">2020</date>
+            <publisher>Ancilla Iuris</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.26031/2020.001</idno>
+        <ptr target="https://www.anci.ch/articles/578"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-22T11:34:20.694892Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-70-g77a8a2219</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-22T11:34:20.694892Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-22T14:15:09.148Z" status="unfinished" who="#dfejzo">
+      <note type="label">v2 (dfejzo)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-26T12:57:53.954Z" status="draft" who="#dfejzo">
+      <desc>Revision 1st Pass Daniel</desc>
+    </change>
+    <change when="2026-07-02T16:33:05.015Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Revision 1st Pass Daniel</desc>
+    </change>
+    <change when="2026-07-02T17:32:57.745Z" status="unfinished" who="#kazuyo">
+      <desc>Revision 1st Pass Daniel</desc>
+    </change>
+    <change when="2026-07-03T17:38:10.303Z" status="checked" who="#kazuyo">
+      <desc>Revision 1st Pass Daniel</desc>
+    </change>
+    <change when="2026-07-03T17:40:26.357Z" status="checked" who="#kazuyo">
+      <desc>Revision 1st Pass Daniel</desc>
+    </change>
+    <change when="2026-07-03T17:42:14.125Z" status="checked" who="#kazuyo">
+      <desc>Revision 1st Pass Daniel</desc>
+    </change>
+    <change when="2026-07-06T16:02:16.155Z" status="checked" who="#kazuyo">
+      <desc>Revision 1st Pass Daniel</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label><lb/> This is a generalization of Blumenberg's famous thesis that in the<lb/> Renaissance a reinterpretation of curiositas from a vice into a virtue<lb/> took place, only by which did the modern institution of science become<lb/> possible, Hans Blumenberg, The Legitimacy of the Modern Age (1986),<lb/> 229 ff.<lb/> </bibl>
+        <bibl><label>2</label> Thomas Aquinas, Summa theologica, Part One of Part Two, Question 84.<lb/> </bibl>
+        <bibl><label>3</label><lb/> More on this Nahel Asfour, The Cultural Perspective of Wrongful<lb/> Enrichment Law: A Study in Comparative Poetics (2013), 56 ff., 60.<lb/> </bibl>
+
+        <bibl><label>1</label><lb/> Dies ist eine Verallgemeinerung der These von Hans Blumenberg, in der<lb/> Renaissance habe sich eine Umdeutung der curiositas von einem Laster<lb/> in eine Tugend vollzogen, was erst die moderne Institution der Wissen-<lb/>schaft möglich gemacht hat, Hans Blumenberg, Die Legitimität der Neu-<lb/>zeit (1965), 68 ff.<lb/> </bibl>
+        <bibl><label>2</label> Thomas Aquinas, Summa theologica, Bd. 31: III (1934), Frage 84.<lb/> </bibl>
+        <bibl><label>3</label><lb/> Dazu näher Nahel Asfour, The Cultural Perspective of Wrongful Enrich-<lb/>ment Law: A Study in Comparative Poetics (2013), 56 ff., 60.<lb/> </bibl>
+
+        <bibl><label>4</label> "Die Dienstbarkeit der Technik für die Theorie, der geradezu symboli-<lb/>sche Rang des Teleskops für die Selbstbestätigung der theoretischen<lb/> Neugierde, erforderten einen geistigen Durchbruch von der Kühnheit<lb/> der Proklamation, die Galilei im März 1610 mit seinen ‚Sidereus Nun-<lb/>cius' vollziehen sollte." Blumenberg (Fn. 1), 435.<lb/> </bibl>
+        <bibl><label>5</label><lb/> Ibid. </bibl>
+
+        <bibl><label>7</label><lb/> Eingehende historische Analysen zur funktionalen Differenzierung bei<lb/> Niklas Luhmann, Gesellschaftsstruktur und Semantik I-IV (1980-1996).<lb/> </bibl>
+
+        <bibl><label>4</label> The servitude of technology to theory, the almost symbolic rank of the<lb/> telescope for the self-affirmation of theoretical curiosity, required a spi-<lb/>ritual breakthrough from the boldness of the proclamation that Galileo<lb/> was to carry out, see Blumenberg (fn. 1).<lb/> </bibl>
+        <bibl><label>5</label><lb/> Ibid. </bibl>
+
+        <bibl><label>7</label><lb/> In-depth historical analysis of functional differentiation in Niklas Luh-<lb/>mann, Gesellschaftsstruktur und Semantik I-IV (1980-1996), one article<lb/> available in English: Niklas Luhmann, Temporalization of Complexity,<lb/> in: Geyer / Zouwen (eds.), Sociocybernetics (1978), 95-111.<lb/> </bibl>
+        <bibl><label>8</label><lb/> On collective addiction Gunther Teubner, A Constitutional Moment?<lb/> The Logics of "Hit the Bottom", in: Kjaer / Teubner / Febbrajo (eds.), The<lb/> Financial Crisis in Constitutional Perspective: The Dark Side of Func-<lb/>tional Differentiation (2011), 4-42.<lb/> </bibl>
+
+        <bibl><label>8</label><lb/> Zur Kollektivsucht Gunther Teubner, A Constitutional Moment? The<lb/> Logics of "Hit the Bottom", in: Kjaer / Teubner / Febbrajo (Hg.), The<lb/> Financial Crisis in Constitutional Perspective: The Dark Side of Func-<lb/>tional Differentiation (2011), 4-42. </bibl>
+          <bibl>In die gleiche Richtung zielt Femias<lb/> Kritik an einer "Paranomia" moderner Institutionen als der dunklen<lb/> Seite der Rationalisierungsbewegung, Pasquale Femia, Desire for Text:<lb/> Bridling the Divisional Strategy of Contract, Law and Contemporary<lb/> Problems 76 (2013), 150-168.<lb/> </bibl>
+
+        <bibl><label>9</label><lb/> Zu den Steigerungszwängen der Funktionssysteme Niklas Luhmann,<lb/> Die Gesellschaft der Gesellschaft (1997), 757; </bibl>
+        <bibl>Rudolf Stichweh, Towards<lb/> a General Theory of Function System Crisis, in: Kjaer / Teubner / Feb-<lb/>brajo (Hg.), The Financial Crisis in Constitutional Perspective: The<lb/> Dark Side of Functional Differentiation (2011), 53-72; </bibl>
+        <bibl>Hartmut Rosa,<lb/> Beschleunigung: Die Veränderung der Temporalstrukturen in der Mo-<lb/>derne (2005), besonders 295 ff.<lb/> </bibl>
+        <bibl><label>10</label> RW 281 f., Arbeit und Bildung, 1989. Die Betonung liegt auf dem systemi-<lb/>schen Charakter der Krisen. Hier bloß von Legitimationskrisen zu spre-<lb/>chen, ist ihm zu vordergründig. Bewusstseins-, Motivations-,<lb/> Legitimationskrisen seien nur sekundär, seien "eher vom ‚System' als<lb/> von der ‚Sozialität' bestimmt".<lb/> </bibl>
+        <bibl><label>11</label> RW 544, Wissenschaftskritische Ausbildungsreform, 1982.<lb/> </bibl>
+        <bibl><label>12</label> RW 250, Sozialwissenschaftliche Modelle im Wirtschaftsrecht, 1985.<lb/> </bibl>
+
+          <bibl><label>9</label><lb/> On the pressure of repetition and multiplication (Steigerungszwang) in<lb/> functional systems, Niklas Luhmann, Theory of Society vol. 2 (2013), 95;<lb/> </bibl>
+          <bibl>Rudolf Stichweh, Towards a General Theory of Function System Crisis,<lb/> in: Kjaer / Teubner / Febbrajo (eds.), The Financial Crisis in Constitu-<lb/>tional Perspective: The Dark Side of Functional Differentiation (2011),<lb/> 53-72, sub IV; </bibl>
+          <bibl>Hartmut Rosa, Beschleunigung: Die Veränderung der<lb/> Temporalstrukturen in der Moderne (2005).<lb/> </bibl>
+        <bibl><label>10</label> RW 281 f., Arbeit und Bildung, 1989. To speak here merely of legitimacy<lb/> crises is simply too facile for him. Crises of consciousness, motivation<lb/> and legitimacy are only secondary, are "more determined by the 'system'<lb/> than by 'sociality.'"<lb/> </bibl>
+          <bibl><label>11</label> RW 544, Wissenschaftskritische Ausbildungsreform, 1982.<lb/></bibl>
+        <bibl><label>12</label> RW 250, Sozialwissenschaftliche Modelle im Wirtschaftsrecht, 1985.<lb/> </bibl>
+
+        <bibl><label>13</label> RW 172, Zur Argumentation im Recht, 1995 (Rivalität von "Wirtschaft-<lb/>des-Rechts-Verfassung",<lb/> "Wirtschaft-der-Gesellschaft-Verfassung",<lb/> "Gesellschaft-als-Gesellschaft-Verfassung"). </bibl>
+
+        <bibl><label>15</label> Rudolf Wiethölter, Der Reform-Planer, in: Hart (Hg.), Wissenschaft, Ver-<lb/>waltung und Politik als Beruf: Liber amicorum Volker Kröning zum 70.<lb/> Geburtstag am 15. März 2015 (2015), 21.<lb/> </bibl>
+        <bibl><label>16</label> RW 185, Zur Argumentation im Recht, 1995; </bibl>
+         <bibl>RW 106 ff., Recht-Fertigun-<lb/>gen eines Gesellschafts-Rechts, 2003.<lb/> </bibl>
+        <bibl><label>17</label> RW 224, Vom besonderen Allgemeinprivatrecht zum allgemeinen Son-<lb/>derprivatrecht, 1982/83.<lb/> </bibl>
+
+        <bibl><label>13</label> RW 172, Zur Argumentation im Recht, 1995 (rivalry between economy-<lb/>of-law-constitution, economy-of-society-constitution, society-as-<lb/>society-constitution). </bibl>
+
+        <bibl><label>15</label> Rudolf Wiethölter, Der Reform-Planer, in: Hart (ed.), Wissenschaft, Ver-<lb/>waltung und Politik als Beruf: Liber amicorum Volker Kröning zum 70.<lb/> Geburtstag am 15. März 2015 21-30 (2015), 21.<lb/> </bibl>
+        <bibl><label>16</label> RW 185, Zur Argumentation im Recht, 1995; </bibl>
+<bibl>Wiethölter (fn. *, 2005), 106<lb/> ff..<lb/> </bibl>
+        <bibl><label>17</label> RW 224, Vom besonderen Allgemeinprivatrecht zum allgemeinen Son-<lb/>derprivatrecht, 1982/83.<lb/> </bibl>
+
+        <bibl><label>18</label> Rudolf Wiethölter, Arbeit und Bildung, in: Erd (Hg.), Kritische Theorie<lb/> und Kultur (1989), 368ff., 375.<lb/> </bibl>
+        <bibl><label>19</label> Die ausdrückliche Selbstkennzeichnung als "juristischer Negativismus"<lb/> findet sich in Rudolf Wiethölter, Recht und Politik: Bemerkungen zu<lb/> Peter Schwerdtners Kritik, Zeitschrift für Rechtspolitik (1969), 155-158.<lb/> </bibl>
+        <bibl><label>20</label> RW 49, Thesen zum Wirtschaftsverfassungsrecht, 1977.<lb/> </bibl>
+
+        <bibl><label>18</label> Rudolf Wiethölter, Arbeit und Bildung, in: Erd (ed.), Kritische Theorie<lb/> und Kultur 368 ff. (1989), 375.<lb/> </bibl>
+        <bibl><label>19</label> The explicit self-description under juridical negativism can be found in<lb/> Rudolf Wiethölter, Recht und Politik: Bemerkungen zu Peter Schwerdt-<lb/>ners Kritik, Zeitschrift für Rechtspolitik (1969), 155-158.<lb/> </bibl>
+        <bibl><label>20</label> RW 49, Thesen zum Wirtschaftsverfassungsrecht, 1977.<lb/> </bibl>
+        <bibl><label>21</label> Rudolf Wiethölter, Rechtswissenschaft (1968). Italian translation: Le<lb/> formule magiche della scienza giuridica, Rom 1975. Spanish translation:<lb/> Las Formulas Magicas de la Ciencia Juridica, Madrid 1991. </bibl>
+         <bibl>For a debate<lb/> in the English speaking world: Duncan Kennedy, Comment on Rudolf<lb/> Wiethölter's Materialization and Proceduralization in Modern Law?<lb/> and Proceduralization of the Category of Law, in: Joerges / Trubek (eds.),<lb/> Critical Legal Thought: An American-German Debate (1989), 511-524.<lb/> </bibl>
+
+        <bibl><label>21</label> Rudolf Wiethölter, Rechtswissenschaft (1968). Italienisch: Le Formule<lb/> Magiche della Scienza Giuridica (übersetzt und eingeleitet von Pietro<lb/> Barcellona), Rom / Bari 1975. Spanisch: Las Formulas Magicas de la<lb/> Ciencia Juridica, Madrid 1991. Vgl. z.B. Duncan Kennedy, Comment on<lb/> Rudolf Wiethölter's Materialization and Proceduralization in Modern<lb/> Law and Proceduralization of the Category of Law, in: Joerges / Trubek<lb/> (Hg.), Critical Legal Thought: An American-German Debate (1989), 511-<lb/>524.<lb/> </bibl>
+        <bibl><label>22</label> Wiethölter (fn. 21). Die Zitate finden sich 9 f., 17 f., 26, 28 f.<lb/> </bibl>
+        <bibl><label>23</label> RW 49, Thesen zum Wirtschaftsverfassungsrecht, 1977. </bibl>
+        <bibl>Eine neuere<lb/> Diskussion verschiedener Versionen materialer Verfassungstheorie bei<lb/> Marco Goldoni, Introduction to the Material Study of Global Constitu-<lb/>tional Law, Global Constitutionalism 8 (2018), 71-93.<lb/> </bibl>
+        <bibl><label>24</label> Ibid., 48.<lb/> </bibl>
+
+        <bibl><label>22</label> Wiethölter (fn. 21). The quotes are from 9 f., 17 f., 26, 28 f.<lb/> </bibl>
+        <bibl><label>23</label> RW 49, Thesen zum Wirtschaftsverfassungsrecht, 1977. </bibl>
+        <bibl>For the recent<lb/> debate on a material constitutional theory, which continues this tradi-<lb/>tion, Marco Goldoni, Introduction to the Material Study of Global Con-<lb/>stitutional Law, Global Constitutionalism 8 (2018), 71-93.<lb/> </bibl>
+        <bibl><label>24</label> Ibid., 48.<lb/> </bibl>
+        <bibl><label>25</label> Ibid., 50.<lb/> </bibl>
+
+        <bibl><label>25</label> Ibid., 50.<lb/> </bibl>
+        <bibl><label>26</label> Ibid., 49.<lb/> </bibl>
+        <bibl><label>27</label> RW 398 ff., Begriffs-oder Interessenjurisprudenz, 1977.<lb/> </bibl>
+        <bibl><label>28</label> RW 50, Thesen zum Wirtschaftsverfassungsrecht, 1977.<lb/> </bibl>
+
+        <bibl><label>26</label> Ibid., 49.<lb/> </bibl>
+        <bibl><label>27</label> RW 398 ff., Begriffs-oder Interessenjurisprudenz, 1977.<lb/> </bibl>
+        <bibl><label>28</label> RW 50, Thesen zum Wirtschaftsverfassungsrecht, 1977.<lb/> </bibl>
+
+        <bibl><label>29</label> RW 298, Position des Wirtschaftsrechts im Sozialstaat, 1965.
+</bibl>
+          <bibl> Hinter-<lb/>grund sind natürlich die in Weimar entwickelten Vorstellungen zur<lb/> Wirtschafts-und Sozialverfassung, besonders Hugo Sinzheimer,<lb/> Arbeitsrecht und Rechtsoziologie. Gesammelte Aufsätze und Reden,<lb/> herausgegeben von Otto Kahn-Freund und Thilo Ramm, 2 Bände (1976).<lb/> </bibl>
+          <bibl>Dazu monographisch Ruth Dukes, The Labour Constitution: The Endu-<lb/>ring Idea of Labour Law (2014).<lb/> </bibl>
+        <bibl><label>30</label> RW 385, Begriffs-oder Interessenjurisprudenz, 1977.<lb/> </bibl>
+        <bibl><label>31</label> RW 535 f., Anforderung an den Juristen heute, 1969. </bibl>
+          <bibl>Zu Wiethölters Ein-<lb/>schätzung des Bremer Hochschulexperiments Wiethölter (Fn. 15), 22 ff.<lb/></bibl>
+        <bibl><label>32</label> Rudolf Wiethölter, "L'essentiel est invisible pour les yeux", in: Joerges /<lb/> Zumbansen (Hg.), Politische Rechtstheorie Revisited (2013), 188. </bibl>
+          <bibl>Dazu<lb/> eingehend Domenico Siciliano, "Juristen sind nicht ‚von Kant', sondern<lb/> ‚von Ulpian'": Der Frankfurter Streit zwischen Jürgen Habermas und<lb/> Rudolf Wiethölter über den "Philosoph als wahrer Rechtslehrer",<lb/> Kritische Justiz 52 (2019), 575-600.<lb/> </bibl>
+
+        <bibl><label>29</label> RW 298 Position des Wirtschaftsrechts im Sozialstaat, 1965. </bibl>
+          <bibl>Obviously,<lb/> the background ist he debate in the Weimar Republic on economic and<lb/> labor constitutionalism, particularly Hugo Sinzheimer, Arbeitsrecht und<lb/> Rechtsoziologie. Gesammelte Aufsätze und Reden, herausgegeben von<lb/> Otto Kahn-Freund und Thilo Ramm, 2 Bände (1976). </bibl>
+         <bibl>For an excellent<lb/> analysis, Ruth Dukes, The Labour Constitution: The Enduring Idea of<lb/> Labour Law (2014).<lb/> </bibl>
+        <bibl><label>30</label> RW 385 ff., Begriffs-oder Interessenjurisprudenz, 1977.<lb/> </bibl>
+        <bibl><label>31</label> RW 535 f., Anforderung an den Juristen heute, 1969. </bibl>
+          <bibl>On Wiethölter's<lb/> assessment of the Bremen university experiment Wiethölter (fn. 15), 22<lb/> ff.<lb/> </bibl>
+        <bibl><label>32</label> Rudolf Wiethölter, "L'essentiel est invisible pour les yeux", in: Joerges /<lb/> Zumbansen (eds.), Politische Rechtstheorie Revisited (2013)188. </bibl>
+        <bibl>For<lb/> more details, Domenico Siciliano, "Juristen sind nicht 'von Kant', son-<lb/>dern 'von Ulpian'": Der Frankfurter Streit zwischen Jürgen Habermas<lb/> und Rudolf Wiethölter über den "Philosoph als wahrer Rechtslehrer",<lb/> Kritische Justiz 52 (2019) 575-600.<lb/> </bibl>
+
+        <bibl><label>33</label> Besonders von Wolfgang Welsch, Vernunft: Die zeitgenössische Ver-<lb/>nunftkritik und das Konzept der transversalen Vernunft (1996).<lb/> </bibl>
+        <bibl><label>34</label> Zu Anschlussmöglichkeiten des Rechts für alle drei Theorien RW 107,<lb/> Recht-Fertigungen eines Gesellschaftsrechts, 2013.<lb/> </bibl>
+        <bibl><label>35</label> So der Titel von RW 55, Ist unserem Recht der Prozess zu machen? 1989.<lb/> </bibl>
+
+        <bibl><label>33</label> Wolfgang Welsch, Vernunft: Die zeitgenössische Vernunftkritik und das<lb/> Konzept der transversalen Vernunft (1996).<lb/> </bibl>
+        <bibl><label>34</label> On the possibilities of connecting law to all three theories Wiethölter (fn.<lb/> *), 2005.<lb/> </bibl>
+        <bibl><label>35</label> Thus the title of RW 55, Ist unserem Recht der Prozess zu machen? 1989.<lb/> </bibl>
+
+        <bibl><label>36</label> Etwa RW 171 ff., Zur Argumentation im Recht, 1995.<lb/> </bibl>
+        <bibl><label>37</label> Jürgen Habermas, Theorie des kommunikativen Handelns, Band 2: Zur<lb/> Kritik der funktionalistischen Vernunft (1981), 229 ff. (System/Lebens-<lb/>welt, Evolution, Trennung von Handlungsbereichen); 536 ff. (Recht als<lb/> Institution/Medium).<lb/> </bibl>
+
+        <bibl><label>36</label> For example, RW 171 ff., Zur Argumentation im Recht, 1995.<lb/> </bibl>
+        <bibl><label>37</label> Jürgen Habermas, The Theory of Communicative Action. Vol. 2 : Life-<lb/>world and System -A Critique of Functional Reason (1987), 454 ff.<lb/> (system/life world, evolution, separation of areas of action); 365 ff. (law<lb/> as institution/medium).<lb/> </bibl>
+
+        <bibl><label>38</label> RW 107, Recht-Fertigungen eines Gesellschafts-Rechts, 2003. Aller-<lb/>dings würde die Systemtheorie einwenden, dass auch nach einer solchen<lb/> Obstruktion stets ein neues autopoietisches System entsteht würde, so<lb/> wie auch die moderne Kunst nach allen Obstruktionen ein autopoieti-<lb/>sches System geblieben ist.<lb/> </bibl>
+        <bibl><label>39</label> Diese quasi-religiösen Bezüge nimmt Wiethölter für seinen akademi-<lb/>schen Vorgänger Franz Böhm, mit dem er sich durchaus identifiziert, in<lb/> Anspruch, RW 85, Franz Böhm (1895-1977), 1989.<lb/> </bibl>
+        <bibl><label>40</label> Eingehend zu den Divergenzen zwischen Habermas und Wiethölter,<lb/> Siciliano (Fn. 32).<lb/> </bibl>
+        <bibl><label>41</label> RW 154, Zur Regelbildung in der Dogmatik des Zivilrechts, 1992. </bibl>
+          <bibl>Über-<lb/>einstimmumgen und Unterschiede der "Theorierivalen" Wiethölter und<lb/> Luhmann beleuchten Roman Guski, Die Einheit der Gegensätze: Nega-<lb/>tivismus, Systemtheorie und Rechtsdogmatik, Kritische Justiz 52<lb/> (2019), 435-448,</bibl>
+          <bibl>und Gunther Teubner, Der Umgang mit Rechtspara-<lb/>doxien: Derrida, Luhmann, Wiethölter, in: Joerges / Teubner (Hg.),<lb/> Rechtsverfassungsrecht: Recht-Fertigungen zwischen Sozialtheorie<lb/> und Privatrechtsdogmatik (2003), 25-45.<lb/> </bibl>
+
+        <bibl><label>38</label> Wiethölter (fn. *, 2005), 75. Systems theory would object, however, that<lb/> even after such an obstruction a new autopoietic system would always<lb/> emerge, just as modern art has remained an autopoietic system after all<lb/> obstructions.<lb/> </bibl>
+        <bibl><label>39</label> Wiethölter makes use of these quasi-religious references for his acade-<lb/>mic predecessor Franz Böhm, with whom he certainly identifies, RW 85,<lb/> Franz Böhm (1895-1977), 1989.<lb/> </bibl>
+        <bibl><label>40</label> For the differences between Habermas and Wiethölter in detail, Sici-<lb/>liano (fn. 32).<lb/> </bibl>
+        <bibl><label>41</label> RW 154, Zur Regelbildung in der Dogmatik des Zivilrechts, 1992. </bibl>
+        <bibl>For the<lb/> differences between Luhmann and Wiethölter, Roman Guski, Die Ein-<lb/>heit der Gegensätze: Negativismus, Systemtheorie und Rechtsdogmatik,<lb/> Kritische Justiz 52 (2019) 435-448; </bibl>
+         <bibl>Gunther Teubner, Dealing with<lb/> Paradoxes of Law: Derrida, Luhmann, Wiethölter, in: Perez / Teubner<lb/> (eds.), On Paradoxes and Inconsistencies in Law (2006), 41-64.<lb/> </bibl>
+
+        <bibl><label>42</label> Wahrscheinlich aus dem gleichen Grunde zeigt sich bei Emilios Christo-<lb/>doulidis, einem prominenten Vertreter der kritischen Rechtstheorie,<lb/> eine Wahlverwandtschaft zu Luhmanns Systemtheorie, Emilios A.<lb/> Christodoulidis, On the Politics of Societal Constitutionalism, Indiana<lb/> Journal of Global Legal Studies 20 (2013), 629-664. </bibl>
+         <bibl>Parallel dazu<lb/> benutzt Bob Jessop sechs Schlüsselbegriffe der Systemtheorie, um<lb/> Defizite der heutigen Marxismustheorien zu korrigieren, Bob Jessop,<lb/> Zur Relevanz von Luhmanns Systemtheorie und von Laclau und<lb/> Mouffes Diskursanalyse für die Weiterentwicklung der marxistischen<lb/> Staatstheorie, Hirsch / Kannankulam (Hg.), Der Staat der bürgerlichen<lb/> Gesellschaft (2008), 157-179.<lb/> </bibl>
+        <bibl><label>43</label> RW 108 Recht-Fertigungen eines Gesellschafts-Rechts, 2003. An ande-<lb/>rer Stelle bezeichnet er es als das "Rechtsparadoxon -Recht begründet<lb/> seine Geltungen (‚autonom') als Recht durch Recht gegen Recht", RW 59<lb/> Ist unserem Recht der Prozess zu machen? <lb/> </bibl>
+          <bibl>In unmittelbarer Nachbarschaft zu Wiethölters Ideen zu Autonomie<lb/> und Interdependenz entwickelt Jessop (Fn. 42) eine gründlich durch-<lb/>dachte Synthese von kritischer Theorie und Systemtheorie, die auf eine<lb/> radikale operative Autonomie der Sozialsysteme im Schatten der ökolo-<lb/>gischen Dominanz der Wirtschaft hinausläuft.<lb/> </bibl>
+
+        <bibl><label>42</label> Probably for the same reasons Emilios Christodoulidis, a prominent<lb/> speaker of critical systems theory, shows elective affinities to Luh-<lb/>mann's theory, Emilios A. Christodoulidis, On the Politics of Societal<lb/> Constitutionalism, Indiana Journal of Global Legal Studies 20 (2013)<lb/> 629-664. </bibl>
+        <bibl>In a parallel fashion Bob Jessop makes use of six central con-<lb/>cepts of systems theory to compensate for deficiencies of contemporary<lb/> Marxist theories of society, Bob Jessop, Zur Relevanz von Luhmanns<lb/> Systemtheorie und von Laclau und Mouffes Diskursanalyse für die<lb/> Weiterentwicklung der marxistischen Staatstheorie, Hirsch / Kannan-<lb/>kulam (eds.), Der Staat der bürgerlichen Gesellschaft (2008), 157-179.<lb/> </bibl>
+        <bibl><label>43</label> Wiethölter (fn. *, 2005), 75. He characterizes the legal paradoxon: "Law is<lb/> founding its validity ('autonomously') as law through law against law",<lb/> RW 59 Ist unserem Recht der Prozess zu machen?<lb/> </bibl>
+         <bibl>Close to Wiethölter's ideas on autonomy and interdependence, Jessop<lb/> (fn. 42) elaborates a thoroughly thought-through synthesis of systems<lb/> theory and critical theory, ending up with the social systems' radical ope-<lb/>rative autonomy existing in the shadow of the economy's ecological<lb/> dominance.<lb/> </bibl>
+
+        <bibl><label>44</label> Gotthard Günther, Beiträge zur Grundlegung einer operationsfähigen<lb/> Dialektik (1976), 319.<lb/> </bibl>
+
+        <bibl><label>44</label> Gotthard Günther, Beiträge zur Grundlegung einer operationsfähigen<lb/> Dialektik (1976), 319.<lb/> </bibl>
+
+        <bibl><label>45</label> Ebenso Sonja Buckel, Subjektivierung und Kohäsion: Zur Rekonstruk-<lb/>tion einer materialistischen Theorie des Rechts (2007).<lb/> </bibl>
+        <bibl><label>46</label> RW 167, Zur Argumentation im Recht, 1995.<lb/> </bibl>
+
+        <bibl><label>45</label> Same Sonja Buckel, Subjektivierung und Kohäsion: Zur Rekonstruktion<lb/> einer materialistischen Theorie des Rechts (2007).<lb/> </bibl>
+        <bibl><label>46</label> RW 167, Zur Argumentation im Recht, 1995.<lb/> </bibl>
+
+        <bibl><label>47</label> Luhmann ironisiert die vielfach angemahnte Integration als ein "Ver-<lb/>zweiflungskonzept", dessen "überrollende Dringlichkeit" er schlicht<lb/> bezweifelt. Stattdessen beschreibt er die moderne Gesellschaft als eher<lb/> "überintegriert", Luhmann (Fn. 9), 618, 777.<lb/> </bibl>
+        <bibl><label>48</label> RW 64 f., Ist unserem Recht der Prozess zu machen? 1989. Ob diese Kri-<lb/>tik (ebenso wie Wiethölters Zuordnung von Systemtheorie und ökono-<lb/>mischer Theorie zum gleichen politischen und theoretischen Lager)<lb/> zutrifft, steht auf einem anderen Blatt. Eine gesellschaftsintegrierende<lb/> Rolle spricht Luhmann dem Wirtschaftssystem wohl nicht zu; im<lb/> Gegenteil betont er eher dessen desintegrierende Rolle. Und ob die<lb/> unbestreitbaren Tendenzen einer Ökonomisierung des Rechts, heute<lb/> tatsächlich, wie es Wiethölter sagt, zu einer Fusion der Wirtschaft und<lb/> des Rechts geführt haben, dürfte zweifelhaft sein. Eher müsste man das<lb/> heutige ökonomisierte Recht daraufhin im Detail untersuchen, welche<lb/> der folgenden Alternativen verwirklicht sind: (1) massive Steigerung der<lb/> wirtschaftlichen Irritationen des Rechtssystems oder (2) Zunahme öko-<lb/>nomischer Programme im binär codierten Recht oder (3) ökonomische<lb/> Zweitcodierung des Rechts oder (4) Transformation des binären Recht-<lb/>scodes in den binären Wirtschaftscode mit dem Rechtscode als bloße<lb/> Fassade. (1) und (2) dürften mit Sicherheit zutreffen, (3) wahrscheinlich<lb/> (noch) nicht, (4) dürfte auszuschließen sein.<lb/> </bibl>
+        <bibl><label>49</label> Beide Begriffe unterscheiden sich deutlich vom zur Zeit üblichen<lb/> Gebrauch, z.B. von Rainer Forsts Definition der Reziprozität des Inhalts<lb/> und der Reziprozität der Gründe in normativen Diskursen, Rainer Forst,<lb/> Toleranz im Konflikt: Geschichte, Gehalt und Gegenwart eines umstrit-<lb/>tenen Begriffs (2003), 491 ff., oder von Brian Barrys Definition von<lb/> (sekundärer) Unparteilichkeit als Erfordernis, dass Regeln auf der<lb/> freien Übereinstimmung von Personen, die freie Übereinstimmung in<lb/> vernünftigen Begriffen suchen, basieren, Brian Barry, Justice as Impar-<lb/>tiality (1995), 11.<lb/> </bibl>
+
+        <bibl><label>47</label> Luhmann speaks of integration with irony as a "concept of despair"<lb/> whose overwhelming urgency he simply doubts. Instead, he describes<lb/> modern society as overintegrated, Luhmann (fn. 9), 16.<lb/> </bibl>
+        <bibl><label>48</label> RW 64 f., Ist unserem Recht der Prozess zu machen? 1989. Whether this<lb/> criticism is justified is a different matter. Arguably, Luhmann does not<lb/> attribute a socially integrating role to the economic system; on the con-<lb/>trary, he emphasizes rather its disintegrating role. And it is doubtful<lb/> whether the undeniable tendencies towards the economization of law<lb/> have actually led, as Wiethölter says, to a real fusion of the economy and<lb/> the law today. Rather, one would have to examine today's economized<lb/> law in detail as to which of the following alternatives have been realized:<lb/> (1) massive increase of economic irritations of the legal system or (2)<lb/> multiplication of economic programs within binary coded law or (3) eco-<lb/>nomic secondary coding of the law or (4) transformation of the binary<lb/> legal code into the binary economic code with the legal code as mere<lb/> façade. (1) and (2) must certainly apply, (3) probably not (yet), (4) can be<lb/> excluded.<lb/> </bibl>
+        <bibl><label>49</label> Both concepts differ from established contemporary definitions, e.g.<lb/> from Rainer Forst's philosophical concept of "reciprocity of content"<lb/> and "reciprocity of reasons" in the process of normative reasoning, Rai-<lb/>ner Forst, The Right to Justification: Elements of a Constructivist<lb/> Theory of Justice (2007), 6 and passim, as well as from Brian Barry's<lb/> definition of impartiality which requires that rules be based on free<lb/> agreement of people seeking agreement on reasonable terms, Brian<lb/> Barry, Justice as Impartiality (1995),11.<lb/> </bibl>
+
+        <bibl><label>50</label> Zu intersystemischen Beziehungen Talcott Parsons / Neil J. Smelser,<lb/> Economy and Society: A Study in the Integration of Economic and Social<lb/> Theory (1956), 70 ff.; </bibl>
+        <bibl>Luhmann (Fn. 9), 603 ff.<lb/> </bibl>
+        <bibl><label>51</label> RW 471, Zum Fortbildungsrecht der (richterlichen) Rechtsfortbildung,<lb/> 1988.<lb/> </bibl>
+
+        <bibl><label>50</label> On intersystemic relations Talcott Parsons / Neil J. Smelser, Economy<lb/> and Society: A Study in the Integration of Economic and Social Theory<lb/> (1956), 70 ff.; </bibl>
+        <bibl>Luhmann (fn. 9), 6 ff.<lb/> </bibl>
+        <bibl><label>51</label> RW 471, Zum Fortbildungsrecht der (richterlichen) Rechtsfortbildung,<lb/> 1988.<lb/> </bibl>
+
+        <bibl><label>52</label> RW 158 f., Zur Regelbildung in der Dogmatik des Zivilrechts, 1992; </bibl>
+        <bibl>RW<lb/> 183, Zur Argumentation im Recht, 1995; </bibl>
+        <bibl>RW 102 f., Recht-Fertigungen<lb/> eines Gesellschafts-Rechts, 2003. </bibl>
+         <bibl>An dieser Stelle könnte man, wie<lb/> Guski (Fn. 41) andeutet, einen Berührungspunkt der eher spekulativen<lb/> Theoriekomponenten beider Denker, Luhmann und Wiethölter, vermu-<lb/>ten. Denn Luhmann entwickelt den Begriff einer ökologischen Rationa-<lb/>lität von Funktionssystemen, wonach das System die Reflexion auf seine<lb/> Umweltwirkungen und deren Rückwirkungen auf die Identität des<lb/> Systems richtet. Geradezu komplementär dazu ist Wiethölters Rechts-<lb/>verfassungsrecht daraufhin angelegt, in parteilicher Unparteilichkeit<lb/> gesellschaftliche Lernzwänge für Teilsysteme in Richtung auf eine sol-<lb/>che ökologische Reflexion rechtsförmig zu institutionalisieren und auf<lb/> Dauer zu stellen. Dass sich die Gedankengänge beider Autoren in Rich-<lb/>tung Utopie bewegen, vertritt Wiethölter offensiv.</bibl>
+          <bibl> Aber auch Luhmann<lb/> räumt, wenn auch etwas zögerlich, ein, da seine "Vorstellungen über<lb/> wirtschaftsspezifische Rationalität ins Utopische tendieren", Niklas<lb/> Luhmann, Replik auf die Besprechung des Buches: Niklas Luhmann, Die<lb/> Wirtschaft der Gesellschaft, durch Richard Münch und Claus Offe, Sozi-<lb/>ologische Revue 14 (1991) 258-261.<lb/> </bibl>
+
+        <bibl><label>52</label> RW 158 f., Zur Regelbildung in der Dogmatik des Zivilrechts, 1992; </bibl>
+        <bibl>RW<lb/> 183, Zur Argumentation im Recht, 1995; </bibl>
+        <bibl>Wiethölter (fn. *, 2005).</bibl>
+          <bibl> Guski<lb/> (fn. 41), identifies a certain convergence of rather speculative theory ele-<lb/>ments of both Luhmann and Wiethölter. Luhmann develops the concept<lb/> of an ecological rationality which focuses the system's reflection toward<lb/> its effects on the environment as well as the retroactive effects on the<lb/> system. Almost complementarily Wiethölter aims to institutionalize in<lb/> impartial partiality social learning pressures for such a systemic reflec-<lb/>tion. Wiethölter speaks openly about the utopian dimension.</bibl>
+          <bibl> But Luh-<lb/>mann as well admits, somewhat hesitantly, that his ideas about an<lb/> ecological rationality of the economy have a tendency toward utopia,<lb/> Niklas Luhmann, Replik auf die Besprechung des Buches: Niklas Luh-<lb/>mann, Die Wirtschaft der Gesellschaft, durch Richard Münch und Claus<lb/> Offe, Soziologische Revue 14 (1991) 258-261.<lb/> </bibl>
+
+        <bibl><label>53</label> Niklas Luhmann, Grundrechte als Institution: Ein Beitrag zur<lb/> politischen Soziologie (1965), 115 f., 205, Fn. 9; </bibl>
+        <bibl>Niklas Luhmann, Das<lb/> Recht der Gesellschaft (1993), 582; </bibl>
+        <bibl>Niklas Luhmann (Fn. 9), 1088, Fn.<lb/> 356 zur Kritik an Sciulli.<lb/> </bibl>
+        <bibl><label>54</label> Ders. (Fn. 53, 1993), 582.<lb/> </bibl>
+        <bibl><label>55</label> RW 158, Zur Regelbildung in der Dogmatik des Zivilrechts, 1992.<lb/> </bibl>
+        <bibl><label>56</label> RW 374, Begriffs-oder Interessenjurisprudenz, 1977.</bibl>
+        <bibl> Wiethölter spricht<lb/> stets die internationale Dimension der Rechtsverfassung an, ausführ-<lb/>lich RW Ibid. 373 ff. passim; </bibl>
+        <bibl>eher beiläufig RW 506, Pluralismus und<lb/> soziale Identität, 1981; </bibl>
+        <bibl>RW 424, Materialisierungen und Prozeduralis-<lb/>ierungen von Recht, 1984.<lb/> </bibl>
+        <bibl><label>57</label> RW 185, Zur Argumentation im Recht, 1995.<lb/> </bibl>
+        <bibl><label>58</label> RW 374, Begriffs-oder Interessenjurisprudenz, 1977.<lb/> </bibl>
+
+        <bibl><label>53</label> Niklas Luhmann, Grundrechte als Institution: Ein Beitrag zur politi-<lb/>schen Soziologie (1965), 115 f., 205, fn. 9; </bibl>
+        <bibl>idem, Law as a Social System<lb/> (2004), 487 f.; </bibl>
+        <bibl>idem (fn. 9), 430, fn. 356 criticizing Sciulli.<lb/> </bibl>
+        <bibl><label>54</label> Idem (fn. 53, 2004), 487 f.<lb/> </bibl>
+        <bibl><label>55</label> RW 158, Zur Regelbildung in der Dogmatik des Zivilrechts, 1992.<lb/> </bibl>
+        <bibl><label>56</label> RW 374 ff., Begriffs-oder Interessenjurisprudenz, 1977. Wiethölter<lb/> always addresses the international dimension of the law's constitution,<lb/> in detail idem 373 ff. passim; </bibl>
+        <bibl>rather in passing RW 506, Pluralismus und<lb/> soziale Identität, 1981; </bibl>
+        <bibl>Wiethölter (fn. *, 1986), 223.<lb/> </bibl>
+        <bibl><label>57</label> RW 185, Zur Argumentation im Recht, 1995.<lb/> </bibl>
+        <bibl><label>58</label> RW 374, Begriffs-oder Interessenjurisprudenz, 1977.<lb/> </bibl>
+
+        <bibl><label>59</label> Ibid., 417 ff.<lb/> </bibl>
+        <bibl><label>60</label> RW 535 f., Anforderung an den Juristen heute, 1969; </bibl>
+        <bibl>Wiethölter (fn. 15),<lb/> 22 ff.<lb/> </bibl>
+        <bibl><label>61</label> RW 418 f., Begriffs-oder Interessenjurisprudenz, 1977.<lb/> </bibl>
+        <bibl><label>62</label> Ibid., 418.<lb/> </bibl>
+        <bibl><label>63</label> Die verschiedenen Dimensionen lassen sich aus dem folgenden Zitat<lb/> erschließen: RW 106, Recht-Fertigungen eines Gesellschafts-Rechts,<lb/> 2003: "Rechtsverfassungsrecht! Statt ‚Verfassung' lassen sich einsetzen:<lb/> Konstitutionalisierung, Ermöglichung und Verwirklichung, Verglei-<lb/>chung und Kopplung, Verhältnis o. ä. Wichtig daran ist nur: Es geht um<lb/> ‚Kollisionsregeln'".<lb/> </bibl>
+        <bibl><label>64</label> RW 476, Zum Fortbildungsrecht der (richterlichen) Rechtsfortbildung,<lb/> 1988.<lb/> </bibl>
+
+        <bibl><label>59</label> Ibid., 417 ff.<lb/> </bibl>
+        <bibl><label>60</label> RW 535 f., Anforderung an den Juristen heute, 1969; </bibl>
+        <bibl>Wiethölter (fn. 15),<lb/> 22 ff.<lb/> </bibl>
+        <bibl><label>61</label> RW 418 f., Begriffs-oder Interessenjurisprudenz, 1977.<lb/> </bibl>
+        <bibl><label>62</label> Ibid., 418.<lb/> </bibl>
+        <bibl><label>63</label> The various dimensions are alluded to in the following citation: RW 106,<lb/> Wiethölter (fn.*, 2005): "The law of constitutional law! Instead of 'con-<lb/>stitution' the following can be applied: constitutionalization, potentiali-<lb/>zation and realization, comparison and coupling, interrelation, among<lb/> others. The only important facet: It is about 'rules of conflict.'"<lb/> </bibl>
+        <bibl><label>64</label> RW 476, Zum Fortbildungsrecht der (richterlichen) Rechtsfortbildung,<lb/> 1988.<lb/> </bibl>
+
+        <bibl><label>65</label> John R. Searle, Social Ontology: Some Basic Principles, Anthropological<lb/> Theory 6 (2006), 12-29.<lb/> </bibl>
+        <bibl><label>66</label> RW 49, Thesen zum Wirtschaftsverfassungsrecht, 1977.<lb/> </bibl>
+        <bibl><label>67</label> RW 185, Zur Argumentation im Recht, 1995.<lb/> </bibl>
+        <bibl><label>68</label> Dazu Teubner (Fn. 41), 26 f.<lb/> </bibl>
+
+        <bibl><label>65</label> John R. Searle, Social Ontology: Some Basic Principles, Anthropological<lb/> Theory 6 (2006) 12-29.<lb/> </bibl>
+        <bibl><label>66</label> RW 49, Thesen zum Wirtschaftsverfassungsrecht, 1977.<lb/> </bibl>
+        <bibl><label>67</label> RW 185, Zur Argumentation im Recht, 1995.<lb/> </bibl>
+        <bibl><label>68</label> On this in more detail, Teubner (fn. 41), 42 f.<lb/> </bibl>
+
+        <bibl><label>69</label> Luhmann (Fn. 9), 618 f.<lb/> </bibl>
+        <bibl><label>70</label> So kennzeichnet Wiethölter das Projekt von Franz Böhm, mit dessen<lb/> Intentionen (nicht aber mit dessen konkreten Konsequenzen) er sich<lb/> zugleich identifiziert, RW 87, Franz Böhm (1895-1977), 1989.<lb/> </bibl>
+        <bibl><label>71</label> RW 158, Zur Regelbildung in der Dogmatik des Zivilrechts, 1992.<lb/> </bibl>
+
+        <bibl><label>69</label> Luhmann (fn. 9), 6 ff.<lb/> </bibl>
+        <bibl><label>70</label> This is how Wiethölter characterizes Franz Böhm's project, the intenti-<lb/>ons of which he also identifies (but not the concrete consequences), RW<lb/> 87, Franz Böhm (1895-1977), 1989.<lb/> </bibl>
+        <bibl><label>71</label> RW 158, Zur Regelbildung in der Dogmatik des Zivilrechts, 1992.<lb/> </bibl>
+
+        <bibl><label>72</label> Niklas Luhmann, Soziale Systeme: Grundriß einer allgemeinen Theorie<lb/> (1984), 60 f., 573 ff.<lb/> </bibl>
+        <bibl><label>73</label> RW 81, Franz Böhm (1895-1977), 1989.<lb/> </bibl>
+        <bibl><label>74</label> RW 101, Recht-Fertigungen eines Gesellschafts-Rechts, 2003.<lb/> </bibl>
+        <bibl><label>75</label> Wiethölter spricht von selbstgerechten Normen in vielen Zusammen-<lb/>hängen, später von selbstgerechtem Rechtsverfassungsrecht. Zur<lb/> Selbstgerechtigkeit der Kollisionsnorm oder der Sachnorm: RW 373 ff.,<lb/> Begriffs-oder Interessenjurisprudenz, 1977; </bibl>
+        <bibl>zum selbstgerechten<lb/> Rechtsverfassungsrecht: RW 109, Recht-Fertigungen eines Gesell-<lb/>schafts-Rechts, 2003.<lb/> </bibl>
+        <bibl><label>76</label> RW 493, Politik und Aufklärung, 1988.<lb/> <lb/> </bibl>
+
+        <bibl><label>72</label> Niklas Luhmann, Social Systems (1995), chap.1 II, chap. 10 V.<lb/> </bibl><bibl><label>73</label> RW 81, Franz Böhm (1895-1977), 1989.<lb/> </bibl>
+        <bibl><label>74</label> Wiethölter (fn.*, 2005), 65.<lb/> </bibl>
+        <bibl><label>75</label> Wiethölter speaks about self-justifying norms in many contexts, later on<lb/> about the self-justifying law of constitutional law. On self-justification<lb/> of collision rules or of substantive rules, RW 373 ff., Begriffs-oder Inter-<lb/>essenjurisprudenz, 1977; </bibl>
+        <bibl>on self-justifying law of constitutional law,<lb/> Wiethölter (fn. *, 2005).<lb/> </bibl>
+        <bibl><label>76</label> RW 493, Politik und Aufklärung, 1988.<lb/> <lb/></bibl>
+
+        <bibl><label>77</label> RW 107, Recht-Fertigungen eines Gesellschafts-Rechts, 2003.<lb/> </bibl>
+
+        <bibl><label>78</label> Wiethölter (Fn. 32), 189.<lb/> </bibl>
+        <bibl><label>79</label> Andreas Fischer-Lescano, Luhmanns Staat und der transnationale Kon-<lb/>stitutionalismus, in: Neves / Voigt (Hg.), Die Staaten der Weltge-<lb/>sellschaft: Luhmanns Staatstheorie (2007), 99-113; </bibl>
+         <bibl>Dan Wielsch,<lb/> Gesellschaftliche Transformation durch subjektive Rechte, in: Fischer-<lb/>Lescano / Franzki / Horst (Hg.), Gegenrechte: Recht jenseits des Sub-<lb/>jekts (2018), 141-163; </bibl>
+          <bibl>Johan Horst, Transnationale Rechtserzeugung:<lb/> Elemente einer normativen Theorie der Lex Financiaria (2019).<lb/> </bibl>
+         <bibl><label>80</label> Zur Digitalverfassung Edoardo Celeste, Digital Constitutionalism: Map-<lb/>ping the Constitutional Response to Digital Technology's Challenges,<lb/> HIIG Discussion Paper 2018-02 (2018). </bibl>
+          <bibl>Zum transnationalen ökologi-<lb/>schen Konstitutionalismus Antonio Cardesa-Salzmann / Endrius Coc-<lb/>ciolo, Global Governance, Sustainability and the Earth System. Critical<lb/> Reflections on the Role of Global Law, Transnational Environmental<lb/> Law (2019), 1-25.<lb/> </bibl>
+        <bibl><label>81</label> Von Wiethölters kollisionsrechtlichen Ansatz außerhalb des internatio-<lb/>nalen Privatrechts ließen sich beeinflussen: Christian Joerges, Ver-<lb/>braucherschutz als Rechtsproblem: Eine Untersuchung zum Stand der<lb/> Theorie und zu den Entwicklungsperspektiven des Verbraucherrechts<lb/> (1981), 123 ff.; </bibl>
+          <bibl>Karl-Heinz Ladeur, Helmut Ridders Konzeption der<lb/> Meinungs-und Pressefreiheit in der Demokratie, Kritische Justiz 32<lb/> (1999), 281-300; </bibl>
+           <bibl>Peer Zumbansen, Ordnungsmuster im modernen Wohl-<lb/>fahrtsstaat: Lernerfahrungen zwischen Staat, Gesellschaft und Vertrag<lb/> (2000), 182ff.; </bibl>
+           <bibl>Dan Wielsch, Freiheit und Funktion: Zur Struktur-und<lb/> Theoriegeschichte des Rechts der Wirtschaftsgesellschaft (2001), 194ff.<lb/> </bibl>
+
+        <bibl><label>77</label> Wiethölter (fn.*, 2005), 75.<lb/> </bibl>
+        <bibl><label>78</label> Idem (fn. 32), 189.<lb/> </bibl>
+        <bibl><label>79</label> Andreas Fischer-Lescano, Luhmanns Staat und der transnationale Kon-<lb/>stitutionalismus, in: Neves/Voigt (eds.), Die Staaten der Weltgesell-<lb/>schaft: Luhmanns Staatstheorie 99-113 (2007); </bibl>
+         <bibl>Dan Wielsch,<lb/> Gesellschaftliche Transformation durch subjektive Rechte, in: Fischer-<lb/>Lescano / Franzki / Horst (eds.), Gegenrechte: Recht jenseits des Sub-<lb/>jekts 141-163 (2018); </bibl>
+          <bibl>Johan Horst, Transnationale Rechtserzeugung:<lb/> Elemente einer normativen Theorie der Lex Financiaria (2019).<lb/> </bibl>
+        <bibl><label>80</label> On digital constitutionalism Edoardo Celeste, Digital Constitutionalism:<lb/> Mapping the Constitutional Response to Digital Technology's Challen-<lb/>ges, HIIG Discussion Paper 2018-02 (2018). </bibl>
+          <bibl>On ecological constitutio-<lb/>nalism Antonio Cardesa-Salzmann / Endrius Cocciolo, Global Gover-<lb/>nance, Sustainability and the Earth System. Critical Reflections on the<lb/> Role of Global Law, Transnational Environmental Law (2019) 1-25.<lb/> </bibl>
+        <bibl><label>81</label> Wiethölter's approach to conflict of laws outside international private<lb/> law has been influential: Christian Joerges, Verbraucherschutz als<lb/> Rechtsproblem: Eine Untersuchung zum Stand der Theorie und zu den<lb/> Entwicklungsperspektiven des Verbraucherrechts (1981), 123 ff.; </bibl>
+          <bibl>Karl-<lb/>Heinz Ladeur, Helmut Ridders Konzeption der Meinungs-und Presse-<lb/>freiheit in der Demokratie, Kritische Justiz 32 (1999) 281-300; </bibl>
+          <bibl>Peer<lb/> Zumbansen, Ordnungsmuster im modernen Wohlfahrtsstaat: Lerner-<lb/>fahrungen zwischen Staat, Gesellschaft und Vertrag (2000), 182ff.; </bibl>
+          <bibl>Dan<lb/> Wielsch, Freiheit und Funktion: Zur Struktur-und Theoriegeschichte<lb/> des Rechts der Wirtschaftsgesellschaft (2001), 194 ff.<lb/> </bibl>
+
+        <bibl><label>82</label> Referenztext: Marc Amstutz / Andreas Fischer-Lescano (Hg.), Kritische<lb/> Systemtheorie: Zur Evolution einer normativen Theorie, (2013); </bibl>
+         <bibl>Ber-<lb/>tram Lomfeld, Grammatik der Rechtfertigung: Eine kritische Rekon-<lb/>struktion der Rechts(fort)bildung, Kritische Justiz 52 (2019), 516-527;<lb/> </bibl>
+         <bibl>Michael Blecher, Geschichte und Eigensinn: Rudolf Wiethölters Rechts-<lb/>Bewegungs-Kunst im 100. Semester, in: Joerges / Zumbansen (Hg.),<lb/> Politische Rechtstheorie Revisited: Rudolf Wiethölter zum 100. Semes-<lb/>ter (2013), 31-44; </bibl>
+          <bibl>Andreas Philippopoulos-Mihalopoulos, Critical Auto-<lb/>poiesis and the Materiality of Law, International Journal for the<lb/> Semiotics of Law 27 (2014), 389-418.<lb/> </bibl>
+        <bibl><label>83</label> Wiethölter (Fn. 15), 30 (Hervorhebung von mir). Soweit ersichtlich<lb/> spricht Wiethölter explizit von einer eigenrechtlichen Dialektik Produk-<lb/>tivkräfte/Produktionsverhältnisse zum ersten Male in diesem Text von<lb/> 2015 (!),</bibl>
+          <bibl> während er in früheren Texten stets die Dialektik ganz konven-<lb/>tionell "politisch-ökonomisch" verstanden hat, z.B. RW 212, Vom beson-<lb/>deren Allgemeinprivatrecht zum allgemeinen Sonderprivatrecht? 2015<lb/> und öfter.<lb/> </bibl>
+        <bibl><label>84</label> Otto Kirchheimer, Zur Staatslehre des Sozialismus und Bolschewismus,<lb/> in: Kirchheimer, Von der Weimarer Republik zum Faschismus: Die<lb/> Auflösung der demokratischen Rechtsordnung (1976 (1928)), 36 f.<lb/> </bibl>
+
+        <bibl><label>82</label> Fischer-Lescano, Critical Systems Theory, Philosophy and Social Criti-<lb/>cism 38 (2011) 3-23; </bibl>
+        <bibl>Bertram Lomfeld, Grammatik der Rechtfertigung:<lb/> Eine kritische Rekonstruktion der Rechts(fort)bildung, Kritische Justiz<lb/> 52 (2019) 516-527; </bibl>
+        <bibl>Marc Amstutz / Andreas Fischer-Lescano (eds.), Kri-<lb/>tische Systemtheorie: Zur Evolution einer normativen Theorie, (2013);<lb/> </bibl>
+         <bibl>Andreas Philippopoulos-Mihalopoulos, Critical Autopoiesis and the<lb/> Materiality of Law, International Joumal for the Semiotics of Law 27<lb/> (2014) 389-418.<lb/> </bibl>
+        <bibl><label>83</label> Wiethölter (fn. 15), 30 (my emphasis). It is for the first time in 2015 that<lb/> Wiethölter speaks of a specifically juridical dialectics of productive<lb/> forces/relations,</bibl>
+          <bibl> while in former texts he had understood these dialec-<lb/>tics in the traditional meaning of political economy, e.g. in RW 212, Vom<lb/> besonderen Allgemeinprivatrecht zum allgemeinen Sonderprivatrecht?<lb/> 2015.<lb/> </bibl>
+        <bibl><label>84</label> Otto Kirchheimer, Zur Staatslehre des Sozialismus und Bolschewismus,<lb/> in: Kirchheimer, Von der Weimarer Republik zum Faschismus: Die Auf-<lb/>lösung der demokratischen Rechtsordnung (1976 (1928)), 36 f.<lb/> </bibl>
+
+        <bibl><label>85</label> Max Weber, Wirtschaft und Gesellschaft, (1976 [1921]), 503 ff.<lb/> </bibl>
+        <bibl><label>86</label> Eugen Paschukanis, Allgemeine Rechtslehre und Marxismus: Versuch<lb/> einer Kritik der juristischen Grundbegriffe (1970 (1924)), 41 f.</bibl>
+          <bibl> Dazu<lb/> Buckel (Fn. 45), 94 ff.<lb/> </bibl>
+        <bibl><label>87</label> Pierre Bourdieu, Ökonomisches Kapital -Kulturelles Kapital -Soziales<lb/> Kapital, in: Kreckel (Hg.), Soziale Ungleichheiten (1983), 183-198.<lb/> </bibl>
+        <bibl><label>88</label> Zur materialistisch-technologischen Perspektive der Medientheorie<lb/> Friedrich Kittler, Aufschreibesysteme 1800/1900 (1985).</bibl>
+          <bibl> Umfassend zur<lb/> Korrelation von Medien-und Rechtsevolution Thomas Vesting, Die<lb/> Medien des Rechts. Band I-IV (2015).<lb/> </bibl>
+        <bibl><label>89</label> Wielsch greift Wiethölters Unterscheidung auf, um deutlich zu machen,<lb/> wie die Rechtsformen, die Ausdruck rechtseigener Produktionsverhält-<lb/>nisse sind, gesellschaftliche Produktivkräfte ermächtigen. Er beginnt,<lb/> ein Rechtsformveränderungsrecht zu entwickeln, das die Zulassung<lb/> neuer gesellschaftlicher Produktivkräfte ermöglicht, Dan Wielsch,<lb/> Rechtsformveränderungsrecht: Die Zulässigkeit des Neuen, Kritische<lb/> Justiz 52 (2019), 639-656.<lb/> </bibl>
+
+        <bibl><label>85</label> Max Weber, Economy and Society (1978), 61.<lb/> </bibl>
+        <bibl><label>86</label> Evgeny Bronislavovich Pashukanis, The General Theory of Law and<lb/> Marxism; Buckel (fn. 45), 94 ff.<lb/> </bibl>
+        <bibl><label>87</label> Pierre Bourdieu, The Forms of Capital, Handbook of Theory of Research<lb/> for the Sociology of Education (1986) 46-58.<lb/> </bibl>
+        <bibl><label>88</label> On the materialist-technological perspective of media theory, Friedrich<lb/> Kittler, Literature, Media, Information Systems (Critical Voices) (1997).<lb/> </bibl>
+<bibl>Comprehensive on the correlation of media and legal evolution, Thomas<lb/> Vesting, Legal Theory and the Media of Law (2018).<lb/> </bibl>
+        <bibl><label>89</label> Wielsch makes use of the distinction and demonstrates how juridical<lb/> forms, which represent production relations of law, empower productive<lb/> forces in society. He begins to develop a "law of change of juridical<lb/> forms" that makes the admission of new productive forces possible, Dan<lb/> Wielsch, Rechtsformveränderungsrecht: Die Zulässigkeit des Neuen,<lb/> Kritische Justiz 52 (2019), 639-656.<lb/> </bibl>
+
+        <bibl><label>90</label> Zur Interpretation der Parabel siehe die Beiträge in: Gunther Teubner<lb/> (Hg.), Die Rückgabe des zwölften Kamels: Niklas Luhmann in der<lb/> Diskussion über Gerechtigkeit (2000), auch in: Zeitschrift für Rechtsso-<lb/>ziologie 21 (2000), 189-215.<lb/> </bibl>
+        <bibl><label>91</label> Niklas Luhmann, Die Einheit des Rechtssystems, Rechtstheorie 14<lb/> (1983), 146.<lb/> </bibl>
+
+        <bibl><label>90</label> For an interpretation of the parable see Gunther Teubner, Alienating<lb/> Justice: On the Social Surplus Value of the Twelfth Camel, in: Nelken /<lb/> Pribán (eds.), Law's New Boundaries: Consequences of Legal Autopoie-<lb/>sis (2001), 21-44.<lb/> </bibl>
+        <bibl><label>91</label> Niklas Luhmann, The Unity of the Legal System, in: Teubner (ed.), Auto-<lb/>poietic Law: A New Approach to Law and Society (1988), 23 f.<lb/> </bibl>
+
+        <bibl><label>92</label> Damit wird versucht, Luhmanns Thesen zum Profitprinzip der Wirt-<lb/>schaft zu generalisieren und für andere Funktionssysteme zu respezifi-<lb/>zieren, Niklas Luhmann, Die Wirtschaft der Gesellschaft (1988), 55 ff.<lb/> </bibl>
+        <bibl><label>93</label> Damit wird klargestellt, dass die in den Funktionssystemen institutio-<lb/>nalisierte Kollektivsucht, dazu Teubner (Fn. 8), sich auf die hier ange-<lb/>sprochenen systemeigenen Mehrwertproduktionen richtet.<lb/> </bibl>
+        <bibl><label>94</label> Meist mit sozialpolitisch positiv bewerteten Konnotationen, z.B. Mark<lb/> H. Moore, Recognizing Public Value (2013); </bibl>
+         <bibl>Anja Schwerk, Strategisches<lb/> gesellschaftliches Engagement und gute Corporate Governance, in:<lb/> Backhaus-Maul / Biedermann / Nährlich / Polterauer (Hg.), Corporate<lb/> Citizenship in Deutschland (2010), 173-199.<lb/> </bibl>
+        <bibl><label>95</label> Luhmann (Fn. 9), 316.<lb/> </bibl>
+
+        <bibl><label>92</label> This generalizes Luhmann's theses on the profit principle of the eco-<lb/>nomy and respecifies them for other functional systems, Niklas Luh-<lb/>mann, Die Wirtschaft der Gesellschaft (1988), 55 ff.<lb/> </bibl>
+        <bibl><label>93</label> The production of surplus value is indeed the object of desire for a col-<lb/>lective addiction which is institutionalized in various functional<lb/> systems, see Teubner (Fn. 8).<lb/> </bibl>
+        <bibl><label>94</label> Usually associated with positive social policy ambitions, e.g. Mark H.<lb/> Moore, Recognizing Public Value (2013); </bibl>
+         <bibl>Anja Schwerk, Strategisches<lb/> gesellschaftliches Engagement und gute Corporate Governance, in: Bac-<lb/>khaus-Maul / Biedermann / Nährlich / Polterauer (eds.), Corporate Citi-<lb/>zenship in Deutschland (2010), 173-199.<lb/> </bibl>
+        <bibl><label>95</label> Luhmann (fn. 9), Ch. 2, IX.<lb/> </bibl>
+
+        <bibl><label>96</label> Etwa Christoph Menke, Kritik der Rechte (2015), 266 ff.<lb/> </bibl>
+        <bibl><label>97</label> Vgl. Niklas Luhmann, Organisationen im Wirtschaftssystem, in: Luh-<lb/>mann, Soziologische Aufklärung 3: Soziales System, Gesellschaft,<lb/> Organisation (1981), 401ff.<lb/> </bibl>
+
+        <bibl><label>96</label> Christoph Menke, Critique of Rights (2020), Ch. III, 12.<lb/> </bibl>
+        <bibl><label>97</label> Cf. Niklas Luhmann, Organisationen im Wirtschaftssystem, in: Luh-<lb/>mann, Soziologische Aufklärung 3: Soziales System, Gesellschaft, Orga-<lb/>nisation (1981), 401 ff.<lb/> </bibl>
+
+        <bibl><label>98</label> Ders. (Fn. 92), 55 entwickelt dies Argument für das Profitprinzip der<lb/> Wirtschaft.<lb/> </bibl>
+
+        <bibl><label>98</label> Idem (fn. 92), 55, develops this argument for the profit principle of the<lb/> economy.<lb/> </bibl>
+
+        <bibl><label>99</label> Auch hier wieder eine Generalisierung, diesmal einer gängigen Unter-<lb/>scheidung der Betriebswirtschaft, und ihre Respezifizierung für andere<lb/> Handlungssysteme, Erich Kosiol, Die Unternehmung als wirtschaftli-<lb/>ches Aktionszentrum (1972), 54, 223.<lb/> </bibl>
+        <bibl><label>99</label> Here again a generalization, this time of a common distinction used in<lb/> business management, and its respecification for other action systems,<lb/> Erich Kosiol, Die Unternehmung als wirtschaftliches Aktionszentrum<lb/> (1972), 54, 223.<lb/></bibl>
+
+          <bibl><label>100</label> Luhmann (Fn. 97), 404 ff.<lb/></bibl>
+
+          <bibl><label>100</label> Luhmann (fn. 97), 404 ff.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

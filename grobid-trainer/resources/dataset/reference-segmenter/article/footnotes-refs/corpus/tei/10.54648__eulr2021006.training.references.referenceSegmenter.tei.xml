@@ -1,0 +1,452 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.54648__eulr2021006">
+    <titleStmt>
+      <title level="a">A Decade after the Global Financial Crisis: New Regulatory Challenges to Financial Stability</title>
+      <author>
+        <persName>
+          <forename>Mohammed</forename>
+          <surname>Khair alshaleel</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Johana</forename>
+          <surname>Hoekstra</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="admin">Administrator</persName>
+        <resp>editor</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Kluwer Law International BV</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2021</date>
+      <idno type="DOI">10.54648/eulr2021006</idno>
+      <ptr target="https://doi.org/10.54648/eulr2021006"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Mohammed Khair alshaleel, Johana Hoekstra. (2021). A Decade after the Global Financial Crisis: New Regulatory Challenges to Financial Stability. European Business Law Review, 32(Issue 1), 117-156. DOI: 10.54648/eulr2021006</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">A Decade after the Global Financial Crisis: New Regulatory Challenges to Financial Stability</title>
+          <author>
+            <persName>
+              <forename>Mohammed</forename>
+              <surname>Khair alshaleel</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Johana</forename>
+              <surname>Hoekstra</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">European Business Law Review</title>
+          <imprint>
+            <biblScope unit="volume">32</biblScope>
+            <biblScope unit="issue">Issue 1</biblScope>
+            <biblScope unit="page" from="117" to="156">117-156</biblScope>
+            <date when="2021">2021</date>
+            <publisher>Kluwer Law International BV</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.54648/eulr2021006</idno>
+        <ptr target="https://doi.org/10.54648/eulr2021006"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-31T15:31:13.075397Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-71-g595835ed0</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-31T15:31:13.075397Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-31T15:49:02.073Z" status="extraction" who="#admin">
+      <note type="label">Extraction (use this)</note>
+      <desc>Renamed to Extraction (use this)</desc>
+    </change>
+    <change when="2026-04-27T18:12:20.571Z" status="unfinished" who="#cboulanger">
+      <note type="label">v3 (cboulanger)</note>
+      <desc>Pre-draft</desc>
+    </change>
+    <change when="2026-04-27T20:46:03.251Z" status="draft" who="#cboulanger">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T16:08:31.582Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T16:33:15.776Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T16:44:20.303Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T16:47:33.248Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T16:50:22.432Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T16:52:46.718Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T16:55:11.479Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T16:57:54.152Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T17:01:24.031Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T17:02:17.648Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T17:04:44.008Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T17:08:28.512Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-14T17:09:54.416Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-15T08:39:34.604Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-15T08:43:47.233Z" status="draft" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+    <change when="2026-09-15T08:48:43.850Z" status="checked" who="#kazuyo">
+      <desc>First pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> See Federal Reserve Bank of Dallas, Understanding the Risks Inherent in Shadow Banking:<lb/> A Primer and Practical Lessons Learned (November 2012) at &lt;https://www.dallasfed.org/~/media/<lb/> documents/research/staff/staff1203.pdf&gt; accessed 25 April 2020.<lb/> </bibl>
+      <bibl><label>2</label> The G20, 'Global Plan for Recovery and Reform' (2009)<lb/> http://www.g20.utoronto.ca/2009/2009communique0402.html accessed 26 August 2019.<lb/> </bibl>
+      <bibl><label>3</label> Mohammed Alshaleel, Money Market Funds Reforms in the US and the EU: The Quest for Financial Stability,'<lb/> 31 EBLR 303 -335 (2020).<lb/> </bibl>
+      <bibl><label>4</label> See, FSB, Implementation and Effects of the G20 Financial Regulatory Reforms ,4th Annual Report (2018)<lb/> https://www.fsb.org/2018/11/implementation-and-effects-of-the-g20-financial-regulatory-reforms-fourth-<lb/>annual-report/ accessed 6 September 2019.<lb/> </bibl>
+      <bibl><label>5</label> FSB, Supra n.4<lb/> </bibl>
+      
+      <bibl><label>6</label> See for example, Christopher Bradley, FinTech's Double Edges, Chi.-Kent L. Rev 61 (2018); </bibl>
+      <bibl>Christopher Odinet,<lb/> Consumer Bitcredit and Fintech Lending, 69 Ala. L. Rev. 781 (2018); </bibl>
+      <bibl>Charles Mooney, Fintech and Secured<lb/> Transactions Systems of the Future, 81 Law &amp; Contemp. Probs. 1 (2018); and </bibl>
+      <bibl>Chris Brummer and Yesha Yadav,<lb/> Fintech and the Innovation Trilemma, 107 Geo. L.J. 235 (2019).<lb/> </bibl>
+      <bibl><label>7</label> See for example, Jeremy Cape, Brexit and Taxes, 47 Intertax 345 (2019); </bibl>
+      <bibl>Christopher McCorkindale, Brexit<lb/> and Human Rights, 22 Edinburgh L. Rev 126 (2018); and </bibl>
+      <bibl>Giorgio Sacerdoti and Paulo Mariani, Brexit and Trade<lb/> Issues' 11 Eur. J. Legal Stud 187 (2019).<lb/> </bibl>
+      <bibl><label>8</label> See for example, Anne Krueger, The Rise of the Emerging Markets ,18 Law &amp; Bus. Rev. Am 445 (2012); </bibl>
+      <bibl>Claire<lb/> Hill, Whole Business Securitization in Emerging Markets, 12 Duke J. Comp. &amp; Int'l L. 521 (2002); and </bibl>
+      <bibl>Ayuli<lb/> Jemide, More Appetite for Emerging Markets, 27 Int'l Fin. L. Rev.70 (2008).<lb/> </bibl>
+      <bibl><label>9</label> The G20, Supra n.2<lb/> </bibl>
+      
+      <bibl><label>10</label> See, Robert W. Kolb, Lessons from the Financial Crisis: Causes, Consequences, and Our Economic Future, 135<lb/> (New Jersey; </bibl>
+      <bibl>John Wiley &amp; Sons, 2010).<lb/> </bibl>
+      <bibl><label>11</label> The G20, G20 Special Leaders Summit on the Financial Situation Washington DC (2008). Available at<lb/> http://www.g20.utoronto.ca/summits/2008washington.html accessed 16 June 2019.<lb/> </bibl>
+      <bibl><label>12</label> Hilary Allen, A New Philosophy for Financial Stability Regulation 45 Loy. U. Chi. L. J. 174-230 (2013).<lb/> </bibl>
+      <bibl><label>13</label> Jeffrey Friedman &amp; Wladimir Kraus, Engineering the Financial Crisis: Systemic Risk and the Failure of<lb/> Regulation, 119 (Pennsylvania; University of Pennsylvania Press, 2011).<lb/> </bibl>
+      
+      <bibl><label>14</label> Ismael Hossein-zadeh, Beyond Mainstream Explanations of the Financial Crisis: Parasitic Finance Capital, 12<lb/> (New York; Routledge, 2014).<lb/> </bibl>
+      <bibl><label>15</label> Niamh Moloney, The legacy Effects of the Financial Crisis on Regulatory design in the EU' in The Regulatory<lb/> Aftermath of the Global Financial Crisis, 118 (New York; Cambridge University Press, 2012).<lb/> </bibl>
+      <bibl><label>16</label> Bank of Canada, Essays on Financial Stability, Technical Report No. 95 (2003) available at<lb/> http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.172.8150&amp;rep=rep1&amp;type=pdf accessed 16 June<lb/> 2019.<lb/> </bibl>
+      <bibl><label>17</label> Frederic S. Mishkin, Global Financial Instability: Framework, Events, Issues 13 Journal of Economic<lb/> Perspectives 3-20 (1999).<lb/> </bibl>
+      
+      <bibl><label>18</label> Garry J. Schinasi, Defining Financial Stability IMF Working Paper No. WP/04/187, (2004) available at<lb/> https://www.imf.org/external/pubs/ft/wp/2004/wp04187.pdf accessed 16 June 2019.<lb/> </bibl>
+      <bibl><label>19</label> Andrew D. Crockett, Why is Financial Stability a Goal of Public Policy? 6 Economic Review 5-22 (1997).<lb/> </bibl>
+      <bibl><label>20</label> European Central Bank, Financial Stability Review (2012) available at<lb/> https://www.ecb.europa.eu/pub/pdf/other/financialstabilityreview201212en.pdf?f73875a2aa7884337314f4f1<lb/> c4db5a7d<lb/> </bibl>
+      
+      <bibl><label>21</label> See, Rainer Masera, CRR/CRD IV: The Trees and the Forest, 67 PSL Quarterly Review 381-422(2014).<lb/> </bibl>
+      <bibl><label>22</label> See, Andreas Krause, Systemic Risk, in Investment Risk Management, 189 (New York; Oxford University<lb/> Press, 2015).<lb/> </bibl>
+      <bibl><label>23</label> European Systemic Risk Board, Recommendation of The European Systemic Risk Board of 4 April 2013 On<lb/> Intermediate Objectives And Instruments of Macro-Prudential Policy (ESRB/2013/1), C 170/1. (2013) Available<lb/> at https://www.esrb.europa.eu/pub/pdf/recommendations/2013/ESRB_2013_1.en.pdf accessed 16 June<lb/> 2019.<lb/> </bibl>
+      <bibl><label>24</label> Systemic risk is defined by the OECD as "the risk that the inability of one institution to meet its obligations<lb/> when due will cause other institutions to be unable to meet their obligations when due. Such a failure may cause<lb/> significant liquidity or credit problems and, as a result, could threaten the stability of or confidence in markets".<lb/> OECD, Glossary Of Statistical Terms (2004) available at https://stats.oecd.org/glossary/detail.asp?ID=6796<lb/> </bibl>
+      
+      <bibl><label>25</label> Damodaran Krishnamurti &amp; Yejin Carol Lee, Macroprudential Policy Framework: A Practice Guide, 50<lb/> (Washington; World Bank Publications, 2014).<lb/> </bibl>
+      <bibl><label>26</label> See, Matthias Haentjens &amp; Pierre Gioia-Carabellese, European Banking and Financial Law, 102 (New York;<lb/> Routledge, 2015).<lb/> </bibl>
+      <bibl><label>27</label> The G20, Supra n.2<lb/></bibl>
+      
+      <bibl><label>28</label> The G20, Supra n.2<lb/></bibl>
+      <bibl><label>29</label> FSB tasks available at https://www.fsb.org/about/<lb/></bibl>
+      
+      <bibl><label>30</label> FSB, Supra n.4. </bibl>
+      
+      <bibl><label>32</label> Basel Committee on Banking Supervision, Basel III: The Liquidity Coverage Ratio and Liquidity Risk<lb/> Monitoring Tools (2013). Available at www.bis.org/publ/bcbs238.htm accessed 16 June 2019.<lb/> </bibl>
+      <bibl><label>33</label> Basel Committee on Banking Supervision, Progress Report on Implementation of the Basel Regulatory<lb/> Framework (2013). Available at http://www.bis.org/publ/bcbs247.pdf accessed 16 June 2019.<lb/> </bibl>
+      <bibl><label>34</label> See, Georges Ugeux, International Finance Regulation: The Quest for Financial Stability, 65 (New Jersey;<lb/> John Wiley &amp; Sons, 2014).<lb/> </bibl>
+      
+      <bibl><label>35</label> See, Eric. Posner, Last Resort: The Financial Crisis and the Future of Bailouts, 35 (Chicago; University of<lb/> Chicago Press, 2018). </bibl>
+      <bibl><label>37</label> See, FSB, Global Systemically Important Financial Institutions (G-SIFIs), (2019). Available at<lb/> https://www.fsb.org/work-of-the-fsb/policy-development/addressing-sifis/global-systemically-important-<lb/>financial-institutions-g-sifis/ accessed 16 June 2019.<lb/> </bibl>
+      <bibl><label>38</label> FSB, 2017 list of global systemically important banks (G-SIBs), (2018). Available at<lb/> https://www.fsb.org/2018/11/2018-list-of-global-systemically-important-banks-g-sibs/ accessed 16 June 2019.<lb/></bibl>
+      
+      <bibl><label>39</label> FSB, Supra n.4<lb/> </bibl>
+      <bibl><label>40</label> See, FSB, OTC Derivatives Market Reforms: Twelfth Progress Report on Implementation, (2017). Available at<lb/> https://www.fsb.org/2017/06/otc-derivatives-market-reforms-twelfth-progress-report-on-implementation/<lb/> accessed 16 June 2019.<lb/> </bibl>
+      
+      <bibl><label>41</label> See, FSB, Strengthening Oversight and Regulation of Shadow Banking, (2013). Available at<lb/> https://www.fsb.org/wp-content/uploads/r_130829b.pdf accessed 16 June 2019.<lb/> </bibl>
+      <bibl><label>42</label> See, IMF, Shadow Banking and Market Based Finance (2017). Available at<lb/> https://www.imf.org/en/News/Articles/2017/09/13/sp091417-shadow-banking-and-market-based-finance<lb/> accessed 25 April 2020.<lb/> </bibl>
+      <bibl><label>43</label> See, SEC, SEC Adopts Money Market Fund Reform Rules (2014) available at<lb/> https://www.sec.gov/news/press-release/2014-143<lb/> </bibl>
+      <bibl><label>44</label> See, Regulation (EU) 2017/1131 of the European Parliament and of the Council of 14 June 2017 on money<lb/> market funds [2017] OJ L 169/8.<lb/> </bibl>
+      <bibl><label>45</label> Available at https://www.fsb.org/2017/01/policy-recommendations-to-address-structural-vulnerabilities-<lb/>from-asset-management-activities/ accessed 16 June 2019.<lb/> </bibl>
+      
+      <bibl><label>46</label> Bank for International Settlements, Structural changes in banking after the crisis, (2018) CGFS Papers No 60<lb/> available at https://www.bis.org/publ/cgfs60.htm accessed 24 February 2020.<lb/> </bibl>
+      <bibl><label>47</label> Bank for International Settlements, Supra n.46.<lb/> </bibl>
+      <bibl><label>48</label> See, Pranay Gupta &amp; T. Mandy Tham, Fintech: The New DNA of Financial Services, 39 (Berlin; Walter de<lb/> Gruyter GmbH &amp; Co KG, 2018).<lb/> </bibl>
+      
+      <bibl><label>49</label> See, FSB, Financial Stability Implications from FinTech, Supervisory and Regulatory Issues that Merit<lb/> Authorities' Attention (2017) available at https://www.fsb.org/wp-content/uploads/R270617.pdf<lb/></bibl>
+      
+      <bibl><label>50</label> FSB, Supra n.49.<lb/> </bibl>
+      
+      <bibl><label>51</label> Ihy Chiu, Fintech and Disruptive Business Models in Financial Products, Intermediation, and Market-Policy<lb/> Implications for Financial Regulators, 21 J. TECH. L. &amp; POL'Y 55-112 (2016).<lb/> </bibl>
+      <bibl><label>52</label> KPMG, The Pulse of Fintech 2018 (2018). Available at<lb/> https://assets.kpmg/content/dam/kpmg/xx/pdf/2019/02/the-pulse-of-fintech-2018.pdf accessed 26 June<lb/> 2019.<lb/> </bibl>
+      <bibl><label>53</label> See, Gregor Dorfleitner, Lars Hornuf, Matthias Schmitt &amp; Martina Weber, FinTech in Germany, 1 (Berlin;<lb/> Springer, 2017).<lb/> </bibl>
+      
+      <bibl><label>54</label> For further information about robo-advice see, Paolo Sironi, FinTech Innovation: From Robo-Advisors to Goal<lb/> Based Investing and Gamification, 51 (Chichester, John Wiley &amp; Sons, 2016).<lb/> </bibl>
+      
+      <bibl><label>55</label> Sironi, Supra n.45, 50.<lb/> </bibl>
+      <bibl><label>56</label> FSB, Supra n.49.<lb/> </bibl>
+      <bibl><label>57</label> See, Douglas Arner, Janos Nathan Barberis &amp; Ross Buckey, FinTech, RegTech, and the Reconceptualization of<lb/> Financial Regulation 37 Nw. J. Int'l L. &amp; Bus. 371-414 (2017).<lb/> </bibl>
+      
+      <bibl><label>58</label> Consumer Financial Protection Bureau, Administrative Proceeding, (2016). Available at<lb/> https://files.consumerfinance.gov/f/201603_cfpb_consent-order-dwolla-inc.pdf.<lb/> </bibl>
+      <bibl><label>59</label> IMF Working Paper, Cyber Risk for the Financial Sector: A Framework for Quantitative Assessment, (2018)<lb/> available at https://www.imf.org/en/Publications/WP/Issues/2018/06/22/Cyber-Risk-for-the-Financial-Sector-<lb/>A-Framework-for-Quantitative-Assessment-45924 accessed 25 April 2020.<lb/> </bibl>
+      <bibl><label>60</label> International Monetary Fund and World Bank Group, Fintech: The Experience So Far, (2019) available at<lb/> https://www.imf.org/en/Publications/Policy-Papers/Issues/2019/06/27/Fintech-The-Experience-So-Far-47056<lb/> accessed 25 February 2020.<lb/> </bibl>
+      <bibl><label>61</label> The European Supervisory Authorities, Joint Advice on the Costs and Benefits of a Coherent Cyber Resilience<lb/> Testing Framework for Significant Market Participants and Infrastructures, (2019) available at<lb/> https://eba.europa.eu/sites/default/documents/files/documents/10180/2551996/d229589f-a855-45f2-ad5a-<lb/>411792792e60/JC%202019%2025%20(Joint%20ESAs%20Advice%20on%20a%20coherent%20cyber%20resilien<lb/> ce%20testing%20framework).pdf accessed 26 February 2020.<lb/> </bibl>
+      <bibl><label>62</label> Sironi, Supra n.54, at 51.<lb/> </bibl>
+      
+      <bibl><label>64</label> The European Securities and Markets Authority, Report on the Licensing of FinTech Business Models, (2019)<lb/> available at https://www.esma.europa.eu/sites/default/files/library/esma50-164-<lb/>2430_licensing_of_fintech.pdf accessed 25 February 2020.<lb/> </bibl>
+      <bibl><label>65</label> International Monetary Fund and World Bank Group, Supra n.60.<lb/> </bibl>
+      
+      <bibl><label>66</label> See, Douglas Arner, Janos Nathan Barberis, Dirk A. Zetzsche &amp; Ross Buckey, FinTech and RegTech: Enabling<lb/> Innovation While Preserving Financial Stability, 18 Geo. J. Int'l Aff. 47-58 (2017).<lb/> </bibl>
+      <bibl><label>67</label> See, European Securities and Markets Authority, Financial Technology: ESMA's Approach, 4th Luxembourg<lb/> FinTech Conference (2018). Available at https://www.esma.europa.eu/sites/default/files/library/esma71-99-<lb/>1051_speech_on_cryptoassets_-_pa.pdf accessed 8 July 2019.<lb/></bibl>
+      
+      <bibl><label>68</label> Available at https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32015L2366 accessed 8 July<lb/> 2019.<lb/> </bibl>
+      <bibl><label>69</label> See, FSB, Regulatory and Supervisory Issues from FinTech, (2017) available at https://www.fsb.org/wp-<lb/>content/uploads/Cambridge-Centre-for-Alternative-Finance-Regulatory-and-Supervisory-Issues-from-<lb/>FinTech.pdf accessed 9 July 2019.<lb/> </bibl>
+      <bibl><label>70</label> Gupta and Tham Supra n.48, at 27.<lb/> </bibl>
+      
+      <bibl><label>71</label> Magyar Nemzeti Bank, Innovation and Stability Overview of Fintech in Hungary, consultation document<lb/> (2017) available at https://www.mnb.hu/letoltes/consultation-document.pdf accessed 8 July 2019.<lb/> </bibl>
+      <bibl><label>72</label> Australian Securities and Investments Commission, 'ASIC's Innovation Hub and our approach to regulatory<lb/> technology' (2017) available at https://download.asic.gov.au/media/4270022/rep523-published-26-may-<lb/>2017.pdf accessed 8 July 2019.<lb/> </bibl>
+      <bibl><label>73</label> See, Christopher G. Bradley, FinTech's Double Edges, 93 Chi.-Kent L. Rev. 61-95 (2018).<lb/> </bibl>
+      <bibl><label>74</label> For further information see, FCA, Regulatory sandbox, (2019) available at<lb/> https://www.fca.org.uk/firms/regulatory-sandbox accessed 8 July 2019.<lb/> </bibl>
+      <bibl><label>75</label><lb/> Magyar Nemzeti Bank, Supra n. 71.<lb/> </bibl>
+      <bibl><label>76</label> European Securities and Markets Authority, Supra n.67.<lb/> </bibl>
+      
+      <bibl><label>77</label> See, FSB, Supra n.49.<lb/> </bibl>
+      <bibl><label>78</label> FSB, FinTech and market structure in financial services: Market developments and potential financial stability<lb/> implications, (2019) available at https://www.fsb.org/wp-content/uploads/P140219.pdf accessed 8 July 2019.<lb/> </bibl>
+      
+      <bibl><label>79</label> Jakob Miethe &amp; David Pothier, Brexit: What's at Stake for the Financial Sector? 6 DIW Economic Bulletin,<lb/> 364,364 (2016).<lb/> </bibl>
+      <bibl><label>80</label> David Howarth &amp; Lucia Quaglia, Brexit and the Single European Financial Market, 55 J. Common Mark. Stud.<lb/> 149, 155 n.1 (2017).<lb/> </bibl>
+      <bibl><label>81</label> Howarth,Supra n.80 at 152.<lb/> </bibl>
+      <bibl><label>82</label> David Howarth &amp; Lucia Quaglia Brexit and the battle for financial services, 25 J. Eur. Public Policy, 1118, 1118<lb/> n.8 (2018)<lb/> </bibl>
+      <bibl><label>83</label> Miethe,Supra n.79, at 364.<lb/> </bibl>
+      <bibl><label>84</label> Miethe,Supra n.79, at 367.<lb/> </bibl>
+      <bibl><label>85</label> Miethe,Supra n.79, at 369.<lb/> </bibl>
+      
+      <bibl><label>86</label> John Springford &amp; Philip Whyte, the Consequences of Brexit for the City of London, Centre for European<lb/> Reform (2014)<lb/> https://www.cer.eu/publications/archive/policy-brief/2014/consequences-brexit-city-london<lb/> </bibl>
+      
+      <bibl><label>87</label> John Armour, Brexit and financial services,33 Oxf. Rev. Econ. Policy 54,56 n1 (2017)<lb/> </bibl>
+      
+      <bibl><label>88</label> See for instance: Jennifer Rankin, Get Brexit Done'? The reality will be far more difficult and tortuous, The<lb/> Guardian, (25 November 2019).<lb/> https://www.theguardian.com/politics/2019/nov/25/get-brexit-done-reality-far-more-difficult-tortuous-<lb/>european-union<lb/> </bibl>
+      <bibl>Stephen Bush, How limiting EU trade deal negotiations to one year may cause problems for Boris Johnson New<lb/> Statesman (17 December 2019).<lb/> https://www.newstatesman.com/politics/brexit/2019/12/how-limiting-eu-trade-deal-negotiations-one-year-<lb/>may-cause-problems-boris<lb/> </bibl>
+      <bibl><label>89</label> Kate Proctor, Peter Walker and Daniel Boffey, Brexit: Boris Johnson will amend bill to outlaw extension, The<lb/> Guardian, (17 December 2019)<lb/> https://www.theguardian.com/politics/2019/dec/16/boris-johnson-will-amend-brexit-bill-to-outlaw-extension<lb/> </bibl>
+      <bibl><label>90</label> IMF, Global Financial Stability Report: Vulnerabilities in a Maturing Credit Cycle, April 2019, XI<lb/> Available online at: https://www.imf.org/en/Publications/GFSR/Issues/2019/03/27/Global-Financial-Stability-<lb/>Report-April-2019<lb/> </bibl>
+      <bibl><label>91</label> IMF, Supra n.90, at 10<lb/> </bibl>
+      
+      <bibl><label>92</label> Based on two EU Directives: Capital Requirements Directive (CRD; 2013/36/EU) and the Markets in Financial<lb/> Instruments Directive (MiFID; 2004/39/EC).<lb/> </bibl>
+      
+      <bibl><label>93</label> Dirk Schoenmaker, The UK Financial Sector and EU Integration after Brexit: The Issue of Passporting 9 (N<lb/> (2016) ( Nauro Campos &amp; Fabrizio Coricelli ed., Palgrave MacmIllian 2016).<lb/> </bibl>
+      <bibl><label>94</label> Matthias Lehmann &amp; Dirk Zetzsche, How Does it Feel to be a Third Country? The Consequences of Brexit for<lb/> Financial Market Law, Brexit: the International Legal Implications, Paper No.14 Brexit: The International Legal<lb/> Implications 5-6 (2018).<lb/> </bibl>
+      
+      <bibl><label>95</label> Michael McMahon, The implications of Brexit for the City 80 The CAGE Background Briefing Series 2 (2017).<lb/> </bibl>
+      <bibl><label>96</label> Lehmann, Supra n.94, at4.<lb/> </bibl>
+      <bibl><label>97</label> Armour, Supra n.87, at 65.<lb/> </bibl>
+      
+      <bibl><label>98</label> Lehmann, Supra n.94, at 7.<lb/> </bibl>
+      <bibl><label>99</label> Lehmann, Supra n.94, at 7.<lb/> </bibl>
+      <bibl><label>100</label> Lehmann, Supra n.94, at 17.<lb/> </bibl>
+      <bibl><label>101</label> Niamh Moloney, Financial Services, the EU, and Brexit: An Uncertain Future for the City? , 17 German Law<lb/> Journal 75, 80 (2016).<lb/> </bibl>
+      <bibl><label>102</label> Armour, Supra n.87, at 61.<lb/> </bibl>
+      <bibl><label>103</label> Armour, Supra n.87, at 61.<lb/> </bibl>
+      <bibl><label>104</label> Moloney, Supra n.101. at 81.<lb/> </bibl>
+      <bibl><label>105</label> Armour, Supra n.87, at 62.<lb/> </bibl>
+      <bibl><label>106</label> Armour, Supra n.87, at 62.<lb/> </bibl>
+      
+      <bibl><label>107</label> Armour, Supra n.87, at 63.<lb/> </bibl>
+      <bibl><label>108</label> Howarth, Supra n.82, at 1122<lb/> </bibl>
+      
+      <bibl><label>109</label> Howarth, Supra n.80 at 153.<lb/> </bibl>
+      
+      <bibl><label>110</label> Ansgar Belke, Irina Dubova &amp; Thomas Osowski (2018) Policy uncertainty and international financial<lb/> markets: the case of Brexit, 50 Applied Economics 3759 n.34-35 (2018).<lb/> </bibl>
+      
+      <bibl><label>111</label> Lehmann, Supra n.94, at 16.<lb/> </bibl>
+      <bibl><label>112</label> Moloney, Supra n.101. at 75.<lb/> </bibl>
+      <bibl><label>113</label> Moloney, Supra n.101. at 75<lb/> </bibl>
+      
+      <bibl><label>114</label> On issues related to legal harmonisation and uncertainty see for instance:<lb/> A. Claire Cutler, Unification and Harmonisation of Private International Trade Law 13 Global Society 25 (199)<lb/> Steve Maguire &amp; Jaye Ellis, Uncertainty, Precaution and Global Interdependence: Implications of the<lb/> Precautionary Principle for State and Non-state Actors, 256 (Biermann et all. ed. Global Environmental Change<lb/> and the Nation State, Proceedings of the 2001 Berlin Conference on the Human Dimensions of Global<lb/> Environmental Change (2001)<lb/> José Angelo Estrella Faria, Future Directions of Legal Harmonisation and Law Reform: Stormy Seas or<lb/> Prosperous Voyage?, 14 Uniform Law Review 5 (2009).<lb/> </bibl>
+      
+      <bibl><label>115</label> Chris Flood &amp; Shioban Riding, Investors pull billions from UK on prospect of no-deal Brexit, Financial Times,<lb/> 31 Aug. 2019<lb/> </bibl>
+      
+      <bibl><label>116</label> Moloney, Supra n.101. at 82<lb/> </bibl>
+      <bibl><label>117</label> Moloney, Supra n.101. at 82<lb/> </bibl>
+      
+      <bibl><label>118</label><lb/> Howarth, Supra n.80 at 158<lb/> </bibl>
+      <bibl><label>119</label> Armour, Supra n.87, at 56<lb/> </bibl>
+      <bibl><label>120</label> Howarth,Supra n.80 at 158<lb/> </bibl>
+      <bibl><label>121</label> Howarth, Supra n.82, at 1125<lb/> </bibl>
+      <bibl><label>122</label> Springford, Supra n.86, at 7<lb/> </bibl>
+      <bibl><label>123</label> Michael Randall, Brexit and Financial Services: What Comes next, 22 Edinburgh L. Rev. 149, 154 (2018)<lb/> </bibl>
+      <bibl><label>124</label> Springford, Supra n.86, at 6<lb/> </bibl>
+      <bibl><label>125</label> Armour, Supra n.87, at 60.<lb/> </bibl>
+      <bibl><label>126</label> Lehmann, Supra n.94, at 5.<lb/> </bibl>
+      
+      <bibl><label>127</label> McMahon, Supra n.95, at 3<lb/> </bibl>
+      
+      <bibl><label>128</label> Douglas J. Cumming &amp; Shaker A. Zahra, International Business and Entrepreneurship Implications of Brexit,<lb/> 27 Br. J. Manag, 687, 689 (2016).<lb/> </bibl>
+      
+      <bibl><label>129</label> André Sapir, Dirk Schoenmaker, &amp; Nicolas Véron, Making the Best of Brexit for the EU27, 1 Bruegel Policy<lb/> Brief 6 (2017)<lb/> </bibl>
+      
+      <bibl><label>130</label> Sapir, Supra n.129, at 6<lb/> </bibl>
+      <bibl><label>131</label> Randall, Supra n.123, at 150.<lb/> </bibl>
+      <bibl><label>132</label> Howarth, Supra n.82, at 1124<lb/> </bibl>
+      
+      <bibl><label>133</label> Aristeidis Samitas Stathis Polyzosb &amp; Costas Siriopoulosa, Brexit and Financial Stability: An Agent-based<lb/> Simulation, 69 Economic Modelling 1 (2018).<lb/> </bibl>
+      
+      <bibl><label>134</label> Samitas, Supra n.133, at 29.<lb/> </bibl>
+      <bibl><label>135</label> Samitas, Supra n.133, at 31.<lb/> </bibl>
+      <bibl><label>136</label> Randall, Supra n.123, at 150.<lb/> </bibl>
+      <bibl><label>137</label> Douglas, Supra. n.128, at 689<lb/> </bibl>
+      
+      <bibl><label>138</label> UNCTAD has warned of the strong effects of a non-deal Brexit on the economy and predicts this could lead<lb/> to a 7% drop in exports from the UK to the EU (which is $16 billion dollars) and that 20% of the UK exports to<lb/> non-member states are at risk because these non-member states have preferential access to the EU market<lb/> through trade deals.<lb/> (Pamela Coke &amp; Alessandro Nicita, The trade cost of a no-deal Brexit to the United Kingdom, 3 Sept. 2019<lb/> https://unctad.org/en/pages/newsdetails.aspx?OriginalVersionID=2176 )<lb/> </bibl>
+      <bibl>Research from UNCTAD also analyses how a no-deal Brexit would hit especially the economies of the UK, the<lb/> EU, but could also affect non-member states that have strong trading links with the UK (such as for instance<lb/> Turkey)<lb/> (Alessandro Nicita, Ksenia Koloskova &amp; Mesut Saygili, Brexit. Implications for Developing Countries, UNCTAD<lb/> Research Paper No.31 (2019)<lb/> </bibl>
+      <bibl>See also for the effects of Brexit on the economy:<lb/> Patrick Minford, The effects of Brexit on the UK economy, 42 The World Economy, 57 n.1 (2019)<lb/> </bibl>
+      <bibl>Gabriel Felbermayr, Clemens Fuest, Jasmin Katrin Gröschl &amp; Daniel Stöhlker, Economic Effects of Brexit on the<lb/> European Economy, Economic Policy Reports 4(2017)<lb/> </bibl>
+      <bibl>John van Reenen, Brexit's Long-Run Effects on the U.K. Economy, Brookings Papers on Economic 367 (2016)<lb/> </bibl>
+      
+      <bibl><label>139</label> Howarth, Supra n.82, at1123<lb/> </bibl>
+      <bibl><label>140</label> Armour, Supra n.87, at 65.<lb/> <lb/> </bibl>
+      <bibl><label>141</label>Armour, Supra n.87, at 65.<lb/> <lb/> </bibl>
+      <bibl><label>142</label> Armour, Supra n.87, at 67.<lb/> </bibl>
+      <bibl><label>143</label> Armour, Supra n.87, at 67.<lb/> </bibl>
+      <bibl><label>144</label> Belke, Supra n.110, at 3759.<lb/> </bibl>
+      <bibl><label>145</label> Belke, Supra n.110, at 3762.<lb/> </bibl>
+      
+      <bibl><label>146</label> EU (Withdrawal Agreement) Bill Available on: https://www.gov.uk/government/publications/eu-<lb/>withdrawal-agreement-bill<lb/></bibl>
+      
+    <!-- original extraction was correct in prder -->
+      <bibl><label>147</label> Robert E. Hoskisson, Lorraine Eden, Chung Ming Lau &amp; Mike Wright, Strategy in Emerging Economies, 43<lb/> Acad. Manag. J. 249, 249 n.3 (2000).<lb/> </bibl>
+      
+      <bibl><label>148</label> Klaus Meyer &amp; Mike Peng, Theoretical Foundations of Emerging Economies Business Research, 47 J. Int. Bus.<lb/> Stud. 3, 10. n.1 (2016)<lb/> </bibl>
+      <bibl><label>149</label> Livia Chitu &amp; Dominic Quint, Emerging market vulnerabilities -a comparison with previous crises, ECB<lb/> Economic Bulletin, n.8 (2018)<lb/> https://www.ecb.europa.eu/pub/economic-bulletin/focus/2018/html/ecb.ebbox201808_01.en.html<lb/> </bibl>
+      <bibl><label>150</label><lb/> Chitu, Supra n.148<lb/> </bibl>
+      
+      <bibl><label>151</label> Ashoka Mody, What is An Emerging Market? IMF Working Papers, N. 04/177, 3 (2004).<lb/> https://www.imf.org/en/Publications/WP/Issues/2016/12/31/What-is-An-Emerging-Market-17598<lb/> </bibl>
+      <bibl><label>152</label> Etienne Lepers &amp; Antonio Sánchez Serrano, Decomposing financial (in)stability in emerging economies, 9<lb/> Working Paper Series European Systemic Risk Board (2017)<lb/> </bibl>
+      <bibl><label>153</label> IMF, Global Financial Stability Report: A Decade after the Global Financial Crisis: Are We Safer?, 5 (2018).<lb/> :https://www.imf.org/en/Publications/GFSR/Issues/2018/09/25/Global-Financial-Stability-Report-October-<lb/>2018<lb/> </bibl>
+      <bibl><label>154</label> IMF, Supra n.90, at IX<lb/> </bibl>
+      
+      <bibl><label>155</label> Vanessa Gunnella &amp; Lucia Quaglietti, The economic implications of rising protectionism: a euro area and<lb/> global perspective, 3 ECB Economic Bulletin (2019)<lb/> https://www.ecb.europa.eu/pub/economic<lb/> bulletin/articles/2019/html/ecb.ebart201903_01~e589a502e5.en.html<lb/> </bibl>
+      
+      <bibl><label>156</label> IMF, Supra n.90, at IX<lb/> </bibl>
+      <bibl><label>157</label><lb/> IMF, Supra n.90, at IX<lb/> </bibl>
+      <bibl><label>158</label><lb/> IMF, Supra n.90, at IX<lb/> </bibl>
+      <bibl><label>159</label> Sarah Nassauer &amp; Heather Haddon, Tariffs on Mexican Imports Would Hit More Than Avocados in Grocery<lb/> Stores, 1 Jun. 2019, The Walls Street Journal<lb/> </bibl>
+      
+      <bibl><label>160</label> James A Haley, Trump Trade Policy, Exchange Rate Surveillance and the IMF: Back to the Future?, Centre for<lb/> International Governance Innovation, No. 224 CIGI Papers 1 (2019)<lb/> https://www.cigionline.org/sites/default/files/documents/no.224web.pdf<lb/> </bibl>
+      <bibl><label>161</label> Haley, Supra n.160, at 1.<lb/> </bibl>
+      <bibl><label>162</label> Haley, Supra n.160, at 11.<lb/> </bibl>
+      <bibl><label>163</label> Haley, Supra n.160, at 10.<lb/> </bibl>
+      <bibl><label>164</label> Haley, Supra n.160, at 9.<lb/> </bibl>
+      <bibl><label>165</label> Gunnella, Supra n.157.<lb/> </bibl>
+      
+      <bibl><label>166</label> Enowbi Batuo, Kupukile Mlambo &amp; Simplice Asongu, Linkages between financial development,<lb/> financial instability, financial liberalisation and economic growth in Africa, African Governance and<lb/> Development Institute, No. 82641 MPRA Pape, 7 (2017).<lb/> https://mpra.ub.uni-muenchen.de/82641/1/MPRA_paper_82641.pdf<lb/> </bibl>
+      <bibl>Roger Gordon &amp; A. Lans Bovenberg, Why is capital so mobile internationally? Possible explanations and<lb/> implications for capital income taxation, 86 Am. Econ. Rev 1057 n.5 (1996).<lb/> </bibl>
+      
+      <bibl><label>167</label> Gunnella, Supra n.155.<lb/> </bibl>
+      <bibl><label>168</label> Gunnella, Supra n.155.<lb/> </bibl>
+      <bibl><label>169</label> Ulrich Volz (ed.), Financial Stability in Emerging Markets: Dealing with Global Liquidity, German<lb/> Development Institute 4 (2012)<lb/> https://www.researchgate.net/publication/256017592_Financial_Stability_in_Emerging_Markets_-<lb/>_Dealing_with_Global_Liquidity<lb/> </bibl>
+      
+      <bibl><label>170</label> E Han Kim &amp; Vijay Singal, The Fear of Gobalizing Capital Market, 1 Emerg. Market. Rev. 183 (2000).<lb/> </bibl>
+      <bibl><label>171</label> Batuo, Supra n.166, at 4.<lb/> </bibl>
+      <bibl><label>172</label> IMF, Supra n.90, at VIII.<lb/> </bibl>
+      <bibl><label>173</label> Batuo, Supra n.166, at 4.<lb/> </bibl>
+      
+      <bibl><label>174</label> See for instance:<lb/> S.A Asongu, Liberalisation and Financial Sector Competition: A Critical Contribution to the Empirics with an<lb/> African Assessment' 83 South African Journal of Economics 425 (2015).<lb/> </bibl>
+      <bibl>Geert Bekaert, Campbell R. Harvey, Christian Lundblad, Growth Volatility and Financial Liberalisation.<lb/> Journal of international Money and Finance, 25 J. Int. Money Finance 370 n.3 (2006)<lb/> </bibl>
+      <bibl>Norman Loayza &amp; Romain Ranciere, Financial Development, Financial Instability and Growth, CESifo Working<lb/> Paper No. 684 (2002)<lb/> </bibl>
+      
+      <bibl><label>175</label> Volz, Supra n.169, at 4.<lb/> This is a continuing trend apart from the 2008-2009 period when the flow of capital was down and the pre-<lb/>crisis year 2007 which spiked at USD 1,244 billion.<lb/> </bibl>
+      <bibl><label>176</label> IMF, Supra n.153, at 4,5.<lb/> </bibl>
+      <bibl><label>177</label> Mody, Supra n.151, at 6.<lb/> </bibl>
+      <bibl><label>178</label> Mody, Supra n.151, at 6.<lb/> </bibl>
+      
+      <bibl><label>179</label> Chi Keung Marco Lau, Ender Demir &amp; Mehmet Huseyin Bilgin, Experience-based corporate corruption and<lb/> stock market volatility: Evidence from emerging markets 17 Emerg. Markets Rev., 1 (2013)<lb/> </bibl>
+
+     <!-- the original extraction was good in order --> 
+      <bibl><label>180</label> Beata S Javorick &amp; Shang-Jin Wei, Corruption and cross-border investment in emerging markets: Firm-level<lb/> evidence, 28 J. Int. Money Finance 605 (2009).<lb/> </bibl>
+      
+      <bibl><label>181</label> Mody, Supra n.151, at 6.<lb/> </bibl>
+      
+      <bibl><label>182</label> Marcel Förster, Markus Jorra &amp; Peter Tillmann, The comovement of international capital flows: evidence<lb/> from a dynamic factor model, 19 (Volz (ed.) German Development Institute (2012)<lb/> https://www.researchgate.net/publication/256017592_Financial_Stability_in_Emerging_Markets_-<lb/>_Dealing_with_Global_Liquidity<lb/> </bibl>
+      
+      <bibl><label>183</label> Christopher F Baum, Madhavi Pundit &amp; Arief Ramayandi, Capital Flows and Financial Stability in Emerging<lb/> Economies, 522 ADB Economics Working Paper Series 16 (2017).<lb/> </bibl>
+      
+      <bibl><label>184</label> Anton Korinek, Regulating Capital Flows to Emerging Markets: An Externality View J. Int. Econ 61, 65 (2018).<lb/> </bibl>
+      <bibl><label>185</label> Robin Koeke, What Drives Capital Flows to Emerging Markets? A Survey of the Empirical Literature, MPRA<lb/> Paper No. 75887, 6 (2015)<lb/> https://mpra.ub.uni-muenchen.de/75887/15/MPRA_paper_75887.pdf<lb/> </bibl>
+      <bibl><label>186</label> Koeke, Supra n.185, at 6.<lb/></bibl>
+      <bibl><label>187</label> Baum, Supra n.183, at 10.<lb/></bibl>
+      
+      <bibl><label>188</label> Baum, Supra n.183, at 14.<lb/></bibl>
+      <bibl><label>189</label> IMF, Supra n.153, at 13.<lb/></bibl>
+      <bibl><label>190</label> IMF, Supra n.153, at 17.<lb/></bibl>
+      <bibl><label>191</label> Koeke, Supra n.185, at 10.<lb/></bibl>
+      <bibl><label>192</label> IMF, Supra n.90, at 30.<lb/></bibl>
+      <bibl><label>193</label> IMF, Supra n.90, at 31.<lb/></bibl> 
+      <bibl><label>194</label> IMF, Supra n.90, at 30.<lb/></bibl> 
+      <bibl><label>195</label> IMF, Supra n.90, at 32.<lb/></bibl> 
+      <bibl><label>196</label> Maurice Obstfeld, Financial Flows, Financial Crises, and Global Imbalances, 31 J. Int. Money Finance 469<lb/> (2011).<lb/></bibl> 
+      <bibl><label>197</label> Batuo, Supra n.166, at 4.<lb/></bibl> 
+      
+      <bibl><label>198</label> IMF, Supra n.153, at 19.<lb/></bibl> 
+      <bibl><label>199</label> Anton Korinek, Emerging market economies after the crisis: trapped by global liquidity? 35<lb/> (Volz (ed.) German Development Institute (2012).<lb/> https://www.researchgate.net/publication/256017592_Financial_Stability_in_Emerging_Markets_-<lb/>_Dealing_with_Global_Liquidity<lb/></bibl> 
+      <bibl><label>200</label> Korinek, Supra n.201, at 35.<lb/></bibl> 
+      <bibl><label>201</label> IMF, Supra n.153, at 20.<lb/></bibl> 
+      <bibl><label>202</label> IMF, Supra n.153, at 20.<lb/></bibl> 
+      <bibl><label>203</label> Lepers, Supra n.152, at 2.<lb/></bibl> 
+      <bibl><label>204</label> IMF, Supra n.90, at 45.<lb/></bibl> 
+      
+      <bibl><label>205</label> Gunnella, Supra n.155.<lb/></bibl> 
+      <bibl><label>206</label> Suk-Joong Kim, Sovereign credit ratings, capital flows and financial sector development in Emerging<lb/> markets, 9 Emerg. Markets Rev.17, 20 (2008).</bibl>
+    </listBibl>
+  </text>
+</TEI>

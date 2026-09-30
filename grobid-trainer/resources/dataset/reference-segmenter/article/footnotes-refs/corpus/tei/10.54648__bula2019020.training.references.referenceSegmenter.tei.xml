@@ -1,0 +1,405 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.54648__bula2019020">
+    <titleStmt>
+      <title level="a">Corporate Governance and Climate Change: Smoothing Temporal Dissonance to a Phased Approach</title>
+      <author>
+        <persName>
+          <forename>Stelios</forename>
+          <surname>Andreadakis</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Lisa</forename>
+          <surname>Benjamin</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="dfejzo">Daniel Fejzo</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Kluwer Law International BV</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2019</date>
+      <idno type="DOI">10.54648/bula2019020</idno>
+      <ptr target="https://doi.org/10.54648/bula2019020"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Stelios Andreadakis, Lisa Benjamin. (2019). Corporate Governance and Climate Change: Smoothing Temporal Dissonance to a Phased Approach. Business Law Review, 40(Issue 4), 146-160. DOI: 10.54648/bula2019020</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Corporate Governance and Climate Change: Smoothing Temporal Dissonance to a Phased Approach</title>
+          <author>
+            <persName>
+              <forename>Stelios</forename>
+              <surname>Andreadakis</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Lisa</forename>
+              <surname>Benjamin</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Business Law Review</title>
+          <imprint>
+            <biblScope unit="volume">40</biblScope>
+            <biblScope unit="issue">Issue 4</biblScope>
+            <biblScope unit="page" from="146" to="160">146-160</biblScope>
+            <date when="2019">2019</date>
+            <publisher>Kluwer Law International BV</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.54648/bula2019020</idno>
+        <ptr target="https://doi.org/10.54648/bula2019020"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-22T16:09:28.514234Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-70-g77a8a2219</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-22T16:09:28.514234Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-29T11:01:54.342Z" status="unfinished" who="#dfejzo">
+      <note type="label">v2 (dfejzo)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-30T13:14:09.110Z" status="unfinished" who="#cboulanger">
+      <note type="label">v3 (cboulanger)</note>
+      <desc>Fixed unrecognized labels at the end of previous lines</desc>
+    </change>
+    <change when="2026-07-02T16:59:13.154Z" status="unfinished" who="#dfejzo">
+      <note type="label">v4 (dfejzo)</note>
+      <desc>Fixed unrecognized labels at the end of previous lines</desc>
+    </change>
+    <change when="2026-07-08T11:28:49.686Z" status="draft" who="#dfejzo">
+      <desc>1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-09T14:17:59.784Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-09T15:40:39.918Z" status="unfinished" who="#kazuyo">
+      <desc>1st pass Daniel</desc>
+    </change>
+    <change when="2026-07-09T15:50:13.623Z" status="checked" who="#kazuyo">
+      <desc>1st pass Daniel</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> Richard J. Lazarus, Super Wicked Problems and Climate Change: Restraining<lb/> the Present to Liberate the Future, 94 Cornell L. Rev. 1153 (2009); </bibl>
+      <bibl>see also<lb/> Horst W. J. Rittel &amp; Marvin M. Webber, Dilemmas in a General Theory of<lb/> Planning, 4(2) Pol'y Sci. 155 (1973)</bibl> <bibl>and Kelly Levin et al., Playing it Forward:<lb/> Path Dependency, Progressive Incrementalism, and the 'Super Wicked' Problem of<lb/> Global Climate Change (7 July 2007), http://citeseerx.ist.psu.edu/viewdoc/<lb/> download?doi=10.1.1.464.5287&amp;rep=rep1&amp;type=pdf<lb/></bibl>
+
+      <bibl><label>2</label> Daniel Bodansky, Jutta Brunnee &amp; Lavanya Rajamani, International<lb/> Climate Change Law 6 (OUP 2017); </bibl>
+      <bibl>Nicholas Stern, The Economics of<lb/> Climate Change: The Stern Review (CUP 2007).<lb/></bibl>
+      <bibl><label>3</label> Bodansky et al., supra n. 2, at 7.<lb/></bibl>
+      <bibl><label>4</label> Lazarus, supra n. 1, at 1160.<lb/></bibl>
+      <bibl><label>5</label><lb/> United Nations Framework Convention on Climate Change<lb/> (UNFCCC), The Paris Agreement, FCCC/CP/2015/L.9, Art. 2(1).<lb/></bibl>
+      <bibl><label>6</label> Ibid., Art. 4(1). The Agreement does institute periodic stocktaking<lb/> exercises designed to assess the global contributions of parties to the<lb/> long-term temperature goal.<lb/></bibl>
+      <bibl><label>7</label> Intergovernmental Panel on Climate Change, 'Climate Change 2014:<lb/> Synthesis Report'. Contribution of Working Groups I, II and III to the<lb/> Fifth Assessment Report of the Intergovernmental Panel on Climate<lb/> Change (IPCC), Geneva, Switzerland and United Nations<lb/> Environment Programme, The Emissions Gap Report 2016: A UNEP<lb/> Synthesis Report xiv (Nairobi: UNEP Nov. 2016); </bibl>
+      <bibl>United Nations<lb/> Environment Programme, The Emissions Gap Report 2018 (Nairobi:<lb/> UNEP Nov. 2018).<lb/></bibl>
+      <bibl><label>8</label> See Elfin Ersin Reed, The Magic Numbers, CICERO Centre for<lb/> International Climate Research, https://www.cicero.oslo.no/en/the-<lb/>magic-numbers (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>9</label> Benjamin J. Richardson, Time and Environmental Law: Telling Nature's<lb/> Time 3 (CUP 2017).<lb/></bibl>
+
+      <bibl><label>10</label> Ibid., at 80-81.<lb/></bibl>
+      <bibl><label>11</label> Ibid., at 88.<lb/></bibl>
+      <bibl><label>12</label> Ibid., at 326.<lb/></bibl>
+      <bibl><label>13</label> ClientEarth, Risky Business: Climate Change and Professional Liability<lb/> Risks for Auditors 3 (Dec. 2017).<lb/></bibl>
+      <bibl><label>14</label> Task Force for Climate Related Disclosures, Final Report ii (June 2017),<lb/> https://www.fsb-tcfd.org/publications/final-recommendations-report<lb/> (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>15</label> Mark Carney, Breaking the Tragedy of the Horizon -Climate Change<lb/> and Financial Stability (29 Sept. 2015), https://www.bankofengland.co.<lb/> uk/-/media/boe/files/speech/2015/breaking-the-tragedy-of-the-hori<lb/> zon-climate-change-and-financial-stability.pdf?la=en&amp;hash=<lb/> 7C67E785651862457D99511147C7424FF5EA0C1A; </bibl>
+      <bibl>(accessed 8 June<lb/> 2019) TFCD, Final Report 2017 ibid., at 1.<lb/></bibl>
+      <bibl><label>16</label> Expert Group on Global Climate Change, Principles on Climate Obligations<lb/> of Enterprises 22 (Eleven International Publishing 2017), https://climateprin<lb/> ciplesforenterprises.org/resources (accessed 8 June 2019).<lb/></bibl>
+
+      <bibl><label>17</label> IPCC, supra n. 7, at 4; </bibl>
+      <bibl>While the rate of increase in emissions slowed<lb/> between 2012-2013, it is too early yet to determine whether this is a<lb/> permanent trend; see UNEP, supra n. 7, at xiv.<lb/></bibl>
+      <bibl><label>18</label> IPCC, supra n. 7, at 8.<lb/></bibl>
+      <bibl><label>19</label> Ibid.<lb/></bibl>
+      <bibl><label>20</label> Ibid., at 24.<lb/></bibl>
+      <bibl><label>21</label> Reed, supra n. 8.<lb/></bibl>
+      <bibl><label>22</label> Intergovernmental Panel on Climate Change, 1.5°C Special Report,<lb/> Summary for Policy Makers, 3 (6 Oct. 2018).<lb/></bibl>
+
+      <bibl><label>23</label> UNFCCC, supra n. 5, Art. 4.<lb/></bibl>
+      <bibl><label>24</label> UNFCCC, 'Report on the Structured Expert Dialogue on the<lb/> 2013-2015 Review', FCCC/SB/2015/INF.1, para. 40.<lb/></bibl>
+      <bibl><label>25</label> IPCC, supra n. 7, at 10.<lb/></bibl>
+      <bibl><label>26</label> Ibid.<lb/></bibl>
+      <bibl><label>27</label> UNEP 2016, supra n. 7, at xi.<lb/></bibl>
+      <bibl><label>28</label> Ibid., at xi; </bibl>
+      <bibl>see also UNEP 2018, supra n. 7, at xvii.<lb/></bibl>
+      <bibl><label>29</label> Ibid., at xiii and xiv.<lb/></bibl>
+      <bibl><label>30</label> Ibid., at 9.<lb/></bibl>
+      <bibl><label>31</label> Ibid., at 14.<lb/></bibl>
+      <bibl><label>32</label> Ibid.<lb/></bibl>
+      <bibl><label>33</label> Ibid., at 18.<lb/></bibl>
+      <bibl><label>34</label> World Bank Report, Turn Down the Heat: Why a 4°C Warmer World<lb/> Must Be Avoided xiv (2012), https://openknowledge.worldbank.org/han<lb/> dle/10986/11860 (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>35</label> Ibid., at xvi.<lb/></bibl>
+
+      <bibl><label>36</label> Ibid., at xvii.<lb/></bibl>
+      <bibl><label>37</label> IPCC, supra n. 7, at 87.<lb/></bibl>
+      <bibl><label>38</label> Ibid., at 18.<lb/></bibl>
+      <bibl><label>39</label> Ibid., at 21; </bibl>
+      <bibl>see also UNEP 2018, supra n. 7, at xvii.<lb/></bibl>
+      <bibl><label>40</label> IPCC, supra n. 7, at 21 and 27.<lb/></bibl>
+      <bibl><label>41</label> Ibid., at 91.<lb/></bibl>
+
+      <bibl><label>42</label> The Kay Review of UK Equity Markets and Long-term Decision Making:<lb/> Final Report 9 (July 2012).<lb/></bibl>
+      <bibl><label>43</label> Financial Reporting Council, Proposed Revisions to the UK Corporate<lb/> Governance Code 7 and 13 (Dec. 2017).<lb/></bibl>
+      <bibl><label>44</label> Ian Jones &amp; Michael Pollitt, Understanding How Issues in Corporate<lb/> Governance Develop: Cadbury Report to Higgs Review, 12(2) Corp.<lb/> Governance 162, 169 (2004).<lb/></bibl>
+      <bibl><label>45</label> World Bank Report, supra n. 35, at para. 1.10.<lb/></bibl>
+      <bibl><label>46</label> 'Directors Remuneration Report of a Study Group Chaired by Sir<lb/> Richard Greenbury' (1995), paras 4.2 and 6.16.<lb/></bibl>
+      <bibl><label>47</label> Committee on Corporate Governance Final Report (1998), para.<lb/> 1.18.</bibl>
+      <bibl> Helen Short, Corporate Governance: Cadbury, Greenbury and<lb/> Hampel -A Review, 7(1) J. Fin. Reg. &amp; Compl. 57, 58 (1999).<lb/></bibl>
+
+      <bibl><label>48</label> Financial Reporting Council, The Combined Code on Corporate<lb/> Governance (2003), Principle B3.4, Schedule A2, 3 and 5 and Schedule<lb/> B1 and 3.<lb/></bibl>
+      <bibl><label>49</label> Nelson Cowan, Let the Boardroom Beware, The Times, 28 (4 Sept.<lb/> 1997).<lb/></bibl>
+      <bibl><label>50</label> Roger Carr, Adherence to the Spirit, in Financial Reporting Council,<lb/> Comply or Explain: 20th Anniversary of the UK Corporate Governance<lb/> Code Financial Reporting Council 16 (2012). </bibl>
+      <bibl>See also Antoine Faure-<lb/>Grimaud, Sridhar Arcot &amp; Valentina Bruno, Corporate Governance in the<lb/> UK: Is the Comply-or-Explain Approach Working? (2005), Discussion Paper<lb/> 081, Corporate Governance at LSE Discussion Paper Series No. 001,<lb/> https://eprints.lse.ac.uk/24673/1/dp581_Corporate_Governance_at_<lb/> LSE_001.pdf (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>51</label> Editorial, Management Today 3 (Sept. 1997).<lb/></bibl>
+      <bibl><label>52</label> The Institute of Chartered Accountants in England &amp; Wales,<lb/> International Control Guidance for Directors on the Combined Code (Sept.<lb/> 1999), para. D.2; </bibl>
+      <bibl>Dominic Elliot, Steve Letza, Martina McGuinness &amp;<lb/> Clive Smallman, Governance, Control and Operational Risk: The Turnbull<lb/> Effect, 2(3) Risk Mgmt. 47, 50 (2000).<lb/></bibl>
+
+      <bibl><label>53</label> ICAEW, Internal Control: Guidance for Directors on the Combined Code<lb/> (1999), para. 13.<lb/></bibl>
+      <bibl><label>54</label> Lynn Drennan &amp; Matthias Beck, Corporate Governance: A Mandate for<lb/> Risk Management? (2001), www.bolc.co.uk/downloads/CG%20and%<lb/> 20internal%20controls14941303386403.doc (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>55</label> Review of the Role and Effectiveness of Non-executive Directors 5 and 6<lb/> (2003), Principle A1 and A.3.3.<lb/></bibl>
+      <bibl><label>56</label> John Armour, Simon Deakin &amp; Suzanne J. Konzelmann, Shareholder<lb/> Primacy and the Trajectory of UK Corporate Governance, 41(3) Brit. J. Indus.<lb/> Rel. 531, 523 (2003).<lb/></bibl>
+      <bibl><label>57</label> Financial Reporting Council, The UK Corporate Governance Code<lb/> (2010), para. 1.<lb/></bibl>
+      <bibl><label>58</label> Ibid., Principle A1.<lb/></bibl>
+      <bibl><label>59</label> Ibid., Principle D1.<lb/></bibl>
+      <bibl><label>60</label> Financial Reporting Council, The UK Corporate Governance Code 1<lb/> (2012), Governance and the Code.<lb/></bibl>
+
+      <bibl><label>61</label> Financial Reporting Council, The UK Corporate Governance Code<lb/> (2016), Principle 1, para. 4.<lb/></bibl>
+      <bibl><label>62</label> Ibid., at para. 9.<lb/></bibl>
+      <bibl><label>63</label> Ibid.<lb/></bibl>
+      <bibl><label>64</label> Department for Business, Energy and Industrial Strategy, Corporate<lb/> Governance Reform: Green Paper (Nov. 2016).<lb/></bibl>
+      <bibl><label>65</label><lb/> Among others, Carola Frydman &amp; Raven Saks, Executive<lb/> Compensation: A New View from a Long-Term Perspective 1936-2005, 23<lb/> (5) Rev. Fin. Stud., Soc'y Fin.l Stud. 2099-138 (2010).<lb/></bibl>
+      <bibl><label>66</label> Executive Remuneration Working Group's report (2016) quoted in<lb/> Green Paper on Corporate Governance Reform (2016), https://assets.<lb/> publishing.service.gov.uk/government/uploads/system/uploads/attach<lb/> ment_data/file/584013/corporate-governance-reform-green-paper.pdf<lb/> (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>67</label> The Investment Association, Principles of Remuneration (Oct. 2016),<lb/> https://www.ivis.co.uk/media/12445/Principles-of-Remuneration-<lb/>2016-Final.pdf (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>68</label> Investment Association Executive Remuneration Working Group<lb/> report (July 2016).<lb/></bibl>
+      <bibl><label>69</label> Andreas Kokkinis, Shareholder Short-termism in the UK: The Kay<lb/> Review and the Potential Role of Corporate Law, 11(3) Corp,<lb/> Ownership &amp; Cont. 166, 170 (2014); </bibl>
+      <bibl>Horace Yeung, Managing<lb/> Corporate Risks by Regulating Executive Pay: A Legal and Economic<lb/> Analysis, 2(1) Durham L. Rev. 43-63 (2012) (assessing the link between<lb/> executive remuneration and alignment of manager and shareholder<lb/> interests).<lb/></bibl>
+
+      <bibl><label>70</label> Carr, supra n. 51, at 16.<lb/></bibl>
+      <bibl><label>71</label> Department for Business, Energy &amp; Industrial Strategy, supra n. 65, at<lb/> 10, https://assets.publishing.service.gov.uk/government/uploads/sys<lb/> tem/uploads/attachment_data/file/584013/corporate-governance-<lb/>reform-green-paper.pdf (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>72</label> Adrian Cadbury, The Future for Governance: The Rules of the Game, 24<lb/> (1) J. Gen. Mgmt. 7-8 (1998).<lb/></bibl>
+
+      <bibl><label>73</label> John Amour, Henry Hansmann, Reinier Kraakman &amp; Mariana<lb/> Pargendler, What Is Corporate Law?, in The Anatomy of Corporate Law:<lb/> A Comparative and Functional Approach 27-28 (Reinier Kraakman et al.<lb/> eds, 3d ed, OUP 2017).<lb/></bibl>
+      <bibl><label>74</label> Henry Hansmann &amp; Reinier Kraakman, The End of History for<lb/> Corporate Law, 89 Geo. L.J. 439 (2000-2001); </bibl>
+      <bibl>Jonathan Macey,<lb/> Fiduciary Duties as Residual Claims: Obligations to Non-Shareholder<lb/> Constituents from a Theory of the Firm Perspective, 84 Cornell L. Rev.<lb/> 1266 (1998-1999); </bibl>
+      <bibl>Michael Bradley, Cindy Schipani, Anant Sundaram<lb/> &amp; James Welsh, The Purposes and Accountability of the Corporation in<lb/> Contemporary Problems, 62 L. &amp; Contemp. Probs. 9 (1999).<lb/></bibl>
+      <bibl><label>75</label> Steven Wallman, The Proper Interpretation of Corporate Constituency<lb/> Statutes and Formation of Director Duties, 21 Stetson L. Rev. 163, 168<lb/> (1991-1992). </bibl>
+      <bibl>See also Andrew Keay, Getting to Grips with the Shareholder<lb/> Value Theory in Corporate Law, 39 Comm. L. World Rev. 358, 371<lb/> (2010).<lb/></bibl>
+
+      <bibl><label>76</label> Brian Cheffins, Corporate Law and Ownership Structure: A Darwinian<lb/> Link?, 25 Univ. New S. Wales L.J. 346, 361 (2002); </bibl>
+      <bibl>John Grinyer, Alex<lb/> Russell &amp; David Collison, Evidence of Managerial Short-termism in the UK,<lb/> 9 Brit. J. Mgmt. 13 (1998); </bibl>
+      <bibl>David Millon, Shareholder Social Responsibility,<lb/> 36 Seattle U. L. Rev. 911 (2012-2013).<lb/></bibl>
+      <bibl><label>77</label> Sarah Worthington, Reforming Directors Duties, 64(3) MLR 439, 443<lb/> and 447 (2001).<lb/></bibl>
+      <bibl><label>78</label> Hutton v. West Cork Railway Company [1883] Ch. Div 654; </bibl>
+      <bibl>Re Smith<lb/> and Fawcett Limited [1942] 1 Ch. 304; </bibl>
+      <bibl>Re Lee Behrens [1932] Ch. 46.<lb/></bibl>
+      <bibl><label>79</label> Greenhalgh v. Arderne Cinemas [1948] 1 Ch. 1951, para. 291 per<lb/> Evershed MR 'bona fide for the benefit of the company' does not<lb/> mean the company as a commercial entity distinct from the corporators,<lb/> but the corporators as a general body. </bibl>
+      <bibl>See also Shuttleworth v. Cox [1927]<lb/> 1 Ch. 154; </bibl>
+      <bibl>Sidebottom v. Kershaw, Leese and Company Ltd [1920] Ch. Div<lb/> 154; </bibl>
+      <bibl>Gaimon and Others v. National Association for Mental Health [1969] 1<lb/> Ch. 317 and Multinational Gas and Petroleum Co v. Multinational Gas<lb/> [1983] 1 Ch. 258; </bibl>
+      <bibl>see Daniel Attenborough, How Directors Should Act<lb/> When Owing Duties to the Companies' Shareholders: Why We Need to Stop<lb/> Applying Greenhalgh, 20(10) Int'l Co. &amp; Com. L. Rev. 339 (2009).<lb/></bibl>
+      <bibl><label>80</label> Paddy Ireland, Ian Grigg-Spall &amp; Dave Kelly, The Conceptual<lb/> Foundations of Modern Company Law, 14(1) J.L. &amp; Soc'y 149 (1987);<lb/></bibl>
+      <bibl>Paddy Ireland, Corporate Governance, Stakeholding, and the Company:<lb/> Towards a Less Degenerate Capitalism?, 23(3) J.L. &amp; Soc'y 287 (1996);<lb/></bibl>
+      <bibl>Andrew Keay, Ascertaining the Corporate Objective: An Entity Maximisation<lb/> and Sustainability Model, 71(5) MLR 663 (2008); </bibl>
+      <bibl>David Kershaw, The<lb/> Path of Corporate Fiduciary Law, 8 NYU J.L. &amp; Bus. 395 (2012).<lb/></bibl>
+      <bibl><label>81</label> Davy Ka Chee Wu, Managerial Behaviour, Company Law, and the<lb/> Problem of Enlightened Shareholder Value, 31 Co. Lawyer 53 (2010);<lb/></bibl>
+      <bibl>R. C. Nolan, The Continuing Evolution of Shareholder Governance, 65(1)<lb/> Cambridge L.J. 92 (2006).<lb/></bibl>
+      <bibl><label>82</label> Percival v. Wright [1902] 2 Ch. 421; </bibl>
+      <bibl>Hutton v. West Cork Railway<lb/> Company [1883] Ch. Div 654.<lb/></bibl>
+      <bibl><label>83</label> Lisa Benjamin, The Duty of Due Consideration in the Anthropocene:<lb/> Climate Risk and English Directorial Duties, CCLR 90 (2017).<lb/></bibl>
+
+      <bibl><label>84</label> L. S. Sealy, 'Bona Fides' and 'Proper Purposes' in Corporation Decisions, 15<lb/> Monash U. L. Rev. 265, 269 (1989); </bibl>
+      <bibl>Alan Dignam, The Future of<lb/> Shareholder Democracy in the Shadow of the Financial Crisis, 36 Seattle<lb/> U. L. Rev. 639, 666 (2012-2013).<lb/></bibl>
+      <bibl><label>85</label> Alistair Alcock, An Accidental Change to Directors' Duties? 30 Co.<lb/> Lawyer 1 (2009); </bibl>
+      <bibl>Ciaran O'Kelly &amp; Sally Wheeler, Internalities and the<lb/> Foundations of Corporate Governance, 21 Soc. &amp; Legal Stud. 469 (2012).<lb/></bibl>
+      <bibl><label>86</label> Beate Sjåfjell, Corporate Governance for Sustainability: The Necessary<lb/> Reform of EU Company Law, in The Greening of European Business Law<lb/> Under EU Law: Taking Article 11 TEU Seriously 106 (Beate Sjåfjell &amp;<lb/> Anya Wiesbrock eds, Routledge 2015).<lb/></bibl>
+      <bibl><label>87</label> Jacob Rose, Corporate Directors and Social Responsibility: Ethics versus<lb/> Shareholder Value, 73(3) J. Bus. Ethics 319, 320 (2007); </bibl>
+      <bibl>Andrew Johnston,<lb/> After the OFR: Can UK Shareholder Value Still Be Enlightened?, 4 Eur.<lb/> Bus. Org. L. Rev. 817, 818 (2006).<lb/></bibl>
+      <bibl><label>88</label> Company Law Steering Group, Modern Company Law for a Competitive<lb/> Economy: Developing the Framework 40 (2000).<lb/></bibl>
+      <bibl><label>89</label> Ibid.<lb/></bibl>
+      <bibl><label>90</label> Ibid., at 10.<lb/></bibl>
+      <bibl><label>91</label> Ibid., at 14.<lb/></bibl>
+      <bibl><label>92</label> Company Law Review Steering Group, Modern Company Law for a<lb/> Competitive Economy: The Strategic Framework 36 (1999).<lb/></bibl>
+
+      <bibl><label>93</label> Ibid., at 44.<lb/></bibl>
+      <bibl><label>94</label> Ibid., at 37.<lb/></bibl>
+      <bibl><label>95</label> Company Law Steering Group, Modern Company Law for a Competitive<lb/> Economy: Final Report 1 (2001).<lb/></bibl>
+      <bibl><label>96</label> CLRSG Strategic Framework, supra n. 93, at 41-42. </bibl>
+      <bibl>See also Trade and<lb/> Industry Committee, The White Paper on Modernizing Company Law:<lb/> Sixth Report of Session 2002-2003 7 (HC 439 2003).<lb/></bibl>
+      <bibl><label>97</label> John Davies, A Guide to Directors Obligations Under the Companies Act 2006,<lb/> Association of Chartered Certified Accountants (Aug. 2007), para. 6.38.<lb/></bibl>
+      <bibl><label>98</label> See among others, Andrew Keay, Stakeholder Theory in Corporate Law:<lb/> Has It Got What It Takes?, 9 Rich. J. Global L. &amp; Bus. 249 (2010);<lb/></bibl>
+      <bibl>Wai Shun Wilson Leung, The Inadequacy of Shareholder Primacy: A<lb/> Proposed Corporate Regime that Recognizes Non-Shareholder Interests, 30<lb/> Colum. J.L. &amp; Soc. Probs. 589 (1997).<lb/></bibl>
+      <bibl><label>99</label> Charlotte Villiers, Directors' Duties and the Company's Internal Structures<lb/> Under the UK Companies Act 2006: Obstacles for Sustainable Development,<lb/> University of Oslo Faculty of Law Legal Studies Research Paper Series<lb/> No. 2010-03, 9 (2010). </bibl>
+      <bibl>See also Madoff Securities International Ltd (in<lb/> liquidation) v. Stephen Raven &amp; Others [2013] EWHC 3147, para. 187<lb/> per Justice Popplewell.<lb/></bibl>
+
+      <bibl><label>100</label> [2010] BCC 387.<lb/></bibl>
+      <bibl><label>101</label> Ibid., para. 399.<lb/></bibl>
+      <bibl><label>102</label> David Millon, New Game Plan or Business as Usual? A Critique of the<lb/> Team Production Model of Corporate Law, 86 Va. L. Rev. 1001 (2000).<lb/></bibl>
+      <bibl><label>103</label> Bernard Sharman, Shareholder Wealth Maximization and Its Implementation<lb/> Under Corporate Law, 66 Fla. L. Rev. 389 (2014); </bibl>
+      <bibl>Thomas M. Jones &amp; Will<lb/> Felps, Shareholder Wealth Maximization and Social Welfare: A Utilitarian<lb/> Critique, 23(2) Bus. Ethics Q. 207 (2013).<lb/></bibl>
+      <bibl><label>104</label> Alfred Rappaport, The Economics of Short-Term Performance Obsession,<lb/> 61 Fin. Analysts J. 65, 69 (2005).<lb/></bibl>
+
+      <bibl><label>105</label> Andrew Keay, Moving Towards Stakeholderism? Constituency Statutes,<lb/> Enlightened Shareholder Value, and More: Much Ado About Little?, 22(1)<lb/> EBLR 1, 39 (2011). </bibl>
+      <bibl>See also Andrew Keay, Risk, Shareholder Pressure and<lb/> Short-termism in Financial Institutions: Does Enlightened Shareholder Value<lb/> Offer a Panacea?, 5(6) L. &amp; Fin. Mkts. Rev. 435, 443 (2011).<lb/></bibl>
+      <bibl><label>106</label> Gregory Jackson &amp; Anastasia Petraki, How Does Corporate Governance<lb/> Lead to Short-termism?, in The Sustainable Company: A New Approach to<lb/> Corporate Governance 203 (Sigurt Vitols &amp; Norbert Kluge eds, ETUI<lb/> 2011); </bibl>
+      <bibl>Beate Sjåfjell &amp; Benjamin J. Richardson, The Future of Company<lb/> Law and Sustainability, in Company Law and Sustainability: Legal Barriers<lb/> and Opportunities 280-81 (Beate Sjåfjell &amp; Benjamin J. Richardson eds,<lb/> CUP 2015). </bibl>
+      <bibl>Carol Liao, Limits to Corporate Reform and Alternative Legal<lb/> Structures, in Company Law and Sustainability: Legal Barriers and<lb/> Opportunities 282 (Beate Sjåfjell &amp; Benjamin J. Richardson eds, CUP<lb/> 2015). Sjåfjell, supra n. 87.<lb/></bibl>
+      <bibl><label>107</label> Charlotte Villier &amp; Jukka Mähönen, Integrated Reporting or Non-<lb/>Financial Reporting?, in The Greening of European Business Law Under EU<lb/> Law: Taking Article 11 TEU Seriously 225 (Beate Sjåfjell &amp; Anya<lb/> Wiesbrock eds, Routledge 2015). </bibl>
+      <bibl>See also Beate Sjåfjell, Regulating<lb/> Companies as If the World Matters: Reflections from the Ongoing Sustainable<lb/> Companies Project, 47 Wake Forest L. Rev. 113, 118 (2012).<lb/></bibl>
+      <bibl><label>108</label> Deryn Fisher, The Enlightened Shareholder -Leaving Stakeholders in the<lb/> Dark: Will the Section 172(1) of the Companies Act 2006 Make Directors<lb/> Consider the Impact of their Decisions on Third Parties?, 20(1) Int'l Co. &amp;<lb/> Com. L. Rev. 1, 6 (2009).<lb/></bibl>
+      <bibl><label>109</label> Usha Rodrigues, Corporate Governance in an Age of Separation of<lb/> Ownership from Ownership, 95 Minn. L. Rev. 1822 (2011).<lb/></bibl>
+      <bibl><label>110</label> Nadelle Grossman, Turning a Short-term Fling into a Long-term Commitment:<lb/> Board Duties in a New Era, 43 U. Mich. J.L. Reform 905 (2010).<lb/></bibl>
+
+      <bibl><label>111</label> Martina K. Linnenluecke et al. Divestment from Fossil Fuel Companies:<lb/> Confluence Between Policy and Strategic Viewpoints Austl. J. Mgmt. 479 (2015).<lb/></bibl>
+      <bibl><label>112</label> Lisa Benjamin, Institutional Investors in the UK and 'Carbon Major'<lb/> Companies: Private Environmental Governance Post-Paris, 11(9) Geo.<lb/> Wash. J. Energy &amp; Envtl. L. 18-19 (2018); </bibl>
+      <bibl>Benjamin J. Richardson,<lb/> Divesting from Climate Change: The Road to Influence, 39(4) Univ. Denver<lb/> L. &amp; Pol'y 325 (2017).<lb/></bibl>
+      <bibl><label>113</label> See www.unepfi.org/banking/tcfd (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>114</label> See http://www.unepfi.org/banking/bankingprinciples/read-the-prin<lb/> ciples/Principle-1 (accessed 8 June 2019). The principles are in their<lb/> consultation phase until May 2019.<lb/></bibl>
+      <bibl><label>115</label> See http://www.unepfi.org/banking/bankingprinciples/implementa<lb/> tion-guidance/principle-1 (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>116</label> IORP II Directive (the successor of the Institutions for Occupational<lb/> Retirement Provision Directive adopted in 2003), https://www.pension<lb/> seurope.eu/iorp-ii-directive (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>117</label> Department for Work &amp; Pensions, Clarifying and Strengthening Trustees<lb/> Investment Duties (2018) https://assets.publishing.service.gov.uk/govern<lb/> ment/uploads/system/uploads/attachment_data/file/739331/response-<lb/>clarifying-and-strengthening-trustees-investment-duties.pdf (accessed 8<lb/> June 2019).<lb/></bibl>
+
+      <bibl><label>118</label> Lisa Benjamin, Institutional Investors in the UK and Carbon Major<lb/> Companies: Private Environmental Governance Post-Paris, 9(1) Geo. Wash.<lb/> J. Energy &amp; Envtl. L. 5 (2018).<lb/></bibl>
+      <bibl><label>119</label> Law No. 2015-992, Act of 17 Aug. 2015.<lb/></bibl>
+      <bibl><label>120</label> Benjamin, supra n. 84, at 98. </bibl>
+      <bibl>See also John Lowry, The Duty of Loyalty<lb/> of Company Directors: Bridging the Accountability Gap Through Efficient<lb/> Disclosure, 68(3) Cambridge L.J. 607 (2009); </bibl>
+      <bibl>Keay, supra n. 106, at 29.<lb/></bibl>
+
+      <bibl><label>121</label> Carney, supra n. 16, at 6, http://www.bankofengland.co.uk/publica<lb/> tions/Pages/speeches/2015/844.aspx (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>122</label> Ibid.<lb/></bibl>
+      <bibl><label>123</label> Mark Carney, Governor of the Bank of England, Chairman, Fin. Stability<lb/> Bd, Address Arthur Burns Memorial Lecture, Berlin (22 Sept. 2016) (unpub-<lb/>lished transcript) (on file at the Bank of England).<lb/></bibl>
+      <bibl><label>124</label> Benjamin, supra n. 113.<lb/></bibl>
+      <bibl><label>125</label> Carney, supra n. 16.<lb/></bibl>
+      <bibl><label>126</label> Forward, Michael R. Bloomberg, TCFD, supra n. 15, at ii.<lb/></bibl>
+      <bibl><label>127</label> Ibid., at ii.<lb/></bibl>
+
+      <bibl><label>128</label> Ibid., at 25.<lb/></bibl>
+      <bibl><label>129</label> Ibid., at 1.<lb/></bibl>
+      <bibl><label>130</label> Ibid.; </bibl>
+      <bibl>see also SASB, SASB Climate Risk Technical Bulletin #TB001-<lb/>1018 2016 (Oct. 2016).<lb/></bibl>
+      <bibl><label>131</label> Ibid.<lb/></bibl>
+      <bibl><label>132</label> Ibid.<lb/></bibl>
+      <bibl><label>133</label> Ibid., at 18.<lb/></bibl>
+      <bibl><label>134</label> TCFD, supra n. 15, at 1.<lb/></bibl>
+      <bibl><label>135</label> Ibid., at 7.<lb/></bibl>
+      <bibl><label>136</label> Ibid.<lb/></bibl>
+      <bibl><label>137</label> Ibid., at iv, v.<lb/></bibl>
+      <bibl><label>138</label> Ibid., at iv.<lb/></bibl>
+
+      <bibl><label>139</label> Ibid., at 20.<lb/></bibl>
+      <bibl><label>140</label> Ibid.<lb/></bibl>
+      <bibl><label>141</label> Ibid.<lb/></bibl>
+      <bibl><label>142</label> Ibid.<lb/></bibl>
+      <bibl><label>143</label> Ibid.<lb/></bibl>
+      <bibl><label>144</label> CICERO Climate Finance, Climate Scenarios Demystified. A Climate<lb/> Scenario Guide for Investors 6-7 (2018).<lb/></bibl>
+      <bibl><label>145</label> Ibid., at 6.<lb/></bibl>
+      <bibl><label>146</label> TCFD, supra n. 15, at 29.<lb/></bibl>
+      <bibl><label>147</label> Ibid., at 30.<lb/></bibl>
+      <bibl><label>148</label> Ibid.<lb/></bibl>
+      <bibl><label>149</label> TCFD, Technical Supplement, The Use of Scenario Analysis in<lb/> Disclosure of Climate-Related Risks and Opportunities 1-2 (June 2017).<lb/></bibl>
+      <bibl><label>150</label> TCFD, supra n. 15, at v, ibid., at 2. Note that CICERO recommends<lb/> testing against a range of temperature increases including up to 3°C and<lb/> 4°C; </bibl>
+      <bibl>see CICERO, supra n. 146, at 3.<lb/></bibl>
+      <bibl><label>151</label> CICERO, supra n. 146, at 9.<lb/></bibl>
+
+      <bibl><label>152</label> Ibid.<lb/></bibl>
+      <bibl><label>153</label> Ibid.<lb/></bibl>
+      <bibl><label>154</label> Ibid., at 26.<lb/></bibl>
+      <bibl><label>155</label> TCFD Technical Supplement, supra n. 151, at 6.<lb/></bibl>
+      <bibl><label>156</label> Ibid., at 6-7.<lb/></bibl>
+      <bibl><label>157</label> Ibid., at 7.<lb/></bibl>
+      <bibl><label>158</label> Ibid.<lb/></bibl>
+      <bibl><label>159</label> TCFD, supra n. 15, at 33.<lb/></bibl>
+      <bibl><label>160</label> CICERO, surpa n. 146, at 23.<lb/></bibl>
+      <bibl><label>161</label> TCFD, supra n. 15, at 29.<lb/></bibl>
+
+      <bibl><label>162</label> Ibid., at 28.<lb/></bibl>
+      <bibl><label>163</label> The Principles also acknowledge the difficulties in temporal assess-<lb/>ments in terms of corporate liability. Many businesses have historical<lb/> emissions which the Principles do not address. See Expert Group on<lb/> Global Climate Change, supra n. 17, at 33.<lb/></bibl>
+      <bibl><label>164</label> Ibid., at 146.<lb/></bibl>
+      <bibl><label>165</label> The Oslo Principles differentiate between obligations of developed<lb/> and developing countries, and the Enterprise Principles take a similar<lb/> approach, differentiating between companies located in developed or<lb/> developed countries.<lb/></bibl>
+      <bibl><label>166</label> These are largely considered by the Principles to be investors. See<lb/> Expert Group on Global Climate Change, supra n. 17, at 187.<lb/></bibl>
+      <bibl><label>167</label> Ibid., Principle 25.<lb/></bibl>
+      <bibl><label>168</label> Ibid., Principle 18.<lb/></bibl>
+      <bibl><label>169</label> Ibid., at 199.<lb/></bibl>
+      <bibl><label>170</label> Ibid., at 212.<lb/></bibl>
+
+      <bibl><label>171</label> Ibid., at 226.<lb/></bibl>
+      <bibl><label>172</label> Ibid., at 114.<lb/></bibl>
+      <bibl><label>173</label> Ibid.<lb/></bibl>
+      <bibl><label>174</label> Ibid., at 146.<lb/></bibl>
+      <bibl><label>175</label> Ibid.<lb/></bibl>
+      <bibl><label>176</label> Richard J. Miller et al., Oxford-Martin Principles to Guide Investments<lb/> Towards a Stable Climate, 8(2) Nature Climate Change 2 (2018).<lb/></bibl>
+      <bibl><label>177</label> Ibid.<lb/></bibl>
+
+      <bibl><label>178</label> UNEP 2018, supra n. 7, at xx.<lb/></bibl>
+      <bibl><label>179</label> Ibid. Although it should be noted that corporate action is not a<lb/> panacea and can act as a disincentive or delaying tactic for government<lb/> regulatory action.<lb/></bibl>
+      <bibl><label>180</label> Miller et al., supra n. 178, at 2.<lb/></bibl>
+      <bibl><label>181</label> ClientEarth, supra n. 14, at 6.<lb/></bibl>
+      <bibl><label>182</label> Ibid., at 7.<lb/></bibl>
+
+      <bibl><label>183</label> EU regulations require mandatory emission reduction targets for new<lb/> vehicles, of 40% by 2021 against 2007 levels, Regulation (EC) 443/<lb/> 2009, https://ec.europa.eu/clima/policies/transport/vehicles/cars_en<lb/> (accessed 8 June 2019), </bibl><bibl>and the trend towards electric vehicles will also<lb/> affect the industry, see Carbon Brief, Rise of UK Electric Vehicles Sees<lb/> National Grid Double Its 2040 Forecast, https://www.carbonbrief.org/<lb/> rise-uk-electric-vehicles-national-grid-doubles-2040-forecast (accessed<lb/> 8 June 2019).<lb/></bibl>
+      <bibl><label>184</label> Oliver Ralph, Insurance Act on Climate Change Exposure, Financial<lb/> Times https://www.ft.com/content/92e19630-aba2-11e8-8253-<lb/>48106866cd8a (accessed 8 June 2019).<lb/></bibl>
+
+      <bibl><label>185</label> See for more details, https://sciencebasedtargets.org. For example,<lb/> General Mills has adopted a science-based target to cut its GHG emis-<lb/>sions by 28% by 2025 in part by employing farmers to adopt sustainable<lb/> practices.<lb/></bibl>
+      <bibl><label>186</label> Oxfam, Feeding Climate Change: What the Paris Agreement Means for the<lb/> Food and Beverage Industry 2 (2016), https://www.oxfamamerica.org/<lb/> static/media/files/bp-feeding-climate-change-270616-en_6jfKSQg.pdf<lb/> (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>187</label> Carrie Bradshaw, The Environmental Business Case and Unenlightened<lb/> Shareholder Value, 33(1) Legal Stud. 141, 142 (2013).<lb/></bibl>
+
+      <bibl><label>188</label> Pursuant to s. 1(1) of the Climate Change Act 2008, targets are<lb/> focused on 2050.</bibl>
+      <bibl><label> 191 </label>TCFD, supra n. 15.<lb/></bibl>
+      <bibl><label>192</label> Ibid., at 36.<lb/></bibl>
+      <bibl><label>193</label> Ibid.<lb/></bibl>
+      <bibl><label>194</label> Ibid., at 38.<lb/></bibl>
+      <bibl><label>195</label> House of Commons Environmental Audit Committee, Greening<lb/> Finance: Embedding Sustainability in Financial Decision Making, Seventh<lb/> Report of Session 2017-2019 (4 June 2018).<lb/></bibl>
+
+      <bibl><label>196</label> Ibid., at 9.<lb/></bibl>
+      <bibl><label>197</label> Ibid.<lb/></bibl>
+      <bibl><label>198</label> Ibid.<lb/></bibl>
+      <bibl><label>199</label> Ibid., at 3.<lb/></bibl>
+      <bibl><label>200</label> Ibid.<lb/></bibl>
+      <bibl><label>201</label> Ibid.<lb/></bibl>
+      <bibl><label>202</label> Ibid., at 27.<lb/></bibl>
+
+      <bibl><label>203</label> Expert Group on Global Climate Change, supra n. 17, at 212.<lb/></bibl>
+      <bibl><label>204</label> TCFD, supra n. 15, at 38.<lb/></bibl>
+      <bibl><label>205</label> Ibid.<lb/></bibl>
+      <bibl><label>206</label> International Legal Symposium, Climate Change Risk and Corporate<lb/> Governance Directors' Duties and Liability Exposures in a Post-Paris World (29-<lb/>30 Aug. 2016), University of Melbourne, https://ccli.ouce.ox.ac.uk/wp-<lb/>content/uploads/2017/10/CCLI-MelbourneSymposiumAugust2016-<lb/>Highlights.pdf (accessed 8 June 2019).<lb/></bibl>
+      <bibl><label>207</label> Lisa Benjamin &amp; Stelios Andreadakis, Climate Change and Corporate<lb/> Governance -A Phased Approach to Smoothing Temporal Dissonance (5 July<lb/> 2018), Guest Blog Post on SMART: Sustainable Market Actors for<lb/> Responsible Trade, https://www.smart.uio.no/blog/climate-change-<lb/>and-corporate-governance.html.</bibl>
+    </listBibl>
+  </text>
+</TEI>
