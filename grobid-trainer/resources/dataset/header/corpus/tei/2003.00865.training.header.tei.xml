@@ -91,7 +91,9 @@
 
 	<date>11 Jan 2023<lb/></date>
 
-	Training<lb/> Input (X)<lb/> Robust<lb/> Model (f )<lb/>
+    <!-- garbage from the body --> 
+          
+	<!-- Training<lb/> Input (X)<lb/> Robust<lb/> Model (f )<lb/>
 	<docTitle>
 	<titlePart>Translation using<lb/> Robust Model 1</titlePart>
 	</docTitle>
@@ -108,7 +110,7 @@
 	<titlePart>Meanshift<lb/> Clustering 4</titlePart>
 	</docTitle>
 
-	<note type="copyright">©<lb/> Clean Model</note>
+	<note type="copyright">©<lb/> Clean Model</note> -->
 
 		</front>
 	</text>
