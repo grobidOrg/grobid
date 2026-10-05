@@ -6,7 +6,7 @@
 	<text xml:lang="en">
 		<front>
 
-	Title<lb/> 
+	Title<lb/>
 	<docTitle>
 	<titlePart>Sub-tomogram averaging in RELION Authors<lb/></titlePart>
 	</docTitle>
@@ -15,8 +15,9 @@
 	<docAuthor>Tanmay A.M. Bharat* &amp; Sjors H.W. Scheres*</docAuthor>
 	</byline>
 
+    Affiliations<lb/>
 	<byline>
-	<affiliation>Affiliations<lb/> Structural Studies Division, MRC Laboratory of Molecular Biology,</affiliation>
+	<affiliation>Structural Studies Division, MRC Laboratory of Molecular Biology,</affiliation>
 	</byline>
 
 	<address>Cambridge CB2 0QH,<lb/> United Kingdom<lb/></address>

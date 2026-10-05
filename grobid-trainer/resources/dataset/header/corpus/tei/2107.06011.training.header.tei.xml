@@ -8,6 +8,10 @@
         <persName xml:id="kazuyo">Kazuyo Okamura</persName>
         <resp>Annotator</resp>
       </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
     </titleStmt>
     <publicationStmt>
       <publisher/>
@@ -45,6 +49,10 @@
     <change when="2026-05-28T14:51:46.269Z" status="checked" who="#kazuyo">
       <desc>Pre-Draft</desc>
     </change>
+    <change when="2026-10-05T21:11:24.865Z" status="checked" who="#lfoppiano">
+      <note type="label">v2 (lfoppiano)</note>
+      <desc>Pre-Draft</desc>
+    </change>
   </revisionDesc>
 </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
@@ -66,9 +74,9 @@
 	Abstract-
 	<div type="abstract">In the context of visual navigation, the capacity to<lb/> map a novel environment is necessary for an agent to exploit its<lb/> observation history in the considered place and efficiently reach<lb/> known goals. This ability can be associated with spatial rea-<lb/>soning, where an agent is able to perceive spatial relationships<lb/> and regularities, and discover object characteristics. Recent<lb/> work introduces learnable policies parametrized by deep neural<lb/> networks and trained with Reinforcement Learning (RL). In<lb/> classical RL setups, the capacity to map and reason spatially<lb/> is learned end-to-end, from reward alone. In this setting, we<lb/> introduce supplementary supervision in the form of auxiliary<lb/> tasks designed to favor the emergence of spatial perception<lb/> capabilities in agents trained for a goal-reaching downstream<lb/> objective. We show that learning to estimate metrics quantifying<lb/> the spatial relationships between an agent at a given location<lb/> and a goal to reach has a high positive impact in Multi-<lb/>Object Navigation settings. Our method significantly improves<lb/> the performance of different baseline agents, that either build<lb/> an explicit or implicit representation of the environment, even<lb/> matching the performance of incomparable oracle agents taking<lb/> ground-truth maps as input. A learning-based agent from the<lb/> literature trained with the proposed auxiliary losses was the<lb/> winning entry to the Multi-Object Navigation Challenge, part of<lb/> the CVPR 2021 Embodied AI Workshop.<lb/></div>
 
-	1
+	
 	<byline>
-	<docAuthor>Pierre<lb/> Marza<lb/></docAuthor>
+	<docAuthor>1 Pierre<lb/> Marza<lb/></docAuthor>
 	</byline>
 
 	is<lb/> with<lb/>
@@ -81,11 +89,10 @@
 	<email>pierre.marza@insa-lyon.fr</email>
 
 	,<lb/>
-
-			2 
+	
 			
 	<byline>
-	<docAuthor>Laetitia Matignon</docAuthor>
+	<docAuthor>2 Laetitia Matignon</docAuthor>
 	</byline>
 
 	 is with
@@ -98,10 +105,10 @@
 
 	<email>laetitia.matignon@univ-lyon1.fr<lb/></email>
 
-	3
+	
 
 	<byline>
-	<docAuthor>Olivier Simonin</docAuthor>
+	<docAuthor>3 Olivier Simonin</docAuthor>
 	</byline>
 
 	is with
@@ -113,9 +120,9 @@
 
 	<email>olivier.simonin@insa-lyon.fr<lb/></email>
 
-	4 
+	
     <byline>
-	<docAuthor>Christian<lb/> Wolf<lb/></docAuthor>
+	<docAuthor>4 Christian<lb/> Wolf<lb/></docAuthor>
 	</byline>
 
 	 is<lb/> with<lb/> 
