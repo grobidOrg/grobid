@@ -232,8 +232,8 @@ subprojects {
         // powermock-module-junit4; declared explicitly now that PowerMock is removed.
         testImplementation 'junit:junit:4.13.2'
         testImplementation 'org.easymock:easymock:5.6.0'
-        testImplementation "org.mockito:mockito-core:5.20.0"
-        mockitoAgent("org.mockito:mockito-core:5.20.0") { transitive = false }
+        testImplementation "org.mockito:mockito-core:5.24.0"
+        mockitoAgent("org.mockito:mockito-core:5.24.0") { transitive = false }
         testImplementation "org.xmlunit:xmlunit-matchers:2.14.0"
         testImplementation "org.xmlunit:xmlunit-legacy:2.14.0"
         testImplementation "org.hamcrest:hamcrest-all:1.3"
