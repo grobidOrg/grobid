@@ -78,11 +78,9 @@
 		<front>
 <lb/>
     <note type="doctype">SPECIAL ISSUE</note>
-          
-      :<lb/> 
-          
-    <title level="j">The Role of the Cerebellum in Language Comprehension and Production<lb/></title>
-	
+
+    :<lb/>The Role of the Cerebellum in Language Comprehension and Production<lb/>
+
     <docTitle>
 	<titlePart>The Cerebellum Is Sensitive to the Lexical<lb/> Properties of Words During Spoken<lb/> Language Comprehension<lb/></titlePart>
 	</docTitle>
@@ -121,7 +119,7 @@
 	ABSTRACT<lb/>
 	<div type="abstract">Over the past few decades, research into the function of the cerebellum has expanded far<lb/> beyond the motor domain. A growing number of studies are probing the role of specific<lb/> cerebellar subregions, such as Crus I and Crus II, in higher-order cognitive functions including<lb/> receptive language processing. In the current fMRI study, we show evidence for the<lb/> cerebellum&apos;s sensitivity to variation in two well-studied psycholinguistic properties of<lb/> words-lexical frequency and phonological neighborhood density-during passive,<lb/> continuous listening of a podcast. To determine whether, and how, activity in the cerebellum<lb/> correlates with these lexical properties, we modeled each word separately using an<lb/> amplitude-modulated regressor, time-locked to the onset of each word. At the group level,<lb/> significant effects of both lexical properties landed in expected cerebellar subregions: Crus I<lb/> and Crus II. The BOLD signal correlated with variation in each lexical property, consistent<lb/> with both language-specific and domain-general mechanisms. Activation patterns at the<lb/> individual level also showed that effects of phonological neighborhood and lexical frequency<lb/> landed in Crus I and Crus II as the most probable sites, though there was activation seen in<lb/> other lobules (especially for frequency). Although the exact cerebellar mechanisms used<lb/> during speech and language processing are not yet evident, these findings highlight the<lb/> cerebellum&apos;s role in word-level processing during continuous listening.<lb/></div>
 
-	<note type="copyright">a n o p e n a c c e s s<lb/> j o u r n a l<lb/></note>
+	<note type="doctype">a n o p e n a c c e s s<lb/> j o u r n a l<lb/></note>
 
 	Citation:
 	<reference>Mechtenberg, H., Heffner,<lb/> C. C., Myers, E. B., &amp; Guediche, S.<lb/> (2024). The cerebellum is sensitive to<lb/> the lexical properties of words during<lb/> spoken language comprehension.<lb/> Neurobiology of Language, 5(3),<lb/> 757-773.</reference>

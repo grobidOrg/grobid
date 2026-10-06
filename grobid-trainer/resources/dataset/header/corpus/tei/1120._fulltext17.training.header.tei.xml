@@ -16,6 +16,7 @@
 	<docAuthor>Lindsey L. Johnston a , Andrew J. Ursini a , Nathan P. Oien a , Matthew P. Desciak b , Randy S. Rarig, Jr. c ,<lb/> Jon Zubieta c , and Robert L. LaDuca a, *<lb/></docAuthor>
 	</byline>
 
+    <!-- how to handle affiliations broken by the address? -->
 	<byline>
 	<affiliation>a</affiliation>
 	</byline>

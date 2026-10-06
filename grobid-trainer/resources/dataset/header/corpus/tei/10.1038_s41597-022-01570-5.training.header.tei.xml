@@ -58,8 +58,10 @@
 
 	Published: xx xx xxxx<lb/> additional information<lb/>
 
-			<!-- is this the availability? -->
-	Supplementary information The online version contains supplementary material available at https://doi.<lb/> org/10.1038/s41597-022-01570-5.<lb/>
+	Supplementary information The online version contains supplementary material available at
+
+    <!-- idno @type="supplementary" would contain the supplementary DOI. Ignored for now  -->
+    <idno type="supplementary">https://doi.<lb/> org/10.1038/s41597-022-01570-5.<lb/></idno>
 
 	Correspondence and requests for materials should be addressed to M.M.<lb/>
 

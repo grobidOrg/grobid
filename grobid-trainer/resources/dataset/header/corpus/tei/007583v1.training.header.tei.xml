@@ -6,7 +6,9 @@
 	<text xml:lang="en">
 		<front>
 <lb/>
-	<reference>BIOINFORMATICS APPLICATIONS NOTE<lb/> Vol. 00 no. 00 2014<lb/> Pages 1-2<lb/></reference>
+    <note type="doctype">BIOINFORMATICS APPLICATIONS NOTE<lb/> </note>
+
+	<reference>Vol. 00 no. 00 2014<lb/> Pages 1-2<lb/></reference>
 
 	<docTitle>
 	<titlePart>UniqTag: Content-derived unique and stable identifiers<lb/> for gene annotation<lb/></titlePart>

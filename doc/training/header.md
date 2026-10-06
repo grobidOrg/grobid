@@ -110,7 +110,7 @@ Running titles are not labelled at all.
     Abstract word count: 250<lb/>
 ```
 
-In the case of an article written in non-english language having an additional English title as translation of the original title, we annotate the English title with a tag `<note type="english-title">`.
+[//]: # (In the case of an article written in non-english language having an additional English title as translation of the original title, we annotate the English title with a tag `<note type="english-title">`.)
 
 ### Authors
 

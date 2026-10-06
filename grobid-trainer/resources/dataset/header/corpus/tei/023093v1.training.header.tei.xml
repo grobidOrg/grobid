@@ -19,15 +19,17 @@
 	<affiliation>1 Department of Genetics, University of Georgia,</affiliation>
 	</byline>
 
-	<address>Athens, Georgia, USA 9 10<lb/></address>
+	<address>Athens, Georgia, USA</address>
+    <!-- line numbers, may be removed nowadays -->
+    9 10<lb/>
 
 	<byline>
 	<affiliation>2 Institute of Bioinformatics, University of Georgia,</affiliation>
 	</byline>
 
-	<address>Athens, Georgia, USA 11</address>
+	<address>Athens, Georgia, USA</address>
 
-	12<lb/>
+    11 12<lb/>
 	<byline>
 	<affiliation>3 Centre for Biological Diversity, School of Biology, University of St. Andrews</affiliation>,
 	</byline>

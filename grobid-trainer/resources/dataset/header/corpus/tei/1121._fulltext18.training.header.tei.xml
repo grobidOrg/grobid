@@ -16,6 +16,7 @@
 	<docAuthor>Georg Steinhauser a,b, *, Konstantin Karaghiosoff b , and Thomas M. Klapötke b, *<lb/></docAuthor>
 	</byline>
 
+    <!-- how to handle affiliations broken by the address? -->
 	<byline>
 	<affiliation>a</affiliation>
 	</byline>
