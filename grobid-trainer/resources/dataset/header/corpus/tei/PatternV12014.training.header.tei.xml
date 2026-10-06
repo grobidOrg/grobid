@@ -44,16 +44,32 @@
 	Email addresses:
 
 	<email>rim.slama@telecom-lille.fr</email>
-	(Rim Slama),<lb/>
+	(
+	<byline>
+	<docAuthor>Rim Slama</docAuthor>
+	</byline>
+	),<lb/>
 
 	<email>hazem.wannous@telecom-lille.fr</email>
-	(Hazem Wannous),<lb/>
+	(
+	<byline>
+	<docAuthor>Hazem Wannous</docAuthor>
+	</byline>
+	),<lb/>
 
 	<email>mohamed.daoudi@telecom-lille.fr</email>
-	(Mohamed Daoudi),
+	(
+	<byline>
+	<docAuthor>Mohamed Daoudi</docAuthor>
+	</byline>
+	),
 
 	<email>anuj@stat.fsu.edu</email>
-	(Anuj<lb/> Srivastava)<lb/>
+	(
+	<byline>
+	<docAuthor>Anuj<lb/> Srivastava</docAuthor>
+	</byline>
+	)<lb/>
 
 	<note type="submission">Preprint submitted to Pattern Recognition<lb/> </note>
 
