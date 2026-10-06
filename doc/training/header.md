@@ -52,6 +52,10 @@ Spaces and new line in the XNL annotated files are not significant and will be a
 Similarly, line break tags `<lb/>` are present in the generated XML training data, but they will be considered as a default separator by the XML parser. They are indicated to help the annotator to identify a piece of text in the original PDF if necessary. Actual line breaks are identified in the PDF and added by aligning the XML TEI with the feature file generated in parallel which contains all the PDF layout information.
 
 
+### Punctuation between fields
+
+The punctuation separating two fields (comma, semicolon, period) is left outside the labelled fields: `<affiliation>King Saud Hospital</affiliation>, <address>Unizah, Qaseem, Saudi Arabia</address>`. The existing training data often keeps this punctuation inside the field that it ends (`<affiliation>King Saud Hospital,</affiliation>`); this is tolerated, so that the model sees both cases.
+
 ### Exclude the name of fields if it appears
 
 It is common that abstract is introduced by a prefix `Abstract` or `Summary`, that authors are prefixed with `Authors:` or keywords by `Keywords:`. As a general principle for header annotation, all the prefix names of fields should be excluded from the annotation element and remain outside mark-ups (we only encode the "useful" content):
