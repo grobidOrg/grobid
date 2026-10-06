@@ -180,9 +180,21 @@ Address are labelled with their own tag `<address>`.
     <address>40225 Düsseldorf, Germany<lb/></address>
 ```
 
-- When a marker precedes the prefix (e.g. `present address`, keep marker, prefix and affiliation in one <affiliation>.
+- When a marker precedes the prefix (e.g. `present address`, keep marker, prefix and affiliation in one `<affiliation>`.
 - When there is no marker before the prefix, leave "Present address:" outside.
+- When an author information (e.g. ORCID) is present between the marker and the affiliation, place the marker in a separate `<affiliation>` tag, and the affiliation in a separate `<affiliation>` tag:
 
+```xml
+    <byline>
+	<affiliation>[I]</affiliation>
+    </byline>
+
+	<idno>https://orcid.org/0000-0003-0353-1424<lb/></idno>
+
+	<byline>
+	<affiliation>Universidade do Estado do Rio de Janeiro, Instituto de Aplicação Fernando Rodrigues da Silveira,<lb/> Departamento de Ciências Humanas e Filosofia.</affiliation>
+	</byline>
+```
 
 ### Document types
 
