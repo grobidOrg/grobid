@@ -242,13 +242,25 @@
 	* Corresponding authors.<lb/> E-mail addresses:
 	<email>oleg.denisov@cern.ch</email>
 
-	(O.Yu. Denisov),
+	(
+	<byline>
+	<docAuthor>O.Yu. Denisov</docAuthor>
+	</byline>
+	),
 	<email>gerhard.mallot@cern.ch</email>
 
-	(G.K. Mallot),
+	(
+	<byline>
+	<docAuthor>G.K. Mallot</docAuthor>
+	</byline>
+	),
 	<email>bakur.parsamyan@cern.ch</email>
 
-	(B. Parsamyan).
+	(
+	<byline>
+	<docAuthor>B. Parsamyan</docAuthor>
+	</byline>
+	).
 		</front>
 	</text>
 </tei>

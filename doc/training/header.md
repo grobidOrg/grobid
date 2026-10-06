@@ -125,12 +125,18 @@ CORRESPONDENCE<lb/> Address correspondence to
 
 As illustrated above, titles like "Ph.D.", "MD", "Dr.", etc. must be **included** in the author field.
 
-The only exception is when indication of authors are given around an email or a phone number. In this case we consider that the occurrence of an author name (including abbreviated names) is purely for practical reasons and should be ignored.
+When an indication of authors is given around an email or a phone number, only the full names of the authors are labelled. A full name is a name that includes the surname, with the given names spelled out or reduced to initials (e.g. `Calum J Maclean`, `S. Yoon`):
 
 ```xml
-Email: Calum J Maclean* -
-     <email>calum.maclean@ucl.ac.uk</email>;
+    Email:
+    <byline>
+    <docAuthor>Calum J Maclean*</docAuthor>
+    </byline>
+    -
+    <email>calum.maclean@ucl.ac.uk</email>;
 ```
+
+Names abbreviated to initials only around an email or a phone number are there for purely practical reasons and are not labelled:
 
 ```xml
     *Corresponding author. Emails:
@@ -189,7 +195,7 @@ Address are labelled with their own tag `<address>`.
 	<affiliation>[I]</affiliation>
     </byline>
 
-	<idno>https://orcid.org/0000-0003-0353-1424<lb/></idno>
+	<idno type="orcid">https://orcid.org/0000-0003-0353-1424<lb/></idno>
 
 	<byline>
 	<affiliation>Universidade do Estado do Rio de Janeiro, Instituto de Aplicação Fernando Rodrigues da Silveira,<lb/> Departamento de Ciências Humanas e Filosofia.</affiliation>
@@ -223,6 +229,22 @@ In case two abstracts are adjacent in terms of text stream, they must be tagged 
 !!! warning "Remember to exclude the abstract title"
     Attention must be paid to exclude functional words like "Abstract", "Summary", etc. from the labelled abstract. These are indications that will be exploited by Grobid to predict the start of the abstract but it's not something that we want to see in the final extraction result.
 
+The title of an additional abstract block ("Key Points", "Highlights", "Author summary", "Plain Language Summary", "Significance statement", "Core tip", etc.) is excluded in the same way: the block is labelled as a separate abstract, its title stays outside.
+
+```xml
+    Key Points:<lb/>
+    <div type="abstract">• 525 Quasi-Love waves are cataloged,<lb/> related to lateral gradients in upper<lb/>
+    mantle seismic anisotropy in and<lb/> around Africa<lb/>...
+```
+
+On the contrary, the subtitles of a structured abstract ("Background", "Purpose", "Methods", "Results", "Conclusion", etc.) are kept **inside** the labelled abstract, **including the first one**, even when it directly follows the word "Abstract". Leaving out the first subtitle while the following ones are inside would be an inconsistent signal for the model.
+
+```xml
+    Abstract<lb/>
+    <div type="abstract">Purpose<lb/> The aim of this study was to evaluate the usability of a recently developed
+    extracorporeal...
+```
+
 ```xml
     Abstract. -
     <div type="abstract">The anisotropy ∆S of the thermopower in thin films of the high-Tc superconduc-<lb/>
@@ -231,6 +253,8 @@ In case two abstracts are adjacent in terms of text stream, they must be tagged 
     transport properties in solids, taking advantage of the availability of oriented grown crystalline<lb/>
     thin films instead of using bulk crystals.
 ```
+
+A note written by the editor ("Editor's note") is not an abstract and is not labelled.
 
 ### Keywords
 
@@ -283,10 +307,14 @@ If the title of the journal where the atticle is published appears in isolation,
 
 ### Emails
 
-Email must be tagged in a way that is limited to an actual email, excluding "Email" word, punctuations and person name information.
+Email must be tagged in a way that is limited to an actual email, excluding "Email" word, punctuations and person name information. A full author name next to the email is labelled as author (see [authors](#authors)), not as part of the email.
 
 ```xml
-    Email: Ren H Wu -
+    Email:
+    <byline>
+    <docAuthor>Ren H Wu</docAuthor>
+    </byline>
+    -
     <email>wurh20000@sina.com</email>;
 ```
 
@@ -329,6 +357,12 @@ Be careful not to include publication date information under this block, the pub
 
 `<idno>` is used to identify strong identifiers of the document, in particular DOI, PII, ISSN, ISBN and the major Open Access repository identifiers - arXiv identifiers, HAL ID, ...
 
+The ORCID of the authors are also labelled with `<idno>`, always with the attribute `type="orcid"`:
+
+```xml
+<idno type="orcid">https://orcid.org/0000-0003-0353-1424<lb/></idno>
+```
+
 We do not tag report numbers, the identifiers here must have a global level of acceptance beyond a local source of identification.
 
 The identifier name is kept with the identifier value so that Grobid can classify more easily the type of identifier:
@@ -350,7 +384,7 @@ In the case of DOI, the identifier might look like a URL, but should be encoded 
 <idno>http://dx.doi.org/10.1097/MD.0000000000028156<lb/></idno>
 ```
 
-There is no need to specify the type of strong identifier (it will be inferred by pattern matching).
+There is no need to specify the type of strong identifier (it will be inferred by pattern matching), except for ORCID, which are marked with `type="orcid"` to distinguish these author identifiers from the identifiers of the document.
 
 ### Phone number
 

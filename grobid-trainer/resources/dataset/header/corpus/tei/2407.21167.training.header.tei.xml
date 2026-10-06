@@ -54,8 +54,10 @@
 
 	<note type="submission">version August 1, 2024<lb/></note>
 
+	Typeset using L A T E X twocolumn style in AASTeX62<lb/>
+
 	<docTitle>
-	<titlePart>Typeset using L A T E X twocolumn style in AASTeX62<lb/> An Earth-sized Planet on the Verge of Tidal Disruption<lb/></titlePart>
+	<titlePart>An Earth-sized Planet on the Verge of Tidal Disruption<lb/></titlePart>
 	</docTitle>
 
 	<byline>
@@ -458,9 +460,9 @@
 	<div type="abstract">TOI-6255 b (GJ 4256) is an Earth-sized planet (1.079±0.065 R ⊕ ) with an orbital period of only 5.7<lb/> hours. With the newly commissioned Keck Planet Finder (KPF) and CARMENES spectrographs, we<lb/> determined the planet's mass to be 1.44±0.14 M ⊕ . The planet is just outside the Roche limit, with<lb/> P orb /P Roche = 1.13 ±0.10. The strong tidal force likely deforms the planet into a triaxial ellipsoid with<lb/> a long axis that is ∼10% longer than the short axis. Assuming a reduced stellar tidal quality factor<lb/> Q ′<lb/> ⋆ ≈ 10 7 , we predict that tidal orbital decay will cause TOI-6255 to reach the Roche limit in roughly<lb/> 400 Myr. Such tidal disruptions may produce the possible signatures of planet engulfment that have<lb/> been on stars with anomalously high refractory elemental abundances compared to its conatal binary<lb/> companion. TOI-6255 b is also a favorable target for searching for star-planet magnetic interactions,<lb/> which might cause interior melting and hasten orbital decay. TOI-6255 b is a top target (Emission<lb/> Spectroscopy Metric of about 24) for phase curve observations with the James Webb Space Telescope.<lb/></div>
 
 	Keywords:
-	<keyword>planets and satellites: composition; planets and satellites: formation; planets and satellites: interiors<lb/> * Heising-Simons Foundation 51 Pegasi b</keyword>
+	<keyword>planets and satellites: composition; planets and satellites: formation; planets and satellites: interiors<lb/></keyword>
 
-	Postdoctoral Fellow<lb/>
+	* Heising-Simons Foundation 51 Pegasi b Postdoctoral Fellow<lb/>
 	<byline>
 	<affiliation>† NSF Graduate Research Fellow<lb/> ‡ NASA FINESST Fellow</affiliation>
 	</byline>

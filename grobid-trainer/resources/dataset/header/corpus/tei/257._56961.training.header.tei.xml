@@ -11,8 +11,12 @@
 	</docTitle>
 
 	<byline>
-	<docAuthor>Lorie M. Liebrock<lb/> Ken Kennedy<lb/> CRPC TR93342-S<lb/> November, 1993<lb/></docAuthor>
+	<docAuthor>Lorie M. Liebrock<lb/> Ken Kennedy<lb/></docAuthor>
 	</byline>
+
+	CRPC TR93342-S<lb/>
+
+	<date>November, 1993<lb/></date>
 
 	<byline>
 	<affiliation>Center for Research on Parallel Computation<lb/> Rice University<lb/></affiliation>

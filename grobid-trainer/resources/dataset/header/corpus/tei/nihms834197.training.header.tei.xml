@@ -84,7 +84,7 @@
 
 	<address>1225 Center Dr., Room 3130<lb/> PO Box 100165 Gainesville, FL 32610-0165</address>,
 
-    <phone>(352) 273-5410 (T)<lb/></phone>
+    <phone>(352) 273-5410</phone> (T)<lb/>
 
 	<byline>
 	<docAuthor>Karen Bearss (d),<lb/></docAuthor>
@@ -125,7 +125,12 @@
     <phone>614-688-4196</phone> (T), 614-685-9701 (F)<lb/>
 
 	<byline>
-	<affiliation>Denis G. Sukhodolsky (g),<lb/> Assistant Professor, Yale Child Study Center, Yale Child Study Center</affiliation>
+	<docAuthor>Denis G. Sukhodolsky (g),<lb/></docAuthor>
+	</byline>
+
+	Assistant Professor,
+	<byline>
+	<affiliation>Yale Child Study Center, Yale Child Study Center</affiliation>
 	</byline>
 
 	<address>PO Box 207900 230 South<lb/> Frontage Road New Haven, CT 06520-7900</address>,
@@ -133,7 +138,12 @@
     <phone>203-785-6446</phone> (T)<lb/>
 
 	<byline>
-	<affiliation>Yanhong Deng (h),<lb/> Statistician Yale Center for Analytical Sciences</affiliation>
+	<docAuthor>Yanhong Deng (h),<lb/></docAuthor>
+	</byline>
+
+	Statistician
+	<byline>
+	<affiliation>Yale Center for Analytical Sciences</affiliation>
 	</byline>,
 
 	<address>300 George Street Suite 555 New Haven, CT<lb/> 06511</address>,

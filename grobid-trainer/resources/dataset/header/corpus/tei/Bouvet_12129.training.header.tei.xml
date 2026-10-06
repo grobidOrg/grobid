@@ -44,7 +44,11 @@
 	E-mail address:
 	<email>hakim.abdulhamid@isae.fr</email>
 
-	(H. Abdulhamid).
+	(
+	<byline>
+	<docAuthor>H. Abdulhamid</docAuthor>
+	</byline>
+	).
 		</front>
 	</text>
 </tei>

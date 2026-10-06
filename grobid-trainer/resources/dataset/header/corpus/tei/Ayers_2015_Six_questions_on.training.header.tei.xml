@@ -172,7 +172,11 @@
 	⇤ Corresponding author<lb/> Email address:
 	<email>silvi@lct.jussieu.fr</email>
 
-	(Bernard Silvi)<lb/>
+	(
+	<byline>
+	<docAuthor>Bernard Silvi</docAuthor>
+	</byline>
+	)<lb/>
 	<note type="submission">Preprint submitted to Computational and Theoretical Chemistry<lb/></note> 
 
 	<date>September 24, 2014</date>

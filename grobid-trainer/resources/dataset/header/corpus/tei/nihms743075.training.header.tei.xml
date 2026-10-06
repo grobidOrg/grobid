@@ -14,19 +14,39 @@
 	<docAuthor>Chenguang Wang † , Yangqiu Song ‡ , Haoran Li † , Ming Zhang † , and Jiawei Han ‡<lb/></docAuthor>
 	</byline>
 
-	Chenguang Wang:
+
+	<byline>
+	<docAuthor>Chenguang Wang</docAuthor>
+	</byline>
+	:
 	<email>wangchenguang@pku.edu.cn</email>
 
-	; Yangqiu Song:
+	;
+	<byline>
+	<docAuthor>Yangqiu Song</docAuthor>
+	</byline>
+	:
 	<email>yqsong@illinois.edu</email>
 
-	; Haoran Li:<lb/>
+	;
+	<byline>
+	<docAuthor>Haoran Li</docAuthor>
+	</byline>
+	:<lb/>
 	<email>lihaoran_2012@pku.edu.cn</email>
 
-	; Ming Zhang:
+	;
+	<byline>
+	<docAuthor>Ming Zhang</docAuthor>
+	</byline>
+	:
 	<email>mzhang_cs@pku.edu.cn</email>
 
-	; Jiawei Han:
+	;
+	<byline>
+	<docAuthor>Jiawei Han</docAuthor>
+	</byline>
+	:
 	<email>hanj@illinois.edu<lb/></email>
 
 	<byline>

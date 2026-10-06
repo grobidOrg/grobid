@@ -129,7 +129,11 @@
 
 	<address>307<lb/> E.63rd Street, 2nd floor, New York,<lb/> NY 10065, USA<lb/></address> 
 
-	Correspondence to: E Basch<lb/>
+	Correspondence to:
+	<byline>
+	<docAuthor>E Basch</docAuthor>
+	</byline>
+	<lb/>
 	
 	<email>basche@mskcc.org</email>
 

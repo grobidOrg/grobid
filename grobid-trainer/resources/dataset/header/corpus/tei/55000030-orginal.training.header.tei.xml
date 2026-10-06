@@ -75,7 +75,11 @@
 	Tel.: <phone>+33 1 45688379</phone>; fax: +33 1 40613533.<lb/> E-mail address:
 	<email>hugues.bedouelle@pasteur.fr</email>
 
-	(H. Bedouelle).<lb/> 1 These authors contributed equally to this work.
+	(
+	<byline>
+	<docAuthor>H. Bedouelle</docAuthor>
+	</byline>
+	).<lb/> 1 These authors contributed equally to this work.
 		</front>
 	</text>
 </tei>

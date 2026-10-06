@@ -18,8 +18,10 @@
 	<docAuthor>Nicola Carey, PhD,</docAuthor>
 	</byline>
 
+	Reader,
+
 	<byline>
-	<affiliation>Reader, School of Health Sciences, University of Surrey,</affiliation>
+	<affiliation>School of Health Sciences, University of Surrey,</affiliation>
 	</byline>
 
 	<address>UK<lb/></address>
@@ -28,8 +30,10 @@
 	<docAuthor>Judith Edwards, MSc,</docAuthor>
 	</byline>
 
+	Research Fellow,
+
 	<byline>
-	<affiliation>Research Fellow, School of Health Sciences, University of Surrey,</affiliation>
+	<affiliation>School of Health Sciences, University of Surrey,</affiliation>
 	</byline>
 
 	<address>UK<lb/></address>
@@ -38,8 +42,10 @@
 	<docAuthor>Simon Otter, PhD,</docAuthor>
 	</byline>
 
+	Principal Lecturer,
+
 	<byline>
-	<affiliation>Principal Lecturer, School of Health Science, University of Brighton,</affiliation>
+	<affiliation>School of Health Science, University of Brighton,</affiliation>
 	</byline>
 
 	<address>UK<lb/></address>
@@ -48,14 +54,16 @@
 	<docAuthor>Heather Gage, PhD,</docAuthor>
 	</byline>
 
+	Professor of Health Economics,
+
 	<byline>
-	<affiliation>Professor of Health Economics, University of Surrey,</affiliation>
+	<affiliation>University of Surrey,</affiliation>
 	</byline>
 
 	<address>UK<lb/></address>
 
 	<byline>
-	<docAuthor>Peter Williams, MSc, Medical Statistician,</docAuthor>
+	<docAuthor>Peter Williams, MSc,</docAuthor> Medical Statistician,
 	</byline>
 
 	<byline>
@@ -65,7 +73,7 @@
 	<address>UK<lb/></address>
 
 	<byline>
-	<docAuthor>Molly Courtenay, PhD, Professor,</docAuthor>
+	<docAuthor>Molly Courtenay, PhD,</docAuthor> Professor,
 	</byline>
 
 	<byline>
@@ -75,7 +83,7 @@
 	<address>UK<lb/></address>
 
 	<byline>
-	<docAuthor>Ann Moore PhD, FCSP, FMACP, Cert Ed, Dip.TP, Emeritus Professor,</docAuthor>
+	<docAuthor>Ann Moore PhD, FCSP, FMACP, Cert Ed, Dip.TP,</docAuthor> Emeritus Professor,
 	</byline>
 
 	<byline>
@@ -85,7 +93,7 @@
 	<address>UK<lb/></address>
 
 	<byline>
-	<docAuthor>Karen Stenner, PhD, Lecturer</docAuthor>
+	<docAuthor>Karen Stenner, PhD,</docAuthor> Lecturer
 	</byline>
 
 	in 

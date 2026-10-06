@@ -60,7 +60,7 @@
 
 	<email>nichole.broderick@uconn.edu<lb/></email>
 
-	<idno>http://orcid.org/0000-0002-6830-9456<lb/></idno>
+	<idno type="orcid">http://orcid.org/0000-0002-6830-9456<lb/></idno>
 
 	<byline>
 	<docAuthor>Arturo Casadevall</docAuthor>
@@ -75,7 +75,7 @@
 
 	<email>acasade1@jhu.edu<lb/></email>
 
-	<idno>http://orcid.org/0000-0002-9402-9167<lb/></idno>
+	<idno type="orcid">http://orcid.org/0000-0002-9402-9167<lb/></idno>
 
 	Author contributions:
 	<note type="contribution">Nichole A Broderick, Arturo<lb/> Casadevall, Conceptualization, Data curation, Formal<lb/> analysis, Investigation, Methodology, Writing-original<lb/> draft, Writing-review and editing<lb/></note>

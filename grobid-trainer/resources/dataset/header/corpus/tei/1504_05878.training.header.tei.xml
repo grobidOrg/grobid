@@ -84,7 +84,11 @@
 	E-mail address:
 	<email>guy.wilkinson@cern.ch</email>
 
-	(G. Wilkinson).
+	(
+	<byline>
+	<docAuthor>G. Wilkinson</docAuthor>
+	</byline>
+	).
 		</front>
 	</text>
 </tei>

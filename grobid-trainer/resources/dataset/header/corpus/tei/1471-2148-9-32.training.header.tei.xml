@@ -65,19 +65,39 @@
 
 	<address>Cambridge, CB2 3EJ, UK<lb/></address>
 
-	Email: Jennifer Pastorini* -
+	Email:
+	<byline>
+	<docAuthor>Jennifer Pastorini*</docAuthor>
+	</byline>
+	-
 	<email>jenny@aim.uzh.ch</email>; 
 
-	Alphonse Zaramody -
+
+	<byline>
+	<docAuthor>Alphonse Zaramody</docAuthor>
+	</byline>
+	-
 	<email>zaramody@univ-mahajanga.mg</email>;<lb/> 
 
-	Deborah J Curtis -
+
+	<byline>
+	<docAuthor>Deborah J Curtis</docAuthor>
+	</byline>
+	-
 	<email>curtis@scimedtrans.co.uk</email>; 
 
-	Caroline M Nievergelt -
+
+	<byline>
+	<docAuthor>Caroline M Nievergelt</docAuthor>
+	</byline>
+	-
 	<email>cnieverg@ucsd.edu</email>; 
 
-	Nicholas I Mundy -
+
+	<byline>
+	<docAuthor>Nicholas I Mundy</docAuthor>
+	</byline>
+	-
 	<email>nim21@cam.ac.uk<lb/></email>
 
 	* Corresponding author 

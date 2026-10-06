@@ -128,7 +128,7 @@
 	<docAuthor>Yonghoon Choi<lb/></docAuthor>
 	</byline>
 
-	<idno>https://orcid.org/0000-0002-1331-969X</idno>
+	<idno type="orcid">https://orcid.org/0000-0002-1331-969X</idno>
 
 		</front>
 	</text>
