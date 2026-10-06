@@ -65,7 +65,12 @@
 	Index Terms-
 	<keyword>backdoors, neural networks, robust optimiza-<lb/>tion, machine learning<lb/></keyword>
 
-	* equal contribution.<lb/> E. Soremekun is with the
+	* equal contribution.<lb/>
+	<byline>
+	<docAuthor>E. Soremekun</docAuthor>
+	</byline>
+
+	is with the
 	<byline>
 	<affiliation>Interdisciplinary Centre for Security, Reliability<lb/> and Trust (SnT), University of Luxembourg,</affiliation>
 	</byline>

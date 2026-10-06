@@ -39,10 +39,16 @@
 	</byline>
 
 	<byline>
-	<affiliation>Institut für Humangenetik,<lb/></affiliation>
+	<affiliation>Institut für Humangenetik,<lb/> Biozentrum,</affiliation>
 	</byline>
 
-	<address>Biozentrum, Am Hubland<lb/> Julius-Maximilians Universität Würzburg<lb/> D-97074 Würzburg<lb/></address>
+	<address>Am Hubland<lb/></address>
+
+	<byline>
+	<affiliation>Julius-Maximilians Universität Würzburg<lb/></affiliation>
+	</byline>
+
+	<address>D-97074 Würzburg<lb/></address>
 
 	Tel.: 
 	<phone>+49-931-31-81350<lb/></phone> 

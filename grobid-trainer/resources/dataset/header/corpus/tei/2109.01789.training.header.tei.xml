@@ -140,8 +140,7 @@
 
 	<div type="abstract">We present the status of the development of a Cherenkov telescope to be flown on a long-duration<lb/> balloon flight, the Extreme Universe Space Observatory Super Pressure Balloon 2 (EUSO-SPB2).<lb/> EUSO-SPB2 is an approved NASA balloon mission that is planned to fly in 2023 and is a<lb/> precursor of the Probe of Extreme Multi-Messenger Astrophysics (POEMMA), a candidate for<lb/> an Astrophysics probe-class mission. The purpose of the Cherenkov telescope on-board EUSO-<lb/>SPB2 is to classify known and unknown sources of backgrounds for future space-based neutrino<lb/> detectors. Furthermore, we will use the Earth-skimming technique to search for Very-High-Energy<lb/> (VHE) tau neutrinos below the limb (E &gt; 10 PeV) and observe air showers from cosmic rays above<lb/> the limb. The 0.785 𝑚 2 Cherenkov telescope is equipped with a 512-pixel SiPM camera covering<lb/> a 12.8°x 6.4°(Horizontal × Vertical) field of view. The camera signals are digitized with a 100<lb/> MS/s readout system. In this paper, we discuss the status of the telescope development, the camera<lb/> integration, and simulation studies of the camera response.<lb/></div>
 
-	37
-	<meeting>th International Cosmic Ray Conference (ICRC 2021)<lb/> July 12th -23rd, 2021<lb/> Online -Berlin, Germany<lb/></meeting>
+	<meeting>37th International Cosmic Ray Conference (ICRC 2021)<lb/> July 12th -23rd, 2021<lb/> Online -Berlin, Germany<lb/></meeting>
 
 	* Presenter<lb/>
 	<note type="copyright">© Copyright owned by the author(s) under the terms of the Creative Commons<lb/> Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).<lb/> https://pos.sissa.it/<lb/></note>
@@ -550,16 +549,16 @@
 	<address>Russia<lb/></address>
 
 	<byline>
-	<affiliation>𝑘𝑐 Space Regatta Consortium, Korolev, </affiliation>
+	<affiliation>𝑘𝑐 Space Regatta Consortium, </affiliation>
 	</byline>
 
-	<address>Russia<lb/></address>
+	<address>Korolev, Russia<lb/></address>
 
 	<byline>
-	<affiliation>𝑙𝑎 Institute of Experimental Physics, Kosice,</affiliation>
+	<affiliation>𝑙𝑎 Institute of Experimental Physics,</affiliation>
 	</byline>
 
-	<address>Slovakia<lb/></address>
+	<address>Kosice, Slovakia<lb/></address>
 
 	<byline>
 	<affiliation>𝑙𝑏 Technical University Kosice (TUKE), </affiliation>
@@ -616,10 +615,10 @@
 	<address>Versoix, Switzerland<lb/></address>
 
 	<byline>
-	<affiliation>𝑜𝑐 Institute for Atmospheric and Climate Science, </affiliation>
+	<affiliation>𝑜𝑐 Institute for Atmospheric and Climate Science, ETH Zürich, </affiliation>
 	</byline>
 
-	<address>ETH Zürich, Switzerland<lb/></address>
+	<address>Switzerland<lb/></address>
 
 	<byline>
 	<affiliation>𝑝𝑎 Space Science Laboratory, University of California, </affiliation>

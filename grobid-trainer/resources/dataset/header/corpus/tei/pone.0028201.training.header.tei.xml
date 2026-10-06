@@ -32,8 +32,10 @@
 	<editor>>Joseph S. Ross,</editor>
 
 	<byline>
-	<affiliation>Yale University School of Medicine, United States of America<lb/></affiliation>
+	<affiliation>Yale University School of Medicine,</affiliation>
 	</byline>
+
+	<address>United States of America<lb/></address>
 
 	<note type="submission">Received June 13, 2011; Accepted November 3, 2011;</note>
 
@@ -44,7 +46,7 @@
 	<note type="copyright">ß 2011 Kaufman et al. This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits<lb/> unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.<lb/></note>
 
 	Funding: 
-	<note type="submission">The authors have no support or funding to report.<lb/> </note>
+	<note type="funding">The authors have no support or funding to report.<lb/> </note>
 	
 	Competing Interests:
     <note type="conflict">The authors have the following competing interest: All the authors are employees of Quest Diagnostics. There are no patents, products in<lb/> development or marketed products to declare. This does not alter the authors&apos; adherence to all the PLoS ONE policies on sharing data and materials.<lb/></note>

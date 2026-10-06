@@ -75,12 +75,12 @@
 
 	<email>dengzhch3@mail2.sysu.edu.cn</email>
 
-	, z-s-
-	<email>06@163.com</email>
+	,
+	<email>z-s-06@163.com</email>
 
-	)<lb/> 2
+	)<lb/>
 	<byline>
-	<docAuthor>Xiangtai Li and Yunhai Tong</docAuthor>
+	<docAuthor>2 Xiangtai Li and Yunhai Tong</docAuthor>
 	</byline>
 
 	are with the
@@ -107,15 +107,13 @@
 
 	is with the
 	<byline>
-	<affiliation>Department of Computer Science,</affiliation>
+	<affiliation>Department of Computer Science, ETH Zurich.<lb/></affiliation>
 	</byline>
-
-	<address>ETH Zurich.<lb/></address>
 
 	<email>xia.li@inf.ethz.ch<lb/></email>
 
 	<byline>
-	<affiliation>4 Mengyuan Liu</affiliation>
+	<docAuthor>4 Mengyuan Liu</docAuthor>
 	</byline>
 
 	is with the

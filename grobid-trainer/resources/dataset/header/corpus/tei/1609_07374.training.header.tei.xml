@@ -99,7 +99,13 @@
 	<affiliation>k Technical University in Liberec,</affiliation>
 	</byline>
 
-	<address>46117 Liberec, Czech Republic 17<lb/> l LIP, 1000-149 Lisbon, Portugal 20<lb/></address>
+	<address>46117 Liberec, Czech Republic 17<lb/></address>
+
+	<byline>
+	<affiliation>l LIP,</affiliation>
+	</byline>
+
+	<address>1000-149 Lisbon, Portugal 20<lb/></address>
 
 	<byline>
 	<affiliation>m Universität Mainz, Institut für Kernphysik,</affiliation>
@@ -228,9 +234,7 @@
 	<date>27 April 2017<lb/></date>
 
 	Editor:
-	<byline>
-	<docAuthor>M. Doser<lb/></docAuthor>
-	</byline>
+	<editor>M. Doser<lb/></editor>
 
 	Keywords:<lb/>
 	<keyword>SIDIS<lb/> Drell-Yan<lb/> Spin<lb/> Azimuthal asymmetries<lb/> Sivers TMDs<lb/></keyword>

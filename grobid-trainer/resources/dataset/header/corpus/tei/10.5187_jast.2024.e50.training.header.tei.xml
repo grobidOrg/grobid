@@ -209,11 +209,13 @@ Affiliation<lb/>
 	</byline>
 
 	Email address -this is where your proofs will be sent<lb/>
-	<email>hbkim@dankook.ac.kr<lb/> mhsong@cnu.ac.kr<lb/></email>
+	<email>hbkim@dankook.ac.kr<lb/></email>
 
-	Secondary Email address<lb/> Address<lb/> Department of
+	<email>mhsong@cnu.ac.kr<lb/></email>
+
+	Secondary Email address<lb/> Address<lb/>
 	<byline>
-	<affiliation>Animal Resources Science, Dankook University,<lb/></affiliation>
+	<affiliation>Department of Animal Resources Science, Dankook University,<lb/></affiliation>
 	</byline>
 
 	<address>Cheonan 31116, Korea.<lb/></address>

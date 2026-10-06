@@ -21,8 +21,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>Laboratoire Loria, France<lb/></affiliation>
+	<affiliation>Laboratoire Loria,</affiliation>
 	</byline>
+
+	<address>France<lb/></address>
 
 	Keywords:
 	<keyword>SGML, structured documents, multi-level alignment.<lb/></keyword>
