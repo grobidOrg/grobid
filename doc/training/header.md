@@ -102,6 +102,16 @@ Subtitles are labelled similarly as title but as an independent field. It's impo
 
 Running titles are not labelled at all.
 
+The line numbers of a manuscript with numbered lines (frequent in preprints) are not part of any field. When they stand at the end of a field, they are left outside:
+
+```xml
+    <docTitle>
+        <titlePart>The Nicrophorus vespilloides genome and methylome, a beetle with complex social behavior</titlePart>
+    </docTitle>
+
+    1 2<lb/>
+```
+
 ```xml
     <address>Villejuif, France<lb/></address>
 
@@ -186,7 +196,7 @@ Address are labelled with their own tag `<address>`.
     <address>40225 Düsseldorf, Germany<lb/></address>
 ```
 
-- When a marker precedes the prefix (e.g. `present address`, keep marker, prefix and affiliation in one `<affiliation>`.
+- When a marker precedes the prefix (e.g. `Present address:`, `Corresponding author.`, `Corresponding author at:`), keep marker, prefix and affiliation in one `<affiliation>`, e.g. `<affiliation>† Corresponding Author. Norges Bank;</affiliation>`.
 - When there is no marker before the prefix, leave "Present address:" outside.
 - When an author information (e.g. ORCID) is present between the marker and the affiliation, place the marker in a separate `<affiliation>` tag, and the affiliation in a separate `<affiliation>` tag:
 
@@ -302,6 +312,15 @@ If the reference includes an identifier, in particular a DOI, which cannot be ta
         doi:10.1029/2007WR006109, 2008<lb/></reference>
 ```
 
+Only the reference of the annotated document itself is labelled. The citation of another work (the article discussed by a letter or a comment, the book under review, the article completed by an addendum, etc.) is not labelled:
+
+```xml
+    Addendum to:<lb/> Regulation of Autophagy by Sphingosine Kinase 1 and Its<lb/> Role in Cell Survival during Nutrient Starvation<lb/>
+    G. Lavieu, F. Scarlatti, G. Sala, S. Carpentier, T. Levade,<lb/> R. Ghidoni, J. Botti and P. Codogno<lb/>J Biol Chem 2006; 281:8518-27
+```
+
+A short fragment of the reference cut off from its main part by other blocks (e.g. the last words of the citation, `USA. ACM, New York, NY, USA, 13 pages.`) is not labelled either.
+
 If the title of the journal where the atticle is published appears in isolation, it is not enough to have a "reference", and the tags `<title level="j">` must be used.
 
 
@@ -340,6 +359,12 @@ The `<note type="submission">` tag is used to identify, in a raw manner, the sub
 ```
 
 Be careful not to include publication date information under this block, the publication date needs to be encoded with a specific `<date>` element.
+
+The `(Dated: ...)` line of a preprint is not a publication date (it is often the date at which the PDF was produced). It is labelled as a whole as submission information:
+
+```xml
+    <note type="submission">(Dated: August 15, 2019 )<lb/></note>
+```
 
 ### Copyrights
 
@@ -386,6 +411,14 @@ In the case of DOI, the identifier might look like a URL, but should be encoded 
 <idno>http://dx.doi.org/10.1097/MD.0000000000028156<lb/></idno>
 ```
 
+Each identifier is labelled in its own `<idno>`, even when several identifiers follow each other:
+
+```xml
+    <idno>e-ISSN: 2690-6104<lb/></idno>
+    <idno>p-ISSN: 2690-6090<lb/></idno>
+    <idno>DOI 10.1108/IJIEOM-10-2023-0074<lb/></idno>
+```
+
 There is no need to specify the type of strong identifier (it will be inferred by pattern matching), except for ORCID, which are marked with `type="orcid"` to distinguish these author identifiers from the identifiers of the document.
 
 ### Phone number
@@ -419,6 +452,18 @@ In general, group names are introduced as such, in a distinctive manner from aff
     <note type="group">JPHC Study Group</note>
 ```
 
+The words introducing the group, including the article ("for the", "on behalf of the"), stay outside the labelled field. An author named before the group is labelled as author:
+
+```xml
+    <byline>
+        <docAuthor>K. Aoki</docAuthor>
+    </byline>
+
+    for the
+
+    <note type="group">PHENIX Collaboration<lb/></note>
+```
+
 ### Journal titles
 
 In case the name of the journal appears alone in the header part, not part of a reference, it is tagged specifically.
@@ -431,6 +476,14 @@ In case the name of the journal appears alone in the header part, not part of a 
 ```
 
 If the journal title appears as part of a reference (e.g. "how to cite"), it is then part of the `<reference>` element.
+
+When the journal name is printed alone (masthead) and is followed by a citation line that repeats it, usually in abbreviated form, the masthead is labelled as journal title and the citation line as reference:
+
+```xml
+    <title level="j">EUROPEAN JOURNAL OF PHYSICS<lb/></title>
+
+    <reference>Eur. J. Phys. 32 (2011) 1007–1018</reference>
+```
 
 ### Meeting information
 
@@ -446,6 +499,12 @@ Publications can be associated to a particular meeting event, in particular a co
     <meeting>12TH INTERNATIONAL SYMPOSIUM ON FLOW VISUALIZATION<lb/>
     September 10-14, 2006, German Aerospace Center (DLR), Göttingen, Germany<lb/>
     </meeting>
+```
+
+The short conference line found in the header or footer of the page (acronym, dates and place) is a meeting, not a reference:
+
+```xml
+    <meeting>ICoMS &apos;21, June 24-26, 2021, Paris, France<lb/></meeting>
 ```
 
 If the meeting information is part of a larger reference (e.g. definition the citation information of the Proceedings of a conference where the article is published), then it has to be labelled also as `<reference>` (this is similar to the journal title case just above). For instance, in the following example, pages are indicated and we refer to the container of the article and not just to a meeting.
