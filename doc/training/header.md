@@ -125,12 +125,18 @@ CORRESPONDENCE<lb/> Address correspondence to
 
 As illustrated above, titles like "Ph.D.", "MD", "Dr.", etc. must be **included** in the author field.
 
-The only exception is when indication of authors are given around an email or a phone number. In this case we consider that the occurrence of an author name (including abbreviated names) is purely for practical reasons and should be ignored.
+When an indication of authors is given around an email or a phone number, only the full names of the authors are labelled:
 
 ```xml
-Email: Calum J Maclean* -
-     <email>calum.maclean@ucl.ac.uk</email>;
+    Email:
+    <byline>
+    <docAuthor>Calum J Maclean*</docAuthor>
+    </byline>
+    -
+    <email>calum.maclean@ucl.ac.uk</email>;
 ```
+
+Abbreviated names (e.g. initials) around an email or a phone number are there for purely practical reasons and are not labelled:
 
 ```xml
     *Corresponding author. Emails:
@@ -283,10 +289,14 @@ If the title of the journal where the atticle is published appears in isolation,
 
 ### Emails
 
-Email must be tagged in a way that is limited to an actual email, excluding "Email" word, punctuations and person name information.
+Email must be tagged in a way that is limited to an actual email, excluding "Email" word, punctuations and person name information. A full author name next to the email is labelled as author (see [authors](#authors)), not as part of the email.
 
 ```xml
-    Email: Ren H Wu -
+    Email:
+    <byline>
+    <docAuthor>Ren H Wu</docAuthor>
+    </byline>
+    -
     <email>wurh20000@sina.com</email>;
 ```
 
