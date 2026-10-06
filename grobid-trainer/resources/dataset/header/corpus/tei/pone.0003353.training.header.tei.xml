@@ -30,10 +30,10 @@
 	<affiliation>3 Florida Museum of Natural History and the Genetics Institute, University of Florida,</affiliation>
 	</byline>
 
-	<address>Gainesville, Florida,<lb/></address>
+	<address>Gainesville, Florida,<lb/> United States of America,</address>
 
 	<byline>
-	<affiliation>United States of America, 4 Massey University, Institute of Molecular Biosciences,</affiliation>
+	<affiliation>4 Massey University, Institute of Molecular Biosciences,</affiliation>
 	</byline>
 
 	<address>Palmerston North, New Zealand,</address>
@@ -62,8 +62,10 @@
 	<editor>Samuel P. Hazen,</editor>
 
 	<byline>
-	<affiliation>University of Massachusetts Amherst, United States of America<lb/></affiliation>
+	<affiliation>University of Massachusetts Amherst,</affiliation>
 	</byline>
+
+	<address>United States of America<lb/></address>
 
 	<note type="submission">Received July 3, 2008; Accepted September 8, 2008;</note>
 

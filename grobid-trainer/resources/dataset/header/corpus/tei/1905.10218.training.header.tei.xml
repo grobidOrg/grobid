@@ -86,8 +86,7 @@
 	Abstract
 	<div type="abstract">Quantification of kidney function in Dynamic<lb/> Contrast Enhanced Magnetic Resonance imaging (DCE-<lb/>MRI) requires careful segmentation of the renal region<lb/> of interest (ROI). Traditionally, human experts are re-<lb/>quired to manually delineate the kidney ROI across<lb/> multiple images in the dynamic sequence. This approach<lb/> is costly, time-consuming and labour intensive, and there-<lb/>fore acts to limit patient throughout and acts as one of<lb/> the factors limiting the wider adoption of DCR-MRI in<lb/> clinical practice.<lb/> Therefore, to address this issue, we present the first<lb/> use of Dynamic Mode Decomposition (DMD) as a the<lb/> basis for automatic segmentation of a dynamic sequence,<lb/> in this case, kidney ROIs in DCE-MRI. Using DMD<lb/> coupled combined with thresholding and connected com-<lb/>ponent analysis is first validated on synthetically gener-<lb/>ated data with known ground-truth, and then applied<lb/> to ten healthy volunteers DCE-MRI datasets.<lb/></div>
 
-	Santosh Tirunagari and Norman Poh have benefited from the<lb/> Medical Research Council (
-	<div type="abstract">MRC) funded project "Modelling<lb/> the Progression of Chronic Kidney Disease" under the grant<lb/> number R/M023281/1.<lb/></div>
+	<note type="funding">Santosh Tirunagari and Norman Poh have benefited from the<lb/> Medical Research Council (MRC) funded project "Modelling<lb/> the Progression of Chronic Kidney Disease" under the grant<lb/> number R/M023281/1.<lb/></note>
 
 	<byline>
 	<docAuthor>S. Tirunagari</docAuthor> • 
@@ -103,7 +102,7 @@
 
 	<address>Guildford, Surrey GU2 7XH, UK.<lb/></address>
 
-	Tel.: +44-(0)1483-6179.<lb/>
+	Tel.: <phone>+44-(0)1483-6179</phone>.<lb/>
 			
 	<byline>
 	<docAuthor>S. Tirunagari</docAuthor> • 

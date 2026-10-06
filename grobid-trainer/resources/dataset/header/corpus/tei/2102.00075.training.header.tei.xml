@@ -147,11 +147,7 @@
 	<keyword>near data processing, neural networks, solid state drives<lb/></keyword>
 
 	ACM Reference Format:<lb/>
-	<byline>
-	<docAuthor>Mark Wilkening, Udit Gupta, Samuel Hsia, Caroline Trippel</docAuthor>
-	</byline>
-
-	<reference>, Carole-Jean<lb/> Wu, David Brooks, and Gu-Yeon Wei. 2021. RecSSD: Near Data Processing<lb/> for Solid State Drive Based Recommendation Inference. In Proceedings of the<lb/> 26th ACM International Conference on Architectural Support for Programming<lb/> Languages and Operating Systems (ASPLOS '21), April 19-23, 2021, Virtual,<lb/></reference>
+	<reference>Mark Wilkening, Udit Gupta, Samuel Hsia, Caroline Trippel, Carole-Jean<lb/> Wu, David Brooks, and Gu-Yeon Wei. 2021. RecSSD: Near Data Processing<lb/> for Solid State Drive Based Recommendation Inference. In Proceedings of the<lb/> 26th ACM International Conference on Architectural Support for Programming<lb/> Languages and Operating Systems (ASPLOS '21), April 19-23, 2021, Virtual,<lb/></reference>
 
 	<note type="copyright">Permission to make digital or hard copies of all or part of this work for personal or<lb/> classroom use is granted without fee provided that copies are not made or distributed<lb/> for profit or commercial advantage and that copies bear this notice and the full citation<lb/> on the first page. Copyrights for components of this work owned by others than ACM<lb/> must be honored. Abstracting with credit is permitted. To copy otherwise, or republish,<lb/> to post on servers or to redistribute to lists, requires prior specific permission and/or a<lb/> fee. Request permissions from permissions@acm.org.<lb/></note>
 
@@ -166,7 +162,9 @@
 
 	<reference>USA. ACM, New York, NY, USA, 13 pages.</reference>
 
-	<idno>https://doi.org/10.1145/3445814. 3446763<lb/> arXiv:2102.00075v1 [cs.AR]</idno>
+	<idno>https://doi.org/10.1145/3445814. 3446763<lb/></idno>
+
+	<idno>arXiv:2102.00075v1 [cs.AR]</idno>
 
 	<date>29 Jan 2021</date>
 

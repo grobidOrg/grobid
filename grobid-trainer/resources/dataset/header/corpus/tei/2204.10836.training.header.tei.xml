@@ -745,10 +745,10 @@
 	<address>London, United Kingdom.<lb/></address>
 
 	<byline>
-	<affiliation>109 Stoke Mandeville Hospital, Mandeville Road,</affiliation>
+	<affiliation>109 Stoke Mandeville Hospital,</affiliation>
 	</byline>
 
-	<address>Aylesbury, United Kingdom.<lb/></address>
+	<address>Mandeville Road, Aylesbury, United Kingdom.<lb/></address>
 
 	<byline>
 	<affiliation>110 Department of Biomedical and Molecular Sciences, Queen's University,</affiliation>
@@ -781,10 +781,10 @@
 	<address>Seoul, South Korea.<lb/></address>
 
 	<byline>
-	<affiliation>115 The Clatterbridge Cancer Centre NHS Foundation Trust Pembroke Place, </affiliation>
+	<affiliation>115 The Clatterbridge Cancer Centre NHS Foundation Trust</affiliation>
 	</byline>
 
-	<address>Liverpool, United Kingdom<lb/></address>
+	<address>Pembroke Place, Liverpool, United Kingdom<lb/></address>
 
 	<byline>
 	<affiliation>116 Department of Radiology, University of Washington, </affiliation>
@@ -1015,7 +1015,9 @@
 	<address>Maastricht, Netherlands.<lb/></address>
 
 
-	                                                                             * These authors contributed equally to this work.<lb/> § Corresponding author: {sbakas@upenn.edu}
+	                                                                             * These authors contributed equally to this work.<lb/> § Corresponding author: {
+	<email>sbakas@upenn.edu</email>
+	}
 
 		</front>
 	</text>

@@ -30,7 +30,19 @@
 	<affiliation>Complex Systems Computation Group (CoSCo)<lb/></affiliation>
 	</byline>
 
-	<address>P.O.Box 26, Department of Computer Science<lb/> FIN-00014 University of Helsinki, Finland<lb/> </address>
+	<address>P.O.Box 26,</address>
+
+	<byline>
+	<affiliation>Department of Computer Science<lb/></affiliation>
+	</byline>
+
+	<address>FIN-00014</address>
+
+	<byline>
+	<affiliation>University of Helsinki,</affiliation>
+	</byline>
+
+	<address>Finland<lb/> </address>
 
 	<ptr type="web">http://www.cs.Helsinki.FI/research/cosco/</ptr>
 

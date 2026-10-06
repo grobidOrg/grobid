@@ -27,10 +27,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>Electronic Technology Department, Carlos III University of Madrid<lb/> Av. de la Universidad 30,</affiliation>
+	<affiliation>Electronic Technology Department, Carlos III University of Madrid<lb/></affiliation>
 	</byline>
 
-	<address>Madrid 28911, Spain<lb/></address>
+	<address>Av. de la Universidad 30, Madrid 28911, Spain<lb/></address>
 
 	Abstract-
 	<div type="abstract">The amount of scientific data to be transmitted<lb/> from deep-space probes is currently very limited due to RF-<lb/>communications constraints. Free-space optical communication<lb/> promises to alleviate this bottleneck as this technology makes it<lb/> possible to increase the data rate while reducing the weight, mass<lb/> and power of communication onboard equipment. Nevertheless,<lb/> further improvements are needed to optimize the power delivery<lb/> from the spacecraft to the Earth. This has been also a major issue<lb/> in RF communications, where the main strategy has been to<lb/> increase the aperture of ground terminals. Free-space optical<lb/> communications can also be benefited from this strategy, as it<lb/> shares the same limitation with RF, i.e. the low power received on<lb/> the Earth. However, the cost of big telescopes increases<lb/> exponentially with their aperture, being much bigger than the<lb/> cost of big antennas. Therefore, new ideas are required to<lb/> maximize the aperture-to-cost ratio. This work explores the<lb/> feasibility of using telescopes of the future Cherenkov Telescope<lb/> Array as optical-communication ground stations. Cherenkov<lb/> telescopes are used for gamma-ray astronomy, yet they are<lb/> optical telescopes with some special characteristics. Ground-<lb/>based gamma-ray astronomy has the same received-power<lb/> limitation as deep-space lasercom, hence Cherenkov telescopes<lb/> are designed to maximize the receiver&apos;s aperture, reaching up to<lb/> 30-m diameters, at a minimum cost with some relaxed<lb/> requirements. Discussions on the critical issues of the<lb/> reutilization, as well as possible adaptations of the telescopes to<lb/> optimize them for communications, are presented. Telescopes<lb/> simulations and numerical computations of several link budgets<lb/> applied to different worst-case scenarios are discussed,<lb/> concluding that the proposal is technically feasible and would<lb/> bring important cost reductions as well as performance<lb/> improvements compared to current designs for deep-space<lb/> optical ground stations.<lb/></div>

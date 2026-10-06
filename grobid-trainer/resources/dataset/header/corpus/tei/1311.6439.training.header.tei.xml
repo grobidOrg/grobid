@@ -78,7 +78,7 @@
 	Email:
 	<email>{tadilo.bogale, luc.vandendorpe}@uclouvain.be</email>
 
-	,<lb/> Phone: +3210478071, Fax: +3210472089.
+	,<lb/> Phone: <phone>+3210478071</phone>, Fax: +3210472089.
 	<byline>
 	<docAuthor>Batu K. Chalise</docAuthor>
 	</byline>
@@ -97,7 +97,7 @@
 
 	<address>800 Lancaster Avenue,<lb/> Villanova, PA, 19085, USA,</address>
 
-	Phone: +16105197371, Fax: +16105196118,<lb/> Email:
+	Phone: <phone>+16105197371</phone>, Fax: +16105196118,<lb/> Email:
 	<email>batu.chalise@villanova.edu.<lb/></email>
 
 	<idno>arXiv:1311.6439v1 [math.OC]</idno>

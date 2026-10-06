@@ -15,7 +15,13 @@
 	</byline>
 
 	<byline>
-	<affiliation>Department of Computer Science<lb/> 140 Governor&apos;s Drive<lb/> University of Massachusetts<lb/></affiliation>
+	<affiliation>Department of Computer Science<lb/></affiliation>
+	</byline>
+
+	<address>140 Governor&apos;s Drive<lb/></address>
+
+	<byline>
+	<affiliation>University of Massachusetts<lb/></affiliation>
 	</byline>
 
 	<address>Amherst, MA 01003-4601<lb/></address>

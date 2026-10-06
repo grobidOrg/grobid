@@ -50,7 +50,7 @@
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
 		<front>
 <lb/>
-	<idno>OJ-SP-00004-2019</idno>
+	OJ-SP-00004-2019
 
 	1<lb/>
 	<docTitle>
@@ -72,10 +72,10 @@
 	<note type="funding">This work was supported by the SRA ICT TNG project Privacy-preserved<lb/> Internet Traffic Analytics (PITA).<lb/></note>
 
 	<byline>
-	<docAuthor>Pol del Aguila</docAuthor>
+	<docAuthor>Pol del Aguila Pla</docAuthor>
 	</byline>
 
-	Pla is with 
+	is with
 			
 	<byline>
 	<affiliation>&gt;the Center for Biomedical Imaging</affiliation>

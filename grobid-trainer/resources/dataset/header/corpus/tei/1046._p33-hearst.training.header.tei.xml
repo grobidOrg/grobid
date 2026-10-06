@@ -21,11 +21,7 @@
 	<div type="abstract">TextTiling is a technique for subdividing texts into multi-paragraph units that represent passages,<lb/> or subtopics. The discourse cues for identifying major subtopic shifts are patterns of lexical<lb/> co-occurrence and distribution. The algorithm is fully implemented and is shown to produce<lb/> segmentation that corresponds well to human judgments of the subtopic boundaries of 12 texts.<lb/> Multi-paragraph subtopic segmentation should be useful for many text analysis tasks, including<lb/> information retrieval and summarization.<lb/> </div>
 
 	*
-	<byline>
-	<affiliation>3333 Coyote Hill Rd,</affiliation>
-	</byline>
-
-	<address>Palo Alto, CA. 94304.</address>
+	<address>3333 Coyote Hill Rd, Palo Alto, CA. 94304.</address>
 
 	E-mail:
 	<email>hearst@parc.xerox.com<lb/></email>
