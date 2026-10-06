@@ -62,7 +62,11 @@
 	<affiliation>Kaiser<lb/> Foundation Health Plan<lb/></affiliation>
 	</byline>
 
-	Correspondence to: T Garrido
+	Correspondence to:
+	<byline>
+	<docAuthor>T Garrido</docAuthor>
+	</byline>
+	
 	<email>terhilda.garrido@kp.org</email>
 
 		</front>

@@ -74,7 +74,11 @@
 	-
 	<email>paul.serhal@uclh.nhs.uk</email>
 
-	;<lb/> JDA Delhanty -
+	;<lb/>
+	<byline>
+	<docAuthor>JDA Delhanty</docAuthor>
+	</byline>
+	-
 	<email>j.delhanty@ucl.ac.uk<lb/></email>
 
 	* Corresponding author 

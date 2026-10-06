@@ -70,7 +70,11 @@
 	Tel.: <phone>+46 31 7866104</phone>.<lb/> E-mail address:
 	<email>eva.brink@gu.se</email>
 
-	(E. Brink).<lb/> 1474-5151/$ -see front matter
+	(
+	<byline>
+	<docAuthor>E. Brink</docAuthor>
+	</byline>
+	).<lb/> 1474-5151/$ -see front matter
 	<note type="copyright">© 2009 European Society of Cardiology. Published by Elsevier B.V. All rights reserved.<lb/></note>
 
 	<idno>doi:10.1016/j.ejcnurse.2009.12.003</idno>

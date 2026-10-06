@@ -56,7 +56,11 @@
 	¤ Corresponding author. Fax: 1-301-402-7290.<lb/> E-mail address:
 	<email>kletar@mail.nih.gov</email>
 
-	(R. Kleta).
+	(
+	<byline>
+	<docAuthor>R. Kleta</docAuthor>
+	</byline>
+	).
 		</front>
 	</text>
 </tei>

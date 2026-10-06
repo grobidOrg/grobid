@@ -125,7 +125,7 @@ CORRESPONDENCE<lb/> Address correspondence to
 
 As illustrated above, titles like "Ph.D.", "MD", "Dr.", etc. must be **included** in the author field.
 
-When an indication of authors is given around an email or a phone number, only the full names of the authors are labelled:
+When an indication of authors is given around an email or a phone number, only the full names of the authors are labelled. A full name is a name that includes the surname, with the given names spelled out or reduced to initials (e.g. `Calum J Maclean`, `S. Yoon`):
 
 ```xml
     Email:
@@ -136,7 +136,7 @@ When an indication of authors is given around an email or a phone number, only t
     <email>calum.maclean@ucl.ac.uk</email>;
 ```
 
-Abbreviated names (e.g. initials) around an email or a phone number are there for purely practical reasons and are not labelled:
+Names abbreviated to initials only around an email or a phone number are there for purely practical reasons and are not labelled:
 
 ```xml
     *Corresponding author. Emails:

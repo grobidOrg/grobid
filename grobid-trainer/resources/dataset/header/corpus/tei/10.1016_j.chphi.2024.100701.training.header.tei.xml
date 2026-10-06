@@ -128,10 +128,18 @@
 	E-mail addresses:
 	<email>livio.pagano@unicatt.it</email>
 
-	(L. Pagano),
+	(
+	<byline>
+	<docAuthor>L. Pagano</docAuthor>
+	</byline>
+	),
 	<email>jon.salmanton-garcia@uk-koeln.de</email>
 
-	(J. Salmanton-García). eg<lb/> Shared junior authorship. eh<lb/> Shared senior authorship.<lb/>
+	(
+	<byline>
+	<docAuthor>J. Salmanton-García</docAuthor>
+	</byline>
+	). eg<lb/> Shared junior authorship. eh<lb/> Shared senior authorship.<lb/>
 	<reference>www.thelancet.com Vol 71 May, 2024 1</reference>
 
 	<note type="doctype">Articles</note>

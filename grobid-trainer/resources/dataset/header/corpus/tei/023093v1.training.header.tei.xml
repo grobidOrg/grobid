@@ -42,10 +42,18 @@
 	15<lb/>
 	<address>Manhattan, Kansas, USA</address>
 
-	16 17<lb/> *Corresponding Authors: CB Cunningham (
+	16 17<lb/> *Corresponding Authors:
+	<byline>
+	<docAuthor>CB Cunningham</docAuthor>
+	</byline>
+	(
 	<email>cbc83@uga.edu</email>
 
-	) and AJ Moore (
+	) and
+	<byline>
+	<docAuthor>AJ Moore</docAuthor>
+	</byline>
+	(
 	<email>ajmoore@uga.edu</email>
 
 	) 18 19<lb/> Running Title: Burying Beetle Genome 20 2 21 Abstract 22<lb/>
