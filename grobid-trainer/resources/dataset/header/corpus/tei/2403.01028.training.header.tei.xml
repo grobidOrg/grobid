@@ -92,11 +92,11 @@
 	<div type="abstract">Phase stability, and the limits thereof, are a central concern of materials thermodynamics.<lb/> However, the temperature limits of equilibrium liquid stability in chemical systems have only<lb/> been widely characterized under constant (typically atmospheric) pressure conditions,<lb/> whereunder these limits are represented by the eutectic. At higher pressures, the eutectic will<lb/> shift in both temperature and chemical composition, opening a wide thermodynamic<lb/> parameter space over which the absolute limit of liquid stability, i.e., the limit under arbitrary<lb/> values of the thermodynamic forces at play (here pressure and concentration), might exist. In<lb/> this work, we use isochoric freezing and melting to measure this absolute limit for the first time<lb/> in several binary aqueous brines, and nodding to the etymology of "eutectic", we name it the<lb/> "cenotectic" (from Greek "κοινός-τῆξῐς", meaning "universal-melt"). We discuss the<lb/> implications of our findings on ocean worlds within our solar system and cold ocean<lb/> exoplanets; estimate thermodynamic limits on ice crust thickness and final ocean depth (of<lb/> the cenotectic or "endgame" ocean) using measured cenotectic pressures; and finally provide<lb/> a generalized thermodynamic perspective on (and definition for) this fundamental<lb/> thermodynamic invariant point.<lb/></div>
 
 	<byline>
-	<docAuthor>Arian Zarriz 1 , Baptiste Journaux 2 , Matthew J. Powell-Palm 1,3,4 1<lb/></docAuthor>
+	<docAuthor>Arian Zarriz 1 , Baptiste Journaux 2 , Matthew J. Powell-Palm 1,3,4</docAuthor>
 	</byline>
 
 	<byline>
-	<affiliation> J. Mike Walker '66 Department of Mechanical Engineering, Texas A&amp;M University,</affiliation>
+	<affiliation>1<lb/> J. Mike Walker '66 Department of Mechanical Engineering, Texas A&amp;M University,</affiliation>
 	</byline>
 
 	<address>College Station, TX, USA<lb/></address>

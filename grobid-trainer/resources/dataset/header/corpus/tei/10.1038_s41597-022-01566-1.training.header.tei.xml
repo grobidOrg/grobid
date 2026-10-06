@@ -8,7 +8,11 @@
 
 	<page>1<lb/></page>
 
-	<reference>Scientific Data |<lb/> (2022) 9:450 | https://doi.org/10.1038/s41597-022-01566-1<lb/> www.nature.com/scientificdata<lb/></reference>
+	<reference>Scientific Data |<lb/> (2022) 9:450 |</reference>
+
+	<idno>https://doi.org/10.1038/s41597-022-01566-1<lb/></idno>
+
+	<ptr type="web">www.nature.com/scientificdata<lb/></ptr>
 
 	<docTitle>
 	<titlePart>Mapping hydrologic alteration and<lb/> ecological consequences in stream<lb/> reaches of the conterminous United States<lb/></titlePart>

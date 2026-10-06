@@ -11,11 +11,11 @@
 	</docTitle>
 
 	<byline>
-	<docAuthor>Miquel Trias 1 and Alicia M. Sintes 1,2 1<lb/></docAuthor>
+	<docAuthor>Miquel Trias 1 and Alicia M. Sintes 1,2</docAuthor>
 	</byline>
 
 	<byline>
-	<affiliation>Departament de Física, Universitat de les Illes Balears,</affiliation>
+	<affiliation>1<lb/> Departament de Física, Universitat de les Illes Balears,</affiliation>
 	</byline>
 
 	<address>Cra. Valldemossa Km. 7.5, E-07122 Palma de Mallorca, Spain<lb/></address>
@@ -47,7 +47,8 @@
 
 	<note type="copyright">© 2008 The American Physical Society<lb/></note>
 
-	<reference>LISA OBSERVATIONS OF SUPERMASSIVE BLACK . . .<lb/> PHYSICAL REVIEW D 77, 024030 (2008)<lb/></reference>
+	LISA OBSERVATIONS OF SUPERMASSIVE BLACK . . .<lb/>
+	<reference>PHYSICAL REVIEW D 77, 024030 (2008)<lb/></reference>
 
 	<page>024030-3</page>
 		</front>

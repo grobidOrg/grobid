@@ -19,7 +19,9 @@
 	</byline>
 
 	Citation:
-	<reference>Heddes, J.; Meerdink, P.;<lb/> Pieters, M.; Marx, M. The Automatic<lb/> Detection of Dataset Names<lb/> in Scientific Articles. Data 2021, 6, 84.<lb/> https://doi.org/10.3390/data6080084<lb/></reference>
+	<reference>Heddes, J.; Meerdink, P.;<lb/> Pieters, M.; Marx, M. The Automatic<lb/> Detection of Dataset Names<lb/> in Scientific Articles. Data 2021, 6, 84.<lb/></reference>
+
+	<idno>https://doi.org/10.3390/data6080084<lb/></idno>
 
 	Academic Editor:
 	<editor>Craig A. Knoblock<lb/></editor>
@@ -31,7 +33,8 @@
 
 	Publisher&apos;s Note: MDPI stays neutral<lb/> with regard to jurisdictional claims in<lb/> published maps and institutional affil-<lb/>iations.<lb/>
 	
-	<note type="copyright">Copyright: © 2021 by the authors.<lb/> Licensee MDPI, Basel, Switzerland.<lb/> This article is an open access article<lb/> distributed under the terms and<lb/> conditions of the Creative Commons<lb/> Attribution (CC BY) license (https://<lb/> creativecommons.org/licenses/by/<lb/> 4.0/).<lb/></note>
+	Copyright:
+	<note type="copyright">© 2021 by the authors.<lb/> Licensee MDPI, Basel, Switzerland.<lb/> This article is an open access article<lb/> distributed under the terms and<lb/> conditions of the Creative Commons<lb/> Attribution (CC BY) license (https://<lb/> creativecommons.org/licenses/by/<lb/> 4.0/).<lb/></note>
 
 	<byline>
 	<affiliation>Informatics Institute, Faculty of Science, University of Amsterdam,</affiliation>
