@@ -8,9 +8,10 @@
 
 	Title<lb/>
 	<docTitle>
-	<titlePart>Sub-tomogram averaging in RELION Authors<lb/></titlePart>
+	<titlePart>Sub-tomogram averaging in RELION</titlePart>
 	</docTitle>
 
+    Authors<lb/>
 	<byline>
 	<docAuthor>Tanmay A.M. Bharat* &amp; Sjors H.W. Scheres*</docAuthor>
 	</byline>

@@ -6,20 +6,21 @@
 	<text xml:lang="en">
 		<front>
 
-	Title<lb/> 
-	
+	Title<lb/>
+
 	<docTitle>
-	<titlePart>Extensive sequencing of seven human genomes to characterize benchmark reference materials Authors<lb/></titlePart>
+	<titlePart>Extensive sequencing of seven human genomes to characterize benchmark reference materials</titlePart>
 	</docTitle>
 
+    Authors<lb/>
 	<byline>
 	<docAuthor>Justin M. Zook 1<lb/> David Catoe 1<lb/> Jennifer McDaniel 1<lb/> Lindsay Vang 1<lb/> Noah Spies 1,2<lb/> Arend Sidow 2<lb/> Ziming Weng 2<lb/> Yuling Liu 2<lb/> Chris Mason 3<lb/> Noah Alexander 3<lb/> Elizabeth Henaff 3<lb/> Feng Chen 4<lb/> Erich Jaeger 4<lb/> Ali Moshrefi 4<lb/> Khoa Pham 5<lb/> William Stedman 5<lb/> Tiffany Liang 5<lb/> Michael Saghbini 5<lb/> Zeljko Dzakula 5<lb/> Alex Hastie 5<lb/> Han Cao 5<lb/> Gintaras Deikus 6<lb/> Eric Schadt 6<lb/> Robert Sebra 6<lb/> Ali Bashir 6<lb/> Rebecca M. Truty 7<lb/> Christopher C. Chang 7<lb/> Natali Gulbahce 7<lb/> Keyan Zhao 8<lb/> Srinka Ghosh 8<lb/> Fiona Hyland 8<lb/> Yutao Fu 8<lb/> Mark Chaisson 9<lb/> Chunlin Xiao 10<lb/> Jonathan Trow 10<lb/> Stephen T. Sherry 10<lb/> Alexander W. Zaranek 11<lb/> Madeleine Ball 11<lb/> Jason Bobe 11,6<lb/> Preston Estep 11,12<lb/> George M. Church 11,12<lb/> Patrick Marks 13<lb/> Sofia Kyriazopoulou-Panagiotopoulou 13<lb/> Grace X.Y. Zheng 13<lb/> Michael Schnall-Levin 13<lb/> Heather S. Ordonez 13<lb/> Patrice A. Mudivarti 13<lb/> Kristina Giorda 13<lb/> Marc Salit 1,2<lb/></docAuthor>
 	</byline>
 
-	<note type="group">Genome in a Bottle Consortium</note> 
+	<note type="group">Genome in a Bottle Consortium</note>
 
 	Affiliations<lb/>
-	
+
 	<byline>
 	<affiliation>1. National Institute of Standards and Technology,</affiliation>
 	</byline>
@@ -64,14 +65,14 @@
 
 	<byline>
 	<affiliation>8. Thermo Fisher Scientific,</affiliation>
-	</byline> 
+	</byline>
 
 	<address>South San Francisco, CA 94080<lb/></address>
 
 	<byline>
 	<affiliation>9. Genome Sciences, University of Washington<lb/></affiliation>
 	</byline>
-	
+
 	<byline>
 	<affiliation>10. National Center for Biotechnology Information, National Library of Medicine, National Institutes<lb/> of Health,</affiliation>
 	</byline>
