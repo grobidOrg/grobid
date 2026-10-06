@@ -114,7 +114,7 @@ In the case of an article written in non-english language having an additional E
 
 ### Authors
 
-All mentions of the authors are labelled, including possible repetition of the authors in the correspondence section. The author information might be more detailed in the correspondence part and it will be then part of the job of Grobid to identify repeated authors and to "merge" them.
+All mentions of the authors are labelled, including possible repetition of the authors in the correspondence section. The author information might be more detailed in the correspondence part, and it will be then part of the job of Grobid to identify repeated authors and to "merge" them.
 
 ```xml
 CORRESPONDENCE<lb/> Address correspondence to
@@ -123,7 +123,7 @@ CORRESPONDENCE<lb/> Address correspondence to
     </byline>
 ```
 
-As illustrated above, titles like "Ph.D.", "MD", "Dr.", etc. must be **included** in the author field.
+As illustrated above, academic titles like "Ph.D.", "MD", "Dr.", etc. must be **included** in the author field. Job descriptions: Director, etc. should be ignored.
 
 When an indication of authors is given around an email or a phone number, only the full names of the authors are labelled. A full name is a name that includes the surname, with the given names spelled out or reduced to initials (e.g. `Calum J Maclean`, `S. Yoon`):
 
@@ -307,7 +307,8 @@ If the title of the journal where the atticle is published appears in isolation,
 
 ### Emails
 
-Email must be tagged in a way that is limited to an actual email, excluding "Email" word, punctuations and person name information. A full author name next to the email is labelled as author (see [authors](#authors)), not as part of the email.
+Email must be tagged in a way that is limited to an actual email, excluding "Email" word and punctuations.
+The person name information should be excluded only when it appears differently from the author list, e.g. only with initials, or missing the last name. A full author name next to the email is labelled as author (see [authors](#authors)), not as part of the email.
 
 ```xml
     Email:
@@ -320,7 +321,8 @@ Email must be tagged in a way that is limited to an actual email, excluding "Ema
 
 ### Editors
 
-The name of the editor are tagged similarly as author names. Titles like "Prof.", "Dr.", "MD." are included in the field, but functional words as "Editor" or "Edited by" must be excluded.
+The name of the editor are tagged similarly as author names.
+Titles like "Prof.", "Dr.", "MD." are included in the field, but functional words as "Editor" or "Edited by" must be excluded.
 
 ```xml
     Decision Editor:

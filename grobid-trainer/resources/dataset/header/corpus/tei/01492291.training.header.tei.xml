@@ -6,17 +6,18 @@
 	<text xml:lang="en">
 		<front>
 <lb/>
-	Advanced Technologies and Reliable Design for Nanotechnology Systems<lb/> 
-	316 0740-7475/05/$20.00 
+	Advanced Technologies and Reliable Design for Nanotechnology Systems<lb/>
+	316 0740-7475/05/$20.00
 	<note type="copyright">© 2005 IEEE<lb/> Copublished by the IEEE CS and the IEEE CASS<lb/> </note>
-	
+
 	<title level="j">IEEE Design &amp; Test of Computers<lb/></title>
 
 	<docTitle>
 	<titlePart>A Reconfiguration-Based<lb/> Defect-Tolerant<lb/> Design Paradigm for Nanotechnologies<lb/></titlePart>
 	</docTitle>
 
-	Editor&apos;s note:<lb/> To address the density, scalability, and reliability challenges of emerging<lb/> nanotechnologies, the authors propose a hierarchy of design abstractions,<lb/> constructed as reconfigurable fabric regions, whereby designers assign<lb/> small functional flows to each region. The approach exposes a new class of<lb/> yield, delay, and cost trade-offs that must be jointly considered when<lb/> designing computing systems in defect-prone nanotechnologies.<lb/> 
+	Editor&apos;s note:<lb/>
+    To address the density, scalability, and reliability challenges of emerging<lb/> nanotechnologies, the authors propose a hierarchy of design abstractions,<lb/> constructed as reconfigurable fabric regions, whereby designers assign<lb/> small functional flows to each region. The approach exposes a new class of<lb/> yield, delay, and cost trade-offs that must be jointly considered when<lb/> designing computing systems in defect-prone nanotechnologies.<lb/>
 
 	-
 	<editor>R. Iris Bahar, </editor>
