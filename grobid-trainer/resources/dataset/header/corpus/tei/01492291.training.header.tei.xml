@@ -16,7 +16,7 @@
 	<titlePart>A Reconfiguration-Based<lb/> Defect-Tolerant<lb/> Design Paradigm for Nanotechnologies<lb/></titlePart>
 	</docTitle>
 
-	<div type="abstract">Editor&apos;s note:<lb/> To address the density, scalability, and reliability challenges of emerging<lb/> nanotechnologies, the authors propose a hierarchy of design abstractions,<lb/> constructed as reconfigurable fabric regions, whereby designers assign<lb/> small functional flows to each region. The approach exposes a new class of<lb/> yield, delay, and cost trade-offs that must be jointly considered when<lb/> designing computing systems in defect-prone nanotechnologies.<lb/> </div>
+	Editor&apos;s note:<lb/> To address the density, scalability, and reliability challenges of emerging<lb/> nanotechnologies, the authors propose a hierarchy of design abstractions,<lb/> constructed as reconfigurable fabric regions, whereby designers assign<lb/> small functional flows to each region. The approach exposes a new class of<lb/> yield, delay, and cost trade-offs that must be jointly considered when<lb/> designing computing systems in defect-prone nanotechnologies.<lb/> 
 
 	-
 	<editor>R. Iris Bahar, </editor>

@@ -229,22 +229,20 @@ In case two abstracts are adjacent in terms of text stream, they must be tagged 
 !!! warning "Remember to exclude the abstract title"
     Attention must be paid to exclude functional words like "Abstract", "Summary", etc. from the labelled abstract. These are indications that will be exploited by Grobid to predict the start of the abstract but it's not something that we want to see in the final extraction result.
 
-Only this generic abstract title is excluded. Any other title or subtitle belonging to an abstract block is kept **inside** the labelled abstract:
+The title of an additional abstract block ("Key Points", "Highlights", "Author summary", "Plain Language Summary", "Significance statement", "Core tip", etc.) is excluded in the same way: the block is labelled as a separate abstract, its title stays outside.
 
-* the title of an additional abstract block: "Key Points", "Highlights", "Author summary", "Plain Language Summary", "Significance statement", "Core tip", etc.
-* the subtitles of a structured abstract ("Background", "Purpose", "Methods", "Results", "Conclusion", etc.), **including the first one**, even when it directly follows the word "Abstract".
+```xml
+    Key Points:<lb/>
+    <div type="abstract">• 525 Quasi-Love waves are cataloged,<lb/> related to lateral gradients in upper<lb/>
+    mantle seismic anisotropy in and<lb/> around Africa<lb/>...
+```
 
-The generic title is either present or not, so it can be left out reliably. Leaving out the other subtitles would mean excluding only the first one of a series, which is an inconsistent signal for the model.
+On the contrary, the subtitles of a structured abstract ("Background", "Purpose", "Methods", "Results", "Conclusion", etc.) are kept **inside** the labelled abstract, **including the first one**, even when it directly follows the word "Abstract". Leaving out the first subtitle while the following ones are inside would be an inconsistent signal for the model.
 
 ```xml
     Abstract<lb/>
     <div type="abstract">Purpose<lb/> The aim of this study was to evaluate the usability of a recently developed
     extracorporeal...
-```
-
-```xml
-    <div type="abstract">Key Points:<lb/> • 525 Quasi-Love waves are cataloged,<lb/> related to lateral gradients in upper<lb/>
-    mantle seismic anisotropy in and<lb/> around Africa<lb/>...
 ```
 
 ```xml
@@ -255,6 +253,8 @@ The generic title is either present or not, so it can be left out reliably. Leav
     transport properties in solids, taking advantage of the availability of oriented grown crystalline<lb/>
     thin films instead of using bulk crystals.
 ```
+
+A note written by the editor ("Editor's note") is not an abstract and is not labelled.
 
 ### Keywords
 
