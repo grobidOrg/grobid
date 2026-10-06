@@ -10,7 +10,7 @@
 						<author>
 
 							<affiliation>
-								<orgName type="departement">Institute of Theoretical Physics</orgName>
+								<orgName type="department">Institute of Theoretical Physics</orgName>
 								<orgName type="institution">University of Warsaw</orgName>,
 								<address>
 									<addrLine>Hoża 69</addrLine>,
@@ -21,7 +21,7 @@
 							</affiliation>
 							
 							<affiliation>
-								<orgName type="departement">Department of Physics</orgName>,
+								<orgName type="department">Department of Physics</orgName>,
 								<address>
 								<postBox>P.O. Box 35 (YFL)</postBox>,
 								<postCode>FI-40014</postCode>
@@ -30,7 +30,7 @@
 							</affiliation>
 
 							<affiliation>
-								<orgName type="departement">Department of Physics</orgName>,
+								<orgName type="department">Department of Physics</orgName>,
 								<address>
 									<postBox>P.O. Box 35 (YFL)</postBox>,
 									<postCode>FI-40014</postCode>
@@ -51,7 +51,7 @@
 							</affiliation>
 							
 							<affiliation>
-								<orgName type="departement">Physics Division</orgName>,
+								<orgName type="department">Physics Division</orgName>,
 								<orgName type="institution">Oak Ridge National Laboratory</orgName>,
 								<address>
 									<postBox>P.O. Box 2008</postBox>,

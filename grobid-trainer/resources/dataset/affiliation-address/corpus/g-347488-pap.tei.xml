@@ -10,13 +10,13 @@
 						<author>
 							<affiliation>
 								<orgName type="department">Department of Physics</orgName>,
-								<orgName type="departement">Faculty of Engineering and Physical Sciences</orgName>,
+								<orgName type="department">Faculty of Engineering and Physical Sciences</orgName>,
 								 <orgName type="institution">University of <lb/>Surrey</orgName>,
 								<address>
 									<settlement>Guildford</settlement>,
 									<region>Surrey</region>
 									<postCode>GU2 7XH</postCode>,
-									<country key="UK">United Kingdom<lb/></country>
+									<country key="GB">United Kingdom<lb/></country>
 								</address>
 							</affiliation>
 						</author>

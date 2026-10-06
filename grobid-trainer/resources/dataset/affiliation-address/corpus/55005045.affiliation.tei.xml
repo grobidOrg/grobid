@@ -7,7 +7,7 @@
 					<analytic>
 						<author>
 
-						<affilliation>
+						<affiliation>
 							<marker>1</marker>
 							<orgName type="department">Istituto di Analisi dei Sistemi ed Informatica</orgName>,
 							<orgName type="institution">Consiglio Nazionale delle Ricerche</orgName>,
@@ -17,8 +17,8 @@
 								<settlement>Roma</settlement>,
 								<country>Italy</country>,
 							</address>
-						</affilliation>
-						<affilliation>
+						</affiliation>
+						<affiliation>
 							<marker>2</marker>
 							<orgName type="department">Dipartimento di Matematica</orgName>,
 							<orgName type="institution">University of Rome &quot;Tor Vergata&quot;</orgName>,
@@ -28,8 +28,8 @@
 								<settlement>Roma</settlement>,
 								<country>Italy</country>.
 							</address>
-						</affilliation>
-						<affilliation>
+						</affiliation>
+						<affiliation>
 							<marker>3</marker>
 							<orgName type="department">Istituto di Analisi dei Sistemi ed Informatica</orgName>,
 							<orgName type="institution">Consiglio Nazionale delle Ricerche</orgName>,
@@ -39,7 +39,7 @@
 								<settlement>Roma</settlement>,
 								<country>Italy</country>.
 							</address>
-						</affilliation>
+						</affiliation>
 
 						</author>
 					</analytic>
