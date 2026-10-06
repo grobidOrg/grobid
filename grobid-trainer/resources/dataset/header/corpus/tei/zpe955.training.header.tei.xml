@@ -63,11 +63,11 @@
 	ABBREVIATIONS<lb/> NIAID-National Institute of Allergy and Infectious Diseases<lb/> IgE-immunoglobulin E<lb/>
 	DBPCFC-double-blind, placebo-controlled food challenge<lb/>
 
-    <note place="contribution">All the authors provided substantial contributions to the<lb/> conception of the manuscript and its drafting or revision, and all<lb/> the authors viewed and approved the manuscript before<lb/> submission.<lb/></note>
+    <note type="contribution">All the authors provided substantial contributions to the<lb/> conception of the manuscript and its drafting or revision, and all<lb/> the authors viewed and approved the manuscript before<lb/> submission.<lb/></note>
 
     www.pediatrics.org/cgi/
 
-	<idno>doi/10.1542/peds.2011-0539<lb/></idno> 
+	<idno>doi/10.1542/peds.2011-0539<lb/></idno>
 
 	<idno>doi:10.1542/peds.2011-0539<lb/></idno>
 
@@ -87,15 +87,15 @@
 	E-mail:<lb/>
 	<email>wesley.burks@duke.edu<lb/></email>
 
-	<title level="j">>PEDIATRICS</title> 
+	<title level="j">>PEDIATRICS</title>
 	(
-	<idno>ISSN Numbers: Print, 0031-4005</idno>; 
+	<idno>ISSN Numbers: Print, 0031-4005</idno>;
 	<idno>Online, 1098-4275</idno>
 	).<lb/>
 
 	<note type="copyright">Copyright © 2011 by the American Academy of Pediatrics<lb/></note>
 
-	FINANCIAL DISCLOSURE: 
+	FINANCIAL DISCLOSURE:
 	<note type="funding">Dr Jones has served as a speaker and <lb/>grant reviewer and has served on the medical advisory <lb/>committee for the Food Allergy and Anaphylaxis Network, has <lb/>received funding/grant support from Dyax Corp, the Food <lb/>Allergy and Anaphylaxis Network, the Food Allergy Initiative, <lb/>Mead Johnson, the National Peanut Board, and the National <lb/>Institutes of Health, and has served as a speaker and/or <lb/>consultant for Sanofi-Aventis and Abbott Laboratories; Dr Boyce <lb/>has served on the advisory board of GlaxoSmithKline, has <lb/>served as a consultant and/or speaker for Altana, <lb/>GlaxoSmithKline, and Merck, and has received funding/grant <lb/>support from the National Institutes of Health; Dr Sicherer has <lb/>served on an expert panel for Sunovion, has received funding/ <lb/>grant support from the Food Allergy and Anaphylaxis Network, <lb/>the Food Allergy Initiative, and the National Institutes of Health, <lb/>and is a consultant to the Food Allergy Initiative; Dr Wood has <lb/>served as a speaker/advisory board member for <lb/></note>
 
 	(Continued on last page) <lb/>
@@ -104,7 +104,7 @@
 
 	<reference>PEDIATRICS Volume 128, Number 5, November 2011</reference>
 
-	<page>955<lb/></page> 
+	<page>955<lb/></page>
 
 		</front>
 	</text>

@@ -16,7 +16,7 @@
 
 	<byline>
 	<affiliation>Departamento de Física, Centro de Investigación y de Estudios Avanzados del IPN,</affiliation>
-	</byline> 
+	</byline>
 
 	<address>A.P. 14-740, 07000 México D.F., México.<lb/></address>
 
@@ -24,14 +24,14 @@
 
 	<byline>
 	<affiliation>*Part of the Instituto Avanzado de Cosmología (IAC) collaboration<lb/> </affiliation>
-	</byline> 
+	</byline>
 
-	<ptr type="url">http://www.iac.edu.mx/</ptr><lb/>
+	<ptr type="web">http://www.iac.edu.mx/</ptr><lb/>
 
-	†Electronic address: 
+	†Electronic address:
 	<email>rrodriguez@fis.cinvestav.mx<lb/></email>
 
-	‡Electronic address: 
+	‡Electronic address:
 	<email>tmatos@fis.cinvestav.mx</email>
 
 		</front>
