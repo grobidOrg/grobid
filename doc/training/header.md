@@ -229,6 +229,24 @@ In case two abstracts are adjacent in terms of text stream, they must be tagged 
 !!! warning "Remember to exclude the abstract title"
     Attention must be paid to exclude functional words like "Abstract", "Summary", etc. from the labelled abstract. These are indications that will be exploited by Grobid to predict the start of the abstract but it's not something that we want to see in the final extraction result.
 
+Only this generic abstract title is excluded. Any other title or subtitle belonging to an abstract block is kept **inside** the labelled abstract:
+
+* the title of an additional abstract block: "Key Points", "Highlights", "Author summary", "Plain Language Summary", "Significance statement", "Core tip", etc.
+* the subtitles of a structured abstract ("Background", "Purpose", "Methods", "Results", "Conclusion", etc.), **including the first one**, even when it directly follows the word "Abstract".
+
+The generic title is either present or not, so it can be left out reliably. Leaving out the other subtitles would mean excluding only the first one of a series, which is an inconsistent signal for the model.
+
+```xml
+    Abstract<lb/>
+    <div type="abstract">Purpose<lb/> The aim of this study was to evaluate the usability of a recently developed
+    extracorporeal...
+```
+
+```xml
+    <div type="abstract">Key Points:<lb/> • 525 Quasi-Love waves are cataloged,<lb/> related to lateral gradients in upper<lb/>
+    mantle seismic anisotropy in and<lb/> around Africa<lb/>...
+```
+
 ```xml
     Abstract. -
     <div type="abstract">The anisotropy ∆S of the thermopower in thin films of the high-Tc superconduc-<lb/>
@@ -338,6 +356,12 @@ Be careful not to include publication date information under this block, the pub
 ### Strong identifiers
 
 `<idno>` is used to identify strong identifiers of the document, in particular DOI, PII, ISSN, ISBN and the major Open Access repository identifiers - arXiv identifiers, HAL ID, ...
+
+The ORCID of the authors are also labelled with `<idno>`:
+
+```xml
+<idno>https://orcid.org/0000-0003-0353-1424<lb/></idno>
+```
 
 We do not tag report numbers, the identifiers here must have a global level of acceptance beyond a local source of identification.
 
