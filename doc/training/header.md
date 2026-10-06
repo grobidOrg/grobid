@@ -123,7 +123,7 @@ CORRESPONDENCE<lb/> Address correspondence to
     </byline>
 ```
 
-As illustrated above, academic titles like "Ph.D.", "MD", "Dr.", etc. must be **included** in the author field. Job descriptions: Director, etc. should be ignored.
+As illustrated above, titles like "Ph.D.", "MD", "Dr.", etc. must be **included** in the author field.
 
 When an indication of authors is given around an email or a phone number, only the full names of the authors are labelled. A full name is a name that includes the surname, with the given names spelled out or reduced to initials (e.g. `Calum J Maclean`, `S. Yoon`):
 
