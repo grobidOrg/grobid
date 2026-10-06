@@ -107,7 +107,7 @@
 
 	ORCID<lb/> Yilkal tadele<lb/>
           
-	<idno>http://orcid.org/0000-0002-8678-1308</idno>
+	<idno type="orcid">http://orcid.org/0000-0002-8678-1308</idno>
 
 		</front>
 	</text>

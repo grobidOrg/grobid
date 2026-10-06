@@ -195,7 +195,7 @@ Address are labelled with their own tag `<address>`.
 	<affiliation>[I]</affiliation>
     </byline>
 
-	<idno>https://orcid.org/0000-0003-0353-1424<lb/></idno>
+	<idno type="orcid">https://orcid.org/0000-0003-0353-1424<lb/></idno>
 
 	<byline>
 	<affiliation>Universidade do Estado do Rio de Janeiro, Instituto de Aplicação Fernando Rodrigues da Silveira,<lb/> Departamento de Ciências Humanas e Filosofia.</affiliation>
@@ -357,10 +357,10 @@ Be careful not to include publication date information under this block, the pub
 
 `<idno>` is used to identify strong identifiers of the document, in particular DOI, PII, ISSN, ISBN and the major Open Access repository identifiers - arXiv identifiers, HAL ID, ...
 
-The ORCID of the authors are also labelled with `<idno>`:
+The ORCID of the authors are also labelled with `<idno>`, always with the attribute `type="orcid"`:
 
 ```xml
-<idno>https://orcid.org/0000-0003-0353-1424<lb/></idno>
+<idno type="orcid">https://orcid.org/0000-0003-0353-1424<lb/></idno>
 ```
 
 We do not tag report numbers, the identifiers here must have a global level of acceptance beyond a local source of identification.
@@ -384,7 +384,7 @@ In the case of DOI, the identifier might look like a URL, but should be encoded 
 <idno>http://dx.doi.org/10.1097/MD.0000000000028156<lb/></idno>
 ```
 
-There is no need to specify the type of strong identifier (it will be inferred by pattern matching).
+There is no need to specify the type of strong identifier (it will be inferred by pattern matching), except for ORCID, which are marked with `type="orcid"` to distinguish these author identifiers from the identifiers of the document.
 
 ### Phone number
 

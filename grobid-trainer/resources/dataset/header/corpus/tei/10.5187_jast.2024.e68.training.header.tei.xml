@@ -129,7 +129,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0002-9696-9638</idno>
+          <idno type="orcid">https://orcid.org/0000-0002-9696-9638</idno>
           
           )<lb/> 
     <byline>
@@ -137,7 +137,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0000-0000-0000</idno>
+          <idno type="orcid">https://orcid.org/0000-0000-0000-0000</idno>
           
           )<lb/> 
     <byline>
@@ -145,7 +145,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0003-4108-6579</idno>
+          <idno type="orcid">https://orcid.org/0000-0003-4108-6579</idno>
           
           )<lb/> 
       
