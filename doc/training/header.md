@@ -200,6 +200,27 @@ Address are labelled with their own tag `<address>`.
     <address>40225 Düsseldorf, Germany<lb/></address>
 ```
 
+An affiliation sometimes contains address elements (building, street, P.O. box, postcode, even the city) between its organisation names. In this case the `<affiliation>` runs from its marker to the last organisation name, including the address elements in between, and the `<address>` holds only what follows the last organisation name:
+
+```xml
+    <byline>
+    <affiliation>1 Institut d&apos;Astrophysique Spatiale (IAS), Bâtiment 121, Université Paris-Sud 11,</affiliation>
+    </byline>
+
+    <address>Orsay, F-91405, France<lb/></address>
+```
+
+```xml
+    <byline>
+    <affiliation>Complex Systems Computation Group (CoSCo)<lb/> P.O.Box 26, Department of Computer Science<lb/>
+    FIN-00014 University of Helsinki,</affiliation>
+    </byline>
+
+    <address>Finland<lb/></address>
+```
+
+This does not apply when the address closes one affiliation and another affiliation follows (e.g. `Mayo Clinic, Rochester, MN, Duke Cancer Institute, Durham, NC`): each affiliation then gets its own `<affiliation>` and `<address>`.
+
 - When a marker precedes the prefix (e.g. `Present address:`, `Corresponding author.`, `Corresponding author at:`), keep marker, prefix and affiliation in one `<affiliation>`, e.g. `<affiliation>† Corresponding Author. Norges Bank;</affiliation>`.
 - When there is no marker before the prefix, leave "Present address:" outside.
 - When an author information (e.g. ORCID) is present between the marker and the affiliation, place the marker in a separate `<affiliation>` tag, and the affiliation in a separate `<affiliation>` tag:
