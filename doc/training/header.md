@@ -436,14 +436,6 @@ In the case of DOI, the identifier might look like a URL, but should be encoded 
 <idno>http://dx.doi.org/10.1097/MD.0000000000028156<lb/></idno>
 ```
 
-Each identifier is labelled in its own `<idno>`, even when several identifiers follow each other:
-
-```xml
-    <idno>e-ISSN: 2690-6104<lb/></idno>
-    <idno>p-ISSN: 2690-6090<lb/></idno>
-    <idno>DOI 10.1108/IJIEOM-10-2023-0074<lb/></idno>
-```
-
 There is no need to specify the type of strong identifier (it will be inferred by pattern matching), except for ORCID, which are marked with `type="orcid"` to distinguish these author identifiers from the identifiers of the document.
 
 ### Phone number
