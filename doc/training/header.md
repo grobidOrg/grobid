@@ -469,17 +469,7 @@ In general, group names are introduced as such, in a distinctive manner from aff
     <note type="group">JPHC Study Group</note>
 ```
 
-The words introducing the group, including the article ("for the", "on behalf of the"), stay outside the labelled field. An author named before the group is labelled as author:
-
-```xml
-    <byline>
-        <docAuthor>K. Aoki</docAuthor>
-    </byline>
-
-    for the
-
-    <note type="group">PHENIX Collaboration<lb/></note>
-```
+The words introducing the group, including the article ("for the", "on behalf of the"), stay outside the labelled field.
 
 ### Journal titles
 
