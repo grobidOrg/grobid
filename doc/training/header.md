@@ -52,6 +52,10 @@ Spaces and new line in the XNL annotated files are not significant and will be a
 Similarly, line break tags `<lb/>` are present in the generated XML training data, but they will be considered as a default separator by the XML parser. They are indicated to help the annotator to identify a piece of text in the original PDF if necessary. Actual line breaks are identified in the PDF and added by aligning the XML TEI with the feature file generated in parallel which contains all the PDF layout information.
 
 
+### Punctuation between fields
+
+The punctuation separating two fields (comma, semicolon, period) is left outside the labelled fields: `<affiliation>King Saud Hospital</affiliation>, <address>Unizah, Qaseem, Saudi Arabia</address>`. The existing training data often keeps this punctuation inside the field that it ends (`<affiliation>King Saud Hospital,</affiliation>`); this is tolerated, so that the model sees both cases.
+
 ### Exclude the name of fields if it appears
 
 It is common that abstract is introduced by a prefix `Abstract` or `Summary`, that authors are prefixed with `Authors:` or keywords by `Keywords:`. As a general principle for header annotation, all the prefix names of fields should be excluded from the annotation element and remain outside mark-ups (we only encode the "useful" content):
@@ -101,6 +105,16 @@ Title encoding is realized following the TEI inline scheme:
 Subtitles are labelled similarly as title but as an independent field. It's important to keep a break (in term of XML tagging) between the main title and possible subtitles, even if there are next to each other in the text stream.
 
 Running titles are not labelled at all.
+
+The line numbers of a manuscript with numbered lines (frequent in preprints) are not part of any field. When they stand at the end of a field, they are left outside:
+
+```xml
+    <docTitle>
+        <titlePart>The Nicrophorus vespilloides genome and methylome, a beetle with complex social behavior</titlePart>
+    </docTitle>
+
+    1 2<lb/>
+```
 
 ```xml
     <address>Villejuif, France<lb/></address>
@@ -186,7 +200,28 @@ Address are labelled with their own tag `<address>`.
     <address>40225 Düsseldorf, Germany<lb/></address>
 ```
 
-- When a marker precedes the prefix (e.g. `present address`, keep marker, prefix and affiliation in one `<affiliation>`.
+An affiliation sometimes contains address elements (building, street, P.O. box, postcode, even the city) between its organisation names. In this case the `<affiliation>` runs from its marker to the last organisation name, including the address elements in between, and the `<address>` holds only what follows the last organisation name:
+
+```xml
+    <byline>
+    <affiliation>1 Institut d&apos;Astrophysique Spatiale (IAS), Bâtiment 121, Université Paris-Sud 11,</affiliation>
+    </byline>
+
+    <address>Orsay, F-91405, France<lb/></address>
+```
+
+```xml
+    <byline>
+    <affiliation>Complex Systems Computation Group (CoSCo)<lb/> P.O.Box 26, Department of Computer Science<lb/>
+    FIN-00014 University of Helsinki,</affiliation>
+    </byline>
+
+    <address>Finland<lb/></address>
+```
+
+This does not apply when the address closes one affiliation and another affiliation follows (e.g. `Mayo Clinic, Rochester, MN, Duke Cancer Institute, Durham, NC`): each affiliation then gets its own `<affiliation>` and `<address>`.
+
+- When a marker precedes the prefix (e.g. `Present address:`, `Corresponding author.`, `Corresponding author at:`), keep marker, prefix and affiliation in one `<affiliation>`, e.g. `<affiliation>† Corresponding Author. Norges Bank;</affiliation>`.
 - When there is no marker before the prefix, leave "Present address:" outside.
 - When an author information (e.g. ORCID) is present between the marker and the affiliation, place the marker in a separate `<affiliation>` tag, and the affiliation in a separate `<affiliation>` tag:
 
@@ -302,6 +337,15 @@ If the reference includes an identifier, in particular a DOI, which cannot be ta
         doi:10.1029/2007WR006109, 2008<lb/></reference>
 ```
 
+Only the reference of the annotated document itself is labelled. The citation of another work (the article discussed by a letter or a comment, the book under review, the article completed by an addendum, etc.) is not labelled:
+
+```xml
+    Addendum to:<lb/> Regulation of Autophagy by Sphingosine Kinase 1 and Its<lb/> Role in Cell Survival during Nutrient Starvation<lb/>
+    G. Lavieu, F. Scarlatti, G. Sala, S. Carpentier, T. Levade,<lb/> R. Ghidoni, J. Botti and P. Codogno<lb/>J Biol Chem 2006; 281:8518-27
+```
+
+A short fragment of the reference cut off from its main part by other blocks (e.g. the last words of the citation, `USA. ACM, New York, NY, USA, 13 pages.`) is not labelled either.
+
 If the title of the journal where the atticle is published appears in isolation, it is not enough to have a "reference", and the tags `<title level="j">` must be used.
 
 
@@ -340,6 +384,12 @@ The `<note type="submission">` tag is used to identify, in a raw manner, the sub
 ```
 
 Be careful not to include publication date information under this block, the publication date needs to be encoded with a specific `<date>` element.
+
+The `(Dated: ...)` line of a preprint is not a publication date (it is often the date at which the PDF was produced). It is labelled as a whole as submission information:
+
+```xml
+    <note type="submission">(Dated: August 15, 2019 )<lb/></note>
+```
 
 ### Copyrights
 
@@ -419,6 +469,8 @@ In general, group names are introduced as such, in a distinctive manner from aff
     <note type="group">JPHC Study Group</note>
 ```
 
+The words introducing the group, including the article ("for the", "on behalf of the"), stay outside the labelled field.
+
 ### Journal titles
 
 In case the name of the journal appears alone in the header part, not part of a reference, it is tagged specifically.
@@ -431,6 +483,14 @@ In case the name of the journal appears alone in the header part, not part of a 
 ```
 
 If the journal title appears as part of a reference (e.g. "how to cite"), it is then part of the `<reference>` element.
+
+When the journal name is printed alone (masthead) and is followed by a citation line that repeats it, usually in abbreviated form, the masthead is labelled as journal title and the citation line as reference:
+
+```xml
+    <title level="j">EUROPEAN JOURNAL OF PHYSICS<lb/></title>
+
+    <reference>Eur. J. Phys. 32 (2011) 1007–1018</reference>
+```
 
 ### Meeting information
 
@@ -446,6 +506,12 @@ Publications can be associated to a particular meeting event, in particular a co
     <meeting>12TH INTERNATIONAL SYMPOSIUM ON FLOW VISUALIZATION<lb/>
     September 10-14, 2006, German Aerospace Center (DLR), Göttingen, Germany<lb/>
     </meeting>
+```
+
+The short conference line found in the header or footer of the page (acronym, dates and place) is a meeting, not a reference:
+
+```xml
+    <meeting>ICoMS &apos;21, June 24-26, 2021, Paris, France<lb/></meeting>
 ```
 
 If the meeting information is part of a larger reference (e.g. definition the citation information of the Proceedings of a conference where the article is published), then it has to be labelled also as `<reference>` (this is similar to the journal title case just above). For instance, in the following example, pages are indicated and we refer to the container of the article and not just to a meeting.

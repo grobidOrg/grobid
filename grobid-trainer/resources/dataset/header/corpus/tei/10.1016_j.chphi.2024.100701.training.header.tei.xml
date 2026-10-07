@@ -14,8 +14,8 @@
 	<docAuthor>Jon Salmanton-García, a,b,c,eg, * * Francesco Marchesi, d,eg Francesca Farina, e Barbora Weinbergerová, f Federico Itri, g Julio Dávila-Valls, h Sonia Martín-<lb/>Pérez, h Andreas Glenthøj, i Ditte Stampe Hersby, i Maria Gomes Da Silva, j Raquel Nunes Rodrigues, j Alberto López-García, k Raúl Córdoba, k<lb/> Yavuz M. Bilgin, l Iker Falces-Romero, m,n Shaimaa El-Ashwah, o Ziad Emarah, o,p Caroline Besson, q Milena Kohn, q Jaap Van Doesum, r<lb/> Emanuele Ammatuna, r Monia Marchetti, s Jorge Labrador, t Giovanni Paolo Maria Zambrotta, u,v Luisa Verga, u,v Ozren Jaksic, w Marcio Nucci, x<lb/> Klára Piukovics, y Alba Cabirta-Touzón, z Moraima Jiménez, z Elena Arellano, aa Ildefonso Espigado, aa Ola Blennow, ab Anna Nordlander, ab Stef Meers, ac<lb/> Jens Vian Praet, ad Tommaso Francesco Aiello, ae Carolina Garcia-Vidal, ae Nicola S. Fracchiolla, af Mariarita Sciumè, af Guldane Cengiz Seval, ag<lb/> Pavel Žák, ah Caterina Buquicchio, ai Carlo Tascini, aj Stefanie K. Gräfe, ak Martin Schönlein, al Tatjana Adžić-VUKI ČEVI Ć, am Valentina Bonuomo, an<lb/> Chiara Cattaneo, ao Summiya Nizamuddin, ap Martin Čerňan, aq Gaëtan Plantefeve, ar Romane Prin, as Tomas Szotkovski, aq Graham P. Collins, at<lb/> Michelina Dargenio, au Verena Petzer, av Dominik Wolf, av Natasha Čolović, aw Lucia Prezioso, ax Toni Valković, ay,az,ba Francesco Passamonti, bb Gustavo-<lb/>Adolfo Méndez, bc Uluhan Sili, bd Antonio Vena, be Martina Bavastro, be Alessandro Limongelli, be Rafael F. Duarte, bf Marie-Pierre Ledoux, bg<lb/> Milche Cvetanoski, bh Zlate Stojanoski, bh Marina Machado, bi Josip Batinić, az,bj,bk Gabriele Magliano, bl Monika M. Biernat, bm Nikola Pantić, bn<lb/> Christian Bjørn Poulsen, bo Annarosa Cuccaro, bp,bq Maria Ilaria Del Principe, br Austin Kulasekararaj, bs Irati Ormazabal-Vélez, bt Alessandro Busca, bu<lb/> Fatih Demirkan, bv Marriyam Ijaz, ap Nikolai Klimko, bw Igor Stoma, bx Sofya Khostelidi, bw Noemí Fernández, by Ali S. Omrani, bz Rui Bergantim, ca Nick De<lb/> Jonge, cb Guillemette Fouquet, cc Milan Navrátil, cd Ghaith Abu-Zeinah, ce Michail Samarkos, cf Johan Maertens, cg Cristina De Ramón, ch Anna Guidetti, ci<lb/> Ferenc Magyari, cj Tomás José González-López, ck Tobias Lahmer, cl Olimpia Finizio, cm Natasha Ali, cn László Imre Pinczés, cj Esperanza Lavilla-Rubira, co<lb/> Alessandra Romano, cp Maria Merelli, aj Mario Delia, cq Maria Calbacho, cr Joseph Meletiadis, cs Darko Antić, bn José-Ángel Hernández-Rivas, ct<lb/> Joyce Marques De Almeida, cu Murtadha Al-Khabori, cv Martin Hoenigl, cw,cx Maria Chiara Tisi, cy Nina Khanna, cz Aleksandra Barać, bn Noha Eisa, o,da<lb/> Roberta Di Blasi, db Raphaël Liévin, db Carolina Miranda-Castillo, dc Nathan C. Bahr, dd Sylvain Lamure, de Mario Virgilio Papa, df Ayel Yahya, da<lb/> Avinash Aujayeb, dg Jan Novák, dh Nurettin Erben, di María Fernández-Galán, dj José-María Ribera-Santa Susana, dk Ikhwan Rinaldi, dl Rita Fazzi, dm<lb/> Monica Piedimonte, dn Rémy Duléry, do Yung Gonzaga, dp Andrés Soto-Silva, dq Giuseppe Sapienza, dr Alexandra Serris, ds Ľuboš Drgoňa, dt Ana Groh, du<lb/> Laura Serrano, dv Eleni Gavriilaki, dw Athanasios Tragiannidis, dw Juergen Prattes, cw,cx Nicola Coppola, dx Vladimir Otašević, bn Miloš Mladenović, an<lb/> Mirjana Mitrović, bn Bojana Mišković, dy Pavel Jindra, dz Sofia Zompi, bu Maria Vittoria Sacchi, s Carolin Krekeler, ea Evgenii Shumilov, ea<lb/> Maria Stefania Infante, ct Daniel García-Bordallo, co Gökçe Melis Çolak, bd Antonella Cingolani, eb Jiří Mayer, f Marianna Criscuolo, eb Marietta Nygaard, bo<lb/> Michaela Hanáková, ec Luana Fianchi, eb Zdeněk Ráčil, ec,ed Antonio Giordano, eb Martina Quattrone, eb Matteo Bonanni, eb Philipp Koehler, a,b<lb/> Laman Rahimli, a,b Oliver A. Cornely, a,b,c,ee,eh and Livio Pagano, eb,ef,eh, *</docAuthor>
 	</byline>
 
-	on behalf of
-	<note type="group">the EPICOVIDEHA Registry</note>
+	on behalf of the
+	<note type="group">EPICOVIDEHA Registry</note>
 
 	<byline>
 	<affiliation>a<lb/> University of Cologne, Faculty of Medicine, and University Hospital Cologne, Institute of Translational Research, Cologne Excellence<lb/>Cluster on Cellular Stress Responses in Aging-Associated Diseases (CECAD),</affiliation>
@@ -108,20 +108,16 @@
 	<address>Mansoura, Egypt<lb/></address>
 
 
-	*Corresponding author.
-
-    <byline>
-        <affiliation>Fondazione Policlinico Universitario A. Gemelli -IRCCS -Università Cattolica del Sacro Cuore,</affiliation>
+	<byline>
+	<affiliation>*Corresponding author. Fondazione Policlinico Universitario A. Gemelli -IRCCS -Università Cattolica del Sacro Cuore,</affiliation>
     </byline>
 
     <address>Largo Francesco Vito 1,<lb/> Rome 00168, Italy.<lb/></address>
 
 
 
-	**Corresponding author.
-
-    <byline>
-        <affiliation>University of Cologne, Faculty of Medicine and University Hospital Cologne, Translational Research, Cologne Excellence<lb/> Cluster on Cellular Stress Responses in Aging-Associated Diseases (CECAD),</affiliation>
+	<byline>
+	<affiliation>**Corresponding author. University of Cologne, Faculty of Medicine and University Hospital Cologne, Translational Research, Cologne Excellence<lb/> Cluster on Cellular Stress Responses in Aging-Associated Diseases (CECAD),</affiliation>
     </byline>
 
     <address>Herderstrasse 52, Cologne 50931, Germany.<lb/></address>
