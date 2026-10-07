@@ -57,8 +57,13 @@
 
 	<address>Faribault, Minnesota.<lb/></address>
 
-    <!-- correct -->
-	Reprints may be obtained from the first author at the Department of Veterans Affairs Medical<lb/> Center, One Veteran Drive, Minneapolis, MN 55417. The opinions or assertions in this manuscript<lb/> are the views of the authors and do not reflect an endorsement of the Department of Defense or the<lb/> authors&apos; civilian employment agencies.
+	Reprints may be obtained from the first author at the
+	<byline>
+	<affiliation>Department of Veterans Affairs Medical<lb/> Center</affiliation>
+	</byline>
+	,
+	<address>One Veteran Drive, Minneapolis, MN 55417</address>
+	. The opinions or assertions in this manuscript<lb/> are the views of the authors and do not reflect an endorsement of the Department of Defense or the<lb/> authors&apos; civilian employment agencies.
 
 	<page>441<lb/></page>
 
