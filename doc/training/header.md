@@ -106,7 +106,7 @@ Subtitles are labelled similarly as title but as an independent field. It's impo
 
 Running titles are not labelled at all.
 
-The line numbers of a manuscript with numbered lines (frequent in preprints) are not part of any field. When they stand at the end of a field, they are left outside:
+The line numbers of a manuscript with numbered lines (frequent in preprints) are not part of any field. This holds both when they stand at the end of a field and when they fall inside a multi-line field: in the second case the field is closed before the number and reopened after it, so that the model learns to leave the numbers out (the pieces are reassembled at extraction time). Line numbers carry a distinctive signature in the features (end of line, end of block, own font and the largest font size), unlike the superscript affiliation markers. The examples below come from 023093v1:
 
 ```xml
     <docTitle>
@@ -122,6 +122,12 @@ The line numbers of a manuscript with numbered lines (frequent in preprints) are
     Running title: HBsAg quantification in anti-HBs positive HBV carriers<lb/>
 
     Abstract word count: 250<lb/>
+```
+
+```xml
+    <div type="abstract">Testing for conserved and novel mechanisms underlying phenotypic evolution requires a diversity of</div> 23<lb/>
+    <div type="abstract">genomes available for comparison spanning multiple independent lineages. For example, complex social</div> 24<lb/>
+    <div type="abstract">behavior in insects has been investigated primarily with eusocial lineages, nearly all of which are</div> 25<lb/>
 ```
 
 [//]: # (In the case of an article written in non-english language having an additional English title as translation of the original title, we annotate the English title with a tag `<note type="english-title">`.)
