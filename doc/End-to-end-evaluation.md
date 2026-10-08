@@ -242,40 +242,6 @@ The remaining flavors (`blank`, `sdo/3gpp`, `sdo/ietf`) are **not supported** by
 
 To evaluate a field that is in the catalogue but currently selected by no flavor (for instance `publisher` on citations, or the flat `affiliations` header field), add its name to the relevant list in `EvaluationFieldSelection`; there is no need to touch `FieldSpecification`.
 
-### On GitHub Actions
-
-The workflow `.github/workflows/evaluation.yml` (_End-to-end evaluation_) runs the evaluation of a branch or of a pull request on GitHub-hosted runners, over the full gold corpora, and reports the scores next to those of the default branch. It can be started in two ways:
-
-* manually, from the _Actions_ tab (_Run workflow_) or with `gh workflow run evaluation.yml --ref my-branch -f profile=delft`, on any branch,
-
-* on a pull request, by adding the label `evaluation:crf` or `evaluation:delft`. Pushing new commits does not start a new run, a run over the full corpora being too long for that: remove and re-add the label to evaluate a newer commit.
-
-Two profiles are available:
-
-| Profile | Configuration | Comparable to the published benchmarks |
-|---|---|---|
-| `crf` | the default `grobid.yaml`, every model with the engine it ships with, consolidation switched to biblio-glutton | no |
-| `delft` | the `grobid-evaluation.yaml` preset (see [Configuration for evaluation](#configuration-for-evaluation)), the Deep Learning models running on CPU | yes |
-
-A manual run can also be restricted to one corpus, select a [flavor](#flavors) and set the number of parallel jobs per corpus.
-
-The runners have 4 CPU, no GPU, and stop a job after 6 hours, so each corpus is cut into shards:
-
-1. `predict` — one job per shard downloads its articles from the [Hugging Face dataset](https://huggingface.co/datasets/sciencialab/grobid-evaluation), runs the [pre-flight configuration check](#pre-flight-configuration-check) and processes the PDFs. The shards of a corpus are disjoint and the same on every run.
-
-2. `score` — one job per corpus gathers the TEI of all its shards and runs `jatsEval` with `-Prun=0`, so the report is computed over the whole corpus exactly as by a local run. A corpus is not scored if one of its shards failed.
-
-3. `report` — the reports are compared with those of the latest successful run of the workflow on the default branch with the same profile and flavor. The comparison is written to the run summary and, for a pull request, posted as a comment. The reports are also kept as the artifact `evaluation-reports-<profile>` for 90 days: this artifact is the baseline of the later runs, so **run the workflow on the default branch to set or refresh the baseline**. Without a baseline, the scores are reported without deltas.
-
-biblio-glutton must be reachable from the runners: the run stops at the pre-flight check otherwise. The instance is the one set in `grobid-evaluation.yaml`, unless the repository variable `GROBID_EVAL_GLUTTON_URL` gives another one.
-
-The scripts used by the workflow are under `.github/scripts/evaluation/`. `fetch_dataset.py` can also be used to get a corpus locally, and `compare_reports.py` to compare the reports of two local runs (the `report-*.md` files being matched by name between the two directories):
-
-```bash
-> python .github/scripts/evaluation/fetch_dataset.py --dataset PLOS_1000 --output ABS_PATH_TO/grobid-eval-datasets
-> python .github/scripts/evaluation/compare_reports.py --reports ./reports --baseline ./reports-master
-```
-
 ## Evaluation results
 
 The evaluation provides precision, recall and F1-score for the different fields in the header and bibliographical references. In addition, the scores are also computed at *instance* level, which means at the level of a complete header or complete citation.
