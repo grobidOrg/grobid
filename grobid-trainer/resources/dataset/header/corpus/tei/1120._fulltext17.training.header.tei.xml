@@ -18,33 +18,15 @@
 
     <!-- how to handle affiliations broken by the address? -->
 	<byline>
-	<affiliation>a</affiliation>
-	</byline>
-
-	<address>East Lansing MI / USA,</address>
-
-	<byline>
-	<affiliation>Michigan State University, Lyman Briggs College and Department of Chemistry<lb/></affiliation>
+	<affiliation>a East Lansing MI / USA, Michigan State University, Lyman Briggs College and Department of Chemistry<lb/></affiliation>
 	</byline>
 
 	<byline>
-	<affiliation>b</affiliation>
-	</byline>
-
-	<address>Wilkes-Barre, PA / USA,</address>
-
-	<byline>
-	<affiliation>King&apos;s College, Department of Chemistry and Physics<lb/></affiliation>
+	<affiliation>b Wilkes-Barre, PA / USA, King&apos;s College, Department of Chemistry and Physics<lb/></affiliation>
 	</byline>
 
 	<byline>
-	<affiliation>c</affiliation>
-	</byline>
-
-	<address>Syracuse, NY / USA,</address>
-
-	<byline>
-	<affiliation>Syracuse University, Department of Chemistry<lb/></affiliation>
+	<affiliation>c Syracuse, NY / USA, Syracuse University, Department of Chemistry<lb/></affiliation>
 	</byline>
 
 	<note type="submission">Received November 6 th , 2007.<lb/></note>

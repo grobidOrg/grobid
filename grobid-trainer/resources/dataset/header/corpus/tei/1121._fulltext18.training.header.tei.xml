@@ -18,23 +18,11 @@
 
     <!-- how to handle affiliations broken by the address? -->
 	<byline>
-	<affiliation>a</affiliation>
-	</byline>
-
-	<address>Vienna/Austria,</address>
-
-	<byline>
-	<affiliation>Vienna University of Technology, Atominstitut der Österreichischen Universitäten<lb/></affiliation>
+	<affiliation>a Vienna/Austria, Vienna University of Technology, Atominstitut der Österreichischen Universitäten<lb/></affiliation>
 	</byline>
 
 	<byline>
-	<affiliation>b</affiliation>
-	</byline>
-
-	<address>Munich/Germany,</address>
-
-	<byline>
-	<affiliation>Department of Chemistry and Biochemistry, Ludwig-Maximilian University<lb/></affiliation>
+	<affiliation>b Munich/Germany, Department of Chemistry and Biochemistry, Ludwig-Maximilian University<lb/></affiliation>
 	</byline>
 
 	<note type="submission">Received November 14 th , 2007.<lb/></note>
