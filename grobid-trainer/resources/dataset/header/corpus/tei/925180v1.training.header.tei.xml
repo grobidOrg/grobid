@@ -40,7 +40,7 @@
 
 	Significance Statement<lb/>
 
-	A tractable model of layer-5 pyramidal cells replicates all known features crucial for distal<lb/> synaptic integration in these neurons. This minimal model enables new multi-scale investigations<lb/> of microcircuit functions with associated current flows measured by intracranial local field<lb/> potentials. It thus establishes a foundation for the future computational evaluation of scalp<lb/> electroencephalogram signatures imprinted by Ca 2+ spikes in pyramidal cells, a phenomenon<lb/> underlying many brain cognitive processes.
+	<div type="abstract">A tractable model of layer-5 pyramidal cells replicates all known features crucial for distal<lb/> synaptic integration in these neurons. This minimal model enables new multi-scale investigations<lb/> of microcircuit functions with associated current flows measured by intracranial local field<lb/> potentials. It thus establishes a foundation for the future computational evaluation of scalp<lb/> electroencephalogram signatures imprinted by Ca 2+ spikes in pyramidal cells, a phenomenon<lb/> underlying many brain cognitive processes.</div>
 
 		</front>
 	</text>

@@ -41,7 +41,15 @@
 	(TAKe, TAKi, MSG, MWW, BEB, AD, MAF, RMP); 
 
 	<byline>
-	<affiliation>Medical<lb/> University of South Carolina, Charleston (MSG); and National Institutes of<lb/> Health Clinical Center,</affiliation>
+	<affiliation>Medical<lb/> University of South Carolina,</affiliation>
+	</byline>
+
+	<address>Charleston</address>
+
+	(MSG); and
+
+	<byline>
+	<affiliation>National Institutes of<lb/> Health Clinical Center,</affiliation>
 	</byline>
 
 	<address>Bethesda, Maryland</address>
