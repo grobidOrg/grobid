@@ -192,6 +192,8 @@ Similarly as authors, all the mentions of an affiliation are labelled, including
 
 Address are labelled with their own tag `<address>`.
 
+When several affiliations stand on separate lines, each line is labelled as its own `<affiliation>`. When several marked affiliations are printed on the same line ("1 Department of Psychiatry; 2 Department of Genetics; 3 Department of Neuroscience, Icahn School of Medicine"), they stay in **one** `<affiliation>` field: the affiliation-address model splits them at the markers afterwards, and a field boundary in the middle of a line would be a pattern found nowhere else in the corpus.
+
 ```xml
     <byline>
         <affiliation>2 Institut für Angewandte Physik, Heinrich-Heine-Universität<lb/></affiliation>
