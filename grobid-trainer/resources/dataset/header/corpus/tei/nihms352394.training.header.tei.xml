@@ -211,7 +211,7 @@
 	<affiliation>26 Dept of<lb/> Family &amp; Preventive Med, UC San Diego,</affiliation>
 	</byline>
 
-	<address>Preventive Med, La Jolla, CA</address>
+	Preventive Med, <address>La Jolla, CA</address>
 
 	<byline>
 	<affiliation>27 Dept of Biostatistics,<lb/> Univ of Washington,</affiliation>
@@ -226,10 +226,10 @@
 	<address>Utrecht, The Netherlands</address>
 
 	<byline>
-	<affiliation>29 Julius Ctr for Hlth Sciences &amp; Primary Care, Univ Med Ctr, Utrecht,<lb/></affiliation>
+	<affiliation>29 Julius Ctr for Hlth Sciences &amp; Primary Care, Univ Med Ctr,</affiliation>
 	</byline>
 
-	<address>The Netherlands</address>
+	<address>Utrecht,<lb/> The Netherlands</address>
 
 	<byline>
 	<affiliation>30 Dept of Med Genetics, Biomedical Genetics, Univ Med Ctr,</affiliation>

@@ -50,9 +50,7 @@
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
 		<front>
 <lb/>
-	<note type="doctype">Draft</note>
-
-	<note type="submission">version August 1, 2024<lb/></note>
+	<note type="submission">Draft version August 1, 2024<lb/></note>
 
 	Typeset using L A T E X twocolumn style in AASTeX62<lb/>
 
@@ -229,11 +227,7 @@
 
 	<address>Cambridge, MA 02139, USA<lb/></address>
 
-	<byline>
-	<affiliation>29 NASA Hubble</affiliation>
-	</byline>
-
-	Fellow<lb/> Corresponding author:
+	29 NASA Hubble Fellow<lb/> Corresponding author:
 	<byline>
 	<docAuthor>Fei Dai<lb/></docAuthor>
 	</byline>

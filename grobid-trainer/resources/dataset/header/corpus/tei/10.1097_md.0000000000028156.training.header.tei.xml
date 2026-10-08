@@ -20,9 +20,10 @@
 	Editor:
 	<editor>Maya Saranathan.<lb/></editor>
 
-	The authors have read the PRISMA 2009 Checklist, and the manuscript was prepared and revised according to the PRISMA 2009 Checklist. The registration number:<lb/> CRD42020199442.<lb/> MMH-110-34.
+	The authors have read the PRISMA 2009 Checklist, and the manuscript was prepared and revised according to the PRISMA 2009 Checklist. The registration number:<lb/> CRD42020199442.<lb/> <!-- check: grant number displaced by the extraction, kept with the funding statement -->
+	<note type="funding">MMH-110-34.
 
-	<note type="funding">The funding was provided by Department of Medical Research, Mackay Memorial Hospital and MOST-109-2314-B-195-007 from the Ministry of<lb/> Science and Technology, for encouraging members to carry out clinical studies. After reviewing the proposals and approving the promising studies, the funding body<lb/> will not intervene in the design of the study and collection, analysis, and interpretation of data and in writing the manuscript in any way.<lb/></note>
+	The funding was provided by Department of Medical Research, Mackay Memorial Hospital and MOST-109-2314-B-195-007 from the Ministry of<lb/> Science and Technology, for encouraging members to carry out clinical studies. After reviewing the proposals and approving the promising studies, the funding body<lb/> will not intervene in the design of the study and collection, analysis, and interpretation of data and in writing the manuscript in any way.<lb/></note>
 
     <note type="conflict">The authors have no conflicts of interest to disclose.<lb/></note>
 

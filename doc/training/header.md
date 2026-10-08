@@ -106,6 +106,8 @@ Subtitles are labelled similarly as title but as an independent field. It's impo
 
 Running titles are not labelled at all.
 
+A footnote marker at the end of the title (`*`, `†`, a number) stays inside the title field, like the markers of the authors and affiliations.
+
 The line numbers of a manuscript with numbered lines (frequent in preprints) are not part of any field. This holds both when they stand at the end of a field and when they fall inside a multi-line field: in the second case the field is closed before the number and reopened after it, so that the model learns to leave the numbers out (the pieces are reassembled at extraction time). Line numbers carry a distinctive signature in the features (end of line, end of block, own font and the largest font size), unlike the superscript affiliation markers. The examples below come from 023093v1:
 
 ```xml

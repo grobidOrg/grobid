@@ -65,7 +65,7 @@
 	Keywords:
 	<keyword>dataset extraction; scientific information extraction; named entity recognition; BERT; SciBERT<lb/></keyword>
 
-	<reference>Data 2021, 6, 84. https://doi.org/10.3390/data6080084<lb/> https://www.mdpi.com/journal/data</reference>
+	<reference>Data 2021, 6, 84.</reference> <idno>https://doi.org/10.3390/data6080084</idno><lb/> <ptr type="web">https://www.mdpi.com/journal/data</ptr>
 
 		</front>
 	</text>

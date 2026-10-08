@@ -14,7 +14,8 @@
 	<docAuthor>Damien Chabanal, Jacques Durand and Corinne Ratier<lb/></docAuthor>
 	</byline>
 
-	A paraître dans l&apos;ouvrage « varieties of spoken french », <publisher>Oxford University Press</publisher>
+	<!-- check: forthcoming-in citation of the containing book labelled as reference, like "This paper appeared in ..." -->
+	A paraître dans <reference>l&apos;ouvrage « varieties of spoken french », Oxford University Press</reference>
 		</front>
 	</text>
 </tei>

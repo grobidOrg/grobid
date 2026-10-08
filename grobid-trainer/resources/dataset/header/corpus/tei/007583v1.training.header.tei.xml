@@ -50,8 +50,9 @@
 
 	<note type="submission">Received on XXXXX; revised on XXXXX; accepted on XXXXX<lb/></note>
 
-	Associate Editor: XXXXXXX<lb/> ABSTRACT<lb/> Summary<lb/>
-	<div type="abstract">When working on an ongoing genome sequencing and assembly<lb/> project, it is rather inconvenient when gene identifiers change from<lb/> one build of the assembly to the next. The gene labelling system<lb/> described here, UniqTag, addresses this common challenge. UniqTag<lb/> assigns a unique identifier to each gene that is a representative k-<lb/>mer, a string of length k, selected from the sequence of that gene.<lb/> Unlike serial numbers, these identifiers are stable between different<lb/> assemblies and annotations of the same data without requiring that<lb/> previous annotations be lifted over by sequence alignment. We assign<lb/> UniqTag identifiers to nine builds of the Ensembl human genome<lb/> spanning seven years to demonstrate this stability.<lb/></div>
+	Associate Editor: XXXXXXX<lb/> ABSTRACT<lb/>
+	<!-- check: "Summary" taken as the first subtitle of a Bioinformatics-style structured abstract (Summary / Availability and implementation) -->
+	<div type="abstract">Summary<lb/> When working on an ongoing genome sequencing and assembly<lb/> project, it is rather inconvenient when gene identifiers change from<lb/> one build of the assembly to the next. The gene labelling system<lb/> described here, UniqTag, addresses this common challenge. UniqTag<lb/> assigns a unique identifier to each gene that is a representative k-<lb/>mer, a string of length k, selected from the sequence of that gene.<lb/> Unlike serial numbers, these identifiers are stable between different<lb/> assemblies and annotations of the same data without requiring that<lb/> previous annotations be lifted over by sequence alignment. We assign<lb/> UniqTag identifiers to nine builds of the Ensembl human genome<lb/> spanning seven years to demonstrate this stability.<lb/></div>
 
 	Availability and implementation<lb/>
 	<note type="availability">The implementation of UniqTag is available at<lb/> https://github.com/sjackman/uniqtag<lb/> Supplementary data and code to reproduce it is available at<lb/> https://github.com/sjackman/uniqtag-paper<lb/> </note>

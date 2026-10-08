@@ -52,12 +52,12 @@
 
 	<note type="funding">1 Supported by the Danish National Research Foundation via a grant to the<lb/> MEMPHYS Center of Biomembrane Physics.<lb/> </note>
 
-	2 To whom correspondence should be addressed:
+	<!-- check: marker and correspondence prefix with no organisation name; street kept in the address -->
 	<byline>
-	<affiliation>Novo Nordisk Park,<lb/></affiliation>
+	<affiliation>2 To whom correspondence should be addressed:</affiliation>
 	</byline>
 
-	<address>G8.S.439, DK-2760 Måløv, Denmark.</address>
+	<address>Novo Nordisk Park,<lb/> G8.S.439, DK-2760 Måløv, Denmark.</address>
 
 	Tel.: <phone>45-44434431</phone>; E-mail:
 	<email>sffr@<lb/> novonordisk.com</email>

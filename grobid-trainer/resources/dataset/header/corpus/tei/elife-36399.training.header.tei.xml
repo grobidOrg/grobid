@@ -35,6 +35,7 @@
 
 	Reviewing editor:
 	<editor>Peter A<lb/> Rodgers</editor>, 
+	<!-- check: affiliation of the editor left untagged -->
 	eLife, United Kingdom<lb/>
 
 	<note type="copyright">Copyright Broderick and<lb/> Casadevall. This article is<lb/> distributed under the terms of<lb/> the Creative Commons<lb/> Attribution License, which<lb/> permits unrestricted use and<lb/> redistribution provided that the<lb/> original author and source are<lb/> credited.<lb/></note>
@@ -45,7 +46,7 @@
 
 	<page>1 of 11<lb/></page> 
 
-	FEATURE ARTICLE<lb/> Feature article<lb/> Meta-Research Gender inequalities among authors who contributed equally<lb/>
+	<note type="doctype">FEATURE ARTICLE<lb/> Feature article<lb/> Meta-Research</note> Gender inequalities among authors who contributed equally<lb/>
 
 	<byline>
 	<docAuthor>Nichole A Broderick</docAuthor>
