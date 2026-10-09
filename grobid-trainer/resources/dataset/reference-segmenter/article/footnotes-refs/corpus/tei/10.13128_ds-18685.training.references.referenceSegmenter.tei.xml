@@ -1,0 +1,234 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.13128_ds-18685">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-24T08:01:09.897871Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-70-gc35e48387</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-24T08:01:09.897871Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-24T14:11:56.311Z" status="unfinished" who="#sandfort">
+      <note type="label">v2 (sandfort)</note>
+      <desc>1. Pass started</desc>
+    </change>
+    <change when="2026-03-24T14:21:07.214Z" status="unfinished" who="#sandfort">
+      <desc>1. Pass started</desc>
+    </change>
+    <change when="2026-03-24T14:34:35.151Z" status="unfinished" who="#sandfort">
+      <desc>1. Pass started</desc>
+    </change>
+    <change when="2026-03-24T14:51:14.498Z" status="unfinished" who="#sandfort">
+      <desc>1. Pass started</desc>
+    </change>
+    <change when="2026-03-25T10:56:36.042Z" status="unfinished" who="#sandfort">
+      <desc>1. Pass nearly finished</desc>
+    </change>
+    <change when="2026-03-26T12:49:01.874Z" status="draft" who="#sandfort">
+      <desc>1. Pass done</desc>
+    </change>
+    <change when="2026-03-26T18:52:37.795Z" status="unfinished" who="#li">
+      <note type="label">v3 (li)</note>
+      <desc>2.pass started</desc>
+    </change>
+    <change when="2026-03-27T07:20:01.546Z" status="checked" who="#li">
+      <desc>2.pass Done</desc>
+    </change>
+    <change when="2026-04-21T12:24:24.836Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-21T12:41:59.317Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> Un'interessante messa a punto in N. Weill (éd.), L'Esprit des Lumières est-il per-<lb/>du?, 18 ° forum « Le Monde » (Le Mans, 17-19 novembre 2006), Presses universi-<lb/>taires de Rennes, Rennes 2007;</bibl>
+          <bibl> ma cfr. anche A. Compagnon, Les antimodernes de<lb/> Joseph de Maistre à Roland Barthes, Gallimard, Paris 2005 ; </bibl>
+<bibl>J. Schmidt (ed.), What is<lb/> Enlightenment? Eighteenth-Century Answers and Twentieth-Century Questions, University<lb/> of California Press, Berkeley 1996; </bibl>
+<bibl>V. Ferrone, D. Roche, Postfazione. Storia e sto-<lb/>riografia dell'Illuminismo, in V. Ferrone, D. Roche (a cura di), L'Illuminismo. Diziona-<lb/>rio storico, Laterza, Roma-Bari 1997, pp. 511-592 (poi ripubblicato come volume<lb/> autonomo: V. Ferrone, D. Roche, L'Illuminismo nella cultura contemporanea, Later-<lb/>za, Roma-Bari, 2002); </bibl>
+<bibl>G. Ricuperati, Frontiere e limiti della ragione. Dalla crisi della<lb/> coscienza europea all'Illuminismo, Utet, Torino 2006; </bibl>
+<bibl>S. Fleischacker, What is En-<lb/>lightenment?, Routledge, London-New York 2013. Tra le più importanti revisioni<lb/> recenti della storiografia sull'illuminismo c'è ovviamente il dibattito aperto da<lb/> J.I. Israel, Radical Enlightenment: Philosophy and the Making of Modernity. 1650-1750,<lb/> Oxford University Press, Oxford 2001. </bibl>
+<bibl>Si veda anche il recente volume di S.L.<lb/> Montgomery, D. Chirot, The Shape of the New, Princeton University Press, Prince-<lb/>ton (NJ) 2015.<lb/> </bibl>
+<bibl><label>2</label> Uno stimolante confronto tra l'Illuminismo dei filosofi e quello degli storici è<lb/> V. Ferrone, Lezioni illuministiche, Laterza, Roma-Bari 2010.<lb/> </bibl>
+<bibl><label>3</label> Per la composizione dell'opera cfr. S. Petrucciani, Ragione e dominio.<lb/> L'autocritica della razionalità occidentale in Adorno e Horkheimer, Salerno editrice, Roma<lb/> 1984, pp. 13-21.</bibl>
+          <bibl>La lunga gestazione dell'opera e la persistenza dei temi anche<lb/> dopo il 1947 sono documentate dalle raccolte di testi frammentari e inediti pub-<lb/>blicate in M. Horkheimer, Gesammelte Schriften, hrsg. von A. Schmidt und G.<lb/> Schmid Noerr, 19 voll., Fischer, Frankfurt am Main 1988-1996, vol. V: Dialektik<lb/> der Aufklärung und Schriften: 1940-1950, hrsg.
+von G. Schmid Noerr, 1987;</bibl>
+          <bibl>e vol.<lb/> XII: Nachgelassene Schriften 1931-1949, hrsg. </bibl>
+<bibl>von G. Schmid Noerr, 1985.</bibl>
+          <bibl>Una<lb/> persistente influenza della Scuola di Francoforte e della Dialettica dell'illuminismo è<lb/> rintracciabile anche nella conferenza Qu'est-ce que la critique? (Critique et Aufklärung),<lb/> tenuta da Foucault il 27 maggio 1978 alla Société française de philosophie (pub-<lb/>blicata nel «Bulletin de la Société française de philosophie», 84, 1990, n. 2, pp.<lb/> 35-63): </bibl>
+          <bibl>cfr. M. Foucault, Qu'est-ce que la critique? suivi de La culture de soi, édition<lb/> établie par H.-P. Fruchaud et D. Lorenzini, Introduction et apparat critique par<lb/> D. Lorenzini et A.I. Davidson, Vrin, Paris 2015, pp. 33-80; una trad. it. del testo<lb/> era già stata pubblicata col titolo Illuminismo e critica, Donzelli, Roma 1997. </bibl>
+          <bibl>Sul<lb/> tema cfr. anche P. Dews, Foucault und die Dialektik der Aufklärung, in H. Kun-<lb/>neman, H. de Vries (hrsg. von), Die Aktualität der Dialektik der Auklärung, Campus<lb/> Verlag, Frankfurt-New York 1989, pp. 88-99.<lb/> </bibl>
+
+        <bibl type="footnote"><label>4</label> Il balletto di Luigi Manzotti, sulla musica di Romualdo Marenco con scene e<lb/> costumi di Alfredo Edel, fu rappresentato per la prima volta alla Scala l'11 gen-<lb/>naio 1881.<lb/> </bibl>
+        <bibl><label>5</label> Sull'idea di progresso resta fondamentale G. Sasso, Tramonto di un mito. L'idea<lb/> di «progresso» fra Ottocento e Novecento, Il Mulino, Bologna 1984; </bibl>
+          <bibl>per la prima età<lb/> moderna si veda Paolo Rossi, Naufragi senza spettatore. L'idea di progresso, Il Mulino,<lb/> Bologna 1995.<lb/> </bibl>
+        <bibl><label>6</label> Come tale fu celebrato da Célestin Bouglé, Syndicalistes et bergsoniens, «La Re-<lb/>vue du mois», 4, 1909, n. 7, pp. 403-416: 405. </bibl>
+<bibl>Ma sul bergsonismo di Sorel cfr.<lb/> F. Azouvi, La gloire de Bergson. Essais sur le magistère philosophique, Gallimard, Paris<lb/> 2007, pp. 111-113, 128-129, 207-211.<lb/> </bibl>
+        <bibl><label>7</label> B. Croce, La filosofia di Gian Battista Vico, Laterza, Bari 1911, p. 248.<lb/> </bibl>
+        <bibl><label>8</label> B. Croce, La letteratura italiana per saggi storicamente disposti, a cura di M. Sanso-<lb/>ne, 4 voll., Laterza, Bari 1956-1960, vol. II: Il Seicento e il Settecento, 1956, pp. 314-<lb/>316. </bibl>
+          <bibl>Per la concezione dell'illuminismo che aveva Croce cfr. G. Imbruglia, Illu-<lb/>minismo e storicismo nella storiografia italiana, Bibliopolis, Napoli 2003, cap. II: Bene-<lb/>detto Croce e il problema dell'illuminismo: storia, mito, ragione, pp. 77-146.<lb/> </bibl>
+        <bibl><label>9</label> G. Sorel, Les illusions du progrès, M. Rivière, Paris 1908 (4 e éd. rev. et augmen-<lb/>tée, M. Rivière, Paris 1921; rist. anast., Slatkine, Genève 1981), p. 51; trad. it. a<lb/> cura di R. Vivarelli, in G. Sorel, Scritti politici, Utet, Torino 1963, pp. 415-724: p.<lb/> 460.<lb/> </bibl>
+          <bibl><label>10</label> Ivi, p. 53; trad. it. cit., p. 462.<lb/> </bibl>
+          <bibl><label>11</label> Ivi, pp. 284-286; trad. it. cit., pp. 646-647.<lb/> </bibl>
+        <bibl><label>12</label> H. Bergson, Introduction à la métaphysique, «Revue de métaphysique et de mo-<lb/>rale», 11, 1903, pp. 1-36: 36, ora in OEuvres, textes annotés par A. Robinet, in-<lb/>troduction par H. Gouhier, P.U.F., Paris 1959, pp. 1392-1432: 1432.<lb/> </bibl>
+<bibl>L'espressione «fine dell'era cartesiana» è di H. Gouhier (ivi, p. XIV).<lb/> </bibl>
+        <bibl><label>13</label> Cfr. H. Poincaré, La valeur de la science (1905), Flammarion, Paris 1939, pp.<lb/> 216-217, 274-275, (trad. it. di F. Albergàmo e G. Polizzi, Il valore della scienza, a<lb/> cura di G. Polizzi, La Nuova Italia, Firenze 1994, pp. 157-158, 197).</bibl>
+          <bibl>Poincaré si<lb/> riferisce alla serie di articoli Science et philosophie che Le Roy aveva pubblicato sul-<lb/>la «Revue de métaphysique et de morale» (7, 1899, pp. 375-425, 503-562, 706-<lb/>731; e 8, 1900, pp. 37-72).</bibl>
+          <bibl>L'autore ne aveva poi presentato una versione sinte-<lb/>tica al primo congresso internazionale di filosofia tenutosi a Parigi nel 1900: cfr.<lb/>
+E. Le Roy, La science positive et les philosophies de la liberté, in 1 er Congrès international de<lb/> philosophie, 4 voll., A. Colin, Paris 1900-1902 (rist. anast. Kraus Reprint, Nen-<lb/>deln/Liechtenstein 1968), vol. I: 1900, pp. 313-341.<lb/> </bibl>
+        <bibl><label>14</label> Cfr. M. Weber, Wissenschaft als Beruf, in Gesammelte Aufsätze zur Wissenschats-<lb/>lehre, Mohr, Tübingen 1922, pp. 524-555: 535-536 (trad. it. di P. Rossi, La scien-<lb/>za come professione, con un saggio di M. Cacciari, Mondadori, Milano 2006, pp.<lb/> 20-21).<lb/> </bibl>
+          <bibl><label>15</label> Ivi, p. 540; trad. it. cit., p. 26.<lb/> </bibl>
+          <bibl><label>16</label> Ivi, p. 545; trad. it. cit., p. 35.<lb/> </bibl>
+        <bibl><label>17</label> Cfr. M. Weber, Wirtschaft und Gesellschaft. Grundriss der verstehenden Soziologie,<lb/> J.C.B. Mohr, Tübingen 1922 (P. Siebeck, Tübingen 1980 5 ), pp. 44-45 (trad. it. a<lb/> cura di P. Rossi, Economia e società. Lineamenti di sociologia comprendente, 2 voll., Edi-<lb/>zioni di Comunità, Milano 1961, vol. I: pp. 80-81).<lb/> </bibl>
+        <bibl><label>18</label> Cfr. G. Lukács, Geschichte und Klassenbewuβtsein. Studien über marxistische Dialek-<lb/>tik, in Werke, 19 voll., H. Luchterand Verlag, Neuwied-Berlin 1968-2005, vol. II:<lb/> Früschriften II, 1968, p. 379 (trad. it. di G. Piana, Storia e coscienza di classe, Sugar-<lb/>Co, Milano 1967, pp. 147-148).<lb/> </bibl>
+        <bibl><label>19</label> Cfr. K. Löwith, Mein Leben in Deutschland vor und nach 1933. Ein Bericht, Metz-<lb/>ler, Stuttgart 1986, p.
+        16 (trad. it. di E. Grillo, La mia vita in Germania prima e dopo<lb/> il 1933, prefazione di R. Koselleck, postfazione di A. Löwith, Il Saggiatore, Mi-<lb/>lano 1988, p. 37).<lb/> </bibl>
+        <bibl><label>20</label> Cfr. Weber, Wissenschaft als Beruf, cit. pp. 553-554; trad. it. cit., pp. 45-46.<lb/> </bibl>
+          <bibl><label>21</label> Ivi, p. 551; trad. it. cit., p. 42.<lb/> </bibl>
+          <bibl><label>22</label> Ivi, p. 554; trad. it. cit., p. 47.<lb/> </bibl>
+        <bibl><label>23</label> Cfr. E. Cassirer, Nachgelassene Manuskripte und Texte, hrsg. von K.Ch. Köhnke,<lb/> J. Michael Krois und O. Schwemmer, F. Meiner, Hamburg 1995-2009, vol.<lb/> XVIII: Ausgewählter wissenschaftlicher Briefwechsel, hrsg. von J.M. Krois 2009, p.
+        61<lb/> (trad. it. in A. Warburg, E. Cassirer, Il mondo di ieri. Lettere, a cura di M. Ghelardi,<lb/> Aragno, Torino 2003, p. 49).<lb/> </bibl>
+        <bibl><label>24</label> M. Weber, Die protestantische Ethik und der Geist des Kapitalismus (1905), in Ge-<lb/>sammelte Aufsätze zur Religionssoziologie, Mohr, Tübingen 1920, vol. I, pp. 1-206:<lb/> 205 (rist. anast. 1963; trad. it. L'etica protestante e lo spirito del capitalismo, a cura di<lb/> E. Sestan, Sansoni, Firenze 1965 2 , p. 305).<lb/> </bibl>
+        <bibl><label>25</label> Cfr. Th. Mann, E. von Kahler, Briefwechsel 1931-1935, hrsg. von M. Ass-<lb/>mann, Luchterhand, Hamburg 1993.<lb/> </bibl>
+        <bibl><label>26</label> Cfr. E. Massimilla, Intorno a Weber: scienza, vita e valori nella polemica su Wissen-<lb/>schaft als Beruf, Liguori, Napoli 2000.<lb/> </bibl>
+        <bibl><label>27</label> Cfr. E. von Kahler, Der Beruf der Wissenschaft, G. Bondi, Berlin 1920, p.
+        21<lb/> (trad. it. a cura di E. Massimilla, La professione della scienza, presentazione di F.<lb/> Tessitore, ESI, Napoli 1999, p.
+        81). </bibl>
+          <bibl>Kahler aveva anticipato alcune parti della<lb/> sua critica alla scienza moderna in due articoli apparsi l'anno precedente: cfr. E.<lb/> von Kahler, Die Krisis in der Wissenchaft, «Der Neue Merkur», 3, 1919, n. 2, pp.<lb/> 115-127,</bibl>
+          <bibl> e Id., Die menschliche Wirkung der Wissenschaft, «Der Neue Merkur», 3,<lb/> 1919, n. 3, pp. 203-210; </bibl>
+          <bibl>entrambi sono tradotti in italiano nel volume E. von<lb/> Kahler, La crisi della scienza, introduzione e cura di E. Massimilla, Rubbettino,<lb/> Soveria Mannelli 1997, pp. 37-51 (La crisi nella scienza) e 53-62 (L'incidenza umana<lb/> della scienza).<lb/> </bibl>
+          <bibl><label>28</label> Von Kahler, Der Beruf der Wissenschaft, cit., p. 50; trad. it. cit., p.115.<lb/> </bibl>
+          <bibl><label>29</label> Ivi, p. 39; trad. it. cit., pp. 102-103.<lb/> </bibl>
+          <bibl><label>30</label> Ivi, p. 40; trad. it. cit., p. 103.<lb/> </bibl>
+          <bibl><label>31</label> Ivi, pp. 48 e 80-81; trad. it. cit., pp. 113 e 149-150.<lb/> </bibl>
+          <bibl><label>32</label> Ivi, p. 100; trad. it. cit., p. 172.<lb/> </bibl>
+        <bibl><label>33</label> Cfr. la lettera scritta da F. Nietzsche a Carl von Gersdorff, datata Basilea, 21<lb/> giugno 1871, in Nietzsche Briefwechsel, kritische Gesamtausgabe, hrsg. von G. Colli<lb/> und M. Montinari, 3 voll., W. De Gruyter, Berlin-New York, 1975-2004, vol.<lb/> II.1: Briefe von Nietzsche, April 1869-Mai 1872, 1977, pp. 203-205 (trad. it. in M.<lb/> Montinari, Che cosa ha detto Nietzsche, Adelphi, Milano1999, pp. 78-79 e 80-81).<lb/> </bibl>
+        <bibl><label>34</label> Cfr. A. Salz, Für die Wissenschaft gegen die Gebildeten unter ihren Verächtern, Drei<lb/> Masken Verlag, München 1921, pp. 17-19 (trad. it. a cura di E. Massimilla, Per<lb/> la scienza. Contro i suoi colti detrattori, Liguori, Napoli 1999, pp. 78-79).<lb/> </bibl>
+          <bibl><label>35</label> Ivi, pp. 12-13, 10-12, 28-30; trad. it. cit., pp. 72-73, 70-72, 89-91.<lb/> </bibl>
+          <bibl><label>36</label> Ivi, p. 40; trad. it. cit., p. 102.<lb/> </bibl>
+          <bibl><label>37</label> Ivi, p. 21; trad. it. cit., p. 81.<lb/> </bibl>
+          <bibl><label>38</label> Ivi, pp. 70-74; trad. it. cit., pp. 134-138.<lb/> </bibl>
+          <bibl><label>39</label> Ivi, pp. 46-47; trad. it. cit., p. 109.<lb/> </bibl>
+          <bibl><label>40</label> Ivi, pp. 29-32; trad. it. cit., pp. 90-93.<lb/> </bibl>
+        <bibl><label>41</label> E. Husserl, Die Krisis der europäischen Wissenschaften und die transzendentale Phäno-<lb/>menologie. Eine Einleitung in die phänomenologische Philosophie (1936), in Husserliana:<lb/> Edmund Husserl, Gesammelte Werke, 42 voll. (in corso), M. Nijhoff, Haag 1950-<lb/>2014, vol. VI: hrsg. von W. Biemel, 1954, pp. 1-276: 3-4 (trad. it. di E. Filippini,<lb/> La crisi delle scienze europee e la fenomenologia trascendentale, prefazione di E. Paci, Il<lb/> Saggiatore, Milano 1961 [1972 4 ], p.
+        35). </bibl>
+          <bibl>L'edizione comprende altri testi atti-<lb/>nenti alla Krisis, incluso quello delle conferenze viennesi del 7 e 10 maggio 1935:<lb/> Die Krisis des europäischen Menschentums und die Philosophie, ivi, pp. 314-348 (La crisi<lb/> dell'umanità europea e la filosofia, in trad. it. cit., pp. 328-360). </bibl>
+          <bibl>Un volume supple-<lb/>mentare, contenente ulteriori testi del lascito manoscritto di Husserl concernenti<lb/> la Krisis (1934-1937), è stato pubblicato come vol. XXIX di Husserliana: cfr. E.<lb/> Husserl, Die Krisis der europäischen Wissenschaften und die transzendentale Phänomenologie.<lb/> Ergänzungsband: Texte aus dem Nachlaß 1934-1937, hrsg.
+von R.N. Smid, Kluwer,<lb/> Dordrecht-Boston-London 1993.<lb/> </bibl>
+          <bibl><label>42</label>
+Husserl, Die Krisis, cit., p. 343; trad. it. cit., p. 354.<lb/> </bibl>
+        <bibl><label>43</label> </bibl>Ivi, pp. 342-343; trad, it. cit., pp. 353-354.<lb/> <bibl>
+          <label>44</label> Ivi, p. 344; trad. it. cit., p. 354.<lb/> </bibl>
+          <bibl><label>45</label> Ivi, pp. 6-7; trad, it. cit., pp. 38-39.<lb/> </bibl>
+          <bibl><label>46</label> Ivi, pp. 345-346; trad, it. cit., p. 356.<lb/> </bibl>
+          <bibl><label>47</label> Ivi, p. 346; trad. it. cit., p. 357.<lb/> </bibl>
+          <bibl><label>48</label> Ivi, p. 337; trad. it. cit., p. 348.<lb/> </bibl>
+          <bibl><label>49</label> Ibidem.<lb/> </bibl>
+          <bibl><label>50</label> Ivi, p. 8; trad. it. cit., p. 39.<lb/> </bibl>
+          <bibl><label>51</label> Ivi, p. 1; trad. it. cit., p. 33.<lb/> </bibl>
+          <bibl><label>52</label> Ivi, p. 338; trad. it. cit., p. 349.<lb/> </bibl>
+          <bibl><label>53</label> Ivi, p. 336; trad. it. cit., pp. 347-348.<lb/> </bibl>
+          <bibl><label>54</label> Ivi, p. 14; trad. it. cit., p. 45.<lb/> </bibl>
+          <bibl><label>55</label> Ivi, pp. 269-276; trad. it. cit., pp. 284-290.<lb/> </bibl>
+          <bibl><label>56</label> Cfr. D. Di Cesare, Heidegger e gli ebrei, Bollati Boringhieri, Torino 2014.<lb/> </bibl>
+
+          <bibl><label>57</label> E. Husserl, Aufsätze und Vorträge (1922-1937), in Husserliana, cit., vol. XXVII,<lb/> hrsg. von Th. Nenon und H.R. Sepp, Kluwer, Dordrecht-Boston-London 1989,<lb/> Beilage X. «Zum Versagen in der neuzeitlichen Kultur-und Wissen-<lb/>schaftsentwicklung, das Telos der europäischen Menschheit zu verwirklichen.<lb/> Fünf Texte (1922/23)», pp. 113-122: 114 (trad. it. a cura di C. Sinigaglia, in E.<lb/> Husserl, L'idea di Europa. Cinque saggi sul rinnovamento, Cortina, Milano 1999, Ap-<lb/>pendice V: Sulla fallita realizzazione nello sviluppo della cultura e della scienza moderne del<lb/> telos dell'umanità europea [1922-1923], pp. 129-142: 130-131).<lb/> </bibl>
+          <bibl><label>58</label> Ivi, p. 115 e 117; trad. it. cit., pp. 132 e 135.<lb/> </bibl>
+          <bibl><label>59</label> Ivi, p. 117, trad. it. cit., p. 134.<lb/> </bibl>
+          <bibl><label>60</label> Ivi, p. 118, trad. it. cit., p. 136.<lb/> </bibl>
+          <bibl><label>61</label> Ivi, p. 120, trad. it. cit., p. 139.<lb/> </bibl>
+          <bibl><label>62</label> Ivi, p. 117, trad. it. cit., p. 135.<lb/> </bibl>
+          <bibl><label>63</label> Ibidem, trad. it. cit., p. 134.<lb/> </bibl>
+          <bibl><label>64</label> Ivi, pp. 117-118, trad. it. cit., pp. 135-136.<lb/> </bibl>
+          <bibl><label>65</label> Weber, Die protestantische Ethik, cit., pp. 203 e 204; trad. it. cit., pp. 305 e 306.<lb/> </bibl>
+          <bibl><label>66</label> M. Scheler, Das Ressentiment im Aufbau der Moralen (1912), in Vom Umsturz der<lb/> Werte. Abhandlungen und Aufsätze, Gesammelte Werke, 15 voll., Francke-Bouvier,<lb/> Bern-Bonn 1971-1997 5 , vol. III: 1972, pp. 33-147: 145 (trad. it. di A. Pupi, Il<lb/> risentimento nell'edificazione delle morali, Vita e Pensiero, Milano 1975, p. 183).<lb/> </bibl>
+          <bibl><label>67</label> Von Kahler, Der Beruf der Wissenschaft, cit., p. 50; trad. it. cit., p. 115.<lb/> </bibl>
+          <bibl><label>68</label> M. Scheler, Versuche einer Philosophie des Lebens. Nietzsche, Dilthey, Bergson (1915),<lb/> in Gesammelte Werke, cit., vol. III, pp. 311-339: 325 (trad. it. di R. Padellaro, Ten-<lb/>tativi per una filosofia della vita, in M. Scheler, La posizione dell'uomo nel cosmo e altri<lb/> saggi, Fabbri, Milano 1970, pp. 121-152: 137).<lb/> </bibl>
+          <bibl><label>69</label> Cfr. C. Schmitt, Das Zeitalter der Neutralisierungen und Entpolitisierungen, in Begriff<lb/> des Politischen: Text von 1932 mit einem Vorwort und drei Corollarien, Duncker &amp; Hum-<lb/>blot, Berlin 2002 7 , pp. 92-95 (trad. it. di P. Schiera, in Le categorie del politico, a cu-<lb/>ra di G. Miglio e P. Schiera, Il Mulino, Bologna 1972, pp. 180-183).<lb/> </bibl>
+          <bibl><label>70</label> Cfr. C. Schmitt, Politische Theologie: vier Kapitel zur Lehre von der Souveränität<lb/> (1922), Duncker &amp; Humblot, Berlin 2004 8 , p. 63 (trad. it. di P. Schiera, Teologia<lb/> politica. Quattro capitoli sulla dottrina della sovranità, in Schmitt, Le categorie del politico,<lb/> cit., pp. 27-86: 79-80).<lb/> </bibl>
+          <bibl><label>71</label> Ivi, p. 19; trad. it. cit., pp. 39-40.<lb/> </bibl>
+          <bibl><label>72</label> Ivi, pp. 43-44; trad. it. cit., pp. 61-62.<lb/> </bibl>
+          <bibl><label>73</label> Cfr. C. Schmitt, Die geistesgeschichtliche Lage des heutigen Parlamentarismus (1923),<lb/> Duncker &amp; Humblot, Berlin 1991 7 , «Vorbemerkung (über den Gegensatz von<lb/> Parlamentarismus und Demokratie)», pp. 13-23: 18-20 (trad. it di L. Albanese in<lb/> Il pensiero politico di Schmitt, Laterza, Roma-Bari 1996, pp. 140-141).<lb/> </bibl>
+
+          <bibl><label>74</label> Cfr. C. Schmitt, Römischer Katholicismus und politische Form, Jacob Hegner, Hel-<lb/>lerau bei Dresden 1923 (2a ed. Theatiner Verlag, München 1925 [Veröffen-<lb/>tlichungen des Verbandes der Vereine katholischer Akademiker zur Pflege der<lb/> katholischen Weltanschauung, XIII]).<lb/> </bibl>
+          <bibl><label>75</label> Cfr. Id., Römischer Katholicismus und politische Form, Klett-Cotta, Stuttgart<lb/> 2008 5 , p. 22 (trad. it. a cura di C. Galli, Cattolicesimo romano e forma politica, Il Mu-<lb/>lino, Bologna 2010, p. 28).<lb/> </bibl>
+          <bibl><label>76</label> Cfr. H. Marcuse, Soviet Marxism. A Critical Analysis, Routledge and Kegan<lb/> Paul, London 1958, pp. 81-86 (trad. it. di A. Casiccia, Soviet Marxism, Guanda,<lb/> Parma 1968, pp. 70-75).<lb/> </bibl>
+          <bibl><label>77</label> Cfr. C. Schmitt, Römischer Katholicismus, cit., p. 22; trad. it. cit., p. 27.<lb/> </bibl>
+          <bibl><label>78</label> Ivi, pp. 57-58; trad. it. cit., pp. 67-68.<lb/> </bibl>
+          <bibl><label>79</label> Schmitt, Politische Theologie, cit., p. 68; trad. it. cit., p. 84.<lb/> </bibl>
+          <bibl><label>80</label> Scheler, Versuche einer Philosophie des Lebens, cit., p. 339; trad. it. cit., p. 152.<lb/> </bibl>
+          <bibl><label>81</label> Sul tema sono ancora molto utili i libri di Michela Nacci, L'antiamericanismo<lb/> in Italia negli anni Trenta, Bollati Boringhieri, Torino 1989;</bibl>
+          <bibl>e La barbarie del comfort:<lb/> il modello di vita americano nella cultura francese del '900, Guerini, Milano 1996.<lb/> </bibl>
+          <bibl><label>82</label> La bibliografia è troppo vasta per poter essere indicata anche solo selettiva-<lb/>mente, ma per una ricostruzione della genesi della critica dell'illuminismo nel<lb/> pensiero di Horkheimer e di Adorno, del suo posto nella teoria critica e dello<lb/> sfondo della cultura della crisi, cfr. almeno M. Jay, The Dialectical Imagination. A<lb/> History of the Frankfurt School and the Institute of Social research, 1923-1950, Little,<lb/> Brown &amp; Co, Boston-Toronto 1973 (trad. it. di N. Paoli, L'immaginazione dialettica.<lb/> Storia della scuola di Francoforte e dell'Istituto di ricerche sociali 1923-1959, Einaudi, To-<lb/>rino 1979); </bibl>
+          <bibl>Petrucciani, Ragione e dominio, cit.; </bibl>
+          <bibl>J. Herf, Reactionary Modernism. Tech-<lb/>nology, Culture and Politics in Weimar and the Third Reich, Cambridge University<lb/> Press, Cambridge 1984 (trad. it. di M. Cupellaro, Il modernismo reazionario. Tecno-<lb/>logia, cultura e politica nella Germania di Weimar e del Terzo Reich, Il Mulino, Bologna<lb/> 1988); </bibl>
+          <bibl>R. Wiggershaus, Die Frankfurter Schule. Geschichte, theoretische Entwicklung, poli-<lb/>tiche Bedeutung, C. Hanser, München-Wien 1986 (trad. it. di P. Amari e E. Grillo,<lb/> La scuola di Francoforte. Storia. Sviluppo storico. Significato politico, Bollati Boringhieri,<lb/> Torino 1992); </bibl>
+          <bibl>M. Nacci, Pensare la tecnica: un secolo di incomprensioni, presentazione<lb/> di G. Vattimo, Laterza, Roma-Bari 2000. </bibl>
+          <bibl>Di S. Petrucciani si veda anche il sag-<lb/>gio introduttivo (Max Horkheimer e l'idea di teoria critica) alla trad. it. di M. Hork-<lb/>heimer, Filosofia e teoria critica, Einaudi, Torino 2003, pp. VII-XXV.<lb/> </bibl>
+
+          <bibl><label>83</label> Cfr. H. Marcuse, Reason and Revolution. Hegel and the Rise of Social Theory, The<lb/> Humanities Press-Routledge and Kegan Paul, New York-London 1954 2 , pp.<lb/> 323-329 e 409-419 (trad. it. di A. Izzo, Ragione e rivoluzione. Hegel e il sorgere della<lb/> "teoria sociale", Il Mulino, Bologna 1965, pp. 358-365 e 451-461). L'ed. tedesca<lb/> (Vernunft und Revolution, Luchterhand, Darmstadt) è del 1968.<lb/> </bibl>
+          <bibl><label>84</label> Cfr. M. Horkheimer, The Eclipse of Reason, Oxford University Press, New<lb/> York 1992 2 , pp. 42-52 e 81 (trad. it. di E. Vaccari Spagnol, Eclisse della ragione,<lb/> Einaudi, Torino 1969, pp. 41-50 e 74). </bibl>
+          <bibl>La trad. ted. di Alfred Schmidt fu pub-<lb/>blicata, insieme ad altri saggi, col titolo Zur Kritik der instrumentellen Vernunft, Fi-<lb/>scher, Frankfurt am Mein 1967, pp. 1-174;</bibl>
+          <bibl>ora in M. Horkheimer, Gesammelte<lb/> Schriften, cit., vol. VI: Zur Kritik der instrumentellen Vernunft und Notizen 1949-1969,<lb/> hrsg. von A. Schmidt, 1991, pp. 19-186.<lb/> </bibl>
+          <bibl><label>85</label> Cfr. Horkheimer, Eclipse of Reason, cit., p. 74; trad. it. cit., p. 68); </bibl>
+          <bibl>al riguardo<lb/> si veda J. Habermas, Die Verschlingung von Mythos und Aufklärung. Bemerkungen zur<lb/> Dialektik der Aufklärung -nach einer erneuten Lektüre, in K.H. Bohrer (Hrsg.), Mythos<lb/> und Moderne. Begriff und Bild einer Rekonstruktion, Suhrkamp Verlag, Frankfurt am<lb/> Mein 1983, pp. 405-430</bibl>
+          <bibl>(poi ripreso in J. Habermas, Der philosophische Diskurs der<lb/> Moderne. Zwölf Vorlesungen, Suhrkamp Verlag, Frankfurt am Mein 1985, pp. 130-<lb/>157; trad. it. di E. e E. Agazzi, Il discorso filosofico sulla modernità. Dodici lezioni, La-<lb/>terza, Roma-Bari 1987, lezione V: L'intrico di mito e illuminismo: Horkheimer e Ador-<lb/>no, pp. 109-134); </bibl>
+          <bibl>e S. Cochetti, Mythos und «Dialektik der Aufklärung», A. Hain,<lb/> Königstein/Ts. 1985. </bibl>
+          <bibl>Di una conversione della filosofia classica in una nuova<lb/> mitologia per effetto della mancanza della prospettiva dialettica aveva già parla-<lb/>to Lukács, Geschichte und Klassenbewusstsein, cit., pp. 328-331; trad. it. cit., pp. 192-<lb/>195.<lb/> </bibl>
+          <bibl><label>86</label> Cfr. Horkheimer, Eclipse of Reason, cit., p. 164; trad. it. cit., p. 141.<lb/> </bibl>
+
+          <bibl><label>87</label> Cfr. M. Horkheimer, Th.W. Adorno, Dialektik der Aufklärung und Schriften:<lb/> 1940-1950, in Horkheimer, Gesammelte Schriften, cit., vol. V, pp. 67-68 e 21-22<lb/> (trad. it. di R. Solmi, La dialettica dell'illuminismo, introduzione di C. Galli, Einau-<lb/>di, Torino 1997, pp. 51-52 e 8).<lb/> </bibl>
+          <bibl><label>88</label> Cfr. P. Bellinazzi, L'utopia reazionaria. Lineamenti per una storia comparata delle filo-<lb/>sofie comunista e nazionalsocialista, Name, Genova 2000; </bibl>
+          <bibl>Z. Sternhell, Les anti-<lb/>Lumières. Du XVIIIe siècle à la guerre froide, Fayard, Paris 2006 (trad. it. di M.<lb/> Giuffredi, I. La Fata, Contro l'Illuminismo. Dal XVIII secolo alla guerra fredda, Baldini,<lb/> Castoldi &amp; Dalai, Milano 2007); </bibl>
+          <bibl>M. Lenci, Le metamorfosi dell'antilluminismo. Aspetti<lb/> ed itinerari del dibattito sui Lumi nella storia del pensiero politico, Plus, Pisa 2007.<lb/> </bibl>
+          <bibl><label>89</label> Cfr. Horkheimer, Adorno, Dialektik der Aufklärung, cit., pp. 197-206; trad. it.<lb/> cit., pp. 182-191. Si veda l'analisi di O. Ombrosi, Le crépuscule de la raison: W. Ben-<lb/>jamin, T.W. Adorno, M. Horkheimer et E. Levinas face à la Catastrophe, préface de C.<lb/> Chalier, Hermann, Paris 2007, pp. 43-50.<lb/> </bibl>
+          <bibl><label>90</label> E. Paci, Prefazione alla terza edizione italiana (1968), in Husserl, La crisi delle<lb/> scienze europee, cit., p. 18.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

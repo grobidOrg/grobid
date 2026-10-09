@@ -1,0 +1,100 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1023__a_x3A_1015833415224">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-31T15:33:09.042586Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-71-g595835ed0</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-31T15:33:09.042586Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-04-15T15:27:55.209Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-04-15T15:41:44.174Z" status="draft" who="#cboulanger">
+      <desc>first pass done</desc>
+    </change>
+    <change when="2026-09-04T15:59:06.513Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>first pass done</desc>
+    </change>
+    <change when="2026-09-04T16:08:51.543Z" status="checked" who="#kazuyo">
+      <desc>first pass done</desc>
+    </change>
+    <change when="2026-09-04T16:10:24.207Z" status="checked" who="#kazuyo">
+      <desc>first pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label>. europa.eu.int/rapid/start/cgi/guesten.ksh?p action.gettxt=gt&amp;doc=SPEECH/00/41|0|<lb/> AGED&amp;lg=EN.<lb/> </bibl>
+        <bibl><label>2</label>. Cf. Reforming the Commission -A White Paper, COM(2000) 200 final of 1 March<lb/> 2000; cf. europa.eu.int/comm/reform/index en.htm.<lb/> </bibl>
+        <bibl><label>3</label>. Which was set in motion by the EU Charter of Fundamental Rights, solemnly proclaimed<lb/> at Nice on 7 Dec. 2000 (O.J. 2000, C 346/1 of 18 Dec. 2000), </bibl>
+          <bibl>followed by the Laeken<lb/> Conference of 14-15 Dec. 2001 with its concluding declaration on the future of the Union<lb/> and the setting up of a constitutional convention, which took up its work in March 2002<lb/> (europeanconvention.eu.int/plen sess.asp?lang=EN).<lb/> </bibl>
+        <bibl><label>4</label>. Enhancing democracy in the European Union. Working Programme, SEC (200) 1547,<lb/> 7 final of 11.10.2000; europa.eu.int/comm/governance/work/en.pdf.<lb/> </bibl>
+        <bibl><label>5</label>. europa.eu.int/comm/governance/index en.htm.<lb/> </bibl>
+        <bibl><label>6</label>. De Schutter, Lebessis and Paterson (Eds.), Governance in the European Union, Luxem-<lb/>bourg, 2001.<lb/> </bibl>
+          
+        <bibl><label>7</label>. European Governance. A White Paper, COM(2001) 428 final of 25 July 2001, O.J.<lb/> 2001, C 287/5; europa.eu.int/comm/governance/index en.htm.<lb/> </bibl>
+        <bibl><label>8</label>. The premises of this thesis would require a much more lengthy explanation than an<lb/> editorial allows for. Suffice it therefore to refer loosely to the work of Habermas, in particular<lb/> two recent publications: "Der demokratische Rechtsstaat -eine paradoxe Verbindung wider-<lb/>sprüchlicher Prinzipien?" ("Constitutional Democracy: A Paradoxical Union of Contradictory<lb/> Principles?", Political Theory 29, 766-781); </bibl>
+          <bibl>and "Braucht Europa eine Verfassung?" ("So,<lb/> why does Europe need a Constitution?"), www.iue.it/RSC/EU/Reform02(uk).pdf, </bibl>
+          <bibl>both in J.<lb/> Habermas, Zeit der Übergänge, Frankfurt a.M. 2001, pp. 133-154; pp. 104-129.<lb/> </bibl>
+        <bibl><label>9</label>. And much more so, to be sure, in the reports of the Working Groups which are by now<lb/> available at the Commission's governance website (supra note 5).<lb/> </bibl>
+          
+        <bibl><label>10</label>. "'Governance' will be taken to encompass rules, processes and behaviour that affect the<lb/> way in which powers are exercised at European level, particularly as regards accountability,<lb/> clarity, transparency, coherence, efficiency and effectiveness", White Paper, supra note 7, p.<lb/> 8, footnote 1. </bibl>
+          <bibl>This definition has been taken over from the Commission's earlier Working<lb/> Programme, supra note 4, at p. 4.<lb/> </bibl>
+        <bibl><label>11</label>. Schmitter, "What is there to legitimize in the European Union... and how might this be<lb/> accomplished?", in Joerges, Mény and Weiler (Eds.), Symposium: Mountain or Molehill? A<lb/> Critical Appraisal of the Commission White Paper on Governance, Jean Monnet Working Paper<lb/> No. 6/01, p. 79 et seq. at p. 83 et seq. (the text is also available at www.iue.it/RSC/Governance<lb/> and www.jeanmonnetprogram.org/papers/01/010601.html).<lb/> </bibl>
+          
+        <bibl><label>12</label>. White Paper, supra note 7, Executive Summary, first paragraph (p. 3).<lb/> </bibl>
+        <bibl><label>13</label>. Italics in the original (at p. 10).<lb/> </bibl>
+        <bibl><label>14</label>. White Paper, supra note 7, at p. 23; cf. p. 31.<lb/> </bibl>
+        <bibl><label>15</label>. White Paper, supra note 7 at p. 24.<lb/> </bibl>
+        <bibl><label>16</label>. White Paper, e.g. at pp. 21, 31.<lb/> </bibl>
+        <bibl><label>17</label>. Reaffirmed by the European Parliament's Committee on Constitutional Affairs in its<lb/> Report on the Commission White Paper on European Governance (Rapporteur Sylvia-Yvonne<lb/> Kaufman), COM(2001) 428 -C5-0454/2001 -2001/2181(COS)] final of 15 Nov. 2001.<lb/> </bibl>
+        <bibl><label>18</label>. White Paper, supra note 7, 3.<lb/> </bibl>
+          
+          <!-- upstream error -->
+        <!--bibl type="front">* Professor of European Economic Law, European University Institute, Florence.</bibl-->
+        </listBibl>
+    </text>
+</TEI>

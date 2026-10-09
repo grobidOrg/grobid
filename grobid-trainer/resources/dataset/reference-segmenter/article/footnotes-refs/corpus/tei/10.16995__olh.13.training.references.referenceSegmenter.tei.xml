@@ -1,0 +1,215 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.16995__olh.13">
+    <titleStmt>
+      <title level="a">The Covent Garden Old Price Riots: Protest and Justice in Late‑Georgian London</title>
+      <author>
+        <persName>
+          <forename>James William</forename>
+          <surname>Baker</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sandfort">Johanna Sandfort</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Open Library of the Humanities</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2016</date>
+      <idno type="DOI">10.16995/olh.13</idno>
+      <ptr target="https://doi.org/10.16995/olh.13"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>James William Baker. (2016). The Covent Garden Old Price Riots: Protest and Justice in Late‑Georgian London. Open Library of Humanities, 2(1), 4. DOI: 10.16995/olh.13</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">The Covent Garden Old Price Riots: Protest and Justice in Late‑Georgian London</title>
+          <author>
+            <persName>
+              <forename>James William</forename>
+              <surname>Baker</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Open Library of Humanities</title>
+          <imprint>
+            <biblScope unit="volume">2</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page">4</biblScope>
+            <date when="2016">2016</date>
+            <publisher>Open Library of the Humanities</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.16995/olh.13</idno>
+        <ptr target="https://doi.org/10.16995/olh.13"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:50:34.135080Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">fd543f4</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-17T17:50:34.135080Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-21T19:20:33.293Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>Starting 1st pass</desc>
+    </change>
+    <change when="2026-03-21T20:58:41.295Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-03-23T14:54:52.482Z" status="draft" who="#sandfort">
+      <note type="label">v3 (sandfort)</note>
+      <desc>2. pass started</desc>
+    </change>
+    <change when="2026-03-23T15:10:33.475Z" status="checked" who="#sandfort">
+      <desc>2. pass done</desc>
+    </change>
+    <change when="2026-04-20T16:34:09.645Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-20T17:02:28.528Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> For the moral economy of theatre pricing, see an entry into James Boswell's journal (F. Pottle [ed.],<lb/> Boswell's London Journal, 1762-3 [New Haven, 1950], 219) where a pseudo-fictional ' citizen' of Child's<lb/> coffee-house muses 'I remember when the common price of new plays was sixpence, and no more.'<lb/> </bibl>
+      <bibl><label>2</label> R. D. Hume, 'Theatre as Property in Eighteenth-Century London,' Journal for Eighteenth Century Stud-<lb/>ies 31.1 (2008); </bibl>
+      <bibl>H. McPherson, 'Theatrical Riots' and Cultural Politics in Eighteenth-Century London,'<lb/> The Eighteenth Century 43.3 (2002); </bibl>
+      <bibl>D. Worrall, Theatric Revolution: Drama, Censorship and Romantic<lb/> Period Subcultures, 1773-1832 (Oxford: Oxford University Press, 2006), pp. 33-102.<lb/> </bibl>
+      <bibl><label>3</label> The concept of the 'Free-Born Englishman' has a long heritage, stretching back to the seventeenth<lb/> century and the Levellers. It was revived in 1790s in response to restrictions to freedom and ero-<lb/>sions of privacy imposed on Britons as a consequence of the French Revolutionary Wars, not least<lb/> the suspension of habeus corpus in 1794. See J. Barrell, The Spirit of Despotism: Invasions of Privacy<lb/> in the 1790s (Oxford: Oxford University Press, 2006); </bibl>
+      <bibl>G, Cruikshank, A FREE BORN ENGLISHMAN!<lb/> THE ADMIRATION OF THE WORLD!!! AND THE ENVY OF SURROUNDING NATIONS!!!!! (1819; British<lb/> Museum Satires 13287A); </bibl>
+      <bibl>B. Hilton, A Mad, Bad, and Dangerous People?: England 1783-1846 (Oxford:<lb/> Oxford University Press, 2006), pp. 65-74.<lb/> </bibl>
+      <bibl><label>4</label> Henry and his elder brother John Fielding were both well known figures for their roles as magistrates,<lb/> indeed Henry has established the Bow Street office in 1749. See J. M. Beattie, The First English Detec-<lb/>tives: The Bow Street Runners and the Policing of London, 1750-1840 (Oxford: Oxford University Press,<lb/> 2012); </bibl>
+      <bibl>J. White, London in the Eighteenth Century: a Great and Monstrous Thing (London: Bodley Head,<lb/> 2012), pp. 424-465.<lb/> </bibl>
+      <bibl><label>5</label> Hannah Barker's model of newspapers as commercial entities is useful here, for it helps to explain<lb/> why some newspapers carried varied, opposing, and often wholly contradictory opinions on the OP<lb/> war within their pages (even if their editorial lines remained consistent). In sum, the discursive busi-<lb/>ness of newspaper proprietors (that beyond their role as forums for advertisements) was less to pur-<lb/>sue a polemical line and more to appeal to potential readers and purchasers of their newspapers;<lb/> H. Barker, Newspapers, Politics And English Society, 1695-1855 (Harlow: Longman, 2000).<lb/> </bibl>
+      <bibl><label>6</label> For the former pair, see A. Aspinall (ed.) Dorothy Jordan, Mrs. Jordan and Her Family: Being the Unpub-<lb/>lished Correspondence of Mrs. Jordan and the Duke of Clarence, Later William IV (London: Arthur<lb/> Barker, 1951), pp. 118-120.<lb/> </bibl>
+      <bibl><label>7</label> Beattie, First English Detectives. Though a significant loss, given the brevity of comparable records<lb/> (see Greg Thomas [ed.], Summary Justice in the City: A Selection of Cases Heard at the Guildhall Justice<lb/> Room, 1752-1781 [London: London Record Society, 2013]) and that Bow Street encouraged lengthy<lb/> press reports of its proceedings, the lost case notes may well have amounted to only short summaries.<lb/> </bibl>
+      <bibl>In addition to evidence in newspapers, publications on the OP riots did appear after the cessation of<lb/> hostilities, notable among which is Thomas Tegg's The Rise, Progress, and Termination of the O. P. War,<lb/> in Poetic Epistles (London: Thomas Tegg, 1810).<lb/> </bibl>
+      <bibl><label>8</label> M. Baer, Theatre and Disorder in Late Georgian London (Oxford: Clarendon Press, 1992).<lb/> </bibl>
+      <bibl><label>9</label> J. Moody, Illegitimate Theatre in London, 1770-1840 (Cambridge: Cambridge University Press, 2000).<lb/> </bibl>
+      <bibl><label>10</label> P. Spence, The Birth of Romantic Radicalism: War, Popular Politics, and English Radical Reformism,<lb/> 1800-1815 (Aldershot: Ashfield, 1996).</bibl>
+      <bibl>The conflict does not feature, for example, in either John Ste-<lb/>venson, Popular Disturbances in England, 1700-1870 (London: Longman, 1979)</bibl>
+      <bibl>or John Stevenson,<lb/> Popular Disturbances in England, 1700-1832 (London: Longman, 1992).<lb/> </bibl>
+      <bibl><label>11</label> McPherson, 'Theatrical Riots,' 7.<lb/> </bibl>
+      <bibl><label>12</label> R. Poole, 'The March to Peterloo: Politics and Festivity in Late Georgian England,' Past and Present<lb/> 192.1 (2006).<lb/> </bibl>
+      <bibl><label>13</label> K. Navickas, 'What happened to class? New histories of labour and collective action in Britain,' Social<lb/> History 36.2 (2011).<lb/> </bibl>
+      <bibl><label>14</label> Navickas, 'What happened to class?' 201.<lb/> </bibl>
+      <bibl><label>15</label> W. Weber, 'The 1784 Handel Commemoration as Political Ritual,' Journal of British Studies 28 (1989).<lb/> </bibl>
+      <bibl><label>16</label> D. Sibley, Geographies of Exclusion (London: Routledge, 1995), p. 39.<lb/> </bibl>
+      <bibl><label>17</label> Sibley, Geographies of Exclusion, p. 35.<lb/> </bibl>
+      <bibl><label>18</label> Beattie, First English Detectives; P. King, Crime, Justice, and Discretion in England, 1740-1820 (Oxford:<lb/> Oxford University Press, 2000); </bibl>
+      <bibl>R. M. Ward, Print Culture, Crime and Justice in Eighteenth-Century<lb/> London (London: Bloomsbury, 2014), p. 145.<lb/> </bibl>
+      <bibl><label>19</label> Ward, Print Culture, pp. 38-9, 152.<lb/> </bibl>
+      <bibl><label>20</label> Ward, Print Culture, pp. 115, 141, 152-6.<lb/> </bibl>
+      <bibl><label>21</label> An argument made in J. M. Beattie, Policing and Punishment in London, 1660-1750 (Oxford: Oxford<lb/> University Press, 2001).<lb/> </bibl>
+      <bibl><label>22</label> See Joanna Innes and John Styles, 'The Crime Wave: Recent Wrtiing on Crime and Criminal Justice in<lb/> Eighteenth-Century England,' Journal of British Studies 25 (1986), 380-435.<lb/> </bibl>
+      <bibl><label>23</label> Beattie, First English Detectives, pp. 167-205.<lb/> </bibl>
+      <bibl><label>24</label> I. Cruikshank and G. Cruikshank, ACTING MAGISTRATES committing themselves being their first<lb/> appearance on this stage as performed at the National Theatre Covent Garden. Sepr 18 1809 (1809;<lb/> British Museum Satires 11418).</bibl>
+      <bibl>For the function of reportage in satirical prints published during the<lb/> OP War see J. Baker, 'The OP War, Libertarian Communication and Graphic Reportage in Georgian<lb/> London,' European Comic Art 4.1 (2011).<lb/> </bibl>
+      <bibl><label>25</label> Old Bailey Proceedings Online (www.oldbaileyonline.org, version 7.0), 21 February 1810, trial of Abra-<lb/>ham Hart and Edward White (t18100221-108).<lb/> </bibl>
+      <bibl><label>26</label> The Times, 13 November 1809.<lb/> </bibl>
+
+      <bibl type="footnote"><label>27</label> The fact that Brandon tended to speak for the prosecution at Bow Street means few other names are<lb/> mentioned with regards to arrest. Indeed the ire OPs developed against the Covent Garden doorman<lb/> meant that most testimonies for the defence addressed Brandon directly, except in cases where one<lb/> member of the audience arrested another and brought them to Bow Street. Reports do make mention<lb/> of witnesses for the prosecution, though it is rarely clear if they were constables or hired-hands.<lb/> </bibl>
+
+      <bibl><label>28</label> Morning Chronicle, 17 October 1809; The Times, 23 October 1809.<lb/> </bibl>
+      <bibl><label>29</label> The Times, 21 September 1809.<lb/> </bibl>
+      <bibl><label>30</label> The Times, 11 October, 13 November, 27 November 1809.<lb/> </bibl>
+      <bibl><label>31</label> J. M. Beattie, Crime and the Courts in England, 1660-1800 (Oxford: Oxford University Press, 1986);<lb/> </bibl>
+      <bibl>D. Hay et. al. (eds), Albion's Fatal Tree: Crime and Society in Eighteenth-Century England (London:<lb/> Allen Lane, 1975); </bibl>
+      <bibl>T. Hitchcock, R. Shoemaker, C. Emsley, S. Howard, and J. McLaughlin, et al. The Old<lb/> Bailey Proceedings Online, 1674-1913 (2012), available at http://www.oldbaileyonline.org, version 7.0<lb/> [Last accessed 4 December 2014]; </bibl>
+      <bibl>P. Linebaugh, The London Hanged: Crime and Civil Society in the<lb/> Eighteenth Century (Cambridge: Cambridge University Press, 1992).<lb/> </bibl>
+      <bibl><label>32</label> The Times, 27 November 1809.<lb/> </bibl>
+      <bibl><label>33</label> The Times, 16 October 1809.<lb/> </bibl>
+      <bibl><label>34</label> Examiner, 29 October 1809; The Times, 21 November 1809.<lb/> </bibl>
+      <bibl><label>35</label> The Times, 22 September 1809.<lb/> </bibl>
+      <bibl><label>36</label> The Times, 11 October 1809; The Morning Chronicle, 11 October 1809; Examiner, 15 October 1809.<lb/>
+
+        <bibl><label>37</label> The Times, 6 November 1809.<lb/> </bibl>
+      <bibl><label>38</label> The Times, 19 November 1809.<lb/> </bibl>
+      <bibl><label>39</label> The Times, 26 October 1809.<lb/> </bibl>
+      <bibl><label>40</label> Examiner, 29 October 1809.<lb/> </bibl>
+
+      <bibl><label>41</label> The legal system did on many occasions work to the advantage of the OPs. A Jewish pugilist, presumed<lb/> to have been hired by the Covent Garden Theatre management, was prosecuted at Bow Street on<lb/> 10 November (The Times, 11 November 1809). </bibl>
+        John Winholt, an OP who visited the magistrates' office<lb/> on over four occasions in Autumn 1809, had on 22 November a hat returned to him that had been<lb/> stolen whilst he protested at Covent Garden Theatre (The Times, 23 November 1809).<lb/> </bibl>
+
+      <bibl><label>42</label> Henry Hoskins, who appeared at the Old Bailey on 1 November 1809 charged with highway robbery,<lb/> went so far as to use his reluctance to accompany his accuser to Covent Garden Theatre 'because<lb/> his intention was to kick up a row in the house' as evidence of his good character. It is tempting, if<lb/> unsubstantiated, to suggest that given the magistracy's distate for the OPs that this played a part in<lb/> his acquittal. Old Bailey Proceedings Online, 1 November 1809, trial of Henry Hoskins (t18091101-45).<lb/> </bibl>
+      <bibl><label>43</label> The Times, 21 November 1809.<lb/> </bibl>
+      <bibl><label>44</label> I. Haywood and J. Reed (eds.), The Gordon Riots: Politics, Culture and Insurrection in Late Eighteenth-<lb/>Century Britain (Cambridge: Cambridge University Press, 2012).<lb/> </bibl>
+      <bibl><label>45</label> A single arrest from the opening night was tried at the Old Bailey. William Dyer was brought to the<lb/> court accused of stealing a handkerchief at the door to the Covent Garden Theatre pit. Dyer was<lb/> arrested by his accuser John Goodyear. He was found guilty and sentenced to a shilling fine and<lb/> imprisonment for one year. Old Bailey Proceedings Online, 20 September 1809, trial of William Eakins<lb/> Dyer (18090920-69).<lb/> </bibl>
+      <bibl><label>46</label> The Times, 21 September 1809.<lb/> </bibl>
+      <bibl><label>47</label> The Times, 10 October 1809.<lb/> </bibl>
+      <bibl><label>48</label> Morning Chronicle, 11 October 1809.<lb/> </bibl>
+      <bibl><label>49</label> Morning Chronicle, 13 October 1809.<lb/> </bibl>
+      <bibl><label>50</label> Morning Chronicle, 14 October 1809.<lb/> </bibl>
+      <bibl><label>51</label> The Times, 16 October 1809; Morning Chronicle, 16 October 1809.<lb/> </bibl>
+
+      <bibl type="footnote"><label>52</label> This John Soane is not to be confused with the famous architect John Soane.<lb/> </bibl>
+
+      <bibl><label>53</label> The Times, 16 October 1809.<lb/> </bibl>
+      <bibl><label>54</label> Morning Chronicle, 16 October 1809.<lb/> </bibl>
+
+      <bibl><label>55</label> Reports suggest that in late-November 1809 numerous arrests for making noise were made without<lb/> clearly verifying the identity of the offender; see for example The Times, 23 November 1809.<lb/> </bibl>
+      <bibl><label>56</label> Baer, Theatre and Disorder, 113.<lb/> </bibl>
+      <bibl><label>57</label> Morning Post, 1 December 1809.<lb/> </bibl>
+      <bibl><label>58</label> The Times, 11 October 1809.<lb/> </bibl>
+      <bibl><label>59</label> The Times, 2 December 1809.<lb/> </bibl>
+      <bibl><label>60</label> Morning Chronicle, 2 December 1809.<lb/> </bibl>
+      <bibl><label>61</label> Morning Post, 2 December 1809.<lb/> </bibl>
+      <bibl><label>62</label> Baer, Theatre and Disorder, pp. 113-114.<lb/> </bibl>
+      <bibl><label>63</label> The Times, 23 September 1809.<lb/> </bibl>
+      <bibl><label>64</label> Morning Chronicle, 12 October 1809; In the same letter Bish admitted to having asked his employee<lb/> James Andrews, who we have seen, to distribute handbills containing the same accusations. This is<lb/> one of a number of letters by Bish that were published in the metropolitan press.<lb/> </bibl>
+      <bibl><label>65</label> For a detailed account of this phase of the riots, a phase characterised in the contemporary mind by<lb/> the presence of Jewish pugilists in Covent Garden Theatre, see J. Baker, 'Jewishness and the Covent<lb/> Garden OP War: Satirical Perceptions of John Philip Kemble,' Nineteenth-Century Theatre and Film<lb/> 40.1 (2013).<lb/> </bibl>
+      <bibl><label>66</label> The Times, 12 October 1809.<lb/> </bibl>
+      <bibl><label>67</label> Morning Chronicle, 13 October 1809.<lb/> </bibl>
+      <bibl><label>68</label> Morning Chronicle, 16 October 1809.<lb/> </bibl>
+      <bibl><label>69</label> The Times, 20 October 1809.<lb/> </bibl>
+
+      <!-- the following seems to be a single reference -->
+      <bibl><label>70</label> O. P. Riots. Exhibitions. -Panoramas. -Peace Jubilee and Sundries. 1809-1814. 1809-1814. MS Radi-<lb/>cal Politics and the Working Man in England: Part Two: Sets 47-49, 51-53, 55-63, and 65-72 Set 59;<lb/> Vol 2. British Library, 30. Nineteenth Century Collections Online. Web. 14 Oct. 2014. http://tinyurl.<lb/> galegroup.com/tinyurl/Ktan6<lb/> </bibl>
+
+      <bibl><label>71</label> Tegg, The O. P. War. For his style of business see J. Barnes and P. Barnes, 'Reassessing the Reputation of<lb/> Thomas Tegg, London Publisher, 1776-1846,' Book History 3 (2000).<lb/> </bibl>
+      <bibl><label>72</label> Morning Chronicle, 3 November 1809.<lb/> </bibl>
+      <bibl><label>73</label> Ibid.<lb/> </bibl>
+      <bibl><label>74</label> The Times, 3 November 1809.<lb/> </bibl>
+      <bibl><label>75</label> The Times, 4 November 1809.<lb/> </bibl>
+      <bibl><label>76</label> London Metropolitan Archives, WJ/SP/1809.<lb/> </bibl>
+      <bibl><label>77</label> London Metropolitan Archives, WJ/SB/B/0597.<lb/> </bibl>
+      <bibl><label>78</label> Sessions Rolls for the Westerminster and Middlesex Session of the Peace can be fruitfully sampled to<lb/> gain a sense of the types of offence brought to these legislative arenas. London Metropolitan Archives,<lb/> (Middlesex) MJ/SR/3798, 3800, 3803, 3805, 3807, 3810; (Westminster) MJ/SR/3797, 3802, 3809, 3812.<lb/> </bibl>
+      <bibl><label>79</label> MODERATOR was not alone in seeing the OP war as a microcosm of wider concerns. The Whig MP<lb/> William Windham wrote in a letter to his private secretary Thomas Amyot in 18 December 1809 that<lb/> 'I am the more alive, I suppose, to this defeat of the managers, because I see it as a rehearsal of what<lb/> is meant for higher performance; the managers being the government; the new prices the taxes [...]<lb/> and the O.P.s exactly the same description of persons as at present; L. S. Benjamin (ed.), The Windham<lb/> Papers, 2 vols. (London: Herbert Jenkins, 1913), II, pp. 366.</bibl>
+    </listBibl>
+  </text>
+</TEI>

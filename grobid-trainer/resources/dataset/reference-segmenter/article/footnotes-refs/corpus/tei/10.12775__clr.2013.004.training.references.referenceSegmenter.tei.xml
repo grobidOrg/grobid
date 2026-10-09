@@ -1,0 +1,180 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.12775__clr.2013.004">
+    <titleStmt>
+      <title level="a">Das Problem des Schadensersatzes für den sog. vertanen Urlaub in der Rechtsprechung der polnischen Gerichte</title>
+      <author>
+        <persName>
+          <forename>Mirosław</forename>
+          <surname>Bączyk</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="sperber">Marcia Sperber</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Uniwersytet Mikolaja Kopernika/Nicolaus Copernicus University</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2013</date>
+      <idno type="DOI">10.12775/clr.2013.004</idno>
+      <ptr target="https://doi.org/10.12775/clr.2013.004"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Mirosław Bączyk. (2013). Das Problem des Schadensersatzes für den sog. vertanen Urlaub in der Rechtsprechung der polnischen Gerichte. Comparative Law Review, 15(0), 73. DOI: 10.12775/clr.2013.004</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Das Problem des Schadensersatzes für den sog. vertanen Urlaub in der Rechtsprechung der polnischen Gerichte</title>
+          <author>
+            <persName>
+              <forename>Mirosław</forename>
+              <surname>Bączyk</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Comparative Law Review</title>
+          <imprint>
+            <biblScope unit="volume">15</biblScope>
+            <biblScope unit="issue">0</biblScope>
+            <biblScope unit="page">73</biblScope>
+            <date when="2013">2013</date>
+            <publisher>Uniwersytet Mikolaja Kopernika/Nicolaus Copernicus University</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.12775/clr.2013.004</idno>
+        <ptr target="https://doi.org/10.12775/clr.2013.004"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:23:45.250605Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:23:45.250605Z" status="extraction">
+      <note type="label">2 schulze</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-02-25T11:46:26.583Z" status="unfinished" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-04T12:57:30.437Z" status="draft" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-06T17:59:58.101Z" status="draft" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-06T18:02:21.086Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-09T07:36:37.092Z" status="checked" who="#schulze">
+      <desc>2 pass done</desc>
+    </change>
+    <change when="2026-04-03T11:27:35.378Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-03T11:35:56.548Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-03T22:21:27.090Z" status="in-review" who="#lfoppiano">
+      <note type="label">v5 (lfoppiano)</note>
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-03T22:24:48.473Z" status="in-review" who="#lfoppiano">
+      <note type="label">v7 (lfoppiano)</note>
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-04T09:20:38.298Z" status="in-review" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-04T10:06:04.878Z" status="checked" who="#kazuyo">
+      <desc>updated-upstream-model</desc>
+    </change>
+    <change when="2026-09-12T15:16:07.479Z" status="approved" who="#lfoppiano">
+      <note type="label">v8 (lfoppiano)</note>
+      <desc>updated-upstream-model</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> Vgl. z.B. K. Piątek, Poprawa bezpieczeństwa turystów [Verbesserung der Sicherheit von<lb/> Touristen], Dziennik Gazeta Prawna [Juristische Zeitung] vom 25.07.2013, S. A11.<lb/> </bibl>
+        <bibl><label>2</label> Eine umfangreiche Zusammenstellung von Veröffentlichungen und der Rechtsprechung<lb/> in diesem Bereich stellte in letzter Zeit J. Gospodarek, Glosse zum Beschluss des Obersten<lb/> Gericht vom 20.11.2010, III CZP 79/10, Orzecznictwo Sądów Polskich [Die Rechtsprechung<lb/> der polnischen Gerichte] 2012, Nr. 1, S. 8;</bibl> <bibl>M. Wałachowska, Odpowiedzialność za niewykonanie<lb/> lub nienależyte wykonanie umowy o podróż i zadośćuczynienie za "zmarnowany urlop" [Die Haftung<lb/> für die Nicht-oder Schlechterfüllung des Reisevertrages und die Genugtuung für den sog. "vertanen<lb/> Urlaub" im polnischen Recht], [in:] M. Nesterowicz, Odpowiedzialność biur podróży a ochrona<lb/> klientów w prawie polskim i UE [Die Haftung der Reisebüros und der Rechtschutz der Reisenden im<lb/> polnischen-und EU-Recht], Toruń: Wyższa Szkoła Bankowa 2013, S. 79;</bibl>
+          <bibl>M. Nesterowicz,<lb/> Odpowiedzialność cywilna biura podróży za "zmarnowany urlop" w prawie polskim i porównawczym<lb/> [Die Haftung des Reisebüros für den "vertanen Urlaub" im polnischen und in der<lb/> Rechtsvergleichung], Przegląd Sądowy [Gerichtliche Rundchau] 2011, Nr. 5, S. 1.<lb/> </bibl>
+
+        <bibl><label>3</label> Dz. U. [Gesetzblatter] 2004, Nr. 222, Pos. 2268 (weiter -Gesetz vom 1997 genannt).<lb/> </bibl>
+
+        <bibl type="footnote"><label>4</label> Nicht veröffentlicht.<lb/> </bibl>
+
+          <bibl><label>5</label> Amtsblatt der Europäischen Gemeinschaft C 118/11 vom 18.03.2002; auch Eur-Lex<lb/> 62000J0168 376570 (weiter -das Urteil des EuGH vom 12.03.2002 genannt).<lb/> </bibl>
+        <bibl><label>6</label> Dz. Urz. WE L 158/59; 23.06.1990 (weiter -Direktive vomn 13.07.1990).<lb/> </bibl>
+
+        <bibl type="footnote"><label>7</label> Nicht veröffentlicht.<lb/> </bibl>
+        <bibl><label>8</label> LexPolonica 379684.<lb/> </bibl>
+
+        <bibl type="footnote"><label>9</label> Nicht veröffentlicht.<lb/> </bibl>
+        <bibl><label>10</label> Lex Polonica 207868.<lb/> </bibl>
+        <bibl><label>11</label> Die polnische Literatur in dieser Materie stellt umfangreich zusammen z.B. J. Gospodarek,<lb/> Fußnote 5, S. 9.<lb/> </bibl>
+
+        <bibl><label>12</label> LexPolonica 207868.<lb/> </bibl>
+        <bibl type="footnote"><label>13</label> Nicht veröffentlicht.<lb/> </bibl>
+        <bibl><label>14</label> LexPolonica 379684 (sehen auch die Fußnote 9).<lb/> </bibl>
+        <bibl type="footnote"><label>15</label> Nicht veröffentlicht.<lb/> </bibl>
+
+        <bibl><label>16</label> Przegląd<lb/> Ustawodawstwa<lb/> Gospodarczego<lb/> [Rundschau<lb/> der<lb/> wirtschaftlichen<lb/> Gesetzgebung] 1967, Nr. 4, S. 37.<lb/> </bibl>
+        <bibl><label>17</label> Orzecznictwo Sądów Polskich i Komisji Arbitrażowych [Die Rechtsprechung der<lb/> polnischen Gerichten und Arbitragekommissionen] 1967, Nr. 7/8, Pos. 183.<lb/> </bibl>
+        <bibl><label>18</label> Orzecznictwo Sądów Polskich i Komisji Arbitrażowych [Die Rechtsptrechung der<lb/> polnischen Gerichte und Arbitragekommissionen] 1978, Nr. 11, Pos. 200.<lb/> </bibl>
+
+        <bibl><label>19</label> Orzecznictwo Sądów Polskich i Komisji Arbitrażowych [Die Rechsprechung der<lb/> polnischen Gerichte und Arbitragekommissionen] 1986, Nr. 6, Pos. 1113.<lb/> </bibl>
+        <bibl><label>20</label> Vgl. M. Nesterowicz, Prawo turystyczne [Reiserecht], Warszawa: Wolters Kluwer Polska<lb/> 2012, S. 105-106 (Beispiele von Urteile des Wettbewerbsschutzschutzgerichts, in denen die<lb/> Unzulässigkeit der Reisevertragsbestimmungen wegen Sittenwidrigkeit festgestellt wurden).<lb/> </bibl>
+
+        <bibl><label>21</label> Vgl. J. Rezler, Naprawienie szkody wynikłej ze spowodowania uszczerbku na ciele i zdrowiu<lb/> [Der Schadenersatz im Falle der Körperverletzung und Gesundheitsschädigung], Warszawa:<lb/> Wydawnistwa Prawnicze 1968, S. 31-32;</bibl>
+          <bibl>K. Wesołowski, Glosse zum Urteil vom 25.02.1986,<lb/> II CZP 2/86, Orzecznictwo Sądów Polskich i Komisji Arbitrażowych [Die Rechtsprechung<lb/> der polnischen Gereichte und Arbitragekommissionen] 1988, Nr. 2, S. 62.<lb/> </bibl>
+        <bibl><label>22</label> Orzecznictwo Sądu Najwyższego -Izba Cywilna [Die Rechtsprechung de Obersten<lb/> Gerichts -Zivilkammer] 2001, Nr. 4, Pos. 41.<lb/> </bibl>
+
+        <bibl><label>23</label> Eine vertiefte Kritik der Ansicht des Obersten Gerichts (z.B. wegen zuweitgehender die<lb/> ausdehnenden gerichtliche Auslegung vom Art. 11a des Gesetzes vom 1997, und sogar eines<lb/> "ungesundes Präzedenzfalls") hat M. Loik, Glosse zum Beschlusses des Obersten Gerichts<lb/> vom 19.11.2010, Europejski Przegląd Sądowy [Der Europäische Gerichtsrundschau] 2011,<lb/> Nr. 9, S. 47 unternommen.<lb/> </bibl>
+        <bibl><label>24</label> Diese Auffassung wurde in der Literatur und in anderen Urteilen des Obersten Gerichts<lb/> unterstützt;</bibl> <bibl>siehe -z.B. M. Nesterowicz, Glosse zum Urteil der Obersten Gerichts vom<lb/> 24.03.2001, I CSK 372/10, Orzecznictwo Sądów Polskich [Die Rechtsprechung der polnischen<lb/> Gerichte] 2012, Nr. 1, Pos. 3.<lb/> </bibl>
+        <bibl><label>25</label> Siehe das Urteil in der Fußnote Nr. 24.<lb/> </bibl>
+        <bibl><label>26</label> Siehe M. Nesterowicz, Projekt regulacji umowy o podróż w k.c. [Der Entwurf der Regelung des<lb/> Reisevertrags im ZGB] [in:] P. Cybula, J. Raciborski, Turystyka a prawo. Aktualne problemy<lb/> legislacyjne i konstrukcyjne [Tourismus und Recht Aktuelle Gesetzgebungs-und<lb/> Konstruktionsprobleme], Sucha Beskidzka-Kraków: Wyższa Szkoła Turystyki i Ekologii 2008,<lb/> S. 41.<lb/> </bibl>
+
+        <bibl><label>27</label> Lex 112275.<lb/> </bibl>
+
+        <bibl><label>28</label> Näher darüber z.B. Nesterowicz, Fußnote 20, S. 101-102.<lb/> </bibl>
+
+        <bibl><label>29</label> Siehe z.B. E. Karner, Ustalanie zadośćuczynienia za szkodę na osobie w wybranych systemach<lb/> prawnych [Feststellung der Genugtuung für den Schaden an der Person in ausgewählte<lb/> Rechtssystemen, [in:] A. Koch (Redakteur), Zadośćuczynienie za uszkodzenie ciała lub uszczerbek<lb/> na zdrowiu na tle innych systemów prawnych [Die Genugtuung in Falle der Körperverletzung und<lb/> Gesundheitsschädigung aus der Sicht anderer Rechtssysteme], Warszawa: Centrum Edukacji<lb/> Ubezpieczeniowej 2012, S. 69.<lb/> </bibl>
+
+      <bibl><label>30</label> Über die Steuerkonsequenzen, die die Auszahlung der Genugtuung für den "vertanen<lb/> Urlaub" auf Grund des außergerichtlichen Vergleiches bewirken könnte -siehe<lb/> M. Majkowska, Fiscus może domagać się podatku od odszkodowania za "zmarnowany urlop"<lb/> [Der Fiscus kann eine Steuer von der Entschädigung für den "vertanen Urlaub" fordern], Dziennik<lb/> Gazeta Prawna [Juristische Zeitung) vom 26-28.07.2013, S. B2.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

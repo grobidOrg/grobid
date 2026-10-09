@@ -1,0 +1,144 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.20956__halrev.v3i1.560">
+    <titleStmt>
+      <title level="a">Vulnerability of Elderly Women: Victim of Gender Discrimination</title>
+      <author>
+        <persName>
+          <forename>Subir Kumar</forename>
+          <surname>Roy</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="pfaffe">Milena Pfaffe</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2017</date>
+      <idno type="DOI">10.20956/halrev.v3i1.560</idno>
+      <ptr target="https://doi.org/10.20956/halrev.v3i1.560"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Subir Kumar Roy. (2017). Vulnerability of Elderly Women: Victim of Gender Discrimination. Hasanuddin Law Review, 3(1), 1. DOI: 10.20956/halrev.v3i1.560</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Vulnerability of Elderly Women: Victim of Gender Discrimination</title>
+          <author>
+            <persName>
+              <forename>Subir Kumar</forename>
+              <surname>Roy</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Hasanuddin Law Review</title>
+          <imprint>
+            <biblScope unit="volume">3</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page">1</biblScope>
+            <date when="2017">2017</date>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.20956/halrev.v3i1.560</idno>
+        <ptr target="https://doi.org/10.20956/halrev.v3i1.560"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-16T09:36:46.377568Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-65-gd393236aa</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-16T09:36:46.377568Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-17T10:19:45.713Z" status="unfinished" who="#pfaffe">
+      <note type="label">v2 (pfaffe)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-17T12:09:59.251Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-17T12:58:46.336Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-17T12:59:27.999Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-07-02T11:44:21.559Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-07-02T12:04:06.679Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label><lb/> Miriam Bernard, Judith Phillips, Linda Machin and<lb/> Val Harding Davies. (2000). Women Ageing: Changing<lb/> Identities, Challenging Myths. London: Routledge, p.<lb/> 10.<lb/> </bibl>
+
+        <bibl><label>2</label><lb/> Ibid<lb/> </bibl>
+        <bibl><label>3</label><lb/> Catherine A. MacKinnon. (1982). "Feminism, Marx-<lb/>ism, Method, and the State: An Agenda for Theo-<lb/>ry." Signs: Journal of Women in Culture and Soci-<lb/>ety, 7(3), 515-544.<lb/> </bibl>
+        <bibl><label>4</label><lb/> Ibid<lb/> </bibl>
+
+        <bibl><label>5</label><lb/> Babatunde, Ekundayo B, and Babatunde E. Durowaiye.<lb/> (2015). "The Conception of 'Sex' and 'Gender' as<lb/> Background to Inequities Faced by Women." The Jour-<lb/>nal of Pan African Studies, 7(8): 64-79.<lb/> </bibl>
+        <bibl><label>6</label><lb/> Ibid<lb/> </bibl>
+
+        <bibl><label>7</label><lb/> Report of Special Rapporteur on VAW 1995<lb/> </bibl>
+        <bibl><label>8</label><lb/> Radhika Coomarswamy. (2005). "Human Security and<lb/> Gender Violence." Economic and Political Weekly, 40,<lb/> 44/45: 4729-4736.<lb/> </bibl>
+
+        <bibl><label>9</label><lb/> Center for Policy Research (CPR) at the Maxwell<lb/> School of Syracuse University. "Quality of Life for All<lb/> Ages, By Design, A conversation with Patricia Moore."<lb/> Policy Brief. No. 46/2012.<lb/> </bibl>
+        <bibl><label>10</label><lb/> Ibid<lb/> </bibl>
+        <bibl><label>11</label><lb/> Ibid<lb/> </bibl>
+
+        <bibl><label>12</label><lb/> Hoffman. (2013). "Watchful Eye in Nursing Homes."<lb/> The New York Times. This article appears in print on<lb/> 11/19/2013, on page D1 of the NewYork edition with the<lb/> headline: Watchful Eye in Nursing Homes. Available<lb/> online at: https://well.blogs.nytimes.com/2013/11/18/<lb/> watchful-eye-in-nursing-homes/?_r=0 [Accessed on<lb/> 26th March, 2016].<lb/> </bibl>
+        <bibl><label>13</label><lb/> Mohd. Ahmed Khan vs Shah Bano Begum And Ors.<lb/> 1985 SCC (2) 556<lb/> </bibl>
+
+        <bibl><label>14</label><lb/> Danial Latifi and another v. Union of India.(2001) 7 SCC 740<lb/> </bibl>
+        <bibl><label>15</label><lb/> Khatoon Nisa v. State of U.P. and Ors. 2002 (6) SCALE<lb/> 165.<lb/> </bibl>
+        <bibl><label>16</label><lb/> "Shamim Bano vs Asraf Khan." Criminal Appeal No.<lb/> 820 of 2014 (Arising out of S.L.P. (Criminal) No. 4377<lb/> of 2012): Available online at: www.judis.nic.in. Ac-<lb/>cessed 26 th March, 2016<lb/> </bibl>
+        <bibl><label>17</label><lb/> Supra note 15<lb/></bibl>
+
+         BIBLIORAPHY<lb/>
+
+        <bibl>Babatunde, Ekundayo B, and Babatunde E.<lb/> Durowaiye. (2015). "The Conception<lb/> of 'Sex' and 'Gender' as Background<lb/> to Inequities Faced by Women." The<lb/> Journal of Pan African Studies, 7(8):<lb/> 64-79.<lb/></bibl>
+        <bibl> Catherine A. MacKinnon. (1982). "Femi-<lb/>nism, Marxism, Method, and the State:<lb/> An Agenda for Theory." Signs: Journal<lb/> of Women in Culture and Society, 7(3),<lb/> 515-544.<lb/></bibl>
+        <bibl> Center for Policy Research (CPR) at the<lb/> Maxwell School of Syracuse Univer-<lb/>sity. "Quality of Life for All Ages, By<lb/> Design, A conversation with Patricia<lb/> Moore." Policy Brief. No. 46/2012.<lb/></bibl>
+        <bibl> Danial Latifi and another v. Union of India.<lb/> (2001) 7 SCC 740<lb/></bibl>
+        <bibl> Hoffman. (2013). "Watchful Eye in Nursing<lb/> Homes." The New York Times. This ar-<lb/>ticle appears in print on 11/19/2013, on<lb/> page D1 of the NewYork edition with<lb/> the headline: Watchful Eye in Nursing<lb/> Homes.<lb/></bibl>
+        <bibl> Khatoon Nisa v. State of U.P. and Ors. 2002<lb/> (6) SCALE 165.<lb/> </bibl>
+
+        <bibl>Miriam Bernard, Judith Phillips, Linda<lb/> Machin and Val Harding Davies.<lb/> (2000). Women Ageing: Changing<lb/> Identities, Challenging Myths. Lon-<lb/>don: Routledge.<lb/></bibl>
+        <bibl> Mohd. Ahmed Khan vs Shah Bano Begum<lb/> And Ors. 1985 SCC (2) 556.<lb/></bibl>
+        <bibl> Radhika Coomarswamy. (2005). "Human<lb/> Security and Gender Violence." Eco-<lb/>nomic and Political Weekly, 40, 44/45:<lb/> 4729-4736.<lb/> </bibl>
+        <bibl>Shamim Bano vs Asraf Khan. Criminal Ap-<lb/>peal No. 820 of 2014 (Arising out of<lb/> S.L.P. Criminal. No. 4377 of 2012):<lb/> Available online at: www.judis.nic.in.<lb/> Accessed 26 th March, 2016.<lb/></bibl>
+        <bibl> Situation Analysis of the Elderly in India,<lb/> June 2011, prepared by Central Sta-<lb/>tistics Office, Ministry of Statistics &amp;<lb/> Programme Implementation, Govern-<lb/>ment of India.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

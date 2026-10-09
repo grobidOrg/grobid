@@ -1,0 +1,305 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.54648__eulr2016015">
+    <titleStmt>
+      <title level="a">Collective Redress: Broadening EU Enforcement through State Liability?</title>
+      <author>
+        <persName>
+          <forename>James</forename>
+          <surname>Marson</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="admin">Administrator</persName>
+        <resp>editor</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Kluwer Law International BV</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2016</date>
+      <idno type="DOI">10.54648/eulr2016015</idno>
+      <ptr target="https://doi.org/10.54648/eulr2016015"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>James Marson. (2016). Collective Redress: Broadening EU Enforcement through State Liability?. European Business Law Review, 27(Issue 3), 325-351. DOI: 10.54648/eulr2016015</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Collective Redress: Broadening EU Enforcement through State Liability?</title>
+          <author>
+            <persName>
+              <forename>James</forename>
+              <surname>Marson</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">European Business Law Review</title>
+          <imprint>
+            <biblScope unit="volume">27</biblScope>
+            <biblScope unit="issue">Issue 3</biblScope>
+            <biblScope unit="page" from="325" to="351">325-351</biblScope>
+            <date when="2016">2016</date>
+            <publisher>Kluwer Law International BV</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.54648/eulr2016015</idno>
+        <ptr target="https://doi.org/10.54648/eulr2016015"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-31T15:30:45.098086Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.8.2-71-g595835ed0</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-31T15:30:45.098086Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-31T15:49:30.808Z" status="extraction" who="#admin">
+      <note type="label">Extraction (use this)</note>
+      <desc>Renamed to Extraction (use this)</desc>
+    </change>
+    <change when="2026-04-20T14:13:10.476Z" status="unfinished" who="#cboulanger">
+      <note type="label">v3 (cboulanger)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-04-20T15:11:29.899Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-09-11T13:34:35.548Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-09-11T15:05:13.222Z" status="checked" who="#kazuyo">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-09-29T10:28:26.743Z" status="checked" who="#lfoppiano">
+      <note type="label">v5 (lfoppiano)</note>
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-09-29T10:29:17.187Z" status="approved" who="#lfoppiano">
+      <desc>1st pass done</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> Article 288 Treaty on the Functioning of the European Union (TFEU).<lb/> </bibl>
+      
+      <bibl><label>2</label> Articles 258-260 TFEU.<lb/> </bibl>
+      <bibl><label>3</label> The discretionary investigatory power is sometimes negatively viewed as enabling selective<lb/> enforcement. See Richard Rawlings, Engaged Elites Citizen Action and Institutional Attitudes in<lb/> Commission Enforcement, 6 European Law Journal 4, 10 (2000).<lb/> </bibl>
+      <bibl><label>4</label> Available in Article 259 TFEU, although, given the political ramifications for undertaking such an<lb/> action, its use (and success) has been very limited (the following cases are where this mechanism<lb/> has been used -Case 141/78 France v United Kingdom [1979] E.C.R. 2923; </bibl>
+      <bibl>Case C-388/95 Belgium<lb/> v Spain [2000] E.C.R. I-3123;</bibl>
+      <bibl>Case C-145/05 Spain v United Kingdom [2006] E.C.R. I-7917; </bibl>
+      <bibl>Case C-<lb/>364/10 Hungary v Slovakia).<lb/> </bibl>
+      <bibl><label>5</label> Article 260(3) TFEU.<lb/> </bibl>
+      
+      <!-- unclear if all the directives should be individual references -->
+      <!-- it looks actually one bibliographic source, not separate references - the other Directive numbers are the legislation being amended -->
+      <bibl><label>6</label> Regarding Directive 2010/78/EU of the European Parliament and of the Council of 24 November<lb/> 2010 amending Directives 98/26/EC, 2002/87/EC, 2003/6/EC, 2003/41/EC, 2003/71/EC, 2004/39/EC,<lb/> 2004/109/EC, 2005/60/EC, 2006/48/EC, 2006/49/EC and 2009/65/EC in respect of the powers of the<lb/> European Supervisory Authority (European Banking Authority), the European Supervisory Authority<lb/> (European Insurance and Occupational Pensions Authority) and the European Supervisory Authority<lb/> (European Securities and Markets Authority) (L 331/120).<lb/> </bibl>
+      
+      <bibl><label>7</label> In respect of Directive 2010/78/EU of the European Parliament and of the Council of 24 November<lb/> 2010 amending several Directives in respect of the powers of the European Supervisory Authority<lb/> (European Banking Authority), the European Supervisory Authority (European Insurance and<lb/> Occupational Pensions Authority) and the European Supervisory Authority (European Securities and<lb/> Markets Authority). </bibl>
+      
+      <bibl><label>9</label> http://ec.europa.eu/eu_law/docs/docs_infringements/annual_report_30/com_2013_726_en.pdf. p. 8<lb/> </bibl>
+      <bibl><label>10</label> See Robert Thompson, Opposition Through the Back Door in the Transposition of EU Directives,<lb/> 11 European Union Politics, 577, 592 (2010) 'The… states'… deviat[ion] is effectively reduced to zero<lb/> when the Commission explicitly supports a Directive's provision. Such support signals the<lb/> Commission's intention to monitor compliance stringently in Member States that express incentives to<lb/> deviate.'<lb/> </bibl>
+      
+      <bibl><label>11</label> Melanie Smith, Enforcement, Monitoring, Verification, Outsourcing: The Decline and Decline of the<lb/> Infringement Process, 14 European Law Review 777 (2008) and </bibl>
+      <bibl>Carol Harlow &amp; Richard Rawlings,<lb/> Accountability and Law Enforcement: The Centralised EU Infringement Procedure, 12 European Law<lb/> Review 447 (2006).<lb/> </bibl>
+      
+      <bibl><label>12</label> The lack of transparency in proceedings was raised by the European Parliament in 'Report on the<lb/> 25th Annual Report from the Commission on Monitoring the Application of Community Law (2007)'<lb/> A6-0245/2009, para 13.<lb/> </bibl>
+      <bibl><label>13</label> See Jonas Tallberg, Paths to Compliance: Enforcement, Management, and the European Union, 56<lb/> International Organization 609 (2002).<lb/> </bibl>
+      <bibl><label>14</label> And an increasingly important aspect of respect for the rule of law and the Commission's interests<lb/> in strengthening its enforcement in this area -see European Commission 'Communication from the<lb/> Commission to the European Parliament and the Council: A New EU Framework to Strengthen the<lb/> Rule of Law' Brussels, 11.3.2014 COM(2014) 158 final.<lb/> </bibl>
+      <bibl><label>15</label> See Christian B. Jensen, Implementing Europe: A Question of Oversight, 8 European Union Politics<lb/> 451, 453 (2007).<lb/> </bibl>
+      <bibl><label>16</label> See Tobias Lock Is Private Enforcement of EU Law Through State Liability a Myth? An Assessment<lb/> 20 Years After Francovich, 49 Common Market Law Review 1675 (2012).<lb/> </bibl>
+      <bibl><label>17</label> Communication from the Commission on Implementing European Community Environmental Law,<lb/> COM/2008/0773 final -http://eur-lex.europa.eu/LexUriServ.do?uri=CELEX:52008DC0773:EN:NOT<lb/> </bibl>
+      <bibl><label>18</label> Case C-144/04 Werner Mangold v Rüdiger Helm [2005] E.C.R. I-10013.<lb/> </bibl>
+      <bibl><label>19</label> Although see Lisa Schultz Bressman &amp; Abbe R. Gluck, Statutory Interpretation from the Inside -An<lb/> Empirical Study of Congressional Drafting, Delegation, and the Canons: Part II, 66 Stanford Law<lb/> Review 725 (2014) for an analysis and critique of the theories underpinning the textualist and<lb/> purposivist approaches to statutory interpretation. The authors conclude that an alternative paradigm<lb/> is required, adopting a pragmatic approach to interpretation.<lb/> </bibl>
+      <bibl><label>20</label> Joined Cases C-6/90 and C-9/90 Francovich and Bonifaci and others v Italy [1991] E.C.R. I-5357.<lb/> </bibl>
+      
+      <bibl><label>21</label> For a discussion of the EU utilizing rights, enforceable by individuals, to establish policy without the<lb/> associated costs, see R. Daniel Kelemen, Suing for Europe: Adversarial Legalism and European<lb/> Governance, Comparative Political Studies 39, 101 (2006).<lb/> </bibl>
+      <bibl><label>22</label> See David Vogel, The Hare and the Tortoise Revisited: The New Politics of Consumer and<lb/> Environmental Regulation in Europe, 33 British Journal of Political Science 557 (2003).<lb/> </bibl>
+      
+      <bibl><label>23</label> In the UK, for example, in the first 20 years of the availability of redress through State Liability, a<lb/> mere 22 cases were heard before English courts -R v Secretary of State for the Home Department ex<lb/> p. Gallagher [1996] 2 CMLR. 951; </bibl>
+      <bibl>Bowden v South West Water Services Ltd [1998] 3 CMLR. 330; </bibl>
+      <bibl>R v<lb/> Ministry of Agriculture, Fisheries and Food ex p. Lay and Gage [1998] COD 387;</bibl> 
+      <bibl>Boyd Line<lb/> Management Services Ltd v Ministry of Agriculture, Fisheries and Food (No.1) [1999] Eu. L.R. 44;</bibl> 
+      <bibl>R<lb/> v Department of Social Security Ex p. Scullion [1999] 3 CMLR. 798;</bibl> 
+      <bibl>R v Secretary of State for<lb/> Transport ex p. Factortame Ltd (No.5) [2000] 1 AC 524;</bibl> 
+      <bibl>Evans v Secretary of State for the<lb/> Environment, Transport and the Regions [2001] EWCA Civ 32;</bibl> 
+      <bibl>R v Secretary of State for Transport<lb/> ex p. Factortame Ltd (No.6) [2001] 1 WLR 942;</bibl> 
+      <bibl>Three Rivers DC v Bank of England (No.3) [2003] 2<lb/> AC 1;</bibl> 
+      <bibl>Phonographic Performance Ltd v Department of Trade and Industry [2004] EWHC 1795 (Ch);<lb/> </bibl>
+      <bibl>Sayers v Cambridgeshire CC [2006] EWHC 2029 (QB);</bibl>
+      <bibl>Sempra Metals Ltd (formerly<lb/> Metallgesellschaft Ltd) v Inland Revenue Commissioners [2007] UKHL 34;</bibl> 
+      <bibl>Byrne v Motor Insurers'<lb/> Bureau [2008] EWCA Civ 574;</bibl>
+      <bibl>Moore v Secretary of State for Work and Transport [2008] EWCA Civ<lb/> 750;</bibl> 
+      <bibl>Spencer v Secretary of State for Work and Pensions [2008] EWCA Civ 750;</bibl> 
+      <bibl>FJ Chalke Ltd v<lb/> Revenue and Customs Commissioners [2009] EWHC 952 (Ch);</bibl> 
+      <bibl>Cooper v Attorney General [2010]<lb/> EWCA Civ 464;</bibl>
+      <bibl>R (on the application of MK (Iran)) v Secretary of State for the Home Department<lb/> [2010] EWCA Civ 115;</bibl> 
+      <bibl>Test Claimants in the FII Group Litigation v Revenue and Customs<lb/> Commissioners [2010] EWCA Civ 103;</bibl>
+      <bibl>R (on the application of Negassi) v Secretary of State for the<lb/> Home Department [2011] EWHC 386 (Admin); Test Claimants in Thin Cap Group Litigation v<lb/> Revenue and Customs Commissioners [2011] EWCA Civ 127; </bibl>
+      <bibl>Harmon CFEM Facades (UK) Ltd v<lb/> Corporate Officer of the House of Commons 67 Con. L.R. 1. Of these, in 12 cases was the claimant<lb/> an individual, and in total, 9 of the 22 cases were successful in obtaining a remedy. </bibl>
+      <bibl>The more recent<lb/> case of Delaney v Secretary of State [2014] EWHC 1785 (QB) and the judgment regarding the<lb/> element of discretion (or lack thereof) for the State and its subsequent liability gives hope for future<lb/> cases.<lb/> </bibl>
+      
+      <bibl><label>24</label> The reality is that most do not enforce their rights. Specifically in relation to tortious liability,<lb/> research presented by Richard E. Miller &amp; Austin Sarat, Grievances, Claims and Disputes: Assessing<lb/> the Adversary Culture, 15 Law &amp; Society Review 525, 544-45 (1981) demonstrated that, in the US,<lb/> merely 3.8% of those individuals with a tort grievance actually enforce their rights in court. That figure<lb/> could be even lower in the UK.<lb/> </bibl>
+      <bibl><label>25</label> See, for way as an example of the Danish Consumer Ombudsman scheme -'Report Paves the<lb/> Way for Class Action Lawsuits on Behalf of Danish Consumers' http://www.forbrug.dk. Also, a system<lb/> whereby claimants engaged in the same Member State, experiencing the same legal issue and, often,<lb/> experiencing the same level of financial loss would be likely to benefit from a more efficient use of<lb/> legal resources and would result in 'judicial economy' for the legal system in a reduction in the<lb/> numbers of individual claims necessary to achieve the same result. In the UK, costs associated with<lb/> access to courts and justice were proportioned accordingly -Court Fees: 3-5%; Bailiffs' Fees: 3-5 %;<lb/> Lawyers' Fees: 70-90%; Experts' Fees: 5-10%; Witness Compensation: 2-5%; and<lb/> Translation/Interpretation Fees: 5-7% (Jean Albert "Study on the Transparency of Costs of Civil<lb/> Justice Proceedings in the European Union" (EC Commission, DG for Justice, Freedom and Security<lb/> 2007), 9).<lb/> </bibl>
+      <bibl><label>26</label> Hans-W, Micklitz &amp; Astrid Stadler, The Development of Collective Legal Actions in Europe,<lb/> Especially in German Civil Procedure, 17 European Business Law Review 1481 (2006).<lb/></bibl>
+      
+      <bibl><label>27</label><lb/> 'Towards a Coherent European Approach to Collective Redress.' Available at<lb/> http://ec.europa.eu/dgs/health_consumer/dgs_consultations/ca/replies_collective_redress_consultatio<lb/> n_en.htm.<lb/> </bibl>
+      
+      <bibl><label>28</label> ibid. Answer to Q33 in the Commission consultation document.<lb/> </bibl>
+      
+      <bibl><label>29</label> Council Directive 2000/78/EC of 27 November 2000 establishing a general framework for equal<lb/> treatment in employment and occupation, OJ L 303, Art 1, and transposed in the UK through the<lb/> Disability Discrimination Act 1995 and the Equality Act 2010.<lb/> </bibl>
+      <bibl><label>30</label> Council Directive 2000/78/EC of 27 November 2000 establishing a general framework for equal<lb/> treatment in employment and occupation, OJ L 303, Art 1.<lb/> </bibl>
+      <bibl><label>31</label> Council Directive 1999/70/EC of 28 June 1999 concerning the framework agreement on fixed-term<lb/> work concluded by ETUC, UNICE and CEEP OJ L 175/43, and transposed in the UK through The<lb/> Fixed-term Employees (Prevention of Less Favourable Treatment) Regulations 2002.<lb/> </bibl>
+      <bibl><label>32</label> Council Directive 97/81/EC of 15 December 1997 concerning the Framework Agreement on part-<lb/>time work concluded by UNICE, CEEP and the ETUC OJ L 14 and transposed in the UK through The<lb/> Part-time Workers (Prevention of Less Favourable Treatment) Regulations 2000.<lb/> </bibl>
+      <bibl><label>33</label> Council Directive 77/187/EEC of 14 February 1977 on the approximation of the laws of the Member<lb/> States relating to the safeguarding of employees' rights in the event of transfers of undertakings,<lb/> businesses or parts of businesses, OJ L 061, and Council Directive 2001/23/EC of 12 March 2001 on<lb/> the approximation of the laws of the Member States relating to the safeguarding of employees' rights<lb/> in the event of transfers of undertakings, businesses or parts of undertakings or businesses, OJ L 82.<lb/> </bibl>
+      <bibl><label>34</label> Council Directive 98/59/EC of 20 July 1998 on the approximation of the laws of the Member States<lb/> relating to collective redundancies, and transposed in the UK through The Trade Union and Labour<lb/> Relations (Consolidation) Act 1992, amended by the Collective Redundancies and Transfer of<lb/> Undertakings (Protection of Employment) (Amendment) Regulations 1995 and The Transfer of<lb/> Undertakings (Protection of Employment) Regulations 1981, amended by the Collective<lb/> Redundancies and Transfer of Undertakings (Protection of Employment) (Amendment) Regulations<lb/> 1995 and 1999.<lb/> </bibl>
+      <bibl><label>35</label> Article 267 TFEU.<lb/> </bibl>
+      <bibl><label>36</label> Although others have already discussed the concept of extending Francovich-type damages<lb/> actions beyond the mere award of monetary compensation -see in particular Michael Dougan, The<lb/> Francovich Right to Reparation: Reshaping the Contours of Community Remedial Competence, 6(1)<lb/> European Public Law 103 (2000).<lb/> </bibl>
+      
+      <bibl><label>37</label> The Court of Justice, had, in Case 6/60 Humblet v Belgium [1960] E.C.R. 559, 569 established the<lb/> duty on Member States to make good damage incurred due to national laws conflicting with EU law.<lb/> </bibl>
+      <bibl><label>38</label> Fn 20 at [33].<lb/> </bibl>
+      <bibl><label>39</label> Despite arguments as to its success (see e.g. Roberto Caranta, Judicial Protection Against Member<lb/> States: A New Jus Commune Takes Shape, 32 Common Market Law Review 703, 725 (1995);<lb/> </bibl>
+      <bibl>Fernand Schockweiler, La responsabilité de l'autorité nationale en cas de violation du droit<lb/> communautaire, 28 Revue trimestrielle de droit européen 27, 42 (1992), it is arguable that such<lb/> effectiveness has never been realised.<lb/> </bibl>
+      <bibl><label>40</label> Although a second set of legal proceedings outside of the normal 'private' sphere may 'hardly be<lb/> compatible with the requirement of an effective legal remedy' Case C-316/93 Vaneetveld v SA Le<lb/> Foyer [1994] E.C.R. I-763, at [775], per Jacobs AG.<lb/> </bibl>
+      <bibl><label>41</label> In Application des Gaz SA v Falks Veritas Ltd [1974] 1 Ch 381, Lord Denning had suggested (obiter<lb/> [395-6]) the creation of a new form of tort law to provide an effective remedy for such breaches.<lb/> </bibl>
+      <bibl><label>42</label> Three Rivers District Council v Bank of England (No.3) [2000] UKHL 33; [2003] 2 AC 1.<lb/> </bibl>
+      <bibl><label>43</label> The requirement of a finding of fault was rejected by the Court of Justice in Brasserie du Pêcheur v<lb/> Germany [1996] at [56].</bibl> 
+      
+      <bibl><label>45</label> See comments by Judge Toulmin QC, R v The Secretary of State for Transport ex parte<lb/> Factortame Ltd. (No.7) [2000] EWHC (Tech) 179 at [176].<lb/> </bibl>
+      <bibl><label>46</label> Breach of statutory duty was used by Lord Diplock in Garden Cottage Foods Ltd v Milk Marketing<lb/> Board [1984] AC 130 [141] when identifying potential liability for breach of Art. 86 EEC Treaty (now<lb/> Art. 102 TFEU) as applicable to individuals who suffered loss.<lb/> </bibl>
+      <bibl><label>47</label> X v Bedfordshire CC [1995] 2 AC 633.<lb/> </bibl>
+      
+      <bibl><label>48</label> Paula Giliker, English Tort Law and the Challenge of Francovich Liability: 20 Years On, 128 The<lb/> Law Quarterly Review 541, 546 (2012).<lb/> </bibl>
+      <bibl><label>49</label> A national system establishing and facilitating the award of a remedy was required, however, given<lb/> the unique nature of the effects of Francovich, and its adoption by Member States to be lukewarm at<lb/> best, by 1997, no Member State had introduced any legislative measures to give effect to this<lb/> development in EU law (SOU 'Det Allmannas Skadestandsansvar vid Overtradelse av EG-regler'<lb/> 1997, 194).<lb/> </bibl>
+      <bibl><label>50</label> Although not every breach / infringement of EU law by a Member State constitutes a tort -Borgouin<lb/> S. A. and Others v Ministry of Agriculture, Fisheries and Food [1986] QB 716.<lb/> </bibl>
+      <bibl><label>51</label> Francovich Fn 20 at [36].</bibl> 
+      <bibl><label>53</label> A national court must not make it impossible of excessively difficult for a party to exercise his or her<lb/> EU rights -see Francovich [1991] Fn 2 at [33] and [39].</bibl> 
+      <bibl>Further, In Autologic Holdings Plc v Inland<lb/> Revenue Commissioners [2004] EWCA Civ 690 [2004] 2 All ER 957 Gibson LJ stated: 'The<lb/> importance of the principle of effectiveness in Community law cannot be overstated. Any provision of<lb/> national law which makes the exercise of a right conferred by Community law practically impossible or<lb/> extremely difficult cannot prevail.' 25.<lb/> </bibl>
+      <bibl><label>54</label> Case 453-99 Courage Ltd. v Crehan [2001] E.C.R. I-6297.<lb/> </bibl>
+      <bibl><label>55</label> Joined Cases C-295-298/04 Vincenzo Manfredi v Lloyd Adriatico Assicurazioni SpA [2006] E.C.R.<lb/> I-6619.<lb/> </bibl>
+      
+      <bibl><label>56</label> Department of Business Innovation &amp; Skills (2012) 'Trade Union Membership 2012 Statistical<lb/> Bulletin May 2013, p. 6.<lb/> </bibl>
+      <bibl><label>57</label> Proposal for a Directive of the European Parliament and of the Council on certain rules governing<lb/> actions for damages under national law for infringements of the competition law provisions of the<lb/> Member States and of the European Union. COM(2013) 404, 11.6.2013.<lb/> </bibl>
+      <bibl><label>58</label> For a comparative study of the effectiveness of collective redress in competition law see Clifford A.<lb/> Jones, Private Enforcement of Antitrust Law in the EU, UK and USA (Oxford University Press 1999).<lb/> </bibl>
+      <bibl><label>59</label> See Judith Resnik, Money Matters: Judicial Market Interventions Creating Subsidies and Awarding<lb/> Fees and Costs in Individual and Aggregate Litigation, 148 University of Pennsylvania Law Review<lb/> 2119, 2144-6 (2000) where 'By the 1960s, lawyers, judges, academics and legislators began to<lb/> conceive of civil justice as having characteristics readily associated with criminal justice and<lb/> administrative systems:.. Creating incentives for entrepreneurial private actors to use the civil justice<lb/> system to partake in the work of public norm enforcement offered an alternative to centralizing power<lb/> exclusively within the government.'<lb/> </bibl>
+      
+      <bibl type="footnote"><label>60</label> France, for example, has recently established a system of collective redress into its Consumer<lb/> Code -albeit restricted to State authorised consumer associations.<lb/> </bibl>
+      
+      <bibl><label>61</label> Hans-W. Micklitz &amp; Astrid Stadler, The Development of Collective Legal Actions in Europe,<lb/> Especially in German Civil Procedure, 17 European Business Law Review 1473 (2006). </bibl>
+      
+      <bibl><label>63</label> Many defendants value collective redress due to the finality of the action with no fear of subsequent<lb/> claims from affected individuals or a requirement to maintain a damages fund beyond the life of the<lb/> collective claim and appeals -see Francis E. McGovern, Distribution of Funds in Class Actions--<lb/>Claims Administration, 35 Journal of Corporation Law 123 (2009).<lb/> </bibl>
+      
+      <bibl><label>64</label> BEUC (2007) Private Group Actions -Taking Europe Forward. BEUC Reflections on a Future<lb/> European Collective Redress Scheme for Individual Damage Claims p. 15. Available at<lb/> http://ec.europa.eu/dgs/health_consumer/dgs_consultations/ca/replies_collective_redress_consultatio<lb/> n_en.htm.<lb/> </bibl>
+      <bibl><label>65</label> See Albert A. Foer &amp; Jonathan W. Cuneo, Toward an Effective System of Private Enforcement in<lb/> Albert A. Foer &amp; Jonathan W. Cuneo (eds) The International Handbook on Private Enforcement of<lb/> Competition Law 605 (Edward Elgar Publishing 2010).<lb/> </bibl>
+      
+      <bibl><label>66</label> ibid at 607-8.<lb/> </bibl>
+      <bibl><label>67</label> A follow-on action occurs where an infringement of competition law has been found by a<lb/> competition authority (for example the European Commission and/or an industry-sector regulator).<lb/> The claimant must, however, demonstrate how the claim relates to his/her own case. For further<lb/> developments on this, and the boundaries for such claims, see Case C 557/12 Kone AG and others<lb/> v ÖBB-Infrastruktur AG 5 th June 2014.<lb/> </bibl>
+      
+      <bibl><label>68</label> As reported in The Law Society response to the EU Commission consultation document Towards a<lb/> Coherent European Approach to Collective Redress (2011), 9-10. Available at<lb/> http://ec.europa.eu/dgs/health_consumer/dgs_consultations/ca/replies_collective_redress_consultatio<lb/> n_en.htm.<lb/> </bibl>
+      
+      <bibl><label>69</label> See Deborah R. Hensler, Nicholas M. Pace, Bonnie Dombey-Moore, Elizabeth Giddens, Jennifer<lb/> Gross &amp; Erik Moller, Class Action Dilemmas: Pursuing Public Goals for Private Gains (RAND Institute<lb/> for<lb/> Civil<lb/> Justice<lb/> 2000)<lb/> at<lb/> 15-18,<lb/> available<lb/> at<lb/> http://www.rand.org/pubs/monograph_reports/MR969/index.html.<lb/> </bibl>
+      
+      <bibl><label>70</label> For example, in the US, Rule 11 of the Federal Rules of Civil Procedure was established to ensure<lb/> that claims presented in federal courts have merit (are not frivolous) and are not brought for an<lb/> improper purpose -although see Julia K. Cowles, Rule 11 of the Federal Rules of Civil Procedure and<lb/> the Duty to Withdraw a Baseless Pleading, 56 Fordham Law Review 697, 700 (1988) for a<lb/> demonstration of the general lack of effectiveness of the Rule in deterring such claims and how US<lb/> class action claims fails to lead to benefits to the claimants (consumers and citizens).<lb/> </bibl>
+      <bibl><label>71</label> Whilst it is frequently noted that private individuals to class action claims rarely obtain a meaningful<lb/> remedy whilst lawyers representing the group obtain very large payments for their services, see Brian<lb/> T. Fitzpatrick, An Empirical Study of Class Action Settlements and their Fee Awards, 7 Journal of<lb/> Empirical Legal Studies 811 (2010) and Theodore Eisenberg &amp; Geoffrey P. Miller, Attorney Fees and<lb/> Expenses in Class Action Settlements: 1993-2008, 7 Journal of Empirical Legal Studies 248, 262, 265<lb/> (2010) which demonstrated that lawyers' fees were 12% for cases where recovery of damages<lb/> exceeded $175.5 million (and 23% for claims involving significant smaller awards).<lb/> </bibl>
+      <bibl><label>72</label> Referred to 'nuisance settlements theory', see Brief of the American Bar Association as Amicus<lb/> Curiae in Support of Neither Petitioners Nor Respondents at 10-11, Bell Atl. Corp. v Twombly, 550 US<lb/> 544 (2007) (No. 05-1126).<lb/> </bibl>
+      <bibl><label>73</label> Referred to as 'hydraulic pressure theory', see Charles B. Casper, The Class Action Fairness Act's<lb/> Impact on Settlements, 20 Antitrust 26 (2005).<lb/> </bibl>
+      
+      <bibl type="footnote"><label>74</label> Which gives effect to the provisions of the Recommendation regarding collective redress in relation<lb/> to breach of anti-trust / competition laws.<lb/> </bibl>
+      
+      <bibl><label>75</label> See Schedule 8, Part 1.<lb/> </bibl>
+      <bibl><label>76</label> A limited right for representative groups / trade associations to take action on behalf of consumers,<lb/> on an opt-out basis, through an amended Competition Act 1998 (s.47B).<lb/> </bibl>
+      <bibl><label>77</label> See Richard A. Epstein, Class Actions: Aggregation, Amplification and Distortion, University of<lb/> Chicago Legal Forum, 475 (2003).<lb/> </bibl>
+      
+      <bibl><label>78</label> USDAW v Ethel Austin Ltd (In Administration) [2013] UKEAT/0547/12/KN, and USDAW and Wilson v<lb/> Unite the Union, WW Realisation 1 Ltd and Secretary of State for Business, Innovation &amp; Skills [2013]<lb/> UKEAT/0548/12/KN.<lb/> </bibl>
+      <bibl><label>79</label> Case C-484/04 Commission v United Kingdom [2006] IRLR 888.<lb/> </bibl>
+      <bibl><label>80</label> Compare the approaches taken in Rowstock Ltd v Jessemey [2013] ICR 807 and Onu v Akwiwu &amp;<lb/> Anor [2013] ICR 1039 and the necessity of judicial acrobatics to comply with EU law.<lb/> </bibl>
+      <bibl><label>81</label> UK Competition Law Association (2011) Response to European Commission's Consultation on<lb/> Collective Redress www.competitionlawassociation.com (ukmatters: 18238974.3) April, 2.3(b).<lb/> </bibl>
+      <bibl><label>82</label> Califano v Yamasaki, 442 US 682, 701 (1979).<lb/> </bibl>
+      <bibl><label>83</label> Ortiz v Fibreboard Corp., 527 US 815, 860 (1999).<lb/> </bibl>
+      
+      <bibl><label>84</label> This is true, but it is also quite evident that public methods of fining companies for breaches of the<lb/> law have, often, been largely ineffective in controlling bad behavior, have not led to a deterrence to<lb/> many large companies, and there is certainly not an over-deterrence that some commentators have<lb/> suggested could be the ultimate result of regulation through collective redress. See Centre for<lb/> European Policy Studies et al., Making Antitrust Damages Actions More Effective in the EU: Welfare<lb/> Impact and Potential Scenarios, at 28, Contract DG Comp/2006/A3/012 final (Dec. 21, 2007).<lb/> </bibl>
+      <bibl><label>85</label> Christopher Hodges, Multi-Party Actions: A European Approach, Duke Journal of Comparative and<lb/> International Law 321, 341 (2001).<lb/> </bibl>
+      <bibl><label>86</label> To counteract the potential problems of the deterrence effect of collective redress, the US Supreme<lb/> Court identified that 'the purpose of giving private parties treble-damage and injunctive remedies was<lb/> not merely to provide private relief, but was to serve as well the high purpose of enforcing the antitrust<lb/> laws' Zenith Radio Corp. v Hazeltine Research, Inc. 395 US 100, 130-31 (1969).<lb/> </bibl>
+      <bibl><label>87</label> Centre for European Policy Studies et al., Making Antitrust Damages Actions More Effective in the<lb/> EU: Welfare Impact and Potential Scenarios, at 28, Contract DG Comp/2006/A3/012 final (Dec. 21,<lb/> 2007), 301.<lb/> </bibl>
+      
+      <bibl><label>88</label> See fn. 23. </bibl>
+      
+      <bibl><label>90</label> Deterrence can be exhibited in many ways, including negative publicity and the effects on<lb/> reputation, whilst also encompassing financial penalties which may have a broader effect on private<lb/> organisations involved in wrongdoing. As a way of an example of the effectiveness of this second<lb/> example of the deterrent effect of collective interests, Lande and Davis, citing results of an empirical<lb/> research project involving 40 private anti-trust class-action claims in the US, found that the amounts<lb/> recovered in damages by private individuals exceeded the aggregate amount of fines imposed by<lb/> public bodies in the same period of time. Robert H. Lande &amp; Joshua P. Davis, Benefits from Private<lb/> Antitrust Enforcement: An Analysis of Forty Cases, 42 University of San Francisco Law Review 879,<lb/> 906 (2008).<lb/> </bibl>
+      
+      <bibl><label>91</label> See Catherine M. Sharkey, Punitive Damages as Societal Damages, 113 Yale Law Journal 347<lb/> (2003).<lb/> </bibl>
+      <bibl><label>92</label> However -see Francis E. McGovern, Punitive Damages and Class Actions, 70 Louisiana Law<lb/> Review 435, 462 (2010) for an opposite view 'Whether called "economic," "extra compensatory,"<lb/> "exemplary," or "punitive," these global damages would result in tortious defendants being held<lb/> responsible for all the harm they cause rather than only the subset of harm calculated from the<lb/> damages won by opportunistic plaintiffs.'<lb/> </bibl>
+      <bibl><label>93</label> It is seen as a mechanism not so concerned with the compensation of claimants' losses but<lb/> principally aimed at retribution and deterring wrongful / harmful conduct -Exxon Shipping Co. v<lb/> Baker, 128 Ct. 2605, 2621 (2008).<lb/> </bibl>
+      <bibl><label>94</label> Punitive damages should only be awarded in cases where the defendant's actions have been so<lb/> reprehensible as to warrant 'advanced' sanction and punishment -State Farm Mut. Auto Ins. Co. v<lb/> Campbell, 538 U.S. 408, 427 (2003).<lb/> </bibl>
+      
+      <bibl><label>95</label> Browning-Ferris Indus. of Vt., Inc. v Kelco Disposal, 492 U.S. 257, 275 (1989).<lb/> </bibl>
+      <bibl><label>96</label> Fn 92.<lb/> </bibl>
+      <bibl><label>97</label> ibid at 452-453.<lb/> </bibl>
+      
+      <bibl><label>98</label> Sacha Prechal &amp; Rob J.G.M. Widdershoven, Effectiveness or Effective Judicial Protection: A Poorly<lb/> Articulated Relationship, in: Tristan Baumé et al. (eds.), Today's Multi-layered Legal Order: Current<lb/> Issues and Perspectives, 283 (Zutphen: Paris 2011).<lb/> </bibl>
+      <bibl><label>99</label> Case C-268/06 Impact v Minister for Agriculture and Food and others [2008] E.C.R. I-2483.<lb/> </bibl>
+      <bibl><label>100</label> Case C-279/09 DEB v Germany [2010] E.C.R. I-13849.<lb/> </bibl>
+      <bibl><label>101</label> Case C-12/08 Mono Car Styling SA (in liquidation) v Odemis and others [2009] E.C.R. I-6653.<lb/> </bibl>
+      <bibl><label>102</label> Joined Cases C-317/08 to C-320/08 Alassini and Others v Telecom Italia [2010] E.C.R. I-2213,<lb/> and </bibl>
+      <bibl>Case C-418/11 Texdata Software GmbH [2013] ECR I-0000.<lb/> </bibl>
+      <bibl><label>103</label> For a broader discussion of primacy and procedural autonomy see René Barents, The Precedence<lb/> of EU Law from the Perspective of Constitutional Pluralism, 5 European Constitutional Law Review, 5,<lb/> 421 (2009), and </bibl>
+      <bibl>Koen Lenaerts &amp; Tim Corthaut, Of Birds and Hedges: the Role of Primacy in Invoking<lb/> Norms of EU Law, 31 European Law Review, 287 (2006).<lb/> </bibl>
+      
+      <bibl><label>105</label> White Paper on Damages Actions for Breach of the EC Antitrust Rules COM (2008) 165 final (2<lb/> April 2008) 1.1, at [2].<lb/> </bibl>
+      <bibl><label>106</label> Draft Commission Recommendation on common principles for injunction and compensatory<lb/> collective redress mechanisms in the Member States concerning violations of rights granted under<lb/> Union Law, C (2013) 3539/3, 11 June 2013.<lb/> </bibl>
+      <bibl><label>107</label> As the Recommendation procedure is not binding, but is of politically persuasive force.<lb/> </bibl>
+      
+      <bibl><label>109</label> Although, given the often long periods between enactment of a national implementing law and a<lb/> subsequent analysis of judicial enquiry in a related claim, gathering sufficient information to<lb/> demonstrate the State's deliberate non-compliance can be problematic -see Delaney v Secretary of<lb/> State [2014] EWHC 1785 (QB) paras 94-101.<lb/> </bibl>
+      <bibl><label>110</label> Per Case C-536-11 Bundeswettbewerbsbehorde v Donau Chemie AG and others (2013) E.C.R. I-<lb/>0000, paras 46 and 47.<lb/> </bibl>
+      <bibl><label>111</label> In an opinion delivered on 7 February 2013 in Donau Chemie (n 89) A-G Jääskinen stated: '… the<lb/> principle of effective judicial protection laid down in Article 47 of the Charter comprises various<lb/> elements; in particular, the rights of the defence, the principle of equality of arms, the right of access<lb/> to a tribunal and the right to be advised, defended and represented… Hence, limiting availability of<lb/> critical evidential material undermines the right of litigants to a judicial determination of their dispute. It<lb/> also impacts on their rights to bring cases effectively.' (paras 52 and 53).<lb/> </bibl>
+      <bibl><label>112</label> As in the US, for example, with the US Federal Rules of Civil Procedure which at Rule 23(a)<lb/> provides for the satisfaction of four criteria applicable to all class action claims (see Amchem Prods. v<lb/> Windsor, 521 US 591, 613 (1997): 1) the numerosity of the class; a commonality of the class in<lb/> relation to questions of law or fact; 3) a typicality of the class members' claim; and 4) adequacy of the<lb/> legal representation afforded the members of the class in relation to their interests.<lb/> </bibl>
+      
+      <bibl><label>113</label> J. S. Davidson 'Actions for Damages in the English Courts for Breach of EEC Competition Law'<lb/> (1985) 34(1) International and Comparative Law Quarterly 183.<lb/> </bibl>
+      <bibl><label>114</label> Margaret Fordham, Breach of Statutory Duty: A Diminishing Tort, Singapore Journal of Legal<lb/> Studies 370 (1996).<lb/> </bibl>
+      <bibl><label>115</label> Barry J. Rodger &amp; Angus MacCulloch, Community Competition Law Enforcement, Deregulation<lb/> and Re-regulation: The Commission, National Authorities and Private Enforcement, 4(3) Columbia<lb/> Journal of European Law 610 (1998).<lb/> </bibl>
+      <bibl><label>116</label> See Case C-392/93 R v HM Treasury, ex parte BT [1996] QB 615) and the commentary of the<lb/> Court of Justice in Brasserie du Pêcheur (see paras 43 and 44).<lb/> </bibl>
+      <bibl><label>117</label> Joined Cases C-178, 179 and 188-190/94 Dillenkofer v Federal Republic of Germany [1996]<lb/> E.C.R. I-4845.<lb/> </bibl>
+      <bibl><label>118</label> See R (on the application of Negassi) v Secretary of State for the Home Department [2013] EWCA<lb/> Civ 15.<lb/> </bibl>
+      <bibl><label>119</label> Roe v Sheffield City Council [2004] QB 653.<lb/> </bibl>
+      
+      <bibl><label>120</label> In torts if not contract, as famously seen in Spartan Steel &amp; Alloys Ltd v Martin &amp; Co (Contractors)<lb/> Ltd [1973] 1 QB 27 which demonstrates the requirement for economic losses as recoverable when<lb/> associated with physical loss. However, Hedley Byrne &amp; Co Ltd v Heller &amp; Partners Ltd [1964] AC 465<lb/> stands as the exception here.<lb/> </bibl>
+      <bibl><label>121</label> Crehan v Inntreprenneur Pub Co [2004] EWCA Civ 637. </bibl>
+      
+      <bibl><label>123</label> Case 26/62 Van Gend en Loos v Nederlandse Administratie der Belastingen [1963] E.C.R. 1,<lb/> [1963] CMLR 105.<lb/> </bibl>
+      
+      <bibl><label>124</label> Although such a methodology has been established and applied to collective redress in consumer<lb/> protection -see European Commission -DG SANCO 'Evaluation of the effectiveness and efficiency<lb/> of collective redress mechanisms in the European Union' Final Report. Part I: Main Report Submitted<lb/> by:<lb/> Civic<lb/> Consulting<lb/> (Lead)<lb/> and<lb/> Oxford<lb/> Economics<lb/> (available<lb/> at<lb/> http://ec.europa.eu/consumers/redress_cons/finalreportevaluationstudypart1-final2008-11-26.pdf) at<lb/> [136].</bibl>
+    </listBibl>
+  </text>
+</TEI>

@@ -1,0 +1,208 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.19195__0524-4544.337.2">
+    <titleStmt>
+      <title level="a">Networking of legal and organizational solutions in energy transition</title>
+      <author>
+        <persName>
+          <forename>Agnieszka</forename>
+          <surname>Chrisidu-Budnik</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Uniwersytet Wrocławski</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2024</date>
+      <idno type="DOI">10.19195/0524-4544.337.2</idno>
+      <ptr target="https://doi.org/10.19195/0524-4544.337.2"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Agnieszka Chrisidu-Budnik. (2024). Networking of legal and organizational solutions in energy transition. Prawo, 337, 11-29. DOI: 10.19195/0524-4544.337.2</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Networking of legal and organizational solutions in energy transition</title>
+          <author>
+            <persName>
+              <forename>Agnieszka</forename>
+              <surname>Chrisidu-Budnik</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Prawo</title>
+          <imprint>
+            <biblScope unit="volume">337</biblScope>
+            <biblScope unit="page" from="11" to="29">11-29</biblScope>
+            <date when="2024">2024</date>
+            <publisher>Uniwersytet Wrocławski</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.19195/0524-4544.337.2</idno>
+        <ptr target="https://doi.org/10.19195/0524-4544.337.2"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:23:59.249109Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:23:59.249109Z" status="extraction">
+      <note type="label">2.Mengjiao</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-02T12:48:12.421Z" status="extraction" who="#schulze">
+      <desc>For reservation; will be processed when batch 2 is ready for processing</desc>
+    </change>
+    <change when="2026-03-06T08:46:43.348Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-06T18:00:49.786Z" status="draft" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-09T07:46:06.876Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-10T08:48:42.943Z" status="draft" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-16T13:16:48.733Z" status="checked" who="#li">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-04-04T07:36:02.668Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-04T07:51:21.545Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+
+        <bibl><label>1</label> the significance of creating various types of inter
+        -organizational networks to pursue the<lb/> climate policy goals at all levels, namely global, eU and national levels, is noticed in the area of public<lb/> governance. see: d.J. gordon, "Between local innovation and global impact: cities, networks, and<lb/> the governance of climate change," Canadian Foreign Policy Journal 19, 2013, no. 3, pp. 288-307;<lb/> </bibl>
+        <bibl>c. ingold, M. Fischer, "drivers of collaboration to mitigate climate change: an illustration of swiss<lb/> climate policy over 15 years," Global Environmental Change 24, 2014, no. 1, pp. 88-98; </bibl>
+          <bibl>y. sun-Jin,<lb/> "climate policy networks in south korea: aliances and conflicts," Climate Policy 14, 2014, no. 2,<lb/> pp. 283-301; </bibl>
+          <bibl>t. ylä-anttila (et al.), "climate change policy networks: Why and how to compare<lb/> them across countries," Energy Research &amp; Social Science 45, 2018, pp. 258-265; </bibl>
+          <bibl>d.J. gordon,<lb/> "the orchestration of global urban climate governance: conducting power in the post-Paris climate<lb/> regime," Environmental Politics 26, 2017, no. 4, pp. 694-714; </bibl>
+<bibl>B. Huybrechts, H. Haugh, "the<lb/> roles of networks in institutionalizing new hybrid organizational forms: insights from the european<lb/> renewable energy cooperative network," Organization Studies 39, 2018, no. 8, pp. 1085-1108;<lb/> </bibl>
+        <bibl>n. Long, r.M. krause, "Managing policy-making in the local climate governance landscape: the<lb/> role of network administrative organizations and member cities," Public Administration 99, 2021,<lb/> no. 1, pp. 23-39.<lb/> </bibl>
+<bibl><label>2</label> the concept of networking originates from the analysis of the rate of change and the nature<lb/> of interpersonal relationships, the so-called social networks, which have certain ways in which<lb/> individuals communicate; by establishing relationships they share tangible and intangible resources.<lb/> see: J. naisbitt, Megatrendy, Poznań 1997. </bibl>
+          <bibl>John Barnes introduced the concept of social networks<lb/> into the scientific discourse as early as in the 1950s and, at that time, it was an allegory of the<lb/> social connections between people, which spread through societies on the principle of a network,<lb/> while the relationships between individuals started to "entwine" societies. see: J.a. Barnes, "class<lb/> and committees in a norwegian island parish," Human Relations 7, 1954, no. 1, pp. 39-58. </bibl>
+          <bibl>it<lb/> should be emphasized that it had already been noticed then that the logic of networking was based<lb/> on minimizing the importance of hierarchical (vertical) ties and maximizing the importance of<lb/> horizontal (horizontal) ties.<lb/> </bibl>
+
+          <bibl><label>3</label> oJ L 328/122 of 21.12.2018.<lb/> </bibl>
+
+          <bibl type="footnote"><label>4</label> the red ii directive does not introduce a legal definition of an energy community, leaving<lb/> Member states with the discretion to choose the organizational forms in which such initiatives can be<lb/> "enclosed," restricting themselves to purely specifying the domains in the chain of the energy market<lb/> processes in which these communities can operate. the distinguishing feature of an energy community<lb/> is cooperation to satisfy the energy needs of its members.<lb/> </bibl>
+          <bibl type="footnote"><label>5</label> an energy community is an initiative that is open to all; its participants can be household<lb/> consumers using energy for satisfying individual needs as well as prosumers, enterprises with<lb/> systems used for generating renewable energy. However, the involvement of enterprises in energy<lb/> cooperatives must not constitute their primary (main) business or professional activity.<lb/> </bibl>
+          <bibl><label>6</label> Journal of Laws of 2016, item 925.<lb/> </bibl>
+          <bibl><label>7</label> Journal of Laws of 2016, item 814.<lb/> </bibl>
+          <bibl><label>8</label> Journal of Laws of 2016, item 446.<lb/> </bibl>
+
+          <bibl type="footnote"><label>9</label> the amendment also introduces a register of clusters. it also establishes rules for cooperation<lb/> and their settlement with the dso. By the end of 2026, at least 30% of the energy produced and fed<lb/> into the grid by the parties to the cluster agreement must come from res, and the total power of the<lb/> installations put into operation in the energy cluster -must not exceed 150 MW, and must enable no<lb/> less than 40% of the total annual demand of the parties to the energy cluster to be covered during<lb/> the year.<lb/> </bibl>
+          <bibl type="footnote"><label>10</label> the financial benefits of the participants of an energy cluster arise from the ability of the<lb/> producers (generators) operating within the cluster to obtain higher prices from the sale of energy,<lb/> while being able to meet consumer demand more cheaply.<lb/> </bibl>
+          <bibl><label>11</label> Positive interdependence is one of the three types of social interdependence identified<lb/> by the american psychologist Morton deutsch, who also distinguished a state of negative<lb/> interdependence (competition) and a state of deficit of interdependence (isolation). see: M. deutsch,<lb/> "a theory of cooperation and competition," Human Relations 2, 1949, no. 2, pp. 129-152. </bibl>
+          <bibl>Positive<lb/> interdependence arises when there is a "positive" correlation between entities pursuing autonomous<lb/> (individual) objectives. Positive interdependence is a state in which, when interpreting specific<lb/> economic, technological, legal, social, etc. conditions, a particular entity concludes that it can<lb/> achieve its individual objectives if and only if another entity operating in the same conditions is<lb/> able to achieve its individual objectives. the existence of a group of entities pursuing objectives<lb/> that are not in conflict with each other and which share the same system of values, convictions<lb/> and expectations can constitute the impetus for seeking structural methods of consolidating their<lb/> compatible aims, activities and interests. network organizations are among these structural methods<lb/> of consolidating compatible interests, which are always dependent on the specific socio-economic<lb/> context.<lb/> </bibl>
+          <bibl type="footnote"><label>12</label> the act on res (article 2[15a]) stipulates that the coordinator representing the cluster's<lb/> interests externally is a cooperative, association, foundation, or any member of the energy cluster spe-<lb/>cified in the civil law agreement, who is appointed to represent the cluster (it can also be an entity<lb/> established for this purpose, e.g. a partnership or a company). the coordinator's functions laid down<lb/> by the legislator are to manage and represent the energy cluster in business dealings, regarding the<lb/> projects that are being implemented. the coordinator may be and, in practice, often is the initiator<lb/> and founder of the cluster, or a new entity specified by the participants in the cluster contract. the<lb/> act does not specify the scope and principles of representation by the coordinator in the cluster; it<lb/> leaves the freedom to make this decision to the members of the cluster.<lb/> </bibl>
+
+<bibl type="footnote"><label>13</label> the statutory emphasis of the activities of the cluster's coordinator, which are externally<lb/> oriented, arises from the lack of personality and legal capacity of this network form of cooperation.<lb/> </bibl>
+
+          <bibl><label>14</label> the definition of clusters in the Polish legal system, which was introduced in the<lb/> regulation of the Minister of the economy of 2 december 2006 on the award by the Polish<lb/> agency for enterprise development of financial aid not related to operational programmes, also<lb/> emphasizes this duality, defining a cluster as "a spatial and sectoral concentration of at least<lb/> 10 entities working for economic development or innovation. When performing their activities<lb/> within one or several neighbouring voivodships, they compete and cooperate with each other in<lb/> the same or related sectors and are connected by an extensive network of relations of a formal and<lb/> informal nature" (Journal of Laws of 2006, no. 226, item 1651).<lb/> </bibl>
+          <bibl><label>15</label> see: k. Mucha-kuś, M. sołtysik, k. zamasz, "rola koopetycji w klastrach energii," Zeszyty<lb/> Naukowe Wydziału Elektrotechniki i Automatyki Politechniki Gdańskiej, 2017, no. 53, pp. 31-34.<lb/> </bibl>
+          <bibl><label>16</label> see: M. Bielski, Formalna i rzeczywista struktura organizacyjna, Warszawa 2003.<lb/> </bibl>
+          <bibl><label>17</label> see: r.s. achrol, g.t. gundlach, "Legal and social safeguards against opportunism<lb/> in exchange," Journal of Retailing 75, 1999, no. 1, pp. 107-124; </bibl>
+<bibl>J.J. Li, L. Poppo, k.z. zhou,<lb/> "relational mechanisms, formal contracts, and local knowledge acquisition by international<lb/> subsidiaries," Strategic Management Journal 31, 2010, no. 4, pp. 349-370.<lb/> </bibl>
+          <bibl><label>18</label> see: d. Vandaele (et al.), "How to govern business services exchanges: contractual and relational<lb/> issues," Journal of Management Review 9, 2007, no. 3, pp. 237-258; </bibl>
+
+<bibl>M.d. ryall, r.c. sampson,<lb/> "Formal contracts in the presence of relational enforcement mechanisms: evidence from technology<lb/> development projects," Management Science 55, 2009, no. 6, pp. 906-925.<lb/> </bibl>
+          <bibl><label>19</label> the Polish civil code of 23 april 1964 (Journal of Laws of 2020, items 1740, 2320).<lb/> </bibl>
+          <bibl><label>20</label> see: J. niemczyk, Strategia. Od planu do sieci, Wrocław 2013.<lb/> </bibl>
+          <bibl><label>21</label> see: a. Marshall, Zasady ekonomiki, Warszawa 1925.<lb/> </bibl>
+          <bibl><label>22</label> see: a. graczyk, "Pojęcie ekologicznych kosztów zewnętrznych," Ekonomia i Środowisko<lb/> 26, 2004, no. 2, pp. 7-29.<lb/> </bibl>
+          <bibl><label>23</label> d L140/16 of 23.04.2009.<lb/> </bibl>
+          <bibl><label>24</label> this applies to three types of transaction costs: ex-ante, in tractu and ex-post. Ex-ante<lb/> transaction costs arise at the stage of preparation of the contract, examples being the costs of finding<lb/> a partner for the cooperation, the costs of the negotiations, the coordination costs of establishing<lb/> mutual obligations, information processing and exchange, the costs of preparing analyses and<lb/> expert studies related to the subject matter of the future contract. In tractu costs appear during the<lb/> cooperation; these include costs of monitoring the activities of the other participants of the network<lb/> (with regard to the performance of the provisions of the contract) and the costs of renegotiating<lb/> the provisions of the contract. Ex-post transaction costs arise after the end of the cooperation and<lb/> are primarily related to the enforcement of unfulfilled provisions of the contract. see: a. chrisidu-<lb/>Budnik, Od biurokracji do New Public Governance. Perspektywa izomorfizmu instytucjonalnego,<lb/> Wrocław 2019.<lb/> </bibl>
+
+        <bibl><label>25</label> M. łolik, Współczesne prawo kontraktów -wybrane zagadnienia, Warszawa 2014.<lb/> </bibl>
+          <bibl><label>26</label> see: y. Li, M.W. Peng, "Formal control and social control in domestic and international<lb/> buyer-supplier relationships," Journal of Operations Management 28, 2010, no. 4, pp. 333-344.<lb/> </bibl>
+        <bibl><label>27</label> J. gronkowska, "Polityka wsparcia tworzenia i rozwoju klastrów energii w Polsce," Zeszyty<lb/> Naukowe Instytutu Gospodarki Surowcami Mineralnymi i Energią Polskiej Akademii Nauk 2017,<lb/> no. 97, pp. 216-230.<lb/> </bibl>
+          <bibl type="footnote"><label>28</label> Various criteria for classifying clusters are distinguished in the literature on the subject. in<lb/> order to analyse energy clusters, it is important to take account of the life cycle phase of the energy<lb/> cluster, on the basis of which the following can be distinguished: 1. embryonic energy clusters<lb/> formed as a result of initiative, innovation and the ability to attract and consolidate participants<lb/> of importance to the successful fulfilment of the cluster's interests (pre-cluster stage); 2. growing<lb/> energy clusters already have a formalized form of functioning, acquire learning capabilities and<lb/> attract new value-adding participants. the growth potential of an energy cluster largely depends on<lb/> institutional support, namely the introduction of legal regulations supporting the rate of their growth<lb/> (acceleration stage);
+        3. Mature energy clusters have stable formal and informal rules of cooperation,<lb/> a lower risk of activities, an increase in efficiency and cost reductions arising from knowledge and<lb/> the effects of synergy (petrification stage);
+        4. energy clusters in decline, the distinguishing feature<lb/> of which is the substitutability of their product with a more innovative one (erosion stage). energy<lb/> clusters are not static entities, but are continuously evolving, which is determined by their complexity, while<lb/> the rates of change of the external and internal context of their operation are their components.<lb/>
+            </bibl>
+          <bibl><label>29</label> the "transition" process of the cooperation from non-formalized to formalized applies<lb/> not only to energy clusters. it is, for example, a qualitative determinant of the interaction between<lb/> public administrations and environmental organizations with regard to environmental protection.<lb/> in practice, the successful course of informal horizontal interactions is a significant impetus for<lb/> strengthening and deepening this cooperation through its formalization.</bibl>
+          <bibl>the legal basis for the<lb/> transition from informal cooperation to formalized interoperation is contained in article 45(1) of the<lb/> act on the provision of information on the environment and its protection and environmental impact<lb/> assessments of 3 october 2008 (consolidated text: Journal of Laws of 2020, item 283, as amended).<lb/> </bibl>
+          <bibl><label>30</label> see: t. Wilkinson-ryan, "transferring trust: reciprocity norms and assignment of con-<lb/>tract," Journal of Empirical Legal Studies 9, 2012, no. 3, pp. 511-535.<lb/> </bibl>
+
+        <bibl><label>31</label> the concept of the business ecosystem as a tool for thinking about the environment in<lb/> which a network organization operates was created by
+        J.F. Moore. see: J.F. Moore, The Death<lb/> of Competition: Leadership and Strategy in the Age of Business Ecosystems, new york 1996. </bibl>
+          <bibl>an<lb/> ecosystem is a population of entities constituting a dynamic structure formed by business entities,<lb/> universities, research centres, local government units, public sector organizations and other<lb/> entities which have an impact on the shape of the ecosystem, which are connected through formal<lb/> and informal relationships. see: M. Peltoniemi, e. Vuori, "Business ecosystem as a tool for the<lb/> conceptualisation of the external diversity of an organization," [in:] Proceedings of the Complexity<lb/> &amp; Science and Society Conference, 2005, Liverpool 2005, p. 8.<lb/> </bibl>
+          <bibl><label>32</label> Journal of Laws of 2019, item 1524.<lb/> </bibl>
+          <bibl><label>33</label> Journal of Laws of 2018, item 1285; </bibl>
+          <bibl>Journal of Laws of 2019, items 730, 1080 and 1100.<lb/> </bibl>
+          <bibl><label>34</label> Journal of Laws of 2018, item 2073.<lb/> </bibl>
+          <bibl><label>35</label> Journal of Laws of 2020, item 275.<lb/> </bibl>
+          <bibl><label>36</label> an energy cooperative may start to operate after its data has been entered into the list<lb/> of energy cooperatives kept by the director general of the national agricultural support centre,<lb/> which was established by the act on the national agricultural support centre of 10 February 2017<lb/> (Journal of Laws of 2020, item 481). </bibl>
+          <bibl> if the details of the energy cooperatives are contained in this<lb/> list, they acquire the right to benefit from the system of discounts previously intended exclusively<lb/> for prosumers.<lb/> </bibl>
+          <bibl type="footnote"><label>37</label> the article has addressed the existence of conditions (legal, organizational, social, technological<lb/> and commercial) which are interrelated and therefore exert an influence on the effectiveness of the<lb/> transformation.<lb/> </bibl>
+
+            <bibl>references<lb/> </bibl>
+<bibl>achrol r.s., gundlach g.t., "Legal and social safeguards against opportunism in exchange," Jour-<lb/>nal of Retailing 75, 1999, no. 77, pp. 107-124.<lb/> </bibl>
+<bibl>Barnes J.a., "class and committees in a norwegian island parish," Human Relations 7, 1954, no. 1,<lb/> pp. 39-58.<lb/> </bibl>
+<bibl>Bielski M., Formalna i rzeczywista struktura organizacyjna, Warszawa 2003.<lb/> </bibl>
+          <bibl>chrisidu-Budnik a., Od biurokracji do New Public Governance. Perspektywa izomorfizmu instytu-<lb/>cjonalnego, Wrocław 2019.<lb/> </bibl>
+        <bibl>deutsch M., "a theory of cooperation and competition," Human Relations 2, 1949, no. 2, pp. 129-152.<lb/> </bibl>
+          <bibl>gordon d.J., "Between local innovation and global impact: cities, networks, and the governance of<lb/> climate change," Canadian Foreign Policy Journal 19, 2013, no. 3, pp. 288-307.<lb/> </bibl>
+<bibl>gordon d.J., "the orchestration of global urban climate governance: conducting power in the<lb/> post-Paris climate regime," Environmental Politics 26, 2017, no. 4, pp. 694-714.<lb/> </bibl>
+<bibl>graczyk a., "Pojęcie ekologicznych kosztów zewnętrznych," Ekonomia i Środowisko 26, 2004, no. 2,<lb/> pp. 7-29.<lb/> </bibl>
+<bibl>gronkowska J., "Polityka wsparcia tworzenia i rozwoju klastrów energii w Polsce," Zeszyty Nau-<lb/>kowe Instytutu Gospodarki Surowcami Mineralnymi i Energią Polskiej Akademii Nauk 2017,<lb/> no. 97, pp. 216-230.<lb/> </bibl>
+<bibl>Huybrechts B., Haugh H., "the roles of networks in institutionalizing new hybrid organizational<lb/> forms: insights from the european renewable energy cooperative network," Organization<lb/> Studies 39, 2018, no. 8, pp. 1085-1108.<lb/> </bibl>
+<bibl>ingold c., Fischer M., "drivers of collaboration to mitigate climate change: an illustration of swiss<lb/> climate policy over 15 years," Global Environmental Change 24, 2014, no. 1, pp. 88-98.<lb/> </bibl>
+<bibl>Li J.J., Poppo L., zhou k.z., "relational mechanisms, formal contracts, and local knowledge<lb/> acquisition by international subsidiaries," Strategic Management Journal 31, 2010, no. 4,<lb/> pp. 349-370.<lb/> </bibl>
+<bibl>Li y., Peng M.W., "Formal control and social control in domestic and international buyer-supplier<lb/> relationships," Journal of Operations Management 28, 2010, no. 4, pp. 333-344.<lb/> </bibl>
+<bibl>łolik M., Współczesne prawo kontraktów -wybrane zagadnienia, Warszawa 2014.<lb/> </bibl>
+          <bibl>Long n., krause r.M., "Managing policy-making in the local climate governance landscape: the<lb/> role of network administrative organizations and member cities," Public Administration 99,<lb/> 2021, no. 1, pp. 23-39.<lb/> </bibl>
+<bibl>Marshall a., Zasady ekonomiki, Warszawa 1925.<lb/> </bibl>
+<bibl>Moore J.F., The Death of Competition: Leadership and Strategy in the Age of Business Ecosystems,<lb/> new york 1996.<lb/> </bibl>
+<bibl>Mucha-kuś k., sołtysik M., zamasz k., "rola koopetycji w klastrach energii," Zeszyty Naukowe<lb/> Wydziału Elektrotechniki i Automatyki Politechniki Gdańskiej 2017, no. 53, pp. 31-34.<lb/> </bibl>
+<bibl>naisbitt J., Megatrendy, Poznań 1997.<lb/> </bibl>
+          <bibl>niemczyk J., Strategia. Od planu do sieci, Wrocław 2013.<lb/> </bibl>
+<bibl>Peltoniemi M., Vuori e., "Business ecosystem as a tool for the conceptualization of the external<lb/> diversity of an organization," [in:] Proceedings of the Complexity &amp; Science and Society Con-<lb/>ference, 2005, Liverpool 2005, pp. 1-8.<lb/> </bibl>
+        <bibl>ryall M.d., sampson r.c., "Formal contracts in the presence of relational enforcement mecha-<lb/>nisms: evidence from technology development projects," Management Science 55, 2009, no. 6,<lb/> pp. 906-925.<lb/> </bibl>
+<bibl>sun-Jin y., "climate policy networks in south korea: alliances and conflicts," Climate Policy 14,<lb/> 2014, no. 2, pp. 283-301.<lb/> </bibl>
+<bibl>Vandaele d., rangarajan d., gemmel P., Lievens a., "How to govern business services exchanges:<lb/> contractual and relational issues," Journal of Management Review 9, 2007, no. 3, pp. 237-258.<lb/> </bibl>
+<bibl>Wilkinson-ryan t., "transferring trust: reciprocity norms and assignment of contract," Journal of<lb/> Empirical Legal Studies 9, 2012, no. 3, pp. 511-535.<lb/> </bibl>
+<bibl>ylä-anttila t., gronow a., stoddart M., Broadbent J., schneider V., tindall d., "climate change<lb/> policy networks: Why and how to compare them across countries," Energy Research &amp; Social<lb/> Science 45, 2018, pp. 258-265.</bibl>
+        </listBibl>
+    </text>
+
+
+</TEI>

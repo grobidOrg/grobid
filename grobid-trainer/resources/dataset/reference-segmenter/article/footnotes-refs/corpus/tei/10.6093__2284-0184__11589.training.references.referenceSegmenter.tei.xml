@@ -1,0 +1,209 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.6093__2284-0184__11589">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="li">Mengjiao Li</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+      <idno type="DOI">10.6093/2284-0184/11589_</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None. DOI: 10.6093/2284-0184/11589_</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-03-17T17:50:14.135661Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">fd543f4</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-03-17T17:50:14.135661Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-22T19:05:24.323Z" status="unfinished" who="#cboulanger">
+      <note type="label">v2 (cboulanger)</note>
+      <desc>1st pass started</desc>
+    </change>
+    <change when="2026-03-22T20:14:46.161Z" status="draft" who="#cboulanger">
+      <desc>1st pass done</desc>
+    </change>
+    <change when="2026-03-24T08:32:55.427Z" status="draft" who="#li">
+      <note type="label">v3 (li)</note>
+      <desc>2.pass started</desc>
+    </change>
+    <change when="2026-03-24T11:52:40.702Z" status="checked" who="#li">
+      <desc>2.pass done</desc>
+    </change>
+    <change when="2026-04-21T09:51:44.695Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-21T10:07:35.665Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <!-- quotes with source references  -->
+      <bibl><label>1</label> La distinzione tra Kultur e Zivilisation -di origine tardo-illuministica, ma il cui significato moderno si rinviene per la prima<lb/> volta in Burkhardt -occupa una posizione centrale nel dibattito intellettuale tedesco tra XIX e XX secolo, in particolare nel<lb/> contesto della Rivoluzione conservatrice (cfr. E. Alessiato, L'impolitico. Thomas Mann tra arte e guerra, il Mulino, Bologna,<lb/> 2011, pp. 129 e ss.).</bibl> <bibl>All'interno del pensiero manniano, il binomio Kultur-Zivilisation rappresenta la declinazione<lb/> sociopolitica di una coppia concettuale più estensiva, formata dai concetti di «vita» (Leben) -o «natura» (Natur) -e «spirito»<lb/> (Geist), la quale si sviluppa e si ridefinisce costantemente nel corso della produzione manniana sin dalla sua stagione giovanile,<lb/> come dimostrano i frammenti di Geist und Kunst (1909).</bibl>
+      <bibl>Nelle Considerazioni di un impolitico, la lettura manniana trova una<lb/> corretta esemplificazione in questo passo, in cui Thomas Mann riprende fedelmente uno dei frammenti di Geist und Kunst<lb/> (cfr. P. Scherrer, H. Wysling, Quellenkritische Studien zum Werk Thomas Manns, Francke, Bern, 1967, pp. 225-26):<lb/> </bibl>
+      <bibl>«Civilizzazione e cultura non soltanto non sono la stessa cosa, sono due cose opposte... Cultura significa unità, stile, forma,<lb/> compostezza, gusto, è una certa organizzazione spirituale del mondo, per quanto tutto possa sembrare avventuroso, scurrile,<lb/> selvaggio, sanguinoso, tremendo. La cultura può comprendere l'oracolo, la magia, la pederastia, messe nere, sacrifici umani,<lb/> culti orgiastici, l'inquisizione, l'autodafé, il ballo di san Vito, processi alle streghe, il fiorire di venefìci e le più varie atrocità.<lb/> Civilizzazione è invece ragione, illuminismo, addomesticamento, incivilimento, scetticismo, dissolvimento -spirito» (T.<lb/> Mann, Considerazioni di un impolitico, a cura di M. Marianelli, M. Ingenmey, Adelphi, Milano, 2005 3 , p. 528).<lb/> </bibl>
+      <bibl><label>2</label> Cfr. T. Mann, Della repubblica tedesca, in L. Mazzucchetti, G. Napolitano (a cura di), Moniti all'Europa, Mondadori,<lb/> Milano, 2017, pp. 3-44.<lb/> </bibl>
+      <bibl><label>3</label> T. Mann, Considerazioni di un impolitico, cit., p. 32.<lb/> </bibl>
+      <bibl><label>4</label> Ibid. Queste parole della prefazione, scritta al termine dell'opera (marzo 1918), rispecchiano perfettamente la prima forma<lb/> di autocomprensione che Thomas Mann ebbe del proprio lavoro, come dimostra la lettera a Amann del 7 novembre 1915:<lb/> «Sono appunti in uno stile del tutto privato; accoppiano in una maniera molto audace e stramba fatti attuali con una revisione<lb/> dei miei princìpi personali che mi impegna l'animo a fondo» (H. Wegener (ed.), Thomas Mann. Briefe an Paul Amann 1915-<lb/>1952, Schmidt-Römhild, Lübeck, 1959, p. 38).<lb/> </bibl>
+      <bibl><label>5</label> T. Mann, Considerazioni di un impolitico, cit., p. 46.<lb/> </bibl>
+      <bibl><label>6</label> Ivi, p. 73 e passim. </bibl><bibl>Cfr. T. Mann, L'artista e il letterato, in A. Landolfi, C. Magris (a cura di), Nobiltà dello spirito e altri<lb/> saggi, Mondadori, Milano, 2001, pp. 1576-1584. Pubblicato per la prima volta in due parti (Der Literat e Der Künstler und<lb/> der Literat) nel gennaio del 1913 sulla rivista März, in questo saggio Thomas Mann rappresenta il confronto polemico con il<lb/> fratello Heinrich attraverso la contrapposizione tra l'artista e il letterato, anticipando così quella di artista impolitico e civil-<lb/>letterato nelle Considerazioni.<lb/> </bibl>
+      <bibl><label>7</label> T. Mann, Considerazioni di un impolitico, cit., p. 108.<lb/> </bibl>
+      <bibl><label>8</label> Ibid. Sul rapporto tra «vita» (Leben) -o «natura» (Natur) -e «spirito» (Geist) in Thomas Mann, con particolare attenzione<lb/> al saggio manniano Goethe e Tolstoj, cfr. D. Conte, «Natura» e «spirito» in Thomas Mann, in Id., Viandante nel Novecento.<lb/> Thomas Mann e la storia, Edizioni di Storia e Letteratura, Roma, 2019, pp. 323-342; </bibl>
+      <bibl>H. Lehnert, E. Wessel, Nihilismus der<lb/> Menschenfreundlichkeit: Thomas Manns Wandlung und sein Essay Goethe und Tolstoi, Klostermann, Frankfurt a.M., 1991.<lb/> </bibl>
+      <bibl><label>9</label> T. Mann, Considerazioni di un impolitico, cit., p. 109.<lb/> </bibl>
+      <bibl><label>10</label> Ivi, p. 96.<lb/> </bibl>
+      <bibl><label>11</label> Più avanti (ivi, p. 162), Mann descrive infatti Nietzsche come un «moralista», richiamandosi alla lettera dell'ottobre 1868<lb/> a Rohde in cui Nietzsche dichiara la propria affinità con Wagner e Schopenhauer, dei quali loda «l'aura etica, il sentore<lb/> faustiano, croce, morte e sepolcro». Lo stesso Nietzsche, tuttavia, che nel famoso saggio del 1947 Thomas Mann dipingerà<lb/> all'opposto come «l'esteta più compiuto, più radicale che la storia dello spirito conosca» (T. Mann, La filosofia di Nietzsche<lb/> alla luce della nostra esperienza, in Nobiltà dello spirito, cit., p. 1332).<lb/> </bibl>
+      <bibl><label>12</label> T. Mann, Dostoevskij -con misura, in Nobiltà dello spirito, cit., p. 863. Sull'interpretazione manniana di Dostoevskij, cfr.<lb/> B. Tamm, Thomas Mann und Dostoevskij. Eine vergleichende Untersuchung, Diss., Jena, 1985;</bibl>
+      <bibl>M. Friedländer,<lb/> "Dostojewskij und Thomas Mann", Sowjetliteratur 33, 12 (1981): pp. 170-182; </bibl>
+      <bibl>S. Givone, "Thomas Mann interprete di<lb/> Dostoevskij", Rivista di estetica, 20, 6 (1980): pp. 24-42.<lb/> </bibl>
+      <bibl><label>13</label> T. Mann, Dostoevskij -con misura, in Nobiltà dello spirito, cit., p. 862.<lb/> </bibl>
+      <bibl><label>14</label> Cfr. T. Mann, Goethe e Tolstoj. Frammenti sul problema dell'umanità, in Nobiltà dello spirito, cit., pp. 30-156.<lb/> </bibl>
+      <bibl><label>15</label> Cfr. F. Schiller, Sulla poesia ingenua e sentimentale, a cura di E. Franzini, W. Scotti, Abscondita, Milano, 2014. </bibl>
+      <bibl>Al ruolo<lb/> di Schiller per l'evoluzione del pensiero di Thomas Mann non sempre è stato dedicato pieno riconoscimento, che anzi si trova<lb/> sovente offuscato dalle più evidenti ombre gettate da Schopenhauer e Nietzsche. Nondimeno, a riguardo, cfr. H.S. Daemmrich,<lb/> "Friedrich Schiller and Thomas Mann: Parallels in Aesthetics", The Journal of Aesthetics and Art Criticism 24, 2 (1965): pp.<lb/> 227-249; </bibl>
+      <bibl>H.-J. Sandberg, Thomas Manns Schiller-Studien, Scandinavian University Books, Oslo-Bergen-Tromsö, 1965; T.J.<lb/> Reed, "Review of Thomas Mann's Schillerstudien by Hans-Joachim Sandberg", The Modern Languages Review 62, 3 (1967):<lb/> pp. 566-569; </bibl>
+      <bibl>H. Koopmann, Thomas Manns Schillerbilder -Lebenslägliche Mißverständnisse, in E. Heftrich, H. Wysling<lb/> (eds.), Thomas Mann Jahrbuch (12), Klostermann, Frankfurt a.M., 1999, pp. 113-121.<lb/> </bibl>
+      <bibl><label>16</label> T. Mann, Dostoevskij -con misura, cit., p. 862.<lb/> </bibl>
+      <bibl><label>17</label> Cfr. C. Baier, Zwischen höllischem Feuer und doppeltem Segen: Geniekonzepte in Thomas Manns Romanen Lotte in<lb/> Weimar, Joseph und seine Brüder und Doktor Faustus, V&amp;R, Göttingen, 2011.<lb/> </bibl>
+      <bibl><label>18</label> Precisamente in questo senso, sottolinea Ophälders, la cultura tedesca del XIX secolo -Heine, Nietzsche e dietro di loro<lb/> Mann, che di questo secolo e di questa cultura desidera presentarsi come l'ultimo rappresentante -intende il mito di Goethe<lb/> come Überdeutscher, ovvero in un senso propriamente letterale: in quanto «al di là di tutto ciò che si ritiene essere tedesco»<lb/> (M.G. Ophälders, "Incipit tragoedia" -"Incipit parodia". Riflessioni sul tragico a partire da Heine e Nietzsche, in I.<lb/> Schiffermüller, E. Destro (eds.), "Incipit tragoedia" -"Incipit parodia". Tragedia e parodia nella Wiener Moderne, Ets,<lb/> Pisa, 2024, p. 163-183 -in corso di stampa).<lb/> </bibl>
+      <bibl><label>19</label> Cfr. F. Schiller, Sulla poesia ingenua e sentimentale, cit., pp. 75 e ss.</bibl>
+      <bibl>A questo riguardo, è opportuno rilevare che il concetto<lb/> di natura manniano, profondamente segnato dalla lettura di Schopenhauer e di Nietzsche, si discosta prevedibilmente da quello<lb/> schilleriano: il mondo naturale con il quale, in Thomas Mann, l'artista ingenuo intrattiene un rapporto privilegiato si presenta<lb/> dunque come sostrato pre-razionale e amorale, forza «oscura» e «mistica» (T. Mann, Goethe e Tolstoj, cit., p. 96).<lb/> </bibl>
+      <bibl><label>20</label> T. Mann, Dostoevskij -con misura, cit., p. 863.<lb/> </bibl>
+      <bibl><label>21</label> Ivi, p. 872. </bibl>
+      <bibl>Si veda anche il passo del Doctor Faustus in cui vengono trasferite, con pochissime modifiche, le stesse<lb/> riflessioni -nel romanzo messe in bocca al diavolo -sul rapporto tra malattia e creatività artistica (cfr. T. Mann, Doctor<lb/> Faustus, a cura di R. Fertonani, G. Manzoni, E. Pocar, Mondadori, Milano, 1996, p. 332). Sono infatti due lavori, il romanzo<lb/> faustiano e il saggio su Dostoevskij, che Mann conduce parallelamente.<lb/> </bibl>
+      <bibl><label>22</label> T. Mann, Doctor Faustus, cit., pp. 321-22.<lb/> </bibl>
+      <bibl><label>23</label> Ivi, p. 313. </bibl>
+      <bibl>È il caso di notare che corre in Mann, e in particolare nel Doctor Faustus, un singolare legame tra tempo<lb/> «genializzato» e tempo musicale moderno anti-ironico. All'interno del romanzo faustiano, questo tema rimanda non<lb/> solamente alla filosofia della musica di Adorno, di cui è risaputo il contributo per la stesura dell'opera, ma anche all'autore<lb/> che Adrian sta sfogliando prima dell'imprevista apparizione del diavolo, ovvero Kierkegaard, le cui analisi sull'estetica<lb/> dell'opera d'arte moderna come opera inconclusa, frammentaria, sottostanno alla fervente critica manniana<lb/> dell'espressionismo e del rapporto distorto tra forma e tempo nella musica contemporanea (cfr. S.A. Kierkegaard, Il riflesso<lb/> del tragico antico nel tragico moderno, in Id., Enten-Eller, 2, a cura di A. Cortese, Milano, Adelphi, 1977, pp. 35 e ss.). </bibl>
+      <bibl>Cfr.<lb/> T. Mann, Doctor Faustus, cit., p. 329: «Il movimento storico del materiale musicale si è volto contro l'opera in sé conchiusa…<lb/> Opera, tempo e apparenza sono una cosa sola, e tutte insieme cadono in balia della critica. Questa non tollera più apparenza<lb/> e giuoco, non tollera la finzione, la sovranità della forma che censura le passioni e il dolore umano e li suddivide in parti, li<lb/> trasforma in immagini. Ormai si può ammettere soltanto l'espressione non fittizia, l'espressione non esaurita, non simulata e<lb/> non trasfigurata del dolore nel suo momento reale. La sua impotenza e la sua miseria sono cresciute talmente che non è lecito<lb/> farne un giuoco di apparenze».<lb/> </bibl>
+      <bibl><label>24</label> F. Nietzsche, Frammenti postumi 1888-1889, in G. Colli, M. Montinari (ed.), Opere (8, 3), Adelphi, Milano, 1986 2 , p. 145.<lb/></bibl>
+      <bibl> Nel saggio del 1947, Mann cita la lettera del gennaio 1880 inviata da Nietzsche al medico Eiser, a cui confessa il proprio<lb/> «dolore incessante» al cervello, gli stati di «paralisi dalla testa alla punta dei piedi», che sostiene di sopportare soltanto in<lb/> vista delle illuminazioni intellettuali che si accompagnano a questi violenti attacchi, in cui gli capita di desiderare la morte:<lb/> «L'esistenza mi pesa spaventosamente; me ne sarei liberato da un pezzo se non fosse proprio questo stato di sofferenza e di<lb/> rinuncia quasi totale quello che mi permette di fare le prove e gli esperimenti più istruttivi nella sfera spirituale e morale» (F.<lb/> Nietzsche, Epistolario 1880-1884, in Opere (4), cit., 2004, p. 3). </bibl>
+      <bibl>Cfr. T. Mann, La filosofia di Nietzsche alla luce della nostra<lb/> esperienza, cit., p. 1304.<lb/> </bibl>
+      <bibl><label>25</label> Cfr. F. Nietzsche, Crepuscolo degli idoli, in Opere (6, 3), cit., 1970, p. 145 (cap. Scorribande di un inattuale, par. 45: Il<lb/> criminale e quel che gli è affine); </bibl>
+      <bibl>T. Mann, Dostoevskij -con misura, cit., p. 872.<lb/> </bibl>
+      <bibl><label>26</label> T. Mann, Considerazioni di un impolitico, cit., p. 570. </bibl>
+      <bibl>La citazione sulle «due anime», sensibile e spirituale, è tratta dal<lb/> Faust, scena Fuori porta (cfr. J.W. Goethe, Faust, I, in E. Trunz (ed.), Goethes Werke (3), Christian Wegner, Hamburg, 1948-<lb/>1960, p. 41).<lb/> </bibl>
+      <bibl><label>27</label> T. Mann, Considerazioni di un impolitico, cit., p. 571.<lb/> </bibl>
+      <bibl><label>28</label> Ivi, p. 572.<lb/> </bibl>
+      <bibl><label>29</label> Ivi, p. 570.<lb/> </bibl>
+      <bibl><label>30</label> Cfr. H. Hilgers, Serenus Zeitblom. Der Erzähler als Romanfigur in Thomas Manns "Doktor Faustus", Lang, Frankfurt<lb/> a.M., 1995, pp. 11 e ss.<lb/> </bibl>
+      <bibl><label>31</label> Cfr. D. Conte, Nel pozzo del passato, in Viandante nel Novecento, cit., p. 74. Come rileva Conte, nel nazismo la storia si<lb/> presenta agli occhi di Thomas Mann come una singolare fusione di un sostrato arcaico e primitivo -un «Ur» non interamente<lb/> metabolizzato -con una piena modernità tecnologica, burocratica e musicale.</bibl>
+      <bibl>Si veda anche R. Mehring, "Apokalypse der<lb/> deutschen "Seele"? Thomas Manns "Doktor Faustus" als Zeitroman", Weimarer Beiträge 51 (2005): pp. 188-205; </bibl>
+      <bibl>R. Mehring,<lb/> T. Sprecher, Vom ‚Zauberberg' zum ‚Doktor Faustus', Klostermann, Frankfurt a.M., 2000;</bibl>
+      <bibl>D. Conte, «Spazzare il cuore con<lb/> la scopa». Crisi dell'individuo, primitività e fascismo nel Doctor Faustus, in Viandante nel Novecento, cit., pp. 159-190.<lb/> </bibl>
+      <bibl><label>32</label> T. Mann, Doctor Faustus, cit., p. 28.</bibl> <bibl>All'interno del romanzo, un altro evento allusivo è che lo stesso figlio di Serenus,<lb/> archetipo del maestro e pedagogo tradizionale, si arruoli volontario nell'esercito nazista, come ulteriore rappresentazione<lb/> dell'inefficacia dell'educazione latina di fronte alle sfide del Novecento. Già nel saggio Goethe e Tolstoj, la cui stesura avviene<lb/> tra il 1924 e il 1925, all'interno dell'ultima sezione intitolata appunto Insegnamento, Thomas Mann si allontana dalla struttura<lb/> tradizionale dell'educazione umanistica -in particolare sull'insegnamento del greco e del latino -effigie di una società<lb/> borghese ormai definitivamente superata (cfr. T. Mann, Goethe e Tolstoj, cit., pp. 132-156).<lb/> </bibl>
+      <bibl><label>33</label> T. Mann, Considerazioni di un impolitico, cit., pp. 575-576.<lb/> </bibl>
+      <bibl><label>34</label> Cfr. T. Mann, Doctor Faustus, cit., p. 122: «ciò che manca alla teologia liberale, con tutto il suo umanismo e moralismo, è<lb/> la comprensione dell'elemento demoniaco dell'uomo».</bibl>
+      <bibl>Per un'analisi della categoria del «demoniaco», cfr. E. Geulen, K.<lb/> Wetters, C. Meierhofer, L. Friedrich, Das Dämonische. Schicksale einer Kategorie der Zweideutigkeit nach Goethe, Fink<lb/> Verlag, Paderborn, 2014.<lb/> </bibl>
+      <bibl><label>35</label> Cfr. T. Mann, Doctor Faustus, cit., p. 323. </bibl>
+      <bibl>Intorno al significato etico-politico della musica in Thomas Mann, con particolare<lb/> riguardo al Doctor Faustus, cfr. F. Rossi, S. Costagli, Spazi e figure del politico nell'opera di Thomas Mann, IISG, Roma,<lb/> 2020; </bibl>
+      <bibl>L. Crescenzi, Abschied von Aesthetizismus. Deutschlands ethische Wende und die musikalische Symbolik des «Doktor<lb/> Faustus», in K. Bedenig, H. Wißkirchen (eds.), Thomas Mann Jahrbuch (27), Klostermann, Frankfurt a.M., 2014, pp. 95-<lb/>107; </bibl>
+      <bibl>E. Alessiato, "Musica, Guerra e Diavolo. Intorno a una Lettura del Doktor Faustus di Thomas Mann", Archivio di Storia<lb/> della Cultura 26, (2013): p. 339-352; </bibl>
+      <bibl>R. Diana, La "scelta" della dodecafonia nel Doctor Faustus di Thomas Mann, in G.<lb/> Cantillo, D. Conte, A. Donise (a cura di), Thomas Mann tra etica e politica, il Mulino, Bologna, 2012, pp. 325-352; </bibl>
+      <bibl>per uno<lb/> sguardo attento anche all'aspetto strettamente musicologico, L. Malknecht, Un'etica di suoni. Musica, morale e metafisica in<lb/> Thomas Mann, Mimesis, Milano-Udine, 2010;</bibl>
+      <bibl>S. Zurletti, Le dodici note del diavolo. Ideologia, struttura e musica nel<lb/> «Doktor Faustus» di Thomas Mann, Bibliopolis, Napoli, 2011.<lb/> </bibl>
+      <bibl><label>36</label> T. Mann, Doctor Faustus, cit., p. 80.<lb/> </bibl>
+      <bibl><label>37</label> Ibid.<lb/> </bibl>
+      <bibl><label>38</label> T. Mann, Considerazioni di un impolitico, cit., p. 136. Le influenze culturali estere obiettivo della polemica manniana e<lb/> ritenute "dannose" per lo spirito del popolo tedesco, com'è prevedibile, sono soprattutto quelle francesi e inglesi.<lb/> </bibl>
+      <bibl><label>39</label> T. Mann, Doctor Faustus, cit., p. 80.<lb/> </bibl>
+      <bibl><label>40</label> Cfr. H. Kurzke, Betrachtungen eines Unpolitischen, in H. Koopmann (ed.), Thomas-Mann-Handbuch, Kräner, Stuttgart,<lb/> 1990, pp. 678-695. </bibl>
+      <bibl>Sul complesso rapporto di Thomas Mann con la figura di Nietzsche dentro e fuori le Considerazioni di un<lb/> impolitico, cfr. E. Alessiato, «L'evento del secolo»: Friedrich Nietzsche e Thomas Mann, in F. Cattaneo, C. Gentili, S. Marino<lb/> (eds.), Nietzsche nella Rivoluzione Conservatrice, Genova, Il melangolo, 2015, pp. 105-121; </bibl>
+      <bibl>H. Kurzke, Nietzsche in den<lb/> "Betrachtungen eines Unpolitischen", in H. Gockel, M. Neumann, R. Wimmer (eds.), Wagner-Nietzsche-Thomas Mann,<lb/> Klostermann, Frankfurt a.M., 1993, pp. 184-202; </bibl>
+      <bibl>H. Wisskirchen, Nietzsche-Imitatio. Zu Thomas Manns politischem Denken<lb/> in der Weimarer Republik, in E. Eftrich, T. Sprecher (eds.), Thomas Mann Jahrbuch (10), Klostermann, Frankfurt a.M., 1988,<lb/> pp. 46-62; </bibl>
+      <bibl>I. Jens, W. Jens, Betrachtungen eines Unpolitischen: Thomas Mann und Friedrich Nietzsche, in K. Gaiser (ed.),<lb/> Das Altertum und jedes neue Gute, Stuttgart-Berlin-Köln-Mainz, 1970, pp. 237-256.<lb/> </bibl>
+      <bibl><label>41</label> «Vergleiche dich! Erkenne, was du bist!» (v. 3420): T. Mann, Considerazioni di un impolitico, cit., p. 29.<lb/> </bibl>
+      <bibl><label>42</label> Cfr. G. Baioni, Goethe. Classicismo e rivoluzione, Einaudi, Torino, 1998.<lb/> </bibl>
+      <bibl><label>43</label> Cfr. I. Jens (ed.), Thomas Mann an Ernst Bertram. Briefe aus den Jahren 1910-1955, Neske, Pfullingen, 1960, p. 234.<lb/> </bibl>
+      <bibl><label>44</label> T. Mann, Considerazioni di un impolitico, cit., p. 32.<lb/> </bibl>
+      <bibl><label>45</label> Ivi, pp. 565-586.<lb/> </bibl>
+      <bibl><label>46</label> Ivi, p. 42.<lb/> </bibl>
+      <bibl><label>47</label> A questo riguardo, si tenga presente che nell'orizzonte manniano -nel quale il mondo liberale borghese è la culla dello<lb/> stesso nichilismo di cui si propone pubblicamente come avversario e che costituisce la sua malattia mortale -l'unico orizzonte<lb/> plausibile dell'azione conservatrice si limita al rallentamento del processo di decadenza della società borghese, non certo a<lb/> una sua inversione di tendenza. Nonostante le intenzioni politiche e i toni esaltati del saggio, già nelle Considerazioni di un<lb/> impolitico si trovano segni di uno sguardo lucido sul passaggio dalla società borghese tradizionale all'epoca delle masse,<lb/> pregna di inarrestabili novità sociali, politiche e culturali. Cfr. ivi, p. 512, in cui sono citate le parole del funzionario prussiano<lb/> Friedrich von Gentz (1764-1832), le quali riflettono a loro volta il realismo politico di Metternich di fronte alle nuove correnti<lb/> illuministiche francesi: «La storia universale è un eterno trapasso dal vecchio al nuovo. Nel perpetuo ciclo delle cose, tutto si<lb/> distrugge da sé, e il frutto giunto a maturazione si stacca dalla pianta che l'ha generato. Se vogliamo tuttavia che tale ciclo<lb/> non conduca alla rapida rovina di tutto quello che esiste, e quindi di ogni cosa buona e giusta, deve costituirsi necessariamente,<lb/> accanto al gran numero -che finisce sempre col prevalere -di coloro che si adoperano per l'avvento del nuovo, un numero<lb/> ridotto di persone che, con misura e coscienti dello scopo, difendono il vecchio, cercando di contenere in un flusso ordinato<lb/> il fiume del tempo che certo non possono né vogliono arrestare».<lb/> </bibl>
+      <bibl><label>48</label> Ivi, p. 96.<lb/> </bibl>
+      <bibl><label>49</label> Ivi, p. 103.<lb/> </bibl>
+      <bibl><label>50</label> T. Mann, Doctor Faustus, cit., p. 309.<lb/> </bibl>
+      <bibl><label>51</label> T. Mann, Considerazioni di un impolitico, cit., p. 31.<lb/> </bibl>
+      <bibl><label>52</label> T. Mann, Doctor Faustus, cit., p. 97.<lb/> </bibl>
+      <bibl><label>53</label> T. Mann, Considerazioni di un impolitico, cit., p. 575.<lb/> </bibl>
+      <bibl><label>54</label> Nelle Considerazioni, sono numerosi i passi in cui Mann attribuisce alla guerra «un elevarsi, un approfondirsi e un<lb/> nobilitarsi della pianta umana» (ivi, pp. 462-463). </bibl>
+      <bibl>Sulla lunga tradizione culturale di idealizzazione della guerra, che affonda<lb/> le proprie radici nel romanticismo tedesco, condivisa dal panorama intellettuale contemporaneo a Thomas Mann durante la<lb/> prima guerra mondiale -in autori dalle prospettive teoriche anche molto diverse, quali ad esempio Simmel, Scheler, Natorp,<lb/> Musil e persino Weber -si veda E. Alessiato, L'impolitico. Thomas Mann tra arte e guerra, cit., pp. 110-127.<lb/> </bibl>
+      <bibl><label>55</label> Cfr. T. Mann, "Drei Briefe an Louis Leibrich", Neue Rundschau, 77, 2 (1966): p. 227.<lb/> </bibl>
+      <bibl><label>56</label> T. Mann, La montagna magica, a cura di L. Crescenzi, R. Colorni, Mondadori, Milano, 2010, p. 1069.<lb/> </bibl>
+      <bibl><label>57</label> T. Mann, La filosofia di Nietzsche alla luce della nostra esperienza, cit., p. 1333.<lb/> </bibl>
+      <bibl><label>58</label> T. Mann, Considerazioni di un impolitico, cit., p. 109.<lb/> </bibl>
+      <bibl><label>59</label> Come sottolinea Alessiato, «il problema dell'arte per Thomas Mann coincide con il problema della vita» (Leben), e quindi<lb/> con il problema di Nietzsche, il cui vitalismo risale a sua volta a Schopenhauer -autore centrale tanto per Thomas<lb/> Buddenbrook quanto per Thomas Mann -e alla determinazione della vita come volontà (E. Alessiato, "Arte e Politica nelle<lb/> Considerazioni di un impolitico di Thomas Mann", Scienza e Politica 43, (2010): p. 74). </bibl>
+      <bibl>Cfr. anche H.D. Heimendahl, Kritik<lb/> und Verklärung. Studien zur Lebensphilosphie Thomas Manns in den Betrachtungen eines Unpolitischen, Der Zauberberg,<lb/> Goethe und Tolstoj und Joseph und seine Brüder, Königshausen&amp;Neumann, Würzburg, 1998;</bibl>
+      <bibl>L. Bazzicalupo, Riflessi politici<lb/> del mito della vita manniano, in G. Cantillo, D. Conte, A. Donise (a cura di), Thomas Mann tra etica e politica, cit., pp.169-<lb/>196.<lb/> </bibl>
+      <bibl><label>60</label> T. Mann, Considerazioni di un impolitico, cit., p. 191.<lb/> </bibl>
+      <bibl><label>61</label> Ivi, p. 358.<lb/> </bibl>
+      <bibl><label>62</label> G. Lukács, La distruzione della ragione, a cura di E. Matassi, Mimesis, Milano-Udine, 2011; in part., vol. II, cap. IV (La<lb/> filosofia della vita nella Germania imperialistica) -cap. VII (Darwinismo sociale, teoria della razza e fascismo), pp. 403-<lb/>771.<lb/> </bibl>
+      <bibl><label>63</label> Cfr. T. Mann, La posizione di Freud nella storia dello spirito moderno, in Nobiltà dello spirito, cit., p. 1353: «Freud, in<lb/> quanto esploratore delle profondità psichiche e psicologo dell'istinto, s'inserisce indubbiamente in quella schiera di scrittori<lb/> dell'Ottocento e del Novecento che… opponendosi al razionalismo, all'intellettualismo, al classicismo… danno risalto<lb/> scientifico al lato notturno della natura e dell'anima, vedendo in esso l'elemento propriamente creativo e determinante della<lb/> vita, e sostengono in modo rivoluzionario il primato delle forze telluriche e prespirituali… o, come dice Nietzsche, del<lb/> sentimento sulla ragione». </bibl>
+      <bibl>Sull'ideale manniano di un nuovo umanesimo, un «umanesimo notturno», come alternativa<lb/> all'umanesimo tradizionale di matrice illuministico-borghese, cfr. D. Conte, Illuminismo, civilizzazione e umanesimo<lb/> notturno, in Viandante del Novecento, cit., pp. 365-382.<lb/> </bibl>
+      <bibl><label>64</label> T. Mann, La filosofia di Nietzsche alla luce della nostra esperienza, cit., p. 1321.<lb/> </bibl>
+      <bibl><label>65</label> T. Mann, Considerazioni di un impolitico, cit., p. 103.<lb/> </bibl>
+      <bibl><label>66</label> T. Mann, La filosofia di Nietzsche alla luce della nostra esperienza, cit., p. 1332.<lb/> </bibl>
+      <bibl><label>67</label> T. Mann, La posizione di Freud nella storia dello spirito moderno, cit., p. 1353. </bibl>
+      <bibl>A riguardo, cfr. G. Carchia, "Il male come<lb/> problema estetico. Considerazioni sul Doctor Faustus", Cultura tedesca. Thomas Mann 2, 5 (1996): pp. 35-49.<lb/> </bibl>
+      <bibl><label>68</label> Per quanto riguarda l'influenza di Adorno sul romanzo manniano, in particolar modo sul tema del rapporto tra avanguardia<lb/> artistica e totalitarismo, cfr. S. Costagli, Theodor e il Mago. Adorno, Thomas Mann e il Doctor Faustus, in L. Pastore, T.<lb/> Gebur (a cura di), Theodor W. Adorno. Il maestro ritrovato, Manifestolibri, Roma, 2008, pp. 53-71; </bibl>
+      <bibl>A. Cecchi, Dialettica<lb/> della parodia. Thomas Mann, Adorno e il "Doktor Faustus", in S. Zurletti (ed.), Theodor W. Adorno 1903-2003. Una Ragione<lb/> per la musica, Cuen, Napoli, 2006, pp. 173-189; </bibl>
+      <bibl>E. Cobley, "Avant-Garde Aesthetics and Fascist Politics: Thomas Mann's<lb/> Doctor Faustus and Theodor W. Adorno's 'Philosophy of Modern Music'", New German Critique 86 (2002): pp. 43-70; </bibl>
+      <bibl>H.R.<lb/> Vaget, "Philosophisch-alarmierende Musik. Noch einmal: Thomas Mann und Adorno", Musik und Ästhetik 8, 23 (2004): pp. <lb/>9-42.<lb/> </bibl>
+      <bibl><label>69</label> Cfr. A. Giacomelli, L'Umanesimo e i suoi mostri. Rinascite e naufragi dell'humanitas tra Hieronymus Bosch, Friedrich<lb/> Nietzsche e Thomas Mann, in A. Giacomelli, S. Givone (a cura di), "Umanesimo, Humanismus, Humanisme", Paradosso 2<lb/> (2019), pp. 136 e ss.<lb/> </bibl>
+      <bibl><label>70</label> Ciò vale in particolar modo se si parla della cultura tedesca, che avrà bisogno di essere salvata e custodita dal nazismo:<lb/> «Dove sono io, ivi è la cultura tedesca» («Wo ich bin, ist die Deutsche Kultur»), dice Thomas Mann alla sua conferenza di<lb/> arrivo negli Stati Uniti (cfr. V. Hansen, "Where I am, there is Germany": Thomas Manns Interview vom 21. Februar 1938 in<lb/> New York, in M. Stern (ed.), Textkonstitution bei mündlicher und bei schriftlicher Überlieferung: Basler Editoren-Kolloquium<lb/> </bibl>
+      <bibl>19.-22. März 1990, Autor-und Werkbezogene Referate, Max Niemeyer Verlag, Tübingen, 1991, pp. 176-88.<lb/> </bibl>
+      <bibl><label>71</label> Cfr. D. Conte, Mutilazioni di guerra. Arte, politica e 'umanità', in Viandante del Novecento, cit., pp. 202 e ss.<lb/> </bibl>
+      <bibl><label>72</label> T. Mann, La filosofia di Nietzsche alla luce della nostra esperienza, cit., p. 1321.<lb/> </bibl>
+      <bibl><label>73</label> A. Mohler, La rivoluzione conservatrice in Germania 1918-1932, a cura di L. Arcella, La Roccia di Erec, Firenze, 1990, p.<lb/>
+      36.</bibl>
+      <bibl>Cfr. anche: S. Breuer, Anatomie der Konservativen Revolution, Wissenschaftliche Buchgesellschaft, Darmstadt, 1993;</bibl>
+      <bibl>E.<lb/> Nolte, La rivoluzione conservatrice nella Germania della Repubblica di Weimar, a cura di L. Iannone, Soveria Mannelli,<lb/> 2009; </bibl>
+      <bibl>F. Cattaneo, C. Gentili, S. Marino, Nietzsche nella Rivoluzione Conservatrice, cit.<lb/> </bibl>
+      <bibl><label>74</label> T. Mann, Considerazioni di un impolitico, cit., pp. 371-372.<lb/> </bibl>
+      <bibl><label>75</label> M. Marianelli, Presentazione, in T. Mann, Considerazioni di un impolitico, a cura di M. Marianelli, De Donato, Bari, 1977 3 ,<lb/> p. XXXII-XXXIII. </bibl>
+      <bibl>Questo saggio introduttivo di Marianelli, incluso nelle edizioni presso De Donato delle Considerazioni di<lb/> un impolitico, nelle più recenti edizioni presso Adelphi (1997, 2005) è stato mantenuto solo in forma parziale, dando priorità<lb/> alle sezioni del saggio relative alla genesi dell'opera manniana.</bibl>
+      <bibl>Nella sua forma integrale, il saggio si può recuperare anche<lb/> in M. Marianelli, Studi di letteratura tedesca, Giardini, Pisa, 1988, pp. 241-272.<lb/> </bibl>
+      <bibl><label>76</label> T. Mann, Considerazioni di un impolitico, cit., p. 31.<lb/> </bibl>
+      <bibl><label>77</label> Cfr. G. Ehrhardt, "Meine natürliche Aufgabe in dieser Welt ist erhaltender Art". Thomas Manns kulturkonservatives<lb/> Denken (1919-1922), in T. Sprecher, R. Wimmer (eds.), Thomas Mann Jahrbuch (16), Klostermann, Frankfurt a.M., 2003,<lb/> pp. 97-118.<lb/> </bibl>
+      <bibl><label>78</label> T. Mann, Betrachtungen eines Unpolitischen, Fischer, Frankfurt a.M., 1922. </bibl>
+      <bibl>In seguito, una ulteriore serie di edizioni -e<lb/> di tagli -fu inaugurata dalla figlia Erika Mann, nel 1956. Cfr. E. Mann, Einleitung, in T. Mann, Betrachtungen eines<lb/> Unpolitischen, Fischer, Frankfurt a.M., 1956, pp. IX-XXV.<lb/> </bibl>
+      <bibl><label>79</label> T. Mann, Goethe e Tolstoj, cit., pp. 148, 151. </bibl>
+      <bibl>Scritto tra il 1924 e il 1925, la forma aurorale del saggio Goethe e Tolstoj<lb/> (pubblicato per la prima volta nel 1925) risale nondimeno al testo dell'omonima conferenza tenuta da Thomas Mann a Lubecca<lb/> il 4 settembre 1921. In ultimo, fu ripubblicato da Fischer in un volume a sé per il centenario goethiano (1932). Cfr. P. de<lb/> Mendelssohn (ed.), Thomas Mann. Tagebücher: 1918-1921, Fischer, Frankfurt a.M., 1979, p. 509; </bibl>
+      <bibl>T. Mann, Behemungen.<lb/> Neue Folge der gesammelten Abhandlungen und kleinen Aufsätze, Fischer, Berlin, 1925.</bibl>
+    </listBibl>
+  </text>
+</TEI>

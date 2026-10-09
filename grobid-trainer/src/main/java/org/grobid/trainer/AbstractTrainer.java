@@ -118,6 +118,8 @@ public abstract class AbstractTrainer implements Trainer {
         trainer.setEpsilon(epsilon != 0.0 ? epsilon : GrobidProperties.getEpsilon(model));
         trainer.setWindow(window != 0 ? window : GrobidProperties.getWindow(model));
         trainer.setNbMaxIterations(nbMaxIterations != 0 ? nbMaxIterations : GrobidProperties.getNbMaxIterations(model));
+        trainer.setL1(GrobidProperties.getL1(model));
+        trainer.setL2(GrobidProperties.getL2(model));
 
         final File defaultModelPath = GrobidProperties.getModelPath(model);
         final File finalModelPath;
@@ -219,6 +221,8 @@ public abstract class AbstractTrainer implements Trainer {
             trainer.setWindow(window);
         if (nbMaxIterations != 0)
             trainer.setNbMaxIterations(nbMaxIterations);
+        trainer.setL1(GrobidProperties.getL1(model));
+        trainer.setL2(GrobidProperties.getL2(model));
 
         File dirModelPath = new File(GrobidProperties.getModelPath(model).getAbsolutePath()).getParentFile();
         if (!dirModelPath.exists()) {
@@ -280,6 +284,8 @@ public abstract class AbstractTrainer implements Trainer {
             trainer.setWindow(window);
         if (nbMaxIterations != 0)
             trainer.setNbMaxIterations(nbMaxIterations);
+        trainer.setL1(GrobidProperties.getL1(model));
+        trainer.setL2(GrobidProperties.getL2(model));
 
         //We dump the model in the tmp directory
         File tmpDirectory = new File(GrobidProperties.getTempPath().getAbsolutePath());

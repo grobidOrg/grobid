@@ -97,6 +97,8 @@ public enum GrobidModels implements GrobidModel {
         BLANK("blank"),
         ARTICLE_LIGHT("article/light"),
         ARTICLE_LIGHT_WITH_REFERENCES("article/light-ref"),
+        ARTICLE_FOOTNOTES_REFS("article/footnotes-refs"),
+        ARTICLE_FOOTNOTES_REFS_TOKEN("article/footnotes-refs-token"),
         _3GPP("sdo/3gpp"),
         IETF("sdo/ietf");
 

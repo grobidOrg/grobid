@@ -1,0 +1,139 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.21552__cclr__2017__3__4">
+    <titleStmt>
+      <title level="a">Anniversary Special: The Inaugural Issue a Decade Later ∙ Negotiating Climate Change in the UN:</title>
+      <author>
+        <persName>
+          <forename>C.</forename>
+          <surname>Bausch</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>M.</forename>
+          <surname>Mehling</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="pfaffe">Milena Pfaffe</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Lexxion Verlag</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2017</date>
+      <idno type="DOI">10.21552/cclr/2017/3/4</idno>
+      <ptr target="https://doi.org/10.21552/cclr/2017/3/4"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>C. Bausch, M. Mehling. (2017). Anniversary Special: The Inaugural Issue a Decade Later ∙ Negotiating Climate Change in the UN:. Carbon &amp;amp; Climate Law Review, 11(3), 179-183. DOI: 10.21552/cclr/2017/3/4</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Anniversary Special: The Inaugural Issue a Decade Later ∙ Negotiating Climate Change in the UN:</title>
+          <author>
+            <persName>
+              <forename>C.</forename>
+              <surname>Bausch</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>M.</forename>
+              <surname>Mehling</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Carbon &amp;amp; Climate Law Review</title>
+          <imprint>
+            <biblScope unit="volume">11</biblScope>
+            <biblScope unit="issue">3</biblScope>
+            <biblScope unit="page" from="179" to="183">179-183</biblScope>
+            <date when="2017">2017</date>
+            <publisher>Lexxion Verlag</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.21552/cclr/2017/3/4</idno>
+        <ptr target="https://doi.org/10.21552/cclr/2017/3/4"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-16T09:37:58.552083Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-65-gd393236aa</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-16T09:37:58.552083Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-17T12:10:19.499Z" status="unfinished" who="#pfaffe">
+      <note type="label">v2 (pfaffe)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-17T12:24:43.382Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-17T13:03:35.510Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-07-02T12:12:53.024Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-07-02T12:34:11.410Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> Camilla Bausch and Michael Mehling, 'Tracking Down the<lb/> Future Climate Regime: An Assessment of Current Negotiations<lb/> under the U.N.' (2007) 1(1) CCLR 4.<lb/> </bibl>
+        <bibl><label>2</label> UNFCCC Dec 1/CP.13 (2007) UN Doc FCCC/CP/2007/6/Add.1 3.<lb/> </bibl>
+        <bibl><label>3</label> An unprecedented number of participants came together in<lb/> Copenhagen; more than 100 heads of state and government<lb/> attended. As the summit progressed, however, it became increas-<lb/>ingly clear that expectations going into Copenhagen had been too<lb/> high, and that parties had failed to reach agreement on too many<lb/> details. In the end, the Danish Presidency was unable to guide<lb/> parties successfully through this difficult situation, and instead<lb/> fueled the tensions with uncoordinated initiatives. Instead of<lb/> passing a landmark instrument for the future climate regime, the<lb/> meager result of the Copenhagen summit was a toned down<lb/> 'Copenhagen Accord', which was only 'taken note of' by the<lb/> parties. See UNFCCC Dec 2/CP.15 (2009) UN Doc FC-<lb/>CC/CP/2009/11/Add.1 4.<lb/> </bibl>
+        <bibl><label>4</label> UNFCCC Dec 1/CP.21 (2015) UN Doc FCCC/CP/2015/10/Add.1<lb/> 2.<lb/> </bibl>
+
+        <bibl><label>5</label> Pope Francis published his Encyclical 'Laudato Si' at a strategical-<lb/>ly chosen point in time ahead of the 2015 Paris climate summit. It<lb/> was drafted with the support of several recognized scientists, and<lb/> highlighted the impacts of -and the need for action on -major<lb/> environmental challenges like climate change. See Pope Francis,<lb/> Laudato Si': On Care for Our Common Home (Encyclical, 2015)<lb/> &lt;http://w2.vatican.va/content/francesco/en/encyclicals/<lb/> documents/papa-francesco_20150524_enciclica-laudato-si.html&gt;<lb/> accessed 16 August 2017.<lb/> </bibl>
+        <bibl><label>6</label> There are many analyses of the trajectory of technology costs<lb/> which point in the same direction: a radical decline of prices for<lb/> renewable energy technologies, and a tendency of mainstream<lb/> forecasts (eg from the International Energy Agency) to underesti-<lb/>mate the growth in renewable energy capacities. As the Interna-<lb/>tional Renewable Energy Agency (IRENA) has shown, for in-<lb/>stance, the levelised cost of electricity from utility-scale renew-<lb/>able energy sources such as onshore wind and hydroelectric<lb/> generation had already fallen below the cost range of fossil ther-<lb/>mal generation in many areas of the world and as early as 2014,<lb/> and newer or costlier renewable energy technologies such as<lb/> solar photovoltaics and offshore wind were also on a pathway<lb/> towards convergence with the cost of conventional thermal<lb/> technologies, see IRENA, Renewable Power Generation Costs in<lb/> 2014 (IRENA, 2015) 27. </bibl>
+          <bibl>But there are difficulties to overcome,<lb/> not least the challenge of low coal prices and an unfortunate<lb/> abundance of direct and indirect fossil fuel subsidies, see for<lb/> example Ottmar Edenhofer, 'King Coal and the Queen of Subsi-<lb/>dies' (2015) 349 Science 1286.<lb/> </bibl>
+        <bibl><label>7</label> This has highlighted a general and fast-paced trend which still<lb/> persists, as reflected in investment patterns. See, for instance,<lb/> Renewable Energy Policy Network for the 21st Century (REN21),<lb/> Renewables 2017: Global Status Report (REN21, 2017) 116: 'In<lb/> 2016, renewable power technologies continued to attract far<lb/> more investment dollars than did fossil fuel or nuclear power<lb/> generating plants. An estimated USD 249.8 billion was commit-<lb/>ted to constructing new renewable power plants (including<lb/> $226.6 billion without large-scale hydropower, plus an estimated<lb/> $23.2 billion for hydropower projects larger than 50 MW). This<lb/> compares to approximately $113.8 billion committed to fossil<lb/> fuel-fired generating capacity and $30 billion for nuclear power<lb/> capacity. Overall, renewable energy accounted for about 63.5%<lb/> of the total amount committed to new power generating capacity<lb/> in 2016.'<lb/> </bibl>
+        <bibl><label>8</label> For an overview of the agreement, see Ralph Bodle, Lena Donat<lb/> and Matthias Duwe, 'The Paris Agreement: Analysis, Assessment<lb/> and Outlook' (2016) 10(1) CCLR 5.<lb/> </bibl>
+
+        <bibl><label>10</label> The legal thresholds for both treaties were similar. Art 21 of the<lb/> Paris Agreement states: 'This Agreement shall enter into force on<lb/> the thirtieth day after the date on which at least 55 Parties to the<lb/> Convention accounting in total for at least an estimated 55 per-<lb/>cent of the total global greenhouse gas emissions have deposited<lb/> their instruments of ratification, acceptance, approval or acces-<lb/>sion.' </bibl>
+          <bibl>Similarly, Article 25 of the Kyoto Protocol reads: 'This<lb/> Protocol shall enter into force on the ninetieth day after the date<lb/> on which not less than 55 Parties to the Convention, incorporat-<lb/>ing Parties included in Annex I which accounted in total for at<lb/> least 55 per cent of the total carbon dioxide emissions for 1990 of<lb/> the Parties included in Annex I, have deposited their instruments<lb/> of ratification, acceptance, approval or accession.'<lb/> </bibl>
+        <bibl><label>11</label> UNFCCC Dec 1/CMP.8 'Doha Amendment to the Kyoto Protocol'<lb/> (2012) UN Doc FCCC/KP/CMP/2012/13/Add.1.<lb/> </bibl>
+        <bibl><label>12</label> By August 2017, less than 100 parties had ratified the amend-<lb/>ment, lacking also many major emitters. An official overview of<lb/> the ratifications can be accessed here: &lt;https://treaties.un.org/<lb/> Pages/ViewDetails.aspx?src=TREATY&amp;mtdsg_no=XXVII-7-c<lb/> &amp;chapter=27&amp;clang=_en&gt; accessed 16 August 2017.<lb/> </bibl>
+        <bibl><label>13</label> Igor Shishlov, Romain Morel and Valentin Bellassen, 'Compliance<lb/> of the Parties to the Kyoto Protocol in the First Commitment<lb/> Period' (2016) 16(6) Climate Policy 768; </bibl><bibl>it bears noting, however,<lb/> that Canada -which was set to miss its quantified emission<lb/> reduction commitment -withdrew from the Kyoto Protocol late<lb/> in the first commitment period, invoking the process set out in art<lb/> 27.<lb/> </bibl>
+
+        <bibl><label>14</label> The plan addresses a broad range of issues, including NDCs,<lb/> long-term low-carbon development strategies, energy sector<lb/> transition, energy efficiency, renewable energy expansion, access<lb/> to sustainable energy, climate resilience and adaptation, financial<lb/> flows, and inefficient fossil fuel subsidies. While lacking, for<lb/> example, timelines for measures such as the phase-out of ineffi-<lb/>cient fossil fuel subsidies, the plan can be considered a step<lb/> forward towards developing a more concrete roadmap and<lb/> towards integration of the traditionally separate climate and<lb/> energy topics, a key innovation of the 2017 German Presidency.<lb/> The US position was clarified in a footnote: 'The United States is<lb/> currently in the process of reviewing many of its policies related<lb/> to climate change and continues to reserve its position on this<lb/> document and its contents'. G20, 'Annex to G20 Leaders Decla-<lb/>ration: G20 Hamburg Climate and Energy Action Plan for<lb/> Growth' (2017) &lt;http://www.g20.org/Content/DE/_Anlagen/G7<lb/> _G20/2017-g20-climate-and-energy-en.pdf?__blob<lb/> =publicationFile&amp;v&gt; accessed 16 August 2017.<lb/> </bibl>
+
+        <bibl><label>15</label> As of August 2017, 159 of the 197 parties to the UNFCCC have<lb/> already ratified the Paris Agreement. An official overview of<lb/> signatures and ratifications can be accessed here: &lt;https://treaties<lb/> .un.org/Pages/ViewDetails.aspx?src=TREATY&amp;mtdsg_no=XXVII-7<lb/> -d&amp;chapter=27&amp;clang=_en&gt; accessed 16 August 2017.<lb/> </bibl>
+        <bibl><label>16</label> UNFCCC, 'Taking the Paris Agreement Forward: Tasks Arising<lb/> from Decision 1/CP.21' (March 2016) &lt;http://unfccc.int/files/<lb/> bodies/cop/application/pdf/overview_1cp21_tasks_.pdf&gt; ac-<lb/>cessed on 16 August 2017.<lb/> </bibl>
+        <bibl><label>17</label> The APA agenda can be found here: UNFCCC, 'Agenda of the Ad<lb/> Hoc Working Group on the Paris Agreement at its First Session'<lb/> (2017) &lt;http://unfccc.int/files/meetings/bonn_nov_2017/<lb/> application/pdf/apa_1-4_agenda.pdf&gt; accessed on 16 August<lb/> 2017.<lb/> </bibl>
+        <bibl><label>18</label> At the time, our article highlighted the following questions: 'any<lb/> future climate regime will have to define answers to the following<lb/> general questions: Who will participate? What kind of targets can<lb/> developed countries agree upon? What kind of commitments are<lb/> developing countries willing to take on? What kind of country<lb/> groups can and should be established, especially: should there be<lb/> new forms of differentiation within the group of developing<lb/> countries? How should questions relating to adaptation needs and<lb/> technology be answered? What types of incentive schemes and<lb/> sanctions can and should be institutionalised?', see Bausch and<lb/> Mehling (n 1) 6.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>

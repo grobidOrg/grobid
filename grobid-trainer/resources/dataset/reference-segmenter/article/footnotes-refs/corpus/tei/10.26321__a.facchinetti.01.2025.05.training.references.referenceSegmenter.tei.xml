@@ -1,0 +1,399 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.26321__a.facchinetti.01.2025.05">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="sperber">Marcia Sperber</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+      <idno type="DOI">10.26321/a.facchinetti.01.2025.05</idno>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None. DOI: 10.26321/a.facchinetti.01.2025.05</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:23:53.673926Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:23:53.673926Z" status="extraction">
+      <note type="label">2 Schulze</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-02-25T11:38:21.695Z" status="draft" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-25T11:38:21.710Z" status="draft" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-25T11:46:37.312Z" status="unfinished" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-25T11:46:48.170Z" status="unfinished" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-02-25T12:32:32.720Z" status="draft" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-04T12:58:46.387Z" status="unfinished" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-14T15:46:16.372Z" status="draft" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-15T19:27:15.883Z" status="draft" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-15T20:04:59.106Z" status="checked" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-04-04T08:39:25.933Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-04T09:06:51.076Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-03T22:34:37.617Z" status="in-review" who="#lfoppiano">
+      <note type="label">v6 (lfoppiano)</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-04T13:57:42.844Z" status="in-review" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-04T14:19:03.493Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-04T14:47:13.716Z" status="checked" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-12T12:37:44.210Z" status="approved" who="#lfoppiano">
+      <note type="label">v7 (lfoppiano)</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-09-12T12:42:21.751Z" status="approved" who="#lfoppiano">
+      <desc>review</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label> Directive (EU) 2024/1760 of the European Parliament and of the Council, on corporate sustainability due<lb/> diligence, of 13 June 2024, in OJ L, 2024/1760, 5 July 2024, pp. 1-58.<lb/> </bibl>
+        <bibl><label>2</label> At the EU level, due diligence obligations for businesses had already been imposed in sectorial areas, for<lb/> instance by Regulation (EU) 2017/821 of the European Parliament and of the Council, on supply chain due<lb/> diligence obligations for Union importers of tin, tantalum and tungsten, their ores, and gold originating<lb/> from conflict-affected and high-risk areas, of 17 May 2017, in OJ L, 2017/130, 19 May 2017, pp. 1-20.<lb/> </bibl>
+
+        <bibl><label>3</label> M. FASCIGLIONE, Verso un regime europeo uniforme di responsabilità civile delle imprese per violazioni<lb/> dei diritti umani: riflessioni sulla proposta di direttiva europea sulla corporate sustainability due diligence,<lb/> in Quaderni di SIDIblog, 2022, vol. 9, pp. 473-511, p. 481.<lb/> </bibl>
+        <bibl><label>4</label> The drafting process of a binding treaty on business and human rights, albeit ongoing since 2014 within<lb/> the framework of the United Nations (Human Rights Council, Resolution n. 26/9, Elaboration of an<lb/> international legally binding instrument on transnational corporations and other business enterprises with<lb/> respect to human rights, 14 July 2024, A/HRC/RES/26/9), has not yet come to an end, also due to the<lb/> opposition of the European Union.</bibl>
+          <bibl>On the EU position in the negotiation process, see: D. AUGENSTEIN,<lb/> Managing Global Interdependencies through Law and Governance: The European Approach to Business<lb/> and Human Rights, in A. BONFANTI (ed.), Business and Human Rights in Europe. International Law<lb/> Challenges, New York, 2019, pp. 24-34, in particular pp. 27-28.</bibl>   <bibl>According to Third World Approaches to<lb/> International Law, developed States' reluctance to regulate global value chains at the international level<lb/> reflects the role of international law as enabler of the spoliation of the so-called "Third World" during the<lb/> colonial era and beyond: C. OMARI LICHUMA, (Laws) Made in the 'First World': A TWAIL Critique of the<lb/> Use of Domestic Legislation to Extraterritorially Regulate Global Value Chains, in Zeitschrift für<lb/> ausländisches öffentliches Recht und Völkerrecht, 2021, n. 81, pp. 497-532, p. 499.<lb/> </bibl>
+        <bibl><label>5</label> As there is no internationally agreed definition of indigenous peoples, the present contribution will refer<lb/> to "indigenous peoples" by taking into account the non-exhaustive criteria identified within the framework<lb/> of the United Nations with the contribution of representatives of indigenous peoples, namely: priority in<lb/> time, with respect to the occupation and use of a specific territory; the voluntary perpetuation of cultural<lb/> distinctiveness; self-identification, as well as recognition by other groups, or by State authorities, as a<lb/> distinct group; and an experience of subjugation, marginalization, dispossession, exclusion or<lb/> discrimination, whether or not these conditions persist (Economic and Social Council, Working Paper by<lb/> the Chairperson-Rapporteur, Mrs. Erica-Irene A. Daes, on the concept of "indigenous people", 10 June<lb/> 1996, E/CN.4/Sub.2/AC.4/1996/2, par. 69).</bibl>
+          <bibl>On the definition of indigenous peoples, see ex multis: R.<lb/> PISILLO MAZZESCHI, La normativa internazionale a protezione dei popoli indigeni, in A. PALMISANO, P.<lb/> PUSTORINO (a cura di), Identità dei Popoli Indigeni: aspetti giuridici, antropologici e linguistici, Roma,<lb/> 2008, pp. 19-32.<lb/> </bibl>
+        <bibl><label>6</label> See, ex multis: African Commission on Human and Peoples Rights, decision of 27 October 2001, Social<lb/> and Economic Rights Action Center (SERAC) and Center for Economic and Social Rights (CESR) v.<lb/> Nigeria; </bibl><bibl>Inter-American Court of Human Rights, judgment of 27 June 2012, Case of the Kichwa Indigenous<lb/> People of Sarayaku v. Ecuador.<lb/> </bibl>
+        <bibl><label>7</label> CESCR Committee, General Comment No. 12: The Right to Adequate Food (Art. 11), 12 May 1999,<lb/> E/C.12/1999/5, par. 4.<lb/> </bibl>
+
+        <bibl><label>8</label> Ibid. See infra, section 4.1 of this paper.<lb/> </bibl>
+        <bibl><label>9</label> See e.g.: Inter-American Court of Human Rights, judgment of 16 February 2020, Indigenous Communities<lb/> of the Lhaka Honhat (Our Land) Association v. Argentina, par. 254, quoting the amicus curiae intervention<lb/> of the former UN Special Rapporteur on the Right to Food, De Schutter: «Many indigenous peoples<lb/> understand the right to adequate food as a collective right. They often see subsistence activities such as<lb/> hunting, fishing and gathering as essential not only to their right to food, but to nurturing their cultures,<lb/> languages, social life and identity». The cultural value of food is recognized -with respect to indigenous<lb/> peoples in particular -also under art. 27 of the International Covenant on Civil and Political Rights<lb/> (ICCPR). See infra, section 3.2.<lb/> </bibl>
+        <bibl><label>10</label> In the sense that cultural heritage -including traditional subsistence practices -is essential for the same<lb/> existence of indigenous peoples, and is more effectively protected under human rights law rather than under<lb/> international cultural heritage law, see: F. LENZERINI, Indigenous Peoples' Cultural Heritage and<lb/> International Law: A Tale of Wrongs and of Struggle for Survival and Renaissance, in Michigan State<lb/> International Law Review, 2024, n. 1, pp. 57-96.</bibl>
+          <bibl>On the culturalization of human rights law, see generally,<lb/> by the same author: F. LENZERINI, The Culturalization of Human Rights Law, Oxford, 2014.<lb/> </bibl>
+        <bibl><label>11</label> D. SHELTON, F. GUZMÁN DUQUE, Advanced Introduction to Indigenous Human Rights, Cheltenham,<lb/> 2024, p. 94.<lb/> </bibl>
+        <bibl><label>12</label> M. NINO, "Land grabbing", sovranità territoriale e diritto alla terra dei popoli indigeni, in Diritti umani<lb/> e diritto internazionale, 2016, n. 1, pp. 185-208, p. 195.<lb/> </bibl>
+        <bibl><label>13</label> CESCR Committee, General comment No. 26 (2022) on land and economic, social and cultural rights,<lb/> 24 January 2023, E/C.12/GC/26, par. 6.<lb/> </bibl>
+
+        <bibl><label>14</label> Corporate social responsibility as embedded in the 2011 UN Guiding Principles on Business and Human<lb/> Rights (UNGPs) and national laws has been criticised, for instance, because of its focus on obligations of<lb/> means (i.e., the due diligence process), rather than on obligations of result. In this sense, see e.g.: S. DEVA,<lb/> Mandatory human rights due diligence laws in Europe: A mirage for rights holders?, in Leiden Journal of<lb/> International Law, 2023, n. 36, pp. 389-414, p. 398.</bibl> <bibl>According to Bonnitcha and McCorquodale, the<lb/> concept of businesses' due diligence obligations as enshrined in the UNGPs conflates two different<lb/> concepts, i.e. States' due diligence under international human rights law and businesses' due diligence<lb/> processes for risk management, without clarifying whether businesses have obligations of result or only<lb/> need to abide to a standard of conduct: J. BONNITCHA, R. MCCORQUODALE, The Concept of 'Due Diligence'<lb/> in the UN Guiding Principles on Business and Human Rights, in The European Journal of International<lb/> Law, 2017, n. 3, pp. 899-919.</bibl>
+          <bibl>In the sense that corporate due diligence under the UNGPs merges businesses'<lb/> due diligence processes and due diligence under human rights law, and that in both cases due diligence is<lb/> used as a defence from liability, see also: M. FASCIGLIONE, The Enforcement of Corporate Human Rights<lb/> Due Diligence: From the UN Guiding Principles on Business and Human Rights to the Legal Systems of<lb/> EU Countries, in Human Rights &amp; International Legal Discourse, 2016, n. 1, pp. 94-116.</bibl>
+          <bibl>Contra, arguing<lb/> that corporate responsibility under the UNGPs is an autonomous concept, not exhausted by due diligence<lb/> as a standard of conduct, see: J.G. RUGGIE, J.F. SHERMAN, The Concept of 'Due Diligence' in the UN<lb/> Guiding Principles on Business and Human Rights: A Reply to Jonathan Bonnitcha and Robert<lb/> McCorquodale, in The European Journal of International Law, 2017, n. 3, pp. 921-928. </bibl>
+          <bibl>The focus on<lb/> obligations of means, however, is apparent also within the EU Directive itself (see e.g. recital n. 19).<lb/> </bibl>
+
+        <bibl><label>15</label> Arguing that national corporate due diligence laws potentially breach the principle of consent in<lb/> international law and the sovereignty of host States, and perpetuate power imbalances of colonial<lb/> derivation, see e.g.: C. OMARI LICHUMA, (Laws) Made in the 'First World', cit., pp. 517-518;</bibl>
+          <bibl>F. DEHBI, O.<lb/> MARTIN-ORTEGA, An integrated approach to corporate due diligence from a human rights, environmental,<lb/> and TWAIL perspective, in Regulation &amp; Governance, 2023, n. 17, pp. 927-943, in particular pp. 932-935.<lb/></bibl>
+          <bibl>In contrast, affirming that such national legislations are to be regarded as instruments facilitating home<lb/> States' compliance with their international obligations, rather than as breaches of the host States'<lb/> sovereignty, see: A. BONFANTI, Imprese multinazionali, diritti umani e ambiente. Profili di diritto<lb/> internazionale pubblico e privato, Milano, 2012, p. 136.<lb/> </bibl>
+
+        <bibl><label>16</label> See, e.g.: CESCR Committee, General comment No. 26 (2022) on land and economic, social and cultural<lb/> rights, cit., par. 42, stating that «The extraterritorial obligation to protect requires States parties to establish<lb/> the necessary regulatory mechanisms to ensure that business entities, including transnational corporations,<lb/> and other non-State actors that they are in a position to regulate do not impair the enjoyment of rights under<lb/> the Covenant in land-related contexts in other countries. Thus, States parties shall take the necessary steps<lb/> to prevent human rights violations abroad in land-related contexts by non-State actors over which they can<lb/> exercise influence, without infringing on the sovereignty or diminishing the obligations of the host States».<lb/></bibl> <bibl>See also: Inter-American Commission on Human Rights, Special Rapporteur on Economic, Social, Cultural<lb/> and Environmental Rights, Soledad García Muñoz, Business and Human Rights: Inter-American<lb/> Standards, 1 November 2019, CIDH/REDESCA/INF.1/19, par. 152-153.<lb/> </bibl>
+
+        <bibl><label>17</label> H. CANTÙ RIVERA, The Corporate Sustainability Due Diligence Directive beyond Europe: Initial<lb/> Thoughts on its Effects across Global Value Chains, in VerfBlog, 14 June 2024,<lb/> https://verfassungsblog.de/the-corporate-sustainability-due-diligence-directive-csddd-beyond-europe/<lb/> (last access on 2 January 2025). </bibl>
+          <bibl>Authoritative doctrine underlines, in contrast, that the Directive does not<lb/> truly represent an extra-territorial exercise of home States' jurisdiction to prescribe, but rather displays<lb/> effects beyond the territory of EU Member States based on the principle of territoriality, in particular the<lb/> "effects doctrine". See: N. BOSCHIERO, L'extraterritorialità della futura direttiva europea sul dovere di<lb/> diligenza delle imprese ai fini della sostenibilità, tra diritto internazionale pubblico e privato, in Diritti<lb/> umani e diritto internazionale, 2023, n. 3, pp. 661-705, p. 669.<lb/> </bibl>
+
+        <bibl><label>18</label> F. DEHBI, O. MARTIN-ORTEGA, An integrated approach to corporate due diligence, cit., pp. 932-933.<lb/> </bibl>
+
+        <bibl><label>19</label> See e.g. the analysis of several civil society organizations, Corporate Sustainability Due Diligence<lb/> Directive. A guide to transposition and implementation for civil society organisations, November 2024,<lb/> available at https://www.fidh.org/en/issues/business-human-rights-environment/business-and-human-<lb/>rights/csddd-transposition-guide (last access on 2 January 2024), p. 22. </bibl>
+          <bibl>See also the authors cited infra,<lb/> footnotes 24-25. </bibl>
+          <bibl>As observed by Carella, however, the omission of any reference to regional human rights<lb/> treaties such as the European Convention on Human Rights in the CSDD Directive is probably aimed at<lb/> avoiding accusations of normative imperialism: G. CARELLA, La responsabilità civile dell'impresa<lb/> transnazionale per violazioni ambientali e di diritti umani: il contributo della proposta di direttiva sulla<lb/> due diligence societaria a fini di sostenibilità, in this Journal, 2022, n. 2, pp. 10-41, p. 28.<lb/> </bibl>
+
+        <bibl><label>20</label> Directive (EU) 2024/1760 of the European Parliament and of the Council, on corporate sustainability<lb/> due diligence, cit., recital n. 7.<lb/> </bibl>
+        <bibl><label>21</label> Ibid., art. 3(c)(i).<lb/> </bibl>
+        <bibl><label>22</label> Ibid., art. 3(c)(ii).<lb/> </bibl>
+        <bibl><label>23</label> G. CARELLA, La responsabilità civile dell'impresa transnazionale per violazioni ambientali e di diritti<lb/> umani, cit., p. 26;</bibl>
+          <bibl>M. FASCIGLIONE, Verso un regime europeo uniforme di responsabilità civile delle<lb/> imprese per violazioni dei diritti umani, cit., p. 496;</bibl>
+          <bibl>A. BONFANTI, Corporate Sustainability Due Diligence<lb/> Directive: A Human Rights-based Assessment, in Rivista del commercio internazionale, 2024, n. 4, pp. 857-<lb/>893, p. 864.<lb/> </bibl>
+
+        <bibl><label>24</label> UN Guiding Principles on Business and Human Rights: Implementing the United Nations "Protect,<lb/> Respect and Remedy" Framework, 2011, HR/PUB/11/04, commentary to principle 12.</bibl>
+          <bibl>In this sense, see:<lb/> M. FASCIGLIONE, Verso un regime europeo uniforme di responsabilità civile delle imprese per violazioni<lb/> dei diritti umani, cit., p. 497.<lb/> </bibl>
+        <bibl><label>25</label> C. METHVEN O' BRIEN, J. CHRISTOFFERSEN, The Proposed European Union Corporate Sustainability<lb/> Due Diligence Directive: Making or breaking European Human Rights Law?, in Anales de Derecho, 2023,<lb/> pp. 177-201, p. 190;</bibl>
+          <bibl>H. CANTÙ RIVERA, The Corporate Sustainability Due Diligence Directive beyond<lb/> Europe, cit.; </bibl>
+          <bibl>N. MEYER, C. PATZ, Dividing the Indivisible: Human Rights under the EU Corporate<lb/> Sustainability Due Diligence Directive, in VerfBlog, 1 June 2024, https://verfassungsblog.de/dividing-the-<lb/>indivisible-human-rights-under-the-eu-corporate-sustainability-due-diligence-directive/ (last access on 2<lb/> January 2025).</bibl>
+          <bibl>As is well-known, the concept of indivisibility of human rights was recognised in the World<lb/> Conference on Human Rights in Vienna, Vienna Declaration and Program of Action, 25 June 1993, par. 5.<lb/></bibl> <bibl>The indivisibility of human rights calls for the surpassing of the distinction among generations of rights, as<lb/> affirmed in F. POCAR, The Universal Declaration: a dual dimension approach to human rights, in A.<lb/> LUPONE, C. RICCI, A. SANTINI (eds.), The right to safe food towards global governance, Turin, 2013, pp. 3-<lb/>8.<lb/> </bibl>
+
+        <bibl><label>26</label> H. CANTÙ RIVERA, The Corporate Sustainability Due Diligence Directive beyond Europe, cit.; </bibl>
+          <bibl>N.<lb/> MEYER, C. PATZ, Dividing the Indivisible, cit.; </bibl>
+          <bibl>Corporate Sustainability Due Diligence Directive. A guide<lb/> to transposition and implementation for civil society organisations, cit., p. 31.<lb/> </bibl>
+
+        <bibl><label>27</label> Both instruments affirm indigenous peoples' collective property of their ancestral land (ILO Convention,<lb/> art. 14; UNDRIP, art. 26). </bibl>
+          <bibl>The right, however, is not absolute, given that indigenous peoples can be<lb/> relocated: according to ILO Convention, even without the consent of the population (ILO Convention, art.<lb/> 16), </bibl>
+          <bibl>whereas UNDRIP requires the free, prior and informed consent of the indigenous people not only to<lb/> be sought, but also to be obtained (UNDRIP, art. 10).</bibl>
+          <bibl>Therefore, as underlined in literature, ILO Convention<lb/> does not provide strong protection from forced relocation: F. LENZERINI, The Trail of Broken Dreams: The<lb/> Status of Indigenous Peoples in International Law, in F. LENZERINI (ed.), Reparations for Indigenous<lb/> Peoples: International and Comparative Perspectives, Oxford, 2008, pp. 73-116, p. 86. </bibl>
+          <bibl>Moreover, with<lb/> regard to the disposal of natural resources, ILO Convention does not affirm indigenous peoples' property,<lb/> but only their right of use.</bibl>
+          <bibl>In case of disposal by the State, ILO Convention only requires the undertaking<lb/> of consultations (ILO Convention, Article 15(2)), and not the free, prior and informed consent of indigenous<lb/> peoples, as instead necessary under art. 32 UNDRIP.</bibl>
+          <bibl>ILO Convention No. 169 thus seems to reflect the<lb/> position of States, more than that of indigenous peoples, as observed in J. GILBERT, C. DOYLE, A New Dawn<lb/> over the Land: Shedding Light on Collective Ownership and Consent, in S. ALLEN, A. XANTHAKI (eds.),<lb/> Reflections on the UN Declaration on the Rights of Indigenous Peoples, Oxford, 2011, pp. 289-328, p. 302.<lb/> </bibl>
+
+        <bibl><label>28</label> UNDRIP, art. 32(2). Emphasis added.<lb/> </bibl>
+        <bibl><label>29</label> Economic and Social Council, Permanent Forum on Indigenous Issues, Report of the International<lb/> Workshop on Methodologies regarding Free, Prior and Informed Consent and Indigenous Peoples, 17<lb/> February 2005, E/C.19/2005/3, par. 46.<lb/> </bibl>
+        <bibl><label>30</label> Directive (EU) 2024/1760 of the European Parliament and of the Council, on corporate sustainability<lb/> due diligence, cit., recital n. 33.<lb/> </bibl>
+
+        <bibl><label>31</label> Ibid., recital n. 65.<lb/> </bibl>
+        <bibl><label>32</label> European Commission, Annex to the proposal for a Directive of the European Parliament and of the<lb/> Council on Corporate Sustainability Due Diligence and amending Directive (EU) 2019/1937, 23 February<lb/> 2022, COM(2022) 71 final, Part I.1., par. 20.<lb/> </bibl>
+        <bibl><label>33</label> In this sense, see e.g.: INTERNATIONAL LAW ASSOCIATION (ILA), resolution n. 5/2012, Rights of<lb/> Indigenous Peoples, conclusion n. 2.</bibl>
+          <bibl>On the debate surrounding the customary status of UNDRIP, see ex<lb/> multis: S. ESTERLING, Looking Forward Looking Back: Customary International Law, Human Rights and<lb/> Indigenous Peoples, in International Journal on Minority and Group Rights, 2021, n. 28, pp. 280-305.<lb/> </bibl>
+        <bibl><label>34</label> Namely Denmark, Germany, Luxembourg, the Netherlands and Spain. See the status of ratifications:<lb/> https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:11300:0::NO::P11300_INSTRUMENT_ID:3<lb/> 12314 (last access on 3 January 2025).<lb/> </bibl>
+        <bibl><label>35</label> European Commission, Annex to the proposal for a Directive on Corporate Sustainability Due Diligence,<lb/> cit., Part I.2.<lb/> </bibl>
+        <bibl><label>36</label> See e.g.: Committee on the Elimination of All Forms of Racial Discrimination (CERD Committee),<lb/> General Recommendation No. 23: Indigenous Peoples, 18 August 1997, A/52/18, par. 5</bibl>.
+          <bibl>See further in C.<lb/> CHARTERS, Reparations for Indigenous Peoples: Global International Instruments and Institutions, in F.<lb/> LENZERINI (ed.), Reparations for Indigenous Peoples, cit., pp. 163-196, pp. 181-186.<lb/> </bibl>
+        <bibl><label>37</label> See the ratification status as of 2 January 2025:<lb/> https://tbinternet.ohchr.org/_layouts/15/TreatyBodyExternal/Treaty.aspx?Treaty=CERD.<lb/></bibl>
+        <bibl><label>38</label> Besides human rights obligations, the Annex to the CSDD Directive also includes certain environmental<lb/> provisions: Directive (EU) 2024/1760 of the European Parliament and of the Council, on corporate<lb/> sustainability due diligence, cit., Annex, Part I.2.<lb/> </bibl>
+        <bibl><label>39</label> Ibid., Annex, Part I.1, par. 1.<lb/> </bibl>
+
+        <bibl><label>40</label> Ibid., Annex, Part I.1, par. 15.<lb/> </bibl>
+        <bibl><label>41</label> Ibid., Annex, Part I.1, par. 16.<lb/> </bibl>
+        <bibl><label>42</label> Ibid., Annex, Part I.1, par. 8.<lb/> </bibl>
+        <bibl><label>43</label> With reference to the authoritativeness of the pronouncements of the Human Rights Committee, see e.g.:<lb/> International Court of Justice, Republic of Guinea v. Democratic Republic of the Congo, judgment of 30<lb/> November 2010, par. 66.</bibl>
+          <bibl>See also: ILA, Final Report on the Impact of Findings of the United Nations<lb/> Human Rights Treaty Bodies, 2004, par. 175.<lb/> </bibl>
+
+        <bibl><label>44</label> Directive (EU) 2024/1760 of the European Parliament and of the Council, on corporate sustainability<lb/> due diligence, cit., Annex, Part I.1, par. 15.<lb/> </bibl>
+        <bibl><label>45</label> Human Rights Committee, General Comment No. 36, Article 6: right to life, 3 September 2019,<lb/> CCPR/C/GC/36, par. 26.<lb/> </bibl>
+        <bibl><label>46</label> W.A. SCHABAS, U.N. International Covenant on Civil and Political Rights: Nowak's Commentary, 3 rd<lb/> edition, 2019, Khel, pp. 126-127.<lb/> </bibl>
+        <bibl><label>47</label> Human Rights Committee, General Comment No. 36, Article 6: right to life, cit., par. 26.<lb/> </bibl>
+        <bibl><label>48</label> See, ex multis: Inter-American Court of Human Rights, advisory opinion OC-23/17 of 15 November<lb/> 2017, The Environment and Human Rights, par. 109-110, 113; </bibl>
+          <bibl>judgment of 17 June 2005, Case of the Yakye<lb/> Axa Indigenous Community v. Paraguay, par. 168. </bibl>
+          <bibl>In the latter judgment, the Inter-American Court<lb/> recognised that dispossession can lead to the death of the most vulnerable within indigenous communities,<lb/> i.e. children and the elderly (par. 173-176).</bibl>
+          <bibl>In contrast, Shelton and Guzmán highlight that the African<lb/> Court on Human and Peoples' Rights took a different position, denying that situations of extreme poverty<lb/> caused by dispossession might be in breach of the right to life: D. SHELTON, F. GUZMÁN DUQUE, Advanced<lb/> Introduction to Indigenous Human Rights, cit., pp. 90-91, </bibl>
+          <bibl>commenting African Court on Human and<lb/> Peoples' Rights, judgment of 26 May 2017, African Commission on Human and Peoples' Rights v. Republic<lb/> of Kenya, par. 153-155.<lb/> </bibl>
+
+        <bibl><label>49</label> Directive (EU) 2024/1760 of the European Parliament and of the Council, on corporate sustainability<lb/> due diligence, cit., Annex, Part I.1, par. 16.<lb/> </bibl>
+
+        <bibl><label>50</label> Human Rights Committee, General comment No. 36, cit., par. 62.<lb/> </bibl>
+        <bibl><label>51</label> The Inter-American Court has widely elaborated on environmental harm and indigenous peoples' right<lb/> to life, for instance in the aforementioned advisory opinion OC-23/17 of 15 November 2017.<lb/> </bibl>
+        <bibl><label>52</label> Human Rights Committee, General comment No. 12: Article 1 (Right to self-determination), 13 March<lb/> 1984, par. 1.<lb/> </bibl>
+        <bibl><label>53</label> Ibid., par. 5.</bibl>
+          <bibl>In contrast, according to some authors, economic self-determination in relation to land claims<lb/> finds a more appropriate legal basis in the right to development: A. XANTHAKI, Indigenous Rights and<lb/> United Nations Standards: Self-Determination, Culture and Land, Cambridge, 2007, pp. 238-239.</bibl>
+          <bibl>It is true<lb/> that, without development, there is hardly true self-determination: W.A. SCHABAS, U.N. International<lb/> Covenant on Civil and Political Rights: Nowak's Commentary, cit., p. 11.<lb/> </bibl>
+
+        <bibl><label>54</label> Human Rights Committee, concluding Observations on Chile, 18 May 2007, CCPR/C/CHL/CO/5;<lb/> </bibl>
+          <bibl>concluding Observations on Panama, 17 April 2008, CCPR/C/PAN/CO/3.<lb/> </bibl>
+        <bibl><label>55</label><lb/> Human Rights Committee, General comment No. 23(50) (art. 27), 26 April 1994,<lb/> CCPR/C/21/Rev.1/Add.5, par. 3.1.</bibl>
+          <bibl>In the case law, see: Human Rights Committee, adoptions of views of<lb/> 26 March 1990, Ominayak (Lubicon Lake Band) v. Canada, CCPR/C/38/D/167/1984, par. 13.3;</bibl>
+          <bibl>adoption<lb/> of views of 24 April 2009, Poma Poma v. Peru, CCPR/C/95/D/1457/2006, par. 6.3.<lb/> </bibl>
+        <bibl><label>56</label> Human Rights Committee, General comment No. 23(50) (art. 27), cit., par. 6.2.<lb/> </bibl>
+        <bibl><label>57</label> Human Rights Committee, adoption of views of 27 October 2000, Apirana Mahuika et al. v. New<lb/> Zealand, CCPR/C/70/D/547/1993, par. 9.2.;</bibl>
+          <bibl>adoption of views of 16 October 2018, Tiina v. Finland,<lb/> CCPR/C/119/D/2668/2015, par. 8.6.;</bibl>
+          <bibl>adoption of views of 13 March 2024, Ailsa Roy v. Australia,<lb/> CCPR/C/137/D/3585/2019, par. 7.3.<lb/> </bibl>
+        <bibl><label>58</label> W.A. SCHABAS, U.N. International Covenant on Civil and Political Rights: Nowak's Commentary, cit.,<lb/> p. 817.<lb/> </bibl>
+        <bibl><label>59</label> Human Rights Committee, General comment No. 23(50) (art. 27), cit., paras. 3.2, 7.<lb/> </bibl>
+        <bibl><label>60</label> See e.g.: Human Rights Committee, adoption of views of 4 August 2005, Howard v. Canada,<lb/> CCPR/C/84/D/879/1999, par. 12.3, where the Committee refused to state on the legitimacy of the treaty<lb/> that extinguished indigenous peoples' right to fish on the ancestral territory outside their reserve.</bibl>
+          <bibl>In<lb/> contrast, when dealing with country communications, the Human Rights Committee has affirmed that the<lb/> practice of abolishing native titles is contrary to the right to self-determination under Article 1 ICCPR:<lb/> Human Rights Committee, concluding observations on the fourth periodic report of Canada, 6 April 1999,<lb/> CCPR/C/79/Add.105, par. 8.</bibl>
+          <bibl>On the reliance on the right to self-determination to contest land agreements<lb/> (a practice used in countries such as Canada, the United States and Australia) extinguishing indigenous<lb/> peoples' right to land and natural resources, see: B. KINGSBURY, Reconciling Five Competing Conceptual<lb/> Structures of Indigenous Peoples' Claims in International and Comparative Law, in New York University<lb/> Journal of International Law and Politics, 2001, n. 34, pp. 189-250, in particular pp. 227-228;</bibl> <bibl>A.<lb/> XANTHAKI, Indigenous Rights and United Nations Standards, cit., pp. 246-248.<lb/> </bibl>
+
+        <bibl><label>61</label> Human Rights Committee, adoption of views of 21 September 2022, Ava Guarani People v. Paraguay,<lb/> CCPR/C/132/D/2552/2015, par. 8.5.<lb/> </bibl>
+        <bibl><label>62</label> Human Rights Committee, adoption of views of 13 March 2024, Ailsa Roy v. Australia, cit., par. 8.3.<lb/> </bibl>
+        <bibl><label>63</label> Ibid., par. 7.</bibl>
+          <bibl>See also the following case law: Human Rights Committee, adoption of views of 27 October<lb/> 2000, Apirana Mahuika et al. v. New Zealand, cit., par. 9.5;</bibl>
+          <bibl>adoption of views of 12 September 2024,<lb/> Jovsset v. Norway, CCPR/C/141/D/3588/2019, par. 10.4.<lb/> </bibl>
+        <bibl><label>64</label> See e.g.: Human Rights Committee, adoption of views of 24 April 2009, Poma Poma v. Peru, cit., par.<lb/> 7.6; </bibl>
+          <bibl>concluding observations on Sweden, 28 April 2016, CCPR/C/SWE/CO/7, par. 39.<lb/> </bibl>
+        <bibl><label>65</label> Human Rights Committee, adoption of views of 24 April 2009, Poma Poma v. Peru, cit., par. 7.5-7.6.<lb/> </bibl>
+        <bibl><label>66</label> Human Rights Committee, adoption of views of 21 September 2022, Ava Guarani People v. Paraguay,<lb/> cit., par. 8.5-8.7.<lb/> </bibl>
+        <bibl><label>67</label> Human Rights Committee, adoption of views of 18 September 2023, Billy and others v. Australia,<lb/> CCPR/C/135/D/3624/2019, par. 8.14.<lb/> </bibl>
+        <bibl><label>68</label> Directive (EU) 2024/1760 of the European Parliament and of the Council, on corporate sustainability<lb/> due diligence, cit., Annex, Part I.1, par. 15.<lb/> </bibl>
+
+        <bibl><label>69</label> Ibid., par. 15-16.<lb/> </bibl>
+        <bibl><label>70</label> CESCR Committee, General Comment No. 12: The Right to Adequate Food (Art. 11), cit., par. 1.<lb/> </bibl>
+        <bibl><label>71</label> Based on the wording of art. 11, the right to adequate food enshrined in art. 11(1) seems to impose upon<lb/> States a relative obligation of progressive realization, whereas from the right to be free from hunger (art.<lb/> 11(2)) seem to stem absolute obligations, of immediate realization. </bibl>
+          <bibl>See: A. VIVIANI, Land grabbing e diritti<lb/> umani, in Diritti umani e diritto internazionale, 2016, n. 1, pp. 209-232, p. 218.;</bibl>
+          <bibl>J. BOURKE-MARTIGNONI,<lb/> The Right to Food, in J. DUGARD, B. PORTER, D. IKAWA, L. CHENWIP (eds.), Research handbook on<lb/> economic, social and cultural rights as human rights, Cheltenham, 2020, pp. 138-158, p. 141.<lb/> </bibl>
+
+        <bibl><label>72</label> CESCR Committee, General Comment No. 12: The Right to Adequate Food (Art. 11), cit., par. 6.<lb/> </bibl>
+        <bibl><label>73</label> Ibid., par. 9.<lb/> </bibl>
+
+        <bibl><label>74</label> Ibid., par. 10.<lb/> </bibl>
+        <bibl><label>75</label> Ibid., par. 11.<lb/> </bibl>
+        <bibl><label>76</label> CESCR Committee, General comment No. 21: Right of everyone to take part in cultural life (art. 15,<lb/> para. 1 (a), of the International Covenant on Economic, Social and Cultural Rights), 21 December 2009,<lb/> E/C.12/GC/21, par. 13.<lb/> </bibl>
+        <bibl><label>77</label> CESCR Committee, General Comment No. 12: The Right to Adequate Food (Art. 11), cit., par. 12.<lb/> </bibl>
+        <bibl><label>78</label> Ibid., par. 13.<lb/> </bibl>
+        <bibl><label>79</label> Ivi.<lb/> </bibl>
+        <bibl><label>80</label> CESCR Committee, General comment No. 26 (2022) on land and economic, social and cultural rights,<lb/> cit., par. 6.<lb/> </bibl>
+        <bibl><label>81</label> CESCR Committee, concluding observations: report on the technical assistance mission: Panama, 20<lb/> June 1995, E/C.12/1995/8, par. 79;</bibl>
+          <bibl>concluding observations on Tanzania, 30 November 2012,<lb/> E/C.12/TZA/CO/1-3, par. 22;</bibl>
+          <bibl>concluding observations on the Russian Federation, 16 October 2017,<lb/> E/C.12/RUS/CO/6, par. 48.<lb/> </bibl>
+
+        <bibl><label>82</label> CESCR Committee, concluding observations on Cameroon, 23 January 2012, E/C.12/CMR/CO/3, par.<lb/> 24;</bibl> <bibl>concluding observations on Guatemala, 9 December 2014, E/C.12/GTM/CO/3, par. 21.<lb/> </bibl>
+        <bibl><label>83</label> CESCR Committee, concluding observations on Indonesia, 19 June 2014, E/C.12/IDN/CO/1, par. 29.<lb/> </bibl>
+        <bibl><label>84</label> CESCR Committee, concluding observations on Australia, 22 May 2009, E/C.12/AUS/CO/4, par. 26;<lb/> </bibl> <bibl>concluding observations on the Russian Federation, 16 October 2017, cit., par. 42-43.<lb/> </bibl>
+        <bibl><label>85</label> CESCR Committee, concluding observations on Cameroon, 8 December 1999, E/C.12/1/Add.40, par.<lb/> 23;</bibl> <bibl>concluding observations on Brazil, 22 May 2009, E/C.12/BRA/CO/2, par. 26.<lb/> </bibl>
+        <bibl><label>86</label> CESCR Committee, concluding observations on Ethiopia, 31 May 2012, E/C.12/ETH/CO/1-3, par. 24.<lb/> </bibl>
+        <bibl><label>87</label> CESCR Committee, concluding observations on Cameroon, 25 March 2019, E/C.12/CMR/CO/4, par.<lb/> 16.<lb/> </bibl>
+        <bibl><label>88</label> CESCR Committee, concluding observations on Tanzania, 30 November 2012, cit., par. 22.<lb/> </bibl>
+        <bibl><label>89</label> Directive (EU) 2024/1760 of the European Parliament and of the Council, on corporate sustainability<lb/> due diligence, cit., Annex, Part I.1, par. 15.<lb/> </bibl>
+
+        <bibl><label>90</label> C. RICCI, Contenuti normativi del diritto a un "cibo adeguato" nel diritto internazionale, in C. RICCI (a<lb/> cura di), La tutela multilivello del diritto alla sicurezza e qualità degli alimenti, Milano, 2012, pp. 33-59,<lb/> in particular p. 34.<lb/> </bibl>
+        <bibl><label>91</label> CESCR Committee, General Comment No. 14 (2000): The right to the highest attainable standard of<lb/> health (article 12 of the International Covenant on Economic, Social and Cultural Rights), 11 August 2000,<lb/> E/C.12/2000/4, par. 11. Emphasis added.<lb/> </bibl>
+        <bibl><label>92</label> Ibid., par. 36.<lb/> </bibl>
+        <bibl><label>93</label> Ibid., par. 43.<lb/> </bibl>
+        <bibl><label>94</label> Ibid., par. 15.<lb/> </bibl>
+        <bibl><label>95</label> CESCR Committee, concluding observations on Peru, 30 May 2012, E/C.12/PER/CO/2-4, par. 22.<lb/> </bibl>
+        <bibl><label>96</label> CESCR Committee, General comment No. 26 (2022) on land and economic, social and cultural rights,<lb/> cit., par. 9.<lb/> </bibl>
+        <bibl><label>97</label> CESCR Committee, concluding observations on Peru, 30 May 2012, cit., par. 22.<lb/> </bibl>
+
+        <bibl><label>98</label> CESCR Committee, General comment No. 26 (2022) on land and economic, social and cultural rights,<lb/> cit., par. 11.<lb/> </bibl>
+        <bibl><label>99</label> Ivi. While part of the global indigenous movement firstly considered political independence as an option,<lb/> the prevailing approach (also reflected in UNDRIP, art. 46) is nowadays that of self-determination within<lb/> the boundaries of the territorial State.</bibl>
+          <bibl>See e.g.: B. KINGSBURY, Reconciling Five Competing Conceptual<lb/> Structures, cit., p. 218 ss.;</bibl>
+          <bibl>E.I. DAES, The UN Declaration on the Rights of Indigenous Peoples: Background<lb/> and Appraisal, in S. ALLEN, A. XANTHAKI (eds.), Reflections on the UN Declaration on the Rights of<lb/> Indigenous Peoples, cit., pp. 11-40, in particular pp. 14, 26-27.</bibl>
+          <bibl>In the sense that the creation of a nation<lb/> State of their own would represent a change in indigenous peoples' political, economic and cultural way of<lb/> life, therefore in what characterises them as indigenous, see: A. DI BLASE, The Self-Determination of<lb/> Indigenous Peoples, in A. DI BLASE, V. VADI (eds.), The Inherent Rights of Indigenous Peoples in<lb/> International Law, Rome, 2020, pp. 47-90, p. 53 ss.<lb/> </bibl>
+        <bibl><label>100</label> CESCR Committee, General comment No. 26 (2022) on land and economic, social and cultural rights,<lb/> cit., par. 11.<lb/> </bibl>
+        <bibl><label>101</label> CESCR Committee, concluding observations on the Russian Federation, 12 December 2003,<lb/> E/C.12/1/Add.94, par. 11;</bibl>
+          <bibl>concluding observations on Nicaragua, 28 November 2008, E/C.12/NIC/CO/4,<lb/> par. 11;</bibl>
+          <bibl>concluding observations on Cambodia, 22 May 2009, E/C.12/KHM/CO/1, par. 16;</bibl>
+          <bibl>concluding<lb/> observations on El Salvador, 19 June 2014, E/C.12/SLV/CO/3-5, par. 27;</bibl>
+          <bibl>concluding observations on<lb/> Guatemala, 9 December 2014, E/C.12/GTM/CO/3, par. 6;</bibl>
+          <bibl>concluding observations on Paraguay, 20 March<lb/> 2015, E/C.12/PRY/CO/4, par. 6;</bibl>
+          <bibl>concluding observations on Chile, 7 July 2015, E/C.12/CHL/CO/4, par.<lb/> 8;</bibl>
+          <bibl>concluding observations on Cameroon, 25 March 2019, cit., par. 12.<lb/> </bibl>
+
+        <bibl><label>102</label> CESCR Committee, concluding observations on Brazil, 23 May 2003, E/C.12/1/Add.87, par. 58.<lb/> </bibl>
+        <bibl><label>103</label> CESCR Committee, General comment No. 26 (2022) on land and economic, social and cultural rights,<lb/> cit., par. 16.<lb/> </bibl>
+        <bibl><label>104</label> CESCR Committee, concluding observations on Cambodia, 22 May 2009, cit., par. 15.<lb/> </bibl>
+        <bibl><label>105</label> CESCR Committee, General comment No. 26 (2022) on land and economic, social and cultural rights,<lb/> cit., par. 16, quoting art. 10 UNDRIP.<lb/> </bibl>
+        <bibl><label>106</label> CESCR Committee, concluding observations on Colombia, 30 November 2001, E/C.12/1/Add.74, par.<lb/> 33;</bibl> <bibl>concluding observations on Brazil, 23 May 2003, cit., par. 58;</bibl> <bibl>concluding observations on Ecuador, 7<lb/> June 2004, E/C.12/1/Add.100, par. 35;</bibl>
+          <bibl>concluding observations on Nicaragua, 28 November 2008, cit.,<lb/> par. 11;</bibl>
+          <bibl>concluding observations on New Zealand, 31 May 2012, E/C.12/NZL/CO/3, par. 11;</bibl>
+          <bibl>concluding<lb/> observations on El Salvador, 19 June 2014, cit., par. 27;</bibl>
+          <bibl>concluding observations on Guatemala, 9<lb/> December 2014, cit., par. 7;</bibl>
+          <bibl>concluding observations on Paraguay, 20 March 2015, cit., par. 6;</bibl>
+          <bibl>concluding<lb/> observations on Chile, 7 July 2015, cit., par. 8;</bibl>
+          <bibl>concluding observations on Australia, 11 July 2017,<lb/> E/C.12/AUS/CO/5, par. 15;</bibl>
+          <bibl>concluding observations on the Russian Federation, 16 October 2017,<lb/> E/C.12/RUS/CO/6, par. 14-15;</bibl>
+          <bibl>concluding observations on Cameroon, 25 March 2019, cit., par. 12-13.<lb/> </bibl>
+
+        <bibl><label>107</label> See e.g.: CESCR Committee, concluding observations on Colombia, 30 November 2001, cit., par. 33;<lb/></bibl> <bibl>concluding observations on Brazil, 23 May 2003, cit., par. 58;</bibl> <bibl>concluding observations on Ecuador, 7 June<lb/> 2004, cit., par. 35.<lb/> </bibl>
+        <bibl><label>108</label> CESCR Committee, concluding observations on El Salvador, 19 June 2014, cit., par. 28.<lb/> </bibl>
+        <bibl><label>109</label> Ivi; CESCR Committee, concluding observations on New Zealand, 31 May 2012, cit., par. 11.<lb/> </bibl>
+        <bibl><label>110</label> CESCR Committee, concluding observations on Cambodia, 22 May 2009, cit., par. 15;</bibl>
+          <bibl>concluding<lb/> observations on the Russian Federation, 16 October 2017, cit., par. 15.<lb/> </bibl>
+        <bibl><label>111</label> See e.g.: United Nations Convention on Environmental Impact Assessment in a Transboundary Context,<lb/> 25 February 1991.</bibl>
+          <bibl>In international case law, see e.g.: International Court of Justice, Pulp Mills on the River<lb/> </bibl>
+
+        <bibl><label>112</label> Directive (EU) 2024/1760 of the European Parliament and of the Council, on corporate sustainability<lb/> due diligence, cit., Annex, Part I.1, par. 15.<lb/> </bibl>
+        <bibl><label>113</label> Ibid., par. 16.<lb/> </bibl>
+        <bibl><label>114</label> CESCR Committee, General Comment No. 20: Non-discrimination in economic, social and cultural<lb/> rights (art. 2, para. 2, of the International Covenant on Economic, Social and Cultural Rights), 2 July 2009,<lb/> E/C.12/GC/20, par. 18.<lb/> </bibl>
+        <bibl><label>115</label> CESCR Committee, concluding observations on Kenya, 1 December 2008, E/C.12/KEN/CO/1, par. 12.<lb/> </bibl>
+        <bibl><label>116</label> CESCR Committee, concluding observations on Nicaragua, 28 November 2008, cit., par. 11.<lb/> </bibl>
+
+        <bibl><label>117</label> CESCR Committee, concluding observations on Ecuador, 7 June 2004, cit., par. 35;</bibl>
+          <bibl>concluding<lb/> observations on Chile, 7 July 2015, cit., par. 11.<lb/> </bibl>
+        <bibl><label>118</label> CESCR Committee, concluding observations on Nicaragua, 28 November 2008, cit., par. 11.<lb/> </bibl>
+        <bibl><label>119</label> Human Rights Committee, General Comment No. 31: The Nature of the General Legal Obligation<lb/> Imposed on States Parties to the Covenant, 26 May 2004, CCPR/C/21/Rev.1/Add. 13, par. 8.<lb/> </bibl>
+        <bibl><label>120</label> CESCR Committee, General comment No. 26 (2022) on land and economic, social and cultural rights,<lb/> cit., par. 30 (footnotes dropped).</bibl>
+          <bibl>See also: CESCR Committee, General comment No. 24 (2017) on State<lb/> obligations under the International Covenant on Economic, Social and Cultural Rights in the context of<lb/> business activities, 10 August 2017, E/C.12/GC/24, par. 16;</bibl>
+          <bibl>and, with specific reference to art. 1 and 11<lb/> ICESCR: CESCR Committee, concluding observations on Guatemala, 11 November 2022,<lb/> E/C.12/GTM/CO/4, par. 12.<lb/> </bibl>
+        <bibl><label>121</label> CESCR Committee, concluding observations on Finland, 28 November 2014, E/C.12/FIN/CO/6, par.<lb/> 10.</bibl>
+          <bibl>On the extra-territorial nature of the obligation to protect economic, social and cultural rights, see, in<lb/> relation to land use: CESCR Committee, General comment No. 26 (2022) on land and economic, social<lb/> and cultural rights, cit., par. 42.<lb/> </bibl>
+        <bibl><label>122</label> CESCR Committee, General Comment No. 12: The Right to Adequate Food (Art. 11), cit., par. 20.<lb/> </bibl>
+        <bibl><label>123</label> CESCR Committee, General comment No. 24 (2017) on State obligations under the International<lb/> Covenant on Economic, Social and Cultural Rights in the context of business activities, cit., par. 5.<lb/> </bibl>
+
+        <bibl><label>124</label> Ibid., par. 12.<lb/> </bibl>
+        <bibl><label>125</label> Ibid., par. 17.<lb/> </bibl>
+        <bibl><label>126</label> In this sense, see: Human Rights Council, Report of the Special Rapporteur on the rights of indigenous<lb/> peoples, James Anaya, 6 July 2012, A/HRC/21/47, par. 69.</bibl>
+          <bibl>See also the position of several NGOs:<lb/> Corporate Sustainability Due Diligence Directive. A guide to transposition and implementation for civil<lb/> society organisations, cit., p. 31.<lb/> </bibl>
+        <bibl><label>127</label> CRC, art. 24(2)(c).<lb/> </bibl>
+        <bibl><label>128</label> Committee on the Rights of the Child (CRC Committee), General comment No. 26 (2023) on children's<lb/> rights and the environment, with a special focus on climate change, 28 August 2023, CRC/C/GC/26, par.<lb/> 43.<lb/> </bibl>
+        <bibl><label>129</label> CRC Committee, General Comment No. 11 (2009): Indigenous children and their rights under the<lb/> Convention, 12 February 2009, CRC/C/GC/11, par. 25.<lb/> </bibl>
+        <bibl><label>130</label> Ibid., par. 25, 34.<lb/> </bibl>
+        <bibl><label>131</label> Ibid., par. 35.<lb/> </bibl>
+
+        <bibl><label>132</label> CRC Committee, concluding observations on Kenya, 21 March 2016, CRC/C/KEN/CO/3-5, par. 68.<lb/> </bibl>
+        <bibl><label>133</label> Ivi; CRC Committee, concluding observations on Cambodia, 27 June 2022, CRC/C/KHM/CO/4-6, par.<lb/> 40;</bibl>
+          <bibl>concluding observations on Vietnam, 21 October 2022, CRC/C/VNM/CO/5-6, par. 42.<lb/> </bibl>
+        <bibl><label>134</label> CRC Committee, concluding observations on Panama, 21 December 2011, CRC/C/PAN/CO/3-4, par.<lb/> 28;</bibl> <bibl>concluding observations on Panama, 28 February 2018, CRC/C/PAN/CO/5-6, par. 14.<lb/> </bibl>
+        <bibl><label>135</label> CRC Committee, concluding observations on Kenya, 21 March 2016, cit., par. 68;</bibl>
+          <bibl>concluding<lb/> observations on Nepal, 8 July 2016, CRC/C/NPL/CO/3-5, par. 65;</bibl>
+          <bibl>concluding observations on Guatemala,<lb/> 28 February 2018, CRC/C/GTM/CO/5-6, par. 42-43;</bibl>
+          <bibl>concluding observations on Costa Rica, 4 March<lb/> 2020, CRC/C/CRI/CO/5-6, par. 44.<lb/> </bibl>
+
+        <bibl><label>136</label> CRC Committee, General comment No. 26 (2023) on children's rights and the environment, cit., par.<lb/> 49.<lb/> </bibl>
+        <bibl><label>137</label> Ibid., par. 40.<lb/> </bibl>
+        <bibl><label>138</label> Ibid., par. 45.<lb/> </bibl>
+        <bibl><label>139</label> Ivi.<lb/> </bibl>
+        <bibl><label>140</label> Ibid., par. 69.</bibl>
+          <bibl>On the obligation to conduct prior environmental impact assessments, see also: CRC<lb/> Committee, concluding observations on Panama, 21 December 2011, cit., par. 28.<lb/> </bibl>
+
+        <bibl><label>141</label> CRC Committee, General comment No. 26 (2023) on children's rights and the environment, cit., par.<lb/> 68.<lb/> </bibl>
+
+        <bibl><label>142</label> Ibid., par. 80.<lb/> </bibl>
+        <bibl><label>143</label> CRC Committee, concluding observations on New Zealand, 11 April 2011, CRC/C/NZL/CO/3-4, par.<lb/> 23;</bibl> <bibl>concluding observations on Myanmar/Burma, 14 March 2012, CRC/C/MMR/CO/3-4, par. 22;<lb/> </bibl>
+          <bibl>concluding observations on Namibia, 16 October 2012, CRC/C/NAM/CO/2-3, par. 27;</bibl>
+          <bibl>concluding<lb/> observations on Guyana, 5 February 2013, CRC/C/GUY/CO/2-4, par. 23-24;</bibl>
+          <bibl>concluding observations on<lb/> the Russian Federation, 25 February 2014, CRC/C/RUS/CO/4-5, par. 21;</bibl>
+          <bibl>concluding observations on<lb/> India, 7 July 2014, CRC/C/IND/CO/3-4, par. 30;</bibl>
+          <bibl>concluding observations on Peru, 2 March 2016,<lb/> CRC/C/PER/CO/4-5, par. 24;</bibl>
+          <bibl>concluding observations on Argentina, 1 October 2018, CRC/C/ARG/CO/5-<lb/>6, par. 34.<lb/> </bibl>
+
+        <bibl><label>144</label> CRC Committee, General comment No. 16 (2013) on State obligations regarding the impact of the<lb/> business sector on children's rights, 17 April 2013, CRC/C/GC/16, p. 6.</bibl>
+          <bibl>In this sense, see also: CRC<lb/> Committee, concluding observations on Australia, 28 August 2012, CRC/C/AUS/CO/4, par. 27-28;<lb/></bibl>
+          <bibl>concluding observations on Canada, 5 October 2012, CRC/C/CAN/CO/3-4, par. 29;</bibl>
+          <bibl>concluding<lb/> observations on Panama, 28 February 2018, cit., par. 14.<lb/> </bibl>
+
+        <bibl><label>145</label> CRC Committee, General comment No. 16 (2013) on State obligations regarding the impact of the<lb/> business sector on children's rights, cit., p. 2.<lb/> </bibl>
+        <bibl><label>146</label> Ibid., p. 3.<lb/> </bibl>
+        <bibl><label>147</label> See e.g.: CRC Committee, General comment No. 26 (2023) on children's rights and the environment,<lb/> cit., par. 20.<lb/> </bibl>
+
+        <bibl><label>148</label> Ibid., par. 58.<lb/> </bibl>
+        <bibl><label>149</label> S. DEVA, Mandatory human rights due diligence laws in Europe, cit., p. 404.<lb/> </bibl>
+        <bibl><label>150</label> Directive (EU) 2024/1760 of the European Parliament and of the Council, on corporate sustainability<lb/> due diligence, cit., art. 4</bibl>
+
+        <bibl><label>151</label> Corporate Sustainability Due Diligence Directive. A guide to transposition and implementation for civil<lb/> society organisations, cit., p. 24. </bibl>
+        <bibl>In favour of the first option, see also: M. FASCIGLIONE, Verso un regime<lb/> europeo uniforme di responsabilità civile delle imprese per violazioni dei diritti umani, cit., p. 497.</bibl>
+
+        </listBibl>
+    </text>
+
+
+</TEI>

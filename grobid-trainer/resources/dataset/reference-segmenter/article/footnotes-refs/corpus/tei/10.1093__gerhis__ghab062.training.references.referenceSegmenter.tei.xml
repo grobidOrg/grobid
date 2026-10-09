@@ -1,0 +1,305 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.1093__gerhis__ghab062">
+    <titleStmt>
+      <title level="a">Political Taboos in the German Democratic Republic</title>
+      <author>
+        <persName>
+          <forename>Udo</forename>
+          <surname>Grashoff</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="schulze">Judith Schulze</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="sperber">Marcia Sperber</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="cboulanger">Christian Boulanger</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher>Oxford University Press (OUP)</publisher>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2021</date>
+      <idno type="DOI">10.1093/gerhis/ghab062</idno>
+      <ptr target="https://doi.org/10.1093/gerhis/ghab062"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Udo Grashoff. (2021). Political Taboos in the German Democratic Republic. German History, 39(3), 442-463. DOI: 10.1093/gerhis/ghab062</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Political Taboos in the German Democratic Republic</title>
+          <author>
+            <persName>
+              <forename>Udo</forename>
+              <surname>Grashoff</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">German History</title>
+          <imprint>
+            <biblScope unit="volume">39</biblScope>
+            <biblScope unit="issue">3</biblScope>
+            <biblScope unit="page" from="442" to="463">442-463</biblScope>
+            <date when="2021">2021</date>
+            <publisher>Oxford University Press (OUP)</publisher>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.1093/gerhis/ghab062</idno>
+        <ptr target="https://doi.org/10.1093/gerhis/ghab062"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.8.3-SNAPSHOT" ident="GROBID" when="2026-02-16T17:23:34.493409Z" type="extractor">
+        <label>GROBID</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">7272991</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-02-16T17:23:34.493409Z" status="extraction">
+      <note type="label">2. Marcia</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-03-10T08:52:06.840Z" status="unfinished" who="#schulze">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-03-14T15:45:37.007Z" status="checked" who="#sperber">
+      <desc>Corrections</desc>
+    </change>
+    <change when="2026-04-02T15:01:51.082Z" status="checked" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-02T15:37:55.494Z" status="approved" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-06T10:20:45.731Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-04-06T14:38:27.262Z" status="in-review" who="#kazuyo">
+      <desc>review</desc>
+    </change>
+    <change when="2026-05-09T05:12:18.774Z" status="in-review" who="#cboulanger">
+      <note type="label">v4 (cboulanger)</note>
+      <desc>Fix in fn 5</desc>
+    </change>
+    <change when="2026-05-09T05:16:49.373Z" status="in-review" who="#cboulanger">
+      <desc>Fix in fn 5</desc>
+    </change>
+    <change when="2026-09-12T12:00:18.881Z" status="in-review" who="#lfoppiano">
+      <note type="label">v6 (lfoppiano)</note>
+      <desc>fix upstream model</desc>
+    </change>
+    <change when="2026-09-12T15:13:39.483Z" status="approved" who="#lfoppiano">
+      <desc>fix upstream model</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+    <listBibl>
+      <bibl><label>1</label> Erich Honecker, 4. Tagung des Zentralkomitees der SED, 17 Dec. 1971, quoted in W. Emmerich, Kleine<lb/> Literaturgeschichte der DDR (3rd edn, Berlin, 2007), p. 247.<lb/> </bibl>
+        <bibl><label>2</label> For example, Ulrich Plenzdorf's Die neuen Leiden des jungen W. (1972), and Volker Braun's Unendliche<lb/> Geschichte (1975).<lb/> </bibl>
+        <bibl><label>3</label> It was the time of detente in Europe, of international recognition of the GDR, with highlights such as the Basic<lb/> Treaty between the two German states in 1972, membership in the United Nations in 1973 and the signing of the<lb/> Conference on Security and Co-operation in Europe final accord in Helsinki in 1975.<lb/> </bibl>
+        <bibl><label>4</label> The Event Horizon Telescope Collaboration, 'First M87 Event Horizon Telescope Results: I. The Shadow of the<lb/> Supermassive Black Hole', Astrophysical Journal Letters, 875, 1 (2019), pp. 1-17.<lb/> </bibl>
+      <bibl><label>5</label> From a structural point of view, the dualism of core and periphery closely resembles Louis Althusser's distinction<lb/> between repressive and ideological state apparatuses. Overtly repressive censorship, which is executed only as<lb/> a last resort, is the equivalent of the core, and 'subconscious habituated forms of conditioning', what he calls<lb/> 'ideology', corresponds to the periphery; see M. Bunn, 'Reimagining Repression: New Censorship Theory and<lb/> After', History and Theory, 54, 1 (2015), pp. 25-44, here p. 35.<lb/> </bibl>
+      <bibl><label>6</label> M. Foucault, Der Wille zum Wissen: vol. 1, Sexualität und Wahrheit (8th edn, Frankfurt/Main, 1995), pp. 27, 40.<lb/></bibl>
+      <bibl>The difference between Foucault's approach and mine is that he follows the discourse affirmatively (for him, it is<lb/> most important that there is a productive discourse and this, to some extent, relativizes the 'repression thesis'),<lb/> whereas I approach the taboo discourse at an angle.<lb/> </bibl>
+      <bibl><label>7</label> H. Schröder, 'Zur Kulturspezifik von Tabus: Tabus und Euphemismen in interkulturellen Kontaktsituationen', in<lb/> C. Benthien and O. Gutjahr (eds), TABU: Interkulturalität und Gender (Munich, 2008), pp. 51-70, here p. 58.<lb/> </bibl>
+      <bibl><label>8</label> J. Kocka, 'Eine durchherrschte Gesellschaft', in H. Kaelble, J. Kocka and H. Zwahr (eds), Sozialgeschichte der DDR<lb/> (Stuttgart, 1991), pp. 547-53.<lb/> </bibl>
+      <bibl><label>9</label> D. Boyer, 'Censorship as a Vocation: The Institutions, Practices, and Cultural Logic of Media Control in the German<lb/> Democratic Republic', Comparative Studies in Society and History, 45, 3 (2003), pp. 511-45, here p. 527.<lb/> </bibl>
+      <bibl><label>10</label> For a concise summary: M. Lambek, 'Taboo', International Encyclopedia of the Social &amp; Behavioral Sciences, vol.<lb/> 24 (2nd edn, 2001), 15429-31.<lb/> </bibl>
+      <bibl><label>11</label> H. Kraft, Die Lust am Tabubruch (Göttingen, 2015), p. 39.</bibl>
+      <bibl>One might expect taboos to have been discussed<lb/> with reference to secular religion, but as far as I can see, such has not been the case.</bibl>
+      <bibl>E. Voegelin, Die politischen<lb/> Religionen (3rd edn, Munich, 1993; 1st edn, 1938); </bibl>
+      <bibl>P. Burrin, 'Political Religion. The Relevance of a Concept',<lb/> History and Memory, 9, 1-2 (1997), pp. 321-49.</bibl>
+      <bibl>Some scholars note that in order to maintain a dogma, some<lb/> words could not be used;</bibl>
+      <bibl>see, for example, M. Kula, 'Communism as Religion', Totalitarian Movements and<lb/> Political Religions, 6, 3 (2005), pp. 371-81.</bibl>
+      <bibl>But a focus on discursive regimes or individual experience is lacking.<lb/> </bibl>
+      <bibl><label>12</label> R. Millington, State, Society and Memories of the Uprising of 17 June 1953 in the GDR (Basingstoke, 2014),<lb/> p. 123.<lb/> </bibl>
+      <bibl><label>13</label> Ibid., pp. 123-4.<lb/> </bibl>
+      <bibl><label>14</label> R. Rosenberg, I. Münz-Koenen, P. Boden and G. Gast, Der Geist der Unruhe: 1968 im Vergleich. Wissenschaft,<lb/> Literatur, Medien (Berlin, 2000), pp. 261-2.<lb/> </bibl>
+      <bibl><label>15</label> B. Niven, 'On a Supposed Taboo: Flight and Refugees from the East in GDR Film and Television', German Life and<lb/> Letters, 65, 2 (2012), pp. 216-36, here p. 218.</bibl> <bibl>For this article, I have not used Niven's book where he develops<lb/> a similar line of argumentation: B. Niven, Representations of Flight and Expulsion in East German Prose Works<lb/> (Woodbridge, 2014).<lb/> </bibl>
+      <bibl><label>16</label> See B. Kerski, 'Die Beziehungen zwischen der DDR und Polen: Versuch einer Bilanz', in B. Kerski, A. Kotula<lb/> and K. Woycicki (eds), Zwangsverordnete Freundschaft? Die Beziehungen zwischen der DDR und Polen 1949-<lb/>1990 (Osnabrück, 2003), pp. 9-25, here p. 15, mentioning the tabooing of expulsions in the GDR;</bibl>
+      <bibl>H. Schultz,<lb/> 'Geschichtsbilder in der deutsch-polnischen Grenzregion', Studia Historiae Oeconomicae, 27 (2009), pp. 319-26.<lb/> </bibl>
+      <bibl>P. Ther, Deutsche und polnische Vertriebene: Gesellschaft und Vertriebenenpolitik in der SBZ/DDR und in Polen<lb/> 1945-1956 (Göttingen, 1998), p. 50, considers Christa Wolf's novel Kindheitsmuster as the only significant<lb/> breaking of the taboo.</bibl>
+      <bibl>See also E. Hahn and H. H. Hahn, Die Vertreibung im deutschen Erinnern: Legenden,<lb/> Mythos, Geschichte (Paderborn, 2010).<lb/> </bibl>
+      <bibl><label>17</label> Similar observations can be made for GDR literature. As Louis Helbig has shown, literary works that addressed<lb/> flight and expulsion often imputed to expellees a 'false consciousness';</bibl>
+      <bibl>L. F. Helbig, 'Gemeinsamkeiten und<lb/> Unterschiede in Darstellungen von Flucht, Vertreibung und Eingliederung in der westlichen und östlichen Literatur<lb/> Deutschlands', in M. Wille (ed.), 50 Jahre Flucht und Vertreibung (Magdeburg, 1997), pp. 69-88, here p. 72.<lb/> </bibl>
+      <bibl type="footnote"><label>18</label> It is fair to say that the TV series 'Wege übers Land' aroused so much attention in the GDR not least because it<lb/> touched upon a topic that was sensitive and risky, and by no means did it overcome the taboo.<lb/> </bibl>
+      <bibl><label>19</label> One might say, with reference to anthropologist Edmund Leach, that workers who rose up against the communists<lb/> were tabooed because they were considered to be in an intermediate category between 'us' and 'not us'. Leach<lb/> differentiates between 'tame', 'wild' and, as an intermediate category, 'game'.</bibl> <bibl>See E. Leach, 'Anthropological<lb/> Aspects of Language: Animal Categories and Verbal Abuse', Anthrozöos, 2, 3 (1989), pp. 151-65, here p. 159.<lb/> </bibl>
+      <bibl><label>20</label> The same can be said about the censorship. Even in authoritarian regimes, censorship is not always and not only<lb/> a procedure of repression, for it also has a creative, productive side. Matthew Bunn notes, 'The central insight<lb/> of New Censorship Theory has been to recast censorship from a negative, repressive force, concerned only with<lb/> prohibiting, silencing, and erasing, to a productive force that creates new forms of discourse, new forms of com-<lb/>munication, and new genres of speech'</bibl>
+      <bibl>(Bunn, 'Reimagining Repression', p. 26).<lb/> </bibl>
+      <bibl><label>21</label> Millington provides a vivid example. From fifty-seven letters written from workplace libraries and workers' reading<lb/> groups to the Free German Trade Union Federation's literature and arts prize committee, only two use the official<lb/> phrase 'attempted fascist-counterrevolutionary putsch'.</bibl>
+      <bibl>See R. Millington, 'The Limits of Control: The "Public<lb/> Discourse" about the Uprising of 17 June 1953 in Novels and Films in the German Democratic Republic', German<lb/> History, 31, 1 (2013), pp. 42-60, here p. 57.<lb/> </bibl>
+      <bibl><label>22</label> Most of Siegfried Lokatis's publications focus on procedures rather than content.</bibl>
+      <bibl>See, for example, S. Lokatis,<lb/> Verantwortliche Redaktion: Zensurwerkstätten der DDR (Stuttgart, 2019). To some extent, this approach is also<lb/> true of R. Darnton, Die Zensoren: wie staatliche Kontrolle die Literatur beeinflusst hat. Vom vorrevolutionären<lb/> Frankreich bis zur DDR (Munich, 2016).<lb/> </bibl>
+      <bibl><label>23</label> Lokatis, Verantwortliche Redaktion, p. 19.<lb/> </bibl>
+      <bibl><label>24</label> S. Klötzer and S. Lokatis, 'Criticism and Censorship: Negotiating Cabaret Performance and Book Production', in<lb/> K. H. Jarausch (ed.), Dictatorship as Experience: Towards a Socio-Cultural History of the GDR (New York, 1999),<lb/> pp. 241-63, here p. 260.</bibl> <bibl>It would be interesting to explore parallels to early modern societies.</bibl>
+      <bibl>Cf. R. Burt, '(Un)<lb/> Censoring in Detail: The Fetish of Censorship in the Early Modern Past and the Postmodern Present', in R. C. Post<lb/> (ed.), Censorship and Silencing: Practices of Cultural Regulation (Los Angeles, 1998), pp. 17-41.<lb/> </bibl>
+      <bibl><label>25</label> S. Barck, C. Classen and T. Heimann, 'The Fettered Media: Controlling Public Debate', in Jarausch, Dictatorship as<lb/> Experience, pp. 213-39.<lb/> </bibl>
+      <bibl><label>26</label> Siegfried Lokatis writes of 'absurd' historical taboos which contradict memory ('die absurden, jeder erinnerten<lb/> Erfahrung widersprechenden Tabus für den Umgang mit der unmittelbaren Vorgeschichte der DDR'), S. Lokatis,<lb/> 'Entdeckungsreisen ins Leseland', in S. Lokatis, T. Rost and G. Steuer (eds), Vom Autor zur Zensurakte: Abenteuer<lb/> im Leseland DDR (Halle, 2014), pp. 11-16, here p. 13.<lb/> </bibl>
+      <bibl><label>27</label> Reichardt discusses the content of censorship extensively, but she focuses on the ideological norm (the equivalent<lb/> of 'mana') rather than on the taboo.</bibl>
+      <bibl>A.-K. Reichardt, 'Die Zensur belletristischer Literatur in der DDR', in I. Bock<lb/> (ed.), Scharf überwachte Kommunikation: Zensursysteme in Ost(mittel)europa (1960er-1980er Jahre) (Münster,<lb/> 2011), pp. 363-446.<lb/> </bibl>
+      <bibl><label>28</label> As a result of the downward delegation of censorship, tabooing became an almost daily routine in the GDR.<lb/> Therefore, proposes Dominic Boyer, 'the actual practice of censorship in the GDR looked a great deal like the end-<lb/>less minute queries of professional editing than summary interdiction'</bibl>
+      <bibl>(Boyer, 'Censorship', p. 537).</bibl>
+      <bibl>That superfi-<lb/>cial view is only possible in my view if the perceived taboo is disregarded.<lb/> </bibl>
+      <bibl><label>29</label> Here Douglas's anthropological insight that the goal of tabooing is to contain dangerous 'dirt' can be adjusted to<lb/> the dictatorial context.</bibl>
+      <bibl>M. Douglas, 'Concepts. Taboo', New Society (12 Mar. 1964), pp. 24-5. 'Dirt is essentially<lb/> disorder', states the anthropologist Mary Douglas (Purity and Danger [London, 1966], p. 2).</bibl>
+      <bibl>There is clearly a com-<lb/>munist obsession with purges. With anthropological research in mind, we can ask, what kind of dirt threatened<lb/> the purity of communist ideology?<lb/> </bibl>
+      <bibl><label>30</label> C. Voigt, 'Kurt Sindermann; als kommunistischer V-Mann in den Fängen der Dresdner Gestapo', in C. Pieper,<lb/> M. Schmeitzner and G. Naser (eds), Braune Karrieren: Dresdner Täter und Akteure im Nationalsozialismus<lb/> (Dresden, 2012), pp. 94-8, here p. 97.<lb/> </bibl>
+      <bibl><label>31</label> Ministerium für Staatssicherheit (MfS), Hauptabteilung IX, Information, 10.6.1970 (Bundesarchiv Stasi-Unterlagen,<lb/> MfS, HA IX, no. 22375, fol. 69-74).<lb/> </bibl>
+      <bibl><label>32</label> P. Erler, 'Militärische Kommandounternehmen: deutsche Polit-Emigranten als sowjetische Fallschirmagenten und<lb/> Partisanen 1941 bis 1945', Zeitschrift des Forschungsverbundes SED-Staat, 8 (2000), pp. 79-101, here p. 95.<lb/> </bibl>
+      <bibl><label>33</label> 'Theodor Winter', Deutsche Widerstandskämpfer 1933-1945: Biographien und Briefe, vol. 2 (Berlin, 1970),<lb/> pp. 424-6, here p. 426;</bibl>
+      <bibl>E. Döhler, 'Theodor Winter', in K. H. Jahnke (ed.), In einer Front: junge Deutsche an der<lb/> Seite der Sowjetunion im Großen Vaterländischen Krieg (Berlin 1986), pp. 206-29.<lb/> </bibl>
+      <bibl><label>34</label> Although Thälmann was not able to contribute significantly to the resistance against the Nazis because he was<lb/> arrested in March 1933 and kept in solitary confinement until his execution in 1944, the SED made him a sym-<lb/>bolic figure of the anti-fascist resistance movement. The cult of Thälmann became part of the historical myth<lb/> purporting that the Communist Party was the only German party that had provided organized opposition to<lb/> Hitler's fascism from start to finish.</bibl>
+      <bibl>See A. Leo, 'Thälmann-Kult kontra Antifaschismus', in J. Danyel (ed.), Die<lb/> geteilte Vergangenheit (Berlin, 1995), pp. 205-11.<lb/> </bibl>
+      <bibl><label>35</label> R. Börrnert, 'Ernst Thälmann als Leitfigur der kommunistischen Erziehung in der DDR' (PhD Thesis, Technische<lb/> Universität Brauschweig, 2002).<lb/> </bibl>
+      <bibl><label>36</label> A. Herbst, '"Ich bin mir keiner parteifeindlichen Handlung bewusst …" Anmerkungen zur Biografie des<lb/> KPD Spitzenfunktionärs Wilhelm Hein', Jahrbuch für Historische Kommunismusforschung (2016), pp. 1-18.<lb/> </bibl>
+      <bibl><label>37</label> T. Gabelmann [Egon Grübel], Thälmann ist niemals gefallen? Eine Legende stirbt (Berlin 1996), p. 71.</bibl>
+      <bibl>Another<lb/> traitor, Herbert Lübbers, a paid Gestapo informant who was in on the secret operation to free Thälmann from<lb/> prison, was not mentioned at all in the GDR. Not even the fact that Lübbers had accused Thälmann's daughter<lb/> Irma of having revealed the names of communists involved in the planned liberation (in order to obfuscate<lb/> that it was he who betrayed them) provoked a reaction in East Germany; this slander was simply ignored.</bibl>
+      <bibl>See<lb/> Gabelmann, Thälmann, pp. 177-81.<lb/> </bibl>
+      <bibl><label>38</label> One exception: Neues Deutschland, the official party newspaper, printed an interview with West German social<lb/> democrat and former communist Herbert Wehner, who mentioned Kattner's name (but not his assassination).<lb/> </bibl>
+      <bibl>H. Wehner, 'Nazis waren mit Hindenburgs Hilfe an die Macht gekommen', Neues Deutschland (31 Jan. 1983), p. 5.<lb/></bibl>
+      <bibl><label>39</label> The memoirs of Heinrich Fomferra indicate that this omission was intentional. While Fomferra mentions Schwarz<lb/> in the unpublished manuscript, in the published version he points out only once that he had a companion-in-arms,<lb/> without further explanation.</bibl> <bibl>Cf. H. Fomferra, 'Wie ich Politkommissar einer slowakischen Partisaneneinheit<lb/> wurde', in H. Voßke (ed.), Im Kampf bewährt: Erinnerungen deutscher Genossen an den antifaschistischen<lb/> Widerstand von 1933 bis 1945 (Berlin, 1969), pp. 601-14;</bibl>
+      <bibl>Heinrich Fomferra, Erinnerungen, II. Teil, 22.8.1962<lb/> (Stiftung Archiv der Parteien und Massenorganisationen der DDR im Bundesarchiv Berlin [henceforth SAPMO-<lb/>BArch], SgY 30/1275/1, fol. 58-180, see 84).<lb/> </bibl>
+      <bibl><label>40</label> Gabelmann, Thälmann, p. 97.<lb/> </bibl>
+      <bibl><label>41</label> Soviet soldiers raped some 1.9 million German women between December 1944 and December 1945;</bibl>
+      <bibl>see B. Johr,<lb/> 'Die Ereignisse in Zahlen', in H. Sander and B. Johr (eds), BeFreier und BeFreite: Krieg, Vergewaltigung, Kinder<lb/> (Frankfurt/Main, 2005), pp. 46-73.<lb/> </bibl>
+      <bibl><label>42</label> See the opinion polls cited in Ther, Deutsche und polnische Vertriebene, p. 246.<lb/> </bibl>
+      <bibl><label>43</label> Most notably in the zoo at Halle (Saale) in 1951 and 1953, with 2,000 participants respectively;</bibl>
+      <bibl>see A. Kossert,<lb/> Kalte Heimat: die Geschichte der deutschen Vertriebenen nach 1945 (Munich, 2008), pp. 220, 222.<lb/> </bibl>
+      <bibl><label>44</label> M. Lammert, Die Stadt der Vertriebenen, Görlitz 1945-1953 (Görlitz, 2012).<lb/> </bibl>
+      <bibl type="footnote"><label>45</label> Scholars of contemporary communicative taboos have identified a range of rhetorical devices used to commu-<lb/>nicate taboos in Western societies that are not easily transferred to a dictatorial context. This set of rhetorical<lb/> strategies includes silence, ellipsis, abbreviation, euphemism, clichés, vagueness, insinuation, circumlocution,<lb/> metaphor, conversion and remodelling.<lb/> </bibl>
+      <bibl><label>46</label> L. Skrowronski, 'Die politische Struktur der fiktionalen Geschichtssendung am Beispiel von "Hans Beimler,<lb/> Kamerad"', in U. Schwab (ed.), Fiktionale Geschichtssendungen im DDR-Fernsehen: Einblicke in eine<lb/> Forschungsgebiet (Leipzig, 2007), pp. 67-106, here p. 75.<lb/> </bibl>
+      <bibl><label>47</label> I. Krause, Die Schumann-Engert-Kresse-Gruppe (Berlin, 1960), p. 69.<lb/> </bibl>
+      <bibl><label>48</label> R. Scheer, 'Rambow: Spuren von Verfolgung und Verrat', Dachauer Hefte, 10, 10 (1994), pp. 191-213.<lb/> </bibl>
+      <bibl><label>49</label> U. Puls, Die Bästlein-Jacob-Abshagen-Gruppe: Bericht über den antifaschistischen Widerstandskampf in Hamburg<lb/> und an der Wasserkante während des zweiten Weltkrieges (Berlin, 1959).</bibl>
+      <bibl>The author was West German com-<lb/>munist Ursula Hochmuth, who studied and lived in the GDR temporarily, and used the alias Ursula Puls for this<lb/> publication.</bibl>
+      <bibl>K. Jacob, Widerstand war mir nicht in die Wiege gelegt (Hamburg, 2000), p. 258.<lb/> </bibl>
+      <bibl><label>50</label> H.-R. Buck, Der kommunistische Widerstand gegen den Nationalsozialismus in Hamburg, 1933 bis 1945 (Munich,<lb/> 1969), pp. 1-2.<lb/> </bibl>
+      <bibl><label>51</label> K. Kühn, Die letzte Runde (Berlin and Potsdam, 1949), p. 33;</bibl>
+      <bibl>E. Köhn, 'Der Weg zur Gründung des Nationalkomitees<lb/> "Freies Deutschland" in Leipzig: das Ringen der Kommunisten um die Durchsetzung der Strategie und Taktik der<lb/> KPD in der Leipziger Widerstandsorganisation, 1939-1944', Zeitschrift für Geschichtswissenschaft, 13, 1 (1965),<lb/> pp. 18-35, here p. 18.<lb/> </bibl>
+      <bibl><label>52</label> W. Ulbricht, Zur Geschichte der neuesten Zeit: die Niederlage Hitlerdeutschlands und die Schaffung der<lb/> antifaschistisch-demokratischen Ordnung, vol. 1.1 (Berlin, 1955), pp. 24, 29.<lb/> </bibl>
+      <bibl><label>53</label> Grete Schöneck, Aussage zum Fall Hermann Rambo[w], Berlin, 30.7.1945 (Bundesarchiv [BArch], NY 4072/143,<lb/> Bl. 91); </bibl>
+      <bibl>Für Genossen Dahlem, 14.9.1946 (SAPMO-BArch, DY 30/IV 2/11/v. 3126).<lb/> </bibl>
+      <bibl><label>54</label> W. Mensing, 'Alfred S.: eine Nachrichtendienstkarriere zwischen KPD, Gestapo und Staatssicherheit',<lb/> Zeitgeschichte, 40, 6 (2013), pp. 358-69.<lb/> </bibl>
+      <bibl><label>55</label> Puls, Die Bästlein-Jacob-Abshagen-Gruppe, pp. 98-102.<lb/> </bibl>
+      <bibl><label>56</label> E. R. Greulich, Keiner wird als Held geboren (Berlin, 1961), pp. 434-5.<lb/> </bibl>
+      <bibl><label>57</label> Institut für Marxismus-Leninismus beim Zentralkomitee der SED (ed.), Geschichte der deutschen Arbeiterbewegung,<lb/> vol. 5 (Berlin, 1966), p. 30;</bibl>
+      <bibl>O. Winzer, Zwölf Jahre Kampf gegen Faschismus und Krieg: ein Beitrag zur Geschichte<lb/> der Kommunistischen Partei Deutschlands, 1933 bis 1945 (Berlin, 1955), p. 55;</bibl>
+      <bibl>E. Kücklich, 'Mitarbeiter und<lb/> Kampfgefährte Ernst Thälmanns. John Schehr', Beiträge zur Geschichte der Arbeiterbewegung, 16, 2 (1974),<lb/> pp. 290-7.<lb/> </bibl>
+      <bibl><label>58</label> Kattner is mentioned, for instance (with the wrong first name), in R. Engel, Feinde und Freunde (Berlin, 1984),<lb/> pp. 53-4, 57-9.<lb/> </bibl>
+      <bibl><label>59</label> K. Mammach and G. Nitzsche, 'Zum antifaschistischen Kampf der KPD in den Jahren von 1939 bis 1941', Beiträge<lb/> zur Geschichte der deutschen Arbeiterbewegung, 13, 6 (1971), pp. 911-35, here pp. 931-2;</bibl>
+      <bibl>Autorenkollektiv<lb/> unter Leitung von Wolfgang Schumann und Karl Drechsler (eds), Deutschland im zweiten Weltkrieg, vol. 2 (Berlin,<lb/> 1976), p. 563.<lb/> </bibl>
+      <bibl><label>60</label> Geschichte. Lehrbuch für Klasse 9 (2nd edn, Berlin, 1970), p. 162.<lb/> </bibl>
+      <bibl><label>61</label> Ther, Deutsche und polnische Vertriebene, pp. 91-2.<lb/> </bibl>
+      <bibl><label>62</label> In Burridge's classification, this is the linguistic strategy of analogy, a 'semantic shift of existing words';</bibl> <bibl>see<lb/> K. Burridge, 'Taboo Words', in The Oxford Handbook of the Word (Oxford, 2015), pp. 270-283, here pp. 275, 283.<lb/> </bibl>
+      <bibl><label>63</label> Millington, 'Limits of Control', pp. 49-50.<lb/> </bibl>
+      <bibl><label>64</label> Niven, 'On a Supposed Taboo', p. 234.<lb/> </bibl>
+      <bibl><label>65</label> The same is true for GDR literature;</bibl> <bibl>see K. Hartleb, Flucht und Vertreibung: ein Tabuthema in der DDR-Literatur?<lb/> (Marburg, 2011), p. 126.<lb/> </bibl>
+      <bibl><label>66</label> K. Burridge, 'Euphemism and Language Change: The Sixth and Seventh Ages', Lexis: Journal in English Lexicology,<lb/> 7 (2012), issue title: 'Euphemism as a Word-Formation Process', https://doi.org/10.4000/lexis.355, p. 73.<lb/></bibl>
+      <bibl><label>67</label> The accusation that the uprising was driven by a fascist agenda delivered a knock-out blow as East German au-<lb/>thors wanted by no means to appear to be supporting fascists.</bibl>
+      <bibl>See Millington, 'Limits of Control', p. 48.<lb/> </bibl>
+      <bibl><label>68</label> We can take as an example the draft of the third volume of Erwin Strittmatter's novel Der Wundertäter (1980),<lb/> where he mentions the rape of a 17-year-old girl by three Soviet soldiers, as a result of which the girl dies;</bibl>
+      <bibl>see<lb/> Lokatis, Verantwortliche Redaktion, p. 199.</bibl> <bibl>Or chapter seventeen of Christa Wolf's novel Kindheitsmuster (1976),<lb/> where rape is referred to only indirectly;</bibl>
+      <bibl>see B. Dahlke, '"Frau komm!" Vergewaltigungen 1945--zur Geschichte<lb/> eines Diskurses', in B. Dahlke, M. Langermann and T. Taterka (eds), LiteraturGesellschaft DDR: Kanonkämpfe und<lb/> ihre Geschichte(n) (Stuttgart and Weimar, 2000), pp. 275-311, here p. 306.<lb/> </bibl>
+      <bibl><label>69</label> According to Dahlke, the silencing of the experience of rape was at the centre of collective memory in the GDR,<lb/> as Christoph Hein's short story 'Die Vergewaltigung' encapsulates;</bibl> <bibl>see Dahlke, '"Frau komm!"', pp. 280, 304.<lb/></bibl>
+      <bibl>The taboo on the cruelty of Soviet soldiers and the rape of German women at the end of the war existed in the<lb/> Soviet Union too;</bibl>
+      <bibl>see I. Bock, '"Unser ganzes System ideologischer Arbeit muss wie ein gut eingespieltes Orchester<lb/> agieren": Zensur in der UdSSR und der CSSR', in Bock, Scharf überwachte Kommunikation, pp. 31-207, here<lb/> p. 169.<lb/></bibl>
+      <bibl><label>70</label> This is presumably what Bunn had in mind when he mentioned the role of censors in 'advancing a novel vocabu-<lb/>lary designed to control the dangers posed by language' (Bunn, 'Reimagining Repression', p. 42).<lb/> </bibl>
+      <bibl><label>71</label> For a discussion of taboo language see K. Allan and K. Burridge, Forbidden Words: Taboo and the Censoring of<lb/> Language (Cambridge and New York, 2006), chap. 1.<lb/> </bibl>
+      <bibl><label>72</label> Millington, State, Society and Memories, p. 124.<lb/> </bibl>
+      <bibl><label>73</label> A functionary downplayed mass rape as (a) exceptional incidents, (b) a result of the initiative of women and<lb/> (c) the lesser evil (making children as opposed to killing children);</bibl> <bibl>see S. Satjukow and R. Gries, 'Bankerte!'<lb/> Besatzungskinder in Deutschland nach 1945 (Frankfurt/Main and New York, 2015), p. 327.<lb/> </bibl>
+      <bibl><label>74</label> Dahlke, '"Frau komm!"', pp. 281, 287, 300.<lb/> </bibl>
+      <bibl><label>75</label> B. Eisenfeld, I.-S. Kowalczuk and E. Neubert, Die verdrängte Revolution: der Platz des 17. Juni 1953 in der<lb/> deutschen Geschichte (Bremen, 2004), pp. 313-14.<lb/> </bibl>
+      <bibl><label>76</label> Ther, Deutsche und polnische Vertriebene, p. 251.<lb/> </bibl>
+      <bibl><label>77</label> Hartleb, Flucht und Vertreibung, pp. 39-41.</bibl>
+      <bibl>Ursula Höntsch-Harendt's novel Wir Flüchtlingskinder (1985) was a<lb/> particular caesura;</bibl>
+      <bibl>see Helbig, 'Gemeinsamkeiten und Unterschiede', pp. 83-4;</bibl>
+      <bibl>Kossert, Kalte Heimat, pp. 290-<lb/>300.</bibl>
+      <bibl>Another significant breaking of the taboo was the publication of interviews with expellees in 1988;</bibl>
+      <bibl>see<lb/> T. Grimm (ed.), 'Umsiedler 45', Temperamente-Blätter für junge Literatur, 3 (1988), pp. 41-55.<lb/> </bibl>
+      <bibl><label>78</label> As opposed to the understanding of taboos as absolute bans. For example, Simona Popescu recorded, 'Censorship<lb/> in Romania possessed all the mystery of the black holes in outer space. The deep, troubled waters of cultural<lb/> bureaucracy could swallow any book, leaving no trace of it at all', cited in L. Vianu (ed.), Censorship in Romania<lb/> (Budapest, 1998), pp. 225-8, here p. 225.<lb/> </bibl>
+      <bibl><label>79</label> A. Hahn, 'Kanonisierungsstile', in A. and J. Assmann (eds), Kanon und Zensur: Archäologie der literarischen<lb/> Kommunikation II (Munich, 1987), pp. 28-37, here p. 29:</bibl>
+      <bibl>'Grundsätzlich erwächst daraus auch stets die Chance,<lb/> auf bereits Verurteiltes in neuen Situationen wieder zurückzukommen'. The focus of Hahn's essay is, however,<lb/> canonization, not tabooing.<lb/></bibl>
+      <bibl><label>80</label> Sometimes it is: see as an example the testimonies of women cited in I. von Münch, 'Frau, komm!' Die<lb/> Massenvergewaltigungen deutscher Frauen und Mädchen 1944/45 (Graz, 2009), p. 61.<lb/> </bibl>
+      <bibl><label>81</label> The same is true for a few fictional texts on flight and expulsion such as Erik Neutsch's short story 'Der Hirt' (1970).<lb/></bibl>
+      <bibl>He depicted the bombing of German refugees by the Russians and did not use party language (Russians instead<lb/> of Soviets); </bibl>
+      <bibl>see Hartleb, Flucht und Vertreibung, p. 121.</bibl>
+      <bibl>But in many other regards, he avoids transgressions.<lb/> </bibl>
+      <bibl><label>82</label> Millington, 'Limits of Control', p. 45, see also p. 58.<lb/> </bibl>
+      <bibl><label>83</label> H. Knabe, 'Die feinen Waffen der SED: nicht strafrechtliche Formen politischer Viktimisierung in der DDR', in<lb/> U. Baumann and H. Kury (eds), Politisch motivierte Verfolgung: Opfer von SED-Unrecht (Freiburg i. Br., 1998),<lb/> pp. 303-29, here pp. 308-9.<lb/> </bibl>
+      <bibl><label>84</label> Eisenfeld, Kowalczuk and Neubert, Die verdrängte Revolution, pp. 12-14.<lb/> </bibl>
+      <bibl><label>85</label> See quoted testimony in U. Schmidt, Flucht-Vertreibung-Deportation-Internierung: Erfahrung von Frauen in<lb/> der Bundesrepublik und der früheren DDR, Arbeitspapier des Forschungsverbunds SED-Staat 37 (2007), p. 116.<lb/></bibl>
+      <bibl><label>86</label> The avoidance of the taboo is also depicted in a small number of works of fiction, such as Günter de Bruyn's short<lb/> story 'Herr Müller, diesseits und jenseits der Oder' (1980). Here, de Bruyn describes a village where all inhabitants<lb/> eschew discussion of the uneasy topic of the expulsions;</bibl>
+      <bibl>see Hartleb, Flucht und Vertreibung, p. 119.<lb/> </bibl>
+      <bibl><label>87</label> Niven, 'On a Supposed Taboo', p. 217.<lb/> </bibl>
+      <bibl><label>88</label> Recent scientific experiments such as electrodermal monitoring confirm that there is a huge emotional energy linked<lb/> with taboos. Measurement of the participants' galvanic skin responses to taboo words resulted in the consistent finding<lb/> that 'taboo words are more stimulating than non-taboo words and are stored differently in memory'</bibl>
+      <bibl>(Burridge, 'Taboo<lb/> Words', p. 279).</bibl>
+      <bibl>Scientists even found that when senile dementia sets in and people lose the ability to speak normally,<lb/> they 'do readily recall and utter taboo words'</bibl>
+      <bibl>(K. Allan, 'Taboo Words and Language: An Overview', in The Oxford<lb/> Handbook of Taboo Words and Language, ed. K. Allan [Oxford, 2018], pp. 1-29, here p. 2).<lb/> </bibl>
+      <bibl><label>89</label> L. Bradley, Cooperation and Conflict: GDR Theatre Censorship, 1961-1989 (Oxford, 2010), p. 14.<lb/> </bibl>
+      <bibl><label>90</label> G. Holzweißig, Zensur ohne Zensor: die SED-Informationsdiktatur (Bonn, 1997).</bibl>
+      <bibl>The well-defined, clearly articu-<lb/>lated taboo themes imposed on journalists in the GDR were an exception, and even here there was leeway, as<lb/> some chief editors considered them merely guidelines.</bibl> <bibl>Cf. Boyer, 'Censorship', pp. 527-9.<lb/> </bibl>
+      <bibl><label>91</label> These empirical findings seem to be in accord with Judith Butler's concept of 'implicit censorship'; see J. Butler, 'Ruled<lb/> Out: Vocabularies of the Censor', in Post, Censorship and Silencing, pp. 247-59. For Butler, all speakers (including cen-<lb/>sors) operate based on 'a constituting norm by which the speakable is differentiated from the unspeakable' (she uses<lb/> the term 'foreclosure', p. 255), and 'censorship is at once the condition for agency and its necessary limit' (p. 257).<lb/> </bibl>
+      <bibl><label>92</label> R. Darnton, 'Censorship, a Comparative View: France, 1789-East Germany, 1989', in S. Greenblatt, I. Rév and<lb/> R. Starn (eds), 'Identifying Histories: Eastern Europe before and after 1989', special issue, Representations, 49<lb/> (1995), pp. 40-60.</bibl>
+      <bibl>For a list of these sensitive topics, see C. Horn, 'Staatliche Literaturaufsicht, Themenplan und<lb/> Druckgenehmigungsverfahren', in Lokatis, Rost and Steuer, Vom Autor zur Zensurakte, pp. 17-32, at p. 29.<lb/></bibl>
+      <bibl><label>93</label> 'Es gab zwar keinen Katalog von Themen, die tabu waren, aber wir meinten alle zu wissen, woran besser nicht<lb/> gerührt wurde, und haben dann eben entsprechend entschieden'; interview in P. Wicke and L. Müller, Rockmusik<lb/> und Politik-Analysen, Interviews und Dokumente (Berlin, 1996), pp. 81-8, here p. 82.<lb/> </bibl>
+      <bibl><label>94</label> Barck, Classen and Heimann, 'The Fettered Media', p. 214.<lb/> </bibl>
+      <bibl><label>95</label> Boyer, 'Censorship', p. 530.<lb/> </bibl>
+      <bibl type="footnote"><label>96</label> There was a certain animosity between communists who had remained in the Third Reich and those who had<lb/> emigrated to Moscow. Using the privilege of expanding taboos might have given the veterans of the communist<lb/> resistance a touch of satisfaction.<lb/> </bibl>
+      <bibl><label>97</label> H. Dünow, 'Wie Ernst Thälmann verhaftet wurde. Ein schweres Verbrechen an der Arbeiterklasse', Neues<lb/> Deutschland (16 Apr. 1966), p. 3.<lb/> </bibl>
+      <bibl><label>98</label> K. Mewis, Im Auftrag der Partei: Erlebnisse im Kampf gegen die faschistische Diktatur (2nd edn, Berlin, 1972), p. 315.<lb/> </bibl>
+      <bibl><label>99</label> F. Dahlem, Am Vorabend des Zweiten Weltkrieges, vol. 1 (3rd edn, Berlin, 1980), p. 185; Engel, Feinde und<lb/> Freunde, pp. 57-9.<lb/> </bibl>
+      <bibl><label>100</label> E. Honecker, Aus meinem Leben (Berlin, 1980), p. 7.<lb/> </bibl>
+      <bibl><label>101</label> R. Krauthause, 'Erinnerung eines Illegalen', in H. Engelmann (ed.), 'Sie blieben standhaft': der antifaschistische<lb/> Widerstandskampf in Dessau unter Führung der Kommunistischen Partei Deutschlands' (new edn, Dessau 1983),<lb/> pp. 81-9.</bibl>
+      <bibl>And published in the GDR as late as July 1990: H. Crüger, Verschwiegene Zeiten: vom geheimen<lb/> Apparat der KPD ins Gefängnis der Staatssicherheit (Berlin, 1990), pp. 65-7.<lb/> </bibl>
+      <bibl><label>102</label> W. Weiß, Vom Tagebuch bis zum Todesurteil (Berlin, 1988), pp. 204-7, 232-3, 248.<lb/> </bibl>
+      <bibl><label>103</label> S. Barck, Antifa-Geschichte(n): eine literarische Spurensuche in der DDR der 1950er und 1960er Jahre (Cologne,<lb/> 2003), p. 147.<lb/> </bibl>
+      <bibl><label>104</label> Scheer, 'Rambow', p. 204.<lb/> 105 Ibid., p. 210.<lb/> </bibl>
+      <bibl><label>106</label> Niven, 'On a Supposed Taboo', p. 224.<lb/> </bibl>
+      <bibl><label>107</label> Millington, 'Limits of Control', p. 49, see also p. 44.<lb/> 108 Ibid., p. 56.<lb/> </bibl>
+      <bibl><label>109</label> Niven, 'On a Supposed Taboo', p. 216.<lb/> </bibl>
+      <bibl><label>110</label> Writer Stefan Heym used the term Diskretion in his parody of the SED and its difficulty in speaking about un-<lb/>wanted historical facts. S. Heym, König David Bericht (Berlin, 1973), p. 96.<lb/> </bibl>
+      <bibl><label>111</label> The exact number of children born after rape is unknown. Johr quotes the number of 292,000 but mentions that in<lb/> Berlin, 90% of the women pregnant after rape had an abortion; see Johr, 'Die Ereignisse in Zahlen', p. 58.<lb/></bibl>
+      <bibl><label>112</label> Take as an example the sixty-four East Germans who went to prison for telling political jokes. See Bodo Müller,<lb/> Lachen gegen die Ohnmacht: DDR-Witze im Visier der Stasi (Berlin, 2016).<lb/> </bibl>
+      <bibl><label>113</label> M. Aumüller, 'Skandalisierung und Autorschaft in der DDR', in A. Bartl and M. Kraus (eds), Skandalautoren: zu<lb/> repräsentativen Mustern literarischer Provokation und Aufsehen erregender Autorinszenierung (Würzburg, 2014),<lb/> pp. 9-27.<lb/> </bibl>
+      <bibl><label>114</label> U. Fix, 'Was hindert die Bürger am freien Sprechen? Die Ordnung des Diskurses in der DDR', in U. Fix, Sprache,<lb/> Sprachgebrauch und Diskurse in der DDR: ausgewählte Aufsätze (Berlin, 2014), pp. 61-81, here p. 66.<lb/> </bibl>
+      <bibl><label>115</label> For instance, East German censors claimed that the suggestion that German women had been raped by Soviet sol-<lb/>diers was not only morally disgusting but also untrue.</bibl>
+      <bibl>Dahlke, '"Frau komm!"', p. 293.</bibl>
+      <bibl>For a comparable practice<lb/> of 'faktologische Zensur' (factual censorship) in the Soviet Union, see P. Roisko, Gralshüter eines untergehenden<lb/> Systems: Zensur der Massenmedien in der UdSSR 1981-1991 (Cologne, 2015), pp. 191-9.<lb/> </bibl>
+      <bibl><label>116</label> Bunn, 'Reimagining Repression', p. 36.<lb/> </bibl>
+      <bibl><label>117</label> Eisenfeld, Kowalczuk and Neubert, Die verdrängte Revolution, p. 11.<lb/> </bibl>
+      <bibl><label>118</label> Vianu, Censorship in Romania.<lb/> </bibl>
+      <bibl><label>119</label> J. Piekalkiewicz and A. W. Penn, The Politics of Ideocracy (Albany, 1995); </bibl>
+      <bibl>U. Backes and S. Kailitz (eds), Ideocracies<lb/> in Comparison: Legitimation-Cooptation-Repression (Abingdon and New York, 2015).</bibl>
+    </listBibl>
+  </text>
+</TEI>

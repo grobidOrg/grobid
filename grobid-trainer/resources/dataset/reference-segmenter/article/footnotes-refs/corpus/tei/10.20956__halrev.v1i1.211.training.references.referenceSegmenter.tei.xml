@@ -1,0 +1,177 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_10.20956__halrev.v1i1.211">
+    <titleStmt>
+      <title level="a">Reconstruction of Financing Agreement Based on the Principle of Profit and Loss in Sharia Banking</title>
+      <author>
+        <persName>
+          <forename>Trisadini Prasastinah</forename>
+          <surname>Usanti</surname>
+        </persName>
+      </author>
+      <author>
+        <persName>
+          <forename>Abdul</forename>
+          <surname>Shomad</surname>
+        </persName>
+      </author>
+      <respStmt>
+        <persName xml:id="pfaffe">Milena Pfaffe</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">2016</date>
+      <idno type="DOI">10.20956/halrev.v1i1.211</idno>
+      <ptr target="https://doi.org/10.20956/halrev.v1i1.211"/>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>Trisadini Prasastinah Usanti, Abdul Shomad. (2016). Reconstruction of Financing Agreement Based on the Principle of Profit and Loss in Sharia Banking. Hasanuddin Law Review, 1(1), 10. DOI: 10.20956/halrev.v1i1.211</bibl>
+      <biblStruct>
+        <analytic>
+          <title level="a">Reconstruction of Financing Agreement Based on the Principle of Profit and Loss in Sharia Banking</title>
+          <author>
+            <persName>
+              <forename>Trisadini Prasastinah</forename>
+              <surname>Usanti</surname>
+            </persName>
+          </author>
+          <author>
+            <persName>
+              <forename>Abdul</forename>
+              <surname>Shomad</surname>
+            </persName>
+          </author>
+        </analytic>
+        <monogr>
+          <title level="j">Hasanuddin Law Review</title>
+          <imprint>
+            <biblScope unit="volume">1</biblScope>
+            <biblScope unit="issue">1</biblScope>
+            <biblScope unit="page">10</biblScope>
+            <date when="2016">2016</date>
+          </imprint>
+        </monogr>
+        <idno type="DOI">10.20956/halrev.v1i1.211</idno>
+        <ptr target="https://doi.org/10.20956/halrev.v1i1.211"/>
+      </biblStruct>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.1-SNAPSHOT" ident="GROBID" when="2026-06-16T09:16:54.023461Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">reference-segmenter</label>
+        <label type="flavor">article/footnotes-refs</label>
+        <label type="variant-id">grobid.training.references.referenceSegmenter</label>
+        <label type="revision">0.9.0-65-gd393236aa</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.references.referenceSegmenter.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-16T09:16:54.023461Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-17T09:52:00.801Z" status="unfinished" who="#pfaffe">
+      <note type="label">v2 (pfaffe)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-17T10:19:00.561Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-17T12:53:21.738Z" status="draft" who="#pfaffe">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-29T14:55:44.247Z" status="draft" who="#kazuyo">
+      <note type="label">review</note>
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-29T15:49:45.164Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+        <listBibl>
+        <bibl><label>1</label><lb/> Trisadini Prasastinah Usanti, A. Shomad, Ari Kur-<lb/>niawan. (2012). Absorption of Islamic law in sharia<lb/> Bank contracts, Reports Featured Research Universi-<lb/>ties. DIPA UA, decision letter the Rector of Airlangga<lb/> University No. 2613/H3/KR/2012. 9 Maret 2012. pg.1 (Trisadini et.al I).<lb/> </bibl>
+        <bibl><label>2</label><lb/> Trisadini Prasastinah Usanti, A. Shomad, Ari Kurni-<lb/>awan. "The Principle of Juctice in Trasactions Based<lb/> on Profit and Loss Sharing in Sharia Banks", Jurnal<lb/> Mimbar Hukum, 26(2): 308-320. Available online at:<lb/> http://mimbar.hukum.ugm.ac.id/index.php/jmh/article/<lb/> view/484/325 (Trisadini et.al II).<lb/> </bibl>
+
+        <bibl><label>3</label><lb/> Philipus M. Hadjon and Tatiek Sri Djatmiati. (2005).<lb/> Legal Argumentation. Yogyakarta: Gadjah Mada<lb/> University Press, p. 1.<lb/> </bibl>
+
+        <bibl><label>4</label><lb/> Mardani. (2013). Agreement Sharia Law in Indonesia.<lb/> Jakarta: Sinar Grafika, p.79.<lb/> </bibl>
+        <bibl><label>5</label><lb/> Abi Ishaq Ibrahim Ibn Musa al-Lakhmi al-Syathibi al-<lb/>Maliki. (1341). Hal-Muwafaqat fi Ushul al-Ahkam, j.<lb/> II, Dar al-Fikr, p.2.<lb/> </bibl>
+        <bibl><label>6</label><lb/> Mohammad Akram Laldin. (2006). Introduction to<lb/> Shariah and Islamic Jurisprudence. Second Edition.<lb/> Kuala Lumpur: CERT Publication, p.18.<lb/> </bibl>
+        <bibl><label>7</label><lb/> Trisadini Prasastinah Usanti and A. Shomad. (2014).<lb/> "The Principle of Juctice in Trasactions Based on<lb/> Profit and Loss Sharing in Sharia Banks", Cost of<lb/> BOPTN In year of second, Final report, p.7 (Trisadini<lb/> et.all III)</bibl>
+        <bibl><lb/><label>8</label><lb/> Mulhadi. (2007). "Prinsip-Prinsip Perlindungan Nasa-<lb/>bah Debitur Berdasarkan Sistem Perbankan Syariah",<lb/> USU Repository, as quoted from Muhammad. (2000).<lb/> Lembaga-Lembaga Keuangan Umat Kontemporer. Yo-<lb/>gyakarta: UII Press, p.22 </bibl>
+        <bibl><label>9</label><lb/> Abdul Ghofur Ashori. (2006). Philosophy of Law.<lb/> Yogyakarta: Gadjah Mada University Press, p.64.<lb/> </bibl>
+        <bibl><label>10</label><lb/> Sheikh Ghazali Sheikh Abod, et. al. (2008). An<lb/> Introduction to Islamic Economics &amp; Finance. Kuala<lb/> Lumpur: CERT, p.269.<lb/> </bibl>
+        <bibl><label>11</label><lb/> Salahudin Ahmed. (2009). Islamic Banking Finance<lb/> and Insurance. Kuala Lumpur: A.S. Noordeen, p.26.<lb/> </bibl>
+        <bibl><label>12</label><lb/> Muhammad Yusuf Saleem. (2013). Islamic Commercial<lb/> Law. Singapore: John Wiley &amp; Sons, p.117.<lb/> </bibl>
+        <bibl><label>13</label><lb/> Ustad Adil. (2011). Getting to know Notary Sharia.<lb/> Bandung: Citra Aditya Bakti, p.80.<lb/> </bibl>
+
+        <bibl><label>14</label><lb/> Ibid., p.81 </bibl>
+        <bibl><label>15</label><lb/> Wirdyaningsih et al. (2005). Bank and Insurance Islam<lb/> in Indonesia. Jakarta: Kencana, p.100.<lb/> </bibl>
+        <bibl><label>16</label><lb/> Trisadini et al III, Op.cit., p.32.<lb/> </bibl>
+
+        <bibl><label>17</label><lb/> Ibid., p.35 </bibl>
+        <bibl><label>18</label><lb/> Ibid., p.36<lb/> </bibl>
+        <bibl><label>19</label><lb/> Wirdyaningsih, Op.cit., p107<lb/></bibl>
+        <bibl><label>20</label><lb/> Trisadini et al III, Op.cit., p.37<lb/></bibl>
+
+        <bibl> <label>21</label><lb/> Agustianto, "Revitalisasi syariah compliance", ac-<lb/>cessed on 22 March 2015.<lb/> </bibl>
+        <bibl><label>22</label><lb/> Trisadini et al III, Op.cit., p.38<lb/></bibl>
+        <bibl> <label>23</label><lb/> Ricardo Simanjuntak. (2006). Business Contracts<lb/> Design Techniques. Jakarta: Gramedia, p.10<lb/></bibl>
+        <bibl> <label>24</label><lb/> Trisadini et al III, Op.cit., p.9<lb/> </bibl>
+
+        <bibl><label>25</label><lb/> Tiara Gustiviana, "The system for the profit sharing of<lb/> Bank Muamalat", article accessed on December 18,<lb/> 2015<lb/> </bibl>
+        <bibl><label>26</label><lb/> Ricardo Simanjuntak, Op.Cit., p.278<lb/> </bibl>
+
+        <bibl><label>27</label><lb/> Trisadini et al II, Op.cit.,p.316<lb/> </bibl>
+        <bibl><label>28</label><lb/> Definition of Recontruction. Great Dictionary of the<lb/> Indonesian Language of the Language Center (KBBI)<lb/> Offline. Source: http://pusatbahasa.diknas.go.id/kbbi/<lb/> accessed on May 24, 2014.<lb/> </bibl>
+        <bibl><label>29</label><lb/> Bryan A. Garner. (2004). Black's Law Dictionary. Eight<lb/> Editions. USA: Thomson Business, p.1300.<lb/> </bibl>
+        <bibl><label>30</label><lb/> Muhammad Arifin Badri, as cited at: http://www.<lb/> pengusahamuslim.com. Accessed on Jul 18, 2014.<lb/> </bibl>
+        <bibl><label>31</label><lb/> Habib Adjie. (2013). Private and Administrative<lb/> Sanctions against a Notary Public Officials. Bandung:<lb/> Refika Aditama, p.49.<lb/> </bibl>
+        <bibl><label>32</label><lb/> Trisadini et al III, Op.cit., p.74.<lb/></bibl>
+
+         REFERENCES<lb/>
+
+        <bibl>Abdul Ghofur Ashori. (2006). Philosophy of<lb/> Law. Yogyakarta: Gadjah Mada Uni-<lb/>versity Press.<lb/></bibl>
+        <bibl> Abi Ishaq Ibrahim Ibn Musa al-Lakhmi al-<lb/>Syathibi al-Maliki. (1341). Hal-Mu-<lb/>wafaqat fi Ushul al-Ahkam, j. II , Dar<lb/> al-Fikr.<lb/></bibl>
+        <bibl> Bryan A. Garner. (2004). Black's Law Dic-<lb/>tionary. Eight Editions. USA: Thom-<lb/>son Business.<lb/></bibl>
+        <bibl> Great Dictionary of the Indonesian Lan-<lb/>guage of the Language Center (KBBI)<lb/> Offline. Source: http://pusatbahasa.<lb/> diknas.go.id/kbbi/ accessed on May<lb/> 24, 2014.<lb/></bibl>
+        <bibl> Habib Adjie. (2013). Private and Admi-<lb/>nistrative Sanctions against a Notary<lb/> Public Officials. Bandung: Refika<lb/> Aditama.<lb/></bibl>
+        <bibl> Mardani. (2013). Agreement Sharia Law in<lb/> Indonesia. Jakarta: Sinar Grafika.<lb/></bibl>
+        <bibl> Mohammad Akram Laldin. (2006). Introduc-<lb/>tion to Shariah and Islamic Jurispru-<lb/>dence. Second Edition. Kuala Lumpur:<lb/> CERT Publication.<lb/></bibl>
+        <bibl> Muhammad Arifin Badri, available online<lb/> at: http://www.pengusahamuslim.com.<lb/> Accessed on July 18, 2014.<lb/></bibl>
+        <bibl> Muhammad Yusuf Saleem. (2013). Islamic<lb/> Commercial Law. Singapore: John Wi-<lb/>ley &amp; Sons.<lb/></bibl>
+        <bibl> Muhammad. (2000). Lembaga-Lembaga<lb/> Keuangan Umat Kontemporer. Yogya-<lb/>karta: UII Press.<lb/></bibl>
+        <bibl> Philipus M. Hadjon and Tatiek Sri Djatmiati.<lb/> (2005). Legal Argumentation. Yogya-<lb/>karta: Gadjah Mada University Press.<lb/></bibl>
+        <bibl> Ricardo Simanjuntak. (2006). Business Con-<lb/>tracts Design Techniques. Jakarta:<lb/> Gramedia.<lb/></bibl>
+        <bibl> Salahudin Ahmed. (2009). Islamic Banking<lb/> Finance and Insurance. Kuala Lum-<lb/>pur: A.S. Noordeen.<lb/></bibl>
+        <bibl> Sheikh Ghazali Sheikh Abod, et. al. (2008).<lb/> An Introduction to Islamic Economics<lb/> &amp; Finance. Kuala Lumpur: CERT.<lb/></bibl>
+
+        <bibl> Trisadini Prasastinah Usanti and A. Shomad.<lb/> (2014). "The Principle of Juctice in<lb/> Trasactions Based on Profit and Loss<lb/> Sharing in Sharia Banks", Cost of<lb/> BOPTN In year of second, Final re-<lb/>port.<lb/></bibl>
+        <bibl> Trisadini Prasastinah Usanti, A. Shomad,<lb/> Ari Kurniawan. (2012). Absorption of<lb/> Islamic law in sharia Bank contracts,<lb/> Reports Featured Research Universi-<lb/>ties. DIPA UA, decision letter the Rec-<lb/>tor of Airlangga University No. 2613/<lb/> H3/KR/2012. 9 Maret 2012.<lb/></bibl>
+        <bibl> Trisadini Prasastinah Usanti, A. Shomad,<lb/> Ari Kurniawan. "The Principle of Juc-<lb/>tice in Trasactions Based on Profit and<lb/> Loss Sharing in Sharia Banks", Jur-<lb/>nal Mimbar Hukum, 26(2): 308-320.<lb/> Available online at: http://mimbar.hu-<lb/>kum.ugm.ac.id/index.php/jmh/article/<lb/> view/484/325<lb/></bibl>
+        <bibl> Ustad Adil. (2011). Getting to know Notary<lb/> Sharia. Bandung: Citra Aditya Bakti.<lb/></bibl>
+        <bibl> Wirdyaningsih et al. (2005). Bank and In-<lb/>surance Islam in Indonesia. Jakarta:<lb/> Kencana.</bibl>
+        </listBibl>
+    </text>
+
+</TEI>
