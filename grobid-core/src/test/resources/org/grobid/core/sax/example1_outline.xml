@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<TOCITEMS nbPages="10">
+    <TOCITEMLIST level="0">
+        <ITEM ID="0">
+            <STRING>Enantiomeric diarylheptanoids from&#xA0;Ottelia acuminata var. acuminata and&#xA0;their &#x3B1;-glucosidase
+                inhibitory activity
+            </STRING>
+            <LINK page="1" top="114.866" bottom="0.0000" left="56.0000" right="0.0000"/>
+            <TOCITEMLIST level="1" idItemParent="0">
+                <ITEM ID="1">
+                    <STRING>Abstract</STRING>
+                    <LINK page="1" top="264.866" bottom="0.0000" left="62.0000" right="0.0000"/>
+                </ITEM>
+                <ITEM ID="2">
+                    <STRING>1 Introduction</STRING>
+                    <LINK page="2" top="84.8660" bottom="0.0000" left="56.0000" right="0.0000"/>
+                </ITEM>
+                <ITEM ID="3">
+                    <STRING>2 Result and&#xA0;discussion</STRING>
+                    <LINK page="2" top="420.866" bottom="0.0000" left="304.000" right="0.0000"/>
+                </ITEM>
+                <ITEM ID="4">
+                    <STRING>3 Conclusions</STRING>
+                    <LINK page="8" top="251.866" bottom="0.0000" left="56.0000" right="0.0000"/>
+                </ITEM>
+                <ITEM ID="5">
+                    <STRING>4 Experimental procedures</STRING>
+                    <LINK page="8" top="83.8660" bottom="0.0000" left="304.000" right="0.0000"/>
+                    <TOCITEMLIST level="2" idItemParent="5">
+                        <ITEM ID="6">
+                            <STRING>4.1 General experimental procedures</STRING>
+                            <LINK page="8" top="97.8660" bottom="0.0000" left="304.000" right="0.0000"/>
+                        </ITEM>
+                        <ITEM ID="7">
+                            <STRING>4.2 Plant material</STRING>
+                            <LINK page="8" top="386.866" bottom="0.0000" left="304.000" right="0.0000"/>
+                        </ITEM>
+                        <ITEM ID="8">
+                            <STRING>4.3 Extraction and&#xA0;isolation</STRING>
+                            <LINK page="8" top="484.866" bottom="0.0000" left="304.000" right="0.0000"/>
+                        </ITEM>
+                        <ITEM ID="9">
+                            <STRING>4.4 &#x3B1;-Glucosidase and&#xA0;PTB1B inhibitory activities detection</STRING>
+                            <LINK page="10" top="193.866" bottom="0.0000" left="56.0000" right="0.0000"/>
+                        </ITEM>
+                    </TOCITEMLIST>
+                </ITEM>
+                <ITEM ID="10">
+                    <STRING>Acknowledgements</STRING>
+                    <LINK page="10" top="514.866" bottom="0.0000" left="56.0000" right="0.0000"/>
+                </ITEM>
+                <ITEM ID="11">
+                    <STRING>References</STRING>
+                    <LINK page="10" top="139.866" bottom="0.0000" left="304.000" right="0.0000"/>
+                </ITEM>
+            </TOCITEMLIST>
+        </ITEM>
+    </TOCITEMLIST>
+</TOCITEMS>
