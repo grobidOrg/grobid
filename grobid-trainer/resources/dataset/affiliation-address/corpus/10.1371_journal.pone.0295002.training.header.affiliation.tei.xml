@@ -22,7 +22,7 @@
 							<orgName type="department">Institute of Anatomy and Cell Biology</orgName>,
 							<orgName type="institution">University of Wu ¨rzburg</orgName>,
 							<address>
-								<addrLine>Wu ¨rzburg</addrLine>,
+								<settlement>Wu ¨rzburg</settlement>,
 								<country>Germany</country>,
 							<lb/>
 							</address>
@@ -32,7 +32,7 @@
 							<orgName type="department">Department of General, Visceral, Transplant, Vascular, and Pediatric Surgery</orgName>,
 							<orgName type="institution">University Hospital of<lb/> Wu ¨rzburg</orgName>,
 							<address>
-								<addrLine>Wu ¨rzburg</addrLine>,
+								<settlement>Wu ¨rzburg</settlement>,
 								<country>Germany</country>
 							<lb/>
 							</address>

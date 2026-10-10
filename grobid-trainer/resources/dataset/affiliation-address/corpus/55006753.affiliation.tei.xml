@@ -13,7 +13,7 @@
 							<orgName type="institution">City University of Hong Kong</orgName>
 							<lb/>
 							<address>
-								<settlement>Kowloon</settlement>,
+								<addrLine>Kowloon</addrLine>,
 								<settlement>Hong Kong</settlement>
 							</address>
 						</affiliation>
