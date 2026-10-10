@@ -54,7 +54,7 @@
 
 	<date>5 Aug 2021</date>
 
-	1<lb/>
+	<page>1<lb/></page>
 	<docTitle>
 	<titlePart>The No-U-Turn Sampler as a Proposal Distribution<lb/> in a Sequential Monte Carlo Sampler with a<lb/> Near-Optimal L-Kernel<lb/></titlePart>
 	</docTitle>
@@ -81,9 +81,7 @@
 	Index Terms-
 	<keyword>Bayesian inference, Markov chain Monte Carlo,<lb/> Monte Carlo methods, Sequential Monte carlo<lb/></keyword>
 
-	<note type="submission">This work has been submitted to the IEEE for possible publication.<lb/></note>
-
-	Copyright may be transferred without notice, after which this version may no<lb/> longer be accessible. 
+	<note type="submission">This work has been submitted to the IEEE for possible publication.<lb/> Copyright may be transferred without notice, after which this version may no<lb/> longer be accessible.</note> 
           
     <note type="funding"> Work funded by the Engineering and Physical Sciences<lb/>Research Council, as part of the grant 'Big Hypotheses: a Fully Parallelised<lb/> Bayesian Inference Solution' (EP/R018537/1)<lb/></note>
           

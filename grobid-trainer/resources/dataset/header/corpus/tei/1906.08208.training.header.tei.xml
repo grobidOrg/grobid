@@ -68,7 +68,11 @@
 
 	<note type="submission">Manuscript received October 23, 2019; revised February 18, 2020; accepted<lb/> February 29, 2020.</note>
 
-	The associate editor coordinating the review of this<lb/> manuscript and approving it for publication was Prof. Christos Masouros.<lb/> (Corresponding author: Pol del Aguila Pla)<lb/>
+	The associate editor coordinating the review of this<lb/> manuscript and approving it for publication was <editor>Prof. Christos Masouros</editor>.<lb/> (Corresponding author:
+	<byline>
+	<docAuthor>Pol del Aguila Pla</docAuthor>
+	</byline>
+	)<lb/>
 	<note type="funding">This work was supported by the SRA ICT TNG project Privacy-preserved<lb/> Internet Traffic Analytics (PITA).<lb/></note>
 
 	<byline>

@@ -106,6 +106,8 @@ Subtitles are labelled similarly as title but as an independent field. It's impo
 
 Running titles are not labelled at all.
 
+A footnote marker at the end of the title (`*`, `†`, a number) stays inside the title field, like the markers of the authors and affiliations.
+
 The line numbers of a manuscript with numbered lines (frequent in preprints) are not part of any field. This holds both when they stand at the end of a field and when they fall inside a multi-line field: in the second case the field is closed before the number and reopened after it, so that the model learns to leave the numbers out (the pieces are reassembled at extraction time). Line numbers carry a distinctive signature in the features (end of line, end of block, own font and the largest font size), unlike the superscript affiliation markers. The examples below come from 023093v1:
 
 ```xml
@@ -226,6 +228,8 @@ An affiliation sometimes contains address elements (building, street, P.O. box, 
 
     <address>Finland<lb/></address>
 ```
+
+A job title printed as part of the affiliation ("1 Associate Professor, Department of Family Medicine, Université de Sherbrooke", "2 Program Chief, Gastroenterology Group Health Cooperative") stays **inside** the `<affiliation>` field: the affiliation-address model leaves it untagged afterwards, and taking it out would separate the marker from the organisation. Only a job title standing between the author name and the affiliation is left outside, as described for authors.
 
 This does not apply when the address closes one affiliation and another affiliation follows (e.g. `Mayo Clinic, Rochester, MN, Duke Cancer Institute, Durham, NC`): each affiliation then gets its own `<affiliation>` and `<address>`.
 

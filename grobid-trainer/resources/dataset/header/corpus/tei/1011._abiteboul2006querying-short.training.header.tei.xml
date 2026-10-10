@@ -28,7 +28,7 @@
 	Abstract.
 	<div type="abstract">We present in this paper a new model for representing prob-<lb/>abilistic information in a semi-structured (XML) database, based on the<lb/> use of probabilistic event variables. This work is motivated by the need<lb/> of keeping track of both confidence and lineage of the information stored<lb/> in a semi-structured warehouse. For instance, the modules of a (Hid-<lb/>den Web) content warehouse may derive information concerning the se-<lb/>mantics of discovered Web services that is by nature not certain. Our<lb/> model, namely the fuzzy tree model, supports both querying (tree pat-<lb/>tern queries with join) and updating (transactions containing an arbi-<lb/>trary set of insertions and deletions) over probabilistic tree data. We<lb/> highlight its expressive power and discuss implementation issues.<lb/> </div>
 
-	This work was developed in the framework of the RNTL Project WebContent.<lb/>
+	<note type="funding">This work was developed in the framework of the RNTL Project WebContent.<lb/></note>
 
 	<reference>Y. Ioannidis et al. (Eds.): EDBT 2006, LNCS 3896, pp. 1059-1068, 2006.<lb/></reference>
 

@@ -71,9 +71,7 @@
 	</byline>
 	)<lb/>
 
-	<note type="submission">Preprint submitted to Pattern Recognition<lb/> </note>
-
-	<date>August 14, 2014<lb/></date>
+	<note type="submission">Preprint submitted to Pattern Recognition<lb/> August 14, 2014<lb/></note>
 
 	<div type="abstract">kinds of challenges and together help provide an exhaustive evaluation. The<lb/> results show that our approaches either match or exceed state-of-the-art per-<lb/>formance reaching 91.21% on MSR-action 3D, 97.91% on UCF-kinect, and<lb/> 88.5% on UT-kinect. Finally, we evaluate the latency, i.e. the ability to<lb/> recognize an action before its termination, of our approach and demonstrate<lb/> improvements relative to other published approaches.<lb/></div>
 

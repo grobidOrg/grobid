@@ -7,7 +7,11 @@
 		<front>
 <lb/>
 	<docTitle>
-	<titlePart>Timing Analysis of Concurrent Systems 1<lb/> An Algorithm for Determining Time Separation of Events<lb/></titlePart>
+	<titlePart>Timing Analysis of Concurrent Systems 1<lb/></titlePart>
+	</docTitle>
+
+	<docTitle>
+	<titlePart>An Algorithm for Determining Time Separation of Events<lb/></titlePart>
 	</docTitle>
 
 	<byline>

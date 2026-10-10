@@ -19,6 +19,7 @@
 	<docAuthor>1 2<lb/> Anneh Mohammad Gharravi*<lb/> Mohammad Reza<lb/> 3 2<lb/> Gholami ,Daryoush Bijan Nejad<lb/> , Saeed Azandeh ,</docAuthor>
 	</byline>
 
+	<!-- check: text order scrambled by the extraction, abstract subtitles and the first letter of the keywords cannot be reunited -->
 	Abstract<lb/> Introduction:<lb/>
 	Case Report:<lb/> Conclusion:<lb/> Keywords: S<lb/>
 
@@ -36,7 +37,7 @@
 
 	<note type="copyright">This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (http://creativecommons.org/licenses/by-nc/3.0) which permits<lb/> unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.<lb/></note>
 
-	2321-3817<lb/>
+	<idno>2321-3817</idno><lb/>
 
 	<idno>10.13107/jocr.2250-0685.099<lb/></idno>
 

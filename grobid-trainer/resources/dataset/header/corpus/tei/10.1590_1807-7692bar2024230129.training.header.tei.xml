@@ -140,7 +140,8 @@
 	<address>Brazil</address>
 
 	)<lb/> Reviewers:<lb/>
-	Alexandre Borba da Silveira<lb/>
+	<!-- check: reviewer labelled as editor, like the editors and editorial assistants of this file -->
+	<editor>Alexandre Borba da Silveira<lb/></editor>
 
 	(
 	<byline>
@@ -192,7 +193,7 @@
 
 	<idno>DOI: https://doi.org/10.1590/1807-7692bar2024230099<lb/></idno>
 
-	<note type="doctype">Special issue</note> on: Coopetition Authors<lb/>
+	<note type="doctype">Special issue on: Coopetition</note> Authors<lb/>
 
 	<byline>
 	<docAuthor>Álvaro Antônio Bueno de Camargo<lb/></docAuthor>
