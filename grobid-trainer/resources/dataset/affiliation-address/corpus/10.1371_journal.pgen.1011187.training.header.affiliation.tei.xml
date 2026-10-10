@@ -12,7 +12,7 @@
 							<orgName type="institution">Ethiopian Public Health Institute</orgName>,
 							<address>
 								<settlement>Addis Ababa</settlement>,
-								<country>Ethiopia,</country>
+								<country>Ethiopia</country>,
 							</address>
 						</affiliation>
 
@@ -26,15 +26,15 @@
 							<address>
 								<settlement>Gondar</settlement>,
 							<lb/>
-								<country>Ethiopia,</country>
+								<country>Ethiopia</country>,
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="department">London School of Hygiene &amp; Tropical Medicine</orgName>,
+							<orgName type="institution">London School of Hygiene &amp; Tropical Medicine</orgName>,
 							<address>
 								<settlement>London</settlement>,
-								<country>United Kingdom,</country>
+								<country>United Kingdom</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -43,7 +43,7 @@
 							<orgName type="institution">Ministry of Health</orgName>,
 							<address>
 								<settlement>Addis Ababa</settlement>,
-								<country>Ethiopia,</country>
+								<country>Ethiopia</country>,
 							</address>
 						</affiliation>
 						<affiliation>

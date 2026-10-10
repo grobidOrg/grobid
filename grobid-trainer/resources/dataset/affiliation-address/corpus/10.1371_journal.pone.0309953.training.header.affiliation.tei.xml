@@ -14,7 +14,7 @@
 							<address>
 								<settlement>Shatin, N.T.</settlement>,
 								<region>Hong Kong SAR</region>,
-								<country>China,</country>
+								<country>China</country>,
 							<lb/>
 							</address>
 						</affiliation>
@@ -33,13 +33,13 @@
 						<affiliation>
 							<marker>3</marker>
 							<orgName type="laboratory">State Key Laboratory of Liver Research</orgName> (
-							<orgName type="institution">The University of Hong Kong)</orgName>,
+							<orgName type="institution">The University of Hong Kong</orgName>),
 							<address>
 								<settlement>Pokfulam</settlement>,
 								<settlement>Hong Kong</settlement>,
 								<lb/>
 								<region>Hong Kong SAR</region>,
-								<country>China,</country>
+								<country>China</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -68,7 +68,7 @@
 							<marker>6</marker>
 							<orgName type="department">Center for Protein Science and<lb/> Crystallography</orgName>,
 							<orgName type="institution">The Chinese University of Hong Kong</orgName>,
-							<orgName type="department">Shatin N.T.</orgName>,
+							Shatin N.T.,
 							<address>
 								<settlement>Shatin N.T.</settlement>,
 								<region>Hong Kong SAR</region>,

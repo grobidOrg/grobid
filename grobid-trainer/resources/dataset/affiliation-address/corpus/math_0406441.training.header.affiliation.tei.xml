@@ -20,7 +20,7 @@
 							<orgName type="institution">Ben-Gurion University of the Negev</orgName>,
 							<address>
 								<settlement>Beer-<lb/>Sheva</settlement>,
-								<country>Israel,</country> and ,
+								<country>Israel</country>, and ,
 							</address>
 						</affiliation>
 
@@ -39,7 +39,7 @@
 							<orgName type="department">Institute of Mathematics</orgName>,
 							<orgName type="institution">Hebrew University of Jerusalem</orgName>,
 							<address>
-								<settlement>Israel</settlement>, and ,
+								<country>Israel</country>, and ,
 							<lb/>
 							</address>
 						</affiliation>

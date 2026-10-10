@@ -43,7 +43,7 @@
 							</address>
 						</affiliation>
 						<affiliation>
-							<orgName type="institution">d Ryder Scott Company, Petroleum Consultants</orgName>
+							<marker>d</marker> <orgName type="institution">Ryder Scott Company, Petroleum Consultants</orgName>
 							<address>
 								<addrLine>621, 17th Street</addrLine>, 
 								<addrLine>Suite 1550</addrLine>,
@@ -72,7 +72,7 @@
 							<orgName type="institution">US Geological Survey</orgName>,
 							<address>
 								<addrLine>Denver Federal Center, MS-939</addrLine>, 
-								<addrLine>Box 25046</addrLine>,
+								<postBox>Box 25046</postBox>,
 								<settlement>Denver</settlement>,
 								<region>CO</region>
 								<postCode>80225</postCode>,

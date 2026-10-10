@@ -13,7 +13,7 @@
 							<orgName type="institution">Jiangnan University</orgName>,
 							<address>
 								<settlement>Wuxi</settlement>,
-								<settlement>Jiangsu</settlement>,
+								<region>Jiangsu</region>,
 								<postCode>214122</postCode>,
 								<country>China</country>;
 							<lb/>
@@ -25,7 +25,7 @@
 							<orgName type="institution">Jiangnan University</orgName>,
 							<address>
 								<settlement>Wuxi</settlement>,
-								<settlement>Jiangsu</settlement>,
+								<region>Jiangsu</region>,
 								<postCode>214122</postCode>,
 								<country>China</country>;
 							<lb/>
@@ -37,7 +37,7 @@
 							<orgName type="department">School of Medicine</orgName>,
 							<orgName type="institution">Wake Forest University</orgName>,
 							<address>
-								<addrLine>Winston Salem</addrLine>,
+								<settlement>Winston Salem</settlement>,
 								<region>NC</region>
 								<postCode>27109</postCode>,
 								<country>USA</country>;

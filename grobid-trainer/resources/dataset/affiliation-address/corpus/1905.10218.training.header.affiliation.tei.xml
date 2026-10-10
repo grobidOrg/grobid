@@ -13,7 +13,7 @@
 								<settlement>Guildford</settlement>,
 								<region>Surrey</region>
 								<postCode>GU2 7XH</postCode>,
-								<country>UK.</country>
+								<country>UK</country>.
 							<lb/>
 							</address>
 						</affiliation>
@@ -26,7 +26,7 @@
 								<settlement>Guildford</settlement>,
 								<region>Surrey</region>
 								<postCode>GU2 7XH</postCode>,
-								<country>UK.</country>
+								<country>UK</country>.
 							<lb/>
 							</address>
 					</affiliation>
@@ -36,7 +36,7 @@
 							<lb/>
 							<address>
 								<addrLine>30 Guildford Street</addrLine>,
-								<settlement>London WCIN lEH</settlement>,
+								<settlement>London</settlement> <postCode>WCIN lEH</postCode>,
 								<country>UK</country>.
 							<lb/>
 							</address>
@@ -50,7 +50,7 @@
 								<settlement>Hendon</settlement>,
 								<settlement>London</settlement>
 								<postCode>NW4 4BT</postCode>,
-								<country>UK.</country>
+								<country>UK</country>.
 							</address>
 						</affiliation>
 

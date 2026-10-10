@@ -17,7 +17,7 @@
 								<postCode>7500 AE</postCode>
 								<settlement>Enschede</settlement>,
 							<lb/>
-								<addrLine>The Netherlands</addrLine>, and
+								<country>The Netherlands</country>, and
 							</address>
 						</affiliation>	
 						
@@ -30,7 +30,7 @@
 								<postBox>P.O. Box 80082</postBox>,
 								<postCode>3508 TB</postCode>,
 								<settlement>Utrecht</settlement>,
-								<country>The Netherlands.</country>
+								<country>The Netherlands</country>.
 							</address>
 						</affiliation>
 

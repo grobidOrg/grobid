@@ -46,7 +46,7 @@
 							<orgName type="department">Dipartimento di Fisica</orgName>,
 							<orgName type="institution">Università di Pavia</orgName>,
 							and 
-							<orgName type="department">INFN</orgName>,
+							<orgName type="institution">INFN</orgName>,
 							<orgName type="institution">Sezione di Pavia</orgName>,
 							<address>
 								<addrLine>Via A. Bassi 6</addrLine>,
@@ -67,6 +67,8 @@
 								<settlement>Trieste</settlement>,
 								<country>Italy</country>, and
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">INFN</orgName>,
 							<orgName type="institution">Sezioni di Trieste</orgName>,
 							<address>

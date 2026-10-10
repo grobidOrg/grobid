@@ -8,8 +8,9 @@
 						<affiliation>
 							<orgName type="department">Department of Mathematics</orgName>
 							<lb/>
-							<orgName type="institution">University of Florida<lb/> Gainesville</orgName>,
+							<orgName type="institution">University of Florida</orgName><lb/>
 							<address>
+								<settlement>Gainesville</settlement>,
 								<region>FL</region>
 								<postCode>32611</postCode>
 							</address>

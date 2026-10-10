@@ -11,12 +11,8 @@
 							<orgName type="department">Department of Chemistry</orgName>,
 							<orgName type="institution">Pennsylvania State University</orgName>,
 							<address>
-								<postCode>184</postCode>
-							</address>
-						</affiliation>
-						<affiliation>	
-							<orgName type="department">Materials Research Institute</orgName>,
-							<address>
+								<addrLine>184
+								Materials Research Institute</addrLine>,
 								<settlement>University Park</settlement>,
 								<region>PA</region>
 								<postCode>16802</postCode>,

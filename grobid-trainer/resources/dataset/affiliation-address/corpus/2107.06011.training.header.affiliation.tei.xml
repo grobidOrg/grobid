@@ -28,7 +28,7 @@
 						<affiliation>
 							<marker>2</marker>
 							<orgName type="institution">Univ Lyon</orgName>,
-							<orgName type="laboratory">UCBL</orgName>,
+							<orgName type="institution">UCBL</orgName>,
 							<orgName type="institution">CNRS</orgName>,
 							<lb/>
 							<orgName type="institution">INSA-Lyon</orgName>,
@@ -37,7 +37,7 @@
 							<address>
 								<postCode>F-69622</postCode>
 								<settlement>Villeurbanne</settlement>,
-								<country>France.</country>
+								<country>France</country>.
 							<lb/>
 							</address>
 						</affiliation>

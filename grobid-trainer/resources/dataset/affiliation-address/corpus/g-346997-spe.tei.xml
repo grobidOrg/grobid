@@ -24,7 +24,7 @@
 								<marker>2</marker> 
 								<orgName type="institution">BNL</orgName>,
 								<address>
-									<addrLine>Upton</addrLine>,
+									<settlement>Upton</settlement>,
 									<region type="state" n="NY">NY</region>,
 									<country key="US">USA</country>;<lb/>
                                </address>

@@ -69,7 +69,7 @@
 							<marker>9</marker>
 							<orgName type="department">Genetic Epidemiology</orgName>,
 							<orgName type="department">Dept of Med Genetics, Molecular &amp; Clin Pharmacology</orgName>,
-							<orgName type="department">Innsbruck Med Univ</orgName>,
+							<orgName type="institution">Innsbruck Med Univ</orgName>,
 							<address>
 								<settlement>Innsbruck</settlement>,
 								<country>Austria</country>
@@ -100,8 +100,8 @@
 							<orgName type="department">Dept of Molecular Physiology &amp; Biophysics</orgName>,
 							The
 							<orgName type="institution">Ctr for Human Genetics Rsrch</orgName>,
+							<orgName type="institution">Vanderbilt Univ</orgName>,
 							<address>
-								<addrLine>Vanderbilt Univ</addrLine>,
 								<settlement>Nashville</settlement>,
 								<region>TN</region>
 							</address>
@@ -112,13 +112,13 @@
 							<orgName type="department">UNC Gillings School of Global Public Hlth</orgName>,
 							<orgName type="institution">The Univ of North Carolina</orgName>,
 							<address>
-								<addrLine>Chapel Hill</addrLine>,
+								<settlement>Chapel Hill</settlement>,
 								<region>NC</region>
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>14</marker>
-							<orgName type="department">Dept of Clin Biochemistry, Rigshospitalet</orgName>,
+							<orgName type="department">Dept of Clin Biochemistry</orgName>, <orgName type="institution">Rigshospitalet</orgName>,
 							<orgName type="institution">Copenhagen Univ Hosp</orgName>,
 							<address>
 								<settlement>Copenhagen</settlement>,
@@ -142,7 +142,7 @@
 							<address>
 								<addrLine>Western Gen Hosp</addrLine>,
 								<settlement>Edinburgh</settlement>,
-								<region>Scotland, UK</region>
+								<region>Scotland</region>, <country>UK</country>
 								<country>UK</country>
 							</address>
 						</affiliation>

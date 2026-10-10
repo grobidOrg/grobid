@@ -44,7 +44,7 @@
 							<marker>4</marker>
 							<orgName type="institution">MPI für Kernphysik</orgName>,
 							<address>
-								<addrLine>postfach 103980</addrLine>,
+								<postBox>postfach 103980</postBox>,
 								<postCode>D-69117</postCode>
 								<settlement>Heidelberg</settlement>,
 								<country>Germany</country>
@@ -61,6 +61,8 @@
 								<country>Italy</country>
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">CAISMI-CNR</orgName>,
 							<address>
 								<settlement>Arcetri</settlement>,

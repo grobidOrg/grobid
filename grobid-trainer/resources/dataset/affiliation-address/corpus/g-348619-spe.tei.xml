@@ -21,7 +21,7 @@
 								<orgName type="institution" key="instit2">Université de Strasbourg</orgName>,
 								<address>
 									<addrLine>23 rue du Loess</addrLine>
-									<addrLine>B.P. 28</addrLine>,
+									<postBox>B.P. 28</postBox>,
 									<postCode>F-67037</postCode>
 									<settlement>Strasbourg Cedex 2</settlement>,
 									<country key="FR">France<lb/></country>
@@ -55,7 +55,7 @@
 							</affiliation>
 							
 							<affiliation>
-								<orgName type="laboratory">and Grand Accélérateur National d'Ions Lourds</orgName>,
+								and <orgName type="laboratory">Grand Accélérateur National d'Ions Lourds</orgName>,
 								<address>
 									<addrLine>Bd Henri Becquerel<lb/></addrLine>
 									<postBox>BP 55027</postBox>

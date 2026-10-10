@@ -69,8 +69,8 @@
 							<address>
 								<addrLine>Calle Vía Láctea s/n</addrLine>,
 								<postCode>38205</postCode>
-								<addrLine>La Laguna</addrLine>,
-								<settlement>Tenerife</settlement>,
+								<settlement>La Laguna</settlement>,
+								<region>Tenerife</region>,
 								<country>Spain</country>
 							<lb/>
 							</address>
@@ -530,7 +530,7 @@
 			<affiliation>
 			<marker>40 </marker>
 		<orgName type="department">Department of Astronomy &amp; Astrophysics</orgName>,
-		<orgName type="laboratory">525 Davey Laboratory</orgName>, 
+		<address><addrLine>525 Davey Laboratory</addrLine></address>, 
 		<orgName type="institution">Penn State</orgName>, 
 			<address>
 			<addrLine>University Park</addrLine>, 
@@ -544,7 +544,7 @@
 		 <affiliation>
 		<marker>41 </marker>
 		<orgName type="department">Center for Exoplanets and Habitable Worlds</orgName>, 
-		<orgName type="laboratory">525 Davey Laboratory</orgName>, 
+		<address><addrLine>525 Davey Laboratory</addrLine></address>, 
 		<orgName type="institution">Penn State</orgName>, 
 		<address>
 		<addrLine>University Park</addrLine>, 
@@ -558,7 +558,7 @@
 		<affiliation>
 		<marker>42 </marker>
 		<orgName type="department">Penn State Extraterrestrial Intelligence Center</orgName>, 
-		<orgName type="laboratory">525 Davey Laboratory</orgName>, 
+		<address><addrLine>525 Davey Laboratory</addrLine></address>, 
 		<orgName type="institution">Penn State</orgName>, 
 		<address>
 		<addrLine>University Park</addrLine>, 
@@ -572,8 +572,8 @@
 		<affiliation>
 		<marker>43 </marker>
 	 <orgName type="institution">Centro de Astrobiología (CSIC-INTA)</orgName>,
-	<orgName type="department">ESAC campus</orgName>, 
 		<address>
+		<addrLine>ESAC campus</addrLine>, 
 		<addrLine>Camino Bajo del Castillo s/n</addrLine>,
 		<postCode>28692</postCode>
 		<settlement>Villanueva de la Cañada</settlement>, 
@@ -586,8 +586,8 @@
 		<affiliation>
 		<marker>44 </marker>
 	<orgName type="institution">Institut de Ciències de l'Espai (ICE, CSIC)</orgName>,
-	<orgName type="department">Campus UAB</orgName>, 
 		<address>
+		<addrLine>Campus UAB</addrLine>, 
 		<addrLine>Can Magrans sn</addrLine>, 
 		<postCode>08193</postCode>
 		<settlement>Bellaterra</settlement>, 
@@ -601,7 +601,7 @@
 		<orgName type="institution">Institut d'Estudis Espacials de Catalunya (IEEC)</orgName>, 
 		<address>
 		<postCode>08034</postCode>
-		<region>Barcelona</region>, 
+		<settlement>Barcelona</settlement>, 
 		<country>Spain<lb/></country>
 		</address>
 		</affiliation>
@@ -638,7 +638,7 @@
 	<orgName type="institution">Hamburger Sternwarte</orgName>, 
 	<address>
 	<addrLine>Gojenbergsweg 112</addrLine>, 
-	<postCode>D-21029 Hamburg</postCode>,
+	<postCode>D-21029</postCode> <settlement>Hamburg</settlement>,
 	<country>Germany<lb/></country>
 	</address>
 	 </affiliation>
@@ -646,8 +646,8 @@
 
 	<affiliation>
 	<marker>49</marker>
-	<orgName type="department">Departamento de Física de la Tierra y Astrofísica &amp; </orgName>
-	<orgName type="institution">IPARCOS-UCM (Instituto de Física de Partículas y del Cosmos de la UCM),<lb/></orgName>
+	<orgName type="department">Departamento de Física de la Tierra y Astrofísica</orgName> &amp; 
+	<orgName type="institution">IPARCOS-UCM (Instituto de Física de Partículas y del Cosmos de la UCM)</orgName>,<lb/>
 	<orgName type="department">Facultad de Ciencias Físicas</orgName>, 
 	<orgName type="institution">Universidad Complutense de Madrid</orgName>,
 	<address>
@@ -691,7 +691,9 @@
 	<postCode>94043</postCode>
 	<country>USA</country>/
 	</address>
+	 </affiliation>
 
+	<affiliation>
 	<orgName type="institution">NASA Ames Research Center</orgName>, 
     <address>
 	<settlement>Moffett Field</settlement>, 
@@ -720,7 +722,7 @@
 	<orgName type="department">Department of Earth, Atmospheric and Planetary Science</orgName>, 
 	<orgName type="institution">Massachusetts Institute of Technology</orgName>, 
 	<address>
-	<addrLine>77 Massachusetts Avenue,<lb/></addrLine>
+	<addrLine>77 Massachusetts Avenue</addrLine>,<lb/>
 	<settlement>Cambridge</settlement>, 
 	<region>MA</region>
 	<postCode>02139</postCode>, 

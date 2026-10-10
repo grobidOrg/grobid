@@ -21,8 +21,7 @@
 							<orgName type="institution">Erasmus Medical Center</orgName>,
 							<address>
 								<settlement>Rotterdam</settlement>,
-								<region>CA</region>
-								<postCode>3000</postCode>,
+								<postCode>CA 3000</postCode>,
 								<country>The Netherlands</country>
 							</address>
 						</affiliation>
@@ -55,9 +54,8 @@
 							<orgName type="consortium">Netherlands Consortium for Healthy Aging (NCHA)</orgName>,
 							<address>
 								<settlement>Leiden</settlement>,
-								<region>RC</region>
-								<postCode>2300</postCode>,
-								<addrLine>The Netherlands</addrLine>,
+								<postCode>RC 2300</postCode>,
+								<country>The Netherlands</country>,
 							</address>
 						</affiliation>
 						<affiliation>

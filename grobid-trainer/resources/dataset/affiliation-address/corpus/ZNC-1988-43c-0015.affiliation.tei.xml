@@ -10,7 +10,9 @@
 						<affiliation>
 							<marker>*</marker>
 							<orgName type="department">Department of Food Science</orgName>,
-							<orgName type="department">Food Studies Building</orgName>,
+							<address>
+								<addrLine>Food Studies Building</addrLine>
+							</address>,
 							<orgName type="institution">University of Reading</orgName>,
 							<address>
 								<addrLine>Whiteknights</addrLine>,

@@ -58,7 +58,7 @@
 							<orgName type="department">Faculty of Health Sciences and Medicine</orgName>,
 							<orgName type="institution">Bond University</orgName>,
 							<address>
-								<addrLine>Gold Coast</addrLine>,
+								<settlement>Gold Coast</settlement>,
 								<region>Queensland</region>,
 								<country>Australia</country>,
 							</address>
@@ -69,7 +69,7 @@
 							<orgName type="institution">International Islamic University Malaysia</orgName>,
 							<address>
 								<settlement>Kuantan</settlement>,
-								<settlement>Pahang</settlement>,
+								<region>Pahang</region>,
 								<country>Malaysia</country>,
 							</address>
 						</affiliation>

@@ -14,6 +14,8 @@
 								<settlement>Petten</settlement>,
 								<country>The Netherlands</country>,
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Institute for Nanotechnology</orgName>,
 							<lb/>
 							<address>
@@ -21,12 +23,16 @@
 								<settlement>Karlsruhe</settlement>,
 								<country>Germany</country>,
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">Institute Laue-LangeVin</orgName>,
 							<address>
 								<settlement>Grenoble</settlement>,
 								<country>France</country>,
 							</address>
-							<orgName type="institution">and Institute for Materials Research</orgName>,
+						</affiliation>
+						<affiliation>
+							and <orgName type="institution">Institute for Materials Research</orgName>,
 							<lb/>
 							<orgName type="institution">UniVersity of Salford</orgName>,
 							<address>

@@ -19,13 +19,13 @@
 							</address>
 						</affiliation>
 						<affiliation>	
-							<orgName type="department">&apos; and Service de Psychiatrie</orgName>,
+							&apos; and <orgName type="department">Service de Psychiatrie</orgName>,
 							<orgName type="institution">Hhpital de la<lb/> Salpe^tri2re</orgName>,
 							<address>
 								<addrLine>47, Bld de I&apos;Hhpital</addrLine>,
 								<postCode>F-75013</postCode>
 								<settlement>PARIS</settlement>,
-								<settlement>Franck</settlement>
+								<country>Franck</country>
 							</address>
 						</affiliation>
 

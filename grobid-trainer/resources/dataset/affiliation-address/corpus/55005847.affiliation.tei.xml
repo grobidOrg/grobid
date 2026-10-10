@@ -14,21 +14,22 @@
 						<affiliation>
 							<marker>2</marker>
 							<orgName type="laboratory">Laboratory for Molecular Structure</orgName>;
-							<orgName type="institution">National Institute<lb/> for Biological Standards and Control; Potters Bar</orgName>,
+							<orgName type="institution">National Institute<lb/> for Biological Standards and Control</orgName>;
 							<address>
-								<settlement>Hertfordshire</settlement>,
+								<settlement>Potters Bar</settlement>,
+								<region>Hertfordshire</region>,
 								<country>UK</country>
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>*</marker>
-							<orgName type="department">Correspondence to: Janet Suker</orgName>;
+							Correspondence to: Janet Suker;
 							<orgName type="department">Division of Bacteriology</orgName>;
 							<orgName type="institution">NIBSC</orgName>;
 							<address>
 								<addrLine>Blanche Lane</addrLine>; 
-								<addrLine>South Mimms; Potters Bar</addrLine>;
-								<settlement>Hertfordshire</settlement>
+								<addrLine>South Mimms</addrLine>; <settlement>Potters Bar</settlement>;
+								<region>Hertfordshire</region>
 								<postCode>EN6 3QG</postCode>
 								<country>UK</country>;
 							</address>

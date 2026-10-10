@@ -14,7 +14,7 @@
 							<address>
 								<settlement>Atlanta</settlement>,
 								<region>Georgia</region>,
-								<country>United States of America,</country>
+								<country>United States of America</country>,
 							<lb/>
 							</address>
 						</affiliation>
@@ -23,7 +23,7 @@
 							<orgName type="institution">Kenya Medical Research Institute-Center for Global Health Research</orgName>,
 							<address>
 								<settlement>Kisumu</settlement>,
-								<country>Kenya,</country>
+								<country>Kenya</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -33,7 +33,7 @@
 							<address>
 								<settlement>Atlanta</settlement>,
 								<region>Georgia</region>,
-								<country>United States of America,</country>
+								<country>United States of America</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -41,7 +41,7 @@
 							<orgName type="institution">Centers<lb/> for Disease Control and Prevention-Kenya</orgName>,
 							<address>
 								<settlement>Kisumu</settlement>,
-								<country>Kenya,</country>
+								<country>Kenya</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -60,14 +60,16 @@
 								<settlement>Dhaka</settlement>,
 								<country>Bangladesh</country>,
 							<lb/>
-								<addrLine>7 Bloomberg</addrLine>
 							</address>
-							<orgName type="department">School of Public Health</orgName>,
+						</affiliation>
+						<affiliation>
+							<marker>7</marker>
+							<orgName type="department">Bloomberg School of Public Health</orgName>,
 							<orgName type="institution">Johns Hopkins University</orgName>,
 							<address>
 								<settlement>Baltimore</settlement>,
 								<region>Maryland</region>,
-								<country>United States of<lb/> America,</country>
+								<country>United States of<lb/> America</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -75,7 +77,7 @@
 							<orgName type="institution">London School of Hygiene and Tropical Medicine</orgName>,
 							<address>
 								<settlement>London</settlement>,
-								<country>United Kingdom,</country>
+								<country>United Kingdom</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -84,7 +86,7 @@
 							<orgName type="institution">Haramaya University</orgName>,
 							<address>
 								<settlement>Harar</settlement>,
-								<country>Ethiopia,</country>
+								<country>Ethiopia</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -93,7 +95,7 @@
 							<orgName type="institution">Haramaya<lb/> University</orgName>,
 							<address>
 								<settlement>Harar</settlement>,
-								<country>Ethiopia,</country>
+								<country>Ethiopia</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -112,7 +114,7 @@
 							<orgName type="institution">Vestfold Hospital Trust</orgName>,
 							<address>
 								<settlement>Tønsberg</settlement>,
-								<settlement>Norway</settlement>,
+								<country>Norway</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -150,7 +152,7 @@
 							<orgName type="institution">Universitat de Barcelona</orgName>,
 							<address>
 								<settlement>Barcelona</settlement>,
-								<country>Spain,</country>
+								<country>Spain</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -158,21 +160,18 @@
 							<orgName type="institution">Institucio ´Catalana de Recerca I Estudis<lb/> Avanc ¸ats (ICREA)</orgName>,
 							<address>
 								<settlement>Barcelona</settlement>,
-								<country>Spain,</country>
+								<country>Spain</country>,
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>18</marker>
 							<orgName type="department">Pediatrics Department</orgName>,
-							<orgName type="institution">Hospital</orgName>
-							<address>
-								<addrLine>Sant Joan de De ´u</addrLine>,
-							</address>
+							<orgName type="institution">Hospital Sant Joan de De ´u</orgName>,
 							<orgName type="institution">Universitat de<lb/> Barcelona</orgName>,
 							<address>
 								<settlement>Esplugues</settlement>,
 								<settlement>Barcelona</settlement>,
-								<country>Spain,</country>
+								<country>Spain</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -180,7 +179,7 @@
 							<orgName type="department">Consorcio de Investigacio ´n Biome ´dica en Red de<lb/> Epidemiologı ´a y Salud Pu ´blica (CIBERESP)</orgName>,
 							<address>
 								<settlement>Madrid</settlement>,
-								<country>Spain,</country>
+								<country>Spain</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -214,7 +213,7 @@
 							<orgName type="institution">Ministry of Health and Sanitation</orgName>,
 							<address>
 								<settlement>Freetown</settlement>,
-								<country>Sierra Leone,</country>
+								<country>Sierra Leone</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -223,7 +222,7 @@
 							<lb/>
 							<address>
 								<settlement>Freetown</settlement>,
-								<country>Sierra Leone,</country>
+								<country>Sierra Leone</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -232,7 +231,7 @@
 							<orgName type="institution">University of the Witwatersrand</orgName>,
 							<address>
 								<settlement>Johannesburg</settlement>,
-								<country>South Africa,</country>
+								<country>South Africa</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -243,7 +242,7 @@
 							<lb/>
 							<address>
 								<settlement>Johannesburg</settlement>,
-								<country>South Africa,</country>
+								<country>South Africa</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -253,7 +252,7 @@
 							<orgName type="institution">University of the Witwatersrand</orgName>,
 							<address>
 								<settlement>Johannesburg</settlement>,
-								<country>South Africa,</country>
+								<country>South Africa</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -276,7 +275,7 @@
 							<address>
 								<settlement>Atlanta</settlement>,
 								<region>Georgia</region>,
-								<country>United States of America,</country>
+								<country>United States of America</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -294,7 +293,7 @@
 							<address>
 								<settlement>Atlanta</settlement>,
 								<region>Georgia</region>,
-								<country>United States of America,</country>
+								<country>United States of America</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -309,7 +308,7 @@
 							</address>
                         </affiliation>
                         <affiliation>
-							<orgName type="department">Public Library of<lb/> Science</orgName>,
+							<orgName type="institution">Public Library of<lb/> Science</orgName>,
 							<address>
 								<country>UNITED STATES</country>
 							</address>

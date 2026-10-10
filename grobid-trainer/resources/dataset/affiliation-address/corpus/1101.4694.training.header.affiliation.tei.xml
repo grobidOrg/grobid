@@ -10,7 +10,7 @@
 							<orgName type="department">Centro de Formação de Professores</orgName>,
 							<orgName type="institution">Universidade Federal do Recôncavo da Bahia</orgName>,
 							<address>
-								<addrLine>45.300-000</addrLine>,
+								<postCode>45.300-000</postCode>,
 								<settlement>Amargosa</settlement>,
 								<region>BA</region>,
 								<country>Brazil</country>
@@ -21,11 +21,11 @@
 							
 						<affiliation>
 							<marker>2</marker>
-							<orgName type="department">Departamento de Física -CP 702</orgName> -
+							<orgName type="department">Departamento de Física</orgName> -<address><postBox>CP 702</postBox></address> -
 							<orgName type="institution">Universidade Federal de Minas Gerais</orgName> -
 							<address>
 								<postCode>30123-970</postCode> -
-								<settlement>Belo Horizonte -MG -</settlement>
+								<settlement>Belo Horizonte</settlement> -<region>MG</region> -
 								<country>Brazil</country>
 							<lb/>
 							</address>
@@ -39,7 +39,7 @@
 							<orgName type="institution">Centro Federal de Educação Tecnológica de Minas Gerais</orgName> -
 							<address>
 								<postCode>30510-000</postCode> -
-								<settlement>Belo Horizonte -MG</settlement> -
+								<settlement>Belo Horizonte</settlement> -<region>MG</region> -
 								<country>Brazil</country>
 							</address>
 						</affiliation>

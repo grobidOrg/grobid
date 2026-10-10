@@ -10,8 +10,8 @@
 						<affiliation>
 							<address>
 								<addrLine>550 Mamaroneck Avenue</addrLine>,
-								<addrLine>Suite 307<lb/> Harrison</addrLine>,
-								<settlement>NY</settlement>
+								<addrLine>Suite 307</addrLine><lb/> <settlement>Harrison</settlement>,
+								<region>NY</region>
 								<postCode>10528-1612</postCode>
 								<country>USA</country>
 							</address>

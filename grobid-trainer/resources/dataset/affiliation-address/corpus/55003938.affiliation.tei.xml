@@ -8,7 +8,7 @@
 						<author>
 
 						<affiliation>
-							<orgName type="laboratory">European Medicines Agency<lb/> Evaluation of Medicines for Human Use</orgName>
+							<orgName type="institution">European Medicines Agency</orgName><lb/> <orgName type="department">Evaluation of Medicines for Human Use</orgName>
 							<address>
 								<addrLine>7 Westferry Circus</addrLine>,
 								<addrLine>Canary Wharf</addrLine>,

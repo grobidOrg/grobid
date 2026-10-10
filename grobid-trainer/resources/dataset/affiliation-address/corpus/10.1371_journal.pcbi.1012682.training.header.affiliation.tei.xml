@@ -11,10 +11,10 @@
 							<marker>1</marker>
 							<orgName type="department">Department of Psychiatry</orgName>,
 							<orgName type="institution">Charite ´-Universita ¨tsmedizin Berlin</orgName>,
-							<orgName type="institution">Corporate Member of Freie Universita<lb/> ¨t<lb/> Berlin and Humboldt-Universita ¨t zu Berlin</orgName>,
+							Corporate Member of <orgName type="institution">Freie Universita<lb/> ¨t<lb/> Berlin</orgName> and <orgName type="institution">Humboldt-Universita ¨t zu Berlin</orgName>,
 							<address>
 								<settlement>Berlin</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -23,7 +23,7 @@
 							<orgName type="institution">Charite ´-Universita ¨tsmedizin Berlin</orgName>,
 							<address>
 								<settlement>Berlin</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -31,7 +31,7 @@
 							<orgName type="department">Einstein Center for Neurosciences<lb/> Berlin</orgName>,
 							<address>
 								<settlement>Berlin</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -40,7 +40,7 @@
 							<orgName type="institution">Berlin Institute of Health at Charite<lb/> ´-<lb/>Universita ¨tsmedizin-Berlin</orgName>,
 							<address>
 								<settlement>Berlin</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -49,7 +49,7 @@
 							<orgName type="institution">Humboldt-Universita ¨t zu<lb/> Berlin</orgName>,
 							<address>
 								<settlement>Berlin</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -58,7 +58,7 @@
 							<orgName type="institution">Universite ´de Toulouse III</orgName>,
 							<address>
 								<settlement>Toulouse</settlement>,
-								<country>France,</country>
+								<country>France</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -69,6 +69,8 @@
 								<settlement>Berlin</settlement>,
 								<country>Germany</country>;
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Berlin School of Mind and Brain</orgName>,
 							<address>
 								<settlement>Berlin</settlement>,
@@ -82,7 +84,7 @@
 							<orgName type="institution">Charite ´-Universita ¨tsmedizin Berlin</orgName>,
 							<address>
 								<settlement>Berlin</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -91,22 +93,21 @@
 							<orgName type="institution">Dortmund General Hospital</orgName>,
 							<address>
 								<settlement>Dortmund</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>10</marker>
 							<orgName type="department">Department of<lb/> Psychiatry and Psychotherapy</orgName>,
 							<address>
-								<addrLine>Campus Benjamin</addrLine>
-								<settlement>Franklin</settlement>,
+								<addrLine>Campus Benjamin Franklin</addrLine>,
 							</address>
 							<orgName type="institution">Charite ´-Universita ¨tsmedizin Berlin</orgName>,
-							<orgName type="department">Corporate<lb/> Member of Freie</orgName>
-							<orgName type="institution">Universita ¨t Berlin and Humboldt-Universita ¨t zu Berlin</orgName>,
+							Corporate<lb/> Member of <orgName type="institution">Freie
+							Universita ¨t Berlin</orgName> and <orgName type="institution">Humboldt-Universita ¨t zu Berlin</orgName>,
 							<address>
 								<settlement>Berlin</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -125,7 +126,7 @@
 							<orgName type="institution">Max Planck Institute of Colloids and Interfaces</orgName>,
 							<address>
 								<settlement>Potsdam</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							<lb/>
 							</address>
 						</affiliation>
@@ -137,22 +138,24 @@
 								<settlement>Paris</settlement>,
 								<country>France</country>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">E ´cole doctorale Cerveau, cognition,<lb/>, comportement (ED3C)</orgName>,
 							<orgName type="institution">Sorbonne Universite ´Paris</orgName>,
 							<address>
 								<settlement>Paris</settlement>,
-								<country>France,</country>
+								<country>France</country>,
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>14</marker>
 							<orgName type="department">Department of Psychiatry and<lb/> Neurosciences</orgName>,
 							<orgName type="institution">Charite ´-Universita ¨tsmedizin Berlin</orgName>,
-							<orgName type="department">Corporate Member of Freie</orgName>
-							<orgName type="institution">Universita ¨t Berlin and<lb/> Humboldt-Universita ¨t zu Berlin</orgName>,
+							Corporate Member of <orgName type="institution">Freie
+							Universita ¨t Berlin</orgName> and<lb/> <orgName type="institution">Humboldt-Universita ¨t zu Berlin</orgName>,
 							<address>
 								<settlement>Berlin</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -161,7 +164,7 @@
 							<orgName type="institution">Berlin<lb/> Institute of Technology</orgName>,
 							<address>
 								<settlement>Berlin</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -192,6 +195,8 @@
 								<country>Germany</country>
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">Universidade Federal de Santa Catarina</orgName>,
 							<address>
 								<country>BRAZIL</country>

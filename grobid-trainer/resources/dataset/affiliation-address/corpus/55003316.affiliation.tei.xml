@@ -15,7 +15,7 @@
 								<region>CN</region>
 								<postCode>8000</postCode>,
 								<settlement>Princeton</settlement>,
-								<country>New Jersey</country>
+								<region>New Jersey</region>
 								<postCode>08543</postCode>,
 							</address>
 						</affiliation>
@@ -40,7 +40,7 @@
 							<address>
 								<postCode>40225</postCode>
 								<settlement>Duesseldorf</settlement>,
-								<settlement>Germany</settlement>,
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>

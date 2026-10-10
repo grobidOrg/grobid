@@ -30,7 +30,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="department">Memphis Veterans Affairs Medical Center</orgName>,
+							<orgName type="institution">Memphis Veterans Affairs Medical Center</orgName>,
 							<address>
 								<settlement>Memphis</settlement>,
 								<region>TN</region>,
@@ -52,7 +52,7 @@
 							<marker>5</marker>
 							<orgName type="institution">Wake Forest University</orgName>,
 							<address>
-								<addrLine>Winston-Salem</addrLine>,
+								<settlement>Winston-Salem</settlement>,
 								<region>NC</region>,
 								<country key="US">USA</country>,
 							<lb/>

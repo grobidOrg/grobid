@@ -8,41 +8,40 @@
 						<affiliation>
 							<marker>*</marker>
 							<orgName type="laboratory">Laboratoire J. Kuntzmann</orgName>,
-							<orgName type="institution">Université de Grenoble.</orgName>
+							<orgName type="institution">Université de Grenoble</orgName>.
 							<address>
 								<addrLine>51, rue des Mathématiques</addrLine>,
 							</address>
-						</affiliation>
-
-					  <affiliation>
-					<orgName type="laboratory">umr<lb/> CNRS 5224</orgName>,
+							<orgName type="laboratory">umr<lb/> CNRS 5224</orgName>,
 							<address>
-								<postCode>bp 53X</postCode>,
+								<postBox>bp 53X</postBox>,
 								<postCode>F38041</postCode>
 								<settlement>Grenoble</settlement>,
 								<country>France</country>,
 							</address>
+						</affiliation>
 
-					  
+					  <affiliation>
 							<orgName type="institution">Claude Shannon Institute of the<lb/> University College Dublin</orgName>,
 							<address>
-								<country>Ireland,</country> under
+								<country>Ireland</country>, under
 							</address>
 						</affiliation>
 						<affiliation>
-							<marker>a</marker>
-							<orgName type="laboratory">CNRS grant.<lb/> † Laboratoire LIG</orgName>,
-							<orgName type="institution">Université de Grenoble. umr CNRS</orgName>,
-							<orgName type="laboratory">F38330 Montbonnot</orgName>,
+							a CNRS grant.<lb/> <marker>†</marker> <orgName type="laboratory">Laboratoire LIG</orgName>,
+							<orgName type="institution">Université de Grenoble</orgName>. <orgName type="laboratory">umr CNRS</orgName>,
 							<address>
+								<postCode>F38330</postCode> <settlement>Montbonnot</settlement>,
 								<country>France</country>.
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">University Complutense</orgName>,
 							<address>
 								<settlement>Madrid</settlement>,
 							<lb/>
-								<country>Spain.</country>
+								<country>Spain</country>.
 							<lb/>
 							</address>
 						</affiliation>
@@ -55,7 +54,7 @@
 								<region>DE</region> /
 							<lb/>
 								<postCode>19716</postCode>,
-								<country>USA.</country>
+								<country>USA</country>.
 							</address>
 						</affiliation>
 

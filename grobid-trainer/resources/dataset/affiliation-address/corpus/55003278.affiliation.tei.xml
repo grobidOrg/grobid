@@ -11,7 +11,7 @@
 							<marker>a</marker>
 							<orgName type="institution">ENEA</orgName>,
 							<orgName type="laboratory">Applied Physics Technologies Dep. (FIS)</orgName>,
-							<orgName type="institution">Laser Application Section (LAS)</orgName>
+							<orgName type="laboratory">Laser Application Section (LAS)</orgName>
 							<lb/>
 							<address>
 								<addrLine>Via Enrico Fermi 45</addrLine>,
@@ -24,9 +24,9 @@
 							<marker>a</marker>
 							<orgName type="institution">Romanian Academy</orgName>,
 							<orgName type="department">Institute of Biology</orgName>,
+							<orgName type="department">Microbiology Centre</orgName>
 							<address>
-								<addrLine>Microbiology Centre 296</addrLine>,
-								<addrLine>Splaiul Independentei</addrLine>,
+								<addrLine>296, Splaiul Independentei</addrLine>,
 							<lb/>
 								<postCode>79651</postCode>
 								<settlement>Bucharest</settlement>,

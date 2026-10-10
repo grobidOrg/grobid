@@ -9,13 +9,15 @@
 
  From the
 						<affiliation>
-							<orgName type="department">Departments of Cellular and Molecular Medicine * and<lb/> Pathology</orgName>,
+							<orgName type="department">Departments of Cellular and Molecular Medicine</orgName> <marker>*</marker> and<lb/> <orgName type="department">Pathology</orgName>,
 							<lb/>
 							<orgName type="institution">University of California San Diego</orgName>,
 							<address>
 								<addrLine>La Jolla</addrLine>,
-								<settlement>California</settlement>; and the
+								<region>California</region>; and the
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Department of Bacteriology and<lb/> Immunology</orgName>,
 							<lb/>
 							<orgName type="institution">Haartman Institute</orgName>,

@@ -10,10 +10,10 @@
 							<marker>1</marker>)
 							<orgName type="institution">LAGIS<lb/> Ecole Centrale de Lille</orgName>,
 							<address>
-								<addrLine>Scientific city -BP 48</addrLine>-
+								<addrLine>Scientific city</addrLine> -<postBox>BP 48</postBox>-
 								<postCode>59651</postCode>
 							<lb/>
-								<settlement>Villeneuve d'Ascq Cedex -</settlement>
+								<settlement>Villeneuve d'Ascq Cedex</settlement> -
 								<country>France</country>
 							<lb/> (
 							</address>
@@ -23,7 +23,7 @@
 							<marker>2</marker>)
 							<orgName type="institution">LACS<lb/> Ecole Nationale des Ingénieurs de Tunis</orgName> -
 							<address>
-								<addrLine>BP 37</addrLine>,
+								<postBox>BP 37</postBox>,
 								<addrLine>Le<lb/> Belvédère</addrLine>,
 								<postCode>1002</postCode>
 								<settlement>Tunis</settlement> -

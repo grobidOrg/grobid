@@ -15,8 +15,10 @@
 								<addrLine>Kerpener Strasse 15</addrLine>,
 								<postCode>0-5000</postCode>
 								<settlement>Cologne 41</settlement>,
-							</address>
-							<orgName type="institution">Federal Republic of Germany</orgName> From the
+								<country>Federal Republic of Germany</country>
+							</address> From the
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Institute of Physiological Chemistry</orgName>,
 							<orgName type="institution">University of Bonn</orgName>,
 							<address>
@@ -25,6 +27,8 @@
 								<settlement>Bonn 1</settlement>,
 								<country>Federal Republic of Germany</country> From the
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Max Planck Institute of Medical Research</orgName>,
 							<address>
 								<addrLine>Jahnstrasse 29</addrLine>,

@@ -20,7 +20,7 @@
 							</address>
 						</affiliation>
 						<affiliation>		
-							<orgName type="institution">Eleonora Distrutti</orgName>,
+							Eleonora Distrutti,
 							<orgName type="institution">Azienda Ospedaliera di Perugia</orgName>,
 							<address>
 								<addrLine>Ospedale<lb/> Santa Maria della Misericordia</addrLine>,
@@ -34,9 +34,9 @@
 							<orgName type="department">Department of Clinical<lb/> and Experimental Medicine</orgName>
 							<orgName type="institution">University of Perugia</orgName>,
 							<address>
-								<addrLine>Via E dal</addrLine>
+								<addrLine>Via E dal
 							<lb/>
-								<settlement>Pozzo</settlement>,
+								Pozzo</addrLine>,
 								<postCode>06122</postCode>
 								<settlement>Perugia</settlement>,
 								<country>Italy</country>.

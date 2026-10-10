@@ -35,10 +35,10 @@
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="laboratory">ASTRON</orgName>, the
+							<orgName type="institution">ASTRON</orgName>, the
 							<orgName type="institution">Netherlands Institute for Radio Astronomy</orgName>,
 							<address>
-								<addrLine>Postbus<lb/> 2</addrLine>,
+								<postBox>Postbus<lb/> 2</postBox>,
 								<postCode>7990 AA</postCode>
 								<settlement>Dwingeloo</settlement>,
 								<country>The Netherlands</country>
@@ -49,7 +49,7 @@
 							<marker>4</marker>
 							<orgName type="institution">Instituto de Astrofísica de Canarias</orgName>,
 							<address>
-								<addrLine>38200</addrLine>
+								<postCode>38200</postCode>
 								<settlement>La Laguna</settlement>,
 								<region>Tenerife</region>,
 								<country>Spain</country>
@@ -61,8 +61,8 @@
 							<orgName type="department">Departamento de astrofísica</orgName>,
 							<orgName type="institution">Univ. de La Laguna</orgName>,
 							<address>
-								<addrLine>E-38206 La<lb/> Laguna</addrLine>,
-								<settlement>Tenerife</settlement>,
+								<postCode>E-38206</postCode> <settlement>La<lb/> Laguna</settlement>,
+								<region>Tenerife</region>,
 								<country>Spain</country>
 							<lb/>
 							</address>
@@ -170,9 +170,7 @@
 							<orgName type="institution">Universität Hamburg</orgName>,
 							<address>
 								<addrLine>Hamburger Sternwarte</addrLine>,
-								<addrLine>Gojenbergsweg</addrLine>
-								<lb/>
-								<postCode>112</postCode>,
+								<addrLine>Gojenbergsweg<lb/> 112</addrLine>,
 								<postCode>21029</postCode>,
 								<settlement>Hamburg</settlement>,
 								<country>Germany</country>
@@ -196,7 +194,7 @@
 							<orgName type="laboratory">Laboratoire AIM</orgName> (
 							<orgName type="institution">CEA/IRFU</orgName> -
 							<orgName type="institution">CNRS/INSU</orgName> -
-							<orgName type="institution">Université Paris<lb/> Diderot)</orgName>,
+							<orgName type="institution">Université Paris<lb/> Diderot</orgName>),
 							<orgName type="institution">CEA DSM/IRFU/SAp</orgName>,
 							<address>
 								<postCode>F-91191</postCode>
@@ -352,8 +350,8 @@
 						<affiliation>
 							<marker>29</marker>
 							<orgName type="department">Centre de Recherche Astrophysique de Lyon</orgName>,
+							<orgName type="institution">Observatoire de<lb/> Lyon</orgName>,
 							<address>
-								<settlement>Observatoire de<lb/> Lyon</settlement>,
 								<addrLine>9 av Charles Andr Ì ˛<lb/> Ae</addrLine>,
 								<postCode>69561</postCode>
 								<settlement>Saint Genis Laval</settlement> Cedex,
@@ -466,8 +464,8 @@
 								<country>USA</country>
 							<lb/>
 							</address>
-							<orgName type="institution">Tele-<lb/>grafenberg</orgName>,
 							<address>
+								<addrLine>Tele-<lb/>grafenberg</addrLine>,
 								<addrLine>A17</addrLine>,
 								<postCode>14473</postCode>
 								<settlement>Potsdam</settlement>,
@@ -515,7 +513,10 @@
 								<country>Germany</country>
 							<lb/>
 							</address>
-							<orgName type="department">43 Research School of Astronomy and Astrophysics</orgName>,
+						</affiliation>
+						<affiliation>
+							<marker>43</marker>
+							<orgName type="department">Research School of Astronomy and Astrophysics</orgName>,
 							<orgName type="institution">Australian Na-<lb/>tional University</orgName>,
 							<address>
 								<addrLine>Mt Stromlo Obs.</addrLine>,
@@ -612,7 +613,7 @@
 							<orgName type="department">Fakultät für Physik</orgName>,
 							<orgName type="institution">Universität Bielefeld</orgName>,
 							<address>
-								<addrLine>Postfach 100131</addrLine>,
+								<postBox>Postfach 100131</postBox>,
 								<postCode>D-<lb/>33501</postCode>,
 								<settlement>Bielefeld</settlement>,
 								<country>Germany</country>
