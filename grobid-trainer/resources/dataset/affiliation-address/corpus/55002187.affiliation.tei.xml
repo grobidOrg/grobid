@@ -13,7 +13,7 @@
 							<orgName type="department">Graduate School of Medicine</orgName>,
 							<orgName type="institution">Osaka University</orgName>,
 							<address>
-								<settlement>Suita Osaka</settlement>
+								<settlement>Suita</settlement> <region>Osaka</region>
 								<postCode>565-0871</postCode>,
 								<country>Japan</country>
 								<lb/>
@@ -25,7 +25,7 @@
 							<orgName type="institution">National Institute for Physiological Sciences</orgName>,
 							and <orgName type="institution">Graduate University of Advanced Studies</orgName>,
 							<address>
-								<settlement>Myodaiji</settlement>,
+								<addrLine>Myodaiji</addrLine>,
 								<settlement>Okazaki</settlement>
 								<lb/>
 								<postCode>444-8787</postCode>,
@@ -39,7 +39,7 @@
 							<orgName type="institution">Japan Science and Technology Agency</orgName>,
 							<address>
 								<addrLine>4-1-8</addrLine>,
-								<settlement>Honcho</settlement>,
+								<addrLine>Honcho</addrLine>,
 								<settlement>Kawaguchi</settlement>
 								<postCode>332-0012</postCode>,
 								<lb/>

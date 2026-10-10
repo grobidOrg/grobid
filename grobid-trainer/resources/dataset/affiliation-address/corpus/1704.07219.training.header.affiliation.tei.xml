@@ -23,7 +23,7 @@
 						<affiliation>
 							<marker>b</marker>
 							<orgName type="laboratory" key="lab1">Laboratoire d'Informatique du Parallélisme</orgName><lb/> <orgName type="laboratory" key="lab1">UMR 5668</orgName> <orgName type="institution" key="instit1">ENS Lyon</orgName> -<orgName type="institution" key="instit2">CNRS</orgName> -<orgName type="institution" key="instit3">UCBL</orgName> -
-							<orgName type="institution">INRIA<lb/> Université de Lyon</orgName>,
+							<orgName type="institution" key="instit4">INRIA</orgName><lb/> <orgName type="institution" key="instit5">Université de Lyon</orgName>,
 							<address>
 								<country>France</country>
 							<lb/>
@@ -33,8 +33,8 @@
                           
 						<affiliation>
 							<marker>c</marker>
-							<orgName type="laboratory">Laboratoire G-SCOP<lb/> CNRS</orgName>,
-							<orgName type="institution">Université Grenoble-Alpes</orgName><lb/>
+							<orgName type="laboratory">Laboratoire G-SCOP</orgName><lb/> <orgName type="institution" key="instit1">CNRS</orgName>,
+							<orgName type="institution" key="instit2">Université Grenoble-Alpes</orgName><lb/>
 							<address>
 								<settlement>Grenoble</settlement>,
 								<country>France</country>

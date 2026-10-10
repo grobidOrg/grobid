@@ -12,8 +12,9 @@
 							<orgName type="institution">Biótica, Bioquímica Analítica, S.L.</orgName>,
 							<orgName type="institution">Parque Científico Tecnológico y Empresarial</orgName>,
 							 de la 
-							<orgName type="institution">Universidad Jaume I-Edificio de Investigación I</orgName>,
+							<orgName type="institution">Universidad Jaume I</orgName>-
 							<address>
+								<addrLine>Edificio de Investigación I</addrLine>,
 								<addrLine>2ª Planta</addrLine>,
 								<settlement>Castellón</settlement>-
 								<country>Spain</country>
@@ -23,8 +24,9 @@
 						<affiliation>
 							<marker>b</marker>.
 							<orgName type="institution">Merck Chimie SAS</orgName>,
+							<orgName type="department">Estapor Microspheres</orgName> -
 							<address>
-								<addrLine>Estapor Microspheres -201 rue Carnot</addrLine> -
+								<addrLine>201 rue Carnot</addrLine> -
 								<postCode>94126</postCode>
 								<settlement>Fontenay sous Bois Cedex</settlement> -
 								<country>France</country>

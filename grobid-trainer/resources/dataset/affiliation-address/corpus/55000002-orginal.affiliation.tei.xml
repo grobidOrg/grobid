@@ -25,7 +25,7 @@
 							<orgName type="department">Drug Discovery</orgName>,
 							<orgName type="institution">Johnson &amp; Johnson Pharmaceutical Research and Development, LLC.</orgName>,
 							<address>
-								<addrLine>Spring House</addrLine>,
+								<settlement>Spring House</settlement>,
 								<region>PA</region>
 								<postCode>19477</postCode>
 							</address>

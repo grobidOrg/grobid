@@ -248,11 +248,9 @@
 							
 						<affiliation>
 							<marker>18</marker>
-							<orgName type="department">Science Fellow</orgName>,
-							<address>
-								<settlement>Gemini North</settlement>
+							Science Fellow,
+							<orgName type="institution">Gemini North</orgName>
 							<lb/>
-							</address>
 						</affiliation>
 
 							
@@ -338,9 +336,9 @@
 						<affiliation>
 							<marker>25</marker>
 							<orgName type="department">Department of Physics &amp; Astronomy</orgName>,
-							<orgName type="institution">The University of California</orgName>,
+							<orgName type="institution">The University of California,
+							Irvine</orgName>,
 							<address>
-								<settlement>Irvine</settlement>,
 								<settlement>Irvine</settlement>,
 								<region>CA</region>
 								<postCode>92697</postCode>,
@@ -394,7 +392,7 @@
 							
 						<affiliation>
 							<marker>29</marker>
-							<orgName type="institution">NASA Hubble</orgName>
+							NASA Hubble
 						</affiliation>
 							
 
@@ -414,8 +412,8 @@
 							
 						<affiliation>
 							<marker>31</marker>
-							<orgName type="department">Center for Astrophysics</orgName>
-							<orgName type="institution">| Harvard &amp; Smithsonian</orgName>,
+							<orgName type="institution">Center for Astrophysics
+							| Harvard &amp; Smithsonian</orgName>,
 							<address>
 								<addrLine>60 Garden Street</addrLine>,
 								<settlement>Cambridge</settlement>,
@@ -428,9 +426,9 @@
 							
 						<affiliation>
 							<marker>32</marker>
-							<orgName type="institution">University of California Observatories University of California</orgName>,
-							<address>
-								<addrLine>Santa Cruz 1156 High St</addrLine>,
+							<orgName type="institution">University of California Observatories</orgName> <orgName type="institution">University of California,
+							Santa Cruz</orgName> <address>
+								<addrLine>1156 High St</addrLine>,
 								<settlement>Santa Cruz</settlement>,
 								<region>CA</region>
 								<postCode>95064</postCode>
@@ -533,7 +531,7 @@
 		<address><addrLine>525 Davey Laboratory</addrLine></address>, 
 		<orgName type="institution">Penn State</orgName>, 
 			<address>
-			<addrLine>University Park</addrLine>, 
+			<settlement>University Park</settlement>, 
 			<region>PA</region>, 
 			<postCode>16802</postCode>, 
 			<country>USA<lb/></country>
@@ -547,7 +545,7 @@
 		<address><addrLine>525 Davey Laboratory</addrLine></address>, 
 		<orgName type="institution">Penn State</orgName>, 
 		<address>
-		<addrLine>University Park</addrLine>, 
+		<settlement>University Park</settlement>, 
 		<region>PA</region>, 
 		<postCode>16802</postCode>, 
 		<country>USA<lb/></country>
@@ -561,7 +559,7 @@
 		<address><addrLine>525 Davey Laboratory</addrLine></address>, 
 		<orgName type="institution">Penn State</orgName>, 
 		<address>
-		<addrLine>University Park</addrLine>, 
+		<settlement>University Park</settlement>, 
 		<region>PA</region>, 
 		<postCode>16802</postCode>, 
 		<country>USA<lb/></country>
@@ -652,7 +650,7 @@
 	<orgName type="institution">Universidad Complutense de Madrid</orgName>,
 	<address>
 	<postCode>28040</postCode>
-	<region>Madrid</region>,
+	<settlement>Madrid</settlement>,
 	<country>Spain<lb/></country>
 	</address>
 	</affiliation>
@@ -745,7 +743,7 @@
 
 	<affiliation>
 	<marker>56</marker>
-	<orgName type="department">Department of Physics and Kavli Institute for Astrophysics and Space Research</orgName>, 
+	<orgName type="department">Department of Physics</orgName> and <orgName type="department">Kavli Institute for Astrophysics and Space Research</orgName>, 
 	<orgName type="institution">Massachusetts Institute of Technology</orgName>, 
 	<address>
 	<settlement>Cambridge</settlement>,
@@ -832,12 +830,12 @@
 							
 	<affiliation>
 	<marker>†</marker>
-	<orgName type="institution">NSF Graduate Research Fellow<lb/></orgName>
+	NSF Graduate Research Fellow<lb/>
 	</affiliation>		
 							
 	<affiliation>
 	<marker>‡</marker>
-	<orgName type="institution">NASA FINESST Fellow</orgName>
+	NASA FINESST Fellow
 	</affiliation> 
 							
 

@@ -112,8 +112,8 @@
 							
 						<affiliation>
 							<marker>9</marker>
-							<orgName type="laboratory">IFPU</orgName>,
-							<orgName type="department">Institute for the Fundamental Physics of the Universe</orgName>,
+							<orgName type="institution">IFPU</orgName>,
+							<orgName type="institution">Institute for the Fundamental Physics of the Universe</orgName>,
 							<address>
 								<addrLine>Via Beirut, 2</addrLine>,
 								<postCode>I-34151</postCode>

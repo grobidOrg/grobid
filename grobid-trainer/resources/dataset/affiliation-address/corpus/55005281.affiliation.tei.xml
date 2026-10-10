@@ -19,7 +19,7 @@
 							</address>
 						</affiliation>	
 						<affiliation>	
-							<orgName type="department">$Department of Internal Medicine</orgName>,
+							<marker>$</marker><orgName type="department">Department of Internal Medicine</orgName>,
 							<orgName type="department">Division of Allergic Diseases</orgName>,
 							<orgName type="institution">Mayo Clinic</orgName>,
 							<address>

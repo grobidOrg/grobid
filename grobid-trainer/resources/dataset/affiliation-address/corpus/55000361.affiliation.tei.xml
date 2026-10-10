@@ -12,7 +12,7 @@
 							<orgName type="department">Department of Internal Medicine III</orgName>,
 							<orgName type="institution">Shimane Medical University</orgName>,
 							<address>
-								<settlement>Shimane</settlement>,
+								<region>Shimane</region>,
 								<country>Japan</country>
 							</address>
 						</affiliation>

@@ -97,9 +97,9 @@
 							<marker>10</marker>
 							<orgName type="department">Departmento de Bota ´nica</orgName>,
 							<orgName type="institution">Universidad de Panama<lb/> ´</orgName>,
-							<orgName type="department">Campus Universitario Ciudad de Panama ´</orgName>,
-							<lb/>
 							<address>
+								<addrLine>Campus Universitario Ciudad de Panama ´</addrLine>,
+							<lb/>
 								<settlement>Panama ´</settlement>,
 								<country>Repu ´blica de Panama ´</country>,
 							</address>
@@ -116,7 +116,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>12</marker>
-							<orgName type="department">College of the Atlantic</orgName>,
+							<orgName type="institution">College of the Atlantic</orgName>,
 							<address>
 								<settlement>Bar Harbor</settlement>,
 								<region>Maine</region>,
@@ -137,8 +137,8 @@
 							<marker>14</marker>
 							<orgName type="institution">Instituto de Investigacio ´n y Servicios Forestales</orgName>,
 							<orgName type="institution">Universidad Nacional de Costa Rica</orgName>,
-							<orgName type="department">Campus Omar<lb/> Dengo</orgName>,
 							<address>
+								<addrLine>Campus Omar<lb/> Dengo</addrLine>,
 								<settlement>Heredia</settlement>,
 								<country>Costa Rica</country>,
 							</address>
@@ -149,7 +149,7 @@
 							<orgName type="laboratory">Unidad Campeche</orgName>,
 							<address>
 								<settlement>Lerma</settlement>,
-								<settlement>Campeche</settlement>,
+								<region>Campeche</region>,
 							<lb/>
 								<country>Mexico</country>,
 							</address>
@@ -165,7 +165,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>17</marker>
-							<orgName type="department">Centro de<lb/> Investigacio ´n Cientı ´fica de Yucata ´n</orgName>,
+							<orgName type="institution">Centro de<lb/> Investigacio ´n Cientı ´fica de Yucata ´n</orgName>,
 							<address>
 								<addrLine>Chuburna de Hidalgo</addrLine>,
 								<settlement>Me ´rida</settlement>,
@@ -188,18 +188,17 @@
 							<orgName type="department">Departamento de Produccio ´n Vegetal y Recursos Forestales</orgName>,
 							<orgName type="institution">Instituto Universitario de Gestio ´n Forestal<lb/> Sostenible</orgName>,
 							<orgName type="institution">Universidad de Valladolid</orgName>
-							(<orgName type="department">Campus de Palencia</orgName>),
 							<address>
+								(<addrLine>Campus de Palencia</addrLine>),
 								<settlement>Palencia</settlement>,
 								<country>Spain</country>,
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>20</marker>
-							<orgName type="institution">Emeritus Faculty, Program<lb/> in the Environment</orgName>,
-							<orgName type="institution">Loyola University</orgName>,
+							Emeritus Faculty, <orgName type="department">Program<lb/> in the Environment</orgName>,
+							<orgName type="institution">Loyola University, New Orleans</orgName>,
 							<address>
-								<settlement>New Orleans</settlement>,
 								<settlement>New Orleans</settlement>,
 								<region>Louisiana</region>,
 								<country>United States of America</country>,

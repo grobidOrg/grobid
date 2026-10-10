@@ -47,7 +47,7 @@
 				<orgName type="institution">Middlesex University</orgName>,
 							<address>
 								<addrLine>The<lb/> Burroughs</addrLine>,
-								<settlement>Hendon</settlement>,
+								<addrLine>Hendon</addrLine>,
 								<settlement>London</settlement>
 								<postCode>NW4 4BT</postCode>,
 								<country>UK</country>.

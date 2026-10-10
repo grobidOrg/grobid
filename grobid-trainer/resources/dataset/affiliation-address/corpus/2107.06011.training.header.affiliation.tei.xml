@@ -32,7 +32,7 @@
 							<orgName type="institution">CNRS</orgName>,
 							<lb/>
 							<orgName type="institution">INSA-Lyon</orgName>,
-					        <orgName type="institution">LIRIS</orgName>,
+					        <orgName type="laboratory">LIRIS</orgName>,
 							<orgName type="laboratory">UMR5205</orgName>,
 							<address>
 								<postCode>F-69622</postCode>
@@ -47,7 +47,7 @@
 							<marker>3</marker>
 							<orgName type="institution">INSA Lyon</orgName>,
 							<orgName type="laboratory">CITI Lab</orgName>,
-							<orgName type="institution">INRIA Chroma team</orgName>,
+							<orgName type="institution">INRIA</orgName> <orgName type="laboratory">Chroma team</orgName>,
 							<lb/>
 							<address>
 								<settlement>Villeurbanne</settlement>,

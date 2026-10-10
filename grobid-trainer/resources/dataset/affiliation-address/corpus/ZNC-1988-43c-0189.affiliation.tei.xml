@@ -8,7 +8,7 @@
 						<author>
 
 						<affiliation>
-							<orgName type="institution">LB Biotechnologie der Universität</orgName>,
+							<orgName type="department">LB Biotechnologie</orgName> der <orgName type="institution">Universität</orgName>,
 							<address>
 								<addrLine>Paul-Ehrlich-Straße 23</addrLine>,
 								<postCode>D-6750</postCode>
@@ -30,7 +30,7 @@
 						</affiliation>	
 						<affiliation>	
 							
-							<orgName type="institution">Mineralogisches Institut</orgName> der
+							<orgName type="department">Mineralogisches Institut</orgName> der
 							<orgName type="institution">Universität</orgName>,
 							<address>
 								<addrLine>Poppelsdorfer Schloß</addrLine>,

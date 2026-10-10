@@ -16,7 +16,7 @@
                            <settlement>Canberra</settlement> 
                            <region>ACT</region> 
                            <postCode>0200</postCode>, 
-                           <country>>Australia</country><lb/>
+                           ><country>Australia</country><lb/>
                         </address>
                      </affiliation>
                      <affiliation>
@@ -50,7 +50,7 @@
                         <orgName type="institution">Nicolaus Copernicus University</orgName>,
                         <address>
                            <addrLine>ul. Grudziadzka 5/7</addrLine>, 
-                           <postCode>>87-100</postCode>
+                           ><postCode>87-100</postCode>
                            <settlement>Torun</settlement>, 
                            <country>Poland</country><lb/>
                         </address>

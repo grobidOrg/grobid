@@ -9,8 +9,8 @@
                   <author>
                      
                      <affiliation>
-                        <orgName type="department" key="dep1">DIK U</orgName>, 
-                        <orgName type="department" key="dep1">Department of Computer Science</orgName>, 
+                        <orgName type="department">DIK U</orgName>, 
+                        <orgName type="department">Department of Computer Science</orgName>, 
                         <orgName type="institution">University qf Copenhagen</orgName>, 
                         <address >
                            <addrLine>Vniversitetsparken 1</addrLine>.<lb/>

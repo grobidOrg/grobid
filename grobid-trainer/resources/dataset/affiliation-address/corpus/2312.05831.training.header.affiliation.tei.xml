@@ -12,7 +12,14 @@
 
                         <affiliation>
 							<orgName type="institution">Imperial College London<lb/></orgName>
-                          <orgName type="institution">Politecnico di Torino</orgName><lb/> <orgName type="institution">Massachusetts Institute of Technology</orgName>
+						</affiliation>
+
+						<affiliation>
+                          <orgName type="institution">Politecnico di Torino</orgName><lb/>
+						</affiliation>
+
+						<affiliation>
+							<orgName type="institution">Massachusetts Institute of Technology</orgName>
 						</affiliation>
 
 						</author>

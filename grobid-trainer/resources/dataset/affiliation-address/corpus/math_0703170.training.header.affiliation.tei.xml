@@ -15,9 +15,18 @@
 								<settlement>Bonn</settlement> (
 								<country>Germany</country>);
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">SFB 611</orgName>,
-							<orgName type="laboratory">BiBoS</orgName>; <orgName type="laboratory">CERFIM</orgName> (Locarno);
-							<orgName type="institution">Acc. Arch. (USI)</orgName>,
+						</affiliation>
+						<affiliation>
+							<orgName type="laboratory">BiBoS</orgName>;
+						</affiliation>
+						<affiliation>
+							<orgName type="laboratory">CERFIM</orgName> (Locarno);
+						</affiliation>
+						<affiliation>
+							<orgName type="department">Acc. Arch.</orgName> (<orgName type="institution">USI</orgName>),
 							<lb/>
 						</affiliation>
 							

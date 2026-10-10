@@ -11,7 +11,7 @@
 							<orgName type="department">Department of Plant Cell Biotechnology</orgName>,
 							<orgName type="institution">Central Food Technological Research Institute</orgName>
 							[
-							<orgName type="laboratory">Constituent laboratory of CSIR</orgName>
+							Constituent laboratory of <orgName type="institution">CSIR</orgName>
 							<lb/> 
 							(
 							<orgName type="institution">Council of Scientific and Industrial Research</orgName>)],

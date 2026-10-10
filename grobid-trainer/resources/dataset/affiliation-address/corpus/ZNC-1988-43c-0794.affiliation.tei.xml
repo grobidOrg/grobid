@@ -9,12 +9,10 @@
 
 						<affiliation>
 							<orgName type="department">Department of Biochemistry</orgName> and
-						</affiliation>
-						<affiliation>
 							<marker>*</marker>
-							<orgName type="institution">National Institute of Child Health</orgName>,
+							<orgName type="department">National Institute of Child Health</orgName>,
 							<lb/>
-							<orgName type="department">Jinnah Postgraduate Medical Centre</orgName>,
+							<orgName type="institution">Jinnah Postgraduate Medical Centre</orgName>,
 							<address>
 								<settlement>Karachi</settlement>,
 								<country>Pakistan</country>

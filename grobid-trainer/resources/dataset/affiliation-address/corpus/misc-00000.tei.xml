@@ -9,10 +9,12 @@
                             <affiliation>
                                 <orgName type="department">Department of Mathematics</orgName>,
                                 <orgName type="institution">King’s College London</orgName>
-                                <addrLine>Strand</addrLine>
+                                <address>
+                                    <addrLine>Strand</addrLine>
                                 <postCode>WC2R2LS</postCode>,
                                 <settlement>London</settlement>,
                                 <country>United Kingdom</country>
+                                </address>
                             </affiliation>
                         </author>
                     </analytic>

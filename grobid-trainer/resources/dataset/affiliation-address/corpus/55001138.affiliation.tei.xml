@@ -12,9 +12,9 @@
 							<orgName type="department">Dpto. Química</orgName>,
 							<orgName type="institution">Univ San Pablo CEU</orgName>,
 							<address>
-								<addrLine>Boadilla del Monte</addrLine>,
+								<settlement>Boadilla del Monte</settlement>,
 								<postCode>E-28668</postCode>,
-								<settlement>Madrid</settlement>,
+								<region>Madrid</region>,
 								<country>Spain</country>.
 							<lb/>
 							</address>
@@ -36,7 +36,7 @@
 							<orgName type="institution">Instituto Ciencia de Materiales de Madrid (CSIC)</orgName>,
 							<address>
 								<postCode>28049</postCode>
-								<settlement>Cantoblanco</settlement>,
+								<addrLine>Cantoblanco</addrLine>,
 								<settlement>Madrid</settlement>,
 								<country>Spain</country>.
 							</address>

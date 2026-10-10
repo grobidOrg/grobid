@@ -11,7 +11,7 @@
 							<orgName type="department">Department of Cellular and Molecular Medicine</orgName>,
 							<orgName type="institution">University of California San Diego</orgName>,
 							<address>
-								<addrLine>La Jolla</addrLine>,
+								<settlement>La Jolla</settlement>,
 								<region>California</region>.
 							</address>
 						</affiliation>

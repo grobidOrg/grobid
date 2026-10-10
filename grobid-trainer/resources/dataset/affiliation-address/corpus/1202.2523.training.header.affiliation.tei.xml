@@ -9,7 +9,7 @@
 							<orgName type="department">Dept. Lenguajes y Ciencias de la Computación</orgName>,
 							<orgName type="department">ETSI Informática</orgName>,
 							<lb/>
-							<orgName type="department">Campus de Teatinos</orgName>,
+							<address><addrLine>Campus de Teatinos</addrLine></address>,
 							<orgName type="institution">Universidad de Málaga</orgName>,
 							<lb/>
 							<address>

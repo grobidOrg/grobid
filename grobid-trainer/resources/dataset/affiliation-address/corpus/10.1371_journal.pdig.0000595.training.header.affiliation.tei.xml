@@ -170,7 +170,7 @@
 							<orgName type="institution">Universitat de<lb/> Barcelona</orgName>,
 							<address>
 								<settlement>Esplugues</settlement>,
-								<settlement>Barcelona</settlement>,
+								<region>Barcelona</region>,
 								<country>Spain</country>,
 							</address>
 						</affiliation>

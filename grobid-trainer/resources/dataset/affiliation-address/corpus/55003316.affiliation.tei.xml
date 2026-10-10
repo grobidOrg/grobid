@@ -12,8 +12,7 @@
 							<orgName type="department">Discovery Neuroscience</orgName>,
 							<orgName type="institution">Wyeth Research</orgName>
 							<address>
-								<region>CN</region>
-								<postCode>8000</postCode>,
+								<postBox>CN 8000</postBox>,
 								<settlement>Princeton</settlement>,
 								<region>New Jersey</region>
 								<postCode>08543</postCode>,
@@ -23,7 +22,7 @@
 							<marker>2</marker>
 							<orgName type="department">Medical Genetics Section</orgName>,
 							<orgName type="institution">University of Edinburgh</orgName>
-							<orgName type="department">Centre for Molecular<lb/> Medicine and The Institute of Genetics &amp; Molecular Medicine</orgName>,
+							<orgName type="department">Centre for Molecular<lb/> Medicine</orgName> and <orgName type="department">The Institute of Genetics &amp; Molecular Medicine</orgName>,
 							<orgName type="institution">University of Edinburgh</orgName>,
 							<orgName type="institution">Western General Hospital</orgName>,
 							<address>

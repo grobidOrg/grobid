@@ -38,6 +38,8 @@ if there is one.
 * __laboratory__: corresponds to the research team or group, which the author belongs to (e.g. Joint Research Laboratory Nanomaterials) - the smallest scale of
 organization type.
 
+The type follows the role of the organization in the affiliation, not the word in its name: a government agency called "Department of Agriculture" that is the top organization of the affiliation is an `institution`. A campus, site or building name printed next to the organization (e.g. "Griffin Campus", "Campus de Teatinos") is part of the address (`<addrLine>`), unless it belongs to the name of the institution itself (e.g. "University of California, San Diego").
+
 
 ### Address components
 

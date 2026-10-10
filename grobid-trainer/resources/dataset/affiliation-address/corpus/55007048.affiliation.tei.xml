@@ -58,7 +58,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>5</marker>
-							<orgName type="department">U683 INSERM</orgName>,
+							<orgName type="laboratory">U683</orgName> <orgName type="institution">INSERM</orgName>,
 							<orgName type="department">Faculté de Mé decine X. Bichat</orgName>,
 							<address>
 								<settlement>Paris</settlement>
@@ -93,7 +93,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>8</marker>
-							<orgName type="department">Psychopharmacology Unit</orgName>,
+							<orgName type="laboratory">Psychopharmacology Unit</orgName>,
 							<orgName type="institution">University of Bristol</orgName>,
 							<address>
 								<settlement>Bristol</settlement>
@@ -122,8 +122,8 @@
 							<orgName type="department">Department of Medical Imaging</orgName>,
 							<orgName type="institution">National Institute of Radiological Sciences</orgName>,
 							<address>
-								<settlement>Anagawa</settlement>,
-								<region>Chiba</region>
+								<addrLine>Anagawa</addrLine>,
+								<settlement>Chiba</settlement>
 								<postCode>263 8555</postCode>,
 								<country>Japan</country>
 							<lb/>

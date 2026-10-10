@@ -8,7 +8,7 @@
 						<author>
 
 						<affiliation>
-							<orgName type="institution">RMI Technical Center<lb/> RMI Titanium Company</orgName>
+							<orgName type="department">RMI Technical Center</orgName><lb/> <orgName type="institution">RMI Titanium Company</orgName>
 							<lb/>
 							<address>
 								<addrLine>1000 Warren Avenue</addrLine><lb/> <settlement>Niles</settlement>,
@@ -19,7 +19,7 @@
 							</address>
 						</affiliation>
 						<affiliation>	
-							<orgName type="institution">RMI Technical Center<lb/> RMI Titanium Company</orgName>
+							<orgName type="department">RMI Technical Center</orgName><lb/> <orgName type="institution">RMI Titanium Company</orgName>
 							<lb/>
 							<address>
 								<addrLine>1000 Warren Avenue</addrLine><lb/> <settlement>Niles</settlement>,

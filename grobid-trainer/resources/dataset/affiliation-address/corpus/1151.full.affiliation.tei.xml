@@ -30,8 +30,8 @@
 						<affiliation>
 							<marker>3</marker>
 							<orgName type="laboratory">Inland Marine Waters Unit</orgName>,
-							<orgName type="institution" key="inst1">Joint Research Centre–Institute for Environment and Sustainability</orgName>,
-							<orgName type="institution" key="inst2">Commission of the European Communities</orgName>,
+							<orgName type="institution">Joint Research Centre–Institute for Environment and Sustainability</orgName>,
+							<orgName type="institution">Commission of the European Communities</orgName>,
 							<address>
 								<settlement>Ispra</settlement>,
 								<country>Italy</country>.

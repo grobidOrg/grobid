@@ -8,7 +8,7 @@
 						<author>
 
 						<affiliation>
-							<orgName type="department">&apos;Academic Department of Surgery</orgName>,
+							<marker>&apos;</marker><orgName type="department">Academic Department of Surgery</orgName>,
 							<orgName type="institution">Royal Free Hospital</orgName>,
 							<address>
 								<addrLine>Pond Street</addrLine>,

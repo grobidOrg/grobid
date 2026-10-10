@@ -61,9 +61,8 @@
 							<marker>7</marker>
 							<orgName type="laboratory">Statistical Genomics</orgName>,
 							<orgName type="department">Dept of Genetics</orgName>,
-							<address>
-								<addrLine>Washington</addrLine>
-							</address>
+							<!-- check: "Washington" is most likely the truncated institution name (Washington Univ, St. Louis, host of the Division of Statistical Genomics) rather than a city; retagged institution -->
+							<orgName type="institution">Washington</orgName>
 						</affiliation>						
 						<affiliation>
 							<marker>9</marker>
@@ -139,8 +138,8 @@
 							<marker>16</marker>
 							<orgName type="laboratory">MRC Human Genetics Unit</orgName>,
 							<orgName type="institution">Inst of Genetics &amp; Molecular Med</orgName>,
+							<orgName type="institution">Western Gen Hosp</orgName>,
 							<address>
-								<addrLine>Western Gen Hosp</addrLine>,
 								<settlement>Edinburgh</settlement>,
 								<region>Scotland</region>, <country>UK</country>
 								<country>UK</country>

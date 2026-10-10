@@ -6,12 +6,10 @@
 						<author>
 
 						<affiliation>
+							<!-- check: the marker a sits inside "Department of a Biophysics and Radiation Biology" in the source, so the department name stays split around it; the element was merged with the following one, which holds the shared institution and address -->
 							<orgName type="department">Department of</orgName>
                           <marker>a </marker>
                         <orgName type="department">Biophysics and Radiation Biology</orgName> and
-						</affiliation>
-                          
-						<affiliation>
 							<marker>b</marker>
 							<orgName type="department">Medical Chemistry</orgName>,
 							<lb/>

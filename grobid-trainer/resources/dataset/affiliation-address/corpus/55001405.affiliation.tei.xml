@@ -9,7 +9,7 @@
 
 						<affiliation>
 							<orgName type="institution">JRC Institute for Energy</orgName>,
-							<orgName type="institution">Cleaner Energy Unit</orgName>,
+							<orgName type="laboratory">Cleaner Energy Unit</orgName>,
 							<address>
 								<settlement>Petten</settlement>,
 								<country>The Netherlands</country>,
@@ -18,9 +18,9 @@
 						<affiliation>
 							<orgName type="department">Institute for Nanotechnology</orgName>,
 							<lb/>
+							<!-- check: "FZ Karlsruhe" read as the organisation Forschungszentrum Karlsruhe (FZ is not a postcode); retagged as institution, Karlsruhe no longer a settlement -->
+							<orgName type="institution">FZ Karlsruhe</orgName>,
 							<address>
-								<postCode>FZ</postCode>
-								<settlement>Karlsruhe</settlement>,
 								<country>Germany</country>,
 							</address>
 						</affiliation>

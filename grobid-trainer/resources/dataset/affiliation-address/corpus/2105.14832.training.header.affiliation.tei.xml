@@ -8,7 +8,7 @@
 						<affiliation>
 							<marker>11</marker>
 							<orgName type="department">Department of Physics</orgName>,
-							<orgName type="laboratory">State Key Laboratory of Surface Physics and Key Laboratory of Micro<lb/> and Nano Photonic Structures (Ministry of Education)</orgName>,
+							<orgName type="laboratory">State Key Laboratory of Surface Physics</orgName> and <orgName type="laboratory">Key Laboratory of Micro<lb/> and Nano Photonic Structures (Ministry of Education)</orgName>,
 							<orgName type="institution">Fudan University</orgName>,
 							<address>
 								<settlement>Shanghai</settlement>
@@ -22,8 +22,8 @@
 						<affiliation>
 							<marker>2</marker>
 							<orgName type="institution">Keit Spectrometers</orgName>,
-							<orgName type="institution">Harwell Campus</orgName>,
-                          <address>
+							<address>
+								<addrLine>Harwell Campus</addrLine>,
                             <region>Oxfordshire</region>
                           <country>UK</country>.<lb/>
                           </address>

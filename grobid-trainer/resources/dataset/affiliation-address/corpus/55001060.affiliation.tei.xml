@@ -16,7 +16,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>*</marker>
-							<orgName type="department">Institute of Jingsu Industrial Chemical Research</orgName>,
+							<orgName type="institution">Institute of Jingsu Industrial Chemical Research</orgName>,
 							<address>
 								<settlement>Nanjing</settlement>,
 								<country>China</country>;
@@ -27,7 +27,7 @@
 							<orgName type="department">Faculty of Pharmacy</orgName>,
 							<orgName type="institution">Meijo University</orgName>,
 							<address>
-								<settlement>Tempaku</settlement>,
+								<addrLine>Tempaku</addrLine>,
 								<settlement>Nagoya</settlement>
 								<postCode>468</postCode>,
 								<country>Japan</country>

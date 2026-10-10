@@ -12,7 +12,7 @@
 							<orgName type="department">Department of Neurosurgery</orgName>,
 							<orgName type="institution">Mie University</orgName>,
 							<address>
-								<settlement>Mie</settlement>,
+								<region>Mie</region>,
 								<country>Japan</country>
 							</address>
 						</affiliation>
@@ -38,7 +38,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>4</marker>
-							<orgName type="department">Industrial Technology Center of Okayama Prefecture</orgName>,
+							<orgName type="institution">Industrial Technology Center of Okayama Prefecture</orgName>,
 							<orgName type="department">Department of Mechanical Engineering</orgName>,
 							<address>
 								<settlement>Okayama</settlement>,
@@ -50,7 +50,7 @@
 							<orgName type="department">Electron Microscopy Research Center</orgName>,
 							<orgName type="institution">Mie University</orgName>,
 							<address>
-								<settlement>Mie</settlement>,
+								<region>Mie</region>,
 								<country>Japan</country>
 							</address>
 						</affiliation>
