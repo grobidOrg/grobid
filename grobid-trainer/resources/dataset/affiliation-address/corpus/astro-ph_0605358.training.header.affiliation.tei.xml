@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">INAF/IASF Istituto Nazionale di Astrofisica</orgName>,
+							<orgName type="institution">Istituto di Astrofisica Spaziale e Fisica Cosmica<lb/> Bologna</orgName>,
+							<address>
+								<addrLine>Via Gobetti 101</addrLine>,
+								<postCode>I-40129</postCode>
+								<settlement>Bologna</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+                        </affiliation>
+
+                       <affiliation>
+							<orgName type="institution">ISS Institute for Space Sciences</orgName>,
+							<address>
+								<settlement>Bucharest-Magurele</settlement>
+								<postCode>R-76900</postCode>,
+								<country>Romania</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

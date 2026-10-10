@@ -1,0 +1,25 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="laboratory">Laboratory for Information &amp; Decision Systems (LIDS)</orgName>,
+							<orgName type="institution">Massachusetts<lb/> Institute of Technology</orgName>,
+							<address>
+								<addrLine>77 Massachusetts Ave</addrLine>,
+								<settlement>Cambridge</settlement>,
+								<region>MA</region>
+								<postCode>02139</postCode>.
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

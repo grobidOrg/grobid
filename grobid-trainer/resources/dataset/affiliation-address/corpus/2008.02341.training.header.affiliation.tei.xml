@@ -1,0 +1,80 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">Department of Biostatistics and Computational Biology</orgName>,
+							<lb/>
+							<orgName type="institution">University of Rochester</orgName>
+							<orgName type="department">Medical Center</orgName>,
+							<lb/>
+							<address>
+								<settlement>Rochester</settlement>,
+								<addrLine>Saunders Research Building</addrLine>,
+								<addrLine>265 Crittenden Blvd.</addrLine>,
+								<region>NY</region>
+								<postCode>14642</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+						<affiliation>
+							<orgName type="department">Department of Biostatistics and Computational Biology</orgName>,
+							<lb/>
+							<orgName type="institution">University of Rochester Medical Center</orgName>,
+							<lb/>
+							<address>
+								<settlement>Rochester</settlement>,
+								<addrLine>Saunders Research Building</addrLine>,
+								<addrLine>265 Crittenden Blvd.</addrLine>,
+								<region>NY</region>
+								<postCode>14642</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+					<affiliation>
+							<orgName type="department">Center for Clinical Epidemiology and Biostatistics (CCEB)</orgName>
+							<lb/> and
+							<orgName type="department">Department of Psychiatry</orgName>,
+							<lb/>
+							<orgName type="institution">University of Pennsylvania</orgName>,
+							<lb/>
+							<address>
+								<addrLine>3535 Market Street</addrLine>,
+								<postCode>5099</postCode>,
+								<settlement>Philadelphia</settlement>,
+								<region>PA</region>
+								<postCode>19104</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+					</affiliation>
+
+					<affiliation>
+							<orgName type="department">Department of Psychiatry</orgName>,
+							<orgName type="department">Perelman School of Medicine</orgName>,
+							<lb/>
+							<orgName type="institution">University of Pennsylvania</orgName>,
+							<lb/>
+							<address>
+								<addrLine>3535 Market St.</addrLine>,
+								<addrLine>Suite 500</addrLine>,
+								<settlement>Philadelphia</settlement>,
+								<region>PA</region>
+								<postCode>19104</postCode>,
+								<country>USA</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

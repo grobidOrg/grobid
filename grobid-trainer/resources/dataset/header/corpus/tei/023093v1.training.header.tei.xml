@@ -7,51 +7,73 @@
 		<front>
 <lb/>
 	<docTitle>
-	<titlePart>The Nicrophorus vespilloides genome and methylome, a beetle with complex social behavior 1 2<lb/></titlePart>
+	<titlePart>The Nicrophorus vespilloides genome and methylome, a beetle with complex social behavior</titlePart>
 	</docTitle>
-	
+
+	1 2<lb/>
+
 	<byline>
-	<docAuthor>Christopher B. Cunningham 1,* , Lexiang Ji 2 , R. Axel W. Wiberg 3 , Jennifer Shelton 4 , Elizabeth C. McKinney 1 , 3<lb/> Darren J. Parker 3 , Richard B. Meagher 1 , Kyle M. Benowitz 1 , Eileen M. Roy-Zokan 1 , Michael G. Ritchie 3 , 4<lb/> Susan J. Brown 4 , Robert J. Schmitz 1 , Allen J. Moore 1,* 5 6<lb/></docAuthor>
+	<docAuthor>Christopher B. Cunningham 1,* , Lexiang Ji 2 , R. Axel W. Wiberg 3 , Jennifer Shelton 4 , Elizabeth C. McKinney 1 ,</docAuthor> 3<lb/>
 	</byline>
+
+	<byline>
+	<docAuthor>Darren J. Parker 3 , Richard B. Meagher 1 , Kyle M. Benowitz 1 , Eileen M. Roy-Zokan 1 , Michael G. Ritchie 3 ,</docAuthor> 4<lb/>
+	</byline>
+
+	<byline>
+	<docAuthor>Susan J. Brown 4 , Robert J. Schmitz 1 , Allen J. Moore 1,*</docAuthor>
+	</byline>
+
+	5 6<lb/>
 
 	Affiliations: 7 8<lb/>
 	<byline>
 	<affiliation>1 Department of Genetics, University of Georgia,</affiliation>
 	</byline>
 
-	<address>Athens, Georgia, USA 9 10<lb/></address>
+	<address>Athens, Georgia, USA</address>
+    <!-- line numbers, may be removed nowadays -->
+    9 10<lb/>
 
 	<byline>
 	<affiliation>2 Institute of Bioinformatics, University of Georgia,</affiliation>
 	</byline>
 
-	<address>Athens, Georgia, USA 11</address>
+	<address>Athens, Georgia, USA</address>
 
-	12<lb/>
+    11 12<lb/>
 	<byline>
-	<affiliation>3 Centre for Biological Diversity, School of Biology, University of St.</affiliation>
+	<affiliation>3 Centre for Biological Diversity, School of Biology, University of St. Andrews</affiliation>,
 	</byline>
 
-	<address>Andrews, Fife, KY16 9TH, UK.</address>
+	<address>Fife, KY16 9TH, UK.</address>
 
 	13 14<lb/>
 	<byline>
 	<affiliation>4 Division of Biology &amp; Bioinformatics Center &amp; Arthropod Genomics Center, Kansas State University,</affiliation>
 	</byline>
 
-	15<lb/> 
+	15<lb/>
 	<address>Manhattan, Kansas, USA</address>
 
-	16 17<lb/> *Corresponding Authors: CB Cunningham (
+	16 17<lb/> *Corresponding Authors:
+	<byline>
+	<docAuthor>CB Cunningham</docAuthor>
+	</byline>
+	(
 	<email>cbc83@uga.edu</email>
 
-	) and AJ Moore (
+	) and
+	<byline>
+	<docAuthor>AJ Moore</docAuthor>
+	</byline>
+	(
 	<email>ajmoore@uga.edu</email>
 
 	) 18 19<lb/> Running Title: Burying Beetle Genome 20 2 21 Abstract 22<lb/>
-	<div type="abstract">Testing for conserved and novel mechanisms underlying phenotypic evolution requires a diversity of 23<lb/> genomes available for comparison spanning multiple independent lineages. For example, complex social 24<lb/> behavior in insects has been investigated primarily with eusocial lineages, nearly all of which are 25<lb/> Hymenoptera. If conserved genomic influences on sociality do exist, we need data from a wider range of taxa 26<lb/> that also vary in their levels of sociality. Here we present information on the genome of the subsocial beetle 27<lb/> Nicrophorus vespilloides, a species long used to investigate evolutionary questions of complex social 28<lb/> behavior. We used this genome to address two questions. First, does life history predict overlap in gene 29<lb/> models more strongly than phylogenetic groupings? Second, like other insects with highly developed social 30<lb/> behavior but unlike other beetles, does N. vespilloides have DNA methylation? We found the overlap in gene 31<lb/> models was similar between N. vespilloides and all other insect groups regardless of life history. Unlike 32<lb/> previous studies of beetles, we found strong evidence of DNA methylation, which allows this species to be 33<lb/> used to address questions about the potential role of methylation in social behavior. The addition of this 34<lb/> genome adds a coleopteran resource to answer questions about the evolution and mechanistic basis of 35<lb/> sociality.</div>
+	<div type="abstract">Testing for conserved and novel mechanisms underlying phenotypic evolution requires a diversity of</div> 23<lb/> <div type="abstract">genomes available for comparison spanning multiple independent lineages. For example, complex social</div> 24<lb/> <div type="abstract">behavior in insects has been investigated primarily with eusocial lineages, nearly all of which are</div> 25<lb/> <div type="abstract">Hymenoptera. If conserved genomic influences on sociality do exist, we need data from a wider range of taxa</div> 26<lb/> <div type="abstract">that also vary in their levels of sociality. Here we present information on the genome of the subsocial beetle</div> 27<lb/> <div type="abstract">Nicrophorus vespilloides, a species long used to investigate evolutionary questions of complex social</div> 28<lb/> <div type="abstract">behavior. We used this genome to address two questions. First, does life history predict overlap in gene</div> 29<lb/> <div type="abstract">models more strongly than phylogenetic groupings? Second, like other insects with highly developed social</div> 30<lb/> <div type="abstract">behavior but unlike other beetles, does N. vespilloides have DNA methylation? We found the overlap in gene</div> 31<lb/> <div type="abstract">models was similar between N. vespilloides and all other insect groups regardless of life history. Unlike</div> 32<lb/> <div type="abstract">previous studies of beetles, we found strong evidence of DNA methylation, which allows this species to be</div> 33<lb/> <div type="abstract">used to address questions about the potential role of methylation in social behavior. The addition of this</div> 34<lb/> <div type="abstract">genome adds a coleopteran resource to answer questions about the evolution and mechanistic basis of</div> 35<lb/> <div type="abstract">sociality.</div>
 
-	36 37<lb/> 
+	36 37<lb/>
 
 		</front>
 	</text>

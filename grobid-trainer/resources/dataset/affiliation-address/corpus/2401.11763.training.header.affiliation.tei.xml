@@ -1,0 +1,121 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Department of Physics</orgName>,
+							<orgName type="institution">Kyoto University</orgName>,
+							<address>
+								<addrLine>Kitashirakawa Oiwake-cho</addrLine>,
+								<addrLine>Sakyo-ku</addrLine>,
+								<settlement>Kyoto</settlement>
+								<postCode>606-8502</postCode>,
+								<country>Japan</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="department">Department of Physics</orgName>,
+							<orgName type="institution">Graduate School of Science</orgName>,
+							<orgName type="institution">The University of Tokyo</orgName>,
+							<address>
+								<addrLine>7-3-1 Hongo</addrLine>,
+								<addrLine>Bunkyo-ku</addrLine>,
+								<settlement>Tokyo</settlement>
+								<postCode>113-0033</postCode>,
+								<country>Japan</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Department of Astronomy</orgName>,
+							<orgName type="institution">Kyoto University</orgName>,
+							<address>
+								<addrLine>Kitashirakawa</addrLine>,
+								<addrLine>Oiwake-cho</addrLine>,
+								<addrLine>Sakyo-ku</addrLine>,
+								<settlement>Kyoto</settlement>
+								<postCode>606-8502</postCode>,
+								<country>Japan</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="department">Kavli Institute for the Physics and Mathematics of the Universe (WPI)</orgName>,
+							<orgName type="institution">The University of Tokyo</orgName>,
+							<address>
+								<addrLine>5-1-5 Kashiwanoha</addrLine>,
+								<settlement>Kashiwa</settlement>,
+								<region>Chiba</region>
+							<lb/>
+								<postCode>277-8583</postCode>,
+								<country>Japan</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>5</marker>
+							<orgName type="department">Department of Physics</orgName>,
+							<orgName type="institution">Konan University</orgName>,
+							<address>
+								<addrLine>8-9-1 Okamoto</addrLine>,
+								<addrLine>Higashinada</addrLine>,
+								<settlement>Kobe</settlement>,
+								<region>Hyogo</region>
+								<postCode>658-8501</postCode>,
+								<country>Japan</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>6</marker>
+							<orgName type="laboratory">Research Center for the Early Universe</orgName>,
+							<orgName type="department">School of Science</orgName>,
+							<orgName type="institution">The University of Tokyo</orgName>,
+							<address>
+								<addrLine>7-3-1 Hongo</addrLine>,
+								<addrLine>Bunkyo-ku</addrLine>,
+								<settlement>Tokyo</settlement>
+								<postCode>113-0033</postCode>,
+								<country>Japan</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>7</marker>
+							<orgName type="department">Trans-Scale Quantum Science Institute</orgName>,
+							<orgName type="institution">The University of Tokyo</orgName>,
+							<address>
+								<addrLine>7-3-1 Hongo</addrLine>,
+								<addrLine>Bunkyo-ku</addrLine>,
+								<settlement>Tokyo</settlement>
+								<postCode>113-0033</postCode>,
+								<country>Japan</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

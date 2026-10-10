@@ -15,8 +15,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>science-miner<lb/> France<lb/></affiliation>
+	<affiliation>science-miner<lb/></affiliation>
 	</byline>
+
+	<address>France<lb/></address>
 
 	<email>patrice.lopez@science-miner.com<lb/></email>
 
@@ -25,24 +27,30 @@
 	</byline>
 
 	<byline>
-	<affiliation>University of Texas at Austin USA<lb/></affiliation>
+	<affiliation>University of Texas at Austin</affiliation>
 	</byline>
+
+	<address>USA<lb/></address>
 
 	<byline>
 	<docAuthor>Karthik Ram<lb/></docAuthor>
 	</byline>
 
 	<byline>
-	<affiliation>Berkeley Institute for Data Science USA<lb/></affiliation>
+	<affiliation>Berkeley Institute for Data Science</affiliation>
 	</byline>
+
+	<address>USA<lb/></address>
 
 	<byline>
 	<docAuthor>James Howison<lb/></docAuthor>
 	</byline>
 
 	<byline>
-	<affiliation>University of Texas at Austin USA</affiliation>
+	<affiliation>University of Texas at Austin</affiliation>
 	</byline>
+
+	<address>USA</address>
 
 	ABSTRACT<lb/>
 	<div type="abstract">We present a comprehensive information extraction system dedi-<lb/>cated to software entities in scientific literature. This task combines<lb/> the complexity of automatic reading of scientific documents (PDF<lb/> processing, document structuring, styled/rich text, scaling) with<lb/> challenges specific to mining software entities: high heterogeneity<lb/> and extreme sparsity of mentions, document-level cross-references,<lb/> disambiguation of noisy software mentions and poor portability<lb/> of Machine Learning approaches between highly specialized do-<lb/>mains. While NER is a key component to recognize new and unseen<lb/> software, considering this task as a simple NER application fails to<lb/> address most of these issues.<lb/> In this paper, we propose a multi-model Machine Learning ap-<lb/>proach where raw documents are ingested by a cascade of docu-<lb/>ment structuring processes applied not to text, but to layout token<lb/> elements. The cascading process further enriches the relevant struc-<lb/>tures of the document with a Deep Learning software mention<lb/> recognizer adapted to the high sparsity of mentions. The Machine<lb/> Learning cascade culminates with entity disambiguation to alleviate<lb/> false positives and to provide software entity linking. A bibliograph-<lb/>ical reference resolution is integrated to the process for attaching<lb/> references cited alongside the software mentions.<lb/> Based on the first gold-standard annotated dataset developed<lb/> for software mentions, this work establishes a new reference end-<lb/>to-end performance for this task. Experiments with the CORD-19<lb/> publications have further demonstrated that our system provides<lb/> practically usable performance and is scalable to the whole scientific<lb/> corpus, enabling novel applications for crediting research software<lb/> and for better understanding the impact of software in science.<lb/></div>
@@ -51,11 +59,11 @@
 
 	<note type="copyright">Permission to make digital or hard copies of part or all of this work for personal or<lb/> classroom use is granted without fee provided that copies are not made or distributed<lb/> for profit or commercial advantage and that copies bear this notice and the full citation<lb/> on the first page. Copyrights for third-party components of this work must be honored.<lb/> For all other uses, contact the owner/author(s).<lb/></note>
 
-	<reference>CIKM &apos;21, November 1-5, 2021, Virtual Event, QLD, Australia<lb/></reference>
+	<meeting>CIKM &apos;21, November 1-5, 2021, Virtual Event, QLD, Australia<lb/></meeting>
 
 	<note type="copyright">© 2021 Copyright held by the owner/author(s).<lb/></note>
 
-	<reference>ACM ISBN 978-1-4503-8446-9/21/11.<lb/></reference>
+	<idno>ACM ISBN 978-1-4503-8446-9/21/11.<lb/></idno>
 
 	<idno>https://doi.org/10.1145/3459637.3481936</idno>
 
@@ -69,11 +77,11 @@
 
 	<note type="copyright">This work is licensed under a Creative Commons Attribution International 4.0 License.<lb/></note>
 
-	<reference>CIKM &apos;21, November 1-5, 2021, Virtual Event, Australia.<lb/></reference>
+	<meeting>CIKM &apos;21, November 1-5, 2021, Virtual Event, Australia.<lb/></meeting>
 
 	<note type="copyright">© 2021 Copyright is held by the owner/author(s).<lb/></note>
 
-	<reference>ACM ISBN 978-1-4503-8446-9/21/11.<lb/></reference>
+	<idno>ACM ISBN 978-1-4503-8446-9/21/11.<lb/></idno>
 
 	<idno>https://doi.org/10.1145/3459637.3481936</idno>
 

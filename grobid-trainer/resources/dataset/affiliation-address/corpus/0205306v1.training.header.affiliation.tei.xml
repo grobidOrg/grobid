@@ -1,0 +1,78 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="institution">Grenoble High Magnetic Field Laboratory</orgName>,
+							<orgName type="institution">MPI-FKF</orgName>
+							and 
+							<orgName type="institution">CNRS</orgName>,
+							<address>
+								<postBox>B.P. 166</postBox>,
+								<postCode>38042</postCode>
+								<settlement>Grenoble</settlement>
+								<postCode>Cedex 9</postCode>,
+								<country>France</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">Max Planck Institute for Solid State Research</orgName>,
+							<address>
+								<addrLine>Heisenbergstr. 1</addrLine>,
+								<postCode>70569</postCode>
+								<settlement>Stuttgart</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="laboratory">Laboratoire de Spectrométrie Physique</orgName>,
+							<orgName type="institution">Université J. Fourier</orgName>,
+							<address>
+								<postBox>B.P. 87</postBox>,
+								<postCode>38402</postCode>
+								<settlement>St. Martin d'Hères</settlement>,
+								<country>France</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="department">Department of Electrical Engineering</orgName>,
+							<orgName type="institution">Princeton University</orgName>,
+							<address>
+								<settlement>Princeton</settlement>
+								<region>NJ</region>
+								<postCode>08544</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>5</marker>
+							<orgName type="institution">Institut Universitaire de France and Université J. Fourier</orgName>,
+							<address>
+								<postBox>B.P. 41</postBox>,
+								<postCode>38402</postCode>
+								<settlement>St. Martin d'Hères</settlement>,
+								<country>France</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="laboratory">Electron Transport Research Group</orgName> of the
+							<orgName type="department">Hungarian Academy of Science</orgName> and
+							<orgName type="department">Department of Physics</orgName>,
+							<lb/>
+							<orgName type="institution">Budapest University of Technology and Economics</orgName>,
+							<address>
+								<postCode>1111</postCode>
+								<settlement>Budapest</settlement>,
+								<country>Hungary</country>
+							<lb/>
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="institution">NSRIM</orgName>,
+							<orgName type="institution">University of Nijmegen</orgName>,
+							<address>
+								<addrLine>Toernooiveld 1</addrLine>,
+								<postCode>6525 ED</postCode>
+								<settlement>Nijmegen</settlement>,
+								<country>the Netherlands</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

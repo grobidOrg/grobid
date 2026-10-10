@@ -1,0 +1,123 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2003.00865">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-28T07:57:23.612153Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-28T07:57:23.612153Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-28T07:58:50.223Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+
+	1<lb/>
+	<docTitle>
+	<titlePart>Towards Backdoor Attacks and Defense in<lb/> Robust Machine Learning Models<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Ezekiel Soremekun*, Sakshi Udeshi*, Sudipta Chattopadhyay<lb/></docAuthor>
+	</byline>
+
+	Abstract-
+	<div type="abstract">The introduction of robust optimisation has pushed<lb/> the state-of-the-art in defending against adversarial attacks.<lb/> Notably, the state-of-the-art projected gradient descent (PGD)<lb/> -based training method has been shown to be universally and<lb/> reliably effective in defending against adversarial inputs. This<lb/> robustness approach uses PGD as a reliable and universal "first-<lb/>order adversary". However, the behaviour of such optimisation<lb/> has not been studied in the light of a fundamentally different class<lb/> of attacks called backdoors. In this paper, we study how to inject<lb/> and defend against backdoor attacks for robust models trained<lb/> using PGD-based robust optimisation. We demonstrate that these<lb/> models are susceptible to backdoor attacks. Subsequently, we<lb/> observe that backdoors are reflected in the feature representation<lb/> of such models. Then, this observation is leveraged to detect<lb/> such backdoor-infected models via a detection technique called<lb/> AEGIS. Specifically, given a robust Deep Neural Network (DNN)<lb/> that is trained using PGD-based first-order adversarial training<lb/> approach, AEGIS uses feature clustering to effectively detect<lb/> whether such DNNs are backdoor-infected or clean.<lb/> In our evaluation of several visible and hidden backdoor<lb/> triggers on major classification tasks using CIFAR-10, MNIST<lb/> and FMNIST datasets, AEGIS effectively detects PGD-trained<lb/> robust DNNs infected with backdoors. AEGIS detects such<lb/> backdoor-infected models with 91.6% accuracy (11 out of 12<lb/> tested models), without any false positives. Furthermore, AEGIS<lb/> detects the targeted class in the backdoor-infected model with<lb/> a reasonably low (11.1%) false positive rate. Our investigation<lb/> reveals that salient features of adversarially robust DNNs could<lb/> be promising to break the stealthy nature of backdoor attacks.<lb/></div>
+
+	Index Terms-
+	<keyword>backdoors, neural networks, robust optimiza-<lb/>tion, machine learning<lb/></keyword>
+
+	* equal contribution.<lb/>
+	<byline>
+	<docAuthor>E. Soremekun</docAuthor>
+	</byline>
+
+	is with the
+	<byline>
+	<affiliation>Interdisciplinary Centre for Security, Reliability<lb/> and Trust (SnT), University of Luxembourg,</affiliation>
+	</byline>
+
+	<address>Luxembourg.<lb/></address>
+
+	E-mail:
+	<email>ezekiel.soremekun@uni.lu<lb/></email>
+
+	<byline>
+	<docAuthor>S. Udeshi and S. Chattopadhyay</docAuthor>
+	</byline>
+
+	are with 
+	<byline>
+	<affiliation>Singapore University of Technology<lb/>and Design.<lb/></affiliation>
+	</byline>
+
+	 E-mail:
+	<email>{sakshi_udeshi@mymail., sudipta_chattopadhyay@}sutd.edu.sg<lb/></email>
+
+	<idno>arXiv:2003.00865v4 [cs.CV]</idno>
+
+	<date>11 Jan 2023<lb/></date>
+
+    <!-- garbage from the body --> 
+          
+	<!-- Training<lb/> Input (X)<lb/> Robust<lb/> Model (f )<lb/>
+	<docTitle>
+	<titlePart>Translation using<lb/> Robust Model 1</titlePart>
+	</docTitle>
+
+	<note type="copyright">©<lb/></note>
+
+	<docTitle>
+	<titlePart>Feature Representation<lb/> Extraction 2<lb/></titlePart>
+	</docTitle>
+
+	<note type="copyright">©<lb/> TSNE 3<lb/> ©<lb/></note>
+
+	<docTitle>
+	<titlePart>Meanshift<lb/> Clustering 4</titlePart>
+	</docTitle>
+
+	<note type="copyright">©<lb/> Clean Model</note> -->
+
+		</front>
+	</text>
+
+</TEI>

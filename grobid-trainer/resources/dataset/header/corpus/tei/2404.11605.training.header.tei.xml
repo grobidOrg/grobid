@@ -1,0 +1,135 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2404.11605">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-29T09:44:54.931744Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-29T09:44:54.931744Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-29T09:48:11.511Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>VG4D: Vision-Language Model Goes 4D Video Recognition<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Zhichao Deng 1 , Xiangtai Li 2 , Xia Li 3 , Yunhai Tong 2 , Shen Zhao 1 * , and Mengyuan Liu 4 *<lb/></docAuthor>
+	</byline>
+
+	Abstract-
+	<div type="abstract">Understanding the real world through point cloud<lb/> video is a crucial aspect of robotics and autonomous driving<lb/> systems. However, prevailing methods for 4D point cloud<lb/> recognition have limitations due to sensor resolution, which<lb/> leads to a lack of detailed information. Recent advances have<lb/> shown that Vision-Language Models (VLM) pre-trained on<lb/> web-scale text-image datasets can learn fine-grained visual<lb/> concepts that can be transferred to various downstream tasks.<lb/> However, effectively integrating VLM into the domain of 4D<lb/> point clouds remains an unresolved problem. In this work,<lb/> we propose the Vision-Language Models Goes 4D (VG4D)<lb/> framework to transfer VLM knowledge from visual-text pre-<lb/>trained models to a 4D point cloud network. Our approach<lb/> involves aligning the 4D encoder's representation with a VLM<lb/> to learn a shared visual and text space from training on<lb/> large-scale image-text pairs. By transferring the knowledge<lb/> of the VLM to the 4D encoder and combining the VLM,<lb/> our VG4D achieves improved recognition performance. To<lb/> enhance the 4D encoder, we modernize the classic dynamic point<lb/> cloud backbone and propose an improved version of PSTNet,<lb/> im-PSTNet, which can efficiently model point cloud videos.<lb/> Experiments demonstrate that our method achieves state-of-<lb/>the-art performance for action recognition on both the NTU<lb/> RGB+D 60 dataset and the NTU RGB+D 120 dataset. Code is<lb/> available at https://github.com/Shark0-0/VG4D.<lb/></div>
+
+	*Corresponding author:
+	<byline>
+	<docAuthor>Mengyuan Liu and Shen Zhao.<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<docAuthor>1 Zhichao Deng and Shen Zhao</docAuthor>
+	</byline>
+
+	are with the
+	<byline>
+	<affiliation>School of Intelli-<lb/>gent Systems Engineering, Sun Yat-sen University,</affiliation>
+	</byline>
+
+	<address>Shenzhen, China<lb/></address>
+
+	<email>dengzhch3@mail2.sysu.edu.cn</email>
+
+	,
+	<email>z-s-06@163.com</email>
+
+	)<lb/>
+	<byline>
+	<docAuthor>2 Xiangtai Li and Yunhai Tong</docAuthor>
+	</byline>
+
+	are with the
+	<byline>
+	<affiliation>National Key<lb/> Laboratory of General Artificial Intelligence, Peking University</affiliation>
+	</byline>
+			
+    , and<lb/>
+	<byline>
+	<docAuthor>Tong</docAuthor>
+	</byline>
+		
+		 is also with 
+	<byline>
+	<affiliation>
+	PKU-Wuhan Institute for Artificial Intelligence.<lb/></affiliation>
+	</byline>
+
+	<email>lxtpku@pku.edu.cn<lb/></email>
+
+	<byline>
+	<docAuthor>3 Xia Li</docAuthor>
+	</byline>
+
+	is with the
+	<byline>
+	<affiliation>Department of Computer Science, ETH Zurich.<lb/></affiliation>
+	</byline>
+
+	<email>xia.li@inf.ethz.ch<lb/></email>
+
+	<byline>
+	<docAuthor>4 Mengyuan Liu</docAuthor>
+	</byline>
+
+	is with the
+	<byline>
+	<affiliation>National Key Laboratory of Gen-<lb/>eral Artificial Intelligence, Peking University, Shenzhen Graduate School<lb/></affiliation>
+	</byline>
+
+	<email>liumengyuan@pku.edu.cn<lb/></email>
+
+	<note type="funding">This work was supported by the National Natural Science Foundation of<lb/> China (No. 62203476), the Natural Science Foundation of Shenzhen (No.<lb/> JCYJ20230807120801002), the National Key Research and Development<lb/> Program of China (No. 2023YFC3807600), the interdisciplinary doctoral<lb/> grants (iDoc 2021-360) from the Personalized Health and Related Tech-<lb/>nologies (PHRT) of the ETH domain, Switzerland.</note>
+
+		</front>
+	</text>
+
+</TEI>

@@ -10,7 +10,8 @@
 
 	<date>10 Sep 2004<lb/></date> 
 
-	<date>11 November 2018<lb/></date>
+	<!-- check: PDF production date of a 2004 paper, left untagged -->
+	11 November 2018<lb/>
 
 	<docTitle>
 	<titlePart>Growth and superconducting transition of<lb/> Pr 1−x Ca x Ba 2 Cu 3 O 7−δ (x ≈0.5) epitaxial thin films<lb/></titlePart>

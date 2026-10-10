@@ -28,7 +28,11 @@
 	<affiliation>Centre du médicament, Université de Nancy /, Unité associée au Centre national de la recherche scientifique, n&quot; 597,<lb/> </affiliation>
 	</byline>
 
-	<address>30, Rue Lionnois, 54000 Nancy, France ET<lb/> MADELEINE TISSIER ET JEAN JUILLARD 1<lb/></address>
+	<address>30, Rue Lionnois, 54000 Nancy, France</address> ET<lb/>
+
+	<byline>
+	<docAuthor>MADELEINE TISSIER ET JEAN JUILLARD 1<lb/></docAuthor>
+	</byline>
 
 	<byline>
 	<affiliation>Laboratoire de chimie physique des solutions, Université Biaise Pascal (Clermont),<lb/> Unité associée au Centre national de la recherche scientifique, n&quot; 434,</affiliation>

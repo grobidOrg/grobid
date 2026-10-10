@@ -23,7 +23,10 @@
 	e-mail:
 	<email>noik@db.toronto.edu<lb/></email>
 
-	Telephone: (416) 978 8609 Abstract<lb/>
+	Telephone:
+	<phone>(416) 978 8609</phone>
+
+	Abstract<lb/>
 	<div type="abstract">The graph topo-visual formalism has been shown to<lb/> be well-suited to the task of visualizing complex rela-<lb/>tions on a set of elements. Unfortunately, most visual<lb/> formalisms do not scale very well. This observation is<lb/> particularly true of graphs, which even when hand-drawn<lb/> by an artist, are seldom meaningful when the number of<lb/> nodes or links exceeds a very modest threshold -typi-<lb/>cally only a few hundred elements. This severe limitation<lb/> has prompted many researchers to seek alternative visu-<lb/>alization techniques that may eliminate, or, at the very<lb/> least, raise this threshold.<lb/> In this paper we analyze these recent efforts, describe<lb/> an abstract space of presentation emphasis techniques,<lb/> and locate the current approaches within this space. The<lb/> contributions of this paper are several: (1) a significant<lb/> portion of recent work is collected and reviewed; (2) a<lb/> common set of criteria and a taxonomy of graph views<lb/> are proposed; these, (3) permit a more direct comparison<lb/> of previous work; which helps to, (4) identify common<lb/> shortcomings and limitations; which in turn, (5) suggest<lb/> future directions.<lb/></div>
 
 	Keywords:

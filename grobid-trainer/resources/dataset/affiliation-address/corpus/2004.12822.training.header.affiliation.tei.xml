@@ -1,0 +1,49 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>a</marker>
+							<orgName type="institution">UGA-CNRS</orgName>,
+							<orgName type="department">Institut Fourier</orgName>,
+							<orgName type="laboratory">FED Maths à Modeler</orgName>,
+							<address>
+								<addrLine>100 rue des maths</addrLine>,
+								<postBox>BP 74</postBox>,
+							<lb/>
+								<postCode>38402</postCode>
+								<settlement>St Martin d'Hères cedex</settlement>,
+								<country>France</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>b</marker>
+							<orgName type="laboratory">Laboratoire LaROMaD</orgName>,
+							<orgName type="laboratory">FDR Maths à Modeler. </orgName>
+							<orgName type="institution">U.S.T.H.B Université</orgName>,
+							<orgName type="department">Faculté<lb/> des Mathématiques BP 32</orgName>
+							<address>
+								<addrLine>El Alia Bab Ezzouar 16</addrLine>
+								<postCode>111</postCode>
+								<settlement>Alger</settlement>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>c</marker>
+							<orgName type="institution">ENS de Lyon</orgName>,
+							<orgName type="department">Département d'Informatique</orgName>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

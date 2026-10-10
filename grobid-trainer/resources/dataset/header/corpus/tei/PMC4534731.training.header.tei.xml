@@ -6,11 +6,17 @@
 	<text xml:lang="en">
 		<front>
 <lb/>
-	<note type="copyright">©Copyrights 2015. The Korean Academy of Conservative Dentistry. 249<lb/> This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (http://creativecommons.org/licenses/<lb/> by-nc/3.0) which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.<lb/></note>
+	<note type="copyright">©Copyrights 2015. The Korean Academy of Conservative Dentistry.</note>
+
+	<page>249<lb/></page>
+
+	<note type="copyright">This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (http://creativecommons.org/licenses/<lb/> by-nc/3.0) which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.<lb/></note>
 
 	<docTitle>
-	<titlePart>Statistical notes for clinical researchers: Type I and<lb/> type II errors in statistical decision<lb/> Open lecture on statistics<lb/></titlePart>
+	<titlePart>Statistical notes for clinical researchers: Type I and<lb/> type II errors in statistical decision<lb/></titlePart>
 	</docTitle>
+
+	Open lecture on statistics<lb/>
 
 	<idno>ISSN 2234-7658 (print)</idno> / 
 	<idno>ISSN 2234-7666 (online)</idno><lb/> 

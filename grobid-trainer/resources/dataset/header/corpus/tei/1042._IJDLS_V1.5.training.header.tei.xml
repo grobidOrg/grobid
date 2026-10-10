@@ -24,7 +24,9 @@
 
 	<ptr type="web">http://www.inria.fr/recherche/equipes/gemo.fr.html<lb/></ptr>
 
-	<address>Unter den Linden 6, 10099 Berlin -http://www.linguistik.hu-berlin.de/<lb/></address>
+	<address>Unter den Linden 6, 10099 Berlin</address>
+	-
+	<ptr type="web">http://www.linguistik.hu-berlin.de/<lb/></ptr>
 
 	<byline>
 	<docAuthor>Chris Armbruster,</docAuthor>
@@ -37,7 +39,9 @@
 	)<lb/>
 	<email>armbruster@mpdl.mpg.de<lb/></email>
 
-	<address>Invalidenstrasse 35, D-10115 Berlin -www.mpdl.mpg.de<lb/></address>
+	<address>Invalidenstrasse 35, D-10115 Berlin</address>
+	-
+	<ptr type="web">www.mpdl.mpg.de<lb/></ptr>
 
 	Executive Director, 
 
@@ -54,7 +58,7 @@
 	<keyword>Scientific information, publication repositories, institutional repositories, digital<lb/> libraries, research infrastructure, deposit mandate, interoperability, open access<lb/></keyword>
 
 	<page>-1 -<lb/></page>
-	hal-00399881, version 1 -
+	<idno>hal-00399881, version 1</idno> -
 	<date>29 Jun 2009</date>
 
 		</front>

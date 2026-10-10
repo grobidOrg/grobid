@@ -1,0 +1,143 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Physical Chemistry I</orgName>,
+							<orgName type="department">Faculty of Chemistry and Biochemistry</orgName>,
+							<orgName type="institution">Ruhr-University Bochum</orgName>,
+							<address>
+								<addrLine>Universitätsstr. 150</addrLine>,
+							<lb/>
+								<postCode>44780</postCode>
+								<settlement>Bochum</settlement>,
+								<country>Germany;</country>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="department">Chair for Molecular Physical Chemistry</orgName>,
+							<orgName type="institution">Heinrich-Heine-University Düsseldorf</orgName>,
+							<lb/>
+							<address>
+								<addrLine>Universitätsstr. 1</addrLine>,
+								<postCode>40225</postCode>
+								<settlement>Düsseldorf</settlement>,
+								<country>Germany;</country>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Jülich Centre for Neutron Science JCNS and Institute for Complex<lb/> System ICS</orgName>,
+							<orgName type="institution">Forschungszentrum Jülich GmbH</orgName>,
+							<address>
+								<postCode>52425</postCode>
+								<settlement>Jülich</settlement>,
+								<country>Germany;</country>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="department">Institut für Pharmazeutische und<lb/> Medizinische Chemie</orgName>,
+							<orgName type="institution">Heinrich-Heine-Universität Düsseldorf</orgName>,
+							<address>
+								<addrLine>Universitätsstr. 1</addrLine>,
+								<postCode>40225</postCode>
+								<settlement>Düsseldorf</settlement>,
+								<country>Germany;</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>5</marker>
+							<orgName type="department">Institut Laue-Langevin</orgName>,
+							<address>
+								<postBox>CS 20156</postBox>,
+								<postCode>38042</postCode>
+								<settlement>Grenoble</settlement>,
+								<country>France;</country>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>6</marker>
+							<orgName type="laboratory">Macromolecular Structure Group</orgName>,
+							<orgName type="department">Department of<lb/> Physics</orgName>,
+							<orgName type="institution">University of Osnabrück</orgName>,
+							<address>
+								<addrLine>Barbarastr. 7</addrLine>,
+								<postCode>49076</postCode>
+								<settlement>Osnabrück</settlement>,
+								<country>Germany,</country>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>7</marker>
+							<orgName type="department">Institute of Physical Chemistry</orgName>,
+							<lb/>
+							<orgName type="institution">RWTH Aachen University</orgName>,
+							<address>
+								<addrLine>Landoltweg 2</addrLine>,
+								<postCode>52056</postCode>
+								<settlement>Aachen</settlement>,
+								<country>Germany,</country>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>8</marker>
+							<orgName type="institution">John von Neumann Institute for Computing</orgName>,
+							<lb/>
+							<orgName type="institution">Jülich Supercomputing Centre</orgName>,
+							<orgName type="institution">Institute for Complex Systems-Structural Biochemistry (ICS-6)</orgName>,
+							<lb/>
+							<orgName type="institution">Forschungszentrum Jülich GmbH</orgName>,
+							<address>
+								<addrLine>Wilhelm-Johnen-Str.</addrLine>,
+								<postCode>52425</postCode>
+								<settlement>Jülich</settlement>,
+								<country>Germany;</country>
+							</address>
+						</affiliation>
+
+				        <affiliation>
+							<orgName type="department">Department<lb/> of Bioengineering and Therapeutic Sciences</orgName>,
+							<orgName type="institution">University of California</orgName>,
+							<address>
+								<addrLine>San Francisco</addrLine>,
+								<addrLine>Mission Bay Byers Hall</addrLine>,
+							<lb/>
+								<addrLine>1700 4th Street</addrLine>,
+								<settlement>San Francisco</settlement>,
+								<region>CA</region>
+								<postCode>94143</postCode>,
+								<country>USA</country>;
+							</address>
+						</affiliation>
+
+					<affiliation>
+							<orgName type="institution">Geomatys</orgName>,
+							<address>
+								<addrLine>1000 Avenue Agropolis</addrLine>,
+								<postCode>34000</postCode>
+							<lb/>
+								<settlement>Montpellier</settlement>,
+								<country>France.</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

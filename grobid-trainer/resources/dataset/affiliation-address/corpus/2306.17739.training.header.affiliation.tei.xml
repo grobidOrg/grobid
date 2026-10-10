@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Department of Physics</orgName> and
+							<orgName type="laboratory">Beijing Key Laboratory of Opto-electronic Functional Materials &amp; Micro-nano Devices</orgName>,
+							<lb/>
+							<orgName type="institution">Renmin University of China</orgName>,
+							<address>
+								<settlement>Beijing</settlement>
+								<postCode>100872</postCode>,
+								<country>China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="laboratory">Key Laboratory of Quantum State Construction and Manipulation (Ministry of Education)</orgName>,
+							<lb/>
+							<orgName type="institution">Renmin University of China</orgName>,
+							<address>
+								<settlement>Beijing</settlement>,
+								<postCode>100872</postCode>,
+								<country>China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Theoretical Division and Center for Integrated Nanotechnologies</orgName>,
+							<lb/>
+							<orgName type="institution">Los Alamos National Laboratory</orgName>,
+							<address>
+								<settlement>Los Alamos</settlement>,
+								<region>New Mexico</region>
+								<postCode>87545</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="department">Department of Physics &amp; Astronomy</orgName>,
+							<orgName type="department">Rice Center for Quantum Materials</orgName>,
+							<orgName type="institution">Rice University</orgName>,
+							<address>
+								<settlement>Houston</settlement>,
+								<region>Texas</region>
+								<postCode>77005</postCode>,
+								<country>USA</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

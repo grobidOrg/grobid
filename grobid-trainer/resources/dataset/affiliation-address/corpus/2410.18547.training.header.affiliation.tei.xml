@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Department of Physics and Astronomy</orgName>,
+							<orgName type="institution">Aarhus University</orgName>,
+							<address>
+								<postCode>DK-8000</postCode>
+								<settlement>Aarhus C</settlement>,
+								<country>Denmark</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">Max Planck Institute for the Structure and Dynamics of Matter and<lb/> Center for Free-Electron Laser Science</orgName>,
+							<address>
+								<settlement>Hamburg</settlement>
+								<postCode>22761</postCode>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Center for Computational Quantum Physics (CCQ)</orgName>,
+							<lb/>
+							<orgName type="institution">The Flatiron Institute</orgName>,
+							<address>
+								<settlement>New York</settlement>,
+								<region>New York</region>
+								<postCode>10010</postCode>,
+								<country>USA</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

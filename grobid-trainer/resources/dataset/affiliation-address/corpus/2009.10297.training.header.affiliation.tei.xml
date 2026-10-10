@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="laboratory">SKLSDE Lab</orgName>,
+							<orgName type="institution">Beihang University</orgName>;
+							<orgName type="institution">Beijing Advanced Innovation Center for Big Data and Brain Computing</orgName>
+							<lb/>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">Sun Yat-sen University</orgName>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>3</marker>
+					<orgName type="institution">Peking University</orgName>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="institution">Microsoft</orgName>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

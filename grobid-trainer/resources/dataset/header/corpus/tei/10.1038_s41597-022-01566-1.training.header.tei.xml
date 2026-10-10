@@ -8,7 +8,11 @@
 
 	<page>1<lb/></page>
 
-	<reference>Scientific Data |<lb/> (2022) 9:450 | https://doi.org/10.1038/s41597-022-01566-1<lb/> www.nature.com/scientificdata<lb/></reference>
+	<reference>Scientific Data |<lb/> (2022) 9:450 |</reference>
+
+	<idno>https://doi.org/10.1038/s41597-022-01566-1<lb/></idno>
+
+	<ptr type="web">www.nature.com/scientificdata<lb/></ptr>
 
 	<docTitle>
 	<titlePart>Mapping hydrologic alteration and<lb/> ecological consequences in stream<lb/> reaches of the conterminous United States<lb/></titlePart>
@@ -41,9 +45,9 @@
 	✉ e-mail:
 	<email>Ryan_McManamay@baylor.edu<lb/></email>
 
-	<note type="docType">Data DeScRiptoR</note>
+	<note type="doctype">Data DeScRiptoR</note>
 
-	<note type="docType">opeN<lb/></note>
+	<note type="doctype">opeN<lb/></note>
 
 	<note type="submission">Received: 8 February 2022; Accepted: 13 July 2022;<lb/></note>
 

@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="institution">𝑎 Baylor University</orgName>,
+							<lb/>
+							<address>
+								<settlement>Waco</settlement>,
+								<region>TX</region>,
+								<country>USA</country>
+							<lb/>
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="institution">𝑏 The Citadel</orgName>,
+							<lb/>
+							<address>
+								<settlement>Charleston</settlement>,
+								<region>SC</region>,
+								<country>USA</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

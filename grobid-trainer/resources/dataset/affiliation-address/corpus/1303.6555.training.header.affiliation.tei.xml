@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">Department of Mathematics</orgName>
+							<lb/>
+							<orgName type="institution">University of Florida<lb/> Gainesville</orgName>,
+							<address>
+								<region>FL</region>
+								<postCode>32611</postCode>
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="department">Department of Computer Science</orgName>
+							<lb/>
+							<orgName type="institution">University of Kentucky</orgName>,
+							<lb/>
+							<address>
+								<settlement>Lexington</settlement>,
+								<region>KY</region>
+								<postCode>40506</postCode>
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="department">Department of Mathematics</orgName>
+							<lb/>
+							<orgName type="institution">University of California at San Diego</orgName>,
+							<lb/>
+							<address>
+								<addrLine>La Jolla</addrLine>,
+								<region>CA</region>
+								<postCode>92903</postCode>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

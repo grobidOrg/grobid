@@ -1,0 +1,55 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="institution">Institut für Angewandte Mathematik</orgName>,
+							<orgName type="institution">Universität Bonn</orgName>,
+							<address>
+								<addrLine>Wegelerstr. 6</addrLine>,
+								<postCode>D-<lb/>53115</postCode>
+								<settlement>Bonn (</settlement>
+								<country>Germany</country>);
+							</address>
+							<orgName type="institution">SFB 611</orgName>,
+							<orgName type="laboratory">BiBoS; CERFIM (Locarno)</orgName>;
+							<orgName type="institution">Acc. Arch. (USI)</orgName>,
+							<lb/>
+						</affiliation>
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">Institute of Mathematics</orgName>,
+							<orgName type="institution">Uzbekistan Academy of Science</orgName>,
+							<address>
+								<addrLine>F. Hodjaev str. 29</addrLine>,
+							<lb/>
+								<postCode>700143</postCode>,
+								<settlement>Tashkent</settlement>
+								(<country>Uzbekistan</country>),
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="institution">Institute of Mathematics</orgName>,
+							<orgName type="institution">Uzbekistan Academy of Science</orgName>,
+							<address>
+								<addrLine>F. Hodjaev str. 29</addrLine>,
+							<lb/>
+								<postCode>700143</postCode>,
+								<settlement>Tashkent</settlement> (
+								<country>Uzbekistan</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

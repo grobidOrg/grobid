@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="laboratory">Joseph Henry Laboratories</orgName>:
+							<orgName type="department">Department of Physics</orgName>,
+							<lb/>
+							<orgName type="institution">Princeton University</orgName>,
+							<address>
+								<settlement>Princeton</settlement>,
+								<region>NJ</region>
+								<postCode>08544</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="department">Princeton Institute for the Science and Technology of Materials</orgName>,
+							<lb/>
+							<orgName type="department">School of Engineering and Applied Science</orgName>,
+							<orgName type="institution">Princeton University</orgName>,
+							<address>
+								<settlement>Princeton</settlement>
+								<region>NJ</region>
+								<postCode>08544</postCode>,
+								<country>USA</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

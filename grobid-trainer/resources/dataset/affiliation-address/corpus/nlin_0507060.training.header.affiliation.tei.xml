@@ -1,0 +1,24 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">Institute of Computer Science</orgName>,
+							<orgName type="institution">Udmurt State University<lb/> 1</orgName>,
+							<address>
+								<addrLine>Universitetskaya str.</addrLine>,
+								<postCode>426034</postCode>
+								<settlement>Izhevsk</settlement>,
+								<country>Russia</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

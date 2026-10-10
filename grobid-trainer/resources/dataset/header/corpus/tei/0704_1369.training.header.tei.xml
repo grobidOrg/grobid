@@ -11,8 +11,17 @@
 	<date>11 Apr 2007<lb/></date>
 
 	<docTitle>
-	<titlePart>Double Helicity Asymmetry of Inclusive π 0<lb/> Production in Polarized pp Collisions at<lb/> √<lb/> s = 62.4 GeV<lb/> K. Aoki for the PHENIX Collaboration<lb/></titlePart>
+	<titlePart>Double Helicity Asymmetry of Inclusive π 0<lb/> Production in Polarized pp Collisions at<lb/> √<lb/> s = 62.4 GeV<lb/></titlePart>
 	</docTitle>
+
+    <!-- we might want to revisit this -->
+    <byline>
+        <docAuthor>K. Aoki</docAuthor>
+    </byline>
+
+    for the
+
+    <note type="group">PHENIX Collaboration<lb/></note>
 
 	<byline>
 	<affiliation>Department of Physics, Kyoto University,</affiliation>

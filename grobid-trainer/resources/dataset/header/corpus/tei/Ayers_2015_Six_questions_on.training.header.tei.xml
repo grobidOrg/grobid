@@ -69,10 +69,10 @@
 	<address>Liverpool L69 7ZD, United Kingdom<lb/></address>
 
 	<byline>
-	<affiliation>j Chemistry Department, University at Bu↵alo,</affiliation>
+	<affiliation>j Chemistry Department, University at Bu↵alo, SUNY,</affiliation>
 	</byline>
 
-	<address>SUNY, Bu↵alo, New York 14260-3000, United States<lb/></address>
+	<address>Bu↵alo, New York 14260-3000, United States<lb/></address>
 
 	<byline>
 	<affiliation>k CNR-ISTM Istituto di Scienze e Tecnologie Molecolari,</affiliation>
@@ -172,7 +172,11 @@
 	⇤ Corresponding author<lb/> Email address:
 	<email>silvi@lct.jussieu.fr</email>
 
-	(Bernard Silvi)<lb/>
+	(
+	<byline>
+	<docAuthor>Bernard Silvi</docAuthor>
+	</byline>
+	)<lb/>
 	<note type="submission">Preprint submitted to Computational and Theoretical Chemistry<lb/></note> 
 
 	<date>September 24, 2014</date>

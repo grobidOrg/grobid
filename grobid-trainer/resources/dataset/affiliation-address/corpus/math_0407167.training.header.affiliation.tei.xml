@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">Mathematics Division</orgName>,
+							<orgName type="institution">National Center for Theoretical Sciences at Taipei</orgName>
+							<lb/>
+						</affiliation>
+							
+						<affiliation>
+							<marker>*</marker>
+							<orgName type="department">Department of Mathematics</orgName>,
+							<orgName type="institution">National Taiwan University</orgName>,
+							<address>
+								<settlement>Taipei</settlement>
+								<postCode>10617</postCode>,
+								<country>Taiwan</country>.
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>†</marker>
+							<orgName type="department">Member of Mathematics Division</orgName>,
+							<orgName type="institution">National Center for Theoretical Sciences at Taipei</orgName>.
+							<lb/>
+						</affiliation>
+							
+						<affiliation>
+							<marker>‡</marker>
+							<orgName type="department">Department of Marketing and Logistics</orgName>,
+							<orgName type="institution">Chung Kuo Institute of Technology</orgName>,
+							<address>
+								<settlement>Taipei</settlement>
+								<postCode>116</postCode>,
+								<country>Taiwan</country>.
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>§</marker>
+							<orgName type="department">Department of Applied Mathematics</orgName>,
+							<orgName type="institution">National Dong Hwa University</orgName>,
+							<address>
+								<settlement>Hualien</settlement>
+								<postCode>974</postCode>,
+								<country>Taiwan</country>.
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>¶</marker>
+							<orgName type="department">Department of Mathematics</orgName>,
+							<orgName type="institution">National Central University</orgName>,
+							<address>
+								<settlement>Chungli</settlement>
+								<postCode>32054</postCode>,
+								<country>Taiwan</country>.
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

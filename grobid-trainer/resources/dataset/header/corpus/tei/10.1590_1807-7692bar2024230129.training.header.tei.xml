@@ -81,8 +81,7 @@
 	Keywords:<lb/>
 	<keyword>coopetition; multisided platform; value<lb/> creation; value configuration;<lb/> value appropriation<lb/></keyword>
 
-	JEL Code:<lb/>
-	<keyword>M10, M21, P13<lb/></keyword>
+	<keyword>JEL Code:<lb/> M10, M21, P13<lb/></keyword>
 
 	<note type="submission">Received:<lb/> August 30, 2023.<lb/> This paper was with the authors for two revisions<lb/> Accepted:<lb/> March 05, 2024.<lb/></note>
 
@@ -141,9 +140,8 @@
 	<address>Brazil</address>
 
 	)<lb/> Reviewers:<lb/>
-	<byline>
-	<docAuthor>Alexandre Borba da Silveira<lb/></docAuthor>
-	</byline>
+	<!-- check: reviewer labelled as editor, like the editors and editorial assistants of this file -->
+	<editor>Alexandre Borba da Silveira<lb/></editor>
 
 	(
 	<byline>
@@ -195,7 +193,7 @@
 
 	<idno>DOI: https://doi.org/10.1590/1807-7692bar2024230099<lb/></idno>
 
-	<note type="doctype">Special issue</note> on: Coopetition Authors<lb/>
+	<note type="doctype">Special issue on: Coopetition</note> Authors<lb/>
 
 	<byline>
 	<docAuthor>Álvaro Antônio Bueno de Camargo<lb/></docAuthor>

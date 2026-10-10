@@ -1,0 +1,847 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Institute for Astronomy</orgName>,
+							<orgName type="institution">University of Hawai'i</orgName>,
+							<address>
+								<addrLine>2680 Woodlawn Drive</addrLine>,
+								<settlement>Honolulu</settlement>,
+								<region>HI</region>
+								<postCode>96822</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="department">Division of Geological and Planetary Sciences</orgName>,
+							<address>
+								<addrLine>1200 E California Blvd</addrLine>,
+								<settlement>Pasadena</settlement>,
+								<region>CA</region>,
+								<postCode>91125</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Department of Astronomy</orgName>,
+							<orgName type="institution">California Institute of Technology</orgName>,
+							<address>
+								<settlement>Pasadena</settlement>,
+								<region>CA</region>
+								<postCode>91125</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="laboratory">Jet Propulsion Laboratory</orgName>,
+							<orgName type="institution">California Institute of Technology</orgName>,
+							<address>
+								<addrLine>4800 Oak Grove Drive</addrLine>,
+								<settlement>Pasadena</settlement>,
+								<region>CA</region>
+								<postCode>91109</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>5</marker>
+							<orgName type="institution">Instituto de Astrofísica de Canarias (IAC)</orgName>,
+							<address>
+								<addrLine>Calle Vía Láctea s/n</addrLine>,
+								<postCode>38205</postCode>
+								<addrLine>La Laguna</addrLine>,
+								<settlement>Tenerife</settlement>,
+								<country>Spain</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>6</marker>
+							<orgName type="department">Department of Astronomy</orgName>,
+							<orgName type="institution">University of California Berkeley</orgName>,
+							<address>
+								<settlement>Berkeley</settlement>
+								<region>CA</region>
+								<postCode>94720</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>7</marker>
+							<orgName type="department">Centre for Astrophysics</orgName>,
+							<orgName type="institution">University of Southern Queensland</orgName>,
+							<address>
+								<settlement>Toowoomba</settlement>,
+								<region>QLD</region>,
+								<country>Australia</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>8</marker>
+							<orgName type="institution">NASA Exoplanet Science Institute/Caltech-IPAC</orgName>,
+							<address>
+								<addrLine>MC 314-6</addrLine>,
+								<addrLine>1200 E California Blvd</addrLine>,
+								<settlement>Pasadena</settlement>,
+								<region>CA</region>
+								<postCode>91125</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>9</marker>
+							<orgName type="department">Department of the Geophysical Sciences</orgName>,
+							<orgName type="institution">University of Chicago</orgName>,
+							<address>
+								<addrLine>5734 South Ellis Ave.</addrLine>,
+								<settlement>Chicago</settlement>,
+								<region>IL</region>
+								<postCode>60637</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>10</marker>
+							<orgName type="department">Centre for Planetary Sciences</orgName>,
+							<orgName type="institution">University of Toronto</orgName>,
+							<address>
+								<addrLine>1265 Military Trail</addrLine>,
+								<settlement>Toronto</settlement>,
+								<region>ON</region>,
+								<postCode>M1C 1A4</postCode>,
+								<country>Canada</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>11</marker>
+							<orgName type="department">Department of Astronomy and Astrophysics</orgName>,
+							<orgName type="institution">University of Chicago</orgName>,
+							<address>
+								<settlement>Chicago</settlement>,
+								<region>IL</region>
+								<postCode>60637</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>12</marker>
+							<orgName type="department">Department of Physics &amp; Astronomy</orgName>,
+							<orgName type="institution">University of California Los Angeles</orgName>,
+							<address>
+								<settlement>Los Angeles</settlement>,
+								<region>CA</region>
+								<postCode>90095</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>13</marker>
+							<orgName type="department">Department of Physics and Astronomy</orgName>,
+							<orgName type="institution">University of Notre Dame</orgName>,
+							<address>
+								<settlement>Notre Dame</settlement>,
+								<region>IN</region>
+								<postCode>46556</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>14</marker>
+							<orgName type="department">Sydney Institute for Astronomy (SIfA)</orgName>,
+							<orgName type="department">School of Physics</orgName>,
+							<orgName type="institution">University of Sydney</orgName>,
+							<address>
+								<region>NSW</region>
+								<postCode>2006</postCode>,
+								<country>Australia</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>15</marker>
+							<orgName type="department">Anton Pannekoek Institute for Astronomy</orgName>,
+							<orgName type="institution">University of Amsterdam</orgName>,
+							<address>
+								<addrLine>Science Park 904</addrLine>,
+								<postCode>1098 XH</postCode>
+								<settlement>Amsterdam</settlement>,
+								<country>The Netherlands</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>16</marker>
+							<orgName type="department">Department of Earth and Space Science</orgName>,
+							<orgName type="institution">Osaka University</orgName>,
+							<address>
+								<settlement>Osaka</settlement>
+								<postCode>560-0043</postCode>,
+								<country>Japan</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>17</marker>
+							<orgName type="institution">Gemini Observatory/NSF's NOIRLab</orgName>,
+							<address>
+								<addrLine>670 N. A'ohoku Place</addrLine>,
+								<settlement>Hilo</settlement>,
+								<region>HI</region>
+								<postCode>96720</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>18</marker>
+							<orgName type="department">Science Fellow</orgName>,
+							<address>
+								<settlement>Gemini North</settlement>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>19</marker>
+							<orgName type="department">Department of Geophysical Sciences</orgName>,
+							<orgName type="institution">University of Chicago</orgName>,
+							<address>
+								<settlement>Chicago</settlement>,
+								<region>IL</region>
+								<postCode>60637</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>20</marker>
+							<orgName type="laboratory">Jet Propulsion Laboratory</orgName>,
+							<orgName type="institution">California Institute of Technology</orgName>,
+							<address>
+								<settlement>Pasadena</settlement>,
+								<region>CA</region>
+								<postCode>91109</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>21</marker>
+							<orgName type="department">Division of Geological and Planetary Sciences</orgName>,
+							<orgName type="institution">California Institute of Technology</orgName>
+							<lb/>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>22</marker>
+							<orgName type="department">Department of Earth Sciences</orgName>,
+							<orgName type="institution">University of Hawai'i at Mänoa</orgName>,
+							<address>
+								<addrLine>1680 East-West Road</addrLine>,
+								<settlement>Honolulu</settlement>,
+								<region>HI</region>
+								<postCode>96822</postCode>
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>23</marker>
+							<orgName type="department">Department of Astronomy &amp; Astrophysics</orgName>,
+							<orgName type="institution">University of Chicago</orgName>,
+							<address>
+								<settlement>Chicago</settlement>,
+								<region>IL</region>
+								<postCode>60637</postCode>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>24</marker>
+							<orgName type="department">Department of Astrophysical Sciences</orgName>,
+							<orgName type="institution">Princeton University</orgName>,
+							<address>
+								<addrLine>4 Ivy Lane</addrLine>,
+								<settlement>Princeton</settlement>,
+								<region>NJ</region>
+								<postCode>08544</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>25</marker>
+							<orgName type="department">Department of Physics &amp; Astronomy</orgName>,
+							<orgName type="institution">The University of California</orgName>,
+							<address>
+								<settlement>Irvine</settlement>,
+								<settlement>Irvine</settlement>,
+								<region>CA</region>
+								<postCode>92697</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>26</marker>
+							<orgName type="department">Department of Physics &amp; Astronomy</orgName>,
+							<orgName type="institution">University of California Irvine</orgName>,
+							<address>
+								<settlement>Irvine</settlement>,
+								<region>CA</region>
+								<postCode>92697</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+				   <affiliation>
+					<marker>27</marker>
+							<orgName type="department">Department of Earth, Atmospheric and Planetary Sciences</orgName>,
+							<orgName type="institution">Massachusetts Institute of Technology</orgName>,
+							<address>
+								<settlement>Cambridge</settlement>,
+								<region>MA</region>
+								<postCode>02139</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>28</marker>
+							<orgName type="institution">Kavli Institute for Astrophysics and Space Research</orgName>,
+							<orgName type="institution">Massachusetts Institute of Technology</orgName>,
+							<address>
+								<settlement>Cambridge</settlement>,
+								<region>MA</region>
+								<postCode>02139</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>29</marker>
+							<orgName type="institution">NASA Hubble</orgName>
+						</affiliation>
+							
+
+					<affiliation>
+							<marker>30</marker>
+							<orgName type="department">Department of Physics and Astronomy</orgName>,
+							<orgName type="institution">University of Kansas</orgName>,
+							<address>
+								<settlement>Lawrence</settlement>,
+								<region>KS</region>
+								<postCode>66045</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>31</marker>
+							<orgName type="department">Center for Astrophysics</orgName>
+							<orgName type="institution">| Harvard &amp; Smithsonian</orgName>,
+							<address>
+								<addrLine>60 Garden Street</addrLine>,
+								<settlement>Cambridge</settlement>,
+								<region>MA</region>
+								<postCode>02138</postCode>,
+								<country>USA</country>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>32</marker>
+							<orgName type="institution">University of California Observatories University of California</orgName>,
+							<address>
+								<addrLine>Santa Cruz 1156 High St</addrLine>,
+								<settlement>Santa Cruz</settlement>,
+								<region>CA</region>
+								<postCode>95064</postCode>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>33</marker>
+							<orgName type="institution">Caltech Optical Observatories</orgName>,
+							<address>
+								<settlement>Pasadena</settlement>,
+								<region>CA</region>,
+								<postCode>91125</postCode>,
+								<country>USA<lb/></country>
+							</address>
+						</affiliation>
+
+
+						<affiliation>
+						<marker>34 </marker>
+				<orgName type="institution">W. M. Keck Observatory</orgName>,
+					<address>
+					<addrLine>65-1120 Mamalahoa Hwy</addrLine>, 
+					<settlement>Waimea</settlement>, 
+					<region>HI </region>
+					<postCode>96743<lb/></postCode>
+					</address>
+						</affiliation>
+
+
+						<affiliation>
+						<marker>35 </marker>
+					<orgName type="department">Department of Physics &amp; Astronomy</orgName>, 
+				<orgName type="institution">University of Kansas</orgName>,
+					<address>
+					<addrLine>1082 Malott,1251 Wescoe Hall Dr.</addrLine>, 
+					<settlement>Lawrence</settlement>, 
+					<region> KS </region>
+					<postCode>66045</postCode>, 
+					<country> USA<lb/></country>
+					</address>
+						</affiliation>
+
+
+					<affiliation>
+					<marker>36 </marker>
+				<orgName type="laboratory">Space Sciences Laboratory</orgName>, 
+			<orgName type="institution">University of California Berkeley</orgName>, 
+				<address>
+				<settlement>Berkeley</settlement>, 
+				<region>CA </region>
+				<postCode>94720</postCode>, 
+				<country>USA<lb/></country>
+				</address>
+					</affiliation>
+
+
+				<affiliation>
+			<marker>37 </marker>
+			<orgName type="department">Astrophysics &amp; Space Institute</orgName>, 
+		<orgName type="institution">Schmidt Sciences</orgName>, 
+					<address>
+					<settlement>New York</settlement>,
+					<region>NY </region>
+					<postCode>10011</postCode>, 
+					<country>USA<lb/></country>
+					</address>
+				</affiliation>
+
+				<affiliation>
+			<marker>38 </marker>
+			<orgName type="department">School of Mathematical and Physical Sciences</orgName>,
+			<orgName type="institution">Macquarie University</orgName>, 
+			<address>
+			<addrLine>Balaclava Road</addrLine>, 
+			<settlement>North Ryde</settlement>, 
+			<region>NSW </region>
+			<postCode>2109</postCode>, 
+			<country>Australia<lb/></country>
+			</address>
+				</affiliation>
+
+			<affiliation>
+			<marker>39 </marker>
+		<orgName type="department">Department of Astronomy</orgName>, 
+		<orgName type="institution">Tsinghua University</orgName>, 
+			<address>
+			<settlement>Beijing </settlement>
+			<postCode>100084</postCode>, 
+			<country>People's Republic of China<lb/></country>
+			</address>
+			</affiliation>
+
+
+			<affiliation>
+			<marker>40 </marker>
+		<orgName type="department">Department of Astronomy &amp; Astrophysics</orgName>,
+		<orgName type="laboratory">525 Davey Laboratory</orgName>, 
+		<orgName type="institution">Penn State</orgName>, 
+			<address>
+			<addrLine>University Park</addrLine>, 
+			<region>PA</region>, 
+			<postCode>16802</postCode>, 
+			<country>USA<lb/></country>
+			</address>
+			</affiliation>
+
+
+		 <affiliation>
+		<marker>41 </marker>
+		<orgName type="department">Center for Exoplanets and Habitable Worlds</orgName>, 
+		<orgName type="laboratory">525 Davey Laboratory</orgName>, 
+		<orgName type="institution">Penn State</orgName>, 
+		<address>
+		<addrLine>University Park</addrLine>, 
+		<region>PA</region>, 
+		<postCode>16802</postCode>, 
+		<country>USA<lb/></country>
+		</address>
+		 </affiliation>
+
+
+		<affiliation>
+		<marker>42 </marker>
+		<orgName type="department">Penn State Extraterrestrial Intelligence Center</orgName>, 
+		<orgName type="laboratory">525 Davey Laboratory</orgName>, 
+		<orgName type="institution">Penn State</orgName>, 
+		<address>
+		<addrLine>University Park</addrLine>, 
+		<region>PA</region>, 
+		<postCode>16802</postCode>, 
+		<country>USA<lb/></country>
+		</address>
+		</affiliation>
+
+
+		<affiliation>
+		<marker>43 </marker>
+	 <orgName type="institution">Centro de Astrobiología (CSIC-INTA)</orgName>,
+	<orgName type="department">ESAC campus</orgName>, 
+		<address>
+		<addrLine>Camino Bajo del Castillo s/n</addrLine>,
+		<postCode>28692</postCode>
+		<settlement>Villanueva de la Cañada</settlement>, 
+		<region>Madrid</region>, 
+		<country>Spain<lb/></country>
+		</address>
+		</affiliation>
+
+
+		<affiliation>
+		<marker>44 </marker>
+	<orgName type="institution">Institut de Ciències de l'Espai (ICE, CSIC)</orgName>,
+	<orgName type="department">Campus UAB</orgName>, 
+		<address>
+		<addrLine>Can Magrans sn</addrLine>, 
+		<postCode>08193</postCode>
+		<settlement>Bellaterra</settlement>, 
+		<region>Barcelona</region>, 
+		<country>Spain<lb/></country>
+		</address>
+		</affiliation>
+
+		<affiliation>
+		<marker>45 </marker>
+		<orgName type="institution">Institut d'Estudis Espacials de Catalunya (IEEC)</orgName>, 
+		<address>
+		<postCode>08034</postCode>
+		<region>Barcelona</region>, 
+		<country>Spain<lb/></country>
+		</address>
+		</affiliation>
+
+
+	 <affiliation>
+	 <marker>46 </marker>
+	<orgName type="department">Departamento de Astrofísica</orgName>,
+   <orgName type="institution">Universidad de La Laguna (ULL)</orgName>, 
+	<address>
+	<postCode>38206</postCode>
+	<settlement>La Laguna</settlement>,
+	<region>Tenerife</region>,
+	<country>Spain<lb/></country>
+	</address>
+	 </affiliation>
+
+
+     <affiliation>
+	<marker>47</marker>
+    <orgName type="department">Institut für Astrophysik und Geophysik</orgName>, 
+    <orgName type="institution">Georg-August-Universität Göttingen</orgName>, 
+	<address>
+	<addrLine>Friedrich-Hund-Platz 1</addrLine>,
+	<postCode>37077</postCode>
+	<settlement>Göttingen</settlement>,
+	<country>Germany<lb/></country>
+	</address>
+	 </affiliation>
+
+
+	 <affiliation>
+	<marker>48</marker>
+	<orgName type="institution">Hamburger Sternwarte</orgName>, 
+	<address>
+	<addrLine>Gojenbergsweg 112</addrLine>, 
+	<postCode>D-21029 Hamburg</postCode>,
+	<country>Germany<lb/></country>
+	</address>
+	 </affiliation>
+
+
+	<affiliation>
+	<marker>49</marker>
+	<orgName type="department">Departamento de Física de la Tierra y Astrofísica &amp; </orgName>
+	<orgName type="institution">IPARCOS-UCM (Instituto de Física de Partículas y del Cosmos de la UCM),<lb/></orgName>
+	<orgName type="department">Facultad de Ciencias Físicas</orgName>, 
+	<orgName type="institution">Universidad Complutense de Madrid</orgName>,
+	<address>
+	<postCode>28040</postCode>
+	<region>Madrid</region>,
+	<country>Spain<lb/></country>
+	</address>
+	</affiliation>
+
+
+	<affiliation>
+	<marker>50</marker>
+	<orgName type="institution">Western Connecticut State University</orgName>, 
+	<address>
+	<settlement>Danbury</settlement>, 
+	<region>CT</region>, 
+	<postCode>06810<lb/></postCode>
+	</address>
+	</affiliation>
+
+
+	<affiliation>
+	<marker>51</marker>
+	<orgName type="institution">NASA Exoplanet Science Institute/Caltech-IPAC</orgName>, 
+	<address>
+	<addrLine>1200 E. California Blvd.</addrLine>, 
+	<settlement>Pasadena</settlement>,
+	<region>CA</region>
+	<postCode>91125</postCode>,
+	<country>USA<lb/></country>
+	</address>
+	</affiliation>
+
+
+     <affiliation>
+     <marker>52</marker>
+	<orgName type="institution">SETI Institute</orgName>, 
+    <address>
+	<settlement>Mountain View</settlement>, 
+	<region>CA</region>
+	<postCode>94043</postCode>
+	<country>USA</country>/
+	</address>
+
+	<orgName type="institution">NASA Ames Research Center</orgName>, 
+    <address>
+	<settlement>Moffett Field</settlement>, 
+	<postCode>94035</postCode>
+	<region>CA</region>
+	<country>USA<lb/></country>
+	</address>
+	 </affiliation>
+
+
+	<affiliation>
+	<marker>53</marker>
+	<orgName type="laboratory">Astrobiology Research Unit</orgName>, 
+	<orgName type="institution">Université de Liège</orgName>, 
+	<address>
+	<addrLine>19C Allée du 6 Août</addrLine>, 
+	<postCode>4000</postCode>
+	<settlement>Liège</settlement>, 
+	<country>Belgium<lb/></country>
+	</address>
+	</affiliation>
+
+
+	<affiliation>
+	<marker>54</marker>
+	<orgName type="department">Department of Earth, Atmospheric and Planetary Science</orgName>, 
+	<orgName type="institution">Massachusetts Institute of Technology</orgName>, 
+	<address>
+	<addrLine>77 Massachusetts Avenue,<lb/></addrLine>
+	<settlement>Cambridge</settlement>, 
+	<region>MA</region>
+	<postCode>02139</postCode>, 
+	<country>USA<lb/></country>
+	</address>
+	</affiliation>
+
+
+	<affiliation>
+	<marker>55</marker>
+	<orgName type="institution">Instituto de Astrofísica de Canarias (IAC)</orgName>,
+	<address>
+	<addrLine>Calle Vía Láctea s/n</addrLine>, 
+	<postCode>38200</postCode>, 
+	<settlement>La Laguna</settlement>, 
+	<region>Tenerife</region>, 
+	<country>Spain<lb/></country>
+	</address>
+	</affiliation>
+
+	<affiliation>
+	<marker>56</marker>
+	<orgName type="department">Department of Physics and Kavli Institute for Astrophysics and Space Research</orgName>, 
+	<orgName type="institution">Massachusetts Institute of Technology</orgName>, 
+	<address>
+	<settlement>Cambridge</settlement>,
+	<region>MA<lb/></region>
+	<postCode>02139</postCode>, 
+	<country>USA<lb/></country>
+	</address>
+	</affiliation>
+
+
+    <affiliation>
+	<marker>57</marker>
+	<orgName type="institution">Komaba Institute for Science</orgName>, 
+	<orgName type="institution">The University of Tokyo</orgName>, 
+	<address>
+	<addrLine>3-8-1 Komaba</addrLine>, 
+	<settlement>Meguro</settlement>, 
+	<region>Tokyo</region>
+	<postCode>153-8902</postCode>, 
+	<country>Japan<lb/></country>
+	</address>
+	</affiliation>
+
+	<affiliation>
+	<marker>58</marker>
+	<orgName type="institution">Astrobiology Center</orgName>, 
+	<address>
+	<addrLine>2-21-1 Osawa</addrLine>,
+	<settlement>Mitaka</settlement>, 
+	<region>Tokyo</region>
+	<postCode>181-8588</postCode>, 
+	<country>Japan<lb/></country>
+	</address>
+	</affiliation>
+
+
+	<affiliation>
+	<marker>59</marker>
+	<orgName type="institution">Kotizarovci Observatory</orgName>, 
+	<address>
+	<addrLine>Sarsoni 90</addrLine>, 
+	<postCode>51216</postCode>
+	<settlement>Viskovo</settlement>, 
+	<country>Croatia<lb/></country>
+	</address>
+	</affiliation>
+						
+							
+	<affiliation>
+	<marker>60</marker>
+	<orgName type="institution">Center for Astrophysics |Harvard &amp; Smithsonian</orgName>,
+	<address>
+	<addrLine>60 Garden St</addrLine>, 
+	<settlement>Cambridge</settlement>, 
+	<region>MA</region>
+	<postCode>02138</postCode>, 
+	<country>USA<lb/></country>
+	</address>
+	</affiliation>	
+
+	<affiliation>
+	<marker>61</marker>
+	<orgName type="institution">NASA Ames Research Center</orgName>, 
+	<address>
+	<addrLine>Moffett Field</addrLine>, 
+	<region>CA</region>
+	<postCode>94035</postCode>, 
+	<country>USA<lb/></country>
+	</address>
+	</affiliation>
+
+	<affiliation>
+	<marker>62</marker>
+	<orgName type="department">Department of Aeronautics and Astronautics</orgName>, 
+	<orgName type="institution">MIT</orgName>, 
+	<address>
+	<addrLine>77 Massachusetts Avenue</addrLine>,
+	<settlement>Cambridge</settlement>, 
+	<region>MA</region>
+	<postCode>02139</postCode>,
+	<country>USA<lb/></country>
+	</address>
+	</affiliation>
+							
+	<affiliation>
+	<marker>†</marker>
+	<orgName type="institution">NSF Graduate Research Fellow<lb/></orgName>
+	</affiliation>		
+							
+	<affiliation>
+	<marker>‡</marker>
+	<orgName type="institution">NASA FINESST Fellow</orgName>
+	</affiliation> 
+							
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

@@ -1,0 +1,147 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Dipartimento di Fisica e Astronomia</orgName>,
+							<orgName type="institution">Università di Bologna</orgName>,
+							<address>
+								<addrLine>Via Gobetti 93/2</addrLine>,
+								<postCode>I-40129</postCode>
+								<settlement>Bologna</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">INAF -Osservatorio di Astrofisica e Scienza dello Spazio</orgName>,
+							<address>
+								<addrLine>Via P. Gobetti 93/3</addrLine>,
+								<postCode>40129</postCode>
+								<settlement>Bologna</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Leibniz-Institut fur Astrophysik Potsdam (AIP)</orgName>,
+							<address>
+								<addrLine>An der Sternwarte 16</addrLine>,
+								<postCode>D-14482</postCode>
+								<settlement>Potsdam</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="institution">INAF -Osservatorio Astrofisico di Arcetri</orgName>,
+							<address>
+								<addrLine>Largo E. Fermi 5</addrLine>,
+								<postCode>50125</postCode>
+								<settlement>Firenze</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>5</marker>
+							<orgName type="department">School of Physics &amp; Astronomy</orgName>,
+							<orgName type="institution">University of Birmingham</orgName>,
+							<address>
+								<addrLine>Edgbaston</addrLine>,
+								<settlement>Birmingham</settlement>,
+								<postCode>B15 2TT</postCode>,
+								<country>UK</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>6</marker>
+							<orgName type="department">Dipartimento di Fisica</orgName>,
+							<orgName type="department">Sezione di Astronomia</orgName>,
+							<orgName type="institution">Università di Trieste</orgName>,
+							<address>
+								<addrLine>Via G. B. Tiepolo 11</addrLine>,
+								<postCode>34143</postCode>
+								<settlement>Trieste</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>7</marker>
+							<orgName type="institution">INAF -Osservatorio Astronomico di Trieste</orgName>,
+							<address>
+								<addrLine>Via Tiepolo 11</addrLine>,
+								<postCode>34143</postCode>,
+								<settlement>Trieste</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>8</marker>
+							<orgName type="institution">INFN -Sezione di Trieste</orgName>,
+							<address>
+								<addrLine>Via A. Valerio 2</addrLine>,
+								<postCode>34127</postCode>
+								<settlement>Trieste</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>9</marker>
+							<orgName type="laboratory">IFPU</orgName>,
+							<orgName type="department">Institute for the Fundamental Physics of the Universe</orgName>,
+							<address>
+								<addrLine>Via Beirut, 2</addrLine>,
+								<postCode>I-34151</postCode>
+								<settlement>Trieste</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>10</marker>
+							<orgName type="laboratory">LESIA</orgName>,
+							<orgName type="institution">Observatoire de Paris</orgName>,
+							<orgName type="institution">Université PSL</orgName>,
+							<orgName type="institution">CNRS</orgName>,
+							<orgName type="institution">Sorbonne Université</orgName>,
+							<orgName type="institution">Université de Paris</orgName>,
+							<address>
+								<postCode>92195</postCode>
+								<settlement>Meudon</settlement>,
+								<country>France</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

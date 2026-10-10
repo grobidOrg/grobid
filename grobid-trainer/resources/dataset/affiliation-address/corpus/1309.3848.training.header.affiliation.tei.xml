@@ -1,0 +1,24 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="institution">ETH Zurich -Computer Vision Laboratory</orgName>
+							<lb/>
+							<address>
+								<addrLine>Sternwartstrasse 7</addrLine>
+								<postCode>CH -8092</postCode>
+								<settlement>Zurich</settlement>
+								<country>Switzerland</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

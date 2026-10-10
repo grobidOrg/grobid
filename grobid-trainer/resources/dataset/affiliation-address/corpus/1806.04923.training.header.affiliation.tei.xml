@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">Polish Academy of Science<lb/></orgName>
+             <orgName type="institution">Institute of Nuclear Physics</orgName>
+							<lb/>
+							<address>
+								<settlement>Krakow</settlement>,
+								<country>Poland</country>
+							<lb/>
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="institution">Lviv Polytechnic National University</orgName>,
+							<lb/>
+							<address>
+								<addrLine>Kn. Romana 5</addrLine>,
+								<settlement>Lviv</settlement>.
+								<country>Ukraine</country>
+							<lb/>
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="institution">Czestochowa University of Technology</orgName>
+							<lb/>
+							<orgName type="department">Faculty of Electrical Engineering</orgName>,
+							<orgName type="department">Institute of<lb/> Optoelectronics and Measuring Systems<lb/></orgName>
+							<address>
+								<addrLine> Armii Krajowej 17</addrLine>,
+								<settlement>Czestochowa</settlement>,
+								<country>Poland</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

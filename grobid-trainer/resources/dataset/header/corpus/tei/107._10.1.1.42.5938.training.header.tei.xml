@@ -44,7 +44,7 @@
 	<affiliation>Computer Science Department<lb/> University of Southern Maine<lb/></affiliation>
 	</byline>
 
-	<address>96 Falmouth Street<lb/> Portland, Maine 04103 2</address>
+	<address>96 Falmouth Street<lb/> Portland, Maine 04103</address> 2
 
 	Abstract<lb/>
 	<div type="abstract">The function class #P lacks an important closure property: it is not closed under subtraction.<lb/> To remedy this problem, we introduce the function class GapP as a natural alternative to #P.<lb/> GapP is the closure of #P under subtraction, and has all the other useful closure properties<lb/> of #P as well. We show that most previously studied counting classes, including PP, C = P,<lb/> and Mod k P, are \gap-de nable,&quot; i.e., de nable using the values of GapP functions alone. We<lb/> show that there is a smallest gap-de nable class, SPP, which is still large enough to contain<lb/> Few. We also show that SPP consists of exactly those languages low for GapP, and thus SPP<lb/> languages are low for any gap-de nable class. These results unify and improve earlier disparate<lb/> results of Cai &amp; Hemachandra 7] and K obler, Sch oning, Toda, &amp; Tor an 15]. We show further<lb/> that any countable collection of languages is contained in a unique minimumgap-de nable class,<lb/> which implies that the gap-de nable classes form a lattice under inclusion. Subtraction seems<lb/> necessary for this result, since nothing similar is known for the #P-de nable classes.</div>

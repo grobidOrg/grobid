@@ -91,7 +91,7 @@
 							<orgName type="institution">Sana&apos;a University</orgName>,
 							<lb/>
 							<address>
-								<settlemtn>Sana&apos;a</settlemtn>,
+								<settlement>Sana&apos;a</settlement>,
 								<country>Yemen</country>,
 							</address>
 						</affiliation>
@@ -221,7 +221,7 @@
 							<marker>23</marker>
 							<orgName type="institution">King Saud Hospital</orgName>,
 							<address>
-                                <settlment>Unizah</settlment>,
+                                <settlement>Unizah</settlement>,
 								<region>Qaseem</region>,
 								<country>Saudi Arabia</country>,
 							</address>

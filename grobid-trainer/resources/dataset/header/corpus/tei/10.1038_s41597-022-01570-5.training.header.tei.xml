@@ -58,12 +58,16 @@
 
 	Published: xx xx xxxx<lb/> additional information<lb/>
 
-			<!-- is this the availability? -->
-	Supplementary information The online version contains supplementary material available at https://doi.<lb/> org/10.1038/s41597-022-01570-5.<lb/>
+	Supplementary information The online version contains supplementary material available at
+
+    <!-- idno @type="supplementary" would contain the supplementary DOI. Ignored for now  -->
+    <idno type="supplementary">https://doi.<lb/> org/10.1038/s41597-022-01570-5.<lb/></idno>
 
 	Correspondence and requests for materials should be addressed to M.M.<lb/>
 
-	<note type="copyright">Reprints and permissions information is available at www.nature.com/reprints.<lb/> Publisher&apos;s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and<lb/> institutional affiliations.<lb/>Open Access This article is licensed under a Creative Commons Attribution 4.0 International<lb/> License, which permits use, sharing, adaptation, distribution and reproduction in any medium or<lb/> format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Cre-<lb/>ative Commons license, and indicate if changes were made. The images or other third party material in this<lb/> article are included in the article&apos;s Creative Commons license, unless indicated otherwise in a credit line to the<lb/> material. If material is not included in the article&apos;s Creative Commons license and your intended use is not per-<lb/>mitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the<lb/> copyright holder. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.<lb/> © The Author(s) 2022</note>
+	Reprints and permissions information is available at www.nature.com/reprints.<lb/> Publisher&apos;s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and<lb/> institutional affiliations.<lb/>
+
+	<note type="copyright">Open Access This article is licensed under a Creative Commons Attribution 4.0 International<lb/> License, which permits use, sharing, adaptation, distribution and reproduction in any medium or<lb/> format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Cre-<lb/>ative Commons license, and indicate if changes were made. The images or other third party material in this<lb/> article are included in the article&apos;s Creative Commons license, unless indicated otherwise in a credit line to the<lb/> material. If material is not included in the article&apos;s Creative Commons license and your intended use is not per-<lb/>mitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the<lb/> copyright holder. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.<lb/> © The Author(s) 2022</note>
 
 		</front>
 	</text>

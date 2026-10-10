@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">Department of Mathematics</orgName>
+							<lb/>
+							<orgName type="institution">University of Massachusetts at Amherst</orgName>
+							<lb/>
+							<address>
+								<settlement>Amherst</settlement>
+								<region>MA</region>
+								<postCode>01002</postCode>,
+								<country>USA</country>
+							<lb/>
+							</address>
+                        </affiliation>
+
+                       <affiliation>
+							<orgName type="department">Miller Institute for Basic Research in Science</orgName> and
+							<orgName type="department">Department of Mathematics</orgName>
+							<lb/>
+							<orgName type="institution">University of California at Berkeley</orgName>
+							<lb/>
+							<address>
+								<settlement>Berkeley</settlement>,
+								<region>CA</region>
+								<postCode>94720</postCode>,
+								<country>USA</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="institution">INFN</orgName>,
+							<orgName type="department">Sezione di Napoli</orgName>,
+							<orgName type="institution">Complesso Universitario di Monte S. Angelo</orgName>,
+							<address>
+								<addrLine>Via Cintia</addrLine>,
+								<addrLine>Edi-<lb/>ficio N'</addrLine>,
+								<postCode>80126</postCode>
+								<settlement>Napoli</settlement>,
+								<country>Italy</country>
+							<lb/>
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="department">Dipartimento di Scienze Fisiche</orgName>,
+							<orgName type="institution">Università Federico II di Napoli</orgName>,
+							<orgName type="institution">Complesso Universitario<lb/> di Monte S. Angelo</orgName>,
+							<address>
+								<addrLine>Via Cintia</addrLine>,
+								<addrLine>Edificio N'</addrLine>,
+								<postCode>80126</postCode>
+								<settlement>Napoli</settlement>,
+								<country>Italy</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

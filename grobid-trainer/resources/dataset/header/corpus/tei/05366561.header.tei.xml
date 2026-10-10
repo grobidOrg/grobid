@@ -15,6 +15,7 @@
 	</byline>
 
 	<byline>
+	<!-- check: two-column layout, the lines of the two affiliations are interleaved -->
 	<affiliation>Information school<lb/> 706 Institute<lb/> Beijing Forestry University<lb/></affiliation>
 	</byline>
 		
@@ -22,7 +23,7 @@
 	<affiliation>China Aerospace Science and Industry Corporation<lb/></affiliation>
 	</byline>
 
-	<address>Beijing, China<lb/> Beijing, China<lb/></address>
+	<address>Beijing, China<lb/></address> <address>Beijing, China<lb/></address>
 
 	<email>mengw@263.net<lb/></email>
 

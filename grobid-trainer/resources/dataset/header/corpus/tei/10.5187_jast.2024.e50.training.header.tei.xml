@@ -47,24 +47,24 @@
 		<front>
 <lb/>
 	<title level="j">JAST (Journal of Animal Science and Technology)</title>
-			
+
 	TITLE PAGE<lb/>
 	Upload this completed form to website with submission<lb/> ARTICLE INFORMATION<lb/> Fill in information in each box below<lb/>
 
-	Article Type<lb/> 
+	Article Type<lb/>
 			<note type="doctype">Research article<lb/></note>
 
-	Article Title (within 20 words without<lb/> abbreviations)<lb/> 
+	Article Title (within 20 words without<lb/> abbreviations)<lb/>
 			<docTitle>
 	<titlePart>Dietary coated copper and zinc improve growth performance by modulating immune<lb/> responses and fecal microbiota of weaned pigs<lb/></titlePart>
 	</docTitle>
-			
+
 			Running Title (within 10 words)<lb/> Effects of dietary coated copper and zinc in weaned pigs<lb/> Author<lb/>
 	<byline>
 	<docAuthor>Jinuk Nam1#, Hyunjin Kyoung1#, Yonghee Kim# Jinho Cho2#, Jinmu Ahn1, Kimoon<lb/> Kim1, Ikcheol Shin1, Sheena Kim 3, Jin Tae Kim 4, Sung Woo Jung 5, Hyeun Bum<lb/> Kim 3*, and Minho Song 1*<lb/></docAuthor>
 	</byline>
-Affiliation<lb/> 
-			
+Affiliation<lb/>
+
 	<byline>
 	<affiliation>1 Division of Animal and Dairy Science, Chungnam National University,</affiliation>
 	</byline>
@@ -87,121 +87,121 @@ Affiliation<lb/>
 		<affiliation>4 AGRANCO Corp.,</affiliation>
 	</byline>
 			<address>Florida 33134, United States of America<lb/></address>
-			
+
 	<byline>
 	<affiliation>5 ACC Inc.,</affiliation>
 	</byline>
 
 	<address>Seongnam 13647, Republic of Korea<lb/></address>
 
-	ORCID (for more information, please<lb/> visit https://orcid.org)<lb/> 
-			
+	ORCID (for more information, please<lb/> visit https://orcid.org)<lb/>
+
 			<byline>
 	<docAuthor>Jinuk Nam</docAuthor>
 			</byline>
 		 (
-			<idno>https://orcid.org/0009-0003-8696-5697</idno>
-			)<lb/> 
-			
+			<idno type="orcid">https://orcid.org/0009-0003-8696-5697</idno>
+			)<lb/>
+
 			<byline>
 	<docAuthor>Hyunjin Kyoung</docAuthor>
 			</byline>
 		 (
-			<idno>https://orcid.org/0000-0001-5742-5374</idno>
-		)<lb/> 
-			
+			<idno type="orcid">https://orcid.org/0000-0001-5742-5374</idno>
+		)<lb/>
+
 			<byline>
 	<docAuthor>Yonghee Kim</docAuthor>
 			</byline>
 		(
-			<idno>https://orcid.org/0009-0009-8334-3706</idno>
-		)<lb/> 
-			
+			<idno type="orcid">https://orcid.org/0009-0009-8334-3706</idno>
+		)<lb/>
+
 			<byline>
 	<docAuthor>Jinho Cho</docAuthor>
 			</byline>
 		 (
-			<idno>https://orcid.org/0000-0001-7151-0778</idno>
-		)<lb/> 
-			
+			<idno type="orcid">https://orcid.org/0000-0001-7151-0778</idno>
+		)<lb/>
+
 			<byline>
 	<docAuthor>Jinmu Ahn</docAuthor>
 			</byline>
 		 (
-			<idno>https://orcid.org/0009-0005-1490-2974</idno>
-		)<lb/> 
-			
+			<idno type="orcid">https://orcid.org/0009-0005-1490-2974</idno>
+		)<lb/>
+
 			<byline>
 	<docAuthor>Kimoon Kim</docAuthor>
 			</byline>
 		 (
-			<idno>https://orcid.org/0009-0008-2988-5179</idno>
-		)<lb/> 
-			
+			<idno type="orcid">https://orcid.org/0009-0008-2988-5179</idno>
+		)<lb/>
+
 			<byline>
 	<docAuthor>Ikcheol Shin</docAuthor>
 			</byline>
 		 (
-			<idno>https://orcid.org/0009-0003-0072-5626</idno>
-		)<lb/> 
-			
+			<idno type="orcid">https://orcid.org/0009-0003-0072-5626</idno>
+		)<lb/>
+
 			<byline>
 	<docAuthor>Sheena Kim</docAuthor>
 			</byline>
 		 (
-			<idno>https://orcid.org/0000-0002-5410-1347</idno>
-		)<lb/> 
-			
+			<idno type="orcid">https://orcid.org/0000-0002-5410-1347</idno>
+		)<lb/>
+
 			<byline>
 	<docAuthor>Jin Tae Kim</docAuthor>
 			</byline>
 		 (
-			<idno>https://orcid.org/0009-0007-4964-2994</idno>
-		)<lb/> 
-			
+			<idno type="orcid">https://orcid.org/0009-0007-4964-2994</idno>
+		)<lb/>
+
 			<byline>
 	<docAuthor>Sung Woo Jung</docAuthor>
 			</byline>
 		 (
-			<idno>https://orcid.org/0009-0007-5587-8864</idno>
-		)<lb/> 
-			
+			<idno type="orcid">https://orcid.org/0009-0007-5587-8864</idno>
+		)<lb/>
+
 			<byline>
 	<docAuthor>Hyeun Bum Kim</docAuthor>
 			</byline>
 		 (
-			<idno>https://orcid.org/0000-0003-1366-6090</idno>
-		)<lb/> 
-			
+			<idno type="orcid">https://orcid.org/0000-0003-1366-6090</idno>
+		)<lb/>
+
 			<byline>
 	<docAuthor>Minho Song</docAuthor>
 			</byline>
 		 (
-			<idno>https://orcid.org/0000-0002-4515-5212</idno>
-		)<lb/> 
-			
-			Competing interests<lb/> 
-			
-			<div type="conflict">No potential conflict of interest relevant to this article was reported.<lb/></div>
-			
-			Funding sources<lb/> State funding sources (grants, funding<lb/> sources, equipment, and supplies).<lb/> Include name and number of grant if<lb/> available.<lb/> 
-			
-			<div type="funding">This work was carried out with the support of &quot;Cooperative Research Program for<lb/> Agriculture Science and Technology Development (RS-2023-00230754), Rural<lb/> Development Administration, Republic of Korea.<lb/></div>
-			
+			<idno type="orcid">https://orcid.org/0000-0002-4515-5212</idno>
+		)<lb/>
+
+			Competing interests<lb/>
+
+			<note type="conflict">No potential conflict of interest relevant to this article was reported.<lb/></note>
+
+			Funding sources<lb/> State funding sources (grants, funding<lb/> sources, equipment, and supplies).<lb/> Include name and number of grant if<lb/> available.<lb/>
+
+			<note type="funding">This work was carried out with the support of &quot;Cooperative Research Program for<lb/> Agriculture Science and Technology Development (RS-2023-00230754), Rural<lb/> Development Administration, Republic of Korea.<lb/></note>
+
 			Acknowledgements<lb/> Not applicable.<lb/>
 
-	Availability of data and material<lb/> 
-			
-			<div type="availability">Upon reasonable request, the datasets of this study can be available from the<lb/> corresponding author.<lb/></div> 
-			
-			Authors&apos; contributions<lb/> Please specify the authors&apos; role using<lb/> this form.<lb/> 
-			
-			<div type="contribution">Conceptualization: Nam J, Kyoung H, Kim Y, Cho J, Kim HB, Song M<lb/> Data curation: Nam J, Kyoung H, Kim Y, Cho J, Kim HB, Song M<lb/> Formal analysis: Nam J, Ahn J, Kim K, Shin I, Kim S, Kim JT, Jung SW<lb/> Methodology: Nam J, Kyoung H, Kim Y, Cho J<lb/> Software: Nam J, Kyoun H, Kim Y, Cho J<lb/> Validation: Kyoung H, Kim Y, Cho J, Kim HB, Song M<lb/> Investigation: Nam J, Kyoung H, Kim Y, Cho J<lb/> Writing -original draft: Nam J, Kyoung H, Kim Y, Cho J<lb/> Writing -review &amp; editing: Nam J, Kyoung H, Cho J, Kim Y, Ahn J, Kim K, Shin I,<lb/> Kim S, Kim JT, Jung SW, Kim HB, Song M<lb/></div>
+	Availability of data and material<lb/>
+
+			<note type="availability">Upon reasonable request, the datasets of this study can be available from the<lb/> corresponding author.<lb/></note>
+
+			Authors&apos; contributions<lb/> Please specify the authors&apos; role using<lb/> this form.<lb/>
+
+    <note type="contribution">Conceptualization: Nam J, Kyoung H, Kim Y, Cho J, Kim HB, Song M<lb/> Data curation: Nam J, Kyoung H, Kim Y, Cho J, Kim HB, Song M<lb/> Formal analysis: Nam J, Ahn J, Kim K, Shin I, Kim S, Kim JT, Jung SW<lb/> Methodology: Nam J, Kyoung H, Kim Y, Cho J<lb/> Software: Nam J, Kyoun H, Kim Y, Cho J<lb/> Validation: Kyoung H, Kim Y, Cho J, Kim HB, Song M<lb/> Investigation: Nam J, Kyoung H, Kim Y, Cho J<lb/> Writing -original draft: Nam J, Kyoung H, Kim Y, Cho J<lb/> Writing -review &amp; editing: Nam J, Kyoung H, Cho J, Kim Y, Ahn J, Kim K, Shin I,<lb/> Kim S, Kim JT, Jung SW, Kim HB, Song M<lb/></note>
 
 	Ethics approval and consent to participate<lb/> The experimental protocol for this study was reviewed and approved by the Institutional Animal Care and Use Committee of Chungnam National University, Daejeon, Republic of Korea. (approval# 202103A-CNU-080)<lb/>
-			
+
 			A C<lb/> C<lb/> E P T E D<lb/>
-	
+
 			CORRESPONDING AUTHOR CONTACT INFORMATION<lb/> For the corresponding author (responsible for<lb/> correspondence, proofreading, and reprints)<lb/> Fill in information in each box below<lb/> First name, middle initial, last name<lb/>
 
 	<byline>
@@ -209,11 +209,13 @@ Affiliation<lb/>
 	</byline>
 
 	Email address -this is where your proofs will be sent<lb/>
-	<email>hbkim@dankook.ac.kr<lb/> mhsong@cnu.ac.kr<lb/></email>
+	<email>hbkim@dankook.ac.kr<lb/></email>
 
-	Secondary Email address<lb/> Address<lb/> Department of
+	<email>mhsong@cnu.ac.kr<lb/></email>
+
+	Secondary Email address<lb/> Address<lb/>
 	<byline>
-	<affiliation>Animal Resources Science, Dankook University,<lb/></affiliation>
+	<affiliation>Department of Animal Resources Science, Dankook University,<lb/></affiliation>
 	</byline>
 
 	<address>Cheonan 31116, Korea.<lb/></address>
@@ -224,10 +226,10 @@ Affiliation<lb/>
 
 	<address>Daejeon 34134, Korea.<lb/></address>
 
-	Cell phone number<lb/> Office phone number<lb/> 
-			
-			<phone>+82-41-550-3653<lb/> +82-42-821-5776<lb/></phone>
-			
+	Cell phone number<lb/> Office phone number<lb/>
+
+			<phone>+82-41-550-3653<lb/></phone> <phone>+82-42-821-5776<lb/></phone>
+
 			Fax number<lb/> A C<lb/> C<lb/> E P T E D<lb/> Abstract (up to 350 words)<lb/>
 	<div type="abstract">In the swine industry, supplementation with high levels of zinc oxide and copper sulfate in the weaner diet could<lb/> be excreted through feces without being normally absorbed in the intestine, resulting in environmental pollution.<lb/> Therefore, the various methods have been proposed to address this issue. The objective of this study was to<lb/> investigate effects of a low dietary dose of coated copper sulfate (CuSO 4 ) and zinc oxide (ZnO) on growth<lb/> performance, frequency of diarrhea, nutrient digestibility, and immune responses of weaned pigs. The four dietary<lb/> treatments were (1) a basal weaner diet based on corn and soybean meal (CON), (2) CON supplemented with<lb/> 2,500 ppm standard ZnO (T1), (3) CON supplemented with 100 mg/kg dietary coated CuSO 4 and 100 mg/kg<lb/> dietary coated ZnO (T2), and (4) CON supplemented with 200 mg/kg dietary coated CuSO 4 and 200 mg/kg dietary<lb/> coated ZnO (T3). Dietary T2 and T3 increased (p &lt; 0.05) the average daily gain for the first two weeks and the<lb/> overall experimental period compared to that with CON. In addition, the groups supplemented with Cu and Zn<lb/> tended to have a decreased (p &lt; 0.10) frequency of diarrhea. Pigs fed dietary T2 and/or T3 had lower (p &lt; 0.10)<lb/> number of white blood cells on day 7 and hematocrit on day 14 compared to those fed CON. However, no<lb/> difference was observed in the number of red blood cells among the dietary treatments. Regarding immune<lb/> responses, dietary T2 decreased (p &lt; 0.10) serum tumor necrosis factor-α on day 7 and increased (p &lt; 0.10)<lb/> immunoglobulin G on day 14 compared with CON. Moreover, pigs fed dietary T2 tended to have increased<lb/> Limosilacatobacilus (p &lt; 0.10). Dietary T3 had higher (p &lt; 0.05) relative abundance of the genus Agathobacter<lb/> compared to those fed CON and dietary T1 and decreased (p &lt; 0.05) genus Terrisporobacter compared to those<lb/> fed dietary T1. These results suggested the supplementation of dietary coated ZnO and CuSO 4 enhanced growth<lb/> performance and modulated immune responses associated with changes in the fecal microbiota composition.<lb/></div>
 

@@ -6,7 +6,7 @@
 	<text xml:lang="en">
 		<front>
 <lb/>
-	<note type="doctype">Scientific RepoRts</note>
+	<title level="j">Scientific RepoRts</title>
 
 	| 6:33321 |
 
@@ -40,12 +40,11 @@
 
 	<note type="doctype">OPEN<lb/></note>
 
+    <!-- Something to check here -->
 	How to cite this article:
-	<reference>Onaga, T. and Shinomoto, S. Emergence of event cascades in inhomogeneous<lb/> networks. Sci. Rep. 6, 33321;</reference>
+	<reference>Onaga, T. and Shinomoto, S. Emergence of event cascades in inhomogeneous<lb/> networks. Sci. Rep. 6, 33321; doi: 10.1038/srep33321 (2016).<lb/></reference>
 
-	<idno>doi: 10.1038/srep33321</idno>
-
-	<note type="copyright">(2016).<lb/> This work is licensed under a Creative Commons Attribution 4.0 International License. The images<lb/> or other third party material in this article are included in the article&apos;s Creative Commons license,<lb/> unless indicated otherwise in the credit line; if the material is not included under the Creative Commons license,<lb/> users will need to obtain permission from the license holder to reproduce the material. To view a copy of this<lb/> license, visit http://creativecommons.org/licenses/by/4.0/<lb/> © The Author(s) 2016</note>
+	<note type="copyright">This work is licensed under a Creative Commons Attribution 4.0 International License. The images<lb/> or other third party material in this article are included in the article&apos;s Creative Commons license,<lb/> unless indicated otherwise in the credit line; if the material is not included under the Creative Commons license,<lb/> users will need to obtain permission from the license holder to reproduce the material. To view a copy of this<lb/> license, visit http://creativecommons.org/licenses/by/4.0/<lb/> © The Author(s) 2016</note>
 
 		</front>
 	</text>

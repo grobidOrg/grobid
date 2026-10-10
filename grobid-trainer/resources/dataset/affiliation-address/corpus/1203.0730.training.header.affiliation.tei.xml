@@ -1,0 +1,23 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="laboratory">Information Systems and Security Lab (ISSL)</orgName>,
+							<orgName type="department">Department of Electrical Engineering</orgName>,
+							<orgName type="institution">Sharif University<lb/> of Technology</orgName>,
+							<address>
+								<settlement>Tehran</settlement>,
+								<country>Iran</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

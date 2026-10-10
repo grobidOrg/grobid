@@ -1,0 +1,88 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Machine Learning Group</orgName>,
+							<orgName type="institution">Technische Universität Berlin</orgName>,
+							<address>
+								<postCode>10587</postCode>
+								<settlement>Berlin</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">BIFOLD -Berlin Institute for the Foundations of Learning and Data</orgName>,
+							<address>
+								<postCode>10587</postCode>
+								<settlement>Berlin</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Department of Mathematics and Computer Science</orgName>,
+							<orgName type="institution">Freie Universität Berlin</orgName>,
+							<lb/>
+							<address>
+								<addrLine>Arnimallee 14</addrLine>,
+								<postCode>14195</postCode>
+								<settlement>Berlin</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="department">Department of Artificial Intelligence</orgName>,
+							<orgName type="institution">Korea University</orgName>,
+							<address>
+								<settlement>Seoul</settlement>
+								<postCode>136-713</postCode>,
+								<country>South Korea</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>5</marker>
+							<orgName type="department">Max Planck Institute for Informatics</orgName>,
+							<address>
+								<addrLine>Stuhlsatzenhausweg 4</addrLine>,
+								<postCode>66123</postCode>
+								<settlement>Saarbrücken</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>6</marker>
+							<orgName type="institution">Google DeepMind</orgName>,
+							<address>
+								<settlement>Berlin</settlement>,
+								<country>Germany</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

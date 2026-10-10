@@ -122,7 +122,7 @@
     </byline>
           
     (
-    <idno>https://orcid.org/0000-0002-2697-<lb/>1492</idno>
+    <idno type="orcid">https://orcid.org/0000-0002-2697-<lb/>1492</idno>
           
     )<lb/> 
           
@@ -131,7 +131,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0002-4670-3321</idno>
+      <idno type="orcid">https://orcid.org/0000-0002-4670-3321</idno>
       
       )<lb/>
       
@@ -140,7 +140,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0003-3947-4337</idno>
+      <idno type="orcid">https://orcid.org/0000-0003-3947-4337</idno>
       
       )<lb/> 
       
@@ -149,7 +149,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0002-2474-2733</idno>
+      <idno type="orcid">https://orcid.org/0000-0002-2474-2733</idno>
       
       )<lb/>
       
@@ -158,7 +158,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0002-0907-882X</idno>
+      <idno type="orcid">https://orcid.org/0000-0002-0907-882X</idno>
       
       )<lb/>
       <byline>
@@ -166,7 +166,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0002-8073-8771</idno>
+      <idno type="orcid">https://orcid.org/0000-0002-8073-8771</idno>
       
       )<lb/>
       
@@ -175,7 +175,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0001-9725-547X</idno>
+      <idno type="orcid">https://orcid.org/0000-0001-9725-547X</idno>
       
       )<lb/>
       
@@ -184,7 +184,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0003-3947-4337</idno>
+      <idno type="orcid">https://orcid.org/0000-0003-3947-4337</idno>
       
       )<lb/>
       
@@ -203,8 +203,7 @@
 
 	Ethics approval and consent to participate<lb/> The experiment was performed at the research of the National<lb/> Institute of Animal Science of Korea (NIAS). The animal care and<lb/> use committee of NIAS reviewed and approved the protocol for this<lb/> study (Approval Number: NIAS20191536).<lb/>
 
-	CORRESPONDING AUTHOR CONTACT INFORMATION<lb/> For the corresponding author<lb/> (responsible for correspondence,<lb/> proofreading, and reprints)<lb/> Fill in information in each box below<lb/>
-	<keyword>First name, middle initial, last name<lb/></keyword>
+	CORRESPONDING AUTHOR CONTACT INFORMATION<lb/> For the corresponding author<lb/> (responsible for correspondence,<lb/> proofreading, and reprints)<lb/> Fill in information in each box below<lb/> First name, middle initial, last name<lb/>
 
 	<byline>
 	<docAuthor>Hyoun Wook Kim<lb/></docAuthor>

@@ -1,0 +1,149 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>𝑎</marker>
+							<orgName type="institution">Vrĳe Universiteit Brussel</orgName>,
+							<orgName type="institution">Astrophysical Institute</orgName>,
+							<address>
+								<addrLine>Pleinlaan 2</addrLine>,
+								<postCode>1050</postCode>
+								<settlement>Brussels</settlement>,
+								<country>Belgium</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>𝑏</marker>
+							<orgName type="department">Department of Astrophysics/IMAPP</orgName>,
+							<orgName type="institution">Radboud University Nĳmegen</orgName>,
+							<address>
+								<postBox>P.O. Box 9010</postBox>,
+								<postCode>6500 GL</postCode>
+								<settlement>Nĳmegen</settlement>,
+								<country>The Netherlands<lb/> 𝑐</country>
+							</address>
+						</affiliation>
+
+						<affiliation>
+							<orgName type="institution">Netherlands Institute for Radio Astronomy (ASTRON)</orgName>,
+							<address>
+								<addrLine>Postbus 2</addrLine>,
+								<postCode>7990 AA</postCode>
+								<settlement>Dwingeloo</settlement>,
+								<country>The Netherlands</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+					  <affiliation>
+						  <marker>𝑑 </marker>
+							<orgName type="institution">Nikhef</orgName>,
+							<address>
+								<addrLine>Science Park Amsterdam</addrLine>
+														,
+								<postCode>1098 XG</postCode>
+								<settlement>Amsterdam</settlement>,
+								<country>The Netherlands</country>
+							</address>
+					  </affiliation>
+								
+							<lb/> 
+							<affiliation>
+							<marker>𝑒</marker>
+							<orgName type="institution">University of Groningen</orgName>,
+							<orgName type="institution">Kapteyn Astronomical Institute</orgName>,
+							<address>
+								<settlement>Groningen</settlement>,
+								<postCode>9747 AD</postCode>,
+								<country>Netherlands</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>𝑓</marker>
+							<orgName type="institution">Institut für Astroteilchenphysik</orgName>,
+							<orgName type="institution">Karlsruhe Institute of Technology (KIT)</orgName>,
+							<address>
+								<postBox>P.O. Box 3640</postBox>,
+								<postCode>76021</postCode>,
+								<settlement>Karlsruhe</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>𝑔</marker>
+							<orgName type="institution">Deutsches Elektronen-Synchrotron DESY</orgName>,
+							<address>
+								<addrLine>Platanenallee 6</addrLine>,
+								<postCode>15738</postCode>
+								<settlement>Zeuthen</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+					<affiliation>
+						<marker>ℎ </marker>
+							<orgName type="institution">ECAP</orgName>,
+							<orgName type="institution">Friedrich-Alexander-Universität Erlangen-Nürnberg</orgName>,
+							<address>
+								<postCode>91058</postCode>
+								<settlement>Erlangen</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>𝑖</marker>
+							<orgName type="institution">Interuniversity Institute for High-Energy</orgName>,
+							<orgName type="institution">Vrĳe Universiteit Brussel</orgName>,
+							<address>
+								<addrLine>Pleinlaan 2</addrLine>,
+								<postCode>1050</postCode>
+								<settlement>Brussels</settlement>,
+								<country>Belgium</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>𝑗</marker>
+							<orgName type="department">Department of Physics</orgName>,
+							<orgName type="institution">Khalifa University</orgName>,
+							<address>
+								<postBox>P.O. Box 127788</postBox>,
+								<settlement>Abu Dhabi</settlement>,
+								<country>United Arab Emirates</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>𝑘</marker>
+							<orgName type="department">Department of Physics</orgName>,
+							<orgName type="department">School of Education</orgName>,
+							<orgName type="institution">Can Tho University Campus II</orgName>,
+							<address>
+								<addrLine>3/2 Street</addrLine>,
+								<addrLine>Ninh Kieu District</addrLine>,
+								<settlement>Can Tho<lb/> City</settlement>,
+								<country>Vietnam</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

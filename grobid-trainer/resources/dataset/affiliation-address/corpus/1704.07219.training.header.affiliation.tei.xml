@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>a</marker>
+							<orgName type="department">Institut de Mathématiques de Toulouse</orgName>
+							<lb/>
+							<orgName type="institution">Université Toulouse III</orgName>
+							<lb/>
+							<address>
+								<postCode>31062</postCode>
+								<settlement>Toulouse Cedex 09</settlement>,
+								<country>France</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>b</marker>
+							<orgName type="laboratory">Laboratoire d'Informatique du Parallélisme<lb/> UMR 5668 ENS Lyon -CNRS -UCBL</orgName> -
+							<orgName type="institution">INRIA<lb/> Université de Lyon</orgName>,
+							<address>
+								<country>France</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>c</marker>
+							<orgName type="laboratory">Laboratoire G-SCOP<lb/> CNRS</orgName>,
+							<orgName type="institution">Université Grenoble-Alpes<lb/> Grenoble</orgName>,
+							<address>
+								<country>France</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

@@ -34,9 +34,8 @@
 	a b s t r a c t<lb/>
 	<div type="abstract">This paper presents an experimental study of low velocity impact response of carbon/epoxy asymmetri-<lb/>cally tapered laminates. The tests are realised at energy between 10 and 30 J on two types of layup with<lb/> multiple terminated plies. The type and localisation of damage are analysed using C-scan and<lb/> micrographs. Then, the data is compared with the response of corresponding respective plain laminate.<lb/> The effects of some tapering parameters (taper angle, drop-off disposition and configuration) on the<lb/> impact damage mechanisms are also investigated. Very similar impact damage phenomena are found<lb/> between tapered and plain laminates. The presence of material discontinuity due to the resin pocket<lb/> affects less the damage mechanism than the structural difference between the thick and the thin sections.<lb/></div>
 
-	⇑ Corresponding author at:
 	<byline>
-	<affiliation>Université de Toulouse; INSA, UPS, Mines ALBI, ISAE;<lb/> ICA (Institut Clément Ader), ISAE (Institut Supérieur de l&apos;Aéronautique et de<lb/> l&apos;Espace),</affiliation>
+	<affiliation>⇑ Corresponding author at: Université de Toulouse; INSA, UPS, Mines ALBI, ISAE;<lb/> ICA (Institut Clément Ader), ISAE (Institut Supérieur de l&apos;Aéronautique et de<lb/> l&apos;Espace),</affiliation>
 	</byline>
 
 	<address>10, Avenue Edouard Belin, BP 54032-31055 Toulouse Cedex 4, France.<lb/></address>
@@ -44,7 +43,11 @@
 	E-mail address:
 	<email>hakim.abdulhamid@isae.fr</email>
 
-	(H. Abdulhamid).
+	(
+	<byline>
+	<docAuthor>H. Abdulhamid</docAuthor>
+	</byline>
+	).
 		</front>
 	</text>
 </tei>

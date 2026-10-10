@@ -1,0 +1,103 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_1909.04076">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-22T15:01:54.868400Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-22T15:01:54.868400Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-22T15:04:13.679Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-05-22T15:09:36.772Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>Counterfactual Story Reasoning and Generation<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Lianhui Qin ♠♦</docAuthor>    
+	</byline>
+
+    <byline>
+	<docAuthor> Antoine Bosselut ♠♦</docAuthor>    
+	</byline>
+
+    <byline>
+	<docAuthor> Ari Holtzman ♠♦</docAuthor>    
+	</byline>
+
+    <byline>
+	<docAuthor> Chandra Bhagavatula ♦<lb/></docAuthor>    
+	</byline>
+
+    <byline>
+	<docAuthor> Elizabeth Clark ♠<lb/></docAuthor>    
+	</byline>
+
+    <byline>
+	<docAuthor> Yejin Choi ♠♦<lb/></docAuthor>    
+	</byline>
+          
+
+	<byline>
+	<affiliation> ♠ Paul G. Allen School of Computer Science &amp; Engineering, University of Washington<lb/></affiliation> <affiliation>♦ Allen Institute for Artificial Intelligence<lb/></affiliation>
+	</byline>
+
+
+  <!-- not sure why this is duplicated -->
+    <byline>
+	<docAuthor>Lianhui Qin ♠♦ Antoine Bosselut ♠♦ Ari Holtzman ♠♦ Chandra Bhagavatula ♦<lb/> Elizabeth Clark ♠<lb/> Yejin Choi ♠♦<lb/></docAuthor>    
+	</byline>
+
+	<email>{lianhuiq,antoineb,ahai,eaclark7,yejin}@cs.washington.edu<lb/></email> <email>chandrab@allenai.org</email>
+
+	Abstract<lb/>
+	<div type="abstract">Counterfactual reasoning requires predicting<lb/> how alternative events, contrary to what<lb/> actually happened, might have resulted in<lb/> different outcomes. Despite being considered<lb/> a necessary component of AI-complete<lb/> systems, few resources have been developed<lb/> for evaluating counterfactual reasoning in<lb/> narratives.<lb/> In this paper, we propose Counterfactual<lb/> Story Rewriting: given an original story and<lb/> an intervening counterfactual event, the task<lb/> is to minimally revise the story to make<lb/> it compatible with the given counterfactual<lb/> event. Solving this task will require deep<lb/> understanding of causal narrative chains and<lb/> counterfactual invariance, and integration<lb/> of such story reasoning capabilities into<lb/> conditional language generation models.<lb/> We present TIMETRAVEL, a new dataset of<lb/> 29,849 counterfactual rewritings, each with<lb/> the original story, a counterfactual event,<lb/> and human-generated revision of the original<lb/> story compatible with the counterfactual<lb/> event.<lb/> Additionally, we include 80,115<lb/> counterfactual "branches" without a rewritten<lb/> storyline to support future work on semi-<lb/>or un-supervised approaches to counterfactual<lb/> story rewriting.<lb/> Finally, we evaluate the counterfactual<lb/> rewriting capacities of several competitive<lb/> baselines based on pretrained language<lb/> models, and assess whether common overlap<lb/> and model-based automatic metrics for text<lb/> generation correlate well with human scores<lb/> for counterfactual rewriting.</div>
+
+		</front>
+	</text>
+
+</TEI>

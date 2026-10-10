@@ -1,0 +1,111 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2302.09104">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-22T10:25:09.894992Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-22T10:25:09.894992Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-22T10:26:29.889Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-05-22T10:26:29.903Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-05-22T10:27:02.154Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	Prepared for submission to JHEP<lb/> HIP-2023-1/TH<lb/>
+	<docTitle>
+	<titlePart>Gravitational waves from SU(N )/Sp(N ) composite<lb/> Higgs models<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Mads T. Frandsen, a Matti Heikinheimo, b Martin Rosenlyst, c Mattias E. Thing a and<lb/> Kimmo Tuominen b<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation> a CP3 -Origins, University of Southern Denmark,</affiliation>
+	</byline>
+
+	<address>Campusvej 55, DK-5230 Odense M, Denmark<lb/></address>
+
+	<byline>
+	<affiliation>b Helsinki Institute of Physics and Department of Physics, University of Helsinki,</affiliation>
+	</byline>
+
+	<address>P.O.Box 64,<lb/> FI-00014 University of Helsinki, Finland<lb/></address>
+
+	<byline>
+	<affiliation>c Rudolf Peierls Centre for Theoretical Physics, University of Oxford,</affiliation>
+	</byline>
+
+	<address>1 Keble Road, Oxford OX1<lb/> 3NP, United Kingdom<lb/></address>
+
+	E-mail:
+	<email>frandsen@cp3.sdu.dk</email>
+
+	,
+	<email>matti.heikinheimo@helsinki.fi</email>
+
+	,<lb/>
+	<email>martin.jorgensen@physics.ox.ac.uk</email>
+
+	,
+	<email>thing@cp3.sdu.dk</email>
+
+	,<lb/>
+	<email>kimmo.i.tuominen@helsinki.fi<lb/></email>
+
+	Abstract:
+	<div type="abstract">We study possible strong first-order electroweak phase transitions in Composite<lb/> Higgs models and we quantify the part of parameter space that can be probed with future<lb/> gravitational Wave experiments. We focus on models where the Composite Higgs sector<lb/> arises from underlying four-dimensional strongly interacting gauge theories with fermions,<lb/> and where the Standard Model fermion masses are induced via linear mixing terms with<lb/> composite fermions -the so-called fermion partial compositeness framework. We perform<lb/> our analysis for the general class of Composite Higgs models arising from N Weyl fermions in<lb/> a pseudo-real representation of the new strongly interacting gauge group that dynamically<lb/> triggers the global chiral symmetry breaking pattern SU(N ) → Sp(N ). The minimal model<lb/> has N = 4 and for N &gt; 4 the models feature complex scalar dark matter candidates<lb/> arising as pseudo-Nambu-Goldstone bosons. We find a large number of points in the models<lb/> parameter space which yield strong first-order electroweak phase transitions and identify<lb/> the most important operators characterizing the strength of the phase transition. Almost<lb/> all of these points are testable with future GW detectors such as LISA, Taiji, Tianqin,<lb/> BBO, DECIGO and Ultimate-DECIGO.<lb/></div>
+
+	<idno>arXiv:2302.09104v2 [hep-ph]</idno>
+
+	<date>25 Oct 2024</date>
+
+		</front>
+	</text>
+
+</TEI>

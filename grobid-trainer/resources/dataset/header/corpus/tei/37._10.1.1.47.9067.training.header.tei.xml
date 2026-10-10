@@ -8,9 +8,7 @@
 <lb/>
 	<reference>LISP AND SYMBOLIC COMPUTATION: An International Journal, 5, 191{221, 1992<lb/></reference>
 
-	<note type="copyright">c 1992 Kluwer Academic Publishers</note>
-
-	{ Manufactured in The Netherlands<lb/>
+	<note type="copyright">c 1992 Kluwer Academic Publishers { Manufactured in The Netherlands<lb/></note>
 
 	<docTitle>
 	<titlePart>Callee-save Registers in Continuation-passing Style<lb/></titlePart>

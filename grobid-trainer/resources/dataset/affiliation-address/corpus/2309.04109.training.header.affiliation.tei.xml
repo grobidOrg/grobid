@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>a</marker>
+							<orgName type="laboratory">Institute for Artificial Intelligence</orgName>,
+							<orgName type="institution">Tsinghua University (THUAI)</orgName>;
+							<orgName type="institution">Beijing National<lb/> Research Center for Information Science and Technology (BNRist)</orgName>;
+							<orgName type="department">Department of<lb/> Automation</orgName>,
+							<orgName type="institution">Tsinghua University</orgName>,
+							<address>
+								<postCode>100084</postCode>,
+								<settlement>Beijing</settlement>,
+								<country>P.R. China</country>
+							<lb/>
+							</address>
+						</affiliation>
+                          
+						<affiliation>
+							<marker>b</marker>
+							<orgName type="department">Algorithm Research</orgName>,
+							<orgName type="institution">Aibee Inc.</orgName>,
+							<address>
+								<settlement>Beijing</settlement>,
+								<country>P.R. China</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>
