@@ -16,6 +16,8 @@
 								<region>CT</region>
 								<postCode>06511</postCode>; and
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">tDepartment of Pathology</orgName>,
 							<orgName type="institution">Yale University School of Medicine</orgName>,
 							<address>
@@ -23,6 +25,8 @@
 								<region>CT</region>
 								<postCode>06510-8023</postCode>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">New York University Medical Center</orgName>,
 							<address>
 								<settlement>New York</settlement>

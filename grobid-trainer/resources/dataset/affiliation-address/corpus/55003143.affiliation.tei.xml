@@ -16,12 +16,14 @@
 								<country>Germany</country>,
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Institute for Structural<lb/> Biochemistry (ISB-3)</orgName>,
 							<orgName type="institution">Research Centre Julich</orgName>,
 							<address>
 								<postCode>52425</postCode>
 								<settlement>Julich</settlement>,
-								<settlement>Germany</settlement>, and
+								<country>Germany</country>, and
 							</address>
 						</affiliation>
 						<affiliation>

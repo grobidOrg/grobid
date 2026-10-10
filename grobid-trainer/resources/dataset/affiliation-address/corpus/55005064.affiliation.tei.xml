@@ -13,7 +13,7 @@
                         <orgName type="department" key="dep1">Department of Computer Science</orgName>, 
                         <orgName type="institution">University qf Copenhagen</orgName>, 
                         <address >
-                           <addrLine>Vniversitetsparken 1.</addrLine><lb/>
+                           <addrLine>Vniversitetsparken 1</addrLine>.<lb/>
                            <postCode>DK-2100</postCode> 
                            <settlement>Copenhagen</settlement> @, 
                            <country>Denmnrk</country><lb/>

@@ -14,7 +14,7 @@
 							<orgName type="institution">Universiti Putra Malaysia</orgName>,
 							<address>
 								<postCode>43400 UPM</postCode>,
-								<addrLine>Serdang Selangor</addrLine>,
+								<settlement>Serdang</settlement> <region>Selangor</region>,
 								<country>Malaysia</country>
 							</address>
 						</affiliation>

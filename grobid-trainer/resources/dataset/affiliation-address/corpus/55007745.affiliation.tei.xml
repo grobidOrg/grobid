@@ -11,8 +11,8 @@
 							<orgName type="department">Department of Chemistry</orgName>,
 							<orgName type="institution">Texas A&amp;M UniversitysCorpus<lb/> Christi</orgName>,
 							<address>
-								<addrLine>Corpus Christi</addrLine>,
-								<settlement>Texas</settlement>
+								<settlement>Corpus Christi</settlement>,
+								<region>Texas</region>
 								<postCode>78412</postCode>,
 							</address>
 						</affiliation>

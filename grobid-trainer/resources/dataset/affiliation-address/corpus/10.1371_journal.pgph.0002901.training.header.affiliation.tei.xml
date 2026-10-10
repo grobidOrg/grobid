@@ -21,7 +21,7 @@
 							<lb/>
 							<orgName type="institution">Ministère de la Sante ´Publique et de la Population</orgName>,
 							<address>
-								<addrLine>Port-au-Prince</addrLine>,
+								<settlement>Port-au-Prince</settlement>,
                                 <country>Republic of Haiti</country>,
 							</address>
 						</affiliation>
@@ -30,10 +30,10 @@
 							<orgName type="institution">Envu UK Ltd</orgName>,
 							<lb/>
 							<address>
+								<addrLine>Cambridge</addrLine>,
+								<addrLine>Milton</addrLine>,
 								<settlement>Cambridge</settlement>,
-								<region>Milton</region>,
-								<settlement>Cambridge</settlement>,
-								<country>United Kingdom,</country>
+								<country>United Kingdom</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -42,7 +42,7 @@
 							<orgName type="institution">University of Glasgow</orgName>,
 							<address>
 								<settlement>Glasgow</settlement>,
-								<country>United Kingdom,</country>
+								<country>United Kingdom</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -50,7 +50,7 @@
 							<orgName type="institution">Abt Associates</orgName>,
 							<address>
 								<settlement>Nairobi</settlement>,
-								<country>Kenya,</country>
+								<country>Kenya</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -70,7 +70,7 @@
 							<address>
 								<settlement>Rio de Janeiro</settlement>,
 								<region>RJ</region>,
-								<country>Brazil,</country>
+								<country>Brazil</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -95,7 +95,7 @@
                         <affiliation>
 							<lb/>
                             <marker>10</marker>
-							<orgName type="department">Liverpool School of Tropical Medicine</orgName>,
+							<orgName type="institution">Liverpool School of Tropical Medicine</orgName>,
 							<orgName type="department">Department of Vector Biology</orgName>,
 							<address>
 								<settlement>Liverpool</settlement>,

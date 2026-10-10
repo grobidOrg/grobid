@@ -24,7 +24,7 @@
 							<orgName type="department">Department of Chemistry</orgName>,
 							<orgName type="institution">Colorado State University</orgName>,
 							<address>
-								<addrLine>Fort Collins</addrLine>,
+								<settlement>Fort Collins</settlement>,
 								<region>Colorado</region>
 								<postCode>80523</postCode>,
 								<country>USA</country>.

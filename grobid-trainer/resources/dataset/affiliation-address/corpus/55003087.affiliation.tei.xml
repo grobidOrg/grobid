@@ -8,12 +8,12 @@
 						<author>
 
 						<affiliation>
-							<orgName type="department">Agriculture Western Australia</orgName>,
+							<orgName type="institution">Agriculture Western Australia</orgName>,
 							<address>
 								<postBox>PO Box 1231</postBox>,
 								<settlement>Bunbury</settlement>,
-								<region>Western</region>
-								<country>Australia</country>
+								<region>Western
+								Australia</region>
 								<postCode>6230</postCode>
 							</address>
 						</affiliation>

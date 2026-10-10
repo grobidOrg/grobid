@@ -15,8 +15,8 @@
 							<address>
 								<addrLine>25 rue Docteur Roux</addrLine>,
 								<postCode>75724</postCode>
-								<settlement>Paris</settlement>
-								<postCode>Cedex 15</postCode>,
+								<settlement>Paris
+								Cedex 15</settlement>,
 								<country>France</country>
 							<lb/>
 							</address>
@@ -27,8 +27,8 @@
 							<address>
 								<addrLine>25 rue Docteur Roux</addrLine>,
 								<postCode>75724</postCode>
-								<settlement>Paris</settlement>
-								<postCode>Cedex 15</postCode>,
+								<settlement>Paris
+								Cedex 15</settlement>,
 								<country>France</country>
 							<lb/>
 							</address>
@@ -40,8 +40,8 @@
 								<addrLine>2 rue de la Houssinière</addrLine>,
 								<postBox>BP 92208</postBox>,
 								<postCode>44322</postCode>
-								<settlement>Nantes</settlement>
-								<postCode>Cedex 3</postCode>,
+								<settlement>Nantes
+								Cedex 3</settlement>,
 								<country>France</country>
 							<lb/>
 							</address>
@@ -54,8 +54,8 @@
 								<addrLine>2 rue de la Houssinière</addrLine>,
 								<postBox>BP 92208</postBox>,
 								<postCode>44322</postCode>
-								<settlement>Nantes</settlement>
-								<postCode>Cedex 3</postCode>,
+								<settlement>Nantes
+								Cedex 3</settlement>,
 								<country>France</country>
 							</address>
 						</affiliation>

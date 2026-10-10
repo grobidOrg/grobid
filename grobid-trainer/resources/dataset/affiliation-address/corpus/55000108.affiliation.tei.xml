@@ -13,7 +13,7 @@
 							<orgName type="institution">University of California</orgName>,
 							<address>
 								<addrLine>San Diego</addrLine>,
-								<addrLine>La Jolla</addrLine>,
+								<settlement>La Jolla</settlement>,
 								<region>CA</region>,
 								<postCode>92093</postCode>,
 								<country>USA</country>
@@ -25,7 +25,7 @@
 							<orgName type="department">Department of Atmospheric Science</orgName>,
 							<orgName type="institution">Colorado State University</orgName>,
 							<address>
-								<addrLine>Fort Collins</addrLine>,
+								<settlement>Fort Collins</settlement>,
 								<region>CO</region>,
 								<postCode>80523</postCode>,
 								<country>USA</country>
@@ -47,7 +47,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>*</marker>
-							<orgName type="department">currently at: Department of Atmospheric Science</orgName>,
+							currently at: <orgName type="department">Department of Atmospheric Science</orgName>,
 							<orgName type="institution">Colorado State University</orgName>,
 							<address>
 								<settlement>Fort Collins</settlement>,

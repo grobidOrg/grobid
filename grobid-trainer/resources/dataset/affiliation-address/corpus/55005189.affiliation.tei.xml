@@ -36,7 +36,7 @@
 							<orgName type="department">Department of Geoscience</orgName>,
 							<orgName type="institution">University of Nevada</orgName>,
 							<address>
-								<addrLine>Las Vegas</addrLine>,
+								<settlement>Las Vegas</settlement>,
 								<region>NV</region>
 								<postCode>89154</postCode>,
 								<country>USA</country>

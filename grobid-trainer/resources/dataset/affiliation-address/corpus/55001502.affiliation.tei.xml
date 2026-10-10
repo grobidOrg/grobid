@@ -16,7 +16,7 @@
 							(
 							<orgName type="institution">Council of Scientific and Industrial Research</orgName>)],
 							<address>
-								<addrLine>Mysore-570 020</addrLine>,
+								<settlement>Mysore</settlement>-<postCode>570 020</postCode>,
 								<country>India</country>.
 							</address>
 						</affiliation>

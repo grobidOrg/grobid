@@ -10,7 +10,7 @@
 						<affiliation>
 							<orgName type="laboratory">Channing Laboratory</orgName>,
 							<orgName type="department">Department of Medicine</orgName>,
-							<orgName type="department">Brigham and Women&apos;s Hospital Harvard Medical School</orgName>,
+							<orgName type="institution">Brigham and Women&apos;s Hospital</orgName> <orgName type="institution">Harvard Medical School</orgName>,
 							<lb/>
 							<address>
 								<settlement>Boston</settlement>,

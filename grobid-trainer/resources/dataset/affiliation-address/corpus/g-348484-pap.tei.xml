@@ -25,7 +25,9 @@
 								<address>
 								<postBox>P.O. Box 35 (YFL)</postBox>,
 								<postCode>FI-40014</postCode>
+								</address>
 								<orgName type="institution">University of Jyväskylä</orgName>,<lb/>
+								<address>
 								<country key="FI">Finland<lb/></country></address>
 							</affiliation>
 
@@ -34,7 +36,9 @@
 								<address>
 									<postBox>P.O. Box 35 (YFL)</postBox>,
 									<postCode>FI-40014</postCode>
+									</address>
 									<orgName type="institution">University of Jyväskylä</orgName>,<lb/>
+									<address>
 									<country key="FI">Finland<lb/></country>
 								</address>
 							</affiliation>

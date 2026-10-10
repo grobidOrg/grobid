@@ -14,8 +14,8 @@
 							<address>
 								<postBox>B.P. 166</postBox>,
 								<postCode>38042</postCode>
-								<settlement>Grenoble</settlement>
-								<postCode>Cedex 9</postCode>,
+								<settlement>Grenoble
+								Cedex 9</settlement>,
 								<country>France</country>
 							<lb/>
 							</address>
@@ -61,7 +61,7 @@
 							
 						<affiliation>
 							<marker>5</marker>
-							<orgName type="institution">Institut Universitaire de France and Université J. Fourier</orgName>,
+							<orgName type="institution">Institut Universitaire de France</orgName> and <orgName type="institution">Université J. Fourier</orgName>,
 							<address>
 								<postBox>B.P. 41</postBox>,
 								<postCode>38402</postCode>

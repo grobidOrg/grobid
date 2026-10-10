@@ -21,7 +21,7 @@
 						<affiliation>
 							<marker>2</marker>
 							<orgName type="department">Institute of Applied Magnetics</orgName>,
-							<orgName type="laboratory">Key Lab for Magnetism and Magnetic Materials of</orgName> the
+							<orgName type="laboratory">Key Lab for Magnetism and Magnetic Materials</orgName> of the
 							<orgName type="department">Ministry of Education</orgName>,
 							<lb/>
 							<orgName type="institution">Lanzhou University</orgName>,
@@ -80,7 +80,7 @@
 							<marker>6</marker>
 							<orgName type="institution">Institut Laue-Langevin</orgName>,
 							<address>
-								<addrLine>Boite Postale 156X</addrLine>,
+								<postBox>Boite Postale 156X</postBox>,
 								<postCode>F-38042</postCode>
 								<settlement>Grenoble Cedex 9</settlement>,
 								<country>France</country>
@@ -110,7 +110,7 @@
 							<address>
 								<postCode>20018</postCode>
 								<settlement>Donostia-San Sebastian</settlement>,
-								<settlement>Basque Country</settlement>,
+								<region>Basque Country</region>,
 								<country>Spain</country>
 							<lb/>
 							</address>

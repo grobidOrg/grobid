@@ -17,7 +17,7 @@
 							</address>
 						</affiliation>
 						<affiliation>	
-							<orgName type="department">2Department of Surgery</orgName>,
+							<marker>2</marker><orgName type="department">Department of Surgery</orgName>,
 							<orgName type="department">Royal<lb/> Postgraduate Medical School</orgName>,
 							<orgName type="institution">Hammersmith Hospital</orgName>,
 							<address>
@@ -26,7 +26,7 @@
 							</address>
 						</affiliation>
 						<affiliation>							
-							<orgName type="department">3Department of Surgery</orgName>,
+							<marker>3</marker><orgName type="department">Department of Surgery</orgName>,
 							<orgName type="institution">Bristol Royal Infirmary</orgName>,
 							<lb/>
 							<address>

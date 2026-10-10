@@ -25,7 +25,7 @@
 								<postBox>PO Box 6235</postBox>,
 								<postCode>5600 HE</postCode>,
 								<settlement>Eindhoven</settlement>,
-								<region>NL</region>
+								<country>NL</country>
 							<lb/>
 							</address>
 						</affiliation>
@@ -36,7 +36,7 @@
 								<postBox>PO Box 513</postBox>,
 								<postCode>5600 MB</postCode>,
 								<settlement>Eindhoven</settlement>,
-								<region>NL</region>
+								<country>NL</country>
 							<lb/>
 							</address>
 						</affiliation>
@@ -47,7 +47,7 @@
 								<addrLine>Nijenborgh 4</addrLine>,
 								<postCode>9747 AG</postCode>,
 								<settlement>Groningen</settlement>,
-								<region>NL</region>
+								<country>NL</country>
 							<lb/>
 							</address>
 						</affiliation>

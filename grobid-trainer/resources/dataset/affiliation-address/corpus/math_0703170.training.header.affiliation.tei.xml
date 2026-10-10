@@ -12,11 +12,11 @@
 							<address>
 								<addrLine>Wegelerstr. 6</addrLine>,
 								<postCode>D-<lb/>53115</postCode>
-								<settlement>Bonn (</settlement>
+								<settlement>Bonn</settlement> (
 								<country>Germany</country>);
 							</address>
 							<orgName type="institution">SFB 611</orgName>,
-							<orgName type="laboratory">BiBoS; CERFIM (Locarno)</orgName>;
+							<orgName type="laboratory">BiBoS</orgName>; <orgName type="laboratory">CERFIM</orgName> (Locarno);
 							<orgName type="institution">Acc. Arch. (USI)</orgName>,
 							<lb/>
 						</affiliation>

@@ -4,7 +4,7 @@
 
 The affiliation-address structure contains an informal description of an author’s present or past affiliation with one organization, for example an employer or a sponsor. It can group up to three elements: the name of the organization (`<orgName>`), its address (`<address>`) and an indice (`<marker>`).
 
-As usually for GROBID models, text that do not belong to one of the left elements, in particular such as punctuations, syntactic sugar, etc. has to be be left untagged. Line break are indicated with `<lb>`. For example:
+As usually for GROBID models, text that do not belong to one of the left elements, in particular such as punctuations, syntactic sugar, etc. has to be be left untagged. A period that belongs to an abbreviation (`Univ.`, `Inc.`, `Blvd.`) is part of the word and stays inside the tag; a comma, semicolon or sentence-final period after the value goes outside it. Line break are indicated with `<lb>`. For example:
 
 ```xml
 <affiliation>

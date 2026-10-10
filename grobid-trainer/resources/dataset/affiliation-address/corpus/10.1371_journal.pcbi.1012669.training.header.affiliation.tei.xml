@@ -17,7 +17,7 @@
 							<orgName type="institution">King Saud University</orgName>,
 							<address>
 								<settlement>Riyadh</settlement>,
-								<country>Saudi Arabia,</country>
+								<country>Saudi Arabia</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -35,7 +35,7 @@
 							<orgName type="institution">Al-Quds Hospital</orgName>,
 							<address>
 								<settlement>Gaza</settlement>,
-								<country>Palestine,</country>
+								<country>Palestine</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -44,7 +44,7 @@
 							<orgName type="institution">Royal<lb/> Hospital</orgName>,
 							<address>
 								<settlement>Muscat</settlement>,
-								<country>Oman,</country>
+								<country>Oman</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -82,7 +82,7 @@
 							<orgName type="institution">COCRG<lb/> Laboratory University Benyoucef Benkhedda</orgName>,
 							<address>
 								<settlement>Algiers</settlement>,
-								<country>Algeria,</country>
+								<country>Algeria</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -119,7 +119,7 @@
 							<address>
 								<settlement>Amman</settlement>,
 							<lb/>
-								<country>Jordan,</country>
+								<country>Jordan</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -135,7 +135,7 @@
 						<affiliation>
 							<marker>14</marker>
 							<orgName type="department">Iraqi Board for Medical Specializations</orgName>,
-							<orgName type="department">Scientific Council of Cardiology.<lb/></orgName>
+							<orgName type="department">Scientific Council of Cardiology</orgName>.<lb/>
 							<orgName type="institution">Baghdad Heart Center</orgName>,
 							<address>
                                 <addrLine>Medical City</addrLine>,

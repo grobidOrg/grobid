@@ -24,9 +24,7 @@
 							<orgName type="institution">Friedrich-Loeffler-Institut</orgName>,
 							<address>
 								<settlement>Greifswald</settlement>,
-							</address>
-							<orgName type="institution">Insel Riems</orgName>,
-							<address>
+								<addrLine>Insel Riems</addrLine>,
 								<country>Germany</country>,
 							</address>
 						</affiliation>

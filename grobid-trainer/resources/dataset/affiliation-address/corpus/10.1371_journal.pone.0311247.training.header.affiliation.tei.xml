@@ -12,7 +12,7 @@
 							<orgName type="institution">Instituto Mixto de Investigacio ´n en Biodiversidad (IMIB-CSIC)</orgName>,
 							<address>
 								<settlement>Mieres</settlement>,
-								<country>Spain,</country>
+								<country>Spain</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -31,7 +31,7 @@
 							<orgName type="institution">Universidad Rey Juan Carlos</orgName>,
 							<address>
 								<settlement>Mo ´stoles</settlement>,
-								<country>Spain,</country>
+								<country>Spain</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -100,7 +100,7 @@
 							<orgName type="department">Campus Universitario Ciudad de Panama ´</orgName>,
 							<lb/>
 							<address>
-								<country>Panama ´</country>,
+								<settlement>Panama ´</settlement>,
 								<country>Repu ´blica de Panama ´</country>,
 							</address>
 						</affiliation>
@@ -111,15 +111,15 @@
 							<orgName type="institution">University of Dublin</orgName>,
 							<address>
 								<settlement>Dublin</settlement>,
-								<country>Ireland,</country>
+								<country>Ireland</country>,
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>12</marker>
 							<orgName type="department">College of the Atlantic</orgName>,
 							<address>
-								<addrLine>Bar Harbor</addrLine>,
-								<settlement>Maine</settlement>,
+								<settlement>Bar Harbor</settlement>,
+								<region>Maine</region>,
 								<country>United States of<lb/> America</country>,
 							</address>
 						</affiliation>
@@ -129,7 +129,7 @@
 							<orgName type="institution">Universidad Nacional Auto ´noma de Me ´xico</orgName>,
 							<address>
 								<settlement>Ciudad de Me ´xico</settlement>,
-								<country>Mexico,</country>
+								<country>Mexico</country>,
 							<lb/>
 							</address>
 						</affiliation>
@@ -140,7 +140,7 @@
 							<orgName type="department">Campus Omar<lb/> Dengo</orgName>,
 							<address>
 								<settlement>Heredia</settlement>,
-								<country>Costa Rica,</country>
+								<country>Costa Rica</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -166,10 +166,10 @@
 						<affiliation>
 							<marker>17</marker>
 							<orgName type="department">Centro de<lb/> Investigacio ´n Cientı ´fica de Yucata ´n</orgName>,
-							<orgName type="institution">Chuburna de Hidalgo</orgName>,
 							<address>
-								<addrLine>Me ´rida</addrLine>,
-								<addrLine>Yucata ´n</addrLine>,
+								<addrLine>Chuburna de Hidalgo</addrLine>,
+								<settlement>Me ´rida</settlement>,
+								<region>Yucata ´n</region>,
 								<country>Mexico</country>,
 							</address>
 						</affiliation>
@@ -212,7 +212,7 @@
 							<address>
 								<settlement>Xalapa</settlement>,
 								<region>Veracruz</region>,
-								<settlement>Mexico</settlement>,
+								<country>Mexico</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -238,7 +238,7 @@
 							<orgName type="institution">Universidad Rey Juan Carlos</orgName>,
 							<lb/>
 							<address>
-								<addrLine>Mo ´stoles</addrLine>,
+								<settlement>Mo ´stoles</settlement>,
 								<country>Spain</country>
 							<lb/>
 							</address>

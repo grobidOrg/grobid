@@ -104,7 +104,7 @@
 								<address>
 									<addrLine>Via S.Sofia 62</addrLine>, 
 									<postCode>I95123</postCode> 
-									<region>Catania</region>, 
+									<settlement>Catania</settlement>, 
 									<country>Italy</country>
 									<lb/>
 								</address>
@@ -115,7 +115,7 @@
 								<orgName type="institution">Università di Catania</orgName>,
 								<address>
 									<postCode>I95123</postCode>
-									<region>Catania</region>,
+									<settlement>Catania</settlement>,
 									<country key="IT">Italy</country>
 									<lb/>
 								</address>
@@ -169,7 +169,7 @@
 								<orgName type="department">Dept  of Electronic and Electrical Engineering</orgName>, 
 								<orgName type="institution">Loughborough University</orgName>, 
 								<address>
-									<settlement>Leics</settlement>
+									<region>Leics</region>
 									<postCode>LE11, 3TU</postCode>,
 									<country>UK</country>
 									<lb/>
@@ -301,7 +301,7 @@
 							<marker>5</marker> 
 							<affiliation>
 								<orgName type="department">Department of Applied Science</orgName>,  
-								<orgName type="department"> College of William and Mary</orgName>, <lb/> 
+								<orgName type="institution"> College of William and Mary</orgName>, <lb/> 
 								<address>
 									<addrLine>325 McGlothin<lb/> Street Hall</addrLine>, 
 									<settlement>Williamsburg</settlement>, 
@@ -334,7 +334,7 @@
 									<addrLine>Via C. Olivetti 2</addrLine>, 
 									<postCode>20041</postCode>
 									<settlement>Agrate Brianza</settlement>
-									<region>(MI)</region>, 
+									(<region>MI</region>), 
 									<country>Italy</country>.
 									<lb/>
 								</address>
@@ -359,7 +359,7 @@
 								<address>
 									<postCode>87036</postCode>
 									<settlement>Rende</settlement>
-									<region>(Cs)</region>,
+									(<region>Cs</region>),
 									<lb/>
 									<country>Italy</country>
 									<lb/>
@@ -420,7 +420,7 @@
                             </affiliation>
 							<marker>3</marker>
 							<affiliation>
-                            	<orgName type="department">Samsung Electronics</orgName>, 
+                            	<orgName type="institution">Samsung Electronics</orgName>, 
                                 <address>
                                 	<addrLine>San 14-1 Nongseo-dong</addrLine>, 
                                 	<addrLine>Giheung-gu</addrLine>, 
@@ -620,7 +620,7 @@
                             <marker>3</marker> 
                             <affiliation>
 								<orgName type="department">Institut Néel</orgName>, 
-                            	<orgName type="institution">CNRS et Université Joseph Fourier</orgName>, <lb/>  
+                            	<orgName type="institution" key="instit1">CNRS</orgName> et <orgName type="institution" key="instit2">Université Joseph Fourier</orgName>, <lb/>  
                                 <address>
                                 	<postBox>BP 166</postBox>
                                 	<postCode>38042</postCode>
@@ -662,7 +662,7 @@
                             	<orgName type="institution">Ghent University</orgName>,  <lb/>  
                                 <address>
                                 	<settlement>Gent<lb/> </settlement> 	                                	
-                                	<country>(Belgium)<lb/></country>
+                                	(<country>Belgium</country>)<lb/>
                                 </address> 
                             </affiliation>
                             <marker>2</marker> 
@@ -671,7 +671,7 @@
                             	<orgName type="institution">Otto-von-Guericke-University <lb/>  </orgName>
                                 <address>
                                 	<settlement>Magdeburg</settlement> 	                                	
-                                	<country>(Germany)<lb/></country>
+                                	(<country>Germany</country>)<lb/>
                                 </address> 
                             </affiliation>
                         </author>   
@@ -706,9 +706,9 @@
                     	<author>
 							<affiliation>
 								<orgName type="department">Dipartimento  di Ingegneria delle Costruzioni Meccaniche, Nucleari, Aeronautiche e di <lb/> Metallurgia (DIEM)</orgName>,
-								<orgName type="department">Alma Mater Studiorum</orgName>
+								<orgName type="institution">Alma Mater Studiorum
 								- 
-                            	<orgName type="institution">Università di Bologna  </orgName>
+                            	Università di Bologna  </orgName>
                                 <address>
                                 	<addrLine>Via Saragozza <lb/> 8</addrLine>, 
                                 	<postCode>40123</postCode>
@@ -836,8 +836,8 @@
 								<orgName type="department">Department of Physics</orgName>, 
 								<orgName type="institution">University of York</orgName>, <lb/> 
                                 <address>
-                                	<settlement>Heslington</settlement>, <lb/>
-                                	<region>York</region>, 
+                                	<addrLine>Heslington</addrLine>, <lb/>
+                                	<settlement>York</settlement>, 
                                 	<postCode>YO10 5DD</postCode>,  
                                     <country>United <lb/>Kingdom<lb/></country>
                                 </address> 
@@ -1015,10 +1015,16 @@
                                     <settlement>Darmstadt</settlement>,
                                 </address> 
                                 <orgName type="institution">Technische Universität Darmstadt</orgName>, 
+                            </affiliation>
+                            <affiliation>
                                 <marker>a</marker>
 								<orgName type="department">Eduard-Zintl-Institut für Anorganische und Physikalische Chemie</orgName>
+                            </affiliation>
+                            <affiliation>
 								<marker>b</marker>
 								<orgName type="department">Fachbereich Chemie<lb/></orgName>
+                            </affiliation>
+                            <affiliation>
 								<marker>c</marker>
 								<address>
                                     <settlement>Madras</settlement>,
@@ -1034,9 +1040,9 @@
                        	<author>
                        		<affiliation>
 	                       		<address>
-                                    <settlement>Dresden,</settlement>
+                                    <settlement>Dresden</settlement>,
                                 </address> 
-								<orgName type="department">Technische Universität <lb/></orgName>
+								<orgName type="institution">Technische Universität <lb/></orgName>
                             </affiliation>
                        	</author> 
 
@@ -1367,18 +1373,18 @@
 								<orgName type="institution">Università di <lb/> Salerno</orgName>, 
 								<address>
 									<settlement>Fisciano</settlement> ,
-									<region>(SA)</region>,
+									(<region>SA</region>),
 									<country>Italy <lb/></country>
 								</address> 
                             </affiliation>
                             <marker>2</marker> 
 							<affiliation>
-								<orgName type="laboratory">CNR-SPIN Salerno and  </orgName>
+								<orgName type="laboratory">CNR-SPIN Salerno</orgName> and  
 								<orgName type="department">Dipartimento di Fisica "E.R. Caianiello"</orgName>,  
 								<orgName type="institution">Università di <lb/> Salerno</orgName>, 
 								<address>
 									<settlement>Fisciano</settlement>,
-									<region>(SA)</region>,
+									(<region>SA</region>),
 									<country>Italy <lb/></country>
 								</address> 
                             </affiliation>
@@ -1441,7 +1447,7 @@
 							<affiliation>
 								<orgName type="laboratory">Laboratoire d'Electrochimie et de Physico-chimie des Matériaux et des Interfaces</orgName>
 								<orgName type="laboratory">UMR-5631</orgName>,  
-								<orgName type="institution"> (INPG– <lb/>CNRS)</orgName>,  
+								 (<orgName type="institution" key="instit1">INPG</orgName>– <lb/><orgName type="institution" key="instit2">CNRS</orgName>),  
 								<address>
 									<postBox>BP75</postBox>, 
 									<postCode>38042</postCode>
@@ -1467,7 +1473,7 @@
                             </affiliation>
                             <marker>2<lb/></marker> 
 							<affiliation>
-								<orgName type="department">IIM,  </orgName>
+								<orgName type="department">IIM</orgName>,  
 								<orgName type="institution">Universidad Nacional Autónoma de México (UNAM)</orgName>. 
 								<address>
 									<addrLine>Circuito Exterior</addrLine>, <lb/>
@@ -1765,7 +1771,7 @@
                             <marker>b</marker> 
 							<affiliation>
 								<orgName type="department">State Key Laboratory of Inorganic Synthesis and<lb/> Preparative Chemistry</orgName>, 
-								<orgName type="institution">College of Chemistry</orgName>, 
+								<orgName type="department">College of Chemistry</orgName>, 
 								<orgName type="institution"> Jilin University<lb/> </orgName>
                             </affiliation>
                         </author>
@@ -1980,7 +1986,7 @@
 								</address> 
 								<orgName type="department">Key Laboratory of Polyoxometalates Science of Ministry of Education</orgName>,   
 								<orgName type="department">College of Chemistry</orgName>, 
-								<orgName type="department">Northeast<lb/> Normal University <lb/></orgName>
+								<orgName type="institution">Northeast<lb/> Normal University <lb/></orgName>
                             </affiliation>
                         </author> 
 
@@ -2105,9 +2111,9 @@
 
                        	<author>	
                        		<affiliation>
-                            	<orgName type="department">Institut UTINAM</orgName>, 
+                            	<orgName type="laboratory" key="lab1">Institut UTINAM</orgName>, 
                                 <orgName type="institution">Université de Franche-Comté</orgName>, <lb/>
-                                <orgName type="institution">UMR CNRS 6213</orgName>, 
+                                <orgName type="laboratory" key="lab1">UMR CNRS 6213</orgName>, 
                                 <address>
                                 	<postCode>25030</postCode>
                                 	<settlement>Besançon cedex</settlement>, 
@@ -2345,7 +2351,7 @@
 								Aus dem 
 								<orgName type="department">Kaiser-Wilhelm-Institut für Chemie</orgName>,
 								<address>
-									<country>Tailfingen</country>
+									<settlement>Tailfingen</settlement>
 								</address>	
 							</affiliation>
 						</author>

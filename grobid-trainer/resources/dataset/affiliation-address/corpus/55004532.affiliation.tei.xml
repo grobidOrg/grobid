@@ -11,7 +11,7 @@
 							<orgName type="institution">Monash University</orgName>
 							<lb/>
 							<address>
-								<addrLine>Wellington Road Clayton</addrLine>,
+								<addrLine>Wellington Road</addrLine> <settlement>Clayton</settlement>,
 								<region>Victoria</region>
 								<country>AUSTRALIA</country>
 							</address>

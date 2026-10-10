@@ -14,10 +14,12 @@
 							<orgName type="institution">Institut National de la Recherche<lb/> Agronomique (INRA)</orgName>,
 							<address>
 								<addrLine>Le Magneraud</addrLine>,
+								<settlement>Surgères</settlement>
 							</address>
+							and
 						</affiliation>
 						<affiliation>	
-							<orgName type="department">Surgères and GRTMV</orgName>,
+							<orgName type="department">GRTMV</orgName>,
 							<orgName type="department">Faculté de Médecine</orgName>,
 							<orgName type="institution">Centre Hospitalo<lb/> Universitaire</orgName>,
 							<address>
@@ -48,7 +50,7 @@
 							</address>
 						</affiliation>	
 						<affiliation>	
-							<orgName type="department">Laboratoire de<lb/> Pharmacologie</orgName>,
+							<orgName type="laboratory">Laboratoire de<lb/> Pharmacologie</orgName>,
 							<orgName type="department">Faculté de Médecine</orgName>,
 							<address>
 								<addrLine>Paris XII</addrLine>,

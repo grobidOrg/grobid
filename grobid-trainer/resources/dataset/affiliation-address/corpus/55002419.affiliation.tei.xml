@@ -8,21 +8,24 @@
 						<author>
 
 						<affiliation>
-							<orgName type="department">Engineering Project Leader</orgName>
+							Engineering Project Leader
 							<lb/>
 							<orgName type="institution">PHILIPS HEALTHCARE SYSTEMS</orgName>,
 							a Division of<lb/> 
-							<orgName type="institution">Philips Electronics North America Corporation<lb/> Andover</orgName>,
+							<orgName type="institution">Philips Electronics North America Corporation<lb/></orgName>
 							<address>
+								<settlement>Andover</settlement>,
 								<region>MA</region>
 								<postCode>01810</postCode>
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="laboratory">Philips Research Labs</orgName>,
 							<lb/> 
 							<address>
-								<addrLine>Briarcliff Manor</addrLine>
-								<settlement>New York</settlement>,
+								<settlement>Briarcliff Manor</settlement>
+								<region>New York</region>,
 								<region>NY</region>
 								<postCode>10510</postCode>
 							</address>

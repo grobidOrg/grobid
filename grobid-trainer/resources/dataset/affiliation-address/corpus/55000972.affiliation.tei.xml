@@ -11,7 +11,7 @@
 							<orgName type="institution">BASF CORPORATION</orgName>
 							<lb/>
 							<address>
-								<addrLine>100 Campus Drive<lb/> Florham Park</addrLine>,
+								<addrLine>100 Campus Drive</addrLine><lb/> <settlement>Florham Park</settlement>,
 								<region>NJ</region>
 								<postCode>07932</postCode>,
 								<country>USA</country>

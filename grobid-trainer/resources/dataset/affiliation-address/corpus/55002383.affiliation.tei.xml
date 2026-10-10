@@ -11,8 +11,8 @@
 							<marker>a</marker>
 							<orgName type="department">Department of Molecular Pathology</orgName>,
 							<orgName type="institution">The University of Texas</orgName>							
+							<orgName type="institution">M. D. Anderson Cancer Center</orgName>
 							<address>
-								<addrLine>M. D. Anderson Cancer Center</addrLine>
 								<lb/>
 								<addrLine>1515, Holcombe Boulevard</addrLine>,
 								<settlement>Houston</settlement>,
@@ -24,8 +24,8 @@
 						</affiliation>
 						<affiliation>
 							<marker>b</marker>
-							<orgName type="institution">University of California</orgName>, 
-							<orgName type="department">Davis</orgName>,
+							<orgName type="institution">University of California, 
+							Davis</orgName>,
 							<orgName type="department">ECE Dept.</orgName>,
 							<address>
 								<settlement>Davis</settlement>,
@@ -51,7 +51,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>d</marker>
-							<orgName type="department">Lynntech Incorporated</orgName>,
+							<orgName type="institution">Lynntech Incorporated</orgName>,
 							<address>
 								<addrLine>1701 Rock Prairie Road</addrLine>,
 								<settlement>College Station</settlement>,

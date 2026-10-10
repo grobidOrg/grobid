@@ -13,26 +13,36 @@
 								<settlement>Valencia</settlement>,
 								<region>CA</region>,
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">Nevada Cancer Institute</orgName>,
 							<address>
-								<addrLine>Las Vegas</addrLine>,
+								<settlement>Las Vegas</settlement>,
 								<region>NV</region>,
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">Arizona Cancer Center</orgName>,
 							<address>
 								<settlement>Tucson</settlement>,
 								<region>AZ</region>,
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">Dartmouth-Hitchcock Medical<lb/> Center</orgName>,
 							<address>
 								<settlement>Lebanon</settlement>,
 								<region>NH</region>,
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">Moffitt Cancer Center</orgName>,
 							<address>
 								<settlement>Tampa</settlement>,
 								<region>FL</region>,
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">Lombardi Comprehensive Cancer Center</orgName>,
 							<address>
 								<settlement>Georgetown</settlement>,

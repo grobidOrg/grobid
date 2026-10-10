@@ -14,9 +14,11 @@
 								<marker>1</marker> 
 								<orgName type="department">Department of Physics</orgName>,
 								<address>
-								<addrLine>Post Office Box 35 (YFL)</addrLine>,
+								<postBox>Post Office Box 35 (YFL)</postBox>,
 									<postCode>FI-40014</postCode>
-									<orgName type="institution">University of <lb/>Jyväskylä</orgName>
+								</address>
+								<orgName type="institution">University of <lb/>Jyväskylä</orgName>
+								<address>
 									<country key="FI">Finland<lb/></country>
 								</address>			
 							</affiliation>	

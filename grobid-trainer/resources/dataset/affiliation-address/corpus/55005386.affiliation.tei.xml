@@ -50,11 +50,11 @@
 								</address>
 								<marker>4</marker>,
 								<address>
-									<addrLine>Japan</addrLine>,
+									<country>Japan</country>,
 								</address>
 							</affiliation>
 							<affiliation>
-								<orgName type="institution">and Henry Vogt Cancer Research Institute</orgName>,
+								and <orgName type="institution">Henry Vogt Cancer Research Institute</orgName>,
 								<orgName type="institution">University of Louisville</orgName>,
 								<address>
 									<settlement>Louisville</settlement>,

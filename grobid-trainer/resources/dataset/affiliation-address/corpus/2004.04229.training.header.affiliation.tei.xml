@@ -15,7 +15,7 @@
 							<lb/>
 								<postCode>44780</postCode>
 								<settlement>Bochum</settlement>,
-								<country>Germany;</country>
+								<country>Germany</country>;
 							</address>
 						</affiliation>
 							
@@ -28,7 +28,7 @@
 								<addrLine>Universitätsstr. 1</addrLine>,
 								<postCode>40225</postCode>
 								<settlement>Düsseldorf</settlement>,
-								<country>Germany;</country>
+								<country>Germany</country>;
 							</address>
 						</affiliation>
 							
@@ -39,7 +39,7 @@
 							<address>
 								<postCode>52425</postCode>
 								<settlement>Jülich</settlement>,
-								<country>Germany;</country>
+								<country>Germany</country>;
 							</address>
 						</affiliation>
 							
@@ -51,7 +51,7 @@
 								<addrLine>Universitätsstr. 1</addrLine>,
 								<postCode>40225</postCode>
 								<settlement>Düsseldorf</settlement>,
-								<country>Germany;</country>
+								<country>Germany</country>;
 							<lb/>
 							</address>
 						</affiliation>
@@ -63,7 +63,7 @@
 								<postBox>CS 20156</postBox>,
 								<postCode>38042</postCode>
 								<settlement>Grenoble</settlement>,
-								<country>France;</country>
+								<country>France</country>;
 							</address>
 						</affiliation>
 							
@@ -76,7 +76,7 @@
 								<addrLine>Barbarastr. 7</addrLine>,
 								<postCode>49076</postCode>
 								<settlement>Osnabrück</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 							
@@ -89,7 +89,7 @@
 								<addrLine>Landoltweg 2</addrLine>,
 								<postCode>52056</postCode>
 								<settlement>Aachen</settlement>,
-								<country>Germany,</country>
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 							
@@ -105,15 +105,15 @@
 								<addrLine>Wilhelm-Johnen-Str.</addrLine>,
 								<postCode>52425</postCode>
 								<settlement>Jülich</settlement>,
-								<country>Germany;</country>
+								<country>Germany</country>;
 							</address>
 						</affiliation>
 
 				        <affiliation>
 							<orgName type="department">Department<lb/> of Bioengineering and Therapeutic Sciences</orgName>,
-							<orgName type="institution">University of California</orgName>,
+							<orgName type="institution">University of California,
+							San Francisco</orgName>,
 							<address>
-								<addrLine>San Francisco</addrLine>,
 								<addrLine>Mission Bay Byers Hall</addrLine>,
 							<lb/>
 								<addrLine>1700 4th Street</addrLine>,
@@ -131,7 +131,7 @@
 								<postCode>34000</postCode>
 							<lb/>
 								<settlement>Montpellier</settlement>,
-								<country>France.</country>
+								<country>France</country>.
 							</address>
 						</affiliation>
 
