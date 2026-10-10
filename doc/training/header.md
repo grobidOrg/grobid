@@ -229,6 +229,8 @@ An affiliation sometimes contains address elements (building, street, P.O. box, 
     <address>Finland<lb/></address>
 ```
 
+A job title printed as part of the affiliation ("1 Associate Professor, Department of Family Medicine, Université de Sherbrooke", "2 Program Chief, Gastroenterology Group Health Cooperative") stays **inside** the `<affiliation>` field: the affiliation-address model leaves it untagged afterwards, and taking it out would separate the marker from the organisation. Only a job title standing between the author name and the affiliation is left outside, as described for authors.
+
 This does not apply when the address closes one affiliation and another affiliation follows (e.g. `Mayo Clinic, Rochester, MN, Duke Cancer Institute, Durham, NC`): each affiliation then gets its own `<affiliation>` and `<address>`.
 
 - When a marker precedes the prefix (e.g. `Present address:`, `Corresponding author.`, `Corresponding author at:`), keep marker, prefix and affiliation in one `<affiliation>`, e.g. `<affiliation>† Corresponding Author. Norges Bank;</affiliation>`.
