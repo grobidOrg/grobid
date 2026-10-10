@@ -35,8 +35,10 @@
 
 	Reviewing editor:
 	<editor>Peter A<lb/> Rodgers</editor>, 
-	<!-- check: affiliation of the editor left untagged -->
-	eLife, United Kingdom<lb/>
+	<byline>
+	<affiliation>eLife,</affiliation>
+	</byline>
+	<address>United Kingdom</address><lb/>
 
 	<note type="copyright">Copyright Broderick and<lb/> Casadevall. This article is<lb/> distributed under the terms of<lb/> the Creative Commons<lb/> Attribution License, which<lb/> permits unrestricted use and<lb/> redistribution provided that the<lb/> original author and source are<lb/> credited.<lb/></note>
 

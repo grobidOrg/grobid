@@ -96,11 +96,10 @@
 	<docAuthor>Karen Stenner, PhD,</docAuthor> Lecturer
 	</byline>
 
-	in 
+	in Health Services Research,
 
 	<byline>
-	<!-- check: "Lecturer in Health Services Research" is a job title, the affiliation may start at "School of Health Sciences" -->
-	<affiliation>Health Services Research, School of Health Sciences,<lb/> University of Surrey,</affiliation>
+	<affiliation>School of Health Sciences,<lb/> University of Surrey,</affiliation>
 	</byline>
 
 	<address>UK<lb/></address>
