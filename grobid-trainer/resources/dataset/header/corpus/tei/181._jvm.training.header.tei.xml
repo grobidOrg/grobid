@@ -36,8 +36,7 @@
 	? This paper is presented to the
 	<meeting>23rd International Symposium on Mathematical Foundations of<lb/> Computer Science, Brno, Czech Republic, August 24 28, 1998, </meeting>
 
-	<!-- check: publisher not in isolation (proceedings series of the meeting), left untagged -->
-	Springer LNCS, to appear.
+	<publisher>Springer LNCS</publisher>, to appear.
 
 		</front>
 	</text>
