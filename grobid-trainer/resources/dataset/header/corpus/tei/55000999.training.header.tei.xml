@@ -31,7 +31,7 @@
 	<affiliation>1 and Department of Infectious Diseases,<lb/> St. Jude Children&apos;s Research Hospital, 2 and Department of Pathology, University of Tennessee, 3<lb/></affiliation>
 	</byline>
 
-	<!-- check: superscript markers displaced by the extraction, several marked affiliations on one line kept in one field -->
+	<!-- check: ASM style, the superscript marker follows its affiliation (Russia,1 ... Hospital,2 ... Tennessee,3); the 1 belongs to the Ivanovsky institute but sits after its address -->
 	<address>Memphis, Tennessee 38105<lb/></address>
 
 	<note type="submission">Received 11 July 2007/Accepted 9 September 2007<lb/></note>
