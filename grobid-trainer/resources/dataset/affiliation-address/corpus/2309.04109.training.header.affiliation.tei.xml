@@ -7,8 +7,8 @@
 
 						<affiliation>
 							<marker>a</marker>
-							<orgName type="laboratory">Institute for Artificial Intelligence</orgName>,
-							<orgName type="institution">Tsinghua University (THUAI)</orgName>;
+							<orgName type="laboratory" key="lab1">Institute for Artificial Intelligence</orgName>,
+							<orgName type="institution">Tsinghua University</orgName> (<orgName type="laboratory" key="lab1">THUAI</orgName>);
 							<orgName type="institution">Beijing National<lb/> Research Center for Information Science and Technology (BNRist)</orgName>;
 							<orgName type="department">Department of<lb/> Automation</orgName>,
 							<orgName type="institution">Tsinghua University</orgName>,

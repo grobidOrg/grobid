@@ -23,7 +23,7 @@
 							<orgName type="department">School of Biomedical Sciences</orgName>,
 							<orgName type="institution">The University of Hong Kong</orgName>,
 							<address>
-								<settlement>Pokfulam</settlement>,
+								<addrLine>Pokfulam</addrLine>,
 								<settlement>Hong Kong</settlement>,
 								<region>Hong Kong SAR</region>,
 								<lb/>
@@ -35,7 +35,7 @@
 							<orgName type="laboratory">State Key Laboratory of Liver Research</orgName> (
 							<orgName type="institution">The University of Hong Kong</orgName>),
 							<address>
-								<settlement>Pokfulam</settlement>,
+								<addrLine>Pokfulam</addrLine>,
 								<settlement>Hong Kong</settlement>,
 								<lb/>
 								<region>Hong Kong SAR</region>,

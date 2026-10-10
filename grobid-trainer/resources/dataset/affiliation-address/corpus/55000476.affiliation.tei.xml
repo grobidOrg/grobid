@@ -18,7 +18,7 @@
 							</address>
 						</affiliation>
 						<affiliation>
-							<orgName type="department">tDepartment of Pathology</orgName>,
+							<marker>t</marker><orgName type="department">Department of Pathology</orgName>,
 							<orgName type="institution">Yale University School of Medicine</orgName>,
 							<address>
 								<settlement>New Haven</settlement>,

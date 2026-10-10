@@ -27,7 +27,7 @@
 							<lb/>
 							<address>
 								<addrLine>Ciudad Universitaria</addrLine>,
-								<settlement>Colonia San Manuel Puebla</settlement>,
+								<addrLine>Colonia San Manuel</addrLine> <settlement>Puebla</settlement>,
 								<country>México</country>
 							<lb/>
 							</address>

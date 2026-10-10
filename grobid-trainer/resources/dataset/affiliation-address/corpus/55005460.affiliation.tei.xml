@@ -12,7 +12,7 @@
 							<orgName type="institution">CEA</orgName>,
 							<orgName type="department">DEN</orgName>,
 							<address>
-								<region>Cadarache</region>,
+								<addrLine>Cadarache</addrLine>,
 								<postCode>F-13108</postCode>
 								<settlement>St Paul-lez-Durance</settlement>,
 								<country>France</country>
@@ -22,8 +22,8 @@
 							<marker>2</marker>
 							<orgName type="institution">CEA</orgName>,
 							<orgName type="department">DAM</orgName>,
+							<orgName type="department">DIF</orgName>,
 							<address>
-								<region>DIF</region>,
 								<postCode>F-91297</postCode>
 								<settlement>Arpajon</settlement>,
 								<country>France</country>

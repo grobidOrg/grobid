@@ -586,7 +586,7 @@
 								<orgName type="department">Department for Solid State Sciences</orgName>,    
                             	<orgName type="institution">Ghent University</orgName>,  
                                 <address>
-                                	<addrLine>Krijgslaan 281 (S1) 9000</addrLine>, 
+                                	<addrLine>Krijgslaan 281 (S1)</addrLine> <postCode>9000</postCode>, 
                                 	<settlement>Ghent <lb/> </settlement> 	                                	
                                 	<postCode>9000</postCode>, 
                                 	<country>Belgium<lb/></country>
@@ -597,8 +597,8 @@
                         <author>
 							<marker>1<lb/></marker> 
 							<affiliation>
-								<orgName type="department">Groupe de Physique des Matériaux</orgName>,    
-								<orgName type="laboratory">UMR CNRS 6634</orgName>, 
+								<orgName type="laboratory" key="lab1">Groupe de Physique des Matériaux</orgName>,    
+								<orgName type="laboratory" key="lab1">UMR CNRS 6634</orgName>, 
                             	<orgName type="institution">Université de Rouen <lb/>  </orgName>
                                 <address>
                                 	<postCode>76801 </postCode>
@@ -690,11 +690,11 @@
                             </affiliation>
                             <marker>2</marker> 
                             <affiliation>
-                            	<orgName type="department" key="dep1">Instituto de Física</orgName>, 
-                                <orgName type="department" key="dep2">Facultad de Ingeniería</orgName>, 
+                            	<orgName type="department">Instituto de Física</orgName>, 
+                                <orgName type="department">Facultad de Ingeniería</orgName>, 
                                 <orgName type="institution">Universidad de la Republica</orgName>,
                                 <address>
-                                	<addrLine>Herrera y <lb/> Reissig 565, C.C. 30</addrLine> 
+                                	<addrLine>Herrera y <lb/> Reissig 565</addrLine>, <postBox>C.C. 30</postBox> 
                                 	<postBox>C.C. 30</postBox>, 
                                 	<postCode>11000</postCode>
                                 	<settlement>Montevideo</settlement>
@@ -721,7 +721,7 @@
                         <author>
 							<marker>†<lb/></marker> 
 							<affiliation>
-								<orgName type="department">Leibniz  Institute of Plasma Science and Technology</orgName>,
+								<orgName type="institution">Leibniz  Institute of Plasma Science and Technology</orgName>,
                                 <address>
                                 	<addrLine>Felix-Hausdorff-Str. 2</addrLine>, <lb/>
                                  	<postCode>D-17489</postCode>
@@ -756,7 +756,7 @@
                                 <lb/>
                             </affiliation>
                             <affiliation>
-								<orgName type="department">Max Planck Institute for Gravitational Physics <lb/> </orgName>
+								<orgName type="institution">Max Planck Institute for Gravitational Physics <lb/> </orgName>
 								<orgName type="institution">Albert Einstein Institute (AEI) <lb/> </orgName>
                                 <address>
                                 	<addrLine>Am Mühlenberg 1 <lb/></addrLine> 
@@ -771,7 +771,7 @@
 	                        <marker>1</marker> 
 							<affiliation>
 								<orgName type="department">Centre  for Cold Matter</orgName>, 
-								<orgName type="laboratory">Blackett Laboratory</orgName>, 
+								<orgName type="department">Blackett Laboratory</orgName>, 
 								<orgName type="institution">Imperial College</orgName>,  
                                 <address>
                                 	<addrLine>Prince Consort <lb/> Road</addrLine>,   
@@ -882,7 +882,7 @@
                         <author>
 	                        <marker>1</marker> 
 							<affiliation>
-								<orgName type="department">Laboratory  of Nuclear Problems</orgName>, 
+								<orgName type="laboratory">Laboratory  of Nuclear Problems</orgName>, 
 								<orgName type="institution">Joint Institute for Nuclear Research</orgName>, 
                                 <address>
                                    	<postCode>RU-141980 <lb/></postCode>
@@ -1011,6 +1011,7 @@
                        	
                        	<author>
                        		<affiliation>
+                       			<!-- check: institution and city printed once as a shared header before the lettered departments of the next elements; text cannot be moved, left as is -->
                        			<address>
                                     <settlement>Darmstadt</settlement>,
                                 </address> 
@@ -1391,9 +1392,9 @@
                             <marker>3</marker> 
 							<affiliation>
 								<orgName type="laboratory">NEST</orgName>
-								<orgName type="department">CNR-INFM</orgName>
+								<orgName type="institution" key="instit1">CNR-INFM</orgName>
 								and 
-								<orgName type="institution">Scuola Normale Superiore</orgName>, 
+								<orgName type="institution" key="instit2">Scuola Normale Superiore</orgName>, 
 								<address>
 									<postCode>I-56126</postCode>
 									<settlement>Pisa</settlement>, 
@@ -1728,6 +1729,7 @@
                         
                         <author>
                         	<affiliation>
+								<!-- check: institution and city printed once as a shared header before the lettered departments of the next elements; text cannot be moved, left as is -->
 								<address>
 									<settlement>Darmstadt</settlement>, 
 								</address> 
@@ -1756,6 +1758,7 @@
                         
                         <author>
                         	<affiliation>
+								<!-- check: address-only element whose organisations are in the following marked elements; text cannot be moved, left as is -->
 								<address>
 									<settlement>Changchun</settlement>
 									/ 
@@ -1778,6 +1781,7 @@
                         
                         <author>
                         	<affiliation>
+								<!-- check: address-only element whose organisations are in the following marked elements; text cannot be moved, left as is -->
 								<address>
 									<settlement>Innsbruck</settlement>
 									/ 
@@ -1874,6 +1878,7 @@
 
                         <author>
                         	<affiliation>
+								<!-- check: address-only element whose organisations are in the following marked elements; text cannot be moved, left as is -->
 								<address>
 									<settlement>Beijing</settlement>
 									/ 
@@ -1887,6 +1892,7 @@
                             </affiliation>
                             <marker>b</marker> 
 							<affiliation>
+								<!-- check: centre whose institution (University of Science and Technology Beijing) is printed only in the previous element; text cannot be moved, left as is -->
 								<orgName type="department">Analytical and Testing Center</orgName>
 								, and<lb/> 
 							</affiliation>
@@ -1922,6 +1928,7 @@
                         
                         <author>
                         	<affiliation>
+								<!-- check: city, country and institution printed once as a shared header before the lettered institutes of the next elements; text cannot be moved, left as is -->
 								<address>
 									<settlement>Kazan</settlement>
 									/ 
@@ -2004,8 +2011,8 @@
                             </affiliation>
                         	<marker>2</marker> 
                         	<affiliation>
-                            	<orgName type="department" key="dep1">Department of Chemistry</orgName>, 
-                                <orgName type="laboratory" key="dep2">Inorganic Chemistry</orgName>, 
+                            	<orgName type="department">Department of Chemistry</orgName>, 
+                                <orgName type="laboratory">Inorganic Chemistry</orgName>, 
                                 <orgName type="institution">University of Köln</orgName>, 
                                 <address>
                                 	<addrLine>Greinstr. 6</addrLine>, <lb/>
@@ -2018,8 +2025,8 @@
                         
                        <author>
                        		<affiliation>
-                            	<orgName type="laboratory" key="dep1">Center for Atomic-scale Materials Design</orgName>,
-                                <orgName type="department" key="dep2">Department of Physics</orgName>, 
+                            	<orgName type="laboratory">Center for Atomic-scale Materials Design</orgName>,
+                                <orgName type="department">Department of Physics</orgName>, 
                                 <orgName type="institution">Technical <lb/>University of Denmark</orgName>, 
                                 <address>
                                    	<postCode>DK-2800</postCode>
@@ -2032,9 +2039,10 @@
                        <author>
                        		<affiliation>
                             	<orgName type="department">FYSIKUM</orgName>, 
-                            	<orgName type="institution" key="instit1">Stockholm University</orgName>, 
-                                <orgName type="department" key="instit2">Albanova University Center</orgName>, 
+                            	<orgName type="institution">Stockholm University</orgName>, 
+                                <!-- check: AlbaNova University Center is the campus shared by Stockholm University and KTH, retyped from department to addrLine per the campus rule; keys removed -->
                                 <address>
+                                	<addrLine>Albanova University Center</addrLine>, 
                                 	<postCode>SE-10691 <lb/></postCode>
                                 	<settlement>Stockholm</settlement>, 
                                 	<country key="SE">Sweden<lb/></country>
@@ -2098,7 +2106,7 @@
                        
                        	<author>						
 							<affiliation>
-                            	<orgName type="department">Laboratory of Solid-State Physics</orgName> 
+                            	<orgName type="laboratory">Laboratory of Solid-State Physics</orgName> 
  								and    
                             	<orgName type="department">Institute for Nanoscale Physics and Chemistry (INPAC)</orgName>, <lb/>
                                 <address>
@@ -2137,8 +2145,8 @@
                        	<author>	
                        		<marker>a</marker>
                        	 	<affiliation>
-                            	<orgName type="department">Max-Planck-Institut  für Gravitationsphysik</orgName>, 
-                                <orgName type="department">Albert-Einstein-Institut</orgName>, 
+                            	<orgName type="institution">Max-Planck-Institut  für Gravitationsphysik</orgName>, 
+                                <orgName type="institution">Albert-Einstein-Institut</orgName>, 
                                 <address>
                                 	<postCode>14476</postCode>
                                     <settlement>Golm</settlement>,
@@ -2198,7 +2206,7 @@
                                 <orgName type="institution">INFN Trento</orgName>, 
                                 <address>
                                 	<postCode>I-38100</postCode>
-                                    <settlement>Povo <lb/> (Trento)</settlement>,
+                                    <settlement>Povo</settlement> <lb/> (<region>Trento</region>),
                                     <country key="IT">Italy<lb/></country>
                                 </address>
                           	</affiliation>
@@ -2231,7 +2239,7 @@
                                 <address>
                                 	<addrLine>Viale dell'Università</addrLine>
                                 	<postCode>35020</postCode> 
-                                    <settlement> Legnaro (Padova)</settlement>, 
+                                    <settlement> Legnaro</settlement> (<region>Padova</region>), 
                                     <country key="IT">Italy<lb/></country>
                                 </address>
                             </affiliation>
@@ -2251,11 +2259,11 @@
                        	<author>	
                        		<marker>1</marker>
                        		<affiliation>
-                            	<orgName type="department" key="dep1">Dipartimento di Scienze Fisiche</orgName>, 
+                            	<orgName type="department">Dipartimento di Scienze Fisiche</orgName>, 
                             	<orgName type="institution" key="instit1">Università di Napoli " Federico II "</orgName>,
                             	<orgName type="institution" key="instit2">INFN Sez. di Napoli</orgName>,<lb/>
-                                <orgName type="department" key="dep2">Compl. Univ. di Monte S. Angelo</orgName>,
-                              	<address>
+                                <address>
+                                	<addrLine>Compl. Univ. di Monte S. Angelo</addrLine>,
                                 	<addrLine>Edificio G, Via Cinthia</addrLine>, 
                                 	<postCode>I-80126</postCode>, 
                                   	<settlement>Napoli</settlement>,
@@ -2267,7 +2275,7 @@
                              	<orgName type="department">Dipartimento di Ingegneria</orgName>, 
                              	<orgName type="institution">Università del Sannio</orgName>, <lb/> 
                              	<address>
-                             		<region>Benevento</region>, 
+                             		<settlement>Benevento</settlement>, 
                                   	<addrLine>C.so Garibaldi 107</addrLine>, 
                                   	<postCode>I-80125</postCode>
                                   	<settlement>Benevento</settlement>, 
@@ -2303,7 +2311,7 @@
                        	
                         <author>	
                        		<affiliation>
-                       			<orgName type="department">Leibniz Institute for Plasma Science and Technology (INP) </orgName>,
+                       			<orgName type="institution">Leibniz Institute for Plasma Science and Technology (INP) </orgName>,
                                 <address>
                                  	<addrLine>Felix-Hausdorff-Str. 2</addrLine>,
                                  	<postCode>17489</postCode>

@@ -12,8 +12,10 @@
 							<address>
 								<settlement>East Hartford</settlement>,
 								<region>CT</region>
-								<postCode>06118</postCode> Prepared for
-							</address>
+								<postCode>06118</postCode>
+							</address> Prepared for
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">The U.S. Department of Energy</orgName>,
 							<orgName type="department">Office of Distributed Energy</orgName>
 						</affiliation>

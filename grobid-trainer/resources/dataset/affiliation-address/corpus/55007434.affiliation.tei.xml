@@ -9,7 +9,7 @@
 
 						<affiliation>
 							<marker>1</marker>
-							<orgName type="department">Energy research Centre of the Netherlands (ECN)</orgName>,
+							<orgName type="institution">Energy research Centre of the Netherlands (ECN)</orgName>,
 							<address>
 								<postBox>P.O. Box 1</postBox>,
 								<postCode>1755 ZG</postCode>
@@ -53,7 +53,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>5</marker>
-							<orgName type="department">Dutch Polymer Institute (DPI)</orgName>,
+							<orgName type="institution">Dutch Polymer Institute (DPI)</orgName>,
 							<address>
 								<postBox>P.O. Box 902</postBox>,
 								<postCode>5600 AX</postCode>

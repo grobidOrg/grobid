@@ -28,7 +28,8 @@
 							</address>
 						</affiliation>
 						<affiliation>	
-							<orgName type="department">FinlanInstituteofEngineeringMaterialsandBiomaterials</orgName>,
+							<!-- check: "Finlan" is the OCR-glued country Finland of the previous affiliation; it cannot be moved there, so it is left untagged here -->
+							Finlan<orgName type="department">InstituteofEngineeringMaterialsandBiomaterials</orgName>,
 							<orgName type="institution">SilesianUni¨ersityofTechnology</orgName>,
 							<address>
 								<addrLine>ul.Konarskiego18a</addrLine>,

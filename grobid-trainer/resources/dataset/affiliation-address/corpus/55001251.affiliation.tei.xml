@@ -12,6 +12,7 @@
 							<orgName type="institution">CEA</orgName>,
 							<orgName type="institution">LIST</orgName>,
 							<address>
+								<!-- check: "Boîte Courrier 94" is an internal mail-stop of the CEA Saclay site rather than a P.O. box; left as addrLine (like Caltech mail codes), postBox would also be defensible -->
 								<addrLine>Boîte Courrier 94</addrLine>,
 								<settlement>Gif-sur-Yvette</settlement>,
 								<postCode>F-91191</postCode>

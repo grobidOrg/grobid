@@ -11,8 +11,8 @@
                         <marker>a</marker>
                         <orgName type="institution">Grenoble University</orgName>, 
       						<orgName type="laboratory" key="lab1">LEPMI</orgName>, 
-      						<orgName type="laboratory" key="lab2">UMR 5631 (CNRS-INPG-UJF)</orgName>, 
-      						<orgName type="laboratory" key="lab3">Laboratoire d’Electrochimie et de Physico chimie des Matériaux et Interfaces</orgName><lb/>
+      						<orgName type="laboratory" key="lab1">UMR 5631 (CNRS-INPG-UJF)</orgName>, 
+      						<orgName type="laboratory" key="lab1">Laboratoire d’Electrochimie et de Physico chimie des Matériaux et Interfaces</orgName><lb/>
                         <address>
                            <postBox>BP 75</postBox>, 
                            <postCode>38402</postCode> 

@@ -66,8 +66,8 @@
 						<affiliation>
 							<orgName type="institution">Manhattan<lb/> College</orgName>,
 							<address>
-								<settlement>Riverdale</settlement>,
-								<region>New York</region>,
+								<addrLine>Riverdale</addrLine>,
+								<settlement>New York</settlement>,
 								<region>NY</region>
 								<postCode>10471</postCode>
 							</address>

@@ -21,7 +21,7 @@
 							</address>
 						</affiliation>
 						<affiliation>	
-							<orgName type="department">tDivision of Medicinal and Natural Products Chemistry and Department<lb/> of Chemical and Biochemical Engineering</orgName>,
+							<marker>t</marker><orgName type="department">Division of Medicinal and Natural Products Chemistry and Department<lb/> of Chemical and Biochemical Engineering</orgName>,
 							<orgName type="institution">University of Iowa</orgName>,
 							<address>
 								<addrLine>Phar S-<lb/>328</addrLine>,
@@ -33,10 +33,10 @@
 							</address>
 						</affiliation>
 						<affiliation>	
-							<orgName type="institution">SHoward Hughes Medical Institute</orgName>,
+							<marker>S</marker><orgName type="institution">Howard Hughes Medical Institute</orgName>,
 							<orgName type="department">Division of Chemistry and<lb/> Chemical Engineering</orgName>,
 							<address>
-								<postCode>147-75CH</postCode>,
+								<addrLine>147-75CH</addrLine>,
 							</address>
 							<orgName type="institution">California Institute of Technology</orgName>,
 							<lb/>

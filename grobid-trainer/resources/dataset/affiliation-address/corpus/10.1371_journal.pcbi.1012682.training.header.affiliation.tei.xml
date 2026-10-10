@@ -28,7 +28,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="department">Einstein Center for Neurosciences<lb/> Berlin</orgName>,
+							<orgName type="institution">Einstein Center for Neurosciences<lb/> Berlin</orgName>,
 							<address>
 								<settlement>Berlin</settlement>,
 								<country>Germany</country>,
@@ -132,7 +132,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>13</marker>
-							<orgName type="department">Institute du Cerveau</orgName>-
+							<orgName type="institution">Institute du Cerveau</orgName>-
 							<orgName type="institution">Paris brain institute (ICM)</orgName>,
 							<address>
 								<settlement>Paris</settlement>,

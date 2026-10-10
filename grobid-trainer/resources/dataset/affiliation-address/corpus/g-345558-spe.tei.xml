@@ -24,9 +24,9 @@
 							
 							<affiliation>
 								<marker>2</marker> 
-								<orgName type="department" key="dep1">UCT-CERN Research Centre</orgName>
+								<orgName type="department">UCT-CERN Research Centre</orgName>
 								and
-								<orgName type="department" key="dep2">Department of Physics</orgName>,
+								<orgName type="department">Department of Physics</orgName>,
 								<orgName type="institution">University of Cape Town</orgName>,<lb/>
 								<address>
 									<settlement>Rondebosch</settlement>

@@ -55,7 +55,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>6</marker>
-							<orgName type="department">Institut de<lb/> Recherche pour le Developpement</orgName>,
+							<orgName type="institution">Institut de<lb/> Recherche pour le Developpement</orgName>,
 							<orgName type="institution">University of Montpellier</orgName>,
 							<address>
 								<settlement>Montpellier</settlement>,
@@ -88,7 +88,7 @@
 							<orgName type="institution">Ifakara Health Institute</orgName>,
 							<address>
 								<settlement>Ifakara</settlement>,
-								<settlement>Morogoro</settlement>,
+								<region>Morogoro</region>,
                                 <country>United Republic of Tanzania</country>,
 							</address>
                         </affiliation>
@@ -115,7 +115,7 @@
                         </affiliation>
                         <affiliation>
                             <marker>12</marker>
-							<orgName type="department">Entente Interde ´partementale pour la De ´moustication du Littoral<lb/> Me ´diterrane ´en (EID Me ´diterrane ´e)</orgName>,
+							<orgName type="institution">Entente Interde ´partementale pour la De ´moustication du Littoral<lb/> Me ´diterrane ´en (EID Me ´diterrane ´e)</orgName>,
 							<address>
 								<settlement>Montpellier</settlement>,
 								<country>France</country>

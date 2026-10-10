@@ -10,7 +10,9 @@
 						<affiliation>
 							<marker>†</marker> 
 							Contributed equally
-							<orgName type="department">Department of Electrical Engineering, École de Technologie Supérieure</orgName>,
+							<orgName type="department">Department of Electrical Engineering</orgName>,
+							<!-- check: École de Technologie Supérieure is a constituent university of the University of Quebec network; split out of the department and typed institution next to University of Quebec -->
+							<orgName type="institution">École de Technologie Supérieure</orgName>,
 							<orgName type="institution">University of Quebec</orgName>,
 							<address>
 								<addrLine>1100 Notre-Dame West</addrLine>,

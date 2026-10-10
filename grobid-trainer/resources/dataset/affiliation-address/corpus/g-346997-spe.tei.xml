@@ -61,9 +61,9 @@
 							
 							<affiliation>
 								<marker>6</marker>
-								<orgName type="institution" key="instit1">Université Blaise Pascal</orgName>
+								<orgName type="institution">Université Blaise Pascal</orgName>
 									and
-								<orgName type="institution" key="instit2">CNRS-IN2P3</orgName>,
+								<orgName type="institution">CNRS-IN2P3</orgName>,
 								<address>
 									<settlement>Clermont-Ferrand</settlement>,
 									<country key="FR">France</country>;<lb/>
@@ -149,8 +149,8 @@
 							
 							<affiliation>
 								<marker>14</marker>
-								<orgName type="institution" key="instit5">YerPhI</orgName>,
-								<orgName type="institution" key="instit6" corresp="#instit5">Yerevan Physics Institute</orgName>,
+								<orgName type="institution">YerPhI</orgName>,
+								<orgName type="institution">Yerevan Physics Institute</orgName>,
 								<address>
 									<settlement>Yerevan</settlement>,
 									<country key="AM">Armenia<lb/></country>

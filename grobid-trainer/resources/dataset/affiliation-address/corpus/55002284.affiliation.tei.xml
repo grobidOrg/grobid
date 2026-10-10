@@ -10,8 +10,8 @@
 						<affiliation>
 							<marker>1</marker>
 							<orgName type="institution">CEA-LETI</orgName>,
-							<orgName type="institution">MINATEC Campus</orgName>,
 							<address>
+								<addrLine>MINATEC Campus</addrLine>,
 								<postCode>38054</postCode>
 								<settlement>Grenoble</settlement>,
 								<country>France</country>

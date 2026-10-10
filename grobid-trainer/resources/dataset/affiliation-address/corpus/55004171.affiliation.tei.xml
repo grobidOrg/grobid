@@ -16,7 +16,7 @@
 								<addrLine>East Sands</addrLine>,
 								<settlement>St Andrews</settlement>,
 								<region>Fife</region>,
-								<country>Scotland</country>,
+								<region>Scotland</region>,
 								<country>UK</country>
 							</address> 
 						</affiliation>
@@ -24,8 +24,8 @@
 							<marker>2</marker>
 							Present address:
 							<orgName type="institution">Swedish Board of Fisheries</orgName>,
+							<orgName type="department">Research Office</orgName>,
 							<address>
-								<addrLine>Research Office</addrLine>,
 								<settlement>Göteborg</settlement>,
 								<country>Sweden</country>
 							</address>

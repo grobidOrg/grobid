@@ -34,7 +34,7 @@
 							<orgName type="institution">University of California at San Diego</orgName>,
 							<lb/>
 							<address>
-								<addrLine>La Jolla</addrLine>,
+								<settlement>La Jolla</settlement>,
 								<region>CA</region>
 								<postCode>92903</postCode>
 							</address>

@@ -10,7 +10,10 @@
  Aus dem
 						<affiliation>
 							<orgName type="laboratory">Foischungslat oratorium</orgName> der
-							<orgName type="institution">Kindelklinik in Hamburg-Eppendorf</orgName>
+							<orgName type="institution">Kindelklinik</orgName> in
+							<address>
+								<settlement>Hamburg-Eppendorf</settlement>
+							</address>
 						</affiliation>
 
 						</author>

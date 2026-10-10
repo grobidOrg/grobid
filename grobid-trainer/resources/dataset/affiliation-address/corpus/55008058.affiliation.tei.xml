@@ -23,7 +23,7 @@
 							<orgName type="institution">Samsung</orgName>
 							<lb/>
 							<address> 
-								<addrLine>Giheung-Eup, Yongin-Si</addrLine>,
+								<addrLine>Giheung-Eup</addrLine>, <settlement>Yongin-Si</settlement>,
 								<region>Gyeonggi-<lb/>Do</region>,
 								<country>Korea</country>
 								<postCode>449-712</postCode>

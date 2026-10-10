@@ -22,7 +22,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>2</marker>
-							<orgName type="department">Nassar Medical Complex Hospital</orgName>,
+							<orgName type="institution">Nassar Medical Complex Hospital</orgName>,
 							<orgName type="institution">Ministry of Health</orgName>,
 							<address>
 								<settlement>Khan<lb/> Younes</settlement>,
@@ -49,7 +49,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>5</marker>
-							<orgName type="department">International Cardiac Center (ICC)</orgName>,
+							<orgName type="institution">International Cardiac Center (ICC)</orgName>,
 							<address>
 								<settlement>Alexandria</settlement>,
 								<country>Egypt</country>,
@@ -79,7 +79,7 @@
 							<marker>8</marker>
 							<orgName type="department">Cardiology Department</orgName>,
 							<orgName type="institution">Mustapha Hospital</orgName>,
-							<orgName type="institution">COCRG<lb/> Laboratory University Benyoucef Benkhedda</orgName>,
+							<orgName type="laboratory">COCRG<lb/> Laboratory</orgName> <orgName type="institution">University Benyoucef Benkhedda</orgName>,
 							<address>
 								<settlement>Algiers</settlement>,
 								<country>Algeria</country>,
@@ -193,8 +193,6 @@
 							<address>
 								<settlement>Algiers</settlement>,
 							</address>
-                        </affiliation>
-                        <affiliation>
 							<orgName type="institution">University<lb/> Saad Dahlab</orgName>,
 							<address>
 								<settlement>Blida</settlement>,

@@ -9,7 +9,7 @@
 
 						<affiliation>
 							<orgName type="department">Division of Infectious Diseases</orgName>,
-							<orgName type="department">Department of Medicine and Department of Microbiology and Immunology</orgName>,
+							<orgName type="department">Department of Medicine</orgName> and <orgName type="department">Department of Microbiology and Immunology</orgName>,
 							<lb/>
 							<orgName type="institution">Vanderbilt University School of Medicine</orgName>,
 							<address>
@@ -17,8 +17,8 @@
 								<region>Tennessee</region>
 								<postCode>37232</postCode>,
 								<lb/>
-								<marker>1</marker> and
 							</address>
+							<marker>1</marker> and
 						</affiliation>
 						<affiliation>
 							<orgName type="department">Medical Service</orgName>,

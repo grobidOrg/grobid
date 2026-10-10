@@ -15,9 +15,9 @@
 							<orgName type="institution">Universidad Politécnica de Madrid</orgName>
 							<lb/>
 							<address>
-								<addrLine>Campus de Montegancedo sn.<lb/> Boadilla del Monte</addrLine>,
+								<addrLine>Campus de Montegancedo sn.</addrLine><lb/> <settlement>Boadilla del Monte</settlement>,
 								<postCode>28660</postCode>.
-								<settlement>Madrid</settlement>,
+								<region>Madrid</region>,
 								<country>Spain</country>
 							</address>
 						</affiliation>

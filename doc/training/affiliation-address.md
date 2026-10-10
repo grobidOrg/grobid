@@ -38,6 +38,8 @@ if there is one.
 * __laboratory__: corresponds to the research team or group, which the author belongs to (e.g. Joint Research Laboratory Nanomaterials) - the smallest scale of
 organization type.
 
+The type follows the role of the organization in the affiliation, not the word in its name: a government agency called "Department of Agriculture" that is the top organization of the affiliation is an `institution`. A campus, site or building name printed next to the organization (e.g. "Griffin Campus", "Campus de Teatinos") is part of the address (`<addrLine>`), unless it belongs to the name of the institution itself (e.g. "University of California, San Diego").
+
 
 ### Address components
 
@@ -54,6 +56,7 @@ Here are the different elements that can be used to structure the address:
 * `<settlement>` contains the name of a settlement such as a city, town, or village identified as a single geo-political or administrative unit.
 
 * `<region>` contains the name of an administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country.
+  For Japanese addresses: a name ending in `-shi` is the settlement and a name ending in `-ken` is the region; a bare name is the region only when a city is already tagged in the address, otherwise it is the settlement.
 
 * `<country>` contains the name of a geo-political unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc. Optionally in the training data, the key attribute may be used to identify the country, according to ISO 3166-1 (this attribute is normally used for GROBID output results, but not in training data).
 

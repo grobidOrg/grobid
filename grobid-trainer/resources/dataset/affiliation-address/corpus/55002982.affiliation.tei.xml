@@ -8,6 +8,7 @@
 						<author>
 
 						<affiliation>
+							<!-- check: the element holds only the marker 2; no organisation or address is printed in this file, left as is -->
 							<marker>2</marker>
 						</affiliation>
 

@@ -8,7 +8,7 @@
 						<author>
 
 						<affiliation>
-							<orgName type="department">Sektion Chemie/Biologie dcr</orgName> 
+							<orgName type="department">Sektion Chemie/Biologie</orgName> dcr 
 							<orgName type="institution">Padagogischen Hochschule ,, Karl Liebknecht&quot; </orgName>
 							<address>
 								<settlement>Potsdam</settlement>
@@ -17,9 +17,11 @@
 						<affiliation>	
 							<orgName type="department">Sektion Chemie</orgName> der
 							<orgName type="institution">Humboldt-Universitat zu Berlin</orgName>
-							<orgName type="department">Zentralinstitut fur physikalische Chemie der Akademie der Wissmschaften</orgName> der
+						</affiliation>
+						<affiliation>
+							<orgName type="department">Zentralinstitut fur physikalische Chemie</orgName> der <orgName type="institution">Akademie der Wissmschaften der
+							DDR</orgName>,
 							<address>
-								<country>DDR</country>,
 								<settlement>Berlin</settlement>
 							</address>
 						</affiliation>

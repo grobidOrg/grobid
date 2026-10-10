@@ -8,6 +8,7 @@
 						<author>
 
 						<affiliation>
+							<!-- check: address-only element with no organisation, probably the meeting location rather than an affiliation; text cannot be moved, left as is -->
 							<address>
 								<settlement>Obergurgl</settlement>,
 								<country>Austria</country>,

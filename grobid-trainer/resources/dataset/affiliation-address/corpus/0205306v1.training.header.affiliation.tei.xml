@@ -7,10 +7,10 @@
 
 						<affiliation>
 							<marker>1</marker>
-							<orgName type="institution">Grenoble High Magnetic Field Laboratory</orgName>,
-							<orgName type="institution">MPI-FKF</orgName>
+							<orgName type="laboratory">Grenoble High Magnetic Field Laboratory</orgName>,
+							<orgName type="institution" key="instit1">MPI-FKF</orgName>
 							and 
-							<orgName type="institution">CNRS</orgName>,
+							<orgName type="institution" key="instit2">CNRS</orgName>,
 							<address>
 								<postBox>B.P. 166</postBox>,
 								<postCode>38042</postCode>

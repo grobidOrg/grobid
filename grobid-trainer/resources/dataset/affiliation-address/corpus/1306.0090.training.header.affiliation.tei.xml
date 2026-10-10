@@ -8,7 +8,7 @@
 (
 						<affiliation>
 							<marker>1</marker>)
-							<orgName type="institution">LAGIS<lb/> Ecole Centrale de Lille</orgName>,
+							<orgName type="laboratory">LAGIS</orgName><lb/> <orgName type="institution">Ecole Centrale de Lille</orgName>,
 							<address>
 								<addrLine>Scientific city</addrLine> -<postBox>BP 48</postBox>-
 								<postCode>59651</postCode>
@@ -21,7 +21,7 @@
                           
 						<affiliation>
 							<marker>2</marker>)
-							<orgName type="institution">LACS<lb/> Ecole Nationale des Ingénieurs de Tunis</orgName> -
+							<orgName type="laboratory">LACS</orgName><lb/> <orgName type="institution">Ecole Nationale des Ingénieurs de Tunis</orgName> -
 							<address>
 								<postBox>BP 37</postBox>,
 								<addrLine>Le<lb/> Belvédère</addrLine>,

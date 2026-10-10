@@ -10,9 +10,8 @@
 						<affiliation>
 							<marker>1</marker>
 							<orgName type="department">Department of Chemistry and Biochemistry</orgName>,
-							<orgName type="institution">University of California</orgName>,
+							<orgName type="institution">University of California, San Diego</orgName>,
 							<address>
-								<addrLine>San Diego</addrLine>,
 								<settlement>La Jolla</settlement>,
 								<region>CA</region>,
 								<postCode>92093</postCode>,
@@ -35,9 +34,8 @@
 						<affiliation>
 							<marker>3</marker>
 							<orgName type="department">Scripps Institution of Oceanography</orgName>,
-							<orgName type="institution">University of California</orgName>,
+							<orgName type="institution">University of California, San Diego</orgName>,
 							<address>
-								<addrLine>San Diego</addrLine>,
 								<settlement>La Jolla</settlement>,
 								<region>CA</region>,
 								<postCode>92093</postCode>,

@@ -22,8 +22,9 @@
 						<affiliation>		
 							Eleonora Distrutti,
 							<orgName type="institution">Azienda Ospedaliera di Perugia</orgName>,
+							<!-- check: the Ospedale is the hospital run by the Azienda Ospedaliera (two names of one organisation), not a street address; retagged institution and moved out of the address -->
+							<orgName type="institution">Ospedale<lb/> Santa Maria della Misericordia</orgName>,
 							<address>
-								<addrLine>Ospedale<lb/> Santa Maria della Misericordia</addrLine>,
 								<postCode>06122</postCode>
 								<settlement>Perugia</settlement>,
 								<country>Italy</country>
@@ -45,7 +46,7 @@
 						</affiliation>
 						<affiliation>	
 							<orgName type="department">Division of Research and Education</orgName>,
-							<orgName type="department">Scott and White Hospital</orgName>
+							<orgName type="institution">Scott and White Hospital</orgName>
 							<lb/> and
 							<orgName type="institution">The Texas A&amp;M University System</orgName>,
 							<orgName type="department">Health Science Center<lb/> College of Medicine</orgName>,

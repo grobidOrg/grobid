@@ -16,8 +16,10 @@
 							und dem 
 							<orgName type="laboratory">Laboratorium für L bermikroskopie</orgName> der 
 							<orgName type="institution">Siemens &amp; Halske A.G.</orgName>,
+							<!-- check: "Forschungsanstalt Insel Riems" read as the (Reichs-)Forschungsanstalt on Riems island, a separate institution, with Greifswald as the nearby town; previously one addrLine -->
+							<orgName type="institution">Forschungsanstalt Insel Riems</orgName> bei
 							<address>
-								<addrLine>Forschungsanstalt Insel Riems bei Greifswald</addrLine>
+								<settlement>Greifswald</settlement>
 							</address>
 						</affiliation>
 
