@@ -137,7 +137,7 @@
 	<docAuthor>J. Salmanton-García</docAuthor>
 	</byline>
 	). eg<lb/> Shared junior authorship. eh<lb/> Shared senior authorship.<lb/>
-	www.thelancet.com Vol 71 May, 2024 1
+	<reference>www.thelancet.com Vol 71 May, 2024 1</reference>
 
 	<note type="doctype">Articles</note>
 
@@ -473,11 +473,11 @@
 
 	<note type="doctype">Articles<lb/></note>
 
-	<page>2<lb/></page>
+	2<lb/>
 
-	www.thelancet.com Vol 71
+	<reference>www.thelancet.com Vol 71
 
-	<date>May, 2024</date>
+	May, 2024</reference>
 
 	<byline>
 	<affiliation>br<lb/> Hematology, Department of Biomedicine and Prevention, University of Rome Tor Vergata,</affiliation>
