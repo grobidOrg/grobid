@@ -12,7 +12,7 @@
 							<orgName type="department">Department of Neurosurgery</orgName>,
 							<orgName type="institution">Mie University</orgName>,
 							<address>
-								<region>Mie</region>,
+								<settlement>Mie</settlement>,
 								<country>Japan</country>
 							</address>
 						</affiliation>
@@ -50,7 +50,7 @@
 							<orgName type="department">Electron Microscopy Research Center</orgName>,
 							<orgName type="institution">Mie University</orgName>,
 							<address>
-								<region>Mie</region>,
+								<settlement>Mie</settlement>,
 								<country>Japan</country>
 							</address>
 						</affiliation>
