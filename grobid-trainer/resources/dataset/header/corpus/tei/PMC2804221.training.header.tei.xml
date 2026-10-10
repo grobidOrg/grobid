@@ -52,10 +52,7 @@
 
 	<note type="funding">1 Supported by the Danish National Research Foundation via a grant to the<lb/> MEMPHYS Center of Biomembrane Physics.<lb/> </note>
 
-	<!-- check: marker and correspondence prefix with no organisation name; street kept in the address -->
-	<byline>
-	<affiliation>2 To whom correspondence should be addressed:</affiliation>
-	</byline>
+	2 To whom correspondence should be addressed:
 
 	<address>Novo Nordisk Park,<lb/> G8.S.439, DK-2760 Måløv, Denmark.</address>
 
