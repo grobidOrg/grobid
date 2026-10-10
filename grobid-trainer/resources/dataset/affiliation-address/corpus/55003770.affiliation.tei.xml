@@ -16,7 +16,7 @@
 								<addrLine>Tamaho-cho</addrLine>,
 								<addrLine>Nakakoma-gun</addrLine>,
 								<lb/>
-								<region>Yamanashi</region>
+								<settlement>Yamanashi</settlement>
 								<postCode>409-3898</postCode>,
 								<country>Japan</country>
 							<lb/>
@@ -27,7 +27,7 @@
 							<orgName type="department">Faculty of Medicine</orgName>,
 							<orgName type="institution">University of<lb/> Yamanashi</orgName>,
 							<address>
-								<region>Yamanashi</region>,
+								<settlement>Yamanashi</settlement>,
 								<country>Japan</country>
 							</address>
 						</affiliation>
