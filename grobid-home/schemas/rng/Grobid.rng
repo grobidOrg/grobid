@@ -817,6 +817,24 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
       <ref name="tei_att.global.attribute.xmllang"/>
       <ref name="tei_att.global.attribute.xmlbase"/>
       <ref name="tei_att.global.attribute.xmlspace"/>
+      <ref name="tei_att.global.attribute.coords"/>
+      <ref name="tei_att.global.attribute.lang"/>
+   </define>
+   <define name="tei_att.global.attribute.coords">
+      <optional>
+         <attribute name="coords">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">GROBID extension: bounding-box coordinates of the element in the source PDF, as a list of "page,x,y,width,height" quintuplets separated by semicolons.</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_att.global.attribute.lang">
+      <optional>
+         <attribute name="lang">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">GROBID extension: a bare language attribute (a non-namespaced variant of xml:lang) emitted on some elements such as orgName.</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
    </define>
    <define name="tei_att.global.attribute.xmlid">
       <optional>
@@ -933,12 +951,14 @@ Suggested values include: 1] internal; 2] external; 3] conjecture</a:documentati
       <ref name="tei_att.resourced.attribute.url"/>
    </define>
    <define name="tei_att.resourced.attribute.url">
-      <attribute name="url">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(uniform resource locator) specifies the URL from which the media concerned may be obtained.</a:documentation>
-         <data type="anyURI">
-            <param name="pattern">\S+</param>
-         </data>
-      </attribute>
+      <optional>
+         <attribute name="url">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(uniform resource locator) specifies the URL from which the media concerned may be obtained. Made optional: GROBID emits a &lt;graphic&gt; located only by @coords, with no URL.</a:documentation>
+            <data type="anyURI">
+               <param name="pattern">\S+</param>
+            </data>
+         </attribute>
+      </optional>
    </define>
    <define name="tei_att.measurement.attributes">
       <ref name="tei_att.measurement.attribute.unit"/>
@@ -2163,6 +2183,7 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
          <ref name="tei_list"/>
          <ref name="tei_listObject"/>
          <ref name="tei_table"/>
+         <ref name="tei_listOrg"/>
       </choice>
    </define>
    <define name="tei_model.listLike_alternation">
@@ -2594,6 +2615,8 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
          <ref name="tei_author"/>
          <ref name="tei_editor"/>
          <ref name="tei_meeting"/>
+         <ref name="tei_funder"/>
+         <ref name="tei_respStmt"/>
       </choice>
    </define>
    <define name="tei_model.divWrapper">
@@ -2906,6 +2929,7 @@ Suggested values include: 1] volume (volume); 2] issue; 3] page (page); 4] line;
    </define>
    <define name="tei_model.phrase">
       <choice>
+         <ref name="tei_rs"/>
          <ref name="tei_model.segLike"/>
          <ref name="tei_model.highlighted"/>
          <ref name="tei_model.graphicLike"/>
@@ -3662,6 +3686,96 @@ Suggested values include: 1] gloss (gloss); 2] index (index); 3] instructions (i
          <ref name="tei_att.typed.attributes"/>
          <ref name="tei_att.placement.attributes"/>
          <ref name="tei_att.written.attributes"/>
+         <optional>
+            <attribute name="level">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">GROBID extension: hierarchy level of a section head derived from the PDF outline (1 for a main section, 2 for a sub-section, and so on).</a:documentation>
+               <text/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_rs">
+      <element name="rs">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(referencing string) contains a general purpose name or referring string. GROBID uses it to mark up entities such as funders, grant numbers and grant names in running text.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="tei_model.gLike"/>
+               <ref name="tei_model.phrase"/>
+               <ref name="tei_model.global"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_att.global.attributes"/>
+         <ref name="tei_att.typed.attributes"/>
+         <optional>
+            <attribute name="ref"/>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_funder">
+      <element name="funder">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(funding body) specifies the name of an individual, institution, or organization responsible for the funding of a project or text.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="tei_orgName"/>
+               <ref name="tei_model.phrase"/>
+               <ref name="tei_model.global"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_att.global.attributes"/>
+         <optional>
+            <attribute name="ref"/>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_respStmt">
+      <element name="respStmt">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(statement of responsibility) supplies a statement of responsibility for the intellectual content of a text, edition, recording, or series, where the specialized elements for authors, editors, etc. do not suffice or do not apply.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="tei_resp"/>
+               <ref name="tei_name"/>
+               <ref name="tei_persName"/>
+               <ref name="tei_orgName"/>
+               <ref name="tei_model.global"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_att.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_resp">
+      <element name="resp">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsibility) contains a phrase describing the nature of a person's intellectual responsibility, or an organization's role in the production or distribution of a work.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="tei_model.gLike"/>
+               <ref name="tei_model.phrase"/>
+               <ref name="tei_model.global"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_att.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_listOrg">
+      <element name="listOrg">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(list of organizations) contains a list of elements, each of which provides information about an identifiable organization. GROBID uses it in the back matter to record funding organizations, grants and grant numbers.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="tei_head"/>
+               <ref name="tei_desc"/>
+               <ref name="tei_org"/>
+               <ref name="tei_model.global"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_att.global.attributes"/>
+         <ref name="tei_att.typed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -5022,6 +5136,12 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                </data>
             </attribute>
          </optional>
+         <optional>
+            <attribute>
+               <name ns="http://www.w3.org/2001/XMLSchema-instance">schemaLocation</name>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">GROBID emits an xsi:schemaLocation hint on the root element.</a:documentation>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -5187,7 +5307,9 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
             <zeroOrMore>
                <choice>
                   <ref name="tei_model.divTop"/>
-        
+                  <!-- GROBID extension: a bare pointer/reference (e.g. a "Supporting information"
+                       table or url marker) can appear directly under a div, before its content -->
+                  <ref name="tei_model.ptrLike"/>
                   <ref name="tei_model.global"/>
                </choice>
             </zeroOrMore>
@@ -5351,6 +5473,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                         <choice>
                            <ref name="tei_model.frontPart"/>
                            <ref name="tei_model.div1Like"/>
+                           <ref name="tei_model.listLike"/>
                            <ref name="tei_model.global"/>
                         </choice>
                      </zeroOrMore>
@@ -5361,6 +5484,7 @@ Suggested values include: 1] sent; 2] received; 3] transmitted; 4] redirected; 5
                         <choice>
                            <ref name="tei_model.frontPart"/>
                            <ref name="tei_model.divLike"/>
+                           <ref name="tei_model.listLike"/>
                            <ref name="tei_model.global"/>
                         </choice>
                      </zeroOrMore>

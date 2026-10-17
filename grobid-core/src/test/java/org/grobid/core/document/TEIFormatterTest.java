@@ -32,7 +32,11 @@ import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Figure;
 import org.grobid.core.data.Note;
 import org.grobid.core.data.Table;
+import org.grobid.core.document.TEIFormatter.SectionLevelInfo;
+import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.tokenization.LabeledTokensContainer;
+import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LayoutTokensUtil;
 
@@ -421,6 +425,131 @@ public class TEIFormatterTest {
         assertThat(nodes.get(3).toXML(), is("&amp;"));
         assertThat(nodes.get(4).toXML(), is(""));
         assertThat(nodes.get(5).toXML(), is(" "));
+    }
+
+    private static TaggingTokenCluster sectionCluster(String text) {
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(text);
+        TaggingTokenCluster cluster = new TaggingTokenCluster(TaggingLabels.SECTION);
+        cluster.addLabeledTokensContainer(
+                new LabeledTokensContainer(tokens, text, TaggingLabels.SECTION, true));
+        return cluster;
+    }
+
+    private static TaggingTokenCluster paragraphCluster(String text) {
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(text);
+        TaggingTokenCluster cluster = new TaggingTokenCluster(TaggingLabels.PARAGRAPH);
+        cluster.addLabeledTokensContainer(
+                new LabeledTokensContainer(tokens, text, TaggingLabels.PARAGRAPH, true));
+        return cluster;
+    }
+
+    // outline: root -> title -> { "2 Methods" -> "2.1 Data", "3 Results" -> "3.1 Findings" }
+    private static DocumentNode buildOutline() {
+        DocumentNode root = new DocumentNode();
+        DocumentNode title = new DocumentNode("Some Article Title", null);
+        DocumentNode methods = new DocumentNode("2 Methods", null);
+        DocumentNode data = new DocumentNode("2.1 Data", null);
+        DocumentNode results = new DocumentNode("3 Results", null);
+        DocumentNode findings = new DocumentNode("3.1 Findings", null);
+        root.addChild(title);
+        title.addChild(methods);
+        methods.addChild(data);
+        title.addChild(results);
+        results.addChild(findings);
+        return root;
+    }
+
+    @Test
+    public void testComputeSectionLevels_inactiveWithoutAdjacentHeads() {
+        TaggingTokenCluster methods = sectionCluster("2 Methods");
+        TaggingTokenCluster para = paragraphCluster("Some body text.");
+        TaggingTokenCluster data = sectionCluster("2.1 Data");
+
+        SectionLevelInfo info = TEIFormatter.computeSectionLevels(
+                List.of(methods, para, data),
+                buildOutline());
+
+        // no two section heads are adjacent, so the mechanism stays off
+        assertThat(info.active, is(false));
+    }
+
+    @Test
+    public void testComputeSectionLevels_inactiveWithoutOutline() {
+        TaggingTokenCluster methods = sectionCluster("2 Methods");
+        TaggingTokenCluster data = sectionCluster("2.1 Data");
+
+        SectionLevelInfo info = TEIFormatter.computeSectionLevels(List.of(methods, data), null);
+
+        assertThat(info.active, is(false));
+    }
+
+    @Test
+    public void testComputeSectionLevels_mainIsLevel1SubIsLevel2() {
+        TaggingTokenCluster methods = sectionCluster("2 Methods");
+        TaggingTokenCluster data = sectionCluster("2.1 Data");
+        TaggingTokenCluster para = paragraphCluster("Body of the data section.");
+
+        SectionLevelInfo info = TEIFormatter.computeSectionLevels(
+                List.of(methods, data, para),
+                buildOutline());
+
+        assertThat(info.active, is(true));
+        // main section -> level 1, its sub-section -> level 2
+        assertThat(info.levels.get(methods), is(1));
+        assertThat(info.levels.get(data), is(2));
+    }
+
+    @Test
+    public void testComputeSectionLevels_missedParentDoesNotAffectOtherHeads() {
+        // GROBID missed the "3 Results" heading: "3.1 Findings" appears right after "2 Methods".
+        // Each head is levelled independently from the outline, so the missing heading affects
+        // nothing else: Methods stays level 1, Findings gets its own outline level (3.1 -> level 2).
+        TaggingTokenCluster methods = sectionCluster("2 Methods");
+        TaggingTokenCluster data = sectionCluster("2.1 Data");
+        TaggingTokenCluster findings = sectionCluster("3.1 Findings");
+
+        SectionLevelInfo info = TEIFormatter.computeSectionLevels(
+                List.of(methods, data, findings),
+                buildOutline());
+
+        assertThat(info.active, is(true));
+        assertThat(info.levels.get(methods), is(1));
+        assertThat(info.levels.get(data), is(2));
+        assertThat(info.levels.get(findings), is(2));
+    }
+
+    @Test
+    public void testFindOutlineDepthForHead_matchesWhenOutlineOmitsSectionNumber() {
+        // Many outlines store the plain title while the detected head carries a number. A short
+        // title like "Results" scores below the similarity threshold against "2. Results", so the
+        // number-stripped fallback is what makes the head matchable at all.
+        DocumentNode root = new DocumentNode();
+        DocumentNode results = new DocumentNode("Results", null);
+        DocumentNode sub = new DocumentNode("Design of Primers for U. virens Detection", null);
+        root.addChild(results);
+        results.addChild(sub);
+
+        // root is depth 0; results depth 1; sub depth 2
+        assertThat(TEIFormatter.findOutlineDepthForHead(root, "2. Results"), is(1));
+        assertThat(
+                TEIFormatter.findOutlineDepthForHead(root, "2.1. Design of Primers for U. virens Detection"),
+                is(2));
+        assertThat(TEIFormatter.findOutlineDepthForHead(root, "Nonexistent section"), is(-1));
+    }
+
+    @Test
+    public void testComputeSectionLevels_unmatchedHeadNotLevelled() {
+        TaggingTokenCluster methods = sectionCluster("2 Methods");
+        TaggingTokenCluster data = sectionCluster("2.1 Data");
+        // a head that does not exist in the outline: must not be levelled (omit when unknown)
+        TaggingTokenCluster unknown = sectionCluster("Appendix Z Nonexistent");
+
+        SectionLevelInfo info = TEIFormatter.computeSectionLevels(
+                List.of(methods, data, unknown),
+                buildOutline());
+
+        assertThat(info.active, is(true));
+        assertThat(info.levels.containsKey(unknown), is(false));
     }
 
 }
