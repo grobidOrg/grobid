@@ -672,7 +672,7 @@ Reactions were reactions R Re Rea Reac BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 
 consumption of consumption c co con cons BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 1 ., 2 9 0 0 0 0 1
 phosphomolybdic acid phosphomolybdic p ph pho phos BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 1 .- 2 9 0 0 0 0 1
 carried out carried c ca car carr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 1 . 1 9 0 0 0 0 1
-determined by determined d de det dete BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 1 .: 2 8 0 0 0 0 1
+determined by determined d de det dete BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 1 .: 2 9 0 0 0 0 1
 X-Bridge C18 x-bridge X X- X-B X-Br BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 2 1 -,.,,-/ 7 8 0 0 0 0 1
 buffered with buffered b bu buf buff BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 1 ./.,, 5 8 0 0 0 0 1
 1.2 ml 1.2 1 1. 1.2 1.2 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 2 1 .,(,). 6 6 0 0 0 0 1
@@ -739,7 +739,6 @@ purification. LCMS purification. p pu pur puri BLOCKEND PAGEIN SAMEFONT SAMEFONT
 2-[(1R)-1-({2-amino-5-[3-(aminomethyl)-5-cyano-1-methyl-1H-pyrazol-4- 2-[(1R)-1-({2-amino-5-[3-(aminomethyl)-5-cyano-1-methyl-1H-pyrazol-4- 2-[(1r)-1-({2-amino-5-[3-(aminomethyl)-5-cyano-1-methyl-1h-pyrazol-4- 2 2- 2-[ 2-[( BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 3 9 -[()--(---[-()-------- 22 8 0 0 0 0 1
 yl]pyridin-3-yl}oxy)ethyl]-4-fluorobenzoic acid yl]pyridin-3-yl}oxy)ethyl]-4-fluorobenzoic y yl yl] yl]p BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 3 9 ]--)]--()-.()- 14 9 0 0 0 0 1
 (B300 mg) (b300 ( (B (B3 (B30 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 3 9 ()(.,.)() 9 9 0 0 0 0 1
-°C °C °c ° °C °C °C BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 3 9 no 0 0 0 0 0 0 1
 for 36 for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 9 . 1 9 0 0 0 0 1
 solvent was solvent s so sol solv BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 9 ,. 2 10 0 0 0 0 1
 HCl to hcl H HC HCl HCl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 9 ., 2 8 0 0 0 0 1
@@ -1046,8 +1045,7 @@ Methyl 2-(1-{[2-amino-5-(3-{[(tert-butoxycarbonyl)(methyl)amino]methyl}- methyl 
 A mixture a A A A A BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 1 0 0 0 0 0 6 7 --[(-----)]-- 13 8 0 0 0 0 1
 nitrobenzoate 31 nitrobenzoate n ni nit nitr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 7 (.,.),-[(------- 16 9 0 0 0 0 1
 pyrazol-3-yl)methyl]methylcarbamate 32 pyrazol-3-yl)methyl]methylcarbamate p py pyr pyra BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 7 --)](.,.),(., 13 9 0 0 0 0 1
-8.20 mmol) 8.20 8 8. 8.2 8.20 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 7 .)(.,.)() 9 8 0 0 0 0 1
-°C °C °c ° °C °C °C BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 6 7 no 0 0 0 0 0 0 1
+8.20 mmol) 8.20 8 8. 8.2 8.20 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 7 .)(.,.)() 9 9 0 0 0 0 1
 under a under u un und unde BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 .()(.,.) 8 8 0 0 0 0 1
 (0.452 g, (0.452 ( (0 (0. (0.4 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 7 (.,.)(), 8 9 0 0 0 0 1
 stirred at stirred s st sti stir BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 .(/:) 5 10 0 0 0 0 1
@@ -1290,7 +1288,7 @@ matography (CH matography m ma mat mato BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0
 methyl-12-nitro-15-oxo-10,15,16,17-tetrahydro-2H-8,4-(metheno)pyrazolo[4,3- methyl-12-nitro-15-oxo-10,15,16,17-tetrahydro-2H-8,4-(metheno)pyrazolo[4,3- methyl-12-nitro-15-oxo-10,15,16,17-tetrahydro-2h-8,4-(metheno)pyrazolo[4,3- m me met meth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 1 -----,,,---,-()[,- 18 7 0 0 0 0 1
 h][2,5,11]benzoxadiazacyclotetradecin-7-yl]imidodicarbonate (R)-4 h][2,5,11]benzoxadiazacyclotetradecin-7-yl]imidodicarbonate h h] h][ h][2 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 1 ][,,]--]()-(,) 14 8 0 0 0 0 1
 white solid. white w wh whi whit BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 8 1 .()/.[].(,). 12 8 0 0 0 0 1
-(d, J (d, ( (d (d, (d, BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 1 (,.,),.(,,),.(,.,.,),.(, 24 9 0 0 0 0 1
+(d, J (d, ( (d (d, (d, BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 1 (,.,),.(,.,),.(,.,.,),.(, 25 9 0 0 0 0 1
 J ¼ j J J J J BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 8 1 .,),.(,.,),.(,.,),.-.(, 23 8 0 0 0 0 1
 J ¼ j J J J J BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 8 1 .,.,),.(,),.(,),.(,.,),.(, 26 10 0 0 0 0 1
 H); 13 h); H H) H); H); BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 8 1 );(,).,.,.,.,.,., 17 8 0 0 0 0 1

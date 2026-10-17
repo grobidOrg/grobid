@@ -1,24 +1,20 @@
 <?xml version="1.0" ?>
-<tei>
+<tei xml:space="preserve">
 	<teiHeader>
-		<fileDesc xml:id="_0"/>
+		<fileDesc xml:id="PMC4317227"/>
 	</teiHeader>
 	<text xml:lang="en">
 			<front>EDITORIAL <lb/>Advice on statistical analysis, and new journal guidance <lb/>for experimental design and analysis <lb/>Michael J. Curtis &amp; Darrell R. Abernethy <lb/>Correspondence <lb/>The editors, <lb/>Pharmacology Research <lb/>&amp; Perspectives, The <lb/>Schild Plot, 16 Angel <lb/>Gate, City Road, London, <lb/>EC1V 2PT | UK. Tel: +44 <lb/>(0) 20 7239 0171; Fax: <lb/>+44 (0) 20 7417 0114; <lb/>E-mail: <lb/>Michael.curtis@kcl.ac.uk <lb/></front>
 
-			<body>The biomedical sciences sector in its wider manifestation is discussing how <lb/>to address shortcomings in statistical analysis and design in research. Some <lb/>pharmacology journals will change requirements for authors. In this issue of <lb/>Pharmacology Research &amp; Perspectives, Harvey Motulsky offers his personal <lb/>opinion on how to improve the statistical aspect of pharmacological analysis <lb/>(Motulsky 2015). <lb/>During the coming months, prompted by wider concerns about failed transla-<lb/>tion (Scott et al. 2008; Mullard 2011; Curtis et al. 2015), the Pharmacology <lb/>Research &amp; Perspectives editorial team will publish new guidance on experimen-<lb/>tal design and analysis, and incorporate this into Instructions to Authors. <lb/></body>
+			<body>The biomedical sciences sector in its wider manifestation is discussing how <lb/>to address shortcomings in statistical analysis and design in research. Some <lb/>pharmacology journals will change requirements for authors. In this issue of <lb/>Pharmacology Research &amp; Perspectives, Harvey Motulsky offers his personal <lb/>opinion on how to improve the statistical aspect of pharmacological analysis <lb/>(Motulsky 2015). <lb/>During the coming months, prompted by wider concerns about failed transla- <lb/>tion (Scott et al. 2008; Mullard 2011; Curtis et al. 2015), the Pharmacology <lb/>Research &amp; Perspectives editorial team will publish new guidance on experimen- <lb/>tal design and analysis, and incorporate this into Instructions to Authors. <lb/></body>
 
-            <back>
+			<listBibl>References <lb/>Curtis MJ, Bond RA, Spina D, Ahluwalia A, Alexander SPA, Giembycz MA, et al. <lb/>(2015). Time for blinded, randomized, unbiased, fully-powered studies: new journal <lb/>requirements. Br J Pharmacol DOI: 10.1111/bph.12856. <lb/>Motulsky H (2015). Common misconceptions about data analysis and statistics and <lb/>how to avoid them. Pharmacol Res Perspect DOI: 10.1002/prp2.93. <lb/>Mullard A (2011). Reliability of 'new drug target' claims called into question. Nat Rev <lb/>Drug Discov 10:643-644. <lb/>Scott S, Ktranz JE, Cole J, Lincecum JM, Thompson K, Kelly N, et al. (2008). Design, <lb/>power, and interpretation of studies in the standard murine model of ALS. Amyotroph <lb/>Lateral Scler 9:4-15. <lb/></listBibl>
 
-                <listBibl>References <lb/>Curtis MJ, Bond RA, Spina D, Ahluwalia A, Alexander SPA, Giembycz MA, et al. <lb/>(2015). Time for blinded, randomized, unbiased, fully-powered studies: new journal <lb/>requirements. Br J Pharmacol DOI: 10.1111/bph.12856. <lb/>Motulsky H (2015). Common misconceptions about data analysis and statistics and <lb/>how to avoid them. Pharmacol Res Perspect DOI: 10.1002/prp2.93. <lb/>Mullard A (2011). Reliability of &apos;new drug target&apos; claims called into question. Nat Rev <lb/>Drug Discov 10:643-644. <lb/>Scott S, Ktranz JE, Cole J, Lincecum JM, Thompson K, Kelly N, et al. (2008). Design, <lb/>power, and interpretation of studies in the standard murine model of ALS. Amyotroph <lb/>Lateral Scler 9:4-15. <lb/></listBibl>
-
-            </back>
+			<front>ª 2014 The Authors. Pharmacology Research &amp; Perspectives published by John Wiley &amp; Sons Ltd, <lb/>British Pharmacological Society and American Society for Pharmacology and Experimental Therapeutics. <lb/>This is an open access article under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs License, <lb/>which permits use and distribution in any medium, provided the original work is properly cited, the use is non-commercial and <lb/>no modifications or adaptations are made. <lb/></front>
 
 			<note place="footnote">2014 | Vol. 3 | Iss. 1 | e00095 <lb/></note>
 
-            <page>Page 1</page> 
-
-            <front>ª 2014 The Authors. Pharmacology Research &amp; Perspectives published by John Wiley &amp; Sons Ltd, <lb/>British Pharmacological Society and American Society for Pharmacology and Experimental Therapeutics. <lb/>This is an open access article under the terms of the Creative Commons Attribution-NonCommercial-NoDerivs License, <lb/>which permits use and distribution in any medium, provided the original work is properly cited, the use is non-commercial and <lb/>no modifications or adaptations are made. <lb/></front>
+			<page>Page 1 <lb/></page>
 
 	</text>
 </tei>

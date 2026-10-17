@@ -1,21 +1,16 @@
 <?xml version="1.0" ?>
-<tei>
+<tei xml:space="preserve">
 	<teiHeader>
-		<fileDesc xml:id="_0"/>
+		<fileDesc xml:id="PMC4104102"/>
 	</teiHeader>
 	<text xml:lang="en">
-			<front>Asian Journal of Andrology (2014) 16, 643 <lb/>© 2014 AJA, SIMM &amp; SJTU. All rights reserved 1008-682X <lb/>www.asiaandro.com; www.ajandrology.com <lb/>INVITED COMMENTARY <lb/>Open Access <lb/>Male Health <lb/>Re: Gene mapping of serotoninergic <lb/>system polymorphisms provides insight on <lb/>pathology and treatment of men with lifelong <lb/>premature ejaculation <lb/>Paddy KC Janssen, Ron van Schaik, Berend Olivier, <lb/>Marcel D Waldinger <lb/>Asian Journal of Andrology (2014) 16, 643; doi: 10.4103/1008-<lb/>682X.126375, published online: 29 April 2014 <lb/></front>
+			<front>Asian Journal of Andrology (2014) 16, 643 <lb/>© 2014 AJA, SIMM &amp; SJTU. All rights reserved 1008-682X <lb/>www.asiaandro.com; www.ajandrology.com <lb/>INVITED COMMENTARY <lb/>Open Access <lb/>Male Health <lb/>Re: Gene mapping of serotoninergic <lb/>system polymorphisms provides insight on <lb/>pathology and treatment of men with lifelong <lb/>premature ejaculation <lb/>Paddy KC Janssen, Ron van Schaik, Berend Olivier, <lb/>Marcel D Waldinger <lb/>Asian Journal of Andrology (2014) 16, 643; doi: 10.4103/1008- <lb/>682X.126375, published online: 29 April 2014 <lb/></front>
 
 			<body>We appreciate and thank Drs Saitz and Serefoglu for their positive <lb/>and sympathetic words on our article. 1 Indeed, our genetic studies <lb/>have shown that 5-HTTLPR polymorphism, 5-HT 1A receptor gene <lb/>polymorphism and 5-HT 2C receptor gene polymorphism are associated <lb/>with the duration of the intravaginal ejaculatory latency time in men <lb/>with lifelong premature ejaculation. In line with the remarks, 1 we <lb/>hope that our stopwatch method will be used by other investigators <lb/>to investigate the role of serotonergic gene polymorphisms on the <lb/>duration of the intravaginal ejaculatory latency time. But lifelong <lb/>premature ejaculation is not only characterized by persistent short <lb/>intravaginal ejaculatory latency times, inability to delay ejaculation <lb/>and negative personal consequences. Recently, lifelong premature <lb/>ejaculation is characterized by an acute hypertonic state with facilitated <lb/>ejaculation (ejaculatio praecox), together with either facilitated erections <lb/>(erectio praecox) and/or facilitated penile detumescence (detumescentia <lb/>praecox). 2 Future research is required to answer the question whether <lb/>this combination of symptoms is associated with polymorphisms of <lb/>various serotonergic gene and other neurotransmitter gene systems. <lb/></body>
 
-            <back>
+			<listBibl>REFERENCES <lb/>1 <lb/>Saitz TR, Serefoglu EC. Gene mapping of serotoninergic system polymorphisms <lb/>provides insight on pathology and treatment of men with lifelong premature <lb/>ejaculation. Asian J Androl 2014; 16: 643. <lb/>2 <lb/>Waldinger MD. Ejaculatio praecox, erectio praecox, and detumescentia praecox as <lb/>symptoms of a hypertonic state in lifelong premature ejaculation: a new hypothesis. <lb/>Pharmacol Biochem Behav 2013 Dec 11. doi: 10.1016/j.pbb.2013.12.004. [Epub <lb/>ahead of print]. <lb/></listBibl>
 
-                <listBibl>REFERENCES <lb/>1 <lb/>Saitz TR, Serefoglu EC. Gene mapping of serotoninergic system polymorphisms <lb/>provides insight on pathology and treatment of men with lifelong premature <lb/>ejaculation. Asian J Androl 2014; 16: 643. <lb/>2 <lb/>Waldinger MD. Ejaculatio praecox, erectio praecox, and detumescentia praecox as <lb/>symptoms of a hypertonic state in lifelong premature ejaculation: a new hypothesis. <lb/>Pharmacol Biochem Behav 2013 Dec 11. doi: 10.1016/j.pbb.2013.12.004. [Epub <lb/>ahead of print]. <lb/></listBibl>
-
-            </back>
-
-			<front>Department of Pharmaceutical Sciences, Division of Pharmacology, Utrecht <lb/>University, Utrecht, The Netherlands. <lb/>Correspondence: Dr. MD Waldinger (md@waldinger.demon.nl) </front>
-
+			<front>Department of Pharmaceutical Sciences, Division of Pharmacology, Utrecht <lb/>University, Utrecht, The Netherlands. <lb/>Correspondence: Dr. MD Waldinger (md@waldinger.demon.nl) <lb/></front>
 
 	</text>
 </tei>
