@@ -1,173 +1,36 @@
 <?xml version="1.0" ?>
-<tei>
+<tei xml:space="preserve">
 	<teiHeader>
-		<fileDesc xml:id="__0"/>
+		<fileDesc xml:id="_1001._0908.0054"/>
 	</teiHeader>
 	<text xml:lang="en">
-			<front>Ultra light bosonic dark matter and CMB<lb/> Ivan Rodriguez Montoya * and Tonatiuh Matos Chassin *<lb/> Departamento de Física, Centro de Investigación y de Estudios Avanzados del IPN, A.P. 14-740, 07000 México D.F., México.<lb/> In this work we report the cosmological effects that a species of Ultra Light Bosonic Dark Matter imprints in<lb/> the Acoustic Peaks of the CMB, and some of its thermic features. We show that the effect of the Bose-Einstein<lb/> statistics is small albeit perceptible, and is equivalent to an increase of non-relativistic matter. It is also noted the<lb/> mass-to-temperature ratio necessary for being still a Dark Matter candidate. And it is needed a non-zero optical<lb/> depth of Reionization.<lb/></front>
+			<front>Ultra light bosonic dark matter and CMB <lb/>Ivan Rodriguez Montoya *  † and Tonatiuh Matos Chassin *  ‡ <lb/>Departamento de Física, Centro de Investigación y de Estudios Avanzados del IPN, A.P. 14-740, 07000 México D.F., México. <lb/>In this work we report the cosmological effects that a species of Ultra Light Bosonic Dark Matter imprints in <lb/>the Acoustic Peaks of the CMB, and some of its thermic features. We show that the effect of the Bose-Einstein <lb/>statistics is small albeit perceptible, and is equivalent to an increase of non-relativistic matter. It is also noted the <lb/>mass-to-temperature ratio necessary for being still a Dark Matter candidate. And it is needed a non-zero optical <lb/>depth of Reionization. <lb/></front>
 
-			<body>
-			I. INTRODUCTION<lb/>
+			<body>I. INTRODUCTION <lb/>It has been argued that a Scalar Field may be a candidate <lb/>to form the main component of the total Dark Matter in the <lb/>universe [1, 2, 3, 4, 5], this alternative is called the SFDM <lb/>model. The mass of this Scalar Field is assumed ultra light <lb/>(∼ 10 -22 eV ), and obey an equuation of state p = ωρ, with <lb/>-1 ≤ ω ≤ 1. It is also interesting that this type of matter <lb/>can form astrophysical objects called Boson Stars [6, 7]. The <lb/>SFDM model has been tested on galactic scales [8, 9, 10]. <lb/>On the other hand, at cosmological scales, the most powerful <lb/>observable to rule out theoretical models is the Cosmic Mi- <lb/>crowave Background (CMB) spectrum. In [11] it is studied <lb/>the modification of the spectrum assuming an interaction with <lb/>the baryonic sector. In the present treatment we analyze how <lb/>the values of different parameters change the amplitudes of <lb/>the acousitic peaks with no interaction at all. <lb/>There is a fermionic particle which shares some similitudes <lb/>with this hypothetical bosonic species, that is, the neutrino. In <lb/>fact, its study as a candidate for Dark Matter can serve as an <lb/>antecedent for our goal. The neutrino was the first promising <lb/>particle candidate to be the whole Dark Matter of the universe. <lb/>That is because of their low interacting rate with baryons and <lb/>the evidence of the flavour oscillations which strongly sug- <lb/>gest a non-zero neutrino mass. Even though, there are some <lb/>unavoidables problems that indicate that the neutrinos can not <lb/>be the whole Dark Matter of the universe [12]. <lb/>Very early in the universe, neutrinos were in thermal equi- <lb/>librium with the primeval fireball. Due to its low mass com- <lb/>pared with its temperature in this epoch, they behave exactly <lb/>as radiation. After decoupling, they relax only with the expan- <lb/>sion of the universe as T ν ∝ a -1 , and eventually its tempera- <lb/>ture falls below its mass. It is known as the non-relativistic <lb/>transition (NRT). Besides, once decoupled, its temperature <lb/>remain well determined in terms of the temperature photons <lb/>T ν = (4/11) 1/3 T γ , which fixes the neutrino number density <lb/>today to n <lb/>(0) <lb/>ν ∼ 100cm -3 . An important intrinsic part of its <lb/>nature is that they are fermions and then their density has an <lb/>upper bound. Thus the content of neutrinos Ω ν is entirely <lb/>parameterized by its mass, i.e., m ν ≈ Ω ν 51.013 eV [13]. <lb/></body>
 
-			It has been argued that a Scalar Field may be a candidate<lb/> to form the main component of the total Dark Matter in the<lb/> universe [1, 2, 3, 4, 5], this alternative is called the SFDM<lb/> model. The mass of this Scalar Field is assumed ultra light<lb/> (∼ 10 −22 eV ), and obey an equuation of state p = ωρ, with<lb/> −1 ≤ ω ≤ 1. It is also interesting that this type of matter<lb/> can form astrophysical objects called Boson Stars [6, 7]. The<lb/> SFDM model has been tested on galactic scales [8, 9, 10].<lb/> On the other hand, at cosmological scales, the most powerful<lb/> observable to rule out theoretical models is the Cosmic Mi-<lb/>crowave Background (CMB) spectrum. In [11] it is studied<lb/> the modification of the spectrum assuming an interaction with<lb/> the baryonic sector.
+			<front>* Part of the Instituto Avanzado de Cosmología (IAC) collaboration <lb/>http://www.iac.edu.mx/ <lb/>† Electronic address: rrodriguez@fis.cinvestav.mx <lb/>‡ Electronic address: tmatos@fis.cinvestav.mx <lb/></front>
 
-			In the present treatment we analyze how<lb/> the values of different parameters change the amplitudes of<lb/> the acousitic peaks with no interaction at all.<lb/> There is a fermionic particle which shares some similitudes<lb/> with this hypothetical bosonic species, that is, the neutrino. In<lb/> fact, its study as a candidate for Dark Matter can serve as an<lb/> antecedent for our goal. The neutrino was the first promising<lb/> particle candidate to be the whole Dark Matter of the universe.<lb/> That is because of their low interacting rate with baryons and<lb/> the evidence of the flavour oscillations which strongly sug-<lb/>gest a non-zero neutrino mass. Even though, there are some<lb/> unavoidables problems that indicate that the neutrinos can not<lb/> be the whole Dark Matter of the universe [12].<lb/> Very early in the universe, neutrinos were in thermal equi-<lb/>librium with the primeval fireball. Due to its low mass com-<lb/>pared with its temperature in this epoch, they behave exactly<lb/> as radiation. After decoupling, they relax only with the expan-<lb/>sion of the universe as T ν ∝ a −1 , and eventually its tempera-<lb/>ture falls below its mass. It is known as the non-relativistic<lb/> transition (NRT). Besides, once decoupled, its temperature<lb/> remain well determined in terms of the temperature photons<lb/> T ν = (4/11) 1/3 T γ , which fixes the neutrino number density<lb/> today to n<lb/> (0)<lb/> ν ∼ 100cm −3 . An important intrinsic part of its<lb/> nature is that they are fermions and then their density has an<lb/> upper bound. Thus the content of neutrinos Ω ν is entirely<lb/> parameterized by its mass, i.e., m ν ≈ Ω ν 51.013 eV [13].</body>
+			<body>Between the times of decoupling and the non-relativistic <lb/>transition, neutrinos just free-stream due to the negligible in- <lb/>teraction with the rest of the matter. Thus, the combined effect <lb/>of free-streaming and radiation behavior clears off the fluctu- <lb/>ations of δ ν ≡ δ ρ ν /ρ ν . This means that there is no contribu- <lb/>tion to the acoustic oscillations in the CMB due to massless <lb/>(or relativistic) neutrions. <lb/>On the other hand, after the non-relativistic transition, the <lb/>neutrinos behave closely as Cold Dark Matter. The fluctua- <lb/>tions begin to grow quickly until they reach the Cold Dark <lb/>Matter rate, that is δ ν ∝ a. Thus, the structure formation has a <lb/>contribution in the neutrino gravitational fluctuations after the <lb/>NRT. However, in most standard models, this transition takes <lb/>place well after the matter dominated epoch and the neutrino <lb/>contribution becomes subdominant. The effect of the neutri- <lb/>nos in the CMB is not negligible, although, it is too low to be <lb/>considered as the whole component of Dark Matter [14]. <lb/>In the following, we assume the value of the temperature <lb/>of the CMB photons today T CMB = 2.726 K, the Hubble's <lb/>constant H 0 = 75.0km s -1 M pc -1 , and a flat geometry with <lb/>a Cosmological Constant Λ, just for simplicity. It is choosed <lb/>units in which c = k B = 1, then, 1 K ∝ 10 -5 eV . This paper is <lb/>organized as follows. Section 2 is concerned to state the key <lb/>equations of this calculation. Section 3 discusses the results, <lb/>and the conclusions are enclosed in section 4. <lb/>II. ULTRA LIGHT BOSONS AS DARK MATTER <lb/>We consider a Bosonic Ultra Light species of matter. We <lb/>just know that (i) it is a boson, (ii) with a mass m B ∼ 10 -22 eV . <lb/>(iii) It should be ultra-relativistic when decoupled, behaving <lb/>thus, as radiation. Note that in this approach the Dark Matter <lb/>is not treated as a Scalar Field, but as a bosonic particle. The <lb/>equation of state at the moment of decoupling is assumed to <lb/>be ω = 1/3, corresponding to radiation. We want to inves- <lb/>tigate if the Ultra Light Bosonic Dark Matter (ULBDM) can <lb/>form the main component of Dark Matter and reproduce the <lb/>observed CMB spectrum. <lb/>The geometry of this universe is described by the <lb/>Friedmann-Lemaître (FL) metric, perturbed to first order and <lb/>we take the conformal newtonian gauge <lb/>ds 2 = a 2 -(1 + 2ψ)dτ 2 + (1 -2φ )dx i dx i . <lb/>(1) <lb/>Where τ is the proper time. In this gauge the tensor and vector <lb/>degrees of freedom are eliminated from the begining and it <lb/>just appear the scalar modes (ψ and φ ) of the perturbation. <lb/></body>
 
-			<front>* Part of the Instituto Avanzado de Cosmología (IAC) collaboration<lb/> http://www.iac.edu.mx/<lb/> Electronic address: rrodriguez@fis.cinvestav.mx<lb/> Electronic address: tmatos@fis.cinvestav.mx<lb/></front>
+			<front>arXiv:0908.0054v1 [astro-ph.CO] 1 Aug 2009 <lb/></front>
 
-			<body>Between the times of decoupling and the non-relativistic<lb/> transition, neutrinos just free-stream due to the negligible in-<lb/>teraction with the rest of the matter. Thus, the combined effect<lb/> of free-streaming and radiation behavior clears off the fluctu-<lb/>ations of δ ν ≡ δ ρ ν /ρ ν . This means that there is no contribu-<lb/>tion to the acoustic oscillations in the CMB due to massless<lb/> (or relativistic) neutrions.<lb/>
+			<page>2 <lb/></page>
 
-			On the other hand, after the non-relativistic transition, the<lb/> neutrinos behave closely as Cold Dark Matter. The fluctua-<lb/>tions begin to grow quickly until they reach the Cold Dark<lb/> Matter rate, that is δ ν ∝ a. Thus, the structure formation has a<lb/> contribution in the neutrino gravitational fluctuations after the<lb/> NRT. However, in most standard models, this transition takes<lb/> place well after the matter dominated epoch and the neutrino<lb/> contribution becomes subdominant. The effect of the neutri-<lb/>nos in the CMB is not negligible, although, it is too low to be<lb/> considered as the whole component of Dark Matter [14].<lb/>
+			<body>Following the same formalism developed for the fermionic <lb/>sector [15], it is useful to define the corrected proper mo- <lb/>mentum q i ≡ a p i , q j = q n j , where n j is its direction unit <lb/>vector and a is the scale factor. The proper momentum p i <lb/>was defined in terms of the canonical conjugate momentum <lb/>P i = a(1 -ψ)p i of the the comoving coordinate x i . The co- <lb/>movil proper energy is ε ≡ a(p 2 + m 2 ) 1/2 . We also know that <lb/>the linear metric perturbations induce linear statistical pertur- <lb/>bations in the distribution function. <lb/>f (x i , P j , τ) = f 0 (q) 1 + Ψ(x i , q, n j , τ) , <lb/>(2) <lb/>where f 0 is the phase-space distribution function in an homo- <lb/>geneus background universe <lb/>f 0 (q) = <lb/>1 <lb/>e q/T B -1 <lb/>(3) <lb/>and Ψ is related to the perturbation of the bosons temperature <lb/>Ψ(x i , q, n j , τ) = - <lb/>∂ ln f 0 <lb/>∂ ln q <lb/>(q) <lb/>δ T B <lb/>T B <lb/>(x i , q, n j , τ). <lb/>(4) <lb/>The evolution of the ULBDM is described by the collision- <lb/>less Boltzmann (or Vlasov) equation, which in Fourier space <lb/>reads <lb/>Ψ -i <lb/>q <lb/>ε <lb/>Ψ = -( k • n) ψ + i <lb/>ε <lb/>q <lb/>( k • n)φ <lb/>∂ ln f 0 <lb/>∂ ln q <lb/>. <lb/>(5) <lb/>This equation gives the response of the phase-space distribu- <lb/>tion function to the metric perturbations. <lb/>III. TESTING WITH THE CMB <lb/>The first interrogative is whether the CMB is effectively <lb/>sensitive to the nature of the statistics of the SFDM. We denote <lb/>the mass-to-temperature ratio of some species of fermions as <lb/>x F , and a species of bosons as x B , evaluated today. We com- <lb/>pute the CMB spectrums for fermions and bosons separetely. <lb/>It is important to mantain all the parameters fixed in order <lb/>to observe only the effect of the change of the statistics. In <lb/>figure 1 one can see that for bosons, the amplitudes of the <lb/>first and second peaks are reduced, albeit the third peak is in- <lb/>creased respect to the corresponding of fermions. This is an <lb/>effect similar to that due to an icrease in the ratio between the <lb/>non-relativistic Matter and the Radiation. Thus, it could be <lb/>interpreted as an additional effective attractive potential. <lb/>Here, the main problem is that the temperature of the <lb/>ULBDM is entirely unknown. This fact is due to the unknown <lb/>way of colliding with the rest of the matter. Moreover, if the <lb/>interaction rate was always zero, thus there is no reason to <lb/>believe that this species was in thermal equilibrium with the <lb/>primeval fireball. Without any interactions between the parti- <lb/>cles, there is no even a physical meaning for the temperature. <lb/>However, we suppose that there was some primordial decay <lb/>which generated the ULBDM. It also decoupled very early <lb/>(maybe near the Big Bang). Once the species is decoupled <lb/>from the rest of matter, its phase-space distribution function <lb/>Figure 1: CMB spectrums for Ω F = Ω B = 0.2, x F = x B = 63109, <lb/>τ = 0.13. All the parameters are the same for both curves. The con- <lb/>tinuous line corresponds to bosons and the dashed line to fermions. <lb/>is "freezed-out" and its temperature can only relax with the <lb/>expansion of the universe T B ∼ a -1 . Then, after photon de- <lb/>coupling, the temperature of the bosons just can be <lb/>T B = αT γ , <lb/>(6) <lb/>where α is a constant free parameter to be determined. It is <lb/>crucial to note that if T B ∼ T γ , the quantity <lb/>x B ≡ <lb/>m B <lb/>T <lb/>(0) <lb/>B <lb/>(7) <lb/>is effectively zero, which means that the particle is ultra- <lb/>relativistic today (x B = m B /αT CMB ). <lb/>The addition of <lb/>ULBDM to the total matter background with this value of x B <lb/>just moves the entire CMB spectrum to the right and upwards. <lb/>The effect is shown in figure 2. In all the following figures: <lb/>Ω = 1, Ω Λ = 0.74, Ω bar = 0.04, and the crosses form the <lb/>curve of the mean value of the observed CMB spectrum. <lb/>For all the values α 10 -25 it is noticed that the predicted <lb/>power spectrum is not sensitive to the change of α unless it <lb/>approaches to α = 10 -26 (x B = 10 4 ) or greater. The order <lb/>of magnitude needed to fit the data is α ∝ 10 -27 (x B ∝ 10 5 ). <lb/>The mass of the ULBDM must be five orders of magnitude <lb/>greater than its temperature. In figure 3 it is plotted how the <lb/>CMB power spectrum is sensitive to little changes of α. The <lb/>range shown is from α = 0.3x10 -27 to α = 1.1x10 -27 (from <lb/>x B = 73, 367.57 to x B = 40, 759.76). It is noted that, the more <lb/>relativistic the species is, the more enhanced the first and sec- <lb/>ond peaks are. <lb/>In figure 4 it is shown the prediction for α = 10 -28 (second <lb/>curve from bottom to top). In this case, the ULBDM become <lb/>non-relativistic very early, causing a damping in the acoustic <lb/>oscillations because of an increase in the gravitational poten- <lb/>tial wells. On the bottom of the same figure also appears the <lb/>curve for α = 10 -30 , in which the same effect is enhanced. <lb/>Once the necessary mass-to-temperature ratio is estimated, <lb/>we now investigate the content of bosons against the content <lb/></body>
 
-			In the following, we assume the value of the temperature<lb/> of the CMB photons today T CMB = 2.726 K, the Hubble&apos;s<lb/> constant H 0 = 75.0km s −1 M pc −1 , and a flat geometry with<lb/> a Cosmological Constant Λ, just for simplicity. It is choosed<lb/> units in which c = k B = 1, then, 1 K ∝ 10 −5 eV . This paper is<lb/> organized as follows. Section 2 is concerned to state the key<lb/> equations of this calculation. Section 3 discusses the results,<lb/> and the conclusions are enclosed in section 4.<lb/>
+			<page>3 <lb/></page>
 
-			II. ULTRA LIGHT BOSONS AS DARK MATTER<lb/>
+			<body>Figure 2: CMB spectrum for a Universe with Ω B = 0.2, Ω CDM = <lb/>0.02, α 10 -26 . <lb/>Figure 3: Response of the CMB spectrum to the change in the mass- <lb/>to-temperature ratio of the SFDM. For the three curves Ω B = 0.2, <lb/>Ω CDM = 0.02, α ∝ 10 -27 . <lb/>Figure 4: CMB spectrums for α in the interval (10 -26 , 10 -30 ). With <lb/>Ω B = 0.2, Ω CDM = 0.02, and no reionization. <lb/>Figure 5: CMB power spectrums for diferent contents of ULBDM <lb/>and CDM. For the three curves shown α ∝ 10 -27 , no reionization. <lb/>Figure 6: CMB power spectrums for diferent optical depths of reion- <lb/>ization. The range shown is from τ = 0.05 to τ = 0.19. Ω Bos = 0.2, <lb/>Ω CDM = 0.02, α ∝ 10 -27 . <lb/>of Cold Dark Matter. Figure 5 shows how the increase in Cold <lb/>Dark Matter diminishes the amplitude of the oscillations. This <lb/>is an effect of an enhancement of the gravitational potential <lb/>wells. It also seems to suggest a universe with these two con- <lb/>tents equilibrated. Nevertheless, we must measure the effect <lb/>of the fraction of reionized baryonic matter too. We fix all <lb/>the parameters and now vary the optical depth in figure 6. We <lb/>show that a universe ULBDM-dominated (Ω B = 0.2) could <lb/>be allowed for x B ∝ 10 5 and τ between 0.05 and 0.19. <lb/>Now we just want to say something about the number den- <lb/>sity of the SFDM. Firstly, we must keep in mind that in this <lb/>scheme, there is no condensation explicitly taked into account <lb/>yet. Next, if we must assume that nowadays the ULBDM par- <lb/>ticles behave as non-relativistic, so we can use <lb/>m B n B = Ω B ρ c . <lb/>(8) <lb/>Then if one fixes the mass, the content of bosons in the uni- <lb/></body>
 
-			We consider a Bosonic Ultra Light species of matter. We<lb/> just know that (i) it is a boson, (ii) with a mass m B ∼ 10 −22 eV .<lb/> (iii) It should be ultra-relativistic when decoupled, behaving<lb/> thus, as radiation. Note that in this approach the Dark Matter<lb/> is not treated as a Scalar Field, but as a bosonic particle. The<lb/> equation of state at the moment of decoupling is assumed to<lb/> be ω = 1/3, corresponding to radiation. We want to inves-<lb/>tigate if the Ultra Light Bosonic Dark Matter (ULBDM) can<lb/> form the main component of Dark Matter and reproduce the<lb/> observed CMB spectrum.<lb/> The geometry of this universe is described by the<lb/> Friedmann-Lemaître (FL) metric, perturbed to first order and<lb/> we take the conformal newtonian gauge<lb/>
+			<page>4 <lb/></page>
 
-			ds 2 = a 2<lb/> −(1 + 2ψ)dτ 2 + (1 − 2φ )dx i dx i<lb/> . (1)<lb/>
+			<body>verse Ω B determines its number density. For m B ≈ 10 -22 and <lb/>Ω B = 0.2 it follows that n B ≈ 10 25 cm -3 . Such a big density <lb/>must be accompanied by a Bose-Einstein condensate treat- <lb/>ment of this matter. That is the aim of one following work <lb/>to be presented. <lb/>IV. CONCLUSIONS <lb/>A universe dominated by Ultra Light Bosonic Dark Matter <lb/>in a non-condensate state could be possible only if these par- <lb/>ticles fulfill the condition that its mass-to-temperature ratio <lb/>must be close to ∼ 10 5 . For a mass ∼ 10 -22 eV , this is equiv- <lb/>alent to a temperature of the order of ∼ 10 -27 eV ∼ 10 -22 K. <lb/>Until now, there is no way to falsify such a low temperature <lb/>unless it can be given a mechanism of interaction with the rest <lb/>of the matter or a primeval decay which had could generate <lb/>the ULBDM. The energy of interaction would reveal the tem- <lb/>perature of decoupling. Then the temperature of the ULBDM <lb/>would be determined and it could be predicted a set of allowed <lb/>values of the parameter α. If this interaction can be parameter- <lb/>ized by a constant of interaction, then the CMB data can serve <lb/>to predict an allowed range of values for this constant. This <lb/>range could be used to search this particles by other means. <lb/>We have shown that the effect of Reionzation is of crucial <lb/>importance to understand the nature of this type of matter in <lb/>the CMB. To get in concordance between the model and the <lb/>observations, it is needed at least a value of τ 0.07. <lb/>The most promising and physically interesting feature of <lb/>the ULBDM or SFDM resides on its condensate state [16], <lb/>[17], [18]. We have shown that the change in the type of <lb/>statistics in the distribution function has non negligible ef- <lb/>fects in the CMB. It remains to include explicitly the infor- <lb/>mation of a Bose-Einstein condensate in the dynamical equa- <lb/>tions. The number density of the ULBDM (∼ 10 -22 eV ), if <lb/>it dominated the Dark Matter content, should be of the order <lb/>of ∼ 10 25 cm -3 today. It is necessary to investigate whether <lb/>the condition x B ∝ 10 5 should be still satisfied in a condensate <lb/>state, or not. <lb/></body>
 
-			Where τ is the proper time. In this gauge the tensor and vector<lb/> degrees of freedom are eliminated from the begining and it<lb/> just appear the scalar modes (ψ and φ ) of the perturbation.<lb/></body>
+			<div type="acknowledgement">Acknowledgements <lb/>We would like to thank Luis Arturo Ureña López, Ab- <lb/>del Pérez Lorenzana, Omar Miranda Romagnoli, Ricardo <lb/>López Fernández and Roy Maartens for useful discussions. <lb/>This work was partially supported by CONACyT México, <lb/>under grants 49865-F, 216536/219673 and by grant number <lb/>I0101/131/07 C-234/07, Instituto Avanzado de Cosmologia <lb/>(IAC) collaboration. <lb/></div>
 
-			<front>arXiv:0908.0054v1 [astro-ph.CO] 1 Aug 2009<lb/></front>
+			<div type="availability">All the analysis was done using the public code CMBFAST <lb/>[19]. And all the calculated curves were compared to the ob- <lb/>serbations of the WMAP satellite on its last five years. Avail- <lb/>able at http://lambda.gsfc.nasa.gov/product/map/current. <lb/></div>
 
-			<page>2<lb/></page>
+			<listBibl>[1] Hu W., Barkana, R., &amp; Gruzinov A. Phys. Rev. Lett. 85, 1158 - <lb/>1161 (2000), [astro-ph/0003365]. <lb/>[2] Matos T., and Siddhartha Guzman F. Class.Quant.Grav.17:L9- <lb/>L16,2000, [gr-qc/9810028]. <lb/>[3] Matos T., Siddhartha Guzman F., and Urena-Lopez L. A. <lb/>Class.Quant.Grav.17:1707-1712,2000, [astro-ph/9908152]. <lb/>[4] Matos T., and Urena-Lopez L. A. Phys.Rev.D63:063506,2001, <lb/>[astro-ph/0006024]. <lb/>[5] Garcia-Aspeitia M. A., and Matos, T. [gr-qc/0906.327]. <lb/>[6] Jae-Weon Lee and In-gyu Koh. Phys. Rev. D 53, 2236 -2239 <lb/>(1996), [hep-ph/9507385]. <lb/>[7] Siddhartha Guzman F. Phys. Rev. D 73, 021501(R) (2006), [gr- <lb/>qc/0512081]. <lb/>[8] Bernal A., Matos T., Núñez D., 2008, RMxAA, 44, 149, [astro- <lb/>ph/0303455]. <lb/>[9] Matos T., Vazquez-Gonzalez A., and Magana J. [astro- <lb/>ph/0806.0683]. <lb/>[10] Böhmer C. G., and Harko T. JCAP06(2007)025, [astro- <lb/>ph/0705.4158v4]. <lb/>[11] Ferrer F., and Grifols J. A. JCAP12(2004)012, [astro- <lb/>ph/0407532]. <lb/>[12] Dodelson S. Modern Cosmology (Academic Press, 2003). <lb/>[13] Kolb E. W., and Turner M. S. The Early Universe (Addison- <lb/>Wesley, 1990). <lb/>[14] Lesgourgues J. and Pastor S. Physics Reports 429 (2006) 307 - <lb/>379. [astro-ph/0603494]. <lb/>[15] Ma C., and Bertschinger E. Astrophys. J. 455, 7 (1995), [astro- <lb/>ph/9506072]. <lb/>[16] Woo T.P., and Chiueh T.C. ApJ 697 850-861, [astro- <lb/>ph/0806.0232]. <lb/>[17] Ureña-López L. A. Class. Quantum Grav. 19 2617-2632 (2002), <lb/>[gr-qc/0104093]. <lb/>[18] Ureña-López L. A. JCAP01(2009)014, [gr-qc/0806.3093]. <lb/>[19] Seljak <lb/>U. <lb/>and <lb/>Zaldarriaga <lb/>M. <lb/>Astrophys. <lb/>J. <lb/>469, <lb/>437 <lb/>(1996), <lb/>[astro-ph/9603033]. <lb/>http://www.cfa.harvard.edu/∼mzaldarr/CMBFAST/cmbfast.html. <lb/></listBibl>
 
-			<body>Following the same formalism developed for the fermionic<lb/> sector [15], it is useful to define the corrected proper mo-<lb/>mentum q i ≡ a p i , q j = q n j , where n j is its direction unit<lb/> vector and a is the scale factor. The proper momentum p i<lb/> was defined in terms of the canonical conjugate momentum<lb/> P i = a(1 − ψ)p i of the the comoving coordinate x i . The co-<lb/>movil proper energy is ε ≡ a(p 2 + m 2 ) 1/2 . We also know that<lb/> the linear metric perturbations induce linear statistical pertur-<lb/>bations in the distribution function.<lb/>
-
-			f (x i , P j , τ) = f 0 (q)<lb/> 1 + Ψ(x i , q,<lb/> j , τ)<lb/> , (2)<lb/>
-
-			where f 0 is the phase-space distribution function in an homo-<lb/>geneus background universe<lb/>
-
-			f 0 (q) =<lb/> 1 e q/T B − 1<lb/> (3)<lb/>
-
-			and Ψ is related to the perturbation of the bosons temperature<lb/>
-
-			Ψ(x i , q,<lb/> j , τ) = −<lb/> ∂ ln f 0<lb/> ∂ ln q<lb/> (q)<lb/> δ T B<lb/> T B<lb/> (x i , q,<lb/> j , τ).<lb/> (4)<lb/>
-
-			The evolution of the ULBDM is described by the collision-<lb/>less Boltzmann (or Vlasov) equation, which in Fourier space<lb/> reads<lb/>
-
-			˙ Ψ − i<lb/> q<lb/> ε Ψ = −<lb/> ( k ·<lb/> ) ˙<lb/> ψ + i<lb/> ε q<lb/> ( k ·<lb/> )φ ∂ ln f 0<lb/> ∂ ln q<lb/> . (5)<lb/>
-
-			This equation gives the response of the phase-space distribu-<lb/>tion function to the metric perturbations.<lb/>
-
-			III. TESTING WITH THE CMB<lb/>
-
-			The first interrogative is whether the CMB is effectively<lb/> sensitive to the nature of the statistics of the SFDM. We denote<lb/> the mass-to-temperature ratio of some species of fermions as<lb/> x F , and a species of bosons as x B , evaluated today. We com-<lb/>pute the CMB spectrums for fermions and bosons separetely.<lb/> It is important to mantain all the parameters fixed in order<lb/> to observe only the effect of the change of the statistics. In<lb/> figure 1 one can see that for bosons, the amplitudes of the<lb/> first and second peaks are reduced, albeit the third peak is in-<lb/>creased respect to the corresponding of fermions. This is an<lb/> effect similar to that due to an icrease in the ratio between the<lb/> non-relativistic Matter and the Radiation. Thus, it could be<lb/> interpreted as an additional effective attractive potential.<lb/>
-
-			Here, the main problem is that the temperature of the<lb/> ULBDM is entirely unknown. This fact is due to the unknown<lb/> way of colliding with the rest of the matter. Moreover, if the<lb/> interaction rate was always zero, thus there is no reason to<lb/> believe that this species was in thermal equilibrium with the<lb/> primeval fireball. Without any interactions between the parti-<lb/>cles, there is no even a physical meaning for the temperature.<lb/> However, we suppose that there was some primordial decay<lb/> which generated the ULBDM. It also decoupled very early<lb/> (maybe near the Big Bang). Once the species is decoupled<lb/> from the rest of matter, its phase-space distribution function<lb/>
-
-			
-				Figure 1: 
-				CMB spectrums for Ω F = Ω B = 0.2, x F = x B = 63109,<lb/> τ = 0.13. All the parameters are the same for both curves. The con-<lb/>tinuous line corresponds to bosons and the dashed line to fermions.<lb/>
-			
-
-			is &quot;freezed-out&quot; and its temperature can only relax with the<lb/> expansion of the universe T B ∼ a −1 . Then, after photon de-<lb/>coupling, the temperature of the bosons just can be<lb/>
-
-			T B = αT γ ,<lb/> (6)<lb/>
-
-			where α is a constant free parameter to be determined. It is<lb/> crucial to note that if T B ∼ T γ , the quantity<lb/>
-
-			x B ≡<lb/> m B<lb/> T<lb/> (0)<lb/> B<lb/> (7)<lb/>
-
-			is effectively zero, which means that the particle is ultra-<lb/>relativistic today (x B = m B /αT CMB ).<lb/> The addition of<lb/> ULBDM to the total matter background with this value of x B<lb/> just moves the entire CMB spectrum to the right and upwards.<lb/> The effect is shown in figure 2. In all the following figures:<lb/> Ω = 1, Ω Λ = 0.74, Ω bar = 0.04, and the crosses form the<lb/> curve of the mean value of the observed CMB spectrum.<lb/>
-
-			For all the values α 10 −25 it is noticed that the predicted<lb/> power spectrum is not sensitive to the change of α unless it<lb/> approaches to α = 10 −26 (x B = 10 4 ) or greater. The order<lb/> of magnitude needed to fit the data is α ∝ 10 −27 (x B ∝ 10 5 ).<lb/> The mass of the ULBDM must be five orders of magnitude<lb/> greater than its temperature. In figure 3 it is plotted how the<lb/> CMB power spectrum is sensitive to little changes of α. The<lb/> range shown is from α = 0.3x10 −27 to α = 1.1x10 −27 (from<lb/> x B = 73, 367.57 to x B = 40, 759.76). It is noted that, the more<lb/> relativistic the species is, the more enhanced the first and sec-<lb/>ond peaks are.<lb/>
-
-			In figure 4 it is shown the prediction for α = 10 −28 (second<lb/> curve from bottom to top). In this case, the ULBDM become<lb/> non-relativistic very early, causing a damping in the acoustic<lb/> oscillations because of an increase in the gravitational poten-<lb/>tial wells. On the bottom of the same figure also appears the<lb/> curve for α = 10 −30 , in which the same effect is enhanced.<lb/>
-
-			Once the necessary mass-to-temperature ratio is estimated,<lb/> we now investigate the content of bosons against the content<lb/>
-
-			<page>3<lb/></page>
-
-				Figure 2: 
-				CMB spectrum for a Universe with Ω B = 0.2, Ω CDM =<lb/> 0.02, α 10 −26 .<lb/> 
-			
-				
-				Figure 3: 
-				Response of the CMB spectrum to the change in the mass-<lb/>to-temperature ratio of the SFDM. For the three curves Ω B = 0.2,<lb/> Ω CDM = 0.02, α ∝ 10 −27 .<lb/> 
-			
-				
-				Figure 4: 
-				CMB spectrums for α in the interval (10 −26 , 10 −30 ). With<lb/> Ω B = 0.2, Ω CDM = 0.02, and no reionization.<lb/>
-			
-				
-				Figure 5: 
-				CMB power spectrums for diferent contents of ULBDM<lb/> and CDM. For the three curves shown α ∝ 10 −27 , no reionization.<lb/> 
-			
-				
-				Figure 6: 
-				CMB power spectrums for diferent optical depths of reion-<lb/>ization. The range shown is from τ = 0.05 to τ = 0.19. Ω Bos = 0.2,<lb/> Ω CDM = 0.02, α ∝ 10 −27 .<lb/>
-			
-
-			of Cold Dark Matter. Figure 5 shows how the increase in Cold<lb/> Dark Matter diminishes the amplitude of the oscillations. This<lb/> is an effect of an enhancement of the gravitational potential<lb/> wells. It also seems to suggest a universe with these two con-<lb/>tents equilibrated. Nevertheless, we must measure the effect<lb/> of the fraction of reionized baryonic matter too. We fix all<lb/> the parameters and now vary the optical depth in figure 6. We<lb/> show that a universe ULBDM-dominated (Ω B = 0.2) could<lb/> be allowed for x B ∝ 10 5 and τ between 0.05 and 0.19.<lb/> Now we just want to say something about the number den-<lb/>sity of the SFDM. Firstly, we must keep in mind that in this<lb/> scheme, there is no condensation explicitly taked into account<lb/> yet. Next, if we must assume that nowadays the ULBDM par-<lb/>ticles behave as non-relativistic, so we can use<lb/>
-
-			m B n B = Ω B ρ c .<lb/> (8)<lb/>
-
-			Then if one fixes the mass, the content of bosons in the uni-<lb/>
-
-			<page>4<lb/></page>
-
-			verse Ω B determines its number density. For m B ≈ 10 −22 and<lb/> Ω B = 0.2 it follows that n B ≈ 10 25 cm −3 . Such a big density<lb/> must be accompanied by a Bose-Einstein condensate treat-<lb/>ment of this matter. That is the aim of one following work<lb/> to be presented.<lb/>
-
-			IV. CONCLUSIONS<lb/>
-
-			A universe dominated by Ultra Light Bosonic Dark Matter<lb/> in a non-condensate state could be possible only if these par-<lb/>ticles fulfill the condition that its mass-to-temperature ratio<lb/> must be close to ∼ 10 5 . For a mass ∼ 10 −22 eV , this is equiv-<lb/>alent to a temperature of the order of ∼ 10 −27 eV ∼ 10 −22 K.<lb/> Until now, there is no way to falsify such a low temperature<lb/> unless it can be given a mechanism of interaction with the rest<lb/> of the matter or a primeval decay which had could generate<lb/> the ULBDM. The energy of interaction would reveal the tem-<lb/>perature of decoupling. Then the temperature of the ULBDM<lb/> would be determined and it could be predicted a set of allowed<lb/> values of the parameter α. If this interaction can be parameter-<lb/>ized by a constant of interaction, then the CMB data can serve<lb/> to predict an allowed range of values for this constant. This<lb/> range could be used to search this particles by other means.<lb/>
-
-			We have shown that the effect of Reionzation is of crucial<lb/> importance to understand the nature of this type of matter in<lb/> the CMB. To get in concordance between the model and the<lb/> observations, it is needed at least a value of τ 0.07.<lb/> The most promising and physically interesting feature of<lb/> the ULBDM or SFDM resides on its condensate state [16],<lb/> [17], [18]. We have shown that the change in the type of<lb/> statistics in the distribution function has non negligible ef-<lb/>fects in the CMB. It remains to include explicitly the infor-<lb/>mation of a Bose-Einstein condensate in the dynamical equa-<lb/>tions. The number density of the ULBDM (∼ 10 −22 eV ), if<lb/> it dominated the Dark Matter content, should be of the order<lb/> of ∼ 10 25 cm −3 today. It is necessary to investigate whether<lb/> the condition x B ∝ 10 5 should be still satisfied in a condensate<lb/> state, or not.<lb/>
-
-		</body>
-
-		<back>
-			
-			<div type="acknowledgement">Acknowledgements<lb/>
-
-                We would like to thank Luis Arturo Ureña López, Ab-<lb/>del Pérez Lorenzana, Omar Miranda Romagnoli, Ricardo<lb/> López Fernández and Roy Maartens for useful discussions.<lb/> This work was partially supported by CONACyT México,<lb/> under grants 49865-F, 216536/219673 and by grant number<lb/> I0101/131/07 C-234/07, Instituto Avanzado de Cosmologia<lb/> (IAC) collaboration.<lb/></div>
-
-			<div type="availability">All the analysis was done using the public code CMBFAST<lb/> [19]. And all the calculated curves were compared to the ob-<lb/>serbations of the WMAP satellite on its last five years. Avail-<lb/>able at http://lambda.gsfc.nasa.gov/product/map/current.<lb/></div>
-
-				
-			<listBibl>				
-				[1 Hu W., Barkana, R., &amp; Gruzinov A. Phys. Rev. Lett. 85, 1158 -<lb/>1161 (2000), [astro-ph/0003365].<lb/>
-
-				[2 Matos T., and Siddhartha Guzman F. Class.Quant.Grav.17:L9-<lb/>L16,2000, [gr-qc/9810028].<lb/>
-
-				[3 Matos T., Siddhartha Guzman F., and Urena-Lopez L. A.<lb/> Class.Quant.Grav.17:1707-1712,2000, [astro-ph/9908152].<lb/>
-
-				[4 Matos T., and Urena-Lopez L. A. Phys.Rev.D63:063506,2001,<lb/> [astro-ph/0006024].<lb/>
-
-				[5 Garcia-Aspeitia M. A., and Matos, T. [gr-qc/0906.327].<lb/>
-
-				[6 Jae-Weon Lee and In-gyu Koh. Phys. Rev. D 53, 2236 -2239<lb/> (1996), [hep-ph/9507385].<lb/>
-
-				[7 Siddhartha Guzman F. Phys. Rev. D 73, 021501(R) (2006), [gr-<lb/>qc/0512081].<lb/>
-
-				[8 Bernal A., Matos T., Núñez D., 2008, RMxAA, 44, 149, [astro-<lb/>ph/0303455].<lb/>
-
-				[9 Matos T., Vazquez-Gonzalez A., and Magana J. [astro-<lb/>ph/0806.0683].<lb/>
-
-				[10 Böhmer C. G., and Harko T. JCAP06(2007)025, [astro-<lb/>ph/0705.4158v4].<lb/>
-
-				[11 Ferrer F., and Grifols J. A. JCAP12(2004)012, [astro-<lb/>ph/0407532].<lb/>
-
-				[12 Dodelson S. Modern Cosmology (Academic Press, 2003).<lb/>
-
-				[13 Kolb E. W., and Turner M. S. The Early Universe (Addison-<lb/>Wesley, 1990).<lb/>
-
-				[14 Lesgourgues J. and Pastor S. Physics Reports 429 (2006) 307 –<lb/> 379. [astro-ph/0603494].<lb/>
-
-				[15 Ma C., and Bertschinger E. Astrophys. J. 455, 7 (1995), [astro-<lb/>ph/9506072].<lb/>
-
-				[16 Woo T.P., and Chiueh T.C. ApJ 697 850-861, [astro-<lb/>ph/0806.0232].<lb/>
-
-				[17 Ureña-López L. A. Class. Quantum Grav. 19 2617-2632 (2002),<lb/> [gr-qc/0104093].<lb/>
-
-				[18 Ureña-López L. A. JCAP01(2009)014, [gr-qc/0806.3093].<lb/>
-
-				[19 Seljak<lb/> U.<lb/> and Zaldarriaga<lb/> M.<lb/> Astrophys.<lb/> J.<lb/> 469,<lb/> 437 (1996),<lb/> [astro-ph/9603033].<lb/> http://www.cfa.harvard.edu/∼mzaldarr/CMBFAST/cmbfast.html.
-
-
-			</listBibl>
-			</back>
 	</text>
 </tei>
