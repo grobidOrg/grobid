@@ -262,8 +262,8 @@ subprojects {
             }
         }
 
-        implementation "com.fasterxml.jackson.core:jackson-core:2.21.6"
-        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.6"
+        implementation "com.fasterxml.jackson.core:jackson-core:2.22.3"
+        implementation "com.fasterxml.jackson.core:jackson-databind:2.22.3"
         implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.4"
     }
 
