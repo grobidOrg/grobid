@@ -1,0 +1,705 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2109.01789">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-09T19:18:43.576131Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-09T19:18:43.576131Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-10T09:34:40.532Z" status="unfinished" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-05-10T10:01:33.606Z" status="unfinished" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-05-10T15:42:07.232Z" status="unfinished" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-05-10T15:46:43.001Z" status="in-review" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-05T09:56:34.219Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-10-04T18:16:33.856Z" status="checked" who="#lfoppiano">
+      <note type="label">v1 (lfoppiano)</note>
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<meeting>ICRC 2021<lb/></meeting>
+
+	THE
+	<meeting>ASTROPARTICLE PHYSICS CONFERENCE<lb/> Berlin | Germany<lb/> ONLINE ICRC 2021<lb/> THE ASTROPARTICLE PHYSICS CONFERENCE<lb/> Berlin | Germany<lb/> 37 th International<lb/> Cosmic Ray Conference<lb/> 12-23 July 2021<lb/></meeting>
+
+	<docTitle>
+	<titlePart>Overview of Cherenkov Telescope on-board EUSO-SPB2<lb/> for the Detection of Very-High-Energy Neutrinos<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Mahdi Bagheri, 𝑎, * Peter Bertone, 𝑏 Ivan Fontane, 𝑐 Eliza Gazda, 𝑎 Eleanor G. Judd, 𝑑<lb/> John F. Krizmanic, 𝑒 Evgeny N. Kuznetsov, 𝑐 Michael J. Miller, 𝑓 Jane Nachtman, 𝑓<lb/> Yasar Onel, 𝑓 A. Nepomuk Otte, 𝑎 Patrick J. Reardon, 𝑐,𝑔 Oscar Romero Matamala, 𝑎<lb/> Andrew Wang 𝑎 and Lawrence Wiencke ℎ</docAuthor>
+	</byline>
+
+	on behalf of the 
+	<note type="group">JEM-EUSO Collaboration<lb/></note>
+
+	(a complete list of authors can be found at the end of the proceedings)<lb/>
+	<byline>
+	<affiliation>𝑎 School of Physics &amp; Center for Relativistic Astrophysics, Georgia Institute of Technology,<lb/></affiliation>
+	</byline>
+
+	<address>837 State Street NW, Atlanta, GA 30332-0430, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑏 Marshall Space Flight Center,</affiliation>
+	</byline>
+
+	<address>Huntsville, AL, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑐 The University of Alabama in Huntsville,</affiliation>
+	</byline>
+
+	<address>Huntsville, AL, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑑 UC Berkley, Space Sciences Laboratory,</affiliation>
+	</byline>
+
+	<address>Berkeley, CA, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑒 University of Maryland,</affiliation>
+	</byline>
+
+	<address>Baltimore County, Baltimore, MD, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 University of Iowa,</affiliation>
+	</byline>
+
+	<address>Iowa City, IA, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑔 Center for Applied Optics,</affiliation>
+	</byline>
+
+	<address>Huntsville, AL, USA<lb/></address>
+
+	<byline>
+	<affiliation>ℎ Colorado School of Mines,</affiliation>
+	</byline>
+
+	<address>Golden, CO, USA<lb/></address>
+
+	E-mail:
+	<email>mbagheri31@gatech.edu<lb/></email>
+
+	<div type="abstract">We present the status of the development of a Cherenkov telescope to be flown on a long-duration<lb/> balloon flight, the Extreme Universe Space Observatory Super Pressure Balloon 2 (EUSO-SPB2).<lb/> EUSO-SPB2 is an approved NASA balloon mission that is planned to fly in 2023 and is a<lb/> precursor of the Probe of Extreme Multi-Messenger Astrophysics (POEMMA), a candidate for<lb/> an Astrophysics probe-class mission. The purpose of the Cherenkov telescope on-board EUSO-<lb/>SPB2 is to classify known and unknown sources of backgrounds for future space-based neutrino<lb/> detectors. Furthermore, we will use the Earth-skimming technique to search for Very-High-Energy<lb/> (VHE) tau neutrinos below the limb (E &gt; 10 PeV) and observe air showers from cosmic rays above<lb/> the limb. The 0.785 𝑚 2 Cherenkov telescope is equipped with a 512-pixel SiPM camera covering<lb/> a 12.8°x 6.4°(Horizontal × Vertical) field of view. The camera signals are digitized with a 100<lb/> MS/s readout system. In this paper, we discuss the status of the telescope development, the camera<lb/> integration, and simulation studies of the camera response.<lb/></div>
+
+	<meeting>37th International Cosmic Ray Conference (ICRC 2021)<lb/> July 12th -23rd, 2021<lb/> Online -Berlin, Germany<lb/></meeting>
+
+	* Presenter<lb/>
+	<note type="copyright">© Copyright owned by the author(s) under the terms of the Creative Commons<lb/> Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0).<lb/> https://pos.sissa.it/<lb/></note>
+
+	<idno>arXiv:2109.01789v1 [astro-ph.IM]</idno>
+
+	<date>4 Sep 2021<lb/></date>
+
+	<!-- the next two elements are the headnote/footnotes --> 	
+	EUSO-SPB2 Cherenkov Telescope<lb/>
+
+	<byline>
+	<docAuthor>Mahdi Bagheri<lb/></docAuthor>
+	</byline>
+
+	Full Authors List:
+	
+	<note type="group">JEM-EUSO Collaboration<lb/></note>
+
+	<byline>
+	<docAuthor>G. Abdellaoui 𝑎ℎ , S. Abe 𝑓 𝑞 , J.H. Adams Jr. 𝑝𝑑 , D. Allard 𝑐𝑏 , G. Alonso 𝑚𝑑 , L. Anchordoqui 𝑝𝑒 , A. Anzalone 𝑒ℎ,𝑒𝑑 , E. Arnone 𝑒𝑘,𝑒𝑙 ,<lb/> K. Asano 𝑓 𝑒 , R. Attallah 𝑎𝑐 , H. Attoui 𝑎𝑎 , M. Ave Pernas 𝑚𝑐 , M. Bagheri 𝑝ℎ , J. Baláz 𝑙𝑎 , M. Bakiri 𝑎𝑎 , D. Barghini 𝑒𝑙,𝑒𝑘 , S. Bartocci 𝑒𝑖,𝑒 𝑗 ,<lb/> M. Battisti 𝑒𝑘,𝑒𝑙 , J. Bayer 𝑑𝑑 , B. Beldjilali 𝑎ℎ , T. Belenguer 𝑚𝑏 , N. Belkhalfa 𝑎𝑎 , R. Bellotti 𝑒𝑎,𝑒𝑏 , A.A. Belov 𝑘𝑏 , K. Benmessai 𝑎𝑎 ,<lb/> M. Bertaina 𝑒𝑘,𝑒𝑙 , P.F. Bertone 𝑝 𝑓 , P.L. Biermann 𝑑𝑏 , F. Bisconti 𝑒𝑙,𝑒𝑘 , C. Blaksley 𝑓 𝑡 , N. Blanc 𝑜𝑎 , S. Blin-Bondil 𝑐𝑎,𝑐𝑏 , P. Bobik 𝑙𝑎 ,<lb/> M. Bogomilov 𝑏𝑎 , E. Bozzo 𝑜𝑏 , S. Briz 𝑝𝑏 , A. Bruno 𝑒ℎ,𝑒𝑑 , K.S. Caballero ℎ𝑑 , F. Cafagna 𝑒𝑎 , G. Cambié 𝑒𝑖,𝑒 𝑗 , D. Campana 𝑒 𝑓 , J-<lb/>N. Capdevielle 𝑐𝑏 , F. Capel 𝑑𝑒 , A. Caramete 𝑗 𝑎 , L. Caramete 𝑗 𝑎 , P. Carlson 𝑛𝑎 , R. Caruso 𝑒𝑐,𝑒𝑑 , M. Casolino 𝑓 𝑡,𝑒𝑖 , C. Cassardo 𝑒𝑘,𝑒𝑙 ,<lb/> A. Castellina 𝑒𝑘,𝑒𝑚 , O. Catalano 𝑒ℎ,𝑒𝑑 , A. Cellino 𝑒𝑘,𝑒𝑚 , K. Černý 𝑏𝑏 , M. Chikawa 𝑓 𝑐 , G. Chiritoi 𝑗 𝑎 , M.J. Christl 𝑝 𝑓 , R. Colalillo 𝑒 𝑓 ,𝑒𝑔 ,<lb/> L. Conti 𝑒𝑛,𝑒𝑖 , G. Cotto 𝑒𝑘,𝑒𝑙 , H.J. Crawford 𝑝𝑎 , R. Cremonini 𝑒𝑙 , A. Creusot 𝑐𝑏 , A. de Castro Gónzalez 𝑝𝑏 , C. de la Taille 𝑐𝑎 , L. del<lb/> Peral 𝑚𝑐 , A. Diaz Damian 𝑐𝑐 , R. Diesing 𝑝𝑏 , P. Dinaucourt 𝑐𝑎 , A. Djakonow 𝑖𝑎 , T. Djemil 𝑎𝑐 , A. Ebersoldt 𝑑𝑏 , T. Ebisuzaki 𝑓 𝑡 ,<lb/> L. Eliasson 𝑛𝑎 , J. Eser 𝑝𝑏 , F. Fenu 𝑒𝑘,𝑒𝑙 , S. Fernández-González 𝑚𝑎 , S. Ferrarese 𝑒𝑘,𝑒𝑙 , G. Filippatos 𝑝𝑐 , W.I. Finch 𝑝𝑐 C. Fornaro 𝑒𝑛,𝑒𝑖 ,<lb/> M. Fouka 𝑎𝑏 , A. Franceschi 𝑒𝑒 , S. Franchini 𝑚𝑑 , C. Fuglesang 𝑛𝑎 , T. Fujii 𝑓 𝑔 , M. Fukushima 𝑓 𝑒 , P. Galeotti 𝑒𝑘,𝑒𝑙 , E. García-<lb/>Ortega 𝑚𝑎 , D. Gardiol 𝑒𝑘,𝑒𝑚 , G.K. Garipov 𝑘𝑏 , E. Gascón 𝑚𝑎 , E. Gazda 𝑝ℎ , J. Genci 𝑙𝑏 , A. Golzio 𝑒𝑘,𝑒𝑙 , C. González Alvarado 𝑚𝑏 ,<lb/> P. Gorodetzky 𝑓 𝑡 , A. Green 𝑝𝑐 , F. Guarino 𝑒 𝑓 ,𝑒𝑔 , C. Guépin 𝑝𝑙 , A. Guzmán 𝑑𝑑 , Y. Hachisu 𝑓 𝑡 , A. Haungs 𝑑𝑏 , J. Hernández<lb/> Carretero 𝑚𝑐 , L. Hulett 𝑝𝑐 , D. Ikeda 𝑓 𝑒 , N. Inoue 𝑓 𝑛 , S. Inoue 𝑓 𝑡 , F. Isgrò 𝑒 𝑓 ,𝑒𝑔 , Y. Itow 𝑓 𝑘 , T. Jammer 𝑑𝑐 , S. Jeong 𝑔𝑏 , E. Joven 𝑚𝑒 ,<lb/> E.G. Judd 𝑝𝑎 , J. Jochum 𝑑𝑐 , F. Kajino 𝑓 𝑓 , T. Kajino 𝑓 𝑖 , S. Kalli 𝑎 𝑓 , I. Kaneko 𝑓 𝑡 , Y. Karadzhov 𝑏𝑎 , M. Kasztelan 𝑖𝑎 , K. Katahira 𝑓 𝑡 ,<lb/> K. Kawai 𝑓 𝑡 , Y. Kawasaki 𝑓 𝑡 , A. Kedadra 𝑎𝑎 , H. Khales 𝑎𝑎 , B.A. Khrenov 𝑘𝑏 , Jeong-Sook Kim 𝑔𝑎 , Soon-Wook Kim 𝑔𝑎 , M. Kleifges 𝑑𝑏 ,<lb/> P.A. Klimov 𝑘𝑏 , D. Kolev 𝑏𝑎 , I. Kreykenbohm 𝑑𝑎 , J.F. Krizmanic 𝑝 𝑓 , 𝑝𝑘 , K. Królik 𝑖𝑎 , V. Kungel 𝑝𝑐 , Y. Kurihara 𝑓 𝑠 , A. Kusenko 𝑓 𝑟 , 𝑝𝑒 ,<lb/> E. Kuznetsov 𝑝𝑑 , H. Lahmar 𝑎𝑎 , F. Lakhdari 𝑎𝑔 , J. Licandro 𝑚𝑒 , L. López Campano 𝑚𝑎 , F. López Martínez 𝑝𝑏 , S. Mackovjak 𝑙𝑎 ,<lb/> M. Mahdi 𝑎𝑎 , D. Mandát 𝑏𝑐 , M. Manfrin 𝑒𝑘,𝑒𝑙 , L. Marcelli 𝑒𝑖 , J.L. Marcos 𝑚𝑎 , W. Marszał 𝑖𝑎 , Y. Martín 𝑚𝑒 , O. Martinez ℎ𝑐 ,<lb/> K. Mase 𝑓 𝑎 , R. Matev 𝑏𝑎 , J.N. Matthews 𝑝𝑔 , N. Mebarki 𝑎𝑑 , G. Medina-Tanco ℎ𝑎 , A. Menshikov 𝑑𝑏 , A. Merino 𝑚𝑎 , M. Mese 𝑒 𝑓 ,𝑒𝑔 ,<lb/> J. Meseguer 𝑚𝑑 , S.S. Meyer 𝑝𝑏 , J. Mimouni 𝑎𝑑 , H. Miyamoto 𝑒𝑘,𝑒𝑙 , Y. Mizumoto 𝑓 𝑖 , A. Monaco 𝑒𝑎,𝑒𝑏 , J.A. Morales de los Ríos 𝑚𝑐 ,<lb/> M. Mastafa 𝑝𝑑 , S. Nagataki 𝑓 𝑡 , S. Naitamor 𝑎𝑏 , T. Napolitano 𝑒𝑒 , J. M. Nachtman 𝑝𝑖 A. Neronov 𝑜𝑏,𝑐𝑏 , K. Nomoto 𝑓 𝑟 , T. Nonaka 𝑓 𝑒 ,<lb/> T. Ogawa 𝑓 𝑡 , S. Ogio 𝑓 𝑙 , H. Ohmori 𝑓 𝑡 , A.V. Olinto 𝑝𝑏 , Y. Onel 𝑝𝑖 G. Osteria 𝑒 𝑓 , A.N. Otte 𝑝ℎ , A. Pagliaro 𝑒ℎ,𝑒𝑑 , W. Painter 𝑑𝑏 ,<lb/> M.I. Panasyuk 𝑘𝑏 , B. Panico 𝑒 𝑓 , E. Parizot 𝑐𝑏 , I.H. Park 𝑔𝑏 , B. Pastircak 𝑙𝑎 , T. Paul 𝑝𝑒 , M. Pech 𝑏𝑏 , I. Pérez-Grande 𝑚𝑑 , F. Perfetto 𝑒 𝑓 ,<lb/> T. Peter 𝑜𝑐 , P. Picozza 𝑒𝑖,𝑒 𝑗, 𝑓 𝑡 , S. Pindado 𝑚𝑑 , L.W. Piotrowski 𝑖𝑏 , S. Piraino 𝑑𝑑 , Z. Plebaniak 𝑒𝑘,𝑒𝑙,𝑖𝑎 , A. Pollini 𝑜𝑎 , E.M. Popescu 𝑗 𝑎 ,<lb/> R. Prevete 𝑒 𝑓 ,𝑒𝑔 , G. Prévôt 𝑐𝑏 , H. Prieto 𝑚𝑐 , M. Przybylak 𝑖𝑎 , G. Puehlhofer 𝑑𝑑 , M. Putis 𝑙𝑎 , P. Reardon 𝑝𝑑 , M.H.. Reno 𝑝𝑖 , M. Reyes 𝑚𝑒 ,<lb/> M. Ricci 𝑒𝑒 , M.D. Rodríguez Frías 𝑚𝑐 , O.F. Romero Matamala 𝑝ℎ , F. Ronga 𝑒𝑒 , M.D. Sabau 𝑚𝑏 , G. Saccá 𝑒𝑐,𝑒𝑑 , G. Sáez Cano 𝑚𝑐 ,<lb/> H. Sagawa 𝑓 𝑒 , Z. Sahnoune 𝑎𝑏 , A. Saito 𝑓 𝑔 , N. Sakaki 𝑓 𝑡 , H. Salazar ℎ𝑐 , J.C. Sanchez Balanzar ℎ𝑎 , J.L. Sánchez 𝑚𝑎 , A. Santangelo 𝑑𝑑 ,<lb/> A. Sanz-Andrés 𝑚𝑑 , M. Sanz Palomino 𝑚𝑏 , O.A. Saprykin 𝑘𝑐 , F. Sarazin 𝑝𝑐 , M. Sato 𝑓 𝑜 , A. Scagliola 𝑒𝑎,𝑒𝑏 , T. Schanz 𝑑𝑑 , H. Schieler 𝑑𝑏 ,<lb/> P. Schovánek 𝑏𝑐 , V. Scotti 𝑒 𝑓 ,𝑒𝑔 , M. Serra 𝑚𝑒 , S.A. Sharakin 𝑘𝑏 , H.M. Shimizu 𝑓 𝑗 , K. Shinozaki 𝑖𝑎 , T. Shirahama 𝑓 𝑛 , J.F. Soriano 𝑝𝑒 ,<lb/> A. Sotgiu 𝑒𝑖,𝑒 𝑗 , I. Stan 𝑗 𝑎 , I. Strharský 𝑙𝑎 , N. Sugiyama 𝑓 𝑗 , D. Supanitsky ℎ𝑎 , M. Suzuki 𝑓 𝑚 , J. Szabelski 𝑖𝑎 , N. Tajima 𝑓 𝑡 , T. Tajima 𝑓 𝑡 ,<lb/> Y. Takahashi 𝑓 𝑜 , M. Takeda 𝑓 𝑒 , Y. Takizawa 𝑓 𝑡 , M.C. Talai 𝑎𝑐 , Y. Tameda 𝑓 𝑢 , C. Tenzer 𝑑𝑑 , S.B. Thomas 𝑝𝑔 , O. Tibolla ℎ𝑒 ,<lb/> L.G. Tkachev 𝑘 𝑎 , T. Tomida 𝑓 ℎ , N. Tone 𝑓 𝑡 , S. Toscano 𝑜𝑏 , M. Traïche 𝑎𝑎 , Y. Tsunesada 𝑓 𝑙 , K. Tsuno 𝑓 𝑡 , S. Turriziani 𝑓 𝑡 , Y. Uchihori 𝑓 𝑏 ,<lb/> O. Vaduvescu 𝑚𝑒 , J.F. Valdés-Galicia ℎ𝑎 , P. Vallania 𝑒𝑘,𝑒𝑚 , L. Valore 𝑒 𝑓 ,𝑒𝑔 , G. Vankova-Kirilova 𝑏𝑎 , T. M. Venters 𝑝 𝑗 , C. Vigorito 𝑒𝑘,𝑒𝑙 ,<lb/> L. Villaseñor ℎ𝑏 , B. Vlcek 𝑚𝑐 , P. von Ballmoos 𝑐𝑐 , M. Vrabel 𝑙𝑏 , S. Wada 𝑓 𝑡 , J. Watanabe 𝑓 𝑖 , J. Watts Jr. 𝑝𝑑 , R. Weigand Muñoz 𝑚𝑎 ,<lb/> A. Weindl 𝑑𝑏 , L. Wiencke 𝑝𝑐 , M. Wille 𝑑𝑎 , J. Wilms 𝑑𝑎 , D. Winn 𝑝𝑚 T. Yamamoto 𝑓 𝑓 , J. Yang 𝑔𝑏 , H. Yano 𝑓 𝑚 , I.V. Yashin 𝑘𝑏 ,<lb/> D. Yonetoku 𝑓 𝑑 , S. Yoshida 𝑓 𝑎 , R. Young 𝑝 𝑓 , I.S Zgura 𝑗 𝑎 , M.Yu. Zotov 𝑘𝑏 , A. Zuccaro Marchi 𝑓 𝑡<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>𝑎𝑎 Centre for Development of Advanced Technologies (CDTA),</affiliation>
+	</byline>
+
+	<address>Algiers, Algeria<lb/></address>
+
+	<byline>
+	<affiliation>𝑎𝑏 Dep. Astronomy, Centre Res. Astronomy, Astrophysics and Geophysics (CRAAG),</affiliation>
+	</byline>
+
+	<address>Algiers, Algeria<lb/></address>
+
+	<byline>
+	<affiliation>𝑎𝑐 LPR at Dept. of Physics, Faculty of Sciences, University Badji Mokhtar,</affiliation>
+	</byline>
+
+	<address>Annaba, Algeria<lb/></address>
+
+	<byline>
+	<affiliation>𝑎𝑑 Lab. of Math. and Sub-Atomic Phys. (LPMPS), Univ. Constantine I,</affiliation>
+	</byline>
+
+	<address>Constantine, Algeria<lb/></address>
+
+	<byline>
+	<affiliation>𝑎 𝑓 Department of Physics, Faculty of Sciences, University of M'sila,</affiliation>
+	</byline>
+
+	<address>M'sila, Algeria<lb/></address>
+
+	<byline>
+	<affiliation>𝑎𝑔 Research Unit on Optics and Photonics, UROP-CDTA,</affiliation>
+	</byline>
+
+	<address>Sétif, Algeria<lb/></address>
+
+	<byline>
+	<affiliation>𝑎ℎ Telecom Lab., Faculty of Technology, University Abou Bekr Belkaid,</affiliation>
+	</byline>
+
+	<address>Tlemcen, Algeria<lb/></address>
+
+	<byline>
+	<affiliation>𝑏𝑎 St. Kliment Ohridski University of Sofia,</affiliation>
+	</byline>
+
+	<address>Bulgaria<lb/></address>
+
+	<byline>
+	<affiliation>𝑏𝑏 Joint Laboratory of Optics, Faculty of Science, Palacký University,</affiliation>
+	</byline>
+
+	<address>Olomouc, Czech Republic<lb/></address>
+
+	<byline>
+	<affiliation>𝑏𝑐 Institute of Physics of the Czech Academy of Sciences,</affiliation>
+	</byline>
+
+	<address>Prague, Czech Republic<lb/></address>
+
+	<byline>
+	<affiliation>𝑐𝑎 Omega, Ecole Polytechnique, CNRS/IN2P3,</affiliation>
+	</byline>
+
+	<address>Palaiseau, France<lb/></address>
+
+	<byline>
+	<affiliation>𝑐𝑏 Université de Paris, CNRS, AstroParticule et Cosmologie,</affiliation>
+	</byline>
+
+	<address>F-75013 Paris, France<lb/></address>
+
+	<byline>
+	<affiliation>𝑐𝑐 IRAP, Université de Toulouse, CNRS,</affiliation>
+	</byline>
+
+	<address>Toulouse, France<lb/></address>
+
+	<byline>
+	<affiliation>𝑑𝑎 ECAP, University of Erlangen-Nuremberg,</affiliation>
+	</byline>
+
+	<address>Germany<lb/></address>
+
+	<byline>
+	<affiliation>𝑑𝑏 Karlsruhe Institute of Technology (KIT),</affiliation>
+	</byline>
+
+	<address>Germany<lb/></address>
+
+	<byline>
+	<affiliation>𝑑𝑐 Experimental Physics Institute, Kepler Center, University of Tübingen,</affiliation>
+	</byline>
+
+	<address>Germany<lb/></address>
+
+	<byline>
+	<affiliation>𝑑𝑑 Institute for Astronomy and Astrophysics, Kepler Center, University of Tübingen,</affiliation>
+	</byline>
+
+	<address>Germany<lb/></address>
+
+	<byline>
+	<affiliation>𝑑𝑒 Technical University of Munich,</affiliation>
+	</byline>
+
+	<address>Munich, Germany<lb/></address>
+
+	<byline>
+	<affiliation>𝑒𝑎 Istituto Nazionale di Fisica Nucleare -Sezione di Bari,</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒𝑏 Universita' degli Studi di Bari Aldo Moro and INFN -Sezione di Bari,</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒𝑐 Dipartimento di Fisica e Astronomia "Ettore Majorana", Universita di Catania,</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒𝑑 Istituto Nazionale di Fisica Nucleare -Sezione di Catania,</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒𝑒 Istituto Nazionale di Fisica Nucleare -Laboratori Nazionali di Frascati,</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒 𝑓 Istituto Nazionale di Fisica Nucleare -Sezione di Napoli,</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒𝑔 Universita' di Napoli Federico II -Dipartimento di Fisica "Ettore Pancini",</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒ℎ INAF -Istituto di Astrofisica Spaziale e Fisica Cosmica di Palermo,</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒𝑖 Istituto Nazionale di Fisica Nucleare -Sezione di Roma Tor Vergata,</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒 𝑗 Universita' di Roma Tor Vergata -Dipartimento di Fisica,</affiliation>
+	</byline>
+
+	<address>Roma, Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒𝑘 Istituto Nazionale di Fisica Nucleare -Sezione di Torino,</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒𝑙 Dipartimento di Fisica, Universita' di Torino,</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒𝑚 Osservatorio Astrofisico di Torino, Istituto Nazionale di Astrofisica,</affiliation>
+	</byline>
+
+	<address>Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑒𝑛 Uninettuno University,</affiliation>
+	</byline>
+
+	<address>Rome, Italy<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑎 Chiba University,</affiliation>
+	</byline>
+
+	<address>Chiba, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑏 National Institutes for Quantum and Radiological Science and Technology (QST),</affiliation>
+	</byline>
+
+	<address>Chiba, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑐 Kindai University,</affiliation>
+	</byline>
+
+	<address>Higashi-Osaka, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑑 Kanazawa University,</affiliation>
+	</byline>
+
+	<address>Kanazawa, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑒 Institute for Cosmic Ray Research, University of Tokyo,</affiliation>
+	</byline>
+
+	<address>Kashiwa, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑓 Konan University,</affiliation>
+	</byline>
+
+	<address>Kobe, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑔 Kyoto University,</affiliation>
+	</byline>
+
+	<address>Kyoto, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 ℎ Shinshu University,</affiliation>
+	</byline>
+
+	<address>Nagano, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑖 National Astronomical Observatory,</affiliation>
+	</byline>
+
+	<address>Mitaka, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑗 Nagoya University,</affiliation>
+	</byline>
+
+	<address>Nagoya, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑘 Institute for Space-Earth Environmental Research, Nagoya University,</affiliation>
+	</byline>
+
+	<address>Nagoya, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑙 Graduate School of Science, Osaka City University,</affiliation>
+	</byline>
+
+	<address>Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑚 Institute of Space and Astronautical Science/JAXA,</affiliation>
+	</byline>
+
+	<address>Sagamihara, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑛 Saitama University,</affiliation>
+	</byline>
+
+	<address>Saitama, Japan<lb/></address>
+
+	<byline>
+	<affiliation>𝑓 𝑜 Hokkaido University,</affiliation>
+	</byline>
+
+    <address>Sapporo, Japan<lb/></address>
+
+    <byline>
+	<affiliation> 𝑓 𝑝 Osaka Electro-Communication University, </affiliation>
+	</byline>
+			
+     <address>Neyagawa, Japan<lb/></address>
+
+	 <byline>
+	<affiliation>𝑓 𝑞 Nihon University Chiyoda, </affiliation>
+	 </byline>
+
+     <address>Tokyo, Japan<lb/></address>
+
+	 <byline>
+	 <affiliation>𝑓 𝑟 University of Tokyo, </affiliation>
+	 </byline>
+
+	 <address>Tokyo, Japan<lb/></address>
+
+	 <byline>
+	 <affiliation>𝑓 𝑠 High Energy Accelerator Research Organization (KEK), </affiliation>
+	 </byline>
+
+	 <address>Tsukuba, Japan<lb/></address>
+
+	 <byline>
+     <affiliation>𝑓 𝑡 RIKEN, </affiliation>
+	 </byline>
+
+	 <address>Wako, Japan<lb/></address>
+
+	 <byline>
+	 <affiliation>𝑔𝑎 Korea Astronomy and Space Science Institute (KASI), </affiliation>
+	 </byline>
+
+	<address>Daejeon, Republic of Korea<lb/></address>
+
+	<byline>
+	<affiliation>𝑔𝑏 Sungkyunkwan University, </affiliation>
+	</byline>
+
+	<address>Seoul, Republic of Korea<lb/></address>
+
+	<byline>
+	<affiliation>ℎ𝑎 Universidad Nacional Autónoma de México (UNAM), </affiliation>
+	</byline>
+
+	<address>Mexico<lb/></address>
+
+	<byline>
+	<affiliation>ℎ𝑏 Universidad Michoacana de San Nicolas de Hidalgo (UMSNH),</affiliation>
+	</byline>
+
+	<address>Morelia, Mexico<lb/></address>
+
+	<byline>
+	<affiliation>ℎ𝑐 Benemérita Universidad Autónoma de Puebla (BUAP), </affiliation>
+	</byline>
+
+	<address>Mexico<lb/></address>
+
+	<byline>
+	<affiliation>ℎ𝑑 Universidad Autónoma de Chiapas (UNACH), </affiliation>
+	</byline>
+
+	<address>Chiapas, Mexico<lb/></address>
+
+	<byline>
+	<affiliation>ℎ𝑒 Centro Mesoamericano de Física Teórica (MCTP), </affiliation>
+	</byline>
+
+	<address>Mexico<lb/></address>
+
+	<byline>
+	<affiliation>𝑖𝑎 National Centre for Nuclear Research, </affiliation>
+	</byline>
+
+	<address>Lodz, Poland<lb/></address>
+
+	<byline>
+	<affiliation>𝑖𝑏 Faculty of Physics, University of Warsaw, </affiliation>
+	</byline>
+
+	<address>Poland<lb/></address>
+
+	<byline>
+	<affiliation>𝑗 𝑎 Institute of Space Science ISS, </affiliation>
+	</byline>
+
+	<address>Magurele, Romania<lb/></address>
+
+	<byline>
+	<affiliation>𝑘 𝑎 Joint Institute for Nuclear Research, </affiliation>
+	</byline>
+
+	<address>Dubna, Russia<lb/></address>
+
+	<byline>
+	<affiliation>𝑘𝑏 Skobeltsyn Institute of Nuclear Physics, Lomonosov Moscow State University, </affiliation>
+	</byline>
+
+	<address>Russia<lb/></address>
+
+	<byline>
+	<affiliation>𝑘𝑐 Space Regatta Consortium, </affiliation>
+	</byline>
+
+	<address>Korolev, Russia<lb/></address>
+
+	<byline>
+	<affiliation>𝑙𝑎 Institute of Experimental Physics,</affiliation>
+	</byline>
+
+	<address>Kosice, Slovakia<lb/></address>
+
+	<byline>
+	<affiliation>𝑙𝑏 Technical University Kosice (TUKE), </affiliation>
+	</byline>
+
+	<address>Kosice, Slovakia<lb/></address>
+
+	<byline>
+	<affiliation>𝑚𝑎 Universidad de León (ULE), </affiliation>
+	</byline>
+
+	<address>León, Spain<lb/></address>
+
+	<byline>
+	<affiliation>𝑚𝑏 Instituto Nacional de Técnica Aeroespacial (INTA), </affiliation>
+	</byline>
+
+	<address>Madrid, Spain<lb/></address>
+
+	<byline>
+	<affiliation>𝑚𝑐 Universidad de Alcalá (UAH), </affiliation>
+	</byline>
+
+	<address>Madrid, Spain<lb/></address>
+
+	<byline>
+	<affiliation>𝑚𝑑 Universidad Politécnia de madrid (UPM),</affiliation>
+	</byline>
+
+	<address>Madrid, Spain<lb/></address>
+
+	<byline>
+	<affiliation>𝑚𝑒 Instituto de Astrofísica de Canarias (IAC), </affiliation>
+	</byline>
+
+	<address>Tenerife, Spain<lb/></address>
+
+	<byline>
+	<affiliation>𝑛𝑎 KTH Royal Institute of Technology, </affiliation>
+	</byline>
+
+	<address>Stockholm, Sweden<lb/></address>
+
+	<byline>
+	<affiliation>𝑜𝑎 Swiss Center for Electronics and Microtechnology (CSEM), </affiliation>
+	</byline>
+
+	<address>Neuchâtel, Switzerland<lb/></address>
+
+	<byline>
+	<affiliation>𝑜𝑏 ISDC Data Centre for Astrophysics, </affiliation>
+	</byline>
+
+	<address>Versoix, Switzerland<lb/></address>
+
+	<byline>
+	<affiliation>𝑜𝑐 Institute for Atmospheric and Climate Science, ETH Zürich, </affiliation>
+	</byline>
+
+	<address>Switzerland<lb/></address>
+
+	<byline>
+	<affiliation>𝑝𝑎 Space Science Laboratory, University of California, </affiliation>
+	</byline>
+
+	<address>Berkeley, CA, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑝𝑏 University of Chicago, </affiliation>
+	</byline>
+
+	<address>IL, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑝𝑐 Colorado School of Mines, </affiliation>
+	</byline>
+
+	<address>Golden, CO, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑝𝑑 University of Alabama in Huntsville, </affiliation>
+	</byline>
+
+	<address>Huntsville, AL; USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑝𝑒 Lehman College, City University of New York (CUNY), </affiliation>
+	</byline>
+
+	<address>NY, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑝 𝑓 NASA Marshall Space Flight Center, </affiliation>
+	</byline>
+
+	<address>Huntsville, AL, USA<lb/></address>
+
+	<byline>
+    <affiliation>𝑝𝑔 University of Utah, </affiliation>
+	</byline>
+
+	<address>Salt Lake City, UT, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑝ℎ Georgia Institute of Technology, </affiliation>
+	</byline>
+
+	<address>USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑝𝑖 University of Iowa, </affiliation>
+	</byline>
+
+	<address>Iowa City, IA, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑝 𝑗 NASA Goddard Space Flight Center, </affiliation>
+	</byline>
+
+	<address>Greenbelt, MD, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑝𝑘 Center for Space Science &amp; Technology, University of Maryland, </affiliation>
+	</byline>
+
+	<address>Baltimore County, Baltimore, MD, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑝𝑙 Department of Astronomy, University of Maryland, </affiliation>
+	</byline>
+
+	<address>College Park, MD, USA<lb/></address>
+
+	<byline>
+	<affiliation>𝑝𝑚 Fairfield University, </affiliation>
+	</byline>
+
+	<address>Fairfield, CT, USA</address>
+			
+	                                            
+		</front>
+	</text>
+
+</TEI>

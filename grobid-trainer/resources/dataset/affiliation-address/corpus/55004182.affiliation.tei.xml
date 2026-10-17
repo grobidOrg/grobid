@@ -38,8 +38,8 @@
 						<affiliation>
 							<marker>+</marker>
 							<orgName type="institution">Surrey Satellite Technology Ltd</orgName>,
-							<orgName type="institution">University of Surrey Research Park</orgName>,
 							<address>
+								<addrLine>University of Surrey Research Park</addrLine>,
 								<settlement>Guildford</settlement>,
 								<country>United Kingdom</country>
 							</address>

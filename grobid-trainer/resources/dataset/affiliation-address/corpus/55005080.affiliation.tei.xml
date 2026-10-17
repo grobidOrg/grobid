@@ -9,9 +9,10 @@
 
 						<affiliation>
 							<orgName type="department">Department of Computer Science and Engineering</orgName>
-							<orgName type="institution">University of California</orgName>,
+							<orgName type="institution">University of California,
+							San Diego</orgName>
 							<address>
-								<addrLine>San Diego La Jolla</addrLine>,
+								<settlement>La Jolla</settlement>,
 								<region>CA</region>
 								<postCode>92193-0114</postCode>
 							</address>

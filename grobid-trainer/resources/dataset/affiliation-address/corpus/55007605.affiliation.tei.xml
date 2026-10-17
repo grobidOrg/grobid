@@ -13,7 +13,7 @@
 							<address>
 								<addrLine>INJ 237 Station 14</addrLine>
 								<lb/>
-								<settlement>CH</settlement>
+								<country>CH</country>
 								<postCode>1015</postCode>
 								<settlement>Lausanne</settlement>
 								<lb/>
@@ -25,7 +25,7 @@
 							<address>
 								<addrLine>INJ 230 Station 14</addrLine>
 								<lb/>
-								<settlement>CH</settlement>
+								<country>CH</country>
 								<postCode>1015</postCode>
 								<settlement>Lausanne</settlement>
 								<lb/>
@@ -37,7 +37,7 @@
 							<address>
 								<addrLine>INJ 236 Station 14</addrLine>
 								<lb/>
-								<settlement>CH</settlement>
+								<country>CH</country>
 								<postCode>1015</postCode>
 								<settlement>Lausanne</settlement>
 								<lb/>

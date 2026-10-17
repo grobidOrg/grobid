@@ -8,9 +8,9 @@
 						<author>
 
 						<affiliation>
-							<orgName type="department">Dana-Farber<lb/> Cancer Institute</orgName>,
+							<orgName type="institution">Dana-Farber<lb/> Cancer Institute</orgName>,
 							and
-							<orgName type="department">Harvard Medical School</orgName>,
+							<orgName type="institution">Harvard Medical School</orgName>,
 							<address>
 								<settlement>Boston</settlement>,
 								<region>Massachusetts</region>

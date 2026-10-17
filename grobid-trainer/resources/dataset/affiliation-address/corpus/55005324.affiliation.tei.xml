@@ -29,9 +29,10 @@
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="institution">CWI Amsterdam</orgName>
-							<lb/>
+							<orgName type="institution">CWI</orgName>
 							<address>
+								<settlement>Amsterdam</settlement>
+							<lb/>
 								<country>The Netherlands</country>
 							</address>
 						</affiliation>

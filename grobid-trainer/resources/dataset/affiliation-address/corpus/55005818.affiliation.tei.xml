@@ -8,10 +8,11 @@
 						<author>
 
 						<affiliation>
-							<orgName type="institution">Institut für Physik der Atmosphäre</orgName>
+							<orgName type="department">Institut für Physik der Atmosphäre</orgName>
 							<lb/>
+							<orgName type="institution">DLR</orgName>
 							<address>
-								<addrLine>DLR Oberpfaffenhofen</addrLine>
+								<addrLine>Oberpfaffenhofen</addrLine>
 								<lb/>
 								<postCode>D-82234</postCode>
 								<settlement>Weßling</settlement>,
@@ -20,10 +21,11 @@
 							</address>
 						</affiliation>	
 						<affiliation>	
-							<orgName type="institution">Institut für Physik der Atmosphäre</orgName>
+							<orgName type="department">Institut für Physik der Atmosphäre</orgName>
 							<lb/>
+							<orgName type="institution">DLR</orgName>
 							<address> 
-								<addrLine>DLR Oberpfaffenhofen</addrLine>
+								<addrLine>Oberpfaffenhofen</addrLine>
 								<lb/>
 								<postCode>D-82234</postCode>
 								<settlement>Weßling</settlement>,

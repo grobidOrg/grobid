@@ -8,9 +8,9 @@
 						<author>
 
 						<affiliation>
-							<orgName type="institution">Organization name University of Munich</orgName>
-							<orgName type="department">Department<lb/> Department of Internal Medicine III</orgName>
-							<orgName type="laboratory">Lab<lb/> Laboratory for Leukemia Diagnostics</orgName>
+							Organization name <orgName type="institution">University of Munich</orgName>
+							Department<lb/> <orgName type="department">Department of Internal Medicine III</orgName>
+							Lab<lb/> <orgName type="laboratory">Laboratory for Leukemia Diagnostics</orgName>
 						</affiliation>
 
 						</author>

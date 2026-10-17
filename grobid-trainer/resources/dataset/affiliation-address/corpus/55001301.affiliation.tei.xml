@@ -32,8 +32,8 @@
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="department">Faculty of Physics, Warsaw</orgName>
-							<orgName type="institution">University of Technology</orgName>,
+							<orgName type="department">Faculty of Physics</orgName>, <orgName type="institution">Warsaw
+							University of Technology</orgName>,
 							<address>
 								<addrLine>ul. Koszykowa 75</addrLine>,
 								<postCode>00-662</postCode>
@@ -56,7 +56,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>5</marker>
-							<orgName type="department">Leibniz Institut für Kristallzüchtung</orgName>,
+							<orgName type="institution">Leibniz Institut für Kristallzüchtung</orgName>,
 							<address>
 								<addrLine>Max-Born-Straße 2</addrLine>,
 								<postCode>12489</postCode>

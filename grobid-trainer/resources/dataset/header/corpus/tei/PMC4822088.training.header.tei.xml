@@ -50,8 +50,10 @@
 	Program Chief, 
 
 	<byline>
-	<affiliation>Gastroenterology Group Health Cooperative, Clinical Professor of Medicine,</affiliation>
+	<affiliation>Gastroenterology Group Health Cooperative,</affiliation>
 	</byline>
+
+	Clinical Professor of Medicine,
 
 	<address>Seattle, Washington, USA.<lb/></address>
 
@@ -59,7 +61,9 @@
 	<email>afeld@u.washington.edu<lb/></email>
 
 	Citation:
-	<reference>Clinical and Translational Gastroenterology (2016) 7, e158; doi:10.1038/ctg.2015.56<lb/> </reference>
+	<reference>Clinical and Translational Gastroenterology (2016) 7, e158;</reference>
+
+	<idno>doi:10.1038/ctg.2015.56<lb/></idno>
 
 	<note type="copyright">&amp; 2016 the American College of Gastroenterology All rights reserved</note>
 	2155-384X/16<lb/>

@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>.
+							<orgName type="institution">China Institute of Atomic Energy</orgName>,
+							<address>
+								<settlement>Beijing</settlement>,
+								<country>P.R. of China</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>2</marker>.
+							<orgName type="department">Institut de Physique Nucléaire</orgName>,
+							<orgName type="institution">IN2P3-CNRS</orgName>,
+							<address>
+								<postCode>F-91406</postCode>
+								<settlement>Orsay Cedex</settlement>,
+								<country>France</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>3</marker>.
+							<orgName type="department">Physics Department</orgName>,
+							<orgName type="institution">Technical University Munich</orgName>,
+							<address>
+								<postCode>D-85748</postCode>
+								<settlement>Garching</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>*</marker>
+							also 
+							<orgName type="department">Institute of Theoretical Physics</orgName>,
+							<address>
+								<settlement>Beijing</settlement>,
+								<country>P.R. of China</country>
+							<lb/>
+							</address>
+						</affiliation>
+							
+						<affiliation>
+							<marker>†</marker> On leave from 
+							<orgName type="institution">University of Zagreb</orgName>,
+							<address>
+								<country>Croatia</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

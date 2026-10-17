@@ -1,0 +1,109 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2206.03249">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-28T07:53:11.877411Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-28T07:53:11.877411Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-28T07:54:27.351Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>Certified Dimension Reduction for Bayesian Updating with the Cross-Entropy<lb/> Method *<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Max Ehre † , Rafael Flock ‡ , Martin Fußeder § , Iason Papaioannou † , and Daniel Straub †<lb/></docAuthor>
+	</byline>
+
+	Abstract.
+	<div type="abstract">In inverse problems, the parameters of a model are estimated based on observations of the model<lb/> response. The Bayesian approach is powerful for solving such problems; one formulates a prior<lb/> distribution for the parameter state that is updated with the observations to compute the posterior<lb/> parameter distribution. Solving for the posterior distribution can be challenging when, e.g., prior and<lb/> posterior significantly differ from one another and/or the parameter space is high-dimensional. We<lb/> use a sequence of importance sampling measures that arise by tempering the likelihood to approach<lb/> inverse problems exhibiting a significant distance between prior and posterior. Each importance<lb/> sampling measure is identified by cross-entropy minimization as proposed in the context of Bayesian<lb/> inverse problems in Engel et al. (2021). To efficiently address problems with high-dimensional<lb/> parameter spaces we set up the minimization procedure in a low-dimensional subspace of the original<lb/> parameter space. The principal idea is to analyse the spectrum of the second-moment matrix of<lb/> the gradient of the log-likelihood function to identify a suitable subspace. Following Zahm et al.<lb/> (2021), an upper bound on the Kullback-Leibler-divergence between full-dimensional and subspace<lb/> posterior is provided, which can be utilized to determine the effective dimension of the inverse<lb/> problem corresponding to a prescribed approximation error bound. We suggest heuristic criteria<lb/> for optimally selecting the number of model and model gradient evaluations in each iteration of the<lb/> importance sampling sequence. We investigate the performance of this approach using examples<lb/> from engineering mechanics set in various parameter space dimensions.<lb/></div>
+
+	Key words.
+	<keyword>Bayesian inverse problems, high dimensions, cross-entropy method, importance sampling, certified<lb/> dimension reduction<lb/> AMS subject classifications. 62F15, 62L12, 62P30, 60G60, 65C05<lb/></keyword>
+
+	*
+	<note type="submission">Submitted to the editors March 12, 2022.<lb/></note>
+
+	Funding:
+	<note type="funding">We acknowledge support by the German Research Foundation (DFG) through Grants STR 1140/11-1<lb/> and PA 2901/1-1.<lb/></note>
+
+	<byline>
+	<affiliation>† Technical University of Munich, School of Engineering and Design, Engineering Risk Analysis Group<lb/></affiliation>
+	</byline>
+
+	 (
+	<email>max.ehre@tum.de</email>, <email>iason.papaioannou@tum.de</email>, <email>straub@tum.de</email>
+
+	).<lb/>
+	<byline>
+	<affiliation>‡ Technical University of Denmark, Department of Applied Mathematics and Computer Science, DTU Compute<lb/></affiliation>
+	</byline>
+
+	(
+	<email>raff@dtu.dk</email>
+
+	).<lb/>
+	<byline>
+	<affiliation>§ Technical University of Munich, School of Engineering and Design, Chair of Structural Analysis</affiliation>
+	</byline>
+
+	(
+	<email>mar-<lb/>tin.fusseder@tum.de</email>
+
+	). 1<lb/> This manuscript is for review purposes only.<lb/>
+	<idno>arXiv:2206.03249v1 [stat.CO]</idno>
+
+	<date>7 Jun 2022</date>
+
+	2<lb/>
+	<byline>
+	<docAuthor>MAX EHRE, RAFAEL FLOCK, MARTIN FUßEDER, IASON PAPAIOANNOU, DANIEL STRAUB</docAuthor>
+	</byline>
+
+		</front>
+	</text>
+
+</TEI>

@@ -16,7 +16,7 @@
 							<address>
 								<settlement>College</settlement>,
 								<lb/>
-								<settlement>Laguna</settlement>,
+								<region>Laguna</region>,
 								<country>Philippines</country>,
 							</address>
 						</affiliation>
@@ -29,7 +29,7 @@
 							<orgName type="institution">University of the Philippines Los Baños</orgName>,
 							<address>
 								<settlement>College</settlement>,
-								<settlement>Laguna</settlement>,
+								<region>Laguna</region>,
 								<country>Philippines</country>,
 							</address>
 						</affiliation>
@@ -39,8 +39,8 @@
 							<orgName type="institution">International Rice Research Institute</orgName>,
 							<address>
 								<settlement>Los Baños</settlement>,
-								<settlement>Laguna</settlement>,
-								<country>Philippines,</country>
+								<region>Laguna</region>,
+								<country>Philippines</country>,
 							<lb/>
 							</address>
 						</affiliation>

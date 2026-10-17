@@ -13,7 +13,7 @@
 							<address>
 								<addrLine>83 Tat Chee Avenue</addrLine>,
 								<lb/>
-								<settlement>Kowloon</settlement>,
+								<addrLine>Kowloon</addrLine>,
 								<settlement>Hong Kong</settlement>,
 								<country>China</country>
 							</address>

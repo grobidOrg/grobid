@@ -17,6 +17,8 @@
 								<country>The Netherlands</country>,
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Department of Pathology</orgName>,
 							<orgName type="institution">Leiden University Medical Center</orgName>,
 							<address>
@@ -24,6 +26,8 @@
 								<settlement>Leiden</settlement>,
 								<country>The Netherlands</country>,
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Department of<lb/> Immunohematology and Blood Transfusion</orgName>,
 							<orgName type="institution">Leiden University Medical Center</orgName>,
 							<address>
@@ -32,6 +36,8 @@
 								<country>The Netherlands</country>, and
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Department of Vascular and Metabolic Diseases</orgName>,
 							<orgName type="institution">TNO-Quality of Life</orgName>,
 							<address>

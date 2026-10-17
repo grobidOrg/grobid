@@ -18,6 +18,7 @@
 						</affiliation>
 						<affiliation>
 							<orgName type="department">Department of Nephrology</orgName>,
+							<!-- check: "Roeselare-Menen" may be the hospital's own name (H.-Hartziekenhuis Roeselare-Menen, two sites) rather than a settlement; left inside the institution -->
 							<orgName type="institution">H.-Hartziekenhuis, Roeselare-Menen</orgName>,
 							<address>
 								<country>Belgium</country>

@@ -39,7 +39,7 @@
 							<address>
 								<settlement>Bari</settlement>
 								<postCode>70124</postCode>
-								<settlement>Italy</settlement>;
+								<country>Italy</country>;
 							<lb/>
 							</address>
 						</affiliation>
@@ -50,7 +50,7 @@
 							<address>
 								<settlement>Siena</settlement>
 								<postCode>53100</postCode>
-								<settlement>Italy</settlement>;
+								<country>Italy</country>;
 							</address>
 						</affiliation>
 						<affiliation>
@@ -62,7 +62,7 @@
 							<address>
 								<settlement>Naples</settlement>
 								<postCode>80138</postCode>
-								<settlement>Italy</settlement>;
+								<country>Italy</country>;
 							<lb/>
 							</address>
 						</affiliation>
@@ -83,13 +83,15 @@
 							<orgName type="laboratory">Clayton Foundation Laboratories for Peptide Biology</orgName>,
 							<orgName type="institution">The Salk Institute for<lb/> Biological Studies</orgName>,
 							<address>
-								<addrLine>La Jolla</addrLine>,
+								<settlement>La Jolla</settlement>,
 								<region>California</region>,
 								<region>CA</region>
 								<postCode>92093</postCode>,
 								<country>USA</country>
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">Sbarro Institute for Cancer Research<lb/> and Molecular Medicine</orgName>,
 							<orgName type="department">College of Science and Technology</orgName>,
 							<orgName type="institution">Temple<lb/> University</orgName>,

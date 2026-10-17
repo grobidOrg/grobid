@@ -8,7 +8,11 @@
 
 	<page>1<lb/></page>
 
-	<reference>Scientific Data |<lb/> (2022) 9:451 | https://doi.org/10.1038/s41597-022-01559-0<lb/> www.nature.com/scientificdata<lb/></reference>
+	<reference>Scientific Data |<lb/> (2022) 9:451 |</reference>
+
+	<idno>https://doi.org/10.1038/s41597-022-01559-0<lb/></idno>
+
+	<ptr type="web">www.nature.com/scientificdata<lb/></ptr>
 
 	<docTitle>
 	<titlePart>the role of plant functional groups<lb/> mediating climate impacts on<lb/> carbon and biodiversity of alpine grasslands<lb/></titlePart>

@@ -8,7 +8,7 @@
 						<author>
 
 						<affiliation>
-							<orgName type="institution">aNational Institute of Animal Science</orgName>,
+							<marker>a</marker><orgName type="institution">National Institute of Animal Science</orgName>,
 							<orgName type="institution">Research Centre Foulum</orgName>,
 							<address>
 								<postCode>DK-8830</postCode>
@@ -18,7 +18,7 @@
 							</address>
 						</affiliation>
 						<affiliation>
-							<orgName type="department">bChemistry Department</orgName>,
+							<marker>b</marker><orgName type="department">Chemistry Department</orgName>,
 							<orgName type="institution">Royal Veterinary and Agricultural University</orgName>,
 							<address>
 								<postCode>DK-18 71</postCode>

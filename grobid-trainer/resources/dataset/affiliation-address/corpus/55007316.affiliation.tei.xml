@@ -10,8 +10,9 @@
 						<affiliation>
 							<orgName type="department">Department of Electrical Engineering</orgName>
 							<lb/>
-							<orgName type="institution">Stanford University<lb/> Stanford</orgName>,
+							<orgName type="institution">Stanford University</orgName><lb/>
 							<address>
+								<settlement>Stanford</settlement>,
 								<country>USA</country>
 							</address>
 						</affiliation>

@@ -29,8 +29,8 @@
                      </affiliation><lb/>
                      <affiliation>
                         <marker>c</marker>
-                        <orgName type="institution">Université Lyon 1</orgName>, 
-						<orgName type="institution" key="lab1">CNRS</orgName>
+                        <orgName type="institution" key="instit2">Université Lyon 1</orgName>, 
+						<orgName type="institution" key="instit1">CNRS</orgName>
 						<orgName type="laboratory" key="lab1">UMR 5007</orgName>
                         <orgName type="laboratory" key="lab1">LAGEP</orgName>,
                         <address>

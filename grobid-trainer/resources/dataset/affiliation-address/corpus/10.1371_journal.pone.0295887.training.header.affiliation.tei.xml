@@ -9,7 +9,7 @@
 
 						<affiliation>
 							<marker>1</marker>
-							<orgName type="department">Policy Cures Research</orgName>,
+							<orgName type="institution">Policy Cures Research</orgName>,
 							<address>
 								<settlement>Sydney</settlement>,
 								<region>New South Wales</region>,
@@ -23,7 +23,7 @@
 							<orgName type="institution">Universidad de Costa Rica</orgName>,
 							<address>
 								<settlement>San Jose ´</settlement>,
-								<country>Costa Rica,</country>
+								<country>Costa Rica</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -32,7 +32,7 @@
 							<address>
 								<settlement>Lyngby</settlement>,
 							<lb/>
-								<country>Denmark,</country>
+								<country>Denmark</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -47,16 +47,16 @@
 							</address>
 						</affiliation>
 						<affiliation>
-							<orgName type="institution">Fundac ¸ão de<lb/> Medicina Tropical</orgName>
-							<address>
-								<addrLine>Doutor Heitor Vieira Dourado</addrLine>,
+							<orgName type="institution">Fundac ¸ão de<lb/> Medicina Tropical
+								Doutor Heitor Vieira Dourado</orgName>,
 							<lb/>
+							<address>
 								<country>BRAZIL</country>
 							<lb/>
 							</address>
 						</affiliation>
 						<affiliation>
-							<orgName type="institution">Instituto Clodomiro Picado (Universidad de Costa<lb/> Rica</orgName>
+							<orgName type="institution">Instituto Clodomiro Picado</orgName> (<orgName type="institution">Universidad de Costa<lb/> Rica</orgName>
 						</affiliation>
 
 						</author>

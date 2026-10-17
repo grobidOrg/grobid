@@ -33,7 +33,11 @@
 	<address>Pisa, Italy<lb/></address>
 
 	<byline>
-	<affiliation>4. Laboratoire de Mathématiques Appliquées -MAP5 (UMR CNRS 8145), Université Paris Descartes<lb/> 5. Department of Clinical Biochemistry, Herlev and Gentofte Hospital, Copenhagen University<lb/> Hospital,</affiliation>
+	<affiliation>4. Laboratoire de Mathématiques Appliquées -MAP5 (UMR CNRS 8145), Université Paris Descartes<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>5. Department of Clinical Biochemistry, Herlev and Gentofte Hospital, Copenhagen University<lb/> Hospital,</affiliation>
 	</byline>
 
 	<address>Herlev, Denmark<lb/></address>
@@ -129,10 +133,10 @@
 	<address>Villejuif, France<lb/></address>
 
 	<byline>
-	<affiliation>21. Cancer Epidemiology Centre,</affiliation>
+	<affiliation>21. Cancer Epidemiology Centre, Cancer Council Victoria,</affiliation>
 	</byline>
 
-	<address>Cancer Council Victoria, Melbourne, Australia<lb/></address>
+	<address>Melbourne, Australia<lb/></address>
 
 	<byline>
 	<affiliation>22. Centre for Epidemiology and Biostatistics, Melbourne School of Population &amp; Global Health, The<lb/> University of Melbourne,</affiliation>

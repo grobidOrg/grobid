@@ -33,10 +33,18 @@
 
 	<address>4 Stephenson Way, London, NW1 2HE, UK<lb/></address>
 
-	Email: Calum J Maclean* -
+	Email:
+	<byline>
+	<docAuthor>Calum J Maclean*</docAuthor>
+	</byline>
+	-
 	<email>calum.maclean@ucl.ac.uk</email>; 
 
-	Duncan Greig -
+
+	<byline>
+	<docAuthor>Duncan Greig</docAuthor>
+	</byline>
+	-
 	<email>d.greig@ucl.ac.uk<lb/></email>
 
 	* Corresponding author 

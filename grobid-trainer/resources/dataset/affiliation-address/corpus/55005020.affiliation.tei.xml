@@ -16,8 +16,7 @@
 							<address>
 								<addrLine>Parc Valrose</addrLine>,
 								<postCode>06108</postCode>
-								<settlement>Nice</settlement>
-								<postCode>Cedex 2</postCode>,
+								<settlement>Nice Cedex 2</settlement>,
 								<country>France</country>
 							<lb/>
 							</address>
@@ -29,8 +28,7 @@
 							<address>
 								<addrLine>place Eugène Bataillon</addrLine>,
 								<postCode>34095</postCode>
-								<settlement>Montpellier</settlement>
-								<postCode>cedex 5</postCode>,
+								<settlement>Montpellier cedex 5</settlement>,
 								<country>France</country>
 							<lb/>
 							</address>
@@ -41,8 +39,7 @@
 							<address>
 								<addrLine>33 Avenue Valombrose</addrLine>,
 								<postCode>06189</postCode>
-								<settlement>Nice</settlement>
-								<postCode>cedex 2</postCode>,								
+								<settlement>Nice cedex 2</settlement>,								
 								<country>France</country>
 							<lb/>
 							</address>
@@ -54,10 +51,9 @@
 							<orgName type="institution">Université Joseph Fourier</orgName>,
 							<address>
 								<addrLine>25 avenue des Martyrs</addrLine>,
-								<postCode>BP166</postCode>,
+								<postBox>BP166</postBox>,
 								<postCode>38042</postCode>
-								<settlement>Grenoble</settlement>
-								<postCode>Cedex 9</postCode>,
+								<settlement>Grenoble Cedex 9</settlement>,
 								<country>France</country>
 							</address>
 						</affiliation>

@@ -15,11 +15,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>Department of Computer Science<lb/> University of California</affiliation>
+	<affiliation>Department of Computer Science<lb/> University of California at Santa Barbara<lb/></affiliation>
 	</byline>
 
-	at 
-	<address>Santa Barbara<lb/> Santa Barbara, CA 93106</address>
+	<address>Santa Barbara, CA 93106</address>
 
 	Abstract<lb/>
 	<div type="abstract">Maya is a simulation platform for evaluating the performance of parallel programs on parallel archi-<lb/>tectures with dierent memory coherence protocols. Rapid prototyping of dierent memory protocols<lb/> supporting varying degrees of coherence is possible and the impact of these protocols on the performance<lb/> of application programs can be studied. Implementations of existing weak memories along with some<lb/> new primitives using Maya are presented. The results of running some user applications are summarized<lb/> and the impact of weak memories on the eciency of parallel programs is discussed.<lb/></div>

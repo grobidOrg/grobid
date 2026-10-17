@@ -92,7 +92,7 @@
 	<affiliation>Fachbereich Physik, Universität Siegen,</affiliation>
 	</byline>
 
-	<address>D-57068 Siegen, Germany 20<lb/></address>
+	<address>D-57068 Siegen, Germany</address> 20<lb/>
 
 	<byline>
 	<docAuthor>C. Biino, N. Cartiglia, F. Marchetto, N. Pastrone<lb/></docAuthor>
@@ -133,56 +133,51 @@
 	<affiliation>Österreichische Akademie der Wissenschaften, Institut für Hochenergiephysik,</affiliation>
 	</byline>
 
-	<address>A-1050 Wien,<lb/> Austria 22<lb/></address>
+	<address>A-1050 Wien,<lb/> Austria</address> 22<lb/>
 
-	Accepted by Phys. Lett. B Abstract<lb/>
+	<note type="submission">Accepted by Phys. Lett. B</note> Abstract<lb/>
 	<div type="abstract">The decay asymmetries of the weak radiative Hyperon decays Ξ 0 → Λγ and Ξ 0 →<lb/> Σ 0 γ have been measured with high precision using data of the NA48/1 experiment<lb/> at CERN. From about 52 000 Ξ 0 → Λγ and 15 000 Ξ 0 → Σ 0 γ decays, we obtain<lb/> for the decay asymmetries α Ξ 0 →Λγ = −0.704 ± 0.019 stat ± 0.064 syst and α Ξ 0 →Σ 0 γ =<lb/> −0.729 ± 0.030 stat ± 0.076 syst , respectively. These results are in good agreement with<lb/> previous experiments, but more precise.<lb/></div>
 
 	* Corresponding Authors. Email:
-	<email>Matthias.Behler@uni-mainz.de, Rainer.Wanke@uni-mainz.de<lb/></email>
+	<email>Matthias.Behler@uni-mainz.de</email>
 
-	1 Present address:
+	,
+	<email>Rainer.Wanke@uni-mainz.de<lb/></email>
+
 	<byline>
-	<affiliation>Rutherford Appleton Laboratory,</affiliation>
+	<affiliation>1 Present address: Rutherford Appleton Laboratory,</affiliation>
 	</byline>
 
 	<address>Chilton, Didcot, Oxon, OX11 0QX, U.K.<lb/></address>
 
-	2 Present address:
 	<byline>
-	<affiliation>University of Birmingham,</affiliation>
+	<affiliation>2 Present address: University of Birmingham,</affiliation>
 	</byline>
 
 	<address>Edgbaston, Birmingham, B15 2TT, U.K.<lb/></address>
 
-	3 Present address:
 	<byline>
-	<affiliation>CERN,</affiliation>
+	<affiliation>3 Present address: CERN,</affiliation>
 	</byline>
 
 	<address>CH-1211 Genève 23, Switzerland.<lb/></address>
 
-	<byline>
-	<affiliation>4 Funded by the U.K. Particle Physics and Astronomy Research Council.<lb/></affiliation>
-	</byline>
+	<note type="funding">4 Funded by the U.K. Particle Physics and Astronomy Research Council.<lb/></note>
 
-	5 Present address:
 	<byline>
-	<affiliation>Dipartimento di Fisica Sperimentale dell&apos;Università and INFN Sezione di Torino,<lb/></affiliation>
+	<affiliation>5 Present address: Dipartimento di Fisica Sperimentale dell&apos;Università and INFN Sezione di Torino,<lb/></affiliation>
 	</byline>
 
 	<address>I-10125 Torino, Italy.<lb/></address>
 
-	6 Present address:
 	<byline>
-	<affiliation>Istituto di Cosmogeofisica del CNR di Torino,</affiliation>
+	<affiliation>6 Present address: Istituto di Cosmogeofisica del CNR di Torino,</affiliation>
 	</byline>
 
 	<address>I-10133 Torino, Italy.<lb/></address>
 
-	7 Present address:
 	<byline>
-	<affiliation>Dipartimento di Fisica, Università degli Studi di Pisa and INFN Sezione di Pisa,<lb/></affiliation>
+	<affiliation>7 Present address: Dipartimento di Fisica, Università degli Studi di Pisa and INFN Sezione di Pisa,<lb/></affiliation>
 	</byline>
 
 	<address>I-56100 Pisa, Italy.</address>

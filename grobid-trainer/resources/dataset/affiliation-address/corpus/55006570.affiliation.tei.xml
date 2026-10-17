@@ -10,10 +10,11 @@
 						<affiliation>
 							<orgName type="department">School of Bioscience and Bioengineering</orgName>
 							<lb/>
-							<orgName type="institution">Indian Institute of Technology</orgName>,
+							<orgName type="institution">Indian Institute of Technology,
+							Bombay</orgName><lb/>
 							<address>
-								<addrLine>Bombay<lb/> Powai</addrLine>,
-								<settlement>Mumbai-400076</settlement>,
+								<addrLine>Powai</addrLine>,
+								<settlement>Mumbai</settlement>-<postCode>400076</postCode>,
 								<country>India</country>
 							</address>
 						</affiliation>

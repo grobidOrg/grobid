@@ -12,7 +12,7 @@
 							<orgName type="department">School of Materials Science and Engineering</orgName>,
 							<orgName type="institution">Huazhong University of Science and Technology</orgName>,
 							<address>
-								<addrLine>Wuhan 430074</addrLine>,
+								<settlement>Wuhan</settlement> <postCode>430074</postCode>,
 								<country>PR China</country>
 							</address>
 						</affiliation>

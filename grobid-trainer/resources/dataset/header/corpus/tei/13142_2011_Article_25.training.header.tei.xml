@@ -6,7 +6,7 @@
 	<text xml:lang="en">
 		<front>
 
-	TBM<lb/>
+	<title level="j">TBM<lb/></title>
 
 	<docTitle>
 	<titlePart>Stakeholder perspectives on implementing the National<lb/> Cancer Institute&apos;s patient-reported outcomes version<lb/> of the Common Terminology Criteria for Adverse Events<lb/> (PRO-CTCAE)<lb/></titlePart>
@@ -82,13 +82,7 @@
 	<address>135 South LaSalle Street,<lb/> Chicago, IL 60603, USA</address>
 
 	<byline>
-	<affiliation>14<lb/> Department of Medicine, Duke<lb/> University School of Medicine,<lb/></affiliation>
-	</byline>
-
-	<address>25165 Morris Building, Duke<lb/></address>
-
-	<byline>
-	<affiliation>University Medical Center ,</affiliation>
+	<affiliation>14<lb/> Department of Medicine, Duke<lb/> University School of Medicine,<lb/> 25165 Morris Building, Duke<lb/> University Medical Center ,</affiliation>
 	</byline>
 
 	<address>Box<lb/> 3436, Durham, NC 27710, USA</address>
@@ -129,7 +123,11 @@
 
 	<address>307<lb/> E.63rd Street, 2nd floor, New York,<lb/> NY 10065, USA<lb/></address> 
 
-	Correspondence to: E Basch<lb/>
+	Correspondence to:
+	<byline>
+	<docAuthor>E Basch</docAuthor>
+	</byline>
+	<lb/>
 	
 	<email>basche@mskcc.org</email>
 

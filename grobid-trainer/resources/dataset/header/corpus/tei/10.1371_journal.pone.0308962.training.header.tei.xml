@@ -136,9 +136,9 @@
 
 	<address>Arcata, CA,<lb/> United States of America<lb/></address>
 
-	☯ These authors contributed equally to this work.<lb/> ¤ Current address:
+	☯ These authors contributed equally to this work.<lb/>
 	<byline>
-	<affiliation>University of British Columbia,</affiliation>
+	<affiliation>¤ Current address: University of British Columbia,</affiliation>
 	</byline>
 
 	<address>Vancouver, BC, Canada<lb/></address>
@@ -179,7 +179,8 @@
 	Peer Review History: PLOS recognizes the<lb/> benefits of transparency in the peer review<lb/> process; therefore, we enable the publication of<lb/> all of the content of peer review and author<lb/> responses alongside final, published articles. The<lb/> editorial history of this article is available here:<lb/>
 	<idno>https://doi.org/10.1371/journal.pone.0295861<lb/></idno>
 
-	<note type="copyright">Copyright: This is an open access article, free of all<lb/> copyright, and may be freely reproduced,<lb/> distributed, transmitted, modified, built upon, or<lb/> otherwise used by anyone for any lawful purpose.<lb/> The work is made available under the Creative<lb/> Commons CC0 public domain dedication.<lb/></note>
+	Copyright:
+	<note type="copyright">This is an open access article, free of all<lb/> copyright, and may be freely reproduced,<lb/> distributed, transmitted, modified, built upon, or<lb/> otherwise used by anyone for any lawful purpose.<lb/> The work is made available under the Creative<lb/> Commons CC0 public domain dedication.<lb/></note>
 
 	Data Availability Statement:
 	<note type="availability">Third party data are<lb/> publicly available from NOAA (https://www.<lb/></note>

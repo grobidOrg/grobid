@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">Language Technologies Institute</orgName>,
+							<orgName type="institution">Carnegie Mellon University<lb/></orgName>
+							<address>
+                              <settlement>Pittsburgh</settlement>,
+								<region>PA</region>,
+								<country>USA</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>†</marker>
+							<orgName type="institution">Allen Institute for Artificial Intelligence<lb/></orgName>
+							<address>
+                              <settlement>Seattle</settlement>,
+								<region>WA</region>,
+								<country>USA</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

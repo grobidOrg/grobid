@@ -35,7 +35,10 @@
 
 	Reviewing editor:
 	<editor>Peter A<lb/> Rodgers</editor>, 
-	eLife, United Kingdom<lb/>
+	<byline>
+	<affiliation>eLife,</affiliation>
+	</byline>
+	<address>United Kingdom</address><lb/>
 
 	<note type="copyright">Copyright Broderick and<lb/> Casadevall. This article is<lb/> distributed under the terms of<lb/> the Creative Commons<lb/> Attribution License, which<lb/> permits unrestricted use and<lb/> redistribution provided that the<lb/> original author and source are<lb/> credited.<lb/></note>
 
@@ -45,7 +48,7 @@
 
 	<page>1 of 11<lb/></page> 
 
-	FEATURE ARTICLE<lb/> Feature article<lb/> Meta-Research Gender inequalities among authors who contributed equally<lb/>
+	<note type="doctype">FEATURE ARTICLE<lb/> Feature article<lb/> Meta-Research</note> Gender inequalities among authors who contributed equally<lb/>
 
 	<byline>
 	<docAuthor>Nichole A Broderick</docAuthor>
@@ -60,7 +63,7 @@
 
 	<email>nichole.broderick@uconn.edu<lb/></email>
 
-	<idno>http://orcid.org/0000-0002-6830-9456<lb/></idno>
+	<idno type="orcid">http://orcid.org/0000-0002-6830-9456<lb/></idno>
 
 	<byline>
 	<docAuthor>Arturo Casadevall</docAuthor>
@@ -75,7 +78,7 @@
 
 	<email>acasade1@jhu.edu<lb/></email>
 
-	<idno>http://orcid.org/0000-0002-9402-9167<lb/></idno>
+	<idno type="orcid">http://orcid.org/0000-0002-9402-9167<lb/></idno>
 
 	Author contributions:
 	<note type="contribution">Nichole A Broderick, Arturo<lb/> Casadevall, Conceptualization, Data curation, Formal<lb/> analysis, Investigation, Methodology, Writing-original<lb/> draft, Writing-review and editing<lb/></note>

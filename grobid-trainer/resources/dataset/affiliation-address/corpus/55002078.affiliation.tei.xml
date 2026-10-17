@@ -12,7 +12,7 @@
 							<orgName type="department">Center for Engineering in Medicine and Surgical Services</orgName>,
 							<orgName type="institution">Massachusetts General Hospital</orgName>,
 							<lb/>
-							<orgName type="department">Shriners Hospitals for Children and Harvard Medical School</orgName>,
+							<orgName type="institution">Shriners Hospitals for Children</orgName> and <orgName type="institution">Harvard Medical School</orgName>,
 							<address>
 								<addrLine>51 Blossom Street</addrLine>,
 								<settlement>Boston</settlement>,

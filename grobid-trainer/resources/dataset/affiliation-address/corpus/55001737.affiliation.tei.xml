@@ -11,7 +11,7 @@
  							<marker>1</marker>
 							<orgName type="laboratory">ARC Centre for Functional Nanomaterials</orgName>,
 							<orgName type="department">Division of Chemical Engineering</orgName>,
-							<orgName type="institution">the University<lb/> of Queensland</orgName>,
+							the <orgName type="institution">University<lb/> of Queensland</orgName>,
 							<address>
 								<settlement>St Lucia</settlement>,
 								<country>Australia</country>

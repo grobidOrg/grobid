@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="laboratory">Laboratoire Univers et Théories</orgName>,
+							<orgName type="institution">Observatoire de Paris</orgName>,
+							<orgName type="institution">Université PSL</orgName>,
+							<lb/>
+							<orgName type="institution">Université Paris Cité</orgName>,
+							<orgName type="institution">CNRS</orgName>,
+							<address>
+								<postCode>F-92190</postCode>
+								<settlement>Meudon</settlement>,
+								<country>France</country>
+							<lb/>
+							</address>
+                      </affiliation>
+
+                      <affiliation>
+							<orgName type="laboratory">Laboratoire Univers et Théories</orgName>,
+							<orgName type="institution">Observatoire de Paris</orgName>,
+							<orgName type="institution">Université PSL</orgName>,
+							<lb/>
+							<orgName type="institution">Université Paris Cité</orgName>,
+							<orgName type="institution">CNRS</orgName>,
+							<address>
+								<postCode>F-92190</postCode>
+								<settlement>Meudon</settlement>,
+								<country>France</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

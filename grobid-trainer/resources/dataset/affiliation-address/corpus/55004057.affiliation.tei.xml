@@ -8,8 +8,9 @@
 						<author>
 
 						<affiliation>
-							<orgName type="institution">Oregon Health and Science University<lb/> Portland</orgName>,
+							<orgName type="institution">Oregon Health and Science University</orgName><lb/>
 							<address>
+								<settlement>Portland</settlement>,
 								<region>OR</region>
 								<postCode>97239-0398</postCode>
 							</address>

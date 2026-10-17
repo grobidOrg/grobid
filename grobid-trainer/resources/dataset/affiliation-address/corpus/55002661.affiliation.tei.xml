@@ -10,10 +10,8 @@
 						<affiliation>
 							<marker>1</marker>)
 							<orgName type="department">Institute of Crustal Dynamics</orgName>,
-							<address>
-								<country>China</country>
-							</address>
-							<orgName type="department">Earthquake Administration</orgName>,
+							<orgName type="institution">China
+							Earthquake Administration</orgName>,
 							<address>
 								<settlement>Beijing</settlement>,
 								<country>China</country>

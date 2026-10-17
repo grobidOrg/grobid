@@ -45,25 +45,25 @@
 	<affiliation>b Universität Bochum, Institut für Experimentalphysik,</affiliation>
 	</byline>
 
-	<address>44780 Bochum, Germany 15 ,16<lb/></address>
+	<address>44780 Bochum, Germany</address> 15 ,16<lb/>
 
 	<byline>
 	<affiliation>c Universität Bonn, Helmholtz-Institut für Strahlen-und Kernphysik,</affiliation>
 	</byline>
 
-	<address>53115 Bonn, Germany 15<lb/></address>
+	<address>53115 Bonn, Germany</address> 15<lb/>
 
 	<byline>
 	<affiliation>d Universität Bonn, Physikalisches Institut,</affiliation>
 	</byline>
 
-	<address>53115 Bonn, Germany 15<lb/></address>
+	<address>53115 Bonn, Germany</address> 15<lb/>
 
 	<byline>
 	<affiliation>e Institute of Scientific Instruments, AS CR,</affiliation>
 	</byline>
 
-	<address>61264 Brno, Czech Republic 17<lb/></address>
+	<address>61264 Brno, Czech Republic</address> 17<lb/>
 
 	<byline>
 	<affiliation>f Matrivani Institute of Experimental Research &amp; Education,</affiliation>
@@ -72,22 +72,22 @@
 	<address>Calcutta-700 030, India</address>
 
 	<byline>
-	<affiliation>18<lb/> g Joint Institute for Nuclear Research,</affiliation>
+	18<lb/> <affiliation>g Joint Institute for Nuclear Research,</affiliation>
 	</byline>
 
-	<address>141980 Dubna, Moscow Region, Russia 19<lb/></address>
+	<address>141980 Dubna, Moscow Region, Russia</address> 19<lb/>
 
 	<byline>
 	<affiliation>h Universität Erlangen-Nürnberg, Physikalisches Institut,</affiliation>
 	</byline>
 
-	<address>91054 Erlangen, Germany 15<lb/></address>
+	<address>91054 Erlangen, Germany</address> 15<lb/>
 
 	<byline>
 	<affiliation>i Universität Freiburg, Physikalisches Institut,</affiliation>
 	</byline>
 
-	<address>79104 Freiburg, Germany 15 ,16<lb/></address>
+	<address>79104 Freiburg, Germany</address> 15 ,16<lb/>
 
 	<byline>
 	<affiliation>j CERN,</affiliation>
@@ -99,19 +99,25 @@
 	<affiliation>k Technical University in Liberec,</affiliation>
 	</byline>
 
-	<address>46117 Liberec, Czech Republic 17<lb/> l LIP, 1000-149 Lisbon, Portugal 20<lb/></address>
+	<address>46117 Liberec, Czech Republic</address> 17<lb/>
+
+	<byline>
+	<affiliation>l LIP,</affiliation>
+	</byline>
+
+	<address>1000-149 Lisbon, Portugal</address> 20<lb/>
 
 	<byline>
 	<affiliation>m Universität Mainz, Institut für Kernphysik,</affiliation>
 	</byline>
 
-	<address>55099 Mainz, Germany 15<lb/></address>
+	<address>55099 Mainz, Germany</address> 15<lb/>
 
 	<byline>
 	<affiliation>n University of Miyazaki,</affiliation>
 	</byline>
 
-	<address>Miyazaki 889-2192, Japan 21<lb/></address>
+	<address>Miyazaki 889-2192, Japan</address> 21<lb/>
 
 	<byline>
 	<affiliation>o Lebedev Physical Institute,</affiliation>
@@ -123,25 +129,25 @@
 	<affiliation>p Technische Universität München, Physik Dept.,</affiliation>
 	</byline>
 
-	<address>85748 Garching, Germany 15 ,4<lb/></address>
+	<address>85748 Garching, Germany</address> 15 ,4<lb/>
 
 	<byline>
 	<affiliation>q Nagoya University,</affiliation>
 	</byline>
 
-	<address>464 Nagoya, Japan 21<lb/></address>
+	<address>464 Nagoya, Japan</address> 21<lb/>
 
 	<byline>
 	<affiliation>r Charles University in Prague, Faculty of Mathematics and Physics,</affiliation>
 	</byline>
 
-	<address>18000 Prague, Czech Republic 17<lb/></address>
+	<address>18000 Prague, Czech Republic</address> 17<lb/>
 
 	<byline>
 	<affiliation>s Czech Technical University in Prague,</affiliation>
 	</byline>
 
-	<address>16636 Prague, Czech Republic 17<lb/></address>
+	<address>16636 Prague, Czech Republic</address> 17<lb/>
 
 	<byline>
 	<affiliation>t State Scientific Center Institute for High Energy Physics of National Research Center &apos;Kurchatov Institute&apos;,</affiliation>
@@ -153,7 +159,7 @@
 	<affiliation>u IRFU, CEA, Université Paris-Saclay,</affiliation>
 	</byline>
 
-	<address>91191 Gif-sur-Yvette, France 16<lb/></address>
+	<address>91191 Gif-sur-Yvette, France</address> 16<lb/>
 
 	<byline>
 	<affiliation>v Academia Sinica, Institute of Physics,</affiliation>
@@ -165,7 +171,7 @@
 	<affiliation>w Tel Aviv University, School of Physics and Astronomy,</affiliation>
 	</byline>
 
-	<address>69978 Tel Aviv, Israel 22<lb/></address>
+	<address>69978 Tel Aviv, Israel</address> 22<lb/>
 
 	<byline>
 	<affiliation>x University of Trieste, Dept. of Physics,</affiliation>
@@ -201,19 +207,19 @@
 	<affiliation>ac National Centre for Nuclear Research,</affiliation>
 	</byline>
 
-	<address>00-681 Warsaw, Poland 23<lb/></address>
+	<address>00-681 Warsaw, Poland</address> 23<lb/>
 
 	<byline>
 	<affiliation>ad University of Warsaw, Faculty of Physics,</affiliation>
 	</byline>
 
-	<address>02-093 Warsaw, Poland 23<lb/></address>
+	<address>02-093 Warsaw, Poland</address> 23<lb/>
 
 	<byline>
 	<affiliation>ae Warsaw University of Technology, Institute of Radioelectronics,</affiliation>
 	</byline>
 
-	<address>00-665 Warsaw, Poland 23<lb/></address>
+	<address>00-665 Warsaw, Poland</address> 23<lb/>
 
 	<byline>
 	<affiliation>af Yamagata University,</affiliation>
@@ -228,9 +234,7 @@
 	<date>27 April 2017<lb/></date>
 
 	Editor:
-	<byline>
-	<docAuthor>M. Doser<lb/></docAuthor>
-	</byline>
+	<editor>M. Doser<lb/></editor>
 
 	Keywords:<lb/>
 	<keyword>SIDIS<lb/> Drell-Yan<lb/> Spin<lb/> Azimuthal asymmetries<lb/> Sivers TMDs<lb/></keyword>
@@ -242,13 +246,25 @@
 	* Corresponding authors.<lb/> E-mail addresses:
 	<email>oleg.denisov@cern.ch</email>
 
-	(O.Yu. Denisov),
+	(
+	<byline>
+	<docAuthor>O.Yu. Denisov</docAuthor>
+	</byline>
+	),
 	<email>gerhard.mallot@cern.ch</email>
 
-	(G.K. Mallot),
+	(
+	<byline>
+	<docAuthor>G.K. Mallot</docAuthor>
+	</byline>
+	),
 	<email>bakur.parsamyan@cern.ch</email>
 
-	(B. Parsamyan).
+	(
+	<byline>
+	<docAuthor>B. Parsamyan</docAuthor>
+	</byline>
+	).
 		</front>
 	</text>
 </tei>

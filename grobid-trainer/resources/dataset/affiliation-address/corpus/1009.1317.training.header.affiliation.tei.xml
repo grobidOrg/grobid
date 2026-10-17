@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>*</marker>
+							<orgName type="laboratory">Laboratoire J. Kuntzmann</orgName>,
+							<orgName type="institution">Université de Grenoble</orgName>.
+							<address>
+								<addrLine>51, rue des Mathématiques</addrLine>,
+							</address>
+							<orgName type="laboratory">umr<lb/> CNRS 5224</orgName>,
+							<address>
+								<postBox>bp 53X</postBox>,
+								<postCode>F38041</postCode>
+								<settlement>Grenoble</settlement>,
+								<country>France</country>,
+							</address>
+						</affiliation>
+
+					  <affiliation>
+							<orgName type="department">Claude Shannon Institute</orgName> of the<lb/> <orgName type="institution">University College Dublin</orgName>,
+							<address>
+								<country>Ireland</country>, under
+							</address>
+						</affiliation>
+						<affiliation>
+							a CNRS grant.<lb/> <marker>†</marker> <orgName type="laboratory">Laboratoire LIG</orgName>,
+							<orgName type="institution">Université de Grenoble</orgName>. <orgName type="laboratory">umr CNRS</orgName>,
+							<address>
+								<postCode>F38330</postCode> <settlement>Montbonnot</settlement>,
+								<country>France</country>.
+							<lb/>
+							</address>
+						</affiliation>
+						<affiliation>
+							<orgName type="institution">University Complutense</orgName>,
+							<address>
+								<settlement>Madrid</settlement>,
+							<lb/>
+								<country>Spain</country>.
+							<lb/>
+							</address>
+						</affiliation>
+						<affiliation>
+							<marker>‡</marker>
+							<orgName type="institution">University of Delaware</orgName>,
+							<orgName type="department">Computer and Information Science Department</orgName>.
+							<address>
+								<settlement>Newark</settlement> /
+								<region>DE</region> /
+							<lb/>
+								<postCode>19716</postCode>,
+								<country>USA</country>.
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

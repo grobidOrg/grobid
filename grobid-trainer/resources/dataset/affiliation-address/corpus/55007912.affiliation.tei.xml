@@ -29,7 +29,7 @@
 							</address>
 						</affiliation>	
 						<affiliation>	
-							<orgName type="department">Department of Mechanical<lb/> Engineering and Department of Surgery</orgName>,
+							<orgName type="department">Department of Mechanical<lb/> Engineering</orgName> and <orgName type="department">Department of Surgery</orgName>,
 							<lb/>
 							<orgName type="institution">University of Michigan</orgName>,
 							<address>
@@ -37,7 +37,7 @@
 								<region>MI</region>,
 								<country>USA</country>
 								<lb/>
-								<addrLine>1011 N University Ave.<lb/> Ann Arbor</addrLine>
+								<addrLine>1011 N University Ave.</addrLine><lb/> <settlement>Ann Arbor</settlement>
 								<lb/>
 								<region>MI</region>
 								<postCode>48109</postCode>

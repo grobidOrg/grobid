@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="laboratory">Key Laboratory of Semiconductor Materials Science</orgName>,
+							<orgName type="department">Institute of Semiconductors</orgName>,
+							<orgName type="institution">Chinese<lb/> Academy of Sciences</orgName>,
+							<address>
+								<postBox>P. O. Box 912</postBox>,
+								<settlement>Beijing</settlement>
+								<postCode>100083</postCode>,
+								<country>China</country>
+							<lb/>
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="department">Solid State Physics</orgName>,
+							<orgName type="institution">Lund University</orgName>,
+							<address>
+								<postBox>P. O. Box 118</postBox>,
+								<postCode>SE-221 00</postCode>
+								<settlement>Lund</settlement>,
+							<lb/>
+								<country>Sweden</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

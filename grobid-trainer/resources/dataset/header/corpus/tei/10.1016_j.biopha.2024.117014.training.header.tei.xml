@@ -48,10 +48,18 @@
             * Corresponding author.<lb/> ** Corresponding author.<lb/> E-mail addresses:
             <email>syy3@pusan.ac.kr</email>
 
-            (S. Yoon),
+            (
+	<byline>
+	<docAuthor>S. Yoon</docAuthor>
+	</byline>
+	),
             <email>kangdj@keri.re.kr</email>
 
-            (D.J. Kang).<lb/>
+            (
+	<byline>
+	<docAuthor>D.J. Kang</docAuthor>
+	</byline>
+	).<lb/>
             1 These authors contributed equally to this work.<lb/> Contents lists available at ScienceDirect Heliyon<lb/> journal homepage: www.cell.com/heliyon<lb/>
 
             <idno>https://doi.org/10.1016/j.heliyon.2024.e27580<lb/></idno>

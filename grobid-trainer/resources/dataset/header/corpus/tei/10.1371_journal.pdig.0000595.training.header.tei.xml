@@ -13,8 +13,10 @@
 	</docTitle>
 
 	<byline>
-	<docAuthor>Elisa Garcia Gomez 1☯ , Kitiezo Aggrey Igunza 2☯ , Zachary J. Madewell ID 3<lb/> , Victor Akelo 4 ,<lb/> Dickens Onyango 5 , Shams El Arifeen 6 , Emily S. Gurley 7 , Mohammad Zahid Hossain ID<lb/> 6 ,<lb/> Md Atique Iqbal Chowdhury 6 , Kazi Munisul Islam 6 , Nega Assefa 8,9,10 , J. Anthony G. Scott 8 ,<lb/> Lola Madrid 8,9,10 , Yenenesh Tilahun 9,10 , Stian Orlien ID<lb/> 11,12 , Karen L. Kotloff 13 , Milagritos<lb/> D. Tapia 13 , Adama Mamby Keita 14 , Ashka Mehta 13 , Amilcar Magac ¸o15 , David Torres-<lb/>FernandezID 15,16 , Ariel Nhacolo 15 , Quique BassatID 15,16,17,18,19 , Ina ´cio Mandomando 15,16,20 ,<lb/> Ikechukwu OgbuanuID 21 , Carrie Jo Cain 22 , Ronita Luke 23 , Sorie I. B. Kamara 21 ,<lb/> Hailemariam LegesseID 24 , Shabir Madhi 25 , Ziyaad Dangor 25 , Sana MahtabID 25 ,<lb/> Amy Wise 26 , Yasmin Adam 27 , Cynthia G. Whitney 28 , Portia C. Mutevedzi 28 , Dianna<lb/> M. BlauID 3 , Robert F. BreimanID 29 , Beth A. Tippett BarrID 30 , Chris A. ReesID 31,32 *, Child<lb/> Health and Mortality Prevention Surveillance Network ¶<lb/></docAuthor>
+	<docAuthor>Elisa Garcia Gomez 1☯ , Kitiezo Aggrey Igunza 2☯ , Zachary J. Madewell ID 3<lb/> , Victor Akelo 4 ,<lb/> Dickens Onyango 5 , Shams El Arifeen 6 , Emily S. Gurley 7 , Mohammad Zahid Hossain ID<lb/> 6 ,<lb/> Md Atique Iqbal Chowdhury 6 , Kazi Munisul Islam 6 , Nega Assefa 8,9,10 , J. Anthony G. Scott 8 ,<lb/> Lola Madrid 8,9,10 , Yenenesh Tilahun 9,10 , Stian Orlien ID<lb/> 11,12 , Karen L. Kotloff 13 , Milagritos<lb/> D. Tapia 13 , Adama Mamby Keita 14 , Ashka Mehta 13 , Amilcar Magac ¸o15 , David Torres-<lb/>FernandezID 15,16 , Ariel Nhacolo 15 , Quique BassatID 15,16,17,18,19 , Ina ´cio Mandomando 15,16,20 ,<lb/> Ikechukwu OgbuanuID 21 , Carrie Jo Cain 22 , Ronita Luke 23 , Sorie I. B. Kamara 21 ,<lb/> Hailemariam LegesseID 24 , Shabir Madhi 25 , Ziyaad Dangor 25 , Sana MahtabID 25 ,<lb/> Amy Wise 26 , Yasmin Adam 27 , Cynthia G. Whitney 28 , Portia C. Mutevedzi 28 , Dianna<lb/> M. BlauID 3 , Robert F. BreimanID 29 , Beth A. Tippett BarrID 30 , Chris A. ReesID 31,32 *,</docAuthor>
 	</byline>
+
+	<note type="group">Child<lb/> Health and Mortality Prevention Surveillance Network ¶<lb/></note>
 
 	<byline>
 	<affiliation>1 Emory University School of Medicine, Emory University,</affiliation>
@@ -211,7 +213,7 @@
 	☯ These authors contributed equally to this work.<lb/> ¶ Membership of the Child Health and Mortality Prevention Surveillance Network is provided in the Supporting<lb/> information file in S1 Acknowledgments.<lb/> *
 	<email>chris.rees@emory.edu<lb/></email>
 
-    <note type="doctype">PLOS GLOBAL PUBLIC HEALTH<lb/></note>
+	<title level="j">PLOS GLOBAL PUBLIC HEALTH<lb/></title>
 
 	<reference>PLOS Global Public Health | https://doi.org/10.1371/journal.pgph.0002494 February 8, 2024<lb/></reference>
 
@@ -228,9 +230,9 @@
 	Editor:
 	<editor>Julia Robinson</editor>
 
-	, PLOS:
+	,
 	<byline>
-	<affiliation>Public Library of<lb/> Science,</affiliation>
+	<affiliation>PLOS: Public Library of<lb/> Science,</affiliation>
 	</byline>
 
 	<address>UNITED STATES<lb/></address>

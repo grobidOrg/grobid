@@ -42,10 +42,8 @@
 
 	<div type="abstract">A principal challenge currently facing biologists is how to connect the complete DNA sequence of an organism to its development<lb/> and behaviour. Large-scale targeted-deletions have been successful in defining gene functions in the single-celled yeast<lb/> Saccharomyces cerevisiae, but comparable analyses have yet to be performed in an animal. Here we describe the use of RNA<lb/> interference to inhibit the function of ,86% of the 19,427 predicted genes of C. elegans. We identified mutant phenotypes for 1,722<lb/> genes, about two-thirds of which were not previously associated with a phenotype. We find that genes of similar functions are<lb/> clustered in distinct, multi-megabase regions of individual chromosomes; genes in these regions tend to share transcriptional<lb/> profiles. Our resulting data set and reusable RNAi library of 16,757 bacterial clones will facilitate systematic analyses of the<lb/> connections among gene sequence, chromosomal location and gene function in C. elegans.<lb/></div>
 
-	§ Present addresses: 
-
 	<byline>
-	<affiliation>Wellcome Trust Sanger Institute,</affiliation>
+	<affiliation>§ Present addresses: Wellcome Trust Sanger Institute,</affiliation>
 	</byline> 
 
 	<address>Hinxton, Cambridge CB10 1SA, UK</address> 

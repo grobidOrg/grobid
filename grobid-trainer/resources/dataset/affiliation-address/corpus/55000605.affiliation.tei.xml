@@ -41,7 +41,7 @@
 							<orgName type="department">International Graduate School of Neuroscience<lb/> (IGSN)</orgName>,
 							<address>
 								<settlement>Bochum</settlement>,
-								<settlement>Germany</settlement>,
+								<country>Germany</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -50,7 +50,7 @@
 							<orgName type="department">Department of Neurology</orgName>,
 							<orgName type="institution">University of Wü rzburg</orgName>,
 							<address>
-								<addrLine>Wü zburg</addrLine>,
+								<settlement>Wü zburg</settlement>,
 								<country>Germany</country>,
 							<lb/>
 							</address>
@@ -73,7 +73,7 @@
 							<orgName type="institution">University of Cagliari</orgName>,
 							<address>
 								<settlement>Cagliari</settlement>,
-								<settlement>Italy</settlement>,
+								<country>Italy</country>,
 							</address>
 						</affiliation>
 						<affiliation>

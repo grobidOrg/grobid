@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="laboratory">MoE Key Lab of Artificial Intelligence</orgName>,
+							<orgName type="institution">AI Institute</orgName>,
+							<lb/>
+							<orgName type="laboratory">X-LANCE Lab</orgName>,
+							<orgName type="department">Department of Computer Science and Engineering</orgName>,
+							<lb/>
+							<orgName type="institution">Shanghai Jiao Tong University</orgName>,
+							<address>
+								<settlement>Shanghai</settlement>,
+								<country>China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="department">Department of Electronic Engineering</orgName>,
+							<orgName type="institution">Tsinghua University</orgName>,
+							<address>
+								<settlement>Beijing</settlement>,
+								<country>China</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

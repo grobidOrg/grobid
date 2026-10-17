@@ -1,0 +1,790 @@
+
+> Configure project :
+Checking git under /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation
+Current Git revision: 0.9.1-51-gcba2df25c
+
+> Task :grobid-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :grobid-core:compileKotlin UP-TO-DATE
+> Task :grobid-core:compileJava UP-TO-DATE
+> Task :grobid-core:processResources UP-TO-DATE
+> Task :grobid-core:classes UP-TO-DATE
+> Task :grobid-core:jar UP-TO-DATE
+> Task :grobid-trainer:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :grobid-trainer:compileKotlin NO-SOURCE
+> Task :grobid-trainer:compileJava UP-TO-DATE
+> Task :grobid-trainer:processResources UP-TO-DATE
+> Task :grobid-trainer:classes UP-TO-DATE
+
+> Task :grobid-trainer:jatsEval
+00:11:25,219 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found logback-core version 1.5.38
+00:11:25,221 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4c583ecf - No custom configurators were discovered as a service.
+00:11:25,222 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4c583ecf - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+00:11:25,223 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4c583ecf - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+00:11:25,232 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+00:11:25,240 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/build/resources/main/logback.xml]
+00:11:25,449 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Scan attribute not set or set to unrecognized value.
+00:11:25,464 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+00:11:25,464 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+00:11:25,478 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+00:11:25,553 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - NOTE: Writing to the console can be slow. Try to avoid logging to the 
+00:11:25,553 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+00:11:25,553 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+00:11:25,555 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [rollingFile]
+00:11:25,555 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+00:11:25,572 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1764696127 - setting totalSizeCap to 100 MB
+00:11:25,573 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1764696127 - No compression will be used
+00:11:25,577 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1764696127 - Will use the pattern ../logs/grobid-trainer-%d{yyyy-MM-dd}.log for the active file
+00:11:25,621 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '../logs/grobid-trainer-%d{yyyy-MM-dd}.log'.
+00:11:25,621 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+00:11:25,623 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2026-10-16T18:19:31.097Z
+00:11:25,628 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[rollingFile] - A triggering policy of type TimeBasedRollingPolicy was already set.
+00:11:25,628 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[rollingFile] - Note that TimeBasedRollingPolicy doubles as a RollingPolicy
+00:11:25,629 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[rollingFile] - See also https://logback.qos.ch/codes.html#rfa_reset_rp_or_tp
+00:11:25,629 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+00:11:25,630 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[rollingFile] - Active log file name: ../logs/grobid-trainer.log
+00:11:25,630 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[rollingFile] - File property is set to [../logs/grobid-trainer.log]
+00:11:25,632 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to ERROR
+00:11:25,633 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+00:11:25,633 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [rollingFile] to Logger[ROOT]
+00:11:25,633 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@55182842 - End of configuration.
+00:11:25,634 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@3270d194 - Registering current configuration as safe fallback point
+00:11:25,644 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4c583ecf - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 412 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+Flavor was not specified. Using default Grobid process. 
+>>>>>>>> GROBID_HOME=/data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home
+BidLSTM_CRF_FEATURES
+load weights from /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/model_weights.hdf5
+loading model weights /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/model_weights.hdf5
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                Output Shape                 Param #   Connected to                  
+==================================================================================================
+ features_input (InputLayer  [(None, None, 10)]           0         []                            
+ )                                                                                                
+                                                                                                  
+ char_input (InputLayer)     [(None, None, 30)]           0         []                            
+                                                                                                  
+ features_embedding_td (Tim  (None, None, 10, 4)          484       ['features_input[0][0]']      
+ eDistributed)                                                                                    
+                                                                                                  
+ time_distributed (TimeDist  (None, None, 30, 25)         3875      ['char_input[0][0]']          
+ ributed)                                                                                         
+                                                                                                  
+ features_embedding_td_2 (T  (None, None, 8)              288       ['features_embedding_td[0][0]'
+ imeDistributed)                                                    ]                             
+                                                                                                  
+ word_input (InputLayer)     [(None, None, 300)]          0         []                            
+                                                                                                  
+ time_distributed_1 (TimeDi  (None, None, 50)             10200     ['time_distributed[0][0]']    
+ stributed)                                                                                       
+                                                                                                  
+ dropout (Dropout)           (None, None, 8)              0         ['features_embedding_td_2[0][0
+                                                                    ]']                           
+                                                                                                  
+ concatenate (Concatenate)   (None, None, 358)            0         ['word_input[0][0]',          
+                                                                     'time_distributed_1[0][0]',  
+                                                                     'dropout[0][0]']             
+                                                                                                  
+ dropout_1 (Dropout)         (None, None, 358)            0         ['concatenate[0][0]']         
+                                                                                                  
+ bidirectional_2 (Bidirecti  (None, None, 200)            367200    ['dropout_1[0][0]']           
+ onal)                                                                                            
+                                                                                                  
+ dropout_2 (Dropout)         (None, None, 200)            0         ['bidirectional_2[0][0]']     
+                                                                                                  
+ length_input (InputLayer)   [(None, 1)]                  0         []                            
+                                                                                                  
+ dense (Dense)               (None, None, 100)            20100     ['dropout_2[0][0]']           
+                                                                                                  
+==================================================================================================
+Total params: 402147 (1.53 MB)
+Trainable params: 402147 (1.53 MB)
+Non-trainable params: 0 (0.00 Byte)
+__________________________________________________________________________________________________
+Model: "crf_model_wrapper_default"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ crf (CRF)                   multiple                  2750      
+                                                                 
+ model (Functional)          (None, None, 100)         402147    
+                                                                 
+=================================================================
+Total params: 404897 (1.54 MB)
+Trainable params: 404897 (1.54 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+BidLSTM_ChainCRF_FEATURES
+load weights from /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home/models/header-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5
+loading model weights /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home/models/header-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5
+Model: "model_1"
+__________________________________________________________________________________________________
+ Layer (type)                Output Shape                 Param #   Connected to                  
+==================================================================================================
+ features_input (InputLayer  [(None, None, 22)]           0         []                            
+ )                                                                                                
+                                                                                                  
+ char_input (InputLayer)     [(None, None, 30)]           0         []                            
+                                                                                                  
+ features_embedding_td (Tim  (None, None, 22, 4)          1060      ['features_input[0][0]']      
+ eDistributed)                                                                                    
+                                                                                                  
+ time_distributed_2 (TimeDi  (None, None, 30, 25)         8650      ['char_input[0][0]']          
+ stributed)                                                                                       
+                                                                                                  
+ features_embedding_td_2 (T  (None, None, 8)              288       ['features_embedding_td[0][0]'
+ imeDistributed)                                                    ]                             
+                                                                                                  
+ word_input (InputLayer)     [(None, None, 300)]          0         []                            
+                                                                                                  
+ time_distributed_3 (TimeDi  (None, None, 50)             10200     ['time_distributed_2[0][0]']  
+ stributed)                                                                                       
+                                                                                                  
+ dropout_3 (Dropout)         (None, None, 8)              0         ['features_embedding_td_2[0][0
+                                                                    ]']                           
+                                                                                                  
+ concatenate_1 (Concatenate  (None, None, 358)            0         ['word_input[0][0]',          
+ )                                                                   'time_distributed_3[0][0]',  
+                                                                     'dropout_3[0][0]']           
+                                                                                                  
+ dropout_4 (Dropout)         (None, None, 358)            0         ['concatenate_1[0][0]']       
+                                                                                                  
+ bidirectional_5 (Bidirecti  (None, None, 200)            367200    ['dropout_4[0][0]']           
+ onal)                                                                                            
+                                                                                                  
+ dropout_5 (Dropout)         (None, None, 200)            0         ['bidirectional_5[0][0]']     
+                                                                                                  
+ dense_2 (Dense)             (None, None, 100)            20100     ['dropout_5[0][0]']           
+                                                                                                  
+ dense_3 (Dense)             (None, None, 44)             4444      ['dense_2[0][0]']             
+                                                                                                  
+ length_input (InputLayer)   [(None, 1)]                  0         []                            
+                                                                                                  
+ chain_crf (ChainCRF)        (None, None, 44)             2024      ['dense_3[0][0]']             
+                                                                                                  
+==================================================================================================
+Total params: 413966 (1.58 MB)
+Trainable params: 413966 (1.58 MB)
+Non-trainable params: 0 (0.00 Byte)
+__________________________________________________________________________________________________
+BidLSTM_CRF_FEATURES
+load weights from /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home/models/citation-BidLSTM_CRF_FEATURES/model_weights.hdf5
+loading model weights /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home/models/citation-BidLSTM_CRF_FEATURES/model_weights.hdf5
+Model: "model_2"
+__________________________________________________________________________________________________
+ Layer (type)                Output Shape                 Param #   Connected to                  
+==================================================================================================
+ features_input (InputLayer  [(None, None, 19)]           0         []                            
+ )                                                                                                
+                                                                                                  
+ char_input (InputLayer)     [(None, None, 30)]           0         []                            
+                                                                                                  
+ features_embedding_td (Tim  (None, None, 19, 4)          916       ['features_input[0][0]']      
+ eDistributed)                                                                                    
+                                                                                                  
+ time_distributed_4 (TimeDi  (None, None, 30, 25)         48450     ['char_input[0][0]']          
+ stributed)                                                                                       
+                                                                                                  
+ features_embedding_td_2 (T  (None, None, 8)              288       ['features_embedding_td[0][0]'
+ imeDistributed)                                                    ]                             
+                                                                                                  
+ word_input (InputLayer)     [(None, None, 300)]          0         []                            
+                                                                                                  
+ time_distributed_5 (TimeDi  (None, None, 50)             10200     ['time_distributed_4[0][0]']  
+ stributed)                                                                                       
+                                                                                                  
+ dropout_6 (Dropout)         (None, None, 8)              0         ['features_embedding_td_2[0][0
+                                                                    ]']                           
+                                                                                                  
+ concatenate_2 (Concatenate  (None, None, 358)            0         ['word_input[0][0]',          
+ )                                                                   'time_distributed_5[0][0]',  
+                                                                     'dropout_6[0][0]']           
+                                                                                                  
+ dropout_7 (Dropout)         (None, None, 358)            0         ['concatenate_2[0][0]']       
+                                                                                                  
+ bidirectional_8 (Bidirecti  (None, None, 200)            367200    ['dropout_7[0][0]']           
+ onal)                                                                                            
+                                                                                                  
+ dropout_8 (Dropout)         (None, None, 200)            0         ['bidirectional_8[0][0]']     
+                                                                                                  
+ length_input (InputLayer)   [(None, 1)]                  0         []                            
+                                                                                                  
+ dense_4 (Dense)             (None, None, 100)            20100     ['dropout_8[0][0]']           
+                                                                                                  
+==================================================================================================
+Total params: 447154 (1.71 MB)
+Trainable params: 447154 (1.71 MB)
+Non-trainable params: 0 (0.00 Byte)
+__________________________________________________________________________________________________
+Model: "crf_model_wrapper_default_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ crf_1 (CRF)                 multiple                  5358      
+                                                                 
+ model_2 (Functional)        (None, None, 100)         447154    
+                                                                 
+=================================================================
+Total params: 452512 (1.73 MB)
+Trainable params: 452512 (1.73 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+BidLSTM_ChainCRF_FEATURES
+load weights from /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home/models/reference-segmenter-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5
+loading model weights /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home/models/reference-segmenter-BidLSTM_ChainCRF_FEATURES/model_weights.hdf5
+Model: "model_3"
+__________________________________________________________________________________________________
+ Layer (type)                Output Shape                 Param #   Connected to                  
+==================================================================================================
+ features_input (InputLayer  [(None, None, 18)]           0         []                            
+ )                                                                                                
+                                                                                                  
+ char_input (InputLayer)     [(None, None, 30)]           0         []                            
+                                                                                                  
+ features_embedding_td (Tim  (None, None, 18, 4)          868       ['features_input[0][0]']      
+ eDistributed)                                                                                    
+                                                                                                  
+ time_distributed_6 (TimeDi  (None, None, 30, 25)         4300      ['char_input[0][0]']          
+ stributed)                                                                                       
+                                                                                                  
+ features_embedding_td_2 (T  (None, None, 8)              288       ['features_embedding_td[0][0]'
+ imeDistributed)                                                    ]                             
+                                                                                                  
+ word_input (InputLayer)     [(None, None, 300)]          0         []                            
+                                                                                                  
+ time_distributed_7 (TimeDi  (None, None, 50)             10200     ['time_distributed_6[0][0]']  
+ stributed)                                                                                       
+                                                                                                  
+ dropout_9 (Dropout)         (None, None, 8)              0         ['features_embedding_td_2[0][0
+                                                                    ]']                           
+                                                                                                  
+ concatenate_3 (Concatenate  (None, None, 358)            0         ['word_input[0][0]',          
+ )                                                                   'time_distributed_7[0][0]',  
+                                                                     'dropout_9[0][0]']           
+                                                                                                  
+ dropout_10 (Dropout)        (None, None, 358)            0         ['concatenate_3[0][0]']       
+                                                                                                  
+ bidirectional_11 (Bidirect  (None, None, 200)            367200    ['dropout_10[0][0]']          
+ ional)                                                                                           
+                                                                                                  
+ dropout_11 (Dropout)        (None, None, 200)            0         ['bidirectional_11[0][0]']    
+                                                                                                  
+ dense_6 (Dense)             (None, None, 100)            20100     ['dropout_11[0][0]']          
+                                                                                                  
+ dense_7 (Dense)             (None, None, 6)              606       ['dense_6[0][0]']             
+                                                                                                  
+ length_input (InputLayer)   [(None, 1)]                  0         []                            
+                                                                                                  
+ chain_crf_1 (ChainCRF)      (None, None, 6)              48        ['dense_7[0][0]']             
+                                                                                                  
+==================================================================================================
+Total params: 403610 (1.54 MB)
+Trainable params: 403610 (1.54 MB)
+Non-trainable params: 0 (0.00 Byte)
+__________________________________________________________________________________________________
+BidLSTM_CRF_FEATURES
+load weights from /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/model_weights.hdf5
+loading model weights /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/model_weights.hdf5
+Model: "model_4"
+__________________________________________________________________________________________________
+ Layer (type)                Output Shape                 Param #   Connected to                  
+==================================================================================================
+ features_input (InputLayer  [(None, None, 7)]            0         []                            
+ )                                                                                                
+                                                                                                  
+ char_input (InputLayer)     [(None, None, 30)]           0         []                            
+                                                                                                  
+ features_embedding_td (Tim  (None, None, 7, 4)           340       ['features_input[0][0]']      
+ eDistributed)                                                                                    
+                                                                                                  
+ time_distributed_8 (TimeDi  (None, None, 30, 25)         3750      ['char_input[0][0]']          
+ stributed)                                                                                       
+                                                                                                  
+ features_embedding_td_2 (T  (None, None, 8)              288       ['features_embedding_td[0][0]'
+ imeDistributed)                                                    ]                             
+                                                                                                  
+ word_input (InputLayer)     [(None, None, 300)]          0         []                            
+                                                                                                  
+ time_distributed_9 (TimeDi  (None, None, 50)             10200     ['time_distributed_8[0][0]']  
+ stributed)                                                                                       
+                                                                                                  
+ dropout_12 (Dropout)        (None, None, 8)              0         ['features_embedding_td_2[0][0
+                                                                    ]']                           
+                                                                                                  
+ concatenate_4 (Concatenate  (None, None, 358)            0         ['word_input[0][0]',          
+ )                                                                   'time_distributed_9[0][0]',  
+                                                                     'dropout_12[0][0]']          
+                                                                                                  
+ dropout_13 (Dropout)        (None, None, 358)            0         ['concatenate_4[0][0]']       
+                                                                                                  
+ bidirectional_14 (Bidirect  (None, None, 200)            367200    ['dropout_13[0][0]']          
+ ional)                                                                                           
+                                                                                                  
+ dropout_14 (Dropout)        (None, None, 200)            0         ['bidirectional_14[0][0]']    
+                                                                                                  
+ length_input (InputLayer)   [(None, 1)]                  0         []                            
+                                                                                                  
+ dense_8 (Dense)             (None, None, 100)            20100     ['dropout_14[0][0]']          
+                                                                                                  
+==================================================================================================
+Total params: 401878 (1.53 MB)
+Trainable params: 401878 (1.53 MB)
+Non-trainable params: 0 (0.00 Byte)
+__________________________________________________________________________________________________
+Model: "crf_model_wrapper_default_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ crf_2 (CRF)                 multiple                  2460      
+                                                                 
+ model_4 (Functional)        (None, None, 100)         401878    
+                                                                 
+=================================================================
+Total params: 404338 (1.54 MB)
+Trainable params: 404338 (1.54 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+
+
+
+-------------> GROBID failed on 0 PDF
+
+984 PDF files processed in 1947.505 seconds, 1.9791717479674797 seconds per PDF file
+
+
+
+
+
+
+
+Evaluation metrics produced in 210.913 seconds
+
+======= Header metadata ======= 
+
+Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
+
+======= Strict Matching ======= (exact matches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+abstract             96.66        8.65         8.33         8.49         984    
+affiliation_linked   15.72        2.4          2.95         2.65         981    
+authors              98.29        53.55        53           53.27        983    
+first_author         99.66        91.57        90.73        91.15        982    
+title                99.3         82.47        80.79        81.62        984    
+
+all (micro avg.)     81.92        15.52        18.02        16.67        4914   
+all (macro avg.)     81.92        47.73        47.16        47.44        4914   
+
+
+======== Soft Matching ======== (ignoring punctuation, case and space characters mismatches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+abstract             95.89        21.52        20.73        21.12        984    
+affiliation_linked   64.68        64.69        79.49        71.33        981    
+authors              97.58        53.85        53.31        53.58        983    
+first_author         99.51        91.57        90.73        91.15        982    
+title                99.53        92.74        90.85        91.79        984    
+
+all (micro avg.)     91.44        64.79        75.24        69.62        4914   
+all (macro avg.)     91.44        64.87        67.02        65.79        4914   
+
+
+==== Levenshtein Matching ===== (Minimum Levenshtein distance at 0.8)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+abstract             97.09        46.73        45.02        45.86        984    
+affiliation_linked   67.99        67.59        83.05        74.53        981    
+authors              98.91        80.27        79.45        79.86        983    
+first_author         99.53        92.19        91.34        91.76        982    
+title                99.63        95.02        93.09        94.05        984    
+
+all (micro avg.)     92.63        70.15        81.46        75.38        4914   
+all (macro avg.)     92.63        76.36        78.39        77.21        4914   
+
+
+= Ratcliff/Obershelp Matching = (Minimum Ratcliff/Obershelp similarity at 0.95)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+abstract             96.96        43.46        41.87        42.65        984    
+affiliation_linked   66.22        66.05        81.17        72.83        981    
+authors              98.13        64.95        64.29        64.62        983    
+first_author         99.51        91.57        90.73        91.15        982    
+title                99.63        94.81        92.89        93.84        984    
+
+all (micro avg.)     92.09        67.85        78.79        72.91        4914   
+all (macro avg.)     92.09        72.17        74.19        73.02        4914   
+
+Note: the "affiliation_linked" field above is a linking-aware metric (each author is paired with its gold counterpart and their attached affiliations compared). Its support column reports the number of articles the metric is computed from (those with at least one explicit gold affiliation link), while precision/recall/F1 are measured over the individual author-affiliation links.
+Only authors whose gold affiliation link is explicit are scored; affiliations encoded purely positionally in the gold (no xref/@rid and no nested aff) are out of scope, not counted as misses.
+Ground truth: single-affiliation papers (exactly one <aff>) have been completed by linking every author to that sole affiliation (~1,649 authors across PMC, bioRxiv and PLOS). Still to be done: multi-affiliation papers that encode the author-to-affiliation mapping only positionally, which require the PDF superscripts to disambiguate.
+
+===== Instance-level results =====
+
+Total expected instances: 	984
+Total correct instances: 	22 (strict) 
+Total correct instances: 	82 (soft) 
+Total correct instances: 	304 (Levenshtein) 
+Total correct instances: 	220 (ObservedRatcliffObershelp) 
+
+Instance-level recall:	2.24	(strict) 
+Instance-level recall:	8.33	(soft) 
+Instance-level recall:	30.89	(Levenshtein) 
+Instance-level recall:	22.36	(RatcliffObershelp) 
+
+======= Citation metadata ======= 
+
+Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
+
+======= Strict Matching ======= (exact matches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+authors              97.03        79.71        78.25        78.97        63265  
+date                 99.4         96.01        93.69        94.84        63662  
+first_author         99.23        94.85        93.08        93.95        63265  
+inTitle              99.35        95.52        94.09        94.8         63213  
+issue                99.8         1.52         81.25        2.99         16     
+page                 99.29        95.73        94.68        95.2         53375  
+title                98.58        90.28        90.42        90.35        62044  
+volume               99.65        97.82        98.09        97.96        61049  
+
+all (micro avg.)     99.04        92.59        91.66        92.12        429889 
+all (macro avg.)     99.04        81.43        90.44        81.13        429889 
+
+
+======== Soft Matching ======== (ignoring punctuation, case and space characters mismatches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+authors              97.05        79.85        78.38        79.11        63265  
+date                 99.4         96.01        93.69        94.84        63662  
+first_author         99.24        94.93        93.16        94.04        63265  
+inTitle              99.42        96           94.56        95.28        63213  
+issue                99.8         1.52         81.25        2.99         16     
+page                 99.29        95.73        94.68        95.2         53375  
+title                99.4         95.93        96.08        96.01        62044  
+volume               99.65        97.82        98.09        97.96        61049  
+
+all (micro avg.)     99.16        93.52        92.58        93.05        429889 
+all (macro avg.)     99.16        82.22        91.24        81.93        429889 
+
+
+==== Levenshtein Matching ===== (Minimum Levenshtein distance at 0.8)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+authors              99.04        93.49        91.77        92.62        63265  
+date                 99.4         96.01        93.69        94.84        63662  
+first_author         99.31        95.38        93.59        94.48        63265  
+inTitle              99.51        96.62        95.16        95.88        63213  
+issue                99.8         1.52         81.25        2.99         16     
+page                 99.29        95.73        94.68        95.2         53375  
+title                99.66        97.69        97.84        97.77        62044  
+volume               99.65        97.82        98.09        97.96        61049  
+
+all (micro avg.)     99.46        95.92        94.96        95.44        429889 
+all (macro avg.)     99.46        84.28        93.26        83.97        429889 
+
+
+= Ratcliff/Obershelp Matching = (Minimum Ratcliff/Obershelp similarity at 0.95)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+authors              98.1         87.01        85.42        86.2         63265  
+date                 99.4         96.01        93.69        94.84        63662  
+first_author         99.23        94.86        93.09        93.97        63265  
+inTitle              99.42        96.02        94.57        95.29        63213  
+issue                99.8         1.52         81.25        2.99         16     
+page                 99.29        95.73        94.68        95.2         53375  
+title                99.64        97.53        97.69        97.61        62044  
+volume               99.65        97.82        98.09        97.96        61049  
+
+all (micro avg.)     99.32        94.79        93.84        94.31        429889 
+all (macro avg.)     99.32        83.31        92.31        83.01        429889 
+
+===== Instance-level results =====
+
+Total expected instances: 		63664
+Total extracted instances: 		64960
+Total correct instances: 		41723 (strict) 
+Total correct instances: 		44520 (soft) 
+Total correct instances: 		52180 (Levenshtein) 
+Total correct instances: 		48704 (RatcliffObershelp) 
+
+Instance-level precision:	64.23 (strict) 
+Instance-level precision:	68.53 (soft) 
+Instance-level precision:	80.33 (Levenshtein) 
+Instance-level precision:	74.98 (RatcliffObershelp) 
+
+Instance-level recall:	65.54	(strict) 
+Instance-level recall:	69.93	(soft) 
+Instance-level recall:	81.96	(Levenshtein) 
+Instance-level recall:	76.5	(RatcliffObershelp) 
+
+Instance-level f-score:	64.88 (strict) 
+Instance-level f-score:	69.23 (soft) 
+Instance-level f-score:	81.14 (Levenshtein) 
+Instance-level f-score:	75.73 (RatcliffObershelp) 
+
+Matching 1 :	58480
+
+Matching 2 :	953
+
+Matching 3 :	1235
+
+Matching 4 :	389
+
+Total matches :	61057
+
+======= Citation context resolution ======= 
+
+Total expected references: 	 63664 - 64.7 references per article
+Total predicted references: 	 64960 - 66.02 references per article
+
+Total expected citation contexts: 	 109022 - 110.79 citation contexts per article
+Total predicted citation contexts: 	 98070 - 99.66 citation contexts per article
+
+Total correct predicted citation contexts: 	 94358 - 95.89 citation contexts per article
+Total wrong predicted citation contexts: 	 3712 (wrong callout matching, callout missing in NLM, or matching with a bib. ref. not aligned with a bib.ref. in NLM)
+
+Precision citation contexts: 	 96.21
+Recall citation contexts: 	 86.55
+fscore citation contexts: 	 91.13
+
+======= Fulltext structures ======= 
+
+Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
+
+======= Strict Matching ======= (exact matches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+availability_stmt    99.73        25.61        27.01        26.29        585    
+figure_title         87.09        0.1          0.03         0.05         31718  
+funding_stmt         98.57        6.22         28.77        10.23        921    
+reference_citation   71.12        57.08        54.91        55.97        108949 
+reference_figure     82.28        59.47        50.95        54.88        68926  
+reference_table      99.59        72.25        72.07        72.16        2381   
+section_title        97.39        82.21        77.86        79.97        21831  
+table_title          99.23        0            0            0            1925   
+
+all (micro avg.)     91.88        56.28        48.09        51.86        237236 
+all (macro avg.)     91.88        37.87        38.95        37.45        237236 
+
+
+======== Soft Matching ======== (ignoring punctuation, case and space characters mismatches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+availability_stmt    99.73        35.82        37.78        36.77        585    
+figure_title         88.88        49.39        16.14        24.33        31718  
+funding_stmt         98.34        6.22         28.77        10.23        921    
+reference_citation   93.94        93.86        90.3         92.05        108949 
+reference_figure     79.54        59.77        51.21        55.16        68926  
+reference_table      99.53        72.34        72.15        72.25        2381   
+section_title        97.12        83.22        78.82        80.96        21831  
+table_title          99.51        93.08        27.95        42.99        1925   
+
+all (micro avg.)     94.57        78.3         66.91        72.16        237236 
+all (macro avg.)     94.57        61.71        50.39        51.84        237236 
+
+===== Document-level ratio results =====
+
+label                accuracy     precision    recall       f1           support
+
+availability_stmt    91.95        93.48        105.47       99.12        585    
+
+all (micro avg.)     91.95        93.48        100          96.63        585    
+all (macro avg.)     91.95        93.48        100          99.12        585    
+
+
+************************************************************************************
+COUNTER: org.grobid.core.engines.counters.ReferenceMarkerMatcherCounters
+************************************************************************************
+------------------------------------------------------------------------------------
+  MATCHED_REF_MARKERS_AFTER_POST_FILTERING: 6262
+  UNMATCHED_REF_MARKERS:                    1705
+  STYLE_AUTHORS:                            62315
+  STYLE_NUMBERED:                           394
+  MANY_CANDIDATES:                          7427
+  MANY_CANDIDATES_AFTER_POST_FILTERING:     889
+  NO_CANDIDATES:                            5038
+  INPUT_REF_STRINGS_CNT:                    63505
+  MATCHED_REF_MARKERS:                      98070
+  NO_CANDIDATES_AFTER_POST_FILTERING:       273
+  STYLE_OTHER:                              796
+====================================================================================
+
+************************************************************************************
+COUNTER: org.grobid.core.engines.counters.TableRejectionCounters
+************************************************************************************
+------------------------------------------------------------------------------------
+  CANNOT_PARSE_LABEL_TO_INT:          12
+  CONTENT_SIZE_TOO_SMALL:             29
+  CONTENT_WIDTH_TOO_SMALL:            2
+  EMPTY_LABEL_OR_HEADER_OR_CONTENT:   2389
+  HEADER_NOT_STARTS_WITH_TABLE_WORD:  60
+  HEADER_NOT_CONSECUTIVE:             174
+  HEADER_AND_CONTENT_DIFFERENT_PAGES: 9
+  HEADER_AND_CONTENT_INTERSECT:       91
+====================================================================================
+
+************************************************************************************
+COUNTER: org.grobid.core.engines.counters.FigureCounters
+************************************************************************************
+------------------------------------------------------------------------------------
+  SKIPPED_BAD_STANDALONE_FIGURES:                                     1405
+  SKIPPED_DUE_TO_MISMATCH_OF_CAPTIONS_AND_VECTOR_AND_BITMAP_GRAPHICS: 1
+  SKIPPED_SMALL_STANDALONE_FIGURES:                                   1108
+  SKIPPED_BIG_STANDALONE_FIGURES:                                     297
+  TOO_MANY_FIGURES_PER_PAGE:                                          2
+====================================================================================
+
+************************************************************************************
+COUNTER: org.grobid.core.engines.label.TaggingLabelImpl
+************************************************************************************
+------------------------------------------------------------------------------------
+  HEADER_DOCTYPE:                         1099
+  CITATION_TITLE:                         63464
+  NAME-HEADER_MIDDLENAME:                 4581
+  HEADER_KEYWORD:                         77
+  HEADER_FUNDING:                         420
+  HEADER_ADDRESS:                         5309
+  TABLE_NOTE:                             1333
+  FULLTEXT_TABLE_MARKER:                  4487
+  FUNDING-ACKNOWLEDGEMENT_AFFILIATION:    714
+  CITATION_WEB:                           46317
+  FULLTEXT_SECTION:                       51078
+  DATE_YEAR:                              65705
+  CITATION_ISSUE:                         995
+  AFFILIATION-ADDRESS_SETTLEMENT:         4640
+  CITATION_JOURNAL:                       62234
+  TABLE_FIGURE_HEAD:                      1745
+  CITATION_OTHER:                         370381
+  CITATION_TECH:                          178
+  AFFILIATION-ADDRESS_OTHER:              16109
+  AFFILIATION-ADDRESS_LABORATORY:         658
+  CITATION_AUTHOR:                        64689
+  CITATION_EDITOR:                        385
+  FUNDING-ACKNOWLEDGEMENT_PROJECTNAME:    162
+  FIGURE_FIGDESC:                         13699
+  CITATION_VOLUME:                        61693
+  AFFILIATION-ADDRESS_DEPARTMENT:         4597
+  CITATION_LOCATION:                      2278
+  FUNDING-ACKNOWLEDGEMENT_INFRASTRUCTURE: 225
+  NAME-CITATION_SUFFIX:                   14
+  NAME-HEADER_TITLE:                      75
+  FUNDING-ACKNOWLEDGEMENT_INSTITUTION:    972
+  HEADER_WEB:                             27
+  AFFILIATION-ADDRESS_ADDRLINE:           233
+  CITATION_INSTITUTION:                   1245
+  HEADER_REFERENCE:                       1271
+  HEADER_AUTHOR:                          3880
+  NAME-HEADER_MARKER:                     7431
+  FUNDING-ACKNOWLEDGEMENT_FUNDERNAME:     3546
+  DATE_OTHER:                             1386
+  NAME-CITATION_FORENAME:                 374800
+  AFFILIATION-ADDRESS_REGION:             100
+  NAME-CITATION_MIDDLENAME:               3168
+  FULLTEXT_PARAGRAPH:                     364649
+  FIGURE_FIGURE_HEAD:                     21300
+  AFFILIATION-ADDRESS_POSTCODE:           126
+  HEADER_DATE:                            953
+  TABLE_FIGDESC:                          1467
+  HEADER_CONTRIBUTION:                    10
+  NAME-HEADER_SURNAME:                    12319
+  NAME-CITATION_OTHER:                    314362
+  CITATION_BOOKTITLE:                     1775
+  HEADER_AFFILIATION:                     5893
+  CITATION_NOTE:                          458
+  FULLTEXT_CITATION_MARKER:               126908
+  HEADER_EMAIL:                           1403
+  TABLE_LABEL:                            719
+  FUNDING-ACKNOWLEDGEMENT_PROGRAMNAME:    168
+  NAME-HEADER_FORENAME:                   12922
+  TABLE_CONTENT:                          2818
+  CITATION_COLLABORATION:                 138
+  HEADER_MEETING:                         2
+  HEADER_EDITOR:                          907
+  CITATION_SERIES:                        17
+  NAME-CITATION_SURNAME:                  369946
+  FULLTEXT_EQUATION_MARKER:               1109
+  FULLTEXT_FIGURE_MARKER:                 106703
+  HEADER_TITLE:                           992
+  FIGURE_CONTENT:                         2789
+  FIGURE_LABEL:                           11039
+  FULLTEXT_EQUATION_LABEL:                2794
+  HEADER_OTHER:                           8813
+  FULLTEXT_EQUATION:                      5752
+  CITATION_DATE:                          64856
+  FULLTEXT_FIGURE:                        25976
+  FULLTEXT_TABLE:                         1126
+  AFFILIATION-ADDRESS_MARKER:             4063
+  FULLTEXT_OTHER:                         81
+  HEADER_CONFLICT:                        792
+  HEADER_SUBMISSION:                      917
+  NAME-HEADER_OTHER:                      8141
+  HEADER_AVAILABILITY:                    25
+  NAME-HEADER_SUFFIX:                     6
+  DATE_MONTH:                             1256
+  FUNDING-ACKNOWLEDGEMENT_PERSON:         5559
+  HEADER_ABSTRACT:                        1062
+  AFFILIATION-ADDRESS_INSTITUTION:        6422
+  FUNDING-ACKNOWLEDGEMENT_GRANTNAME:      486
+  CITATION_PAGES:                         61303
+  AFFILIATION-ADDRESS_COUNTRY:            5411
+  FUNDING-ACKNOWLEDGEMENT_OTHER:          14841
+  CITATION_PUBLISHER:                     1180
+  FUNDING-ACKNOWLEDGEMENT_GRANTNUMBER:    3136
+  HEADER_PUBNUM:                          5001
+  CITATION_PUBNUM:                        60600
+  HEADER_COPYRIGHT:                       960
+  DATE_DAY:                               1196
+====================================================================================
+
+************************************************************************************
+COUNTER: FigureCounters
+************************************************************************************
+------------------------------------------------------------------------------------
+  STANDALONE_FIGURES:           355
+  ASSIGNED_GRAPHICS_TO_FIGURES: 3800
+====================================================================================
+====================================================================================
+
+
+Evaluation report in markdown format saved under /data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/grobid-trainer/../grobid-home/tmp/report.md
+
+[Incubating] Problems report is available at: file:///data/workspace/lfoppiano/grobid/evaluation/grobid-evaluation/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 36m 3s
+7 actionable tasks: 1 executed, 6 up-to-date

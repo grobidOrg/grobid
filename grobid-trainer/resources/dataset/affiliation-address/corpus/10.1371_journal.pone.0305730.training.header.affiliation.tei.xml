@@ -13,13 +13,13 @@
 							<orgName type="institution">University of Concordia</orgName>,
 							<address>
 								<settlement>Montreal</settlement>,
-								<country>Canada,</country>
+								<country>Canada</country>,
 							<lb/>
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>2</marker>
-							<orgName type="department">World Wide Fund for Nature</orgName>,
+							<orgName type="institution">World Wide Fund for Nature</orgName>,
 							<orgName type="department">Regional Office for Africa/Cameroon Country Program Office</orgName>,
 							<address>
 								<settlement>Yaounde<lb/> ´</settlement>,<lb/>
@@ -49,7 +49,7 @@
 						<affiliation>
 							<orgName type="institution">The Australian National<lb/> University</orgName>,
 							<address>
-								<addrLine>AUSTRALIA<lb/></addrLine>
+								<country>AUSTRALIA<lb/></country>
 							</address>
 						</affiliation>
 

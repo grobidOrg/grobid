@@ -8,15 +8,16 @@
 						<author>
 
 						<affiliation>
-							<orgName type="department">INGV (Istituto Nazionale di Geofisica e Vulcanologia) – via di Vigna Murata 605</orgName>,
+							<orgName type="institution">INGV (Istituto Nazionale di Geofisica e Vulcanologia)</orgName> –
 							<address>
+								<addrLine>via di Vigna Murata 605</addrLine>,
 								<postCode>I-00143</postCode>
 								<settlement>Rome</settlement>,
 								<country>Italy</country>
 							</address>
 						</affiliation>						
 						<affiliation>	
-							<orgName type="department">Istituto Nazionale di Geofisica e Vulcanologia (INGV)</orgName>
+							<orgName type="institution">Istituto Nazionale di Geofisica e Vulcanologia (INGV)</orgName>
 							<address>
 								<addrLine>Via di Vigna Murata 605</addrLine>
 								<postCode>I-00143</postCode>

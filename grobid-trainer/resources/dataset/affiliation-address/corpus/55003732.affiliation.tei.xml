@@ -56,7 +56,7 @@
 							<orgName type="department">Centre SPIN</orgName>,
 							<address>
 								<addrLine>158 Cours Fauriel</addrLine>,
-								<addrLine>Saint-Etienne 42023</addrLine>,
+								<settlement>Saint-Etienne</settlement> <postCode>42023</postCode>,
 								<country>France</country>
 							<lb/>
 							</address>

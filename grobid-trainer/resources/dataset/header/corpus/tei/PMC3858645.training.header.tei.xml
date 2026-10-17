@@ -58,7 +58,15 @@
 	<editor>Cynthia Darlington</editor>,
 
 	<byline>
-	<affiliation>University of<lb/> Otago, New Zealand<lb/> Paul Smith, University of Otago<lb/> Medical School,</affiliation>
+	<affiliation>University of<lb/> Otago,</affiliation>
+	</byline>
+
+	<address>New Zealand<lb/></address>
+
+	<editor>Paul Smith</editor>,
+
+	<byline>
+	<affiliation>University of Otago<lb/> Medical School,</affiliation>
 	</byline>
 
 	<address>New Zealand<lb/></address>
@@ -82,7 +90,9 @@
 	Keywords:
 	<keyword>ontogeny, development, vestibular, otolith, cognitive, navigation, human<lb/></keyword>
 
-	<reference>Frontiers in Integrative Neuroscience<lb/> www.frontiersin.org<lb/> December 2013 | Volume 7 | Article 92 | 1<lb/> Wiener-Vacher et al.<lb/> Vestibular activity and cognitive development<lb/></reference>
+	<reference>Frontiers in Integrative Neuroscience<lb/> www.frontiersin.org<lb/> December 2013 | Volume 7 | Article 92 | 1<lb/></reference>
+
+	Wiener-Vacher et al.<lb/> Vestibular activity and cognitive development<lb/>
 	
 	<note type="submission">Received: 31 July 2013; paper pending published: 09 November 2013; accepted: 21<lb/> November 2013;</note>
 

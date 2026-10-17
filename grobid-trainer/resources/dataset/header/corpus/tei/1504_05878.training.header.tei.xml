@@ -66,9 +66,7 @@
 	<date>21 May 2015<lb/></date>
 
 	Editor:
-	<byline>
-	<docAuthor>L. Rolandi<lb/></docAuthor>
-	</byline>
+	<editor>L. Rolandi<lb/></editor>
 
 	Keywords:<lb/>
 	<keyword>Charm decay<lb/> Quantum correlations<lb/> CP violation<lb/></keyword>
@@ -84,7 +82,11 @@
 	E-mail address:
 	<email>guy.wilkinson@cern.ch</email>
 
-	(G. Wilkinson).
+	(
+	<byline>
+	<docAuthor>G. Wilkinson</docAuthor>
+	</byline>
+	).
 		</front>
 	</text>
 </tei>

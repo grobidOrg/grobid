@@ -37,7 +37,7 @@
 	Abstract<lb/>
 	<div type="abstract">This paper adresses the need of structuring<lb/> the global context set into subsets or<lb/> domains in order to explain adequately the<lb/> use of referring expressions in a multimodal<lb/> corpus. We underline, in particular, the<lb/> importance of taking into account not only<lb/> the discourse, but also perception and<lb/> gestures for the construction of these<lb/> domains. We propose a unified context<lb/> model where the context is built up<lb/> dynamically from different information<lb/> sources and show that this way of context<lb/> modelling predicts correctly the use of<lb/> referring expressions in a corpus of<lb/> instructional dialogues.<lb/></div>
 
-	hal-00323339, version 1 -
+	<idno>hal-00323339, version 1</idno> -
 	<date>20 Sep 2008<lb/></date>
 
 	<note type="doctype">Author manuscript</note>

@@ -18,6 +18,8 @@
 								<country>USA</country>
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="laboratory">Channing Laboratory</orgName>,
 							<orgName type="department">Brigham and Women&apos;s Hospital</orgName>,
 							<orgName type="institution">Harvard Medical School</orgName>,
@@ -29,6 +31,8 @@
 								<country>USA</country>
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Program of Population Genetics</orgName>,
 							<orgName type="institution">Harvard School of Public
 								Health</orgName>,
@@ -40,6 +44,8 @@
 								<country>USA</country>
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="laboratory">ChanningLaboratory</orgName>,
 							<orgName type="department">BrighamandWomen&apos;sHospital</orgName>,
 							<orgName type="institution">HarvardMedicalSchool</orgName>,
@@ -51,6 +57,8 @@
 								<country>USA</country>
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Department of Biostatistics</orgName>,
 							<orgName type="institution">Harvard School of Public Health</orgName>,
 							<address>

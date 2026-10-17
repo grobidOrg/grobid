@@ -10,13 +10,15 @@
  Clopinet
 						<affiliation>
 							<address>
-								<addrLine>955 Creston Road<lb/> Berkeley</addrLine>,
+								<addrLine>955 Creston Road</addrLine><lb/> <settlement>Berkeley</settlement>,
 								<region>CA</region>
 								<postCode>94708-1501</postCode>,
 								<country>USA</country>
 							<lb/>
 							</address>
-							<orgName type="department">Empirical Inference for Machine Learning and Perception Department<lb/> Max Planck Institute for Biological Cybernetics</orgName>
+						</affiliation>
+						<affiliation>
+							<orgName type="department">Empirical Inference for Machine Learning and Perception Department</orgName><lb/> <orgName type="institution">Max Planck Institute for Biological Cybernetics</orgName>
 							<lb/>
 							<address>
 								<addrLine>Spemannstrasse 38</addrLine>

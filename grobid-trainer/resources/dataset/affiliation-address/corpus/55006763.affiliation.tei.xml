@@ -8,12 +8,12 @@
 						<author>
 
 						<affiliation>
-							<orgName type="department">Department of Pathology (KJB)</orgName>,
+							<orgName type="department">Department of Pathology</orgName> (KJB),
 							<orgName type="institution">Ludwig Institute for Cancer Research</orgName>,
-							<orgName type="institution">New York Branch (KI, LJO, AAJ)</orgName>,
+							<orgName type="department">New York Branch</orgName> (KI, LJO, AAJ),
 						</affiliation>
 						<affiliation>							
-							<orgName type="department">Department of Epidemiology and Biostatistics (MB)</orgName>,
+							<orgName type="department">Department of Epidemiology and Biostatistics</orgName> (MB),
 							<orgName type="institution">Memorial Sloan-Kettering Cancer Center</orgName>,
 							<address>
 								<settlement>New<lb/> York</settlement>,
@@ -22,7 +22,7 @@
 						</affiliation>
 						<affiliation>		
 							<orgName type="department">Department of Surgery</orgName>,
-							<orgName type="institution">University Hospital (GCS)</orgName>,
+							<orgName type="institution">University Hospital</orgName> (GCS),
 							<address>
 								<settlement>Basel</settlement>,
 								<country>Switzerland</country>

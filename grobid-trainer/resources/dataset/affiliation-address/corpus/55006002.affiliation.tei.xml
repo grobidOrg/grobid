@@ -35,7 +35,8 @@
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="department">Department of Horticulture Aarslev</orgName>,
+							<!-- check: Aarslev is the site of the department (settlement printed again below); split off as addrLine in its own address, it could also be read as part of the department name -->
+							<orgName type="department">Department of Horticulture</orgName> <address><addrLine>Aarslev</addrLine></address>,
 							<orgName type="department">Faculty of Agricultural Sciences</orgName>,
 							<orgName type="institution">University of Aarhus</orgName>,
 							<lb/>

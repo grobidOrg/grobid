@@ -11,8 +11,9 @@
 						<author>
 							<affiliation>
 								<orgName type="department">Inst. of Phys.</orgName>,
-								<orgName type="institution">Acad. of Sci. Tartu</orgName>,
+								<orgName type="institution">Acad. of Sci.</orgName>
 								<address>
+									<settlement>Tartu</settlement>,
                                     <country>Estonian SSR</country>;
 								</address>
 							</affiliation>

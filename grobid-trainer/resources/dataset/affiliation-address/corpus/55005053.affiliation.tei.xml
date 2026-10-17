@@ -9,8 +9,12 @@
 
 						<affiliation>
 							<orgName type="department">Department of Industrial &amp; Systems Engineering </orgName>,
-							<orgName type="institution">Umversity Park Campus Florida International Umversity Miami</orgName>,
 							<address>
+								<addrLine>Umversity Park Campus</addrLine>
+							</address>
+							<orgName type="institution">Florida International Umversity</orgName>
+							<address>
+								<settlement>Miami</settlement>,
 								<addrLine>ECS 442</addrLine>
 								<region>FL</region>
 								<postCode>33199</postCode>.

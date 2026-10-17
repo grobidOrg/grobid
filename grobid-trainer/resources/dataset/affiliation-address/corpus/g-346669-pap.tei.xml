@@ -9,8 +9,8 @@
 					<analytic>
 						<author>
 							<affiliation>
-								<orgName type="department" key="dep1">Department of Physics</orgName>,
-								<orgName type="department" key="dep2">Teachers College</orgName>,
+								<orgName type="department">Department of Physics</orgName>,
+								<orgName type="department">Teachers College</orgName>,
 								<orgName type="institution">Kyungpook National University</orgName>,
 								<address>
 									<settlement>Daegu</settlement>,<lb/>

@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">Dept. of Mechanical Engineer-<lb/>ing</orgName>,
+							<orgName type="institution">Stevens Institute of Technology</orgName>,
+							<address>
+								<settlement>Hoboken</settlement>,
+								<region>NJ</region>
+								<postCode>07030</postCode>,
+								<country>USA</country>,
+							<lb/>
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="department">Dept. of Electrical and Systems Engi-<lb/>neering</orgName>,
+							<orgName type="institution">University of Pennsylvania</orgName>,
+							<address>
+								<settlement>Philadelphia</settlement>,
+								<region>PA</region>
+								<postCode>19104</postCode>,
+								<country>USA</country>,
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

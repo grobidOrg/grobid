@@ -8,12 +8,15 @@
 						<author>
 
 						<affiliation>
-							<orgName type="institution">United Technologies Research Center East Hartford</orgName>,
+							<orgName type="institution">United Technologies Research Center</orgName>
 							<address>
+								<settlement>East Hartford</settlement>,
 								<region>CT</region>
-								<postCode>06118</postCode> Prepared for
-							</address>
-							<orgName type="department">The U.S. Department of Energy</orgName>,
+								<postCode>06118</postCode>
+							</address> Prepared for
+						</affiliation>
+						<affiliation>
+							<orgName type="institution">The U.S. Department of Energy</orgName>,
 							<orgName type="department">Office of Distributed Energy</orgName>
 						</affiliation>
 

@@ -14,6 +14,7 @@
 							<orgName type="institution">University of Girona</orgName>,
 							<address>
 								<addrLine>Campus Montilivi s/n</addrLine>,
+								<!-- check: Facultat de Ciències is printed inside the postal address between the campus street line and the post code, read as the building and left addrLine; it could also be a department -->
 								<addrLine>Facultat de Ciències</addrLine>,<lb/>
 								<postCode>E-17071</postCode>
 								<settlement>Girona</settlement>,

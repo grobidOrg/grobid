@@ -9,9 +9,10 @@
 
 						<affiliation>
 							<orgName type="department">Department of Chemical and Fuels Engineering</orgName>
-							<orgName type="institution">University of Utah Salt Lake City</orgName>,
+							<orgName type="institution">University of Utah</orgName>
 							<address>
-								<settlement>Utah</settlement>
+								<settlement>Salt Lake City</settlement>,
+								<region>Utah</region>
 								<postCode>84112</postCode>
 							</address>
 						</affiliation>

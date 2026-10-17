@@ -39,7 +39,7 @@
 	Abstract.
 	<div type="abstract">Predictive cardiac electrophysiology models can provide a<lb/> substantial aid in the success of the treatment of cardiac arrhythmias.<lb/> Sufficiently accurate model predictions highly depend on the personali-<lb/>sation of the model i.e. estimation of patient-specific model parameters.<lb/> In this paper, we evaluate the prediction ability of a simplified ionic 3D<lb/> cardiac electrophysiology model, the Mitchell-Schaeffer model (2003), af-<lb/>ter personalisation. The personalisation is performed by optimising the<lb/> model parameters, using the epicardial surface depolarisation and repo-<lb/>larisation maps obtained ex-vivo from optical imaging of large porcine<lb/> healthy heart. We also evaluate the sensitivity of the personalisation<lb/> method to a pacing location and the estimated parameter values. This<lb/> is done by comparing the personalisation results obtained with left ven-<lb/>tricle endocardial pacing location to those obtained with right ventricle<lb/> epicardial pacing location. Later, using the personalised electrophysiol-<lb/>ogy model, we predict the volumetric depolarisation and repolarisation<lb/> time isochrones for right ventricle endocardial and left ventricle epicar-<lb/>dial pacing locations and evaluate the epicardial isochrones against the<lb/> actual maps obtained from the optical data.<lb/></div>
 
-	inria-00418471, version 1 -
+	<idno>inria-00418471, version 1</idno> -
 	<date>18 Sep 2009<lb/></date>
 
 	<note type="doctype">Author manuscript</note>

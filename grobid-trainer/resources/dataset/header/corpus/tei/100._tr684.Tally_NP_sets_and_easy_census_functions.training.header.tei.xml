@@ -34,7 +34,9 @@
 
 	<email>ogihara@cs.rochester.edu<lb/></email>
 
-	<reference>J org Rothe 3<lb/></reference>
+	<byline>
+	<docAuthor>J org Rothe 3<lb/></docAuthor>
+	</byline>
 
 	<byline>
 	<affiliation>Institut f ur Informatik<lb/> Friedrich-Schiller-Universit at Jena<lb/></affiliation>

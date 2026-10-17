@@ -8,10 +8,10 @@
 						<author>
 
 						<affiliation>
-							<orgName type="department">The Institute of Physical and Chemical Research (RIKEN)</orgName>,
+							<orgName type="institution">The Institute of Physical and Chemical Research (RIKEN)</orgName>,
 							<address>
-								<addrLine>Wako-shi</addrLine>,
-								<settlement>Saitama</settlement>
+								<settlement>Wako-shi</settlement>,
+								<region>Saitama</region>
 								<postCode>351-01</postCode>,
 							</address>
 							<marker>1</marker> and
@@ -26,7 +26,7 @@
 							</address>
 							<marker>3</marker>
 							<address>
-								<country>Japan,</country>
+								<country>Japan</country>,
 							</address> and 
 						</affiliation>
 						<affiliation> 							

@@ -62,10 +62,10 @@
 	<address>38200 La Laguna, Tenerife,<lb/> Spain<lb/></address>
 
 	<byline>
-	<affiliation>5 Departamento de astrofísica,</affiliation>
+	<affiliation>5 Departamento de astrofísica, Univ. de La Laguna,</affiliation>
 	</byline>
 
-	<address>Univ. de La Laguna, E-38206 La<lb/> Laguna, Tenerife, Spain<lb/></address>
+	<address>E-38206 La<lb/> Laguna, Tenerife, Spain<lb/></address>
 
 	<byline>
 	<affiliation>6 Anton Pannekoek Institute for Astronomy,</affiliation>
@@ -158,7 +158,11 @@
 	<address>06300 Nice,<lb/> France<lb/></address>
 
 	<byline>
-	<affiliation>21 LPC2E -Universite d&apos;Orleans/CNRS<lb/> 22 School of Physics, Astronomy and Mathematics, University of<lb/> Hertfordshire,</affiliation>
+	<affiliation>21 LPC2E -Universite d&apos;Orleans/CNRS<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>22 School of Physics, Astronomy and Mathematics, University of<lb/> Hertfordshire,</affiliation>
 	</byline>
 
 	<address>College Lane, Hatfield AL10 9AB, UK<lb/></address>

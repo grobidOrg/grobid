@@ -12,9 +12,9 @@
 							
 							<affiliation>
 								<marker>a</marker> 
-								<orgName type="department" key="dep1">Institute of High Energy Physics</orgName>
+								<orgName type="department">Institute of High Energy Physics</orgName>
 								and
-								<orgName type="department" key="dep2">Theoretical Physics Center for Science Facilities</orgName>,<lb/>
+								<orgName type="department">Theoretical Physics Center for Science Facilities</orgName>,<lb/>
 								<orgName type="institution">Chinese Academy of Sciences</orgName>,
 								<address>
 									<settlement>Beijing</settlement>
@@ -30,7 +30,7 @@
 								<orgName type="institution">Academia Sinica</orgName>,
 								<address>
 									<settlement>Taipei</settlement>,
-									<postCode>Taiwan115</postCode>,
+									<country>Taiwan</country><postCode>115</postCode>,
 									<country key="TW">Republic of China<lb/></country>
 								</address>
 							</affiliation>
