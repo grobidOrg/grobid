@@ -138,7 +138,11 @@ subprojects {
                 'src/main/java/org/grobid/core/analyzers/GrobidFilterDeleteSpaceBetweenSameAlphabet.java',
                 'src/main/java/org/grobid/core/utilities/matching/DiffMatchPatch.java'
             )
-            eclipse().configFile(rootProject.file('eclipse-formatter.xml'))
+            // The formatter is provisioned from an Eclipse mirror: download.eclipse.org fails
+            // to serve the GitHub runners at times ("Failed to provision P2 dependencies").
+            eclipse()
+                .configFile(rootProject.file('eclipse-formatter.xml'))
+                .withP2Mirrors(['https://download.eclipse.org/': 'https://ftp.fau.de/eclipse/'])
             removeUnusedImports()
             importOrder('java', 'javax', '', 'org.grobid')
             licenseHeaderFile(rootProject.file('config/license-header.txt'))
@@ -730,6 +734,7 @@ project(":grobid-trainer") {
     // ./gradlew checkEvalConfig
     // ./gradlew jatsEval -Pp2t=/path/to/goldenSet
     // ./gradlew jatsEval -Pp2t=/path/to/goldenSet -Prun=1 -PfileRatio=0.1
+    // ./gradlew jatsEval -Pp2t=/path/to/goldenSet -Prun=1 -PconsolidateHeader=0   (no consolidation)
     // ./gradlew teiEval -Pp2t=/path/to/goldenSet
     // ./gradlew PrepareDOIMatching -Pp2t=ABS_PATH_TO_PMC/PMC_sample_1943
     // ./gradlew EvaluateDOIMatching -Pp2t=ABS_PATH_TO_PMC/PMC_sample_1943
@@ -737,12 +742,16 @@ project(":grobid-trainer") {
     // Pre-flight check of grobid.yaml before running the end-to-end evaluation:
     // verifies biblio-glutton consolidation is enabled and reachable, and that the
     // DeLFT-recommended models are set to engine: "delft". Fails (exit 1) if not.
-    // Pass -PcheckMode=warn to only report problems without failing (exit 0).
+    // Pass -PcheckMode=warn to only report problems without failing (exit 0), and
+    // -PcheckConsolidation=false to skip the biblio-glutton check (evaluation without consolidation).
     task(checkEvalConfig, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
         mainClass = 'org.grobid.trainer.evaluation.EvaluationConfigCheck'
         classpath = sourceSets.main.runtimeClasspath
         if (getArg('checkMode', 'strict') == 'warn') {
             args 'warn'
+        }
+        if (getArg('checkConsolidation', 'true') == 'false') {
+            args 'skip-consolidation'
         }
         def javaLibraryPath = getJavaLibraryPath()
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
@@ -765,6 +774,7 @@ project(":grobid-trainer") {
         }
         systemProperty "java.library.path", "${javaLibraryPath}"
         systemProperty "grobid.progressbar", getArg('progressbar', 'auto')
+        systemProperty "grobid.evaluation.consolidateHeader", getArg('consolidateHeader', '1')
     }
 
     task(teiEval, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
@@ -780,6 +790,7 @@ project(":grobid-trainer") {
         }
         systemProperty "java.library.path", "${javaLibraryPath}"
         systemProperty "grobid.progressbar", getArg('progressbar', 'auto')
+        systemProperty "grobid.evaluation.consolidateHeader", getArg('consolidateHeader', '1')
     }
 
     task(PrepareDOIMatching, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {

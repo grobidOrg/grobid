@@ -129,6 +129,12 @@ If you intentionally want to benchmark a non-standard configuration (for example
 > ./gradlew checkEvalConfig -PcheckMode=warn
 ```
 
+For an evaluation [without consolidation](#without-consolidation), biblio-glutton is not needed: skip its check with `-PcheckConsolidation=false` (the DeLFT models are still checked).
+
+```bash
+> ./gradlew checkEvalConfig -PcheckConsolidation=false
+```
+
 The [multi-dataset runner script](#multi-dataset-runner-script) `grobid-home/scripts/run_evaluation.sh` runs this check automatically before starting and aborts if it fails (unless invoked with `--warn` or `--skip-checks`).
 
 ## Running and evaluating
@@ -150,6 +156,14 @@ It is also possible to set a ratio of evaluation data to be used expressed as a 
 ```bash
 > ./gradlew jatsEval -Pp2t=ABS_PATH_TO_JATS_DATASET/DATASET -Prun=0 -PfileRatio=0.1
 ```
+
+#### Without consolidation
+
+The PDFs are processed with header consolidation (`consolidateHeader=1`), citations and funders being never consolidated. To evaluate the models alone, without any call to a consolidation service, set the parameter `consolidateHeader` to `0` (it accepts the values `0` to `3` of the `consolidateHeader` parameter of the service, and only matters with `-Prun=1`):
+```bash
+> ./gradlew jatsEval -Pp2t=ABS_PATH_TO_JATS_DATASET/DATASET -Prun=1 -PconsolidateHeader=0
+```
+The header scores are then lower than with consolidation, most visibly on the fields consolidation completes or corrects (authors, title): they are not comparable with the published benchmarks.
 
 ### Pub2TEI-based
 
@@ -241,6 +255,56 @@ A model flavor evaluates a different document shape from the full model, so it e
 The remaining flavors (`blank`, `sdo/3gpp`, `sdo/ietf`) are **not supported** by the end-to-end evaluation — there is no JATS/TEI gold corpus of that document shape — and are rejected with an explicit error rather than silently producing an empty report.
 
 To evaluate a field that is in the catalogue but currently selected by no flavor (for instance `publisher` on citations, or the flat `affiliations` header field), add its name to the relevant list in `EvaluationFieldSelection`; there is no need to touch `FieldSpecification`.
+
+### On GitHub Actions
+
+The workflow `.github/workflows/evaluation.yml` (_End-to-end evaluation_) runs the evaluation of a branch or of a pull request on GitHub-hosted runners, over the full gold corpora, and reports the scores next to those of the default branch. It can be started in two ways:
+
+* manually, from the _Actions_ tab (_Run workflow_) or with `gh workflow run evaluation.yml --ref my-branch -f profile=delft`, on any branch,
+
+* on a pull request, by adding the label `evaluation:crf` or `evaluation:delft`. The run is [without consolidation](#consolidation-and-biblio-glutton) unless the pull request also has the label `evaluation:glutton`. Once the pull request has one of these two labels, each push evaluates it again, with the same labels, except the pushes to a draft pull request (marking it ready for review evaluates it) and the pushes that change nothing but the documentation (`doc/` and the `.md` files) since the latest commit evaluated. The runs of a pull request do not overlap: a new run waits for the one going to finish, and replaces the run already waiting, so that the latest commit is always evaluated. Label the pull request with the corpora to evaluate (see below) to keep these runs short.
+
+On a pull request, the corpora are selected with labels too:
+
+| Label | Corpus |
+|---|---|
+| `corpus:all` | all of them |
+| `corpus:pubmed` | `PMC_sample_1943` |
+| `corpus:biorxiv` | `biorxiv-10k-test-2000` |
+| `corpus:plos` | `PLOS_1000` |
+| `corpus:elife` | `eLife_984` |
+
+Adding `evaluation:crf` or `evaluation:delft` evaluates the corpora labelled on the pull request, or all of them if none is. Adding a `corpus:*` label to a pull request that already has one of these two labels evaluates that corpus alone, with the profile of that label (the pull request must then have only one of them). A `corpus:*` label added before them starts nothing: it only selects the corpora of the next run. The label `evaluation:glutton` works the same way: added to a pull request that has `evaluation:crf` or `evaluation:delft`, it evaluates the labelled corpora again with biblio-glutton; added before, it only switches the next runs to biblio-glutton.
+
+Two profiles are available:
+
+| Profile | Configuration | Comparable to the published benchmarks |
+|---|---|---|
+| `crf` | the default `grobid.yaml`, every model with the engine it ships with | no |
+| `delft` | the `grobid-evaluation.yaml` preset (see [Configuration for evaluation](#configuration-for-evaluation)), the Deep Learning models running on CPU | only with biblio-glutton |
+
+A manual run can also be restricted to one corpus, select a [flavor](#flavors), consolidate with biblio-glutton and set the number of parallel jobs per corpus.
+
+The runners have 4 CPU, no GPU, and stop a job after 6 hours, so each corpus is cut into shards:
+
+1. `predict` — one job per shard downloads its articles from the [Hugging Face dataset](https://huggingface.co/datasets/sciencialab/grobid-evaluation), runs the [pre-flight configuration check](#pre-flight-configuration-check) and processes the PDFs. The shards of a corpus are disjoint and the same on every run.
+
+2. `score` — one job per corpus gathers the TEI and the gold XML of all its shards and runs `jatsEval` with `-Prun=0`, so the report is computed over the whole corpus exactly as by a local run. A corpus is not scored if one of its shards failed.
+
+3. `report` — the reports are compared with those of the latest successful run of the workflow on the default branch with the same profile, flavor and consolidation. The scores are written to the run summary and, for a pull request, posted as a comment. For each corpus, a table gives the micro-average F1 of the header, citation and fulltext per matching, followed by the full report, collapsed, laid out as in the [benchmark pages](benchmarks/Benchmarking.md) (field-level precision, recall, F1 and support per section and matching, then the instance-level results and the citation contexts). Each score that moved is followed by its delta against the baseline, in brackets. The reports are also kept as the artifact `evaluation-reports-<profile>` for 90 days: this artifact is the baseline of the later runs, so **run the workflow on the default branch to set or refresh the baseline**. Without a baseline, the scores are reported without deltas.
+
+#### Consolidation and biblio-glutton
+
+By default, the PDFs are processed without consolidation (`-PconsolidateHeader=0`) and biblio-glutton is neither needed nor checked: a run does not depend on any external service, but its header scores are lower and not comparable with the published benchmarks (see [Without consolidation](#without-consolidation)).
+
+With the label `evaluation:glutton` (or the `consolidation` input set to `glutton`), the header is consolidated with biblio-glutton, which must then be reachable from the runners: the run stops at the pre-flight check otherwise. The instance is the one set in `grobid-evaluation.yaml`, unless the repository variable `GROBID_EVAL_GLUTTON_URL` gives another one. The reports of such a run are kept as the artifact `evaluation-reports-<profile>-glutton`, so it is only ever compared with a baseline run with biblio-glutton as well.
+
+The scripts used by the workflow are under `.github/scripts/evaluation/`. `fetch_dataset.py` can also be used to get a corpus locally, and `compare_reports.py` to compare the reports of two local runs (the `report-*.md` files being matched by name between the two directories):
+
+```bash
+> python .github/scripts/evaluation/fetch_dataset.py --dataset PLOS_1000 --output ABS_PATH_TO/grobid-eval-datasets
+> python .github/scripts/evaluation/compare_reports.py --reports ./reports --baseline ./reports-master
+```
 
 ## Evaluation results
 
