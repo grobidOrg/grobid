@@ -44,6 +44,7 @@ import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.utilities.GrobidConfig;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LanguageUtilities;
+import org.grobid.core.utilities.LayoutTokensUtil;
 import org.grobid.core.utilities.counters.CntManager;
 import org.grobid.core.utilities.counters.impl.CntManagerFactory;
 
@@ -358,6 +359,50 @@ public class HeaderParserTest {
             assertThat("Baglietto should have 1 affiliation", baglietto.getAffiliations(), hasSize(1));
             assertHasAffMarker(baglietto, "3");
         }
+    }
+
+    /**
+     * PLOS and eLife first page: "Editor: Paul Park, University of Michigan, United States of America". The HEADER model
+     * labels the affiliation and address after the editor as &lt;affiliation&gt; and &lt;address&gt;; they must
+     * not be collected with the authors' affiliations, otherwise the linking gives them to an author.
+     */
+    @Test
+    public void testGeneralResultMappingHeader_editorAffiliationNotCollected() {
+        String[][] labelled = {
+                {"Paul", "I-<author>"}, {"Smith", "<author>"},
+                {"Rush", "I-<affiliation>"}, {"University", "<affiliation>"},
+                {"Editor", "I-<other>"}, {":", "<other>"},
+                {"Paul", "I-<editor>"}, {"Park", "<editor>"}, {",", "<editor>"},
+                {"University", "I-<affiliation>"}, {"of", "<affiliation>"}, {"Michigan", "<affiliation>"},
+                {"United", "I-<address>"}, {"States", "<address>"},
+                {"Received", "I-<submission>"}, {"2014", "<submission>"},
+                {"Chicago", "I-<address>"},
+                // eLife: "Reviewing editor: <editor>Peter Rodgers</editor>, <affiliation>eLife,</affiliation>"
+                {"Reviewing", "I-<other>"}, {"editor", "<other>"}, {":", "<other>"},
+                {"Peter", "I-<editor>"}, {"Rodgers", "<editor>"},
+                {",", "I-<other>"},
+                {"eLife", "I-<affiliation>"},
+                {"United", "I-<address>"}, {"Kingdom", "<address>"},
+                {"Copyright", "I-<copyright>"},
+                {"Imperial", "I-<affiliation>"}, {"College", "<affiliation>"}};
+        List<LayoutToken> tokens = new ArrayList<>();
+        StringBuilder result = new StringBuilder();
+        for (String[] tokenLabel : labelled) {
+            if (!tokens.isEmpty()) {
+                tokens.add(new LayoutToken(" "));
+            }
+            tokens.add(new LayoutToken(tokenLabel[0]));
+            result.append(tokenLabel[0]).append("\t").append(tokenLabel[1]).append("\n");
+        }
+
+        BiblioItem biblio = new BiblioItem();
+        biblio.generalResultMappingHeader(result.toString(), tokens);
+
+        List<String> blocks = new ArrayList<>();
+        for (List<LayoutToken> block : biblio.getAffiliationAddresslabeledTokens()) {
+            blocks.add(LayoutTokensUtil.toText(block).trim());
+        }
+        assertThat(blocks, is(Arrays.asList("Rush University", "Chicago", "Imperial College")));
     }
 
     // --- Helper methods ---
