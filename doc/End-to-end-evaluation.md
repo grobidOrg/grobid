@@ -248,7 +248,7 @@ A model flavor evaluates a different document shape from the full model, so it e
 
 | Flavor (`-l` / `-Pflavor`) | header | full text | citations |
 |---|---|---|---|
-| *(none — the full model)* | `title`, `authors`, `first_author`, `affiliation_linked`, `abstract`, `keywords` | all structures | all fields |
+| *(none — the full model)* | `title`, `authors`, `first_author`, `affiliation_linked`, `abstract`, `keywords`, `doi` | all structures | all fields |
 | `article/light` | `title`, `authors`, `first_author` | *not evaluated* | *not evaluated* |
 | `article/light-ref` | `title`, `authors`, `first_author` | *not evaluated* | all fields |
 
@@ -326,6 +326,8 @@ The evaluation covers four different string matching techniques for textual fiel
 * [__Ratcliff/Obershelp similarity__](http://xlinux.nist.gov/dads/HTML/ratcliffObershelp.html)
 
 These matching variants only apply to textual fields, not numerical and dates fields (such as volume, issue, dates, pages).
+
+The header `doi` is compared as an identifier: both values are lower-cased and stripped of a `doi:` prefix, then matched exactly.
 
 
 

@@ -90,7 +90,8 @@ public class FieldSpecificationTest {
                                 "first_author",
                                 "affiliation_linked",
                                 "abstract",
-                                "keywords")));
+                                "keywords",
+                                "doi")));
 
         assertThat(
                 selection.getFulltextFieldNames(),
@@ -194,6 +195,23 @@ public class FieldSpecificationTest {
         }
     }
 
+    /** The header DOI is an identifier, matched exactly rather than as text. */
+    @Test
+    public void testHeaderDoi_isNotTextual() {
+        FieldSpecification doi = FieldSpecification.headerFields(Arrays.asList("doi")).get(0);
+        assertThat(doi.isTextual, is(false));
+    }
+
+    @Test
+    public void testHeaderDoi_identifierNormalization() {
+        assertThat(
+                EvaluationNormalization.identifierNormalization(
+                        EvaluationNormalization.basicNormalization(" DOI: 10.1371/journal.PONE.0012345 ")),
+                is(
+                        EvaluationNormalization.identifierNormalization(
+                                EvaluationNormalization.basicNormalization("10.1371/journal.pone.0012345"))));
+    }
+
     @Test(expected = GrobidException.class)
     public void testHeaderFields_unknownNameThrows() {
         FieldSpecification.headerFields(Arrays.asList("not_a_field"));
@@ -210,7 +228,7 @@ public class FieldSpecificationTest {
      */
     @Test
     public void testCatalogue_retainsCurrentlyUnselectedFields() {
-        assertTrue(FieldSpecification.headerFieldNames().containsAll(Arrays.asList("affiliations", "date", "doi")));
+        assertTrue(FieldSpecification.headerFieldNames().containsAll(Arrays.asList("affiliations", "date")));
         assertTrue(FieldSpecification.citationFieldNames().contains("publisher"));
         assertTrue(
                 FieldSpecification.fulltextFieldNames()
