@@ -2,7 +2,7 @@
 
 ## What Java version do I need for GROBID?
 
-**For building and running**: OpenJDK 21 or higher.
+**For building and running**: OpenJDK 21.
 
 
 ## What is 500 `BAD_INPUT_DATA` or `NO_BLOCKS` error?
@@ -403,5 +403,5 @@ libxml2 is required by pdfalto, and is normally shipped by default on all standa
 
 For minimal or cloud based / container system like Linode, AWS, Docker, etc. _libxml2_ might not be installed by default and should thus be installed as prerequisite.
 
-See [here](https://github.com/kermitt2/grobid/issues/101) the open issue. 
+See [here](https://github.com/kermitt2/grobid/issues/101) the open issue.
 
