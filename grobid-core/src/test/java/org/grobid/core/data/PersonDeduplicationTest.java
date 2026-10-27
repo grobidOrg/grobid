@@ -383,4 +383,58 @@ public class PersonDeduplicationTest {
         assertThat(persons.get(0).getLastName(), is("Kennedy"));
     }
 
+    @Test
+    public void testNoDeduplication_fullFirstNamePrefix() {
+        // "Hao" is a prefix of "Haotian" but both are full first names: two different authors
+        target = new Person();
+        target.setFirstName("Hao");
+        target.setLastName("Wang");
+        target.normalizeName();
+
+        Person other = new Person();
+        other.setFirstName("Haotian");
+        other.setLastName("Wang");
+        other.normalizeName();
+
+        List<Person> persons = new ArrayList<Person>();
+        persons.add(target);
+        persons.add(other);
+
+        target.deduplicate(persons);
+        assertThat(persons.size(), is(2));
+    }
+
+    @Test
+    public void testDeduplication_firstNameHyphenAndAccentVariants() {
+        // the same first name written with and without hyphen, or with and without accent
+        target = new Person();
+        target.setFirstName("Zhen-Liang");
+        target.setLastName("Ni");
+        target.normalizeName();
+
+        Person other = new Person();
+        other.setFirstName("Zhenliang");
+        other.setLastName("Ni");
+        other.normalizeName();
+
+        Person accent = new Person();
+        accent.setFirstName("José");
+        accent.setLastName("Garcia");
+        accent.normalizeName();
+
+        Person noAccent = new Person();
+        noAccent.setFirstName("Jose");
+        noAccent.setLastName("Garcia");
+        noAccent.normalizeName();
+
+        List<Person> persons = new ArrayList<Person>();
+        persons.add(target);
+        persons.add(other);
+        persons.add(accent);
+        persons.add(noAccent);
+
+        target.deduplicate(persons);
+        assertThat(persons.size(), is(2));
+    }
+
 }
