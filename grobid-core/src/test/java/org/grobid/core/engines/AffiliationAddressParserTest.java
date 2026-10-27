@@ -654,19 +654,21 @@ public class AffiliationAddressParserTest {
         // directly follows another marker must close it before opening the next affiliation
         String text = "* Princeton University * * MIT";
         List<LayoutToken> tokenizations = analyzer.tokenizeWithLayoutToken(text);
-        String labelResult = Joiner.on("\n").join(
-                "*\tLINEIN\tI-<marker>",
-                "Princeton\tLINEIN\tI-<institution>",
-                "University\tLINEIN\t<institution>",
-                "*\tLINEIN\tI-<marker>",
-                "*\tLINEIN\tI-<marker>",
-                "MIT\tLINEIN\tI-<institution>");
+        String labelResult = Joiner.on("\n")
+                .join(
+                        "*\tLINEIN\tI-<marker>",
+                        "Princeton\tLINEIN\tI-<institution>",
+                        "University\tLINEIN\t<institution>",
+                        "*\tLINEIN\tI-<marker>",
+                        "*\tLINEIN\tI-<marker>",
+                        "MIT\tLINEIN\tI-<institution>");
 
         String training = this.target.trainingExtraction(labelResult, tokenizations).toString();
 
         javax.xml.parsers.DocumentBuilderFactory factory = javax.xml.parsers.DocumentBuilderFactory.newInstance();
-        org.w3c.dom.Document doc = factory.newDocumentBuilder().parse(
-                new org.xml.sax.InputSource(new java.io.StringReader("<root>" + training + "</root>")));
+        org.w3c.dom.Document doc = factory.newDocumentBuilder()
+                .parse(
+                        new org.xml.sax.InputSource(new java.io.StringReader("<root>" + training + "</root>")));
         org.w3c.dom.NodeList affiliations = doc.getElementsByTagName("affiliation");
         org.w3c.dom.NodeList markers = doc.getElementsByTagName("marker");
         assertThat(affiliations.getLength(), is(3));
