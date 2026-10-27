@@ -1674,22 +1674,13 @@ public class FullTextParser extends AbstractParser {
 
             // HEADER MODEL
             SortedSet<DocumentPiece> documentHeaderParts = doc.getDocumentPart(SegmentationLabels.HEADER);
-            List<LayoutToken> tokenizationsFull = doc.getTokenizations();
             if (documentHeaderParts != null) {
-                List<LayoutToken> headerTokenizations = new ArrayList<LayoutToken>();
-
-                for (DocumentPiece docPiece : documentHeaderParts) {
-                    DocumentPointer dp1 = docPiece.getLeft();
-                    DocumentPointer dp2 = docPiece.getRight();
-
-                    int tokens = dp1.getTokenDocPos();
-                    int tokene = dp2.getTokenDocPos();
-                    for (int i = tokens; i < tokene; i++) {
-                        headerTokenizations.add(tokenizationsFull.get(i));
-                    }
-                }
                 Pair<String, List<LayoutToken>> featuredHeader = parsers.getHeaderParser(flavor).getSectionHeaderFeatured(doc, documentHeaderParts);
                 String header = featuredHeader.getLeft();
+                // the tokens the header features were computed on, as in HeaderParser.processingHeaderSection:
+                // copying the document positions of each header piece drops the last token of the piece
+                // and desynchronises the labels from the tokens when the header has several pieces
+                List<LayoutToken> headerTokenizations = featuredHeader.getRight();
 
                 if ((header != null) && (header.trim().length() > 0)) {
                     // we write the header untagged
