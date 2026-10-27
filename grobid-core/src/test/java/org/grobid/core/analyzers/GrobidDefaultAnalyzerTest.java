@@ -67,8 +67,20 @@ public class GrobidDefaultAnalyzerTest {
     public void testTokenizeShouldSplitAngleBracketsAroundUrl() {
         // <...> around a URL is the RFC 3986 Appendix C convention and is common in
         // reference lists; the brackets must not fuse to the scheme or to the last token
-        assertThat(target.tokenize("<http://example.org/x>"), contains(
-                "<", "http", ":", "/", "/", "example", ".", "org", "/", "x", ">"));
+        assertThat(
+                target.tokenize("<http://example.org/x>"),
+                contains(
+                        "<",
+                        "http",
+                        ":",
+                        "/",
+                        "/",
+                        "example",
+                        ".",
+                        "org",
+                        "/",
+                        "x",
+                        ">"));
     }
 
     @Test
