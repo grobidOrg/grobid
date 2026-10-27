@@ -96,8 +96,9 @@ public class LexiconIntegrationTest {
 
         assertNotNull(inJournalNames);
         assertThat(inJournalNames, hasSize(1));
-        assertThat(inJournalNames.get(0).start, is(2));
-        assertThat(inJournalNames.get(0).end, is(2));
+        // "<" and ">" are token delimiters, so "<p>" is three tokens, not one
+        assertThat(inJournalNames.get(0).start, is(4));
+        assertThat(inJournalNames.get(0).end, is(4));
     }
 
     /**

@@ -98,28 +98,28 @@ public class GrobidAnalyzerTest {
         String input = "오다쇼고(小田省吾), 京城尊都の 由來こ 基の 城壁に就て</title>, 朝鮮 제197호, 1931";
         input = UnicodeUtil.normaliseText(input);
         List<String> tokensStr = target.tokenize(input, new Language("jp"));
-        assertThat(tokensStr, hasSize(23));
+        assertThat(tokensStr, hasSize(25));
 
         List<LayoutToken> tokens = target.tokenizeWithLayoutToken(input, new Language("jp"));
-        assertThat(tokens, hasSize(23));
+        assertThat(tokens, hasSize(25));
 
         tokens = target.tokenizeWithLayoutToken(input, new Language("jp"));
-        assertThat(tokens, hasSize(23));
+        assertThat(tokens, hasSize(25));
 
         tokens = target.tokenizeWithLayoutToken(input, new Language("jp"));
-        assertThat(tokens, hasSize(23));
+        assertThat(tokens, hasSize(25));
 
         tokensStr = target.tokenize(input, new Language("jp"));
         tokensStr = target.retokenizeSubdigits(tokensStr);
-        assertThat(tokensStr, hasSize(25));
+        assertThat(tokensStr, hasSize(27));
 
         tokensStr = target.tokenize(input, new Language("jp"));
         tokens = target.retokenizeSubdigitsWithLayoutToken(tokensStr);
-        assertThat(tokens, hasSize(25));
+        assertThat(tokens, hasSize(27));
 
         tokens = target.tokenizeWithLayoutToken(input, new Language("jp"));
         tokens = target.retokenizeSubdigitsFromLayoutToken(tokens);
-        assertThat(tokens, hasSize(25));
+        assertThat(tokens, hasSize(27));
     }
 
     @Test
