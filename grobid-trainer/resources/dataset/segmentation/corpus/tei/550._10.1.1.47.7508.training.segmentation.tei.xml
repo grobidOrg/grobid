@@ -69,7 +69,7 @@
 
 			Table 3: The BBP algorithm. <lb/></body>
 
-			<div type="annex"> BBP <lb/> Input: training set S of m examples, set of candidate inputs C that map to f?1; +1g, <lb/>number of iterations T <lb/> /* set the initial distribution to be uniform */ <lb/> for all x 2 S <lb/>D1(x) := 1=m <lb/> for t := 1 to T do <lb/> /* add another feature */ <lb/> ht := argmax c i 2C jED t 񮽙f(x) 񮽙 ci(x)]j <lb/> /* determine error of this feature */ <lb/> 񮽙t := 0 <lb/> for all x 2 S <lb/> if ht(x) 6 = f(x) then 񮽙t := 񮽙t + Dt(x) <lb/> /* update the distribution */ <lb/> 񮽙t := 񮽙t = (1 ? 񮽙t) <lb/> for all x 2 S <lb/> if ht(x) = f(x) then <lb/> Dt+1(x) := 񮽙tDt(x) <lb/> else Dt+1(x) := Dt(x) <lb/> /* re-normalize the distribution */ <lb/> Zt := <lb/> P <lb/> x Dt+1(x) <lb/> for all x 2 S <lb/>Dt+1(x) := Dt+1(x)=Zt <lb/> Return: h(x) 񮽙 sign <lb/> 񮽙 T <lb/> X <lb/> i=1 <lb/> ?ln(񮽙i) hi(x) <lb/> ! <lb/></div>
+			<body> BBP <lb/> Input: training set S of m examples, set of candidate inputs C that map to f?1; +1g, <lb/>number of iterations T <lb/> /* set the initial distribution to be uniform */ <lb/> for all x 2 S <lb/>D1(x) := 1=m <lb/> for t := 1 to T do <lb/> /* add another feature */ <lb/> ht := argmax c i 2C jED t 񮽙f(x) 񮽙 ci(x)]j <lb/> /* determine error of this feature */ <lb/> 񮽙t := 0 <lb/> for all x 2 S <lb/> if ht(x) 6 = f(x) then 񮽙t := 񮽙t + Dt(x) <lb/> /* update the distribution */ <lb/> 񮽙t := 񮽙t = (1 ? 񮽙t) <lb/> for all x 2 S <lb/> if ht(x) = f(x) then <lb/> Dt+1(x) := 񮽙tDt(x) <lb/> else Dt+1(x) := Dt(x) <lb/> /* re-normalize the distribution */ <lb/> Zt := <lb/> P <lb/> x Dt+1(x) <lb/> for all x 2 S <lb/>Dt+1(x) := Dt+1(x)=Zt <lb/> Return: h(x) 񮽙 sign <lb/> 񮽙 T <lb/> X <lb/> i=1 <lb/> ?ln(񮽙i) hi(x) <lb/> ! <lb/></body>
 
 			<page> 17 <lb/></page>
 

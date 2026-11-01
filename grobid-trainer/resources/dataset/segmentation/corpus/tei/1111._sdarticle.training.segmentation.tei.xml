@@ -10,7 +10,9 @@
 
 			<front>* Corresponding author. Tel.: +1 204 9757799; <lb/>fax: +1 204 7893910. <lb/>E-mail address: lisa lix@cpe.umanitoba.ca (L.M. Lix). <lb/></front>
 
-			<body>Student&apos;s t-statistic is the conventional approach <lb/>for testing the equality of population means for <lb/>two independent groups on a single outcome vari-<lb/>able when population variances are equal and the <lb/>data are normally distributed. It is well known that <lb/>Student&apos;s t is sensitive to departures from the as-<lb/>sumption of variance homogeneity and that Welch&apos;s <lb/>statistic [5] should be favored when variances are <lb/>unequal. However, because Welch&apos;s statistic is sen-<lb/>sitive to departures from a normal distribution, <lb/>Reed [6] considered a modification when normality <lb/>can not be assumed. A robust test can be obtained <lb/>by trimming/Winsorizing the most extreme obser-<lb/>vations from the tails of a distribution, a solution <lb/>0169-2607/$ -see front matter © 2004 Elsevier Ireland Ltd. All rights reserved. <lb/>doi:10.1016/j.cmpb.2004.09.002 <lb/></body>
+			<body>Student&apos;s t-statistic is the conventional approach <lb/>for testing the equality of population means for <lb/>two independent groups on a single outcome vari-<lb/>able when population variances are equal and the <lb/>data are normally distributed. It is well known that <lb/>Student&apos;s t is sensitive to departures from the as-<lb/>sumption of variance homogeneity and that Welch&apos;s <lb/>statistic [5] should be favored when variances are <lb/>unequal. However, because Welch&apos;s statistic is sen-<lb/>sitive to departures from a normal distribution, <lb/>Reed [6] considered a modification when normality <lb/>can not be assumed. A robust test can be obtained <lb/>by trimming/Winsorizing the most extreme obser-<lb/>vations from the tails of a distribution, a solution <lb/></body>
+
+			<front>0169-2607/$ -see front matter © 2004 Elsevier Ireland Ltd. All rights reserved. <lb/>doi:10.1016/j.cmpb.2004.09.002 <lb/></front>
 
 			<page>130 <lb/></page>
 

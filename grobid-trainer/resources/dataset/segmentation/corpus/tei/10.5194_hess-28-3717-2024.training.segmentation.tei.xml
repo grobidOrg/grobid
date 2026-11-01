@@ -81,7 +81,7 @@
 
         <body>1 Introduction <lb/>The Mediterranean has long been described as a global cy-<lb/>clogenesis hotspot and one of the most sensitive regions in <lb/>terms of global warming (Giorgi and Lionello, 2008; Tuel <lb/>and Eltahir, 2020). This relationship appears intertwined <lb/>since Mediterranean cyclones (MCs) form the bulk of ex-<lb/>treme weather events across the region, which are a manifes-<lb/>tation of the warming climate (Zittis et al., 2022; Hochman <lb/>et al., 2022a). MCs are the primary source of extreme precip-<lb/>itation, winds, temperatures, and dust events. As such, MCs <lb/>pose significant threats to society and challenges to weather <lb/>and climate predictions (Flaounas et al., 2022). The impact <lb/>of under-predicted MCs on the heavily populated Mediter-<lb/>ranean coast, and further inland, is tremendous. Flood and <lb/>wind damage may result in the loss of homes and even <lb/>lives, while better weather predictions may allow for better <lb/>warnings and preparations to reduce costs significantly. On <lb/>climate scales, low confidence in the response of MCs to <lb/>a changing climate may lead to an underestimation of the <lb/></body>
 
-        <note place="footnote">Published by Copernicus Publications on behalf of the European Geosciences Union. <lb/></note>
+        <front>Published by Copernicus Publications on behalf of the European Geosciences Union. <lb/></front>
 
         <page>134 <lb/></page>
 
@@ -273,7 +273,7 @@
 
         <page>157 <lb/></page>
 
-        <div type="annex">Code availability. The code for the SOM classification algo-<lb/>rithm is openly available at https://www.mathworks.com/help/ <lb/>deeplearning/gs/cluster-data-with-a-self-organizingmap.html (last <lb/>access: 29 January 2024). <lb/></div>
+        <div type="availability">Code availability. The code for the SOM classification algo-<lb/>rithm is openly available at https://www.mathworks.com/help/ <lb/>deeplearning/gs/cluster-data-with-a-self-organizingmap.html (last <lb/>access: 29 January 2024). <lb/></div>
 
         <div type="availability">Data availability. The composite cyclone tracks with the resulting <lb/>cluster attribution are available in the supplementary assets of this <lb/>paper. The track labels correspond to the composite cyclone track <lb/>dataset at confidence level 5, made available as a Supplement by <lb/>Flaounas et al. (2023) (&quot;TRACKS_CL5.dat&quot;). <lb/></div>
 

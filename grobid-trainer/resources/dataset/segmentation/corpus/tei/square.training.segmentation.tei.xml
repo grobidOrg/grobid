@@ -4,7 +4,7 @@
 		<fileDesc xml:id="__square"/>
 	</teiHeader>
 	<text xml:lang="en">
-			<note place="headnote">Ocean Dynamics manuscript No. <lb/> (will be inserted by the editor) <lb/></note> 
+			<front>Ocean Dynamics manuscript No. <lb/> (will be inserted by the editor) <lb/></front> 
 			
 			<front> Optimal boundary conditions at the staircase-shaped <lb/>coastlines. <lb/> Eugene Kazantsev <lb/> the date of receipt and acceptance should be inserted later <lb/> Abstract A 4D-Var data assimilation technique is ap-<lb/>plied to the rectangular-box configuration of the NEMO <lb/>in order to identify the optimal parametrization of boun-<lb/>dary conditions at lateral boundaries. The case of the <lb/>staircase-shaped coastlines is studied by rotating the <lb/>model grid around the center of the box. It is shown <lb/>that, in some cases, the formulation of the boundary <lb/>conditions at the exact boundary leads to appearance <lb/>of exponentially growing modes while optimal bound-<lb/>ary conditions allow to correct the errors induced by <lb/>the staircase-like appriximation of the coastline. <lb/> Keywords: Variational Data Assimilation; Bound-<lb/>ary conditions; NEMO model. <lb/></front>
 
