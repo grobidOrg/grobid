@@ -8,7 +8,7 @@
 
 			<body>INTRODUCTION <lb/>The distributed producer/consumer problem consists of a set of producer processes that supply items to a set of <lb/>consumer processes. Each of the processes involved resides on a different machine, with the machines being connected by <lb/>a network. Communication between the producers and consumers is accomplished via message passing. <lb/>One example of a distributed producer/consumer problem comes from the High Energy Physics community. High <lb/>Energy Physics research typically involves particle collision experiments. These experiments generate huge volumes of <lb/>data which are stored on a series of tapes 1 . The data itself consists of hundreds of millions of independent events, where <lb/>each event describes a collision between two or more particles 2 . Since the events are independent, they can be processed <lb/></body>
 
-			<page>1 <lb/></page>
+			<front>1 <lb/></front>
 
 			<listBibl>1 F. J. Rinaldo and M. R. Fausey, "Event Reconstruction in High-Energy Physics," Computer, June 1993, <lb/>p. 68. <lb/>2 Rinaldo and Fausey, p. 68. <lb/></listBibl>
 

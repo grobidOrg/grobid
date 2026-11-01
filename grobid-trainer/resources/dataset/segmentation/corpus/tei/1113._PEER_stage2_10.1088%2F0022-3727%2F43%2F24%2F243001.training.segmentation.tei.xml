@@ -4,7 +4,7 @@
 		<fileDesc xml:id="_1113._PEER_stage2_10.1088_2F0022-3727_2F43_2F24_2F243001"/>
 	</teiHeader>
 	<text xml:lang="en">
-			<page>1 <lb/></page>
+			<front>1 <lb/></front>
 
 			<front>Nonlocal impact ionization and avalanche multiplication <lb/>G J Rees and J P R David <lb/>Department of Electronic and Electrical Engineering <lb/>Sheffield University <lb/>Sheffield S1 3JD <lb/>In memory of Peter Robson, who inspired and <lb/>encouraged scientists and engineers, young and old <lb/>Abstract <lb/>Impact ionization and avalanche multiplication are conventionally described in terms <lb/>of ionization coefficients which depend only upon the local electric field. Such a <lb/>description takes no account of the effect of ionization dead space, within which the <lb/>population distribution, and hence the ionization coefficient of carriers injected cool <lb/>approach equilibrium with the high electric field, inhibiting ionization and reducing <lb/>multiplication. This effect, which increases in importance as device dimensions are <lb/>reduced, clearly benefits such high field devices as transistors by suppressing <lb/>parasitic avalanche multiplication. It also improves the performance of avalanche <lb/>photodiodes (APDs) by reducing the spatial randomness of impact ionization, so that <lb/>the resulting excess multiplication noise is also reduced. It reduces temperature <lb/>sensitivity and may also further enhance APD speed. This article reviews these <lb/>effects and some theoretical models used to describe them. <lb/></front>
 

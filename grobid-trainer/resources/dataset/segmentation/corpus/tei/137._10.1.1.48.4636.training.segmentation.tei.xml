@@ -4,7 +4,7 @@
 		<fileDesc xml:id="_137._10.1.1.48.4636"/>
 	</teiHeader>
 	<text xml:lang="en">
-			<page>1 <lb/></page>
+			<front>1 <lb/></front>
 
 			<front>Products of Domain Models 1 <lb/>Don Batory <lb/>Department of Computer Sciences <lb/>The University of Texas <lb/>Austin, Texas 78712 <lb/>batory@cs.utexas.edu <lb/>Abstract <lb/>We argue that domain models should produce four basic products: identification of reusable soft- <lb/>ware components, definition of software architectures that explain how components can be com- <lb/>posed, a demonstration of architecture scalability, and a direct relationship of these results to <lb/>software generation of target systems. <lb/></front>
 
