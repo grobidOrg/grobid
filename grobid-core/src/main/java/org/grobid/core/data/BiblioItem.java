@@ -4585,9 +4585,11 @@ public class BiblioItem {
         List<TaggingTokenCluster> clusters = clusteror.cluster();
         // the affiliation and address following an editor ("Editor: X, University Y, Country") are the
         // editor's: they are not collected with the authors' affiliations, which would link them to an author.
-        // A separator labelled <other> between them ("Reviewing editor: <editor>X</editor>, <affiliation>...")
-        // keeps the editor context.
+        // Nothing, or a separator labelled <other> made only of punctuation, stands between them
+        // ("Reviewing editor: <editor>X</editor>, <affiliation>..."). An editor has a single affiliation: a
+        // second one ends the editor context, so that an authors' affiliation block following the editor is kept.
         boolean afterEditor = false;
+        boolean editorAffiliationSeen = false;
         for (TaggingTokenCluster cluster : clusters) {
             if (cluster == null) {
                 continue;
@@ -4607,6 +4609,13 @@ public class BiblioItem {
                     && StringUtils.containsOnly(LayoutTokensUtil.toText(clusterTokens), TextUtilities.delimiters);
             if (clusterLabel.equals(TaggingLabels.HEADER_EDITOR)) {
                 afterEditor = true;
+                editorAffiliationSeen = false;
+            } else if (afterEditor && clusterLabel.equals(TaggingLabels.HEADER_AFFILIATION)) {
+                if (editorAffiliationSeen) {
+                    afterEditor = false;
+                } else {
+                    editorAffiliationSeen = true;
+                }
             } else if (!affiliationOrAddress && !separator) {
                 afterEditor = false;
             }
