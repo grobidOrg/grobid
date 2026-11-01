@@ -2,77 +2,23 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title level="a">Apache is a neuronal player in autophagy required for retrograde axonal transport of autophagosomes</title>
+        <title level="a">Pediatric Pneumococcal Conjugate Vaccine and Dosing Schedule Perceptions Among Health Care Providers and Caregivers in Germany, France, Spain, and Greece</title>
         <author>
           <persName>
-            <forename>Barbara</forename>
-            <surname>Parisi</surname>
+            <forename>Johnna E.</forename>
+            <surname>Perdrizet</surname>
           </persName>
         </author>
         <author>
           <persName>
-            <forename>Alessandro</forename>
-            <surname>Esposito</surname>
+            <forename>Mark H.</forename>
+            <surname>Rozenbaum</surname>
           </persName>
         </author>
         <author>
           <persName>
-            <forename>Enrico</forename>
-            <surname>Castroflorio</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Mattia</forename>
-            <surname>Bramini</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Sara</forename>
-            <surname>Pepe</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Antonella</forename>
-            <surname>Marte</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Fabrizia C.</forename>
-            <surname>Guarnieri</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Flavia</forename>
-            <surname>Valtorta</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Pietro</forename>
-            <surname>Baldelli</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Fabio</forename>
-            <surname>Benfenati</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Anna</forename>
-            <surname>Fassio</surname>
-          </persName>
-        </author>
-        <author>
-          <persName>
-            <forename>Silvia</forename>
-            <surname>Giovedì</surname>
+            <forename>Matthew J.</forename>
+            <surname>Heffler</surname>
           </persName>
         </author>
       </titleStmt>
@@ -80,19 +26,19 @@
         <edition>
           <date when="2025-10-27T09:36:32.893074Z">27.10.2025 09:36:32</date>
           <title>grobid.training.segmentation [default]</title>
-          <idno type="fileref">10.1007$1$s00018-024-05441-7</idno>
+          <idno type="fileref">10.1007$1$s40121-024-01022-0</idno>
         </edition>
       </editionStmt>
       <publicationStmt>
         <publisher>Springer Science and Business Media LLC</publisher>
         <availability>
-          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+          <licence target="https://creativecommons.org/licenses/by-nc/4.0/"/>
         </availability>
         <date type="publication">2024</date>
-        <idno type="DOI">10.1007/s00018-024-05441-7</idno>
+        <idno type="DOI">10.1007/s40121-024-01022-0</idno>
       </publicationStmt>
       <sourceDesc>
-        <bibl>Barbara Parisi, Alessandro Esposito, Enrico Castroflorio, Mattia Bramini, Sara Pepe, Antonella Marte, Fabrizia C. Guarnieri, Flavia Valtorta, Pietro Baldelli, Fabio Benfenati, Anna Fassio, Silvia Giovedì. (2024). Apache is a neuronal player in autophagy required for retrograde axonal transport of autophagosomes. Cellular and Molecular Life Sciences, 81(1), None. DOI: 10.1007/s00018-024-05441-7</bibl>
+        <bibl>Johnna E. Perdrizet, Mark H. Rozenbaum, Matthew J. Heffler. (2024). Pediatric Pneumococcal Conjugate Vaccine and Dosing Schedule Perceptions Among Health Care Providers and Caregivers in Germany, France, Spain, and Greece. Infectious Diseases and Therapy, 13(9), 2017-2034. DOI: 10.1007/s40121-024-01022-0</bibl>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
