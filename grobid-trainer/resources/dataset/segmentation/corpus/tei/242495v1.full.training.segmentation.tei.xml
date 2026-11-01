@@ -4,7 +4,7 @@
 		<fileDesc xml:id="_0"/>
 	</teiHeader>
 	<text xml:lang="en">
-			<page>1 <lb/></page>
+			<front>1 <lb/></front>
 
 			<front>Viral gain-of-function experiments uncover residues under diversifying selection <lb/>in nature <lb/>Rohan Maddamsetti 1 , Daniel T. Johnson 2 , Stephanie J. Spielman 3 , Katherine L. Petrie 2,4 <lb/>Debora S. Marks 1 , Justin R. Meyer 2* <lb/>1 -Department of Systems Biology, Harvard Medical School, Boston, MA, USA <lb/>2 -Division of Biological Sciences, University of California San Diego, La Jolla, CA, USA <lb/>3 -Institute for Genomics and Evolutionary Medicine, Temple University, Philadelphia, PA, <lb/>USA <lb/>4 -Earth-Life Science Institute, Tokyo Institute of Technology, Japan <lb/>* -jrmeyer@ucsd.edu <lb/>Viral gain-of-function mutations are commonly observed in the laboratory; however, it is <lb/>unknown whether those mutations also evolve in nature. We identify two key residues in <lb/>the host recognition protein of bacteriophage l that are necessary to exploit a new <lb/>receptor; both residues repeatedly evolved among homologs from environmental samples. <lb/>Our results provide evidence for widespread host-shift evolution in nature and a proof of <lb/>concept for integrating experiments with genomic epidemiology. <lb/></front>
 
