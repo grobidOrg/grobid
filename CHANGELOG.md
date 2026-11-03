@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+- Header `doi` field in the end-to-end evaluation of the full model. It is part of the header instance-level results, which are therefore not comparable with the benchmarks published before it was evaluated
+
 ### Changed
 - Deep Learning models now run on PyTorch: DeLFT 0.4.6 (TensorFlow 2.17) → DeLFT 1.x (PyTorch 2.11), installed from a pinned DeLFT commit (`DELFT_REF` in `Dockerfile.delft`) until the next DeLFT release. TensorFlow is no longer needed; Python 3.10–3.13 is supported; GPU builds use CUDA 12.8, bundled with the PyTorch wheel.
 - All shipped DeLFT models retrained with DeLFT 1.x, with `glove-840B` embeddings: `segmentation`, `header`, `reference-segmenter`, `name-header`, `name-citation`, `date`, `figure`, `table`, `affiliation-address`, `citation`, `funding-acknowledgement` (`BidLSTM_CRF_FEATURES`). Weights are stored as `model.safetensors`.
