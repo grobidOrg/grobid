@@ -38,6 +38,7 @@
                         </affiliation>
 
                         <affiliation>
+                  <!-- check: unmarked footnote naming two institutions (DAMO Academy and NTU) in one printed line; kept one element per printed block, labels unchanged -->
                   <orgName type="institution">DAMO Academy</orgName>      
                            and
 							<orgName type="institution">Nanyang Technological<lb/> University</orgName>.

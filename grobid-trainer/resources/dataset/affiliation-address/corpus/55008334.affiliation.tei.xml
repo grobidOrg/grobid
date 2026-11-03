@@ -12,7 +12,7 @@
 							<orgName type="department">Faculty of Engineering</orgName>,
 							<orgName type="institution">Gifu University</orgName>,
 							<address>
-								<settlement>Yanagido</settlement>,
+								<addrLine>Yanagido</addrLine>,
 								<settlement>Gifu</settlement>
 								<postCode>501-1193</postCode>,
 								<country>Japan</country>
@@ -23,8 +23,8 @@
 							<marker>Ã</marker>
 							<orgName type="institution">Daikin Industries Ltd.</orgName>,
 							<address>
-								<settlement>Nishihitotsuya</settlement>,
-								<region>Settsu</region>
+								<addrLine>Nishihitotsuya</addrLine>,
+								<settlement>Settsu</settlement>
 								<postCode>566-8585</postCode>,
 								<country>Japan</country>
 							</address>

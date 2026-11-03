@@ -19,7 +19,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>b</marker>
-							<orgName type="laboratory">Division of Allergy and Immunology</orgName>,
+							<orgName type="department">Division of Allergy and Immunology</orgName>,
 							<orgName type="department">Department of Pediatrics</orgName>,
 							<orgName type="institution">University of Arkansas for Medical Sciences</orgName> and
 							<orgName type="institution">Arkansas Children&apos;s Hospital</orgName>,
@@ -41,10 +41,10 @@
 						</affiliation>
 						<affiliation>
 							<marker>d</marker>
-							<orgName type="institution">Elliot and Roslyn Jaffe Food Allergy Institute</orgName>,
-							<orgName type="laboratory">Division of Allergy and Immunology</orgName>,
+							<orgName type="department">Elliot and Roslyn Jaffe Food Allergy Institute</orgName>,
+							<orgName type="department">Division of Allergy and Immunology</orgName>,
 							<orgName type="department">Department of Pediatrics</orgName>,
-							<orgName type="department">Mount Sinai School of Medicine</orgName>,
+							<orgName type="institution">Mount Sinai School of Medicine</orgName>,
 							<address>
 								<settlement>New York</settlement>,
 								<region>New York</region>;
@@ -52,7 +52,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>e</marker>
-							<orgName type="laboratory">Division of Allergy and Immunology</orgName>,
+							<orgName type="department">Division of Allergy and Immunology</orgName>,
 							<orgName type="department">Department of Pediatrics</orgName>,
 							<orgName type="institution">Johns Hopkins University Medical Center</orgName>,
 							<address>
@@ -62,7 +62,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>f</marker>
-							<orgName type="laboratory">Division of Allergy and Immunology</orgName>,
+							<orgName type="department">Division of Allergy and Immunology</orgName>,
 							<orgName type="department">Cincinnati Children&apos;s Hospital Medical Center</orgName>,
 							<orgName type="institution">University of Cincinnati</orgName>,
 							<address>

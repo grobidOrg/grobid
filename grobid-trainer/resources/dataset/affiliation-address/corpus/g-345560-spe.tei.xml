@@ -12,7 +12,9 @@
 								<orgName type="department">Department of Physics and Astronomy</orgName>, 
 								<address>	
 									<addrLine>Station B 1807</addrLine>, 
-									<orgName type="institution">Vanderbilt University</orgName>,<lb/>
+								</address>
+								<orgName type="institution">Vanderbilt University</orgName>,<lb/>
+								<address>
 									<settlement>Nashville</settlement>,
 									<region type="state" n="TN">TN</region>
 									<postCode>37235</postCode>,

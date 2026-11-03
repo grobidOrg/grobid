@@ -11,12 +11,12 @@
 							<orgName type="department">Department of Plant Cell Biotechnology</orgName>,
 							<orgName type="institution">Central Food Technological Research Institute</orgName>
 							[
-							<orgName type="laboratory">Constituent laboratory of CSIR</orgName>
+							Constituent laboratory of CSIR
 							<lb/> 
 							(
 							<orgName type="institution">Council of Scientific and Industrial Research</orgName>)],
 							<address>
-								<addrLine>Mysore-570 020</addrLine>,
+								<settlement>Mysore</settlement>-<postCode>570 020</postCode>,
 								<country>India</country>.
 							</address>
 						</affiliation>

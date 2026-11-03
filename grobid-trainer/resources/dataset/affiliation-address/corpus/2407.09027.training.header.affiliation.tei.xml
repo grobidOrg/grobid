@@ -23,8 +23,8 @@
 							<orgName type="department">Instituto de Física</orgName>,
 							<orgName type="institution">Universidade Federal de Goiás</orgName>,
 							<address>
-								<addrLine>74.001-970</addrLine>,
-								<settlement>Goiânia -GO</settlement>,
+								<postCode>74.001-970</postCode>,
+								<settlement>Goiânia</settlement> -<region>GO</region>,
 								<country>Brazil</country>
 							<lb/>
 							</address>
@@ -38,7 +38,7 @@
 							<address>
 								<settlement>Jinhua</settlement>
 								<postCode>321004</postCode>,
-								<settlement>Zhejiang</settlement>,
+								<region>Zhejiang</region>,
 								<country>P. R. China</country>
 							</address>
 						</affiliation>

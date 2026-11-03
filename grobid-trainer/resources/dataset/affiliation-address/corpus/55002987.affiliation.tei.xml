@@ -25,7 +25,7 @@
 							<orgName type="institution">The Scripps Research Institute</orgName>,
 							<address>
 								<addrLine>10550 North Torrey Pines Road</addrLine>,
-								<addrLine>La Jolla</addrLine>,
+								<settlement>La Jolla</settlement>,
 								<region>CA</region>
 								<postCode>92037</postCode>,
 								<country>USA</country>

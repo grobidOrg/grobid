@@ -10,10 +10,9 @@
 					<analytic>
 						<author>
 							<affiliation>
-								<orgName type="institution">Univ. Nacional del Centro de la Provincia</orgName>,
-								<address>
-                                    <settlement>Buenos Aires</settlement>;
-								</address>
+								<!-- check: "Buenos Aires" most likely completes the name Univ. Nacional del Centro de la Provincia de Buenos Aires (UNICEN, Tandil) rather than naming the city; folded into the institution, the former address element removed -->
+								<orgName type="institution">Univ. Nacional del Centro de la Provincia,
+                                    Buenos Aires</orgName>;
 							</affiliation>
 						</author>			
 					</analytic>

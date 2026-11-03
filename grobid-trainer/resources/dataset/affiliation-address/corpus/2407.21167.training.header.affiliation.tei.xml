@@ -69,8 +69,8 @@
 							<address>
 								<addrLine>Calle Vía Láctea s/n</addrLine>,
 								<postCode>38205</postCode>
-								<addrLine>La Laguna</addrLine>,
-								<settlement>Tenerife</settlement>,
+								<settlement>La Laguna</settlement>,
+								<region>Tenerife</region>,
 								<country>Spain</country>
 							<lb/>
 							</address>
@@ -248,11 +248,9 @@
 							
 						<affiliation>
 							<marker>18</marker>
-							<orgName type="department">Science Fellow</orgName>,
-							<address>
-								<settlement>Gemini North</settlement>
+							Science Fellow,
+							<orgName type="institution">Gemini North</orgName>
 							<lb/>
-							</address>
 						</affiliation>
 
 							
@@ -338,9 +336,9 @@
 						<affiliation>
 							<marker>25</marker>
 							<orgName type="department">Department of Physics &amp; Astronomy</orgName>,
-							<orgName type="institution">The University of California</orgName>,
+							<orgName type="institution">The University of California,
+							Irvine</orgName>,
 							<address>
-								<settlement>Irvine</settlement>,
 								<settlement>Irvine</settlement>,
 								<region>CA</region>
 								<postCode>92697</postCode>,
@@ -394,7 +392,7 @@
 							
 						<affiliation>
 							<marker>29</marker>
-							<orgName type="institution">NASA Hubble</orgName>
+							NASA Hubble
 						</affiliation>
 							
 
@@ -414,8 +412,8 @@
 							
 						<affiliation>
 							<marker>31</marker>
-							<orgName type="department">Center for Astrophysics</orgName>
-							<orgName type="institution">| Harvard &amp; Smithsonian</orgName>,
+							<orgName type="institution">Center for Astrophysics
+							| Harvard &amp; Smithsonian</orgName>,
 							<address>
 								<addrLine>60 Garden Street</addrLine>,
 								<settlement>Cambridge</settlement>,
@@ -428,9 +426,9 @@
 							
 						<affiliation>
 							<marker>32</marker>
-							<orgName type="institution">University of California Observatories University of California</orgName>,
-							<address>
-								<addrLine>Santa Cruz 1156 High St</addrLine>,
+							<orgName type="institution">University of California Observatories</orgName> <orgName type="institution">University of California,
+							Santa Cruz</orgName> <address>
+								<addrLine>1156 High St</addrLine>,
 								<settlement>Santa Cruz</settlement>,
 								<region>CA</region>
 								<postCode>95064</postCode>
@@ -530,10 +528,10 @@
 			<affiliation>
 			<marker>40 </marker>
 		<orgName type="department">Department of Astronomy &amp; Astrophysics</orgName>,
-		<orgName type="laboratory">525 Davey Laboratory</orgName>, 
+		<address><addrLine>525 Davey Laboratory</addrLine></address>, 
 		<orgName type="institution">Penn State</orgName>, 
 			<address>
-			<addrLine>University Park</addrLine>, 
+			<settlement>University Park</settlement>, 
 			<region>PA</region>, 
 			<postCode>16802</postCode>, 
 			<country>USA<lb/></country>
@@ -544,10 +542,10 @@
 		 <affiliation>
 		<marker>41 </marker>
 		<orgName type="department">Center for Exoplanets and Habitable Worlds</orgName>, 
-		<orgName type="laboratory">525 Davey Laboratory</orgName>, 
+		<address><addrLine>525 Davey Laboratory</addrLine></address>, 
 		<orgName type="institution">Penn State</orgName>, 
 		<address>
-		<addrLine>University Park</addrLine>, 
+		<settlement>University Park</settlement>, 
 		<region>PA</region>, 
 		<postCode>16802</postCode>, 
 		<country>USA<lb/></country>
@@ -558,10 +556,10 @@
 		<affiliation>
 		<marker>42 </marker>
 		<orgName type="department">Penn State Extraterrestrial Intelligence Center</orgName>, 
-		<orgName type="laboratory">525 Davey Laboratory</orgName>, 
+		<address><addrLine>525 Davey Laboratory</addrLine></address>, 
 		<orgName type="institution">Penn State</orgName>, 
 		<address>
-		<addrLine>University Park</addrLine>, 
+		<settlement>University Park</settlement>, 
 		<region>PA</region>, 
 		<postCode>16802</postCode>, 
 		<country>USA<lb/></country>
@@ -572,8 +570,8 @@
 		<affiliation>
 		<marker>43 </marker>
 	 <orgName type="institution">Centro de Astrobiología (CSIC-INTA)</orgName>,
-	<orgName type="department">ESAC campus</orgName>, 
 		<address>
+		<addrLine>ESAC campus</addrLine>, 
 		<addrLine>Camino Bajo del Castillo s/n</addrLine>,
 		<postCode>28692</postCode>
 		<settlement>Villanueva de la Cañada</settlement>, 
@@ -586,8 +584,8 @@
 		<affiliation>
 		<marker>44 </marker>
 	<orgName type="institution">Institut de Ciències de l'Espai (ICE, CSIC)</orgName>,
-	<orgName type="department">Campus UAB</orgName>, 
 		<address>
+		<addrLine>Campus UAB</addrLine>, 
 		<addrLine>Can Magrans sn</addrLine>, 
 		<postCode>08193</postCode>
 		<settlement>Bellaterra</settlement>, 
@@ -601,7 +599,7 @@
 		<orgName type="institution">Institut d'Estudis Espacials de Catalunya (IEEC)</orgName>, 
 		<address>
 		<postCode>08034</postCode>
-		<region>Barcelona</region>, 
+		<settlement>Barcelona</settlement>, 
 		<country>Spain<lb/></country>
 		</address>
 		</affiliation>
@@ -638,7 +636,7 @@
 	<orgName type="institution">Hamburger Sternwarte</orgName>, 
 	<address>
 	<addrLine>Gojenbergsweg 112</addrLine>, 
-	<postCode>D-21029 Hamburg</postCode>,
+	<postCode>D-21029</postCode> <settlement>Hamburg</settlement>,
 	<country>Germany<lb/></country>
 	</address>
 	 </affiliation>
@@ -646,13 +644,13 @@
 
 	<affiliation>
 	<marker>49</marker>
-	<orgName type="department">Departamento de Física de la Tierra y Astrofísica &amp; </orgName>
-	<orgName type="institution">IPARCOS-UCM (Instituto de Física de Partículas y del Cosmos de la UCM),<lb/></orgName>
+	<orgName type="department">Departamento de Física de la Tierra y Astrofísica</orgName> &amp; 
+	<orgName type="institution">IPARCOS-UCM (Instituto de Física de Partículas y del Cosmos de la UCM)</orgName>,<lb/>
 	<orgName type="department">Facultad de Ciencias Físicas</orgName>, 
 	<orgName type="institution">Universidad Complutense de Madrid</orgName>,
 	<address>
 	<postCode>28040</postCode>
-	<region>Madrid</region>,
+	<settlement>Madrid</settlement>,
 	<country>Spain<lb/></country>
 	</address>
 	</affiliation>
@@ -691,7 +689,9 @@
 	<postCode>94043</postCode>
 	<country>USA</country>/
 	</address>
+	 </affiliation>
 
+	<affiliation>
 	<orgName type="institution">NASA Ames Research Center</orgName>, 
     <address>
 	<settlement>Moffett Field</settlement>, 
@@ -720,7 +720,7 @@
 	<orgName type="department">Department of Earth, Atmospheric and Planetary Science</orgName>, 
 	<orgName type="institution">Massachusetts Institute of Technology</orgName>, 
 	<address>
-	<addrLine>77 Massachusetts Avenue,<lb/></addrLine>
+	<addrLine>77 Massachusetts Avenue</addrLine>,<lb/>
 	<settlement>Cambridge</settlement>, 
 	<region>MA</region>
 	<postCode>02139</postCode>, 
@@ -743,7 +743,7 @@
 
 	<affiliation>
 	<marker>56</marker>
-	<orgName type="department">Department of Physics and Kavli Institute for Astrophysics and Space Research</orgName>, 
+	<orgName type="department">Department of Physics</orgName> and <orgName type="department">Kavli Institute for Astrophysics and Space Research</orgName>, 
 	<orgName type="institution">Massachusetts Institute of Technology</orgName>, 
 	<address>
 	<settlement>Cambridge</settlement>,
@@ -808,7 +808,7 @@
 	<marker>61</marker>
 	<orgName type="institution">NASA Ames Research Center</orgName>, 
 	<address>
-	<addrLine>Moffett Field</addrLine>, 
+	<settlement>Moffett Field</settlement>, 
 	<region>CA</region>
 	<postCode>94035</postCode>, 
 	<country>USA<lb/></country>
@@ -830,12 +830,12 @@
 							
 	<affiliation>
 	<marker>†</marker>
-	<orgName type="institution">NSF Graduate Research Fellow<lb/></orgName>
+	NSF Graduate Research Fellow<lb/>
 	</affiliation>		
 							
 	<affiliation>
 	<marker>‡</marker>
-	<orgName type="institution">NASA FINESST Fellow</orgName>
+	NASA FINESST Fellow
 	</affiliation> 
 							
 

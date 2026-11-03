@@ -11,8 +11,8 @@
 							<marker>1</marker>
 							<orgName type="department">Department of Entomology</orgName>,
 							<orgName type="institution">The University of Georgia</orgName>,
-                            <orgName type="department">Griffin Campus</orgName>,
 							<address>
+                            	<addrLine>Griffin Campus</addrLine>,
 								<settlement>Griffin</settlement>,
 								<region>GA</region>,
                                 <country>United States of<lb/> Ameica</country>,
@@ -22,8 +22,8 @@
 							<marker>2</marker>
 							<orgName type="department">Department of Entomology</orgName>,
 							<orgName type="institution">The University of Georgia</orgName>,
-							<orgName type="department">Athens Campus</orgName>,
 							<address>
+								<addrLine>Athens Campus</addrLine>,
 								<settlement>Athens</settlement>,
 								<region>GA</region>,
 								<country>United<lb/> States of Ameica</country>

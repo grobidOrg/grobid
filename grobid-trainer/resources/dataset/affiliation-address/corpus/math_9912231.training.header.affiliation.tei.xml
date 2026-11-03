@@ -12,7 +12,7 @@
 							<address>
 								<postCode>141980</postCode>
 								<settlement>Dubna</settlement>,
-								<settlement>Moscow Region &amp; </settlement>
+								<region>Moscow Region</region> &amp; 
 								<country>Russia</country>
 							<lb/>
 							</address>
@@ -39,8 +39,8 @@
 							<address>
 								<postCode>141980</postCode>
 								<settlement>Dubna</settlement>,
-								<settlement>Moscow</settlement>
-								<country>Region &amp; Russia</country>
+								<region>Moscow
+								Region</region> &amp; <country>Russia</country>
 							<lb/>
 							</address>
 						</affiliation>

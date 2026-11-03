@@ -7,7 +7,7 @@
 
 						<affiliation>
 							<orgName type="laboratory">Electron Transport Research Group</orgName> of the
-							<orgName type="department">Hungarian Academy of Science</orgName> and
+							<orgName type="institution">Hungarian Academy of Science</orgName> and
 							<orgName type="department">Department of Physics</orgName>,
 							<lb/>
 							<orgName type="institution">Budapest University of Technology and Economics</orgName>,
@@ -20,7 +20,7 @@
                         </affiliation>
 
                         <affiliation>
-							<orgName type="institution">NSRIM</orgName>,
+							<orgName type="department">NSRIM</orgName>,
 							<orgName type="institution">University of Nijmegen</orgName>,
 							<address>
 								<addrLine>Toernooiveld 1</addrLine>,

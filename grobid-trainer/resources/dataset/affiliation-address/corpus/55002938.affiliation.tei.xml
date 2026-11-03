@@ -12,8 +12,10 @@
 							<orgName type="institution">University of Alabama at Birmingham</orgName>,
 							<address>
 								<settlement>Birmingham</settlement>,
-								<settlement>Alabama</settlement>, and
+								<region>Alabama</region>, and
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Department of Cell Biology and<lb/> Physiology</orgName>,
 							<orgName type="institution">University of Pittsburgh School of Medicine</orgName>,
 							<address>

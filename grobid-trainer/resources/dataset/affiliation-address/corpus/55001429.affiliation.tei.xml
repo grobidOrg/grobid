@@ -10,7 +10,9 @@
 						<affiliation>
 							<orgName type="laboratory">Information Security Group</orgName>
 							<lb/>
-							<orgName type="department">Department of Mathematics<lb/> Royal Holloway</orgName>,
+							<orgName type="department">Department of Mathematics</orgName><lb/>
+							<!-- check: Royal Holloway is a constituent college of the University of London but a de facto independent university; split off from the department and typed institution -->
+							<orgName type="institution">Royal Holloway</orgName>,
 							<orgName type="institution">University of London</orgName>
 						</affiliation>
 

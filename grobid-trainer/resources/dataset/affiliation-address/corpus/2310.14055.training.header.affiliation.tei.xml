@@ -8,7 +8,7 @@
 						<affiliation>
 							<marker>*</marker>
 							<orgName type="laboratory">UMPA</orgName>,
-							<orgName type="institution">ENS Lyon and CNRS</orgName>,
+							<orgName type="institution">ENS Lyon</orgName> and <orgName type="institution">CNRS</orgName>,
 							<address>
 								<country>France</country>.
 							</address>
@@ -17,7 +17,7 @@
 						<affiliation>
 							<marker>†</marker>
 							<orgName type="laboratory">UMPA</orgName>,
-							<orgName type="institution">ENS Lyon and CNRS</orgName>,
+							<orgName type="institution">ENS Lyon</orgName> and <orgName type="institution">CNRS</orgName>,
 							<address>
 								<country>France</country> and
 							</address>
@@ -37,7 +37,7 @@
 							<orgName type="laboratory">IdePHICS laboratory</orgName>,
 							<orgName type="institution">École Fédérale Polytechnique de Lausanne</orgName>,
 							<address>
-								<country>Switzerland.</country>
+								<country>Switzerland</country>.
 							</address>
 						</affiliation>
 							
@@ -55,7 +55,7 @@
 							<orgName type="laboratory">SPOC laboratory</orgName>,
 							<orgName type="institution">École Fédérale Polytechnique de Lausanne</orgName>,
 							<address>
-								<country>Switzerland.</country>
+								<country>Switzerland</country>.
 							</address>
 						</affiliation>
 

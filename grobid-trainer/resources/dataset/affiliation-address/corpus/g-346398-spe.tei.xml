@@ -12,8 +12,8 @@
 								<orgName type="institution">Brookhaven National Laboratory</orgName>,
 								<address>
 									<postBox>P.O. Box 5000</postBox>,
-									<addrLine>Upton</addrLine>,
-									<settlement>NY</settlement>
+									<settlement>Upton</settlement>,
+									<region>NY</region>
 									<postCode>11973<lb/></postCode>					
 								</address>
 							</affiliation>

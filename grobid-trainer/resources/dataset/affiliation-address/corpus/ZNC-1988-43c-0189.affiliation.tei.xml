@@ -8,7 +8,7 @@
 						<author>
 
 						<affiliation>
-							<orgName type="institution">LB Biotechnologie der Universität</orgName>,
+							<orgName type="department">LB Biotechnologie der Universität</orgName>,
 							<address>
 								<addrLine>Paul-Ehrlich-Straße 23</addrLine>,
 								<postCode>D-6750</postCode>
@@ -18,8 +18,8 @@
 							</address>
 						</affiliation>	
 						<affiliation>	
-							<orgName type="department">Institut für Organische Chemie und Biochemie</orgName> der
-							<orgName type="institution">Universität</orgName>,
+							<orgName type="department">Institut für Organische Chemie und Biochemie der
+							Universität</orgName>,
 							<address>
 								<addrLine>Gerhard-Domagk-Straße 1</addrLine>,
 								<postCode>D-5300</postCode>
@@ -30,8 +30,8 @@
 						</affiliation>	
 						<affiliation>	
 							
-							<orgName type="institution">Mineralogisches Institut</orgName> der
-							<orgName type="institution">Universität</orgName>,
+							<orgName type="department">Mineralogisches Institut der
+							Universität</orgName>,
 							<address>
 								<addrLine>Poppelsdorfer Schloß</addrLine>,
 								<postCode>D-5300</postCode>

@@ -1,0 +1,515 @@
+
+> Configure project :
+Checking git under /data/workspace/lfoppiano/grobid/evaluation/grobid-eval-pytorch-master
+Current Git revision: 0.9.1-71-g8eaba3ef0
+
+> Task :grobid-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :grobid-core:compileKotlin UP-TO-DATE
+> Task :grobid-core:compileJava UP-TO-DATE
+> Task :grobid-core:processResources UP-TO-DATE
+> Task :grobid-core:classes UP-TO-DATE
+> Task :grobid-core:jar UP-TO-DATE
+> Task :grobid-trainer:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :grobid-trainer:compileKotlin NO-SOURCE
+> Task :grobid-trainer:compileJava UP-TO-DATE
+> Task :grobid-trainer:processResources UP-TO-DATE
+> Task :grobid-trainer:classes UP-TO-DATE
+
+> Task :grobid-trainer:jatsEval
+22:36:18,567 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found logback-core version 1.5.38
+22:36:18,570 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4c583ecf - No custom configurators were discovered as a service.
+22:36:18,571 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4c583ecf - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+22:36:18,573 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4c583ecf - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+22:36:18,584 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+22:36:18,593 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/data/workspace/lfoppiano/grobid/evaluation/grobid-eval-pytorch-master/grobid-trainer/build/resources/main/logback.xml]
+22:36:18,838 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Scan attribute not set or set to unrecognized value.
+22:36:18,853 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+22:36:18,853 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+22:36:18,866 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+22:36:18,949 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - NOTE: Writing to the console can be slow. Try to avoid logging to the 
+22:36:18,949 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+22:36:18,949 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+22:36:18,950 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [rollingFile]
+22:36:18,950 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+22:36:18,969 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1764696127 - setting totalSizeCap to 100 MB
+22:36:18,969 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1764696127 - No compression will be used
+22:36:18,974 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy@1764696127 - Will use the pattern ../logs/grobid-trainer-%d{yyyy-MM-dd}.log for the active file
+22:36:19,031 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is 'yyyy-MM-dd' from file name pattern '../logs/grobid-trainer-%d{yyyy-MM-dd}.log'.
+22:36:19,031 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+22:36:19,032 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to 2026-10-17T15:38:39.163Z
+22:36:19,039 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[rollingFile] - A triggering policy of type TimeBasedRollingPolicy was already set.
+22:36:19,039 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[rollingFile] - Note that TimeBasedRollingPolicy doubles as a RollingPolicy
+22:36:19,039 |-WARN in ch.qos.logback.core.rolling.RollingFileAppender[rollingFile] - See also https://logback.qos.ch/codes.html#rfa_reset_rp_or_tp
+22:36:19,039 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+22:36:19,040 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[rollingFile] - Active log file name: ../logs/grobid-trainer.log
+22:36:19,040 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[rollingFile] - File property is set to [../logs/grobid-trainer.log]
+22:36:19,042 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to ERROR
+22:36:19,042 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+22:36:19,043 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [rollingFile] to Logger[ROOT]
+22:36:19,043 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@55182842 - End of configuration.
+22:36:19,044 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@3270d194 - Registering current configuration as safe fallback point
+22:36:19,053 |-INFO in ch.qos.logback.classic.util.ContextInitializer@4c583ecf - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 471 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+Flavor was not specified. Using default Grobid process. 
+>>>>>>>> GROBID_HOME=/data/workspace/lfoppiano/grobid/evaluation/grobid-eval-pytorch-master/grobid-trainer/../grobid-home
+Running on cpu
+Loading weights from /data/workspace/lfoppiano/grobid/evaluation/grobid-eval-pytorch-master/grobid-trainer/../grobid-home/models/affiliation-address-BidLSTM_CRF_FEATURES/model_weights.pt
+Model loaded: BidLSTM_CRF_FEATURES
+Parameters: 405,929
+Loading weights from /data/workspace/lfoppiano/grobid/evaluation/grobid-eval-pytorch-master/grobid-trainer/../grobid-home/models/header-BidLSTM_CRF_FEATURES/model_weights.pt
+Model loaded: BidLSTM_CRF_FEATURES
+Parameters: 414,998
+Loading weights from /data/workspace/lfoppiano/grobid/evaluation/grobid-eval-pytorch-master/grobid-trainer/../grobid-home/models/citation-BidLSTM_CRF_FEATURES/model_weights.pt
+Model loaded: BidLSTM_CRF_FEATURES
+Parameters: 453,544
+Loading weights from /data/workspace/lfoppiano/grobid/evaluation/grobid-eval-pytorch-master/grobid-trainer/../grobid-home/models/reference-segmenter-BidLSTM_CRF_FEATURES/model_weights.pt
+Model loaded: BidLSTM_CRF_FEATURES
+Parameters: 404,642
+Loading weights from /data/workspace/lfoppiano/grobid/evaluation/grobid-eval-pytorch-master/grobid-trainer/../grobid-home/models/funding-acknowledgement-BidLSTM_CRF_FEATURES/model_weights.pt
+Model loaded: BidLSTM_CRF_FEATURES
+Parameters: 404,990
+
+
+
+-------------> GROBID failed on 0 PDF
+
+984 PDF files processed in 1520.141 seconds, 1.5448587398373985 seconds per PDF file
+
+
+
+
+
+
+
+Evaluation metrics produced in 320.321 seconds
+
+======= Header metadata ======= 
+
+Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
+
+======= Strict Matching ======= (exact matches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+abstract             96.72        8.95         8.64         8.79         984    
+affiliation_linked   15.4         2.15         2.73         2.41         981    
+authors              98.46        57.6         57.07        57.33        983    
+first_author         99.67        91.79        91.04        91.41        982    
+title                99.29        82.38        80.28        81.32        984    
+
+all (micro avg.)     81.91        15.27        18.14        16.58        4914   
+all (macro avg.)     81.91        48.57        47.95        48.25        4914   
+
+
+======== Soft Matching ======== (ignoring punctuation, case and space characters mismatches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+abstract             96.01        21.89        21.14        21.51        984    
+affiliation_linked   62.78        62.27        78.78        69.56        981    
+authors              97.83        57.8         57.27        57.54        983    
+first_author         99.54        91.79        91.04        91.41        982    
+title                99.51        92.6         90.24        91.41        984    
+
+all (micro avg.)     91.13        63.15        75           68.57        4914   
+all (macro avg.)     91.13        65.27        67.7         66.28        4914   
+
+
+==== Levenshtein Matching ===== (Minimum Levenshtein distance at 0.8)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+abstract             97.18        47.05        45.43        46.23        984    
+affiliation_linked   66.04        65.15        82.42        72.78        981    
+authors              99.06        82.55        81.79        82.17        983    
+first_author         99.56        92.4         91.65        92.02        982    
+title                99.63        95.2         92.78        93.98        984    
+
+all (micro avg.)     92.29        68.37        81.19        74.23        4914   
+all (macro avg.)     92.29        76.47        78.82        77.43        4914   
+
+
+= Ratcliff/Obershelp Matching = (Minimum Ratcliff/Obershelp similarity at 0.95)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+abstract             97.07        44           42.48        43.23        984    
+affiliation_linked   64.01        63.37        80.18        70.79        981    
+authors              98.37        68.79        68.16        68.47        983    
+first_author         99.53        91.79        91.04        91.41        982    
+title                99.62        94.89        92.48        93.67        984    
+
+all (micro avg.)     91.72        65.99        78.36        71.64        4914   
+all (macro avg.)     91.72        72.57        74.87        73.51        4914   
+
+Note: the "affiliation_linked" field above is a linking-aware metric (each author is paired with its gold counterpart and their attached affiliations compared). Its support column reports the number of articles the metric is computed from (those with at least one explicit gold affiliation link), while precision/recall/F1 are measured over the individual author-affiliation links.
+Only authors whose gold affiliation link is explicit are scored; affiliations encoded purely positionally in the gold (no xref/@rid and no nested aff) are out of scope, not counted as misses.
+Ground truth: single-affiliation papers (exactly one <aff>) have been completed by linking every author to that sole affiliation (~1,649 authors across PMC, bioRxiv and PLOS). Still to be done: multi-affiliation papers that encode the author-to-affiliation mapping only positionally, which require the PDF superscripts to disambiguate.
+
+===== Instance-level results =====
+
+Total expected instances: 	984
+Total correct instances: 	30 (strict) 
+Total correct instances: 	96 (soft) 
+Total correct instances: 	319 (Levenshtein) 
+Total correct instances: 	244 (ObservedRatcliffObershelp) 
+
+Instance-level recall:	3.05	(strict) 
+Instance-level recall:	9.76	(soft) 
+Instance-level recall:	32.42	(Levenshtein) 
+Instance-level recall:	24.8	(RatcliffObershelp) 
+
+======= Citation metadata ======= 
+
+Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
+
+======= Strict Matching ======= (exact matches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+authors              96.92        78.98        76.5         77.72        63265  
+date                 99.31        95.3         91.81        93.52        63662  
+first_author         99.15        94.31        91.32        92.79        63265  
+inTitle              99.22        94.66        91.94        93.28        63213  
+issue                99.87        0.9          31.25        1.75         16     
+page                 99.18        94.98        92.65        93.8         53375  
+title                98.56        90.17        89.01        89.59        62044  
+volume               99.6         97.45        96.57        97.01        61049  
+
+all (micro avg.)     98.98        92.07        89.88        90.96        429889 
+all (macro avg.)     98.98        80.84        82.63        79.93        429889 
+
+
+======== Soft Matching ======== (ignoring punctuation, case and space characters mismatches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+authors              96.94        79.1         76.63        77.85        63265  
+date                 99.31        95.3         91.81        93.52        63662  
+first_author         99.16        94.39        91.39        92.86        63265  
+inTitle              99.29        95.13        92.4         93.74        63213  
+issue                99.87        0.9          31.25        1.75         16     
+page                 99.18        94.98        92.65        93.8         53375  
+title                99.39        95.87        94.65        95.25        62044  
+volume               99.6         97.45        96.57        97.01        61049  
+
+all (micro avg.)     99.09        93.01        90.79        91.88        429889 
+all (macro avg.)     99.09        81.64        83.42        80.72        429889 
+
+
+==== Levenshtein Matching ===== (Minimum Levenshtein distance at 0.8)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+authors              98.93        92.72        89.81        91.24        63265  
+date                 99.31        95.3         91.81        93.52        63662  
+first_author         99.23        94.83        91.82        93.3         63265  
+inTitle              99.35        95.55        92.8         94.16        63213  
+issue                99.87        0.9          31.25        1.75         16     
+page                 99.18        94.98        92.65        93.8         53375  
+title                99.61        97.37        96.13        96.74        62044  
+volume               99.6         97.45        96.57        97.01        61049  
+
+all (micro avg.)     99.38        95.34        93.06        94.19        429889 
+all (macro avg.)     99.38        83.64        85.35        82.69        429889 
+
+
+= Ratcliff/Obershelp Matching = (Minimum Ratcliff/Obershelp similarity at 0.95)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+authors              97.98        86.23        83.52        84.85        63265  
+date                 99.31        95.3         91.81        93.52        63662  
+first_author         99.15        94.33        91.33        92.81        63265  
+inTitle              99.29        95.15        92.42        93.76        63213  
+issue                99.87        0.9          31.25        1.75         16     
+page                 99.18        94.98        92.65        93.8         53375  
+title                99.59        97.21        95.97        96.58        62044  
+volume               99.6         97.45        96.57        97.01        61049  
+
+all (micro avg.)     99.25        94.23        91.99        93.1         429889 
+all (macro avg.)     99.25        82.69        84.44        81.76        429889 
+
+===== Instance-level results =====
+
+Total expected instances: 		63664
+Total extracted instances: 		63622
+Total correct instances: 		40567 (strict) 
+Total correct instances: 		43307 (soft) 
+Total correct instances: 		50696 (Levenshtein) 
+Total correct instances: 		47424 (RatcliffObershelp) 
+
+Instance-level precision:	63.76 (strict) 
+Instance-level precision:	68.07 (soft) 
+Instance-level precision:	79.68 (Levenshtein) 
+Instance-level precision:	74.54 (RatcliffObershelp) 
+
+Instance-level recall:	63.72	(strict) 
+Instance-level recall:	68.02	(soft) 
+Instance-level recall:	79.63	(Levenshtein) 
+Instance-level recall:	74.49	(RatcliffObershelp) 
+
+Instance-level f-score:	63.74 (strict) 
+Instance-level f-score:	68.05 (soft) 
+Instance-level f-score:	79.66 (Levenshtein) 
+Instance-level f-score:	74.52 (RatcliffObershelp) 
+
+Matching 1 :	57124
+
+Matching 2 :	1089
+
+Matching 3 :	1319
+
+Matching 4 :	590
+
+Total matches :	60122
+
+======= Citation context resolution ======= 
+
+Total expected references: 	 63664 - 64.7 references per article
+Total predicted references: 	 63622 - 64.66 references per article
+
+Total expected citation contexts: 	 109022 - 110.79 citation contexts per article
+Total predicted citation contexts: 	 96982 - 98.56 citation contexts per article
+
+Total correct predicted citation contexts: 	 92675 - 94.18 citation contexts per article
+Total wrong predicted citation contexts: 	 4307 (wrong callout matching, callout missing in NLM, or matching with a bib. ref. not aligned with a bib.ref. in NLM)
+
+Precision citation contexts: 	 95.56
+Recall citation contexts: 	 85.01
+fscore citation contexts: 	 89.97
+
+======= Fulltext structures ======= 
+
+Evaluation on 984 random PDF files out of 982 PDF (ratio 1.0).
+
+======= Strict Matching ======= (exact matches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+availability_stmt    99.73        25.49        26.84        26.14        585    
+figure_title         87.06        0.1          0.03         0.05         31718  
+funding_stmt         98.77        4.82         17.92        7.6          921    
+reference_citation   71.01        57.02        54.77        55.87        108949 
+reference_figure     82.23        59.45        50.92        54.85        68926  
+reference_table      99.59        72.04        72.07        72.06        2381   
+section_title        97.38        82.2         77.86        79.97        21831  
+table_title          99.23        0            0            0            1925   
+
+all (micro avg.)     91.88        56.41        47.98        51.85        237236 
+all (macro avg.)     91.88        37.64        37.55        37.07        237236 
+
+
+======== Soft Matching ======== (ignoring punctuation, case and space characters mismatches)
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+availability_stmt    99.73        36.04        37.95        36.97        585    
+figure_title         88.84        49.21        16.12        24.28        31718  
+funding_stmt         98.57        4.82         17.92        7.6          921    
+reference_citation   93.86        93.85        90.15        91.96        108949 
+reference_figure     79.48        59.75        51.18        55.13        68926  
+reference_table      99.53        72.17        72.2         72.18        2381   
+section_title        97.11        83.21        78.82        80.96        21831  
+table_title          99.5         92.91        27.9         42.91        1925   
+
+all (micro avg.)     94.58        78.54        66.79        72.19        237236 
+all (macro avg.)     94.58        61.49        49.03        51.5         237236 
+
+===== Document-level ratio results =====
+
+label                accuracy     precision    recall       f1           support
+
+availability_stmt    92.08        93.62        105.3        99.12        585    
+
+all (micro avg.)     92.08        93.62        100          96.7         585    
+all (macro avg.)     92.08        93.62        100          99.12        585    
+
+
+************************************************************************************
+COUNTER: org.grobid.core.engines.counters.ReferenceMarkerMatcherCounters
+************************************************************************************
+------------------------------------------------------------------------------------
+  MATCHED_REF_MARKERS_AFTER_POST_FILTERING: 6223
+  UNMATCHED_REF_MARKERS:                    1746
+  STYLE_AUTHORS:                            62164
+  STYLE_NUMBERED:                           405
+  MANY_CANDIDATES:                          7427
+  MANY_CANDIDATES_AFTER_POST_FILTERING:     919
+  NO_CANDIDATES:                            5938
+  INPUT_REF_STRINGS_CNT:                    63378
+  MATCHED_REF_MARKERS:                      96982
+  NO_CANDIDATES_AFTER_POST_FILTERING:       282
+  STYLE_OTHER:                              809
+====================================================================================
+
+************************************************************************************
+COUNTER: org.grobid.core.engines.counters.TableRejectionCounters
+************************************************************************************
+------------------------------------------------------------------------------------
+  CANNOT_PARSE_LABEL_TO_INT:          12
+  CONTENT_SIZE_TOO_SMALL:             29
+  CONTENT_WIDTH_TOO_SMALL:            2
+  EMPTY_LABEL_OR_HEADER_OR_CONTENT:   2402
+  HEADER_NOT_STARTS_WITH_TABLE_WORD:  60
+  HEADER_NOT_CONSECUTIVE:             175
+  HEADER_AND_CONTENT_DIFFERENT_PAGES: 9
+  HEADER_AND_CONTENT_INTERSECT:       91
+====================================================================================
+
+************************************************************************************
+COUNTER: org.grobid.core.engines.counters.FigureCounters
+************************************************************************************
+------------------------------------------------------------------------------------
+  SKIPPED_BAD_STANDALONE_FIGURES:                                     1405
+  SKIPPED_DUE_TO_MISMATCH_OF_CAPTIONS_AND_VECTOR_AND_BITMAP_GRAPHICS: 1
+  SKIPPED_SMALL_STANDALONE_FIGURES:                                   1109
+  SKIPPED_BIG_STANDALONE_FIGURES:                                     296
+  TOO_MANY_FIGURES_PER_PAGE:                                          2
+====================================================================================
+
+************************************************************************************
+COUNTER: org.grobid.core.engines.label.TaggingLabelImpl
+************************************************************************************
+------------------------------------------------------------------------------------
+  HEADER_DOCTYPE:                      1805
+  CITATION_TITLE:                      63255
+  HEADER_KEYWORD:                      52
+  NAME-HEADER_MIDDLENAME:              4783
+  HEADER_FUNDING:                      182
+  HEADER_ADDRESS:                      5342
+  TABLE_NOTE:                          1339
+  FULLTEXT_TABLE_MARKER:               4495
+  FUNDING-ACKNOWLEDGEMENT_AFFILIATION: 722
+  CITATION_WEB:                        46281
+  HEADER_GROUP:                        2
+  FULLTEXT_SECTION:                    51043
+  DATE_YEAR:                           65627
+  CITATION_ISSUE:                      611
+  AFFILIATION-ADDRESS_SETTLEMENT:      4585
+  CITATION_JOURNAL:                    62227
+  TABLE_FIGURE_HEAD:                   1747
+  CITATION_OTHER:                      370677
+  CITATION_TECH:                       97
+  AFFILIATION-ADDRESS_LABORATORY:      556
+  AFFILIATION-ADDRESS_OTHER:           15970
+  CITATION_AUTHOR:                     63936
+  CITATION_EDITOR:                     355
+  FUNDING-ACKNOWLEDGEMENT_PROJECTNAME: 210
+  FIGURE_FIGDESC:                      13785
+  CITATION_VOLUME:                     61598
+  AFFILIATION-ADDRESS_DEPARTMENT:      4768
+  CITATION_LOCATION:                   2258
+  NAME-CITATION_SUFFIX:                14
+  NAME-HEADER_TITLE:                   64
+  FUNDING-ACKNOWLEDGEMENT_INSTITUTION: 1056
+  HEADER_WEB:                          32
+  AFFILIATION-ADDRESS_ADDRLINE:        323
+  CITATION_INSTITUTION:                1043
+  HEADER_REFERENCE:                    1256
+  HEADER_AUTHOR:                       4341
+  NAME-HEADER_MARKER:                  7463
+  FUNDING-ACKNOWLEDGEMENT_FUNDERNAME:  3206
+  DATE_OTHER:                          2326
+  NAME-CITATION_FORENAME:              372030
+  AFFILIATION-ADDRESS_REGION:          177
+  NAME-CITATION_MIDDLENAME:            3215
+  FULLTEXT_PARAGRAPH:                  364182
+  FIGURE_FIGURE_HEAD:                  21497
+  AFFILIATION-ADDRESS_POSTCODE:        175
+  HEADER_DATE:                         1056
+  TABLE_FIGDESC:                       1473
+  HEADER_CONTRIBUTION:                 59
+  NAME-HEADER_SURNAME:                 12795
+  NAME-CITATION_OTHER:                 312845
+  CITATION_BOOKTITLE:                  1677
+  HEADER_AFFILIATION:                  6303
+  CITATION_NOTE:                       1197
+  FULLTEXT_CITATION_MARKER:            126672
+  HEADER_EMAIL:                        1402
+  TABLE_LABEL:                         719
+  FUNDING-ACKNOWLEDGEMENT_PROGRAMNAME: 292
+  NAME-HEADER_FORENAME:                13427
+  TABLE_CONTENT:                       2821
+  CITATION_COLLABORATION:              79
+  HEADER_MEETING:                      6
+  HEADER_EDITOR:                       922
+  CITATION_SERIES:                     86
+  NAME-CITATION_SURNAME:               367160
+  FULLTEXT_EQUATION_MARKER:            1119
+  FULLTEXT_FIGURE_MARKER:              106675
+  HEADER_TITLE:                        1105
+  FIGURE_CONTENT:                      2789
+  FIGURE_LABEL:                        11139
+  FULLTEXT_EQUATION_LABEL:             2800
+  HEADER_OTHER:                        8701
+  FULLTEXT_EQUATION:                   5753
+  CITATION_DATE:                       64707
+  FULLTEXT_FIGURE:                     25986
+  FULLTEXT_TABLE:                      1124
+  AFFILIATION-ADDRESS_MARKER:          4068
+  FULLTEXT_OTHER:                      79
+  HEADER_CONFLICT:                     777
+  HEADER_SUBMISSION:                   945
+  NAME-HEADER_OTHER:                   8162
+  AFFILIATION-ADDRESS_POSTBOX:         2
+  HEADER_AVAILABILITY:                 24
+  NAME-HEADER_SUFFIX:                  10
+  DATE_MONTH:                          1246
+  FUNDING-ACKNOWLEDGEMENT_PERSON:      5413
+  HEADER_ABSTRACT:                     1077
+  AFFILIATION-ADDRESS_INSTITUTION:     6864
+  FUNDING-ACKNOWLEDGEMENT_GRANTNAME:   500
+  CITATION_PAGES:                      61451
+  AFFILIATION-ADDRESS_COUNTRY:         5409
+  FUNDING-ACKNOWLEDGEMENT_OTHER:       14405
+  CITATION_PUBLISHER:                  1486
+  FUNDING-ACKNOWLEDGEMENT_GRANTNUMBER: 2925
+  HEADER_PUBNUM:                       4882
+  CITATION_PUBNUM:                     60574
+  HEADER_COPYRIGHT:                    959
+  DATE_DAY:                            1207
+====================================================================================
+
+************************************************************************************
+COUNTER: FigureCounters
+************************************************************************************
+------------------------------------------------------------------------------------
+  STANDALONE_FIGURES:           355
+  ASSIGNED_GRAPHICS_TO_FIGURES: 3804
+====================================================================================
+====================================================================================
+
+
+Evaluation report in markdown format saved under /data/workspace/lfoppiano/grobid/evaluation/grobid-eval-pytorch-master/grobid-trainer/../grobid-home/tmp/report.md
+
+[Incubating] Problems report is available at: file:///data/workspace/lfoppiano/grobid/evaluation/grobid-eval-pytorch-master/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.6.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 30m 44s
+7 actionable tasks: 1 executed, 6 up-to-date

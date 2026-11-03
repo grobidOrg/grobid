@@ -8,8 +8,8 @@
 						<affiliation>
 							<orgName type="department">Department of Biostatistics and Computational Biology</orgName>,
 							<lb/>
-							<orgName type="institution">University of Rochester</orgName>
-							<orgName type="department">Medical Center</orgName>,
+							<orgName type="institution">University of Rochester
+							Medical Center</orgName>,
 							<lb/>
 							<address>
 								<settlement>Rochester</settlement>,
@@ -47,7 +47,7 @@
 							<lb/>
 							<address>
 								<addrLine>3535 Market Street</addrLine>,
-								<postCode>5099</postCode>,
+								<addrLine>5099</addrLine>,
 								<settlement>Philadelphia</settlement>,
 								<region>PA</region>
 								<postCode>19104</postCode>,
