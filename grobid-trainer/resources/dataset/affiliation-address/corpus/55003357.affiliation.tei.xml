@@ -9,7 +9,7 @@
 
 						<affiliation>
 							<orgName type="department">Institut fur Organische Chemie</orgName> der
-							<orgName type="institution">Freien Universitat Berlin&quot;</orgName>,
+							<orgName type="institution">Freien Universitat Berlin</orgName><marker>&quot;</marker>,
 							<lb/> 
 							<address> 
 								<addrLine>TakustraDe 3</addrLine>,
@@ -19,7 +19,7 @@
 						</affiliation>
 						<affiliation>	
 							<orgName type="department">Institut fur Kristallographie und Mineralogie</orgName> der
-							<orgName type="institution">Freien Universitat Berlinb</orgName>,
+							<orgName type="institution">Freien Universitat Berlin</orgName><marker>b</marker>,
 							<lb/>
 							<address>
 								<addrLine>TakustraBe 6</addrLine>,

@@ -23,9 +23,9 @@
 							<orgName type="department">Institute for Metals Superplasticity Problems</orgName>,
 							<orgName type="institution">Russian Academy of Sciences</orgName>,
 							<address>
-								Ufa. 
+								<settlement>Ufa</settlement>. 
 								<postCode>450001</postCode>
-								<settlement>Bashkortostan</settlement>,
+								<region>Bashkortostan</region>,
 								<country>Russia</country>
 							</address>
 						</affiliation>

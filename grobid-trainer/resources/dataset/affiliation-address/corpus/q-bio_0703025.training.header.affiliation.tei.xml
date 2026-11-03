@@ -6,12 +6,10 @@
 						<author>
 
 						<affiliation>
+							<!-- "Department of" is printed once for the two marked departments (verified against the PDF); the split around the marker is forced by the print -->
 							<orgName type="department">Department of</orgName>
                           <marker>a </marker>
                         <orgName type="department">Biophysics and Radiation Biology</orgName> and
-						</affiliation>
-                          
-						<affiliation>
 							<marker>b</marker>
 							<orgName type="department">Medical Chemistry</orgName>,
 							<lb/>
@@ -31,9 +29,9 @@
 							<lb/>
 							<address>
 								<settlement>Budapest</settlement>,
-								<postBox>P.O. Box 260.</postBox>
+								<postBox>P.O. Box 260</postBox>.
 								<postCode>H-1444</postCode>
-								<country>Hungary.</country>
+								<country>Hungary</country>.
 							</address>
 						</affiliation>
 

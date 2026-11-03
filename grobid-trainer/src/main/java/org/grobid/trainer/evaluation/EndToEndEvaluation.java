@@ -89,6 +89,10 @@ public class EndToEndEvaluation {
     public static final double minLevenshteinDistance = 0.8;
     public static final double minRatcliffObershelpSimilarity = 0.95;
 
+    // header consolidation applied when processing the PDFs (0: none, 1-3: see GrobidAnalysisConfig),
+    // set with -PconsolidateHeader; citations and funders are never consolidated
+    private static int consolidateHeader = 1;
+
     // the list of labels considered for the evaluation
     // the list of fields considered for the evaluation
     private List<FieldSpecification> headerFields = null;
@@ -115,7 +119,7 @@ public class EndToEndEvaluation {
             try {
                 engine = Engine.getEngine(true);
                 GrobidAnalysisConfig config = GrobidAnalysisConfig.builder()
-                        .consolidateHeader(1)
+                        .consolidateHeader(consolidateHeader)
                         .consolidateCitations(0)
                         .consolidateFunders(0)
                         .withPreprocessImages(true)
@@ -2274,6 +2278,18 @@ public class EndToEndEvaluation {
                 }
             }
         }
+
+        String consolidation = System.getProperty("grobid.evaluation.consolidateHeader", "1");
+        try {
+            consolidateHeader = Integer.parseInt(consolidation.trim());
+        } catch (NumberFormatException e) {
+            consolidateHeader = -1;
+        }
+        if (consolidateHeader < 0 || consolidateHeader > 3) {
+            System.err.println("Invalid header consolidation '" + consolidation + "', must be in [0-3]");
+            System.exit(1);
+        }
+        System.out.println("Header consolidation: " + consolidateHeader);
 
         GrobidModels.Flavor parsedFlavor = null;
         if (args.length > 4) {

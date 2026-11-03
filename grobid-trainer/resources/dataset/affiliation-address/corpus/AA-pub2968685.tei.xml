@@ -11,8 +11,8 @@
 						<author>
 							<affiliation>
 								<orgName type="department">Blackett Lab.</orgName>,
-								<orgName type="institution" key="instit1">Imperial College</orgName>,
-								<orgName type="institution" key="instit2">Univ. of London</orgName>,
+								<orgName type="institution">Imperial College</orgName>,
+								<orgName type="institution">Univ. of London</orgName>,
 								<address>
 									<settlement>London</settlement>,
 									<country key="GB">England</country>;

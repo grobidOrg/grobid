@@ -1,0 +1,587 @@
+name: End-to-end evaluation
+
+# Runs the end-to-end evaluation (doc/End-to-end-evaluation.md) of the checked-out code
+# against the full gold corpora, and reports the scores next to those of the default branch.
+#
+# - manually (workflow_dispatch), on any branch;
+# - on a pull request, by adding the label `evaluation:crf` or `evaluation:delft`.
+#   The runs are without consolidation, so without biblio-glutton, unless the pull request
+#   also has the label `evaluation:glutton`.
+#   The corpora are selected with the labels `corpus:all`, `corpus:pubmed`, `corpus:biorxiv`,
+#   `corpus:plos` and `corpus:elife`: adding `evaluation:crf` or `evaluation:delft` evaluates
+#   the corpora labelled on the pull request (all of them if none is), adding a `corpus:*`
+#   label to a pull request that has one of them evaluates that corpus, and adding
+#   `evaluation:glutton` evaluates the labelled corpora again with biblio-glutton.
+#   Once the pull request has `evaluation:crf` or `evaluation:delft`, each push evaluates
+#   the labelled corpora again, except the pushes to a draft pull request and the pushes
+#   that only change the documentation; marking a draft ready for review evaluates it.
+#   The runs of a pull request do not overlap: a new one waits for the one going to
+#   finish, and only the latest one waits.
+#
+# Each corpus is split into shards processed in parallel (`predict`), the TEI they produce
+# is gathered and scored once per corpus (`score`), and the reports are compared with the
+# ones of the latest successful run on the default branch (`report`).
+
+on:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: 'crf: models as configured in grobid.yaml - delft: Deep Learning models of grobid-evaluation.yaml, on CPU'
+        type: choice
+        options: [ crf, delft ]
+        default: crf
+      datasets:
+        description: Corpus to evaluate
+        type: choice
+        options: [ all, PMC_sample_1943, biorxiv-10k-test-2000, PLOS_1000, eLife_984 ]
+        default: all
+      flavor:
+        description: Model flavor
+        type: choice
+        options: [ none, article/light, article/light-ref ]
+        default: none
+      consolidation:
+        description: 'none: no consolidation, biblio-glutton is not needed - glutton: header consolidation with biblio-glutton'
+        type: choice
+        options: [ none, glutton ]
+        default: none
+      shards:
+        description: Parallel jobs per corpus (empty = default for the profile)
+        type: string
+        required: false
+  pull_request:
+    types: [ labeled, synchronize, ready_for_review ]
+
+# One evaluation at a time per pull request: a push, or an evaluation:* or corpus:* label,
+# waits for the run going to finish, and replaces the run already waiting (GitHub keeps one).
+# Any other label, or a push to a draft, gets a group of its own, so that it replaces nothing
+# (its run does nothing, the setup job being skipped). A manual run cancels the one going
+# with the same inputs.
+concurrency:
+  group: >-
+    ${{ (github.event_name == 'workflow_dispatch'
+         && format('evaluation-{0}-{1}-{2}-{3}', github.ref, inputs.profile, inputs.flavor, inputs.consolidation))
+        || (((github.event.action == 'synchronize' && !github.event.pull_request.draft)
+             || github.event.action == 'ready_for_review'
+             || startsWith(github.event.label.name, 'evaluation:')
+             || startsWith(github.event.label.name, 'corpus:'))
+            && (contains(toJson(github.event.pull_request.labels.*.name), '"evaluation:crf"')
+                || contains(toJson(github.event.pull_request.labels.*.name), '"evaluation:delft"'))
+            && format('evaluation-pr-{0}', github.event.pull_request.number))
+        || format('evaluation-ignored-{0}', github.run_id) }}
+  cancel-in-progress: ${{ github.event_name == 'workflow_dispatch' }}
+
+permissions:
+  contents: read
+  actions: read
+  pull-requests: write
+
+env:
+  EVAL_DATASET_REPO: sciencialab/grobid-evaluation
+  # branch, tag or commit of the dataset; pin it to keep runs comparable across dataset updates
+  EVAL_DATASET_REVISION: main
+  # DeLFT and JEP, which GROBID runs the Deep Learning models with
+  EVAL_VENV: /home/runner/eval-venv
+  # the scripts of .github/scripts/evaluation, apart from DeLFT: its dependencies downgrade
+  # huggingface_hub to a version that makes one Hub API request per file it downloads,
+  # which exhausts the rate limits of Hugging Face
+  TOOLS_VENV: /home/runner/tools-venv
+  DELFT_HOME: /home/runner/delft
+
+jobs:
+  setup:
+    # a push, a corpus:* or the evaluation:glutton label only starts a run once the pull
+    # request has a profile label (evaluation:crf or evaluation:delft)
+    if: >-
+      github.event_name == 'workflow_dispatch'
+      || (((github.event.action == 'synchronize' && !github.event.pull_request.draft)
+           || github.event.action == 'ready_for_review')
+          && (contains(toJson(github.event.pull_request.labels.*.name), '"evaluation:crf"')
+              || contains(toJson(github.event.pull_request.labels.*.name), '"evaluation:delft"')))
+      || (startsWith(github.event.label.name, 'evaluation:')
+          && github.event.label.name != 'evaluation:glutton')
+      || ((startsWith(github.event.label.name, 'corpus:')
+           || github.event.label.name == 'evaluation:glutton')
+          && (contains(toJson(github.event.pull_request.labels.*.name), '"evaluation:crf"')
+              || contains(toJson(github.event.pull_request.labels.*.name), '"evaluation:delft"')))
+    runs-on: ubuntu-latest
+    outputs:
+      profile: ${{ steps.resolve.outputs.profile }}
+      flavor: ${{ steps.resolve.outputs.flavor }}
+      consolidation: ${{ steps.resolve.outputs.consolidation }}
+      suffix: ${{ steps.resolve.outputs.suffix }}
+      datasets: ${{ steps.resolve.outputs.datasets }}
+      shards: ${{ steps.resolve.outputs.shards }}
+      evaluate: ${{ steps.changes.outputs.evaluate != 'false' }}
+    steps:
+      # Compared with the latest commit evaluated, and not with the previous push: that one
+      # may never have been evaluated, its run having been replaced by this one in the queue.
+      - name: Skip a push that only changes the documentation
+        id: changes
+        if: github.event.action == 'synchronize'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          HEAD_REF: ${{ github.event.pull_request.head.ref }}
+          HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+        run: |
+          # the latest run of this pull request that processed PDFs, newest runs first
+          EVALUATED=""
+          while read -r run sha; do
+            if gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${run}/jobs?per_page=100" \
+                --jq '.jobs[] | select((.name | startswith("predict")) and .conclusion != "skipped") | .id' | grep -q .; then
+              EVALUATED="${sha}"
+              break
+            fi
+          done < <(gh api "repos/${GITHUB_REPOSITORY}/actions/workflows/evaluation.yml/runs?event=pull_request&branch=${HEAD_REF}&per_page=30" \
+            --jq ".workflow_runs[] | select(.id != ${GITHUB_RUN_ID} and .head_repository.full_name == \"${HEAD_REPO}\") | \"\(.id) \(.head_sha)\"")
+          if [ -z "${EVALUATED}" ]; then
+            echo "No earlier evaluation of this pull request"
+            exit 0
+          fi
+
+          # the compare API lists at most 300 files: a longer list is taken as a code change
+          if ! FILES=$(gh api "repos/${GITHUB_REPOSITORY}/compare/${EVALUATED}...${HEAD_SHA}" \
+              --jq 'if (.files | length) >= 300 then "too-many-files" else .files[].filename end'); then
+            echo "::warning::Cannot list the files changed since ${EVALUATED}: evaluating anyway"
+            exit 0
+          fi
+          if grep -qvE '^doc/|\.md$' <<< "${FILES}"; then
+            echo "Code changed since ${EVALUATED}, the latest commit evaluated"
+          else
+            echo "::notice::Only the documentation changed since ${EVALUATED}, the latest commit evaluated: no evaluation"
+            echo "evaluate=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Resolve the evaluation to run
+        id: resolve
+        env:
+          LABEL: ${{ github.event.label.name }}
+          PR_LABELS: ${{ toJson(github.event.pull_request.labels.*.name) }}
+          INPUT_PROFILE: ${{ inputs.profile }}
+          INPUT_DATASETS: ${{ inputs.datasets }}
+          INPUT_FLAVOR: ${{ inputs.flavor }}
+          INPUT_CONSOLIDATION: ${{ inputs.consolidation }}
+          INPUT_SHARDS: ${{ inputs.shards }}
+        run: |
+          # corpus:* label -> corpus directory in the dataset
+          corpus_dataset() {
+            case "$1" in
+              all) echo all ;;
+              pubmed) echo PMC_sample_1943 ;;
+              biorxiv) echo biorxiv-10k-test-2000 ;;
+              plos) echo PLOS_1000 ;;
+              elife) echo eLife_984 ;;
+              *) echo "::error::Unknown corpus label 'corpus:$1': use corpus:all, corpus:pubmed, corpus:biorxiv, corpus:plos or corpus:elife" >&2; return 1 ;;
+            esac
+          }
+
+          if [ "${GITHUB_EVENT_NAME}" = "pull_request" ]; then
+            if [[ "${LABEL}" == evaluation:* && "${LABEL}" != evaluation:glutton ]]; then
+              EVALUATION_LABEL="${LABEL}"
+            else
+              # a push, a corpus:* or the evaluation:glutton label: the profile is the one of
+              # the profile label of the pull request
+              mapfile -t EVALUATION_LABELS < <(jq -r '.[] | select(startswith("evaluation:") and . != "evaluation:glutton")' <<< "${PR_LABELS}")
+              if [ "${#EVALUATION_LABELS[@]}" -ne 1 ]; then
+                echo "::error::The evaluation runs with the profile label of the pull request (evaluation:crf or evaluation:delft), but it has ${#EVALUATION_LABELS[@]}: ${EVALUATION_LABELS[*]}. Keep only one."
+                exit 1
+              fi
+              EVALUATION_LABEL="${EVALUATION_LABELS[0]}"
+            fi
+            if [[ "${LABEL}" == corpus:* ]]; then
+              CORPORA=("${LABEL#corpus:}")
+            else
+              # the corpora are the corpus:* labels of the pull request, all of them if none
+              mapfile -t CORPORA < <(jq -r '.[] | select(startswith("corpus:")) | ltrimstr("corpus:")' <<< "${PR_LABELS}")
+              [ "${#CORPORA[@]}" -eq 0 ] && CORPORA=(all)
+            fi
+            SELECTED=()
+            for corpus in "${CORPORA[@]}"; do
+              SELECTED+=("$(corpus_dataset "${corpus}")")
+            done
+
+            PROFILE="${EVALUATION_LABEL#evaluation:}"
+            CONSOLIDATION=none
+            if [ "${LABEL}" = "evaluation:glutton" ] || jq -e 'index("evaluation:glutton")' <<< "${PR_LABELS}" > /dev/null; then
+              CONSOLIDATION=glutton
+            fi
+            FLAVOR=none
+            SHARDS=""
+          else
+            PROFILE="${INPUT_PROFILE}"
+            CONSOLIDATION="${INPUT_CONSOLIDATION}"
+            SELECTED=("${INPUT_DATASETS}")
+            FLAVOR="${INPUT_FLAVOR}"
+            SHARDS="${INPUT_SHARDS}"
+          fi
+          SELECTED_JSON=$(printf '%s\n' "${SELECTED[@]}" | jq -Rsc 'split("\n") | map(select(. != ""))')
+
+          case "${PROFILE}" in
+            crf|delft) ;;
+            *) echo "::error::Unknown profile '${PROFILE}': use evaluation:crf or evaluation:delft, with evaluation:glutton to consolidate with biblio-glutton"; exit 1 ;;
+          esac
+          if [ -n "${SHARDS}" ] && ! [[ "${SHARDS}" =~ ^[1-9][0-9]?$ ]]; then
+            echo "::error::shards must be a number between 1 and 99, got '${SHARDS}'"
+            exit 1
+          fi
+
+          # Shards per corpus. A job is killed after 6 hours, and Deep Learning models on
+          # a CPU runner are an order of magnitude slower than the CRF ones.
+          if [ "${PROFILE}" = "delft" ]; then
+            DEFAULT_SHARDS='{"PMC_sample_1943": 4, "biorxiv-10k-test-2000": 4, "PLOS_1000": 2, "eLife_984": 2}'
+          else
+            DEFAULT_SHARDS='{"PMC_sample_1943": 2, "biorxiv-10k-test-2000": 2, "PLOS_1000": 1, "eLife_984": 1}'
+          fi
+
+          if [ "${FLAVOR}" = "none" ]; then
+            FLAVOR=""
+            SUFFIX="${PROFILE}"
+          else
+            SUFFIX="${PROFILE}-${FLAVOR//\//_}"
+          fi
+          # runs with biblio-glutton get their own artifacts, and so their own baseline
+          [ "${CONSOLIDATION}" = "glutton" ] && SUFFIX="${SUFFIX}-glutton"
+
+          DATASETS_JSON=$(jq -c --argjson selected "${SELECTED_JSON}" \
+            'keys_unsorted | map(select(. as $dataset | $selected | index("all") or index($dataset)))' <<< "${DEFAULT_SHARDS}")
+          SHARDS_JSON=$(jq -c --argjson selected "${SELECTED_JSON}" --arg shards "${SHARDS}" '
+            to_entries
+            | map(select(.key as $dataset | $selected | index("all") or index($dataset)))
+            | map(.key as $dataset | (if $shards == "" then .value else ($shards | tonumber) end) as $count
+                  | range($count) | {dataset: $dataset, shard: ., shards: $count})' <<< "${DEFAULT_SHARDS}")
+
+          {
+            echo "profile=${PROFILE}"
+            echo "flavor=${FLAVOR}"
+            echo "consolidation=${CONSOLIDATION}"
+            echo "suffix=${SUFFIX}"
+            echo "datasets=${DATASETS_JSON}"
+            echo "shards=${SHARDS_JSON}"
+          } >> "$GITHUB_OUTPUT"
+          echo "Evaluation profile: ${PROFILE}, flavor: '${FLAVOR}', consolidation: ${CONSOLIDATION}, datasets: ${DATASETS_JSON}"
+
+  predict:
+    needs: [ setup ]
+    if: needs.setup.outputs.evaluate == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    name: predict (${{ matrix.dataset }}, ${{ matrix.shard }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.setup.outputs.shards) }}
+    env:
+      PROFILE: ${{ needs.setup.outputs.profile }}
+      FLAVOR: ${{ needs.setup.outputs.flavor }}
+      CONSOLIDATION: ${{ needs.setup.outputs.consolidation }}
+      DATASET: ${{ matrix.dataset }}
+      SHARD: ${{ matrix.shard }}
+      SHARDS: ${{ matrix.shards }}
+    steps:
+      - name: Create more disk space
+        if: env.PROFILE == 'delft'
+        run: sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost "$AGENT_TOOLSDIRECTORY"
+      - uses: actions/checkout@v7
+      - name: Set up JDK
+        uses: actions/setup-java@v6.1.0
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      - uses: gradle/actions/setup-gradle@v6
+        with:
+          # only the summary of the report job is of interest
+          add-job-summary: never
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Install the evaluation tools
+        run: |
+          python -m venv "${TOOLS_VENV}"
+          "${TOOLS_VENV}/bin/pip" install --no-cache-dir huggingface_hub==2.2.0 pyyaml
+
+      - name: Install DeLFT
+        if: env.PROFILE == 'delft'
+        run: |
+          .github/scripts/evaluation/install_delft.sh "${EVAL_VENV}" --with-jep
+          mkdir -p "${DELFT_HOME}"
+          cp grobid-home/config/resources-registry.json "${DELFT_HOME}/"
+          # GROBID and the Gradle tasks locate DeLFT and JEP through the active virtual environment
+          echo "VIRTUAL_ENV=${EVAL_VENV}" >> "$GITHUB_ENV"
+          # libpython is not part of a virtual environment: JEP needs the one of the base interpreter
+          LIBDIR=$(python -c 'import sysconfig; print(sysconfig.get_config_var("LIBDIR"))')
+          echo "LD_LIBRARY_PATH=${LIBDIR}${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}" >> "$GITHUB_ENV"
+      # The Deep Learning models read their word embeddings from an lmdb database: a 2GB
+      # download and about two minutes to build, less than a cache would save.
+      - name: Build the embeddings database
+        if: env.PROFILE == 'delft'
+        working-directory: ${{ env.DELFT_HOME }}
+        run: |
+          # the download directory of the registry: preload_embeddings.py only creates it
+          # when its parent exists
+          mkdir -p data/download
+          "${EVAL_VENV}/bin/python" "${GITHUB_WORKSPACE}/grobid-home/scripts/preload_embeddings.py" \
+            --registry ./resources-registry.json
+          # preload_embeddings.py exits 0 when it fails
+          du -sh data/db/*
+
+      - name: Download the corpus shard
+        env:
+          # optional: only raises the Hugging Face rate limits; absent on fork pull requests
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          "${TOOLS_VENV}/bin/python" .github/scripts/evaluation/fetch_dataset.py \
+            --repo "${EVAL_DATASET_REPO}" --revision "${EVAL_DATASET_REVISION}" \
+            --dataset "${DATASET}" --shard "${SHARD}" --shards "${SHARDS}" --output data
+
+      - name: Configure GROBID
+        env:
+          # optional repository variable: biblio-glutton instance to use instead of the one
+          # set in the configuration preset
+          GLUTTON_URL: ${{ vars.GROBID_EVAL_GLUTTON_URL }}
+        run: |
+          ARGS=(--profile "${PROFILE}" --consolidation "${CONSOLIDATION}")
+          [ "${CONSOLIDATION}" = "glutton" ] && [ -n "${GLUTTON_URL}" ] && ARGS+=(--glutton-url "${GLUTTON_URL}")
+          [ "${PROFILE}" = "delft" ] && ARGS+=(--delft-install "${DELFT_HOME}")
+          "${TOOLS_VENV}/bin/python" .github/scripts/evaluation/configure_grobid.py "${ARGS[@]}"
+
+      # A run that should consolidate but cannot completes and scores lower, which reads as
+      # a regression: refuse to start instead. The crf profile is checked in warn mode since
+      # its models are, by design, not the Deep Learning ones the check asks for.
+      - name: Check the configuration
+        run: |
+          MODE=strict
+          [ "${PROFILE}" = "crf" ] && MODE=warn
+          ARGS=(-PcheckMode="${MODE}")
+          [ "${CONSOLIDATION}" = "none" ] && ARGS+=(-PcheckConsolidation=false)
+          ./gradlew --console=plain checkEvalConfig "${ARGS[@]}" | tee check.log
+          STATUS=${PIPESTATUS[0]}
+          if [ "${CONSOLIDATION}" = "glutton" ] && ! grep -q "Glutton reachable: yes" check.log; then
+            echo "::error::biblio-glutton is not reachable from this runner. Set the repository variable GROBID_EVAL_GLUTTON_URL to a reachable instance, or run without consolidation (without the evaluation:glutton label)."
+            exit 1
+          fi
+          exit "${STATUS}"
+
+      - name: Process the PDFs
+        run: |
+          ARGS=(-Pp2t="${PWD}/data/${DATASET}" -Prun=1 -Pprogressbar=simple)
+          [ -n "${FLAVOR}" ] && ARGS+=(-Pflavor="${FLAVOR}")
+          [ "${CONSOLIDATION}" = "none" ] && ARGS+=(-PconsolidateHeader=0)
+          ./gradlew --console=plain jatsEval "${ARGS[@]}" | tee predict.log
+
+      - name: Collect the TEI
+        run: |
+          PDF=$(find "data/${DATASET}" -iname '*.pdf' | wc -l)
+          TEI=$(find "data/${DATASET}" -name '*.fulltext*.tei.xml' | wc -l)
+          SECONDS_SPENT=$(grep -oE 'PDF files processed in [0-9.]+' predict.log | grep -oE '[0-9.]+$' | tail -n 1)
+          echo "${TEI} TEI produced for ${PDF} PDF in ${SECONDS_SPENT:-?} seconds"
+          # jatsEval exits 0 whatever happened
+          if [ "${TEI}" -eq 0 ]; then
+            echo "::error::No TEI produced for ${DATASET} shard ${SHARD}, see the log"
+            exit 1
+          fi
+          if [ "${TEI}" -lt "${PDF}" ]; then
+            echo "::warning::${DATASET} shard ${SHARD}: $((PDF - TEI)) PDF out of ${PDF} produced no TEI"
+          fi
+          mkdir -p out
+          jq -n --arg dataset "${DATASET}" --argjson shard "${SHARD}" --argjson pdf "${PDF}" --argjson tei "${TEI}" \
+            --argjson seconds "${SECONDS_SPENT:-0}" \
+            '{dataset: $dataset, shard: $shard, pdf: $pdf, tei: $tei, seconds: $seconds}' \
+            > "out/stats-${DATASET}-${SHARD}.json"
+          # the TEI and the gold XML, everything the score job needs: it does not download the
+          # gold XML again, which would double the requests to Hugging Face and their rate limits
+          (cd data && find "${DATASET}" -type f ! -iname '*.pdf' -print0) \
+            | tar --null -czf "out/tei-${DATASET}-${SHARD}.tar.gz" -C data -T -
+
+      - name: Upload the TEI
+        uses: actions/upload-artifact@v7
+        with:
+          name: tei-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-${{ matrix.shard }}
+          path: out/tei-*.tar.gz
+          retention-days: 7
+      - name: Upload the statistics
+        uses: actions/upload-artifact@v7
+        with:
+          name: stats-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-${{ matrix.shard }}
+          path: out/stats-*.json
+          retention-days: 7
+      - name: Upload the log
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: log-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-${{ matrix.shard }}
+          path: |
+            check.log
+            predict.log
+          retention-days: 7
+
+  score:
+    needs: [ setup, predict ]
+    # a corpus is only scored when all its shards went through: a report over part of a
+    # corpus would be compared with a baseline over all of it
+    if: always() && needs.predict.result == 'success'
+    runs-on: ubuntu-latest
+    name: score (${{ matrix.dataset }})
+    strategy:
+      fail-fast: false
+      matrix:
+        dataset: ${{ fromJson(needs.setup.outputs.datasets) }}
+    env:
+      FLAVOR: ${{ needs.setup.outputs.flavor }}
+      DATASET: ${{ matrix.dataset }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Set up JDK
+        uses: actions/setup-java@v6.1.0
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      - uses: gradle/actions/setup-gradle@v6
+        with:
+          # only the summary of the report job is of interest
+          add-job-summary: never
+      - name: Download the TEI and the gold XML
+        uses: actions/download-artifact@v8
+        with:
+          pattern: tei-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-*
+          merge-multiple: true
+          path: tei
+      - name: Score
+        run: |
+          mkdir -p data
+          for archive in tei/*.tar.gz; do
+            tar -xzf "${archive}" -C data
+          done
+          echo "$(find "data/${DATASET}" -name '*.fulltext*.tei.xml' | wc -l) TEI to score"
+
+          ARGS=(-Pp2t="${PWD}/data/${DATASET}" -Prun=0 -Pprogressbar=simple)
+          [ -n "${FLAVOR}" ] && ARGS+=(-Pflavor="${FLAVOR}")
+          rm -f grobid-home/tmp/report.md
+          ./gradlew --console=plain jatsEval "${ARGS[@]}" | tee "score-${DATASET}.log"
+
+          # jatsEval exits 0 whatever happened
+          if ! grep -q '^## Header metadata' grobid-home/tmp/report.md 2>/dev/null; then
+            echo "::error::The evaluation of ${DATASET} produced no report, see the log"
+            exit 1
+          fi
+          mkdir -p reports
+          mv grobid-home/tmp/report.md "reports/report-${DATASET}.md"
+      - name: Upload the report
+        uses: actions/upload-artifact@v7
+        with:
+          name: report-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}
+          path: reports/report-*.md
+          retention-days: 7
+      - name: Upload the log
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: log-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-score
+          path: score-*.log
+          retention-days: 7
+
+  report:
+    needs: [ setup, score ]
+    if: always() && needs.score.result == 'success'
+    runs-on: ubuntu-latest
+    env:
+      PROFILE: ${{ needs.setup.outputs.profile }}
+      FLAVOR: ${{ needs.setup.outputs.flavor }}
+      CONSOLIDATION: ${{ needs.setup.outputs.consolidation }}
+      ARTIFACT: evaluation-reports-${{ needs.setup.outputs.suffix }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Download the reports
+        uses: actions/download-artifact@v8
+        with:
+          pattern: report-${{ needs.setup.outputs.suffix }}-*
+          merge-multiple: true
+          path: reports
+      - name: Download the statistics
+        uses: actions/download-artifact@v8
+        with:
+          pattern: stats-${{ needs.setup.outputs.suffix }}-*
+          merge-multiple: true
+          path: stats
+
+      # The baseline is the latest successful run of this workflow on the default branch
+      # with the same profile and flavor, as long as its artifact has not expired.
+      - name: Download the baseline reports
+        id: baseline
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          gh run list --repo "${GITHUB_REPOSITORY}" --workflow evaluation.yml --branch "${DEFAULT_BRANCH}" \
+            --status success --limit 30 --json databaseId,headSha \
+            --jq '.[] | "\(.databaseId) \(.headSha)"' > runs.txt || true
+          while read -r run sha; do
+            [ "${run}" = "${GITHUB_RUN_ID}" ] && continue
+            if gh run download "${run}" --repo "${GITHUB_REPOSITORY}" --name "${ARTIFACT}" --dir baseline 2>/dev/null; then
+              echo "run=${run}" >> "$GITHUB_OUTPUT"
+              echo "sha=${sha}" >> "$GITHUB_OUTPUT"
+              echo "Baseline: run ${run} (${sha})"
+              break
+            fi
+          done < runs.txt
+          [ -d baseline ] || echo "No baseline found: no successful run of this workflow on ${DEFAULT_BRANCH} with the profile '${PROFILE}', the flavor '${FLAVOR}' and the consolidation '${CONSOLIDATION}'"
+
+      - name: Write the summary
+        env:
+          BASELINE_RUN: ${{ steps.baseline.outputs.run }}
+          BASELINE_SHA: ${{ steps.baseline.outputs.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          RUN_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs"
+          {
+            echo "## End-to-end evaluation"
+            echo ""
+            echo "- **Profile:** \`${PROFILE}\`${FLAVOR:+, flavor \`${FLAVOR}\`}"
+            echo "- **Consolidation:** \`${CONSOLIDATION}\`"
+            echo "- **Commit:** ${HEAD_SHA} ([run](${RUN_URL}/${GITHUB_RUN_ID}))"
+            if [ -n "${BASELINE_RUN}" ]; then
+              echo "- **Baseline:** ${BASELINE_SHA} ([run](${RUN_URL}/${BASELINE_RUN})); the scores that moved are followed by their delta against it, in brackets"
+            else
+              echo "- **Baseline:** none available"
+            fi
+            echo ""
+            echo "| dataset | PDF | TEI produced | without TEI | processing time (s, all shards) |"
+            echo "|---|---|---|---|---|"
+            jq -rs 'group_by(.dataset)[]
+              | "| \(.[0].dataset) | \(map(.pdf) | add) | \(map(.tei) | add) | \(map(.pdf - .tei) | add) | \(map(.seconds) | add | round) |"' \
+              stats/*.json
+            echo ""
+          } > reports/overview.md
+          {
+            cat reports/overview.md
+            python3 .github/scripts/evaluation/compare_reports.py --reports reports --baseline baseline
+          } > reports/summary.md
+          cat reports/summary.md >> "$GITHUB_STEP_SUMMARY"
+
+          # a pull request comment holds at most 65536 characters
+          if [ "$(wc -m < reports/summary.md)" -le 65536 ]; then
+            cp reports/summary.md reports/comment.md
+          else
+            echo "::warning::The scores exceed the size of a pull request comment: the comment links to the run summary instead"
+            {
+              cat reports/overview.md
+              echo "The scores are too long for a comment: see the [run summary](${RUN_URL}/${GITHUB_RUN_ID})."
+            } > reports/comment.md
+          fi
+
+      # also what later runs download as their baseline
+      - name: Upload the reports
+        uses: actions/upload-artifact@v7
+        with:
+          name: ${{ env.ARTIFACT }}
+          path: reports/
+          retention-days: 90
+
+      # A new comment per run: an edited comment sends no notification, and the previous
+      # runs remain there to compare with. Fork pull requests get a read-only token, so
+      # their results are only in the job summary.
+      - name: Post the pull request comment
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        run: gh pr comment "${{ github.event.pull_request.number }}" --repo "${GITHUB_REPOSITORY}" --body-file reports/comment.md

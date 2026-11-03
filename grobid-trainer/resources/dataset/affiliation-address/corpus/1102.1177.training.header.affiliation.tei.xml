@@ -8,7 +8,7 @@
 						<affiliation>
 							<marker>1</marker>
 							<orgName type="institution">INFN</orgName>,
-							<orgName type="institution">Sezione di Pavia</orgName>,
+							<orgName type="department">Sezione di Pavia</orgName>,
 							<address>
 								<addrLine>via A. Bassi 6</addrLine>,
 								<postCode>I -27100</postCode>
@@ -33,7 +33,7 @@
 						<affiliation>
 							<orgName type="institution">INAF<lb/></orgName>                        and 
 							<orgName type="institution">INFN</orgName>,
-							<orgName type="institution">Sezioni di Trieste</orgName>,
+							<orgName type="department">Sezioni di Trieste</orgName>,
 							<address>
 								<country>Italy</country>
 							<lb/>
@@ -46,8 +46,8 @@
 							<orgName type="department">Dipartimento di Fisica</orgName>,
 							<orgName type="institution">Università di Pavia</orgName>,
 							and 
-							<orgName type="department">INFN</orgName>,
-							<orgName type="institution">Sezione di Pavia</orgName>,
+							<orgName type="institution">INFN</orgName>,
+							<orgName type="department">Sezione di Pavia</orgName>,
 							<address>
 								<addrLine>Via A. Bassi 6</addrLine>,
 								<postCode>I -<lb/>27100</postCode>
@@ -67,8 +67,10 @@
 								<settlement>Trieste</settlement>,
 								<country>Italy</country>, and
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">INFN</orgName>,
-							<orgName type="institution">Sezioni di Trieste</orgName>,
+							<orgName type="department">Sezioni di Trieste</orgName>,
 							<address>
 								<country>Italy</country>
 							</address>

@@ -26,11 +26,12 @@
 								<postBox>P.O. Box 9010</postBox>,
 								<postCode>6500 GL</postCode>
 								<settlement>Nĳmegen</settlement>,
-								<country>The Netherlands<lb/> 𝑐</country>
+								<country>The Netherlands</country><lb/>
 							</address>
 						</affiliation>
 
 						<affiliation>
+							<marker>𝑐</marker>
 							<orgName type="institution">Netherlands Institute for Radio Astronomy (ASTRON)</orgName>,
 							<address>
 								<addrLine>Postbus 2</addrLine>,

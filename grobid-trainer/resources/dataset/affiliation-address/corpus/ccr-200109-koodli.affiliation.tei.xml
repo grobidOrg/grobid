@@ -11,7 +11,7 @@
 							<orgName type="institution">Nokia Research Center</orgName>
 							<lb/>
 							<address>
-								<addrLine>313 Fairchild Drive<lb/> Mountain View</addrLine>,
+								<addrLine>313 Fairchild Drive</addrLine><lb/> <settlement>Mountain View</settlement>,
 								<region>CA</region>
 								<postCode>94043</postCode>
 							</address>
@@ -20,7 +20,7 @@
 							<orgName type="institution">Nokia Research Center</orgName>
 							<lb/>
 							<address>
-								<addrLine>313 Fairchild Drive<lb/> Mountain View</addrLine>,
+								<addrLine>313 Fairchild Drive</addrLine><lb/> <settlement>Mountain View</settlement>,
 								<region>CA</region>
 								<postCode>94043</postCode>
 							</address>

@@ -9,9 +9,7 @@
 
 						<affiliation>
 							<marker>a</marker>
-							<address>
-								<settlement>Heudiasyc</settlement>,
-							</address>
+							<orgName type="laboratory">Heudiasyc</orgName>,
 							<orgName type="laboratory">UMR CRNS 6599</orgName>,
 							<orgName type="institution">UTC</orgName>,
 							<address>
@@ -33,7 +31,7 @@
 							<marker>c</marker>
 							<orgName type="institution">VKI Water Quality Institute</orgName>,
 							<address>
-								<region>A , rhus</region>,
+								<settlement>A , rhus</settlement>,
 								<country>Denmark</country>
 							</address>
 						</affiliation>

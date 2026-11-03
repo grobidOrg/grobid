@@ -14,7 +14,7 @@
 							<address>
 								<settlement>Edmonton</settlement>,
 								<region>Alberta</region>,
-								<country>Canada,</country>
+								<country>Canada</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -25,7 +25,7 @@
 							<address>
 								<settlement>Edmonton</settlement>,
 								<region>Alberta</region>,
-								<country>Canada,</country>
+								<country>Canada</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -35,32 +35,32 @@
 							<address>
 								<settlement>Edmonton</settlement>,
 								<region>Alberta</region>,
-								<country>Canada,</country>
+								<country>Canada</country>,
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>4</marker>
 							<orgName type="department">Departments of Pediatrics and<lb/> Pharmacology</orgName>,
-							<orgName type="department">Rainbow Babies and Children&apos;s Hospital</orgName>,
+							<orgName type="institution">Rainbow Babies and Children&apos;s Hospital</orgName>,
 							<orgName type="institution">Case Western Reserve University</orgName>,
 							<orgName type="department">School of<lb/> Medicine</orgName>,
 							<address>
 								<settlement>Cleveland</settlement>,
 								<region>Ohio</region>,
-								<country>United States of America,</country>
+								<country>United States of America</country>,
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>5</marker>
 							<orgName type="laboratory">Division of Pediatric Cardiology</orgName>,
-							<orgName type="department">Department of<lb/> Pediatrics, Rainbow Babies and Children&apos;s Hospital</orgName>,
+							<orgName type="department">Department of<lb/> Pediatrics</orgName>, <orgName type="institution">Rainbow Babies and Children&apos;s Hospital</orgName>,
 							<orgName type="institution">Case Western Reserve University</orgName>,
 							<orgName type="department">School of Medicine</orgName>,
 							<lb/>
 							<address>
 								<settlement>Cleveland</settlement>,
 								<region>Ohio</region>,
-								<country>United States of America,</country>
+								<country>United States of America</country>,
 							</address>
 						</affiliation>
 						<affiliation>

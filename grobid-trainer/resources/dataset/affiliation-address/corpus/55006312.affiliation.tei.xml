@@ -45,7 +45,7 @@
 							<orgName type="institution">University<lb/> of Bologna</orgName>,
 							<address>
 								<addrLine>Via Massarenti</addrLine>,
-								<addrLine>1-40138</addrLine>,
+								<postCode>1-40138</postCode>,
 								<lb/>
 								<settlement>Bologna</settlement>,
 								<country>Italy</country>

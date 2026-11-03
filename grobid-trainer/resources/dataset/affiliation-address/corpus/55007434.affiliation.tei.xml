@@ -9,7 +9,7 @@
 
 						<affiliation>
 							<marker>1</marker>
-							<orgName type="department">Energy research Centre of the Netherlands (ECN)</orgName>,
+							<orgName type="institution">Energy research Centre of the Netherlands (ECN)</orgName>,
 							<address>
 								<postBox>P.O. Box 1</postBox>,
 								<postCode>1755 ZG</postCode>
@@ -25,7 +25,7 @@
 								<postBox>PO Box 6235</postBox>,
 								<postCode>5600 HE</postCode>,
 								<settlement>Eindhoven</settlement>,
-								<region>NL</region>
+								<country>NL</country>
 							<lb/>
 							</address>
 						</affiliation>
@@ -36,7 +36,7 @@
 								<postBox>PO Box 513</postBox>,
 								<postCode>5600 MB</postCode>,
 								<settlement>Eindhoven</settlement>,
-								<region>NL</region>
+								<country>NL</country>
 							<lb/>
 							</address>
 						</affiliation>
@@ -47,13 +47,13 @@
 								<addrLine>Nijenborgh 4</addrLine>,
 								<postCode>9747 AG</postCode>,
 								<settlement>Groningen</settlement>,
-								<region>NL</region>
+								<country>NL</country>
 							<lb/>
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>5</marker>
-							<orgName type="department">Dutch Polymer Institute (DPI)</orgName>,
+							<orgName type="institution">Dutch Polymer Institute (DPI)</orgName>,
 							<address>
 								<postBox>P.O. Box 902</postBox>,
 								<postCode>5600 AX</postCode>

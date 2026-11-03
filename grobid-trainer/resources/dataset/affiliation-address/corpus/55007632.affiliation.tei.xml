@@ -13,11 +13,11 @@
 							<address>
 								<settlement>Greenville</settlement>,
 								<region>North Carolina</region>
-								<postCode>27858 (</postCode>
+								<postCode>27858</postCode> (
 							</address>
 						</affiliation>
 						<affiliation>	
-							<orgName type="department">Sandia National Laboratories</orgName>,
+							<orgName type="institution">Sandia National Laboratories</orgName>,
 							<lb/>
 							<address>
 								<settlement>Albuquerque</settlement>,

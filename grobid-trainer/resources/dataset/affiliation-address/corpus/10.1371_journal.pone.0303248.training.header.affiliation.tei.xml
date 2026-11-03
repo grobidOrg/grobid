@@ -13,7 +13,7 @@
 							<orgName type="institution">Thammasat University</orgName>,
 							<address>
 								<settlement>Pathum Thani</settlement>,
-								<settlement>Thailand</settlement>,
+								<country>Thailand</country>,
 							</address>
 						</affiliation>
 						<affiliation>
@@ -25,7 +25,7 @@
 							<orgName type="institution">Khon Kaen University</orgName>,
 							<address>
 								<settlement>Khon Kaen</settlement>,
-								<settlement>Thailand</settlement>,
+								<country>Thailand</country>,
 							</address>
 						</affiliation>
 						<affiliation>

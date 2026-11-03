@@ -40,6 +40,7 @@ import org.grobid.core.data.Date;
 import org.grobid.core.data.Keyword;
 import org.grobid.core.data.Person;
 import org.grobid.core.data.util.AuthorAffiliationAssigner;
+import org.grobid.core.data.util.AuthorBlockFilter;
 import org.grobid.core.document.*;
 import org.grobid.core.engines.config.DebugCaptureContext;
 import org.grobid.core.engines.config.GrobidAnalysisConfig;
@@ -243,19 +244,21 @@ public class HeaderParser extends AbstractParser {
                     if (currentSegment.size() > 0)
                         authorSegments.add(currentSegment);
 
+                    List<List<Person>> authorBlocks = new ArrayList<>();
                     for (int k = 0; k < authorSegments.size(); k++) {
-                        if (authorSegments.get(k).size() == 0)
-                            continue;
                         List<Person> localAuthors = parsers.getAuthorParser()
                                 .processingHeaderWithLayoutTokens(
                                         authorSegments.get(k),
                                         doc.getPDFAnnotations(),
                                         config);
-                        if (localAuthors != null) {
-                            for (Person pers : localAuthors) {
-                                resHeader.addFullAuthor(pers);
-                            }
-                        }
+                        authorBlocks.add(localAuthors != null ? localAuthors : new ArrayList<>());
+                    }
+                    // keep the author list, drop later re-mentions and name lists placed after
+                    // the abstract (contacts, contributions, funding tables...)
+                    for (Person pers : AuthorBlockFilter.filter(
+                            authorBlocks,
+                            authorBlocksAfterAbstract(headerClusters))) {
+                        resHeader.addFullAuthor(pers);
                     }
                 }
 
@@ -892,6 +895,30 @@ public class HeaderParser extends AbstractParser {
     public BiblioItem resultExtraction(String result, List<LayoutToken> tokenizations, BiblioItem biblio) {
         TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.HEADER, result, tokenizations);
         return resultExtraction(result, tokenizations, biblio, clusteror.cluster());
+    }
+
+    /**
+     * For each author cluster (one author block each, see {@link #resultExtraction}), whether an
+     * abstract cluster precedes it. Null when the clusters are not available.
+     */
+    static List<Boolean> authorBlocksAfterAbstract(List<TaggingTokenCluster> clusters) {
+        if (clusters == null) {
+            return null;
+        }
+        List<Boolean> afterAbstract = new ArrayList<>();
+        boolean abstractSeen = false;
+        for (TaggingTokenCluster cluster : clusters) {
+            if (cluster == null) {
+                continue;
+            }
+            TaggingLabel label = cluster.getTaggingLabel();
+            if (label.equals(TaggingLabels.HEADER_ABSTRACT)) {
+                abstractSeen = true;
+            } else if (label.equals(TaggingLabels.HEADER_AUTHOR) && !cluster.concatTokens().isEmpty()) {
+                afterAbstract.add(abstractSeen);
+            }
+        }
+        return afterAbstract;
     }
 
     /**

@@ -10,9 +10,10 @@
 						<affiliation>
 							<orgName type="institution">University of Maine</orgName>
 							<lb/>
-							<orgName type="department">Advanced Structures and Composites Center<lb/> Orono</orgName>,
+							<orgName type="department">Advanced Structures and Composites Center<lb/></orgName>
 							<address>
-								<settlement>Maine</settlement>
+								<settlement>Orono</settlement>,
+								<region>Maine</region>
 								<postCode>04469</postCode>
 							</address>
 						</affiliation>

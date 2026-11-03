@@ -11,13 +11,13 @@
 							<orgName type="institution">Solvay Chemicals, Inc.</orgName>
 							<lb/>
 							<address>
-								<postBox>PO BOX</postBox>
-								<postCode>27328</postCode>
+								<postBox>PO BOX
+								27328</postBox>
 								<settlement>Houston</settlement>,
 								<region>TX</region>
 								<postCode>7722777328</postCode>
 							<lb/>
-								<addrLine>3333 Richmond Ave. Houston</addrLine>,
+								<addrLine>3333 Richmond Ave.</addrLine> <settlement>Houston</settlement>,
 								<region>Texas</region>
 								<postCode>77098</postCode>
 							</address>

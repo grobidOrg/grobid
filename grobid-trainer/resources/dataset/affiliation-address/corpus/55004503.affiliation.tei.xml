@@ -11,7 +11,7 @@
 							<orgName type="institution">Noveon, Inc.</orgName>
 							<lb/>
 							<address>
-								<addrLine>9911 Brecksville Road<lb/> Cleveland</addrLine>,
+								<addrLine>9911 Brecksville Road</addrLine><lb/> <settlement>Cleveland</settlement>,
 								<region>Ohio</region>
 								<postCode>44141</postCode>
 								<country>U. S. A.</country>

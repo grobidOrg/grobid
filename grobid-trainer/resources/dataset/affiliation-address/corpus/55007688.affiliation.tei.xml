@@ -10,8 +10,9 @@
 						<affiliation>
 							<orgName type="department">Language Technology Institute</orgName>
 							<lb/>
-							<orgName type="institution">Carnegie Mellon University<lb/> Pittsburgh</orgName>,
+							<orgName type="institution">Carnegie Mellon University</orgName><lb/>
 							<address>
+								<settlement>Pittsburgh</settlement>,
 								<region>PA</region>,
 								<postCode>15213</postCode>,
 								<country>USA</country>

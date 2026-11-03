@@ -30,7 +30,7 @@
 							<marker>3</marker>
 							<orgName type="department">Dipartimento di Fisica "E.R. Caianiello"</orgName>,
 							<lb/>
-							<orgName type="institution">Universitá di Salerno and INFN</orgName>,
+							<orgName type="institution">Universitá di Salerno</orgName> and <orgName type="institution">INFN</orgName>,
 							<lb/>
 							<address>
 								<postCode>84084</postCode>
@@ -104,12 +104,12 @@
 						</affiliation>
 
 						<affiliation>
-							<orgName type="department">SPIN-CNR</orgName>,
+							<orgName type="institution">SPIN-CNR</orgName>,
 							<lb/>
 							<orgName type="institution">Universitá di Salerno</orgName>,
 							<address>
 								<settlement>Fisciano</settlement>
-								<region>(SA)</region>,
+								(<region>SA</region>),
 							<lb/>
 								<country>Italy</country>;
 							</address>

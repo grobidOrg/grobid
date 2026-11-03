@@ -6,7 +6,7 @@
 						<author>
 
 						<affiliation>
-							<orgName type="institution">𝑎 Baylor University</orgName>,
+							<marker>𝑎</marker> <orgName type="institution">Baylor University</orgName>,
 							<lb/>
 							<address>
 								<settlement>Waco</settlement>,
@@ -17,7 +17,7 @@
                         </affiliation>
 
                         <affiliation>
-							<orgName type="institution">𝑏 The Citadel</orgName>,
+							<marker>𝑏</marker> <orgName type="institution">The Citadel</orgName>,
 							<lb/>
 							<address>
 								<settlement>Charleston</settlement>,

@@ -8,11 +8,15 @@
 						<author>
 
 						<affiliation>
-							<orgName type="department">International Computer Science Institute</orgName>,
+							<orgName type="institution">International Computer Science Institute</orgName>,
 							<lb/>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">University of South Florida</orgName>
 							<lb/> 
-							<orgName type="laboratory">Lawrence Berkeley National Laboratory</orgName>
+						</affiliation>
+						<affiliation>
+							<orgName type="institution">Lawrence Berkeley National Laboratory</orgName>
 						</affiliation>
 
 						</author>

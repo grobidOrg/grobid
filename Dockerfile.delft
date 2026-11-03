@@ -15,7 +15,7 @@
 # build builder image
 # -------------------
 
-FROM eclipse-temurin:21.0.12_8-jdk-noble AS builder
+FROM eclipse-temurin:21.0.12.1_1-jdk-noble AS builder
 
 USER root
 
@@ -80,13 +80,13 @@ RUN rm -rf grobid-source
 
 # Same image the builder starts from, so it costs no extra pull, but -- unlike `builder` --
 # its content does not move with the grobid source, which keeps the JEP layer cacheable.
-FROM eclipse-temurin:21.0.12_8-jdk-noble AS jdk
+FROM eclipse-temurin:21.0.12.1_1-jdk-noble AS jdk
 
 # -------------------
 # build runtime image
 # -------------------
 
-FROM eclipse-temurin:21.0.12_8-jre-noble
+FROM eclipse-temurin:21.0.12.1_1-jre-noble
 
 # setting locale is likely useless but to be sure
 ENV LANG=C.UTF-8
@@ -131,7 +131,7 @@ RUN mkdir -p /data \
     && ln -s /data ./data
 
 # install DeLFT
-RUN pip3 install --no-cache-dir delft==0.4.6
+RUN pip3 install --no-cache-dir delft==0.4.7
 
 # Build JEP with temporary access to full JDK (needs javac + JNI headers).
 # The bind mount is only visible during this RUN step — zero overhead in the final image.

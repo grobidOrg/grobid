@@ -208,17 +208,16 @@ public class DeLFTModel {
                     }
                 }
                 //jep.eval("K.clear_session()");
-            } catch (JepException e) {
-                LOGGER.error("DeLFT model labelling via JEP failed", e);
-            } catch (IOException e) {
-                LOGGER.error("DeLFT model labelling failed", e);
+            } catch (JepException | IOException e) {
+                throw new GrobidException("DeLFT model " + this.modelName + " labelling failed", e);
             } finally {
                 // No need to close the JEP instance here as it's managed by the pool
                 // and will be reused for other tasks
+                // the variables are missing when the labelling failed
                 try {
-                    jep.eval("del input");
-                    jep.eval("del x_all");
-                    jep.eval("del f_all");
+                    jep.eval("globals().pop('input', None)");
+                    jep.eval("globals().pop('x_all', None)");
+                    jep.eval("globals().pop('f_all', None)");
                 } catch (JepException e) {
                     LOGGER.error("DeLFT model labelling via JEP failed during cleanup. ", e);
                 }
@@ -234,9 +233,12 @@ public class DeLFTModel {
         try {
             result = JEPThreadPool.getInstance().call(new LabelTask(this.modelName, data, this.architecture));
         } catch (InterruptedException e) {
-            LOGGER.error("DeLFT model " + this.modelName + " labelling interrupted", e);
+            Thread.currentThread().interrupt();
+            throw new GrobidException("DeLFT model " + this.modelName + " labelling interrupted", e);
         } catch (ExecutionException e) {
-            LOGGER.error("DeLFT model " + this.modelName + " labelling failed", e);
+            if (e.getCause() instanceof GrobidException)
+                throw (GrobidException) e.getCause();
+            throw new GrobidException("DeLFT model " + this.modelName + " labelling failed", e.getCause());
         }
         // In some areas, GROBID currently expects tabs as feature separators.
         // (Same as in WapitiModel.label)

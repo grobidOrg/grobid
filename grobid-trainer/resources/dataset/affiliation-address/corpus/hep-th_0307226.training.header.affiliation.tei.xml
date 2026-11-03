@@ -8,8 +8,8 @@
 						<affiliation>
 							<orgName type="institution">INFN</orgName>,
 							<orgName type="department">Sezione di Napoli</orgName>,
-							<orgName type="institution">Complesso Universitario di Monte S. Angelo</orgName>,
 							<address>
+								<addrLine>Complesso Universitario di Monte S. Angelo</addrLine>,
 								<addrLine>Via Cintia</addrLine>,
 								<addrLine>Edi-<lb/>ficio N'</addrLine>,
 								<postCode>80126</postCode>
@@ -22,8 +22,8 @@
                         <affiliation>
 							<orgName type="department">Dipartimento di Scienze Fisiche</orgName>,
 							<orgName type="institution">Università Federico II di Napoli</orgName>,
-							<orgName type="institution">Complesso Universitario<lb/> di Monte S. Angelo</orgName>,
 							<address>
+								<addrLine>Complesso Universitario<lb/> di Monte S. Angelo</addrLine>,
 								<addrLine>Via Cintia</addrLine>,
 								<addrLine>Edificio N'</addrLine>,
 								<postCode>80126</postCode>

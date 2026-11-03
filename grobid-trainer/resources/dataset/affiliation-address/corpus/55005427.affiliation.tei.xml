@@ -22,7 +22,9 @@
 							<orgName type="institution">Faculté Polytechniques de Mons</orgName>,
 							<address>
 								<settlement>Mons</settlement>,
-								<addrLine>TCTS</addrLine>,
+							</address>
+							<orgName type="laboratory">TCTS</orgName>,
+							<address>
 								<addrLine>Av Copernic 1</addrLine>,
 								<postCode>7000</postCode>
 								<settlement>Mons</settlement>,

@@ -11,7 +11,7 @@
 							<marker>1</marker>
 							<orgName type="institution">Bio-Rad Laboratories</orgName>,
 							<address>
-								<addrLine>Marnes-La-Coquette</addrLine>,
+								<settlement>Marnes-La-Coquette</settlement>,
 								<country>France</country>.
 							<lb/>
 							</address>
@@ -53,14 +53,15 @@
 								<country>France</country>.
 							<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">CNRS</orgName>
 							<orgName type="laboratory">UMR 5160</orgName>,
 							<orgName type="department">Faculté de<lb/> Pharmacie</orgName>,
 							<address>
 								<addrLine>15 avenue Charles Flahault</addrLine>,
 								<postCode>34093</postCode>
-								<settlement>Montpellier</settlement>
-								<postCode>Cedex 5</postCode>,
+								<settlement>Montpellier Cedex 5</settlement>,
 								<country>France</country>.
 							</address>
 						</affiliation>

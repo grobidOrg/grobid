@@ -7,8 +7,8 @@
 
 						<affiliation>
 							<marker>a</marker>
-							<orgName type="institution">Instituto Nacional de Astrofísica</orgName>,
-							<orgName type="department">Óptica y Electrónica</orgName>,
+							<orgName type="institution">Instituto Nacional de Astrofísica,
+							Óptica y Electrónica</orgName>,
 							<address>
 								<addrLine>Luis Enrique Erro 1</addrLine>,
 								<addrLine>Tonantzintla</addrLine>,
@@ -25,9 +25,9 @@
 							<orgName type="department">Facultad de Ciencias Físico Matemáticas</orgName>,
 							<orgName type="institution">Benemérita Universidad Autónoma de Puebla</orgName>,
 							<lb/>
-							<orgName type="institution">Ciudad Universitaria</orgName>,
 							<address>
-								<settlement>Colonia San Manuel Puebla</settlement>,
+								<addrLine>Ciudad Universitaria</addrLine>,
+								<addrLine>Colonia San Manuel</addrLine> <settlement>Puebla</settlement>,
 								<country>México</country>
 							<lb/>
 							</address>

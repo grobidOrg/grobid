@@ -14,10 +14,12 @@
 							<orgName type="institution">Institut National de la Recherche<lb/> Agronomique (INRA)</orgName>,
 							<address>
 								<addrLine>Le Magneraud</addrLine>,
+								<settlement>Surgères</settlement>
 							</address>
+							and
 						</affiliation>
 						<affiliation>	
-							<orgName type="department">Surgères and GRTMV</orgName>,
+							<orgName type="department">GRTMV</orgName>,
 							<orgName type="department">Faculté de Médecine</orgName>,
 							<orgName type="institution">Centre Hospitalo<lb/> Universitaire</orgName>,
 							<address>
@@ -38,7 +40,7 @@
 						</affiliation>
 						<affiliation>		
 							<orgName type="institution">Institut National de la Santé et de la Recherche Médicale</orgName>,
-							<orgName type="department">Unité U478</orgName>,
+							<orgName type="laboratory">Unité U478</orgName>,
 							<orgName type="department">Institut<lb/> Fédératif de Recherche 02</orgName>,
 							<orgName type="department">Faculté de Médecine Xavier Bichat</orgName>,
 							<address>
@@ -48,10 +50,11 @@
 							</address>
 						</affiliation>	
 						<affiliation>	
-							<orgName type="department">Laboratoire de<lb/> Pharmacologie</orgName>,
+							<orgName type="laboratory">Laboratoire de<lb/> Pharmacologie</orgName>,
 							<orgName type="department">Faculté de Médecine</orgName>,
+							<!-- check: "Paris XII" is the university of the Faculté de Médecine (Université Paris XII, Créteil), not an address line; tagged as institution rather than extending the department name -->
+							<orgName type="institution">Paris XII</orgName>,
 							<address>
-								<addrLine>Paris XII</addrLine>,
 								<settlement>Créteil</settlement>,
 								<country>France</country>.
 							</address>
