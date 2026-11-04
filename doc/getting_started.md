@@ -5,34 +5,30 @@
 
 ## TL;DR
 
-- **Docker:** The easiest way to run Grobid is via Docker on Linux, Mac and Windows. 
+- **Docker:** The easiest way to run Grobid is via Docker on Linux, Mac and Windows.
 - **Clients**: Grobid is written in Java, but, fear not, various clients in Python and other languages are available. See [here](Grobid-service.md#clients-for-grobid-web-services) for more information.
 - **Consolidation:** Grobid can merge and reconcile extracted bibliographic data and citations using Crossref. With great power comes great responsibility, read [here](Consolidation.md) before using consolidation. **Consolidation has impact on performances**.
-- **Deep Learning & GPU:** Grobid’s best accuracy relies on deep learning models, which benefit from GPU acceleration. For fulltext-only extraction, use the CPU-only lightweight image. 
+- **Deep Learning & GPU:** Grobid’s best accuracy relies on deep learning models, which benefit from GPU acceleration. For fulltext-only extraction, use the CPU-only lightweight image.
 - **Production configuration**: See [here](Frequently-asked-questions.md#guidance-for-server-configuration-in-production) for tuning Grobid for production use.
 
 !!! tip
     Keep reading until the end of the page.
 
-## Using Grobid from the cloud  
+## Using Grobid from the cloud
 
-The simpler way to play with Grobid is to use the [Grobid instance](https://grobidOrg-grobid.hf.space) or [Mirror Grobid instance](https://grobidOrg-grobid2.hf.space) where a **light instance** of Grobid is deployed.
-You can use it to process a PDF file, or to test the Grobid web service. 
-The space is free and does not require any authentication.
-
-!!! note "Full (Deep Learning) instances available"
-    **Full instances**, running the Deep Learning models and producing better results (in particular for reference and citation extraction), are also deployed at [https://grobidOrg-grobid-full.hf.space](https://grobidOrg-grobid-full.hf.space) and the mirror [https://grobidOrg-grobid-full2.hf.space](https://grobidOrg-grobid-full2.hf.space).
+The simpler way to play with Grobid is to use the [Grobid instance](https://grobidOrg-grobid.hf.space) or [Mirror Grobid instance](https://grobidOrg-grobid-full2.hf.space).
+The space is free and does not require any authentication, it's supported by :hugging_face: which provides us a `CPU UPGRADE` instance for free.
 
 !!! warning "Grobid space is for demonstration only"
     This grobid space is not intended for production use, it is only a demonstration of Grobid capabilities. For production use, please deploy a local version or contact us.
 
 !!! tip "Quick AWS grobid deployment"
-    For quickly spin up and down a Grobid instance on Amazon Web Service EC2, you can check out the [aws-grobid](https://github.com/evamaxfield/aws-grobid) project. 
+    For quickly spin up and down a Grobid instance on Amazon Web Service EC2, you can check out the [aws-grobid](https://github.com/evamaxfield/aws-grobid) project.
 
 ## Running Grobid locally
 
-!!! tip 
-    The standard way to run Grobid locally is to use [Docker](https://docs.docker.com/engine/understanding-docker/) for starting a Grobid server. 
+!!! tip
+    The standard way to run Grobid locally is to use [Docker](https://docs.docker.com/engine/understanding-docker/) for starting a Grobid server.
 
 
 For installing Docker on your system, please visit the official Docker documentation [here](https://docs.docker.com/get-docker/).
@@ -45,7 +41,7 @@ Grobid docker images are available on both at [Docker Grobid Hub](https://hub.do
 
 For convenience, we provide two Grobid docker images:
 
-- the **full** image (docker tag `{version}-full`, e.g. `grobid/grobid:0.9.1-full`) provides the best accuracy, because it includes all the required Python and TensorFlow libraries, GPU support and all Deep Learning model resources. However, it requires more resources, ideally a GPU (it will be automatically detected on Linux). If you have a limited amount of PDF, a good machine, and prioritize [accuracy](Deep-Learning-models.md#recommended-deep-learning-models), use this Grobid flavor. To run this version of Grobid, the command is: 
+- the **full** image (docker tag `{version}-full`, e.g. `grobid/grobid:0.9.1-full`) provides the best accuracy, because it includes all the required Python and TensorFlow libraries, GPU support and all Deep Learning model resources. However, it requires more resources, ideally a GPU (it will be automatically detected on Linux). If you have a limited amount of PDF, a good machine, and prioritize [accuracy](Deep-Learning-models.md#recommended-deep-learning-models), use this Grobid flavor. To run this version of Grobid, the command is:
 
 ```console
 docker run --rm --gpus all --init --ulimit core=0 -p 8070:8070 grobid/grobid:0.9.1-full
