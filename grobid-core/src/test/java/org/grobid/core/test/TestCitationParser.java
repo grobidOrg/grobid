@@ -64,6 +64,20 @@ public class TestCitationParser extends EngineTest {
         assertTrue(res.size() > 2);
     }
 
+    /**
+     * A middle dot preceded by a digit (hydrate formulas) used to be normalised to a bullet
+     * in the feature vector only, desynchronising the labelled result from the tokens.
+     */
+    @Test
+    public void testCitationParser_middleDotAfterDigit_shouldNotFail() throws Exception {
+        String citation = "Pillay, V. et al. MgSO4 + H2O system at eutectic conditions and thermodynamic "
+                + "solubility products of MgSO4·12H2O(s) and MgSO4·7H2O(s). J Chem Eng Data 50, (2005).";
+        BiblioItem resCitation = engine.processRawReference(citation, 0);
+        assertNotNull(resCitation);
+        assertNotNull(resCitation.getTitle());
+        assertTrue(resCitation.getTitle().contains("MgSO4·12H2O(s)"));
+    }
+
     @Test
     public void testCitationParser1_withoutConsolidation() throws Exception {
         String citation1 = "A. Cau, R. Kuiper, and W.-P. de Roever. Formalising Dijkstra's development "

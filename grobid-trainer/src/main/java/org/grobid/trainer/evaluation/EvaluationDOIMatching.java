@@ -85,6 +85,7 @@ public class EvaluationDOIMatching {
     // xpath expressions for tei
     private static final String path_tei_ref = "//back/div/listBibl/biblStruct";
     private static final String path_tei_doi = "idno[@type=\"doi\"]/text()";
+    private static final String path_tei_pmid = "idno[@type=\"PMID\"]/text()";
 
     public EvaluationDOIMatching(String path) {
         this.evaluationFilePath = path;
@@ -128,8 +129,8 @@ public class EvaluationDOIMatching {
         long start = System.currentTimeMillis();
         ObjectMapper mapper = new ObjectMapper();
         for (File dir : refFiles) {
-            // get the PDF file in the directory
-            final File jsonFile = refFiles[0];
+            // the json file of the current iteration
+            final File jsonFile = dir;
 
             JsonNode rootNode = mapper.readTree(jsonFile);
 
@@ -399,6 +400,7 @@ public class EvaluationDOIMatching {
                 } else {
                     path_ref = path_tei_ref;
                     path_doi = path_tei_doi;
+                    path_pmid = path_tei_pmid;
                 }
                 NodeList nodeList = (NodeList) xp.compile(path_ref)
                         .evaluate(gold.getDocumentElement(), XPathConstants.NODESET);
@@ -415,11 +417,13 @@ public class EvaluationDOIMatching {
                         String doi = nodeDOI.getNodeValue();
                         refBib.setDOI(doi);
                     }
-                    NodeList nodeListPMID = (NodeList) xp.compile(path_pmid).evaluate(ref, XPathConstants.NODESET);
-                    if (nodeListPMID.getLength() > 0) {
-                        Node nodePMID = nodeListPMID.item(0);
-                        String pmid = nodePMID.getNodeValue();
-                        refBib.setPMID(pmid);
+                    if (path_pmid != null) {
+                        NodeList nodeListPMID = (NodeList) xp.compile(path_pmid).evaluate(ref, XPathConstants.NODESET);
+                        if (nodeListPMID.getLength() > 0) {
+                            Node nodePMID = nodeListPMID.item(0);
+                            String pmid = nodePMID.getNodeValue();
+                            refBib.setPMID(pmid);
+                        }
                     }
                     goldReferences.add(refBib);
                 }

@@ -4583,6 +4583,11 @@ public class BiblioItem {
 
         TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.HEADER, labeledResult, tokenizations);
         List<TaggingTokenCluster> clusters = clusteror.cluster();
+        // the affiliation and address following an editor ("Editor: X, University Y, Country") are the
+        // editor's: they are not collected with the authors' affiliations, which would link them to an author.
+        // A separator labelled <other> between them ("Reviewing editor: <editor>X</editor>, <affiliation>...")
+        // keeps the editor context.
+        boolean afterEditor = false;
         for (TaggingTokenCluster cluster : clusters) {
             if (cluster == null) {
                 continue;
@@ -4596,8 +4601,17 @@ public class BiblioItem {
             theList.addAll(clusterTokens);
             labeledTokens.put(clusterLabel.getLabel(), theList);
 
-            if (clusterLabel.equals(TaggingLabels.HEADER_AFFILIATION)
-                    || clusterLabel.equals(TaggingLabels.HEADER_ADDRESS)) {
+            boolean affiliationOrAddress = clusterLabel.equals(TaggingLabels.HEADER_AFFILIATION)
+                    || clusterLabel.equals(TaggingLabels.HEADER_ADDRESS);
+            boolean separator = clusterLabel.equals(TaggingLabels.HEADER_OTHER)
+                    && StringUtils.containsOnly(LayoutTokensUtil.toText(clusterTokens), TextUtilities.delimiters);
+            if (clusterLabel.equals(TaggingLabels.HEADER_EDITOR)) {
+                afterEditor = true;
+            } else if (!affiliationOrAddress && !separator) {
+                afterEditor = false;
+            }
+
+            if (affiliationOrAddress && !afterEditor) {
                 if (affiliationAddresslabeledTokens == null)
                     affiliationAddresslabeledTokens = new ArrayList<>();
                 if (!affiliationAddresslabeledTokens.contains(clusterTokens))

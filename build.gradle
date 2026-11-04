@@ -1,8 +1,34 @@
+buildscript {
+    // The shadow plugin (8.3.x and 9.x alike) declares log4j-core at runtime scope but only touches
+    // it in Log4j2PluginsCacheFileTransformer, which none of the shadowJar tasks here register via
+    // transform(). GROBID itself logs through slf4j/logback. Strip log4j from shadow's dependencies
+    // rather than chase its advisories with version pins. The rule is scoped to shadow on purpose:
+    // a blanket classpath exclude would also silently drop log4j from any future plugin that needs it.
+    // plexus-utils stays: shadow's transformers (including the ServiceFileTransformer behind
+    // mergeServiceFiles()) and relocation selectors use it, and shadow declares 4.0.2, below the
+    // CVE-2025-67030 fix (4.0.3).
+    dependencies {
+        components {
+            withModule('com.gradleup.shadow:shadow-gradle-plugin') {
+                allVariants {
+                    withDependencies { deps ->
+                        deps.removeAll { it.group == 'org.apache.logging.log4j' }
+                    }
+                }
+            }
+        }
+        constraints {
+            classpath('org.codehaus.plexus:plexus-utils:4.1.0') {
+                because 'CVE-2025-67030: directory traversal in extractFile, fixed in plexus-utils 4.0.3'
+            }
+        }
+    }
+}
+
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '2.2.20' apply false
+    id 'org.jetbrains.kotlin.jvm' version '2.4.10' apply false
     id 'com.gradleup.shadow' version '8.3.10' apply false
     id 'com.adarshr.test-logger' version '4.0.0' apply false
-    id 'com.github.kt3k.coveralls' version '2.12.2' apply false
     id 'net.researchgate.release' version '3.1.0' apply false
     id 'com.diffplug.spotless' version '8.2.1' apply false
 }
@@ -50,7 +76,6 @@ def getJavaLibraryPath = {
 }
 
 apply plugin: 'jacoco'
-apply plugin: 'com.github.kt3k.coveralls'
 
 jacoco {
     toolVersion = '0.8.14'
@@ -113,7 +138,11 @@ subprojects {
                 'src/main/java/org/grobid/core/analyzers/GrobidFilterDeleteSpaceBetweenSameAlphabet.java',
                 'src/main/java/org/grobid/core/utilities/matching/DiffMatchPatch.java'
             )
-            eclipse().configFile(rootProject.file('eclipse-formatter.xml'))
+            // The formatter is provisioned from an Eclipse mirror: download.eclipse.org fails
+            // to serve the GitHub runners at times ("Failed to provision P2 dependencies").
+            eclipse()
+                .configFile(rootProject.file('eclipse-formatter.xml'))
+                .withP2Mirrors(['https://download.eclipse.org/': 'https://ftp.fau.de/eclipse/'])
             removeUnusedImports()
             importOrder('java', 'javax', '', 'org.grobid')
             licenseHeaderFile(rootProject.file('config/license-header.txt'))
@@ -207,10 +236,10 @@ subprojects {
         // powermock-module-junit4; declared explicitly now that PowerMock is removed.
         testImplementation 'junit:junit:4.13.2'
         testImplementation 'org.easymock:easymock:5.6.0'
-        testImplementation "org.mockito:mockito-core:5.20.0"
-        mockitoAgent("org.mockito:mockito-core:5.20.0") { transitive = false }
-        testImplementation "org.xmlunit:xmlunit-matchers:2.10.3"
-        testImplementation "org.xmlunit:xmlunit-legacy:2.10.3"
+        testImplementation "org.mockito:mockito-core:5.24.0"
+        mockitoAgent("org.mockito:mockito-core:5.24.0") { transitive = false }
+        testImplementation "org.xmlunit:xmlunit-matchers:2.14.0"
+        testImplementation "org.xmlunit:xmlunit-legacy:2.14.0"
         testImplementation "org.hamcrest:hamcrest-all:1.3"
         testImplementation 'org.jetbrains.kotlin:kotlin-test'
 
@@ -223,11 +252,22 @@ subprojects {
         implementation 'org.apache.commons:commons-text:1.15.0'
         implementation "com.google.guava:guava:33.6.0-jre"
         implementation "org.apache.httpcomponents:httpclient:4.5.14"
-        implementation "black.ninia:jep:4.3.1"
+        implementation "black.ninia:jep:4.3.2"
         implementation 'com.github.pemistahl:lingua:1.2.2'
+        // lingua 1.2.2 (its latest release) depends on moshi 1.13.0, which brings okio 2.10.0
+        // (CVE-2023-3635, fixed in okio 3.4.0). moshi 1.15.2, same major line, moves to okio 3.7.0;
+        // moshi-kotlin is kept at the same version as moshi.
+        constraints {
+            implementation('com.squareup.moshi:moshi:1.15.2') {
+                because 'CVE-2023-3635: okio < 3.4.0 via moshi 1.13.0; moshi 1.15.2 brings okio 3.7.0'
+            }
+            implementation('com.squareup.moshi:moshi-kotlin:1.15.2') {
+                because 'keep moshi-kotlin aligned with moshi'
+            }
+        }
 
-        implementation "com.fasterxml.jackson.core:jackson-core:2.21.5"
-        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.5"
+        implementation "com.fasterxml.jackson.core:jackson-core:2.21.7"
+        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.7"
         implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.4"
     }
 
@@ -246,8 +286,23 @@ subprojects {
         useJUnitPlatform()
 
         testLogging.showStandardStreams = true
-        // enable for having separate test executor for different tests
-        forkEvery = 1
+
+        // One JVM per test task, not one per test class.
+        //
+        // This was forkEvery = 1, which spawns a fresh JVM for every test class -- 109 of
+        // them, run strictly one at a time (maxParallelForks is 1, and
+        // org.gradle.workers.max=1 in gradle.properties would cap it regardless). Each
+        // start pays JVM boot, the 1g heap below, the Mockito -javaagent, and
+        // java.library.path native library loading.
+        //
+        // Measured locally with `test --rerun-tasks -PskipCoverage`, same machine:
+        // 9m20s at forkEvery = 1 against 4m07s here, running an identical 812 tests across
+        // 109 classes with no failures. The difference is almost entirely process startup.
+        //
+        // The tests do share a JVM now, so anything depending on per-class isolation --
+        // static state in GrobidProperties, or a native library loaded through
+        // LibraryLoader -- would surface here rather than being papered over.
+        forkEvery = 0
         maxHeapSize = "1024m"
 
         def javaLibraryPath = getJavaLibraryPath()
@@ -289,10 +344,10 @@ project("grobid-core") {
         // Logs — slf4j 2.0.x + logback 1.5.x must move together: OpenNLP 2.5.x (and Dropwizard 5) pull
         // slf4j-api 2.0.x, whose ServiceLoader binding (SLF4JServiceProvider) only exists in logback 1.5.x.
         // logback 1.2.x would leave slf4j with no provider (NOP logging) in batch/standalone mode.
-        implementation 'org.slf4j:slf4j-api:2.0.17'
-        implementation 'ch.qos.logback:logback-classic:1.5.26'
+        implementation 'org.slf4j:slf4j-api:2.0.19'
+        implementation 'ch.qos.logback:logback-classic:1.5.38'
 
-        implementation "org.apache.pdfbox:pdfbox:2.0.36"
+        implementation "org.apache.pdfbox:pdfbox:2.0.37"
 
         api "xerces:xercesImpl:2.12.2"
         // jsonic has no direct GROBID usage, but the bundled langdetect localLib (the default
@@ -300,13 +355,13 @@ project("grobid-core") {
         // runtime-only dependency rather than exposing it on grobid-core's compile API.
         runtimeOnly "net.arnx:jsonic:1.3.10"
         api "net.sf.saxon:Saxon-HE:9.6.0-9"
-        api "xom:xom:1.3.9"
+        api "xom:xom:1.4.6"
         api 'javax.xml.bind:jaxb-api:2.3.0'
 
-        implementation "joda-time:joda-time:2.14.0"
-        implementation "org.apache.lucene:lucene-analyzers-common:4.5.1"
-        implementation 'black.ninia:jep:4.3.1'
-        implementation 'org.apache.opennlp:opennlp-tools:2.5.9'
+        implementation "joda-time:joda-time:2.15.0"
+        implementation "org.apache.lucene:lucene-analyzers-common:4.10.4"
+        implementation 'black.ninia:jep:4.3.2'
+        implementation 'org.apache.opennlp:opennlp-tools:2.5.11'
 
         // NOTE: jruby-complete bundles a vulnerable BouncyCastle (CVE-2026-5598) under its gem stdlib,
         // but GROBID only uses jruby for the optional, non-default Pragmatic sentence segmenter, which
@@ -315,7 +370,7 @@ project("grobid-core") {
         // we leave it as-is and wait for an upstream jruby release with BouncyCastle >= 1.84.
         implementation "org.jruby:jruby-complete:9.4.12.1"
 
-        shadedLib "org.apache.lucene:lucene-analyzers-common:4.5.1"
+        shadedLib "org.apache.lucene:lucene-analyzers-common:4.10.4"
     }
 
     jar {
@@ -436,22 +491,50 @@ project(":grobid-service") {
         // Dropwizard 5.0.1 ships Jetty 12.1.5, but CVE-2026-2332 (HTTP request smuggling) is only fixed
         // on the 12.1.x line at 12.1.7+. Import the Jetty BOMs at 12.1.9 so every Jetty artifact is
         // forced past the vulnerable version (Gradle picks the higher of the two BOM-managed versions).
-        implementation platform('org.eclipse.jetty:jetty-bom:12.1.9')
-        implementation platform('org.eclipse.jetty.ee10:jetty-ee10-bom:12.1.9')
+        implementation platform('org.eclipse.jetty:jetty-bom:12.1.14')
+        implementation platform('org.eclipse.jetty.ee10:jetty-ee10-bom:12.1.14')
 
-        implementation 'io.dropwizard:dropwizard-bom:5.0.1'
-        implementation 'io.dropwizard:dropwizard-core:5.0.1'
-        implementation 'io.dropwizard:dropwizard-assets:5.0.1'
-        implementation 'io.dropwizard:dropwizard-testing:5.0.1'
+        implementation 'io.dropwizard:dropwizard-bom:5.0.2'
+        implementation 'io.dropwizard:dropwizard-core:5.0.2'
+        implementation 'io.dropwizard:dropwizard-assets:5.0.2'
+        implementation 'io.dropwizard:dropwizard-testing:5.0.2'
         implementation 'io.dropwizard.modules:dropwizard-testing-junit4:5.0.0'
-        implementation 'io.dropwizard:dropwizard-forms:5.0.1'
-        implementation 'io.dropwizard:dropwizard-client:5.0.1'
-        implementation 'io.dropwizard:dropwizard-auth:5.0.1'
-        implementation 'io.dropwizard.metrics:metrics-core:4.2.38'
-        implementation 'io.dropwizard.metrics:metrics-servlets:4.2.38'
-        implementation 'io.dropwizard:dropwizard-json-logging:5.0.1'
+        implementation 'io.dropwizard:dropwizard-forms:5.0.2'
+        implementation 'io.dropwizard:dropwizard-client:5.0.2'
+        implementation 'io.dropwizard:dropwizard-auth:5.0.2'
+        implementation 'io.dropwizard.metrics:metrics-core:4.2.40'
+        implementation 'io.dropwizard.metrics:metrics-servlets:4.2.40'
+        implementation 'io.dropwizard:dropwizard-json-logging:5.0.2'
 
-        implementation "org.apache.pdfbox:pdfbox:2.0.36"
+        // dropwizard-client 5.0.2 brings httpclient5 5.6.1, which declares httpcore5-h2 5.4 (and httpcore5
+        // 5.4, raised to 5.4.2 by dropwizard). Both are affected by two memory-exhaustion DoS issues in
+        // core5 <= 5.4.2, fixed in 5.4.3: CVE-2026-54399 (HTTP/1.1 parser, excessive headers) and
+        // CVE-2026-54428 (HTTP/2 HPACK decoder, oversized header blocks). Hold both core5 artifacts at
+        // 5.4.3 until an upstream bump.
+        // httpclient5 5.6.1 (also via dropwizard-client) leaks pooled connections on a
+        // Content-Encoding decode error (CVE-2026-64607, fixed in 5.6.3); 5.6.4 is the current 5.6.x
+        // and itself declares httpcore5 5.4.3. The dropwizard-bom manages logback at 1.5.33, which
+        // still has CVE-2026-10532 (object injection through HardenedObjectInputStream, fixed in
+        // 1.5.34): align the service on the same 1.5.38 as grobid-core and grobid-trainer.
+        constraints {
+            implementation('org.apache.httpcomponents.core5:httpcore5:5.4.3') {
+                because 'CVE-2026-54399 and CVE-2026-54428: header-based DoS, fixed in httpcore5 5.4.3'
+            }
+            implementation('org.apache.httpcomponents.core5:httpcore5-h2:5.4.3') {
+                because 'CVE-2026-54399 and CVE-2026-54428: header-based DoS, fixed in httpcore5 5.4.3'
+            }
+            implementation('org.apache.httpcomponents.client5:httpclient5:5.6.4') {
+                because 'CVE-2026-64607: connection leak on decode error, fixed in httpclient5 5.6.3'
+            }
+            implementation('ch.qos.logback:logback-classic:1.5.38') {
+                because 'CVE-2026-10532 and CVE-2026-9828: fixed in logback 1.5.34 / 1.5.33'
+            }
+            implementation('ch.qos.logback:logback-core:1.5.38') {
+                because 'CVE-2026-10532 and CVE-2026-9828: fixed in logback 1.5.34 / 1.5.33'
+            }
+        }
+
+        implementation "org.apache.pdfbox:pdfbox:2.0.37"
         implementation "io.prometheus:simpleclient_dropwizard:0.16.0"
         implementation "io.prometheus:simpleclient_servlet_jakarta:0.16.0"
         implementation "io.prometheus:simpleclient_hotspot:0.16.0"
@@ -519,11 +602,11 @@ project(":grobid-trainer") {
         implementation("me.tongfei:progressbar:0.9.5") {
             exclude group: 'org.jline', module: 'jline'
         }
-        implementation "org.jline:jline-terminal:3.21.0"
+        implementation "org.jline:jline-terminal:3.30.16"
 
         // logs — see grobid-core: slf4j 2.0.x needs logback 1.5.x for its ServiceLoader binding.
-        implementation 'org.slf4j:slf4j-api:2.0.17'
-        implementation 'ch.qos.logback:logback-classic:1.5.26'
+        implementation 'org.slf4j:slf4j-api:2.0.19'
+        implementation 'ch.qos.logback:logback-classic:1.5.38'
     }
 
     configurations {
@@ -651,6 +734,7 @@ project(":grobid-trainer") {
     // ./gradlew checkEvalConfig
     // ./gradlew jatsEval -Pp2t=/path/to/goldenSet
     // ./gradlew jatsEval -Pp2t=/path/to/goldenSet -Prun=1 -PfileRatio=0.1
+    // ./gradlew jatsEval -Pp2t=/path/to/goldenSet -Prun=1 -PconsolidateHeader=0   (no consolidation)
     // ./gradlew teiEval -Pp2t=/path/to/goldenSet
     // ./gradlew PrepareDOIMatching -Pp2t=ABS_PATH_TO_PMC/PMC_sample_1943
     // ./gradlew EvaluateDOIMatching -Pp2t=ABS_PATH_TO_PMC/PMC_sample_1943
@@ -658,12 +742,16 @@ project(":grobid-trainer") {
     // Pre-flight check of grobid.yaml before running the end-to-end evaluation:
     // verifies biblio-glutton consolidation is enabled and reachable, and that the
     // DeLFT-recommended models are set to engine: "delft". Fails (exit 1) if not.
-    // Pass -PcheckMode=warn to only report problems without failing (exit 0).
+    // Pass -PcheckMode=warn to only report problems without failing (exit 0), and
+    // -PcheckConsolidation=false to skip the biblio-glutton check (evaluation without consolidation).
     task(checkEvalConfig, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
         mainClass = 'org.grobid.trainer.evaluation.EvaluationConfigCheck'
         classpath = sourceSets.main.runtimeClasspath
         if (getArg('checkMode', 'strict') == 'warn') {
             args 'warn'
+        }
+        if (getArg('checkConsolidation', 'true') == 'false') {
+            args 'skip-consolidation'
         }
         def javaLibraryPath = getJavaLibraryPath()
         if (JavaVersion.current().compareTo(JavaVersion.VERSION_1_8) > 0) {
@@ -686,6 +774,7 @@ project(":grobid-trainer") {
         }
         systemProperty "java.library.path", "${javaLibraryPath}"
         systemProperty "grobid.progressbar", getArg('progressbar', 'auto')
+        systemProperty "grobid.evaluation.consolidateHeader", getArg('consolidateHeader', '1')
     }
 
     task(teiEval, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
@@ -701,6 +790,7 @@ project(":grobid-trainer") {
         }
         systemProperty "java.library.path", "${javaLibraryPath}"
         systemProperty "grobid.progressbar", getArg('progressbar', 'auto')
+        systemProperty "grobid.evaluation.consolidateHeader", getArg('consolidateHeader', '1')
     }
 
     task(PrepareDOIMatching, dependsOn: 'classes', type: JavaExec, group: 'modelevaluation') {
@@ -737,6 +827,24 @@ project(":grobid-trainer") {
 
 /** JACOCO **/
 
+// Coverage instrumentation is opt-out, for CI legs that do not publish it.
+//
+// The jacoco agent attaches to every forked test JVM and instruments classes as they load.
+// Only one CI leg publishes it (to Coveralls); on the others that cost is paid and thrown away.
+//
+// configureEach (rather than a plain withType) so this resolves after the subprojects have
+// applied the jacoco plugin, and findByType so projects without it are simply skipped.
+if (providers.gradleProperty('skipCoverage').present) {
+    allprojects {
+        tasks.withType(Test).configureEach {
+            def jacocoExtension = it.extensions.findByType(JacocoTaskExtension)
+            if (jacocoExtension != null) {
+                jacocoExtension.enabled = false
+            }
+        }
+    }
+}
+
 tasks.register("codeCoverageReport", JacocoReport) {
     // If a subproject applies the 'jacoco' plugin, add the result it to the report
     subprojects { subproject ->
@@ -756,7 +864,7 @@ tasks.register("codeCoverageReport", JacocoReport) {
         }
     }
 
-    // XML -> coveralls,
+    // XML -> Coveralls (uploaded by the coverallsapp/github-action step in CI),
     // HTML -> for manual check
     reports {
         xml.required = true
@@ -765,15 +873,6 @@ tasks.register("codeCoverageReport", JacocoReport) {
         html.required = true
     }
 
-}
-
-/** COVERALLS **/
-coveralls {
-        sourceDirs = files(subprojects.findAll { it.plugins.hasPlugin('java') }.sourceSets.main.allSource.srcDirs).files.absolutePath
-}
-
-tasks.coveralls {
-    dependsOn codeCoverageReport
 }
 
 wrapper {

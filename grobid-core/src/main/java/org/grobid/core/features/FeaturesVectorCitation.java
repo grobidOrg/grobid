@@ -268,8 +268,9 @@ public class FeaturesVectorCitation {
                 continue;
             }
 
-            // parano normalisation
-            text = UnicodeUtil.normaliseTextAndRemoveSpaces(text);
+            // tokens are already normalised before tokenisation, normalising a sub-token again
+            // could alter it (see UnicodeUtil.removeSpaces), so we only remove the spaces
+            text = UnicodeUtil.removeSpaces(text);
             if (text.trim().length() == 0) {
                 continue;
             }

@@ -89,6 +89,10 @@ public class EndToEndEvaluation {
     public static final double minLevenshteinDistance = 0.8;
     public static final double minRatcliffObershelpSimilarity = 0.95;
 
+    // header consolidation applied when processing the PDFs (0: none, 1-3: see GrobidAnalysisConfig),
+    // set with -PconsolidateHeader; citations and funders are never consolidated
+    private static int consolidateHeader = 1;
+
     // the list of labels considered for the evaluation
     // the list of fields considered for the evaluation
     private List<FieldSpecification> headerFields = null;
@@ -115,7 +119,7 @@ public class EndToEndEvaluation {
             try {
                 engine = Engine.getEngine(true);
                 GrobidAnalysisConfig config = GrobidAnalysisConfig.builder()
-                        .consolidateHeader(1)
+                        .consolidateHeader(consolidateHeader)
                         .consolidateCitations(0)
                         .consolidateFunders(0)
                         .withPreprocessImages(true)
@@ -1092,6 +1096,9 @@ public class EndToEndEvaluation {
                                     grobidResult += " " + res;
                                 // basic normalisation
                                 grobidResult = basicNormalization(grobidResult);
+                                if (fieldName.equals("doi")) {
+                                    grobidResult = identifierNormalization(grobidResult);
+                                }
                                 //System.out.println("Grobid: " + fieldName + ":\t" + grobidResult);
                                 grobidResults = new ArrayList<>();
                                 grobidResults.add(grobidResult);
@@ -1135,6 +1142,9 @@ public class EndToEndEvaluation {
                                     goldResult += " " + res;
                                 // basic normalisation
                                 goldResult = basicNormalization(goldResult);
+                                if (fieldName.equals("doi")) {
+                                    goldResult = identifierNormalization(goldResult);
+                                }
                                 if (fieldName.equals("abstract")) {
                                     // some additional cleaning for abstract is required, because PMC and bioRxiv
                                     // tends to put the useless abstract title "Abstract" together with the abstract
@@ -1843,6 +1853,11 @@ public class EndToEndEvaluation {
             removeFieldsFromEvaluation(Arrays.asList("contribution_stmt", "conflict_stmt"), fulltextFields);
         }
 
+        if (StringUtils.containsIgnoreCase(xmlInputPath, "biorxiv")) {
+            // the DOI is present in the bioRxiv XML, but the preprint PDFs do not print it !
+            removeFieldsFromEvaluation(Arrays.asList("doi"), headerFields);
+        }
+
         if (StringUtils.containsIgnoreCase(xmlInputPath, "pmc")) {
             // remove availability and funding statements from PMC (not covered, and it would make metrics not comparable over time)
             removeFieldsFromEvaluation(
@@ -2274,6 +2289,18 @@ public class EndToEndEvaluation {
                 }
             }
         }
+
+        String consolidation = System.getProperty("grobid.evaluation.consolidateHeader", "1");
+        try {
+            consolidateHeader = Integer.parseInt(consolidation.trim());
+        } catch (NumberFormatException e) {
+            consolidateHeader = -1;
+        }
+        if (consolidateHeader < 0 || consolidateHeader > 3) {
+            System.err.println("Invalid header consolidation '" + consolidation + "', must be in [0-3]");
+            System.exit(1);
+        }
+        System.out.println("Header consolidation: " + consolidateHeader);
 
         GrobidModels.Flavor parsedFlavor = null;
         if (args.length > 4) {

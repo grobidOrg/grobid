@@ -129,6 +129,14 @@ public class DocumentSource {
 
         pdfToXml.append(" -fullFontName -noLineNumbers");
 
+        // Drop glyphs lying entirely outside the current clip path. Figures embedded as
+        // PDF Form XObjects often carry the (clipped, invisible) text of the page they were
+        // exported from; without this, whole paragraphs and section headings are extracted
+        // two or three times. Requires pdfalto >= 0.6.3 (-discardClippedText).
+        if (GrobidProperties.isPdfaltoDiscardClippedText()) {
+            pdfToXml.append(" -discardClippedText");
+        }
+
         if (!withImage) {
             pdfToXml.append(" -onlyGraphsCoord ");
         }
