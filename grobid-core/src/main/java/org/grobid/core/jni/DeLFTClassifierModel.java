@@ -164,9 +164,10 @@ public class DeLFTClassifierModel {
                 // and will be reused for other tasks
                 // cleaning
                 try {
-                    // the variables are missing when the prediction failed
-                    jep.eval("globals().pop('jsondict', None)");
-                    jep.eval("globals().pop('input', None)");
+                    // the variables are missing when the prediction failed; exec, not eval:
+                    // eval echoes the value of an expression, here the whole popped input
+                    jep.exec("globals().pop('jsondict', None)");
+                    jep.exec("globals().pop('input', None)");
                 } catch (JepException e) {
                     LOGGER.error("DeLFT model classification via JEP failed", e);
                 }

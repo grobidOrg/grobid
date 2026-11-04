@@ -102,7 +102,17 @@ Title encoding is realized following the TEI inline scheme:
     </docTitle>
 ```
 
-Subtitles are labelled similarly as title but as an independent field. It's important to keep a break (in term of XML tagging) between the main title and possible subtitles, even if there are next to each other in the text stream.
+Subtitles and translated titles are labelled similarly as title but as an independent field. It's important to keep a break (in term of XML tagging) between the main title and possible subtitles, even if there are next to each other in the text stream.
+
+```xml
+    <docTitle>
+	    <titlePart>RESEARCH DATA IN PALEOBOTANY: PETROGRAPHIC<lb/> THIN SECTIONS FOSSIL WOOD DATASET<lb/></titlePart>
+	</docTitle>
+
+    <docTitle>
+	    <titlePart>Dados de pesquisa em paleobotânica: conjunto de dados petrográficos de lâminas delgadas de<lb/> lenhos fósseis<lb/></titlePart>
+    </docTitle>
+```
 
 Running titles are not labelled at all.
 
