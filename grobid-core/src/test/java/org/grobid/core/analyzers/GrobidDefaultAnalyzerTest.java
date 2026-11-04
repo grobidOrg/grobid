@@ -15,6 +15,7 @@
  */
 package org.grobid.core.analyzers;
 
+import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.hasSize;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
@@ -60,5 +61,30 @@ public class GrobidDefaultAnalyzerTest {
     @Test
     public void testTokenizeWithLayoutToken_emptyText() {
         assertThat(target.tokenizeWithLayoutToken(""), hasSize(0));
+    }
+
+    @Test
+    public void testTokenizeShouldSplitAngleBracketsAroundUrl() {
+        // <...> around a URL is the RFC 3986 Appendix C convention and is common in
+        // reference lists; the brackets must not fuse to the scheme or to the last token
+        assertThat(
+                target.tokenize("<http://example.org/x>"),
+                contains(
+                        "<",
+                        "http",
+                        ":",
+                        "/",
+                        "/",
+                        "example",
+                        ".",
+                        "org",
+                        "/",
+                        "x",
+                        ">"));
+    }
+
+    @Test
+    public void testTokenizeShouldSplitAngleBracketsBetweenWords() {
+        assertThat(target.tokenize("a<b>c"), contains("a", "<", "b", ">", "c"));
     }
 }
