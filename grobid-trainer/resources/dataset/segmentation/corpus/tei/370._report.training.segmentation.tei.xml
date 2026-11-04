@@ -4,7 +4,7 @@
 		<fileDesc xml:id="_0"/>
 	</teiHeader>
 	<text xml:lang="en">
-			<page>1 <lb/></page>
+			<front>1 <lb/></front>
 
 			<front>______________________________________________________________________________ <lb/>Network of Workstations Active Messages Target for <lb/>Ptolemy C Code Generation <lb/>by Patrick Warner <lb/>______________________________________________________________________________ <lb/>Memorandum No. UCB/ERL M97/8 <lb/>January 24, 1997 <lb/>Submitted to the Department of Electrical Engineering and Computer Science, University of Cal-<lb/>ifornia at Berkeley, in partial satisfaction of the requirements for the degree of Master of Science, <lb/>Plan II. <lb/>2 <lb/>Abstract: <lb/>Ptolemy is a software environment for simulating, prototyping, and synthesizing heterogeneous <lb/>systems. For studying network, parallel, and distributed systems, a Ptolemy Code Generation in <lb/>C (CGC) domain target using Active Messages (AM) on a Network of Workstations (NOW) <lb/>is a valuable tool. Active messages provide a low-overhead, portable communications protocol <lb/>that can take advantage of performance improvements in the underlying network. A NOW pro-<lb/>vides a parallel platform to study Ptolemy simulations on. This project implements a NOW AM <lb/>target for Ptolemy&apos;s CGC domain and explores the issues involved in creating appropriate NOW <lb/>Ptolemy systems. <lb/></front>
 

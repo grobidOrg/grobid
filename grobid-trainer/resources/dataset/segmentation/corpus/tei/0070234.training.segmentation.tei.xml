@@ -4,9 +4,9 @@
 		<fileDesc xml:id="_0"/>
 	</teiHeader>
 	<text xml:lang="en">
-			<page> 234 <lb/></page>
+			<front> 234 <lb/></front>
 
-			<note place="headnote">ANDERSON, From Paper to Electron <lb/> </note>
+			<front>ANDERSON, From Paper to Electron <lb/> </front>
 
 			<front> Analysis of a Case <lb/> From Paper to Electron: <lb/> How an STM Journal Can Survive the <lb/>Disruptive Technology of the Internet <lb/>KENT R. ANDERSON <lb/> A b s t r a c t  The Internet represents a different type of technology for publishers of <lb/>scientific, technical, and medical journals. It is not a technology that sustains current markets and <lb/>creates new efficiencies but is, rather, a disruptive technology that could radically alter market <lb/>forces, profit expectations, and business models. This paper is a translation and amplification of <lb/>the research done in this area, applied to a large-circulation new science journal, Pediatrics. The <lb/>findings suggest that the journal of the future will be electronic, have a less volatile cost <lb/>structure, be supported more by services than by content, be less able to rely on subscription <lb/>revenues, and abandon certain elements of current value networks. It also provides a possible <lb/>framework for other publishers to use to evaluate their own journals relative to this disruptive <lb/>technology. <lb/> J Am Med Inform Assoc. 2000;7:234–245. <lb/></front> 
 
@@ -16,7 +16,7 @@
 
 			<body> of organizational responses for publishers, including <lb/>the publisher of Pediatrics, in response to this disrup-<lb/>tive technology, taking into account the special nature <lb/>of STM journals. It is, simultaneously, an application <lb/>of the conceptual framework developed by Clayton <lb/>Christensen in his 1997 book, The Innovator&apos;s Dilemma,  1 <lb/> to test whether STM publishers are facing a disruptive <lb/>technology in the Internet and, if so, whether recom-<lb/>mendations from his research can be extended to STM <lb/>journals. <lb/> About Pediatrics <lb/> Pediatrics is the official journal of the American Acad-<lb/>emy of Pediatrics (AAP). Published continuously <lb/>since 1948, it has an ISI impact factor of 3.466 (1998) <lb/>and a monthly print run (including overruns for ar-<lb/>chiving) of approximately 62,500. This large circula-<lb/>tion increases variable costs and makes some com-<lb/>parisons with smaller-circulation journals difficult. In <lb/>January 1997, an online-only section of complete, orig-<lb/>inal, peer-reviewed research articles, Pediatrics elec-<lb/>tronic pages, debuted on the Web, with abstracts of <lb/>these articles printed in the paper edition of the jour-<lb/>nal. Abstracts of the articles published in the paper <lb/>edition were also published on line, alongside the con-<lb/>tents of the electronic pages, creating a complemen-<lb/>tary print-and-online publishing model. On the basis <lb/>of the success of this experiment, 2 the full text of the <lb/>journal was placed on line in July 1998, with the elec-<lb/>tronic pages remaining as an online-only section, its <lb/></body>
 
-			<front> Journal of the American Medical Informatics Association Volume 7 Number 3 May / Jun 2000 <lb/></front>
+			<note place="headnote"> Journal of the American Medical Informatics Association Volume 7 Number 3 May / Jun 2000 <lb/></note>
 
 			<page> 235 <lb/></page>
 

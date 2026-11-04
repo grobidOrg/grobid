@@ -6,7 +6,7 @@
 	<text xml:lang="en">
 			<front>Nonparametric estimation in a semimartingale <lb/>regression model. <lb/>Part 2. Robust asymptotic efficiency. * <lb/>Konev, V. † <lb/>S. Pergamenshchikov ‡ <lb/>September 16, 2009 <lb/>Abstract <lb/>In this paper we prove the asymptotic efficiency of the model se-<lb/>lection procedure proposed by the authors in [10]. To this end we <lb/>introduce the robust risk as the least upper bound of the quadratical <lb/>risk over a broad class of observation distributions. Asymptotic upper <lb/>and lower bounds for the robust risk have been derived. The asymp-<lb/>totic efficiency of the procedure is proved. The Pinsker constant is <lb/>found. <lb/>Keywords: Non-parametric regression; Model selection; Sharp oracle inequal-<lb/>ity; Robust risk; Asymptotic efficiency; Pinsker constant; Semimartingale <lb/>noise. <lb/>AMS 2000 Subject Classifications: Primary: 62G08; Secondary: 62G05 <lb/> * The paper is supported by the RFFI-Grant 09-01-00172-a. <lb/> † Department of Applied Mathematics and Cybernetics, Tomsk State University, Lenin <lb/>str. 36, 634050 Tomsk, Russia, e-mail: vvkonev@mail.tsu.ru <lb/> ‡ Laboratoire de Mathématiques Raphael Salem, Avenue de l&apos;Université, BP. 12, Uni-<lb/>versité de Rouen, F76801, Saint Etienne du Rouvray, Cedex France, Department of Math-<lb/>ematics and Mechanics,Tomsk State University, Lenin str. 36, 634041 Tomsk, Russia, <lb/>e-mail: Serge.Pergamenchtchikov@univ-rouen.fr <lb/></front>
 
-			<page>1 <lb/></page>
+			<front>1 <lb/></front>
 
 			<front>hal-00417600, version 1 -16 Sep 2009 <lb/></front>
 
