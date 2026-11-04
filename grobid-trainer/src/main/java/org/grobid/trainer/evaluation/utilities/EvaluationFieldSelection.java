@@ -69,7 +69,8 @@ public class EvaluationFieldSelection {
             "first_author",
             LinkedAffiliationEvaluator.AFFILIATION_LINKED_LABEL,
             "abstract",
-            "keywords");
+            "keywords",
+            "doi");
 
     private static final List<String> DEFAULT_FULLTEXT = Arrays.asList(
             "section_title",

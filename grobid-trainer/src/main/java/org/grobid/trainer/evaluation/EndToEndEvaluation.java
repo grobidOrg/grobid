@@ -1096,6 +1096,9 @@ public class EndToEndEvaluation {
                                     grobidResult += " " + res;
                                 // basic normalisation
                                 grobidResult = basicNormalization(grobidResult);
+                                if (fieldName.equals("doi")) {
+                                    grobidResult = identifierNormalization(grobidResult);
+                                }
                                 //System.out.println("Grobid: " + fieldName + ":\t" + grobidResult);
                                 grobidResults = new ArrayList<>();
                                 grobidResults.add(grobidResult);
@@ -1139,6 +1142,9 @@ public class EndToEndEvaluation {
                                     goldResult += " " + res;
                                 // basic normalisation
                                 goldResult = basicNormalization(goldResult);
+                                if (fieldName.equals("doi")) {
+                                    goldResult = identifierNormalization(goldResult);
+                                }
                                 if (fieldName.equals("abstract")) {
                                     // some additional cleaning for abstract is required, because PMC and bioRxiv
                                     // tends to put the useless abstract title "Abstract" together with the abstract
@@ -1845,6 +1851,11 @@ public class EndToEndEvaluation {
             // Contributions in eLife are not text elements, but a combination between the author and some text elements,
             //  since we cannot easily put them together it's better to ignore them for the time being.
             removeFieldsFromEvaluation(Arrays.asList("contribution_stmt", "conflict_stmt"), fulltextFields);
+        }
+
+        if (StringUtils.containsIgnoreCase(xmlInputPath, "biorxiv")) {
+            // the DOI is present in the bioRxiv XML, but the preprint PDFs do not print it !
+            removeFieldsFromEvaluation(Arrays.asList("doi"), headerFields);
         }
 
         if (StringUtils.containsIgnoreCase(xmlInputPath, "pmc")) {

@@ -213,11 +213,12 @@ public class DeLFTModel {
             } finally {
                 // No need to close the JEP instance here as it's managed by the pool
                 // and will be reused for other tasks
-                // the variables are missing when the labelling failed
+                // the variables are missing when the labelling failed; exec, not eval:
+                // eval echoes the value of an expression, here the whole popped input
                 try {
-                    jep.eval("globals().pop('input', None)");
-                    jep.eval("globals().pop('x_all', None)");
-                    jep.eval("globals().pop('f_all', None)");
+                    jep.exec("globals().pop('input', None)");
+                    jep.exec("globals().pop('x_all', None)");
+                    jep.exec("globals().pop('f_all', None)");
                 } catch (JepException e) {
                     LOGGER.error("DeLFT model labelling via JEP failed during cleanup. ", e);
                 }
