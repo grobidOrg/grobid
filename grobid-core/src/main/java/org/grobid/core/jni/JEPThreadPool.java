@@ -116,7 +116,9 @@ public class JEPThreadPool {
         // for using legacy Keras 2, and not Keras 3 installed by default by TensorFlow from version 2.16
         jep.eval("os.environ[\"TF_USE_LEGACY_KERAS\"] = \"1\"");
         jep.eval("os.environ[\"KERAS_BACKEND\"] = \"tensorflow\"");
-        jep.eval("import tf_keras as keras");
+        // tf_keras only exists with the TensorFlow-backed DeLFT; the PyTorch delft (dev branch)
+        // ships no tf_keras, so guard the import to keep the JEP pool initialising under Torch.
+        jep.eval("exec(\"try:\\n    import tf_keras as keras\\nexcept ImportError:\\n    keras = None\")");
 
         jep.eval("from delft.utilities.Embeddings import Embeddings");
         jep.eval("import delft.sequenceLabelling");

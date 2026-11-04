@@ -208,7 +208,8 @@ public enum GrobidModels implements GrobidModel {
      *
      * The check is engine-aware because Wapiti and DeLFT use different on-disk layouts:
      *   - Wapiti:  <home>/models/<flavor-folder>/model.wapiti          (a file, slash-separated path)
-     *   - DeLFT:   <home>/models/<hyphenated-name>-<architecture>/    (a directory, hyphenated name)
+     *   - DeLFT:   <home>/models/<hyphenated-name>-<architecture>[-<suffix>]/
+     *              (a directory, hyphenated name; see GrobidProperties.getDelftModelDirectory)
      *
      * Both engine and DeLFT architecture are resolved against the flavored model itself.
      * The field-level prefix-fallback in GrobidProperties means each field is inherited
@@ -230,10 +231,7 @@ public enum GrobidModels implements GrobidModel {
             if (StringUtils.isBlank(architecture)) {
                 return false;
             }
-            File dlDir = new File(
-                    GrobidProperties.getModelPath(),
-                    flavoredModel.getModelName() + "-" + architecture);
-            return dlDir.isDirectory();
+            return GrobidProperties.getDelftModelDirectory(flavoredModel.getModelName(), architecture) != null;
         }
 
         // Wapiti (and any non-DL engine): file-based check at the flavor folder path.

@@ -16,15 +16,9 @@ For historical reasons, there are certain error 500 responses that are not criti
 
 If you are using the full Docker image (e.g. `grobid/grobid:0.9.1-full`), the GPU will be automatically detected on Linux if available; however, to be sure, we recommend using `nvtop` (similar to `htop` for CPU).
 
-## How to avoid DeLFT's Tensorflow (TF) to allocate the full GPU memory
+## How much GPU memory does DeLFT use
 
-By default, TensorFlow allocates all the GPU memory when it starts.
-This can be changed by setting the environment variable `TF_FORCE_GPU_ALLOW_GROWTH` to `true` before starting GROBID.
-With docker, for example you can this command:
-
-```shell
-docker run --rm --gpus all --init --ulimit core=0 -e TF_FORCE_GPU_ALLOW_GROWTH='true' -p 8070:8070 grobid/grobid:0.9.1-full
-```
+DeLFT runs on PyTorch, which allocates GPU memory as the models need it, and keeps it cached for the next calls, rather than taking all the GPU memory at start as the former TensorFlow-based DeLFT did (`TF_FORCE_GPU_ALLOW_GROWTH` has no effect any more). To restrict GROBID to some GPUs, set `CUDA_VISIBLE_DEVICES` before starting GROBID, or with docker use `--gpus '"device=1"'`.
 
 ## JEP/DeLFT fails with `CXXABI` or `libstdc++` version errors
 

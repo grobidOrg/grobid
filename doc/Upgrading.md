@@ -3,7 +3,59 @@
 This page lists the breaking changes users should be aware of when upgrading an existing GROBID installation to a newer version. If you are installing GROBID for the first time, follow the [Quick start](getting_started.md) instead.
 
 !!! tip "Docker users have the easiest path"
-    If you run GROBID via the official Docker images ([`grobid/grobid`](https://hub.docker.com/r/grobid/grobid)), upgrading is simply a matter of pulling the new tag — the image already bundles matching model files, DeLFT, TensorFlow and Python versions. The notes below mostly concern users who build GROBID from source, use custom-trained models, or deploy without Docker.
+    If you run GROBID via the official Docker images ([`grobid/grobid`](https://hub.docker.com/r/grobid/grobid)), upgrading is simply a matter of pulling the new tag — the image already bundles matching model files, DeLFT, PyTorch and Python versions. The notes below mostly concern users who build GROBID from source, use custom-trained models, or deploy without Docker.
+
+## Upgrading to the PyTorch Deep Learning runtime (unreleased)
+
+The next version moves the Deep Learning models from TensorFlow to PyTorch, with DeLFT 1.x. Only installations using DeLFT models are concerned: with the default configuration (all models on Wapiti CRF), nothing changes.
+
+### At a glance
+
+- **Deep Learning runtime** → DeLFT **1.x** on **PyTorch**, TensorFlow is no longer used. Install DeLFT in a **new** Python environment.
+- **Shipped models** → all retrained, stored as `model.safetensors` in directories named `<name>-<architecture>-<suffix>`.
+- **Configuration** → a DeLFT model needs `suffix: "glove_840B"` in its `delft` section to find the shipped models.
+- **Custom-trained DL models** → **must be retrained** with DeLFT 1.x.
+- **Removed DL models** → `BidLSTM_ChainCRF_FEATURES`, `BidLSTM_CRF` (figure, table), `patent-citation`, `header-article-light*`. The `copyright`/`license` classifiers cannot run with the `delft` engine.
+
+### Deep Learning runtime: DeLFT 1.x and PyTorch
+
+| Component                  | 0.9.1          | Next                                              |
+|----------------------------|----------------|---------------------------------------------------|
+| DeLFT                      | 0.4.6          | **1.x** (pinned commit, `DELFT_REF` in `Dockerfile.delft`) |
+| Backend                    | TensorFlow 2.17 | **PyTorch 2.11**                                 |
+| Python                     | 3.10–3.11      | **3.10–3.13**                                     |
+| CUDA (GPU)                 | 12.3, installed on the system | **12.8**, bundled with the PyTorch wheel (only the NVIDIA driver is needed) |
+| JEP (Java Embedded Python) | 4.3.1          | **4.3.2**                                         |
+
+Install DeLFT 1.x in a fresh Python environment, so that no TensorFlow package of DeLFT 0.4.x is left behind, then rebuild JEP in it (`pip install jep==4.3.2`). Follow [Deep Learning models](Deep-Learning-models.md#getting-started-with-deep-learning). The embeddings database (`data/db/glove-840B` in the DeLFT directory) built by DeLFT 0.4.x can be kept.
+
+If you use the full Docker image, pulling the new image is enough. On CPU, the image now limits each model call to 4 threads, see [CPU threads](Deep-Learning-models.md#cpu-threads).
+
+### Configuration: `delft.suffix`
+
+The shipped models are now in directories named `<name>-<architecture>-<suffix>`, e.g. `header-BidLSTM_CRF_FEATURES-glove_840B`. The stock configuration files already set the suffix. If you maintain your own `grobid.yaml`, add `suffix: "glove_840B"` to the `delft` section of every model set to the `delft` engine:
+
+```yaml
+    - name: "header"
+      engine: "delft"
+      delft:
+        architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
+```
+
+Without it, GROBID looks for `header-BidLSTM_CRF_FEATURES` and stops at the loading of the model:
+
+```
+GrobidException: [GENERAL] No DeLFT model header-BidLSTM_CRF_FEATURES under /opt/grobid/grobid-home/models
+```
+
+Also check the `architecture` of the models set to `delft`: only `BidLSTM_CRF_FEATURES` models are shipped. `header` and `reference-segmenter` with `BidLSTM_ChainCRF_FEATURES`, and `figure`/`table` with `BidLSTM_CRF`, must move to `BidLSTM_CRF_FEATURES`. `patent-citation` must go back to `wapiti`, as must `copyright` and `license`.
+
+See [Configuration](Configuration.md#configuring-the-models).
+
+### Custom-trained models must be retrained
+
+DeLFT 1.x refuses to load a model trained with DeLFT 0.4.x (TensorFlow weights, `model_weights.hdf5`). Retrain it, from GROBID or with DeLFT directly; see [Training Deep Learning models](Training-the-models-of-Grobid.md#training-deep-learning-delft-models). Training from GROBID now names the model directory with `delft.suffix`, and `useELMo` is no longer supported.
 
 ## Upgrading to 0.9.1
 

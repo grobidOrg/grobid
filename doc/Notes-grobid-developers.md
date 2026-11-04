@@ -12,15 +12,15 @@ This is a summary of the steps I used to run Grobid using DL natively on Linux:
 Assuming that: 
 
 1. Conda is installed (if not, I installed [this](https://github.com/conda-forge/miniforge/releases/tag/24.9.2-0) - check the version, might be old) 
-2. The environment `delft` has been created with either `python=3.10` (e.g. `conda create --name delft python=3.10` or ) or `python=3.11` (e.g. `conda create --name delft python=3.11`) 
+2. The environment `delft` has been created with a Python from 3.10 to 3.13 (e.g. `conda create --name delft python=3.11`). DeLFT 1.x runs on PyTorch: use a new environment rather than one holding the TensorFlow-based DeLFT 0.4.x.
 
 Then continue here: 
 
-1. cd grobid
-2. `pip install delft==0.4.4`
-3. `pip install jep==4.3.1`
-4. `export LD_PRELOAD=${CONDA_PREFIX}/lib/libpython3.11.so` (or libpython3.10.so if you use python 3.10)
-5. `export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CONDA_PREFIX`
+1. `cd delft && git checkout <DELFT_REF>`, the DeLFT commit indicated by `DELFT_REF` in `Dockerfile.delft`
+2. `pip install -e ".[gpu]" --extra-index-url https://download.pytorch.org/whl/cu128` (NVIDIA GPU, CUDA 12.8), or `pip install -e . --extra-index-url https://download.pytorch.org/whl/cpu` (CPU only: the default PyPI wheel is a CUDA build on Linux)
+3. `pip install jep==4.3.2` (the version of `black.ninia:jep` in `build.gradle`, installed after DeLFT so that it builds against its numpy)
+4. `cd ../grobid`
+5. `export LD_PRELOAD=${CONDA_PREFIX}/lib/libpython3.11.so` (use the Python version of the environment)
 
 [//]: # (5. `export LD_LIBRARY_PATH=${CONDA_PREFIX}/lib:$LD_LIBRARY_PATH`)
 6. Change any model in the `grobid.yaml` configuration file to use delft instead of wapiti (e.g. header model)
@@ -233,9 +233,12 @@ model:
     nbMaxIterations: 1500
   delft:
     # deep learning parameters
-    architecture: "BidLSTM_CRF"
-    #architecture: "scibert"
+    architecture: "BidLSTM_CRF_FEATURES"
+    #architecture: "BERT_CRF"
+    # embeddings used to train the model, and suffix of its directory:
+    # grobid-home/models/newModel-BidLSTM_CRF_FEATURES-glove_840B
     embeddings_name: "glove-840B"
+    suffix: "glove_840B"
 ```
 
 In the module configuration class, we refer to the existing Grobid config class, for instance in a class `NewModuleConfiguration`:

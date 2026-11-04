@@ -92,6 +92,8 @@ grobid:
     # for feature-engineered CRF, use "wapiti" and possible training parameters are window, epsilon and nbMaxIterations
     # for Deep Learning, use "delft" and select the target DL architecture (see DeLFT library), the training
     # parameters then depends on this selected DL architecture
+    # a DeLFT model is loaded from models/<name>-<architecture>[-<suffix>], delft.suffix being the
+    # --suffix given to DeLFT at training (the shipped models are trained with glove-840B, "glove_840B")
     #
     # Flavor inheritance
     # ------------------
@@ -123,6 +125,7 @@ grobid:
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
         runtime:
           # parameters used at runtime/prediction
           max_sequence_length: 3000
@@ -176,7 +179,8 @@ grobid:
         nbMaxIterations: 1500
       delft:
         # deep learning parameters
-        architecture: "BidLSTM_ChainCRF_FEATURES"
+        architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
         #transformer: "allenai/scibert_scivocab_cased"
         runtime:
           # parameters used at runtime/prediction
@@ -207,7 +211,7 @@ grobid:
         nbMaxIterations: 1500
 
     - name: "header-sdo-ietf"
-      # explicit: only a Wapiti model is available for this flavor
+      # engine override: only a Wapiti model is available for this flavor
       engine: "wapiti"
       wapiti:
         # wapiti training parameters, they will be used at training time only
@@ -216,7 +220,7 @@ grobid:
         nbMaxIterations: 1500
 
     - name: "reference-segmenter"
-      #engine: "wapiti"
+#      engine: "wapiti"
       engine: "delft"
       wapiti:
         # wapiti training parameters, they will be used at training time only
@@ -224,7 +228,8 @@ grobid:
         window: 20
       delft:
         # deep learning parameters
-        architecture: "BidLSTM_ChainCRF_FEATURES"
+        architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
         runtime:
           # parameters used at runtime/prediction (for this model, use same max_sequence_length as training)
           max_sequence_length: 3000
@@ -236,10 +241,11 @@ grobid:
 
     - name: "name-header"
       engine: "wapiti"
-      #engine: "delft"
+#      engine: "delft"
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
 
     - name: "name-citation"
       engine: "wapiti"
@@ -247,6 +253,7 @@ grobid:
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
 
     - name: "date"
       engine: "wapiti"
@@ -254,6 +261,7 @@ grobid:
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
 
     - name: "figure"
       engine: "wapiti"
@@ -264,7 +272,8 @@ grobid:
         window: 20
       delft:
         # deep learning parameters
-        architecture: "BidLSTM_CRF"
+        architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
 
     - name: "table"
       engine: "wapiti"
@@ -275,7 +284,8 @@ grobid:
         window: 20
       delft:
         # deep learning parameters
-        architecture: "BidLSTM_CRF"
+        architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
 
     - name: "affiliation-address"
       #engine: "wapiti"
@@ -283,6 +293,7 @@ grobid:
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
 
     - name: "citation"
       #engine: "wapiti"
@@ -295,6 +306,7 @@ grobid:
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
         #architecture: "BERT_CRF"
         #transformer: "michiyasunaga/LinkBERT-base"
         runtime:
@@ -307,8 +319,8 @@ grobid:
           batch_size: 50
 
     - name: "patent-citation"
-      #engine: "wapiti"
-      engine: "delft"
+      engine: "wapiti"
+      #engine: "delft"
       wapiti:
         # wapiti training parameters, they will be used at training time only
         epsilon: 0.0001
@@ -337,6 +349,7 @@ grobid:
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
         #architecture: "BERT_CRF"
         #transformer: "michiyasunaga/LinkBERT-base"
         runtime:
@@ -377,6 +390,31 @@ grobid:
   #         and models not used will take some more memory (only in case of CRF), but server is immediatly warm and ready
   modelPreload: true
 
+  # for **service only**: push-based metrics export over OTLP (OpenTelemetry Protocol).
+  # This is the push counterpart to the pull-based Prometheus scrape endpoint at
+  # /metrics/prometheus on the admin connector. When enabled, the service periodically pushes
+  # the same series the scrape endpoint serves -- the application metrics (grobid_requests_total,
+  # grobid_request_duration_seconds, ...), the Dropwizard REST timers, and the JVM/process runtime
+  # metrics (heap, GC, threads, CPU) -- to an OTLP receiver: an OpenTelemetry Collector,
+  # Grafana Alloy/Agent, or a hosted backend such as Grafana Cloud, which Grafana then queries.
+  # Disabled by default.
+  otlp:
+    enabled: false
+    # OTLP receiver base endpoint. Match the port to the protocol: 4318 for http/protobuf, 4317 for
+    # grpc. For http/protobuf the "/v1/metrics" path is appended automatically if you omit it.
+    endpoint: "http://localhost:4318"
+    # "http/protobuf" (firewall-friendly default) or "grpc"
+    protocol: "http/protobuf"
+    # how often a batch of metrics is pushed, in seconds
+    intervalSeconds: 60
+    # per-export timeout in seconds; bounds how long one push may block on a slow/unreachable receiver
+    timeoutSeconds: 10
+    # how this instance is identified in dashboards (the service.name resource attribute)
+    serviceName: "grobid-service"
+    # extra headers on every OTLP request -- typically auth for a hosted backend, e.g. Grafana Cloud:
+    #headers:
+    #  Authorization: "Basic <base64 of instanceID:apiToken>"
+
 server:
   type: custom
   applicationConnectors:
@@ -399,7 +437,7 @@ logging:
     com.squarespace.jersey2.guice.JerseyGuiceUtils: "OFF"
   appenders:
     - type: console
-      threshold: WARN
+      threshold: INFO
       timeZone: UTC
       # uncomment to have the logs in json format
       #layout:

@@ -94,7 +94,7 @@ ENV LANG=C.UTF-8
 # install system dependencies and Python 3.11 via deadsnakes PPA
 RUN apt-get update && \
     apt-get -y --no-install-recommends install \
-    bash build-essential gcc libxml2 libfontconfig unzip curl \
+    bash build-essential gcc libxml2 libfontconfig unzip curl git \
     musl gfortran software-properties-common && \
     add-apt-repository ppa:deadsnakes/ppa && \
     apt-get update && \
@@ -107,21 +107,16 @@ RUN apt-get update && \
 # bootstrap pip for Python 3.11
 RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11
 
-# install TensorFlow: GPU-enabled on amd64 (with CUDA via pip), CPU-only on arm64
 ARG TARGETARCH
-RUN if [ "$TARGETARCH" = "amd64" ]; then \
-    pip3 install --no-cache-dir "tensorflow[and-cuda]==2.17.1"; \
-    else \
-    pip3 install --no-cache-dir tensorflow==2.17.1; \
-    fi
 
 WORKDIR /opt/grobid
 
 # Everything from here to the "COPY --from=builder /opt/grobid ." below is ordered
 # stable-first, on purpose. The Java distribution changes with every grobid commit, so it
-# goes last: the DeLFT install, the JEP build and the glove preload (~2GB downloaded, then
-# loaded into lmdb) all sit above it and stay cached across ordinary source changes. Only a
-# version bump, a base-image change or a resources-registry edit rebuilds them.
+# goes last: the delft install (~5GB with the CUDA wheels), the JEP build and the glove
+# preload (~2GB downloaded, then loaded into lmdb) all sit above it and stay cached across
+# ordinary source changes. Only a DELFT_REF bump, a base-image change or a resources-registry
+# edit rebuilds them.
 
 # link the data directory to /data
 # the current working directory will most likely be /opt/grobid
@@ -130,15 +125,45 @@ RUN mkdir -p /data \
     && ln -s /data /opt/grobid/data \
     && ln -s /data ./data
 
-# install DeLFT
-RUN pip3 install --no-cache-dir delft==0.4.7
+# install DeLFT (PyTorch backend) + torch.
+# Pinned to a delft commit until the next PyPI release (1.2.0) is published; this
+# one is the dev branch's "models: re-train models", which saves the weights as
+# model.safetensors and names each model directory with its embeddings suffix
+# (e.g. header-BidLSTM_CRF_FEATURES-glove_840B).
+#
+# A commit SHA rather than a branch name, for provenance: the Dockerfile alone then
+# says which delft is in a given image, which a branch name cannot. Bump it to move.
+#
+# It is now also what busts this layer. The install sits above the grobid COPY, so it is
+# cached across ordinary source changes and a branch name would silently keep resolving to
+# a stale commit; bumping the SHA is what forces the reinstall.
+#
+# Either way the image records what pip actually resolved, in
+# delft-*.dist-info/direct_url.json (PEP 610). That is the authoritative check.
+#
+# On amd64 we pull the CUDA 12.8 build via the [gpu] extra and the PyTorch index.
+# On arm64 we take the CPU build from the PyTorch index. The default torch wheel on PyPI is
+# a CUDA build on all of Linux, aarch64 included, and would pull several GB of
+# cuda-toolkit / cudnn / nccl / triton wheels that no CPU host can use. 2.11.0+cpu still
+# satisfies delft's torch==2.11.0 and sorts above 2.11.0, so pip picks it; the check at the
+# end fails the build if a CUDA torch was resolved anyway.
+# torch / transformers / pytorch-crf come in transitively; no tensorflow / tf_keras.
+ARG DELFT_REF=137f59c3c1cb97055205831e2f499a5af75e06fa
+RUN if [ "$TARGETARCH" = "amd64" ]; then \
+    pip3 install --no-cache-dir "delft[gpu] @ git+https://github.com/kermitt2/delft.git@${DELFT_REF}" \
+      --extra-index-url https://download.pytorch.org/whl/cu128; \
+    else \
+    pip3 install --no-cache-dir "delft @ git+https://github.com/kermitt2/delft.git@${DELFT_REF}" \
+      --extra-index-url https://download.pytorch.org/whl/cpu && \
+    python3 -c "import torch; assert torch.version.cuda is None, torch.__version__"; \
+    fi
 
 # Build JEP with temporary access to full JDK (needs javac + JNI headers).
 # The bind mount is only visible during this RUN step — zero overhead in the final image.
 # Mounted from the `jdk` stage rather than from `builder`, so this layer does not depend on
 # a stage that is rebuilt on every commit.
 RUN --mount=from=jdk,source=/opt/java/openjdk,target=/opt/java/openjdk-jdk \
-    JAVA_HOME=/opt/java/openjdk-jdk pip3 install --no-cache-dir jep==4.3.1
+    JAVA_HOME=/opt/java/openjdk-jdk pip3 install --no-cache-dir jep==4.3.2
 
 # preload embeddings, for GROBID all the RNN models use glove-840B (default for the script), ELMo is currently not loaded
 # to be done: mechanism to download GROBID fine-tuned models based on SciBERT if selected (but not good enough for the moment)
@@ -159,6 +184,32 @@ RUN mkdir delft && \
 # disable python warnings (and fix logging)
 ENV PYTHONWARNINGS="ignore"
 ENV JAVA_OPTS=-Xmx4g
+
+# Intra-op threads: 4, the measured plateau.
+#
+# The history of this knob, all measured:
+#   - pinned to 1 (earliest): with ten documents in flight, one thread tags 43% slower
+#     than torch's default (3.47s vs 1.99s, header model). Too narrow.
+#   - unset (previous revision): delft's configure_threads() sizes the pool from what
+#     the container was given -- the whole cpuset. Correct for one document at a time,
+#     but under concurrent load a pool as wide as the container makes every document's
+#     threads fight every other document's. Too wide.
+#   - 4 (this revision): the 2026-08 grid5000 sweeps (cpus x concurrency x threads,
+#     10/20-core containers, 1000- and 10000-PDF corpora) put the plateau at 4 on
+#     every container width: vs 1 thread, 4 is ~35% faster at the throughput optimum
+#     (conc = cores/2); vs 8, equal wall time for ~23% more CPU burnt. delft agrees --
+#     its MIN_INTRA_OP_THREADS is 4 for the same reason.
+#
+# Setting the variables here (rather than calling torch.set_num_threads) is deliberate:
+# OpenMP reads them when the native libraries load, at "import torch", and
+# configure_threads() sees them and defers, so the pool is 4 however delft evolves.
+# TensorFlow images are unaffected -- Eigen's intra-op pool does not read
+# OMP_NUM_THREADS (9.91s vs 9.89s). Pass -e OMP_NUM_THREADS=N at "docker run" to
+# override per-run without a rebuild. (There is no run-time way back to
+# configure_threads() sizing: "-e OMP_NUM_THREADS=" leaves an empty variable in the
+# environment, which configure_threads() still defers to and OpenMP misparses.)
+ENV OMP_NUM_THREADS=4 \
+    MKL_NUM_THREADS=4
 
 # set python version and library paths (both arch paths included; only one will exist at runtime)
 ENV PYTHON_VERSION=3.11

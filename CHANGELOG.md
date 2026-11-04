@@ -9,6 +9,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 - Header `doi` field in the end-to-end evaluation of the full model. It is part of the header instance-level results, which are therefore not comparable with the benchmarks published before it was evaluated
 
+### Changed
+- Deep Learning models now run on PyTorch: DeLFT 0.4.6 (TensorFlow 2.17) → DeLFT 1.x (PyTorch 2.11), installed from a pinned DeLFT commit (`DELFT_REF` in `Dockerfile.delft`) until the next DeLFT release. TensorFlow is no longer needed; Python 3.10–3.13 is supported; GPU builds use CUDA 12.8, bundled with the PyTorch wheel.
+- All shipped DeLFT models retrained with DeLFT 1.x, with `glove-840B` embeddings: `segmentation`, `header`, `reference-segmenter`, `name-header`, `name-citation`, `date`, `figure`, `table`, `affiliation-address`, `citation`, `funding-acknowledgement` (`BidLSTM_CRF_FEATURES`). Weights are stored as `model.safetensors`.
+- A DeLFT model is loaded from `grobid-home/models/<name>-<architecture>-<suffix>`, the suffix being set by the new `delft.suffix` model parameter (`glove_840B` for the shipped models) and inherited by flavors. A missing model directory is now an error naming the directory.
+- Training a DeLFT model passes `--embedding` (`delft.embeddings_name`) and `--suffix` (`delft.suffix`) to DeLFT, so that the trained model lands in the directory it is loaded from.
+- `figure` and `table` use the `BidLSTM_CRF_FEATURES` architecture; `header` and `reference-segmenter` use `BidLSTM_CRF_FEATURES` in all configurations.
+- Full Docker image: PyTorch CPU thread pool set to 4 threads (`OMP_NUM_THREADS`/`MKL_NUM_THREADS`), JEP 4.3.2.
+
+### Removed
+- TensorFlow DeLFT models (`model_weights.hdf5`), which DeLFT 1.x cannot load, including the `BidLSTM_ChainCRF_FEATURES`, `BidLSTM_CRF` (figure, table), `patent-citation` and `header-article-light*` DeLFT models. The `copyright` and `license` classifiers are still TensorFlow models and cannot be used with the `delft` engine.
+- `useELMo` for training, which DeLFT 1.x does not support.
+
 ## [0.9.1] - 2026-08-04
 
 ### Added

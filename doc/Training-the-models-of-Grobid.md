@@ -135,6 +135,21 @@ Note that a full training from scratch with all training data should normally pr
 
 In incremental training phases, the training parameters might require some update to stop the training earlier than in normal full training.
 
+### Training Deep Learning (DeLFT) models
+
+When the engine of a model is `delft`, the same commands train a DeLFT model. GROBID then runs DeLFT's training script in the DeLFT directory indicated by `delft.install`, which must be a source checkout of DeLFT (see [Deep Learning models](Deep-Learning-models.md#getting-started-with-deep-learning)):
+
+```bash
+python3 delft/applications/grobidTagger.py <model> train --input <training data> --output grobid-home/models \
+    --architecture <delft.architecture> --embedding <delft.embeddings_name> --suffix <delft.suffix>
+```
+
+`python3` is the one of the environment GROBID is started in, which must be the environment where DeLFT is installed. The model is written to `grobid-home/models/<model>-<architecture>-<suffix>` (`<model>-<architecture>` without `suffix`), the directory GROBID loads it from with the same configuration. Without `embeddings_name`, the model is trained with `glove-840B`; an empty `embeddings_name` trains a model without word embeddings. `useELMo` is not supported by DeLFT 1.x.
+
+A model trained directly with DeLFT (`python -m delft.applications.grobidTagger <model> train --architecture <architecture> --embedding glove-840B --suffix glove_840B`) is saved under `data/models/sequenceLabelling/grobid-<model>-<architecture>-<suffix>` of the DeLFT directory: copy it to `grobid-home/models/` without the `grobid-` prefix, e.g. `grobid-home/models/header-BidLSTM_CRF_FEATURES-glove_840B`.
+
+DeLFT 1.x cannot load models trained with DeLFT 0.4.x (TensorFlow, `model_weights.hdf5`): they have to be trained again.
+
 ### N-folds cross-evaluation
 
 For robust evaluation and reporting, n-fold cross-evaluation is commonly used, see the [Wikipedia article](https://en.wikipedia.org/wiki/Cross-validation_(statistics)).
