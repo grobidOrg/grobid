@@ -131,7 +131,32 @@ RUN mkdir -p /data \
     && ln -s /data ./data
 
 # install DeLFT
-RUN pip3 install --no-cache-dir delft==0.4.7
+# On arm64, two of DeLFT 0.4.7's pinned dependencies cannot be installed from PyPI:
+#  - tfa-nightly has no Linux aarch64 wheel and no sdist. DeLFT only needs its CRF wrapper,
+#    which is plain TF ops (the custom .so ops are lazy-loaded by other submodules), so
+#    tensorflow-addons is installed pure-Python from the source of the commit that
+#    nightly was built from (d208d75, 2024-04-15 22:25:34). Not the v0.23.0 tag: its
+#    utils/types.py imports keras.src.engine, which the Keras 3 shipped with TF 2.17
+#    does not have; the fix (#2858) landed after the tag.
+#  - h5py 3.11.0 has no aarch64 wheel; 3.12.1 has one (DeLFT only uses h5py when converting
+#    models).
+# DeLFT is therefore installed with --no-deps and the rest of its dependencies listed here,
+# matching its requirements; the import at the end fails the build if the CRF wrapper does
+# not load. It runs with TF_USE_LEGACY_KERAS=1, as JEPThreadPool sets it at runtime, so it
+# goes through the same tf_keras code path. The amd64 install is left as it is.
+RUN if [ "$TARGETARCH" = "arm64" ]; then \
+    pip3 install --no-cache-dir --no-deps delft==0.4.7 && \
+    pip3 install --no-cache-dir \
+        numpy==1.26.4 regex scikit-learn==1.6.1 "tqdm>=4.66" tensorflow==2.17.1 \
+        tf_keras==2.17.0 h5py==3.12.1 unidecode==1.3.2 pydot==1.4.0 lmdb==2.1.1 truecase \
+        "requests>=2.20" pandas==2.2.3 transformers==4.48.0 blingfire2==0.2.1 \
+        "accelerate>=0.20.3" Pillow python-dotenv && \
+    pip3 install --no-cache-dir \
+        https://github.com/tensorflow/addons/archive/d208d752e98c310280938efa939117bf635a60a8.tar.gz && \
+    TF_USE_LEGACY_KERAS=1 python3 -c "import delft.sequenceLabelling.models"; \
+    else \
+    pip3 install --no-cache-dir delft==0.4.7; \
+    fi
 
 # Build JEP with temporary access to full JDK (needs javac + JNI headers).
 # The bind mount is only visible during this RUN step — zero overhead in the final image.
