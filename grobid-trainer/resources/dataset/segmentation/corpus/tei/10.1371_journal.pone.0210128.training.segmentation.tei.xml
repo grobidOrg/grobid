@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
 <tei xml:space="preserve">
 	<teiHeader>
-		<fileDesc xml:id="_0"/>
+		<fileDesc xml:id="_10.1371_journal.pone.0210128"/>
 	</teiHeader>
 	<text xml:lang="en">
 			<front>RESEARCH ARTICLE <lb/>PLOS ONE 2017 Reviewer and Editorial Board <lb/>Thank You <lb/></front>
 
-			<body>PLOS and the PLOS ONE team would like to express our appreciation for our academic edi-<lb/>tors, guest editors, and reviewers who contributed to the peer-review process this past year. <lb/>We are indebted to volunteers who generously give their time and expertise to thoroughly <lb/>review research and advance Open Access. In 2017, PLOS ONE received the help of over 4,400 <lb/>Editorial Board members and 500 guest editors to curate nearly 45,000 submissions. Along <lb/>with the participation of 63,000 reviewers, we were able to publish more than 20,000 articles <lb/>with meaningful and impactful results. <lb/>The names of our 2017 editors that handled submitted manuscripts appear in the Support-<lb/>ing Information as S1 Editor List and as S1 Guest Editor List. Our reviewers appear in the Sup-<lb/>porting Information as S1-S5 Reviewer List. With genuine gratitude, we thank you all for your <lb/>dedicated support of PLOS ONE and our efforts to promote Open Science, thereby contribut-<lb/>ing to the scientific community as a whole. Thank you all. <lb/></body>
+			<body>PLOS and the PLOS ONE team would like to express our appreciation for our academic edi- <lb/>tors, guest editors, and reviewers who contributed to the peer-review process this past year. <lb/>We are indebted to volunteers who generously give their time and expertise to thoroughly <lb/>review research and advance Open Access. In 2017, PLOS ONE received the help of over 4,400 <lb/>Editorial Board members and 500 guest editors to curate nearly 45,000 submissions. Along <lb/>with the participation of 63,000 reviewers, we were able to publish more than 20,000 articles <lb/>with meaningful and impactful results. <lb/>The names of our 2017 editors that handled submitted manuscripts appear in the Support- <lb/>ing Information as S1 Editor List and as S1 Guest Editor List. Our reviewers appear in the Sup- <lb/>porting Information as S1-S5 Reviewer List. With genuine gratitude, we thank you all for your <lb/>dedicated support of PLOS ONE and our efforts to promote Open Science, thereby contribut- <lb/>ing to the scientific community as a whole. Thank you all. <lb/></body>
 
 			<div type="annex">Supporting information <lb/>S1 Editor List. Alphabetical list of 2017 PLOS ONE Editorial Board Members. <lb/>(PDF) <lb/>S1 Guest Editor List. Alphabetical list of 2017 PLOS ONE Guest Editors. <lb/>(PDF) <lb/>S1 Reviewer List. Alphabetical list of 2017 PLOS ONE peer reviewers (A-D). <lb/>(PDF) <lb/>S2 Reviewer List. Alphabetical list of 2017 PLOS ONE peer reviewers (E-J). <lb/>(PDF) <lb/>S3 Reviewer List. Alphabetical list of 2017 PLOS ONE peer reviewers (K-N). <lb/>(PDF) <lb/>S4 Reviewer List. Alphabetical list of 2017 PLOS ONE peer reviewers (O-S). <lb/>(PDF) <lb/>S5 Reviewer List. Alphabetical list of 2017 PLOS ONE peer reviewers (T-Z). <lb/>(PDF) <lb/></div>
 
@@ -20,8 +20,7 @@
 
 			<note place="footnote">PLOS ONE | https://doi.org/10.1371/journal.pone.0194158 March 15, 2018 <lb/></note>
 
-			<page>2 / 2 </page>
-
+			<page>2 / 2 <lb/></page>
 
 	</text>
 </tei>

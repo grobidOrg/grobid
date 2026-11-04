@@ -37,8 +37,7 @@ residues 1-245 residues r re res resi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 N
 typical member typical t ty typ typi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 -,. 3 9 0 0 0 0 1
 construct encompasses construct c co con cons BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 - 1 9 0 0 0 0 1
 the enzyme. the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 .. 2 9 0 0 0 0 1
-resolution resolution resolution r re res reso BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 1 0 0 0 0 1
-utilizing trigonal utilizing u ut uti util BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 7 0 0 0 0 1
+resolution utilizing resolution r re res reso BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 9 0 0 0 0 1
 molecule in molecule m mo mol mole BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 9 0 0 0 0 1
 two compact two t tw two two BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 --. 3 9 0 0 0 0 1
 The structure the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 3 (-), 4 9 0 0 0 0 1
