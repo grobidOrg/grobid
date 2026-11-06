@@ -1,129 +1,129 @@
-Introduction: Feature introduction: I In Int Intr BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 : 1 10 0 0 0 0 1
-of the of o of of of BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 2 0 0 0 0 1
-Joseph Carroll, joseph J Jo Jos Jose BLOCKSTART PAGEIN SAMEFONT LOWERFONT 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 0 ,,*,. 5 10 0 0 0 0 1
-1 Department 1 1 1 1 1 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 ,,,,, 5 9 0 0 0 0 1
-2 Center 2 2 2 2 2 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 ,,, 3 10 0 0 0 0 1
-Vienna, Austria vienna, V Vi Vie Vien BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 , 1 1 0 0 0 0 1
-3 Vision 3 3 3 3 3 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 (),, 4 9 0 0 0 0 1
-University of university U Un Uni Univ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 ,,,,, 5 7 0 0 0 0 1
-*jcarroll@mcw.edu *jcarroll@mcw.edu *jcarroll@mcw.edu * *j *jc *jca BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 *@. 3 1 0 0 0 0 1
-Abstract: The abstract: A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 : 1 9 0 1 0 0 1
-issue, "Cellular issue, i is iss issu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ,"," 4 10 0 1 0 0 1
-from the from f fr fro from BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 . 1 5 0 1 0 0 1
-©2011 Optical ©2011 © ©2 ©20 ©201 BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 0 1 no 0 10 0 1 0 0 1
-OCIS codes: ocis O OC OCI OCIS BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 :(.),,,; 8 8 0 1 0 0 1
-(110.1080) Active (110.1080) ( (1 (11 (110 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 0 1 (.);(.);(.) 11 10 0 1 0 0 1
-biotechnology; (170.4500) biotechnology; b bi bio biot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ;(.);(.); 9 8 0 1 0 0 1
-(330.4460) Ophthalmic (330.4460) ( (3 (33 (330 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 1 (.);(.)-;(.) 12 9 0 1 0 0 1
-Visual optics, visual V Vi Vis Visu BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 , 1 4 0 1 0 0 1
-References and references R Re Ref Refe BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 no 0 10 0 1 0 0 1
-1. A. 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,",".. 9 9 0 0 0 0 1
-Express 2 express E Ex Exp Expr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 -(). 4 2 0 0 0 0 1
-2. R. 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,..,.,.-,..,..,..," 22 10 0 0 0 0 1
-adaptive optics adaptive a ad ada adap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 no 0 9 0 0 0 0 1
-simultaneous cellular simultaneous s si sim simu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,"..,-(). 9 8 0 0 0 0 1
-3. S. 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ..,..,..,.,"- 13 8 0 0 0 0 1
-scanning laser scanning s sc sca scan BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,"..(),-(). 11 6 0 0 0 0 1
-4. B. 4. 4 4. 4. 4. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,","..(), 12 9 0 0 0 0 1
-1597-1609 (2011). 1597-1609 1 15 159 1597 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 1 2 -(). 4 1 0 0 0 0 1
-5. O. 5. 5 5. 5. 5. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,.,..,.,..,..,.,..," 23 9 0 0 0 0 1
-cone photoreceptors cone c co con cone BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 1 2 no 0 9 0 0 0 0 1
-with adaptive with w wi wit with BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,"..(),-(). 11 5 0 0 0 0 1
-6. D. 6. 6 6. 6. 6. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,"- 6 9 0 0 0 0 1
-ophthalmoscopy," Biomed. ophthalmoscopy," o op oph opht BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),-(). 11 5 0 0 0 0 1
-7. E. 7. 7 7. 7. 7. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,.,..," 10 9 0 0 0 0 1
-individuals," Biomed. individuals," i in ind indi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),-(). 11 5 0 0 0 0 1
-8. A. 8. 8 8. 8. 8. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ..,.,..,..,..,..,.," 20 9 0 0 0 0 1
-vivo imaging vivo v vi viv vivo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 no 0 8 0 0 0 0 1
-ophthalmoscope," Biomed. ophthalmoscope," o op oph opht BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),-(). 11 5 0 0 0 0 1
-9. J. 9. 9 9. 9. 9. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ..,.,.,"- 9 9 0 0 0 0 1
-capillaries using capillaries c ca cap capi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),- 8 8 0 0 0 0 1
-(2011). (2011). (2011). ( (2 (20 (201 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 1 2 (). 3 0 0 0 0 0 1
-10. D. 10. 1 10 10. 10. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 .....," 7 9 0 0 0 0 1
-frequency domain frequency f fr fre freq BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,"..(),-(). 11 8 0 0 0 0 1
-11. D. 11. 1 11 11. 11. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,.,.,.,..,..," 17 9 0 0 0 0 1
-deriving visual deriving d de der deri BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,".. 4 9 0 0 0 0 1
-2(5), 1106-1114 2(5), 2 2( 2(5 2(5) BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 (),-(). 7 2 0 0 0 0 1
-12. A. 12. 1 12 12. 12. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,.,..,.,.," 14 9 0 0 0 0 1
-with ultrahigh-resolution with w wi wit with BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 -,"..(),- 9 9 0 0 0 0 1
-1274 (2011). 1274 1 12 127 1274 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 1 0 0 0 1 2 (). 3 1 0 0 0 0 1
-13. J. 13. 1 13 13. 13. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,.,..,.,.," 14 9 0 0 0 0 1
-adaptive optics adaptive a ad ada adap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),-(). 11 7 0 0 0 0 1
-14. R.-W. 14. 1 14 14. 14. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ..-.,.-.,.,.,.,..,.-.,"- 24 8 0 0 0 0 1
-autofluorescence imaging autofluorescence a au aut auto BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),-(). 11 9 0 0 0 0 1
-Retinal imaging retinal R Re Ret Reti BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 11 , 1 9 0 1 0 0 1
-researchers to researchers r re res rese BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 11 . 1 10 0 1 0 0 1
-a broad a a a a a BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 1 0 1 0 0 0 0 0 5 11 , 1 8 0 1 0 0 1
-#148292 -$15.00 #148292 # #1 #14 #148 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 5 11 #-$. 4 4 0 1 0 0 0
-Received 26 received R Re Rec Rece BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 11 ; 1 10 0 1 0 0 0
-(C) 2011 (c) ( (C (C) (C) BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 11 () 2 2 0 1 0 0 0
-1 June 1 1 1 1 1 BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 5 11 /.,./ 5 10 0 1 0 0 0
-instrumentation as instrumentation i in ins inst BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ., 2 9 0 1 0 0 1
-accomplished in accomplished a ac acc acco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 8 0 1 0 0 1
-between the between b be bet betw BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 8 0 1 0 0 1
-has staunchly has h ha has has BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 0 1 0 0 1
-field, we field, f fi fie fiel BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 9 0 1 0 0 1
-highlighting recent highlighting h hi hig high BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 0 1 0 0 1
-pleased with pleased p pl ple plea BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 (), 3 8 0 1 0 0 1
-appropriately captures appropriately a ap app appr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 5 0 1 0 0 1
-The 14 the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 ,, 2 8 0 1 0 0 1
-instrumentation, image instrumentation, i in ins inst BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ,,,. 4 9 0 1 0 0 1
-Reflecting the reflecting R Re Ref Refl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 ,, 2 10 0 1 0 0 1
-here we here h he her here BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 5 0 1 0 0 1
-Using a using U Us Usi Usin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 8 0 1 0 0 1
-retina. Among retina. r re ret reti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 .- 2 8 0 1 0 0 1
-adaptive-optics enhanced: adaptive-optics a ad ada adap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 -:/ 3 8 0 1 0 0 1
-(AOSLO/AOSO), optical (aoslo/aoso), ( (A (AO (AOS BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 (/),(),. 8 8 0 1 0 0 1
-(AO) has (ao) ( (A (AO (AO) BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 (), 3 9 0 1 0 0 1
-is no is i is is is BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 8 0 1 0 0 1
-Dubra et dubra D Du Dub Dubr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 .[],.[],.[],[] 14 8 0 1 0 0 1
-introduced new introduced i in int intr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 8 0 1 0 0 1
-AOSO, an aoso, A AO AOS AOSO BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 ,-,-,- 6 7 0 1 0 0 1
-illumination SLO, illumination i il ill illu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,. 2 8 0 1 0 0 1
-continued drive continued c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 9 0 1 0 0 1
-application of application a ap app appl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 1 0 0 1
-forward at forward f fo for forw BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 2 0 1 0 0 1
-Four additional four F Fo Fou Four BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 1 0 0 1
-mosaic. Kacaoglu mosaic. m mo mos mosa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ..[] 4 8 0 1 0 0 1
-photoreceptors using photoreceptors p ph pho phot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 -.[] 4 8 0 1 0 0 1
-photoreceptors at photoreceptors p ph pho phot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 . 1 9 0 1 0 0 1
-al. [7] al. a al al. al. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 .[] 3 9 0 1 0 0 1
-using a using u us usi usin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 --..[] 6 9 0 1 0 0 1
-and demonstrate and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 1 0 0 1
-using a using u us usi usin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 3 0 1 0 0 1
-Moving to moving M Mo Mov Movi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 ,.[] 4 8 0 1 0 0 1
-flow dynamics flow f fl flo flow BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 8 0 1 0 0 1
-valuable for valuable v va val valu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 .,[] 4 8 0 1 0 0 1
-provide a provide p pr pro prov BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 1 0 0 1
-ganglion cell ganglion g ga gan gang BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ..[] 4 9 0 1 0 0 1
-boundaries from boundaries b bo bou boun BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 / 1 8 0 1 0 0 1
-patients with patients p pa pat pati BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 0 1 0 0 1
-cellular, the cellular, c ce cel cell BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,, 2 9 0 1 0 0 1
-and could and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 1 0 0 1
-issue. issue. issue. i is iss issu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 0 0 1 0 0 1
-The final the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 -. 2 8 0 1 0 0 1
-Moayed et moayed M Mo Moa Moay BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 .[] 3 9 0 1 0 0 1
-domain OCT. domain d do dom doma BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 .,,.[] 6 8 0 1 0 0 1
-multiphoton microscope multiphoton m mu mul mult BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ..[] 4 9 0 1 0 0 1
-cellular sources cellular c ce cel cell BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 - 1 8 0 1 0 0 1
-excitation fluorescence excitation e ex exc exci BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 .,' 3 8 0 1 0 0 1
-addressed by addressed a ad add addr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,. 2 8 0 1 0 0 1
-such, adaptation such, s su suc such BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 8 0 1 0 0 1
-preparations remains preparations p pr pre prep BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 5 0 1 0 0 1
-All papers all A Al All All BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 8 0 1 0 0 1
-indebted to indebted i in ind inde BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ' 1 9 0 1 0 0 1
-#148292 -$15.00 #148292 # #1 #14 #148 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 10 11 #-$. 4 4 0 1 0 0 0
-Received 26 received R Re Rec Rece BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 11 ; 1 10 0 1 0 0 0
-(C) 2011 (c) ( (C (C) (C) BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 () 2 2 0 1 0 0 0
-1 June 1 1 1 1 1 BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 11 /.,./ 5 10 0 1 0 0 0
-standards for standards s st sta stan BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 11 0 .. 2 9 0 0 0 0 1
-(Editor-in-Chief), Gregory (editor-in-chief), ( (E (Ed (Edi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 0 (--),.(), 9 9 0 0 0 0 1
-Society of society S So Soc Soci BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 0 :, 2 9 0 0 0 0 1
-Miriam Day, miriam M Mi Mir Miri BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 11 0 ,. 2 9 0 0 0 0 1
-you find you y yo you you BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 0 , 1 10 0 0 0 0 1
-stimulate research stimulate s st sti stim BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 0 . 1 5 0 0 0 0 1
-#148292 -$15.00 #148292 # #1 #14 #148 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 8 #-$. 4 4 0 1 0 0 0
-Received 26 received R Re Rec Rece BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 8 ; 1 10 0 1 0 0 0
-(C) 2011 (c) ( (C (C) (C) BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 10 () 2 2 0 1 0 0 0
-1 June 1 1 1 1 1 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 10 /.,./ 5 10 0 1 0 0 0
+Introduction: Feature introduction: I In Int Intr BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 : 1 10 0 0 0 0 1 introduction:_feature_issue_on_cellular_imaging Xx:_Xx_Xx_x_Xx_Xx
+of the of o of of of BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 2 0 0 0 0 1 of_the_retina x_x_Xx
+Joseph Carroll, joseph J Jo Jos Jose BLOCKSTART PAGEIN SAMEFONT LOWERFONT 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 0 ,,*,. 5 10 0 0 0 0 1 joseph_carroll,_X,*_michael_pircher,_X_and_robert_j._zawadzki_X Xx_Xx,_d,*_Xx_Xx,_d_x_Xx_X._Xx_d
+1 Department 1 1 1 1 1 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 ,,,,, 5 9 0 0 0 0 1 X_department_of_ophthalmology,_medical_college_of_wisconsin,_XXX_north_XXth_street,_milwaukee,_wi_XXXXX,_usa d_Xx_x_Xx,_Xx_Xx_x_Xx,_d_Xx_dx_Xx,_Xx,_X_d,_X
+2 Center 2 2 2 2 2 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 ,,, 3 10 0 0 0 0 1 X_center_for_medical_physics_and_biomedical_engineering,_medical_university_of_vienna,_waehringer_straße_XX,_XXXX d_Xx_x_Xx_Xx_x_Xx_Xx,_Xx_Xx_x_Xx,_Xx_Xx_d,_d
+Vienna, Austria vienna, V Vi Vie Vien BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 , 1 1 0 0 0 0 1 vienna,_austria Xx,_Xx
+3 Vision 3 3 3 3 3 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 (),, 4 9 0 0 0 0 1 X_vision_science_and_advanced_retinal_imaging_laboratory_(vsri),_department_of_ophthalmology_&_vision_science, d_Xx_Xx_x_Xx_Xx_Xx_Xx_(X),_Xx_x_Xx_&_Xx_Xx,
+University of university U Un Uni Univ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 ,,,,, 5 7 0 0 0 0 1 university_of_california_davis,_XXXX_y_street,_suite_XXXX,_sacramento,_ca_XXXXX,_usa Xx_x_Xx_Xx,_d_X_Xx,_Xx_d,_Xx,_X_d,_X
+*jcarroll@mcw.edu *jcarroll@mcw.edu *jcarroll@mcw.edu * *j *jc *jca BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 *@. 3 1 0 0 0 0 1 *jcarroll@mcw.edu *x@x.x
+Abstract: The abstract: A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 : 1 9 0 1 0 0 1 abstract:_the_editors_introduce_the_biomedical_optics_express_feature Xx:_Xx_x_x_x_Xx_Xx_Xx_x
+issue, "Cellular issue, i is iss issu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ,"," 4 10 0 1 0 0 1 issue,_"cellular_imaging_of_the_retina,"_which_includes_XX_contributions x,_"Xx_Xx_x_x_Xx,"_x_x_d_x
+from the from f fr fro from BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 . 1 5 0 1 0 0 1 from_the_vision_and_optics_community. x_x_x_x_x_x.
+©2011 Optical ©2011 © ©2 ©20 ©201 BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 0 1 no 0 10 0 1 0 0 1 ©XXXX_optical_society_of_america ©d_Xx_Xx_x_Xx
+OCIS codes: ocis O OC OCI OCIS BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 :(.),,,; 8 8 0 1 0 0 1 ocis_codes:_(XXX.XXXX)_announcements,_awards,_news,_and_organizational_activities; X_x:_(d.d)_Xx,_x,_x,_x_x_x;
+(110.1080) Active (110.1080) ( (1 (11 (110 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 0 1 (.);(.);(.) 11 10 0 1 0 0 1 (XXX.XXXX)_active_or_adaptive_optics;_(XXX.XXXX)_image_analysis;_(XXX.XXXX)_medical_optics_and (d.d)_Xx_x_x_x;_(d.d)_Xx_x;_(d.d)_Xx_x_x
+biotechnology; (170.4500) biotechnology; b bi bio biot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ;(.);(.); 9 8 0 1 0 0 1 biotechnology;_(XXX.XXXX)_optical_coherence_tomography;_(XXX.XXXX)_retina_scanning; x;_(d.d)_Xx_x_x;_(d.d)_Xx_x;
+(330.4460) Ophthalmic (330.4460) ( (3 (33 (330 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 1 (.);(.)-;(.) 12 9 0 1 0 0 1 (XXX.XXXX)_ophthalmic_optics_and_devices;_(XXX.XXXX)_vision-photoreceptors;_(XXX.XXXX) (d.d)_Xx_x_x_x;_(d.d)_Xx-x;_(d.d)
+Visual optics, visual V Vi Vis Visu BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 , 1 4 0 1 0 0 1 visual_optics,_ophthalmic_instrumentation Xx_x,_x_x
+References and references R Re Ref Refe BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 no 0 10 0 1 0 0 1 references_and_links Xx_x_x
+1. A. 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,",".. 9 9 0 0 0 0 1 X._a._dubra_and_y._sulai,_"reflective_afocal_broadband_adaptive_optics_scanning_ophthalmoscope,"_biomed._opt. d._X._Xx_x_X._Xx,_"Xx_x_x_x_x_x_x,"_Xx._Xx.
+Express 2 express E Ex Exp Expr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 -(). 4 2 0 0 0 0 1 express_X_XXXX-XXXX_(XXXX). Xx_d_d-d_(d).
+2. R. 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,..,.,.-,..,..,..," 22 10 0 0 0 0 1 X._r._j._zawadzki,_s._m._jones,_s._pilli,_s._balderas-mata,_d._y._kim,_s._s._olivier,_and_j._s._werner,_"integrated d._X._X._Xx,_X._X._Xx,_X._Xx,_X._Xx-Xx,_X._X._Xx,_X._X._Xx,_x_X._X._Xx,_"Xx
+adaptive optics adaptive a ad ada adap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 no 0 9 0 0 0 0 1 adaptive_optics_optical_coherence_tomography_and_adaptive_optics_scanning_laser_ophthalmoscope_system_for x_x_x_x_x_x_x_x_x_x_x_x_x
+simultaneous cellular simultaneous s si sim simu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,"..,-(). 9 8 0 0 0 0 1 simultaneous_cellular_resolution_in_vivo_retinal_imaging,"_biomed._opt._express_X,_XXXX-XXXX_(XXXX). x_x_x_x_x_x_x,"_Xx._Xx._Xx_d,_d-d_(d).
+3. S. 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ..,..,..,.,"- 13 8 0 0 0 0 1 X._s._manzanera,_m._a._helmbrecht,_c._j._kempf,_and_a._roorda,_"mems_segmented-based_adaptive_optics d._X._Xx,_X._X._Xx,_X._X._Xx,_x_X._Xx,_"X_x-x_x_x
+scanning laser scanning s sc sca scan BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,"..(),-(). 11 6 0 0 0 0 1 scanning_laser_ophthalmoscope,"_biomed._opt._express_X(X),_XXXX-XXXX_(XXXX). x_x_x,"_Xx._Xx._Xx_d(d),_d-d_(d).
+4. B. 4. 4 4. 4. 4. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,","..(), 12 9 0 0 0 0 1 X._b._vohnsen_and_d._rativa,_"ultrasmall_spot_size_scanning_laser_ophthalmoscopy,"_biomed._opt._express_X(X), d._X._Xx_x_X._Xx,_"Xx_x_x_x_x_x,"_Xx._Xx._Xx_d(d),
+1597-1609 (2011). 1597-1609 1 15 159 1597 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 1 2 -(). 4 1 0 0 0 0 1 XXXX-XXXX_(XXXX). d-d_(d).
+5. O. 5. 5 5. 5. 5. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,.,..,.,..,..,.,..," 23 9 0 0 0 0 1 X._o._p._kocaoglu,_s._lee,_r._s._jonnal,_q._wang,_a._e._herde,_j._c._derby,_w._gao,_and_d._t._miller,_"imaging d._X._X._Xx,_X._Xx,_X._X._Xx,_X._Xx,_X._X._Xx,_X._X._Xx,_X._Xx,_x_X._X._Xx,_"Xx
+cone photoreceptors cone c co con cone BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 1 2 no 0 9 0 0 0 0 1 cone_photoreceptors_in_three_dimensions_and_in_time_using_ultrahigh_resolution_optical_coherence_tomography x_x_x_x_x_x_x_x_x_x_x_x_x_x
+with adaptive with w wi wit with BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,"..(),-(). 11 5 0 0 0 0 1 with_adaptive_optics,"_biomed._opt._express_X(X),_XXX-XXX_(XXXX). x_x_x,"_Xx._Xx._Xx_d(d),_d-d_(d).
+6. D. 6. 6 6. 6. 6. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,"- 6 9 0 0 0 0 1 X._d._rativa_and_b._vohnsen,_"analysis_of_individual_cone-photoreceptor_directionality_using_scanning_laser d._X._Xx_x_X._Xx,_"Xx_x_x_x-x_x_x_x_x
+ophthalmoscopy," Biomed. ophthalmoscopy," o op oph opht BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),-(). 11 5 0 0 0 0 1 ophthalmoscopy,"_biomed._opt._express_X(X),_XXXX-XXXX_(XXXX). x,"_Xx._Xx._Xx_d(d),_d-d_(d).
+7. E. 7. 7 7. 7. 7. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,.,..," 10 9 0 0 0 0 1 X._e._w._dees,_a._dubra,_and_r._c._baraas,_"variability_in_parafoveal_cone_mosaic_in_normal_trichromatic d._X._X._Xx,_X._Xx,_x_X._X._Xx,_"Xx_x_x_x_x_x_x_x
+individuals," Biomed. individuals," i in ind indi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),-(). 11 5 0 0 0 0 1 individuals,"_biomed._opt._express_X(X),_XXXX-XXXX_(XXXX). x,"_Xx._Xx._Xx_d(d),_d-d_(d).
+8. A. 8. 8 8. 8. 8. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ..,.,..,..,..,..,.," 20 9 0 0 0 0 1 X._a._dubra,_y._sulai,_j._l._norris,_r._f._cooper,_a._m._dubis,_d._r._williams,_and_j._carroll,_"noninvasive_in d._X._Xx,_X._Xx,_X._X._Xx,_X._X._Xx,_X._X._Xx,_X._X._Xx,_x_X._Xx,_"Xx_x
+vivo imaging vivo v vi viv vivo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 no 0 8 0 0 0 0 1 vivo_imaging_of_the_human_rod_photoreceptor_mosaic_using_a_confocal_adaptive_optics_scanning x_x_x_x_x_x_x_x_x_x_x_x_x_x
+ophthalmoscope," Biomed. ophthalmoscope," o op oph opht BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),-(). 11 5 0 0 0 0 1 ophthalmoscope,"_biomed._opt._express_X(X),_XXXX-XXXX_(XXXX). x,"_Xx._Xx._Xx_d(d),_d-d_(d).
+9. J. 9. 9 9. 9. 9. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ..,.,.,"- 9 9 0 0 0 0 1 X._j._tam,_p._tiruveedhula,_and_a._roorda,_"characterization_of_single-file_flow_through_human_retinal_parafoveal d._X._Xx,_X._Xx,_x_X._Xx,_"Xx_x_x-x_x_x_x_x_x
+capillaries using capillaries c ca cap capi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),- 8 8 0 0 0 0 1 capillaries_using_an_adaptive_optics_scanning_laser_ophthalmoscope,"_biomed._opt._express_X(X),_XXX-XXX x_x_x_x_x_x_x_x,"_Xx._Xx._Xx_d(d),_d-d
+(2011). (2011). (2011). ( (2 (20 (201 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 1 2 (). 3 0 0 0 0 0 1 (XXXX). (d).
+10. D. 10. 1 10 10. 10. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 .....," 7 9 0 0 0 0 1 XX._d._c._hood_and_a._s._raza,_"method_for_comparing_visual_field_defects_to_local_rnfl_and_rgc_damage_seen_on d._X._X._Xx_x_X._X._Xx,_"Xx_x_x_x_x_x_x_x_X_x_X_x_x_x
+frequency domain frequency f fr fre freq BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,"..(),-(). 11 8 0 0 0 0 1 frequency_domain_oct_in_patients_with_glaucoma,"_biomed._opt._express_X(X),_XXXX-XXXX_(XXXX). x_x_X_x_x_x_x,"_Xx._Xx._Xx_d(d),_d-d_(d).
+11. D. 11. 1 11 11. 11. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,.,.,.,..,..," 17 9 0 0 0 0 1 XX._d._c._hood,_r._ramachandran,_k._holopigian,_m._lazow,_d._g._birch,_and_v._c._greenstein,_"method_for d._X._X._Xx,_X._Xx,_X._Xx,_X._Xx,_X._X._Xx,_x_X._X._Xx,_"Xx_x
+deriving visual deriving d de der deri BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,".. 4 9 0 0 0 0 1 deriving_visual_field_boundaries_from_oct_scans_of_patients_with_retinitis_pigmentosa,"_biomed._opt._express x_x_x_x_x_X_x_x_x_x_x_x,"_Xx._Xx._Xx
+2(5), 1106-1114 2(5), 2 2( 2(5 2(5) BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 (),-(). 7 2 0 0 0 0 1 X(X),_XXXX-XXXX_(XXXX). d(d),_d-d_(d).
+12. A. 12. 1 12 12. 12. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,.,..,.,.," 14 9 0 0 0 0 1 XX._a._a._moayed,_s._hariri,_e._s._song,_v._choh,_and_k._bizheva,_"in_vivo_volumetric_imaging_of_chicken_retina d._X._X._Xx,_X._Xx,_X._X._Xx,_X._Xx,_x_X._Xx,_"Xx_x_x_x_x_x_x
+with ultrahigh-resolution with w wi wit with BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 -,"..(),- 9 9 0 0 0 0 1 with_ultrahigh-resolution_spectral_domain_optical_coherence_tomography,"_biomed._opt._express_X(X),_XXXX- x_x-x_x_x_x_x_x,"_Xx._Xx._Xx_d(d),_d-
+1274 (2011). 1274 1 12 127 1274 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 1 0 0 0 1 2 (). 3 1 0 0 0 0 1 XXXX_(XXXX). d_(d).
+13. J. 13. 1 13 13. 13. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ...,.,..,.,.," 14 9 0 0 0 0 1 XX._j._m._bueno,_a._giakoumaki,_e._j._gualda,_f._schaeffel,_and_p._artal,_"analysis_of_the_chicken_retina_with_an d._X._X._Xx,_X._Xx,_X._X._Xx,_X._Xx,_x_X._Xx,_"Xx_x_x_x_x_x_x
+adaptive optics adaptive a ad ada adap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),-(). 11 7 0 0 0 0 1 adaptive_optics_multiphoton_microscope,"_biomed._opt._express_X(X),_XXXX-XXXX_(XXXX). x_x_x_x,"_Xx._Xx._Xx_d(d),_d-d_(d).
+14. R.-W. 14. 1 14 14. 14. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 1 2 ..-.,.-.,.,.,.,..,.-.,"- 24 8 0 0 0 0 1 XX._r.-w._lu,_y.-c._li,_t._ye,_c._strang,_k._keyser,_c._a._curcio,_and_x.-c._yao,_"two-photon_excited d._X.-X._Xx,_X.-X._Xx,_X._Xx,_X._Xx,_X._Xx,_X._X._Xx,_x_X.-X._Xx,_"Xx-x_x
+autofluorescence imaging autofluorescence a au aut auto BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 ,"..(),-(). 11 9 0 0 0 0 1 autofluorescence_imaging_of_freshly_isolated_frog_retinas,"_biomed._opt._express_X(X),_XXXX-XXXX_(XXXX). x_x_x_x_x_x_x,"_Xx._Xx._Xx_d(d),_d-d_(d).
+Retinal imaging retinal R Re Ret Reti BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 11 , 1 9 0 1 0 0 1 retinal_imaging_is_a_powerful_tool,_enabling_clinicians_to_directly_observe_pathology_and Xx_x_x_x_x_x,_x_x_x_x_x_x_x
+researchers to researchers r re res rese BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 11 . 1 10 0 1 0 0 1 researchers_to_probe_retinal_structure_and_function._cellular_resolution_imaging_of_the_retina_is x_x_x_x_x_x_x._Xx_x_x_x_x_x_x
+a broad a a a a a BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 1 0 1 0 0 0 0 0 5 11 , 1 8 0 1 0 0 1 a_broad_and_rapidly_growing_field,_benefiting_from_continued_advances_in_optical x_x_x_x_x_x,_x_x_x_x_x_x
+#148292 -$15.00 #148292 # #1 #14 #148 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 5 11 #-$. 4 4 0 1 0 0 0 #XXXXXX_-$XX.XX_usd #d_-$d.d_X
+Received 26 received R Re Rec Rece BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 11 ; 1 10 0 1 0 0 0 received_XX_may_XXXX;_published_XX_may_XXXX Xx_d_Xx_d;_x_d_Xx_d
+(C) 2011 (c) ( (C (C) (C) BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 11 () 2 2 0 1 0 0 0 (c)_XXXX_osa (X)_d_X
+1 June 1 1 1 1 1 BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 5 11 /.,./ 5 10 0 1 0 0 0 X_june_XXXX_/_vol._X,_no._X_/_biomedical_optics_express d_Xx_d_/_Xx._d,_Xx._d_/_X_X_X
+instrumentation as instrumentation i in ins inst BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ., 2 9 0 1 0 0 1 instrumentation_as_well_as_data_and_image_processing_capabilities._in_many_cases,_this_can_be x_x_x_x_x_x_x_x_x._Xx_x_x,_x_x_x
+accomplished in accomplished a ac acc acco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 8 0 1 0 0 1 accomplished_in_vivo._advances_in_retinal_imaging_are_made_possible_through_interactions x_x_x._Xx_x_x_x_x_x_x_x_x
+between the between b be bet betw BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 8 0 1 0 0 1 between_the_vision_and_optics_communities,_something_that_the_optical_society_of_america x_x_x_x_x_x,_x_x_x_Xx_Xx_x_Xx
+has staunchly has h ha has has BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 0 1 0 0 1 has_staunchly_supported_throughout_its_history._reflecting_the_continued_commitment_to_this x_x_x_x_x_x._Xx_x_x_x_x_x
+field, we field, f fi fie fiel BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 9 0 1 0 0 1 field,_we_were_invited_by_the_editors_at_biomedical_optics_express_to_organize_a_feature_issue x,_x_x_x_x_x_x_x_Xx_Xx_Xx_x_x_x_x_x
+highlighting recent highlighting h hi hig high BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 0 1 0 0 1 highlighting_recent_advances_in_the_field_of_cellular_imaging_of_the_retina._we_were_quite x_x_x_x_x_x_x_Xx_Xx_x_x_Xx._Xx_x_x
+pleased with pleased p pl ple plea BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 (), 3 8 0 1 0 0 1 pleased_with_the_response_(outlined_below),_and_believe_the_assembled_feature_issue x_x_x_x_(x_x),_x_x_x_x_x_x
+appropriately captures appropriately a ap app appr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 5 0 1 0 0 1 appropriately_captures_the_current_state_of_the_field. x_x_x_x_x_x_x_x.
+The 14 the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 ,, 2 8 0 1 0 0 1 the_XX_papers_in_this_issue_span_many_disciplines,_including_clinical_imaging,_new Xx_d_x_x_x_x_x_x_x,_x_x_x,_x
+instrumentation, image instrumentation, i in ins inst BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ,,,. 4 9 0 1 0 0 1 instrumentation,_image_analysis,_imaging_in_animal_models,_and_functional_retinal_imaging. x,_x_x,_x_x_x_x,_x_x_x_x.
+Reflecting the reflecting R Re Ref Refl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 ,, 2 10 0 1 0 0 1 reflecting_the_multidisciplinary_nature_of_this_field,_most_papers_fit_in_multiple_categories,_and Xx_x_x_x_x_x_x,_x_x_x_x_x_x,_x
+here we here h he her here BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 5 0 1 0 0 1 here_we_provide_a_brief_précis_of_the_entire_issue. x_x_x_x_x_x_x_x_x_x.
+Using a using U Us Usi Usin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 8 0 1 0 0 1 using_a_variety_of_imaging_techniques,_the_majority_of_the_papers_examined_the_human Xx_x_x_x_x_x,_x_x_x_x_x_x_x_x
+retina. Among retina. r re ret reti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 .- 2 8 0 1 0 0 1 retina._among_the_imaging_tools_used_to_acquire_retinal_images_were_stand-alone_and x._Xx_x_x_x_x_x_x_x_x_x_x-x_x
+adaptive-optics enhanced: adaptive-optics a ad ada adap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 -:/ 3 8 0 1 0 0 1 adaptive-optics_enhanced:_scanning_laser_ophthalmoscopy/scanning_ophthalmoscopy x-x_x:_x_x_x/x_x
+(AOSLO/AOSO), optical (aoslo/aoso), ( (A (AO (AOS BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 (/),(),. 8 8 0 1 0 0 1 (aoslo/aoso),_optical_coherence_tomography_(oct),_and_fundus_imaging._adaptive_optics (X/X),_x_x_x_(X),_x_x_x._Xx_x
+(AO) has (ao) ( (A (AO (AO) BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 (), 3 9 0 1 0 0 1 (ao)_has_opened_numerous_avenues_of_research_in_cellular_resolution_retinal_imaging,_thus_it (X)_x_x_x_x_x_x_x_x_x_x_x,_x_x
+is no is i is is is BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 8 0 1 0 0 1 is_no_surprise_that_we_find_ao_at_the_heart_of_many_of_the_papers_in_this_feature_issue. x_x_x_x_x_x_X_x_x_x_x_x_x_x_x_x_x_x_x.
+Dubra et dubra D Du Dub Dubr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 .[],.[],.[],[] 14 8 0 1 0 0 1 dubra_et_al._[X],_zawadzki_et_al._[X],_manzanera_et_al._[X],_and_vohnsen_and_rativa_[X] Xx_x_x._[d],_Xx_x_x._[d],_Xx_x_x._[d],_x_Xx_x_Xx_[d]
+introduced new introduced i in int intr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 8 0 1 0 0 1 introduced_new_instrumentation_for_imaging_the_photoreceptor_mosaic_using_a_broadband x_x_x_x_x_x_x_x_x_x_x
+AOSO, an aoso, A AO AOS AOSO BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 ,-,-,- 6 7 0 1 0 0 1 aoso,_an_integrated_ao-oct_slo,_a_new_mems-based_aoslo,_and_an_annular- X,_x_x_X-X_X,_x_x_X-x_X,_x_x_x-
+illumination SLO, illumination i il ill illu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,. 2 8 0 1 0 0 1 illumination_slo,_respectively._what_we_take_away_from_these_papers_is_that_there_is_a x_X,_x._Xx_x_x_x_x_x_x_x_x_x_x_x
+continued drive continued c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 9 0 1 0 0 1 continued_drive_to_improve_the_technology_even_further,_which_must_occur_in_parallel_to_robust x_x_x_x_x_x_x_x,_x_x_x_x_x_x_x
+application of application a ap app appl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 1 0 0 1 application_of_existing_imaging_tools_to_studying_the_retina_in_order_to_keep_the_field_moving x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+forward at forward f fo for forw BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 2 0 1 0 0 1 forward_at_its_current_pace. x_x_x_x_x.
+Four additional four F Fo Fou Four BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 1 0 0 1 four_additional_papers_examined_structural_and_functional_properties_of_the_photoreceptor Xx_x_x_x_x_x_x_x_x_x_x
+mosaic. Kacaoglu mosaic. m mo mos mosa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ..[] 4 8 0 1 0 0 1 mosaic._kacaoglu_et_al._[X]_examined_spatial_and_temporal_evaluation_of_individual_cone x._Xx_x_x._[d]_x_x_x_x_x_x_x_x
+photoreceptors using photoreceptors p ph pho phot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 -.[] 4 8 0 1 0 0 1 photoreceptors_using_ao-oct._rativa_and_vohnsen_[X]_probed_the_directionality_of_cone x_x_X-X._Xx_x_Xx_[d]_x_x_x_x_x
+photoreceptors at photoreceptors p ph pho phot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 . 1 9 0 1 0 0 1 photoreceptors_at_different_retinal_eccentricities_using_scanning_laser_ophthalmoscopy._dees_et x_x_x_x_x_x_x_x_x._Xx_x
+al. [7] al. a al al. al. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 .[] 3 9 0 1 0 0 1 al._[X]_examined_variability_in_parafoveal_cone_density_in_normal_trichromatic_individuals x._[d]_x_x_x_x_x_x_x_x_x_x
+using a using u us usi usin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 --..[] 6 9 0 1 0 0 1 using_a_high-speed_flood-illuminated_ao_fundus_camera._dubra_et_al._[X]_move_beyond_cones x_x_x-x_x-x_X_x_x._Xx_x_x._[d]_x_x_x
+and demonstrate and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 1 0 0 1 and_demonstrate_striking_images_of_the_rod_photoreceptor_mosaic_at_various_retinal_locations x_x_x_x_x_x_x_x_x_x_x_x_x
+using a using u us usi usin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 3 0 1 0 0 1 using_a_newly_developed_confocal_aoso. x_x_x_x_x_X.
+Moving to moving M Mo Mov Movi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 ,.[] 4 8 0 1 0 0 1 moving_to_clinical_imaging,_tam_et_al._[X]_developed_a_method_to_characterize_capillary Xx_x_x_x,_Xx_x_x._[d]_x_x_x_x_x_x
+flow dynamics flow f fl flo flow BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 8 0 1 0 0 1 flow_dynamics_in_the_living_human_retina_using_an_aoslo,_something_which_could_be_quite x_x_x_x_x_x_x_x_x_X,_x_x_x_x_x
+valuable for valuable v va val valu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 .,[] 4 8 0 1 0 0 1 valuable_for_studying_certain_retinal_diseases._in_glaucoma_patients,_hood_and_raza_[XX] x_x_x_x_x_x._Xx_x_x,_Xx_x_Xx_[d]
+provide a provide p pr pro prov BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 1 0 0 1 provide_a_method_for_comparing_functional_visual_field_defects_to_local_nerve_fiber_and_retinal x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+ganglion cell ganglion g ga gan gang BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ..[] 4 9 0 1 0 0 1 ganglion_cell_damage_seen_on_oct._hood_et_al._[XX]_present_a_method_to_define_visual_field x_x_x_x_x_X._Xx_x_x._[d]_x_x_x_x_x_x_x
+boundaries from boundaries b bo bou boun BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 / 1 8 0 1 0 0 1 boundaries_from_an_analysis_of_the_inner_segment/outer_segment_border_in_oct_images_of x_x_x_x_x_x_x_x/x_x_x_x_X_x_x
+patients with patients p pa pat pati BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 0 1 0 0 1 patients_with_retinitis_pigmentosa._while_the_image_resolution_in_these_latter_cases_is_not x_x_x_x._Xx_x_x_x_x_x_x_x_x_x
+cellular, the cellular, c ce cel cell BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,, 2 9 0 1 0 0 1 cellular,_the_approach_provides_a_key_step_forward_in_linking_retinal_structure_with_function, x,_x_x_x_x_x_x_x_x_x_x_x_x_x,
+and could and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 1 0 0 1 and_could_be_extended_to_some_of_the_cellular_imaging_techniques_described_in_this_feature x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+issue. issue. issue. i is iss issu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 0 0 1 0 0 1 issue. x.
+The final the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 -. 2 8 0 1 0 0 1 the_final_three_papers_applied_high-resolution_imaging_techniques_to_animal_models. Xx_x_x_x_x_x-x_x_x_x_x_x.
+Moayed et moayed M Mo Moa Moay BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 .[] 3 9 0 1 0 0 1 moayed_et_al._[XX]_provide_volumetric_imaging_of_the_chicken_retina_in_vivo_using_spectral Xx_x_x._[d]_x_x_x_x_x_x_x_x_x_x_x
+domain OCT. domain d do dom doma BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 .,,.[] 6 8 0 1 0 0 1 domain_oct._also_in_the_chicken,_but_ex_vivo,_bueno_et_al._[XX]_developed_an_ao x_X._Xx_x_x_x,_x_x_x,_Xx_x_x._[d]_x_x_X
+multiphoton microscope multiphoton m mu mul mult BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ..[] 4 9 0 1 0 0 1 multiphoton_microscope_for_examining_multiple_retinal_layers._lu_et_al._[XX]_examined_the x_x_x_x_x_x_x._Xx_x_x._[d]_x_x
+cellular sources cellular c ce cel cell BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 - 1 8 0 1 0 0 1 cellular_sources_of_autofluorescence_in_freshly_isolated_frog_retinas_using_a_two-photon x_x_x_x_x_x_x_x_x_x_x_x-x
+excitation fluorescence excitation e ex exc exci BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 .,' 3 8 0 1 0 0 1 excitation_fluorescence_microscope._ultimately,_there_are_questions_that_just_can't_be x_x_x._Xx,_x_x_x_x_x_x'x_x
+addressed by addressed a ad add addr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,. 2 8 0 1 0 0 1 addressed_by_imaging_the_human_retina,_and_animal_models_will_continue_to_be_needed._as x_x_x_x_x_x,_x_x_x_x_x_x_x_x._Xx
+such, adaptation such, s su suc such BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 8 0 1 0 0 1 such,_adaptation_and_development_of_cellular_imaging_systems_for_use_in_various_animal x,_x_x_x_x_x_x_x_x_x_x_x_x
+preparations remains preparations p pr pre prep BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 5 0 1 0 0 1 preparations_remains_an_area_of_need_in_this_field. x_x_x_x_x_x_x_x_x.
+All papers all A Al All All BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 8 0 1 0 0 1 all_papers_in_this_issue_have_undergone_a_rigorous_peer_review_process,_and_we_are Xx_x_x_x_x_x_x_x_x_x_x_x,_x_x_x
+indebted to indebted i in ind inde BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ' 1 9 0 1 0 0 1 indebted_to_the_referees_for_their_efforts_in_ensuring_that_the_optical_society_of_america's x_x_x_x_x_x_x_x_x_x_x_Xx_Xx_x_Xx'x
+#148292 -$15.00 #148292 # #1 #14 #148 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 10 11 #-$. 4 4 0 1 0 0 0 #XXXXXX_-$XX.XX_usd #d_-$d.d_X
+Received 26 received R Re Rec Rece BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 11 ; 1 10 0 1 0 0 0 received_XX_may_XXXX;_published_XX_may_XXXX Xx_d_Xx_d;_x_d_Xx_d
+(C) 2011 (c) ( (C (C) (C) BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 () 2 2 0 1 0 0 0 (c)_XXXX_osa (X)_d_X
+1 June 1 1 1 1 1 BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 11 /.,./ 5 10 0 1 0 0 0 X_june_XXXX_/_vol._X,_no._X_/_biomedical_optics_express d_Xx_d_/_Xx._d,_Xx._d_/_X_X_X
+standards for standards s st sta stan BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 11 0 .. 2 9 0 0 0 0 1 standards_for_quality_and_integrity_were_met._we_are_especially_gratefully_to_joseph_a._izatt x_x_x_x_x_x_x._Xx_x_x_x_x_Xx_X._Xx
+(Editor-in-Chief), Gregory (editor-in-chief), ( (E (Ed (Edi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 0 (--),.(), 9 9 0 0 0 0 1 (editor-in-chief),_gregory_w._faris_(deputy_editor),_and_the_publication_staff_at_the_optical (Xx-x-Xx),_Xx_X._Xx_(Xx_Xx),_x_x_x_x_x_x_Xx
+Society of society S So Soc Soci BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 0 :, 2 9 0 0 0 0 1 society_of_america_for_their_hard_work_and_dedication_to_this_feature_issue:_joe_richardson, Xx_x_Xx_x_x_x_x_x_x_x_x_x_x:_Xx_Xx,
+Miriam Day, miriam M Mi Mir Miri BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 11 0 ,. 2 9 0 0 0 0 1 miriam_day,_kelly_cohen_and_the_many_others_who_contributed_behind_the_scenes._we_hope Xx_Xx,_Xx_Xx_x_x_x_x_x_x_x_x_x._Xx_x
+you find you y yo you you BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 0 , 1 10 0 0 0 0 1 you_find_the_papers_in_this_feature_issue_as_enlightening_as_we_did,_and_expect_that_they_will x_x_x_x_x_x_x_x_x_x_x_x_x,_x_x_x_x_x
+stimulate research stimulate s st sti stim BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 0 . 1 5 0 0 0 0 1 stimulate_research_to_further_move_the_field_forward. x_x_x_x_x_x_x_x.
+#148292 -$15.00 #148292 # #1 #14 #148 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 8 #-$. 4 4 0 1 0 0 0 #XXXXXX_-$XX.XX_usd #d_-$d.d_X
+Received 26 received R Re Rec Rece BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 8 ; 1 10 0 1 0 0 0 received_XX_may_XXXX;_published_XX_may_XXXX Xx_d_Xx_d;_x_d_Xx_d
+(C) 2011 (c) ( (C (C) (C) BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 10 () 2 2 0 1 0 0 0 (c)_XXXX_osa (X)_d_X
+1 June 1 1 1 1 1 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 10 /.,./ 5 10 0 1 0 0 0 X_june_XXXX_/_vol._X,_no._X_/_biomedical_optics_express d_Xx_d_/_Xx._d,_Xx._d_/_X_X_X
 

@@ -1,195 +1,195 @@
-1 1 1 1 1 1 1 BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 0
-Data and data D Da Dat Data BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 1 0 0 0
-ENVIRONMENTS and environments E EN ENV ENVI BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 :- 2 9 0 0 0 0 1
-gy terms gy g gy gy gy BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1
-Evangelos Pafilis evangelos E Ev Eva Evan BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 ,*,,,,,- 8 10 0 0 0 0 1
-ter 1 ter t te ter ter BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 ,,,,, 5 9 0 0 0 0 1
-Katja Schulz katja K Ka Kat Katj BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 ,,,* 4 8 0 0 0 0 1
-1 Institute 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 1 ,,,.. 5 9 0 0 0 0 1
-2214, Heraklion, 2214, 2 22 221 2214 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 0 1 ,,,,,, 6 9 0 0 0 0 1
-Protein Research, protein P Pr Pro Prot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 ,,,, 4 9 0 0 0 0 1
-Copenhagen, Denmark, copenhagen, C Co Cop Cope BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 ,,,.,,,, 8 9 0 0 0 0 1
-4 Jacobs 4 4 4 4 4 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 1 ,,,,,, 6 9 0 0 0 0 1
-5 Marine 5 5 5 5 5 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 1 ,,,,, 5 10 0 0 0 0 1
-Smithsonian Institution, smithsonian S Sm Smi Smit BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 ,,,,-, 6 7 0 0 0 0 1
-ABSTRACT ABSTRACT abstract A AB ABS ABST BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 no 0 1 0 0 0 0 1
-Summary: The summary: S Su Sum Summ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 : 1 8 0 0 0 0 1
-key issue key k ke key key BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 1 2 . 1 8 0 0 0 0 1
-traditionally been traditionally t tr tra trad BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 , 1 10 0 0 0 0 1
-habitats are habitats h ha hab habi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 .- 2 9 0 0 0 0 1
-ever, structured ever, e ev eve ever BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,- 2 9 0 0 0 0 1
-analyses. Therefore, analyses. a an ana anal BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 .,,- 4 8 0 0 0 0 1
-tionary-based tagger tionary-based t ti tio tion BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 - 1 8 0 0 0 0 1
-terms in terms t te ter term BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 . 1 8 0 0 0 0 1
-manually curated manually m ma man manu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 () 2 9 0 0 0 0 1
-pages. We pages. p pa pag page BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 . 1 8 0 0 0 0 1
-tagging EOL tagging t ta tag tagg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 , 1 9 0 0 0 0 1
-EOL to eol E EO EOL EOL BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 1 2 . 1 7 0 0 0 0 1
-Availability and availability A Av Ava Avai BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 : 1 8 0 0 0 0 1
-available under available a av ava avai BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ----. 5 8 0 0 0 0 1
-licenses, respectively, licenses, l li lic lice BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,,://.. 7 7 0 0 0 0 1
-Contact: pafilis@hcmr.gr; contact: C Co Con Cont BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 :@.;..@.. 9 7 0 0 0 0 1
-1 INTRODUCTION 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 2 4 no 0 10 0 0 0 0 1
-The Encyclopedia the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 4 (;://./) 8 9 0 0 0 0 1
-offering biodiversity offering o of off offe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ' 1 9 0 0 0 0 1
-to a to t to to to BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 (.,).- 6 9 0 0 0 0 1
-tent from tent t te ten tent BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 .- 2 9 0 0 0 0 1
-tions about tions t ti tio tion BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 ,,,. 4 10 0 0 0 0 1
-The Environment the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 4 () 2 8 0 0 0 0 1
-controlled, structured controlled, c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ,- 2 9 0 0 0 0 1
-isms with isms i is ism isms BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 (.,). 5 9 0 0 0 0 1
-ontology comprises ontology o on ont onto BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 - 1 8 0 0 0 0 1
-quence metadata quence q qu que quen BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 (.,).- 6 9 0 0 0 0 1
-ronmental information ronmental r ro ron ronm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 no 0 9 0 0 0 0 1
-ENVO terms, envo E EN ENV ENVO BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 2 4 ,,- 3 9 0 0 0 0 1
-bilities and bilities b bi bil bili BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 , 1 9 0 0 0 0 1
-for example, for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ,., 3 9 0 0 0 0 1
-manually annotating manually m ma man manu BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 no 0 8 0 0 0 0 1
-* To * * * * * BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 3 6 *. 2 10 0 1 0 0 0
-highly time highly h hi hig high BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 .- 2 10 0 0 0 0 1
-ing to ing i in ing ing BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 3 6 ., 2 9 0 0 0 0 1
-perform named perform p pe per perf BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 no 0 9 0 0 0 0 1
-tagging bacteria tagging t ta tag tagg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 (.,)- 5 9 0 0 0 0 1
-neric tools, neric n ne ner neri BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 6 ,(,). 5 9 0 0 0 0 1
-Here we here H He Her Here BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 6 ,- 2 8 0 0 0 0 1
-fying ENVO fying f fy fyi fyin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 6 no 0 9 0 0 0 0 1
-for annotating for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 ., 2 9 0 0 0 0 1
-developed a developed d de dev deve BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 no 0 9 0 0 0 0 1
-taxon pages. taxon t ta tax taxo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 6 ., 2 9 0 0 0 0 1
-resource with resource r re res reso BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 , 1 9 0 0 0 0 1
-mined from mined m mi min mine BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 . 1 5 0 0 0 0 1
-2 ENVIRONMENT 2 2 2 2 2 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 4 8 no 0 10 0 0 0 0 1
-ENVIRONMENTS identifies environments E EN ENV ENVI BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 4 8 no 0 8 0 0 0 0 1
-fast dictionary-based fast f fa fas fast BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 -.,. 4 10 0 0 0 0 1
-command-line tool command-line c co com comm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 -, 2 9 0 0 0 0 1
-path to path p pa pat path BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 . 1 7 0 0 0 0 1
-We constructed we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 8 no 0 8 0 0 0 0 1
-names and names n na nam name BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 ,- 2 8 0 0 0 0 1
-nyms, obsolete nyms, n ny nym nyms BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 8 ,,- 3 9 0 0 0 0 1
-ments, and ments, m me men ment BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 8 ,, 2 9 0 0 0 0 1
-better captured better b be bet bett BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 . 1 9 0 0 0 0 1
-terms were terms t te ter term BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 , 1 9 0 0 0 0 1
-ranking the ranking r ra ran rank BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 no 0 8 0 0 0 0 1
-name, an name, n na nam name BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 ,,, 3 9 0 0 0 0 1
-of the of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 . 1 9 0 0 0 0 1
-forms, we forms, f fo for form BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 ,. 2 8 0 0 0 0 1
-A small a A A A A BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 1 0 0 0 0 0 4 8 no 0 9 0 0 0 0 1
-due to due d du due due BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 .- 2 8 0 0 0 0 1
-specting text specting s sp spe spec BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 8 no 0 9 0 0 0 0 1
-Medline and medline M Me Med Medl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 4 8 ., 2 8 0 0 0 0 1
-we tagged we w we we we BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 ,,- 3 9 0 0 0 0 1
-es with es e es es es BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 8 , 1 9 0 0 0 0 1
-than 100 than t th tha than BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 . 1 9 0 0 0 0 1
-and false and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 no 0 9 0 0 0 0 1
-corpus, we corpus, c co cor corp BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 ,. 2 7 0 0 0 0 1
-. . . . . . . BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 5 11 . 1 0 0 1 0 0 0
-CC-BY 4.0 cc-by C CC CC- CC-B BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 5 11 -. 2 10 0 1 0 0 0
-under a under u un und unde BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 11 no 0 2 0 1 0 0 0
-not certified not n no not not BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 11 )/,. 4 10 0 1 0 0 0
-The copyright the T Th The The BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 11 ( 1 10 0 1 1 1 0
-this version this t th thi this BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 11 ,. 2 7 0 1 0 0 0
-; ; ; ; ; ; ; BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 5 11 ; 1 0 0 1 0 0 0
-https://doi.org/10.1101/011403 https://doi.org/10.1101/011403 https://doi.org/10.1101/011403 h ht htt http BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 1 5 11 ://././ 7 6 0 1 0 0 0
-doi: doi: doi: d do doi doi: BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 11 : 1 1 0 1 0 0 0
-bioRxiv preprint biorxiv b bi bio bioR BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 11 no 0 3 0 1 0 0 0
-E. Pafilis e. E E. E. E. BLOCKSTART PAGESTART NEWFONT LOWERFONT 1 1 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 .. 2 10 1 1 0 0 0
-2 2 2 2 2 2 2 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 5 0 no 0 10 0 1 0 0 0
-3 MANUALLY 3 3 3 3 3 BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 5 0 no 0 10 1 0 0 0 1
-To construct to T To To To BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 1 0 0 0 1
-types, we types, t ty typ type BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,, 2 9 1 0 0 0 1
-clades Actinopterygii, clades c cl cla clad BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ,,,,, 5 9 1 0 0 0 1
-Mammalia, Mollusca, mammalia, M Ma Mam Mamm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 ,,. 3 8 1 0 0 0 1
-sections about sections s se sec sect BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,,,,, 5 9 1 0 0 0 1
-habitat, legislation, habitat, h ha hab habi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,,,,. 5 10 1 0 0 0 1
-After discarding after A Af Aft Afte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 ()(, 4 9 1 0 0 0 1
-words) pages, words) w wo wor word BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ), 2 9 1 0 0 0 1
-eight clades. eight e ei eig eigh BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 .- 2 9 1 0 0 0 1
-tributed among tributed t tr tri trib BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ; 1 9 1 0 0 0 1
-annotators to annotators a an ann anno BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 -. 2 9 1 0 0 0 1
-Each person each E Ea Eac Each BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 9 1 0 0 0 1
-no knowledge no n no no no BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 - 1 9 1 0 0 0 1
-tator. Based tator. t ta tat tato BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 .- 2 9 1 0 0 0 1
-wise Cohen's wise w wi wis wise BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 5 0 '.,- 4 8 1 0 0 0 1
-annotator agreement annotator a an ann anno BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 () 2 9 1 0 0 0 1
-the annotation the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 1 0 0 0 1
-even and even e ev eve even BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 1 0 0 0 1
-evaluation, respectively. evaluation, e ev eva eval BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,. 2 3 1 0 0 0 1
-4 PERFORMANCE 4 4 4 4 4 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 7 2 no 0 10 0 0 0 0 1
-Since the since S Si Sin Sinc BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 2 no 0 8 0 0 0 0 1
-and links and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 , 1 8 0 0 0 0 1
-its performance. its i it its its BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 . 1 9 0 0 0 0 1
-the same the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 , 1 9 0 0 0 0 1
-and recall and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 , 1 10 0 0 0 0 1
-overlapping matches overlapping o ov ove over BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 . 1 9 0 0 0 0 1
-corpus, this corpus, c co cor corp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 ,..,- 5 9 0 0 0 0 1
-sponding to sponding s sp spo spon BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 2 ..- 3 9 0 0 0 0 1
-sidered true sidered s si sid side BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 2 , 1 9 0 0 0 0 1
-if the if i if if if BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 - 1 9 0 0 0 0 1
-tors did. tors t to tor tors BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 3 .., 3 10 1 1 0 0 0
-at least at a at at at BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 . 1 3 1 1 0 0 0
-5 ANNOTATION 5 5 5 5 5 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 7 4 no 0 10 1 0 0 0 1
-To realize to T To To To BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 4 -,- 3 9 1 0 0 0 1
-portant that portant p po por port BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 - 1 9 1 0 0 0 1
-sults are sults s su sul sult BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 ., 2 9 1 0 0 0 1
-have integrated have h ha hav have BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 no 0 8 1 0 0 0 1
-resource to resource r re res reso BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 . 1 8 1 0 0 0 1
-month, we month, m mo mon mont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 ,- 2 8 1 0 0 0 1
-related sections related r re rel rela BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 ., 2 8 1 0 0 0 1
-1,077,522 annotations 1,077,522 1 1, 1,0 1,07 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 7 4 ,,,. 4 8 1 0 0 0 1
-We make we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 4 no 0 8 1 0 0 0 1
-in three in i in in in BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 4 ., 2 9 1 0 0 0 1
-web pages, web w we web web BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 4 , 1 9 1 0 0 0 1
-textual descriptions textual t te tex text BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 ()., 4 9 1 0 0 0 1
-can be can c ca can can BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 - 1 9 1 0 0 0 1
-gramming interface gramming g gr gra gram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 / 1 8 1 0 0 0 1
-repository of repository r re rep repo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 (://./)., 9 10 1 0 0 0 1
-full annotation full f fu ful full BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 - 1 9 1 0 0 0 1
-from http://downloads.jensenlab.org/EOL. from f fr fro from BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 ://../. 7 5 1 0 0 0 1
-6 FUTURE 6 6 6 6 6 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 9 6 no 0 10 1 0 0 0 1
-The ENVIRONMENTS the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 6 no 0 8 1 0 0 0 1
-of text of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 6 .,, 3 10 1 0 0 0 1
-as isolation as a as as as BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 6 ,(.,).- 7 8 1 0 0 0 1
-bined with bined b bi bin bine BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 6 (.,), 5 9 1 0 0 0 1
-used to used u us use used BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 6 -- 2 9 1 0 0 0 1
-ture, like ture, t tu tur ture BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 6 ,(,). 5 9 1 0 0 0 1
-ACKNOWLEDGEMENTS ACKNOWLEDGEMENTS acknowledgements A AC ACK ACKN BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 no 0 10 0 0 0 0 1
-Funding: This funding: F Fu Fun Fund BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 : 1 10 0 0 0 0 1
-Rubenstein Fellows rubenstein R Ru Rub Rube BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 [--/], 6 9 0 0 0 0 1
-LifeWatchGreece Research lifewatchgreece L Li Lif Life BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 [-// 4 9 0 0 0 0 1
-NSRF(C&E)], and nsrf(c&e)], N NS NSR NSRF BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ()],- 5 9 0 0 0 0 1
-tein Research tein t te tei tein BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 7 []. 3 4 0 0 0 0 1
-Conflict of conflict C Co Con Conf BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 :. 2 10 0 0 0 0 1
-REFERENCES REFERENCES references R RE REF REFE BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 no 0 10 0 0 0 0 1
-Bossy,R. et bossy,r. B Bo Bos Boss BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..()-- 7 9 0 0 0 0 1
-tope Task. tope t to top tope BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 7 .,, 3 8 0 0 0 0 1
-161-169. 161-169. 161-169. 1 16 161 161- BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 7 -. 2 1 0 0 0 0 1
-Buttigieg,P.L. et buttigieg,p.l. B Bu But Butt BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,...(): 7 9 0 0 0 0 1
-biomedical entities. biomedical b bi bio biom BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 7 ...,,. 6 5 0 0 0 0 1
-Gwinn,N.E. and gwinn,n.e. G Gw Gwi Gwin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..,.():- 9 9 0 0 0 0 1
-versity literature versity v ve ver vers BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 7 ..,,-. 6 6 0 0 0 0 1
-Hirschman,L. et hirschman,l. H Hi Hir Hirs BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..()-: 7 10 0 0 0 0 1
-environmental metadata. environmental e en env envi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 .,,-. 5 4 0 0 0 0 1
-Pafilis,E. et pafilis,e. P Pa Paf Pafi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..() 5 8 0 0 0 0 1
-Accurate Identification accurate A Ac Acc Accu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 .,,. 4 8 0 0 0 0 1
-Parr,C.S. et parr,c.s. P Pa Par Parr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,...(): 7 9 0 0 0 0 1
-Knowledge About knowledge K Kn Kno Know BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 ...,,. 6 7 0 0 0 0 1
-Thessen,A.E. and thessen,a.e. T Th The Thes BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..,..() 8 9 0 0 0 0 1
-text from text t te tex text BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 .,,. 4 6 0 0 0 0 1
-Yilmaz,P. et yilmaz,p. Y Yi Yil Yilm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..() 5 8 0 0 0 0 1
-(MIMARKS) and (mimarks) ( (M (MI (MIM BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ()()()- 7 8 0 0 0 0 1
-tions. Nat. tions. t ti tio tion BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 7 ...,,-. 7 4 0 0 0 0 1
-Figure 1. figure F Fi Fig Figu BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 10 .:"" 4 9 1 0 0 0 1
-of the of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 10 ; 1 9 1 0 0 0 1
-terms is terms t te ter term BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 10 "".: 4 10 1 0 0 0 1
-to the to t to to to BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 10 (). 3 9 1 0 0 0 1
-. . . . . . . BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 11 11 . 1 0 1 1 0 0 0
-CC-BY 4.0 cc-by C CC CC- CC-B BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 -. 2 10 1 1 0 0 0
-under a under u un und unde BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 2 1 1 0 0 0
-not certified not n no not not BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 )/,. 4 10 1 1 0 0 0
-The copyright the T Th The The BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 ( 1 10 1 1 1 0 0
-this version this t th thi this BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 ,. 2 7 1 1 0 0 0
-; ; ; ; ; ; ; BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 11 11 ; 1 0 1 1 0 0 0
-https://doi.org/10.1101/011403 https://doi.org/10.1101/011403 https://doi.org/10.1101/011403 h ht htt http BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 1 11 11 ://././ 7 6 1 1 0 0 0
-doi: doi: doi: d do doi doi: BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 11 : 1 1 1 1 0 0 0
-bioRxiv preprint biorxiv b bi bio bioR BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 11 no 0 3 1 1 0 0 0
+1 1 1 1 1 1 1 BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 0 X d
+Data and data D Da Dat Data BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 1 0 0 0 data_and_text_mining Xx_x_Xx_Xx
+ENVIRONMENTS and environments E EN ENV ENVI BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 :- 2 9 0 0 0 0 1 environments_and_eol:_identification_of_environment_ontolo- X_x_X:_x_x_Xx_Xx-
+gy terms gy g gy gy gy BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1 gy_terms_in_text_and_the_annotation_of_the_encyclopedia_of_life x_x_x_x_x_x_x_x_x_Xx_x_Xx
+Evangelos Pafilis evangelos E Ev Eva Evan BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 ,*,,,,,- 8 10 0 0 0 0 1 evangelos_pafilis_X,_*_,_sune_p_frankild_X_,_julia_schnetzer_X,X_,_lucia_fanini_X_,_sarah_faulwet- Xx_Xx_d,_*_,_Xx_X_Xx_d_,_Xx_Xx_d,d_,_Xx_Xx_d_,_Xx_Xx-
+ter 1 ter t te ter ter BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 ,,,,, 5 9 0 0 0 0 1 ter_X_,_christina_pavloudi_X_,_aikaterini_vasileiadou_X_,_patrick_leary_X_,_jennifer_hammock_X_, x_d_,_Xx_Xx_d_,_Xx_Xx_d_,_Xx_Xx_d_,_Xx_Xx_d_,
+Katja Schulz katja K Ka Kat Katj BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 ,,,* 4 8 0 0 0 0 1 katja_schulz_X_,_cynthia_sims_parr_X_,_christos_arvanitidis_X_and_lars_juhl_jensen_X,_* Xx_Xx_d_,_Xx_Xx_Xx_d_,_Xx_Xx_d_x_Xx_Xx_Xx_d,_*
+1 Institute 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 1 ,,,.. 5 9 0 0 0 0 1 X_institute_of_marine_biology,_biotechnology_and_aquaculture,_hellenic_centre_for_marine_research,_p.o._box d_Xx_x_Xx_Xx,_Xx_x_Xx,_Xx_Xx_x_Xx_Xx,_X.X._Xx
+2214, Heraklion, 2214, 2 22 221 2214 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 0 1 ,,,,,, 6 9 0 0 0 0 1 XXXX,_heraklion,_XXXXX,_crete,_greece,_X_disease_systems_biology_program,_novo_nordisk_foundation_center_for d,_Xx,_d,_Xx,_Xx,_d_Xx_Xx_Xx_Xx,_Xx_Xx_Xx_Xx_x
+Protein Research, protein P Pr Pro Prot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 ,,,, 4 9 0 0 0 0 1 protein_research,_faculty_of_health_and_medical_sciences,_university_of_copenhagen,_blegdamsvej_Xb,_XXXX Xx_Xx,_Xx_x_Xx_x_Xx_Xx,_Xx_x_Xx,_Xx_dx,_d
+Copenhagen, Denmark, copenhagen, C Co Cop Cope BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 ,,,.,,,, 8 9 0 0 0 0 1 copenhagen,_denmark,_X_max_planck_institute_for_marine_microbiology,_celsiusstr._X,_XXXXX,_bremen,_germany, Xx,_Xx,_d_Xx_Xx_Xx_x_Xx_Xx,_Xx._d,_d,_Xx,_Xx,
+4 Jacobs 4 4 4 4 4 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 1 ,,,,,, 6 9 0 0 0 0 1 X_jacobs_university_ggmbh,_school_of_engineering_and_sciences,_campusring_X,_XXXXX,_bremen,_germany, d_Xx_Xx_xXxX,_Xx_x_Xx_x_Xx,_Xx_d,_d,_Xx,_Xx,
+5 Marine 5 5 5 5 5 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 1 ,,,,, 5 10 0 0 0 0 1 X_marine_biological_laboratory,_X_mbl_str,_woods_hole,_ma_XXXXX,_us_and_X_national_museum_of_natural_history, d_Xx_Xx_Xx,_d_X_Xx,_Xx_Xx,_X_d,_X_x_d_Xx_Xx_x_Xx_Xx,
+Smithsonian Institution, smithsonian S Sm Smi Smit BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 ,,,,-, 6 7 0 0 0 0 1 smithsonian_institution,_po_box_XXXXX,_mrc_XXX,_washington,_dc_XXXXX-XXXX,_us Xx_Xx,_X_Xx_d,_X_d,_Xx,_X_d-d,_X
+ABSTRACT ABSTRACT abstract A AB ABS ABST BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 no 0 1 0 0 0 0 1 abstract X
+Summary: The summary: S Su Sum Summ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 : 1 8 0 0 0 0 1 summary:_the_association_of_organisms_to_their_environments_is_a Xx:_Xx_x_x_x_x_x_x_x_x
+key issue key k ke key key BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 1 2 . 1 8 0 0 0 0 1 key_issue_in_exploring_biodiversity_patterns._this_knowledge_has x_x_x_x_x_x._Xx_x_x
+traditionally been traditionally t tr tra trad BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 , 1 10 0 0 0 0 1 traditionally_been_scattered,_but_textual_descriptions_of_taxa_and_their x_x_x,_x_x_x_x_x_x_x
+habitats are habitats h ha hab habi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 .- 2 9 0 0 0 0 1 habitats_are_now_being_consolidated_in_centralized_resources._how- x_x_x_x_x_x_x_x._Xx-
+ever, structured ever, e ev eve ever BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,- 2 9 0 0 0 0 1 ever,_structured_annotations_are_needed_to_facilitate_large-scale x,_x_x_x_x_x_x_x-x
+analyses. Therefore, analyses. a an ana anal BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 .,,- 4 8 0 0 0 0 1 analyses._therefore,_we_developed_environments,_a_fast_dic- x._Xx,_x_x_X,_x_x_x-
+tionary-based tagger tionary-based t ti tio tion BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 2 - 1 8 0 0 0 0 1 tionary-based_tagger_capable_of_identifying_environment_ontology x-x_x_x_x_x_Xx_Xx
+terms in terms t te ter term BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 . 1 8 0 0 0 0 1 terms_in_text._we_evaluate_the_accuracy_of_the_tagger_on_a_new x_x_x._Xx_x_x_x_x_x_x_x_x_x
+manually curated manually m ma man manu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 () 2 9 0 0 0 0 1 manually_curated_corpus_of_XXX_encyclopedia_of_life_(eol)_species x_x_x_x_d_Xx_Xx_Xx_(X)_x
+pages. We pages. p pa pag page BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 . 1 8 0 0 0 0 1 pages._we_use_the_tagger_to_associate_taxa_with_environments_by x._Xx_x_x_x_x_x_x_x_x_x
+tagging EOL tagging t ta tag tagg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 , 1 9 0 0 0 0 1 tagging_eol_text_content_monthly,_and_integrate_the_results_into_the x_X_x_x_x,_x_x_x_x_x_x
+EOL to eol E EO EOL EOL BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 1 2 . 1 7 0 0 0 0 1 eol_to_disseminate_them_to_a_broad_audience_of_users. X_x_x_x_x_x_x_x_x_x.
+Availability and availability A Av Ava Avai BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 : 1 8 0 0 0 0 1 availability_and_implementation:_the_software_and_the_corpus_are Xx_x_x:_Xx_x_x_x_x_x
+available under available a av ava avai BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ----. 5 8 0 0 0 0 1 available_under_the_open-source_bsd_and_the_cc-by-nc-sa_X.X x_x_x_x-x_X_x_x_X-X-X-X_d.d
+licenses, respectively, licenses, l li lic lice BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 ,,://.. 7 7 0 0 0 0 1 licenses,_respectively,_at_http://environments.hcmr.gr x,_x,_x_x:/x.x.x
+Contact: pafilis@hcmr.gr; contact: C Co Con Cont BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 :@.;..@.. 9 7 0 0 0 0 1 contact:_pafilis@hcmr.gr;_lars.juhl.jensen@cpr.ku.dk Xx:_x@x.x;_x.x.x@x.x.x
+1 INTRODUCTION 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 2 4 no 0 10 0 0 0 0 1 X_introduction d_X
+The Encyclopedia the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 4 (;://./) 8 9 0 0 0 0 1 the_encyclopedia_of_life_(eol;_http://eol.org/)_is_a_web_resource Xx_Xx_x_Xx_(X;_x:/x.x/)_x_x_x_x
+offering biodiversity offering o of off offe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ' 1 9 0 0 0 0 1 offering_biodiversity_knowledge_summaries_of_the_world's_species x_x_x_x_x_x_x'x_x
+to a to t to to to BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 (.,).- 6 9 0 0 0 0 1 to_a_vast_audience_(parr_et_al.,_XXXX)._it_currently_aggregates_con- x_x_x_x_(Xx_x_x.,_d)._Xx_x_x_x-
+tent from tent t te ten tent BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 .- 2 9 0 0 0 0 1 tent_from_more_than_XXX_providers._these_include_textual_descrip- x_x_x_x_d_x._Xx_x_x_x-
+tions about tions t ti tio tion BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 ,,,. 4 10 0 0 0 0 1 tions_about_the_biology,_such_as_habitat,_of_more_than_XXX,XXX_taxa. x_x_x_x,_x_x_x,_x_x_x_d,d_x.
+The Environment the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 4 () 2 8 0 0 0 0 1 the_environment_ontology_(envo)_project_aims_to_provide_a Xx_Xx_Xx_(X)_x_x_x_x_x
+controlled, structured controlled, c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ,- 2 9 0 0 0 0 1 controlled,_structured_vocabulary_to_support_annotation_of_organ- x,_x_x_x_x_x_x_x-
+isms with isms i is ism isms BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 (.,). 5 9 0 0 0 0 1 isms_with_environmental_descriptors_(buttigieg_et_al.,_XXXX)._the x_x_x_x_(Xx_x_x.,_d)._Xx
+ontology comprises ontology o on ont onto BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 - 1 8 0 0 0 0 1 ontology_comprises_~XXXX_terms_and_is_part_of_recommended_se- x_x_~d_x_x_x_x_x_x_x-
+quence metadata quence q qu que quen BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 (.,).- 6 9 0 0 0 0 1 quence_metadata_standards_(yilmaz_et_al.,_XXXX)._having_the_envi- x_x_x_(Xx_x_x.,_d)._Xx_x_x-
+ronmental information ronmental r ro ron ronm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 no 0 9 0 0 0 0 1 ronmental_information_contained_in_eol_annotated_in_the_form_of x_x_x_x_X_x_x_x_x_x
+ENVO terms, envo E EN ENV ENVO BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 2 4 ,,- 3 9 0 0 0 0 1 envo_terms,_rather_than_as_free_text,_would_enhance_search_capa- X_x,_x_x_x_x_x,_x_x_x_x-
+bilities and bilities b bi bil bili BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 , 1 9 0 0 0 0 1 bilities_and_enable_users_to_easily_compile_summary_statistics_on, x_x_x_x_x_x_x_x_x_x,
+for example, for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ,., 3 9 0 0 0 0 1 for_example,_the_ecological_distribution_of_any_taxa._however, x_x,_x_x_x_x_x_x._Xx,
+manually annotating manually m ma man manu BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 no 0 8 0 0 0 0 1 manually_annotating_all_eol_entries_with_envo_terms_would_be x_x_x_X_x_x_X_x_x_x
+* To * * * * * BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 3 6 *. 2 10 0 1 0 0 0 *_to_whom_correspondence_should_be_addressed. *_Xx_x_x_x_x_x.
+highly time highly h hi hig high BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 .- 2 10 0 0 0 0 1 highly_time_demanding._an_attractive_alternative_is_to_use_text_min- x_x_x._Xx_x_x_x_x_x_x_x-
+ing to ing i in ing ing BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 3 6 ., 2 9 0 0 0 0 1 ing_to_automatically_tag_envo_terms._so_far,_the_few_efforts_to x_x_x_x_X_x._Xx_x,_x_x_x_x
+perform named perform p pe per perf BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 no 0 9 0 0 0 0 1 perform_named_entity_recognition_of_environments_have_focused_on x_x_x_x_x_x_x_x_x
+tagging bacteria tagging t ta tag tagg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 (.,)- 5 9 0 0 0 0 1 tagging_bacteria_biotopes_(bossy_et_al.,_XXXX)_or_made_use_of_ge- x_x_x_(Xx_x_x.,_d)_x_x_x_x_x-
+neric tools, neric n ne ner neri BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 6 ,(,). 5 9 0 0 0 0 1 neric_tools,_not_optimized_for_the_task_(thessen_and_parr,_XXXX). x_x,_x_x_x_x_x_(Xx_x_Xx,_d).
+Here we here H He Her Here BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 6 ,- 2 8 0 0 0 0 1 here_we_present_environments,_a_tagger_capable_of_identi- Xx_x_x_X,_x_x_x_x_x-
+fying ENVO fying f fy fyi fyin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 6 no 0 9 0 0 0 0 1 fying_envo_terms_with_sufficient_accuracy_and_speed_to_be_useful x_X_x_x_x_x_x_x_x_x_x
+for annotating for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 ., 2 9 0 0 0 0 1 for_annotating_large_text_corpora._to_benchmark_the_method,_we x_x_x_x_x._Xx_x_x_x,_x
+developed a developed d de dev deve BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 no 0 9 0 0 0 0 1 developed_a_new_gold_standard_corpus_of_manually_annotated_eol x_x_x_x_x_x_x_x_x_X
+taxon pages. taxon t ta tax taxo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 6 ., 2 9 0 0 0 0 1 taxon_pages._last_but_not_least,_we_have_extended_the_eol_web x_x._Xx_x_x_x,_x_x_x_x_X_x
+resource with resource r re res reso BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 , 1 9 0 0 0 0 1 resource_with_envo_terms_for_each_taxon,_which_are_automatically x_x_X_x_x_x_x,_x_x_x
+mined from mined m mi min mine BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 . 1 5 0 0 0 0 1 mined_from_their_textual_descriptions. x_x_x_x_x.
+2 ENVIRONMENT 2 2 2 2 2 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 4 8 no 0 10 0 0 0 0 1 X_environment_ontology_term_tagger d_X_X_X_X
+ENVIRONMENTS identifies environments E EN ENV ENVI BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 4 8 no 0 8 0 0 0 0 1 environments_identifies_envo_terms_in_text_using_the_same X_x_X_x_x_x_x_x_x
+fast dictionary-based fast f fa fas fast BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 -.,. 4 10 0 0 0 0 1 fast_dictionary-based_tagging_engine_as_in_pafilis_et_al.,_XXXX._the x_x-x_x_x_x_x_Xx_x_x.,_d._Xx
+command-line tool command-line c co com comm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 -, 2 9 0 0 0 0 1 command-line_tool_requires_only_a_single_parameter,_namely_the x-x_x_x_x_x_x_x,_x_x
+path to path p pa pat path BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 . 1 7 0 0 0 0 1 path_to_a_folder_with_the_text_files_to_be_processed. x_x_x_x_x_x_x_x_x_x_x.
+We constructed we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 8 no 0 8 0 0 0 0 1 we_constructed_a_dictionary_based_on_envo_by_extracting_all Xx_x_x_x_x_x_X_x_x_x
+names and names n na nam name BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 ,- 2 8 0 0 0 0 1 names_and_synonyms_from_the_obo_file,_excluding_broad_syno- x_x_x_x_x_X_x,_x_x_x-
+nyms, obsolete nyms, n ny nym nyms BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 8 ,,- 3 9 0 0 0 0 1 nyms,_obsolete_terms,_terms_describing_foods_rather_than_environ- x,_x_x,_x_x_x_x_x_x-
+ments, and ments, m me men ment BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 8 ,, 2 9 0 0 0 0 1 ments,_and_terms_representing_organisms_and_tissues,_which_are x,_x_x_x_x_x_x,_x_x
+better captured better b be bet bett BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 . 1 9 0 0 0 0 1 better_captured_by_other_ontologies._names_connected_to_multiple x_x_x_x_x._Xx_x_x_x
+terms were terms t te ter term BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 , 1 9 0 0 0 0 1 terms_were_assigned_to_the_one_that_best_captures_its_meaning,_by x_x_x_x_x_x_x_x_x_x_x,_x
+ranking the ranking r ra ran rank BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 no 0 8 0 0 0 0 1 ranking_the_terms_based_on_whether_the_name_was_the_primary x_x_x_x_x_x_x_x_x_x_x
+name, an name, n na nam name BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 ,,, 3 9 0 0 0 0 1 name,_an_exact_synonym,_a_narrow_synonym,_or_a_related_synonym x,_x_x_x,_x_x_x,_x_x_x_x
+of the of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 . 1 9 0 0 0 0 1 of_the_term._because_envo_usually_lists_only_the_singular_noun x_x_x._Xx_X_x_x_x_x_x_x
+forms, we forms, f fo for form BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 ,. 2 8 0 0 0 0 1 forms,_we_automatically_generated_plural_and_adjective_forms. x,_x_x_x_x_x_x_x.
+A small a A A A A BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 1 0 0 0 0 0 4 8 no 0 9 0 0 0 0 1 a_small_fraction_of_the_names_will_result_in_many_false_positives X_x_x_x_x_x_x_x_x_x_x_x
+due to due d du due due BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 .- 2 8 0 0 0 0 1 due_to_homonymy._we_created_a_block_list_of_such_names_by_in- x_x_x._Xx_x_x_x_x_x_x_x_x_x-
+specting text specting s sp spe spec BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 8 no 0 9 0 0 0 0 1 specting_text_for_all_names_that_appeared_more_than_XXXX_times_in x_x_x_x_x_x_x_x_x_d_x_x
+Medline and medline M Me Med Medl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 4 8 ., 2 8 0 0 0 0 1 medline_and_eol._to_find_important_synonyms_missing_in_envo, Xx_x_X._Xx_x_x_x_x_x_X,
+we tagged we w we we we BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 ,,- 3 9 0 0 0 0 1 we_tagged_the_habitat_and_ecology_sections_of_X,XXX,XXX_eol_pag- x_x_x_x_x_x_x_x_d,d,d_X_x-
+es with es e es es es BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 8 , 1 9 0 0 0 0 1 es_with_even_identifiers,_and_inspected_all_words_occurring_more x_x_x_x,_x_x_x_x_x_x
+than 100 than t th tha than BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 . 1 9 0 0 0 0 1 than_XXX_times_in_untagged_text_segments._based_on_this_analysis x_d_x_x_x_x_x._Xx_x_x_x
+and false and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 no 0 9 0 0 0 0 1 and_false_negatives_found_in_the_development_part_of_the_curated x_x_x_x_x_x_x_x_x_x_x
+corpus, we corpus, c co cor corp BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 8 ,. 2 7 0 0 0 0 1 corpus,_we_added_XXX_synonyms_to_the_dictionary. x,_x_x_d_x_x_x_x.
+. . . . . . . BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 5 11 . 1 0 0 1 0 0 0 . .
+CC-BY 4.0 cc-by C CC CC- CC-B BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 5 11 -. 2 10 0 1 0 0 0 cc-by_X.X_international_license X-X_d.d_Xx_x
+under a under u un und unde BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 11 no 0 2 0 1 0 0 0 under_a x_x
+not certified not n no not not BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 11 )/,. 4 10 0 1 0 0 0 not_certified_by_peer_review)_is_the_author/funder,_who_has_granted_biorxiv_a_license_to_display_the_preprint_in_perpetuity._it_is_made_available x_x_x_x_x)_x_x_x/x,_x_x_x_xXx_x_x_x_x_x_x_x_x._Xx_x_x_x
+The copyright the T Th The The BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 11 ( 1 10 0 1 1 1 0 the_copyright_holder_for_this_preprint_(which_was Xx_x_x_x_x_x_(x_x
+this version this t th thi this BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 11 ,. 2 7 0 1 0 0 0 this_version_posted_november_XX,_XXXX. x_x_x_Xx_d,_d.
+; ; ; ; ; ; ; BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 5 11 ; 1 0 0 1 0 0 0 ; ;
+https://doi.org/10.1101/011403 https://doi.org/10.1101/011403 https://doi.org/10.1101/011403 h ht htt http BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 1 5 11 ://././ 7 6 0 1 0 0 0 https://doi.org/XX.XXXX/XXXXXX x:/x.x/d.d/d
+doi: doi: doi: d do doi doi: BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 11 : 1 1 0 1 0 0 0 doi: x:
+bioRxiv preprint biorxiv b bi bio bioR BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 11 no 0 3 0 1 0 0 0 biorxiv_preprint xXx_x
+E. Pafilis e. E E. E. E. BLOCKSTART PAGESTART NEWFONT LOWERFONT 1 1 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 .. 2 10 1 1 0 0 0 e._pafilis_et_al. X._Xx_x_x.
+2 2 2 2 2 2 2 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 5 0 no 0 10 0 1 0 0 0 X d
+3 MANUALLY 3 3 3 3 3 BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 5 0 no 0 10 1 0 0 0 1 X_manually_curated_corpus d_X_X_X
+To construct to T To To To BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 1 0 0 0 1 to_construct_an_evaluation_corpus_that_covers_diverse_environment Xx_x_x_x_x_x_x_x_x
+types, we types, t ty typ type BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,, 2 9 1 0 0 0 1 types,_we_retrieved_XXX,XXX_eol_species_pages_representing_the x,_x_x_d,d_X_x_x_x_x
+clades Actinopterygii, clades c cl cla clad BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ,,,,, 5 9 1 0 0 0 1 clades_actinopterygii,_annelida,_arthropoda,_aves,_chlorophyta, x_Xx,_Xx,_Xx,_Xx,_Xx,
+Mammalia, Mollusca, mammalia, M Ma Mam Mamm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 ,,. 3 8 1 0 0 0 1 mammalia,_mollusca,_streptophyta._from_these_we_extracted_the Xx,_Xx,_Xx._Xx_x_x_x_x
+sections about sections s se sec sect BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,,,,, 5 9 1 0 0 0 1 sections_about_behavior,_biology,_dispersal,_distribution,_ecology, x_x_x,_x,_x,_x,_x,
+habitat, legislation, habitat, h ha hab habi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,,,,. 5 10 1 0 0 0 1 habitat,_legislation,_migration,_reproduction,_and_trophic_strategy. x,_x,_x,_x,_x_x_x.
+After discarding after A Af Aft Afte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 ()(, 4 9 1 0 0 0 1 after_discarding_very_short_(<XXX_words)_and_very_long_(>X,XXX Xx_x_x_x_(<d_x)_x_x_x_(>d,d
+words) pages, words) w wo wor word BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ), 2 9 1 0 0 0 1 words)_pages,_we_randomly_selected_XX_species_from_each_of_the x)_x,_x_x_x_d_x_x_x_x_x
+eight clades. eight e ei eig eigh BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 .- 2 9 1 0 0 0 1 eight_clades._the_resulting_XXX_species_pages_were_randomly_dis- x_x._Xx_x_d_x_x_x_x_x-
+tributed among tributed t tr tri trib BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 ; 1 9 1 0 0 0 1 tributed_among_six_annotators;_XX%_of_the_pages_were_given_to_two x_x_x_x;_d%_x_x_x_x_x_x_x
+annotators to annotators a an ann anno BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 -. 2 9 1 0 0 0 1 annotators_to_allow_for_assessment_of_inter-annotator_agreement. x_x_x_x_x_x_x-x_x.
+Each person each E Ea Eac Each BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 9 1 0 0 0 1 each_person_independently_annotated_envo_terms_in_the_text,_with Xx_x_x_x_X_x_x_x_x,_x
+no knowledge no n no no no BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 - 1 9 1 0 0 0 1 no_knowledge_of_which_pages_had_been_assigned_to_a_second_anno- x_x_x_x_x_x_x_x_x_x_x_x-
+tator. Based tator. t ta tat tato BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 .- 2 9 1 0 0 0 1 tator._based_on_the_shared_abstracts_we_find_that_the_median_pair- x._Xx_x_x_x_x_x_x_x_x_x_x-
+wise Cohen's wise w wi wis wise BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 5 0 '.,- 4 8 1 0 0 0 1 wise_cohen's_kappa_is_X.XX,_implying_that_the_overall_inter- x_Xx'x_x_x_d.d,_x_x_x_x_x-
+annotator agreement annotator a an ann anno BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 0 () 2 9 1 0 0 0 1 annotator_agreement_(iaa)_is_acceptable_despite_the_difficulty_of x_x_(X)_x_x_x_x_x_x
+the annotation the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 1 0 0 0 1 the_annotation_task._the_corpus_was_partitioned_so_that_pages_with x_x_x._Xx_x_x_x_x_x_x_x
+even and even e ev eve even BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 1 0 0 0 1 even_and_odd_eol_identifiers_were_used_for_development_and_final x_x_x_X_x_x_x_x_x_x_x
+evaluation, respectively. evaluation, e ev eva eval BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ,. 2 3 1 0 0 0 1 evaluation,_respectively. x,_x.
+4 PERFORMANCE 4 4 4 4 4 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 7 2 no 0 10 0 0 0 0 1 X_performance_evaluation d_X_X
+Since the since S Si Sin Sinc BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 2 no 0 8 0 0 0 0 1 since_the_environments_tagger_recognizes_names_within_text Xx_x_X_x_x_x_x_x
+and links and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 , 1 8 0 0 0 0 1 and_links_them_to_envo_terms,_we_benchmarked_both_aspects_of x_x_x_x_X_x,_x_x_x_x_x
+its performance. its i it its its BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 . 1 9 0 0 0 0 1 its_performance._to_quantify_to_which_extent_the_tagger_recognizes x_x._Xx_x_x_x_x_x_x_x
+the same the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 , 1 9 0 0 0 0 1 the_same_text_fragments_as_the_annotators,_we_calculated_precision x_x_x_x_x_x_x,_x_x_x
+and recall and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 , 1 10 0 0 0 0 1 and_recall_at_the_mention_level,_considering_both_exact_and_partially x_x_x_x_x_x,_x_x_x_x_x
+overlapping matches overlapping o ov ove over BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 . 1 9 0 0 0 0 1 overlapping_matches_as_true_positives._on_the_evaluation_part_of_the x_x_x_x_x._Xx_x_x_x_x_x
+corpus, this corpus, c co cor corp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 ,..,- 5 9 0 0 0 0 1 corpus,_this_resulted_in_XX.X%_precision_and_XX.X%_recall,_corre- x,_x_x_x_d.d%_x_x_d.d%_x,_x-
+sponding to sponding s sp spo spon BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 2 ..- 3 9 0 0 0 0 1 sponding_to_an_fX_score_of_XX.X%._for_the_matches_that_were_con- x_x_x_Xd_x_x_d.d%._Xx_x_x_x_x_x-
+sidered true sidered s si sid side BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 2 , 1 9 0 0 0 0 1 sidered_true_positive_for_the_recognition_task,_we_further_evaluated x_x_x_x_x_x_x,_x_x_x
+if the if i if if if BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 2 - 1 9 0 0 0 0 1 if_the_tagger_linked_them_to_the_same_envo_terms_as_the_annota- x_x_x_x_x_x_x_x_X_x_x_x_x-
+tors did. tors t to tor tors BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 3 .., 3 10 1 1 0 0 0 tors_did._in_XX.X%_of_cases,_the_tagger_and_the_annotator_agreed_on x_x._Xx_d.d%_x_x,_x_x_x_x_x_x_x
+at least at a at at at BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 . 1 3 1 1 0 0 0 at_least_one_envo_term. x_x_x_X_x.
+5 ANNOTATION 5 5 5 5 5 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 7 4 no 0 10 1 0 0 0 1 X_annotation_of_encyclopedia_of_life d_X_X_X_X_X
+To realize to T To To To BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 4 -,- 3 9 1 0 0 0 1 to_realize_the_full_potential_of_any_text-mining_system,_it_is_im- Xx_x_x_x_x_x_x_x-x_x,_x_x_x-
+portant that portant p po por port BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 - 1 9 1 0 0 0 1 portant_that_it_is_adopted_by_the_broad_community_and_that_its_re- x_x_x_x_x_x_x_x_x_x_x_x_x-
+sults are sults s su sul sult BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 ., 2 9 1 0 0 0 1 sults_are_disseminated_to_the_intended_end_users._to_this_end,_we x_x_x_x_x_x_x_x._Xx_x_x,_x
+have integrated have h ha hav have BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 no 0 8 1 0 0 0 1 have_integrated_the_environments_tagger_with_the_eol_web x_x_x_X_x_x_x_X_x
+resource to resource r re res reso BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 . 1 8 1 0 0 0 1 resource_to_provide_users_with_envo_terms_for_each_taxon._each x_x_x_x_x_X_x_x_x_x._Xx
+month, we month, m mo mon mont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 ,- 2 8 1 0 0 0 1 month,_we_rerun_the_tagger_on_all_english_text_in_environment- x,_x_x_x_x_x_x_Xx_x_x_x-
+related sections related r re rel rela BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 ., 2 8 1 0 0 0 1 related_sections_of_eol._as_of_october_XXXX,_this_gave_rise_to x_x_x_X._Xx_x_Xx_d,_x_x_x_x
+1,077,522 annotations 1,077,522 1 1, 1,0 1,07 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 7 4 ,,,. 4 8 1 0 0 0 1 X,XXX,XXX_annotations_of_envo_terms_for_XXX,XXX_eol_taxa. d,d,d_x_x_X_x_x_d,d_X_x.
+We make we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 4 no 0 8 1 0 0 0 1 we_make_these_environment_annotations_available_to_end_users Xx_x_x_x_x_x_x_x_x
+in three in i in in in BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 4 ., 2 9 1 0 0 0 1 in_three_different_ways._first,_we_show_them_within_the_eol_taxon x_x_x_x._Xx,_x_x_x_x_x_X_x
+web pages, web w we web web BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 4 , 1 9 1 0 0 0 1 web_pages,_which_provide_links_to_the_relevant_paragraphs_in_the x_x,_x_x_x_x_x_x_x_x_x
+textual descriptions textual t te tex text BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 ()., 4 9 1 0 0 0 1 textual_descriptions_for_each_envo_term_(figure_X)._second,_they x_x_x_x_X_x_(Xx_d)._Xx,_x
+can be can c ca can can BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 - 1 9 1 0 0 0 1 can_be_queried_through_the_web_interface_or_the_application_pro- x_x_x_x_x_x_x_x_x_x_x-
+gramming interface gramming g gr gra gram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 / 1 8 1 0 0 0 1 gramming_interface_of_the_new_eol/traitbank_semantic_web_data x_x_x_x_x_X/Xx_x_x_x
+repository of repository r re rep repo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 (://./)., 9 10 1 0 0 0 1 repository_of_organismal_traits_(http://eol.org/traitbank)._third,_the x_x_x_x_(x:/x.x/x)._Xx,_x
+full annotation full f fu ful full BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 - 1 9 1 0 0 0 1 full_annotation_dataset_can_be_downloaded_in_tab-delimited_format x_x_x_x_x_x_x_x-x_x
+from http://downloads.jensenlab.org/EOL. from f fr fro from BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 ://../. 7 5 1 0 0 0 1 from_http://downloads.jensenlab.org/eol. x_x:/x.x.x/X.
+6 FUTURE 6 6 6 6 6 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 9 6 no 0 10 1 0 0 0 1 X_future_work d_X_X
+The ENVIRONMENTS the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 6 no 0 8 1 0 0 0 1 the_environments_tagger_is_applicable_to_other_large_sources Xx_X_x_x_x_x_x_x_x
+of text of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 6 .,, 3 10 1 0 0 0 1 of_text_than_eol._for_example,_it_can_be_applied_to_text_fields,_such x_x_x_X._Xx_x,_x_x_x_x_x_x_x,_x
+as isolation as a as as as BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 6 ,(.,).- 7 8 1 0 0 0 1 as_isolation_source,_in_genbank_(hirschman_et_al.,_XXXX)._com- x_x_x,_x_Xx_(Xx_x_x.,_d)._Xx-
+bined with bined b bi bin bine BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 6 (.,), 5 9 1 0 0 0 1 bined_with_the_species_tagger_(pafilis_et_al.,_XXXX),_it_can_also_be x_x_x_X_x_(Xx_x_x.,_d),_x_x_x_x
+used to used u us use used BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 6 -- 2 9 1 0 0 0 1 used_to_extract_species-environment_pairs_from_the_scientific_litera- x_x_x_x-x_x_x_x_x_x-
+ture, like ture, t tu tur ture BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 6 ,(,). 5 9 1 0 0 0 1 ture,_like_legacy_biodiversity_literature_(gwinn_and_rinaldo,_XXXX). x,_x_x_x_x_(Xx_x_Xx,_d).
+ACKNOWLEDGEMENTS ACKNOWLEDGEMENTS acknowledgements A AC ACK ACKN BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 no 0 10 0 0 0 0 1 acknowledgements X
+Funding: This funding: F Fu Fun Fund BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 : 1 10 0 0 0 0 1 funding:_this_work_was_supported_by_the_encyclopedia_of_life Xx:_Xx_x_x_x_x_x_Xx_Xx_Xx
+Rubenstein Fellows rubenstein R Ru Rub Rube BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 [--/], 6 9 0 0 0 0 1 rubenstein_fellows_program_[crdf_eol-XXXXX-XX/eXXXXX],_the Xx_Xx_Xx_[X_X-d-d/Xd],_x
+LifeWatchGreece Research lifewatchgreece L Li Lif Life BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 [-// 4 9 0 0 0 0 1 lifewatchgreece_research_infrastructure_[XXXXXX-XX/gsrt/ XxXxXx_Xx_Xx_[d-d/X/
+NSRF(C&E)], and nsrf(c&e)], N NS NSR NSRF BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ()],- 5 9 0 0 0 0 1 nsrf(c&e)],_and_the_novo_nordisk_foundation_center_for_pro- X(X&X)],_x_x_Xx_Xx_Xx_Xx_x_Xx-
+tein Research tein t te tei tein BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 7 []. 3 4 0 0 0 0 1 tein_research_[nnfXXccXXXX]. x_Xx_[XdXd].
+Conflict of conflict C Co Con Conf BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 :. 2 10 0 0 0 0 1 conflict_of_interest:_none_declared. Xx_x_Xx:_x_x.
+REFERENCES REFERENCES references R RE REF REFE BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 no 0 10 0 0 0 0 1 references X
+Bossy,R. et bossy,r. B Bo Bos Boss BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..()-- 7 9 0 0 0 0 1 bossy,r._et_al._(XXXX)_bionlp_shared_task_XXXX-an_overview_of_the_bacteria_bio- Xx,X._x_x._(d)_XxX_x_Xx_d-Xx_Xx_x_x_Xx_Xx-
+tope Task. tope t to top tope BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 7 .,, 3 8 0 0 0 0 1 tope_task._acl_XXXX,_proceedings_of_the_bionlp_shared_task_XXXX_workshop, x_Xx._X_d,_Xx_x_x_XxX_Xx_Xx_d_Xx,
+161-169. 161-169. 161-169. 1 16 161 161- BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 7 -. 2 1 0 0 0 0 1 XXX-XXX. d-d.
+Buttigieg,P.L. et buttigieg,p.l. B Bu But Butt BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,...(): 7 9 0 0 0 0 1 buttigieg,p.l._et_al._(XXXX)_the_environment_ontology:_contextualising_biological_and Xx,X.X._x_x._(d)_Xx_x_x:_x_x_x
+biomedical entities. biomedical b bi bio biom BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 7 ...,,. 6 5 0 0 0 0 1 biomedical_entities._j._biomed._semantics,_X,_XX. x_x._X._Xx._Xx,_d,_d.
+Gwinn,N.E. and gwinn,n.e. G Gw Gwi Gwin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..,.():- 9 9 0 0 0 0 1 gwinn,n.e._and_rinaldo,c._(XXXX)_the_biodiversity_heritage_library:_sharing_biodi- Xx,X.X._x_Xx,X._(d)_Xx_Xx_Xx_Xx:_x_x-
+versity literature versity v ve ver vers BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 7 ..,,-. 6 6 0 0 0 0 1 versity_literature_with_the_world._ifla_j.,_XX,_XX-XX. x_x_x_x_x._X_X.,_d,_d-d.
+Hirschman,L. et hirschman,l. H Hi Hir Hirs BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..()-: 7 10 0 0 0 0 1 hirschman,l._et_al._(XXXX)_habitat-lite:_a_gsc_case_study_based_on_free_text_terms_for Xx,X._x_x._(d)_Xx-Xx:_x_X_x_x_x_x_x_x_x_x
+environmental metadata. environmental e en env envi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 .,,-. 5 4 0 0 0 0 1 environmental_metadata._omics,_XX,_XXX-XX. x_x._X,_d,_d-d.
+Pafilis,E. et pafilis,e. P Pa Paf Pafi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..() 5 8 0 0 0 0 1 pafilis,e._et_al._(XXXX)_the_species_and_organisms_resources_for_fast_and Xx,X._x_x._(d)_Xx_X_x_X_Xx_x_Xx_x
+Accurate Identification accurate A Ac Acc Accu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 .,,. 4 8 0 0 0 0 1 accurate_identification_of_taxonomic_names_in_text._plos_one,_X,_eXXXXX. Xx_Xx_x_Xx_Xx_x_Xx._XxX_Xx,_d,_xd.
+Parr,C.S. et parr,c.s. P Pa Par Parr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,...(): 7 9 0 0 0 0 1 parr,c.s._et_al._(XXXX)_the_encyclopedia_of_life_vX:_providing_global_access_to Xx,X.X._x_x._(d)_Xx_Xx_x_Xx_xd:_Xx_Xx_Xx_x
+Knowledge About knowledge K Kn Kno Know BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 ...,,. 6 7 0 0 0 0 1 knowledge_about_life_on_earth._biodivers._data_j.,_X,_eXXXX. Xx_Xx_Xx_x_Xx._Xx._Xx_X.,_d,_xd.
+Thessen,A.E. and thessen,a.e. T Th The Thes BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..,..() 8 9 0 0 0 0 1 thessen,a.e._and_parr,c.s._(XXXX)_knowledge_extraction_and_semantic_annotation_of Xx,X.X._x_Xx,X.X._(d)_Xx_x_x_x_x_x
+text from text t te tex text BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 .,,. 4 6 0 0 0 0 1 text_from_the_encyclopedia_of_life._plos_one,_X,_eXXXXX. x_x_x_x_x_x._XxX_Xx,_d,_xd.
+Yilmaz,P. et yilmaz,p. Y Yi Yil Yilm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ,..() 5 8 0 0 0 0 1 yilmaz,p._et_al._(XXXX)_minimum_information_about_a_marker_gene_sequence Xx,X._x_x._(d)_Xx_x_x_x_x_x_x
+(MIMARKS) and (mimarks) ( (M (MI (MIM BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ()()()- 7 8 0 0 0 0 1 (mimarks)_and_minimum_information_about_any_(x)_sequence_(mixs)_specifica- (X)_x_x_x_x_x_(x)_x_(XxX)_x-
+tions. Nat. tions. t ti tio tion BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 7 ...,,-. 7 4 0 0 0 0 1 tions._nat._biotechnol.,_XX,_XXX-XX. x._Xx._Xx.,_d,_d-d.
+Figure 1. figure F Fi Fig Figu BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 10 .:"" 4 9 1 0 0 0 1 figure_X._top:_the_"overview"_tab_of_the_eol_taxon_pages_show_a_subset Xx_d._Xx:_Xx_"Xx"_x_x_x_X_x_x_x_x_x
+of the of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 10 ; 1 9 1 0 0 0 1 of_the_envo_terms_obtained_through_text_mining;_an_extended_list_of_such x_x_X_x_x_x_x_x;_x_x_x_x_x
+terms is terms t te ter term BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 10 "".: 4 10 1 0 0 0 1 terms_is_available_in_the_"data"_tab._bottom:_the_latter_list_provides_links x_x_x_x_x_"Xx"_x._Xx:_Xx_x_x_x_x
+to the to t to to to BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 10 (). 3 9 1 0 0 0 1 to_the_eol_text_sections_where_each_term_was_found_(highlighted_in_bold). x_x_X_x_x_x_x_x_x_x_(x_x_x).
+. . . . . . . BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 11 11 . 1 0 1 1 0 0 0 . .
+CC-BY 4.0 cc-by C CC CC- CC-B BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 -. 2 10 1 1 0 0 0 cc-by_X.X_international_license X-X_d.d_Xx_x
+under a under u un und unde BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 2 1 1 0 0 0 under_a x_x
+not certified not n no not not BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 )/,. 4 10 1 1 0 0 0 not_certified_by_peer_review)_is_the_author/funder,_who_has_granted_biorxiv_a_license_to_display_the_preprint_in_perpetuity._it_is_made_available x_x_x_x_x)_x_x_x/x,_x_x_x_xXx_x_x_x_x_x_x_x_x._Xx_x_x_x
+The copyright the T Th The The BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 ( 1 10 1 1 1 0 0 the_copyright_holder_for_this_preprint_(which_was Xx_x_x_x_x_x_(x_x
+this version this t th thi this BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 ,. 2 7 1 1 0 0 0 this_version_posted_november_XX,_XXXX. x_x_x_Xx_d,_d.
+; ; ; ; ; ; ; BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 11 11 ; 1 0 1 1 0 0 0 ; ;
+https://doi.org/10.1101/011403 https://doi.org/10.1101/011403 https://doi.org/10.1101/011403 h ht htt http BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 1 11 11 ://././ 7 6 1 1 0 0 0 https://doi.org/XX.XXXX/XXXXXX x:/x.x/d.d/d
+doi: doi: doi: d do doi doi: BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 11 : 1 1 1 1 0 0 0 doi: x:
+bioRxiv preprint biorxiv b bi bio bioR BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 11 no 0 3 1 1 0 0 0 biorxiv_preprint xXx_x
 

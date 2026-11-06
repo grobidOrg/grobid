@@ -1,83 +1,83 @@
-1 1 1 1 1 1 1 BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 0
-Products of products P Pr Pro Prod BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1
-Don Batory don D Do Don Don BLOCKSTART PAGEIN SAMEFONT LOWERFONT 1 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 0 no 0 3 0 0 0 0 1
-Department of department D De Dep Depa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1
-The University the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 7 0 0 0 0 1
-Austin, Texas austin, A Au Aus Aust BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 , 1 6 0 0 0 0 1
-batory@cs.utexas.edu batory@cs.utexas.edu batory@cs.utexas.edu b ba bat bato BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 1 0 0 0 @.. 3 6 0 0 0 0 1
-Abstract Abstract abstract A Ab Abs Abst BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1
-We argue we W We We We BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 :- 2 9 0 0 0 0 1
-ware components, ware w wa war ware BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 0 0 ,- 2 9 0 0 0 0 1
-posed, a posed, p po pos pose BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 ,, 2 10 0 0 0 0 1
-software generation software s so sof soft BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 . 1 3 0 0 0 0 1
-1 Introduction 1 1 1 1 1 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 1 2 no 0 10 0 0 0 0 1
-Conventional application conventional C Co Con Conv BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 ---. 4 9 0 0 0 0 1
-Domain modeling, domain D Do Dom Doma BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 ,,. 3 10 0 0 0 0 1
-The issues the T Th The The BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 : 1 8 0 0 0 0 1
-• reusable • • • • • BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 1 4 • 1 10 0 0 0 0 1
-• software • • • • • BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 1 4 • 1 10 0 0 0 0 1
-• scalability • • • • • BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 1 4 • 1 10 0 0 0 0 1
-• software • • • • • BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 1 4 • 1 10 0 0 0 0 1
-Although domain although A Al Alt Alth BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 4 ,- 2 9 0 0 0 0 1
-eling is eling e el eli elin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 4 no 0 9 0 0 0 0 1
-mature domain. mature m ma mat matu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 4 .,- 3 10 0 0 0 0 1
-the evolution the t th the the BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 4 -;. 3 9 0 0 0 0 1
-2 Products 2 2 2 2 2 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 2 6 no 0 10 0 0 0 0 1
-The identification the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 7 . 1 9 0 1 0 0 1
-their identification their t th the thei BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 7 . 1 9 0 1 0 0 1
-appear in appear a ap app appe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 7 ;, 2 9 0 1 0 0 1
-implement these implement i im imp impl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 7 -,,.-, 6 10 0 1 0 0 1
-interchangeability, and interchangeability, i in int inte BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 7 ,. 2 8 0 1 0 0 1
-The second the T Th The The BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 9 . 1 9 0 1 0 0 1
-basically is basically b ba bas basi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 9 -. 2 10 0 1 0 0 1
-architectures express architectures a ar arc arch BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 9 , 1 9 0 1 0 0 1
-1. This 1. 1 1. 1. 1. BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 4 10 .,,.. 5 10 0 1 0 0 1
-cooperation with cooperation c co coo coop BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 10 ..--. 5 9 0 1 0 0 1
-2 2 2 2 2 2 2 BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 4 0 no 0 10 0 0 0 0 0
-which compositions which w wh whi whic BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 (), 3 10 0 1 0 0 1
-selecting compositions selecting s se sel sele BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 []. 3 4 0 1 0 0 1
-Scalability is scalability S Sc Sca Scal BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 .. 2 10 0 0 0 0 1
-ability to ability a ab abi abil BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ; 1 9 0 0 0 0 1
-new features new n ne new new BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 0 0 0 0 1
-ever larger ever e ev eve ever BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 []. 3 7 0 0 0 0 1
-Domain models domain D Do Dom Doma BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 1 -;.., 5 9 0 0 0 0 1
-tools that tools t to too tool BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 5 1 . 1 9 0 0 0 0 1
-express high-level express e ex exp expr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 -, 2 9 0 0 0 0 1
-part of part p pa par part BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 "", 3 10 0 0 0 0 1
-selections and selections s se sel sele BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 [].- 4 9 0 0 0 0 1
-ble and ble b bl ble ble BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 1 ; 1 9 0 0 0 0 1
-other analysis other o ot oth othe BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 []. 3 6 0 0 0 0 1
-3 Recap 3 3 3 3 3 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 7 4 no 0 10 0 0 0 0 1
-We have we W We We We BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 4 ; 1 9 0 0 0 0 1
-broader vision broader b br bro broa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 ., 2 9 0 0 0 0 1
-justified as justified j ju jus just BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 ,,- 3 10 0 0 0 0 1
-erators [Bat92-94]. erators e er era erat BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 [-]. 4 9 0 0 0 0 1
-projects would projects p pr pro proj BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 4 - 1 9 0 0 0 0 1
-cepts of cepts c ce cep cept BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 .,- 3 9 0 0 0 0 1
-ucts that ucts u uc uct ucts BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 no 0 9 0 0 0 0 1
-modeling. modeling. modeling. m mo mod mode BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 . 1 0 0 0 0 0 1
-4 References 4 4 4 4 4 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 9 7 no 0 10 0 0 0 0 1
-[Bat92] [Bat92] [bat92] [ [B [Ba [Bat BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 7 [] 2 0 0 0 0 0 1
-D. Batory d. D D. D. D. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ..'," 5 10 0 0 0 0 1
-Systems with systems S Sy Sys Syst BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 9 7 ", 2 9 0 0 0 0 1
-Methodology, October methodology, M Me Met Meth BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 ,. 2 3 0 0 0 0 1
-[Bat93] [Bat93] [bat93] [ [B [Ba [Bat BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 7 [] 2 0 0 0 0 0 1
-D. Batory, d. D D. D. D. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 .,.,.,..": 10 10 0 0 0 0 1
-Example from example E Ex Exa Exam BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 ",..--,. 8 6 0 0 0 0 1
-[Bat94] [Bat94] [bat94] [ [B [Ba [Bat BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 8 [] 2 0 0 0 0 0 1
-D. Batory, d. D D. D. D. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 10 8 .,.,.,.,.,.," 13 10 0 0 0 0 1
-Software-System Generators", software-system S So Sof Soft BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 8 -",,. 5 7 0 0 0 0 1
-[Big93] [Big93] [big93] [ [B [Bi [Big BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 9 [] 2 0 0 0 0 0 1
-T. Biggerstaff, t. T T. T. T. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 10 9 .,"",, 6 10 0 0 0 0 1
-Vol. 34, vol. V Vo Vol Vol. BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 10 9 .,,. 4 3 0 0 0 0 1
-[Big94] [Big94] [big94] [ [B [Bi [Big BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 10 [] 2 0 0 0 0 0 1
-T. Biggerstaff, t. T T. T. T. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 10 10 .,"", 5 10 0 0 0 0 1
-3rd Conference 3rd 3 3r 3rd 3rd BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 10 ,,. 3 7 0 0 0 0 1
-[Gar94] [Gar94] [gar94] [ [G [Ga [Gar BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 10 [] 2 0 0 0 0 0 1
-D. Garlan d. D D. D. D. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 10 ..,"", 6 10 0 0 0 0 1
-Engineering and engineering E En Eng Engi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 10 ,,, 3 9 0 0 0 0 1
-1993. 1993. 1993. 1 19 199 1993 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 10 . 1 0 0 0 0 0 1
-[Pou94] [Pou94] [pou94] [ [P [Po [Pou BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 11 [] 2 0 0 0 0 0 1
-J. Poulin j. J J. J. J. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 ..,"'", 7 10 0 0 0 0 1
-Notes, Vol. notes, N No Not Note BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 ,.#,. 5 3 0 0 0 0 1
+1 1 1 1 1 1 1 BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 0 X d
+Products of products P Pr Pro Prod BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1 products_of_domain_models_X Xx_x_Xx_Xx_d
+Don Batory don D Do Don Don BLOCKSTART PAGEIN SAMEFONT LOWERFONT 1 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 0 no 0 3 0 0 0 0 1 don_batory Xx_Xx
+Department of department D De Dep Depa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1 department_of_computer_sciences Xx_x_Xx_Xx
+The University the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 7 0 0 0 0 1 the_university_of_texas Xx_Xx_x_Xx
+Austin, Texas austin, A Au Aus Aust BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 , 1 6 0 0 0 0 1 austin,_texas_XXXXX Xx,_Xx_d
+batory@cs.utexas.edu batory@cs.utexas.edu batory@cs.utexas.edu b ba bat bato BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 1 0 0 0 @.. 3 6 0 0 0 0 1 batory@cs.utexas.edu x@x.x.x
+Abstract Abstract abstract A Ab Abs Abst BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1 abstract Xx
+We argue we W We We We BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 :- 2 9 0 0 0 0 1 we_argue_that_domain_models_should_produce_four_basic_products:_identification_of_reusable_soft- Xx_x_x_x_x_x_x_x_x_x:_x_x_x_x-
+ware components, ware w wa war ware BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 0 0 ,- 2 9 0 0 0 0 1 ware_components,_definition_of_software_architectures_that_explain_how_components_can_be_com- x_x,_x_x_x_x_x_x_x_x_x_x_x-
+posed, a posed, p po pos pose BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 ,, 2 10 0 0 0 0 1 posed,_a_demonstration_of_architecture_scalability,_and_a_direct_relationship_of_these_results_to x,_x_x_x_x_x,_x_x_x_x_x_x_x_x
+software generation software s so sof soft BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 . 1 3 0 0 0 0 1 software_generation_of_target_systems. x_x_x_x_x.
+1 Introduction 1 1 1 1 1 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 1 2 no 0 10 0 0 0 0 1 X_introduction d_Xx
+Conventional application conventional C Co Con Conv BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 ---. 4 9 0 0 0 0 1 conventional_application_modeling_is_aimed_at_producing_software_designs_for_one-of-a-kind_applications. Xx_x_x_x_x_x_x_x_x_x_x-x-x-x_x.
+Domain modeling, domain D Do Dom Doma BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 ,,. 3 10 0 0 0 0 1 domain_modeling,_in_contrast,_takes_a_broader_view_to_address_designs_for_families_of_related_applications. Xx_x,_x_x,_x_x_x_x_x_x_x_x_x_x_x_x.
+The issues the T Th The The BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 : 1 8 0 0 0 0 1 the_issues_or_products_that_distinguish_domain_modeling_form_application_modeling_include: Xx_x_x_x_x_x_x_x_x_x_x_x:
+• reusable • • • • • BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 1 4 • 1 10 0 0 0 0 1 •_reusable_software_components •_x_x_x
+• software • • • • • BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 1 4 • 1 10 0 0 0 0 1 •_software_architectures •_x_x
+• scalability • • • • • BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 1 4 • 1 10 0 0 0 0 1 •_scalability •_x
+• software • • • • • BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 1 4 • 1 10 0 0 0 0 1 •_software_system_generators •_x_x_x
+Although domain although A Al Alt Alth BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 4 ,- 2 9 0 0 0 0 1 although_domain_modeling_can_be_justified_for_many_reasons,_we_feel_the_ultimate_benefit_of_domain_mod- Xx_x_x_x_x_x_x_x_x,_x_x_x_x_x_x_x_x-
+eling is eling e el eli elin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 4 no 0 9 0 0 0 0 1 eling_is_the_development_of_tools_that_eliminate_the_mundane_tasks_of_application_programming_within_a x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+mature domain. mature m ma mat matu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 4 .,- 3 10 0 0 0 0 1 mature_domain._that_is,_the_automatic_construction_of_software_seems_to_be_an_inevitable_end-product_of x_x._Xx_x,_x_x_x_x_x_x_x_x_x_x_x-x_x
+the evolution the t th the the BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 4 -;. 3 9 0 0 0 0 1 the_evolution_for_a_well-understood_domain;_we_see_domain_modeling_as_the_means_to_achieve_this_end. x_x_x_x_x-x_x;_x_x_x_x_x_x_x_x_x_x_x.
+2 Products 2 2 2 2 2 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 2 6 no 0 10 0 0 0 0 1 X_products_of_domain_models d_Xx_x_Xx_Xx
+The identification the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 7 . 1 9 0 1 0 0 1 the_identification_of_reusable_software_components_is_a_critical_product_of_domain_modeling._the_key_to Xx_x_x_x_x_x_x_x_x_x_x_x_x._Xx_x_x
+their identification their t th the thei BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 7 . 1 9 0 1 0 0 1 their_identification_is_recognizing_fundamental_abstractions_of_the_domain._these_recurring_abstractions x_x_x_x_x_x_x_x_x._Xx_x_x
+appear in appear a ap app appe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 7 ;, 2 9 0 1 0 0 1 appear_in_most_systems_of_a_family;_by_standardizing_their_programming_interfaces,_components_that x_x_x_x_x_x_x;_x_x_x_x_x,_x_x
+implement these implement i im imp impl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 7 -,,.-, 6 10 0 1 0 0 1 implement_these_abstractions_are_plug-compatible,_interchangeable,_and_interoperable._plug-compatibility, x_x_x_x_x-x,_x,_x_x._Xx-x,
+interchangeability, and interchangeability, i in int inte BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 7 ,. 2 8 0 1 0 0 1 interchangeability,_and_interoperability_increases_likelihood_that_components_will_be_reused. x,_x_x_x_x_x_x_x_x_x.
+The second the T Th The The BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 9 . 1 9 0 1 0 0 1 the_second_product_of_domain_modeling_is_software_architectures_for_a_domain._a_software_architecture Xx_x_x_x_x_x_x_x_x_x_x_x._X_x_x
+basically is basically b ba bas basi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 9 -. 2 10 0 1 0 0 1 basically_is_a_blue-print_or_template_for_defining_how_components_fit_together_to_form_systems._software x_x_x_x-x_x_x_x_x_x_x_x_x_x_x_x._Xx
+architectures express architectures a ar arc arch BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 9 , 1 9 0 1 0 0 1 architectures_express_patterns_of_composition_that_recur_within_a_domain,_it_explains_various_means_by x_x_x_x_x_x_x_x_x_x,_x_x_x_x_x
+1. This 1. 1 1. 1. 1. BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 4 10 .,,.. 5 10 0 1 0 0 1 X._this_research_was_sponsored,_in_part,_by_the_u.s._department_of_defense_advanced_research_projects_agency_in d._Xx_x_x_x,_x_x,_x_x_X.X._Xx_x_Xx_Xx_Xx_Xx_Xx_x
+cooperation with cooperation c co coo coop BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 10 ..--. 5 9 0 1 0 0 1 cooperation_with_the_u.s._air_force_wright_laboratory_avionics_directorate_under_contract_fXXXXX-XXc-XXXX. x_x_x_X.X._Xx_Xx_Xx_Xx_Xx_Xx_x_x_Xd-dX-d.
+2 2 2 2 2 2 2 BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 4 0 no 0 10 0 0 0 0 0 X d
+which compositions which w wh whi whic BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 (), 3 10 0 1 0 0 1 which_compositions_(or_component_communications)_can_physically_occur,_and_it_suggests_guidelines_for x_x_(x_x_x)_x_x_x,_x_x_x_x_x
+selecting compositions selecting s se sel sele BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 []. 3 4 0 1 0 0 1 selecting_compositions_for_a_given_task_[garXX]. x_x_x_x_x_x_[Xxd].
+Scalability is scalability S Sc Sca Scal BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 .. 2 10 0 0 0 0 1 scalability_is_the_third_product._it_addresses_the_need_for_architectures_and_their_components_to_evolve._the Xx_x_x_x_x._Xx_x_x_x_x_x_x_x_x_x_x._Xx
+ability to ability a ab abi abil BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 ; 1 9 0 0 0 0 1 ability_to_add_new_features_to_systems_is_the_driving_force_for_modeling_families_of_systems;_the_need_for x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x;_x_x_x
+new features new n ne new new BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 0 0 0 0 1 new_features_will_always_be_present._domain_models_must_clearly_demonstrate_the_capability_of_scaling_to x_x_x_x_x_x._Xx_x_x_x_x_x_x_x_x_x
+ever larger ever e ev eve ever BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 []. 3 7 0 0 0 0 1 ever_larger_families_of_systems_without_requiring_significant_revisions_[bigXX]. x_x_x_x_x_x_x_x_x_[Xxd].
+Domain models domain D Do Dom Doma BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 1 -;.., 5 9 0 0 0 0 1 domain_models_should_be_detailed_enough_to_be_used_as_blue-prints_for_software_system_generators;_i.e., Xx_x_x_x_x_x_x_x_x_x_x-x_x_x_x_x;_x.x.,
+tools that tools t to too tool BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 5 1 . 1 9 0 0 0 0 1 tools_that_can_produce_a_target_system_from_a_domain_directly_from_specifications._specifications_may x_x_x_x_x_x_x_x_x_x_x_x_x._Xx_x
+express high-level express e ex exp expr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 -, 2 9 0 0 0 0 1 express_high-level_constraints_to_be_satisfied,_thereby_entailing_a_degree_of_automatic_programming_on_the x_x-x_x_x_x_x,_x_x_x_x_x_x_x_x_x
+part of part p pa par part BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 "", 3 10 0 0 0 0 1 part_of_the_generator_to_"fill_in_the_gaps",_or_it_could_rely_exclusively_on_the_domain_analyst_for_specific x_x_x_x_x_"x_x_x_x",_x_x_x_x_x_x_x_x_x_x_x
+selections and selections s se sel sele BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 [].- 4 9 0 0 0 0 1 selections_and_compositions_of_components_[pouXX]._software_system_generators_are_among_the_most_visi- x_x_x_x_x_[Xxd]._Xx_x_x_x_x_x_x_x-
+ble and ble b bl ble ble BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 1 ; 1 9 0 0 0 0 1 ble_and_concrete_products_that_can_come_from_domain_modeling;_a_generator_is_often_the_centerpiece_for x_x_x_x_x_x_x_x_x_x;_x_x_x_x_x_x_x
+other analysis other o ot oth othe BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 []. 3 6 0 0 0 0 1 other_analysis_tools_that_are_critical_to_applications_development_[batXX]. x_x_x_x_x_x_x_x_x_[Xxd].
+3 Recap 3 3 3 3 3 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 7 4 no 0 10 0 0 0 0 1 X_recap d_Xx
+We have we W We We We BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 4 ; 1 9 0 0 0 0 1 we_have_an_admittedly_narrow_focus_on_what_should_be_the_products_of_domain_modeling;_we_concur_that_a Xx_x_x_x_x_x_x_x_x_x_x_x_x_x_x;_x_x_x_x
+broader vision broader b br bro broa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 ., 2 9 0 0 0 0 1 broader_vision_should_be_adopted_by_the_software_engineering_community._however,_we_feel_our_focus_is x_x_x_x_x_x_x_x_x_x._Xx,_x_x_x_x_x
+justified as justified j ju jus just BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 4 ,,- 3 10 0 0 0 0 1 justified_as_a_consequence_of_years_of_work_in_the_areas_of_reuse,_software_architectures,_and_software_gen- x_x_x_x_x_x_x_x_x_x_x_x_x,_x_x,_x_x_x-
+erators [Bat92-94]. erators e er era erat BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 [-]. 4 9 0 0 0 0 1 erators_[batXX-XX]._for_us_to_have_demonstrated_anything_less_than_software_system_generation_on_our x_[Xxd-d]._Xx_x_x_x_x_x_x_x_x_x_x_x_x
+projects would projects p pr pro proj BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 4 - 1 9 0 0 0 0 1 projects_would_not_have_been_sufficient_to_convince_sponsors_of_the_importance_and_viability_of_our_con- x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x-
+cepts of cepts c ce cep cept BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 .,- 3 9 0 0 0 0 1 cepts_of_domain_modeling._we_believe_that_the_demand_for_such_concrete_results_is_universal,_and_the_prod- x_x_x_x._Xx_x_x_x_x_x_x_x_x_x_x,_x_x_x-
+ucts that ucts u uc uct ucts BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 no 0 9 0 0 0 0 1 ucts_that_we_have_identified_go_a_long_way_for_justifying_the_effort_and_commitment_needed_for_domain x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+modeling. modeling. modeling. m mo mod mode BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 4 . 1 0 0 0 0 0 1 modeling. x.
+4 References 4 4 4 4 4 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 9 7 no 0 10 0 0 0 0 1 X_references d_Xx
+[Bat92] [Bat92] [bat92] [ [B [Ba [Bat BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 7 [] 2 0 0 0 0 0 1 [batXX] [Xxd]
+D. Batory d. D D. D. D. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 ..'," 5 10 0 0 0 0 1 d._batory_and_s._o'malley,_"the_design_and_implementation_of_hierarchical_software X._Xx_x_X._X'Xx,_"Xx_Xx_x_Xx_x_Xx_Xx
+Systems with systems S Sy Sys Syst BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 9 7 ", 2 9 0 0 0 0 1 systems_with_reusable_components",_acm_transactions_on_software_engineering_and Xx_x_Xx_Xx",_X_Xx_x_Xx_Xx_x
+Methodology, October methodology, M Me Met Meth BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 ,. 2 3 0 0 0 0 1 methodology,_october_XXXX. Xx,_Xx_d.
+[Bat93] [Bat93] [bat93] [ [B [Ba [Bat BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 7 [] 2 0 0 0 0 0 1 [batXX] [Xxd]
+D. Batory, d. D D. D. D. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 7 .,.,.,..": 10 10 0 0 0 0 1 d._batory,_l._coglianese,_m._goodwin,_and_s._shafer._"creating_reference_architectures:_an X._Xx,_X._Xx,_X._Xx,_x_X._Xx._"Xx_Xx_Xx:_Xx
+Example from example E Ex Exa Exam BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 ",..--,. 8 6 0 0 0 0 1 example_from_avionics",_adage_tech._rep._ut-XX-XX,_XXXX. Xx_x_Xx",_X_Xx._Xx._X-d-d,_d.
+[Bat94] [Bat94] [bat94] [ [B [Ba [Bat BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 8 [] 2 0 0 0 0 0 1 [batXX] [Xxd]
+D. Batory, d. D D. D. D. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 10 8 .,.,.,.,.,.," 13 10 0 0 0 0 1 d._batory,_v._singhal,_j._thomas,_s._dasari,_b._geraci,_and_m._sirkin,_"the_genvoca_model_of X._Xx,_X._Xx,_X._Xx,_X._Xx,_X._Xx,_x_X._Xx,_"Xx_XxXx_Xx_x
+Software-System Generators", software-system S So Sof Soft BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 8 -",,. 5 7 0 0 0 0 1 software-system_generators",_to_appear_in_ieee_software,_september_XXXX. Xx-Xx_Xx",_x_x_x_X_Xx,_Xx_d.
+[Big93] [Big93] [big93] [ [B [Bi [Big BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 9 [] 2 0 0 0 0 0 1 [bigXX] [Xxd]
+T. Biggerstaff, t. T T. T. T. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 10 9 .,"",, 6 10 0 0 0 0 1 t._biggerstaff,_"an_assessment_and_analysis_of_software_reuse",_in_advances_in_computers, X._Xx,_"Xx_Xx_x_Xx_x_Xx_Xx",_x_Xx_x_Xx,
+Vol. 34, vol. V Vo Vol Vol. BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 10 9 .,,. 4 3 0 0 0 0 1 vol._XX,_academic_press,_XXXX. Xx._d,_Xx_Xx,_d.
+[Big94] [Big94] [big94] [ [B [Bi [Big BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 10 [] 2 0 0 0 0 0 1 [bigXX] [Xxd]
+T. Biggerstaff, t. T T. T. T. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 10 10 .,"", 5 10 0 0 0 0 1 t._biggerstaff,_"the_library_scaling_problem_and_the_limits_of_concrete_component_reuse", X._Xx,_"Xx_Xx_Xx_Xx_x_x_Xx_x_Xx_Xx_Xx",
+3rd Conference 3rd 3 3r 3rd 3rd BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 10 ,,. 3 7 0 0 0 0 1 Xrd_conference_on_software_reuse,_rio_de_janerio,_november_XXXX. dx_Xx_x_Xx_Xx,_Xx_x_Xx,_Xx_d.
+[Gar94] [Gar94] [gar94] [ [G [Ga [Gar BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 10 [] 2 0 0 0 0 0 1 [garXX] [Xxd]
+D. Garlan d. D D. D. D. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 10 ..,"", 6 10 0 0 0 0 1 d._garlan_and_m._shaw,_"an_introduction_to_software_architecture",_in_adances_in_software X._Xx_x_X._Xx,_"Xx_Xx_x_Xx_Xx",_x_Xx_x_Xx
+Engineering and engineering E En Eng Engi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 10 ,,, 3 9 0 0 0 0 1 engineering_and_knowledge_engineering,_volume_i,_world_scientific_publishing_company, Xx_x_Xx_Xx,_Xx_X,_Xx_Xx_Xx_Xx,
+1993. 1993. 1993. 1 19 199 1993 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 10 . 1 0 0 0 0 0 1 XXXX. d.
+[Pou94] [Pou94] [pou94] [ [P [Po [Pou BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 11 [] 2 0 0 0 0 0 1 [pouXX] [Xxd]
+J. Poulin j. J J. J. J. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 ..,"'", 7 10 0 0 0 0 1 j._poulin_and_w._tracz,_"wisr'XX_reuse_workshop_summary",_acm_software_engineering X._Xx_x_X._Xx,_"X'd_Xx_Xx_Xx",_X_Xx_Xx
+Notes, Vol. notes, N No Not Note BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 ,.#,. 5 3 0 0 0 0 1 notes,_vol._XX_#X,_january_XXXX. Xx,_Xx._d_#d,_Xx_d.
 

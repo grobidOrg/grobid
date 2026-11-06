@@ -1,223 +1,223 @@
-Editorial Editorial editorial E Ed Edi Edit BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 1 0 0 0
-Case Report case C Ca Cas Case BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 0 no 0 10 0 1 1 1 1
-Journal of journal J Jo Jou Jour BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 -;():- 6 10 0 1 0 0 0
-The Incomplete the T Th The The BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 1 0 0 1
-1 1 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 1
-2 2 2 2 2 2 2 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 1
-Anneh Mohammad anneh A An Ann Anne BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 * 1 10 0 1 0 0 1
-Mohammad Reza mohammad M Mo Moh Moha BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 0 no 0 5 0 1 0 0 1
-3 3 3 3 3 3 3 BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 1
-2 2 2 2 2 2 2 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 1
-Gholami ,Daryoush gholami G Gh Gho Ghol BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 , 1 10 0 1 0 0 1
-, Saeed , , , , , BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 0 ,, 2 10 0 1 0 0 1
-Abstract Abstract abstract A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1
-Introduction: Introduction: introduction: I In Int Intr BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 : 1 10 0 0 0 0 1
-Case Report: case C Ca Cas Case BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 0 : 1 10 0 0 0 0 1
-Conclusion: Conclusion: conclusion: C Co Con Conc BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 : 1 10 0 0 0 0 1
-Keywords: S keywords: K Ke Key Keyw BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 : 1 10 0 0 0 0 1
-Superficial palmar superficial S Su Sup Supe BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 (). 3 8 0 0 0 0 1
-present study present p pr pre pres BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 / 1 9 0 0 0 0 1
-cadaver. When cadaver. c ca cad cada BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 1 ., 2 10 0 0 0 0 1
-to the to t to to to BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 9 0 0 0 0 1
-radial arteries radial r ra rad radi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 (,). 4 2 0 0 0 0 1
-In the in I In In In BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 2 ,. 2 8 0 0 0 0 1
-There was there T Th The Ther BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 2 (,). 4 10 0 0 0 0 1
-gave three gave g ga gav gave BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 2 ; 1 9 0 0 0 0 1
-arteries. RA arteries. a ar art arte BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 2 .. 2 8 0 0 0 0 1
-Knowledge of knowledge K Kn Kno Know BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 3 no 0 7 0 0 0 0 1
-interventions and interventions i in int inte BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ' 1 10 0 0 0 0 1
-uperficial palmar uperficial u up upe uper BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 ,, 2 10 0 0 0 0 1
-Copyright © copyright C Co Cop Copy BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 4 no 0 8 1 1 0 0 0
-Journal of journal J Jo Jou Jour BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 4 - 1 10 1 1 0 0 0
-| Available | | | | | BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 1 4 ...: 4 5 1 1 0 0 0
-This is this T Th Thi This BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 4 -(://.//-/.) 12 10 1 1 0 0 0
-unrestricted non-commercial unrestricted u un unr unre BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 4 -,,,. 5 6 1 1 0 0 0
-2321-3817 2321-3817 2321-3817 2 23 232 2321 BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 1 5 - 1 3 1 1 0 0 0
-10.13107/jocr.2250-0685.099 10.13107/jocr.2250-0685.099 10.13107/jocr.2250-0685.099 1 10 10. 10.1 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 0 1 5 ./.-. 5 10 1 1 0 0 0
-What to what W Wh Wha What BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 5 ? 1 10 0 1 0 0 1
-A rare a A A A A BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 ALLCAP NODIGIT 1 0 1 0 0 0 0 0 1 5 ? 1 8 0 0 0 0 1
-Anatomical and anatomical A An Ana Anat BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 5 ? 1 10 0 0 0 0 1
-32 32 32 3 32 32 32 BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 1 6 no 0 10 1 0 0 0 0
-Introduction Introduction introduction I In Int Intr BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 6 no 0 1 1 0 0 0 1
-Although several although A Al Alt Alth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 6 no 0 4 1 0 0 0 1
-Superficial palmar superficial S Su Sup Supe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 6 (),, 4 9 1 0 0 0 1
-structure supplies structure s st str stru BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 no 0 10 1 0 0 0 1
-the hand. the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 .. 2 5 1 0 0 0 1
-aponeurosis and aponeurosis a ap apo apon BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 6 []., 4 9 1 0 0 0 1
-SPA is spa S SP SPA SPA BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 1 6 , 1 9 1 0 0 0 1
-radial artery radial r ra rad radi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 .[]. 4 9 1 0 0 0 1
-type of type t ty typ type BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 , 1 9 1 0 0 0 1
-radial arteries radial r ra rad radi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 (,)[]. 6 9 1 0 0 0 1
-have been have h ha hav have BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 . 1 8 1 0 0 0 1
-Coleman and coleman C Co Col Cole BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 1 6 (),,. 5 9 1 0 0 0 1
-categorized into categorized c ca cat cate BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 no 0 9 1 0 0 0 1
-communication or communication c co com comm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 1 6 ,. 2 8 1 0 0 0 1
-median and median m me med medi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 []. 3 2 1 0 0 0 1
-Dr. Anne dr. D Dr Dr. Dr. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 10 . 1 10 1 1 0 0 1
-Author's Photo author's A Au Aut Auth BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 10 ' 1 10 1 0 0 0 1
-1 1 1 1 1 1 1 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 3 10 no 0 10 1 0 0 0 1
-Sciences, Shahroud, sciences, S Sc Sci Scie BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 10 ,,. 3 5 1 0 0 0 1
-2 Department 2 2 2 2 2 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 3 10 ,, 2 10 1 0 0 0 1
-Jundishapour University jundishapour J Ju Jun Jund BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 10 (), 3 9 1 0 0 0 1
-Ahvaz, Iran ahvaz, A Ah Ahv Ahva BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 10 , 1 2 1 0 0 0 1
-3 Department 3 3 3 3 3 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 3 10 ,, 2 10 1 0 0 0 1
-University of university U Un Uni Univ BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 11 ,, 2 10 1 0 0 0 1
-Address of address A Ad Add Addr BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 11 no 0 5 1 0 0 0 1
-Dr. Anneh dr. D Dr Dr. Dr. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 11 . 1 5 1 0 0 0 1
-School of school S Sc Sch Scho BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 11 , 1 10 1 0 0 0 1
-Sciences, Shahroud, sciences, S Sc Sci Scie BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 11 ,,. 3 5 1 0 0 0 1
-E-mail: annehgh@yahoo.com e-mail: E E- E-m E-ma BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 11 -:@. 4 5 1 0 0 0 1
-School of school S Sc Sch Scho BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 11 , 1 10 1 0 0 0 1
-Dr. Saeed dr. D Dr Dr. Dr. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 11 . 1 4 1 1 0 0 1
-Dr. Mohammad dr. D Dr Dr. Dr. BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 11 .. 2 10 1 1 0 0 1
-Case Report case C Ca Cas Case BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 3 0 no 0 10 1 0 1 0 1
-Conclusion Conclusion conclusion C Co Con Conc BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 10 0 0 0 0 1
-Discussion Discussion discussion D Di Dis Disc BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 10 0 0 0 0 1
-References References references R Re Ref Refe BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 10 0 0 0 0 1
-Ulnar / ulnar U Ul Uln Ulna BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 0 /; 2 4 0 0 0 0 1
-and we and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1
-area. area. area. a ar are area BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 0 0 0 0 0 1
-Clinically the clinically C Cl Cli Clin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 4 0 0 0 0 1
-arteries in arteries a ar art arte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1
-surgical procedures surgical s su sur surg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 , 1 4 0 0 0 0 1
-arteries. One arteries. a ar art arte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 5 0 0 0 0 1
-of radial of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1
-the artery, the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 , 1 5 0 0 0 0 1
-can be can c ca can can BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1
-arch. This arch. a ar arc arch BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 .' 2 5 0 0 0 0 1
-[11] or [11] [ [1 [11 [11] BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 3 0 [][] 4 4 0 0 0 0 1
-provide good provide p pr pro prov BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 4 0 0 0 0 1
-arches. In arches. a ar arc arch BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 .,, 3 5 0 0 0 0 1
-the Allen's the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 ' 1 5 0 0 0 0 1
-radius and radius r ra rad radi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 ''. 3 5 0 0 0 0 1
-any procedure any a an any any BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 4 0 0 0 0 1
-After proper after A Af Aft Afte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 10 0 0 0 0 1
-retinaculum, palmar retinaculum, r re ret reti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 ,. 2 7 0 0 0 0 1
-the thenar the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 , 1 4 0 0 0 0 1
-incomplete type incomplete i in inc inco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1
-In viewof in I In In In BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1
-formalin-fixed adult formalin-fixed f fo for form BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 - 1 4 0 0 0 0 1
-for surgical for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 , 1 5 0 0 0 0 1
-dissection. The dissection. d di dis diss BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 . 1 5 0 0 0 0 1
-SPA variability spa S SP SPA SPA BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1
-death was death d de dea deat BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 ., 2 5 0 0 0 0 1
-becomes essential. becomes b be bec beco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 1 0 0 0 0 1
-artery divided artery a ar art arte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 5 0 0 0 0 1
-was no was w wa was was BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 4 0 0 0 0 1
-and SPA and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 4 0 0 0 0 1
-arteries; proper arteries; a ar art arte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 ; 1 4 0 0 0 0 1
-palmar digital palmar p pa pal palm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1
-interdigital clefts. interdigital i in int inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 .: 2 5 0 0 0 0 1
-digital artery digital d di dig digi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1
-arteria princeps arteria a ar art arte BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 (.). 4 3 0 0 0 0 1
-A classic a A A A A BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 1 0 0 0 0 0 5 4 no 0 8 0 0 0 0 1
-linkage between linkage l li lin link BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 no 0 9 0 0 0 0 1
-and ulnar and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 . 1 9 0 0 0 0 1
-SPA was spa S SP SPA SPA BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 5 4 . 1 8 0 0 0 0 1
-reported 10%, reported r re rep repo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 ,,. 3 9 0 0 0 0 1
-Loukas, et loukas, L Lo Lou Louk BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 4 ,.(),,.(),- 11 9 0 0 0 0 1
-Metcalf. (1984) metcalf. M Me Met Metc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 4 .()(), 6 7 0 0 0 0 1
-respectively. Most respectively. r re res resp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 .(.), 5 9 0 0 0 0 1
-of Sarkar of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 .()[,-]. 8 8 0 0 0 0 1
-According to according A Ac Acc Acco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 4 ,.() 4 10 0 0 0 0 1
-/ Radiopalmar / / / / / BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 5 4 /(). 4 9 0 0 0 0 1
-incidence of incidence i in inc inci BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 .,. 3 9 0 0 0 0 1
-3.6% of 3.6% 3 3. 3.6 3.6% BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 5 4 .,.(), 6 9 0 0 0 0 1
-and Anson and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 ().()[,,]. 10 8 0 0 0 0 1
-There was there T Th The Ther BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 4 , 1 8 0 0 0 0 1
-1. Gajisin 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 7 .,. 3 10 0 0 0 0 1
-superficial palmar superficial s su sup supe BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 ..();:-. 8 10 0 0 0 0 1
-2. Gellman 2. 2 2. 2. 2. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 7 .,,,. 5 9 0 0 0 0 1
-patterns of patterns p pa pat patt BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 . 1 10 0 0 0 0 1
-Relat Res relat R Re Rel Rela BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 6 7 ;:-. 4 4 0 0 0 0 1
-3. Coleman 3. 3 3. 3. 3. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 8 .,. 3 10 0 0 0 0 1
-the study the t th the the BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 8 .;:-. 5 10 0 0 0 0 1
-4. Bhalla 4. 4 4. 4. 4. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 8 .,,,,. 6 9 0 0 0 0 1
-national estimates national n na nat nati BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 8 no 0 10 0 0 0 0 1
-countries from countries c co cou coun BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 8 :. 2 8 0 0 0 0 1
-2009;15:150-156. 2009;15:150-156. 2009;15:150-156. 2 20 200 2009 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 6 8 ;:-. 4 2 0 0 0 0 1
-5. Loukas 5. 5 5. 5. 5. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 8 .,,. 4 10 0 0 0 0 1
-superficial and superficial s su sup supe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 8 .(); 4 10 0 0 0 0 1
-64:78-83. 64:78-83. 64:78-83. 6 64 64: 64:7 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 8 :-. 3 1 0 0 0 0 1
-6. Patnaik 6. 6 6. 6. 6. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 7 9 .,,.- 5 10 0 1 0 0 1
-Morphological Study. morphological M Mo Mor Morp BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 9 .;():-. 7 9 0 1 0 0 1
-7. Al-Turk 7. 7 7. 7. 7. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 7 9 .-,. 4 10 0 1 0 0 1
-www.jocr.co.in www.jocr.co.in www.jocr.co.in w ww www www. BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 9 ... 3 10 1 1 0 0 0
-Gharravi et gharravi G Gh Gha Ghar BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 7 9 no 0 10 1 1 0 0 0
-Journal of journal J Jo Jou Jour BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 10 -- 2 10 0 1 0 0 0
-Figure 1 figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 10 -., 3 9 1 0 0 0 1
-type of type t ty typ type BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 10 .,;,;,;, 8 8 1 0 0 0 1
-thenar eminence; thenar t th the then BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 10 ;,;,;, 6 8 1 0 0 0 1
-digital arteries; digital d di dig digi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 10 ;,;,,* 6 10 1 0 0 0 1
-Median nerve median M Me Med Medi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 10 . 1 5 1 0 0 0 1
-Clinical Message clinical C Cl Cli Clin BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 11 no 0 3 0 0 0 0 1
-Superficial palmar superficial S Su Sup Supe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 11 () 2 9 0 0 0 0 1
-structure supplies structure s st str stru BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 11 no 0 9 0 0 0 0 1
-palm of palm p pa pal palm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 11 . 1 9 0 0 0 0 1
-be considered be b be be be BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 11 no 0 9 0 0 0 0 1
-surgeons performing surgeons s su sur surg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 11 no 0 8 0 0 0 0 1
-such as such s su suc such BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 11 ,. 2 10 0 0 0 0 1
-33 33 33 3 33 33 33 BLOCKSTART PAGEEND NEWFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 8 11 no 0 10 0 0 0 0 0
-www.jocr.co.in www.jocr.co.in www.jocr.co.in w ww www www. BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 0 ... 3 10 0 1 0 0 0
-Gharravi et gharravi G Gh Gha Ghar BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 0 no 0 10 0 1 0 0 0
-Journal of journal J Jo Jou Jour BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 0 -- 2 10 0 1 0 0 0
-using the using u us usi usin BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 .;:-. 5 8 0 0 0 0 1
-the hand the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 -. 2 9 0 0 0 0 1
-J Hand j J J J J BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 8 0 ;:-. 4 4 0 0 0 0 1
-8. Sarkar 8. 8 8. 8. 8. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 .,,,. 5 9 0 0 0 0 1
-variations in variations v va var vari BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 . 1 8 0 0 0 0 1
-11. Allen 11. 1 11 11. 11. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 ..: 3 9 0 0 0 0 1
-2012;53: 409-412 2012;53: 2 20 201 2012 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 8 0 ;:- 3 2 0 0 0 0 1
-chronic occlusive chronic c ch chr chro BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 no 0 10 0 0 0 0 1
-cases. Am cases. c ca cas case BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 .;:-. 5 4 0 0 0 0 1
-9. Provenzano 9. 9 9. 9. 9. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 .... 4 9 0 0 0 0 1
-Case. New case. C Ca Cas Case BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 0 .:-. 4 7 0 0 0 0 1
-12. Starnes 12. 1 12 12. 12. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 .,,,,, 6 8 0 0 0 0 1
-Kong BK, kong K Ko Kon Kong BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 1 0 0 0 0 0 0 8 0 ,,,,,, 6 8 0 0 0 0 1
-10. Ikeda 10. 1 10 10. 10. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 .,,,. 5 8 0 0 0 0 1
-Whitehouse WM whitehouse W Wh Whi Whit BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 0 . 1 4 0 0 0 0 1
-Conflict of conflict C Co Con Conf BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 3 : 1 10 0 0 0 0 1
-Source of source S So Sou Sour BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 3 : 1 9 0 0 0 0 1
-How to how H Ho How How BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 3 : 1 2 0 0 0 0 1
-Gharravi AM, gharravi G Gh Gha Ghar BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 3 ,,,.. 5 10 0 0 0 0 1
-Orthopaedic Case orthopaedic O Or Ort Orth BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 3 -;():- 6 5 0 0 0 0 1
-34 34 34 3 34 34 34 BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 9 3 no 0 10 0 0 0 0 0
-An International an A An An An BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 1 INITCAP NODIGIT 0 1 1 0 0 0 0 0 9 3 , 1 10 0 0 0 0 1
-Musculoskeletal Cases musculoskeletal M Mu Mus Musc BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 3 no 0 2 0 0 0 0 1
-Complications are complications C Co Com Comp BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 4 . 1 9 0 0 0 0 1
-complicated cases complicated c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 4 no 0 9 0 0 0 0 1
-improvement in improvement i im imp impr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 4 . 1 5 0 0 0 0 1
-Journal of journal J Jo Jou Jour BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 4 () 2 10 0 0 0 0 1
-and difficult and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 4 .. 2 8 0 0 0 0 1
-Scope of scope S Sc Sco Scop BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 4 no 0 1 0 0 0 0 1
-JOC will joc J JO JOC JOC BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 5 /, 2 10 0 0 0 0 1
-Rheumatology, Physiotherapy, rheumatology, R Rh Rhe Rheu BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 5 ,,,,,. 6 8 0 0 0 0 1
-Manuscripts must manuscripts M Ma Man Manu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 5 : 1 4 0 0 0 0 1
-1. Primarily 1. 1 1. 1. 1. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 3 0 0 0 0 1
-2. Known 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .,,,. 5 6 0 0 0 0 1
-3. Complications 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .- 2 5 0 0 0 0 1
-4. A 4. 4 4. 4. 4. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 5 0 0 0 0 1
-5. Any 5. 5 5. 5. 5. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 5 0 0 0 0 1
-6. Cases 6. 6 6. 6. 6. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 6 0 0 0 0 1
-7. Delayed 7. 7 7. 7. 7. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 6 0 0 0 0 1
-8. Unusual 8. 8 8. 8. 8. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 8 0 0 0 0 1
-9. A 9. 9 9. 9. 9. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .. 2 4 0 0 0 0 1
-10. A 10. 1 10 10. 10. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .. 2 5 0 0 0 0 1
-11. A 11. 1 11 11. 11. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .] 2 9 0 0 0 0 1
-period of period p pe per peri BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 5 []. 3 10 0 0 0 0 1
-intertrochanteric fractures. intertrochanteric i in int inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 10 5 . 1 2 0 0 0 0 1
-12. Complication 12. 1 12 12. 12. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .: 2 9 0 0 0 0 1
-surgery. Authors surgery. s su sur surg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 5 .[;]. 5 9 0 0 0 0 1
-This need this T Th Thi This BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 5 . 1 9 0 0 0 0 1
-associated with associated a as ass asso BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 5 .. 2 9 0 0 0 0 1
-Manuscripts will manuscripts M Ma Man Manu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 9 , 1 10 0 0 0 0 1
-their manuscript their t th the thei BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 9 -. 2 2 0 0 0 0 1
-All manuscripts all A Al All All BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 10 ''... 5 10 0 0 0 0 1
-Submissions can submissions S Su Sub Subm BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 10 @. 2 5 0 0 0 0 1
-JOC will joc J JO JOC JOC BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 10 :,,( 4 10 0 0 0 0 1
-above), Case above), a ab abo abov BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 10 ),,/,, 6 9 0 0 0 0 1
-/ treating / / / / / BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 11 10 /,/,,, 6 9 0 0 0 0 1
-Visit Visit visit V Vi Vis Visi BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 0 0 1 0 0 1
-for more for f fo for for BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 . 1 10 0 1 0 0 1
-www.orthocomplications.com www.orthocomplications.com www.orthocomplications.com w ww www www. BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 11 .. 2 10 0 1 0 0 1
+Editorial Editorial editorial E Ed Edi Edit BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 1 0 0 0 editorial Xx
+Case Report case C Ca Cas Case BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 0 no 0 10 0 1 1 1 1 case_report Xx_Xx
+Journal of journal J Jo Jou Jour BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 -;():- 6 10 0 1 0 0 0 journal_of_orthopaedic_case_reports_XXXX_april-june;X(X):XX-XX Xx_x_Xx_Xx_Xx_d_Xx-Xx;d(d):d-d
+The Incomplete the T Th The The BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 1 0 0 1 the_incomplete_superficial_palmar_arch Xx_Xx_Xx_Xx_Xx
+1 1 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 1 X d
+2 2 2 2 2 2 2 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 1 X d
+Anneh Mohammad anneh A An Ann Anne BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 * 1 10 0 1 0 0 1 anneh_mohammad_gharravi* Xx_Xx_Xx*
+Mohammad Reza mohammad M Mo Moh Moha BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 0 no 0 5 0 1 0 0 1 mohammad_reza Xx_Xx
+3 3 3 3 3 3 3 BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 1 X d
+2 2 2 2 2 2 2 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 1 X d
+Gholami ,Daryoush gholami G Gh Gho Ghol BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 , 1 10 0 1 0 0 1 gholami_,daryoush_bijan_nejad Xx_,Xx_Xx_Xx
+, Saeed , , , , , BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 0 ,, 2 10 0 1 0 0 1 ,_saeed_azandeh_, ,_Xx_Xx_,
+Abstract Abstract abstract A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1 abstract Xx
+Introduction: Introduction: introduction: I In Int Intr BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 : 1 10 0 0 0 0 1 introduction: Xx:
+Case Report: case C Ca Cas Case BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 0 : 1 10 0 0 0 0 1 case_report: Xx_Xx:
+Conclusion: Conclusion: conclusion: C Co Con Conc BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 : 1 10 0 0 0 0 1 conclusion: Xx:
+Keywords: S keywords: K Ke Key Keyw BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 : 1 10 0 0 0 0 1 keywords:_s Xx:_X
+Superficial palmar superficial S Su Sup Supe BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 (). 3 8 0 0 0 0 1 superficial_palmar_arch_(spa)_is_dominant_vascular_structure_in_palm_of_hand._in Xx_x_x_(X)_x_x_x_x_x_x_x_x._Xx
+present study present p pr pre pres BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 / 1 9 0 0 0 0 1 present_study_we_described_a_case_of_ulnar_/_radiopalmar_pattern_of_incomplete_spa_in_an_iranian x_x_x_x_x_x_x_Xx_/_Xx_x_x_x_X_x_x_Xx
+cadaver. When cadaver. c ca cad cada BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 1 ., 2 10 0 0 0 0 1 cadaver._when_the_spa_is_complete,_the_superficial_palmer_branches_of_the_radial_artery_contribute x._Xx_x_X_x_x,_x_x_x_x_x_x_x_x_x
+to the to t to to to BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 9 0 0 0 0 1 to_the_ulnar_artery._in_incomplete_type_of_spa,_there_was_no_anastomosis_between_the_ulnar_and x_x_x_x._Xx_x_x_x_X,_x_x_x_x_x_x_x_x
+radial arteries radial r ra rad radi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 (,). 4 2 0 0 0 0 1 radial_arteries_(ua,_ra). x_x_(X,_X).
+In the in I In In In BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 2 ,. 2 8 0 0 0 0 1 in_the_present_case,_the_brachial_artery_divided_into_ra_and_ua_at_the_cubital_fossa. Xx_x_x_x,_x_x_x_x_x_X_x_X_x_x_x_x.
+There was there T Th The Ther BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 2 (,). 4 10 0 0 0 0 1 there_was_no_anastomosis_between_radial_and_ulnar_arteries_(ra,_ua)_in_the_palm_of_the_hand._ua Xx_x_x_x_x_x_x_x_x_(X,_X)_x_x_x_x_x_x._X
+gave three gave g ga gav gave BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 2 ; 1 9 0 0 0 0 1 gave_three_palmar_digital_arteries;_proper_palmar_digital_artery_and_two_common_palmar_digital x_x_x_x_x;_x_x_x_x_x_x_x_x_x
+arteries. RA arteries. a ar art arte BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 2 .. 2 8 0 0 0 0 1 arteries._ra_gave_proper_palmar_digital_artery_and_arteria_princeps_pollicis. x._X_x_x_x_x_x_x_x_x_x.
+Knowledge of knowledge K Kn Kno Know BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 3 no 0 7 0 0 0 0 1 knowledge_of_anatomical_variation_of_spa_is_important_for_the_hand_surgical Xx_x_x_x_x_X_x_x_x_x_x_x
+interventions and interventions i in int inte BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ' 1 10 0 0 0 0 1 interventions_and_this_is_a_very_rare_variation_which_can_be_easily_tested_clinically_by_allen's_test x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_Xx'x_x
+uperficial palmar uperficial u up upe uper BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 ,, 2 10 0 0 0 0 1 uperficial_palmar_arch,_ulnar_artery,_radial_artery x_x_x,_Xx_x,_Xx_x
+Copyright © copyright C Co Cop Copy BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 4 no 0 8 1 1 0 0 0 copyright_©_XXXX_by_journal_of_orthpaedic_case_reports Xx_©_d_x_Xx_x_Xx_Xx_Xx
+Journal of journal J Jo Jou Jour BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 4 - 1 10 1 1 0 0 0 journal_of_orthopaedic_case_reports_|_pissn_XXXX-XXXX_|_eissn Xx_x_Xx_Xx_Xx_|_xX_d-d_|_xX
+| Available | | | | | BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 1 4 ...: 4 5 1 1 0 0 0 |_available_on_www.jocr.co.in_|_doi: |_Xx_x_x.x.x.x_|_x:
+This is this T Th Thi This BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 4 -(://.//-/.) 12 10 1 1 0 0 0 this_is_an_open_access_article_distributed_under_the_terms_of_the_creative_commons_attribution_non-commercial_license_(http://creativecommons.org/licenses/by-nc/X.X)_which_permits Xx_x_x_Xx_Xx_x_x_x_x_x_x_x_Xx_Xx_Xx_Xx-Xx_Xx_(x:/x.x/x/x-x/d.d)_x_x
+unrestricted non-commercial unrestricted u un unr unre BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 4 -,,,. 5 6 1 1 0 0 0 unrestricted_non-commercial_use,_distribution,_and_reproduction_in_any_medium,_provided_the_original_work_is_properly_cited. x_x-x_x,_x,_x_x_x_x_x,_x_x_x_x_x_x_x.
+2321-3817 2321-3817 2321-3817 2 23 232 2321 BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 1 5 - 1 3 1 1 0 0 0 XXXX-XXXX d-d
+10.13107/jocr.2250-0685.099 10.13107/jocr.2250-0685.099 10.13107/jocr.2250-0685.099 1 10 10. 10.1 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 0 1 5 ./.-. 5 10 1 1 0 0 0 XX.XXXXX/jocr.XXXX-XXXX.XXX d.d/x.d-d.d
+What to what W Wh Wha What BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 5 ? 1 10 0 1 0 0 1 what_to_learn_from_this_article? Xx_x_Xx_x_x_Xx?
+A rare a A A A A BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 ALLCAP NODIGIT 1 0 1 0 0 0 0 0 1 5 ? 1 8 0 0 0 0 1 a_rare_variation_of_incomplete_palmar_arch? X_x_x_x_Xx_Xx_x?
+Anatomical and anatomical A An Ana Anat BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 5 ? 1 10 0 0 0 0 1 anatomical_and_clinical_review_of_such_presentation? Xx_x_Xx_x_x_x_x?
+32 32 32 3 32 32 32 BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 1 6 no 0 10 1 0 0 0 0 XX d
+Introduction Introduction introduction I In Int Intr BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 6 no 0 1 1 0 0 0 1 introduction Xx
+Although several although A Al Alt Alth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 6 no 0 4 1 0 0 0 1 although_several_studies_have_reported_on_various_aspects Xx_x_x_x_x_x_x_x
+Superficial palmar superficial S Su Sup Supe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 6 (),, 4 9 1 0 0 0 1 superficial_palmar_arch_(spa)_as_a_dominant_vascular_of_the_spa_form_several_countries,_to_our_knowledge,_no Xx_x_x_(X)_x_x_x_x_x_x_X_x_x_x,_x_x_x,_x
+structure supplies structure s st str stru BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 no 0 10 1 0 0 0 1 structure_supplies_a_majority_of_the_muscles_of_the_palm_of_study_has_attempted_to_report_anatomical_variation_of_spa x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_X
+the hand. the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 .. 2 5 1 0 0 0 1 the_hand._the_arch_is_localized_between_the_palmer_from_iran. x_x._Xx_x_x_x_x_x_x_x_Xx.
+aponeurosis and aponeurosis a ap apo apon BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 6 []., 4 9 1 0 0 0 1 aponeurosis_and_the_long_flexor_tendons_[X]._when_the_in_addition,_road_traffic_injuries_rate_in_iran_is_the_highest x_x_x_x_x_x_[d]._Xx_x_Xx_x,_x_x_x_x_x_Xx_x_x_x
+SPA is spa S SP SPA SPA BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 1 6 , 1 9 1 0 0 0 1 spa_is_complete,_the_superficial_palmer_branches_of_the_of_any_country_in_the_world_for_which_reliable_estimates_are X_x_x,_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+radial artery radial r ra rad radi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 .[]. 4 9 1 0 0 0 1 radial_artery_contribute_to_the_ulnar_artery._in_incomplete_available_[X]_that_need_to_surgical_intervention. x_x_x_x_x_x_x._Xx_x_x_[d]_x_x_x_x_x.
+type of type t ty typ type BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 , 1 9 1 0 0 0 1 type_of_spa,_there_is_no_anastomosis_between_the_ulnar_and_awareness_and_identification_of_the_spa_variation_in_the x_x_X,_x_x_x_x_x_x_x_x_Xx_x_x_x_x_X_x_x_x
+radial arteries radial r ra rad radi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 (,)[]. 6 9 1 0 0 0 1 radial_arteries_(ua,_ra)_[X]._various_variations_in_the_spa_hands_is_critical_for_orthopaedicians_and_microvascular x_x_(X,_X)_[d]._Xx_x_x_x_X_x_x_x_x_x_x_x
+have been have h ha hav have BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 . 1 8 1 0 0 0 1 have_been_studied_by_several_authors._according_to_surgeons_performing_advanced_surgical_procedures_such x_x_x_x_x_x._Xx_x_x_x_x_x_x_x
+Coleman and coleman C Co Col Cole BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 1 6 (),,. 5 9 1 0 0 0 1 coleman_and_anson_(XXXX),_the_incomplete_type_of_spa_is_as_arterial_repairs,_vascular_graft_applications._therefore Xx_x_Xx_(d),_x_x_x_x_X_x_x_x_x,_x_x_x._Xx
+categorized into categorized c ca cat cate BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 no 0 9 1 0 0 0 1 categorized_into_four_subtypes_based_on_the_absence_of_a_we_report_a_case_of_incomplete_type_of_spa_in_an_iranian x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_X_x_x_Xx
+communication or communication c co com comm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 1 6 ,. 2 8 1 0 0 0 1 communication_or_anastomosis_between_the_radial,_cadaver_that_is_the_first_report_of_this_variation. x_x_x_x_x_x,_x_x_x_x_x_x_x_x_x.
+median and median m me med medi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 6 []. 3 2 1 0 0 0 1 median_and_the_ulnar_arteries_[X]. x_x_x_x_x_[d].
+Dr. Anne dr. D Dr Dr. Dr. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 10 . 1 10 1 1 0 0 1 dr._anne_mohammad_gharravi Xx._Xx_Xx_Xx
+Author's Photo author's A Au Aut Auth BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 10 ' 1 10 1 0 0 0 1 author's_photo_gallery Xx'x_Xx_Xx
+1 1 1 1 1 1 1 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 3 10 no 0 10 1 0 0 0 1 X d
+Sciences, Shahroud, sciences, S Sc Sci Scie BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 10 ,,. 3 5 1 0 0 0 1 sciences,_shahroud,_iran. Xx,_Xx,_Xx.
+2 Department 2 2 2 2 2 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 3 10 ,, 2 10 1 0 0 0 1 X_department_of_anatomy,_faculty_of_medicine,_ahvaz d_Xx_x_x,_Xx_x_Xx,_Xx
+Jundishapour University jundishapour J Ju Jun Jund BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 10 (), 3 9 1 0 0 0 1 jundishapour_university_of_medical_sciences_(ajums), Xx_Xx_x_Xx_Xx_(X),
+Ahvaz, Iran ahvaz, A Ah Ahv Ahva BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 10 , 1 2 1 0 0 0 1 ahvaz,_iran Xx,_Xx
+3 Department 3 3 3 3 3 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 3 10 ,, 2 10 1 0 0 0 1 X_department_of_anatomy,_faculty_of_medicine,_lorestan d_Xx_x_x,_Xx_x_Xx,_Xx
+University of university U Un Uni Univ BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 11 ,, 2 10 1 0 0 0 1 university_of_medical_sciences,_khorram_abad,_iran Xx_x_Xx_Xx,_Xx_Xx,_Xx
+Address of address A Ad Add Addr BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 11 no 0 5 1 0 0 0 1 address_of_correspondence Xx_x_Xx
+Dr. Anneh dr. D Dr Dr. Dr. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 11 . 1 5 1 0 0 0 1 dr._anneh_mohammad_gharravi Xx._Xx_Xx_Xx
+School of school S Sc Sch Scho BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 11 , 1 10 1 0 0 0 1 school_of_medicine,_shahroud_university_of_medical Xx_x_Xx,_Xx_Xx_x_Xx
+Sciences, Shahroud, sciences, S Sc Sci Scie BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 11 ,,. 3 5 1 0 0 0 1 sciences,_shahroud,_iran. Xx,_Xx,_Xx.
+E-mail: annehgh@yahoo.com e-mail: E E- E-m E-ma BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 11 -:@. 4 5 1 0 0 0 1 e-mail:_annehgh@yahoo.com X-x:_x@x.x
+School of school S Sc Sch Scho BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 11 , 1 10 1 0 0 0 1 school_of_medicine,_shahroud_university_of_medical Xx_x_Xx,_Xx_Xx_x_Xx
+Dr. Saeed dr. D Dr Dr. Dr. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 11 . 1 4 1 1 0 0 1 dr._saeed_azandeh Xx._Xx_Xx
+Dr. Mohammad dr. D Dr Dr. Dr. BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 11 .. 2 10 1 1 0 0 1 dr._mohammad_r_gholami_dr._darioush_b_nejad Xx._Xx_X_Xx_Xx._Xx_X_Xx
+Case Report case C Ca Cas Case BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 3 0 no 0 10 1 0 1 0 1 case_report Xx_Xx
+Conclusion Conclusion conclusion C Co Con Conc BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 10 0 0 0 0 1 conclusion Xx
+Discussion Discussion discussion D Di Dis Disc BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 10 0 0 0 0 1 discussion Xx
+References References references R Re Ref Refe BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 10 0 0 0 0 1 references Xx
+Ulnar / ulnar U Ul Uln Ulna BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 0 /; 2 4 0 0 0 0 1 ulnar_/_radiopalmar_pattern_from_iranian_population; Xx_/_Xx_x_x_Xx_x;
+and we and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1 and_we_believe_that_this_is_first_report_from_our_geopolitical x_x_x_x_x_x_x_x_x_x_x
+area. area. area. a ar are area BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 0 0 0 0 0 1 area. x.
+Clinically the clinically C Cl Cli Clin BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 4 0 0 0 0 1 clinically_the_anastomosis_between_radial_and_ulnar Xx_x_x_x_x_x_x
+arteries in arteries a ar art arte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1 arteries_in_hand_is_of_great_significance_when_performing x_x_x_x_x_x_x_x_x
+surgical procedures surgical s su sur surg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 , 1 4 0 0 0 0 1 surgical_procedures_on_hand,_forearm_or_on_individual x_x_x_x,_x_x_x_x
+arteries. One arteries. a ar art arte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 5 0 0 0 0 1 arteries._one_of_the_complications_of_common_procedure x._Xx_x_x_x_x_x_x
+of radial of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1 of_radial_artery_like_arterial_blood_sampling_is_occlusion_of x_x_x_x_x_x_x_x_x_x
+the artery, the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 , 1 5 0 0 0 0 1 the_artery,_however_in_these_situations_the_hand_perfusion x_x,_x_x_x_x_x_x_x
+can be can c ca can can BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1 can_be_maintained_by_the_ulnar_artery_through_the_palmar x_x_x_x_x_x_x_x_x_x
+arch. This arch. a ar arc arch BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 .' 2 5 0 0 0 0 1 arch._this_can_be_easily_established_by_using_allen's_test x._Xx_x_x_x_x_x_x_Xx'x_x
+[11] or [11] [ [1 [11 [11] BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 3 0 [][] 4 4 0 0 0 0 1 [XX]_or_doppler_ultrasound_studies_[XX]_which_can [d]_x_Xx_x_x_[d]_x_x
+provide good provide p pr pro prov BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 4 0 0 0 0 1 provide_good_idea_about_the_continuity_of_the_palmar x_x_x_x_x_x_x_x_x
+arches. In arches. a ar arc arch BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 .,, 3 5 0 0 0 0 1 arches._in_cases_of_incomplete_palmar_arch,_as_in_this_case, x._Xx_x_x_x_x_x,_x_x_x_x,
+the Allen's the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 ' 1 5 0 0 0 0 1 the_allen's_test_will_be_negative_confirmed_with_and_both x_Xx'x_x_x_x_x_x_x_x_x
+radius and radius r ra rad radi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 ''. 3 5 0 0 0 0 1 radius_and_ulna_arteries_will_behave_as_'end_arteries'._thus x_x_x_x_x_x_x_'x_x'._Xx
+any procedure any a an any any BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 4 0 0 0 0 1 any_procedure_on_radial_or_ulnar_artery_needs_to_be x_x_x_x_x_x_x_x_x_x
+After proper after A Af Aft Afte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 10 0 0 0 0 1 after_proper_skin_incision_and_dissection_of_flexor_carefully_planned_and_potential_of_ischemic_complications Xx_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+retinaculum, palmar retinaculum, r re ret reti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 ,. 2 7 0 0 0 0 1 retinaculum,_palmar_aponeurosis_and_deep_fascia_covering_should_be_kept_in_mind. x,_x_x_x_x_x_x_x_x_x_x_x.
+the thenar the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 , 1 4 0 0 0 0 1 the_thenar_and_hypothenar_muscles,_we_encountered_an x_x_x_x_x,_x_x_x
+incomplete type incomplete i in inc inco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1 incomplete_type_of_spa_in_the_left_upper_extremity_of_a x_x_x_X_x_x_x_x_x_x_x
+In viewof in I In In In BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1 in_viewof_high_rate_of_road_traffic_injuries_in_iran_and_need Xx_x_x_x_x_x_x_x_x_Xx_x_x
+formalin-fixed adult formalin-fixed f fo for form BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 - 1 4 0 0 0 0 1 formalin-fixed_adult_male_cadaver_during_routine x-x_x_x_x_x_x
+for surgical for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 , 1 5 0 0 0 0 1 for_surgical_intervention,_the_anatomic_knowledge_of_the x_x_x,_x_x_x_x_x
+dissection. The dissection. d di dis diss BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 . 1 5 0 0 0 0 1 dissection._the_history_of_the_individual_and_the_cause_of x._Xx_x_x_x_x_x_x_x_x
+SPA variability spa S SP SPA SPA BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1 spa_variability_as_a_dominant_vascular_structure_of_palm X_x_x_x_x_x_x_x_x
+death was death d de dea deat BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 ., 2 5 0 0 0 0 1 death_was_not_known._in_the_present_case,_the_brachial x_x_x_x._Xx_x_x_x,_x_x
+becomes essential. becomes b be bec beco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 1 0 0 0 0 1 becomes_essential. x_x.
+artery divided artery a ar art arte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 5 0 0 0 0 1 artery_divided_into_ra_and_ua_at_the_cubital_fossa._there x_x_x_X_x_X_x_x_x_x._Xx
+was no was w wa was was BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 4 0 0 0 0 1 was_no_anastomosis_between_ra_and_ua_at_palm_of_hand x_x_x_x_X_x_X_x_x_x_x
+and SPA and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 4 0 0 0 0 1 and_spa_was_incomplete._ua_gave_three_palmar_digital x_X_x_x._X_x_x_x_x
+arteries; proper arteries; a ar art arte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 ; 1 4 0 0 0 0 1 arteries;_proper_palmar_digital_artery_and_two_common x;_x_x_x_x_x_x_x
+palmar digital palmar p pa pal palm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1 palmar_digital_arteries_which_passed_to_the_medial_three x_x_x_x_x_x_x_x_x
+interdigital clefts. interdigital i in int inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 .: 2 5 0 0 0 0 1 interdigital_clefts._ra_gave_two_branches:_proper_palmar x_x._X_x_x_x:_x_x
+digital artery digital d di dig digi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 5 0 0 0 0 1 digital_artery_to_the_radial_side_of_the_index_finger_and_an x_x_x_x_x_x_x_x_x_x_x_x
+arteria princeps arteria a ar art arte BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 (.). 4 3 0 0 0 0 1 arteria_princeps_pollicis_(fig._X). x_x_x_(Xx._d).
+A classic a A A A A BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 1 0 0 0 0 0 5 4 no 0 8 0 0 0 0 1 a_classic_morphology_of_complete_spa_is_formed_by_the X_x_x_x_x_X_x_x_x_x
+linkage between linkage l li lin link BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 no 0 9 0 0 0 0 1 linkage_between_superficial_palmar_branches_of_the_radial x_x_x_x_x_x_x_x
+and ulnar and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 . 1 9 0 0 0 0 1 and_ulnar_arteries._but_other_morphology_of_incomplete x_x_x._Xx_x_x_x_x
+SPA was spa S SP SPA SPA BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 5 4 . 1 8 0 0 0 0 1 spa_was_reported._the_incidence_of_the_incomplete_spa X_x_x._Xx_x_x_x_x_X
+reported 10%, reported r re rep repo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 ,,. 3 9 0 0 0 0 1 reported_XX%,_XX%,_XX%_and_XX.XX%_of_cases_in_studies_of x_d%,_d%,_d%_x_d.d%_x_x_x_x_x
+Loukas, et loukas, L Lo Lou Louk BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 4 ,.(),,.(),- 11 9 0 0 0 0 1 loukas,_et_al._(XXXX),_patnaik,_et_al._(XXXX),_al-turk_and Xx,_x_x._(d),_Xx,_x_x._(d),_Xx-x_x
+Metcalf. (1984) metcalf. M Me Met Metc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 5 4 .()(), 6 7 0 0 0 0 1 metcalf._(XXXX)_and_coleman_and_anson_(XXXX), Xx._(d)_x_Xx_x_Xx_(d),
+respectively. Most respectively. r re res resp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 .(.), 5 9 0 0 0 0 1 respectively._most_of_the_spa_arches_(XX.XX%),_in_the_study x._Xx_x_x_X_x_(d.d%),_x_x_x
+of Sarkar of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 .()[,-]. 8 8 0 0 0 0 1 of_sarkar_et_al._(XXXX)_were_incomplete_[X,_X-X]. x_Xx_x_x._(d)_x_x_[d,_d-d].
+According to according A Ac Acc Acco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 4 ,.() 4 10 0 0 0 0 1 according_to_ottone,_et_al._(XXXX)_the_present_case_is_ulnar Xx_x_Xx,_x_x._(d)_x_x_x_x_Xx
+/ Radiopalmar / / / / / BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 5 4 /(). 4 9 0 0 0 0 1 /_radiopalmar_pattern_subtype_of_incomplete_spa_(X)._the /_Xx_x_x_x_x_X_(d)._Xx
+incidence of incidence i in inc inci BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 .,. 3 9 0 0 0 0 1 incidence_of_this_variation_reported_in_X.X%,_X.X%_and x_x_x_x_x_x_d.d%,_d.d%_x
+3.6% of 3.6% 3 3. 3.6 3.6% BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 5 4 .,.(), 6 9 0 0 0 0 1 X.X%_of_cases_in_studies_of_ottone,_et_al._(XXXX),_coleman d.d%_x_x_x_x_x_Xx,_x_x._(d),_Xx
+and Anson and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 4 ().()[,,]. 10 8 0 0 0 0 1 and_anson_(XXXX)_and_ikeda_et_al._(XXXX)_[X,X,XX]. x_Xx_(d)_x_Xx_x_x._(d)_[d,d,d].
+There was there T Th The Ther BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 4 , 1 8 0 0 0 0 1 there_was_no_report_of_the_incomplete_spa,_especially Xx_x_x_x_x_x_x_X,_x
+1. Gajisin 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 7 .,. 3 10 0 0 0 0 1 X._gajisin_s,_zbrodowski_a._local_vascular_contribution_of_the d._Xx_X,_Xx_X._Xx_x_x_x_x
+superficial palmar superficial s su sup supe BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 ..();:-. 8 10 0 0 0 0 1 superficial_palmar_arch._acta._anat_(basel)_XXXX;XXX:_XXX-XXX. x_x_x._Xx._Xx_(Xx)_d;d:_d-d.
+2. Gellman 2. 2 2. 2. 2. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 7 .,,,. 5 9 0 0 0 0 1 X._gellman_h,_botte_mj,_shankwiler_j,_gelberman_rh._arterial d._Xx_X,_Xx_X,_Xx_X,_Xx_X._Xx
+patterns of patterns p pa pat patt BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 . 1 10 0 0 0 0 1 patterns_of_the_deep_and_superficial_palmar_arches._clin_orthop x_x_x_x_x_x_x_x._Xx_Xx
+Relat Res relat R Re Rel Rela BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 6 7 ;:-. 4 4 0 0 0 0 1 relat_res_XXXX;XXX:XX-XX. Xx_Xx_d;d:d-d.
+3. Coleman 3. 3 3. 3. 3. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 8 .,. 3 10 0 0 0 0 1 X._coleman_ss,_anson_bj._arterial_patterns_in_the_hand_based_upon d._Xx_X,_Xx_X._Xx_x_x_x_x_x_x
+the study the t th the the BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 8 .;:-. 5 10 0 0 0 0 1 the_study_of_XXX_specimens._surg_gynecol_obstet_XXXX;XXX:XXX-XXX. x_x_x_d_x._Xx_Xx_Xx_d;d:d-d.
+4. Bhalla 4. 4 4. 4. 4. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 8 .,,,,. 6 9 0 0 0 0 1 X._bhalla_k,_naghavi_m,_shahraz_s,_bartels_d,_murray_cj._building d._Xx_X,_Xx_X,_Xx_X,_Xx_X,_Xx_X._Xx
+national estimates national n na nat nati BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 8 no 0 10 0 0 0 0 1 national_estimates_of_the_burden_of_road_traffic_injuries_in_developing x_x_x_x_x_x_x_x_x_x_x
+countries from countries c co cou coun BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 8 :. 2 8 0 0 0 0 1 countries_from_all_available_data_sources:_iran._inj_prev x_x_x_x_x_x:_Xx._Xx_Xx
+2009;15:150-156. 2009;15:150-156. 2009;15:150-156. 2 20 200 2009 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 6 8 ;:-. 4 2 0 0 0 0 1 XXXX;XX:XXX-XXX. d;d:d-d.
+5. Loukas 5. 5 5. 5. 5. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 8 .,,. 4 10 0 0 0 0 1 X._loukas_m,_holdman_d,_holdman_s._anatomical_variations_of_the d._Xx_X,_Xx_X,_Xx_X._Xx_x_x_x
+superficial and superficial s su sup supe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 8 .(); 4 10 0 0 0 0 1 superficial_and_deep_palmar_arches._folia_morphol_(warsz)_XXXX; x_x_x_x_x._Xx_Xx_(Xx)_d;
+64:78-83. 64:78-83. 64:78-83. 6 64 64: 64:7 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 8 :-. 3 1 0 0 0 0 1 XX:XX-XX. d:d-d.
+6. Patnaik 6. 6 6. 6. 6. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 7 9 .,,.- 5 10 0 1 0 0 1 X._patnaik_vvg,_kalsey_g,_singla_rk._palmar_arterial_arches-a d._Xx_X,_Xx_X,_Xx_X._Xx_Xx_Xx-X
+Morphological Study. morphological M Mo Mor Morp BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 9 .;():-. 7 9 0 1 0 0 1 morphological_study._j_anat_soc_india_XXXX;XX(X):XXX-XXX. Xx_Xx._X_Xx_Xx_Xx_d;d(d):d-d.
+7. Al-Turk 7. 7 7. 7. 7. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 7 9 .-,. 4 10 0 1 0 0 1 X._al-turk_m,_metcalf_wk._a_study_of_the_superficial_palmar_arteries d._Xx-Xx_X,_Xx_X._X_x_x_x_x_x_x
+www.jocr.co.in www.jocr.co.in www.jocr.co.in w ww www www. BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 9 ... 3 10 1 1 0 0 0 www.jocr.co.in x.x.x.x
+Gharravi et gharravi G Gh Gha Ghar BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 7 9 no 0 10 1 1 0 0 0 gharravi_et_al Xx_x_x
+Journal of journal J Jo Jou Jour BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 10 -- 2 10 0 1 0 0 0 journal_of_orthopaedic_case_reports_|_volume_X_|_issue_X_|_april_-june_XXXX_|_page_XX-XX Xx_x_Xx_Xx_Xx_|_Xx_d_|_Xx_d_|_Xx_-Xx_d_|_Xx_d-d
+Figure 1 figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 10 -., 3 9 1 0 0 0 1 figure_X_-ventral_aspect_of_the_left_hand._a,_cadaveric_hand_exhibiting_the_incomplete Xx_d_-Xx_x_x_x_x_x._X,_Xx_x_x_x_x
+type of type t ty typ type BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 10 .,;,;,;, 8 8 1 0 0 0 1 type_of_spa._b,_patterns_of_spa_;he,_hypothenar_eminence;_ra,_radial_artery;_te, x_x_X._X,_Xx_x_X_;X,_x_x;_X,_x_x;_X,
+thenar eminence; thenar t th the then BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 10 ;,;,;, 6 8 1 0 0 0 1 thenar_eminence;_ua,_ulnar_artery;_spa,_superficial_palmar_arch;_cda,_common x_x;_X,_x_x;_X,_Xx_x_x;_X,_x
+digital arteries; digital d di dig digi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 10 ;,;,,* 6 10 1 0 0 0 1 digital_arteries;_pda,_proper_digital_artery;_app,_arteria_princeps_pollicis,_*_indicate_the x_x;_X,_x_x_x;_X,_x_x_x,_*_x_x
+Median nerve median M Me Med Medi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 10 . 1 5 1 0 0 0 1 median_nerve_and_arrow_shown_flexor_retinaculum. Xx_x_x_x_x_x_x.
+Clinical Message clinical C Cl Cli Clin BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 11 no 0 3 0 0 0 0 1 clinical_message Xx_Xx
+Superficial palmar superficial S Su Sup Supe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 11 () 2 9 0 0 0 0 1 superficial_palmar_arch_(spa)_as_a_dominant_vascular Xx_x_x_(X)_x_x_x_x
+structure supplies structure s st str stru BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 11 no 0 9 0 0 0 0 1 structure_supplies_a_majority_of_the_muscles_of_the x_x_x_x_x_x_x_x_x
+palm of palm p pa pal palm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 11 . 1 9 0 0 0 0 1 palm_of_the_hand._therefore_the_spa_variation_should x_x_x_x._Xx_Xx_X_x_x
+be considered be b be be be BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 11 no 0 9 0 0 0 0 1 be_considered_by_orthopaedicians_and_microvascular x_x_x_x_x_x
+surgeons performing surgeons s su sur surg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 11 no 0 8 0 0 0 0 1 surgeons_performing_advanced_surgical_procedures x_x_x_x_x
+such as such s su suc such BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 11 ,. 2 10 0 0 0 0 1 such_as_arterial_repairs,_vascular_graft_applications. x_x_x_x,_x_x_x.
+33 33 33 3 33 33 33 BLOCKSTART PAGEEND NEWFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 8 11 no 0 10 0 0 0 0 0 XX d
+www.jocr.co.in www.jocr.co.in www.jocr.co.in w ww www www. BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 0 ... 3 10 0 1 0 0 0 www.jocr.co.in x.x.x.x
+Gharravi et gharravi G Gh Gha Ghar BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 0 no 0 10 0 1 0 0 0 gharravi_et_al Xx_x_x
+Journal of journal J Jo Jou Jour BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 0 -- 2 10 0 1 0 0 0 journal_of_orthopaedic_case_reports_|_volume_X_|_issue_X_|_april_-june_XXXX_|_page_XX-XX Xx_x_Xx_Xx_Xx_|_Xx_d_|_Xx_d_|_Xx_-Xx_d_|_Xx_d-d
+using the using u us usi usin BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 .;:-. 5 8 0 0 0 0 1 using_the_doppler_ultrasonic_flow_meter._j_anat_XXXX;XXX:XX-XX. x_x_Xx_Xx_Xx_x._X_Xx_d;d:d-d.
+the hand the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 -. 2 9 0 0 0 0 1 the_hand_based_on_three-dimensional_analysis_of_XXX_cadaver_hands. x_x_x_x_x-x_x_x_d_x_x.
+J Hand j J J J J BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 8 0 ;:-. 4 4 0 0 0 0 1 j_hand_surg_XXXX;XXa:XXX-XXX. X_Xx_Xx_d;dX:d-d.
+8. Sarkar 8. 8 8. 8. 8. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 .,,,. 5 9 0 0 0 0 1 X._sarkar_a,_dutta_s,_bal_k,_biswas_j._handedness_may_be_related_to d._Xx_X,_Xx_X,_Xx_X,_Xx_X._Xx_x_x_x_x
+variations in variations v va var vari BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 . 1 8 0 0 0 0 1 variations_in_palmar_arterial_arches_in_humans._singapore_med_j x_x_x_x_x_x_x._Xx_Xx_X
+11. Allen 11. 1 11 11. 11. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 ..: 3 9 0 0 0 0 1 XX._allen_ev._thromboangiitis_obliterans:_methods_of_diagnosis_of d._Xx_X._Xx_x:_x_x_x_x
+2012;53: 409-412 2012;53: 2 20 201 2012 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 8 0 ;:- 3 2 0 0 0 0 1 XXXX;XX:_XXX-XXX d;d:_d-d
+chronic occlusive chronic c ch chr chro BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 no 0 10 0 0 0 0 1 chronic_occlusive_arterial_lesions_distal_to_the_wrist_with_illustrative x_x_x_x_x_x_x_x_x_x
+cases. Am cases. c ca cas case BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 .;:-. 5 4 0 0 0 0 1 cases._am_j_med_sci_XXXX;X:X-X. x._Xx_X_Xx_Xx_d;d:d-d.
+9. Provenzano 9. 9 9. 9. 9. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 .... 4 9 0 0 0 0 1 X._provenzano_r._w._congenital_dislocation_of_the_knee._report_of_a d._Xx_X._X._Xx_Xx_x_x_Xx._Xx_x_x
+Case. New case. C Ca Cas Case BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 0 .:-. 4 7 0 0 0 0 1 case._new_england_journal_medicine_XXXX_XXX:_XXX-XXX. Xx._Xx_Xx_Xx_Xx_d_d:_d-d.
+12. Starnes 12. 1 12 12. 12. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 .,,,,, 6 8 0 0 0 0 1 XX._starnes_sl,_wolk_sw,_lampman_rm,_shanley_cj,_prager_rl, d._Xx_X,_Xx_X,_Xx_X,_Xx_X,_Xx_X,
+Kong BK, kong K Ko Kon Kong BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 1 0 0 0 0 0 0 8 0 ,,,,,, 6 8 0 0 0 0 1 kong_bk,_fowler_jj,_page_jm,_babcock_sl,_lange_la,_erlandson_ee, Xx_X,_Xx_X,_Xx_X,_Xx_X,_Xx_X,_Xx_X,
+10. Ikeda 10. 1 10 10. 10. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 1 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 .,,,. 5 8 0 0 0 0 1 XX._ikeda_a,_ugawa_a,_kazihara_y,_hamada_n._arterial_patterns_in d._Xx_X,_Xx_X,_Xx_X,_Xx_X._Xx_x_x
+Whitehouse WM whitehouse W Wh Whi Whit BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 0 . 1 4 0 0 0 0 1 whitehouse_wm_jr._noninvasive Xx_X_Xx._Xx
+Conflict of conflict C Co Con Conf BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 3 : 1 10 0 0 0 0 1 conflict_of_interest:_nil Xx_x_Xx:_Xx
+Source of source S So Sou Sour BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 3 : 1 9 0 0 0 0 1 source_of_support:_none Xx_x_Xx:_Xx
+How to how H Ho How How BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 3 : 1 2 0 0 0 0 1 how_to_cite_this_article: Xx_x_Xx_x_Xx:
+Gharravi AM, gharravi G Gh Gha Ghar BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 3 ,,,.. 5 10 0 0 0 0 1 gharravi_am,_azandeh_s,_gholami_mr,_nejad_db._the_incomplete_superficial_palmar_arch._journal_of Xx_X,_Xx_X,_Xx_X,_Xx_X._Xx_Xx_Xx_Xx_Xx._Xx_x
+Orthopaedic Case orthopaedic O Or Ort Orth BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 3 -;():- 6 5 0 0 0 0 1 orthopaedic_case_reports_XXXX_april-june;X(X):_XX-XX Xx_Xx_Xx_d_Xx-Xx;d(d):_d-d
+34 34 34 3 34 34 34 BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 9 3 no 0 10 0 0 0 0 0 XX d
+An International an A An An An BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 1 INITCAP NODIGIT 0 1 1 0 0 0 0 0 9 3 , 1 10 0 0 0 0 1 an_international_peer_review_journal_publishing_complex,_complicated_and_difficult Xx_Xx_Xx_Xx_Xx_Xx_Xx,_Xx_x_Xx
+Musculoskeletal Cases musculoskeletal M Mu Mus Musc BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 3 no 0 2 0 0 0 0 1 musculoskeletal_cases Xx_Xx
+Complications are complications C Co Com Comp BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 4 . 1 9 0 0 0 0 1 complications_are_one_of_the_most_important_events_in_career_of_an_orthopaedic_surgeons._complications_and_complex_and Xx_x_x_x_x_x_x_x_x_Xx_x_x_Xx_Xx._Xx_x_Xx_x
+complicated cases complicated c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 4 no 0 9 0 0 0 0 1 complicated_cases_provide_an_opportunity_to_learn_practical_points_about_patient_management_and_lead_to_continuous x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+improvement in improvement i im imp impr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 4 . 1 5 0 0 0 0 1 improvement_in_our_surgical_skills_and_clinical_decision_making. x_x_x_x_x_x_x_x_x.
+Journal of journal J Jo Jou Jour BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 4 () 2 10 0 0 0 0 1 journal_of_orthopaedic_complications_(joc)_is_first_of_its_kind_journal_where_a_complete_journal_is_dedicated_to_complications Xx_x_Xx_Xx_(X)_x_Xx_x_x_x_x_x_x_x_x_x_x_x_Xx
+and difficult and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 4 .. 2 8 0 0 0 0 1 and_difficult_complex_musculoskeletal_cases._the_submission_format_is_kept_very_simple_and_practical. x_x_x_x_x._Xx_x_x_x_x_x_x_x_x.
+Scope of scope S Sc Sco Scop BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 4 no 0 1 0 0 0 0 1 scope_of_the_journal Xx_x_x_Xx
+JOC will joc J JO JOC JOC BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 5 /, 2 10 0 0 0 0 1 joc_will_publish_complicated/complications_of_musculoskeletal_cases_from_all_faculties_including_but_not_limited_to_orthopaedic, X_x_x_x/x_x_x_x_x_x_x_x_x_x_x_x_Xx,
+Rheumatology, Physiotherapy, rheumatology, R Rh Rhe Rheu BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 5 ,,,,,. 6 8 0 0 0 0 1 rheumatology,_physiotherapy,_occupational_therapy,_neurology,_neurosurgery,_oncology_and_congenital_disorders. Xx,_Xx,_Xx_x,_Xx,_Xx,_Xx_x_Xx_x.
+Manuscripts must manuscripts M Ma Man Manu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 5 : 1 4 0 0 0 0 1 manuscripts_must_meet_one_of_the_following_criteria: Xx_x_x_x_x_x_x_x:
+1. Primarily 1. 1 1. 1. 1. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 3 0 0 0 0 1 X._primarily_complex_or_difficult_cases d._Xx_Xx_x_Xx_Xx
+2. Known 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .,,,. 5 6 0 0 0 0 1 X._known_and_unknown_complication_of_a_disease,_fracture,_treatment,_implant. d._Xx_x_Xx_Xx_x_x_x,_x,_x,_x.
+3. Complications 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .- 2 5 0 0 0 0 1 X._complications_due_to_associated_diagnosed_or_undiagnosed_co-morbidities d._Xx_x_x_x_x_x_x_x-x
+4. A 4. 4 4. 4. 4. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 5 0 0 0 0 1 X._a_known_complication_treated_with_a_new_or_rarely_reported_method d._X_x_x_x_x_x_x_x_x_x_x
+5. Any 5. 5 5. 5. 5. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 5 0 0 0 0 1 X._any_unexpected_event_in_the_course_of_observing_or_treating_a_patient d._Xx_x_x_x_x_x_x_x_x_x_x_x
+6. Cases 6. 6 6. 6. 6. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 6 0 0 0 0 1 X._cases_presenting_with_failed_primary_management_with_complicated_clinical_condition d._Xx_x_x_x_x_x_x_x_x_x
+7. Delayed 7. 7 7. 7. 7. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 6 0 0 0 0 1 X._delayed_presentation_of_a_fracture_or_disease_leading_to_complex_presentation d._Xx_x_x_x_x_x_x_x_x_x_x
+8. Unusual 8. 8 8. 8. 8. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 . 1 8 0 0 0 0 1 X._unusual_findings_that_shed_new_light_on_the_possible_pathogenesis_of_a_disease_or_an_adverse_effect d._Xx_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+9. A 9. 9 9. 9. 9. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .. 2 4 0 0 0 0 1 X._a_small_series_of_cases_with_unusual_complication. d._X_x_x_x_x_x_x_Xx.
+10. A 10. 1 10 10. 10. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .. 2 5 0 0 0 0 1 XX._a_technical_note_demonstrated_on_a_single_complicated_case. d._X_x_x_x_x_x_x_x_x.
+11. A 11. 1 11 11. 11. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .] 2 9 0 0 0 0 1 XX._a_series_of_cases_{prospective_or_retrospective]_using_particular_management_modality_with_common_complications_over_a d._X_x_x_x_{x_x_x]_x_x_x_x_x_x_x_x_x
+period of period p pe per peri BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 5 []. 3 10 0 0 0 0 1 period_of_time_[a_case_series_of_complications]._example_a_case_series_of_complications_of_proximal_femur_nail_in_treatment_of x_x_x_[x_x_x_x_x]._Xx_x_x_x_x_x_x_x_x_x_x_x_x
+intertrochanteric fractures. intertrochanteric i in int inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 10 5 . 1 2 0 0 0 0 1 intertrochanteric_fractures. x_x.
+12. Complication 12. 1 12 12. 12. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 5 .: 2 9 0 0 0 0 1 XX._complication_bank:_this_special_section_will_publish_every_complex_and_complicated_case_associated_with_orthopaedic d._Xx_Xx:_x_x_x_x_x_x_x_x_x_x_x_x_x
+surgery. Authors surgery. s su sur surg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 5 .[;]. 5 9 0 0 0 0 1 surgery._authors_can_send_any_case_with_complications_[known_or_unknown;_common_or_uncommon]_and_it_will_be_published. x._Xx_x_x_x_x_x_x_[x_x_x;_x_x_x]_x_x_x_x_x.
+This need this T Th Thi This BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 5 . 1 9 0 0 0 0 1 this_need_not_be_with_details_of_management_or_follow_up_of_the_case._the_idea_is_to_create_a_database_of_complications Xx_x_x_x_x_x_x_x_x_x_x_x_x_x._Xx_x_x_x_x_x_x_x_x
+associated with associated a as ass asso BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 5 .. 2 9 0 0 0 0 1 associated_with_various_orthopaedic_surgeries_and_dieases._a_single_page_write_up_of_less_than_XXXX_words_will_be_accepted. x_x_x_x_x_x_x._X_x_x_x_x_x_x_x_d_x_x_x_x.
+Manuscripts will manuscripts M Ma Man Manu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 9 , 1 10 0 0 0 0 1 manuscripts_will_be_reviewed_by_the_editorial_board_and_two_external_referees,_and_authors_will_usually_receive_a_decision_on Xx_x_x_x_x_x_Xx_Xx_x_x_x_x,_x_x_x_x_x_x_x_x
+their manuscript their t th the thei BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 9 -. 2 2 0 0 0 0 1 their_manuscript_within_X-XX_weeks. x_x_x_d-d_x.
+All manuscripts all A Al All All BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 10 ''... 5 10 0 0 0 0 1 all_manuscripts_are_to_be_submitted_via_journal_submission_software_'scripture'_on_the_website_www.orthocomplications.com. Xx_x_x_x_x_x_x_x_x_x_'Xx'_x_x_x_x.x.x.
+Submissions can submissions S Su Sub Subm BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 10 @. 2 5 0 0 0 0 1 submissions_can_also_be_mailed_to_orthocomplications@gmail.com Xx_x_x_x_x_x_x@x.x
+JOC will joc J JO JOC JOC BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 10 :,,( 4 10 0 0 0 0 1 joc_will_accept_following_formats_of_articles:_case_reports,_original_article_on_complications,_complication_bank_cases_(as X_x_x_x_x_x_x:_Xx_Xx,_Xx_x_x_x,_Xx_Xx_Xx_(x
+above), Case above), a ab abo abov BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 10 ),,/,, 6 9 0 0 0 0 1 above),_case_image,_technical_note_on_treatment_of_a_complex/complicated_case,_video_technique,_surgical_tips_on_avoiding x),_Xx_Xx,_Xx_Xx_x_x_x_x_x/x_x,_Xx_Xx,_Xx_Xx_x_x
+/ treating / / / / / BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 11 10 /,/,,, 6 9 0 0 0 0 1 /_treating_complications,_case_study_/series,_case_approach,_letter_to_editor,_letter_to_experts_and_expert_opinion /_x_x,_Xx_Xx_/Xx,_Xx_Xx,_Xx_x_Xx,_Xx_x_Xx_x_Xx_Xx
+Visit Visit visit V Vi Vis Visi BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 0 0 1 0 0 1 visit Xx
+for more for f fo for for BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 . 1 10 0 1 0 0 1 for_more_information_about_the_format_and_submission_process. x_x_x_x_x_x_x_x_x.
+www.orthocomplications.com www.orthocomplications.com www.orthocomplications.com w ww www www. BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 11 .. 2 10 0 1 0 0 1 www.orthocomplications.com x.x.x
 
