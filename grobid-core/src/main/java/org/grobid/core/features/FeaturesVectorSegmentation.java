@@ -236,6 +236,12 @@ public class FeaturesVectorSegmentation {
             res.append(" 0");
         }
 
+        // the whole line as one value, with its words (1)
+        res.append(" " + FeatureFactory.lineShadow(line));
+
+        // the whole line as one value, as a word shape (1)
+        res.append(" " + FeatureFactory.lineShape(line));
+
         // space with previous block, discretised (1)
         //res.append(" " + spacingWithPreviousBlock);
         //res.append(" " + 0);
