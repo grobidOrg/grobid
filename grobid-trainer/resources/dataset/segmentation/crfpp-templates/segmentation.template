@@ -193,15 +193,25 @@ UJ2:%x[0,32]
 UJ3:%x[1,32]
 UJ3:%x[1,32]
 
-# discretize space with previous block (1)
-#UK1:%x[-1,33]
-#UK2:%x[0,33]
-#UK3:%x[1,33]
+# the whole line as one value, with its words (33)
+UK1:%x[-1,33]
+UK2:%x[0,33]
+UK3:%x[1,33]
 
-# character density of the previous block, discretised (1)
-#UL1:%x[-1,34]
-#UL2:%x[0,34]
-#UL3:%x[1,34]
+# the whole line as one value, as a word shape (34)
+UL1:%x[-1,34]
+UL2:%x[0,34]
+UL3:%x[1,34]
+
+# discretize space with previous block (35)
+#UM1:%x[-1,35]
+#UM2:%x[0,35]
+#UM3:%x[1,35]
+
+# character density of the previous block, discretised (36)
+#UN1:%x[-1,36]
+#UN2:%x[0,36]
+#UN3:%x[1,36]
 
 # Output
 B

@@ -18,10 +18,12 @@ package org.grobid.core.features;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 import java.util.regex.Pattern;
 
 import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.utilities.OffsetPosition;
+import org.grobid.core.utilities.TextUtilities;
 
 /**
  * Class providing a toolkit for managing and creating features or string sequence tagging problems.
@@ -382,5 +384,48 @@ public class FeatureFactory {
         String pattern = text.replaceAll("[^a-zA-Z]", "").toLowerCase();
         //pattern = pattern.replaceAll("[0-9]", "X");
         return pattern;
+    }
+
+    private static final Pattern LINE_WHITESPACE = Pattern.compile("\\s+", Pattern.UNICODE_CHARACTER_CLASS);
+
+    /**
+     * The whole line as one feature value keeping its words: lower-cased, every digit shadowed
+     * by X and every run of whitespace replaced by a single underscore, so that the value holds
+     * no separator (it stands in one column of a CRF line). The lines of the furniture of a
+     * document (licence statements, section headings, "Table 1", "References") repeat across
+     * documents with the same wording and are recognised as a whole.
+     *
+     * @param line the complete line
+     * @return the feature value, NOLINE when the line is null or blank
+     */
+    public static String lineShadow(String line) {
+        String value = lineValue(line);
+        if (value == null)
+            return "NOLINE";
+        return TextUtilities.shadowNumbers(value.toLowerCase(Locale.ROOT));
+    }
+
+    /**
+     * The whole line as one feature value keeping its layout, not its words: the word shape of
+     * the line (see {@link TextUtilities#wordShapeTrimmed(String)}), with every run of whitespace
+     * replaced by a single underscore. An author line, an affiliation line, a reference, a date
+     * line, a numbered heading or a line of prose each get a signature of their own, whatever
+     * their language and content.
+     *
+     * @param line the complete line
+     * @return the feature value, NOLINE when the line is null or blank
+     */
+    public static String lineShape(String line) {
+        String value = lineValue(line);
+        if (value == null)
+            return "NOLINE";
+        return TextUtilities.wordShapeTrimmed(value);
+    }
+
+    private static String lineValue(String line) {
+        if (line == null)
+            return null;
+        String value = LINE_WHITESPACE.matcher(line.strip()).replaceAll("_");
+        return value.isEmpty() ? null : value;
     }
 }
