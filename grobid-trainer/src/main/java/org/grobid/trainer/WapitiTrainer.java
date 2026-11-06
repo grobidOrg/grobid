@@ -57,8 +57,12 @@ public class WapitiTrainer implements GenericTrainer {
             incrementalBlock += " -m " + inputModelPath;
         }
 
+        // --compact drops from the saved model the observations that no non-zero weight refers to:
+        // the model labels exactly the same, loads faster and is much smaller (the observation
+        // strings are the bulk of an uncompacted model), see the Wapiti manual
         WapitiModel.train(template, trainingData, outputModel, "--nthread " + numThreads +
         //       		" --algo sgd-l1" +
+                " --compact" +
                 " -e "
                 + BigDecimal.valueOf(epsilon).toPlainString()
                 +
