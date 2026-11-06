@@ -62,7 +62,8 @@ public class WapitiTrainer implements GenericTrainer {
         // strings are the bulk of an uncompacted model), see the Wapiti manual
         WapitiModel.train(template, trainingData, outputModel, "--nthread " + numThreads +
         //       		" --algo sgd-l1" +
-                " --compact" +
+                " --compact"
+                +
                 " -e "
                 + BigDecimal.valueOf(epsilon).toPlainString()
                 +
