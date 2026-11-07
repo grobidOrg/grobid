@@ -253,11 +253,9 @@ public class HeaderParser extends AbstractParser {
                                         config);
                         authorBlocks.add(localAuthors != null ? localAuthors : new ArrayList<>());
                     }
-                    // keep the author list, drop later re-mentions and name lists placed after
-                    // the abstract (contacts, contributions, funding tables...)
-                    for (Person pers : AuthorBlockFilter.filter(
-                            authorBlocks,
-                            authorBlocksAfterAbstract(headerClusters))) {
+                    // keep the author list, drop later blocks that re-mention it (contacts,
+                    // contributions, ORCID lists...)
+                    for (Person pers : AuthorBlockFilter.filter(authorBlocks)) {
                         resHeader.addFullAuthor(pers);
                     }
                 }
@@ -895,30 +893,6 @@ public class HeaderParser extends AbstractParser {
     public BiblioItem resultExtraction(String result, List<LayoutToken> tokenizations, BiblioItem biblio) {
         TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.HEADER, result, tokenizations);
         return resultExtraction(result, tokenizations, biblio, clusteror.cluster());
-    }
-
-    /**
-     * For each author cluster (one author block each, see {@link #resultExtraction}), whether an
-     * abstract cluster precedes it. Null when the clusters are not available.
-     */
-    static List<Boolean> authorBlocksAfterAbstract(List<TaggingTokenCluster> clusters) {
-        if (clusters == null) {
-            return null;
-        }
-        List<Boolean> afterAbstract = new ArrayList<>();
-        boolean abstractSeen = false;
-        for (TaggingTokenCluster cluster : clusters) {
-            if (cluster == null) {
-                continue;
-            }
-            TaggingLabel label = cluster.getTaggingLabel();
-            if (label.equals(TaggingLabels.HEADER_ABSTRACT)) {
-                abstractSeen = true;
-            } else if (label.equals(TaggingLabels.HEADER_AUTHOR) && !cluster.concatTokens().isEmpty()) {
-                afterAbstract.add(abstractSeen);
-            }
-        }
-        return afterAbstract;
     }
 
     /**

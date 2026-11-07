@@ -30,27 +30,22 @@ public class AuthorBlockFilterTest {
 
     @Test
     public void testSingleBlockKept() {
-        List<Person> result = AuthorBlockFilter.filter(
-                blocks(block("Kerstin Seidel", "Pauline Marangoni")),
-                Arrays.asList(false));
+        List<Person> result = AuthorBlockFilter.filter(blocks(block("Kerstin Seidel", "Pauline Marangoni")));
 
         assertThat(surnames(result), contains("Seidel", "Marangoni"));
     }
 
     @Test
     public void testSameSurnameCoAuthorsInFirstBlockKept() {
-        List<Person> result = AuthorBlockFilter.filter(
-                blocks(block("Ji Young Lee", "Ji Youl Lee", "Hye Seung Lee")),
-                null);
+        List<Person> result = AuthorBlockFilter.filter(blocks(block("Ji Young Lee", "Ji Youl Lee", "Hye Seung Lee")));
 
         assertThat(surnames(result), contains("Lee", "Lee", "Lee"));
     }
 
     @Test
     public void testReMentionBlockDropped() {
-        List<Person> result = AuthorBlockFilter.filter(
-                blocks(block("Shaun Jackman", "Inanc Birol"), block("Inanc Birol")),
-                Arrays.asList(false, false));
+        List<Person> result = AuthorBlockFilter
+                .filter(blocks(block("Shaun Jackman", "Inanc Birol"), block("Inanc Birol")));
 
         assertThat(surnames(result), contains("Jackman", "Birol"));
     }
@@ -58,56 +53,26 @@ public class AuthorBlockFilterTest {
     @Test
     public void testReMentionBlockDroppedWithItsFragments() {
         // "Author ORCIDs Pauline Marangoni" parsed as "Pauline [Orcids]" + "[Marangoni]"
-        List<Person> result = AuthorBlockFilter.filter(
-                blocks(block("Kerstin Seidel", "Pauline Marangoni"), block("Pauline Orcids", "_ Marangoni")),
-                null);
+        List<Person> result = AuthorBlockFilter
+                .filter(blocks(block("Kerstin Seidel", "Pauline Marangoni"), block("Pauline Orcids", "_ Marangoni")));
 
         assertThat(surnames(result), contains("Seidel", "Marangoni"));
     }
 
     @Test
-    public void testNewNamesBeforeAbstractKept() {
+    public void testNewNamesInLaterBlockKept() {
         // author list split over two blocks, e.g. by interleaved affiliations
-        List<Person> result = AuthorBlockFilter.filter(
-                blocks(block("Kerstin Seidel"), block("Pauline Marangoni", "Cynthia Tang")),
-                Arrays.asList(false, false));
+        List<Person> result = AuthorBlockFilter
+                .filter(blocks(block("Kerstin Seidel"), block("Pauline Marangoni", "Cynthia Tang")));
 
         assertThat(surnames(result), contains("Seidel", "Marangoni", "Tang"));
     }
 
     @Test
-    public void testBlockAfterAbstractDroppedWhenListBeforeAbstract() {
-        List<Person> result = AuthorBlockFilter.filter(
-                blocks(block("Brent Nannenga", "Tamir Gonen"), block("Howard Hughes")),
-                Arrays.asList(false, true));
-
-        assertThat(surnames(result), contains("Nannenga", "Gonen"));
-    }
-
-    @Test
-    public void testOnlyAuthorBlockAfterAbstractKept() {
-        List<Person> result = AuthorBlockFilter.filter(
-                blocks(block("Brent Nannenga", "Tamir Gonen")),
-                Arrays.asList(true));
-
-        assertThat(surnames(result), contains("Nannenga", "Gonen"));
-    }
-
-    @Test
-    public void testPositionsIgnoredWhenSizesDiffer() {
-        List<Person> result = AuthorBlockFilter.filter(
-                blocks(block("Brent Nannenga", "Tamir Gonen"), block("Howard Hughes")),
-                Arrays.asList(false));
-
-        assertThat(surnames(result), contains("Nannenga", "Gonen", "Hughes"));
-    }
-
-    @Test
     public void testReMentionWithDamagedNamesDropped() {
         // re-mention with a stray marker and a missing forename still counts as already listed
-        List<Person> result = AuthorBlockFilter.filter(
-                blocks(block("Carina Jagers", "Henk Roelink"), block("Carina Jagers1", "_ Roelink")),
-                Arrays.asList(false, false));
+        List<Person> result = AuthorBlockFilter
+                .filter(blocks(block("Carina Jagers", "Henk Roelink"), block("Carina Jagers1", "_ Roelink")));
 
         assertThat(surnames(result), contains("Jagers", "Roelink"));
     }
