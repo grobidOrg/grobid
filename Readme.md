@@ -159,7 +159,9 @@ JetBrains provided us with a free licence for the development:
 
 ## How to cite
 
-If you want reference this software, please refer to the present GitHub project, together with the [Software Heritage](https://www.softwareheritage.org/) project-level permanent identifier.
+If you want reference this software, please refer to the present GitHub project, together with its [Software Heritage](https://www.softwareheritage.org/) permanent identifier.
+
+Machine-readable citation metadata are available in [`CITATION.cff`](CITATION.cff) (used by GitHub's "Cite this repository" button) and [`codemeta.json`](codemeta.json) ([CodeMeta](https://codemeta.github.io/), used by Software Heritage).
 
 For example, the BibTeX would look like this:
 

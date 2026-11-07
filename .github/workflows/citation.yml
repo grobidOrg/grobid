@@ -1,0 +1,63 @@
+name: Citation metadata
+
+# CITATION.cff is the hand-maintained source of truth; codemeta.json is generated
+# from it with cffconvert and must never be edited by hand.
+#
+# To regenerate after editing CITATION.cff:
+#   pip install cffconvert==2.0.0
+#   cffconvert -i CITATION.cff -f codemeta -o codemeta.json
+
+on:
+  push:
+    branches: [master]
+    tags: ['*']
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  citation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install cffconvert
+        run: pip install cffconvert==2.0.0
+
+      - name: Validate CITATION.cff
+        run: cffconvert --validate -i CITATION.cff
+
+      - name: Check codemeta.json is in sync with CITATION.cff
+        run: |
+          cffconvert -i CITATION.cff -f codemeta -o "$RUNNER_TEMP/codemeta.json"
+          if ! diff -u codemeta.json "$RUNNER_TEMP/codemeta.json"; then
+            echo "::error file=codemeta.json::codemeta.json is out of sync with CITATION.cff. Regenerate it with: cffconvert -i CITATION.cff -f codemeta -o codemeta.json"
+            exit 1
+          fi
+
+      # On a release tag, and on the PR that brings a release branch back to
+      # master, the version in CITATION.cff must match the release version.
+      - name: Check CITATION.cff version matches the release
+        if: github.ref_type == 'tag' || contains(github.head_ref, 'release')
+        run: |
+          if [ "${{ github.ref_type }}" = "tag" ]; then
+            expected="${GITHUB_REF_NAME#v}"
+          else
+            expected="$(git describe --tags --abbrev=0 --match '[0-9]*' HEAD)"
+            expected="${expected#v}"
+          fi
+          actual="$(sed -n 's/^version:[[:space:]]*"\{0,1\}\([^"]*\)"\{0,1\}[[:space:]]*$/\1/p' CITATION.cff)"
+          echo "CITATION.cff version: '$actual', release version: '$expected'"
+          if [ "$actual" != "$expected" ]; then
+            echo "::error file=CITATION.cff::CITATION.cff has version '$actual' but the release is '$expected'. Update version and date-released, then regenerate codemeta.json."
+            exit 1
+          fi
