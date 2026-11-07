@@ -65,6 +65,10 @@ RUN if [ "$TARGETARCH" = "arm64" ]; then \
 RUN rm grobid-home/config/grobid.yaml && \
     mv grobid-home/config/grobid-full.yaml grobid-home/config/grobid.yaml
 
+# the Wapiti models are kept uncompacted in the repository: compact them for the image
+# (same labels, the observations that no non-zero weight refers to are dropped)
+RUN ./gradlew :grobid-trainer:compactModels --no-daemon --stacktrace
+
 RUN ./gradlew clean assemble --no-daemon --info --stacktrace
 
 WORKDIR /opt/grobid
