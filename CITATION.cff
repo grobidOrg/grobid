@@ -15,8 +15,8 @@ authors:
 repository-code: "https://github.com/grobidOrg/grobid"
 url: "https://grobid.readthedocs.io"
 license: Apache-2.0
-version: 0.9.0
-date-released: 2008-01-01
+version: 0.9.1
+date-released: 2026-08-04
 keywords:
   - "PDF processing"
   - "machine learning"
@@ -30,16 +30,17 @@ keywords:
   - "scientific literature"
 identifiers:
   - type: swh
-    value: "swh:1:dir:5ab2351eb7e97b99b3dc8854dac05edc6099a4c5"
-    description: "Software Heritage identifier"
+    value: "swh:1:rel:fe833002c929cd18f2de686a478bb0cd0af9536d"
+    description: "Software Heritage identifier of the 0.9.1 release"
 preferred-citation:
   type: generic
   title: "GROBID"
   authors:
     - name: "GROBID contributors"
   url: "https://github.com/grobidOrg/grobid"
-  publisher: "GitHub"
-  date: "2008/"
+  publisher:
+    name: "GitHub"
+  year: 2008
   identifiers:
     - type: swh
       value: "swh:1:dir:dab86b296e3c3216e2241968f0d63b68e8209d3c"

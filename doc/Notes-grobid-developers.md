@@ -74,7 +74,7 @@ Do not edit these by hand at release time:
 
 The Gradle Release plugin only touches `gradle.properties`. Everything below has to be edited manually and merged to `master` **before** the release commit, so the changes land in the pre-tag commit:
 
-- `CITATION.cff` — set `version: <X.Y.Z>`.
+- `CITATION.cff` — set `version: <X.Y.Z>`, `date-released: <YYYY-MM-DD>` (the release date), and the Software Heritage `swh:1:rel:` identifier of the previous release if it is already archived. Then regenerate `codemeta.json` (never edit it by hand) with `pip install cffconvert==2.0.0 && cffconvert -i CITATION.cff -f codemeta -o codemeta.json` and commit both files. The `Citation metadata` workflow fails if `codemeta.json` is out of sync, or if the version in `CITATION.cff` does not match the release tag.
 - `doc/Install-Grobid.md` — update the stable version references and the "current development version" line.
 - `doc/Grobid-service.md` — update build/install snippets.
 - `doc/Grobid-batch.md` — update CLI examples (about 14 references).
