@@ -151,8 +151,6 @@ For each release, dispatch the following workflows from the `<X.Y.Z>` tag:
 
 3. *(Optional)* **ONNX image** — `.github/workflows/ci-build-manual-onnx.yml` with `custom_tag=<X.Y.Z>-onnx`.
 
-4. *(Optional)* **Evaluation image** — `.github/workflows/ci-build-manual-eval.yml` with `custom_tag=<X.Y.Z>`. Pushes `lfoppiano/grobid-evaluation`.
-
 Once the images are verified under `lfoppiano/grobid`, **promote them to the `grobid/grobid` org namespace** using `.github/workflows/ci-build-tag-custom.yml`:
 
 - Dispatch with `source_image=lfoppiano/grobid`, `source_tag=<X.Y.Z>-crf`, `target_image=grobid/grobid`, `target_tag=<X.Y.Z>-crf`.
