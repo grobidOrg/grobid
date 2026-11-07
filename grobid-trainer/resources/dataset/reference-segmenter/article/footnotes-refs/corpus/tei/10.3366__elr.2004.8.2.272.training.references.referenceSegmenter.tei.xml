@@ -95,8 +95,8 @@
 </teiHeader>
   <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
     <listBibl>
-      <bibl><label>1</label> See generally, R Campbell, The Law and Practice of Citation and Diligence (1862) 31 et seq; AE J G<lb/> Mackay, Manual of Practice in the Court of Session (1877) 398 et seq; </bibl>
-      <bibl>AE J G Mackay, Manual of Court of<lb/> Session Practice (1893) 200; </bibl>
+      <bibl><label>1</label> See generally, R Campbell, The Law and Practice of Citation and Diligence (1862) 31 et seq; Æ J G<lb/> Mackay, Manual of Practice in the Court of Session (1877) 398 et seq; </bibl>
+      <bibl>Æ J G Mackay, Manual of Court of<lb/> Session Practice (1893) 200; </bibl>
       <bibl>J Graham Stewart, Treatise on the Law of Diligence (1898) 319; </bibl>
       <bibl>J Chisholm<lb/> (ed), Green's Encyclopaedia of the Law of Scotland, 2nd edn (1910) vol 5, 58; Lord Dunedin et al (eds),<lb/> Encyclopaedia of the Law of Scotland (1928) vol 3, para 897 and vol 5, para 57; </bibl>
       <bibl>J A Maclaren, Court of<lb/> Session Practice (1916) 334 et seq; Anon, "Some notes on edictal citations" (1945) 61 Scottish Law<lb/> Review 37; D Maxwell, The Practice of the Court of Session (1980) 180.<lb/> </bibl>
@@ -122,7 +122,6 @@
       <bibl><label>13</label> This seems to be the only instance where a court officer was required for intimation of an assignation. Cf<lb/> the position in France: Code civil Art 1690 and Nouveau code de procédure civile Arts 651 et seq.<lb/> </bibl>
       <bibl><label>14</label> This was an essential element: Gordon v Forbes (1681) Mor 3768; </bibl>
       <bibl>Preston v Sir John Clark (1715) Mor<lb/> 3769.<lb/> </bibl>
-      <bibl type="footnote"><label>15</label> Issued by the court, for which see below.<lb/> </bibl>
       <bibl><label>16</label> Quite how this worked in detail is obscure. Failure to read at the Market Cross was fatal (Christie v Jack<lb/> (1631) Mor 3712; </bibl>
       <bibl>Ewing v Rochead (1681) Mor 3803) as was a failure to read at the Pier and Shore<lb/> (Stewart v Achanay (1626) Mor 3803).<lb/> </bibl>
       <bibl><label>17</label> Stair, Institutions, 4.38.16. </bibl>
@@ -167,7 +166,6 @@
       <bibl>See also J Thomson, "Limiting<lb/> Smith" 2003 SLG 158.<lb/> </bibl>
       <bibl><label>2</label> S Eden, "Cautionary tales -the continued development of Smith v Bank of Scotland" (2003) 7 EdinLR 107.<lb/> </bibl>
 
-      <bibl type="footnote"><label>3</label> There were in fact two actions against each of two Wilson brothers and their respective wives. One loan<lb/> was for the purchase of a home, the other for the construction of a conservatory. The facts are sufficiently<lb/> similar to raise identical issues, although there are two Mrs Wilsons.</bibl>
     </listBibl>
   </text>
 </TEI>

@@ -147,4 +147,38 @@ public class TEIReferenceSegmenterSaxParserTest {
                         is("1 I-<label>"),
                         is("RealRefToken I-<reference>")));
     }
+
+    /**
+     * A <bibl type="footnote"> is a footnote without references (commentary only). The
+     * whole element, footnote number included, must be a single <other> segment so the
+     * model learns to skip it, and it must not count as a reference. The surrounding
+     * references keep their usual labels.
+     */
+    @Test
+    public void footnoteBibl_isLabelledOther() throws Exception {
+        String tei = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+                + "<TEI xmlns=\"http://www.tei-c.org/ns/1.0\"><text><listBibl>"
+                + "<bibl><label>1</label> Before ref.<lb/> </bibl>"
+                + "<bibl type=\"footnote\"><label>2</label> Commentary only<lb/> here.</bibl>"
+                + "<bibl><label>3</label> After ref.</bibl>"
+                + "</listBibl></text></TEI>";
+
+        List<String> labeled = parse(tei);
+
+        assertThat(target.getTotalReferences(), is(2));
+        int start = labeled.indexOf("2 I-<other>");
+        assertThat(start >= 0, is(true));
+        assertThat(
+                labeled.subList(start, start + 4),
+                is(List.of("2 I-<other>", "Commentary <other>", "only <other>", "here <other>")));
+        assertThat(labeled.get(start + 4), is(". <other>"));
+        assertThat(
+                labeled,
+                hasItems(
+                        is("1 I-<label>"),
+                        is("Before I-<reference>"),
+                        is("3 I-<label>"),
+                        is("After I-<reference>")));
+        assertThat(labeled, everyItem(not(containsString("Commentary <reference>"))));
+    }
 }
