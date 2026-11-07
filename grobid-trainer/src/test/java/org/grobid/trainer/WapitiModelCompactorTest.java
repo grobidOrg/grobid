@@ -77,7 +77,7 @@ public class WapitiModelCompactorTest {
 
     @Test
     public void testCompact_dropsUnusedObservationsAndRenumbersFeatures() throws Exception {
-        File input = write("model.extended.wapiti", MODEL);
+        File input = write("full.wapiti", MODEL);
         File output = new File(folder.getRoot(), "model.wapiti");
 
         WapitiModelCompactor.compact(input, output);
@@ -89,7 +89,7 @@ public class WapitiModelCompactorTest {
 
     @Test
     public void testCompact_alreadyCompactedModel_isUnchanged() throws Exception {
-        File input = write("model.extended.wapiti", COMPACTED);
+        File input = write("full.wapiti", COMPACTED);
         File output = new File(folder.getRoot(), "model.wapiti");
 
         WapitiModelCompactor.compact(input, output);
@@ -99,7 +99,7 @@ public class WapitiModelCompactorTest {
 
     @Test
     public void testCompact_featureOutOfRange_shouldFail() throws Exception {
-        File input = write("model.extended.wapiti", MODEL + "16=0x1p+0\n");
+        File input = write("full.wapiti", MODEL + "16=0x1p+0\n");
         File output = new File(folder.getRoot(), "model.wapiti");
 
         assertThrows(GrobidException.class, () -> WapitiModelCompactor.compact(input, output));
@@ -108,7 +108,7 @@ public class WapitiModelCompactorTest {
 
     @Test
     public void testCompact_truncatedModel_shouldFail() throws Exception {
-        File input = write("model.extended.wapiti", "#mdl#2#3\n#rdr#1/1/0\n11:u00:%x[0,0],\n#qrk#2\n1:A,\n");
+        File input = write("full.wapiti", "#mdl#2#3\n#rdr#1/1/0\n11:u00:%x[0,0],\n#qrk#2\n1:A,\n");
         File output = new File(folder.getRoot(), "model.wapiti");
 
         assertThrows(GrobidException.class, () -> WapitiModelCompactor.compact(input, output));
@@ -116,18 +116,35 @@ public class WapitiModelCompactorTest {
     }
 
     @Test
-    public void testExtendedModelPath() {
-        assertThat(
-                WapitiModelCompactor.extendedModelPath(new File("/models/header/model.wapiti.new")).getPath(),
-                is("/models/header/model.extended.wapiti"));
-        assertThat(
-                WapitiModelCompactor.extendedModelPath(new File("/models/header/model.wapiti")).getPath(),
-                is("/models/header/model.extended.wapiti"));
-        assertThat(
-                WapitiModelCompactor.extendedModelPath(new File("/tmp/header_nfold_0_abc.wapiti")).getPath(),
-                is("/tmp/header_nfold_0_abc.extended.wapiti"));
-        assertThat(
-                WapitiModelCompactor.extendedModelPath(new File("/tmp/custom-model")).getPath(),
-                is("/tmp/custom-model.extended"));
+    public void testCompact_inPlace() throws Exception {
+        File model = write("model.wapiti", MODEL);
+
+        WapitiModelCompactor.compact(model, model);
+
+        assertThat(read(model), is(COMPACTED));
+    }
+
+    @Test
+    public void testMain_compactsEveryModelUnderTheDirectories() throws Exception {
+        File header = new File(folder.getRoot(), "models/header");
+        File date = new File(folder.getRoot(), "models/date");
+        header.mkdirs();
+        date.mkdirs();
+        Files.write(new File(header, "model.wapiti").toPath(), MODEL.getBytes(StandardCharsets.UTF_8));
+        Files.write(new File(date, "model.wapiti").toPath(), MODEL.getBytes(StandardCharsets.UTF_8));
+        Files.write(new File(date, "other.wapiti").toPath(), MODEL.getBytes(StandardCharsets.UTF_8));
+
+        WapitiModelCompactor.main(new String[]{new File(folder.getRoot(), "models").getPath()});
+
+        assertThat(read(new File(header, "model.wapiti")), is(COMPACTED));
+        assertThat(read(new File(date, "model.wapiti")), is(COMPACTED));
+        assertThat(read(new File(date, "other.wapiti")), is(MODEL));
+    }
+
+    @Test
+    public void testMain_noModelFound_shouldFail() throws Exception {
+        File empty = folder.newFolder("empty");
+
+        assertThrows(GrobidException.class, () -> WapitiModelCompactor.main(new String[]{empty.getPath()}));
     }
 }

@@ -23,15 +23,21 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.BitSet;
+import java.util.List;
+import java.util.stream.Stream;
 
 import org.grobid.core.exceptions.GrobidException;
 
 /**
  * Removes from a Wapiti model the observations that no feature with a non-zero weight refers to,
- * the equivalent of Wapiti's --compact option applied to an already saved model.
+ * the equivalent of Wapiti's --compact option applied to an already saved model. The input and the
+ * output can be the same file.
  *
  * The compacted model labels exactly the same as the original one (the dropped observations never
  * contribute to a score), loads faster and is much smaller, the observation strings being the bulk
@@ -46,29 +52,41 @@ import org.grobid.core.exceptions.GrobidException;
  */
 public class WapitiModelCompactor {
 
-    public static final String EXTENDED_MODEL_SUFFIX = ".extended";
-    private static final String WAPITI_EXTENSION = ".wapiti";
+    private static final String MODEL_FILE_NAME = "model.wapiti";
 
     private WapitiModelCompactor() {
     }
 
     /**
-     * Path of the extended (not compacted) model kept next to the compacted one: model.wapiti gives
-     * model.extended.wapiti. A trailing .new, used while training the default model, is dropped first.
+     * Compact in place the given Wapiti model files, and every model.wapiti found under the given
+     * directories. Used when building the Docker images: the models are kept uncompacted in the
+     * repository. Fails if no model is found.
      */
-    public static File extendedModelPath(File model) {
-        String path = model.getAbsolutePath();
-        if (path.endsWith(AbstractTrainer.NEW_MODEL_EXT)) {
-            path = path.substring(0, path.length() - AbstractTrainer.NEW_MODEL_EXT.length());
+    public static void main(String[] args) throws IOException {
+        if (args.length == 0) {
+            throw new IllegalArgumentException("Usage: WapitiModelCompactor <model file or directory>...");
         }
-        if (path.endsWith(WAPITI_EXTENSION)) {
-            path = path.substring(0, path.length() - WAPITI_EXTENSION.length())
-                    + EXTENDED_MODEL_SUFFIX
-                    + WAPITI_EXTENSION;
-        } else {
-            path += EXTENDED_MODEL_SUFFIX;
+        List<Path> models = new ArrayList<>();
+        for (String arg : args) {
+            Path path = Paths.get(arg);
+            if (Files.isDirectory(path)) {
+                try (Stream<Path> paths = Files.walk(path)) {
+                    paths.filter(p -> Files.isRegularFile(p) && p.getFileName().toString().equals(MODEL_FILE_NAME))
+                            .sorted()
+                            .forEach(models::add);
+                }
+            } else if (Files.isRegularFile(path)) {
+                models.add(path);
+            } else {
+                throw new GrobidException("No such Wapiti model or directory: " + path.toAbsolutePath());
+            }
         }
-        return new File(path);
+        if (models.isEmpty()) {
+            throw new GrobidException("No " + MODEL_FILE_NAME + " found under " + String.join(", ", args));
+        }
+        for (Path model : models) {
+            compact(model.toFile(), model.toFile());
+        }
     }
 
     /**

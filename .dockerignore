@@ -79,6 +79,3 @@ grobid-home/models/dataset
 grobid-home/models/*bert/
 grobid-home/models/*BERT*/
 grobid-home/models/*scibert*/
-
-# Wapiti models saved before compaction, kept locally next to the compacted model.wapiti
-grobid-home/models/**/model.extended.wapiti

@@ -311,9 +311,6 @@ public abstract class AbstractTrainer implements Trainer {
 
             // Collecting generated paths to be deleted at the end of the process
             tempFilePaths.add(tempModelPath.getAbsolutePath());
-            if (trainer instanceof WapitiTrainer) {
-                tempFilePaths.add(WapitiModelCompactor.extendedModelPath(tempModelPath).getAbsolutePath());
-            }
             tempFilePaths.add(fold.getLeft());
             tempFilePaths.add(fold.getRight());
 
