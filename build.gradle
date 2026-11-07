@@ -725,6 +725,17 @@ project(":grobid-trainer") {
         }
     }
 
+    // Compact in place every grobid-home/models/**/model.wapiti: drops the observations that no
+    // non-zero weight refers to (same labels, much smaller models). The models are kept uncompacted
+    // in the repository; this is run when building the Docker images. Pass -PmodelsPath=... to
+    // compact the models of another directory.
+    task(compactModels, dependsOn: 'classes', type: JavaExec, group: 'modeltraining') {
+        mainClass = 'org.grobid.trainer.WapitiModelCompactor'
+        classpath = sourceSets.main.runtimeClasspath
+        args project.hasProperty('modelsPath') ? project.getProperty('modelsPath') : "${rootProject.rootDir}/grobid-home/models"
+        jvmArgs '-Xmx1024m'
+    }
+
     // evaluation tasks
     ext.getArg = { propName, defaultVal ->
         return project.hasProperty(propName) ? project.getProperty(propName) : defaultVal;

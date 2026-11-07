@@ -62,6 +62,10 @@ RUN if [ "$TARGETARCH" = "arm64" ]; then \
 # cleaning Delft models
 RUN rm -rf grobid-home/models/*-BidLSTM_*
 
+# the Wapiti models are kept uncompacted in the repository: compact them for the image
+# (same labels, the observations that no non-zero weight refers to are dropped)
+RUN ./gradlew :grobid-trainer:compactModels --no-daemon --stacktrace
+
 RUN ./gradlew assemble --no-daemon --info --stacktrace
 
 WORKDIR /opt/grobid
