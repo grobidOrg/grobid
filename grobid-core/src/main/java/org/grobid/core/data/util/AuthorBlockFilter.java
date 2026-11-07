@@ -31,11 +31,16 @@ import org.grobid.core.data.Person;
  * <p>The HEADER model labels every name list it sees as {@code <author>}, so besides the author
  * list a header can carry later mentions of the same people (contact or correspondence lines,
  * contribution statements, ORCID lists, funding tables) and of other people (funders, editors).
- * Each {@code <author>} cluster is parsed as a separate block. The first block yielding persons is
- * always kept; a later block is a re-mention when at least half of its persons are already in the
- * list (see {@link Person#isSamePerson(Person, Person)}), and is then dropped entirely, together
- * with the name fragments it contains. The rule looks only at the blocks themselves, never at their
- * wording or position.</p>
+ * Each {@code <author>} cluster is parsed as a separate block. Two structural rules decide which
+ * blocks contribute authors; they look only at the blocks themselves, never at their wording:</p>
+ * <ol>
+ * <li>the first block yielding persons is always kept; a later block is a re-mention when at least
+ * half of its persons are already in the list (see {@link Person#isSamePerson(Person, Person)}),
+ * and is then dropped entirely, together with the name fragments it contains;</li>
+ * <li>when the author list starts before the abstract, blocks placed after the abstract are not
+ * part of it and are dropped. Headers whose only author block follows the abstract are not
+ * affected.</li>
+ * </ol>
  * <p>Remaining exact duplicates are handled afterwards by {@link Person#deduplicate(List)}.</p>
  */
 public class AuthorBlockFilter {
@@ -43,13 +48,32 @@ public class AuthorBlockFilter {
     private static final Logger LOGGER = LoggerFactory.getLogger(AuthorBlockFilter.class);
 
     /**
-     * @param blocks persons of each author block, in document order
+     * @param blocks        persons of each author block, in document order
+     * @param afterAbstract for each block, whether it is located after an abstract; null when the
+     *                      position is not known, in which case only the re-mention rule applies
      * @return the persons kept, in document order
      */
-    public static List<Person> filter(List<List<Person>> blocks) {
+    public static List<Person> filter(List<List<Person>> blocks, List<Boolean> afterAbstract) {
         List<Person> result = new ArrayList<>();
         if (CollectionUtils.isEmpty(blocks)) {
             return result;
+        }
+        if (afterAbstract != null && afterAbstract.size() != blocks.size()) {
+            LOGGER.warn(
+                    "{} author blocks but {} block positions, ignoring the positions",
+                    blocks.size(),
+                    afterAbstract.size());
+            afterAbstract = null;
+        }
+
+        boolean listBeforeAbstract = false;
+        if (afterAbstract != null) {
+            for (int k = 0; k < blocks.size(); k++) {
+                if (!afterAbstract.get(k) && hasNamedPerson(blocks.get(k))) {
+                    listBeforeAbstract = true;
+                    break;
+                }
+            }
         }
 
         for (int k = 0; k < blocks.size(); k++) {
@@ -59,6 +83,10 @@ public class AuthorBlockFilter {
             }
             if (!hasNamedPerson(result)) {
                 result.addAll(block);
+                continue;
+            }
+            if (listBeforeAbstract && afterAbstract.get(k)) {
+                LOGGER.debug("Author block {} dropped: after the abstract", k);
                 continue;
             }
             int named = 0;
