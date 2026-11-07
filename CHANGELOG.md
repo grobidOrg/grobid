@@ -9,9 +9,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 - Header `doi` field in the end-to-end evaluation of the full model. It is part of the header instance-level results, which are therefore not comparable with the benchmarks published before it was evaluated
 
-### Changed
-- Updated pdfalto to 0.6.3 plus kermitt2/pdfalto#258. An accent drawn as a separate glyph (TeX OT1 and many Type 1 subsets) no longer splits its word: "Müller" was tokenised as "M" + "üller" and "François" as "Franc" + "¸ois", garbling author names on 79 of 7,500 ICML, arXiv and bioRxiv papers. Accents with no precomposed character (a hat over a Greek letter, a bar over a math symbol) are kept instead of dropped, and subscripts after an accented math symbol are now separate tokens. Also brings kermitt2/pdfalto#241: line-number columns with sparse or accumulated numbering are recognised and removed, while footnote and reference numbers at the margin are kept. The command-line options GROBID passes are unchanged
-
 ## [0.9.1] - 2026-08-04
 
 ### Added
