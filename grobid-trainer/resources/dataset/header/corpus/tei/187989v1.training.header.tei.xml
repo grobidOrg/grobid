@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="_187989v1"/>
+	</teiHeader>
+	<text xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>Microcircuitry of Performance Monitoring<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Amirsaman Sajad, David C. Godlove &amp; Jeffrey D. Schall<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Department of Psychology, Vanderbilt Vision Research Center, Center for Integrative &amp;<lb/> Cognitive Neuroscience<lb/></affiliation>
+	</byline>
+
+	Corresponding author:<lb/>
+	<byline>
+	<docAuthor>Jeffrey D. Schall, Ph.D.<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Department of Psychology<lb/> PMB 407817<lb/> 2301 Vanderbilt Place<lb/> Vanderbilt University,</affiliation>
+	</byline>
+
+	<address>Nashville, TN 37240-7817<lb/></address>
+
+	E-mail:
+	<email>jeffrey.d.schall@vanderbilt.edu<lb/></email>
+
+	Pages:<lb/> Figures:<lb/> Tables:<lb/> Word Count:<lb/> Abstract:<lb/> Introduction:<lb/> Discussion:<lb/> Conflicts of interest: 
+	<note type="conflict">None<lb/></note>
+
+	Acknowledgments:
+	<note type="funding">This work was supported by R01-MH55806, P30-EY08126, and by Robin<lb/> and Richard Patton through the E. Bronson Ingram Chair in Neuroscience.</note>
+
+	We thank J. Easley<lb/> M. Feurtado, M. Maddox, P. Middlebrooks, S. Motorny, J. Parker, M. Schall, C.R. Subraveti, A.<lb/> Tomarken, and L. Toy for animal care and other technical assistance. We thank J. Brown, M.<lb/> Cox, K. Dougherty, S. Errington, A. Maier, V. Stuphorn, A. Tomarken, and J. Westerberg for<lb/> helpful discussions and comments on the manuscript. Abstract<lb/>
+	<div type="abstract">Cortical circuit mechanisms in medial frontal cortex enabling executive control are unknown.<lb/> Hence, in monkeys performing a saccade countermanding task to earn larger or smaller fluid<lb/> rewards, we sampled spiking and synaptic activity simultaneously across all layers of the<lb/> supplementary eye field (SEF), an agranular cortical area contributing to performance<lb/> monitoring in nonhuman primate and human studies. Laminar-specific synaptic currents with<lb/> associated spike rate facilitation and suppression represented error production, reward gain or<lb/> loss feedback, and reward delivery. The latency, polarity and magnitude of current and spike<lb/> rate modulation were not predicted by the canonical cortical microcircuit. Pronounced synaptic<lb/> currents in layer 2/3, which are modulated by loss magnitude, will contribute to the error-related<lb/> negativity (ERN) and feedback-related negativity (FRN). These unprecedented findings reveal<lb/> critical features of the cortical microcircuitry supporting performance monitoring and<lb/> demonstrate that SEF can contribute to the error-and feedback-related negativity.<lb/></div>
+
+	Subject terms:
+	<keyword>countermanding, stop signal task, goal selection, response inhibition, executive<lb/> control, canonical cortical microcircuit, error-related negativity, reinforcement learning, reward<lb/> prediction error</keyword>
+
+		</front>
+	</text>
+</tei>

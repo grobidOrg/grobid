@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="_838276v1"/>
+	</teiHeader>
+	<text xml:lang="en">
+		<front>
+
+	1<lb/>
+	<docTitle>
+	<titlePart>Subjective value then confidence in human ventromedial prefrontal cortex<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Allison D. Shapiro 1 * &amp; Scott T. Grafton 1<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>1 Department of Psychological and Brain Sciences, University of California,</affiliation>
+	</byline>
+
+	<address>Santa Barbara, CA 93106<lb/></address>
+
+	*Corresponding author<lb/> Email:
+	<email>shapiro.alli@gmail.com<lb/></email>
+
+	<note type="funding">This work supported by Grant W911NF-16-1-0474, Contract W911NF-09-0001 and Cooperative<lb/> Agreement W911NF-19-2-0026 with the Army Research Office of the Army Research<lb/> Laboratory.</note>
+
+	We thank Mario Mendoza, Gold Okafor, and Viktoriya Babenko for their assistance<lb/> with data collection as well as Neil Dundon, Michelle Marneweck, Tyler Santander, and Evan<lb/> Layher for helpful suggestions. Abstract<lb/>
+	<div type="abstract">Two fundamental goals of decision making are to select actions that maximize rewards<lb/> while minimizing costs and to have strong confidence in the accuracy of a judgment. Neural<lb/> signatures of these two forms of value: the subjective value (SV) of choice alternatives and the<lb/> value of the judgment (confidence), have both been observed in ventromedial prefrontal cortex<lb/> (vmPFC). However, the relationship between these dual value signals and their relative time<lb/> courses are unknown. We recorded fMRI while 28 men and women performed a two-phase Ap-<lb/>Av task with mixed-outcomes of monetary rewards paired with painful shock stimuli. Neural<lb/> responses were measured during offer valuation (offer phase) and choice valuation (commit phase)<lb/> and analyzed with respect to observed decision outcomes, model-estimated SV and confidence.<lb/> During the offer phase, vmPFC tracked SV and decision outcomes, but it not confidence. During<lb/> the commit phase, vmPFC tracked confidence, computed as the quadratic extension of SV, but it<lb/> bore no significant relationship with the offer valuation itself, nor the decision. In fact, vmPFC<lb/> responses from the commit phase were selective for confidence even for rejected offers, wherein<lb/> confidence and SV were inversely related. Conversely, activation of the cognitive control network,<lb/> including within lateral prefrontal cortex (lPFC) and dorsal anterior cingulate cortex (dACC) was<lb/> associated with ambivalence, during both the offer and commit phases. Taken together, our results<lb/> reveal complementary representations in vmPFC during value-based decision making that<lb/> temporally dissociate such that offer valuation (SV) emerges before decision valuation<lb/> (confidence).</div>
+
+		</front>
+	</text>
+</tei>

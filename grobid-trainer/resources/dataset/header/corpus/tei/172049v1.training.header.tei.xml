@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="_172049v1"/>
+	</teiHeader>
+	<text xml:lang="en">
+		<front>
+<lb/>
+	Confidence-dependent adaptation of sequential choice bias<lb/> Braun et al. 1<lb/>
+	<docTitle>
+	<titlePart>Confidence-dependent Accumulation of Past Decision Variables<lb/> Biases Perceptual Choice<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Anke Braun 1, * , Anne E. Urai 1,2 , Tobias H. Donner 1, 2, 3, *<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>1 Department of Neurophysiology and Pathophysiology, University Medical Center Hamburg-<lb/>Eppendorf,</affiliation>
+	</byline>
+
+	<address>20246 Hamburg, Germany.<lb/></address>
+
+	<byline>
+	<affiliation>2 Department of Psychology and<lb/> 3 Amsterdam Brain and<lb/> Cognition (ABC), University of Amsterdam,</affiliation>
+	</byline>
+
+	<address>1018 WS Amsterdam, The Netherlands<lb/></address>
+
+	*Correspondence:
+	<email>a.braun@uke.de, t.donner@uke.de<lb/></email>
+
+	Abbreviated title: Confidence-dependent adaptation of sequential choice bias<lb/> Number of pages: 28<lb/> Number of figures: 5<lb/> Number of tables: 0<lb/> Number of multimedia: 0<lb/> Number of 3D models: 0<lb/> Number of words for Abstract: 233<lb/> Number of words for Introduction: 498<lb/> Number of words for Discussion: 1479<lb/> Conflict of Interest: 
+	<note type="conflict">None<lb/></note>
+
+	Acknowledgements:<lb/>
+	We thank Ainhoa Hermoso, Alexandre Hyafil, Jaime de la Rocha, and Florent Meyniel for<lb/> comments on the manuscript. 
+	<note type="funding">This research was supported by the German Academic<lb/> Exchange Service (DAAD, to A.E.U.) and the German Research Foundation (DFG), SFB<lb/> 936/A7, SFB 936/Z1, DO 1240/2-1 and DO 1240/3-1 (to T.H.D.).<lb/></note>
+
+	Author contributions:<lb/> 
+	<note type="contribution">A.B., A.E.U. and T.H.D. designed research; A.B. performed research, A.B. analyzed data,<lb/> AEU re-analyzed the data with separate code, A.B., A.E.U. and T.H.D. wrote the paper.<lb/></note>
+
+	Confidence-dependent adaptation of sequential choice bias<lb/> Braun et al. 2 Abstract<lb/>
+	<div type="abstract">Perceptual decision-making is biased by previous events, including the history of preceding choices:<lb/> Observers tend to repeat (or alternate) their choices more often than expected by chance. Here, we<lb/> find that such sequential choice biases result from the accumulation of action-independent, internal<lb/> decision variables. Human observers performed different variants of a visual motion discrimination<lb/> task around psychophysical threshold. First, we decoupled perceptual choices and motor responses<lb/> on a trial-by-trial basis, to disentangle their relative contributions to sequential biases. The impact of<lb/> previous choices outweighed the impact of previous motor responses and previous stimuli. Second,<lb/> observers performed the task in both random and biased environments (containing systematic<lb/> tendencies towards either repetition or alternation of motion directions) and in the absence of external<lb/> feedback about the correctness of their choices. Observers adapted their sequential choice biases to<lb/> the biased environmental statistics, in a way that indicated memory for previous choices and predicted<lb/> their overall performance. We further found that this adaptation was enhanced by the confidence<lb/> about the correctness of previous choices, consistent with the idea that decision variables driving<lb/> choice encode both the categorical choice, as well as the graded confidence associated with it. Thus,<lb/> our results are consistent with the idea that high-level decision variables, dissociable from both,<lb/> sensory input and motor output, are accumulated across choices towards biases for upcoming<lb/> choices. These insights constrain the candidate neural sources of sequential choice biases.<lb/> Significance statement:<lb/> Studies of perceptual decision-making show that participants&apos; choices are often influenced by the<lb/> history of their preceding choices. This manifests as a bias to repeat (or alternate) choices more often<lb/> than expected by chance. We found that such history biases in perceptual choice arise from the<lb/> accumulation of internal signals referred to as decision variables. These decision variables encode the<lb/> observers&apos; categorical perceptual choice, they are dissociable from both, sensory input and motor<lb/> output, and they are modulated by decision confidence. This accumulation of decision variables helps<lb/> adapt choice behavior to the temporal structure of sensory environments, thus boosting overall<lb/> performance.</div>
+
+		</front>
+	</text>
+</tei>
