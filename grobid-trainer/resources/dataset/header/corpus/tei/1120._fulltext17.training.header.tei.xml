@@ -16,8 +16,17 @@
 	<docAuthor>Lindsey L. Johnston a , Andrew J. Ursini a , Nathan P. Oien a , Matthew P. Desciak b , Randy S. Rarig, Jr. c ,<lb/> Jon Zubieta c , and Robert L. LaDuca a, *<lb/></docAuthor>
 	</byline>
 
+    <!-- how to handle affiliations broken by the address? -->
 	<byline>
-	<affiliation>a East Lansing MI / USA, Michigan State University, Lyman Briggs College and Department of Chemistry<lb/> b Wilkes-Barre, PA / USA, King&apos;s College, Department of Chemistry and Physics<lb/> c Syracuse, NY / USA, Syracuse University, Department of Chemistry<lb/></affiliation>
+	<affiliation>a East Lansing MI / USA, Michigan State University, Lyman Briggs College and Department of Chemistry<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>b Wilkes-Barre, PA / USA, King&apos;s College, Department of Chemistry and Physics<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>c Syracuse, NY / USA, Syracuse University, Department of Chemistry<lb/></affiliation>
 	</byline>
 
 	<note type="submission">Received November 6 th , 2007.<lb/></note>
@@ -40,7 +49,7 @@
 
 	<reference>Z. Anorg. Allg. Chem. 2008, 634, 887Ϫ891<lb/></reference>
 
-	<note type="copyright">© 2008 WILEY-VCH Verlag GmbH &amp; Co. KGaA, Weinheim 887<lb/></note>
+	<note type="copyright">© 2008 WILEY-VCH Verlag GmbH &amp; Co. KGaA, Weinheim</note> <page>887<lb/></page>
 
 	<div type="abstract">2-D sheet motif, albeit built from infinite 1-D [Cu 2 Br 2 ] n ladders<lb/> strutted by 3,3Ј-bpy ligands in anti conformation. In both cases<lb/> neighboring 2-D sheets stack into 3-D via weak CϪH•••halogen<lb/> interactions.<lb/></div>
 

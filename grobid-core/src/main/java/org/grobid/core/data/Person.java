@@ -565,6 +565,67 @@ public class Person {
             return true;
     }
 
+    /** Minimum surname Ratcliff/Obershelp similarity (case- and accent-insensitive) for a soft match. */
+    public static final double SOFT_LASTNAME_SIMILARITY_THRESHOLD = 0.90;
+
+    /**
+     * True when the two persons have the same surname, or similar surnames (soft match, which
+     * recovers dirty extracted names: stray markers, glyphs, diacritics), and compatible forenames
+     * (see {@link #firstNamesCompatible(Person, Person)}).
+     */
+    public static boolean isSamePerson(Person reference, Person candidate) {
+        if (StringUtils.isBlank(reference.getLastName()) || StringUtils.isBlank(candidate.getLastName()))
+            return false;
+        boolean similarSurnames = reference.getLastName().trim().equalsIgnoreCase(candidate.getLastName().trim())
+                || TextUtilities.getRatcliffObershelpSimilarity(
+                        reference.getLastName(),
+                        candidate.getLastName(),
+                        false) >= SOFT_LASTNAME_SIMILARITY_THRESHOLD;
+        return similarSurnames && firstNamesCompatible(reference, candidate);
+    }
+
+    /**
+     * True when the candidate's forenames (first and middle names) are compatible with the
+     * reference's. The candidate has no forename, or, case- and accent-insensitively, every token of
+     * the shorter forename appears in order in the longer one, either equal or as a single-letter
+     * initial: "J A" ~ "John Andrew", "Lei" ~ "X Lei", "J" ~ "Jane", but "Jon" !~ "John" and
+     * "A J" !~ "John Andrew". A reference without forename is only compatible with a candidate
+     * without forename.
+     */
+    public static boolean firstNamesCompatible(Person reference, Person candidate) {
+        List<String> candidateTokens = forenameTokens(candidate);
+        if (candidateTokens.isEmpty())
+            return true;
+        List<String> referenceTokens = forenameTokens(reference);
+        if (referenceTokens.isEmpty())
+            return false;
+        List<String> shorter = candidateTokens.size() <= referenceTokens.size() ? candidateTokens : referenceTokens;
+        List<String> longer = shorter == candidateTokens ? referenceTokens : candidateTokens;
+        int matched = 0;
+        for (String token : longer) {
+            if (matched < shorter.size() && forenameTokensMatch(token, shorter.get(matched)))
+                matched++;
+        }
+        return matched == shorter.size();
+    }
+
+    private static List<String> forenameTokens(Person person) {
+        List<String> tokens = new ArrayList<>();
+        for (String field : new String[]{person.getFirstName(), person.getMiddleName()}) {
+            if (StringUtils.isBlank(field))
+                continue;
+            for (String token : TextUtilities.removeAccents(field.toLowerCase()).split("[\\s.\\-]+")) {
+                if (!token.isEmpty())
+                    tokens.add(token);
+            }
+        }
+        return tokens;
+    }
+
+    private static boolean forenameTokensMatch(String a, String b) {
+        return a.equals(b) || (a.length() == 1 && b.startsWith(a)) || (b.length() == 1 && a.startsWith(b));
+    }
+
     /**
      *  Deduplicate person names, optionally attached to affiliations, based
      *  on common forename/surname, taking into account abbreviated forms

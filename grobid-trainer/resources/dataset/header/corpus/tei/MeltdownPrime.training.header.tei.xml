@@ -55,14 +55,16 @@
 	</byline>
 
 	<byline>
-	<affiliation>Princeton University *</affiliation>
+	<affiliation>Princeton University</affiliation>
 	</byline>
 
     <byline>
-	<affiliation>NVIDIA<lb/></affiliation>
+	<affiliation>* NVIDIA<lb/></affiliation>
 	</byline>
 
-	<email>{ctrippel,mrm}@princeton.edu dlustig@nvidia.com</email>
+	<email>{ctrippel,mrm}@princeton.edu</email>
+
+	<email>dlustig@nvidia.com</email>
 
 	Abstract<lb/>
 	<div type="abstract">The recent Meltdown [9] and Spectre [8] attacks highlight<lb/> the importance of automated verification techniques for identi-<lb/>fying hardware security vulnerabilities. We have developed a<lb/> tool for automatically synthesizing microarchitecture-specific<lb/> programs capable of producing any user-specified hardware<lb/> execution pattern of interest. Our tool takes two inputs: (i) a<lb/> formal description of a microarchitecture in a domain-specific<lb/> language (almost identical to µspec from recent work [11]),<lb/> and (ii) a formal description of a microarchitectural execu-<lb/>tion pattern of interest, e.g. a threat pattern. All programs<lb/> synthesized by our tool are capable of producing the specified<lb/> execution pattern on the supplied microarchitecture.<lb/> We used our tool to specify a hardware execution pat-<lb/>tern common to Flush+Reload side-channel attacks (i.e., a<lb/> Flush+Reload threat pattern) and automatically synthesized<lb/> security litmus tests representative of those that have been<lb/> publicly disclosed for conducting Meltdown and Spectre at-<lb/>tacks. We additionally formulated a Prime+Probe threat pat-<lb/>tern, enabling our tool to synthesize a new variant of each-<lb/>MeltdownPrime and SpectrePrime. Both of these new ex-<lb/>ploits use Prime+Probe approaches to conduct the timing<lb/> attack. They are both also novel in that they are 2-core attacks<lb/> which leverage the cache line invalidation mechanism in mod-<lb/>ern cache coherence protocols. These are the first proposed<lb/> Prime+Probe variants of Meltdown and Spectre. But more<lb/> importantly, both Prime attacks exploit invalidation-based<lb/> coherence protocols to achieve the same level of precision<lb/> as a Flush+Reload attack. While mitigation techniques in<lb/> software (e.g., barriers that prevent speculation) will likely<lb/> be the same for our Prime variants as for original Spectre<lb/> and Meltdown, we believe that hardware protection against<lb/> them will be distinct. As a proof of concept, we implemented<lb/> SpectrePrime as a C program and ran it on an Intel x86 pro-<lb/>cessor. Averaged over 100 runs, we observed SpectrePrime to<lb/> achieve the same average accuracy as Spectre [8] on the same<lb/> hardware-97.9% for Spectre and 99.95% for SpectrePrime.<lb/></div>

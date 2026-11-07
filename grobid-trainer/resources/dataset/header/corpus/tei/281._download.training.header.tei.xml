@@ -24,7 +24,9 @@
 
 	<address>Syracuse, NY 13244-4100, U.S.A.<lb/></address>
 
-	315-443-2322/(fax) 1122 
+	<phone>315-443-2322</phone>
+
+	/(fax) 1122 
 	Abstract<lb/>
 	<div type="abstract">Shape recognition is a challenging task when images contain overlapping, noisy, occluded, partial shapes.<lb/> This paper addresses the task of matching input shapes with model shapes described in terms of features<lb/> such as line segments and angles. The quality of matching is gauged using a measure derived from attributed<lb/> shape grammars. We apply genetic algorithms to the partial shape-matching task. Preliminary results, using<lb/> model shapes with 6 to 70 features each, are extremely encouraging.<lb/></div>
 

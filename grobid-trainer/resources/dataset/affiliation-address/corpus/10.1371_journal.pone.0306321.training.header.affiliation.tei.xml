@@ -11,7 +11,7 @@
 							<marker>1</marker>
 							<orgName type="institution">Universite ´Paris Cite ´</orgName>,
 							<orgName type="institution">Institut Pasteur</orgName>,
-							<orgName type="department">Unite ´Biologie des ARN des Pathogènes Fongiques</orgName>,
+							<orgName type="laboratory">Unite ´Biologie des ARN des Pathogènes Fongiques</orgName>,
 							<orgName type="department">De ´partement de<lb/> Mycologie</orgName>,
 							<address>
 								<settlement>Paris</settlement>,
@@ -22,9 +22,9 @@
 							<marker>2</marker>
 							<orgName type="institution">Universite ´Paris Cite ´</orgName>,
 							<orgName type="institution">Institut Pasteur</orgName>,
-							<orgName type="institution">HUB Bioinformatique et Biostatistique</orgName>,
+							<orgName type="department">HUB Bioinformatique et Biostatistique</orgName>,
 							<lb/>
-							<orgName type="laboratory">C3BI, USR 3756 IP CNRS</orgName>,
+							<orgName type="laboratory" key="lab1">C3BI</orgName>, <orgName type="laboratory" key="lab1">USR 3756</orgName> <orgName type="institution" key="instit1">IP</orgName> <orgName type="institution" key="instit2">CNRS</orgName>,
 							<address>
 								<settlement>Paris</settlement>,
 								<country>France</country>,
@@ -42,7 +42,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>4</marker>
-							<orgName type="department">Institute of Microbiology and Infection and School of Biosciences</orgName>,
+							<orgName type="department">Institute of Microbiology and Infection</orgName> and <orgName type="department">School of Biosciences</orgName>,
 							<orgName type="institution">University of Birmingham</orgName>,
 							<lb/>
 							<address>
@@ -53,7 +53,7 @@
 						<affiliation>
 							<marker>5</marker>
 							<orgName type="institution">Universite ´Paris Cite ´</orgName>,
-							<orgName type="laboratory">SFR Necker INSERM US24/CNRS UAR3633, Proteomics Platform</orgName>,
+							<orgName type="laboratory" key="lab1">SFR Necker</orgName> <orgName type="institution" key="instit1">INSERM</orgName> <orgName type="laboratory" key="lab1">US24</orgName>/<orgName type="institution" key="instit2">CNRS</orgName> <orgName type="laboratory" key="lab1">UAR3633</orgName>, <orgName type="laboratory">Proteomics Platform</orgName>,
 							<lb/>
 							<address>
 								<settlement>Paris</settlement>,

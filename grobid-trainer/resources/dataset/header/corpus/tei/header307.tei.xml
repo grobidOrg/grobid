@@ -13,6 +13,7 @@
 		<byline><docAuthor>Amitabh B. Sinha Laxmikant V. Kal e <lb/></docAuthor></byline>
 
 		<byline>
+		<!-- check: two-column layout, the lines of the two affiliations and addresses are interleaved -->
 		<affiliation>Department of Computer Science<lb/> Department of Computer Science<lb/> University of Illinois<lb/> University of Illinois<lb/></affiliation>
 		</byline>
 

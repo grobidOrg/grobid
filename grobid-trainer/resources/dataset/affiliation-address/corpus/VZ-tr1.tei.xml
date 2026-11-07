@@ -14,7 +14,7 @@
 								<orgName type="department">School of Biomedical Sciences</orgName>,
 								<orgName type="institution">University of Newcastle</orgName>,
 								<address>
-									<settlement>New South Wales</settlement>,
+									<region>New South Wales</region>,
                                     <country key="AU">Australia</country>.
 								</address>
 							</affiliation>

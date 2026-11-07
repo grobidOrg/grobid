@@ -6,7 +6,7 @@
 	<text xml:lang="en">
 		<front>
 <lb/>
-	JCAP10(2008)003<lb/>
+	<reference>JCAP10(2008)003<lb/></reference>
 
 	<title level="j">ournal of Cosmology and Astroparticle Physics<lb/></title>
 	An IOP and SISSA journal J<lb/>
@@ -70,9 +70,9 @@
 	<note type="copyright">c 2008 IOP Publishing Ltd and SISSA<lb/></note>
 
 	1475-7516/08/10003+15$30.00<lb/>
-	JCAP10(2008)003<lb/>
+	<reference>JCAP10(2008)003<lb/></reference>
 
-	<div type="abstract">Apparent and average accelerations of the Universe Contents<lb/> 1. Introduction 2<lb/> 2. The Buchert scheme 4<lb/> 3. The Lemaître-Tolman model 5<lb/> 4. The apparent and average accelerations 6<lb/> 5. Connection between the deceleration parameter and observations 7<lb/> 6. Conclusions 9<lb/> Acknowledgments 11<lb/> Appendix. Model specification 11<lb/> References 14</div>
+	Apparent and average accelerations of the Universe Contents<lb/> 1. Introduction 2<lb/> 2. The Buchert scheme 4<lb/> 3. The Lemaître-Tolman model 5<lb/> 4. The apparent and average accelerations 6<lb/> 5. Connection between the deceleration parameter and observations 7<lb/> 6. Conclusions 9<lb/> Acknowledgments 11<lb/> Appendix. Model specification 11<lb/> References 14
 
 		</front>
 	</text>

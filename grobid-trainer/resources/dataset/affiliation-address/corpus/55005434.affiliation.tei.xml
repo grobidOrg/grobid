@@ -27,7 +27,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="department">Clinical Hospital<lb/> Dnipropetrovsk</orgName>,
+							<orgName type="institution">Clinical Hospital<lb/> Dnipropetrovsk</orgName>,
 							<address>
 								<settlement>Dnepropetrovsk</settlement>,
 								<country>Ukraine</country>,
@@ -36,8 +36,8 @@
 						<affiliation>
 							<marker>4</marker>
 							<orgName type="institution">Leningrad Regional Clinical Hospital</orgName>,
-							<orgName type="institution">St. Petersburg</orgName>,
 							<address>
+								<settlement>St. Petersburg</settlement>,
 								<country>Russian Federation</country>,
 								<lb/>
 							</address>
@@ -76,7 +76,7 @@
 							<orgName type="institution">Universitaetsmedizin Mainz</orgName>,
 							<address>
 								<settlement>Mainz</settlement>,
-								<settlement>Germany</settlement>,
+								<country>Germany</country>,
 							<lb/>
 							</address>
 						</affiliation>
@@ -87,7 +87,12 @@
 								<settlement>Wallingford</settlement>,
 								<region>CT</region>,
 							<lb/>
-								<addrLine>10 Hospital<lb/> Grosshansdorf</addrLine>,
+							</address>
+						</affiliation>
+						<affiliation>
+							<marker>10</marker>
+							<orgName type="institution">Hospital<lb/> Grosshansdorf</orgName>,
+							<address>
 								<settlement>Grosshansdorf</settlement>,
 								<country>Germany</country>
 							</address>

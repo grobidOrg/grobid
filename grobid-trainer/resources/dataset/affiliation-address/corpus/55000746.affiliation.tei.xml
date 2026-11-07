@@ -13,8 +13,8 @@
 							<orgName type="institution">University of Alcalá</orgName>.
 							<lb/>
 							<address>
-								<addrLine>Alcalá de Henares</addrLine>, 
-								<settlement>Madrid</settlement>,
+								<settlement>Alcalá de Henares</settlement>, 
+								<region>Madrid</region>,
 								<country>Spain</country>
 							</address>
 						</affiliation>

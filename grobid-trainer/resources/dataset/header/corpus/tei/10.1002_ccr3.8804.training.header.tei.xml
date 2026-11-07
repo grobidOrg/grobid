@@ -89,12 +89,10 @@
 
 	* The views expressed are those of the authors and do not necessarily reflect those of Norges Bank, the Bank of<lb/> Finland or the Eurosystem. We thank Michael Ehrmann, Juha Kilponen, Jarmo Kontulainen, Barbara Rossi, Tate-<lb/>vik Sekhposyan, Annette Vissing-Jørgensen and seminar and conference participants at the 2022 EEA-ESEM, San<lb/> Francisco FED, De Nederlandsche Bank, Heidelberg Workshop on Survey Data and Probabilistic Expectations, 14th<lb/> International Conference on Computational and Financial Econometrics, 2nd Vienna Workshop on Economic Fore-<lb/>casting, 28th Annual Symposium of the Society for Nonlinear Dynamics and Econometrics, 3rd Forecasting at Central<lb/> Banks Conference, 17th Conference on Real-Time Data Analysis, Methods and Applications. We also thank an anony-<lb/>mous referee from the Norges Bank Working Paper series. We give special thanks to Florens Odendahl, Barbara Rossi<lb/> and Tatevik Sekhposyan for sharing their MATLAB codes. The earlier version of this paper was circulated as BOF<lb/> DP 7/2021 and NB WP 1/2021.<lb/>
 
-	† Corresponding Author. 
-          
     <byline>
-	<affiliation>Norges Bank;</affiliation>
-	</byline> 
-      
+	<affiliation>† Corresponding Author. Norges Bank;</affiliation>
+	</byline>
+
     email:
 	<email>eleonora.granziera@norges-bank.no<lb/></email>
 

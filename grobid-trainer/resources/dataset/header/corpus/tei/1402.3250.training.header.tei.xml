@@ -1,0 +1,170 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_1402.3250">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-30T15:23:23.769184Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-30T15:23:23.769184Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-30T15:27:22.527Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-09-29T11:11:24.421Z" status="approved" who="#lfoppiano">
+      <note type="label">v2 (lfoppiano)</note>
+      <desc>Corrected</desc>
+    </change>
+    <change when="2026-09-29T11:14:12.853Z" status="approved" who="#lfoppiano">
+      <desc>Corrected</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<idno>arXiv:1402.3250v1 [math.FA]</idno>
+
+	<date>13 Feb 2014<lb/></date>
+
+	<docTitle>
+	<titlePart>Functional versions of L p -affine surface area and<lb/> entropy inequalities. *<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>U. Caglar, M. Fradelizi † , O. Guédon † , J. Lehec,<lb/> C. Schütt and E. M. Werner ‡</docAuthor>
+	</byline>
+
+	Abstract<lb/>
+	<div type="abstract">In contemporary convex geometry, the rapidly developing Lp-Brunn Minkowski<lb/> theory is a modern analogue of the classical Brunn Minkowski theory. A cornerstone<lb/> of this theory is the Lp-affine surface area for convex bodies. Here, we introduce<lb/> a functional form of this concept, for log concave and s-concave functions. We<lb/> show that the new functional form is a generalization of the original Lp-affine<lb/> surface area. We prove duality relations and affine isoperimetric inequalities for log<lb/> concave and s-concave functions. This leads to a new inverse log-Sobolev inequality<lb/> for s-concave densities.<lb/></div>
+
+	* Keywords:
+	<keyword>entropy, affine isoperimetric inequalities, log-Sobolev inequalities.</keyword>
+
+	<keyword>2010 Mathematics<lb/> Subject Classification: 52A20.<lb/></keyword>
+
+	<note type="funding">† partially supported by the project GeMeCoD ANR 2011 BS01 007 01<lb/></note>
+	<note type="funding">‡ Partially supported by an NSF grant<lb/></note>
+
+	<byline>
+	<docAuthor>Umut Caglar<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Department of Mathematics<lb/> Case Western Reserve University<lb/></affiliation>
+	</byline>
+
+	<address>Cleveland, Ohio 44106, U. S. A.<lb/></address>
+
+	<email>umut.caglar@case.edu<lb/></email>
+
+	<byline>
+	<docAuthor>Matthieu Fradelizi and Olivier Guédon<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Université Paris Est<lb/> Laboratoire d'Analyse et de Mathématiques Appliquées (UMR 8050)<lb/> UPEM,</affiliation>
+	</byline>
+
+	<address>F-77454, Marne-la-Vallée, France<lb/></address>
+
+	<email>matthieu.fradelizi@u-pem.fr</email>
+
+	,
+	<email>olivier.guedon@u-pem.fr<lb/></email>
+
+	<byline>
+	<docAuthor>Joseph Lehec<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Université Paris-Dauphine<lb/> CEREMADE<lb/></affiliation>
+	</byline>
+
+	<address>Place du Maréchal de Lattre de Tassigny, 75016 Paris, France<lb/></address>
+
+	<email>lehec@ceremade.dauphine.fr<lb/></email>
+
+	<byline>
+	<docAuthor>Carsten Schütt<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Mathematisches Institut<lb/> Universität Kiel<lb/></affiliation>
+	</byline>
+
+	<address>24105 Kiel, Germany<lb/></address>
+
+	<email>schuett@math.uni-kiel.de<lb/></email>
+
+	<byline>
+	<docAuthor>Elisabeth Werner<lb/></docAuthor>
+	</byline>
+
+
+	<!-- two different affiliations are mixed -->	
+	<!-- the document does not have columns so they appears in the same row -->
+	<byline>
+	<affiliation>Department of Mathematics<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>Université de Lille 1<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>Case Western Reserve University<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>UFR de Mathématique<lb/></affiliation>
+	</byline>
+
+	<address>Cleveland, Ohio 44106, U. S. A.<lb/></address>
+			
+	<address>59655 Villeneuve d'Ascq, France<lb/></address>
+
+	<email>elisabeth.werner@case.edu</email>
+
+		</front>
+	</text>
+
+</TEI>

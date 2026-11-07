@@ -13,7 +13,7 @@
 							<orgName type="institution">Carnegie Mellon University</orgName>
 							<lb/>
 							<address>
-								<addrLine>5000 Forbes Avenue<lb/> Pittsburgh</addrLine>,
+								<addrLine>5000 Forbes Avenue</addrLine><lb/> <settlement>Pittsburgh</settlement>,
 								<region>PA</region>
 								<postCode>15213-3891</postCode>
 							</address>

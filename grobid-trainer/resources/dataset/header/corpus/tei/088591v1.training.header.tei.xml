@@ -6,10 +6,12 @@
 	<text xml:lang="en">
 		<front>
 <lb/>
-	Title: 
+	Title:
 	<docTitle>
-	<titlePart>A mapping tool to identify causal mutations from forward genetic screens<lb/> running title: Point mutations mapping pipeline<lb/></titlePart>
+	<titlePart>A mapping tool to identify causal mutations from forward genetic screens<lb/></titlePart>
 	</docTitle>
+
+    running title: Point mutations mapping pipeline<lb/>
 
 	<byline>
 	<docAuthor>Guy Wachsman<lb/> 1 , Jennifer L. Modliszewski<lb/> 2 , Manuel Valdes<lb/> 1 and Philip N. Benfey<lb/> 1,3<lb/></docAuthor>

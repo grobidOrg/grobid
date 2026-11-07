@@ -11,8 +11,8 @@
 							<marker>1</marker>
 							<orgName type="institution">Whitehead Institute for Biomedical Research</orgName>,
 							<orgName type="institution">Massachusetts Institute of Technology</orgName>,
-							<orgName type="institution">Nine Cambridge Center</orgName>,
 							<address>
+								<addrLine>Nine Cambridge Center</addrLine>,
 								<settlement>Cambridge</settlement>,
 								<lb/>
 								<region>MA</region>
@@ -36,14 +36,14 @@
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="department">Present address: Cummings School of Veterinary Medicine</orgName>,
+							Present address: <orgName type="department">Cummings School of Veterinary Medicine</orgName>,
 							<orgName type="institution">Tufts University</orgName>,
 							<address>
 								<addrLine>200 Westboro Road</addrLine>,
 								<settlement>North Grafton</settlement>
 								<region>MA</region>
 								<postCode>01536</postCode>,
-								<country>USA.</country>
+								<country>USA</country>.
 							</address>
 						</affiliation>
 

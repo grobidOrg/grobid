@@ -1,0 +1,76 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">International Center for Quantum Materials</orgName>,
+							<orgName type="department">School of Physics</orgName>,
+							<orgName type="institution">Peking University</orgName>,
+							<address>
+								<settlement>Beijing</settlement>
+								<postCode>100871</postCode>,
+								<country>China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="department">Beijing National Laboratory for Condensed Matter Physics</orgName> and
+							<orgName type="department">Institute of Physics</orgName>,
+							<orgName type="institution">Chinese Academy of Sciences</orgName>,
+							<address>
+								<settlement>Beijing</settlement>
+								<postCode>100190</postCode>,
+								<country>China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">School of Physical Sciences</orgName>,
+							<orgName type="institution">University of Chinese Academy of Sciences</orgName>,
+							<address>
+								<settlement>Beijing</settlement>
+								<postCode>100049</postCode>,
+								<country>China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="institution">Beijing Academy of Quantum Information Sciences</orgName>,
+							<address>
+								<settlement>Beijing</settlement>
+								<postCode>100913</postCode>,
+								<country>China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>5</marker>
+							<orgName type="department">Collaborative Innovation Center of Quantum Matter</orgName>,
+							<address>
+								<settlement>Beijing</settlement>
+								<postCode>100871</postCode>,
+								<country>China</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

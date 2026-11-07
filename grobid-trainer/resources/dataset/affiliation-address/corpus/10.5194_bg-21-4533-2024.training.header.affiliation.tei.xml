@@ -56,7 +56,7 @@
 							<orgName type="institution">University of Zagreb</orgName>,
 							<address>
 								<settlement>Zagreb</settlement>,
-								<addrLine>10 000</addrLine>,
+								<postCode>10 000</postCode>,
 								<country>Croatia</country>
 							<lb/>
 							</address>

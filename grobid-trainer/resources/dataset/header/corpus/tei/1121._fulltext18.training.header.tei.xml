@@ -16,8 +16,13 @@
 	<docAuthor>Georg Steinhauser a,b, *, Konstantin Karaghiosoff b , and Thomas M. Klapötke b, *<lb/></docAuthor>
 	</byline>
 
+    <!-- how to handle affiliations broken by the address? -->
 	<byline>
-	<affiliation>a Vienna/Austria, Vienna University of Technology, Atominstitut der Österreichischen Universitäten<lb/> b Munich/Germany, Department of Chemistry and Biochemistry, Ludwig-Maximilian University<lb/></affiliation>
+	<affiliation>a Vienna/Austria, Vienna University of Technology, Atominstitut der Österreichischen Universitäten<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>b Munich/Germany, Department of Chemistry and Biochemistry, Ludwig-Maximilian University<lb/></affiliation>
 	</byline>
 
 	<note type="submission">Received November 14 th , 2007.<lb/></note>
@@ -51,8 +56,10 @@
 	E-mail:
 	<email>georg.steinhauser@ati.ac.at</email>
 
-	892<lb/>
-	<reference>© 2008 WILEY-VCH Verlag GmbH &amp; Co. KGaA, Weinheim<lb/> Z. Anorg. Allg. Chem. 2008, 634, 892Ϫ894<lb/></reference>
+	<page>892<lb/></page>
+	<note type="copyright">© 2008 WILEY-VCH Verlag GmbH &amp; Co. KGaA, Weinheim<lb/></note>
+
+	<reference>Z. Anorg. Allg. Chem. 2008, 634, 892Ϫ894<lb/></reference>
 
 	<div type="abstract">obtained. The crystal structure shows a clear Jahn-Teller distortion<lb/> in the octahedral nitratocuprate anion.<lb/></div>
 

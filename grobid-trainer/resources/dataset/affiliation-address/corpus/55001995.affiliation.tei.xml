@@ -15,7 +15,7 @@
 								<settlement>Manipal</settlement>,
 								<region>Karnataka</region>-
 								<postCode>576104</postCode>,
-								<country>India.</country>
+								<country>India</country>.
 							<lb/>
 							</address>
 						</affiliation>
@@ -30,13 +30,15 @@
 								<country>India</country>.
 								<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">Kasturba Medical College</orgName>,
 							<orgName type="institution">Manipal University</orgName>,
 							<address>
 								<settlement>Manipal</settlement>,
 								<region>Karnataka</region>-
 								<postCode>576104</postCode>,
-								<country>India.</country>
+								<country>India</country>.
 							<lb/>
 							</address>
 						</affiliation>

@@ -6,16 +6,24 @@
 	<text xml:lang="en">
 		<front>
 <lb/>
-	Title: 
+	Title:
 
 	<docTitle>
 	<titlePart>Across-cohort QC analyses of genome-wide association study summary statistics from complex traits<lb/></titlePart>
 	</docTitle>
-	
+
 	 Authors:
 	<byline>
-	<docAuthor>Guo-Bo Chen 1 , Sang Hong Lee 1,2 , Matthew R Robinson 1 , Maciej Trzaskowski 1 , Zhi-Xiang Zhu 3 ,<lb/> Thomas W Winkler 4 , Felix R Day 5 , Damien C Croteau-Chonka 6,7 , Andrew R Wood 8 , Adam E Locke 9 ,<lb/> Zoltán Kutalik 10-12 , Ruth J F Loos 13-15 , Timothy M Frayling 8 , Joel N Hirschhorn 16-19 , Jian Yang 1,21 , Naomi R<lb/> Wray 1 , The Genetic Investigation of Anthropometric Traits (GIANT) Consortium 20 , Peter M Visscher 1,21<lb/></docAuthor>
+        <docAuthor>Guo-Bo Chen 1 , Sang Hong Lee 1,2 , Matthew R Robinson 1 , Maciej Trzaskowski 1 , Zhi-Xiang Zhu 3 ,<lb/> Thomas W Winkler 4 , Felix R Day 5 , Damien C Croteau-Chonka 6,7 , Andrew R Wood 8 , Adam E Locke 9 ,<lb/> Zoltán Kutalik 10-12 , Ruth J F Loos 13-15 , Timothy M Frayling 8 , Joel N Hirschhorn 16-19 , Jian Yang 1,21 , Naomi R<lb/> Wray 1</docAuthor>
 	</byline>
+
+     ,
+
+    <note type="group">The Genetic Investigation of Anthropometric Traits (GIANT) Consortium 20</note> ,
+
+    <byline>
+        <docAuthor>Peter M Visscher 1,21<lb/></docAuthor>
+    </byline>
 
 	Affiliations:<lb/>
 	<byline>
@@ -115,10 +123,10 @@
 	<address>Boston, Massachusetts, USA<lb/></address>
 
 	<byline>
-	<affiliation>17 Program in Medical and Population Genetics, Broad Institute of MIT and Harvard, Cambridge,<lb/></affiliation>
+	<affiliation>17 Program in Medical and Population Genetics, Broad Institute of MIT and Harvard</affiliation>,
 	</byline>
 
-	<address>Massachusetts, USA<lb/></address>
+	<address>Cambridge,<lb/> Massachusetts, USA<lb/></address>
 
 	<byline>
 	<affiliation>18 Center for Basic and Translational Obesity Research, Boston Children&apos;s Hospital,</affiliation>

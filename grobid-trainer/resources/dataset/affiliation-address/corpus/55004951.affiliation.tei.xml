@@ -13,10 +13,9 @@
 							c/o 
 							<orgName type="department">Unità Tossicologia e Scienze Biomediche</orgName>
 							<lb/>
-							<orgName type="institution">ENEA Centro Ricerche</orgName>
+							<orgName type="institution">ENEA Centro Ricerche<lb/> Casaccia</orgName>
 							<address>
-								<addrLine>Casaccia s.p. 016<lb/> Via Anguillarese</addrLine>,
-								<postCode>301 -00123</postCode>
+								<addrLine>s.p. 016 Via Anguillarese, 301</addrLine> -<postCode>00123</postCode>
 								<settlement>Roma</settlement>
 							</address>
 						</affiliation>

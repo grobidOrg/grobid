@@ -27,11 +27,13 @@
 	<email>koo@robotics.eecs. berkeley.edu</email>
 
 	Abstract<lb/>
-	<div type="abstract">Using linguistic variables to describe the behavior of a<lb/> hybrid system, which consists of a discrete event sys-<lb/>tem and a continuous system, could make the design<lb/> of the controller and verification of the system perform<lb/> on an unified framework. In this paper, we show the<lb/> construction of a fuzzy linguistic model from a given<lb/> mathematical model of a physical system. By consider-<lb/>ing the state-space realization of the model, the system<lb/> construction problem can be transformed into a func-<lb/>tion approximation problem. We propose to use pro-<lb/>jection theorem in obtaining an optimal fuzzy system<lb/> which is the best approximation of a given nonlinear<lb/> function in L z ( U ) space. We show that the existence<lb/> and uniqueness of the optimal solution is assured when<lb/> the Fuzzy Basis Functions(FBFs) are linearly indepen-<lb/>dent. We demonstrate that the dependence of the basis<lb/> functions can be examined by checking the condition of<lb/> the Gram determinant associated to the FBFs. Finally,<lb/> a method is proposed in converting the optimal coeffi-<lb/>cients into fuzzy sets to obtain a fuzzy linguistic model.<lb/> Continuous time<lb/> Discrete time<lb/> 4 t ) = f(+))<lb/> 4 k + 1) = f ( 4 k ) )<lb/> where z E U c !Rn and f : !Rn x !Rn.</div>
+	<div type="abstract">Using linguistic variables to describe the behavior of a<lb/> hybrid system, which consists of a discrete event sys-<lb/>tem and a continuous system, could make the design<lb/> of the controller and verification of the system perform<lb/> on an unified framework. In this paper, we show the<lb/> construction of a fuzzy linguistic model from a given<lb/> mathematical model of a physical system. By consider-<lb/>ing the state-space realization of the model, the system<lb/> construction problem can be transformed into a func-<lb/>tion approximation problem. We propose to use pro-<lb/>jection theorem in obtaining an optimal fuzzy system<lb/> which is the best approximation of a given nonlinear<lb/> function in L z ( U ) space. We show that the existence<lb/> and uniqueness of the optimal solution is assured when<lb/> the Fuzzy Basis Functions(FBFs) are linearly indepen-<lb/>dent. We demonstrate that the dependence of the basis<lb/> functions can be examined by checking the condition of<lb/> the Gram determinant associated to the FBFs. Finally,<lb/> a method is proposed in converting the optimal coeffi-<lb/>cients into fuzzy sets to obtain a fuzzy linguistic model.<lb/></div>
+
+	Continuous time<lb/> Discrete time<lb/> 4 t ) = f(+))<lb/> 4 k + 1) = f ( 4 k ) )<lb/> where z E U c !Rn and f : !Rn x !Rn.
 
 	The vector<lb/> 0-7803-3590-2/96 $5.00 
 
-	<note type="copyright">0 1996 IEEE 98<lb/> </note>
+	<note type="copyright">0 1996 IEEE</note> <page>98<lb/></page> 
 
 	Authorized licensed use limited to: European Patent Office. Downloaded on September 18, 2009 at 04:52 from IEEE Xplore. Restrictions apply.
 		</front>

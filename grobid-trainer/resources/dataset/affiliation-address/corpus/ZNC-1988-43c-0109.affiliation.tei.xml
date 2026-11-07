@@ -23,7 +23,7 @@
 							<orgName type="institution">CSIRO</orgName>,
 							<orgName type="department">Division of Animal Health</orgName>,
 							<address>
-								<postBox>P.O.</postBox> 
+								P.O. 
 								<settlement>Parkville</settlement>,
 								<region>Vic.</region> 
 								<postCode>3052</postCode>,
@@ -33,7 +33,7 @@
 						</affiliation>	
 						
 						<affiliation>		
-							<orgName type="department">Max-Planck-Institut für Verhaltensphysiologie</orgName>,
+							<orgName type="institution">Max-Planck-Institut für Verhaltensphysiologie</orgName>,
 							<address>
 								<postCode>D-8131</postCode>
 								<settlement>Seewiesen</settlement>,

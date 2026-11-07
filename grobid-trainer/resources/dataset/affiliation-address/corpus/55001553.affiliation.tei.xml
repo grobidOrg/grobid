@@ -15,8 +15,11 @@
 								<postCode>I-90128</postCode>
 								<settlement>Palermo</settlement>,
 								<country>Italy</country> 
-								and
 							</address>
+							and
+						</affiliation>
+
+						<affiliation>
 							<orgName type="department">Departamento de<lb/> Química Orgánica</orgName>,
 							<orgName type="department">Facultad de Ciencias Químicas</orgName>,
 							<orgName type="institution">Universidad Complutense</orgName>,

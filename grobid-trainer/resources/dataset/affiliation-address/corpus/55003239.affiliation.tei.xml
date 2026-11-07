@@ -11,8 +11,9 @@
 							<marker>1</marker>
 							<orgName type="department">Department of Food Science and Applied Biotechnology</orgName>
 							<lb/>
-							<orgName type="institution">Hungkuang University<lb/> Taichung</orgName>,
+							<orgName type="institution">Hungkuang University<lb/></orgName>
 							<address>
+								<settlement>Taichung</settlement>,
 								<country>Taiwan</country>
 							</address>
 						</affiliation>

@@ -12,11 +12,13 @@
 							<orgName type="institution">Tokyo Gakugei University</orgName>,
 							<address>
 								<settlement>Koganei</settlement>,
-								<settlement>Tokyo</settlement>
+								<region>Tokyo</region>
 								<postCode>184</postCode>,
 								<country>Japan</country>
 								<lb/>
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">The Institute of Physical and Chemical Research (RIKEN)</orgName>,
 							<address>
 								<settlement>Wako</settlement>,

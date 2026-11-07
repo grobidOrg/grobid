@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Department of Physics and Astronomy</orgName>,
+							<orgName type="institution">The Johns Hopkins University</orgName>,
+							<lb/>
+							<address>
+								<settlement>Baltimore</settlement>,
+								<region>MD</region>
+								<postCode>21218</postCode>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">Sigma Space Corporation</orgName>,
+							<address>
+								<settlement>Lanham</settlement>,
+								<region>MD</region>
+								<postCode>20706</postCode>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="institution">Space Telescope Science institute</orgName>,
+							<address>
+								<settlement>Baltimore</settlement>,
+								<region>MD</region>
+								<postCode>21218</postCode>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>4</marker>
+							<orgName type="department">UCO/Lick Observatory</orgName>,
+							<orgName type="institution">University of California</orgName>,
+							<address>
+								<settlement>Santa Cruz</settlement>,
+								<region>CA</region>
+								<postCode>95064</postCode>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

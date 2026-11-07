@@ -9,7 +9,7 @@
 
 						<affiliation>
 							<marker>1</marker>
-							<orgName type="department">Consultant Physician</orgName>,
+							Consultant Physician,
 							<orgName type="institution">University Hospital Aintree</orgName>,
 							<address>
 								<settlement>Liverpool</settlement>,
@@ -19,18 +19,17 @@
 						</affiliation>
 						<affiliation>
 							<marker>2</marker>
-							<orgName type="department">Consultant Physician</orgName>,
-							<orgName type="institution">Royal Liverpool and Broadgreen University</orgName>,
+							Consultant Physician,
+							<orgName type="institution">Royal Liverpool and Broadgreen University, Hospitals</orgName>,
 							<address>
-								<settlement>Hospitals</settlement>,
-								<region>Liverpool</region>,
+								<settlement>Liverpool</settlement>,
 								<country>UK</country>
 							<lb/>
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="department">Lecturer</orgName>,
+							Lecturer,
 							<orgName type="department">Electronics Department</orgName>,
 							<orgName type="institution">York University</orgName>,
 							<address>

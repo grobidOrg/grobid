@@ -19,8 +19,12 @@
 							(<lb/> 
 							<marker>*</marker>
 							 ) 
-							<orgName type="department">Modelling, Algorithms, and Informatics Group</orgName>,
-							<orgName type="department">CCS-3 MS B256</orgName>
+							<orgName type="laboratory" key="lab1">Modelling, Algorithms, and Informatics Group</orgName>,
+							<!-- check: CCS-3 read as the LANL group code of the same group (second name of the laboratory, same key) and MS B256 as a mail stop; retyped laboratory and split the mail stop into an addrLine -->
+							<orgName type="laboratory" key="lab1">CCS-3</orgName>
+							<address>
+								<addrLine>MS B256</addrLine>
+							</address>
 							<lb/>
 							<orgName type="institution">Los Alamos National Laboratory</orgName>
 							<lb/>

@@ -47,9 +47,9 @@
 						<affiliation>
 							<marker>3</marker> ;
 							<orgName type="department">Division of Vector-Borne Infectious Diseases</orgName>,
-							<orgName type="department">Centers for Disease Control<lb/> and Prevention</orgName>,
+							<orgName type="institution">Centers for Disease Control<lb/> and Prevention</orgName>,
 							<address>
-								<addrLine>Fort Collins</addrLine>,
+								<settlement>Fort Collins</settlement>,
 								<region>Colorado</region>
 								<postCode>80522</postCode>
 							<lb/>

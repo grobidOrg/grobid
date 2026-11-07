@@ -13,7 +13,7 @@
 							<orgName type="institution">Kyorin University School of Medicine</orgName>,
 							<address>
 								<settlement>Mitaka</settlement>,
-								<settlement>Tokyo</settlement>,
+								<region>Tokyo</region>,
 								<country>Japan</country>;
 							</address>
 						</affiliation>

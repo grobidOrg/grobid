@@ -11,8 +11,6 @@
 							<orgName type="department">School of Veterinary Medicine</orgName>,
 							<lb/>
 							<marker>3</marker>
-						</affiliation>
-						<affiliation>
 							<orgName type="institution">University of Nevada</orgName>,
 							<address>
 								<settlement>Reno</settlement>,
@@ -24,7 +22,7 @@
 							<marker>4</marker>
 						</affiliation>
 						<affiliation>
-							<orgName type="department">Agricultural Research Service U.S. Department of Agriculture</orgName>,
+							<orgName type="department">Agricultural Research Service</orgName> <orgName type="institution">U.S. Department of Agriculture</orgName>,
 							<address>
 								<settlement>Beltsville</settlement>,
 								<region>Maryland</region>

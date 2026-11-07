@@ -9,9 +9,10 @@
 
 						<affiliation>
 							<orgName type="institution">JILA</orgName>,
-							<orgName type="institution">National Institute of Standards and Technology and University of Colorado</orgName>,
-							<orgName type="department">Department of Physics Boulder</orgName>,
+							<orgName type="institution" key="instit1">National Institute of Standards and Technology</orgName> and <orgName type="institution" key="instit2">University of Colorado</orgName>,
+							<orgName type="department">Department of Physics</orgName>
 							<address>
+								<settlement>Boulder</settlement>,
 								<region>CO</region>
 								<postCode>80309</postCode>
 							<lb/>

@@ -8,7 +8,11 @@
 
 	<page>1<lb/></page>
 
-	<reference>Scientific Data |<lb/> (2022) 9:435 | https://doi.org/10.1038/s41597-022-01551-8<lb/> www.nature.com/scientificdata<lb/></reference>
+	<reference>Scientific Data |<lb/> (2022) 9:435 |</reference>
+
+	<idno>https://doi.org/10.1038/s41597-022-01551-8<lb/></idno>
+
+	<ptr type="web">www.nature.com/scientificdata<lb/></ptr>
 
 	<docTitle>
 	<titlePart>High-resolution Digital Surface<lb/> Model of the 2021 eruption deposit<lb/> of Cumbre Vieja volcano, La Palma, Spain<lb/></titlePart>

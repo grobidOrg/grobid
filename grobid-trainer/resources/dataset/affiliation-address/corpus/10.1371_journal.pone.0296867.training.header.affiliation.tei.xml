@@ -11,9 +11,9 @@
 							<marker>1</marker>
 							<orgName type="department">Biological Psychology of Decision Making</orgName>,
 							<orgName type="department">Institute of Experimental Psychology</orgName>,
-                            <orgName type="institute">Heinrich Heine University<lb/> Du ¨sseldorf</orgName>,
+                            <orgName type="institution">Heinrich Heine University<lb/> Du ¨sseldorf</orgName>,
 							<address>
-								<addrLine>Du ¨sseldorf</addrLine>,
+								<settlement>Du ¨sseldorf</settlement>,
 								<country>Germany</country>,
 							</address>
 						</affiliation>
@@ -23,7 +23,7 @@
 							<orgName type="department">Medical<lb/> Faculty</orgName>,
 							<orgName type="institution">Heinrich Heine University</orgName>
 							<address>
-								<addrLine>Du ¨sseldorf</addrLine>,
+								<settlement>Du ¨sseldorf</settlement>,
 								<country>Germany</country>
 							<lb/>
 							</address>

@@ -9,9 +9,9 @@
 					<analytic>
 						<author>
 							<affiliation>
-								<orgName type="department" key="dep1">Institute of High Energy Physics</orgName>
+								<orgName type="department">Institute of High Energy Physics</orgName>
 								and
-								<orgName type="department" key="dep2">Theoretical Physics Center for Science Facilities</orgName>,<lb/>
+								<orgName type="department">Theoretical Physics Center for Science Facilities</orgName>,<lb/>
 								<orgName type="institution">Chinese Academy of Sciences</orgName>,
 								<address>				
 									<postBox>P.O. Box 918</postBox>,
@@ -22,9 +22,9 @@
 							</affiliation>
 
 							<affiliation>
-								<orgName type="department" key="dep1">Institute of High Energy Physics</orgName>
+								<orgName type="department">Institute of High Energy Physics</orgName>
 								and
-								<orgName type="department" key="dep2">Theoretical Physics Center for Science Facilities</orgName>,<lb/>
+								<orgName type="department">Theoretical Physics Center for Science Facilities</orgName>,<lb/>
 								<orgName type="institution">Chinese Academy of Sciences</orgName>,
 								<address>				
 									<postBox>P.O. Box 918</postBox>,
