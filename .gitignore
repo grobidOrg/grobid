@@ -90,3 +90,6 @@ Dockerfile.software
 Dockerfile.datastet
 .run
 **/**/*pycache*
+
+# Wapiti models saved before compaction, kept locally next to the compacted model.wapiti
+grobid-home/models/**/model.extended.wapiti

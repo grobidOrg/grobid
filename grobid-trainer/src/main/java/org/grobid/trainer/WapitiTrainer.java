@@ -16,9 +16,13 @@
 package org.grobid.trainer;
 
 import java.io.File;
+import java.io.IOException;
 import java.math.BigDecimal;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
 
 import org.grobid.core.GrobidModel;
+import org.grobid.core.exceptions.GrobidException;
 import org.grobid.core.jni.WapitiModel;
 
 public class WapitiTrainer implements GenericTrainer {
@@ -57,13 +61,8 @@ public class WapitiTrainer implements GenericTrainer {
             incrementalBlock += " -m " + inputModelPath;
         }
 
-        // --compact drops from the saved model the observations that no non-zero weight refers to:
-        // the model labels exactly the same, loads faster and is much smaller (the observation
-        // strings are the bulk of an uncompacted model), see the Wapiti manual
         WapitiModel.train(template, trainingData, outputModel, "--nthread " + numThreads +
         //       		" --algo sgd-l1" +
-                " --compact"
-                +
                 " -e "
                 + BigDecimal.valueOf(epsilon).toPlainString()
                 +
@@ -73,6 +72,21 @@ public class WapitiTrainer implements GenericTrainer {
                 " -i "
                 + nbMaxIterations
                 + incrementalBlock);
+
+        // the model is saved by Wapiti with all its observations (the "extended" model), kept next to
+        // the final model, then compacted: the observations that no non-zero weight refers to are
+        // dropped, the compacted model labels exactly the same, loads faster and is much smaller
+        File extendedModel = WapitiModelCompactor.extendedModelPath(outputModel);
+        try {
+            Files.move(outputModel.toPath(), extendedModel.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException e) {
+            throw new GrobidException("Cannot rename the trained model "
+                    + outputModel.getAbsolutePath()
+                    + " to "
+                    + extendedModel.getAbsolutePath(), e);
+        }
+        System.out.println("Extended model saved in " + extendedModel.getAbsolutePath());
+        WapitiModelCompactor.compact(extendedModel, outputModel);
     }
 
     @Override
