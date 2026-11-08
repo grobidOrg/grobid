@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Marina</forename>
+<middlename>Barreto</middlename>
+<surname>Felisbino</surname>
+<marker>a,b †</marker> ,
+</persName>
+<persName>
+<forename>Mark</forename>
+<surname>Ziemann</surname>
+<marker>* b †</marker> ,
+</persName>
+<persName>
+<forename>Ishant</forename>
+<surname>Khurana</surname>
+<marker>b</marker> ,
+</persName>
+<persName>
+<forename>Camila</forename>
+<surname>Borges Martins de Oliveira</surname>
+<marker>a</marker> ,
+</persName>
+<persName>
+<forename>Maria</forename>
+<middlename>Luiza</middlename>
+<middlename>S</middlename>.
+<surname>Mello</surname>
+<marker>a ‡</marker> ,
+</persName>
+<persName>
+<forename>Assam</forename>
+<surname>El-Osta</surname>
+<marker>b ‡</marker>
+</persName>
+<persName>
+<forename>Mark</forename>
+<surname>Ziemann</surname>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

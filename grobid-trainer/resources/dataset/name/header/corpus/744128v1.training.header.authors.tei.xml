@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Tra</forename><middlename>Thi</middlename><middlename>Huong</middlename><surname>Dinh</surname>,<marker>1,2,3,15</marker></persName>
+<persName><forename>Hiroyoshi</forename><surname>Iseki</surname>,<marker>1,4,15</marker></persName>
+<persName><forename>Seiya</forename><surname>Mizuno</surname>,<marker>1,5,15</marker></persName>
+<persName><forename>Saori</forename><surname>Iijima-Mizuno</surname>,<marker>1,6</marker></persName>
+<persName><forename>Yoko</forename><surname>Tanimoto</surname>,<marker>1</marker></persName>
+<persName><forename>Yoko</forename><surname>Daitoku</surname>,<marker>1</marker></persName>
+<persName><forename>Kanako</forename><surname>Kato</surname>,<marker>1</marker></persName>
+<persName><forename>Yuko</forename><surname>Hamada</surname>,<marker>1</marker></persName>
+<persName><forename>Ammar</forename><middlename>Shaker</middlename><middlename>Hamed</middlename><surname>Hasan</surname>,<marker>1,7</marker></persName>
+<persName><forename>Hayate</forename><surname>Suzuki</surname>,<marker>1,8</marker></persName>
+<persName><forename>Kazuya</forename><surname>Murata</surname>,<marker>1</marker></persName>
+<persName><forename>Masafumi</forename><surname>Muratani</surname>,<marker>5,9</marker></persName>
+<persName><forename>Masatsugu</forename><surname>Ema</surname>,<marker>10</marker></persName>
+<persName><forename>Jun- dal</forename><surname>Kim</surname>,<marker>11</marker></persName>
+<persName><forename>Junji</forename><surname>Ishida</surname>,<marker>11</marker></persName>
+<persName><forename>Akiyoshi</forename><surname>Fukamizu</surname>,<marker>11</marker></persName>
+<persName><forename>Mitsuyasu</forename><surname>Kato</surname>,<marker>5,12</marker></persName>
+<persName><forename>Satoru</forename><surname>Takahashi</surname>,<marker>1,5</marker></persName>
+<persName><forename>Ken- ichi</forename><surname>Yagami</surname>,<marker>1</marker></persName>
+<persName><forename>Valerie</forename><surname>Wilson</surname>,<marker>13</marker></persName>
+<persName><forename>Ruth</forename><middlename>M</middlename>.<surname>Arkell</surname>,<marker>14</marker> and</persName>
+<persName><forename>Fumihiro</forename><surname>Sugiyama</surname><marker>1,5,*</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

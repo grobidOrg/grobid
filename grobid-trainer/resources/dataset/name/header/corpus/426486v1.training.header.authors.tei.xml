@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+	<persName>
+		<surname>Polino</surname>,
+		<forename>Alexander</forename>
+		<middlename>J</middlename>.
+		<marker>a*</marker> ,
+	</persName>
+	<persName>
+		<surname>Nasamu Armiyaw</surname>,
+		<forename>S</forename>.
+		<marker>a*</marker> ,
+	</persName>
+	<persName>
+		<surname>Niles</surname>,
+		<forename>Jacquin</forename>
+		<middlename>C</middlename>.
+		<marker>b#</marker> ,
+	</persName>
+	<persName>
+		<surname>Goldberg</surname>,
+		<forename>Daniel</forename>
+		<middlename>E</middlename>.
+		<marker>a# a</marker>
+	</persName>
+	<persName>
+		<forename>Daniel</forename>
+		<surname>Goldberg</surname>,
+	</persName>
+	<persName>
+		<forename>Jacquin</forename>
+		<surname>Niles</surname>
+	</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

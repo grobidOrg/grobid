@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Menglan</forename> <surname>Xiang1</surname>, <marker>2,3</marker> ,</persName>
+<persName><forename>Rubén</forename> <middlename>Adrián</middlename> <surname>Grosso4</surname> ,</persName>
+<persName><forename>Akira</forename> <surname>Takeda5</surname> ,</persName>
+<persName><forename>Junliang</forename> <surname>Pan2</surname>, <marker>3</marker> ,</persName>
+<persName><forename>Tove</forename> <surname>Bekkhus4</surname> ,</persName>
+<persName><forename>Kevin</forename> <surname>Brulois2</surname>, <marker>3</marker> ,</persName>
+<persName><forename>Denis</forename> <surname>Dermadi1</surname>, <marker>2</marker> ,</persName>
+<persName><forename>Sofia</forename> <surname>Nordling1</surname>, <marker>2,3</marker> ,</persName>
+<persName><forename>Michael</forename> <surname>Vanlandewijck4</surname>, <marker>6</marker> ,</persName>
+<persName><forename>Sirpa</forename> <surname>Jalkanen5</surname> ,</persName>
+<persName><forename>Maria</forename> <middlename>H</middlename>. <surname>Ulvmar4</surname>, <marker>#,*</marker> and</persName>
+<persName><forename>Eugene</forename> <middlename>C</middlename>. <surname>Butcher1</surname>, <marker>2,3,#,*</marker></persName>
+<persName><forename>Eugene</forename> <middlename>C</middlename>. <surname>Butcher</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

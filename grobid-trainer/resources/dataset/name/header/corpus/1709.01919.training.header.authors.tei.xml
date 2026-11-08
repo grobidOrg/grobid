@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Ming</forename> <surname>Yu</surname></persName>
+<persName><forename>Varun</forename> <surname>Gupta</surname></persName>
+<persName><forename>Mladen</forename> <surname>Kolar</surname></persName>
+<persName><forename>Boaz</forename> <surname>Nadler</surname></persName>
+<persName><forename>Varun</forename> <surname>Gupta</surname>, and</persName>
+<persName><forename>Mladen</forename> <surname>Kolar</surname>.</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

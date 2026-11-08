@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Éber</forename><middlename>Coelho</middlename><surname>Paraguassu</surname>,<roleName>MD</roleName><marker>1</marker> ,</persName>
+<persName><forename>Anneli</forename><middlename>Celis</middlename><middlename>Mercedes</middlename><surname>de Cardenas</surname>,<roleName>PhD</roleName><marker>2</marker></persName>
+<persName><forename>Éber</forename><middlename>Coelho</middlename><surname>Paraguassu</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

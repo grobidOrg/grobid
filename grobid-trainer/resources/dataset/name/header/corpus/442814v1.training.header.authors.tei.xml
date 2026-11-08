@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Carolin</forename> <middlename>A</middlename> <surname>Müller</surname> <marker>1+</marker>, </persName>
+<persName><forename>Michael</forename> <middlename>A</middlename> <surname>Boemo</surname> <marker>1+</marker>, </persName>
+<persName><forename>Paolo</forename> <surname>Spingardi</surname> <marker>2</marker>, </persName>
+<persName><forename>Benedikt</forename> <middlename>M</middlename> <surname>Kessler</surname> <marker>3</marker>, </persName>
+<persName><forename>Skirmantas</forename> <surname>Kriaucionis</surname> <marker>2</marker>, </persName>
+<persName><forename>Jared</forename> <middlename>T</middlename> <surname>Simpson</surname> <marker>4,5</marker>, </persName>
+<persName><forename>Conrad</forename> <middlename>A</middlename> <surname>Nieduszynski</surname> <marker>1*</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

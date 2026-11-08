@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Makenzie</forename> <middlename>E</middlename>. <surname>Mabry</surname> <marker>1</marker></persName>
+<persName><forename>Julia</forename> <middlename>M</middlename>. <surname>Brose</surname></persName>
+<persName><forename>Paul</forename> <middlename>D</middlename>. <surname>Blischak</surname></persName>
+<persName><forename>Brittany</forename> <surname>Sutherland</surname></persName>
+<persName><forename>Wade</forename> <middlename>T</middlename>. <surname>Dismukes</surname></persName>
+<persName><forename>Christopher</forename> <middlename>A</middlename>. <surname>Bottoms</surname></persName>
+<persName><forename>Patrick</forename> <middlename>P</middlename>. <surname>Edger</surname></persName>
+<persName><forename>Jacob</forename> <middlename>D</middlename>. <surname>Washburn</surname></persName>
+<persName><forename>Hong</forename> <surname>An</surname></persName>
+<persName><forename>Jocelyn</forename> <middlename>C</middlename>. <surname>Hall</surname></persName>
+<persName><forename>Michael</forename> <middlename>R</middlename>. <surname>McKain</surname></persName>
+<persName><forename>Ihsan</forename> <surname>Al-Shehbaz</surname></persName> Louis, MO,
+U. S. A.
+<persName><forename>Michael</forename> <middlename>S</middlename>. <surname>Barker</surname></persName>
+<persName><forename>M</forename>. <middlename>Eric</middlename> <surname>Schranz</surname></persName>
+<persName><forename>Gavin</forename> <middlename>C</middlename>. <surname>Conant</surname></persName>
+<persName><forename>J</forename>. <middlename>Chris</middlename> <surname>Pires</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

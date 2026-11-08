@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Obi</forename>
+<middlename>L</middlename>
+<surname>Griffith</surname>,
+<roleName>PhD</roleName>
+<marker>1,2,3,4,*</marker> ,
+</persName>
+<persName>
+<forename>Nicholas</forename>
+<middlename>C</middlename>
+<surname>Spies</surname>,
+<roleName>BSc</roleName>
+<marker>1,*</marker> ,
+</persName>
+<persName>
+<forename>Meenakshi</forename>
+<surname>Anurag</surname>,
+<roleName>PhD</roleName>
+<marker>5,6*</marker> ,
+</persName>
+<persName>
+<forename>Malachi</forename>
+<surname>Griffith</surname>,
+<roleName>PhD</roleName>
+<marker>1,2,3,4</marker> ,
+</persName>
+<persName>
+<forename>Jingqin</forename>
+<surname>Luo</surname>,
+<roleName>PhD</roleName>
+<marker>3,6</marker> ,
+</persName>
+<persName>
+<forename>Dongsheng</forename>
+<surname>Tu</surname>,
+<roleName>PhD</roleName>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>Belinda</forename>
+<surname>Yeo</surname>,
+<roleName>PhD</roleName>
+<marker>9</marker> ,
+</persName>
+<persName>
+<forename>Jason</forename>
+<surname>Kunisaki</surname>,
+<roleName>BSc</roleName>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Christopher</forename>
+<middlename>A</middlename>
+<surname>Miller</surname>,
+<roleName>PhD</roleName>
+<marker>1,2</marker> ,
+</persName>
+<persName>
+<forename>Kilannin</forename>
+<surname>Krysiak</surname>,
+<roleName>PhD</roleName>
+<marker>1,2</marker> ,
+</persName>
+<persName>
+<forename>Jasreet</forename>
+<surname>Hundal</surname>,
+<roleName>MSc</roleName>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Benjamin</forename>
+<middlename>J</middlename>
+<surname>Ainscough</surname>,
+<roleName>BSc</roleName>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Zachary</forename>
+<middlename>L</middlename>
+<surname>Skidmore</surname>,
+<roleName>MEng</roleName>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Katie</forename>
+<surname>Campbell</surname>,
+<roleName>BSc</roleName>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Runjun</forename>
+<surname>Kumar</surname>,
+<roleName>BSc</roleName>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Catrina</forename>
+<surname>Fronick</surname>,
+<roleName>BSc</roleName>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Lisa</forename>
+<surname>Cook</surname>,
+<roleName>BSc</roleName>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Jacqueline</forename>
+<middlename>E</middlename>
+<surname>Snider</surname>,
+<roleName>BSc</roleName>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Sherri</forename>
+<surname>Davies</surname>,
+<roleName>PhD</roleName>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Shyam</forename>
+<middlename>M</middlename>
+<surname>Kavuri</surname>,
+<roleName>PhD</roleName>
+<marker>5,6</marker> ,
+</persName>
+<persName>
+<forename>Eric</forename>
+<middlename>C</middlename>
+<surname>Chang</surname>,
+<roleName>PhD</roleName>
+<marker>5,6</marker> ,
+</persName>
+<persName>
+<forename>Vincent</forename>
+<surname>Magrini</surname>,
+<roleName>PhD</roleName>
+<marker>1,4,10</marker> ,
+</persName>
+<persName>
+<forename>David</forename>
+<middlename>E</middlename>
+<surname>Larson</surname>,
+<roleName>PhD</roleName>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Robert</forename>
+<middlename>S</middlename>
+<surname>Fulton</surname>,
+<roleName>MSc</roleName>
+<marker>1,4</marker> ,
+</persName>
+<persName>
+<forename>Shuzhen</forename>
+<surname>Liu</surname>,
+<roleName>MSc</roleName>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>Samuel</forename>
+<surname>Leung</surname>,
+<roleName>MSc</roleName>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>David</forename>
+<surname>Voduc</surname>,
+<roleName>MD</roleName>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>Ron</forename>
+<surname>Bose</surname>,
+<roleName>MD</roleName>, <roleName>PhD</roleName>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Mitch</forename>
+<surname>Dowsett</surname>
+<roleName>PhD</roleName>, <roleName>FMedSci</roleName>
+<marker>9</marker> ,
+</persName>
+<persName>
+<forename>Richard</forename>
+<middlename>K</middlename>
+<surname>Wilson</surname>,
+<roleName>PhD</roleName>
+<marker>1,3,4</marker> ,
+</persName>
+<persName>
+<forename>Torsten</forename>
+<middlename>O</middlename>
+<surname>Nielsen</surname>,
+<roleName>MD</roleName>, <roleName>PhD</roleName>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>Elaine</forename>
+<middlename>R</middlename>
+<surname>Mardis</surname>,
+<roleName>PhD</roleName>
+<marker>1,3,4,10, †</marker> ,
+</persName>
+<persName>
+<forename>Matthew</forename>
+<middlename>J</middlename>
+<surname>Ellis</surname>
+<roleName>MB</roleName>, <roleName>BChir</roleName>, <roleName>PhD</roleName>
+<marker>5,6 †</marker>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

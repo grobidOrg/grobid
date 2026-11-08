@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Thiago</forename><surname>Barbosa de Souza</surname><marker>1,*</marker> ,</persName>
+<persName><forename>Thais</forename><middlename>Louvain</middlename><surname>de Souza</surname><marker>1,2</marker> ,</persName>
+<persName><forename>Cristina</forename><surname>dos Santos Ferreira</surname><marker>1</marker> ,</persName>
+<persName><forename>Cleiton</forename><middlename>Figueiredo</middlename><middlename>Osório</middlename><surname>da Silva</surname><marker>1 , #</marker> ,</persName>
+<persName><forename>Liliana</forename><middlename>Carmen</middlename><surname>Rossetti</surname><marker>3</marker> ,</persName>
+<persName><forename>Vanina</forename><middlename>Daniela</middlename><surname>Marchione</surname><marker>3</marker> ,</persName>
+<persName><forename>Carlos</forename><middlename>Daniel</middlename><surname>De Brasi</surname><marker>3, 4</marker> ,</persName>
+<persName><forename>Enrique</forename><surname>Medina-Acosta</surname><marker>1,*</marker></persName>
+<persName><forename>Enrique</forename><surname>Medina-Acosta</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

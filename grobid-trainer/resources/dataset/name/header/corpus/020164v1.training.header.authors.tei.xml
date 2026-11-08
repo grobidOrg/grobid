@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Eric</forename> <middlename>R</middlename>. <surname>Gamazon</surname> <marker>†1,2</marker> ,</persName>
+<persName><forename>Heather</forename> <middlename>E</middlename>. <surname>Wheeler</surname> <marker>†4</marker> ,</persName>
+<persName><forename>Kaanan</forename> <middlename>P</middlename>. <surname>Shah</surname> <marker>†1</marker> ,</persName>
+<persName><forename>Sahar</forename> <middlename>V</middlename>. <surname>Mozaffari</surname> <marker>5</marker> ,</persName>
+<persName><forename>Keston</forename> <surname>Aquino-Michaels</surname> <marker>1</marker> ,</persName>
+<persName><forename>Robert</forename> <middlename>J</middlename>. <surname>Carroll</surname> <marker>3</marker> ,</persName>
+<persName><forename>Anne</forename> <middlename>E</middlename>. <surname>Eyler</surname> <marker>3</marker> ,</persName>
+<persName><forename>Joshua</forename> <middlename>C</middlename>. <surname>Denny</surname> <marker>3</marker> ,</persName>
+GTEx Consortium,
+<persName><forename>Dan</forename> <middlename>L</middlename>. <surname>Nicolae</surname> <marker>1,5,6</marker> ,</persName>
+<persName><forename>Nancy</forename> <middlename>J</middlename>. <surname>Cox</surname> <marker>1,2,5</marker> , and</persName>
+<persName><forename>Hae</forename> <middlename>Kyung</middlename> <surname>Im</surname> <marker>*1</marker></persName>
+<persName><forename>Hae</forename> <middlename>Kyung</middlename> <surname>Im</surname>,</persName>
+R01 MH060912,
+<persName><forename>Myrna</forename> <middlename>M</middlename>. <surname>Weissman</surname>, <roleName>Ph.D</roleName>. and</persName>
+<persName><forename>James</forename> <middlename>K</middlename>. <surname>Knowles</surname>, <roleName>M.D</roleName>., <roleName>Ph.D</roleName>.; R01 MH060866,</persName>
+<persName><forename>George</forename> <middlename>S</middlename>. <surname>Zubenko</surname>, <roleName>M.D</roleName>., <roleName>Ph.D</roleName>. and</persName>
+<persName><forename>Wendy</forename> <middlename>N</middlename>. <surname>Zubenko</surname>, <roleName>Ed</roleName>. <roleName>D</roleName>., <roleName>R.N</roleName>., <roleName>C</roleName>. <roleName>S</roleName>.</persName>; MD, R01 MH059552,
+<persName><forename>J</forename>. <middlename>Raymond</middlename> <surname>DePaulo</surname>, <roleName>M.D</roleName>.,</persName>
+<persName><forename>Melvin</forename> <middlename>G</middlename>. <surname>McInnis</surname>, <roleName>M.D</roleName>. and</persName>
+<persName><forename>Dean</forename> <surname>MacKinnon</surname>, <roleName>M.D</roleName>.; RO1 MH61686,</persName>
+<persName><forename>Douglas</forename> <middlename>F</middlename>. <surname>Levinson</surname>, <roleName>M.D</roleName>. (GenRED coordinator),</persName>
+<persName><forename>Madeleine</forename> <middlename>M</middlename>. <surname>Gladis</surname>, <roleName>Ph.D</roleName>.,</persName>
+<persName><forename>Kathleen</forename> <surname>Murphy- Eberenz</surname>, <roleName>Ph.D</roleName>. and</persName>
+<persName><forename>Peter</forename> <surname>Holmans</surname>, <roleName>Ph.D</roleName>.</persName>
+<persName><forename>Raymond</forename> <middlename>R</middlename>. <surname>Crowe</surname>, <roleName>M.D</roleName>. and</persName>
+<persName><forename>William</forename> <middlename>H</middlename>. <surname>Coryell</surname>, <roleName>M.D</roleName>.; R01 MH 060912,</persName>
+<persName><forename>Myrna</forename> <middlename>M</middlename>. <surname>Weissman</surname>, <roleName>Ph.D</roleName>.;</persName>
+Baltimore, MD, R01 MH059552,
+<persName><forename>J</forename>. <middlename>Raymond</middlename> <surname>DePaulo</surname>, <roleName>M.D</roleName>., and</persName>
+<persName><forename>James</forename> <middlename>B</middlename>. <surname>Potash</surname>, <roleName>M.D</roleName>., <roleName>M.P.H</roleName>.; R01 MH61686,</persName>
+<persName><forename>Douglas</forename> <middlename>F</middlename>. <surname>Levinson</surname>, <roleName>M.D</roleName>. (GenRED coordinator); IW, R01 MH059542e,</persName>
+<persName><forename>Raymond</forename> <middlename>R</middlename>. <surname>Crowe</surname>, <roleName>M.D</roleName>., and</persName>
+<persName><forename>William</forename> <middlename>H</middlename>. <surname>Coryell</surname>, <roleName>M.D</roleName>.;</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

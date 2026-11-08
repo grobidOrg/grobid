@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Heng</forename><surname>Zhou</surname> <marker>a</marker> ,</persName>
+<persName><forename>Qian</forename> (<middlename>Chayn</middlename>) <surname>Sun</surname> <marker>b</marker> ,</persName>
+<persName><forename>Alison</forename><surname>Blane</surname> <marker>c</marker> ,</persName>
+<persName><forename>Brett</forename><surname>Hughes</surname> <marker>d</marker> ,</persName>
+<persName><forename>Torbjörn</forename><surname>Falkmer</surname> <marker>c, e, f, g</marker> and</persName>
+<persName><forename>Jianhong</forename> (<middlename>Cecilia</middlename>) <surname>Xia</surname> <marker>a</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

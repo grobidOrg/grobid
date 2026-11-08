@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Stephenie</forename> <middlename>D</middlename>. <surname>Prokopec</surname> <marker>1 ¶</marker> ,</persName>
+<persName><forename>Aileen</forename> <surname>Lu</surname> <marker>1,2 ¶</marker> ,</persName>
+<persName><forename>Sandy</forename> <middlename>Che-Eun</middlename> <middlename>S</middlename>. <surname>Lee</surname> <marker>1 ¶</marker> ,</persName>
+<persName><forename>Cindy</forename> <middlename>Q</middlename>. <surname>Yao</surname> <marker>1</marker> ,</persName>
+<persName><forename>Ren</forename> <middlename>X</middlename>. <surname>Sun</surname> <marker>1</marker> ,</persName>
+<persName><forename>John</forename> <middlename>D</middlename>. <surname>Watson</surname> <marker>1</marker> ,</persName>
+<persName><forename>Richard</forename> <surname>de Borja</surname> <marker>1</marker> ,</persName>
+<persName><forename>Ada</forename> <surname>Wong</surname> <marker>3</marker> ,</persName>
+<persName><forename>Michelle</forename> <surname>Sam</surname> <marker>3</marker> ,</persName>
+<persName><forename>Philip</forename> <surname>Zuzarte</surname> <marker>3</marker> ,</persName>
+<persName><forename>John</forename> <middlename>D</middlename>. <surname>McPherson</surname> <marker>3</marker> ,</persName>
+<persName><forename>Allan</forename> <middlename>B</middlename>. <surname>Okey</surname> <marker>2,*</marker> ,</persName>
+<persName><forename>Raimo</forename> <surname>Pohjanvirta</surname> <marker>4,5,*</marker> ,</persName>
+<persName><forename>Paul</forename> <middlename>C</middlename>. <surname>Boutros</surname> <marker>1,2,6,7,8,9,10,*</marker></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

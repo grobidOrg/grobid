@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Jessie</forename><middlename>A</middlename>.<surname>Kull</surname>,<marker>*</marker></persName>
+<persName><forename>Katy</forename><middlename>L</middlename>.<surname>Proudfoot</surname> <marker>†</marker> ,</persName>
+<persName><forename>Gina</forename><middlename>M</middlename>.<surname>Pighetti</surname><marker>*</marker>,</persName>
+<persName><forename>Jeffery</forename><middlename>M</middlename>.<surname>Bewley</surname><marker>3</marker> ,</persName>
+<persName><forename>Bruce</forename><middlename>F</middlename>.<surname>O&apos;Hara</surname><marker>‡</marker> ,</persName>
+<persName><forename>Kevin</forename><middlename>D</middlename>.<surname>Donohue</surname><marker>#</marker> , and</persName>
+<persName><forename>Peter</forename><middlename>D</middlename>.<surname>Krawczel</surname><marker>* 1</marker></persName>
+<persName><roleName>Dr</roleName>. <forename>Peter</forename><surname>Krawczel</surname>,</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

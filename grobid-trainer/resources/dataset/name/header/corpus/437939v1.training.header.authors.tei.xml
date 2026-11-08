@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Woodhead</surname> <forename>ZVJ</forename> <marker>* 1</marker>, </persName>
+<persName><surname>Bradshaw</surname> <forename>AR</forename> <marker>1</marker>, </persName>
+<persName><surname>Wilson</surname> <forename>AC</forename> <marker>1</marker>, </persName>
+<persName><surname>Thompson</surname> <forename>PA</forename> <marker>1</marker>, </persName>
+<persName><surname>Bishop</surname> <forename>DVM</forename> <marker>1</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

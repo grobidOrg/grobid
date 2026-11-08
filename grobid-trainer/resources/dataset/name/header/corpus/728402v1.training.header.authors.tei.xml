@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Isabel</forename><surname>del Pino</surname><marker>1 *°</marker>,</persName>
+<persName><forename>Chiara</forename><surname>Tocco</surname><marker>2 *</marker>,</persName>
+<persName><forename>Elia</forename><surname>Magrinelli</surname><marker>2 * #</marker>,</persName>
+<persName><forename>Andrea</forename><surname>Marcantoni</surname><marker>3 *</marker>,</persName>
+<persName><forename>Celeste</forename><surname>Ferraguto</surname><marker>2</marker>,</persName>
+<persName><forename>Giulia</forename><surname>Tomagra</surname><marker>3</marker>,</persName>
+<persName><forename>Christian</forename><surname>Alfano</surname><marker>2+</marker>,</persName>
+<persName><forename>Xavier</forename><surname>Leinekugel</surname><marker>1&amp;</marker>,</persName>
+<persName><forename>Andreas</forename><surname>Frick</surname><marker>1&amp;</marker> and</persName>
+<persName><forename>Michèle</forename><surname>Studer</surname><marker>2&amp;@</marker></persName>
+<persName><forename>Michèle</forename><surname>Studer</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

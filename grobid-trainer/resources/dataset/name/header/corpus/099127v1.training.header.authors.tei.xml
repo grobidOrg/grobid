@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename>Alexander</forename> <surname>Sczyrba</surname> <marker>1*</marker> ,</persName>
+							<persName><forename>Peter</forename> <surname>Hofmann</surname> <marker>2,3*</marker> ,</persName>
+							<persName><forename>Peter</forename> <surname>Belmann</surname> <marker>1,3*</marker> ,</persName>
+							<persName><forename>David</forename> <surname>Koslicki</surname> <marker>4</marker> ,</persName>
+							<persName><forename>Stefan</forename> <surname>Janssen</surname> <marker>3,6</marker> ,</persName>
+							<persName><forename>Johannes</forename> <surname>Dröge</surname> <marker>2,3</marker> ,</persName>
+							<persName><forename>Ivan</forename> <surname>Gregor</surname> <marker>2,3,9</marker> ,</persName>
+							<persName><forename>Stephan</forename> <surname>Majda</surname> <marker>2,8</marker> ,</persName>
+							<persName><forename>Jessika</forename> <surname>Fiedler</surname> <marker>2,3</marker> ,</persName>
+							<persName><forename>Eik</forename> <surname>Dahms</surname> <marker>2,3</marker> ,</persName>
+							<persName><forename>Andreas</forename> <surname>Bremges</surname> <marker>1,3,43</marker> ,</persName>
+							<persName><forename>Adrian</forename> <surname>Fritz</surname> <marker>3</marker> ,</persName>
+							<persName><forename>Ruben</forename> <surname>Garrido-Oter</surname> <marker>2,3,10,11</marker> ,</persName>
+							<persName><forename>Tue</forename> <surname>Sparholt Jørgensen</surname> <marker>14,15,45</marker> ,</persName>
+							<persName><forename>Nicole</forename> <surname>Shapiro</surname> <marker>5</marker> ,</persName>
+							<persName><forename>Philip</forename> <middlename>D</middlename>. <surname>Blood</surname> <marker>7</marker> ,</persName>
+							<persName><forename>Alexey</forename> <surname>Gurevich</surname> <marker>42</marker> ,</persName>
+							<persName><forename>Yang</forename> <surname>Bai</surname> <marker>10,13</marker> ,</persName>
+							<persName><forename>Dmitrij</forename> <surname>Turaev</surname> <marker>41</marker> ,</persName>
+							<persName><forename>Matthew</forename> <middlename>Z</middlename>. <surname>DeMaere</surname> <marker>12</marker> ,</persName>
+							<persName><forename>Rayan</forename> <surname>Chikhi</surname> <marker>20,21</marker> ,</persName>
+							<persName><forename>Niranjan</forename> <surname>Nagarajan</surname> <marker>18</marker> ,</persName>
+							<persName><forename>Christopher</forename> <surname>Quince</surname> <marker>16</marker> ,</persName>
+							<persName><forename>Lars</forename> <middlename>Hestbjerg</middlename> <surname>Hansen</surname> <marker>14</marker> ,</persName>
+							<persName><forename>Søren</forename> <middlename>J</middlename>. <surname>Sørensen</surname> <marker>15</marker> ,</persName>
+							<persName><forename>Burton</forename> <middlename>K</middlename>. <middlename>H</middlename>. <surname>Chia</surname> <marker>18</marker> ,</persName>
+							<persName><forename>Bertrand</forename> <surname>Denis</surname> <marker>18</marker> ,</persName>
+							<persName><forename>Jeff</forename> <middlename>L</middlename>. <surname>Froula</surname> <marker>5</marker> ,</persName>
+							<persName><forename>Zhong</forename> <surname>Wang</surname> <marker>5</marker> ,</persName>
+							<persName><forename>Robert</forename> <surname>Egan</surname> <marker>5</marker> ,</persName>
+							<persName><forename>Dongwan</forename> <middlename>Don</middlename> <surname>Kang</surname> <marker>5</marker> ,</persName>
+							<persName><forename>Jeffrey</forename> <middlename>J</middlename>. <surname>Cook</surname> <marker>19</marker> ,</persName>
+							<persName><forename>Charles</forename> <surname>Deltel</surname> <marker>22,23</marker> ,</persName>
+							<persName><forename>Michael</forename> <surname>Beckstette</surname> <marker>17</marker> ,</persName>
+							<persName><forename>Claire</forename> <surname>Lemaitre</surname> <marker>22,23</marker> ,</persName>
+							<persName><forename>Pierre</forename> <surname>Peterlongo</surname> <marker>22,23</marker> ,</persName>
+							<persName><forename>Guillaume</forename> <surname>Rizk</surname> <marker>23,24</marker> ,</persName>
+							<persName><forename>Dominique</forename> <surname>Lavenier</surname> <marker>21,23</marker> ,</persName>
+							<persName><forename>Yu-Wei</forename> <surname>Wu</surname> <marker>25,44</marker> ,</persName>
+							<persName><forename>Steven</forename> <middlename>W</middlename>. <surname>Singer</surname> <marker>25,26</marker> ,</persName>
+							<persName><forename>Chirag</forename> <surname>Jain</surname> <marker>27</marker> ,</persName>
+							<persName><forename>Marc</forename> <surname>Strous</surname> <marker>28</marker> ,</persName>
+							<persName><forename>Heiner</forename> <surname>Klingenberg</surname> <marker>29</marker> ,</persName>
+							<persName><forename>Peter</forename> <surname>Meinicke</surname> <marker>29</marker> ,</persName>
+							<persName><forename>Michael</forename> <surname>Barton</surname> <marker>5</marker> ,</persName>
+							<persName><forename>Thomas</forename> <surname>Lingner</surname> <marker>30</marker> ,</persName>
+							<persName><forename>Hsin- Hung</forename> <surname>Lin</surname> <marker>31</marker> ,</persName>
+							<persName><forename>Yu-Chieh</forename> <surname>Liao</surname> <marker>31</marker> ,</persName>
+							<persName><forename>Genivaldo</forename> <middlename>Gueiros</middlename> <middlename>Z</middlename>. <surname>Silva</surname> <marker>32</marker> ,</persName>
+							<persName><forename>Daniel</forename> <middlename>A</middlename>. <surname>Cuevas</surname> <marker>32</marker> ,</persName>
+							<persName><forename>Robert</forename> <middlename>A</middlename>. <surname>Edwards</surname> <marker>32</marker> ,</persName>
+							<persName><forename>Surya</forename> <surname>Saha</surname> <marker>33</marker> ,</persName>
+							<persName><forename>Vitor</forename> <middlename>C</middlename>. <surname>Piro</surname> <marker>34,35</marker> ,</persName>
+							<persName><forename>Bernhard</forename> <middlename>Y</middlename>. <surname>Renard</surname> <marker>34</marker> ,</persName>
+							<persName><forename>Mihai</forename> <surname>Pop</surname> <marker>36</marker> ,</persName>
+							<persName><forename>Hans-Peter</forename> <surname>Klenk</surname> <marker>37</marker> ,</persName>
+							<persName><forename>Markus</forename> <surname>Göker</surname> <marker>38</marker> ,</persName>
+							<persName><forename>Nikos</forename> <surname>Kyrpides</surname> <marker>5,39</marker> ,</persName>
+							<persName><forename>Tanja</forename> <surname>Woyke</surname> <marker>5</marker> ,</persName>
+							<persName><forename>Julia</forename> <middlename>A</middlename>. <surname>Vorholt</surname> <marker>40</marker> ,</persName>
+							<persName><forename>Paul</forename> <surname>Schulze-Lefert</surname> <marker>10,11</marker> ,</persName>
+							<persName><forename>Edward</forename> <middlename>M</middlename>. <surname>Rubin</surname> <marker>5</marker> ,</persName>
+							<persName><forename>Aaron</forename> <middlename>E</middlename>. <surname>Darling</surname> <marker>12</marker> ,</persName>
+							<persName><forename>Thomas</forename> <surname>Rattei</surname> <marker>41</marker> ,</persName>
+							<persName><forename>Alice</forename> <middlename>C</middlename>. <surname>McHardy</surname> <marker>2,3,11</marker></persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

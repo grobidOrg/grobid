@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Prince</forename> <surname>Asare</surname>,</persName>
+<persName><forename>Adwoa</forename> <surname>Asante-Poku</surname>,</persName>
+<persName><forename>Diana</forename> <middlename>Ahu</middlename> <surname>Prah</surname>,</persName>
+<persName><forename>Sonia</forename> <surname>Borrell</surname>,</persName>
+<persName><forename>Stephen</forename> <surname>Osei-Wusu</surname>,</persName>
+<persName><forename>Isaac</forename> <middlename>Darko</middlename> <surname>Otchere</surname>,</persName>
+<persName><forename>Audrey</forename> <surname>Forson</surname>,</persName>
+<persName><forename>Gloria</forename> <surname>Adjapong</surname>,</persName>
+<persName><forename>Kwadwo</forename> <middlename>Ansah</middlename> <surname>Koram</surname>,</persName>
+<persName><forename>Sebastien</forename> <surname>Gagneux</surname> and</persName>
+<persName><forename>Dorothy</forename> <surname>Yeboah-Manu</surname></persName>
+AffiliationsP
+<persName><surname>Asare</surname></persName>, <persName><forename>A</forename> <surname>Asante-Poku</surname> <roleName>PhD</roleName>,</persName> <persName><forename>D</forename> <middlename>A</middlename> <surname>Prah</surname> <roleName>MSc</roleName>,</persName> <persName><forename>S</forename> <surname>Osei-Wusu</surname> <roleName>MPhil</roleName>,</persName> <persName><forename>I</forename> <middlename>D</middlename> <surname>Otchere</surname> <roleName>MPhil</roleName>,</persName> <persName><roleName>Prof</roleName> <forename>K</forename> <middlename>A</middlename> <surname>Koram</surname> <roleName>PhD</roleName>,</persName> <persName><roleName>Prof</roleName> <forename>D</forename> <surname>Yeboah-Manu</surname> <roleName>PhD</roleName></persName>) <persName><forename>S</forename> <surname>Borrell</surname> <roleName>PhD</roleName>,</persName> <persName><roleName>Prof</roleName> <forename>S</forename> <surname>Gagneux</surname> <roleName>PhD</roleName></persName>) <persName><forename>S</forename> <surname>Borrell</surname> <roleName>PhD</roleName>,</persName> <persName><roleName>Prof</roleName> <forename>S</forename> <surname>GagneuxA</surname></persName> <persName><surname>Forson</surname></persName> <persName><roleName>Prof</roleName> <forename>Dorothy</forename> <surname>Yeboah-Manu</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+					<author>
+						<persName>
+							 <forename>Jiacheng</forename>
+							 <surname>Wang</surname>,
+						</persName>
+						<persName>
+							 <forename>Hongyang</forename>
+							 <surname>Du</surname>,
+						</persName>
+						<persName>
+							 <forename>Dusit</forename>
+							 <surname>Niyato</surname>,
+							 <roleName>Fellow, IEEE</roleName>,
+						</persName>
+						<persName>
+							 <forename>Jiawen</forename>
+							 <surname>Kang</surname>,
+						</persName>
+						<persName>
+							 <forename>Zehui</forename>
+							 <surname>Xiong</surname>,
+						</persName>
+						<persName>
+							 <forename>Deepu</forename>
+							 <surname>Rajan</surname>,
+						</persName>
+						<persName>
+							 <forename>Shiwen</forename>
+							 <surname>Mao</surname>,
+							 <roleName>Fellow, IEEE</roleName>, and
+						</persName>
+						<persName>
+							 <forename>Xuemin</forename> (<middlename>Sherman</middlename>) <surname>Shen</surname>,
+							 <roleName>Fellow, IEEE</roleName>
+						</persName>
+						<persName>
+							 <forename>J</forename>.
+							 <surname>Wang</surname>,
+						</persName>
+						<persName>
+							 <forename>H</forename>.
+							 <surname>Du</surname>,
+						</persName>
+						<persName>
+							 <forename>D</forename>.
+							 <surname>Niyato</surname>, and
+						</persName>
+						<persName>
+							 <forename>D</forename>.
+							 <surname>Rajan</surname>
+						</persName>
+						<persName>
+							 <forename>J</forename>.
+							 <surname>Kang</surname>
+						</persName>
+						<persName>
+							 <forename>Z</forename>.
+							 <surname>Xiong</surname>
+						</persName>
+						<persName>
+							 <forename>S</forename>.
+							 <surname>Mao</surname>
+						</persName>
+						<persName>
+							 <forename>X</forename>.
+							 <surname>Shen</surname>
+						</persName>
+					</author>
+
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>
