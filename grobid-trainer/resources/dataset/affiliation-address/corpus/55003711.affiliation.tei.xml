@@ -15,9 +15,9 @@
 							<orgName type="institution">National Institutes of Health</orgName>,
 							<address>
 								<addrLine>9800 Medical Center Drive</addrLine>,
-								<postCode>MSC 3370</postCode>
+								<addrLine>MSC 3370</addrLine>
 								<settlement>Bethesda</settlement>,
-								<settlement>Maryland</settlement>
+								<region>Maryland</region>
 								<postCode>20850</postCode>,
 							</address>
 						</affiliation>

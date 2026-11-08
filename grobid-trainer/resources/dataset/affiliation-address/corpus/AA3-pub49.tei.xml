@@ -12,8 +12,8 @@
 							<affiliation>
 								<orgName type="institution">NTT Public Corp.</orgName>,
 								<address>
-									<settlement>Ibaaraki-ken</settlement>,
-								    <country key="US">Japan</country>;
+									<region>Ibaaraki-ken</region>,
+								    <country key="JP">Japan</country>;
                                 </address>
 							</affiliation>
 						</author>			

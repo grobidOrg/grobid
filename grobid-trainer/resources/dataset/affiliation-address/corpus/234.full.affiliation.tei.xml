@@ -18,6 +18,9 @@
 								<country>USA</country>
 							<lb/>
 							</address>
+						</affiliation>
+
+						<affiliation>
 							<orgName type="department">Department of Statistics</orgName>,
 							<orgName type="institution">Beijing Normal University</orgName>,
 							<address>
@@ -26,6 +29,9 @@
 								<country>People&apos;s Republic of China</country>
 							<lb/>
 							</address>
+						</affiliation>
+
+						<affiliation>
 							<orgName type="department">Department of Statistics</orgName>,
 							<orgName type="institution">University of Missouri</orgName>,
 							<address>
@@ -36,6 +42,9 @@
 								<country>USA</country>
 							<lb/>
 							</address>
+						</affiliation>
+
+						<affiliation>
 							<orgName type="department">Department of Statistics and Actuarial Sciences</orgName>,
 							<orgName type="institution">University of Waterloo</orgName>,
 							<address>

@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>a</marker>
+							<orgName type="department">Department of Physics</orgName>,
+							<orgName type="institution">Technische Universität Dresden</orgName>
+							<lb/>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>b</marker>
+							<orgName type="institution">FMP Technology GmbH</orgName>,
+							<address>
+								<addrLine>Am Weichselgarten 34</addrLine>,
+								<postCode>91058</postCode>
+								<settlement>Erlangen</settlement>,
+								<country>Germany</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>c</marker>
+							<orgName type="department">Institute of Thermal Engineering</orgName>,
+							<orgName type="institution">Technische Universität Bergakademie Freiberg</orgName>
+							<lb/>
+							<address>
+								<addrLine>Gustav-Zeuner Straße 7</addrLine>,
+								<postCode>09596</postCode>
+								<settlement>Freiberg</settlement>,
+								<country>Germany</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

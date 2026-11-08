@@ -28,12 +28,19 @@
 	<address>5300 Bonn 1.<lb/></address>
 
 	<byline>
-	<affiliation>2 Department of Computer Science, University of Bonn 5300 Bonn 1 and International Computer<lb/> Science Institute,</affiliation>
+	<affiliation>2 Department of Computer Science, University of Bonn</affiliation>
+	</byline>
+
+	<address>5300 Bonn 1</address>
+
+	and
+	<byline>
+	<affiliation>International Computer<lb/> Science Institute,</affiliation>
 	</byline>
 
 	<address>Berkeley, California.</address>
 
-	Supported in part by the Leibniz Center for Research in<lb/> Computer Science, by the DFG Grant KA 673/4{1 and by the SERC Grant GR{E 68297.<lb/>
+	<note type="funding">Supported in part by the Leibniz Center for Research in<lb/> Computer Science, by the DFG Grant KA 673/4{1 and by the SERC Grant GR{E 68297.<lb/></note>
 
 	<byline>
 	<affiliation>3 Department of Computer Science, University of Texas,</affiliation>

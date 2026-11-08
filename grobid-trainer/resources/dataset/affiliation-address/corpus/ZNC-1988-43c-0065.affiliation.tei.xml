@@ -17,7 +17,9 @@
 								<country>Bundesrepublik Deutschland</country>
 								<lb/>
 							</address>
-							<orgName type="institution">Botanisches Institut</orgName> der
+						</affiliation>
+						<affiliation>
+							<orgName type="department">Botanisches Institut</orgName> der
 							<orgName type="institution">Ludwig-Maximilians-Universität</orgName>,
 							<address>
 								<addrLine>Menzinger Straße 67</addrLine>,

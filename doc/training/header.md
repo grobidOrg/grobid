@@ -52,6 +52,10 @@ Spaces and new line in the XNL annotated files are not significant and will be a
 Similarly, line break tags `<lb/>` are present in the generated XML training data, but they will be considered as a default separator by the XML parser. They are indicated to help the annotator to identify a piece of text in the original PDF if necessary. Actual line breaks are identified in the PDF and added by aligning the XML TEI with the feature file generated in parallel which contains all the PDF layout information.
 
 
+### Punctuation between fields
+
+The punctuation separating two fields (comma, semicolon, period) is left outside the labelled fields: `<affiliation>King Saud Hospital</affiliation>, <address>Unizah, Qaseem, Saudi Arabia</address>`. The existing training data often keeps this punctuation inside the field that it ends (`<affiliation>King Saud Hospital,</affiliation>`); this is tolerated, so that the model sees both cases.
+
 ### Exclude the name of fields if it appears
 
 It is common that abstract is introduced by a prefix `Abstract` or `Summary`, that authors are prefixed with `Authors:` or keywords by `Keywords:`. As a general principle for header annotation, all the prefix names of fields should be excluded from the annotation element and remain outside mark-ups (we only encode the "useful" content):
@@ -112,6 +116,18 @@ Subtitles and translated titles are labelled similarly as title but as an indepe
 
 Running titles are not labelled at all.
 
+A footnote marker at the end of the title (`*`, `†`, a number) stays inside the title field, like the markers of the authors and affiliations.
+
+The line numbers of a manuscript with numbered lines (frequent in preprints) are not part of any field. This holds both when they stand at the end of a field and when they fall inside a multi-line field: in the second case the field is closed before the number and reopened after it, so that the model learns to leave the numbers out (the pieces are reassembled at extraction time). Line numbers carry a distinctive signature in the features (end of line, end of block, own font and the largest font size), unlike the superscript affiliation markers. The examples below come from 023093v1:
+
+```xml
+    <docTitle>
+        <titlePart>The Nicrophorus vespilloides genome and methylome, a beetle with complex social behavior</titlePart>
+    </docTitle>
+
+    1 2<lb/>
+```
+
 ```xml
     <address>Villejuif, France<lb/></address>
 
@@ -120,11 +136,17 @@ Running titles are not labelled at all.
     Abstract word count: 250<lb/>
 ```
 
-In the case of an article written in non-english language having an additional English title as translation of the original title, we annotate the English title with a tag `<note type="english-title">`.
+```xml
+    <div type="abstract">Testing for conserved and novel mechanisms underlying phenotypic evolution requires a diversity of</div> 23<lb/>
+    <div type="abstract">genomes available for comparison spanning multiple independent lineages. For example, complex social</div> 24<lb/>
+    <div type="abstract">behavior in insects has been investigated primarily with eusocial lineages, nearly all of which are</div> 25<lb/>
+```
+
+[//]: # (In the case of an article written in non-english language having an additional English title as translation of the original title, we annotate the English title with a tag `<note type="english-title">`.)
 
 ### Authors
 
-All mentions of the authors are labelled, including possible repetition of the authors in the correspondence section. The author information might be more detailed in the correspondence part and it will be then part of the job of Grobid to identify repeated authors and to "merge" them.
+All mentions of the authors are labelled, including possible repetition of the authors in the correspondence section. The author information might be more detailed in the correspondence part, and it will be then part of the job of Grobid to identify repeated authors and to "merge" them.
 
 ```xml
 CORRESPONDENCE<lb/> Address correspondence to
@@ -135,12 +157,18 @@ CORRESPONDENCE<lb/> Address correspondence to
 
 As illustrated above, titles like "Ph.D.", "MD", "Dr.", etc. must be **included** in the author field.
 
-The only exception is when indication of authors are given around an email or a phone number. In this case we consider that the occurrence of an author name (including abbreviated names) is purely for practical reasons and should be ignored.
+When an indication of authors is given around an email or a phone number, only the full names of the authors are labelled. A full name is a name that includes the surname, with the given names spelled out or reduced to initials (e.g. `Calum J Maclean`, `S. Yoon`):
 
 ```xml
-Email: Calum J Maclean* -
-     <email>calum.maclean@ucl.ac.uk</email>;
+    Email:
+    <byline>
+    <docAuthor>Calum J Maclean*</docAuthor>
+    </byline>
+    -
+    <email>calum.maclean@ucl.ac.uk</email>;
 ```
+
+Names abbreviated to initials only around an email or a phone number are there for purely practical reasons and are not labelled:
 
 ```xml
     *Corresponding author. Emails:
@@ -182,6 +210,8 @@ Similarly as authors, all the mentions of an affiliation are labelled, including
 
 Address are labelled with their own tag `<address>`.
 
+When several affiliations stand on separate lines, each line is labelled as its own `<affiliation>`. When several marked affiliations are printed on the same line ("1 Department of Psychiatry; 2 Department of Genetics; 3 Department of Neuroscience, Icahn School of Medicine"), they stay in **one** `<affiliation>` field: the affiliation-address model splits them at the markers afterwards, and a field boundary in the middle of a line would be a pattern found nowhere else in the corpus.
+
 ```xml
     <byline>
         <affiliation>2 Institut für Angewandte Physik, Heinrich-Heine-Universität<lb/></affiliation>
@@ -190,6 +220,44 @@ Address are labelled with their own tag `<address>`.
     <address>40225 Düsseldorf, Germany<lb/></address>
 ```
 
+An affiliation sometimes contains address elements (building, street, P.O. box, postcode, even the city) between its organisation names. In this case the `<affiliation>` runs from its marker to the last organisation name, including the address elements in between, and the `<address>` holds only what follows the last organisation name:
+
+```xml
+    <byline>
+    <affiliation>1 Institut d&apos;Astrophysique Spatiale (IAS), Bâtiment 121, Université Paris-Sud 11,</affiliation>
+    </byline>
+
+    <address>Orsay, F-91405, France<lb/></address>
+```
+
+```xml
+    <byline>
+    <affiliation>Complex Systems Computation Group (CoSCo)<lb/> P.O.Box 26, Department of Computer Science<lb/>
+    FIN-00014 University of Helsinki,</affiliation>
+    </byline>
+
+    <address>Finland<lb/></address>
+```
+
+A job title printed as part of the affiliation ("1 Associate Professor, Department of Family Medicine, Université de Sherbrooke", "2 Program Chief, Gastroenterology Group Health Cooperative") stays **inside** the `<affiliation>` field: the affiliation-address model leaves it untagged afterwards, and taking it out would separate the marker from the organisation. Only a job title standing between the author name and the affiliation is left outside, as described for authors.
+
+This does not apply when the address closes one affiliation and another affiliation follows (e.g. `Mayo Clinic, Rochester, MN, Duke Cancer Institute, Durham, NC`): each affiliation then gets its own `<affiliation>` and `<address>`.
+
+- When a marker precedes the prefix (e.g. `Present address:`, `Corresponding author.`, `Corresponding author at:`), keep marker, prefix and affiliation in one `<affiliation>`, e.g. `<affiliation>† Corresponding Author. Norges Bank;</affiliation>`.
+- When there is no marker before the prefix, leave "Present address:" outside.
+- When an author information (e.g. ORCID) is present between the marker and the affiliation, place the marker in a separate `<affiliation>` tag, and the affiliation in a separate `<affiliation>` tag:
+
+```xml
+    <byline>
+	<affiliation>[I]</affiliation>
+    </byline>
+
+	<idno type="orcid">https://orcid.org/0000-0003-0353-1424<lb/></idno>
+
+	<byline>
+	<affiliation>Universidade do Estado do Rio de Janeiro, Instituto de Aplicação Fernando Rodrigues da Silveira,<lb/> Departamento de Ciências Humanas e Filosofia.</affiliation>
+	</byline>
+```
 
 ### Document types
 
@@ -218,6 +286,22 @@ In case two abstracts are adjacent in terms of text stream, they must be tagged 
 !!! warning "Remember to exclude the abstract title"
     Attention must be paid to exclude functional words like "Abstract", "Summary", etc. from the labelled abstract. These are indications that will be exploited by Grobid to predict the start of the abstract but it's not something that we want to see in the final extraction result.
 
+The title of an additional abstract block ("Key Points", "Highlights", "Author summary", "Plain Language Summary", "Significance statement", "Core tip", etc.) is excluded in the same way: the block is labelled as a separate abstract, its title stays outside.
+
+```xml
+    Key Points:<lb/>
+    <div type="abstract">• 525 Quasi-Love waves are cataloged,<lb/> related to lateral gradients in upper<lb/>
+    mantle seismic anisotropy in and<lb/> around Africa<lb/>...
+```
+
+On the contrary, the subtitles of a structured abstract ("Background", "Purpose", "Methods", "Results", "Conclusion", etc.) are kept **inside** the labelled abstract, **including the first one**, even when it directly follows the word "Abstract". Leaving out the first subtitle while the following ones are inside would be an inconsistent signal for the model.
+
+```xml
+    Abstract<lb/>
+    <div type="abstract">Purpose<lb/> The aim of this study was to evaluate the usability of a recently developed
+    extracorporeal...
+```
+
 ```xml
     Abstract. -
     <div type="abstract">The anisotropy ∆S of the thermopower in thin films of the high-Tc superconduc-<lb/>
@@ -226,6 +310,8 @@ In case two abstracts are adjacent in terms of text stream, they must be tagged 
     transport properties in solids, taking advantage of the availability of oriented grown crystalline<lb/>
     thin films instead of using bulk crystals.
 ```
+
+A note written by the editor ("Editor's note") is not an abstract and is not labelled.
 
 ### Keywords
 
@@ -273,21 +359,36 @@ If the reference includes an identifier, in particular a DOI, which cannot be ta
         doi:10.1029/2007WR006109, 2008<lb/></reference>
 ```
 
+Only the reference of the annotated document itself is labelled. The citation of another work (the article discussed by a letter or a comment, the book under review, the article completed by an addendum, etc.) is not labelled:
+
+```xml
+    Addendum to:<lb/> Regulation of Autophagy by Sphingosine Kinase 1 and Its<lb/> Role in Cell Survival during Nutrient Starvation<lb/>
+    G. Lavieu, F. Scarlatti, G. Sala, S. Carpentier, T. Levade,<lb/> R. Ghidoni, J. Botti and P. Codogno<lb/>J Biol Chem 2006; 281:8518-27
+```
+
+A short fragment of the reference cut off from its main part by other blocks (e.g. the last words of the citation, `USA. ACM, New York, NY, USA, 13 pages.`) is not labelled either.
+
 If the title of the journal where the atticle is published appears in isolation, it is not enough to have a "reference", and the tags `<title level="j">` must be used.
 
 
 ### Emails
 
-Email must be tagged in a way that is limited to an actual email, excluding "Email" word, punctuations and person name information.
+Email must be tagged in a way that is limited to an actual email, excluding "Email" word and punctuations.
+The person name information should be excluded only when it appears differently from the author list, e.g. only with initials, or missing the last name. A full author name next to the email is labelled as author (see [authors](#authors)), not as part of the email.
 
 ```xml
-    Email: Ren H Wu -
+    Email:
+    <byline>
+    <docAuthor>Ren H Wu</docAuthor>
+    </byline>
+    -
     <email>wurh20000@sina.com</email>;
 ```
 
 ### Editors
 
-The name of the editor are tagged similarly as author names. Titles like "Prof.", "Dr.", "MD." are included in the field, but functional words as "Editor" or "Edited by" must be excluded.
+The name of the editor are tagged similarly as author names.
+Titles like "Prof.", "Dr.", "MD." are included in the field, but functional words as "Editor" or "Edited by" must be excluded.
 
 ```xml
     Decision Editor:
@@ -306,6 +407,12 @@ The `<note type="submission">` tag is used to identify, in a raw manner, the sub
 
 Be careful not to include publication date information under this block, the publication date needs to be encoded with a specific `<date>` element.
 
+The `(Dated: ...)` line of a preprint is not a publication date (it is often the date at which the PDF was produced). It is labelled as a whole as submission information:
+
+```xml
+    <note type="submission">(Dated: August 15, 2019 )<lb/></note>
+```
+
 ### Copyrights
 
 `<note type="copyright">` is used to identify passages about the copyrights holders of the document and any relevant licensing information, in particular CC licenses. Email and URL present in this section must not be further tagged:
@@ -323,6 +430,12 @@ Be careful not to include publication date information under this block, the pub
 ### Strong identifiers
 
 `<idno>` is used to identify strong identifiers of the document, in particular DOI, PII, ISSN, ISBN and the major Open Access repository identifiers - arXiv identifiers, HAL ID, ...
+
+The ORCID of the authors are also labelled with `<idno>`, always with the attribute `type="orcid"`:
+
+```xml
+<idno type="orcid">https://orcid.org/0000-0003-0353-1424<lb/></idno>
+```
 
 We do not tag report numbers, the identifiers here must have a global level of acceptance beyond a local source of identification.
 
@@ -345,7 +458,7 @@ In the case of DOI, the identifier might look like a URL, but should be encoded 
 <idno>http://dx.doi.org/10.1097/MD.0000000000028156<lb/></idno>
 ```
 
-There is no need to specify the type of strong identifier (it will be inferred by pattern matching).
+There is no need to specify the type of strong identifier (it will be inferred by pattern matching), except for ORCID, which are marked with `type="orcid"` to distinguish these author identifiers from the identifiers of the document.
 
 ### Phone number
 
@@ -378,6 +491,8 @@ In general, group names are introduced as such, in a distinctive manner from aff
     <note type="group">JPHC Study Group</note>
 ```
 
+The words introducing the group, including the article ("for the", "on behalf of the"), stay outside the labelled field.
+
 ### Journal titles
 
 In case the name of the journal appears alone in the header part, not part of a reference, it is tagged specifically.
@@ -390,6 +505,14 @@ In case the name of the journal appears alone in the header part, not part of a 
 ```
 
 If the journal title appears as part of a reference (e.g. "how to cite"), it is then part of the `<reference>` element.
+
+When the journal name is printed alone (masthead) and is followed by a citation line that repeats it, usually in abbreviated form, the masthead is labelled as journal title and the citation line as reference:
+
+```xml
+    <title level="j">EUROPEAN JOURNAL OF PHYSICS<lb/></title>
+
+    <reference>Eur. J. Phys. 32 (2011) 1007–1018</reference>
+```
 
 ### Meeting information
 
@@ -405,6 +528,12 @@ Publications can be associated to a particular meeting event, in particular a co
     <meeting>12TH INTERNATIONAL SYMPOSIUM ON FLOW VISUALIZATION<lb/>
     September 10-14, 2006, German Aerospace Center (DLR), Göttingen, Germany<lb/>
     </meeting>
+```
+
+The short conference line found in the header or footer of the page (acronym, dates and place) is a meeting, not a reference:
+
+```xml
+    <meeting>ICoMS &apos;21, June 24-26, 2021, Paris, France<lb/></meeting>
 ```
 
 If the meeting information is part of a larger reference (e.g. definition the citation information of the Proceedings of a conference where the article is published), then it has to be labelled also as `<reference>` (this is similar to the journal title case just above). For instance, in the following example, pages are indicated and we refer to the container of the article and not just to a meeting.

@@ -13,23 +13,25 @@
 							<orgName type="institution">City University of Hong Kong</orgName>
 							<lb/>
 							<address>
-								<settlement>Kowloon</settlement>,
+								<addrLine>Kowloon</addrLine>,
 								<settlement>Hong Kong</settlement>
 							</address>
 						</affiliation>
 						<affiliation>	
 							<orgName type="department">Dept of Computer Science</orgName>
 							<lb/>
-							<orgName type="institution">City University of Hong Kong<lb/> Kowloon</orgName>,
+							<orgName type="institution">City University of Hong Kong</orgName><lb/>
 							<address>
+								<addrLine>Kowloon</addrLine>,
 								<settlement>Hong Kong</settlement>
 							</address>
 						</affiliation>
 						<affiliation>		
 							<orgName type="department">School of Computer Science</orgName>
 							<lb/>
-							<orgName type="institution">Carnegie Mellon University<lb/> Pittsburgh</orgName>,
+							<orgName type="institution">Carnegie Mellon University</orgName><lb/>
 							<address>
+								<settlement>Pittsburgh</settlement>,
 								<region>PA</region>
 								<postCode>15213</postCode>,
 								<country>USA</country>

@@ -1,0 +1,1025 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2204.10836">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-06-03T17:11:00.749464Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-03T17:11:00.749464Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-03T17:14:32.421Z" status="in-review" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-05T10:50:21.332Z" status="in-review" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-05T11:08:11.182Z" status="in-review" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-05T11:55:23.788Z" status="in-review" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-05T12:02:02.613Z" status="in-review" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-05T12:08:47.635Z" status="in-review" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-05T13:55:27.728Z" status="in-review" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-05T14:21:39.935Z" status="in-review" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-06T16:20:38.099Z" status="in-review" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-06T16:38:47.378Z" status="in-review" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-06-06T17:08:32.131Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>Federated Learning Enables Big Data for Rare Cancer<lb/> Boundary Detection<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Sarthak Pati 1,2,3,4, * , , Ujjwal Baid 1,2,3, * , , Brandon Edwards 5, * , , Micah Sheller 5, , Shih-Han Wang 5, , G Anthony<lb/> Reina 5, , Patrick Foley 5, , Alexey Gruzdev 5, , Deepthi Karkada 5, , Christos Davatzikos 1,2, , Chiharu Sako 1,2, ,<lb/> Satyam Ghodasara 2, , Michel Bilello 1,2, , Suyash Mohan 1,2, , Philipp Vollmuth 7, , Gianluca Brugnara 7, ,<lb/> Chandrakanth J Preetha 7 , Felix Sahm 8,9 , Klaus Maier-Hein 10,143, , Maximilian Zenk 10 , Martin Bendszus 7 , Wolfgang<lb/> Wick 8,11, , Evan Calabrese 12, , Jeffrey Rudie 12, , Javier Villanueva-Meyer 12, , Soonmee Cha 12, , Madhura<lb/> Ingalhalikar 13, , Manali Jadhav 13, , Umang Pandey 13, , Jitender Saini 14, , John Garrett 15,16 , Matthew Larson 15 ,<lb/> Robert Jeraj 15,16 , Stuart Currie 18 , Russell Frood 18 , Kavi Fatania 18 , Raymond Y Huang 19, , Ken Chang 20, , Carmen<lb/> Balana 21 , Jaume Capellades 22 , Josep Puig 23 , Johannes Trenkler 24, , Josef Pichler 25 , Georg Necker 24 , Andreas<lb/> Haunschmidt 24 , Stephan Meckel 24,147, , Gaurav Shukla 1,26 , Spencer Liem 27 , Gregory S Alexander 28 , Joseph<lb/> Lombardo 27,29 , Joshua D Palmer 30 , Adam E Flanders 31 , Adam P Dicker 29 , Haris I Sair 32,33, , Craig K Jones 33, ,<lb/> Archana Venkataraman 34, , Meirui Jiang 35, , Tiffany Y So 35, , Cheng Chen 35, , Pheng Ann Heng 35, , Qi Dou 35, ,<lb/> Michal Kozubek 36, , Filip Lux 36, , Jan Michálek 36, , Petr Matula 36, , Miloš Keřkovský 37, , Tereza Kopřivová 37, ,<lb/> Marek Dostál 37,38, , Václav Vybíhal 39, , Michael A Vogelbaum 40, , J Ross Mitchell 87,88 , Joaquim Farinhas 42 , Joseph<lb/> A Maldjian 43 , Chandan Ganesh Bangalore Yogananda 43 , Marco C Pinho 43, , Divya Reddy 43 , James Holcomb 43 ,<lb/> Benjamin C Wagner 43 , Benjamin M Ellingson 44,45 , Timothy F Cloughesy 45 , Catalina Raymond 44 , Talia<lb/> Oughourlian 44,46 , Akifumi Hagiwara 46, , Chencai Wang 46 , Minh-Son To 47,48 , Sargam Bhardwaj 47 , Chee Chong 50 ,<lb/> Marc Agzarian 49,50, , Alexandre Xavier Falcão 51, , Samuel B Martins 52, , Bernardo C A Teixeira 53,54, , Flávia<lb/> Sprenger 54, , David Menotti 55 , Diego R Lucio 55 , Pamela LaMontagne 56 , Daniel Marcus 56 , Benedikt Wiestler 57,58 ,<lb/> Florian Kofler 57,58,59, , Ivan Ezhov 4,58,59, , Marie Metz 57, , Rajan Jain 60,61, , Matthew Lee 60, , Yvonne W Lui 60, ,<lb/> Richard McKinley 62 , Johannes Slotboom 62, , Piotr Radojewski 62 , Raphael Meier 62 , Roland Wiest 62 , Derrick<lb/> Murcia 63 , Eric Fu 63 , Rourke Haas 63 , John Thompson 63, , David Ryan Ormond 63 , Chaitra Badve 64 , Andrew E<lb/> Sloan 65,66,67 , Vachan Vadmal 67 , Kristin Waite 68 , Rivka R Colen 69,125 , Linmin Pei 70 , Murat Ak 69 , Ashok Srinivasan 71 ,<lb/> J Rajiv Bapuraj 71, , Arvind Rao 72, , Nicholas Wang 72 , Ota Yoshiaki 71, , Toshio Moritani 71 , Sevcan Turk 71 ,<lb/> Joonsang Lee 72 , Snehal Prabhudesai 72 , Fanny Morón 73 , Jacob Mandel 49 , Konstantinos Kamnitsas 74,75 , Ben<lb/> Glocker 74 , Luke V M Dixon 76 , Matthew Williams 77 , Peter Zampakis 78 , Vasileios Panagiotopoulos 79 , Panagiotis<lb/> Tsiganos 80 , Sotiris Alexiou 81 , Ilias Haliassos 82 , Evangelia I Zacharaki 81, , Konstantinos Moustakas 81 , Christina<lb/> Kalogeropoulou 78 , Dimitrios M Kardamakis 150, , Yoon Seong Choi 83 , Seung-Koo Lee 83 , Jong Hee Chang 83 , Sung Soo<lb/> Ahn 83 , Bing Luo 84 , Laila Poisson 85 , Ning Wen 84,148 , Pallavi Tiwari 86, , Ruchika Verma 86,88, , Rohan Bareja 86 , Ipsa<lb/> Yadav 86 , Jonathan Chen 86, , Neeraj Kumar 87,88, , Marion Smits 89, , Sebastian R van der Voort 89, , Ahmed<lb/> Alafandi 89 , Fatih Incekara 89,90 , Maarten MJ Wijnenga 91 , Georgios Kapsas 89 , Renske Gahrmann 89 , Joost W<lb/> Schouten 90, , Hendrikus J Dubbink 93, , Arnaud JPE Vincent 90 , Martin J van den Bent 91 , Pim J French 91 , Stefan<lb/> Klein 94, , Yading Yuan 95 , Sonam Sharma 95 , Tzu-Chi Tseng 95 , Saba Adabi 95 , Simone P Niclou 96, , Olivier<lb/> Keunen 97, , Ann-Christin Hau 96,98, , Martin Vallières 99,145, , David Fortin 100,145, , Martin Lepage 101,145, , Bennett<lb/> Landman 102 , Karthik Ramadass 102 , Kaiwen Xu 103 , Silky Chotai 104 , Lola B Chambless 104 , Akshitkumar Mistry 104 ,<lb/> Reid C Thompson 104 , Yuriy Gusev 105, , Krithika Bhuvaneshwar 105, , Anousheh Sayah 106, , Camelia Bencheqroun 105 ,<lb/> Anas Belouali 105, , Subha Madhavan 105 , Thomas C Booth 107,108, , Alysha Chelliah 107, , Marc Modat 107, , Haris<lb/> Shuaib 109,110, , Carmen Dragos 109 , Aly Abayazeed 111 , Kenneth Kolodziej 111 , Michael Hill 111 , Ahmed Abbassy 112 ,<lb/> Shady Gamal 112 , Mahmoud Mekhaimar 112 , Mohamed Qayati 112 , Mauricio Reyes 113, , Ji Eun Park 114, , Jihye<lb/> Yun 114, , Ho Sung Kim 114, , Abhishek Mahajan 115 , Mark Muzi 116, , Sean Benson 117 , Regina G H Beets-Tan 152,153, ,<lb/> Jonas Teuwen 117 , Alejandro Herrera-Trujillo 118,119, , Maria Trujillo 119, , William Escobar 118,119 , Ana Abello 119 , Jose<lb/> Bernal 119,120, , Jhon Gómez 119, , Joseph Choi 121 , Stephen Baek 122, , Yusung Kim 123 , Heba Ismael 123 , Bryan<lb/> Allen 123 , John M Buatti 123 , Aikaterini Kotrotsou 126 , Hongwei Li 6 , Tobias Weiss 41, , Michael Weller 41 , Andrea Bink 17<lb/> Bertrand Pouymayou 17 Hassan F Shaykh 127 , Joel Saltz 128 , Prateek Prasanna 128, , Sampurna Shrestha 128 , Kartik M<lb/> Mani 128,141 , David Payne 142 , Tahsin Kurc 128,129 , Enrique Pelaez 130, , Heydy Franco-Maldonado 144, , Francis<lb/> Loayza 130, , Sebastian Quevedo 131, , Pamela Guevara 132, , Esteban Torche 132 , Cristobal Mendoza 132 , Franco<lb/> Vera 132 , Elvis Ríos 132 , Eduardo López 132 , Sergio A Velastin 133, , Godwin Ogbole 134, , Dotun Oyekunle 134, ,<lb/> Olubunmi Odafe-Oyibotha 135 , Babatunde Osobu 134 , Mustapha Shu'aibu 136 , Adeleye Dorcas 137 , Mayowa Soneye 134, ,<lb/> Farouk Dako 2,124, , Amber L Simpson 110,138, , Mohammad Hamghalam 138,149 , Jacob J Peoples 138, , Ricky Hu 138 ,<lb/> Anh Tran 138 , Danielle Cutler 146 , Fabio Y Moraes 151 , Michael A Boss 139, , James Gimpel 139 , Deepak Kattil Veettil 139 ,<lb/></docAuthor>
+	</byline>
+
+	<idno>arXiv:2204.10836v2 [cs.LG]</idno>
+
+	<date>25 Apr 2022<lb/></date>
+
+	<byline>
+	<docAuthor>Kendall Schmidt 92, , Brian Bialecki 92 , Sailaja Marella 139 , Cynthia Price 139 , Lisa Cimino 139 , Charles Apgar 139 ,<lb/> Prashant Shah 5, , Bjoern Menze 4,6, , Jill S Barnholtz-Sloan 68,140, , Jason Martin 5 , and Spyridon Bakas 1,2,3, §,<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>1 Center for Biomedical Image Computing and Analytics (CBICA), University of Pennsylvania,</affiliation>
+	</byline>
+
+	<address>Philadelphia, Pennsylvania,<lb/> USA.<lb/></address>
+
+	<byline>
+	<affiliation>2 Department of Radiology, Perelman School of Medicine, University of Pennsylvania,</affiliation>
+	</byline>
+
+	<address>Philadelphia, Pennsylvania, USA.<lb/></address>
+
+	<byline>
+	<affiliation>3 Department of Pathology and Laboratory Medicine, Perelman School of Medicine, University of Pennsylvania,</affiliation>
+	</byline>
+
+	<address>Philadelphia,<lb/> Pennsylvania, USA.<lb/></address>
+
+	<byline>
+	<affiliation>4 Department of Informatics, Technical University of Munich,</affiliation>
+	</byline>
+
+	<address>Munich, Bavaria, Germany.<lb/></address>
+
+	<byline>
+	<affiliation>5 Intel Corporation,</affiliation>
+	</byline>
+
+	<address>Santa Clara, California, USA.<lb/></address>
+
+	<byline>
+	<affiliation>6 Department of Quantitative Biomedicine, University of Zurich,</affiliation>
+	</byline>
+
+	<address>Zurich, Switzerland.<lb/></address>
+
+	<byline>
+	<affiliation>7 Department of Neuroradiology, Heidelberg University Hospital,</affiliation>
+	</byline>
+
+	<address>Heidelberg, Germany.<lb/></address>
+
+	<byline>
+	<affiliation>8 Clinical Cooperation Unit Neuropathology, German Cancer Consortium (DKTK) within the German Cancer Research Center<lb/> (DKFZ),</affiliation>
+	</byline>
+
+	<address>Heidelberg, Germany.<lb/></address>
+
+	<byline>
+	<affiliation>9 Department of Neuropathology, Heidelberg University Hospital,</affiliation>
+	</byline>
+
+	<address>Heidelberg, Germany.<lb/></address>
+
+	<byline>
+	<affiliation>10 Division of Medical Image Computing, German Cancer Research Center,</affiliation>
+	</byline>
+
+	<address>Heidelberg, Germany.<lb/></address>
+
+	<byline>
+	<affiliation>11 Neurology Clinic, Heidelberg University Hospital,</affiliation>
+	</byline>
+
+	<address>Heidelberg, Germany.<lb/></address>
+
+	<byline>
+	<affiliation>12 Department of Radiology &amp; Biomedical Imaging, University of California San Francisco,</affiliation>
+	</byline>
+
+	<address>San Francisco, California, USA.<lb/></address>
+
+	<byline>
+	<affiliation>13 Symbiosis Center for Medical Image Analysis, Symbiosis International University,</affiliation>
+	</byline>
+
+	<address>Pune, Maharashtra, India.<lb/></address>
+
+	<byline>
+	<affiliation>14 Department of Neuroimaging and Interventional Radiology, National Institute of Mental Health and Neurosciences,<lb/></affiliation>
+	</byline>
+
+	<address>Bangalore, Karnataka, India.<lb/></address>
+
+	<byline>
+	<affiliation>15 Department of Radiology, School of Medicine and Public Health, University of Wisconsin,</affiliation>
+	</byline>
+
+	<address>Madison, Wisconsin, USA.<lb/></address>
+
+	<byline>
+	<affiliation>16 Department of Medical Physics, School of Medicine and Public Health, University of Wisconsin,</affiliation>
+	</byline>
+
+	<address>Madison, Wisconsin, USA.<lb/></address>
+
+	<byline>
+	<affiliation>17 Department of Neuroradiology, Clinical Neuroscience Center, University Hospital Zurich and University of Zurich,</affiliation>
+	</byline>
+
+	<address>Zurich,<lb/> Switzerland.<lb/></address>
+
+	<byline>
+	<affiliation>18 Leeds Teaching Hospitals Trust, Department of Radiology,</affiliation>
+	</byline>
+
+	<address>Leeds, United Kingdom.<lb/></address>
+
+	<byline>
+	<affiliation>19 Department of Radiology, Brigham and Women's Hospital, Harvard Medical School,</affiliation>
+	</byline>
+
+	<address>Boston, Massachusetts, USA.<lb/></address>
+
+	<byline>
+	<affiliation>20 Athinoula A. Martinos Center for Biomedical Imaging, Massachusetts General Hospital,</affiliation>
+	</byline>
+
+	<address>Charlestown, Massachusetts, USA.<lb/></address>
+
+	<byline>
+	<affiliation>21 Catalan Institute of Oncology,</affiliation>
+	</byline>
+
+	<address>Badalona, Spain.<lb/></address>
+
+	<byline>
+	<affiliation>22 Consorci MAR Parc de Salut de Barcelona,</affiliation>
+	</byline>
+
+	<address>Catalonia, Spain.<lb/></address>
+
+	<byline>
+	<affiliation>23 Department of Radiology (IDI), Girona Biomedical Research Institute (IdIBGi), Josep Trueta University Hospital,</affiliation>
+	</byline>
+
+	<address>Girona,<lb/> Spain.<lb/></address>
+
+	<byline>
+	<affiliation>24 Institute of Neuroradiology, Neuromed Campus (NMC), Kepler University Hospital Linz,</affiliation>
+	</byline>
+
+	<address>Linz, Austria.<lb/></address>
+
+	<byline>
+	<affiliation>25 Department of Neurooncology, Neuromed Campus (NMC), Kepler University Hospital Linz,</affiliation>
+	</byline>
+
+	<address>Linz, Austria.<lb/></address>
+
+	<byline>
+	<affiliation>26 Department of Radiation Oncology, Christiana Care Health System,</affiliation>
+	</byline>
+
+	<address>Philadelphia, Pennsylvania, USA.<lb/></address>
+
+	<byline>
+	<affiliation>27 Sidney Kimmel Medical College, Thomas Jefferson University,</affiliation>
+	</byline>
+
+	<address>Philadelphia, Pennsylvania, USA.<lb/></address>
+
+	<byline>
+	<affiliation>28 Department of Radiation Oncology, University of Maryland,</affiliation>
+	</byline>
+
+	<address>Baltimore, Maryland, USA.<lb/></address>
+
+	<byline>
+	<affiliation>29 Department of Radiation Oncology, Sidney Kimmel Cancer Center, Thomas Jefferson University,</affiliation>
+	</byline>
+
+	<address>Philadelphia, Pennsylvania,<lb/> USA.<lb/></address>
+
+	<byline>
+	<affiliation>30 Department of Radiation Oncology, The James Cancer Hospital and Solove Research Institute, The Ohio State University<lb/> Comprehensive Cancer Center,</affiliation>
+	</byline>
+
+	<address>Columbus, Ohio, USA.<lb/></address>
+
+	<byline>
+	<affiliation>31 Department of Radiology, Sidney Kimmel Cancer Center, Thomas Jefferson University,</affiliation>
+	</byline>
+
+	<address>Philadelphia, Pennsylvania, USA.<lb/></address>
+
+	<byline>
+	<affiliation>32 The Russell H. Morgan Department of Radiology and Radiological Science, Johns Hopkins University School of Medicine,<lb/></affiliation>
+	</byline>
+
+	<address>Baltimore, Maryland, USA.<lb/></address>
+
+	<byline>
+	<affiliation>33 The Malone Center for Engineering in Healthcare, The Whiting School of Engineering, Johns Hopkins University,</affiliation>
+	</byline>
+
+	<address>Baltimore,<lb/> Maryland, USA.<lb/></address>
+
+	<byline>
+	<affiliation>34 Department of Electrical and Computer Engineering, Whiting School of Engineering, Johns Hopkins University,</affiliation>
+	</byline>
+
+	<address>Baltimore,<lb/> Maryland, USA.<lb/></address>
+
+	<byline>
+	<affiliation>35 The Chinese University of Hong Kong,</affiliation>
+	</byline>
+
+	<address>Hong Kong, China.<lb/></address>
+
+	<byline>
+	<affiliation>36 Centre for Biomedical Image Analysis, Faculty of Informatics, Masaryk University,</affiliation>
+	</byline>
+
+	<address>Brno, Czech Republic.<lb/></address>
+
+	<byline>
+	<affiliation>37 Department of Radiology and Nuclear Medicine, Faculty of Medicine, Masaryk University, Brno and University Hospital<lb/> Brno,</affiliation>
+	</byline>
+
+	<address>Czech Republic.<lb/></address>
+
+	<byline>
+	<affiliation>38 Department of Biophysics, Faculty of Medicine, Masaryk University,</affiliation>
+	</byline>
+
+	<address>Brno, Czech Republic.<lb/></address>
+
+	<byline>
+	<affiliation>39 Department of Neurosurgery, Faculty of Medicine, Masaryk University, Brno, and University Hospital and</affiliation>
+	</byline>
+
+	<address>Czech Republic.<lb/></address>
+
+	<byline>
+	<affiliation>40 Department of Neuro Oncology, H. Lee Moffitt Cancer Center and Research Institute,</affiliation>
+	</byline>
+
+	<address>Tampa, Florida, USA.<lb/></address>
+
+	<byline>
+	<affiliation>41 Department of Neurology, Clinical Neuroscience Center, University Hospital Zurich and University of Zurich,</affiliation>
+	</byline>
+
+	<address>Zurich,<lb/> Switzerland.<lb/></address>
+
+	<byline>
+	<affiliation>42 Department of Radiology, H. Lee Moffitt Cancer Center and Research Institute,</affiliation>
+	</byline>
+
+	<address>Tampa, Florida, USA.<lb/></address>
+
+	<byline>
+	<affiliation>43 University of Texas Southwestern Medical Center,</affiliation>
+	</byline>
+
+	<address>Dallas, Texas, USA.<lb/></address>
+
+	<byline>
+	<affiliation>44 UCLA Brain Tumor Imaging Laboratory (BTIL), Center for Computer Vision and Imaging Biomarkers, Department of<lb/> Radiological Sciences, David Geffen School of Medicine, University of California Los Angeles,</affiliation>
+	</byline>
+
+	<address>Los Angeles, California, USA.<lb/></address>
+
+	<byline>
+	<affiliation>45 UCLA Neuro-Oncology Program, Department of Neurology, David Geffen School of Medicine, University of California Los<lb/> Angeles,</affiliation>
+	</byline>
+
+	<address>Los Angeles, California, USA.<lb/></address>
+
+	<byline>
+	<affiliation>46 Department of Radiological Sciences, David Geffen School of Medicine, University of California Los Angeles,</affiliation>
+	</byline>
+
+	<address>Los Angeles,<lb/> California, USA.<lb/></address>
+
+	<byline>
+	<affiliation>47 College of Medicine and Public Health, Flinders University,</affiliation>
+	</byline>
+
+	<address>Bedford Park, South Australia, Australia.<lb/></address>
+
+	<byline>
+	<affiliation>48 Division of Surgery and Perioperative Medicine, Flinders Medical Centre,</affiliation>
+	</byline>
+
+	<address>Bedford Park, South Australia, Australia.<lb/></address>
+
+	<byline>
+	<affiliation>49 Department of Neurology, Baylor College of Medicine,</affiliation>
+	</byline>
+
+	<address>Houston, Texas, USA.<lb/></address>
+
+	<byline>
+	<affiliation>50 South Australia Medical Imaging, Flinders Medical Centre,</affiliation>
+	</byline>
+
+	<address>Bedford Park, South Australia.<lb/></address>
+
+	<byline>
+	<affiliation>51 Institute of Computing, University of Campinas,</affiliation>
+	</byline>
+
+	<address>Campinas, São Paulo, Brazil.<lb/></address>
+
+	<byline>
+	<affiliation>52 Federal Institute of São Paulo,</affiliation>
+	</byline>
+
+	<address>Campinas, São Paulo, Brazil.<lb/></address>
+
+	<byline>
+	<affiliation>53 Instituto de Neurologia de Curitiba,</affiliation>
+	</byline>
+
+	<address>Curitiba, Paraná, Brazil.<lb/></address>
+
+	<byline>
+	<affiliation>54 Department of Radiology, Hospital de Clínicas da Universidade Federal do Paraná,</affiliation>
+	</byline>
+
+	<address>Curitiba, Paraná, Brazil.<lb/></address>
+
+	<byline>
+	<affiliation>55 Department of Informatics, Universidade Federal do Paraná,</affiliation>
+	</byline>
+
+	<address>Curitiba, Paraná, Brazil.<lb/></address>
+
+	<byline>
+	<affiliation>56 Department of Radiology, Washington University in St. Louis,</affiliation>
+	</byline>
+
+	<address>St. Louis, Missouri, USA.<lb/></address>
+
+	<byline>
+	<affiliation>57 Department of Diagnostic and Interventional Neuroradiology, School of Medicine, Klinikum rechts der Isar, Technical<lb/> University of Munich,</affiliation>
+	</byline>
+
+	<address>Germany.<lb/></address>
+
+	<byline>
+	<affiliation>58 TranslaTUM (Zentralinstitut für translationale Krebsforschung der Technischen Universität München), Klinikum rechts der<lb/> Isar,</affiliation>
+	</byline>
+
+	<address>Munich, Germany.<lb/></address>
+
+	<byline>
+	<affiliation>59 Image-Based Biomedical Modeling, Department of Informatics, Technical University of Munich,</affiliation>
+	</byline>
+
+	<address>Munich, Germany.<lb/></address>
+
+	<byline>
+	<affiliation>60 Department of Radiology, NYU Grossman School of Medicine,</affiliation>
+	</byline>
+
+	<address>New York, New York, USA.<lb/></address>
+
+	<byline>
+	<affiliation>61 Department of Neurosurgery, NYU Grossman School of Medicine,</affiliation>
+	</byline>
+
+	<address>New York, New York, USA.<lb/></address>
+
+	<byline>
+	<affiliation>62 Support Center for Advanced Neuroimaging, University Institute of Diagnostic and Interventional Neuroradiology, University<lb/> Hospital Bern, Inselspital, University of Bern,</affiliation>
+	</byline>
+
+	<address>Bern, Switzerland.<lb/></address>
+
+	<byline>
+	<affiliation>63 Department of Neurosurgery, Anschutz Medical Campus, University of Colorado,</affiliation>
+	</byline>
+
+	<address>Aurora, Colorado, USA.<lb/></address>
+
+	<byline>
+	<affiliation>64 Department of Radiology, University Hospitals Cleveland,</affiliation>
+	</byline>
+
+	<address>Cleveland, Ohio, USA.<lb/></address>
+
+	<byline>
+	<affiliation>65 Department of Neurological Surgery, University Hospitals-Seidman Cancer Center,</affiliation>
+	</byline>
+
+	<address>Cleveland, Ohio, USA.<lb/></address>
+
+	<byline>
+	<affiliation>66 Case Comprehensive Cancer Center,</affiliation>
+	</byline>
+
+	<address>Cleveland, Ohio, USA.<lb/></address>
+
+	<byline>
+	<affiliation>67 Department of Neurosurgery, Case Western Reserve University School of Medicine,</affiliation>
+	</byline>
+
+	<address>Cleveland, Ohio, USA.<lb/></address>
+
+	<byline>
+	<affiliation>68 National Cancer Institute, National Institute of Health, Division of Cancer Epidemiology and Genetics,</affiliation>
+	</byline>
+
+	<address>Bethesda, Maryland,<lb/> USA.<lb/></address>
+
+	<byline>
+	<affiliation>69 Department of Radiology, Neuroradiology Division, University of Pittsburgh,</affiliation>
+	</byline>
+
+	<address>Pittsburgh, Pennsylvania, USA.<lb/></address>
+
+	<byline>
+	<affiliation>70 University of Pittsburgh Medical Center,</affiliation>
+	</byline>
+
+	<address>Pittsburgh, Pennsylvania, USA.<lb/></address>
+
+	<byline>
+	<affiliation>71 Department of Neuroradiology, University of Michigan,</affiliation>
+	</byline>
+
+	<address>Ann Arbor, Michigan, USA.<lb/></address>
+
+	<byline>
+	<affiliation>72 Deptartment of Computational Medicine and Bioinformatics, University of Michigan,</affiliation>
+	</byline>
+
+	<address>Ann Arbor, Michigan, USA.<lb/></address>
+
+	<byline>
+	<affiliation>73 Department of Radiology, Baylor College of Medicine,</affiliation>
+	</byline>
+
+	<address>Houston, Texas, USA.<lb/></address>
+
+	<byline>
+	<affiliation>74 Department of Computing, Imperial College London,</affiliation>
+	</byline>
+
+	<address>London, United Kingdom.<lb/></address>
+
+	<byline>
+	<affiliation>75 Institute of Biomedical Engineering, Department of Engineering Science, University of Oxford,</affiliation>
+	</byline>
+
+	<address>Oxford, United Kingdom.<lb/></address>
+
+	<byline>
+	<affiliation>76 Department of Radiology, Imperial College NHS Healthcare Trust,</affiliation>
+	</byline>
+
+	<address>London, United Kingdom.<lb/></address>
+
+	<byline>
+	<affiliation>77 Computational Oncology Group, Institute for Global Health Innovation, Imperial College London,</affiliation>
+	</byline>
+
+	<address>London, United Kingdom.<lb/></address>
+
+	<byline>
+	<affiliation>78 Department of NeuroRadiology, University of Patras,</affiliation>
+	</byline>
+
+	<address>Patras, Greece.<lb/></address>
+
+	<byline>
+	<affiliation>79 Department of Neurosurgery, University of Patras,</affiliation>
+	</byline>
+
+	<address>Patras, Greece.<lb/></address>
+
+	<byline>
+	<affiliation>80 Clinical Radiology Laboratory, Department of Medicine, University of Patras,</affiliation>
+	</byline>
+
+	<address>Patras, Greece.<lb/></address>
+
+	<byline>
+	<affiliation>81 Department of Electrical and Computer Engineering, University of Patras,</affiliation>
+	</byline>
+
+	<address>Patras, Greece.<lb/></address>
+
+    <byline>
+	<affiliation>82 Department of Neuro-Oncology, University of Patras, </affiliation>
+	</byline>
+
+	<address>Patras, Greece.<lb/></address>
+
+	<byline>
+	<affiliation>83 Yonsei University College of Medicine, </affiliation>
+	</byline>
+
+	<address>Seoul, Korea.<lb/></address>
+
+	<byline>
+	<affiliation>84 Department of Radiation Oncology, Henry Ford Health System, </affiliation>
+	</byline>
+
+	<address>Detroit, Michigan, USA.<lb/></address>
+
+	<byline>
+	<affiliation>85 Public Health Sciences, Henry Ford Health System, </affiliation>
+	</byline>
+
+	<address>Detroit, Michigan, USA.<lb/></address>
+
+	<byline>
+	<affiliation>86 Case Western Reserve University,</affiliation>
+	</byline>
+
+	<address>Cleveland, Ohio, USA.<lb/></address>
+
+	<byline>
+	<affiliation>87 University of Alberta,</affiliation>
+	</byline>
+
+	<address>Edmonton, Alberta, Canada.<lb/></address>
+
+	<byline>
+	<affiliation>88 Alberta Machine Intelligence Institute,</affiliation>
+	</byline>
+
+	<address>Edmonton, Alberta, Canada.<lb/></address>
+
+	<byline>
+	<affiliation>89 Department of Radiology and Nuclear Medicine, Erasmus MC University Medical Centre Rotterdam,</affiliation>
+	</byline>
+
+	<address>Rotterdam,<lb/> Netherlands.<lb/></address>
+
+	<byline>
+	<affiliation>90 Department of Neurosurgery, Brain Tumor Center, Erasmus MC University Medical Centre Rotterdam, </affiliation>
+	</byline>
+
+	<address>Rotterdam,<lb/> Netherlands.<lb/></address>
+
+    <byline>
+	<affiliation>91 Department of Neurology, Brain Tumor Center, Erasmus MC Cancer Institute,</affiliation>
+	</byline>
+
+	<address>Rotterdam, Netherlands.<lb/></address>
+
+	<byline>
+	<affiliation>92 Data Science Institute, American College of Radiology,</affiliation>
+	</byline>
+
+	<address>Reston, VA, USA.<lb/></address>
+
+	<byline>
+	<affiliation>93 Department of Pathology, Brain Tumor Center, Erasmus MC Cancer Institute,</affiliation>
+	</byline>
+
+	<address>Rotterdam, Netherlands.<lb/></address>
+
+	<byline>
+	<affiliation>94 Biomedical Imaging Group Rotterdam, Department of Radiology and Nuclear Medicine, Erasmus MC University Medical<lb/> Centre Rotterdam, </affiliation>
+	</byline>
+
+	<address>Rotterdam, Netherlands.<lb/></address>
+
+	<byline>
+	<affiliation>95 Department of Radiation Oncology, Icahn School of Medicine at Mount Sinai,</affiliation>
+	</byline>
+
+	<address>New York, New York, USA.<lb/></address>
+
+	<byline>
+	<affiliation>96 NORLUX Neuro-Oncology Laboratory, Department of Cancer Research, Luxembourg Institute of Health,</affiliation>
+	</byline>
+
+	<address>Luxembourg,<lb/> Luxembourg.<lb/></address>
+
+    <byline>
+	<affiliation>97 Translation Radiomics, Department of Cancer Research, Luxembourg Institute of Health, </affiliation>
+	</byline>
+
+	<address>Luxembourg.<lb/></address>
+
+	<byline>
+	<affiliation>98 Luxembourg Center of Neuropathology, Laboratoire National De Santé,</affiliation>
+	</byline>
+
+	<address>Luxembourg.<lb/></address>
+
+	<byline>
+	<affiliation>99 Department of Computer Science, Université de Sherbooke, </affiliation>
+	</byline>
+
+	<address>Sherbrooke, Quebec, Canada.<lb/></address>
+
+	<byline>
+	<affiliation>100 Division of Neurosurgery and Neuro-Oncology, Faculty of Medicine and Health Science, Université de Sherbrooke,<lb/></affiliation>
+	</byline>
+
+	<address>Sherbrooke, Quebec, Canada.<lb/></address>
+
+	<byline>
+	<affiliation>101 Department of Nuclear Medicine and Radiobiology, Sherbrooke Molecular Imaging Centre, Université de Sherbrooke,<lb/></affiliation>
+	</byline>
+
+	<address>Sherbrooke, Quebec, Canada.<lb/></address>
+
+	<byline>
+	<affiliation>102 Electrical and Computer Engineering, Vanderbilt University, </affiliation>
+	</byline>
+
+	<address>Nashville, Tennessee, USA.<lb/></address>
+
+	<byline>
+	<affiliation>103 Department of Computer Science, Vanderbilt University, </affiliation>
+	</byline>
+
+	<address>Nashville, Tennessee, USA.<lb/></address>
+
+	<byline>
+	<affiliation>104 Department of Neurosurgery, Vanderbilt University Medical Center,</affiliation>
+	</byline>
+
+	<address>Nashville, Tennessee, USA.<lb/></address>
+
+	<byline>
+	<affiliation>105 Innovation Center for Biomedical Informatics (ICBI), Georgetown University,</affiliation>
+	</byline>
+
+	<address>Washington, District of Columbia, USA.<lb/></address>
+
+	<byline>
+	<affiliation>106 Division of Neuroradiology &amp; Neurointerventional Radiology, MedStar Georgetown University Hospital, Department of<lb/> Radiology, </affiliation>
+	</byline>
+
+	<address>Washington, DC, USA.<lb/></address>
+
+	<byline>
+	<affiliation>107 School of Biomedical Engineering &amp; Imaging Sciences, King's College London,</affiliation>
+	</byline>
+
+	<address>London, United Kingdom.<lb/></address>
+
+	<byline>
+	<affiliation>108 Department of Neuroradiology, Ruskin Wing, King's College Hospital NHS Foundation Trust, </affiliation>
+	</byline>
+
+	<address>London, United Kingdom.<lb/></address>
+
+	<byline>
+	<affiliation>109 Stoke Mandeville Hospital,</affiliation>
+	</byline>
+
+	<address>Mandeville Road, Aylesbury, United Kingdom.<lb/></address>
+
+	<byline>
+	<affiliation>110 Department of Biomedical and Molecular Sciences, Queen's University,</affiliation>
+	</byline>
+
+	<address>Kingston, ON, Canada.<lb/></address>
+
+	<byline>
+	<affiliation>111 Neosoma Inc.,</affiliation>
+	</byline>
+
+	<address>Groton, Massachusetts, USA.<lb/></address>
+
+	<byline>
+	<affiliation>112 University of Cairo School of Medicine, </affiliation>
+	</byline>
+
+	<address>Giza, Egypt.<lb/></address>
+
+	<byline>
+	<affiliation>113 University of Bern,</affiliation>
+	</byline>
+
+	<address>Switzerland.<lb/></address>
+
+	<byline>
+	<affiliation>114 Department of Radiology, Asan Medical Center,</affiliation>
+	</byline>
+
+	<address>Seoul, South Korea.<lb/></address>
+
+	<byline>
+	<affiliation>115 The Clatterbridge Cancer Centre NHS Foundation Trust</affiliation>
+	</byline>
+
+	<address>Pembroke Place, Liverpool, United Kingdom<lb/></address>
+
+	<byline>
+	<affiliation>116 Department of Radiology, University of Washington, </affiliation>
+	</byline>
+
+	<address>Seattle, Washington, USA.<lb/></address>
+
+	<byline>
+	<affiliation>117 Netherlands Cancer Institute,</affiliation>
+	</byline>
+
+	<address>Amsterdam, Netherlands.<lb/></address>
+
+	<byline>
+	<affiliation>118 Clínica Imbanaco Grupo Quirón Salud,</affiliation>
+	</byline>
+
+	<address>Cali, Colombia.<lb/></address>
+
+	<byline>
+	<affiliation>119 Universidad del Valle,</affiliation>
+	</byline>
+
+	<address>Cali, Colombia.<lb/></address>
+
+	<byline>
+	<affiliation>120 The University of Edinburgh,</affiliation>
+	</byline>
+
+	<address>Edinburgh, United Kingdom.<lb/></address>
+
+	<byline>
+	<affiliation>121 Department of Industrial and Systems Engineering, University of Iowa,</affiliation>
+	</byline>
+
+	<address>Iowa, USA.<lb/></address>
+
+	<byline>
+	<affiliation>122 Department of Industrial and Systems Engineering, Department of Radiation Oncology, University of Iowa,</affiliation>
+	</byline>
+
+	<address>Iowa, USA.<lb/></address>
+
+	<byline>
+	<affiliation>123 Department of Radiation Oncology, University of Iowa,</affiliation>
+	</byline>
+
+	<address>Iowa, USA.<lb/></address>
+
+	<byline>
+	<affiliation> 124 Center for Global Health, Perelman School of Medicine, University of Pennsylvania, </affiliation>
+	</byline>
+
+	<address>Philadelphia, Pennsylvania, USA.<lb/></address>
+
+	<byline>
+	<affiliation>125 Department of Diagnostic Radiology, University of Texas MD Anderson Cancer Center, </affiliation>
+	</byline>
+
+	<address>Houston, Texas, USA.<lb/></address>
+
+	<byline>
+	<affiliation>126 MD Anderson Cancer Center, University of Texas,</affiliation>
+	</byline>
+
+	<address>Houston, Texas, USA.<lb/></address>
+
+	<byline>
+	<affiliation>127 University of Alabama in Birmingham,</affiliation>
+	</byline>
+
+	<address>Birmingham, Alabama, USA.<lb/></address>
+
+	<byline>
+	<affiliation>128 Department of Biomedical Informatics, Stony Brook University,</affiliation>
+	</byline>
+
+	<address>Stony Brook, New York, USA.<lb/></address>
+
+	<byline>
+	<affiliation> 129 Scientific Data Group, Oak Ridge National Laboratory,</affiliation>
+	</byline>
+
+	<address>Oak Ridge, Tennessee, USA.<lb/></address>
+
+	<byline>
+	<affiliation>130 Escuela Superior Politecnica del Litoral,</affiliation>
+	</byline>
+
+	<address>Guayaquil, Guayas, Ecuador.<lb/></address>
+
+	<byline>
+	<affiliation>131 Universidad Católica de Cuenca,</affiliation>
+	</byline>
+
+	<address>Cuenca, Ecuador.<lb/></address>
+
+	<byline>
+	<affiliation>132 Universidad de Concepción,</affiliation>
+	</byline>
+
+	<address>Concepción, Biobío, Chile.<lb/></address>
+
+	<byline>
+	<affiliation>133 School of Electronic Engineering and Computer Science, Queen Mary University of London,</affiliation>
+	</byline>
+
+	<address>London, United Kingdom.<lb/></address>
+
+	<byline>
+	<affiliation>134 Department of Radiology, University College Hospital Ibadan,</affiliation>
+	</byline>
+
+	<address>Oyo, Nigeria.<lb/></address>
+
+	<byline>
+	<affiliation>135 Clinix Healthcare,</affiliation>
+	</byline>
+
+	<address>Lagos, Lagos, Nigeria.<lb/></address>
+
+	<byline>
+	<affiliation>136 Department of Radiology, Muhammad Abdullahi Wase Teaching Hospital,</affiliation>
+	</byline>
+
+	<address>Kano, Nigeria.<lb/></address>
+
+	<byline>
+	<affiliation>137 Department of Radiology, Obafemi Awolowo University Ile-Ife,</affiliation>
+	</byline>
+
+	<address>Ile-Ife, Osun, Nigeria.<lb/></address>
+
+	<byline>
+	<affiliation>138 School of Computing, Queen's University,</affiliation>
+	</byline>
+
+	<address>Kingston, Ontario, Canada.<lb/></address>
+
+	<byline>
+	<affiliation>139 Center for Research and Innovation, American College of Radiology,</affiliation>
+	</byline>
+
+	<address>Philadelphia, Pennsylvania, USA.<lb/></address>
+
+	<byline>
+	<affiliation>140 Center for Biomedical Informatics and Information Technology, National Cancer Institute (NCI), National Institute of<lb/> Health,</affiliation>
+	</byline>
+
+	<address>Bethesda, Maryland, USA.<lb/></address>
+
+	<byline>
+	<affiliation>141 Department of Radiation Oncology, Stony Brook University,</affiliation>
+	</byline>
+
+	<address>Stony Brook, New York, USA.<lb/></address>
+
+	<byline>
+	<affiliation>142 Department of Radiology, Stony Brook University,</affiliation>
+	</byline>
+
+	<address>Stony Brook, New York, USA.<lb/></address>
+
+	<byline>
+	<affiliation>143 Pattern Analysis and Learning Group, Department of Radiation Oncology, Heidelberg University Hospital, </affiliation>
+	</byline>
+
+	<address>Heidelberg,<lb/> Germany.<lb/></address>
+
+	<byline>
+	<affiliation>144 Sociedad de Lucha Contral el Cancer -SOLCA,</affiliation>
+	</byline>
+
+	<address>Guayaquil Ecuador.<lb/></address>
+
+	<byline>
+	<affiliation>145 Centre de Recherche du Centre Hospitalière Universitaire de Sherbrooke,</affiliation>
+	</byline>
+
+	<address>Sherbrooke, Quebec, Canada.<lb/></address>
+
+	<byline>
+	<affiliation>146 The Faculty of Arts &amp; Sciences, Queen's University,</affiliation>
+	</byline>
+
+	<address>Kingston, Ontario, Canada.<lb/></address>
+
+	<byline>
+	<affiliation> 147 Institute of Diagnostic and Interventional Neuroradiology, RKH Klinikum Ludwigsburg,</affiliation>
+	</byline>
+
+	<address>Ludwigsburg, Germany.<lb/></address>
+
+	<byline>
+	<affiliation> 148 SJTU-Ruijing-UIH Institute for Medical Imaging Technology, Ruijin Hospital, Shanghai Jiao Tong University School of<lb/> Medicine,</affiliation>
+	</byline>
+
+	<address>No. 197, Rui Jin 2nd Road, Shanghai 200025, China.<lb/></address>
+
+	<byline>
+	<affiliation>149 Department of Electrical Engineering, Qazvin Branch, Islamic Azad University,</affiliation>
+	</byline>
+
+	<address>Qazvin, Iran.<lb/></address>
+
+	<byline>
+	<affiliation>150 Department of Radiation Oncology, University of Patras,</affiliation>
+	</byline>
+
+	<address>Patras, Greece.<lb/></address>
+
+	<byline>
+	<affiliation>151 Department of Oncology, Queen's University,</affiliation>
+	</byline>
+
+	<address>Kingston, Ontario, Canada.<lb/></address>
+
+	<byline>
+	<affiliation>152 Department of Radiology, Netherlands Cancer Institute,</affiliation>
+	</byline>
+
+	<address>Amsterdam, Netherlands.<lb/></address>
+
+	<byline>
+	<affiliation>153 GROW School of Oncology and Developmental Biology,</affiliation>
+	</byline>
+
+	<address>Maastricht, Netherlands.<lb/></address>
+
+
+	                                                                             * These authors contributed equally to this work.<lb/> § Corresponding author: {
+	<email>sbakas@upenn.edu</email>
+	}
+
+		</front>
+	</text>
+
+</TEI>

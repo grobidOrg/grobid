@@ -1,0 +1,25 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="laboratory">2LC</orgName> -
+							<orgName type="institution">CNRS</orgName>
+							<lb/>
+							<address>
+								<addrLine>1361 route des Lucioles</addrLine>
+							<lb/>
+								<postCode>F-06560</postCode>
+								<settlement>Sophia Antipolis</settlement>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

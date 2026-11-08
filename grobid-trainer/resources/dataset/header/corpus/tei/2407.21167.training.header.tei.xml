@@ -1,0 +1,462 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2407.21167">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-26T15:32:59.565517Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-26T15:32:59.565517Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-26T15:39:32.383Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<note type="submission">Draft version August 1, 2024<lb/></note>
+
+	Typeset using L A T E X twocolumn style in AASTeX62<lb/>
+
+	<docTitle>
+	<titlePart>An Earth-sized Planet on the Verge of Tidal Disruption<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Fei Dai, 1, 2, 3 Andrew W. Howard, 3 Samuel Halverson, 4 Jaume Orell-Miquel, 5 Enric Pallé, 5<lb/> Howard Isaacson, 6, 7 Benjamin Fulton, 8 Ellen M. Price, 9, * Mykhaylo Plotnykov, 10 Leslie A. Rogers, 11<lb/> Diana Valencia, 10 Kimberly Paragas, 2 Michael Greklek-McKeon, 2 Jonathan Gomez Barrientos, 2<lb/> Heather A. Knutson, 2 Erik A. Petigura, 12 Lauren M. Weiss, 13 Rena Lee, 1 Casey L. Brinkman, 1<lb/> Daniel Huber, 1, 14 Guðmundur Stefánsson, 15 Kento Masuda, 16 Steven Giacalone, 3 Cicero X. Lu, 17, 18<lb/> Edwin S. Kite, 19 Renyu Hu, 20, 21 Eric Gaidos, 22 Michael Zhang, 23 Ryan A. Rubenzahl, 3, † Joshua N. Winn, 24<lb/> Te Han, 25 Corey Beard, 25, ‡ Rae Holcomb, 26 Aaron Householder, 27, 28 Gregory J. Gilbert, 12 Jack Lubin, 12<lb/> J. M. Joel Ong, 1, 29 Alex S. Polanski, 30 Nicholas Saunders, 1, † Judah Van Zandt, 12 Samuel W. Yee, 31<lb/> Jingwen Zhang, 1, ‡ Jon Zink, 3 Bradford Holden, 32 Ashley Baker, 33 Max Brodheim, 34 Ian J. M. Crossfield, 35<lb/> William Deich, 32 Jerry Edelstein, 36 Steven R. Gibson, 33 Grant M. Hill, 34 Sharon R Jelinsky, 36<lb/> Marc Kassis, 34 Russ R. Laher, 8 Kyle Lanclos, 34 Scott Lilley, 34 Joel N. Payne, 34 Kodi Rider, 36<lb/> Paul Robertson, 26 Arpita Roy, 37 Christian Schwab, 38 Abby P. Shaum, 3 Martin M. Sirk, 36 Chris Smith, 36<lb/> Adam Vandenberg, 34 Josh Walawender, 34 Sharon X. Wang, 39 Shin-Ywan (Cindy) Wang, 8 Edward Wishnow, 36<lb/> Jason T. Wright, 40, 41, 42 Sherry Yeh, 34 José A. Caballero, 43 Juan C. Morales, 44, 45 Felipe Murgas, 5, 46<lb/> Evangelos Nagel, 47 Ansgar Reiners, 47 Andreas Schweitzer, 48 Hugo M. Tabernero, 49 Mathias Zechmeister, 47<lb/> Alton Spencer, 50 David R. Ciardi, 51 Catherine A. Clark, 4, 51 Michael B. Lund, 51 Douglas A. Caldwell, 52<lb/> Karen A. Collins, 31 Richard P. Schwarz, 31 Khalid Barkaoui, 53, 54, 55 Cristilyn N. Watkins, 31 Avi Shporer, 56<lb/> Norio Narita, 57, 58, 5 Akihiko Fukui, 57, 5 Gregor Srdoc, 59 David W. Latham, 60 Jon M. Jenkins, 61<lb/> George R. Ricker, 56 Sara Seager, 56, 27, 62 and Roland Vanderspek 56<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>1 Institute for Astronomy, University of Hawai'i,</affiliation>
+	</byline>
+
+	<address>2680 Woodlawn Drive, Honolulu, HI 96822, USA<lb/></address>
+
+	<byline>
+	<affiliation>2 Division of Geological and Planetary Sciences,</affiliation>
+	</byline>
+
+	<address>1200 E California Blvd, Pasadena, CA, 91125, USA<lb/></address>
+
+	<byline>
+	<affiliation>3 Department of Astronomy, California Institute of Technology,</affiliation>
+	</byline>
+
+	<address>Pasadena, CA 91125, USA<lb/></address>
+
+	<byline>
+	<affiliation>4 Jet Propulsion Laboratory, California Institute of Technology,</affiliation>
+	</byline>
+
+	<address>4800 Oak Grove Drive, Pasadena, CA 91109, USA<lb/></address>
+
+	<byline>
+	<affiliation>5 Instituto de Astrofísica de Canarias (IAC),</affiliation>
+	</byline>
+
+	<address>Calle Vía Láctea s/n, 38205 La Laguna, Tenerife, Spain<lb/></address>
+
+	<byline>
+	<affiliation>6 Department of Astronomy, University of California Berkeley,</affiliation>
+	</byline>
+
+	<address>Berkeley CA 94720, USA<lb/></address>
+
+	<byline>
+	<affiliation>7 Centre for Astrophysics, University of Southern Queensland,</affiliation>
+	</byline>
+
+	<address>Toowoomba, QLD, Australia<lb/></address>
+
+	<byline>
+	<affiliation>8 NASA Exoplanet Science Institute/Caltech-IPAC,</affiliation>
+	</byline>
+
+	<address>MC 314-6, 1200 E California Blvd, Pasadena, CA 91125, USA<lb/></address>
+
+	<byline>
+	<affiliation>9 Department of the Geophysical Sciences, University of Chicago,</affiliation>
+	</byline>
+
+	<address>5734 South Ellis Ave., Chicago, IL 60637, USA<lb/></address>
+
+	<byline>
+	<affiliation>10 Centre for Planetary Sciences, University of Toronto,</affiliation>
+	</byline>
+
+	<address>1265 Military Trail, Toronto, ON, M1C 1A4, Canada<lb/></address>
+
+	<byline>
+	<affiliation>11 Department of Astronomy and Astrophysics, University of Chicago,</affiliation>
+	</byline>
+
+	<address>Chicago, IL 60637, USA<lb/></address>
+
+	<byline>
+	<affiliation>12 Department of Physics &amp; Astronomy, University of California Los Angeles,</affiliation>
+	</byline>
+
+	<address>Los Angeles, CA 90095, USA<lb/></address>
+
+	<byline>
+	<affiliation>13 Department of Physics and Astronomy, University of Notre Dame,</affiliation>
+	</byline>
+
+	<address>Notre Dame, IN 46556, USA<lb/></address>
+
+	<byline>
+	<affiliation>14 Sydney Institute for Astronomy (SIfA), School of Physics, University of Sydney,</affiliation>
+	</byline>
+
+	<address>NSW 2006, Australia<lb/></address>
+
+	<byline>
+	<affiliation>15 Anton Pannekoek Institute for Astronomy, University of Amsterdam,</affiliation>
+	</byline>
+
+	<address>Science Park 904, 1098 XH Amsterdam, The Netherlands<lb/></address>
+
+	<byline>
+	<affiliation>16 Department of Earth and Space Science, Osaka University,</affiliation>
+	</byline>
+
+	<address>Osaka 560-0043, Japan<lb/></address>
+
+	<byline>
+	<affiliation>17 Gemini Observatory/NSF's NOIRLab,</affiliation>
+	</byline>
+
+	<address>670 N. A'ohoku Place, Hilo, HI 96720, USA<lb/></address>
+
+	<byline>
+	<affiliation>18 Science Fellow, Gemini North<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>19 Department of Geophysical Sciences, University of Chicago,</affiliation>
+	</byline>
+
+	<address>Chicago, IL 60637, USA<lb/></address>
+
+	<byline>
+	<affiliation>20 Jet Propulsion Laboratory, California Institute of Technology,</affiliation>
+	</byline>
+
+	<address>Pasadena, CA 91109, USA<lb/></address>
+
+	<byline>
+	<affiliation>21 Division of Geological and Planetary Sciences, California Institute of Technology<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>
+		22 Department of Earth Sciences, University of Hawai'i at Mänoa,</affiliation>
+	</byline>
+
+	<address>1680 East-West Road, Honolulu, HI 96822 USA<lb/></address>
+
+	<byline>
+	<affiliation>23 Department of Astronomy &amp; Astrophysics, University of Chicago,</affiliation>
+	</byline>
+
+	<address>Chicago, IL 60637<lb/></address>
+
+	<byline>
+	<affiliation>24 Department of Astrophysical Sciences, Princeton University,</affiliation>
+	</byline>
+
+	<address>4 Ivy Lane, Princeton, NJ 08544, USA<lb/></address>
+
+	<byline>
+	<affiliation>25 Department of Physics &amp; Astronomy, The University of California,</affiliation>
+	</byline>
+
+	<address>Irvine, Irvine, CA 92697, USA<lb/></address>
+
+	<byline>
+	<affiliation>26 Department of Physics &amp; Astronomy, University of California Irvine,</affiliation>
+	</byline>
+
+	<address>Irvine, CA 92697, USA<lb/></address>
+
+	<byline>
+	<affiliation>27 Department of Earth, Atmospheric and Planetary Sciences, Massachusetts Institute of Technology,</affiliation>
+	</byline>
+
+	<address>Cambridge, MA 02139, USA<lb/></address>
+
+	<byline>
+	<affiliation>28 Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology,</affiliation>
+	</byline>
+
+	<address>Cambridge, MA 02139, USA<lb/></address>
+
+	29 NASA Hubble Fellow<lb/> Corresponding author:
+	<byline>
+	<docAuthor>Fei Dai<lb/></docAuthor>
+	</byline>
+
+	<email>fdai@hawaii.edu<lb/></email>
+
+	<idno>arXiv:2407.21167v1 [astro-ph.EP]</idno>
+
+	<date>30 Jul 2024<lb/></date>
+
+	Dai et al.<lb/>
+
+	<byline>
+	<affiliation>30 Department of Physics and Astronomy, University of Kansas,</affiliation>
+	</byline>
+
+	<address>Lawrence, KS 66045, USA<lb/></address>
+
+	<byline>
+	<affiliation>31 Center for Astrophysics | Harvard &amp; Smithsonian,</affiliation>
+	</byline>
+
+	<address>60 Garden Street, Cambridge, MA 02138, USA</address>
+
+	*<lb/>
+	<byline>
+	<affiliation>32 University of California Observatories University of California,</affiliation>
+	</byline>
+
+	<address>Santa Cruz 1156 High St, Santa Cruz, CA 95064<lb/></address>
+
+	<byline>
+	<affiliation>33 Caltech Optical Observatories,</affiliation>
+	</byline>
+
+	<address>Pasadena, CA, 91125, USA<lb/></address>
+
+	<byline>
+	<affiliation>34 W. M. Keck Observatory,</affiliation>
+	</byline>
+
+	<address>65-1120 Mamalahoa Hwy, Waimea, HI 96743<lb/></address>
+
+	<byline>
+	<affiliation>35 Department of Physics &amp; Astronomy, University of Kansas,</affiliation>
+	</byline>
+
+	<address>1082 Malott,1251 Wescoe Hall Dr., Lawrence, KS 66045, USA<lb/></address>
+
+	<byline>
+	<affiliation>36 Space Sciences Laboratory, University of California Berkeley,</affiliation>
+	</byline>
+
+	<address>Berkeley, CA 94720, USA<lb/></address>
+
+	<byline>
+	<affiliation>37 Astrophysics &amp; Space Institute, Schmidt Sciences,</affiliation>
+	</byline>
+
+	<address>New York, NY 10011, USA<lb/></address>
+
+	<byline>
+	<affiliation>38 School of Mathematical and Physical Sciences, Macquarie University,</affiliation>
+	</byline>
+
+	<address>Balaclava Road, North Ryde, NSW 2109, Australia<lb/></address>
+
+	<byline>
+	<affiliation>39 Department of Astronomy, Tsinghua University,</affiliation>
+	</byline>
+
+	<address>Beijing 100084, People's Republic of China<lb/></address>
+
+	<byline>
+	<affiliation>40 Department of Astronomy &amp; Astrophysics, 525 Davey Laboratory, Penn State,</affiliation>
+	</byline>
+
+	<address>University Park, PA, 16802, USA<lb/></address>
+
+	<byline>
+	<affiliation>41 Center for Exoplanets and Habitable Worlds, 525 Davey Laboratory, Penn State,</affiliation>
+	</byline>
+
+	<address>University Park, PA, 16802, USA<lb/></address>
+
+	<byline>
+	<affiliation>42 Penn State Extraterrestrial Intelligence Center, 525 Davey Laboratory, Penn State,</affiliation>
+	</byline>
+
+	<address>University Park, PA, 16802, USA<lb/></address>
+
+	<byline>
+	<affiliation>43 Centro de Astrobiología (CSIC-INTA), ESAC campus,</affiliation>
+	</byline>
+
+	<address>Camino Bajo del Castillo s/n, 28692 Villanueva de la Cañada, Madrid, Spain<lb/></address>
+
+	<byline>
+	<affiliation>44 Institut de Ciències de l'Espai (ICE, CSIC), Campus UAB,</affiliation>
+	</byline>
+
+	<address>Can Magrans sn, 08193 Bellaterra, Barcelona, Spain<lb/></address>
+
+	<byline>
+	<affiliation>45 Institut d'Estudis Espacials de Catalunya (IEEC),</affiliation>
+	</byline>
+
+	<address>08034 Barcelona, Spain<lb/></address>
+
+	<byline>
+	<affiliation>46 Departamento de Astrofísica, Universidad de La Laguna (ULL),</affiliation>
+	</byline>
+
+	<address>38206 La Laguna, Tenerife, Spain<lb/></address>
+
+	<byline>
+	<affiliation>47 Institut für Astrophysik und Geophysik, Georg-August-Universität Göttingen,</affiliation>
+	</byline>
+
+	<address>Friedrich-Hund-Platz 1, 37077 Göttingen, Germany<lb/></address>
+
+	<byline>
+	<affiliation>48 Hamburger Sternwarte,</affiliation>
+	</byline>
+
+	<address>Gojenbergsweg 112, D-21029 Hamburg, Germany<lb/></address>
+
+	<byline>
+	<affiliation>49 Departamento de Física de la Tierra y Astrofísica &amp; IPARCOS-UCM (Instituto de Física de Partículas y del Cosmos de la UCM),<lb/> Facultad de Ciencias Físicas, Universidad Complutense de Madrid,</affiliation>
+	</byline>
+
+	<address>28040 Madrid, Spain<lb/></address>
+
+	<byline>
+	<affiliation>50 Western Connecticut State University,</affiliation>
+	</byline>
+
+	<address>Danbury, CT, 06810<lb/></address>
+
+	<byline>
+	<affiliation>51 NASA Exoplanet Science Institute/Caltech-IPAC,</affiliation>
+	</byline>
+
+	<address>1200 E. California Blvd., Pasadena, CA 91125, USA<lb/></address>
+
+	<byline>
+	<affiliation>52 SETI Institute,</affiliation>
+	</byline>
+
+	<address>Mountain View, CA 94043 USA</address>
+
+	<byline>
+	<affiliation>/NASA Ames Research Center,</affiliation>
+	</byline>
+
+	<address>Moffett Field, CA 94035 USA<lb/></address>
+
+	<byline>
+	<affiliation>53 Astrobiology Research Unit, Université de Liège,</affiliation>
+	</byline>
+
+	<address>19C Allée du 6 Août, 4000 Liège, Belgium<lb/></address>
+
+	<byline>
+	<affiliation>54 Department of Earth, Atmospheric and Planetary Science, Massachusetts Institute of Technology,</affiliation>
+	</byline>
+
+	<address>77 Massachusetts Avenue,<lb/> Cambridge, MA 02139, USA<lb/></address>
+
+	<byline>
+	<affiliation>55 Instituto de Astrofísica de Canarias (IAC),</affiliation>
+	</byline>
+
+	<address>Calle Vía Láctea s/n, 38200, La Laguna, Tenerife, Spain<lb/></address>
+
+	<byline>
+	<affiliation>56 Department of Physics and Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology,</affiliation>
+	</byline>
+
+	<address>Cambridge, MA<lb/> 02139, USA<lb/></address>
+
+	<byline>
+	<affiliation>57 Komaba Institute for Science, The University of Tokyo,</affiliation>
+	</byline>
+
+	<address>3-8-1 Komaba, Meguro, Tokyo 153-8902, Japan<lb/></address>
+
+	<byline>
+	<affiliation>58 Astrobiology Center,</affiliation>
+	</byline>
+
+	<address>2-21-1 Osawa, Mitaka, Tokyo 181-8588, Japan<lb/></address>
+
+	<byline>
+	<affiliation>59 Kotizarovci Observatory,</affiliation>
+	</byline>
+
+	<address>Sarsoni 90, 51216 Viskovo, Croatia<lb/></address>
+
+	<byline>
+	<affiliation>60 Center for Astrophysics |Harvard &amp; Smithsonian,</affiliation>
+	</byline>
+
+	<address>60 Garden St, Cambridge, MA 02138, USA<lb/></address>
+
+	<byline>
+	<affiliation>61 NASA Ames Research Center,</affiliation>
+	</byline>
+
+	<address>Moffett Field, CA 94035, USA<lb/></address>
+
+	<byline>
+	<affiliation>62 Department of Aeronautics and Astronautics, MIT,</affiliation>
+	</byline>
+
+	<address>77 Massachusetts Avenue, Cambridge, MA 02139, USA<lb/></address>
+
+	(
+	<note type="submission">Received ?; Revised ?; Accepted ?)<lb/> Submitted to AAS</note>
+
+	ABSTRACT<lb/>
+	<div type="abstract">TOI-6255 b (GJ 4256) is an Earth-sized planet (1.079±0.065 R ⊕ ) with an orbital period of only 5.7<lb/> hours. With the newly commissioned Keck Planet Finder (KPF) and CARMENES spectrographs, we<lb/> determined the planet's mass to be 1.44±0.14 M ⊕ . The planet is just outside the Roche limit, with<lb/> P orb /P Roche = 1.13 ±0.10. The strong tidal force likely deforms the planet into a triaxial ellipsoid with<lb/> a long axis that is ∼10% longer than the short axis. Assuming a reduced stellar tidal quality factor<lb/> Q ′<lb/> ⋆ ≈ 10 7 , we predict that tidal orbital decay will cause TOI-6255 to reach the Roche limit in roughly<lb/> 400 Myr. Such tidal disruptions may produce the possible signatures of planet engulfment that have<lb/> been on stars with anomalously high refractory elemental abundances compared to its conatal binary<lb/> companion. TOI-6255 b is also a favorable target for searching for star-planet magnetic interactions,<lb/> which might cause interior melting and hasten orbital decay. TOI-6255 b is a top target (Emission<lb/> Spectroscopy Metric of about 24) for phase curve observations with the James Webb Space Telescope.<lb/></div>
+
+	Keywords:
+	<keyword>planets and satellites: composition; planets and satellites: formation; planets and satellites: interiors<lb/></keyword>
+
+    * Heising-Simons Foundation 51 Pegasi b Postdoctoral Fellow<lb/> † NSF Graduate Research Fellow<lb/> ‡ NASA FINESST Fellow
+
+		</front>
+	</text>
+
+</TEI>

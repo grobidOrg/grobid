@@ -17,7 +17,14 @@
 	</byline>
 
 	<byline>
-	<affiliation>Department of Neurological Surgery, University of Pittsburgh School of Medicine,<lb/> Pittsburgh, Pennsylvania and *Division of Neurological Surgery, Northwestern University<lb/> Medical School,</affiliation>
+	<affiliation>Department of Neurological Surgery, University of Pittsburgh School of Medicine,<lb/></affiliation>
+	</byline>
+
+	<address>Pittsburgh, Pennsylvania</address>
+
+	and
+	<byline>
+	<affiliation>*Division of Neurological Surgery, Northwestern University<lb/> Medical School,</affiliation>
 	</byline>
 
 	<address>Chicago, Illinois<lb/></address>

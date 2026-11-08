@@ -6,9 +6,7 @@
 	<text xml:lang="en">
 		<front>
 <lb/>
-	<docTitle>
-	<titlePart>Solid State Communications<lb/></titlePart>
-	</docTitle>
+    <title level="j">Solid State Communications<lb/></title>
 
 	<note type="submission">Submitted: April 22, 2003<lb/></note>
 
@@ -29,11 +27,11 @@
 	____________________________________________________________________________ Abstract<lb/>
 	<div type="abstract">The roles of aliovalent Ca II -for-Y III substitution and high-pressure-oxygen annealing in the<lb/> process of &quot;superconducterizing&quot; the Co-based layered copper oxide, CoSr 2 (Y 1-x Ca x )Cu 2 O 7+δ<lb/> (Co-1212), were investigated. The as-air-synthesized samples up to x = 0.4 were found essentially<lb/> oxygen stoichiometric (-0.03 ≤ δ ≤ 0.00). These samples, however, were not superconductive,<lb/> suggesting that the holes created by the divalent-for-trivalent cation substitution are trapped on<lb/> Co in the charge reservoir. Ultra-high-pressure heat treatment carried out at 5 GPa and 500 o C for<lb/> 30 min in the presence of Ag 2 O 2 as an excess oxygen source induced bulk superconductivity in<lb/> these samples. The highest T c was obtained for the high-oxygen-pressure treated x = 0.3 sample at<lb/> ∼40 K.<lb/></div>
 
-	<reference>PACS : 74.10.+v; 74.25.Dw; 74.62.Bf; 74.72.Jt<lb/></reference>
+	<keyword>PACS : 74.10.+v; 74.25.Dw; 74.62.Bf; 74.72.Jt<lb/></keyword>
 
-	Keywords: 
+	Keywords:
 	<keyword>A. High-T c superconductors; B. Chemical synthesis; E. High-pressure</keyword>
-	 
+
 	____________________________________________________________________________<lb/> *Corresponding author:
 	<email>karppinen@msl.titech.ac.jp</email>
 

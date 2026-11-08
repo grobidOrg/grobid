@@ -1,0 +1,113 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_1503.00226">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-24T14:55:23.648071Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-24T14:55:23.648071Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-24T14:56:21.613Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>Adaptive estimation of the baseline hazard function in the Cox model<lb/> by model selection, with high-dimensional covariates<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Agathe Guilloux<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Laboratoire de Statistique Théorique et Appliquée,<lb/> Université Pierre et Marie Curie -Paris 6<lb/></affiliation>
+	</byline>
+
+	 e-mail :
+	<email>agathe.guilloux@upmc.fr<lb/></email>
+
+	<byline>
+	<docAuthor>Sarah Lemler<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Laboratoire de Mathématiques et de Modélisation d'Evry, UMR CNRS 8071-USC INRA,<lb/> Université d'Évry Val d'Essonne,</affiliation>
+	</byline>
+
+	<address>France<lb/></address>
+
+	e-mail :
+	<email>sarah.lemler@genopole.cnrs.fr<lb/></email>
+
+	<byline>
+	<docAuthor>Marie-Luce Taupin<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Laboratoire de Mathématiques et de Modélisation d'Evry, UMR CNRS 8071-USC INRA,<lb/> Université d'Évry Val d'Essonne,</affiliation>
+	</byline>
+
+	<address>France<lb/></address>
+
+	e-mail :
+	<email>marie-luce.taupin@genopole.cnrs.fr<lb/></email>
+
+	<byline>
+	<affiliation>Unité MaIAGE, INRA Jouy-En-Josas,</affiliation>
+	</byline>
+
+	<address>France</address>
+
+	Abstract<lb/>
+	<div type="abstract">The purpose of this article is to provide an adaptive estimator of the baseline function in the<lb/> Cox model with high-dimensional covariates. We consider a two-step procedure : first, we estimate<lb/> the regression parameter of the Cox model via a Lasso procedure based on the partial log-likelihood,<lb/> secondly, we plug this Lasso estimator into a least-squares type criterion and then perform a model<lb/> selection procedure to obtain an adaptive penalized contrast estimator of the baseline function.<lb/> Using non-asymptotic estimation results stated for the Lasso estimator of the regression param-<lb/>eter, we establish a non-asymptotic oracle inequality for this penalized contrast estimator of the<lb/> baseline function, which highlights the discrepancy of the rate of convergence when the dimension<lb/> of the covariates increases.<lb/></div>
+
+	Keywords:
+	<keyword>Survival analysis; Conditional hazard rate function; Cox's proportional hazards model;<lb/> Right-censored data; Semi-parametric model; Nonparametric model; High-dimensional covariates;<lb/> Model selection; Non-asymptotic oracle inequalities; Concentration inequalities<lb/></keyword>
+
+	<idno>arXiv:1503.00226v2 [math.ST]</idno>
+
+	<date>3 Mar 2015</date>
+
+		</front>
+	</text>
+
+</TEI>

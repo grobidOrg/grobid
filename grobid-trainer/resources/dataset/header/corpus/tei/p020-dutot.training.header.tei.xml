@@ -61,12 +61,12 @@
 	ABSTRACT<lb/>
 	<div type="abstract">We describe in this paper a new method for building an<lb/> efficient algorithm for scheduling jobs in a cluster. Jobs are<lb/> considered as parallel tasks (PT) which can be scheduled on<lb/> any number of processors. The main feature is to consider<lb/> two criteria that are optimized together. These criteria are<lb/> the makespan and the weighted minimal average completion<lb/> time (minsum). They are chosen for their complementarity,<lb/> to be able to represent both user-oriented objectives and<lb/> system administrator objectives.<lb/> We propose an algorithm based on a batch policy with<lb/> increasing batch sizes, with a smart selection of jobs in each<lb/> batch. This algorithm is assessed by intensive simulation<lb/> results, compared to a new lower bound (obtained by a re-<lb/>laxation of ILP) of the optimal schedules for both criteria<lb/> separately. It is currently implemented in an actual real-size<lb/> cluster platform.<lb/></div>
 
-	<keyword>Categories and Subject Descriptors<lb/> F.2.2 [Analysis of Algorithms and Problem Complex-<lb/>ity]: Nonnumerical Algorithms and Problems-Sequencing<lb/> and scheduling; D.4.1 [Operating Systems]: Process man-<lb/>agement-Scheduling, Concurrency<lb/> General Terms<lb/> Algorithms, Management<lb/></keyword>
+	Categories and Subject Descriptors<lb/> <keyword>F.2.2 [Analysis of Algorithms and Problem Complex-<lb/>ity]: Nonnumerical Algorithms and Problems-Sequencing<lb/> and scheduling; D.4.1 [Operating Systems]: Process man-<lb/>agement-Scheduling, Concurrency<lb/></keyword> General Terms<lb/> <keyword>Algorithms, Management<lb/></keyword>
 
 	* Authors are members of the <note type="group">APACHE project</note> 
 	<note type="funding">supported<lb/> by CNRS, INPG, INRIA, UJF<lb/></note>
 
-	Permission to make digital or hard copies of all or part of this work for<lb/> personal or classroom use is granted without fee provided that copies are<lb/> not made or distributed for profit or commercial advantage and that copies<lb/> bear this notice and the full citation on the first page. To copy otherwise, to<lb/> republish, to post on servers or to redistribute to lists, requires prior specific<lb/> permission and/or a fee.<lb/>
+	<note type="copyright">Permission to make digital or hard copies of all or part of this work for<lb/> personal or classroom use is granted without fee provided that copies are<lb/> not made or distributed for profit or commercial advantage and that copies<lb/> bear this notice and the full citation on the first page. To copy otherwise, to<lb/> republish, to post on servers or to redistribute to lists, requires prior specific<lb/> permission and/or a fee.<lb/></note>
 
 	<meeting>SPAA&apos;04, June 27-30, 2004, Barcelona, Spain.<lb/></meeting>
 

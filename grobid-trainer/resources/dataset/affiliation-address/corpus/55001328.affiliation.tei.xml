@@ -11,8 +11,8 @@
 							<orgName type="institution">Sri Venkateswara University</orgName>,
 							<orgName type="laboratory">Solar Energy Laboratory</orgName>,
 							<orgName type="department">Department of Physics</orgName>,
-							<orgName type="institution">S.V.U. Campus</orgName>,
 							<address>
+								<addrLine>S.V.U. Campus</addrLine>,
 								<settlement>Tirupati</settlement>
 								<postCode>517 502</postCode>,
 								<country>India</country>

@@ -35,13 +35,25 @@
 	<address>Katowice, Poland,</address>
 
 	<byline>
-	<affiliation>4 The Houston<lb/> Methodist Research Institute, Houston,Texas, United States of America, 5 The Houston Methodist Hospital,<lb/> Department of Surgery,</affiliation>
+	<affiliation>4 The Houston<lb/> Methodist Research Institute,</affiliation>
+	</byline>
+
+	<address>Houston,Texas, United States of America,</address>
+
+	<byline>
+	<affiliation>5 The Houston Methodist Hospital,<lb/> Department of Surgery,</affiliation>
 	</byline>
 
 	<address>Houston, Texas, United States of America,</address>
 
 	<byline>
-	<affiliation>6 The University of Texas, M.D.<lb/> Anderson Cancer Center, Department of Genetics, Houston Texas, United States of America, 7 Department<lb/> of Regenerative Medicine and Cell Biology, Military Institute of Hygiene and Epidemiology (WIHE),</affiliation>
+	<affiliation>6 The University of Texas, M.D.<lb/> Anderson Cancer Center, Department of Genetics,</affiliation>
+	</byline>
+
+	<address>Houston Texas, United States of America,</address>
+
+	<byline>
+	<affiliation>7 Department<lb/> of Regenerative Medicine and Cell Biology, Military Institute of Hygiene and Epidemiology (WIHE),</affiliation>
 	</byline>
 
 	<address>Warsaw,<lb/> Poland,</address>

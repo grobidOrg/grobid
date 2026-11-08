@@ -2245,7 +2245,7 @@
                                  	<addrLine>University Park<lb/></addrLine>
                                  	<settlement>Nottingham</settlement>
                                  	<postCode>NG7 2RD<lb/></postCode>
-                                  	<country key="UK">UK<lb/></country>
+                                  	<country key="GB">UK<lb/></country>
                                	</address>
                              </affiliation>
                              <marker>b</marker>                   
@@ -2276,7 +2276,7 @@
                         <author>	
                        		<affiliation>
 								<marker>1</marker>
-								<institution>Saarland University</institution>
+								<orgName type="institution">Saarland University</orgName>
 								<address>
 									<postCode>66123</postCode>
 									<settlement>Saarbrücken</settlement>,

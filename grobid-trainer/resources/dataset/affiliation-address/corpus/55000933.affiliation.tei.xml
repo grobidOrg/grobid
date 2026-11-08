@@ -29,9 +29,10 @@
 						</affiliation>
 						<affiliation>
 							<marker>2</marker>
-							<orgName type="laboratory">CRO</orgName>,
+							<!-- check: "CRO" and "Veeda" are two names of the contract research organisation Veeda CRO; both typed institution, Veeda moved out of the address -->
+							<orgName type="institution">CRO</orgName>,
+							<orgName type="institution">Veeda</orgName>,
 							<address>
-								<settlement>Veeda</settlement>,
 								<settlement>Ahmedabad</settlement>,
 								<region>Gujarat</region>,
 								<country>India</country>
@@ -40,7 +41,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="department">A.R. College of Pharmacy</orgName>,
+							<orgName type="institution">A.R. College of Pharmacy</orgName>,
 							<address>
 								<settlement>Vallabh Vidhyanagar</settlement>,
 								<region>Gujarat</region>,

@@ -8,10 +8,11 @@
 
 		<publisher>IOP PUBLISHING</publisher>
 
-		<reference>EUROPEAN JOURNAL OF PHYSICS<lb/> Eur. J. Phys. 32 (2011) 1007–1018</reference>
+        <title level="j">EUROPEAN JOURNAL OF PHYSICS<lb/></title>
+		<reference>Eur. J. Phys. 32 (2011) 1007–1018</reference>
 
 		<idno>doi:10.1088/0143-0807/32/4/014<lb/></idno>
-		
+
 		<docTitle>
 		<titlePart>Euler strut: a mechanical analogy<lb/> for dynamics in the vicinity of a<lb/> critical point<lb/></titlePart>
 		</docTitle>
@@ -52,13 +53,13 @@
 
 		<note type="submission">Received 31 March 2011, in final form 15 April 2011<lb/></note>
 
-		Published 
+		Published
 		<date>24 May 2011<lb/></date>
 
 		Online at
 		<ptr type="web">stacks.iop.org/EJP/32/1007<lb/></ptr>
 
-		Abstract<lb/> 
+		Abstract<lb/>
 		<div type="abstract">An anchored elastic filament (Euler strut) under an external point load applied<lb/> to its free end is a simple model for a second-order phase transition. In<lb/> the static case, a load greater than the critical load causes a Euler buckling<lb/> instability, leading to a change in the filament's shape. The analysis of filament<lb/> dynamics with an external point load at its end shows that when approaching the<lb/> critical end-load, the period of such an inverted pendulum diverges in a fashion<lb/> analogous to a 'soft mode' critical slowing down in, for example, a ferroelectric<lb/> phase transition of displacive type. We thus show that an advanced concept<lb/> of solid state physics, i.e. 'soft mode' dynamics and critical slowing down,<lb/> observable in a variety of second-order phase transitions, can be actualized in<lb/> this simple mechanical system. The variable loads attached to a vertical spring<lb/> allow for an experimental implementation and quantitative measurements as<lb/> an illustration of this analogy.<lb/></div>
 
 		</front>

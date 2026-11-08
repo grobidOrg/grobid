@@ -10,6 +10,7 @@
 							Aus der 
 							<affiliation>
 								<orgName type="institution">Universitäts-Nervenklinik</orgName>,
+								<!-- check: trailing asterisk after the settlement may be a footnote marker rather than an author indice; left untagged -->
 								<address>
 									<settlement>Tübingen</settlement> *
 								</address>

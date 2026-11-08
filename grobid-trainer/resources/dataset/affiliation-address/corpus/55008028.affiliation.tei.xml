@@ -10,8 +10,9 @@
 						<affiliation>
 							<orgName type="institution">University of Ottawa</orgName>
 							<lb/>
+							<orgName type="institution">CHEO RI</orgName>,
 							<address>
-								<addrLine>CHEO RI, 401 Smyth Road</addrLine><lb/> 
+								<addrLine>401 Smyth Road</addrLine><lb/> 
 								<settlement>Ottawa</settlement>,
 								<region>Ontario</region>
 								<postCode>K1H 8L1</postCode>

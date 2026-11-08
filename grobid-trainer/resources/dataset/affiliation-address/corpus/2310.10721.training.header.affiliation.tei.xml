@@ -1,0 +1,53 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Department of Astrophysics</orgName>,
+							<orgName type="institution">University of Vienna</orgName>,
+							<address>
+								<addrLine>Türkenschanzstrasse 17</addrLine>,
+								<postCode>1180</postCode>
+								<settlement>Vienna</settlement>,
+								<country>Austria</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="department">Lorentz Institute for Theoretical Physics</orgName>,
+							<orgName type="institution">Leiden University</orgName>,
+							<address>
+								<postBox>PO Box 9506</postBox>,
+								<postCode>2300 RA</postCode>
+								<settlement>Leiden</settlement>,
+								<country>the Netherlands</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+							
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="department">Leiden Observatory</orgName>,
+							<orgName type="institution">Leiden University</orgName>,
+							<address>
+								<postBox>PO Box 9513</postBox>,
+								<postCode>NL-2300 RA</postCode>
+								<settlement>Leiden</settlement>,
+								<country>The Netherlands</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

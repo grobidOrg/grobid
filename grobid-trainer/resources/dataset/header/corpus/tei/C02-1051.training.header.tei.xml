@@ -35,7 +35,11 @@
 	<email>mfujiwar@willamette.edu<lb/></email>
 
 	<byline>
-	<affiliation>MAKOTO YOSHIE<lb/> Graduate School of Information Sciences<lb/> Hiroshima City University<lb/></affiliation>
+	<docAuthor>MAKOTO YOSHIE<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Graduate School of Information Sciences<lb/> Hiroshima City University<lb/></affiliation>
 	</byline>
 
 	<email>yoshie@nlp.its.hiroshima-cu.ac.jp<lb/></email>

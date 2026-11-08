@@ -4307,7 +4307,7 @@ public class BiblioItem {
                         if (StringUtils.isNotBlank(consolidatedAuthor.getLastName())
                                 && StringUtils.isNotBlank(extractedAuthor.getLastName())
                                 && consolidatedAuthor.getLastName().equalsIgnoreCase(extractedAuthor.getLastName())
-                                && firstNameCompatible(consolidatedAuthor, extractedAuthor)) {
+                                && Person.firstNamesCompatible(consolidatedAuthor, extractedAuthor)) {
                             mergeAuthorMetadataFromExtracted(consolidatedAuthor, extractedAuthor);
                             matchedConsolidatedAuthors.add(consolidatedAuthor);
                             matchedExtractedAuthors.add(extractedAuthor);
@@ -4325,11 +4325,11 @@ public class BiblioItem {
                             || StringUtils.isBlank(consolidatedAuthor.getLastName()))
                         continue;
                     Person bestExtractedAuthor = null;
-                    double bestSimilarity = SOFT_LASTNAME_SIMILARITY_THRESHOLD;
+                    double bestSimilarity = Person.SOFT_LASTNAME_SIMILARITY_THRESHOLD;
                     for (Person extractedAuthor : extractedAuthors) {
                         if (matchedExtractedAuthors.contains(extractedAuthor)
                                 || StringUtils.isBlank(extractedAuthor.getLastName())
-                                || !firstNameCompatible(consolidatedAuthor, extractedAuthor))
+                                || !Person.firstNamesCompatible(consolidatedAuthor, extractedAuthor))
                             continue;
                         double similarity = TextUtilities.getRatcliffObershelpSimilarity(
                                 consolidatedAuthor.getLastName(),
@@ -4376,27 +4376,6 @@ public class BiblioItem {
         extractedBiblio.setConsolidationService(consolidatedBiblio.getConsolidationService());
     }
 
-    /** Minimum last-name Ratcliff/Obershelp similarity to accept a soft author match. */
-    private static final double SOFT_LASTNAME_SIMILARITY_THRESHOLD = 0.90;
-
-    /**
-     * True when the extracted author's first name is compatible with the consolidated author's:
-     * the extracted first name is blank, the two are equal, or the consolidated first name is a
-     * single initial matching the first character of the extracted first name.
-     */
-    private static boolean firstNameCompatible(Person consolidatedAuthor, Person extractedAuthor) {
-        String extractedFirstName = extractedAuthor.getFirstName();
-        if (StringUtils.isBlank(extractedFirstName))
-            return true;
-        String consolidatedFirstName = consolidatedAuthor.getFirstName();
-        if (StringUtils.isBlank(consolidatedFirstName))
-            return false;
-        if (consolidatedFirstName.equals(extractedFirstName))
-            return true;
-        return consolidatedFirstName.length() == 1
-                && consolidatedFirstName.equals(extractedFirstName.substring(0, 1));
-    }
-
     /**
      * True when the two surnames share a prefix/suffix containment relationship (case- and
      * accent-insensitive): one surname starts or ends with the other. This is a lightweight
@@ -4435,7 +4414,7 @@ public class BiblioItem {
      *     first="F H" surname="Barreiro Megino" (shared token "Barreiro").
      */
     private static boolean positionalPairAcceptable(Person consolidatedAuthor, Person extractedAuthor) {
-        if (firstNameCompatible(consolidatedAuthor, extractedAuthor))
+        if (Person.firstNamesCompatible(consolidatedAuthor, extractedAuthor))
             return true;
         if (surnamesShareContainment(consolidatedAuthor, extractedAuthor))
             return true;

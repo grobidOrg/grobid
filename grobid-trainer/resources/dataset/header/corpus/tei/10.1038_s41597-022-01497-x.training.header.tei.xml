@@ -8,8 +8,11 @@
 
 	<page>1<lb/></page>
 
-	<reference>Scientific Data |<lb/> (2022) 9:452 | https://doi.org/10.1038/s41597-022-01497-x<lb/> 
-	www.nature.com/scientificdata<lb/></reference>
+	<reference>Scientific Data |<lb/> (2022) 9:452 |</reference>
+
+	<idno>https://doi.org/10.1038/s41597-022-01497-x<lb/></idno>
+
+	<ptr type="web">www.nature.com/scientificdata<lb/></ptr>
 
 	<docTitle>
 	<titlePart>Datasets of fingertip forces while<lb/> grasping a handle with unsteady<lb/> thumb platform<lb/></titlePart>

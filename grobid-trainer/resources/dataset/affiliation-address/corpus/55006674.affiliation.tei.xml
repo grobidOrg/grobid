@@ -9,9 +9,9 @@
 
 						<affiliation>
 							<orgName type="institution">Swedish Defence Research Agency</orgName>,
-							<address>
-								<region>FOI</region>
+							<orgName type="institution">FOI</orgName>
 							<lb/>
+							<address>
 								<postCode>SE-164 90</postCode>
 								<settlement>Stockholm</settlement>,
 								<country>Sweden</country>

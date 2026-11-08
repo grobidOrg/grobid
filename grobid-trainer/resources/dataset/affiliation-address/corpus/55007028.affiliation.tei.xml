@@ -11,8 +11,9 @@
 							<marker>1</marker>
 							<orgName type="department">Chair for Computer Aided Medical<lb/> Procedures &amp; Augmented Reality</orgName>
 							<lb/>
-							<orgName type="institution">Technische Universität München<lb/> Munich</orgName>,
+							<orgName type="institution">Technische Universität München</orgName><lb/>
 							<address>
+								<settlement>Munich</settlement>,
 								<country>GER</country>
 							<lb/>
 							</address>
@@ -25,7 +26,7 @@
 							<lb/>
 							<address>
 								<settlement>Munich</settlement>,
-								<region>GER</region>
+								<country>GER</country>
 							</address>
 						</affiliation>
 

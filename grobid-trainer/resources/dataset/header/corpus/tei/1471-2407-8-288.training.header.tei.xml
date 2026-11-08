@@ -45,22 +45,46 @@
 
 	<address>Nottingham, UK<lb/></address>
 
-	Email: Susanna L Cooke -
+	Email:
+	<byline>
+	<docAuthor>Susanna L Cooke</docAuthor>
+	</byline>
+	-
 	<email>susanna.cooke@cancer.org.uk</email>; 
 
-	Jessica CM Pole -
+
+	<byline>
+	<docAuthor>Jessica CM Pole</docAuthor>
+	</byline>
+	-
 	<email>jp339@mole.bio.cam.ac.uk</email>; 
 
-	Suet-Feung Chin -
+
+	<byline>
+	<docAuthor>Suet-Feung Chin</docAuthor>
+	</byline>
+	-
 	<email>Suet-<lb/>Feung.Chin@cancer.org.uk</email>; 
 
-	Ian O Ellis -
+
+	<byline>
+	<docAuthor>Ian O Ellis</docAuthor>
+	</byline>
+	-
 	<email>ian.ellis@nottingham.ac.uk</email>; 
 
-	Carlos Caldas -
+
+	<byline>
+	<docAuthor>Carlos Caldas</docAuthor>
+	</byline>
+	-
 	<email>Carlos.Caldas@cancer.org.uk</email>;<lb/> 
 
-	Paul AW Edwards* -
+
+	<byline>
+	<docAuthor>Paul AW Edwards*</docAuthor>
+	</byline>
+	-
 	<email>pawe1@cam.ac.uk<lb/></email>
 
 	* Corresponding author 

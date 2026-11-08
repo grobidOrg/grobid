@@ -9,18 +9,18 @@
 
 						<affiliation>
 							<orgName type="department">Department of Pathology, Anatomy and Cell Biology</orgName>,
-							<orgName type="institution">Jefferson Medical College</orgName>,
+							<orgName type="department">Jefferson Medical College</orgName>,
 							<lb/>
 							<orgName type="institution">Thomas Jefferson University</orgName>,
 							<address>
 								<settlement>Philadelphia</settlement>,
-								<country>Pennsylvania</country>
+								<region>Pennsylvania</region>
 							</address>
 						</affiliation>
 						<affiliation>
 							<marker>2</marker>
 							<orgName type="institution">Sbarro Institute for Cancer Research and Molecular Medicine</orgName>,
-							<orgName type="institution">Jefferson Medical College</orgName>,
+							<orgName type="department">Jefferson Medical College</orgName>,
 							<lb/>
 							<orgName type="institution">Thomas Jefferson University</orgName>,
 							<address>
