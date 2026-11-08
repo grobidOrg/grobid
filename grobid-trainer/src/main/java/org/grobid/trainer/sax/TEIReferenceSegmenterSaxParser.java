@@ -47,6 +47,16 @@ public class TEIReferenceSegmenterSaxParser extends DefaultHandler {
     // text — all of which would otherwise be consumed and counted as references.
     private boolean inTeiHeader = false;
 
+    // A <bibl type="footnote"> is a footnote without any reference that reached the
+    // reference segmenter (e.g. commentary only). The whole element, footnote number
+    // included, is labelled <other> so the model learns to skip it instead of passing
+    // it to the citation model as a reference.
+    private static final String FOOTNOTE_BIBL_TYPE = "footnote";
+    private boolean inFootnoteBibl = false;
+    // true once the first token of the current footnote bibl got its I-<other>, so that
+    // the label and the text that follows form a single <other> segment
+    private boolean footnoteBiblStarted = false;
+
     //    public int n = 0;
     public Lexicon lexicon = Lexicon.getInstance();
     private int totalReferences = 0;
@@ -96,8 +106,10 @@ public class TEIReferenceSegmenterSaxParser extends DefaultHandler {
             accumulator.setLength(0);
         } else if (qName.equals("bibl")) {
             String text = getText();
-            currentTag = "<reference>";
+            currentTag = inFootnoteBibl ? "<other>" : "<reference>";
             writeField(text);
+            inFootnoteBibl = false;
+            footnoteBiblStarted = false;
             if (allContent != null) {
                 if (allContent.length() != 0) {
                     allContent.append(" ");
@@ -137,9 +149,13 @@ public class TEIReferenceSegmenterSaxParser extends DefaultHandler {
         if (qName.equals("bibl")) {
             currentTag = null;
             accumulator.setLength(0);
-            totalReferences++;
+            inFootnoteBibl = FOOTNOTE_BIBL_TYPE.equals(atts.getValue("type"));
+            footnoteBiblStarted = false;
+            if (!inFootnoteBibl) {
+                totalReferences++;
+            }
         } else if (qName.equals("label")) {
-            currentTag = "<label>";
+            currentTag = inFootnoteBibl ? "<other>" : "<label>";
         }
     }
 
@@ -153,7 +169,7 @@ public class TEIReferenceSegmenterSaxParser extends DefaultHandler {
         // tokenizer (which has '@' as a delimiter via TextUtilities.fullPunctuations)
         // never gets a chance to shred it into "@" and "newline".
         final String marker = "@newline";
-        boolean begin = true;
+        boolean begin = !(inFootnoteBibl && footnoteBiblStarted);
         int start = 0;
         while (true) {
             int idx = text.indexOf(marker, start);
@@ -172,6 +188,9 @@ public class TEIReferenceSegmenterSaxParser extends DefaultHandler {
                 if (begin) {
                     labeled.add(tok + " I-" + currentTag);
                     begin = false;
+                    if (inFootnoteBibl) {
+                        footnoteBiblStarted = true;
+                    }
                 } else {
                     labeled.add(tok + " " + currentTag);
                 }
