@@ -63,6 +63,7 @@ import org.grobid.core.utilities.counters.impl.CntManagerReportRepresentation;
 import org.grobid.trainer.evaluation.utilities.EvaluationFieldSelection;
 import org.grobid.trainer.evaluation.utilities.FieldSpecification;
 import org.grobid.trainer.evaluation.utilities.NamespaceContextMap;
+import org.grobid.trainer.evaluation.utilities.StringSimilarity;
 
 //import org.apache.log4j.xml.DOMConfigurator;
 
@@ -1397,6 +1398,28 @@ public class EndToEndEvaluation {
                                 // we compare the two result sets
                             }
 
+                            // A merged textual field holds at most one value per side: long statements
+                            // rarely match exactly, so they are also scored with the fuzzy variants.
+                            // The other full text fields have no fuzzy scores.
+                            if (field.mergeMultipleValues && field.isTextual) {
+                                String goldMerged = goldResults.isEmpty() ? "" : goldResults.get(0);
+                                String grobidMerged = grobidResults.isEmpty() ? "" : grobidResults.get(0);
+                                scoreFuzzy(
+                                        fieldName,
+                                        goldMerged,
+                                        grobidMerged,
+                                        StringSimilarity.levenshtein(goldMerged, grobidMerged)
+                                                >= minLevenshteinDistance,
+                                        result.levenshteinStats);
+                                scoreFuzzy(
+                                        fieldName,
+                                        goldMerged,
+                                        grobidMerged,
+                                        StringSimilarity.ratcliffObershelp(goldMerged, grobidMerged)
+                                                >= minRatcliffObershelpSimilarity,
+                                        result.ratcliffObershelpStats);
+                            }
+
                             // prepare first the grobidResult set for soft match
                             List<String> grobidSoftResults = new ArrayList<>();
                             for (String res : grobidResults)
@@ -1413,8 +1436,7 @@ public class EndToEndEvaluation {
                                 if (goldResult.length() > 0) {
                                     result.strictStats.incrementExpected(fieldName);
                                     result.softStats.incrementExpected(fieldName);
-                                    result.levenshteinStats.incrementExpected(fieldName);
-                                    result.ratcliffObershelpStats.incrementExpected(fieldName);
+                                    // the fuzzy variants are accumulated by scoreFuzzy, for merged fields only
                                 }
 
                                 double pct = 0.0;
@@ -1808,6 +1830,28 @@ public class EndToEndEvaluation {
         fieldSpecification.removeIf(field -> listFieldNamesToRemove.contains(field.fieldName));
     }
 
+    /**
+     * Accumulate the fuzzy matching of a single (merged) full text value: a non-empty gold is
+     * expected, and matched or missed; a non-empty unmatched GROBID value is a false positive.
+     */
+    private static void scoreFuzzy(String fieldName, String gold, String grobid, boolean similar, Stats stats) {
+        boolean hasGold = gold.length() > 0;
+        boolean hasGrobid = grobid.length() > 0;
+        if (hasGold) {
+            stats.incrementExpected(fieldName);
+        }
+        if (hasGold && hasGrobid && similar) {
+            stats.incrementObserved(fieldName);
+            return;
+        }
+        if (hasGold) {
+            stats.incrementFalseNegative(fieldName);
+        }
+        if (hasGrobid) {
+            stats.incrementFalsePositive(fieldName);
+        }
+    }
+
     private String evaluationRun(int runType, int sectionType, StringBuilder reportMD) {
         if ((runType != this.GROBID) && (runType != this.PDFX) && (runType != this.CERMINE)) {
             throw new GrobidException("The run type is not valid for evaluation: " + runType);
@@ -1850,7 +1894,12 @@ public class EndToEndEvaluation {
 
             // Contributions in eLife are not text elements, but a combination between the author and some text elements,
             //  since we cannot easily put them together it's better to ignore them for the time being.
-            removeFieldsFromEvaluation(Arrays.asList("contribution_stmt", "conflict_stmt"), fulltextFields);
+            // The eLife <funding-statement> only holds the closing sentence of the Funding section: the funder
+            //  table printed above it is encoded as structured <award-group> data, which cannot be put back
+            //  in printed order (e.g. surname before given names), so funding is ignored as well.
+            removeFieldsFromEvaluation(
+                    Arrays.asList("contribution_stmt", "conflict_stmt", "funding_stmt"),
+                    fulltextFields);
         }
 
         if (StringUtils.containsIgnoreCase(xmlInputPath, "biorxiv")) {
@@ -2006,17 +2055,22 @@ public class EndToEndEvaluation {
         report.append(EvaluationUtilities.computeMetrics(softStats));
         reportMD.append(EvaluationUtilities.computeMetricsMD(softStats));
 
-        if (sectionType != this.FULLTEXT) {
+        // in full text, only the merged statement fields are scored with the fuzzy variants
+        boolean fuzzyScored = sectionType != this.FULLTEXT
+                || !levenshteinStats.getLabels().isEmpty()
+                || !ratcliffObershelpStats.getLabels().isEmpty();
+        String fuzzyScope = sectionType == this.FULLTEXT ? " - statement fields only" : "";
+        if (fuzzyScored) {
             report.append(
                     "\n\n==== Levenshtein Matching ===== (Minimum Levenshtein distance at "
                             +
                             this.minLevenshteinDistance
-                            + ")\n");
+                            + ")" + fuzzyScope + "\n");
             reportMD.append(
                     "\n\n#### Levenshtein Matching (Minimum Levenshtein distance at "
                             +
                             this.minLevenshteinDistance
-                            + ")\n");
+                            + ")" + fuzzyScope + "\n");
             report.append("\n===== Field-level results =====\n");
             reportMD.append("\n**Field-level results**\n");
             report.append(EvaluationUtilities.computeMetrics(levenshteinStats));
@@ -2026,12 +2080,12 @@ public class EndToEndEvaluation {
                     "\n\n= Ratcliff/Obershelp Matching = (Minimum Ratcliff/Obershelp similarity at "
                             +
                             minRatcliffObershelpSimilarity
-                            + ")\n");
+                            + ")" + fuzzyScope + "\n");
             reportMD.append(
                     "\n\n#### Ratcliff/Obershelp Matching (Minimum Ratcliff/Obershelp similarity at "
                             +
                             minRatcliffObershelpSimilarity
-                            + ")\n");
+                            + ")" + fuzzyScope + "\n");
             report.append("\n===== Field-level results =====\n");
             reportMD.append("\n**Field-level results**\n");
             report.append(EvaluationUtilities.computeMetrics(ratcliffObershelpStats));
