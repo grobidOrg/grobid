@@ -936,17 +936,63 @@ public class GrobidProperties {
     }
 
     public static String getDelftEmbeddingsName(final String modelName) {
-        ModelParameters param = getGrobidModelParameters(modelName);
-        if (param == null) {
-            LOGGER.debug("No configuration parameter defined for model " + modelName);
-            return null;
+        // Field-level prefix-fallback, as for the architecture: a flavor entry without a
+        // `delft` section inherits the embeddings from the closest ancestor that has one.
+        // An explicit empty/null `embeddings_name` means a model without word embeddings.
+        String name = modelName;
+        while (name != null) {
+            ModelParameters param = modelMap.get(name);
+            if (param != null && param.delft != null) {
+                return param.delft.embeddings_name;
+            }
+            int ind = name.lastIndexOf("-");
+            name = (ind == -1) ? null : name.substring(0, ind);
         }
-        DelftModelParameters delftParam = param.delft;
-        if (delftParam == null) {
-            LOGGER.debug("No configuration parameter defined for DeLFT engine for model " + modelName);
-            return null;
+        LOGGER.debug(
+                "No DeLFT configuration for model " + modelName + " or any ancestor, using the default embeddings");
+        return new DelftModelParameters().embeddings_name;
+    }
+
+    /**
+     * Suffix of the directory of a DeLFT model (delft.suffix), the one given to DeLFT with
+     * --suffix when the model was trained, e.g. "glove_840B"; null when there is none.
+     */
+    public static String getDelftSuffix(final String modelName) {
+        // Field-level prefix-fallback, as for the architecture.
+        String name = modelName;
+        while (name != null) {
+            ModelParameters param = modelMap.get(name);
+            if (param != null
+                    && param.delft != null
+                    && StringUtils.isNotBlank(param.delft.suffix)) {
+                String suffix = param.delft.suffix;
+                // same rule as DeLFT, and the suffix ends up in a python string literal
+                if (!suffix.matches("[A-Za-z0-9][A-Za-z0-9._-]*"))
+                    throw new GrobidPropertyException("Invalid DeLFT suffix '" + suffix + "' for model " + name);
+                return suffix;
+            }
+            int ind = name.lastIndexOf("-");
+            name = (ind == -1) ? null : name.substring(0, ind);
         }
-        return param.delft.embeddings_name;
+        return null;
+    }
+
+    /**
+     * Name of the directory of a DeLFT model: <model>-<architecture>[-<suffix>], e.g.
+     * header-BidLSTM_CRF_FEATURES-glove_840B.
+     */
+    public static String getDelftModelDirectoryName(final String modelName, final String architecture) {
+        String dirName = (architecture == null) ? modelName : modelName + "-" + architecture;
+        String suffix = getDelftSuffix(modelName);
+        return (suffix == null) ? dirName : dirName + "-" + suffix;
+    }
+
+    /**
+     * Directory, under the models path, of the DeLFT model, or null when it does not exist.
+     */
+    public static File getDelftModelDirectory(final String modelName, final String architecture) {
+        File modelDir = new File(getModelPath(), getDelftModelDirectoryName(modelName, architecture));
+        return modelDir.isDirectory() ? modelDir : null;
     }
 
     public static String getDelftTranformer(final String modelName) {

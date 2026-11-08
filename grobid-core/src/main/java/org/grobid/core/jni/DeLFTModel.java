@@ -81,13 +81,21 @@ public class DeLFTModel {
             try {
                 String fullModelName = this.modelName.replace("_", "-");
 
-                //if (architecture != null && !architecture.equals("BidLSTM_CRF"))
-                if (architecture != null)
-                    fullModelName += "-" + this.architecture;
-
                 if (GrobidProperties.getInstance().useELMo(this.modelName)
-                        && modelName.toLowerCase().indexOf("bert") == -1)
+                        && modelName.toLowerCase().indexOf("bert") == -1) {
+                    if (architecture != null)
+                        fullModelName += "-" + this.architecture;
                     fullModelName += "-with_ELMo";
+                } else {
+                    File modelDir = GrobidProperties.getDelftModelDirectory(fullModelName, this.architecture);
+                    if (modelDir == null) {
+                        throw new GrobidException("No DeLFT model "
+                                + GrobidProperties.getDelftModelDirectoryName(fullModelName, this.architecture)
+                                + " under "
+                                + modelPath.getAbsolutePath());
+                    }
+                    fullModelName = modelDir.getName();
+                }
 
                 jep.eval(this.modelName + " = Sequence('" + fullModelName + "')");
                 jep.eval(this.modelName + ".load(dir_path='" + modelPath.getAbsolutePath() + "')");
@@ -422,7 +430,19 @@ public class DeLFTModel {
                 command.add(GrobidProperties.getInstance().getDelftTranformer(modelName));
             }
             if (GrobidProperties.getInstance().useELMo(modelName) && modelName.toLowerCase().indexOf("bert") == -1) {
-                command.add("--use-ELMo");
+                throw new GrobidException("ELMo is not supported by DeLFT anymore, disable useELMo for " + modelName);
+            }
+            // without --embedding, DeLFT trains a model without word embeddings
+            String embeddingsName = GrobidProperties.getDelftEmbeddingsName(modelName);
+            if (StringUtils.isNotBlank(embeddingsName)) {
+                command.add("--embedding");
+                command.add(embeddingsName);
+            }
+            // names the output directory as getDelftModelDirectory() expects it
+            String suffix = GrobidProperties.getDelftSuffix(modelName);
+            if (suffix != null) {
+                command.add("--suffix");
+                command.add(suffix);
             }
             if (GrobidProperties.getInstance().getDelftTrainingMaxSequenceLength(modelName) != -1) {
                 command.add("--max-sequence-length");

@@ -113,6 +113,8 @@ public class GrobidConfig {
          * Parameters relative to a specific DeLFT model (train and runtime)
          */
         public String architecture;
+        // suffix of the model directory, <model>-<architecture>-<suffix> (DeLFT --suffix)
+        public String suffix;
         public boolean useELMo = false;
         public String embeddings_name = "glove-840B";
         public String transformer;

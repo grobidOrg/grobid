@@ -182,7 +182,7 @@ Each model has its own configuration indicating:
 
 - which "engine" to be used, with values `wapiti` for feature-based CRF or `delft` for Deep Learning models. 
 
-- for Deep Learning models, which neural architecture to be used, with choices normally among `BidLSTM_CRF`, `BidLSTM_CRF_FEATURES`, `BERT`, `BERT-CRF`, `BERT_CRF_FEATURES`. The corresponding model/architecture combination need to be available under `grobid-home/models/`. If it is not the case, you will need to train the model with this particular architecture. 
+- for Deep Learning models, which neural architecture to be used, with choices normally among `BidLSTM_CRF`, `BidLSTM_CRF_FEATURES`, `BidLSTM_ChainCRF_FEATURES`, `BERT`, `BERT_CRF`, `BERT_CRF_FEATURES`, and the suffix of the model directory (`suffix`). The model is loaded from `grobid-home/models/<name>-<architecture>-<suffix>` (`<name>-<architecture>` without suffix), e.g. `citation-BidLSTM_CRF_FEATURES-glove_840B`. GROBID ships `BidLSTM_CRF_FEATURES` models with the suffix `glove_840B` (see [Shipped models](Deep-Learning-models.md#shipped-models)); for another combination, you will need to train the model with this particular architecture. 
 
 Wapiti CRF training uses three parameters: `window`, `epsilon` and `nbMaxIterations` related to stopping criteria. 
 
@@ -202,6 +202,8 @@ For instance, the citation model is configured below to use a `BidLSTM_CRF_FEATU
       delft:
         # deep learning parameters
         architecture: "BidLSTM_CRF_FEATURES"
+        # the model is loaded from grobid-home/models/citation-BidLSTM_CRF_FEATURES-glove_840B
+        suffix: "glove_840B"
         runtime:
           # parameters used at runtime/prediction
           max_sequence_length: 3000
@@ -212,7 +214,9 @@ For instance, the citation model is configured below to use a `BidLSTM_CRF_FEATU
           batch_size: 30
 ```
 
-A Deep Learning model comes with predefined `word embeddings` (e.g. `glove-840B` or `word2vec`) or `transformer` pre-trained model name (e.g. `bert-base-cased`, `allenai/scibert_scivocab_cased` - reusing Hugging Face transformers Hub model names). They are part of the trained DL model and will be loaded online the first time if now available in the local DeLFT install. 
+`suffix` is the suffix given to DeLFT (`--suffix`) when the model was trained, which distinguishes variants of a model with the same architecture, typically the embeddings they use (`glove_840B`, `no_embeddings`). It can contain only letters, digits, `.`, `_` and `-`. A model without `suffix` is loaded from `<name>-<architecture>`. Like `architecture`, it is inherited by a flavor that does not set it. When the model directory does not exist, GROBID fails at the loading of the model with an error naming the directory.
+
+A Deep Learning model comes with predefined `word embeddings` (e.g. `glove-840B` or `word2vec`) or `transformer` pre-trained model name (e.g. `bert-base-cased`, `allenai/scibert_scivocab_cased` - reusing Hugging Face transformers Hub model names). They are part of the trained DL model (its `config.json`) and will be loaded online the first time if not available in the local DeLFT install. `embeddings_name` (default `glove-840B`) only selects the word embeddings of a model trained from GROBID; an empty value trains a model without word embeddings. 
 
 ### Logging
 

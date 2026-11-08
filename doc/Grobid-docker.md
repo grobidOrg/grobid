@@ -11,7 +11,7 @@ GROBID can be instantiated and run using Docker. Using two equivalent docker hub
 
 For convenience, we provide two docker images:
 
-- a **full image** (using the convention `{version}-full` e.g. `grobid/grobid:{version}-full` or `lfoppiano/grobid:{version}-full`) (~8GB) able to run both Deep Learning and CRF models (**recommended to run it with a GPU**): this image includes all the required python and TensorFlow libraries, GPU support and all DL model resources. It can provide more accurate results, notably for reference extraction/parsing and citation context identification. Depending on the availability of a GPU (recommended) or not, some Deep Learning models might introduce much slower runtime and significantly higher memory usage. This image is considerably larger than a CRF-only image. The full image contains Python and TensorFlow/Pytorch libraries (more than 3GB) and pre-loaded embeddings (around 5GB), but we recommend to use it.
+- a **full image** (using the convention `{version}-full` e.g. `grobid/grobid:{version}-full` or `lfoppiano/grobid:{version}-full`) (~8GB) able to run both Deep Learning and CRF models (**recommended to run it with a GPU**): this image includes all the required python and PyTorch libraries, GPU support and all DL model resources. It can provide more accurate results, notably for reference extraction/parsing and citation context identification. Depending on the availability of a GPU (recommended) or not, some Deep Learning models might introduce much slower runtime and significantly higher memory usage. This image is considerably larger than a CRF-only image. The full image contains Python and PyTorch libraries with CUDA (more than 3GB) and pre-loaded embeddings (around 5GB), but we recommend to use it.
 
 - a **lightweight image** (using the convention `{version}-crf` e.g. `grobid/grobid:{version}-crf` or `lfoppiano/grobid:{version}-crf`) with only CRF models (~500MB): this image offers best performance in terms of runtime and memory usage, as well as limiting the size of the image, but it does not use some of the best performing models by accuracy. If possible, use the above full image. 
 
@@ -57,6 +57,10 @@ To specify to use only certain GPUs (see the [nvidia container toolkit user guid
 ```
 
 You can run the image on CPU by omitting the `-gpus` parameters. 
+
+The image carries PyTorch with CUDA 12.8 (amd64): the CUDA libraries are in the image, the host only needs the NVIDIA driver and the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html). `nvidia-smi` on the host shows the highest CUDA version supported by its driver, which should be 12.8 or more. If the GPU is not usable, the models run on the CPU.
+
+On CPU, each Deep Learning model call uses 4 threads (`OMP_NUM_THREADS=4` and `MKL_NUM_THREADS=4` in the image), which measured best when many documents are processed in parallel. To change it, pass the variables to `docker run`, e.g. `-e OMP_NUM_THREADS=8 -e MKL_NUM_THREADS=8`. See [CPU threads](Deep-Learning-models.md#cpu-threads).
 
 Note the default version is running on port `8070`, however it can be mapped on the more traditional port `8080` of your host with the following command:
 
@@ -227,20 +231,6 @@ You should see something like:
 
 See for instance [here](https://stackoverflow.com/a/36982696) for allocating to the Docker machine more than the default RAM on `macos` with command lines.
 
-### The TensorFlow library was compiled to use SSE4.1 instructions
-
-If after starting the container with **CPU** only (Intel or AMD), the container crashes with an exit code 134 and the message:
-
-```
-The TensorFlow library was compiled to use SSE4.1 instructions, but these aren't available on your machine.
-```
-
-It means that your CPU does not support the extra SSE4.1 instructions needed by TensorFlow. This case doesn't happen with GPU. 
-
-Since TensorFlow 1.6, the library is compiled to use this extra set instructions, because all modern CPU support them (all CPU after 2008) and it speeds up Deep Learning with CPU. However, when using a Virtual Machine, the default VM configuration of the CPU might not include to use these instructions. 
-
-To solve this problem, you need to update the configuration of the CPU in the VM to support SSE4.1, SSE4.3 and AVX extension instruction sets. 
-
 ## Building an image
 
 The following part is normally for development purposes. You can use the official stable docker images from the docker HUB as described above.
@@ -248,11 +238,9 @@ However if you are interested in using the master version of GROBID in container
 
 ### Building the Deep Learning and image
 
-In order to build an image supporting GPU, you need:
+The image does not need a GPU to be built: on amd64, it installs DeLFT with the CUDA 12.8 build of PyTorch, which is used at runtime when a GPU is available; on arm64, it installs the CPU build of PyTorch.
 
-- preferably to have the nvidia driver and CUDA properly installed on the machine you are using to build the image - this can be check by the usual `nvidia-smi` command
-
-Without this requirement, the image might default to CPU, even if GPU are available on the host machine running the image. 
+DeLFT is installed from the commit set by `ARG DELFT_REF` in `Dockerfile.delft` (until the next DeLFT release). It can be changed at build time with `--build-arg DELFT_REF=<commit>`; the models under `grobid-home/models/` must then be loadable by this DeLFT version.
 
 For being able to use both CRF and Deep Learning models, use the dockerfile `./Dockerfile.delft`. The only important information then is the version which will be checked out from the tags.
 

@@ -1,7 +1,7 @@
 name: Build and push an ONNX docker image
 
 # This workflow builds the lightweight ONNX/Wapiti-only Docker image
-# (no Python/DeLFT/TensorFlow dependencies)
+# (no Python/DeLFT/PyTorch dependencies)
 
 on:
   push:
@@ -90,7 +90,7 @@ jobs:
             echo "**Features:**"
             echo "- ONNX Runtime for deep learning models (CPU only)"
             echo "- Wapiti CRF for traditional models"
-            echo "- No Python, TensorFlow, or DeLFT dependencies"
+            echo "- No Python, PyTorch, or DeLFT dependencies"
             echo ""
             echo "**Usage:**"
             echo '```bash'

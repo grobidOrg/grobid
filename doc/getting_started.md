@@ -41,7 +41,7 @@ Grobid docker images are available on both at [Docker Grobid Hub](https://hub.do
 
 For convenience, we provide two Grobid docker images:
 
-- the **full** image (docker tag `{version}-full`, e.g. `grobid/grobid:0.9.1-full`) provides the best accuracy, because it includes all the required Python and TensorFlow libraries, GPU support and all Deep Learning model resources. However, it requires more resources, ideally a GPU (it will be automatically detected on Linux). If you have a limited amount of PDF, a good machine, and prioritize [accuracy](Deep-Learning-models.md#recommended-deep-learning-models), use this Grobid flavor. To run this version of Grobid, the command is:
+- the **full** image (docker tag `{version}-full`, e.g. `grobid/grobid:0.9.1-full`) provides the best accuracy, because it includes all the required Python and PyTorch libraries, GPU support and all Deep Learning model resources. However, it requires more resources, ideally a GPU (it will be automatically detected on Linux). If you have a limited amount of PDF, a good machine, and prioritize [accuracy](Deep-Learning-models.md#recommended-deep-learning-models), use this Grobid flavor. To run this version of Grobid, the command is: 
 
 ```console
 docker run --rm --gpus all --init --ulimit core=0 -p 8070:8070 grobid/grobid:0.9.1-full

@@ -6,7 +6,9 @@ Since GROBID version `0.5.4` (2018), it is possible to use in GROBID recent Deep
 
 These architectures have been tested on Linux 64bit, macOS 64bit (Intel), and macOS ARM.
 
-Integration is realized via Java Embedded Python [JEP](https://github.com/ninia/jep), which uses a JNI of CPython. This integration is two times faster than the Tensorflow Java API and significantly faster than RPC serving (see [here](https://www.slideshare.net/FlinkForward/flink-forward-berlin-2017-dongwon-kim-predictive-maintenance-with-apache-flink). Additionally, it does not require to modify DeLFT as it would be the case with Py4J gateway (socket-based).
+GROBID uses DeLFT **1.x**, which runs on [PyTorch](https://pytorch.org). DeLFT up to 0.4.x ran on TensorFlow/Keras: its models (`model_weights.hdf5`) cannot be loaded by DeLFT 1.x and the TensorFlow runtime is no longer needed. The models shipped with GROBID have been retrained with DeLFT 1.x (see [Shipped models](#shipped-models) below); a model trained by yourself with DeLFT 0.4.x has to be retrained. See [Upgrading](Upgrading.md) when moving an existing installation.
+
+Integration is realized via Java Embedded Python [JEP](https://github.com/ninia/jep), which uses a JNI of CPython. This integration was measured two times faster than the TensorFlow Java API and is significantly faster than RPC serving (see [here](https://www.slideshare.net/FlinkForward/flink-forward-berlin-2017-dongwon-kim-predictive-maintenance-with-apache-flink). Additionally, it does not require to modify DeLFT as it would be the case with Py4J gateway (socket-based).
 
 There are currently no neural model for the fulltext models, because the input sequences for this model are too large for the current supported Deep Learning architectures. The problem would need to be formulated differently for this task or to use alternative DL architectures (with sliding window, etc.).
 
@@ -26,15 +28,31 @@ For current GROBID version 0.9.1, we recommend considering the usage of the foll
 
 - `affiliation-address` model: for parsing affiliation and address blocks, `BidLSTM_CRF_FEATURES` architecture provides better accuracy than CRF at the cost of a minor runtime impact. 
 
-- `reference-segmenter` model: this model segments a bibliographical reference section into individual references, `BidLSTM_ChainCRF_FEATURES` architecture provides better accuracy than CRF (even on very very very long reference sections), but at the cost of a global runtime 2 to 3 times slower. 
+- `reference-segmenter` model: this model segments a bibliographical reference section into individual references, the `BidLSTM_CRF_FEATURES` architecture provides better accuracy than CRF (even on very very very long reference sections), but at the cost of a global runtime 2 to 3 times slower. 
 
-- `header` model: this model extracts the header metadata, the `BidLSTM_CRF_FEATURES` or `BidLSTM_ChainCRF_FEATURES` (a faster variant) provides slightly better results than CRF, especially with less mainstream domains and publisher. With a GPU, there is normally almost no runtime impact by selecting this DL model. 
+- `header` model: this model extracts the header metadata, the `BidLSTM_CRF_FEATURES` architecture provides slightly better results than CRF, especially with less mainstream domains and publisher. With a GPU, there is normally almost no runtime impact by selecting this DL model. 
 
 - `funding-acknowledgement` model: this is a typical NER model that extracts funder names, funding information, acknowledged persons and organizations, etc. The `BidLSTM_CRF_FEATURES` provides more accurate results than CRF.
 
 Other Deep Learning models do not show better accuracy than old-school CRF according to our benchmarkings, so we do not recommend using them in general at this stage. However, some of them tend to be more portable and can be more reliable than CRF for document layouts and scientific domains far from what is available in the training data.
 
 Finally, the model `fulltext` (structuring the content body of a document) is currently only based on CRF, due to the long input sequences to be processed. 
+
+### Shipped models
+
+GROBID ships the following DeLFT models under `grobid-home/models/`, all with the `BidLSTM_CRF_FEATURES` architecture and `glove-840B` word embeddings: `segmentation`, `header`, `reference-segmenter`, `name-header`, `name-citation`, `date`, `figure`, `table`, `affiliation-address`, `citation` and `funding-acknowledgement`.
+
+Each model is a directory named `<model>-<architecture>-<suffix>`, for instance `header-BidLSTM_CRF_FEATURES-glove_840B`, holding:
+
+- `config.json`: the model configuration (architecture, embeddings, features, maximum sequence length...),
+- `preprocessor.json`: the vocabularies and the feature preprocessing,
+- `model.safetensors`: the weights, in the [safetensors](https://huggingface.co/docs/safetensors) format.
+
+The suffix, `glove_840B` here, tells the variant of the model; it is selected in the configuration with `delft.suffix`, see [Configuration](#configuration) below. A model without a suffix lives in `<model>-<architecture>`.
+
+There is currently no DeLFT model shipped for `patent-citation`, for the flavors (e.g. `header-article-light`, which then use the model of their base, e.g. `header`), nor for other architectures (`BidLSTM_ChainCRF_FEATURES`, `BidLSTM_CRF` and the `BERT` ones): to use them, train the model first (see [Training the models](Training-the-models-of-Grobid.md)).
+
+The two text classifiers `copyright` and `license` are still TensorFlow models (`grobid-home/models/copyright_gru` and `license_gru`), which DeLFT 1.x refuses to load. Keep their `engine` to `wapiti` (the default): the copyright and license of a header is then not classified.
 
 ### Getting started with Deep Learning
 
@@ -50,17 +68,43 @@ However, if you need a "local" library installation and build, prepare a lot of 
 
 The following was tested with Java 21.
 
-<span>1.</span> install [DeLFT](https://github.com/kermitt2/delft), see instructions [here](https://github.com/kermitt2/delft#install).
-DeLFT version `0.4.6` has been tested successfully with Python 3.10-3.11. For GPU support, CUDA 12.x (12.3, as required by TensorFlow 2.17) must be installed. 
+<span>1.</span> Install [DeLFT](https://github.com/kermitt2/delft) 1.x, see instructions [here](https://github.com/kermitt2/delft#install). DeLFT 1.x requires Python 3.10 to 3.13 and brings PyTorch with it, no TensorFlow is needed. Use a new Python environment rather than one holding the TensorFlow-based DeLFT 0.4.x.
 
-<span>2.</span> Test your DeLFT installation for GROBID models: 
+Until the next DeLFT release, GROBID uses a given commit of DeLFT, the one indicated by `DELFT_REF` in `Dockerfile.delft`. Clone DeLFT next to GROBID and install it from this commit:
 
 ```shell
-cd delft/
-python -m delft.applications.grobidTagger citation tag --architecture BidLSTM_CRF
+git clone https://github.com/kermitt2/delft.git ../delft
+cd ../delft
+git checkout 137f59c3c1cb97055205831e2f499a5af75e06fa
+
+# Linux with an NVIDIA GPU (CUDA 12.8)
+pip install -e ".[gpu]" --extra-index-url https://download.pytorch.org/whl/cu128
+
+# Linux without GPU (x86_64 or arm64)
+pip install -e . --extra-index-url https://download.pytorch.org/whl/cpu
+
+# macOS (PyTorch uses the Apple Silicon GPU with MPS)
+pip install -e .
 ```
 
-If it works (you see some annotations in JSON format), you are sure to have a working DeLFT environment for **all** GROBID models. The next steps address the native bridge between DeLFT and the JVM running GROBID. 
+On Linux, the default PyTorch wheel of PyPI is a CUDA build, which brings several GB of CUDA libraries: without GPU, take the CPU build from the PyTorch index as above (`python -c "import torch; print(torch.__version__)"` then shows `2.11.0+cpu`). The CUDA libraries come with the PyTorch wheel, only a recent NVIDIA driver needs to be installed on the machine. For older GPUs not supported by CUDA 12.8 (pre-Turing, e.g. V100/P100), DeLFT provides the `gpu-pre-turing` extra (CUDA 12.6), see the [DeLFT installation guide](https://github.com/kermitt2/delft/blob/master/doc/Install-DeLFT.md). DeLFT uses the GPU when one is available (CUDA, or MPS on Apple Silicon), the CPU otherwise.
+
+A source checkout is needed to train models from GROBID, which runs DeLFT's `delft/applications/grobidTagger.py`. For running models only, DeLFT can also be installed with pip (`pip install "delft @ git+https://github.com/kermitt2/delft.git@<commit>"`); `delft.install` (see step 3) is then just the directory where the embeddings are stored.
+
+The `glove-840B` embeddings used by the shipped models are downloaded (around 2GB) and stored as an lmdb database under `data/db/` of the DeLFT directory the first time a model using them is loaded. To prepare them in advance:
+
+```shell
+cd ../delft
+python ../grobid/grobid-home/scripts/preload_embeddings.py --registry ../grobid/grobid-home/config/resources-registry.json
+```
+
+<span>2.</span> Test your DeLFT installation with a GROBID model, from the DeLFT directory:
+
+```shell
+python -c "from delft.sequenceLabelling import Sequence; m = Sequence('header-BidLSTM_CRF_FEATURES-glove_840B'); m.load(dir_path='../grobid/grobid-home/models')"
+```
+
+If it works (it prints `Model loaded: BidLSTM_CRF_FEATURES` and `Word embeddings: glove-840B`), you have a working DeLFT environment for the GROBID models. The next steps address the native bridge between DeLFT and the JVM running GROBID. 
 
 <span>3.</span> Configure your GROBID config file. 
 
@@ -77,7 +121,9 @@ Indicate the GROBID model that should use a Deep Learning implementation in the 
   models:
     - name: "citation"
       engine: "delft"
-      architecture: "BidLSTM_CRF_FEATURES"
+      delft:
+        architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
 ```
 
 The default Deep Learning architecture is `BidLSTM_CRF`, which is the best sequence labelling RNN architecture (basically a slightly revised version of [(Lample et al., 2016)](https://arxiv.org/abs/1603.01360) with Glove embeddings). However for GROBID, an architecture also exploiting features (in particular layout features, which are not captured at all by the pretrained language models) gives usually better results and the preferred choice is `BidLSTM_CRF_FEATURES`. If you wish to use another architecture, you need to specify it in the same config file. 
@@ -88,11 +134,12 @@ For instance to use a model integrating a fine-tuned transformer, you can select
   models:
     - name: "citation"
       engine: "delft"
-      architecture: "BERT_CRF"
-      transformer: "allenai/scibert_scivocab_cased"
+      delft:
+        architecture: "BERT_CRF"
+        transformer: "allenai/scibert_scivocab_cased"
 ```
 
-However, it will work only if the model is available under `grobid-home/models/`, currently only the `BidLSTM_CRF` and `BidLSTM_CRF_FEATURES` models are shipped with GROBID, given the size of BERT transformer models (400MB). To use a different architecture, you will thus need to train the new architecture model first with DeLFT and copy all the model files under the specific model subdirectory `grobid-home/models/**model**/`. 
+However, it will work only if the model is available under `grobid-home/models/`, currently only `BidLSTM_CRF_FEATURES` models are shipped with GROBID (see [Shipped models](#shipped-models)), given the size of BERT transformer models (400MB). To use a different architecture, you will thus need to train the new architecture model first with DeLFT and copy all the model files under the model directory `grobid-home/models/<model>-<architecture>[-<suffix>]/`. 
 
 If you are using a Python environment for the DeLFT installation, you can set the environment path in the config file as well:
 
@@ -103,7 +150,7 @@ If you are using a Python environment for the DeLFT installation, you can set th
 
 Normally by setting the Python environment path in the config file (e.g. `pythonVirtualEnv: "../delft/env"`), you will not need to launch GROBID in the same activated environment. 
 
-<span>4.</span> Install [JEP](https://github.com/ninia/jep) manually and preferably globally (outside a virtual env. and not under `~/.local/lib/python3.*/site-packages/`). 
+<span>4.</span> Install [JEP](https://github.com/ninia/jep) manually and preferably globally (outside a virtual env. and not under `~/.local/lib/python3.*/site-packages/`). Use the version of the `black.ninia:jep` dependency in `build.gradle` (currently `4.3.2`), installed after DeLFT so that it builds against the numpy version DeLFT installs: `pip install jep==4.3.2` (it needs a JDK, `JAVA_HOME` pointing to it). 
 
 We provide an installation script for Linux under `grobid-home/scripts`. This script should be launched from GROBID root directory (`grobid/`), e.g.:
 
@@ -126,9 +173,13 @@ In case you have installed DeLFT with `virtualenv` and you have not indicated th
 When running the GROBID service on a first input, you should see in the logs that the expected Deep Learning models are loaded and the JEP threads are activated:
 
 ```
-INFO  [2020-10-30 23:04:07,756] org.grobid.core.jni.DeLFTModel: Loading DeLFT model for citation with architecture BidLSTM_CRF...
-INFO  [2020-10-30 23:04:07,758] org.grobid.core.jni.JEPThreadPool: Creating JEP instance for thread 44
+INFO  [2026-10-18 15:57:30,053] org.grobid.core.jni.DeLFTModel: Loading DeLFT model for citation with architecture BidLSTM_CRF_FEATURES...
+Loading weights from /opt/grobid/grobid-home/models/citation-BidLSTM_CRF_FEATURES-glove_840B/model.safetensors
+Model loaded: BidLSTM_CRF_FEATURES
+Word embeddings: glove-840B
 ```
+
+If the model directory does not exist, the model fails to load with an error naming the directory looked for (`No DeLFT model citation-BidLSTM_CRF_FEATURES-glove_840B under .../grobid-home/models`): check the `architecture` and `suffix` of the model in the configuration.
 
 It is then possible to [benchmark end-to-end](End-to-end-evaluation.md) the selected Deep Learning models as any usual GROBID benchmarking exercise. In practice, the CRF models should be mixed with Deep Learning models to keep the process reasonably fast and memory-hungry. In addition, note that, currently, due to the limited amount of training data, Deep Learning models perform better than CRF for a subset of models (`citation`, `affiliation-address`, `reference-segmenter`, `header` and `funding-acknowledgement`). This should of course certainly change in the future! 
 
@@ -164,10 +215,25 @@ The following models (citation) will run with DeLFT `BidLSTM_CRF_FEATURES` by ad
   models:
     - name: "citation"
       engine: "delft"
-      architecture: "BidLSTM_CRF_FEATURES"
+      delft:
+        architecture: "BidLSTM_CRF_FEATURES"
+        suffix: "glove_840B"
 ```
 
-**NOTE**: model names normally all use underscore and no hyphen. If not the case, replace hyphen by underscore. 
+The model is loaded from `grobid-home/models/<name>-<architecture>-<suffix>`, here `citation-BidLSTM_CRF_FEATURES-glove_840B`:
+
+- `architecture` is the DeLFT architecture of the model,
+- `suffix` is the suffix of the model directory, the one given to DeLFT with `--suffix` when the model was trained. The shipped models use `glove_840B`, the embeddings they are trained with. Without `suffix`, the model is loaded from `<name>-<architecture>`. It can contain only letters, digits, `.`, `_` and `-`.
+
+A flavor (e.g. `header-article-light`) inherits both from its base model (e.g. `header`) when its configuration does not set them. When the model directory of a flavor does not exist, the model of the base is used.
+
+`embeddings_name` (default `glove-840B`) is the word embeddings used when training a model; at runtime, the embeddings come from the `config.json` of the model. An empty `embeddings_name` trains a model without word embeddings, which does not need any embeddings database at runtime.
+
+### CPU threads
+
+When running on CPU, PyTorch spreads the work of each model call on a pool of threads. DeLFT sizes this pool from the cores available to the process, taking into account the limits of a container (`--cpus`, `--cpuset-cpus`). Setting `OMP_NUM_THREADS` (and `MKL_NUM_THREADS`) before starting GROBID sets the size of the pool instead, it has to be set in the environment as it is read when PyTorch loads.
+
+When GROBID processes many documents in parallel, a large pool for every model call makes the calls compete for the cores; the full Docker image therefore sets `OMP_NUM_THREADS=4` and `MKL_NUM_THREADS=4`, which measured best on 10 to 20 core machines. Avoid `1`, which made tagging around 40% slower.
 
 ## Troubleshooting
 
@@ -178,7 +244,7 @@ See discussion [here](https://github.com/kermitt2/grobid/pull/454)
 2. If the GLIBC causes an error,  
 
 ```
-! ImportError: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by /home/Luca/.conda/envs/tensorflow/lib/python3.6/site-packages/tensorflow/python/_pywrap_tensorflow_internal.so)
+! ImportError: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.20' not found (required by .../site-packages/...)
 ```
 
 here a quick solution (libgcc should be already installed, if so, just skip that pass): 
