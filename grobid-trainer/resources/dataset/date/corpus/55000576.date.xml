@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dates>
 	Period covered:<lb/> from 
-	<date><day>1</day><lb/> st<lb/> <month>Jan</month> <year>2008</year></date> 
+	<date><day>1 st</day><lb/><lb/> <month>Jan</month> <year>2008</year></date> 
 	to 
-	<date><day>31</day> st <month>Dec</month> <year>2009</year></date>
+	<date><day>31 st</day> <month>Dec</month> <year>2009</year></date>
 </dates>
