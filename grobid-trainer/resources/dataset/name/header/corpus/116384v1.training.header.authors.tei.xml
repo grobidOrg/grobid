@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Yongxin</forename>
+								<surname>Chen</surname>,
+							</persName>
+							<persName>
+								<forename>Filemon</forename>
+								<surname>Dela Cruz</surname>,
+							</persName>
+							<persName>
+								<forename>Romeil</forename>
+								<surname>Sandhu</surname>,
+							</persName>
+							<persName>
+								<forename>Andrew</forename>
+								<surname>Kung</surname>,
+							</persName>
+							<persName>
+								<forename>Prabhjot</forename>
+								<surname>Mundi</surname>,
+							</persName>
+							<persName>
+								<forename>Joseph</forename>
+								<surname>Deasy</surname>,
+							</persName>
+							<persName>
+								<forename>Allen</forename>
+								<surname>Tannenbaum</surname>
+								<marker>* *</marker>
+							</persName>
+							<persName>
+								<forename>Yongxin</forename>
+								<surname>Chen</surname> and
+							</persName>
+							<persName>
+								<forename>Joseph</forename>
+								<surname>Deasy</surname>
+							</persName>
+							<persName>
+								<forename>Romeil</forename>
+								<surname>Sandhu</surname>
+							</persName>
+							<persName>
+								<forename>Andrew</forename>
+								<middlename>L</middlename>.
+								<surname>Kung</surname> and
+							</persName>
+							<persName>
+								<forename>File- mon</forename>
+								<surname>Dela Cruz</surname>
+							</persName>
+							<persName>
+								<forename>Allen</forename>
+								<surname>Tannenbaum</surname>
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+1 st
+<persName><forename>Lei</forename> <surname>Liu</surname>, <marker>1 st</marker></persName>
+<persName><forename>Wentao</forename> <surname>Lei</surname>, <marker>3</marker></persName>
+th
+<persName><forename>Xiang</forename> <surname>Wan</surname>, <marker>4</marker></persName>
+th
+<persName><forename>Li</forename> <surname>Liu</surname> <marker>* st</marker></persName>
+<persName><forename>Yongfang</forename> <surname>Luo</surname>, <marker>2 nd</marker></persName>
+<persName><forename>Cheng</forename> <surname>Feng</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

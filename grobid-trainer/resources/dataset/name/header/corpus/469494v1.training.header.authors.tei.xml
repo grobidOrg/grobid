@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Marisa</forename> <middlename>M</middlename> <surname>Brockmann</surname> <marker>1,*</marker>, </persName>
+<persName><forename>Marta</forename> <surname>Maglione</surname> <marker>2,3,*</marker>, </persName>
+<persName><forename>Claudia</forename> <middlename>G</middlename> <surname>Willmes</surname> <marker>4,*</marker>, </persName>
+<persName><forename>Alexander</forename> <surname>Stumpf</surname> <marker>5</marker>, </persName>
+<persName><forename>A</forename> <middlename>Boris</middlename> <surname>Bouazza</surname> <marker>1</marker>, </persName>
+<persName><forename>Laura</forename> <middlename>M</middlename> <surname>Velasquez</surname> <marker>5</marker>, </persName>
+<persName><forename>Marie</forename> <middlename>Katharina</middlename> <surname>Grauel</surname> <marker>1</marker>, </persName>
+<persName><forename>Prateep</forename> <surname>Beed</surname> <marker>5</marker>, </persName>
+<persName><forename>J</forename> <middlename>Stephan</middlename> <surname>Sigrist</surname> <marker>2,3,#</marker>, </persName>
+<persName><forename>Christian</forename> <surname>Rosenmund</surname> <marker>1, #</marker> &amp; </persName>
+<persName><forename>Dietmar</forename> <surname>Schmitz</surname> <marker>4,5,#</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

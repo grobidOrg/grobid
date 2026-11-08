@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Stephen</forename> <middlename>A</middlename>. <surname>Smith</surname>,</persName>
+<persName><forename>Karen</forename> <middlename>A</middlename>. <surname>Cranston</surname> <marker>*</marker>,</persName>
+<persName><forename>James</forename> <middlename>F</middlename>. <surname>Allman</surname>,</persName>
+<persName><forename>Joseph</forename> <middlename>W</middlename>. <surname>Brown</surname>,</persName>
+<persName><forename>Gordon</forename> <surname>Burleigh</surname>,</persName>
+<persName><forename>Ruchi</forename> <surname>Chaudhary</surname>,</persName>
+<persName><forename>Lyndon</forename> <middlename>M</middlename>. <surname>Coghill</surname>,</persName>
+<persName><forename>Keith</forename> <middlename>A</middlename>. <surname>Crandall</surname>,</persName>
+<persName><forename>Jiabin</forename> <surname>Deng</surname>,</persName>
+<persName><forename>Bryan</forename> <middlename>T</middlename>. <surname>Drew</surname>,</persName>
+<persName><forename>Romina</forename> <surname>Gazis</surname>,</persName>
+<persName><forename>Karl</forename> <surname>Gude</surname>,</persName>
+<persName><forename>David</forename> <middlename>S</middlename>. <surname>Hibbett</surname>,</persName>
+<persName><forename>Cody</forename> <surname>Hinchliff</surname>,</persName>
+<persName><forename>Laura</forename> <middlename>A</middlename>. <surname>Katz</surname>,</persName>
+<persName><forename>H</forename>. <middlename>Dail</middlename> <surname>Laughinghouse</surname> <suffix>IV</suffix>,</persName>
+<persName><forename>Emily</forename> <middlename>Jane</middlename> <surname>McTavish</surname>,</persName>
+<persName><forename>Christopher</forename> <middlename>L</middlename>. <surname>Owen</surname>,</persName>
+<persName><forename>Richard</forename> <surname>Ree</surname>,</persName>
+<persName><forename>Jonathan</forename> <middlename>A</middlename>. <surname>Rees</surname>,</persName>
+<persName><forename>Douglas</forename> <middlename>E</middlename>. <surname>Soltis</surname>,</persName>
+<persName><forename>Tiffani</forename> <surname>Williams</surname> <marker>*</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

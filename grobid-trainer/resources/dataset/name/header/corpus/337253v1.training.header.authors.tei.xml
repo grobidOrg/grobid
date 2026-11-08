@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Ricardo</forename>
+								 <middlename>Guimarães</middlename>
+								 <surname>Amaral</surname>
+								 <marker>1☯</marker> ,
+							</persName>
+							<persName>
+								 <forename>Silvana</forename>
+								 <middlename>Vieira</middlename>
+								 <middlename>Floresta</middlename>
+								 <surname>Gomes</surname>
+								 <marker>3 ☯</marker> ,
+</persName>
+							<persName>
+								 <forename>Ângelo</forename>
+								 <middlename>Roberto</middlename>
+								 <surname>Antoniolli</surname>
+								 <marker>1 ‡</marker> ,
+							</persName>
+							<persName>
+								 <forename>Maria</forename>
+								 <middlename>Claudia</middlename>
+								 <surname>dos Santos Luciano</surname>
+								 <marker>2 ‡</marker> ,
+							</persName>
+							<persName>
+								 <forename>Cláudia</forename>
+								 <surname>do Ó Pessoa</surname>
+								 <marker>2 ‡</marker> ,
+							</persName>
+							<persName>
+								 <forename>Luciana</forename>
+								 <middlename>Nalone</middlename>
+								 <surname>Andrade</surname>
+								 <marker>3 ‡</marker> ,
+							</persName>
+							<persName>
+								 <forename>Patrícia</forename>
+								 <surname>Severino</surname>
+								 <marker>3 ‡</marker> ,
+							</persName>
+							<persName>
+								 <forename>Geraldo</forename>
+<middlename>Célio</middlename>
+<surname>Brandão</surname>
+								 <marker>4 ‡</marker> ,
+							</persName>
+							<persName>
+								 <forename>Larissa</forename>
+								 <surname>Mendes Bomfim</surname>
+								 <marker>5 ‡</marker> ,
+							</persName>
+							<persName>
+								 <forename>Daniel</forename>
+								 <surname>Pereira Bezerra</surname>
+								 <marker>5 ‡</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jorge</forename>
+								 <middlename>Maurício</middlename>
+								 <surname>David</surname>
+								 <marker>6 ‡</marker> ,
+							</persName>
+							<persName>
+								 <forename>Adriana</forename>
+								 <surname>Andrade Carvalho</surname>
+								 <marker>1 ‡*</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

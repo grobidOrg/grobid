@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName><forename>Bertrand</forename> <surname>Hermann</surname> (<roleName>MD</roleName>) <marker>1, 2, 3,4 *</marker>,</persName>
+<persName><forename>Gwen</forename> <surname>Goudard</surname> (<roleName>RN</roleName>) <marker>1 *</marker>,</persName>
+<persName><forename>Karine</forename> <surname>Courcoux</surname> (<roleName>RN</roleName>) <marker>1 *</marker>,</persName>
+<persName><forename>Mélanie</forename> <surname>Valente</surname> (<roleName>R. EEGT</roleName>) <marker>3, 4</marker> ,</persName>
+<persName><forename>Sebastien</forename> <surname>Labat</surname> (<roleName>CNA</roleName>) <marker>1</marker> ,</persName>
+<persName><forename>Lucienne</forename> <surname>Despois</surname> (<roleName>CNA</roleName>) <marker>1</marker> ,</persName>
+<persName><forename>Julie</forename> <surname>Bourmaleau</surname> (<roleName>MA</roleName>, <roleName>RN</roleName>) <marker>1</marker> ,</persName>
+<persName><forename>Louise</forename> <surname>Richard-Gilis</surname> (<roleName>RN</roleName>) <marker>1, 2, 3, 4</marker> ,</persName>
+<persName><forename>Frédéric</forename> <surname>Faugeras</surname> (<roleName>MD</roleName>, <roleName>PhD</roleName>) <marker>2,3,4</marker> ,</persName>
+<persName><forename>Sophie</forename> <surname>Demeret</surname> (<roleName>MD</roleName>) <marker>1</marker> ,</persName>
+<persName><forename>Jacobo</forename> <middlename>D</middlename> <surname>Sitt</surname> (<roleName>MD</roleName>, <roleName>PhD</roleName>) <marker>2, 3,4</marker> ,</persName>
+<persName><forename>Lionel</forename> <surname>Naccache</surname> (<roleName>MD</roleName>, <roleName>PhD</roleName>) <marker>2, 3, 4, 5, 6</marker> ,</persName>
+<persName><forename>Benjamin</forename> <surname>Rohaut</surname> (<roleName>MD</roleName>, <roleName>PhD</roleName>) <marker>1, 2, 3, 4, 7</marker> .</persName>
+<persName><roleName>Dr</roleName> <forename>Benjamin</forename> <surname>Rohaut</surname></persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName><surname>Balachiranjeevi</surname> <forename>CH</forename> <marker>1 ¶</marker> ,</persName>
+<persName><surname>Bhaskar Naik</surname> <forename>S</forename> <marker>¶</marker> ,</persName>
+<persName><surname>Abhilash Kumar</surname> <forename>V</forename> <marker>3 ¶</marker> ,</persName>
+<persName><surname>Harika</surname> <forename>G</forename> <marker>2</marker> ,</persName>
+<persName><surname>Mahadev Swamy</surname> <forename>H</forename>. <middlename>K</middlename> <marker>4</marker> ,</persName>
+<persName><surname>Hajira</surname> <forename>Sk</forename> <marker>2</marker> ,</persName>
+<persName><surname>Dilip Kumar</surname> <forename>T</forename> <marker>2</marker> ,</persName>
+<persName><surname>Anila</surname> <forename>M</forename> <marker>2</marker> ,</persName>
+<persName><surname>Kale</surname> <forename>R</forename>. <middlename>R</middlename> <marker>2</marker> ,</persName>
+<persName><surname>Yugender</surname> <forename>A</forename> <marker>2</marker> ,</persName>
+<persName><surname>Pranathi</surname> <forename>K</forename> <marker>2</marker> ,</persName>
+<persName><surname>Koushik</surname> <forename>M</forename>. <middlename>B</middlename>. <middlename>V</middlename>.<middlename>N</middlename> <marker>2</marker> ,</persName>
+<persName><surname>Suneetha</surname> <forename>K</forename> <marker>2</marker> ,</persName>
+<persName><surname>Bhadana</surname> <forename>V</forename>. <middlename>P</middlename> <marker>6</marker> ,</persName>
+<persName><surname>Hariprasad</surname> <forename>A</forename>. <middlename>S</middlename> <marker>2</marker> ,</persName>
+<persName><surname>Prasad</surname> <forename>M</forename>. <middlename>S</middlename> <marker>2</marker> ,</persName>
+<persName><surname>Laha</surname> <forename>G</forename>. <middlename>S</middlename> <marker>2</marker> ,</persName>
+<persName><surname>Rekha</surname> <forename>G</forename> <marker>2</marker> ,</persName>
+<persName><surname>Balachandran</surname> <forename>S</forename>. <middlename>M</middlename> <marker>2</marker> ,</persName>
+<persName><surname>Madhav</surname> <forename>M</forename>.<middlename>S</middlename> <marker>2</marker> ,</persName>
+<persName><surname>Senguttuvel</surname> <forename>P</forename> <marker>2</marker> ,</persName>
+<persName><surname>Fiyaz</surname> <forename>A</forename>. <middlename>R</middlename> <marker>2</marker> ,</persName>
+<persName><surname>Viraktamath</surname> <forename>B</forename>. <middlename>C</middlename> <marker>2</marker> ,</persName>
+<persName><surname>Giri</surname> <forename>A</forename> <marker>5</marker> ,</persName>
+<persName><surname>Swamy</surname> <forename>B</forename>. <middlename>P</middlename>.<middlename>M</middlename> <marker>1</marker> ,</persName>
+<persName><surname>Ali</surname> <forename>J</forename> <marker>1 *</marker>,</persName>
+<persName><surname>Sundaram</surname> <forename>R</forename>. <middlename>M</middlename> <marker>2 *</marker></persName>
+<persName><surname>Sundaram</surname> <forename>R</forename>. <middlename>M</middlename></persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

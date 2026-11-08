@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>J</forename>.
+								<middlename>Lucas</middlename>
+								<surname>McKay</surname>
+								<roleName>Ph.D</roleName>.
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Felicia</forename>
+								<middlename>C</middlename>.
+								<surname>Goldstein</surname>,
+								<roleName>Ph.D</roleName>.
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Barbara</forename>
+								<surname>Sommerfeld</surname> <roleName>N. P</roleName>. <marker>3</marker> , </persName>
+							<persName>
+								<forename>Douglas</forename>
+								<surname>Bernhard</surname>
+								<marker>3</marker> ,
+							</persName>
+							<persName>
+								<forename>Sahyli</forename>
+								<surname>Perez Parra</surname>,
+								<roleName>MD</roleName>
+								<marker>3</marker> ,
+							</persName>
+							<persName>
+								<forename>Stewart</forename>
+								<middlename>A</middlename>.
+								<surname>Factor</surname>,
+								<roleName>D.O</roleName>.
+								<marker>3 1</marker>
+							</persName>
+							Wallace H. Coulter
+							<persName>
+								<forename>Stewart</forename>
+								<middlename>A</middlename>.
+								<surname>Factor</surname>, <roleName>DO</roleName> </persName> Professor and Director, <persName> <roleName>Mr</roleName>. <surname>Bernhard</surname> </persName> <persName> <roleName>Dr</roleName>. <surname>Perez Parra</surname> </persName>
+						</author>
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

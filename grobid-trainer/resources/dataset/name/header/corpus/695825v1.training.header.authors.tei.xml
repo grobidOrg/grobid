@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Mutiat</forename><middlename>O</middlename><surname>Owoola-Ajirotutu</surname><marker>1 ¶</marker> ,</persName>
+<persName><forename>Alfred</forename><middlename>O</middlename><surname>Okpanachi</surname><marker>1&amp;</marker> ,</persName>
+<persName><forename>Akeem</forename><middlename>G</middlename><surname>Owoola</surname><marker>1&amp;</marker> ,</persName>
+<persName><forename>Godfrey</forename><middlename>Z</middlename><surname>Rukundo</surname><marker>3&amp;</marker> ,</persName>
+<persName><forename>Sadiq</forename><surname>Yusuf</surname><marker>2 ¶a *</marker></persName>
+</author>
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

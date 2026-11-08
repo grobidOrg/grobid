@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Sharika</forename> <surname>Nuzhat</surname> <marker>¹ ¶</marker>, </persName>
+<persName><forename>Md</forename> <middlename>Iqbal</middlename> <surname>Hossain</surname> <marker>¹ ¶</marker>, </persName>
+<persName><forename>Nusrat</forename> <middlename>Jahan</middlename> <surname>Shaly</surname> <marker>¹</marker>, </persName>
+<persName><forename>Rafiqul</forename> <surname>Islam</surname> <marker>¹</marker>, </persName>
+<persName><forename>Soroar</forename> <middlename>Hossain</middlename> <surname>Khan</surname> <marker>¹</marker>, </persName>
+<persName><forename>A</forename> <middlename>S</middlename> <middlename>G</middlename> <surname>Faruque</surname> <marker>¹</marker>, </persName>
+<persName><forename>Pradip</forename> <middlename>Kumar</middlename> <surname>Bardhan</surname> <marker>¹</marker>, </persName>
+<persName><forename>Azharul</forename> <middlename>Islam</middlename> <surname>khan</surname> <marker>¹</marker>, </persName>
+<persName><forename>Mohammod</forename> <middlename>Jobayer</middlename> <surname>Chisti</surname> <marker>¹</marker>, </persName>
+<persName><forename>Tahmeed</forename> <surname>Ahmed</surname> <marker>¹</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

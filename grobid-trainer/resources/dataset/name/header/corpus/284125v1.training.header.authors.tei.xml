@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Arnau</forename>
+<surname>Domenech</surname>
+<marker>a</marker> .
+</persName>
+<persName>
+<forename>Jelle</forename>
+<surname>Slager</surname>
+<marker>b</marker> ,
+</persName>
+<persName>
+<forename>Jan-Willem</forename>
+<surname>Veening</surname>
+<marker>a,b,1</marker>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Exton-McGuinness</surname>, <forename>Marc</forename> <middlename>TJ</middlename> <marker>1</marker></persName>
+<persName><surname>Drame</surname>, <forename>Mohamed</forename> <middlename>L</middlename> <marker>1</marker></persName>
+<persName><surname>Flavell</surname>, <forename>Charlotte</forename> <middlename>R</middlename> <marker>1</marker></persName>
+<persName><surname>Lee</surname>, <forename>Jonathan</forename> <middlename>LC</middlename> <marker>1</marker></persName>
+<persName><forename>Marc</forename> <surname>Exton-McGuinness</surname></persName>, <persName><surname>Exton-McGuinness</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Selcuk</forename>
+								<surname>Korkmaz</surname>
+								<marker>1,2</marker> ,
+							</persName>
+							<persName>
+								<forename>Jose</forename>
+								<middlename>M</middlename>.
+								<surname>Duarte</surname>
+								<marker>3</marker> ,
+							</persName>
+							<persName>
+								<forename>Andreas</forename>
+								<surname>Prlić</surname>
+								<marker>3</marker> ,
+							</persName>
+							<persName>
+								<forename>Dincer</forename>
+								<surname>Goksuluk</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Gokmen</forename>
+								<surname>Zararsiz</surname>
+								<marker>4</marker> ,
+							</persName>
+							<persName>
+								<forename>Osman</forename>
+								<surname>Saracbasi</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Stephen</forename>
+								<middlename>K</middlename>.
+								<surname>Burley</surname>
+								<marker>3,5,6,7</marker> and
+							</persName>
+							<persName>
+								<forename>Peter</forename>
+								<middlename>W</middlename>.
+								<surname>Rose</surname>
+								<marker>3,8,*</marker>
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

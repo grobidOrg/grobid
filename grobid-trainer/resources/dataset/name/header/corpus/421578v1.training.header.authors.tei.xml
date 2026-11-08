@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+	<persName>
+		<forename>Hsiao-Han</forename>
+		<surname>Chang</surname>
+		<marker>1,2*</marker> ,
+	</persName>
+	<persName>
+		<forename>Amy</forename>
+		<surname>Wesolowski</surname>
+		<marker>3*</marker> ,
+	</persName>
+	<persName>
+		<forename>Ipsita</forename>
+		<surname>Sinha</surname>
+		<marker>4,5</marker> ,
+	</persName>
+	<persName>
+		<forename>Christopher</forename>
+		<middlename>G</middlename>
+		<surname>Jacob</surname>
+		<marker>6</marker> ,
+	</persName>
+	<persName>
+		<forename>Ayesha</forename>
+		<surname>Mahmud</surname>
+		<marker>1,2</marker> ,
+	</persName>
+	<persName>
+		<forename>Didar</forename>
+		<surname>Uddin</surname>
+		<marker>4</marker> ,
+	</persName>
+	<persName>
+		<forename>Sazid</forename>
+		<middlename>Ibna</middlename>
+		<surname>Zaman</surname>
+		<marker>4</marker> ,
+	</persName>
+	<persName>
+		<forename>Md</forename>
+		<middlename>Amir</middlename>
+		<surname>Hossain</surname>
+		<marker>7</marker> ,
+	</persName>
+	<persName>
+		<forename>M</forename>
+		<middlename>Abul</middlename>
+		<surname>Faiz</surname>
+		<marker>4,8</marker> ,
+	</persName>
+	<persName>
+		<forename>Aniruddha</forename>
+		<surname>Ghose</surname>
+		<marker>9</marker> ,
+	</persName>
+	<persName>
+		<forename>Abdullah</forename>
+		<middlename>Abu</middlename>
+		<surname>Sayeed</surname>
+		<marker>9</marker> ,
+	</persName>
+	<persName>
+		<forename>M</forename>
+		<middlename>Ridwanur</middlename>
+		<surname>Rahman</surname>
+		<marker>10</marker> ,
+	</persName>
+	<persName>
+		<forename>Akramul</forename>
+		<surname>Islam</surname>
+		<marker>11</marker> ,
+	</persName>
+	<persName>
+		<forename>Mohammad</forename>
+		<middlename>Jahirul</middlename>
+		<surname>Karim</surname>
+		<marker>12</marker> ,
+	</persName>
+	<persName>
+		<forename>M</forename>
+		<middlename>Kamar</middlename>
+		<surname>Rezwan</surname>
+		<marker>13</marker> ,
+	</persName>
+	<persName>
+		<forename>Abul</forename>
+		<middlename>Khair</middlename>
+		<middlename>Mohammad</middlename>
+		<surname>Shamsuzzaman</surname>
+		<marker>14</marker> ,
+	</persName>
+	<persName>
+		<forename>Sanya</forename>
+		<middlename>Tahmina</middlename>
+		<surname>Jhora</surname>
+		<marker>14</marker> ,
+	</persName>
+	<persName>
+		<forename>M</forename>
+		<middlename>M</middlename>
+		<surname>Aktaruzzaman</surname>
+		<marker>12</marker> ,
+	</persName>
+	<persName>
+		<forename>Olivo</forename>
+		<surname>Miotto</surname>
+		<marker>4,6,15</marker> ,
+	</persName>
+	<persName>
+		<forename>Kenth</forename>
+		<surname>Engø-Monsen</surname>
+		<marker>16</marker> ,
+	</persName>
+	<persName>
+		<forename>Dominic</forename>
+		<surname>Kwiatkowski</surname>
+		<marker>6,15</marker> ,
+	</persName>
+	<persName>
+		<forename>Richard</forename>
+		<middlename>J</middlename>
+		<surname>Maude</surname>
+		<marker>1,2,4,5 §</marker> ,
+	</persName>
+	<persName>
+		<forename>Caroline</forename>
+		<middlename>O</middlename>
+		<surname>Buckee</surname>
+		<marker>1,2 §</marker>
+	</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

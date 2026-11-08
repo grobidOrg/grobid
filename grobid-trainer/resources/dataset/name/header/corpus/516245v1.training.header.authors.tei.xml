@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Pappalardo</surname> <forename>SE</forename> <marker>1 *</marker>,</persName>
+<persName><surname>Gislimberti</surname> <forename>L</forename> <marker>1</marker> ,</persName>
+<persName><surname>Ferrarese</surname> <forename>F</forename> <marker>2</marker> ,</persName>
+<persName><surname>Garlato</surname> <forename>A</forename> <marker>3</marker> ,</persName>
+<persName><surname>Vinci</surname> <forename>IC</forename> <marker>3</marker> ,</persName>
+<persName><surname>De Marchi</surname> <forename>M</forename> <marker>1</marker> ,</persName>
+<persName><surname>Mozzi</surname> <forename>P</forename> <marker>4</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

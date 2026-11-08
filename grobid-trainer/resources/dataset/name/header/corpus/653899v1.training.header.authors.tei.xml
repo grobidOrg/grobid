@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Csaba</forename>
+								<surname>Orban</surname>
+								<marker>1,2</marker> ,
+							</persName>
+							<persName>
+								<forename>Ru</forename>
+								<surname>Kong</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Jingwei</forename>
+								<surname>Li</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Michael</forename>
+								<middlename>W</middlename>.
+								<middlename>L</middlename>.
+								<surname>Chee</surname>
+								<marker>3</marker> ,
+							</persName>
+							<persName>
+								<forename>B</forename>.
+								<middlename>T</middlename>.
+								<middlename>Thomas</middlename>
+								<surname>Yeo</surname>
+								<marker>1,3,4,5</marker>
+							</persName>
+							<persName>
+								<forename>Csaba</forename>
+								<surname>Orban</surname>
+							</persName>
+							ECE,
+							<persName>
+								<forename>B</forename>.
+								<middlename>T</middlename>.
+								<middlename>Thomas</middlename>
+								<surname>Yeo</surname>
+							</persName>
+						</author>
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

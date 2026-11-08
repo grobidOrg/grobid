@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Samuel</forename> <middlename>J</middlename>. <surname>Bloomfield</surname></persName>
+<persName><forename>Timothy</forename> <middlename>G</middlename>. <surname>Vaughan</surname></persName>
+<persName><forename>Jackie</forename> <surname>Benschop</surname></persName>
+<persName><forename>Jonathan</forename> <middlename>C</middlename>. <surname>Marshall</surname></persName>
+<persName><forename>David</forename> <middlename>T</middlename>. <middlename>S</middlename>. <surname>Hayman</surname></persName>
+<persName><forename>Patrick</forename> <middlename>J</middlename>. <surname>Biggs</surname>.</persName>
+<persName><surname>Carter</surname></persName>
+<persName><forename>Nigel</forename> <middlename>P</middlename>. <surname>French</surname></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

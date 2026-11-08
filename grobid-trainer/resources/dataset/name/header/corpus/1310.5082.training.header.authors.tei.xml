@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Gustavo</forename> <surname>Camps-Valls</surname></persName>
+<persName><forename>Juan</forename> <surname>Gutiérrez</surname></persName>
+<persName><forename>Gabriel</forename> <surname>Gómez-Pérez</surname></persName>
+<persName><forename>Jesús</forename> <surname>Malo</surname></persName>
+<persName><forename>Donald</forename> <surname>Geman</surname></persName>
+<persName><forename>Gustavo</forename> <surname>Camps-Valls</surname>,</persName>
+<persName><forename>Juan</forename> <surname>Gutiérrez</surname>,</persName>
+<persName><forename>Gabriel</forename> <surname>Gómez-Pérez</surname> and</persName>
+<persName><forename>Jesús</forename> <surname>Malo</surname>.</persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

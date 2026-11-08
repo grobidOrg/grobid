@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Emanuela</forename> <surname>Ricciotti</surname> <marker>*,1,2</marker>, </persName>
+<persName><forename>Dimitra</forename> <surname>Sarantopoulou</surname> <marker>*,2</marker>, </persName>
+<persName><forename>Gregory</forename> <middlename>R</middlename>. <surname>Grant</surname> <marker>2,3</marker>, </persName>
+<persName><forename>Jenine</forename> <middlename>K</middlename>. <surname>Sanzari</surname> <marker>4</marker>, </persName>
+<persName><forename>Gabriel</forename> <middlename>S</middlename>. <surname>Krigsfeld</surname> <marker>4</marker>, </persName>
+<persName><forename>Amber</forename> <middlename>J</middlename>. <surname>Kiliti</surname> <marker>1</marker>, </persName>
+<persName><forename>Ann</forename> <middlename>R</middlename>. <surname>Kennedy</surname> <marker>4</marker>, </persName>
+<persName><forename>Tilo</forename> <surname>Grosser</surname> <marker>1,2, 5 *</marker>) </persName>
+Equal contribution
+<persName><forename>Tilo</forename> <surname>Grosser</surname>, <roleName>MD</roleName></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

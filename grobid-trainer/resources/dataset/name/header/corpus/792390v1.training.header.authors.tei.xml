@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Caylin</forename> <middlename>G</middlename>. <surname>Winchell</surname> <marker>1</marker> ,</persName>
+<persName><forename>Bibhuti</forename> <middlename>B</middlename>. <surname>Mishra</surname> <marker>2,3</marker> ,</persName>
+<persName><forename>Jia</forename> <middlename>Yao</middlename> <surname>Phuah</surname> <marker>2</marker> ,</persName>
+<persName><forename>Mohd</forename> <surname>Saqib</surname> <marker>3</marker> ,</persName>
+<persName><forename>Samantha</forename> <middlename>J</middlename>. <surname>Nelson</surname> <marker>2</marker> ,</persName>
+<persName><forename>Pauline</forename> <surname>Maiello</surname> <marker>1</marker> ,</persName>
+<persName><forename>Chelsea</forename> <middlename>M</middlename>. <surname>Causgrove</surname> <marker>1</marker> ,</persName>
+<persName><forename>Cassaundra</forename> <middlename>L</middlename>. <surname>Ameel</surname> <marker>1</marker> ,</persName>
+<persName><forename>Brianne</forename> <surname>Stein</surname> <marker>1</marker> ,</persName>
+<persName><forename>H</forename>. <middlename>Jacob</middlename> <surname>Borish</surname> <marker>1</marker> ,</persName>
+<persName><forename>Alexander</forename> <middlename>G</middlename>. <surname>White</surname> <marker>1</marker> ,</persName>
+<persName><forename>Edwin</forename> <middlename>C</middlename>. <surname>Klein</surname> <marker>4</marker> ,</persName>
+<persName><forename>Matthew</forename> <middlename>D</middlename>. <surname>Zimmerman</surname> <marker>5¥</marker> ,</persName>
+<persName><forename>Véronique</forename> <surname>Dartois</surname> <marker>5¥</marker> ,</persName>
+<persName><forename>Philana</forename> <middlename>Ling</middlename> <surname>Lin</surname> <marker>6</marker> ,</persName>
+<persName><forename>Christopher</forename> <middlename>M</middlename>. <surname>Sassetti</surname> <marker>2</marker> ,</persName>
+<persName><forename>JoAnne</forename> <middlename>L</middlename>. <surname>Flynn</surname> <marker>1*</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+					<author>
+						<persName>
+							 <forename>A</forename>.
+							 <surname>Corstanje</surname>
+							 <marker>𝑎, 𝑏, 1</marker>
+						</persName>
+						<persName>
+							 <forename>S</forename>.
+							 <surname>Buitink</surname>
+							 <marker>𝑎, 𝑏</marker>
+						</persName>
+						<persName>
+							 <forename>M</forename>.
+							 <surname>Desmet</surname>
+							 <marker>𝑎</marker>
+						</persName>
+						<persName>
+							 <forename>H</forename>.
+							 <surname>Falcke</surname>
+							 <marker>𝑏, 𝑐,𝑑</marker>
+						</persName>
+						<persName>
+							 <forename>B</forename>.
+							 <middlename>M</middlename>.
+							 <surname>Hare</surname>
+							 <marker>𝑐</marker>
+						</persName>
+						<persName>
+							 <forename>J</forename>.
+							 <middlename>R</middlename>.
+							 <surname>Hörandel</surname>
+							 <marker>𝑏,𝑑,𝑎</marker>
+						</persName>
+						<persName>
+							 <forename>T</forename>.
+							 <surname>Huege</surname>
+							 <marker>𝑓 , 𝑎</marker>
+						</persName>
+						<persName>
+							 <forename>V</forename>.
+							 <middlename>B</middlename>.
+							 <surname>Jhansi</surname>
+							 <marker>𝑗</marker>
+						</persName>
+						<persName>
+							 <forename>N</forename>.
+							 <surname>Karastathis</surname>
+							 <marker>𝑓</marker>
+						</persName>
+						<persName>
+							 <forename>G</forename>.
+							 <middlename>K</middlename>.
+							 <surname>Krampah</surname>
+							 <marker>𝑎</marker>
+						</persName>
+						<persName>
+							 <forename>P</forename>.
+							 <surname>Mitra</surname>
+							 <marker>𝑎</marker>
+						</persName>
+						<persName>
+							 <forename>K</forename>.
+							 <surname>Mulrey</surname>
+							 <marker>𝑏, 𝑑</marker>
+						</persName>
+						<persName>
+							 <forename>A</forename>.
+							 <surname>Nelles</surname>
+							 <marker>𝑔, ℎ</marker>
+						</persName>
+						<persName>
+							 <forename>K</forename>.
+							 <surname>Nivedita</surname>
+							 <marker>𝑏</marker>
+						</persName>
+						<persName>
+							 <forename>H</forename>.
+							 <surname>Pandya</surname>
+							 <marker>𝑎</marker>
+						</persName>
+						<persName>
+							 <forename>O</forename>.
+							 <surname>Scholten</surname>
+							 <marker>𝑒, 𝑖</marker>
+						</persName>
+						<persName>
+							 <forename>K</forename>.
+							 <surname>Terveer</surname>
+							 <marker>ℎ</marker>
+						</persName>
+						<persName>
+							 <forename>S</forename>.
+							 <surname>Thoudam</surname>
+							 <marker>𝑗</marker>
+						</persName>
+						<persName>
+							 <forename>G</forename>.
+							 <surname>Trinh</surname>
+							 <marker>𝑘</marker>
+						</persName>
+						<persName>
+							 <forename>S</forename>.
+							 <surname>ter Veen</surname>
+							 <marker>𝑐</marker>
+						</persName>
+					</author>
+
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

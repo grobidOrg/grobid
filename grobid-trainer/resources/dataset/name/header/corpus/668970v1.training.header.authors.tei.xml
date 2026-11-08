@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Elias</forename>
+								<surname>Allara</surname>
+								<marker>1,2</marker>
+								<roleName>MD</roleName>,
+							</persName>
+							<persName>
+								<forename>Gabriele</forename>
+								<surname>Morani</surname>
+								<marker>3</marker>
+								<roleName>PhD</roleName>,
+							</persName>
+							<persName>
+								<forename>Paul</forename>
+								<surname>Carter</surname>
+								<marker>1</marker>
+								<roleName>MB</roleName>
+								<roleName>BS</roleName>,
+							</persName>
+							<persName>
+								<forename>Apostolos</forename>
+								<surname>Gkatzionis</surname>
+								<marker>4</marker>
+								<roleName>PhD</roleName>,
+							</persName>
+							<persName>
+								<forename>Verena</forename>
+								<surname>Zuber</surname>
+								<marker>4,5</marker>
+								<roleName>PhD</roleName>,
+							</persName>
+							<persName>
+								<forename>Christopher</forename>
+								<middlename>N</middlename>
+								<surname>Foley</surname>
+								<marker>4</marker>
+								<roleName>PhD</roleName>,
+							</persName>
+							<persName>
+								<forename>Jessica</forename>
+								<middlename>MB</middlename>
+								<surname>Rees</surname>
+								<marker>1,6</marker> <roleName>MPhil</roleName>, </persName> <persName> <forename>Amy</forename>
+								<middlename>M</middlename>
+								<surname>Mason</surname>
+								<marker>1</marker>
+								<roleName>PhD</roleName>,
+							</persName>
+							<persName>
+								<forename>Steven</forename>
+								<surname>Bell</surname>
+								<marker>1,2</marker>
+								<roleName>PhD</roleName>,
+							</persName>
+							<persName>
+								<forename>Dipender</forename>
+								<surname>Gill</surname>
+								<roleName>MD</roleName>
+								<marker>5</marker> ,
+							</persName>
+							<persName>
+								<forename>Adam</forename>
+								<middlename>S</middlename>
+								<surname>Butterworth</surname>
+								<roleName>PhD</roleName>
+								<marker>1,2</marker> ,
+							</persName>
+							<persName>
+								<forename>Emanuele</forename>
+								<surname>Di Angelantonio</surname>
+								<marker>1,2</marker>
+								<roleName>FRCP</roleName>,
+							</persName>
+							<persName>
+								<forename>James</forename>
+								<surname>Peters</surname>
+								<marker>1</marker>
+								<roleName>MB</roleName>
+								<roleName>ChB</roleName>
+								<roleName>PhD</roleName>,
+							</persName>
+							<persName>
+								<forename>Stephen</forename>
+								<surname>Burgess</surname>
+								<roleName>PhD</roleName>
+								<marker>1,4</marker>.
+							</persName>
+							<persName>
+								<forename>Stephen</forename>
+								<surname>Burgess</surname>
+							</persName>
+						</author>
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

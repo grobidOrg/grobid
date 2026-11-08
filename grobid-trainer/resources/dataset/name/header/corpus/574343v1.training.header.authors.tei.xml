@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Castro</surname> <forename>TBR</forename> <marker>§</marker> ,</persName>
+<persName><surname>Canesso</surname> <forename>MCC</forename> <marker>§</marker> ,</persName>
+<persName><surname>Boroni</surname> <forename>M</forename> <marker>#</marker> ,</persName>
+<persName><surname>Chame</surname> <forename>DF</forename> <marker>§</marker> ,</persName>
+<persName><surname>de Laet Souza</surname> <forename>D</forename> <marker>§</marker> ,</persName>
+<persName><surname>Toledo</surname> <forename>NE</forename> <marker>§</marker> ,</persName>
+<persName><surname>Tahara</surname> <forename>EB</forename> <marker>§</marker> ,</persName>
+<persName><surname>Pena</surname> <forename>SD</forename> <marker>§</marker> ,</persName>
+<persName><surname>Machado</surname> <forename>CR</forename> <marker>§</marker> ,</persName>
+<persName><surname>Chiari</surname> <forename>E</forename> <marker>&amp;</marker> ,</persName>
+<persName><surname>Macedo</surname> <forename>AM</forename> <marker>§ *</marker> and</persName>
+<persName><surname>Franco</surname> <forename>GR</forename> <marker>§ *</marker></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>
