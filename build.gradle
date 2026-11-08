@@ -250,7 +250,7 @@ subprojects {
         implementation "org.apache.commons:commons-lang3:3.20.0"
         implementation "org.apache.commons:commons-collections4:4.5.0"
         implementation 'org.apache.commons:commons-text:1.15.0'
-        implementation "com.google.guava:guava:33.6.0-jre"
+        implementation "com.google.guava:guava:33.7.2-jre"
         implementation "org.apache.httpcomponents:httpclient:4.5.14"
         implementation "black.ninia:jep:4.3.2"
         implementation 'com.github.pemistahl:lingua:1.2.2'
@@ -266,8 +266,8 @@ subprojects {
             }
         }
 
-        implementation "com.fasterxml.jackson.core:jackson-core:2.21.7"
-        implementation "com.fasterxml.jackson.core:jackson-databind:2.21.7"
+        implementation "com.fasterxml.jackson.core:jackson-core:2.22.4"
+        implementation "com.fasterxml.jackson.core:jackson-databind:2.22.4"
         implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.21.4"
     }
 
@@ -543,8 +543,8 @@ project(":grobid-service") {
         // endpoint): the Prometheus Java client's own OTLP exporter, fed through the simpleclient
         // bridge so the exact series set of the scrape endpoint (application metrics + hotspot
         // JVM/process exports) is pushed — no second instrumentation with the OpenTelemetry SDK.
-        implementation "io.prometheus:prometheus-metrics-exporter-opentelemetry:1.8.0"
-        implementation "io.prometheus:prometheus-metrics-simpleclient-bridge:1.8.0"
+        implementation "io.prometheus:prometheus-metrics-exporter-opentelemetry:1.10.0"
+        implementation "io.prometheus:prometheus-metrics-simpleclient-bridge:1.10.0"
     }
 
     shadowJar {
@@ -723,6 +723,17 @@ project(":grobid-trainer") {
             systemProperty "java.library.path", "${javaLibraryPath}"
             args mainClassNameAndArgs[1]
         }
+    }
+
+    // Compact in place every grobid-home/models/**/model.wapiti: drops the observations that no
+    // non-zero weight refers to (same labels, much smaller models). The models are kept uncompacted
+    // in the repository; this is run when building the Docker images. Pass -PmodelsPath=... to
+    // compact the models of another directory.
+    task(compactModels, dependsOn: 'classes', type: JavaExec, group: 'modeltraining') {
+        mainClass = 'org.grobid.trainer.WapitiModelCompactor'
+        classpath = sourceSets.main.runtimeClasspath
+        args project.hasProperty('modelsPath') ? project.getProperty('modelsPath') : "${rootProject.rootDir}/grobid-home/models"
+        jvmArgs '-Xmx1024m'
     }
 
     // evaluation tasks

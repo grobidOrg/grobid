@@ -284,7 +284,7 @@ jobs:
         run: sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost "$AGENT_TOOLSDIRECTORY"
       - uses: actions/checkout@v7
       - name: Set up JDK
-        uses: actions/setup-java@v6.1.0
+        uses: actions/setup-java@v6.2.0
         with:
           java-version: '21'
           distribution: 'temurin'
@@ -433,7 +433,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Set up JDK
-        uses: actions/setup-java@v6.1.0
+        uses: actions/setup-java@v6.2.0
         with:
           java-version: '21'
           distribution: 'temurin'
@@ -508,14 +508,16 @@ jobs:
 
       # The baseline is the latest successful run of this workflow on the default branch
       # with the same profile and flavor, as long as its artifact has not expired.
+      # The conclusion is filtered here rather than with --status: GitHub's status filter can
+      # leave out runs completed hours earlier, and the baseline then falls back to an older run.
       - name: Download the baseline reports
         id: baseline
         env:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           gh run list --repo "${GITHUB_REPOSITORY}" --workflow evaluation.yml --branch "${DEFAULT_BRANCH}" \
-            --status success --limit 30 --json databaseId,headSha \
-            --jq '.[] | "\(.databaseId) \(.headSha)"' > runs.txt || true
+            --limit 30 --json databaseId,headSha,conclusion \
+            --jq '.[] | select(.conclusion == "success") | "\(.databaseId) \(.headSha)"' > runs.txt || true
           while read -r run sha; do
             [ "${run}" = "${GITHUB_RUN_ID}" ] && continue
             if gh run download "${run}" --repo "${GITHUB_REPOSITORY}" --name "${ARTIFACT}" --dir baseline 2>/dev/null; then
