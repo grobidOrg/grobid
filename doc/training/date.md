@@ -21,7 +21,7 @@ For example:
 
 ### Specific cases
 
-- **Ordinal suffixes** stay inside the day element, with or without a space: `<day>12th</day>`, `<day>5 th</day>`.
+- **Ordinal suffixes** attached to the number stay inside the day element (`<day>12th</day>`). A suffix separated by a space stays outside (`<day>20</day> th`), so that a day is always a single token.
 - **Abbreviated months**: the abbreviation period stays outside the month element: `<month>Dec</month>.`, `<month>Sept</month>.`.
 - **Day ranges**: each day is tagged separately and the dash stays untagged: `<day>10</day>–<day>14</day> <month>March</month> <year>2011</year>`.
 - **Numeric dates**: when the order cannot be decided from the values (e.g. `07/04/2002`), use the source document's convention when known, otherwise read them day-first (`<day>07</day>/<month>04</month>/<year>2002</year>`). If one value is above 12 it is the day: `<month>09</month>/<day>16</day>/<year>2009</year>`.
