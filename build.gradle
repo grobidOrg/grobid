@@ -599,7 +599,7 @@ project(":grobid-trainer") {
         // jline-remote-telnet server (GHSA-47qp-hqvx-6r3f, GHSA-2r2c-cx56-8933). GROBID never
         // starts a telnet server and progressbar only uses the terminal API, so we exclude the
         // uber-jar and depend solely on jline-terminal, removing the telnet module entirely.
-        implementation("me.tongfei:progressbar:0.9.5") {
+        implementation("me.tongfei:progressbar:0.10.2") {
             exclude group: 'org.jline', module: 'jline'
         }
         implementation "org.jline:jline-terminal:3.30.16"
