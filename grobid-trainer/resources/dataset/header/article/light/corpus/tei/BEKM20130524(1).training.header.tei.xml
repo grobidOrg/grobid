@@ -14,8 +14,7 @@
 	<docAuthor>H. BENAZZOUZ, O. EL-FALLAH, K. KELLAY, H. MAHZOULI<lb/></docAuthor>
 	</byline>
 
-	Abstract.
-	<div type="abstract">We study composition operators on Hardy and Dirichlet spaces belonging to<lb/> Schatten classes. We give some new examples and analyse the size of contact set of the<lb/> symbol of such operators.<lb/> </div>
+	
 
 	E ϕ (s) = {ζ ∈ T : |ϕ(ζ)| ≥ s},<lb/> The contact set of ϕ is E ϕ := E ϕ (1).<lb/> Let H be a Hillbert space, a compact operator is said to belong in the Schatten class<lb/> S p (H ) if its sequence of singular numbers is in the sequence space p .<lb/> 
 	

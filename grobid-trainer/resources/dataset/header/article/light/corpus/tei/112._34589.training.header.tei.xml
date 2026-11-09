@@ -25,8 +25,7 @@
 
 	<date>April 14, 1994</date>
 
-	Abstract<lb/>
-	<div type="abstract">Design-to-time is an approach to problem-solving in resource-constrained domains where:<lb/> multiple solution methods are available for tasks, those solution methods make tradeoffs in<lb/> solution quality versus time, and satisficing solutions are acceptable. Design-to-time involves<lb/> designing a solution to a problem that uses all available resources to maximize the solution<lb/> quality within the available time. This paper defines the design-to-time approach in detail,<lb/> contrasting it to the anytime algorithm approach, and presents a heuristic algorithm for design-<lb/>to-time real-time scheduling.<lb/> Our blackboard architecture that implements the design-to-time approach is discussed and<lb/> an example problem and solution from the Distributed Vehicle Monitoring Testbed (DVMT) is<lb/> described in detail. Experimental results, generated using a simulation, show the effects of<lb/> various parameters on scheduler performance. Finally we discuss future research goals and<lb/> plans.<lb/></div>
+	
 
 	<note type="funding">1 This work was partly supported by the Office of Naval Research under a University Research Initiative<lb/> grant, number N00014-86-K-0764, NSF contract CDA 8922572, and ONR contract N00014-89-J-1877.<lb/> This work is sponsored by the Department of the Navy, Office of the Chief of Naval Research, and the<lb/> content of the information does not necessarily reflect the position or the policy of the Government and<lb/> no official endorsement should be inferred.</note>
 		</front>

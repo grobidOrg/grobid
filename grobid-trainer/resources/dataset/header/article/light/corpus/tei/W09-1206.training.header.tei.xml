@@ -29,8 +29,7 @@
 	<email>love hafdell@hotmail.com</email><lb/> 
 	<email>Pierre.Nugues@cs.lth.se</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper describes our contribution to the<lb/> semantic role labeling task (SRL-only) of the<lb/> CoNLL-2009 shared task in the closed chal-<lb/>lenge (Hajič et al., 2009). Our system con-<lb/>sists of a pipeline of independent, local clas-<lb/>sifiers that identify the predicate sense, the ar-<lb/>guments of the predicates, and the argument<lb/> labels. Using these local models, we carried<lb/> out a beam search to generate a pool of candi-<lb/>dates. We then reranked the candidates using<lb/> a joint learning approach that combines the lo-<lb/>cal models and proposition features.<lb/> To address the multilingual nature of the data,<lb/> we implemented a feature selection procedure<lb/> that systematically explored the feature space,<lb/> yielding significant gains over a standard set<lb/> of features. Our system achieved the second<lb/> best semantic score overall with an average la-<lb/>beled semantic F1 of 80.31. It obtained the<lb/> best F1 score on the Chinese and German data<lb/> and the second best one on English.</div>
+	
 
 		</front>
 	</text>

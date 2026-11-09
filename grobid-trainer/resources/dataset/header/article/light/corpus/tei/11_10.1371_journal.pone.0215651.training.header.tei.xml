@@ -25,8 +25,7 @@
 	*
 	<email>caroline.hallin@tvrl.lth.se</email>
 
-	Abstract<lb/>
-	<div type="abstract">A numerical model for simulating beach-dune evolution at decadal to centennial time scales<lb/> is developed. The work builds on an existing semi-empirical cross-shore model, the CS-<lb/>model, to which the effect of sea level rise is added and the routines for aeolian transport and<lb/> morphological dune evolution are improved. The model development is based on established<lb/> conceptual models from the literature, which are translated into mathematical formulations<lb/> and solved numerically. The capability of the proposed model is demonstrated through a<lb/> case study at A ¨ngelholm Beach, Sweden. The model is calibrated and validated against a<lb/> seven-year long data set on morphological evolution and sediment grain-size samples.<lb/> Beach and dune evolution is then simulated from 2018 to 2100 for a range of sea level rise<lb/> scenarios. The model results are promising, and suggest that the model has potential to be<lb/> used for long-term assessment of climate change impact on beaches and dunes.<lb/></div>
+	
 
 	<reference>PLOS ONE | https://doi.org/10.1371/journal.pone.0215651 April 19, 2019<lb/></reference>
 

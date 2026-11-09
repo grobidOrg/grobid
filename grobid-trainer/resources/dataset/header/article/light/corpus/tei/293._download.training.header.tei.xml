@@ -24,8 +24,7 @@
 	<email>Dunja.Mladenic@ijs.si</email>, 
 	<email>Marko.Grobelnik@ijs.si</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper describes automatic document categorization based on large text hierarchy. We<lb/> handle the large number of features and training examples by taking into account hierarchical<lb/> structure of examples and using feature selection for large text data. We experimentally evaluate<lb/> feature subset selection on real-world text data collected from the existing Web hierarchy named<lb/> Yahoo. In our learning experiments naive Bayesian classi er was used on text data using feature-<lb/>vector document representation that includes word sequences (n-grams) instead of just single words<lb/> (unigrams). Experimental evaluation on real-world data collected form the Web shows that our<lb/> approach gives promising results and can potentially be used for document categorization on the<lb/> Web. Additionally the best result on our data is achieved for relatively small feature subset, while for<lb/> larger subset the performance substantially drops. The best performance among six tested feature<lb/> scoring measure was achieved by the feature scoring measure called Odds ratio that is known from<lb/> information retrieval.</div>
+	
 
 		</front>
 	</text>

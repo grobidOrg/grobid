@@ -75,8 +75,7 @@
 	<docAuthor>Simon Maskell<lb/></docAuthor>
 	</byline>
 
-	Abstract-
-	<div type="abstract">Markov Chain Monte Carlo (MCMC) is a powerful<lb/> method for drawing samples from non-standard probability<lb/> distributions and is utilized across many fields and disciplines.<lb/> Methods such as Metropolis-Adjusted Langevin (MALA) and<lb/> Hamiltonian Monte Carlo (HMC), which use gradient infor-<lb/>mation to explore the target distribution, are popular variants<lb/> of MCMC. The Sequential Monte Carlo (SMC) sampler is an<lb/> alternative sampling method which, unlike MCMC, can readily<lb/> utilise parallel computing architectures and also has tuning<lb/> parameters not available to MCMC. One such parameter is the<lb/> L-kernel which can be used to minimise the variance of the<lb/> estimates from an SMC sampler. In this letter, we show how the<lb/> proposal used in the No-U-Turn Sampler (NUTS), an advanced<lb/> variant of HMC, can be incorporated into an SMC sampler to<lb/> improve the efficiency of the exploration of the target space. We<lb/> also show how the SMC sampler can be optimized using both a<lb/> near-optimal L-kernel and a Hamiltonian proposal.<lb/></div>
+	
 
 	Index Terms-
 	<keyword>Bayesian inference, Markov chain Monte Carlo,<lb/> Monte Carlo methods, Sequential Monte carlo<lb/></keyword>

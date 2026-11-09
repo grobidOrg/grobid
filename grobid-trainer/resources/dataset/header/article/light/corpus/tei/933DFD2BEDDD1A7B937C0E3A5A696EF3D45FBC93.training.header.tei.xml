@@ -20,7 +20,7 @@
 	<date>25 January 2008.<lb/></date>
 
 	[1]
-	<div type="abstract">The shallow-water equations are used to model the flow resulting from the sudden<lb/> release of a finite volume of frictionless, incompressible fluid down a uniform slope of<lb/> arbitrary inclination. The hodograph transformation and Riemann&apos;s method make it<lb/> possible to transform the governing equations into a linear system and then deduce an<lb/> exact analytical solution expressed in terms of readily evaluated integrals. Although the<lb/> solution treats an idealized case never strictly realized in nature, it is uniquely well-suited<lb/> for testing the robustness and accuracy of numerical models used to model shallow-water<lb/> flows on steep slopes.<lb/></div>
+	
 
 	Citation:
 	<reference>Ancey, C., R. M. Iverson, M. Rentschler, and R. P. Denlinger (2008), An exact solution for ideal dam-break floods on steep<lb/> slopes, Water Resour. Res., 44, W01430, </reference>

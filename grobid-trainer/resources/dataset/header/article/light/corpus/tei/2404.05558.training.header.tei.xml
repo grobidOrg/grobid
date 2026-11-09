@@ -78,8 +78,7 @@
 	,
 	<email>jaedeokk@nvidia.com</email>
 
-	Abstract<lb/>
-	<div type="abstract">We propose a practical approach to JPEG image de-<lb/>coding, utilizing a local implicit neural representation with<lb/> continuous cosine formulation. The JPEG algorithm sig-<lb/>nificantly quantizes discrete cosine transform (DCT) spec-<lb/>tra to achieve a high compression rate, inevitably result-<lb/>ing in quality degradation while encoding an image. We<lb/> have designed a continuous cosine spectrum estimator to<lb/> address the quality degradation issue that restores the dis-<lb/>torted spectrum. By leveraging local DCT formulations,<lb/> our network has the privilege to exploit dequantization and<lb/> upsampling simultaneously. Our proposed model enables<lb/> decoding compressed images directly across different qual-<lb/>ity factors using a single pre-trained model without rely-<lb/>ing on a conventional JPEG decoder. As a result, our<lb/> proposed network achieves state-of-the-art performance in<lb/> flexible color image JPEG artifact removal tasks. Our<lb/> source code is available at https://github.com/<lb/> WooKyoungHan/JDEC.<lb/></div>
+	
 
 	<idno>arXiv:2404.05558v1 [eess.IV]</idno>
 

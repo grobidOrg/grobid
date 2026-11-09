@@ -35,8 +35,7 @@
 
 	<page>1 </page>
 
-	Abstract<lb/>
-	<div type="abstract">The FM9001 is a general-purpose 32-bit microprocessor that was fabricated for<lb/> Computational Logic, Inc., by LSI Logic, Inc., as an ASIC. Prior to fabrication,<lb/> the FM9001 netlist was formally and mechanically proved to implement its user-<lb/>level speci cation by Brock and Hunt using the Nqthm theorem prover. In this<lb/> report, we document our post-fabrication testing of the physical device. The testing<lb/> included both executing FM9001 machine code and also low-level testing with a<lb/> Tektronix LV500 chip tester. To date, all tests have con rmed that the FM9001<lb/> behaves as formally speci ed.</div>
+	
 
 		</front>
 	</text>

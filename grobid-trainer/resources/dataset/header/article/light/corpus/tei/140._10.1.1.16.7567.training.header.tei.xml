@@ -24,8 +24,7 @@
 
 	Tel: <phone>(512){471{9541</phone>
 
-	Abstract<lb/>
-	<div type="abstract">Nested loop execution of object-oriented queries retains<lb/> the promise of maintaining the full generality of the ob-<lb/>ject paradigm, independent of the speci cs of any single<lb/> object model. Thus, from this starting point we have<lb/> developed an object-oriented query optimizer and execu-<lb/>tion engine. The methods, developed to date for only<lb/> acyclic queries, augment nested loops structures with a<lb/> simple marking mechanism such that unnecessary loop<lb/> iterations are not repeated. In the case of acyclic queries,<lb/> the executions are asymptotically optimal. In contrast to<lb/> optimal query methods based on semijoin reductions our<lb/> method involves no preprocessing step and thus avoids<lb/> the extra I/O associated with semijoins and prevents the<lb/> formal bene ts of semijoin reduction from appearing as a<lb/> practical improvement. Empirical results comparing our<lb/> query environment with a commercially available product<lb/> demonstrate signi cant performance improvement.</div>
+	
 
 		</front>
 	</text>

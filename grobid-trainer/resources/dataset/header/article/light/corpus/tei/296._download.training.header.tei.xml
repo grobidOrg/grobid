@@ -23,8 +23,7 @@
 	Invited Paper for<lb/>
 	<meeting>Workshop on Operating Systems of the 90s and Beyond<lb/> Dagstuhl Castle, Germany, July 1991</meeting>
 
-	Abstract<lb/>
-	<div type="abstract">Access to shared data is provided today by distributed file systems and<lb/> databases. In this paper, we explore certain usage and technological trends that<lb/> will radically change the way shared data is used in the future. The usage trends<lb/> include the growing need to access shared data from anywhere, increasing scale,<lb/> and the increasing importance of efficient search. The technology trends include<lb/> the advent of portable machines, the availability of software and hardware for<lb/> using diverse types of data, and the growing diversity of network speeds and<lb/> capabilities. These trends induce fundamental research problems in the areas of<lb/> adaptive system behavior, secure remote execution and extensibility.<lb/></div>
+	
 
 	<note type="funding">This work has been supported by the Defense Advanced Research Projects Agency (Avionics Lab, Wright Research and Development Center,<lb/> Aeronautical Systems Division (AFSC), U.S. Air Force, Wright-Patterson AFB, Ohio, 45433-6543 under Contract F33615-90-C-1465, ARPA<lb/>  Order No. 7597), the National Science Foundation (PYI Award), and the IBM Corporation (Research Initiation Grant). The views and<lb/> conclusion expressed in this paper are those of the author, and should not be interpreted as those of the funding agencies or Carnegie Mellon<lb/> University.</note>
 		</front>

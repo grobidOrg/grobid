@@ -97,8 +97,7 @@
 
 	<address>France</address>
 
-	Abstract<lb/>
-	<div type="abstract">The purpose of this article is to provide an adaptive estimator of the baseline function in the<lb/> Cox model with high-dimensional covariates. We consider a two-step procedure : first, we estimate<lb/> the regression parameter of the Cox model via a Lasso procedure based on the partial log-likelihood,<lb/> secondly, we plug this Lasso estimator into a least-squares type criterion and then perform a model<lb/> selection procedure to obtain an adaptive penalized contrast estimator of the baseline function.<lb/> Using non-asymptotic estimation results stated for the Lasso estimator of the regression param-<lb/>eter, we establish a non-asymptotic oracle inequality for this penalized contrast estimator of the<lb/> baseline function, which highlights the discrepancy of the rate of convergence when the dimension<lb/> of the covariates increases.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Survival analysis; Conditional hazard rate function; Cox's proportional hazards model;<lb/> Right-censored data; Semi-parametric model; Nonparametric model; High-dimensional covariates;<lb/> Model selection; Non-asymptotic oracle inequalities; Concentration inequalities<lb/></keyword>

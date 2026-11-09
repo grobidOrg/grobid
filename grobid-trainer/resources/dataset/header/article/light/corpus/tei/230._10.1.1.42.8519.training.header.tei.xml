@@ -31,8 +31,7 @@
 
 	<date>March 1998<lb/></date>
 
-	Abstract<lb/>
-	<div type="abstract">Real-Time reliable multicast over a best-effort service network remains a challenging research problem. Most<lb/> protocols for reliable multicast use repair techniques that result in significant and variable delay, which can lead to<lb/> missed deadlines in real-time scenarios. This paper presents a repair technique that combines forward error correction<lb/> (FEC) with automatic repeat request (ARQ). The novel aspect of the technique is its ability to reduce delay in reliable<lb/> multicast delivery by sending repairs proactively (i.e., before they are required). The technique requires minimal<lb/> state at senders and receivers, and no additional active router functionality beyond what is required by the current<lb/> multicast service model. Furthermore, the technique uses only end-to-end mechanisms, where all data and repairs are<lb/> transmitted by the data-originating source, leaving receivers free from any burden of sending repairs. We simulate<lb/> a simple round-based version of a protocol embodying this technique to show its effectiveness in preventing repair<lb/> request implosion, reducing the expected time of reliable delivery of data, and keeping bandwidth usage for repairs<lb/> low. We show how a protocol using the technique can be adapted to provide delivery that is reliable before a real-time<lb/> deadline with probabilities extremely close to one. Finally, we develop several variations of the protocol that use the<lb/> technique in various fashions for high rate data streaming applications, and present results from additional simulations<lb/> that examine performance in a variety of Internet-like heterogeneous networks.</div>
+	
 
 		</front>
 	</text>

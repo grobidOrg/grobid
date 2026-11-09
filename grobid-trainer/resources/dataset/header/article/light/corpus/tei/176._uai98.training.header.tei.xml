@@ -34,8 +34,7 @@
 
 	<ptr type="web">http://www.cs.Helsinki.FI/research/cosco/</ptr>
 
-	Abstract<lb/>
-	<div type="abstract">We analyze di erences between two<lb/> information-theoretically motivated ap-<lb/>proaches to statistical inference and model<lb/> selection: the Minimum Description Length<lb/> (MDL) principle, and the Minimum Message<lb/> Length (MML) principle. Based on this<lb/> analysis, we present two revised versions of<lb/> MML: a pointwise estimator which gives<lb/> the MML-optimal single parameter model,<lb/> and a volumewise estimator which gives<lb/> the MML-optimal region in the parameter<lb/> space. Our empirical results suggest that<lb/> with small data sets, the MDL approach<lb/> yields more accurate predictions than the<lb/> MML estimators. The empirical results<lb/> also demonstrate that the revised MML<lb/> estimators introduced here perform better<lb/> than the original MML estimator suggested<lb/> by Wallace and Freeman.</div>
+	
 
 		</front>
 	</text>

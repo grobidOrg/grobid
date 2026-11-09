@@ -26,8 +26,7 @@
 
 	<note type="funding">This research was supported by: Center for Research on<lb/> Parallel Computation, a National Science Foundation Sci-<lb/>ence and Technology Center, through Cooperative Agree-<lb/>ment No. CCR-9120008, NSF/NASA Agreement No.<lb/> ASC-9213821, and ONR Agreement No. N00014-93-1-<lb/>0158. Use of the Intel i860 was provided under a Texas<lb/> CER Grant No. CISE 8619893.</note> 
 
-	Abstract<lb/>
-	<div type="abstract">The Fortran D language extends Fortran by permitting the user to specify the distribution of array variables<lb/> across the processors of a parallel computer system. This information can then be used by the compiler<lb/> to derive a multidimensional parallelization. For programs in which multidimensional arrays have been lin-<lb/>earized for optimal performance on vector processors, this strategy will not produce the best results because<lb/> in those programs Fortran D is limited to a one-dimensional parallelization, which yields less e cient com-<lb/>munication than multidimensional parallelization because of surface-to-volume e ects. This paper proposes<lb/> Fortran D extensions and associated compiler technology to support natural topology parallelization of ap-<lb/>plications&apos; codes with linearized arrays. Experimental results are presented to illustrate the improvement in<lb/> performance of this new approach over the performance of currently available methods such as Fortran D<lb/> and the PARTI inspector/executor strategy.</div>
+	
 
 		</front>
 	</text>

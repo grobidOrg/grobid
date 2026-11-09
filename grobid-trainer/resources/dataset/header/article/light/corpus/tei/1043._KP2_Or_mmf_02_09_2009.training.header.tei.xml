@@ -16,8 +16,7 @@
 
 	<date>September 16, 2009</date>
 
-	Abstract<lb/>
-	<div type="abstract">In this paper we prove the asymptotic efficiency of the model se-<lb/>lection procedure proposed by the authors in [10]. To this end we<lb/> introduce the robust risk as the least upper bound of the quadratical<lb/> risk over a broad class of observation distributions. Asymptotic upper<lb/> and lower bounds for the robust risk have been derived. The asymp-<lb/>totic efficiency of the procedure is proved. The Pinsker constant is<lb/> found.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Non-parametric regression; Model selection; Sharp oracle inequal-<lb/>ity; Robust risk; Asymptotic efficiency; Pinsker constant; Semimartingale<lb/> noise.<lb/></keyword>

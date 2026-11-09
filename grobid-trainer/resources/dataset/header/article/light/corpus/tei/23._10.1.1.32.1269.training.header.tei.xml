@@ -20,8 +20,7 @@
 
 	<email>nin@cns.brown.edu<lb/></email>
 
-	Abstract| 
-	<div type="abstract">Barlow&apos;s seminal work on minimal entropy codes and unsupervised learning is<lb/> reiterated. In particular, the need to transmit the probability of events is put in a practical<lb/> neuronal framework for detecting suspicious events. A variant of the BCM learning rule 15]<lb/> is presented together with some mathematical results suggesting optimal minimal entropy<lb/> coding.<lb/></div>
+	
 
 	Key words:
 	<keyword>Sparse coding, Non-Gaussian distributions, BCM Theory, Minimal Entropy</keyword>

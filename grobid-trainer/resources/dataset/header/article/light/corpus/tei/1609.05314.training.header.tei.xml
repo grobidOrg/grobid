@@ -59,8 +59,7 @@
 	<docAuthor>Jeffrey Wildman, Member, IEEE, Steven Weber, Senior Member, IEEE</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">This paper analyzes the connection between the protocol and physical interference models in the<lb/> setting of Poisson wireless networks. A transmission is successful under the protocol model if there are<lb/> no interferers within a parameterized guard zone around the receiver, while a transmission is successful<lb/> under the physical model if the signal to interference plus noise ratio (SINR) at the receiver is above a<lb/> threshold. The parameterized protocol model forms a family of decision rules for predicting the success<lb/> or failure of the same transmission attempt under the physical model. For Poisson wireless networks, we<lb/> employ stochastic geometry to determine the prior, evidence, and posterior distributions associated with<lb/> this estimation problem. With this in hand, we proceed to develop five sets of results: i) the maximum<lb/> correlation of protocol and physical model success indicators, ii) the minimum Bayes risk in estimating<lb/> physical success from a protocol observation, iii) the receiver operating characteristic (ROC) of false<lb/> rejection (Type I) and false acceptance (Type II) probabilities, iv) the impact of Rayleigh fading vs. no<lb/> fading on the correlation and ROC, and v) the impact of multiple prior protocol model observations in<lb/> the setting of a wireless network with a fixed set of nodes in which the nodes employ the slotted Aloha<lb/> protocol in each time slot.<lb/></div>
+	
 
 	Index Terms<lb/>
 	<keyword>protocol model; physical model; Bayes risk; Poisson networks; hypothesis testing; Aloha.<lb/></keyword>

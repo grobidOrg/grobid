@@ -39,8 +39,7 @@
 	Keywords:
 	<keyword>Register Allocation, Continuation-passing Style, Procedure Call<lb/></keyword>
 
-	Abstract.
-	<div type="abstract">Continuation-passing style (CPS) is a good abstract representation to use<lb/> for compilation and optimization: it has a clean semantics and is easily manipulated.<lb/> We examine how CPS expresses the saving and restoring of registers in source-language<lb/> procedure calls. In most CPS-based compilers, the context of the calling procedure is<lb/> saved in a \continuation closure&quot;|a single variable that is passed as an argument to the<lb/> function being called. This closure is a record containing bindings of all the free variables<lb/> of the continuation; that is, registers that hold values needed by the caller \after the call&quot;<lb/> are written to memory in the closure, and fetched back after the call.<lb/> Consider the procedure-call mechanisms used by conventional compilers. In particular,<lb/> registers holding values needed after the call must be saved and later restored. The<lb/> responsibility for saving registers can lie with the caller (a \caller-saves&quot; convention)<lb/> or with the called function (\callee-saves&quot;). In practice, to optimize memory tra c,<lb/> compilers nd it useful to have some caller-saves registers and some callee-saves.<lb/> \Conventional&quot; CPS-based compilers that pass a pointer to a record containing all<lb/> the variables needed after the call (i.e., the continuation closure), are using a caller-saves<lb/> convention. We explain how to express callee-save registers in Continuation-Passing<lb/> Style, and give measurements showing the resulting improvement in execution time.</div>
+	
 
 		</front>
 	</text>

@@ -18,8 +18,7 @@
 	<docAuthor>R.R.A.Syms * , L.Solymar, I.R.Young and T.Floume</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">Magneto-inductive cables for low (ca 100 MHz) radio frequencies are demonstrated in<lb/> thin-film form. 20 cm long resonant elements are formed using double-sided patterning of<lb/> copper-clad polyimide, based on single-turn inductors and parallel plate capacitors that<lb/> use the substrate as an interlayer dielectric. Continuous cables are formed by overlaying<lb/> elements, in an arrangement that allows a high, positive coupling coefficient (κ &gt; 0.6) to<lb/> be achieved despite the use of a planar geometry. Equivalent circuit parameters are<lb/> extracted from experiments on integrated coupling transducers, and propagation<lb/> characteristics are compared with simple theory. Low propagation loss (4 dB/m at 55<lb/> MHz, falling to 2.3 dB/m at 130 MHz) is demonstrated near the operating frequencies of<lb/> magnetic resonance imaging, for a potential application as patient-safe cable in internal<lb/> imaging.<lb/> </div>
+	
 
 	KEYWORDS<lb/> 
 	<keyword>Metamaterial, periodic structure, magneto-inductive wave<lb/> </keyword>

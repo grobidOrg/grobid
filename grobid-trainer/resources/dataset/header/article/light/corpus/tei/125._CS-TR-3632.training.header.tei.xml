@@ -23,8 +23,7 @@
 	Email:
 	<email>krunz@cs.umd.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">We propose a new bandwidth allocation scheme for VBR video tra c in ATM networks.<lb/> The scheme is tailored to MPEG-coded video sources that require stringent and deterministic<lb/> quality-of-service guarantees. By exploiting the temporal structure of MPEG sources, we show<lb/> that our scheme results in an e ective bandwidth which, in most cases, is less than the source<lb/> peak rate. The reduction in the bandwidth requirement is achieved without sacri cing any<lb/> perceived QoS. E cient procedures are provided for the computation of the e ective bandwidth<lb/> under heterogeneous MPEG sources. The e ective bandwidth strongly depends on the arrange-<lb/>ment of the multiplexed streams which is a measure of the degree of synchronization between the<lb/> GOP patterns of di erent streams. Assuming that all possible arrangements are equi-probable,<lb/> we derive an expression for the asymptotic tail distribution of the e ective bandwidth. From<lb/> the tail distribution, we compute several performance measures for the call blocking probability<lb/> when the allocation is made based on the e ective bandwidth. In the case of homogeneous<lb/> sources, we give a closed-form expression for the`best&apos; arrangement that results in the`optimal&apos;<lb/> e ective bandwidth. Numerical examples based on real MPEG traces are used to demonstrate<lb/> the advantages of our scheme.<lb/></div>
+	
 
 	Keywords:
 	<keyword>bandwidth allocation, MPEG, statistical multiplexing, CAC.<lb/></keyword>

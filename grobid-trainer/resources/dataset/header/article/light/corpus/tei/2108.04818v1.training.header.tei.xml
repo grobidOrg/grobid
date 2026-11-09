@@ -74,8 +74,7 @@
 
 	<email>lemhadri@stanford.edu</email>
 
-	ABSTRACT<lb/>
-	<div type="abstract">The rapid growth of social media has been witnessed during recent<lb/> years as a result of the prevalence of the internet. This trend brings<lb/> an increasing interest in simulating social media which can provide<lb/> valuable insights to both academic researchers and businesses. In<lb/> this paper, we present a step-by-step approach of using Hawkes<lb/> process, a self-activating stochastic process, to simulate Twitter<lb/> activities and demonstrate how this model can be utilized to evalu-<lb/>ate the chance of extremely rare web crises. Another goal of this<lb/> research is to introduce a new strategy that implements Hawkes<lb/> process on graph structures. Overall, we intend to extend the cur-<lb/>rent Hawkes process to a wider range of scenarios and, in particular,<lb/> create a more realistic simulation of Twitter activities by incorpo-<lb/>rating the actual user status and following-follower interactions<lb/> between users.<lb/></div>
+	
 
 	<keyword>CCS CONCEPTS<lb/> • Mathematics of computing → Stochastic processes; Maxi-<lb/>mum likelihood estimation; • General and reference → Estima-<lb/>tion.</keyword>
 

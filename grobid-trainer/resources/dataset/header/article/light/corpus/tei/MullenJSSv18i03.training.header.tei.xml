@@ -28,8 +28,7 @@
 	<affiliation>Vrije Universiteit Amsterdam<lb/></affiliation>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">TIMP is an R package for modeling multiway spectroscopic measurements. The pack-<lb/>age allows for the simultaneous analysis of datasets collected under different experimental<lb/> conditions in terms of a wide variety of parametric models. Models arising in spectroscopy<lb/> data analysis often have some parameters that are intrinstically nonlinear, and some pa-<lb/>rameters that are conditionally linear on estimates of the nonlinear parameters. TIMP<lb/> fits such separable nonlinear models using partitioned variable projection, a variant of the<lb/> variable projection algorithm that is described here for the first time. The of the parti-<lb/>tioned variable projection algorithm allows fitting many models for spectroscopy datasets<lb/> using much less memory as compared to under the standard variable projection algorithm<lb/> that is implemented in nonlinear optimization routines (e.g., the plinear option of the R<lb/> function nls), as is shown here. An overview of modeling with TIMP is also given that<lb/> includes several case studies in the application of the package.<lb/> </div>
+	
 
 	Keywords: 
 	<keyword>spectroscopy, separable nonlinear least squares, superposition model, compartmen-<lb/>tal model, global analysis, target analysis. .<lb/></keyword>

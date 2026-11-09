@@ -21,7 +21,7 @@
 	<docAuthor>Minkyu Moon 1 ✉ , andrew D. Richardson 2,3 , thomas Milliman 4 &amp; Mark a. Friedl 1<lb/></docAuthor>
 	</byline>
 
-	<div type="abstract">Vegetation phenology is a key control on water, energy, and carbon fluxes in terrestrial ecosystems.<lb/> Because vegetation canopies are heterogeneous, spatially explicit information related to seasonality in<lb/> vegetation activity provides valuable information for studies that use eddy covariance measurements<lb/> to study ecosystem function and land-atmosphere interactions. Here we present a land surface<lb/> phenology (LSP) dataset derived at 3 m spatial resolution from PlanetScope imagery across a range of<lb/> plant functional types and climates in North america. the dataset provides spatially explicit information<lb/> related to the timing of phenophase changes such as the start, peak, and end of vegetation activity,<lb/> along with vegetation index metrics and associated quality assurance flags for the growing seasons of<lb/> 2017-2021 for 10 × 10 km windows centred over 104 eddy covariance towers at AmeriFlux and National<lb/> Ecological Observatory Network (NEON) sites. these LSP data can be used to analyse processes<lb/> controlling the seasonality of ecosystem-scale carbon, water, and energy fluxes, to evaluate predictions<lb/> from land surface models, and to assess satellite-based LSP products.</div>
+	
 
 	<byline>
 	<affiliation>1<lb/> Department of earth and environment, Boston University,</affiliation>

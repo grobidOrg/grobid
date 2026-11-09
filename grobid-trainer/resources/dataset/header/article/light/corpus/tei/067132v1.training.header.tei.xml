@@ -26,8 +26,7 @@
 
 	<email>lars.juhl.jensen@cpr.ku.dk<lb/></email>
 
-	Abstract-
-	<div type="abstract">Automatic annotation of text is an important<lb/> complement to manual annotation, because the latter is highly<lb/> labour intensive. We have developed a fast dictionary-based<lb/> named entity recognition (NER) system and addressed a wide<lb/> variety of biomedical problems by applied it to text from many<lb/> different sources. We have used this tagger both in real-time<lb/> tools to support curation efforts and in pipelines for populating<lb/> databases through bulk processing of entire Medline, the open-<lb/>access subset of PubMed Central, NIH grant abstracts, FDA<lb/> drug labels, electronic health records, and the Encyclopedia of<lb/> Life. Despite the simplicity of the approach, it typically achieves<lb/> 80-90% precision and 70-80% recall. Many of the underlying<lb/> dictionaries were built from open biomedical ontologies, which<lb/> further facilitate integration of the text-mining results with<lb/> evidence from other sources.<lb/></div>
+	
 
 	Keywords-
 	<keyword>named entity recognition; software; dictionaries;<lb/></keyword>

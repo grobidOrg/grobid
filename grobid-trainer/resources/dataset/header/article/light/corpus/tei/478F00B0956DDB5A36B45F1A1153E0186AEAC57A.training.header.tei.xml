@@ -33,8 +33,7 @@
 	
 	<keyword>PACS. 47.11+j -Computational methods in fluid dynamics.<lb/> PACS. 05.70Ln -Nonequilibrium thermodynamics, irreversible processes.<lb/> PACS. 02.70Ns -Molecular dynamics and particle methods.<lb/></keyword>
 
-	Abstract. -
-	<div type="abstract">The stochastic differential equations for a model of dissipative particle dynamics<lb/> with both total energy and total momentum conservation in the particle-particle interactions<lb/> are presented. The corresponding Fokker-Planck equation for the evolution of the probability<lb/> distribution for the system is deduced together with the corresponding fluctuation-dissipation<lb/> theorems ensuring that the ab initio chosen equilibrium probability distribution for the relevant<lb/> variables is a stationary solution. When energy conservation is included, the system can sustain<lb/> temperature gradients and heat flow can be modeled.<lb/></div>
+	
 
 	<note type="copyright">c Les Editions de Physique</note>
 

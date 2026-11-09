@@ -73,8 +73,7 @@
 	<docAuthor>U. Caglar, M. Fradelizi † , O. Guédon † , J. Lehec,<lb/> C. Schütt and E. M. Werner ‡</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">In contemporary convex geometry, the rapidly developing Lp-Brunn Minkowski<lb/> theory is a modern analogue of the classical Brunn Minkowski theory. A cornerstone<lb/> of this theory is the Lp-affine surface area for convex bodies. Here, we introduce<lb/> a functional form of this concept, for log concave and s-concave functions. We<lb/> show that the new functional form is a generalization of the original Lp-affine<lb/> surface area. We prove duality relations and affine isoperimetric inequalities for log<lb/> concave and s-concave functions. This leads to a new inverse log-Sobolev inequality<lb/> for s-concave densities.<lb/></div>
+	
 
 	* Keywords:
 	<keyword>entropy, affine isoperimetric inequalities, log-Sobolev inequalities.</keyword>

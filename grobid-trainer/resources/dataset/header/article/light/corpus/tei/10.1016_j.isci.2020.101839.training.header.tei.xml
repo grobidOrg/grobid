@@ -21,8 +21,7 @@
 	<docAuthor>Leon Fodoulian, 1,2,6 Joe ¨l Tuberosa, 1,6 Daniel Rossier, 1,6 Madlaina Boillat, 1,6 Chenda Kan, 1 Ve ´ronique Pauli, 1<lb/> Kristof Egervari, 3,4 Johannes A. Lobrinus, 3 Basile N. Landis, 5 Alan Carleton, 2, * and Ivan Rodriguez 1,7, *</docAuthor>
 	</byline>
 
-	SUMMARY<lb/>
-	<div type="abstract">Reports indicate an association between COVID-19 and anosmia, as well as the<lb/> presence of SARS-CoV-2 virions in the olfactory bulb. To test whether the olfac-<lb/>tory neuroepithelium may represent a target of the virus, we generated RNA-<lb/>seq libraries from human olfactory neuroepithelia, in which we found substantial<lb/> expression of the genes coding for the virus receptor angiotensin-converting<lb/> enzyme-2 (ACE2) and for the virus internalization enhancer TMPRSS2. We<lb/> analyzed a human olfactory single-cell RNA-seq dataset and determined that sus-<lb/>tentacular cells, which maintain the integrity of olfactory sensory neurons, ex-<lb/>press ACE2 and TMPRSS2. ACE2 protein was highly expressed in a subset of<lb/> sustentacular cells in human and mouse olfactory tissues. Finally, we found<lb/> ACE2 transcripts in specific brain cell types, both in mice and humans. Sustentac-<lb/>ular cells thus represent a potential entry door for SARS-CoV-2 in a neuronal sen-<lb/>sory system that is in direct connection with the brain.<lb/></div>
+	
 
 	<byline>
 	<affiliation>1 Department of Genetics and<lb/> Evolution, Faculty of<lb/> Sciences, University of<lb/> Geneva,</affiliation>

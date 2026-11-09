@@ -56,8 +56,7 @@
 
 	<email>fabienne.venant@loria.fr</email>
 
-	Abstract<lb/>
-	<div type="abstract">We present a method for grouping the synonyms<lb/> of a lemma according to its dictionary senses.<lb/> The senses are defined by a large machine read-<lb/>able dictionary for French, the TLFi (Trésor<lb/> de la langue française informatisé) and the syn-<lb/>onyms are given by 5 synonym dictionaries (also<lb/> for French). To evaluate the proposed method,<lb/> we manually constructed a gold standard where<lb/> for each (word, definition) pair and given the<lb/> set of synonyms defined for that word by the<lb/> 5 synonym dictionaries, 4 lexicographers speci-<lb/>fied the set of synonyms they judge adequate.<lb/> While inter-annotator agreement ranges on that<lb/> task from 67% to at best 88% depending on the<lb/> annotator pair and on the synonym dictionary<lb/> being considered, the automatic procedure we<lb/> propose scores a precision of 67% and a recall<lb/> of 71%. The proposed method is compared with<lb/> related work namely, word sense disambiguation,<lb/> synonym lexicon acquisition and WordNet con-<lb/>struction.</div>
+	
 
 	Keywords<lb/>
 	<keyword>Similarity measures, Synonyms, Lexical Acquisition<lb/></keyword>

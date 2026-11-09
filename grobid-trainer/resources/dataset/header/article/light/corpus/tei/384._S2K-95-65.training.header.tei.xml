@@ -31,8 +31,7 @@
 
 	<address>Berkeley</address>
 
-	ABSTRACT<lb/>
-	<div type="abstract">In this paper we present a prototype system for<lb/> the management of earth science data which is<lb/> novelinthat it takes a DBMS centric viewofthe<lb/> the task. Our prototype --called &quot;BigSur&quot; --is<lb/> shown in the context of its use by twogeographi-<lb/>cally distributed scientific groups with demand-<lb/>ing data storage and processing requirements.<lb/> BigSur currently stores 1 Terabyte of data, about<lb/> one thousandth of the volume EOSDIS must<lb/> store. Wec laim that the design principles<lb/> embodied in BigSur provide sufficient flexibility<lb/> to achieve the difficult scientific and technical<lb/> objectivesofMission to Planet Earth.</div>
+	
 
 		</front>
 	</text>

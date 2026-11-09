@@ -24,8 +24,7 @@
 
 	<date>August 1991</date>
 
-	Abstract<lb/>
-	<div type="abstract">We present an approach for recovering surface shape from the occluding contour us-<lb/>ing an active (i.e., moving) observer. It is based on a relation between the geometries of<lb/> a surface in a scene and its occluding contour: If the viewing direction of the observer<lb/> is along a principal direction for a surface point whose projection is on the contour,<lb/> surface shape (i.e., curvature) at the surface point can be recovered from the contour.<lb/> Unlike previous approaches for recovering shape from the occluding contour, we use an<lb/> observer that purposefully changes viewpoint in order to achieve a well-de ned geomet-<lb/>ric relationship with respect to a 3D shape prior to its recognition. We show that there<lb/> is a simple and e cient viewing strategy that allows the observer to align their viewing<lb/> direction with one of the two principal directions for a point on the surface. This strat-<lb/>egy depends on only curvature measurements on the occluding contour and therefore<lb/> demonstrates that recovering quantitative shape information from the contour does not<lb/> require knowledge of the velocities or accelerations of the observer. Experimental results<lb/> demonstrate that our method can be easily implemented and can provide reliable shape<lb/> information from the occluding contour.<lb/></div>
+	
 
 	<note type="funding">The support of the National Science Foundation under Grant No. IRI-9002582 is gratefully acknowledged.</note>
 		</front>

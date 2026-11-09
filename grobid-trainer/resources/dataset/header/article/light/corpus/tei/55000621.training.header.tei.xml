@@ -31,8 +31,7 @@
 
 	is a Staff Engineer and lead program<lb/> engineer in ENSCO&apos;s Advanced Projects and<lb/> Applications Division. He has 18 years experience in<lb/> communications and embedded systems design and<lb/> development.
 
-	ABSTRACT<lb/>
-	<div type="abstract">Ranger is a local area radio frequency ranging system<lb/> implemented in the 2.4 GHz Industrial, Scientific and<lb/> Medical (ISM) band.<lb/> Roundtrip time-of-flight<lb/> measurements are made in a two-stage process: a coarse<lb/> measurement provides ± 3.4 m accuracy, followed by a<lb/> fine measurement correction that reduces error to below<lb/> 20 cm. This innovative approach can be implemented in<lb/> other parts of the RF spectrum; the 2.4 GHz ISM band<lb/> was chosen both for regulatory acceptance and<lb/> availability of commercial components.<lb/> The Ranger system consists of fixed and mobile radios.<lb/> Fixed location radios provide the reference from which<lb/> distances are measured to the mobile radio. A single<lb/> distance measurement requires approximately 50 ms,<lb/> therefore with a network of four fixed radios, the position<lb/> of the mobile can be updated five times per second.<lb/> Additionally, the digital communications link that is used<lb/> for distance measurement is also used for concurrent<lb/> high-bandwidth data communication.</div>
+	
 
 		</front>
 	</text>

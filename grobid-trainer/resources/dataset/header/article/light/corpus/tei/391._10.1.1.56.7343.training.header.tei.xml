@@ -34,8 +34,7 @@
 
 	<email>jarek@cs.yorku.ca</email>
 
-	Abstract<lb/>
-	<div type="abstract">Query caching can play a vital role in hetero-<lb/>geneous, multi-database environments. An-<lb/>swers to a query that are available in cache<lb/> at the local client can be returned to the user<lb/> quickly, while the rest of the query is evalu-<lb/>ated. The use of caches can optimize query<lb/> evaluation. By caching certain sensitive data<lb/> locally, caches can be used to answer the parts<lb/> of queries that involve the sensitive data, so it<lb/> need not be shipped across the network. Most<lb/> prior cache schemes have been tuple-based or<lb/> page-based. It is unclear, however, how these<lb/> might be adapted for multi-databases. We ex-<lb/>plore a more exible semantic query caching<lb/> (SQC) approach. In SQC, caches are the an-<lb/>swer sets of previous queries, labeled by the<lb/> query expressions that produced them. We<lb/> promote developing the technology, based on<lb/> logic, to manipulate semantic caches, to deter-<lb/>mine when and how caches can be used to an-<lb/>swer subsequent queries, and to optimize via<lb/> cache use.<lb/></div>
+	
 
 	<note type="copyright">The copyright of this paper belongs to the papers authors. Per-<lb/>mission to copy without fee all or part of this material is granted<lb/> provided that the copies are not made or distributed for direct<lb/> commercial advantage.<lb/></note>
 

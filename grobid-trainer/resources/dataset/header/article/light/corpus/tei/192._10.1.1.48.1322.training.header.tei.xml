@@ -44,9 +44,7 @@
 	Key words and phrases.
 	<keyword>Bilinear model, Branching process with immigration, Exponential<lb/> family, Improper prior, Null recurrence, Random walk, Stochastic di erence equation, Transience<lb/></keyword>
 
-	Abbreviated title. Markov Chains and P-admissibility Abstract<lb/>
-
-	<div type="abstract">Suppose that X is a random variable with density f(xj ) and that ( jx) is a proper<lb/> posterior corresponding to an improper prior ( ). The prior is called P-admissible if the<lb/> generalized Bayes estimator of every bounded function of is almost--admissible under<lb/> squared error loss. Eaton (1992) showed that recurrence of the Markov chain with transition<lb/> density R( j ) =<lb/> R ( jx)f(xj )dx is a su cient condition for P-admissibility of ( ). We<lb/> show that Eaton&apos;s Markov chain is recurrent if and only if its conjugate partner, with<lb/> transition densityR(yjx) =<lb/> R f(yj ) ( jx)d , is recurrent. This provides a new method<lb/> of establishing P-admissibility. Often, one of these two Markov chains corresponds to a<lb/> standard stochastic process for which there are known results on recurrence and transience.<lb/> For example, when X is Poisson( ) and an improper gamma prior is placed on , the<lb/> Markov chain de ned byR(yjx) is equivalent to a branching process with immigration. We<lb/> use this type of argument to establish P-admissibility of some priors when f is a negative<lb/> binomial mass function, and when f is a gamma density with known shape.<lb/></div> 
+	Abbreviated title. Markov Chains and P-admissibility  
 
 		</front>
 	</text>

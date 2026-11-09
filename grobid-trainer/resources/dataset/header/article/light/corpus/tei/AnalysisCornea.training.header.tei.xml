@@ -22,8 +22,7 @@
 
 	<date>September 2013</date>
 
-	Abstract<lb/>
-	<div type="abstract">In their book Scientific Computing on The Itanium [1], Cornea, Harrison<lb/> and Tang introduce an accurate algorithm for evaluating expressions of<lb/> the form ab + cd in binary floating-point arithmetic, assuming an FMA<lb/> instruction is available. They show that if p is the precision of the floating-<lb/>point format and if u = 2 −p , the relative error of the result is of order<lb/> u. We improve their proof to show that the relative error is bounded by<lb/> 2u+7u 2 +6u 3 . Furthermore, by building an example for which the relative<lb/> error is asymptotically (as p → ∞ or, equivalently, as u → 0) equivalent to<lb/> 2u, we show that our error bound is asymptotically optimal.</div>
+	
 
 		</front>
 	</text>

@@ -26,8 +26,7 @@
 	
 	<date>February 9, 1994</date>
 
-	Abstract<lb/>
-	<div type="abstract">The increasing size and complexity of many software<lb/> systems demand a greater emphasis on capturing and<lb/> maintaining knowledge at many di erent levels within<lb/> the software development process. This knowledge in-<lb/>cludes descriptions of the hardware and software com-<lb/>ponents and their behavior, external and internal de-<lb/>sign speci cations, and support for system testing.<lb/> The knowledge-based software engineering (KBSE) re-<lb/>search paradigm is concerned with systems that use<lb/> formally represented knowledge, with associated in-<lb/>ference procedures, to support the various subactivi-<lb/>ties of software development. As they grow in scale,<lb/> KBSE systems must balance expressivity and inferen-<lb/>tial power with the real demands of knowledge base<lb/> construction, maintenance, performance and compre-<lb/>hensibility. Description Logics (DL&apos;s) possess several<lb/> features { a terminological orientation, a formal se-<lb/>mantics and e cient reasoning procedures { which of-<lb/>fer an e ective tradeo of these factors. We discuss<lb/> three KBSE systems in which DL&apos;s capture some of<lb/> the requisite knowledge needed to support design, cod-<lb/>ing and testing activities. We close with a discussion<lb/> of the bene ts of DL&apos;s and ways to address some of<lb/> their limitations.</div>
+	
 
 		</front>
 	</text>

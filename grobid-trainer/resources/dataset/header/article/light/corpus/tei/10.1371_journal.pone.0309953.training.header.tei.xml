@@ -112,11 +112,9 @@
 	*
 	<email>jackyngo@cuhk.edu.hk</email>
 
-	Abstract<lb/>
-	<div type="abstract">Members of the serine-arginine protein kinase (SRPK) family, SRPK1 and SRPK2, phos-<lb/>phorylate the hepatitis B core protein (Cp) and are crucial for pregenomic RNA encapsida-<lb/>tion during viral nucleocapsid assembly. Among them, SRPK2 exhibits higher kinase<lb/> activity toward Cp. In this study, we identified Cp sites that are phosphorylated by SRPK2<lb/> and demonstrated that the kinase utilizes an SRPK-specific docking groove to interact with<lb/> and regulate the phosphorylation of the C-terminal arginine rich domain of Cp. We deter-<lb/>mined that direct interaction between the docking groove of SRPK2 and unphosphorylated<lb/> Cp inhibited premature viral capsid assembly in vitro, whereas the phosphorylation of the<lb/> viral protein reactivated the process. Pull-down assays together with the new cryo-electron<lb/> microscopy structure of the HBV capsid in complex with SRPK2 revealed that the kinases<lb/> decorate the surface of the viral capsid by interacting with the C-terminal domain of Cp,<lb/> underscoring the importance of the docking interaction in regulating capsid assembly and<lb/> pregenome packaging. Moreover, SRPK2-knockout in HepG2 cells suppressed Cp phos-<lb/>phorylation, indicating that SRPK2 is an important cellular kinase for HBV life cycle.<lb/></div>
+	
 
-	Author summary<lb/>
-	<div type="abstract">Hepatitis B virus (HBV) is an enveloped DNA virus that causes hepatitis B, a common<lb/> liver infection. HBV infection is highly associated with the development of both acute and<lb/></div>
+	
 
 	<title level="j">PLOS PATHOGENS<lb/></title>
 	<reference>PLOS Pathogens | https://doi.org/10.1371/journal.ppat.1011978 February 7, 2024<lb/></reference>
@@ -150,7 +148,7 @@
 	Data Availability Statement:
 	<note type="availability">Cryo-EM maps for<lb/> Hepatitis B virus capsid (HBV core protein) and<lb/> Hepatitis B virus capsid in complex with SR protein<lb/> kinase 2 were deposited in the Electron Microscopy<lb/> Data Bank (EMDB) under the access codes EMD-<lb/>37631 (full map, apo form of Hepatitis B virus<lb/> capsid), EMD-38062 (full map, Hepatitis B virus<lb/> capsid in complex with SR protein kinase 2) and<lb/> EMD-37634 (local map, SR protein kinase 2 bound<lb/> at 2-fold vertex of Hepatitis B virus capsid).<lb/></note>
 			
-	<div type="abstract">chronic liver diseases, ranging from cirrhosis to liver cancer and liver failure. Like many<lb/> viruses, HBV does not possess adequate endogenous factors for self-replication. Thus, it<lb/> relies on host metabolism and machinery. Members of the SRPK family have been identi-<lb/>fied to the host cellular kinases that interact with HBV core protein during viral core<lb/> assembly. Here we report the mechanism of how SRPK2 interacts with and phosphory-<lb/>lates HBV core protein. We also highlight the role of SRPK2 in the phosphorylation of<lb/> HBV core protein in cells. Our research laid the foundation to targeting this host cellular<lb/> kinase and developing new means to combat HBV infection.<lb/></div>
+	
 
 	Funding:
 	<note type="funding">This work was supported by the General<lb/> Research Fund (GRF) grants, 17126017 and<lb/> 14177317, from the Hong Kong Research Grants<lb/> Council (https://www.ugc.edu.hk/eng/rgc/) to C.P.<lb/> C. and J.C.K.N., respectively; the Collaborative<lb/> Research Fund (CRF) grants C4012-16E and<lb/> C4033-19E from the Hong Kong Research Grants<lb/> Council to J.C.K.N.; the Chinese University of Hong<lb/> Kong Faculty of Science direct grant scheme (grant<lb/> number 4053259), the Research Committee Group<lb/> Research Scheme, and the State Key Laboratory of<lb/> Agrobiotechnology ITC Fund to J.C.K.N. The<lb/> funders had no role in study design, data collection<lb/> and analysis, decision to publish, or preparation of<lb/> the manuscript.<lb/></note>

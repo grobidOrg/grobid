@@ -104,8 +104,7 @@
 	*
 	<email>er.abhilash.pati@gmail.com</email>
 
-	Abstract<lb/>
-	<div type="abstract">Breast cancer is a major health concern for women everywhere and a major killer of women.<lb/> Malignant tumors may be distinguished from benign ones, allowing for early diagnosis of<lb/> this disease. Therefore, doctors need an accurate method of diagnosing tumors as either<lb/> malignant or benign. Even if therapy begins immediately after diagnosis, some cancer cells<lb/> may persist in the body, increasing the risk of a recurrence. Metastasis and recurrence are<lb/> the leading causes of death from breast cancer. Therefore, detecting a return of breast can-<lb/>cer early has become a pressing medical issue. Evaluating and contrasting various Machine<lb/> Learning (ML) techniques for breast cancer and recurrence prediction is crucial to choosing<lb/> the best successful method. Inaccurate forecasts are common when using datasets with a<lb/> large number of attributes. This study addresses the need for effective feature selection and<lb/> optimization methods by introducing Recursive Feature Elimination (RFE) and Grey Wolf<lb/> Optimizer (GWO), in response to the limitations observed in existing approaches. In this<lb/> research, the performance evaluation of methods is enhanced by employing the RFE and<lb/> GWO, considering the Wisconsin Diagnostic Breast Cancer (WDBC) and Wisconsin Prog-<lb/>nostic Breast Cancer (WPBC) datasets taken from the UCI-ML repository. Various prepro-<lb/>cessing techniques are applied to raw data, including imputation, scaling, and others. In the<lb/> second step, relevant feature correlations are used with RFE to narrow down candidate dis-<lb/>criminative features. The GWO chooses the best possible combination of attributes for the<lb/> most accurate result in the next step. We use seven ML classifiers in both datasets to make<lb/> a binary decision. On the WDBC and WPBC datasets, several experiments have shown<lb/> accuracies of 98.25% and 93.27%, precisions of 98.13% and 95.56%, sensitivities of<lb/> 99.06% and 96.63%, specificities of 96.92% and 73.33%, F1-scores of 98.59% and 96.09%<lb/> and AUCs of 0.982 and 0.936, respectively. The hybrid approach&apos;s superior feature<lb/></div>
+	
 
 	<title level="j">PLOS ONE<lb/></title>
 	<reference>PLOS ONE | https://doi.org/10.1371/journal.pone.0304768 August 1, 2024<lb/></reference>
@@ -142,7 +141,7 @@
 	Funding:
 	<note type="funding">HQ thanks the USA NSF award 1663105,<lb/> 1761839 and 2200138, a catalyst award from the<lb/></note>
 			
-	<div type="abstract">selection improved the accuracy of breast cancer performance indicators and recurrence<lb/> classification.<lb/></div>
+	
 			
 	<note type="funding">USA National Academy of Medicine, AI Tennessee<lb/> Initiative, and the support at the University of<lb/> Tennessee at Chattanooga.<lb/></note>
 

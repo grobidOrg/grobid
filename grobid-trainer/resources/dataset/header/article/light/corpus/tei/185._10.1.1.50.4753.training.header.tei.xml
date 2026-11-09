@@ -24,8 +24,7 @@
 
 	<email>durfee@caen.engin.umich.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">We describe a exible experimental testbed, called MICE, for distributed arti cial intelligence<lb/> research. We argue that the adoption of MICE (or some other standard testbed) by the distributed<lb/> arti cial intelligence community can draw together the community and permit a much greater level<lb/> of exchange of ideas, formalisms, and techniques. MICE allows an experimenter to specify the<lb/> constraints and characteristics of an environment in which agents are simulated to act and interact,<lb/> and does not assume any particular implementation of an agent&apos;s reasoning architecture. MICE<lb/> therefore provides a platform for investigating and evaluating alternative reasoning architectures<lb/> and coordination mechanisms in many di erent simulated environments. We outline the design<lb/> of MICE and illustrate its exibility by describing simulated environments that model the coor-<lb/>dination issues in domains such as predators chasing prey, predators attacking each other, agents<lb/> ghting a re, and diverse robots that are working together. In addition, we note that MICE&apos;s<lb/> ability to simulate multi-agent environments makes it an ideal platform for studying reasoning in<lb/> dynamic worlds; we can associate functionality to arbitrary objects in order to trigger changes in<lb/> the environment. We conclude by discussing the status of MICE and how we are using MICE in<lb/> our current research.<lb/></div>
+	
 
 	<note type="funding">0 This research was sponsored, in part, by the University of Michigan under a Rackham Faculty Research<lb/> Grant, and by a Bell Northern Research Postgraduate Award.</note>
 		</front>

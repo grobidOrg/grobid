@@ -22,8 +22,7 @@
 
 	<date>July 23, 2007</date>
 
-	Abstract<lb/>
-	<div type="abstract">In this paper, we develop algorithmic datalog-<lb/>based foundations for the incremental processing<lb/> of tree-pattern queries over active documents, i.e.<lb/> document with incoming streams of data. We de-<lb/>ne query satisability for such documents based<lb/> on a logic with 3-values: true, false forever,<lb/> and false for now. Also, given an active docu-<lb/>ment and a query, part of the document (and in<lb/> particular, some incoming streams) may become<lb/> irrelevant for the query of interest. We introduce<lb/> an incremental algorithm for detecting such use-<lb/>less data and streams, essential for implementing<lb/> garbage collection. We also provide complexity<lb/> analysis for the problems we study.<lb/></div>
+	
 
 	Keywords
 	<keyword>XML, active XML, active docu-<lb/>ment, incremental evaluation, view maintenance,<lb/> tree-pattern query, datalog, monitoring, stream processing<lb/></keyword>

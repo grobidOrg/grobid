@@ -29,8 +29,7 @@
 
 	<email>{shen.li, bingpeng.ma, hong.chang, shiguang.shan, xilin.chen}@vipl.ict.ac.cn</email>
 
-	ABSTRACT<lb/>
-	<div type="abstract">This paper proposes a novel model, named Continuity-<lb/>Discrimination Convolutional Neural Network (CD-CNN),<lb/> for visual object tracking. Existing state-of-the-art tracking<lb/> methods do not deal with temporal relationship in video se-<lb/>quences, which leads to imperfect feature representations. To<lb/> address this problem, CD-CNN models temporal appearance<lb/> continuity based on the idea of temporal slowness. Mathe-<lb/>matically, we prove that, by introducing temporal appearance<lb/> continuity into tracking, the upper bound of target appearance<lb/> representation error can be sufficiently small with high proba-<lb/>bility. Further, in order to alleviate inaccurate target localiza-<lb/>tion and drifting, we propose a novel notion, object-centroid,<lb/> to characterize not only objectness but also the relative posi-<lb/>tion of the target within a given patch. Both temporal appear-<lb/>ance continuity and object-centroid are jointly learned during<lb/> offline training and then transferred for online tracking. We<lb/> evaluate our tracker through extensive experiments on two<lb/> challenging benchmarks and show its competitive tracking<lb/> performance compared with state-of-the-art trackers.<lb/></div>
+	
 
 	Index Terms-
 	<keyword>Visual object tracking, temporal appear-<lb/>ance continuity, object-centroid discrimination<lb/></keyword>

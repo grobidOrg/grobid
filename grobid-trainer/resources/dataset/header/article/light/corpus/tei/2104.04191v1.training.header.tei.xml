@@ -23,8 +23,7 @@
 	<affiliation>Google Research, Brain Team</affiliation>
 	</byline>
 
-	ABSTRACT<lb/>
-	<div type="abstract">Before deploying machine learning models it is critical to assess their robustness.<lb/> In the context of deep neural networks for image understanding, changing the ob-<lb/>ject location, rotation and size may affect the predictions in non-trivial ways. In<lb/> this work we perform a fine-grained analysis of robustness with respect to these<lb/> factors of variation using SI-SCORE, a synthetic dataset. In particular, we investi-<lb/>gate ResNets, Vision Transformers and CLIP, and identify interesting qualitative<lb/> differences between these.<lb/></div>
+	
 
 	* Please send correspondence to
 	<email>j.yung357@gmail.com</email>

@@ -25,8 +25,7 @@
 
 	<email>fsalehi,zhzhang,kurose,towsleyg@cs.umass.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">VBR compressed video is known to exhibit significant, multiple-time-scale bit rate variabil-<lb/>ity. In this paper, we consider the transmission of stored video from a server to a client across a<lb/> high speed network, and explore how the client buffer space can be used most effectively toward<lb/> reducing the variability of the transmitted bit rate.<lb/> We present two basic results. First, we show how to achieve the greatest possible reduction in<lb/> rate variability when sending stored video to a client with given buffer size. We formally establish<lb/> the optimality of our optimal smoothing approach, and illustrate its performance over a set of<lb/> long MPEG-1 encoded video traces. Second, we evaluate the impact of optimal smoothing on the<lb/> network resources needed for video transport, under two network service models: Deterministic<lb/> Guaranteed service [1, 11] and Renegotiated CBR (RCBR) service [9, 8]. Under both models, we<lb/> find the impact of optimal smoothing to be dramatic.<lb/></div>
+	
 
 	An earlier version of this paper appeared at the 1996 ACM SIGMETRICS conference.<lb/> 
 

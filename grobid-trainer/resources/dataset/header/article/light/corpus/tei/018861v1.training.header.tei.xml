@@ -24,8 +24,7 @@
 
 	<address>1 Shields Avenue, Davis CA, 95616</address>
 
-	Abstract<lb/>
-	<div type="abstract">Inferring species interactions from observational data is one of the most controversial tasks in<lb/> community ecology. One difficulty is that a single pairwise interaction can ripple through an<lb/> ecological network and produce surprising indirect consequences. For example, two<lb/> competing species would ordinarily correlate negatively in space, but this effect can be<lb/> reversed in the presence of a third species that is capable of outcompeting both of them<lb/> when it is present. Here, I apply models from statistical physics, called Markov networks or<lb/> Markov random fields, that can predict the direct and indirect consequences of any possible<lb/> species interaction matrix. Interactions in these models can be estimated from observational<lb/> data via maximum likelihood. Using simulated landscapes with known pairwise interaction<lb/> strengths, I evaluated Markov networks and several existing approaches. The Markov<lb/> networks consistently outperformed other methods, correctly isolating direct interactions<lb/> between species pairs even when indirect interactions or abiotic environmental effects largely<lb/> overpowered them. A linear approximation, based on partial covariances, also performed well<lb/> as long as the number of sampled locations exceeded the number of species in the data.<lb/> Indirect effects reliably caused a common null modeling approach to produce incorrect<lb/> inferences, however.<lb/></div>
+	
 
 	Key words:
 	<keyword>Ecological interactions; Occurrence data; Species associations; Markov network;<lb/> Markov random field; Ising model; Biogeography; Presence-absence matrix; Null model</keyword>

@@ -42,8 +42,7 @@
 	<affiliation>OpenAI</affiliation>
 	</byline>
 
-	ABSTRACT<lb/>
-	<div type="abstract">We introduce an exploration bonus for deep reinforcement learning methods that<lb/> is easy to implement and adds minimal overhead to the computation performed.<lb/> The bonus is the error of a neural network predicting features of the observations<lb/> given by a fixed randomly initialized neural network. We also introduce a method<lb/> to flexibly combine intrinsic and extrinsic rewards. We find that the random<lb/> network distillation (RND) bonus combined with this increased flexibility enables<lb/> significant progress on several hard exploration Atari games. In particular we<lb/> establish state of the art performance on Montezuma&apos;s Revenge, a game famously<lb/> difficult for deep reinforcement learning methods. To the best of our knowledge,<lb/> this is the first method that achieves better than average human performance on this<lb/> game without using demonstrations or having access to the underlying state of the<lb/> game, and occasionally completes the first level.<lb/></div>
+	
 
 	* Alphabetical ordering; the first two authors contributed equally.<lb/>
 

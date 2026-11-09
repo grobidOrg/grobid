@@ -138,8 +138,7 @@
 
 	<email>guyeon@seas.harvard.edu</email>
 
-	ABSTRACT<lb/>
-	<div type="abstract">Neural personalized recommendation models are used across a wide<lb/> variety of datacenter applications including search, social media,<lb/> and entertainment. State-of-the-art models comprise large embed-<lb/>ding tables that have billions of parameters requiring large memory<lb/> capacities. Unfortunately, large and fast DRAM-based memories<lb/> levy high infrastructure costs. Conventional SSD-based storage<lb/> solutions offer an order of magnitude larger capacity, but have<lb/> worse read latency and bandwidth, degrading inference perfor-<lb/>mance. RecSSD is a near data processing based SSD memory sys-<lb/>tem customized for neural recommendation inference that reduces<lb/> end-to-end model inference latency by 2× compared to using COTS<lb/> SSDs across eight industry-representative models.<lb/></div>
+	
 
 	<keyword>CCS CONCEPTS<lb/> • Hardware → External storage; • Computer systems organi-<lb/>zation → Neural networks.</keyword>
 

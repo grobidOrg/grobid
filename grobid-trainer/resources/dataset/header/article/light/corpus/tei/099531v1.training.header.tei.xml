@@ -35,8 +35,7 @@
 
 	<address>63000 Clermont-Ferrand, France<lb/></address>
 
-	ABSTRACT:<lb/>
-	<div type="abstract">Plant resistance to drought has long been thought to be associated with the ability to maintain<lb/> transpiration and photosynthesis longer during drought, through the opening of stomata. This premise<lb/> is at the root of most current framework used to assess drought impacts on land plants in vegetation<lb/> models. We examined this premise by coupling a meta-analysis of functional traits of stomatal response<lb/> to drought (i.e. the water potential causing stomatal closure, ψclose) and embolism resistance (the water<lb/> potential at the onset of embolism formation, Ψ12), with simulations from a soil-plant hydraulic model.<lb/> We found that ψclose and Ψ12 were equal (isometric) only for a restricted number of species, but as Ψ12<lb/> decreases, the departure from isometry increases, with stomatal closure occurring far before embolism<lb/> occurs. For the most drought resistant species (Ψ12&lt;-4.2 MPa), Ψclose was remarkably independent of<lb/> embolism resistance and remained above -4.5 MPa, suggesting the existence of a restrictive boundary<lb/> by which stomata closure must occur. This pattern was supported by model simulations. Indeed,<lb/> coordinated decrease in both ψclose and ψ12 leads to unsuspected accelerated death under drought for<lb/> embolism resistant species, in contradiction with observations from drought mortality experiments.<lb/> Overall our results highlight that most species have similarity in stomatal behavior, and are highly<lb/> conservative in terms of their water use during drought. The modelling framework presented here<lb/> provides a baseline to simulate the temporal dynamic leading to mortality under drought by accounting<lb/> for multiple, measurable traits.</div>
+	
 
 		</front>
 	</text>

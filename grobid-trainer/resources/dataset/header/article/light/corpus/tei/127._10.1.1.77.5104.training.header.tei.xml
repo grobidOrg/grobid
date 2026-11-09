@@ -28,8 +28,7 @@
 
 	<date>July 1994<lb/></date>
 
-	Abstract:
-	<div type="abstract">This paper presents an empirical study of several policies for managing the effect<lb/> of delay jitter on the playout of audio and video in computer-based conferences. The problem<lb/> addressed is that of managing the fundamental tradeoff between display with low latency and<lb/> display with few gaps. We describe a particular policy called queue monitoring which<lb/> observes delay jitter over time and dynamically adjusts display latency in order to support<lb/> low-latency conferences with an acceptable gap rate. Queue monitoring is evaluated by<lb/> comparing it with two policies from the literature in a study based on measurements from a<lb/> computer-based conferencing system. Our results show that queue monitoring performs as<lb/> well or better than the other policies over the range of observed network loads. More<lb/> importantly, we show that queue monitoring performs better on those network loads for<lb/> which the other policies exhibit poor performance.<lb/></div>
+	
 
 	<note type="funding">* This work supported by the National Science Foundation (grant numbers CCR-9110938 and ICI-9015443),<lb/> and by the IBM and Intel Corporations.<lb/> </note>
 

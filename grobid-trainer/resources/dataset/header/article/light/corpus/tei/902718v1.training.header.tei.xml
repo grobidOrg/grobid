@@ -55,8 +55,7 @@
 	E-mail:
 	<email>akobayas@mail.doshisha.ac.jp</email>
 
-	Abstract<lb/>
-	<div type="abstract">Proteasomes are protease complexes essential for cellular homeostasis, and their activity is crucial<lb/> for cancer cell growth. However, the mechanism of how proteasome activity is maintained in<lb/> cancer cells has remained unclear. The CNC family transcription factor NRF1 induces the<lb/> expression of almost all proteasome-related genes under proteasome inhibition. NRF1 and its<lb/> phylogenetically closest homolog NRF3 are both highly expressed in several types of cancers,<lb/> such as colorectal cancer. Herein, we demonstrate that NRF1 and NRF3 complementarily<lb/> maintain basal proteasome activity in cancer cells. A double knockdown of NRF1 and NRF3<lb/> impaired the basal proteasome activity in cancer cells and the cancer cell resistance to a<lb/> proteasome inhibitor anticancer drug bortezomib by significantly reducing basal expression of<lb/> seven proteasome-related genes, including PSMB3, PSMB7, PSMC2, PSMD3, PSMG2, PSMG3,<lb/> and POMP. Interestingly, the molecular basis behind these cellular consequences was that NRF3<lb/> repressed NRF1 translation by the gene induction of translational regulator CPEB3, which binds<lb/> to NRF1-3′UTR and decreases polysome formation on NRF1 mRNA. Consistent results were<lb/> obtained from clinical analysis, wherein patients with cancer having higher CPEB3/NRF3-<lb/>expressing tumors exhibit poor prognosis. These results provide the novel regulatory mechanism<lb/> of basal proteasome activity in cancer cells through an NRF3-CPEB3-NRF1 translational<lb/> repression axis.<lb/></div>
+	
 
 	* *<lb/> Emp<lb/> Flag-CPEB3<lb/> siCont siNRF3
 		</front>

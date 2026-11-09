@@ -28,8 +28,7 @@
 
 	<date>29 June 1998</date>
 
-	Abstract<lb/>
-	<div type="abstract">Linear equality and inequality constraints arise naturally in specifying many aspects of user<lb/> interfaces, such as requiring that one window be to the left of another, requiring that a pane<lb/> occupy the leftmost 1/3 of a window, or preferring that an object be contained within a rect-<lb/>angle if possible. Current constraint solvers designed for UI applications cannot efficiently<lb/> handle simultaneous linear equations and inequalities. This is a major limitation. We describe<lb/> Cassowary-an incremental algorithm based on the dual simplex method that can solve such<lb/> systems of constraints efficiently.<lb/> This informal technical report describes the latest version of the Cassowary algorithm. It is<lb/> derived from the paper &quot;Solving Linear Arithmetic Constraints for User Interface Applications&quot;<lb/> by Alan Borning, Kim Marriott, Peter Stuckey, and Yi Xiao [7], published in the UIST&apos;97<lb/> Proceedings. The UIST paper also contains a description of QOCA, a closely related solver<lb/> that finds least-squares solutions to linear constraints. This technical report, which is intended<lb/> to be self-contained, includes material on Cassowary from the UIST paper, plus a description<lb/> of the Java, C++, and Smalltalk implementations and their interfaces, along with additional<lb/> details, corrections, and clarifications.<lb/> An earlier technical report also discussed QOCA and the similarities between Cassowary and<lb/> that algorithm [6].</div>
+	
 
 		</front>
 	</text>

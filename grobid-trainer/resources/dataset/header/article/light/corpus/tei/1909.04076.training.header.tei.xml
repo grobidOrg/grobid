@@ -94,8 +94,7 @@
 
 	<email>{lianhuiq,antoineb,ahai,eaclark7,yejin}@cs.washington.edu<lb/></email> <email>chandrab@allenai.org</email>
 
-	Abstract<lb/>
-	<div type="abstract">Counterfactual reasoning requires predicting<lb/> how alternative events, contrary to what<lb/> actually happened, might have resulted in<lb/> different outcomes. Despite being considered<lb/> a necessary component of AI-complete<lb/> systems, few resources have been developed<lb/> for evaluating counterfactual reasoning in<lb/> narratives.<lb/> In this paper, we propose Counterfactual<lb/> Story Rewriting: given an original story and<lb/> an intervening counterfactual event, the task<lb/> is to minimally revise the story to make<lb/> it compatible with the given counterfactual<lb/> event. Solving this task will require deep<lb/> understanding of causal narrative chains and<lb/> counterfactual invariance, and integration<lb/> of such story reasoning capabilities into<lb/> conditional language generation models.<lb/> We present TIMETRAVEL, a new dataset of<lb/> 29,849 counterfactual rewritings, each with<lb/> the original story, a counterfactual event,<lb/> and human-generated revision of the original<lb/> story compatible with the counterfactual<lb/> event.<lb/> Additionally, we include 80,115<lb/> counterfactual "branches" without a rewritten<lb/> storyline to support future work on semi-<lb/>or un-supervised approaches to counterfactual<lb/> story rewriting.<lb/> Finally, we evaluate the counterfactual<lb/> rewriting capacities of several competitive<lb/> baselines based on pretrained language<lb/> models, and assess whether common overlap<lb/> and model-based automatic metrics for text<lb/> generation correlate well with human scores<lb/> for counterfactual rewriting.</div>
+	
 
 		</front>
 	</text>

@@ -32,8 +32,7 @@
 	
 	<keyword>PACS. 05.45+b -Theory and models of chaotic systems.<lb/> PACS. 31.15Ar -Ab initio calculations.<lb/> PACS. 32.80Fb -Photoionization of atoms and ions.<lb/></keyword>
 
-	Abstract. -
-	<div type="abstract">We calculate the photo-ionization cross-section from the ground state of the<lb/> helium atom, using the complex rotation method and diagonalization of sparse matrices. This<lb/> produces directly the positions and widths of the doubly excited 1 P o resonances together with<lb/> the photo-ionization cross-section. Our calculations up to the N = 9 threshold are in perfect<lb/> agreement with recent experimental data and show the transition from a regular structure at<lb/> low energy to a chaotic one at high energy, where various resonances strongly overlap.</div>
+	
 
 		</front>
 	</text>

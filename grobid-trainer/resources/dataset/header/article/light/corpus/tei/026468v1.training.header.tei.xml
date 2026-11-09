@@ -105,8 +105,7 @@
 	(
 	<email>jzook@nist.gov</email>
 
-	) Abstract<lb/>
-	<div type="abstract">The Genome in a Bottle Consortium hosted by the National Institute of Standards and Technology,<lb/> (NIST), is creating reference materials and data for human genome sequencing, as well as methods<lb/> for genome comparison and benchmarking. Here, we describe a large, diverse set of sequencing<lb/> data for seven human genomes; five are current or candidate NIST Reference Materials. The pilot<lb/> genome, NA12878, has been released as NIST RM 8398. We also describe data from two Personal<lb/> Genome Project trios, one of Ashkenazim Jewish ancestry and one of Chinese ancestry. The data<lb/> described come from 11 technologies: BioNano Genomics, Complete Genomics paired-end and LFR,<lb/> Ion Proton exome, Oxford Nanopore, Pacific Biosciences, SOLiD, 10X Genomics GemCode TM WGS,<lb/> and Illumina paired-end, mate-pair, and synthetic long reads. Cell lines, DNA, and data from these<lb/> individuals are publicly available and highly characterized. Therefore, we expect these data to be<lb/> useful for revealing novel information about the human genome and improving sequencing<lb/> technologies, SNP, indel, and structural variant calling, and de novo assembly.</div>
+	) 
 
 		</front>
 	</text>

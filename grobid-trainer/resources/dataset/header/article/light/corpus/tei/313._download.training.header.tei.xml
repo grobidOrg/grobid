@@ -19,8 +19,7 @@
 
 	<date>July 1, 1998</date>
 
-	Abstract<lb/>
-	<div type="abstract">The straight skeleton of a polygon is a variant of the medial axis, introduced by<lb/> Aichholzer et al., de ned by a shrinking process in which each edge of the polygon<lb/> moves inward at a xed rate. We construct the straight skeleton of an n-gon with r<lb/> re ex vertices in time O(n 1+&quot; + n 8=11+&quot; r 9=11+&quot; ), for any xed &quot; &gt; 0, improving the<lb/> previous best upper bound of O(nr log n). Our algorithm simulates the sequence of<lb/> collisions between edges and vertices during the shrinking process, using a technique of<lb/> Eppstein for maintaining extrema of binary functions to reduce the problem of nding<lb/> successive interactions to two dynamic range query problems: (1) maintain a changing<lb/> set of triangles in IR 3 and answer queries asking which triangle would be rst hit by<lb/> a query ray, and (2) maintain a changing set of rays in IR 3 and answer queries asking<lb/> for the lowest intersection of any ray with a query triangle. We also exploit a novel<lb/> characterization of the straight skeleton as a lower envelope of triangles in IR 3 . The same<lb/> time bounds apply to constructing non-self-intersecting o set curves with mitered or<lb/> beveled corners, and similar methods extend to other problems of simulating collisions<lb/> and other pairwise interactions among sets of moving objects.<lb/></div>
+	
 
 	An extended abstract of this paper was presented at the 
 	<meeting>14th Annual ACM Symposium on Computational<lb/> Geometry</meeting>

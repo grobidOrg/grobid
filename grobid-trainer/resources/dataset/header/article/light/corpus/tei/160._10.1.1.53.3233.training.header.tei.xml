@@ -26,8 +26,7 @@
 
 	<email>cherkauer@cs.wisc.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper presents the Plannett system, which<lb/> combines arti cial neural networks to achieve expert-<lb/>level accuracy on the di cult scienti c task of recog-<lb/>nizing volcanos in radar images of the surface of the<lb/> planet Venus. Plannett uses ANNs that vary along<lb/> two dimensions: the set of input features used to train<lb/> and the number of hidden units. The ANNs are com-<lb/>bined simply by averaging their output activations.<lb/> When Plannett is used as the classi cation module<lb/> of a three-stage image analysis system called JAR-<lb/>tool, the end-to-end accuracy (sensitivity and speci-<lb/>city) is as good as that of a human planetary geolo-<lb/>gist on a four-image test suite. JARtool-Plannett<lb/> also achieves the best algorithmic accuracy on these<lb/> images to date.</div>
+	
 
 		</front>
 	</text>

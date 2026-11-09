@@ -59,8 +59,7 @@
 
 	Work done<lb/> in part while visiting the University of Kentucky and the University of Rochester. 
 
-	Abstract<lb/>
-	<div type="abstract">We study the question of whether every P set has an easy (i.e., polynomial-<lb/>time computable) census function. We characterize this question in terms of<lb/> unlikely collapses of language and function classes such as #P 1 FP, where<lb/> #P 1 is the class of functions that count the witnesses for tally NP sets. We<lb/> prove that every #P PH 1 function can be computed in FP #P #P 1<lb/> 1 . Consequently,<lb/> every P set has an easy census function if and only if every set in the polynomial<lb/> hierarchy does. We show that the assumption #P 1 FP implies P = BPP and<lb/> PH MOD k P for each k 2, which provides further evidence that not all sets<lb/> in P have an easy census function. We also relate a set&apos;s property of having an<lb/> easy census function to other well-studied properties of sets, such as rankability<lb/> and scalability (the closure of the rankable sets under P-isomorphisms). Finally,<lb/> we prove that it is no more likely that the census function of any set in P can<lb/> be approximated (more precisely, can be n -enumerated in time n for xed<lb/> and ) than that it can be precisely computed in polynomial time.</div>
+	
 
 		</front>
 	</text>

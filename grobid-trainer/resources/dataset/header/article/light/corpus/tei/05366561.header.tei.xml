@@ -29,8 +29,7 @@
 
 	<email>xdhm@263.net<lb/></email>
 
-	Abstract-
-	<div type="abstract">An autonomous navigation method of robot in<lb/> dynamic unknown environment is presented. Human's<lb/> assistance is used instead of particular description of map.<lb/> There are two phases in this method. In phase of human's<lb/> guiding, a rough map of local environment is obtained by<lb/> sensor fusion. According to polar map, robot moves in<lb/> dynamic environment in the phase of autonomous<lb/> navigation. Emergent obstacles are disposed of in this<lb/> method, and optimization of path is also attained.<lb/> Experiment results show the effectiveness of this method.<lb/></div>
+	
 		
 	KeyWords-
 	<keywords>autonomous robot ， sensor fusion ， obstacle<lb/> avoiding<lb/></keywords>

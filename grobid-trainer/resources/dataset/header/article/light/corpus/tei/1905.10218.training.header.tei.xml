@@ -83,8 +83,7 @@
 
 	<note type="submission">Received: date / Accepted: date<lb/></note>
 
-	Abstract
-	<div type="abstract">Quantification of kidney function in Dynamic<lb/> Contrast Enhanced Magnetic Resonance imaging (DCE-<lb/>MRI) requires careful segmentation of the renal region<lb/> of interest (ROI). Traditionally, human experts are re-<lb/>quired to manually delineate the kidney ROI across<lb/> multiple images in the dynamic sequence. This approach<lb/> is costly, time-consuming and labour intensive, and there-<lb/>fore acts to limit patient throughout and acts as one of<lb/> the factors limiting the wider adoption of DCR-MRI in<lb/> clinical practice.<lb/> Therefore, to address this issue, we present the first<lb/> use of Dynamic Mode Decomposition (DMD) as a the<lb/> basis for automatic segmentation of a dynamic sequence,<lb/> in this case, kidney ROIs in DCE-MRI. Using DMD<lb/> coupled combined with thresholding and connected com-<lb/>ponent analysis is first validated on synthetically gener-<lb/>ated data with known ground-truth, and then applied<lb/> to ten healthy volunteers DCE-MRI datasets.<lb/></div>
+	
 
 	<note type="funding">Santosh Tirunagari and Norman Poh have benefited from the<lb/> Medical Research Council (MRC) funded project "Modelling<lb/> the Progression of Chronic Kidney Disease" under the grant<lb/> number R/M023281/1.<lb/></note>
 
@@ -145,7 +144,7 @@
 	E-mail:
 	<email>{s.tirunagari, n.poh, k.wells, m.bober}@surrey.ac.uk<lb/></email>
 
-	<div type="abstract">We find that the segmentation result obtained from<lb/> our proposed DMD framework is comparable to that<lb/> of expert observers and very significantly better than<lb/> that of an a-priori bounding box segmentation. Our re-<lb/>sult gives a mean Jaccard coefficient of 0.87, compared<lb/> to mean scores of 0.85, 0.88 and 0.87 produced from<lb/> three independent manual annotations. This represents<lb/> the first use of DMD as a robust automatic data driven<lb/> segmentation approach without requiring any human<lb/> intervention. This is a viable, efficient alternative ap-<lb/>proach to current manual methods of isolation of kidney<lb/> function in DCE-MRI.<lb/></div>
+	
 
 	Keywords
 	<keyword>DMD • W-DMD • R-DMD • WR-DMD •<lb/> DCE-MRI • Movement correction<lb/></keyword>

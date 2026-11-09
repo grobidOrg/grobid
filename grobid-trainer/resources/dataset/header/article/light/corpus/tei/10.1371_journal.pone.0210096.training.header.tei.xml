@@ -96,8 +96,7 @@
 	*
 	<email>akroch@ohtn.on.ca</email>
 
-	Abstract
-	<div type="abstract">Background<lb/> The HIV cascade is an important framework for assessing systems of care, but population-<lb/>based assessment is lacking for most jurisdictions worldwide. We measured cascade indi-<lb/>cators over time in a population-based cohort of diagnosed people living with HIV (PLWH) in<lb/> Ontario, Canada. Methods<lb/> We created a retrospective cohort of diagnosed PLWH using a centralized laboratory data-<lb/>base with HIV diagnostic and viral load (VL) test records linked at the individual-level. Indi-<lb/>viduals enter the cohort with record of a nominal HIV-positive diagnostic test or VL test, and<lb/> remain unless administratively lost to follow-up (LTFU, &gt;2 consecutive years with no VL test<lb/> and no VL test in later years). We calculated the annual percent of diagnosed PLWH (cohort<lb/> individuals not LTFU) between 2000 and 2015 who were in care (�1 VL test), on ART (as<lb/> documented on VL test requisition) or virally suppressed (&lt;200 copies/ml). We also calcu-<lb/>lated time from diagnosis to linkage to care and viral suppression among individuals newly<lb/> diagnosed with HIV. Analyses were stratified by sex and age. Upper/lower bounds were cal-<lb/>culated using alternative indicator definitions.<lb/></div>
+	
 
 	<reference>PLOS ONE | https://doi.org/10.1371/journal.pone.0210096 January 4, 2019<lb/></reference>
 
@@ -138,7 +137,7 @@
 	Competing interests:
     <note type="conflict">The authors have declared<lb/> that no competing interests exist.</note>
 
-	<div type="abstract">Results<lb/> The number of diagnosed PLWH increased from 8,859 (8,859-11,389) in 2000 to 16,110<lb/> (16,110-17,423) in 2015. Over this 16-year period, the percent of diagnosed PLWH who<lb/> were: in care increased from 81% (63-81%) to 87% (81-87%), on ART increased from 55%<lb/> (34-60%) to 81% (70-82%) and virally suppressed increased from 41% (23-46%) to 80%<lb/> (67-81%). Between 2000 and 2014, the percent of newly diagnosed individuals who linked<lb/> to care within three months of diagnosis or achieved viral suppression within six months of<lb/> diagnosis increased from 67% to 82% and from 22% to 42%, respectively. Estimates were<lb/> generally lower for females and younger individuals. Discussion<lb/> HIV cascade indicators among diagnosed PLWH in Ontario improved between 2000 and<lb/> 2015, but gaps still remain-particularly for younger individuals.</div>
+	
 
 		</front>
 	</text>

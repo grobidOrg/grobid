@@ -20,8 +20,7 @@
 	<docAuthor>Padhraic Smyth, David Heckerman, and Michael Jordan</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">Graphical techniques for modeling the dependencies of random variables have been explored in a variety<lb/> of di erent areas including statistics, statistical physics, arti cial intelligence, speech recognition, image<lb/> processing, and genetics. Formalisms for manipulating these models have been developed relatively<lb/> independently in these research c o m m unities. In this paper we explore hidden Markov models (HMMs)<lb/> and related structures within the general framework of probabilistic independence networks (PINs). The<lb/> paper contains a self-contained review of the basic principles of PINs. It is shown that the well-known<lb/> forward-backward (F-B) and Viterbi algorithms for HMMs are special cases of more general inference<lb/> algorithms for arbitrary PINs. Furthermore, the existence of inference and estimation algorithms for<lb/> more general graphical models provides a set of analysis tools for HMM practitioners who wish to explore<lb/> a richer class of HMM structures. Examples of relatively complex models to handle sensor fusion and<lb/> coarticulation in speech recognition are introduced and treated within the graphical model framework<lb/> to illustrate the advantages of the general approach.<lb/></div>
+	
 
 	<note type="copyright">Copyright c Massachusetts Institute of Technology, 1996<lb/></note>
 

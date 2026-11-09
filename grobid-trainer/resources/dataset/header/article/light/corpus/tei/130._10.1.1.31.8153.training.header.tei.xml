@@ -33,8 +33,7 @@
 
 	<email>antal@cs.unimaas.nl</email>
 
-	Abstract<lb/>
-	<div type="abstract">The relation between the orthography and the phonology of a language has<lb/> traditionally been modelled by hand{crafted rule sets. Machine-learning (ML)<lb/> approaches o er a means to gather this knowledge automatically. Problems<lb/> arise when the training material is sparse. Generalising from sparse data<lb/> is a well-known problem for many ML algorithms. We present experiments<lb/> in which connectionist, instance{based, and decision{tree learning algorithms<lb/> are applied to a small corpus of Scottish Gaelic. instance-based learning in the<lb/> ib1-ig algorithm yields the best generalisation performance, and that most<lb/> algorithms tested perform tolerably well. Given the availability of a lexicon,<lb/> even if it is sparse, ML is a valuable and e cient tool for automatic phonetic<lb/> transcription of written text.<lb/></div> 
+	 
 
 		</front>
 	</text>

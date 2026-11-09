@@ -30,8 +30,7 @@
 
 	<email>igor@uni-paderborn.de<lb/></email>
 
-	Abstract.
-	<div type="abstract">Evolving algebras (EAs)as defined by Yuri Gurevich con-<lb/>stitute the basis of a powerful and elegant specification and verification<lb/> method which has successfully been applied to the design and analysis of<lb/> various kinds of discrete dynamic systems. Aiming at the development<lb/> of a comprehensive EA-based specification and design environment, we<lb/> introduce the concept of an evolving algebra abstract machine (EAM ) as<lb/> a platform for the systematic development of EA tools; for instance, as<lb/> required for machine based analysis and execution of EA specifications.<lb/> We give a formal definition of the EAM ground model in terms of a<lb/> universal evolving algebra, where we validate the correctness of the rela-<lb/>tion between evolving algebras (their theoretical foundations) and their<lb/> EAM representation and interpretation. Our approach covers sequential<lb/> as well as distributed evolving algebras.</div>
+	
 
 		</front>
 	</text>

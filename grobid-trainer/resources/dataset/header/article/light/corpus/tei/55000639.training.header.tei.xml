@@ -30,8 +30,7 @@
 
 	<date>April 17, 2009</date>
 
-	Abstract<lb/>
-	<div type="abstract">Passwords play a critical role in online authentication. Unfortunately, passwords suffer from<lb/> two seemingly intractable problems: password cracking and password theft. In this paper, we<lb/> propose PasswordAgent, a new password hashing mechanism that utilizes both a salt repository<lb/> and a browser plug-in to secure web logins with strong passwords. Password hashing is a tech-<lb/>nique that allows users to remember simple low-entropy passwords and have them hashed to create<lb/> high-entropy secure passwords. PasswordAgent generates strong passwords by enhancing the hash<lb/> function with a large random salt. With the support of a salt repository, it gains a much stronger<lb/> security guarantee than existing mechanisms. PasswordAgent is not vulnerable to offline attacks,<lb/> and it provides stronger protection against password theft. Moreover, PasswordAgent offers usabil-<lb/>ity advantages over existing hash-based mechanisms, while maintaining users&apos; familiar password<lb/> entry paradigm. We build a prototype of PasswordAgent and conduct usability experiments.</div>
+	
 
 		</front>
 	</text>

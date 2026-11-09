@@ -35,8 +35,7 @@
 
 	<ptr type="web">http://www.csl.sony.co.jp/person/rekimoto.html/<lb/></ptr>
 
-	Abstract.
-	<div type="abstract">Many electric appliances have recently become network reach-<lb/>able, and we would receive better services from them if we could use them<lb/> in combination. We have therefore developed a new hand-held interac-<lb/>tion device called &quot;InfoStick&quot; that serves as an &quot;information carrier&quot;<lb/> for these appliances. For example, a user can &quot;pick up&quot; TV program<lb/> information from a web browser and &quot;drop&quot; it into a VCR deck, just<lb/> like moving a physical object from one place to another. Using attached<lb/> visual markers, the InfoStick identifies information appliances or other<lb/> physical objects and gives an appropriate choice of action to the user.<lb/> This paper explains the design and implementation of the InfoStick as<lb/> well as several potential applications using this device.</div>
+	
 
 		</front>
 	</text>

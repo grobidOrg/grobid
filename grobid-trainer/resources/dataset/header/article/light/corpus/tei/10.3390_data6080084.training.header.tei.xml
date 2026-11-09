@@ -53,8 +53,7 @@
 	(M.P.)<lb/> * Correspondence:
 	<email>maartenmarx@uva.nl<lb/></email>
 
-	Abstract:
-	<div type="abstract">We study the task of recognizing named datasets in scientific articles as a Named Entity<lb/> Recognition (NER) problem. Noticing that available annotated datasets were not adequate for our<lb/> goals, we annotated 6000 sentences extracted from four major AI conferences, with roughly half<lb/> of them containing one or more named datasets. A distinguishing feature of this set is the many<lb/> sentences using enumerations, conjunctions and ellipses, resulting in long BI+ tag sequences. On all<lb/> measures, the SciBERT NER tagger performed best and most robustly. Our baseline rule based tagger<lb/> performed remarkably well and better than several state-of-the-art methods. The gold standard<lb/> dataset, with links and offsets from each sentence to the (open access available) articles together with<lb/> the annotation guidelines and all code used in the experiments, is available on GitHub.<lb/></div>
+	
 
 	Dataset:
 	<note type="availability">https://github.com/xjaeh/ner_dataset_recognition<lb/></note>

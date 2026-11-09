@@ -61,7 +61,7 @@
 	<docAuthor>Pol del Aguila Pla, Member, IEEE, Lissy Pellaco, Student Member, IEEE, Satyam Dwivedi, Member, IEEE<lb/> Peter Händel, Senior Member, IEEE, and Joakim Jaldén, Senior Member, IEEE<lb/></docAuthor>
 	</byline>
 
-	<div type="abstract">In this paper, we analyze the two-node joint clock synchronization and ranging problem. We focus on the case of nodes that<lb/> employ time-to-digital converters to determine the range between them precisely. This specific design choice leads to a sawtooth<lb/> model for the captured signal, which has not been studied before from an estimation theoretic standpoint. In the study of this model,<lb/> we recover the basic conclusion of a well-known article by Freris, Graham, and Kumar in clock synchronization. More importantly,<lb/> we discover a surprising identifiability result on the sawtooth signal model: noise improves the theoretical condition of the estimation<lb/> of the phase and offset parameters. To complete our study, we provide performance references for joint clock synchronization and<lb/> ranging using the sawtooth signal model by presenting an exhaustive simulation study on basic estimation strategies under different<lb/> realistic conditions. With our contributions in this paper, we enable further research in the estimation of sawtooth signal models<lb/> and pave the path towards their industrial use for clock synchronization and ranging.<lb/></div>
+	
 
 	Index Terms-
 	<keyword>Clock synchronization, ranging, identifiability, sawtooth model, sensor networks, round-trip time (RTT).<lb/></keyword>

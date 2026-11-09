@@ -25,8 +25,7 @@
 		email:  
 		<email>kale@cs.uiuc.edu <lb/></email>
 
-		Abstract <lb/>
-		<div type="abstract">The advent and acceptance of massively parallel <lb/>machines has made it increasingly important to have <lb/>tools to analyze the performance of programs run-<lb/>ning on these machines. Current day performance <lb/>tools suffer from two drawbacks: they are not scalable <lb/>and they lose specific information about the user pro-<lb/>gram in their attempt for generality. In this paper, <lb/>we present Projections, a scalable performance tool, <lb/>for Charm that can provide program-specifi c informa-<lb/>tion to help the users better understand the behavior <lb/>of their programs. <lb/></div>
+		
 
 	</front>
 	</text>

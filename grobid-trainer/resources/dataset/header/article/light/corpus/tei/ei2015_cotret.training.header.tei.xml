@@ -20,8 +20,7 @@
 
 	<address>Gif-sur-Yvette, F-91191 France</address>
 
-	ABSTRACT<lb/>
-	<div type="abstract">For several years, face recognition has been a hot topic in the image processing field: this technique is applied<lb/> in several domains such as CCTV, electronic devices delocking and so on. In this context, this work studies the<lb/> efficiency of a wavelet-based face recognition method in terms of subject position robustness and performance<lb/> on various systems. The use of wavelet transform has a limited impact on the position robustness of PCA-based<lb/> face recognition. This work shows, for a well-known database (Yale face database B * ), that subject position in<lb/> a 3D space can vary up to 10% of the original ROI size without decreasing recognition rates. Face recognition<lb/> is performed on approximation coefficients of the image wavelet transform: results are still satisfying after 3<lb/> levels of decomposition. Furthermore, face database size can be divided by a factor 64 (2 2K with K = 3). In<lb/> the context of ultra-embedded vision systems, memory footprint is one of the key points to be addressed; that<lb/> is the reason why compression techniques such as wavelet transform are interesting. Furthermore, it leads to<lb/> a low-complexity face detection stage compliant with limited computation resources available on such systems.<lb/> The approach described in this work is tested on three platforms from a standard x86-based computer towards<lb/> nanocomputers such as RaspberryPi and SECO boards. For K = 3 and a database with 40 faces, the execution<lb/> mean time for one frame is 0.64 ms on a x86-based computer, 9 ms on a SECO board and 26 ms on a RaspberryPi<lb/> (B model).<lb/></div>
+	
 
 	Keywords:
 	<keyword>wavelet, face recognition, eigenfaces, embedded systems, high-constrained systems<lb/></keyword>

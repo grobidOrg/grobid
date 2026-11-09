@@ -33,8 +33,7 @@
 
 	/&quot;
 
-	Abstract<lb/>
-	<div type="abstract">Several existing volume rendering algorithms operate by factor-<lb/>ing the viewing transformation into a 3D shear parallel to the data<lb/> slices, a projection to form an intermediate but distorted image,<lb/> and a 2D warp to form an undistorted final image. We extend<lb/> this class of algorithms in three ways. First, we describe a new<lb/> object-order rendering algorithm based on the factorization that is<lb/> significantly faster than published algorithms with minimal loss<lb/> of image quality. Shear-warp factorizations have the property that<lb/> rows of voxels in the volume are aligned with rows of pixels in the<lb/> intermediate image. We use this fact to construct a scanline-based<lb/> algorithm that traverses the volume and the intermediate image in<lb/> synchrony, taking advantage of the spatial coherence present in<lb/> both. We use spatial data structures based on run-length encoding<lb/> for both the volume and the intermediate image. Our implemen-<lb/>tation running on an SGI Indigo workstation renders a 2563 voxel<lb/> medical data set in one second. Our second extension is a shear-<lb/>warp factorization for perspective viewing transformations, and<lb/> we show how our rendering algorithm can support this extension.<lb/> Third, we introduce a data structure for encoding spatial coherence<lb/> in unclassified volumes (i.e. scalar fields with no precomputed<lb/> opacity). When combined with our shear-warp rendering algo-<lb/>rithm this data structure allows us to classify and render a 2563<lb/> voxel volume in three seconds. The method extends to support<lb/> mixed volumes and geometry and is parallelizable.<lb/></div>
+	
 
 	<keyword>CR Categories: 1.3.7 [Computer Graphics]: Three-Dimensional<lb/> Graphics and Realism; 1.3.3 [Computer Graphics]: Picture/Image<lb/> Generation--Display Algorithms.<lb/></keyword>
 

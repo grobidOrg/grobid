@@ -24,8 +24,7 @@
 
 	<email>laurent.romary@loria.fr</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper presents the system called PATATRAS (PATent and Article Tracking,<lb/> Retrieval and AnalysiS) realized at the Humboldt University for the IP track of CLEF<lb/> 2009. Our approach presents three main characteristics:<lb/> 1. The usage of multiple retrieval models (KL, Okapi) and term index definitions<lb/> (lemma, phrase, concept) for the three languages considered in the present track<lb/> (English, French, German) producing ten different sets of ranked results.<lb/> 2. The merging of the different results based on multiple regression models using an<lb/> additional validation set created from the patent collection.<lb/> 3. The exploitation of patent metadata and of the citation structures for creating<lb/> restricted initial working sets of patents and for producing a final re-ranking<lb/> regression model.<lb/> As we exploit specific metadata of the patent documents and the citation relations<lb/> only at the creation of initial working sets and during the final post ranking step, our<lb/> architecture remains generic and easy to extend.<lb/></div>
+	
 
 	Categories and Subject Descriptors<lb/>
 	<keyword>H.3 [Information Storage and Retrieval]: H.3.1 Content Analysis and Indexing; H.3.3 Infor-<lb/>mation Search and Retrieval; H.3.4 Systems and Software; H.3.7 Digital Libraries; H.2.3 [Database<lb/> Managment]: Languages-Query Languages<lb/></keyword>

@@ -30,8 +30,7 @@
 
 	<email>{J.F.Groote,J.J.A.Keiren}@tue.nl<lb/></email>
 
-	Abstract.
-	<div type="abstract">Distributed software is very tricky to implement correctly as<lb/> some errors only occur in peculiar situations. For such errors testing is<lb/> not effective. Mathematically proving correctness is hard and time con-<lb/>suming, and therefore, it is rarely done. Fortunately, there is a technique<lb/> in between, namely model checking, that, if applied with skill, is both<lb/> efficient and able to find rare errors.<lb/> In this tutorial we show how to create behavioural models of par-<lb/>allel software, how to specify requirements using modal formulas, and<lb/> how to verify these. For that we use the mCRL2 language and toolset<lb/> (www.mcrl2.org/). We discuss the design of an evolution of well-known<lb/> mutual exclusion protocols, and how model checking not only provides<lb/> insight in their behaviour and correctness, but also guides their design.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Model checking • Parallel software • Distributed software •<lb/> mCRL2 toolset • Counterexamples<lb/></keyword>

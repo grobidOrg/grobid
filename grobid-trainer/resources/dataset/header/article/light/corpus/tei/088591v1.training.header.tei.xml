@@ -41,8 +41,7 @@
 	Keywords:
 	<keyword>SNP, mapping</keyword>
 
-	Abstract<lb/>
-	<div type="abstract">A forward genetic screen is one of the best methods for revealing the regulatory functions of<lb/> genes. In plants, this technique is highly efficient since it is relatively easy to grow and screen the<lb/> phenotypes of hundreds or thousands of individuals. The cost-efficiency and ease of data<lb/> production afforded by next-generation sequencing techniques have created new opportunities<lb/> for mapping induced mutations. The principles of genetic mapping remain the same. However,<lb/> the details have changed, which allows for rapid mapping of causal mutations. Current mapping<lb/> tools are often not user-friendly and complicated or require extensive preparation steps. To<lb/> simplify the process of mapping new mutations, we developed a pipeline that takes next<lb/> generation sequencing fastq files as input, calls on several well-established and freely available<lb/> genome-analysis tools, and outputs the most likely causal DNA change(s). The pipeline has been<lb/> validated in Arabidopsis and can be readily applied to other species.</div>
+	
 
 		</front>
 	</text>

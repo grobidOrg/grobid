@@ -58,8 +58,7 @@
 	<docAuthor>Zhichao Deng 1 , Xiangtai Li 2 , Xia Li 3 , Yunhai Tong 2 , Shen Zhao 1 * , and Mengyuan Liu 4 *<lb/></docAuthor>
 	</byline>
 
-	Abstract-
-	<div type="abstract">Understanding the real world through point cloud<lb/> video is a crucial aspect of robotics and autonomous driving<lb/> systems. However, prevailing methods for 4D point cloud<lb/> recognition have limitations due to sensor resolution, which<lb/> leads to a lack of detailed information. Recent advances have<lb/> shown that Vision-Language Models (VLM) pre-trained on<lb/> web-scale text-image datasets can learn fine-grained visual<lb/> concepts that can be transferred to various downstream tasks.<lb/> However, effectively integrating VLM into the domain of 4D<lb/> point clouds remains an unresolved problem. In this work,<lb/> we propose the Vision-Language Models Goes 4D (VG4D)<lb/> framework to transfer VLM knowledge from visual-text pre-<lb/>trained models to a 4D point cloud network. Our approach<lb/> involves aligning the 4D encoder's representation with a VLM<lb/> to learn a shared visual and text space from training on<lb/> large-scale image-text pairs. By transferring the knowledge<lb/> of the VLM to the 4D encoder and combining the VLM,<lb/> our VG4D achieves improved recognition performance. To<lb/> enhance the 4D encoder, we modernize the classic dynamic point<lb/> cloud backbone and propose an improved version of PSTNet,<lb/> im-PSTNet, which can efficiently model point cloud videos.<lb/> Experiments demonstrate that our method achieves state-of-<lb/>the-art performance for action recognition on both the NTU<lb/> RGB+D 60 dataset and the NTU RGB+D 120 dataset. Code is<lb/> available at https://github.com/Shark0-0/VG4D.<lb/></div>
+	
 
 	*Corresponding author:
 	<byline>

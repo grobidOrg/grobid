@@ -24,8 +24,7 @@
 	<email>planat@femto-st.fr</email>
 	)<lb/> 
 
-	Abstract.<lb/>
-	<div type="abstract">Peres/Mermin arguments about no-hidden variables in quantum mechanics are used<lb/> for displaying a pair (R, S) of entangling Clifford quantum gates, acting on two qubits.<lb/> From them, a natural unitary representation of Coxeter/Weyl groups W (D 5 ) and<lb/> W (F 4 ) emerges, which is also reflected into the splitting of the n-qubit Clifford group<lb/> C n into dipoles C ±<lb/> n . The union of the three-qubit real Clifford group C +<lb/> 3 and the Toffoli<lb/> gate ensures a orthogonal representation of the Weyl/Coxeter group W (E 8 ), and of its<lb/> relatives. Other concepts involved are complex reflection groups, BN pairs, unitary<lb/> group designs and entangled states of the GHZ, W and chain families.<lb/></div>
+	
 
 	<keyword>PACS numbers: 03.67.Pp, 03.67.Pp, 02.20.-a, 03.65.Ud<lb/></keyword>
 

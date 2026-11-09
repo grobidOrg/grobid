@@ -14,8 +14,7 @@
 	<docAuthor>Sarah Delcourte 1 and Pascal Omnes 23</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">We present an application of the discrete duality finite volume method to the numerical<lb/> approximation of the vorticity-velocity-pressure formulation of the 2D Stokes equations,<lb/> associated to various non-standard boundary conditions. The finite volume method is<lb/> based on the use of discrete differential operators obeying some discrete duality principles.<lb/> The scheme may be seen as an extension of the classical MAC scheme to almost arbitrary<lb/> meshes, thanks to an appropriate choice of degrees of freedom. The efficiency of the scheme<lb/> is illustrated by numerical examples over unstructured triangular and locally refined non-<lb/>conforming meshes, which confirm the theoretical convergence analysis led in the article.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Stokes equations; vorticity-velocity-pressure formulation; boundary conditions;<lb/> discrete duality; finite volumes; arbitrary meshes; a priori estimates<lb/></keyword>

@@ -20,8 +20,7 @@
 
 	<address>Bethesda, Maryland<lb/></address>
 
-	Abstract.
-	<div type="abstract">An essential stage in any text extraction system is the manual<lb/> verification of the printed material converted by OCR. This proves to be the most<lb/> labor-intensive step in the process. In a system built and deployed at the National<lb/> Library of Medicine to automatically extract bibliographic data from scanned<lb/> biomedical journals, alternative means were considered to validate the text. This<lb/> paper describes two approaches and gives preliminary performance data.</div>
+	
 
 		</front>
 	</text>

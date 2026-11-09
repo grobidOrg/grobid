@@ -22,8 +22,7 @@
 
 	<email>{ysuzuki@suwa, fukumot o@skyo, sokiguti©saiko}, osi. yamanashi, ac. jp</email>
 
-	Abstract<lb/>
-	<div type="abstract">In this paper, we propose keyword extraction<lb/> method for dictation of radio news which con-<lb/>sists of several domains. In our method, news-<lb/>paper articles which are automatically classified<lb/> into suitable domains are used in order to calcu-<lb/>late feature vectors. The feature vectors shows<lb/> term-domain interdependence and are used for<lb/> selecting a suitable domain of each part of ra-<lb/>dio news. Keywords are extracted by using the<lb/> selected domain. The results of keyword extrac-<lb/>tion experiments showed that our methods are<lb/> robust and effective for dictation of radio news.</div>
+	
 
 		</front>
 	</text>
