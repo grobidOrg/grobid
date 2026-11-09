@@ -1,0 +1,291 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="10.1364_OE.27.031629">
+			<titleStmt>
+				<title level="a">Quantum dynamics of atomic Rydberg excitation in strong laser fields</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://doi.org/10.1364/OA_License_v1"/>
+				</availability>
+				<idno type="DOI">10.1364/OE.27.031629</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document PHY-AST_96</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+			<head>1. Introduction<lb/></head>
+
+			<p>In strong-field atomic and molecular physics, Rydberg states attracted much attention in the<lb/> 1990s <ref type="biblio">[1-4]</ref> but thereafter have been ignored for a long time. This is because, in an intense<lb/> laser field, the atoms or molecules are so strongly disturbed that the electrons already in the<lb/> ground state of the neutral atom or even the ion can be liberated very efficiently <ref type="biblio">[5-7]</ref>. This<lb/> appeared to imply that the weakly bound Rydberg states would lose any significance. Only<lb/> recently, however, both theoretical and experimental works surprisingly found that quite a large<lb/> portion of neutral atoms in Rydberg states can survive very strong laser fields <ref type="biblio">[8,9]</ref>. This has<lb/> become the object of elaborate experimental and theoretical studies in the past few years <ref type="biblio">[10-22]</ref>.<lb/> Besides atoms, Rydberg state excitation (RSE) has also been observed in atomic fragments from<lb/> Coulomb explosion of dimers <ref type="biblio">[23]</ref> and diatomic molecules <ref type="biblio">[24,25]</ref>.<lb/></p>
+
+			<p>Theoretically, a semiclassical two-step model has been proposed to explain the experimental<lb/> observations <ref type="biblio">[8-11]</ref>. At first, the electron is pumped into a continuum state from its initial<lb/> bound state by the external field via tunneling <ref type="biblio">[26,27]</ref>. The subsequent description of the<lb/> electron in the continuum follows completely classical lines <ref type="biblio">[28,29]</ref>. Owing to the presence<lb/> of the attractive Coulomb field of the ion, the electron may be left with negative energy at the<lb/> end of the laser pulse, which corresponds to capture into a Rydberg state <ref type="biblio">[8]</ref>, also known as<lb/> frustrated tunneling ionization (FTI) <ref type="biblio">[9]</ref>. An alternative theoretical approach proceeds via the<lb/> solution of the time-dependent one-electron Schrödinger equation (TDSE) <ref type="biblio">[12,17,18]</ref>. This<lb/> includes, of course, all quantum effects, but it is difficult to extract from it much physical insight<lb/> into the details of the dynamics. In fact, two mechanisms have been proposed to explain the<lb/> peak structure in the intensity dependence of the RSE population, which is clearly visible in<lb/> the TDSE calculation. One is the Freeman-resonance perspective in which the Rydberg states<lb/> are populated via a resonant multiphoton transition <ref type="biblio">[1,12]</ref>. The other one suggests that RSE is<lb/> just the continuation of above-threshold ionization (ATI) to negative energies in the Rydberg<lb/> quasi-continuum <ref type="biblio">[17]</ref>. On the other hand, closer inspection shows that the peaks in the RSE<lb/> population as a function of intensity alternate between comparatively low and high yield, which<lb/> was not addressed in these papers <ref type="biblio">[12,17]</ref>. Apparently, the mechanism via Freeman resonances<lb/> is unable to explain this effect, and the existence of peak structures is clearly beyond the scope of<lb/> the afore-mentioned semiclassical model.<lb/></p>
+
+			<p>In this paper, we formulate a quantum-mechanical model of the RSE process and compare<lb/> its results with experiments and TDSE calculations (which are in a sense almost equivalent<lb/> to real experimental data). Our quantum model well reproduces all the features observed in a<lb/> TDSE simulation, including the dependence on the parities of the initial and final states and<lb/> the just-mentioned fact that the peaks in the RSE intensity dependence alternate in height. The<lb/> model is also applied to the investigation of RSE of He and Xe atoms. For He, we reproduce<lb/> the experimentally observed distributions of the principal quantum number of the Rydberg<lb/> states <ref type="biblio">[9,21]</ref>. For Xe, we present to our knowledge the first measurements of RSE for 800-nm<lb/> laser wavelength that display the peak structure. Our work provides a quantum picture of RSE<lb/> in intense laser fields: first, the electron is pumped by the laser field into a continuum state.<lb/></p>
+
+			<figure>Fig. 1. The Rydberg-state excitation process: The dashed gray curve denotes the laser<lb/> electric field. The valence electron is liberated through tunneling in one of the various<lb/> optical cycles of the pulse, whereupon it evolves in the laser field. The electrons captured<lb/> into a certain Rydberg state in one direction (orbit 1 &amp; orbit 3) or the other (orbit 2 &amp; orbit<lb/> 4) have different phases and will interfere, which leads to a peak structure in the intensity<lb/> dependence with interval of ∆U p = ω. Interference between the two directions leads to a<lb/> peak structure with interval of ∆U p = 2 ω (see text for details).<lb/></figure>
+
+			<p>Subsequently, it evolves in the external field. Some of the electrons may be coherently captured<lb/> into Rydberg states. The probability of the capture process strongly depends on the location and<lb/> the parity of the final Rydberg state, resulting in all the quantum features observed. A schematic<lb/> picture of the RSE process is presented in Fig. <ref type="figure">1</ref>.<lb/></p>
+
+			<head>2. Theoretical methods<lb/></head> 
+			<head>2.1. Quantum model<lb/></head>
+
+			<p>The transition amplitude of the capture process is given by (atomic units m = = e = 1 are used)<lb/></p>
+
+				<formula>M nlm =<lb/> lim<lb/> t→∞,t →-∞<lb/> Ψ nlm (t)|U(t, t )|Ψ g (t ) ,<lb/></formula>
+
+				<label>(1)<lb/></label>
+
+			<p>where |Ψ nlm (t) denotes a field-free Rydberg state with principal quantum number n, angular-<lb/>momentum quantum number l, and magnetic quantum number m. U(t, t ) denotes the time-<lb/>evolution operator with the Coulomb and the laser fields <ref type="biblio">[6]</ref>, and Ψ g (r, t) = e iI p t φ g (r) indicates<lb/> the wave function of the field-free ground state with the ionization potential I p . Throughout<lb/> the paper, we adopt the single-active-electron (SAE) approximation so that all electronic wave<lb/> functions (and time-evolution operators) are one-electron wave functions. It is assumed that the<lb/> laser field is turned off in the distant past and future. The time-evolution operator U(t, t ) satisfies<lb/> the Dyson equation<lb/></p>
+
+				<formula>U(t, t ) = U 0 (t, t ) -i<lb/> ∫ t<lb/> t<lb/> dτU(t, τ)H I (τ)U 0 (τ, t ),<lb/></formula>
+
+				<label>(2)<lb/></label>
+
+			<p>where U 0 (t, t ) is the time-evolution operator for only the Coulomb field <ref type="biblio">[6]</ref> and (in length gauge)<lb/> H I (t) = r • E(t). With the help of Eq. (<ref type="formula">2</ref>), the transition amplitude (<ref type="formula">1</ref>) can be rewritten as<lb/></p>
+
+				<formula>M nlm = lim<lb/> t→∞<lb/> Ψ nlm (t)|Ψ g (t) -i<lb/> ∫ t<lb/> -∞<lb/> dτ Ψ nlm (t)|U(t, τ)H I (τ)|Ψ g (τ) .<lb/></formula>
+
+				<label>(3)<lb/></label>
+
+			<p>Here, the first term on the right-hand side is zero due to the orthogonality of the Coulomb<lb/> eigenstates. For the second term, we use a different form of the Dyson equation,<lb/></p>
+
+				<formula>U(t, t ) = U V (t, t ) -i<lb/> ∫ t<lb/> t<lb/> dτU(t, τ)VU V (τ, t ),<lb/></formula>
+
+				<label>(4)<lb/></label>
+
+			<p>where V is the binding (Coulomb) potential and U V (t, t ) indicates the Volkov time-evolution<lb/> operator<lb/></p>
+
+				<formula>U V (t, t ) =<lb/> ∫<lb/> d 3 k|Ψ (V)<lb/> k (t) Ψ (V)<lb/> k (t )|,<lb/></formula>
+
+				<label>(5)<lb/></label>
+
+			<p>which we have expanded in terms of the Volkov states with the wave functions<lb/></p>
+
+				<formula>Ψ (V)<lb/> k (r, t) =<lb/> 1<lb/> (2π) 3/2 exp i(k + A(t)) • r -<lb/>i<lb/> 2<lb/> ∫ t<lb/> dt (k + A(t )) 2 ,<lb/></formula>
+
+				<label>(6)<lb/></label>
+
+			<p>where k denotes the asymptotic (drift) momentum. The coordinate-space representation of the<lb/> Volkov time-evolution operator is<lb/></p>
+
+				<formula>U V (rt, r t ) = i<lb/> i<lb/> 2π(t -t )<lb/> 3<lb/> 2<lb/> e -iS(rt,r t )<lb/></formula> 
+				<label>(7)<lb/></label> 
+				
+				<p>with<lb/></p>
+
+				<formula>S(rt, r t ) = A(t) • r -A(t ) • r +<lb/> 1<lb/> 2<lb/> ∫ t<lb/> t<lb/> dτA 2 (τ) -<lb/>1<lb/> 2(t -t )<lb/> r -r +<lb/> ∫ t<lb/> t<lb/> dτA(τ)<lb/> 2<lb/> .</formula>
+
+				<label>(8)<lb/></label>
+
+			<p>Using Eq. (<ref type="formula">4</ref>) in Eq. (<ref type="formula">3</ref>) we get<lb/></p>
+
+				<formula>M nlm = lim<lb/> t→∞<lb/> (-i)<lb/> ∫ t<lb/> -∞<lb/> dτ Ψ nlm (t)|U V (t, τ)H I (τ)|Ψ g (τ)<lb/> + lim<lb/> t→∞<lb/> (-i) 2<lb/> ∫ t<lb/> -∞<lb/> dτ<lb/> ∫ τ<lb/> -∞<lb/> dτ Ψ nlm (t)|U(t, τ )VU V (τ , τ)H I (τ)|Ψ g (τ) .<lb/></formula>
+
+				<label>(9)<lb/></label>
+
+			<p>This is analogous to the Born expansion of the ionization amplitude for above-threshold ionization<lb/> (ATI). In that case, the final state is in the continuum and is approximated by a plane wave so<lb/> that Ψ nlm (t)|U V (t, τ) becomes a Volkov state Ψ V<lb/> p (τ)|. The first term then describes the direct<lb/> electrons and the second term accounts for single or multiple rescattering. If the exact propagator<lb/> U(t, t ) is replaced by the Volkov propagator U V (t, t ), only single rescattering is included. For<lb/> energies below ≈ 2U p , the first term is dominant.<lb/></p>
+
+			<p>However, for RSE rather than ATI the first term in Eq. (<ref type="formula">5</ref>) goes to zero in the limit of t → ∞.<lb/> This is due to the factor of (t -t ) -3/2 in Eq. (<ref type="formula">7</ref>), which accounts for wave-function spreading,<lb/> and the fact that the Rydberg state |Ψ nlm (t) is localized. (Note that the values of τ in Eq. (<ref type="formula">9</ref>) are<lb/> restricted to the finite duration of the laser pulse.) Hence, for RSE we only consider the second<lb/> term. In order to make further progress we replace the bra Ψ nlm (t)|U(t, τ ) in the second term<lb/> by an approximate field-dressed Rydberg state with the wave function<lb/></p>
+
+				<formula>Ψ d<lb/> nlm (r, τ ) = φ nlm (r)e -iE n τ e ir•A(τ ) e -i<lb/> ∫ τ<lb/> -∞ dτA 2 (τ)/2 ,<lb/></formula>
+
+				<label>(10)<lb/></label>
+
+			<p>where φ nlm (r) is a field-free Rydberg state corresponding to the energy level E n = -1/(2n 2 ). This<lb/> replacement implies that we lose processes where the electron undergoes Coulomb rescattering<lb/> before the capture. This would be included by higher-order terms in the expansion, which are<lb/> ignored here. The principal quantum number, angular quantum number, and magnetic quantum<lb/> number are indicated by n, l, and m, respectively. The field-free Rydberg states are given by<lb/></p>
+
+				<formula>φ nlm (r) = N nl R nl (r)Y lm (θ, ϕ),<lb/> N nl =<lb/> (2κ n ) 3/2<lb/> Γ(2l + 2)<lb/> Γ(n + l + 1)<lb/> 2nΓ(n -l)<lb/> ,<lb/> R nl (r) = (2κ nr ) l e -κ nr 1 F 1 (-n + l + 1, 2l + 2, 2κ n r),<lb/></formula>
+
+				<label>(11)<lb/></label>
+				
+			<p>where κ n = 1/n, Y lm (θ, ϕ) is a spherical harmonic function, and 1 F 1 (x, y, z) is the confluent<lb/> hypergeometric function. The approximation (<ref type="formula">10</ref>), called the Coulomb-Volkov state, has been<lb/> frequently used to account for the Coulomb-field in noncontinuum states; see <ref type="biblio">[30,31]</ref> and many<lb/> later references. The field-dressed state (<ref type="formula">10</ref>) does not exactly satisfy the Schrödinger equation.<lb/> Namely, we have<lb/></p>
+
+				<formula>i<lb/> ∂<lb/> ∂t<lb/> Ψ d<lb/> nlm (r, t) = [E n φ nlm (r) +<lb/> A 2 (t)<lb/> 2<lb/> φ nlm (r) + r • E(t)φ nlm (r)]e -iE n t e ir•A(t) e -i<lb/> ∫ t<lb/> 0<lb/> A 2 (τ)<lb/> 2 dτ ,<lb/></formula>
+
+				<label>(12)<lb/></label>
+
+			<p>and<lb/></p> 
+			
+			<formula>[-<lb/> 1<lb/> 2<lb/> ∇ 2 -<lb/>1<lb/> r<lb/> +r • E(t)]Ψ d<lb/> nlm (r, t) = [E n φ nlm (r)-i∇φ nlm (r) • A(t)<lb/> +<lb/> A 2 (t)<lb/> 2<lb/> φ nlm (r)+r • E(t)φ nlm (r)]e -iE n t e ir•A(t) e -i<lb/> ∫ t<lb/> 0<lb/> A 2 (τ)<lb/> 2 dτ ,<lb/></formula>
+
+				<label>(13)<lb/></label>
+
+				<p>so that<lb/></p> 
+				
+				<formula>i<lb/> ∂<lb/> ∂t<lb/> +<lb/> 1<lb/> 2<lb/> ∇ 2 +<lb/> 1<lb/> r<lb/> -r • E(t) Ψ d<lb/> nlm (r, t) = ie -iE n t e ir•A(t) e -i<lb/> ∫ t<lb/> 0<lb/> A 2 (τ)<lb/> 2 dτ A(t) • ∇φ nlm (r).<lb/></formula>
+
+				<label>(14)<lb/></label>
+
+			<p>Hence, the approximation (<ref type="formula">10</ref>) would be exact if it were not for the term -i∇φ nlm (r) • A(t) on<lb/> the right-hand side of Eq. (<ref type="formula">14</ref>). A comparison of the four terms of Eq. (<ref type="formula">13</ref>) is shown in Table<lb/> <ref type="table">1</ref>. It can be seen that the disturbing term ∇φ nlm (r) is several orders smaller than the other three<lb/> terms in the region where the Rydberg state is concentrated (see Figs. <ref type="figure">3</ref> and <ref type="figure">5</ref>) for the times of<lb/> capture (for details, see the semiclassical analysis part) shown in Fig. <ref type="figure">2</ref>. Therefore, Eq. (<ref type="formula">10</ref>) can<lb/> be considered a good approximation to the dressed Rydberg state, and our final approximation to<lb/> the Rydberg-capture amplitude is<lb/></p>
+
+				<formula>M nlm = (-i) 2<lb/> ∫ ∞<lb/> -∞<lb/> dt<lb/> ∫ t<lb/> -∞<lb/> dt Ψ d<lb/> nlm (t)|VU V (t, t )H I (t )|Ψ g (t )<lb/> = (-i) 2<lb/> ∫ ∞<lb/> -∞<lb/> dt<lb/> ∫ t<lb/> -∞<lb/> dt<lb/> ∫<lb/> d 3 k Ψ d<lb/> nlm (t)|V(r)|Ψ (V)<lb/> k (t) Ψ (V)<lb/> k (t )|r • E(t )|Ψ g (t ) .<lb/></formula>
+
+				<label>(15)<lb/></label>
+
+			<figure>Fig. 2. A typical trajectory of the electron in the laser pulse with intensity of 1 × 10 14<lb/> W/cm 2 . The numbers indicate the instants of time t when the electron is captured by the<lb/> Rydberg states of n = 6 of the hydrogen atom with different angular momenta.<lb/></figure>
+			 
+			<figure>Fig. 3. Density distribution of the hydrogenic Rydberg state n = 6 for different angular<lb/> quantum numbers l. The two numbers in each panel correspond to the principal quantum<lb/> number n and the angular-momentum quantum number l.<lb/></figure>
+
+			<p>With the help of Eqs. (<ref type="formula">7</ref>), (<ref type="formula">10</ref>), and the binding potential V(r) = -1/r, the capture amplitude<lb/> (<ref type="formula">15</ref>) has the following form<lb/></p>
+
+				<formula>M nlm = (-i) 2<lb/> ∫ ∞<lb/> -∞<lb/> dt<lb/> ∫ t<lb/> -∞<lb/> dt<lb/> ∫<lb/> d 3 kV nlm,k V kg exp[iS n (t, t , k)],<lb/></formula>
+
+				<label>(16)<lb/></label>
+
+			<figure type="table">Table 1. Relative Amplitudes of the four terms of Eq. (<ref type="formula">13</ref>). The Quantities t and l indicate the<lb/> capture moment and the Angular Momentum Number shown in Fig. <ref type="figure">2</ref>, respectively.<lb/> t<lb/> l<lb/> E n (n = 6)<lb/> ∇φ nlm (r)<lb/> φ nlm (r) • A(t)<lb/> A 2 (t)<lb/> 2<lb/> r • E(t)<lb/> 1<lb/> 2<lb/> -0.014<lb/> -2.47 × 10 -7<lb/> 0.009<lb/> 0.20<lb/> 2<lb/> 2<lb/> -0.014<lb/> -9.91 × 10 -7<lb/> 0.147<lb/> 0.35<lb/> 3<lb/> 3<lb/> -0.014<lb/> -3.62 × 10 -7<lb/> 0.102<lb/> 0.44<lb/> 4<lb/> 4<lb/> -0.014<lb/> -4.16 × 10 -6<lb/> 0.129<lb/> 0.75<lb/> 5<lb/> 5<lb/> -0.014<lb/> 2.21 × 10 -6<lb/> 0.080<lb/> -1.45<lb/></figure>
+
+			<p>with<lb/></p>
+
+				<formula>V kg =<lb/> 1<lb/> (2π) 3/2<lb/> ∫<lb/> d 3 r exp{-i[k + A(t )] • r }r • E(t )ψ g (r )<lb/> =<lb/> 1<lb/> (2π) 3/2 (-i<lb/> ∂<lb/> ∂t<lb/> )<lb/> ∫<lb/> d 3 r exp{-i[k + A(t )] • r }ψ g (r ).<lb/></formula>
+
+				<label>(17)<lb/></label>
+
+				<formula> V nlm,k = -<lb/>1<lb/> (2π) 3/2<lb/> ∫<lb/> d 3 rφ *<lb/> nlm (r)<lb/> 1<lb/> r<lb/> exp(ik • r),<lb/></formula>
+
+				<label>(18)<lb/></label>
+
+			<p>and the action<lb/></p>
+
+				<formula>S n (t, t , k) =<lb/> 1<lb/> 2<lb/> ∫ t<lb/> -∞<lb/> dτA 2 (τ) -<lb/>1<lb/> 2<lb/> ∫ t<lb/> t<lb/> dτ[k + A (τ)] 2 + E n t + I p t .<lb/></formula>
+
+			<p>In Fig. <ref type="figure">3</ref>, the probability densities of the relevant Rydberg states are plotted for n = 6 and different<lb/> values of l. It can be easily seen that for l 0 the Rydberg state has two centers at r +<lb/> nlm ≡ r nlm<lb/> and r -<lb/>nlm = -r +<lb/> nlm ≡ -r nlm . Accordingly, we decompose the Rydberg-state wave function as<lb/></p>
+
+				<formula>φ nlm (r) = φ nlm+ (r) + φ nlm-(r),<lb/></formula>
+
+				<label>(19)<lb/></label>
+
+			<p>where the functions φ nlm± (r) are concentrated around r = ±r nlm . Also, φ nlm-(-r) = (-1) l φ nlm+ (r),<lb/> which allows us to write<lb/></p>
+
+				<formula>V nlm,k = -<lb/>1<lb/> (2π) 3/2<lb/> ∫<lb/> d 3 r<lb/> r<lb/> φ *<lb/> nlm+ (r)e ik•r + φ *<lb/> nlm-(r)e ik•r<lb/> = -<lb/>1<lb/> (2π) 3/2<lb/> ∫<lb/> d 3 r<lb/> r<lb/> φ *<lb/> nlm+ (r)e ik•r + φ *<lb/> nlm-(-r)e -ik•r<lb/> = -<lb/>1<lb/> (2π) 3/2<lb/> ∫<lb/> d 3 r<lb/> r<lb/> φ *<lb/> nlm+ (r) e ik•r + (-1) l e -ik•r .<lb/></formula>
+
+				<label>(20)<lb/></label>
+
+			<p>With the abbreviation φ nlm+ (r) = φ nlm+ (r -r nlm + r nlm ) ≡ φnlm (ρ), where ρ = r -r nlm , we end<lb/> up with<lb/></p>
+
+				<formula>V nlm,k = -<lb/>1<lb/> (2π) 3/2<lb/> ∫<lb/> d 3 ρ<lb/> 1<lb/> | ρ + r nlm |<lb/> φ *<lb/> nlm (ρ) e ik•ρ e ik•r nlm + (-1) l e -ik•ρ e -ik•r nlm .<lb/> (</formula>
+
+				<label>(21)<lb/></label>
+
+			<p>We can now proceed with the saddle-point evaluation as it is usually done by including the fast<lb/> exponential dependence generated by the factors exp(±ik • r nlm ) into the action while treating the<lb/> remaining k dependence as slow. This means that we replace<lb/></p>
+
+				<formula>V nlm,k e iS n (t,t ,k) = V nlm,k+ e<lb/> i S n (t,t ,k)+k•r nlm<lb/> + (-1) l V nlm,k-e<lb/> i S n (t,t ,k)-k•r nlm<lb/> ,<lb/></formula>
+
+				<label>(22)<lb/></label>
+
+			<p>where<lb/></p>
+
+				<formula>V nlm,k± = -<lb/>1<lb/> (2π) 3/2<lb/> ∫<lb/> d 3 ρ φ *<lb/> nlm (ρ)<lb/> 1<lb/> | ρ + r nlm |<lb/> e ±ik•ρ .<lb/></formula>
+
+				<label>(23)<lb/></label>
+
+			<p>Then, we search for those values of the variables t, t , and k that render the action S n ± k • r nlm<lb/> stationary, which yields, in turn,<lb/></p>
+
+				<formula>[k + A(t )] 2 /2 = -I p ,<lb/></formula>
+
+				<label>(24)<lb/></label>
+
+				<formula>[k + A(t)] 2 /2 = A 2 (t)/2 + E n ,<lb/></formula>
+
+				<label>(25)<lb/></label>
+
+				<formula>k ±<lb/> st = -<lb/>1<lb/> t -t<lb/> ∫ t<lb/> t<lb/> dτA(τ) ±<lb/> r nlm<lb/> t -t<lb/> = k 0 ±<lb/> r nlm<lb/> τ<lb/> ,<lb/></formula>
+
+				<label>(26)<lb/></label>
+
+			<p>where k 0 = -1<lb/> t-t<lb/> ∫ t<lb/> t dτA(τ) and τ = t -t . Equations (<ref type="formula">24</ref>) and (<ref type="formula">25</ref>) describe, respectively, energy<lb/> conservation in the tunneling process and in the capture process, while Eq. (<ref type="formula">26</ref>) determines<lb/> the intermediate electron momentum. The latter takes into account that the electron is captured<lb/> at one of the two positions ±r nlm . The solutions (t, t , k) of Eqs. <ref type="formula">(24)-(26)</ref> define the quantum<lb/> orbits.<lb/></p>
+
+			<p>Throughout the paper, we will refer to Eq. (<ref type="formula">15</ref>) as the quantum model (QM), and the multiple<lb/> integrals are performed by numerical integration with respect to t and t and by saddle-point<lb/> integration with respect to k. At the end of the pulse, the population of the nth Rydberg state is<lb/> defined as P n = l,m |M nlm | 2 . In our simulation, magnetic quantum number m = 0 and (field-free)<lb/> energy E n = -1/(2n 2 ) are adopted. The ten-cycle laser electric field is E(t) = E 0 sin ωtê z with<lb/> the vector potential A(t) = E 0 /ω cos ωtê z (ê z is a unit polarization vector and the wavelength<lb/> λ = 2πc/ω = 800 nm). The 1s atomic orbital is expressed as φ 1s (r) = 1<lb/> √ π κ 3/2 e -κr with κ = 2I p .<lb/> For Xe(5p), φ 5p (r) = (2ξ) 11/2<lb/> √<lb/> 10!<lb/> 3<lb/> 4π r 4 e -κr cos θ with ξ = 0.65 2I p and κ = 0.94 2I p . For He, the<lb/> wavefunction is hydrogenlike with κ = 2I p . The parameters of κ and ξ in the wavefunction of<lb/> Xe atom are adjusted by comparing the calculation data with our experimental measurement.<lb/> The ratio between the Rydberg excitation and the single ionization yields is estimated to be about<lb/> 20-30% for Xe in our experiment after considering the detection efficiency and the range of<lb/> Rydberg states detected (n = 20 -30 in our experiment). In our calculation of the quantum<lb/> model, the maximal ratio of Xe is 21%. The ionization potential of the H, He, and Xe atoms are<lb/> 0.5 a.u., 0.9 a.u., and 0.44 a.u., respectively. For the TDSE simulation, the details can be found in<lb/> <ref type="biblio">Ref. [17]</ref>.<lb/></p>
+
+			<head>2.2. Semiclassical model<lb/></head>
+
+			<p>In the simpleman picture where the ionic Coulomb potential is ignored, the equation of motion<lb/> of the electron in the laser field after ionization is<lb/></p>
+
+				<formula>r(t) = -E(t).<lb/></formula>
+
+				<label>(27)<lb/></label>
+
+			<p>Here the electric field is E(t) = E 0 sin ωtê z with the vector potential A(t) = E 0 /ω cos ωtê z (ê z is<lb/> a unit polarization vector), and the wavelength is λ = 800 nm. The electron trajectory in the laser<lb/> field starts at the tunnel exit z 0 = -I p /E(t 0 ) with zero longitudinal and nonzero initial transverse<lb/> velocity v(t 0 ) = (0, v 0 ). If we integrate the equation of motion, we obtain<lb/></p>
+
+				<formula>dz(t)/dt =A(t) -A(t 0 ),<lb/> dx(t)/dt =v 0 .<lb/></formula>
+
+				<label>(28)<lb/></label>
+
+			<p>Integrating again we get the trajectory of the electron:<lb/></p>
+
+				<formula>z(t) = z(t 0 ) -A(t 0 )(t -t 0 ) +<lb/> ∫ t<lb/> t 0<lb/> A(τ)dτ<lb/> = -<lb/>I p<lb/> E 0 sin ωt 0<lb/> -<lb/>E 0<lb/> ω<lb/> cos ωt 0 (t-t 0 )+<lb/> E 0<lb/> ω 2 (sin ωt-sin ωt 0 ),<lb/> x(t) = v 0 (t -t 0 ).<lb/></formula>
+
+				<label>(29)<lb/></label>
+
+			<p>The semiclassical physical picture of the RSE can be summarized as follows: the electron is<lb/> released at the time t 0 into a continuum Volkov state. Subsequently, it evolves in the laser field<lb/> and can be captured into the Rydberg state at time t provided (i) it reaches the spatial region<lb/> where the Rydberg state has a high density (here we use the condition |φ| 2 &gt;0.8|φ| 2<lb/> max ) and (ii) its<lb/> kinetic energy E kin is small (here we use E kin 0.05 a.u.). It should be noted that the result is<lb/> not sensitive to these criteria.<lb/></p>
+
+			<p>In Fig. <ref type="figure">4</ref>, we show the evolution of the kinetic energy of the electron under the given initial<lb/> conditions and parameters. It can be seen that there are two time intervals in each optical cycle<lb/> where the kinetic energy is small enough for capture, i. e., E kin 0.05 a.u., as defined above.<lb/></p>
+
+			<figure>Fig. 4. Kinetic energy of the electron during its evolution in a laser pulse of 10 optical<lb/> cycles. The laser intensity is 1.14 × 10 14 W/cm 2 , and the initial phase and the transverse<lb/> velocity are 92 • and 0, respectively.<lb/></figure>
+
+			<p>For Rydberg states of n = 6 and different values of l (see Fig. <ref type="figure">3</ref>), Fig. <ref type="figure">5</ref> identifies for these l<lb/> the regions where the density criterion |φ| 2 &gt;0.8|φ| 2<lb/> max is satisfied. Clearly, the relevant region<lb/> moves towards larger distances from the origin with increasing l.<lb/></p>
+
+			<p>In our calculation, each electron trajectory is released via tunneling at some instant during<lb/> the laser-pulse duration (a 10-cycle pulse with constant electric amplitude is considered). Its<lb/> weight, which is dependent on the ionization rate and the initial transverse velocity (from -0.3<lb/> a.u. to 0.3 a.u.), is determined as in <ref type="biblio">Ref. [11]</ref>. Then the electron evolves in the laser field<lb/> until the end of the laser pulse. If it reaches the regions shown in Fig. <ref type="figure">5</ref> and its kinetic energy<lb/> is smaller than 0.05 a.u., it is considered to be captured by the Rydberg state φ nlm . The final<lb/> Rydberg excitation probabilities shown in Fig. <ref type="figure">7(d)</ref> of the paper are obtained from statistic of all<lb/> the trajectories satisfying the afore-mentioned criteria of capture (about 10 4 -10 6 trajectories for<lb/> each state depending on l) in overall 2×10 7 trajectories.<lb/></p>
+
+			<figure>Fig. 5. The regions in polar coordinates where the Rydberg-state densities |φ nlm (r)| 2 are<lb/> larger than 80 percent of their maximal values for n = 6 and angular momenta l ≤ n -1.<lb/> Different colors denote different angular momenta.<lb/></figure>
+
+			<head>3. Experimental technique<lb/></head>
+
+			<p>In our experiments, we applied the delayed-static-field-ionization method to ionize the neutral<lb/> Rydbergs, using a time-of-flight (ToF) mass spectrometer operated under a pulsed-electric-field<lb/> mode. Experimentally, an effusive atomic or molecular beam through a leak valve interacted<lb/> with a focused Ti:Sapphire femtosecond laser with a central wavelength of 800 nm and pulse<lb/> duration of 50 fs. After the direct-ionized ions (Xe + ) were pushed away from the detector by<lb/> an electric field, the remaining high-lying neutral Rydbergs (Xe * ) were field-ionized by another<lb/> electric field with a delay time of typically 1.0 µs, and were detected by dual micro-channel<lb/> plates at the end of the flight section of about 50 cm. In the case of detection of Xe + , standard dc<lb/> electric fields were applied in the ToF mass spectrometer. The voltages in both cases were kept<lb/> the same to ensure identical detection efficiencies for Xe + and (Xe * ) + . This allows us to detect<lb/> the neutral Rydberg states with 20&lt;n&lt;30, estimated by the saddle-point model of static-field<lb/> ionization [F = 1/(9n 4 )]. The laser-pulse energy was controlled by a half-wave plate and a Glan<lb/> prism, before being focused into the vacuum chamber with a 250 mm lens. The peak intensity<lb/> of the focused laser pulse was calibrated by comparing the measured saturation intensity of Xe<lb/> with that calculated by the ADK model <ref type="biblio">[26]</ref>. The scanning of the laser intensity was precisely<lb/> controlled by simultaneously monitoring the pulse energy using a fast photodiode while rotating<lb/> the half-wave plate. Each data point was an averaged result of 10 4 laser shots with an intensity<lb/> uncertainty of 1 TW/cm 2 .<lb/></p>
+
+			<head>4. Results and discussions<lb/></head> 
+			<head>4.1. Comparison of TDSE and quantum model calculations<lb/></head>
+
+			<p>In Figs. <ref type="figure">6(a)</ref> and <ref type="figure">6(b)</ref>, we show the probability of Rydberg states with principal quantum numbers<lb/> n&gt;3 and with opposite parities of the final Rydberg states (l even or odd) calculated by the<lb/> TDSE and the quantum model for an initial 1s state of the H atom as functions of the laser<lb/> intensity. (For the TDSE, the pulse envelope is given by a cosine square function with full width<lb/> at half maximum of 10 fs, and the details of the 3-dimensional TDSE simulation can be found in<lb/> <ref type="biblio">[17]</ref>). There are 853 excited states included after the diagonalization procedure of the field-free<lb/> Hamiltonian matrix. Peaks separated by an intensity interval of about 25 TW/cm 2 , corresponding<lb/> to a shift of the ponderomotive energy U p by the energy of a laser photon, i.e., ∆U p = ω (≈ 1.55<lb/> eV), can be clearly seen in Fig. <ref type="figure">6</ref> for both the TDSE and the quantum model calculation. The<lb/> results of the quantum model are almost quantitatively consistent with the TDSE results except<lb/> for a small shift of the peaks. In particular, for initial states and Rydberg states with specified<lb/> parities, two consecutive peaks are separated by about ∆U p = 2 ω. These obvious quantum<lb/> features can be easily understood in the multiphoton transition picture of RSE <ref type="biblio">[1,12]</ref>. Since<lb/> the energies of the Rydberg states are near the threshold so that their Stark shifts are all close<lb/> to the Stark shift U p of the continuum, multiphoton resonance between the Rydberg and the<lb/> initial states occurs at intensities that are separated by ∆U p = ω <ref type="biblio">[1]</ref>. In addition, the dipole<lb/> selection rule only allows even-order (odd-order) multiphoton transitions between states of equal<lb/> (opposite) parity, which gives rise to a ∆U p = 2 ω separation between consecutive peaks for a<lb/> transition between two states with specified parity <ref type="biblio">[17,19]</ref>. Apparently, these features are beyond<lb/> the scope of the semiclassical picture of the RSE.<lb/></p>
+
+			<figure>Fig. 6. Populations of Rydberg states with even or odd parity versus laser intensity calculated<lb/> via TDSE (a) and the quantum model (QM)(b) for an initial 1s state. The positions of the<lb/> N-photon channel closings are indicated on the top x axis. For visual convenience, the peaks<lb/> are separated by dashed lines and underlaid with alternatingly gray or pink backgrounds.<lb/> Total Rydberg-state populations on a linear scale (sum over parities) as functions of the laser<lb/> intensity simulated by (c): the TDSE and (d): the QM for an initial 1s state.<lb/></figure>
+
+			<p>Furthermore, closer inspection shows that the peaks alternate in height as shown in Figs. <ref type="figure">6(c)</ref><lb/> and <ref type="figure">6(d)</ref>, which display the population of the Rydberg states with both parities. This can also be<lb/> observed in the results of Refs. <ref type="biblio">[12,17,18]</ref> though it was not addressed there. This feature is<lb/> difficult, if not impossible, to understand in the multiphoton-resonance picture. For a transition<lb/> from the ground state to the Rydberg state, the electron has to absorb more than ten photons<lb/> under typical laser conditions as considered here ( ω = 1.55 eV and U p = 6 eV for I = 1 × 10 14<lb/> W/cm 2 ). The density of the Rydberg states does not depend on the parity. Hence, no mechanism<lb/> such as a selection rule can give rise to a structure that depends on whether an even or odd<lb/> number of photons is absorbed in the process.<lb/></p>
+
+			<head>4.2. Analysis of the quantum model<lb/></head>
+
+			<p>In order to elucidate these intriguing features, we classify the quantum orbits in our model<lb/> according to the length of their travel time, that is, the time difference ∆t = t -t between<lb/> recapture and ionization. Specifically, with the number J we denote the pair of orbits where<lb/> (J -1)T/2&lt;∆t&lt;JT/2 where T = 2π/ω. We call an orbit even or odd according to whether J<lb/> is even or odd. Figure <ref type="figure">7(a)</ref> shows the results calculated using Eq. (<ref type="formula">15</ref>) for the Rydberg state<lb/> n = 6 and l = 5 for different electronic orbits. We take the Rydberg state n = 6, since for this<lb/> state the calculated results show a maximum in our laser intensity range <ref type="biblio">[11,17]</ref>. We notice that<lb/> the intensity dependence is a straight line for the orbit with J = 20. For J = 18, an oscillatory<lb/> structure is beginning to develop, which becomes more and more apparent when J becomes<lb/> smaller (not shown here). Finally, for J = 1 and 2, pronounced peaks have emerged. This is<lb/> because the total pulse duration used in our calculation is 10 T. Namely, for the orbit with J = 20<lb/> the electron must be freed in the earliest half cycle while for orbits with smaller J electrons<lb/> liberated during more and more subsequent half cycles contribute and interfere with each other,<lb/> which results in the peak structure. Hence, the peak structure in the intensity dependence of<lb/> the RSE can be attributed to interference between electron wave packets generated in different<lb/> optical half cycles during the laser pulse, which is in agreement with <ref type="biblio">Ref. [18]</ref>.<lb/></p>
+
+			<figure>Fig. 7. (a): Interference pattern generated by orbits with different values of J as given<lb/> (see text for details). (b): The population of RSE for different l for a fixed principal<lb/> quantum number n = 6 in an 800-nm laser field. (c): The electron trajectory in the<lb/> field E(t) = E 0 sin ωte z corresponding to ionization at the phase ωt 0 = 92 • after the field<lb/> maximum. The laser intensity is 1.14 × 10 14 W/cm 2 and the transverse velocity is 0 a.u.<lb/> The colored horizontal dashed lines indicate the boundaries (in the coordinate z) of those<lb/> regions where the Rydberg states with n = 6 and l ≤ 5 have their highest density as shown<lb/> in Fig. <ref type="figure">8</ref> below. (d): The populations of specific l within the semiclassical picture for n = 6<lb/> at four different peak intensities (see the text for details).<lb/></figure>
+
+			<p>For a closer look, we consider Fig. <ref type="figure">1</ref>. For a sufficiently long (i.e., almost perodic) laser pulse,<lb/> the ionization dynamics triggered by this pulse repeat themselves from one cycle to the next (see,<lb/> e.g., orbits 1 and 3). Following a similar analysis in Ref. <ref type="biblio">[32]</ref>, if a saddle point solving Eqs. <ref type="formula">(24)<lb/> -(26)</ref> with the Rydberg-state recombination site in the positive direction [+ sign in Eq. (<ref type="formula">26</ref>)] is<lb/> given by (k, t, t ), then the saddle point in the next optical cycle with the same Rydberg state in<lb/> the same direction is (k, t + T, t + T), and the corresponding action is related by<lb/></p>
+
+				<formula>S n (t + T, t + T, k) = S n (t, t , k) + (E n + I p + U p )T.<lb/></formula>
+
+				<label>(30)<lb/></label>
+
+			<p>So the contributions of these trajectories differ by the phase (U p + I p + E n )T = (U p + I p + E n )2π/ω<lb/> (orbits 1 and 3). The same holds true for orbits 2 and 4, half a period later when the field has<lb/> changed sign. Due to parity symmetry, a Rydberg state (except for l = 0) has two opposite density<lb/> maxima in the field direction, and the electron can be captured into one or the other. In the figure,<lb/> orbits 1 and 3 go into one direction and orbits 2 and 4 into the other. If a saddle point solving<lb/> Eqs. <ref type="formula">(24) -(26)</ref> with the Rydberg-state recombination location in the positive direction [+ sign<lb/> in Eq. (<ref type="formula">26</ref>)] is written as (k, t, t ), then the saddle point solving these equations with the same<lb/> recombination location in the negative direction [-sign in Eq. (<ref type="formula">26</ref>)] is (-k, t + T/2, t + T/2),<lb/> and the corresponding action is given by<lb/></p>
+
+				<formula>S n (t + T/2, t + T/2, -k) = S n (t, t , k) + (E n + I p + U p )T/2.<lb/></formula>
+
+				<label>(31)<lb/></label>
+
+			<p>So the contributions of 2 and 4 differ from those of 1 and 3 by the phase (U p + I p + E n )T/2 =<lb/> (U p + I p + E n )π/ω. The interference of the contributions of orbits 1 and 2 with those of orbits<lb/> 3 and 4, i. e., the contributions of two directions, gives rise to peaks in the RSE separated by<lb/> ∆U p = 2 ω, while the afore-mentioned periodicity from cycle to cycle yields peaks with the<lb/> separation of ∆U p = ω, which is common for all interferences in a field with period T. These<lb/> two kinds of interference can be clearly seen in Fig. <ref type="figure">7(a)</ref>.<lb/></p> 
+			
+			<p>Another element to be considered are the phases due to the parities of the initial ground state<lb/> and the final Rydberg state, which are (-1) p with p = ±1 the respective parities. Hence, if the<lb/> initial and the final state have opposite parities, an additional phase of π occurs. We notice<lb/> that the interference between quantum orbits that are recaptured in opposite directions of the<lb/> same Rydberg state plays the same role in the quantum model as the selection rule does in the<lb/> multiphoton transition picture.<lb/></p>
+
+			<p>It is noteworthy that the peaks in Figs. <ref type="figure">6(b)</ref> and <ref type="figure">6(d)</ref> also closely satisfy the channel-closing<lb/> (CC) condition I p + U p = mω. For example, the two peaks at 1.16 × 10 14 W/cm 2 and 1.42 × 10 14<lb/> W/cm 2 in Fig. <ref type="figure">6(b)</ref> correspond to U p = 6.9 and 8.5 eV and, with the ionization potential I p = 13.6<lb/> eV and the negligible ionization potential of the highly excited Rydberg state, satisfy the CC<lb/> condition for m = 13 and m = 14, in agreement with the Freeman resonance picture and the<lb/> selection rule.<lb/></p>
+
+			<p>From the above analysis, as schematically illustrated in Fig. <ref type="figure">1</ref> and elaborated above, we find that<lb/> there are essentially two types of interference of the quantum orbits in the excitation of a Rydberg<lb/> state with specific n and l from the ground state: i) interference of wave packets released during<lb/> different optical cycles and captured in one and the same half of the spatial region of the Rydberg<lb/> state gives rise to peaks separated by a laser intensity difference corresponding to ∆U p = ω; ii)<lb/> interference of orbits released in adjacent half cycles (and captured in opposite spatial regions<lb/> of the Rydberg state) results in a peak structure with intensity difference corresponding to<lb/> ∆U p = 2 ω, and the peak positions depending on the relative parity of the Rydberg and the<lb/> ground states.<lb/></p>
+
+			<figure>Figure <ref type="figure">7(b)</ref> displays the population of different orbital angular momenta l for n = 6. In the<lb/> intensity range from 1 × 10 14 W/cm 2 to 2.5 × 10 14 W/cm 2 the Rydberg states with l = 4 and<lb/> 5 are predominantly populated. The maximal populations of l = 4 and 5 as a function of laser<lb/> intensity correspond to the low and high peaks in Figs. <ref type="figure">6(b)</ref> and <ref type="figure">6(d)</ref>, respectively.<lb/></figure>
+
+			<p>For a different view of these features, we now turn to a semiclassical picture. In Fig. <ref type="figure">7(c)</ref>,<lb/> we present an example of an electron trajectory for ionization at ωt 0 = 92 • with zero initial<lb/> longitudinal and transverse velocity. We assume that the probability of capture into the Rydberg<lb/> state (n, l, m) is maximal if the electron trajectory (X(t), Z(t)) passes the spatial region where its<lb/> density |φ nlm (r)| 2 is highest at a time where its kinetic energy is very low. We determine this<lb/> spatial region from a graph of the Rydberg-state wave function (see Fig. <ref type="figure">5</ref> for more details).<lb/> For the kinetic energy we require E kin &lt;0.05 a.u., and there are two time domains which satisfy<lb/> the capture condition for every optical cycle (see Fig. <ref type="figure">4</ref> for more details). Figure <ref type="figure">7(d)</ref> displays<lb/> the angular-momentum distributions obtained this way. Clearly, regardless of intensity l = 5<lb/> dominates all other angular momenta, which is in reasonable agreement with the results of the<lb/> QM model in Fig. <ref type="figure">7(b)</ref>. In addition, it can be seen that the population of l = 5 for 166 TW/cm 2<lb/> is higher than that of l = 4 for 192 TW/cm 2 and also for 140 TW/cm 2 , which confirms the<lb/> alternating heights of the peaks in the quantum model displayed by Fig. <ref type="figure">7(b)</ref>. Therefore, the<lb/> alternating heights of the RSE peaks shown in Fig. <ref type="figure">6</ref> are already engrained in this &quot;simple-man<lb/> model&quot;. It should be noted that even though the population at 114 TW/cm 2 is higher than that of<lb/> 140 TW/cm 2 in Figs. <ref type="figure">7(b)</ref> and <ref type="figure">7(d)</ref>, this is not the case for the total population shown in Figs.<lb/> <ref type="figure">6(a)</ref> and <ref type="figure">6(b)</ref>. This can be attributed to the fact that the relative contributions from other Rydberg<lb/> states with different n change and affect the modulation when the intensity is low.<lb/></p>
+
+			<head>4.3. Comparison with experiments<lb/></head>
+
+			<p>Experiments show that for the He atom the population of the Rydberg states peaks at about n = 9<lb/> at I = 1.8 × 10 15 W/cm 2 with a slight tendency to shift to higher n when the intensity increases<lb/> to I = 2.9 × 10 15 W/cm 2 <ref type="biblio">[22]</ref>. For comparison, the focal average of the RSE calculated by our<lb/> proposed quantum model is shown in Fig. <ref type="figure">8(a)</ref> which shows that the maximum of the RSE<lb/> shifts to higher energy for increasing intensity, in qualitative agreement with the experiment. For<lb/> fixed-intensity RSE yields, however, our quantum model shows a reverse intensity dependence<lb/> (see Fig. <ref type="figure">8(b)</ref>), which reproduces the results of TDSE simulations <ref type="biblio">[17]</ref>. This apparent conflict<lb/> can be resolved as follows: According to the physical picture underlying our quantum model,<lb/> the electron after tunneling out from the ground state oscillates in the laser field while drifting<lb/> towards the detector. When it reaches the position of the Rydberg state, provided its instantaneous<lb/> kinetic energy is very low, it can be captured (see the typical orbits in Fig. <ref type="figure">1</ref>). Therefore,<lb/> for small drift momentum, it can be expected that the RSE yield becomes maximal around<lb/> principal quantum numbers n roughly given by n 2 ≈ 4 U p /ω, so that the yield slightly shifts<lb/> with increasing intensity as shown in Fig. <ref type="figure">8(a)</ref>. The positions of the maxima of the RSE yields in<lb/> the fixed-intensity results of Fig. <ref type="figure">8(b)</ref> and <ref type="biblio">Ref. [17]</ref> are determined by interference as was shown<lb/> above. However, interference effects are largely smeared out by focal averaging, which restores<lb/> agreement with the TDSE and the semiclassical calculations in <ref type="biblio">Ref. [22]</ref>. It should be noted that<lb/> this n distribution cannot be explained by the Freeman resonance mechanism.<lb/></p>
+
+			<figure>Fig. 8. (a): Focal-averaged RSE vs. principal quantum number calculated by the quantum<lb/> model for the He atom, for I 0 = 10 15 W/cm 2 ; (b): Calculated electron spectra below<lb/> (multiplied by a factor of 0.2) and above the continuum threshold for the hydrogen atom<lb/> and various fixed intensities; (c): Experimental yields of single ionization and RSE of the<lb/> Xe atom; (d): Experimental and calculated ratios between the Rydberg excitation and the<lb/> single ionization yields (see the text for more detail). The experimental ratios have been<lb/> rescaled for comparison with the quantum model results in view of the nonperfect detection<lb/> efficiency of the Rydberg states.<lb/></figure>
+
+			<p>Moreover, we experimentally measured the single-ionization yields and the RSE of the Xe<lb/> atom for principal quantum numbers between n = 20 and n = 30. The experimental setup is<lb/> introduced in <ref type="biblio">Ref. [25]</ref> (see the experimental technique for more details). The results for Xe are<lb/> presented in Figs. <ref type="figure">8(c)</ref> and <ref type="figure">8(d)</ref>. The intensity-dependent ionization yield follows a smooth curve.<lb/> However, the RSE yield does display some peak structure especially in the low intensity regime<lb/> below I = 1.5 × 10 14 W/cm 2 [see Fig. <ref type="figure">8(c)</ref>]. This is especially evident in the ratio Xe * /Xe + ,<lb/> which exhibits peaks at I 1 = 0.89 × 10 14 W/cm 2 , I 2 = 1.18 × 10 14 W/cm 2 , and I 3 = 1.45 × 10 14<lb/> W/cm 2 [see the blue arrows in Fig. <ref type="figure">8(d)</ref>]. This structure is qualitatively reproduced by the<lb/> quantum model if focal averaging is included, indicating that this structure is the remainder of<lb/> the peak structure after taking into account the intensity distribution in the focus.<lb/></p>
+
+			<head>5. Conclusions and perspectives<lb/></head>
+
+			<p>In summary, we propose a new quantum model based in the spirit of the SFA to study the RSE<lb/> process in an intense infrared laser field. In this quantum model, the electron is first pumped by<lb/> the laser field into the continuum where subsequently it evolves in the laser field. Most of the<lb/> liberated electrons end up as free electrons (ATI); however, some may be captured into a Rydberg<lb/> state. The electronic wave packets liberated in different optical half cycles are responsible for<lb/> peak structures in the intensity dependence of the RSE yield. The peaks exhibit a modulation,<lb/> which can be attributed to a strong dependence of the capture probability on the spatial position<lb/> and the parity of the Rydberg state. Our calculation also well reproduces the experimentally<lb/> observed atomic RSE distribution and the intensity dependence of RSE of atoms. The quantum<lb/> picture of the RSE in an intense laser field can be understood as a coherent recapture process<lb/> accompanying above-threshold ionization.<lb/></p>
+
+			<p>We expect similar quantum effects for molecules. For example, RSE of the O 2 molecule is<lb/> suppressed compared with that of its companion atom Xe, and this suppression is stronger than<lb/> the corresponding suppression of ionization of O 2 compared with that of Xe <ref type="biblio">[25]</ref>. Apparently,<lb/> this cannot be described by the semiclassical model. Another such example will be two-center<lb/> interference, which has been accepted to be essential in molecular ionization <ref type="biblio">[33,34]</ref>. With some<lb/> extensions, our quantum model can be applied to investigate these intriguing phenomena and<lb/> reveal the underlying physics. Work along these lines is in progress.</p>
+
+
+	</text>
+</tei>

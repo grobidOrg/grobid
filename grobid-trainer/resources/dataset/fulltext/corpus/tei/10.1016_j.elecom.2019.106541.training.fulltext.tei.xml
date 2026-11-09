@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="10.1016_j.elecom.2019.106541">
+			<titleStmt>
+				<title level="a">Laser-pyrolyzed electrochemical paper-based analytical sensor for sulphite analysis</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1016/j.elecom.2019.106541</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document CHEM_23</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+			<head>1. Introduction<lb/></head>
+
+			<p>Recently, one of the authors reported a new approach to the fabri-<lb/>cation of electrochemical paper-based devices (ePADs) which does not<lb/> require expensive equipment or controlled laboratory conditions <ref type="biblio">[1]</ref>.<lb/> The proposed approach used a CO 2 laser to pyrolyze a paperboard<lb/> surface in order to convert cellulose to carbon, creating a carbon surface<lb/> for electroanalytical applications in a single low-cost step. ePADs were<lb/> originally proposed in 2009 by Dungchai and co-authors using silk<lb/> screen/screen printing procedures which could leave impurities on the<lb/> paper after solvent evaporation <ref type="biblio">[2]</ref>. Since then, a range of approaches<lb/> to ePAD fabrication have been reported: casting <ref type="biblio">[3]</ref>, inkjet printing <ref type="biblio">[4]</ref>,<lb/> use of graphite leads or direct pencil drawing, wire or fibre attachment<lb/> <ref type="biblio">[5]</ref>, sputtering approaches under an inert atmosphere <ref type="biblio">[6]</ref>, as well as<lb/> carbon pyrolysis using a tube furnace under oxygen <ref type="biblio">[7]</ref>. However, all of<lb/> these procedures have at least one of the following disadvantages: each<lb/> ePAD has to be manually fabricated, resulting in a lack of reproduci-<lb/>bility, high cost, or the need for a controlled environment. By contrast,<lb/> the laser pyrolysis procedure <ref type="biblio">[8]</ref> can be used to fabricate reproducible<lb/> low-cost devices in a single step <ref type="biblio">[1]</ref>.<lb/></p>
+
+			<p>Sulphites have been used as food additives for many years, due to<lb/> their many applications (prevention of the microbial growth, browning<lb/> reactions and flavour stabilizing properties) and their outstanding ef-<lb/>ficiency <ref type="biblio">[9,10]</ref>. However, their use should be controlled because of<lb/> possible adverse clinical effects, particularly to sensitive individuals,<lb/> ranging from dermatitis, urticaria, abdominal pain and diarrhoea to<lb/> some rare yet dangerous anaphylactic responses <ref type="biblio">[11]</ref>.<lb/></p>
+
+			<p>Typically, the term &apos;sulphites&apos; refers to a variety of compounds:<lb/> sulphur dioxide, sodium sulphite, sodium bisulfite, sodium metabi-<lb/>sulfite, potassium metabisulfite, and potassium sulphite (INS 220 to INS<lb/> 225) <ref type="biblio">[12]</ref>. However, in practice, in the pH range 2-6 most common in<lb/> beverages, sulphur is present in the form of hydrogen sulphite (HSO 3 )<lb/> <ref type="biblio">[10]</ref>. The electrochemical response of sulphites has been studied for<lb/> over a decade <ref type="biblio">[13]</ref>, using several types of electrodes, including: mer-<lb/>cury <ref type="biblio">[14-23]</ref>, gold <ref type="biblio">[24-26]</ref>, platinum <ref type="biblio">[12,27,28]</ref>, copper <ref type="biblio">[29]</ref>, glassy<lb/> carbon electrode (GCE) <ref type="biblio">[30-32]</ref>, multiwalled carbon nanotubes<lb/> <ref type="biblio">[33,34]</ref>, screen-printed carbon electrode (SPCE) <ref type="biblio">[35,36]</ref>, and modified<lb/> working electrodes <ref type="biblio">[37-43]</ref>. To the best of the authors&apos; knowledge,<lb/> however, sulphites have never been investigated using paper-based<lb/> analytical devices.<lb/></p>
+
+			<p>Electroanalysis has several advantages for testing food samples,<lb/> primarily speed, sensitivity and portability, but in general this approach<lb/> is susceptible to interference from other compounds present in these<lb/> complex matrices. In order to circumvent common interference pro-<lb/>blems, a recognition element, such as an antibody <ref type="biblio">[44,45]</ref>, aptamer or a<lb/> molecular imprinted polymer <ref type="biblio">[46-50]</ref>, may be attached to the elec-<lb/>trode surface. However, that can be expensive and sometimes techni-<lb/>cally challenging. Alternatively, one can make use of a sample pre-<lb/>paration step, which may result in a cheaper and often more robust<lb/> analytical methodology <ref type="biblio">[51,52]</ref>.<lb/></p>
+
+			<p>Taking all of this into account, this work&apos;s rationale was, as a proof-<lb/>of-concept, to combine inexpensive and portable paper electrodes with<lb/> a light, low-cost sample preparation system, namely gas-diffusion mi-<lb/>croextraction (GDME) <ref type="biblio">[35,36,53]</ref>, for sulphite analysis in food ma-<lb/>trices.<lb/></p>
+
+			<head>2. Materials and methods<lb/></head> 
+			<head>2.1. Chemicals and samples<lb/></head>
+
+			<p>All reagents were of analytical grade and were used as received.<lb/> Aqueous solutions were prepared using ultrapure water with a re-<lb/>sistivity not less than 18.2 MΩ cm at 298 K.<lb/></p>
+
+			<p>Sodium sulphite (Merck, Darmstadt, Germany) was used as a source<lb/> of sulphites; hydrochloric acid (HCl) solutions were prepared from the<lb/> concentrated acid (CAQ, Diadema, Brazil); an acetate buffer (pH 4.8,<lb/> 0.01 mol L -1 ) was prepared with sodium acetate and acetic acid (both<lb/> from CAQ). Regarding the Ripper method: sulphuric acid solution<lb/> (25%) was prepared from the concentrated acid (CAQ); potassium io-<lb/>date (KI) was acquired from CAAL (Santa Cecília, Brazil). Starch and<lb/> potassium iodide (KIO 3 ) were bought from Synth (Diadema, Brazil).<lb/> Beverage samples were obtained from an ordinary supermarket.<lb/></p>
+
+			<head>2.2. Extraction<lb/></head>
+
+			<p>The GDME extraction system has been described before (Fig. <ref type="figure">1A</ref>)<lb/> <ref type="biblio">[53-56]</ref>. The membrane was a Mitex PTFE (Millipore) with a porosity<lb/> of 5.0 μm. The extraction procedure was carried out as follows: (1)<lb/> 10 mL of sample were placed inside the sampling flask; (2) 2 mL of<lb/> 1 mol L -1 HCl were added to the sample just before the extraction; (3)<lb/> extraction occurred in a thermostatic water bath at 55 °C in the course<lb/> of 15 min; (4) the acceptor solution was 1.00 mL of acetate buffer; (5)<lb/> 80 μL of 1 mol L -1 HCl was added to 80 μL of the extract just before the<lb/> electroanalysis to convert the HSO 3<lb/> -species into voltammetry-sensi-<lb/>tive SO 2 .<lb/></p>
+
+			<head>2.3. Fabrication of electrodes and resistance measurements<lb/></head>
+
+			<p>The electrodes were fabricated via room-temperature laser pyr-<lb/>olysis, using a WorkSpecial CO 2 laser cutting system (model WS<lb/> 9060C). The optimized fabrication parameters were as follows: (a) the<lb/> laser wavelength was 10.6 μm with a pulse duration of approx. 14 μs;<lb/> (b) the laser scan rate was ca. 16 mm s -1 ; (c) the working distance<lb/> between laser and the target material was ca. 13 mm. RDWorks soft-<lb/>ware was used to design the LP-ePADs templates on 665 g m 2 paper-<lb/>board (WestRock Company, Atlanta, USA) and control the fabrication<lb/> procedure. Prior to the electrochemical measurements, silver grids were<lb/> printed on the connection pads of the electrodes to improve their<lb/> electrical conductivity. Furthermore, these silver grids were protected<lb/> from direct contact with the electrolyte by printing a barrier of fast-<lb/>drying inert glue (Cascola from Henkel, Düsseldorf, Germany). Finally,<lb/> to overcome the common problem of reference electrode instability in<lb/> paper-based devices, silver ink was painted on top of the reference<lb/> electrode area. More details can be found in the literature <ref type="biblio">[1]</ref>.<lb/></p>
+
+			<p>The optimization procedure was based on the feedback results ob-<lb/>tained from the four-point probe resistivity measurements, which were<lb/> carried out using a Keysight DAQ970A (Santa Rosa, USA). Furthermore,<lb/> the reproducibility of the proposed fabrication protocol was in-<lb/>vestigated by measuring the resistivity of 15 identical electrodes pre-<lb/>pared using the parameters specified above.<lb/></p>
+
+			<head>2.4. Electrochemical measurements<lb/></head>
+
+			<p>Voltammetric measurements were performed using a Metrohm<lb/> AUT86702 system with Nova v 2.1.4 software. Electrochemical mea-<lb/>surements were performed at room temperature without removing<lb/> oxygen with the nitrogen flow. The square-wave voltammetry (SWV)<lb/> parameters for sulphite analysis had been optimized previously <ref type="biblio">[35]</ref>,<lb/> and the chosen conditions were as follows: the square-wave frequency<lb/> was 50 Hz, the potential step 5 mV and the wave amplitude 25 mV<lb/> (resulting in a scan rate of 250 mV s -1 ).<lb/></p>
+
+			<head>2.5. Comparison of methods<lb/></head>
+
+			<p>The &apos;Ripper&apos; methodology <ref type="biblio">[57]</ref> is an old simplification of the OIV<lb/> (Organisation Internationale de la Vigne et du Vin) method <ref type="biblio">[58]</ref> based on<lb/> iodometric titration of the acidified sample (the titrating triiodine was<lb/> formed from KIO 3 with an excess of KI). Specifically, 5 mL of 1:4 con-<lb/>centrated H 2 SO 4 were added to 25 mL of the sample immediately before<lb/> the titration, and starch was used as the endpoint indicator <ref type="biblio">[22]</ref>.<lb/></p>
+
+			<head>3. Results and discussion<lb/></head>
+
+			<p>The voltammetric reduction of SO 2 is far from being trivial <ref type="biblio">[59]</ref>.<lb/> Moreover, it has long been studied with electrodes such as mercury<lb/> <ref type="biblio">[14-18]</ref> or copper <ref type="biblio">[29]</ref>. Kolthoff and Miller first suggested that, at a<lb/> low pH, sulphur dioxide undergoes a two-electron, two-proton reduc-<lb/>tion forming sulphoxylic acid <ref type="biblio">[15]</ref>:<lb/></p>
+
+				<formula>+<lb/> +<lb/> +<lb/> SO<lb/> 2e<lb/> 2H<lb/> H SO<lb/> 2<lb/> 2<lb/> 2<lb/></formula>
+
+			<p>This was more recently corroborated by Streeter et al. via electro-<lb/>chemical electron spin resonance (ESR) <ref type="biblio">[29]</ref>.<lb/></p>
+
+			<p>The matrix effect is a common issue encountered when analysing<lb/> complex mixtures by electrochemical methods. Sample preparation is<lb/> often the best way to solve this problem -and not only can it solve the<lb/> selectivity issue but it can also enhance the sensitivity <ref type="biblio">[52]</ref>. GDME is a<lb/> simple and portable technique that combines the advantages of mi-<lb/>croextraction with membrane-aided volatile and semi-volatile extrac-<lb/>tion <ref type="biblio">[52,53]</ref>. In this study, the sample was acidified prior to extraction,<lb/> changing the pH to a value such that all hydrogen sulphite is converted<lb/> to sulphite. Then, when gaseous SO 2 fills the headspace, an aliquot<lb/> diffuses through the membrane and is entrapped in the acceptor solu-<lb/>tion, changing back to non-gaseous hydrogen sulphite with a pH<lb/> change. In this way, sulphite can easily be determined without re-<lb/>quiring an antibody, aptamer or any other recognizing element.<lb/></p>
+
+			<p>The resistance of the electrodes was measured using a four-point<lb/> probe system (Fig. <ref type="figure">1B</ref>) <ref type="biblio">[60]</ref>. Typically, in these kinds of measurement it<lb/></p>
+
+			<figure>Fig. 1. (A) Simple scheme showing the GDME; (B) photo of the resistance being measured.<lb/></figure>
+
+			<p>is necessary to apply a correction factor that depends on the geometry<lb/> (G) of the surface. In this study, the distance between the probes was<lb/> specified (i.e. 7 mm) so that G = 1, and no further correction is re-<lb/>quired. This is due to the fact that the width of the active surface<lb/> (4 mm) is less than three times the distance between the probes <ref type="biblio">[61]</ref>.<lb/> The following resistances were obtained: working electrode -(20 ± 6)<lb/> Ω; counter-electrode -(20 ± 8) Ω; and reference electrode before the<lb/> addition of silver ink -(16 ± 4) Ω (i.e. the same within the uncertainty<lb/> range). This resulted in an average of (19 ± 6) Ω, and considering a<lb/> width of 4 mm, a sheet resistance of 11 ± 4 Ω per square. The ex-<lb/>pression &apos;sheet resistance&apos; is often found in the literature concerning<lb/> conductive surfaces, and values are expressed in the unit of Ω per<lb/> square <ref type="biblio">[62,63]</ref>. Sheet resistance is the equivalent of resistivity for a thin<lb/> conductive surface:<lb/></p>
+
+				<formula>=<lb/> R<lb/> l<lb/> A<lb/></formula>
+
+			<p>where R is the resistance of a conductor (Ω), ρ is the resistivity of the<lb/> material of the conductor (Ω m -1 ), A is the surface of the conductor<lb/> perpendicular to the current direction (m 2 ), and l is the length. Fur-<lb/>thermore, the surface resistivity of a perpendicular section of the con-<lb/>ductor is:<lb/></p>
+
+				<formula>=<lb/> A w t<lb/></formula>
+
+			<p>where w is the width (m) and t is the thickness (m). By combining both<lb/> equations:<lb/></p>
+
+				<formula>=<lb/> R<lb/> l<lb/> w t<lb/></formula>
+
+			<p>It is common in studies of conductive surfaces to use sheet resistance<lb/> (R SH ) instead of resistivity to avoid determination of the surface<lb/> thickness, which simplifies the equation to:<lb/></p>
+
+				<formula>=<lb/> R R<lb/> l<lb/> w<lb/> SH<lb/></formula>
+
+			<p>R SH is the resistance of a rectangular surface for which length and<lb/> width have the same value, ergo the sheet resistance is the resistance of<lb/> a geometrical square of a thin surface. Measurements with the four-<lb/>point probe system not only gave rise to more reproducible results but<lb/> also, in general, 60-80% lower resistance when compared with data<lb/> from a common 2-wire multimeter.<lb/></p>
+
+			<p>The analytical parameters obtained from the analytical curve<lb/> (Fig. <ref type="figure">2</ref>) are as follows: the square of the sample correlation coefficient<lb/> (r 2 ) is 0.9987, while the limits of detection and of quantification (LOD<lb/> and LOQ) are1.2 mg L -1 and 3.9 mg L -1 , respectively. The intercept<lb/> was above zero, probably due to the presence of sulphites in the elec-<lb/>trodes (sulphites are a common additive in pulping during the paper<lb/> manufacturing process). The LOD and LOQ were calculated as three and<lb/> ten times the standard deviation of the intercept/slope, respectively.<lb/> Although there are lower LODs in the literature (around 0.01 mg L -1<lb/> <ref type="biblio">[23,30]</ref>), these limits are suitable for liquid samples like wine or juices<lb/> and can be decreased with longer extraction times. They are also ap-<lb/>propriate bearing in mind that many countries have regulatory limits of<lb/> 10 mg L -1 . Repeatability was evaluated by measuring five different<lb/> solutions of 30 mg L -1 , and was (0.18 ± 0.1) mA, i.e. the coefficient of<lb/> variation (C.V.) was 6%. Reproducibility was evaluated in the same<lb/> manner but on three different days, and was (183 ± 5) μA, i.e. the C.V.<lb/> is 3%. The free sulphite content was determined in several different<lb/> samples by the proposed methodology and by the simplified Ripper<lb/> methodology. Quantification by GDME-LP-ePAD was performed by a<lb/> single standard addition. As shown in Table <ref type="table">1</ref>, the results are similar<lb/> within error margins. No dark-coloured samples were analysed because<lb/> the endpoint of the titration using starch (in the Ripper method) is a<lb/> dark violet shade that would be difficult to observe. No interference<lb/> studies were performed since there is no suspicion that any other<lb/> compounds volatile enough to be extracted at the temperatures used<lb/> (ethanol, carbon dioxide, acetaldehyde, etc.), have similar behaviour<lb/> regarding pH changes, or might have the same peak potential in the<lb/> SWV.<lb/></p>
+
+			<head>4. Conclusions<lb/></head>
+
+			<p>For the first time LP-ePADs were used in an analytical assay.<lb/> Assisted by a simple GDME sample preparation step, a LOQ lower than<lb/> the 10 mg L -1 regulatory limit was attained, along with suitable re-<lb/>producibility. The developed analytical method is particularly compe-<lb/>titive in terms of price and portability, allowing measurements at the<lb/> point of production. It may therefore be of interest to drinks producers<lb/> who use sulphites as an additive.<lb/></p>
+
+			<figure>Fig. 2. Square wave voltammograms of several extracts with different sulphite<lb/> concentrations (from 2.5 to 25 mg L -1 ). Inset: the corresponding calibration<lb/> curve (peak current vs. sulphite concentration).<lb/></figure>
+
+			<figure type="table">Table 1<lb/> Comparison of analytical results obtained using the proposed method (GDME-<lb/>LP-ePADs) and the simplified Ripper method. All sulphite values are in mg L -1<lb/> and analyses were done in duplicate.<lb/> Sample<lb/> GDME-LP-ePAD<lb/> Ripper method<lb/> Wine 1:<lb/> ABV 11,5%, white wine<lb/> 12 ± 1<lb/> 13 ± 1<lb/> Wine 2:<lb/> ABV 7,5%, sparkling white wine<lb/> 28 ± 3<lb/> 27 ± 2<lb/> Wine 3:<lb/> ABV 10.0%, white wine<lb/> 20 ± 2<lb/> 21 ± 2<lb/> Beer 1:<lb/> ABV 4.5%, Pilsen<lb/> 13 ± 2<lb/> 17 ± 2<lb/> Beer 2:<lb/> ABV 4.5%, Pilsen<lb/> 16 ± 2<lb/> 15 ± 2<lb/> Non-alcoholic beer<lb/> 10.9 ± 0.9<lb/> 9.6 ± 0.8<lb/> Vinegar<lb/> 16 ± 2<lb/> 16 ± 2<lb/> Coconut water<lb/> 32 ± 3<lb/> 32 ± 3<lb/>ABV -alcohol by volume.</figure>
+
+
+	</text>
+</tei>

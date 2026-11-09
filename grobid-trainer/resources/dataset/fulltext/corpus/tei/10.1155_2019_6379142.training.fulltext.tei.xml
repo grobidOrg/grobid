@@ -1,0 +1,217 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="10.1155_2019_6379142">
+			<titleStmt>
+				<title level="a">Mathematical Modeling to Study Multistage Stem Cell Transplantation in HIV-1 Patients</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1155/2019/6379142</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document MATH_71</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+			<head>1. Introduction<lb/></head>
+
+			<p>A virus called HIV (human immunodeficiency virus) causes<lb/> AIDS (acquired immunodeficiency syndrome). HIV is a<lb/> retrovirus that attacks the vital organs and the cells of the<lb/> human immune system, making people more vulnerable to<lb/> diseases and infections. Without treatment, HIV can develop<lb/> into AIDS in many cases. In the absence of therapy the virus<lb/> progresses. The developing rate of the virus differs between<lb/> individuals and changes according to many factors. These<lb/> factors include ability of the body to fight against HIV, the<lb/> age of the individual, access to healthcare, the individual&apos;s<lb/> genetic inheritance, the presence of other infections, and the<lb/> resistance to certain strains of HIV.<lb/></p>
+
+			<p>According to the World Health Organization&apos;s guidelines<lb/> issued in June 2018, there is no viable cure or vaccine for HIV,<lb/> but treatments can improve patients&apos; quality of life.<lb/></p>
+
+			<p>When given the right treatment, some patients can live<lb/> with HIV and reduce their viral load to such a degree that it<lb/> is not discoverable. Studies by the CDC (Centers for Disease<lb/> Control and Prevention) proved that in individuals who have<lb/> no discoverable viral load &quot;through sex there is effectively<lb/> no risk of transmitting HIV to an HIV-negative partner.&quot;<lb/> Generally, people who live with HIV take a composition<lb/> of medications called HAART (highly active antiretroviral<lb/> therapy) or CART (combination antiretroviral therapy) <ref type="biblio">[1]</ref>.<lb/> This antiretroviral therapy (ART) prevents or slows the virus<lb/> from developing.<lb/></p>
+
+			<p>We can find two types of HIV: HIV-1 and HIV-2. HIV-1 is<lb/> more infective and more dangerous than HIV-2 as mentioned<lb/> in <ref type="biblio">[2]</ref>. Also HIV-1 concretes both lymphadenopathy associ-<lb/>ated virus (LAV) and human T-lymphotropic virus-3 (HTLV-<lb/>III). HIV-2 is largely found in West Africa <ref type="biblio">[3]</ref>, according to its<lb/> relatively poor capacity for transmission.<lb/></p>
+
+			<p>Understanding the dynamics of HIV-1 by mathematical<lb/> modeling plays a basic role in medicine. All mathematical<lb/> models of HIV-1 are based on the model in <ref type="biblio">[4]</ref> where<lb/> they considered the interaction between four components:<lb/> uninfected CD4 + T-cells, latent infected CD4 + T-cells,<lb/> infected CD4 + T-cells, and the free virus. Then, many<lb/> researchers modified this model such as in <ref type="biblio">[5]</ref> where they<lb/> presented the same model without the latent infected CD4<lb/> + T-cells. The models that are studied in <ref type="biblio">[6-10]</ref> focused on<lb/> models interested in the dynamics of HIV and a hope for a<lb/> cure for the infection.<lb/></p>
+
+			<p>Stem Cell Therapy. Nowadays, stem cell studies are a field<lb/> of much interest, and within this area there is a need for<lb/> mathematical model representation of the dynamics growth<lb/> for stem cells. Inside any organism the new cells need a<lb/> source, which requires a continuous role to replace the older<lb/> cells, to keep the balance of homeostasis for tissue, and<lb/> to react to the external ecological stresses. In each organ<lb/> adult stem cells <ref type="biblio">[11, 12]</ref> are planning this important role to<lb/> replace the older cells. Through its niche in the organism<lb/> and its special nature, the stem cell is able to renew itself.<lb/> The daughter cells are generated from the stem cells through<lb/> cell divisions and will differentiate into one of any number<lb/> of organ specific cell types; in this process of differentiation,<lb/> they lose their initial capacity for self-renewal. Lie and Xie<lb/> <ref type="biblio">[13]</ref> discussed an accurate equilibrium between stem cell self-<lb/>renewal and differentiation; also they studied the way stem<lb/> cells regulate the body and treat human disease. A lot of<lb/> interest has also been focused on embryonic stem cells <ref type="biblio">[14,<lb/> 15]</ref>, a kind of stem cell from earlier in human development,<lb/> and it is a smart cell that can be differentiated into any type of<lb/> cells within the body.<lb/></p>
+
+			<p>Adult stem and embryonic cells have the same properties<lb/> of proliferation, differentiation, and self-renewal. Hence,<lb/> thinking about their transplantation in the patient can be a<lb/> good idea to replace injured cells and help in restoring the<lb/> function of damaged cells. Recent studies have shown the<lb/> efficacy of this technique to regenerate some body organs<lb/> <ref type="biblio">[16]</ref>. All of the abovementioned properties are a critical<lb/> field within the research of stem cells. According to the<lb/> recent researches that studied proliferation of stem cells, this<lb/> paper introduces a mathematical model. As discussed in<lb/> Henrigou et al. <ref type="biblio">[17]</ref> and Bonab et al. <ref type="biblio">[18]</ref>, many therapies<lb/> of stem cells depend on the availability of the number<lb/> of the stem cells to transfer. Therefore, the representation<lb/> of the rate of growth for a population of stem cells as a<lb/> mathematical model will be very useful. Several models<lb/> applied to stem cell proliferation as in Loeffler and Wichman<lb/> <ref type="biblio">[19]</ref> and as in Cowan and Morris <ref type="biblio">[20]</ref> have been reviewed<lb/> and accordingly this paper&apos;s mathematical model was<lb/> constructed.<lb/></p>
+
+			<p>Depending on the ability of stem cells to differentiate into<lb/> some of the specialized phenotypes in response to appropriate<lb/> signals <ref type="biblio">[21]</ref>, this paper proposes to treat HIV-1 patients by<lb/> engraftment of the type of cells able to transform to T-cells<lb/> (CD4+T). Other varieties of cells were tested for restoring<lb/> the heart <ref type="biblio">[22-26]</ref>, the cornea <ref type="biblio">[27]</ref>, and pancreatic functions<lb/> <ref type="biblio">[28, 29]</ref>.<lb/></p>
+
+			<p>This paper begins by recalling a known mathematical<lb/> model for multilineage stem cells, which was used to for-<lb/>mulate a new mathematical model of the viral dynamic<lb/> of HIV-1 treatment by stem cell therapy. The study of the<lb/> model enables us to choose the best stage in the lineage<lb/> to engraft these cells and help medicine make the good<lb/> decision.<lb/></p>
+
+			<head>2. Mathematical Modeling of n-Multistage<lb/> Stem Cell Maturation<lb/></head>
+
+			<p>Let &#x1D460; i be the density of stem cells at the &#x1D456;th stage for &#x1D456; =<lb/> 1, 2, . . . , &#x1D45B; -1, of differentiation and the density of mature<lb/> cells for &#x1D456; = &#x1D45B;. Let ℎ(&#x1D461;) be the concentration of signaling<lb/> molecules which depends only on the density of mature cells<lb/> &#x1D460; &#x1D45B; ; thus the dynamics of a cytokine (a protein, polypeptide, or<lb/> glycoprotein that are used in signaling and intracellular sig-<lb/>naling and also aid in cell-to-cell communication in immune<lb/> responses and stimulate the movement of cells towards sites<lb/> of inflammation and infection) can be represented as a first-<lb/>order differential equation:&#x1D451;ℎ/&#x1D451;&#x1D461; = &#x1D707;(1 -ℎ -&#x1D6FE;ℎ&#x1D460; &#x1D45B; (&#x1D461;)), where<lb/> &#x1D707; is the death rate of a mature stem cell population and &#x1D6FE; is a<lb/> +ve constant; solving this equation using the approximation<lb/> of the quasi-steady state we get ℎ = ℎ &#x1D6FE; (&#x1D461;) = 1/(1 + &#x1D6FE;&#x1D460; &#x1D45B; (&#x1D461;)).<lb/> The stem cell lineage can be expressed as an ODEs system<lb/> <ref type="biblio">[30]</ref>:<lb/></p>
+
+				<formula>&#x1D451;&#x1D460; 1<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D453; 1 (ℎ (&#x1D461;) , &#x1D460; 1 (&#x1D461;)) ,<lb/> &#x1D451;&#x1D460; 2<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D453; 2 (ℎ (&#x1D461;) , &#x1D460; 2 (&#x1D461;)) + &#x1D454; 1 (ℎ (&#x1D461;) , &#x1D460; 1 (&#x1D461;)) ,<lb/> . . .<lb/> &#x1D451;&#x1D460; &#x1D45B;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D453; &#x1D45B; (ℎ (&#x1D461;) , &#x1D460; &#x1D45B; (&#x1D461;)) + &#x1D454; &#x1D45B;-1 (ℎ (&#x1D461;) , &#x1D460; &#x1D45B;-1 (&#x1D461;)) .<lb/></formula>
+
+			<label>(1)<lb/></label>
+
+			<p>Here &#x1D453; &#x1D456; (ℎ(&#x1D461;), &#x1D460; &#x1D456; (&#x1D461;)) is the change of &#x1D460; &#x1D456; (&#x1D461;) that is caused by<lb/> processes at the &#x1D456;th stage of maturation. If gain cells caused by<lb/> the loss of differentiation or death are more weakened than<lb/> the self-renewal and proliferation, then &#x1D453; &#x1D456; (ℎ(&#x1D461;), &#x1D460; &#x1D456; (&#x1D461;)) &gt; 0;<lb/> otherwise &#x1D453; &#x1D456; (ℎ(&#x1D461;), &#x1D460; &#x1D456; (&#x1D461;)) &lt; 0. But if we suppose that mature<lb/> cells are postmitotic (they cannot proliferate), then since &#x1D453; &#x1D45B;<lb/> is accounted only for cell death, we have &#x1D453; &#x1D45B; (ℎ(&#x1D461;), &#x1D460; &#x1D45B; (&#x1D461;)) &lt; 0.<lb/> We denote &#x1D454; &#x1D456; (ℎ(&#x1D461;), &#x1D460; &#x1D456; (&#x1D461;)) ≥ 0 to be the flux of cells from<lb/> the maturation stage &#x1D456; to maturation stage &#x1D456; + 1 due to<lb/> differentiation.<lb/></p>
+
+			<p>Let &#x1D45D; &#x1D456; (&#x1D461;) denote the proliferation rate of the subpopu-<lb/>lation of type &#x1D456; at time &#x1D461;, &#x1D44E; &#x1D456; (&#x1D461;) denote the fraction of self-<lb/>renewal, and &#x1D707; &#x1D456; (&#x1D461;) denote the death rate. Then, the flux<lb/> to mitosis at time &#x1D461; will be &#x1D45D; &#x1D456; (&#x1D461;)&#x1D460; &#x1D456; (&#x1D461;). The fraction &#x1D44E; &#x1D456; (&#x1D461;) of<lb/> daughter cells dose not differentiate. Thus, the influx to cell<lb/> population &#x1D456; after cell division is 2&#x1D44E; &#x1D456; (&#x1D461;)&#x1D45D; &#x1D456; (&#x1D461;)&#x1D460; &#x1D456; (&#x1D461;) and the<lb/> flux to the next cell compartment is 2(1 -&#x1D44E; &#x1D456; (&#x1D461;))&#x1D45D; &#x1D456; (&#x1D461;)&#x1D460; &#x1D456; (&#x1D461;).<lb/> The flux to death at time &#x1D461; is given by &#x1D707; &#x1D456; (&#x1D461;)&#x1D460; &#x1D456; (&#x1D461;). Hence we<lb/> obtain<lb/></p>
+
+				<formula>&#x1D453; &#x1D456; (&#x1D461;) = (2&#x1D44E; &#x1D456; (&#x1D461;) -1) &#x1D45D; &#x1D456; (&#x1D461;) &#x1D460; &#x1D456; (&#x1D461;) -&#x1D707; &#x1D456; (&#x1D461;) &#x1D460; &#x1D456; (&#x1D461;) ,<lb/> for &#x1D456; &lt; &#x1D45B;,<lb/> &#x1D454; &#x1D456; (&#x1D461;) = 2 (1 -&#x1D44E; &#x1D456;-1 (&#x1D461;)) &#x1D45D; &#x1D456;-1 (&#x1D461;) &#x1D460; &#x1D456;-1 (&#x1D461;) , for 1 &lt; &#x1D456; &lt; &#x1D45B;,<lb/> &#x1D453; &#x1D45B; (&#x1D461;) = -&#x1D707; &#x1D45B; (&#x1D461;) &#x1D460; &#x1D45B; (&#x1D461;) .<lb/></formula> 
+				<label>(2)<lb/></label>
+
+			<p>Assume that the proliferation rates and the death rates<lb/> are constant with time, and self-renewal fractions are con-<lb/>trolled by the signal feedback,&#x1D44E; &#x1D456; (&#x1D461;) = &#x1D44E; &#x1D456; (ℎ(&#x1D460; &#x1D456; (&#x1D461;)) =<lb/> &#x1D44E; &#x1D456;,&#x1D45A;&#x1D44E;&#x1D465; (ℎ(&#x1D460; &#x1D456; (&#x1D461;)), where &#x1D44E; &#x1D456;,&#x1D45A;&#x1D44E;&#x1D465; = &#x1D44E; &#x1D456; is the maximal frac-<lb/>tion of self-renewal. Therefore, system (<ref type="formula">1</ref>) can be written<lb/> as<lb/></p>
+
+				<formula>&#x1D451;&#x1D460; 1<lb/> &#x1D451;&#x1D461;<lb/> = (2&#x1D44E; 1 ℎ -1) &#x1D45D; 1 &#x1D460; 1 -&#x1D707; 1 &#x1D460; 1 ,<lb/> &#x1D451;&#x1D460; 2<lb/> &#x1D451;&#x1D461;<lb/> = (2&#x1D44E; 2 ℎ -1) &#x1D45D; 2 &#x1D460; 2 + 2 (1 -&#x1D44E; 1 ℎ) &#x1D45D; 1 &#x1D460; 1 -&#x1D707; 2 &#x1D460; 2 ,<lb/> . . .<lb/> &#x1D451;&#x1D460; i<lb/> &#x1D451;&#x1D461;<lb/> = (2&#x1D44E; i ℎ -1) &#x1D45D; i &#x1D460; i + 2 (1 -&#x1D44E; i-1 ℎ) &#x1D45D; i-1 &#x1D460; i-1 -&#x1D707; i &#x1D460; i ,<lb/> . . .<lb/> &#x1D451;&#x1D460; &#x1D45B;<lb/> &#x1D451;&#x1D461;<lb/> = 2 (1 -&#x1D44E; &#x1D45B;-1 ℎ) &#x1D45D; &#x1D45B;-1 &#x1D460; &#x1D45B;-1 -&#x1D707; &#x1D45B; &#x1D460; &#x1D45B; .<lb/></formula>
+
+				<label>(3)<lb/></label>
+
+			<p>Using that ℎ = 1/(1 + &#x1D6FE;&#x1D460; &#x1D45B; ), then system (<ref type="formula">3</ref>) becomes<lb/></p>
+
+				<formula>&#x1D451;&#x1D460; 1<lb/> &#x1D451;&#x1D461;<lb/> = (<lb/> 2&#x1D44E; 1<lb/> 1 + &#x1D6FE;&#x1D460; &#x1D45B;<lb/> -1) &#x1D45D; 1 &#x1D460; 1 -&#x1D707; 1 &#x1D460; 1 ,<lb/> &#x1D451;&#x1D460; 2<lb/> &#x1D451;&#x1D461;<lb/> = (<lb/> 2&#x1D44E; 2<lb/> 1 + &#x1D6FE;&#x1D460; &#x1D45B;<lb/> -1) &#x1D45D; 2 &#x1D460; 2 + 2 (1 -<lb/>&#x1D44E; 1<lb/> 1 + &#x1D6FE;&#x1D460; &#x1D45B;<lb/> ) &#x1D45D; 1 &#x1D460; 1<lb/> -&#x1D707; 2 &#x1D460; 2 ,<lb/> . . .<lb/> &#x1D451;&#x1D460; i<lb/> &#x1D451;&#x1D461;<lb/> = (<lb/> 2&#x1D44E; i<lb/> 1 + &#x1D6FE;&#x1D460; &#x1D45B;<lb/> -1) &#x1D45D; i &#x1D460; i + 2 (1 -<lb/>&#x1D44E; i-1<lb/> 1 + &#x1D6FE;&#x1D460; &#x1D45B;<lb/> ) &#x1D45D; i-1 &#x1D460; i-1<lb/> -&#x1D707; i &#x1D460; i ,<lb/> . . .<lb/> &#x1D451;&#x1D460; &#x1D45B;<lb/> &#x1D451;&#x1D461;<lb/> = 2 (1 -<lb/>&#x1D44E; &#x1D45B;-1<lb/> 1 + &#x1D6FE;&#x1D460; &#x1D45B;<lb/> ) &#x1D45D; &#x1D45B;-1 &#x1D460; &#x1D45B;-1 -&#x1D707; &#x1D45B; &#x1D460; &#x1D45B; .<lb/></formula>
+
+				<label>(4)<lb/></label>
+
+			<p>For the initial data and the model parameters, we add the<lb/> following biologically relevant assumptions as in <ref type="biblio">[30]</ref>:<lb/></p>
+
+				<formula>&#x1D461;&#x1D716; [0, ∞) .<lb/> &#x1D460; &#x1D456; (0) ≥ 0, &#x1D453;&#x1D45C;&#x1D45F; &#x1D456; = 1, . . . , &#x1D45B;,<lb/> &#x1D707; &#x1D456; ≥ 0, &#x1D453;&#x1D45C;&#x1D45F; &#x1D456; = 1, . . . , &#x1D45B; -1,<lb/> &#x1D707; &#x1D45B; &gt; 0,<lb/> &#x1D45D; &#x1D456; &gt; 0, &#x1D453;&#x1D45C;&#x1D45F; &#x1D456; = 1, . . . , &#x1D45B; -1,<lb/> &#x1D44E; &#x1D456;,&#x1D45A;&#x1D44E;&#x1D465; &#x1D716; [0, 1) , &#x1D453;&#x1D45C;&#x1D45F; &#x1D456; = 1, . . . , &#x1D45B; -1,<lb/> &#x1D6FE; &gt; 0.<lb/></formula>
+
+			<label>(5)<lb/></label>
+
+			<head>3. Mathematical Modeling of the n-Multistage<lb/> Stem Cell Therapy for HIV-1 Patients<lb/></head>
+
+			<p>In our previous work <ref type="biblio">[31]</ref>, we proposed for the first time<lb/> in literature a model that explains the effect of stem cell<lb/> transplantation on HIV-1 viral dynamics. The basic model<lb/> structure that describes the therapy uses four state variables:<lb/> stem cells (S), healthy T-cells (T), infected T-cells (T i ), and<lb/> the virus (&#x1D449;):<lb/></p>
+
+				<formula>&#x1D451;&#x1D446;<lb/> &#x1D451;&#x1D461;<lb/> = [&#x1D44F; (&#x1D6FC; &#x1D446; -&#x1D6FC; &#x1D437; ) -&#x1D6FF; &#x1D446; ] &#x1D446;<lb/> &#x1D451;&#x1D447;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D706; &#x1D447; -&#x1D451; &#x1D447; &#x1D447; -&#x1D458; &#x1D447; TV + (2&#x1D6FC; &#x1D437; + &#x1D6FC; &#x1D434; ) &#x1D44F;&#x1D434;&#x1D446;<lb/> &#x1D451;&#x1D447; &#x1D456;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D458; &#x1D447; TV -&#x1D70C; &#x1D447; &#x1D456; &#x1D447; &#x1D456;<lb/> &#x1D451;&#x1D449;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D70B; &#x1D447; &#x1D456; &#x1D447; &#x1D456; -&#x1D450;&#x1D449;,<lb/></formula>
+
+				<label>(6)<lb/></label>
+
+			<p>where the parameters &#x1D44F;, &#x1D6FC; &#x1D446; , &#x1D6FC; &#x1D437; are nonnegative and &#x1D44F;(&#x1D6FC; &#x1D446; -<lb/>&#x1D6FC; &#x1D437; )-&#x1D6FF; &#x1D446; are nonpositive. We know there are three possibilities<lb/> for a stem cell to divide <ref type="biblio">[32]</ref>:<lb/></p> 
+			<list>
+			<item>(i) Symmetric self-renewal, where a stem cell can divide<lb/> to become two stem cells, with probability &#x1D6FC; &#x1D460;<lb/></item> 
+			<item>(ii) Asymmetric self-renewal, where one daughter cell<lb/> remains a stem cell while the other does not inherit this<lb/> characteristic, with probability &#x1D6FC; &#x1D434;<lb/></item> 
+			<item>(iii) Symmetric commitment differentiation, where a<lb/> stem cell can divide to become two committed cells, with<lb/> probability &#x1D6FC; &#x1D437;<lb/></item>
+			</list> 
+			<p>Therefore &#x1D6FC; &#x1D434; + &#x1D6FC; &#x1D446; + &#x1D6FC; &#x1D437; = 1. We suppose that the stem<lb/> cells &#x1D446; divide at rate &#x1D44F; and die at rate &#x1D6FF; &#x1D446; . We need to introduce<lb/> an amplification factor &#x1D434; to finally get the simplified ODE:<lb/> &#x1D451;&#x1D446;/&#x1D451;&#x1D461; = [&#x1D44F;(&#x1D6FC; &#x1D446; -&#x1D6FC; &#x1D437; ) -&#x1D6FF; &#x1D446; ]&#x1D446;, such that &#x1D44F;(&#x1D6FC; &#x1D446; -&#x1D6FC; &#x1D437; ) -&#x1D6FF; &#x1D446;<lb/> represents the net per-capita growth rate of stem cells <ref type="biblio">[33]</ref>;<lb/> for the uninfected susceptible &#x1D447; cells the production rate is<lb/> &#x1D706; &#x1D447; , and the death rate is &#x1D451; &#x1D447; and they become infected cells<lb/> (&#x1D447; &#x1D456; ) at rate &#x1D458; &#x1D447; ; the infected cells are produced and die at the<lb/> rates &#x1D458; &#x1D447; and &#x1D70C; &#x1D447; &#x1D456; , respectively; free virions (&#x1D449;) are produced<lb/> from infected cells at rate &#x1D70B; &#x1D447; &#x1D456; and decline at rate &#x1D450;.<lb/></p>
+
+			<p>Since stem cells &#x1D446; = &#x1D446; 1 need many stages to transform to<lb/> mature cells &#x1D446; n = T, in this paper we shall perform our pre-<lb/>vious work <ref type="biblio">[31]</ref> by including the stages of the lineage of stem<lb/> cells given by system (<ref type="formula">4</ref>). Our system (<ref type="formula">6</ref>) can then transform<lb/> to a new system that describes the n-multistage stem cells<lb/> transformation in the therapy of HIV-1 patients. This new<lb/> model describes the dynamics of stem cell transplantation on<lb/> the virus using (&#x1D45B; + 2) state variables ((&#x1D45B; + 2) ODEs):<lb/></p>
+
+				<formula>&#x1D451;&#x1D446; 1<lb/> &#x1D451;&#x1D461;<lb/> = (<lb/> 2&#x1D44E; 1<lb/> 1 + &#x1D6FE;&#x1D447;<lb/> -1) &#x1D45D; 1 &#x1D446; 1 -&#x1D707; 1 &#x1D446; 1 ,<lb/> &#x1D451;&#x1D446; 2<lb/> &#x1D451;&#x1D461;<lb/> = (<lb/> 2&#x1D44E; 2<lb/> 1 + &#x1D6FE;&#x1D447;<lb/> -1) &#x1D45D; 2 &#x1D446; 2 + 2 (1 -<lb/>&#x1D44E; 1<lb/> 1 + &#x1D6FE;T<lb/> ) &#x1D45D; 1 &#x1D446; 1<lb/> -&#x1D707; 2 &#x1D446; 2 ,<lb/> . . .<lb/> &#x1D451;&#x1D446; i<lb/> &#x1D451;&#x1D461;<lb/> = (<lb/> 2&#x1D44E; i<lb/> 1 + &#x1D6FE;T<lb/> -1) &#x1D45D; i &#x1D446; i + 2 (1 -<lb/>&#x1D44E; i-1<lb/> 1 + &#x1D6FE;T<lb/> ) &#x1D45D; i-1 &#x1D446; i-1<lb/> -&#x1D707; i &#x1D446; i ,<lb/> . . .<lb/> &#x1D451;&#x1D446; &#x1D45B;-1<lb/> &#x1D451;&#x1D461;<lb/> = (<lb/> 2&#x1D44E; &#x1D45B;-1<lb/> 1 + &#x1D6FE;T<lb/> -1) &#x1D45D; &#x1D45B;-1 &#x1D446; &#x1D45B;-1<lb/> + 2 (1 -<lb/>&#x1D44E; &#x1D45B;-2<lb/> 1 + &#x1D6FE;&#x1D447;<lb/> ) &#x1D45D; &#x1D45B;-2 &#x1D446; &#x1D45B;-2 -&#x1D707; &#x1D45B;-1 &#x1D446; &#x1D45B;-1 ,<lb/> &#x1D451;&#x1D447;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D706; &#x1D447; -&#x1D451; &#x1D447; &#x1D447; -&#x1D458; &#x1D447; TV + 2 (1 -<lb/>&#x1D44E; &#x1D45B;-1<lb/> 1 + &#x1D6FE;&#x1D447;<lb/> ) &#x1D45D; &#x1D45B;-1 &#x1D446; &#x1D45B;-1<lb/> -&#x1D707; &#x1D45B; T,<lb/> &#x1D451;&#x1D447; &#x1D456;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D458; &#x1D447; TV -&#x1D70C; &#x1D447; &#x1D456; &#x1D447; &#x1D456; ,<lb/> &#x1D451;&#x1D449;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D70B; &#x1D447; &#x1D456; &#x1D447; &#x1D456; -&#x1D450;&#x1D449;.<lb/></formula>
+
+				<label>(7)<lb/></label>
+
+			<p>Different numbers of compartment n were chosen in pre-<lb/>vious researches, as mentioned in <ref type="biblio">[34]</ref>. By n=8 we mean that<lb/> the direct reflection of the biological case of differentiation of<lb/> white blood stem cells into neutrophilic granulocytes <ref type="biblio">[35]</ref>; in<lb/> this case we treat all immature and mature cells as separated<lb/> populations so they might be understood as stem cells and<lb/> their direct progeny. The compartment n=6 corresponds to<lb/> short-and long-term repopulating stem cells, multipotent<lb/> progenitor cells, committed progenitor cells, precursors, and<lb/> mature cells, so it is related to the properties of division cells.<lb/> For simplicity we consider &#x1D45B; = 2. The nth compartment is the<lb/> population of mature cells, which we suppose, for simplicity,<lb/> do not divide any more. In the next section, we will study<lb/> the following 5-dimensional version extracted from model<lb/> (<ref type="formula">7</ref>):<lb/></p>
+
+				<formula>&#x1D451;&#x1D446; 1<lb/> &#x1D451;&#x1D461;<lb/> = (<lb/> 2&#x1D44E; 1<lb/> 1 + &#x1D6FE;&#x1D447;<lb/> -1) &#x1D45D; 1 &#x1D446; 1 -&#x1D707; 1 &#x1D446; 1 ,<lb/> &#x1D451;&#x1D446; 2<lb/> &#x1D451;&#x1D461;<lb/> = (<lb/> 2&#x1D44E; 2<lb/> 1 + &#x1D6FE;&#x1D447;<lb/> -1) &#x1D45D; 2 &#x1D446; 2 + 2 (1 -<lb/>&#x1D44E; 1<lb/> 1 + &#x1D6FE;T<lb/> ) &#x1D45D; 1 &#x1D446; 1<lb/> -&#x1D707; 2 &#x1D446; 2 ,<lb/> &#x1D451;&#x1D447;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D706; &#x1D447; -(&#x1D451; &#x1D447; + &#x1D707; 3 ) &#x1D447; -&#x1D458; &#x1D447; TV<lb/> + 2 (1 -<lb/>&#x1D44E; 2<lb/> 1 + &#x1D6FE;&#x1D447;<lb/> ) &#x1D45D; 2 &#x1D446; 2 ,<lb/> &#x1D451;&#x1D447; &#x1D456;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D458; &#x1D447; TV-&#x1D70C; &#x1D447; &#x1D456; &#x1D447; &#x1D456; ,<lb/> &#x1D451;&#x1D449;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D70B; &#x1D447; &#x1D456; &#x1D447; &#x1D456; -&#x1D450;&#x1D449;.<lb/></formula>
+
+				<label>(8)<lb/></label>
+
+			<p>Here &#x1D707; 3 is the death rate of T-cells that come out from the<lb/> final stage of the stem cell maturation, so for simplicity let<lb/> &#x1D451; &#x1D447; + &#x1D707; 3 = &#x1D6FD;.<lb/></p>
+
+			<head>4. Study of the Mathematical Model of<lb/> the 2-Multistage Stem Cell Therapy for<lb/> HIV-1 Patients<lb/></head>
+
+			<p>In this section, we are going to discuss the stability of<lb/> the model of viral dynamics corresponding to the stem<lb/> cell therapy given by system (<ref type="formula">8</ref>). We shall try to find out<lb/> equilibrium points of system (<ref type="formula">8</ref>) in the form (&#x1D446; 1 , &#x1D446; 2 , &#x1D447;, &#x1D447; &#x1D456; , &#x1D449;).<lb/> As in <ref type="biblio">[36]</ref> we take &#x1D6FE; to be very small; therefore we replace<lb/> &#x1D44E; i /(1 + &#x1D6FE;&#x1D447;) by &#x1D44E; &#x1D456;, for &#x1D456; = 1, 2, . . . , &#x1D45B; -1, which is equivalent to<lb/> choosing ℎ = 1/(1 + &#x1D6FE;&#x1D447;)&#x1D716;(0, 1) as in <ref type="biblio">[37]</ref>.<lb/></p>
+
+			<p>The following theorem gives us the equilibrium points for<lb/> the following system:<lb/></p>
+
+				<formula>&#x1D451;&#x1D446; 1<lb/> &#x1D451;&#x1D461;<lb/> = (2&#x1D44E; 1 -1) &#x1D45D; 1 &#x1D446; 1 -&#x1D707; 1 &#x1D446; 1 ,<lb/> &#x1D451;&#x1D446; 2<lb/> &#x1D451;&#x1D461;<lb/> = (2&#x1D44E; 2 -1) &#x1D45D; 2 &#x1D446; 2 + 2 (1 -&#x1D44E; 1 ) &#x1D45D; 1 &#x1D446; 1 -&#x1D707; 2 &#x1D446; 2 ,<lb/> &#x1D451;&#x1D447;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D706; &#x1D447; -&#x1D6FD;&#x1D447; -&#x1D458; &#x1D447; TV + 2 (1 -&#x1D44E; 2 ) &#x1D45D; 2 &#x1D460; 2 ,<lb/> &#x1D451;&#x1D447; &#x1D456;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D458; &#x1D447; TV-&#x1D70C; &#x1D447; &#x1D456; &#x1D447; &#x1D456; ,<lb/> &#x1D451;&#x1D449;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D70B; &#x1D447; &#x1D456; &#x1D447; &#x1D456; -&#x1D450;&#x1D449;.<lb/></formula>
+
+				<label>(9)<lb/></label>
+
+			<p>If the basic reproduction ratio of the viruses is given by &#x1D445; 0 =<lb/> &#x1D458; &#x1D447; &#x1D706; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; /&#x1D450;&#x1D70C; &#x1D447; &#x1D456; &#x1D6FD;, then we get the following theorem.<lb/></p>
+
+			<p>Theorem 1. System (<ref type="formula">9</ref>) has two equilibrium points given by<lb/> &#x1D443; 1 (&#x1D446; 1 , &#x1D446; 2 , &#x1D447;, &#x1D447; &#x1D456; , &#x1D449;) = (0, 0, &#x1D706; &#x1D447; /&#x1D6FD;, 0, 0) corresponding to the<lb/> free disease case and &#x1D443; 2 (&#x1D446; 1 , &#x1D446; 2 , &#x1D447;, &#x1D447; &#x1D456; , &#x1D449;) = (0, 0, (&#x1D706; &#x1D447; /&#x1D6FD;)(1/<lb/> &#x1D445; 0 ), (&#x1D6FD;&#x1D450;/&#x1D458; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; )(&#x1D445; 0 -1), (&#x1D6FD;/&#x1D458; &#x1D447; )(&#x1D445; 0 -1)) corresponding to the<lb/> endemic case.<lb/></p>
+
+			<p>Proof. To find the equilibrium points, we solve the following<lb/> system for (&#x1D446; 1 , &#x1D446; 2 , &#x1D447;, &#x1D447; &#x1D456; , &#x1D449;):<lb/></p>
+
+				<formula>(2a 1 -1) p 1 S 1 -&#x1D707; 1 S 1 = 0<lb/> (2&#x1D44E; 2 -1) &#x1D45D; 2 &#x1D446; 2 + 2 (1 -&#x1D44E; 1 ) &#x1D45D; 1 &#x1D446; 1 -&#x1D707; 2 &#x1D446; 2 = 0<lb/> &#x1D706; &#x1D447; -&#x1D6FD;&#x1D447; -&#x1D458; &#x1D447; &#x1D447;&#x1D449; + 2 (1 -&#x1D44E; 2 ) &#x1D45D; 2 &#x1D460; 2 = 0<lb/> &#x1D458; &#x1D447; &#x1D447;&#x1D449;-&#x1D70C; &#x1D447; &#x1D456; &#x1D447; &#x1D456; = 0<lb/> &#x1D70B; &#x1D447; &#x1D456; &#x1D447; &#x1D456; -&#x1D450;&#x1D449; = 0.<lb/></formula>
+
+				<label>(10)<lb/></label>
+
+			<p>By introducing &#x1D445; 0 = &#x1D458; &#x1D447; &#x1D706; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; /&#x1D450;&#x1D70C; &#x1D447; &#x1D456; &#x1D6FD;, we get the result.<lb/></p>
+
+			<p>In the next theorems we study the stability at the equilib-<lb/>rium points &#x1D443; 1 and &#x1D443; 2 .<lb/></p>
+
+			<p>Theorem 2. The free disease case &#x1D443; 1 is asymptotically stable if<lb/> &#x1D445; 0 &lt; 1 and unstable if &#x1D445; 0 &gt; 1.<lb/></p>
+
+			<p>Proof. The Jacobian matrix corresponding to system (<ref type="formula">9</ref>) is<lb/> given by<lb/></p>
+
+				<formula>&#x1D43D; =<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> (2&#x1D44E; 1 -1) &#x1D45D; 1 -&#x1D707; 1<lb/> 0<lb/> 0<lb/> 0<lb/> 0<lb/> 2 (1 -&#x1D44E; 1 ) &#x1D45D; 1<lb/> (2&#x1D44E; 2 -1) &#x1D45D; 2 -&#x1D707; 2<lb/> 0<lb/> 0<lb/> 0<lb/> 0<lb/> 2( 1-&#x1D44E; 2 ) &#x1D45D; 2<lb/> -&#x1D6FD; -&#x1D458; &#x1D447; &#x1D449; 0 -&#x1D458; &#x1D447; &#x1D447;<lb/> 0<lb/> 0<lb/> &#x1D458; &#x1D447; &#x1D449;<lb/> -&#x1D70C; &#x1D447; &#x1D456; &#x1D458; &#x1D447; &#x1D447;<lb/> 0<lb/> 0<lb/> 0<lb/> &#x1D70B; &#x1D447; &#x1D456;<lb/> -&#x1D450;<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> .<lb/></formula>
+
+				<label>(11)<lb/></label>
+
+			<p>At the health point &#x1D443; 1 the Jacobian matrix becomes<lb/></p>
+
+				<formula>&#x1D43D; 1<lb/> =<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> (2&#x1D44E; 1 -1) &#x1D45D; 1 -&#x1D707; 1<lb/> 0<lb/> 0<lb/> 0<lb/> 0<lb/> 2 (1 -&#x1D44E; 1 ) &#x1D45D; 1<lb/> (2&#x1D44E; 2 -1) &#x1D45D; 2 -&#x1D707; 2 0<lb/> 0<lb/> 0<lb/> 0<lb/> 2 ( 1 -&#x1D44E; 2 ) &#x1D45D; 2<lb/> -&#x1D6FD; 0 -&#x1D458; &#x1D447;<lb/> &#x1D706; &#x1D447;<lb/> &#x1D6FD;<lb/> 0<lb/> 0<lb/> 0 -&#x1D70C; &#x1D447; &#x1D456; &#x1D458; &#x1D447;<lb/> &#x1D706; &#x1D447;<lb/> &#x1D6FD;<lb/> 0<lb/> 0<lb/> 0 &#x1D70B; &#x1D447; &#x1D456;<lb/> -&#x1D450;<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> .<lb/></formula>
+
+				<label>(12)<lb/></label>
+
+			<p>So the characteristic equation det(&#x1D43D; 1 -&#x1D45F;&#x1D43C;) = 0 has the<lb/> eigenvalues<lb/></p>
+
+				<formula>&#x1D45F; 1 = (2&#x1D44E; 1 -1) &#x1D45D; 1 -&#x1D707; 1 ,<lb/> &#x1D45F; 2 = (2&#x1D44E; 2 -1) &#x1D45D; 2 -&#x1D707; 2 ,<lb/> &#x1D45F; 3 = -&#x1D6FD;,<lb/> &#x1D45F; 4,5<lb/> =<lb/> -&#x1D6FD; (&#x1D450; + &#x1D70C; &#x1D447; &#x1D456; ) ± √ [&#x1D6FD; (&#x1D450; + &#x1D70C; &#x1D447; &#x1D456; )]<lb/> 2 -4&#x1D6FD; [&#x1D6FD;&#x1D450;&#x1D70C; &#x1D447; &#x1D456; -&#x1D458; &#x1D447; &#x1D706; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; ]<lb/> 2&#x1D6FD;<lb/> =<lb/> -&#x1D6FD; (&#x1D450; + &#x1D70C; &#x1D447; &#x1D456; ) ± √&#x1D6FD;√&#x1D6FD;&#x1D450; 2 -2&#x1D6FD;&#x1D450;&#x1D70C; &#x1D447; &#x1D456; + 4&#x1D458; &#x1D447; &#x1D706; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; + &#x1D6FD;&#x1D70C; 2<lb/> &#x1D447; &#x1D456;<lb/> 2&#x1D6FD;<lb/> .<lb/></formula>
+
+				<label>(13)<lb/></label>
+
+			<p>To get the asymptotically stable case for the free disease<lb/> equilibrium point we shall have for the first and the second<lb/> roots (2&#x1D44E; 1 -1)&#x1D45D; 1 &lt; &#x1D707; 1 and (2&#x1D44E; 2 -1)&#x1D45D; 2 &lt; &#x1D707; which are true and<lb/> agree with <ref type="biblio">[30, 31, 36]</ref>; since the population of mature cells &#x1D446; 3<lb/> reaches some value, then the term (2&#x1D44E; &#x1D456; (&#x1D461;) -1)&#x1D45D; &#x1D456; (&#x1D461;)&#x1D446; &#x1D456; (&#x1D461;) &lt; 0,<lb/> for &#x1D456; &lt; &#x1D45B;, and the number of cells at stage i decreases, while<lb/> the lowness of the density for the mature cells causes (2&#x1D44E; &#x1D456; (&#x1D461;) -<lb/>1)&#x1D45D; &#x1D456; (&#x1D461;)&#x1D460; &#x1D456; (&#x1D461;) &gt; 0, for &#x1D456; &lt; &#x1D45B;, and if the death rates are not too<lb/> high, then the number of cells at stage i increases. These show<lb/> how the level of mature cells affects the dynamics of each cell<lb/> subpopulation. Also it is clear that &#x1D45F; 3 = -&#x1D6FD; &lt; 0, and if &#x1D445; 0 =<lb/> &#x1D458; &#x1D447; &#x1D706; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; /&#x1D450;&#x1D70C; &#x1D447; &#x1D456; &#x1D6FD; &lt; 1, then &#x1D450;&#x1D70C; &#x1D447; &#x1D456; &#x1D6FD; 2 &gt; &#x1D458; &#x1D447; &#x1D706; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; &#x1D6FD;, so (&#x1D6FD;(&#x1D450;+&#x1D70C; &#x1D447; &#x1D456; )) 2 &gt;<lb/> &#x1D6FD;(&#x1D6FD;&#x1D450; 2 -2&#x1D6FD;&#x1D450;&#x1D70C; &#x1D447; &#x1D456; + 4&#x1D458; &#x1D447; &#x1D706; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; + &#x1D6FD;&#x1D70C; 2<lb/> &#x1D447; &#x1D456; ); then &#x1D45F; 4,5 &lt; 0.<lb/> If &#x1D445; 0 = &#x1D458; &#x1D447; &#x1D706; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; /&#x1D450;&#x1D70C; &#x1D447; &#x1D456; &#x1D6FD; &gt; 1, then &#x1D450;&#x1D70C; &#x1D447; &#x1D456; &#x1D6FD; 2 &lt; &#x1D458; &#x1D447; &#x1D706; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; &#x1D6FD;, so<lb/> (&#x1D6FD;(&#x1D450;+&#x1D70C; &#x1D447; &#x1D456; )) 2 &lt; &#x1D6FD;(&#x1D6FD;&#x1D450; 2 -2&#x1D6FD;&#x1D450;&#x1D70C; &#x1D447; &#x1D456; +4&#x1D458; &#x1D447; &#x1D706; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; +&#x1D6FD;&#x1D70C; 2<lb/> &#x1D447; &#x1D456; ); then &#x1D45F; 4,5 &gt; 0.<lb/> Thus, we get the result.<lb/></p>
+
+				<p>Remark 3. (1) If &#x1D445; 0 = 1, then &#x1D443; 1 = &#x1D443; 2<lb/> (2) If &#x1D445; 0 &lt; 1, then &#x1D443; 2 is impossible<lb/>  To study the endemic point &#x1D443; 2 , we need the following<lb/> lemma.<lb/></p>
+
+			<p>Lemma 4 (see <ref type="biblio">[37]</ref>). The polynomial &#x1D453;(&#x1D45F;) = &#x1D45F; 3 +&#x1D44E; 1 &#x1D45F; 2 +&#x1D44E; 2 &#x1D45F;+&#x1D44E; 3<lb/> has the following results:<lb/></p> 
+			<list>
+			<item>(i) If &#x1D44E; 3 &lt; 0, then &#x1D453;(&#x1D45F;) has at least one positive root<lb/></item> 
+			<item>(ii) If &#x1D44E; 1 &gt; 0, &#x1D44E; 3 ≥ 0, and &#x1D44E; 2 ≥ 0, then &#x1D453;(&#x1D45F;) has no positive<lb/> root<lb/></item> 
+			<item>(iii) If &#x1D44E; 1 &gt; 0, &#x1D44E; 3 ≥ 0, and &#x1D44E; 2 &lt; 0, then &#x1D453;(&#x1D45F;) has a positive<lb/> root:<lb/></item>
+
+				<formula>&#x1D45F; =<lb/> 1<lb/> 3<lb/> (-&#x1D44E; 1 + √ &#x1D44E; 1<lb/> 2 -3&#x1D44E; 2 )<lb/></formula>
+
+				<label>(14)<lb/></label>
+
+			</list>
+
+			<p>Theorem 5. If &#x1D445; 0 ≥ 1, then the endemic point P 2 is<lb/> asymptotically stable.<lb/></p>
+
+			<p>Proof. At the point (0, 0, (&#x1D706; &#x1D447; /&#x1D6FD;)(1/&#x1D445; 0 ), (&#x1D6FD;&#x1D450;/&#x1D458; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; )(&#x1D445; 0 -<lb/>1), (&#x1D6FD;/&#x1D458; &#x1D447; )(&#x1D445; 0 -1)) the Jacobian matrix becomes<lb/></p>
+
+				<formula>&#x1D43D; 2 =<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> [<lb/> (2&#x1D44E; 1 -1) &#x1D45D; 1 -&#x1D707; 1<lb/> 0<lb/> 0<lb/> 0<lb/> 0<lb/> 2 (1 -&#x1D44E; 1 ) &#x1D45D; 1<lb/> (2&#x1D44E; 2 -1) &#x1D45D; 2 -&#x1D707; 2<lb/> 0<lb/> 0<lb/> 0<lb/> 0<lb/> 2( 1-&#x1D44E; 2 ) &#x1D45D; 2<lb/> -&#x1D6FD;&#x1D445; 0<lb/> 0 -&#x1D458; &#x1D447;<lb/> &#x1D706; &#x1D447;<lb/> &#x1D6FD;&#x1D445; 0<lb/> 0<lb/> 0<lb/> &#x1D6FD; ( &#x1D445; 0 -1) -&#x1D70C; &#x1D447; &#x1D456; &#x1D458; &#x1D447;<lb/> &#x1D706; &#x1D447;<lb/> &#x1D6FD;&#x1D445; 0<lb/> 0<lb/> 0<lb/> 0<lb/> &#x1D70B; &#x1D447; &#x1D456;<lb/> -&#x1D450;<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> ]<lb/> .<lb/></formula>
+
+				<label>(15)<lb/></label>
+
+			<p>So the characteristic equation det(&#x1D43D; 2 -&#x1D45F;&#x1D43C;) = 0 has the<lb/> eigenvalues &#x1D45F; 1 = (2&#x1D44E; 1 -1)&#x1D45D; 1 -&#x1D707; 1 , &#x1D45F; 2 = (2&#x1D44E; 2 -1)&#x1D45D; 2 -&#x1D707; 2 , and<lb/> the other eigenvalues are roots of the polynomial &#x1D453;(&#x1D45F;) = &#x1D45F; 3 +<lb/> &#x1D44E; 1 &#x1D45F; 2 + &#x1D44E; 2 &#x1D45F; + &#x1D44E; 3 = 0, where &#x1D44E; 1 = &#x1D450;+&#x1D70C; &#x1D447; &#x1D456; + &#x1D6FD;&#x1D445; 0 , &#x1D44E; 2 = &#x1D6FD;&#x1D445; 0 (&#x1D450; + &#x1D70C; &#x1D447; &#x1D456; ),<lb/> and &#x1D44E; 3 = &#x1D450;&#x1D70C; &#x1D447; &#x1D456; &#x1D6FD;(&#x1D445; 0 -1).<lb/></p>
+
+			<p>Since &#x1D445; 0 ≥ 1, then &#x1D6FD;&#x1D445; 0 (&#x1D450; + &#x1D70C; &#x1D447; &#x1D456; ) ≥ 0, and &#x1D450;&#x1D70C; &#x1D447; &#x1D456; &#x1D6FD;(&#x1D445; 0 -<lb/>1) ≥ 0. Then, according to Lemma 4, we deduce that &#x1D443; 2 is<lb/> asymptotically stable.<lb/></p>
+
+			<head>5. Study of the Mathematical Model of<lb/> the n-Multistage Stem Cell Therapy<lb/> for HIV-1 Patients<lb/></head>
+
+			<p>In this section, we will consider previously given (&#x1D45B; +<lb/> 2)-dimensional system (<ref type="formula">7</ref>). As mentioned in the previous<lb/> section, we can replace &#x1D44E; i /(1 + &#x1D6FE;&#x1D447;) by &#x1D44E; &#x1D456; for &#x1D456; = 1, 2, . . . , &#x1D45B; -1.<lb/> Then (<ref type="formula">7</ref>) can be written as<lb/></p>
+
+				<formula>&#x1D451;&#x1D446; 1<lb/> &#x1D451;&#x1D461;<lb/> = (2&#x1D44E; 1 -1) &#x1D45D; 1 &#x1D446; 1 -&#x1D707; 1 &#x1D446; 1 ,<lb/> &#x1D451;&#x1D446; 2<lb/> &#x1D451;&#x1D461;<lb/> = (2&#x1D44E; 2 -1) &#x1D45D; 2 &#x1D446; 2 + 2 (1 -&#x1D44E; 1 ) &#x1D45D; 1 &#x1D446; 1 -&#x1D707; 2 &#x1D446; 2 ,<lb/> . . .<lb/> &#x1D451;&#x1D446; &#x1D45B;-1<lb/> &#x1D451;&#x1D461;<lb/> = (2&#x1D44E; &#x1D45B;-1 -1) &#x1D45D; &#x1D45B;-1 &#x1D446; &#x1D45B;-1 + 2 (1 -&#x1D44E; &#x1D45B;-2 ) &#x1D45D; &#x1D45B;-2 &#x1D446; &#x1D45B;-2<lb/> -&#x1D707; &#x1D45B;-1 &#x1D446; &#x1D45B;-1 ,<lb/> &#x1D451;&#x1D447;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D706; &#x1D447; -(&#x1D451; &#x1D447; + &#x1D707; &#x1D45B; ) &#x1D447; -&#x1D458; &#x1D447; TV<lb/> + 2 (1 -&#x1D44E; &#x1D45B;-1 ) &#x1D45D; &#x1D45B;-1 &#x1D446; &#x1D45B;-1 ,<lb/> &#x1D451;&#x1D447; &#x1D456;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D458; &#x1D447; TV -&#x1D70C; &#x1D447; &#x1D456; &#x1D447; &#x1D456; ,<lb/> &#x1D451;&#x1D449;<lb/> &#x1D451;&#x1D461;<lb/> = &#x1D70B; &#x1D447; &#x1D456; &#x1D447; &#x1D456; -&#x1D450;&#x1D449;.<lb/></formula>
+
+				<label>(16)<lb/></label>
+
+			<p>Assume that &#x1D451; &#x1D447; + &#x1D707; &#x1D45B; = &#x1D6FD; &#xF8020; . If the basic reproduction ratio<lb/> of the viruses (that depends on the patient) is given by &#x1D445; 0 =<lb/> &#x1D458; &#x1D447; &#x1D706; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; /&#x1D450;&#x1D70C; &#x1D447; &#x1D456; &#x1D6FD; &#xF8020; , then, using mathematical induction, we can<lb/> deduce the following theorem.<lb/></p> 
+			<p>Theorem 6. System (<ref type="formula">16</ref>) has two equilibrium points given by<lb/> the following:<lb/> &#x1D443; 1 (&#x1D446; 1 , &#x1D446; 2 , . . . , &#x1D446; &#x1D45B;-1 &#x1D447;, &#x1D447; &#x1D456; , &#x1D449;) = (0, 0, . . . , 0, &#x1D706; &#x1D447; /&#x1D6FD; &#xF8020; , 0, 0), cor-<lb/>responding to the free disease case, and<lb/></p>
+
+				<formula>&#x1D443; 2 (&#x1D446; 1 , &#x1D446; 2 , . . . , &#x1D446; &#x1D45B;-1 &#x1D447;, &#x1D447; &#x1D456; , &#x1D449;) = (0, 0, . . . , 0,<lb/> &#x1D706; &#x1D447;<lb/> &#x1D6FD; &#xF8020;<lb/> ⋅<lb/> 1<lb/> &#x1D445; 0<lb/> ,<lb/> &#x1D6FD; &#xF8020; &#x1D450;<lb/> &#x1D458; &#x1D447; &#x1D70B; &#x1D447; &#x1D456;<lb/> (&#x1D445; 0 -1) ,<lb/> &#x1D6FD; &#xF8020;<lb/> &#x1D458; &#x1D447;<lb/> (&#x1D445; 0 -1)) ,<lb/></formula>
+
+				<label>(17)<lb/></label>
+
+			<p>corresponding to the endemic case.<lb/></p>
+
+			<p>Theorem 7. The free disease case &#x1D443; 1 is asymptotically stable if<lb/> &#x1D445; 0 &lt; 1 and unstable if &#x1D445; 0 &gt; 1.<lb/></p> 
+			
+			<p>Remark 8. (1) If &#x1D445; 0 = 1, then &#x1D443; 1 = &#x1D443; 2<lb/> (2) If &#x1D445; 0 &lt; 1, then &#x1D443; 2 is impossible<lb/></p> 
+			<p>Theorem 9. If &#x1D445; 0 ≥ 1, then the endemic point &#x1D443; 2 is<lb/> asymptotically stable.<lb/></p>
+
+			<head>6. Conclusion<lb/></head>
+
+			<p>We have formulated an n-multistage system of ODEs model<lb/> to study the influence of the treatment of HIV-1 infection with<lb/> stem cell transplantation. Evidently the effect of the therapy<lb/> on the viral dynamics depends on the patient (depends on<lb/> &#x1D445; 0 ).<lb/></p> 
+			<p>(i) If &#x1D445; 0 ≤ 1, we have only one equilibrium point<lb/> corresponding to the free disease case &#x1D443; 1 (&#x1D446; 1 , &#x1D446; 2 , . . . ,<lb/> &#x1D446; &#x1D45B;-1 , &#x1D447;, &#x1D447; &#x1D456; , &#x1D449;) = (0, 0, . . . , 0, &#x1D706; &#x1D447; /&#x1D451; &#x1D447; , 0, 0), which is as-<lb/>ymptotically stable. We can then conclude that the infected<lb/> T-cells and virus particles will be cleared and the stem cells<lb/> exhausted. In this case, the patient is healed<lb/></p>
+
+			<p>Here we can also add a comment on the best stage we can<lb/> choose for the mutant cells to be transplanted on the patient.<lb/></p>
+
+			<p>Since all the components &#x1D446; 1 , &#x1D446; 2 , . . . , &#x1D446; &#x1D45B;-1 of the point &#x1D443; 1<lb/> are equal to zero, then it is better to transplant the stem cells<lb/> when they are nearly transformed to mature T-cells. This<lb/> result is known in the cases of corneal transplantation, skin<lb/> transplantation, and cardiac disease.<lb/></p>
+
+			<p>(ii) If &#x1D445; 0 &gt; 1, the free disease case &#x1D443; 1 is unstable,<lb/> and the infected state &#x1D443; 2 (&#x1D446; 1 , &#x1D446; 2 , . . . , &#x1D446; &#x1D45B;-1 , &#x1D447;, &#x1D447; &#x1D456; , &#x1D449;)<lb/> =<lb/> (0, 0, . . . , 0, (&#x1D706; &#x1D447; /&#x1D451; &#x1D447; )(1/&#x1D445; 0 ), (&#x1D451; &#x1D447; &#x1D450; &#x1D449; /&#x1D458; &#x1D447; &#x1D70B; &#x1D447; &#x1D456; )(&#x1D445; 0<lb/> -<lb/>1), (&#x1D451; &#x1D447; /&#x1D458; &#x1D447; )(&#x1D445; 0 -1)) is asymptotically stable, which means<lb/> that any HIV-1 infection for that patient will progress to<lb/> chronic infection after stem cell exhaustion<lb/></p> 
+			<p>Therefore, stem cell therapy will not offer a cure to that<lb/> infected person (&#x1D445; 0 &gt; 1) but simply will help delay progres-<lb/>sion to the chronic stage. If we repeat the transplantation of<lb/> stem cells in a manner to prevent its exhaustion from the<lb/> patient, we can prevent AIDS.<lb/></p>
+
+			<p>We advise medicine to try to replace the chemical drug<lb/> therapy with the apparently safe stem cell therapy. But will<lb/> clinical experiments meet the expectations?<lb/></p>
+
+			<head>7. Future Works<lb/></head>
+
+			<p>For more interest we will study a fractional order of math-<lb/>ematical modeling to study multistage stem cell transplan-<lb/>tation on HIV-1 patients based on <ref type="biblio">[38, 39]</ref>. The presence of<lb/> a fractional differential order in differential equations can<lb/> lead to more consistency and more accuracy to real life<lb/> than the integer-order models because the fractional deriva-<lb/>tives enable the description of the memory and hereditary<lb/> properties inherent in various processes and materials. The<lb/> most important property of these models is their nonlocal<lb/> property which does not exist in the integer-order differential<lb/> operators. We mean by this property that the next state of a<lb/> model depends not only on its current state but also on all of<lb/> its historical states.</p>
+
+
+	</text>
+</tei>
