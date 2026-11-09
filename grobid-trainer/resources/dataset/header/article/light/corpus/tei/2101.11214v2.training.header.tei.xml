@@ -53,9 +53,8 @@
 	ABSTRACT<lb/>
 	<div type="abstract">Large datasets in NLP suffer from noisy labels, due to erroneous annotation pro-<lb/>cedures. We study the problem of text classification with label noise, and aim to<lb/> capture this noise through an auxiliary noise model over the classifier. We first<lb/> assign a probability score to each training sample of having a noisy label, through<lb/> a beta mixture model fitted on the losses at an early epoch of training. Then, we<lb/> use this score to selectively guide the learning of the noise model and classifier.<lb/> Our empirical evaluation on two text classification tasks shows that our approach<lb/> can improve over the baseline accuracy, and prevent over-fitting to the noise.<lb/></div>
 
-	* Equal contribution by authors<lb/> † Work completed as graduate students at the
-	<byline>
-	<affiliation>University of Wisconsin-Madison<lb/></affiliation>
+	* Equal contribution by authors<lb/> <byline>
+	<affiliation>† Work completed as graduate students at the University of Wisconsin-Madison<lb/></affiliation>
 	</byline>
 
 	<idno>arXiv:2101.11214v2 [cs.CL]</idno>

@@ -23,7 +23,9 @@
 	<email>firstname.lastname@fiz-karlsruhe.de</email>
 
 	ABSTRACT<lb/>
-	<div type="abstract">This paper gives insight into our current research on three<lb/> text mining tools for patents designed for information pro-<lb/>fessionals. The first tool identifies numeric properties in the<lb/> patent text and normalises them, the second extracts a list<lb/> of keywords that are relevant and reveal the invention in<lb/> the patent text, and the third tool attempts to segment the<lb/> patent&apos;s description into it&apos;s sections. Our tools are used in<lb/> the industry and could be applied in research as well.<lb/> Copyright l&apos; 2014 for the individual papers by the papers&apos; authors. Copy-<lb/>ing permitted for private and academic purposes. This volume is published<lb/> and copyrighted by its editors.</div>
+	<div type="abstract">This paper gives insight into our current research on three<lb/> text mining tools for patents designed for information pro-<lb/>fessionals. The first tool identifies numeric properties in the<lb/> patent text and normalises them, the second extracts a list<lb/> of keywords that are relevant and reveal the invention in<lb/> the patent text, and the third tool attempts to segment the<lb/> patent&apos;s description into it&apos;s sections. Our tools are used in<lb/> the industry and could be applied in research as well.<lb/></div>
+
+	<note type="copyright">Copyright l&apos; 2014 for the individual papers by the papers&apos; authors. Copy-<lb/>ing permitted for private and academic purposes. This volume is published<lb/> and copyrighted by its editors.</note>
 
 	Published at Ceur-ws.org 
 	<reference>Proceedings of<lb/> the First International Workshop on Patent Mining and Its Applications<lb/> (IPAMIN) 2014. Hildesheim. Oct. 7th. 2014. At KONVENS&apos;14, Octo-<lb/>ber 8-10, 2014, Hildesheim, Germany.</reference>

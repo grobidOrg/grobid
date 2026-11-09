@@ -7,8 +7,10 @@
 		<front>
 <lb/>
 	<docTitle>
-	<titlePart>The Use of Description Logics in KBSE systems<lb/> Survey Paper<lb/></titlePart>
+	<titlePart>The Use of Description Logics in KBSE systems<lb/></titlePart>
 	</docTitle>
+
+	<note type="doctype">Survey Paper<lb/></note>
 
 	<byline>
 	<docAuthor>Premkumar T. Devanbu &amp; Mark A. Jones<lb/></docAuthor>
