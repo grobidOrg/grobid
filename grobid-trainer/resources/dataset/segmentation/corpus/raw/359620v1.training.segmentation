@@ -1,106 +1,106 @@
-1 1 1 1 1 1 1 BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 0
-ZetaHunter: a zetahunter: Z Ze Zet Zeta BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 : 1 10 0 1 0 0 1
-Zetaproteobacteria and zetaproteobacteria Z Ze Zet Zeta BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 - 1 10 0 1 0 0 1
-Sean M. sean S Se Sea Sean BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 2 .,#.,., 7 10 0 0 0 0 1
-a School a a a a a BLOCKIN PAGEIN NEWFONT LOWERFONT 0 0 NOCAPS NODIGIT 1 0 1 0 0 0 0 0 0 3 ,,,, 4 9 0 0 0 0 1
-b Center b b b b b BLOCKEND PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 1 0 0 0 0 0 0 0 0 3 ,,, 3 10 0 0 0 0 1
-Delaware, USA delaware, D De Del Dela BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 6 , 1 1 0 0 0 0 1
-c Department c c c c c BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 1 0 0 0 0 0 0 0 0 6 ,,,, 4 10 0 0 0 0 1
-Running Head: running R Ru Run Runn BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 8 :: 2 10 0 0 0 0 1
-#Address correspondence #address # #A #Ad #Add BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 9 #.,.@.. 7 10 0 0 0 0 1
-S.M.M. and s.m.m. S S. S.M S.M. BLOCKSTART PAGEEND SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 1 10 ....... 7 10 0 0 0 0 1
-2 2 2 2 2 2 2 BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 1 0 no 0 10 0 1 0 0 0
-Abstract. Like abstract. A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 0 .,-, 4 10 0 1 0 0 1
-making it making m ma mak maki BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 . 1 10 0 1 0 0 1
-assign 16S assign a as ass assi BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 - 1 10 0 0 0 0 1
-database. While database. d da dat data BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 1 ., 2 10 0 0 0 0 1
-classification of classification c cl cla clas BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 1 -. 2 10 0 0 0 0 1
-Introduction. Taxonomic introduction. I In Int Intr BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 1 . 1 10 0 0 0 0 1
-lumped into lumped l lu lum lump BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 . 1 10 0 0 0 0 1
-This makes this T Th Thi This BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 ,, 2 10 0 0 0 0 1
-preference of preference p pr pre pref BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 2 . 1 10 0 0 0 0 1
-the Zetaproteobacteria the t th the the BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 3 , 1 10 0 0 0 0 1
-by standard by b by by by BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 3 (). 3 10 0 0 0 0 1
-ZetaHunter allows zetahunter Z Ze Zet Zeta BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 2 4 ,- 2 10 0 0 0 0 1
-using a using u us usi usin BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 no 0 10 0 0 0 0 1
-(OTUs). ZetaHunter (otus). ( (O (OT (OTU BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 (). 3 10 0 0 0 0 1
-Zetaproteobacteria, though zetaproteobacteria, Z Ze Zet Zeta BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 2 5 ,. 2 10 0 0 0 0 1
-ZetaHunter implementation. zetahunter Z Ze Zet Zeta BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 2 5 ., 2 10 0 0 0 0 1
-designed to designed d de des desi BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 - 1 10 0 0 0 0 1
-reference sequence reference r re ref refe BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 .,, 3 10 0 0 0 0 1
-platforms through platforms p pl pla plat BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ,( 2 10 0 0 0 0 1
-MacOSX only). macosx M Ma Mac MacO BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 7 )., 3 10 0 0 0 0 1
-16S rRNA 16s 1 16 16S 16S BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 3 7 () 2 10 0 0 0 0 0
-JGI's Integrated jgi's J JG JGI JGI' BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 8 '()(). 6 10 0 0 0 0 0
-Zetaproteobacteria OTU zetaproteobacteria Z Ze Zet Zeta BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 8 (). 3 10 0 0 0 0 0
-(2011) at (2011) ( (2 (20 (201 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 3 9 (), 3 10 0 0 0 0 0
-ease in ease e ea eas ease BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 9 . 1 10 0 0 0 0 0
-discovered after discovered d di dis disc BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 9 . 1 10 0 0 0 0 0
-(Pruesse et (pruesse ( (P (Pr (Pru BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 10 (.,). 5 10 0 0 0 0 0
-The default the T Th The The BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 10 ()- 3 10 0 0 0 0 0
-gene sequences gene g ge gen gene BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 4 10 :) 2 10 0 1 0 0 0
-1,282 bp 1,282 1 1, 1,2 1,28 BLOCKSTART PAGEEND SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 4 11 ,.().) 6 10 0 1 0 0 0
-3 3 3 3 3 3 3 BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 4 0 no 0 10 0 1 0 0 0
-mothur's uchime mothur's m mo mot moth BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 0 '(.,;.,).) 10 10 0 1 0 0 1
-used to used u us use used BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 10 0 1 0 0 1
-genetic distance genetic g ge gen gene BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 (;.,).) 7 10 0 0 0 0 1
-sequences are sequences s se seq sequ BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 ()(; 4 10 0 0 0 0 1
-average neighbor; average a av ave aver BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 2 ;)(.,).) 8 10 0 0 0 0 1
-(including final (including ( (i (in (inc BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 2 (), 3 10 0 0 0 0 1
-abundance per abundance a ab abu abun BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 3 ,. 2 10 0 0 0 0 1
-database includes database d da dat data BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 3 , 1 10 0 0 0 0 1
-sequences potentially sequences s se seq sequ BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 3 ., 2 10 0 0 0 0 1
-short, chimeric, short, s sh sho shor BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 4 ,,. 3 10 0 0 0 0 1
-open-reference OTU open-reference o op ope open BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 4 -(-., 5 10 0 0 0 0 1
-2013). 2013). 2013). 2 20 201 2013 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 6 5 ). 2 10 0 0 0 0 1
-To use to T To To To BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 5 -,:)- 5 10 0 0 0 0 1
-aligned 16S aligned a al ali alig BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 5 ,) 2 10 0 0 0 0 1
-alignment column alignment a al ali alig BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 ,)- 3 10 0 0 0 0 1
-assigning each assigning a as ass assi BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 no 0 10 0 0 0 0 1
-desired by desired d de des desi BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 7 . 1 10 0 0 0 0 1
-Software availability. software S So Sof Soft BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 7 . 1 10 0 0 0 0 1
-<https://github.com/mooreryan/ZetaHunter>. GitHub <https://github.com/mooreryan/zetahunter>. < <h <ht <htt BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 1 7 7 ://.//. 7 10 0 0 0 0 1
-for Zetaproteobacteria for f fo for for BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 7 - 1 10 0 0 0 0 1
-explanations. explanations. explanations. e ex exp expl BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 8 . 1 10 0 0 0 0 1
-Acknowledgements Acknowledgements acknowledgements A Ac Ack Ackn BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 8 no 0 10 0 0 0 0 0
-We thank we W We We We BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 8 no 0 10 0 0 0 0 0
-from novel from f fr fro from BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 8 . 1 10 0 0 0 0 0
-comments on comments c co com comm BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 9 .,, 3 10 0 0 0 0 0
-Scott, and scott, S Sc Sco Scot BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 7 9 , 1 10 0 0 0 0 0
-platforms and platforms p pl pla plat BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 10 ./ 2 10 0 0 0 0 0
-stable 16S stable s st sta stab BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 10 ;' 2 10 0 0 0 0 0
-function. SMM function. f fu fun func BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 11 .. 2 10 0 1 0 0 0
-Zetaproteobacteria database. zetaproteobacteria Z Ze Zet Zeta BLOCKSTART PAGEEND SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 11 ..,, 4 10 0 1 0 0 0
-4 4 4 4 4 4 4 BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 8 0 no 0 10 0 1 0 0 0
-CSC wrote csc C CS CSC CSC BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 8 0 .- 2 10 0 1 0 0 1
-1155290 (to 1155290 1 11 115 1155 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 1 0 0 0 8 0 () 2 10 0 1 0 0 1
-2012-68003-30155. Computational 2012-68003-30155. 2 20 201 2012 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 8 1 --. 3 10 0 0 0 0 1
-Center for center C Ce Cen Cent BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 8 1 no 0 10 0 0 0 0 1
-through funding through t th thr thro BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 1 () 2 10 0 0 0 0 1
-Biotechnology Institute. biotechnology B Bi Bio Biot BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 2 .. 2 10 0 0 0 0 1
-References References references R Re Ref Refe BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 2 no 0 1 0 0 0 0 1
-Edgar RC, edgar E Ed Edg Edga BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 9 2 ,,,,.. 6 9 0 0 0 0 1
-sensitivity and sensitivity s se sen sens BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 2 ., 2 7 0 0 0 0 1
-doi:10.1093/bioinformatics/btr381 doi:10.1093/bioinformatics/btr381 doi:10.1093/bioinformatics/btr381 d do doi doi: BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 0 9 2 :.// 4 4 0 0 0 0 1
-Kopylova E, kopylova K Ko Kop Kopy BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ,,..: 5 9 0 0 0 0 1
-ribosomal RNAs ribosomal r ri rib ribo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 2 . 1 6 0 0 0 0 1
-doi:10.1093/bioinformatics/bts611 doi:10.1093/bioinformatics/bts611 doi:10.1093/bioinformatics/bts611 d do doi doi: BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 0 9 2 :.// 4 4 0 0 0 0 1
-McAllister SM, mcallister M Mc McA McAl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 9 2 ,,,,,.. 7 8 0 0 0 0 1
-Biodiversity and biodiversity B Bi Bio Biod BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 2 - 1 8 0 0 0 0 1
-Zetaproteobacteria. Appl. zetaproteobacteria. Z Ze Zet Zeta BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ....:-. 7 6 0 0 0 0 1
-Navas-Molina JA, navas-molina N Na Nav Nava BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 -,-,,,-, 8 9 0 0 0 0 1
-Xu Z, xu X Xu Xu Xu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 9 2 ,,,,,,,- 8 8 0 0 0 0 1
-Lyons D, lyons L Ly Lyo Lyon BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 9 2 ,,,.. 5 9 0 0 0 0 1
-the human the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 2 ..:-.: 6 8 0 0 0 0 1
-10.1016/B978-0-12-407863-5.00019-8 10.1016/B978-0-12-407863-5.00019-8 10.1016/b978-0-12-407863-5.00019-8 1 10 10. 10.1 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 9 2 ./----.- 8 4 0 0 0 0 1
-Pruesse E, pruesse P Pr Pru Prue BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ,,..:- 6 10 0 0 0 0 1
-sequence alignment sequence s se seq sequ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 2 .:-. 4 8 0 0 0 0 1
-Schloss PD, schloss S Sc Sch Schl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ,,,,,,, 7 10 0 0 0 0 1
-BB Oakley, bb B BB BB BB BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ,,,,,,, 7 9 0 0 0 0 1
-and CF and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 2 ..:-,-, 7 8 0 0 0 0 1
-community-supported software community-supported c co com comm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 2 -. 2 9 0 0 0 0 1
-Appl Environ appl A Ap App Appl BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ,():-. 6 4 0 0 0 0 1
-5 5 5 5 5 5 5 BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 0 no 0 10 0 1 0 0 0
-Figure 1. figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 0 ..- 3 10 1 1 0 0 1
-pipeline are pipeline p pi pip pipe BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 0 . 1 4 1 1 0 0 1
+1 1 1 1 1 1 1 BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 no 0 10 0 1 0 0 0 X d
+ZetaHunter: a zetahunter: Z Ze Zet Zeta BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 : 1 10 0 1 0 0 1 zetahunter:_a_reproducible_taxonomic_classification_tool_for_tracking_the_ecology_of_the XxXx:_x_x_x_x_x_x_x_x_x_x_x
+Zetaproteobacteria and zetaproteobacteria Z Ze Zet Zeta BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 - 1 10 0 1 0 0 1 zetaproteobacteria_and_other_poorly-resolved_taxa Xx_x_x_x-x_x
+Sean M. sean S Se Sea Sean BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 2 .,#.,., 7 10 0 0 0 0 1 sean_m._mcallister,_a_#_ryan_m._moore,_b_and_clara_s._chan_a,c Xx_X._XxXx,_x_#_Xx_X._Xx,_x_x_Xx_X._Xx_x,x
+a School a a a a a BLOCKIN PAGEIN NEWFONT LOWERFONT 0 0 NOCAPS NODIGIT 1 0 1 0 0 0 0 0 0 3 ,,,, 4 9 0 0 0 0 1 a_school_of_marine_science_and_policy,_university_of_delaware,_newark,_delaware,_usa x_Xx_x_Xx_Xx_x_Xx,_Xx_x_Xx,_Xx,_Xx,_X
+b Center b b b b b BLOCKEND PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 1 0 0 0 0 0 0 0 0 3 ,,, 3 10 0 0 0 0 1 b_center_for_bioinformatics_and_computational_biology,_university_of_delaware,_newark, x_Xx_x_Xx_x_Xx_Xx,_Xx_x_Xx,_Xx,
+Delaware, USA delaware, D De Del Dela BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 6 , 1 1 0 0 0 0 1 delaware,_usa Xx,_X
+c Department c c c c c BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 1 0 0 0 0 0 0 0 0 6 ,,,, 4 10 0 0 0 0 1 c_department_of_geological_sciences,_university_of_delaware,_newark,_delaware,_usa x_Xx_x_Xx_Xx,_Xx_x_Xx,_Xx,_Xx,_X
+Running Head: running R Ru Run Runn BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 8 :: 2 10 0 0 0 0 1 running_head:_zetahunter:_a_zetaproteobacteria_classification_tool Xx_Xx:_XxXx:_x_Xx_x_x
+#Address correspondence #address # #A #Ad #Add BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 9 #.,.@.. 7 10 0 0 0 0 1 #address_correspondence_to_sean_m._mcallister,_zetahunter.help@gmail.com. #Xx_x_x_Xx_X._XxXx,_x.x@x.x.
+S.M.M. and s.m.m. S S. S.M S.M. BLOCKSTART PAGEEND SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 1 10 ....... 7 10 0 0 0 0 1 s.m.m._and_r.m.m._contributed_equally_to_this_work. X.X.X._x_X.X.X._x_x_x_x_x.
+2 2 2 2 2 2 2 BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 1 0 no 0 10 0 1 0 0 0 X d
+Abstract. Like abstract. A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 0 .,-, 4 10 0 1 0 0 1 abstract._like_many_taxa,_the_zetaproteobacteria_lack_well-defined_taxonomic_divisions, Xx._Xx_x_x,_x_Xx_x_x-x_x_x,
+making it making m ma mak maki BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 . 1 10 0 1 0 0 1 making_it_difficult_to_compare_between_studies._we_designed_zetahunter_to_reproducibly x_x_x_x_x_x_x._Xx_x_XxXx_x_x
+assign 16S assign a as ass assi BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 - 1 10 0 0 0 0 1 assign_XXs_rrna_gene_sequences_to_previously-described_otus_based_on_a_curated x_dX_xX_x_x_x_x-x_Xx_x_x_x_x
+database. While database. d da dat data BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 1 ., 2 10 0 0 0 0 1 database._while_zetahunter_can_use_any_given_database,_we_include_a_curated x._Xx_XxXx_x_x_x_x_x,_x_x_x_x
+classification of classification c cl cla clas BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 1 -. 2 10 0 0 0 0 1 classification_of_publically-available_zetaproteobacteria. x_x_x-x_Xx.
+Introduction. Taxonomic introduction. I In Int Intr BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 1 . 1 10 0 0 0 0 1 introduction._taxonomic_groups_with_limited_cultivated_representatives_are_often Xx._Xx_x_x_x_x_x_x_x
+lumped into lumped l lu lum lump BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 2 . 1 10 0 0 0 0 1 lumped_into_a_single_taxonomic_label_encompassing_multiple_distinct_ecological_units. x_x_x_x_x_x_x_x_x_x_x.
+This makes this T Th Thi This BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 2 ,, 2 10 0 0 0 0 1 this_makes_it_difficult_to_explicitly_discuss_the_abundance,_significance,_and_niche Xx_x_x_x_x_x_x_x_x,_x,_x_x
+preference of preference p pr pre pref BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 2 . 1 10 0 0 0 0 1 preference_of_these_units_between_studies._one_group_with_poor_taxonomic_resolution_is x_x_x_x_x_x._Xx_x_x_x_x_x_x
+the Zetaproteobacteria the t th the the BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 3 , 1 10 0 0 0 0 1 the_zetaproteobacteria_class,_which_is_only_accurately_classified_to_this_taxonomic_level x_Xx_x,_x_x_x_x_x_x_x_x_x
+by standard by b by by by BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 3 (). 3 10 0 0 0 0 1 by_standard_small_subunit_ribosomal_rna_(XXs_rrna)_gene_classification_tools. x_x_x_x_x_X_(dX_xX)_x_x_x.
+ZetaHunter allows zetahunter Z Ze Zet Zeta BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 2 4 ,- 2 10 0 0 0 0 1 zetahunter_allows_for_reproducible,_higher-resolution_comparisons_across_studies_by XxXx_x_x_x,_x-x_x_x_x_x
+using a using u us usi usin BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 no 0 10 0 0 0 0 1 using_a_curated_dataset_with_a_defined_taxonomy_based_on_operational_taxonomic_units x_x_x_x_x_x_x_x_x_x_x_x_x
+(OTUs). ZetaHunter (otus). ( (O (OT (OTU BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 (). 3 10 0 0 0 0 1 (otus)._zetahunter_comes_with_a_curated_database_to_identify_the_members_of_the (Xx)._XxXx_x_x_x_x_x_x_x_x_x_x_x
+Zetaproteobacteria, though zetaproteobacteria, Z Ze Zet Zeta BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 2 5 ,. 2 10 0 0 0 0 1 zetaproteobacteria,_though_it_may_be_used_with_any_curated_XXs_rrna_gene_database. Xx,_x_x_x_x_x_x_x_x_dX_xX_x_x.
+ZetaHunter implementation. zetahunter Z Ze Zet Zeta BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 2 5 ., 2 10 0 0 0 0 1 zetahunter_implementation._zetahunter_is_a_command_line_program_written_in_ruby, XxXx_x._XxXx_x_x_x_x_x_x_x_Xx,
+designed to designed d de des desi BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 - 1 10 0 0 0 0 1 designed_to_assign_user-supplied_XXs_rrna_gene_sequences_to_otus_defined_by_a x_x_x_x-x_dX_xX_x_x_x_Xx_x_x_x
+reference sequence reference r re ref refe BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 6 .,, 3 10 0 0 0 0 1 reference_sequence_database._zetahunter_can_be_used_on_linux,_macosx,_and_windows x_x_x._XxXx_x_x_x_x_Xx,_XxX,_x_Xx
+platforms through platforms p pl pla plat BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ,( 2 10 0 0 0 0 1 platforms_through_a_docker_container,_or_through_installation_from_source_(linux_and x_x_x_Xx_x,_x_x_x_x_x_(Xx_x
+MacOSX only). macosx M Ma Mac MacO BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 7 )., 3 10 0 0 0 0 1 macosx_only)._by_default,_zetahunter_uses_a_curated_database_of_zetaproteobacteria XxX_x)._Xx_x,_XxXx_x_x_x_x_x_Xx
+16S rRNA 16s 1 16 16S 16S BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 3 7 () 2 10 0 0 0 0 0 XXs_rrna_genes_from_arb_silva_(release_XXX)_and_zetaproteobacteria_genomes_from dX_xX_x_x_X_X_(x_d)_x_Xx_x_x
+JGI's Integrated jgi's J JG JGI JGI' BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 8 '()(). 6 10 0 0 0 0 0 jgi's_integrated_microbial_genomes_(img)_(see_supplemental_table_X). X'x_Xx_Xx_Xx_(X)_(x_Xx_Xx_d).
+Zetaproteobacteria OTU zetaproteobacteria Z Ze Zet Zeta BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 8 (). 3 10 0 0 0 0 0 zetaproteobacteria_otu_(zotu)_definitions_include_those_reported_by_mcallister_et_al. Xx_X_(X)_x_x_x_x_x_XxXx_x_x.
+(2011) at (2011) ( (2 (20 (201 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 3 9 (), 3 10 0 0 0 0 0 (XXXX)_at_XX%_identity,_maintaining_zotu_number_order_from_zotuX_to_zotuXX_for (d)_x_d%_x,_x_X_x_x_x_Xd_x_Xd_x
+ease in ease e ea eas ease BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 9 . 1 10 0 0 0 0 0 ease_in_comparisons_across_studies._numbered_zotus_from_zotuXX_upward_were x_x_x_x_x._Xx_Xx_x_Xd_x_x
+discovered after discovered d di dis disc BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 9 . 1 10 0 0 0 0 0 discovered_after_XXXX._sequences_for_use_in_zetahunter_must_be_aligned_using_sina x_x_d._Xx_x_x_x_XxXx_x_x_x_x_X
+(Pruesse et (pruesse ( (P (Pr (Pru BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 10 (.,). 5 10 0 0 0 0 0 (pruesse_et_al.,_XXXX). (Xx_x_x.,_d).
+The default the T Th The The BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 10 ()- 3 10 0 0 0 0 0 the_default_pipeline_of_zetahunter_(figure_X)_takes_sina-aligned_XXs_rrna Xx_x_x_x_XxXx_(Xx_d)_x_X-x_dX_xX
+gene sequences gene g ge gen gene BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 4 10 :) 2 10 0 1 0 0 0 gene_sequences_and_processes_them_as_follows:_X)_input_sequences_are_masked_to_the x_x_x_x_x_x_x:_d)_Xx_x_x_x_x_x
+1,282 bp 1,282 1 1, 1,2 1,28 BLOCKSTART PAGEEND SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 4 11 ,.().) 6 10 0 1 0 0 0 X,XXX_bp_used_by_mcallister_et_al._(XXXX)._X)_sequences_are_checked_for_chimeras_using d,d_x_x_x_XxXx_x_x._(d)._d)_Xx_x_x_x_x_x
+3 3 3 3 3 3 3 BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 4 0 no 0 10 0 1 0 0 0 X d
+mothur's uchime mothur's m mo mot moth BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 0 '(.,;.,).) 10 10 0 1 0 0 1 mothur's_uchime_algorithm_(schloss_et_al.,_XXXX;_edgar_et_al.,_XXXX)._X)_sortmerna_is x'x_x_x_(Xx_x_x.,_d;_Xx_x_x.,_d)._d)_XxX_x
+used to used u us use used BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 , 1 10 0 1 0 0 1 used_to_cluster_new_sequences_with_the_reference_database,_assigning_zotu_based_on x_x_x_x_x_x_x_x_x,_x_X_x_x
+genetic distance genetic g ge gen gene BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 (;.,).) 7 10 0 0 0 0 1 genetic_distance_(closed_reference_binning;_kopylova_et_al.,_XXXX)._X)_the_remaining x_x_(x_x_x;_Xx_x_x.,_d)._d)_Xx_x
+sequences are sequences s se seq sequ BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 1 ()(; 4 10 0 0 0 0 1 sequences_are_clustered_into_novel_otus_(newzetaotus)_with_mothur_(de_novo_binning; x_x_x_x_x_Xx_(XxXxXx)_x_x_(x_x_x;
+average neighbor; average a av ave aver BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 2 ;)(.,).) 8 10 0 0 0 0 1 average_neighbor;_numbered_by_abundance)_(schloss_et_al.,_XXXX)._X)_summary_files x_x;_x_x_x)_(Xx_x_x.,_d)._d)_Xx_x
+(including final (including ( (i (in (inc BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 2 (), 3 10 0 0 0 0 1 (including_final_zotu_calls_and_closest_database_hits),_a_biom_table_showing_otu (x_x_X_x_x_x_x_x),_x_x_x_x_X
+abundance per abundance a ab abu abun BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 3 ,. 2 10 0 0 0 0 1 abundance_per_sample,_and_otu_network_files_are_exported_for_use._the_zetahunter x_x_x,_x_X_x_x_x_x_x_x._Xx_XxXx
+database includes database d da dat data BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 3 , 1 10 0 0 0 0 1 database_includes_XX_proteobacteria_outgroup_sequences,_allowing_zetahunter_to_flag x_x_d_Xx_x_x,_x_XxXx_x_x
+sequences potentially sequences s se seq sequ BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 3 ., 2 10 0 0 0 0 1 sequences_potentially_outside_the_zetaproteobacteria._additionally,_sequences_that_are x_x_x_x_Xx._Xx,_x_x_x
+short, chimeric, short, s sh sho shor BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 4 ,,. 3 10 0 0 0 0 1 short,_chimeric,_or_singletons_are_also_flagged._this_pipeline_is_an_implementation_of x,_x,_x_x_x_x_x._Xx_x_x_x_x_x
+open-reference OTU open-reference o op ope open BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 4 -(-., 5 10 0 0 0 0 1 open-reference_otu_picking_similar_to_the_one_found_in_qiime_(navas-molina_et_al., x-x_X_x_x_x_x_x_x_x_X_(Xx-Xx_x_x.,
+2013). 2013). 2013). 2 20 201 2013 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 6 5 ). 2 10 0 0 0 0 1 XXXX). d).
+To use to T To To To BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 5 -,:)- 5 10 0 0 0 0 1 to_use_zetahunter_for_non-zetaproteobacteria,_users_need:_X)_a_database_of_sina- Xx_x_XxXx_x_x-Xx,_x_x:_d)_x_x_x_X-
+aligned 16S aligned a al ali alig BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 5 ,) 2 10 0 0 0 0 1 aligned_XXs_rrna_gene_sequences,_X)_a_sequence_mask_with_asterisks_at_each_informative x_dX_xX_x_x,_d)_x_x_x_x_x_x_x_x
+alignment column alignment a al ali alig BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 ,)- 3 10 0 0 0 0 1 alignment_column_to_be_used_for_taxonomic_assignment,_and_X)_a_tab-delimited_file x_x_x_x_x_x_x_x,_x_d)_x_x-x_x
+assigning each assigning a as ass assi BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 no 0 10 0 0 0 0 1 assigning_each_sequence_to_a_particular_taxonomic_group_at_the_similarity_threshold x_x_x_x_x_x_x_x_x_x_x_x
+desired by desired d de des desi BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 7 . 1 10 0 0 0 0 1 desired_by_the_user. x_x_x_x.
+Software availability. software S So Sof Soft BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 7 . 1 10 0 0 0 0 1 software_availability._zetahunter_is_available_for_download_at Xx_x._XxXx_x_x_x_x_x
+<https://github.com/mooreryan/ZetaHunter>. GitHub <https://github.com/mooreryan/zetahunter>. < <h <ht <htt BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 1 7 7 ://.//. 7 10 0 0 0 0 1 <https://github.com/mooreryan/zetahunter>._github_documentation_includes_examples <x:/x.x/x/XxXx>._XxXx_x_x_x
+for Zetaproteobacteria for f fo for for BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 7 - 1 10 0 0 0 0 1 for_zetaproteobacteria_and_non-zetaproteobacteria_classification_and_output_file x_Xx_x_x-Xx_x_x_x_x
+explanations. explanations. explanations. e ex exp expl BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 8 . 1 10 0 0 0 0 1 explanations. x.
+Acknowledgements Acknowledgements acknowledgements A Ac Ack Ackn BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 8 no 0 10 0 0 0 0 0 acknowledgements Xx
+We thank we W We We We BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 8 no 0 10 0 0 0 0 0 we_thank_dave_emerson_for_providing_XXs_rrna_sequences_for_the_zetahunter_database Xx_x_Xx_Xx_x_x_dX_xX_x_x_x_XxXx_x
+from novel from f fr fro from BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 8 . 1 10 0 0 0 0 0 from_novel_zetaproteobacteria_isolates._d_emerson_and_b_chiu_are_thanked_for_their x_x_Xx_x._X_Xx_x_X_Xx_x_x_x_x
+comments on comments c co com comm BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 9 .,, 3 10 0 0 0 0 0 comments_on_early_versions_of_this_manuscript._we_also_thank_k_hager,_h_fullerton,_j x_x_x_x_x_x_x._Xx_x_x_X_Xx,_X_Xx,_X
+Scott, and scott, S Sc Sco Scot BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 7 9 , 1 10 0 0 0 0 0 scott,_and_j_vander_roost_for_testing_and_troubleshooting_zetahunter_using_multiple Xx,_x_X_Xx_Xx_x_x_x_x_XxXx_x_x
+platforms and platforms p pl pla plat BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 10 ./ 2 10 0 0 0 0 0 platforms_and_datasets._we_also_acknowledge_the_arb/silva_group_for_their_work_with x_x_x._Xx_x_x_x_X/X_x_x_x_x_x
+stable 16S stable s st sta stab BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 10 ;' 2 10 0 0 0 0 0 stable_XXs_rrna_alignments_using_the_sina_tool;_this_tool_is_key_to_zetahunter's x_dX_xX_x_x_x_X_x;_x_x_x_x_x_XxXx'x
+function. SMM function. f fu fun func BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 11 .. 2 10 0 1 0 0 0 function._smm_and_rmm_designed_the_zetahunter_program._smm_developed_the x._X_x_X_x_x_XxXx_x._X_x_x
+Zetaproteobacteria database. zetaproteobacteria Z Ze Zet Zeta BLOCKSTART PAGEEND SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 11 ..,, 4 10 0 1 0 0 0 zetaproteobacteria_database._rmm_wrote_the_zetahunter_program._smm,_rmm,_and Xx_x._X_x_x_XxXx_x._X,_X,_x
+4 4 4 4 4 4 4 BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 8 0 no 0 10 0 1 0 0 0 X d
+CSC wrote csc C CS CSC CSC BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 8 0 .- 2 10 0 1 0 0 1 csc_wrote_and_edited_this_manuscript._this_work_was_funded_by_nsf_grant_oce- X_x_x_x_x_x._Xx_x_x_x_x_X_x_X-
+1155290 (to 1155290 1 11 115 1155 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 1 0 0 0 8 0 () 2 10 0 1 0 0 1 XXXXXXX_(to_csc)_and_usda_national_institute_of_food_and_agriculture_award_number d_(x_X)_x_X_Xx_Xx_x_Xx_x_Xx_x_x
+2012-68003-30155. Computational 2012-68003-30155. 2 20 201 2012 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 8 1 --. 3 10 0 0 0 0 1 XXXX-XXXXX-XXXXX._computational_infrastructure_support_by_the_university_of_delaware d-d-d._Xx_x_x_x_x_Xx_x_Xx
+Center for center C Ce Cen Cent BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 8 1 no 0 10 0 0 0 0 1 center_for_bioinformatics_and_computational_biology_core_facility_was_made_possible Xx_x_Xx_x_Xx_Xx_Xx_Xx_x_x_x
+through funding through t th thr thro BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 1 () 2 10 0 0 0 0 1 through_funding_from_delaware_inbre_(nih_pXX_gmXXXXXX)_and_the_delaware x_x_x_Xx_X_(X_Xd_Xd)_x_x_Xx
+Biotechnology Institute. biotechnology B Bi Bio Biot BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 2 .. 2 10 0 0 0 0 1 biotechnology_institute._the_authors_declare_no_conflict_of_interest. Xx_Xx._Xx_x_x_x_x_x_x.
+References References references R Re Ref Refe BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 2 no 0 1 0 0 0 0 1 references Xx
+Edgar RC, edgar E Ed Edg Edga BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 9 2 ,,,,.. 6 9 0 0 0 0 1 edgar_rc,_bj_haas,_jc_clemente,_c_quince,_and_r_knight._XXXX._uchime_improves Xx_X,_X_Xx,_X_Xx,_X_Xx,_x_X_Xx._d._X_x
+sensitivity and sensitivity s se sen sens BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 2 ., 2 7 0 0 0 0 1 sensitivity_and_speed_of_chimera_detection._bioinformatics, x_x_x_x_x_x._Xx,
+doi:10.1093/bioinformatics/btr381 doi:10.1093/bioinformatics/btr381 doi:10.1093/bioinformatics/btr381 d do doi doi: BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 0 9 2 :.// 4 4 0 0 0 0 1 doi:XX.XXXX/bioinformatics/btrXXX x:d.d/x/xd
+Kopylova E, kopylova K Ko Kop Kopy BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ,,..: 5 9 0 0 0 0 1 kopylova_e,_l_noé,_and_h_touzet_h._XXXX._sortmerna:_fast_and_accurate_filtering_of Xx_X,_X_Xx,_x_X_Xx_X._d._XxXxX:_Xx_x_x_x_x
+ribosomal RNAs ribosomal r ri rib ribo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 2 . 1 6 0 0 0 0 1 ribosomal_rnas_in_metatranscriptomic_data._bioinformatics x_Xx_x_x_x._Xx
+doi:10.1093/bioinformatics/bts611 doi:10.1093/bioinformatics/bts611 doi:10.1093/bioinformatics/bts611 d do doi doi: BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 0 9 2 :.// 4 4 0 0 0 0 1 doi:XX.XXXX/bioinformatics/btsXXX x:d.d/x/xd
+McAllister SM, mcallister M Mc McA McAl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 9 2 ,,,,,.. 7 8 0 0 0 0 1 mcallister_sm,_re_davis,_jm_mcbeth,_bm_tebo,_d_emerson,_and_cl_moyer._XXXX. XxXx_X,_X_Xx,_X_XxXx,_X_Xx,_X_Xx,_x_X_Xx._d.
+Biodiversity and biodiversity B Bi Bio Biod BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 2 - 1 8 0 0 0 0 1 biodiversity_and_emerging_biogeography_of_the_neutrophilic_iron-oxidizing Xx_x_x_x_x_x_x_x-x
+Zetaproteobacteria. Appl. zetaproteobacteria. Z Ze Zet Zeta BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ....:-. 7 6 0 0 0 0 1 zetaproteobacteria._appl._environ._microbiol._XX:XXXX-XX. Xx._Xx._Xx._Xx._d:d-d.
+Navas-Molina JA, navas-molina N Na Nav Nava BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 -,-,,,-, 8 9 0 0 0 0 1 navas-molina_ja,_peralta-sánchez_jm,_gonzález_a,_mcmurdie_pj,_vázquez-baeza_y, Xx-Xx_X,_Xx-Xx_X,_Xx_X,_XxXx_X,_Xx-Xx_X,
+Xu Z, xu X Xu Xu Xu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 9 2 ,,,,,,,- 8 8 0 0 0 0 1 xu_z,_ursell_lk,_lauber_c,_zhou_h,_song_sj,_huntley_j,_ackermann_gl,_berg- Xx_X,_Xx_X,_Xx_X,_Xx_X,_Xx_X,_Xx_X,_Xx_X,_Xx-
+Lyons D, lyons L Ly Lyo Lyon BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 9 2 ,,,.. 5 9 0 0 0 0 1 lyons_d,_holmes_s,_caporaso_jg,_knight_r._XXXX._advancing_our_understanding_of Xx_X,_Xx_X,_Xx_X,_Xx_X._d._Xx_x_x_x
+the human the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 2 ..:-.: 6 8 0 0 0 0 1 the_human_microbiome_using_qiime._methods_in_enzymology._XXX:XXX-XXX._doi: x_x_x_x_X._Xx_x_Xx._d:d-d._x:
+10.1016/B978-0-12-407863-5.00019-8 10.1016/B978-0-12-407863-5.00019-8 10.1016/b978-0-12-407863-5.00019-8 1 10 10. 10.1 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 9 2 ./----.- 8 4 0 0 0 0 1 XX.XXXX/bXXX-X-XX-XXXXXX-X.XXXXX-X d.d/Xd-d-d-d-d.d-d
+Pruesse E, pruesse P Pr Pru Prue BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ,,..:- 6 10 0 0 0 0 1 pruesse_e,_j_peplies,_and_fo_glöckner._XXXX._sina:_accurate_high-throughput_multiple Xx_X,_X_Xx,_x_X_Xx._d._X:_x_x-x_x
+sequence alignment sequence s se seq sequ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 2 .:-. 4 8 0 0 0 0 1 sequence_alignment_of_ribosomal_rna_genes._bioinformatics_XX:XXXX-XXXX. x_x_x_x_X_x._Xx_d:d-d.
+Schloss PD, schloss S Sc Sch Schl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ,,,,,,, 7 10 0 0 0 0 1 schloss_pd,_sl_westcott,_t_ryabin,_jr_hall,_m_hartmann,_eb_hollister,_ra_lesniewski, Xx_X,_X_Xx,_X_Xx,_X_Xx,_X_Xx,_X_Xx,_X_Xx,
+BB Oakley, bb B BB BB BB BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ,,,,,,, 7 9 0 0 0 0 1 bb_oakley,_dh_parks,_cj_robinson,_jw_sahl,_b_stres,_gg_thallinger,_dj_van_horn, X_Xx,_X_Xx,_X_Xx,_X_Xx,_X_Xx,_X_Xx,_X_Xx_Xx,
+and CF and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 2 ..:-,-, 7 8 0 0 0 0 1 and_cf_weber._XXXX._introducing_mothur:_open-source,_platform-independent, x_X_Xx._d._Xx_x:_Xx-x,_x-x,
+community-supported software community-supported c co com comm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 2 -. 2 9 0 0 0 0 1 community-supported_software_for_describing_and_comparing_microbial_communities. x-x_x_x_x_x_x_x_x.
+Appl Environ appl A Ap App Appl BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 2 ,():-. 6 4 0 0 0 0 1 appl_environ_microbiol,_XX(XX):XXXX-XX. Xx_Xx_Xx,_d(d):d-d.
+5 5 5 5 5 5 5 BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 0 no 0 10 0 1 0 0 0 X d
+Figure 1. figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 0 ..- 3 10 1 1 0 0 1 figure_X._flow_chart_showing_the_zetahunter_pipeline._third-party_tools_used_in_the Xx_d._Xx_x_x_x_XxXx_x._Xx-x_x_x_x_x
+pipeline are pipeline p pi pip pipe BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 0 . 1 4 1 1 0 0 1 pipeline_are_indicated_to_the_left. x_x_x_x_x_x.
 

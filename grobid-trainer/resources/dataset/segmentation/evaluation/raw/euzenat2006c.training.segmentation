@@ -1,236 +1,236 @@
-A context a A A A A BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 1 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1
-for dynamic for f fo for for BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 8 0 0 0 0 1
-Jérôme Euzenat jérôme J Jé Jér Jérô BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 ,, 2 10 0 0 0 0 1
-1 INRIA 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 -,, 3 10 0 0 0 0 1
-Jerome.Euzenat@inrialpes.fr Jerome.Euzenat@inrialpes.fr jerome.euzenat@inrialpes.fr J Je Jer Jero BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 1 0 0 0 .. 2 5 0 0 0 0 1
-2 France 2 2 2 2 2 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 ,, 2 7 0 0 0 0 1
-{Jerome.Pierson, Fano.Ramparany}@francetelecom.com {jerome.pierson, { {J {Je {Jer BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 .,.. 4 10 0 0 0 0 1
-Abstract. In abstract. A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 8 0 0 0 0 1
-communicate in communicate c co com comm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 . 1 10 0 0 0 0 1
-an extensible an a an an an BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 0 1 no 0 9 0 0 0 0 1
-information management information i in inf info BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 no 0 8 0 0 0 0 1
-context information context c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 no 0 9 0 0 0 0 1
-devices and devices d de dev devi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 . 1 8 0 0 0 0 1
-1. Introduction 1. 1 1. 1. 1. BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 3 . 1 10 0 0 0 0 1
-In a in I In In In BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 3 , 1 8 0 0 0 0 1
-smart devices smart s sm sma smar BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 0 3 (,,-,.). 8 9 0 0 0 0 1
-elaborate services, elaborate e el ela elab BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 ,. 2 9 0 0 0 0 1
-large number large l la lar larg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 0 3 . 1 9 0 0 0 0 1
-to the to t to to to BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 ,//, 4 10 0 0 0 0 1
-service they service s se ser serv BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 5 0 0 0 0 1
-This idea this T Th Thi This BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 8 0 0 0 0 1
-interact. There interact. i in int inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 8 0 0 0 0 1
-services. In services. s se ser serv BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 ., 2 9 0 0 0 0 1
-the physical the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 [,]. 4 9 0 0 0 0 1
-are part are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 9 0 0 0 0 1
-context-aware applications, context-aware c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 -,.., 5 9 0 0 0 0 1
-extent by extent e ex ext exte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 2 0 0 0 0 1
-Our goal our O Ou Our Our BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 9 0 0 0 0 1
-different pervasive different d di dif diff BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 , 1 9 0 0 0 0 1
-existing services existing e ex exi exis BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 , 1 9 0 0 0 0 1
-addition of addition a ad add addi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 2 0 0 0 0 1
-First we first F Fi Fir Firs BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 9 0 0 0 0 1
-information (Section information i in inf info BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 (),() 5 9 0 0 0 0 1
-independent of independent i in ind inde BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 8 0 0 0 0 1
-openness of openness o op ope open BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 9 0 0 0 0 1
-have to have h ha hav have BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 ()., 4 9 0 0 0 0 1
-advantage of advantage a ad adv adva BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 "". 3 6 0 0 0 0 1
-2. A 2. 2 2. 2. 2. BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 2 0 . 1 10 0 0 0 0 1
-Context is context C Co Con Cont BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 () 2 8 0 0 0 0 1
-entity [3]. entity e en ent enti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 []., 4 10 0 0 0 0 1
-application [4, application a ap app appl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 [,]. 4 9 0 0 0 0 1
-indirectly from indirectly i in ind indi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ,. 2 9 0 0 0 0 1
-an architecture an a an an an BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 2 0 ' 1 9 0 0 0 0 1
-available and available a av ava avai BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ' 1 8 0 0 0 0 1
-recompiled and recompiled r re rec reco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 0 . 1 2 0 0 0 0 1
-Designing architecture designing D De Des Desi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 -, 2 9 0 0 0 0 1
-of a of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 no 0 8 0 0 0 0 1
-information [6, information i in inf info BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 [,,].,( 7 9 0 0 0 0 1
-enough computing enough e en eno enou BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ) 1 8 0 0 0 0 1
-(CMC) for (cmc) ( (C (CM (CMC BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 2 0 () 2 9 0 0 0 0 1
-(Fig. 1). (fig. ( (F (Fi (Fig BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 0 (.). 4 1 0 0 0 0 1
-This component this T Th Thi This BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 - 1 8 0 0 0 0 1
-context information context c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 8 0 0 0 0 1
-protocol enabling protocol p pr pro prot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 , 1 8 0 0 0 0 1
-information it information i in inf info BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 9 0 0 0 0 1
-Thus the thus T Th Thu Thus BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 8 0 0 0 0 1
-allows identifying allows a al all allo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 9 0 0 0 0 1
-then be then t th the then BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ., 2 9 0 0 0 0 1
-detailed description detailed d de det deta BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 (.. 3 9 0 0 0 0 1
-network location network n ne net netw BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ). 2 9 0 0 0 0 1
-method identifies method m me met meth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ()., 4 9 0 0 0 0 1
-should be should s sh sho shou BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 , 1 9 0 0 0 0 1
-detailed description detailed d de det deta BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 .( 2 9 0 0 0 0 1
-rather that rather r ra rat rath BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 )(-). 5 8 0 0 0 0 1
-fourth method fourth f fo fou four BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 no 0 9 0 0 0 0 1
-returned. returned. returned. r re ret retu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 1 0 0 0 0 1
-Thus any thus T Th Thu Thus BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 :,, 3 9 0 0 0 0 1
-provide information provide p pr pro prov BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 , 1 9 0 0 0 0 1
-been found been b be bee been BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 (,), 4 9 0 0 0 0 1
-get the get g ge get get BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 3 0 0 0 0 1
-We need we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 no 0 9 0 0 0 0 1
-these devices these t th the thes BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 5 0 0 0 0 1
-Fig. 1: fig. F Fi Fig Fig. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 11 .:() 4 10 0 0 0 0 1
-description of description d de des desc BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 11 . 1 3 0 0 0 0 1
-Web Web web W We Web Web BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1
-Alignment Alignment alignment A Al Ali Alig BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1
-Service Service service S Se Ser Serv BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 11 no 0 8 0 0 0 0 1
-       BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1
-       BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1
-       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEEND SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1
-3. Context 3. 3 3. 3. 3. BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 4 0 . 1 10 0 0 0 0 1
-In this in I In In In BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 4 0 , 1 8 0 0 0 0 1
-of its of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 .,, 3 9 0 0 0 0 1
-semantic web semantic s se sem sema BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 9 0 0 0 0 1
-heterogeneous devices. heterogeneous h he het hete BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 2 0 0 0 0 1
-The ground the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 0 ( 1 8 0 0 0 0 1
-[8]). It [8]). [ [8 [8] [8]) BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 4 0 []).--. 7 9 0 0 0 0 1
-strength of strength s st str stre BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 (,) 3 9 0 0 0 0 1
-(the identifiers (the ( (t (th (the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 0 (: 2 8 0 0 0 0 1
-http://www.w3c.org/sw). This http://www.w3c.org/sw). h ht htt http BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 1 4 0 ://../). 8 9 0 0 0 0 1
-refer precisely refer r re ref refe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 ( 1 10 0 0 0 0 1
-for all for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 ). 2 2 0 0 0 0 1
-The OWL the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 0 [], 3 8 0 0 0 0 1
-conceptual models conceptual c co con conc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 9 0 0 0 0 1
-graphs concerning graphs g gr gra grap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 9 0 0 0 0 1
-makes it makes m ma mak make BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 (.., 4 10 0 0 0 0 1
-« thermometer « « « « « BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 4 0 ). 2 4 0 0 0 0 1
-The context the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 0 : 1 9 0 0 0 0 1
-RDF assertions. rdf R RD RDF RDF BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 0 .- 2 9 0 0 0 0 1
-devices are devices d de dev devi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 ., 2 9 0 0 0 0 1
-devices might devices d de dev devi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 9 0 0 0 0 1
-that purpose, that t th tha that BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 ,[] 3 9 0 0 0 0 1
-context sources. context c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 ., 2 9 0 0 0 0 1
-necessary that necessary n ne nec nece BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 no 0 8 0 0 0 0 1
-which they which w wh whi whic BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 2 0 0 0 0 1
-4. Openness, 4. 4 4. 4. 4. BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 7 ., 2 10 0 0 0 0 1
-The languages the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 7 ,, 2 8 0 0 0 0 1
-are adapted are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 no 0 9 0 0 0 0 1
-representation of representation r re rep repr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 : 1 9 0 0 0 0 1
-open: they open: o op ope open BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 : 1 9 0 0 0 0 1
-add more add a ad add add BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 ; 1 9 0 0 0 0 1
-work in work w wo wor work BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 . 1 2 0 0 0 0 1
-If we if I If If If BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 7 ,., 3 10 0 0 0 0 1
-priori reason priori p pr pri prio BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 7 , 1 9 0 0 0 0 1
-compatible. Fortunately, compatible. c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 ., 2 9 0 0 0 0 1
-integrated in integrated i in int inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 no 0 8 0 0 0 0 1
-environment by environment e en env envi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 6 7 , 1 8 0 0 0 0 1
-property. The property. p pr pro prop BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 . 1 9 0 0 0 0 1
-they need they t th the they BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 no 0 9 0 0 0 0 1
-the information the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 . 1 8 0 0 0 0 1
-applications to applications a ap app appl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 6 7 . 1 9 0 0 0 0 1
-generic ontologies generic g ge gen gene BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 no 0 9 0 0 0 0 1
-applications [12]. applications a ap app appl BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 6 7 []. 3 2 0 0 0 0 1
-Unfortunately this unfortunately U Un Unf Unfo BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 0 , 1 10 0 0 0 0 1
-contained context contained c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 . 1 9 0 0 0 0 1
-matching context matching m ma mat matc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 no 0 8 0 0 0 0 1
-requirements. There requirements. r re req requ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 . 1 9 0 0 0 0 1
-pervasive computing pervasive p pe per perv BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 :(),() 6 9 0 0 0 0 1
-setting up setting s se set sett BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 () 2 9 0 0 0 0 1
-service. These service. s se ser serv BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 .. 2 9 0 0 0 0 1
-We propose we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 0 ()()(.). 8 9 0 0 0 0 1
-of such of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 () 2 9 0 0 0 0 1
-between different between b be bet betw BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 . 1 9 0 0 0 0 1
-ontologies close ontologies o on ont onto BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 0 ,(), 4 9 0 0 0 0 1
-dynamically computing dynamically d dy dyn dyna BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 no 0 9 0 0 0 0 1
-responses to responses r re res resp BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 []. 3 9 0 0 0 0 1
-Fig. 2: fig. F Fi Fig Fig. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 4 .: 2 10 0 0 0 0 1
-provider, the provider, p pr pro prov BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 , 1 9 0 0 0 0 1
-device model. device d de dev devi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 . 1 1 0 0 0 0 1
-5. Conclusion 5. 5 5. 5. 5. BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 5 . 1 10 0 0 0 0 1
-We specifically we W We We We BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 5 no 0 9 0 0 0 0 1
-an ever-evolving an a an an an BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 8 5 -. 2 9 0 0 0 0 1
-architecture and architecture a ar arc arch BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 8 0 0 0 0 1
-addition, at addition, a ad add addi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 ,, 2 9 0 0 0 0 1
-context of context c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 9 0 0 0 0 1
-components developed components c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 no 0 9 0 0 0 0 1
-these technologies. these t th the thes BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 ., 2 9 0 0 0 0 1
-the necessary the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 9 0 0 0 0 1
-minimal commitment minimal m mi min mini BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 :,, 3 8 0 0 0 0 1
-protocol. protocol. protocol. p pr pro prot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 1 0 0 0 0 1
-We are we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 9 0 0 0 0 1
-toolkit for toolkit t to too tool BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 5 no 0 10 0 0 0 0 1
-context management context c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 8 0 0 0 0 1
-(search, diffuse (search, ( (s (se (sea BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 5 (,). 4 5 0 0 0 0 1
-WEB WEB web W WE WEB WEB BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 1 1 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 7 0 0 0 0 1
-       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 9 0 0 0 0 1
-       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-       BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 9 0 0 0 0 1
-isA isA isa i is isA isA BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 10 no 0 3 0 0 0 0 1
-isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-Alignment Alignment alignment A Al Ali Alig BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-Service Service service S Se Ser Serv BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 10 no 0 8 0 0 0 0 1
-isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-° ° °     BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-° ° °     BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-° ° °     BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-isA isA isa i is isA isA BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 9 0 0 0 0 1
-       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-isA isA isa i is isA isA BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 8 0 0 0 0 1
-       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 6 0 0 0 0 1
-isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-isA isA isa i is isA isA BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-isA isA isa i is isA isA BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-isA isA isa i is isA isA BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 6 0 0 0 0 1
-       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-       BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
->> >> >> > >> >> >> BLOCKSTART PAGEEND NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1
-Acknowledgement Acknowledgement acknowledgement A Ac Ack Ackn BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 0 no 0 10 0 0 0 0 1
-T h t T T T T BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 9 0 no 0 10 0 0 0 0 1
-004182: "Amigo 004182: 0 00 004 0041 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 0 :"–". 5 7 0 0 0 0 1
-information on information i in inf info BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 ://.-.. 7 4 0 0 0 0 1
-References References references R Re Ref Refe BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 no 0 10 0 0 0 0 1
-1. R. 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,:,, 6 10 0 0 0 0 1
-(CA US), (ca ( (C (CA (CA BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 1 (),(-------). 13 8 0 0 0 0 1
-2. O. 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,, 6 8 0 0 0 0 1
-Proceedings Context proceedings P Pr Pro Proc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 ,(), 4 9 0 0 0 0 1
-2005 2005 2005 2 20 200 2005 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 1 0 0 0 9 1 no 0 0 0 0 0 0 1
-3. A. 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,., 7 9 0 0 0 0 1
-rapid prototyping rapid r ra rap rapi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 1 -,-:-., 7 9 0 0 0 0 1
-2001 2001 2001 2 20 200 2001 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 1 0 0 0 9 1 no 0 0 0 0 0 0 1
-4. P. 4. 4 4. 4. 4. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,-,- 6 8 0 0 0 0 1
-Interaction, 16(2-3), interaction, I In Int Inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 ,(-),. 6 3 0 0 0 0 1
-5. M. 5. 5 5. 5. 5. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,,(), 7 9 0 0 0 0 1
-223-247, 2004. 223-247, 2 22 223 223- BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 -,. 3 1 0 0 0 0 1
-6. A. 6. 6 6. 6. 6. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,,():-, 9 9 0 0 0 0 1
-2001. 2001. 2001. 2 20 200 2001 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 9 1 . 1 0 0 0 0 0 1
-7. J. 7. 7 7. 7. 7. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,.,.,, 10 9 0 0 0 0 1
-48(3):49-53, 2005. 48(3):49-53, 4 48 48( 48(3 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ():-,. 6 2 0 0 0 0 1
-8. G. 8. 8 8. 8. 8. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,.,(): 10 8 0 0 0 0 1
-Abstract Syntax, abstract A Ab Abs Abst BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 ,,://..//-/ 11 8 0 0 0 0 1
-9. M. 9. 9 9. 9. 9. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,:, 7 7 0 0 0 0 1
-Recommendation, 2004. recommendation, R Re Rec Reco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 ,.://..//-/ 11 5 0 0 0 0 1
-10. A. 10. 1 10 10. 10. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,,,. 6 8 0 0 0 0 1
-http://www.w3.org/Submission/2004/SUBM-RDQL-20040109/ http://www.w3.org/Submission/2004/SUBM-RDQL-20040109/ http://www.w3.org/submission/2004/subm-rdql-20040109/ h ht htt http BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 1 9 1 ://..///--/ 11 5 0 0 0 0 1
-11. J. 11. 1 11 11. 11. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,.,., 9 9 0 0 0 0 1
-computing, Proceedings computing, c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 1 ,, 2 8 0 0 0 0 1
-(SW), pp. (sw), ( (S (SW (SW) BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 1 (),.-,. 7 2 0 0 0 0 1
-12. X. 12. 1 12 12. 12. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ...,..,.,., 11 9 0 0 0 0 1
-reasoning in reasoning r re rea reas BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 1 , 1 9 0 0 0 0 1
-communication Workshop communication c co com comm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 9 1 (),( 4 8 0 0 0 0 1
-US), 2000. us), U US US) US), BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 1 ),. 3 1 0 0 0 0 1
-13. J. 13. 1 13 13. 13. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,, 4 9 0 0 0 0 1
-Proceedings ICSOC proceedings P Pr Pro Proc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 , 1 9 0 0 0 0 1
-pp.81-95, Amsterdam pp.81-95, p pp pp. pp.8 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 .-,(),. 7 3 0 0 0 0 1
+A context a A A A A BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 1 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1 a_context_information_manager X_x_x_x
+for dynamic for f fo for for BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 8 0 0 0 0 1 for_dynamic_environments x_x_x
+Jérôme Euzenat jérôme J Jé Jér Jérô BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 ,, 2 10 0 0 0 0 1 jérôme_euzenat_X_,_jérôme_pierson_X_,_fano_ramparany_X Xx_Xx_d_,_Xx_Xx_d_,_Xx_Xx_d
+1 INRIA 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 -,, 3 10 0 0 0 0 1 X_inria_rhône-alpes,_montbonnot_st_martin,_france d_X_Xx-Xx,_Xx_Xx_Xx,_Xx
+Jerome.Euzenat@inrialpes.fr Jerome.Euzenat@inrialpes.fr jerome.euzenat@inrialpes.fr J Je Jer Jero BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 1 0 0 0 .. 2 5 0 0 0 0 1 jerome.euzenat@inrialpes.fr Xx.Xx@x.x
+2 France 2 2 2 2 2 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 0 0 ,, 2 7 0 0 0 0 1 X_france_telecom_r&d,_meylan,_france d_Xx_Xx_X&X,_Xx,_Xx
+{Jerome.Pierson, Fano.Ramparany}@francetelecom.com {jerome.pierson, { {J {Je {Jer BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 .,.. 4 10 0 0 0 0 1 {jerome.pierson,_fano.ramparany}@francetelecom.com {Xx.Xx,_Xx.Xx}@x.x
+Abstract. In abstract. A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 8 0 0 0 0 1 abstract._in_a_pervasive_environment,_heterogeneous_devices_need_to Xx._Xx_x_x_x,_x_x_x_x
+communicate in communicate c co com comm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 . 1 10 0 0 0 0 1 communicate_in_order_to_provide_services_adapted_to_users._we_have_developed x_x_x_x_x_x_x_x_x._Xx_x_x
+an extensible an a an an an BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 0 1 no 0 9 0 0 0 0 1 an_extensible_context_model_using_semantic_web_technologies_and_a_context x_x_x_x_x_x_x_x_x_x_x
+information management information i in inf info BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 no 0 8 0 0 0 0 1 information_management_component_that_enable_the_interaction_between x_x_x_x_x_x_x_x
+context information context c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 no 0 9 0 0 0 0 1 context_information_producer_devices_and_context_information_consumer x_x_x_x_x_x_x_x
+devices and devices d de dev devi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 . 1 8 0 0 0 0 1 devices_and_as_well_as_their_insertion_in_an_open_environment. x_x_x_x_x_x_x_x_x_x_x.
+1. Introduction 1. 1 1. 1. 1. BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 3 . 1 10 0 0 0 0 1 X._introduction d._Xx
+In a in I In In In BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 3 , 1 8 0 0 0 0 1 in_a_pervasive_computing_environment,_various_basic_services_can_be_provided_by Xx_x_x_x_x,_x_x_x_x_x_x_x
+smart devices smart s sm sma smar BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 0 3 (,,-,.). 8 9 0 0 0 0 1 smart_devices_(sensors,_actuators,_human-computer_interface,_etc.)._to_provide_more x_x_(x,_x,_x-x_x,_x.)._Xx_x_x
+elaborate services, elaborate e el ela elab BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 ,. 2 9 0 0 0 0 1 elaborate_services,_they_have_to_act_together_and_cooperate._then_they_can_offer_a x_x,_x_x_x_x_x_x_x._Xx_x_x_x_x
+large number large l la lar larg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 0 3 . 1 9 0 0 0 0 1 large_number_of_services._it_would_be_better_if_the_devices_could_adapt_their_behaviour x_x_x_x._Xx_x_x_x_x_x_x_x_x_x_x
+to the to t to to to BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 ,//, 4 10 0 0 0 0 1 to_the_user,_his/her_preference_and_his/her_task,_than_if_users_have_to_find_the_specific x_x_x,_x/x_x_x_x/x_x,_x_x_x_x_x_x_x_x
+service they service s se ser serv BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 5 0 0 0 0 1 service_they_want_among_all_the_smart_devices. x_x_x_x_x_x_x_x.
+This idea this T Th Thi This BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 8 0 0 0 0 1 this_idea_requires_the_perception_of_the_environment_in_which_devices_and_users Xx_x_x_x_x_x_x_x_x_x_x_x_x
+interact. There interact. i in int inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 8 0 0 0 0 1 interact._there_are_pieces_of_information_that_can_be_considered_common_to_all x._Xx_x_x_x_x_x_x_x_x_x_x_x
+services. In services. s se ser serv BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 ., 2 9 0 0 0 0 1 services._in_particular,_spatial_and_temporal_location_as_well_as_information_related_to x._Xx_x,_x_x_x_x_x_x_x_x_x_x
+the physical the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 [,]. 4 9 0 0 0 0 1 the_physical_environment_in_which_services_are_made_available_[X,_X]._these_elements x_x_x_x_x_x_x_x_x_[d,_d]._Xx_x
+are part are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 9 0 0 0 0 1 are_part_of_the_context_in_which_applications_operate._we_are_here_concerned_with x_x_x_x_x_x_x_x_x._Xx_x_x_x_x
+context-aware applications, context-aware c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 -,.., 5 9 0 0 0 0 1 context-aware_applications,_i.e.,_application_whose_behavior_is_determined_to_some x-x_x,_x.x.,_x_x_x_x_x_x_x
+extent by extent e ex ext exte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 2 0 0 0 0 1 extent_by_the_context. x_x_x_x.
+Our goal our O Ou Our Our BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 9 0 0 0 0 1 our_goal_is_to_design_a_context_management_system_general_enough_for_being_used_by Xx_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+different pervasive different d di dif diff BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 , 1 9 0 0 0 0 1 different_pervasive_computing_applications,_specific_enough_for_encompassing_already x_x_x_x,_x_x_x_x_x
+existing services existing e ex exi exis BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 , 1 9 0 0 0 0 1 existing_services_and_application,_and_flexible_enough_for_supporting_the_dynamic x_x_x_x,_x_x_x_x_x_x_x
+addition of addition a ad add addi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 2 0 0 0 0 1 addition_of_new_devices. x_x_x_x.
+First we first F Fi Fir Firs BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 9 0 0 0 0 1 first_we_introduce_our_proposition_for_a_distributed_architecture_to_manage_context Xx_x_x_x_x_x_x_x_x_x_x_x
+information (Section information i in inf info BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 (),() 5 9 0 0 0 0 1 information_(section_X),_then_we_define_a_context_representation_(section_X)_which_is x_(Xx_d),_x_x_x_x_x_x_(Xx_d)_x_x
+independent of independent i in ind inde BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 . 1 8 0 0 0 0 1 independent_of_applications_and_an_architecture_enabling_their_evolution._the x_x_x_x_x_x_x_x_x._Xx
+openness of openness o op ope open BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 9 0 0 0 0 1 openness_of_the_system_will_lead_to_deal_with_heterogeneous_representations_that_will x_x_x_x_x_x_x_x_x_x_x_x_x
+have to have h ha hav have BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 ()., 4 9 0 0 0 0 1 have_to_be_reconciled_before_being_used_(section_X)._for_that_purpose,_we_will_take x_x_x_x_x_x_x_(x_d)._Xx_x_x,_x_x_x
+advantage of advantage a ad adv adva BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 3 "". 3 6 0 0 0 0 1 advantage_of_solutions_developed_for_the_"semantic_web". x_x_x_x_x_x_"x_x".
+2. A 2. 2 2. 2. 2. BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 2 0 . 1 10 0 0 0 0 1 X._a_context_information_management_component d._X_x_x_x_x
+Context is context C Co Con Cont BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 () 2 8 0 0 0 0 1 context_is_the_set_of_information_(partly)_characterizing_the_situation_of_some Xx_x_x_x_x_x_(x)_x_x_x_x_x
+entity [3]. entity e en ent enti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 []., 4 10 0 0 0 0 1 entity_[X]._the_notion_of_context_is_not_universal_but_relative_to_some_situation,_task_or x_[d]._Xx_x_x_x_x_x_x_x_x_x_x_x,_x_x
+application [4, application a ap app appl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 [,]. 4 9 0 0 0 0 1 application_[X,_X]._pervasive_computing_applications_retrieve_context_data_directly_or x_[d,_d]._Xx_Xx_x_x_x_x_x_x
+indirectly from indirectly i in ind indi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ,. 2 9 0 0 0 0 1 indirectly_from_sensors,_which_are_grounded_in_the_physical_environment._we_propose x_x_x,_x_x_x_x_x_x_x._Xx_x
+an architecture an a an an an BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 2 0 ' 1 9 0 0 0 0 1 an_architecture_in_which_applications_won't_need_to_directly_connect_to_each_sensor x_x_x_x_x_x'x_x_x_x_x_x_x_x
+available and available a av ava avai BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ' 1 8 0 0 0 0 1 available_and_where_adding_a_new_sensor_won't_require_all_applications_to_be x_x_x_x_x_x_x_x'x_x_x_x_x_x
+recompiled and recompiled r re rec reco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 0 . 1 2 0 0 0 0 1 recompiled_and_redeployed. x_x_x.
+Designing architecture designing D De Des Desi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 -, 2 9 0 0 0 0 1 designing_architecture_for_hosting_context-aware_services,_suggests_the_development Xx_x_x_x_x-x_x,_x_x_x
+of a of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 no 0 8 0 0 0 0 1 of_a_context_management_service_for_providing_other_services_or_devices_context x_x_x_x_x_x_x_x_x_x_x_x
+information [6, information i in inf info BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 [,,].,( 7 9 0 0 0 0 1 information_[X,_X,_XX]._in_our_approach,_each_device_(or_his_proxy_if_it_cannot_embed x_[d,_d,_d]._Xx_x_x,_x_x_(x_x_x_x_x_x_x
+enough computing enough e en eno enou BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ) 1 8 0 0 0 0 1 enough_computing_resource)_or_service_embeds_a_context_management_component x_x_x)_x_x_x_x_x_x_x
+(CMC) for (cmc) ( (C (CM (CMC BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 2 0 () 2 9 0 0 0 0 1 (cmc)_for_maintaining_context_information_for_its_own_use_or_for_the_benefit_of_others (X)_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+(Fig. 1). (fig. ( (F (Fi (Fig BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 0 (.). 4 1 0 0 0 0 1 (fig._X). (Xx._d).
+This component this T Th Thi This BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 - 1 8 0 0 0 0 1 this_component_provides_mechanisms_for_helping_context-aware_devices_to_request Xx_x_x_x_x_x_x-x_x_x_x
+context information context c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 8 0 0 0 0 1 context_information_from_context_sensitive_devices._for_this_purpose_we_design_a x_x_x_x_x_x._Xx_x_x_x_x_x
+protocol enabling protocol p pr pro prot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 , 1 8 0 0 0 0 1 protocol_enabling_devices_to_identify_a_service,_know_what_kind_of_context x_x_x_x_x_x_x,_x_x_x_x_x
+information it information i in inf info BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 9 0 0 0 0 1 information_it_could_provide_and_interact_with_it_in_order_to_access_this_information. x_x_x_x_x_x_x_x_x_x_x_x_x_x.
+Thus the thus T Th Thu Thus BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 8 0 0 0 0 1 thus_the_context_management_component_provides_few_methods._a_first_method Xx_x_x_x_x_x_x_x._X_x_x
+allows identifying allows a al all allo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 9 0 0 0 0 1 allows_identifying_devices_that_are_available_in_the_environment._the_identifier_can x_x_x_x_x_x_x_x_x._Xx_x_x
+then be then t th the then BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ., 2 9 0 0 0 0 1 then_be_used_to_contact_the_device._alternatively,_it_could_be_used_to_get_a_more x_x_x_x_x_x_x._Xx,_x_x_x_x_x_x_x_x
+detailed description detailed d de det deta BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 (.. 3 9 0 0 0 0 1 detailed_description_of_the_device_(e.g._in_case_the_identifier_is_a_uri_pointing_to_a x_x_x_x_x_(x.x._x_x_x_x_x_x_X_x_x_x
+network location network n ne net netw BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ). 2 9 0 0 0 0 1 network_location_where_a_description_of_the_identified_object_is_stored)._a_second x_x_x_x_x_x_x_x_x_x_x)._X_x
+method identifies method m me met meth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 ()., 4 9 0 0 0 0 1 method_identifies_the_class_(in_owl_terminology)_of_the_device._in_theory,_this_class x_x_x_x_(x_X_x)_x_x_x._Xx_x,_x_x
+should be should s sh sho shou BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 , 1 9 0 0 0 0 1 should_be_accessible_from_the_network_and_once_its_definition_is_found,_it_provides_a x_x_x_x_x_x_x_x_x_x_x_x,_x_x_x
+detailed description detailed d de det deta BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 .( 2 9 0 0 0 0 1 detailed_description_of_the_device._a_third_method_provides_the_device_description_(or x_x_x_x_x._X_x_x_x_x_x_x_(x
+rather that rather r ra rat rath BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 )(-). 5 8 0 0 0 0 1 rather_that_of_context_information_they_provide)_in_a_owl_formalism_(owl-s)._a x_x_x_x_x_x_x)_x_x_X_x_(X-X)._X
+fourth method fourth f fo fou four BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 no 0 9 0 0 0 0 1 fourth_method_is_used_to_post_queries_to_the_devices_and_to_get_the_context_information x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+returned. returned. returned. r re ret retu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 1 0 0 0 0 1 returned. x.
+Thus any thus T Th Thu Thus BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 :,, 3 9 0 0 0 0 1 thus_any_device_is_able_to:_find_out,_in_its_environment,_services_that_are_able_to Xx_x_x_x_x_x:_x_x,_x_x_x,_x_x_x_x_x
+provide information provide p pr pro prov BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 , 1 9 0 0 0 0 1 provide_information_relevant_to_its_own_context,_get_features_of_services_that_have x_x_x_x_x_x_x,_x_x_x_x_x_x
+been found been b be bee been BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 (,), 4 9 0 0 0 0 1 been_found_(for_example,_measurement_precision),_connect_to_the_selected_service_to x_x_(x_x,_x_x),_x_x_x_x_x_x
+get the get g ge get get BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 3 0 0 0 0 1 get_the_information_sought. x_x_x_x.
+We need we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 0 no 0 9 0 0 0 0 1 we_need_a_language_to_describe_the_context_model_of_heterogeneous_devices_so_that Xx_x_x_x_x_x_x_x_x_x_x_x_x_x
+these devices these t th the thes BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 0 . 1 5 0 0 0 0 1 these_devices_can_interact_in_a_dynamic_environment. x_x_x_x_x_x_x_x.
+Fig. 1: fig. F Fi Fig Fig. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 11 .:() 4 10 0 0 0 0 1 fig._X:_each_device_embeds_a_context_management_component_(cmc)_and_a_semantic Xx._d:_Xx_x_x_x_x_x_x_(X)_x_x_x
+description of description d de des desc BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 11 . 1 3 0 0 0 0 1 description_of_his_context. x_x_x_x.
+Web Web web W We Web Web BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1 web Xx
+Alignment Alignment alignment A Al Ali Alig BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1 alignment Xx
+Service Service service S Se Ser Serv BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 11 no 0 8 0 0 0 0 1 service Xx
+       BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1  
+       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1  
+       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1  
+       BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1  
+       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1  
+       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1  
+       BLOCKSTART PAGEEND SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 11 no 0 10 0 0 0 0 1  
+3. Context 3. 3 3. 3. 3. BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 4 0 . 1 10 0 0 0 0 1 X._context_model_and_language d._Xx_x_x_x
+In this in I In In In BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 4 0 , 1 8 0 0 0 0 1 in_this_dynamic_pervasive_environment,_each_cmc_manages_context_information Xx_x_x_x_x,_x_X_x_x_x
+of its of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 .,, 3 9 0 0 0 0 1 of_its_device._to_express_its_context_model,_its_needs_or_its_capabilities,_we_use x_x_x._Xx_x_x_x_x,_x_x_x_x_x,_x_x
+semantic web semantic s se sem sema BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 9 0 0 0 0 1 semantic_web_languages_described_below._they_ensure_interoperability_between_these x_x_x_x_x._Xx_x_x_x_x
+heterogeneous devices. heterogeneous h he het hete BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 2 0 0 0 0 1 heterogeneous_devices. x_x.
+The ground the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 0 ( 1 8 0 0 0 0 1 the_ground_language_for_the_semantic_web_is_rdf_(resource_description_framework Xx_x_x_x_x_x_x_x_X_(Xx_Xx_Xx
+[8]). It [8]). [ [8 [8] [8]) BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 4 0 []).--. 7 9 0 0 0 0 1 [X])._it_enables_expressing_assertions_of_the_form_subject-predicate-object._the [d])._Xx_x_x_x_x_x_x_x-x-x._Xx
+strength of strength s st str stre BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 (,) 3 9 0 0 0 0 1 strength_of_rdf_is_that_the_names_of_entities_(subjects,_predicates_or_objects)_are_uris x_x_X_x_x_x_x_x_x_(x,_x_x_x)_x_Xx
+(the identifiers (the ( (t (th (the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 0 (: 2 8 0 0 0 0 1 (the_identifiers_of_the_web_that_can_be_seen_as_a_generalization_of_urls: (x_x_x_x_x_x_x_x_x_x_x_x_x_Xx:
+http://www.w3c.org/sw). This http://www.w3c.org/sw). h ht htt http BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 1 4 0 ://../). 8 9 0 0 0 0 1 http://www.wXc.org/sw)._this_opens_the_possibility_for_different_rdf_documents_to x:/x.xdx.x/x)._Xx_x_x_x_x_x_X_x_x
+refer precisely refer r re ref refe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 ( 1 10 0 0 0 0 1 refer_precisely_to_an_entity_(it_is_reasonable_to_think_that_a_uri_denotes_the_same_thing x_x_x_x_x_(x_x_x_x_x_x_x_X_x_x_x_x
+for all for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 ). 2 2 0 0 0 0 1 for_all_of_its_users). x_x_x_x_x).
+The OWL the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 0 [], 3 8 0 0 0 0 1 the_owl_language_[X],_has_been_designed_for_expressing_«_ontologies_»_or Xx_X_x_[d],_x_x_x_x_x_«_x_»_x
+conceptual models conceptual c co con conc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 9 0 0 0 0 1 conceptual_models_of_a_domain_of_knowledge._it_constrains_the_interpretation_of_rdf x_x_x_x_x_x_x._Xx_x_x_x_x_X
+graphs concerning graphs g gr gra grap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 9 0 0 0 0 1 graphs_concerning_this_domain._owl_defines_classes_of_objects_and_predicates_and x_x_x_x._X_x_x_x_x_x_x_x
+makes it makes m ma mak make BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 (.., 4 10 0 0 0 0 1 makes_it_possible_to_declare_constraints_applying_to_them_(i.e.,_that_the_«_output_»_of_a x_x_x_x_x_x_x_x_x_(x.x.,_x_x_«_x_»_x_x
+« thermometer « « « « « BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 4 0 ). 2 4 0 0 0 0 1 «_thermometer_»_is_a_«_temperature_»). «_x_»_x_x_«_x_»).
+The context the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 0 : 1 9 0 0 0 0 1 the_context_model_that_we_will_use_at_that_stage_is_very_simple:_a_context_is_a_set_of Xx_x_x_x_x_x_x_x_x_x_x_x_x:_x_x_x_x_x_x
+RDF assertions. rdf R RD RDF RDF BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 0 .- 2 9 0 0 0 0 1 rdf_assertions._interoperability_is_guaranteed_through_considering_that_context-aware X_x._Xx_x_x_x_x_x_x-x
+devices are devices d de dev devi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 ., 2 9 0 0 0 0 1 devices_are_consumer_and_producer_of_rdf._however,_this_is_not_precise_enough_and x_x_x_x_x_x_X._Xx,_x_x_x_x_x_x
+devices might devices d de dev devi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 9 0 0 0 0 1 devices_might_want_to_extract_only_the_relevant_information_from_context_sources._for x_x_x_x_x_x_x_x_x_x_x_x._Xx
+that purpose, that t th tha that BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 ,[] 3 9 0 0 0 0 1 that_purpose,_a_language_like_rdql_[XX]_is_useful_for_querying_or_subscribing_to x_x,_x_x_x_X_[d]_x_x_x_x_x_x_x
+context sources. context c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 ., 2 9 0 0 0 0 1 context_sources._in_order_to_post_the_relevant_queries_to_the_adequate_components,_it_is x_x._Xx_x_x_x_x_x_x_x_x_x_x,_x_x
+necessary that necessary n ne nec nece BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 no 0 8 0 0 0 0 1 necessary_that_components_publish_the_owl_classes_of_objects_and_properties_on x_x_x_x_x_X_x_x_x_x_x_x
+which they which w wh whi whic BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 0 . 1 2 0 0 0 0 1 which_they_can_answer. x_x_x_x.
+4. Openness, 4. 4 4. 4. 4. BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 7 ., 2 10 0 0 0 0 1 X._openness,_dynamics_and_heterogeneity d._Xx,_x_x_x
+The languages the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 7 ,, 2 8 0 0 0 0 1 the_languages_developed_for_the_semantic_web,_and_particularly_rdf_and_owl, Xx_x_x_x_x_x_x,_x_x_X_x_X,
+are adapted are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 no 0 9 0 0 0 0 1 are_adapted_to_context_representation_in_pervasive_computing_and_particularly_to_the x_x_x_x_x_x_x_x_x_x_x_x
+representation of representation r re rep repr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 : 1 9 0 0 0 0 1 representation_of_dynamically_evolving_contexts_for_two_reasons:_these_languages_are x_x_x_x_x_x_x_x:_x_x_x
+open: they open: o op ope open BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 : 1 9 0 0 0 0 1 open:_they_implement_the_open_world_assumption_under_which_it_is_always_possible_to x:_x_x_x_x_x_x_x_x_x_x_x_x_x
+add more add a ad add add BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 ; 1 9 0 0 0 0 1 add_more_information_to_a_context_characterization;_and_they_have_been_designed_to x_x_x_x_x_x_x;_x_x_x_x_x_x
+work in work w wo wor work BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 . 1 2 0 0 0 0 1 work_in_a_networked_way. x_x_x_x_x.
+If we if I If If If BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 7 ,., 3 10 0 0 0 0 1 if_we_can_add_components_at_any_time,_they_are_not_easily_usable._indeed,_there_is_no_a Xx_x_x_x_x_x_x_x,_x_x_x_x_x._Xx,_x_x_x_x
+priori reason priori p pr pri prio BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 7 , 1 9 0 0 0 0 1 priori_reason_that_components_available,_new_applications_and_new_sensors_are_really x_x_x_x_x,_x_x_x_x_x_x_x
+compatible. Fortunately, compatible. c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 ., 2 9 0 0 0 0 1 compatible._fortunately,_using_the_knowledge_representation_techniques_that_are x._Xx,_x_x_x_x_x_x_x
+integrated in integrated i in int inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 no 0 8 0 0 0 0 1 integrated_in_owl_language_it_is_possible_to_introduce_new_devices_in_the x_x_X_x_x_x_x_x_x_x_x_x_x
+environment by environment e en env envi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 6 7 , 1 8 0 0 0 0 1 environment_by_extending_the_ontology,_through_specifying_a_new_concept_or_a x_x_x_x_x,_x_x_x_x_x_x_x
+property. The property. p pr pro prop BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 . 1 9 0 0 0 0 1 property._the_applications_must_be_as_general_as_possible_to_describe_the_information x._Xx_x_x_x_x_x_x_x_x_x_x_x
+they need they t th the they BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 no 0 9 0 0 0 0 1 they_need_whereas_the_context_management_system_must_be_as_precise_as_possible_on x_x_x_x_x_x_x_x_x_x_x_x_x_x
+the information the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 . 1 8 0 0 0 0 1 the_information_it_makes_available._this_approach_enables_the_most_specialized x_x_x_x_x._Xx_x_x_x_x_x
+applications to applications a ap app appl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 6 7 . 1 9 0 0 0 0 1 applications_to_take_advantage_of_cmcs._the_essential_point_is_to_have_sufficiently x_x_x_x_x_Xx._Xx_x_x_x_x_x_x
+generic ontologies generic g ge gen gene BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 7 no 0 9 0 0 0 0 1 generic_ontologies_to_cover_the_various_concepts_implied_in_pervasive_computing x_x_x_x_x_x_x_x_x_x_x
+applications [12]. applications a ap app appl BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 6 7 []. 3 2 0 0 0 0 1 applications_[XX]. x_[d].
+Unfortunately this unfortunately U Un Unf Unfo BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 0 , 1 10 0 0 0 0 1 unfortunately_this_is_not_always_the_case_and_agreeing_on_standard,_universal_and_self Xx_x_x_x_x_x_x_x_x_x_x,_x_x_x
+contained context contained c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 . 1 9 0 0 0 0 1 contained_context_ontology_is_not_a_reasonable_assumption._this_raises_the_issue_of x_x_x_x_x_x_x_x._Xx_x_x_x_x
+matching context matching m ma mat matc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 no 0 8 0 0 0 0 1 matching_context_information_produced_to_applications_context_information x_x_x_x_x_x_x_x
+requirements. There requirements. r re req requ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 . 1 9 0 0 0 0 1 requirements._there_are_three_alternative_approaches_addressing_interoperability_in x._Xx_x_x_x_x_x_x_x
+pervasive computing pervasive p pe per perv BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 :(),() 6 9 0 0 0 0 1 pervasive_computing_environments:_(i)_a_priori_standardisation_of_ontologies,_(ii) x_x_x:_(x)_X_x_x_x_x,_(x)
+setting up setting s se set sett BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 () 2 9 0 0 0 0 1 setting_up_mediators_among_ontologies_and_(iii)_a_dynamical_ontology_alignment x_x_x_x_x_x_(x)_x_x_x_x
+service. These service. s se ser serv BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 .. 2 9 0 0 0 0 1 service._these_three_approaches_are_not_incompatible_and_might_even_be_jointly_used. x._Xx_x_x_x_x_x_x_x_x_x_x_x.
+We propose we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 0 ()()(.). 8 9 0 0 0 0 1 we_propose_to_set_up_one_(or_more)_ontologies_alignment_service(s)_(fig._X)._the_goal Xx_x_x_x_x_x_(x_x)_x_x_x(x)_(Xx._d)._Xx_x
+of such of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 () 2 9 0 0 0 0 1 of_such_service_is_to_help_agents_(context_managers_in_our_case)_to_find_a_matching x_x_x_x_x_x_x_(x_x_x_x_x)_x_x_x_x
+between different between b be bet betw BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 . 1 9 0 0 0 0 1 between_different_ontologies._these_services_provide_mechanisms_for_finding_out x_x_x._Xx_x_x_x_x_x_x
+ontologies close ontologies o on ont onto BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 0 ,(), 4 9 0 0 0 0 1 ontologies_close_to_a_given_ontology,_archiving_(and_retrieving)_past_alignments, x_x_x_x_x_x,_x_(x_x)_x_x,
+dynamically computing dynamically d dy dyn dyna BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 no 0 9 0 0 0 0 1 dynamically_computing_matching_between_two_ontologies_and_translating_queries_and x_x_x_x_x_x_x_x_x_x
+responses to responses r re res resp BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 0 []. 3 9 0 0 0 0 1 responses_to_queries_between_context_managers_that_use_different_ontologies_[XX]. x_x_x_x_x_x_x_x_x_x_[d].
+Fig. 2: fig. F Fi Fig Fig. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 4 .: 2 10 0 0 0 0 1 fig._X:_for_finding_correspondence_between_his_model_and_the_model_of_the_context_information Xx._d:_Xx_x_x_x_x_x_x_x_x_x_x_x_x
+provider, the provider, p pr pro prov BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 , 1 9 0 0 0 0 1 provider,_the_window_service_asks_to_an_alignment_service_to_translate_his_model_to_another x,_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+device model. device d de dev devi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 . 1 1 0 0 0 0 1 device_model. x_x.
+5. Conclusion 5. 5 5. 5. 5. BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 5 . 1 10 0 0 0 0 1 X._conclusion_and_perspectives d._Xx_x_x
+We specifically we W We We We BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 5 no 0 9 0 0 0 0 1 we_specifically_addressed_the_problem_of_adaptability_of_context_management_to Xx_x_x_x_x_x_x_x_x_x_x
+an ever-evolving an a an an an BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 8 5 -. 2 9 0 0 0 0 1 an_ever-evolving_world._this_is_achieved_by_providing_distributed_component_based x_x-x_x._Xx_x_x_x_x_x_x_x
+architecture and architecture a ar arc arch BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 8 0 0 0 0 1 architecture_and_by_using_semantic_web_technologies._components_enable_the x_x_x_x_x_x_x._Xx_x_x
+addition, at addition, a ad add addi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 ,, 2 9 0 0 0 0 1 addition,_at_any_moment,_of_new_devices_that_can_provide_information_about_the x,_x_x_x,_x_x_x_x_x_x_x_x_x
+context of context c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 9 0 0 0 0 1 context_of_applications._the_use_of_rdf_and_owl_ensures_interoperability_between x_x_x._Xx_x_x_X_x_X_x_x_x
+components developed components c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 no 0 9 0 0 0 0 1 components_developed_independently_by_taking_advantage_of_the_open_character_of x_x_x_x_x_x_x_x_x_x_x
+these technologies. these t th the thes BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 ., 2 9 0 0 0 0 1 these_technologies._moreover,_using_ontology_alignment_modules_allows_dealing_with x_x._Xx,_x_x_x_x_x_x_x
+the necessary the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 9 0 0 0 0 1 the_necessary_heterogeneity_between_components._the_proposed_approach_relies_on_a x_x_x_x_x._Xx_x_x_x_x_x
+minimal commitment minimal m mi min mini BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 :,, 3 8 0 0 0 0 1 minimal_commitment_on_basic_technologies:_rdf,_owl,_and_some_identification x_x_x_x_x:_X,_X,_x_x_x
+protocol. protocol. protocol. p pr pro prot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 1 0 0 0 0 1 protocol. x.
+We are we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 9 0 0 0 0 1 we_are_currently_developing_a_demonstrator_of_this_technology._we_will_develop_a Xx_x_x_x_x_x_x_x_x._Xx_x_x_x
+toolkit for toolkit t to too tool BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 5 no 0 10 0 0 0 0 1 toolkit_for_developers_of_pervasive_applications_which_help_them_deploy_a_distributed x_x_x_x_x_x_x_x_x_x_x_x
+context management context c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 5 . 1 8 0 0 0 0 1 context_management_system._this_toolkit_will_provide_a_component_to_manage x_x_x._Xx_x_x_x_x_x_x_x
+(search, diffuse (search, ( (s (se (sea BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 5 (,). 4 5 0 0 0 0 1 (search,_diffuse_and_update)_context_information. (x,_x_x_x)_x_x.
+WEB WEB web W WE WEB WEB BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 1 1 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1 web X
+       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 7 0 0 0 0 1  
+       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1  
+       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1  
+       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 9 0 0 0 0 1  
+       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1  
+       BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 9 0 0 0 0 1  
+isA isA isa i is isA isA BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 10 no 0 3 0 0 0 0 1 isa xX
+isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1 isa xX
+       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1  
+Alignment Alignment alignment A Al Ali Alig BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1 alignment Xx
+Service Service service S Se Ser Serv BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 10 no 0 8 0 0 0 0 1 service Xx
+isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1 isa xX
+° ° °     BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1 ° °
+° ° °     BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1 ° °
+° ° °     BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1 ° °
+isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1 isa xX
+isA isA isa i is isA isA BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1 isa xX
+       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1  
+       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 9 0 0 0 0 1  
+       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1  
+isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1 isa xX
+isA isA isa i is isA isA BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1 isa xX
+       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1  
+       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1  
+       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 8 0 0 0 0 1  
+       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1  
+isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1 isa xX
+       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1  
+       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 6 0 0 0 0 1  
+isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1 isa xX
+isA isA isa i is isA isA BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1 isa xX
+isA isA isa i is isA isA BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1 isa xX
+isA isA isa i is isA isA BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1 isa xX
+       BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1  
+       BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 6 0 0 0 0 1  
+       BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1  
+isA isA isa i is isA isA BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1 isa xX
+       BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1  
+>> >> >> > >> >> >> BLOCKSTART PAGEEND NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 11 no 0 10 0 0 0 0 1 >> >
+Acknowledgement Acknowledgement acknowledgement A Ac Ack Ackn BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 0 no 0 10 0 0 0 0 1 acknowledgement Xx
+T h t T T T T BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 9 0 no 0 10 0 0 0 0 1 t_h_i_s_w_o_r_k_i_s_b_e_i_n_g_p_a_r_t_l_y_s_u_p_p_o_r_t_e_d_b_y_t_h_e_e_u_r_o_p_e_a_n_union_ist_project X_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_X_x_x_x_x_x_x_x_Xx_X_x
+004182: "Amigo 004182: 0 00 004 0041 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 0 :"–". 5 7 0 0 0 0 1 XXXXXX:_"amigo_-ambient_intelligence_for_the_networked_home_environment"._more d:_"Xx_-Xx_Xx_x_x_x_x_x"._Xx
+information on information i in inf info BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 ://.-.. 7 4 0 0 0 0 1 information_on_http://www.amigo-project.org. x_x_x:/x.x-x.x.
+References References references R Re Ref Refe BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 no 0 10 0 0 0 0 1 references Xx
+1. R. 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,:,, 6 10 0 0 0 0 1 X._r._guha,_contexts:_a_formalization_and_some_applications,_phd_thesis,_stanford_university d._X._Xx,_Xx:_x_x_x_x_x,_XxX_x,_Xx_x
+(CA US), (ca ( (C (CA (CA BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 1 (),(-------). 13 8 0 0 0 0 1 (ca_us),_XXXX_(technical_report_stan-cs-XX-XXXX-thesis_et_mcc_act-cyc-XXX-XX). (X_X),_d_(Xx_Xx_X-X-d-d-Xx_x_X_X-X-d-d).
+2. O. 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,, 6 8 0 0 0 0 1 X._o._khriyenko,_v._terziyan,_context_description_framework_for_the_semantic_web, d._X._Xx,_X._Xx,_Xx_x_x_x_x_x_x,
+Proceedings Context proceedings P Pr Pro Proc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 ,(), 4 9 0 0 0 0 1 proceedings_context_XXXX_context_representation_and_reasoning_workshop,_paris_(fr), Xx_Xx_d_Xx_x_x_x_x,_Xx_(X),
+2005 2005 2005 2 20 200 2005 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 1 0 0 0 9 1 no 0 0 0 0 0 0 1 XXXX d
+3. A. 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,., 7 9 0 0 0 0 1 X._a._dey,_d._salber,_g._abowd,_a_conceptual_framework_and_a_toolkit_for_supporting_the d._X._Xx,_X._Xx,_X._Xx,_X_x_x_x_x_x_x_x_x
+rapid prototyping rapid r ra rap rapi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 1 -,-:-., 7 9 0 0 0 0 1 rapid_prototyping_of_context-aware_applications,_human-computer_interaction_XX:XX-XXX., x_x_x_x-x_x,_Xx-Xx_Xx_d:d-d.,
+2001 2001 2001 2 20 200 2001 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 1 0 0 0 9 1 no 0 0 0 0 0 0 1 XXXX d
+4. P. 4. 4 4. 4. 4. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,-,- 6 8 0 0 0 0 1 X._p._dourish,_seeking_a_foundation_for_context-aware_computing,_human-computer d._X._Xx,_Xx_x_x_x_x-x_x,_Xx-Xx
+Interaction, 16(2-3), interaction, I In Int Inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 ,(-),. 6 3 0 0 0 0 1 interaction,_XX(X-X),_XXXX. Xx,_d(d-d),_d.
+5. M. 5. 5 5. 5. 5. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,,(), 7 9 0 0 0 0 1 X._m._chalmers,_a_historical_view_of_context,_computer_supported_cooperative_work_XX(X), d._X._Xx,_X_Xx_Xx_x_Xx,_Xx_x_x_x_d(d),
+223-247, 2004. 223-247, 2 22 223 223- BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 -,. 3 1 0 0 0 0 1 XXX-XXX,_XXXX. d-d,_d.
+6. A. 6. 6 6. 6. 6. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,,():-, 9 9 0 0 0 0 1 X._a._dey,_understanding_and_using_context,_personal_and_ubiquitous_computing_X(X):X-X, d._X._Xx,_Xx_x_x_x,_Xx_x_x_x_d(d):d-d,
+2001. 2001. 2001. 2 20 200 2001 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 9 1 . 1 0 0 0 0 0 1 XXXX. d.
+7. J. 7. 7 7. 7. 7. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,.,.,, 10 9 0 0 0 0 1 X._j._coutaz,_j._crowley,_s._dobson,_d._garlan,_context_is_key,_communications_of_the_acm d._X._Xx,_X._Xx,_X._Xx,_X._Xx,_Xx_x_x,_Xx_x_x_X
+48(3):49-53, 2005. 48(3):49-53, 4 48 48( 48(3 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ():-,. 6 2 0 0 0 0 1 XX(X):XX-XX,_XXXX. d(d):d-d,_d.
+8. G. 8. 8 8. 8. 8. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,.,(): 10 8 0 0 0 0 1 X._g._klyne,_j._carroll,_eds.,_resource_description_framework_(rdf):_concepts_and d._X._Xx,_X._Xx,_Xx.,_Xx_Xx_Xx_(X):_Xx_x
+Abstract Syntax, abstract A Ab Abs Abst BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 ,,://..//-/ 11 8 0 0 0 0 1 abstract_syntax,_wXc_recommendation,_XXXX_http://www.wX.org/tr/rdf-concepts/ Xx_Xx,_XdX_Xx,_d_x:/x.xd.x/X/x-x/
+9. M. 9. 9 9. 9. 9. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,:, 7 7 0 0 0 0 1 X._m._dean,_g._schreiber_eds,_owl_web_ontology_language:_reference,_wXc d._X._Xx,_X._Xx_Xx,_X_Xx_Xx_Xx:_Xx,_XdX
+Recommendation, 2004. recommendation, R Re Rec Reco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 ,.://..//-/ 11 5 0 0 0 0 1 recommendation,_XXXX._http://www.wX.org/tr/owl-ref/ Xx,_d._x:/x.xd.x/X/x-x/
+10. A. 10. 1 10 10. 10. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,,,. 6 8 0 0 0 0 1 XX._a._seaborne,_rdql_-a_query_language_for_rdf,_wXc_member_submission,_XXXX. d._X._Xx,_X_-X_Xx_Xx_x_X,_XdX_Xx_x,_d.
+http://www.w3.org/Submission/2004/SUBM-RDQL-20040109/ http://www.w3.org/Submission/2004/SUBM-RDQL-20040109/ http://www.w3.org/submission/2004/subm-rdql-20040109/ h ht htt http BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 1 9 1 ://..///--/ 11 5 0 0 0 0 1 http://www.wX.org/submission/XXXX/subm-rdql-XXXXXXXX/ x:/x.xd.x/Xx/d/X-X-d/
+11. J. 11. 1 11 11. 11. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,.,.,., 9 9 0 0 0 0 1 XX._j._crowley,_j._coutaz,_g._rey,_p._reignier,_perceptual_components_for_context_aware d._X._Xx,_X._Xx,_X._Xx,_X._Xx,_Xx_x_x_x_x
+computing, Proceedings computing, c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 1 ,, 2 8 0 0 0 0 1 computing,_proceedings_international_conference_on_ubiquitous_computing,_göteborg x,_Xx_Xx_Xx_x_Xx_Xx,_Xx
+(SW), pp. (sw), ( (S (SW (SW) BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 1 (),.-,. 7 2 0 0 0 0 1 (sw),_pp._XXX-XXX,_XXXX. (X),_x._d-d,_d.
+12. X. 12. 1 12 12. 12. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ...,..,.,., 11 9 0 0 0 0 1 XX._x._h._wang,_d._q._zhang,_t._gu,_h._keng_pung,_ontology_based_context_modeling_and d._X._X._Xx,_X._X._Xx,_X._Xx,_X._Xx_Xx,_Xx_x_x_x_x
+reasoning in reasoning r re rea reas BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 1 , 1 9 0 0 0 0 1 reasoning_in_owl,_proceedings_X_nd_international_conference_on_pervasive_computing_and x_x_X,_Xx_d_x_Xx_x_x_x_x_x
+communication Workshop communication c co com comm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 9 1 (),( 4 8 0 0 0 0 1 communication_workshop_on_context_modeling_and_reasoning_(comorea),_orlando_(fl x_Xx_x_Xx_Xx_x_Xx_(XxXxXx),_Xx_(X
+US), 2000. us), U US US) US), BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 1 ),. 3 1 0 0 0 0 1 us),_XXXX. X),_d.
+13. J. 13. 1 13 13. 13. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 ..,, 4 9 0 0 0 0 1 XX._j._euzenat,_alignment_infrastructure_for_ontology_mediation_and_other_applications, d._X._Xx,_Xx_x_x_x_x_x_x_x,
+Proceedings ICSOC proceedings P Pr Pro Proc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 1 , 1 9 0 0 0 0 1 proceedings_icsoc_X_st_international_workshop_on_mediation_in_semantic_web_services, Xx_X_d_x_x_x_x_Xx_x_x_x_x,
+pp.81-95, Amsterdam pp.81-95, p pp pp. pp.8 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 1 .-,(),. 7 3 0 0 0 0 1 pp.XX-XX,_amsterdam_(nl),_XXXX. x.d-d,_Xx_(X),_d.
 

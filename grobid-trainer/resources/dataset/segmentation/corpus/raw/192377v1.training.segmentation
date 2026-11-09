@@ -1,231 +1,231 @@
-(1) Overview (1) ( (1 (1) (1) BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 0 () 2 2 0 0 0 0 1
-Title Title title T Ti Tit Titl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 1 0 0 0 0 1
-A random a A A A A BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 1 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1
-Paper Authors paper P Pa Pap Pape BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1
-1. Rajananda, 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 0 .,; 3 10 0 0 0 0 1
-2. Lau, 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 0 .,; 3 6 0 0 0 0 1
-3. Odegaard, 3. 3 3. 3. 3. BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 0 ., 2 7 0 0 0 0 1
-Paper Author paper P Pa Pap Pape BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 no 0 10 0 0 0 0 1
-1. Designed 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 1 .;;; 4 10 0 0 0 0 1
-GitHub & github G Gi Git GitH BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 ; 1 2 0 0 0 0 1
-Affiliation: University affiliation: A Af Aff Affi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 :-- 3 6 0 0 0 0 1
-2. Designed 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 1 . 1 2 0 0 0 0 1
-Affiliations: University affiliations: A Af Aff Affi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 :-- 3 6 0 0 0 0 1
-Brain Research brain B Br Bra Brai BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 1 () 2 4 0 0 0 0 1
-Hong Kong hong H Ho Hon Hong BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 1 no 0 2 0 0 0 0 1
-3. Designed 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 1 .;; 3 7 0 0 0 0 1
-Affiliations: University affiliations: A Af Aff Affi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 :-- 3 6 0 0 0 0 1
-Abstract Abstract abstract A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 10 0 0 0 0 1
-Online experiments online O On Onl Onli BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 4 no 0 9 0 0 0 0 1
-years, but years, y ye yea year BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 ,- 2 9 0 0 0 0 1
-yet to yet y ye yet yet BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 -.,- 4 9 0 0 0 0 1
-access random-dot access a ac acc acce BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 -().- 5 8 0 0 0 0 1
-customizable RDK customizable c cu cus cust BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 4 no 0 9 0 0 0 0 1
-(random position, (random ( (r (ra (ran BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 4 (,,) 4 9 0 0 0 0 1
-shape, coherence shape, s sh sha shap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 ,,,. 4 9 0 0 0 0 1
-links to links l li lin link BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 , 1 9 0 0 0 0 1
-as well as a as as as BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 no 0 10 0 0 0 0 1
-online experimental online o on onl onli BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 4 (). 3 4 0 0 0 0 1
-Keywords Keywords keywords K Ke Key Keyw BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 10 no 0 10 0 0 0 0 1
-Random dot random R Ra Ran Rand BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 10 ,,, 3 10 0 0 0 0 1
-experiments, visual experiments, e ex exp expe BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 10 ,,,, 4 9 0 0 0 0 1
-Introduction Introduction introduction I In Int Intr BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 0 no 0 10 0 1 0 0 1
-Over the over O Ov Ove Over BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 0 ,() 3 7 0 0 0 0 1
-emerged as emerged e em eme emer BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 - 1 8 0 0 0 0 1
-processing [1-5]. processing p pr pro proc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 [-]. 4 10 0 0 0 0 1
-across several across a ac acr acro BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 (..,),, 7 8 0 0 0 0 1
-implementation of implementation i im imp impl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 ., 2 10 0 0 0 0 1
-our research our o ou our our BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 no 0 9 0 0 0 0 1
-standard web standard s st sta stan BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 . 1 9 0 0 0 0 1
-emerged in emerged e em eme emer BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 , 1 9 0 0 0 0 1
-noise types noise n no noi nois BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 ., 2 9 0 0 0 0 1
-explain a explain e ex exp expl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 no 0 9 0 0 0 0 1
-code and code c co cod code BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 no 0 9 0 0 0 0 1
-experiments. experiments. experiments. e ex exp expe BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 . 1 1 0 0 0 0 1
-Implementation and implementation I Im Imp Impl BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 3 no 0 10 0 0 0 0 1
-In RDKs, in I In In In BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 1 3 ,"" 3 8 0 0 0 0 1
-one coherent one o on one one BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 , 1 8 0 0 0 0 1
-"noise" to "noise" " "n "no "noi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 "".,[], 7 9 0 0 0 0 1
-regarding how regarding r re reg rega BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 --. 3 8 0 0 0 0 1
-create the create c cr cre crea BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 "," 3 9 0 0 0 0 1
-frames (referred frames f fr fra fram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 (""), 5 9 0 0 0 0 1
-only a only o on onl only BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 (""). 5 10 0 0 0 0 1
-"noise," dots "noise," " "n "no "noi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 "," 3 9 0 0 0 0 1
-("random position"), ("random ( (" ("r ("ra BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 (""), 5 9 0 0 0 0 1
-("random walk"), ("random ( (" ("r ("ra BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 (""),, 6 9 0 0 0 0 1
-beginning of beginning b be beg begi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 (""). 5 9 0 0 0 0 1
-dot kinematogram dot d do dot dot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 1 3 [,], 4 7 0 0 0 0 1
-different combinations different d di dif diff BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 . 1 8 0 0 0 0 1
-Additionally, dots additionally, A Ad Add Addi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 3 ,"", 4 8 0 0 0 0 1
-frames that frames f fr fra fram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 no 0 8 0 0 0 0 1
-aperture. However, aperture. a ap ape aper BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ., 2 9 0 0 0 0 1
-ended, then ended, e en end ende BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ,, 2 9 0 0 0 0 1
-an opposite an a an an an BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 1 3 ., 2 9 0 0 0 0 1
-rule, as rule, r ru rul rule BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ,, 2 8 0 0 0 0 1
-procedures from procedures p pr pro proc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 []. 3 6 0 0 0 0 1
-Finally, we finally, F Fi Fin Fina BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 3 , 1 9 0 0 0 0 1
-jsPsych, a jspsych, j js jsP jsPs BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 ,[]. 4 9 0 0 0 0 1
-include parameters include i in inc incl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ,, 2 9 0 0 0 0 1
-dots, dot dots, d do dot dots BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ,,,, 4 9 0 0 0 0 1
-to the to t to to to BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 . 1 9 0 0 0 0 1
-JavaScript, incorporating javascript, J Ja Jav Java BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 1 3 , 1 8 0 0 0 0 1
-advantageous for advantageous a ad adv adva BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 no 0 8 0 0 0 0 1
-reaction times;; reaction r re rea reac BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 ; 1 10 0 0 0 0 1
-software package software s so sof soft BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 (..,), 6 8 0 0 0 0 1
-reaction times reaction r re rea reac BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 9 0 0 0 0 1
-Toolbox, response toolbox, T To Too Tool BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 , 1 8 0 0 0 0 1
-packages [11]. packages p pa pac pack BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 []. 3 9 0 0 0 0 1
-sensitive enough sensitive s se sen sens BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 8 0 0 0 0 1
-Quality control quality Q Qu Qua Qual BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 1 no 0 10 0 0 0 0 1
-One primary one O On One One BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 1 no 0 8 1 0 0 0 1
-is that is i is is is BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 no 0 9 1 0 0 0 1
-connectivity speeds, connectivity c co con conn BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 1 ,(..,.), 8 10 1 0 0 0 1
-hardware, or hardware, h ha har hard BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 ,., 3 9 1 0 0 0 1
-have found have h ha hav have BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 no 0 9 1 0 0 0 1
-slightly different slightly s sl sli slig BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 ., 2 9 1 0 0 0 1
-average frames average a av ave aver BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 ,, 2 8 1 0 0 0 1
-and Safari and a an and and BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 (). 3 5 1 0 0 0 1
-Figure 1. figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 4 . 1 10 1 0 0 0 1
-web browsers. web w we web web BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 4 4 . 1 9 1 0 0 0 1
-100 stimulus 100 1 10 100 100 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 4 4 . 1 9 1 0 0 0 1
-line denotes line l li lin line BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 4 (.). 4 10 1 0 0 0 1
-color represents color c co col colo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 4 . 1 10 1 0 0 0 1
-conducted in conducted c co con cond BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 4 ,.() 4 9 1 0 0 0 1
-per frame per p pe per per BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 4 ., 2 9 1 0 0 0 1
-the average the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 4 .() 3 9 1 0 0 0 1
-RDK was rdk R RD RDK RDK BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 4 . 1 9 1 0 0 0 1
-frame using frame f fr fra fram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 4 4 .() 3 9 1 0 0 0 1
-Safari. This safari. S Sa Saf Safa BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 4 .. 2 8 1 0 0 0 1
-What is what W Wh Wha What BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 8 no 0 7 0 0 0 0 1
-psychophysics are psychophysics p ps psy psyc BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 8 - 1 8 0 0 0 0 1
-display, but display, d di dis disp BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 ,. 2 9 0 0 0 0 1
-the number the t th the the BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 , 1 9 0 0 0 0 1
-presentation clarity presentation p pr pre pres BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 (). 3 8 0 0 0 0 1
-this data this t th thi this BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 :, 2 9 0 0 0 0 1
-analyses, or analyses, a an ana anal BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 ,,- 3 8 0 0 0 0 1
-numbers of numbers n nu num numb BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 5 8 ., 2 10 0 0 0 0 1
-visible differences visible v vi vis visi BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 , 1 9 0 0 0 0 1
-stutter was stutter s st stu stut BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 . 1 9 0 0 0 0 1
-other aspects other o ot oth othe BLOCKEND PAGEEND NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 (..,- 5 9 0 0 0 0 1
-disappearing, the disappearing, d di dis disa BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,, 2 9 1 1 0 0 1
-rendered properly) rendered r re ren rend BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ), 2 10 1 1 0 0 1
-issues arise. issues i is iss issu BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 1 1 1 0 0 1
-Figure 2. figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 9 1 0 0 0 1
-browsers on browsers b br bro brow BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 0 ., 2 9 1 0 0 0 1
-trial for trial t tr tri tria BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 6 0 . 1 9 1 0 0 0 1
-each browser, each e ea eac each BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,.() 4 9 1 0 0 0 1
-Chrome. This chrome. C Ch Chr Chro BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 0 ., 2 8 1 0 0 0 1
-matched our matched m ma mat matc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 9 1 0 0 0 1
-deviated slightly, deviated d de dev devi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,.() 4 9 1 0 0 0 1
-Firefox. This firefox. F Fi Fir Fire BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 6 0 ., 2 8 1 0 0 0 1
-frames, and frames, f fr fra fram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,.() 4 10 1 0 0 0 1
-Safari. This safari. S Sa Saf Safa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 9 1 0 0 0 1
-displayed. We displayed. d di dis disp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 9 1 0 0 0 1
-12 frames 12 1 12 12 12 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 6 0 ,"" 3 8 1 0 0 0 1
-displayed in displayed d di dis disp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ., 2 8 1 0 0 0 1
-evaluate which evaluate e ev eva eval BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 - 1 8 1 0 0 0 1
-stimulus in stimulus s st sti stim BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 2 1 0 0 0 1
-Finally, we finally, F Fi Fin Fina BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 7 , 1 10 0 0 0 0 1
-browser window browser b br bro brow BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 7 no 0 9 0 0 0 0 1
-close other close c cl clo clos BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 7 , 1 9 0 0 0 0 1
-idiosyncrasies that idiosyncrasies i id idi idio BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 7 no 0 8 0 0 0 0 1
-background. background. background. b ba bac back BLOCKEND PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 7 . 1 1 0 0 0 0 1
-(2) Availability (2) ( (2 (2) (2) BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 7 9 () 2 10 0 0 0 0 1
-Operating system operating O Op Ope Oper BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 9 no 0 10 0 0 0 0 1
-This plugin this T Th Thi This BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 9 ,, 2 10 0 0 0 0 1
-(i.e., the (i.e., ( (i (i. (i.e BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 9 (..,--,)., 10 9 0 0 0 0 1
-based on based b ba bas base BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 9 , 1 10 0 0 0 0 1
-equal number equal e eq equ equa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 9 . 1 9 0 0 0 0 1
-users if users u us use user BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 9 . 1 6 0 0 0 0 1
-Programming language programming P Pr Pro Prog BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 11 no 0 6 0 0 0 0 1
-JavaScript/CSS/HTML JavaScript/CSS/HTML javascript/css/html J Ja Jav Java BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 11 // 2 6 0 0 0 0 1
-Additional system additional A Ad Add Addi BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 11 no 0 10 0 0 0 0 1
-None None none N No Non None BLOCKEND PAGEEND NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 11 no 0 1 0 0 0 0 1
-Dependencies Dependencies dependencies D De Dep Depe BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 0 no 0 10 0 1 0 0 1
-The raw the T Th The The BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 0 no 0 8 0 0 0 0 1
-frameworks or frameworks f fr fra fram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 .,, 3 10 0 0 0 0 1
-and a and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 . 1 9 0 0 0 0 1
-jsPsych version jspsych j js jsP jsPs BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 0 ( 1 9 0 0 0 0 1
-identifier of identifier i id ide iden BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 0 ()''). 6 5 0 0 0 0 1
-List of list L Li Lis List BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 2 no 0 10 0 0 0 0 1
-Sivananda Rajananda sivananda S Si Siv Siva BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 3 - 1 10 0 0 0 0 1
-Hakwan Lau hakwan H Ha Hak Hakw BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 3 - 1 4 0 0 0 0 1
-Brian Odegaard brian B Br Bri Bria BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 8 3 - 1 9 0 0 0 0 1
-Software location: software S So Sof Soft BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 3 : 1 2 0 0 0 0 1
-(1) Demonstration (1) ( (1 (1) (1) BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 3 () 2 10 0 0 0 0 1
-Code repository code C Co Cod Code BLOCKEND PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 3 no 0 2 0 0 0 0 1
-Name: CodePen name: N Na Nam Name BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 4 : 1 1 0 0 0 0 1
-Identifier: https://codepen.io/vrsivananda/pen/xLORQe identifier: I Id Ide Iden BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 4 :://./// 8 6 0 0 0 0 1
-Licence: GNU licence: L Li Lic Lice BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 4 : 1 4 0 0 0 0 1
-Date published: date D Da Dat Date BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 4 :// 3 3 0 0 0 0 1
-Description: The description: D De Des Desc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 4 : 1 8 0 0 0 0 1
-visual demonstration visual v vi vis visu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 ; 1 9 0 0 0 0 1
-RDK parameters, rdk R RD RDK RDK BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 8 4 ,() 3 9 0 0 0 0 1
-noise rules noise n no noi nois BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 . 1 8 0 0 0 0 1
-that users that t th tha that BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 "" 2 10 0 0 0 0 1
-code to code c co cod code BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 . 1 7 0 0 0 0 1
-(2) jsPsych (2) ( (2 (2) (2) BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 7 () 2 10 0 0 0 0 1
-Code repository code C Co Cod Code BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 no 0 3 0 0 0 0 1
-Name: GitHub name: N Na Nam Name BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 8 : 1 2 0 0 0 0 1
-Identifier: https://github.com/vrsivananda/RDK/blob/master/jspsych- identifier: I Id Ide Iden BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 8 :://./////- 11 10 0 0 0 0 1
-5.0.3/plugins/jspsych-RDK.js 5.0.3/plugins/jspsych-RDK.js 5.0.3/plugins/jspsych-rdk.js 5 5. 5.0 5.0. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 8 ..//-. 6 4 0 0 0 0 1
-Licence: GNU licence: L Li Lic Lice BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 8 : 1 5 0 0 0 0 1
-Date published: date D Da Dat Date BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 8 :// 3 3 0 0 0 0 1
-(3) Sample (3) ( (3 (3) (3) BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 9 () 2 10 0 0 0 0 1
-Code repository code C Co Cod Code BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 no 0 2 0 0 0 0 1
-Name: GitHub name: N Na Nam Name BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 : 1 2 0 0 0 0 1
-Identifier: https://github.com/vrsivananda/RDK.git identifier: I Id Ide Iden BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 9 :://.//. 8 10 0 0 0 0 1
-Licence: GNU licence: L Li Lic Lice BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 : 1 7 0 0 0 0 1
-Date published: date D Da Dat Date BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 :// 3 5 0 0 0 0 1
-Language Language language L La Lan Lang BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1
-JavaScript/CSS/HTML JavaScript/CSS/HTML javascript/css/html J Ja Jav Java BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 // 2 10 0 0 0 0 1
-(3) Reuse (3) ( (3 (3) (3) BLOCKEND PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 10 () 2 10 0 0 0 0 1
-Recently, platforms recently, R Re Rec Rece BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 11 , 1 9 0 0 0 0 1
-psychological and psychological p ps psy psyc BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 11 ,"" 3 10 0 0 0 0 1
-JavaScript library javascript J Ja Jav Java BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 0 []'. 4 8 0 0 0 0 1
-are a are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 - 1 8 0 0 0 0 1
-psychophysics;; our psychophysics;; p ps psy psyc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 0 ;- 2 9 0 0 0 0 1
-be of be b be be be BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 ,, 2 8 0 0 0 0 1
-investigating motion investigating i in inv inve BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 . 1 6 0 0 0 0 1
-We think we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 0 no 0 8 0 0 0 0 1
-to researchers to t to to to BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 (.., 4 9 0 0 0 0 1
-the elderly, the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 ,, 2 9 0 0 0 0 1
-testing sites, testing t te tes test BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 9 0 ,.). 4 10 0 0 0 0 1
-motion perception motion m mo mot moti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 ., 2 8 0 0 0 0 1
-able to able a ab abl able BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 no 0 9 0 0 0 0 1
-RDK to rdk R RD RDK RDK BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 0 . 1 9 0 0 0 0 1
-greater vision greater g gr gre grea BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 no 0 8 0 0 0 0 1
-perception, and perception, p pe per perc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 , 1 8 0 0 0 0 1
-psychophysical stimuli psychophysical p ps psy psyc BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 0 (,.). 5 8 0 0 0 0 1
-Competing interests competing C Co Com Comp BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 11 no 0 10 0 0 0 0 1
-The authors the T Th The The BLOCKSTART PAGEEND NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 11 . 1 10 0 0 0 0 1
-References References references R Re Ref Refe BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 0 no 0 10 0 1 0 0 1
-1. Williams 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 0 .,. 3 10 0 0 0 0 1
-motions. Vision motions. m mo mot moti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 0 ..;:-.: 7 5 0 0 0 0 1
-https://www.ncbi.nlm.nih.gov/pubmed/6695508 https://www.ncbi.nlm.nih.gov/pubmed/6695508 https://www.ncbi.nlm.nih.gov/pubmed/6695508 h ht htt http BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 1 10 0 ://....// 9 5 0 0 0 0 1
-2. Britten 2. 2 2. 2. 2. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 1 .,,,.: 6 10 0 0 0 0 1
-comparison of comparison c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 1 ..;:- 5 9 0 0 0 0 1
-4765. Available: 4765. 4 47 476 4765 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 1 .:://....// 11 7 0 0 0 0 1
-3. Roitman 3. 3 3. 3. 3. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 2 .,. 3 10 0 0 0 0 1
-combined visual combined c co com comb BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 2 ..;:-. 6 9 0 0 0 0 1
-Available: https://www.ncbi.nlm.nih.gov/pubmed/12417672 available: A Av Ava Avai BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 2 :://....// 10 6 0 0 0 0 1
-4. Law 4. 4 4. 4. 4. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 3 .--,.--, 8 10 0 0 0 0 1
-sensory, cortical sensory, s se sen sens BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 3 ,..;:-.:./ 10 7 0 0 0 0 1
-5. Watamaniuk 5. 5 5. 5. 5. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 4 .,,. 4 10 0 0 0 0 1
-displays: the displays: d di dis disp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 4 :..;:-. 7 9 0 0 0 0 1
-doi:10.1016/0042--6989(89)90173--9 doi:10.1016/0042--6989(89)90173--9 doi:10.1016/0042--6989(89)90173--9 d do doi doi: BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 4 :./--()-- 9 4 0 0 0 0 1
-6. Scase 6. 6 6. 6. 6. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 5 .,,.?. 6 10 0 0 0 0 1
-1996;36: 2579-2586. 1996;36: 1 19 199 1996 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 5 ;:-.:./--()-- 13 6 0 0 0 0 1
-7. Peirce 7. 7 7. 7. 7. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 6 ..----..;: 10 10 0 0 0 0 1
-8-13. doi:10.1016/j.jneumeth.2006.11.017 8-13. 8 8- 8-1 8-13 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 6 -.:./.... 9 4 0 0 0 0 1
-8. Peirce 8. 8 8. 8. 8. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 7 .... 4 10 0 0 0 0 1
-2008;2: 10. 2008;2: 2 20 200 2008 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 7 ;:.:./... 9 4 0 0 0 0 1
-9. Kiani 9. 9 9. 9. 9. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 8 .,,. 4 10 0 0 0 0 1
-temporal gap temporal t te tem temp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 8 ..;:-. 6 6 0 0 0 0 1
-doi:10.1523/JNEUROSCI.2094--13.2013 doi:10.1523/JNEUROSCI.2094--13.2013 doi:10.1523/jneurosci.2094--13.2013 d do doi doi: BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 8 :./.--. 7 4 0 0 0 0 1
-10. de 10. 1 10 10. 10. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 9 ..: 3 10 0 0 0 0 1
-browser. Behav browser. b br bro brow BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 9 ..;:-.:./------ 15 8 0 0 0 0 1
-11. de 11. 1 11 11. 11. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 10 .,.? 4 9 0 0 0 0 1
-collected with collected c co col coll BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 10 . 1 10 0 0 0 0 1
-Methods. 2016;48: methods. M Me Met Meth BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 10 .;:-.:./------ 14 6 0 0 0 0 1
+(1) Overview (1) ( (1 (1) (1) BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 0 () 2 2 0 0 0 0 1 (X)_overview (d)_Xx
+Title Title title T Ti Tit Titl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 1 0 0 0 0 1 title Xx
+A random a A A A A BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 1 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1 a_random_dot_kinematogram_for_online_visual_psychophysics X_x_x_x_x_x_x_x
+Paper Authors paper P Pa Pap Pape BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1 paper_authors Xx_Xx
+1. Rajananda, 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 0 .,; 3 10 0 0 0 0 1 X._rajananda,_sivananda; d._Xx,_Xx;
+2. Lau, 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 0 .,; 3 6 0 0 0 0 1 X._lau,_hakwan; d._Xx,_Xx;
+3. Odegaard, 3. 3 3. 3. 3. BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 0 ., 2 7 0 0 0 0 1 X._odegaard,_brian d._Xx,_Xx
+Paper Author paper P Pa Pap Pape BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 no 0 10 0 0 0 0 1 paper_author_roles_and_affiliations Xx_Xx_Xx_x_Xx
+1. Designed 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 1 .;;; 4 10 0 0 0 0 1 X._designed_software;_coded_software;_tested_software;_uploaded_software_to d._Xx_x;_x_x;_x_x;_x_x_x
+GitHub & github G Gi Git GitH BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 ; 1 2 0 0 0 0 1 github_&_codepen; XxXx_&_XxXx;
+Affiliation: University affiliation: A Af Aff Affi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 :-- 3 6 0 0 0 0 1 affiliation:_university_of_california--los_angeles Xx:_Xx_x_Xx-Xx_Xx
+2. Designed 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 1 . 1 2 0 0 0 0 1 X._designed_software d._Xx_x
+Affiliations: University affiliations: A Af Aff Affi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 :-- 3 6 0 0 0 0 1 affiliations:_university_of_california--los_angeles Xx:_Xx_x_Xx-Xx_Xx
+Brain Research brain B Br Bra Brai BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 0 1 () 2 4 0 0 0 0 1 brain_research_institute_(ucla) Xx_Xx_Xx_(X)
+Hong Kong hong H Ho Hon Hong BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 1 no 0 2 0 0 0 0 1 hong_kong_university Xx_Xx_Xx
+3. Designed 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 0 1 .;; 3 7 0 0 0 0 1 X._designed_software;_proofread_code;_tested_software d._Xx_x;_x_x;_x_x
+Affiliations: University affiliations: A Af Aff Affi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 :-- 3 6 0 0 0 0 1 affiliations:_university_of_california--los_angeles Xx:_Xx_x_Xx-Xx_Xx
+Abstract Abstract abstract A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 3 no 0 10 0 0 0 0 1 abstract Xx
+Online experiments online O On Onl Onli BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 4 no 0 9 0 0 0 0 1 online_experiments_using_visual_stimuli_have_become_increasingly_common_in_recent Xx_x_x_x_x_x_x_x_x_x_x
+years, but years, y ye yea year BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 ,- 2 9 0 0 0 0 1 years,_but_many_frequently-used_stimuli_in_visual_psychophysical_experiments_have x,_x_x_x-x_x_x_x_x_x_x
+yet to yet y ye yet yet BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 -.,- 4 9 0 0 0 0 1 yet_to_be_developed_for_web-based_platforms._here,_we_introduce_the_first_open- x_x_x_x_x_x-x_x._Xx,_x_x_x_x_x-
+access random-dot access a ac acc acce BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 -().- 5 8 0 0 0 0 1 access_random-dot_kinematogram_(rdk)_for_use_in_web_browsers._this_fully- x_x-x_x_(X)_x_x_x_x_x._Xx_x-
+customizable RDK customizable c cu cus cust BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 4 no 0 9 0 0 0 0 1 customizable_rdk_offers_options_to_implement_several_different_types_of_noise x_X_x_x_x_x_x_x_x_x_x
+(random position, (random ( (r (ra (ran BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 4 (,,) 4 9 0 0 0 0 1 (random_position,_random_walk,_random_direction)_and_parameters_to_control_aperture (x_x,_x_x,_x_x)_x_x_x_x_x
+shape, coherence shape, s sh sha shap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 ,,,. 4 9 0 0 0 0 1 shape,_coherence_level,_the_number_of_dots,_and_many_other_features._we_include x,_x_x,_x_x_x_x,_x_x_x_x._Xx_x
+links to links l li lin link BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 , 1 9 0 0 0 0 1 links_to_commented_javascript_code_for_easy_implementation_in_online_experiments, x_x_x_XxXx_x_x_x_x_x_x_x,
+as well as a as as as BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 4 no 0 10 0 0 0 0 1 as_well_as_an_example_of_how_this_stimulus_can_be_integrated_as_a_plugin_with_an x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+online experimental online o on onl onli BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 4 (). 3 4 0 0 0 0 1 online_experimental_library_(jspsych). x_x_x_(xXx).
+Keywords Keywords keywords K Ke Key Keyw BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 10 no 0 10 0 0 0 0 1 keywords Xx
+Random dot random R Ra Ran Rand BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 10 ,,, 3 10 0 0 0 0 1 random_dot_kinematogram,_random_dot_motion,_moving_dot_stimulus,_online Xx_x_x,_x_x_x,_x_x_x,_x
+experiments, visual experiments, e ex exp expe BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 10 ,,,, 4 9 0 0 0 0 1 experiments,_visual_psychophysics,_visual_stimuli,_javascript,_jspsych x,_x_x,_x_x,_XxXx,_xXx
+Introduction Introduction introduction I In Int Intr BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 0 no 0 10 0 1 0 0 1 introduction Xx
+Over the over O Ov Ove Over BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 0 ,() 3 7 0 0 0 0 1 over_the_last_several_decades,_random_dot_kinematograms_(rdks)_have Xx_x_x_x_x,_x_x_x_(Xx)_x
+emerged as emerged e em eme emer BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 - 1 8 0 0 0 0 1 emerged_as_an_effective_psychophysical_stimulus_to_evaluate_low-level_motion x_x_x_x_x_x_x_x_x-x_x
+processing [1-5]. processing p pr pro proc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 [-]. 4 10 0 0 0 0 1 processing_[X-X]._while_different_versions_of_this_type_of_stimulus_have_been_created x_[d-d]._Xx_x_x_x_x_x_x_x_x_x_x
+across several across a ac acr acro BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 (..,),, 7 8 0 0 0 0 1 across_several_software_platforms_(e.g.,_matlab_and_psychopy),_currently,_no x_x_x_x_(x.x.,_X_x_XxXx),_x,_x
+implementation of implementation i im imp impl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 ., 2 10 0 0 0 0 1 implementation_of_this_stimulus_exists_for_public_use_in_online_experiments._recently, x_x_x_x_x_x_x_x_x_x_x._Xx,
+our research our o ou our our BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 no 0 9 0 0 0 0 1 our_research_group_developed_an_rdk_in_javascript_to_be_used_for_presentation_in x_x_x_x_x_X_x_XxXx_x_x_x_x_x_x
+standard web standard s st sta stan BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 . 1 9 0 0 0 0 1 standard_web_browsers._this_rdk_incorporates_several_distinct_features_that_have x_x_x._Xx_X_x_x_x_x_x_x
+emerged in emerged e em eme emer BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 , 1 9 0 0 0 0 1 emerged_in_different_versions_used_by_researchers,_and_allows_users_to_customize x_x_x_x_x_x_x,_x_x_x_x_x
+noise types noise n no noi nois BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 ., 2 9 0 0 0 0 1 noise_types_and_other_parameters_for_different_paradigms._in_this_short_article,_we x_x_x_x_x_x_x_x._Xx_x_x_x,_x
+explain a explain e ex exp expl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 no 0 9 0 0 0 0 1 explain_a_few_important_elements_of_this_new_stimulus_and_provide_links_to_both_raw x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+code and code c co cod code BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 no 0 9 0 0 0 0 1 code_and_online_examples_to_guide_implementation_for_vision_scientists_in_future x_x_x_x_x_x_x_x_x_x_x_x
+experiments. experiments. experiments. e ex exp expe BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 0 . 1 1 0 0 0 0 1 experiments. x.
+Implementation and implementation I Im Imp Impl BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 3 no 0 10 0 0 0 0 1 implementation_and_architecture Xx_x_x
+In RDKs, in I In In In BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 1 3 ,"" 3 8 0 0 0 0 1 in_rdks,_a_certain_percentage_of_dots_are_designated_as_"signal"_to_move_in Xx_Xx,_x_x_x_x_x_x_x_x_"x"_x_x_x
+one coherent one o on one one BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 , 1 8 0 0 0 0 1 one_coherent_direction,_and_the_remaining_percentage_of_dots_are_designated_as x_x_x,_x_x_x_x_x_x_x_x_x
+"noise" to "noise" " "n "no "noi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 "".,[], 7 9 0 0 0 0 1 "noise"_to_move_in_random_directions._however,_as_noted_by_[X],_several_options_exist "x"_x_x_x_x_x._Xx,_x_x_x_[d],_x_x_x
+regarding how regarding r re reg rega BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 --. 3 8 0 0 0 0 1 regarding_how_signal_and_noise_can_be_drawn_in_frame-by-frame_presentations._to x_x_x_x_x_x_x_x_x_x-x-x_x._Xx
+create the create c cr cre crea BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 "," 3 9 0 0 0 0 1 create_the_"signal,"_dots_can_either_move_in_the_direction_of_coherent_motion_in_all x_x_"x,"_x_x_x_x_x_x_x_x_x_x_x_x
+frames (referred frames f fr fra fram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 (""), 5 9 0 0 0 0 1 frames_(referred_to_as_the_"same"_rule),_or_move_in_the_direction_of_coherent_motion_in x_(x_x_x_x_"x"_x),_x_x_x_x_x_x_x_x_x
+only a only o on onl only BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 (""). 5 10 0 0 0 0 1 only_a_specified_proportion_of_frames_(referred_to_as_the_"different_rule")._to_create_the x_x_x_x_x_x_(x_x_x_x_"x_x")._Xx_x_x
+"noise," dots "noise," " "n "no "noi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 "," 3 9 0 0 0 0 1 "noise,"_dots_can_either_be_drawn_in_a_random_position_in_the_aperture_on_each_frame "x,"_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+("random position"), ("random ( (" ("r ("ra BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 (""), 5 9 0 0 0 0 1 ("random_position"),_move_to_an_adjacent_position_in_a_random_direction_in_each_frame ("x_x"),_x_x_x_x_x_x_x_x_x_x_x_x
+("random walk"), ("random ( (" ("r ("ra BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 (""),, 6 9 0 0 0 0 1 ("random_walk"),_or_have_a_consistent_direction_of_motion,_designated_randomly_at_the ("x_x"),_x_x_x_x_x_x_x,_x_x_x_x
+beginning of beginning b be beg begi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 (""). 5 9 0 0 0 0 1 beginning_of_the_trial_("random_direction")._modeling_our_stimulus_after_the_random x_x_x_x_("x_x")._Xx_x_x_x_x_x
+dot kinematogram dot d do dot dot BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 1 3 [,], 4 7 0 0 0 0 1 dot_kinematogram_from_the_software_psychopy_[X,X],_we_parameterized_these x_x_x_x_x_XxXx_[d,d],_x_x_x
+different combinations different d di dif diff BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 . 1 8 0 0 0 0 1 different_combinations_of_signal_and_noise_to_yield_six_different_display_options. x_x_x_x_x_x_x_x_x_x_x_x.
+Additionally, dots additionally, A Ad Add Addi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 3 ,"", 4 8 0 0 0 0 1 additionally,_dots_in_rdks_have_a_"dot_life",_which_determines_the_number_of Xx,_x_x_Xx_x_x_"x_x",_x_x_x_x_x
+frames that frames f fr fra fram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 no 0 8 0 0 0 0 1 frames_that_pass_before_a_dot_disappears_and_reappears_somewhere_else_within_the x_x_x_x_x_x_x_x_x_x_x_x_x
+aperture. However, aperture. a ap ape aper BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ., 2 9 0 0 0 0 1 aperture._however,_if_a_dot_reaches_the_end_of_the_aperture_and_its_dot_life_has_not x._Xx,_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+ended, then ended, e en end ende BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ,, 2 9 0 0 0 0 1 ended,_then_a_dot_can_either_reappear_randomly_in_the_aperture,_or_be_reinserted_from x,_x_x_x_x_x_x_x_x_x_x,_x_x_x_x
+an opposite an a an an an BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 1 3 ., 2 9 0 0 0 0 1 an_opposite_edge._we_include_features_to_customize_dot_life_length,_the_reinsertion x_x_x._Xx_x_x_x_x_x_x_x,_x_x
+rule, as rule, r ru rul rule BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ,, 2 8 0 0 0 0 1 rule,_as_well_as_the_number_of_dot_sets_to_cycle_through_per_frame,_adapting x,_x_x_x_x_x_x_x_x_x_x_x_x_x,_x
+procedures from procedures p pr pro proc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 []. 3 6 0 0 0 0 1 procedures_from_established_rdk_versions_in_matlab_[X]. x_x_x_X_x_x_X_[d].
+Finally, we finally, F Fi Fin Fina BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 3 , 1 9 0 0 0 0 1 finally,_we_also_include_links_to_code_that_integrates_this_rdk_as_a_plugin_with Xx,_x_x_x_x_x_x_x_x_x_X_x_x_x_x
+jsPsych, a jspsych, j js jsP jsPs BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 3 ,[]. 4 9 0 0 0 0 1 jspsych,_a_library_for_creating_and_running_experiments_in_web_browsers_[XX]._we xXx,_x_x_x_x_x_x_x_x_x_x_[d]._Xx
+include parameters include i in inc incl BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ,, 2 9 0 0 0 0 1 include_parameters_to_control_motion_direction,_coherence_level,_the_total_number_of x_x_x_x_x_x,_x_x,_x_x_x_x
+dots, dot dots, d do dot dots BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 ,,,, 4 9 0 0 0 0 1 dots,_dot_color,_aperture_shape,_aperture_size,_and_how_far_dots_move_from_one_frame x,_x_x,_x_x,_x_x,_x_x_x_x_x_x_x_x
+to the to t to to to BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 . 1 9 0 0 0 0 1 to_the_next._while_our_raw_code_can_be_implemented_on_any_platform_that_uses x_x_x._Xx_x_x_x_x_x_x_x_x_x_x_x
+JavaScript, incorporating javascript, J Ja Jav Java BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 1 3 , 1 8 0 0 0 0 1 javascript,_incorporating_our_plugin_with_the_jspsych_library_may_be_particularly XxXx,_x_x_x_x_x_xXx_x_x_x_x
+advantageous for advantageous a ad adv adva BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 3 no 0 8 0 0 0 0 1 advantageous_for_researchers_looking_to_use_this_rdk_in_experiments_assessing x_x_x_x_x_x_x_X_x_x_x
+reaction times;; reaction r re rea reac BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 ; 1 10 0 0 0 0 1 reaction_times;;_a_comparison_of_reaction_times_assessed_with_jspsych_and_a_standard x_x;;_x_x_x_x_x_x_x_xXx_x_x_x
+software package software s so sof soft BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 (..,), 6 8 0 0 0 0 1 software_package_(e.g.,_psychophysics_toolbox_in_matlab),_revealed_that_while x_x_(x.x.,_Xx_Xx_x_X),_x_x_x
+reaction times reaction r re rea reac BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 no 0 9 0 0 0 0 1 reaction_times_measured_by_jspsych_tended_to_be_slightly_slower_than_psychophysics x_x_x_x_xXx_x_x_x_x_x_x_Xx
+Toolbox, response toolbox, T To Too Tool BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 0 , 1 8 0 0 0 0 1 toolbox,_response_time_variability_was_quite_comparable_between_both_software Xx,_x_x_x_x_x_x_x_x_x
+packages [11]. packages p pa pac pack BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 []. 3 9 0 0 0 0 1 packages_[XX]._this_indicates_that_response_time_measurements_in_jspsych_are x_[d]._Xx_x_x_x_x_x_x_xXx_x
+sensitive enough sensitive s se sen sens BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 . 1 8 0 0 0 0 1 sensitive_enough_to_detect_differences_caused_by_experimental_manipulations. x_x_x_x_x_x_x_x_x.
+Quality control quality Q Qu Qua Qual BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 1 no 0 10 0 0 0 0 1 quality_control Xx_x
+One primary one O On One One BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 1 no 0 8 1 0 0 0 1 one_primary_concern_in_conducting_visual_psychophysical_experiments_online Xx_x_x_x_x_x_x_x_x
+is that is i is is is BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 no 0 9 1 0 0 0 1 is_that_timing_issues_in_the_display_could_arise_due_to_differences_in_internet x_x_x_x_x_x_x_x_x_x_x_x_x_x
+connectivity speeds, connectivity c co con conn BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 4 1 ,(..,.), 8 10 1 0 0 0 1 connectivity_speeds,_monitor_types_(i.e.,_liquid_crystal_displays_vs._cathode_ray_tubes), x_x,_x_x_(x.x.,_x_x_x_x._x_x_x),
+hardware, or hardware, h ha har hard BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 ,., 3 9 1 0 0 0 1 hardware,_or_web_browsers_used_by_participants._in_testing_our_new_software,_we x,_x_x_x_x_x_x._Xx_x_x_x_x,_x
+have found have h ha hav have BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 no 0 9 1 0 0 0 1 have_found_that_running_the_exact_same_code_for_our_rdk_in_different_browsers_yields x_x_x_x_x_x_x_x_x_x_X_x_x_x_x
+slightly different slightly s sl sli slig BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 ., 2 9 1 0 0 0 1 slightly_different_results._for_example,_we_have_identified_small_differences_in_the x_x_x._Xx_x,_x_x_x_x_x_x_x
+average frames average a av ave aver BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 ,, 2 8 1 0 0 0 1 average_frames_per_second_when_testing_our_rdk_using_google_chrome,_firefox, x_x_x_x_x_x_x_X_x_Xx_Xx,_Xx,
+and Safari and a an and and BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 1 (). 3 5 1 0 0 0 1 and_safari_on_the_same_computer_(figure_X). x_Xx_x_x_x_x_(Xx_d).
+Figure 1. figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 4 . 1 10 1 0 0 0 1 figure_X._the_average_number_of_milliseconds_per_frame_in_a_test_of_this_stimulus_on_three Xx_d._Xx_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+web browsers. web w we web web BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 4 4 . 1 9 1 0 0 0 1 web_browsers._shown_here_is_an_example_of_timing_differences_that_emerge_when_conducting x_x._Xx_x_x_x_x_x_x_x_x_x_x_x
+100 stimulus 100 1 10 100 100 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 4 4 . 1 9 1 0 0 0 1 XXX_stimulus_presentations_on_the_same_computer_in_different_browsers._the_dashed_black d_x_x_x_x_x_x_x_x_x._Xx_x_x
+line denotes line l li lin line BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 4 (.). 4 10 1 0 0 0 1 line_denotes_the_ideal_frame_rate_for_a_XXhz_monitor_(XX.XXX_milliseconds_per_frame)._each x_x_x_x_x_x_x_x_dXx_x_(d.d_x_x_x)._Xx
+color represents color c co col colo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 4 . 1 10 1 0 0 0 1 color_represents_results_from_a_different_run_of_XXX_trials._five_runs_in_each_browser_were x_x_x_x_x_x_x_x_d_x._Xx_x_x_x_x_x
+conducted in conducted c co con cond BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 4 ,.() 4 9 1 0 0 0 1 conducted_in_total,_and_all_three_browsers_were_run_on_os_x._(a)_the_average_milliseconds x_x_x,_x_x_x_x_x_x_x_X_X._(X)_Xx_x_x
+per frame per p pe per per BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 4 ., 2 9 1 0 0 0 1 per_frame_for_each_trial_when_the_rdk_was_displayed_in_google_chrome._across_five_runs, x_x_x_x_x_x_x_X_x_x_x_Xx_Xx._Xx_x_x,
+the average the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 4 4 .() 3 9 1 0 0 0 1 the_average_milliseconds_per_frame_were_consistent._(b)_results_from_the_same_test_when_the x_x_x_x_x_x_x._(X)_Xx_x_x_x_x_x_x
+RDK was rdk R RD RDK RDK BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 4 4 . 1 9 1 0 0 0 1 rdk_was_displayed_in_firefox._small_deviations_occurred_in_the_average_milliseconds_per X_x_x_x_Xx._Xx_x_x_x_x_x_x_x
+frame using frame f fr fra fram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 4 4 .() 3 9 1 0 0 0 1 frame_using_this_browser._(c)_results_from_the_same_test_when_the_rdk_was_displayed_in x_x_x_x._(X)_Xx_x_x_x_x_x_x_X_x_x_x
+Safari. This safari. S Sa Saf Safa BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 4 4 .. 2 8 1 0 0 0 1 safari._this_browser_was_the_most_variable_of_the_three_that_were_tested. Xx._Xx_x_x_x_x_x_x_x_x_x_x_x.
+What is what W Wh Wha What BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 8 no 0 7 0 0 0 0 1 what_is_needed_to_ensure_accuracy_and_precision_when_conducting_online Xx_x_x_x_x_x_x_x_x_x_x
+psychophysics are psychophysics p ps psy psyc BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 5 8 - 1 8 0 0 0 0 1 psychophysics_are_real-time_measures_of_not_only_the_average_frame_rate_of_the x_x_x-x_x_x_x_x_x_x_x_x_x_x
+display, but display, d di dis disp BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 ,. 2 9 0 0 0 0 1 display,_but_also_the_number_of_frames_that_are_actually_presented._our_rdk_records x,_x_x_x_x_x_x_x_x_x_x._Xx_X_x
+the number the t th the the BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 , 1 9 0 0 0 0 1 the_number_of_frames_used_in_each_presentation,_which_serves_as_a_valid_index_of x_x_x_x_x_x_x_x,_x_x_x_x_x_x_x
+presentation clarity presentation p pr pre pres BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 (). 3 8 0 0 0 0 1 presentation_clarity_and_coherence_(figure_X)._we_recommend_that_users_analyze x_x_x_x_(Xx_d)._Xx_x_x_x_x
+this data this t th thi this BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 :, 2 9 0 0 0 0 1 this_data_in_one_of_two_ways:_offline,_to_exclude_particular_trials_from_relevant x_x_x_x_x_x_x:_x,_x_x_x_x_x_x
+analyses, or analyses, a an ana anal BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 ,,- 3 8 0 0 0 0 1 analyses,_or_online,_to_re-present_trials_with_missed_frames_to_ensure_balanced x,_x_x,_x_x-x_x_x_x_x_x_x_x
+numbers of numbers n nu num numb BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 5 8 ., 2 10 0 0 0 0 1 numbers_of_trials_across_conditions._in_our_tests_of_this_stimulus,_we_did_not_notice x_x_x_x_x._Xx_x_x_x_x_x,_x_x_x_x
+visible differences visible v vi vis visi BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 , 1 9 0 0 0 0 1 visible_differences_between_trials_when_XX_or_XX_frames_were_used,_but_a_visible x_x_x_x_x_d_x_d_x_x_x,_x_x_x
+stutter was stutter s st stu stut BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 . 1 9 0 0 0 0 1 stutter_was_apparent_when_the_number_of_frames_was_below_XX._quality_checks_on x_x_x_x_x_x_x_x_x_x_d._Xx_x_x
+other aspects other o ot oth othe BLOCKEND PAGEEND NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 8 (..,- 5 9 0 0 0 0 1 other_aspects_of_our_stimulus_(e.g.,_the_locations_where_dots_are_re-drawn_after x_x_x_x_x_(x.x.,_x_x_x_x_x_x-x_x
+disappearing, the disappearing, d di dis disa BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,, 2 9 1 1 0 0 1 disappearing,_the_number_of_dots_drawn_in_the_stimulus,_whether_the_colors_are x,_x_x_x_x_x_x_x_x,_x_x_x_x
+rendered properly) rendered r re ren rend BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ), 2 10 1 1 0 0 1 rendered_properly)_demonstrated_its_viability,_but_we_welcome_feedback_from_users_if x_x)_x_x_x,_x_x_x_x_x_x_x
+issues arise. issues i is iss issu BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 1 1 1 0 0 1 issues_arise. x_x.
+Figure 2. figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 9 1 0 0 0 1 figure_X._the_number_of_frames_displayed_per_trial_in_a_test_of_this_stimulus_in_three_web Xx_d._Xx_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+browsers on browsers b br bro brow BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 0 ., 2 9 1 0 0 0 1 browsers_on_a_computer_running_os_x._in_this_test,_we_displayed_our_rdk_for_XXXms_on_each x_x_x_x_x_X_X._Xx_x_x,_x_x_x_X_x_dx_x_x
+trial for trial t tr tri tria BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 6 0 . 1 9 1 0 0 0 1 trial_for_XXX_consecutive_trials._shown_in_each_panel_are_results_across_five_different_runs_in x_x_d_x_x._Xx_x_x_x_x_x_x_x_x_x_x
+each browser, each e ea eac each BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,.() 4 9 1 0 0 0 1 each_browser,_with_each_run_denoted_by_a_different_color._(a)_the_results_of_the_test_in_google x_x,_x_x_x_x_x_x_x_x._(X)_Xx_x_x_x_x_x_Xx
+Chrome. This chrome. C Ch Chr Chro BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 0 ., 2 8 1 0 0 0 1 chrome._this_browser_showed_the_most_consistency_across_the_three_that_were_tested,_and Xx._Xx_x_x_x_x_x_x_x_x_x_x_x,_x
+matched our matched m ma mat matc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 9 1 0 0 0 1 matched_our_targeted_goal_of_XX_frames_on_the_majority_of_trials._a_small_number_of_trials x_x_x_x_x_d_x_x_x_x_x_x._X_x_x_x_x
+deviated slightly, deviated d de dev devi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,.() 4 9 1 0 0 0 1 deviated_slightly,_using_XX_frames_to_present_the_stimulus._(b)_the_results_of_this_test_in x_x,_x_d_x_x_x_x_x._(X)_Xx_x_x_x_x_x
+Firefox. This firefox. F Fi Fir Fire BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 6 0 ., 2 8 1 0 0 0 1 firefox._this_web_browser_was_slightly_more_variable,_containing_more_trials_that_used_XX Xx._Xx_x_x_x_x_x_x,_x_x_x_x_x_d
+frames, and frames, f fr fra fram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,.() 4 10 1 0 0 0 1 frames,_and_even_a_few_trials_that_displayed_XX_or_fewer_frames._(c)_the_results_of_this_test_in x,_x_x_x_x_x_x_x_d_x_x_x._(X)_Xx_x_x_x_x_x
+Safari. This safari. S Sa Saf Safa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 9 1 0 0 0 1 safari._this_web_browser_displayed_the_most_variability_in_the_number_of_frames_that_were Xx._Xx_x_x_x_x_x_x_x_x_x_x_x_x_x
+displayed. We displayed. d di dis disp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 9 1 0 0 0 1 displayed._we_note_that_while_we_did_not_see_visual_differences_between_trials_when_XX_and x._Xx_x_x_x_x_x_x_x_x_x_x_x_x_d_x
+12 frames 12 1 12 12 12 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 6 0 ,"" 3 8 1 0 0 0 1 XX_frames_were_presented,_trials_with_fewer_than_XX_frames_appeared_to_"stutter"_when d_x_x_x,_x_x_x_x_d_x_x_x_"x"_x
+displayed in displayed d di dis disp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ., 2 8 1 0 0 0 1 displayed_in_the_browser_window._thus,_we_recommend_that_users_analyze_this_metric_to x_x_x_x_x._Xx,_x_x_x_x_x_x_x_x
+evaluate which evaluate e ev eva eval BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 - 1 8 1 0 0 0 1 evaluate_which_trials_should_be_dropped_from_analysis_or_re-presented_when_using_this x_x_x_x_x_x_x_x_x_x-x_x_x_x
+stimulus in stimulus s st sti stim BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 2 1 0 0 0 1 stimulus_in_online_experiments. x_x_x_x.
+Finally, we finally, F Fi Fin Fina BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 7 , 1 10 0 0 0 0 1 finally,_we_also_recommend_that_users_build_in_explicit_instructions_to_only_have_one Xx,_x_x_x_x_x_x_x_x_x_x_x_x_x
+browser window browser b br bro brow BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 7 no 0 9 0 0 0 0 1 browser_window_open_when_participating_in_experiments_with_this_stimulus_and_to x_x_x_x_x_x_x_x_x_x_x_x
+close other close c cl clo clos BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 7 , 1 9 0 0 0 0 1 close_other_programs_while_it_is_being_used,_as_we_have_noticed_slight_timing x_x_x_x_x_x_x_x,_x_x_x_x_x_x
+idiosyncrasies that idiosyncrasies i id idi idio BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 7 no 0 8 0 0 0 0 1 idiosyncrasies_that_emerge_when_browser_tabs_and_programs_are_running_in_the x_x_x_x_x_x_x_x_x_x_x_x
+background. background. background. b ba bac back BLOCKEND PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 7 . 1 1 0 0 0 0 1 background. x.
+(2) Availability (2) ( (2 (2) (2) BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 7 9 () 2 10 0 0 0 0 1 (X)_availability (d)_Xx
+Operating system operating O Op Ope Oper BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 9 no 0 10 0 0 0 0 1 operating_system Xx_x
+This plugin this T Th Thi This BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 9 ,, 2 10 0 0 0 0 1 this_plugin_is_functional_in_the_most_recent_versions_of_safari,_firefox,_and_chrome Xx_x_x_x_x_x_x_x_x_x_Xx,_Xx,_x_Xx
+(i.e., the (i.e., ( (i (i. (i.e BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 9 (..,--,)., 10 9 0 0 0 0 1 (i.e.,_the_most_up-to-date_versions_available_for_use_in_september,_XXXX)._however, (x.x.,_x_x_x-x-x_x_x_x_x_x_Xx,_d)._Xx,
+based on based b ba bas base BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 9 , 1 10 0 0 0 0 1 based_on_our_tests,_chrome_appears_to_be_the_most_reliable_browser_in_presenting_an x_x_x_x,_Xx_x_x_x_x_x_x_x_x_x_x
+equal number equal e eq equ equa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 9 . 1 9 0 0 0 0 1 equal_number_of_frames_across_trials_for_this_stimulus._we_welcome_feedback_from x_x_x_x_x_x_x_x_x._Xx_x_x_x
+users if users u us use user BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 9 . 1 6 0 0 0 0 1 users_if_compatibility_issues_exist_in_older_web_browsers. x_x_x_x_x_x_x_x_x.
+Programming language programming P Pr Pro Prog BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 11 no 0 6 0 0 0 0 1 programming_language Xx_x
+JavaScript/CSS/HTML JavaScript/CSS/HTML javascript/css/html J Ja Jav Java BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 11 // 2 6 0 0 0 0 1 javascript/css/html XxXx/X/X
+Additional system additional A Ad Add Addi BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 11 no 0 10 0 0 0 0 1 additional_system_requirements Xx_x_x
+None None none N No Non None BLOCKEND PAGEEND NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 11 no 0 1 0 0 0 0 1 none Xx
+Dependencies Dependencies dependencies D De Dep Depe BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 0 no 0 10 0 1 0 0 1 dependencies Xx
+The raw the T Th The The BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 0 no 0 8 0 0 0 0 1 the_raw_code_for_the_rdk_posted_on_codepen_works_without_any_additional Xx_x_x_x_x_X_x_x_XxXx_x_x_x_x
+frameworks or frameworks f fr fra fram BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 .,, 3 10 0 0 0 0 1 frameworks_or_libraries._the_jspsych_rdk_plugin_requires_the_jspsych_library,_jquery, x_x_x._Xx_xXx_X_x_x_x_xXx_x,_xXx,
+and a and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 . 1 9 0 0 0 0 1 and_a_jspsych_css_stylesheet_to_work_properly._these_scripts_and_links_for_the x_x_xXx_X_x_x_x_x._Xx_x_x_x_x_x
+jsPsych version jspsych j js jsP jsPs BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 0 ( 1 9 0 0 0 0 1 jspsych_version_are_added_in_the_header_of_the_main_experiment_file_(see_the xXx_x_x_x_x_x_x_x_x_x_x_x_(x_x
+identifier of identifier i id ide iden BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 0 ()''). 6 5 0 0 0 0 1 identifier_of_(X)_under_'software_location'_below). x_x_(d)_x_'Xx_x'_x).
+List of list L Li Lis List BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 2 no 0 10 0 0 0 0 1 list_of_contributors Xx_x_x
+Sivananda Rajananda sivananda S Si Siv Siva BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 3 - 1 10 0 0 0 0 1 sivananda_rajananda_-_development_&_design Xx_Xx_-_Xx_&_Xx
+Hakwan Lau hakwan H Ha Hak Hakw BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 3 - 1 4 0 0 0 0 1 hakwan_lau_-_design Xx_Xx_-_Xx
+Brian Odegaard brian B Br Bri Bria BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 8 3 - 1 9 0 0 0 0 1 brian_odegaard_-_design_&_code_review Xx_Xx_-_Xx_&_Xx_Xx
+Software location: software S So Sof Soft BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 3 : 1 2 0 0 0 0 1 software_location: Xx_x:
+(1) Demonstration (1) ( (1 (1) (1) BLOCKIN PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 3 () 2 10 0 0 0 0 1 (X)_demonstration_of_the_rdk_stimulus_with_modifiable_parameters (d)_Xx_x_x_X_x_x_x_x
+Code repository code C Co Cod Code BLOCKEND PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 3 no 0 2 0 0 0 0 1 code_repository Xx_x
+Name: CodePen name: N Na Nam Name BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 4 : 1 1 0 0 0 0 1 name:_codepen Xx:_XxXx
+Identifier: https://codepen.io/vrsivananda/pen/xLORQe identifier: I Id Ide Iden BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 8 4 :://./// 8 6 0 0 0 0 1 identifier:_https://codepen.io/vrsivananda/pen/xlorqe Xx:_x:/x.x/x/x/xXx
+Licence: GNU licence: L Li Lic Lice BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 4 : 1 4 0 0 0 0 1 licence:_gnu_general_public_license Xx:_X_Xx_Xx_Xx
+Date published: date D Da Dat Date BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 4 :// 3 3 0 0 0 0 1 date_published:_XX/XX/XX Xx_x:_d/d/d
+Description: The description: D De Des Desc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 4 : 1 8 0 0 0 0 1 description:_the_codepen_link_shown_above_provides_users_with_a Xx:_Xx_XxXx_x_x_x_x_x_x_x
+visual demonstration visual v vi vis visu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 ; 1 9 0 0 0 0 1 visual_demonstration_of_different_stimulus_attributes;;_by_changing_the x_x_x_x_x_x;;_x_x_x
+RDK parameters, rdk R RD RDK RDK BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 8 4 ,() 3 9 0 0 0 0 1 rdk_parameters,_users_can_see_(for_example)_how_different_signal_& X_x,_x_x_x_(x_x)_x_x_x_&
+noise rules noise n no noi nois BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 . 1 8 0 0 0 0 1 noise_rules_change_the_appearance_of_the_stimulus._we_recommend x_x_x_x_x_x_x_x._Xx_x
+that users that t th tha that BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 "" 2 10 0 0 0 0 1 that_users_input_different_values_in_the_"set_parameters"_section_of_the x_x_x_x_x_x_x_"Xx_Xx"_x_x_x
+code to code c co cod code BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 4 . 1 7 0 0 0 0 1 code_to_visualize_different_features_of_this_stimulus. x_x_x_x_x_x_x_x.
+(2) jsPsych (2) ( (2 (2) (2) BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 7 () 2 10 0 0 0 0 1 (X)_jspsych_plugin_for_use_in_visual_experiments (d)_xXx_x_x_x_x_x_x
+Code repository code C Co Cod Code BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 no 0 3 0 0 0 0 1 code_repository Xx_x
+Name: GitHub name: N Na Nam Name BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 8 : 1 2 0 0 0 0 1 name:_github Xx:_XxXx
+Identifier: https://github.com/vrsivananda/RDK/blob/master/jspsych- identifier: I Id Ide Iden BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 8 :://./////- 11 10 0 0 0 0 1 identifier:_https://github.com/vrsivananda/rdk/blob/master/jspsych- Xx:_x:/x.x/x/X/x/x/x-
+5.0.3/plugins/jspsych-RDK.js 5.0.3/plugins/jspsych-RDK.js 5.0.3/plugins/jspsych-rdk.js 5 5. 5.0 5.0. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 8 ..//-. 6 4 0 0 0 0 1 X.X.X/plugins/jspsych-rdk.js d.d.d/x/x-X.x
+Licence: GNU licence: L Li Lic Lice BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 8 : 1 5 0 0 0 0 1 licence:_gnu_general_public_license Xx:_X_Xx_Xx_Xx
+Date published: date D Da Dat Date BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 8 :// 3 3 0 0 0 0 1 date_published:_XX/XX/XX Xx_x:_d/d/d
+(3) Sample (3) ( (3 (3) (3) BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 9 () 2 10 0 0 0 0 1 (X)_sample_jspsych_experiment_implementing_this_stimulus (d)_Xx_xXx_x_x_x_x
+Code repository code C Co Cod Code BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 no 0 2 0 0 0 0 1 code_repository Xx_x
+Name: GitHub name: N Na Nam Name BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 : 1 2 0 0 0 0 1 name:_github Xx:_XxXx
+Identifier: https://github.com/vrsivananda/RDK.git identifier: I Id Ide Iden BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 9 :://.//. 8 10 0 0 0 0 1 identifier:_https://github.com/vrsivananda/rdk.git Xx:_x:/x.x/x/X.x
+Licence: GNU licence: L Li Lic Lice BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 : 1 7 0 0 0 0 1 licence:_gnu_general_public_license Xx:_X_Xx_Xx_Xx
+Date published: date D Da Dat Date BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 :// 3 5 0 0 0 0 1 date_published:_XX/XX/XX Xx_x:_d/d/d
+Language Language language L La Lan Lang BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 10 no 0 10 0 0 0 0 1 language Xx
+JavaScript/CSS/HTML JavaScript/CSS/HTML javascript/css/html J Ja Jav Java BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 10 // 2 10 0 0 0 0 1 javascript/css/html XxXx/X/X
+(3) Reuse (3) ( (3 (3) (3) BLOCKEND PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 10 () 2 10 0 0 0 0 1 (X)_reuse_potential (d)_Xx_x
+Recently, platforms recently, R Re Rec Rece BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 11 , 1 9 0 0 0 0 1 recently,_platforms_have_been_created_which_make_it_possible_to_conduct Xx,_x_x_x_x_x_x_x_x_x_x
+psychological and psychological p ps psy psyc BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 11 ,"" 3 10 0 0 0 0 1 psychological_and_perceptual_experiments_online,_including_the_new_"jspsych" x_x_x_x_x,_x_x_x_"xXx"
+JavaScript library javascript J Ja Jav Java BLOCKSTART PAGESTART SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 9 0 []'. 4 8 0 0 0 0 1 javascript_library_[XX]_and_amazon's_mturk_website_for_subject_recruitment._rdks XxXx_x_[d]_x_Xx'x_xXx_x_x_x_x._Xx
+are a are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 - 1 8 0 0 0 0 1 are_a_commonly-used_stimulus_to_evaluate_motion_perception_thresholds_in_visual x_x_x-x_x_x_x_x_x_x_x_x
+psychophysics;; our psychophysics;; p ps psy psyc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 0 ;- 2 9 0 0 0 0 1 psychophysics;;_our_release_of_the_first_open-access_rdk_for_online_experiments_will x;;_x_x_x_x_x_x-x_X_x_x_x_x
+be of be b be be be BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 ,, 2 8 0 0 0 0 1 be_of_use_to_visual_scientists,_psychologists,_and_any_researcher_interested_in x_x_x_x_x_x,_x,_x_x_x_x_x
+investigating motion investigating i in inv inve BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 . 1 6 0 0 0 0 1 investigating_motion_perception_in_large_numbers_of_subjects. x_x_x_x_x_x_x_x.
+We think we W We We We BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 0 no 0 8 0 0 0 0 1 we_think_use_of_this_stimulus_in_online_experiments_will_be_of_particular_value Xx_x_x_x_x_x_x_x_x_x_x_x_x_x
+to researchers to t to to to BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 (.., 4 9 0 0 0 0 1 to_researchers_interested_in_studying_populations_that_may_be_difficult_to_access_(e.g., x_x_x_x_x_x_x_x_x_x_x_x_(x.x.,
+the elderly, the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 ,, 2 9 0 0 0 0 1 the_elderly,_individuals_in_various_worldwide_locations,_individuals_living_far_from x_x,_x_x_x_x_x,_x_x_x_x
+testing sites, testing t te tes test BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 9 0 ,.). 4 10 0 0 0 0 1 testing_sites,_etc.)._this_new_rdk_also_facilitates_fast_and_efficient_data_collection_in x_x,_x.)._Xx_x_X_x_x_x_x_x_x_x_x
+motion perception motion m mo mot moti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 ., 2 8 0 0 0 0 1 motion_perception_experiments._in_addition,_psychophysicists_and_researchers_will_be x_x_x._Xx_x,_x_x_x_x_x
+able to able a ab abl able BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 no 0 9 0 0 0 0 1 able_to_develop_and_extend_our_code_under_the_gnu_license_to_improve_or_modify_the x_x_x_x_x_x_x_x_x_X_x_x_x_x_x_x
+RDK to rdk R RD RDK RDK BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 9 0 . 1 9 0 0 0 0 1 rdk_to_serve_specific_research_purposes._we_hope_our_creation_here_is_of_use_to_the X_x_x_x_x_x._Xx_x_x_x_x_x_x_x_x_x
+greater vision greater g gr gre grea BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 no 0 8 0 0 0 0 1 greater_vision_science_community_and_researchers_interested_in_studying_motion x_x_x_x_x_x_x_x_x_x
+perception, and perception, p pe per perc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 0 , 1 8 0 0 0 0 1 perception,_and_that_efforts_can_be_taken_to_adapt_other_types_of_visual x,_x_x_x_x_x_x_x_x_x_x_x_x
+psychophysical stimuli psychophysical p ps psy psyc BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 0 (,.). 5 8 0 0 0 0 1 psychophysical_stimuli_(gabor_patches,_etc.)_for_online_presentation_as_well. x_x_(Xx_x,_x.)_x_x_x_x_x.
+Competing interests competing C Co Com Comp BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 11 no 0 10 0 0 0 0 1 competing_interests Xx_x
+The authors the T Th The The BLOCKSTART PAGEEND NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 11 . 1 10 0 0 0 0 1 the_authors_declare_that_they_have_no_competing_interests. Xx_x_x_x_x_x_x_x_x.
+References References references R Re Ref Refe BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 0 no 0 10 0 1 0 0 1 references Xx
+1. Williams 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 0 .,. 3 10 0 0 0 0 1 X._williams_dw,_sekuler_r._coherent_global_motion_percepts_from_stochastic_local d._Xx_X,_Xx_X._Xx_x_x_x_x_x_x
+motions. Vision motions. m mo mot moti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 0 ..;:-.: 7 5 0 0 0 0 1 motions._vision_res._XXXX;XX:_XX-XX._available: x._Xx_Xx._d;d:_d-d._Xx:
+https://www.ncbi.nlm.nih.gov/pubmed/6695508 https://www.ncbi.nlm.nih.gov/pubmed/6695508 https://www.ncbi.nlm.nih.gov/pubmed/6695508 h ht htt http BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 1 10 0 ://....// 9 5 0 0 0 0 1 https://www.ncbi.nlm.nih.gov/pubmed/XXXXXXX x:/x.x.x.x.x/x/d
+2. Britten 2. 2 2. 2. 2. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 1 .,,,.: 6 10 0 0 0 0 1 X._britten_kh,_shadlen_mn,_newsome_wt,_movshon_ja._the_analysis_of_visual_motion:_a d._Xx_X,_Xx_X,_Xx_X,_Xx_X._Xx_x_x_x_x:_x
+comparison of comparison c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 1 ..;:- 5 9 0 0 0 0 1 comparison_of_neuronal_and_psychophysical_performance._j_neurosci._XXXX;XX:_XXXX- x_x_x_x_x_x._X_Xx._d;d:_d-
+4765. Available: 4765. 4 47 476 4765 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 1 .:://....// 11 7 0 0 0 0 1 XXXX._available:_https://www.ncbi.nlm.nih.gov/pubmed/XXXXXXX d._Xx:_x:/x.x.x.x.x/x/d
+3. Roitman 3. 3 3. 3. 3. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 2 .,. 3 10 0 0 0 0 1 X._roitman_jd,_shadlen_mn._response_of_neurons_in_the_lateral_intraparietal_area_during_a d._Xx_X,_Xx_X._Xx_x_x_x_x_x_x_x_x_x
+combined visual combined c co com comb BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 2 ..;:-. 6 9 0 0 0 0 1 combined_visual_discrimination_reaction_time_task._j_neurosci._XXXX;XX:_XXXX-XXXX. x_x_x_x_x_x._X_Xx._d;d:_d-d.
+Available: https://www.ncbi.nlm.nih.gov/pubmed/12417672 available: A Av Ava Avai BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 2 :://....// 10 6 0 0 0 0 1 available:_https://www.ncbi.nlm.nih.gov/pubmed/XXXXXXXX Xx:_x:/x.x.x.x.x/x/d
+4. Law 4. 4 4. 4. 4. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 3 .--,.--, 8 10 0 0 0 0 1 X._law_c--t,_gold_ji._neural_correlates_of_perceptual_learning_in_a_sensory--motor,_but_not_a d._Xx_X-X,_Xx_X._Xx_x_x_x_x_x_x_x-x,_x_x_x
+sensory, cortical sensory, s se sen sens BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 3 ,..;:-.:./ 10 7 0 0 0 0 1 sensory,_cortical_area._nat_neurosci._XXXX;XX:_XXX-XXX._doi:XX.XXXX/nnXXXX x,_x_x._Xx_Xx._d;d:_d-d._x:d.d/xd
+5. Watamaniuk 5. 5 5. 5. 5. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 4 .,,. 4 10 0 0 0 0 1 X._watamaniuk_sn,_sekuler_r,_williams_dw._direction_perception_in_complex_dynamic d._Xx_X,_Xx_X,_Xx_X._Xx_x_x_x_x
+displays: the displays: d di dis disp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 4 :..;:-. 7 9 0 0 0 0 1 displays:_the_integration_of_direction_information._vision_res._XXXX;XX:_XX-XX. x:_x_x_x_x_x._Xx_Xx._d;d:_d-d.
+doi:10.1016/0042--6989(89)90173--9 doi:10.1016/0042--6989(89)90173--9 doi:10.1016/0042--6989(89)90173--9 d do doi doi: BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 4 :./--()-- 9 4 0 0 0 0 1 doi:XX.XXXX/XXXX--XXXX(XX)XXXXX--X x:d.d/d-d(d)d-d
+6. Scase 6. 6 6. 6. 6. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 5 .,,.?. 6 10 0 0 0 0 1 X._scase_mo,_braddick_oj,_raymond_je._what_is_noise_for_the_motion_system?_vision_res. d._Xx_X,_Xx_X,_Xx_X._Xx_x_Xx_x_x_Xx_Xx?_Xx_Xx.
+1996;36: 2579-2586. 1996;36: 1 19 199 1996 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 5 ;:-.:./--()-- 13 6 0 0 0 0 1 XXXX;XX:_XXXX-XXXX._doi:XX.XXXX/XXXX--XXXX(XX)XXXXX--X d;d:_d-d._x:d.d/d-d(d)d-d
+7. Peirce 7. 7 7. 7. 7. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 6 ..----..;: 10 10 0 0 0 0 1 X._peirce_jw._psychopy----psychophysics_software_in_python._j_neurosci_methods._XXXX;XXX: d._Xx_X._XxXx-Xx_x_x_Xx._X_Xx_Xx._d;d:
+8-13. doi:10.1016/j.jneumeth.2006.11.017 8-13. 8 8- 8-1 8-13 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 6 -.:./.... 9 4 0 0 0 0 1 X-XX._doi:XX.XXXX/j.jneumeth.XXXX.XX.XXX d-d._x:d.d/x.x.d.d.d
+8. Peirce 8. 8 8. 8. 8. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 7 .... 4 10 0 0 0 0 1 X._peirce_jw._generating_stimuli_for_neuroscience_using_psychopy._front_neuroinform. d._Xx_X._Xx_Xx_x_Xx_Xx_XxXx._Xx_Xx.
+2008;2: 10. 2008;2: 2 20 200 2008 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 7 ;:.:./... 9 4 0 0 0 0 1 XXXX;X:_XX._doi:XX.XXXX/neuro.XX.XXX.XXXX d;d:_d._x:d.d/x.d.d.d
+9. Kiani 9. 9 9. 9. 9. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 8 .,,. 4 10 0 0 0 0 1 X._kiani_r,_churchland_ak,_shadlen_mn._integration_of_direction_cues_is_invariant_to_the d._Xx_X,_Xx_X,_Xx_X._Xx_x_x_x_x_x_x_x
+temporal gap temporal t te tem temp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 8 ..;:-. 6 6 0 0 0 0 1 temporal_gap_between_them._j_neurosci._XXXX;XX:_XXXXX-XXXXX. x_x_x_x._X_Xx._d;d:_d-d.
+doi:10.1523/JNEUROSCI.2094--13.2013 doi:10.1523/JNEUROSCI.2094--13.2013 doi:10.1523/jneurosci.2094--13.2013 d do doi doi: BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 1 0 0 0 11 8 :./.--. 7 4 0 0 0 0 1 doi:XX.XXXX/jneurosci.XXXX--XX.XXXX x:d.d/X.d-d.d
+10. de 10. 1 10 10. 10. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 9 ..: 3 10 0 0 0 0 1 XX._de_leeuw_jr._jspsych:_a_javascript_library_for_creating_behavioral_experiments_in_a_web d._x_Xx_X._xXx:_x_XxXx_x_x_x_x_x_x_x_Xx
+browser. Behav browser. b br bro brow BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 9 ..;:-.:./------ 15 8 0 0 0 0 1 browser._behav_res_methods._XXXX;XX:_X-XX._doi:XX.XXXX/sXXXXX--XXX--XXXX--y x._Xx_Xx_Xx._d;d:_d-d._x:d.d/xd-d-d-x
+11. de 11. 1 11 11. 11. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 10 .,.? 4 9 0 0 0 0 1 XX._de_leeuw_jr,_motz_ba._psychophysics_in_a_web_browser?_comparing_response_times d._x_Xx_X,_Xx_X._Xx_x_x_Xx_x?_Xx_x_x
+collected with collected c co col coll BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 10 . 1 10 0 0 0 0 1 collected_with_javascript_and_psychophysics_toolbox_in_a_visual_search_task._behav_res x_x_XxXx_x_Xx_Xx_x_x_x_x_x._Xx_Xx
+Methods. 2016;48: methods. M Me Met Meth BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 10 .;:-.:./------ 14 6 0 0 0 0 1 methods._XXXX;XX:_X-XX._doi:XX.XXXX/sXXXXX--XXX--XXXX--X Xx._d;d:_d-d._x:d.d/xd-d-d-d
 

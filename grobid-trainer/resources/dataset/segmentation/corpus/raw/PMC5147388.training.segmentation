@@ -1,87 +1,87 @@
-236 236 236 2 23 236 236 BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1
-PRS Global prs P PR PRS PRS BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 • 1 10 0 1 0 0 1
-tissue expansion, tissue t ti tis tiss BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 , 1 10 0 1 0 0 1
-and discounted and a an and and BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 '. 2 7 0 1 0 0 1
-With the with W Wi Wit With BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 9 0 0 0 0 1
-surgery, the surgery, s su sur surg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 ,- 2 8 0 0 0 0 1
-formed. Planning formed. f fo for form BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 ., 2 9 0 0 0 0 1
-contralateral breast contralateral c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 - 1 9 0 0 0 0 1
-mary artery mary m ma mar mary BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 0 0 . 1 9 0 0 0 0 1
-the mastectomy the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 ,,- 3 9 0 0 0 0 1
-posed into posed p po pos pose BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 . 1 10 0 0 0 0 1
-bridge was bridge b br bri brid BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 . 1 9 0 0 0 0 1
-site closed site s si sit site BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 ,., 3 9 0 0 0 0 1
-patient was patient p pa pat pati BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 -, 2 9 0 0 0 0 1
-only 1 only o on onl only BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 . 1 8 0 0 0 0 1
-Excision margins excision E Ex Exc Exci BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 2 2 , 1 9 0 0 0 0 1
-and donor and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 2 . 1 10 0 0 0 0 1
-happy and happy h ha hap happ BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 2 2 . 1 9 0 0 0 0 1
-Disclosure/Financial support: disclosure/financial D Di Dis Disc BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 2 2 /: 2 7 0 0 0 0 1
-authors has authors a au aut auth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 2 , 1 10 0 0 0 0 1
-devices, or devices, d de dev devi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 2 ,. 2 8 0 0 0 0 1
-Why the why W Wh Why Why BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 2 -: 2 8 0 0 0 0 1
-The Impact the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 2 no 0 7 0 0 0 0 1
-Intervals in intervals I In Int Inte BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 2 no 0 10 0 0 0 0 1
-Mona T. mona M Mo Mon Mona BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 1 0 0 0 0 0 0 3 3 .-,,; 5 9 0 0 0 0 1
-Osama A. osama O Os Osa Osam BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 3 .,,; 4 8 0 0 0 0 1
-Moran, MD moran, M Mo Mor Mora BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 3 ,;., 4 10 0 0 0 0 1
-MD, PhD; md, M MD MD, MD, BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 1 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 3 3 ,;,,, 5 9 0 0 0 0 1
-PURPOSE: The purpose: P PU PUR PURP BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 3 3 :-- 3 8 0 0 0 0 1
-tors in tors t to tor tors BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 3 ;,- 3 9 0 0 0 0 1
-tion, it tion, t ti tio tion BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 3 ,., 3 10 0 0 0 0 1
-reporting of reporting r re rep repo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 3 3 no 0 9 0 0 0 0 1
-determine the determine d de det dete BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 3 , 1 9 0 0 0 0 1
-assessment of assessment a as ass asse BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 3 ., 2 9 0 0 0 0 1
-was to was w wa was was BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 3 - 1 9 0 0 0 0 1
-cal trials cal c ca cal cal BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 3 3 . 1 7 0 0 0 0 1
-METHODS: The methods: M ME MET METH BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 5 5 : 1 7 0 0 0 0 1
-journals of journals j jo jou jour BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 5 - 1 8 0 0 0 0 1
-LINE for line L LI LIN LINE BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 5 5 ,,, 3 9 0 0 0 0 1
-2015. Studies 2015. 2 20 201 2015 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 5 5 . 1 8 0 0 0 0 1
-sample size. sample s sa sam samp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 5 5 . 1 9 0 0 0 0 1
-quality score, quality q qu qua qual BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 5 ,, 2 10 0 0 0 0 1
-year of year y ye yea year BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 5 ,, 2 9 0 0 0 0 1
-of a of o of of of BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 no 0 10 0 1 0 0 1
-the use the t th the the BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 . 1 7 0 1 0 0 1
-RESULTS: Two results: R RE RES RESU BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 6 6 : 1 7 0 0 0 0 1
-articles. There articles. a ar art arti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 .- 2 8 0 0 0 0 1
-(kappa=0.78). Although, (kappa=0.78). ( (k (ka (kap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 6 (.)., 5 8 0 0 0 0 1
-p-value, only p-value, p p- p-v p-va BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 6 -,. 3 9 0 0 0 0 1
-quality of quality q qu qua qual BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 no 0 9 0 0 0 0 1
-5 (IQR 5 5 5 5 5 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 6 6 (-.). 5 9 0 0 0 0 1
-Jadad score jadad J Ja Jad Jada BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 6 6 (.)- 4 9 0 0 0 0 1
-odologist (p=0.002) odologist o od odo odol BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 6 (.) 3 9 0 0 0 0 1
-confidence intervals. confidence c co con conf BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 . 1 10 0 0 0 0 1
-findings, while findings, f fi fin find BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 ,, 2 9 0 0 0 0 1
-and statistical and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 - 1 9 0 0 0 0 1
-dence interval dence d de den denc BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 6 . 1 4 0 0 0 0 1
-CONCLUSION: Confidence conclusion: C CO CON CONC BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 8 8 :- 2 8 0 0 0 0 1
-in the in i in in in BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 8 8 .- 2 9 0 0 0 0 1
-ing confidence ing i in ing ing BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 8 8 no 0 9 0 0 0 0 1
-statistical significance statistical s st sta stat BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 8 ,- 2 9 0 0 0 0 1
-reveal all reveal r re rev reve BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 8 . 1 9 0 0 0 0 1
-To improve to T To To To BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 8 , 1 9 0 0 0 0 1
-should always should s sh sho shou BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 8 no 0 9 0 0 0 0 1
-misinterpretation of misinterpretation m mi mis misi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 8 - 1 10 0 0 0 0 1
-cant result. cant c ca can cant BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 8 . 1 2 0 0 0 0 1
-REFERENCES: REFERENCES: references: R RE REF REFE BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 : 1 10 0 0 0 0 1
-1. Fethney 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 9 .., 3 10 0 0 0 0 1
-use confidence use u us use use BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 9 . 1 9 0 0 0 0 1
-Care. 2010;23(2):93-97. care. C Ca Car Care BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 .;():-.:./..... 15 8 0 0 0 0 1
-2. Davies 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 9 .,. 3 8 0 0 0 0 1
-and p-values? and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 9 -??.;():-.. 11 8 0 0 0 0 1
-whatisseries.co.uk. whatisseries.co.uk. whatisseries.co.uk. w wh wha what BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 9 ... 3 3 0 0 0 0 1
-3. Vavken 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 9 .,,,,- 6 8 0 0 0 0 1
-otka R. otka o ot otk otka BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 9 . 1 8 0 0 0 0 1
-orthopaedic research orthopaedic o or ort orth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 9 .. 2 8 0 0 0 0 1
-2009;467(12):3334-3339. doi:10.1007/s11999-009-0817-7. 2009;467(12):3334-3339. 2 20 200 2009 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 9 9 ;():-.:./---. 13 8 0 0 0 0 1
-'Elderly' Patient 'elderly' ' 'E 'El 'Eld BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 10 10 '''' 4 10 0 0 0 0 1
-Patient -the patient P Pa Pat Pati BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 10 - 1 8 0 0 0 0 1
-Who Visit who W Wh Who Who BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 10 no 0 7 0 0 0 0 1
-Surgery Surgery surgery S Su Sur Surg BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 10 no 0 1 0 0 0 0 1
-Makoto Sato, makoto M Ma Mak Mako BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 ,,;, 4 10 0 0 0 0 1
-INTRODUCTION: Recently, introduction: I IN INT INTR BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 :,- 3 7 0 0 0 0 1
-tries led tries t tr tri trie BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 ,- 2 8 0 0 0 0 1
-tion is tion t ti tio tion BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 11 . 1 9 0 0 0 0 1
-lengthening year lengthening l le len leng BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 . 1 10 0 0 0 0 1
+236 236 236 2 23 236 236 BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 NOCAPS ALLDIGIT 0 0 0 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1 XXX d
+PRS Global prs P PR PRS PRS BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 • 1 10 0 1 0 0 1 prs_global_open_•_XXXX X_Xx_Xx_•_d
+tissue expansion, tissue t ti tis tiss BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 , 1 10 0 1 0 0 1 tissue_expansion,_and_staged_surgery_were_all_considered x_x,_x_x_x_x_x_x
+and discounted and a an and and BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 '. 2 7 0 1 0 0 1 and_discounted_at_the_patient's_request. x_x_x_x_x'x_x.
+With the with W Wi Wit With BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 9 0 0 0 0 1 with_the_patient_remaining_in_a_supine_position_throughout Xx_x_x_x_x_x_x_x_x
+surgery, the surgery, s su sur surg BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 ,- 2 8 0 0 0 0 1 surgery,_the_left_mastectomy_with_skin_excision_was_per- x,_x_x_x_x_x_x_x_x-
+formed. Planning formed. f fo for form BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 ., 2 9 0 0 0 0 1 formed._planning_in_reverse,_a_fasciocutaneous_flap_from_the x._Xx_x_x,_x_x_x_x_x
+contralateral breast contralateral c co con cont BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 - 1 9 0 0 0 0 1 contralateral_breast_based_on_the_right_Xnd_internal_mam- x_x_x_x_x_x_dx_x_x-
+mary artery mary m ma mar mary BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 0 0 . 1 9 0 0 0 0 1 mary_artery_perforator_was_designed._the_flap_was_raised_in x_x_x_x_x._Xx_x_x_x_x
+the mastectomy the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 ,,- 3 9 0 0 0 0 1 the_mastectomy_plane,_isolated_on_the_perforator,_and_trans- x_x_x,_x_x_x_x,_x_x-
+posed into posed p po pos pose BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 . 1 10 0 0 0 0 1 posed_into_the_defect_in_a_propeller_fashion._the_sternal_skin x_x_x_x_x_x_x_x._Xx_x_x
+bridge was bridge b br bri brid BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 . 1 9 0 0 0 0 1 bridge_was_excised_to_avoid_tunnelling_the_flap._the_donor x_x_x_x_x_x_x_x._Xx_x
+site closed site s si sit site BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 ,., 3 9 0 0 0 0 1 site_closed_directly,_no_drains_were_used._as_planned,_the x_x_x,_x_x_x_x._Xx_x,_x
+patient was patient p pa pat pati BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 -, 2 9 0 0 0 0 1 patient_was_discharged_home_on_post-operative_day_X,_with x_x_x_x_x_x-x_x_d,_x
+only 1 only o on onl only BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 0 . 1 8 0 0 0 0 1 only_X_dressing_change_required_in_clinic_at_X_weeks. x_d_x_x_x_x_x_x_d_x.
+Excision margins excision E Ex Exc Exci BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 2 2 , 1 9 0 0 0 0 1 excision_margins_were_clear_of_tumor,_and_both_the_flap Xx_x_x_x_x_x,_x_x_x_x
+and donor and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 2 . 1 10 0 0 0 0 1 and_donor_site_healed_without_complication._the_patient_is x_x_x_x_x_x._Xx_x_x
+happy and happy h ha hap happ BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 2 2 . 1 9 0 0 0 0 1 happy_and_remains_free_of_local_recurrence_at_X_months. x_x_x_x_x_x_x_x_d_x.
+Disclosure/Financial support: disclosure/financial D Di Dis Disc BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 2 2 /: 2 7 0 0 0 0 1 disclosure/financial_support:_none_of_the Xx/Xx_x:_Xx_x_x
+authors has authors a au aut auth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 2 , 1 10 0 0 0 0 1 authors_has_a_financial_interest_in_any_of_the_products, x_x_x_x_x_x_x_x_x_x,
+devices, or devices, d de dev devi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 1 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 2 ,. 2 8 0 0 0 0 1 devices,_or_drugs_mentioned_in_this_manuscript. x,_x_x_x_x_x_x.
+Why the why W Wh Why Why BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 2 -: 2 8 0 0 0 0 1 why_the_p-value_alone_is_not_enough: Xx_x_X-Xx_Xx_x_Xx_Xx:
+The Impact the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 2 no 0 7 0 0 0 0 1 the_impact_of_reporting_confidence Xx_Xx_x_Xx_Xx
+Intervals in intervals I In Int Inte BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 2 no 0 10 0 0 0 0 1 intervals_in_the_plastic_surgery_literature Xx_x_x_Xx_Xx_Xx
+Mona T. mona M Mo Mon Mona BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 1 0 0 0 0 0 0 3 3 .-,,; 5 9 0 0 0 0 1 mona_t._al-taha,_md_candidate,_bba; Xx_X._Xx-Xx,_X_Xx,_X;
+Osama A. osama O Os Osa Osam BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 3 .,,; 4 8 0 0 0 0 1 osama_a._samargandi,_md,_mhsc;_kit Xx_X._Xx,_X,_Xx;_Xx
+Moran, MD moran, M Mo Mor Mora BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 3 3 ,;., 4 10 0 0 0 0 1 moran,_md_candidate;_sarah_a._al_youha, Xx,_X_Xx;_Xx_X._Xx_Xx,
+MD, PhD; md, M MD MD, MD, BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 1 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 3 3 ,;,,, 5 9 0 0 0 0 1 md,_phd;_michael_bezuhly,_md,_msc,_sm X,_XxX;_Xx_Xx,_X,_Xx,_X
+PURPOSE: The purpose: P PU PUR PURP BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 3 3 :-- 3 8 0 0 0 0 1 purpose:_the_p-value_is_one_of_the_most_utilized_descrip- X:_Xx_x-x_x_x_x_x_x_x_x-
+tors in tors t to tor tors BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 3 ;,- 3 9 0 0 0 0 1 tors_in_statistical_analysis;_however,_when_reported_in_isola- x_x_x_x;_x,_x_x_x_x-
+tion, it tion, t ti tio tion BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 3 ,., 3 10 0 0 0 0 1 tion,_it_does_not_convey_the_effect_size_of_a_treatment._X,X_the x,_x_x_x_x_x_x_x_x_x_x._d,d_Xx
+reporting of reporting r re rep repo BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 3 3 no 0 9 0 0 0 0 1 reporting_of_confidence_intervals_is_an_essential_adjunct_to x_x_x_x_x_x_x_x_x
+determine the determine d de det dete BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 3 , 1 9 0 0 0 0 1 determine_the_clinical_value_of_a_treatment,_as_it_permits_an x_x_x_x_x_x_x,_x_x_x_x
+assessment of assessment a as ass asse BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 3 ., 2 9 0 0 0 0 1 assessment_of_the_effect_size._X,X_the_objective_of_this_study x_x_x_x_x._d,d_Xx_x_x_x_x
+was to was w wa was was BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 3 - 1 9 0 0 0 0 1 was_to_assess_the_reporting_of_confidence_intervals_in_clini- x_x_x_x_x_x_x_x_x_x-
+cal trials cal c ca cal cal BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 3 3 . 1 7 0 0 0 0 1 cal_trials_within_the_plastic_surgery_literature. x_x_x_x_x_x_x.
+METHODS: The methods: M ME MET METH BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 5 5 : 1 7 0 0 0 0 1 methods:_the_seven_highest_impact_plastic_surgery X:_Xx_x_x_x_x_x
+journals of journals j jo jou jour BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 5 - 1 8 0 0 0 0 1 journals_of_different_domains_were_screened_using_med- x_x_x_x_x_x_x_X-
+LINE for line L LI LIN LINE BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 5 5 ,,, 3 9 0 0 0 0 1 line_for_clinical_trials_in_the_years_XXXX,_XXXX,_XXXX,_and X_x_x_x_x_x_x_d,_d,_d,_x
+2015. Studies 2015. 2 20 201 2015 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 5 5 . 1 8 0 0 0 0 1 XXXX._studies_were_randomized_based_on_a_predetermined d._Xx_x_x_x_x_x_x
+sample size. sample s sa sam samp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 5 5 . 1 9 0 0 0 0 1 sample_size._various_characteristics_including_the_jadad x_x._Xx_x_x_x_Xx
+quality score, quality q qu qua qual BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 5 ,, 2 10 0 0 0 0 1 quality_score,_statistical_significance_of_the_study_findings, x_x,_x_x_x_x_x_x,
+year of year y ye yea year BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 5 ,, 2 9 0 0 0 0 1 year_of_publication,_journal_impact_factor,_and_participation x_x_x,_x_x_x,_x_x
+of a of o of of of BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 no 0 10 0 1 0 0 1 of_a_methodologist_were_documented_and_their_influence_on x_x_x_x_x_x_x_x_x
+the use the t th the the BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 . 1 7 0 1 0 0 1 the_use_of_confidence_intervals_was_examined. x_x_x_x_x_x_x.
+RESULTS: Two results: R RE RES RESU BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 6 6 : 1 7 0 0 0 0 1 results:_two_independent_reviewers_analyzed_XXX X:_Xx_x_x_x_d
+articles. There articles. a ar art arti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 .- 2 8 0 0 0 0 1 articles._there_was_substantial_inter-rater_agreement x._Xx_x_x_x-x_x
+(kappa=0.78). Although, (kappa=0.78). ( (k (ka (kap BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 0 0 6 6 (.)., 5 8 0 0 0 0 1 (kappa=X.XX)._although,_XX%_of_the_studies_reported_a (x=d.d)._Xx,_d%_x_x_x_x_x
+p-value, only p-value, p p- p-v p-va BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 6 -,. 3 9 0 0 0 0 1 p-value,_only_XX%_reported_the_confidence_intervals._the x-x,_x_d%_x_x_x_x._Xx
+quality of quality q qu qua qual BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 no 0 9 0 0 0 0 1 quality_of_the_studies_had_a_median_jadad_score_of_X_out_of x_x_x_x_x_x_x_Xx_x_x_d_x_x
+5 (IQR 5 5 5 5 5 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 6 6 (-.). 5 9 0 0 0 0 1 X_(iqr_X-X.XX)._bivariate_analysis_revealed_that_a_higher d_(X_d-d.d)._Xx_x_x_x_x_x
+Jadad score jadad J Ja Jad Jada BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 6 6 (.)- 4 9 0 0 0 0 1 jadad_score_(p=X.XXX)_and_inclusion_of_a_research_meth- Xx_x_(x=d.d)_x_x_x_x_x_x-
+odologist (p=0.002) odologist o od odo odol BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 6 (.) 3 9 0 0 0 0 1 odologist_(p=X.XXX)_were_associated_with_the_reporting_of x_(x=d.d)_x_x_x_x_x_x
+confidence intervals. confidence c co con conf BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 . 1 10 0 0 0 0 1 confidence_intervals._multivariate_analysis_revealed_similar x_x._Xx_x_x_x
+findings, while findings, f fi fin find BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 ,, 2 9 0 0 0 0 1 findings,_while_journal_impact_factor,_year_of_publication x,_x_x_x_x,_x_x_x
+and statistical and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 6 - 1 9 0 0 0 0 1 and_statistical_significance_were_not_correlated_with_confi- x_x_x_x_x_x_x_x-
+dence interval dence d de den denc BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 6 . 1 4 0 0 0 0 1 dence_interval_reporting. x_x_x.
+CONCLUSION: Confidence conclusion: C CO CON CONC BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 8 8 :- 2 8 0 0 0 0 1 conclusion:_confidence_intervals_are_under-reported X:_Xx_x_x_x-x
+in the in i in in in BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 8 8 .- 2 9 0 0 0 0 1 in_the_plastic_surgery_literature._the_main_reason_for_report- x_x_x_x_x._Xx_x_x_x_x-
+ing confidence ing i in ing ing BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 8 8 no 0 9 0 0 0 0 1 ing_confidence_intervals_is_that_they_focus_on_effect_size_and x_x_x_x_x_x_x_x_x_x_x
+statistical significance statistical s st sta stat BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 8 ,- 2 9 0 0 0 0 1 statistical_significance_of_results,_whereas_p-values_do_not x_x_x_x,_x_x-x_x_x
+reveal all reveal r re rev reve BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 8 . 1 9 0 0 0 0 1 reveal_all_the_information_needed_to_interpret_study_findings. x_x_x_x_x_x_x_x_x.
+To improve to T To To To BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 8 , 1 9 0 0 0 0 1 to_improve_the_reporting_quality_of_clinical_trials,_results Xx_x_x_x_x_x_x_x,_x
+should always should s sh sho shou BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 8 no 0 9 0 0 0 0 1 should_always_include_the_confidence_intervals_to_avoid_the x_x_x_x_x_x_x_x_x
+misinterpretation of misinterpretation m mi mis misi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 8 - 1 10 0 0 0 0 1 misinterpretation_of_the_effect_size_of_a_statistically_signifi- x_x_x_x_x_x_x_x_x-
+cant result. cant c ca can cant BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 8 . 1 2 0 0 0 0 1 cant_result. x_x.
+REFERENCES: REFERENCES: references: R RE REF REFE BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 : 1 10 0 0 0 0 1 references: X:
+1. Fethney 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 9 .., 3 10 0 0 0 0 1 X._fethney_j._statistical_and_clinical_significance,_and_how_to d._Xx_X._Xx_x_x_x,_x_x_x
+use confidence use u us use use BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 9 . 1 9 0 0 0 0 1 use_confidence_intervals_to_help_interpret_both._aust_crit x_x_x_x_x_x_x._Xx_Xx
+Care. 2010;23(2):93-97. care. C Ca Car Care BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 9 .;():-.:./..... 15 8 0 0 0 0 1 care._XXXX;XX(X):XX-XX._doi:XX.XXXX/j.aucc.XXXX.XX.XXX. Xx._d;d(d):d-d._x:d.d/x.x.d.d.d.
+2. Davies 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 9 .,. 3 8 0 0 0 0 1 X._davies_ht,_crombie_ik._what_are_confidence_intervals d._Xx_X,_Xx_X._Xx_x_x_x
+and p-values? and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 9 -??.;():-.. 11 8 0 0 0 0 1 and_p-values?_stat_what_is?_ser._XXXX;(april):X-X._www. x_x-x?_Xx_Xx_x?_Xx._d;(Xx):d-d._x.
+whatisseries.co.uk. whatisseries.co.uk. whatisseries.co.uk. w wh wha what BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 9 ... 3 3 0 0 0 0 1 whatisseries.co.uk. x.x.x.
+3. Vavken 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 9 9 .,,,,- 6 8 0 0 0 0 1 X._vavken_p,_heinrich_km,_koppelhuber_c,_rois_s,_dor- d._Xx_X,_Xx_X,_Xx_X,_Xx_X,_Xx-
+otka R. otka o ot otk otka BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 9 . 1 8 0 0 0 0 1 otka_r._the_use_of_confidence_intervals_in_reporting x_X._Xx_x_x_x_x_x_x
+orthopaedic research orthopaedic o or ort orth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 9 .. 2 8 0 0 0 0 1 orthopaedic_research_findings._clin_orthop_relat_res. x_x_x._Xx_Xx_Xx_Xx.
+2009;467(12):3334-3339. doi:10.1007/s11999-009-0817-7. 2009;467(12):3334-3339. 2 20 200 2009 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 1 0 0 0 9 9 ;():-.:./---. 13 8 0 0 0 0 1 XXXX;XXX(XX):XXXX-XXXX._doi:XX.XXXX/sXXXXX-XXX-XXXX-X. d;d(d):d-d._x:d.d/xd-d-d-d.
+'Elderly' Patient 'elderly' ' 'E 'El 'Eld BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 10 10 '''' 4 10 0 0 0 0 1 'elderly'_patient_is_not_equal_to_'geriatric' 'Xx'_Xx_Xx_Xx_Xx_x_'Xx'
+Patient -the patient P Pa Pat Pati BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 10 - 1 8 0 0 0 0 1 patient_-the_people_XX_years_or_older Xx_-x_Xx_d_Xx_x_Xx
+Who Visit who W Wh Who Who BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 10 no 0 7 0 0 0 0 1 who_visit_our_department_of_plastic Xx_Xx_Xx_Xx_x_Xx
+Surgery Surgery surgery S Su Sur Surg BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 10 no 0 1 0 0 0 0 1 surgery Xx
+Makoto Sato, makoto M Ma Mak Mako BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 1 INITCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 ,,;, 4 10 0 0 0 0 1 makoto_sato,_md,_phd;_sasagu_yagi,_md Xx_Xx,_X,_XxX;_Xx_Xx,_X
+INTRODUCTION: Recently, introduction: I IN INT INTR BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 :,- 3 7 0 0 0 0 1 introduction:_recently,_in_the_developed_coun- X:_Xx,_x_x_x_x-
+tries led tries t tr tri trie BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 ,- 2 8 0 0 0 0 1 tries_led_by_the_oecd_members,_the_aging_of_popula- x_x_x_x_X_x,_x_x_x_x-
+tion is tion t ti tio tion BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 11 11 . 1 9 0 0 0 0 1 tion_is_remarkable._the_average_life_expectancy_continues x_x_x._Xx_x_x_x_x
+lengthening year lengthening l le len leng BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 . 1 10 0 0 0 0 1 lengthening_year_by_year._X_according_to_the_latest_statistics x_x_x_x._d_Xx_x_x_x_x
 

@@ -1,107 +1,107 @@
-COMPARISON BETWEEN comparison C CO COM COMP BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 9 0 0 0 0 1
-STRATEGIES FOR strategies S ST STR STRA BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1
-Djamel Hadbi djamel D Dj Dja Djam BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 *,**,*,*,**,** 14 10 0 0 0 0 1
-* Univ. * * * * * BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 0 *.,,-,,,,-, 11 10 0 0 0 0 1
-firstname.lastname@g2elab.grenoble-inp.fr firstname.lastname@g2elab.grenoble-inp.fr firstname.lastname@g2elab.grenoble-inp.fr f fi fir firs BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 1 0 0 0 ..-. 4 4 0 0 0 0 1
-** Université ** * ** ** ** BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 **,,--,,, 9 10 0 0 0 0 1
-firstname.lastname@laplace.univ-tlse.fr firstname.lastname@laplace.univ-tlse.fr firstname.lastname@laplace.univ-tlse.fr f fi fir firs BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 1 0 0 1 ..-. 4 4 0 0 0 0 1
-Abstract. Nowadays, abstract. A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 9 0 0 0 0 1
-weight network. weight w we wei weig BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 8 0 0 0 0 1
-optimization has optimization o op opt opti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 10 0 0 0 0 1
-of a of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 : 1 9 0 0 0 0 1
-illustrate methodological illustrate i il ill illu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 9 0 0 0 0 1
-the "cost the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 "". 3 9 0 0 0 0 1
-designers an designers d de des desi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 . 1 9 0 0 0 0 1
-Keywords: system keywords: K Ke Key Keyw BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 3 :,,,. 5 10 0 0 0 0 1
-INTRODUCTION INTRODUCTION introduction I IN INT INTR BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 2 4 no 0 10 0 0 0 0 1
-Modern engineering modern M Mo Mod Mode BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 4 , 1 8 0 0 0 0 1
-railway, aerospace railway, r ra rai rail BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ,[],[].,, 9 10 0 0 0 0 1
-those based those t th tho thos BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ,.- 3 9 0 0 0 0 1
-system is system s sy sys syst BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 : 1 9 0 0 0 0 1
-"mechanistic approach". "mechanistic " "m "me "mec BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 ""."" 5 9 0 0 0 0 1
-components of components c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 . 1 9 0 0 0 0 1
-results [2]. results r re res resu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 2 4 [].. 4 9 0 0 0 0 1
-This method this T Th Thi This BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 4 []. 3 9 0 0 0 0 1
-design imposes design d de des desi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ,, 2 9 0 0 0 0 1
-decision level decision d de dec deci BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 []. 3 9 0 0 0 0 1
-I. I. i. I I. I. I. BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 3 7 . 1 0 0 0 0 0 1
-DESIGN MODEL design D DE DES DESI BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 3 7 no 0 10 0 0 0 0 1
-Figure 1. figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 7 . 1 10 0 0 0 0 1
-Extended Pareto extended E Ex Ext Exte BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 7 (), 3 8 0 0 0 0 1
-each of each e ea eac each BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ,(..,, 6 9 0 0 0 0 1
-1). It 1). 1 1) 1). 1). BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 3 7 ).. 3 9 0 0 0 0 1
-(space solution) (space ( (s (sp (spa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 7 ().,: 5 9 0 0 0 0 1
-in a in i in in in BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 3 7 , 1 9 0 0 0 0 1
-functions of functions f fu fun func BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 -., 3 10 0 0 0 0 1
-describe couplings describe d de des desc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 .,,..(), 8 9 0 0 0 0 1
-frequency (f) frequency f fr fre freq BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ()(),() 7 8 0 0 0 0 1
-efficiency (K). efficiency e ef eff effi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ().-. 5 9 0 0 0 0 1
-Extended Pareto extended E Ex Ext Exte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 7 , 1 9 0 0 0 0 1
-of solutions of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ., 2 9 0 0 0 0 1
-is possible; is i is is is BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ; 1 8 0 0 0 0 1
-compatibility of compatibility c co com comp BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 . 1 3 0 0 0 0 1
-II. II. ii. I II II. II. BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 . 1 10 0 0 0 0 0
-DESIGN OF design D DE DES DESI BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 10 0 0 0 0 0
-Figure 2. figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 10 0 0 0 0 1
-Embedded electric embedded E Em Emb Embe BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 0 : 1 8 0 0 0 0 1
-issue is issue i is iss issu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ., 2 9 0 0 0 0 1
-related to related r re rel rela BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,"", 4 10 0 0 0 0 1
-voluntary limited voluntary v vo vol volu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 9 0 0 0 0 1
-generating channel, generating g ge gen gene BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,-., 4 9 0 0 0 0 1
-output filter. output o ou out outp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 .,. 3 9 0 0 0 0 1
-channel (especially channel c ch cha chan BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 (): 3 9 0 0 0 0 1
-goal is goal g go goa goal BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ;( 2 8 0 0 0 0 1
-harmonics are harmonics h ha har harm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ). 2 9 0 0 0 0 1
-single objective single s si sin sing BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 (). 3 8 0 0 0 0 1
-III. III. iii. I II III III. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 6 0 . 1 0 0 0 0 0 1
-QUALITATIVE COMPARISON qualitative Q QU QUA QUAL BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 6 0 no 0 2 0 0 0 0 1
-As shown as A As As As BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 3 (), 3 9 0 0 0 0 1
-methods, the methods, m me met meth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 , 1 9 0 0 0 0 1
-objective function objective o ob obj obje BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 ("") 4 8 0 0 0 0 1
-classical analysis classical c cl cla clas BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 . 1 2 0 0 0 0 1
-Collaboration level collaboration C Co Col Coll BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 3 no 0 9 0 0 0 0 1
-figure 2: figure f fi fig figu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 :,. 3 10 0 0 0 0 1
-The mapping the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 3 - 1 9 0 0 0 0 1
-(if there (if ( (i (if (if BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 3 (,). 4 9 0 0 0 0 1
-that subsystem that t th tha that BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 .' 2 9 0 0 0 0 1
-for the for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 ., 2 9 0 0 0 0 1
-low level low l lo low low BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 3 , 1 9 0 0 0 0 1
-more data more m mo mor more BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 . 1 8 0 0 0 0 1
-. . . . . . . BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 9 7 . 1 10 0 0 0 0 1
-Figure 3. figure F Fi Fig Figu BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 .( 2 10 0 0 0 0 1
-computation cost) computation c co com comp BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 ) 1 1 0 0 0 0 1
-CONCLUSION CONCLUSION conclusion C CO CON CONC BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 no 0 10 0 0 0 0 1
-Through our through T Th Thr Thro BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 , 1 9 0 0 0 0 1
-complex system: complex c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 :., 3 10 0 0 0 0 1
-design strategy design d de des desi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 no 0 9 0 0 0 0 1
-for industrial for f fo for for BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 . 1 4 0 0 0 0 1
-REFERENCES REFERENCES references R RE REF REFE BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 10 8 no 0 10 0 0 0 0 1
-[1] F. [1] [ [1 [1] [1] BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 8 [].-,"--",() 12 10 0 0 0 0 1
-l'Ecole Centrale l'ecole l l' l'E l'Ec BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 10 8 '. 2 2 0 0 0 0 1
-[2] X. [2] [ [2 [2] [2] BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 9 [].,"'',,,--- 13 10 0 0 0 0 1
-389-0. 389-0. 389-0. 3 38 389 389- BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 9 -. 2 0 0 0 0 0 1
-[3] H. [3] [ [3 [3] [3] BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 9 [].-,.,.," 10 10 0 0 0 0 1
-the Pareto the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 9 -",-( 5 9 0 0 0 0 1
-Computation), ID: computation), C Co Com Comp BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 10 9 ),:-. 5 4 0 0 0 0 1
-0,6 0,6 0,6 0 0, 0,6 0,6 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 10 , 1 10 0 0 0 0 1
-0,8 0,8 0,8 0 0, 0,8 0,8 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 10 , 1 10 0 0 0 0 1
-1 1 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 10 no 0 10 0 0 0 0 1
-1,2 1,2 1,2 1 1, 1,2 1,2 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 10 , 1 10 0 0 0 0 1
-W W w W W W W BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 11 11 no 0 2 0 0 0 0 1
-tot (kg) tot t to tot tot BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 () 2 10 0 0 0 0 1
-Simultaneous desigh simultaneous S Si Sim Simu BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 9 0 0 0 0 1
-Extended Pareto extended E Ex Ext Exte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1
-Mechanistic approach mechanistic M Me Mec Mech BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 no 0 7 0 0 0 0 1
-ma comb ma m ma ma ma BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1
-Collaboration level collaboration C Co Col Coll BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1
-Optimization cost optimization O Op Opt Opti BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1
-Simultaneous design simultaneous S Si Sim Simu BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1
-E. P. e. E E. E. E. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 .... 4 10 0 0 0 0 1
-Mechanistic Mechanistic mechanistic M Me Mec Mech BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1
-Approach Approach approach A Ap App Appr BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1
-High High high H Hi Hig High BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1
-Medium Medium medium M Me Med Medi BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1
-Minimal Minimal minimal M Mi Min Mini BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1
-1 2 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 11 no 0 5 0 0 0 0 1
-2 x 2 2 2 2 2 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1
+COMPARISON BETWEEN comparison C CO COM COMP BLOCKSTART PAGESTART NEWFONT HIGHERFONT 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 9 0 0 0 0 1 comparison_between_system_design_optimization X_X_X_X_X
+STRATEGIES FOR strategies S ST STR STRA BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 0 0 no 0 10 0 0 0 0 1 strategies_for_more_electric_aircraft_networks X_X_X_X_X_X
+Djamel Hadbi djamel D Dj Dja Djam BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 *,**,*,*,**,** 14 10 0 0 0 0 1 djamel_hadbi_*_,_**_,_nicolas_retière_*_,_frederic_wurtz_*_,_xavier_roboam_**_,_bruno_sareni_** Xx_Xx_*_,_*_,_Xx_Xx_*_,_Xx_Xx_*_,_Xx_Xx_*_,_Xx_Xx_*
+* Univ. * * * * * BLOCKSTART PAGEIN SAMEFONT LOWERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 0 0 *.,,-,,,,-, 11 10 0 0 0 0 1 *_univ._grenoble_alpes,_gXelab,_f-XXXXX_grenoble,_france,_cnrs,_gXelab,_f-XXXXX_grenoble,_france *_Xx._Xx_Xx,_XdXx,_X-d_Xx,_Xx,_X,_XdXx,_X-d_Xx,_Xx
+firstname.lastname@g2elab.grenoble-inp.fr firstname.lastname@g2elab.grenoble-inp.fr firstname.lastname@g2elab.grenoble-inp.fr f fi fir firs BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS CONTAINSDIGITS 0 0 0 0 0 0 1 0 0 0 ..-. 4 4 0 0 0 0 1 firstname.lastname@gXelab.grenoble-inp.fr x.x@xdx.x-x.x
+** Université ** * ** ** ** BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 1 **,,--,,, 9 10 0 0 0 0 1 **_université_de_toulouse,_laplace,_umr_cnrs-inpt-ups,_X_rue_camichel,_XXXXX_toulouse,_france *_Xx_x_Xx,_X,_X_X-X-X,_d_x_Xx,_d_Xx,_Xx
+firstname.lastname@laplace.univ-tlse.fr firstname.lastname@laplace.univ-tlse.fr firstname.lastname@laplace.univ-tlse.fr f fi fir firs BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 1 0 0 1 ..-. 4 4 0 0 0 0 1 firstname.lastname@laplace.univ-tlse.fr x.x@x.x-x.x
+Abstract. Nowadays, abstract. A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT HIGHERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 9 0 0 0 0 1 abstract._nowadays,_embedded_aircraft_system_contains_electrical_devices_which_must_cooperate_in_safe_and_light Xx._Xx,_x_x_x_x_x_x_x_x_x_x_x_x_x
+weight network. weight w we wei weig BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 8 0 0 0 0 1 weight_network._for_designing_such_systems,_different_local_strategies_have_been_developed_but_no_global x_x._Xx_x_x_x,_x_x_x_x_x_x_x_x_x
+optimization has optimization o op opt opti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 10 0 0 0 0 1 optimization_has_been_performed_so_far._in_this_paper,_we_present_and_compare_three_strategies_applied_to_the_sizing x_x_x_x_x_x._Xx_x_x,_x_x_x_x_x_x_x_x_x_x
+of a of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 : 1 9 0 0 0 0 1 of_a_whole_network_of_more_electric_aircraft:_a_simplified_case_study_with_only_two_components_is_considered_to x_x_x_x_x_x_x_x:_x_x_x_x_x_x_x_x_x_x_x
+illustrate methodological illustrate i il ill illu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ., 2 9 0 0 0 0 1 illustrate_methodological_issues._the_quality_of_the_solution_found_from_each_method_is_compared,_with_regards_to x_x_x._Xx_x_x_x_x_x_x_x_x_x_x,_x_x_x
+the "cost the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 "". 3 9 0 0 0 0 1 the_"cost_of_the_collaborative_approach"_and_the_volume_of_data_generation._this_comparison_should_provide_system x_"x_x_x_x_x"_x_x_x_x_x_x._Xx_x_x_x_x
+designers an designers d de des desi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 . 1 9 0 0 0 0 1 designers_an_evaluation_of_the_applicability_of_these_methods_according_to_the_nature_of_the_design_problem. x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x.
+Keywords: system keywords: K Ke Key Keyw BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 3 :,,,. 5 10 0 0 0 0 1 keywords:_system_design,_integrated_design,_multilevel_optimization,_embedded_electrical_system. Xx:_x_x,_x_x,_x_x,_x_x_x.
+INTRODUCTION INTRODUCTION introduction I IN INT INTR BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 2 4 no 0 10 0 0 0 0 1 introduction X
+Modern engineering modern M Mo Mod Mode BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 4 , 1 8 0 0 0 0 1 modern_engineering_products_are_becoming_increasingly_complex,_particularly_in_industries_such_as Xx_x_x_x_x_x_x,_x_x_x_x_x
+railway, aerospace railway, r ra rai rail BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ,[],[].,, 9 10 0 0 0 0 1 railway,_aerospace_and_automotive_[X],_[X]._conventionally,_expertise_and_classical_analysis_methods,_especially x,_x_x_x_[d],_[d]._Xx,_x_x_x_x_x,_x
+those based those t th tho thos BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ,.- 3 9 0 0 0 0 1 those_based_on_simulations_are_used,_aided_by_optimization_methods_in_some_part_of_the_process._each_sub- x_x_x_x_x_x,_x_x_x_x_x_x_x_x_x_x._Xx_x-
+system is system s sy sys syst BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 : 1 9 0 0 0 0 1 system_is_designed_separately_by_his_manufacturer_using_his_own_model_and_process:_this_method_is_called x_x_x_x_x_x_x_x_x_x_x_x_x:_x_x_x_x
+"mechanistic approach". "mechanistic " "m "me "mec BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 2 4 ""."" 5 9 0 0 0 0 1 "mechanistic_approach"._another_approach_called_"simultaneous_design"_may_be_developed_to_integrate_all_the "x_x"._Xx_x_x_"x_x"_x_x_x_x_x_x_x
+components of components c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 . 1 9 0 0 0 0 1 components_of_a_system_into_a_single_optimization._this_extreme_approach_requires_full_cooperation_for_best x_x_x_x_x_x_x_x._Xx_x_x_x_x_x_x_x
+results [2]. results r re res resu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 2 4 [].. 4 9 0 0 0 0 1 results_[X]._another_diametrically_opposite_approach_enables_to_design_a_system_with_a_minimal_collaboration. x_[d]._Xx_x_x_x_x_x_x_x_x_x_x_x_x.
+This method this T Th Thi This BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 4 []. 3 9 0 0 0 0 1 this_method_called_extended_pareto_fronts_was_developed_for_the_design_of_a_railway_application_[X]._industrial Xx_x_x_Xx_Xx_Xx_x_x_x_x_x_x_x_x_x_[d]._Xx
+design imposes design d de des desi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 ,, 2 9 0 0 0 0 1 design_imposes_other_constraints,_integration_of_a_large_scale_multidisciplinary_system,_privacy_issues_and x_x_x_x,_x_x_x_x_x_x_x,_x_x_x
+decision level decision d de dec deci BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 4 []. 3 9 0 0 0 0 1 decision_level_are_fundamental_criteria_to_elaborate_feasible_and_efficient_system_design_method_[X]. x_x_x_x_x_x_x_x_x_x_x_x_x_[d].
+I. I. i. I I. I. I. BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 3 7 . 1 0 0 0 0 0 1 i. X.
+DESIGN MODEL design D DE DES DESI BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 3 7 no 0 10 0 0 0 0 1 design_model_of_a_simplified_studied_case X_X_X_X_X_X_X
+Figure 1. figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 7 . 1 10 0 0 0 0 1 figure_X._design_of_an_actuator_by_extended_pareto_front_method Xx_d._Xx_x_x_x_x_Xx_Xx_Xx_Xx
+Extended Pareto extended E Ex Ext Exte BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 7 (), 3 8 0 0 0 0 1 extended_pareto_front_method_(epfm)_is_based_on_the_decomposition_of_a_system_in_several_devices, Xx_Xx_Xx_Xx_(X)_x_x_x_x_x_x_x_x_x_x_x,
+each of each e ea eac each BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ,(..,, 6 9 0 0 0 0 1 each_of_them_being_previously_optimized_separately,_only_coupled_by_global_variables_(i._e._i,_f,_v_in_the_figure x_x_x_x_x_x_x,_x_x_x_x_x_(x._x._X,_x,_X_x_x_x
+1). It 1). 1 1) 1). 1). BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 3 7 ).. 3 9 0 0 0 0 1 X)._it_intends_to_limit_the_communication_of_data_between_the_suppliers._only_extended_pareto_optimal_fronts d)._Xx_x_x_x_x_x_x_x_x_x_x._Xx_Xx_Xx_Xx_Xx
+(space solution) (space ( (s (sp (spa BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 7 ().,: 5 9 0 0 0 0 1 (space_solution)_are_provided_by_suppliers_to_the_system_designer._first,_a_necessary_condition_has_to_be_checked: (x_x)_x_x_x_x_x_x_x_x._Xx,_x_x_x_x_x_x_x:
+in a in i in in in BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 3 7 , 1 9 0 0 0 0 1 in_a_suitable_decomposition,_the_system_objective_function_has_to_be_calculated_by_means_of_the_objective x_x_x_x,_x_x_x_x_x_x_x_x_x_x_x_x_x
+functions of functions f fu fun func BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 -., 3 10 0 0 0 0 1 functions_of_sub-problems._if_so,_a_classification_of_all_problem_variables_allows_identifying_global_variables_that x_x_x-x._Xx_x,_x_x_x_x_x_x_x_x_x_x_x
+describe couplings describe d de des desc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 .,,..(), 8 9 0 0 0 0 1 describe_couplings_on_the_system._in_the_above_example,_there_are_n=X_couplings_variables,_i.e._current_(i), x_x_x_x_x._Xx_x_x_x,_x_x_X=d_x_x,_x.x._x_(X),
+frequency (f) frequency f fr fre freq BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ()(),() 7 8 0 0 0 0 1 frequency_(f)_and_voltage_(v)_of_the_bus,_completed_by_o=X_objective_functions_for_weight_(w)_and_device x_(x)_x_x_(X)_x_x_x,_x_x_X=d_x_x_x_x_(X)_x_x
+efficiency (K). efficiency e ef eff effi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ().-. 5 9 0 0 0 0 1 efficiency_(k)._so_a_n+o-dimension_solution_space_is_built_for_each_component_of_the_system._gathering_the x_(X)._Xx_x_X+X-x_x_x_x_x_x_x_x_x_x_x._Xx_x
+Extended Pareto extended E Ex Ext Exte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 7 , 1 9 0 0 0 0 1 extended_pareto_fronts_of_all_amenities,_the_system_manufacturer_shall_be_able_to_make_tradeoffs_within_the_sets Xx_Xx_Xx_x_x_x,_x_x_x_x_x_x_x_x_x_x_x_x
+of solutions of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ., 2 9 0 0 0 0 1 of_solutions_in_order_to_obtain_the_best_solution_at_the_system_level._of_course,_not_any_combination_of_equipment x_x_x_x_x_x_x_x_x_x_x_x_x._Xx_x,_x_x_x_x_x
+is possible; is i is is is BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 ; 1 8 0 0 0 0 1 is_possible;_the_manufacturer_must_be_careful_of_the_consistency_of_coupling_variables_that_ensure_the x_x;_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+compatibility of compatibility c co com comp BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 7 . 1 3 0 0 0 0 1 compatibility_of_the_chosen_amenities. x_x_x_x_x.
+II. II. ii. I II II. II. BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 5 0 . 1 10 0 0 0 0 0 ii. X.
+DESIGN OF design D DE DES DESI BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 10 0 0 0 0 0 design_of_a_simplified_embedded_electric_network X_X_X_X_X_X_X
+Figure 2. figure F Fi Fig Figu BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 10 0 0 0 0 1 figure_X._an_example_of_a_simplified_embedded_electric_network Xx_d._Xx_x_x_x_x_x_x_x
+Embedded electric embedded E Em Emb Embe BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 0 : 1 8 0 0 0 0 1 embedded_electric_networks_contain_a_high_number_of_sources_and_loads_connected_to_several_buses:_the Xx_x_x_x_x_x_x_x_x_x_x_x_x_x_x:_x
+issue is issue i is iss issu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ., 2 9 0 0 0 0 1 issue_is_then_to_analyze_applicability_of_optimization_methods_to_this_class_of_complex_system._in_our_study, x_x_x_x_x_x_x_x_x_x_x_x_x_x_x._Xx_x_x,
+related to related r re rel rela BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,"", 4 10 0 0 0 0 1 related_to_the_development_of_strategies_for_system_design,_we_initially_relied_on_a_"simplified"_network,_which_is x_x_x_x_x_x_x_x_x,_x_x_x_x_x_"x"_x,_x_x
+voluntary limited voluntary v vo vol volu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 . 1 9 0 0 0 0 1 voluntary_limited_to_a_single_load_in_order_to_establish_and_compare_optimization_methods._it_consists_of_a_single x_x_x_x_x_x_x_x_x_x_x_x_x_x._Xx_x_x_x_x
+generating channel, generating g ge gen gene BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ,-., 4 9 0 0 0 0 1 generating_channel,_connected_with_a_unique_non-linear_load._this_channel_includes_a_generator,_a_rectifier_and_an x_x,_x_x_x_x_x-x_x._Xx_x_x_x_x,_x_x_x_x
+output filter. output o ou out outp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 .,. 3 9 0 0 0 0 1 output_filter._the_load_comprises_an_actuator,_an_inverter_and_an_input_filter._we_investigate_the_design_of_this x_x._Xx_x_x_x_x,_x_x_x_x_x_x._Xx_x_x_x_x_x
+channel (especially channel c ch cha chan BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 (): 3 9 0 0 0 0 1 channel_(especially_the_filtering_device_sizing)_using_the_three_approaches_previously_presented:_the_optimization x_(x_x_x_x_x)_x_x_x_x_x_x:_x_x
+goal is goal g go goa goal BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ;( 2 8 0 0 0 0 1 goal_is_to_minimize_the_whole_network_weight_in_compliance_with_quality_standards;_(current_and_voltage x_x_x_x_x_x_x_x_x_x_x_x_x;_(x_x_x
+harmonics are harmonics h ha har harm BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 ). 2 9 0 0 0 0 1 harmonics_are_limited_to_a_maximum_threshold_in_a_frequency_band)._let_us_note_that_this_case_study_consists_of_a x_x_x_x_x_x_x_x_x_x_x)._Xx_x_x_x_x_x_x_x_x_x
+single objective single s si sin sing BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 0 (). 3 8 0 0 0 0 1 single_objective_optimization_for_which_the_previous_method_(epfm)_of_course_remains_applicable. x_x_x_x_x_x_x_x_(X)_x_x_x_x.
+III. III. iii. I II III III. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 6 0 . 1 0 0 0 0 0 1 iii. X.
+QUALITATIVE COMPARISON qualitative Q QU QUA QUAL BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 6 0 no 0 2 0 0 0 0 1 qualitative_comparison_of_results X_X_X_X
+As shown as A As As As BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 3 (), 3 9 0 0 0 0 1 as_shown_in_the_figure_X_(left_part),_the_values_of_the_objective_function_obtained_by_two_collaborative Xx_x_x_x_x_d_(x_x),_x_x_x_x_x_x_x_x_x_x
+methods, the methods, m me met meth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 , 1 9 0 0 0 0 1 methods,_the_simultaneous_design_approach_and_extended_pareto_front_method_are_better_than_the_value_of_the x,_x_x_x_x_x_Xx_Xx_Xx_Xx_x_x_x_x_x_x_x
+objective function objective o ob obj obje BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 ("") 4 8 0 0 0 0 1 objective_function_obtained_with_a_conventional_method_("mechanistic_approach")_based_on_expertise_and x_x_x_x_x_x_x_("x_x")_x_x_x_x
+classical analysis classical c cl cla clas BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 . 1 2 0 0 0 0 1 classical_analysis_methods. x_x_x.
+Collaboration level collaboration C Co Col Coll BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 3 no 0 9 0 0 0 0 1 collaboration_level_and_calculation_cost_are_conflicting_characteristics_as_illustrated_of_the_right_part_of Xx_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+figure 2: figure f fi fig figu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 :,. 3 10 0 0 0 0 1 figure_X:_higher_is_the_collaboration_level,_lower_the_necessary_computational_cost_to_reach_the_perfect_solution. x_d:_x_x_x_x_x,_x_x_x_x_x_x_x_x_x_x.
+The mapping the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 7 3 - 1 9 0 0 0 0 1 the_mapping_of_the_space_solution_of_a_sub-problem_grows_exponentially_with_the_number_of_coupling_variables Xx_x_x_x_x_x_x_x_x-x_x_x_x_x_x_x_x_x
+(if there (if ( (i (if (if BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 7 3 (,). 4 9 0 0 0 0 1 (if_there_are_p_values_of_m_input_global_variable,_p_m_optimizations_are_done)._high_level_of_collaboration_means (x_x_x_X_x_x_X_x_x_x,_X_X_x_x_x)._Xx_x_x_x_x
+that subsystem that t th tha that BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 .' 2 9 0 0 0 0 1 that_subsystem_manufacturers_need_to_share_and_communicate_their_models_for_the_design_process._so_it's_easy x_x_x_x_x_x_x_x_x_x_x_x_x_x._Xx_x'x_x
+for the for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 ., 2 9 0 0 0 0 1 for_the_system_integrator_to_improve_the_whole_system_generating_a_small_amount_of_data._on_the_other_side,_a x_x_x_x_x_x_x_x_x_x_x_x_x_x_x._Xx_x_x_x,_x
+low level low l lo low low BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 7 3 , 1 9 0 0 0 0 1 low_level_of_collaboration_means_that_each_subsystem_designer_keeps_its_design_secret,_so_that_he_must_provide x_x_x_x_x_x_x_x_x_x_x_x_x,_x_x_x_x_x
+more data more m mo mor more BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 7 3 . 1 8 0 0 0 0 1 more_data_to_aircraft_manufacturer_to_enable_him_finding_the_optimal_combination_of_subsystems. x_x_x_x_x_x_x_x_x_x_x_x_x_x.
+. . . . . . . BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 9 7 . 1 10 0 0 0 0 1 . .
+Figure 3. figure F Fi Fig Figu BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 .( 2 10 0 0 0 0 1 figure_X._comparison_of_optimization_approaches_in_terms_of_objective_function_and_costs_(collaboration_vs Xx_d._Xx_x_x_x_x_x_x_x_x_x_x_(x_x
+computation cost) computation c co com comp BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 1 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 ) 1 1 0 0 0 0 1 computation_cost) x_x)
+CONCLUSION CONCLUSION conclusion C CO CON CONC BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 no 0 10 0 0 0 0 1 conclusion X
+Through our through T Th Thr Thro BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 9 7 , 1 9 0 0 0 0 1 through_our_work,_we_managed_to_check_out_conditions_are_necessary_to_elaborate_a_design_strategy_for Xx_x_x,_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+complex system: complex c co com comp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 :., 3 10 0 0 0 0 1 complex_system:_collaboration_and_data_generation._thanks_to_this,_we_have_proposed_a_multilevel_collaborative x_x:_x_x_x_x._Xx_x_x,_x_x_x_x_x_x
+design strategy design d de des desi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 no 0 9 0 0 0 0 1 design_strategy_while_limiting_the_data_exchanged_by_the_designer_of_system_components_which_is_a_requirement x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+for industrial for f fo for for BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 7 . 1 4 0 0 0 0 1 for_industrial_systems_such_as_embedded_networks. x_x_x_x_x_x_x.
+REFERENCES REFERENCES references R RE REF REFE BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 1 0 ALLCAP NODIGIT 0 0 1 0 0 0 0 0 10 8 no 0 10 0 0 0 0 1 references X
+[1] F. [1] [ [1 [1] [1] BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 8 [].-,"--",() 12 10 0 0 0 0 1 [X]_f._moussouni-messad,_"multi-level_and_multi-objective_design_optimization_tools_for_handling_complex_systems",_these_(phd)_de [d]_X._Xx-Xx,_"Xx-x_x_x-x_x_x_x_x_x_x_x",_x_(X)_x
+l'Ecole Centrale l'ecole l l' l'E l'Ec BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 10 8 '. 2 2 0 0 0 0 1 l'ecole_centrale_de_lille_XXXX. x'Xx_Xx_x_Xx_d.
+[2] X. [2] [ [2 [2] [2] BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 9 [].,"'',,,--- 13 10 0 0 0 0 1 [X]_x._roboam_&_al,_"integrated_design_by_optimization_of_electrical_energy_systems'',_edited_by_iste_wiley,_XXXX,_isbn_XXX-X-XXXXX- [d]_X._Xx_&_x,_"Xx_x_x_x_x_x_x_x',_x_x_X_Xx,_d,_X_d-d-d-
+389-0. 389-0. 389-0. 3 38 389 389- BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 9 -. 2 0 0 0 0 0 1 XXX-X. d-d.
+[3] H. [3] [ [3 [3] [3] BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 9 [].-,.,.," 10 10 0 0 0 0 1 [X]_h._nguyen-huu_,_n._retière,_f._wutz,_"a_new_approach_for_building_the_global_pareto_border_of_an_electromagnetic_system_by_using [d]_X._Xx-Xx_,_X._Xx,_X._Xx,_"X_x_x_x_x_x_x_Xx_x_x_x_x_x_x_x
+the Pareto the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 9 -",-( 5 9 0 0 0 0 1 the_pareto_borders_of_each_sub-component_of_the_system",_ieee-cefc_XXXX_(international_conference_on_electromagnetic_field x_Xx_x_x_x_x-x_x_x_x",_X-X_d_(Xx_Xx_x_Xx_Xx
+Computation), ID: computation), C Co Com Comp BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 10 9 ),:-. 5 4 0 0 0 0 1 computation),_id:_ocX-X_in_proceeding_of_the_conference. Xx),_X:_Xd-d_x_x_x_x_x.
+0,6 0,6 0,6 0 0, 0,6 0,6 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 10 , 1 10 0 0 0 0 1 X,X d,d
+0,8 0,8 0,8 0 0, 0,8 0,8 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 10 , 1 10 0 0 0 0 1 X,X d,d
+1 1 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 10 no 0 10 0 0 0 0 1 X d
+1,2 1,2 1,2 1 1, 1,2 1,2 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 11 10 , 1 10 0 0 0 0 1 X,X d,d
+W W w W W W W BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 1 0 0 0 0 0 0 0 11 11 no 0 2 0 0 0 0 1 w X
+tot (kg) tot t to tot tot BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 11 11 () 2 10 0 0 0 0 1 tot_(kg) x_(x)
+Simultaneous desigh simultaneous S Si Sim Simu BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 9 0 0 0 0 1 simultaneous_desigh_aproach Xx_x_x
+Extended Pareto extended E Ex Ext Exte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1 extended_pareto_front_method Xx_Xx_Xx_Xx
+Mechanistic approach mechanistic M Me Mec Mech BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 no 0 7 0 0 0 0 1 mechanistic_approach Xx_x
+ma comb ma m ma ma ma BLOCKSTART PAGEIN SAMEFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1 ma_comb x_x
+Collaboration level collaboration C Co Col Coll BLOCKSTART PAGEIN NEWFONT LOWERFONT 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1 collaboration_level Xx_x
+Optimization cost optimization O Op Opt Opti BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 1 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1 optimization_cost Xx_x
+Simultaneous design simultaneous S Si Sim Simu BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1 simultaneous_design_approach Xx_x_x
+E. P. e. E E. E. E. BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 .... 4 10 0 0 0 0 1 e._p._f._m. X._X._X._X.
+Mechanistic Mechanistic mechanistic M Me Mec Mech BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1 mechanistic Xx
+Approach Approach approach A Ap App Appr BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1 approach Xx
+High High high H Hi Hig High BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1 high Xx
+Medium Medium medium M Me Med Medi BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1 medium Xx
+Minimal Minimal minimal M Mi Min Mini BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1 minimal Xx
+1 2 1 1 1 1 1 BLOCKSTART PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 11 no 0 5 0 0 0 0 1 X_X d_d
+2 x 2 2 2 2 2 BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 11 no 0 10 0 0 0 0 1 X_x_p_m d_x_X_X
 

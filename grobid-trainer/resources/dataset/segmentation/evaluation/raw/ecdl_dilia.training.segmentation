@@ -1,133 +1,133 @@
-DiLiA – dilia D Di DiL DiLi BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 – 1 10 0 0 0 0 1
-Kathrin Eichler, kathrin K Ka Kat Kath BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 0 ,,,, 4 10 0 0 0 0 1
-Schmeier, Kinga schmeier, S Sc Sch Schm BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 ,, 2 6 0 0 0 0 1
-DFKI GmbH, dfki D DF DFK DFKI BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 ,-,, 4 10 0 0 0 0 1
-firstname.lastname@dfki.de, firstname.lastname@dfki.de, firstname.lastname@dfki.de, f fi fir firs BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 .., 3 5 0 0 0 0 1
-DFKI home dfki D DF DFK DFKI BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 :://.. 6 7 0 0 0 0 1
-DiLiA home dilia D Di DiL DiLi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 :://.../ 8 8 0 0 0 0 1
-Abstract. In abstract. A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 .(). 4 9 0 0 0 0 1
-The system the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 - 1 9 0 0 0 0 1
-eral dimensions. eral e er era eral BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 1 .- 2 9 0 0 0 0 1
-ods are ods o od ods ods BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 1 . 1 9 0 0 0 0 1
-model has model m mo mod mode BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 no 0 9 0 0 0 0 1
-easy to easy e ea eas easy BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 .,() 4 9 0 0 0 0 1
-developed in developed d de dev deve BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ,- 2 9 0 0 0 0 1
-cludes the cludes c cl clu clud BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 1 ()– 3 10 0 0 0 0 1
-and multi and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 – 1 10 0 0 0 0 1
-on the on o on on on BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 .- 2 9 0 0 0 0 1
-tion approach tion t ti tio tion BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 1 –. 2 8 0 0 0 0 1
-1 Introduction 1 1 1 1 1 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 1 5 no 0 10 0 0 0 0 1
-Although the although A Al Alt Alth BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 5 , 1 9 0 0 0 0 1
-digital libraries, digital d di dig digi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 ,,, 3 9 0 0 0 0 1
-limit the limit l li lim limi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 (,,.) 5 10 0 0 0 0 1
-and only and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 -., 3 9 0 0 0 0 1
-not use not n no not not BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 . 1 9 0 0 0 0 1
-This is this T Th Thi This BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 5 ., 2 10 0 0 0 0 1
-metadata, a metadata, m me met meta BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 5 , 1 10 0 0 0 0 1
-of search of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 .,, 3 9 0 0 0 0 1
-navigating through navigating n na nav navi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 . 1 9 0 0 0 0 1
-DiLiA is dilia D Di DiL DiLi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 1 5 . 1 9 0 0 0 0 1
-that want that t th tha that BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 ,, 2 9 0 0 0 0 1
-users that users u us use user BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 . 1 9 0 0 0 0 1
-based on based b ba bas base BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 .. 2 9 0 0 0 0 1
-million abstracts million m mi mil mill BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 . 1 6 0 0 0 0 1
-2 Visualisation 2 2 2 2 2 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 2 10 no 0 10 0 0 0 0 1
-The development the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 10 no 0 9 0 0 0 0 1
-the visual the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 10 : 1 9 0 0 0 0 1
-are the are a ar are are BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 10 []. 3 10 0 0 0 0 1
-relational view, relational r re rel rela BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 ,; 2 10 0 0 0 0 1
-a hyperlink a a a a a BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 1 0 1 0 0 0 0 0 3 0 ; 1 9 0 0 0 0 1
-and tools and a an and and BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 (..,). 6 8 0 0 0 0 1
-Fig. 1. fig. F Fi Fig Fig. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 1 .. 2 10 0 0 0 0 1
-Figure 1 figure F Fi Fig Figu BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 1 (). 3 8 0 0 0 0 1
-right side right r ri rig righ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 .- 2 10 0 0 0 0 1
-ing an ing i in ing ing BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 3 1 . 1 10 0 0 0 0 1
-for stating for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1
-term for term t te ter term BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 ., 2 9 0 0 0 0 1
-add items add a ad add add BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 ,.., 4 9 0 0 0 0 1
-an author an a an an an BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1
-displayed (TopicView) displayed d di dis disp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 ()().- 6 9 0 0 0 0 1
-resented as resented r re res rese BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 (). 3 9 0 0 0 0 1
-documents common documents d do doc docu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 .- 2 8 0 0 0 0 1
-actively via actively a ac act acti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 --(,,) 6 8 0 0 0 0 1
-the TopicView the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 ([])., 6 9 0 0 0 0 1
-viewed and viewed v vi vie view BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1
-clustering the clustering c cl clu clus BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1
-right side right r ri rig righ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 , 1 9 0 0 0 0 1
-analytics on analytics a an ana anal BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1
-published in published p pu pub publ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1
-the bar the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 no 0 9 0 0 0 0 1
-topic or topic t to top topi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1
-1 http://project.carrot2.org/ 1 1 1 1 1 BLOCKSTART PAGEEND NEWFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 5 11 ://../ 6 10 0 0 0 0 1
-the possibility the t th the the BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 0 0 0 0 1
-the origin the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 0 0 0 1
-enables the enables e en ena enab BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 0 0 0 1
-spread. On spread. s sp spr spre BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 .,- 3 9 0 0 0 0 1
-ing for ing i in ing ing BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 5 0 ,- 2 10 0 0 0 0 1
-author and author a au aut auth BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 -. 2 5 0 0 0 0 1
-3 Information 3 3 3 3 3 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 6 2 no 0 10 0 0 0 0 1
-The goal the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 2 - 1 9 0 0 0 0 1
-cess of cess c ce ces cess BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 2 no 0 9 0 0 0 0 1
-in interactively in i in in in BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1
-Recogniser (GNR) recogniser R Re Rec Reco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 6 2 (), 3 9 0 0 0 0 1
-unsupervised, multi-word unsupervised, u un uns unsu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 2 ,-,.[]. 7 9 0 0 0 0 1
-of the of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 ,- 2 9 0 0 0 0 1
-matically generated matically m ma mat mati BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1
-whole document, whole w wh who whol BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 , 1 9 0 0 0 0 1
-methods. The methods. m me met meth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1
-as basis as a as as as BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 /. 2 10 0 0 0 0 1
-used the used u us use used BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 (),. 4 9 0 0 0 0 1
-For example, for F Fo For For BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 2 , 1 10 0 0 0 0 1
-processed separately processed p pr pro proc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 []., 4 9 0 0 0 0 1
-filter the filter f fi fil filt BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 .'[],- 6 10 0 0 0 0 1
-terms are terms t te ter term BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 , 1 9 0 0 0 0 1
-for all for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1
-are then are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1
-upper threshold upper u up upp uppe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1
-F-measure was f-measure F F- F-m F-me BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 6 2 -.,.. 5 9 0 0 0 0 1
-extracted TTs extracted e ex ext extr BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 . 1 7 0 0 0 0 1
-Fig. 2. fig. F Fi Fig Fig. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 10 .. 2 10 0 0 0 0 1
-2 An 2 2 2 2 2 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 8 10 -() 3 9 0 0 0 0 1
-68.2% of 68.2% 6 68 68. 68.2 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 10 ..( 3 9 0 0 0 0 1
-prepositional postmodifiers, prepositional p pr pre prep BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 10 ,). 3 10 0 0 0 0 1
-Fig. 2 fig. F Fi Fig Fig. BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 0 .. 2 9 0 0 0 0 1
-split into split s sp spl spli BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 . 1 9 0 0 0 0 1
-a termID. a a a a a BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 1 0 1 0 0 0 0 0 8 0 . 1 9 0 0 0 0 1
-are currently are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 ."" 3 10 0 0 0 0 1
-[5] and [5] [ [5 [5] [5] BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 [] 2 8 0 0 0 0 1
-sentence against. sentence s se sen sent BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 ."""" 5 9 0 0 0 0 1
-are parsed are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 ." 2 9 0 0 0 0 1
-relation" IE relation" r re rel rela BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 0 " 1 9 0 0 0 0 1
-are extracted. are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 .""[] 5 9 0 0 0 0 1
-collected by collected c co col coll BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 no 0 9 0 0 0 0 1
-at a at a at at at BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 . 1 2 0 0 0 0 1
-4 Conclusion 4 4 4 4 4 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 9 3 no 0 10 0 0 0 0 1
-In this in I In In In BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 9 3 , 1 10 0 0 0 0 1
-interface for interface i in int inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 3 . 1 9 0 0 0 0 1
-also integrates also a al als also BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 3 ( 1 9 0 0 0 0 1
-relations). Currently, relations). r re rel rela BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 3 )., 3 9 0 0 0 0 1
-for a for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 3 (.) 3 9 0 0 0 0 1
-for very for f fo for for BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 3 . 1 3 0 0 0 0 1
-Acknowledgment Acknowledgment acknowledgment A Ac Ack Ackn BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 5 no 0 10 0 0 0 0 1
-The research the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 5 - 1 10 0 0 0 0 1
-Fund (ERDF) fund F Fu Fun Fund BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 5 ()' 3 9 0 0 0 0 1
-grant number grant g gr gra gran BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 10 5 .. 2 8 0 0 0 0 1
-References References references R Re Ref Refe BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 6 no 0 10 0 0 0 0 1
-1. Marchionini, 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,.:-- 6 10 0 0 0 0 1
-encyclopedia. J. encyclopedia. e en enc ency BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 ......()()– 11 6 0 0 0 0 1
-2. Seifert, 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,.,,.:: 8 9 0 0 0 0 1
-for information for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 .,..,,..,,.,.: 14 8 0 0 0 0 1
-Information Communication, information I In Inf Info BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 6 ,() 3 4 0 0 0 0 1
-3. Eichler, 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,.,,.,,.:- 11 8 0 0 0 0 1
-extraction of extraction e ex ext extr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 ., 2 9 0 0 0 0 1
-T., Frommholz, t., T T. T., T., BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 10 6 .,,.,.:."", 11 9 0 0 0 0 1
-as part as a as as as BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 ,,(-) 5 6 0 0 0 0 1
-4. Luhn, 4. 4 4. 4. 4. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,..:. 6 9 0 0 0 0 1
-and Development and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 ()– 3 3 0 0 0 0 1
-5. Yan, 5. 5 5. 5. 5. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,.,,.,,.,,.,,.: 16 9 0 0 0 0 1
-Extraction by extraction E Ex Ext Extr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 6 .:. 3 8 0 0 0 0 1
-of ACL of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 ,,()– 5 8 0 0 0 0 1
-6. Wang, 6. 6 6. 6. 6. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,.,,.: 7 9 0 0 0 0 1
-method. In: method. m me met meth BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 .:.-,,() 8 6 0 0 0 0 1
-3 Online 3 3 3 3 3 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 11 :://.../ 8 10 0 0 0 0 1
+DiLiA – dilia D Di DiL DiLi BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 – 1 10 0 0 0 0 1 dilia_-the_digital_library_assistant XxXxX_-Xx_Xx_Xx_Xx
+Kathrin Eichler, kathrin K Ka Kat Kath BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 1 0 0 0 0 0 0 0 0 ,,,, 4 10 0 0 0 0 1 kathrin_eichler,_holmer_hemsen,_günter_neumann,_norbert_reithinger,_sven Xx_Xx,_Xx_Xx,_Xx_Xx,_Xx_Xx,_Xx
+Schmeier, Kinga schmeier, S Sc Sch Schm BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 ,, 2 6 0 0 0 0 1 schmeier,_kinga_schumacher,_and_inessa_seifert Xx,_Xx_Xx,_x_Xx_Xx
+DFKI GmbH, dfki D DF DFK DFKI BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 ,-,, 4 10 0 0 0 0 1 dfki_gmbh,_alt-moabit_XXc,_XXXXX_berlin,_germany X_XxX,_Xx-Xx_dx,_d_Xx,_Xx
+firstname.lastname@dfki.de, firstname.lastname@dfki.de, firstname.lastname@dfki.de, f fi fir firs BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 0 .., 3 5 0 0 0 0 1 firstname.lastname@dfki.de, x.x@x.x,
+DFKI home dfki D DF DFK DFKI BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 :://.. 6 7 0 0 0 0 1 dfki_home_page:_http://www.dfki.de X_x_x:_x:/x.x.x
+DiLiA home dilia D Di DiL DiLi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 0 0 :://.../ 8 8 0 0 0 0 1 dilia_home_page:_http://dilia.b.dfki.de/ XxXxX_x_x:_x:/x.x.x.x/
+Abstract. In abstract. A Ab Abs Abst BLOCKSTART PAGEIN NEWFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 .(). 4 9 0 0 0 0 1 abstract._in_this_paper_we_present_the_digital_library_assistant_(dilia). Xx._Xx_x_x_x_x_x_x_x_x_(XxXxX).
+The system the T Th The The BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 0 1 - 1 9 0 0 0 0 1 the_system_aims_at_augmenting_the_search_in_digital_libraries_in_sev- Xx_x_x_x_x_x_x_x_x_x_x_x-
+eral dimensions. eral e er era eral BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 1 .- 2 9 0 0 0 0 1 eral_dimensions._in_the_project_advanced_information_visualisation_meth- x_x._Xx_x_x_x_x_x_x-
+ods are ods o od ods ods BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 1 . 1 9 0 0 0 0 1 ods_are_developed_for_user_controlled_interactive_search._the_interaction x_x_x_x_x_x_x_x._Xx_x
+model has model m mo mod mode BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 no 0 9 0 0 0 0 1 model_has_been_designed_in_a_way_that_it_is_transparent_to_the_user_and x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+easy to easy e ea eas easy BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 .,() 4 9 0 0 0 0 1 easy_to_use._in_addition,_information_extraction_(ie)_methods_have_been x_x_x._Xx_x,_x_x_(X)_x_x_x
+developed in developed d de dev deve BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 ,- 2 9 0 0 0 0 1 developed_in_dilia_to_make_the_content_more_easily_accessible,_this_in- x_x_XxXxX_x_x_x_x_x_x_x,_x_x-
+cludes the cludes c cl clu clud BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 1 ()– 3 10 0 0 0 0 1 cludes_the_identification_and_extraction_of_technical_terms_(tts)_-single x_x_x_x_x_x_x_x_(Xx)_-x
+and multi and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 – 1 10 0 0 0 0 1 and_multi_word_terms_-as_well_as_the_extraction_of_binary_relations_based x_x_x_x_-x_x_x_x_x_x_x_x_x
+on the on o on on on BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 0 1 .- 2 9 0 0 0 0 1 on_the_extracted_terms._in_dilia_we_follow_a_hybrid_information_extrac- x_x_x_x._Xx_XxXxX_x_x_x_x_x_x-
+tion approach tion t ti tio tion BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 0 1 –. 2 8 0 0 0 0 1 tion_approach_-a_combination_of_metadata_and_document_processing. x_x_-x_x_x_x_x_x_x.
+1 Introduction 1 1 1 1 1 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 1 5 no 0 10 0 0 0 0 1 X_introduction d_Xx
+Although the although A Al Alt Alth BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 5 , 1 9 0 0 0 0 1 although_the_content_of_digital_libraries_is_growing_rapidly,_popular_portals_for Xx_x_x_x_x_x_x_x_x,_x_x_x
+digital libraries, digital d di dig digi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 ,,, 3 9 0 0 0 0 1 digital_libraries,_such_as_google_scholar,_citeulike,_acm_digital_library_still x_x,_x_x_Xx_Xx,_Xx,_X_x_x_x
+limit the limit l li lim limi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 (,,.) 5 10 0 0 0 0 1 limit_the_search_options_to_a_small_set_of_meta_labels_(such_as_author,_title,_etc.) x_x_x_x_x_x_x_x_x_x_x_(x_x_x,_x,_x.)
+and only and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 -., 3 9 0 0 0 0 1 and_only_provide_a_limited_text-based_search_interface._so_far,_these_portals_do x_x_x_x_x_x-x_x_x._Xx_x,_x_x_x
+not use not n no not not BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 . 1 9 0 0 0 0 1 not_use_any_elaborated_visualisation_techniques_for_presenting_the_search_results. x_x_x_x_x_x_x_x_x_x_x.
+This is this T Th Thi This BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 1 5 ., 2 10 0 0 0 0 1 this_is_problematic_in_two_ways._firstly,_since_the_search_options_are_restricted_to Xx_x_x_x_x_x._Xx,_x_x_x_x_x_x_x
+metadata, a metadata, m me met meta BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 1 5 , 1 10 0 0 0 0 1 metadata,_a_search_query_that_is_not_specific_enough_will_easily_lead_to_a_long_list x,_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+of search of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 .,, 3 9 0 0 0 0 1 of_search_results._secondly,_since_no_elaborated_visualisation_techniques_are_used, x_x_x._Xx,_x_x_x_x_x_x_x,
+navigating through navigating n na nav navi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 . 1 9 0 0 0 0 1 navigating_through_the_search_result_is_difficult_and_time_consuming._the_goal_of x_x_x_x_x_x_x_x_x_x._Xx_x_x
+DiLiA is dilia D Di DiL DiLi BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 1 5 . 1 9 0 0 0 0 1 dilia_is_to_go_beyond_this_level_of_information_access._we_especially_target_users XxXxX_x_x_x_x_x_x_x_x_x._Xx_x_x_x
+that want that t th tha that BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 ,, 2 9 0 0 0 0 1 that_want_to_interactively_explore_the_content_of_the_digital_library,_for_example, x_x_x_x_x_x_x_x_x_x_x,_x_x,
+users that users u us use user BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 . 1 9 0 0 0 0 1 users_that_want_to_investigate_a_new_research_area._the_dilia_demonstrator_is x_x_x_x_x_x_x_x_x._Xx_XxXxX_x_x
+based on based b ba bas base BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 .. 2 9 0 0 0 0 1 based_on_real_data_in_the_computer_science_domain._the_database_contains_X.X x_x_x_x_x_x_x_x_x._Xx_x_x_d.d
+million abstracts million m mi mil mill BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 1 5 . 1 6 0 0 0 0 1 million_abstracts_with_corresponding_metadata_from_dblp. x_x_x_x_x_x_X.
+2 Visualisation 2 2 2 2 2 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 2 10 no 0 10 0 0 0 0 1 X_visualisation d_Xx
+The development the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 2 10 no 0 9 0 0 0 0 1 the_development_of_the_user_interface_has_been_led_by_the_design_principle_that Xx_x_x_x_x_x_x_x_x_x_x_x_x_x
+the visual the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 10 : 1 9 0 0 0 0 1 the_visual_representations_should_provide_clues:_what_can_be_done_next_and_what x_x_x_x_x_x:_x_x_x_x_x_x_x
+are the are a ar are are BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 2 10 []. 3 10 0 0 0 0 1 are_the_possible_directions_for_further_search_[X]._the_user_interface_consists_of_a x_x_x_x_x_x_x_[d]._Xx_x_x_x_x_x
+relational view, relational r re rel rela BLOCKSTART PAGESTART NEWFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 0 ,; 2 10 0 0 0 0 1 relational_view,_visualising_relations_between_the_search_queries_the_user_specifies; x_x,_x_x_x_x_x_x_x_x_x;
+a hyperlink a a a a a BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 1 0 1 0 0 0 0 0 3 0 ; 1 9 0 0 0 0 1 a_hyperlink_activated_list_of_search_results_with_detailed_information_on_each_item; x_x_x_x_x_x_x_x_x_x_x_x_x;
+and tools and a an and and BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 0 (..,). 6 8 0 0 0 0 1 and_tools_(e.g.,_bar_charts)_for_a_flexible_analysis_of_the_search_results. x_x_(x.x.,_x_x)_x_x_x_x_x_x_x_x.
+Fig. 1. fig. F Fi Fig Fig. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 1 .. 2 10 0 0 0 0 1 fig._X._user_interface_of_the_dilia_demonstrator Xx._d._Xx_x_x_x_XxXxX_x
+Figure 1 figure F Fi Fig Figu BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 3 1 (). 3 8 0 0 0 0 1 figure_X_shows_the_user_interface_(ui)_of_the_dilia_demonstrator._on_the Xx_d_x_x_x_x_(X)_x_x_XxXxX_x._Xx_x
+right side right r ri rig righ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 .- 2 10 0 0 0 0 1 right_side_of_the_ui_the_search_panel_with_the_search_result_list_is_located._select- x_x_x_x_X_x_x_x_x_x_x_x_x_x_x._Xx-
+ing an ing i in ing ing BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 3 1 . 1 10 0 0 0 0 1 ing_an_item_in_the_result_set_shows_its_metadata._users_have_different_possibilities x_x_x_x_x_x_x_x_x_x._Xx_x_x_x
+for stating for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1 for_stating_a_search_query._the_search_panel_allows_the_user_to_enter_a_search x_x_x_x_x._Xx_x_x_x_x_x_x_x_x_x
+term for term t te ter term BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 ., 2 9 0 0 0 0 1 term_for_searching_in_the_digital_libraries_metadata._in_addition,_the_user_can x_x_x_x_x_x_x_x._Xx_x,_x_x_x
+add items add a ad add add BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 ,.., 4 9 0 0 0 0 1 add_items_from_the_hyperlink_activated_search_result_list,_e.g.,_a_keyword_or x_x_x_x_x_x_x_x_x,_x.x.,_x_x_x
+an author an a an an an BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1 an_author_name._on_the_left_side_of_the_ui_relations_between_search_queries_are x_x_x._Xx_x_x_x_x_x_X_x_x_x_x_x
+displayed (TopicView) displayed d di dis disp BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 ()().- 6 9 0 0 0 0 1 displayed_(topicview)_in_form_of_a_graph_(topicgraph)._each_search_topic_is_rep- x_(XxXx)_x_x_x_x_x_(XxXx)._Xx_x_x_x_x-
+resented as resented r re res rese BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 (). 3 9 0 0 0 0 1 resented_as_a_topicblob_(node)._edges_between_the_topicblobs_show_the_number x_x_x_XxXx_(x)._Xx_x_x_XxXx_x_x_x
+documents common documents d do doc docu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 .- 2 8 0 0 0 0 1 documents_common_in_both_topicblobs._the_topicblobs_can_be_combined_inter- x_x_x_x_XxXx._Xx_XxXx_x_x_x_x-
+actively via actively a ac act acti BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 --(,,) 6 8 0 0 0 0 1 actively_via_drag-and-drop_on_boolean_operators_(and,_or,_not)_included_in x_x_x-x-x_x_x_x_(X,_X,_X)_x_x
+the TopicView the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 ([])., 6 9 0 0 0 0 1 the_topicview_(for_details_see_[X])._for_each_topicblob_in_focus,_subtopics_can_be x_XxXx_(x_x_x_[d])._Xx_x_XxXx_x_x,_x_x_x
+viewed and viewed v vi vie view BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1 viewed_and_selected._the_subtopics_are_automatically_generated_by_dynamically x_x_x._Xx_x_x_x_x_x_x
+clustering the clustering c cl clu clus BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1 clustering_the_document_abstracts_using_the_carrot_X_clustering_engine_X_._on_the x_x_x_x_x_x_Xx_d_Xx_x_d_._Xx_x
+right side right r ri rig righ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 , 1 9 0 0 0 0 1 right_side_of_the_ui_the_user_can_also_switch_to_various_views,_supporting_visual x_x_x_x_X_x_x_x_x_x_x_x_x,_x_x
+analytics on analytics a an ana anal BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1 analytics_on_the_data._the_bar_chart_view_shows_how_many_documents_have_been x_x_x_x._Xx_x_x_x_x_x_x_x_x_x
+published in published p pu pub publ BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1 published_in_a_specific_year_for_the_selected_topic._depending_on_the_curve_that x_x_x_x_x_x_x_x_x._Xx_x_x_x_x
+the bar the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 no 0 9 0 0 0 0 1 the_bar_chart_forms_the_user_might_be_able_to_see_if_a_research_topic_is_a_hot x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+topic or topic t to top topi BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 3 1 . 1 9 0 0 0 0 1 topic_or_if_few_papers_have_been_published_on_the_topic_lately._the_user_has_also x_x_x_x_x_x_x_x_x_x_x_x._Xx_x_x_x
+1 http://project.carrot2.org/ 1 1 1 1 1 BLOCKSTART PAGEEND NEWFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 5 11 ://../ 6 10 0 0 0 0 1 X_http://project.carrotX.org/ d_x:/x.xd.x/
+the possibility the t th the the BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 . 1 9 0 0 0 0 1 the_possibility_to_use_a_heatmap_view._the_heatmap_shows_using_a_world_map x_x_x_x_x_x_x._Xx_x_x_x_x_x_x
+the origin the t th the the BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 0 0 0 1 the_origin_of_the_publications_about_the_topic_and_how_it_emerged_over_time_and x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+enables the enables e en ena enab BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 no 0 9 0 0 0 0 1 enables_the_user_to_see_where_in_the_world_a_research_topic_started_and_how_it x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x
+spread. On spread. s sp spr spre BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 .,- 3 9 0 0 0 0 1 spread._on_the_left_side_of_the_ui_the_user_can_switch_to_an_author_graph,_show- x._Xx_x_x_x_x_x_X_x_x_x_x_x_x_x_x,_x-
+ing for ing i in ing ing BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 0 0 0 0 0 0 5 0 ,- 2 10 0 0 0 0 1 ing_for_a_selected_publication_the_author,_the_co-authors_and_the_publications_of x_x_x_x_x_x_x,_x_x-x_x_x_x_x
+author and author a au aut auth BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 5 0 -. 2 5 0 0 0 0 1 author_and_co-author_and_to_navigate_further. x_x_x-x_x_x_x_x.
+3 Information 3 3 3 3 3 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 6 2 no 0 10 0 0 0 0 1 X_information_extraction d_Xx_Xx
+The goal the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 2 - 1 9 0 0 0 0 1 the_goal_of_ie_in_dilia_is_on_one_hand_to_support_digital_libraries_in_the_pro- Xx_x_x_X_x_XxXxX_x_x_x_x_x_x_x_x_x_x_x-
+cess of cess c ce ces cess BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 2 no 0 9 0 0 0 0 1 cess_of_making_available_new_material_and_on_the_other_hand_to_support_users x_x_x_x_x_x_x_x_x_x_x_x_x_x
+in interactively in i in in in BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1 in_interactively_exploring_the_content._we_have_developed_a_generalised_name x_x_x_x_x._Xx_x_x_x_Xx_Xx
+Recogniser (GNR) recogniser R Re Rec Reco BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 6 2 (), 3 9 0 0 0 0 1 recogniser_(gnr)_for_identifying_domain_independent,_fully_automatically_and Xx_(X)_x_x_x_x,_x_x_x
+unsupervised, multi-word unsupervised, u un uns unsu BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 2 ,-,.[]. 7 9 0 0 0 0 1 unsupervised,_multi-word_technical_terms,_cf._[X]._processing_only_the_abstracts x,_x-x_x_x,_x._[d]._Xx_x_x_x
+of the of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 ,- 2 9 0 0 0 0 1 of_the_documents,_the_current_prototype_contains_these_technical_terms_as_auto- x_x_x,_x_x_x_x_x_x_x_x_x-
+matically generated matically m ma mat mati BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1 matically_generated_list_of_keywords._based_on_the_identification_of_tts_in_the x_x_x_x_x._Xx_x_x_x_x_Xx_x_x
+whole document, whole w wh who whol BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 , 1 9 0 0 0 0 1 whole_document,_we_are_currently_working_on_unsupervised_relation_extraction x_x,_x_x_x_x_x_x_x_x
+methods. The methods. m me met meth BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1 methods._the_extracted_relations_can_be_used_for_advanced_search_and_also_serve x._Xx_x_x_x_x_x_x_x_x_x_x_x
+as basis as a as as as BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 /. 2 10 0 0 0 0 1 as_basis_for_clustering_similar_relations/documents._for_identifying_the_tts_X_we x_x_x_x_x_x/x._Xx_x_x_Xx_d_x
+used the used u us use used BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 (),. 4 9 0 0 0 0 1 used_the_nominal_group_(ng)_chunker_of_the_gnr,_but_the_output_was_modified. x_x_x_x_(X)_x_x_x_X,_x_x_x_x_x.
+For example, for F Fo For For BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 6 2 , 1 10 0 0 0 0 1 for_example,_coordinated_phrases_had_to_be_split_or_text_in_parenthesis_had_to_be Xx_x,_x_x_x_x_x_x_x_x_x_x_x_x_x
+processed separately processed p pr pro proc BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 []., 4 9 0 0 0 0 1 processed_separately_[X]._since_not_every_ng_is_a_tt,_we_needed_to_find_a_way_to x_x_[d]._Xx_x_x_X_x_x_X,_x_x_x_x_x_x_x
+filter the filter f fi fil filt BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 .'[],- 6 10 0 0 0 0 1 filter_the_ngs._inspired_by_luhn's_findings_[X],_who_suggested_that_mid-frequency x_x_Xx._Xx_x_Xx'x_x_[d],_x_x_x_x-x
+terms are terms t te ter term BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 , 1 9 0 0 0 0 1 terms_are_the_ones_that_best_indicate_the_topic_of_a_document,_frequency_scores x_x_x_x_x_x_x_x_x_x_x_x,_x_x
+for all for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1 for_all_ngs_using_the_live_search_api_from_microsoft_are_retrieved._the_ngs x_x_Xx_x_x_Xx_Xx_X_x_Xx_x_x._Xx_Xx
+are then are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1 are_then_filtered_using_an_upper_and_lower_threshold._we_found_out_that_the x_x_x_x_x_x_x_x_x._Xx_x_x_x_x
+upper threshold upper u up upp uppe BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 . 1 9 0 0 0 0 1 upper_threshold_is_domain_dependent._for_computer_science_documents_the_best x_x_x_x_x._Xx_x_x_x_x_x
+F-measure was f-measure F F- F-m F-me BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 0 0 0 0 0 0 6 2 -.,.. 5 9 0 0 0 0 1 f-measure_was_achieved_with_a_threshold_of_XX_mio.,_for_biology_X.X_mio._the X-x_x_x_x_x_x_x_d_x.,_x_x_d.d_x._Xx
+extracted TTs extracted e ex ext extr BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 6 2 . 1 7 0 0 0 0 1 extracted_tts_serve_as_the_basis_for_relation_extraction. x_Xx_x_x_x_x_x_x_x.
+Fig. 2. fig. F Fi Fig Fig. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 10 .. 2 10 0 0 0 0 1 fig._X._information_extraction_data_flow_in_dilia Xx._d._Xx_x_x_x_x_XxXxX
+2 An 2 2 2 2 2 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 8 10 -() 3 9 0 0 0 0 1 X_an_evaluation_on_a_hand-annotated_computer_science_corpus_(dblp)_showed_that d_Xx_x_x_x_x-x_x_x_x_(X)_x_x
+68.2% of 68.2% 6 68 68. 68.2 BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 10 ..( 3 9 0 0 0 0 1 XX.X%_of_the_ngs_were_identified_completely_and_XX.X%_partially_(caused_by_missing d.d%_x_x_Xx_x_x_x_x_d.d%_x_(x_x_x
+prepositional postmodifiers, prepositional p pr pre prep BLOCKEND PAGEEND SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 10 ,). 3 10 0 0 0 0 1 prepositional_postmodifiers,_additional_premodifiers_and_appositive_constructions). x_x,_x_x_x_x_x).
+Fig. 2 fig. F Fi Fig Fig. BLOCKSTART PAGESTART NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 8 0 .. 2 9 0 0 0 0 1 fig._X_shows_the_information_flow._for_the_ie_process_all_documents_are_first Xx._d_x_x_x_x._Xx_x_X_x_x_x_x_x
+split into split s sp spl spli BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 . 1 9 0 0 0 0 1 split_into_sentences._the_identified_tts_are_then_replaced_in_each_sentence_with x_x_x._Xx_x_Xx_x_x_x_x_x_x_x
+a termID. a a a a a BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 1 0 1 0 0 0 0 0 8 0 . 1 9 0 0 0 0 1 a_termid._three_different_binary_relation_strategies_have_been_implemented_and x_xX._Xx_x_x_x_x_x_x_x_x
+are currently are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 ."" 3 10 0 0 0 0 1 are_currently_being_evaluated._the_first_strategy_"surface_patterns"_is_inspired_by x_x_x_x._Xx_x_x_"x_x"_x_x_x
+[5] and [5] [ [5 [5] [5] BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 8 0 [] 2 8 0 0 0 0 1 [X]_and_uses_the_following_pattern_<termidX>string<termidX>_to_match_each [d]_x_x_x_x_x_<XxXd>x<XxXd>_x_x_x
+sentence against. sentence s se sen sent BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 ."""" 5 9 0 0 0 0 1 sentence_against._for_"verb_relations"_and_"skeletons"_the_modified_sentences x_x._Xx_"Xx_x"_x_"Xx"_x_x_x
+are parsed are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 ." 2 9 0 0 0 0 1 are_parsed_with_the_stanford_parser_with_dependency_tree_output._in_the_"verb x_x_x_x_Xx_Xx_x_x_x_x._Xx_x_"Xx
+relation" IE relation" r re rel rela BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 8 0 " 1 9 0 0 0 0 1 relation"_ie_method_the_verb_node_and_direct_neighbour_nodes_containing_tts x"_X_x_x_x_x_x_x_x_x_x_Xx
+are extracted. are a ar are are BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 .""[] 5 9 0 0 0 0 1 are_extracted._in_the_"skeleton"_approach_[X]_the_relation_consists_of_information x_x._Xx_x_"Xx"_x_[d]_x_x_x_x_x
+collected by collected c co col coll BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 no 0 9 0 0 0 0 1 collected_by_going_up_the_dependency_tree_starting_from_pairs_of_tts_and_ending x_x_x_x_x_x_x_x_x_x_x_Xx_x_x
+at a at a at at at BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 8 0 . 1 2 0 0 0 0 1 at_a_common_root_node. x_x_x_x_x.
+4 Conclusion 4 4 4 4 4 BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 9 3 no 0 10 0 0 0 0 1 X_conclusion_and_future_work d_Xx_x_Xx_Xx
+In this in I In In In BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 1 1 0 0 0 0 0 9 3 , 1 10 0 0 0 0 1 in_this_paper_we_presented_the_dilia_demonstrator_X_,_which_provides_a_novel_user Xx_x_x_x_x_x_XxXxX_x_d_,_x_x_x_x_x
+interface for interface i in int inte BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 3 . 1 9 0 0 0 0 1 interface_for_interactively_navigating_in_a_digital_library_database._the_system x_x_x_x_x_x_x_x_x._Xx_x
+also integrates also a al als also BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 3 ( 1 9 0 0 0 0 1 also_integrates_ie_methods_(automatic_extraction_of_technical_terms_and_binary x_x_X_x_(x_x_x_x_x_x_x
+relations). Currently, relations). r re rel rela BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 0 0 0 0 0 0 9 3 )., 3 9 0 0 0 0 1 relations)._currently,_we_are_working_on_the_implementation_of_the_dilia_system x)._Xx,_x_x_x_x_x_x_x_x_XxXxX_x
+for a for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 3 (.) 3 9 0 0 0 0 1 for_a_touchmaster_touch_table_(X_x_X.XXm)_and_investigate_clustering_algorithms x_x_Xx_x_x_(d_x_d.dx)_x_x_x_x
+for very for f fo for for BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 9 3 . 1 3 0 0 0 0 1 for_very_large_data_sets. x_x_x_x_x.
+Acknowledgment Acknowledgment acknowledgment A Ac Ack Ackn BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 5 no 0 10 0 0 0 0 1 acknowledgment Xx
+The research the T Th The The BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 5 - 1 10 0 0 0 0 1 the_research_project_dilia_is_co-funded_by_the_european_regional_development Xx_x_x_XxXxX_x_x-x_x_x_Xx_Xx_Xx
+Fund (ERDF) fund F Fu Fun Fund BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 5 ()' 3 9 0 0 0 0 1 fund_(erdf)_in_context_of_investitionsbank_berlin's_profit_program_under Xx_(X)_x_x_x_Xx_Xx'x_XxX_x_x
+grant number grant g gr gra gran BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 1 1 0 0 0 0 0 10 5 .. 2 8 0 0 0 0 1 grant_number_XXXXXXXX._we_gratefully_acknowledge_this_support. x_x_d._Xx_x_x_x_x.
+References References references R Re Ref Refe BLOCKSTART PAGEIN NEWFONT HIGHERFONT 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 6 no 0 10 0 0 0 0 1 references Xx
+1. Marchionini, 1. 1 1. 1. 1. BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,.:-- 6 10 0 0 0 0 1 X._marchionini,_g.:_information-seeking_strategies_of_novices_using_a_full-text_electronic d._Xx,_X.:_Xx-x_x_x_x_x_x_x-x_x
+encyclopedia. J. encyclopedia. e en enc ency BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 ......()()– 11 6 0 0 0 0 1 encyclopedia._j._am._soc._inf._sci._XX(X)_(XXXX)_XX_-XX x._X._Xx._Xx._Xx._Xx._d(d)_(d)_d_-d
+2. Seifert, 2. 2 2. 2. 2. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,.,,.:: 8 9 0 0 0 0 1 X._seifert,_i.,_kruppa,_m.:_a_pool_of_topics:_interactive_relational_topic_visualization d._Xx,_X.,_Xx,_X.:_X_x_x_x:_Xx_x_x_x
+for information for f fo for for BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 .,..,,..,,.,.: 14 8 0 0 0 0 1 for_information_discovery._in_huang,_m.l.,_nguyen,_q.v.,_zhang,_k.,_eds.:_visual x_x_x._Xx_Xx,_X.X.,_Xx,_X.X.,_Xx,_X.,_x.:_Xx
+Information Communication, information I In Inf Info BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 6 ,() 3 4 0 0 0 0 1 information_communication,_springer_(XXXX) Xx_Xx,_Xx_(d)
+3. Eichler, 3. 3 3. 3. 3. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,.,,.,,.:- 11 8 0 0 0 0 1 X._eichler,_k.,_hemsen,_h.,_neumann,_g.:_unsupervised_and_domain-independent d._Xx,_X.,_Xx,_X.,_Xx,_X.:_Xx_x_x-x
+extraction of extraction e ex ext extr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 ., 2 9 0 0 0 0 1 extraction_of_technical_terms_from_scientific_articles_in_digital_libraries._in_mandl, x_x_x_x_x_x_x_x_x_x._Xx_Xx,
+T., Frommholz, t., T T. T., T., BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP NODIGIT 0 0 0 0 0 0 0 0 10 6 .,,.,.:."", 11 9 0 0 0 0 1 t.,_frommholz,_i.,_eds.:_proc._of_the_workshop_"information_retrieval",_organized X.,_Xx,_X.,_x.:_Xx._x_x_Xx_"Xx_Xx",_x
+as part as a as as as BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 ,,(-) 5 6 0 0 0 0 1 as_part_of_lwa,_darmstadt,_germany_(XX-XX_september_XXXX) x_x_x_X,_Xx,_Xx_(d-d_Xx_d)
+4. Luhn, 4. 4 4. 4. 4. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,..:. 6 9 0 0 0 0 1 X._luhn,_h.p.:_the_automatic_creation_of_literature_abstracts._ibm_journal_of_research d._Xx,_X.X.:_Xx_x_x_x_x_x._X_Xx_x_Xx
+and Development and a an and and BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 ()– 3 3 0 0 0 0 1 and_development_X_(XXXX)_XXX-XXX x_Xx_d_(d)_d-d
+5. Yan, 5. 5 5. 5. 5. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,.,,.,,.,,.,,.: 16 9 0 0 0 0 1 X._yan,_y.,_okazaki,_n.,_matsuo,_y.,_yang,_z.,_ishizuka,_m.:_unsupervised_relation d._Xx,_X.,_Xx,_X.,_Xx,_X.,_Xx,_X.,_Xx,_X.:_Xx_Xx
+Extraction by extraction E Ex Ext Extr BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 INITCAP NODIGIT 0 0 1 0 0 0 0 0 10 6 .:. 3 8 0 0 0 0 1 extraction_by_mining_wikipedia_texts_using_information_from_theweb._in:_proc. Xx_x_Xx_Xx_Xx_Xx_Xx_x_xXx._Xx:_Xx.
+of ACL of o of of of BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 ,,()– 5 8 0 0 0 0 1 of_acl_and_the_Xth_ijcnlp_of_the_afnlp,_suntec,_singapore_(XXXX)_XXXX-XXXX x_X_x_x_dx_X_x_x_X,_Xx,_Xx_(d)_d-d
+6. Wang, 6. 6 6. 6. 6. BLOCKIN PAGEIN SAMEFONT SAMEFONTSIZE 0 0 ALLCAP CONTAINSDIGITS 0 0 0 0 0 0 0 0 10 6 .,.,,.: 7 9 0 0 0 0 1 X._wang,_r.,_neumann,_g.:_recognizing_textual_entailment_using_a_subsequence_kernel d._Xx,_X.,_Xx,_X.:_Xx_x_x_x_x_x_x
+method. In: method. m me met meth BLOCKEND PAGEIN SAMEFONT SAMEFONTSIZE 0 0 NOCAPS NODIGIT 0 0 1 0 0 0 0 0 10 6 .:.-,,() 8 6 0 0 0 0 1 method._in:_proc._of_aaai-XXXX,_vancoucer,_canada_(XXXX) x._Xx:_Xx._x_X-d,_Xx,_Xx_(d)
+3 Online 3 3 3 3 3 BLOCKSTART PAGEIN NEWFONT LOWERFONT 0 0 NOCAPS ALLDIGIT 1 0 0 0 0 0 0 0 11 11 :://.../ 8 10 0 0 0 0 1 X_online_accessible_via:_http://dilia.b.dfki.de/ d_Xx_x_x:_x:/x.x.x.x/
 
