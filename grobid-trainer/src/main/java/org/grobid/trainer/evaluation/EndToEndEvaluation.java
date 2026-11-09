@@ -1408,15 +1408,16 @@ public class EndToEndEvaluation {
                                         fieldName,
                                         goldMerged,
                                         grobidMerged,
-                                        StringSimilarity.levenshtein(goldMerged, grobidMerged)
-                                                >= minLevenshteinDistance,
+                                        StringSimilarity
+                                                .levenshtein(goldMerged, grobidMerged) >= minLevenshteinDistance,
                                         result.levenshteinStats);
                                 scoreFuzzy(
                                         fieldName,
                                         goldMerged,
                                         grobidMerged,
-                                        StringSimilarity.ratcliffObershelp(goldMerged, grobidMerged)
-                                                >= minRatcliffObershelpSimilarity,
+                                        StringSimilarity.ratcliffObershelp(
+                                                goldMerged,
+                                                grobidMerged) >= minRatcliffObershelpSimilarity,
                                         result.ratcliffObershelpStats);
                             }
 
@@ -2065,12 +2066,16 @@ public class EndToEndEvaluation {
                     "\n\n==== Levenshtein Matching ===== (Minimum Levenshtein distance at "
                             +
                             this.minLevenshteinDistance
-                            + ")" + fuzzyScope + "\n");
+                            + ")"
+                            + fuzzyScope
+                            + "\n");
             reportMD.append(
                     "\n\n#### Levenshtein Matching (Minimum Levenshtein distance at "
                             +
                             this.minLevenshteinDistance
-                            + ")" + fuzzyScope + "\n");
+                            + ")"
+                            + fuzzyScope
+                            + "\n");
             report.append("\n===== Field-level results =====\n");
             reportMD.append("\n**Field-level results**\n");
             report.append(EvaluationUtilities.computeMetrics(levenshteinStats));
@@ -2080,12 +2085,16 @@ public class EndToEndEvaluation {
                     "\n\n= Ratcliff/Obershelp Matching = (Minimum Ratcliff/Obershelp similarity at "
                             +
                             minRatcliffObershelpSimilarity
-                            + ")" + fuzzyScope + "\n");
+                            + ")"
+                            + fuzzyScope
+                            + "\n");
             reportMD.append(
                     "\n\n#### Ratcliff/Obershelp Matching (Minimum Ratcliff/Obershelp similarity at "
                             +
                             minRatcliffObershelpSimilarity
-                            + ")" + fuzzyScope + "\n");
+                            + ")"
+                            + fuzzyScope
+                            + "\n");
             report.append("\n===== Field-level results =====\n");
             reportMD.append("\n**Field-level results**\n");
             report.append(EvaluationUtilities.computeMetrics(ratcliffObershelpStats));
