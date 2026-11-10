@@ -5,7 +5,6 @@
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-
 						<author>
 							<persName>
 								<roleName>Dr. habil</roleName>.
@@ -14,13 +13,14 @@
 							</persName>
 							<persName>
 								<roleName>Dr</roleName>.
-								<forename>Maria José</forename>
-								<middlename>Costa</middlename>
-								<surname>Zemsch</surname>
+								<forename>Maria</forename> <middlename>José</middlename>
+								
+								<surname>Costa Zemsch</surname>
 							</persName>
 						</author>
 
-					</analytic>
+					
+</analytic>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>

@@ -5,7 +5,6 @@
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-
 						<author>
 							<persName>
 								<forename>YVES</forename>
@@ -14,16 +13,16 @@
 							<persName>
 								<forename>JEAN</forename>
 								<middlename>FRANÇOIS</middlename>
-								<surname>FOUCAUT</surname>
-							</persName>
-							ET
-							<persName>
+								<surname>FOUCAUT</surname> ET
+</persName>
+<persName>
 								<forename>GÉRARD</forename>
 								<surname>SCACCHI&apos;</surname>
 							</persName>
 						</author>
 
-					</analytic>
+					
+</analytic>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>

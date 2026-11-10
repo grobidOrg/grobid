@@ -5,21 +5,14 @@
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-
 						<author>
 							<persName>
 								 <forename>Elisa</forename>
-								 <middlename>Garcia</middlename>
-								 <surname>Gomez</surname>
+								 
+								 <surname>Garcia Gomez</surname>
 								 <marker>1☯</marker> ,
 							</persName>
-							<persName>
-								 <forename>Kitiezo</forename>
-								 <surname>Aggrey</surname>
-							</persName>
-							<persName>
-								 <forename>Igunza</forename>
-								 <surname>2☯</surname> ,
+							<persName> <forename>Kitiezo</forename> <middlename>Aggrey</middlename> <surname>Igunza</surname> <marker>2☯</marker> ,
 							</persName>
 							<persName>
 								 <forename>Zachary</forename>
@@ -39,8 +32,8 @@
 							</persName>
 							<persName>
 								 <forename>Shams</forename>
-								 <middlename>El</middlename>
-								 <surname>Arifeen</surname>
+								 
+								 <surname>El Arifeen</surname>
 								 <marker>6</marker> ,
 							</persName>
 							<persName>
@@ -54,11 +47,7 @@
 								 <middlename>Zahid</middlename>
 								 <surname>Hossain</surname> ID
                                  <marker>6</marker> ,
-								 <roleName>Md</roleName>
-							</persName>
-							<persName>
-								 <forename>Atique</forename>
-								 <middlename>Iqbal</middlename>
+								 </persName> <persName> <forename>Md</forename> <middlename>Atique</middlename> <middlename>Iqbal</middlename>
 								 <surname>Chowdhury</surname>
 								 <marker>6</marker> ,
 							</persName>
@@ -74,12 +63,7 @@
 								 <marker>8,9,10</marker> ,
 							</persName>
 							<persName>
-								 <forename>J</forename>.
-								 <surname>Anthony</surname>
-							</persName>
-							<persName>
-								 <forename>G</forename>.
-								 <surname>Scott</surname>
+								 <forename>J</forename>. <middlename>Anthony</middlename> <middlename>G</middlename>. <surname>Scott</surname>
 								 <marker>8</marker> ,
 							</persName>
 							<persName>
@@ -110,8 +94,7 @@
 								 <marker>13</marker> ,
 							</persName>
 							<persName>
-								 <forename>Adama</forename>
-								 <surname>Mamby Keita</surname>
+								 <forename>Adama</forename> <middlename>Mamby</middlename> <surname>Keita</surname>
 								 <marker>14</marker> ,
 							</persName>
 							<persName>
@@ -122,8 +105,8 @@
 							<persName>
                                 <!-- weird -->
 								 <forename>Amilcar</forename>
-								 <surname>Magac</surname>
-								 <marker>¸o15</marker> ,
+								 <surname>Magac¸o15</surname>
+								  ,
 							</persName>
 							<persName>
 								 <forename>David</forename>
@@ -232,14 +215,14 @@
 								 <forename>Chris</forename>
 								 <middlename>A</middlename>.
 								 <surname>ReesID</surname>
-								 <marker>31,32 *</marker>,
-								 <roleName>Child Health</roleName> and
-							</persName>
+								 <marker>31,32 *</marker></persName>,
+Child Health and
                             <!-- not sure how to annotate this as it's in the author list but it's an institution  -->
                             Mortality Prevention Surveillance Network ¶
 						</author>
 
-					</analytic>
+					
+</analytic>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>

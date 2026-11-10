@@ -5,43 +5,14 @@
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-						<author>
-							<persName>
-								 <forename>Fernando</forename>
-								 <middlename>Pires</middlename> <surname>Hartwig</surname>
-								 <marker>1,2</marker>
-							</persName>
-							<persName>
-								 <forename>George</forename>
-								 <middlename>Davey</middlename>
-								 <surname>Smith</surname>
-								 <marker>2</marker> ;
-							</persName>
-							<persName>
-								 <forename>Andrew</forename>
-								 <middlename>J</middlename>
-								 <surname>Simpkin</surname>
-								 <marker>2,3</marker>
-							</persName>
-							<persName>
-								 <forename>Cesar</forename>
-								 <middlename>Gomes</middlename> <surname>Victora</surname>
-								 <marker>1</marker>
-							</persName>
-							<persName>
-								 <forename>Caroline</forename>
-								 <middlename>L</middlename>.
-								 <surname>Relton</surname>
-								 <marker>2</marker>
-							</persName>
-							<persName>
-								 <forename>Doretta</forename>
-								 <surname>Caramaschi</surname>
-								 <marker>2</marker>
-							</persName>
-						</author>
-
-					
+<author>
+<persName><forename>Fernando</forename> <surname>Pires Hartwig</surname> <marker>1,2</marker></persName>
+<persName><forename>George</forename> <surname>Davey Smith</surname> <marker>2</marker> ;</persName>
+<persName><forename>Andrew</forename> <middlename>J</middlename> <surname>Simpkin</surname> <marker>2,3</marker></persName>
+<persName><forename>Cesar</forename> <surname>Gomes Victora</surname> <marker>1</marker></persName>
+<persName><forename>Caroline</forename> <middlename>L</middlename>. <surname>Relton</surname> <marker>2</marker></persName>
+<persName><forename>Doretta</forename> <surname>Caramaschi</surname> <marker>2</marker></persName>
+</author>
 </analytic>
 				</biblStruct>
 			</sourceDesc>

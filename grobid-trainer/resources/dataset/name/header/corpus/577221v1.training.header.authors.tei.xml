@@ -8,7 +8,7 @@
 <author>
 <persName><forename>Linda</forename> <middlename>B</middlename> <surname>Oyama</surname> <marker>* a</marker> ,</persName>
 <persName><forename>Hamza</forename> <surname>Olleik</surname> <marker>b</marker> ,</persName>
-<persName><forename>Ana</forename> <middlename>Carolina</middlename> <middlename>Nery</middlename> <surname>Teixeira</surname> <marker>c</marker> ,</persName>
+<persName><forename>Ana</forename> <middlename>Carolina</middlename> <surname>Nery Teixeira</surname> <marker>c</marker> ,</persName>
 <persName><forename>Matheus</forename> <middlename>M</middlename> <surname>Guidini</surname> <marker>c</marker> ,</persName>
 <persName><forename>James</forename> <middlename>A</middlename> <surname>Pickup</surname> <marker>a</marker> ,</persName>
 <persName><forename>Alan</forename> <middlename>R</middlename> <surname>Cookson</surname> <marker>d</marker> ,</persName>
@@ -29,7 +29,6 @@
 <persName><roleName>Dr</roleName> <forename>Linda</forename> <middlename>B</middlename> <surname>Oyama</surname></persName>
 <persName><roleName>Dr</roleName> <forename>Sharon</forename> <middlename>A</middlename> <surname>Huws</surname></persName>
 </author>
-
 </analytic>
 				</biblStruct>
 			</sourceDesc>

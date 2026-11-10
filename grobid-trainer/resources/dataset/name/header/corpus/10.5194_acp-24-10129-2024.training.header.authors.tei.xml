@@ -5,7 +5,6 @@
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-
 						<author>
 							<persName>
 								 <forename>Ernest</forename>
@@ -44,8 +43,8 @@
 							</persName>
 							<persName>
 								 <forename>Valérie</forename>
-								 <middlename>Borrell</middlename>
-								 <surname>Estupina</surname>
+								 
+								 <surname>Borrell Estupina</surname>
 								 <marker>4</marker> ,
 							</persName>
 							<persName>
@@ -79,7 +78,8 @@
 							</persName>
 						</author>
 
-					</analytic>
+					
+</analytic>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>

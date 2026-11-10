@@ -5,25 +5,24 @@
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-
 						<author>
 							<persName>
 								 <forename>Bethânia</forename>
-								 <middlename>Camargo</middlename>
-								 <surname>PINHEIRO</surname>
+								 
+								 <surname>Camargo PINHEIRO</surname>
 								 <marker>1</marker> ,
 							</persName>
 							<persName>
 								 <forename>Tiago</forename>
-								 <middlename>Novaes</middlename>
-								 <surname>PINHEIRO</surname>
+								 
+								 <surname>Novaes PINHEIRO</surname>
 								 <marker>1</marker> ,
 							</persName>
 							<persName>
 								 <forename>Ana</forename>
 								 <middlename>Lúcia</middlename>
-								 <middlename>Alvarez</middlename>
-								 <surname>CAPELOZZA</surname>
+								 
+								 <surname>Alvarez CAPELOZZA</surname>
 								 <marker>2</marker> ,
 							</persName>
 							<persName>
@@ -32,16 +31,12 @@
 								 <marker>3</marker>
 							</persName>
 							<persName>
-								 <forename>Dra</forename>.
-								 <surname>Bethânia</surname>
-							</persName>
-							<persName>
-								 <forename>Camargo</forename>
-								 <surname>Pinheiro</surname>
+								 <roleName>Dra</roleName>. <forename>Bethânia</forename> <surname>Camargo Pinheiro</surname>
 							</persName>
 						</author>
 
-					</analytic>
+					
+</analytic>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>
