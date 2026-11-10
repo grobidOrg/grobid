@@ -44,7 +44,8 @@ public class TEIAuthorSaxParserTest {
     @Test
     public void testConnectorAtTheEndOfPersNameIsKept() throws Exception {
         TEIAuthorSaxParser parser = new TEIAuthorSaxParser();
-        SAXParserFactory.newInstance().newSAXParser()
+        SAXParserFactory.newInstance()
+                .newSAXParser()
                 .parse(new ByteArrayInputStream(TEI.getBytes(StandardCharsets.UTF_8)), parser);
 
         assertThat(parser.getTokensResult(), hasSize(1));
@@ -57,9 +58,20 @@ public class TEIAuthorSaxParserTest {
                 labelled.add(tokens.get(i).getText() + "/" + labels.get(i));
             }
         }
-        assertThat(labelled, contains(
-                "Eri/I-<forename>", "Takeda/I-<surname>", "1/I-<marker>", ",/I-<other>",
-                "Go/I-<forename>", "Matsuda/I-<surname>", "1/I-<marker>", ",/<marker>", "2/<marker>", "and/I-<other>",
-                "Yoko/I-<forename>", "Aida/I-<surname>"));
+        assertThat(
+                labelled,
+                contains(
+                        "Eri/I-<forename>",
+                        "Takeda/I-<surname>",
+                        "1/I-<marker>",
+                        ",/I-<other>",
+                        "Go/I-<forename>",
+                        "Matsuda/I-<surname>",
+                        "1/I-<marker>",
+                        ",/<marker>",
+                        "2/<marker>",
+                        "and/I-<other>",
+                        "Yoko/I-<forename>",
+                        "Aida/I-<surname>"));
     }
 }
