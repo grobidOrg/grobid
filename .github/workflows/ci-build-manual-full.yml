@@ -27,9 +27,23 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build -x test
 
-  docker-build-full:
+  # One job per platform, each on a native runner (building the arm64 image under QEMU
+  # would take hours), pushed by digest and merged into the tags by docker-merge below.
+  # Each platform has its own registry cache ref: the amd64 one keeps the original
+  # `buildcache` name so its existing cache stays valid.
+  docker-build:
     needs: [ build ]
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: amd64
+            runner: ubuntu-latest
+            cache_ref: lfoppiano/grobid:buildcache
+          - arch: arm64
+            runner: ubuntu-24.04-arm
+            cache_ref: lfoppiano/grobid:buildcache-arm64
+    runs-on: ${{ matrix.runner }}
 
     steps:
       - name: Create more disk space
@@ -61,50 +75,39 @@ jobs:
       # and the summary all stay pending until the export ends. Splitting them makes
       # the pushed image visible as soon as it is tagged; the cache export then runs
       # afterwards and, whatever happens to it, never fails the job.
-      - name: Build and push
+      - name: Build and push by digest
         id: docker_build
         uses: docker/build-push-action@v7
         with:
           context: .
           file: Dockerfile.delft
-          platforms: linux/amd64
-          push: true
+          platforms: linux/${{ matrix.arch }}
           build-args: |
             GROBID_VERSION=${{ steps.version.outputs.value }}
-          tags: |
-            lfoppiano/grobid:latest-full,lfoppiano/grobid:${{ github.event.inputs.custom_tag }}
+          outputs: type=image,name=lfoppiano/grobid,push-by-digest=true,name-canonical=true,push=true
           # Registry cache rather than type=gha. The GitHub Actions cache is capped at
           # 10GB per repository with LRU eviction, and mode=max on this image exports far
           # more than that -- the torch/CUDA wheels alone are ~5GB and the embeddings lmdb
           # ~2GB -- so entries were being evicted between runs and the "cached" layers
           # rebuilt anyway. Docker Hub has no such ceiling, and the push happens over the
           # login already done above.
-          cache-from: type=registry,ref=lfoppiano/grobid:buildcache
-      - name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}
-      - name: Docker Image Summary
+          cache-from: type=registry,ref=${{ matrix.cache_ref }}
+      # Matrix legs cannot set distinct job outputs, so each digest goes through an
+      # artifact that docker-merge collects.
+      - name: Export digest
         env:
-          CUSTOM_TAG: ${{ github.event.inputs.custom_tag }}
           DIGEST: ${{ steps.docker_build.outputs.digest }}
         run: |
-          {
-            echo "## 🐳 Docker Image Uploaded Successfully"
-            echo ""
-            echo "**Image Details:**"
-            echo "- **Registry:** docker.io"
-            echo "- **Image:** lfoppiano/grobid"
-            echo "- **Type:** Full build with DeLFT models"
-            echo "- **Tags:**"
-            echo "  - \`latest-full\`"
-            echo "  - \`${CUSTOM_TAG}\`"
-            echo "- **Digest:** \`${DIGEST}\`"
-            echo "- **Platforms:** linux/amd64"
-            echo ""
-            echo "**Usage:**"
-            echo '```bash'
-            echo "docker pull lfoppiano/grobid:${CUSTOM_TAG}"
-            echo '```'
-          } >> "$GITHUB_STEP_SUMMARY"
+          echo "${DIGEST}"
+          mkdir -p "${RUNNER_TEMP}/digests"
+          touch "${RUNNER_TEMP}/digests/${DIGEST#sha256:}"
+      - name: Upload digest
+        uses: actions/upload-artifact@v4
+        with:
+          name: digest-${{ matrix.arch }}
+          path: ${{ runner.temp }}/digests/*
+          if-no-files-found: error
+          retention-days: 1
       # Same build inputs as above, so every layer is a hit in the builder's local
       # cache and this step only exports them to the registry cache. `type=cacheonly`
       # keeps it from producing (and pushing) a second image.
@@ -118,22 +121,76 @@ jobs:
         with:
           context: .
           file: Dockerfile.delft
-          platforms: linux/amd64
+          platforms: linux/${{ matrix.arch }}
           build-args: |
             GROBID_VERSION=${{ steps.version.outputs.value }}
           outputs: type=cacheonly
-          cache-from: type=registry,ref=lfoppiano/grobid:buildcache
-          cache-to: type=registry,ref=lfoppiano/grobid:buildcache,mode=max,ignore-error=true
+          cache-from: type=registry,ref=${{ matrix.cache_ref }}
+          cache-to: type=registry,ref=${{ matrix.cache_ref }},mode=max,ignore-error=true
       - name: Build cache summary
         env:
+          ARCH: ${{ matrix.arch }}
+          CACHE_REF: ${{ matrix.cache_ref }}
           CACHE_OUTCOME: ${{ steps.cache_export.outcome }}
         run: |
           {
-            echo ""
-            echo "## 📦 Build Cache"
+            echo "## 📦 Build Cache (${ARCH})"
             if [ "$CACHE_OUTCOME" = "success" ]; then
-              echo "Registry build cache \`lfoppiano/grobid:buildcache\` updated."
+              echo "Registry build cache \`${CACHE_REF}\` updated."
             else
-              echo "Registry build cache export did not complete (outcome: \`${CACHE_OUTCOME}\`). The image above is published regardless."
+              echo "Registry build cache export did not complete (outcome: \`${CACHE_OUTCOME}\`). The image is published regardless."
             fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  docker-merge:
+    needs: [ docker-build ]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download digests
+        uses: actions/download-artifact@v4
+        with:
+          path: ${{ runner.temp }}/digests
+          pattern: digest-*
+          merge-multiple: true
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+      - name: Login to Docker Hub
+        uses: docker/login-action@v4
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME_LFOPPIANO }}
+          password: ${{ secrets.DOCKERHUB_TOKEN_LFOPPIANO }}
+      - name: Create and push multi-arch manifest
+        working-directory: ${{ runner.temp }}/digests
+        env:
+          CUSTOM_TAG: ${{ github.event.inputs.custom_tag }}
+        run: |
+          docker buildx imagetools create \
+            -t lfoppiano/grobid:latest-full \
+            -t "lfoppiano/grobid:${CUSTOM_TAG}" \
+            $(printf 'lfoppiano/grobid@sha256:%s ' *)
+      - name: Inspect image
+        env:
+          CUSTOM_TAG: ${{ github.event.inputs.custom_tag }}
+        run: docker buildx imagetools inspect "lfoppiano/grobid:${CUSTOM_TAG}"
+      - name: Docker Image Summary
+        env:
+          CUSTOM_TAG: ${{ github.event.inputs.custom_tag }}
+        run: |
+          {
+            echo "## 🐳 Docker Image Uploaded Successfully"
+            echo ""
+            echo "**Image Details:**"
+            echo "- **Registry:** docker.io"
+            echo "- **Image:** lfoppiano/grobid"
+            echo "- **Type:** Full build with DeLFT models"
+            echo "- **Tags:**"
+            echo "  - \`latest-full\`"
+            echo "  - \`${CUSTOM_TAG}\`"
+            echo "- **Platforms:** linux/amd64, linux/arm64"
+            echo ""
+            echo "**Usage:**"
+            echo '```bash'
+            echo "docker pull lfoppiano/grobid:${CUSTOM_TAG}"
+            echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
