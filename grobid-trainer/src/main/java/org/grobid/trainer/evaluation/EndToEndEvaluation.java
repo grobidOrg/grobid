@@ -63,7 +63,6 @@ import org.grobid.core.utilities.counters.impl.CntManagerReportRepresentation;
 import org.grobid.trainer.evaluation.utilities.EvaluationFieldSelection;
 import org.grobid.trainer.evaluation.utilities.FieldSpecification;
 import org.grobid.trainer.evaluation.utilities.NamespaceContextMap;
-import org.grobid.trainer.evaluation.utilities.StringSimilarity;
 
 //import org.apache.log4j.xml.DOMConfigurator;
 
@@ -1408,16 +1407,16 @@ public class EndToEndEvaluation {
                                         fieldName,
                                         goldMerged,
                                         grobidMerged,
-                                        StringSimilarity
-                                                .levenshtein(goldMerged, grobidMerged) >= minLevenshteinDistance,
+                                        levenshteinSimilarity(goldMerged, grobidMerged) >= minLevenshteinDistance,
                                         result.levenshteinStats);
                                 scoreFuzzy(
                                         fieldName,
                                         goldMerged,
                                         grobidMerged,
-                                        StringSimilarity.ratcliffObershelp(
+                                        TextUtilities.getRatcliffObershelpSimilarity(
                                                 goldMerged,
-                                                grobidMerged) >= minRatcliffObershelpSimilarity,
+                                                grobidMerged,
+                                                true) >= minRatcliffObershelpSimilarity,
                                         result.ratcliffObershelpStats);
                             }
 
@@ -1829,6 +1828,18 @@ public class EndToEndEvaluation {
             return;
         }
         fieldSpecification.removeIf(field -> listFieldNamesToRemove.contains(field.fieldName));
+    }
+
+    /**
+     * Levenshtein similarity relative to the longest string, as reported by the Levenshtein
+     * matching variant: {@code (max - distance) / max}.
+     */
+    private static double levenshteinSimilarity(String a, String b) {
+        if (a.equals(b)) {
+            return 1.0;
+        }
+        int bigger = Math.max(a.length(), b.length());
+        return (double) (bigger - TextUtilities.getLevenshteinDistance(a, b)) / bigger;
     }
 
     /**
