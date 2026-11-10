@@ -260,21 +260,6 @@ public class TextUtilities {
     }
 
     /**
-     * Levenshtein similarity ratio in [0,1] between two strings, relative to the longest one:
-     * {@code (max length - distance) / max length}. Identical strings (including two empty ones)
-     * yield 1.0, a null input yields 0.0. This is the measure the end-to-end evaluation reports as
-     * "Levenshtein".
-     */
-    public static double getLevenshteinSimilarity(String string1, String string2) {
-        if (string1 == null || string2 == null)
-            return 0.0;
-        if (string1.equals(string2))
-            return 1.0;
-        int bigger = Math.max(string1.length(), string2.length());
-        return (double) (bigger - getLevenshteinDistance(string1, string2)) / bigger;
-    }
-
-    /**
      * Levenstein distance between two strings
      *
      * @param s the first string to be compared.
