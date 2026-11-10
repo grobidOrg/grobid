@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Eilis</forename>
+								<surname>Hannon</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Diana</forename>
+								<surname>Schendel</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Christine</forename>
+								<surname>Ladd-Acosta</surname>
+								<marker>3, 4</marker> ,
+							</persName>
+							<persName>
+								<forename>Jakob</forename>
+								<surname>Grove</surname>
+								<marker>5,6,7,8</marker> ,
+							</persName>
+							iPSYCH-Broad ASD Group § ,
+							<persName>
+								<forename>Christine</forename>
+								<middlename>Søholm</middlename>
+								<surname>Hansen</surname>
+								<marker>6,9,10</marker> ,
+							</persName>
+							<persName>
+								<forename>Shan</forename>
+								<middlename>V</middlename>.
+								<surname>Andrews</surname>
+								<marker>3,4</marker> ,
+							</persName>
+							<persName>
+								<forename>David</forename>
+								<middlename>Michael</middlename>
+								<surname>Hougaard</surname>
+								<marker>6,9</marker> ,
+							</persName>
+							<persName>
+								<forename>Michaeline</forename>
+								<surname>Bresnahan</surname>
+								<marker>11</marker> ,
+							</persName>
+							<persName>
+								<forename>Ole</forename>
+								<surname>Mors</surname>
+								<marker>6,13</marker> ,
+							</persName>
+							<persName>
+								<forename>Mads</forename>
+								<middlename>Vilhelm</middlename>
+								<surname>Hollegaard</surname>
+								<marker>6,9</marker> ,
+							</persName>
+							<persName>
+								<forename>Marie</forename>
+								<surname>Bækvad-Hansen</surname>
+								<marker>6,9</marker> ,
+							</persName>
+							<persName>
+								<forename>Mady</forename>
+								<surname>Hornig</surname>
+								<marker>11,12</marker> ,
+							</persName>
+							<persName>
+								<forename>Preben</forename>
+								<middlename>Bo</middlename>
+								<surname>Mortensen</surname>
+								<marker>6,14,15,16</marker> ,
+							</persName>
+							<persName>
+								<forename>Anders</forename>
+								<middlename>D</middlename>.
+								<surname>Børglum</surname>
+								<marker>5,6,7</marker> ,
+							</persName>
+							<persName>
+								<forename>Thomas</forename>
+								<surname>Werge</surname>
+								<marker>6,10,17</marker> ,
+							</persName>
+							<persName>
+								<forename>Marianne</forename>
+								<middlename>Giørtz</middlename>
+								<surname>Pedersen</surname>
+								<marker>6,13,16</marker> ,
+							</persName>
+							<persName>
+								<forename>Merete</forename>
+								<surname>Nordentoft</surname>
+								<marker>6, 18</marker> ,
+							</persName>
+							<persName>
+								<forename>Joseph</forename>
+								<surname>Buxbaum</surname>
+								<marker>19</marker> ,
+							</persName>
+							<persName>
+								<forename>M</forename>
+								<middlename>Daniele</middlename>
+								<surname>Fallin</surname>
+								<marker>4,11,20,21</marker> ,
+							</persName>
+							<persName>
+								<forename>Jonas</forename>
+								<surname>Bybjerg- Grauholm</surname>
+								<marker>6,9</marker> ,
+							</persName>
+							<persName>
+								<forename>Abraham</forename>
+								<surname>Reichenberg</surname>
+								<marker>19</marker> ,
+							</persName>
+							<persName>
+								<forename>Jonathan</forename>
+								<surname>Mill</surname>
+								<marker>1 *</marker> </persName> .
+							<persName>
+								<forename>Jonathan</forename>
+								<surname>Mill</surname>, </persName> RILD
+							<persName>
+								<forename>Eilis</forename>
+								<surname>Hannon</surname>
+							</persName>
+							<persName>
+								<forename>Diana</forename>
+								<surname>Schendel</surname>
+							</persName>
+							<persName>
+								<forename>Christine</forename>
+								<surname>Ladd</surname>
+							</persName>
+							<persName>
+								<forename>Jakob</forename>
+								<surname>Grove</surname>
+							</persName>
+							<persName>
+								<forename>Christine</forename>
+								<middlename>Søholm</middlename>
+								<surname>Hansen</surname>
+							</persName>
+							<persName>
+								<forename>Shan</forename>
+								<middlename>V</middlename>.
+							</persName>
+							<persName>
+								<forename>David</forename>
+								<middlename>Michael</middlename>
+								<surname>Hougaard</surname>
+							</persName>
+							<persName>
+								<forename>Marie</forename>
+								<surname>Bækvad</surname>
+							</persName>
+							<persName>
+								<forename>Mady</forename>
+								<surname>Hornig</surname>
+							</persName>
+							<persName>
+								<forename>Preben</forename>
+								<middlename>Bo</middlename>
+							</persName>
+							<persName>
+								<forename>Anders</forename>
+								<middlename>D</middlename>
+							</persName>
+							<persName>
+								<forename>Marianne</forename>
+								<middlename>Giørtz</middlename>
+							</persName>
+							<persName>
+								<forename>Merete</forename>
+								<surname>Nordentoft</surname>
+							</persName>
+							<persName>
+								<forename>Joseph</forename>
+								<surname>Buxbaum</surname>
+							</persName>
+							<persName>
+								<forename>M</forename>
+								<middlename>Daniele</middlename>
+							</persName>
+							<persName>
+								<forename>Jonas</forename>
+								<surname>Bybjerg</surname>
+							</persName>
+							<persName>
+								<forename>Abraham</forename>
+								<surname>Reichenberg</surname>
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

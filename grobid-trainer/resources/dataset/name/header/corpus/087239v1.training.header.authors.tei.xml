@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Magali</forename>
+								<surname>Ruffier</surname>
+								<marker>1,*</marker> ,
+							</persName>
+							<persName>
+								<forename>Andreas</forename>
+								<surname>Kähäri</surname>
+								<marker>1,3</marker> ,
+							</persName>
+							<persName>
+								<forename>Monika</forename>
+								<surname>Komorowska</surname>
+								<marker>1,4</marker> ,
+							</persName>
+							<persName>
+								<forename>Stephen</forename>
+								<surname>Keenan</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Matthew</forename>
+								<marker>5</marker>
+								<middlename>R</middlename>.
+								<surname>Laird</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Ian</forename>
+								<surname>Longden</surname>
+								<marker>1,5</marker> ,
+							</persName>
+							<persName>
+								<forename>Glenn</forename>
+								<surname>Proctor</surname>
+								<marker>1,6</marker> ,
+							</persName>
+							<persName>
+								<forename>Steve</forename>
+								<surname>Searle</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Daniel</forename>
+								<surname>Staines</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Kieron</forename>
+								<surname>Taylor</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Alessandro</forename>
+								<surname>Vullo</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Andrew</forename>
+								<surname>Yates</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Daniel</forename>
+								<surname>Zerbino</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Paul</forename>
+								<surname>Flicek</surname>
+								<marker>1,2,*</marker>
+							</persName>
+							<persName>
+								<forename>Paul</forename>
+								<surname>Flicek</surname>.
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

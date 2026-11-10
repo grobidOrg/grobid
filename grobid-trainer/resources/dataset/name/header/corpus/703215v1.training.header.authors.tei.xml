@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><marker>1</marker>. <surname>Bzeizi</surname> <forename>Khalid</forename> . <roleName>FRCP</roleName></persName>
+<persName><surname>Smith</surname> <forename>Richard</forename>. <roleName>FRCP</roleName></persName>
+<persName><surname>Jalan</surname> <forename>Rajiv</forename>, <roleName>FRCP</roleName></persName>
+<persName><surname>Broering</surname> <forename>Dieter</forename> <roleName>MD</roleName></persName>
+</author>
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Igor</forename><surname>Nizamutdinov</surname><marker>[1]</marker></persName>
+<persName><forename>Yaroslav</forename><surname>Popov</surname><marker>[1]</marker></persName>
+<persName><forename>Valery</forename><surname>Ilinsky</surname><marker>[1, 2, 3, 4]</marker></persName>
+<persName><forename>Alexander</forename><surname>Rakitko</surname><marker>[1, 5]</marker></persName>
+<persName><forename>Alexandr</forename><surname>Rakitko</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Om</forename> <middlename>Ji</middlename> <surname>Omer</surname> <marker>* §</marker>,</persName>
+<persName><forename>Prashant</forename> <surname>Laddha</surname> <marker>*</marker>,</persName>
+<persName><forename>Gurpreet</forename> <middlename>S</middlename> <surname>Kalsi</surname> <marker>*</marker>,</persName>
+<persName><forename>Anirud</forename> <surname>Thyagharajan</surname> <marker>*</marker>,</persName>
+<persName><forename>Kamlesh</forename> <middlename>R</middlename> <surname>Pillai</surname> <marker>*</marker>,</persName>
+<persName><forename>Abhimanyu</forename> <surname>Kulkarni</surname> <marker>†</marker>,</persName>
+<persName><forename>Anbang</forename> <surname>Yao</surname> <marker>‡</marker>,</persName>
+<persName><forename>Yurong</forename> <surname>Chen</surname> <marker>‡</marker>,</persName>
+<persName><forename>Sreenivas</forename> <surname>Subramoney</surname> <marker>*</marker></persName>
+<persName><forename>Om</forename> <middlename>Ji</middlename></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

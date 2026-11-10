@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author> <persName> <forename>Anna</forename> <middlename>C</middlename>. <surname>Thomas</surname> <marker>1</marker> , </persName> <persName> <forename>Pauline</forename> <surname>Heux</surname> <marker>2</marker> , </persName> <persName> <forename>Chloe</forename> <surname>Santos</surname> <marker>3</marker> , </persName> <persName> <forename>Wisenave</forename> <surname>Arulvasan</surname> <marker>1</marker> , </persName> <persName> <forename>Nita</forename> <surname>Solanky</surname> <marker>1</marker> , </persName> <persName> <forename>Magalie</forename> <middlename>E</middlename>. <surname>Carey</surname> <marker>2, §</marker> , </persName> <persName> <forename>Dianne</forename> <surname>Gerrelli</surname> <marker>3</marker> , </persName> <persName> <forename>Veronica</forename> <middlename>A</middlename>. <surname>Kinsler</surname> <marker>1,4*</marker> and </persName> <persName> <forename>Heather</forename> <middlename>C</middlename>. <surname>Etchevers</surname> <marker>2*</marker> </persName> Affiliations </author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

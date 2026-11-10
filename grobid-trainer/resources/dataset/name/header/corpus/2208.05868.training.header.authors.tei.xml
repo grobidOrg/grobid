@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+					<author>
+						<persName>
+							 <forename>Jakob</forename>
+							 <surname>Wasserthal</surname>
+							 <roleName>PhD</roleName>
+							 <marker>1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Hanns-Christian</forename>
+							 <surname>Breit</surname>
+							 <roleName>MD</roleName>
+							 <marker>1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Manfred</forename>
+							 <middlename>T</middlename>.
+							 <surname>Meyer</surname>
+							 <roleName>MD</roleName>
+							 <marker>1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Maurice</forename>
+							 <surname>Pradella</surname>
+							 <roleName>MD</roleName>
+							 <marker>1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Daniel</forename>
+							 <surname>Hinck</surname>
+							 <marker>1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Alexander</forename>
+							 <middlename>W</middlename>.
+							 <surname>Sauter</surname>
+							 <roleName>MD</roleName>
+							 <marker>1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Tobias</forename>
+							 <surname>Heye</surname>
+							 <roleName>MD</roleName>
+							 <marker>1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Daniel</forename>
+							 <surname>Boll</surname>
+							 <roleName>MD</roleName>
+							 <marker>1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Joshy</forename>
+							 <surname>Cyriac</surname>
+							 <roleName>MSc</roleName>
+							 <marker>1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Shan</forename>
+							 <surname>Yang</surname>
+							 <roleName>PhD</roleName>
+							 <marker>1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Michael</forename>
+							 <surname>Bach</surname>
+							 <roleName>PhD</roleName>
+							 <marker>1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Martin</forename>
+							 <surname>Segeroth</surname>
+							 <roleName>MD</roleName>
+							 <marker>1</marker>
+						</persName>
+					</author>
+
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

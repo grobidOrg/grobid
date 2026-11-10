@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Katharina</forename> <middlename>E</middlename>. <surname>Meijboom1</surname>, <marker>2#</marker> ,</persName>
+<persName><forename>Viola</forename> <surname>Volpato1</surname>, <marker>3#</marker> ,</persName>
+<persName><forename>Jimena</forename> <surname>Monzón-Sandoval1</surname>, <marker>3#</marker> ,</persName>
+<persName><forename>Joseph</forename> <middlename>M</middlename>. <surname>Hoolachan</surname> <marker>4,5</marker>,</persName>
+<persName><forename>Suzan</forename> <middlename>M</middlename>. <surname>Hammond1</surname>, <marker>6,7</marker>,</persName>
+<persName><forename>Frank</forename> <surname>Abendroth8</surname>, <marker>9</marker>,</persName>
+<persName><forename>Olivier</forename> <middlename>Gerrit</middlename> <surname>de Jong1</surname>, <marker>10</marker>,</persName>
+<persName><forename>Gareth</forename> <surname>Hazell1</surname>,</persName>
+<persName><forename>Nina</forename> <surname>Ahlskog1</surname>, <marker>6</marker>,</persName>
+<persName><forename>Matthew</forename> <middlename>J</middlename>. <middlename>A</middlename>. <surname>Wood1</surname>, <marker>6,7*</marker>,</persName>
+<persName><forename>Caleb</forename> <surname>Webber1</surname>, <marker>3*</marker>,</persName>
+<persName><forename>Melissa</forename> <surname>Bowerman</surname> <marker>1,4,5,11*</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

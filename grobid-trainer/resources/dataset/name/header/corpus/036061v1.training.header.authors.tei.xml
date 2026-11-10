@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Erick</forename> <middlename>R</middlename>. <surname>Scott</surname> <marker>1,2,3</marker> ,</persName>
+<persName><forename>H</forename>. <middlename>Benjamin</middlename> <surname>Larman</surname> <marker>2</marker> ,</persName>
+<persName><forename>Ali</forename> <surname>Torkamani</surname> <marker>3,4</marker> ,</persName>
+<persName><forename>Nicholas</forename> <middlename>J</middlename>. <surname>Schork</surname> <marker>5</marker> ,</persName>
+<persName><forename>Nathan</forename> <surname>Wineinger</surname> <marker>3</marker> ,</persName>
+<persName><forename>Max</forename> <surname>Nanis</surname> <marker>1</marker> ,</persName>
+<persName><forename>Ryan</forename> <surname>Thompson</surname> <marker>1</marker> ,</persName>
+<persName><forename>Reza</forename> <middlename>B</middlename>. <surname>Zavareh</surname> <marker>6</marker> ,</persName>
+<persName><forename>Luke</forename> <middlename>L</middlename>. <surname>Lairson</surname> <marker>2</marker> ,</persName>
+<persName><forename>Peter</forename> <middlename>G</middlename>. <surname>Schultz</surname> <marker>2</marker> , and</persName>
+<persName><forename>Andrew</forename> <middlename>I</middlename>. <surname>Su</surname> <marker>1,3 *</marker></persName>
+<persName><forename>Erick</forename> <middlename>R</middlename>. <surname>ScottErick</surname></persName>
+<persName><forename>R</forename>. <surname>Scott</surname></persName> ],
+<persName><forename>Benjamin</forename> <surname>Larman</surname></persName> ],
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

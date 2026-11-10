@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName> <forename>Ching-Fu</forename> <surname>Tu</surname> <marker>1,*</marker> , </persName>
+<persName> <forename>Chin-kai</forename> <surname>Chuang</surname> <marker>1,#</marker> , </persName>
+<persName> <forename>Kai-Hsuan</forename> <surname>Hsiao</surname> <marker>1,5,#</marker> , </persName>
+<persName> <forename>Chien-Hong</forename> <surname>Chen</surname> <marker>1,6,#</marker> , </persName>
+<persName> <forename>Chie-Min</forename> <surname>Chen</surname> <marker>2</marker> , </persName>
+<persName> <forename>Su-Hei</forename> <surname>Peng</surname> <marker>1</marker> , </persName>
+<persName> <forename>Yu-Hsiu</forename> <surname>Su</surname> <marker>1</marker> , </persName>
+<persName> <forename>Ming-Tang</forename> <surname>Chiou</surname> <marker>3</marker> , </persName>
+<persName> <forename>Chon-Ho</forename> <surname>Yen</surname> <marker>1</marker> , </persName>
+<persName> <forename>Shau-Wen</forename> <surname>Hung</surname> <marker>4</marker> , </persName>
+<persName> <forename>Tien.-Shuh</forename>. <surname>Yang</surname> <marker>1,7</marker> , and </persName>
+<persName> <forename>Chuan-Mu</forename> <surname>Chen</surname> <marker>5, 8</marker> </persName>
+Affiliations R. O. C. R. O. C. R. O. C.
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

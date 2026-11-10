@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+,1,2,3 <persName><forename>George</forename> <surname>Davey</surname></persName>
+<persName><forename>Qian</forename> <surname>Yang</surname> <roleName>PhD</roleName> student</persName>
+<persName><forename>George</forename> <middlename>Davey</middlename> <surname>Smith</surname></persName>
+<persName><forename>Louise</forename> <middlename>A</middlename> <middlename>C</middlename> <surname>Millard</surname></persName>
+<persName><forename>Q</forename> <surname>Yang</surname></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

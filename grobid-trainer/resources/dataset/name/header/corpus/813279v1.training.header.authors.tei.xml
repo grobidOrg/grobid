@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Thais</forename> <middlename>Dias</middlename> <surname>Midega</surname>, <roleName>MD¹</roleName> ;</persName>
+<persName><forename>Newton</forename> <middlename>Carlos</middlename> <middlename>Viana</middlename> <middlename>Leite</middlename> <surname>Filho¹</surname>, <roleName>MD</roleName> ;</persName>
+<persName><forename>Antônio</forename> <middlename>Paulo</middlename> <surname>Nassar</surname>, <roleName>MD</roleName>, <roleName>PhD¹</roleName>, <marker>2</marker> ;</persName>
+<persName><forename>Roger</forename> <middlename>Monteiro</middlename> <surname>Alencar</surname> <marker>3</marker>, <roleName>MD</roleName> ;</persName>
+<persName><forename>Antônio</forename> <middlename>Capone</middlename> <surname>Neto</surname>, <roleName>MD</roleName>, <roleName>PhD¹</roleName> ;</persName>
+<persName><forename>Leonardo</forename> <middlename>Rolim</middlename> <surname>Ferraz</surname>, <roleName>MD¹</roleName> ;</persName>
+<persName><forename>Thiago</forename> <middlename>Domingos</middlename> <surname>Corrêa¹</surname>, <roleName>MD</roleName>, <roleName>PhD¹</roleName>.</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

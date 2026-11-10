@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName> <forename>Mário</forename> <middlename>André</middlename> <surname>Trindade Dantas</surname> <marker>1, *</marker> , </persName>
+<persName> <forename>Alexander</forename> <surname>Cherkinsky</surname> <marker>2</marker> , </persName>
+<persName> <forename>Carlos</forename> <middlename>Micael</middlename> <middlename>Bonfim</middlename> <surname>Lessa</surname> <marker>1</marker> , </persName>
+<persName> <forename>Luciano</forename> <middlename>Vilaboim</middlename> <surname>Santos</surname> <marker>3</marker> , </persName>
+<persName> <forename>Mario</forename> <middlename>Alberto</middlename> <surname>Cozzuol</surname> <marker>3</marker> , </persName>
+<persName> <forename>Érica</forename> <middlename>Cavalcante</middlename> <surname>Omena</surname> <marker>4,5</marker> , </persName>
+<persName> <forename>Jorge</forename> <middlename>Luiz</middlename> <middlename>Lopes</middlename> <surname>da Silva</surname> <marker>6</marker> , </persName>
+<persName> <forename>Alcides</forename> <middlename>Nóbrega</middlename> <surname>Sial</surname> <marker>5</marker> , </persName>
+<persName> <forename>Hervé</forename> <surname>Bocherens</surname> <marker>7</marker> </persName>
+<persName> <forename>Mário</forename> <middlename>A</middlename>. <middlename>T</middlename>. <surname>Dantas</surname> </persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

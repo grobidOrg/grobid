@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Rasoul</forename> <surname>Mahboudi</surname>,</persName>
+<persName><forename>Sepideh</forename> <surname>Samavat</surname>,</persName>
+<persName><forename>Amir</forename> <surname>Afrah</surname>,</persName>
+<persName><forename>Mehdi</forename> <surname>Khorshidtalab</surname>,</persName>
+<persName><forename>Arezou</forename> <middlename>Fadaei</middlename> <surname>Tehran</surname>,</persName>
+<persName><forename>Paria</forename> <surname>Motahari</surname>,</persName>
+<persName><forename>Farnoush</forename> <middlename>Jafari</middlename> <surname>Iri Sofla</surname> <marker>*</marker>,</persName>
+<persName><forename>Shayan</forename> <surname>Maleknia</surname></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

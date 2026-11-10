@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Kai</forename>
+								 <surname>Doberstein</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alison</forename>
+								 <surname>Karst</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Paul</forename>
+								 <middlename>T</middlename>
+								 <surname>Kroeger</surname>
+								 <suffix>Jr</suffix>.
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ronny</forename>
+								 <surname>Drapkin</surname>
+								 <marker>1,3,4, *</marker>
+							</persName>
+							Affiliations M 5 0 .2 **** **** **** **** **** **** n. s. **** **** * ****
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

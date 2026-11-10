@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Shafi&apos;u</forename> <middlename>Dahiru</middlename> <surname>Gumel</surname> <marker>1 *</marker>,</persName>
+<persName><forename>Abdulrasul</forename> <surname>Ibrahim</surname> <marker>2 ⁋</marker> ,</persName>
+<persName><forename>Adebola</forename> <middlename>Tolulope</middlename> <surname>Olayinka</surname> <marker>3 ⁋</marker> ,</persName>
+<persName><forename>Muhammed</forename> <middlename>S</middlename>. <surname>Ibrahim</surname> <marker>4&amp;</marker> ,</persName>
+<persName><forename>Muhammad</forename> <middlename>Shakir</middlename> <surname>Balogun</surname> <marker>1&amp;</marker> ,</persName>
+<persName><forename>Afara</forename> <surname>Dahiru</surname> <marker>5</marker> ,</persName>
+<persName><forename>Ikeoluwapo</forename> <surname>Ajayi</surname> <marker>1,6&amp;</marker> ,</persName>
+<persName><forename>Olufemi</forename> <surname>Ajumobi</surname> <marker>1&amp;</marker> ,</persName>
+<persName><forename>Isiyaku</forename> <surname>Ahmadu</surname> <marker>7</marker> ,</persName>
+<persName><forename>Abubakar</forename> <surname>Song</surname> <marker>7</marker> ,</persName>
+<persName><forename>Asma&apos;u</forename> <middlename>Ibrahim</middlename> <surname>Maifada</surname> <marker>7</marker> ,</persName>
+<persName><forename>Habibu</forename> <surname>Abdullahi</surname> <marker>7</marker></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

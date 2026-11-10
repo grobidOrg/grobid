@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName> <forename>Maxwell</forename> <middlename>Ayindenaba</middlename> <surname>Dalaba</surname> <marker>1*</marker> , </persName>
+<persName> <forename>Patricia</forename> <surname>Akweongo</surname> <marker>2</marker> , </persName>
+<persName> <forename>Philip</forename> <middlename>Baba</middlename> <surname>Adongo</surname> <marker>2</marker> , </persName>
+<persName> <forename>Philip</forename> <middlename>Ayizem</middlename> <surname>Dalinjong</surname> <marker>1</marker> , </persName>
+<persName> <forename>Samuel</forename> <surname>Chatio</surname> <marker>1</marker> , and </persName>
+<persName> <forename>Abraham</forename> <surname>Oduro</surname> <marker>1</marker> </persName>
+<persName> <forename>Maxwell</forename> <middlename>Ayindenaba</middlename> <surname>Dalaba</surname>, </persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Ricardo</forename><middlename>Shohei</middlename><surname>Hattori</surname><marker>* 1</marker> ,</persName>
+<persName><forename>Tulio</forename><middlename>Teruo</middlename><surname>Yoshinaga</surname><marker>2</marker> ,</persName>
+<persName><forename>Arno</forename><middlename>Juliano</middlename><surname>Butzge</surname><marker>3</marker> ,</persName>
+<persName><forename>Shoko</forename><surname>Hattori-Ihara</surname><marker>4</marker> ,</persName>
+<persName><forename>Ricardo</forename><middlename>Yasuichi</middlename><surname>Tsukamoto</surname><marker>5</marker> ,</persName>
+<persName><forename>Neuza</forename><middlename>Sumico</middlename><surname>Takahashi</surname><marker>6</marker> ,</persName>
+<persName><forename>Yara</forename><middlename>Aiko</middlename><surname>Tabata</surname><marker>1</marker></persName>
+<persName><roleName>Dr</roleName>. <forename>Ricardo</forename><middlename>Shohei</middlename><surname>Hattori</surname>.</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

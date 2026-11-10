@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName><forename>Julia</forename> <middlename>M</middlename>. <surname>Gauglitz</surname> <marker>a,b,c</marker> ,</persName>
+<persName><forename>Christine</forename> <middlename>M</middlename>. <surname>Aceves</surname> <marker>a</marker></persName>
+<persName><forename>Alexander</forename> <middlename>A</middlename>. <surname>Aksenov</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>Gajender</forename> <surname>Aleti</surname> <marker>d</marker> ,</persName>
+<persName><forename>Jehad</forename> <surname>Almaliti</surname> <marker>e,f</marker> ,</persName>
+<persName><forename>Amina</forename> <surname>Bouslimani</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>Elizabeth</forename> <middlename>A</middlename>. <surname>Brown</surname>,</persName>
+<persName><forename>Anaamika</forename> <surname>Campeau</surname> <marker>b,g</marker> ,</persName>
+<persName><forename>Andrés</forename> <middlename>Mauricio</middlename> <surname>Caraballo-Rodríguez</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>Rama</forename> <surname>Chaar</surname> <marker>b</marker> ,</persName>
+<persName><forename>Ricardo</forename> <middlename>R</middlename>. <surname>da Silva</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>Alyssa</forename> <middlename>M</middlename>. <surname>Demko</surname> <marker>e</marker> ,</persName>
+<persName><forename>Francesca</forename> <surname>Di Ottavio</surname> <marker>h</marker> ,</persName>
+<persName><forename>Emmanuel</forename> <surname>Elijah</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>Madeleine</forename> <surname>Ernst</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>L</forename>. <middlename>Paige</middlename> <surname>Ferguson</surname> <marker>f</marker> ,</persName>
+<persName><forename>Xavier</forename> <surname>Holmes</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>Justin</forename> <middlename>J</middlename>. <middlename>J</middlename>. <surname>van der Hooft</surname> <marker>a,b,I</marker> ,</persName>
+<persName><forename>Alan</forename> <middlename>K</middlename>. <surname>Jarmusch</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>Lingjing</forename> <surname>Jiang</surname> <marker>j</marker> ,</persName>
+<persName><forename>Kyo</forename> <middlename>Bin</middlename> <surname>Kang</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>Irina</forename> <surname>Koester</surname> <marker>e</marker> ,</persName>
+<persName><forename>Brian</forename> <surname>Kwan</surname> <marker>j</marker> ,</persName>
+<persName><forename>Bohan</forename> <surname>Ni</surname> <marker>e</marker> ,</persName>
+<persName><forename>Jie</forename> <surname>Li</surname> <marker>e</marker> ,</persName>
+<persName><forename>Yueying</forename> <surname>Li</surname> <marker>e</marker> ,</persName>
+<persName><forename>Alexey</forename> <middlename>V</middlename>. <surname>Melnik</surname> <marker>a,b,c</marker> ,</persName>
+<persName><forename>Carlos</forename> <surname>Molina-Santiago</surname> <marker>k</marker> ,</persName>
+<persName><forename>Aaron</forename> <middlename>L</middlename>. <surname>Oom</surname> <marker>l</marker> ,</persName>
+<persName><forename>Morgan</forename> <middlename>W</middlename>. <surname>Panitchpakdi</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>Daniel</forename> <surname>Petras</surname> <marker>a,b,c</marker> ,</persName>
+<persName><forename>Robert</forename> <surname>Quinn</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>Nicole</forename> <surname>Sikora</surname> <marker>b</marker> ,</persName>
+<persName><forename>Katharina</forename> <surname>Spengler</surname> <marker>a</marker>,</persName>
+<persName><forename>Bahar</forename> <surname>Teke</surname> <marker>e</marker>,</persName>
+<persName><forename>Anupriya</forename> <surname>Tripathi</surname> <marker>a,b</marker> ,</persName>
+<persName><forename>Sabah</forename> <surname>Ul-Hasan</surname> <marker>m</marker> ,</persName>
+<persName><forename>Fernando</forename> <surname>Vargas</surname> <marker>a,b,n</marker> ,</persName>
+<persName><forename>Alison</forename> <surname>Vrbanac</surname> <marker>o</marker> ,</persName>
+<persName><forename>Anthony</forename> <middlename>Q</middlename>. <surname>Vu</surname> <marker>o</marker> ,</persName>
+<persName><forename>Steven</forename> <middlename>C</middlename> <surname>Wang</surname> <marker>b,n</marker> ,</persName>
+<persName><forename>Kelly</forename> <surname>Weldon</surname> <marker>b</marker> ,</persName>
+<persName><forename>Kayla</forename> <surname>Wilson</surname> <marker>e</marker> ,</persName>
+<persName><forename>Jacob</forename> <middlename>M</middlename>. <surname>Wozniak</surname> <marker>b,g</marker> ,</persName>
+<persName><forename>Michael</forename> <surname>Yoon</surname> <marker>b</marker> ,</persName>
+<persName><forename>Nuno</forename> <surname>Bandeira</surname> <marker>b,p</marker> ,</persName>
+<persName><forename>Pieter</forename> <middlename>C</middlename>. <surname>Dorrestein</surname> <marker>a,b,q,*</marker></persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

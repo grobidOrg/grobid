@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><marker>1 *</marker> <forename>Cristina</forename> <surname>Carbonell</surname>,</persName>
+							<persName><marker>2,4 *</marker> <forename>Jose-A</forename> <surname>Mirón-Canelo</surname>,</persName>
+							<persName><marker>3</marker> <forename>Sandra</forename> <surname>Diez-Ruiz</surname>,</persName>
+							<persName><marker>1,3,4 **</marker> <forename>Miguel</forename> <surname>Marcos M</surname>,</persName>
+							<persName><marker>1,3,4 **</marker> <forename>Antonio-J</forename> <surname>Chamorro</surname>.</persName>
+							<persName>
+								<forename>Cristina</forename>
+								<surname>Carbonell</surname>
+							</persName>
+							<persName>
+								<forename>Sandra</forename>
+								<surname>Díez-Ruiz</surname>
+							</persName>
+							<persName>
+								<forename>Miguel</forename>
+								<surname>Marcos</surname>
+							</persName>
+							<persName>
+								<forename>Antonio</forename>
+								<middlename>J</middlename>
+								<surname>Chamorro</surname>,
+								<roleName>MD</roleName>,
+								<roleName>PhD</roleName>.
+							</persName>
+						</author>
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>
