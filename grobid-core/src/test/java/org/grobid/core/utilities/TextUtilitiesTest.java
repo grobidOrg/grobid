@@ -98,6 +98,27 @@ public class TextUtilitiesTest extends EngineTest {
     }
 
     @Test
+    public void getLevenshteinSimilarity_identicalStrings_isOne() {
+        assertThat(TextUtilities.getLevenshteinSimilarity("Smith", "Smith"), is(1.0));
+        assertThat(TextUtilities.getLevenshteinSimilarity("", ""), is(1.0));
+    }
+
+    @Test
+    public void getLevenshteinSimilarity_isRelativeToTheLongestString() {
+        // one substitution over 5 characters
+        assertThat(TextUtilities.getLevenshteinSimilarity("Smith", "Smyth"), is(0.8));
+        // two insertions over 10 characters
+        assertThat(TextUtilities.getLevenshteinSimilarity("abcdefgh", "abcdefghij"), is(0.8));
+        assertThat(TextUtilities.getLevenshteinSimilarity("", "Smith"), is(0.0));
+    }
+
+    @Test
+    public void getLevenshteinSimilarity_null_isZero() {
+        assertThat(TextUtilities.getLevenshteinSimilarity(null, "Smith"), is(0.0));
+        assertThat(TextUtilities.getLevenshteinSimilarity("Smith", null), is(0.0));
+    }
+
+    @Test
     public void getRatcliffObershelpSimilarity_identicalStrings_isOne() {
         assertThat(TextUtilities.getRatcliffObershelpSimilarity("Smith", "Smith", false), is(1.0));
     }

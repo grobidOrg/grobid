@@ -1407,7 +1407,9 @@ public class EndToEndEvaluation {
                                         fieldName,
                                         goldMerged,
                                         grobidMerged,
-                                        levenshteinSimilarity(goldMerged, grobidMerged) >= minLevenshteinDistance,
+                                        TextUtilities.getLevenshteinSimilarity(
+                                                goldMerged,
+                                                grobidMerged) >= minLevenshteinDistance,
                                         result.levenshteinStats);
                                 scoreFuzzy(
                                         fieldName,
@@ -1828,18 +1830,6 @@ public class EndToEndEvaluation {
             return;
         }
         fieldSpecification.removeIf(field -> listFieldNamesToRemove.contains(field.fieldName));
-    }
-
-    /**
-     * Levenshtein similarity relative to the longest string, as reported by the Levenshtein
-     * matching variant: {@code (max - distance) / max}.
-     */
-    private static double levenshteinSimilarity(String a, String b) {
-        if (a.equals(b)) {
-            return 1.0;
-        }
-        int bigger = Math.max(a.length(), b.length());
-        return (double) (bigger - TextUtilities.getLevenshteinDistance(a, b)) / bigger;
     }
 
     /**
