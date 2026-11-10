@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+		<author>
+			<persName><forename>Haofu</forename> <surname>Hu</surname> <marker>1*</marker> ,</persName>
+			<persName><forename>Rafael</forename> <surname>Rodrigues da Costa</surname> <marker>1*</marker> ,</persName>
+			<persName><forename>Bo</forename> <surname>Pilgaard</surname> <marker>2</marker> ,</persName>
+			<persName><forename>Morten</forename> <surname>Schiøtt</surname> <marker>1</marker> ,</persName>
+			<persName><forename>Lene</forename> <surname>Lange</surname> <marker>2</marker> , and</persName>
+			<persName><forename>Michael</forename> <surname>Poulsen</surname> <marker>1</marker></persName>
+			<persName><forename>Haofu</forename> <surname>Hu</surname>,</persName>
+		</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

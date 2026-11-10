@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName>
+	<forename>Deborah</forename>
+	<middlename>Ellen</middlename>
+	<surname>Wanderley Gomes Freire¹</surname> ORCID
+</persName>
+<persName>
+	<forename>Elza</forename>
+	<middlename>Cristina</middlename>
+	<surname>Farias de Araújo¹</surname> ORCID
+</persName>
+<persName>
+	<forename>Gabriela</forename>
+	<middlename>Nazaré</middlename>
+	<surname>Wanderley Lira¹</surname> ORCID
+</persName>
+<persName>
+	<forename>Arella</forename>
+	<middlename>Cristina</middlename>
+	<surname>Muniz Brito¹</surname> ORCID
+</persName>
+<persName>
+	<forename>Wilton</forename>
+	<middlename>Wilney</middlename>
+	<surname>Nascimento Padilha¹</surname> ORCID
+</persName>
+<persName>
+	<forename>Yuri</forename>
+	<surname>Wanderley Cavalcanti¹</surname>
+</persName>
+<persName>
+	<forename>Edson</forename>
+	<middlename>Hilan</middlename>
+	<surname>Gomes de Lucena</surname>,
+	<roleName>DDS</roleName>,
+	<roleName>MSc</roleName>,
+	<roleName>PhD</roleName>.
+</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

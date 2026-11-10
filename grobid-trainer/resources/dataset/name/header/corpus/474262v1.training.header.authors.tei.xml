@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Denner</forename> <middlename>S</middlename>. <surname>Anjos</surname> <marker>1#a</marker> ,</persName>
+<persName><forename>Cynthia</forename> <surname>Bueno</surname> <marker>2</marker> ,</persName>
+<persName><forename>Larissa</forename> <middlename>F</middlename>. <surname>Magalhães</surname> <marker>3</marker> ,</persName>
+<persName><forename>Georgia</forename> <middlename>M</middlename>. <surname>Magalhães</surname> <marker>4</marker> ,</persName>
+<persName><forename>Ewaldo</forename> <surname>Mattos- Junior</surname> <marker>1</marker> ,</persName>
+<persName><forename>Marcela</forename> <middlename>M</middlename>. <middlename>R</middlename>. <surname>Pinto</surname> <marker>5</marker> ,</persName>
+<persName><forename>Andrigo</forename> <middlename>B</middlename>. <surname>De Nardi</surname> <marker>2</marker> ,</persName>
+<persName><forename>Carlos</forename> <middlename>H</middlename>. <middlename>M</middlename>. <surname>Brunner</surname> <marker>6</marker> ,</persName>
+<persName><forename>Antonio</forename> <middlename>F</middlename>. <surname>Leis-Filho</surname> <marker>7</marker> ,</persName>
+<persName><forename>Carlos</forename> <middlename>E</middlename>. <surname>Fonseca-Alves</surname> <marker>7* ¶</marker> ,</persName>
+<persName><forename>Sabryna</forename> <middlename>G</middlename>. <surname>Calazans</surname> <marker>1#a ¶</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

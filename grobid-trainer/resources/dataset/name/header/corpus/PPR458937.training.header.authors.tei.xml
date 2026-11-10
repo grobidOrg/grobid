@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+  NIVEL III. LIMA, PERÚ.
+  <persName>
+    <forename>Jorge</forename>
+    <surname>Ravelo-Hernández</surname>
+    <marker>1,7 b/c</marker>
+  </persName>
+  <persName>
+    <forename>Ursula</forename>
+    <surname>Cáceres-Bernaola</surname>
+    <marker>1, 5, c</marker>
+  </persName>
+  <persName>
+    <forename>Claudia</forename>
+    <surname>Becerra-Núñez</surname>
+    <marker>1, 6, c</marker>
+  </persName>
+  <persName>
+    <forename>Sabina</forename>
+    <surname>Mendívil-Tuchía de Tai</surname>
+    <marker>1,5, d</marker>,
+  </persName>
+  <persName>
+    <forename>María</forename>
+    <middlename>Eugenia</middlename>
+    <surname>Vásquez-Rivas</surname>
+    <marker>3, e</marker>
+  </persName>
+  <persName>
+    <forename>Wilfor</forename>
+    <surname>Aguirre-Quispe</surname>
+    <marker>4, f</marker>
+  </persName>
+  <persName>
+    <forename>Edwin</forename>
+    <surname>Quispe-Ayuque</surname>
+    <marker>2, a</marker>
+  </persName>
+  <persName>
+    <forename>Gabriela</forename>
+    <surname>Reyes-Rocha</surname>
+    <marker>7, a</marker>
+  </persName>
+  <persName>
+    <forename>Jorge</forename>
+    <surname>Ravelo-Hernández</surname>
+  </persName>
+  Dirección
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Yuri</forename> <middlename>Wanderley</middlename> <surname>Cavalcanti</surname></persName>
+<persName><forename>Rennis</forename> <surname>Oliveira da Silva</surname> <marker>1</marker> ORCID</persName>
+<persName><forename>Leonardo</forename> <surname>de Freitas Ferreira</surname> <marker>1</marker> ORCID</persName>
+<persName><forename>Edson</forename> <middlename>Hilan</middlename> <surname>Gomes de Lucena</surname> <marker>1</marker> ORCID</persName>
+<persName><forename>Andreza</forename> <middlename>Maria</middlename> <middlename>Luzia</middlename> <surname>Baldo de Souza</surname> <marker>2</marker> ORCID</persName>
+<persName><forename>Denise</forename> <middlename>de</middlename> <middlename>Fátima</middlename> <surname>Barros Cavalcante</surname> <marker>2</marker> ORCID</persName>
+<persName><forename>Marcelo</forename> <surname>de Castro Meneghim</surname> <marker>2</marker> ORCID</persName>
+<persName><forename>Antonio</forename> <middlename>Carlos</middlename> <surname>Pereira</surname> <marker>2</marker> ORCID</persName>
+<persName><forename>Yuri</forename> <middlename>Wanderley</middlename> <surname>Cavalcanti</surname>,
+<roleName>DDS</roleName>,
+<roleName>PhD</roleName>.</persName>
+</author>
+
+	
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

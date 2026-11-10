@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName>
+	<forename>LorraineCichowicz</forename>
+	<surname>Marques</surname>
+	<marker>1</marker>
+</persName>
+<persName>
+	<forename>DanieleyCristini</forename>
+	<surname>Lucca</surname>
+	<marker>1</marker>
+</persName>
+<persName>
+	<forename>Everson</forename>
+	<surname>Orlandini Alves</surname>
+	<marker>2</marker>
+</persName>
+<persName>
+	<forename>Gisele</forename>
+	<middlename>Cristina</middlename>
+	<surname>Manfrini Fernandes</surname>
+	<marker>3</marker>
+</persName>
+<persName>
+	<forename>Keyla</forename>
+	<middlename>Cristiane</middlename>
+	<surname>do Nascimento</surname>
+	<marker>3</marker>
+</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

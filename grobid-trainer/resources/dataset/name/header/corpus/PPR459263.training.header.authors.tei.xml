@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Marilisa</forename> <middlename>Berti</middlename> <surname>de Azevedo Barros</surname></persName>,
+<persName><forename>Margareth</forename> <surname>Guimarães Lima</surname></persName>,
+<persName><forename>Deborah</forename> <surname>Malta</surname></persName>,
+<persName><forename>Célia</forename> <surname>Landmann Szwarcwald</surname></persName>,
+<persName><forename>Renata</forename> <surname>Cruz Soares de Azevedo</surname></persName> ,
+<persName><forename>Dalia</forename> <surname>Romero</surname></persName>,
+<persName><forename>Paulo</forename> <middlename>Roberto</middlename> <surname>Borges de Souza</surname> <suffix>Júnior</suffix></persName>,
+<persName><forename>Luis</forename> <middlename>Otávio</middlename> <surname>Azevedo</surname></persName>,
+<persName><forename>Ísis</forename> <middlename>Eloah</middlename> <surname>Machado</surname></persName>,
+<persName><forename>Giseli</forename> <surname>Nogueira Damacena</surname></persName>,
+<persName><forename>Crizian</forename> <middlename>Saar</middlename> <surname>Gomes</surname></persName>,
+<persName><forename>André</forename> <surname>de</surname></persName>
+<persName><forename>Marilisa</forename> <middlename>Berti</middlename> <surname>de Azevedo Barros</surname> <marker>1</marker></persName>
+<persName><forename>Margareth</forename> <surname>Guimarães Lima</surname> <marker>1</marker></persName>
+<persName><forename>Deborah</forename> <surname>Carvalho Malta</surname> <marker>2</marker></persName> -orcid. <persName><forename>Célia</forename> <surname>Landmann Szwarcwald</surname> <marker>3</marker></persName> -orcid.
+<persName><forename>Renata</forename> <surname>Cruz Soares de Azevedo</surname> <marker>4</marker></persName> -orcid.org
+<persName><forename>Paulo</forename> <middlename>Roberto</middlename> <surname>Borges de Souza</surname> <suffix>Júnior</suffix> <marker>3</marker></persName> -orcid.
+<persName><forename>Luis</forename> <middlename>Otávio</middlename> <surname>Azevedo</surname> <marker>3</marker></persName> -orcid.
+<persName><forename>Ísis</forename> <middlename>Eloah</middlename> <surname>Machado</surname> <marker>5</marker></persName> -orcid.
+<persName><forename>Giseli</forename> <surname>Nogueira Damacena</surname> <marker>3</marker></persName> -orcid.
+<persName><forename>Crizian</forename> <middlename>Saar</middlename> <surname>Gomes</surname> <marker>2</marker></persName> -orcid.org
+<persName><forename>André</forename> <surname>de Oliveira Werneck</surname> <marker>6</marker></persName> -orcid.org
+<persName><forename>Danilo</forename> <surname>Rodrigues Pereira da Silva</surname> <marker>7</marker></persName> -orcid.org
+<persName><forename>Maria</forename> <middlename>de</middlename> <middlename>Fátima</middlename> <surname>de Pina</surname> <marker>3</marker></persName> -orcid.
+<persName><forename>Renata</forename> <surname>Gracie</surname> <marker>3</marker></persName> -orcid.
+<persName><forename>Marilisa</forename> <middlename>Berti</middlename> <surname>de Azevedo Barros</surname></persName> -
+</author>
+
+	
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

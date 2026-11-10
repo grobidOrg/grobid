@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<surname>Florencio</surname>
+<forename>A</forename>,
+</persName>
+<persName>
+<surname>Van der Sand</surname>
+<forename>ICP</forename>,
+</persName>
+<persName>
+<surname>Cabral</surname>
+<forename>FB</forename>,
+</persName>
+<persName>
+<surname>Colomé</surname>
+<forename>ICS</forename>,
+</persName>
+<persName>
+<surname>Girardon-Perlini</surname>
+<forename>NMO</forename>
+</persName>
+<persName>
+<forename>Alessandra</forename>
+<surname>Florencio</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>isabel</forename>
+<middlename>cristina</middlename>
+<surname>Pacheco Van der Sand</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Fernanda</forename>
+<surname>beheregaray cabral</surname>
+<marker>3</marker> ,
+</persName>
+<persName>
+<forename>isabel</forename>
+<middlename>cristina</middlename>
+<surname>dos Santos colomé</surname>
+<marker>4</marker> ,
+</persName>
+<persName>
+<forename>nara</forename>
+<middlename>marilene</middlename>
+<surname>oliveira Girardon-Perlini</surname>
+<marker>5</marker>
+</persName>
+<persName>
+<surname>Florencio</surname>
+<forename>A</forename>,
+</persName>
+<persName>
+<surname>Van der Sand</surname>
+<forename>ICP</forename>,
+</persName>
+<persName>
+<surname>Cabral</surname>
+<forename>FB</forename>,
+</persName>
+<persName>
+<surname>Colomé</surname>
+<forename>ICS</forename>,
+</persName>
+<persName>
+<surname>Girardon-Perlini</surname>
+<forename>NMO</forename>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

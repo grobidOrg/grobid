@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename>Mahdi</forename> <surname>Bagheri</surname> , <marker>𝑎 , *</marker></persName>
+							<persName><forename>Peter</forename> <surname>Bertone</surname> , <marker>𝑏</marker></persName>
+							<persName><forename>Ivan</forename> <surname>Fontane</surname> , <marker>𝑐</marker></persName>
+							<persName><forename>Eliza</forename> <surname>Gazda</surname> , <marker>𝑎</marker></persName>
+							<persName><forename>Eleanor</forename> <middlename>G</middlename> . <surname>Judd</surname> , <marker>𝑑</marker></persName>
+							<persName><forename>John</forename> <middlename>F</middlename> . <surname>Krizmanic</surname> , <marker>𝑒</marker></persName>
+							<persName><forename>Evgeny</forename> <middlename>N</middlename> . <surname>Kuznetsov</surname> , <marker>𝑐</marker></persName>
+							<persName><forename>Michael</forename> <middlename>J</middlename> . <surname>Miller</surname> , <marker>𝑓</marker></persName>
+							<persName><forename>Jane</forename> <surname>Nachtman</surname> , <marker>𝑓</marker></persName>
+							<persName><forename>Yasar</forename> <surname>Onel</surname> , <marker>𝑓</marker></persName>
+							<persName><forename>A</forename> . <middlename>Nepomuk</middlename> <surname>Otte</surname> , <marker>𝑎</marker></persName>
+							<persName><forename>Patrick</forename> <middlename>J</middlename> . <surname>Reardon</surname> , <marker>𝑐,𝑔</marker></persName>
+							<persName><forename>Oscar</forename> <surname>Romero Matamala</surname> , <marker>𝑎</marker></persName>
+							<persName><forename>Andrew</forename> <surname>Wang</surname> <marker>𝑎</marker> and</persName>
+							<persName><forename>Lawrence</forename> <surname>Wiencke</surname> <marker>ℎ</marker></persName>
+							<persName><forename>Mahdi</forename> <surname>Bagheri</surname></persName>
+							<persName><forename>G</forename> . <surname>Abdellaoui</surname> <marker>𝑎ℎ</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Abe</surname> <marker>𝑓 𝑞</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>H</middlename> . <surname>Adams</surname> <suffix>Jr</suffix> . <marker>𝑝𝑑</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Allard</surname> <marker>𝑐𝑏</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>Alonso</surname> <marker>𝑚𝑑</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Anchordoqui</surname> <marker>𝑝𝑒</marker> ,</persName>
+							<persName><forename>A</forename>. <surname>Anzalone</surname> <marker>𝑒ℎ,𝑒𝑑</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Arnone</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>K</forename> . <surname>Asano</surname> <marker>𝑓 𝑒</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Attallah</surname> <marker>𝑎𝑐</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Attoui</surname> <marker>𝑎𝑎</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Ave Pernas</surname> <marker>𝑚𝑐</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Bagheri</surname> <marker>𝑝ℎ</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Baláz</surname> <marker>𝑙𝑎</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Bakiri</surname> <marker>𝑎𝑎</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Barghini</surname> <marker>𝑒𝑙,𝑒𝑘</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Bartocci</surname> <marker>𝑒𝑖,𝑒 𝑗</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Battisti</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Bayer</surname> <marker>𝑑𝑑</marker> ,</persName>
+							<persName><forename>B</forename> . <surname>Beldjilali</surname> <marker>𝑎ℎ</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Belenguer</surname> <marker>𝑚𝑏</marker> ,</persName>
+							<persName><forename>N</forename> . <surname>Belkhalfa</surname> <marker>𝑎𝑎</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Bellotti</surname> <marker>𝑒𝑎,𝑒𝑏</marker> ,</persName>
+							<persName><forename>A</forename> . <middlename>A</middlename> . <surname>Belov</surname> <marker>𝑘𝑏</marker> ,</persName>
+							<persName><forename>K</forename> . <surname>Benmessai</surname> <marker>𝑎𝑎</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Bertaina</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>P</forename> . <middlename>F</middlename> . <surname>Bertone</surname> <marker>𝑝 𝑓</marker> ,</persName>
+							<persName><forename>P</forename> . <middlename>L</middlename> . <surname>Biermann</surname> <marker>𝑑𝑏</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Bisconti</surname> <marker>𝑒𝑙,𝑒𝑘</marker> ,</persName>
+							<persName><forename>C</forename> . <surname>Blaksley</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>N</forename> . <surname>Blanc</surname> <marker>𝑜𝑎</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Blin-Bondil</surname> <marker>𝑐𝑎,𝑐𝑏</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Bobik</surname> <marker>𝑙𝑎</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Bogomilov</surname> <marker>𝑏𝑎</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Bozzo</surname> <marker>𝑜𝑏</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Briz</surname> <marker>𝑝𝑏</marker> ,</persName>
+							<persName><forename>A</forename>. <surname>Bruno</surname> <marker>𝑒ℎ,𝑒𝑑</marker> ,</persName>
+							<persName><forename>K</forename> . <middlename>S</middlename> . <surname>Caballero</surname> <marker>ℎ𝑑</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Cafagna</surname> <marker>𝑒𝑎</marker> ,</persName>
+							<persName><forename>G</forename>. <surname>Cambié</surname> <marker>𝑒𝑖,𝑒 𝑗</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Campana</surname> <marker>𝑒 𝑓</marker> ,</persName>
+							<persName><forename>J</forename>- <middlename>N</middlename> . <surname>Capdevielle</surname> <marker>𝑐𝑏</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Capel</surname> <marker>𝑑𝑒</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Caramete</surname> <marker>𝑗 𝑎</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Caramete</surname> <marker>𝑗 𝑎</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Carlson</surname> <marker>𝑛𝑎</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Caruso</surname> <marker>𝑒𝑐,𝑒𝑑</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Casolino</surname> <marker>𝑓 𝑡,𝑒𝑖</marker> ,</persName>
+							<persName><forename>C</forename> . <surname>Cassardo</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Castellina</surname> <marker>𝑒𝑘,𝑒𝑚</marker> ,</persName>
+							<persName><forename>O</forename>. <surname>Catalano</surname> <marker>𝑒ℎ,𝑒𝑑</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Cellino</surname> <marker>𝑒𝑘,𝑒𝑚</marker> ,</persName>
+							<persName><forename>K</forename> . <surname>Černý</surname> <marker>𝑏𝑏</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Chikawa</surname> <marker>𝑓 𝑐</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>Chiritoi</surname> <marker>𝑗 𝑎</marker> ,</persName>
+							<persName><forename>M</forename> . <middlename>J</middlename> . <surname>Christl</surname> <marker>𝑝 𝑓</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Colalillo</surname> <marker>𝑒 𝑓 , 𝑒𝑔</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Conti</surname> <marker>𝑒𝑛,𝑒𝑖</marker> ,</persName>
+							<persName><forename>G</forename>. <surname>Cotto</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>H</forename> . <middlename>J</middlename> . <surname>Crawford</surname> <marker>𝑝𝑎</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Cremonini</surname> <marker>𝑒𝑙</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Creusot</surname> <marker>𝑐𝑏</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>de Castro Gónzalez</surname> <marker>𝑝𝑏</marker> ,</persName>
+							<persName><forename>C</forename> . <surname>de la Taille</surname> <marker>𝑐𝑎</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>del Peral</surname> <marker>𝑚𝑐</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Diaz Damian</surname> <marker>𝑐𝑐</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Diesing</surname> <marker>𝑝𝑏</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Dinaucourt</surname> <marker>𝑐𝑎</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Djakonow</surname> <marker>𝑖𝑎</marker> ,</persName>
+							<persName><forename>T</forename>. <surname>Djemil</surname> <marker>𝑎𝑐</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Ebersoldt</surname> <marker>𝑑𝑏</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Ebisuzaki</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Eliasson</surname> <marker>𝑛𝑎</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Eser</surname> <marker>𝑝𝑏</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Fenu</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Fernández-González</surname> <marker>𝑚𝑎</marker> ,</persName>
+							<persName><forename>S</forename>. <surname>Ferrarese</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>G</forename>. <surname>Filippatos</surname> <marker>𝑝𝑐</marker> ,</persName>
+							<persName><forename>W</forename> . <middlename>I</middlename> . <surname>Finch</surname> <marker>𝑝𝑐</marker></persName>
+							<persName><forename>C</forename> . <surname>Fornaro</surname> <marker>𝑒𝑛,𝑒𝑖</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Fouka</surname> <marker>𝑎𝑏</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Franceschi</surname> <marker>𝑒𝑒</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Franchini</surname> <marker>𝑚𝑑</marker> ,</persName>
+							<persName><forename>C</forename> . <surname>Fuglesang</surname> <marker>𝑛𝑎</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Fujii</surname> <marker>𝑓 𝑔</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Fukushima</surname> <marker>𝑓 𝑒</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Galeotti</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>García- Ortega</surname> <marker>𝑚𝑎</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Gardiol</surname> <marker>𝑒𝑘,𝑒𝑚</marker> ,</persName>
+							<persName><forename>G</forename> . <middlename>K</middlename> . <surname>Garipov</surname> <marker>𝑘𝑏</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Gascón</surname> <marker>𝑚𝑎</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Gazda</surname> <marker>𝑝ℎ</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Genci</surname> <marker>𝑙𝑏</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Golzio</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>C</forename> . <surname>González Alvarado</surname> <marker>𝑚𝑏</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Gorodetzky</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Green</surname> <marker>𝑝𝑐</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Guarino</surname> <marker>𝑒 𝑓 ,𝑒𝑔</marker> ,</persName>
+							<persName><forename>C</forename> . <surname>Guépin</surname> <marker>𝑝𝑙</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Guzmán</surname> <marker>𝑑𝑑</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Hachisu</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Haungs</surname> <marker>𝑑𝑏</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Hernández Carretero</surname> <marker>𝑚𝑐</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Hulett</surname> <marker>𝑝𝑐</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Ikeda</surname> <marker>𝑓 𝑒</marker> ,</persName>
+							<persName><forename>N</forename> . <surname>Inoue</surname> <marker>𝑓 𝑛</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Inoue</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>F</forename>. <surname>Isgrò</surname> <marker>𝑒 𝑓 ,𝑒𝑔</marker> ,</persName>
+							<persName><forename>Y</forename>. <surname>Itow</surname> <marker>𝑓 𝑘</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Jammer</surname> <marker>𝑑𝑐</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Jeong</surname> <marker>𝑔𝑏</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Joven</surname> <marker>𝑚𝑒</marker> ,</persName>
+							<persName><forename>E</forename> . <middlename>G</middlename> . <surname>Judd</surname> <marker>𝑝𝑎</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Jochum</surname> <marker>𝑑𝑐</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Kajino</surname> <marker>𝑓 𝑓</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Kajino</surname> <marker>𝑓 𝑖</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Kalli</surname> <marker>𝑎 𝑓</marker> ,</persName>
+							<persName><forename>I</forename> . <surname>Kaneko</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Karadzhov</surname> <marker>𝑏𝑎</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Kasztelan</surname> <marker>𝑖𝑎</marker> ,</persName>
+							<persName><forename>K</forename> . <surname>Katahira</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>K</forename> . <surname>Kawai</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Kawasaki</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Kedadra</surname> <marker>𝑎𝑎</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Khales</surname> <marker>𝑎𝑎</marker> ,</persName>
+							<persName><forename>B</forename> . <middlename>A</middlename> . <surname>Khrenov</surname> <marker>𝑘𝑏</marker> ,</persName>
+							<persName><forename>Jeong-Sook</forename> <surname>Kim</surname> <marker>𝑔𝑎</marker> ,</persName>
+							<persName><forename>Soon-Wook</forename> <surname>Kim</surname> <marker>𝑔𝑎</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Kleifges</surname> <marker>𝑑𝑏</marker> ,</persName>
+							<persName><forename>P</forename> . <middlename>A</middlename> . <surname>Klimov</surname> <marker>𝑘𝑏</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Kolev</surname> <marker>𝑏𝑎</marker> ,</persName>
+							<persName><forename>I</forename> . <surname>Kreykenbohm</surname> <marker>𝑑𝑎</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>F</middlename> . <surname>Krizmanic</surname> <marker>𝑝 𝑓 , 𝑝𝑘</marker> ,</persName>
+							<persName><forename>K</forename> . <surname>Królik</surname> <marker>𝑖𝑎</marker> ,</persName>
+							<persName><forename>V</forename> . <surname>Kungel</surname> <marker>𝑝𝑐</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Kurihara</surname> <marker>𝑓 𝑠</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Kusenko</surname> <marker>𝑓 𝑟 , 𝑝𝑒</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Kuznetsov</surname> <marker>𝑝𝑑</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Lahmar</surname> <marker>𝑎𝑎</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Lakhdari</surname> <marker>𝑎𝑔</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Licandro</surname> <marker>𝑚𝑒</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>López Campano</surname> <marker>𝑚𝑎</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>López Martínez</surname> <marker>𝑝𝑏</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Mackovjak</surname> <marker>𝑙𝑎</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Mahdi</surname> <marker>𝑎𝑎</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Mandát</surname> <marker>𝑏𝑐</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Manfrin</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Marcelli</surname> <marker>𝑒𝑖</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>L</middlename> . <surname>Marcos</surname> <marker>𝑚𝑎</marker> ,</persName>
+							<persName><forename>W</forename> . <surname>Marszał</surname> <marker>𝑖𝑎</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Martín</surname> <marker>𝑚𝑒</marker> ,</persName>
+							<persName><forename>O</forename> . <surname>Martinez</surname> <marker>ℎ𝑐</marker> ,</persName>
+							<persName><forename>K</forename> . <surname>Mase</surname> <marker>𝑓 𝑎</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Matev</surname> <marker>𝑏𝑎</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>N</middlename> . <surname>Matthews</surname> <marker>𝑝𝑔</marker> ,</persName>
+							<persName><forename>N</forename> . <surname>Mebarki</surname> <marker>𝑎𝑑</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>Medina-Tanco</surname> <marker>ℎ𝑎</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Menshikov</surname> <marker>𝑑𝑏</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Merino</surname> <marker>𝑚𝑎</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Mese</surname> <marker>𝑒 𝑓 ,𝑒𝑔</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Meseguer</surname> <marker>𝑚𝑑</marker> ,</persName>
+							<persName><forename>S</forename> . <middlename>S</middlename> . <surname>Meyer</surname> <marker>𝑝𝑏</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Mimouni</surname> <marker>𝑎𝑑</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Miyamoto</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Mizumoto</surname> <marker>𝑓 𝑖</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Monaco</surname> <marker>𝑒𝑎,𝑒𝑏</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>A</middlename> . <surname>Morales de los Ríos</surname> <marker>𝑚𝑐</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Mastafa</surname> <marker>𝑝𝑑</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Nagataki</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Naitamor</surname> <marker>𝑎𝑏</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Napolitano</surname> <marker>𝑒𝑒</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>M</middlename> . <surname>Nachtman</surname> <marker>𝑝𝑖</marker></persName>
+							<persName><forename>A</forename> . <surname>Neronov</surname> <marker>𝑜𝑏,𝑐𝑏</marker> ,</persName>
+							<persName><forename>K</forename> . <surname>Nomoto</surname> <marker>𝑓 𝑟</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Nonaka</surname> <marker>𝑓 𝑒</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Ogawa</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Ogio</surname> <marker>𝑓 𝑙</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Ohmori</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>A</forename> . <middlename>V</middlename> . <surname>Olinto</surname> <marker>𝑝𝑏</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Onel</surname> <marker>𝑝𝑖</marker></persName>
+							<persName><forename>G</forename> . <surname>Osteria</surname> <marker>𝑒 𝑓</marker> ,</persName>
+							<persName><forename>A</forename> . <middlename>N</middlename> . <surname>Otte</surname> <marker>𝑝ℎ</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Pagliaro</surname> <marker>𝑒ℎ,𝑒𝑑</marker> ,</persName>
+							<persName><forename>W</forename> . <surname>Painter</surname> <marker>𝑑𝑏</marker> ,</persName>
+							<persName><forename>M</forename> . <middlename>I</middlename> . <surname>Panasyuk</surname> <marker>𝑘𝑏</marker> ,</persName>
+							<persName><forename>B</forename> . <surname>Panico</surname> <marker>𝑒 𝑓</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Parizot</surname> <marker>𝑐𝑏</marker> ,</persName>
+							<persName><forename>I</forename> . <middlename>H</middlename> . <surname>Park</surname> <marker>𝑔𝑏</marker> ,</persName>
+							<persName><forename>B</forename>. <surname>Pastircak</surname> <marker>𝑙𝑎</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Paul</surname> <marker>𝑝𝑒</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Pech</surname> <marker>𝑏𝑏</marker> ,</persName>
+							<persName><forename>I</forename> . <surname>Pérez-Grande</surname> <marker>𝑚𝑑</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Perfetto</surname> <marker>𝑒 𝑓</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Peter</surname> <marker>𝑜𝑐</marker> ,</persName>
+							<persName><forename>P</forename>. <surname>Picozza</surname> <marker>𝑒𝑖,𝑒 𝑗, 𝑓 𝑡</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Pindado</surname> <marker>𝑚𝑑</marker> ,</persName>
+							<persName><forename>L</forename> . <middlename>W</middlename> . <surname>Piotrowski</surname> <marker>𝑖𝑏</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Piraino</surname> <marker>𝑑𝑑</marker> ,</persName>
+							<persName><forename>Z</forename>. <surname>Plebaniak</surname> <marker>𝑒𝑘,𝑒𝑙,𝑖𝑎</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Pollini</surname> <marker>𝑜𝑎</marker> ,</persName>
+							<persName><forename>E</forename> . <middlename>M</middlename> . <surname>Popescu</surname> <marker>𝑗 𝑎</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Prevete</surname> <marker>𝑒 𝑓 , 𝑒𝑔</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>Prévôt</surname> <marker>𝑐𝑏</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Prieto</surname> <marker>𝑚𝑐</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Przybylak</surname> <marker>𝑖𝑎</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>Puehlhofer</surname> <marker>𝑑𝑑</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Putis</surname> <marker>𝑙𝑎</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Reardon</surname> <marker>𝑝𝑑</marker> ,</persName>
+							<persName><forename>M</forename> . <middlename>H</middlename> .. <surname>Reno</surname> <marker>𝑝𝑖</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Reyes</surname> <marker>𝑚𝑒</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Ricci</surname> <marker>𝑒𝑒</marker> ,</persName>
+							<persName><forename>M</forename>.<middlename>D</middlename> . <surname>Rodríguez Frías</surname> <marker>𝑚𝑐</marker> ,</persName>
+							<persName><forename>O</forename> . <middlename>F</middlename> . <surname>Romero Matamala</surname> <marker>𝑝ℎ</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Ronga</surname> <marker>𝑒𝑒</marker> ,</persName>
+							<persName><forename>M</forename>.<middlename>D</middlename> . <surname>Sabau</surname> <marker>𝑚𝑏</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>Saccá</surname> <marker>𝑒𝑐,𝑒𝑑</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>Sáez Cano</surname> <marker>𝑚𝑐</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Sagawa</surname> <marker>𝑓 𝑒</marker> ,</persName>
+							<persName><forename>Z</forename> . <surname>Sahnoune</surname> <marker>𝑎𝑏</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Saito</surname> <marker>𝑓 𝑔</marker> ,</persName>
+							<persName><forename>N</forename> . <surname>Sakaki</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Salazar</surname> <marker>ℎ𝑐</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>C</middlename> . <surname>Sanchez Balanzar</surname> <marker>ℎ𝑎</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>L</middlename> . <surname>Sánchez</surname> <marker>𝑚𝑎</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Santangelo</surname> <marker>𝑑𝑑</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Sanz-Andrés</surname> <marker>𝑚𝑑</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Sanz Palomino</surname> <marker>𝑚𝑏</marker> ,</persName>
+							<persName><forename>O</forename> . <middlename>A</middlename> . <surname>Saprykin</surname> <marker>𝑘𝑐</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Sarazin</surname> <marker>𝑝𝑐</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Sato</surname> <marker>𝑓 𝑜</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Scagliola</surname> <marker>𝑒𝑎,𝑒𝑏</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Schanz</surname> <marker>𝑑𝑑</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Schieler</surname> <marker>𝑑𝑏</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Schovánek</surname> <marker>𝑏𝑐</marker> ,</persName>
+							<persName><forename>V</forename> . <surname>Scotti</surname> <marker>𝑒 𝑓 ,𝑒𝑔</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Serra</surname> <marker>𝑚𝑒</marker> ,</persName>
+							<persName><forename>S</forename> . <middlename>A</middlename> . <surname>Sharakin</surname> <marker>𝑘𝑏</marker> ,</persName>
+							<persName><forename>H</forename> . <middlename>M</middlename> . <surname>Shimizu</surname> <marker>𝑓 𝑗</marker> ,</persName>
+							<persName><forename>K</forename> . <surname>Shinozaki</surname> <marker>𝑖𝑎</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Shirahama</surname> <marker>𝑓 𝑛</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>F</middlename> . <surname>Soriano</surname> <marker>𝑝𝑒</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Sotgiu</surname> <marker>𝑒𝑖,𝑒 𝑗</marker> ,</persName>
+							<persName><forename>I</forename> . <surname>Stan</surname> <marker>𝑗 𝑎</marker> ,</persName>
+							<persName><forename>I</forename> . <surname>Strharský</surname> <marker>𝑙𝑎</marker> ,</persName>
+							<persName><forename>N</forename> . <surname>Sugiyama</surname> <marker>𝑓 𝑗</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Supanitsky</surname> <marker>ℎ𝑎</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Suzuki</surname> <marker>𝑓 𝑚</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Szabelski</surname> <marker>𝑖𝑎</marker> ,</persName>
+							<persName><forename>N</forename> . <surname>Tajima</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Tajima</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Takahashi</surname> <marker>𝑓 𝑜</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Takeda</surname> <marker>𝑓 𝑒</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Takizawa</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>M</forename> . <middlename>C</middlename> . <surname>Talai</surname> <marker>𝑎𝑐</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Tameda</surname> <marker>𝑓 𝑢</marker> ,</persName>
+							<persName><forename>C</forename> . <surname>Tenzer</surname> <marker>𝑑𝑑</marker> ,</persName>
+							<persName><forename>S</forename> . <middlename>B</middlename> . <surname>Thomas</surname> <marker>𝑝𝑔</marker> ,</persName>
+							<persName><forename>O</forename> . <surname>Tibolla</surname> <marker>ℎ𝑒</marker> ,</persName>
+							<persName><forename>L</forename> . <middlename>G</middlename> . <surname>Tkachev</surname> <marker>𝑘 𝑎</marker> ,</persName>
+							<persName><forename>T</forename>. <surname>Tomida</surname> <marker>𝑓 ℎ</marker> ,</persName>
+							<persName><forename>N</forename> . <surname>Tone</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Toscano</surname> <marker>𝑜𝑏</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Traïche</surname> <marker>𝑎𝑎</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Tsunesada</surname> <marker>𝑓 𝑙</marker> ,</persName>
+							<persName><forename>K</forename> . <surname>Tsuno</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Turriziani</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>Y</forename> . <surname>Uchihori</surname> <marker>𝑓 𝑏</marker> ,</persName>
+							<persName><forename>O</forename> . <surname>Vaduvescu</surname> <marker>𝑚𝑒</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>F</middlename> . <surname>Valdés-Galicia</surname> <marker>ℎ𝑎</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Vallania</surname> <marker>𝑒𝑘,𝑒𝑚</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Valore</surname> <marker>𝑒 𝑓 , 𝑒𝑔</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>Vankova-Kirilova</surname> <marker>𝑏𝑎</marker> ,</persName>
+							<persName><forename>T</forename> . <middlename>M</middlename> . <surname>Venters</surname> <marker>𝑝 𝑗</marker> ,</persName>
+							<persName><forename>C</forename> . <surname>Vigorito</surname> <marker>𝑒𝑘,𝑒𝑙</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Villaseñor</surname> <marker>ℎ𝑏</marker> ,</persName>
+							<persName><forename>B</forename>. <surname>Vlcek</surname> <marker>𝑚𝑐</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>von Ballmoos</surname> <marker>𝑐𝑐</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Vrabel</surname> <marker>𝑙𝑏</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Wada</surname> <marker>𝑓 𝑡</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Watanabe</surname> <marker>𝑓 𝑖</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Watts</surname> <suffix>Jr</suffix> . <marker>𝑝𝑑</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Weigand Muñoz</surname> <marker>𝑚𝑎</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Weindl</surname> <marker>𝑑𝑏</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Wiencke</surname> <marker>𝑝𝑐</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Wille</surname> <marker>𝑑𝑎</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Wilms</surname> <marker>𝑑𝑎</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Winn</surname> <marker>𝑝𝑚</marker></persName>
+							<persName><forename>T</forename> . <surname>Yamamoto</surname> <marker>𝑓 𝑓</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Yang</surname> <marker>𝑔𝑏</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Yano</surname> <marker>𝑓 𝑚</marker> ,</persName>
+							<persName><forename>I</forename> . <middlename>V</middlename> . <surname>Yashin</surname> <marker>𝑘𝑏</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Yonetoku</surname> <marker>𝑓 𝑑</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Yoshida</surname> <marker>𝑓 𝑎</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Young</surname> <marker>𝑝 𝑓</marker> ,</persName>
+							<persName><forename>I</forename> . <middlename>S</middlename> <surname>Zgura</surname> <marker>𝑗 𝑎</marker> ,</persName>
+							<persName><forename>M</forename> . <middlename>Yu</middlename> . <surname>Zotov</surname> <marker>𝑘𝑏</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Zuccaro Marchi</surname> <marker>𝑓 𝑡</marker></persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

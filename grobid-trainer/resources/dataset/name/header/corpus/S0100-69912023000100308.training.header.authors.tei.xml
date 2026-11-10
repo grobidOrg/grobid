@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Sofia</forename>
+								<surname>Wagemaker Viana</surname>
+								<marker>1</marker> ;
+							</persName>
+							<persName>
+								<forename>matheuS</forename>
+								<middlename>Daniel</middlename>
+								<surname>faleiro</surname>
+								<marker>2</marker> ;
+							</persName>
+							<persName>
+								<forename>anna</forename>
+								<middlename>luiza</middlename>
+								<surname>fonteS menDeS</surname>
+								<marker>2</marker> ;
+							</persName>
+							<persName>
+								<forename>amanDa</forename>
+								<surname>Cipriano torquato</surname>
+								<marker>3</marker> ;
+							</persName>
+							<persName>
+								<forename>Clara</forename>
+								<surname>pereira oliVeira taVareS</surname>
+								<marker>4</marker> ;
+							</persName>
+							<persName>
+								<forename>BrenDa</forename>
+								<surname>fereS</surname>
+								<marker>1</marker> ;
+							</persName>
+							<persName>
+								<forename>miguel</forename>
+								<surname>goDeiro fernanDez</surname>
+								<marker>5</marker> ;
+							</persName>
+							<persName>
+								<forename>itallo</forename>
+								<surname>romero marqueS SoBreira</surname>
+								<marker>6</marker> ;
+							</persName>
+							<persName>
+								<forename>Caroline</forename>
+								<surname>marqueS De aquino</surname>
+								<marker>7</marker> ;
+							</persName>
+							<persName>
+								<forename>Simone</forename>
+								<surname>De CampoS Vieira aBiB</surname>
+								<roleName>tCBC-Sp</roleName>
+								<marker>8</marker> ;
+							</persName>
+							<persName>
+								<forename>faBio</forename>
+								<surname>Botelho</surname>
+								<roleName>tCBC-mg</roleName>
+								<marker>9,10</marker> .
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

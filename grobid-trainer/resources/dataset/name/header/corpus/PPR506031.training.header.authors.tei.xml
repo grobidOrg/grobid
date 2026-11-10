@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+DURANTE A PANDEMIA DE COVID-19
+<persName><forename>Tiago</forename> <middlename>André</middlename> <surname>Portela Martins1</surname></persName>
+<persName><forename>Adriana</forename> <surname>Teixeira Bastos</surname> <marker>2</marker></persName>
+<persName><forename>Ana</forename> <middlename>Augusta</middlename> <surname>Ferreira de Freitas</surname> <marker>3</marker></persName>
+<persName><forename>Luiz</forename> <surname>Madeira</surname> <suffix>Sobrinho</suffix> <marker>4</marker></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

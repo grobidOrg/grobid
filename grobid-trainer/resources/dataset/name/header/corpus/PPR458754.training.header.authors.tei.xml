@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+  <persName>
+    <forename>Diego</forename>
+    <middlename>T</middlename>.
+    <surname>Volpatto</surname>
+    <marker>a, *</marker> ,
+  </persName>
+  <persName>
+    <forename>Anna</forename>
+    <middlename>Claudia</middlename>
+    <middlename>M</middlename>.
+    <surname>Resende</surname>
+    <marker>a</marker> ,
+  </persName>
+  <persName>
+    <forename>Lucas</forename>
+    <surname>dos Anjos</surname>
+    <marker>a</marker> ,
+  </persName>
+  <persName>
+    <forename>João</forename>
+    <middlename>V</middlename>.
+    <middlename>O</middlename>.
+    <surname>Silva</surname>
+    <marker>a</marker> ,
+  </persName>
+  <persName>
+    <forename>Claudia</forename>
+    <middlename>M</middlename>.
+    <surname>Dias</surname>
+    <marker>b</marker> ,
+  </persName>
+  <persName>
+    <forename>Regina</forename>
+    <middlename>C</middlename>.
+    <surname>Almeida</surname>
+    <marker>a</marker> e
+  </persName>
+  <persName>
+    <forename>Sandra</forename>
+    <middlename>M</middlename>.
+    <middlename>C</middlename>.
+    <surname>Malta</surname>
+    <marker>a</marker>
+  </persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName>
+	<forename>Osmar</forename>
+	<middlename>Clayton</middlename>
+	<surname>Person</surname>,
+</persName>
+<persName>
+	<forename>Paula</forename>
+	<surname>Ribeiro Lopes Almeida</surname>,
+</persName>
+<persName>
+	<forename>Maria</forename>
+	<middlename>Eduarda</middlename>
+	<surname>dos Santos Puga</surname>,
+</persName>
+<persName>
+	<forename>Álvaro</forename>
+	<middlename>Nagib</middlename>
+	<surname>Atallah</surname>
+</persName>
+<persName>
+	<forename>Osmar</forename>
+	<middlename>Clayton</middlename>
+	<surname>Person</surname> <marker>I</marker> ,
+</persName>
+<persName>
+	<forename>Paula</forename>
+	<surname>Ribeiro Lopes Almeida</surname> <marker>II</marker> ,
+</persName>
+<persName>
+	<forename>Maria</forename>
+	<middlename>Eduarda</middlename>
+	<surname>dos Santos Puga</surname> <marker>III</marker> ,
+</persName>
+<persName>
+	<forename>Álvaro</forename>
+	<middlename>Nagib</middlename>
+	<surname>Atallah</surname> <marker>IV</marker>
+</persName>
+<persName>
+	<forename>Osmar</forename>
+	<middlename>Clayton</middlename>
+	<surname>Person</surname>
+</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

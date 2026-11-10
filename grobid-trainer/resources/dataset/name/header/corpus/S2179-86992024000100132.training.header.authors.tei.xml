@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Vladimir</forename>
+<surname>Passos de Freitas</surname>
+</persName>
+<persName>
+<forename>Natália</forename>
+<surname>Bortoluzzi Balzan</surname>
+</persName>
+<persName>
+<forename>Vladimir</forename>
+<surname>Passos de Freitas</surname> &amp;
+</persName>
+<persName>
+<forename>Natália</forename>
+<surname>Bortoluzzi Balzan</surname>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

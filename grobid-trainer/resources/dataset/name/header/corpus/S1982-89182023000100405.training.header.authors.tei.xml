@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Karen</forename>
+								 <middlename>Letícia</middlename>
+								 <surname>Guimarães</surname>
+								<marker>*</marker>
+							</persName>
+							<persName>
+								 <forename>Júlia</forename>
+								 <surname>Barreira</surname>
+								<marker>**</marker>
+							</persName>
+							<persName>
+								 <forename>Larissa</forename>
+								 <middlename>Rafaela</middlename>
+								 <surname>Galatti</surname>
+								<marker>*</marker>
+							</persName>
+							<persName>
+								 <forename>Karen</forename>
+								 <middlename>Letícia</middlename>
+								 <surname>Guimarães</surname>,
+							</persName>
+							<persName>
+								 <forename>Júlia</forename>
+								 <surname>Barreira</surname>,
+							</persName>
+							<persName>
+								 <forename>Larissa</forename>
+								 <middlename>Rafaela</middlename>
+								 <surname>Galatti</surname> 02
+							</persName>
+							<persName>
+								 <forename>Alex</forename>
+								 <surname>Branco Fraga</surname>
+								<marker>*</marker>,
+							</persName>
+							<persName>
+								 <forename>Elisandro</forename>
+								 <surname>Schultz Wittizorecki</surname>
+								<marker>*</marker>,
+							</persName>
+							<persName>
+								 <forename>Ileana</forename>
+								 <surname>Wenetz</surname>
+								<marker>**</marker>,
+							</persName>
+							<persName>
+								 <forename>Mauro</forename>
+								 <surname>Myskiw</surname>
+								<marker>*</marker>,
+							</persName>
+							<persName>
+								 <forename>Raquel</forename>
+								 <surname>da Silveira</surname>
+								<marker>*</marker>
+							</persName>
+						</author>
+
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

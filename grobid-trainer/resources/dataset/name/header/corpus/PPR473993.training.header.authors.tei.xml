@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Natasha</forename> <middlename>Kilsy</middlename> <surname>Rocha Belem</surname>,</persName>
+<persName><forename>Priscilla</forename> <middlename>Aparecida</middlename> <surname>Alves da Silva</surname>,</persName>
+<persName><forename>Vinicius</forename> <surname>Silva Castro</surname>,</persName>
+<persName><forename>Flavia</forename> <surname>Galindo Silvestre Silva</surname>,</persName>
+<persName><forename>Flávia</forename> <surname>Almeida Ramos</surname>,</persName>
+<persName><forename>Adelino</forename> <surname>da Cunha</surname> <suffix>Neto</suffix>,</persName>
+<persName><forename>Ricardo</forename> <middlename>César</middlename> <surname>Tavares Carvalho</surname>,</persName>
+<persName><forename>Eduardo</forename> <middlename>Eustáquio</middlename> <surname>de Souza Figueiredo</surname></persName>
+<persName><forename>Natasha</forename> <middlename>Kilsy</middlename> <surname>Rocha Belem</surname> <marker>1,2</marker> ;</persName>
+<persName><forename>Priscilla</forename> <middlename>Aparecida</middlename> <surname>Alves da Silva</surname> <marker>2</marker> ;</persName>
+<persName><forename>Vinicius</forename> <surname>Silva Castro</surname> <marker>1</marker> ;</persName>
+<persName><forename>Flavia</forename> <surname>Galindo Silvestre Silva</surname> <marker>2</marker> ;</persName>
+<persName><forename>Flávia</forename> <surname>Almeida Ramos</surname> <marker>2</marker> ;</persName>
+<persName><forename>Adelino</forename> <surname>Cunha</surname> <suffix>Neto</suffix> <marker>1</marker> ;</persName>
+<persName><forename>Ricardo</forename> <middlename>César</middlename> <surname>Tavares Carvalho</surname> <marker>1</marker> ;</persName>
+<persName><forename>Eduardo</forename> <middlename>Eustáquio</middlename> <surname>de Souza Figueiredo</surname> <marker>1*</marker>.</persName>
+<persName><roleName>Professor</roleName> <forename>Eduardo</forename> <middlename>Eustáquio</middlename> <surname>de Souza Figueiredo</surname></persName>. Fernando Correa da Costa. Avenue,
+<persName><forename>Natasha</forename> <middlename>Kilsy</middlename> <surname>Rocha Belem</surname></persName>
+<persName><forename>Priscilla</forename> <middlename>Aparecida</middlename> <surname>Alves da Silva</surname></persName>
+<persName><forename>Vinicius</forename> <surname>Silva Castro</surname></persName>
+<persName><forename>Flavia</forename> <surname>Galindo Silvestre Silva</surname></persName>
+<persName><forename>Flávia</forename> <surname>Almeida Ramos</surname></persName>
+<persName><forename>Adelino</forename> <surname>Cunha</surname> <suffix>Neto</suffix></persName>
+<persName><forename>Ricardo</forename> <middlename>César</middlename> <surname>Tavares Carvalho</surname></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

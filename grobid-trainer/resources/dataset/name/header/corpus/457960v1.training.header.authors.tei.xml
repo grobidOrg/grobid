@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+		<author>
+			<persName><forename>Rubina</forename> <surname>Tabassum</surname> <marker>1</marker> ,</persName>
+			<persName><forename>Joel</forename> <middlename>T</middlename>. <surname>Rämö</surname> <marker>1</marker> ,</persName>
+			<persName><forename>Pietari</forename> <surname>Ripatti</surname> <marker>1</marker> ,</persName>
+			<persName><forename>Jukka</forename> <middlename>T</middlename>. <surname>Koskela</surname> <marker>1</marker> ,</persName>
+			<persName><forename>Mitja</forename> <surname>Kurki</surname> <marker>1,2,3</marker> ,</persName>
+			<persName><forename>Juha</forename> <surname>Karjalainen</surname> <marker>1,4,5</marker> ,</persName>
+			<persName><forename>Shabbeer</forename> <surname>Hassan</surname> <marker>1</marker> ,</persName>
+			<persName><forename>Javier</forename> <surname>Nunez-Fontarnau</surname> <marker>1</marker> ,</persName>
+			<persName><forename>Tuomo</forename> <middlename>T</middlename>. <middlename>J</middlename>. <surname>Kiiskinen</surname> <marker>1</marker> ,</persName>
+			<persName><forename>Sanni</forename> <surname>Söderlund</surname> <marker>6</marker> ,</persName>
+			<persName><forename>Niina</forename> <surname>Matikainen</surname> <marker>6,7</marker> ,</persName>
+			<persName><forename>Mathias</forename> <middlename>J</middlename>. <surname>Gerl</surname> <marker>8</marker> ,</persName>
+			<persName><forename>Michal</forename> <middlename>A</middlename>. <surname>Surma</surname> <marker>8,9</marker> ,</persName>
+			<persName><forename>Christian</forename> <surname>Klose</surname> <marker>8</marker> ,</persName>
+			<persName><forename>Nathan</forename> <middlename>O</middlename>. <surname>Stitziel</surname> <marker>10,11,12</marker> ,</persName>
+			<persName><forename>Hannele</forename> <surname>Laivuori</surname> <marker>1,13,14</marker> ,</persName>
+			<persName><forename>Aki</forename> <middlename>S</middlename>. <surname>Havulinna</surname> <marker>1,15</marker> ,</persName>
+			<persName><forename>Susan</forename> <middlename>K</middlename>. <surname>Service</surname> <marker>16</marker> ,</persName>
+			<persName><forename>Veikko</forename> <surname>Salomaa</surname> <marker>15</marker> ,</persName>
+			<persName><forename>Matti</forename> <surname>Pirinen</surname> <marker>1,17,18</marker> ,</persName>
+			FinnGen Project,
+			<persName><forename>Matti</forename> <surname>Jauhiainen</surname> <marker>15,19</marker> ,</persName>
+			<persName><forename>Mark</forename> <middlename>J</middlename>. <surname>Daly</surname> <marker>1,4</marker> ,</persName>
+			<persName><forename>Nelson</forename> <middlename>B</middlename>. <surname>Freimer</surname> <marker>16</marker>,</persName>
+			<persName><forename>Aarno</forename> <surname>Palotie</surname> <marker>1,4,20</marker> ,</persName>
+			<persName><forename>Marja-Riitta</forename> <surname>Taskinen</surname> <marker>6</marker> ,</persName>
+			<persName><forename>Kai</forename> <surname>Simons</surname> <marker>8,21</marker> , and</persName>
+			<persName><forename>Samuli</forename> <surname>Ripatti</surname> <marker>1,4,22*</marker></persName>
+			<persName><roleName>Prof</roleName>. <forename>Samuli</forename> <surname>Ripatti</surname></persName>
+		</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>David</forename>
+								 <middlename>F</middlename>.
+								 <surname>Jenkins</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tyler</forename>
+								 <surname>Faits</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Emma</forename>
+								 <surname>Briars</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sebastian</forename>
+								 
+								 <surname>Carrasco Pro</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Steve</forename>
+								 <surname>Cunningham</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Joshua</forename>
+								 <middlename>D</middlename>.
+								 <surname>Campbell</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Masanao</forename>
+								 <surname>Yajima</surname>
+								 <marker>3</marker> , and
+							</persName>
+							<persName>
+								 <forename>W</forename>.
+								 <middlename>Evan</middlename>
+								 <surname>Johnson</surname>
+								 <marker>1,2,4, §</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

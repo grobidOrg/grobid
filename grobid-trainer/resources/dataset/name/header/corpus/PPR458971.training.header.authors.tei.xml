@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+EDGARDO REBAGLIATI MARTINS. LIMA, PERÚ
+<persName><forename>MIGUEL</forename> <middlename>ANGEL</middlename> <surname>VENCES</surname>,</persName>
+<persName><forename>Juan</forename> <middlename>José</middlename> <surname>Pareja Ramos</surname>,</persName>
+<persName><forename>Paula</forename> <surname>Otero</surname> ,</persName>
+<persName><forename>Liz</forename> <middlename>E</middlename>. <surname>Veramendi-Espinoza</surname>,</persName>
+<persName><forename>Melissa</forename> <surname>Vega-Villafana</surname>,</persName>
+<persName><forename>Julissa</forename> <surname>Mogollón-Lavi</surname>,</persName>
+<persName><forename>Eduardo</forename> <surname>Morales</surname>,</persName>
+<persName><forename>Josseline</forename> <surname>Olivera-Vera</surname>,</persName>
+<persName><forename>Carol</forename> <surname>Meza</surname>,</persName>
+<persName><forename>Lucia</forename> <surname>Salas</surname>,</persName>
+<persName><forename>Andy</forename> <surname>Triveño</surname>,</persName>
+<persName><forename>Renzo</forename> <surname>Marin</surname>,</persName>
+<persName><forename>Ricardo</forename> <surname>Carpio-Rodriguez</surname>,</persName>
+<persName><forename>Jessica</forename> <middlename>Hanae</middlename> <surname>Zafra Tanaka</surname>.</persName> LIMA, PERÚ
+EDGARDO REBAGLIATI MARTINS NATIONAL HOSPITAL. LIMA, PERU
+<persName><forename>Miguel</forename> <middlename>A</middlename>. <surname>Vences</surname> <marker>1</marker> ,</persName>
+<persName><forename>Juan</forename> <middlename>J</middlename>. <surname>Pareja-Ramos</surname> <marker>1</marker> ,</persName>
+<persName><forename>Paula</forename> <surname>Otero</surname> <marker>1</marker> ,</persName>
+<persName><forename>Liz</forename> <middlename>E</middlename>. <surname>Veramendi-Espinoza</surname> <marker>1</marker> ,</persName>
+<persName><forename>Melissa</forename> <surname>Vega-Villafana</surname> <marker>1</marker> ,</persName>
+<persName><forename>Julissa</forename> <surname>Mogollón-Lavi</surname> <marker>1</marker> ,</persName>
+<persName><forename>Eduardo</forename> <surname>Morales</surname> <marker>1</marker> ,</persName>
+<persName><forename>Josseline</forename> <surname>Olivera-Vera</surname> <marker>1</marker> ,</persName>
+<persName><forename>Carol</forename> <surname>Meza</surname> <marker>1</marker> ,</persName>
+<persName><forename>Lucia</forename> <surname>Salas</surname> <marker>1</marker> ,</persName>
+<persName><forename>Andy</forename> <surname>Triveño</surname> <marker>1</marker> ,</persName>
+<persName><forename>Renzo</forename> <surname>Marín</surname> <marker>1</marker> ,</persName>
+<persName><forename>Ricardo</forename> <surname>Carpio-Rodriguez</surname> <marker>1</marker> ,</persName>
+<persName><forename>Jessica</forename> <middlename>H</middlename>. <surname>Zafra-Tanaka</surname> <marker>2</marker></persName>
+<persName><forename>Miguel</forename> <middlename>A</middlename>. <surname>Vences</surname></persName>
+<persName><forename>Juan</forename> <middlename>J</middlename>. <surname>Pareja-Ramos</surname></persName>
+<persName><forename>Paula</forename> <surname>Otero</surname></persName>
+<persName><forename>Liz</forename> <middlename>E</middlename>. <surname>Veramendi-Espinoza</surname></persName>
+<persName><forename>Melissa</forename> <surname>Vega-Villafana</surname></persName>
+<persName><forename>Julissa</forename> <surname>Mogollón-Lavi</surname></persName>
+<persName><forename>Eduardo</forename> <surname>Morales</surname></persName>
+<persName><forename>Josseline</forename> <surname>Olivera-Vera</surname></persName>
+<persName><forename>Carol</forename> <surname>Meza</surname></persName>
+<persName><forename>Lucia</forename> <surname>Salas</surname></persName>
+<persName><forename>Andy</forename> <surname>Triveño</surname></persName>
+<persName><forename>Renzo</forename> <surname>Marín</surname></persName>
+<persName><forename>Ricardo</forename> <surname>Carpio-Rodriguez</surname></persName>
+<persName><forename>Miguel</forename> <middlename>Angel</middlename> <surname>Vences</surname>, <roleName>MD</roleName>.</persName>
+</author>
+
+	
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

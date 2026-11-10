@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>André</forename> <middlename>Ricardo</middlename> <surname>Ribas Freitas¹</surname></persName>, <persName><forename>Otto</forename> <surname>Albuquerque Beckedorff¹</surname></persName>, <persName><forename>Luciano</forename> <surname>Pamplona de Góes Cavalcanti²</surname></persName>, <persName><forename>Andre</forename> <middlename>M</middlename> <surname>Siqueira³</surname></persName>, <persName><forename>Daniel</forename> <surname>Barros de Castro</surname> <marker>4</marker></persName> , <persName><forename>Cristiano</forename> <surname>Fernandes da Costa</surname> <marker>4</marker></persName> , <persName><forename>Daniele</forename> <surname>Rocha Queiróz Lemos</surname> <marker>5</marker></persName> , <persName><forename>Eliana</forename> <middlename>N</middlename> <middlename>C</middlename> <surname>Barros</surname> <marker>6</marker></persName>
+<persName><forename>André</forename> <middlename>Ricardo</middlename> <surname>Ribas Freitas</surname></persName> <persName><forename>André</forename> <middlename>Ricardo</middlename></persName> <persName><forename>Luciano</forename> <surname>Pamplona</surname></persName> <persName><forename>Andre</forename> <middlename>M</middlename> <surname>Siqueira</surname></persName> -- <persName><forename>Daniel</forename> <surname>Barros de Castro</surname></persName> <persName><forename>Cristiano</forename> <surname>Fernandes</surname></persName> <persName><forename>Daniele</forename> <surname>Rocha Queiróz Lemos</surname></persName> - <persName><forename>Eliana</forename> <middlename>N</middlename> <middlename>C</middlename> <surname>Barros</surname></persName> -
+</author>
+
+	
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

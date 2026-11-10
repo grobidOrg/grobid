@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Miranda-Soberón</surname> <forename>Ubaldo</forename> <marker>1,a</marker>,</persName>
+<persName><surname>del Rio-Mendoza</surname> <forename>Jeny</forename> <marker>1,b</marker> ,</persName>
+<persName><forename>Isabel</forename> <surname>Pino-Arana</surname> <marker>2,c</marker> ,</persName>
+<persName><surname>Carhuancho- Arango</surname> <forename>Maria</forename> <marker>1</marker> ,</persName>
+<persName><surname>Beteta-Cabrera</surname> <forename>Luciana</forename> <marker>1</marker> .</persName>
+<persName><surname>Miranda-Soberón</surname></persName> del Rio
+<persName><forename>Isabel</forename> <surname>Pino-Arana</surname></persName> <persName><surname>Carhuancho-Arango</surname></persName>
+<persName><surname>Beteta-Cabrera</surname></persName> <persName><forename>Jeny</forename> <surname>del Rio-Mendoza</surname></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Pablo</forename> <surname>Moreno</surname> <marker>a</marker> ,</persName>
+<persName><forename>Luca</forename> <surname>Pireddu</surname> <marker>b</marker> ,</persName>
+<persName><forename>Pierrick</forename> <surname>Roger</surname> <marker>c</marker> ,</persName>
+<persName><forename>Nuwan</forename> <surname>Goonasekera</surname> <marker>f</marker> ,</persName>
+<persName><forename>Enis</forename> <surname>Afgan</surname> <marker>g</marker> ,</persName>
+<persName><forename>Marius</forename> <surname>van den Beek</surname> <marker>l</marker> ,</persName>
+<persName><forename>Sijin</forename> <surname>He</surname> <marker>a</marker> ,</persName>
+<persName><forename>Anders</forename> <surname>Larsson</surname> <marker>f</marker> ,</persName>
+<persName><forename>Daniel</forename> <surname>Schober</surname> <marker>d</marker> ,</persName>
+<persName><forename>Christoph</forename> <surname>Ruttkies</surname> <marker>d</marker> ,</persName>
+<persName><forename>David</forename> <surname>Johnson</surname> <marker>h</marker> ,</persName>
+<persName><forename>Philippe</forename> <surname>Rocca-Serra</surname> <marker>h</marker> ,</persName>
+<persName><forename>Ralf</forename> <middlename>JM</middlename> <surname>Weber</surname> <marker>i</marker> ,</persName>
+<persName><forename>Björn</forename> <surname>Gruening</surname> <marker>j</marker> ,</persName>
+<persName><forename>Reza</forename> <middlename>M</middlename> <surname>Salek</surname> <marker>k</marker> ,</persName>
+<persName><forename>Namrata</forename> <surname>Kale</surname> <marker>a</marker> ,</persName>
+<persName><forename>Yasset</forename> <surname>Perez-Riverol</surname> <marker>a</marker> ,</persName>
+<persName><forename>Irene</forename> <surname>Papatheodorou</surname> <marker>a</marker> ,</persName>
+<persName><forename>Ola</forename> <surname>Spjuth</surname> <marker>e</marker> , and</persName>
+<persName><forename>Steffen</forename> <surname>Neumann</surname> <marker>d</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

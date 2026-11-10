@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+Authors
+<persName>
+<surname>Bon</surname>
+<forename>I</forename>
+<roleName>B. D</roleName>.,
+<roleName>Ph.D</roleName>.
+<marker>1</marker> ,
+</persName>
+<persName>
+<surname>Cano-Sarabia</surname>
+<forename>M</forename>
+<roleName>B. D</roleName>.,
+<roleName>Ph.D</roleName>.
+<marker>2</marker> ,
+</persName>
+<persName>
+<surname>de la Ossa</surname>
+<forename>N</forename>
+<roleName>M.D</roleName>.
+<marker>3</marker> ,
+</persName>
+<persName>
+<surname>Bartolí</surname>
+<forename>R</forename>
+<roleName>B. D</roleName>.,
+<roleName>Ph.D</roleName>.
+<marker>(CO) 1,4</marker> ,
+</persName>
+<persName>
+<surname>Lorenzo-Zúñiga</surname>
+<forename>V</forename>
+<roleName>M.D</roleName>.,
+<roleName>Ph.D</roleName>.
+<marker>1</marker>,
+</persName>
+<persName>
+<forename>Vicente</forename>
+<surname>Lorenzo-Zúñiga</surname>.
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

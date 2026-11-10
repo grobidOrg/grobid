@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Marinalva</forename>
+<middlename>O</middlename>.
+<surname>Freitas</surname>,
+</persName>
+<persName>
+<forename>Flávio</forename>
+<middlename>A</middlename>.
+<middlename>F</middlename>.
+<surname>Ponte</surname>,
+</persName>
+<persName>
+<forename>Mary</forename>
+<middlename>Anne</middlename>
+<middlename>S</middlename>.
+<surname>Lima</surname> and
+</persName>
+<persName>
+<forename>Edilberto</forename>
+<middlename>R</middlename>.
+<surname>Silveira</surname>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

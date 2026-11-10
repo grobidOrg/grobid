@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Sonia</forename>
+								 <surname>Stefanovic</surname>
+								 <marker>1,5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Brigitte</forename>
+								 <surname>Laforest</surname>
+								 <marker>1,4,5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jean-Pierre</forename>
+								 <surname>Desvignes</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Fabienne</forename>
+								 <surname>Lescroart</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Laurent</forename>
+								 <surname>Argiro</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Corinne</forename>
+								 <surname>Maurel-Zaffran</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <surname>Salgado</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Christopher</forename>
+								 <surname>de Bono</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kristijan</forename>
+								 <surname>Pazur</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Magali</forename>
+								 <surname>Théveniau-Ruissy</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Christophe</forename>
+								 <surname>Béroud</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Michel</forename>
+								 <surname>Pucéat</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Anthony</forename>
+								 <surname>Gavalas</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Robert</forename>
+								 <middlename>G</middlename>.
+								 <surname>Kelly</surname>
+								 <marker>2</marker> &amp;
+							</persName>
+							<persName>
+								 <forename>Stéphane</forename>
+								 <surname>Zaffran</surname>
+								 <marker>1,*</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

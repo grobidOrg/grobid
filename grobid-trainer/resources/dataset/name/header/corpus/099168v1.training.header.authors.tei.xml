@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Surya</forename> <surname>Saha</surname> <marker>⍺,β,1,*</marker>,</persName>
+<persName><forename>Prashant</forename> <middlename>S</middlename> <surname>Hosmani</surname> <marker>⍺,β,1,*</marker> ,</persName>
+<persName><forename>Krystal</forename> <surname>Villalobos-Ayala</surname> <marker>⍺,β,2</marker>,</persName>
+<persName><forename>Sherry</forename> <surname>Miller</surname> <marker>⍺,β,3</marker> ,</persName>
+<persName><forename>Teresa</forename> <surname>Shippy</surname> <marker>⍺,β,3</marker> ,</persName>
+<persName><forename>Andrew</forename> <surname>Rosendale</surname> <marker>⍺,β,4</marker> ,</persName>
+<persName><forename>Chris</forename> <surname>Cordola</surname> <marker>β,2</marker> ,</persName>
+<persName><forename>Tracey</forename> <surname>Bell</surname> <marker>β,2</marker> ,</persName>
+<persName><forename>Hannah</forename> <surname>Mann</surname> <marker>β,2</marker> ,</persName>
+<persName><forename>Gabe</forename> <surname>DeAvila</surname> <marker>β,2</marker> ,</persName>
+<persName><forename>Daniel</forename> <surname>DeAvila</surname> <marker>β,2</marker> ,</persName>
+<persName><forename>Zachary</forename> <surname>Moore</surname> <marker>β,4</marker> ,</persName>
+<persName><forename>Kyle</forename> <surname>Buller</surname> <marker>β,4</marker> ,</persName>
+<persName><forename>Kathryn</forename> <surname>Ciolkevich</surname> <marker>β,4</marker> ,</persName>
+<persName><forename>Samantha</forename> <surname>Nandyal</surname> <marker>β,4</marker> ,</persName>
+<persName><forename>Robert</forename> <surname>Mahoney</surname> <marker>β,4</marker> ,</persName>
+<persName><forename>Joshua</forename> <surname>Van Voorhis</surname> <marker>β,4</marker> ,</persName>
+<persName><forename>Megan</forename> <surname>Dunlevy</surname> <marker>β,4</marker> ,</persName>
+<persName><forename>David</forename> <surname>Farrow</surname> <marker>β,4</marker> ,</persName>
+<persName><forename>David</forename> <surname>Hunter</surname> <marker>β,3</marker> ,</persName>
+<persName><forename>Taylar</forename> <surname>Morgan</surname> <marker>β,3</marker> ,</persName>
+<persName><forename>Kayla</forename> <surname>Shore</surname> <marker>β,3</marker> ,</persName>
+<persName><forename>Victoria</forename> <surname>Guzman</surname> <marker>β,3</marker> ,</persName>
+<persName><forename>Allison</forename> <surname>Izsak</surname> <marker>β,5</marker> ,</persName>
+<persName><forename>Danielle</forename> <middlename>E</middlename> <surname>Dixon</surname> <marker>β,1,6</marker> ,</persName>
+<persName><forename>Liliana</forename> <surname>Cano</surname> <marker>β, 7</marker> ,</persName>
+<persName><forename>Andrew</forename> <surname>Cridge</surname> <marker>β, 8</marker> ,</persName>
+<persName><forename>Shannon</forename> <surname>Johnson</surname> <marker>ϑ, 9</marker> ,</persName>
+<persName><forename>Brandi</forename> <middlename>L</middlename> <surname>Cantarel</surname> <marker>ϑ, 10</marker> ,</persName>
+<persName><forename>Stephen</forename> <surname>Richardson</surname> <marker>ϑ,11,12</marker> ,</persName>
+<persName><forename>Adam</forename> <surname>English</surname> <marker>ϑ,11,12</marker> ,</persName>
+<persName><forename>Nan</forename> <surname>Leng</surname> <marker>ϑ,13</marker> ,</persName>
+<persName><forename>Xiaolong</forename> <surname>Cao</surname> <marker>Ƴ,14</marker> ,</persName>
+<persName><forename>Haobo</forename> <surname>Jiang</surname> <marker>Ƴ,15</marker> ,</persName>
+<persName><forename>Chris</forename> <surname>Childers</surname> <marker>⍺,16</marker> ,</persName>
+<persName><forename>Mei-Ju</forename> <surname>Chen</surname> <marker>⍺,17</marker> ,</persName>
+<persName><forename>Mirella</forename> <surname>Flores</surname> <marker>⍺,Ƴ,1</marker> ,</persName>
+<persName><forename>Wayne</forename> <surname>Hunter</surname> <marker>ϑ,β,ɣ,18</marker> ,</persName>
+<persName><forename>Michelle</forename> <surname>Cilia</surname> <marker>ɣ,19,20</marker> ,</persName>
+<persName><forename>Lukas</forename> <middlename>A</middlename> <surname>Mueller</surname> <marker>ɣ,1,21</marker> ,</persName>
+<persName><forename>Monica</forename> <surname>Munoz-Torres</surname> <marker>⍺,β, 22</marker> ,</persName>
+<persName><forename>David</forename> <surname>Nelson</surname> <marker>β,23</marker> ,</persName>
+<persName><forename>Monica</forename> <middlename>F</middlename>. <surname>Poelchau</surname> <marker>⍺,16</marker> ,</persName>
+<persName><forename>Josh</forename> <surname>Benoit</surname> <marker>β,ɣ,4</marker> ,</persName>
+<persName><forename>Helen</forename> <surname>Wiersma-Koch</surname> <marker>⍺,β,2</marker> ,</persName>
+<persName><forename>Tom</forename> <surname>D&apos;Elia</surname> <marker>β,ɣ,2</marker> ,</persName>
+<persName><forename>Susan</forename> <middlename>J</middlename> <surname>Brown</surname> <marker>β,ɣ,3</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

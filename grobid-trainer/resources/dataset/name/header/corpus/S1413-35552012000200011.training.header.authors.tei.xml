@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Martijn</forename>
+								<middlename>A</middlename>.
+								<surname>Spruit</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Frits</forename>
+								<middlename>M</middlename>.
+								<middlename>E</middlename>.
+								<surname>Franssen</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Erica</forename>
+								<middlename>P</middlename>.
+								<middlename>A</middlename>.
+								<surname>Rutten</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Scott</forename>
+								<middlename>S</middlename>.
+								<surname>Wagers</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Emiel</forename>
+								<middlename>F</middlename>.
+								<middlename>M</middlename>.
+								<surname>Wouters</surname>
+								<marker>1,3</marker>
+							</persName>
+							<persName>
+								<forename>Martijn</forename>
+								<middlename>A</middlename>.
+								<surname>Spruit</surname>,
+							</persName>
+						Rev Bras Fisioter,
+						São Carlos
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

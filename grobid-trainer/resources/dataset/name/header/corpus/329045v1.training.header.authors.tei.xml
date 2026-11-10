@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Sergio</forename>
+								 <surname>Arredondo-Alonso</surname>
+								 <marker>1</marker>,
+							</persName>
+							<persName>
+								<forename>Malbert</forename>
+								 <middlename>R</middlename>.
+								 <middlename>C</middlename>.
+								 <surname>Rogers</surname>
+								 <marker>1</marker>,
+							</persName>
+							<persName>
+								 <forename>Johanna</forename>
+								 <middlename>C</middlename>.
+								 <surname>Braat</surname>
+								 <marker>1</marker>,
+							</persName>
+							<persName>
+								 <forename>T</forename>.
+								 <middlename>D</middlename>.
+								 <surname>Verschuuren</surname>
+								 <marker>2</marker>,
+							</persName>
+							<persName>
+								 <forename>Janetta</forename>
+								 <surname>Top</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jukka</forename>
+								 <surname>Corander</surname>
+								 <marker>3,4,5</marker>,
+							</persName>
+							<persName>
+								 <forename>Rob</forename>
+								 <middlename>J</middlename>.
+								 <middlename>L</middlename>.
+								 <surname>Willems</surname>
+								 <marker>1</marker>,
+							</persName>
+							<persName>
+								 <forename>Anita</forename>
+								 <middlename>C</middlename>.
+								 <surname>Schürch</surname>
+								 <marker>1*</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>
