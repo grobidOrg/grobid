@@ -5,9 +5,9 @@ Render the Markdown reports of an end-to-end evaluation, optionally against a ba
     compare_reports.py --reports reports/ [--baseline baseline/] > summary.md
 
 Both directories hold the `report-<dataset>.md` files written by `jatsEval`, or by
-score_comet.py for the COMET corpus, in the same layout. Each dataset gets a summary table,
+score_arxiv.py for the arXiv corpus, in the same layout. Each dataset gets a summary table,
 the micro-average F1 of the header, citation and fulltext (the author, affiliation and combined
-F1 for COMET) per matching, followed by its full report, collapsed, rendered as in the benchmark pages
+F1 for arXiv) per matching, followed by its full report, collapsed, rendered as in the benchmark pages
 (doc/benchmarks/): per section and matching, the field-level precision, recall, F1 and
 support, then the instance-level results and the citation contexts. When a baseline is
 given, every score that moved is followed by its delta in brackets. A dataset missing
@@ -34,15 +34,15 @@ CONTEXT_LINE = re.compile(r"^(Precision|Recall|fscore) citation contexts:\s*([\d
 DOCUMENTS_LINE = re.compile(r"^Evaluation on (\d+) random PDF files")
 MATCHINGS = ["Strict", "Soft", "Levenshtein", "Ratcliff/Obershelp", "Fuzzy"]
 MICRO = "all fields (micro avg.)"
-COMET = "Authors and affiliations (COMET)"
+ARXIV = "Authors and affiliations (arXiv)"
 # rows of the summary table: (name, section, label of the row of the field-level results)
 SUMMARY_ROWS = [
     ("Header", "Header metadata", MICRO),
     ("Citation", "Citation metadata", MICRO),
     ("Fulltext", "Fulltext structures", MICRO),
-    ("Authors", COMET, "author"),
-    ("Affiliations", COMET, "affiliations"),
-    ("Authors with all their affiliations", COMET, "combined"),
+    ("Authors", ARXIV, "author"),
+    ("Affiliations", ARXIV, "affiliations"),
+    ("Authors with all their affiliations", ARXIV, "combined"),
 ]
 TABLE_HEADER = "| label | precision | recall | f1 | support |\n|---|---|---|---|---|"
 
@@ -131,7 +131,7 @@ def render_summary(report, base, out):
         for name, section, label in SUMMARY_ROWS
     ]
     rows = [(name, keys) for name, keys in rows if any(key in report for key in keys.values())]
-    # the matchings of the report only: the JATS reports have no fuzzy matching, COMET has only two
+    # the matchings of the report only: the JATS reports have no fuzzy matching, arXiv has only two
     matchings = [m for m in MATCHINGS if any(keys[m] in report for _, keys in rows)]
     if not rows:
         return

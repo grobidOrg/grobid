@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Score the authors and affiliations of the GROBID TEI of the COMET corpus against its JSON gold.
+Score the authors and affiliations of the GROBID TEI of the arXiv corpus against its JSON gold.
 
-    score_comet.py --data data/COMET_arxiv_1091 --output reports/report-COMET_arxiv_1091.md \\
-        [--json comet-eval.json]
+    score_arxiv.py --data data/COMET_arxiv_1091 --output reports/report-COMET_arxiv_1091.md \\
+        [--json arxiv-eval.json]
 
 The corpus directory holds one directory per article, with the gold record (<stem>.gold.json)
 and the TEI produced by `jatsEval` (<stem>.fulltext.tei.xml). The scorer is the one of
-ScienciaLAB/grobid-affiliation-evaluation, vendored under comet/ (see comet/README.md). An
+ScienciaLAB/grobid-affiliation-evaluation, vendored under arxiv/ (see arxiv/README.md). An
 article without TEI counts as an article where GROBID found no author: all its authors and
 affiliations are false negatives.
 
@@ -22,14 +22,14 @@ import sys
 import tempfile
 from pathlib import Path
 
-COMET_DIR = Path(__file__).resolve().parent / "comet"
-sys.path.insert(0, str(COMET_DIR))
+SCORER_DIR = Path(__file__).resolve().parent / "arxiv"
+sys.path.insert(0, str(SCORER_DIR))
 
 from grobid_xml_to_json import GrobidXMLParser  # noqa: E402
 from run_evaluation import evaluate_dataset, load_config  # noqa: E402
 
-CONFIG = COMET_DIR / "author_affiliation_eval_config.yaml"
-SECTION = "Authors and affiliations (COMET)"
+CONFIG = SCORER_DIR / "author_affiliation_eval_config.yaml"
+SECTION = "Authors and affiliations (arXiv)"
 MATCHINGS = {
     "strict": "Strict Matching (exact matches of the normalised strings)",
     "fuzzy": "Fuzzy Matching (similarity of the normalised strings of at least 0.95)",
@@ -112,7 +112,7 @@ def main():
         gold_path, predictions_path = Path(tmp, "gold.json"), Path(tmp, "predictions.json")
         gold_path.write_text(json.dumps(gold, ensure_ascii=False), encoding="utf-8")
         predictions_path.write_text(json.dumps(predictions, ensure_ascii=False), encoding="utf-8")
-        result = evaluate_dataset(str(gold_path), str(predictions_path), load_config(str(CONFIG)), COMET_DIR)
+        result = evaluate_dataset(str(gold_path), str(predictions_path), load_config(str(CONFIG)), SCORER_DIR)
 
     failed = [d for d in result["document_results"] if d.get("status") != "success"]
     if failed:

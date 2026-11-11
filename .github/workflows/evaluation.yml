@@ -8,7 +8,7 @@ name: End-to-end evaluation
 #   The runs are without consolidation, so without biblio-glutton, unless the pull request
 #   also has the label `evaluation:glutton`.
 #   The corpora are selected with the labels `corpus:all`, `corpus:pubmed`, `corpus:biorxiv`,
-#   `corpus:plos`, `corpus:elife` and `corpus:comet`: adding `evaluation:crf` or
+#   `corpus:plos`, `corpus:elife` and `corpus:arxiv`: adding `evaluation:crf` or
 #   `evaluation:delft` evaluates the corpora labelled on the pull request (all of them if none
 #   is), adding a `corpus:*`
 #   label to a pull request that has one of them evaluates that corpus, and adding
@@ -23,8 +23,8 @@ name: End-to-end evaluation
 # is gathered and scored once per corpus (`score`), and the reports are compared with the
 # ones of the latest successful run on the default branch (`report`).
 #
-# The COMET corpus (authors and affiliations of arXiv preprints) has JSON gold data, scored by
-# .github/scripts/evaluation/score_comet.py instead of jatsEval. It is in a private Hugging Face
+# The arXiv corpus (authors and affiliations of arXiv preprints) has JSON gold data, scored by
+# .github/scripts/evaluation/score_arxiv.py instead of jatsEval. It is in a private Hugging Face
 # dataset, read with the HF_TOKEN_COMET secret: the runs without it (pull requests from forks)
 # leave it out of `all`.
 
@@ -86,9 +86,9 @@ env:
   EVAL_DATASET_REPO: sciencialab/grobid-evaluation
   # branch, tag or commit of the dataset; pin it to keep runs comparable across dataset updates
   EVAL_DATASET_REVISION: main
-  # the COMET corpus, in a private dataset read with the HF_TOKEN_COMET secret
-  EVAL_COMET_DATASET_REPO: sciencialab/pdfs-arxiv-author-affiliations
-  EVAL_COMET_DATASET_REVISION: main
+  # the arXiv corpus, in a private dataset read with the HF_TOKEN_COMET secret
+  EVAL_ARXIV_DATASET_REPO: sciencialab/pdfs-arxiv-author-affiliations
+  EVAL_ARXIV_DATASET_REVISION: main
   # DeLFT and JEP, which GROBID runs the Deep Learning models with
   EVAL_VENV: /home/runner/eval-venv
   # the scripts of .github/scripts/evaluation, apart from DeLFT: its dependencies downgrade
@@ -172,8 +172,8 @@ jobs:
           INPUT_FLAVOR: ${{ inputs.flavor }}
           INPUT_CONSOLIDATION: ${{ inputs.consolidation }}
           INPUT_SHARDS: ${{ inputs.shards }}
-          # whether the private dataset of the COMET corpus can be read
-          HAS_COMET_TOKEN: ${{ secrets.HF_TOKEN_COMET != '' }}
+          # whether the private dataset of the arXiv corpus can be read
+          HAS_ARXIV_TOKEN: ${{ secrets.HF_TOKEN_COMET != '' }}
         run: |
           # corpus:* label -> corpus directory in the dataset
           corpus_dataset() {
@@ -183,8 +183,8 @@ jobs:
               biorxiv) echo biorxiv-10k-test-2000 ;;
               plos) echo PLOS_1000 ;;
               elife) echo eLife_984 ;;
-              comet) echo COMET_arxiv_1091 ;;
-              *) echo "::error::Unknown corpus label 'corpus:$1': use corpus:all, corpus:pubmed, corpus:biorxiv, corpus:plos, corpus:elife or corpus:comet" >&2; return 1 ;;
+              arxiv) echo COMET_arxiv_1091 ;;
+              *) echo "::error::Unknown corpus label 'corpus:$1': use corpus:all, corpus:pubmed, corpus:biorxiv, corpus:plos, corpus:elife or corpus:arxiv" >&2; return 1 ;;
             esac
           }
 
@@ -246,16 +246,16 @@ jobs:
             DEFAULT_SHARDS='{"PMC_sample_1943": 2, "biorxiv-10k-test-2000": 2, "PLOS_1000": 1, "eLife_984": 1, "COMET_arxiv_1091": 1}'
           fi
 
-          # Without HF_TOKEN_COMET (pull requests from forks), the COMET corpus cannot be downloaded:
+          # Without HF_TOKEN_COMET (pull requests from forks), the arXiv corpus cannot be downloaded:
           # it is left out of `all`, and asking for it fails here rather than in a predict job,
           # whose failure would leave every corpus unscored.
-          if [ "${HAS_COMET_TOKEN}" != "true" ]; then
+          if [ "${HAS_ARXIV_TOKEN}" != "true" ]; then
             if jq -e 'index("COMET_arxiv_1091")' <<< "${SELECTED_JSON}" > /dev/null; then
-              echo "::error::The COMET corpus is in a private Hugging Face dataset and this run has no HF_TOKEN_COMET secret (a pull request from a fork has none): remove corpus:comet, or run the workflow from a branch of ${GITHUB_REPOSITORY}."
+              echo "::error::The arXiv corpus is in a private Hugging Face dataset and this run has no HF_TOKEN_COMET secret (a pull request from a fork has none): remove corpus:arxiv, or run the workflow from a branch of ${GITHUB_REPOSITORY}."
               exit 1
             fi
             if jq -e 'index("all")' <<< "${SELECTED_JSON}" > /dev/null; then
-              echo "::notice::No HF_TOKEN_COMET secret in this run: the COMET corpus, in a private dataset, is not evaluated"
+              echo "::notice::No HF_TOKEN_COMET secret in this run: the arXiv corpus, in a private dataset, is not evaluated"
             fi
             DEFAULT_SHARDS=$(jq -c 'del(.COMET_arxiv_1091)' <<< "${DEFAULT_SHARDS}")
           fi
@@ -355,14 +355,14 @@ jobs:
       - name: Download the corpus shard
         env:
           # raises the Hugging Face rate limits; HF_TOKEN_COMET also reads the private dataset of
-          # the COMET corpus. Both are absent on fork pull requests.
+          # the arXiv corpus. Both are absent on fork pull requests.
           HF_TOKEN: ${{ matrix.dataset == 'COMET_arxiv_1091' && secrets.HF_TOKEN_COMET || secrets.HF_TOKEN }}
         run: |
           REPO="${EVAL_DATASET_REPO}"
           REVISION="${EVAL_DATASET_REVISION}"
           if [ "${DATASET}" = "COMET_arxiv_1091" ]; then
-            REPO="${EVAL_COMET_DATASET_REPO}"
-            REVISION="${EVAL_COMET_DATASET_REVISION}"
+            REPO="${EVAL_ARXIV_DATASET_REPO}"
+            REVISION="${EVAL_ARXIV_DATASET_REVISION}"
           fi
           "${TOOLS_VENV}/bin/python" .github/scripts/evaluation/fetch_dataset.py \
             --repo "${REPO}" --revision "${REVISION}" \
@@ -465,7 +465,7 @@ jobs:
       DATASET: ${{ matrix.dataset }}
     steps:
       - uses: actions/checkout@v7
-      # jatsEval scores the JATS corpora, score_comet.py the COMET corpus
+      # jatsEval scores the JATS corpora, score_arxiv.py the arXiv corpus
       - name: Set up JDK
         if: matrix.dataset != 'COMET_arxiv_1091'
         uses: actions/setup-java@v6.2.0
@@ -501,8 +501,8 @@ jobs:
             python -m venv "${TOOLS_VENV}"
             # pinned, so that the scores of two runs differ only by the TEI
             "${TOOLS_VENV}/bin/pip" install --no-cache-dir numpy==2.4.6 scipy==1.17.1 rapidfuzz==3.14.6 pyyaml==6.0.3
-            "${TOOLS_VENV}/bin/python" .github/scripts/evaluation/score_comet.py --data "data/${DATASET}" \
-              --output "reports/report-${DATASET}.md" --json "comet-eval-${DATASET}.json" 2>&1 \
+            "${TOOLS_VENV}/bin/python" .github/scripts/evaluation/score_arxiv.py --data "data/${DATASET}" \
+              --output "reports/report-${DATASET}.md" --json "arxiv-eval-${DATASET}.json" 2>&1 \
               | tee "score-${DATASET}.log"
             exit "${PIPESTATUS[0]}"
           fi
@@ -529,10 +529,10 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: log-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-score
-          # comet-eval-*.json: the matches of each article of the COMET corpus
+          # arxiv-eval-*.json: the matches of each article of the arXiv corpus
           path: |
             score-*.log
-            comet-eval-*.json
+            arxiv-eval-*.json
           retention-days: 7
 
   report:

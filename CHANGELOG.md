@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Added
 - Header `doi` field in the end-to-end evaluation of the full model. It is part of the header instance-level results, which are therefore not comparable with the benchmarks published before it was evaluated
-- COMET corpus (`COMET_arxiv_1091`, authors and affiliations of arXiv preprints, test split of cometadata/arxiv-author-affiliations) in the end-to-end evaluation workflow, scored with the vendored COMET scorer (`.github/scripts/evaluation/score_comet.py`) and selected with the label `corpus:comet`
+- arXiv corpus (`COMET_arxiv_1091`, authors and affiliations of arXiv preprints, test split of cometadata/arxiv-author-affiliations) in the end-to-end evaluation workflow, scored with the vendored author/affiliation scorer (`.github/scripts/evaluation/score_arxiv.py`) and selected with the label `corpus:arxiv`
 
 ## [0.9.1] - 2026-08-04
 

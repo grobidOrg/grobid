@@ -1,6 +1,6 @@
-# COMET author and affiliation scorer
+# arXiv author and affiliation scorer
 
-Scorer of the COMET corpus of the end-to-end evaluation (`COMET_arxiv_1091`, see
+Scorer of the arXiv corpus of the end-to-end evaluation (`COMET_arxiv_1091`, see
 doc/End-to-end-evaluation.md), whose gold data is not JATS but one JSON record per article,
 from [cometadata/arxiv-author-affiliations](https://huggingface.co/datasets/cometadata/arxiv-author-affiliations):
 
@@ -8,7 +8,7 @@ from [cometadata/arxiv-author-affiliations](https://huggingface.co/datasets/come
 {"arxiv_id": "arXiv:0704.1459", "authors": [{"name": "Valentin Ferenczi", "affiliations": ["Institut de Mathématiques de Jussieu, ..."]}], ...}
 ```
 
-`../score_comet.py` is the entry point. The other files are copied, unchanged, from
+`../score_arxiv.py` is the entry point. The other files are copied, unchanged, from
 ScienciaLAB/grobid-affiliation-evaluation (commit 45babb7, plus its uncommitted change of
 `grobid_xml_to_json.py` that strips the leading markers of the raw affiliations: `1`, `a)`, `*`,
 `†`, `(1)`, mathematical italic letters...), so that the scores are the same as with that tool:
