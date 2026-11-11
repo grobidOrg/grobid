@@ -8,6 +8,9 @@ shards of a corpus are disjoint, cover it entirely and are the same on every run
 
     fetch_dataset.py --dataset PMC_sample_1943 --output data --shard 0 --shards 4
     fetch_dataset.py --dataset PMC_sample_1943 --output data --content gold
+    fetch_dataset.py --repo sciencialab/grobid-evaluation-comet --dataset COMET_arxiv_1091 --output data
+
+The COMET corpus is in a private dataset: HF_TOKEN must hold a token that can read it.
 
 The files land under <output>/<dataset>/<article>/, the layout `jatsEval` expects.
 """
@@ -35,6 +38,9 @@ def is_pdf(name):
 def is_gold(name):
     """Mirror of the gold file selection in EndToEndEvaluation."""
     if name.endswith(".nxml") or name.endswith(".pub2tei.tei.xml"):
+        return True
+    # the JSON gold records of the COMET corpus, scored by score_comet.py and not by jatsEval
+    if name.endswith(".gold.json"):
         return True
     # bioRxiv, PLOS and eLife JATS files have a plain .xml extension; the output of
     # the tools under evaluation (GROBID TEI, pdfx) must not be taken for gold data
@@ -119,7 +125,7 @@ def main():
         "--content",
         choices=["all", "gold"],
         default="all",
-        help="'all' downloads the PDF and the gold XML, 'gold' only the gold XML (default: all)",
+        help="'all' downloads the PDF and the gold data, 'gold' only the gold data (default: all)",
     )
     parser.add_argument("--workers", type=int, default=8, help="parallel downloads (default: 8)")
     args = parser.parse_args()
