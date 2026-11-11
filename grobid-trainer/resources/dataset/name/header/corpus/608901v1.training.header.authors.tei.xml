@@ -7,18 +7,19 @@
 					<analytic>
 <author>
 <persName><forename>Romain</forename> <middlename>A</middlename>. <surname>Colas</surname> <marker>1 *</marker> ,</persName>
-<persName><surname>Le</surname> <forename>Thanh</forename> <middlename>Hoang</middlename> <middlename>Nhat</middlename> <marker>2 *</marker>,</persName>
-<persName><surname>Nguyen</surname> <forename>Thuy</forename> <middlename>Thuong</middlename> <middlename>Thuong</middlename> <marker>2</marker> ,</persName>
+<persName><forename>Le</forename> <middlename>Thanh</middlename> <middlename>Hoang</middlename> <surname>Nhat</surname> <marker>2 *</marker>,</persName>
+<persName><forename>Nguyen</forename> <middlename>Thuy</middlename> <middlename>Thuong</middlename> <surname>Thuong</surname> <marker>2</marker> ,</persName>
 <persName><forename>Esteban</forename> <middlename>Alberto</middlename> <surname>Gomez Cifuentes</surname> <marker>1</marker> ,</persName>
 <persName><forename>Lucy</forename> <surname>Ly</surname> <marker>1</marker> ,</persName>
 <persName><forename>Hai</forename> <middlename>Hoang</middlename> <surname>Thanh</surname> <marker>2</marker> ,</persName>
-<persName><surname>Nguyen</surname> <forename>Hoan</forename> <middlename>Phu</middlename> <marker>2</marker> ,</persName>
-<persName><surname>Nguyen</surname> <forename>Thi</forename> <middlename>Hoang</middlename> <middlename>Mai</middlename> <marker>2</marker> ,</persName>
+<persName><forename>Nguyen</forename> <middlename>Hoan</middlename> <surname>Phu</surname> <marker>2</marker> ,</persName>
+<persName><forename>Nguyen</forename> <middlename>Thi</middlename> <middlename>Hoang</middlename> <surname>Mai</surname> <marker>2</marker> ,</persName>
 <persName><forename>Guy</forename> <middlename>E</middlename>. <surname>Thwaites</surname> <marker>2,3,$</marker> and</persName>
 <persName><forename>Jesmond</forename> <surname>Dalli</surname> <marker>1,4, $,+</marker> .</persName>
 <persName><roleName>Dr</roleName> <forename>Jesmond</forename> <surname>Dalli</surname> <roleName>Ph.D</roleName>,</persName>
 William Harvey
 </author>
+
 </analytic>
 				</biblStruct>
 			</sourceDesc>

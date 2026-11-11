@@ -9,54 +9,77 @@
 	<persName>
 		<forename>Simone</forename>
 		<middlename>Cristina</middlename>
-		<surname>Camargo¹</surname> <marker>¶</marker> ;</persName>
+		<surname>Camargo¹</surname> <marker>¶</marker>
+	</persName> ;
 	<persName>
 		<forename>Regina</forename>
-		<surname>Conceição Garcia²</surname> <marker>¶</marker> ;</persName>
+		<middlename>Conceição</middlename>
+		<surname>Garcia²</surname> <marker>¶</marker>
+	</persName> ;
 	<persName>
 		<forename>Newton</forename>
-		<surname>Tavares Escocard de Oliveira²</surname> ;</persName>
+		<middlename>Tavares</middlename><middlename>Escocard</middlename><surname>de Oliveira²</surname>
+	</persName> ;
 	<persName>
 		<forename>Edmar</forename>
-		<surname>Soares de Vasconcelos²</surname> ;</persName>
+		<middlename>Soares</middlename><surname>de Vasconcelos²</surname>
+	</persName> ;
 	<persName>
 		<forename>Douglas</forename>
-		<surname>Galhardo¹</surname> ;</persName>
+		<surname>Galhardo¹</surname>
+	</persName> ;
 	<persName>
 		<forename>Sandra</forename>
 		<middlename>Mara</middlename>
-		<surname>Ströher²</surname> ;</persName>
+		<surname>Ströher²</surname>
+	</persName> ;
 	<persName>
 		<forename>Alceu</forename>
 		<middlename>Maurício</middlename>
-		<surname>Hartleben²</surname> ;</persName>
+		<surname>Hartleben²</surname>
+	</persName> ;
 	<persName>
 		<forename>Bruno</forename>
-		<surname>Garcia Pires</surname>
-		<marker>3</marker> ;</persName>
+		<middlename>Garcia</middlename>
+		<surname>Pires</surname>
+		<marker>3</marker>
+	</persName> ;
 	<persName>
 		<forename>Gustavo</forename>
 		<middlename>Andrés</middlename>
-		<surname>Patiño Piñeros</surname>
-		<marker>4</marker> ;</persName>
+		<middlename>Patiño</middlename>
+		<surname>Piñeros</surname>
+		<marker>4</marker>
+	</persName> ;
 	<persName>
 		<forename>David</forename>
 		<middlename>Fernando</middlename>
-		<surname>Gómez Díaz</surname>
-		<marker>4</marker> ;</persName>
+		<middlename>Gómez</middlename><surname>Díaz</surname>
+		<marker>4</marker>
+	</persName> ;
 	<persName>
 		<forename>Renato</forename>
-		<surname>de Jesus Ribeiro²</surname> ;</persName>
+		<middlename>de</middlename>
+		<middlename>Jesus</middlename>
+		<surname>Ribeiro²</surname>
+	</persName> ;
 	<persName>
 		<forename>Thiago</forename>
 		<middlename>Henrique</middlename>
-		<surname>Radtke²</surname> ;</persName>
+		<surname>Radtke²</surname>
+	</persName> ;
 	<persName>
 		<forename>Pedro</forename>
-		<surname>da Rosa Santos¹</surname> ,</persName>
+		<middlename>da</middlename>
+		<middlename>Rosa</middlename>
+		<surname>Santos¹</surname>
+	</persName> ,
 	<persName>
 		<forename>Vagner</forename>
-		<surname>de Alencar Arnaut de Toledo¹</surname> <marker>*</marker>
+		<middlename>de</middlename>
+		<middlename>Alencar</middlename>
+		<middlename>Arnaut</middlename>
+		<surname>de Toledo¹</surname> <marker>*</marker>
 	</persName>
 </author>
 </analytic>

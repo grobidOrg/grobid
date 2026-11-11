@@ -14,7 +14,8 @@
 							<persName>
 								<forename>Maria</forename>
 								<middlename>Julieta</middlename>
-								<surname>Fernandez Ruocco</surname>
+								<middlename>Fernandez</middlename>
+								<surname>Ruocco</surname>
 								<marker>1,3</marker> ,
 							</persName>
 							<persName>
@@ -45,13 +46,13 @@
 							</persName>
 							<persName>
 								<forename>Silvia</forename>
-								<middlename>del</middlename> <middlename>V</middlename>.
+								<middlename>del V</middlename>.
 								<surname>Alonso</surname>
 								<marker>1,*</marker>
 							</persName>
 							<persName>
 								<forename>Silvia</forename>
-								<middlename>del</middlename> <middlename>Valle</middlename>
+								<middlename>del Valle</middlename>
 								<surname>Alonso</surname>
 							</persName>
 						</author>

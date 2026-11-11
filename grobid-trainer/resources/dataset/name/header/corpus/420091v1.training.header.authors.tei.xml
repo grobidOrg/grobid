@@ -8,12 +8,14 @@
 <author>
 	<persName>
 		<forename>Victor</forename>
-		<surname>Soares Cavalcante-Costa</surname>
-		<marker>1</marker> ;</persName>
+		<middlename>Soares</middlename><surname>Cavalcante-Costa</surname>
+		<marker>1</marker>
+	</persName> ;
 	<persName>
 		<forename>Mariana</forename>
 		<surname>Costa-Reginaldo</surname>
-		<marker>1</marker> ;</persName>
+		<marker>1</marker>
+	</persName> ;
 	<persName>
 		<forename>Thamires</forename>
 		<surname>Queiroz-Oliveira</surname>
@@ -33,7 +35,7 @@
 	</persName>
 	<persName>
 		<forename>Danielle</forename>
-		<surname>Oliveira dos Anjos</surname>
+		<middlename>Oliveira</middlename><surname>dos Anjos</surname>
 		<marker>3</marker> ;
 	</persName>
 	<persName>

@@ -8,23 +8,24 @@
 <author>
 	<persName>
 		<forename>Nicole</forename>
-		<surname>Melo Calixto</surname>
+		<middlename>Melo</middlename><surname>Calixto</surname>
 		<marker>1 ¶</marker> ,
 	</persName>
 	<persName>
 		<forename>Daniela</forename>
-		<surname>Braz dos Santos</surname>
+		<middlename>Braz</middlename>
+		<surname>dos Santos</surname>
 		<marker>2</marker> ,
 	</persName>
 	<persName>
 		<forename>José</forename>
 		<middlename>Clecildo</middlename>
-		<surname>Barreto Bezerra</surname>
+		<middlename>Barreto</middlename><surname>Bezerra</surname>
 		<marker>2</marker> ,
 	</persName>
 	<persName>
 		<forename>Lourival</forename>
-		<surname>de Almeida Silva</surname>
+		<middlename>de</middlename><middlename>Almeida</middlename><surname>Silva</surname>
 		<marker>1 ¶*</marker>
 	</persName>
 </author>

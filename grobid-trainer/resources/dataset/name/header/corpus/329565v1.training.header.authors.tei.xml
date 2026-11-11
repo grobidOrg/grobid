@@ -12,7 +12,8 @@
 							</persName>
 							<persName>
 								 <forename>Fábio</forename>
-								 <surname>Andrade Teixeira</surname>
+								 <middlename>Andrade</middlename>
+								 <surname>Teixeira</surname>
 								 <marker>2&amp;</marker> ,
 							</persName>
 							<persName>
@@ -34,13 +35,15 @@
 							<persName>
 								 <forename>Ana</forename>
 								 <middlename>Cláudia</middlename>
-								 <surname>Maia Soares</surname>
+								 <middlename>Maia</middlename>
+								 <surname>Soares</surname>
 								 <marker>4&amp;</marker> ,
 							</persName>
 							<persName>
 								 <forename>Daniel</forename>
 								 <middlename>Lucas</middlename>
-								 <surname>Santos Dias</surname>
+								 <middlename>Santos</middlename>
+								 <surname>Dias</surname>
 								 <marker>5&amp;</marker> ,
 							</persName>
 							<persName>
@@ -50,12 +53,14 @@
 							</persName>
 							<persName>
 								 <forename>Angel</forename>
-								 <surname>Amaral Seixas</surname>
+								 <middlename>Amaral</middlename>
+								 <surname>Seixas</surname>
 								 <marker>4&amp;</marker> ,
 							</persName>
 							<persName>
 								 <forename>Camile</forename>
-								 <surname>Carvalho Pacheco</surname>
+								 <middlename>Carvalho</middlename>
+								 <surname>Pacheco</surname>
 								 <marker>6&amp;</marker>
 							</persName>
 						</author>

@@ -5,18 +5,21 @@
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-<author>
-<persName>
-<forename>Matilde</forename>
-<surname>Barón Ayala</surname>
-<marker>*</marker> and
-</persName>
-<persName>
-<forename>Gerhard</forename>
-<surname>Sandmann</surname>
-</persName>
-</author>
-</analytic>
+
+						<author>
+							<persName>
+								<forename>Matilde</forename>
+								<middlename>Barón</middlename>
+								<surname>Ayala</surname>
+								<marker>*</marker> and
+							</persName>
+							<persName>
+								<forename>Gerhard</forename>
+								<surname>Sandmann</surname>
+							</persName>
+						</author>
+
+					</analytic>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>

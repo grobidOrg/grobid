@@ -5,56 +5,59 @@
 			<sourceDesc>
 				<biblStruct>
 					<analytic>
-<author>
-<persName>
-<forename>S</forename>.
-<middlename>Lawrence</middlename>
-<surname>Librach</surname>,
-<roleName>MD</roleName>, <roleName>CCFP</roleName>, <roleName>FCFP</roleName>,
-<lb/>
-</persName>
 
-<persName>
-<forename>Maryse</forename>
-<surname>Bouvette</surname>,
-<roleName>RN</roleName>, <roleName>BScN</roleName>, <roleName>MEd</roleName>, <roleName>CON (C)</roleName>, <roleName>CHPCN(C)</roleName>,
-<lb/>
-</persName>
+						<author>
+							<persName>
+								<forename>S</forename>.
+								<middlename>Lawrence</middlename>
+								<surname>Librach</surname>,
+								<roleName>MD, CCFP, FCFP</roleName>,
+								<lb/>
+							</persName>
+							
+							<persName>
+								<forename>Maryse</forename>
+								<surname>Bouvette</surname>,
+								<roleName>RN, BScN, MEd, CON (C), CHPCN(C)</roleName>,
+								<lb/>
+							</persName>
+							
+							<persName>
+								<forename>Carlo</forename>
+								<surname>De Angelis</surname>,
+								<roleName>PharmD</roleName>,
+							</persName>
+							
+							<persName>
+								<forename>Justine</forename>
+								<surname>Farley</surname>,
+								<roleName>MD</roleName>,
+							</persName>
+							
+							<persName>
+								<forename>Doreen</forename>
+								<surname>Oneschuk</surname>,
+								<roleName>MD</roleName>,
+								<lb/>
+							</persName>
+							
+							<persName>
+								<forename>Jose</forename>
+								<middlename>Luis</middlename>
+								<surname>Pereira</surname>,
+								<roleName>MBChB, DA, CCFP, MSc</roleName> and
+							</persName>
+							
+							<persName>
+								<forename>Ann</forename>
+								<surname>Syme</surname>,
+								<roleName>RN, PhD(cand)</roleName>;
+								<lb/>
+							</persName>
+							
+						</author>
 
-<persName>
-<forename>Carlo</forename>
-<surname>De Angelis</surname>,
-<roleName>PharmD</roleName>,
-</persName>
-
-<persName>
-<forename>Justine</forename>
-<surname>Farley</surname>,
-<roleName>MD</roleName>,
-</persName>
-
-<persName>
-<forename>Doreen</forename>
-<surname>Oneschuk</surname>,
-<roleName>MD</roleName>,
-<lb/>
-</persName>
-
-<persName>
-<forename>Jose</forename>
-<middlename>Luis</middlename>
-<surname>Pereira</surname>,
-<roleName>MBChB</roleName>, <roleName>DA</roleName>, <roleName>CCFP</roleName>, <roleName>MSc</roleName> and
-</persName>
-
-<persName>
-<forename>Ann</forename>
-<surname>Syme</surname>,
-<roleName>RN</roleName>, <roleName>PhD(cand)</roleName>;
-<lb/>
-</persName>
-</author>
-</analytic>
+					</analytic>
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>
