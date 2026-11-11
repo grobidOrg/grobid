@@ -25,8 +25,8 @@ name: End-to-end evaluation
 #
 # The COMET corpus (authors and affiliations of arXiv preprints) has JSON gold data, scored by
 # .github/scripts/evaluation/score_comet.py instead of jatsEval. It is in a private Hugging Face
-# dataset, read with the HF_TOKEN secret: the runs without it (pull requests from forks) leave
-# it out of `all`.
+# dataset, read with the HF_TOKEN_COMET secret: the runs without it (pull requests from forks)
+# leave it out of `all`.
 
 on:
   workflow_dispatch:
@@ -86,7 +86,7 @@ env:
   EVAL_DATASET_REPO: sciencialab/grobid-evaluation
   # branch, tag or commit of the dataset; pin it to keep runs comparable across dataset updates
   EVAL_DATASET_REVISION: main
-  # the COMET corpus, in a private dataset that the HF_TOKEN secret must be able to read
+  # the COMET corpus, in a private dataset read with the HF_TOKEN_COMET secret
   EVAL_COMET_DATASET_REPO: sciencialab/pdfs-arxiv-author-affiliations
   EVAL_COMET_DATASET_REVISION: main
   # DeLFT and JEP, which GROBID runs the Deep Learning models with
@@ -173,7 +173,7 @@ jobs:
           INPUT_CONSOLIDATION: ${{ inputs.consolidation }}
           INPUT_SHARDS: ${{ inputs.shards }}
           # whether the private dataset of the COMET corpus can be read
-          HAS_HF_TOKEN: ${{ secrets.HF_TOKEN != '' }}
+          HAS_COMET_TOKEN: ${{ secrets.HF_TOKEN_COMET != '' }}
         run: |
           # corpus:* label -> corpus directory in the dataset
           corpus_dataset() {
@@ -246,16 +246,16 @@ jobs:
             DEFAULT_SHARDS='{"PMC_sample_1943": 2, "biorxiv-10k-test-2000": 2, "PLOS_1000": 1, "eLife_984": 1, "COMET_arxiv_1091": 1}'
           fi
 
-          # Without HF_TOKEN (pull requests from forks), the COMET corpus cannot be downloaded:
+          # Without HF_TOKEN_COMET (pull requests from forks), the COMET corpus cannot be downloaded:
           # it is left out of `all`, and asking for it fails here rather than in a predict job,
           # whose failure would leave every corpus unscored.
-          if [ "${HAS_HF_TOKEN}" != "true" ]; then
+          if [ "${HAS_COMET_TOKEN}" != "true" ]; then
             if jq -e 'index("COMET_arxiv_1091")' <<< "${SELECTED_JSON}" > /dev/null; then
-              echo "::error::The COMET corpus is in a private Hugging Face dataset and this run has no HF_TOKEN secret (a pull request from a fork has none): remove corpus:comet, or run the workflow from a branch of ${GITHUB_REPOSITORY}."
+              echo "::error::The COMET corpus is in a private Hugging Face dataset and this run has no HF_TOKEN_COMET secret (a pull request from a fork has none): remove corpus:comet, or run the workflow from a branch of ${GITHUB_REPOSITORY}."
               exit 1
             fi
             if jq -e 'index("all")' <<< "${SELECTED_JSON}" > /dev/null; then
-              echo "::notice::No HF_TOKEN secret in this run: the COMET corpus, in a private dataset, is not evaluated"
+              echo "::notice::No HF_TOKEN_COMET secret in this run: the COMET corpus, in a private dataset, is not evaluated"
             fi
             DEFAULT_SHARDS=$(jq -c 'del(.COMET_arxiv_1091)' <<< "${DEFAULT_SHARDS}")
           fi
@@ -354,9 +354,9 @@ jobs:
 
       - name: Download the corpus shard
         env:
-          # raises the Hugging Face rate limits, and reads the private dataset of the COMET corpus;
-          # absent on fork pull requests
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          # raises the Hugging Face rate limits; HF_TOKEN_COMET also reads the private dataset of
+          # the COMET corpus. Both are absent on fork pull requests.
+          HF_TOKEN: ${{ matrix.dataset == 'COMET_arxiv_1091' && secrets.HF_TOKEN_COMET || secrets.HF_TOKEN }}
         run: |
           REPO="${EVAL_DATASET_REPO}"
           REVISION="${EVAL_DATASET_REVISION}"

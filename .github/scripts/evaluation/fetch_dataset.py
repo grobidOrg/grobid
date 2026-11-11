@@ -10,7 +10,8 @@ shards of a corpus are disjoint, cover it entirely and are the same on every run
     fetch_dataset.py --dataset PMC_sample_1943 --output data --content gold
     fetch_dataset.py --repo sciencialab/pdfs-arxiv-author-affiliations --dataset COMET_arxiv_1091 --output data
 
-The COMET corpus is in a private dataset: HF_TOKEN must hold a token that can read it.
+The COMET corpus is in a private dataset: HF_TOKEN must hold a token that can read it
+(the workflow passes its secret HF_TOKEN_COMET).
 
 The files land under <output>/<dataset>/<article>/, the layout `jatsEval` expects.
 """

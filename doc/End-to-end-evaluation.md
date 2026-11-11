@@ -306,7 +306,7 @@ On a pull request, the corpora are selected with labels too:
 
 Adding `evaluation:crf` or `evaluation:delft` evaluates the corpora labelled on the pull request, or all of them if none is. Adding a `corpus:*` label to a pull request that already has one of these two labels evaluates that corpus alone, with the profile of that label (the pull request must then have only one of them). A `corpus:*` label added before them starts nothing: it only selects the corpora of the next run. The label `evaluation:glutton` works the same way: added to a pull request that has `evaluation:crf` or `evaluation:delft`, it evaluates the labelled corpora again with biblio-glutton; added before, it only switches the next runs to biblio-glutton.
 
-The COMET corpus is in a private Hugging Face dataset, read with the repository secret `HF_TOKEN`, which must be a token that can read `sciencialab/pdfs-arxiv-author-affiliations`. Pull requests from forks get no secret: their runs leave COMET out of `corpus:all` (with a notice), and fail at once with `corpus:comet`.
+The COMET corpus is in a private Hugging Face dataset, read with the repository secret `HF_TOKEN_COMET`, a Hugging Face token that can read `sciencialab/pdfs-arxiv-author-affiliations`. Pull requests from forks get no secret: their runs leave COMET out of `corpus:all` (with a notice), and fail at once with `corpus:comet`.
 
 Two profiles are available:
 
