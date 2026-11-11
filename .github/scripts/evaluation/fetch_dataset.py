@@ -8,7 +8,7 @@ shards of a corpus are disjoint, cover it entirely and are the same on every run
 
     fetch_dataset.py --dataset PMC_sample_1943 --output data --shard 0 --shards 4
     fetch_dataset.py --dataset PMC_sample_1943 --output data --content gold
-    fetch_dataset.py --repo sciencialab/grobid-evaluation-comet --dataset COMET_arxiv_1091 --output data
+    fetch_dataset.py --repo sciencialab/pdfs-arxiv-author-affiliations --dataset COMET_arxiv_1091 --output data
 
 The COMET corpus is in a private dataset: HF_TOKEN must hold a token that can read it.
 

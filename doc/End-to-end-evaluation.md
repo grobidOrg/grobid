@@ -80,7 +80,7 @@ The gold data is not JATS but one JSON record per article, `<article>.gold.json`
 {"arxiv_id": "arXiv:0704.1459", "authors": [{"name": "Valentin Ferenczi", "affiliations": ["Institut de Mathématiques de Jussieu, Université Pierre et Marie Curie–Paris 6, ..."]}], ...}
 ```
 
-`jatsEval -Prun=1` processes the PDFs, but does not score this gold data: `.github/scripts/evaluation/score_comet.py` does, see [COMET authors and affiliations](#comet-authors-and-affiliations). The arXiv PDFs are not ours to redistribute, so this corpus is in a separate, private Hugging Face dataset, `sciencialab/grobid-evaluation-comet`.
+`jatsEval -Prun=1` processes the PDFs, but does not score this gold data: `.github/scripts/evaluation/score_comet.py` does, see [COMET authors and affiliations](#comet-authors-and-affiliations). The arXiv PDFs are not ours to redistribute, so this corpus is in a separate, private Hugging Face dataset, `sciencialab/pdfs-arxiv-author-affiliations`.
 
 ## Getting publisher gold-standard data
 
@@ -306,7 +306,7 @@ On a pull request, the corpora are selected with labels too:
 
 Adding `evaluation:crf` or `evaluation:delft` evaluates the corpora labelled on the pull request, or all of them if none is. Adding a `corpus:*` label to a pull request that already has one of these two labels evaluates that corpus alone, with the profile of that label (the pull request must then have only one of them). A `corpus:*` label added before them starts nothing: it only selects the corpora of the next run. The label `evaluation:glutton` works the same way: added to a pull request that has `evaluation:crf` or `evaluation:delft`, it evaluates the labelled corpora again with biblio-glutton; added before, it only switches the next runs to biblio-glutton.
 
-The COMET corpus is in a private Hugging Face dataset, read with the repository secret `HF_TOKEN`, which must be a token that can read `sciencialab/grobid-evaluation-comet`. Pull requests from forks get no secret: their runs leave COMET out of `corpus:all` (with a notice), and fail at once with `corpus:comet`.
+The COMET corpus is in a private Hugging Face dataset, read with the repository secret `HF_TOKEN`, which must be a token that can read `sciencialab/pdfs-arxiv-author-affiliations`. Pull requests from forks get no secret: their runs leave COMET out of `corpus:all` (with a notice), and fail at once with `corpus:comet`.
 
 Two profiles are available:
 
@@ -319,7 +319,7 @@ A manual run can also be restricted to one corpus, select a [flavor](#flavors), 
 
 The runners have 4 CPU, no GPU, and stop a job after 6 hours, so each corpus is cut into shards:
 
-1. `predict` — one job per shard downloads its articles from the [Hugging Face dataset](https://huggingface.co/datasets/sciencialab/grobid-evaluation) (`sciencialab/grobid-evaluation-comet` for COMET), runs the [pre-flight configuration check](#pre-flight-configuration-check) and processes the PDFs. The shards of a corpus are disjoint and the same on every run.
+1. `predict` — one job per shard downloads its articles from the [Hugging Face dataset](https://huggingface.co/datasets/sciencialab/grobid-evaluation) (`sciencialab/pdfs-arxiv-author-affiliations` for COMET), runs the [pre-flight configuration check](#pre-flight-configuration-check) and processes the PDFs. The shards of a corpus are disjoint and the same on every run.
 
 2. `score` — one job per corpus gathers the TEI and the gold data of all its shards and runs `jatsEval` with `-Prun=0` (`score_comet.py` for COMET), so the report is computed over the whole corpus exactly as by a local run. A corpus is not scored if one of its shards failed.
 

@@ -87,7 +87,7 @@ env:
   # branch, tag or commit of the dataset; pin it to keep runs comparable across dataset updates
   EVAL_DATASET_REVISION: main
   # the COMET corpus, in a private dataset that the HF_TOKEN secret must be able to read
-  EVAL_COMET_DATASET_REPO: sciencialab/grobid-evaluation-comet
+  EVAL_COMET_DATASET_REPO: sciencialab/pdfs-arxiv-author-affiliations
   EVAL_COMET_DATASET_REVISION: main
   # DeLFT and JEP, which GROBID runs the Deep Learning models with
   EVAL_VENV: /home/runner/eval-venv
