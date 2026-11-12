@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+<listBibl>
+<bibl><author>Egense, T.</author> (<date>2026</date>). <title level="m">SolrWayback (Version 5.4.1) [Computer software]</title>. <ptr type="web">https://doi.org/10.5281/zenodo.18314399</ptr></bibl>
+<bibl><author>Egense, T. &amp; Eskildsen, T.</author> (<date>2026</date>). <title level="m">SolrWayback (Version 5.4.1) [Computer software]</title>. <ptr type="web">https://doi.org/10.5281/zenodo.18314399</ptr></bibl>
+<bibl><author>Egense, T., Eskildsen, T. &amp; Lauridsen, J.</author> (<date>2026</date>). <title level="m">SolrWayback (Version 5.4.1) [Computer software]</title>. <ptr type="web">https://doi.org/10.5281/zenodo.18314399</ptr></bibl>
+<bibl><author>Egense, T., Eskildsen, T., Lauridsen, J. &amp; O'Brien, B.</author> (<date>2026</date>). <title level="m">SolrWayback (Version 5.4.1) [Computer software]</title>. <ptr type="web">https://doi.org/10.5281/zenodo.18314399</ptr></bibl>
+<bibl><author>Egense, T., Eskildsen, T., Lauridsen, J., O'Brien, B. &amp; Jackson, A.</author> (<date>2026</date>). <title level="m">SolrWayback (Version 5.4.1) [Computer software]</title>. <ptr type="web">https://doi.org/10.5281/zenodo.18314399</ptr></bibl>
+<bibl><author>Egense, T., Eskildsen, T., Lauridsen, J., O'Brien, B., Jackson, A. &amp; Bellony, L.</author> (<date>2026</date>). <title level="m">SolrWayback (Version 5.4.1) [Computer software]</title>. <ptr type="web">https://doi.org/10.5281/zenodo.18314399</ptr></bibl>
+<bibl><author>Egense, T., Eskildsen, T., Lauridsen, J., O'Brien, B., Jackson, A., Bellony, L. &amp; Thogersen, J.</author> (<date>2026</date>). <title level="m">SolrWayback (Version 5.4.1) [Computer software]</title>. <ptr type="web">https://doi.org/10.5281/zenodo.18314399</ptr></bibl>
+<bibl><author>Egense, T., Eskildsen, T., Lauridsen, J., O'Brien, B., Jackson, A., Bellony, L., Thogersen, J. &amp; Johnston, V. H.</author> (<date>2026</date>). <title level="m">SolrWayback (Version 5.4.1) [Computer software]</title>. <ptr type="web">https://doi.org/10.5281/zenodo.18314399</ptr></bibl>
+</listBibl>
+</tei>
