@@ -1,0 +1,16 @@
+{
+  "entity_name": "Author",
+  "doc_id_field": "arxiv_id",
+  "entities_field": "authors",
+  "fields": {
+    "name": {
+      "type": "string",
+      "description": "Primary author name; used as key"
+    },
+    "affiliations": {
+      "type": "array[string]",
+      "description": "List of institutional affiliations"
+    }
+  }
+}
+
