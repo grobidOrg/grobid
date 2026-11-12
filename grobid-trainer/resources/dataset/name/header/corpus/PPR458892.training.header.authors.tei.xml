@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName>
+	<forename>Raimundo</forename>
+	<surname>da Silva</surname>
+	<marker>1*</marker>
+</persName>
+<persName>
+	<forename>Claudio</forename>
+	<surname>Tavares Sacchi</surname>,
+</persName>
+<persName>
+	<forename>Daniela</forename>
+	<surname>Bernardes Borges da Silva</surname>,
+</persName>
+<persName>
+	<forename>Ingra</forename>
+	<surname>Morales Claro</surname>,
+</persName>
+<persName>
+	<forename>Flávia</forename>
+	<middlename>Cristina</middlename>
+	<surname>da Silva Sales</surname>,
+</persName>
+<persName>
+	<forename>Claudia</forename>
+	<middlename>Regina</middlename>
+	<surname>Gonçalves</surname>,
+</persName>
+<persName>
+	<forename>Joshua</forename>
+	<surname>Quick</surname>,
+</persName>
+<persName>
+	<forename>Maria</forename>
+	<middlename>do</middlename>
+	<middlename>Carmo</middlename>,
+	<surname>Sampaio Tavares Timenetsky</surname>,
+</persName>
+<persName>
+	<forename>Nicholas</forename>
+	<middlename>James</middlename>
+	<surname>Loman</surname>,
+</persName>
+<persName>
+	<forename>Andrew</forename>
+	<surname>Rambaut</surname>,
+</persName>
+<persName>
+	<forename>Ester</forename>
+	<surname>Cerdeira Sabino</surname>,
+</persName>
+<persName>
+	<forename>Nuno</forename>
+	<surname>Rodrigues Faria</surname>
+</persName> EPI_ISL_41 3016
+<persName>
+	<forename>Jaqueline</forename>
+	<surname>Goes de Jesus</surname>,
+</persName>
+<persName>
+	<forename>Claudio</forename>
+	<surname>Tavares Sacchi</surname>,
+</persName>
+<persName>
+	<forename>Fabiana</forename>
+	<middlename>Cristina</middlename>
+	<surname>Pereira dos Santos</surname>,
+</persName>
+<persName>
+	<forename>Ingra</forename>
+	<surname>Morales Claro</surname>,
+</persName>
+<persName>
+	<forename>Flávia</forename>
+	<middlename>Cristina</middlename>
+	<surname>da Silva Sales</surname>,
+</persName>
+<persName>
+	<forename>Claudia</forename>
+	<middlename>Regina</middlename>
+	<surname>Gonçalves</surname>,
+</persName>
+<persName>
+	<forename>Joshua</forename>
+	<surname>Quick</surname>,
+</persName>
+<persName>
+	<forename>Maria</forename>
+	<middlename>do</middlename>
+	<middlename>Carmo</middlename>
+	<surname>Sampaio Tavares Timenetsky</surname>,
+</persName>
+<persName>
+	<forename>Nicholas</forename>
+	<middlename>James</middlename>
+	<surname>Loman</surname>,
+</persName>
+<persName>
+	<forename>Andrew</forename>
+	<surname>Rambaut</surname>,
+</persName>
+<persName>
+	<forename>Ester</forename>
+	<surname>Cerdeira Sabino</surname>,
+</persName>
+<persName>
+	<forename>Nuno</forename>
+</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>David</forename>
+								 <middlename>A</middlename>.
+								 <surname>Ellis</surname>
+								<marker>*</marker>,
+							</persName>
+							<persName>
+								 <forename>Ville</forename>
+								 <surname>Mustonen</surname>
+								 <marker>†,1</marker> ,
+							</persName>
+							<persName>
+								 <forename>María</forename>
+								 <surname>Rodríguez-López</surname>
+								<marker>*</marker>,
+							</persName>
+							<persName>
+								 <forename>Charalampos</forename>
+								 <surname>Rallis</surname>
+								<marker>* ,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Michał</forename>
+								 <surname>Malecki</surname>
+								<marker>*</marker>,
+							</persName>
+							<persName>
+								 <forename>Daniel</forename>
+								 <middlename>C</middlename>.
+								 <surname>Jeffares</surname>
+								<marker>* ,3</marker> and
+							</persName>
+							<persName>
+								 <forename>Jürg</forename>
+								 <surname>Bähler</surname>
+								<marker>*</marker>
+							</persName>
+							<persName>
+								 <forename>Jürg</forename>
+								 <surname>BählerGEE</surname>
+</persName>
+Gower
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

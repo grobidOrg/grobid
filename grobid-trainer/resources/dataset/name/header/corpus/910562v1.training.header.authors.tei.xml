@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Adrian</forename>
+								 <surname>Wolny</surname>
+								 <marker>1, 2 *</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lorenzo</forename>
+								 <surname>Cerrone</surname>
+								 <marker>1 *</marker> ,
+							</persName>
+							<persName>
+								 <forename>Athul</forename>
+								 <surname>Vijayan</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rachele</forename>
+								 <surname>Tofanelli</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Amaya</forename>
+								 
+								 <surname>Vilches Barro</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Marion</forename>
+								 <surname>Louveaux</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Christian</forename>
+								 <surname>Wenzl</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Susanne</forename>
+								 <surname>Steigleder</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Constantin</forename>
+								 <surname>Pape</surname>
+								 <marker>1, 2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alberto</forename>
+								 <surname>Bailoni</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Salva</forename>
+								 <surname>Duran-Nebreda</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>George</forename>
+								 <surname>Bassel</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jan</forename>
+								 <middlename>U</middlename>.
+								 <surname>Lohmann</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Fred</forename>
+								 <middlename>A</middlename>.
+								 <surname>Hamprecht</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kay</forename>
+								 <surname>Schneitz</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alexis</forename>
+								 <surname>Maizel</surname>
+								 <marker>4</marker> and
+							</persName>
+							<persName>
+								 <forename>Anna</forename>
+								 <surname>Kreshuk</surname>
+								 <marker>2</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

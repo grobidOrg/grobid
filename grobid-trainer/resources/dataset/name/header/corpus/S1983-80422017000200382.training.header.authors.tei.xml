@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Mariana</forename>
+								<surname>de Oliveira Lobo</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Fernanda</forename>
+								<middlename>Caroline</middlename>
+								<surname>Moura Garcez</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Armando</forename>
+								<middlename>José</middlename>
+								<surname>China Bezerra</surname>
+								<marker>3</marker> ,
+							</persName>
+							<persName>
+								<forename>Lucy</forename>
+								<surname>Gomes</surname>
+								<marker>4</marker>
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

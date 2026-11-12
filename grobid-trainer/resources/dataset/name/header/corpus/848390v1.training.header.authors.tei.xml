@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Roy</forename>
+								 <surname>Rabbie</surname>
+								<marker>* 1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Naser</forename>
+								 <surname>Ansari-Pour</surname>
+								<marker>* 3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Oliver</forename>
+								 <surname>Cast</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Doreen</forename>
+								 <surname>Lau</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Francis</forename>
+								 <surname>Scott</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sarah</forename>
+								 <middlename>J</middlename>.
+								 <surname>Welsh</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Christine</forename>
+								 <surname>Parkinson</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Leila</forename>
+								 <surname>Khoja</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Luiza</forename>
+								 <surname>Moore</surname>
+								 <marker>7,10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mark</forename>
+								 <surname>Tullett</surname>
+								 <marker>8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kim</forename>
+								 <surname>Wong</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ingrid</forename>
+								 <surname>Ferreira</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Julia</forename>
+								 <middlename>M</middlename>.
+								 <surname>Martínez Gómez</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mitchell</forename>
+								 <surname>Levesque</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ferdia</forename>
+								 <middlename>A</middlename>.
+								 <surname>Gallagher</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alejandro</forename>
+								 <surname>Jiménez-Sánchez</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Laura</forename>
+								 <surname>Riva</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Martin</forename>
+								 <middlename>L</middlename>.
+								 <surname>Miller</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kieren</forename>
+								 <surname>Allinson</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Peter</forename>
+								 <middlename>J</middlename>.
+								 <surname>Campbell</surname>
+								 <marker>7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Pippa</forename>
+								 <surname>Corrie</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <middlename>C</middlename>.
+								 <surname>Wedge</surname>
+								 <marker>§,3,11</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <middlename>J</middlename>.
+								 <surname>Adams</surname>
+								 <marker>§,1</marker>
+							</persName>
+							<persName>
+								 <roleName>Dr</roleName>.
+								 <forename>David</forename>
+								 <surname>Wedge</surname>
+							</persName>
+							<persName>
+								 <roleName>Dr</roleName>.
+								 <forename>David</forename>
+								 <surname>Adams</surname>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

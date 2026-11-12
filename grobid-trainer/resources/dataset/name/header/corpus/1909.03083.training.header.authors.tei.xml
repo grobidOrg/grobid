@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Rafael</forename>
+								 <surname>Yuste</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Michael</forename>
+								 <surname>Hawrylycz</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Nadia</forename>
+								 <surname>Aalling</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Detlev</forename>
+								 <surname>Arendt</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ruben</forename>
+								 <surname>Armananzas</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Giorgio</forename>
+								 <surname>Ascoli</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Concha</forename>
+								 <surname>Bielza</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Vahid</forename>
+								 <surname>Bokharaie</surname>
+								 <marker>7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tobias</forename>
+								 <surname>Bergmann</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Irina</forename>
+								 <surname>Bystron</surname>
+								 <marker>8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Marco</forename>
+								 <surname>Capogna</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yoonjeung</forename>
+								 <surname>Chang</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ann</forename>
+								 <surname>Clemens</surname>
+								 <marker>11</marker> ,
+							</persName>
+							<persName>
+								 <forename>Christiaan</forename>
+								 <surname>de Kock</surname>
+								 <marker>12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Javier</forename>
+								 <surname>DeFelipe</surname>
+								 <marker>13</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sandra</forename>
+								 <surname>Dos Santos</surname>
+								 <marker>14</marker> ,
+							</persName>
+							<persName>
+								 <forename>Keagan</forename>
+								 <surname>Dunville</surname>
+								 <marker>15</marker> ,
+							</persName>
+							<persName>
+								 <forename>Dirk</forename>
+								 <surname>Feldmeyer</surname>
+								 <marker>16</marker> ,
+							</persName>
+							<persName>
+								 <forename>Richárd</forename>
+								 <surname>Fiáth</surname>
+								 <marker>17</marker> ,
+							</persName>
+							<persName>
+								 <forename>Gordon</forename>
+								 <surname>Fishell</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Angelica</forename>
+								 <surname>Foggetti</surname>
+								 <marker>18</marker> ,
+							</persName>
+							<persName>
+								 <forename>Xuefan</forename>
+								 <surname>Gao</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Parviz</forename>
+								 <surname>Ghaderi</surname>
+								 <marker>19</marker> ,
+</persName>
+<persName>
+<forename>Onur</forename>
+<surname>Güntürkün</surname>
+<marker>20</marker> ,
+							</persName>
+							<persName>
+								 <forename>Vanessa</forename>
+								 <middlename>Jane</middlename>
+								 <surname>Hall</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Moritz</forename>
+								 <surname>Helmstaedter</surname>
+								 <marker>21</marker> ,
+							</persName>
+							<persName>
+								 <forename>Suzana</forename>
+								 <surname>Herculano-Houzel</surname>
+								 <marker>14</marker> ,
+							</persName>
+							<persName>
+								 <forename>Markus</forename>
+								 <surname>Hilscher</surname>
+								 <marker>22,23</marker> ,
+							</persName>
+							<persName>
+								 <forename>Hajime</forename>
+								 <surname>Hirase</surname>
+								 <marker>24</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jens</forename>
+								 <surname>Hjerling-Leffler</surname>
+								 <marker>23</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rebecca</forename>
+								 <surname>Hodge</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+<forename>Z</forename>. <middlename>Josh</middlename>
+								 <surname>Huang</surname>
+								 <marker>25</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rafiq</forename>
+								 <surname>Huda</surname>
+								 <marker>26</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yuan</forename>
+								 <surname>Juan</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Konstantin</forename>
+								 <surname>Khodosevich</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ole</forename>
+								 <surname>Kiehn</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Henner</forename>
+								 <surname>Koch</surname>
+								 <marker>27</marker> ,
+							</persName>
+							<persName>
+								 <forename>Eric</forename>
+								 <surname>Kuebler</surname>
+								 <marker>28</marker> ,
+							</persName>
+							<persName>
+								 <forename>Malte</forename>
+								 <surname>Kühnemund</surname>
+								 <marker>29</marker> ,
+							</persName>
+							<persName>
+								 <forename>Pedro</forename>
+								 <surname>Larrañaga</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Boudewijn</forename>
+								 <surname>Lelieveldt</surname>
+								 <marker>30</marker> ,
+							</persName>
+							<persName>
+								 <forename>Emma</forename>
+								 <middlename>Louise</middlename>
+								 <surname>Louth</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jan</forename>
+								 <surname>Lui</surname>
+								 <marker>31</marker> ,
+							</persName>
+							<persName>
+								 <forename>Huibert</forename>
+								 <surname>Mansvelder</surname>
+								 <marker>12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Oscar</forename>
+								 <surname>Marin</surname>
+								 <marker>32</marker> ,
+							</persName>
+							<persName>
+								 <forename>Julio</forename>
+								 <surname>Martínez-Trujillo</surname>
+								 <marker>28</marker> ,
+							</persName>
+							<persName>
+								 <forename>Homeira</forename>
+								 <surname>Moradi</surname>
+								 <marker>33</marker> ,
+							</persName>
+							<persName>
+								 <forename>Natalia</forename>
+								 <surname>Goriounova</surname>
+								 <marker>12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alok</forename>
+								 <surname>Mohapatra</surname>
+								 <marker>34</marker> ,
+							</persName>
+							<persName>
+								 <forename>Maiken</forename>
+								 <surname>Nedergaard</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Pavel</forename>
+								 <surname>Němec</surname>
+								 <marker>35</marker> ,
+							</persName>
+							<persName>
+								 <forename>Netanel</forename>
+								 <surname>Ofer</surname>
+								 <marker>36</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ulrich</forename>
+								 <surname>Pfisterer</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Samuel</forename>
+								 <surname>Pontes</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>William</forename>
+								 <surname>Redmond</surname>
+								 <marker>37</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jean</forename>
+								 <surname>Rossier</surname>
+								 <marker>38</marker> ,
+							</persName>
+							<persName>
+								 <forename>Joshua</forename>
+								 <surname>Sanes</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Richard</forename>
+								 <surname>Scheuermann</surname>
+								 <marker>39</marker> ,
+							</persName>
+							<persName>
+								 <forename>Esther</forename>
+								 <surname>Serrano Saiz</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Peter</forename>
+								 <surname>Somogyi</surname>
+								 <marker>8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Gábor</forename>
+								 <surname>Tamás</surname>
+								 <marker>40</marker> ,
+							</persName>
+							<persName>
+								 <forename>Andreas</forename>
+								 <surname>Tolias</surname>
+								 <marker>41</marker> ,
+							</persName>
+							<persName>
+								 <forename>Maria</forename>
+								 <surname>Tosches</surname>
+								 <marker>21</marker> ,
+							</persName>
+							<persName>
+								 <forename>Miguel</forename>
+								 <surname>Turrero Garcia</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Argel</forename>
+								 <surname>Aguilar-Valles</surname>
+								 <marker>42</marker> ,
+							</persName>
+							<persName>
+								 <forename>Hermany</forename>
+								 <surname>Munguba</surname>
+								 <marker>23</marker> ,
+							</persName>
+							<persName>
+								 <forename>Christian</forename>
+								 <surname>Wozny</surname>
+								 <marker>43</marker> ,
+							</persName>
+							<persName>
+								 <forename>Thomas</forename>
+								 <surname>Wuttke</surname>
+								 <marker>27</marker> ,
+							</persName>
+							<persName>
+								 <forename>Liu</forename>
+								 <surname>Yong</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Hongkui</forename>
+								 <surname>Zeng</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ed</forename>
+								 <middlename>S</middlename>.
+								 <surname>Lein</surname>
+								 <marker>2</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

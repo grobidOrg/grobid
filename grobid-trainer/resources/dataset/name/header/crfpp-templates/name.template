@@ -52,34 +52,17 @@ U70:%x[0,13]
 U71:%x[-1,13]
 U72:%x[1,13]
 
-# Dict info (3)
-UD0:%x[0,14]
+# Dict info (first name, last name)
 U81:%x[0,15]
 U82:%x[0,16]
-U84:%x[-1,14]
 U85:%x[-1,15]
 U86:%x[-1,16]
-U87:%x[-2,14]
 U88:%x[-2,15]
 U89:%x[-2,16]
-U8A:%x[1,14]
 U8B:%x[1,15]
 U8C:%x[1,16]
-U8D:%x[2,14]
 U8E:%x[2,15]
 U8F:%x[2,16]
-
-# Known title (column 17)
-UB0:%x[0,17]
-UB1:%x[-1,17]
-UB2:%x[-2,17]
-UB3:%x[1,17]
-UB4:%x[2,17]
-
-# Known suffix (column 18)
-UA0:%x[0,18]
-UA1:%x[-1,18]
-UA2:%x[1,18]
 
 # Punctuation type (column 19)
 U90:%x[0,19]

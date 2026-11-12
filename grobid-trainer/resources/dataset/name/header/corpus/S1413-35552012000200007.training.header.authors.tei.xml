@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Lucas</forename>
+								<middlename>R</middlename>.
+								<surname>Nascimento</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Lívia</forename>
+								<middlename>C</middlename>.
+								<middlename>G</middlename>.
+								<surname>Caetano</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Daniele</forename>
+								<middlename>C</middlename>.
+								<middlename>M</middlename>.
+								<middlename>A</middlename>.
+								<surname>Freitas</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Tatiane</forename>
+								<middlename>M</middlename>.
+								<surname>Morais</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Janaine</forename>
+								<middlename>C</middlename>.
+								<surname>Polese</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Luci</forename>
+								<middlename>F</middlename>.
+								<surname>Teixeira-Salmela</surname>
+								<marker>1</marker>
+							</persName>
+							Rev Bras Fisioter, São Carlos
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

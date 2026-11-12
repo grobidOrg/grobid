@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Gemma</forename>
+								 <surname>Danks</surname> ,
+							</persName>
+							<persName>
+								 <forename>Heloisa</forename>
+								 <surname>Galbiati</surname> ,
+							</persName>
+							<persName>
+								 <forename>Martina</forename>
+								 <surname>Raasholm</surname> ,
+							</persName>
+							<persName>
+								 <forename>Yamila</forename>
+								 <middlename>N</middlename>.
+								 <surname>Torres Cleuren</surname> ,
+							</persName>
+							<persName>
+								 <forename>Eivind</forename>
+								 <surname>Valen</surname> ,
+							</persName>
+							<persName>
+								 <forename>Pavla</forename>
+								 <surname>Navratilova</surname> , and
+							</persName>
+							<persName>
+								 <forename>Eric</forename>
+								 <middlename>M</middlename>.
+								 <surname>Thompson</surname>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

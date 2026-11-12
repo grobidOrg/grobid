@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Márcia</forename>
+								 <surname>Martinho Costa</surname>
+								 <marker>1 *</marker>,
+							</persName>
+							<persName>
+								 <forename>Anant</forename>
+								 <surname>Shah</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ian</forename>
+								 <surname>Rivens</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Carol</forename>
+								 <surname>Box</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tuathan</forename>
+								 <surname>O&apos;Shea</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jeffrey</forename>
+								 <surname>Bamber</surname>
+								 <marker>1</marker> and
+							</persName>
+							<persName>
+								 <forename>Gail</forename>
+								 <surname>ter Haar</surname>
+								 <marker>1</marker>
+							</persName>
+							<persName>
+								 <forename>Márcia</forename>
+								 
+								 <surname>Martinho Costa</surname>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

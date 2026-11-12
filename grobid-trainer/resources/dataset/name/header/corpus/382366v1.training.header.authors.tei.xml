@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Guilherme</forename>
+								 <middlename>S</middlename>.
+								 <surname>Ferreira</surname>
+								 <marker>1</marker> (
+								<roleName>PhD Candidate</roleName>),
+							</persName>
+							<persName>
+								 <forename>Désirée</forename>
+								 <surname>Veening- Griffioen</surname>
+								 <marker>1</marker> (
+								<roleName>PhD Candidate</roleName>),
+							</persName>
+							<persName>
+								 <forename>Wouter</forename>
+								 <surname>Boon</surname>
+								 <marker>2</marker> (
+								<roleName>Assistant Professor</roleName>),
+							</persName>
+							<persName>
+								 <forename>Ellen</forename>
+								 <surname>Moors</surname>
+								 <marker>2</marker> (
+								<roleName>Professor</roleName>),
+							</persName>
+							<persName>
+								 <forename>Christine</forename>
+								 <surname>Gispen-de Wied</surname>
+								 <marker>3</marker> (<roleName>Scientific Staff</roleName>),
+							</persName>
+							<persName>
+								 <forename>Huub</forename>
+								 <surname>Schellekens</surname>
+								 <marker>1</marker> (
+								<roleName>Professor</roleName>),
+							</persName>
+							<persName>
+								 <forename>Peter</forename>
+								 <surname>van Meer</surname>
+								 <marker>1, 3</marker> (
+								<roleName>Postdoctoral Researcher</roleName> <marker>1</marker>, <roleName>Non-Clinical Assessor</roleName> <marker>3</marker> )
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>John</forename>
+								 <middlename>M</middlename>
+								 <surname>Humphrey</surname>
+								 <marker>1 *</marker>,
+							</persName>
+							<persName>
+								 <forename>Philani</forename>
+								 <surname>Mpofu</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>April</forename>
+								 <middlename>C</middlename>.
+								 <surname>Pettit</surname>
+								 <marker>3,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Beverly</forename>
+								 <surname>Musick</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>E</forename>.
+								 <middlename>Jane</middlename>
+								 <surname>Carter</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Eugene</forename>
+								 <surname>Messou</surname>
+								 <marker>6,7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Olivier</forename>
+								 <surname>Marcy</surname>
+								 <marker>6,8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Brenda</forename>
+								 <surname>Crabtree-Ramirez</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Marcel</forename>
+								 <surname>Yotebieng</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kathryn</forename>
+								 <surname>Anastos</surname>
+								 <marker>11</marker> ,
+							</persName>
+							<persName>
+								 <forename>Timothy</forename>
+								 <middlename>R</middlename>.
+								 <surname>Sterling</surname>
+								 <marker>3,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Constantin</forename>
+								 <surname>Yiannoutsos</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lameck</forename>
+								 <surname>Diero</surname>
+								 <marker>12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kara</forename>
+								 <surname>Wools- Kaloustian</surname>
+								 <marker>1</marker> ,
+								 </persName>
+International Epidemiology Databases to Evaluate AIDS (IeDEA) Consortium^
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

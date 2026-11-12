@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Fang-Cheng</forename>
+								 <surname>Yeh</surname>
+								 <marker>1,2, *</marker>,
+							</persName>
+							<persName>
+								 <forename>Islam</forename>
+								 <middlename>M</middlename>.
+								 <surname>Zaydan</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Valerie</forename>
+								 <middlename>R</middlename>.
+								 <surname>Suski</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <surname>Lacomis</surname>
+								 <marker>3,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>R</forename>.
+								 <middlename>Mark</middlename>
+								 <surname>Richardson</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Joseph</forename>
+								 <middlename>C</middlename>.
+								 <surname>Maroon</surname>
+								 <marker>1</marker> , and
+							</persName>
+							<persName>
+								 <forename>Jessica</forename>
+								 <surname>Barrios-Martinez</surname>
+								 <marker>1</marker>
+							</persName>
+							<persName>
+								 <forename>Fang-Cheng</forename>
+								 <surname>Yeh</surname>,
+								 <roleName>M.D.</roleName> <roleName>Ph.D</roleName>.
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

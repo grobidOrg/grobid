@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Nunes da Silva</surname></persName>, <persName><forename>Fernando</forename> <surname>Ramalho Gameleira Soares</surname></persName>, <persName><forename>Gustavo</forename> <surname>Saraiva Frio</surname></persName>, <persName><forename>Aimê</forename> <surname>Oliveira</surname></persName>, <persName><forename>Fabrício</forename> <surname>Vieira Cavalcante</surname></persName>, <persName><forename>Natália</forename> <middlename>Regina</middlename> <surname>Alves Vaz Matins</surname></persName>, <persName><forename>Klébya</forename> <middlename>Hellen</middlename> <surname>Dantas Oliveira</surname></persName>, <persName><forename>Claudia</forename> <middlename>Cristina</middlename> <surname>de Aguiar Pereira</surname></persName>, <persName><forename>Ivana</forename> <middlename>Cristina</middlename> <surname>de Holanda Cunha Barreto</surname></persName>, <persName><forename>Mauro</forename> <surname>Niskier Sanchez</surname></persName>, <persName><forename>Fernando</forename> <middlename>José</middlename> <surname>Herkrath</surname></persName>, <persName><forename>Leonor</forename> <middlename>Maria</middlename> <surname>Pacheco Santos</surname></persName> <persName><forename>Everton</forename> <surname>Nunes da Silva</surname> <marker>1,2</marker></persName> <persName><forename>Fernando</forename> <surname>Ramalho Gameleira Soares³</surname></persName> <persName><forename>Gustavo</forename> <surname>Saraiva Frio</surname> <marker>2</marker></persName> <persName><forename>Aimê</forename> <surname>Oliveira</surname></persName> <persName><forename>Fabrício</forename> <surname>Vieira Cavalcante</surname> <marker>2</marker></persName> <persName><forename>Natália</forename> <middlename>Regina</middlename> <surname>Alves Vaz Martins</surname> <marker>2</marker></persName> <persName><forename>Klébya</forename> <middlename>Hellen</middlename> <surname>Dantas de Oliveira</surname> <marker>2</marker></persName> <persName><forename>Claudia</forename> <middlename>Cristina</middlename> <surname>de Aguiar Pereira</surname> <marker>4</marker></persName> <persName><forename>Ivana</forename> <middlename>Cristina</middlename> <surname>de Holanda Cunha Barreto</surname> <marker>5</marker></persName> <persName><forename>Mauro</forename> <surname>Niskier Sanchez</surname> <marker>2</marker></persName> <persName><forename>Fernando</forename> <middlename>José</middlename> <surname>Herkrath</surname> <marker>6</marker></persName> <persName><forename>Leonor</forename> <middlename>Maria</middlename> <surname>Pacheco Santos</surname> <marker>2</marker></persName>
+
+	
+</author>
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

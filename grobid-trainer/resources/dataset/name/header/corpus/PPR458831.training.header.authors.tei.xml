@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Fernando</forename> <surname>Moreira Simabuco</surname> <marker>1*</marker> ;</persName>
+<persName><forename>Rodrigo</forename> <surname>Esaki Tamura</surname> <marker>2</marker> ;</persName>
+<persName><forename>Isadora</forename> <middlename>Carolina</middlename> <surname>Betim Pavan</surname> <marker>1,3</marker> ;</persName>
+<persName><forename>Mirian</forename> <surname>Galliote Morale</surname> <marker>4</marker> ;</persName>
+<persName><forename>Armando</forename> <surname>Morais Ventura</surname> <marker>5</marker></persName>
+<persName><forename>Fernando</forename> <middlename>M</middlename>. <surname>Simabuco</surname></persName>
+<persName><forename>Rodrigo</forename> <middlename>E</middlename>. <surname>Tamura</surname></persName> 0000
+<persName><forename>Isadora</forename> <middlename>C</middlename>. <middlename>B</middlename>. <surname>Pavan</surname>,</persName>
+<persName><forename>Mirian</forename> <middlename>G</middlename>. <surname>Morale</surname></persName>
+<persName><forename>Armando</forename> <middlename>M</middlename>. <surname>Ventura</surname></persName>
+<persName><forename>Fernando</forename> <surname>Moreira Simabuco</surname></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

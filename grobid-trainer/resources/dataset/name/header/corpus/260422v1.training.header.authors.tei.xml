@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Stefano</forename>
+								 <surname>Luccioli</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <surname>Angulo-Garcia</surname>
+								 <marker>3,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rosa</forename>
+								 <surname>Cossart</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Arnaud</forename>
+								 <surname>Malvache</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Laura</forename>
+								 <surname>Módol</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Vitor</forename>
+								 <middlename>Hugo</middlename>
+								 <surname>Sousa</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Paolo</forename>
+								 <surname>Bonifazi</surname>
+								 <marker>5,6#</marker> , and
+							</persName>
+							<persName>
+								 <forename>Alessandro</forename>
+								 <surname>Torcini</surname>
+								 <marker>7,1,4,#,*</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

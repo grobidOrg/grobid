@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Vincent</forename>
+								 <surname>Demolombe</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alexandre</forename>
+								 <surname>de Brevern</surname>
+								 <marker>2,3,4,5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Liza</forename>
+								 <surname>Felicori</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Christophe</forename>
+								 <surname>NGuyen</surname>
+								 <marker>7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ricardo</forename>
+								 <middlename>Andrez</middlename>
+								 <surname>Machado de Avila</surname>
+								 <marker>8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lionel</forename>
+								 <surname>Valera</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Bénédicte</forename>
+								 <surname>Jardin-Watelet</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Géraldine</forename>
+								 <surname>Lavigne</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Aurélien</forename>
+								 <surname>Lebreton</surname>
+								 <marker>11</marker> ,
+							</persName>
+							<persName>
+								 <forename>Franck</forename>
+								 <surname>Molina</surname>
+								 <marker>7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Violaine</forename>
+								 <surname>Moreau</surname>
+								 <marker>12*</marker>
+							</persName>
+							<persName>
+								 <roleName>Dr</roleName>
+								 <forename>Violaine</forename>
+								 <surname>Moreau</surname>,
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

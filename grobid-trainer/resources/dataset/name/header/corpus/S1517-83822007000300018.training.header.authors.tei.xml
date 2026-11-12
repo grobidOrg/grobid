@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Melissa</forename>
+<middlename>O</middlename>.
+<surname>Xavier</surname>
+<marker>1 *</marker>;
+</persName>
+<persName>
+<forename>Mauro</forename>
+<middlename>P</middlename>.
+<surname>Soares</surname>
+<marker>2</marker> ;
+</persName>
+<persName>
+<forename>Ana</forename>
+<middlename>Raquel</middlename>
+<middlename>M</middlename>.
+<surname>Meinerz</surname>
+<marker>3</marker> ;
+</persName>
+<persName>
+<forename>Márcia</forename>
+<middlename>O</middlename>.
+<surname>Nobre</surname>
+<marker>4</marker> ;
+</persName>
+<persName>
+<forename>Luiza</forename>
+<middlename>G</middlename>.
+<surname>Osório</surname>
+<marker>5</marker> ;
+</persName>
+<persName>
+<forename>Rodolfo</forename>
+<middlename>P</middlename>.
+<surname>da Silva</surname>
+<suffix>Filho</suffix>
+<marker>6</marker> ;
+</persName>
+<persName>
+<forename>Mário</forename>
+<middlename>Carlos</middlename>
+<middlename>A</middlename>.
+<surname>Meireles</surname>
+<marker>1</marker>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

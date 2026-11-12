@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Ezequiel</forename> <surname>Monteverde</surname>,</persName>
+<persName><forename>Mauricio</forename> <surname>Yunge</surname>,</persName>
+<persName><forename>Jesus</forename> <surname>Dominguez-Rojas</surname>,</persName>
+<persName><forename>Analía</forename> <surname>Fernández</surname>,</persName>
+<persName><forename>Andrés</forename> <surname>Castillo-Moya</surname>,</persName>
+<persName><forename>Julia</forename> <surname>Acuña</surname>,</persName>
+<persName><forename>Rodrigo</forename> <surname>Adasme-Jeria</surname>,</persName>
+<persName><forename>Werther</forename> <surname>Brunow de Carvalho</surname>,</persName>
+<persName><forename>Cíntia</forename> <surname>Johnston</surname>,</persName>
+<persName><forename>Pablo</forename> <surname>Leyton-Avilés</surname>,</persName>
+<persName><forename>Yúrika</forename> <surname>López-Alarcón</surname>,</persName>
+<persName><forename>Gabriela</forename> <middlename>Fatima</middlename> <surname>Mallma Arrescurrenaga</surname>,</persName>
+<persName><forename>Alejandra</forename> <surname>Retta</surname>,</persName>
+<persName><forename>Gabriela</forename> <surname>Sequeira</surname>,</persName>
+<persName><forename>David</forename> <surname>Wood-Valverde</surname>,</persName>
+<persName><forename>Álvaro</forename> <surname>Franco Bustos Vera-Pinto</surname>,</persName>
+<persName><forename>Jaime</forename> <surname>Fernández-Sarmiento</surname>,</persName>
+<persName><forename>Carla</forename> <surname>Ferreira</surname>,</persName>
+<persName><forename>Lissa</forename> <surname>Samudio</surname>,</persName>
+<persName><forename>Adriana</forename> <surname>Wegner-Araya</surname>,</persName>
+<persName><forename>Nimia</forename> <surname>Vallejos- Carle</surname>,</persName>
+<persName><forename>Manuel</forename> <middlename>Eduardo</middlename> <surname>Munaico Abanto</surname>,</persName>
+<persName><forename>David</forename> <middlename>Pascual</middlename> <surname>Rojas Flores</surname>,</persName>
+<persName><forename>Vladimir</forename> <surname>Aguilera- Avendaño</surname>,</persName>
+<persName><forename>Silvio</forename> <surname>Fabio Torres</surname></persName>
+<persName><forename>Ezequiel</forename> <surname>Monteverde</surname> <marker>1</marker> ,</persName>
+<persName><forename>Mauricio</forename> <surname>Yunge</surname> <marker>2</marker> ,</persName>
+<persName><forename>Jesús</forename> <surname>Domínguez-Rojas</surname> <marker>3</marker> ,</persName>
+<persName><forename>Analía</forename> <surname>Fernández</surname> <marker>4</marker> ,</persName>
+<persName><forename>Andrés</forename> <surname>Castillo-Moya</surname> <marker>5</marker> ,</persName>
+<persName><forename>Julia</forename> <surname>Acuña</surname> <marker>6</marker> ,</persName>
+<persName><forename>Rodrigo</forename> <surname>Adasme-Jeria</surname> <marker>7</marker> ,</persName>
+<persName><forename>Werther</forename> <surname>Brunow de Carvalho</surname> <marker>8</marker> ,</persName>
+<persName><forename>Cíntia</forename> <surname>Johnston</surname> <marker>9</marker> ,</persName>
+<persName><forename>Pablo</forename> <surname>Leyton-Avilés</surname> <marker>10</marker> ,</persName>
+<persName><forename>Yúrika</forename> <surname>López- Alarcón</surname> <marker>11</marker> ,</persName>
+<persName><forename>Gabriela</forename> <surname>Mallma-Arrescurrenaga</surname> <marker>12</marker> ,</persName>
+<persName><forename>Alejandra</forename> <surname>Retta</surname> <marker>13</marker> ,</persName>
+<persName><forename>Gabriela</forename> <surname>Sequeira</surname> <marker>14</marker> ,</persName>
+<persName><forename>David</forename> <surname>Wood-Valverde</surname> <marker>15</marker> ,</persName>
+<persName><forename>Álvaro</forename> <surname>Vera-Pinto</surname> <marker>16</marker> ,</persName>
+<persName><forename>Jaime</forename> <surname>Fernández-Sarmiento</surname> <marker>17</marker> ,</persName>
+<persName><forename>Carla</forename> <surname>Ferreira</surname> <marker>18</marker> ,</persName>
+<persName><forename>Lissa</forename> <surname>Zamudio</surname> <marker>19</marker> ,</persName>
+<persName><forename>Adriana</forename> <surname>Wegner</surname> <marker>20</marker> ,</persName>
+<persName><forename>Nimia</forename> <surname>Vallejos-Carle</surname> <marker>21</marker> ,</persName>
+<persName><forename>Manuel</forename> <surname>Munaico-Abanto</surname> <marker>22</marker> ,</persName>
+<persName><forename>David</forename> <middlename>Pascual</middlename> <surname>Rojas-Flores</surname> <marker>23</marker> ,</persName>
+<persName><forename>Vladimir</forename> <surname>Aguilera-Avendaño</surname> <marker>24</marker> ,</persName>
+<persName><forename>Silvio</forename> <surname>Fabio-Torres</surname> <marker>25</marker></persName>
+Información de contacto del autor
+<persName><forename>Mauricio</forename> <surname>Yunge</surname>. <roleName>Médico</roleName>,</persName>
+<persName><forename>Jesús</forename> <surname>Domínguez-Rojas</surname>. <roleName>Médico</roleName>,</persName>
+<persName><forename>Analía</forename> <surname>Fernández</surname>. <roleName>Médica</roleName>,</persName>
+<persName><forename>Andrés</forename> <surname>Castillo-Moya</surname>. <roleName>Médico</roleName>,</persName>
+<persName><forename>Julia</forename> <surname>Acuña</surname>. <roleName>Médica</roleName>,</persName>
+<persName><forename>Rodrigo</forename> <surname>Adasme-Jeria</surname>. <roleName>Kinesiólogo</roleName>,</persName>
+<persName><forename>Werther</forename> <surname>Brunow de Carvalho</surname>. <roleName>Médico</roleName>,</persName>
+<persName><forename>Cíntia</forename> <surname>Johnston</surname>. <roleName>Fisioterapeuta Intensivo</roleName>.</persName>
+<persName><forename>Pablo</forename> <surname>Leyton-Avilés</surname>. <roleName>Médico</roleName>,</persName>
+<persName><forename>Yúrika</forename> <surname>López-Alarcón</surname>. <roleName>Médica</roleName>,</persName>
+<persName><forename>Gabriela</forename> <middlename>Fatima</middlename> <surname>Mallma</surname></persName>
+<persName><forename>Alejandra</forename> <surname>Retta</surname>. <roleName>Kinesióloga</roleName>,</persName>
+<persName><forename>Gabriela</forename> <surname>Sequeira</surname>. <roleName>Médica</roleName>,</persName>
+<persName><forename>David</forename> <surname>Wood-Valverde</surname>. <roleName>Kinesiólogo</roleName>,</persName> UPCP,
+<persName><forename>Álvaro</forename> <surname>Franco Bustos Vera-Pinto</surname>. <roleName>Kinesiólogo</roleName>,</persName>
+<persName><forename>Jaime</forename> <surname>Fernández-Sarmiento</surname>. <roleName>Médico</roleName>,</persName>
+<persName><forename>Lissa</forename> <surname>Samudio</surname>. <roleName>Médica</roleName>,</persName>
+<persName><forename>Adriana</forename> <surname>Wegner-Araya</surname>. <roleName>Médica</roleName>,</persName>
+<persName><forename>Nimia</forename> <surname>Vallejos-Carle</surname>. <roleName>Médica</roleName>,</persName>
+<persName><forename>Manuel</forename> <middlename>Eduardo</middlename> <surname>Munaico Abanto</surname>. <roleName>Asistente del</roleName></persName>
+<persName><forename>David</forename> <middlename>Pascual</middlename> <surname>Rojas Flores</surname>,</persName>
+<persName><forename>Vladimir</forename> <surname>Aguilera-Avendaño</surname>. <roleName>Médico</roleName>,</persName>
+<persName><forename>Silvio</forename> <surname>Fabio Torres</surname>. <roleName>Médico</roleName>,</persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

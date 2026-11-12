@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+DE SUAS AULAS,
+INTEGRANDO TECNOLOGIAS
+AUTOR 1,
+<persName>
+	<forename>SAMUEL</forename>
+	<surname>DA ROSA FLÔRES</surname>
+	<marker>1</marker>
+</persName> ORCID AUTOR 2,
+<persName>
+	<forename>MARIA</forename>
+	<middlename>MADALENA</middlename>
+	<surname>DULLIUS</surname>
+	<marker>2</marker>
+</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

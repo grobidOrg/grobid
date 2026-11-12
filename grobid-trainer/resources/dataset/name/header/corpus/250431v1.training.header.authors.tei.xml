@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Nancy</forename>
+								 <surname>Mah</surname>
+								 <marker>1*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Katerina</forename>
+								 <surname>Taškova</surname>
+								 <marker>2,3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Khadija</forename>
+								 
+								 <surname>El Amrani</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Krithika</forename>
+								 <surname>Hariharan</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Andreas</forename>
+								 <surname>Kurtz</surname>
+								 <marker>1</marker> and
+							</persName>
+							<persName>
+								 <forename>Miguel</forename>
+								 <middlename>A</middlename>.
+								 <surname>Andrade-Navarro</surname>
+								 <marker>2,3</marker>
+							</persName>
+							<persName>
+								 <roleName>Dr. rer. nat</roleName>.
+								 <forename>Nancy</forename>
+								 <surname>Mah</surname>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

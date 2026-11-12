@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Sônia</forename> <middlename>Regina</middlename> <surname>Fiorim ENUMO</surname> <marker>4</marker></persName> ORCID
+<persName><forename>Juliana</forename> <surname>Niederauer WEIDE</surname> <marker>5</marker></persName> ORCID
+<persName><forename>Eliana</forename> <middlename>Cristina</middlename> <surname>Chiminazzo VICENTINI</surname> <marker>6</marker></persName> ORCID
+<persName><forename>Murilo</forename> <surname>Fernandes de ARAUJO</surname> <marker>7</marker></persName> ORCID
+<persName><forename>Wagner</forename> <surname>de Lara MACHADO</surname> <marker>8</marker></persName> ORCID
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

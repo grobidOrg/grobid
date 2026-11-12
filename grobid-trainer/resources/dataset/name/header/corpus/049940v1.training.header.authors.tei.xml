@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Isabel</forename> <surname>Chinen</surname> <marker>1</marker> ,</persName>
+<persName><forename>Marcelo</forename> <surname>Galas</surname> <marker>1</marker> ,</persName>
+<persName><forename>Ezequiel</forename> <surname>Tuduri</surname> <marker>1</marker> ,</persName>
+<persName><forename>Maria</forename> <middlename>Rosa</middlename> <surname>Viñas</surname> <marker>1</marker> ,</persName>
+<persName><forename>Carolina</forename> <surname>Carbonari</surname> <marker>1</marker> , 4</persName>
+<persName><forename>Anabella</forename> <surname>Della Gaspera</surname> <marker>1</marker> ,</persName>
+<persName><forename>Daniela</forename> <surname>Nápoli</surname> <marker>1</marker> ,</persName>
+<persName><forename>David</forename> <middlename>M</middlename> <surname>Aanensen</surname> <marker>2,3</marker> ,</persName>
+<persName><forename>Silvia</forename> <surname>Argimón</surname> <marker>2</marker> , 5</persName>
+<persName><forename>Nicholas</forename> <middlename>R</middlename> <surname>Thomson</surname> <marker>4</marker> ,</persName>
+<persName><forename>Darren</forename> <surname>Hughes</surname> <marker>5</marker> ,</persName>
+<persName><forename>Stephen</forename> <surname>Baker</surname> <marker>6</marker> ,</persName>
+<persName><forename>Caterina</forename> <surname>Guzmán--Verri</surname> <marker>7</marker> , 6</persName>
+<persName><forename>Matthew</forename> <middlename>TG</middlename> <surname>Holden</surname> <marker>8</marker> ,</persName>
+<persName><forename>Alejandra</forename> <middlename>M</middlename> <surname>Abdala</surname> <marker>9</marker> ,</persName>
+<persName><forename>Lucia</forename> <middlename>P</middlename> <surname>Alvarez</surname> <marker>9</marker> ,</persName>
+<persName><forename>Beatriz</forename> <surname>Alvez</surname> <marker>10</marker> ,</persName>
+<persName><forename>Rosana</forename> <surname>Barros</surname> <marker>11</marker> , 7</persName>
+<persName><forename>Shirley</forename> <surname>Budall</surname> <marker>12</marker> ,</persName>
+<persName><forename>Constanza</forename> <surname>Campano</surname> <marker>13</marker> ,</persName>
+<persName><forename>Luciana</forename> <middlename>S</middlename> <surname>Chamosa</surname> <marker>14</marker> ,</persName>
+<persName><forename>Paul</forename> <surname>Cheddie</surname> <marker>15</marker> ,</persName>
+<persName><forename>Daniel</forename> <surname>Cisterna</surname> <marker>1</marker> , 8</persName>
+<persName><forename>Denise</forename> <surname>De Belder</surname> <marker>1</marker> ,</persName>
+<persName><forename>Milena</forename> <surname>Dropa</surname> <marker>16</marker> ,</persName>
+<persName><forename>David</forename> <surname>Durand</surname> <marker>17</marker> ,</persName>
+<persName><forename>Alan</forename> <surname>Elena</surname> <marker>14</marker> ,</persName>
+<persName><forename>Gustavo</forename> <surname>Fontecha</surname> <marker>18</marker> , 9</persName>
+<persName><forename>Claudia</forename> <surname>Huber</surname> <marker>19</marker> ,</persName>
+<persName><forename>Ana</forename> <middlename>Paula</middlename> <surname>Lemos</surname> <marker>20</marker> ,</persName>
+<persName><forename>Luciano</forename> <surname>Melli</surname> <marker>21</marker> ,</persName>
+<persName><forename>Roxana</forename> <middlename>Elizabeth</middlename> <surname>Paul</surname> <marker>1</marker> ,</persName>
+<persName><forename>Lesly</forename> <surname>Suarez</surname> <marker>22</marker> , 10</persName>
+<persName><forename>Julian</forename> <surname>Torres Flores</surname> <marker>22</marker> and</persName>
+<persName><forename>Josefina</forename> <surname>Campos</surname> <marker>1*</marker> 11 12</persName>
+<persName><forename>Josefina</forename> <surname>Campos</surname>,</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

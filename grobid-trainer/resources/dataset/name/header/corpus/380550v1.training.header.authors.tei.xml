@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Ricardo</forename>
+								 <surname>Guimarães de Queiroz</surname>
+								 <marker>1 ¶</marker> ,
+							</persName>
+							<persName>
+								 <forename>Carla</forename>
+								 <middlename>Heloisa</middlename>
+								 <surname>de Faria Domingues</surname>
+								 <marker>1 ¶</marker> ,
+							</persName>
+							<persName>
+								 <forename>Maria</forename>
+								 <middlename>Eugênia</middlename>
+<surname>Andrighetto Canozzi</surname>
+								 <marker>2 ¶</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rodrigo</forename>
+								 <surname>Garófallo Garcia</surname>
+								 <marker>1&amp;</marker> ,
+							</persName>
+							<persName>
+								 <forename>Clandio</forename>
+								 <surname>Favarini Ruviaro</surname>
+								 <marker>1&amp;</marker> ,
+							</persName>
+							<persName>
+								 <forename>Júlio</forename>
+<middlename>Otávio</middlename>
+<surname>Jardim Barcellos</surname>
+								 <marker>2&amp;</marker> ,
+							</persName>
+							<persName>
+								 <forename>João</forename>
+								 <middlename>Augusto</middlename>
+<surname>Rossi Borges</surname>
+								 <marker>1 ¶ *</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

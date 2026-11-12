@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>João</forename>
+<middlename>M</middlename>.
+<surname>Pina</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>João</forename>
+<surname>Guerra</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Miguel</forename>
+<middlename>B</middlename>.
+<surname>Lança</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>João</forename>
+<middlename>L</middlename>.
+<surname>Dias</surname>
+<marker>3</marker> ,
+</persName>
+<persName>
+<forename>Rita</forename>
+<middlename>N</middlename>.
+<surname>Lucas</surname>
+<marker>3</marker> ,
+</persName>
+<persName>
+<forename>Luis</forename>
+<middlename>C</middlename>.
+<surname>Pinheiro</surname>
+<marker>1</marker>
+</persName>
+<persName>
+<forename>João</forename>
+<surname>Magalhães Pina</surname>
+</persName>
+<persName>
+<forename>Luciano</forename>
+<surname>Alves Favorito</surname>
+</persName>
+<persName>
+<forename>João</forename>
+<surname>Magalhães Pina</surname>,
+<roleName>MD</roleName>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

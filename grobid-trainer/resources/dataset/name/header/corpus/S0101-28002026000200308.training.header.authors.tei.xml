@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Elenice</forename>
+								<surname>Andrade Milhomem Ayoub</surname>
+								<marker>1</marker>
+							</persName>
+							<persName>
+								<forename>Maria</forename>
+								<middlename>Helena</middlename>
+								<surname>Vaisbich</surname>
+								<marker>1</marker>
+							</persName>
+							<persName>
+								<forename>Daniel</forename>
+								<surname>Ribeiro Rocha</surname>
+								<marker>1</marker>
+							</persName>
+							<persName>
+								<forename>Bruno</forename>
+								<surname>Pellozo Cerqueira</surname>
+								<marker>1</marker>
+							</persName>
+							<persName>
+								<forename>Ana</forename>
+								<middlename>Cristina</middlename>
+								<surname>Carvalho de Matos</surname>
+								<marker>1</marker>
+							</persName>
+							<persName>
+								<forename>Igor</forename>
+								<surname>Gouveia Pietrobom</surname>
+								<marker>1</marker>
+							</persName>
+							<persName>
+								<forename>Ita</forename>
+								<surname>Pfeferman Heilberg</surname>
+								<marker>1</marker>
+							</persName>
+							<persName>
+								<forename>Ita</forename>
+								<surname>Pfeferman Heilberg</surname>.
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>
