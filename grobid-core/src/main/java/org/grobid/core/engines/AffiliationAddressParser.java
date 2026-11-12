@@ -969,6 +969,13 @@ public class AffiliationAddressParser extends AbstractParser {
         }
 
         String resultAffiliation = label(affiliationSequenceWithFeatures);
+        return trainingExtraction(resultAffiliation, tokenizationsAffiliation);
+    }
+
+    /**
+     * Write a labelled affiliation sequence in the training format without any string modification.
+     */
+    protected StringBuilder trainingExtraction(String resultAffiliation, List<LayoutToken> tokenizationsAffiliation) {
         StringBuilder bufferAffiliation = new StringBuilder();
         if (resultAffiliation == null) {
             return bufferAffiliation;
@@ -1069,6 +1076,13 @@ public class AffiliationAddressParser extends AbstractParser {
                 if (s1 != null && s1.startsWith("I-")) {
                     // start of a new marker: it begins a new affiliation block, so close the
                     // previous affiliation/address before opening a fresh <affiliation><marker>.
+                    if ("<marker>".equals(lastTag0)) {
+                        // a marker right after another marker ("*" then "**"): testClosingTag only
+                        // closes on a label change and writeField treats it as a continuation, so
+                        // close the open marker here and open the new one with its own tag
+                        bufferAffiliation.append("</marker>\n");
+                        output = "\t\t\t\t\t\t\t<marker>" + s2;
+                    }
                     if (hasAddressTag) {
                         bufferAffiliation.append("\t\t\t\t\t\t\t</address>\n");
                         hasAddressTag = false;

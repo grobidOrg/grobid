@@ -647,4 +647,36 @@ public class AffiliationAddressParserTest {
         assertThat(affiliationBlocksFromSegments.get(11), is(not("@newline")));
 
     }
+
+    @Test
+    public void testTrainingExtraction_consecutiveMarkers_shouldBeWellFormed() throws Exception {
+        // "*" and then "**" printed before the next affiliation (COMET 2312.02254): a marker that
+        // directly follows another marker must close it before opening the next affiliation
+        String text = "* Princeton University * * MIT";
+        List<LayoutToken> tokenizations = analyzer.tokenizeWithLayoutToken(text);
+        String labelResult = Joiner.on("\n")
+                .join(
+                        "*\tLINEIN\tI-<marker>",
+                        "Princeton\tLINEIN\tI-<institution>",
+                        "University\tLINEIN\t<institution>",
+                        "*\tLINEIN\tI-<marker>",
+                        "*\tLINEIN\tI-<marker>",
+                        "MIT\tLINEIN\tI-<institution>");
+
+        String training = this.target.trainingExtraction(labelResult, tokenizations).toString();
+
+        javax.xml.parsers.DocumentBuilderFactory factory = javax.xml.parsers.DocumentBuilderFactory.newInstance();
+        org.w3c.dom.Document doc = factory.newDocumentBuilder()
+                .parse(
+                        new org.xml.sax.InputSource(new java.io.StringReader("<root>" + training + "</root>")));
+        org.w3c.dom.NodeList affiliations = doc.getElementsByTagName("affiliation");
+        org.w3c.dom.NodeList markers = doc.getElementsByTagName("marker");
+        assertThat(affiliations.getLength(), is(3));
+        assertThat(markers.getLength(), is(3));
+        for (int i = 0; i < markers.getLength(); i++) {
+            assertThat(markers.item(i).getTextContent().trim(), is("*"));
+            assertThat(markers.item(i).getParentNode().getNodeName(), is("affiliation"));
+        }
+    }
+
 }

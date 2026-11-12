@@ -599,8 +599,16 @@ public class Person {
         List<String> referenceTokens = forenameTokens(reference);
         if (referenceTokens.isEmpty())
             return false;
-        List<String> shorter = candidateTokens.size() <= referenceTokens.size() ? candidateTokens : referenceTokens;
-        List<String> longer = shorter == candidateTokens ? referenceTokens : candidateTokens;
+        return forenameTokensCompatible(candidateTokens, referenceTokens);
+    }
+
+    /**
+     * True when, token by token, the shorter list appears in order in the longer one, each token
+     * equal or a single-letter initial of the other.
+     */
+    private static boolean forenameTokensCompatible(List<String> a, List<String> b) {
+        List<String> shorter = a.size() <= b.size() ? a : b;
+        List<String> longer = shorter == a ? b : a;
         int matched = 0;
         for (String token : longer) {
             if (matched < shorter.size() && forenameTokensMatch(token, shorter.get(matched)))
@@ -612,14 +620,36 @@ public class Person {
     private static List<String> forenameTokens(Person person) {
         List<String> tokens = new ArrayList<>();
         for (String field : new String[]{person.getFirstName(), person.getMiddleName()}) {
-            if (StringUtils.isBlank(field))
-                continue;
-            for (String token : TextUtilities.removeAccents(field.toLowerCase()).split("[\\s.\\-]+")) {
-                if (!token.isEmpty())
-                    tokens.add(token);
-            }
+            tokens.addAll(forenameTokens(field));
         }
         return tokens;
+    }
+
+    private static List<String> forenameTokens(String field) {
+        List<String> tokens = new ArrayList<>();
+        if (StringUtils.isBlank(field))
+            return tokens;
+        for (String token : TextUtilities.removeAccents(field.toLowerCase()).split("[\\s.\\-]+")) {
+            if (!token.isEmpty())
+                tokens.add(token);
+        }
+        return tokens;
+    }
+
+    /**
+     * Two first names belong to different persons unless they are the same name once case, accents,
+     * spaces, periods and hyphens are ignored ("Zhen-Liang" = "Zhenliang"), or one is made of initials
+     * of the other ("O" ~ "Orenthal", "J.-P." ~ "Jean-Pierre"). A full first name that is only a prefix
+     * of the other is a different person: "Hao" Wang and "Haotian" Wang are two authors.
+     */
+    private static boolean firstNamesClash(String a, String b) {
+        if (a == null || b == null)
+            return false;
+        List<String> tokensA = forenameTokens(a);
+        List<String> tokensB = forenameTokens(b);
+        if (String.join("", tokensA).equals(String.join("", tokensB)))
+            return false;
+        return !forenameTokensCompatible(tokensA, tokensB);
     }
 
     private static boolean forenameTokensMatch(String a, String b) {
@@ -664,11 +694,6 @@ public class Person {
                 List<Person> newLocalPersons = new ArrayList<Person>();
                 for (int j = 0; j < localPersons.size(); j++) {
                     Person localPerson = localPersons.get(j);
-                    String localFirstName = localPerson.getFirstName();
-                    if (localFirstName != null) {
-                        localFirstName = localFirstName.toLowerCase();
-                        localFirstName = localFirstName.replaceAll("[\\-\\.]", "");
-                    }
                     String localMiddleName = localPerson.getMiddleName();
                     if (localMiddleName != null) {
                         localMiddleName = localMiddleName.toLowerCase();
@@ -680,11 +705,6 @@ public class Person {
                         if (k == j)
                             continue;
                         Person otherPerson = localPersons.get(k);
-                        String otherFirstName = otherPerson.getFirstName();
-                        if (otherFirstName != null) {
-                            otherFirstName = otherFirstName.toLowerCase();
-                            otherFirstName = otherFirstName.replaceAll("[\\-\\.]", "");
-                        }
                         String otherMiddleName = otherPerson.getMiddleName();
                         if (otherMiddleName != null) {
                             otherMiddleName = otherMiddleName.toLowerCase();
@@ -692,18 +712,8 @@ public class Person {
                         }
 
                         // test first name clash
-                        if (localFirstName != null && otherFirstName != null) {
-                            if (localFirstName.length() == 1 && otherFirstName.length() == 1) {
-                                if (!localFirstName.equals(otherFirstName)) {
-                                    clash = true;
-                                }
-                            } else {
-                                if (!localFirstName.equals(otherFirstName) &&
-                                        !localFirstName.startsWith(otherFirstName) &&
-                                        !otherFirstName.startsWith(localFirstName)) {
-                                    clash = true;
-                                }
-                            }
+                        if (firstNamesClash(localPerson.getFirstName(), otherPerson.getFirstName())) {
+                            clash = true;
                         }
 
                         // test middle name clash
