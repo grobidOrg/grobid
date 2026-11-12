@@ -8,11 +8,11 @@
 
 			<body>1. Introduction <lb/>Le théorème de Lichnerowicz peutêtre formulé comme une estimation non optimale de <lb/>la première valeur propre de l&apos;opérateur de Dirac. <lb/>Théorème 1.1. ([Lic63]) Sur une variété riemannienne spinorielle compacte (sans bord) <lb/>(M n , g)à courbure scalaire R strictement positive, la première valeur propre λ 1 (D) de <lb/>l&apos;opérateur de Dirac statisfait : <lb/>λ 1 (D) 2 &gt; <lb/>1 <lb/>4 <lb/>inf <lb/>M <lb/>R. <lb/>(1) <lb/>Une conséquence fondamentale de ce résultat est donnée par l&apos;existence d&apos;obstructions <lb/>topologiquesà l&apos;existence de métriquesà courbure scalaire strictement positive. En effet, <lb/>si la dimension de la variété est paire, le fibré des spineurs complexes se décompose <lb/>en deux composantes irréductibles sous l&apos;action de sonélément de volume. Sous cette <lb/>décomposition, l&apos;opérateur de Dirac s&apos;écrit D = D + + D − et l&apos;indice analytique de D + <lb/>est donné par : <lb/>Ind D + = dim ker D + − dim ker D − . <lb/>Le Théorème 1.1 implique alors que si la courbure scalaire est strictement positive, l&apos;indice <lb/>de D + est nul. D&apos;autre part, par le théorème de l&apos;indice d&apos;Atiyah et Singer [AS62], on sait <lb/>que l&apos;indice analytique de D + estégalà l&apos;indice topologique de M qui doit donc s&apos;annuler <lb/>si M possède une métriqueà courbure scalaire strictement positive. <lb/>Le caractère non optimal de l&apos;estimation (1) conduit cependantà la question naturelle sui-<lb/>vante : peut-on obtenir un inégalité optimale pour la première valeur propre de l&apos;opérateur <lb/></body>
 
-			<front>Date: 10 février 2009. <lb/>L&apos;auteur est financé par le Fonds National Suisse, grant 20-118014/1. <lb/></front>
+			<front>Date: 10 février 2009. <lb/>L&apos;auteur est financé par le Fonds National Suisse, grant 20-118014/1. <lb/>
 
-			<front>1 <lb/></front>
+			1 <lb/>
 
-			<front>hal-00360294, version 1 -Feb 2009 <lb/></front>
+			hal-00360294, version 1 -Feb 2009 <lb/></front>
 
 			<page>2 <lb/></page>
 

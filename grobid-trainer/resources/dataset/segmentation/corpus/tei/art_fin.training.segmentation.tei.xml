@@ -10,15 +10,15 @@
 
 			<body> 1 Introduction <lb/> To describe the behavior of ions population in hot plasmas, it is very classical to address, at least at theoretical <lb/>level, a Vlasov equation coupled to a non-linear Poisson equation which defines the electrostatic field. When the <lb/>magnetic field B is an external datum, for the ion distribution function f (t, x, v) (at position x and velocity v), <lb/> one addresses the following system <lb/> ∂f <lb/>∂t <lb/> + v.f + <lb/> ∂ <lb/>∂v <lb/>.[(−T  e  ln n  e  +v ∧ B) f ] = 0, <lb/> −λ  2  ∆ln n  e  = <lb/> f (v)dv−n  e  , <lb/> where n  e  = n  e  (t, x) is the electron density, T  e  is the mean electron temperature assumed to be constant and λ is the <lb/>Debye length (a characteristic constant of the plasma). This system is a classical one, indeed the electrostatic field <lb/>may be approximated by −T  e  ln n  e  (at least when the electron temperature is constant) and the Poisson equation <lb/>is nothing but the Gauss relation applied to this field (cf. [7] for example) <lb/>The mathematical understanding of this kind of kinetic system has made important progresses with the proof of <lb/>existence of global weak solutions in the large of the Vlasov-Maxwell system in [11] and of the Vlasov-Poisson system <lb/>[19, 25]. However, the mathematical description of laboratory fusion plasmas (such as those produced in Tokamaks) <lb/>with this kind of ion kinetic models is still a major challenge, in particular to deal with a time scale compatible with <lb/>the evolution equation for the magnetic field. As a matter of fact, complete systems of Vlasov-Maxwell type which <lb/>account for all scales of electro-dynamics are not relevant since the velocity of ion waves is much smaller than the <lb/>speed of light: it is well known that at the time scale of the ion population it is convenient to neglect the current <lb/>of displacement in the Maxwell equations (as in magneto-hydrodynamics models cf. [20, 21]), that is to say the <lb/>electric current J is assumed to satisfy <lb/> </body> 
 			
-			<front>*  UPMC-Paris06, CNRS UMR 7598, Laboratoire Jacques-Louis Lions, 4, pl. Jussieu F75252 Paris cedex 05. <lb/></front>  
+			<front>*  UPMC-Paris06, CNRS UMR 7598, Laboratoire Jacques-Louis Lions, 4, pl. Jussieu F75252 Paris cedex 05. <lb/>  
 			
-			<front>†  Email: charles@ann.jussieu.fr <lb/></front>  
+			†  Email: charles@ann.jussieu.fr <lb/>  
 			
-			<front>‡  Email: despres@ann.jussieu.fr <lb/></front>  
+			‡  Email: despres@ann.jussieu.fr <lb/>  
 			
-			<front>§  INRIA Rocquencourt EPI BANG. Email: benoit.perthame@upmc.fr <lb/></front>  
+			§  INRIA Rocquencourt EPI BANG. Email: benoit.perthame@upmc.fr <lb/>  
 			
-			<front>¶  CEA Bruyères-le-Chatel. Email: remi.sentis@CEA.FR <lb/></front> 
+			¶  CEA Bruyères-le-Chatel. Email: remi.sentis@CEA.FR <lb/></front> 
 			
 			<page>1 <lb/></page> 
 			

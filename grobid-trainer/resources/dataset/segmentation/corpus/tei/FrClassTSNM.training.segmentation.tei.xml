@@ -8,9 +8,9 @@
 			
 			<body> 1. Introduction. A Homogenization-Based Numerical Method is a numerical method that incor-<lb/>porates in its conception concepts coming from Homogenization Theory. Doing this gives to the <lb/>built method the capability to tackle efficiently heterogeneities or oscillations. This approach can be <lb/>applied to problems occurring in a heterogeneous medium, that have oscillating boundary conditions <lb/>or that are constrained to oscillate by an external action (for instance a magnetic field on a charged <lb/>particle cloud). <lb/>This topic is currently active. The goal of this special issue is to emphasis recent advances in this <lb/>topic in a wide variety of application fields. <lb/>This introductory paper introduces a classification of Homogenization-Based Numerical Methods, <lb/>in which stand: Direct Homogenization-Based Numerical Methods; H-Measure-Based Numerical <lb/>Methods; Two-Scale Numerical Methods and TSAPS: Two-Scale Asymptotic Preserving Schemes. <lb/>2. Direct Homogenization-Based Numerical Methods. The context of Direct Homogeniza-<lb/>tion-Based Numerical Methods is depicted in the next diagram: <lb/> u  ε  solution to <lb/> O  ε  u  ε  = 0 <lb/> ε → 0 <lb/> / / <lb/> u solution to <lb/> O u = 0 <lb/> u∆z solution to <lb/> O  ∆z  u  ∆z  = 0 <lb/> ∆z → 0 <lb/> O O <lb/> ∆z → 0 <lb/> O O <lb/> ∆z → 0 <lb/> O O <lb/> ∆z → 0 <lb/> O O <lb/> (2.1) <lb/> </body>
 			
-			<front>2000 Mathematics Subject Classification. Primary: 65L99, 65M99, 65N99. <lb/> Key words and phrases. Homogenization-Based Numerical Mathods; Homogenization; Asymptotic Analysis; As-<lb/>ymptotic Expansion; Numerical Simulation. <lb/></front>
+			<front>2000 Mathematics Subject Classification. Primary: 65L99, 65M99, 65N99. <lb/> Key words and phrases. Homogenization-Based Numerical Mathods; Homogenization; Asymptotic Analysis; As-<lb/>ymptotic Expansion; Numerical Simulation. <lb/>
 
-			<front> 1 <lb/></front>
+			 1 <lb/></front>
 
 			<page>2 <lb/></page>
 

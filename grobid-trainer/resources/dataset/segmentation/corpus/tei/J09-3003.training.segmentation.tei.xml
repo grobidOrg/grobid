@@ -8,9 +8,9 @@
 
 			<body> 1. Introduction <lb/> Sentiment analysis is a type of subjectivity analysis (Wiebe 1994) that focuses on iden-<lb/>tifying positive and negative opinions, emotions, and evaluations expressed in natural <lb/>language. It has been a central component in applications ranging from recognizing <lb/></body>
 
-			<front>  *  School of Informatics, Edinburgh EH8 9LW, U.K. E-mail: twilson@inf.ed.ac.uk. <lb/>  * *  Department of Computer Science, Pittsburgh, PA 15260, USA. E-mail: {wiebe,hoffmanp}@cs.pitt.edu. <lb/> Submission received: 14 November 2006; revised submission received: 8 March 2008; accepted for publication: <lb/>16 April 2008. <lb/></front>
+			<front>  *  School of Informatics, Edinburgh EH8 9LW, U.K. E-mail: twilson@inf.ed.ac.uk. <lb/>  * *  Department of Computer Science, Pittsburgh, PA 15260, USA. E-mail: {wiebe,hoffmanp}@cs.pitt.edu. <lb/> Submission received: 14 November 2006; revised submission received: 8 March 2008; accepted for publication: <lb/>16 April 2008. <lb/>
 			
-			<front>© 2009 Association for Computational Linguistics <lb/></front>
+			© 2009 Association for Computational Linguistics <lb/></front>
 
 			<note place="headnote"> Computational Linguistics <lb/>Volume 35, Number 3 <lb/></note>
 
