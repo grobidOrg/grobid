@@ -54,7 +54,6 @@ public class EvaluationConfigCheck {
      */
     private static final String[] REQUIRED_DELFT_MODELS = {
             "citation",
-            "affiliation-address",
             "reference-segmenter",
             "header",
             "funding-acknowledgement"
