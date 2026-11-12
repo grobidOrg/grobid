@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Bauermeister</surname> <forename>S</forename> <marker>1 †</marker>,</persName>
+<persName><surname>Orton</surname> <forename>C</forename> <marker>2 †</marker>,</persName>
+<persName><surname>Thompson</surname> <forename>S</forename> <marker>2 †</marker>,</persName>
+<persName><surname>Barker</surname> <forename>R</forename> <middlename>A</middlename> <marker>3</marker> ,</persName>
+<persName><surname>Bauermeister</surname> <forename>J</forename> <middlename>R</middlename> <marker>1</marker> ,</persName>
+<persName><surname>Ben-Shlomo</surname> <forename>Y</forename> <marker>4</marker> ,</persName>
+<persName><surname>Brayne</surname> <forename>C</forename> <marker>5</marker> ,</persName>
+<persName><surname>Burn</surname> <forename>D</forename> <marker>6</marker> ,</persName>
+<persName><surname>Campbell</surname> <forename>A</forename> <marker>7</marker> ,</persName>
+<persName><surname>Calvin</surname> <forename>C</forename> <marker>1</marker> ,</persName>
+<persName><surname>Chandran</surname> <forename>S</forename> <marker>8</marker> ,</persName>
+<persName><surname>Chaturvedi</surname> <forename>N</forename> <marker>9</marker> ,</persName>
+<persName><surname>Chene</surname> <forename>G</forename> <marker>10</marker> ,</persName>
+<persName><surname>Chessell</surname> <forename>I</forename> <middlename>P</middlename> <marker>11</marker> ,</persName>
+<persName><surname>Corbett</surname> <forename>A</forename> <marker>12</marker> ,</persName>
+<persName><surname>Davis</surname> <forename>D</forename> <middlename>H</middlename> <middlename>J</middlename> <marker>9</marker> ,</persName>
+<persName><surname>Denis</surname> <forename>M</forename> <marker>13</marker> ,</persName>
+<persName><surname>Dufouil</surname> <forename>C</forename> <marker>10</marker> ,</persName>
+<persName><surname>Elliott</surname> <forename>P</forename> <marker>14</marker> ,</persName>
+<persName><surname>Fox</surname> <forename>N</forename> <marker>15</marker> ,</persName>
+<persName><surname>Hill</surname> <forename>D</forename> <marker>16</marker> ,</persName>
+<persName><surname>Hofer</surname> <forename>SM</forename> <marker>17</marker> ,</persName>
+<persName><surname>Hu</surname> <forename>M</forename> <marker>18</marker> ,</persName>
+<persName><surname>Jindra</surname> <forename>C</forename> <marker>1</marker> ,</persName>
+<persName><surname>Kee</surname> <forename>F</forename> <marker>19</marker> ,</persName>
+<persName><surname>Kim</surname> <forename>C</forename> <middlename>H</middlename> <marker>1</marker> ,</persName>
+<persName><surname>Kim</surname> <forename>C</forename> <marker>20</marker> ,</persName>
+<persName><surname>Kivimaki</surname> <forename>M</forename> <marker>21</marker> ,</persName>
+<persName><surname>Koychev</surname> <forename>I</forename> <marker>1</marker> ,</persName>
+<persName><surname>Kwan</surname> <forename>J</forename> <middlename>S</middlename> <middlename>K</middlename> <marker>22</marker> ,</persName>
+<persName><surname>Lawson</surname> <forename>R</forename> <middlename>A</middlename> <marker>23</marker> ,</persName>
+<persName><surname>Leroi</surname> <forename>I</forename> <marker>24</marker> ,</persName>
+<persName><surname>Linden</surname> <forename>G</forename> <middlename>J</middlename> <marker>19</marker> ,</persName>
+<persName><surname>Love</surname> <forename>S</forename> <marker>25</marker> ,</persName>
+<persName><surname>Lovestone</surname> <forename>S</forename> <marker>1,26</marker> ,</persName>
+<persName><surname>Lyons</surname> <forename>R</forename> <middlename>A</middlename> <marker>2</marker> ,</persName>
+<persName><surname>Mackay</surname> <forename>C</forename> <marker>1</marker> ,</persName>
+<persName><surname>Matthews</surname> <forename>P</forename> <middlename>M</middlename> <marker>27</marker> ,</persName>
+<persName><surname>McGuiness</surname> <forename>B</forename> <marker>19</marker> ,</persName>
+<persName><surname>Middleton</surname> <forename>L</forename> <marker>14</marker> ,</persName>
+<persName><surname>Moody</surname> <forename>C</forename> <marker>28</marker> ,</persName>
+<persName><surname>Moore</surname> <forename>K</forename> <marker>15</marker> ,</persName>
+<persName><surname>Na</surname> <forename>D</forename> <middlename>L</middlename> <marker>29</marker> ,</persName>
+<persName><surname>O&apos;Brien</surname> <forename>J</forename> <middlename>T</middlename> <marker>30</marker> ,</persName>
+<persName><surname>Ourselin</surname> <forename>S</forename> <marker>31</marker> ,</persName>
+<persName><surname>Paranjothy</surname> <forename>S</forename> <marker>32</marker> ,</persName>
+<persName><surname>Park</surname> <forename>K</forename> <middlename>S</middlename> <marker>33</marker> ,</persName>
+<persName><surname>Porteous</surname> <forename>D</forename> <middlename>J</middlename> <marker>34</marker> ,</persName>
+<persName><surname>Richards</surname> <forename>M</forename> <marker>9</marker> ,</persName>
+<persName><surname>Ritchie</surname> <forename>C</forename> <middlename>W</middlename> <marker>8</marker> ,</persName>
+<persName><surname>Rohrer</surname> <forename>J</forename> <middlename>D</middlename> <marker>15</marker> ,</persName>
+<persName><surname>Rossor</surname> <forename>M</forename> <middlename>N</middlename> <marker>15</marker> ,</persName>
+<persName><surname>Rowe</surname> <forename>J</forename> <middlename>B</middlename> <marker>3</marker> ,</persName>
+<persName><surname>Scahill</surname> <forename>R</forename> <marker>15</marker> ,</persName>
+<persName><surname>Schnier</surname> <forename>C</forename> <marker>35</marker> ,</persName>
+<persName><surname>Schott</surname> <forename>J</forename> <middlename>M</middlename> <marker>15</marker> ,</persName>
+<persName><surname>Seo</surname> <forename>S</forename> <middlename>W</middlename> <marker>29</marker> ,</persName>
+<persName><surname>South</surname> <forename>M</forename> <marker>1</marker> ,</persName>
+<persName><surname>Steptoe</surname> <forename>A</forename> <marker>36</marker> ,</persName>
+<persName><surname>Tabrizi</surname> <forename>S</forename> <middlename>J</middlename> <marker>15</marker> ,</persName>
+<persName><surname>Tales</surname> <forename>A</forename> <marker>37</marker> ,</persName>
+<persName><surname>Thomas</surname> <forename>A</forename> <middlename>J</middlename> <marker>23</marker> ,</persName>
+<persName><surname>Tillin</surname> <forename>T</forename> <marker>38</marker> ,</persName>
+<persName><surname>Timpson</surname> <forename>N</forename> <middlename>J</middlename> <marker>4</marker> ,</persName>
+<persName><surname>Toga</surname> <forename>A</forename> <middlename>W</middlename> <marker>39</marker> ,</persName>
+<persName><surname>Visser</surname> <forename>PJ</forename> <marker>40</marker> ,</persName>
+<persName><surname>Wade-Martins</surname> <forename>R</forename> <marker>41</marker> ,</persName>
+<persName><surname>Wilkinson</surname> <forename>T</forename> <marker>35</marker> ,</persName>
+<persName><surname>Williams</surname> <forename>J</forename> <marker>42</marker> ,</persName>
+<persName><surname>Wong</surname> <forename>A</forename> <marker>9</marker> ,</persName>
+<persName><surname>Gallacher</surname> <forename>J</forename> <middlename>E</middlename> <marker>1*</marker></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Jonathan</forename> <surname>Barnoud</surname> <marker>1,2,3,4,5, †</marker> ,</persName>
+<persName><forename>Hubert</forename> <surname>Santuz</surname> <marker>1,2,3,4, †</marker> ,</persName>
+<persName><forename>Pierrick</forename> <surname>Craveur</surname> <marker>1,2,3,4,6</marker> ,</persName>
+<persName><forename>Agnel</forename> <middlename>Praveen</middlename> <surname>Joseph</surname> <marker>1,2,3,4,7,+</marker> ,</persName>
+<persName><forename>Vincent</forename> <surname>Jallu</surname> <marker>8</marker> ,</persName>
+<persName><forename>Alexandre</forename> <middlename>G</middlename>. <surname>de Brevern</surname> <marker>1,2,3,4,*, ‡</marker> , and</persName>
+<persName><forename>Pierre</forename> <surname>Poulain</surname> <marker>1,2,3,4,9,*,‡</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

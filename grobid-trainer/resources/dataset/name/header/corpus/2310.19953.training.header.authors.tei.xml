@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+					<author>
+						<persName>
+							 <forename>David</forename>
+							 <surname>NEUFELD</surname>
+							 <marker>a</marker> ,
+						</persName>
+						<persName>
+							 <forename>Sajad</forename>
+							 <surname>FATHI HAFSHEJANI</surname>
+							 <marker>a,1</marker> ,
+						</persName>
+						<persName>
+							 <forename>Daya</forename>
+							 <surname>GAUR</surname>
+							 <marker>a</marker> , and
+						</persName>
+						<persName>
+							 <forename>Robert</forename>
+							 <surname>BENKOCZI</surname>
+							 <marker>a</marker>
+						</persName>
+						<persName>
+							 <forename>Sajad</forename>
+							 <surname>Fathi Hafshejani</surname>,
+						</persName>
+					</author>
+
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

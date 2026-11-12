@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author> <persName> <forename>Jakub</forename> <surname>Barylski</surname> <marker>1</marker> , </persName> <persName> <forename>François</forename> <surname>Enault</surname> <marker>2</marker> , </persName> <persName> <forename>Bas</forename> <middlename>E</middlename>. <surname>Dutilh</surname> <marker>3,4</marker> , </persName> <persName> <forename>Margo</forename> <middlename>B</middlename>. <middlename>P</middlename>. <surname>Schuller</surname> <marker>3</marker> , </persName> <persName> <forename>Robert</forename> <middlename>A</middlename>. <surname>Edwards</surname> <marker>5</marker> , </persName> <persName> <forename>Annika</forename> <surname>Gillis</surname> <marker>6</marker> , </persName> <persName> <forename>Jochen</forename> <surname>Klumpp</surname> <marker>7</marker> , </persName> <persName> <forename>Petar</forename> <surname>Knezevic</surname> <marker>8</marker> , </persName> <persName> <forename>Mart</forename> <surname>Krupovic</surname> <marker>9</marker> , </persName> <persName> <forename>Jens</forename> <middlename>H</middlename>. <surname>Kuhn</surname> <marker>10</marker> , </persName> <persName> <forename>Rob</forename> <surname>Lavigne</surname> <marker>11</marker> , </persName> <persName> <forename>Hanna</forename> <middlename>M</middlename>. <surname>Oksanen</surname> <marker>12</marker> , </persName> <persName> <forename>Matthew</forename> <middlename>B</middlename>. <surname>Sullivan</surname> <marker>13</marker> , </persName> <persName> <forename>Johannes</forename> <surname>Wittmann</surname> <marker>14</marker> , </persName> <persName> <forename>Igor</forename> <surname>Tolstoy</surname> <marker>15</marker> , </persName> <persName> <forename>J</forename>. <middlename>Rodney</middlename> <surname>Brister</surname> <marker>15</marker> , </persName> <persName> <forename>Andrew</forename> <middlename>M</middlename>. <surname>Kropinski</surname> <marker>16</marker> , </persName> <persName> <forename>Evelien</forename> <middlename>M</middlename>. <surname>Adriaenssens</surname> <marker>17*</marker> </persName> <persName> <forename>Hans-Wolfgang</forename> <surname>Ackermann</surname> </persName> </author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Hoh</forename><surname>Kim</surname><marker>1</marker> ,</persName>
+<persName><forename>Jerald</forename><middlename>D</middlename>.<surname>Kralik</surname><marker>2*</marker> ,</persName>
+<persName><forename>Kyongsik</forename><surname>Yun</surname><marker>2</marker> ,</persName>
+<persName><forename>Yong-an</forename><surname>Chung</surname><marker>3</marker> and</persName>
+<persName><forename>Jaeseung</forename><surname>Jeong</surname><marker>1,2*</marker></persName>
+<persName><forename>Jaeseung</forename><surname>Jeong</surname>,<roleName>Ph.D</roleName>. and</persName>
+<persName><forename>Jerald</forename><middlename>D</middlename>.<surname>Kralik</surname>,<roleName>Ph.D</roleName>.</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

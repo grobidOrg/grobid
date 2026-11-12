@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName> <forename>Kang</forename> <middlename>Hyeon</middlename> <surname>Lim</surname> <marker>1</marker> , </persName>
+<persName> <forename>Yong</forename> <middlename>Jun</middlename> <surname>Jeong</surname> <marker>1</marker> , </persName>
+<persName> <forename>Mun</forename> <middlename>Soo</middlename> <surname>Han</surname> <marker>1</marker> , </persName>
+<persName> <forename>Yoon</forename> <middlename>Chan</middlename> <surname>Rah</surname> <marker>1</marker> , </persName>
+<persName> <forename>Jaehyung</forename> <surname>Cha</surname> <marker>2</marker> , </persName>
+<persName> <forename>June</forename> <surname>Choi</surname> <marker>1, *</marker> </persName>
+<persName> <forename>June</forename> <surname>Choi</surname>, <roleName>MD</roleName>, <roleName>PhD</roleName> </persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

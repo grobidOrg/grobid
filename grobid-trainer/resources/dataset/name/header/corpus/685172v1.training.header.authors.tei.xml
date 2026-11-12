@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Cassandra</forename>
+								 <middlename>N</middlename>
+								 <surname>Spracklen</surname>
+								 <marker>1,83</marker> ,
+							</persName>
+							<persName>
+								 <forename>Momoko</forename>
+								 <surname>Horikoshi</surname>
+								 <marker>2,83</marker> ,
+							</persName>
+							<persName>
+								 <forename>Young</forename>
+								 <middlename>Jin</middlename>
+								 <surname>Kim</surname>
+								 <marker>3,83</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kuang</forename>
+								 <surname>Lin</surname>
+								 <marker>4,83</marker> ,
+							</persName>
+							<persName>
+								 <forename>Fiona</forename>
+								 <surname>Bragg</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sanghoon</forename>
+								 <surname>Moon</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ken</forename>
+								 <surname>Suzuki</surname>
+								 <marker>2,5,6,7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Claudia</forename>
+								 <middlename>HT</middlename>
+								 <surname>Tam</surname>
+								 <marker>8,9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yasuharu</forename>
+								 <surname>Tabara</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Soo-Heon</forename>
+								 <surname>Kwak</surname>
+								 <marker>11</marker> ,
+							</persName>
+							<persName>
+								 <forename>Fumihiko</forename>
+								 <surname>Takeuchi</surname>
+								 <marker>12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jirong</forename>
+								 <surname>Long</surname>
+								 <marker>13</marker> ,
+							</persName>
+							<persName>
+								 <forename>Victor</forename>
+								 <middlename>JY</middlename>
+								 <surname>Lim</surname>
+								 <marker>14</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jin-Fang</forename>
+								 <surname>Chai</surname>
+								 <marker>14</marker> ,
+							</persName>
+							<persName>
+								 <forename>Chien-Hsiun</forename>
+								 <surname>Chen</surname>
+								 <marker>15</marker> ,
+							</persName>
+							<persName>
+								 <forename>Masahiro</forename>
+								 <surname>Nakatochi</surname>
+								 <marker>16</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jie</forename>
+								 <surname>Yao</surname>
+								 <marker>17</marker> ,
+</persName>
+<persName>
+<forename>Hyeok</forename>
+<middlename>Sun</middlename>
+<surname>Choi</surname>
+								 <marker>18</marker> ,
+							</persName>
+							<persName>
+								 <forename>Apoorva</forename>
+								 <middlename>K</middlename>
+								 <surname>Iyengar</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Hannah</forename>
+								 <middlename>J</middlename>
+								 <surname>Perrin</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sarah</forename>
+								 <middlename>M</middlename>
+								 <surname>Brotman</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Martijn</forename>
+								 <surname>van de Bunt</surname>
+								 <marker>19,20</marker> ,
+							</persName>
+							<persName>
+								 <forename>Anna</forename>
+								 <middlename>L</middlename>
+								 <surname>Gloyn</surname>
+								 <marker>19,20,21</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jennifer</forename>
+								 <middlename>E</middlename>
+								 <surname>Below</surname>
+								 <marker>22,23</marker> ,
+							</persName>
+							<persName>
+								 <forename>Michael</forename>
+								 <surname>Boehnke</surname>
+								 <marker>24</marker> ,
+							</persName>
+							<persName>
+								 <forename>Donald</forename>
+								 <middlename>W</middlename>
+								 <surname>Bowden</surname>
+								 <marker>25,26</marker> ,
+							</persName>
+							<persName>
+								 <forename>John</forename>
+								 <middlename>C</middlename>
+								 <surname>Chambers</surname>
+								 <marker>27,28,29,30,31</marker> ,
+							</persName>
+							<persName>
+								 <forename>Anubha</forename>
+								 <surname>Mahajan</surname>
+								 <marker>19,20</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mark</forename>
+								 <middlename>I</middlename>
+								 <surname>McCarthy</surname>
+								 <marker>19,20,21, #</marker> ,
+							</persName>
+							<persName>
+								 <forename>Maggie</forename>
+								 <middlename>CY</middlename>
+								 <surname>Ng</surname>
+								 <marker>22,25</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lauren</forename>
+								 <middlename>E</middlename>
+								 <surname>Petty</surname>
+								 <marker>22,23</marker> ,
+							</persName>
+							<persName>
+								 <forename>Weihua</forename>
+								 <surname>Zhang</surname>
+								 <marker>28,29</marker> ,
+							</persName>
+							<persName>
+								 <forename>Andrew</forename>
+								 <middlename>P</middlename>
+								 <surname>Morris</surname>
+								 <marker>20,32,33</marker> ,
+							</persName>
+							<persName>
+								 <forename>Linda</forename>
+								 <middlename>S</middlename>
+								 <surname>Adair</surname>
+								 <marker>34</marker> ,
+							</persName>
+							<persName>
+								 <forename>Zheng</forename>
+								 <surname>Bian</surname>
+								 <marker>35</marker> ,
+							</persName>
+							<persName>
+								 <forename>Juliana</forename>
+								 <middlename>CN</middlename>
+								 <surname>Chan</surname>
+								 <marker>8,9,36,37</marker> ,
+							</persName>
+							<persName>
+								 <forename>Li-Ching</forename>
+								 <surname>Chang</surname>
+								 <marker>15</marker> ,
+							</persName>
+							<persName>
+								 <forename>Miao-Li</forename>
+								 <surname>Chee</surname>
+								 <marker>38</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yii-Der</forename>
+								 <middlename>Ida</middlename>
+								 <surname>Chen</surname>
+								 <marker>17</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yuan-Tsong</forename>
+								 <surname>Chen</surname>
+								 <marker>15</marker> ,
+							</persName>
+							<persName>
+								 <forename>Zhengming</forename>
+								 <surname>Chen</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lee-Ming</forename>
+								 <surname>Chuang</surname>
+								 <marker>39,40</marker> ,
+							</persName>
+							<persName>
+								 <forename>Shufa</forename>
+								 <surname>Du</surname>
+								 <marker>34</marker> ,
+							</persName>
+							<persName>
+								 <forename>Penny</forename>
+								 <surname>Gordon-Larsen</surname>
+								 <marker>34</marker> ,
+							</persName>
+							<persName>
+								 <forename>Myron</forename>
+								 <surname>Gross</surname>
+								 <marker>41</marker> ,
+							</persName>
+							<persName>
+								 <forename>Xiuqing</forename>
+								 <surname>Guo</surname>
+								 <marker>17</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yu</forename>
+								 <surname>Guo</surname>
+								 <marker>35</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sohee</forename>
+								 <surname>Han</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Annie-Green</forename>
+								 <surname>Howard</surname>
+								 <marker>42</marker> ,
+							</persName>
+							<persName>
+								 <forename>Wei</forename>
+								 <surname>Huang</surname>
+								 <marker>43</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yi-Jen</forename>
+								 <surname>Hung</surname>
+								 <marker>44,45</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mi</forename>
+								 <middlename>Yeong</middlename>
+								 <surname>Hwang</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Chii-Min</forename>
+								 <surname>Hwu</surname>
+								 <marker>46,47</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sahoko</forename>
+								 <surname>Ichihara</surname>
+								 <marker>48</marker> ,
+							</persName>
+							<persName>
+								 <forename>Masato</forename>
+								 <surname>Isono</surname>
+								 <marker>12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Hye-Mi</forename>
+								 <surname>Jang</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Guozhi</forename>
+								 <surname>Jiang</surname>
+								 <marker>8,9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jost</forename>
+								 <middlename>B</middlename>
+								 <surname>Jonas</surname>
+								 <marker>49</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yoichiro</forename>
+								 <surname>Kamatani</surname>
+								 <marker>5,50</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tomohiro</forename>
+								 <surname>Katsuya</surname>
+								 <marker>51,52</marker> ,
+							</persName>
+							<persName>
+								 <forename>Takahisa</forename>
+								 <surname>Kawaguchi</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Chiea-Chuen</forename>
+								 <surname>Khor</surname>
+								 <marker>53,54</marker> ,
+							</persName>
+							<persName>
+								 <forename>Katsuhiko</forename>
+								 <surname>Kohara</surname>
+								 <marker>55</marker> ,
+							</persName>
+							<persName>
+								 <forename>Myung-Shik</forename>
+								 <surname>Lee</surname>
+								 <marker>56</marker> ,
+							</persName>
+							<persName>
+								 <forename>Nannette</forename>
+								 <middlename>R</middlename>
+								 <surname>Lee</surname>
+								 <marker>57</marker> ,
+							</persName>
+							<persName>
+								 <forename>Liming</forename>
+								 <surname>Li</surname>
+								 <marker>58</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jianjun</forename>
+								 <surname>Liu</surname>
+								 <marker>53,59</marker> ,
+							</persName>
+							<persName>
+								 <forename>Andrea</forename>
+								 <middlename>O</middlename>
+								 <surname>Luk</surname>
+								 <marker>8,9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jun</forename>
+								 <surname>Lv</surname>
+								 <marker>58</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yukinori</forename>
+								 <surname>Okada</surname>
+								 <marker>7,60</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mark</forename>
+								 <middlename>A</middlename>
+								 <surname>Pereira</surname>
+								 <marker>61</marker> ,
+							</persName>
+							<persName>
+								 <forename>Charumathi</forename>
+								 <surname>Sabanayagam</surname>
+								 <marker>38,62,63</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jinxiu</forename>
+								 <surname>Shi</surname>
+								 <marker>43</marker> ,
+							</persName>
+							<persName>
+								 <forename>Dong</forename>
+								 <middlename>Mun</middlename>
+								 <surname>Shin</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Wing</forename>
+								 <middlename>Yee</middlename>
+								 <surname>So</surname>
+								 <marker>8,36</marker> ,
+							</persName>
+							<persName>
+								 <forename>Atsushi</forename>
+								 <surname>Takahashi</surname>
+								 <marker>5,64</marker> ,
+							</persName>
+							<persName>
+								 <forename>Brian</forename>
+								 <surname>Tomlinson</surname>
+								 <marker>8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Fuu-Jen</forename>
+								 <surname>Tsai</surname>
+								 <marker>65</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rob</forename>
+								 <middlename>M</middlename>
+								 <surname>van Dam</surname>
+								 <marker>14,59,66</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yong-Bing</forename>
+								 <surname>Xiang</surname>
+								 <marker>67</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ken</forename>
+								 <surname>Yamamoto</surname>
+								 <marker>68</marker> ,
+							</persName>
+							<persName>
+								 <forename>Toshimasa</forename>
+								 <surname>Yamauchi</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kyungheon</forename>
+								 <surname>Yoon</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Canqing</forename>
+								 <surname>Yu</surname>
+								 <marker>58</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jian-Min</forename>
+								 <surname>Yuan</surname>
+								 <marker>69,70</marker> ,
+							</persName>
+							<persName>
+								 <forename>Liang</forename>
+								 <surname>Zhang</surname>
+								 <marker>38</marker> ,
+							</persName>
+							<persName>
+								 <forename>Wei</forename>
+								 <surname>Zheng</surname>
+								 <marker>13</marker> ,
+							</persName>
+							<persName>
+								 <forename>Michiya</forename>
+								 <surname>Igase</surname>
+								 <marker>71</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yoon</forename>
+								 <middlename>Shin</middlename>
+								 <surname>Cho</surname>
+								 <marker>18</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jerome</forename>
+								 <middlename>I</middlename>
+								 <surname>Rotter</surname>
+								 <marker>72</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ya-Xing</forename>
+								 <surname>Wang</surname>
+								 <marker>73</marker> ,
+							</persName>
+							<persName>
+								 <forename>Wayne</forename>
+								 <middlename>HH</middlename>
+								 <surname>Sheu</surname>
+								 <marker>45,47,74</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mitsuhiro</forename>
+								 <surname>Yokota</surname>
+								 <marker>75</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jer-Yuarn</forename>
+								 <surname>Wu</surname>
+								 <marker>15</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ching-Yu</forename>
+								 <surname>Cheng</surname>
+								 <marker>38,62,63</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tien-Yin</forename>
+								 <surname>Wong</surname>
+								 <marker>38,62,63</marker> ,
+							</persName>
+							<persName>
+								 <forename>Xiao-Ou</forename>
+								 <surname>Shu</surname>
+								 <marker>13</marker> ,
+							</persName>
+							<persName>
+								 <forename>Norihiro</forename>
+								 <surname>Kato</surname>
+								 <marker>12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kyong-Soo</forename>
+								 <surname>Park</surname>
+								 <marker>11,76,77</marker> ,
+							</persName>
+							<persName>
+								 <forename>E-Shyong</forename>
+								 <surname>Tai</surname>
+								 <marker>14,59,78</marker> ,
+							</persName>
+							<persName>
+								 <forename>Fumihiko</forename>
+								 <surname>Matsuda</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Woon-Puay</forename>
+								 <surname>Koh</surname>
+								 <marker>14,79</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ronald</forename>
+								 <middlename>CW</middlename>
+								 <surname>Ma</surname>
+								 <marker>8,9,36,37</marker> ,
+							</persName>
+							<persName>
+								 <forename>Shiro</forename>
+								 <surname>Maeda</surname>
+								 <marker>2,80,81</marker> ,
+							</persName>
+							<persName>
+								 <forename>Iona</forename>
+								 <middlename>Y</middlename>
+								 <surname>Millwood</surname>
+								 <marker>4,82</marker> ,
+							</persName>
+							<persName>
+								 <forename>Juyoung</forename>
+								 <surname>Lee</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Takashi</forename>
+								 <surname>Kadowaki</surname>
+								 <marker>6,84*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Robin</forename>
+								 <middlename>G</middlename>
+								 <surname>Walters</surname>
+								 <marker>4,82,84*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Bong-Jo</forename>
+								 <surname>Kim</surname>
+								 <marker>3,84*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Karen</forename>
+								 <middlename>L</middlename>
+								 <surname>Mohlke</surname>
+								 <marker>1,84*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Xueling</forename>
+								 <surname>Sim</surname>
+								 <marker>14,84*</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

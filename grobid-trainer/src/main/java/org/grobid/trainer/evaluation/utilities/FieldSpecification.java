@@ -401,6 +401,8 @@ public class FieldSpecification {
         register(
                 catalogue,
                 field("funding_stmt").textual()
+                        .merged()
+                        .documentLevel()
                         .grobid("//div[@type=\"funding\"]//text()")
                         .nlm(
                                 "//sec[@sec-type=\"funding\"]//text()",

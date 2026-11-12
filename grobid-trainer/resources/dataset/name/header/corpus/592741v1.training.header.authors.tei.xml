@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>David</forename> <middlename>U</middlename>. <surname>Gorkin</surname> <marker>1,2 *</marker>,</persName>
+<persName><forename>Yunjiang</forename> <surname>Qiu</surname> <marker>1,3 *</marker>,</persName>
+<persName><forename>Ming</forename> <surname>Hu</surname> <marker>4 * †</marker> ,</persName>
+<persName><forename>Kipper</forename> <surname>Fletez-Brant</surname> <marker>5,6</marker> ,</persName>
+<persName><forename>Tristin</forename> <surname>Liu</surname> <marker>1</marker> ,</persName>
+<persName><forename>Anthony</forename> <middlename>D</middlename>. <surname>Schmitt</surname> <marker>1,10</marker> ,</persName>
+<persName><forename>Amina</forename> <surname>Noor</surname> <marker>2</marker> ,</persName>
+<persName><forename>Joshua</forename> <surname>Chiou</surname> <marker>7,11</marker> ,</persName>
+<persName><forename>Kyle</forename> <middlename>J</middlename> <surname>Gaulton</surname> <marker>7</marker> ,</persName>
+<persName><forename>Jonathan</forename> <surname>Sebat</surname> <marker>2</marker> ,</persName>
+<persName><forename>Yun</forename> <surname>Li</surname> <marker>8</marker> ,</persName>
+<persName><forename>Kasper</forename> <middlename>D</middlename>. <surname>Hansen</surname> <marker>5,6</marker> ,</persName>
+<persName><forename>Bing</forename> <surname>Ren</surname> <marker>1,2,9 †</marker></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Sally</forename> <surname>Dawson</surname></persName> (BNL),
+<persName><forename>Andrei</forename> <surname>Gritsan</surname></persName> (Johns Hopkins),
+<persName><forename>Heather</forename> <surname>Logan</surname></persName> (Carleton),
+<persName><forename>Jianming</forename> <surname>Qian</surname></persName> (Michigan),
+<persName><forename>Chris</forename> <surname>Tully</surname></persName> (Princeton),
+<persName><forename>Rick</forename> <surname>Van Kooten</surname></persName> (Indiana <persName><forename>A</forename>. <surname>Ajaib</surname>,</persName>
+<persName><forename>A</forename>. <surname>Anastassov</surname>,</persName>
+<persName><forename>I</forename>. <surname>Anderson</surname>,</persName>
+<persName><forename>D</forename>. <surname>Asner</surname>,</persName>
+<persName><forename>O</forename>. <surname>Bake</surname>,</persName>
+<persName><forename>V</forename>. <surname>Barger</surname>,</persName>
+<persName><forename>T</forename>. <surname>Barklow</surname>,</persName>
+<persName><forename>B</forename>. <surname>Batell</surname>,</persName>
+<persName><forename>M</forename>. <surname>Battaglia</surname>,</persName>
+<persName><forename>S</forename>. <surname>Berge</surname>,</persName>
+<persName><forename>A</forename>. <surname>Blondel</surname>,</persName>
+<persName><forename>S</forename>. <surname>Bolognesi</surname>,</persName>
+<persName><forename>J</forename>. <surname>Brau</surname>,</persName>
+<persName><forename>E</forename>. <surname>Brownson</surname>,</persName>
+<persName><forename>M</forename>. <surname>Cahill-Rowley</surname>,</persName>
+<persName><forename>C</forename>. <surname>Calancha- Paredes</surname>,</persName>
+<persName><forename>C.-Y</forename>. <surname>Chen</surname>,</persName>
+<persName><forename>W</forename>. <surname>Chou</surname>,</persName>
+<persName><forename>R</forename>. <surname>Clare</surname>,</persName>
+<persName><forename>D</forename>. <surname>Cline</surname>,</persName>
+<persName><forename>N</forename>. <surname>Craig</surname>,</persName>
+<persName><forename>K</forename>. <surname>Cranmer</surname>,</persName>
+<persName><forename>M</forename>. <surname>de Gruttola</surname>,</persName>
+<persName><forename>A</forename>. <surname>Elagin</surname>,</persName>
+<persName><forename>R</forename>. <surname>Essig</surname>,</persName>
+<persName><forename>L</forename>. <surname>Everett</surname>,</persName>
+<persName><forename>E</forename>. <surname>Feng</surname>,</persName>
+<persName><forename>K</forename>. <surname>Fujii</surname>,</persName>
+<persName><forename>J</forename>. <surname>Gainer</surname>,</persName>
+<persName><forename>Y</forename>. <surname>Gao</surname>,</persName>
+<persName><forename>I</forename>. <surname>Gogoladze</surname>,</persName>
+<persName><forename>S</forename>. <surname>Gori</surname>,</persName>
+<persName><forename>R</forename>. <surname>Goncalo</surname>,</persName>
+<persName><forename>N</forename>. <surname>Graf</surname>,</persName>
+<persName><forename>C</forename>. <surname>Grojean</surname>,</persName>
+<persName><forename>S</forename>. <surname>Guindon</surname>,</persName>
+<persName><forename>H</forename>. <surname>Haber</surname>,</persName>
+<persName><forename>T</forename>. <surname>Han</surname>,</persName>
+<persName><forename>G</forename>. <surname>Hanson</surname>,</persName>
+<persName><forename>R</forename>. <surname>Harnik</surname>,</persName>
+<persName><forename>S</forename>. <surname>Heinemeyer</surname>,</persName>
+<persName><forename>U</forename>. <surname>Heintz</surname>,</persName>
+<persName><forename>J</forename>. <surname>Hewett</surname>,</persName>
+<persName><forename>Y</forename>. <surname>Ilchenko</surname>,</persName>
+<persName><forename>A</forename>. <surname>Ishikawa</surname>,</persName>
+<persName><forename>A</forename>. <surname>Ismail</surname>,</persName>
+<persName><forename>V</forename>. <surname>Jain</surname>,</persName>
+<persName><forename>P</forename>. <surname>Janot</surname>,</persName>
+<persName><forename>S</forename>. <surname>Kanemura</surname>,</persName>
+<persName><forename>S</forename>. <surname>Kawada</surname>,</persName>
+<persName><forename>R</forename>. <surname>Kehoe</surname>,</persName>
+<persName><forename>M</forename>. <surname>Klute</surname>,</persName>
+<persName><forename>A</forename>. <surname>Kotwal</surname>,</persName>
+<persName><forename>K</forename>. <surname>Krueger</surname>,</persName>
+<persName><forename>G</forename>. <surname>Kukartsev</surname>,</persName>
+<persName><forename>K</forename>. <surname>Kumar</surname>,</persName>
+<persName><forename>J</forename>. <surname>Kunkle</surname>,</persName>
+<persName><forename>M</forename>. <surname>Kurata</surname>,</persName>
+<persName><forename>I</forename>. <surname>Lewis</surname>,</persName>
+<persName><forename>Y</forename>. <surname>Li</surname>,</persName>
+<persName><forename>L</forename>. <surname>Linssen</surname>,</persName>
+<persName><forename>E</forename>. <surname>Lipeles</surname>,</persName>
+<persName><forename>R</forename>. <surname>Lipton</surname>,</persName>
+<persName><forename>T</forename>. <surname>Liss</surname>,</persName>
+<persName><forename>J</forename>. <surname>List</surname>,</persName>
+<persName><forename>T</forename>. <surname>Liu</surname>,</persName>
+<persName><forename>Z</forename>. <surname>Liu</surname>,</persName>
+<persName><forename>I</forename>. <surname>Low</surname>,</persName>
+<persName><forename>T</forename>. <surname>Ma</surname>,</persName>
+<persName><forename>P</forename>. <surname>Mackenzie</surname>,</persName>
+<persName><forename>B</forename>. <surname>Mellado</surname>,</persName>
+<persName><forename>K</forename>. <surname>Melnikov</surname>,</persName>
+<persName><forename>A</forename>. <surname>Miyamoto</surname>,</persName>
+<persName><forename>G</forename>. <surname>Moortgat-Pick</surname>,</persName>
+<persName><forename>G</forename>. <surname>Mourou</surname>,</persName>
+<persName><forename>M</forename>. <surname>Narain</surname>,</persName>
+<persName><forename>H</forename>. <surname>Neal</surname>,</persName>
+<persName><forename>J</forename>. <surname>Nielsen</surname>,</persName>
+<persName><forename>N</forename>. <surname>Okada</surname>,</persName>
+<persName><forename>H</forename>. <surname>Okawa</surname>,</persName>
+<persName><forename>J</forename>. <surname>Olsen</surname>,</persName>
+<persName><forename>H</forename>. <surname>Ono</surname>,</persName>
+<persName><forename>P</forename>. <surname>Onyisi</surname>,</persName>
+<persName><forename>N</forename>. <surname>Parashar</surname>,</persName>
+<persName><forename>M</forename>. <surname>Peskin</surname>,</persName>
+<persName><forename>F</forename>. <surname>Petriello</surname>,</persName>
+<persName><forename>T</forename>. <surname>Plehn</surname>,</persName>
+<persName><forename>C</forename>. <surname>Pollard</surname>,</persName>
+<persName><forename>C</forename>. <surname>Potter</surname>,</persName>
+<persName><forename>K</forename>. <surname>Prokofiev</surname>,</persName>
+<persName><forename>M</forename>. <surname>Rauch</surname>,</persName>
+<persName><forename>T</forename>. <surname>Rizzo</surname>,</persName>
+<persName><forename>T</forename>. <surname>Robens</surname>,</persName>
+<persName><forename>V</forename>. <surname>Rodriguez</surname>,</persName>
+<persName><forename>P</forename>. <surname>Roloff</surname>,</persName>
+<persName><forename>R</forename>. <surname>Ruiz</surname>,</persName>
+<persName><forename>V</forename>. <surname>Sanz</surname>,</persName>
+<persName><forename>J</forename>. <surname>Sayre</surname>,</persName>
+<persName><forename>Q</forename>. <surname>Shafi</surname>,</persName>
+<persName><forename>G</forename>. <surname>Shaughnessy</surname>,</persName>
+<persName><forename>M</forename>. <surname>Sher</surname>,</persName>
+<persName><forename>F</forename>. <surname>Simon</surname>,</persName>
+<persName><forename>N</forename>. <surname>Solyak</surname>,</persName>
+<persName><forename>J</forename>. <surname>Strube</surname>,</persName>
+<persName><forename>J</forename>. <surname>Stupak</surname>,</persName>
+<persName><forename>S</forename>. <surname>Su</surname>,</persName>
+<persName><forename>T</forename>. <surname>Suehara</surname>,</persName>
+<persName><forename>T</forename>. <surname>Tanabe</surname>,</persName>
+<persName><forename>T</forename>. <surname>Tajima</surname>,</persName>
+<persName><forename>V</forename>. <surname>Telnov</surname>,</persName>
+<persName><forename>J</forename>. <surname>Tian</surname>,</persName>
+<persName><forename>S</forename>. <surname>Thomas</surname>,</persName>
+<persName><forename>M</forename>. <surname>Thomson</surname>,</persName>
+<persName><forename>K</forename>. <surname>Tsumura</surname>,</persName>
+<persName><forename>C</forename>. <surname>Un</surname>,</persName>
+<persName><forename>M</forename>. <surname>Velasco</surname>,</persName>
+<persName><forename>C</forename>. <surname>Wagner</surname>,</persName>
+<persName><forename>S</forename>. <surname>Wang</surname>,</persName>
+<persName><forename>S</forename>. <surname>Watanuki</surname>,</persName>
+<persName><forename>G</forename>. <surname>Weiglein</surname>,</persName>
+<persName><forename>A</forename>. <surname>Whitbeck</surname>,</persName>
+<persName><forename>K</forename>. <surname>Yagyu</surname>,</persName>
+<persName><forename>W</forename>. <surname>Yao</surname>,</persName>
+<persName><forename>H</forename>. <surname>Yokoya</surname>,</persName>
+<persName><forename>S</forename>. <surname>Zenz</surname>,</persName>
+<persName><forename>D</forename>. <surname>Zerwas</surname>,</persName>
+<persName><forename>Y</forename>. <surname>Zhang</surname>,</persName>
+<persName><forename>Y</forename>. <surname>Zhou</surname></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

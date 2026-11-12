@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Sandy</forename> <middlename>SC</middlename> <surname>Hung</surname> <marker>*, 1</marker></persName>
+<persName><forename>Vicki</forename> <surname>Chrysostomou</surname>,<marker>1</marker></persName>
+<persName><forename>Amy</forename> <middlename>Fan</middlename> <surname>Li</surname>,<marker>1,2</marker></persName>
+<persName><forename>Jeremiah</forename> <middlename>KH</middlename> <surname>Lim</surname>,<marker>3</marker></persName>
+<persName><forename>Jiang-Hui</forename> <surname>Wang</surname>,<marker>1</marker></persName>
+<persName><forename>Leilei</forename> <surname>Tu</surname>,<marker>1,4</marker></persName>
+<persName><forename>Maciej</forename> <surname>Daniszewski</surname>,<marker>1</marker></persName>
+<persName><forename>Camden</forename> <surname>Lo</surname>,<marker>5</marker></persName>
+<persName><forename>Raymond</forename> <middlename>C</middlename> <surname>Wong</surname>,<marker>1</marker></persName>
+<persName><forename>Jonathan</forename> <middlename>G</middlename> <surname>Crowston</surname>,<marker>1</marker></persName>
+<persName><forename>Alice</forename> <surname>Pébay</surname>,<marker>1</marker></persName>
+<persName><forename>Anna</forename> <middlename>E</middlename> <surname>King</surname>,<marker>6</marker></persName>
+<persName><forename>Bang</forename> <middlename>V</middlename> <surname>Bui</surname>,<marker>3</marker></persName>
+<persName><forename>Guei-Sheung</forename> <surname>Liu</surname><marker>*, 1</marker></persName>
+<persName><forename>Alex</forename> <middlename>W</middlename> <surname>Hewitt</surname><marker>*. 1,2</marker></persName>
+<persName><roleName>Dr</roleName> <forename>Alex</forename> <surname>Hewitt</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

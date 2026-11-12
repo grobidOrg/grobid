@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Austin</forename> <middlename>N</middlename>. <middlename>Southard</middlename> <surname>Smith</surname> <marker>1</marker> ,</persName>
+<persName><forename>Alan</forename> <middlename>J</middlename>. <surname>Simmons</surname> <marker>1</marker> ,</persName>
+<persName><forename>Bob</forename> <surname>Chen</surname> <marker>1,2</marker> ,</persName>
+<persName><forename>Angela</forename> <middlename>L</middlename>. <surname>Jones</surname> <marker>3</marker> ,</persName>
+<persName><forename>Marisol</forename> <middlename>A</middlename>. <middlename>Ramirez</middlename> <surname>Solano</surname> <marker>4</marker> ,</persName>
+<persName><forename>Paige</forename> <middlename>N</middlename>. <surname>Vega</surname> <marker>1</marker> ,</persName>
+<persName><forename>Cherie&apos;</forename> <middlename>R</middlename>. <surname>Scurrah</surname> <marker>1</marker> ,</persName>
+<persName><forename>Yue</forename> <surname>Zhao</surname> <marker>5</marker> ,</persName>
+<persName><forename>Michael</forename> <middlename>J</middlename>. <surname>Brenan</surname> <marker>6</marker> ,</persName>
+<persName><forename>Jiekun</forename> <surname>Xuan</surname> <marker>5</marker> ,</persName>
+<persName><forename>Ely</forename> <middlename>B</middlename>. <surname>Porter</surname> <marker>5</marker> ,</persName>
+<persName><forename>Xi</forename> <surname>Chen</surname> <marker>5</marker> ,</persName>
+<persName><forename>Colin</forename> <middlename>J</middlename>. <middlename>H</middlename>. <surname>Brenan</surname> <marker>6</marker> ,</persName>
+<persName><forename>Qi</forename> <surname>Liu</surname> <marker>4</marker> ,</persName>
+<persName><forename>Lauren</forename> <middlename>N</middlename>. <middlename>M</middlename>. <surname>Quigley</surname> <marker>6</marker> ,</persName>
+<persName><forename>Ken</forename> <middlename>S</middlename>. <surname>Lau</surname> <marker>1,2,4</marker></persName>
+<persName><forename>Lauren</forename> <middlename>N</middlename>. <middlename>M</middlename>. <surname>Quigley</surname></persName>
+<persName><forename>Ken</forename> <middlename>S</middlename>. <surname>Lau</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Diep</forename> <middlename>Thi</middlename> <surname>Hoang</surname> <marker>1, §</marker> ,</persName>
+<persName><forename>Olga</forename> <surname>Chernomor</surname> <marker>2, §</marker> ,</persName>
+<persName><forename>Arndt</forename> <surname>von Haeseler</surname> <marker>2,3</marker> ,</persName>
+<persName><forename>Bui</forename> <middlename>Quang</middlename> <surname>Minh</surname> <marker>2, *</marker> and</persName>
+<persName><forename>Le</forename> <middlename>Sy</middlename> <surname>Vinh</surname> <marker>1,*</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

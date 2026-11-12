@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Noora</forename>
+								<middlename>Ali</middlename>
+								<surname>Al Blooshi</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Ruqayya</forename>
+								<middlename>Saaed</middlename>
+								<surname>Al Mazrouei</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Hind</forename>
+								<middlename>Nasser</middlename>
+								<surname>Al Razooqi</surname>
+								<marker>3#a</marker> ,
+							</persName>
+							<persName>
+								<forename>Ebtihal</forename>
+								<middlename>Ahmad</middlename>
+								<surname>Darwish</surname>
+								<marker>4</marker> ,
+							</persName>
+							<persName>
+								<forename>Maha</forename>
+								<middlename>Mohamed</middlename>
+								<surname>Al Fahim</surname>
+								<marker>5</marker> ,
+							</persName>
+							<persName>
+								<forename>Fozia</forename>
+								<middlename>Bano</middlename>
+								<surname>Khan</surname>
+								<marker>6</marker>
+							</persName>
+						</author>
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

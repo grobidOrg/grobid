@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Baumann</surname> <forename>JH</forename> <marker>1*</marker> ,</persName>
+<persName><surname>Davies</surname> <forename>SW</forename> <marker>1,2</marker> ,</persName>
+<persName><surname>Aichelman</surname> <forename>HE</forename> <marker>1,3</marker> ,</persName>
+<persName><surname>Castillo</surname> <forename>KD</forename> <marker>1</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<surname>Takano</surname> <forename>Tomoe</forename>,
+								<roleName>M.Sc</roleName>. ,
+								<marker>1</marker>)
+							</persName>
+							<persName>
+								<surname>Funabiki</surname> <forename>Miyako</forename>,
+								<roleName>M.D</roleName>.,
+								<marker>1</marker>)
+							</persName>
+							<persName>
+								<surname>Taguchi</surname> <forename>Sagiri</forename>,
+								<roleName>M.D</roleName>.,
+								<roleName>Ph.D</roleName>.,
+								<marker>1</marker>
+							</persName>
+							)
+							<persName>
+								<surname>Saji</surname> <forename>Fumie</forename>,
+								<roleName>Ph.D</roleName>. ,
+								<marker>1</marker>)
+							</persName>
+							<persName>
+								<surname>Amano</surname> <forename>Namiko</forename>,
+								<roleName>B.Sc</roleName>. ,
+								<marker>1</marker>)
+							</persName>
+							<persName>
+								<surname>Young Louise</surname> <forename>Kate</forename>,
+								<roleName>B.Sc</roleName>. ,
+								<marker>1</marker>) and
+							</persName>
+							<persName>
+								<surname>Nakamura</surname> <forename>Yoshitaka</forename>,
+								<roleName>M.D</roleName>.
+								<marker>1</marker>)
+							</persName>
+							<persName>
+								<surname>Takano</surname> <forename>Tomoe</forename>,
+								<roleName>M.Sc</roleName>.,
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

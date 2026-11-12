@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Felicidade</forename><middlename>Mota</middlename><surname>Pereira</surname><marker>1,2</marker>,</persName>
+<persName><forename>Maria</forename><middlename>da</middlename><middlename>Conceição</middlename><surname>Chagas de Almeida</surname><marker>3</marker>,</persName>
+<persName><forename>Fred</forename><middlename>Luciano</middlename><middlename>Neves</middlename><surname>Santos</surname><marker>1</marker>,</persName>
+<persName><forename>Roberto</forename><middlename>Perez</middlename><surname>Carreiro</surname><marker>4</marker>,</persName>
+<persName><forename>Bernardo</forename><surname>Galvão-Castro</surname><marker>1,5</marker>,</persName>
+<persName><forename>Maria</forename><middlename>Fernanda</middlename><middlename>Rios</middlename><surname>Grassi</surname><marker>1,5*</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

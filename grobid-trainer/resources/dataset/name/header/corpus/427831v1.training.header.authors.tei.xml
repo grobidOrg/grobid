@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+	<persName>
+		<forename>Sri</forename>
+		<middlename>Teja</middlename>
+		<surname>Mullapudi</surname>
+		<marker>1</marker> ,
+	</persName>
+	<persName>
+		<forename>Christian</forename>
+		<middlename>S</middlename>.
+		<middlename>M</middlename>.
+		<surname>Helker</surname>
+		<marker>1</marker> ,
+	</persName>
+	<persName>
+		<forename>Giulia</forename>
+		<middlename>L</middlename>.
+		<middlename>M</middlename>.
+		<surname>Boezio</surname>
+		<marker>1</marker> ,
+	</persName>
+	<persName>
+		<forename>Hans-Martin</forename>
+		<surname>Maischein</surname>
+		<marker>1</marker> ,
+	</persName>
+	<persName>
+		<forename>Anna</forename>
+		<middlename>M</middlename>.
+		<surname>Sokol</surname>
+		<marker>2</marker> ,
+	</persName>
+	<persName>
+		<forename>Johannes</forename>
+		<surname>Graumann</surname>
+		<marker>2,3</marker> ,
+	</persName>
+	<persName>
+		<forename>Stefan</forename>
+		<surname>Guenther</surname>
+		<marker>4</marker> ,
+	</persName>
+	<persName>
+		<forename>Hiroki</forename>
+		<surname>Matsuda</surname>
+		<marker>1,5</marker> ,
+	</persName>
+	<persName>
+		<forename>Stefan</forename>
+		<surname>Kubicek</surname>
+		<marker>6</marker> ,
+	</persName>
+	<persName>
+		<forename>Yu</forename>
+		<middlename>Hsuan</middlename>
+		<middlename>Carol</middlename>
+		<surname>Yang</surname>
+		<marker>1</marker> ,
+	</persName>
+	<persName>
+		<forename>Didier</forename>
+		<middlename>Y</middlename>.
+		<middlename>R</middlename>.
+		<surname>Stainier</surname>
+		<marker>1 *</marker>
+	</persName>
+	<persName>
+		<forename>Didier</forename>
+		<surname>Stainier</surname>
+	</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

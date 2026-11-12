@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Luisa</forename> <middlename>F</middlename>. <surname>Gómez</surname> <marker>a,b</marker>, </persName>
+<persName><forename>Myrtha</forename> <surname>Arango</surname> <marker>a</marker>, </persName>
+<persName><forename>Juan</forename> <middlename>G</middlename>. <surname>McEwen</surname> <marker>a,c</marker>, </persName>
+<persName><forename>Oscar</forename> <middlename>M</middlename>. <surname>Gómez</surname> <marker>b,c</marker>, </persName>
+<persName><forename>Alejandra</forename> <surname>Zuluaga</surname> <marker>d</marker>, </persName>
+<persName><forename>Carlos</forename> <middlename>A</middlename>. <surname>Peláez</surname> <marker>e</marker>, </persName>
+<persName><forename>Jose</forename> <middlename>M</middlename>. <surname>Acevedo</surname> <marker>e</marker>, </persName>
+<persName><forename>María</forename> <middlename>L</middlename>. <surname>Taylor</surname> <marker>f</marker>, </persName>
+<persName><forename>María</forename> <middlename>del</middlename> <middlename>P</middlename>. <surname>Jiménez</surname> <marker>a</marker></persName>
+<persName><marker>#</marker>. <forename>Maria</forename> <middlename>del</middlename> <middlename>P</middlename>. <surname>Jiménez</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

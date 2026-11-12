@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+					<author>
+						<persName>
+							 <forename>Andrea</forename>
+							 <surname>Fontanella</surname>
+							 <marker>a</marker> ,
+						</persName>
+						<persName>
+							 <forename>Juan</forename>
+							 <middlename>Miguel</middlename>
+							 <surname>Nieto García</surname>
+							 <marker>b</marker> and
+						</persName>
+						<persName>
+							 <forename>Olof</forename>
+							 <surname>Ohlsson Sax</surname>
+							 <marker>c</marker>
+						</persName>
+					</author>
+
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

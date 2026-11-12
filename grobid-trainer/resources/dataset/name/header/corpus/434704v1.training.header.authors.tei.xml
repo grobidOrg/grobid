@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Grogan</surname>, <forename>J</forename>. <middlename>P</middlename>. <marker>1*</marker>, </persName>
+<persName><surname>Isotalus</surname>, <forename>H</forename>. <middlename>K</middlename>. <marker>1</marker>, </persName>
+<persName><surname>Howat</surname>, <forename>A</forename>. <marker>1</marker>, </persName>
+<persName><surname>Irigoras Izagirre</surname>, <forename>N</forename>. <marker>1</marker>, </persName>
+<persName><surname>Knight</surname>, <forename>L</forename>. <middlename>E</middlename>. <marker>2</marker>, &amp; </persName>
+<persName><surname>Coulthard</surname>, <forename>E</forename>. <middlename>J</middlename>. <marker>1,3*</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author> <persName> <forename>Bela</forename> <surname>Hausmann</surname> <marker>1,2</marker> , </persName> <persName> <forename>Claus</forename> <surname>Pelikan</surname> <marker>1</marker> , </persName> <persName> <forename>Craig</forename> <middlename>W</middlename>. <surname>Herbold</surname> <marker>1</marker> , </persName> <persName> <forename>Stephan</forename> <surname>Köstlbacher</surname> <marker>1</marker> , </persName> <persName> <forename>Mads</forename> <surname>Albertsen</surname> <marker>3</marker> , </persName> <persName> <forename>Stephanie</forename> <middlename>A</middlename>. <surname>Eichorst</surname> <marker>1</marker> , </persName> <persName> <forename>Tijana</forename> <surname>Glavina del Rio</surname> <marker>4</marker> , </persName> <persName> <forename>Martin</forename> <surname>Huemer</surname> <marker>1</marker> , </persName> <persName> <forename>Per</forename> <middlename>H</middlename>. <surname>Nielsen</surname> <marker>3</marker> , </persName> <persName> <forename>Thomas</forename> <surname>Rattei</surname> <marker>5</marker> , </persName> <persName> <forename>Ulrich</forename> <surname>Stingl</surname> <marker>6</marker> , </persName> <persName> <forename>Susannah</forename> <middlename>G</middlename>. <surname>Tringe</surname> <marker>4</marker> , </persName> <persName> <forename>Daniela</forename> <surname>Trojan</surname> <marker>1</marker> , </persName> <persName> <forename>Cecilia</forename> <surname>Wentrup</surname> <marker>1</marker> , </persName> <persName> <forename>Dagmar</forename> <surname>Woebken</surname> <marker>1</marker> , </persName> <persName> <forename>Michael</forename> <surname>Pester</surname> <marker>2,7</marker> , and </persName> <persName> <forename>Alexander</forename> <surname>Loy</surname> <marker>1</marker> </persName> <persName> <forename>Michael</forename> <surname>Pester</surname>, </persName> </author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

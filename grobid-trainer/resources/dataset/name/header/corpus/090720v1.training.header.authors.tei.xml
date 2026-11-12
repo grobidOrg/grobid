@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>C</forename>.
+								<middlename>M</middlename>.
+								<surname>Carlston</surname> and
+							</persName>
+							<persName><forename>A</forename>. <middlename>H</middlename>.</persName>
+							<persName>
+								<forename>Colleen</forename>
+								<middlename>M</middlename>.
+								<surname>Carlston</surname>
+								<marker>1,2 *</marker>,
+							</persName>
+							<persName>
+								<forename>Anne</forename>
+								<middlename>H</middlename>.
+								<surname>O&apos;Donnell-Luria</surname>
+								<marker>3,4,5 *</marker>,
+							</persName>
+							<persName>
+								<forename>Hunter</forename>
+								<middlename>R</middlename>.
+								<surname>Underhill</surname>
+								<marker>6,7</marker> ,
+							</persName>
+							<persName>
+								<forename>Beryl</forename>
+								<middlename>B</middlename>.
+								<surname>Cummings</surname>
+								<marker>3,4,8</marker> ,
+							</persName>
+							<persName>
+								<forename>Ben</forename>
+								<surname>Weisburd</surname>
+								<marker>3,4</marker> ,
+							</persName>
+							<persName>
+								<forename>Eric</forename>
+								<middlename>V</middlename>.
+								<surname>Minikel</surname>
+								<marker>3,4,8</marker> ,
+							</persName>
+							<persName>
+								<forename>Daniel</forename>
+								<middlename>P</middlename>.
+								<surname>Birnbaum</surname>
+								<marker>3,4</marker> ,
+							</persName>
+							Exome Aggregation Consortium,
+							<persName>
+								<forename>Tatiana</forename>
+								<surname>Tvrdik</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Daniel</forename>
+								<middlename>G</middlename>.
+								<surname>MacArthur</surname>
+								<marker>3,4</marker> ,
+							</persName>
+							<persName>
+								<forename>Rong</forename>
+								<surname>Mao</surname>
+								<marker>1,2</marker>
+							</persName>
+							<persName>
+								<forename>Colleen</forename>
+								<middlename>M</middlename>.
+								<surname>Carlston</surname>,
+								<roleName>PhD</roleName>
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>V</forename> <surname>Anttila</surname> <marker>* 1,1,2,3</marker> ,</persName>
+<persName><forename>B</forename> <surname>Bulik-Sullivan</surname> <marker>1,3</marker> ,</persName>
+<persName><forename>H</forename> <surname>Finucane</surname> <marker>4,5</marker> ,</persName>
+<persName><forename>J</forename> <surname>Bras</surname> <marker>6</marker> ,</persName>
+<persName><forename>L</forename> <surname>Duncan</surname> <marker>1,3</marker> ,</persName>
+<persName><forename>V</forename> <surname>Escott- Price</surname> <marker>7</marker> ,</persName>
+<persName><forename>G</forename> <surname>Falcone</surname> <marker>8</marker> ,</persName>
+<persName><forename>P</forename> <surname>Gormley</surname> <marker>9</marker> ,</persName>
+<persName><forename>R</forename> <surname>Malik</surname> <marker>10</marker> ,</persName>
+<persName><forename>N</forename> <surname>Patsopoulos</surname> <marker>3,11</marker> ,</persName>
+<persName><forename>S</forename> <surname>Ripke</surname> <marker>1,2,3,12</marker> ,</persName>
+<persName><forename>R</forename> <surname>Walters</surname> <marker>1,2,3</marker> ,</persName>
+<persName><forename>Z</forename> <surname>Wei</surname> <marker>13</marker> ,</persName>
+<persName><forename>D</forename> <surname>Yu</surname> <marker>2,9</marker> ,</persName>
+<persName><forename>PH</forename> <surname>Lee</surname> <marker>2,9</marker> ,</persName>
+Consortium,
+<persName><forename>G</forename> <surname>Breen</surname> <marker>14,15</marker> ,</persName>
+<persName><forename>C</forename> <surname>Bulik</surname> <marker>16,17</marker> ,</persName>
+<persName><forename>M</forename> <surname>Daly</surname> <marker>1,2,3</marker> ,</persName>
+<persName><forename>M</forename> <surname>Dichgans</surname> <marker>10,18</marker> ,</persName>
+<persName><forename>S</forename> <surname>Faraone</surname> <marker>19</marker> ,</persName>
+<persName><forename>R</forename> <surname>Guerreiro</surname> <marker>20</marker> ,</persName>
+<persName><forename>P</forename> <surname>Holmans</surname> <marker>7</marker> ,</persName>
+<persName><forename>K</forename> <surname>Kendler</surname> <marker>21</marker> ,</persName>
+<persName><forename>B</forename> <surname>Koeleman</surname> <marker>22</marker> ,</persName>
+<persName><forename>CA</forename> <surname>Mathews</surname> <marker>23</marker> ,</persName>
+<persName><forename>JM</forename> <surname>Scharf</surname> <marker>2,3,8,9,24,25</marker> ,</persName>
+<persName><forename>P</forename> <surname>Sklar</surname> <marker>26</marker> ,</persName>
+<persName><forename>J</forename> <surname>Williams</surname> <marker>7</marker> ,</persName>
+<persName><forename>N</forename> <surname>Wood</surname> <marker>20,27,28</marker> ,</persName>
+<persName><forename>C</forename> <surname>Cotsapas</surname> <marker>3,29</marker> ,</persName>
+<persName><forename>A</forename> <surname>Palotie</surname> <marker>1,2,3,9,30,31</marker> ,</persName>
+<persName><forename>JW</forename> <surname>Smoller</surname> <marker>2,9</marker> ,</persName>
+<persName><forename>P</forename> <surname>Sullivan</surname> <marker>16,32</marker> ,</persName>
+<persName><forename>J</forename> <surname>Rosand</surname> <marker>3,8,25</marker> ,</persName>
+<persName><forename>A</forename> <surname>Corvin</surname> <marker>†* 2,33</marker> ,</persName>
+<persName><forename>BM</forename> <surname>Neale</surname> <marker>†* 3,1,2,3 ,</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

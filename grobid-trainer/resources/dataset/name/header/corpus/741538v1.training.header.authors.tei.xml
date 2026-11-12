@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Devlin</surname> <forename>LA</forename><marker>1</marker>,</persName>
+<persName><surname>Ramsbottom</surname> <forename>SA</forename><marker>1</marker>,</persName>
+<persName><surname>Overman</surname> <forename>LM</forename><marker>2</marker>,</persName>
+<persName><surname>Lisgo</surname> <forename>SN</forename><marker>2</marker>,</persName>
+<persName><surname>Clowry</surname> <forename>G</forename><marker>3</marker>,</persName>
+<persName><surname>Molinari</surname> <forename>E</forename><marker>1</marker>,</persName>
+<persName><surname>Miles</surname> <forename>CG</forename><marker>1</marker>,</persName>
+<persName><surname>Sayer</surname> <forename>JA</forename><marker>1,,4,5*</marker>.</persName>
+<persName><forename>John</forename><middlename>A</middlename>.<surname>Sayer</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>
