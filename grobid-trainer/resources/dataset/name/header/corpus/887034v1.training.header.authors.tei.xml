@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Andrés</forename> <middlename>M</middlename>. <surname>Rueda</surname> <marker>1, 2, 3</marker> ,</persName>
+<persName><forename>Yossef</forename> <surname>López de los Santos</surname> <marker>1</marker> ,</persName>
+<persName><forename>Antony</forename> <middlename>T</middlename>. <surname>Vincent</surname> <marker>4</marker> ,</persName>
+<persName><forename>Myriam</forename> <surname>Létourneau</surname> <marker>1</marker> ,</persName>
+<persName><forename>Inés</forename> <surname>Hernández</surname> <marker>3</marker> ,</persName>
+<persName><forename>Clara</forename> <middlename>I</middlename>. <surname>Sánchez</surname> <marker>3, 5</marker> ,</persName>
+<persName><forename>Daniel</forename> <surname>Molina V</surname>. <marker>6</marker> ,</persName>
+<persName><forename>Sonia</forename> <middlename>A</middlename>. <surname>Ospina</surname> <marker>2</marker> ,</persName>
+<persName><forename>Frédéric</forename> <middlename>J</middlename>. <surname>Veyrier</surname> <marker>4</marker> &amp;</persName>
+<persName><forename>Nicolas</forename> <surname>Doucet</surname> <marker>1, 7, *</marker></persName>
+<persName><forename>Nicolas</forename> <surname>Doucet</surname></persName>, Centre Armand-Frappier
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

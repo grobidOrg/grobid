@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Marco</forename>
+								 <surname>Galardini</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alexandra</forename>
+								 <surname>Koumoutsi</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lucia</forename>
+								 <surname>Herrera-Dominguez</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Juan</forename>
+								 <middlename>Antonio</middlename>
+								 <surname>Cordero Varela</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Anja</forename>
+								 <surname>Telzerow</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Omar</forename>
+								 <surname>Wagih</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Morgane</forename>
+								 <surname>Wartel</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Olivier</forename>
+								 <surname>Clermont</surname>
+								 <marker>3,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Erick</forename>
+								 <surname>Denamur</surname>
+								 <marker>3,4,5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Athanasios</forename>
+								 <surname>Typas</surname>
+								 <marker>2*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Pedro</forename>
+								 <surname>Beltrao</surname>
+								 <marker>1*</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

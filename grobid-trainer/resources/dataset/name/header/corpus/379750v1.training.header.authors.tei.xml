@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName><forename>Katja</forename> <surname>Heuer</surname> <marker>1,2</marker> ,</persName>
+<persName><forename>Omer</forename> <middlename>Faruk</middlename> <surname>Gulban</surname> <marker>3</marker> ,</persName>
+<persName><forename>Pierre-Louis</forename> <surname>Bazin</surname> <marker>2,4,5</marker> ,</persName>
+<persName><forename>Anastasia</forename> <surname>Osoianu</surname> <marker>1</marker> ,</persName>
+<persName><forename>Romain</forename> <surname>Valabregue</surname> <marker>6</marker> ,</persName>
+<persName><forename>Mathieu</forename> <surname>Santin</surname> <marker>6</marker> ,</persName>
+<persName><forename>Marc</forename> <surname>Herbin</surname> <marker>7</marker> ,</persName>
+<persName><forename>Roberto</forename> <surname>Toro</surname> <marker>1</marker> .</persName>
+Lemur catta Red slender loris Loris tardigradus 1 MNHN Douroucouli Aotus trivirgatus MNHN Moustached guenon Cercopithecus cephus cephus 1
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

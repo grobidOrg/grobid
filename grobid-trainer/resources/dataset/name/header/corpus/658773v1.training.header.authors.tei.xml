@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Vanderson</forename>
+								<surname>de Souza Sampaio</surname>
+								<marker>1,2,4</marker> ,
+							</persName>
+							<persName>
+								<forename>Leila</forename>
+								<middlename>Cristina</middlename>
+								<surname>Ferreira da Silva</surname>
+								<marker>3,4</marker> ,
+							</persName>
+							<persName>
+								<forename>Daniel</forename>
+								<middlename>Barros</middlename>
+								<surname>de Castro</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Patrícia</forename>
+								<middlename>Carvalho</middlename>
+								<surname>da Silva Balieiro</surname>
+								<marker>5</marker> ,
+							</persName>
+							<persName>
+								<forename>Ana</forename>
+								<middlename>Alzira</middlename>
+								<surname>Cabrinha</surname>
+								<marker>5</marker> ,
+							</persName>
+							<persName>
+								<forename>Antonio</forename>
+								<middlename>José</middlename>
+								<surname>Leal Costa</surname>
+								<marker>6 *</marker>
+							</persName>
+							<persName>
+								<forename>Antonio</forename>
+								<middlename>José</middlename>
+								<surname>Leal Costa</surname>,
+								<roleName>MD</roleName>, <roleName>MPH</roleName>, <roleName>PhD</roleName>
+							</persName>
+						</author>
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

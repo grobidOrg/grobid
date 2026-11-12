@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Cristina</forename><middlename>A</middlename>.<surname>Barragan</surname><marker>1</marker> ,</persName>
+<persName><forename>Rui</forename><surname>Wu</surname><marker>1</marker> ,</persName>
+<persName><forename>Sang-Tae</forename><surname>Kim</surname><marker>1,3</marker> ,</persName>
+<persName><forename>Wanyan</forename><surname>Xi</surname><marker>1</marker> ,</persName>
+<persName><forename>Anette</forename><surname>Habring</surname><marker>1</marker> ,</persName>
+<persName><forename>Jörg</forename><surname>Hagmann</surname><marker>1,4</marker> ,</persName>
+<persName><forename>Anna-Lena</forename><surname>Van de Weyer</surname><marker>1</marker> ,</persName>
+<persName><forename>Maricris</forename><surname>Zaidem</surname><marker>1,5</marker> ,</persName>
+<persName><forename>William</forename><middlename>Wing</middlename><surname>Ho Ho</surname><marker>1,6</marker> ,</persName>
+<persName><forename>George</forename><surname>Wang</surname><marker>1</marker> ,</persName>
+<persName><forename>Ilja</forename><surname>Bezrukov</surname><marker>1</marker> ,</persName>
+<persName><forename>Detlef</forename><surname>Weigel</surname><marker>1*</marker> ,</persName>
+<persName><forename>Eunyoung</forename><surname>Chae</surname><marker>1,2*</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

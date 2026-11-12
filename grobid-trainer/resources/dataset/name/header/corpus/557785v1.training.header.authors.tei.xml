@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Kelly</forename><middlename>L</middlename><surname>Wyres</surname><marker>1*</marker> ,</persName>
+<persName><forename>To</forename><middlename>N</middlename><middlename>T</middlename><surname>Nguyen</surname><marker>2</marker> ,</persName>
+<persName><forename>Margaret</forename><middlename>M</middlename><middlename>C</middlename><surname>Lam</surname><marker>1</marker> ,</persName>
+<persName><forename>Louise</forename><middlename>M</middlename><surname>Judd</surname><marker>1</marker> ,</persName>
+<persName><forename>Nguyen</forename><middlename>van</middlename><middlename>Vinh</middlename><surname>Chau</surname><marker>3</marker> ,</persName>
+<persName><forename>David</forename><middlename>A</middlename><middlename>B</middlename><surname>Dance</surname><marker>4,5,6</marker> ,</persName>
+<persName><forename>Margaret</forename><surname>Ip</surname><marker>7</marker> ,</persName>
+<persName><forename>Abhilasha</forename><surname>Karkey</surname><marker>5,8</marker> ,</persName>
+<persName><forename>Clare</forename><middlename>L</middlename><surname>Ling</surname><marker>5,9</marker> ,</persName>
+<persName><forename>Thyl</forename><surname>Miliya</surname><marker>10</marker> ,</persName>
+<persName><forename>Paul</forename><middlename>N</middlename><surname>Newton</surname><marker>4,5,6</marker> ,</persName>
+<persName><forename>Lan</forename><surname>Nguyen</surname><marker>3</marker> ,</persName>
+<persName><forename>Amphone</forename><surname>Sengduangphachanh</surname><marker>11</marker> ,</persName>
+<persName><forename>Paul</forename><surname>Turner</surname><marker>5,10</marker> ,</persName>
+<persName><forename>Balaji</forename><surname>Veeraraghavan</surname><marker>12</marker> ,</persName>
+<persName><forename>Phat</forename><middlename>Voong</middlename><surname>Vinh</surname><marker>2</marker> ,</persName>
+<persName><forename>Manivanh</forename><surname>Vongsouvath</surname><marker>11</marker> ,</persName>
+<persName><forename>Nicholas</forename><middlename>R</middlename><surname>Thomson</surname><marker>6,13</marker> ,</persName>
+<persName><forename>Stephen</forename><surname>Baker</surname><marker>2,14</marker> and</persName>
+<persName><forename>Kathryn</forename><middlename>E</middlename><surname>Holt</surname><marker>1,6</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

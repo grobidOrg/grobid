@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Ashley</forename>
+<surname>Budu-Aggrey</surname>
+<marker>1,2 *</marker>,
+</persName>
+<persName>
+<forename>Ben</forename>
+<surname>Brumpton</surname>
+<marker>1,3,4 *</marker>,
+</persName>
+<persName>
+<forename>Jess</forename>
+<surname>Tyrrell</surname>
+<marker>5,6 *</marker>,
+</persName>
+<persName>
+<forename>Sarah</forename>
+<surname>Watkins</surname>
+<marker>1,2 *</marker>,
+</persName>
+<persName>
+<forename>Ellen</forename>
+<middlename>H</middlename>
+<surname>Modalsli</surname>
+<marker>7,8</marker> ,
+</persName>
+<persName>
+<forename>Carlos</forename>
+<surname>Celis-Morales</surname>
+<marker>9</marker> ,
+</persName>
+<persName>
+<forename>Lyn</forename>
+<middlename>D</middlename>
+<surname>Ferguson</surname>
+<marker>9</marker> ,
+</persName>
+<persName>
+<forename>Gunnhild</forename>
+<surname>Åberge Vie</surname>
+<marker>7</marker> ,
+</persName>
+<persName>
+<forename>Tom</forename>
+<surname>Palmer</surname>
+<marker>10</marker> ,
+</persName>
+<persName>
+<forename>Lars</forename>
+<middlename>G</middlename>
+<surname>Fritsche</surname>
+<marker>3</marker> ,
+</persName>
+<persName>
+<forename>Mari</forename>
+<surname>Løset</surname>
+<marker>3,8</marker> ,
+</persName>
+<persName>
+<forename>Jonas</forename>
+<middlename>Bille</middlename>
+<surname>Nielsen</surname>
+<marker>11</marker> ,
+</persName>
+<persName>
+<forename>Wei</forename>
+<surname>Zhou</surname>
+<marker>12</marker> ,
+</persName>
+<persName>
+<forename>Lam</forename>
+<middlename>C</middlename>
+<surname>Tsoi</surname>
+<marker>13,14</marker> ,
+</persName>
+<persName>
+<forename>Andrew</forename>
+<middlename>R</middlename>
+<surname>Wood</surname>
+<marker>5</marker> ,
+</persName>
+<persName>
+<forename>Samuel</forename>
+<middlename>E</middlename>
+<surname>Jones</surname>
+<marker>5</marker> ,
+</persName>
+<persName>
+<forename>Robin</forename>
+<surname>Beaumont</surname>
+<marker>5</marker> ,
+</persName>
+<persName>
+<forename>Marit</forename>
+<surname>Saunes</surname>
+<marker>8,15</marker> ,
+</persName>
+<persName>
+<forename>Pål</forename>
+<middlename>Richard</middlename>
+<surname>Romundstad</surname>
+<marker>7</marker> ,
+</persName>
+<persName>
+<forename>Stefan</forename>
+<surname>Siebert</surname>
+<marker>16</marker> ,
+</persName>
+<persName>
+<forename>Iain</forename>
+<middlename>B</middlename>
+<surname>McInnes</surname>
+<marker>16</marker> ,
+</persName>
+<persName>
+<forename>James</forename>
+<middlename>T</middlename>
+<surname>Elder</surname>
+<marker>13,17</marker> ,
+</persName>
+<persName>
+<forename>George</forename>
+<middlename>Davey</middlename>
+<surname>Smith</surname>
+<marker>1,2</marker> ,
+</persName>
+<persName>
+<forename>Timothy</forename>
+<middlename>M</middlename>
+<surname>Frayling</surname>
+<marker>5 **</marker>,
+</persName>
+<persName>
+<forename>Bjørn</forename>
+<middlename>Olav</middlename>
+<surname>Åsvold</surname>
+<marker>3,18 **</marker>,
+</persName>
+<persName>
+<forename>Sara</forename>
+<middlename>J</middlename>
+<surname>Brown</surname>
+<marker>19,20 **</marker>,
+</persName>
+<persName>
+<forename>Naveed</forename>
+<surname>Sattar</surname>
+<marker>9 **</marker>,
+</persName>
+<persName>
+<forename>Lavinia</forename>
+<surname>Paternoster</surname>
+<marker>1,2 **</marker>
+</persName>
+K. G. Jebsen
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

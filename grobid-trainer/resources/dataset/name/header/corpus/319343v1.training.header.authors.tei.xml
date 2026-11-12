@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Virginie</forename>
+								 <surname>Crollen</surname>
+								 <marker>a*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Latifa</forename>
+								 <surname>Lazzouni</surname>
+								 <marker>b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Antoine</forename>
+								 <surname>Bellemare</surname>
+								 <marker>b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mohamed</forename>
+								 <surname>Rezk</surname>
+								 <marker>c</marker> ,
+							</persName>
+							<persName>
+								 <forename>Franco</forename>
+								 <surname>Lepore</surname>
+								 <marker>b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Marie-Pascale</forename>
+								 <surname>Noël</surname>
+								 <marker>c</marker> ,
+							</persName>
+							<persName>
+								 <forename>Xavier</forename>,
+								 <surname>Seron</surname>
+								 <marker>c</marker> , and
+							</persName>
+							<persName>
+								 <forename>Olivier</forename>
+								 <surname>Collignon</surname>
+								 <marker>c*</marker>
+							</persName>
+							<persName>
+								 <forename>Virginie</forename>
+								 <surname>Crollen</surname>,
+</persName>
++390461283010 ;
+							<persName>
+								 <forename>Olivier</forename>
+								 <surname>Collignon</surname>,
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

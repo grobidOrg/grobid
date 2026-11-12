@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName> <forename>Saud</forename> <middlename>H</middlename> <surname>Aman</surname> <marker>1*</marker> </persName>
+SA,
+<persName> <forename>Mohammed</forename> <middlename>I</middlename> <surname>Aljaber</surname> <marker>2&amp;</marker> , </persName>
+<persName> <forename>Abdullah</forename> <middlename>I</middlename> <surname>Alwehaibi</surname> <marker>2&amp;</marker> , </persName>
+<persName> <forename>Fahad</forename> <middlename>H</middlename> <surname>Aman</surname> <marker>2&amp;</marker> , </persName>
+<persName> <forename>Hamad</forename> <middlename>A</middlename> <surname>Algaeed</surname> <marker>1 ¶</marker> , </persName>
+<persName> <forename>Sultan</forename> <middlename>M</middlename> <surname>Almasoud</surname> <marker>1 ¶</marker> , </persName>
+<persName> <forename>Majed</forename> <middlename>A</middlename> <surname>Alahmari</surname> <marker>1 ¶</marker> , </persName>
+<persName> <forename>Omair</forename> <surname>Al Hussain</surname> <marker>2&amp;</marker> , </persName>
+<persName> <forename>Ahmed</forename> <surname>Elhag</surname> <marker>2&amp;</marker> </persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Naren</forename>
+								<middlename>Kumar</middlename>
+								<surname>Surendra</surname>
+								<marker>1* ¶</marker> ,
+							</persName>
+							<persName>
+								<forename>Mohd</forename>
+								<middlename>Rizal</middlename>
+								<surname>Abdul Manaf</surname>
+								<marker>1 ¶</marker> ,
+							</persName>
+							<persName>
+								<forename>Lai</forename>
+								<middlename>Seong</middlename>
+								<surname>Hooi</surname>
+								<marker>2 ¶</marker> ,
+							</persName>
+							<persName>
+								<forename>Sunita</forename>
+								<surname>Bavanandan</surname>
+								<marker>3 ¶</marker> ,
+							</persName>
+							<persName>
+								<forename>Fariz</forename>
+								<middlename>Safhan</middlename>
+								<surname>Mohamad Nor</surname>
+								<marker>4&amp;</marker> ,
+							</persName>
+							<persName>
+								<forename>Shahnaz</forename>
+								<middlename>Shah</middlename>
+								<surname>Firdaus Khan</surname>
+								<marker>5&amp;</marker> ,
+							</persName>
+							<persName>
+								<forename>Ong</forename>
+								<middlename>Loke</middlename>
+								<surname>Meng</surname>
+								<marker>6&amp;</marker> ,
+							</persName>
+							<persName>
+								<forename>Abdul</forename>
+								<middlename>Halim</middlename>
+								<surname>Abdul Gafor</surname>
+								<marker>7&amp;</marker>
+							</persName>
+						</author>
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

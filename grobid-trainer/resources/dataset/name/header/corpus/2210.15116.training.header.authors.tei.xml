@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+					<author>
+						<persName>
+							 <forename>Gopika</forename>
+							 <middlename>Lakshmi</middlename>
+							 <surname>Bhai</surname>,
+							 <marker>1, 2, *</marker>
+						</persName>
+						<persName>
+							 <forename>Hiroto</forename>
+							 <surname>Mukai</surname>,
+							 <marker>1, 2</marker>
+						</persName>
+						<persName>
+							 <forename>Tsuyoshi</forename>
+							 <surname>Yamamoto</surname>,
+							 <marker>3, 4</marker> and
+						</persName>
+						<persName>
+							 <forename>Jaw-Shen</forename>
+							 <surname>Tsai</surname>
+							 <marker>1, 2, 3, †</marker>
+						</persName>
+					</author>
+
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

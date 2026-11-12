@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>André</forename> <middlename>Luiz</middlename> <surname>Pinto dos Santos</surname> <marker>1</marker> ,</persName>
+<persName><forename>Guilherme</forename> <middlename>Rocha</middlename> <surname>Moreira</surname> <marker>1</marker> ,</persName>
+<persName><forename>Frank</forename> <surname>Gomes-Silva</surname> <marker>1*</marker> ,</persName>
+<persName><forename>Cícero</forename> <middlename>Carlos</middlename> <surname>Ramos de Brito</surname> <marker>2</marker> ,</persName>
+<persName><forename>Maria</forename> <middlename>Lindomárcia</middlename> <surname>Leonardo da Costa</surname> <marker>3</marker> ,</persName>
+<persName><forename>Luiz</forename> <middlename>Gustavo</middlename> <middlename>Ribeiro</middlename> <surname>Pereira</surname> <marker>4</marker> ,</persName>
+<persName><forename>Rogério</forename> <middlename>Martins</middlename> <surname>Maurício</surname> <marker>5</marker> ,</persName>
+<persName><forename>José</forename> <middlename>Augusto</middlename> <surname>Gomes Azevêdo</surname> <marker>6</marker> ,</persName>
+<persName><forename>José</forename> <middlename>Marques</middlename> <surname>Pereira</surname> <marker>7</marker> ,</persName>
+<persName><forename>Alexandre</forename> <middlename>Lima</middlename> <surname>Ferreira</surname> <marker>5</marker> and</persName>
+<persName><forename>Moacyr</forename> <surname>Cunha</surname> <suffix>Filho</suffix> <marker>1</marker></persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

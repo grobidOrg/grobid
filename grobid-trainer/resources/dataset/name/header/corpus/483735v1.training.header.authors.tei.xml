@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName> <forename>Lauren</forename> <middlename>Gillies</middlename> <surname>Campbell</surname> <marker>1</marker> , </persName>
+<persName> <forename>J</forename>. <middlename>Cameron</middlename> <surname>Thrash</surname> <marker>2</marker> , </persName>
+<persName> <forename>Nancy</forename> <middlename>N</middlename>. <surname>Rabalais</surname> <marker>3,4</marker> , and </persName>
+<persName> <forename>Olivia</forename> <middlename>U</middlename>. <surname>Mason</surname> <marker>1*</marker> </persName>
+<persName> <forename>LG</forename> <surname>Campbell</surname> </persName>
+<persName> <forename>NN</forename> <surname>Rabalais</surname> </persName>
+<persName> <roleName>Dr</roleName>. <forename>Olivia</forename> <middlename>U</middlename>. <surname>Mason</surname> </persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

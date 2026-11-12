@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>D</forename>.
+								<surname>Gil</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>A</forename>.
+								<surname>Esteban-Lansaque</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>A</forename>.
+								<surname>Borras</surname>
+								<marker>1</marker> and
+							</persName>
+							<persName>
+								<forename>C</forename>.
+								<surname>Sánchez</surname>
+								<marker>1 1</marker>.
+							</persName>
+							Purpose
+						</author>
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

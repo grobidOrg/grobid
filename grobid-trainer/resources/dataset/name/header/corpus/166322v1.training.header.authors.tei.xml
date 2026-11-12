@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Páll</forename> <surname>Melsted</surname> <marker>1*</marker> ,</persName>
+<persName><forename>Shannon</forename> <surname>Hateley</surname> <marker>2*</marker> ,</persName>
+<persName><forename>Isaac</forename> <middlename>Charles</middlename> <surname>Joseph</surname> <marker>3</marker> ,</persName>
+<persName><forename>Harold</forename> <surname>Pimentel</surname> <marker>4</marker> ,</persName>
+<persName><forename>Nicolas</forename> <surname>Bray</surname> <marker>5</marker> and</persName>
+<persName><forename>Lior</forename> <surname>Pachter</surname> <marker>2,4,6</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

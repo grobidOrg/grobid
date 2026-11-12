@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Yuxin</forename><surname>Li</surname><marker>1*</marker>,</persName>
+<persName><forename>Rui</forename><surname>Xu</surname><marker>2*</marker>,</persName>
+<persName><forename>Prahlad</forename><middlename>K</middlename>.<surname>Rao</surname><marker>3</marker>,</persName>
+<persName><forename>Charles</forename><middlename>K</middlename><surname>Gomes</surname><marker>3</marker>,</persName>
+<persName><forename>E</forename>.<middlename>Richard</middlename><surname>Moran</surname><marker>3</marker>,</persName>
+<persName><forename>Michelle</forename><surname>Puchowicz</surname><marker>3</marker>,</persName>
+<persName><forename>Eugene</forename><middlename>B</middlename>.<surname>Chang</surname><marker>4</marker>,</persName>
+<persName><forename>Deng</forename><middlename>Ping</middlename><surname>Yin</surname><marker>2</marker> and</persName>
+<persName><forename>Joseph</forename><middlename>F</middlename>.<surname>Pierre</surname><marker>3</marker></persName>
+<persName><forename>Joseph</forename><middlename>F</middlename>.<surname>Pierre</surname>,<roleName>PhD</roleName></persName>
+<persName><forename>Deng</forename><middlename>Ping</middlename><surname>Yin</surname>,<roleName>MD</roleName>,<roleName>PhD</roleName></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

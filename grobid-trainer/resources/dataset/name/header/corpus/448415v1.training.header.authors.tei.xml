@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Santiago</forename> <middlename>A</middlename>. <surname>Tobar</surname> <marker>1,2</marker>; </persName>
+<persName><surname>Andrades</surname>, <forename>M</forename>. <marker>1,2</marker>; </persName>
+<persName><surname>Olsen</surname>, <forename>V</forename> <marker>1,2</marker>, </persName>
+<persName><surname>Silvello</surname>, <forename>D</forename>. <marker>1,2</marker>, </persName>
+<persName><surname>Phaelante</surname>, <forename>A</forename> <marker>1,2</marker>; </persName>
+<persName><surname>Lopes</surname>, <forename>A</forename> <marker>1</marker>; </persName>
+<persName><surname>Biolo</surname>, <forename>A</forename> <marker>1,2</marker>; </persName>
+<persName><surname>Matte</surname>, <forename>U</forename> <marker>3</marker>; </persName>
+<persName><surname>Rohde</surname>, <forename>LE</forename> <marker>1,2</marker>; </persName>
+<persName><surname>Clausell</surname>, <forename>NO</forename> <marker>1,2</marker></persName>
+<persName><forename>Santiago</forename> <middlename>Alonso</middlename> <surname>Tobar</surname></persName>
+<persName><forename>Santiago</forename> <middlename>A</middlename>. <middlename>L</middlename>. <surname>Tobar</surname> and </persName>
+<persName><forename>Michael</forename> <surname>Andrades</surname></persName> contributed equally
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

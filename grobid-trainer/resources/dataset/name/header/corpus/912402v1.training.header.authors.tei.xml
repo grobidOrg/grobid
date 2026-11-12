@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Laura</forename> <middlename>M</middlename>. <surname>Chambers</surname> <roleName>DO</roleName> <roleName>MS</roleName> <marker>1*</marker></persName>
+<persName><forename>Emily</forename> <surname>Esakov</surname> <roleName>PhD</roleName> <marker>2</marker></persName>
+<persName><forename>Chad</forename> <surname>Braley</surname> <marker>2</marker></persName>
+<persName><forename>Mariam</forename> <surname>AlHilli</surname> <roleName>MD</roleName> <marker>1</marker></persName>
+<persName><forename>Chad</forename> <surname>Michener</surname> <roleName>MD</roleName> <marker>1</marker></persName>
+<persName><forename>Ofer</forename> <surname>Reizes</surname> <roleName>PhD</roleName> <marker>2*</marker></persName>
+<persName><forename>Laura</forename> <middlename>M</middlename>. <surname>Chambers</surname>, <roleName>DO</roleName>,</persName>
+<persName><forename>Ofer</forename> <surname>Reizes</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

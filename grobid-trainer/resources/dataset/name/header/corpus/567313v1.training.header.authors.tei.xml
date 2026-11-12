@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Fabiano</forename><surname>Tomazini</surname><marker>1,2</marker> ,</persName>
+<persName><forename>Ana</forename><middlename>Carla</middlename><middlename>S</middlename>.<surname>Mariano</surname><marker>1,2</marker> ,</persName>
+<persName><forename>Victor</forename><middlename>A</middlename>.<surname>Andrade-Souza</surname><marker>1</marker> ,</persName>
+<persName><forename>Viviane</forename><middlename>C</middlename>.<surname>Sebben</surname><marker>3</marker> ,</persName>
+<persName><forename>Carlos</forename><middlename>A</middlename>.<middlename>B</middlename>.<surname>de Maria</surname><marker>4</marker> ,</persName>
+<persName><forename>Daniel</forename><middlename>B</middlename>.<surname>Coelho</surname><marker>5</marker> ,</persName>
+<persName><forename>Romulo</forename><surname>Bertuzzi</surname><marker>6</marker> ,</persName>
+<persName><forename>Marcos</forename><middlename>D</middlename>.<surname>Silva-Cavalcante</surname><marker>1</marker> , &amp;</persName>
+<persName><forename>Adriano</forename><middlename>E</middlename>.<surname>Lima-Silva</surname><marker>1,2*</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

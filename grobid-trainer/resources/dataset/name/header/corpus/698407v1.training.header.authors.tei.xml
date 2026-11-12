@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Francisco</forename><middlename>Oiram</middlename><surname>Filho</surname><marker>1</marker> ;</persName>
+<persName><forename>Ebenézer</forename><surname>de Oliveira Silva</surname><marker>2</marker> ;</persName>
+<persName><forename>Mônica</forename><middlename>Maria</middlename><surname>de Almeida Lopes</surname><marker>3</marker> ;</persName>
+<persName><forename>Paulo</forename><middlename>Riceli</middlename><surname>Vasconselos Ribeiro</surname><marker>2</marker> ;</persName>
+<persName><forename>Andréia</forename><middlename>Hansen</middlename><surname>Oster</surname><marker>2</marker> ;</persName>
+<persName><forename>Jhonyson</forename><middlename>Arruda</middlename><surname>Carvalho Guedes</surname><marker>4</marker> ;</persName>
+<persName><forename>Patrícia</forename><surname>do Nascimento Bordallo</surname><marker>2</marker> ;</persName>
+<persName><forename>Guilherme</forename><middlename>Julião</middlename><surname>Zocolo</surname><marker>2 *</marker></persName>
+</author>
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>
