@@ -907,7 +907,8 @@ public class HeaderParser extends AbstractParser {
         Language langPiece = languageUtilities.runLanguageId(piece);
         if (langCurrent == null || langPiece == null || langCurrent.getLang() == null || langPiece.getLang() == null)
             return null;
-        if (langCurrent.getConf() < ABSTRACT_LANGUAGE_MIN_CONFIDENCE || langPiece.getConf() < ABSTRACT_LANGUAGE_MIN_CONFIDENCE)
+        if (langCurrent.getConf() < ABSTRACT_LANGUAGE_MIN_CONFIDENCE
+                || langPiece.getConf() < ABSTRACT_LANGUAGE_MIN_CONFIDENCE)
             return null;
         if (langCurrent.getLang().equals(langPiece.getLang()))
             return null;
