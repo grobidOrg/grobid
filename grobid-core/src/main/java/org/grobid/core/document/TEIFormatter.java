@@ -1091,6 +1091,17 @@ public class TEIFormatter {
             tei.append("\n\t\t\t</abstract>\n");
         }
 
+        for (Pair<String, String> translated : biblio.getTranslatedAbstracts()) {
+            tei.append("\t\t\t<abstract xml:lang=\"").append(translated.getLeft()).append("\">\n");
+            tei.append("\t\t\t\t<p");
+            if (generateIDs) {
+                String divID = KeyGen.getKey().substring(0, 7);
+                tei.append(" xml:id=\"_" + divID + "\"");
+            }
+            tei.append(">").append(TextUtilities.HTMLEncode(translated.getRight())).append("</p>\n");
+            tei.append("\t\t\t</abstract>\n");
+        }
+
         tei.append("\t\t</profileDesc>\n");
 
         if ((biblio.getA_Year() != null) |

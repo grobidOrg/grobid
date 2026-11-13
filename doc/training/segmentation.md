@@ -132,6 +132,8 @@ The contents of the grey band in the screenshot above should be surrounded by a 
 
 The content in the vertical margin on the left or right of the page, should be also annotated as `<note place="headnote">`. 
 
+On the first page, visible vertical margin text (arXiv stamp, download watermark, journal banner) is part of the `<front>` element like the rest of the first-page furniture; from the second page on it is a `<note place="headnote">`. Hidden text that is not printed for the reader stays untagged (see [Hidden characters](#hidden-characters)).
+
 Any information appearing in the page footer needs to be put inside a `<note place="footnote">`, as is shown in the following example:
 
 ![example of a footnote - 0C4AA21E271A7FF288AE13895EAED540ED582A83](img/note-place-footnote.png)

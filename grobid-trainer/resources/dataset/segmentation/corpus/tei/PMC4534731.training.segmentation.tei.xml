@@ -34,7 +34,9 @@
 
 			<back>
 
-				<listBibl>Reference <lb/>1. Rosner B. Fundamentals of Biostatistics. 6th ed. Belmont: Duxbury Press; 2006. p226-252. <lb/>H 0 <lb/>Reject H 0 <lb/>Fail to reject H 0 <lb/>Reject H 0 <lb/>-2.3 <lb/>2.3 <lb/>α/2 = 0.025 <lb/>Figure 2. Significance level and p value. <lb/>Z <lb/>α/2 = 0.025 <lb/>p/2 = 0.01 <lb/>p/2 = 0.01 <lb/></listBibl>
+				<listBibl>Reference <lb/>1. Rosner B. Fundamentals of Biostatistics. 6th ed. Belmont: Duxbury Press; 2006. p226-252. <lb/></listBibl>
+
+				<body>H 0 <lb/>Reject H 0 <lb/>Fail to reject H 0 <lb/>Reject H 0 <lb/>-2.3 <lb/>2.3 <lb/>α/2 = 0.025 <lb/>Figure 2. Significance level and p value. <lb/>Z <lb/>α/2 = 0.025 <lb/>p/2 = 0.01 <lb/>p/2 = 0.01 <lb/></body>
 			
 			</back>
 			
