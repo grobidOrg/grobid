@@ -147,6 +147,8 @@ public class BiblioItem {
     private String ark = null;
     private String istexId = null;
     private String abstract_ = null;
+    // abstracts found in a language different from the main abstract, as (language, text)
+    private List<org.apache.commons.lang3.tuple.Pair<String, String>> translatedAbstracts = null;
     private String collaboration = null;
     private String documentType = null;
 
@@ -510,6 +512,18 @@ public class BiblioItem {
 
     public String getLabeledAbstract() {
         return labeledAbstract;
+    }
+
+    public List<org.apache.commons.lang3.tuple.Pair<String, String>> getTranslatedAbstracts() {
+        return translatedAbstracts == null ? Collections.emptyList() : translatedAbstracts;
+    }
+
+    public void addTranslatedAbstract(String lang, String text) {
+        if (StringUtils.isBlank(text))
+            return;
+        if (translatedAbstracts == null)
+            translatedAbstracts = new ArrayList<>();
+        translatedAbstracts.add(org.apache.commons.lang3.tuple.Pair.of(lang, cleanAbstract(text)));
     }
 
     public String getEmail() {
