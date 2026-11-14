@@ -1,0 +1,494 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="10.1007_JHEP10(2019)213">
+			<titleStmt>
+				<title level="a">Asymptotic symmetries and Weinberg’s soft photon theorem in Minkd+2</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1007/JHEP10(2019)213</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document PHY-AST_93</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+			<head>1 Introduction<lb/></head>
+
+			<p>Soft theorems are equations that describe how scattering amplitudes in Minkowski space-<lb/>time involving one or many low energy, or soft, massless particles factorizes into a term<lb/> involving the soft gauge particles (known as the soft factor) and one involving the amplitude<lb/> without the soft particles, i.e.<lb/></p>
+
+				<formula>A n<lb/> m soft particles<lb/> ---------→ S m A n-m ,<lb/></formula>
+
+				<label>(1.1)<lb/></label>
+
+			<p>where S m is the soft factor involving m soft particles. Such theorems were established over<lb/> half a century ago in the works of Bloch, Nordseick, Low, Yennie, Frautschi, Suura <ref type="biblio">[1-6]<lb/></ref> and in a more modern language by Weinberg <ref type="biblio">[7, 8]</ref>. A particularly interesting feature<lb/> of all the soft theorems is that the soft factor is universal, i.e. it does not depend on the<lb/> details of the theory under consideration. Rather, it depends only on the quantum numbers<lb/> (linear momenta, angular momenta and charges) of the external particles involved in the<lb/> scattering amplitude. Such universality naturally suggests that perhaps the soft theorems<lb/> arise from some underlying symmetry, and indeed, it was relatively recently discovered that<lb/> these theorems are precisely the Ward identities associated to the asymptotic symmetries<lb/> of scattering amplitudes (see <ref type="biblio">[9]</ref> for a review and a comprehensive list of references).<lb/></p>
+
+			<p>Largely in part due to this discovery, in the last several years, there has been a resur-<lb/>gence of activity in the study of soft theorems, and many interesting directions have been<lb/> explored. The equivalence was originally conceived for four-dimensional theories where it<lb/> has been established to hold for gauge theories <ref type="biblio">[10-16]</ref>, gravity <ref type="biblio">[17-19]</ref>, as well as their<lb/> supersymmetric counterparts <ref type="biblio">[20]</ref>. The equivalence has proved useful in the exploration<lb/> of not just the original soft theorems, but also new subleading and sub-subleading soft<lb/> theorems <ref type="biblio">[21-28]</ref>. Some of these were discovered by studying known asymptotic sym-<lb/>metries <ref type="biblio">[29-31]</ref> while others led to the discovery of new asymptotic symmetries <ref type="biblio">[32-38]</ref>.<lb/> Finally, this equivalence has also been extended to theories living in higher even dimen-<lb/>sions <ref type="biblio">[39-41]</ref>, which is certainly relevant in the context of string theory. 1<lb/></p> 
+			<p>The plethora of successes in these endeavors has given confidence that perhaps every<lb/> soft theorem in Minkowski spacetime can be interpreted as the Ward identity for some<lb/> asymptotic symmetry. However, there is a noticeable class of theories in which the bridge<lb/> between soft theorems and asymptotic symmetries is missing -these are theories in odd<lb/> spacetime dimensions. Soft theorems are true and have the same universal form in both<lb/> even and odd dimensions. 2 Yet, to our knowledge, there has been no successful attempt in<lb/> showing the equivalence of soft theorems and asymptotic symmetries in odd dimensional<lb/> theories. The fundamental issue lies in the qualitatively different properties of massless<lb/> waves in even and odd dimensions. For instance, the massless Green&apos;s function is supported<lb/> entirely on the light cone in even dimensions, whereas in odd dimensions it is supported<lb/> everywhere inside the lightcone <ref type="biblio">[52, 53]</ref>. This implies that for a complete understanding of<lb/> waves in odd dimensions, one needs to study timelike infinity i ± as well as null infinity I ± .<lb/> Another symptom of the same feature is that the near I ± expansions of massless fields<lb/> is analytic in even dimensions (i.e. admits a Taylor series expansion in r -1 where r is the<lb/> radius of the transverse sphere) and non-analytic in odd dimensions. These issues make<lb/> the discussion of asymptotic symmetries particularly difficult in odd dimensions. Despite<lb/> this, it would be very strange if no such relationship exists, implying that soft theorems in<lb/> odd dimensions have a wholly different origin than those in even dimensions.<lb/></p>
+
+			<p>In this paper, we resolve the issues discussed in the previous paragraph and show that,<lb/> at least in the simple example of a U(1) gauge theory with massless charged matter, the<lb/> leading soft photon theorem is the Ward identity associated to large gauge symmetry in<lb/> all dimensions, thereby unifying and generalizing the previous discussions from four and<lb/> higher even dimensions to all dimensions. We organize the paper so that in section 2, we<lb/> study U(1) gauge theories in d + 2 dimensions and discuss asymptotic fall-offs of both free<lb/> and interacting gauge fields. In section 3, we impose a matching condition across spatial<lb/> infinity i 0 and demonstrate that the resulting Ward identity implies the leading soft photon<lb/> theorem. Finally, in section 4, we show that the matching condition implies conservation<lb/> of a charge which generates large gauge transformations on the fields at I ± .<lb/></p>
+
+			<head>2 U(1) gauge theories in d + 2 dimensions<lb/></head>
+
+			<p>In this section, we introduce the conventions used in this paper and discuss the necessary<lb/> background information regarding the equations of motion and the asymptotics of the U(1)<lb/> gauge field.<lb/></p>
+
+			<head>2.1 Classical equations<lb/></head>
+
+			<p>We work in flat null coordinates x µ = (u, r, x a ), a = 1, . . . , d which are related to Cartesian<lb/> coordinates X A by 3<lb/></p>
+
+				<formula>X A =<lb/> r<lb/> 2<lb/> 1 + x 2 +<lb/> u<lb/> r<lb/> , 2x a , 1 -x 2 -<lb/>u<lb/> r<lb/> ,<lb/> x 2 = δ ab x a x b .<lb/></formula> 
+				<label>(2.1)<lb/></label>
+
+			<p>Lowercase Latin indices are raised and lowered by the Kronecker delta δ ab and δ ab , respec-<lb/>tively. Using these coordinates, the metric of Minkowski spacetime becomes<lb/></p>
+
+				<formula>ds 2 = η AB dX A dX B = -dudr + r 2 δ ab dx a dx b ,<lb/></formula>
+
+				<label>(2.2)<lb/></label>
+
+			<p>where η AB = (-1, 1, . . . , 1) is the standard Minkowski metric in Cartesian coordinates.<lb/> The null boundaries I ± are located at r → ±∞ while keeping (u, x a ) fixed. On this<lb/> hypersurface, x a is the stereographic coordinate on the celestial sphere. The point labeled<lb/> by x a on I + is antipodal to the point with the same label on I -. The boundaries of I +<lb/> (I -) are at u → ±∞ and are denoted by I +<lb/> ± (I -<lb/>± ). In appendix A.1, we provide more<lb/> details about this coordinate system.<lb/></p>
+
+			<p>A U(1) gauge theory is described by a field strength F µν and matter fields Ψ i . The<lb/> matter fields couple to the field strength via a conserved U(1) current J µ . Dynamics<lb/> of the field strength is described by Maxwell&apos;s equations and the Bianchi identity, given<lb/> respectively by<lb/></p>
+
+				<formula>e 2 J ν = ∇ µ F µν<lb/></formula> 
+				<label>(2.3)<lb/></label> 
+				<formula>0 = ∂ α F µν + ∂ ν F αµ + ∂ µ F να .<lb/></formula>
+
+				<label>(2.4)<lb/></label>
+
+			<p>In flat null coordinates, (<ref type="formula">2.3</ref>) takes the form<lb/></p>
+
+				<formula>e 2 J u = 2∂ u F ur -<lb/>1<lb/> r 2 ∂ a F ua<lb/> e 2 J r = -2∂ r F ur -<lb/>1<lb/> r 2 ∂ a F ra -<lb/>2d<lb/> r<lb/> F ur<lb/> e 2 J a = -2∂ r F ua -2∂ u F ra -<lb/>2(d -2)<lb/> r<lb/> F ua -<lb/>1<lb/> r 2 ∂ b F ab .<lb/></formula>
+
+			<label>(2.5)<lb/></label>
+
+			<p>Furthermore, the Bianchi identity (<ref type="formula">2.4</ref>) is solved by<lb/></p>
+
+				<formula>F µν = ∂ µ A ν -∂ ν A µ ,<lb/> A µ ∼ A µ + ∂ µ ε,<lb/> ε ∼ ε + 2π.<lb/></formula> 
+				<label>(2.6)<lb/></label>
+
+			<p>Note that the theory is invariant under gauge transformations<lb/></p>
+
+				<formula>A µ → A µ + ∂ µ ε,<lb/> Ψ i → e iQ i ε Ψ i ,<lb/></formula>
+
+				<label>(2.7)<lb/></label>
+
+			<p>where Q i ∈ Z is the U(1) charge of the field Ψ i . Gauge transformations that vanish<lb/> at infinity correspond to redundant descriptions of the same physical state and can be<lb/> eliminated by a choice of gauge.<lb/></p>
+
+			<head>2.2 Asymptotics<lb/></head>
+
+			<p>In this section, we study the structure of the field strength near I ± . The general solution<lb/> to (<ref type="formula">2.3</ref>) and (<ref type="formula">2.4</ref>) has the form<lb/></p>
+
+				<formula>F µν = F (R)<lb/> µν + F (C)<lb/> µν .<lb/></formula>
+
+				<label>(2.8)<lb/></label>
+
+			<p>The radiative field F<lb/> (R)<lb/> µν satisfies the homogeneous Maxwell&apos;s equations (J ν = 0) and F<lb/> (C)<lb/> µν<lb/> satisfies (<ref type="formula">2.3</ref>). The separation of the field strength into a radiative part and a Coulombic<lb/> part is fixed by either choosing a Green&apos;s function or by imposing boundary conditions on<lb/> the fields. We will be interested in incoming (-) and outgoing (+) solutions to Maxwell&apos;s<lb/> equations, whose radiative and Coulombic parts are denoted respectively by F<lb/> (R±)<lb/> µν<lb/> and<lb/> F<lb/> (C±)<lb/> µν<lb/>. These fields have the following large r fall-offs near I ± : 4<lb/></p>
+
+				<formula>F (R±)<lb/> ur<lb/> = O |r| -d<lb/> 2 -1 + O |r| -d ,<lb/> F (C±)<lb/> ur<lb/> = O |r| -d<lb/> F (R±)<lb/> ra<lb/> = O |r| -d<lb/> 2<lb/> + O |r| -d ,<lb/> F (C±)<lb/> ra<lb/> = O |r| -d<lb/> F (R±)<lb/> ua<lb/> = O |r| -d<lb/> 2 +1 + O |r| -d+1 ,<lb/> F (C±)<lb/> ua<lb/> = O |r| -d+1<lb/> F<lb/> (R±)<lb/> ab<lb/> = O |r| -d<lb/> 2 +1 + O |r| -d+1 ,<lb/> F<lb/> (C±)<lb/> ab<lb/> = O |r| -d+1 .<lb/></formula>
+
+			<label>(2.9)<lb/></label>
+
+			<p>The leading fall-offs for the radiative part are determined by noting that the electromagnetic<lb/> stress tensor components T uu and T ua must fall off as |r| -d in order to have finite energy-<lb/>momentum and angular-momentum flux through I ± . Then, using the fact that T uu ∼<lb/> r -2 F ua F u<lb/> a and T ua ∼ r -2 F ab F u<lb/> b , we can determine the fall-offs for F ua and F ab . The<lb/> remaining ones are then determined by Lorentz invariance. Similarly, the fall-offs for the<lb/> Coulombic part are determined by Gauss&apos;s law, which also determines the fall-offs for the<lb/> matter current<lb/></p>
+
+				<formula>J u = O |r| -d ,<lb/> J a = O |r| -d ,<lb/> J r = O |r| -d-2 .<lb/></formula>
+
+			<label>(2.10)<lb/></label>
+
+			<p>We would now like to determine the precise large r expansion for both the radiative and<lb/> the Coulombic fields.<lb/></p>
+
+			<head>2.2.1 Radiative field<lb/></head>
+
+			<p>The radiative gauge field can be decomposed into creation and annihilation operators O<lb/> (±) †<lb/> a<lb/> and O<lb/> (±)<lb/> a<lb/> as follows:<lb/></p>
+
+				<formula>F<lb/> (R±)<lb/> AB (X) = e<lb/> d d+1 q<lb/> (2π) d+1<lb/> 1<lb/> 2q 0 ε a<lb/> AB ( q )O (±)<lb/> a ( q )e iq•X + ε a<lb/> AB ( q ) * O (±) †<lb/> a<lb/> ( q )e -iq•X ,</formula>
+
+				<label>(2.11)<lb/></label>
+
+			<p>where q 0 = | q | and ε a<lb/> AB ( q ) are the d polarization tensors labeled by a and defined via<lb/></p>
+
+				<formula>ε a<lb/> AB ( q ) = i [q A ε a<lb/> B ( q ) -q B ε a<lb/> A ( q )] ,<lb/> q A ε a<lb/> A ( q ) = 0,<lb/> η AB ε a<lb/> A ( q )ε b<lb/> B ( q ) * = δ ab .</formula> 
+				<label>(2.12)<lb/></label>
+
+			<p>In a quantum theory, the creation and annihilation modes satisfy the canonical commuta-<lb/>tion relation<lb/></p>
+
+				<formula>O (±)<lb/> a ( q ) , O<lb/> (±) †<lb/> b<lb/> ( q ) = 2q 0 δ ab (2π) d+1 δ (d+1) ( q -q ).<lb/></formula> 
+				<label>(2.13)<lb/></label>
+
+			<p>The equations in (<ref type="formula">2.12</ref>) remain invariant under ε a<lb/> A ( q ) → ε a<lb/> A ( q ) + f a ( q )q A for any arbitrary<lb/> functions f a . We use this to parameterize the on-shell photon momentum and polariza-<lb/>tion as 5<lb/></p> 
+			<formula>q A = ω qA ,<lb/> qA =<lb/> 1 + y 2<lb/> 2<lb/> , y a ,<lb/> 1 -y 2<lb/> 2<lb/> ,<lb/> ε a<lb/> A ( q ) = ∂ a qA = (-y a , δ a<lb/> b , -y a ). </formula> 
+			<label>(2.14)<lb/></label>
+
+			<p>Substituting (<ref type="formula">2.14</ref>) into (<ref type="formula">2.11</ref>) and writing the integral over flat null coordinates, we obtain 6<lb/></p>
+
+				<formula>F (R±)<lb/> ur<lb/> (u, r, x) =<lb/> e<lb/> 4(2π) d+1 r<lb/> ∞<lb/> 0<lb/> dω d d y ω d-1 ∂ a O (±)<lb/> a (ω, x + y)e -i<lb/> 2 ωu-i<lb/> 2 ωry 2 + c.c. .<lb/></formula> 
+				<label>(2.15)<lb/></label>
+
+			<p>To determine the asymptotic expansion of (<ref type="formula">2.15</ref>) at large |u| and |r|, we assume that<lb/> the creation and annihilation modes admit a soft expansion of the form<lb/></p>
+
+				<formula>∂ a O (±)<lb/> a (ω, x + y) =<lb/> ∞<lb/> n=0<lb/> ω n-1 ∂ a O (±,n)<lb/> a<lb/> (x + y)<lb/> as<lb/> ω → 0 + .<lb/></formula> 
+				<label>(2.16)<lb/></label>
+
+			<p>This soft expansion allows for a simple pole in ω which is consistent with Weinberg&apos;s soft<lb/> photon theorem. The corresponding &quot;soft photon operator&quot; is O<lb/> (±,0)<lb/> a<lb/> (x). 7 It will play a<lb/> central role in the following section.<lb/></p>
+
+			<p>We further assume that the coefficients admit a Fourier transform<lb/></p>
+
+				<formula>∂ a O (±,n)<lb/> a<lb/> (x + y) =<lb/> d d k<lb/> (2π) d e ik•(x+y) O (±)<lb/> n (k)<lb/> O (±)<lb/> n (k) = d d y e -ik•y ∂ a O (±,n)<lb/> a<lb/> (y).<lb/></formula>
+
+			<label>(2.17)<lb/></label> 
+			<p>Substituting (<ref type="formula">2.16</ref>) and (<ref type="formula">2.17</ref>) into (<ref type="formula">2.15</ref>), we find<lb/></p>
+
+				<formula>F (R±)<lb/> ur<lb/> (u, r, x) =<lb/> e<lb/> 2(2π)<lb/> d<lb/> 2 +1<lb/> ∞<lb/> n=0<lb/> d d k<lb/> (2π) d k 2νn ie ik•x<lb/> (ir) d+n O (±)<lb/> n (k)(kz) -νn K νn (kz) + c.c. .<lb/></formula>
+
+				<label>(2.18)<lb/></label>
+
+			<p>where<lb/></p>
+
+				<formula>z =<lb/> √<lb/> iu<lb/> √<lb/> ir<lb/> ,<lb/> ν n =<lb/> d<lb/> 2<lb/> -1 + n,<lb/></formula>
+
+				<label>(2.19)<lb/></label>
+
+			<p>and K ν is the modified Bessel function of the second kind. We now consider the large<lb/> |r| expansion of the field strength, or equivalently the small z limit. This takes a qual-<lb/>itatively different form depending on whether d is odd or even, so we consider the two<lb/> cases separately.<lb/></p>
+
+			<p>Odd dimensions. When d ∈ 2Z+1, the order of the Bessel function is ν n = d<lb/> 2 -1+n ∈ Z.<lb/> For non-integer order, the asymptotic expansion near z = 0 of the Bessel function is<lb/></p>
+
+				<formula>K ν (z) =<lb/> π<lb/> 2<lb/> csc(πν)<lb/> ∞<lb/> s=0<lb/> 1<lb/> Γ(s + 1)<lb/> (z/2) 2s-ν<lb/> Γ(1 + s -ν)<lb/> -<lb/>(z/2) 2s+ν<lb/> Γ(1 + s + ν)<lb/> , as z → 0.</formula> 
+				<label>(2.20)<lb/></label>
+
+			<p>Substituting (<ref type="formula">2.20</ref>) into (<ref type="formula">2.18</ref>), we find<lb/></p>
+
+				<formula>F (R±)<lb/> ur<lb/> (u, r, x) =<lb/> e<lb/> 8(2π)<lb/> d<lb/> 2<lb/> ∞<lb/> n=0<lb/> ∞<lb/> s=0<lb/> csc(πν n )<lb/> 2 2s-νn Γ(s + 1)Γ(1 + s -ν n )<lb/> ×<lb/> i(iu) s-νn<lb/> (ir)<lb/> d<lb/> 2 +1+s<lb/> d d k<lb/> (2π) d k 2s O (±)<lb/> n (k)e ik•x + c.c.<lb/> -<lb/>e<lb/> 8(2π)<lb/> d<lb/> 2<lb/> ∞<lb/> n=0<lb/> ∞<lb/> s=0<lb/> csc(πν n )<lb/> 2 2s+νn Γ(s + 1)Γ(1 + s + ν n )<lb/> ×<lb/> i(iu) s<lb/> (ir) d+n+s<lb/> d d k<lb/> (2π) d k 2(s+νn) O (±)<lb/> n (k)e ik•x + c.c. .<lb/></formula>
+
+				<label>(2.21)<lb/></label>
+
+			<p>We can now use the inverse Fourier transform (<ref type="formula">2.17</ref>) to go back to the momentum space<lb/> variables. Evaluating<lb/></p>
+
+				<formula>d d k<lb/> (2π) d k 2κ O (±)<lb/> n (k)e ik•x =<lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> (-∂ 2 ) κ ∂ a O<lb/> (±,n)<lb/> a<lb/> (x)<lb/> κ ∈ Z<lb/> 4 κ Γ d<lb/> 2 + κ<lb/> π<lb/> d<lb/> 2 Γ(-κ)<lb/> d d y<lb/> ∂ a O<lb/> (±,n)<lb/> a<lb/> (y)<lb/> [(x -y) 2 ]<lb/> d<lb/> 2 +κ<lb/> κ ∈ Z<lb/></formula> 
+				<label>(2.22)<lb/></label>
+
+			<p>where ∂ 2 = ∂ a ∂ a , and substituting into (<ref type="formula">2.21</ref>), we obtain<lb/></p>
+
+				<formula>F (R±)<lb/> ur<lb/> (u, r, x) =<lb/> e<lb/> 8(2π)<lb/> d<lb/> 2<lb/> ∞<lb/> n=0<lb/> ∞<lb/> s=0<lb/> 2 νn-2s csc(πν n )<lb/> Γ(s + 1)Γ(1 + s -ν n )<lb/> ×<lb/> i(iu) s-νn<lb/> (ir)<lb/> d<lb/> 2 +1+s<lb/> (-∂ 2 ) s ∂ a O (±,n)<lb/> a<lb/> (x) + c.c.<lb/> +<lb/> e<lb/> 2<lb/> d<lb/> 2 +3 π d+1<lb/> ∞<lb/> n=0<lb/> ∞<lb/> s=0<lb/> (-1) s Γ d<lb/> 2 + ν n + s<lb/> 2 -νn Γ(s + 1)<lb/> ×<lb/> i(iu) s<lb/> (ir) d+n+s d d y<lb/> ∂ a O<lb/> (±,n)<lb/> a<lb/> (y)<lb/> [(x -y) 2 ]<lb/> d<lb/> 2 +νn+s<lb/> + c.c. .<lb/></formula> 
+				<label>(2.23)<lb/></label>
+
+			<p>Even dimensions. When d ∈ 2Z, the order of the Bessel function is</p>
+
+				<formula>ν n = d<lb/> 2 -1 + n ∈ Z.<lb/></formula>
+
+			<p>For integer order, the asymptotic expansion near z = 0 of the Bessel function is given by<lb/></p>
+
+				<formula>K ν (z) =<lb/> ν-1<lb/> s=0<lb/> (-1) s Γ(ν -s) z<lb/> 2<lb/> 2s-ν<lb/> 2Γ(s + 1)<lb/> +<lb/> ∞<lb/> s=0<lb/> (-1) ν-1 log z<lb/> 2 e γ E -1<lb/> 2 (H s + H s+ν ) z<lb/> 2<lb/> 2s+ν<lb/> Γ(s + 1)Γ(s + ν + 1)<lb/> ,<lb/></formula>
+
+				<label>(2.24)<lb/></label>
+
+			<p>where γ E is the Euler-Mascheroni constant and H n is the n-th harmonic number (we define<lb/> H 0 = 0). Substituting (<ref type="formula">2.24</ref>) into (<ref type="formula">2.18</ref>), we find<lb/></p>
+
+				<formula>F (R±)<lb/> ur<lb/> (u, r, x)<lb/> =<lb/> e<lb/> 2(2π)<lb/> d<lb/> 2 +1<lb/> ∞<lb/> n=0<lb/> νn-1<lb/> s=0<lb/> (-1) s Γ(ν n -s)<lb/> 2 2s-νn+1 Γ(s + 1)<lb/> i(iu) s-νn<lb/> (ir)<lb/> d<lb/> 2 +1+s<lb/> d d k<lb/> (2π) d k 2s O (±)<lb/> n (k)e ik•x + c.c.<lb/> +<lb/> e<lb/> 2(2π)<lb/> d<lb/> 2 +1<lb/> ∞<lb/> n=0<lb/> ∞<lb/> s=0<lb/> 2 -2s-νn (-1) νn-1<lb/> Γ(s + 1)Γ(s + ν n + 1)<lb/> d d k<lb/> (2π) d k 2(s+νn)<lb/> ×<lb/> <lb/> <lb/> i(iu) s log k<lb/> 2<lb/> √<lb/> iu<lb/> √<lb/> ir e γ E -1<lb/> 2 (H s + H s+νn )<lb/> (ir) d+n+s<lb/> O (±)<lb/> n (k)e ik•x + c.c.<lb/> <lb/>  .<lb/></formula>
+
+			<label>(2.25)<lb/></label>
+
+			<p>Again, we want to use the inverse Fourier transform (<ref type="formula">2.17</ref>) to go back to the momentum<lb/> space variables. Evaluating for κ ∈ Z<lb/></p>
+
+				<formula>d d k<lb/> (2π) d k 2κ log k O (±)<lb/> n (k)e ik•x =<lb/> (4π)<lb/> d<lb/> 2 Γ(κ + 1)Γ d<lb/> 2 + κ<lb/> (-1) κ+1 2 1-2κ<lb/> d d y<lb/> ∂ a O<lb/> (±,n)<lb/> a<lb/> (y)<lb/> [(x -y) 2 ]<lb/> d<lb/> 2 +κ<lb/> ,<lb/></formula>
+
+				<label>(2.26)<lb/></label>
+
+			<p>we get upon substituting (<ref type="formula">2.22</ref>) and (<ref type="formula">2.26</ref>) into (<ref type="formula">2.25</ref>)<lb/></p>
+
+				<formula>F (R±)<lb/> ur<lb/> (u, r, x)<lb/> =<lb/> e<lb/> 2(2π)<lb/> d<lb/> 2 +1<lb/> ∞<lb/> n=0<lb/> νn-1<lb/> s=0<lb/> (-1) s Γ(ν n -s)<lb/> 2 2s-νn+1 Γ(s + 1)<lb/> i(iu) s-νn<lb/> (ir)<lb/> d<lb/> 2 +1+s<lb/> (-∂ 2 ) s ∂ a O (±,n)<lb/> a<lb/> (x) + c.c.<lb/> +<lb/> e<lb/> 8π<lb/> ∞<lb/> n=0<lb/> ∞<lb/> s=0<lb/> (-1) s 2<lb/> d<lb/> 2 +νn Γ d<lb/> 2 + s + ν n<lb/> Γ(s + 1)<lb/> i(iu) s<lb/> (ir) d+n+s d d y<lb/> ∂ a O<lb/> (±,n)<lb/> a<lb/> (y)<lb/> [(x -y) 2 ]<lb/> d<lb/> 2 +νn+s<lb/> + c.c.<lb/> +<lb/> e<lb/> 2(2π)<lb/> d<lb/> 2 +1<lb/> ∞<lb/> n=0<lb/> ∞<lb/> s=0<lb/> 2 -2s-νn (-1) νn-1<lb/> Γ(s + 1)Γ(s + ν n + 1)<lb/> ×<lb/> <lb/> <lb/> i(iu) s log 1<lb/> 2<lb/> √<lb/> iu<lb/> √<lb/> ir e γ E -1<lb/> 2 (H s + H s+νn )<lb/> (ir) d+n+s<lb/> (-∂ 2 ) s+νn ∂ a O (±,n)<lb/> a<lb/> (x) + c.c.<lb/> <lb/>  .<lb/></formula>
+
+			<label>(2.27)<lb/></label>
+
+			<head>2.2.2 Coulombic field<lb/></head>
+
+			<p>Having performed the asymptotic expansion for the radiative field, we now turn to the<lb/> Coulombic field. The large r expansion for this can be performed in two ways. First, we<lb/> could follow strategy used in the previous section and start by writing the explicit solution<lb/> for the Coulombic field using the massless scalar Green&apos;s function as<lb/></p>
+
+				<formula>F<lb/> (C±)<lb/> AB (X) = e 2 d d+2 Y G (±) (X -Y ) [∂ A J B (Y ) -∂ B J A (Y )] ,<lb/></formula>
+
+				<label>(2.28)<lb/></label>
+
+			<p>where G (±) (X) is the retarded (-) or advanced (+) massless scalar Green&apos;s function sat-<lb/>isfying ∂ 2 G (±) (X) = δ (d+2) (X). Explicitly,<lb/></p>
+
+				<formula>G (±) (X) = 2θ(∓X 0 )Re [f d (X)],<lb/> f d (X) =<lb/> (-i) d+1 Γ d<lb/> 2<lb/> 4π<lb/> d+2<lb/> 2<lb/> (X 0 ) 2 -| X | 2 -i<lb/> d<lb/> 2<lb/>.<lb/></formula>
+
+			<label>(2.29)<lb/></label>
+
+			<p>Then, assuming an appropriate asymptotic expansion (near I ± ) for the conserved current<lb/> (along with some other assumptions regarding the behaviour of the current near i ± ), we<lb/> can use (<ref type="formula">2.28</ref>) and (<ref type="formula">2.29</ref>) to determine the large r expansion of the Coulombic field.<lb/></p> 
+			<p>While possible, this is a tedious exercise and it is more convenient to determine the large<lb/> r expansion of the Coulombic field as follows. We start by assuming that the Coulombic<lb/> field admits a Taylor expansion of the following form near I ± (consistent with (<ref type="formula">2.9</ref>)):<lb/></p>
+
+				<formula>F (C±)<lb/> ur<lb/> (u, r, x) =<lb/> ∞<lb/> n=0<lb/> F<lb/> (C±,d+n)<lb/> ur<lb/> (u, x)<lb/> |r| d+n<lb/> ,<lb/> F (C±)<lb/> ua<lb/> (u, r, x) =<lb/> ∞<lb/> n=0<lb/> F<lb/> (C±,d-1+n)<lb/> ua<lb/> (u, x)<lb/> |r| d-1+n<lb/> F (C±)<lb/> ra<lb/> (u, r, x) =<lb/> ∞<lb/> n=0<lb/> F<lb/> (C±,d+n)<lb/> ra<lb/> (u, x)<lb/> |r| d+n<lb/> ,<lb/> F<lb/> (C±)<lb/> ab<lb/> (u, r, x) =<lb/> ∞<lb/> n=0<lb/> F<lb/> (C±,d-1+n)<lb/> ab<lb/> (u, x)<lb/> |r| d-1+n<lb/>.<lb/></formula>
+				
+			<label>(2.30)<lb/></label>
+
+			<p>Similarly, consistent with (<ref type="formula">2.10</ref>), we also assume the expansion<lb/></p>
+
+				<formula>J u (u, r, x) =<lb/> ∞<lb/> n=0<lb/> J<lb/> (±,d+n)<lb/> u<lb/> (u, x)<lb/> |r| d+n<lb/> J a (u, r, x) =<lb/> ∞<lb/> n=0<lb/> J<lb/> (±,d+n)<lb/> a<lb/> (u, x)<lb/> |r| d+n<lb/> J r (u, r, x) =<lb/> ∞<lb/> n=0<lb/> J<lb/> (±,d+2+n)<lb/> r<lb/> (u, x)<lb/> |r| d+2+n<lb/>.<lb/></formula>
+
+			<label>(2.31)<lb/></label> 
+			<p>Substituting (<ref type="formula">2.30</ref>) and (<ref type="formula">2.31</ref>) into (<ref type="formula">2.5</ref>), we can obtain equations order by order in the<lb/> large r expansion. Solving these yields the full asymptotic expansion for the Coulombic<lb/> field strength, though for our purposes, it suffices to obtain just the following leading order<lb/> constraint equation (obtained from the u component of Maxwell&apos;s equations):<lb/></p>
+
+				<formula>2∂ u F (C±,d)<lb/> ur<lb/> = e 2 J (±,d)<lb/> u<lb/> .<lb/></formula>
+
+			<label>(2.32)<lb/></label>
+			
+			<head>3 Weinberg&apos;s soft photon theorem<lb/></head>
+
+			<head>3.1 Matching condition<lb/></head>
+
+			<p>As in four dimensions, we impose a matching condition on the radial electric field 8<lb/></p>
+
+				<formula>F (+,d)<lb/> ur<lb/> I +<lb/> -<lb/>= -F (-,d)<lb/> ur<lb/> I -<lb/>+<lb/> .<lb/></formula>
+
+				<label>(3.1)<lb/></label>
+
+			<p>Recall that coordinate x labels antipodal points on the celestial spheres on I + and I -,<lb/> so the above condition is an antipodal matching condition. To massage this matching<lb/> condition into a more useful form, we define the &quot;charge&quot;<lb/></p>
+
+				<formula>Q ±<lb/> ε = ±<lb/> 2<lb/> e 2 I ±<lb/> ∓<lb/> d d x εF (±,d)<lb/> ur<lb/> ,<lb/></formula>
+
+				<label>(3.2)<lb/></label>
+
+			<p>where ε ≡ ε(x) is a function defined on the d-dimensional celestial sphere at I ± . As we<lb/> will show in section 4 using the covariant phase space formalism, Q ±<lb/> ε is the charge that<lb/> generates large gauge transformations on I ± . We can therefore think of Q ±<lb/> ε as measuring<lb/> the local U(1) charge of the in and out state respectively. For ε = 1, this measures the<lb/> total global U(1) charge. These charges can be determined in experiment by measuring<lb/> the electromagnetic memory <ref type="biblio">[44, 46, 57]</ref>.<lb/></p>
+
+			<p>The antipodal matching condition (<ref type="formula">3.1</ref>) immediately implies<lb/></p>
+
+				<formula>Q +<lb/> ε = Q -<lb/>ε .<lb/></formula> 
+				<label>(3.3)<lb/></label>
+
+			<p>Breaking up the field strength into radiative and Coulombic pieces, we can write the<lb/> charges as<lb/></p>
+
+				<formula>Q ±<lb/> ε = Q ±S<lb/> ε + Q ±H<lb/> ε ,<lb/></formula>
+
+				<label>(3.4)<lb/></label>
+
+			<p>where<lb/></p>
+
+				<formula>Q ±S<lb/> ε = ±<lb/> 2<lb/> e 2 I ±<lb/> ∓<lb/> d d x εF (R±,d)<lb/> ur<lb/> ,<lb/> Q ±H<lb/> ε<lb/> = ±<lb/> 2<lb/> e 2 I ±<lb/> ∓<lb/> d d x εF (C±,d)<lb/> ur<lb/> .<lb/></formula>
+
+			<label>(3.5)<lb/></label>
+
+				<p>Q ±S<lb/> ε<lb/> are the incoming and outgoing soft charges and Q ±H<lb/> ε<lb/> are the incoming and outgoing<lb/> hard charges. Using (<ref type="formula">2.32</ref>), the hard charges can be written as<lb/></p>
+
+				<formula>Q ±H<lb/> ε<lb/> = -<lb/>I ±<lb/> dud d x εJ (±,d)<lb/> u<lb/> ±<lb/> 2<lb/> e 2 I ±<lb/> ±<lb/> d d x εF (C±,d)<lb/> ur<lb/> .<lb/></formula> 
+				<label>(3.6)<lb/></label>
+
+			<p>The second term above is the Coulombic field in the far past or far future and only re-<lb/>ceives contributions from stable massive particles. In this paper, we assume that our<lb/> theory contains only stable massless states so this contribution vanishes. Thus, the hard<lb/> charges become<lb/></p>
+
+				<formula>Q ±H<lb/> ε<lb/> = -<lb/>I ±<lb/> dud d x εJ (±,d)<lb/> u<lb/> .<lb/></formula> 
+				<label>(3.7)<lb/></label>
+
+			<p>To determine the soft charge in odd and even dimensions, we extract the coefficient of<lb/> |r| -d in (<ref type="formula">2.23</ref>) and (<ref type="formula">2.27</ref>), respectively. In odd dimensions, we get<lb/></p>
+
+				<formula>F (R±,d)<lb/> ur<lb/> = ±<lb/> e(-1)<lb/> d-1<lb/> 2 Γ (d -1)<lb/> 16π d+1<lb/> d d y<lb/> ∂ a O<lb/> (±,0)<lb/> a<lb/> (y) + ∂ a O<lb/> (±,0) †<lb/> a<lb/> (y)<lb/> [(x -y) 2 ] d-1<lb/> ,<lb/></formula>
+
+				<label>(3.8)<lb/></label>
+
+			<p>and for even dimensions, we get<lb/></p>
+
+				<formula>F (R±,d)<lb/> ur<lb/> = -<lb/>e<lb/> (4π)<lb/> d<lb/> 2 +1 Γ d<lb/> 2<lb/> ∞<lb/> n=1<lb/> 2 n Γ(n) i(iu) -n (-∂ 2 )<lb/> d<lb/> 2 -1 ∂ a O (±,n)<lb/> a<lb/> (x) + c.c.<lb/> +<lb/> ie(-1)<lb/> d<lb/> 2 Γ (d -1)<lb/> 2 4-d π<lb/> d d y<lb/> ∂ a O<lb/> (±,0)<lb/> a<lb/> (y) -∂ a O<lb/> (±,0) †<lb/> a<lb/> (y)<lb/> [(x -y) 2 ] d-1<lb/> +<lb/> ie log |u|e 2γ E<lb/> 4|r|<lb/> -H d<lb/> 2 -1<lb/> (4π)<lb/> d<lb/> 2 +1 Γ d<lb/> 2<lb/> (-∂ 2 )<lb/> d<lb/> 2 -1 ∂ a O (±,0)<lb/> a<lb/> (x) -∂ a O (±,0) †<lb/> a<lb/> (x)<lb/> -<lb/>e [Θ(u) -Θ(r)]<lb/> 8(4π)<lb/> d<lb/> 2 Γ d<lb/> 2<lb/> (-∂ 2 )<lb/> d<lb/> 2 -1 ∂ a O (±,0)<lb/> a<lb/> (x) + ∂ a O (±,0) †<lb/> a<lb/> (x) .<lb/></formula>
+
+				<label>(3.9)<lb/></label>
+
+			<p>Notice that in even dimensions this coefficient has a logarithmic divergence, which means<lb/> the soft charge is potentially ill-defined in even dimensions. To cancel this divergence,<lb/> we impose 9<lb/></p>
+
+				<formula>∂ a O (±,0)<lb/> a<lb/> (x) = ∂ a O (±,0) †<lb/> a<lb/> (x).<lb/></formula>
+
+				<label>(3.10)<lb/></label>
+
+			<p>We remark that this constraint implies that in even dimensions F<lb/> (R±,d)<lb/> ur<lb/> I ±<lb/> ±<lb/> = 0, an as-<lb/>sumption that was made previously in <ref type="biblio">[10]</ref>. The soft charge now takes the form<lb/></p>
+
+				<formula>Q ±S<lb/> ε =<lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> 1<lb/> (4π)<lb/> d<lb/> 2 Γ d<lb/> 2 e<lb/> d d x ε(x)(-∂ 2 )<lb/> d<lb/> 2 -1 ∂ a O (±,0)<lb/> a<lb/> (x)<lb/> d ∈ 2Z<lb/> (-1)<lb/> d-1<lb/> 2 Γ (d -1)<lb/> 4π d+1 e<lb/> d d x ε(x) d d y<lb/> ∂ a O<lb/> (±,0)<lb/> a<lb/> (y)<lb/> [(x -y) 2 ] d-1 d ∈ 2Z + 1.<lb/></formula>
+
+				<label>(3.11)<lb/></label>
+
+			<p>We conclude this section by bringing the soft charge into the same form for both odd<lb/> and even dimensions by judiciously choosing ε for the remainder of the paper to be<lb/></p>
+
+				<formula>ε(z) = f x (z) = (-∂ 2 ) log (x -z) 2 .<lb/></formula>
+
+			<label>(3.12)<lb/></label>
+
+			<p>Then, using the fact that in even dimensions<lb/></p>
+
+				<formula>(-∂ 2 )<lb/> d<lb/> 2 -1 f x (z) = (-∂ 2 )<lb/> d<lb/> 2 log (x -z) 2 = -(4π)<lb/> d<lb/> 2 Γ<lb/> d<lb/> 2<lb/> δ (d) (x -z),<lb/></formula>
+
+				<label>(3.13)<lb/></label>
+
+			<p>and in odd dimensions<lb/></p>
+
+				<formula>d d z<lb/> f x (z)<lb/> [(z -y) 2 ] d-1 = -2(d -2) d d z<lb/> 1<lb/> [(z -y) 2 ] d-1 (x -z) 2<lb/> = -<lb/>4(-1)<lb/> d-1<lb/> 2 π d+1<lb/> Γ(d -1)<lb/> δ (d) (x -y),<lb/></formula>
+
+				<label>(3.14)<lb/></label>
+
+			<p>the soft charge becomes for all spacetime dimensions 10<lb/></p>
+
+				<formula>Q ±S<lb/> fx = -<lb/>1<lb/> 2e<lb/> ∂ a O (±,0)<lb/> a<lb/> (x) + ∂ a O (±,0) †<lb/> a<lb/> (x) = -<lb/>1<lb/> e<lb/> ∂ a O (±, 0)<lb/> a<lb/> (x).<lb/></formula> 
+				<label>(3.15)<lb/></label>
+
+			<head>3.2 Ward identity<lb/></head>
+
+			<p>Thus far, our discussion of fields, matching conditions, and charges has been entirely clas-<lb/>sical. We now extend the discussion to a semi-classical theory and derive a Ward identity.<lb/> In such a theory, the quantity of interest is the scattering amplitude, which is the overlap<lb/> between the in state (living on i -∪ I -) and the out state (living on i + ∪ I + ), i.e.<lb/></p>
+
+				<formula>A n = out | in ,<lb/></formula>
+
+				<label>(3.16)<lb/></label>
+
+			<p>where n is the total number of particles in the in and out state. The classical matching<lb/> condition (<ref type="formula">3.3</ref>) then translates to<lb/></p>
+
+				<formula>out | Q +<lb/> ε -Q -<lb/>ε | in = 0.<lb/></formula>
+
+				<label>(3.17)<lb/></label>
+
+			<p>Using (<ref type="formula">3.4</ref>), we can rewrite this as<lb/></p>
+
+				<formula>out | Q +S<lb/> ε -Q -S<lb/> ε<lb/> | in = -out | Q +H<lb/> ε<lb/> -Q -H<lb/> ε<lb/> | in .<lb/></formula>
+
+				<label>(3.18)<lb/></label>
+
+			<p>To simplify this, we evaluate the action of the hard charge on one-particle states, i.e.<lb/> the right-hand-side of (<ref type="formula">3.18</ref>). Let | Ψ i , p i , s i be a massless one-particle state with charge<lb/> Q i , momentum p i , and spin s i . We may parameterize the momentum as<lb/></p>
+
+				<formula>p A<lb/> i = ω i<lb/> 1 + x 2<lb/> i<lb/> 2<lb/> , x a<lb/> i ,<lb/> 1 -x 2<lb/> i<lb/> 2<lb/> .<lb/></formula> 
+				<label>(3.19)<lb/></label>
+
+			<p>The action of the conserved current on the bra and ket states is (see appendix B for an<lb/> explicit calculation for scalar fields)<lb/></p>
+
+				<formula>I -<lb/>duJ (-,d)<lb/> u<lb/> (u, x)| Ψ i , p i , s i = | Ψ i , p i , s i Q i δ (d) (x -x i )<lb/> Ψ i , p i , s i |<lb/> I +<lb/> duJ (+,d)<lb/> u<lb/> (u, x) = Q i δ (d) (x -x i ) | Ψ i , p i , s i .<lb/></formula>
+
+			<label>(3.20)<lb/></label>
+
+			<p>It follows using (<ref type="formula">3.7</ref>) that<lb/></p>
+
+				<formula>Q -H<lb/> ε | Ψ i , p i , s i = -Q i ε(x i )| Ψ i , p i , s i ,<lb/> Ψ i , p i |Q +H<lb/> ε<lb/> = -Q i ε(x i ) Ψ i , p i , s i |.</formula> 
+				<label>(3.21)<lb/></label>
+
+			<p>Note that this is simply an infinitesimal large gauge transformation of the state. Setting<lb/> ε = f x in (<ref type="formula">3.18</ref>) and using (<ref type="formula">3.15</ref>) and (<ref type="formula">3.21</ref>), we derive the Ward identity<lb/></p>
+
+				<formula>out | ∂ a O (+,0)<lb/> a<lb/> (x) -∂ a O (-,0)<lb/> a<lb/> (x) | in = e<lb/> n<lb/> i=1<lb/> η i Q i ∂ 2 log (x -x i ) 2 out | in .</formula> 
+				<label>(3.22)<lb/></label>
+
+			<p>Here, η i = +1 for outgoing particles and η i = -1 for incoming particles.<lb/></p>
+
+			<head>3.3 Soft theorem<lb/></head>
+
+			<p>Finally, in this section we will show that the Ward identity (<ref type="formula">3.22</ref>) is implied by Weinberg&apos;s<lb/> leading soft photon theorem, which in standard momentum space variables reads<lb/></p>
+
+				<formula>A out<lb/> n+1 ( p γ , ε a ; p 1 , • • • , p n ) = e<lb/> n<lb/> i=1<lb/> η i Q i<lb/> p i • ε a (p γ )<lb/> p i • p γ<lb/> A n (p 1 , • • • , p n ) + O (p γ ) 0 ,<lb/></formula>
+
+				<label>(3.23)<lb/></label>
+
+			<p>where ε a is the polarization vector (not to be confused with the function ε(z) in (<ref type="formula">3.12</ref>)).<lb/> Note that the leading order term in the soft expansion is a simple pole in photon momentum<lb/> p γ , and this is known as the Weinberg pole. 11 We want to parametrize (<ref type="formula">3.23</ref>) using the<lb/> momentum space parameterization employed in the previous sections (see section A.2 for<lb/> details), i.e.<lb/></p>
+
+				<formula>p A<lb/> γ = ω<lb/> 1 + x 2<lb/> 2<lb/> , x a ,<lb/> 1 -x 2<lb/> 2<lb/> p A<lb/> i = ω i<lb/> 1 + x 2<lb/> i<lb/> 2<lb/> , x a<lb/> i ,<lb/> 1 -x 2<lb/> i<lb/> 2<lb/> ε A<lb/> a (p γ ) = x a , δ b<lb/> a , -x a .<lb/></formula>
+
+				<label>(3.24)<lb/></label>
+
+			<p>In this parametrization, the soft factor corresponding to polarization a is<lb/></p>
+
+				<formula>e<lb/> n<lb/> i=1<lb/> η i Q i<lb/> p i • ε a (p γ )<lb/> p i • p γ<lb/> =<lb/> e<lb/> ω<lb/> n<lb/> i=1<lb/> η i Q i ∂ a log (x -x i ) 2 .<lb/></formula> 
+				<label>(3.25)<lb/></label>
+
+			<p>The last step is to recast the scattering amplitudes in (<ref type="formula">3.23</ref>) in terms of the in and<lb/> out states. The n-point amplitude on the right-hand-side is simply out | in . On the<lb/> other hand, an outgoing photon corresponds to the insertion of the operator</p>
+
+				<formula>O<lb/> (+)<lb/> a (ω, x) -<lb/>O<lb/> (-)<lb/></formula>
+
+			<p>a (ω, x) (see appendix C for details). The coefficient of ω -1 in (<ref type="formula">3.25</ref>) is extracted by first<lb/> multiplying by ω and then taking a ω → 0 limit. Using (<ref type="formula">2.16</ref>), we find that this operator is<lb/></p>
+
+				<formula>lim<lb/> ω→0<lb/> ωO (+)<lb/> a (ω, x) -ωO (-)<lb/> a (ω, x) = O (+,0)<lb/> a<lb/> (x) -O (-,0)<lb/> a<lb/> (x).<lb/></formula>
+
+				<label>(3.26)<lb/></label>
+
+			<p>Substituting this into an S-matrix element gives precisely the left-hand-side of (<ref type="formula">3.23</ref>), and<lb/> using (<ref type="formula">3.25</ref>), we see that the soft theorem can be written as<lb/></p>
+
+				<formula>out | O (+,0)<lb/> a<lb/> (x) -O (-,0)<lb/> a<lb/> (x) | in = e<lb/> n<lb/> i=1<lb/> η i Q i ∂ a log (x -x i ) 2 out | in .<lb/></formula>
+
+				<label>(3.27)<lb/></label>
+
+			<p>Acting on both sides with ∂ a and using (<ref type="formula">3.10</ref>), we immediately reproduce the Ward iden-<lb/>tity (<ref type="formula">3.22</ref>), completing our demonstration that Weinberg&apos;s leading soft photon theorem<lb/> implies the Ward identity.<lb/></p> 
+			<p>We conclude this section with a few comments.<lb/></p>
+			<list>
+			<item>• We have shown above that Weinberg&apos;s leading soft photon theorem for an outgoing<lb/> soft photon implies the Ward identity. However, we could have just as well chosen to<lb/> work with an incoming soft photon, in which case the soft theorem reads<lb/></item>
+
+				<formula>A in<lb/> n+1 ( p γ , ε a ; p 1 , • • • , p n ) = -e<lb/> n<lb/> i=1<lb/> η i Q i<lb/> p i • ε a (p γ )<lb/> p i • p γ<lb/> A n (p 1 , • • • , p n ) + O (p γ ) 0 ,</formula>
+
+				<label>(3.28)<lb/></label>
+
+			 <item>and differs from (<ref type="formula">3.23</ref>) by only a relative sign. The left-hand-side of the above equa-<lb/>tion corresponds to the insertion of <formula>O<lb/> (-) †<lb/> a<lb/> (ω, x) -O<lb/> (+) †<lb/> a<lb/> (ω, x)</formula>. Multiplying by ω,<lb/> taking the ω → 0 limit, and using (<ref type="formula">3.10</ref>), we immediately find that the outgoing soft<lb/> photon theorem (<ref type="formula">3.23</ref>) implies the incoming soft photon theorem, and vice versa.<lb/></item>
+
+			<item>• We have not yet demonstrated the equivalence between the Ward identity and Wein-<lb/>berg&apos;s leading soft photon theorem. Instead, we have only established the fact that<lb/> the soft theorem implies the Ward identity. To prove the converse, we need to use<lb/> the additional constraint that<lb/></item>
+
+				<formula>∂ a O<lb/> (±,0)<lb/> b<lb/> (x) -∂ b O (±,0)<lb/> a<lb/> (x) = 0.<lb/></formula> 
+				<label>(3.29)<lb/></label>
+
+			<item>This constraint is obviously true from the standpoint of the soft theorem (<ref type="formula">3.27</ref>), 12<lb/> and is solved by<lb/></item>
+
+				<formula>O (±,0)<lb/> a<lb/> (x) = ∂ a S (±) (x).<lb/></formula> 
+				<label>(3.30)<lb/></label>
+
+			<item>We can then derive the Ward identity for the insertion of S (±) (x), which is given by 13<lb/></item>
+
+				<formula>out | S (+) (x) -S (-) (x) | in = e<lb/> n<lb/> i=1<lb/> η i Q i log (x -x i ) 2 out | in .<lb/></formula>
+
+				<label>(3.31)<lb/></label>
+
+			<item>Acting on both sides with ∂ a and using (<ref type="formula">3.30</ref>), we immediately reproduce the soft<lb/> theorem (<ref type="formula">3.27</ref>).<lb/></item>
+			</list>
+
+			<head>4 Large gauge symmetry<lb/></head>
+
+			<p>In the previous section, we have shown that the Ward identity corresponding to the charge<lb/> Q ±<lb/> ε is equivalent Weinberg&apos;s soft photon theorem. We now show that this charge generates<lb/> large gauge transformations on I ± using the covariant phase space formalism <ref type="biblio">[58]</ref>. 14 We<lb/> have already done this for the hard charge, so it remains to show that the soft charge (i.e.<lb/> the radiative field) acts on the gauge field to generate large gauge transformations. For this<lb/> purpose, we can focus simply on pure U(1) gauge theory. This is described by the action<lb/></p>
+
+			<formula>S[A] = -<lb/>1<lb/> 2e 2<lb/> M<lb/> F ∧ * F,<lb/> F = dA,<lb/> A ∼ A + dε.<lb/></formula> 
+			<label>(4.1)<lb/></label> 
+			
+			<p>Varying this, we find<lb/></p>
+			<formula>δS = -<lb/>1<lb/> e 2<lb/> M<lb/> δA ∧ (d * F ) -<lb/>1<lb/> e 2<lb/> ∂M<lb/> δA ∧ * F.<lb/></formula> 
+			<label>(4.2)<lb/></label> 
+			<p>The bulk term gives us the equations of motion d * F = 0. From the boundary term we<lb/> can read off the canonical one-form on a Cauchy surface Σ as<lb/></p> 
+			<formula>Θ Σ (δ) =<lb/> 1<lb/> e 2<lb/> Σ<lb/> δA ∧ * F.<lb/></formula> 
+			<label>(4.3)<lb/></label> 
+			<p>If we restrict A to satisfy the equations of motion and δA to satisfy the linearized equations<lb/> of motion, then Θ Σ can be understood as a one-form at the point A in the phase space Γ.<lb/> The presymplectic form on Σ is<lb/></p> 
+			<formula>Ω Σ (δ, δ ) = δΘ Σ (δ ) -δ Θ Σ (δ) =<lb/> 1<lb/> e 2<lb/> Σ<lb/> δ A ∧ * δF -δA ∧ * δ F .<lb/></formula> 
+			<label>(4.4)<lb/></label>
+ 
+			<p>At this point, we recall that the gauge field A is determined only up to a gauge<lb/> choice (<ref type="formula">4.1</ref>). To keep track of this, we separate the gauge field into two pieces<lb/></p> 
+			<formula>A = Ã + dψ,<lb/></formula> 
+			<label>(4.5)<lb/></label> 
+			<p>where Ã satisfies a chosen gauge-fixing condition, 15<lb/></p> 
+			<formula>f [ Ã] = 0,<lb/></formula> 
+			<label>(4.6)<lb/></label> 
+			<p>and gauge transformations simply involve<lb/></p>
+			<formula>ψ → ψ + ε.<lb/></formula> 
+			<label>(4.7)<lb/></label> 
+			<p>It follows that the symplectic form is<lb/></p> 
+			<formula>Ω Σ (δ, δ ) =<lb/> 1<lb/> e 2<lb/> Σ<lb/> δ Ã ∧ * δ F -δ Ã ∧ * δ F +<lb/> 1<lb/> e 2<lb/> ∂Σ<lb/> δ ψ * δF -δψ * δ F .<lb/></formula>
+
+				<label>(4.8)<lb/></label>
+
+			<p>We note that modes for which ψ| ∂Σ = 0 cannot appear in the symplectic form and need to<lb/> be fixed in order to have a non-degenerate symplectic form. We assume that this has been<lb/> done, and so the remaining boundary value of ψ symplectically couples to the boundary<lb/> field strength.<lb/></p>
+
+			<p>The charge that generates a particular transformation ∆ on the phase space satisfies<lb/></p> 
+			<formula>δQ Σ<lb/> ∆ = Ω Σ (δ, ∆).<lb/></formula> 
+			<label>(4.9)<lb/></label>
+
+			<p>In particular, for gauge transformations δ ε Ã = δ ε F = 0 and δ ε ψ = ε, we get<lb/></p>
+
+				<formula>Q Σ<lb/> ε =<lb/> 1<lb/> e 2<lb/> ∂Σ<lb/> ε * F.<lb/></formula> 
+				<label>(4.10)<lb/></label>
+
+			<p>Note that the charge is non-zero only if ε| ∂Σ = 0, so this means Q Σ<lb/> ε is the generator of<lb/> large gauge transformations. To determine its form on I ± , we note that the directed area<lb/> element on I ±<lb/> ∓ is<lb/></p>
+
+				<formula>dS ±<lb/> µν = ±d d x|r| d δ r<lb/> [µ δ u<lb/> ν] .<lb/></formula>
+
+				<label>(4.11)<lb/></label>
+
+			<p>The ± sign arises from the outward-pointing null vector, which on I ± is ∓∂ µ r. Thus,<lb/> we have<lb/></p>
+
+				<formula>Q ±<lb/> ε = ±<lb/> 2<lb/> e 2 I ±<lb/> ∓<lb/> d d x εF (±,d)<lb/> ur<lb/> ,<lb/></formula> 
+				<label>(4.12)<lb/></label>
+
+			<p>which is precisely the charge (<ref type="formula">3.2</ref>).</p>
+
+
+	</text>
+</tei>

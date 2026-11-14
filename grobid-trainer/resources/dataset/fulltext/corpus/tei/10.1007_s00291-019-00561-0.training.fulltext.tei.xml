@@ -1,0 +1,490 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="10.1007_s00291-019-00561-0">
+			<titleStmt>
+				<title level="a">Identifying efficient solutions via simulation: myopic multi-objective budget allocation f</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1007/s00291-019-00561-0</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document DEC-SCI_31</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+			<head>1 Introduction<lb/></head>
+
+			<p>Simulation optimisation aims to efficiently identify the best possible alternative, where<lb/> best is defined as best expected performance. Since an alternative&apos;s true performance<lb/> is unknown and can only be evaluated by stochastic simulation, it is usually neces-<lb/>sary to average over several simulation runs in order to obtain accurate performance<lb/> estimates. Ranking and Selection (R&amp;S) methods aim to allocate simulation samples<lb/> more efficiently, and this research area has received substantial interest in recent years<lb/> <ref type="biblio">(Chau et al. 2014)</ref>.<lb/></p>
+
+			<p>However, many real-world simulation optimisation problems require the consider-<lb/>ation of multiple conflicting objectives. In this case, there is usually no single solution<lb/> that performs best in all objectives, but a set of Pareto-optimal solutions with different<lb/> trade-offs. A solution is called Pareto-optimal or efficient if there is no other solution<lb/> that performs better in all objectives. For instance, different staffing levels at a call<lb/> centre will incur different costs and different customer waiting times, and a solution<lb/> is Pareto optimal, if there is no better solution that has lower cost as well as lower cus-<lb/>tomer waiting times. In the presence of multiple stochastic criteria, the R&amp;S problem<lb/> becomes a multi-objective ranking and selection (MORS) problem where the goal is<lb/> to identify the set of Pareto-optimal solutions.<lb/></p>
+
+			<p>Although plenty of research has been published on single-objective R&amp;S, there is<lb/> little research on MORS. In this paper, we summarise and extend our work on the sim-<lb/>ple, yet powerful Myopic Multi-Objective Budget Allocation (M-MOBA) framework<lb/> originally introduced in <ref type="biblio">Branke and Zhang (2015), Branke et al. (2016)</ref>. M-MOBA<lb/> is myopic and only allocates simulation samples to one alternative in each iteration.<lb/> It is therefore easy to compute and avoid some of the approximations necessary for<lb/> other methods. We show how this framework can be adapted to different bi-objective<lb/> problem settings.<lb/></p>
+
+			<p>Besides summarising our previous work on this topic, this paper makes the follow-<lb/>ing novel contributions:<lb/></p>
+
+			<list>
+			<item>1. In addition to the original M-MOBA method which uses probability of correct<lb/> selection as performance criterion, and the variant using hypervolume change<lb/> originally proposed in <ref type="biblio">Branke et al. (2016)</ref>, we introduce a new variant that can<lb/> take into account an indifference zone.<lb/></item> 
+			<item>2. We propose a variant that allows different objectives to be sampled independently<lb/> and demonstrate empirically that this can substantially improve efficiency. This<lb/> may be relevant in problems where the different criteria are determined by different<lb/> simulation tools.<lb/></item> 
+			<item>3. We provide a more thorough empirical evaluation of our approach.<lb/></item> 
+			<item>4. We provide a comprehensive review on the existing literature on MORS.<lb/></item>
+			</list>
+
+			<p>Our paper is organised as follows. Section 2 reviews the relevant literature of rank-<lb/>ing and selection. Section 3 formalises the problem and describes the assumptions.<lb/> Section 4 describes the proposed M-MOBA procedure and its variants. The results of<lb/> the empirical evaluation can be found in Sect. 5. The paper concludes in Sect. 6 with<lb/> a summary and some suggestions for future work.<lb/></p>
+
+			<head>2 Literature review<lb/></head>
+
+			<p>Section 2.1 introduces the major single-objective R&amp;S methods, whereas Sect. 2.2<lb/> reviews the main methods to MORS problems. There are other related techniques that<lb/> we do not cover here due to space limitations, such as the multi-armed bandit literature<lb/> which aims mostly at maximising cumulative reward <ref type="biblio">(Gittins and Glazebrook 2011)</ref>,<lb/> or the case of correlated beliefs where information about one alternative also tells us<lb/> something about other, &quot;similar&quot; alternatives (e.g. <ref type="biblio">Shahriari et al. 2016)</ref>. For a good<lb/> overview on multi-objective simulation optimisation, see also <ref type="biblio">(Hunter et al. 2019)</ref>.<lb/></p>
+
+			<head>2.1 Overview of ranking and selection<lb/></head> 
+			<head>2.1.1 Performance measures<lb/></head>
+
+			<p>The literature considers a variety of goals in R&amp;S. The simplest goal is to maximise<lb/> the probability of correct selection (PCS). For a minimisation problem, the true PCS<lb/> is defined mathematically as<lb/></p>
+
+				<formula>PCS = P(μ x s ≤ μ x * ),<lb/></formula>
+
+			 <p>where μ x * is the mean performance of the true best solution x * and μ x s is the mean<lb/> performance of the selected solution x s .<lb/></p>
+
+			<p>In the experiments, we report on the estimated PCS. For Q replications of an<lb/> experiment, the PCS can be estimated as<lb/></p>
+
+				<formula>P(CS) =<lb/> Q c<lb/> Q<lb/> ,<lb/></formula>
+
+			<p>where Q c is the number of replications for which the method correctly identified the<lb/> best alternative.<lb/></p>
+
+			<p>If two alternatives have almost identical performance, even a large number of sam-<lb/>ples may not be able to correctly identify the better one, and anyway the decision maker<lb/> (DM) might not care about very small differences. So it seems natural to introduce an<lb/> indifference zone, the smallest difference δ that deserves to be discerned. Then, the<lb/> goal is to maximise the Probability of Good Selection (PGS), which is the probability<lb/> that the selected alternative is not worse by more than δ compared to the true best. For<lb/> a minimisation problem,<lb/></p>
+
+				<formula>PGS = P(μ x s ≤ μ x * + δ),<lb/></formula>
+
+			<p>where μ x * is the mean performance of true best solution x * and μ x s is the mean<lb/> performance of the selected solution x s . The estimated PGS can be defined similar to<lb/> the estimated PCS.<lb/></p>
+
+			<p>Another commonly used goal is to minimise the expected opportunity cost (EOC),<lb/> defined as the true difference in performance between the true best and the selected sys-<lb/>tem. Expected opportunity cost (EOC) is of practical concern in business, engineering<lb/> and other applications, where design performance represents economic value and is<lb/> particularly useful for risk-neutral decision makers <ref type="biblio">(Chick and Wu 2005)</ref>. While PCS<lb/> only cares about whether a solution is correct, opportunity cost intuitively describes<lb/> how far away the selected alternative is from the true best system <ref type="biblio">(Lee et al. 2007)</ref>.<lb/></p>
+
+			<figure type="table">Table 1 Five main basic approaches to R&amp;S and some exemplary references<lb/> Objectives<lb/> PCS<lb/> EOC<lb/> PGS<lb/> Indifference zone Frequentist -<lb/>Chick and Wu (2005)<lb/> Kim and Nelson<lb/> (2006) Lee and<lb/> Nelson (2015)<lb/> Bayesian<lb/> Frazier (2014)<lb/> -<lb/>-<lb/>OCBA<lb/> Frequentist Chen and Lee<lb/> (2010)<lb/> -<lb/>-<lb/>Bayesian<lb/> Chen and Lee<lb/> (2010)<lb/> He et al. (2007)<lb/> Branke et al. (2005)<lb/> EVI<lb/> Bayesian<lb/> Chick and Inoue<lb/> (2001)<lb/> Chick and Inoue<lb/> (2001)<lb/> -<lb/>Small EVI<lb/> Bayesian<lb/> Chick et al. (2010) Chick et al. (2010)<lb/> Frazier et al. (2008)<lb/> Ryzhov et al. (2012)<lb/> -<lb/>Racing<lb/> Bayesian<lb/> Birattari et al.<lb/> (2010)<lb/> -<lb/>-<lb/></figure>
+
+			<head>2.1.2 Major R&amp;S methods<lb/></head>
+
+			<p>Sampling each alternative an equal number of times is inefficient since it will waste a<lb/> lot of simulation runs on the obviously inferior alternatives. The state-of-the-art R&amp;S<lb/> procedures allocate the sampling budget sequentially, based on observations made so<lb/> far. There are two categories of statistical models for R&amp;S, frequentist and Bayesian.<lb/>Frequentist models construct estimates based purely on the observed simulation out-<lb/>put. This view generally assumes that there are some unknown, but fixed underlying<lb/> parameters for a population. In contrast, the Bayesian approach assumes prior knowl-<lb/>edge about the performance of each alternative and regards the unknown performance<lb/> as a random variable whose distribution encodes our own uncertainty about the exact<lb/> value <ref type="biblio">(Chau et al. 2014)</ref>. The five main basic approaches to R&amp;S are summarised in<lb/> Table <ref type="table">1</ref>.<lb/></p>
+			
+			<list>
+			<item>-The indifference-zone methods such as KN ++ <ref type="biblio">(Kim and Nelson 2006)</ref> which aim<lb/> at identifying an alternative that is not worse by more than δ compared to the true<lb/> best. KN ++ maintains a set of possibly best solutions and drops solutions from<lb/> this set when it detects clear evidence that an alternative is unlikely to be best. The<lb/> procedure iterates until only one solution remains.<lb/></item> 
+			<item>-The expected value of information (EVI) procedure <ref type="biblio">(Chick and Inoue 2001)</ref> which<lb/> maximises the expected value of information in the next samples.<lb/></item> 
+			<item>-The small-sample EVI procedures that include the Knowledge Gradient (KG)<lb/> method <ref type="biblio">(Frazier et al. 2008)</ref> and the myopic method proposed in <ref type="biblio">Chick et al.<lb/> (2010)</ref>. In each iteration, these methods only allocate samples to one alternative.<lb/></item> 
+			<item>-The optimal computing budget allocation (OCBA) <ref type="biblio">(Chen 1996)</ref> approach which,<lb/> different from the small-sample EVI procedures, is an asymptotic approach. For<lb/> a comprehensive introduction of OCBA method, see <ref type="biblio">Fu et al. (2007, 2008)</ref> and<lb/> <ref type="biblio">Chen and Lee (2010)</ref>.<lb/></item> 
+			<item>-The racing method such as F-race that is based on the nonparametric Friedman&apos;s<lb/> two-way analysis of variance by ranks <ref type="biblio">(Birattari et al. 2010)</ref>. Similar to KN ++ ,<lb/> racing methods drop alternatives from sampling that are unlikely to be the best<lb/> based on the observations so far, until only one alternative remains. However,<lb/> racing methods have no performance guarantee.<lb/></item>
+			</list>
+
+			<p>As summarised by <ref type="biblio">Chau et al. (2014)</ref>, the indifference-zone method is generally from<lb/> a frequentist view although <ref type="biblio">(Frazier 2014)</ref> proposed a Bayesian-inspired method to<lb/> correct the indifference-zone method&apos;s tendency to over-deliver, i.e. produce better<lb/> performance than what is actually required at the expense of many more samples.<lb/> EVI is a Bayesian statistical model-based approach, and OCBA can be adapted to<lb/> both frequentist and Bayesian models <ref type="biblio">(Chen and Lee 2010)</ref>. A comparison of the<lb/> performance of indifference-zone, EVI and OCBA methods can be found in <ref type="biblio">Branke<lb/> et al. (2007)</ref>.<lb/></p>
+
+			<head>2.2 Overview of multi-objective ranking and selection<lb/></head> 
+			<head>2.2.1 MORS performance measures<lb/></head>
+
+			<p>In the presence of multiple, conflicting objectives, it is difficult to decide which alter-<lb/>native is best. For a minimisation problem, a solution y is called dominated by another<lb/> solution x (denoted by x ≺ y), if μ x,h μ y,h for all objectives and μ x,h &lt; μ y,h for<lb/> at least one. A design not dominated by any other design is called Pareto optimal, and<lb/> the objective in Multi-Objective Ranking and Selection (MORS) is usually to find the<lb/> set of Pareto-optimal solutions. The image of the Pareto-optimal set in objective space<lb/> is often called the Pareto front.<lb/></p>
+
+			<p>Similar to the single-objective R&amp;S problem, one of the most widely used goals<lb/> is PCS, which is defined as correctly identifying the entire set, and only this set, of<lb/> Pareto-optimal solutions (see also Sect. 2.2.2 for details). It is not entirely obvious<lb/> how to define an indifference zone for multiple objectives, but one attempt has been<lb/> made in <ref type="biblio">Teng et al. (2010)</ref> which for a minimisation problem defines a solution x to<lb/> be non-dominated if y|μ y,h ≤ μ x,h + δ h ∀h ∧ ∃h : μ y,h &lt; μ x,h + δ h and PGS<lb/> is then the probability to identify all the solutions that are non-dominated according<lb/> to this definition. In Sect. 4.2, we will discuss the drawbacks of this definition and<lb/> propose an alternative. <ref type="biblio">Lee et al. (2007)</ref> define the opportunity cost (OC) in a multi-<lb/>objective setting as follows. For a truly dominated solution that is wrongly classified<lb/> as non-dominated, the OC is defined as the minimum amount this solution would need<lb/> to improve in each objective for it to become non-dominated. Correspondingly, for a<lb/> truly non-dominated solution that is classified as dominated, the OC is the minimum<lb/> amount this solution would need to deteriorate in each objective to become dominated.<lb/></p>
+
+			<p>Outside R&amp;S such as in multi-objective optimisation or multi-objective reinforce-<lb/>ment learning, hypervolume is often used as performance measure. Hypervolume is<lb/> the area dominated by a set of solutions and bounded by a user-defined reference<lb/> point. <ref type="biblio">Zitzler and Thiele (1999)</ref> present hypervolume as the only quality indicator<lb/> known to be fully compliant to Pareto dominance, i.e. whenever a set A dominates<lb/> another set B (every solution in B is dominated by at least one solution in A), then<lb/> the measure yields a strictly better quality value for the former <ref type="biblio">(Zitzler et al. 2003)</ref>.<lb/> For a comprehensive literature review of the hypervolume measurement, see <ref type="biblio">Bader<lb/> and Zitzler (2011)</ref>. We have proposed to use hypervolume difference in the context of<lb/> R&amp;S <ref type="biblio">(Branke et al. 2016)</ref>, which will be discussed in more detail in Sect. 4.3.<lb/></p>
+
+			<head>2.2.2 MORS methods<lb/></head>
+
+			<p>Compared with single-objective R&amp;S, the literature on MORS is relatively limited.<lb/> One of the most widely used approaches is converting performance over multiple<lb/> objectives into a scalar measure using costs or multiple attribute utility theory (MAUT)<lb/> <ref type="biblio">(Keeney and Raiffa 1993)</ref>. By combining with an indifference-zone R&amp;S method,<lb/> <ref type="biblio">(Morrice et al. 1998)</ref> provide a MAUT approach to MORS. <ref type="biblio">Butler et al. (2001)</ref> show<lb/> applications for the procedure and conducts sensitivity analysis for the weights via<lb/> Monte Carlo simulation. <ref type="biblio">Morrice and Butler (2006)</ref> have also extended the approach to<lb/> model constraints using value functions. Although <ref type="biblio">Butler et al. (2001)</ref> use a mechanism<lb/> to assess the relative importance of each criterion, an accurate model of the DM&apos;s<lb/> preferences is difficult to construct in practice.<lb/></p>
+
+			<p>Instead of using a single utility function, <ref type="biblio">Branke and Gamer (2007)</ref> use a distri-<lb/>bution of linear utility functions, and aims to minimise the expected opportunity cost<lb/> over this distribution of weights using a variant of OCBA <ref type="biblio">(He et al. 2007)</ref>. <ref type="biblio">Frazier<lb/> and Kazachkov (2011)</ref> develop a similar procedure based on the KG policy. <ref type="biblio">Mat-<lb/>tila and Virtanen (2015)</ref> question the interpretation of the probability distributions<lb/> assumed in <ref type="biblio">Branke and Gamer (2007)</ref> and <ref type="biblio">Frazier and Kazachkov (2011)</ref> and instead<lb/> propose methods that only rely on constraints for the weights which can be more<lb/> easily derived from DM preference statements. They propose two MORS approaches.<lb/> The first is based on OCBA <ref type="biblio">(Chen 1996)</ref> which aims at identifying solutions that<lb/> are absolutely non-dominated, i.e. solutions which, if they are evaluated with their<lb/> least favourable weight combination, are better than all other solutions evaluated with<lb/> their most favourable weight combination. The other one is based on multi-objective<lb/> optimal computing budget allocation (MOCBA) <ref type="biblio">(Lee et al. 2010b)</ref> introduced below<lb/> and aims at identifying solutions that are pairwise non-dominated with respect to all<lb/> feasible weight combinations.<lb/></p>
+
+			<p>Most MORS procedures are only considering Pareto dominance and aim at max-<lb/>imising the probability of exactly identifying the set of Pareto-optimal solutions.<lb/> Examples include the MOCBA proposed in <ref type="biblio">Lee et al. (2010b)</ref>, which is a multi-<lb/>objective version of the OCBA algorithm. MOCBA has also been extended to allow<lb/> for other measures of selection quality such as EOC <ref type="biblio">(Lee et al. 2007, 2010a)</ref>, and PGS<lb/> <ref type="biblio">(Teng et al. 2010)</ref>.<lb/></p> 
+			
+			<p><ref type="biblio">Hunter and Feldman (2015)</ref>, <ref type="biblio">Feldman et al. (2015)</ref> and <ref type="biblio">Feldman and Hunter (2018)<lb/></ref> allocate samples to maximise the rate of decay of the probability that a misclassifica-<lb/>tion event occurs. It is asymptotically optimal, and can take into account correlation<lb/> between objectives. The myopic M-MOBA <ref type="biblio">(Branke and Zhang 2015)</ref> has been derived<lb/> from the Small EVI paradigm <ref type="biblio">(Chick et al. 2010)</ref>, and assumes only a single alternative<lb/> is sampled at each stage.<lb/></p>
+
+			<p>There are few approaches based on racing. <ref type="biblio">Zhang et al. (2013)</ref> present a multi-<lb/>objective S-Race algorithm which attempts to eliminate alternatives as soon as there<lb/> is sufficient statistical evidence of them being dominated (worse in all objectives<lb/> compared to another solution). However, S-Race has limitations including type II<lb/> errors not being strictly controlled, unnecessary computational cost on comparing<lb/> non-dominated models and the sign test employed not being an optimal test procedure.<lb/> <ref type="biblio">Zhang et al. (2015, 2017)</ref> overcome these limitations by introducing a multi-objective<lb/> racing algorithm based on the Sequential Probability Ratio Test (SPRT) with an indif-<lb/>ference zone. The approach uses pairwise tests and makes no assumptions about the<lb/> sample distributions. The approach in <ref type="biblio">Wan and Wang (2017)</ref> uses a generalised sequen-<lb/>tial probability ratio test (GSPRT) that allows to test composite hypotheses and is able<lb/> to guarantee a user-specified PCS.<lb/></p>
+
+			<p>Finally, another possibility of solving MORS is to regard one performance measure<lb/> as primary objective and the rest as stochastic constraints. The general aim is then to<lb/> efficiently identify the system having the best objective function value from among<lb/> those systems whose constraint values are above a specified threshold <ref type="biblio">(Hunter and<lb/> Pasupathy 2013)</ref>. Research in this category includes <ref type="biblio">(Andradottir and Kim 2010)</ref>, in<lb/> which they provide indifference-zone frameworks with statistical performance guar-<lb/>antee consisting of two phases: identification and removal of infeasible systems, and<lb/> removal of systems whose primary performance measure is dominated by that of other<lb/> feasible systems. These phases can be executed sequentially or simultaneously. <ref type="biblio">Park<lb/> and Kim (2011)</ref> propose a penalty function with memory which determines a penalty<lb/> value for a solution based on the history of feasibility checks on the solution and<lb/> converts the problem into a series of new optimisation problems without stochastic<lb/> constraints. <ref type="biblio">Hunter and Pasupathy (2013)</ref> present the first complete characterisation<lb/> of the optimal sampling plan relying on the large deviation framework, a consis-<lb/>tent estimator for the optimal allocation and a corresponding sequential algorithm.<lb/> <ref type="biblio">Pujowidianto et al. (2012)</ref> and <ref type="biblio">Pasupathy et al. (2014)</ref> focus on asymptotic theory in<lb/> the context of stochastically constrained simulation optimisation problems on large<lb/> finite (many thousands) sets of alternatives and provide a sampling framework called<lb/> SCORE (Sampling Criteria for Optimisation using Rate Estimators) that approximates<lb/> the optimal simulation budget allocation.<lb/></p>
+
+			<head>3 Assumptions and problem formulation<lb/></head>
+
+			<p>We consider the problem of efficiently identifying the Pareto optimal designs out of<lb/> a given set of alternatives, for the case where alternatives are evaluated on multiple<lb/> stochastic criteria. Throughout this paper, we assume the performance of each design<lb/> in each objective follows a normal distribution and the samples in the two objectives<lb/> are independent. The problem of MORS can be formulated as follows.<lb/></p>
+
+			<p>Given H objectives and a set of m designs with the true unknown performance of<lb/> each design i in objective h being denoted by μ i,h . The performance of each design<lb/> in each objective needs to be estimated via sampling. Vectors are written in boldface,<lb/> e.g. X i = (X ihn ) is a matrix that contains the simulation output for design i, objective<lb/> h and simulation replication n. Let furthermore μ i,h and σ 2<lb/> i,h be the unknown (true)<lb/> mean and variance of alternative i, which can only be estimated using the simulation<lb/> outputs X ihn . We assume that<lb/></p>
+
+				<formula>{X ihn : n = 1, 2, . . .}<lb/> iid<lb/> ∼ N (μ i,h , σ 2<lb/> i,h ), for i = 1, 2, . . . , m and h = 1, 2, . . . H .<lb/></formula>
+
+			<p>Let n i be the number of samples taken for alternative i so far, xi,h the sample mean<lb/> and σ 2<lb/> i,h the sample variance. Then, we will get an observed Pareto set based on the<lb/> N = i n i simulations so far. As n i increases, xi,h and σ 2<lb/> i,h will be updated and the<lb/> observed Pareto front may change accordingly. If alternative i is to receive another τ i<lb/> sample, let Y i = (Y ihn ) denote the data to be collected in the next stage of sampling,<lb/> y i = (y ihn ) be the realisation of Y i and ȳi,h the average of the new samples in objective<lb/> h, then the new overall sample mean in each objective can be calculated as<lb/></p>
+
+				<formula>zi,h =<lb/> n i xi,h + τ i ȳi,h<lb/> n i + τ i<lb/> .<lb/></formula>
+
+				<label>(1)<lb/></label>
+
+			<p>Before the new samples are observed, the sample average that will arise after sampling,<lb/> denoted as Z i,h , is a random variable, and we can use the predictive distribution for<lb/> the new samples <ref type="biblio">(DeGroot 2005)</ref> and get<lb/></p>
+
+				<formula>Z i,h ∼St( xi,h , n i * (n i + τ i )/(τ i * σ 2<lb/> i,h ), n i -1)<lb/></formula>
+
+			<p>where St(μ, κ, ν) denotes the student distribution with mean μ, precision κ and ν<lb/> degrees of freedom.<lb/></p>
+
+			<p>As discussed in Sect. 2.2.1, there are different performance criteria in MORS. For<lb/> the example of PCS, a correct selection occurs when the selected set of alternatives,<lb/> S(Y), is the true Pareto set P, i.e.<lb/></p>
+
+			<formula>PC S = P(S(Y) = P)<lb/></formula>
+
+			<p>Then, given a total simulation budget N t , the MORS problem is to determine the<lb/> optimal allocation of the N t samples to the designs such that PCS is maximised<lb/></p>
+			 <formula>maximise<lb/>n i<lb/> PC S<lb/> subject to<lb/> m<lb/> i=1<lb/> n i ≤ N t .<lb/></formula>
+
+			<head>4 M-MOBA procedure<lb/></head>
+
+			<p>Based on the small-sample EVI procedure derived in <ref type="biblio">Chick et al. (2010)</ref> and <ref type="biblio">Fra-<lb/>zier et al. (2008)</ref>, we proposed a simple, but efficient myopic multi-objective budget<lb/> allocation (M-MOBA) algorithm for MORS problems <ref type="biblio">(Branke and Zhang 2015)</ref>. By<lb/> being myopic and only allocating a few additional samples to one alternative, small-<lb/>sample procedures can avoid various asymptotic approximations. More specifically,<lb/></p>
+
+			<figure>Fig. 1 a c solely dominates other<lb/> alternatives<lb/> a1<lb/> ac<lb/> a2<lb/> a3<lb/> b1<lb/> b2<lb/> b3<lb/> f1<lb/> f2<lb/> c1<lb/></figure>
+
+			<p>in each iteration of sample allocation, we only allocate samples to the alternative that<lb/> is expected to provide the maximum value of information.<lb/></p>
+
+			<p>In the following sections, we will present first the original M-MOBA procedure<lb/> based on the PCS criterion, and then explain how the idea may be extended to incor-<lb/>porate an indifference zone, to work with hypervolume as performance criterion, as<lb/> well as a variant that allows sampling the different objectives independently.<lb/></p>
+
+			<p>Throughout this paper, the allocation rules are explained by assuming that there are<lb/> two objectives for each alternative so that the Pareto set and the dominance relationship<lb/> can be visualised in a two-dimensional coordinate system. Extending the basic ideas<lb/> to more than two objectives should be possible but is left for future work.<lb/></p>
+
+			<head>4.1 M-MOBA PCS procedure<lb/></head>
+
+			<p>We will first consider the problem with PCS measurement. M-MOBA, in each iteration,<lb/> will only allocate one sample to one alternative-the alternative that has the highest<lb/> probability of changing the observed Pareto set. This algorithm has first been proposed<lb/> in <ref type="biblio">Branke and Zhang (2015)</ref> and serves as basis of all other extended versions we will<lb/> present later.<lb/></p>
+
+			<p>Assume that after an initial n 0 samples for each alternative, the current Pareto set<lb/> consists of a set of alternatives a i , i = 1, 2, . . . , k 1 . We will consider each alternative<lb/> a c in turn and estimate the expected value of information, i.e. the probability that the<lb/> Pareto set will change if one additional sample is allocated to a c . If the particular<lb/> alternative under consideration is removed, some previously dominated alternatives<lb/> may become Pareto optimal, denoted by b j , with j = 1, 2, . . . , k 2 . We further denote<lb/> the newly formed Pareto set when the particular alternative under consideration is<lb/> removed as p r , with r = 1, 2, . . . , k 3 . For each alternative a i , there are three possible<lb/> situations and each of them will be explained as follows.<lb/></p>
+
+			<p>The first situation is depicted in Fig. <ref type="figure">1</ref>, where a c is on the observed Pareto set com-<lb/>posed of points a 1 , a c , a 2 , a 3 and indicated by the dashed line. Alternatives a 1 and b 1<lb/> are the nearest neighbours of a c in the direction of objective f 1 , and alternatives b 3<lb/> and a 2 are the nearest neighbours of a c in the direction of objective f 2 . We want to cal-<lb/>culate the probability that the current Pareto set will change if we allocate τ additional<lb/> simulation samples to a c . If we only allocate samples to a c , all other alternatives can<lb/> be considered deterministic in the immediate one-step look-ahead. Then, the Pareto<lb/> set changes if and only if the new mean estimate for alternative a c after sampling<lb/></p>
+
+			<figure>Fig. 2 The Pareto set will<lb/> change if and only if the<lb/> estimated mean of alternative a c<lb/> will fall outside the shaded area<lb/> a1<lb/> ac<lb/> a2<lb/> a3<lb/> c1<lb/> b1<lb/> b2<lb/> b3<lb/> f1<lb/> f2<lb/> (l1, l2) (u1, l2)<lb/> (l1, u2)<lb/> (u1, u2)<lb/></figure>
+
+			<list>
+			<item>1. dominates one of the previously non-dominated solutions (a 1 , a 2 , a 3 in Fig. <ref type="figure">2</ref>)<lb/></item> 
+			<item>2. becomes dominated itself, or<lb/></item> 
+			<item>3. exposes a previously dominated solution (b 1 , b 2 , b 3 in Fig. <ref type="figure">2</ref>).<lb/></item>
+			</list>
+
+			<p>In the example in Fig. <ref type="figure">2</ref>, a change happens if the new mean estimate falls outside the<lb/> shaded area.<lb/></p>
+
+			<p>Since we assume that the samples in the two objectives are independent, we can cal-<lb/>culate the probability for a c to remain in the shaded area separately for each objective,<lb/> and multiply them to get the probability P that the new mean estimate for a c remains<lb/> in the shaded area, and 1 -P is the probability that with one additional sample, a c<lb/> will move out of the area and hence a new observed Pareto front will be obtained. Let<lb/> us denote the two objective values of nearest neighbours of a c as (l 1 , u 1 ) and (l 2 , u 2 ),<lb/> i.e.<lb/></p>
+
+				<formula>l 1 = max{ x p r ,1 &lt; xa c ,1 |r = 1, 2, . . . , k 3 }<lb/> l 2 = max{ x p r ,2 &lt; xa c ,2 |r = 1, 2, . . . , k 3 }<lb/> u 1 = min{ x p r ,1 &gt; xa c ,1 |r = 1, 2, . . . , k 3 }<lb/> u 2 = min{ x p r ,2 &gt; xa c ,2 |r = 1, 2, . . . , k 3 }<lb/></formula> 
+				
+				<p>then the probability P is<lb/></p> 
+				
+				<formula>u 2<lb/> l 2<lb/> u 1<lb/> l 1<lb/> φ a c,1 (x) • φ a c,2 (y)dxdy<lb/></formula> 
+				
+				<label>(2)<lb/></label>
+
+			<p>where φ a c,h is the predictive probability distribution of the new location of a c in<lb/> dimension h.<lb/></p> 
+			
+			<p>If a c does not expose any new solutions if it is removed, then the Pareto set will only<lb/> change if the new estimated mean will become dominated, or dominates a previously<lb/> non-dominated alternative. Figure <ref type="figure">3</ref> shows an example, with the area in which a c may<lb/> fall without causing a change highlighted.<lb/></p>
+
+			<p>Assume there are k Pareto-optimal alternatives after a c has been removed and they<lb/> are sorted from small to large based on f 1 , with an additional virtual 0th solution at<lb/> (-∞, ∞) and a virtual (k + 1)th solution at (∞, -∞), then the probability P can be<lb/> calculated as<lb/></p>
+
+			<figure>Fig. 3 The Pareto set will<lb/> change if and only if the<lb/> estimated mean of alternative a c<lb/> will fall outside the shaded area<lb/> a1<lb/> ac<lb/> f1<lb/> f2<lb/> a2<lb/> a3<lb/></figure> 
+			<figure>Fig. 4 The Pareto set will<lb/> change if and only if the<lb/> estimated mean of alternative a c<lb/> will fall outside the shaded area<lb/> a1<lb/> a2<lb/> a3<lb/> a4<lb/> ac<lb/> f1<lb/> f2<lb/></figure>
+
+				<formula>k<lb/> i=0<lb/> a i,2<lb/> a i+1,2<lb/> a i+1,1<lb/> a i,1<lb/> φ a c,1 (x) • φ a c,2 (y)dxdy,<lb/></formula>
+
+				<label>(3)<lb/></label>
+
+			<p>where alternative i with objective values (a i,1 , a i,2 ) is Pareto optimal if a c is removed.<lb/></p> 
+			<p>When a c is not in the Pareto set, a change happens if and only if a c becomes<lb/> non-dominated. An example is shown in Fig. <ref type="figure">4</ref>.<lb/></p>
+
+			<p>In this scenario, the shaded area is defined by all current Pareto optimal alternatives.<lb/> Similar to the above scenario, if there are k Pareto-optimal alternatives, the probability<lb/> P can be computed as<lb/></p>
+
+				<formula>k<lb/> i=1<lb/> ∞<lb/> a i,2<lb/> a i+1,1<lb/> a i,1<lb/> φ a c,1 (x) • φ a c,2 (y)dxdy<lb/></formula> 
+				
+				<label>(4)<lb/></label>
+
+			<p>where alternative i is Pareto optimal and a k+1,1 = ∞.<lb/></p> 
+			<p>Based on the above analysis, we can formulate the small-sample multi-objective<lb/> budget allocation procedure as summarised in Algorithm 1.<lb/></p>
+
+			<head>4.2 M-MOBA indifference-zone procedure<lb/></head>
+
+			<p>In practice, some systems may have very similar objective values and a DM<lb/> might not be too concerned with small differences between these systems, hence<lb/> we should treat these designs as equally acceptable <ref type="biblio">(Teng et al. 2010)</ref>. Further-<lb/>more, if the difference is very small, even a large number of samples would<lb/> not allow us to decide with confidence which system is better. As discussed in<lb/></p> 
+			
+			<figure type="table">ALGORITHM 1: Procedure M-MOBA PCS<lb/> 1: Specify a first-stage sample size n 0 = 5, and a number of samples τ = 1 to allocate per subsequent<lb/> stage. Specify stopping rule parameters<lb/> 2: Sample X ihn , i = 1, . . . , m; h = 1, . . . , H ; n = 1, . . . , n 0 independently, and initialise the<lb/> number of samples n i ← n 0<lb/> 3: Determine the sample statistics xi,h and σ 2<lb/> i,h , and the observed Pareto front<lb/> 4: while stopping rule not satisfied do<lb/> 5: For each alternative i, calculate the probability P i that the new samples will lead to a change in<lb/> the Pareto set<lb/> 6: Allocate τ samples to the alternative that has the largest P i<lb/> 7: Update sample statistics n i , xi,h and σ 2<lb/> i,h and observe a new Pareto front<lb/> 8: end while<lb/> 9: Select alternatives on the observed Pareto front<lb/></figure>
+
+			<figure>Fig. 5 Indifference-zone<lb/> definition of Teng et al. (2010)<lb/> and dominance of a solution<lb/> relative to solution m<lb/> m<lb/> n<lb/> n&apos;<lb/> n&apos;&apos;<lb/> Indifference zone δx<lb/> Indifference zone δy<lb/> incomparable<lb/> dominaƟng<lb/> dominated<lb/> indifferent<lb/> incomparable<lb/></figure> 
+			
+			<p>Sect. 2.2.1, one way to deal with this is to introduce an indifference zone, and use<lb/> the probability of good selection as performance criterion. However, it is not obvi-<lb/>ous how to define an indifference zone in the case of multiple objectives. In the<lb/> following, we introduce a new concept of indifference zone and good selection,<lb/> and develop a corresponding M-MOBA indifference zone (M-MOBA IZ) algo-<lb/>rithm.<lb/></p> 
+			
+			<p><ref type="biblio">Teng et al. (2010)</ref> have proposed an indifference-zone concept for multi-objective<lb/> problems as follows. A DM is indifferent between system j and system i in<lb/> objective h, denoted by μ j,h<lb/> μ i,h if and only if |δ i jh | ≤ δ h , where δ i jh =<lb/> μ j,h -μ i,h and δ h is the indifference zone of the hth objective. Based on this<lb/> definition, any solution located within the indifference-zone area of solution m is<lb/> indifferent to m and so the dominance relationship can be visualised as shown<lb/> in Fig. <ref type="figure">5</ref>. PGS has been defined as the probability that exactly all the solutions<lb/> that are not dominated by any other solution have been identified correctly. How-<lb/>ever, with this definition small differences can still switch a solution between being<lb/> in the desired set or not. For example, in the scenario shown in Fig. <ref type="figure">5</ref>, if solu-<lb/>tion n is observed as n , it will be incomparable to m, while if it is observed<lb/> as n it will dominate m. Thus, an algorithm optimising under this definition is<lb/> likely to spend a lot of simulation samples to distinguish the domination relation-<lb/>ship between m and n, even if such a small difference may not be relevant to the<lb/> DM.<lb/></p> 
+			<p>This is why in the following, we will introduce an alternative definition of indiffer-<lb/>ence zone for multi-objective problems.<lb/></p>
+
+			<figure>Fig. 6 M-MOBA IZ<lb/> indifference-zone definition<lb/> M<lb/> Indifference zone<lb/> dominated<lb/> Indifference<lb/> zone non-<lb/>dominated<lb/> borderline<lb/> borderline<lb/> dominated<lb/> non-dominated<lb/> Indifference zone<lb/> Indifference zone<lb/></figure>
+
+			<head>4.2.1 New definition of indifference zone and good selection<lb/></head>
+
+			<p>The key idea of our new indifference-zone definition is to extend the number of cat-<lb/>egories. Instead of a system being either dominated or non-dominated, we introduce<lb/> the categories of &quot;indifference-zone dominated&quot;, &quot;borderline non-dominated&quot;, &quot;bor-<lb/>derline dominated&quot; and &quot;indifference-zone non-dominated&quot; as illustrated by Fig. <ref type="figure">6</ref>. A<lb/> system is<lb/></p> 
+			<list>
+			<item>-indifference-zone dominated if there is another solution that is at least δ h better in<lb/> each objective h,<lb/></item> 
+			<item>-borderline dominated, if it would become non-dominated by improving each<lb/> objective h by δ h ,<lb/></item> 
+			<item>-borderline non-dominated, if it is non-dominated, but would become dominated<lb/> by worsening each objective h by δ h ,<lb/></item> 
+			<item>-indifference-zone non-dominated if it remains non-dominated even if each objec-<lb/>tive h is worsened by δ h .<lb/></item>
+			</list> 
+			
+			<p>More formally,<lb/></p> 
+			<list>
+			<item>-solution i indifference zone dominates solution j, denoted by i ≺ I Z j, if μ i,h &lt;<lb/> μ j,h -δ h , ∀h = 1, 2, . . . , H ,<lb/></item> 
+			<item>-solution i borderline dominates solution j, denoted by i I Z j, if μ i,h &lt; μ j,h ,<lb/> ∀h = 1, 2, . . . , H and ∃h ∈ {1, 2, . . . , H }, |δ i jh | δ h .<lb/></item>
+			</list> 
+			
+			<p>Therefore, a solution j is categorised as<lb/></p>
+			<list>
+			<item>-indifference-zone dominated if ∃i ∈ {1, 2, . . . , m}, i ≺ I Z j,<lb/></item> 
+			<item>-borderline dominated if i ∈ {1, 2, . . . , m}, i ≺ I Z j and ∃i ∈ {1, 2, . . . , m},<lb/> i I Z j,<lb/></item> 
+			<item>-borderline non-dominated if i ∈ {1, 2, . . . , m}, i ≺ I Z j, i ∈ {1, 2, . . . , n},<lb/> i I Z j and ∃i ∈ {1, 2, . . . , m}, h ∈ {1, 2, . . . , H }μ i,h &gt; μ j,h -δ h ,<lb/></item> 
+			<item>-indifference-zone non-dominated if i ∈ {1, 2, . . . , m}, i ≺ I Z j or i I Z j and<lb/> i ∈ {1, 2, . . . , m}, h ∈ {1, 2, . . . , H }μ i,h &gt; μ j,h -δ h .<lb/></item>
+			</list>
+
+			<p>For example, in Fig. <ref type="figure">7</ref>, we have a set of indifference-zone non-dominated solutions<lb/> a, b, c, which are still Pareto optimal if both objectives increase by a small amount<lb/> δ (a , b , c are still Pareto non-dominated). By contrast, d will be dominated by e<lb/> if its objective values increase by δ and vice versa, and thus, d and e are borderline<lb/> non-dominated. Similarly, solutions f and h are indifference-zone dominated as they<lb/></p>
+
+			<figure>Fig. 7 An example of solutions<lb/> in different dominance<lb/> categories<lb/> a<lb/> b<lb/> c<lb/> d<lb/> h<lb/> e<lb/> f<lb/> f1<lb/> f2<lb/> g<lb/> a&apos;<lb/> g&apos;<lb/> c&apos;<lb/> b&apos;<lb/> d&apos;<lb/> e&apos;<lb/> f&apos;<lb/> h&apos;<lb/></figure>
+
+			<figure type="table">Table 2 Good selection<lb/> Observed<lb/> True<lb/> Indifference-zone<lb/> dominated<lb/> Borderline<lb/> dominated<lb/> Borderline<lb/> non-dominated<lb/> Indifference-zone<lb/> non-dominated<lb/> Indifference-zone<lb/> dominated<lb/>✓<lb/> ✓<lb/> ✗<lb/> ✗<lb/> Borderline dominated ✓<lb/> ✓<lb/> ✓<lb/> ✗<lb/> Borderline<lb/> non-dominated<lb/> ✗<lb/> ✓<lb/> ✓<lb/> ✓<lb/> Indifference-zone<lb/> non-dominated<lb/> ✗<lb/> ✗<lb/> ✓<lb/> ✓<lb/></figure>
+
+			<p>would still be Pareto dominated even if both objectives are improved by δ, while g<lb/> is borderline dominated as it would become non-dominated decreasing its objective<lb/> values by δ.<lb/></p>
+
+			<p>Based on the above definitions, we propose a definition of &quot;good selection&quot;. If c i is<lb/> the &quot;true&quot; category of alternative i, we still count the solution as correctly classified if<lb/> based on the observed objective values, the category is &quot;similar&quot; to the true category,<lb/> as defined in Table <ref type="table">2</ref>. For example, we accept if a borderline dominated solution is<lb/> classified as borderline non-dominated or as dominated, but we do not accept if it is<lb/> classified as indifference-zone non-dominated. This solves the issue of classifying n<lb/> in Fig. <ref type="figure">5</ref>, as there is a tolerance for classification in adjacent categories.<lb/></p>
+
+			<head>4.2.2 M-MOBA IZ procedure<lb/></head>
+
+			<p>We use the above definition of PGS to design an M-MOBA procedure that can work<lb/> with indifference zones (M-MOBA IZ). Similar to the original M-MOBA, we will<lb/> calculate the probability that a solution, if re-sampled, will change its category by more<lb/> than one grade. Similar to the M-MOBA PCS procedure, we discuss the calculation<lb/> of the probability based on the current domination situation of each alternative.<lb/></p>
+
+			<p>For a solution that is indifference-zone dominated or borderline dominated:<lb/></p> 
+			<list>
+			<item>-For a solution that is indifference-zone dominated, the area that a c needs to move<lb/> out to change the selected set is exemplified in Fig. <ref type="figure">4</ref>, and the probability P can<lb/> be calculated with Eq. (<ref type="formula">4</ref>).<lb/></item>
+
+			<figure>Fig. 8 Indifference zone for a<lb/> borderline dominated solution<lb/> a c if all other solutions on the<lb/> observed Pareto front are<lb/> non-dominated<lb/> a1<lb/> a2<lb/> a3<lb/> a4<lb/> ac<lb/> f1<lb/> f2<lb/> Indifference zone<lb/> Fig. 9 Indifference zone for a<lb/> borderline dominated solution<lb/> a c if a borderline non-dominated<lb/> solution exists<lb/> a1<lb/> a2<lb/> a3<lb/> a4<lb/> ac<lb/> f1<lb/> f2<lb/> Indifference zone<lb/></figure>
+
+			<item>-For a solution that is borderline dominated, if all other solutions on the observed<lb/> Pareto front are indifference-zone non-dominated, an example for the area that a c<lb/> needs to move out is shown in Fig. <ref type="figure">8</ref>, i.e. the original area plus the striped area<lb/> that allows a c to become borderline non-dominated.<lb/></item> 
+			<item>-For a solution that is borderline dominated, if a solution on the observed Pareto front<lb/> is borderline non-dominated, the area that a c needs to leave is the area discussed<lb/> above plus the small rectangle around the borderline non-dominated solution. For<lb/> example, if solution a 2 shown in Fig. <ref type="figure">9</ref> is borderline non-dominated (with respect<lb/> to a c ), the area with indifference zone for a c is the shaded part.<lb/></item>
+			</list>
+
+			<p>For a solution that is on the observed Pareto front and no new solutions become<lb/> indifference-zone non-dominated or borderline non-dominated when this solution is<lb/> removed:<lb/></p> 
+			<list>
+			<item>-For an indifference-zone non-dominated solution, if all solutions on the observed<lb/> Pareto front are indifference-zone non-dominated, the area that a c needs to move<lb/> out of is exemplified in Fig. <ref type="figure">3</ref> and the probability P can be calculated with Eq. (<ref type="formula">3</ref>).<lb/></item> 
+			<item>-For an indifference-zone non-dominated solution, if a solution on the observed<lb/> Pareto front is borderline non-dominated, the area that a c needs to move out is the<lb/> area in Fig. <ref type="figure">3</ref> plus the stripe areas around the borderline non-dominated solution.<lb/> Furthermore, if two borderline non-dominated solutions are neighbours on the<lb/> Pareto front, the small square area between the two stripe areas also needs to be<lb/> added. For example, in Fig. <ref type="figure">10</ref>, a 1 and a 2 are both borderline non-dominated (due<lb/> to a 4 and a 5 , respectively), the area a c that needs to leave in order to bring a change<lb/> is the shaded part shown in Fig. <ref type="figure">10</ref>.<lb/></item> 
+			<item>-For a borderline non-dominated solution, if all other solutions on the observed<lb/> Pareto front are indifference-zone non-dominated, the shaded area that a c needs<lb/></item>
+
+			<figure>Fig. 10 Indifference zone for an<lb/> indifference-zone<lb/> non-dominated solution if a<lb/> borderline non-dominated<lb/> solution exists<lb/> a1<lb/> ac<lb/> f1<lb/> f2<lb/> a2<lb/> a3<lb/> a4<lb/> a5<lb/> Indifference zone<lb/></figure> 
+			<figure>Fig. 11 Indifference zone for a<lb/> borderline non-dominated<lb/> solution if all solutions on the<lb/> observed Pareto front are<lb/> indifference-zone<lb/> non-dominated<lb/> a1<lb/> ac<lb/> a2<lb/> a3<lb/> f1<lb/> f2<lb/> Indifference zone<lb/></figure> 
+			<figure>Fig. 12 Indifference zone for a<lb/> borderline non-dominated<lb/> solution if a borderline<lb/> non-dominated solution exists<lb/> a1<lb/> ac<lb/> f1<lb/> f2<lb/> a2<lb/> a3<lb/> a4<lb/> a5<lb/> Indifference zone<lb/></figure>
+
+			<item>to move out is shown in Fig, <ref type="figure">11</ref>, which is the original shaded area from Fig. <ref type="figure">3</ref> plus<lb/> a stripe area on the upper right side.<lb/></item> 
+			<item>-For a borderline non-dominated solution, if a solution on the observed Pareto<lb/> front is borderline non-dominated, the shaded area that a c needs to leave is the area<lb/> discussed in Fig. <ref type="figure">10</ref> plus the stripe area on the upper right side. For example, similar<lb/> to the situation in Fig. <ref type="figure">10</ref> where a 1 and a 2 are both borderline non-dominated, the<lb/> area that a c needs to leave in order to bring a change is the shaded part shown in<lb/> Fig. <ref type="figure">12</ref>.<lb/></item>
+			</list>
+
+			<p>For a solution that is on the observed Pareto front and new solutions become<lb/> indifference-zone non-dominated or borderline non-dominated when this solution is<lb/> removed:<lb/></p> 
+			<list>
+			<item>-If the new Pareto-optimal solutions after the solution under consideration is<lb/> removed are all indifference-zone non-dominated, we only need to check solu-<lb/>tions that define the shaded area shown in Fig. <ref type="figure">2</ref>. If some solutions that define the<lb/> left and down sides of the shaded area are borderline non-dominated, the shaded<lb/></item>
+
+			<figure>Fig. 13 Indifference zone for a<lb/> solution that, if removed, reveals<lb/> a set of non-dominated solutions<lb/> a1<lb/> ac<lb/> a2<lb/> a3<lb/> b1<lb/> b2 b3<lb/> f1<lb/> f2<lb/> Indifference zone<lb/> c1<lb/></figure> 
+			<figure>Fig. 14 Cells created to compute<lb/> probability of change<lb/> a1<lb/> ac<lb/> b1<lb/> f1<lb/> f2<lb/> c1<lb/></figure>
+
+			<item>area can be extended accordingly. For example, in Fig. <ref type="figure">13</ref>, since a 2 is borderline<lb/> non-dominated, the area that a c needs to leave is as the figure shows.<lb/></item> 
+			<item>-If the new Pareto-optimal solution after the solution under consideration is removed<lb/> is borderline non-dominated, the situation is so complex that we have not found<lb/> a good method to summarise. For this situation, we use a brute-force method that<lb/> divides the whole plane into different cells based on each solution&apos;s objective values<lb/> and the indifference zone in each objective accordingly, and checks for each cell<lb/> whether it would change the current Pareto front in case the currently considered<lb/> solution were to fall into this cell. For example, if we have four solutions in total as<lb/> in Fig. <ref type="figure">14</ref>, the number of cells that need to be considered is (4 * 3) 2 = 144. Please<lb/> note that for the sake of clear demonstration, the domination relationship in this<lb/> figure does not exactly conform to the situation that new Pareto-optimal solution<lb/> after the solution under consideration is removed is borderline non-dominated.<lb/></item>
+			</list>
+
+			<head>4.3 M-MOBA hypervolume procedure<lb/></head>
+
+			<p>Although PCS is useful to identify the true Pareto-optimal set, there are some disad-<lb/>vantages. Consider the scenario shown in Fig. <ref type="figure">15</ref>, with the true value of a set of Pareto<lb/> optimal solutions a, b, c and d are depicted, alongside an iso-utility curve correspond-<lb/>ing to a specific DM. Solution b will be correctly identified as the most preferred<lb/> solution for this DM. However, if solution c would be observed as c , the domination<lb/> relationships among all solutions remain the same, and thus, this deviation from the<lb/> true mean would not impact the PCS measure. The DM, however, would now falsely<lb/> select c as best solution, and suffer a loss in utility. Another disadvantage of PCS is<lb/> illustrated in Fig. <ref type="figure">16</ref>. Intuitively, solutions a and c are much more likely to be picked<lb/></p>
+
+			<figure>Fig. 15 Even though all<lb/> dominance relations are correct<lb/> if solution c is observed as c ,<lb/> the DM may pick the wrong<lb/> solution<lb/> a<lb/> b<lb/> f1<lb/> f2<lb/> c<lb/> d<lb/> c&apos;<lb/> e<lb/> UƟlity funcƟon<lb/></figure> 
+			<figure>Fig. 16 Solutions a and c are<lb/> more likely to be preferred by a<lb/> DM<lb/> a<lb/> b<lb/> f1<lb/> f2<lb/> c<lb/></figure>
+
+			<p>by a DM than solution b, since they are much better than b in one objective but just<lb/> a little worse in the other objective. So, misclassifying b is probably not as bad as<lb/> misclassifying a and c, but PCS does not make this distinction.<lb/></p> 
+			<p>Given these drawbacks of the PCS measure for multi-objective problems, we pro-<lb/>pose hypervolume difference (HVD) as an alternative measure.<lb/></p>
+
+			<p>Let Λ denote the Lebesgue measure, then the hypervolume (HV) is defined as<lb/></p>
+
+				<formula>H V (B, R) := Λ<lb/> ⎛<lb/> ⎝<lb/> y∈B<lb/> {y | y ≺ y ≺ R}<lb/> ⎞<lb/> ⎠ ,<lb/> B ⊆ R m<lb/></formula> 
+				<label>(5)<lb/></label>
+
+			<p>where B is a set of solutions and R ∈ R m denotes a reference point that is usually<lb/> user defined and chosen such that it is dominated by all other solutions. Figure <ref type="figure">17<lb/></ref> shows a set of five alternatives in 2-objective space. Three of the solutions are Pareto-<lb/>optimal, and the HV is the shaded area, defined by the Pareto-optimal solutions and<lb/> the reference point R. The dominated solutions do not contribute to the HV. HV is a<lb/> standard metric to judge the performance in multi-objective optimisation. It rewards<lb/> solutions close to the true Pareto front, as well as a good spread of solutions along the<lb/> true Pareto front <ref type="biblio">(Beume et al. 2007)</ref>.<lb/></p> 
+			<p>But for the case of ranking and selection where evaluations are stochastic, we need<lb/> a metric that penalises over-estimation as well as under-estimation of objective values,<lb/> and thus propose the hypervolume difference (HVD). Given two sets of Pareto-optimal<lb/> solutions A and B,<lb/></p>
+
+				<formula>H V D(A, B, R) :=H V (A, R) + H V (B, R) -2 * (I H V (A, B, R),<lb/> where I H V (A, B, R) =Λ{y ≺ R | ∃(y ∈ A, z ∈ B) : (y ≺ y ) ∧ (z ≺ y )}<lb/></formula> 
+				<label>(6)<lb/></label>
+
+			<figure>Fig. 17 Hypervolume of a set of<lb/> solutions<lb/> a<lb/> b<lb/> c<lb/> d<lb/> R<lb/> f1<lb/> e<lb/> f2<lb/></figure> 
+			<figure>Fig. 18 Hypervolume difference<lb/> of two sets of solutions<lb/> a<lb/> b<lb/> c<lb/> d<lb/> R<lb/> a&apos;<lb/> f1<lb/> b&apos;<lb/> d&apos;<lb/> e<lb/> c&apos;<lb/> f2<lb/></figure> 
+			<figure>Fig. 19 Hypervolume difference<lb/> penalises any deviation from the<lb/> true front<lb/> a<lb/> b<lb/> f1<lb/> f2<lb/> c<lb/> d<lb/> c&apos;<lb/> e<lb/></figure> 
+			
+			<p>Figure <ref type="figure">18</ref> provides an example for the proposed HVD.<lb/></p>
+
+			<p>HVD is able to overcome the drawbacks of PCS-based metrics discussed above.<lb/> For the scenario shown in Fig. <ref type="figure">15</ref>, HVD will penalise deviations from the true fitness<lb/> values of Pareto-optimal solutions, even if all dominance relations are correct, see<lb/> Fig. <ref type="figure">19</ref>. And for the scenario shown in Fig. <ref type="figure">16</ref>, while PCS fails to reflect the higher<lb/> importance of a and c, hypervolume does pay more attention to these solutions. This is<lb/> illustrated in Fig. <ref type="figure">20</ref>: If distorting solutions a and b by the same distance and direction,<lb/> the HVD between the new and old Pareto front made by a distortion to a is larger than<lb/> by the same distortion to b.<lb/></p>
+
+			<p>As additional advantage, it should be noted that HVD also allows straightforward<lb/> incorporation of partial user preferences. If a DM already has a rough idea of the<lb/> region in which the desired solutions are likely to be, the reference point can be set to<lb/> reflect this preference by setting it to the maximum acceptable value in each objective.<lb/> For example, if the reference point is defined as R shown in Fig. <ref type="figure">21</ref>, solutions a and d<lb/> will have little influence on HVD, even if their values are disturbed, and thus, ranking<lb/> and selection will focus its sampling effort on the more relevant solutions b and c.<lb/></p>
+
+			<figure>Fig. 20 Hypervolume change<lb/> caused by different solutions is<lb/> different<lb/> a<lb/> b<lb/> f1<lb/> f2<lb/> c<lb/> b&apos;<lb/> Hypervolume change caused by b<lb/> c&apos;<lb/> Hypervolume change<lb/> caused by c<lb/></figure> 
+			<figure>Fig. 21 Effect of choosing<lb/> reference point<lb/> a<lb/> b<lb/> f1<lb/> f2<lb/> d<lb/> c<lb/>R<lb/></figure>
+
+			<p>Following the general M-MOBA framework, we will sample where we expect the<lb/> sample will lead to the biggest change in HV, i.e. where the expected HVD between<lb/> the Pareto fronts before and after sampling is maximal.<lb/></p>
+
+			<head>4.3.1 Mathematical calculation of the expected HV change<lb/></head>
+
+			<p>Calculating the expected HV change requires to break down the calculation into differ-<lb/>ent cells, but for each cell, we can find a closed form expression. Then, these expected<lb/> changes can be added up to result in the overall expected HV change. In the following,<lb/> we will explain the computation for one particular cell, with other cells computed<lb/> analogously. Some examples for how a move of one solution will influence the HVD<lb/> can be found in <ref type="biblio">Branke et al. (2016)</ref>.<lb/></p>
+
+			<p>Consider Fig. <ref type="figure">22</ref>, where all solutions on the current Pareto front are labelled<lb/> a 1 , . . . , a k , with coordinates a i,h for alternative i and objective h, and the solutions<lb/> are sorted in increasing order of objective 1. For technical reasons, let us define<lb/> a 0,1 = -∞, a 0,2 = a r ,2 , a k+1,1 = a r ,1 , a k+1,2 = -∞. We consider another<lb/> sample for design a c , and the calculation for one particular cell that is outlined<lb/> in bold and defined by upper right corner u with coordinates (u 1 , u 2 ) and lower<lb/> left corner l with coordinates (l 1 , l 2 ). Let us assume that these two corners are<lb/> defined by the Pareto-optimal solutions a p and a q , by u = (a p+1,1 , a q-1,2 ) and<lb/> l = (a p,1 , a q,2 ).<lb/></p>
+
+			<p>Then, the contribution of the cell to the expectation of the HV change when sampling<lb/> design a c is<lb/></p>
+
+			<figure>Fig. 22 Different cells that need<lb/> to be considered when<lb/> calculating the expected HV<lb/> change from re-sampling<lb/> a1<lb/> R<lb/> f2<lb/> f1<lb/> a2<lb/> a4<lb/> ac<lb/> a&apos;c<lb/> l<lb/> u<lb/> b1<lb/> b2<lb/> b3<lb/> b4<lb/> (p)<lb/> (q)<lb/></figure>
+
+				<formula>u 2<lb/> l 2<lb/> u 1<lb/> l 1<lb/> ⎡<lb/> ⎣ (a p+1,1 -x)(a p,2 -y) +<lb/> p&lt;i&lt;q<lb/> (a i+1,1 -a i,1 )(a i,2<lb/> -y)] • φ c,1 (x) • φ c,2 (y)dxdy<lb/> (7)<lb/></formula>
+
+			<p>where φ c,h is the predictive probability distribution of the new location of x c in dimen-<lb/>sion h.<lb/></p>
+
+			<p>For efficient computation, we derive a closed form for calculating the expected HV<lb/> change in one cell. Let φ(x; μ, κ, ν) denote the distribution of μ + 1<lb/> √<lb/> κ T ν , where T ν<lb/> is a random variable with standard t distribution with ν degrees of freedom, i.e. the<lb/> t distribution we estimate for the new location of an alternative&apos;s mean values after<lb/> having taken another sample, with mean μ, precision κ and ν degrees of freedom. The<lb/> cumulative density function is then<lb/></p>
+
+				<formula>(x; μ, κ, ν) = t (<lb/> √<lb/> κ(x -μ); ν)<lb/></formula> 
+				<label>(8)<lb/></label>
+
+			<p>with t (x; ν) the cumulative standard t-distribution, and the probability density func-<lb/>tion is<lb/></p>
+
+				<formula>φ(x; μ, κ, ν)=<lb/> √<lb/> κ • φ t (<lb/> √<lb/> κ(x-μ); ν)=<lb/> κ<lb/> νπ<lb/> Γ ( ν+1<lb/> 2 )<lb/> Γ ( ν<lb/> 2 )<lb/> • 1+<lb/> κ(x-μ) 2<lb/> ν<lb/> -ν+1<lb/> 2<lb/></formula> 
+				<label>(9)<lb/></label>
+
+			<p>with φ t (x; ν) the standard t-distribution. The HV change, due to the point we are<lb/> considering moving to a new position (x, y), is always a function in the form ax y +<lb/> bx+cy+d. The constant coefficients a, b, c, d are different in different areas, and some<lb/> of the coefficients could be 0 sometimes. The contribution of the area [l 1 , u 1 ]×[l 2 , u 2 ]<lb/>(e.g. the small cell highlighted in Fig. <ref type="figure">22</ref>) to the expectation of the HV change is<lb/></p>
+
+				<formula>u 1<lb/> l 1<lb/> u 2<lb/> l 2<lb/> (ax y + bx + cy + d) • φ i,1 (x) • φ i,2 (y)dxdy<lb/> = a<lb/> u 1<lb/> l 1<lb/> xφ i,1 (x)dx<lb/> u 2<lb/> l 2<lb/> yφ i,2 (y)dy + b • i,2 (y)| u 2<lb/> l 2 •<lb/> u 1<lb/> l 1<lb/> xφ i,1 (x)dx<lb/> + c • i,1 (x)| u 1<lb/> l 1 •<lb/> u 2<lb/> l 2<lb/> yφ i,2 (y)dy + d • i,1 (x)| u 1<lb/> l 1 • i,2 (y)| u 2<lb/> l 2 ,<lb/></formula>
+
+				<label>(10)<lb/></label>
+
+			<p>where φ i,h (x) = φ(x; μ i,h , κ i,h , ν i ), i,h (x) = (x; μ i,h , κ i,h , ν i ), μ ih = xi,h ,<lb/> κ i,h = n i (n i + τ i )/τ i<lb/> σ 2<lb/> i,h and ν i = n i -1. On the right-hand side of Eq. (<ref type="formula">10</ref>),<lb/> the most critical part is solving the integrals, and it can be done by calculating the<lb/> corresponding indefinite integral, which is<lb/></p>
+
+				<formula>xφ(x; μ, κ, ν)dx = (x -μ)φ(x; μ, κ, ν)dx + μ (x; μ, κ, ν)dx<lb/> = ψ(x; μ, κ, ν) + μ (x; μ, κ, ν)<lb/></formula> 
+				<label>(11)<lb/></label> 
+				
+				<p>with<lb/></p> 
+				
+				<formula>ψ(x; μ, κ, ν) := (x -μ)φ(x; μ, κ, ν)dx<lb/> =<lb/> ν<lb/> κπ<lb/> •<lb/> Γ ( ν+1<lb/> 2 )<lb/> (1 -ν)Γ ( ν<lb/> 2 )<lb/> 1 +<lb/> κ(x -μ) 2<lb/> ν<lb/> 1-ν<lb/> 2<lb/> =<lb/> ν + κ(x -μ) 2<lb/> (1 -ν)<lb/> √ κ<lb/> φ(x; μ, κ, ν).<lb/></formula>
+
+				<label>(12)<lb/></label>
+
+			<p>In the rest of this section, for convenience, we will denote ψ(x; μ ih , κ ih , ν i ) as ψ ih (x).<lb/> Using the above results and gathering the terms with same integrals, Eq. (<ref type="formula">10</ref>) can be<lb/> rewritten as<lb/></p>
+
+				<formula>u 1<lb/> l 1<lb/> u 2<lb/> l 2<lb/> (ax y + bx + cy + d) • φ i,1 (x) • φ i,2 (y)dxdy<lb/> = a i,1 (x)| u 1<lb/> l 1 i,2 (y)| u 2<lb/> l 2 + (b + aμ i,2 ) i,1 (x)| u 1<lb/> l 1 i,2 (y)| u 2<lb/> l 2<lb/> + (c + aμ i,1 ) i,1 (x)| u 1<lb/> l 1 i,2 (y)| u 2<lb/> l 2 + (aμ i,1 μ i,2 + bμ i,1<lb/> + cμ i,2 + d) i,1 (x)| u 1<lb/> l 1 i,2 (y)| u 2<lb/> l 2 ,<lb/></formula>
+
+				<label>(13)<lb/></label>
+
+			<p>where is the integral of ψ.<lb/></p> 
+			
+			<p>For example, considering the integral (<ref type="formula">7</ref>), we will have<lb/></p>
+
+				<formula>a = 1,<lb/> b = -a p,2 ,<lb/> c = -a p+1,1 -<lb/>p&lt;i&lt;q<lb/> (a i+1,1 -a i,1 ), d = a p+1,1 a p,2 +<lb/> p&lt;i&lt;q<lb/> (a i+1,1 -a i,1 )a i,2 ,<lb/></formula>
+
+			<p>and then, we can substitute them, in addition to<lb/></p>
+
+				<formula>μ c,h = xc,h ,<lb/> κ c,h = n c (n c + τ c )/τ c<lb/> σ 2<lb/> c,h ,<lb/> ν c = n c -1,<lb/></formula>
+
+			<p>where h = 1 or 2, into Eq. (<ref type="formula">13</ref>) to solve the integral (<ref type="formula">7</ref>).<lb/></p>
+
+			<p>The overall Myopic Multi-Objective Budget Allocation procedure based on the HV<lb/> change criterion is denoted as M-MOBA-HV, and the procedure is almost identical to<lb/> that of M-MOBA PCS except that for each alternative i, M-MOBA-HV will calcu-<lb/>late the expected hypervolume change that would result from allocating τ additional<lb/> sample to alternative i and allocate τ samples to the alternative i that has the largest<lb/> expected hypervolume change.<lb/></p>
+
+			<head>4.4 M-MOBA procedure for differential sampling between the objectives<lb/></head>
+
+			<p>Sometimes, objectives can be evaluated independently, e.g. if different simulation<lb/> models are used to evaluate different criteria. In this case, in order to further improve<lb/> the efficiency of sampling, it is possible to regard the sampling allocation process for<lb/> each objective independently. This independent sampling procedure can be employed<lb/> with different measures and without loss of generality we use PCS in this paper. Instead<lb/> of evaluating all objectives of an alternative simultaneously as in the M-MOBA PCS<lb/> procedure, we will evaluate only one objective of one alternative in each iteration. We<lb/> calculate P i using the same methods as in M-MOBA PCS, and allocate the simulation<lb/> sample to the solution and objective that has the biggest probability to change the cur-<lb/>rent Pareto front. For comparison purposes, for a 2-objective problem, we assume the<lb/> M-MOBA PCS procedure will allocate one sample for each objective of a solution in<lb/> every iteration, while the M-MOBA Differential Sampling PCS (M-MOBA DS PCS)<lb/> procedure will only allocate one sample to the selected objective. Empirical results in<lb/> Sect. 5 show that by allowing to evaluate objectives independently, the efficiency of the<lb/> algorithm may be improved substantially. This would be even more the case if evalu-<lb/>ating different objectives would take different times or involve different costs, because<lb/> it would allow the algorithm to focus on the cheaper objectives. Different costs could<lb/> be easily integrated into M-MOBA DS PCS by using the quotient of probability of<lb/> change and computational cost to decide which solution and objective to evaluate next.<lb/></p>
+
+			<head>5 Empirical results and analysis<lb/></head>
+
+			<p>In this section, we present empirical experiments using different M-MOBA methods<lb/> and compare their performance with Equal allocation (which simply allocates an equal<lb/> number of samples to each alternative) according to different performance measures.<lb/> For each method, each design is sampled n 0 = 5 times during initialisation, and<lb/> additional samples are allocated one at a time (τ = 1) until a pre-set budget has<lb/> been used up. All results are averaged over 1000 runs. We report the performance of<lb/> M-MOBA PCS, M-MOBA IZ, M-MOBA HV and M-MOBA DS PCS.<lb/></p>
+
+			<p>In some cases, we observed problems with numerical precision. As the number of<lb/> samples allocated to an alternative increases, the posterior distribution becomes more<lb/> and more narrow, leading to extremely small probabilities that an additional sample<lb/> might influence the selection. Once the probabilities become numerically zero for all<lb/> alternatives, the algorithm can no longer differentiate between them. As a simple fix<lb/> to this problem, we implemented two slight modifications. First, in case we run into<lb/> problems of numerical precision, τ is changed to 10 for the expected information<lb/> change calculation, but still only one sample is allocated. Second, if the numerical<lb/> precision problem persists, we will use Equal allocation until the problem disappears<lb/> and τ is then set back to 1.<lb/></p>
+
+			<figure type="table">Table 3 True expected<lb/> performance in each objective,<lb/> SD in all cases is 5<lb/> Index<lb/> Obj. 1<lb/> Obj. 2<lb/> 0<lb/> 1<lb/> 2<lb/> 1<lb/> 3<lb/> 1<lb/> 2<lb/> 5<lb/> 5<lb/></figure> 
+			
+			<figure>Fig. 23 Comparison of P(CS)<lb/>for different algorithms on the<lb/> 3-alternative case<lb/></figure>
+
+			<head>5.1 M-MOBA PCS procedure<lb/></head>
+
+			<p>In an earlier paper <ref type="biblio">(Branke and Zhang 2015)</ref>, we compared the performance of M-<lb/>MOBA PCS with MOCBA (Chen and Lee 2010) by using two configurations from<lb/> <ref type="biblio">Chen and Lee (2010)</ref>. In <ref type="biblio">Branke and Zhang (2015)</ref>, as we did not have access to an<lb/> implementation of MOCBA at the time, we just compared with results read approx-<lb/>imately from figures provided in <ref type="biblio">Chen and Lee (2010)</ref>. For this paper, Dr. Haobin<lb/> Li has kindly provided us with his code of MOCBA, and so we are able to compare<lb/> MOCBA PCS and M-MOBA directly and under identical settings.<lb/></p>
+
+			<p>In the first benchmark problem, there are three designs and each of them is evaluated<lb/> according to two objectives. Objective values of the designs are shown in Table <ref type="table">3</ref>.<lb/></p>
+
+			<p>The resulting P(CS) over the budget allocated is shown in Fig. <ref type="figure">23</ref>. As can be seen,<lb/> our algorithm obtains a significantly higher P(CS) than Equal allocation with the same<lb/> simulation budget. M-MOBA PCS performs very similar to MOCBA on this problem.<lb/></p>
+
+			<p>The second configuration has 16 alternatives, and the objective values of each design<lb/> are shown in Table <ref type="table">4</ref> and visualised in Fig. <ref type="figure">24</ref>.<lb/></p>
+
+			<p>Results are summarised in Fig. <ref type="figure">25</ref>. Comparing our algorithm, M-MOBA PCS<lb/> (τ = 1), MOCBA and Equal allocation, it can be seen that both M-MOBA PCS and<lb/> MOCBA work much better than Equal allocation and M-MOBA PCS works better<lb/> than MOCBA. The difference of performance between the latter two methods reaches<lb/> a peak when the total simulation budget is around 1600. When the simulation budget<lb/> continues increasing, the difference between M-MOBA PCS and MOCBA reduces<lb/> again. The very good performance of M-MOBA PCS for small samples makes sense<lb/></p>
+
+			<figure type="table">Table 4 Standard configuration<lb/> with 16 alternatives and<lb/> objectives. Standard deviation<lb/> for all designs is 2 in each<lb/> objective<lb/> Index<lb/> Obj. 1<lb/> Obj. 2<lb/> Index<lb/> Obj. 1<lb/> Obj. 2<lb/> 1<lb/> 0.5<lb/> 5.5<lb/> 9<lb/> 4.8<lb/> 5.5<lb/> 2<lb/> 1.9<lb/> 4.2<lb/> 10<lb/> 5.2<lb/> 5<lb/> 3<lb/> 2.8<lb/> 3.3<lb/> 11<lb/> 5.9<lb/> 4.1<lb/> 4<lb/> 3<lb/> 3<lb/> 1 2<lb/> 6 . 3<lb/> 3 . 8<lb/> 5<lb/> 3.9<lb/> 2.1<lb/> 13<lb/> 6.7<lb/> 7.2<lb/> 6<lb/> 4 . 3<lb/> 1 . 8<lb/> 1 4<lb/> 7<lb/> 7<lb/> 7<lb/> 4.6<lb/> 1.5<lb/> 15<lb/> 7.9<lb/> 6.1<lb/> 8<lb/> 3 . 8<lb/> 6 . 3<lb/> 1 6<lb/> 9<lb/> 9<lb/></figure> 
+			
+			<figure>Fig. 24 Standard configuration<lb/> with 16 alternatives<lb/></figure>
+
+			<figure>Fig. 25 Comparison of P(CS)<lb/> for different algorithms on the<lb/> 16-alternative case<lb/></figure> 
+			
+			<p>as M-MOBA PCS has been designed from a myopic perspective, whereas MOCBA<lb/> is based on asymptotic considerations.<lb/></p> 
+			
+			<figure>Fig. 26 Similar solution<lb/> configuration with 13<lb/> alternatives<lb/></figure>
+
+			<figure type="table">Table 5 Configuration with 13 alternatives and two objectives. Standard deviation for all designs is 1.5 in<lb/> each objective<lb/> Index<lb/> Obj. 1<lb/> Obj. 2<lb/> Index<lb/> Obj. 1<lb/> Obj. 2<lb/> Index<lb/> Obj. 1<lb/> Obj. 2<lb/> 1<lb/> 1<lb/> 8<lb/> 6<lb/> 3<lb/> 7<lb/> 1 1<lb/> 2 . 6<lb/> 3 . 9<lb/> 2<lb/> 2<lb/> 5<lb/> 7<lb/> 3.05<lb/> 2.2<lb/> 12<lb/> 2<lb/> 7<lb/> 3<lb/> 3.5<lb/> 5.01<lb/> 8<lb/> 1.5<lb/> 6<lb/> 13<lb/> 2.5<lb/> 6<lb/> 4<lb/> 3<lb/> 2<lb/> 9<lb/> 2 . 1<lb/> 5 . 2<lb/> 5<lb/> 2.5<lb/> 8<lb/> 10<lb/> 2.5<lb/> 4<lb/></figure> 
+			<figure>Fig. 27 Similar solution<lb/> configuration PCS performance<lb/> comparison<lb/></figure>
+
+			<head>5.2 M-MOBA IZ procedure<lb/></head>
+
+			<p>In order to test the performance of M-MOBA IZ, we construct a configuration that<lb/> includes four categories of solutions mentioned before, namely IZ dominated, border-<lb/>line dominated, borderline non-dominated and IZ non-dominated as shown in Fig. <ref type="figure">26</ref>.<lb/> Expected values of each design are listed in Table <ref type="table">5</ref>, and the indifference zone δ<lb/> is 0.2 in both objectives. The performance in terms of PCS and PGS measure is<lb/> shown in Figs. <ref type="figure">27</ref> and <ref type="figure">28</ref>, respectively. In terms of PCS (Fig. <ref type="figure">27</ref>) as expected, M-<lb/>MOBA PCS performs best and the difference between its performance and Equal<lb/></p>
+
+			<figure>Fig. 28 Similar solution configuration PGS performance comparison<lb/></figure> 
+			<figure>Fig. 29 Allocation of samples to different alternatives for 13 similar alternatives configuration<lb/></figure> 
+			
+			<p>allocation is quite large. Both M-MOBA IZ and M-MOBA PCS work better than<lb/> Equal allocation throughout the run. In terms of PGS, the highest PGS reached by<lb/> M-MOBA IZ is more than five times higher than the highest PCS reached by any<lb/> algorithm within the same budget since PGS is a less strict criterion. M-MOBA PCS<lb/> performs even worse than Equal allocation in terms of PGS, which confirms that<lb/> focusing too much on PCS may be detrimental if the user has an indifference zone.<lb/> Our proposed M-MOBA IZ, on the other hand, works very well. To further inves-<lb/>tigate how the different methods spend the simulation samples, Fig. <ref type="figure">29</ref> shows the<lb/> percentage of samples allocated to a particular design. M-MOBA spends quite a lot<lb/> of samples on alternatives 2, 4, 7, 9, 10 and 11 in order to distinguish the small<lb/> differences between these alternatives. By contrast, the samples spent by M-MOBA<lb/> IZ are more evenly distributed except the apparently dominated solutions of 3, 5<lb/> and 6.<lb/></p>
+
+			<figure>Fig. 30 Comparison of relative<lb/> hypervolume difference for<lb/> standard configuration with 16<lb/> alternatives<lb/></figure>
+
+			<figure type="table">Table 6 Borderline<lb/> configuration with ten<lb/> alternatives and two objectives.<lb/> Standard deviation for all<lb/> designs is 2 in each objective<lb/> Index<lb/> Obj. 1<lb/> Obj. 2<lb/> Index<lb/> Obj. 1<lb/> Obj. 2<lb/> 1<lb/> 1<lb/> 5<lb/> 6<lb/> 4<lb/> 2 . 1<lb/> 2<lb/> 5<lb/> 1<lb/> 7<lb/> 2 . 1<lb/> 4<lb/> 3<lb/> 3<lb/> 3<lb/> 8<lb/> 5 . 5<lb/> 5<lb/> 4<lb/> 3 . 1<lb/> 2<lb/> 9<lb/> 3 . 5<lb/> 5<lb/> 5<lb/> 2<lb/> 3 . 1<lb/> 1 0<lb/> 6<lb/> 6<lb/></figure>
+
+			<head>5.3 M-MOBA HV procedure<lb/></head>
+
+			<p>In <ref type="biblio">Branke et al. (2016)</ref>, we tested three configurations, and compared them with two<lb/> other methods, the M-MOBA PCS <ref type="biblio">(Branke and Zhang 2015)</ref> and Equal allocation. The<lb/> test results in this section are taken from <ref type="biblio">Branke et al. (2016)</ref> and are repeated here for<lb/> completeness. The first configuration is still the 16 alternatives configuration proposed<lb/> by <ref type="biblio">Chen and Lee (2010)</ref>. Figure <ref type="figure">30</ref> reports the reduction in the HV difference as the<lb/> number of samples allocated increases. It can be seen that the M-MOBA-HV method<lb/> works much better than both the Equal and M-MOBA PCS methods in terms of HVD<lb/> between the selected and true Pareto set. Although M-MOBA PCS has been shown<lb/> to identify the Pareto-optimal solutions much more quickly than Equal allocation on<lb/> this problem <ref type="biblio">(Branke and Zhang 2015)</ref>, in terms of HVD it is actually only slightly<lb/> better than Equal allocation.<lb/></p>
+
+			<p>The second configuration is designed to show the impact of solutions that are close<lb/> to being dominated or non-dominated. These points have a small influence on the<lb/> resulting HV, and whether they are actually identified as dominated or non-dominated<lb/> may not matter so much to a decision maker. The configuration has ten designs, two<lb/> objectives, and the standard deviation of each alternative in each objective is set to 2.<lb/> The reference point is (10,10) in this case. Expected values of each design are shown<lb/> in Table <ref type="table">6</ref> and visualised in Fig. <ref type="figure">31</ref>. Designs 6 and 7 are dominated, but close to being<lb/> non-dominated, and design 3 is non-dominated, but close to being dominated.<lb/></p>
+
+			<figure>Fig. 31 Borderline configuration<lb/> with ten alternatives<lb/></figure> 
+			<figure>Fig. 32 Comparison of relative<lb/> hypervolume difference of<lb/> borderline configuration<lb/></figure>
+
+			<p>The result is shown in Fig. <ref type="figure">32</ref>. Again, M-MOBA-HV works very well. The PCS-<lb/>based version of M-MOBA now is even worse than Equal allocation. To investigate<lb/> this further, Fig. <ref type="figure">33</ref> shows the percentage of samples allocated to a particular design.<lb/> M-MOBA PCS allocates quite a few samples to the borderline designs 3, 6 and 7,<lb/> because it aims to improve the probability of correct selection, and for these designs<lb/> the classification is most difficult. For a decision maker, however, these designs are<lb/> probably less relevant. M-MOBA-HV instead focuses on the designs 1, 2, 4 and 5,<lb/> which are the Pareto-optimal solutions probably most relevant to a decision maker.<lb/> Thus, it creates reliable performance estimates where it is most relevant.<lb/></p>
+
+			<p>The third configuration is designed to show the impact of very similar designs.<lb/> Again, for PCS-based MORS algorithms, it is difficult to distinguish between them.<lb/> On the other hand, the distinction is probably not very relevant for a decision maker.<lb/> There are eight designs, two objectives, and the standard deviation of each alternative<lb/> in each objective is set to 2. Expected values of each design are shown in Table <ref type="table">7</ref>, with<lb/> a visualisation in Fig. <ref type="figure">34</ref>. The results depicted in Fig. <ref type="figure">35</ref> are similar to configuration<lb/></p>
+
+			<figure>Fig. 33 Allocation of samples to<lb/> the different alternatives for<lb/> borderline configuration<lb/></figure> 
+			<figure type="table">Table 7 Similar solution<lb/> configuration with eight<lb/> alternatives and two objectives.<lb/> Standard deviation for all<lb/> designs is 2 in each objective<lb/> Index<lb/> Obj. 1<lb/> Obj. 2<lb/> 1<lb/> 1<lb/> 5<lb/> 2<lb/> 5<lb/> 1<lb/> 3<lb/> 3 . 2<lb/> 2 . 1<lb/> 4<lb/> 3<lb/> 2<lb/> 5<lb/> 2<lb/> 3 . 1<lb/> 6<lb/> 6<lb/> 4<lb/> 7<lb/> 5<lb/> 5<lb/> 8<lb/> 4<lb/> 6<lb/></figure> 
+			<figure>Fig. 34 Similar solution<lb/> configuration with eight<lb/> alternatives<lb/></figure> 
+			
+			<p>2 in the sense that M-MOBA-HV works best, and the PCS-based M-MOBA is worse<lb/> than Equal allocation. Again, Fig. <ref type="figure">36</ref> provides further detail on the distribution of<lb/> samples onto the different alternatives.<lb/></p>
+
+			<p>As additional test, we run some experiments on randomly generated configurations.<lb/> We generated 1000 random configurations of ten alternatives each, by sampling the<lb/> true mean of each alternative from a normal distribution with mean (2, 2) and standard<lb/> deviation of 3 in each objective. The sample standard deviation of each alternative has<lb/> been set to 2 in each objective. The reference point has been set to max μ i + 5 in each<lb/></p>
+
+			<figure>Fig. 35 Comparison of relative<lb/> hypervolume difference of<lb/> similar solution configuration<lb/></figure> 
+			<figure>Fig. 36 Allocation of samples to<lb/> the different alternatives for<lb/> similar solution configuration<lb/></figure> 
+			<figure>Fig. 37 Hypervolume difference<lb/> depending on the number of<lb/> samples taken, averaged over<lb/> 1000 random configurations<lb/> 0<lb/> 50<lb/> 100<lb/> 150<lb/> 200<lb/> 250<lb/> 300<lb/> 350<lb/> 400<lb/> budget<lb/> 5<lb/> 10<lb/> 15<lb/> 20<lb/> relative hypervolume difference<lb/> Equal<lb/> M-MOBA HV<lb/> M-MOBA PCS<lb/></figure> 
+			
+			<p>dimension. Algorithms are tested once on each of the 1000 random configurations,<lb/> and results are averaged over these 1000 runs.<lb/></p>
+
+			<p>Figure <ref type="figure">37</ref> compares the HVD over the run for M-MOBA HV, M-MOBA PCS and<lb/> Equal allocation. As expected, for this HVD performance criterion, M-MOBA HV is<lb/> best, followed by M-MOBA PCS, and Equal allocation performing worst. The same<lb/> comparison but for the P(CS) criterion is shown in Fig. <ref type="figure">38</ref>. Again as expected, for this<lb/> criterion, M-MOBA PCS performs best. M-MOBA HV works OK in the beginning,<lb/> but then stagnates and falls behind Equal allocation, presumably because it just does<lb/></p>
+
+			<figure>Fig. 38 P(CS) depending on the<lb/> number of samples taken,<lb/> averaged over 1000 random<lb/> configurations<lb/> 0<lb/> 50<lb/> 100<lb/> 150<lb/> 200<lb/> 250<lb/> 300<lb/> 350<lb/> 400<lb/> budget<lb/> 0.3<lb/> 0.35<lb/> 0.4<lb/> 0.45<lb/> 0.5<lb/> 0.55<lb/> 0.6<lb/> 0.65<lb/> 0.7<lb/> 0.75<lb/> 0.8<lb/> P(CS)<lb/> Equal<lb/> M-MOBA HV<lb/> M-MOBA PCS<lb/></figure>
+
+			<figure type="table">Table 8 Time required per sample allocation<lb/> Number of alternatives<lb/> Best<lb/> Worst<lb/> Average<lb/> 10<lb/> 0.079110s<lb/> 0.093693s<lb/> 0.083943s<lb/> 20<lb/> 0.099771s<lb/> 0.11613s<lb/> 0.106111s<lb/> 50<lb/> 0.239546s<lb/> 0.399704s<lb/> 0.259820s<lb/> 100<lb/> 0.497097s<lb/> 0.585236s<lb/> 0.515388s<lb/></figure>
+
+			<p>not care about some borderline solutions, as these solutions do not contribute to the<lb/> HV. The experiment on randomly generated configurations reinforces our intuition<lb/> that the selection of the algorithm should depend on the chosen performance measure.<lb/></p> 
+			<p>Finally, the timings reported in Table <ref type="table">8</ref> approximate the time it takes to perform one<lb/> sample allocation with M-MOBA HV (the slowest of the algorithm variants proposed<lb/> in this paper). We report the shortest, longest and average wall-clock time of 100 times<lb/> running with MATLAB 2018b on a machine with 2.4 GHz Intel Core i7 CPU and 8GB<lb/> memory. The average computational time is almost exactly linear in the number of<lb/> alternatives.<lb/></p>
+
+			<head>5.4 M-MOBA DS PCS procedure<lb/></head>
+
+			<p>Still using the 16 alternatives configuration used in <ref type="biblio">Chen and Lee (2010)</ref>, we test<lb/> the M-MOBA DS PCS procedure and compare it with the original M-MOBA PCS<lb/> procedure and Equal allocation.<lb/></p>
+
+			<p>Figure <ref type="figure">39</ref> shows PCS as the number of samples allocated increases. It can be seen<lb/> that both M-MOBA PCS and M-MOBA DS PCS perform much better than Equal<lb/> allocation and M-MOBA DS PCS performs better than M-MOBA PCS throughout<lb/> the entire run. This matches our expectation because the M-MOBA DS PCS allocates<lb/> the sampling budget more precisely to the objectives where they provide the highest<lb/> value of information. This procedure is valuable when the simulation budget is quite<lb/> limited and the objectives can be evaluated independently.<lb/></p>
+
+			<figure>Fig. 39 M-MOBA DS PCS<lb/> procedure<lb/> 0<lb/> 500<lb/> 1000<lb/> 1500<lb/> budget<lb/> 0<lb/> 0.1<lb/> 0.2<lb/> 0.3<lb/> 0.4<lb/> 0.5<lb/> 0.6<lb/> P(CS)<lb/> Equal<lb/> M-MOBA DS PCS<lb/> M-MOBA PCS<lb/></figure>
+
+			<figure type="table">Table 9 Different purposes<lb/> Purpose<lb/> Method<lb/> Minimise PCS<lb/> M-MOBA PCS<lb/> Minimise PCS but ignore small differences<lb/> M-MOBA IZ<lb/> Any performance measure, but if objective<lb/> functions are derived from different<lb/> simulation models independently<lb/> M-MOBA DS<lb/> Minimise hypervolume difference<lb/> M-MOBA HV<lb/></figure>
+
+			<head>6 Conclusion<lb/></head>
+
+			<p>In this paper, we presented an overview on the M-MOBA method for ranking and<lb/> selection in case of two objectives. We show how this method can be adapted to<lb/> various different scenarios such as the case of an indifference zone, hypervolume as<lb/> performance criterion, or the case where objectives can be evaluated independently,<lb/> and we propose new variants and evaluation criteria. Empirical results show M-MOBA<lb/> is able to substantially reduce the number of simulation runs needed to obtain a desired<lb/> performance, when compared to equal allocation or other methods from the literature.<lb/></p>
+
+			<p>In conclusion, we suggest different M-MOBA variants are used in different situa-<lb/>tions according to Table <ref type="table">9</ref>.<lb/></p>
+
+			<p>There are several avenues for future research, including a test on real-world simu-<lb/>lation optimisation problems, other M-MOBA variants with different stopping rules<lb/> rather than fixed budget, considering the situation when the objectives are correlated<lb/> and a development of an M-MOBA variant that works with more than two objectives.</p>
+
+
+	</text>
+</tei>

@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="10.1364_OE.27.032378">
+			<titleStmt>
+				<title level="a">Binarization of ESPI fringe patterns based on local entropy</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://doi.org/10.1364/OA_License_v1"/>
+				</availability>
+				<idno type="DOI">10.1364/OE.27.032378</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document PHY-AST_94</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+			<head>1. Introduction<lb/></head>
+
+			<p>Electronic speckle pattern interferometry (ESPI) is a well-known non-contact measurement means<lb/> <ref type="biblio">[1-3]</ref>. It has been continuously demonstrated for many investigations including displacement<lb/> <ref type="biblio">[4-6]</ref>, deformation <ref type="biblio">[7,8]</ref>, strain <ref type="biblio">[9-11]</ref>, temperature <ref type="biblio">[12]</ref>, and so on. The key of the successful<lb/> application of ESPI is the accurate extraction of phase terms from fringe patterns <ref type="biblio">[13,14]</ref>. Many<lb/> methods have been developed to estimate the phase terms. Among these methods, the fringe<lb/> skeleton method is the most straightforward approach, and is often used in dynamic measurement<lb/> <ref type="biblio">[15]</ref>. In the fringe skeleton method, the phase terms can be obtained by interpolating the assigned<lb/> skeletons <ref type="biblio">[16]</ref>. Unfortunately, the fringe patterns obtained from ESPI contain massive inherent<lb/> speckle noise which masks significant features <ref type="biblio">[17,18]</ref>. To obtain fringe skeletons, a commonly<lb/> used method is that the fringe patterns should be smoothed enough firstly, then binarization<lb/> results of the smoothed fringe patterns are obtained with threshold methods, and finally fringe<lb/> skeletons are extracted using thinning operation. The filtering is often a necessary step prior to<lb/> binarization. Without filtering preprocessing, the traditional binarization method for ESPI fringe<lb/> patterns can not give desired binarization results <ref type="biblio">[19]</ref>. Therefore, the investigation of a simple<lb/> method which can effectively binarize ESPI fringe patterns without filtering preprocessing is<lb/> expected, especially in dynamic measurement.<lb/></p>
+
+			<p>Up to now, the fringe skeleton method has been improved from three aspects. In the first aspect,<lb/> a majority of effort is to improve the denoising algorithms <ref type="biblio">[20]</ref>. A lot of filtering methods for ESPI<lb/> fringe patterns have been proposed. We refer to <ref type="biblio">[21]</ref> for more details. If the filtered fringe pattern<lb/> is smoothed enough, the skeletons can be obtained with a common binarization thinning method.<lb/> In the second aspect, some efforts are put into improving the accuracy of interpolation algorithms.<lb/> The existing interpolation algorithms mainly include the nearest interpolation method <ref type="biblio">[22]</ref>, the<lb/> bilinear interpolation method <ref type="biblio">[23]</ref>, the C-spline interpolation method <ref type="biblio">[24]</ref>, back propagation<lb/> neural networks (BPNN) method <ref type="biblio">[25]</ref>, and radial basis function (RBF) method <ref type="biblio">[26]</ref>. It is worth<lb/> mentioning that the RBF method can work well even with the disconnected skeletons. In the<lb/> last aspect, some efforts are put into extracting the skeleton directly from fringe patterns <ref type="biblio">[15]</ref>.<lb/> Recently, the gradient vector fields (GVFs) method was proposed <ref type="biblio">[27-29]</ref>. Some PDEs for<lb/> calculating GVFs have been proposed <ref type="biblio">[15,28,30]</ref>. Nevertheless, to the best of our knowledge,<lb/> compared with aforementioned aspects, there are few efforts are concentrated on developing the<lb/> binarization method for the skeletons extraction of ESPI fringe patterns. The existing method<lb/> used for the binarization of fringe patterns is known as the threshold method. The threshold<lb/> method includes global threshold and local threshold <ref type="biblio">[31-33]</ref>. Both global threshold and local<lb/> threshold lie in the determination of gray level threshold when used for the fringe patterns<lb/> binarization. These methods can not give the desired binarization results of ESPI fringe patterns<lb/> without filtering preprocessing, because it is difficult and sometimes impossible to precisely<lb/> calculate the gray level threshold due to the presence of speckle noise. We will verify this point<lb/> in the experiment section. In addition, recently, we proposed a binarization method for fringe<lb/> patterns with intensity inhomogeneities based on modified FCM algorithm in <ref type="biblio">[19]</ref>. This method<lb/> can resist a certain amount of noise, but it can not work well on the ESPI fringe patterns which<lb/> contain high levels of noise. Here, we focus our attention on improving the fringe skeleton<lb/> method by proposing effective binarization method for ESPI fringe patterns.<lb/></p>
+
+			<p>Entropy is a statistical measure of randomness <ref type="biblio">[34]</ref>. It has been widely used in image<lb/> processing, such as image recovery, edge detection, image matching <ref type="biblio">[35-38]</ref>. It can provide a<lb/> good level of information to describe a given image. For instance, in a given gray image, if all<lb/> pixels have the same grayscale, this image will exhibit the minimal entropy value; on the contrary,<lb/> the image will present maximum entropy when each pixel in this image presents a specific<lb/> grayscale <ref type="biblio">[39]</ref>. The local entropy of the given image is related to the variance of grayscales in<lb/> a local region <ref type="biblio">[40,41]</ref>. In the ESPI fringe patterns, the intrinsic speckle noise creates a grainy<lb/> appearance. Under the influence of speckle noises, the bright fringes and the dark fringes tend to<lb/> result in different distribution of gray level. The distribution of gray level in bright fringes is more<lb/> disordered than the one in dark fringes. Therefore, the local entropy values of bright fringes will<lb/> be different from the ones in dark fringes. Thus, the local entropy can be taken as a feature which<lb/> can characterize the bright and dark fringes in the ESPI fringe patterns. Based on this point, in<lb/> this paper, we present a binarization method based on local entropy and fuzzy c-means (FCM)<lb/> clustering algorithm for ESPI fringe patterns. In the proposed binarization method, different<lb/> from the traditional method, the ESPI fringe pattern is clustered into white fringes and black<lb/> fringes according to its local entropy map instead of the original intensity image. There is no<lb/> need to perform the filtering preprocessing because the speckle noises are utilized as essentials.<lb/> The skeletons can be extracted with simple thinning operation based on the proposed binarization<lb/> method.<lb/></p>
+
+			<p>The main contributions of this paper are as follows. (1) The local entropy is introduced to the<lb/> binarization algorithm of ESPI fringe pattern for the first time. (2) The proposed ESPI fringe<lb/> pattern binarization method does not need filtering preprocessing.<lb/></p>
+
+			<p>The remainder of this paper is organized as follows: Section 2 details the basic principle and<lb/> main steps of the proposed method. Section 3 gives experiments results and discussions. Finally,<lb/> the conclusion is given in Section 4.<lb/></p>
+
+			<head>2. Description of the proposed method<lb/></head>
+
+			<p>In this section, we describe the proposed binarization method for ESPI fringe patterns in detail.<lb/> As shown in Fig. <ref type="figure">1</ref>, the local entropy of the ESPI fringe pattern is calculated first. Then the FCM<lb/> is applied to the local entropy map. Finally, the ESPI fringe pattern is clustered into white fringes<lb/> and black fringes according to its local entropy.<lb/></p>
+
+			<figure>Fig. 1. The flowchart of the proposed method.<lb/></figure>
+
+			<head>2.1. Local entropy extracting<lb/></head>
+
+			<p>Different from the traditional binarization method for ESPI fringe patterns, taking into account<lb/> the characteristic of intrinsic speckle noise, our binarization method is performed on the local<lb/> entropy map of the given image instead of the original intensity image. Because entropy is<lb/> a statistical measure of randomness, it can be used to describe the disorder of gray levels or<lb/> intensity distribution of the pixels <ref type="biblio">[42]</ref>. The local entropy values of bright fringes will be different<lb/> from the ones in dark fringes, this provides a possible way to binarize the ESPI fringe pattern<lb/> according to its local entropy.<lb/></p>
+
+			<p>Local entropy is derived by calculating the entropy in a local region of the given image. Let X<lb/> be a given fringe pattern with the size of m × n. The local entropy of pixel j can be defined as<lb/> <ref type="biblio">[39]</ref>:<lb/></p>
+
+				<formula>E(j) = -<lb/>N<lb/> g=1<lb/> P(g)log 2 P(g)<lb/></formula>
+
+				<label>(1)<lb/></label>
+
+			<p>where E(j) is the entropy of pixel j, P(g) is the probability of gray level g in the neighborhood of<lb/> pixel j, N is the gray level of X. Let W be the size of neighbor window centered at pixel j.<lb/></p> 
+			<p>From Eq. (<ref type="formula">1</ref>), we can see that the local entropy values are small for the regions with uniform<lb/> distribution of gray levels, but large for the regions with uneven gray scale distribution. Therefore,<lb/> the local entropy values in the regions of bright fringes are larger than those in the regions of<lb/> dark fringe. The local entropy map can be obtained by moving the neighbor window pixel by<lb/> pixel within the fringe pattern from left to right and top to bottom.<lb/></p>
+
+			<head>2.2. Applying FCM algorithm to the local entropy map<lb/></head>
+
+			<p>Because of the difference between the local entropy values in the regions of bright fringes and<lb/> those of dark fringes, the local entropy map can be segmented by an appropriate threshold.<lb/> Instead of threshold methods which are used for traditional ESPI fringe pattern binarization, we<lb/> choose FCM clustering algorithm to segment the local entropy map.<lb/></p>
+
+			<p>Take the local entropy map E of ESPI fringe pattern as the dataset for FCM clustering. Then<lb/> rearrange E = [e 1 , e 2 , • • • , e M ] T , M = m × n. FCM is an iterative optimization that minimizes<lb/> the cost function <ref type="biblio">[43]</ref>:<lb/></p>
+
+				<formula>J =<lb/> M<lb/> j=1<lb/> c<lb/> i=1<lb/> u<lb/> β<lb/> ij E(j) -v(i) 2<lb/></formula> 
+				<label>(2)<lb/></label>
+
+			<p>where c is the number of cluster; u ij represents the membership of the local entropy E(j) in the ith<lb/> cluster; β ∈ [1, ∞] is the cluster fuzziness, in our method, we set β = 2; v(i) is the ith cluster<lb/> center; • is the norm metric. The membership functions and clusters are updated as <ref type="biblio">[44]</ref>:<lb/></p>
+
+				<formula>u ij =<lb/> 1<lb/> c<lb/> k=1<lb/> E(j)-v(i)<lb/> E(j)-v(k)<lb/> 2/(β-1)<lb/></formula>
+
+				<label>(3)<lb/></label>
+
+			<p>and<lb/></p>
+
+				<formula>v ij =<lb/> M<lb/> j=1<lb/> u<lb/> β<lb/> ij E(j)<lb/> M<lb/> j=1<lb/> (u<lb/> β<lb/> ij )<lb/></formula>
+
+				<label>(4)<lb/></label>
+
+			<p>After applying FCM clustering algorithm to local entropy map, a c × M partition matrix U is<lb/> obtained. U can be expressed as:<lb/></p>
+
+				<formula>U =<lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> u 11 u 12 • • • u 1M<lb/> u 21 u 22 • • • u 2M<lb/> . . .<lb/> . . .<lb/> . . .<lb/> . . .<lb/> u c1 u c2 • • • u cM<lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/></formula>
+
+				<label>(5)<lb/></label>
+
+			<p>The rows of U denote clusters and the columns of U denote elements of the local entropy map.<lb/> u ij ∈ [0, 1] is the membership degree of the local entropy E(j) belonging to cluster i.<lb/></p>
+
+			<head>2.3. Binarization according to clustering results<lb/></head>
+
+			<p>Binarization of fringe pattern can be viewed as the classification of all the pixels of the given<lb/> fringe pattern into two clusters: white fringes and dark fringes. Therefore, we set c = 2 in our<lb/> method. The partition matrix<lb/></p>
+
+				<formula>U =<lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/> u 11 u 12 • • • u 1M<lb/> u 21 u 22 • • • u 2M<lb/> <lb/> <lb/> <lb/> <lb/> <lb/> <lb/></formula>
+
+				<label>(6)<lb/></label>
+
+			<p>Furthermore, calculating the maximum value of each column in U, and these values constitute<lb/> the matrix MAXU ∈ R 1×N . Set A be zero matrixes with the same size as MAXU. If MAXU(j) =<lb/> u ij , (i = 1, 2; j = 1, 2, • • • , M), the pixel j in X belongs to cluster i. Subsequently, set A j =0 (or<lb/> 1). Finally, rearranging A into the matrix of the size m × n. The pixels of fringe pattern X are<lb/> classified into 2 categories. One category is the white fringes and the other one is the dark fringes.<lb/> Thus, the binarization of fringe pattern is realized.<lb/></p>
+
+			<head>3. Experiments and discussion<lb/></head>
+
+			<p>In this section, we demonstrate the performance of our method via application to six computer-<lb/>simulated fringe patterns and ten real ESPI fringe patterns. Moreover, we compare our method<lb/> with the typical global threshold method <ref type="biblio">[31]</ref> and the global and local threshold combining<lb/> method <ref type="biblio">[33]</ref>. The parameters in all methods are chosen based on the better performance by trial.<lb/> We set the values of the window sizes in the global and local threshold combining method <ref type="biblio">[33]<lb/></ref> and our method to be 15×15, 15×15, 15×15, 13×13, 11×11, 15×15 for Figs. <ref type="figure">2(a)-2(f)</ref>; 35×35,<lb/> 29×29, 29×29, 21×21, 19×19, 15×15 for Figs. <ref type="figure">6(a)-6(f)</ref>; 29×29, 27×27, 29×29, 13×13 for<lb/> Figs. <ref type="figure">9(a)-9(d)</ref>, respectively; the parameters β = 2, c = 2, ε = 0.001 in all implementations for<lb/> our method. Not that, the size of window should be adjusted according to the size of speckle. In<lb/> general, the larger the size of speckle, the larger the size of window should be. All numerical<lb/> simulations are carried out on the MATLAB R2014a platform with Processor Intel(R) Core(TM)<lb/> i5-4590 CPU 3.30 GHz, Memory 4.00 GB RAM, and 64-bit Operating System.<lb/></p>
+
+			<p>Firstly, we validate the performance of our method by employing the computer-simulated<lb/> fringe patterns. As shown in Fig. <ref type="figure">2</ref>, the shape and density of fringes in each computer-simulated<lb/> fringe pattern are different. The size of each test image is 512×512.<lb/></p>
+			<list>
+			<item>i. In order to confirm the feasibility of the proposed binarization method, we show the<lb/> corresponding local entropy maps of Fig. <ref type="figure">2</ref> in Fig. <ref type="figure">3</ref>. From Fig. <ref type="figure">3</ref>, one can see that the<lb/> local entropy values in the regions of bright fringes are larger than the ones in dark fringes.<lb/> It is validated that it is feasible for the binarization of ESPI fringe pattern based on the<lb/> local entropy.<lb/></item>
+
+			<item>ii. We compare our method with the methods of typical global threshold method <ref type="biblio">[31]</ref> and<lb/> global and local threshold combining method <ref type="biblio">[33]</ref>. The comparison results are shown in<lb/> Fig. <ref type="figure">4</ref>. The Figs. <ref type="figure">4(a-1)</ref>, <ref type="figure">4(b-1)</ref>, <ref type="figure">4(c-1)</ref>, <ref type="figure">4(d-1)</ref>, <ref type="figure">4(e-1)</ref>, and <ref type="figure">4(f-1)</ref> are the binarization results<lb/> of the method of typical global threshold method <ref type="biblio">[31]</ref>. The Figs. <ref type="figure">4(a-2)</ref>, <ref type="figure">4(b-2)</ref>, <ref type="figure">4(c-2)</ref>,<lb/> <ref type="figure">4(d-2)</ref>, <ref type="figure">4(e-2)</ref>, and <ref type="figure">4(f-2)</ref> are the binarization results of the global and local threshold<lb/> combining method <ref type="biblio">[33]</ref>. The Figs. <ref type="figure">4(a-3)</ref>, <ref type="figure">4(b-3)</ref>, <ref type="figure">4(c-3)</ref>, <ref type="figure">4(d-3)</ref>, <ref type="figure">4(e-3)</ref>, and <ref type="figure">4(f-3)</ref> are the<lb/> binarization results of our method. From Fig. <ref type="figure">4</ref>, it is obviously seen that the methods of<lb/> typical global threshold method <ref type="biblio">[31]</ref> and the global and local threshold combining method<lb/> <ref type="biblio">[33]</ref> can not realize the binarization of the test images due to the influence of intrinsic<lb/> speckle noise in the ESPI fringe patterns. On the contrary, our method can give a desired<lb/> binarization result thanks to the speckle noise in the ESPI fringe patterns.<lb/></item>
+
+			<figure>Fig. 2. The computer-simulated fringe patterns.<lb/></figure>
+
+			<item>iii. We extract the black fringe skeletons of the binarization results of our method. In the fringe<lb/> skeleton method, the purpose of ESPI fringe pattern binarization is to extract the skeletons.<lb/> Note that good binarization will result in good skeletons with the same thinning method.<lb/> Therefore, we extract the skeletons of the binarization results to confirm the performance<lb/> of our method in further. Figure <ref type="figure">5</ref> shows the corresponding skeletons of black fringes<lb/> of Figs. <ref type="figure">4(a-3)</ref>, <ref type="figure">4(b-3)</ref>, <ref type="figure">4(c-3)</ref>, <ref type="figure">4(d-3)</ref>, <ref type="figure">4(e-3)</ref>, and <ref type="figure">4(f-3)</ref> which are obtained by using the<lb/> Hilditch <ref type="biblio">[45]</ref> thinning method and deburring processing. From Fig. <ref type="figure">5</ref>, we can see that the<lb/> binarization results of our method can give desired skeletons results.<lb/></item>
+			</list>
+
+			<figure>Fig. 3. The corresponding entropy maps of Fig. <ref type="figure">2</ref>.<lb/></figure> 
+			
+			<p>Secondly, we validate the performance of our method by employing two groups of experimen-<lb/>tally obtained ESPI fringe patterns. The first group of ESPI fringe patterns is shown in Fig. <ref type="figure">6</ref>.<lb/> It contains six real ESPI fringe patterns which were obtained from the dynamic measurement<lb/> of thermal deformation of a plate under high intensity light. The size of each experimentally<lb/> obtained ESPI fringe pattern in this group is 412 × 513. The second group of ESPI fringe patterns<lb/> is shown in Fig. <ref type="figure">9</ref>. It contains four real ESPI fringe patterns which have different shapes and<lb/> were obtained from different experiments. The sizes of Figs. <ref type="figure">9(a)-9(d)</ref> are 512 × 512, 611 × 576,<lb/> 512 × 512, and 225 × 226, respectively.<lb/></p>
+			<list>
+
+			<item>i. We validate the feasibility of our method on the binarization of real ESPI fringe patterns.<lb/> The corresponding binarization results of Fig. <ref type="figure">6</ref> and Fig. <ref type="figure">9</ref> are shown in Fig. <ref type="figure">7</ref> and Fig. <ref type="figure">10</ref>,<lb/> respectively. From Fig. <ref type="figure">7</ref> and Fig. <ref type="figure">10</ref>, it can be seen that our method can realize the<lb/> binarization of experimentally obtained ESPI fringe patterns.<lb/></item>
+
+			<item>ii. We extract the black fringe skeletons of the binarization results in Fig. <ref type="figure">7</ref>, and the white<lb/> fringe skeletons of the binarization results in Fig. <ref type="figure">10</ref> with the same thinning method<lb/></item>
+
+			<figure>Fig. 4. The binarization results of different methods.<lb/></figure> 
+			<figure>Fig. 5. The corresponding skeleton results of Fig. <ref type="figure">4</ref>.<lb/></figure> 
+			<figure>Fig. 6. The first group of experimentally obtained ESPI fringe patterns.<lb/></figure>
+
+			<item>as Fig. <ref type="figure">5</ref>. From the skeleton results shown in Fig. <ref type="figure">8</ref> and Fig. <ref type="figure">11</ref>, we can find that the<lb/> binarization results of real ESPI fringe patterns of our method can give desired skeleton<lb/> results.<lb/></item>
+			</list>
+
+			<figure>Fig. 7. The binarization results of Fig. <ref type="figure">6</ref> of our method.<lb/></figure>
+
+			<p>From the above results of the computer-simulated and experimentally obtained ESPI fringe<lb/> patterns, we can get the following conclusions: (1) The binarization of ESPI fringe patterns can<lb/> be realized based on local entropy; (2) Without the denoising processing, the commonly used<lb/> ESPI fringe pattern binarization methods which are proposed in <ref type="biblio">[31]</ref> and <ref type="biblio">[33]</ref> can not realize<lb/> binarization, but our method can give desired binarization results; (3) The binarization results of<lb/> our method can give desired skeleton results.<lb/></p>
+
+			<figure>Fig. 8. The corresponding skeleton results of Fig. <ref type="figure">7</ref>.<lb/></figure> 
+			<figure>Fig. 9. The second group of experimentally obtained ESPI fringe patterns.<lb/></figure> 
+			<figure>Fig. 10. The binarization results of Fig. <ref type="figure">9</ref> of our method.<lb/></figure> 
+			<figure>Fig. 11. The corresponding skeleton results of Fig. <ref type="figure">10</ref>.<lb/></figure>
+
+			<head>4. Conclusions<lb/></head>
+
+			<p>In this paper, we proposed a binarization method based on local entropy and FCM algorithm.<lb/> There is no need to perform the filtering process before binarization, which is different from<lb/> the traditional binarization methods for ESPI fringe patterns. Instead, our method takes the<lb/> intrinsic speckle noise in ESPI fringe patterns as essentials and utilizes it by binarizing the ESPI<lb/> fringe patterns according to their local entropy. The skeletons can be obtained with common<lb/> thinning method based on the proposed binarization method. The experimental results of both<lb/> computer-simulated fringe patterns and real fringe patterns demonstrate that our method can<lb/> effectively binarize the ESPI fringe patterns, and the binarization results can give desired skeleton<lb/> results. Our method can accelerate the development of the computer analysis of fringe patterns<lb/> for dynamic measurement.</p>
+
+
+	</text>
+</tei>

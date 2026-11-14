@@ -1,0 +1,492 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="10.1155_2019_8743482">
+			<titleStmt>
+				<title level="a">Projective Synchronization of Nonidentical Fractional-Order Memristive Neural Networks</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1155/2019/8743482</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document MATH_72</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+			<head>1. Introduction<lb/></head>
+
+			<p>In 1971, Professor Chua theoretically predicted the existence<lb/> of memristive element <ref type="biblio">[1]</ref>. In the following years, his team<lb/> presented the basic characteristics, synthesis principles, and<lb/> applications of memristor <ref type="biblio">[2, 3]</ref>. Until 2008, researchers from<lb/> Hewlett-Packard Co. firstly made nanomemristor devices,<lb/> which triggered an upsurge in memristor research <ref type="biblio">[4]</ref>. As<lb/> the fourth basic circuit element, memristor has the charac-<lb/>teristics that the other three basic components (resistance,<lb/> capacitance, and inductance) cannot replicate. It can not<lb/> only remember the number of charges flowing through<lb/> it, but change its resistance by controlling the change of<lb/> current. What is more important, these capabilities can be<lb/> maintained even when power is cut off. Therefore, memristor<lb/> has broadened application prospects in computer science <ref type="biblio">[5]</ref>,<lb/> bioengineering <ref type="biblio">[6]</ref>, neural networks <ref type="biblio">[7]</ref>, electronic engineer-<lb/>ing <ref type="biblio">[8]</ref>, communication engineering <ref type="biblio">[9]</ref>, and so on.<lb/></p>
+
+			<p>Neural networks have the abilities of self-learning and<lb/> self-adapting through training. The design of weights is<lb/> crucial for neural networks. The hardware implementation of<lb/> weight requires a long-term memory. With the development<lb/> of memristor, it is feasible to introduce memristor into<lb/> neural networks to solve the above problem. At present,<lb/> the memristive neural networks (MNN) have been widely<lb/> studied in information processing <ref type="biblio">[10]</ref>, image processing<lb/> <ref type="biblio">[11]</ref>, artificial intelligence <ref type="biblio">[12]</ref>, and other fields <ref type="biblio">[13-15]</ref>. As<lb/> we all know, fractional-order calculus is a generalization of<lb/> traditional integer-order calculus. Fractional-order calculus<lb/> is not local and can describe memory property of neuron<lb/> and dependence of the historical data. Meanwhile, fractional-<lb/>order models can describe and model a real system more<lb/> accurately than the classical integer-order models <ref type="biblio">[16, 17]</ref>.<lb/> By introducing fractional-order differential operators into<lb/> integer-order MNN model, a new fractional-order memris-<lb/>tive neural networks (FMNN) model can be established. Such<lb/> systems can truly reflect the essential features of the system<lb/> and extend the capability of neural networks. So far, many<lb/> researchers have devoted themselves to investigating FMNN<lb/> and a series of results about FMNN have appeared, such as<lb/> <ref type="biblio">[18-23]</ref>.<lb/></p>
+
+			<p>It was Huygens, the inventor of pendulum, who discov-<lb/>ered synchronization for the first time. Until 1990, Pecora<lb/> and Carroll of the U.S. Naval Laboratory put forward the<lb/> master-slave chaotic synchronization scheme, which realized<lb/> the synchronization of two chaotic systems in the circuit and<lb/> promoted the theoretical study of chaotic synchronization<lb/> and chaotic control <ref type="biblio">[24]</ref>. So far, there are many types<lb/> of synchronization, such as complete synchronization <ref type="biblio">[25-<lb/>27]</ref>, antisynchronization <ref type="biblio">[28]</ref>, lag synchronization <ref type="biblio">[29, 30]</ref>,<lb/> generalized synchronization <ref type="biblio">[31]</ref>, projective synchronization<lb/> <ref type="biblio">[32-35]</ref>, and phase and antiphase synchronization <ref type="biblio">[36]</ref>.<lb/> The scale factor of projective synchronization can be set<lb/> flexibly, which enhances the uncertainty of slave system and<lb/> improves communication security. Therefore, it is necessary<lb/> to investigate projective synchronization of FMNN.<lb/></p>
+
+			<p>To the best of our knowledge, the existing results of<lb/> projective synchronization about FMNN are identical sys-<lb/>tem. In fact, functions and parameters of master-slave system<lb/> are often mismatched, which is inevitable. Although various<lb/> forms of control strategies have been designed to solve the<lb/> problems of system&apos;s synchronization <ref type="biblio">[25, 27, 30, 37-40]</ref>,<lb/> they are difficult to deal with projective synchronization of<lb/> NFMNN. In order to solve such problems, the fractional-<lb/>order sliding mode controller is introduced, which can<lb/> overcome the uncertainty of systems and has strong robust-<lb/>ness to disturbance, especially for the control of nonlinear<lb/> systems. The sliding mode controller needs the following<lb/> three elements: firstly, any trajectories reach the sliding mode<lb/> surface in free time; secondly, there is a sliding mode region<lb/> on the sliding mode surface; thirdly, the sliding mode motion<lb/> is asymptotic stable.<lb/></p>
+
+			<p>Motivated by the above discussions, we focus on the<lb/> projective synchronization of nonidentical fractional-order<lb/> memristive neural networks in this paper. The main contribu-<lb/>tions of this paper are as follows: (1) In this paper, projective<lb/> synchronization of NFMNN is studied by designing a new<lb/> type of fractional-order integral sliding mode controller.<lb/> (2) By using the fractional-order differential inequality and<lb/> fractional-order Lyapunov direct method, the projective<lb/> synchronization criteria of NFMNN are obtained. At the<lb/> same time, the obtained criteria can realize the complete syn-<lb/>chronization and antisynchronization of NFMNN, stability,<lb/> and projective synchronization of FMNN. (3) Comparing<lb/> with the conclusions in <ref type="biblio">[25, 33]</ref>, our results on projective<lb/> synchronization of FMNN achieve a valuable improvement<lb/> and are less conservative.<lb/></p>
+
+			<p>The structure of this paper is summarized as follows.<lb/> Some preliminaries and the system models are given in<lb/> Section 2. In Section 3, some sufficient criteria are obtained<lb/> to achieve global projective synchronization of NFMNN. In<lb/> Section 4, the validity and correctness of the obtained results<lb/> are illustrated by numerical simulation. Finally, conclusions<lb/> are drawn in Section 5.<lb/></p>
+
+			<head>2. Preliminaries and System Description<lb/></head> 
+			<head>2.1. Caputo Fractional-Order Calculus<lb/></head>
+
+			<p>Definition 1 (see <ref type="biblio">[41]</ref>). The fractional-order integral of order<lb/> &#x1D6FC; for an integrable function &#x1D453;(&#x1D461;) : [0, +∞] &#xF3A00;→ R is defined<lb/> as<lb/></p>
+
+				<formula>0 &#x1D43C; &#x1D6FC;<lb/> &#x1D461; &#x1D453; (&#x1D461;) =<lb/> 1<lb/> Γ (&#x1D6FC;)<lb/> ∫<lb/> &#x1D461;<lb/> 0<lb/> (&#x1D461; -&#x1D709;) &#x1D6FC;-1 &#x1D453; (&#x1D709;) &#x1D451;&#x1D709;, &#x1D461; ≥ 0,<lb/></formula>
+
+				<label>(1)<lb/></label>
+
+			<p>where &#x1D461; ≥ 0, &#x1D6FC; &gt; 0, and Γ(⋅) is the Gamma function which is<lb/> defined as<lb/></p>
+
+				<formula>Γ (&#x1D465;) = ∫<lb/> ∞<lb/> 0<lb/> &#x1D452; -&#x1D461; &#x1D461; &#x1D465;-1 &#x1D451;&#x1D461;, Re (&#x1D465;) &gt; 0.<lb/></formula>
+
+				<label>(2)<lb/></label>
+
+			<p>Definition 2 (see <ref type="biblio">[41]</ref>). The Caputo fractional-order deriva-<lb/>tive of order &#x1D6FC; for a function &#x1D453;(&#x1D461;) ∈ &#x1D436; &#x1D45B;+1 ([0, +∞], R) is<lb/> defined by<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D453; (&#x1D461;) =<lb/> 1<lb/> Γ (&#x1D45B; -&#x1D6FC;)<lb/> ∫<lb/> &#x1D461;<lb/> 0<lb/> &#x1D453; (&#x1D45B;) (&#x1D709;)<lb/> (&#x1D461; -&#x1D709;) &#x1D6FC;-&#x1D45B;+1 &#x1D451;&#x1D709;,<lb/></formula>
+
+				<label>(3)<lb/></label>
+
+			<p>where &#x1D461; ≥ 0 and &#x1D45B; -1 &lt; &#x1D6FC; &lt; &#x1D45B; ∈ N + . Particularly, when<lb/> 0 &lt; &#x1D6FC; &lt; 1,<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D453; (&#x1D461;) =<lb/> 1<lb/> Γ (1 -&#x1D6FC;)<lb/> ∫<lb/> &#x1D461;<lb/> 0<lb/> &#x1D453; &#xF8020; (&#x1D709;)<lb/> (&#x1D461; -&#x1D709;) &#x1D6FC; &#x1D451;&#x1D709;.<lb/></formula>
+
+				<label>(4)<lb/></label>
+
+			<p>A series of significant properties about fractional-order<lb/> calculus are listed as follows <ref type="biblio">[41]</ref>.<lb/></p>
+
+			<p>Property 3. For any constants V 1 and V 2 , the linearity of<lb/> Caputo fraction-order calculus is expressed by<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; (V 1 ⋅ &#x1D453; (&#x1D461;) + V 2 ⋅ &#x1D454; (&#x1D461;))<lb/> = V 1 ⋅ &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D453; (&#x1D461;) + V 2 ⋅ &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D454; (&#x1D461;) .<lb/></formula>
+
+				<label>(5)<lb/></label>
+
+				<p>Property 4. If &#x1D464;(&#x1D461;) ∈ &#x1D436; 1 [0, &#x1D447;], &#x1D447; &gt; 0, then<lb/></p> 
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461;<lb/> &#x1D436;<lb/> 0 &#x1D437;<lb/> &#x1D6FD;<lb/> &#x1D461; &#x1D464; (&#x1D461;) = &#x1D436;<lb/> 0 &#x1D437;<lb/> &#x1D6FD;<lb/> &#x1D461;<lb/> &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D464; (&#x1D461;) = &#x1D436;<lb/> 0 &#x1D437;<lb/> &#x1D6FC;+&#x1D6FD;<lb/> &#x1D461; &#x1D464; (&#x1D461;) ,<lb/> &#x1D461; ∈ [0, &#x1D447;] .<lb/></formula>
+
+				<label>(6)<lb/></label>
+
+			<p>where &#x1D6FC; &gt; 0, &#x1D6FD; &gt; 0, and &#x1D6FC; + &#x1D6FD; ≤ 1.<lb/></p>
+
+			<p>Lemma 5 (see <ref type="biblio">[32]</ref>). If &#x1D464;(&#x1D461;) ∈ &#x1D436; 1 ([0, +∞), R), then the<lb/> following inequality holds almost everywhere:<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; |&#x1D464; (&#x1D461;)| ≤ sgn (&#x1D464; (&#x1D461;)) &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D464; (&#x1D461;) , 0 &lt; &#x1D6FC; &lt; 1.<lb/></formula>
+
+				<label>(7)<lb/></label>
+
+			<p>Lemma 6 (see <ref type="biblio">[42]</ref>). Let &#x1D465;(&#x1D461;) ∈ R be a continuous and<lb/> derivable function. Then, for any &#x1D461; ≥ 0, one have<lb/></p>
+
+				<formula>1<lb/> 2<lb/> &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D465; 2 (&#x1D461;) ≤ &#x1D465; (&#x1D461;) &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D465; (&#x1D461;) , &#x1D6FC; ∈ (0, 1) .<lb/></formula>
+
+				<label>(8)<lb/></label>
+
+			<p>By applying Lemma 6, the following formula can be obtained:<lb/></p>
+
+				<formula>1<lb/> 2<lb/> &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D465; &#x1D447; (&#x1D461;) &#x1D465; (&#x1D461;) ≤ &#x1D465; &#x1D447; (&#x1D461;) &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D465; (&#x1D461;) ,<lb/></formula>
+
+				<label>(9)<lb/></label>
+
+			<p>where &#x1D465;(&#x1D461;) ∈ R &#x1D45B; , &#x1D6FC; ∈ (0, 1), and &#x1D461; ≥ 0.<lb/></p>
+
+			<head>2.2. System Description.</head>
+
+			<p>In this section, we consider a class<lb/> of FMNN as the master system, which is described by the<lb/> following equation:<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D465; &#x1D456; (&#x1D461;) = -&#x1D450; &#x1D456; &#x1D465; &#x1D456; (&#x1D461;) +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> &#x1D44E; &#x1D456;&#x1D457; (&#x1D465; &#x1D457; (&#x1D461;)) &#x1D453; &#x1D457; (&#x1D465; &#x1D457; (&#x1D461;)) + &#x1D43C; &#x1D456; ,</formula>
+
+				<label>(10)<lb/></label>
+
+			<p>where &#x1D6FC; ∈ (0, 1), &#x1D465;(&#x1D461;) = (&#x1D465; 1 (&#x1D461;), &#x1D465; 2 (&#x1D461;), . . . , &#x1D465; &#x1D45B; (t)) &#x1D447; ∈ R &#x1D45B; , &#x1D465; &#x1D456; (&#x1D461;)<lb/> denotes the state variable associated with the &#x1D456;th neuron, &#x1D456; ∈<lb/> N + , &#x1D461; ≥ 0; &#x1D450; &#x1D456; &gt; 0 is self-regulation parameters of neurons;<lb/> &#x1D43C; &#x1D456; is a constant of the external input; &#x1D453; &#x1D456; (&#x1D461;) denotes nonlinear<lb/> activation function; &#x1D44E; &#x1D456;&#x1D457; (&#x1D465; &#x1D457; (&#x1D461;)) express connection memristive<lb/> weights, defined by<lb/></p> 
+			
+			<formula>&#x1D44E; &#x1D456;&#x1D457; (&#x1D465; &#x1D457; (&#x1D461;)) =<lb/> { { { {<lb/> { { { {<lb/> {<lb/> &#x1D44E; *<lb/> &#x1D456;&#x1D457;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &gt; &#x1D447; &#x1D457;<lb/> &#x1D450;&#x1D45C; {&#x1D44E; *<lb/> &#x1D456;&#x1D457; , &#x1D44E; ∘<lb/> &#x1D456;&#x1D457; }<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; = &#x1D447; &#x1D457;<lb/> &#x1D44E; ∘<lb/> &#x1D456;&#x1D457;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; &#x1D447; &#x1D457; ,<lb/></formula>
+
+				<label>(11)<lb/></label>
+
+			<p>where &#x1D456; ∈ N + , &#x1D447; &#x1D457; &gt; 0 denotes switching of memristor, and &#x1D44E; *<lb/> &#x1D456;&#x1D457;<lb/> and &#x1D44E; ∘<lb/> &#x1D456;&#x1D457; are any constants. And the matrix form of the master<lb/> system is given by<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D465; (&#x1D461;) = -&#x1D436;&#x1D465; (&#x1D461;) + &#x1D434;&#x1D453; (&#x1D465; (&#x1D461;)) + &#x1D43C;,<lb/></formula>
+
+				<label>(12)<lb/></label>
+
+			<p>where &#x1D436; = diag(&#x1D450; 1 , &#x1D450; 2 , . . . , &#x1D450; &#x1D45B; ), &#x1D434; = (&#x1D44E; &#x1D456;&#x1D457; (&#x1D465; &#x1D457; (&#x1D461;))) &#x1D45B;×&#x1D45B; , and &#x1D43C; =<lb/> (&#x1D43C; 1 , &#x1D43C; 2 , . . . , &#x1D43C; &#x1D45B; ) &#x1D447; .<lb/></p> 
+			
+        <p>Similarly, the corresponding slave system is described as<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D466; (&#x1D461;) = -&#x1D437;&#x1D466; (&#x1D461;) + &#x1D435;&#x1D454; (&#x1D466; (&#x1D461;)) + &#x1D43B; + &#x1D462; (&#x1D461;) ,<lb/></formula>
+
+				<label>(13)<lb/></label>
+
+			<p>where &#x1D462;(&#x1D461;) is the control input; &#x1D437; = diag(&#x1D451; 1 , &#x1D451; 2 , . . . , &#x1D451; &#x1D45B; ), &#x1D451; &#x1D456; &gt;<lb/> 0; &#x1D43B; = (&#x1D43B; 1 , &#x1D43B; 2 , . . . , &#x1D43B; &#x1D45B; ) &#x1D447; is the external input vector; &#x1D435; =<lb/> (&#x1D44F; &#x1D456;&#x1D457; (&#x1D466; &#x1D457; (&#x1D461;))) &#x1D45B;×&#x1D45B; , &#x1D44F; &#x1D456;&#x1D457; (&#x1D466; &#x1D457; (&#x1D461;)) are expressed as<lb/></p>
+
+				<formula>&#x1D44F; &#x1D456;&#x1D457; (&#x1D466; &#x1D457; (&#x1D461;)) =<lb/> { { { {<lb/> { { { {<lb/> {<lb/> &#x1D44F; *<lb/> &#x1D456;&#x1D457;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &gt; &#x1D447; &#x1D457;<lb/> &#x1D450;&#x1D45C; {&#x1D44F; *<lb/> &#x1D456;&#x1D457; , &#x1D44F; ∘<lb/> &#x1D456;&#x1D457; }<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; = &#x1D447; &#x1D457;<lb/> &#x1D44F; ∘<lb/> &#x1D456;&#x1D457;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; &#x1D447; &#x1D457; .<lb/></formula>
+
+				<label>(14)<lb/></label>
+
+			<p>Assuming that the measurement output of system (12)<lb/> depends on the instantaneous state, the form is as follows:<lb/></p>
+
+				<formula>&#x1D467; (&#x1D461;) = &#x1D440;&#x1D465; (&#x1D461;) ,<lb/></formula>
+
+				<label>(15)<lb/></label>
+
+			<p>where &#x1D467;(&#x1D461;) ∈ R &#x1D45A; and &#x1D440; ∈ R &#x1D45A;×&#x1D45B; is known constant matrix.<lb/></p>
+
+			<p>Compared with continuous fractional-order neural net-<lb/>works, the FMNN is discontinued on the right-hand side<lb/> because of the introduction of memristor. To deal with this<lb/> problem, we consider the concept of Filippov solution in this<lb/> paper.<lb/></p>
+
+			<p>Definition 7 (see <ref type="biblio">[43]</ref>). In the Filippov sense, a function<lb/> &#x1D465;(&#x1D461;) = (&#x1D465; 1 (&#x1D461;), &#x1D465; 2 (&#x1D461;), . . . , &#x1D465; &#x1D45B; (&#x1D461;)) &#x1D447; is a solution of system (12)<lb/> on [0, +∞) with initial condition &#x1D465;(0) = (&#x1D465; 1 (0), &#x1D465; 2 (0), . . .,<lb/> &#x1D465; &#x1D45B; (0)) &#x1D447; , if &#x1D465;(&#x1D461;) is absolutely continuous on any compact<lb/> interval of [0, +∞), &#x1D465;(0) = (&#x1D465; 1 (0), &#x1D465; 2 (0), . . . , &#x1D465; &#x1D45B; (0)) &#x1D447; and<lb/></p> 
+			<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D465; &#x1D456; (&#x1D461;) ∈ -&#x1D450; &#x1D456; &#x1D465; &#x1D456; (&#x1D461;) +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> &#x1D450;&#x1D45C; [&#x1D44E; &#x1D456;&#x1D457; (&#x1D465; &#x1D457; (&#x1D461;))] &#x1D453; &#x1D457; (&#x1D465; &#x1D457; (&#x1D461;))<lb/> + &#x1D43C; &#x1D456; ,<lb/></formula>
+
+				<label>(16)<lb/></label>
+
+			<p>for &#x1D461; ≥ 0, &#x1D456; ∈ N + , where 0 &lt; &#x1D6FC; &lt; 1, or there exist &#x1D703; &#x1D456;&#x1D457; [&#x1D465; &#x1D457; (&#x1D461;)] ∈<lb/> &#x1D450;&#x1D45C;[&#x1D44E; &#x1D456;&#x1D457; (&#x1D465; &#x1D457; (&#x1D461;))] such that<lb/></p> 
+			
+			<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D465; &#x1D456; (&#x1D461;) = -&#x1D450; &#x1D456; &#x1D465; &#x1D456; (&#x1D461;) +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> &#x1D703; &#x1D456;&#x1D457; [&#x1D465; &#x1D457; (&#x1D461;)] &#x1D453; &#x1D457; (&#x1D465; &#x1D457; (&#x1D461;)) + &#x1D43C; &#x1D456; ,</formula>
+
+				<label>(17)<lb/></label>
+
+			<p>where<lb/></p>
+
+				<formula>&#x1D450;&#x1D45C; [&#x1D44E; &#x1D456;&#x1D457; (&#x1D465; &#x1D457; (&#x1D461;))] =<lb/> { { { {<lb/> { { { {<lb/> {<lb/> &#x1D44E; *<lb/> &#x1D456;&#x1D457;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &gt; &#x1D447; &#x1D457;<lb/> &#x1D450;&#x1D45C; {&#x1D44E; *<lb/> &#x1D456;&#x1D457; , &#x1D44E; ∘<lb/> &#x1D456;&#x1D457; }<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; = &#x1D447; &#x1D457;<lb/> &#x1D44E; ∘<lb/> &#x1D456;&#x1D457;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; &#x1D447; &#x1D457;<lb/> ,<lb/> &#x1D461; ∈ [0, +∞) , &#x1D456; ∈ N + .<lb/></formula>
+
+				<label>(18)<lb/></label>
+
+			<p>And in the same way, we can obtain<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D466; &#x1D456; (&#x1D461;) ∈ -&#x1D451; &#x1D456; &#x1D466; &#x1D456; (&#x1D461;) +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> &#x1D450;&#x1D45C; [&#x1D44F; &#x1D456;&#x1D457; (&#x1D466; &#x1D457; (&#x1D461;))] &#x1D454; &#x1D457; (&#x1D466; &#x1D457; (&#x1D461;))<lb/> + &#x1D43B; &#x1D456; + &#x1D462; &#x1D456; (&#x1D461;) ,<lb/></formula>
+
+				<label>(19)<lb/></label>
+
+			<p>where &#x1D461; ≥ 0, &#x1D456; ∈ N + , and 0 &lt; &#x1D6FC; &lt; 1, or there exist &#x1D714; &#x1D456;&#x1D457; [&#x1D466; &#x1D457; (&#x1D461;)] ∈<lb/> &#x1D450;&#x1D45C;[&#x1D44F; &#x1D456;&#x1D457; (&#x1D466; &#x1D457; (&#x1D461;))] such that<lb/></p> 
+			<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D466; &#x1D456; (&#x1D461;) = -&#x1D451; &#x1D456; &#x1D466; &#x1D456; (&#x1D461;) +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> &#x1D714; &#x1D456;&#x1D457; [&#x1D466; &#x1D457; (&#x1D461;)] &#x1D454; &#x1D457; (&#x1D466; &#x1D457; (&#x1D461;)) + &#x1D43B; &#x1D456;<lb/> + &#x1D462; &#x1D456; (&#x1D461;) ,<lb/></formula>
+
+				<label>(20)<lb/></label>
+
+			<p>where<lb/></p>
+
+				<formula>&#x1D450;&#x1D45C; [&#x1D44F; &#x1D456;&#x1D457; (&#x1D466; &#x1D457; (&#x1D461;))] =<lb/> { { { {<lb/> { { { {<lb/> {<lb/> &#x1D44F; *<lb/> &#x1D456;&#x1D457;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &gt; &#x1D447; &#x1D457;<lb/> &#x1D450;&#x1D45C; {&#x1D44F; *<lb/> &#x1D456;&#x1D457; , &#x1D44F; ∘<lb/> &#x1D456;&#x1D457; }<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; = &#x1D447; &#x1D457;<lb/> &#x1D44F; ∘<lb/> &#x1D456;&#x1D457;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; &#x1D447; &#x1D457; ,<lb/> &#x1D461; ∈ [0, +∞) , &#x1D456; ∈ N + .<lb/></formula>
+
+				<label>(21)<lb/></label>
+
+			<p>In order to guarantee the existence and uniqueness of the<lb/> solution of system (<ref type="formula">12</ref>) and (<ref type="formula">13</ref>) or fractional-order differen-<lb/>tial inclusions (<ref type="formula">17</ref>) and (<ref type="formula">20</ref>), the following assumptions are<lb/> provided.<lb/></p>
+
+			<p>Assumption 8. For a.a. &#x1D457; ∈ N + , there exist Lipschitz constants<lb/> &#x1D439; &#x1D457; &gt; 0, &#x1D43A; &#x1D457; &gt; 0; for any V 1 ̸<lb/> = V 2 ∈ R, the following conditions<lb/> are always established:<lb/></p>
+
+				<formula>&#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D453; &#x1D457; (V 1 ) -&#x1D453; &#x1D457; (V 2 )<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≤ &#x1D439; &#x1D457;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; V 1 -V 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ,<lb/></formula>
+
+				<label>(22)<lb/></label>
+
+			<p>and<lb/></p>
+
+				<formula>&#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D454; &#x1D457; (V 1 ) -&#x1D454; &#x1D457; (V 2 )<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≤ &#x1D43A; &#x1D457;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; V 1 -V 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; .<lb/></formula>
+
+				<label>(23)<lb/></label>
+
+			<p>Assumption 9. &#x1D453; &#x1D457; (&#x1D465;) and &#x1D454; &#x1D457; (&#x1D465;) are bounded on R. Mean-<lb/>while, &#x1D453; &#x1D457; (±&#x1D447; &#x1D457; ) = &#x1D454; &#x1D457; (±&#x1D447; &#x1D457; ) = 0.<lb/></p>
+
+			<p>Definition 10 (see <ref type="biblio">[32]</ref>). If there exists a nonzero constant &#x1D709;<lb/> for any solution &#x1D465;(&#x1D461;) and &#x1D466;(&#x1D461;) of master system (<ref type="formula">12</ref>) and slave<lb/> system (<ref type="formula">13</ref>), respectively, one obtains<lb/></p> 
+
+				<formula>lim<lb/>&#x1D461;&#xF3A00;→+∞<lb/> &#xF5129; &#xF5129; &#xF5129; &#xF5129; &#x1D466; (&#x1D461;) -&#x1D709;&#x1D465; (&#x1D461;)<lb/> &#xF5129; &#xF5129; &#xF5129; &#xF5129; = 0,<lb/></formula>
+
+				<label>(24)<lb/></label>
+
+			<p>then the globally asymptotically projective synchronization<lb/> of the master system (<ref type="formula">12</ref>) and slave system (<ref type="formula">13</ref>) can be realized,<lb/> where ‖ ⋅ ‖ denotes the Euclidean norm and &#x1D709; denotes the<lb/> projective coefficient.<lb/></p>
+
+			<p>Remark 11. If &#x1D709; = -1, the global antisynchronization of<lb/> system (<ref type="formula">12</ref>) and (<ref type="formula">13</ref>) can be attainable. If &#x1D709; = 1, system<lb/> (<ref type="formula">12</ref>) and (<ref type="formula">13</ref>) can achieve globally asymptotically complete<lb/> synchronization. If &#x1D709; = 0, there is the following form:<lb/> lim &#x1D461;&#xF3A00;→+∞ ‖ &#x1D466;(&#x1D461;) ‖= 0, which shows that the slave system<lb/> (<ref type="formula">13</ref>) is globally asymptotically stabilized to the origin.<lb/></p>
+
+			<head>2.3. Mittag-Leffler Stability.</head>
+
+			<p>In this part, the Mittag-Leffler<lb/> function and Mittag-Leffler stability are given by the follow-<lb/>ing content.<lb/></p>
+
+			<p>Definition 12 (see <ref type="biblio">[41]</ref>). The Mittag-Leffler function with two<lb/> parameters is defined as<lb/></p>
+
+				<formula>&#x1D438; &#x1D6FC;,&#x1D6FD; (&#x1D465;) =<lb/> ∞<lb/> ∑<lb/> &#x1D459;=0<lb/> &#x1D465; &#x1D459;<lb/> Γ (&#x1D459;&#x1D6FC; + &#x1D6FD;)<lb/> , &#x1D6FC; &gt; 0, &#x1D6FD; &gt; 0, &#x1D465; ∈ C.<lb/></formula>
+
+				<label>(25)<lb/></label>
+
+			<p>For &#x1D6FD; = 0, we have &#x1D438; &#x1D6FC; (&#x1D465;) = &#x1D438; &#x1D6FC;,1 (&#x1D465;) defined as<lb/></p>
+
+				<formula>&#x1D438; &#x1D6FC; (&#x1D465;) =<lb/> ∞<lb/> ∑<lb/> &#x1D459;=0<lb/> &#x1D465; &#x1D459;<lb/> Γ (&#x1D459;&#x1D6FC; + 1)<lb/> &#x1D6FC; &gt; 0, &#x1D465; ∈ C.<lb/></formula>
+
+				<label>(26)<lb/></label>
+
+			<p>Definition 13 (see <ref type="biblio">[25]</ref>). If &#x1D465;(&#x1D461;) = &#x1D465; * is an equilibrium point<lb/> of the system (<ref type="formula">12</ref>), and there are two constants Ξ &gt; 0 and<lb/> Υ &gt; 0 for any solution &#x1D465;(&#x1D461;) of FMNN (<ref type="formula">12</ref>) with initial value<lb/> &#x1D465;(0), one has<lb/></p>
+
+				<formula>&#x1D465;<lb/> &#xF5129; &#xF5129; &#xF5129; &#xF5129; (&#x1D461;) -&#x1D465; * &#xF5129; &#xF5129; &#xF5129; &#xF5129; ≤ Ξ<lb/> &#xF5129; &#xF5129; &#xF5129; &#xF5129; &#x1D465; (0) -&#x1D465; * &#xF5129; &#xF5129; &#xF5129; &#xF5129; &#x1D438; &#x1D6FC; (-Υ&#x1D461; &#x1D6FC; ) , &#x1D461; ≥ 0.<lb/></formula>
+
+				<label>(27)<lb/></label>
+
+			<p>In particular, &#x1D465; * = 0, and one has<lb/></p>
+
+				<formula>‖&#x1D465; (&#x1D461;)‖ ≤ Ξ ‖&#x1D465; (0)‖ &#x1D438; &#x1D6FC; (-Υ&#x1D461; &#x1D6FC; ) , &#x1D461; ≥ 0.<lb/></formula>
+
+				<label>(28)<lb/></label>
+
+			<p>Definition 14 (see <ref type="biblio">[25]</ref>). System (<ref type="formula">12</ref>) is expected to be globally<lb/> Mittag-Leffler stable, if its equilibrium point is Mittag-Leffler<lb/> stable.<lb/></p>
+
+			<p>Lemma 15 (see <ref type="biblio">[32]</ref>). For &#x1D465; * is an equilibrium point of the<lb/> FMNN (<ref type="formula">12</ref>), if there is a Lyapunov function &#x1D449;(&#x1D461;, &#x1D465;(&#x1D461;)) :<lb/> [0, +∞) × D ∈ R &#x1D45B; and class-&#x1D705; function &#x1D717; &#x1D456; (&#x1D456; = 1, 2, 3) satisfying<lb/></p>
+
+				<formula>&#x1D717; 1 (‖&#x1D465; (&#x1D461;)‖) ≤ &#x1D449; (&#x1D461;, &#x1D465; (&#x1D461;)) ≤ &#x1D717; 2 (‖&#x1D465; (&#x1D461;)‖) ,<lb/> &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D449; (&#x1D461;, &#x1D465; (&#x1D461;)) ≤ -&#x1D717; 3 (‖&#x1D465; (&#x1D461;)‖) ,<lb/></formula>
+
+				<label>(29)<lb/></label>
+
+			<p>where &#x1D6FC; ∈ (0, 1) and the origin is included in a domain of D ⊆<lb/> R &#x1D45B; , so the equilibrium point of the FMNN (<ref type="formula">12</ref>) is asymptotically<lb/> stable.<lb/></p>
+
+			<head>3. Main Results<lb/></head>
+
+			<p>The synchronization error is defined as &#x1D452;(&#x1D461;) = &#x1D466;(&#x1D461;) -&#x1D709;&#x1D465;(&#x1D461;).<lb/> From the master system (<ref type="formula">12</ref>) and slave system (<ref type="formula">13</ref>), the error<lb/> system is described by<lb/></p>
+
+			<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D452; (&#x1D461;) = -&#x1D437;&#x1D452; (&#x1D461;) + &#x1D435; * &#x1D454; (&#x1D452; (&#x1D461;) + &#x1D709;&#x1D465; (&#x1D461;))<lb/> -B * &#x1D454; (&#x1D709;&#x1D465; (&#x1D461;)) + &#x1D709; (&#x1D436; -&#x1D437;) &#x1D465; (&#x1D461;)<lb/> + B * &#x1D454; (&#x1D709;&#x1D465; (&#x1D461;)) -&#x1D709;&#x1D434; * &#x1D453; (&#x1D465; (&#x1D461;)) + &#x1D43B; -&#x1D709;&#x1D43C;<lb/> + &#x1D462; (&#x1D461;) ,<lb/></formula> 
+			<label>(30)<lb/></label> 
+			
+			<p>where &#x1D435; * = (&#x1D714; &#x1D456;&#x1D457; [&#x1D466; &#x1D457; (&#x1D461;)]) &#x1D45B;×&#x1D45B; , B * = (&#x1D714; &#x1D456;&#x1D457; [&#x1D709;&#x1D465; &#x1D457; (&#x1D461;)]) &#x1D45B;×&#x1D45B; , and<lb/> &#x1D434; * = (&#x1D703; &#x1D456;&#x1D457; [&#x1D465; &#x1D457; (&#x1D461;)]) &#x1D45B;×&#x1D45B; . Based on Definition 10, the problem of<lb/> projective synchronization for NFMNN is transformed into<lb/> the problem of asymptotic stability of error systems (<ref type="formula">30</ref>).<lb/></p> 
+			<p>In this part, a fractional-order integral sliding mode<lb/> controller is designed to deal with the problem of projective<lb/> synchronization of NFMNN. The sliding mode surface is<lb/> defined as<lb/></p> 
+			
+			<formula>&#x1D446; (&#x1D461;) = &#x1D452; (&#x1D461;) + 0 &#x1D43C; &#x1D6FC;<lb/> &#x1D461; {&#x1D436;&#x1D452; (&#x1D461;)<lb/> -[&#x1D435; * &#x1D454; (&#x1D452; (&#x1D461;) + &#x1D709;&#x1D465; (&#x1D461;)) -B * &#x1D454; (&#x1D709;&#x1D465; (&#x1D461;))]<lb/> + &#x1D441; (&#x1D440;&#x1D466; (&#x1D461;) -&#x1D709;&#x1D467; (&#x1D461;))} = &#x1D452; (&#x1D461;)<lb/> + 0 &#x1D43C; &#x1D6FC;<lb/> &#x1D461; {-[&#x1D435; * &#x1D454; (&#x1D452; (&#x1D461;) + &#x1D709;&#x1D465; (&#x1D461;)) -B * &#x1D454; (&#x1D709;&#x1D465; (&#x1D461;))]<lb/> + (&#x1D436; + &#x1D441;&#x1D440;) &#x1D452; (&#x1D461;)} ,<lb/></formula>
+
+				<label>(31)<lb/></label>
+
+			<p>where &#x1D446;(&#x1D461;) = (&#x1D446; 1 (&#x1D461;), &#x1D446; 2 (&#x1D461;), . . . , &#x1D446; &#x1D45B; (&#x1D461;)) &#x1D447; ; &#x1D436;, &#x1D435; * , and B * are<lb/> defined in the master system (<ref type="formula">12</ref>) and the slave system (<ref type="formula">20</ref>),<lb/> respectively; &#x1D441; ∈ R &#x1D45B;×&#x1D45A; is denoted as the gain matrix which<lb/> can be selected appropriately; &#x1D440; ∈ R &#x1D45A;×&#x1D45B; is the coefficient<lb/> matrix in (<ref type="formula">15</ref>).<lb/></p> 
+			
+			<p>According to the theory of sliding mode control <ref type="biblio">[44]</ref>, for<lb/> the sake of the error system (<ref type="formula">30</ref>) operating on the sliding<lb/> mode, the sliding surface and its derivative must satisfy &#x1D446;(&#x1D461;) =<lb/> 0 and Ṡ<lb/> (&#x1D461;) = 0.<lb/></p> 
+			
+			<p>Based on Property 4, one has<lb/></p>
+
+				<formula>Ṡ (&#x1D461;) = &#x1D436;<lb/> 0 &#x1D437; 1-&#x1D6FC;<lb/> &#x1D461;<lb/> &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D446; (&#x1D461;) = 0,<lb/></formula>
+
+				<label>(32)<lb/></label>
+
+			<p>which implies that<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D446; (&#x1D461;) = 0,<lb/></formula>
+
+				<label>(33)<lb/></label>
+
+			<p>Assume that Assumptions 8 and 9 hold; expression (<ref type="formula">31</ref>)<lb/> can be written as<lb/></p>
+
+			<figure>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D446; (&#x1D461;) = &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D452; (&#x1D461;) -[&#x1D435; * &#x1D454; (&#x1D466; (&#x1D461;)) -B * &#x1D454; (&#x1D709;&#x1D465; (&#x1D461;))]<lb/> + (&#x1D436; + &#x1D441;&#x1D440;) &#x1D452; (&#x1D461;) .<lb/></figure>
+
+				<label>(34)<lb/></label>
+
+			<p>Substituting (<ref type="formula">30</ref>) into (<ref type="formula">34</ref>) and combining (<ref type="formula">33</ref>), then<lb/></p>
+
+			<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D446; (&#x1D461;) = (-&#x1D437; + &#x1D436; + &#x1D441;&#x1D440;) &#x1D452; (&#x1D461;) + &#x1D709; (&#x1D436; -&#x1D437;) &#x1D465; (&#x1D461;)<lb/> + B * &#x1D454; (&#x1D709;&#x1D465; (&#x1D461;)) -&#x1D709;&#x1D434; * &#x1D453; (&#x1D465; (&#x1D461;)) + &#x1D43B; -&#x1D709;&#x1D43C;<lb/> + &#x1D462; (&#x1D461;) = 0.<lb/></formula> 
+			<label>(35)<lb/></label>
+ 
+			<p>By means of (<ref type="formula">35</ref>), an equivalent control law can be written<lb/> as<lb/></p> 
+			
+			<formula>&#x1D462; &#x1D45E; (&#x1D461;) = -(-&#x1D437; + &#x1D436; + &#x1D441;&#x1D440;) &#x1D452; (&#x1D461;) -&#x1D709; (&#x1D436; -&#x1D437;) &#x1D465; (&#x1D461;)<lb/> -&#x1D43B; -B * &#x1D454; (&#x1D709;&#x1D465; (&#x1D461;)) + &#x1D709;&#x1D434; * &#x1D453; (&#x1D465; (&#x1D461;)) + &#x1D709;&#x1D43C;.<lb/></formula> 
+			<label>(36)<lb/></label>
+			
+			<p>Combining (<ref type="formula">30</ref>) with (<ref type="formula">36</ref>), the dynamics of sliding mode<lb/> can be written as<lb/></p> 
+			
+			<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D452; (&#x1D461;) = -(&#x1D436; + &#x1D441;&#x1D440;) &#x1D452; (&#x1D461;)<lb/> + [&#x1D435; * &#x1D454; (&#x1D452; (&#x1D461;) + &#x1D709;&#x1D465; (&#x1D461;)) -B * &#x1D454; (&#x1D709;&#x1D465; (&#x1D461;))] ,<lb/></formula>
+
+				<label>(37)<lb/></label>
+
+			<p>and obviously, &#x1D452; * = 0 is an equilibrium point of the sliding<lb/> mode dynamics (<ref type="formula">37</ref>).<lb/></p> 
+			
+			<p>On account of the sliding mode control theory, a reaching<lb/> law is denoted as<lb/></p>
+
+				<formula>&#x1D462; &#x1D45D; = -&#x1D6FF; (sgn (&#x1D446; (&#x1D461;))) ,<lb/></formula>
+
+				<label>(38)<lb/></label>
+
+			<p>where<lb/></p>
+
+				<formula>sgn (&#x1D446; &#x1D456; (&#x1D461;)) =<lb/> { { { {<lb/> { { { {<lb/> {<lb/> 1,<lb/> &#x1D446; &#x1D456; (&#x1D461;) &gt; 0<lb/> 0,<lb/> &#x1D446; &#x1D456; (&#x1D461;) = 0<lb/> -1, &#x1D446; &#x1D456; (&#x1D461;) &lt; 0,<lb/> &#x1D456; = 1, 2, . . . , &#x1D45B; ∈ &#x1D441; + ,<lb/></formula>
+
+				<label>(39)<lb/></label>
+
+			<p>and &#x1D6FF; &gt; 0 is the switching gain. Lastly, the sliding mode<lb/> controller &#x1D462;(&#x1D461;) is designed as<lb/></p>
+
+				<formula>&#x1D462; (&#x1D461;) = &#x1D462; &#x1D45E; (&#x1D461;) + &#x1D462; &#x1D45D; (&#x1D461;)<lb/> = -(-&#x1D437; + &#x1D436; + &#x1D441;&#x1D440;) &#x1D452; (&#x1D461;) -&#x1D709; (&#x1D436; -&#x1D437;) &#x1D465; (&#x1D461;)<lb/> + &#x1D709;&#x1D434; * &#x1D453; (&#x1D465; (&#x1D461;)) -B * &#x1D454; (&#x1D709;&#x1D465; (&#x1D461;)) -&#x1D43B; + &#x1D709;&#x1D43C;<lb/> -&#x1D70E; sgn (&#x1D446; (&#x1D461;)) .<lb/></formula>
+				<label>(40)<lb/></label>
+
+			<p>Remark 16. As mentioned in <ref type="biblio">[45, 46]</ref>, some undesirable<lb/> dynamic properties may be produced owing to the dis-<lb/>continuous function sgn(&#x1D446;(&#x1D461;)) existing in the sliding mode<lb/> control system (<ref type="formula">40</ref>). To deal with the problem of the harmful<lb/> chattering, the sgn(&#x1D446;(&#x1D461;)) is replaced by a continuous function<lb/> tanh(&#x1D446;(&#x1D461;)). Hence, the sliding mode control (<ref type="formula">40</ref>) is altered as<lb/> follows:<lb/></p> 
+			
+			<formula>&#x1D462; (&#x1D461;) = &#x1D462; &#x1D45E; (&#x1D461;) + &#x1D462; &#x1D45D; (&#x1D461;)<lb/> = -(-&#x1D437; + &#x1D436; + &#x1D441;&#x1D440;) &#x1D452; (&#x1D461;) -&#x1D709; (&#x1D436; -&#x1D437;) &#x1D465; (&#x1D461;)<lb/> + &#x1D709;&#x1D434; * &#x1D453; (&#x1D465; (&#x1D461;)) -B * &#x1D454; (&#x1D709;&#x1D465; (&#x1D461;)) -&#x1D43B; + &#x1D709;&#x1D43C;<lb/> -&#x1D70E; tanh (&#x1D446; (&#x1D461;)) .<lb/></formula>
+
+				<label>(41)<lb/></label>
+
+			<p>Theorem 17. Assume that the sliding model surface is denoted<lb/> by (<ref type="formula">31</ref>) and Assumption 9 holds; the trajectories of error system<lb/> (<ref type="formula">30</ref>) can be asymptotically driven on the switching surface<lb/> &#x1D446;(&#x1D461;) = 0 based on the sliding model controller (<ref type="formula">40</ref>).<lb/></p>
+
+			<p>Proof. Constructing the positive definite function as a Lya-<lb/>punov function candidate<lb/></p>
+
+				<formula>&#x1D449; =<lb/> 1<lb/> 2<lb/> &#x1D446; &#x1D447; (&#x1D461;) &#x1D446; (&#x1D461;) ,<lb/></formula>
+
+				<label>(42)<lb/></label>
+
+			<p>in view of Lemma 6 and Definition 2, expression (<ref type="formula">42</ref>) can be<lb/> written as<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D449; (&#x1D461;) = &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461;<lb/> 1<lb/> 2<lb/> &#x1D446; &#x1D447; (&#x1D461;) &#x1D446; (&#x1D461;) ≤ &#x1D446; &#x1D447; (&#x1D461;) &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D446; (&#x1D461;)<lb/> =<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> &#x1D446; &#x1D456; (&#x1D461;) ⋅ (-&#x1D70E;) ⋅ sgn (&#x1D446; &#x1D456; (&#x1D461;))<lb/> = -&#x1D70E; ‖&#x1D446; (&#x1D461;)‖ 1 ,<lb/></formula>
+
+				<label>(43)<lb/></label>
+
+			<p>where ‖ ⋅ ‖ 1 denotes the 1-norm.<lb/></p>
+
+			<p>Based on Lemma 15, when &#x1D70E; &gt; 0 holds, the trajectories<lb/> of system can asymptotically converge to &#x1D446;(&#x1D461;) = 0, which<lb/> means that the trajectories of the error system are driven to<lb/> the designed sliding mode surface and stayed on it at any<lb/> subsequent moment. This obtains the proof.<lb/></p>
+
+			<p>In order to analyze the stability of the sliding motion, the<lb/> following assumption is given as follows.<lb/></p>
+
+			<p>Assumption 18. For a.a. &#x1D456; ∈ N + , one has<lb/></p>
+
+				<formula>-&#x1D450; &#x1D456; +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> (<lb/> &#x1D45A;<lb/> ∑<lb/> &#x1D458;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D441; &#x1D457;&#x1D458; &#x1D440; &#x1D458;&#x1D456;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; ) +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D44F; &#x1D457;&#x1D456;<lb/> ♡ &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D43A; &#x1D456; &lt; 0,<lb/></formula>
+
+				<label>(44)<lb/></label>
+
+			<p>where &#x1D450; &#x1D456; &gt; 0 is the constant in the master system (<ref type="formula">17</ref>); &#x1D441; &#x1D457;&#x1D458;<lb/> denotes the gain of system (<ref type="formula">31</ref>); &#x1D440; &#x1D458;&#x1D456; is the coefficient of the<lb/> system (<ref type="formula">15</ref>); |&#x1D44F; &#x1D457;&#x1D456;<lb/> ♡ | = max{|&#x1D44F; *<lb/> &#x1D457;&#x1D456; |, |&#x1D44F; ∘<lb/> &#x1D457;&#x1D456; |}; and &#x1D43A; &#x1D456; is the Lipschitz<lb/> constants of function &#x1D454;(⋅) in the Assumption 8.<lb/></p>
+
+			<p>Theorem 19. In the case of Assumptions 8, 9, and 18, system<lb/> (<ref type="formula">37</ref>) is globally asymptotically stable.<lb/></p>
+
+			<p>Proof. Firstly, expression (<ref type="formula">37</ref>) can be written as<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D452; &#x1D456; (&#x1D461;) = -&#x1D450; &#x1D456; &#x1D452; &#x1D456; (&#x1D461;) -<lb/>&#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> &#x1D45A;<lb/> ∑<lb/> &#x1D458;=1<lb/> &#x1D441; &#x1D456;&#x1D458; &#x1D440; &#x1D458;&#x1D457; &#x1D452; &#x1D457; (&#x1D461;)<lb/> +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> {&#x1D714; &#x1D456;&#x1D457; [&#x1D466; &#x1D457; (&#x1D461;)] &#x1D454; &#x1D457; (&#x1D466; &#x1D457; (&#x1D461;))<lb/> -&#x1D714; &#x1D456;&#x1D457; [&#x1D709;&#x1D465; &#x1D457; (&#x1D461;)] &#x1D454; &#x1D457; (&#x1D709;&#x1D465; &#x1D457; (&#x1D461;))} .<lb/></formula>
+
+				<label>(45)<lb/></label>
+
+			<p>Constructing the function &#x1D449;(&#x1D461;) as a Lyapunov function<lb/> candidate can be written as<lb/></p>
+
+				<formula>&#x1D449; (&#x1D461;) =<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D452; &#x1D456; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; .<lb/></formula>
+
+				<label>(46)<lb/></label>
+
+			<p>According to Lemma 5, the following inequality is<lb/> obtained:<lb/></p>
+
+				<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D449; (&#x1D461;) = &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461;<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D452; &#x1D456; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128;<lb/> ≤<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> sgn (&#x1D452; &#x1D456; (&#x1D461;)) &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D452; &#x1D456; (&#x1D461;) .<lb/></formula>
+
+				<label>(47)<lb/></label>
+
+			<p>And from expression (<ref type="formula">45</ref>) to (<ref type="formula">47</ref>), one has<lb/></p> 
+			
+			<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D449; (&#x1D461;) ≤<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> sgn (&#x1D452; &#x1D456; (&#x1D461;))<lb/> {<lb/> {<lb/> {<lb/> -&#x1D450; &#x1D456; &#x1D452; &#x1D456; (&#x1D461;)<lb/> -<lb/>&#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> &#x1D45A;<lb/> ∑<lb/> &#x1D458;=1<lb/> &#x1D441; &#x1D456;&#x1D458; &#x1D440; &#x1D458;&#x1D457; &#x1D452; &#x1D457; (&#x1D461;) +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> [&#x1D714; &#x1D456;&#x1D457; [&#x1D466; &#x1D457; (&#x1D461;)] &#x1D454; &#x1D457; (&#x1D466; &#x1D457; (&#x1D461;))<lb/> -&#x1D714; &#x1D456;&#x1D457; [&#x1D709;&#x1D465; &#x1D457; (&#x1D461;)] &#x1D454; &#x1D457; (&#x1D709;&#x1D465; &#x1D457; (&#x1D461;))]<lb/> }<lb/> }<lb/> }<lb/> = -&#x1D450; &#x1D456;<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D452; &#x1D456; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128;<lb/> +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> sgn (&#x1D452; &#x1D456; (&#x1D461;))<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> &#x1D45A;<lb/> ∑<lb/> &#x1D458;=1<lb/> &#x1D441; &#x1D456;&#x1D458; &#x1D440; &#x1D458;&#x1D457; &#x1D452; &#x1D457; (&#x1D461;) +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> sgn (&#x1D452; &#x1D456; (&#x1D461;))<lb/> ⋅<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> [&#x1D714; &#x1D456;&#x1D457; [&#x1D466; &#x1D457; (&#x1D461;)] &#x1D454; &#x1D457; (&#x1D466; &#x1D457; (&#x1D461;)) -&#x1D714; &#x1D456;&#x1D457; [&#x1D709;&#x1D465; &#x1D457; (&#x1D461;)]<lb/> ⋅ &#x1D454; &#x1D457; (&#x1D709;&#x1D465; &#x1D457; (&#x1D461;))] .<lb/></formula> 
+			<label>(48)<lb/></label>
+			
+			<p>Based on Assumptions 8 and 9, expression (<ref type="formula">48</ref>) can be<lb/> written as<lb/></p> 
+			
+			<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D449; (&#x1D461;)<lb/> ≤ -&#x1D450; &#x1D456;<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D452; &#x1D456; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D452; &#x1D456; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128;<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> &#x1D45A;<lb/> ∑<lb/> &#x1D458;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D441; &#x1D457;&#x1D458; &#x1D440; &#x1D458;&#x1D456;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128;<lb/> +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D452; &#x1D457; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D44F; ♡<lb/> &#x1D456;&#x1D457; &#x1D43A; &#x1D457;<lb/> =<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D452; &#x1D456; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128;<lb/> [<lb/> [<lb/> -&#x1D450; &#x1D456; +<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D457;=1<lb/> &#x1D45A;<lb/> ∑<lb/> &#x1D458;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D441; &#x1D457;&#x1D458; &#x1D440; &#x1D458;&#x1D456;<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#xF5128; + &#x1D44F; ♡<lb/> &#x1D456;&#x1D457; &#x1D43A; &#x1D457; ]<lb/> ]<lb/> ;<lb/></formula> 
+			<label>(49)<lb/></label> 
+			<p>from Assumption 18, |&#x1D44F; &#x1D457;&#x1D456;<lb/> ♡ | = max{|&#x1D44F; *<lb/> &#x1D457;&#x1D456; |, |&#x1D44F; ∘<lb/> &#x1D457;&#x1D456; |}; and let &#x1D711; &#x1D456; = &#x1D450; &#x1D456; -<lb/>∑ &#x1D45B;<lb/> &#x1D457;=1 ∑ &#x1D45A;<lb/> &#x1D458;=1 |&#x1D441; &#x1D457;&#x1D458; &#x1D440; &#x1D458;&#x1D456; | -&#x1D44F; ♡<lb/> &#x1D456;&#x1D457; &#x1D43A; &#x1D457; &gt; 0, &#x1D711; = min{&#x1D711; &#x1D456; } &gt; 0; one has<lb/></p> 
+			<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D449; (&#x1D461;) ≤ -&#x1D711; &#x1D456;<lb/> &#x1D45B;<lb/> ∑<lb/> &#x1D456;=1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D452; &#x1D456; (&#x1D461;)<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≤ -&#x1D711;&#x1D449; (&#x1D461;) ;<lb/></formula> 
+			<label>(50)<lb/></label> 
+			<p>based on Lemma 15, an equilibrium point &#x1D452; * = 0 is the<lb/> Mittag-Leffler stable, which means that system (<ref type="formula">37</ref>) is globally<lb/> Mittag-Leffler stable, i.e., lim &#x1D461;&#xF3A00;→∞ ‖&#x1D452;(&#x1D461;)‖ = 0. This completes<lb/> the proof.<lb/></p> 
+			
+			<p>Remark 20. According to Theorem 19, when &#x1D452;(&#x1D461;) = &#x1D466;(&#x1D461;) -<lb/>&#x1D709;&#x1D465;(&#x1D461;), the following form can be obtained:<lb/></p> 
+			<formula>&#xF5129; &#xF5129; &#xF5129; &#xF5129; &#x1D466; (&#x1D461;) -&#x1D709;&#x1D465; (&#x1D461;)<lb/> &#xF5129; &#xF5129; &#xF5129; &#xF5129; &#xF3A00;→ 0 (&#x1D461; &#xF3A00;→ +∞) ;<lb/></formula>
+
+				<label>(51)<lb/></label>
+				
+				<p>this means that the master system (<ref type="formula">17</ref>) and the slave system<lb/> (<ref type="formula">20</ref>) achieve globally projective synchronization on account<lb/> of the controller (<ref type="formula">40</ref>).<lb/></p>
+
+			<p>If &#x1D709; = -1, the control input (<ref type="formula">40</ref>) is designed as<lb/></p>
+
+				<formula>&#x1D462; (&#x1D461;) = &#x1D462; &#x1D45E; (&#x1D461;) + &#x1D462; &#x1D45D; (&#x1D461;)<lb/> = -(-&#x1D437; + &#x1D436; + &#x1D441;&#x1D440;) &#x1D452; (&#x1D461;) + (&#x1D436; -&#x1D437;) &#x1D465; (&#x1D461;)<lb/> -&#x1D434; * &#x1D453; (&#x1D465; (&#x1D461;)) -B * &#x1D454; (-&#x1D465; (&#x1D461;)) -&#x1D43B; -&#x1D43C;<lb/> -&#x1D70E;sgn (&#x1D446; (&#x1D461;)) ,<lb/></formula>
+
+				<label>(52)<lb/></label>
+
+			<p>where the sliding surface &#x1D446;(&#x1D461;) is designed by (<ref type="formula">31</ref>). A special<lb/> case of Theorems 17 and 19 is obtained as follows.<lb/></p>
+
+			<p>Corollary 21. Under Assumptions 8-18, the master system<lb/> (<ref type="formula">17</ref>) and the slave system (<ref type="formula">20</ref>) are the globally asymptotic<lb/> antisynchronization based on the controller (<ref type="formula">52</ref>).<lb/></p>
+
+			<p>If &#x1D709; = 1, the control input (<ref type="formula">40</ref>) is redesigned as<lb/></p> 
+			<formula>&#x1D462; (&#x1D461;) = &#x1D462; &#x1D45E; (&#x1D461;) + &#x1D462; &#x1D45D; (&#x1D461;)<lb/> = -(-&#x1D437; + &#x1D436; + &#x1D441;&#x1D440;) &#x1D452; (&#x1D461;) -(&#x1D436; -&#x1D437;) &#x1D465; (&#x1D461;)<lb/> + &#x1D434; * &#x1D453; (&#x1D465; (&#x1D461;)) -B * &#x1D454; (&#x1D465; (&#x1D461;)) -&#x1D43B; + &#x1D43C;<lb/> -&#x1D70E;sgn (&#x1D446; (&#x1D461;)) .<lb/></formula>
+
+				<label>(53)<lb/></label>
+
+			<p>Corollary 22. Assume that Assumptions 8-18 hold, the master<lb/> system (<ref type="formula">17</ref>) and slave system (<ref type="formula">20</ref>) are the global asymptotically<lb/> complete synchronization on account of the controller (<ref type="formula">53</ref>).<lb/></p>
+
+			<p>If &#x1D709; = 0, the sliding surface (<ref type="formula">31</ref>) is rewritten as<lb/></p>
+
+				<formula>&#x1D446; (&#x1D461;) = &#x1D466; (&#x1D461;) + 0 &#x1D43C; &#x1D6FC;<lb/> &#x1D461; {-[&#x1D435; * &#x1D454; (&#x1D466; (&#x1D461;)) -B * &#x1D454; (0)]<lb/> + (&#x1D436; + &#x1D441;&#x1D440;) &#x1D466; (&#x1D461;)} ,<lb/></formula>
+
+				<label>(54)<lb/></label>
+
+			<p>and the control input (<ref type="formula">40</ref>) is redesigned as<lb/></p>
+
+				<formula>&#x1D462; (&#x1D461;) = &#x1D462; &#x1D45E; (&#x1D461;) + &#x1D462; &#x1D45D; (&#x1D461;)<lb/> = -(-&#x1D437; + &#x1D436; + &#x1D441;&#x1D440;) &#x1D466; (&#x1D461;) -B * &#x1D454; (0) -&#x1D43B;<lb/> -&#x1D70E;sgn (&#x1D446; (&#x1D461;)) .<lb/></formula>
+
+				<label>(55)<lb/></label>
+
+			<p>Corollary 23. Under Assumptions 8-18, the slave system (<ref type="formula">20</ref>)<lb/> is the globally asymptotically stabilized to the origin based on<lb/> the controller (<ref type="formula">54</ref>).<lb/></p>
+
+			<p>If the activation function and the parameters of slave<lb/> system (<ref type="formula">20</ref>) are the same as master system (<ref type="formula">17</ref>), i.e.,<lb/></p> 
+			
+			<formula>&#x1D436;<lb/> &#x1D461; 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D466; (&#x1D461;) = -&#x1D436;&#x1D466; (&#x1D461;) + Ǎ * &#x1D453; (&#x1D466; (&#x1D461;)) + &#x1D43C; + &#x1D462; (&#x1D461;) ,<lb/></formula>
+
+				<label>(56)<lb/></label>
+
+			<p>where Ǎ * = (&#x1D703; &#x1D456;&#x1D457; [&#x1D466; &#x1D457; (&#x1D461;)]) &#x1D45B;×&#x1D45B; , the sliding mode surface (<ref type="formula">31</ref>) is<lb/> denoted as<lb/></p>
+
+				<formula>&#x1D446; (&#x1D461;) = &#x1D452; (&#x1D461;)<lb/> + 0 &#x1D43C; &#x1D6FC;<lb/> &#x1D461; {-[ Ǎ * &#x1D453; (&#x1D452; (&#x1D461;) + &#x1D709;&#x1D465; (&#x1D461;)) -Â * &#x1D453; (&#x1D709;&#x1D465; (&#x1D461;))]<lb/> + (&#x1D436; + &#x1D441;&#x1D440;) &#x1D452; (&#x1D461;)} ,<lb/></formula>
+
+				<label>(57)<lb/></label>
+
+			<p>where Â * = (&#x1D703; &#x1D456;&#x1D457; [&#x1D709;&#x1D465; &#x1D457; (&#x1D461;)]) &#x1D45B;×&#x1D45B; ; the control input (<ref type="formula">40</ref>) is<lb/> rewritten as<lb/></p>
+
+				<formula>&#x1D462; (&#x1D461;) = &#x1D462; &#x1D45E; (&#x1D461;) + &#x1D462; &#x1D45D; (&#x1D461;)<lb/> = -&#x1D441;&#x1D440;&#x1D452; (&#x1D461;) + &#x1D709;&#x1D434; * &#x1D453; (&#x1D465; (&#x1D461;)) -Â * &#x1D453; (&#x1D709;&#x1D465; (&#x1D461;))<lb/> + (&#x1D709; -1) &#x1D43C; -&#x1D70E;sgn (&#x1D446; (&#x1D461;)) .<lb/></formula>
+
+				<label>(58)<lb/></label>
+
+			<p>Similar to Theorems 17 and 19, the following inference can<lb/> be given.<lb/></p>
+
+			<p>Corollary 24. The master system (<ref type="formula">17</ref>) and the slave system<lb/> (<ref type="formula">56</ref>) are the globally projective synchronization based on the<lb/> controller (<ref type="formula">58</ref>) if the Assumptions 8-18 hold.<lb/></p> 
+			<p>Remark 25. Chen, Zeng et al. <ref type="biblio">[25]</ref> discussed the synchroniza-<lb/>tion of FMNN based on the linear feedback controller. Bao<lb/> &amp; Cao <ref type="biblio">[33]</ref> discussed the projective synchronization of iden-<lb/>tical fractional-order memristive neural networks by using<lb/> adaptive feedback controller. But their results were about the<lb/> same system. In fact, the parameters and functions of systems<lb/> are variant due to environmental changes. Thus, our systems<lb/> are general. In addition, the above control scheme cannot<lb/> obtain projective synchronization of NFMNN. However,<lb/> the fractional-order sliding mode controller can solve such<lb/> problems in this paper. In a word, our system is general and<lb/> our results achieve a valuable improvement.<lb/></p>
+
+			<head>4. Numerical Simulations<lb/></head>
+
+			<p>In this section, the results obtained in this paper are proved<lb/> to be effectiveness and correctness by a numerical example.<lb/></p>
+
+			<p>Example 1. Consider the following three-dimensional<lb/> FMNN as the master system and slave system:<lb/></p>
+
+			<formula>&#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D465; (&#x1D461;) = -&#x1D436;&#x1D465; (&#x1D461;) + &#x1D434;&#x1D453; (&#x1D465; (&#x1D461;)) + &#x1D43C;<lb/> &#x1D436;<lb/> 0 &#x1D437; &#x1D6FC;<lb/> &#x1D461; &#x1D466; (&#x1D461;) = -&#x1D437;&#x1D466; (&#x1D461;) + &#x1D435;&#x1D454; (&#x1D466; (&#x1D461;)) + &#x1D43B; + &#x1D462; (&#x1D461;) ,<lb/></formula> 
+			<label>(59)<lb/></label> 
+			
+			<p>where &#x1D6FC; = 0.98; &#x1D43C; = &#x1D43B; = [0, 0, 0] &#x1D447; ; the activation function<lb/> &#x1D453;(&#x1D465;(&#x1D461;)) = tanh(|&#x1D465;(&#x1D461;)| -1) and &#x1D454;(&#x1D466;(&#x1D461;)) = sin(|&#x1D466;(&#x1D461;)| -1); &#x1D434; =<lb/> (&#x1D44E; &#x1D456;&#x1D457; ) &#x1D45B;×&#x1D45B; and &#x1D435; = (&#x1D44F; &#x1D456;&#x1D457; ) &#x1D45B;×&#x1D45B; ; &#x1D456;, &#x1D457; = 1, 2, 3;<lb/></p> 
+			
+			<formula>C =<lb/> [<lb/> [<lb/> [<lb/> 1.5 0 0<lb/> 0 1.5 0<lb/> 0 0 1.5<lb/> ]<lb/> ]<lb/> ]<lb/> ,<lb/> D =<lb/> [<lb/> [<lb/> [<lb/> 0.07 0<lb/> 0<lb/> 0 0.08 0<lb/> 0<lb/> 0 0.05<lb/> ]<lb/> ]<lb/> ]<lb/> ,<lb/> &#x1D44E; 11 =<lb/> {<lb/> {<lb/> {<lb/> -5<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> -3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44E; 12 =<lb/> {<lb/> {<lb/> {<lb/> 5<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> 6<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44E; 13 =<lb/> {<lb/> {<lb/> {<lb/> 5<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> 4.5<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44E; 21 =<lb/> {<lb/> {<lb/> {<lb/> -9<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> -7<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44E; 22 =<lb/> {<lb/> {<lb/> {<lb/> 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> 3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44E; 23 =<lb/> {<lb/> {<lb/> {<lb/> -1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> 3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44E; 31 =<lb/> {<lb/> {<lb/> {<lb/> -1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44E; 32 =<lb/> {<lb/> {<lb/> {<lb/> -9<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> -8<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44E; 33 =<lb/> {<lb/> {<lb/> {<lb/> 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> 3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D465; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44F; 11 =<lb/> {<lb/> {<lb/> {<lb/> 0.45<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> 0.33<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44F; 12 =<lb/> {<lb/> {<lb/> {<lb/> -0.22<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> -0.29<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44F; 13 =<lb/> {<lb/> {<lb/> {<lb/> -0.2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> -0.25<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44F; 21 =<lb/> {<lb/> {<lb/> {<lb/> -0.5<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> -0.6<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44F; 22 =<lb/> {<lb/> {<lb/> {<lb/> 0.19<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> 0.25<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44F; 23 =<lb/> {<lb/> {<lb/> {<lb/> -0.15<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> 0.28<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 3<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44F; 31 =<lb/> {<lb/> {<lb/> {<lb/> -0.11<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> 0.11<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44F; 32 =<lb/> {<lb/> {<lb/> {<lb/> 0.7<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> 0.6<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 2<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1,<lb/> &#x1D44F; 33 =<lb/> {<lb/> {<lb/> {<lb/> -0.21<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &lt; 1<lb/> -0.275<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; &#x1D466; 1<lb/> &#xF5128; &#xF5128; &#xF5128; &#xF5128; ≥ 1.<lb/></formula>
+
+				<label>(60)<lb/></label>
+
+			<p>The measured output &#x1D467;(&#x1D461;) is defined as &#x1D467;(&#x1D461;) = &#x1D440;&#x1D465;(&#x1D461;),<lb/> where the parameter &#x1D440; = [1, 1, 1]. Next, the simulation<lb/> diagram is given as follows.<lb/></p>
+
+			<p>Figure <ref type="figure">1</ref> describes phase diagram of master system (<ref type="formula">12</ref>)<lb/> under the condition of initial value &#x1D465;(0) = (1.1, 1.2, -1.5) &#x1D447; .<lb/> Under the condition of initial value &#x1D466;(0) = (-0.5, 1.5, -2.5) &#x1D447; ,<lb/> the phase trajectories of slave system (<ref type="formula">13</ref>) is showed in<lb/> Figure <ref type="figure">2</ref> without the controller (<ref type="formula">41</ref>).<lb/></p>
+
+			<p>When the projective coefficient &#x1D709; = -1 and the gain<lb/> matrix &#x1D441; = (0.5, 0.3, 0.1) &#x1D447; , Figures <ref type="figure">3</ref> and <ref type="figure">4</ref> imply that the<lb/> master-slave system (<ref type="formula">59</ref>) is globally asymptotic antisynchro-<lb/>nization from Corollary 21 under the control scheme (<ref type="formula">52</ref>).<lb/></p>
+
+			<figure>-1.6<lb/> -1.4<lb/> 2<lb/> -1.2<lb/> -1<lb/> -0.8<lb/> x<lb/> 3 (t)<lb/> 1.5<lb/> -0.6<lb/> 1.5<lb/> x 2 (t)<lb/> -0.4<lb/> -0.2<lb/> 1<lb/> x 1 (t)<lb/> 1<lb/> 0.5<lb/> 0.5<lb/> x(t)<lb/> Figure 1: Phase plot of master system with initial condition &#x1D465;(0) =<lb/> (1.1, 1.3, -1.5) &#x1D447; .<lb/></figure> 
+			<figure>-3<lb/> -2<lb/> 3<lb/> -1<lb/> 0<lb/> y<lb/> 3 (t)<lb/> -0.6<lb/> 2<lb/> 1<lb/> y 2 (t)<lb/> -0.8<lb/> 2<lb/> y 1 (t)<lb/> 1<lb/> -1<lb/> -1.2<lb/> 0<lb/> -1.4<lb/> y(t)<lb/> Figure 2: Phase plot of slave system with initial condition &#x1D466;(0) =<lb/> (-0.5, 1.5, -2.5) &#x1D447; without the controller u(t).<lb/></figure> 
+			<figure>5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> t (s)<lb/> t (s)<lb/> t (s)<lb/> -2<lb/> 0<lb/> 2<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -2<lb/> 0<lb/> 2<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -2<lb/> 0<lb/> 2<lb/> x<lb/> 1 (t) and y<lb/> 1 (t)<lb/> x<lb/> 2 (t) and y<lb/> 2 (t)<lb/> x<lb/> 3 (t) and y<lb/> 3 (t)<lb/> x 1<lb/> y 1<lb/> x 2<lb/> y 2<lb/> x 3<lb/> y 3<lb/> Figure 3: State trajectories of master-slave systems with &#x1D709; = -1.<lb/></figure> 
+			<figure>5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -4<lb/> -2<lb/> 0<lb/> 2<lb/> 4<lb/> e<lb/> 1 (t)<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -4<lb/> -2<lb/> 0<lb/> 2<lb/> 4<lb/> e<lb/> 2 (t)<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -4<lb/> -2<lb/> 0<lb/> 2<lb/> e<lb/> 3 (t)<lb/> t (s)<lb/> t (s)<lb/> t (s)<lb/> Figure 4: Select 10 random initial conditions and state trajectories<lb/> of the synchronization errors &#x1D452; 1 (&#x1D461;), &#x1D452; 2 (&#x1D461;), and &#x1D452; 3 (&#x1D461;) with &#x1D709; =-1.<lb/></figure> 
+			<figure>5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> t (s)<lb/> t (s)<lb/> t (s)<lb/> 0<lb/> 1<lb/> 2<lb/> x<lb/> 1 (t) and y<lb/> 1 (t)<lb/> x<lb/> 2 (t) and y<lb/> 2 (t)<lb/> x<lb/> 3 (t) and y<lb/> 3 (t)<lb/> x 1<lb/> y 1<lb/> x 2<lb/> y 2<lb/> x 3<lb/> y 3<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> 0<lb/> 1<lb/> 2<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -2<lb/> -1<lb/> 0<lb/> Figure 5: State trajectories of master-slave systems with &#x1D709; = 1.<lb/></figure>
+
+			<p>Similarly, based on the control scheme (<ref type="formula">52</ref>) Figures <ref type="figure">5<lb/></ref> and <ref type="figure">6</ref> depict the simulation results for &#x1D709; = 1 with the gain<lb/> matrix &#x1D441; = (0.3, 0, 0) &#x1D447; , which indicate the master-slave (<ref type="formula">59</ref>)<lb/> is globally asymptotically complete synchronization form<lb/> Corollary 22.<lb/></p>
+
+			<p>In the following, the slave system of the globally asymp-<lb/>totically stabilized to the origin is considered based on<lb/> the control scheme (<ref type="formula">54</ref>). In this case, &#x1D709; = 0 and &#x1D441; =<lb/> (-0.1, 0.3, -0.2) &#x1D447; . The Corollary 23 is illustrated in Figure <ref type="figure">7</ref>.<lb/></p>
+
+			<p>Similarly, when &#x1D709; = -2 and the gain matrix &#x1D441; =<lb/> (0.4, -0.1, 0.1) &#x1D447; , the master-slave system (<ref type="formula">59</ref>) is globally<lb/></p>
+
+			<figure>e<lb/> 1 (t)<lb/> e<lb/> 2 (t)<lb/> e<lb/> 3 (t)<lb/> t (s)<lb/> t (s)<lb/> t (s)<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -4<lb/> -2<lb/> 0<lb/> 2<lb/> 4<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -4<lb/> -2<lb/> 0<lb/> 2<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -2<lb/> 0<lb/> 2<lb/> 4<lb/> Figure 6: Select 10 random initial conditions and state trajectories<lb/> of the synchronization errors &#x1D452; 1 (&#x1D461;), &#x1D452; 2 (&#x1D461;), and &#x1D452; 3 (&#x1D461;) with &#x1D709; = 1.<lb/></figure> 
+			<figure>t (s)<lb/> 0<lb/> 5<lb/> 4<lb/> 3<lb/> 2<lb/> 1<lb/> t (s)<lb/> 0<lb/> 5<lb/> 4<lb/> 3<lb/> 2<lb/> 1<lb/> t (s)<lb/> 0<lb/> 5<lb/> 4<lb/> 3<lb/> 2<lb/> 1<lb/> -0.5<lb/> 0<lb/> 0.5<lb/> y<lb/> 1 (t)<lb/> -1<lb/> 0<lb/> 1<lb/> 2<lb/> y<lb/> 2 (t)<lb/> -2<lb/> 0<lb/> 2<lb/> y<lb/> 3 (t)<lb/> Figure 7: State trajectories of slave systems with &#x1D709; = 0.<lb/></figure>
+
+			<p>asymptotically projective synchronization on the control<lb/> scheme (<ref type="formula">40</ref>) which are showed in Figures <ref type="figure">8</ref> and <ref type="figure">9</ref>.<lb/></p>
+
+			<p>When &#x1D709; = 3 and the gain matrix &#x1D441; = (-0.1, -0.1, -0.1) &#x1D447; ,<lb/> Figures <ref type="figure">10</ref> and <ref type="figure">11</ref> show that the master-slave system is globally<lb/> asymptotically projective synchronization under the control<lb/> scheme (<ref type="formula">40</ref>).<lb/></p>
+
+			<head>5. Conclusion<lb/></head>
+
+			<p>In this paper, the problem of projective synchronization of<lb/> NFMNN is studied. By designing a new type of fractional-<lb/>order sliding mode controller and analyzing the reachability<lb/> of sliding mode surface and the stability of sliding motion, the<lb/> effective criteria for projective synchronization of NFMNN<lb/> are obtained. Furthermore, the complete synchronization<lb/> and antisynchronization of NFMNN, the stability of FMNN,<lb/></p>
+
+			<figure>t (s)<lb/> t (s)<lb/> t (s)<lb/> x<lb/> 1 (t) and y<lb/> 1 (t)<lb/> x<lb/> 2 (t) and y<lb/> 2 (t)<lb/> x<lb/> 3 (t) and y<lb/> 3 (t)<lb/> x 1<lb/> y 1<lb/> x 2<lb/> y 2<lb/> x 3<lb/> y 3<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -4<lb/> -2<lb/> 0<lb/> 2<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -4<lb/> -2<lb/> 0<lb/> 2<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -2<lb/> 0<lb/> 2<lb/> 4<lb/> Figure 8: State trajectories of master-slave systems with &#x1D709; = -2.<lb/></figure> 
+			<figure>5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -4<lb/> -2<lb/> 0<lb/> 2<lb/> 4<lb/> e<lb/> 1 (t)<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -2<lb/> 0<lb/> 2<lb/> 4<lb/> e<lb/> 2 (t)<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -6<lb/> -4<lb/> -2<lb/> 0<lb/> 2<lb/> e<lb/> 3 (t)<lb/> t (s)<lb/> t (s)<lb/> t (s)<lb/> Figure 9: Select 10 random initial conditions and state trajectories<lb/> of the synchronization errors &#x1D452; 1 (&#x1D461;), &#x1D452; 2 (&#x1D461;), and &#x1D452; 3 (&#x1D461;) with &#x1D709; = -2.<lb/></figure>
+
+			<p>and the projective synchronization of the identical FMNN<lb/> are special cases in this paper. In the future, we will con-<lb/>sider the lag projective synchronization of NFMNN with<lb/> delays.<lb/></p>
+
+			<figure>5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> 0<lb/> 2<lb/> 4<lb/> 6<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> 0<lb/> 2<lb/> 4<lb/> 6<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -6<lb/> -4<lb/> -2<lb/> 0<lb/> x<lb/> 1 (t) and y<lb/> 1 (t)<lb/> x<lb/> 2 (t) and y<lb/> 1 =2(t)<lb/> x<lb/> 3 (t) and y<lb/> 3 (t)<lb/> t (s)<lb/> t (s)<lb/> t (s)<lb/> x 1<lb/> y 1<lb/> x 2<lb/> y 2<lb/> x 3<lb/> y 3<lb/> Figure 10: State trajectories of master-slave systems with &#x1D709; = 3.<lb/> 5<lb/></figure> 
+			<figure>1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -5<lb/> 0<lb/> 5<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -5<lb/> 0<lb/> 5<lb/> 5<lb/> 1<lb/> 0<lb/> 1<lb/> 5<lb/> 0<lb/> -5<lb/> 0<lb/> 5<lb/> t (s)<lb/> t (s)<lb/> t (s)<lb/> e<lb/> 1 (t)<lb/> e<lb/> 2 (t)<lb/> e<lb/> 3 (t)<lb/> Figure 11: Select 10 random initial conditions and state trajectories<lb/> of the synchronization errors &#x1D452; 1 (&#x1D461;), &#x1D452; 2 (&#x1D461;), and &#x1D452; 3 (&#x1D461;) with &#x1D709; = 3.</figure>
+
+
+	</text>
+</tei>
