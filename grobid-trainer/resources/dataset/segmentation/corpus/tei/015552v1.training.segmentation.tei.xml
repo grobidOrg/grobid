@@ -8,7 +8,7 @@
 
 			<body>The Oxford Nanopore MinION is a portable, single molecule genome sequencing instrument <lb/>no larger than a typical smartphone. As this instrument directly senses native, individual DNA <lb/>fragments without the need for amplification, it is able to sequence extremely long fragments (&gt;10 <lb/>kilobases) of DNA without a reduction in sequence quality 1 . <lb/>The availability of very long reads is important when assembling genomes as they span <lb/>repetitive elements and anchor repeat copies within uniquely occurring parts of the genome. Many <lb/></body>
 
-			<page>1 <lb/></page>
+			<front>1 <lb/></front>
 
 			<body>bacterial genomes can be assembled into single contigs if reads greater than eight kilobases are <lb/>available, as these reads span the conserved ribosomal RNA operon which is typically the longest <lb/>repeat sequence in a bacterial genome 2 . <lb/>The accuracy of the sequence reads is another potentially limiting step for genome assem-<lb/>bly; at launch, data from the Pacific Biosciences sequencing instrument was hard to use for de <lb/>novo assembly due to the lack of bioinformatics tools designed for long reads with a high error <lb/>rate. Several algorithmic improvements have led to this platform becoming the gold standard for <lb/>genome assembly; Koren et al. demonstrated that hybrid techniques could generate contiguous <lb/>assemblies 3 . This method uses accurate short-read data, or Pacific Biosciences circular consensus <lb/>reads, to correct error-prone long reads sufficiently for assembly 4 . Non-hybrid de novo assemblies <lb/>of PacBio data in absence of short-read data remained an open problem until Chin et al. developed <lb/>the HGAP (Hierarchical Genome-Assembly Process) assembler 5 . HGAP typically uses a subset <lb/>of the longest reads in the sequencing data set to use as the input for the assembly process. This <lb/>subset of long reads is corrected using the entire data set, and this corrected set of reads is assem-<lb/>bled with the Celera Assembler. The final assembly is &apos;polished&apos; using a signal-level consensus <lb/>algorithm to high accuracy. This assembly strategy has revolutionized genome assembly of small <lb/>genomes and is now being applied to large genomes 6, 7 . <lb/>Nanopore sequencing data has clear similarities to Pacific Biosciences data, with reads suf-<lb/>ficiently long to be of great use in de novo assembly 7, 8 . Recently, a hybrid approach to assembly <lb/>which used Illumina short reads to correct nanopore reads prior to assembly was shown to give <lb/></body>
 
@@ -40,7 +40,7 @@
 
 			<div type="conflict">Competing Interests NJL is a member of the MinION Access Programme (MAP) and has received free-<lb/>of-charge reagents for nanopore sequencing presented in this study. JQ has received travel and accommo-<lb/>dation expenses to speak at an Oxford Nanopore-organised symposium. NJL and JQ have ongoing research <lb/>collaborations with Oxford Nanopore but do not receive financial compensation for this. <lb/></div>
 
-			<div type="annex">Correspondence Correspondence and requests for materials should be addressed to JTS (email: Jared.Simpson@oicr.on.ca <lb/></div>
+			<front>Correspondence Correspondence and requests for materials should be addressed to JTS (email: Jared.Simpson@oicr.on.ca <lb/></front>
 
 			<page>8 <lb/></page>
 
@@ -60,7 +60,11 @@
 
 			<page>12 <lb/></page>
 
-			<div type="annex">Coverage analysis <lb/>The GC plot was constructed from the assembly using a Python script using Biopython averaging <lb/>GC-content over 1000 base 20 . <lb/>QUAST Analysis <lb/>The circularised contig was analysed by QUAST 2.3 14 which was run with default parameters and <lb/>supplying the NC 000913.3 reference genome as the comparator. <lb/>Mauve Analysis <lb/>The circularised contig was analysed by running the progressiveMauve package on the command-<lb/>line with option --collinear and visualised in the Mauve Genome Viewer. 21 . <lb/>5-mer Analysis <lb/>To explore over and under-representation of 5-mers, we wrote a program to count the number of <lb/>occurrences of the 1024 different 5-mers in a set of sequences. This program counts 5-mers on the <lb/>forward and reverse strands independently. The analysis used the counts for the forward strand of <lb/>the reference and the forward strand of the largest contig of our assembly. We plotted the results <lb/>13 <lb/>using R and the ggplot2 library. <lb/></div>
+			<div type="annex">Coverage analysis <lb/>The GC plot was constructed from the assembly using a Python script using Biopython averaging <lb/>GC-content over 1000 base 20 . <lb/>QUAST Analysis <lb/>The circularised contig was analysed by QUAST 2.3 14 which was run with default parameters and <lb/>supplying the NC 000913.3 reference genome as the comparator. <lb/>Mauve Analysis <lb/>The circularised contig was analysed by running the progressiveMauve package on the command-<lb/>line with option --collinear and visualised in the Mauve Genome Viewer. 21 . <lb/>5-mer Analysis <lb/>To explore over and under-representation of 5-mers, we wrote a program to count the number of <lb/>occurrences of the 1024 different 5-mers in a set of sequences. This program counts 5-mers on the <lb/>forward and reverse strands independently. The analysis used the counts for the forward strand of <lb/>the reference and the forward strand of the largest contig of our assembly. We plotted the results <lb/></div>
+
+			<page>13 <lb/></page>
+
+			<div type="annex">using R and the ggplot2 library. <lb/></div>
 
 			<page>14 <lb/></page>
 

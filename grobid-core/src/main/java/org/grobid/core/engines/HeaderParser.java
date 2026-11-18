@@ -890,6 +890,31 @@ public class HeaderParser extends AbstractParser {
      * @param biblio        biblio item
      * @return a biblio item
      */
+    // minimum size of an abstract piece for its language identification to be trusted
+    private static final int ABSTRACT_LANGUAGE_MIN_LENGTH = 100;
+    private static final double ABSTRACT_LANGUAGE_MIN_CONFIDENCE = 0.7;
+
+    /**
+     * Language of a further abstract piece when it reliably differs from the language of the current
+     * abstract, null otherwise (same language, or pieces too short/uncertain to decide).
+     */
+    private String abstractLanguageIfDifferent(String currentAbstract, String piece) {
+        if (currentAbstract == null || piece == null)
+            return null;
+        if (currentAbstract.length() < ABSTRACT_LANGUAGE_MIN_LENGTH || piece.length() < ABSTRACT_LANGUAGE_MIN_LENGTH)
+            return null;
+        Language langCurrent = languageUtilities.runLanguageId(currentAbstract);
+        Language langPiece = languageUtilities.runLanguageId(piece);
+        if (langCurrent == null || langPiece == null || langCurrent.getLang() == null || langPiece.getLang() == null)
+            return null;
+        if (langCurrent.getConf() < ABSTRACT_LANGUAGE_MIN_CONFIDENCE
+                || langPiece.getConf() < ABSTRACT_LANGUAGE_MIN_CONFIDENCE)
+            return null;
+        if (langCurrent.getLang().equals(langPiece.getLang()))
+            return null;
+        return langPiece.getLang();
+    }
+
     public BiblioItem resultExtraction(String result, List<LayoutToken> tokenizations, BiblioItem biblio) {
         TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.HEADER, result, tokenizations);
         return resultExtraction(result, tokenizations, biblio, clusteror.cluster());
@@ -1046,10 +1071,16 @@ public class HeaderParser extends AbstractParser {
                 biblio.setNoteOrConcatenateIfNotEmpty(clusterContent);
             } else if (clusterLabel.equals(TaggingLabels.HEADER_ABSTRACT)) {
                 if (biblio.getAbstract() != null) {
-                    // this will need to be reviewed with more training data, for the moment
-                    // avoid concatenation for abstracts as it brings more noise than correct pieces
-                    // biblio.setAbstract(biblio.getAbstract() + " " + clusterContent);
-                    // TODO: avoid dumping text on the floor
+                    // a further abstract area: either a continuation of the abstract (same language,
+                    // e.g. split by a page break, a figure or the keywords), or a translation of it
+                    String lang = abstractLanguageIfDifferent(biblio.getAbstract(), clusterContent);
+                    if (lang == null) {
+                        biblio.setAbstract(biblio.getAbstract() + " " + biblio.cleanAbstract(clusterContent));
+                        List<LayoutToken> tokens = cluster.concatTokens();
+                        biblio.collectAbstractTokens(tokens);
+                    } else {
+                        biblio.addTranslatedAbstract(lang, clusterContent);
+                    }
                 } else {
                     biblio.setAbstract(clusterContent);
                     List<LayoutToken> tokens = cluster.concatTokens();

@@ -8,7 +8,7 @@
         <edition>
           <date when="2025-10-28T10:38:09.317986Z">28.10.2025 10:38:09</date>
           <title>grobid.training.segmentation [default]</title>
-          <idno type="fileref">10.1093$1$database_baae078</idno>
+          <idno type="fileref">10.1093$1$ptep_ptae073</idno>
         </edition>
       </editionStmt>
       <publicationStmt>
@@ -17,10 +17,10 @@
           <licence target="https://creativecommons.org/licenses/by/4.0/"/>
         </availability>
         <date type="publication"/>
-        <idno type="DOI">10.1093/database_baae078</idno>
+        <idno type="DOI">10.1093/ptep_ptae073</idno>
       </publicationStmt>
       <sourceDesc>
-        <bibl>. (). Unknown Title. , (), . DOI: 10.1093/database_baae078</bibl>
+        <bibl>. (). Unknown Title. , (), . DOI: 10.1093/ptep_ptae073</bibl>
       </sourceDesc>
     </fileDesc>
     <encodingDesc>

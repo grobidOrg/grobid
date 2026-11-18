@@ -2,89 +2,67 @@
   <teiHeader>
   <fileDesc>
     <titleStmt>
-      <title level="a">Short-term variation in pH in seawaters around coastal areas of Japan: characteristics and forcings</title>
-      <author>
-        <persName>
-          <forename>Tsuneo</forename>
-          <surname>Ono</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Daisuke</forename>
-          <surname>Muraoka</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Masahiro</forename>
-          <surname>Hayashi</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Makiko</forename>
-          <surname>Yorifuji</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Akihiro</forename>
-          <surname>Dazai</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Shigeyuki</forename>
-          <surname>Omoto</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Takehiro</forename>
-          <surname>Tanaka</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Tomohiro</forename>
-          <surname>Okamura</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Goh</forename>
-          <surname>Onitsuka</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Kenji</forename>
-          <surname>Sudo</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Masahiko</forename>
-          <surname>Fujii</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Ryuji</forename>
-          <surname>Hamanoue</surname>
-        </persName>
-      </author>
-      <author>
-        <persName>
-          <forename>Masahide</forename>
-          <surname>Wakita</surname>
-        </persName>
-      </author>
-      <respStmt>
-        <persName xml:id="kazuyo">Kazuyo</persName>
-        <resp>Annotator</resp>
-      </respStmt>
+      <title level="a">IPB-MSA&amp;SO4: a daily 0.25° resolution dataset of in situ-produced biogenic methanesulfonic acid and sulfate over the North Atlantic during 1998–2022 based on machine learning</title>
+        <author>
+          <persName>
+            <forename>Karam</forename>
+            <surname>Mansour</surname>
+          </persName>
+        </author>
+        <author>
+          <persName>
+            <forename>Stefano</forename>
+            <surname>Decesari</surname>
+          </persName>
+        </author>
+        <author>
+          <persName>
+            <forename>Darius</forename>
+            <surname>Ceburnis</surname>
+          </persName>
+        </author>
+        <author>
+          <persName>
+            <forename>Jurgita</forename>
+            <surname>Ovadnevaite</surname>
+          </persName>
+        </author>
+        <author>
+          <persName>
+            <forename>Lynn M.</forename>
+            <surname>Russell</surname>
+          </persName>
+        </author>
+        <author>
+          <persName>
+            <forename>Marco</forename>
+            <surname>Paglione</surname>
+          </persName>
+        </author>
+        <author>
+          <persName>
+            <forename>Laurent</forename>
+            <surname>Poulain</surname>
+          </persName>
+        </author>
+        <author>
+          <persName>
+            <forename>Shan</forename>
+            <surname>Huang</surname>
+          </persName>
+        </author>
+        <author>
+          <persName>
+            <forename>Colin</forename>
+            <surname>O&apos;Dowd</surname>
+          </persName>
+        </author>
+        <author>
+          <persName>
+            <forename>Matteo</forename>
+            <surname>Rinaldi</surname>
+          </persName>
+        </author>
     </titleStmt>
     <editionStmt>
       <edition>
@@ -98,10 +76,10 @@
         <licence target="https://creativecommons.org/licenses/by/4.0/"/>
       </availability>
       <date type="publication">2024</date>
-      <idno type="DOI">10.5194/bg-21-177-2024</idno>
+      <idno type="DOI">10.5194/essd-16-2717-2024</idno>
     </publicationStmt>
     <sourceDesc>
-      <bibl>Tsuneo Ono, Daisuke Muraoka, Masahiro Hayashi, Makiko Yorifuji, Akihiro Dazai, Shigeyuki Omoto, Takehiro Tanaka, Tomohiro Okamura, Goh Onitsuka, Kenji Sudo, Masahiko Fujii, Ryuji Hamanoue, Masahide Wakita. (2024). Short-term variation in pH in seawaters around coastal areas of Japan: characteristics and forcings. Biogeosciences, 21(1), 177-199. DOI: 10.5194/bg-21-177-2024</bibl>
+      <bibl>Karam Mansour, Stefano Decesari, Darius Ceburnis, Jurgita Ovadnevaite, Lynn M. Russell, Marco Paglione, Laurent Poulain, Shan Huang, Colin O&apos;Dowd, Matteo Rinaldi. (2024). IPB-MSA&amp;SO4: a daily 0.25° resolution dataset of in situ-produced biogenic methanesulfonic acid and sulfate over the North Atlantic during 1998–2022 based on machine learning. Earth System Science Data, 16, 2717-2740. DOI: 10.5194/essd-16-2717-2024</bibl>
     </sourceDesc>
   </fileDesc>
   <encodingDesc>
