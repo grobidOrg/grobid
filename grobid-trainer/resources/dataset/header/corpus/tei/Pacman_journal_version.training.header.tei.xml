@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="Pacman_journal_version"/>
+	</teiHeader>
+	<text xml:lang="en">
+		<front>
+
+	Highlights<lb/>
+
+	<docTitle>
+	<titlePart>Buckling of a double sector thin elastic plate: Analytical solution<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Xuyang Chang,Matthieu Vitse, Stéphane Roux<lb/></docAuthor>
+	</byline>
+
+	•
+	<div type="highlight">A novel geometry is proposed, which can buckle from an initial planar configuration into a complex 3D shape<lb/> under tensile load. More importantly, the parametrized closed-form solution of the deformed geometry is<lb/> obtained analytically.<lb/> • The mechanical analysis of the buckling and post-buckling behavior is also provided.<lb/> • This closed-form solution can be used to benchmark either a numerical simulation of buckling or a Stereo Digital<lb/> Image Correlation (Stereo-DIC) code.<lb/></div>
+
+	<docTitle>
+	<titlePart>Buckling of a double sector thin elastic plate: Analytical solution<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Xuyang Chang a, * , Matthieu Vitse a,b and Stéphane Roux a<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>a Université Paris-Saclay, CentraleSupélec, ENS Paris-Saclay, CNRS, LMPS -Laboratoire de Mécanique Paris-Saclay,</affiliation>
+	</byline>
+
+	<address>Avenue de<lb/> Science, Gif-sur-Yvette, 91190, , France<lb/></address>
+
+	<byline>
+	<affiliation>b SciViz,</affiliation>
+	</byline>
+
+	<address>Paris, France<lb/></address>
+
+	A R T I C L E I N F O<lb/> Keywords:<lb/>
+	<keyword>Elastic Buckling<lb/> Analytical solution<lb/> Geometrical instability<lb/></keyword>
+
+	A B S T R A C T<lb/>
+	<div type="abstract">Analytical solutions for elastic buckling and post-buckling geometries are scarce. The present<lb/> work presents such a solution for a sample geometry, initially planar, which buckles into a<lb/> complex 3D shape under tensile load. The assumptions are that the sample thickness is small, so<lb/> that flexural stiffness is low compared to in-plane strain stiffness, and hence the sample can be<lb/> considered inextensible. The initial geometry is composed of two disk angular sectors sharing<lb/> a common edge. Under tensile loading, the two radial edges of each sector tend to align so<lb/> that each half turns into two regular cone sectors. As the tensile load increases, the cone angle<lb/> progressively decreases, but the same generic form holds the sample extension all along the<lb/> tensile direction. Such a solution may be useful for validating numerical simulation tools, or<lb/> stereo-vision shape measurement procedures.<lb/></div>
+
+	<note type="funding">⋆ This work has been supported by EikoSim, and the Ecole Normale Supérieure Paris-Saclay.<lb/></note>
+
+	* Corresponding author<lb/>
+	<email>xuyang.chang@ens-paris-saclay.fr</email>
+
+	(X. Chang);
+	<email>stephane.roux@ens-paris-saclay.fr</email>
+
+	(.S. Roux)<lb/>
+	<ptr type="web">https://gitlab.com/sciviz/blendic</ptr>
+
+	(M. Vitse)<lb/> ORCID(s):
+	<idno>0000-0002-8239-4714 (X. Chang); </idno>0000-0002-4230-6396 (M. Vitse);</idno> <idno>0000-0003-4885-6732 (.S. Roux)</idno>
+
+		</front>
+	</text>
+</tei>
