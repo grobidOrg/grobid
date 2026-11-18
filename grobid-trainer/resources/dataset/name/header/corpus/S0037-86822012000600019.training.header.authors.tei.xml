@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<roleName>Dr</roleName>.
+								<forename>Reynaldo</forename>
+								<surname>Dietze</surname>.
+							</persName>
+							<persName>
+								<forename>Marco</forename>
+								<middlename>André</middlename>
+								<surname>Loureiro Tonini</surname>
+								<marker>[1]</marker> ,
+							</persName>
+							<persName>
+								<forename>Elenice</forename>
+								<surname>Moreira Lemos</surname>
+								<marker>[1]</marker> ,
+							</persName>
+							<persName>
+								<forename>Alexandre</forename>
+								<surname>Barbosa Reis</surname>
+								<marker>[2]</marker> ,
+							</persName>
+							<persName>
+								<forename>Wendel</forename>
+								<surname>Coura Vital</surname>
+								<marker>[2]</marker> ,
+							</persName>
+							<persName>
+								<forename>Edelberto</forename>
+								<surname>Santos Dias</surname>
+								<marker>[3]</marker> and
+							</persName>
+							<persName>
+								<forename>Reynaldo</forename>
+								<surname>Dietze</surname>
+								<marker>[1] [</marker>
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

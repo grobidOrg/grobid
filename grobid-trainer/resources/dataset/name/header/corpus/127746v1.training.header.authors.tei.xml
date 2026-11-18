@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName><forename>Carl</forename> <middlename>H</middlename>. <surname>Mesarich</surname>, <marker>1,2,3</marker></persName>
+<persName><forename>Bilal</forename> <surname>Ӧkmen</surname>, <marker>1,a</marker></persName>
+<persName><forename>Hanna</forename> <surname>Rovenich</surname>, <marker>1,a</marker></persName>
+<persName><forename>Scott</forename> <middlename>A</middlename>. <surname>Griffiths</surname>, <marker>1</marker></persName>
+<persName><forename>Changchun</forename> <surname>Wang</surname>, <marker>1,4</marker></persName>
+<persName><forename>Mansoor</forename> <middlename>Karimi</middlename> <surname>Jashni</surname>, <marker>1,5</marker></persName>
+<persName><forename>Aleksandar</forename> <surname>Mihajlovski</surname>, <marker>1,b</marker></persName>
+<persName><forename>Jérôme</forename> <surname>Collemare</surname>, <marker>1,c</marker></persName>
+<persName><forename>Lukas</forename> <surname>Hunziker</surname>, <marker>3,6</marker></persName>
+<persName><forename>Cecilia</forename> <middlename>H</middlename>. <surname>Deng</surname>, <marker>7</marker></persName>
+<persName><forename>Ate</forename> <surname>van der Burgt</surname>, <marker>1,d</marker></persName>
+<persName><forename>Henriek</forename> <middlename>G</middlename>. <surname>Beenen</surname>, <marker>1,d</marker></persName>
+<persName><forename>Matthew</forename> <middlename>D</middlename>. <surname>Templeton</surname>, <marker>3,7</marker></persName>
+<persName><forename>Rosie</forename> <middlename>E</middlename>. <surname>Bradshaw</surname> <marker>3,6</marker> and</persName>
+<persName><forename>Pierre</forename> <middlename>J</middlename>. <middlename>G</middlename>. <middlename>M</middlename>. <surname>de Wit</surname> <marker>1,8</marker></persName>
+<persName><forename>Carl</forename> <middlename>H</middlename>. <surname>Mesarich</surname></persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

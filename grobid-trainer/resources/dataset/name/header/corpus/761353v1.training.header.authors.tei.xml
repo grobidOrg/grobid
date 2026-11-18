@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<surname>Giusti-Rodríguez</surname>, <forename>P</forename>.,
+</persName>
+<persName>
+<surname>Xenakis</surname>, <forename>J</forename>.
+</persName>
+, et al.
+<persName>
+<forename>Paola</forename>
+<surname>Giusti-Rodríguez</surname>
+<marker>1 *</marker>,
+</persName>
+<persName>
+<forename>James</forename>
+<middlename>G</middlename>.
+<surname>Xenakis</surname>
+<marker>1 *</marker>,
+</persName>
+<persName>
+<forename>James</forename>
+<middlename>J</middlename>.
+<surname>Crowley</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Randal</forename>
+<middlename>J</middlename>.
+<surname>Nonneman</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Daniela</forename>
+<middlename>M</middlename>.
+<surname>DeCristo</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Allison</forename>
+<surname>Ryan</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Corey</forename>
+<middlename>R</middlename>.
+<surname>Quackenbush</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Darla</forename>
+<middlename>R</middlename>.
+<surname>Miller</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Ginger</forename>
+<middlename>D</middlename>.
+<surname>Shaw</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Vasyl</forename>
+<surname>Zhabotynsky</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Patrick</forename>
+<middlename>F</middlename>.
+<surname>Sullivan</surname>
+<marker>1,3,4, †</marker> ,
+</persName>
+<persName>
+<forename>Fernando</forename>
+<surname>Pardo-Manuel de Villena</surname>
+<marker>1,5, †</marker> , and
+</persName>
+<persName>
+<forename>Fei</forename>
+<surname>Zou</surname>
+<marker>1,2, †</marker> .
+</persName>
+<persName>
+<roleName>Dr</roleName>.
+<forename>Fei</forename>
+<surname>Zou</surname> (
+</persName>
+<persName>
+<roleName>Dr</roleName>.
+<forename>Fernando</forename>
+<surname>Pardo Manuel de Villena</surname>
+</persName>
+<persName>
+<roleName>Dr</roleName>.
+<forename>Patrick</forename>
+<middlename>F</middlename>.
+<surname>Sullivan</surname>
+</persName>
+<persName>
+<surname>Giusti-Rodríguez</surname>,
+<forename>P</forename>.,
+</persName>
+<persName>
+<surname>Xenakis</surname>,
+<forename>J</forename>.
+</persName>
+, et al. 2
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

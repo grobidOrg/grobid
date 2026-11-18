@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+                        <author>
+                            A PREPRINT
+                            <persName>
+                                <forename>Gareth</forename>
+                                <surname>York</surname>
+                            </persName>
+                            <persName>
+                                <forename>Hugh</forename>
+                                <surname>Osborne</surname>
+                            </persName>
+                            <persName>
+                                <forename>Piyanee</forename>
+                                <surname>Sriya</surname>
+                            </persName>
+                            <persName>
+                                <forename>Sarah</forename>
+                                <surname>Astill</surname>
+                            </persName>
+                            <persName>
+                                <forename>Marc</forename>
+                                <surname>de Kamps</surname>
+                            </persName>
+                            <persName>
+                                <forename>Samit</forename>
+                                <surname>Chakrabarty</surname>
+                            </persName>
+                        </author>
+
+                    
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

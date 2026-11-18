@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Ethel</forename> <middlename>Leonor</middlename> <surname>Maciel</surname></persName>
+<persName><forename>Pablo</forename> <surname>Jabor</surname> <marker>2</marker></persName> -orcid.
+<persName><forename>Etereldes</forename> <surname>Goncalves</surname> <suffix>Júnior</suffix> <marker>3</marker></persName> -orcid.
+<persName><forename>Ricardo</forename> <surname>Tristão-Sá</surname> <marker>4</marker></persName> -orcid.org
+<persName><forename>Rita</forename> <middlename>de</middlename> <middlename>Cássia</middlename> <surname>Duarte Lima</surname> <marker>5</marker></persName> -orcid.
+<persName><forename>Barbara</forename> <surname>Reis-Santos</surname> <marker>1</marker></persName>
+-orcid.
+<persName><forename>Pablo</forename> <surname>Lira</surname></persName>
+<persName><forename>Elda</forename> <surname>Coelho Azevedo Bussinguer</surname></persName>
+<persName><forename>Ethel</forename> <middlename>Leonor</middlename> <surname>Noia Maciel</surname></persName> -
+</author>
+
+	
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+		<author>
+			<persName><forename>Cris</forename> <middlename>L</middlename>. <surname>Wijnen</surname> <marker>1 †</marker> ,</persName>
+			<persName><forename>Ramon</forename> <surname>Botet</surname> <marker>1 †</marker> ,</persName>
+			<persName><forename>José</forename> <surname>van de Belt</surname> <marker>1</marker> ,</persName>
+			<persName><forename>Laurens</forename> <surname>Deurhof</surname> <marker>1</marker> ,</persName>
+			<persName><forename>Hans</forename> <surname>de Jong</surname> <marker>1</marker> ,</persName>
+			<persName><forename>C</forename>. <middlename>Bastiaan</middlename> <surname>de Snoo</surname> <marker>2</marker> ,</persName>
+			<persName><forename>Rob</forename> <surname>Dirks</surname> <marker>2,3</marker> ,</persName>
+			<persName><forename>Martin</forename> <middlename>P</middlename>. <surname>Boer</surname> <marker>4</marker> ,</persName>
+			<persName><forename>Fred</forename> <middlename>A</middlename>. <surname>van Eeuwijk</surname> <marker>4</marker> ,</persName>
+			<persName><forename>Erik</forename> <surname>Wijnker</surname> <marker>1 §</marker> ,</persName>
+			<persName><forename>Joost</forename> <middlename>J</middlename>. <middlename>B</middlename>. <surname>Keurentjes</surname> <marker>1 §*</marker></persName>
+			<persName><forename>J</forename>. <middlename>J</middlename>. <middlename>B</middlename>. <surname>Keurentjes</surname>,</persName>
+		</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

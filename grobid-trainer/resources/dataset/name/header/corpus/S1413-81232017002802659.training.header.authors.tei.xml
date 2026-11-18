@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Aline</forename>
+								 <surname>Doria Sobral Vieira</surname>
+								 <marker>1</marker>
+							</persName>
+							<persName>
+								 <forename>Glória</forename>
+								 <middlename>Regina</middlename>
+								 <surname>Mesquita da Silveira</surname>
+								 <marker>2</marker>
+							</persName>
+						</author>
+
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

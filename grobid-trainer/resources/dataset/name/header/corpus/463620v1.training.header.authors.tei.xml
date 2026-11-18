@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Kyo</forename> <middlename>Bin</middlename> <surname>Kang</surname> <marker>1,2,3,a,*</marker> ,</persName>
+<persName><forename>Madeleine</forename> <surname>Ernst</surname> <marker>1,a</marker> ,</persName>
+<persName><forename>Justin</forename> <middlename>J</middlename>. <middlename>J</middlename>. <surname>van der Hooft</surname> <marker>1,4,a</marker> ,</persName>
+<persName><forename>Ricardo</forename> <middlename>R</middlename>. <surname>da Silva</surname> <marker>1</marker> ,</persName>
+<persName><forename>Junha</forename> <surname>Park</surname> <marker>3</marker> ,</persName>
+<persName><forename>Marnix</forename> <middlename>H</middlename>. <surname>Medema</surname> <marker>4</marker> ,</persName>
+<persName><forename>Sang</forename> <middlename>Hyun</middlename> <surname>Sung</surname> <marker>3,b</marker> and</persName>
+<persName><forename>Pieter</forename> <middlename>C</middlename>. <surname>Dorrestein</surname> <marker>1,*</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

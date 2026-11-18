@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename>Karen</forename> <surname>Jansen</surname></persName>
+							R. Almirante Barroso,
+							<persName><forename>Ricardo</forename> <surname>Azevedo da Silva</surname>, <marker>1</marker></persName>
+							<persName><forename>Karen</forename> <surname>Jansen</surname>, <marker>1</marker></persName>
+							<persName><forename>Luciano</forename> <surname>Dias de Mattos Souza</surname>, <marker>1</marker></persName>
+							<persName><forename>Inácia</forename> <surname>Gomes da Silva Moraes</surname>, <marker>1</marker></persName>
+							<persName><forename>Elaine</forename> <surname>Tomasi</surname>, <marker>1</marker></persName>
+							<persName><forename>Giovanna</forename> <surname>Del Grande da Silva</surname>, <marker>1</marker></persName>
+							<persName><forename>Michelle</forename> <surname>de Souza Dias</surname>, <marker>1</marker></persName>
+							<persName><forename>Ricardo</forename> <surname>Tavares Pinheiro</surname> <marker>1</marker></persName>
+						</author>
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

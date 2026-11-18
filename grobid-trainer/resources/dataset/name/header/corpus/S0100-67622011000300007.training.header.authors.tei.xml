@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+ANDORINHAS E FLOE UAIMII, OURO PRETO, MG 1
+<persName>
+<forename>Renato</forename>
+<surname>Andrade Rezende</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>José</forename>
+<middlename>Francisco</middlename>
+<surname>do Prado</surname>
+<suffix>Filho</suffix>
+<marker>3</marker> e
+</persName>
+<persName>
+<forename>Frederico</forename>
+<surname>Garcia Sobreira</surname>
+<marker>3</marker>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

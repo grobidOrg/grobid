@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Pedro</forename>
+								 
+								 <surname>Nascimento Alves</surname>
+								 <marker>a,b,c,d*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Chris</forename>
+								 <surname>Foulon</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Vyacheslav</forename>
+								 <surname>Karolis</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Danilo</forename>
+								 <surname>Bzdok</surname>
+								 <marker>e,f,g,h</marker> ,
+							</persName>
+							<persName>
+								 <forename>Daniel</forename>
+								 <middlename>S</middlename>.
+								 <surname>Margulies</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Emmanuelle</forename>
+								 <surname>Volle</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Michel</forename>
+								 <surname>Thiebaut de Schotten</surname>
+								 <marker>a,b,j*</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

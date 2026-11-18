@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+  <persName>
+    <forename>Iván</forename>
+    <middlename>E</middlename>.
+    <surname>Mujica Rodríguez</surname>,
+  </persName>
+  <persName>
+    <forename>Daniel</forename>
+    <middlename>F</middlename>.
+    <surname>Condor Camara</surname>,
+  </persName>
+  <persName>
+    <forename>Lewis</forename>
+    <surname>De la Cruz</surname>,
+  </persName>
+  <persName>
+    <forename>Andrea</forename>
+    <middlename>E</middlename>.
+    <surname>Montero</surname>,
+  </persName>
+  <persName>
+    <forename>Anthony</forename>
+    <surname>Bacilio</surname>,
+  </persName>
+  <persName>
+    <forename>Esperanza</forename>
+    <surname>Reyes Solari</surname>
+  </persName>
+  <persName>
+    <forename>Iván</forename>
+    <middlename>E</middlename>.
+    <surname>Mujica Rodríguez</surname>
+    <marker>1*</marker>
+  </persName>
+  <persName>
+    <forename>Daniel</forename>
+    <middlename>F</middlename>.
+    <surname>Condor Camara</surname>
+    <marker>1</marker>
+  </persName>
+  <persName>
+    <forename>Lewis</forename>
+    <surname>De la Cruz</surname>
+    <marker>1</marker>
+  </persName>
+  <persName>
+    <forename>Andrea</forename>
+    <middlename>E</middlename>.
+    <surname>Montero</surname>
+    <marker>1</marker>
+  </persName>
+  <persName>
+    <forename>Anthony</forename>
+    <surname>Bacilio</surname>
+    <marker>1</marker>
+  </persName>
+  <persName>
+    <forename>Esperanza</forename>
+    <surname>Reyes Solari</surname>
+    <marker>2</marker>
+  </persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

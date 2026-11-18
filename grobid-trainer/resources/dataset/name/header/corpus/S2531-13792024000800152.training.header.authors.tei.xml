@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Bruna</forename>
+<surname>Sobreira Kubrusly</surname>
+<marker>a, *</marker>,
+</persName>
+<persName>
+<forename>Elsie</forename>
+<surname>Sobreira Kubrusly</surname>
+<marker>b,c</marker> ,
+</persName>
+<persName>
+<forename>Hermano</forename>
+<middlename>Alexandre</middlename>
+<surname>Lima Rocha</surname>
+<marker>a,c</marker> ,
+</persName>
+<persName>
+<forename>Antonio</forename>
+<surname>Brazil Viana</surname>
+<suffix>J unior</suffix>
+<marker>b,d</marker> ,
+</persName>
+<persName>
+<forename>Marcela</forename>
+<surname>Sobreira Kubrusly</surname>
+<marker>c</marker> ,
+</persName>
+<persName>
+<forename>Lucas</forename>
+<surname>Loiola Ponte Albuquerque Ribeiro</surname>
+<marker>e</marker> ,
+</persName>
+<persName>
+<forename>Ros ângela</forename>
+<surname>de Albuquerque Ribeiro</surname>
+<marker>b</marker> ,
+</persName>
+<persName>
+<forename>Fernando</forename>
+<surname>Barroso Duarte</surname>
+<marker>a,b,c</marker>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

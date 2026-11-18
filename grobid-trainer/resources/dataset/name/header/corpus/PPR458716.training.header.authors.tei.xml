@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Mara</forename> <surname>Dantas Pereira</surname></persName>,
+<persName><forename>Leonita</forename> <surname>Chagas de Oliveira</surname></persName>,
+<persName><forename>Cleberson</forename> <middlename>Franclin</middlename> <surname>Tavares Costa</surname></persName>,
+<persName><forename>Claudia</forename> <middlename>Mara</middlename> <surname>de Oliveira Bezerra</surname></persName>,
+<persName><forename>Míria</forename> <surname>Dantas Pereira</surname></persName>, <persName><forename>Cristiane</forename> <middlename>Kelly</middlename> <surname>Aquino dos Santos</surname></persName>,
+<persName><forename>Estélio</forename> <middlename>Henrique</middlename> <surname>Martin Dantas</surname></persName>
+<persName><forename>Mara</forename> <surname>Dantas Pereira</surname></persName> <persName><forename>Cleberson</forename> <middlename>Franclin</middlename> <surname>Tavares Costa</surname></persName> <persName><forename>Claudia</forename> <middlename>Mara</middlename> <surname>de Oliveira Bezerra</surname></persName> <persName><forename>Míria</forename> <surname>Dantas Pereira</surname></persName> <persName><forename>Cristiane</forename> <middlename>Kelly</middlename> <surname>Aquino dos Santos</surname></persName> <persName><forename>Estélio</forename> <middlename>Henrique</middlename> <surname>Martin Dantas</surname></persName>
+</author>
+
+	
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

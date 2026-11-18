@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Estela</forename> <middlename>ML</middlename> <surname>Aquino</surname> <marker>1 *</marker></persName>
+<persName><forename>Ismael</forename> <middlename>H</middlename> <surname>Silveira</surname> <marker>1*</marker></persName>
+<persName><forename>Julia</forename> <middlename>M</middlename> <surname>Pescarini</surname> <marker>3 *</marker></persName>
+<persName><forename>Rosana</forename> <surname>Aquino</surname> <marker>1 *</marker></persName>
+<persName><forename>Jaime</forename> <middlename>A</middlename> <surname>Souza-Filho</surname> <marker>2</marker></persName>
+<persName><forename>Aline</forename> <surname>dos Santos Rocha</surname></persName>,
+<persName><forename>Andrea</forename> <surname>Ferreira</surname></persName>,
+<persName><forename>Audêncio</forename> <surname>Victor</surname></persName>,
+<persName><forename>Camila</forename> <surname>Teixeira</surname></persName>,
+<persName><forename>Daiane</forename> <surname>Borges Machado</surname></persName>,
+<persName><forename>Enny</forename> <surname>Paixão</surname></persName>,
+<persName><forename>Flávia</forename> <middlename>Jôse</middlename> <surname>Oliveira Alves</surname></persName>,
+<persName><forename>Flávia</forename> <surname>Pilecco</surname></persName>,
+<persName><forename>Greice</forename> <surname>Menezes</surname></persName>,
+<persName><forename>Ligia</forename> <surname>Gabrielli</surname></persName>,
+<persName><forename>Maria</forename> <middlename>da</middlename> <middlename>Conceição</middlename> <surname>Chagas de Almeida</surname></persName>,
+<persName><forename>Naiá</forename> <surname>Ortelan</surname></persName>,
+<persName><forename>Qeren</forename> <middlename>Hapuk</middlename> <middlename>R</middlename>. <surname>Ferreira Fernandes</surname></persName>,
+<persName><forename>Renzo</forename> <middlename>Joel</middlename> <surname>Flores Ortiz</surname></persName>,
+<persName><forename>Raquel</forename> <surname>Nunes Palmeira</surname></persName>,
+<persName><forename>Elzo</forename> <surname>Pereira Pinto</surname> <suffix>Junior</suffix></persName>,
+<persName><forename>Erika</forename> <surname>Aragão</surname></persName>,
+<persName><forename>Luis</forename> <middlename>Eugenio</middlename> <surname>Portela Fernandes de Souza</surname></persName>,
+<persName><forename>Manoel</forename> <surname>Barral</surname> <suffix>Netto</suffix></persName>,
+<persName><forename>Maria</forename> <middlename>Glória</middlename> <surname>Teixeira</surname></persName>,
+<persName><forename>Mauricio</forename> <surname>Lima Barreto</surname></persName>,
+<persName><forename>Maria</forename> <middlename>Yury</middlename> <surname>Ichihara</surname></persName>,
+<persName><forename>Raíza</forename> <surname>Tourinho dos Reis Silva Lima</surname></persName> e
+</author>
+
+	
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

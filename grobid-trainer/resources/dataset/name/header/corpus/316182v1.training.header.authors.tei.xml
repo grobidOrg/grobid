@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Ben</forename>
+								 <surname>Dantzer</surname>
+								 <marker>1,2,3*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Constance</forename>
+								 <surname>Dubuc</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ines</forename>
+								 
+								 <surname>Braga Goncalves</surname>
+								 <marker>2,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Dominic</forename>
+								 <middlename>L</middlename>.
+								 <surname>Cram</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Nigel</forename>
+								 <middlename>C</middlename>.
+								 <surname>Bennett</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Andre</forename>
+								 <surname>Ganswindt</surname>
+								 <marker>5,6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Chris</forename>
+								 <surname>Duncan</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <surname>Gaynor</surname>
+								 <marker>2,5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tim</forename>
+								 <middlename>H</middlename>.
+								 <surname>Clutton- Brock</surname>
+								 <marker>1,2,5</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

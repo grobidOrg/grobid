@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename>Maria</forename> <middlename>Cecília</middlename> <surname>Marconi Pinheiro Lima</surname></persName>. R. Tessália Vieira
+							<persName><forename>Maria</forename> <middlename>Cecília</middlename> <surname>Marconi Pinheiro Lima</surname> <marker>1</marker> ,</persName>
+							<persName><forename>Tereza</forename> <surname>Ribeiro de Freitas Rossi</surname> <marker>2</marker> ,</persName>
+							<persName><forename>Maria</forename> <middlename>Fátima</middlename> <surname>de Campos Françozo</surname> <marker>3</marker> ,</persName>
+							<persName><forename>Sérgio</forename> <middlename>Tadeu</middlename> <surname>Marba</surname> <marker>4</marker> ,</persName>
+							<persName><forename>Gisele</forename> <surname>Marafon Lopes de Lima</surname> <marker>5</marker> ,</persName>
+							<persName><forename>Maria</forename> <middlename>Francisca</middlename> <surname>Colella dos Santos</surname> <marker>6</marker></persName>
+							RESUMO
+						</author>
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

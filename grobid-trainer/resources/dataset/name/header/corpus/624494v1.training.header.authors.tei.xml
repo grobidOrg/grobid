@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Pierre-Alain</forename>
+								 <surname>Binz</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jim</forename>
+								 <surname>Shofstahl</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Juan</forename>
+								 <middlename>Antonio</middlename>
+								 <surname>Vizcaíno</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Harald</forename>
+								 <surname>Barsnes</surname>
+								 <marker>4,14</marker> ,
+							</persName>
+							<persName>
+								 <forename>Robert</forename>
+								 <middlename>J</middlename>.
+								 <surname>Chalkley</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Gerben</forename>
+								 <surname>Menschaert</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Emanuele</forename>
+								 <surname>Alpi</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Karl</forename>
+								 <surname>Clauser</surname>
+								 <marker>7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jimmy</forename>
+								 <middlename>K</middlename>.
+								 <surname>Eng</surname>
+								 <marker>8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lydie</forename>
+								 <surname>Lane</surname>
+								 <marker>9,16</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sean</forename>
+								 <middlename>L</middlename>.
+								 <surname>Seymour</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Luis</forename>
+								 <middlename>Francisco</middlename>
+								 <surname>Hernández Sánchez</surname>
+								 <marker>11,15</marker> ,
+							</persName>
+							<persName>
+								 <forename>Gerhard</forename>
+								 <surname>Mayer</surname>
+								 <marker>17</marker> ,
+							</persName>
+							<persName>
+								 <forename>Martin</forename>
+								 <surname>Eisenacher</surname>
+								 <marker>17</marker> ,
+							</persName>
+							<persName>
+								 <forename>Yasset</forename>
+								 <surname>Perez-Riverol</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Eugene</forename>
+								 <middlename>A</middlename>.
+								 <surname>Kapp</surname>
+								 <marker>12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Luis</forename>
+								 <surname>Mendoza</surname>
+								 <marker>13</marker> ,
+							</persName>
+							<persName>
+								 <forename>Peter</forename>
+								 <middlename>R</middlename>.
+								 <surname>Baker</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Andrew</forename>
+								 <surname>Collins</surname>
+								 <marker>18</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tim</forename>
+								 <surname>Van Den Bossche</surname>
+								 <marker>19</marker> , and
+							</persName>
+							<persName>
+								 <forename>Eric</forename>
+								 <middlename>W</middlename>.
+								 <surname>Deutsch</surname>
+								 <marker>13,*</marker>
+							</persName>
+							<persName>
+								 <forename>Eric</forename>
+								 <middlename>W</middlename>.
+								 <surname>Deutsch</surname>,
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

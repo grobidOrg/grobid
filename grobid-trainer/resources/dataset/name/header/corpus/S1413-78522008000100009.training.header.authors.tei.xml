@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename>túlio</forename> <surname>diniz Fernandes</surname> <marker>1</marker> ,</persName>
+							<persName><forename>alexandre</forename> <surname>leMe godoy dos santos</surname> <marker>2</marker> ,</persName>
+							<persName><forename>MarCos</forename> <surname>de andrade Corsato</surname> <marker>3</marker> ,</persName>
+							<persName><forename>MarCos</forename> <middlename>Hideyo</middlename> <surname>saKaKi</surname> <marker>4</marker> ,</persName>
+							<persName><forename>raFael</forename> <surname>treVisan ortiz</surname> <marker>3</marker> ,</persName>
+							<persName><forename>MarCelo</forename> <surname>Pires Prado</surname> <marker>5</marker> <roleName>Professor</roleName>, <roleName>Ph.D</roleName>.,</persName>
+						</author>
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Bruno</forename> <surname>Pereira Nunes</surname> <marker>1</marker></persName>
+<persName><forename>Ana</forename> <middlename>Sara</middlename> <surname>Semeão de Souza</surname> <marker>2</marker></persName>
+<persName><forename>Januse</forename> <surname>Nogueira</surname> <marker>3</marker></persName>
+<persName><forename>Fabíola</forename> <surname>Bof de Andrade</surname> <marker>4</marker></persName>
+<persName><forename>Elaine</forename> <surname>Thumé</surname> <marker>1</marker></persName>
+<persName><forename>Doralice</forename> <surname>Severo da Cruz Teixeira</surname> <marker>5</marker></persName>
+<persName><forename>Maria</forename> <middlename>Fernanda</middlename> <surname>Lima-Costa</surname> <marker>4</marker></persName>
+<persName><forename>Luiz</forename> <middlename>Augusto</middlename> <surname>Facchini</surname> <marker>1</marker></persName>
+<persName><forename>Sandro</forename> <surname>Rodrigues Batista</surname> <marker>6,7</marker></persName>
+<persName><forename>Bruno</forename> <middlename>P</middlename> <surname>Nunes</surname></persName>
+</author>
+
+	
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

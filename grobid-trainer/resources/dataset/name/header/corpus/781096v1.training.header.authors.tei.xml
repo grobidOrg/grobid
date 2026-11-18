@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<surname>CAIXETA</surname>, <forename>D</forename>. <middlename>C</middlename>. <marker>1,2</marker> ,
+</persName>
+<persName>
+<surname>AGUIAR</surname>, <forename>E</forename>. <middlename>M</middlename>. <middlename>G</middlename>. <marker>1</marker> ,
+</persName>
+<persName>
+<surname>CARDOSO-SOUSA</surname>, <forename>L</forename>. <marker>1</marker> ,
+</persName>
+<persName>
+<surname>COELHO</surname>, <forename>L</forename>. <middlename>M</middlename>. <middlename>D</middlename> <marker>1</marker> ,
+</persName>
+<persName>
+<surname>OLIVEIRA</surname>, <forename>S</forename>. <middlename>W</middlename>. <marker>1</marker> ,
+</persName>
+<persName>
+<surname>ESPINDOLA</surname> <forename>F</forename>. <middlename>S</middlename>. <marker>2</marker> ,
+</persName>
+<persName>
+<surname>RANIERO</surname> <forename>L</forename> <marker>3</marker> ,
+</persName>
+<persName>
+<surname>CROSARA</surname> <forename>K</forename>. <middlename>T</middlename>. <middlename>B</middlename>. <marker>4</marker> ,
+</persName>
+<persName>
+<surname>BAKER</surname> <forename>M</forename>. <middlename>J</middlename>. <marker>5</marker> ,
+</persName>
+<persName>
+<surname>SIQUEIRA</surname> <forename>W</forename>. <middlename>L</middlename>. <marker>4</marker> ,
+</persName>
+<persName>
+<surname>SABINO-SILVA</surname>, <forename>R</forename>. <marker>1*</marker>
+</persName>
+<persName>
+<forename>Robinson</forename> <surname>Sabino-Silva</surname>;
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

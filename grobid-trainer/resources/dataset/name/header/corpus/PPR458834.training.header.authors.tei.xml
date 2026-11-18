@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+  <persName>
+    <forename>Andrés</forename>
+    <surname>Gómez Noronha</surname>,
+  </persName>
+  <persName>
+    <forename>Sharon</forename>
+    <surname>Del Castillo Ochoa</surname>,
+  </persName>
+  <persName>
+    <forename>Erika</forename>
+    <surname>Chiu Higa</surname>,
+  </persName>
+  <persName>
+    <forename>Elizabeth</forename>
+    <surname>Salsavilca Macavilca</surname>
+  </persName>
+  <persName>
+    <forename>Andrés</forename>
+    <surname>Gómez Noronha</surname>
+  </persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

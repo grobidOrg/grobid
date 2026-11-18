@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Elisa</forename>
+								 <surname>Izquierdo</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lina</forename>
+								 <surname>Yuan</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sally</forename>
+								 <surname>George</surname>
+								 <marker>3,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Michael</forename>
+								 <surname>Hubank</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Chris</forename>
+								 <surname>Jones</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Paula</forename>
+								 <surname>Proszek</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Janet</forename>
+								 <surname>Shipley</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Susanne</forename>
+								 <middlename>A</middlename>
+								 <surname>Gatz</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Caedyn</forename>
+								 <surname>Stinson</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Andrew</forename>
+								 <middlename>S</middlename>.
+								 <surname>Moore</surname>
+								 <marker>6,7,8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Steven</forename>
+								 <middlename>C</middlename>.
+								 <surname>Clifford</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Debbie</forename>
+								 <surname>Hicks</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Janet</forename>
+								 <surname>Lindsey</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rebecca</forename>
+								 <surname>Hill</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Thomas</forename>
+								 <middlename>S</middlename>.
+								 <surname>Jacques</surname>
+								 <marker>10,11</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jane</forename>
+								 <surname>Chalker</surname>
+								 <marker>12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Khin</forename>
+								 <surname>Thway</surname>
+								 <marker>13</marker> ,
+							</persName>
+							<persName>
+								 <forename>Simon</forename>
+								 <surname>O&apos;Connor</surname>
+								 <marker>14</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lynley</forename>
+								 <surname>Marshall</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lucas</forename>
+								 <surname>Moreno</surname>
+								 <marker>4,15</marker> ,
+							</persName>
+							<persName>
+								 <forename>Andrew</forename>
+								 <surname>Pearson</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Louis</forename>
+								 <surname>Chesler</surname>
+								 <marker>3,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Brian</forename>
+								 <middlename>A</middlename>.
+								 <surname>Walker</surname>
+								 <marker>1,16 **</marker>,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <surname>Gonzalez De Castro</surname>
+								 <marker>1,17 ** *</marker>
+							</persName>
+							<persName>
+								 <roleName>Professor</roleName>
+								 <forename>David</forename>
+								 <surname>Gonzalez De Castro</surname>,
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

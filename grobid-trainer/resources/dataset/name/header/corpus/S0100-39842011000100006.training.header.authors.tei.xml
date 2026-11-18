@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Tania</forename>
+								<middlename>Maria</middlename>
+								<surname>Netto</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Denise</forename>
+								<surname>Vieira Greca</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Rafael</forename>
+								<surname>Ferracini</surname>
+								<marker>3</marker> ,
+							</persName>
+							<persName>
+								<forename>Denis</forename>
+								<middlename>B</middlename>.
+								<surname>Pereira</surname>
+								<marker>3</marker> ,
+							</persName>
+							<persName>
+								<forename>Bernardo</forename>
+								<surname>Bizzo</surname>
+								<marker>4</marker> ,
+							</persName>
+							<persName>
+								<forename>Thomas</forename>
+								<surname>Doring</surname>
+								<marker>5</marker> ,
+							</persName>
+							<persName>
+								<forename>Tadeu</forename>
+								<surname>Kubo</surname>
+								<marker>6</marker> ,
+							</persName>
+							<persName>
+								<forename>Paulo</forename>
+								<middlename>R</middlename>.
+								<middlename>V</middlename>.
+								<surname>Bahia</surname>
+								<marker>7</marker> ,
+							</persName>
+							<persName>
+								<forename>Rochele</forename>
+								<surname>Paz Fonseca</surname>
+								<marker>8</marker> ,
+							</persName>
+							<persName>
+								<forename>Emerson</forename>
+								<middlename>L</middlename>.
+								<surname>Gasparetto</surname>
+								<marker>9</marker>
+							</persName>
+							<persName>
+								<roleName>Dr</roleName>.
+								<forename>Emerson</forename>
+								<middlename>L</middlename>.
+								<surname>Gasparetto</surname>.
+							</persName>
+							Estrada da
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

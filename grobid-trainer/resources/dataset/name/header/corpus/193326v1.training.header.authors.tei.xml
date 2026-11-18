@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Robi</forename>
+								 <surname>Tacutu</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Daniel</forename>
+								 <surname>Thornton</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Emily</forename>
+								 <surname>Johnson</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Arie</forename>
+								 <surname>Budovsky</surname>
+								 <marker>3,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Diogo</forename>
+								 <surname>Barardo</surname>
+								 <marker>5,6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Thomas</forename>
+								 <surname>Craig</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Gilad</forename>
+								 <surname>Lehmann</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Dmitri</forename>
+								 <surname>Toren</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Vadim</forename>
+								 <middlename>E</middlename>.
+								 <surname>Fraifeld</surname>
+								 <marker>3</marker> and
+							</persName>
+							<persName>
+								 <forename>João</forename>
+								 <middlename>Pedro</middlename> <surname>de Magalhães</surname>
+								 <marker>1, *</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

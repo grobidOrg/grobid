@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+		<author>
+			<persName><forename>Daniel</forename> <surname>Brayson</surname>, <roleName>PhD</roleName> <marker>1</marker> ;</persName>
+			<persName><forename>Andrea</forename> <surname>Frustaci</surname>, <roleName>MD</roleName> <marker>2,3</marker> ;</persName>
+			<persName><forename>Romina</forename> <surname>Verardo</surname>, <roleName>PhD</roleName> <marker>3</marker> ;</persName>
+			<persName><forename>Cristina</forename> <surname>Chimenti</surname>, <roleName>MD</roleName> <roleName>PhD</roleName> <marker>2,3</marker> ;</persName>
+			<persName><forename>Matteo</forename> <middlename>Antonio</middlename> <surname>Russo</surname>, <roleName>MD</roleName> <marker>4</marker> ;</persName>
+			<persName><forename>Robert</forename> <surname>Hayward</surname>, <roleName>BSc</roleName> <marker>1</marker> ;</persName>
+			<persName><forename>Sadia</forename> <middlename>Munir</middlename> <surname>Ahmad</surname>, <roleName>MSc</roleName> <marker>1</marker> ;</persName>
+			<persName><forename>Gema</forename> <surname>Vizcay-Barrena</surname>, <roleName>PhD</roleName> <marker>5</marker> ,</persName>
+			<persName><forename>Andrea</forename> <surname>Protti</surname>, <roleName>PhD</roleName> <marker>6</marker> ;</persName>
+			<persName><forename>Peter</forename> <middlename>S</middlename>. <surname>Zammit</surname>, <roleName>PhD</roleName> <marker>7</marker> ,</persName>
+			<persName><forename>Cristobal</forename> <middlename>G</middlename>. <surname>dos Remedios</surname>, <roleName>PhD</roleName> <marker>8</marker> ;</persName>
+			<persName><forename>Elisabeth</forename> <surname>Ehler</surname>, <roleName>PhD</roleName> <marker>1,7</marker> ;</persName>
+			<persName><forename>Ajay</forename> <middlename>M</middlename>. <surname>Shah</surname>, <roleName>MD</roleName> <marker>1</marker> ;</persName>
+			<persName><forename>Catherine</forename> <middlename>M</middlename>. <surname>Shanahan</surname>, <roleName>PhD</roleName> <marker>1</marker></persName>
+		</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Ben</forename> <surname>Busby</surname> <marker>1*</marker> ,</persName>
+<persName><forename>Allissa</forename> <surname>Dillman</surname> <marker>2</marker> ,</persName>
+<persName><forename>Claire</forename> <middlename>L</middlename>. <surname>Simpson</surname> <marker>3</marker> ,</persName>
+<persName><forename>Ian</forename> <surname>Fingerman</surname> <marker>1</marker> ,</persName>
+<persName><forename>Sijung</forename> <surname>Yun</surname> <marker>4</marker> ,</persName>
+<persName><forename>David</forename> <middlename>M</middlename>. <surname>Kristensen</surname> <marker>1</marker> ,</persName>
+<persName><forename>Lisa</forename> <surname>Federer</surname> <marker>5</marker> ,</persName>
+<persName><forename>Naisha</forename> <surname>Shah</surname> <marker>6</marker> ,</persName>
+<persName><forename>Matthew</forename> <middlename>C</middlename>. <surname>LaFave</surname> <marker>7</marker> ,</persName>
+<persName><forename>Laura</forename> <surname>Jimenez-Barron</surname> <marker>8-9</marker> ,</persName>
+<persName><forename>Manjusha</forename> <surname>Pande</surname> <marker>10</marker> ,</persName>
+<persName><forename>Wen</forename> <surname>Luo</surname> <marker>11</marker> ,</persName>
+<persName><forename>Brendan</forename> <surname>Miller</surname> <marker>12</marker> ,</persName>
+<persName><forename>Cem</forename> <surname>Meydan</surname> <marker>13</marker> ,</persName>
+<persName><forename>Dhruva</forename> <surname>Chandramohan</surname> <marker>13-14</marker> ,</persName>
+<persName><forename>Kipper</forename> <surname>Fletez-Brant</surname> <marker>15-16</marker> ,</persName>
+<persName><forename>Paul</forename> <middlename>W</middlename>. <surname>Bible</surname> <marker>17</marker> ,</persName>
+<persName><forename>Sergej</forename> <surname>Nowoshilow</surname> <marker>18</marker> ,</persName>
+<persName><forename>Alfred</forename> <surname>Chan</surname> <marker>19</marker> ,</persName>
+<persName><forename>Eric</forename> <middlename>JC</middlename> <surname>Galvez</surname> <marker>20</marker> ,</persName>
+<persName><forename>Jeremy</forename> <surname>Chignell</surname> <marker>21</marker> ,</persName>
+<persName><forename>Joseph</forename> <middlename>N</middlename>. <surname>Paulson</surname> <marker>22-23</marker> ,</persName>
+<persName><forename>Manoj</forename> <surname>Kandpal</surname> <marker>24</marker> ,</persName>
+<persName><forename>Suhyeon</forename> <surname>Yoon</surname> <marker>25</marker> ,</persName>
+<persName><forename>Esther</forename> <surname>Asaki</surname> <marker>26-27</marker> ,</persName>
+<persName><forename>Abhinav</forename> <surname>Nellore</surname> <marker>15,28</marker> ,</persName>
+<persName><forename>Adam</forename> <surname>Stine</surname> <marker>1</marker> ,</persName>
+<persName><forename>Robert</forename> <surname>Sanders</surname> <marker>1</marker> ,</persName>
+<persName><forename>Jesse</forename> <surname>Becker</surname> <marker>1</marker> ,</persName>
+<persName><forename>Matt</forename> <surname>Lesko</surname> <marker>1</marker> ,</persName>
+<persName><forename>Mordechai</forename> <surname>Abzug</surname> <marker>1</marker> ,</persName>
+<persName><forename>Eugene</forename> <surname>Yaschenko</surname> <marker>1</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

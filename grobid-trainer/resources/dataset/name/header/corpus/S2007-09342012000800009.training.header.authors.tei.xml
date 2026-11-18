@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+	<persName>
+		<forename>Dora</forename>
+		<middlename>Ma</middlename>.
+		<surname>Sangerman-Jarquín</surname>
+		<marker>1 §</marker> ,
+	</persName>
+	<persName>
+		<forename>Eduardo</forename>
+		<surname>Espitia Rangel García</surname>
+		<marker>2</marker> ,
+	</persName>
+	<persName>
+		<forename>Héctor</forename>
+		<middlename>Eduardo</middlename>
+		<surname>Villaseñor Mir</surname>
+		<marker>1</marker> ,
+	</persName>
+	<persName>
+		<forename>Agustín</forename>
+		<surname>Navarro Bravo</surname>
+		<marker>1</marker> ,
+	</persName>
+	<persName>
+		<forename>Bertha</forename>
+		<middlename>Sofía</middlename>
+		<surname>Larqué Saavedra</surname>
+		<marker>1</marker> ,
+	</persName>
+	<persName>
+		<forename>Micaela</forename>
+		<surname>de la O Olán</surname>
+		<marker>1</marker> y
+	</persName>
+	<persName>
+		<forename>Rocío</forename>
+		<surname>Torres García</surname>
+		<marker>1</marker>
+	</persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

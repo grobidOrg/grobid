@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Helen</forename>
+								 <middlename>M</middlename>.
+								 <surname>Phillips</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Catherine</forename>
+								 <middlename>A</middlename>.
+								 <surname>Stothard</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Wasay</forename>
+								 <middlename>Mohiuddin</middlename>
+								 <surname>Shaikh Qureshi</surname>
+								 <marker>1,8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Anastasia</forename>
+								 <middlename>I</middlename>.
+								 <surname>Kousa</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>J</forename>.
+								 <middlename>Alberto</middlename>
+								 <surname>Briones-Leon</surname>
+								 <marker>1,9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ramada</forename>
+								 <middlename>R</middlename>.
+								 <surname>Khasawneh</surname>
+								 <marker>1,10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rachel</forename>
+								 <surname>Sanders</surname>
+								 <marker>1,11</marker> ,
+							</persName>
+							<persName>
+								 <forename>Silvia</forename>
+								 <surname>Mazzotta</surname>
+								 <marker>1,12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rebecca</forename>
+								 <surname>Dodds</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kerstin</forename>
+								 <surname>Seidel</surname>
+								 <marker>1,13</marker> ,
+							</persName>
+							<persName>
+								 <forename>Timothy</forename>
+								 <surname>Bates</surname>
+								 <marker>3,14</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mitsushiro</forename>
+								 <surname>Nakatomi</surname>
+								 <marker>1,15</marker> ,
+							</persName>
+							<persName>
+								 <forename>Simon</forename>
+								 <middlename>J</middlename>.
+								 <surname>Cockell</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jürgen</forename>
+								 <middlename>E</middlename>.
+								 <surname>Schneider</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Timothy</forename>
+								 <middlename>J</middlename>.
+								 <surname>Mohun</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>René</forename>
+								 <surname>Maehr</surname>
+								 <marker>7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ralf</forename>
+								 <surname>Kist</surname>
+								 <marker>1,3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Heiko</forename>
+								 <surname>Peters</surname>
+								 <marker>1</marker> &amp;
+							</persName>
+							<persName>
+								 <forename>Simon</forename>
+								 <middlename>D</middlename>.
+								 <surname>Bamforth</surname>
+								 <marker>1, *</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>
