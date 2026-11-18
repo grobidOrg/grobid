@@ -240,4 +240,11 @@ public class FieldSpecificationTest {
                                         "table_label",
                                         "table_caption")));
     }
+
+    @Test
+    public void testFundingStatement_isMergedAndDocumentLevel() {
+        FieldSpecification funding = FieldSpecification.fulltextFields(Arrays.asList("funding_stmt")).get(0);
+        assertTrue(funding.mergeMultipleValues);
+        assertTrue(funding.computeDocumentLevelMetrics);
+    }
 }

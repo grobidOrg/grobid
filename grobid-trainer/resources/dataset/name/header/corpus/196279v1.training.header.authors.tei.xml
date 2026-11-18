@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author> <persName> <forename>Kian-Yong</forename> <surname>Lee</surname> <marker>1*</marker> , </persName> <persName> <forename>Rebecca</forename> <middlename>A</middlename>. <surname>Green</surname> <marker>1*</marker> , </persName> <persName> <forename>Edgar</forename> <surname>Gutierrez</surname> <marker>2</marker> , </persName> <persName> <forename>J</forename>. <middlename>Sebastian</middlename> <surname>Gomez-Cavazos</surname> <marker>1</marker> , </persName> <persName> <forename>Irina</forename> <surname>Kolotuev</surname> <marker>3</marker> , </persName> <persName> <forename>Shaohe</forename> <surname>Wang</surname> <marker>1,4</marker> , </persName> <persName> <forename>Arshad</forename> <surname>Desai</surname> <marker>1</marker> , </persName> <persName> <forename>Alex</forename> <surname>Groisman</surname> <marker>2</marker> , and </persName> <persName> <forename>Karen</forename> <surname>Oegema</surname> <marker>1@</marker> </persName> </author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

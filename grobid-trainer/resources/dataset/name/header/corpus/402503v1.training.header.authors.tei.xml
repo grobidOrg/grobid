@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+	<persName>
+		<forename>Helen</forename>
+		<middlename>Byomire</middlename>
+		<surname>Ndagije</surname>
+		<marker>¶1*</marker> ,
+	</persName>
+	<persName>
+		<forename>Leonard</forename>
+		<surname>Manirakiza</surname>
+		<marker>¶1</marker> ,
+	</persName>
+	<persName>
+		<forename>Dan</forename>
+		<surname>Kajungu</surname>
+		<marker>¶2</marker> ,
+	</persName>
+	<persName>
+		<forename>Edward</forename>
+		<surname>Galiwango</surname>
+		<marker>2</marker> ,
+	</persName>
+	<persName>
+		<forename>Donna</forename>
+		<surname>Kusemererwa</surname>
+		<marker>1</marker> ,
+	</persName>
+	<persName>
+		<forename>Sten</forename>
+		<surname>Olsson</surname>
+		<marker>&amp;3</marker> ,
+	</persName>
+	<persName>
+		<forename>Anne</forename>
+		<surname>Spinewine</surname>
+		<marker>&amp;4</marker> ,
+	</persName>
+	<persName>
+		<forename>Niko</forename>
+		<surname>Speybroeck</surname>
+		<marker>&amp;4</marker> .
+	</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -91,6 +91,14 @@ public class TEIAuthorSaxParser extends DefaultHandler {
             accumulator.append(" +L+ ");
         } else if (qName.equals("pb")) {
             accumulator.append(" +PAGE+ ");
+        } else if (qName.equals("persName")) {
+            // text after the last field of a person, typically the connector to the next person (", ", "and",
+            // ";", "&"): it is part of the sequence at runtime, so keep it as <other> instead of dropping it
+            String text = getText();
+            if (text.length() > 0) {
+                currentTag = "<other>";
+                writeField(text);
+            }
         } else if (qName.equals("author")) {
             String text = getText();
             if (text.length() > 0) {

@@ -1,0 +1,23 @@
+task_name: author_affiliation_extraction
+
+entity_schema_path: "author_affiliation_schema.json"
+
+reporting_modes:
+  - strict
+  - fuzzy
+
+key_field: name
+
+field_eval_rules:
+  name:
+    match_type: fuzzy
+    normalization: true
+    similarity_threshold: 0.95
+  affiliations:
+    match_type: fuzzy
+    normalization: true
+    similarity_threshold: 0.95
+
+combined_eval:
+  description: "TP requires a matched key and complete attribute match"
+  harsh_penalty: true

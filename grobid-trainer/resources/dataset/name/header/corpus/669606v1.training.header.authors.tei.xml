@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Emmanuel</forename>
+								<middlename>Kiiza</middlename>
+								<surname>Mwesiga</surname>
+								<marker>1,2,3</marker>;
+							</persName>
+							<persName>
+								<forename>Noeline</forename>
+								<surname>Nakasujja</surname>
+								<marker>1,2</marker>;
+							</persName>
+							<persName>
+								<forename>Juliet</forename>
+								<surname>Nakku</surname>
+								<marker>4</marker>
+							</persName>
+							;
+							<persName>
+								<forename>Annet</forename>
+								<surname>Nanyonga</surname>
+								<marker>4</marker> ;
+							</persName>
+							<persName>
+								<forename>Joy</forename>
+								<middlename>Louise</middlename>
+								<surname>Gumikiriza</surname>
+								<marker>1,2</marker>;
+							</persName>
+							<persName>
+								<forename>Paul</forename>
+								<surname>Bangirana</surname>
+								<marker>1,2</marker>
+							</persName>
+							;
+							<persName>
+								<forename>Dickens</forename>
+								<surname>Akena</surname>
+								<marker>1,2</marker> ;
+							</persName>
+							<persName>
+								<forename>Seggane</forename>
+								<surname>Musisi</surname>
+								<marker>1,2</marker>.
+								</persName>
+							<persName> <roleName>Dr</roleName>. <forename>Emmanuel</forename> <middlename>Kiiza</middlename> <surname>Mwesiga</surname> </persName> </author>
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

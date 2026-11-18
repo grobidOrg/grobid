@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Shu-Xia</forename>
+<surname>Cao</surname>
+<marker>1, †</marker> ,
+</persName>
+<persName>
+<forename>Ying</forename>
+<surname>Zhang</surname>
+<marker>2, †</marker> ,
+</persName>
+<persName>
+<forename>Xing-Yue</forename>
+<surname>Hu</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Bin</forename>
+<surname>Hong</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Peng</forename>
+<surname>Sun</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Hai-Yang</forename>
+<surname>He</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Hong-Yan</forename>
+<surname>Geng</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Ai-Min</forename>
+<surname>Bao</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Shu-Min</forename>
+<surname>Duan</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Jian-Ming</forename>
+<surname>Yang</surname>
+<marker>3</marker> ,
+</persName>
+<persName>
+<forename>Tian-Ming</forename>
+<surname>Gao</surname>
+<marker>3</marker> ,
+</persName>
+<persName>
+<forename>Hong</forename>
+<surname>Lian</surname>
+<marker>2,*</marker> ,
+</persName>
+<persName>
+<forename>Xiao-Ming</forename>
+<surname>Li</surname>
+<marker>1, 2,*</marker>
+</persName>
+<persName>
+<forename>Xiao-Ming</forename>
+<surname>Li</surname>
+</persName>
+<persName>
+<forename>Xiao-Ming</forename>
+<surname>Li</surname>
+</persName>
+<persName>
+<forename>Xiao-Ming</forename>
+<surname>Li</surname>
+</persName>
+<persName>
+<forename>Xiao-Ming</forename>
+<surname>Li</surname>
+</persName>
+<persName>
+<forename>Shu-Xia</forename>
+<surname>Cao</surname>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Eva</forename>
+<surname>Heinz</surname>
+<marker>1 #</marker> </persName> <persName> <forename>Hasan</forename>
+<surname>Ejaz</surname>
+<marker>2,3,4</marker>
+</persName>
+<persName>
+<forename>Josefin</forename>
+<middlename>Bartholdson</middlename>
+<surname>Scott</surname>
+<marker>5</marker>
+</persName>
+<persName>
+<forename>Nancy</forename>
+<surname>Wang</surname>
+<marker>3</marker>
+</persName>
+<persName>
+<forename>Shruti</forename>
+<surname>Guanjaran</surname>
+<marker>3</marker>
+</persName>
+<persName>
+<forename>Derek</forename>
+<surname>Pickard</surname>
+<marker>1</marker>
+</persName>
+<persName>
+<forename>Jonathan</forename>
+<surname>Wilksch</surname>
+<marker>3</marker>
+</persName>
+<persName>
+<forename>Hanwei</forename>
+<surname>Cao</surname>
+<marker>3</marker>
+</persName>
+<persName>
+<forename>Ikram-ul-Haq</forename>
+<marker>6</marker>
+</persName>
+<persName>
+<forename>Gordon</forename>
+<surname>Dougan</surname>
+<marker>1,5</marker>
+</persName>
+<persName>
+<forename>Richard</forename>
+<middlename>A</middlename>
+<surname>Strugnell</surname>
+<marker>3 #</marker> </persName> <persName> <forename>R</forename>.
+<middlename>A</middlename>.
+<surname>Strugnell</surname>,
+</persName>
+<persName>
+<forename>Eva</forename>
+<surname>Heinz</surname>,
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

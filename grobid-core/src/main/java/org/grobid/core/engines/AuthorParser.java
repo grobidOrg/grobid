@@ -168,6 +168,27 @@ public class AuthorParser {
     }
 
     /**
+     * Copy of the token list where every line break is a space and trailing white space is dropped, so that
+     * only the last real token gets LINEEND, as in the training data.
+     */
+    static List<LayoutToken> withoutLineBreaks(List<LayoutToken> tokens) {
+        List<LayoutToken> result = new ArrayList<>(tokens.size());
+        for (LayoutToken token : tokens) {
+            String text = token.getText();
+            if (text != null && (text.equals("\n") || text.equals("\r") || text.equals("\r\n"))) {
+                result.add(new LayoutToken(" "));
+            } else {
+                result.add(token);
+            }
+        }
+        int end = result.size();
+        while (end > 0 && StringUtils.isBlank(result.get(end - 1).getText())) {
+            end--;
+        }
+        return new ArrayList<>(result.subList(0, end));
+    }
+
+    /**
      * Common processing of authors in header or citation
      *
      * @param tokens list of LayoutToken object to process
@@ -191,11 +212,16 @@ public class AuthorParser {
         }
         List<Person> fullAuthors = null;
         try {
-            List<OffsetPosition> titlePositions = Lexicon.getInstance().tokenPositionsPersonTitle(tokens);
-            List<OffsetPosition> suffixPositions = Lexicon.getInstance().tokenPositionsPersonSuffix(tokens);
+            // The header name model never sees a line break inside a training sequence (the trainer drops
+            // <lb/> and createTraining never writes it), so a runtime line break would give the token before
+            // it a LINEEND feature the model only knows as "end of the author list". Compute the features
+            // without the line breaks; the tagger output is aligned on the non-space tokens, which are the same.
+            List<LayoutToken> featureTokens = head ? withoutLineBreaks(tokens) : tokens;
+            List<OffsetPosition> titlePositions = Lexicon.getInstance().tokenPositionsPersonTitle(featureTokens);
+            List<OffsetPosition> suffixPositions = Lexicon.getInstance().tokenPositionsPersonSuffix(featureTokens);
 
             String sequence = FeaturesVectorName.addFeaturesName(
-                    tokens,
+                    featureTokens,
                     null,
                     titlePositions,
                     suffixPositions);

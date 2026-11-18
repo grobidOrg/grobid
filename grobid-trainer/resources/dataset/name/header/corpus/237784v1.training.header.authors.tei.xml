@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Daniel</forename>
+<surname>Rico</surname>
+<marker>1, * ,#</marker> ,
+</persName>
+<persName>
+<forename>Joost</forename>
+<middlename>HA</middlename>
+<surname>Martens</surname>
+<marker>2, *</marker>,
+</persName>
+<persName>
+<forename>Kate</forename>
+<surname>Downes</surname>
+<marker>3,4, *</marker>,
+</persName>
+<persName>
+<forename>Enrique</forename>
+<surname>Carrillo-de-Santa-Pau</surname>
+<marker>5, *</marker>,
+</persName>
+<persName>
+<forename>Vera</forename>
+<surname>Pancaldi</surname>
+<marker>6, *</marker>,
+</persName>
+<persName>
+<forename>Alessandra</forename>
+<surname>Breschi</surname>
+<marker>7</marker>, ,
+</persName>
+<persName>
+<forename>David</forename>
+<surname>Richardson</surname>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>Simon</forename>
+<surname>Heath</surname>
+<marker>9</marker> ,
+</persName>
+<persName>
+<forename>Sadia</forename>
+<surname>Saeed</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Mattia</forename>
+<surname>Frontini</surname>
+<marker>3,4</marker> ,
+</persName>
+<persName>
+<forename>Lu</forename>
+<surname>Chen</surname>
+<marker>3,10</marker> ,
+</persName>
+<persName>
+<forename>Stephen</forename>
+<surname>Watt</surname>
+<marker>10</marker> ,
+</persName>
+<persName>
+<forename>Fabian</forename>
+<surname>Müller</surname>
+<marker>11</marker> ,
+</persName>
+<persName>
+<forename>Laura</forename>
+<surname>Clarke</surname>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>Hindrik</forename>
+<middlename>HD</middlename>
+<surname>Kerstens</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Steven</forename>
+<middlename>P</middlename>
+<surname>Wilder</surname>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>Emilio</forename>
+<surname>Palumbo</surname>
+<marker>7</marker> ,
+</persName>
+<persName>
+<forename>Sarah</forename>
+<surname>Djebali</surname>
+<marker>7</marker> ,
+</persName>
+<persName>
+<forename>Emanuele</forename>
+<surname>Raineri</surname>
+<marker>9</marker> ,
+</persName>
+<persName>
+<forename>Angelika</forename>
+<surname>Merkel</surname>
+<marker>9</marker> ,
+</persName>
+<persName>
+<forename>Anna</forename>
+<surname>Esteve-Codina</surname>
+<marker>9</marker> ,
+</persName>
+<persName>
+<forename>Marc</forename>
+<surname>Sultan</surname>
+<marker>12</marker> ,
+</persName>
+<persName>
+<forename>Alena</forename>
+<surname>van Bommel</surname>
+<marker>12</marker> ,
+</persName>
+<persName>
+<forename>Marta</forename>
+<surname>Gut</surname>
+<marker>9</marker> ,
+</persName>
+<persName>
+<forename>Marie- Laure</forename>
+<surname>Yaspo</surname>
+<marker>12</marker> ,
+</persName>
+<persName>
+<forename>Miriam</forename>
+<surname>Rubio</surname>
+<marker>5</marker> ,
+</persName>
+<persName>
+<forename>José</forename>
+<middlename>María</middlename>
+<surname>Fernández</surname>
+<marker>6,13</marker> ,
+</persName>
+<persName>
+<forename>Anthony</forename>
+<surname>Attwood</surname>
+<marker>3,4</marker> ,
+</persName>
+<persName>
+<forename>Victor</forename>
+<surname>de la Torre</surname>
+<marker>5,13</marker> ,
+</persName>
+<persName>
+<forename>Romina</forename>
+<surname>Royo</surname>
+<marker>6,13</marker> ,
+</persName>
+<persName>
+<forename>Stamatina</forename>
+<surname>Fragkogianni</surname>
+<marker>6</marker> ,
+</persName>
+<persName>
+<forename>Josep</forename>
+<middlename>Lluis</middlename>
+<surname>Gelpí</surname>
+<marker>6,13</marker> ,
+</persName>
+<persName>
+<forename>David</forename>
+<surname>Torrents</surname>
+<marker>6,14</marker> ,
+</persName>
+<persName>
+<forename>Valentina</forename>
+<surname>Iotchkova</surname>
+<marker>8,10</marker> ,
+</persName>
+<persName>
+<forename>Colin</forename>
+<surname>Logie</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Ali</forename>
+<surname>Aghajanirefah</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Abhishek</forename>
+<middlename>A</middlename>
+<surname>Singh</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Eva</forename>
+<middlename>M</middlename>
+<surname>Janssen-Megens</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Kim</forename>
+<surname>Berentsen</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Wendy</forename>
+<surname>Erber</surname>
+<marker>15</marker> ,
+</persName>
+<persName>
+<forename>Augusto</forename>
+<surname>Rendon</surname>
+<marker>3,23</marker> ,
+</persName>
+<persName>
+<forename>Myrto</forename>
+<surname>Kostadima</surname>
+<marker>3,4,8</marker> ,
+</persName>
+<persName>
+<forename>Remco</forename>
+<surname>Loos</surname>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>Martijn</forename>
+<middlename>A</middlename>
+<surname>van der Ent</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Anita</forename>
+<surname>Kaan</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Nilofar</forename>
+<surname>Sharifi</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Dirk</forename>
+<middlename>S</middlename>
+<surname>Paul</surname>
+<marker>16</marker> ,
+</persName>
+<persName>
+<forename>Daniela</forename>
+<middlename>C</middlename>
+<surname>Ifrim</surname>
+<marker>17</marker> ,
+</persName>
+<persName>
+<forename>Jessica</forename>
+<surname>Quintin</surname>
+<marker>17</marker> ,
+</persName>
+<persName>
+<forename>Michael</forename>
+<middlename>I</middlename>.
+<surname>Love</surname>
+<marker>18,19</marker> ,
+</persName>
+<persName>
+<forename>David</forename>
+<middlename>G</middlename>
+<surname>Pisano</surname>
+<marker>5</marker> ,
+</persName>
+<persName>
+<forename>Frances</forename>
+<surname>Burden</surname>
+<marker>3</marker> ,
+</persName>
+<persName>
+<forename>Nicola</forename>
+<surname>Foad</surname>
+<marker>3</marker> ,
+</persName>
+<persName>
+<forename>Samantha</forename>
+<surname>Farrow</surname>
+<marker>3</marker> ,
+</persName>
+<persName>
+<forename>Daniel</forename>
+<middlename>R</middlename>
+<surname>Zerbino</surname>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>Ian</forename>
+<surname>Dunham</surname>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>Taco</forename>
+<surname>Kuijpers</surname>
+<marker>20</marker> ,
+</persName>
+<persName>
+<forename>Hans</forename>
+<surname>Lehrach</surname>
+<marker>12</marker> ,
+</persName>
+<persName>
+<forename>Thomas</forename>
+<surname>Lengauer</surname>
+<marker>11</marker> ,
+</persName>
+<persName>
+<forename>Paul</forename>
+<surname>Bertone</surname>
+<marker>4,8,24,25</marker> ,
+</persName>
+<persName>
+<forename>Mihai</forename>
+<middlename>G</middlename>
+<surname>Netea</surname>
+<marker>17</marker> ,
+</persName>
+<persName>
+<forename>Martin</forename>
+<surname>Vingron</surname>
+<marker>12</marker> ,
+</persName>
+<persName>
+<forename>Stephan</forename>
+<surname>Beck</surname>
+<marker>16</marker> ,
+</persName>
+<persName>
+<forename>Paul</forename>
+<surname>Flicek</surname>
+<marker>8</marker> ,
+</persName>
+<persName>
+<forename>Ivo</forename>
+<surname>Gut</surname>
+<marker>9</marker> ,
+</persName>
+<persName>
+<forename>Willem</forename>
+<middlename>H</middlename>
+<surname>Ouwehand</surname>
+<marker>3,4</marker> ,
+</persName>
+<persName>
+<forename>Christoph</forename>
+<surname>Bock</surname>
+<marker>11,21,22</marker> ,
+</persName>
+<persName>
+<forename>Nicole</forename>
+<surname>Soranzo</surname>
+<marker>3,10</marker> ,
+</persName>
+<persName>
+<forename>Roderic</forename>
+<surname>Guigo</surname>
+<marker>7,13</marker> ,
+</persName>
+<persName>
+<forename>Alfonso</forename>
+<surname>Valencia</surname>
+<marker>6,13,14</marker> ,
+</persName>
+<persName>
+<forename>Hendrik</forename>
+<middlename>G</middlename>
+<surname>Stunnenberg</surname>
+<marker>2</marker>,
+</persName>
+# Affiliations
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

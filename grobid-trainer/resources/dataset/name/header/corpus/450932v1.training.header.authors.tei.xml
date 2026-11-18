@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Baoqiang</forename>
+								 <surname>Li</surname>
+								 <marker>1, †</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tatiana</forename>
+								 <middlename>V</middlename>.
+								 <surname>Esipova</surname>
+								 <marker>2, †</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ikbal</forename>
+								 <surname>Sencan</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kivilcim</forename>
+								 <surname>Kilic</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Buyin</forename>
+								 <surname>Fu</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Michele</forename>
+								 <surname>Desjardins</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mohammad</forename>
+								 <surname>Moeini</surname>
+								 <marker>5,8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sreekanth</forename>
+								 <surname>Kura</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mohammad</forename>
+								 <middlename>A</middlename>.
+								 <surname>Yaseen</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Frederic</forename>
+								 <surname>Lesage</surname>
+								 <marker>5,8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Leif</forename>
+								 <surname>Østergaard</surname>
+								 <marker>7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Anna</forename>
+								 <surname>Devor</surname>
+								 <marker>1,3,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <middlename>A</middlename>.
+								 <surname>Boas</surname>
+								 <marker>1,6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sergei</forename>
+								 <middlename>A</middlename>.
+								 <surname>Vinogradov</surname>
+								 <marker>2</marker> , and
+							</persName>
+							<persName>
+								 <forename>Sava</forename>
+								 <surname>Sakadžić</surname>
+								 <marker>1,*</marker>
+							</persName>
+							<persName>
+								 <forename>Sava</forename>
+								 <surname>Sakadzic</surname>,
+								 <roleName>PhD</roleName>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

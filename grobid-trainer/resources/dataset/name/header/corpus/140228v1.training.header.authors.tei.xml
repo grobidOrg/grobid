@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Marcia</forename> <surname>McNutt</surname> ,<marker>* ,1</marker></persName>
+<persName><forename>Monica</forename> <surname>Bradford</surname>, <marker>2</marker></persName>
+<persName><forename>Jeffrey</forename> <surname>Drazen</surname>, <marker>3</marker></persName>
+<persName><forename>Brooks</forename> <surname>Hanson</surname>, <marker>4</marker></persName>
+<persName><forename>Bob</forename> <surname>Howard</surname>, <marker>5</marker></persName>
+<persName><forename>Kathleen</forename> <middlename>Hall</middlename> <surname>Jamieson</surname>, <marker>6</marker></persName>
+<persName><forename>Véronique</forename> <surname>Kiermer</surname>, <marker>7</marker></persName>
+<persName><forename>Michael</forename> <surname>Magoulias</surname>, <marker>8</marker></persName>
+<persName><forename>Emilie</forename> <surname>Marcus</surname>, <marker>9</marker></persName>
+<persName><forename>Barbara</forename> <middlename>Kline</middlename> <surname>Pope</surname>, <marker>10</marker></persName>
+<persName><forename>Randy</forename> <surname>Schekman</surname>, <marker>11</marker></persName>
+<persName><forename>Sowmya</forename> <surname>Swaminathan</surname>, <marker>12</marker></persName>
+<persName><forename>Peter</forename> <surname>Stang</surname>, <marker>13</marker></persName>
+<persName><forename>Inder</forename> <surname>Verma</surname> <marker>14 *</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

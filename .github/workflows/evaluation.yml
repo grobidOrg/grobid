@@ -8,8 +8,9 @@ name: End-to-end evaluation
 #   The runs are without consolidation, so without biblio-glutton, unless the pull request
 #   also has the label `evaluation:glutton`.
 #   The corpora are selected with the labels `corpus:all`, `corpus:pubmed`, `corpus:biorxiv`,
-#   `corpus:plos` and `corpus:elife`: adding `evaluation:crf` or `evaluation:delft` evaluates
-#   the corpora labelled on the pull request (all of them if none is), adding a `corpus:*`
+#   `corpus:plos`, `corpus:elife` and `corpus:arxiv`: adding `evaluation:crf` or
+#   `evaluation:delft` evaluates the corpora labelled on the pull request (all of them if none
+#   is), adding a `corpus:*`
 #   label to a pull request that has one of them evaluates that corpus, and adding
 #   `evaluation:glutton` evaluates the labelled corpora again with biblio-glutton.
 #   Once the pull request has `evaluation:crf` or `evaluation:delft`, each push evaluates
@@ -21,6 +22,11 @@ name: End-to-end evaluation
 # Each corpus is split into shards processed in parallel (`predict`), the TEI they produce
 # is gathered and scored once per corpus (`score`), and the reports are compared with the
 # ones of the latest successful run on the default branch (`report`).
+#
+# The arXiv corpus (authors and affiliations of arXiv preprints) has JSON gold data, scored by
+# .github/scripts/evaluation/score_arxiv.py instead of jatsEval. It is in a private Hugging Face
+# dataset, read with the HF_TOKEN_COMET secret: the runs without it (pull requests from forks)
+# leave it out of `all`.
 
 on:
   workflow_dispatch:
@@ -33,7 +39,7 @@ on:
       datasets:
         description: Corpus to evaluate
         type: choice
-        options: [ all, PMC_sample_1943, biorxiv-10k-test-2000, PLOS_1000, eLife_984 ]
+        options: [ all, PMC_sample_1943, biorxiv-10k-test-2000, PLOS_1000, eLife_984, COMET_arxiv_1091 ]
         default: all
       flavor:
         description: Model flavor
@@ -80,6 +86,9 @@ env:
   EVAL_DATASET_REPO: sciencialab/grobid-evaluation
   # branch, tag or commit of the dataset; pin it to keep runs comparable across dataset updates
   EVAL_DATASET_REVISION: main
+  # the arXiv corpus, in a private dataset read with the HF_TOKEN_COMET secret
+  EVAL_ARXIV_DATASET_REPO: sciencialab/pdfs-arxiv-author-affiliations
+  EVAL_ARXIV_DATASET_REVISION: main
   # DeLFT and JEP, which GROBID runs the Deep Learning models with
   EVAL_VENV: /home/runner/eval-venv
   # the scripts of .github/scripts/evaluation, apart from DeLFT: its dependencies downgrade
@@ -163,6 +172,8 @@ jobs:
           INPUT_FLAVOR: ${{ inputs.flavor }}
           INPUT_CONSOLIDATION: ${{ inputs.consolidation }}
           INPUT_SHARDS: ${{ inputs.shards }}
+          # whether the private dataset of the arXiv corpus can be read
+          HAS_ARXIV_TOKEN: ${{ secrets.HF_TOKEN_COMET != '' }}
         run: |
           # corpus:* label -> corpus directory in the dataset
           corpus_dataset() {
@@ -172,7 +183,8 @@ jobs:
               biorxiv) echo biorxiv-10k-test-2000 ;;
               plos) echo PLOS_1000 ;;
               elife) echo eLife_984 ;;
-              *) echo "::error::Unknown corpus label 'corpus:$1': use corpus:all, corpus:pubmed, corpus:biorxiv, corpus:plos or corpus:elife" >&2; return 1 ;;
+              arxiv) echo COMET_arxiv_1091 ;;
+              *) echo "::error::Unknown corpus label 'corpus:$1': use corpus:all, corpus:pubmed, corpus:biorxiv, corpus:plos, corpus:elife or corpus:arxiv" >&2; return 1 ;;
             esac
           }
 
@@ -229,9 +241,23 @@ jobs:
           # Shards per corpus. A job is killed after 6 hours, and Deep Learning models on
           # a CPU runner are an order of magnitude slower than the CRF ones.
           if [ "${PROFILE}" = "delft" ]; then
-            DEFAULT_SHARDS='{"PMC_sample_1943": 4, "biorxiv-10k-test-2000": 4, "PLOS_1000": 2, "eLife_984": 2}'
+            DEFAULT_SHARDS='{"PMC_sample_1943": 4, "biorxiv-10k-test-2000": 4, "PLOS_1000": 2, "eLife_984": 2, "COMET_arxiv_1091": 2}'
           else
-            DEFAULT_SHARDS='{"PMC_sample_1943": 2, "biorxiv-10k-test-2000": 2, "PLOS_1000": 1, "eLife_984": 1}'
+            DEFAULT_SHARDS='{"PMC_sample_1943": 2, "biorxiv-10k-test-2000": 2, "PLOS_1000": 1, "eLife_984": 1, "COMET_arxiv_1091": 1}'
+          fi
+
+          # Without HF_TOKEN_COMET (pull requests from forks), the arXiv corpus cannot be downloaded:
+          # it is left out of `all`, and asking for it fails here rather than in a predict job,
+          # whose failure would leave every corpus unscored.
+          if [ "${HAS_ARXIV_TOKEN}" != "true" ]; then
+            if jq -e 'index("COMET_arxiv_1091")' <<< "${SELECTED_JSON}" > /dev/null; then
+              echo "::error::The arXiv corpus is in a private Hugging Face dataset and this run has no HF_TOKEN_COMET secret (a pull request from a fork has none): remove corpus:arxiv, or run the workflow from a branch of ${GITHUB_REPOSITORY}."
+              exit 1
+            fi
+            if jq -e 'index("all")' <<< "${SELECTED_JSON}" > /dev/null; then
+              echo "::notice::No HF_TOKEN_COMET secret in this run: the arXiv corpus, in a private dataset, is not evaluated"
+            fi
+            DEFAULT_SHARDS=$(jq -c 'del(.COMET_arxiv_1091)' <<< "${DEFAULT_SHARDS}")
           fi
 
           if [ "${FLAVOR}" = "none" ]; then
@@ -328,11 +354,18 @@ jobs:
 
       - name: Download the corpus shard
         env:
-          # optional: only raises the Hugging Face rate limits; absent on fork pull requests
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          # raises the Hugging Face rate limits; HF_TOKEN_COMET also reads the private dataset of
+          # the arXiv corpus. Both are absent on fork pull requests.
+          HF_TOKEN: ${{ matrix.dataset == 'COMET_arxiv_1091' && secrets.HF_TOKEN_COMET || secrets.HF_TOKEN }}
         run: |
+          REPO="${EVAL_DATASET_REPO}"
+          REVISION="${EVAL_DATASET_REVISION}"
+          if [ "${DATASET}" = "COMET_arxiv_1091" ]; then
+            REPO="${EVAL_ARXIV_DATASET_REPO}"
+            REVISION="${EVAL_ARXIV_DATASET_REVISION}"
+          fi
           "${TOOLS_VENV}/bin/python" .github/scripts/evaluation/fetch_dataset.py \
-            --repo "${EVAL_DATASET_REPO}" --revision "${EVAL_DATASET_REVISION}" \
+            --repo "${REPO}" --revision "${REVISION}" \
             --dataset "${DATASET}" --shard "${SHARD}" --shards "${SHARDS}" --output data
 
       - name: Configure GROBID
@@ -389,8 +422,8 @@ jobs:
             --argjson seconds "${SECONDS_SPENT:-0}" \
             '{dataset: $dataset, shard: $shard, pdf: $pdf, tei: $tei, seconds: $seconds}' \
             > "out/stats-${DATASET}-${SHARD}.json"
-          # the TEI and the gold XML, everything the score job needs: it does not download the
-          # gold XML again, which would double the requests to Hugging Face and their rate limits
+          # the TEI and the gold data, everything the score job needs: it does not download the
+          # gold data again, which would double the requests to Hugging Face and their rate limits
           (cd data && find "${DATASET}" -type f ! -iname '*.pdf' -print0) \
             | tar --null -czf "out/tei-${DATASET}-${SHARD}.tar.gz" -C data -T -
 
@@ -432,16 +465,24 @@ jobs:
       DATASET: ${{ matrix.dataset }}
     steps:
       - uses: actions/checkout@v7
+      # jatsEval scores the JATS corpora, score_arxiv.py the arXiv corpus
       - name: Set up JDK
+        if: matrix.dataset != 'COMET_arxiv_1091'
         uses: actions/setup-java@v6.2.0
         with:
           java-version: '21'
           distribution: 'temurin'
       - uses: gradle/actions/setup-gradle@v6
+        if: matrix.dataset != 'COMET_arxiv_1091'
         with:
           # only the summary of the report job is of interest
           add-job-summary: never
-      - name: Download the TEI and the gold XML
+      - name: Set up Python
+        if: matrix.dataset == 'COMET_arxiv_1091'
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - name: Download the TEI and the gold data
         uses: actions/download-artifact@v8
         with:
           pattern: tei-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-*
@@ -454,6 +495,17 @@ jobs:
             tar -xzf "${archive}" -C data
           done
           echo "$(find "data/${DATASET}" -name '*.fulltext*.tei.xml' | wc -l) TEI to score"
+          mkdir -p reports
+
+          if [ "${DATASET}" = "COMET_arxiv_1091" ]; then
+            python -m venv "${TOOLS_VENV}"
+            # pinned, so that the scores of two runs differ only by the TEI
+            "${TOOLS_VENV}/bin/pip" install --no-cache-dir numpy==2.4.6 scipy==1.17.1 rapidfuzz==3.14.6 pyyaml==6.0.3
+            "${TOOLS_VENV}/bin/python" .github/scripts/evaluation/score_arxiv.py --data "data/${DATASET}" \
+              --output "reports/report-${DATASET}.md" --json "arxiv-eval-${DATASET}.json" 2>&1 \
+              | tee "score-${DATASET}.log"
+            exit "${PIPESTATUS[0]}"
+          fi
 
           ARGS=(-Pp2t="${PWD}/data/${DATASET}" -Prun=0 -Pprogressbar=simple)
           [ -n "${FLAVOR}" ] && ARGS+=(-Pflavor="${FLAVOR}")
@@ -465,7 +517,6 @@ jobs:
             echo "::error::The evaluation of ${DATASET} produced no report, see the log"
             exit 1
           fi
-          mkdir -p reports
           mv grobid-home/tmp/report.md "reports/report-${DATASET}.md"
       - name: Upload the report
         uses: actions/upload-artifact@v7
@@ -478,7 +529,10 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: log-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-score
-          path: score-*.log
+          # arxiv-eval-*.json: the matches of each article of the arXiv corpus
+          path: |
+            score-*.log
+            arxiv-eval-*.json
           retention-days: 7
 
   report:

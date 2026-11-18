@@ -1850,7 +1850,12 @@ public class EndToEndEvaluation {
 
             // Contributions in eLife are not text elements, but a combination between the author and some text elements,
             //  since we cannot easily put them together it's better to ignore them for the time being.
-            removeFieldsFromEvaluation(Arrays.asList("contribution_stmt", "conflict_stmt"), fulltextFields);
+            // The eLife <funding-statement> only holds the closing sentence of the Funding section: the funder
+            //  table printed above it is encoded as structured <award-group> data, which cannot be put back
+            //  in printed order (e.g. surname before given names), so funding is ignored as well.
+            removeFieldsFromEvaluation(
+                    Arrays.asList("contribution_stmt", "conflict_stmt", "funding_stmt"),
+                    fulltextFields);
         }
 
         if (StringUtils.containsIgnoreCase(xmlInputPath, "biorxiv")) {

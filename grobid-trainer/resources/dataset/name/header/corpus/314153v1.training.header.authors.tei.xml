@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Noura</forename>
+								 <surname>Alzahofi</surname>
+								 <marker>1*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Christopher</forename>
+								 <middlename>L</middlename>.
+								 <surname>Robinson</surname>
+								 <marker>1*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tobias</forename>
+								 <surname>Welz</surname>
+								 <marker>2*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Emma</forename>
+								 <middlename>L</middlename>.
+								 <surname>Page</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Deborah</forename>
+								 <middlename>A</middlename>.
+								 <surname>Briggs</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Amy</forename>
+								 <middlename>K</middlename>.
+								 <surname>Stainthorp</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>James</forename>
+								 <surname>Reekes</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <middlename>A</middlename>.
+								 <surname>Elbe</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Felix</forename>
+								 <surname>Straube</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Edward</forename>
+								 <middlename>W</middlename>.
+								 <surname>Tate</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Philip</forename>
+								 <middlename>S</middlename>.
+								 <surname>Goff</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Elena</forename>
+								 <middlename>V</middlename>.
+								 <surname>Sviderskaya</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Marta</forename>
+								 <surname>Cantero</surname>
+								 <marker>5,6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lluis</forename>
+								 <surname>Montoliu</surname>
+								 <marker>5,6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Maryse</forename>
+								 <surname>Bailly</surname>
+								 <marker>7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Eugen</forename>
+								 <surname>Kerkhoff</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alistair</forename>
+								 <middlename>N</middlename>.
+								 <surname>Hume</surname>
+								 <marker>1**</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

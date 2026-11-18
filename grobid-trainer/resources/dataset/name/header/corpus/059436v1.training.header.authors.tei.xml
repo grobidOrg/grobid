@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Vagheesh</forename> <middlename>M</middlename> <surname>Narasimhan</surname> <marker>1* τ</marker> ,</persName>
+<persName><forename>Raheleh</forename> <surname>Rahbari</surname> <marker>1 τ</marker> ,</persName>
+<persName><forename>Aylwyn</forename> <surname>Scally</surname> <marker>2</marker> ,</persName>
+<persName><forename>Arthur</forename> <surname>Wuster</surname> <marker>1,3</marker> ,</persName>
+<persName><forename>Dan</forename> <surname>Mason</surname> <marker>4</marker> ,</persName>
+<persName><forename>Yali</forename> <marker>5</marker> <surname>Xue</surname> <marker>1</marker> ,</persName>
+<persName><forename>John</forename> <surname>Wright</surname> <marker>4</marker> ,</persName>
+<persName><forename>Richard</forename> <middlename>C</middlename> <surname>Trembath</surname> <marker>5,6</marker> ,</persName>
+<persName><forename>Eamonn</forename> <middlename>R</middlename> <surname>Maher</surname> <marker>7,8</marker> ,</persName>
+<persName><forename>David</forename> <middlename>A</middlename> <surname>van Heel</surname> <marker>5</marker> ,</persName>
+<persName><forename>Adam</forename> <surname>Auton</surname> <marker>9 , 6</marker></persName>
+<persName><forename>Matthew</forename> <middlename>E</middlename> <surname>Hurles</surname> <marker>1</marker> ,</persName>
+<persName><forename>Chris</forename> <surname>Tyler-Smith</surname> <marker>1</marker> ,</persName>
+<persName><forename>Richard</forename> <surname>Durbin</surname> <marker>1* 7 8</marker></persName>
+Affiliations 9
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

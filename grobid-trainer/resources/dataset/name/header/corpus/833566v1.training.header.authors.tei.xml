@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Mezias</surname>, <forename>Christopher</forename> <marker>1*</marker> ;</persName>
+<persName><surname>Torok</surname>, <forename>Justin</forename> <marker>1*</marker> ;</persName>
+<persName><surname>Maia</surname>, <forename>Pedro</forename> <middlename>D</middlename>. <marker>2</marker> ;</persName>
+<persName><surname>Raj</surname>, <forename>Ashish</forename> <marker>2</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

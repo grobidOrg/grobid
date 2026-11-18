@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName><forename>Fernando</forename> <middlename>A</middlename>. <middlename>C</middlename>. <surname>Seara</surname>, <marker>¹ , ² #</marker></persName>
+<persName><forename>Iracema</forename> <middlename>G</middlename>. <surname>Araujo¹</surname> <marker># , #</marker></persName>
+<persName><forename>Güínever</forename> <middlename>E</middlename>. <surname>Império</surname>, <marker>1</marker></persName>
+<persName><forename>Michelle</forename> <middlename>P</middlename>. <surname>Marassi</surname>, <marker>¹</marker></persName>
+<persName><forename>Alba</forename> <middlename>C</middlename>. <middlename>M</middlename>. <surname>Silva</surname>, <marker>¹</marker></persName>
+<persName><forename>André</forename> <middlename>S</middlename>. <surname>Mecawi</surname>, <marker>¹</marker></persName>
+<persName><forename>Luis</forename> <middlename>C</middlename>. <surname>Reis¹</surname>, and</persName>
+<persName><forename>Emerson</forename> <middlename>L</middlename>. <surname>Olivares¹</surname>, <marker>*</marker></persName>
+<persName><roleName>Dr</roleName>. <forename>Emerson</forename> <middlename>Lopes</middlename> <surname>Olivares</surname>, <roleName>DVM</roleName>, <roleName>MSc</roleName>, <roleName>PhD</roleName></persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

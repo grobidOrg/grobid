@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Ivan</forename> <surname>Trujillo-Pisanty</surname> <marker>1, ¤a</marker> ,</persName>
+<persName><forename>Kent</forename> <surname>Conover</surname> <marker>1</marker> ,</persName>
+<persName><forename>Pavel</forename> <surname>Solis</surname> <marker>1</marker> ,</persName>
+<persName><forename>Daniel</forename> <surname>Palacios</surname> <marker>1,¤b</marker> ,</persName>
+<persName><forename>Peter</forename> <surname>Shizgal</surname> <marker>1,*</marker> ,</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

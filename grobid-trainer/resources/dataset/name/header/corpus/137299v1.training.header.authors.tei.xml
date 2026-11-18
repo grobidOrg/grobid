@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Samuel</forename>
+								 <middlename>C</middlename>.
+								 <surname>Wolff</surname>
+								 <marker>1 *</marker>,
+							</persName>
+							<persName>
+								 <forename>Raluca</forename>
+								 <surname>Dumitru</surname>
+								 <marker>1 *</marker>,
+							</persName>
+							<persName>
+								 <forename>Cierra</forename>
+								 <middlename>D</middlename>.
+								 <surname>Dungee</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Katarzyna</forename>
+								 <middlename>M</middlename>.
+								 <surname>Kedziora</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rachel</forename>
+								 <middlename>A</middlename>.
+								 <surname>Haggerty</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>JrGang</forename>
+								 <surname>Cheng</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Adriana</forename>
+								 <middlename>S</middlename>.
+								 <surname>Beltran</surname>
+								 <marker>1</marker> , and
+							</persName>
+							<persName>
+								 <forename>Jeremy</forename>
+								 <middlename>E</middlename>.
+								 <surname>Purvis</surname>
+								 <marker>1,2,4, † 1</marker>
+							</persName>
+							<persName>
+								 <forename>Jeremy</forename>
+								 <surname>Purvis</surname>
+							</persName>
+							<persName>
+								 <forename>Samuel</forename>
+								 <middlename>C</middlename>.
+								 <surname>Wolff</surname>
+								 <marker>1 *</marker>,
+							</persName>
+							<persName>
+								 <forename>Raluca</forename>
+								 <surname>Dumitru</surname>
+								 <marker>1 *</marker>,
+							</persName>
+							<persName>
+								 <forename>Cierra</forename>
+								 <middlename>D</middlename>.
+								 <surname>Dungee</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Katarzyna</forename>
+								 <middlename>M</middlename>.
+								 <surname>Kedziora</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rachel</forename>
+								 <middlename>A</middlename>.
+								 <surname>Haggerty</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>JrGang</forename>
+								 <surname>Cheng</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Adriana</forename>
+								 <middlename>S</middlename>.
+								 <surname>Beltran</surname>
+								 <marker>1</marker> , and
+							</persName>
+							<persName>
+								 <forename>Jeremy</forename>
+								 <middlename>E</middlename>.
+								 <surname>Purvis</surname>
+								 <marker>1,2,4, † 1</marker>
+							</persName>
+							<persName>
+								 <forename>Jeremy</forename>
+								 <surname>Purvis</surname>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

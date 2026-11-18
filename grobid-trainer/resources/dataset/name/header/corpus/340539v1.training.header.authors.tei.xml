@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Alexandro</forename>
+								 <middlename>Marcio</middlename>
+								 <surname>da Silva Mattos</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sarah</forename>
+								 <surname>Conchon Costa</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Giovana</forename>
+								 <surname>Outuki</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Gustavo</forename>
+								 <middlename>Kendy</middlename>
+								 <middlename>Camargo</middlename>
+								 <surname>Koga</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Cláudia</forename>
+								 <middlename>Nascimento</middlename>
+								 <surname>Montemor</surname>
+								 <marker>2,3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Giana</forename>
+								 <middlename>Zarbato</middlename>
+								 <surname>Longo</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Maria</forename>
+								 <middlename>Angelica</middlename>
+								 <surname>Ehara Watanabe</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Marla</forename>
+<middlename>Karine</middlename>
+<surname>Amarante</surname>
+								 <marker>2,5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tânia</forename>
+								 <surname>Longo Mazzuco</surname>
+								 <marker>1,2,6*</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

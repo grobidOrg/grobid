@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Clara</forename>
+								 <surname>Moreau</surname>
+								 <marker>1,2* ‡</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sebastian</forename>
+								 <surname>Urchs</surname>
+								 <marker>2,3* ‡</marker> ,
+							</persName>
+							<persName>
+								 <forename>Pierre</forename>
+								 <surname>Orban</surname>
+								 <marker>4,5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Catherine</forename>
+								 <surname>Schramm</surname>
+								 <marker>1,7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Guillaume</forename>
+								 <surname>Dumas</surname>
+								 <marker>8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Aurélie</forename>
+								 <surname>Labbe</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Guillaume</forename>
+								 <surname>Huguet</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Elise</forename>
+								 <surname>Douard</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Pierre-Olivier</forename>
+								 <surname>Quirion</surname>
+								 <marker>2,12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Amy</forename>
+								 <surname>Lin</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Leila</forename>
+								 <surname>Kushan</surname>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Stephanie</forename>
+								 <surname>Grot</surname>
+								 <marker>4,5</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <surname>Luck</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Adrianna</forename>
+								 <surname>Mendrek</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Stephane</forename>
+								 <surname>Potvin</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Emmanuel</forename>
+								 <surname>Stip</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Thomas</forename>
+								 <surname>Bourgeron</surname>
+								 <marker>8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alan</forename>
+								 <middlename>C</middlename>.
+								 <surname>Evans</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Carrie</forename>
+								 <middlename>E</middlename>.
+								 <surname>Bearden</surname>
+								 <marker>9 †</marker> ,
+							</persName>
+<persName>
+<forename>Pierre</forename>
+<surname>Bellec</surname>
+<marker>2 †</marker> , and
+</persName>
+<persName>
+<forename>Sebastien</forename>
+<surname>Jacquemont</surname>
+<marker>1*</marker>
+</persName>
+† Simons
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

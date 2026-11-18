@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Alexander</forename> <surname>Widger</surname> <marker>1</marker> ,</persName>
+<persName><forename>Shantha</forename> <middlename>K</middlename> <surname>Mahadevaiah</surname> <marker>1</marker> ,</persName>
+<persName><forename>Julian</forename> <surname>Lange</surname> <marker>2</marker> ,</persName>
+<persName><forename>Elias</forename> <surname>ElInati</surname> <marker>1</marker> ,</persName>
+<persName><forename>Jasmin</forename> <marker>6</marker> <surname>Zohren</surname> <marker>1</marker> ,</persName>
+<persName><forename>Takayuki</forename> <surname>Hirota</surname> <marker>1</marker> ,</persName>
+<persName><forename>Marcello</forename> <surname>Stanzione</surname> <marker>3</marker> ,</persName>
+<persName><forename>Obah</forename> <surname>Ojarikre</surname> <marker>1</marker> ,</persName>
+<persName><forename>Valdone</forename> <surname>Maciulyte</surname> <marker>1 , 7</marker></persName>
+<persName><forename>Dirk</forename> <surname>de Rooij</surname> <marker>4</marker> ,</persName>
+<persName><forename>Attila</forename> <surname>Tóth</surname> <marker>3</marker> ,</persName>
+<persName><forename>Scott</forename> <surname>Keeney</surname> <marker>2</marker> and</persName>
+<persName><forename>James</forename> <middlename>MA</middlename> <surname>Turner</surname> <marker>1 * 8 9 10</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

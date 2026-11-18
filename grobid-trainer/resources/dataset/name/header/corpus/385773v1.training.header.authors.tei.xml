@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName><forename>L</forename>. <surname>Perfetto</surname> <marker>1,2</marker> ,</persName>
+<persName><forename>M</forename>. <middlename>L</middlename>. <surname>Acencio</surname> <marker>3</marker> ,</persName>
+<persName><forename>G</forename>. <surname>Bradley</surname> <marker>4</marker> ,</persName>
+<persName><forename>G</forename>. <surname>Cesareni</surname> <marker>1,5</marker> ,</persName>
+<persName><forename>N</forename>. <surname>Del Toro</surname> <marker>2</marker> ,</persName>
+<persName><forename>D</forename>. <surname>Fazekas</surname> <marker>6,7</marker> ,</persName>
+<persName><forename>H</forename>. <surname>Hermjakob</surname> <marker>2,11</marker> ,</persName>
+<persName><forename>T</forename>. <surname>Korcsmaros</surname> <marker>7,8</marker> ,</persName>
+<persName><forename>M</forename>. <surname>Kuiper</surname> <marker>3</marker> ,</persName>
+<persName><forename>A</forename>. <surname>Lægreid</surname> <marker>3</marker> ,</persName>
+<persName><forename>P</forename>. <surname>Lo Surdo</surname> <marker>1</marker> ,</persName>
+<persName><forename>R</forename>. <middlename>C</middlename>. <surname>Lovering</surname> <marker>9</marker> ,</persName>
+<persName><forename>S</forename>. <surname>Orchard</surname> <marker>2</marker> ,</persName>
+<persName><forename>P</forename>. <surname>Porras</surname> <marker>2</marker> ,</persName>
+<persName><forename>PD</forename>. <surname>Thomas</surname> <marker>10</marker> ,</persName>
+<persName><forename>V</forename>. <surname>Touré</surname> <marker>3</marker> ,</persName>
+<persName><forename>J</forename>. <surname>Zobolas</surname> <marker>3</marker> ,</persName>
+<persName><forename>L</forename>. <surname>Licata</surname> <marker>1 , #</marker>.</persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

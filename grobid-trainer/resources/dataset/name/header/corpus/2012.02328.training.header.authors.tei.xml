@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Vijay</forename> <middlename>Janapa</middlename> <surname>Reddi</surname> <marker>1</marker></persName>
+<persName><forename>David</forename> <surname>Kanter</surname> <marker>2</marker></persName>
+<persName><forename>Peter</forename> <surname>Mattson</surname> <marker>3</marker></persName>
+<persName><forename>Jared</forename> <surname>Duke</surname> <marker>3</marker></persName>
+<persName><forename>Thai</forename> <surname>Nguyen</surname> <marker>3</marker></persName>
+<persName><forename>Ramesh</forename> <surname>Chukka</surname> <marker>4</marker></persName>
+<persName><forename>Ken</forename> <surname>Shiring</surname> <marker>5</marker></persName>
+<persName><forename>Koan-Sin</forename> <surname>Tan</surname> <marker>5</marker></persName>
+<persName><forename>Mark</forename> <surname>Charlebois</surname> <marker>6</marker></persName>
+<persName><forename>William</forename> <surname>Chou</surname> <marker>6</marker></persName>
+<persName><forename>Mostafa</forename> <surname>El-Khamy</surname> <marker>7</marker></persName>
+<persName><forename>Jungwook</forename> <surname>Hong</surname> <marker>7</marker></persName>
+<persName><forename>Tom</forename> <surname>St. John</surname> <marker>8</marker></persName>
+<persName><forename>Cindy</forename> <surname>Trinh</surname> <marker>9</marker></persName>
+<persName><forename>Michael</forename> <surname>Buch</surname> <marker>1</marker></persName>
+<persName><forename>Mark</forename> <surname>Mazumder</surname> <marker>1</marker></persName>
+<persName><forename>Relja</forename> <surname>Markovic</surname> <marker>2</marker></persName>
+<persName><forename>Thomas</forename> <surname>Atta</surname> <marker>4</marker></persName>
+<persName><forename>Fatih</forename> <surname>Cakir</surname> <marker>7</marker></persName>
+<persName><forename>Masoud</forename> <surname>Charkhabi</surname> <marker>3</marker></persName>
+<persName><forename>Xiaodong</forename> <surname>Chen</surname> <marker>7</marker></persName>
+<persName><forename>Cheng-Ming</forename> <surname>Chiang</surname> <marker>5</marker></persName>
+<persName><forename>Dave</forename> <surname>Dexter</surname> <marker>10</marker></persName>
+<persName><forename>Terry</forename> <surname>Heo</surname> <marker>3</marker></persName>
+<persName><forename>Guenther</forename> <surname>Schmuelling</surname> <marker>11</marker></persName>
+<persName><forename>Maryam</forename> <surname>Shabani</surname> <marker>4</marker></persName>
+<persName><forename>Dylan</forename> <surname>Zika</surname> <marker>3</marker></persName>
+2 MLCommons 3 Google 4 Intel
+<persName><forename>Vijay</forename> <middlename>Janapa</middlename> <surname>Reddi</surname></persName>
+<persName><forename>David</forename> <surname>Kanter</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

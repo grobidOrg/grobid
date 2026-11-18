@@ -70,6 +70,18 @@ For `eLife_984`: eLife already encodes explicit affiliation links, so no single-
 
 Competing-interest footnotes are ignored for the time being (authors contributions are not standalone text elements) — pending revisit. See [Statement sections](#statement-sections-author-contributions-and-competing-interests).
 
+### arXiv authors and affiliations
+
+The `COMET_arxiv_1091` dataset evaluates the authors and their affiliations only. It is the test split of [cometadata/arxiv-author-affiliations](https://huggingface.co/datasets/cometadata/arxiv-author-affiliations) (CC0): arXiv preprints of all fields and periods, whose authors and affiliations were annotated manually. The 1,091 articles of the split that have a PDF are kept. The train split is not used for evaluation: part of it is in the training data of the header name model.
+
+The gold data is not JATS but one JSON record per article, `<article>.gold.json` next to `<article>.pdf`:
+
+```json
+{"arxiv_id": "arXiv:0704.1459", "authors": [{"name": "Valentin Ferenczi", "affiliations": ["Institut de Mathématiques de Jussieu, Université Pierre et Marie Curie–Paris 6, ..."]}], ...}
+```
+
+`jatsEval -Prun=1` processes the PDFs, but does not score this gold data: `.github/scripts/evaluation/score_arxiv.py` does, see [Authors and affiliations of the arXiv corpus](#authors-and-affiliations-of-the-arxiv-corpus). The arXiv PDFs are not ours to redistribute, so this corpus is in a separate, private Hugging Face dataset, `sciencialab/pdfs-arxiv-author-affiliations`.
+
 ## Getting publisher gold-standard data
 
 Some publishers release publications in XML format complementary to PDF in Open Access, allowing text mining (see for instance the dedicated subset of PMC publications). On contractual basis, it is possible to acquire native XML from mainstream publishers. Unfortunately, each publisher uses a different XML schema and covering all these formats would be a very time-consuming work. To ease the processing of these XML documents, the project [Pub2TEI](https://github.com/kermitt2/Pub2TEI) permits to transform the native XML formats of a dozen mainstream publishers into a common TEI format which is the same as the output of GROBID.
@@ -180,6 +192,23 @@ It is also possible to set a ratio of evaluation data to be used expressed as a 
 > ./gradlew teiEval -Pp2t=ABS_PATH_TO_TEI/ -Prun=0 -PfileRatio=0.1
 ```
 
+### Authors and affiliations of the arXiv corpus
+
+The PDFs of `COMET_arxiv_1091` are processed with `jatsEval`, as above (it finds no JATS gold file and scores nothing), and the TEI is then scored with `.github/scripts/evaluation/score_arxiv.py`, which needs `numpy`, `scipy`, `rapidfuzz` and `pyyaml`:
+
+```bash
+> ./gradlew jatsEval -Pp2t=ABS_PATH_TO/COMET_arxiv_1091 -Prun=1 -PconsolidateHeader=0
+> python .github/scripts/evaluation/score_arxiv.py --data ABS_PATH_TO/COMET_arxiv_1091 --output report-COMET_arxiv_1091.md --json arxiv-eval.json
+```
+
+The scorer is the one of ScienciaLAB/grobid-affiliation-evaluation, vendored under `.github/scripts/evaluation/arxiv/` (see its README). The authors of an article are matched one to one with the gold authors on their normalised full name, exactly (_strict_) or with a similarity of at least 0.95 (_fuzzy_), and three scores are reported per matching:
+
+* `author`: the authors found;
+* `affiliations`: the affiliations of the matched authors, matched the same way (the affiliations of the authors not matched being false positives or false negatives);
+* `combined`: the authors found with all their affiliations.
+
+An article without TEI counts as an article where GROBID found no author. The report has the layout of the `jatsEval` reports, and `--json` writes the matches of every article.
+
 ### Multi-dataset runner script
 
 The Gradle tasks above evaluate one dataset at a time. To benchmark GROBID over several gold corpora in one go (e.g. `PMC_sample_1943`, `biorxiv-10k-test-2000`, `PLOS_1000` and `eLife_984` together), use the wrapper script `grobid-home/scripts/run_evaluation.sh`.
@@ -273,8 +302,11 @@ On a pull request, the corpora are selected with labels too:
 | `corpus:biorxiv` | `biorxiv-10k-test-2000` |
 | `corpus:plos` | `PLOS_1000` |
 | `corpus:elife` | `eLife_984` |
+| `corpus:arxiv` | `COMET_arxiv_1091` |
 
 Adding `evaluation:crf` or `evaluation:delft` evaluates the corpora labelled on the pull request, or all of them if none is. Adding a `corpus:*` label to a pull request that already has one of these two labels evaluates that corpus alone, with the profile of that label (the pull request must then have only one of them). A `corpus:*` label added before them starts nothing: it only selects the corpora of the next run. The label `evaluation:glutton` works the same way: added to a pull request that has `evaluation:crf` or `evaluation:delft`, it evaluates the labelled corpora again with biblio-glutton; added before, it only switches the next runs to biblio-glutton.
+
+The arXiv corpus is in a private Hugging Face dataset, read with the repository secret `HF_TOKEN_COMET`, a Hugging Face token that can read `sciencialab/pdfs-arxiv-author-affiliations`. Pull requests from forks get no secret: their runs leave COMET out of `corpus:all` (with a notice), and fail at once with `corpus:arxiv`.
 
 Two profiles are available:
 
@@ -287,11 +319,11 @@ A manual run can also be restricted to one corpus, select a [flavor](#flavors), 
 
 The runners have 4 CPU, no GPU, and stop a job after 6 hours, so each corpus is cut into shards:
 
-1. `predict` — one job per shard downloads its articles from the [Hugging Face dataset](https://huggingface.co/datasets/sciencialab/grobid-evaluation), runs the [pre-flight configuration check](#pre-flight-configuration-check) and processes the PDFs. The shards of a corpus are disjoint and the same on every run.
+1. `predict` — one job per shard downloads its articles from the [Hugging Face dataset](https://huggingface.co/datasets/sciencialab/grobid-evaluation) (`sciencialab/pdfs-arxiv-author-affiliations` for arXiv), runs the [pre-flight configuration check](#pre-flight-configuration-check) and processes the PDFs. The shards of a corpus are disjoint and the same on every run.
 
-2. `score` — one job per corpus gathers the TEI and the gold XML of all its shards and runs `jatsEval` with `-Prun=0`, so the report is computed over the whole corpus exactly as by a local run. A corpus is not scored if one of its shards failed.
+2. `score` — one job per corpus gathers the TEI and the gold data of all its shards and runs `jatsEval` with `-Prun=0` (`score_arxiv.py` for arXiv), so the report is computed over the whole corpus exactly as by a local run. A corpus is not scored if one of its shards failed.
 
-3. `report` — the reports are compared with those of the latest successful run of the workflow on the default branch with the same profile, flavor and consolidation. The scores are written to the run summary and, for a pull request, posted as a comment. For each corpus, a table gives the micro-average F1 of the header, citation and fulltext per matching, followed by the full report, collapsed, laid out as in the [benchmark pages](benchmarks/Benchmarking.md) (field-level precision, recall, F1 and support per section and matching, then the instance-level results and the citation contexts). Each score that moved is followed by its delta against the baseline, in brackets. The reports are also kept as the artifact `evaluation-reports-<profile>` for 90 days: this artifact is the baseline of the later runs, so **run the workflow on the default branch to set or refresh the baseline**. Without a baseline, the scores are reported without deltas.
+3. `report` — the reports are compared with those of the latest successful run of the workflow on the default branch with the same profile, flavor and consolidation. The scores are written to the run summary and, for a pull request, posted as a comment. For each corpus, a table gives the micro-average F1 of the header, citation and fulltext per matching (for arXiv, the F1 of the authors, of the affiliations and of the authors with all their affiliations), followed by the full report, collapsed, laid out as in the [benchmark pages](benchmarks/Benchmarking.md) (field-level precision, recall, F1 and support per section and matching, then the instance-level results and the citation contexts). Each score that moved is followed by its delta against the baseline, in brackets. The reports are also kept as the artifact `evaluation-reports-<profile>` for 90 days: this artifact is the baseline of the later runs, so **run the workflow on the default branch to set or refresh the baseline**. Without a baseline, the scores are reported without deltas.
 
 #### Consolidation and biblio-glutton
 

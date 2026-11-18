@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Alex</forename> <surname>Kreymerman</surname> <marker>1,2*</marker>, </persName>
+<persName><forename>Jessica</forename> <middlename>E</middlename>. <surname>Weinstein</surname> <marker>2*</marker>, </persName>
+<persName><forename>Sahil</forename> <middlename>H</middlename>. <surname>Shah</surname> <marker>1,3</marker>, </persName>
+<persName><forename>David</forename> <middlename>N</middlename>. <surname>Buickians</surname> <marker>1</marker>, </persName>
+<persName><forename>Anne</forename> <surname>Faust</surname> <marker>4</marker>, </persName>
+<persName><forename>Yolandi</forename> <surname>Van Der Merwe</surname> <marker>4</marker>, </persName>
+<persName><forename>Michael</forename> <middlename>M</middlename>. <surname>Nahmou</surname> <marker>1</marker>, </persName>
+<persName><forename>In-Jae</forename> <surname>Cho</surname> <marker>1</marker>, </persName>
+<persName><forename>Star</forename> <middlename>K</middlename>. <surname>Huynh</surname> <marker>1</marker>, </persName>
+<persName><forename>Sonya</forename> <surname>Verma</surname> <marker>1</marker>, </persName>
+<persName><forename>Xiao-Lu</forename> <surname>Xin</surname> <marker>2</marker>, </persName>
+<persName><forename>Michael</forename> <middlename>B</middlename>. <surname>Steketee</surname> <marker>2,4</marker>, </persName>
+<persName><forename>Jeffrey</forename> <middlename>L</middlename>. <surname>Goldberg</surname> <marker>1</marker></persName>
+<persName><forename>Jeffrey</forename> <middlename>L</middlename>. <surname>Goldberg</surname></persName>
+Byers Eye
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

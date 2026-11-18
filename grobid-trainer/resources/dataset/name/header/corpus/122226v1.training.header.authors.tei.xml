@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Teresa</forename> <middlename>R</middlename> <surname>Luperchio</surname> <marker>1, *</marker> ,</persName>
+<persName><forename>Michael</forename> <middlename>EG</middlename> <surname>Sauria</surname> <marker>2, *</marker> ,</persName>
+<persName><forename>Xianrong</forename> <surname>Wong</surname> <marker>1</marker> ,</persName>
+<persName><forename>Marie-Cécile</forename> <surname>Gaillard</surname> <marker>1</marker> ,</persName>
+<persName><forename>Peter</forename> <surname>Tsang</surname> <marker>3</marker> ,</persName>
+<persName><forename>Katja</forename> <surname>Pekrun</surname> <marker>3</marker> ,</persName>
+<persName><forename>Robert</forename> <middlename>A</middlename> <surname>Ach</surname> <marker>3</marker> ,</persName>
+<persName><forename>N</forename> <middlename>Alice</middlename> <surname>Yamada</surname> <marker>3</marker> ,</persName>
+<persName><forename>James</forename> <surname>Taylor</surname> <marker>2, †</marker> ,</persName>
+<persName><forename>Karen</forename> <middlename>L</middlename> <surname>Reddy</surname> <marker>1,4, †</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

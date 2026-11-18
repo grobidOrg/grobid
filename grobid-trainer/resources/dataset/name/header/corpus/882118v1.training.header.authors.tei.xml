@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Landman</surname>, <forename>R</forename>. <marker>1,2,3</marker> ,</persName>
+<persName><surname>Sharma</surname>, <forename>J</forename>. <marker>1,2,4,5,6,7</marker> ,</persName>
+<persName><surname>Hyman</surname>, <forename>J</forename>.<middlename>B</middlename>. <marker>1</marker> ,</persName>
+<persName><surname>Fanucci-Kiss</surname>, <forename>A</forename>. <marker>1</marker> ,</persName>
+<persName><surname>Meisner</surname>, <forename>O</forename>. <marker>1</marker> ,</persName>
+<persName><surname>Parmar</surname>, <forename>S</forename>. <marker>1</marker> ,</persName>
+<persName><surname>Feng</surname>, <forename>G</forename>. <marker>1,2,3</marker> &amp;</persName>
+<persName><surname>Desimone</surname>, <forename>R</forename>. <marker>1,2</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

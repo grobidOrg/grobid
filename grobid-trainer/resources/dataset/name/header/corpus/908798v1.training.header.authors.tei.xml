@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Sibel</forename> <surname>ÖZDAŞ</surname> <marker>1</marker> , <roleName>PhD</roleName>;</persName>
+<persName><forename>Bora</forename> <surname>TAŞTEKİN</surname> <marker>2</marker> , <roleName>PhD</roleName>;</persName>
+<persName><forename>Seren</forename> <middlename>G</middlename>. <surname>GÜRGEN</surname> <marker>3</marker> , <roleName>PhD</roleName>;</persName>
+<persName><forename>Talih</forename> <surname>ÖZDAŞ</surname> <marker>4</marker> , <roleName>MD</roleName>;</persName>
+<persName><forename>Aykut</forename> <surname>PELİT</surname> <marker>2</marker> , <roleName>PhD</roleName>;</persName>
+<persName><forename>Sanem</forename> <middlename>O</middlename>. <surname>ERKAN</surname> <marker>4</marker> , <roleName>MD</roleName>;</persName>
+<persName><forename>Birgül</forename> <surname>TUHANİOĞLU</surname> <marker>4</marker> , <roleName>MD</roleName>;</persName>
+<persName><forename>Orhan</forename> <surname>GÖRGÜLÜ</surname> <marker>4</marker> , <roleName>MD</roleName></persName> 1. Adana Alpaslan
+<persName><forename>Sibel</forename> <surname>ÖZDAŞ</surname></persName>
+<persName><forename>Sibel</forename> <surname>ÖZDAŞ</surname>, <roleName>PhD</roleName></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

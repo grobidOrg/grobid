@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Sanhita</forename> <surname>Ray</surname>, <marker>*</marker></persName>
+<persName><forename>Sayantani</forename> <surname>Sen</surname>, <marker>†</marker></persName>
+<persName><forename>Alakananda</forename> <surname>Das</surname>, <marker>‡</marker></persName>
+<persName><forename>Anirban</forename> <surname>Bose</surname>, <marker>§</marker></persName>
+<persName><forename>Anirban</forename> <surname>Bhattacharyya</surname>, <marker>¶</marker></persName>
+<persName><forename>Avishek</forename> <surname>Das</surname>, <marker>* *</marker></persName>
+<persName><forename>Sanatan</forename> <surname>Chattopadhyay</surname>, <marker>† †</marker></persName>
+<persName><forename>Hirak</forename> <surname>Patra</surname>, <marker>‡ ‡</marker></persName>
+<persName><forename>Shib</forename> <middlename>Shankar</middlename> <surname>Singha</surname>, <marker>§ §</marker></persName>
+<persName><forename>Achintya</forename> <surname>Singha</surname>, <marker>¶ ¶</marker> and</persName>
+<persName><forename>Anjan</forename> <middlename>Kr</middlename> <surname>Dasgupta</surname> <marker>* * *</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

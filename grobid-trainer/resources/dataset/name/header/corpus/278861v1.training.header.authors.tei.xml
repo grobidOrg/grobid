@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Eeva</forename>
+<surname>Sliz</surname>
+<marker>1,2</marker> ,
+<roleName>MSc</roleName>;
+</persName>
+<persName>
+<forename>Johannes</forename>
+<surname>Kettunen</surname>
+<marker>1,2,3</marker> ,
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Michael</forename>
+<middlename>V</middlename>
+<surname>Holmes</surname>
+<marker>4,5,6,7</marker> ,
+<roleName>MD</roleName> <roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Clare</forename>
+<surname>Oliver- Williams</surname>
+<marker>8,9</marker> ,
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Charles</forename>
+<surname>Boachie</surname>
+<marker>10</marker> ,
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Qin</forename>
+<surname>Wang</surname>,
+<roleName>PhD</roleName>
+<marker>1,2,3,11</marker> ;
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Minna</forename>
+<surname>Männikkö</surname>
+<marker>12</marker> ,
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Sylvain</forename>
+<surname>Sebert</surname>
+<marker>1,2,13</marker> ,
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Robin</forename>
+<surname>Walters</surname>
+<marker>5</marker> ,
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Kuang</forename>
+<surname>Lin</surname>
+<marker>5</marker> ,
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Iona</forename>
+<middlename>Y</middlename>
+<surname>Millwood</surname>
+<marker>5</marker> ,
+<roleName>Dphil</roleName>;
+</persName>
+<persName>
+<forename>Robert</forename>
+<surname>Clarke</surname>
+<marker>5</marker> ,
+<roleName>MD</roleName>;
+</persName>
+<persName>
+<forename>Liming</forename>
+<surname>Li</surname>
+<marker>14,15</marker> ,
+<roleName>MPH</roleName>;
+</persName>
+<persName>
+<forename>Naomi</forename>
+<surname>Rankin</surname>
+<marker>16</marker> ,
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Paul</forename>
+<surname>Welsh</surname>
+<marker>16</marker> ,
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Christian</forename>
+<surname>Delles</surname>
+<marker>16</marker> ,
+<roleName>MD</roleName>;
+</persName>
+<persName>
+<forename>J</forename>.
+<middlename>Wouter</middlename>
+<surname>Jukema</surname>
+<marker>17</marker> ,
+<roleName>MD</roleName> <roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Stella</forename>
+<surname>Trompet</surname>
+<marker>17,18</marker> ,
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Ian</forename>
+<surname>Ford</surname>
+<marker>10</marker> ,
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Markus</forename>
+<surname>Perola</surname>
+<marker>19,20,21</marker> ,
+<roleName>MD</roleName> <roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Veikko</forename>
+<surname>Salomaa</surname>
+<marker>19</marker> ,
+<roleName>MD</roleName> <roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Marjo-Riitta</forename>
+<surname>Järvelin</surname>
+<marker>1,2,22,23</marker> ,
+<roleName>MD</roleName> <roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Zhengming</forename>
+<surname>Chen</surname>
+<marker>5</marker> ,
+<roleName>DPhil</roleName>;
+</persName>
+<persName>
+<forename>Debbie</forename>
+<middlename>A</middlename>
+<surname>Lawlor</surname>
+<marker>7,24</marker> ,
+<roleName>MD</roleName> <roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>Mika</forename>
+<surname>Ala-Korpela</surname>
+<marker>2,3,7,11,24,25,26</marker>
+<roleName>PhD</roleName>;
+</persName>
+<persName>
+<forename>John</forename>
+<surname>Danesh</surname>
+<marker>8,27,28</marker> ,
+<roleName>FMedSci</roleName>;
+</persName>
+<persName>
+<forename>George</forename>
+<middlename>Davey</middlename>
+<marker>18</marker>.
+</persName>
+<persName>
+<forename>Peter</forename>
+<surname>Würtz</surname>,
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>
