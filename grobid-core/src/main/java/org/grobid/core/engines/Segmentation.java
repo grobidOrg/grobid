@@ -573,10 +573,6 @@ public class Segmentation extends AbstractParser {
                         features.digit = "CONTAINSDIGITS";
                     }
 
-                    if (featureFactory.test_common(text)) {
-                        features.commonName = true;
-                    }
-
                     if (featureFactory.test_names(text)) {
                         features.properName = true;
                     }

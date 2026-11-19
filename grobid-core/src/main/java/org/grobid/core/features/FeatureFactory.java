@@ -260,7 +260,9 @@ public class FeatureFactory {
     }
 
     /**
-     * Test if the current string is a common name
+     * Test if the current string is a common word of the English wordform dictionary (english.wf).
+     * The look-up is case-sensitive on a lowercased token, so the capitalised entries never match.
+     * No GROBID model uses it any more (#1454): the commonName feature is always 0.
      */
     public boolean test_common(String tok) {
         if (tok == null)
