@@ -385,6 +385,61 @@ public class HeaderParserTest {
                 {"United", "I-<address>"}, {"Kingdom", "<address>"},
                 {"Copyright", "I-<copyright>"},
                 {"Imperial", "I-<affiliation>"}, {"College", "<affiliation>"}};
+
+        assertThat(
+                collectedAffiliationBlocks(labelled),
+                is(Arrays.asList("Rush University", "Chicago", "Imperial College")));
+    }
+
+    /** Only a space between the editor and its affiliation: no &lt;other&gt; cluster at all. */
+    @Test
+    public void testGeneralResultMappingHeader_editorDirectlyFollowedByAffiliation() {
+        String[][] labelled = {
+                {"Paul", "I-<editor>"}, {"Park", "<editor>"},
+                {"University", "I-<affiliation>"}, {"of", "<affiliation>"}, {"Michigan", "<affiliation>"},
+                {"United", "I-<address>"}, {"States", "<address>"}};
+
+        assertThat(collectedAffiliationBlocks(labelled), is(Arrays.asList()));
+    }
+
+    /** A punctuation-only &lt;other&gt; between the editor and its affiliation keeps the editor context. */
+    @Test
+    public void testGeneralResultMappingHeader_editorAffiliationAfterPunctuation() {
+        String[][] labelled = {
+                {"Peter", "I-<editor>"}, {"Rodgers", "<editor>"},
+                {",", "I-<other>"},
+                {"eLife", "I-<affiliation>"},
+                {"United", "I-<address>"}, {"Kingdom", "<address>"}};
+
+        assertThat(collectedAffiliationBlocks(labelled), is(Arrays.asList()));
+    }
+
+    /**
+     * An editor has a single affiliation: a second affiliation following it ends the editor context, so that an
+     * authors' affiliation block placed right after the editor is still collected.
+     */
+    @Test
+    public void testGeneralResultMappingHeader_secondAffiliationAfterEditorCollected() {
+        String[][] labelled = {
+                {"Paul", "I-<editor>"}, {"Park", "<editor>"},
+                {"University", "I-<affiliation>"}, {"of", "<affiliation>"}, {"Michigan", "<affiliation>"},
+                {"United", "I-<address>"}, {"States", "<address>"},
+                {"1", "I-<affiliation>"}, {"Rush", "<affiliation>"}, {"University", "<affiliation>"},
+                {"Chicago", "I-<address>"},
+                {"2", "I-<affiliation>"}, {"Imperial", "<affiliation>"}, {"College", "<affiliation>"}};
+
+        assertThat(
+                collectedAffiliationBlocks(labelled),
+                is(Arrays.asList("1 Rush University", "Chicago", "2 Imperial College")));
+    }
+
+    // --- Helper methods ---
+
+    /**
+     * Maps a labelled header sequence (one token per entry, separated by a space) and returns the text of the
+     * affiliation and address blocks collected for the authors.
+     */
+    private List<String> collectedAffiliationBlocks(String[][] labelled) {
         List<LayoutToken> tokens = new ArrayList<>();
         StringBuilder result = new StringBuilder();
         for (String[] tokenLabel : labelled) {
@@ -399,13 +454,13 @@ public class HeaderParserTest {
         biblio.generalResultMappingHeader(result.toString(), tokens);
 
         List<String> blocks = new ArrayList<>();
-        for (List<LayoutToken> block : biblio.getAffiliationAddresslabeledTokens()) {
-            blocks.add(LayoutTokensUtil.toText(block).trim());
+        if (biblio.getAffiliationAddresslabeledTokens() != null) {
+            for (List<LayoutToken> block : biblio.getAffiliationAddresslabeledTokens()) {
+                blocks.add(LayoutTokensUtil.toText(block).trim());
+            }
         }
-        assertThat(blocks, is(Arrays.asList("Rush University", "Chicago", "Imperial College")));
+        return blocks;
     }
-
-    // --- Helper methods ---
 
     private List<String> readResourceLines(String resourceName) throws Exception {
         try (InputStream is = this.getClass().getResourceAsStream(resourceName)) {

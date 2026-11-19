@@ -11,8 +11,15 @@
 	<date>30 Aug 2008<lb/></date>
 
 	<docTitle>
-	<titlePart>Global Search for New Physics at CDF<lb/> Si Xie on behalf of the CDF collaboration<lb/></titlePart>
+	<titlePart>Global Search for New Physics at CDF<lb/></titlePart>
 	</docTitle>
+
+	<byline>
+	<docAuthor>Si Xie</docAuthor>
+	</byline>
+
+	on behalf of the
+	<note type="group">CDF collaboration<lb/></note>
 
 	<byline>
 	<affiliation>Massachusetts Institute of Technology,</affiliation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Treveil</surname> <forename>A</forename> <marker>1,2 *</marker>,</persName>
+<persName><surname>Sudhakar</surname> <forename>P</forename> <marker>1 *</marker> ,</persName>
+<persName><surname>Matthews</surname> <forename>Z</forename> <middlename>J</middlename> <marker>3 *</marker>,</persName>
+<persName><surname>Wrzesinski</surname> <forename>T</forename> <marker>1</marker> ,</persName>
+<persName><surname>Jones</surname> <forename>E</forename> <middlename>J</middlename> <marker>1,2</marker> ,</persName>
+<persName><surname>Olbei</surname> <forename>M</forename> <marker>1,2</marker> ,</persName>
+<persName><surname>Hautefort</surname> <forename>I</forename> <marker>1</marker> ,</persName>
+<persName><surname>Hall</surname> <forename>L</forename> <marker>2</marker> ,</persName>
+<persName><surname>Carding</surname> <forename>S</forename> <middlename>R</middlename> <marker>2,3</marker> ,</persName>
+<persName><surname>Mayer</surname> <forename>U</forename> <marker>4</marker> ,</persName>
+<persName><surname>Powell</surname> <forename>P</forename> <middlename>P</middlename> <marker>3</marker> ,</persName>
+<persName><surname>Wileman</surname> <forename>T</forename> <marker>2,3</marker> ,</persName>
+<persName><surname>Di Palma</surname> <forename>F</forename> <marker>1</marker> ,</persName>
+<persName><surname>Haerty</surname> <forename>W</forename> <marker>1,#</marker> ,</persName>
+<persName><surname>Korcsmáros</surname> <forename>T</forename> <marker>1,2 #</marker></persName>
+<persName><roleName>Dr</roleName> <forename>Tamas</forename> <surname>Korcsmaros</surname></persName>
+ORCID
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -14,7 +14,7 @@
 								<addrLine>151 Kalmus Drive</addrLine>,
 								<addrLine>Suite H-3</addrLine>,
 								<settlement>Costa Mesa</settlement>,
-								<region>California (CA)</region>,
+								<region>California</region> (<region>CA</region>),
 								<postCode>92626</postCode>,
 								<country>USA</country>
 							</address>

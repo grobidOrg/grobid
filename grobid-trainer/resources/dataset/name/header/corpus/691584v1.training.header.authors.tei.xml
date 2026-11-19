@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+Han Chinese
+<persName><forename>Yin</forename><surname>Huang</surname><marker>1</marker> ,</persName>
+<persName><forename>Dan</forename><surname>Li</surname><marker>1</marker> ,</persName>
+<persName><forename>Lu</forename><surname>Qiao</surname><marker>1</marker> ,</persName>
+<persName><forename>Yu</forename><surname>Liu</surname><marker>1</marker> ,</persName>
+<persName><forename>Qianqian</forename><surname>Peng</surname><marker>1</marker> ,</persName>
+<persName><forename>Sijie</forename><surname>Wu</surname><marker>1,2</marker> ,</persName>
+<persName><forename>Manfei</forename><surname>Zhang</surname><marker>1,2</marker> ,</persName>
+<persName><forename>Yajun</forename><surname>Yang</surname><marker>2</marker> ,</persName>
+<persName><forename>Jingze</forename><surname>Tan</surname><marker>2,3</marker> ,</persName>
+<persName><forename>Shuhua</forename><surname>Xu</surname><marker>1,4,5,6</marker> ,</persName>
+<persName><forename>Li</forename><surname>Jin</surname><marker>1,2,3,4</marker> ,</persName>
+<persName><forename>Sijia</forename><surname>Wang</surname><marker>1,4,5,*</marker> ,</persName>
+<persName><forename>Kun</forename><surname>Tang</surname><marker>1,*</marker> ,</persName>
+<persName><forename>Stefan</forename><surname>Grünewald</surname><marker>1,*</marker></persName>
+</author>
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

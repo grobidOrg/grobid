@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><marker>1</marker> <forename>RP</forename> <surname>Kaur</surname>,</persName>
+<persName><marker>2</marker> <forename>GF</forename> <surname>Ho</surname>,</persName>
+<persName><marker>2</marker> <forename>MY</forename> <surname>Mastura</surname>,</persName>
+<persName><marker>3</marker> <surname>Goh</surname> <forename>PP</forename>,</persName>
+<persName><marker>3</marker> <forename>Mohamad</forename> <middlename>Aziz</middlename> <surname>Salowi</surname>,</persName>
+<persName><marker>3</marker> <surname>Muhd. Radzi</surname> <forename>AH</forename>,</persName>
+<persName><marker>3</marker> <forename>Anwar</forename> <surname>Hau</surname>,</persName>
+<persName><marker>3</marker> <forename>Jameela</forename> <surname>Sathar</surname>,</persName>
+<persName><marker>4</marker> <surname>Robaayah</surname> <forename>Z</forename>,</persName>
+<persName><marker>5</marker> <forename>Benedict</forename> <surname>Selladurai</surname>,</persName>
+<persName><marker>6</marker> <forename>Abu</forename> <middlename>Bakar</middlename> <surname>Suleiman</surname>, ,</persName>
+<persName><marker>6</marker> <forename>Zaki</forename> <surname>Morad</surname>,</persName>
+<persName><marker>6</marker> <surname>Ghazali</surname> <forename>A</forename>,</persName>
+<persName><marker>6</marker> <forename>TO</forename> <surname>Lim</surname>.</persName>
+<persName><roleName>Dr</roleName> <surname>Lim</surname> <forename>TO</forename></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

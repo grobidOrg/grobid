@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+					<author>
+						<persName>
+							 <forename>Cristian</forename>
+							 <middlename>L</middlename>.
+							 <surname>Cortes</surname>,
+							 <marker>1</marker>
+						</persName>
+						<persName>
+							 <forename>A</forename>.
+							 <middlename>Eugene</middlename>
+							 <surname>DePrince</surname>,
+							 <suffix>III</suffix>,
+							 <marker>2</marker> and
+						</persName>
+						<persName>
+							 <forename>Stephen</forename>
+							 <middlename>K</middlename>.
+							 <surname>Gray</surname>
+							 <marker>1</marker>
+						</persName>
+					</author>
+
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName> <forename>Laura</forename> <middlename>J</middlename>. <surname>Corbin</surname> <marker>1,2 †</marker> , </persName>
+<persName> <forename>Amy</forename> <middlename>E</middlename>. <surname>Taylor</surname> <marker>2,3 †</marker>, </persName>
+<persName> <forename>Stephen</forename> <middlename>J</middlename>. <surname>White</surname> <marker>4 †</marker>, </persName>
+<persName> <forename>Christopher</forename> <middlename>M</middlename>. <surname>Williams</surname> <marker>5</marker> , </persName>
+<persName> <forename>Kurt</forename> <surname>Taylor</surname> <marker>2</marker> , </persName>
+<persName> <forename>Marion</forename> <middlename>T</middlename>. <surname>van den Bosch</surname> <marker>5,6</marker> , </persName>
+<persName> <forename>Jack</forename> <middlename>E</middlename>. <surname>Teasdale</surname> <marker>7</marker> , </persName>
+<persName> <forename>Matthew</forename> <surname>Jones</surname> <marker>7</marker> , </persName>
+<persName> <forename>Mark</forename> <surname>Bond</surname> <marker>7</marker> , </persName>
+<persName> <forename>Matthew</forename> <middlename>T</middlename>. <surname>Harper</surname> <marker>8</marker> , </persName>
+<persName> <forename>Louise</forename> <surname>Falk</surname> <marker>1,2</marker> , </persName>
+<persName> <forename>Alix</forename> <surname>Groom</surname> <marker>1,2</marker> , </persName>
+<persName> <forename>Georgina</forename> <middlename>G</middlename> <middlename>J</middlename> <surname>Hazell</surname> <marker>7</marker> , </persName>
+<persName> <forename>Lavinia</forename> <surname>Paternoster</surname> <marker>1,2</marker> , </persName>
+<persName> <forename>Marcus</forename>, <middlename>R</middlename>. <surname>Munafò</surname> <marker>1,9</marker> , </persName>
+<persName> <forename>Børge</forename> <middlename>G</middlename>. <surname>Nordestgaard</surname> <marker>10,11,12</marker> , </persName>
+<persName> <forename>Anne</forename> <surname>Tybjaerg- Hansen</surname> <marker>11,12,13</marker> , </persName>
+<persName> <forename>Stig</forename> <middlename>E</middlename>. <surname>Bojesen</surname> <marker>10,11,12</marker> , </persName>
+<persName> <forename>Caroline</forename> <surname>Relton</surname> <marker>1,2</marker> , </persName>
+<persName> <forename>Josine</forename> <middlename>L</middlename>. <surname>Min</surname> <marker>1,2</marker> </persName> for the GoDMC Consortium,
+<persName> <forename>George</forename> <middlename>Davey</middlename> <surname>Smith</surname> <marker>1,2</marker> , </persName>
+<persName> <forename>Andrew</forename> <middlename>D</middlename>. <surname>Mumford</surname> <marker>14 ‡</marker> , </persName>
+<persName> <forename>Alastair</forename> <middlename>W</middlename>. <surname>Poole</surname> <marker>5 ‡</marker>, </persName>
+<persName> <forename>Nicholas</forename> <middlename>J</middlename>. <surname>Timpson</surname> <marker>1,2* ‡</marker> </persName>
+<persName> <roleName>Professor</roleName> <forename>Nicholas</forename> <surname>Timpson</surname>, </persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

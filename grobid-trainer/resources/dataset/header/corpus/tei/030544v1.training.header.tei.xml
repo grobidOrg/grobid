@@ -6,17 +6,19 @@
 	<text xml:lang="en">
 		<front>
 
-	Title<lb/> 
+	Title<lb/>
 	<docTitle>
-	<titlePart>Sub-tomogram averaging in RELION Authors<lb/></titlePart>
+	<titlePart>Sub-tomogram averaging in RELION</titlePart>
 	</docTitle>
 
+    Authors<lb/>
 	<byline>
 	<docAuthor>Tanmay A.M. Bharat* &amp; Sjors H.W. Scheres*</docAuthor>
 	</byline>
 
+    Affiliations<lb/>
 	<byline>
-	<affiliation>Affiliations<lb/> Structural Studies Division, MRC Laboratory of Molecular Biology,</affiliation>
+	<affiliation>Structural Studies Division, MRC Laboratory of Molecular Biology,</affiliation>
 	</byline>
 
 	<address>Cambridge CB2 0QH,<lb/> United Kingdom<lb/></address>
@@ -28,7 +30,10 @@
 	<email>scheres@mrc-lmb.cam.ac.uk</email>
 
 	Abstract<lb/>
-	<div type="abstract">Electron cryo-tomography (cryo-ET) and sub-tomogram averaging allow structure determination<lb/> of macromolecules in situ, and are gaining in popularity for initial model generation for single-<lb/>particle analysis. We describe herein, a protocol for sub-tomogram averaging from cryo-ET data<lb/> using the RELION software. We describe how to calculate newly developed three-dimensional<lb/> models for the contrast transfer function and the missing wedge of each sub-tomogram, and how<lb/> to use these models for regularized-likelihood refinement. This approach has been implemented<lb/> in the existing workflow for single-particle analysis, so that users may conveniently tap into<lb/> existing capabilities of the RELION software. As example applications, we present analyses of<lb/> purified hepatitis B capsid particles and S. cerevisiae 80S ribosomes. In both cases, we show that<lb/> following initial classification, sub-tomogram averaging in RELION allows de novo generation<lb/> of initial models, and provides high-resolution maps where secondary structure elements are<lb/> resolved.<lb/> Recently, we introduced a new image processing approach to sub-tomogram averaging (Bharat<lb/> et al., 2015) that is based on regularized likelihood optimization in the RELION program</div>
+    <div type="abstract">Electron cryo-tomography (cryo-ET) and sub-tomogram averaging allow structure determination<lb/> of macromolecules in situ, and are gaining in popularity for initial model generation for single-<lb/>particle analysis. We describe herein, a protocol for sub-tomogram averaging from cryo-ET data<lb/> using the RELION software. We describe how to calculate newly developed three-dimensional<lb/> models for the contrast transfer function and the missing wedge of each sub-tomogram, and how<lb/> to use these models for regularized-likelihood refinement. This approach has been implemented<lb/> in the existing workflow for single-particle analysis, so that users may conveniently tap into<lb/> existing capabilities of the RELION software. As example applications, we present analyses of<lb/> purified hepatitis B capsid particles and S. cerevisiae 80S ribosomes. In both cases, we show that<lb/> following initial classification, sub-tomogram averaging in RELION allows de novo generation<lb/> of initial models, and provides high-resolution maps where secondary structure elements are<lb/> resolved.<lb/></div>
+
+    <!-- garbage from body -->
+    Recently, we introduced a new image processing approach to sub-tomogram averaging (Bharat<lb/> et al., 2015) that is based on regularized likelihood optimization in the RELION program
 
 		</front>
 	</text>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Adelaide</forename> <middlename>M</middlename> <surname>Lusambili</surname>,</persName>
+<persName><forename>Violet</forename> <surname>Naanyu</surname> ,</persName>
+<persName><forename>Terrance</forename> <middlename>J</middlename>. <surname>Wade</surname>,</persName>
+<persName><forename>Michaela</forename> <surname>Mantel</surname>,</persName>
+<persName><forename>Rachel</forename> <surname>Pell</surname>,</persName>
+<persName><forename>Angela</forename> <surname>Ngetich</surname>,</persName>
+Aga Khan Foundation,
+<persName><forename>Kennedy</forename> <surname>Mulama</surname>,</persName>
+Aga Khan Foundation,
+<persName><forename>Lucy</forename> <surname>Nyaga</surname>,</persName>
+<persName><forename>Marleen</forename> <surname>Temmerman</surname>,</persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

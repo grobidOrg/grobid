@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Katy</forename> <surname>Stokes</surname> <marker>1</marker> ,</persName>
+<persName><forename>Alicja</forename> <surname>Winczura</surname> <marker>1</marker> ,</persName>
+<persName><forename>Boyuan</forename> <surname>Song</surname> <marker>2,3</marker> ,</persName>
+<persName><forename>Giacomo</forename> <surname>De Piccoli</surname> <marker>1,4 *</marker> and</persName>
+<persName><forename>Daniel</forename> <middlename>B</middlename>. <surname>Grabarczyk</surname> <marker>2,5 *</marker></persName>
+<persName><forename>Giacomo</forename> <surname>De Piccoli</surname>.</persName>
+<persName><forename>Daniel</forename> <surname>Grabarczyk</surname>.</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

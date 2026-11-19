@@ -12,10 +12,12 @@
 							<orgName type="institution">Oregon State University</orgName>,
 							<address>
 								<settlement>Corvallis</settlement>,
-								<settlement>Oregon</settlement>
+								<region>Oregon</region>
 								<postCode>97331</postCode>, and 
 							</address>
-							<orgName type="department">Oregon Department of Agriculture</orgName>,
+						</affiliation>
+						<affiliation>
+							<orgName type="institution">Oregon Department of Agriculture</orgName>,
 							<address>
 								<settlement>Salem</settlement>,
 								<region>Oregon</region>

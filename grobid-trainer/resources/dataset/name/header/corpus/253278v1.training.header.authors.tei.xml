@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Alison</forename>
+								 <middlename>M</middlename>.
+								 <surname>Nagle</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kevin</forename>
+								 <middlename>M</middlename>.
+								 <surname>Levine</surname>
+								 <marker>1,3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Nilgun</forename>
+								 <surname>Tasdemir</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Julie</forename>
+								 <middlename>A</middlename>.
+								 <surname>Scott</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kara</forename>
+								 <surname>Burlbaugh</surname>
+								 <marker>2 , 4</marker>
+							</persName>
+							<persName>
+								 <forename>Justin</forename>
+								 <surname>Kehm</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tiffany</forename>
+								 <middlename>A</middlename>.
+								 <surname>Katz</surname>
+								 <marker>1,2,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <middlename>N</middlename>.
+								 <surname>Boone</surname>
+								 <marker>2,5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Britta</forename>
+								 <middlename>M</middlename>.
+								 <surname>Jacobsen</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jennifer</forename>
+								 <middlename>M</middlename>.
+								 <marker>5</marker>
+								 <surname>Atkinson</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Steffi</forename>
+								 <surname>Oesterreich</surname>
+								 <marker>1,2,3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Adrian</forename>
+								 <middlename>V</middlename>.
+								 <surname>Lee</surname>
+								 <marker>1,2,7 6 7</marker>
+							</persName>
+							<persName>
+								 <forename>Adrian</forename>
+								 <middlename>V</middlename>.
+								 <surname>Lee</surname>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

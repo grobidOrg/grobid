@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Ramírez-Gómez</surname> <forename>H</forename>. <middlename>V</middlename>. <marker>1</marker> ,</persName>
+<persName><surname>Jiménez-Sabinina</surname> <forename>V</forename>. <marker>2</marker> ,</persName>
+<persName><surname>Tuval</surname> <forename>I</forename>. <marker>3</marker> ,</persName>
+<persName><surname>Velázquez-Pérez</surname> <forename>M</forename>. <marker>1</marker> ,</persName>
+<persName><surname>Beltrán</surname> <forename>C</forename>. <marker>1</marker> ,</persName>
+<persName><surname>Carneiro</surname> <forename>J</forename>. <marker>4</marker> ,</persName>
+<persName><surname>Wood</surname> <forename>C</forename>. <middlename>D</middlename>. <marker>1, 5</marker> ,</persName>
+<persName><surname>Darszon</surname> <forename>A</forename>. <marker>1, *</marker>,</persName>
+<persName><surname>Guerrero</surname> <forename>A</forename>. <marker>1, 5, *</marker>.</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName> <surname>Ezema</surname> <forename>CI</forename> <marker>*1</marker> , </persName>
+<persName> <surname>Nwafulume</surname> <forename>CK</forename> <marker>1</marker> , </persName>
+<persName> <surname>Nweke</surname> <forename>M</forename>. <marker>1</marker> , </persName>
+<persName> <surname>Eneh</surname> <forename>OC</forename> <marker>2</marker> , </persName>
+<persName> <surname>Uchenwoke</surname> <marker>1</marker> <forename>C</forename> <marker>1</marker> , </persName>
+<persName> <surname>Abugu</surname> <forename>JO</forename> <marker>3</marker> , </persName>
+<persName> <surname>Anyachukwu</surname> <forename>CC</forename> <marker>1</marker> </persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

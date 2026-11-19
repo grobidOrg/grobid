@@ -13,7 +13,7 @@
 # -------------------
 # build builder image
 # -------------------
-FROM eclipse-temurin:21.0.12.1_1-jdk-noble AS builder
+FROM eclipse-temurin:21.0.13_9-jdk-noble AS builder
 
 USER root
 
@@ -62,6 +62,10 @@ RUN if [ "$TARGETARCH" = "arm64" ]; then \
 # cleaning Delft models
 RUN rm -rf grobid-home/models/*-BidLSTM_*
 
+# the Wapiti models are kept uncompacted in the repository: compact them for the image
+# (same labels, the observations that no non-zero weight refers to are dropped)
+RUN ./gradlew :grobid-trainer:compactModels --no-daemon --stacktrace
+
 RUN ./gradlew assemble --no-daemon --info --stacktrace
 
 WORKDIR /opt/grobid
@@ -74,7 +78,7 @@ RUN rm -rf grobid-source
 # -------------------
 # build runtime image
 # -------------------
-FROM eclipse-temurin:21.0.12.1_1-jre-noble
+FROM eclipse-temurin:21.0.13_9-jre-noble
 
 RUN apt-get update && \
     apt-get -y upgrade && \

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Nathalia</forename><surname>dos Santos Teixeira¹</surname><marker>* ¶</marker>,</persName>
+<persName><forename>Lis</forename><middlename>Santos</middlename><surname>Marques¹</surname><marker>¶</marker>,</persName>
+<persName><forename>Rômulo</forename><middlename>Batista</middlename><surname>Rodrigues¹</surname><marker>¶</marker>,</persName>
+<persName><forename>Darlan</forename><surname>Gusso²</surname>,</persName>
+<persName><forename>Ana</forename><middlename>Amélia</middlename><surname>Nunes Fossati¹</surname>,</persName>
+<persName><forename>Danilo</forename><middlename>Pedro</middlename><surname>Streit</surname><suffix>Jr</suffix>.<marker>¹</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -9,8 +9,9 @@
 
 						<affiliation>
 							<orgName type="institution">Virginia Polytechnic Institute and State University</orgName>
+							<!-- check: "2001" is not a US postcode and most likely a year; left untagged -->
 							<address>
-								<postCode>2001</postCode>
+								2001
 								<lb/>
 								<settlement>Blacksburg</settlement>,
 								<region>Virginia</region>

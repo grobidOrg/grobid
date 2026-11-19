@@ -32,7 +32,11 @@
 	<docAuthor>D Hajioff<lb/></docAuthor>
 	</byline>
 
-	specialist registrar in otolaryngology<lb/> Prospect Medical<lb/> Practice, Norwich<lb/> 
+	specialist registrar in otolaryngology<lb/>
+	<byline>
+	<affiliation>Prospect Medical<lb/> Practice,</affiliation>
+	</byline>
+	<address>Norwich</address><lb/> 
 
 	<byline>
 	<docAuthor>S Bennett<lb/></docAuthor>

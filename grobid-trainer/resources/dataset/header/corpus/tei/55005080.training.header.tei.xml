@@ -15,10 +15,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>Department of Computer Science and Engineering<lb/> University of California,</affiliation>
+	<affiliation>Department of Computer Science and Engineering<lb/> University of California, San Diego<lb/></affiliation>
 	</byline>
 
-	<address>San Diego<lb/> La Jolla, CA 92193-0114</address>
+	<address>La Jolla, CA 92193-0114</address>
 
 	Abstract<lb/>
 	<div type="abstract">Many tasks involving high-dimensional data, such as face<lb/> recognition, suffer from the curse of dimensionality: the<lb/> number of training samples required to accurately learn a<lb/> classifier increases exponentially with the dimensionality of<lb/> the data. Structured Principal Component Analysis (SPCA)<lb/> reduces the dimensionality of the data while preserving its<lb/> discriminative power. The algorithm finds clusters of simi-<lb/>lar features, where the similarity between features is mea-<lb/>sured using the class-conditional Chi-squared distance be-<lb/>tween the distributions of the features. As features in a clus-<lb/>ter are similar and thus redundant, an entire cluster can be<lb/> represented by a small number of principal components ex-<lb/>tracted from each cluster. We test the algorithm on two face<lb/> recognition databases, the Ekman and Friesen Pictures of<lb/> Facial Affect Database and the Yale Face Database, with<lb/> encouraging results.</div>

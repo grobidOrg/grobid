@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName> <forename>Gebreselassie</forename> <middlename>Addisu</middlename> <surname>Tilaye</surname> <marker>1*</marker> , </persName>
+<persName> <forename>Muluken</forename> <middlename>Fekadie</middlename> <surname>Zerihun</surname> <marker>2 ¶</marker> , </persName>
+<persName> <forename>Kasaw</forename> <middlename>Adane</middlename> <surname>Chuffa</surname> <marker>3</marker> , </persName>
+<persName> <forename>Mahelet</forename> <surname>Arayaselassie</surname> <marker>4 ¶</marker> , </persName>
+<persName> <forename>Daniel</forename> <surname>Seifu</surname> <marker>5</marker> </persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Mansour</surname>, <forename>T</forename>. <marker>* 1,2</marker> ,</persName>
+<persName><surname>Scott</surname>, <forename>E</forename>.<middlename>Y</middlename>. <marker>* 3</marker> ,</persName>
+<persName><surname>Finno</surname>, <forename>C</forename>. <marker>1</marker> ,</persName>
+<persName><surname>Bellone</surname>, <forename>R</forename>. <middlename>R</middlename>. <marker>4</marker> ,</persName>
+<persName><surname>Mienaltowski</surname>, <forename>M</forename>. <middlename>J</middlename>. <marker>3</marker> ,</persName>
+<persName><surname>Penedo</surname>, <forename>M</forename>. <middlename>C</middlename>. <marker>4</marker> ,</persName>
+<persName><surname>Ross</surname>, <forename>P</forename>. <middlename>J</middlename>. <marker>3</marker> ,</persName>
+<persName><surname>Valberg</surname>, <forename>S</forename>. <middlename>J</middlename>. <marker>5</marker> ,</persName>
+<persName><surname>Murray</surname>, <forename>J</forename>. <middlename>D</middlename>. <marker>1,3</marker> ,</persName>
+<persName><surname>Brown</surname>, <forename>C</forename>.<middlename>T</middlename> <marker>1</marker> .</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Taru</forename>
+								<surname>Tukiainen</surname>
+								<marker>1,2,*</marker> ,
+							</persName>
+							<persName>
+								<forename>Alexandra-Chloé</forename>
+								<surname>Villani</surname>
+								<marker>2,3</marker> ,
+							</persName>
+							<persName>
+								<forename>Angela</forename>
+								<surname>Yen</surname>
+								<marker>2,4</marker> ,
+							</persName>
+							<persName>
+								<forename>Manuel</forename>
+								<middlename>A</middlename>.
+								<surname>Rivas</surname>
+								<marker>1,2,5</marker> ,
+							</persName>
+							<persName>
+								<forename>Jamie</forename>
+								<middlename>L</middlename>.
+								<surname>Marshall</surname>
+								<marker>1,2</marker> ,
+							</persName>
+							<persName>
+								<forename>Rahul</forename>
+								<surname>Satija</surname>
+								<marker>2,6,7</marker> ,
+							</persName>
+							<persName>
+								<forename>Matt</forename>
+								<surname>Aguirre</surname>
+								<marker>1,2</marker> ,
+							</persName>
+							<persName>
+								<forename>Laura</forename>
+								<surname>Gauthier</surname>
+								<marker>1,2</marker> ,
+							</persName>
+							<persName>
+								<forename>Mark</forename>
+								<surname>Fleharty</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Andrew</forename>
+								<surname>Kirby</surname>
+								<marker>1,2</marker> ,
+							</persName>
+							<persName>
+								<forename>Beryl</forename>
+								<middlename>B</middlename>.
+								<surname>Cummings</surname>
+								<marker>1,2</marker> ,
+							</persName>
+							<persName>
+								<forename>Stephane</forename>
+								<middlename>E</middlename>.
+								<surname>Castel</surname>
+								<marker>6,8</marker> ,
+							</persName>
+							<persName>
+								<forename>Konrad</forename>
+								<middlename>J</middlename>.
+								<surname>Karczewski</surname>
+								<marker>1,2</marker> ,
+							</persName>
+							<persName>
+								<forename>François</forename>
+								<surname>Aguet</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Andrea</forename>
+								<surname>Byrnes</surname>
+								<marker>1,2</marker> ,
+							</persName>
+							GTEx Consortium,
+							<persName>
+								<forename>Tuuli</forename>
+								<surname>Lappalainen</surname>
+								<marker>6,8</marker> ,
+							</persName>
+							<persName>
+								<forename>Aviv</forename>
+								<surname>Regev</surname>
+								<marker>2,9</marker> ,
+							</persName>
+							<persName>
+								<forename>Kristin</forename>
+								<middlename>G</middlename>.
+								<surname>Ardlie</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Nir</forename>
+								<surname>Hacohen</surname>
+								<marker>2,3</marker> ,
+							</persName>
+							<persName>
+								<forename>Daniel</forename>
+								<middlename>G</middlename>.
+								<surname>MacArthur</surname>
+								<marker>1,2,*</marker>
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

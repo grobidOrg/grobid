@@ -30,7 +30,9 @@ import java.util.Map;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import org.grobid.core.analyzers.GrobidAnalyzer;
 import org.grobid.core.data.Person;
+import org.grobid.core.layout.LayoutToken;
 import org.grobid.core.main.LibraryLoader;
 
 public class AuthorParserTest {
@@ -185,5 +187,31 @@ public class AuthorParserTest {
         assertThat(
                 AuthorParser.splitMarkers("‡,,§"),
                 contains("‡", ",,", "§"));
+    }
+
+    @Test
+    public void testWithoutLineBreaks() {
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken("Ann Lee ,\n Bo Kim\n");
+        List<LayoutToken> result = AuthorParser.withoutLineBreaks(tokens);
+        for (LayoutToken token : result) {
+            assertFalse("no line break left", token.getText().equals("\n"));
+        }
+        assertTrue("trailing white space dropped", result.get(result.size() - 1).getText().equals("Kim"));
+    }
+
+    @Test
+    public void testHeaderLineBreakInsideAuthorList() throws Exception {
+        // eLife 00133: the author after the line break was dropped when the line break reached the features
+        AuthorParser parser = new AuthorParser();
+        String input = "Jing Yan 1 , Dan L Chao 1 , Shiori Toba 2 , Kotaro Koyasako 3,4 , Takuo Yasunaga 3,4,5 ,\n"
+                + "Shinji Hirotsune 2 , Kang Shen 1 *\n";
+        List<LayoutToken> tokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+        List<Person> persons = parser.processingHeaderWithLayoutTokens(tokens, null);
+        assertNotNull(persons);
+        List<String> lastNames = new ArrayList<>();
+        for (Person person : persons) {
+            lastNames.add(person.getLastName());
+        }
+        assertThat(lastNames, contains("Yan", "Chao", "Toba", "Koyasako", "Yasunaga", "Hirotsune", "Shen"));
     }
 }

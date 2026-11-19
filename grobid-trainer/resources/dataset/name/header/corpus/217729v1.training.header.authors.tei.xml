@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Arwen</forename> <middlename>W</middlename>. <surname>Gao</surname> <marker>1*</marker> ,</persName>
+<persName><forename>Mark</forename> <middlename>G</middlename>. <surname>Sterken</surname> <marker>2*</marker> ,</persName>
+<persName><forename>Jelmi</forename> <surname>uit de Bos</surname> <marker>1</marker> ,</persName>
+<persName><forename>Jelle</forename> <surname>van Creij</surname> <marker>2</marker> ,</persName>
+<persName><forename>Rashmi</forename> <surname>Kamble</surname> <marker>1</marker> ,</persName>
+<persName><forename>Basten</forename> <middlename>L</middlename>. <surname>Snoek</surname> <marker>2</marker> ,</persName>
+<persName><forename>Jan</forename> <middlename>E</middlename>. <surname>Kammenga</surname> <marker>2 #</marker> ,</persName>
+<persName><forename>Riekelt</forename> <middlename>H</middlename>. <surname>Houtkooper</surname> <marker>1#</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

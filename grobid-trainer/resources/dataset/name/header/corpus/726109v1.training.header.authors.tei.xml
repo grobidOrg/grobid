@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Husso</surname> <forename>A</forename><marker>1</marker>,</persName>
+<persName><surname>Jalanka</surname> <forename>J</forename><marker>2</marker>,</persName>
+<persName><surname>Alipour</surname> <forename>MJ</forename><marker>1</marker>,</persName>
+<persName><surname>Huhti</surname> <forename>P</forename><marker>3</marker>,</persName>
+<persName><surname>Kareskoski</surname> <forename>M</forename><marker>4</marker>,</persName>
+<persName><surname>Pessa-Morikawa</surname> <forename>T</forename><marker>1</marker>,</persName>
+<persName><surname>Iivanainen</surname> <forename>A</forename><marker>1 *</marker>,</persName>
+<persName><surname>Niku</surname> <forename>M</forename><marker>1 *</marker></persName>
+<persName><forename>Antti</forename><surname>Iivanainen</surname></persName>
+<persName><forename>Mikael</forename><surname>Niku</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

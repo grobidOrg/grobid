@@ -8,10 +8,10 @@
 						<author>
 
 						<affiliation>
-							<orgName type="institution">RMI Technical Center<lb/> RMI Titanium Company</orgName>
+							<orgName type="department">RMI Technical Center</orgName><lb/> <orgName type="institution">RMI Titanium Company</orgName>
 							<lb/>
 							<address>
-								<addrLine>1000 Warren Avenue<lb/> Niles</addrLine>,
+								<addrLine>1000 Warren Avenue</addrLine><lb/> <settlement>Niles</settlement>,
 								<region>Ohio</region>
 								<postCode>44446</postCode>
 								<country>USA</country>
@@ -19,10 +19,10 @@
 							</address>
 						</affiliation>
 						<affiliation>	
-							<orgName type="institution">RMI Technical Center<lb/> RMI Titanium Company</orgName>
+							<orgName type="department">RMI Technical Center</orgName><lb/> <orgName type="institution">RMI Titanium Company</orgName>
 							<lb/>
 							<address>
-								<addrLine>1000 Warren Avenue<lb/> Niles</addrLine>,
+								<addrLine>1000 Warren Avenue</addrLine><lb/> <settlement>Niles</settlement>,
 								<region>Ohio</region>
 								<postCode>44446</postCode>
 								<country>USA</country>

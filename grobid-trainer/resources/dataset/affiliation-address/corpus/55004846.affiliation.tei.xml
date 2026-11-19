@@ -19,11 +19,11 @@
 						</affiliation>
 						<affiliation>
 							<marker>A</marker>
-							<orgName type="institution">Comparative Medicine</orgName>,
+							<orgName type="department">Comparative Medicine</orgName>,
 							<marker>B</marker>
 							<orgName type="department">Department<lb/> of Biological and Medical Research</orgName>,
 							<marker>2</marker>
-							<orgName type="department">King Faisal Specialist Hospital<lb/> and Research Centre</orgName>,
+							<orgName type="institution">King Faisal Specialist Hospital<lb/> and Research Centre</orgName>,
 							<address>
 								<settlement>Riyadh</settlement>,
 								<country>Saudi Arabia</country>.

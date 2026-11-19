@@ -39,22 +39,46 @@
 
 	<address>Edmonton, Alberta, Canada<lb/></address>
 
-	Email: Ren H Wu -
+	Email:
+	<byline>
+	<docAuthor>Ren H Wu</docAuthor>
+	</byline>
+	-
 	<email>wurh20000@sina.com</email>; 
 
-	Tina O&apos;Donnell -
+
+	<byline>
+	<docAuthor>Tina O&apos;Donnell</docAuthor>
+	</byline>
+	-
 	<email>tina@gpu.srv.ualberta.ca</email>; 
 
-	Michele Ulrich -
+
+	<byline>
+	<docAuthor>Michele Ulrich</docAuthor>
+	</byline>
+	-
 	<email>mulrich@ualberta.ca</email>;<lb/> 
 
-	Sheila J Asghar -
+
+	<byline>
+	<docAuthor>Sheila J Asghar</docAuthor>
+	</byline>
+	-
 	<email>sheila_canada@yahoo.com</email>; 
 
-	Christopher C Hanstock -
+
+	<byline>
+	<docAuthor>Christopher C Hanstock</docAuthor>
+	</byline>
+	-
 	<email>chris.hanstock@ualberta.ca</email>;<lb/> 
 
-	Peter H Silverstone* -
+
+	<byline>
+	<docAuthor>Peter H Silverstone*</docAuthor>
+	</byline>
+	-
 	<email>peter.silverstone@ualberta.ca<lb/></email>
 
 	* Corresponding author<lb/> 
@@ -73,7 +97,10 @@
 
 	<note type="submission">Received: 30 September 2003<lb/> Accepted: 30 July 2004<lb/></note>
 
-	<note type="copyright">This article is available from: http://www.general-hospital-psychiatry.com/content/3/1/13<lb/> © 2004 Wu et al; licensee BioMed Central Ltd. This is an open-access article distributed under the terms of the Creative Commons Attribution License<lb/> (http://creativecommons.org/licenses/by/2.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is<lb/> properly cited.<lb/></note>
+	This article is available from:
+	<ptr type="web">http://www.general-hospital-psychiatry.com/content/3/1/13<lb/></ptr>
+
+	<note type="copyright">© 2004 Wu et al; licensee BioMed Central Ltd. This is an open-access article distributed under the terms of the Creative Commons Attribution License<lb/> (http://creativecommons.org/licenses/by/2.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is<lb/> properly cited.<lb/></note>
 
 	<reference>Annals of General Hospital Psychiatry 2004, 3:13<lb/></reference>
 

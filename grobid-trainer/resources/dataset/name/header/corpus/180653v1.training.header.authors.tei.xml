@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Lisanne</forename> <middlename>Martine</middlename> <surname>van Leeuwen</surname> <marker>1,2</marker></persName>
+<persName><forename>Robert</forename> <middlename>J</middlename>. <surname>Evans</surname> <marker>3,4</marker></persName>
+<persName><forename>Kin</forename> <middlename>Ki</middlename> <surname>Jim</surname> <marker>1</marker></persName>
+<persName><forename>Theo</forename> <surname>Verboom</surname> <marker>1</marker></persName>
+<persName><forename>Xiaoming</forename> <surname>Fang</surname> <marker>3,6</marker></persName>
+<persName><forename>Aleksandra</forename> <surname>Bojarczuk</surname> <marker>3,4</marker></persName>
+<persName><forename>Jarema</forename> <surname>Malicki</surname> <marker>3,5 *</marker></persName>
+<persName><forename>Simon</forename> <middlename>Andrew</middlename> <surname>Johnston</surname> <marker>3,5 *</marker></persName>
+<persName><forename>Astrid</forename> <middlename>Marijke</middlename> <surname>van der Sar</surname> <marker>1</marker></persName>
+Affiliations
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

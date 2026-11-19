@@ -10,8 +10,12 @@
 	<reference>Pages 61 to 70 of W. Daelemans, A. van den Bosch, and A. Weijters (Editors),<lb/> Workshop Notes of the ECML/MLnet Workshop on Empirical Learning of Natural<lb/> Language Processing Tasks, April 26, 1997, Prague, Czech Republic<lb/></reference>
 
 	<docTitle>
-	<titlePart>Automatic Phonetic Transcription of Words<lb/> Based On Sparse Data<lb/> Maria Wolters (i) and Antal van den Bosch (ii)<lb/></titlePart>
+	<titlePart>Automatic Phonetic Transcription of Words<lb/> Based On Sparse Data<lb/></titlePart>
 	</docTitle>
+
+	<byline>
+	<docAuthor>Maria Wolters (i) and Antal van den Bosch (ii)<lb/></docAuthor>
+	</byline>
 
 	<byline>
 	<affiliation>(i) Institut f ur Kommunikationsforschung und Phonetik, Universit at Bonn<lb/> </affiliation>

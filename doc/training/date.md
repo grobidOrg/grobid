@@ -18,3 +18,13 @@ For example:
 	<date>Received <month>August</month> <day>17</day>, <year>2005</year>. </date>
 </dates>
 ```
+
+### Specific cases
+
+- **Ordinal suffixes** attached to the number stay inside the day element (`<day>12th</day>`). A suffix separated by a space stays outside (`<day>20</day> th`), so that a day is always a single token.
+- **Abbreviated months**: the abbreviation period stays outside the month element: `<month>Dec</month>.`, `<month>Sept</month>.`.
+- **Day ranges**: each day is tagged separately and the dash stays untagged: `<day>10</day>–<day>14</day> <month>March</month> <year>2011</year>`.
+- **Numeric dates**: when the order cannot be decided from the values (e.g. `07/04/2002`), use the source document's convention when known, otherwise read them day-first (`<day>07</day>/<month>04</month>/<year>2002</year>`). If one value is above 12 it is the day: `<month>09</month>/<day>16</day>/<year>2009</year>`.
+- **Separators** are never part of a field: `<month>06</month>/<year>2010</year>`, `(<year>1994</year>)`.
+- **Things that are not dates** stay untagged, even when they contain numbers that look like dates: issue numbers (`Issue 1a`), times (`13:26:14`), DOIs (`ajkd.2009.10.047`).
+- **OCR artifacts** are tagged as they appear: a spaced year such as `<year>1 994</year>` is still one year.

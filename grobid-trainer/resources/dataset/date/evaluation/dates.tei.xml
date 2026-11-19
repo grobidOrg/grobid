@@ -32,7 +32,7 @@
 	<date>(<year>1989</year>).</date>
 	<date>(<year>1994</year>).</date>
 	<date>(<year>1987</year>).</date>
-	<date>(<year>(1994</year>).</date>
+	<date>((<year>1994</year>).</date>
 	<date><year>1991</year>.</date>
 	<date><year>1992</year>,</date>
 	<date>(<year>1988</year>).</date>
@@ -63,7 +63,7 @@
 	<date><day>15</day> <month>April</month> <year>2010</year> <lb/></date>
 	<date><day>11</day> <month>May</month> <year>2010</year> <lb/></date>
 	<date><day>4</day> <month>February</month> <year>2010</year> <lb/></date>
-	<date><day>1</day> <month>March</month> <day>1</day>994  <lb/></date>
+	<date><day>1</day> <month>March</month> <year>1994</year>  <lb/></date>
 	<date><day>13</day> <month>July</month> <year>2010</year> <lb/></date>
 	<date><day>19</day> <month>November</month> <year>2009</year> <lb/></date>
 	<date><day>27</day> <month>November</month> <year>2009</year> <lb/></date>
@@ -82,8 +82,8 @@
 	<date><day>30</day> <month>November</month> <year>2009</year> <lb/></date>
 	<date><day>6</day> <month>June</month> <year>2010</year> <lb/></date>
 	<date><day>12</day> <month>November</month> <year>2009</year> <lb/></date>
-	<date><day>2</day> <month>December</month> <day>2</day>003 ;</date>
-	<date><day>2</day> <month>December</month> <day>2</day>003 ;</date>
+	<date><day>2</day> <month>December</month> <year>2003</year> ;</date>
+	<date><day>2</day> <month>December</month> <year>2003</year> ;</date>
 	<date><day>19</day> <month>April</month> <year>2010</year> <lb/></date>
 	<date><day>30</day> <month>April</month> <year>2010</year> <lb/></date>
 	<date><day>28</day> <month>April</month> <year>2010</year> <lb/></date>
@@ -121,7 +121,7 @@
 	<date><month>October</month> <day>23</day>, <year>1997</year>  <lb/></date>
 	<date><month>September</month> <day>17</day>, <year>1996</year>  <lb/></date>
 	<date><month>June</month> <day>2</day>, <year>1996</year>:  <lb/></date>
-	<date><month>February</month> <day>19</day>, <day>19</day>93  <lb/></date>
+	<date><month>February</month> <day>19</day>, <year>1993</year>  <lb/></date>
 	<date><month>May</month> <day>16</day>, <year>1994</year>  <lb/></date>
 	<date><month>May</month> <day>16</day>, <year>1994</year>  <lb/></date>
 	<date><month>August</month> <year>1997</year>  <lb/></date>
@@ -162,12 +162,12 @@
 	<date><month>April</month>, <year>1997</year>  </date>
 	<date><month>March</month> <day>25</day>, <year>1997</year> </date>
 	<date><month>October</month> <year>1997</year> </date>
-	<date><month>March</month> <year>1995</year> (corrected Dec. <year>1995</year> and <month>March</month> <year>1998</year>) </date>
+	<date><month>March</month> <year>1995</year> (corrected <month>Dec</month>. <year>1995</year> and <month>March</month> <year>1998</year>) </date>
 	<date><month>August</month> <day>5</day>, <year>1996</year> </date>
 	<date><month>August</month> <day>4</day>, <year>1996</year> </date>
 	<date><month>October</month> <day>31</day>, <year>1994</year>  </date>
 	<date><month>June</month> <year>1992</year>  </date>
-	<date><month>January</month> <day>19</day>, <day>19</day>95 </date>
+	<date><month>January</month> <day>19</day>, <year>1995</year> </date>
 	<date><month>October</month> <day>13</day>, <year>1997</year> </date>
 	<date><month>May</month> <day>21</day>, <year>1997</year> </date>
 	<date><year>94</year>-<month>Mar</month>-<day>17</day>,</date>
@@ -177,7 +177,7 @@
 	<date><month>July</month> <day>23</day>, <year>1997</year>  </date>
 	<date><month>September</month> <day>18</day>, <year>1992</year>  </date>
 	<date><month>October</month> <day>24</day>, <year>1996</year>  </date>
-	<date><year>@1994</year></date>
+	<date>@<year>1994</year></date>
 	<date><month>February</month> <year>1991</year>  <lb/></date>
 	<date><month>July</month> <day>1</day>, <year>1 998 </year></date>
 	<date><month>April</month> <day>30</day>, <year>1992</year>  <lb/></date>
@@ -248,9 +248,9 @@
 	<date><year>2012</year>-<month>7</month>-<day>12</day></date>
 	<date><year>2010</year>-<month>01</month>-<day>28</day></date>
 	<date><year>2009</year>-<month>8</month>-<day>22</day></date>
-	<date>Bei der Redaktion eingegangen am <day>14</day><other>.</other><month>Dezember</month><year>2007</year><other>.</other></date>
-	<date><month>November</month>, <day>12</day>th <year>2011</year></date>
-	<date><month>March</month>, the <day>28</day>th <year>1999</year></date>
+	<date>Bei der Redaktion eingegangen am <day>14</day>. <month>Dezember</month> <year>2007</year>.</date>
+	<date><month>November</month>, <day>12th</day> <year>2011</year></date>
+	<date><month>March</month>, the <day>28th</day> <year>1999</year></date>
 	<date>Available online <day>12</day> <month>January</month> <year>2011</year><lb/></date>
 	<date>Received <day>23</day> <month>November</month> <year>2009</year><lb/></date>
 	<date>Received in revised form<lb/> <day>5</day> <month>April</month> <year>2010</year><lb/></date>

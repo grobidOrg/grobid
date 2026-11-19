@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Jorge</forename>
+								 <surname>Samper-González</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ninon</forename>
+								 <surname>Burgos</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Simona</forename>
+								 <surname>Bottani</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Sabrina</forename>
+								 <surname>Fontanella</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Pascal</forename>
+								 <surname>Lu</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Arnaud</forename>
+								 <surname>Marcoux</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alexandre</forename>
+								 <surname>Routier</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jérémy</forename>
+								 <surname>Guillon</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Michael</forename>
+								 <surname>Bacci</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Junhao</forename>
+								 <surname>Wen</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Anne</forename>
+								 <surname>Bertrand</surname>
+								 <marker>a,b,c,*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Hugo</forename>
+								 <surname>Bertin</surname>
+								 <marker>d</marker> ,
+							</persName>
+							<persName>
+								 <forename>Marie-Odile</forename>
+								 <surname>Habert</surname>
+								 <marker>d,e</marker> ,
+							</persName>
+							<persName>
+								 <forename>Stanley</forename>
+								 <surname>Durrleman</surname>
+								 <marker>a,b</marker> ,
+							</persName>
+							<persName>
+								 <forename>Theodoros</forename>
+								 <surname>Evgeniou</surname>
+								 <marker>f</marker> ,
+							</persName>
+							<persName>
+								 <forename>Olivier</forename>
+								 <surname>Colliot</surname>
+								 <marker>a,b,c,g , 1 2</marker>
+							</persName>
+							<persName>
+								 <forename>Olivier</forename>
+								 <surname>Colliot</surname>,
+							</persName>
+							<persName>
+								 <forename>Jorge</forename>
+								 <surname>Samper</surname>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

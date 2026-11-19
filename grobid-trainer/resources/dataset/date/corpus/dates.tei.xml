@@ -34,7 +34,7 @@
 	<date>(<year>1989</year>).</date>
 	<date>(<year>1994</year>).</date>
 	<date>(<year>1987</year>).</date>
-	<date>(<year>(1994</year>).</date>
+	<date>((<year>1994</year>).</date>
 	<date><year>1991</year>.</date>
 	<date><year>1992</year>,</date>
 	<date>(<year>1988</year>).</date>
@@ -164,7 +164,7 @@
 	<date><month>April</month>, <year>1997</year>  </date>
 	<date><month>March</month> <day>25</day>, <year>1997</year> </date>
 	<date><month>October</month> <year>1997</year> </date>
-	<date><month>March</month> <year>1995</year> </date> <date>(corrected Dec. <year>1995</year> and <month>March</month> <year>1998</year>) </date>
+	<date><month>March</month> <year>1995</year> </date> <date>(corrected <month>Dec</month>. <year>1995</year> and <month>March</month> <year>1998</year>) </date>
 	<date><month>August</month> <day>5</day>, <year>1996</year> </date>
 	<date><month>August</month> <day>4</day>, <year>1996</year> </date>
 	<date><month>October</month> <day>31</day>, <year>1994</year>  </date>
@@ -179,7 +179,7 @@
 	<date><month>July</month> <day>23</day>, <year>1997</year>  </date>
 	<date><month>September</month> <day>18</day>, <year>1992</year>  </date>
 	<date><month>October</month> <day>24</day>, <year>1996</year>  </date>
-	<date><year>@1994</year></date>
+	<date>@<year>1994</year></date>
 	<date><month>February</month> <year>1991</year>  <lb/></date>
 	<date><month>July</month> <day>1</day>, <year>1 998 </year></date>
 	<date><month>April</month> <day>30</day>, <year>1992</year>  <lb/></date>
@@ -251,8 +251,8 @@
 	<date><year>2010</year>-<month>01</month>-<day>28</day></date>
 	<date><year>2009</year>-<month>8</month>-<day>22</day></date>
 	<date>Bei der Redaktion eingegangen am <day>14</day>. <month>Dezember</month> <year>2007</year>.</date>
-	<date><month>November</month>, <day>12</day>th <year>2011</year></date>
-	<date><month>March</month>, the <day>28</day>th <year>1999</year></date>
+	<date><month>November</month>, <day>12th</day> <year>2011</year></date>
+	<date><month>March</month>, the <day>28th</day> <year>1999</year></date>
 	<date>Available online <day>12</day> <month>January</month> <year>2011</year><lb/></date>
 	<date>Received <day>23</day> <month>November</month> <year>2009</year><lb/></date>
 	<date>Received in revised form<lb/> <day>5</day> <month>April</month> <year>2010</year><lb/></date>

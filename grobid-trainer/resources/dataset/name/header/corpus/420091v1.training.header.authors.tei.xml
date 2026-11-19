@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+	<persName>
+		<forename>Victor</forename>
+		<middlename>Soares</middlename><surname>Cavalcante-Costa</surname>
+		<marker>1</marker>
+	</persName> ;
+	<persName>
+		<forename>Mariana</forename>
+		<surname>Costa-Reginaldo</surname>
+		<marker>1</marker>
+	</persName> ;
+	<persName>
+		<forename>Thamires</forename>
+		<surname>Queiroz-Oliveira</surname>
+		<marker>1</marker> ;
+	</persName>
+	<persName>
+		<forename>Anny</forename>
+		<middlename>Carolline</middlename>
+		<surname>Silva Oliveira</surname>
+		<marker>2</marker> ;
+	</persName>
+	<persName>
+		<forename>Natália</forename>
+		<middlename>Fernanda</middlename>
+		<surname>Couto</surname>
+		<marker>2</marker> ;
+	</persName>
+	<persName>
+		<forename>Danielle</forename>
+		<middlename>Oliveira</middlename><surname>dos Anjos</surname>
+		<marker>3</marker> ;
+	</persName>
+	<persName>
+		<forename>Jane</forename>
+		<surname>Lima-Santos</surname>
+		<marker>3</marker> ;
+	</persName>
+	<persName>
+		<forename>Luciana</forename>
+		<surname>de Oliveira Andrade</surname>
+		<marker>2</marker> ;
+	</persName>
+	<persName>
+		<forename>Maria</forename>
+		<middlename>Fátima</middlename>
+		<surname>Horta</surname>
+		<marker>1</marker> and
+	</persName>
+	<persName>
+		<forename>Thiago</forename>
+		<surname>Castro- Gomes</surname> <marker>1 *</marker>.
+	</persName>
+	<persName>
+		
+		<forename>Thiago</forename>
+		<surname>Castro</surname>
+	</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

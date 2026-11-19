@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Katherine</forename><surname>Fiocca</surname><marker>1 *</marker></persName> CO ,
+<persName><forename>Meghan</forename><surname>Barrett</surname><marker>1 *</marker></persName> CO ,
+<persName><forename>Edward</forename><middlename>A</middlename>.<surname>Waddell</surname><marker>1</marker> ,</persName>
+<persName><forename>Cheyenne</forename><surname>McNair</surname><marker>2</marker> ,</persName>
+<persName><forename>Sean</forename><surname>O&apos;Donnell</surname><marker>1, 2 ^</marker>,</persName>
+<persName><forename>Daniel</forename><middlename>R</middlename>.<surname>Marenda</surname><marker>1, 3 † ^</marker></persName>
+<persName><forename>Daniel</forename><middlename>R</middlename>.<surname>Marenda</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

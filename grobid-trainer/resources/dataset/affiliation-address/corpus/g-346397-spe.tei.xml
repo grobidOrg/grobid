@@ -16,7 +16,7 @@
 								<orgName type="department">Department of Physics</orgName>,<lb/>
 								<orgName type="institution">University of Cape Town</orgName>,	
 								<address>
-									<addrLine>Private Bag X3</addrLine>,
+									<postBox>Private Bag X3</postBox>,
 									<addrLine>Rondebosch</addrLine>
 									<postCode>7701</postCode>,<lb/>
 									<settlement>Cape Town</settlement>,
@@ -31,7 +31,7 @@
 								<orgName type="department">Department of Physics</orgName>,
 								<orgName type="institution">University of Cape Town</orgName>,<lb/>
 								<address>
-									<addrLine>Private Bag X3</addrLine>,
+									<postBox>Private Bag X3</postBox>,
 									<addrLine>Rondebosch</addrLine>
 									<postCode>7701</postCode>,
 									<settlement>Cape Town</settlement>,

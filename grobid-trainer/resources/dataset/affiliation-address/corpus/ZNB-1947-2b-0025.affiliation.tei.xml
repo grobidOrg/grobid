@@ -10,6 +10,7 @@
 						<affiliation>
 							Aus der  <orgName type="department">Biochemischen Abt.</orgName> 
 							und dem <orgName type="department">Hygienischen Institut</orgName> der
+							<!-- check: the trailing asterisk is probably a footnote sign of the scan rather than an author indice; left untagged -->
 							<orgName type="institution">Universität Göttingen</orgName> *
 						</affiliation>
 

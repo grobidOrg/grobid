@@ -10,8 +10,9 @@
 						<author>
 							<affiliation>
 								<orgName type="institution">University of Liège</orgName>,
-								<orgName type="department">Institute of Physics B5</orgName>,<lb/>
+								<orgName type="department">Institute of Physics</orgName>
 								<address>
+									<addrLine>B5</addrLine>,<lb/>
 									<addrLine>Sart Tilman</addrLine>,
 									<postCode>B-4000</postCode>
 									<settlement>Liège 1</settlement>,

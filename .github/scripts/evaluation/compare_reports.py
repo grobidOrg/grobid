@@ -4,9 +4,10 @@ Render the Markdown reports of an end-to-end evaluation, optionally against a ba
 
     compare_reports.py --reports reports/ [--baseline baseline/] > summary.md
 
-Both directories hold the `report-<dataset>.md` files written by `jatsEval`. Each dataset
-gets a summary table, the micro-average F1 of the header, citation and fulltext per
-matching, followed by its full report, collapsed, rendered as in the benchmark pages
+Both directories hold the `report-<dataset>.md` files written by `jatsEval`, or by
+score_arxiv.py for the arXiv corpus, in the same layout. Each dataset gets a summary table,
+the micro-average F1 of the header, citation and fulltext (the author, affiliation and combined
+F1 for arXiv) per matching, followed by its full report, collapsed, rendered as in the benchmark pages
 (doc/benchmarks/): per section and matching, the field-level precision, recall, F1 and
 support, then the instance-level results and the citation contexts. When a baseline is
 given, every score that moved is followed by its delta in brackets. A dataset missing
@@ -31,9 +32,18 @@ INSTANCE_MATCHINGS = {
 INSTANCE_LINE = re.compile(r"^Instance-level (recall|precision|f-score):\s*([\d.]+)\s*\((\w+)\)")
 CONTEXT_LINE = re.compile(r"^(Precision|Recall|fscore) citation contexts:\s*([\d.]+)")
 DOCUMENTS_LINE = re.compile(r"^Evaluation on (\d+) random PDF files")
-SECTIONS = ["Header metadata", "Citation metadata", "Fulltext structures"]
-MATCHINGS = ["Strict", "Soft", "Levenshtein", "Ratcliff/Obershelp"]
+MATCHINGS = ["Strict", "Soft", "Levenshtein", "Ratcliff/Obershelp", "Fuzzy"]
 MICRO = "all fields (micro avg.)"
+ARXIV = "Authors and affiliations (arXiv)"
+# rows of the summary table: (name, section, label of the row of the field-level results)
+SUMMARY_ROWS = [
+    ("Header", "Header metadata", MICRO),
+    ("Citation", "Citation metadata", MICRO),
+    ("Fulltext", "Fulltext structures", MICRO),
+    ("Authors", ARXIV, "author"),
+    ("Affiliations", ARXIV, "affiliations"),
+    ("Authors with all their affiliations", ARXIV, "combined"),
+]
 TABLE_HEADER = "| label | precision | recall | f1 | support |\n|---|---|---|---|---|"
 
 
@@ -115,21 +125,28 @@ def number(value):
 
 
 def render_summary(report, base, out):
-    """Write the micro-average F1 of each section per matching, with its delta."""
-    out.write("| | " + " | ".join(MATCHINGS) + " |\n")
-    out.write("|---|" + "---|" * len(MATCHINGS) + "\n")
-    for section in SECTIONS:
-        keys = {m: ("row", section, m, "Field-level results", MICRO) for m in MATCHINGS}
-        if not any(key in report for key in keys.values()):
-            continue
+    """Write the F1 of the summary rows of the report per matching, with its delta."""
+    rows = [
+        (name, {m: ("row", section, m, "Field-level results", label) for m in MATCHINGS})
+        for name, section, label in SUMMARY_ROWS
+    ]
+    rows = [(name, keys) for name, keys in rows if any(key in report for key in keys.values())]
+    # the matchings of the report only: the JATS reports have no fuzzy matching, arXiv has only two
+    matchings = [m for m in MATCHINGS if any(keys[m] in report for _, keys in rows)]
+    if not rows:
+        return
+    out.write("| | " + " | ".join(matchings) + " |\n")
+    out.write("|---|" + "---|" * len(matchings) + "\n")
+    for name, keys in rows:
         cells = []
-        for matching, key in keys.items():
+        for matching in matchings:
+            key = keys[matching]
             if key in report:
                 f1 = report[key][2]
                 cells.append(number(f1) + delta(f1, base[key][2] if key in base else None))
             else:
                 cells.append("—")
-        out.write(f"| {section.split()[0]} | " + " | ".join(cells) + " |\n")
+        out.write(f"| {name} | " + " | ".join(cells) + " |\n")
     out.write("\n")
 
 

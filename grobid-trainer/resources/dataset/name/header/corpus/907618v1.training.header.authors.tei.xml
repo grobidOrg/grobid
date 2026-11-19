@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Alexander</forename> <middlename>J</middlename>. <middlename>T</middlename>. <surname>Wood</surname> <marker>1</marker> ,</persName>
+<persName><forename>Arlette</forename> <middlename>M</middlename>. <surname>Vassallo</surname> <marker>1</marker> ,</persName>
+<persName><forename>Marie-Hélène</forename> <surname>Ruchaud-Sparagano</surname> <marker>2</marker> ,</persName>
+<persName><forename>Jonathan</forename> <surname>Scott</surname> <marker>2</marker> ,</persName>
+<persName><forename>Carmelo</forename> <surname>Zinnato</surname> <marker>1</marker> ,</persName>
+<persName><forename>Carmen</forename> <surname>Gonzalez-Tejedo</surname> <marker>3</marker> ,</persName>
+<persName><forename>Kamal</forename> <surname>Kishore</surname> <marker>3</marker> ,</persName>
+<persName><forename>Clive</forename> <middlename>S</middlename>. <surname>D&apos;Santos</surname> <marker>3</marker> ,</persName>
+<persName><forename>A</forename>. <middlename>John</middlename> <surname>Simpson</surname> <marker>2,4</marker> ,</persName>
+<persName><forename>David</forename> <middlename>K</middlename>. <surname>Menon</surname> <marker>1</marker> ,</persName>
+<persName><forename>Charlotte</forename> <surname>Summers</surname> <marker>1</marker> ,</persName>
+<persName><forename>Edwin</forename> <middlename>R</middlename>. <surname>Chilvers</surname> <marker>1,5</marker> ,</persName>
+<persName><forename>Klaus</forename> <surname>Okkenhaug</surname> <marker>6</marker> ,</persName>
+<persName><forename>Andrew</forename> <middlename>Conway</middlename> <surname>Morris</surname> <marker>* 1,6</marker></persName>. Affiliations
+<persName><roleName>Dr</roleName> <forename>A</forename> <middlename>Conway</middlename> <surname>Morris</surname>,</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

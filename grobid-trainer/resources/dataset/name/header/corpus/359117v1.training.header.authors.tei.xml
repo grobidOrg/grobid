@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName><forename>Joshua</forename> <middlename>P</middlename> <middlename>M</middlename> <surname>Newson</surname> <marker>1 , ¶</marker> ,</persName>
+<persName><forename>Nichollas</forename> <middlename>E</middlename> <surname>Scott</surname> <marker>1 , ¶</marker> ,</persName>
+<persName><forename>Ivy</forename> <middlename>Yeuk</middlename> <middlename>Wah</middlename> <surname>Chung</surname> <marker>2</marker> ,</persName>
+<persName><forename>Tania</forename> <middlename>Wong</middlename> <surname>Fok Lung</surname> <marker>1, §</marker> ,</persName>
+<persName><forename>Cristina</forename> <surname>Giogha</surname> <marker>3</marker> ,</persName>
+<persName><forename>Nancy</forename> <surname>Wang</surname> <marker>1</marker> ,</persName>
+<persName><forename>Richard</forename> <middlename>A</middlename> <surname>Strugnell</surname> <marker>1</marker> ,</persName>
+<persName><forename>Nat</forename> <middlename>F</middlename> <surname>Brown</surname> <marker>5</marker> ,</persName>
+<persName><forename>Miroslaw</forename> <surname>Cygler</surname> <marker>2</marker> ,</persName>
+<persName><forename>Jaclyn</forename> <middlename>S</middlename> <surname>Pearson</surname> <marker>3</marker> , and</persName>
+<persName><forename>Elizabeth</forename> <middlename>L</middlename> <surname>Hartland</surname> <marker>1,3,4*</marker></persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

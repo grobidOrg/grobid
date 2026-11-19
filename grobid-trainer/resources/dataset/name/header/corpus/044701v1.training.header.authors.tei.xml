@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+An. arabiensis
+<persName><forename>Bradley</forename> <middlename>J</middlename> <surname>Main</surname> <marker>1*</marker> ,</persName>
+<persName><forename>Yoosook</forename> <surname>Lee</surname> <marker>1</marker> ,</persName>
+<persName><forename>Heather</forename> <middlename>M</middlename> <surname>Ferguson</surname> <marker>2</marker> ,</persName>
+<persName><forename>Anicet</forename> <surname>Kihonda</surname> <marker>3</marker> ,</persName>
+<persName><forename>Nicodem</forename> <middlename>J</middlename> <surname>Govella</surname> <marker>3</marker> ,</persName>
+<persName><forename>Katharina</forename> <middlename>S</middlename> <surname>Kreppel</surname> <marker>2 3</marker> ,</persName>
+<persName><forename>Travis</forename> <middlename>C</middlename> <surname>Collier</surname> <marker>1</marker> ,</persName>
+<persName><forename>Anthony</forename> <middlename>J</middlename> <surname>Cornel</surname> <marker>4</marker> ,</persName>
+<persName><forename>Eleazar</forename> <surname>Eskin</surname> <marker>5</marker> ,</persName>
+<persName><forename>Eun</forename> <middlename>Yong</middlename> <surname>Kang</surname> <marker>5</marker> ,</persName>
+<persName><forename>Catelyn</forename> <middlename>C</middlename> <surname>Nieman</surname> <marker>1</marker> ,</persName>
+<persName><forename>Allison</forename> <middlename>M</middlename> <surname>Weakley</surname> <marker>1</marker> and</persName>
+<persName><forename>Gregory</forename> <middlename>C</middlename> <surname>Lanzaro</surname> <marker>1 *</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

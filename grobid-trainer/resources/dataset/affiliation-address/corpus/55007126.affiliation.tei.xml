@@ -8,8 +8,9 @@
 						<author>
 
 						<affiliation>
-							<orgName type="institution">TubeMaster, Inc.<lb/> Louisville</orgName> ,
+							<orgName type="institution">TubeMaster, Inc.</orgName><lb/>
 							<address>
+								<settlement>Louisville</settlement> ,
 								<region>KY</region>
 							<lb/>
 							</address>
@@ -18,7 +19,7 @@
 							<orgName type="institution">San Antonio Convention Center</orgName>
 							<lb/>
 							<address>
-								<addrLine>San Antonio</addrLine>,
+								<settlement>San Antonio</settlement>,
 								<region>TX</region>
 							</address>
 						</affiliation>

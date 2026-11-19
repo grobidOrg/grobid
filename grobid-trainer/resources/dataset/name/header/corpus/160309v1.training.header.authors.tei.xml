@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Rosch</surname> <forename>RE</forename> <marker>1,2, *</marker>,</persName>
+<persName><surname>Wright</surname> <forename>S</forename> <marker>3,4</marker> ,</persName>
+<persName><surname>Cooray</surname> <forename>G</forename> <marker>1,5</marker> ,</persName>
+<persName><surname>Papadopoulou</surname> <forename>M</forename> <marker>6</marker> ,</persName>
+<persName><surname>Goyal</surname> <forename>S</forename> <marker>7</marker> ,</persName>
+<persName><surname>Lim</surname> <forename>M</forename> <marker>8</marker> ,</persName>
+<persName><surname>Vincent</surname> <forename>A</forename> <marker>9</marker> ,</persName>
+<persName><surname>Upton</surname> <forename>AL</forename> <marker>10</marker> ,</persName>
+<persName><surname>Baldeweg</surname> <forename>T</forename> <marker>2</marker> ,</persName>
+<persName><surname>Friston</surname> <forename>KJ</forename> <marker>1</marker></persName>
+<persName><forename>Richard</forename> <middlename>E</middlename> <surname>Rosch</surname>, <roleName>BMBCh</roleName></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

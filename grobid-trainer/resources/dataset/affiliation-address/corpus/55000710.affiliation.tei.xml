@@ -9,8 +9,9 @@
 
 						<affiliation>
 							<orgName type="department">Computer Science Department</orgName>,
-							<orgName type="institution">Stanford University<lb/> Stanford</orgName>,
+							<orgName type="institution">Stanford University</orgName><lb/>
 							<address>
+								<settlement>Stanford</settlement>,
 								<region>CA</region>
 								<postCode>94305</postCode>,
 								<country>USA</country>

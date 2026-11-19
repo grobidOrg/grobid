@@ -10,10 +10,10 @@
 					<analytic>
 						<author>
 							<affiliation>
-								<orgName type="department">Transmission Syst. Lab.</orgName>,
+								<orgName type="laboratory">Transmission Syst. Lab.</orgName>,
 								<orgName type="institution">NTT</orgName>,
 								<address>
-									<settlement>Kanagawa-ken</settlement>;
+									<region>Kanagawa-ken</region>;
                                 </address>
 							</affiliation>
 						</author>			

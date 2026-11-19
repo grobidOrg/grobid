@@ -30,10 +30,8 @@ U31:%x[0,7]
 U32:%x[0,8]
 U33:%x[0,9]
 
-# Line info
-U40:%x[-1,10]
-U41:%x[0,10]
-U42:%x[1,10]
+# Line info (column 10) is not used: the training data never has a line break inside a sequence, so
+# LINESTART/LINEEND only mark the first/last token, which the template padding already gives.
 
 # Capitalization
 U50:%x[0,11]
@@ -71,14 +69,24 @@ U8D:%x[2,14]
 U8E:%x[2,15]
 U8F:%x[2,16]
 
-# Punctuation
-U90:%x[0,17]
-U91:%x[-1,17]
-U92:%x[-2,17]
-U93:%x[1,17]
-U94:%x[2,17]
-#U95:%x[-1,17]/%x[0,17]
-#U96:%x[0,17]/%x[1,17]
+# Known title (column 17)
+UB0:%x[0,17]
+UB1:%x[-1,17]
+UB2:%x[-2,17]
+UB3:%x[1,17]
+UB4:%x[2,17]
+
+# Known suffix (column 18)
+UA0:%x[0,18]
+UA1:%x[-1,18]
+UA2:%x[1,18]
+
+# Punctuation type (column 19)
+U90:%x[0,19]
+U91:%x[-1,19]
+U92:%x[-2,19]
+U93:%x[1,19]
+U94:%x[2,19]
 
 # Output
 B

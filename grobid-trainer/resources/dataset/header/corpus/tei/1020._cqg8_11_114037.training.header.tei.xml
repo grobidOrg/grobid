@@ -21,13 +21,13 @@
 	<docAuthor>Stanislav Babak 1 , John G Baker 2 , Matthew J Benacquista 3 ,<lb/> Neil J Cornish 4 , Jeff Crowder 5 , Curt Cutler 5,6 , Shane L Larson 7 ,<lb/> Tyson B Littenberg 4 , Edward K Porter 1 , Michele Vallisneri 5,6 ,<lb/> Alberto Vecchio 8,9</docAuthor>
 	</byline>
 
-	(<note type="group">the Mock LISA data challenge task force</note>),<lb/>
+	(the <note type="group">Mock LISA data challenge task force</note>),<lb/>
 
 	<byline>
 	<docAuthor>Gerard Auger 10 , Leor Barack 11 , Arkadiusz Błaut 12 , Ed Bloomer 13 ,<lb/> Duncan A Brown 6,14,15 , Nelson Christensen 16 , James Clark 13 ,<lb/> Stephen Fairhurst 6,15,17 , Jonathan R Gair 18 , Hubert Halloin 10 ,<lb/> Martin Hendry 13 , Arturo Jimenez 3 , Andrzej Królak 19 , Ilya Mandel 6,9 ,<lb/> Chris Messenger 13 , Renate Meyer 20 , Soumya Mohanty 3 , Rajesh Nayak 3 ,<lb/> Antoine Petiteau 10 , Matt Pitkin 13 , Eric Plagnol 10 , Reinhard Prix 1 ,<lb/> Emma L Robinson 8 , Christian Roever 20 , Pavlin Savov 6 , Alexander<lb/> Stroeer 8,9 , Jennifer Toher 13 , John Veitch 8 , Jean-Yves Vinet 21 ,<lb/> Linqing Wen 1 , John T Whelan 1 and Graham Woan 13</docAuthor>
 	</byline>
 
-	(<note type="group">the Challenge-2<lb/> participants</note>)<lb/>
+	(the <note type="group">Challenge-2<lb/> participants</note>)<lb/>
 
 	<byline>
 	<affiliation>1 Max-Planck-Institut für Gravitationsphysik (Albert-Einstein-Institut),</affiliation>
@@ -120,10 +120,10 @@
 	<address>Pasadena, CA 91125, USA<lb/></address>
 
 	<byline>
-	<affiliation>16 Physics and Astronomy,</affiliation>
+	<affiliation>16 Physics and Astronomy, Carleton College,</affiliation>
 	</byline>
 
-	<address>Carleton College, Northfield, MN, USA<lb/></address>
+	<address>Northfield, MN, USA<lb/></address>
 
 	<byline>
 	<affiliation>17 School of Physics and Astronomy, Cardiff University,</affiliation>
@@ -167,7 +167,10 @@
 	<ptr type="web">stacks.iop.org/CQG/25/114037<lb/></ptr>
 
 	0264-9381/08/114037+08$30.00
-	<note type="copyright">© 2008 IOP Publishing Ltd Printed in the UK 1<lb/></note>
+	<note type="copyright">© 2008 IOP Publishing Ltd</note>
+
+	Printed in the UK
+	<page>1<lb/></page>
 
 	<reference>Class. Quantum Grav. 25 (2008) 114037<lb/></reference>
 

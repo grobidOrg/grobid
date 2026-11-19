@@ -45,7 +45,8 @@
 						</affiliation>
 						<affiliation>
 							<marker>4</marker>
-							<orgName type="department">Emergency Medicine Resident</orgName>,
+							<!-- check: "Emergency Medicine Resident" is a job title; kept "Emergency Medicine" as the department and left "Resident" untagged -->
+							<orgName type="department">Emergency Medicine</orgName> Resident,
 							<orgName type="institution">St Barnabas Hospital</orgName>.
 							<address>
 								<settlement>Bronx</settlement>,

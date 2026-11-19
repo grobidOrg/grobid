@@ -76,10 +76,10 @@
 	<address>Framingham</address>
 
 	<byline>
-	<affiliation>2 Dept of Med, Section of Gen Internal Med, BU<lb/> School of Med 3 Dept of Biostatistics,</affiliation>
+	<affiliation>2 Dept of Med, Section of Gen Internal Med, BU<lb/> School of Med 3 Dept of Biostatistics, BU,</affiliation>
 	</byline>
 
-	<address>BU, Boston, MA</address>
+	<address>Boston, MA</address>
 
 	<byline>
 	<affiliation>4 Dept of Epidemiology, Erasmus Univ Med<lb/> Ctr 5 Netherlands Genomics Initiative (NGI)-Sponsored Netherlands Consortium for Hlthy Aging<lb/> (NCHA) &amp; Ctr for Med Systems Biology,</affiliation>
@@ -202,16 +202,16 @@
 	<address>Huntsville, AL<lb/></address>
 
 	<byline>
-	<affiliation>25 Genetics of Complex Traits, Peninsula College of Med &amp; Dentistry,</affiliation>
-	</byline> 
+	<affiliation>25 Genetics of Complex Traits, Peninsula College of Med &amp; Dentistry, Univ of Exeter,</affiliation>
+	</byline>
 
-	<address>Univ of Exeter, UK </address>
+	<address>UK </address>
 
 	<byline>
 	<affiliation>26 Dept of<lb/> Family &amp; Preventive Med, UC San Diego,</affiliation>
 	</byline>
 
-	<address>Preventive Med, La Jolla, CA</address>
+	Preventive Med, <address>La Jolla, CA</address>
 
 	<byline>
 	<affiliation>27 Dept of Biostatistics,<lb/> Univ of Washington,</affiliation>
@@ -226,10 +226,10 @@
 	<address>Utrecht, The Netherlands</address>
 
 	<byline>
-	<affiliation>29 Julius Ctr for Hlth Sciences &amp; Primary Care, Univ Med Ctr, Utrecht,<lb/></affiliation>
+	<affiliation>29 Julius Ctr for Hlth Sciences &amp; Primary Care, Univ Med Ctr,</affiliation>
 	</byline>
 
-	<address>The Netherlands</address>
+	<address>Utrecht,<lb/> The Netherlands</address>
 
 	<byline>
 	<affiliation>30 Dept of Med Genetics, Biomedical Genetics, Univ Med Ctr,</affiliation>
@@ -250,7 +250,13 @@
 	<address>Houston, TX</address>
 
 	<byline>
-	<affiliation>33 Dept of Pharmacology, Univ of Split, Croatia 34 The Ctr for Human<lb/> Genetics Rsrch, Vanderbilt Univ,</affiliation>
+	<affiliation>33 Dept of Pharmacology, Univ of Split,</affiliation>
+	</byline>
+
+	<address>Croatia</address>
+
+	<byline>
+	<affiliation>34 The Ctr for Human<lb/> Genetics Rsrch, Vanderbilt Univ,</affiliation>
 	</byline>
 
 	<address>Nashville, TN</address>
@@ -316,7 +322,13 @@
 	<address>Nijmegen, The Netherlands</address>
 
 	<byline>
-	<affiliation>45 Dept of Public Hlth, University of<lb/> Split School of Med, Croatia 46 Cardiovascular Diseases &amp; the Gonda Vascular Ctr, Mayo Clinic,<lb/></affiliation>
+	<affiliation>45 Dept of Public Hlth, University of<lb/> Split School of Med,</affiliation>
+	</byline>
+
+	<address>Croatia</address>
+
+	<byline>
+	<affiliation>46 Cardiovascular Diseases &amp; the Gonda Vascular Ctr, Mayo Clinic,<lb/></affiliation>
 	</byline>
 
 	<address>Rochester, MN</address>
@@ -352,8 +364,10 @@
 	<address>UK </address>
 	
 	<byline>
-	<affiliation>52 Perelman School of<lb/> Murabito et al.<lb/></affiliation>
+	<affiliation>52 Perelman School of<lb/></affiliation>
 	</byline>
+
+	Murabito et al.<lb/>
 
 	<page>Page 2<lb/></page>
 
@@ -368,9 +382,8 @@
 	NIH-PA <note type="doctype">Author Manuscript<lb/></note> 
 	NIH-PA <note type="doctype">Author Manuscript<lb/> </note>
 
-	Med at the
 	<byline>
-	<affiliation>Univ of Pennsylvania, Cardiovascular Division, Vascular Med Section, </affiliation>
+	<affiliation>Med at the Univ of Pennsylvania, Cardiovascular Division, Vascular Med Section, </affiliation>
 	</byline>
 
 	<address>Philadelphia,<lb/> PA</address>
@@ -510,7 +523,13 @@
 	<address>Ann Arbor, MI</address>
 
 	<byline>
-	<affiliation>76 Dept of Epidemiology,<lb/> Graduate School of Public Hlth, Univ of Pittsburgh, PA 77 Dept of Clinical Genetics, Erasmus Med<lb/> Ctr, </affiliation>
+	<affiliation>76 Dept of Epidemiology,<lb/> Graduate School of Public Hlth, Univ of Pittsburgh,</affiliation>
+	</byline>
+
+	<address>PA</address>
+
+	<byline>
+	<affiliation>77 Dept of Clinical Genetics, Erasmus Med<lb/> Ctr, </affiliation>
 	</byline>
 
 	<address>Rotterdam, The Netherlands</address>

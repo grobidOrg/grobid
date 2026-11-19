@@ -51,22 +51,46 @@
 
 	<address>2075 Bayview Avenue, Toronto, Ontario, Canada<lb/></address>
 
-	Email: Sheldon W Tobe* -
+	Email:
+	<byline>
+	<docAuthor>Sheldon W Tobe*</docAuthor>
+	</byline>
+	-
 	<email>sheldon.tobe@sunnybrook.ca</email>
 	
-	; Margaret Moy Lum-Kwong -
+	;
+	<byline>
+	<docAuthor>Margaret Moy Lum-Kwong</docAuthor>
+	</byline>
+	-
 	<email>moylumkwong@hsf.on.ca</email>
 
-	;<lb/> Nancy Perkins -
+	;<lb/>
+	<byline>
+	<docAuthor>Nancy Perkins</docAuthor>
+	</byline>
+	-
 	<email>nancy.perkins@sunnybrook.ca</email>
 
-	; Shirley Von Sychowski -
+	;
+	<byline>
+	<docAuthor>Shirley Von Sychowski</docAuthor>
+	</byline>
+	-
 	<email>svonsychowski@hsf.on.ca</email>
 
-	; Rolf J Sebaldt -
+	;
+	<byline>
+	<docAuthor>Rolf J Sebaldt</docAuthor>
+	</byline>
+	-
 	<email>sebaldt@mcmaster.ca</email>
 
-	;<lb/> Alex Kiss -
+	;<lb/>
+	<byline>
+	<docAuthor>Alex Kiss</docAuthor>
+	</byline>
+	-
 	<email>alex.kiss@ices.on.ca<lb/></email>
 
 	* Corresponding author 

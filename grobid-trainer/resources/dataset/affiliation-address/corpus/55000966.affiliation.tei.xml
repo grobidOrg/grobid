@@ -12,8 +12,7 @@
 							<orgName type="department">Department of Medical Biochemistry and Biophysics</orgName>,
 							<orgName type="institution">Karolinska Institute</orgName>,
 							<address>
-								<region>SE</region>
-								<postCode>17177</postCode>
+								<postCode>SE 17177</postCode>
 								<settlement>Stockholm</settlement>,
 							<lb/>
 								<country>Sweden</country>
@@ -24,8 +23,7 @@
 							<orgName type="department">Department of Physics</orgName>,
 							<orgName type="institution">Royal Institute of Technology (KTH)</orgName>,
 							<address>
-								<region>SE</region>
-								<postCode>10691</postCode>
+								<postCode>SE 10691</postCode>
 								<settlement>Stockholm</settlement>,
 							<lb/>
 								<country>Sweden</country>
@@ -37,8 +35,7 @@
 							<orgName type="institution">Göteborg University</orgName>,
 							<address>
 								<addrLine>Box440</addrLine>,
-								<region>SE</region>
-								<postCode>40530</postCode>
+								<postCode>SE 40530</postCode>
 								<settlement>Göteborg</settlement>,
 								<country>Sweden</country>
 							</address>

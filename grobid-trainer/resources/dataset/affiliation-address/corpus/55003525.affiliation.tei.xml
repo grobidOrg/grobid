@@ -9,7 +9,7 @@
 
 						<affiliation>
 							<marker>1</marker>
-							<orgName type="institute">Fraunhofer Institute for Algorithms and Scientific Computing SCAI</orgName>
+							<orgName type="institution">Fraunhofer Institute for Algorithms and Scientific Computing SCAI</orgName>
 							<lb/>
 							<address>
 								<postCode>53757</postCode>
@@ -20,7 +20,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>2</marker>
-							<orgName type="institute">Fraunhofer Institute for Mechanics of Materials IWM</orgName>
+							<orgName type="institution">Fraunhofer Institute for Mechanics of Materials IWM</orgName>
 						</affiliation>
 
 						</author>

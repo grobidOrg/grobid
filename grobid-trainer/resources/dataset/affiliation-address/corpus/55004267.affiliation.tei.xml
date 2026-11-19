@@ -13,7 +13,7 @@
 							<orgName type="institution">the Hong Kong University of Science and Technology</orgName>,
 							<address>
 								<addrLine>Clear Water Bay</addrLine>,
-								<settlement>Kowloon</settlement>,
+								<addrLine>Kowloon</addrLine>,
 								<settlement>Hong Kong</settlement>,
 								<country>China</country>
 							<lb/>
@@ -25,7 +25,7 @@
 							<orgName type="institution">the Hong Kong University of Science and Technology</orgName>,
 							<address>
 								<addrLine>Clear Water Bay</addrLine>,
-								<settlement>Kowloon</settlement>,
+								<addrLine>Kowloon</addrLine>,
 								<settlement>Hong Kong</settlement>,
 								<country>China</country>
 							</address>

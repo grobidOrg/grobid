@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Julie</forename>
+								 <surname>Corre</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ruud</forename>
+								 <surname>van Zessen</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Michaël</forename>
+								 <surname>Loureiro</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Tommaso</forename>
+								 <surname>Patriarchi</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lin</forename>
+								 <surname>Tian</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Vincent</forename>
+								 <surname>Pascoli</surname>
+								 <marker>1</marker> and
+							</persName>
+							<persName>
+								 <forename>Christian</forename>
+								 <surname>Lüscher</surname>
+								 <marker>1,2</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

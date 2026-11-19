@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Kirby</forename>
+								 <middlename>M</middlename>.
+								 <surname>Donnelly</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Olivia</forename>
+								 <middlename>R</middlename>.
+								 <surname>DeLorenzo</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Wint</forename>
+								 <middlename>M</middlename>.
+								 <surname>Thu</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Gabrielle</forename>
+								 <middlename>E</middlename>.
+								 <surname>Pisano</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Liqun</forename>
+								 <surname>Luo</surname>
+								 <marker>3,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ron</forename>
+								 <middlename>R</middlename>.
+								 <surname>Kopito</surname>
+								 <marker>3</marker> ,
+							</persName>
+<persName>
+<forename>Margaret</forename>
+<middlename>M</middlename>.
+<surname>Panning Pearce</surname>
+<marker>1,2,5</marker>
+</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,172 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2010.01231">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+      <respStmt>
+        <persName xml:id="lfoppiano">Luca Foppiano</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-05-26T16:29:05.358708Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-05-26T16:29:05.358708Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-05-26T16:35:35.127Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-09-29T09:03:02.337Z" status="checked" who="#lfoppiano">
+      <desc>Pre-Draft</desc>
+    </change>
+    <change when="2026-09-29T09:03:23.657Z" status="checked" who="#lfoppiano">
+      <desc>removed body part in header</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<reference>IEEE TRANSACTIONS ON NEURAL SYSTEMS AND REHABILITATION ENGINEERING, VOL. X, NO. X, MONTH YEAR 1<lb/></reference>
+
+	<docTitle>
+	<titlePart>Stuttering Speech Disfluency Prediction<lb/> using Explainable Attribution Vectors<lb/> of Facial Muscle Movements<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Arun Das, Henry Chacon, and Peyman Najafirad</docAuthor>, 
+	</byline>
+
+    <byline>
+	<affiliation>Secure AI and Autonomy Laboratory<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<docAuthor> Jeffrey Mock, Farzan Irani, and Edward Golob,</docAuthor>
+	</byline>
+			
+	<byline>
+	<affiliation>Cognitive Neuroscience Laboratory<lb/></affiliation>
+	</byline>
+
+	Abstract-
+	<div type="abstract">Speech disorders such as stuttering disrupt the nor-<lb/>mal fluency of speech by involuntary repetitions, prolongations<lb/> and blocking of sounds and syllables. In addition to these<lb/> disruptions to speech fluency, most adults who stutter (AWS)<lb/> also experience numerous observable secondary behaviors before,<lb/> during, and after a stuttering moment, often involving the facial<lb/> muscles. Recent studies have explored automatic detection of<lb/> stuttering using Artificial Intelligence (AI) based algorithm from<lb/> respiratory rate, audio, etc. during speech utterance. However,<lb/> most methods require controlled environments and/or invasive<lb/> wearable sensors, and are unable explain why a decision (fluent<lb/> vs stuttered) was made. We hypothesize that pre-speech facial<lb/> activity in AWS, which can be captured non-invasively, contains<lb/> enough information to accurately classify the upcoming utterance<lb/> as either fluent or stuttered. Towards this end, this paper<lb/> proposes a novel explainable AI (XAI) assisted convolutional<lb/> neural network (CNN) classifier to predict near future stuttering<lb/> by learning temporal facial muscle movement patterns of AWS<lb/> and explains the important facial muscles and actions involved.<lb/> Statistical analyses reveal significantly high prevalence of cheek<lb/> muscles (p&lt;0.005) and lip muscles (p&lt;0.005) to predict stuttering<lb/> and shows a behavior conducive of arousal and anticipation<lb/> to speak. The temporal study of these upper and lower facial<lb/> muscles may facilitate early detection of stuttering, promote<lb/> automated assessment of stuttering and have application in be-<lb/>havioral therapies by providing automatic non-invasive feedback<lb/> in realtime.<lb/></div>
+
+	Index Terms-
+	<keyword>stuttering, speech disfluency, deep learning,<lb/> explainable artificial intelligence, machine learning<lb/></keyword> I.
+
+	<note type="copyright">This work has been submitted to the IEEE for possible publication.<lb/> Copyright may be transferred without notice, after which this version may no<lb/> longer be accessible.</note> 
+			
+	<note type="funding">This work was partly supported by National Institutes<lb/> of Health (NIH) under Grant DC016353 and the Open Cloud Institute (OCI)<lb/> at University of Texas at San Antonio (UTSA). The authors gratefully<lb/> acknowledge the use of the services of Jetstream cloud.<lb/></note>
+
+	<byline>
+	<docAuthor>A. Das, H. Chacon</docAuthor>
+	</byline>
+
+	, and 
+			
+	<byline>
+	<docAuthor>P. Najafirad</docAuthor>
+	</byline> are members of the
+			
+	<byline>
+	<affiliation>Secure AI and<lb/> Autonomy Laboratory, University of Texas at San Antonio,</affiliation>
+	</byline>
+
+	<address>San Antonio, TX,<lb/> 78249 USA.</address>
+
+	e-mail: (
+	<email>arun.das, henry.chacon, peyman.najafirad)@utsa.edu<lb/></email>
+
+	<byline>
+	<docAuthor>P. Najafirad</docAuthor>
+	</byline>
+
+	is also with the
+	<byline>
+	<affiliation>Department of Information Systems and Cyber<lb/> Security, University of Texas at San Antonio,</affiliation>
+	</byline>
+
+	<address>San Antonio, TX, 78249 USA.<lb/></address>
+
+	<byline>
+	<docAuthor>J. Mock and E. Golob</docAuthor>
+	</byline>
+
+	are with the
+	<byline>
+	<affiliation>Department of Psychology, University of<lb/> Texas at San Antonio,</affiliation>
+	</byline>
+
+	<address>San Antonio, TX, 78249 USA.</address>
+
+	e-mail: (
+	<email>jeffrey.mock,<lb/> edward.golob)@utsa.edu</email>
+
+	.<lb/>
+	<byline>
+	<docAuthor>F. Irani</docAuthor>
+	</byline>
+
+	is with the
+	<byline>
+	<affiliation>Department of Communication Disorders, Texas State<lb/> University,</affiliation>
+	</byline>
+
+	<address>San Marcos, TX, 78665 USA.</address>
+
+	e-mail:
+	<email>firani@txstate.edu<lb/></email>
+
+	<byline>
+	<docAuthor>J. Mock, E. Golob, and F. Irani</docAuthor>
+	</byline>
+
+	are also members of
+	<byline>
+	<affiliation>the Cognitive<lb/> Neuroscience Laboratory, University of Texas at San Antonio,</affiliation>
+	</byline>
+
+	<address>San Antonio,<lb/> TX, 78249 USA.<lb/></address>
+
+	<idno>arXiv:2010.01231v1 [cs.CV]</idno>
+
+	<date>2 Oct 2020</date>
+
+		</front>
+	</text>
+
+</TEI>

@@ -19,9 +19,9 @@
 						</affiliation>
 						<affiliation>	
 							<orgName type="laboratory">Energy Research Laboratory</orgName>,
-							<orgName type="department">Energy, Mines and Resources</orgName>,
+							<!-- check: "Canada" printed after the ministry name is most likely part of its official name (Energy, Mines and Resources Canada), so it was kept inside the institution instead of a second country; the full address follows -->
+							<orgName type="institution">Energy, Mines and Resources, Canada</orgName>,
 							<address>
-								<country>Canada</country>,
 								<addrLine>555 Booth Street</addrLine>,
 								<settlement>Ottawa</settlement>,
 								<region>Ontario</region>,

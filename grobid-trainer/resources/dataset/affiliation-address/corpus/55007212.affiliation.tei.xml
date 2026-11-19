@@ -9,7 +9,7 @@
 
 						<affiliation>
 							<marker>1</marker>
-							<orgName type="institution">Ophthalmology Harvard Medical School</orgName>
+							<orgName type="department">Ophthalmology</orgName> <orgName type="institution">Harvard Medical School</orgName>
 							<address>
 								<settlement>Boston</settlement> 
 								<region>MA</region>

@@ -11,11 +11,13 @@
 							<orgName type="department">Department of Chemistry and Life Science</orgName>,
 							<orgName type="institution">West Anhui University</orgName>,
 							<address>
-								<addrLine>Lu&apos;an</addrLine>,
+								<settlement>Lu&apos;an</settlement>,
 								<region>Anhui</region>
 								<postCode>237012</postCode>,
 								<country>P. R. China</country>, and
 							</address>
+						</affiliation>
+						<affiliation>
 							<orgName type="department">Institute of<lb/> Intelligent Machines</orgName>,
 							<orgName type="institution">Chinese Academy of Sciences</orgName>,
 							<address>

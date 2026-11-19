@@ -8,9 +8,16 @@
 						<author>
 
 						<affiliation>
+							<!-- check: four distinct chambers of commerce listed as a corporate author with no address; split into one element per organisation, a single joint-author element would also be defensible -->
 							<orgName type="institution">CCI de Strasbourg et du Bas-Rhin</orgName>,
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">CCI de Colmar et du Centre Alsace</orgName>,
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">CCI Sud-Alsace Mulhouse</orgName>,
+						</affiliation>
+						<affiliation>
 							<orgName type="institution">Chambre Régionale de Commerce et<lb/> d&apos;Industrie d&apos;Alsace</orgName>
 						</affiliation>
 

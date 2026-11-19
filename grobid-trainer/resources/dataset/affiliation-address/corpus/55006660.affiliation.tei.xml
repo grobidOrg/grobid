@@ -12,13 +12,12 @@
 							<orgName type="department">Department of Medical Research and Education</orgName>,
 							<orgName type="institution">Veterans General Hospital-Taipei</orgName>,
 							<address>
-								<postCode>201</postCode>,
-								<addrLine>Shih-Pai Rd.</addrLine>,
+								<addrLine>201, Shih-Pai Rd.</addrLine>,
 								<addrLine>Section 2</addrLine>,
 								<settlement>Taipei</settlement>,
 								<country>Taiwan</country>
 								<postCode>112</postCode>,
-								<postBox>R.O.C.</postBox>
+								<country>R.O.C.</country>
 							</address>
 						</affiliation>
 						<affiliation>
@@ -31,7 +30,7 @@
 								<settlement>Taipei</settlement>,
 								<country>Taiwan</country>
 								<postCode>112</postCode>,
-								<region>R.O.C.</region>
+								<country>R.O.C.</country>
 							</address>
 						</affiliation>
 

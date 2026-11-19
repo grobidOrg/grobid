@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Emma</forename>
+<surname>Guerin</surname>
+<marker>a,b,1</marker> ,
+</persName>
+<persName>
+<forename>Andrey</forename>
+<surname>Shkoporov</surname>
+<marker>a,1</marker> ,
+</persName>
+<persName>
+<forename>Stephen</forename>
+<middlename>R</middlename>.
+<surname>Stockdale</surname>
+<marker>a,c,1</marker> ,
+</persName>
+<persName>
+<forename>Adam</forename>
+<middlename>G</middlename>.
+<surname>Clooney</surname>
+<marker>a</marker> ,
+</persName>
+<persName>
+<forename>Feargal</forename>
+<middlename>J</middlename>.
+<surname>Ryan</surname>
+<marker>a</marker> ,
+</persName>
+<persName>
+<forename>Lorraine</forename>
+<middlename>A</middlename>.
+<surname>Draper</surname>
+<marker>a</marker> ,
+</persName>
+<persName>
+<forename>Enrique</forename>
+<surname>Gonzalez-Tortuero</surname>
+<marker>a</marker> ,
+</persName>
+<persName>
+<forename>R</forename>.
+<middlename>Paul</middlename>
+<surname>Ross</surname>
+<marker>a,b,c</marker> ,
+</persName>
+<persName>
+<forename>Colin</forename>
+<surname>Hill</surname>
+<marker>a,b,2</marker>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

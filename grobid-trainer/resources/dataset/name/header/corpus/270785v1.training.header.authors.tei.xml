@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Kai</forename>
+<surname>Doberstein</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Rebecca</forename>
+<surname>Spivak</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Yi</forename>
+<surname>Feng</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Sarah</forename>
+<surname>Stuckelberger</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Gordon</forename>
+<middlename>B</middlename>.
+<surname>Mills</surname>
+<marker>3</marker> ,
+</persName>
+<persName>
+<forename>Kyle</forename>
+<middlename>M</middlename>.
+<surname>Devins</surname>
+<marker>4</marker> ,
+</persName>
+<persName>
+<forename>Lauren</forename>
+<middlename>E</middlename>.
+<surname>Schwartz</surname>
+<marker>4</marker> ,
+</persName>
+<persName>
+<forename>Marcin</forename>
+<middlename>P</middlename>.
+<surname>Iwanicki</surname>
+<marker>5</marker> ,
+</persName>
+<persName>
+<forename>Mina</forename>
+<surname>Fogel</surname>
+<marker>6</marker> ,
+</persName>
+<persName>
+<forename>Peter</forename>
+<surname>Altevogt</surname>
+<marker>7</marker> ,
+</persName>
+<persName>
+<forename>Ronny</forename>
+<surname>Drapkin</surname>
+<marker>1,2</marker>
+</persName>
+Affiliations
+<persName>
+<forename>Ronny</forename>
+<surname>Drapkin</surname>,
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

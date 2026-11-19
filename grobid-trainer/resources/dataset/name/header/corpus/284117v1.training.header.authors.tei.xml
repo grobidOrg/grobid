@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Tom</forename>
+<surname>Hill</surname>
+<marker>1 *</marker> &amp;
+</persName>
+<persName>
+<forename>Andrea</forename>
+<middlename>J</middlename>.
+<surname>Betancourt</surname>
+<marker>2 *</marker> </persName> 4055 Haworth Hall,
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>
