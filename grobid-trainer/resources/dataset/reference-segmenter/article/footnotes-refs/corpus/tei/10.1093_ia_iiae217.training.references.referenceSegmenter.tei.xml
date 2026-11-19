@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1093_ia_iiae217">
+			<titleStmt>
+				<title level="a">The effects of global populism: assessing the populist impact on international affairs</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1093/ia/iiae217</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_16</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>1</label> Carlos de la Torre, ed., Routledge handbook of global populism (Abingdon and New York: Routledge, 2018); <lb/></bibl>
+			<bibl>Ronald F. Inglehart and Pippa Norris, Trump, Brexit, and the rise of populism: economic have-nots and cultural back-<lb/>lash, Working Paper No. RWP16-026 (Cambridge, MA: John F. Kennedy School of Government, Harvard <lb/>University, 2016); </bibl>
+			<bibl>Steven Levitsky and Daniel Ziblatt, How democracies die (New York: Crown, 2018); </bibl>
+			<bibl>Benjamin <lb/>Moffitt, The global rise of populism: performance, political style, and representation (Redwood City, CA: Stanford <lb/>University Press, 2016). <lb/></bibl>
+			<bibl><label>2</label> See Sandra Destradi, David Cadier and Johannes Plagemann, 'Populism and foreign policy: a research agenda <lb/>(introduction)', Comparative European Politics, vol. 19, 2021, pp. 663-82, https://doi.org/10.1057/s41295-021-<lb/>00255-4; </bibl>
+			<bibl>Philip Giurlando and Daniel F. Wajner, eds, Populist foreign policy: regional perspectives of populism in <lb/>the international scene (Cham, Switzerland: Springer, 2023); </bibl>
+			<bibl>Georg Löfflmann, 'Introduction to special issue: <lb/>the study of populism in International Relations', The British Journal of Politics and International Relations 24: 3, <lb/>2022, pp. 403-15, https://doi.org/10.1177/13691481221103116; </bibl>
+			<bibl>Frank A. Stengel, David B. MacDonald and Dirk <lb/>Nabers, eds, Populism and world politics: exploring inter-and transnational dimensions (Cham, Switzerland: Springer, <lb/>2019). <lb/></bibl>
+			<bibl><label>3</label> Angelos Chryssogelos, 'State transformation and populism: from the internationalized to the neo-sovereign <lb/>state?', Politics 40: 1, 2020, pp. 22-37, https://doi.org/10.1177/0263395718803830; </bibl>
+			<bibl>Daniel F. Wajner, 'The <lb/>populist way out: why contemporary populist leaders seek transnational legitimation', The British Journal of <lb/>Politics and International Relations 24: 3, 2022, pp. 416-36, https://doi.org/10.1177/13691481211069345; </bibl>
+			<bibl>Michael <lb/>Zürn, 'How non-majoritarian institutions make silent majorities vocal: a political explanation of authoritar-<lb/>ian populism', Perspectives on Politics 20: 3, 2022, pp. 788-807, https://doi.org/10.1017/S1537592721001043. <lb/></bibl>
+			<bibl><label>4</label> See Erin K. Jenne, 'Populism, nationalism and revisionist foreign policy', International Affairs 97: 2, 2021, <lb/>pp. 323-43, https://doi.org/10.1093/ia/iiaa230; </bibl>
+			<bibl>Feliciano de Sá Guimarães and Irma Dutra de Oliveira e Silva, <lb/>'Far-right populism and foreign policy identity: Jair Bolsonaro's ultra-conservatism and the new politics of <lb/>alignment', International Affairs 97: 2, 2021, pp. 345-63, https://doi.org/10.1093/ia/iiaa220; </bibl>
+			<bibl>Sandra Destradi <lb/><lb/>and Johannes Plagemann, 'Populism and International Relations: (un)predictability, personalisation, and <lb/>the reinforcement of existing trends in world politics', Review of International Studies 45: 5, 2019, pp. 711-30, <lb/>https://doi.org/10.1017/S0260210519000184; </bibl>
+			<bibl>Bertjan Verbeek and Andrej Zaslove, 'Populism and foreign <lb/>policy', in Cristóbal Rovira Kaltwasser et al., eds, The Oxford handbook of populism (Oxford: Oxford Univer-<lb/>sity Press, 2017), pp. 384-405; </bibl>
+			<bibl>Erik Voeten, 'Populism and backlashes against international courts', Perspectives <lb/>on Politics 18: 2, 2020, pp. 407-22, https://doi.org/10.1017/S1537592719000975; </bibl>
+			<bibl>Daniel F. Wajner, 'Explor-<lb/>ing the foreign policies of populist governments: (Latin) America first', Journal of International Relations and <lb/>Development, vol. 24, 2021, pp. 651-80, https://doi.org/10.1057/s41268-020-00206-8; </bibl>
+			<bibl>Leslie E. Wehner and <lb/>Cameron G. Thies, 'The nexus of populism and foreign policy: the case of Latin America', International Rela-<lb/>tions 35: 2, 2021, pp. 320-40, https://doi.org/10.1177/0047117820944430. <lb/></bibl>
+			<bibl><label>5</label> Emanuel Adler and Alena Drieschova, 'The epistemological challenge of truth subversion to the liberal interna-<lb/>tional order', International Organization 75: 2, 2021, pp. 359-86, https://doi.org/10.1017/S0020818320000533; </bibl>
+			<bibl>Francis <lb/>Fukuyama, 'The populist surge', The American Interest 13: 4, 2018; </bibl>
+			<bibl>G. John Ikenberry, 'The end of liberal inter-<lb/>national order?', International Affairs 94: 1, 2018, pp. 7-23, https://doi.org/10.1093/ia/iix241; </bibl>
+			<bibl>Markus Kornprobst <lb/>and T.V. Paul, 'Globalization, deglobalization and the liberal international order', International Affairs 97: 5, 2021, <lb/>pp. 1305-16, https://doi.org/10.1093/ia/iiab120; </bibl>
+			<bibl>Benjamin Miller, 'How "making the world in its own liberal <lb/>image" made the West less liberal', International Affairs 97: 5, 2021, pp. 1353-75, https://doi.org/10.1093/ia/iiab114; <lb/></bibl>
+			<bibl>David A. Lake, Lisa L. Martin and Thomas Risse, 'Challenges to the liberal order: reflections on International <lb/>Organization', International Organization 75: 2, 2021, pp. 225-7, https://doi.org/10.1017/S0020818320000636. <lb/></bibl>
+			<bibl><label>6</label> Tanja A. Börzel and Michael Zürn, 'Contestations of the liberal international order: from liberal multilater-<lb/>alism to postnational liberalism', International Organization 75: 2, 2021, pp. 282-305, https://doi.org/10.1017/ <lb/>S0020818320000570; </bibl>
+			<bibl>Fredrik Söderbaum, Kilian Spandler and Agnese Pacciardi, Contestations of the liberal inter-<lb/>national order: a populist script of regional cooperation (Cambridge, UK: Cambridge University Press, 2021). <lb/></bibl>
+			<bibl><label>7</label> Kurt Weyland, 'A political-strategic approach', in Cristóbal Rovira Kaltwasser et al., eds, The Oxford handbook <lb/><lb/>of populism, pp. 48-72. <lb/></bibl>
+			<bibl><label>8</label> Ernesto Laclau, On populist reason (London: Verso, 2005), p. 44. <lb/></bibl>
+			<bibl><label>9</label> See Moffitt, The global rise of populism. <lb/></bibl>
+			<bibl><label>10</label> See for example Gabriele Dietze and Julia Roth, 'Right-wing populism and gender: a preliminary cartog-<lb/>raphy of an emergent research field', in Gabriele Dietze and Julia Roth, eds, Right-wing populism and gender: <lb/>European perspectives and beyond (Bielefeld: Transcript, 2020); </bibl>
+			<bibl>Shweta Singh and Élise Féron, 'Towards an inter-<lb/>sectional approach to populism: comparative perspectives from Finland and India', Contemporary Politics 27: 5, <lb/>2021, pp. 528-49, https://doi.org/10.1080/13569775.2021.1917164. <lb/></bibl>
+			<bibl><label>11</label> See Kirk A. Hawkins and Cristóbal Rovira Kaltwasser, 'The ideational approach to populism', Latin American <lb/>Research Review 52: 4, 2017, pp. 513-28, https://doi.org/10.25222/larr.85; </bibl>
+			<bibl>Kirk A. Hawkins et al., eds, The <lb/>ideational approach to populism: concept, theory, and analysis (London and New York: Routledge, 2018). <lb/></bibl>
+			<bibl><label>12</label> Cas Mudde and Cristóbal Rovira Kaltwasser, Populism: a very short introduction (Oxford: Oxford University <lb/>Press, 2017). <lb/></bibl>
+			<bibl><label>13</label> Cas Mudde, 'The populist Zeitgeist', Government and Opposition 39: 4, 2004, pp. 541-63 at p. 543, https://doi. <lb/>org/10.1111/j.1477-7053.2004.00135.x. <lb/></bibl>
+			<bibl><label>14</label> See in this regard two specific contributions to this special section: Emmy Eklundh, Frank Stengel and Thor-<lb/>sten Wojczewski, 'Left populism and foreign policy: Bernie Sanders and Podemos', International Affairs 100: 5, <lb/>2024, pp. 1899-1918, https://doi.org/10.1093/ia/iiae137; </bibl>
+			<bibl>and Rubrick Biegon and Soraya Hamdaoui, 'Anti-<lb/>populism and the Trump trauma in US foreign policy', International Affairs 100: 5, 2024, pp. 1857-75, https:// <lb/>doi.org/10.1093/ia/iiae174. <lb/></bibl>
+			<bibl><label>15</label> Here, see Michael I. Magcamit and Aries A. Arugay, 'Explaining populist securitization and Rodrigo <lb/>Duterte's anti-establishment Philippine foreign policy', International Affairs 100: 5, 2024, pp. 877-97, https:// <lb/>doi.org/10.1093/ia/iiad248; </bibl>
+			<bibl>and Monika Brusenbauch Meislová and Angelos Chryssogelos, 'The ambiguous <lb/>impact of populist trade discourses on the international economic order', International Affairs 100: 5, 2024, <lb/>pp. 1941-57, https://doi.org/10.1093/ia/iiad296. <lb/><lb/></bibl>
+			<bibl><label>16</label> Nadia Urbinati, 'Political theory of populism', Annual Review of Political Science, vol. 22, 2019, pp. 111-27, <lb/>https://doi.org/10.1146/annurev-polisci-050317-070753; </bibl>
+			<bibl>Inglehart and Norris, 'Trump, Brexit, and the rise of <lb/>populism'; </bibl>
+			<bibl>Armin Schäfer and Michael Zürn, The democratic regression: the political causes of authoritarian populism <lb/>(Cambridge, UK: Polity, 2023). <lb/></bibl>
+			<bibl><label>17</label> Zürn, 'How non-majoritarian institutions make silent majorities vocal'. <lb/></bibl>
+			<bibl><label>18</label> This nuance is incorporated in some of the articles in this special section. Podemos, discussed in Eklundh et al., <lb/>'Left populism and foreign policy', may be such a case, </bibl>
+			<bibl>as may Syriza in Philip Giurlando and Carla Montele-<lb/>one, 'Institutional change, sovereigntist contestation and the limits of populism: evidence from southern <lb/>Europe', International Affairs 100: 5, 2024, pp. 2047-67, https://doi.org/10.1093/ia/iiae058; </bibl>
+			<bibl>and Mexican <lb/>president Andrés Manuel López Obrador in Déborah Barros Leal Farias, Guilherme Casarões and Daniel F. <lb/>Wajner, 'Populist international (dis)order? Lessons from world order visions in Latin American populism', <lb/>International Affairs 100: 5, 2024, pp. 2003-24, https://doi.org/10.1093/ia/iiae179. <lb/></bibl>
+			<bibl><label>19</label> See also Andrew Arato and Jean L. Cohen, Populism and civil society: the challenge to constitutional democracy <lb/>(Oxford: Oxford University Press, 2022). <lb/><lb/></bibl>
+			<bibl><label>20</label> Urbinati, 'Political theory of populism'; </bibl>
+			<bibl>Jan-Werner Müller, What is populism? (London: Penguin, 2017); <lb/></bibl>
+			<bibl>Anna Grzymala-Busse, 'Conclusion: the global forces of populism', Polity 51: 4, 2019, pp. 718-23, https://doi. <lb/>org/10.1086/705322; </bibl>
+			<bibl>Kim Lane Scheppele, 'Autocratic legalism', University of Chicago Law Review 85: 2, 2018, <lb/>pp. 545-84. <lb/></bibl>
+			<bibl><label>21</label> Takis S. Pappas, Populism and liberal democracy: a comparative and theoretical analysis (Oxford: Oxford University <lb/>Press, 2019); </bibl>
+			<bibl>Kurt Weyland, 'Latin America's authoritarian drift: the threat from the populist left', Journal of <lb/>Democracy 24: 3, 2013, pp. 18-32, https://doi.org/10.1353/jod.2013.0045. <lb/></bibl>
+			<bibl><label>22</label> Urbinati, 'Political theory of populism'. <lb/></bibl>
+			<bibl><label>23</label> Müller, What is populism?. <lb/></bibl>
+			<bibl><label>24</label> Pappas, Populism and liberal democracy, </bibl>
+			<bibl>Levitsky and Ziblatt, How democracies die. <lb/><lb/></bibl>
+			<bibl><label>25</label> Destradi and Plagemann, 'Populism and IR'; </bibl>
+			<bibl>Christian Lequesne, 'Populist governments and career diplomats <lb/>in the EU: the challenge of political capture', Comparative European Politics, vol. 19, 2021, pp. 779-95, https:// <lb/>doi.org/10.1057/s41295-021-00261-6. <lb/></bibl>
+			<bibl><label>26</label> Wajner, 'Exploring the foreign policies of populist governments', pp. 660-63. <lb/></bibl>
+			<bibl><label>27</label> See Zürn, 'How non-majoritarian institutions make silent majorities vocal'. <lb/></bibl>
+			<bibl><label>28</label> Wajner, 'The populist way out', p. 429. <lb/></bibl>
+			<bibl><label>29</label> Müller, What is populism?, p. 3. <lb/></bibl>
+			<bibl><label>30</label> See Thorsten Wojczewski, The inter-and transnational politics of populism: foreign policy, identity and popular sovereignty <lb/>(Cham, Switzerland: Palgrave Macmillan, 2023); </bibl>
+			<bibl>Corina Lacatus, Gustav Meibauer and Georg Löfflmann, eds, <lb/>Political communication and performative leadership: populism in international politics (Cham, Switzerland: Springer, 2023). <lb/></bibl>
+			<bibl><label>31</label> Hawkins and Rovira Kaltwasser, 'The ideational approach to populism', p. 516. <lb/><lb/></bibl>
+			<bibl><label>32</label> See Destradi and Plagemann, 'Populism and IR', pp. 717-23; </bibl>
+			<bibl>Stephan Fouquet and Klaus Brummer, 'Profil-<lb/>ing the personality of populist foreign policy makers: a leadership trait analysis,' Journal of International Rela-<lb/>tions and Development, vol. 26, 2023, pp. 1-29, https://doi.org/10.1057/s41268-022-00270-2; </bibl>
+			<bibl>Amy Skonieczny, <lb/>'Emotions and political narratives: populism, Trump and trade', Politics and Governance 6: 4, 2018, pp. 62-72, <lb/>https://doi.org/10.17645/pag.v6i4.1574; </bibl>
+			<bibl>Daniel F. Wajner and Philip Giurlando, 'Introduction to populist <lb/>foreign policy (PFP)', in Giurlando and Wajner, Populist foreign policy, pp. 1-35 at pp. 2-4. <lb/></bibl>
+			<bibl><label>33</label> Andrew Moravcsik, 'More bark than bite? The effect of extreme-right parties on foreign policy', American <lb/>Academy Lecture at Freie Universität Berlin, 11 December 2023. <lb/></bibl>
+			<bibl><label>34</label> Verbeek and Zaslove, 'Populism and foreign policy'; </bibl>
+			<bibl>Destradi and Plagemann, 'Populism and IR', pp. 712-14. <lb/></bibl>
+			<bibl><label>35</label> See for example Philipp Lutz, 'Variation in policy success: radical right populism and migration policy', West <lb/>European Politics 42: 3, 2019, pp. 517-44, https://doi.org/10.1080/01402382.2018.1504509; </bibl>
+			<bibl>Alexander Rossell <lb/>Hayes and Carolyn Marie Dudek, 'How radical right-wing populism has shaped recent migration policy in <lb/>Austria and Germany', Journal of Immigrant &amp; Refugee Studies 18: 2, 2020, pp. 133-50, https://doi.org/10.1080/1 <lb/>5562948.2019.1587130. <lb/></bibl>
+			<bibl><label>36</label> In this special section, this is discussed in particular in the article by Monika Barthwal-Datta and Shweta Singh <lb/>('Populism and foreign policy: India's refugee policy towards the Rohingya', International Affairs 100: 5, 2024, <lb/>pp. 1983-2002, https://doi.org/10.1093/ia/iiae173); </bibl>
+			<bibl>and that by Barros Leal Farias and colleagues. <lb/><lb/></bibl>
+			<bibl><label>37</label> See Jenne, 'Populism, nationalism and revisionist foreign policy', pp. 329-32; </bibl>
+			<bibl>Daniel W. Drezner, Ronald R. <lb/>Krebs and Randall Schweller, 'The end of grand strategy: America must think small', Foreign Affairs 99: 3, <lb/>2020, pp. 107-17, https://www.foreignaffairs.com/articles/world/2020-04-13/end-grand-strategy. (Unless <lb/>otherwise noted at point of citation, all URLs cited in this article were accessible on 23 July 2024.). <lb/></bibl>
+			<bibl><label>38</label> See Rogers Brubaker, 'Between nationalism and civilizationism: the European populist moment in compara-<lb/>tive perspective', Ethnic and Racial Studies 40: 8, 2017, pp. 1191-1226, https://doi.org/10.1080/01419870.2017.1 <lb/>294700; </bibl>
+			<bibl>Jelena Subotić, 'Antisemitism in the global populist international', The British Journal of Politics and <lb/>International Relations 24: 3, 2022, pp. 458-74, https://doi.org/10.1177/13691481211066970; </bibl>
+			<bibl>Ihsan Yilmaz and <lb/>Nicholas Morieson, Religions and the global rise of civilizational populism (Singapore: Palgrave Macmillan, 2023). <lb/></bibl>
+			<bibl><label>39</label> Johannes Plagemann and Sandra Destradi, 'Populism and foreign policy: the case of India', Foreign Policy <lb/>Analysis 15: 2, 2019, pp. 283-301 at p. 287, https://doi.org/10.1093/fpa/ory010. <lb/></bibl>
+			<bibl><label>40</label> See Michael Zürn, A theory of global governance: authority, legitimacy, and contestation (Oxford: Oxford University <lb/>Press, 2018), pp. 137-67. <lb/></bibl>
+			<bibl><label>41</label> Michael Zürn, 'Global governance and legitimacy problems', Government and Opposition 39: 2, 2004, pp. 260-87 <lb/>at p. 285, https://doi.org/10.1111/j.1477-7053.2004.00123.x. <lb/></bibl>
+			<bibl><label>42</label> Destradi and Plagemann, 'Populism and IR', p. 710. <lb/></bibl>
+			<bibl><label>43</label> Söderbaum, Spandler and Pacciardi, Contestations of the liberal international order. <lb/></bibl>
+			<bibl><label>44</label> Daniel F. Wajner and Luis Roniger, 'Populism and transnational projection: the legitimation strategies of Pink <lb/><lb/>Tide neo-populist leaderships in Latin America', Comparative Political Theory 2: 2, 2022, pp. 118-47 at pp. 134-6, <lb/>https://doi.org/10.1163/26669773-bja10037. <lb/></bibl>
+			<bibl><label>45</label> See Börzel and Zürn, 'Contestations of the liberal international order', pp. 284-90. <lb/></bibl>
+			<bibl><label>46</label> See Jenne, 'Populism, nationalism and revisionist foreign policy', pp. 325-9; </bibl>
+			<bibl>Fukuyama, 'The populist surge'. <lb/></bibl>
+			<bibl><label>47</label> Özgür Özdamar and Lerna K. Yanık, 'Populist hyperpersonalization and politicization of foreign policy <lb/>institutions', International Affairs 100: 5, 2024, pp. 1835-56; https://doi.org/10.1093/ia/iiae181. <lb/></bibl>
+			<bibl><label>48</label> Sandra Destradi and Johannes Plagemann, 'Do populists escalate international disputes?', International Affairs <lb/>100: 5, 2024, pp. 1919-40, https://doi.org/10.1093/ia/iiae172. <lb/></bibl>
+			<bibl><label>49</label> Amy Skonieczny and Ancita Sherel, 'The Trump effect: the perpetuation of populism in US-China trade', <lb/>International Affairs 100: 5, 2024, pp. 1959-81, https://doi.org/10.1093/ia/iiae183. <lb/><lb/></bibl>
+			<bibl><label>50</label> Barros Leal Farias, Casarões and Wajner, 'Populist international (dis)order?'. <lb/><lb/></bibl>
+			<bibl><label>51</label> Agnese Pacciardi, Kilian Spandler and Fredrik Söderbaum, 'Beyond exit: How populist governments disen-<lb/>gage from international institutions', International Affairs 100: 5, 2024, pp. 2025-46, https://doi.org/10.1093/ia/ <lb/>iiae185. <lb/></bibl>
+			<bibl><label>52</label> Giurlando and Monteleone, 'Institutional change, sovereigntist contestation and the limits of populism'. <lb/></bibl>
+			<bibl><label>54</label> See for example Tim Bale and Cristóbal Rovira Kaltwasser, eds, Riding the populist wave: Europe's mainstream <lb/>right in crisis (Cambridge, UK: Cambridge University Press, 2021); </bibl>
+			<bibl>Matthijs Rooduijn, Sarah L. De Lange and <lb/>Wouter van der Brug, 'A populist Zeitgeist? Programmatic contagion by populist parties in western Europe', <lb/>Party Politics 20: 4, 2014, pp. 563-75, https://doi.org/10.1177/1354068811436065; </bibl>
+			<bibl>Anna Grzymala-Busse, 'The <lb/>failure of Europe's mainstream parties', Journal of Democracy 30: 4, 2019, pp. 35-47, https://doi.org/10.1353/ <lb/>jod.2019.0067. <lb/></bibl>
+			<bibl><label>55</label> See Giurlando and Monteleone, 'Institutional change, sovereigntist contestation and the limits of populism'. <lb/></bibl>
+			<bibl><label>56</label> Zürn, 'How non-majoritarian institutions make silent majorities vocal'. <lb/></bibl>
+			<bibl><label>57</label> Edward H. Carr, The twenty years' crisis, 1919-1939: an introduction to the study of International Relations [1939] <lb/>(London: Macmillan, 1946). <lb/><lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>

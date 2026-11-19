@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1111_papa.12271">
+			<titleStmt>
+				<title level="a">From Stranger to Parent: Duties of Care in Intentional Pregnancies</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-nc/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1111/papa.12271</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_30</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>1</label> . Judith Jarvis Thomson, "A Defense of Abortion," Philosophy &amp; Public Affairs 1, no. <lb/>1 (1971): 47-66. <lb/></bibl>
+			<bibl><label>3</label> . Thomson, "Defense of Abortion," 48-49. <lb/></bibl>
+			<bibl><label>5</label> . Jeff McMahan, "Paradoxes of Abortion and Prenatal Injury," Ethics 116, no. 4 (2006): <lb/>625-55. <lb/><lb/></bibl>
+			<bibl><label>6</label> . Ibid. <lb/></bibl>
+			<bibl><label>7</label> . Jessica Flanigan, "The Ethics of Prenatal Injury," Journal of Moral Philosophy 18, no. <lb/>1 (2021): 26-48. <lb/></bibl>
+			<bibl><label>8</label> . A reviewer has suggested that Thomson's argument for the permissibility of abortion <lb/>does not require that the fetus be a stranger. It is hardly obvious that the conscript would <lb/>have a duty to stay hooked up to an acquaintance, a friend or relative, or perhaps even her <lb/>own child. While I happen to think a parent would have a pro tanto duty to stay plugged in <lb/>to keep her child alive, it doesn't matter for my account. Even if parents do not have a duty <lb/>to bear burdens on a par with those of pregnancy to keep their born child alive, they clearly <lb/>have a far stronger duty to prevent injury to their own child than to an acquaintance; just as <lb/>clearly, the limits of that duty are debatable and context-dependent (see Section VI). <lb/></bibl>
+			<bibl><label>9</label> . McMahan, "Paradoxes," 634. <lb/><lb/></bibl>
+			<bibl><label>13</label> . Flanigan, "Prenatal Injury," 43. <lb/></bibl>
+			<bibl><label>14</label> . Ibid. at 39. <lb/></bibl>
+			<bibl><label>15</label> . Although she accepts Thomson's analogy, Flanigan does not draw on it in making her <lb/>argument. She shifts from an ailing violinist to an imperiled climber, kept from a fatal fall <lb/>only by a rope his climbing partner is holding ("Prenatal Injury," 35-38). She sees any effort <lb/>the partner makes to hold onto to the rope as supererogatory, so that while she has a moral <lb/>reason to hold on as long as she can (assuming some prospect of rescue), she would be <lb/>blameless if she let him go. But this is a more compelling case than Thomson's for claiming <lb/>minimal duties: the partner can't hold on forever! Because I think this example differs from <lb/>Thomson's in ways that strengthen the case for permissible withdrawal, I will stick with the <lb/>ailing violist in assessing Flanigan's claims. <lb/><lb/></bibl>
+			<bibl><label>17</label> . Linda Eggert, "Supererogatory Rescues," The Journal of Philosophy 120, no. 5 (2023): <lb/>229-56. <lb/><lb/></bibl>
+			<bibl><label>18</label> . Joe Horton, "The All or Nothing Problem," The Journal of Philosophy 114, no. <lb/>2 (2017): 94-104. <lb/></bibl>
+			<bibl><label>20</label> . Eggert, "Supererogatory Rescues." Thomson herself does not recognize a duty of easy <lb/>rescue, only the standard of "a minimally decent Samaritan." I will, however, treat the latter <lb/>as supplying the content of the former. I doubt that Flanigan would accept this duty either; I <lb/>regard it as friendly amendment to her account, making it more plausible without signifi-<lb/>cantly weakening it. <lb/><lb/></bibl>
+			<bibl><label>23</label> . Elizabeth Brake, "Willing Parents: A Voluntarist Account of Parental Role Obligations," <lb/>in Procreation and Parenthood: The Ethics of Bearing and Rearing Children, eds. David <lb/>Archard and David Benetar (Oxford: Oxford University Press, 2010), 1171. <lb/></bibl>
+			<bibl><label>24</label> . Ibid. <lb/><lb/></bibl>
+			<bibl><label>26</label> . Some readers may still feel that the duties of care owed by a "mere carrier" do not dif-<lb/>fer from those of a prospective parent. That conviction, however, may draw illicit support <lb/>from an assumption about the "special intimacy" of pregnancy. Such intimacy may not be <lb/>experienced initially by many pregnant people, including many who ultimately decide to <lb/>become parents; it may often be an effect, not a cause, of that decision. See Margaret Little, <lb/>"Abortion, Intimacy, and the Duty to Gestate," Ethical Theory and Moral Practice 2, no. <lb/>3 (1999): 295-312. <lb/><lb/></bibl>
+			<bibl><label>27</label> . David Wasserman, "Prenatal Harm and Preemptive Abortion in a Two-Tiered <lb/>Morality," Philosophical Books 46, no. 1 (2005): 28. <lb/><lb/></bibl>
+			<bibl><label>28</label> . Although I cannot pursue this issue, I think the reasons for choosing to exercise a <lb/>right-here, against bodily interference-do not have to be as relevant to the interests it pro-<lb/>tects as the acts exercising that right must be. <lb/></bibl>
+			<bibl><label>29</label> . Wasserman, "Prenatal Harm," 23. <lb/></bibl>
+			<bibl><label>30</label> . Such cases have interesting affinities with those in which the agent can commit a <lb/>wrong now that would prevent her having committed multiple wrongs of similar magnitude, <lb/>e.g., Richard Brooks's case of a zoo-goer who can save two children she threw into the lion's <lb/>den by throwing in a third to distract the lion. Brooks, "Agency and Morality," The Journal of <lb/>Philosophy 88, no. 4 (1991): 190-212. Doing the right thing now by refraining from killing the <lb/>third child would result in her having killed the other two. In Brooks's case, however, it is <lb/>clearly wrong to kill the third child, regardless of whether the reason for doing so is to avoid <lb/>responsibility for the wrong of killing the other two</bibl>
+			<bibl><label>34</label> . Nathan R. Howard, "Maternal Autonomy and Prenatal Harm," Bioethics 37, no. <lb/>3 (2023): 246-55. <lb/></bibl>
+			<bibl><label>35</label> . Ibid. at 247. </bibl>
+			<bibl>Unlike Thomson, Howard does not assume that the fetus is a person <lb/>throughout pregnancy; he regards the early fetus as a nonperson whose "abortion is permis-<lb/>sible when the reasons for terminating the pregnancy, most often originating in maternal <lb/>autonomy, outweigh the relatively weak claims of the fetus." Ibid. at 248. If the duties of a <lb/>willing parent are unconditional even if the fetus is not a person, they will be, a fortiori, <lb/>if it is. <lb/></bibl>
+			<bibl><label>36</label> . Ibid. at 253. <lb/><lb/></bibl>
+			<bibl><label>37</label> . Ibid. at 248. <lb/></bibl>
+			<bibl><label>38</label> . Ibid. at 252. <lb/></bibl>
+			<bibl><label>39</label> . Howard does recognize the possibility of impulsive or weak-willed breaches by a gen-<lb/>uinely willing parent. He contrasts an unwilling parent, "resolutely unwilling to give up rugby <lb/>to protect her fetus" with "a willing mother who, filled with regret for injuring her fetus, feels <lb/>compelled to terminate her pregnancy to avoid the child-to-be's complaint." Ibid. at 253. <lb/></bibl>
+			<bibl><label>40</label> . Ibid. at 248. <lb/></bibl>
+			<bibl><label>41</label> . Ibid at 252-3. <lb/></bibl>
+			<bibl><label>42</label> . Ibid at 253. <lb/></bibl>
+			<bibl><label>43</label> . Ibid. <lb/><lb/></bibl>
+			<bibl><label>44</label> . See Laurie A. Paul, Transformative Experience (Oxford: Oxford University Press, 2014). <lb/></bibl>
+			<bibl><label>45</label> . Howard treats the prenatal responsibilities of intending parents as raising a straightfor-<lb/>ward All-or-Nothing problem. If the pregnant person genuinely wills parenting, she genuinely <lb/>wills the sacrifices involved in having a child. "However, if she is willing to make them, then <lb/>she cannot use the burdens of pregnancy as justification against the claims of the fetus." <lb/>Howard, "Maternal Autonomy," 252. If, however, an intending parent could change her <lb/>mind, she could revert to a mere carrier, for whom the second-best option would be permis-<lb/>sible, and sacrifices beyond those needed to give the child-to-be a life worth living would be <lb/>supererogatory. <lb/></bibl>
+			<bibl><label>46</label> . Ibid. at 253, emphasis added. <lb/><lb/></bibl>
+			<bibl><label>47</label> . Brake, "Willing Parents"; </bibl>
+			<bibl>Joseph Millum, The Moral Foundations of Parenthood <lb/>(Oxford: Oxford University Press, 2017). <lb/><lb/></bibl>
+			<bibl><label>49</label> . Brake, "Willing Parents." <lb/></bibl>
+			<bibl><label>50</label> . Michale Bratman, Shared and Institutional Agency: Toward a Planning Theory of <lb/>Human Practical Organization (Oxford: Oxford University Press, 2022). <lb/></bibl>
+			<bibl><label>51</label> . Ibid. at 4-5. <lb/><lb/></bibl>
+			<bibl><label>58</label> . On an investment theory of parental rights like Millum's in Moral Foundations, the <lb/>two would seem to have similar claims to parent the child, since, as stipulated, they have <lb/>made the same investment in the child's well-being. I should stress, however, that only those <lb/>who have the right to parent (or act for those who do) can have the conditional duties of a <lb/>future parent. Someone otherwise lacking that right cannot acquire it simply by taking on <lb/>those duties. <lb/><lb/></bibl>
+			<bibl><label>60</label> . Howard, "Maternal Autonomy." <lb/></bibl>
+			<bibl><label>63</label> . The parent might try to defend her prenatal negligence by pointing out that she could <lb/>have permissibly aborted instead. But, as Greg Kavka argued with respect to another repro-<lb/>ductive decision, conditioning a child's existence on its acquiescence to suboptimal condi-<lb/>tions, "may be viewed as similar to an act of indirect extortion." Kavka, "The Paradox of <lb/>Future Individuals," Philosophy &amp; Public Affairs 18, no. 2 (1982): 93-112. Here, the parent <lb/>would gain unfair leverage from her power to determine whether the fetus survives to birth. <lb/><lb/></bibl>
+			<bibl><label>64</label> . Tina Rulli, "Conditional Obligations," Social Theory and Practice 46, no. 2 (2020): <lb/>365-90. <lb/></bibl>
+			<bibl><label>65</label> . Ibid. at 482-3. <lb/></bibl>
+			<bibl><label>66</label> . Ibid. at 383-4. <lb/></bibl>
+			<bibl><label>69</label> . Hallie Liberto, "Promises and the Backward Reach of Uptake," American Philosophical <lb/>Quarterly 55, no. 1 (2018): 15-26. <lb/></bibl>
+			<bibl><label>70</label> . Ibid. We might explain the wrong committed by an intending parent in promissory <lb/>terms: a child could accept her parent's prenatal "promise" of a high standard of fetal care <lb/>and then hold them accountable for breaching it by prenatal neglect. Whether they could be <lb/>regarded as having prenatally breached that promise would depend on whether the child <lb/>would be regarded as having received a promise made to him at a time when he was incapa-<lb/>ble of uptake. Whether an intending mother could be seen as breaching a promise made <lb/>even before the fetus was conceived would depend in addition on whether a promise could <lb/>be made de dicto, then accepted de re. <lb/><lb/></bibl>
+			<bibl><label>71</label> . Ibid. at 22. <lb/></bibl>
+			<bibl><label>72</label> . Elizabeth Harman, "Creation Ethics: The Moral Status of Early Fetuses and the Ethics <lb/>of Abortion," Philosophy &amp; Public Affairs 28, no. 4 (1999): 310-24. <lb/></bibl>
+			<bibl><label>74</label> . See, e.g., Rob Lovering, "The Ever Conscious View: A Critique," Philosophy in the Con-<lb/>temporary World 18, no. 1 (2011): 90-101. <lb/><lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1080_1460728x.2025.2470027">
+			<titleStmt>
+				<title level="a">Against ethics in law: the problems with applying ethics and integrity rules to doctrinal legal scholarship</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1080/1460728x.2025.2470027</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_50</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>1</label> Margit Sutrop and Kristi Lõuk, 'Ethical Research in a Global Context: A Dynamic Tension Between Universal Values, Prin-<lb/>ciples and Contextual Applications' in Ron Iphofen and Dónal O'Mathúna (eds), Ethical Evidence And Policymaking: Inter-<lb/>disciplinary and International Research (Policy Press 2022) 15. <lb/></bibl>
+			<bibl><label>2</label> Antony Bradney, 'Law as a Parasitic Discipline' (1998) 28 Journal of Law and Society 71; </bibl>
+			<bibl>Andrew Lang, 'New Legal Realism, <lb/>Empiricism, and Scientism: The Relative Objectivity of Law and Social Science' (2015) 28 Leiden Journal of International <lb/>Law 231. <lb/><lb/></bibl>
+			<bibl><label>3</label> Will C van den Hoonaard, The Seduction of Ethics (University of Toronto Press 2011); </bibl>
+			<bibl>Sutrop and Lõuk (n 1). <lb/></bibl>
+			<bibl><label>4</label> Torsten Wilholt. 'Epistemic Trust in Science' (2013) 24(2) British Journal for the Philosophy of Science 233; </bibl>
+			<bibl>Felipe Romero, <lb/>'Philosophy of Science and the Replicability Crisis' (2019) Philosophy Compass 14:e12633. <lb/></bibl>
+			<bibl><label>5</label> Jan Smits, The Mind and Method Of The Legal Academic (Edward Elgar 2012). <lb/></bibl>
+			<bibl><label>6</label> See Kenneth Rothman, 'Conflict of Interest: The New McCarthyism in Science' (1993) 269(21) JAMA 2782. <lb/></bibl>
+			<bibl><label>7</label> Patrick Bondy, 'Virtues, Evidence, and Ad Hominem Arguments' (2015) 35(4) Informal Logic 450. <lb/></bibl>
+			<bibl><label>8</label> c.f. Bruce Macfarlane, Researching with Integrity: The Ethics of Academic Enquiry (Routledge 2009). <lb/></bibl>
+			<bibl><label>9</label> Edward Rubin, 'On beyond Truth: A Theory for Evaluating Legal Scholarship' (1992) 80 California Law Review 889. <lb/><lb/></bibl>
+			<bibl><label>10</label> Rob van Gestel and Hans-Wolfgang Micklitz, 'Why Methods Matter in European Legal Scholarship' (2014) 20 European <lb/>Law Journal, 292; </bibl>
+			<bibl>Gareth Davies, 'The Relationship between Empirical Legal Studies and Doctrinal Legal Research' (2020) <lb/>13(2) Erasmus Law Review 3. <lb/></bibl>
+			<bibl><label>11</label> Mark C Suchman and Elizabeth Mertz, 'Toward a New Legal Empiricism: Empirical Legal Studies and New Legal Realism' <lb/>(2010) 6 Annual Review of Law and Sociology 555; </bibl>
+			<bibl>Davies, 'The Relationship' (n 10). <lb/></bibl>
+			<bibl><label>12</label> Zachary Schrag, 'The Case against Ethics Review in the Social Sciences' (2011) 7(4) Research Ethics 120; </bibl>
+			<bibl>David Resnik and <lb/>Adil Shamoo, 'The Singapore Statement on Research Integrity' (2011) 18(2) Accountability in Research 71; </bibl>
+			<bibl>ALLEA, 'The <lb/>European Code of Conduct for Research Integrity' (ALLEA, 2017) doi: 10.26356/ECOC; </bibl>
+			<bibl>Neil Hamilton, 'Legal Scholars' <lb/>Ethical Responsibilities concerning Neutrality and Objectivity, Candor and Exhaustiveness' (2018) 101(4) Marquette <lb/>Law Review 1045; </bibl>
+			<bibl>Sara Davies, 'An Ethics of the System: Talking to Scientists About Research Integrity' (2019) 25 <lb/>Science and Engineering Ethics 1235; </bibl>
+			<bibl>UK Research Integrity Office, Code of Practice for Research (2018) https://ukrio. <lb/>org/wp-content/uploads/UKRIO-Code-of-Practice-for-Research.pdf ; </bibl>
+			<bibl>US National Science Foundation, Scientific Integrity <lb/>Policy (2024) https://www.nsf.gov/pubs/2024/nsf24007/nsf24007.pdf. <lb/></bibl>
+			<bibl><label>13</label> Netherlands Scientific Organisation (NWO), Netherlands Code of Conduct for Research Integrity (NWO 2018) https://www. <lb/>nwo.nl/sites/nwo/files/documents/Netherlands%2BCode%2Bof%2BConduct%2Bfor%2BResearch%2BIntegrity_2018_ <lb/>UK.pdf. <lb/></bibl>
+			<bibl><label>14</label> Paul Spicker, 'One Size Fits All? The Problems of Offering Ethical Guidance to Everyone' in Ron Iphofen and Dónal <lb/>O'Mathúna (eds), Ethical Evidence And Policymaking: Interdisciplinary and International Research (Policy Press 2022) <lb/>40; </bibl>
+			<bibl>Sutrop and Lõuk (n 1). <lb/></bibl>
+			<bibl><label>15</label> Sutrop and Lõuk (n 1). <lb/><lb/></bibl>
+			<bibl><label>16</label> Open Science Collaboration, 'Estimating the Reproducibility of Psychological Science' (2015) 349 Science 6251; </bibl>
+			<bibl>Kelsey <lb/>Piper, 'Science has been in a "replication crisis" for a decade. Have we learned anything? Bad papers are still published. <lb/>But some other things might be getting better' [2020] VOX, October 14 2020. https://www.vox.com/future-perfect/ <lb/>21504366/science-replication-crisis-peer-review-statistics ; </bibl>
+			<bibl>Romero 'Philosophy of Science' (n 4). <lb/></bibl>
+			<bibl><label>17</label> Felipe Romero, 'Novelty versus Replicability: Virtues and Vices in the Reward System of Science' (2017) 84(5) Philosophy <lb/>of Science 1031. <lb/></bibl>
+			<bibl><label>18</label> Sutrop and Lõuk (n 1); </bibl>
+			<bibl>Romero 'Philosophy of Science' (n 4) <lb/></bibl>
+			<bibl><label>19</label> c.f. Sara Davies 'An Ethics' (n 12). <lb/><lb/></bibl>
+			<bibl><label>20</label> UK Research Integrity Office (n 12). <lb/></bibl>
+			<bibl><label>21</label> Kevin Haggerty, 'Ethics Creep: Governing Social Science Research in the Name of Ethics' (2004) 27 Qualitative Sociology <lb/>391; </bibl>
+			<bibl>Zachary Schrag, Ethical Imperialism: Institutional Review Boards and the Social Sciences, 1965-2009 (Johns Hopkins <lb/>University Press 2017); </bibl>
+			<bibl>Spicker 'One Size Fits All (n 14). <lb/></bibl>
+			<bibl><label>22</label> Sutrop and Lõuk (n 1). <lb/></bibl>
+			<bibl><label>23</label> Malcolm M Feeley, 'Legality, Social Research, and the Challenge of Institutional Review Boards' (2007) 41(4) Law and <lb/>Society Review 757; </bibl>
+			<bibl>Robert Dingwall, 'Turn off the Oxygen … ' (2007) 41(4) Law and Society Review 787. <lb/></bibl>
+			<bibl><label>24</label> Feeley (n 23). <lb/></bibl>
+			<bibl><label>25</label> Dingwall (n 23); </bibl>
+			<bibl>Feeley (n 23); </bibl>
+			<bibl>Gaile Cannella and Yvonna Lincoln, 'Ethics, Research Regulations, and Critical Social <lb/>Science' in Norman Denzin and Yvonna Lincoln (eds), The Sage Handbook of Qualitative Research (Sage 2011) 81-90; <lb/></bibl>
+			<bibl>Schrag, 'The Case Against' (n 12); </bibl>
+			<bibl>Davies 'An Ethics' (n 12); </bibl>
+			<bibl>Spicker 'One Size Fits All' (n 14). <lb/></bibl>
+			<bibl><label>26</label> Schrag 'The Case Against' (n 12); </bibl>
+			<bibl>Haggerty (n 21); </bibl>
+			<bibl>Rothman (n 6); </bibl>
+			<bibl>van den Hoonaard (n 3). <lb/><lb/></bibl>
+			<bibl><label>27</label> Smits (n 5); </bibl>
+			<bibl>Jan Vranken, 'Exciting Times for Legal Scholarship' (2012) 2(2) Law and Method 42. <lb/></bibl>
+			<bibl><label>28</label> See van Gestel and Micklitz (n 10); </bibl>
+			<bibl>Daniel Blocq and Maartje van der Woude, 'Making Sense of the Law and Society <lb/>Movement' (2018) 11(2) Erasmus Law Review 134; </bibl>
+			<bibl>Davies 'The Relationship' (n 10). <lb/></bibl>
+			<bibl><label>29</label> Davies 'The Relationship' (n 10). <lb/></bibl>
+			<bibl><label>30</label> Stephen Sugarman, 'Conflicts of Interest in the Roles of the University Professor' (2005) 6(1) Theoretical Inquiries in Law <lb/>255; </bibl>
+			<bibl>David Resnik, The Price of Truth. How Money Affects the Norms of Science (OUP 2007). </bibl>
+			<bibl>C.f., on the problems of trans-<lb/>parency, George Loewenstein, Sunita Sah and Daylian Cain, 'The Unintended Consequences of Conflict of Interest Dis-<lb/>closure' (2012) 307(7) JAMA 669. <lb/><lb/></bibl>
+			<bibl><label>31</label> See also van den Hoonaard (n 3). <lb/></bibl>
+			<bibl><label>32</label> Such support requires 'all of the moral fortitude of unconditionally voicing support for motherhood': Haggerty (n 21) <lb/>393. <lb/></bibl>
+			<bibl><label>33</label> See generally Smits (n 5). <lb/></bibl>
+			<bibl><label>34</label> Rubin (n 9); </bibl>
+			<bibl>Smits (n 5). <lb/></bibl>
+			<bibl><label>35</label> Rubin (n 9); </bibl>
+			<bibl>Smits (n 5); </bibl>
+			<bibl>Vranken (n 27). <lb/><lb/></bibl>
+			<bibl><label>36</label> Rubin (n 9); </bibl>
+			<bibl>John Hasnas, 'Back to the Future: From Critical Legal Studies Forward to Legal Realism, Or How Not to Miss <lb/>the Point of the Indeterminacy Argument' (1995) 34 Duke Law Journal 84; </bibl>
+			<bibl>Nicholas Mignanelli, 'Critical Legal Research: <lb/>Who Needs It?' (2020) 112 Law Library Journal 327. <lb/></bibl>
+			<bibl><label>37</label> Theodore Eisenberg, 'The Origins, Nature, and Promise of Empirical Legal Studies and a Response to Concerns' (2011) 5 <lb/>University of Illinois Law Review 1713; </bibl>
+			<bibl>Davies 'The Relationship' (n 10). <lb/></bibl>
+			<bibl><label>38</label> Rubin (n 9). <lb/></bibl>
+			<bibl><label>39</label> Ibid. <lb/></bibl>
+			<bibl><label>40</label> Smits (n 5) 4. <lb/><lb/></bibl>
+			<bibl><label>41</label> Romero 'Philosophy of Science' (n 4); </bibl>
+			<bibl>Wilholt (n 4); </bibl>
+			<bibl>Sutrop and Lõuk (n 1). <lb/></bibl>
+			<bibl><label>42</label> C.f. MacFarlane (n 8). <lb/></bibl>
+			<bibl><label>43</label> Rothman (n 6). <lb/></bibl>
+			<bibl><label>44</label> Bondy (n 7). <lb/><lb/></bibl>
+			<bibl><label>45</label> Rubin (n 9). <lb/><lb/></bibl>
+			<bibl><label>46</label> Vincent Bongers, 'Zij strijden tegen belastingontwijking (en oud-collega's zijn daar niet blij mee)' [2021] Leids Univer-<lb/>sitair Weekblad Mare 16/12/21. https://www.mareonline.nl/wetenschap/deze-hoogleraren-strijden-tegen-<lb/>belastingontwijking-en-veel-collegas-zijn-daar-niet-blij-mee/ ; </bibl>
+			<bibl>Santtu Raitasuo, 'The Conflict of Interest in Tax Scholar-<lb/>ship' (2021) Critical Perspectives on Accounting 102394. <lb/></bibl>
+			<bibl><label>47</label> Sugarman (n 30); </bibl>
+			<bibl>Resnik (n 30). <lb/></bibl>
+			<bibl><label>48</label> See discussion in Raitasuo (n 46). <lb/></bibl>
+			<bibl><label>49</label> See also Loewenstein, Sah and Cain (n 30). <lb/></bibl>
+			<bibl><label>50</label> See Rothman (n 6). <lb/><lb/></bibl>
+			<bibl><label>51</label> Rothman (n 6); </bibl>
+			<bibl>PLoS Medicine Editors, 'Making Sense of Non-Financial Competing Interests' (2008) 5(9) PLoS Med e199; <lb/></bibl>
+			<bibl>Sandro Galea, 'Typology of Nonfinancial Conflict in Population Health Research' (2018) 108(5) American Journal of Public <lb/>Health 631. </bibl>
+			<bibl>See also Jeanne Lenzer, 'When is a Point of View a Conflict of Interest?' (2016) 355 British Medical Journal <lb/>355:i6194. <lb/></bibl>
+			<bibl><label>52</label> See generally Rothman arguing 'conflicts' are ubiquitous, Rothman (n 6). <lb/></bibl>
+			<bibl><label>53</label> Pierre Schlag, 'Pre-Figuration and Evaluation' (1992) 80(4) California Law Review 965. <lb/></bibl>
+			<bibl><label>54</label> Rubin (n 9). <lb/><lb/></bibl>
+			<bibl><label>55</label> Mary Joe Frug, 'Rescuing Impossibility Doctrine: A Postmodern Feminist Analysis of Contract Law' (1992) 140(3) Univer-<lb/>sity of Pennsylvania Law Review 1029; </bibl>
+			<bibl>Duncan Kennedy, A Critique of Adjudication (Harvard University Press 1997); <lb/></bibl>
+			<bibl>Mignanelli (n 36). <lb/></bibl>
+			<bibl><label>56</label> Jack Balkin, 'The Crystalline Structure of Legal Thought' (1986) 39(1) Rutgers Law Review 1; </bibl>
+			<bibl>Martti Koskenniemi, From <lb/>Apology to Utopia: The Structure of International Legal Argument (Cambridge University Press 2006); </bibl>
+			<bibl>Kennedy (n 55). <lb/></bibl>
+			<bibl><label>57</label> Schlag (n 53); </bibl>
+			<bibl>Mignanelli (n 36); </bibl>
+			<bibl>Hasnas (n 36); </bibl>
+			<bibl>Rothman (n 6); </bibl>
+			<bibl>Paul Spicker, 'Ethical Research in Public Policy' in Ron <lb/>Iphofen and Dónal O'Mathúna (eds), Ethical Evidence and Policymaking: Interdisciplinary and International Research <lb/>(Policy Press 2022) 139. <lb/></bibl>
+			<bibl><label>58</label> Galea (n 51); </bibl>
+			<bibl>See also Lenzer (n 51). <lb/></bibl>
+			<bibl><label>59</label> See Koskenniemi critiquing 'authenticity' in Martti Koskenniemi, ''The Lady Doth Protest Too Much'. Kosovo, and the <lb/>Turn to Ethics in International Law' (2002) 65(2) Modern Law Review 159. <lb/></bibl>
+			<bibl><label>60</label> Rothman (n 6); </bibl>
+			<bibl>Galea (n 51); </bibl>
+			<bibl>See Lenzer (n 51) at 2; </bibl>
+			<bibl>C.f. West 'If you are writing in pursuit of justice, you write from the <lb/>heart or you don't write at all', Robin West, 'The Ethics of Normative Legal Scholarship' (2018) 101 Marquette Law Review <lb/>981, 988. <lb/><lb/></bibl>
+			<bibl><label>61</label> Rothman (n 6). <lb/><lb/></bibl>
+			<bibl><label>62</label> Ibid. <lb/></bibl>
+			<bibl><label>63</label> Rubin (n 9). <lb/><lb/></bibl>
+			<bibl><label>64</label> Rothman (n 6). <lb/></bibl>
+			<bibl><label>65</label> c.f. Mcfarlane (2009). <lb/><lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>

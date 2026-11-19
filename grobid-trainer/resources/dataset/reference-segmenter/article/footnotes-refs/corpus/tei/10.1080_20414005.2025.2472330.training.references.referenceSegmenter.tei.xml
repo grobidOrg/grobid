@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1080_20414005.2025.2472330">
+			<titleStmt>
+				<title level="a">Hiding the machine: stories, rights and the naturalisation of corporate technology</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1080/20414005.2025.2472330</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_40</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>2</label> For an overview of discussions on the 'ontological or metaphysical status of legal persons' see Her-<lb/>mansson's contribution to this volume. <lb/></bibl>
+			<bibl><label>3</label> As Dewey insists '"person" signifies what law makes it signify' (John Dewey, 'The Historical Background <lb/>of Corporate Legal Personality' (1926) 35 Yale Law Journal 655, at 655. <lb/></bibl>
+			<bibl><label>4</label> Meir Dan-Cohen, Rights, Persons, and Organization: A Legal Theory for a Bureaucratic Society (Quid Pro <lb/>Books, 2016). <lb/></bibl>
+			<bibl><label>5</label> Christopher Bruner, The Corporation as Technology: Re-Calibrating Corporate Governance for a Sustain-<lb/>able Future (Oxford University Press, 2022). </bibl>
+			<bibl>See also Bruner's contribution to this special issue. <lb/></bibl>
+			<bibl><label>6</label> Cf. Eva Micheler, Company Law: A Real Entity Theory (Oxford University Press, 2021). </bibl>
+			<bibl>See also Micheler's <lb/>contribution to this Special Issue. <lb/></bibl>
+			<bibl><label>7</label> Thomas Clarke, Justin O'Brien and Charles Kelley, 'The Evolving Corporation' in Clarke, O'Brien and <lb/>O'Kelley (eds), The Oxford Handbook of the Corporation (Oxford University Press, 2019) 1-48. <lb/><lb/></bibl>
+			<bibl><label>8</label> Masahiko Aoki, 'Corporations in Evolving Diversity. Cognition, Governance, and Institutions'. <lb/></bibl>
+			<bibl><label>9</label> Barbara Abatino, Giuseppe Dari-Mattiacci and Enrico Perotti, 'Depersonalisation of Business in Ancient <lb/>Rome' (2011) 31 Oxford Journal of Legal Studies 365-389. </bibl>
+			<bibl>See also Giuseppe Dari-Mattiacci et al, 'The <lb/>Emergence of the Corporate Form' (2017) 33 Journal of Law, Economics and Organisation 193-236, who <lb/>add a fifth element of tradable shares. <lb/></bibl>
+			<bibl><label>10</label> Lynn Stout, 'Corporations as Sempiternal Legal Persons' in Clarke, O'Brien and O'Kelley (eds), The <lb/>Oxford Handbook of the Corporation (Oxford University Press, 2019), 220-233, at 220. <lb/></bibl>
+			<bibl><label>11</label> Lynn Stout, 'The Corporation as a Time Machine: Intergenerational Equity, Intergenerational Efficiency, <lb/>and the Corporate Form' (2015) 38 Seattle University Law Review 685-724, at 696. <lb/></bibl>
+			<bibl><label>12</label> Henry Hansmann, Reinier Kraakman and Richard Squire, 'Law and the Rise of the Firm' (2006) 119 <lb/>Harvard Law Review, 1335. <lb/></bibl>
+			<bibl><label>13</label> Abatino et al (n 9) 368. <lb/></bibl>
+			<bibl><label>14</label> Stout (n 11) 696. <lb/></bibl>
+			<bibl><label>15</label> Hansmann et al (n 12) 1371. <lb/><lb/></bibl>
+			<bibl><label>16</label> Oscar Gelderblom, Abe de Jong, and Joost Jonker, 'The Formative Years of the Modern Corporation: <lb/>The Dutch East India Company VOC, 1602-1623' (2013) 73 The Journal of Economic History 1050, at <lb/>1051. <lb/></bibl>
+			<bibl><label>17</label> Lord Glenville spoke of the 'great, immense, and extensive difference of opinion which now evidently <lb/>existed' concerning the renewal of the Company's Charter (Hansard, House of Lords Debates, 28 April <lb/>1812, vol. 22, col. 1078 (Lord Glenville)). <lb/></bibl>
+			<bibl><label>18</label> Abatino et al (n 9) 367. As Abatino et al note, Direct Agency in this sense is restricted to the vesting of <lb/>legal authority to act on behalf of the corporate entity. <lb/></bibl>
+			<bibl><label>19</label> Andreas Fleckner, 'Roman Business Associations' in G Dari-Mattiacci and DP Kehoe (eds), Roman Law <lb/>and Economics: Institutions and Organizations (Vol. I) (Oxford University Press, 2020) 262. <lb/></bibl>
+			<bibl><label>20</label> Ibid. </bibl>
+			<bibl>According to the Justinian Digest 'An institor is one who is appointed to a shop or place to buy or <lb/>sell, or is appointed to such a function with no specification of place.' Digest 14.3.18, Paulus edict 29. <lb/></bibl>
+			<bibl><label>21</label> Margaret Blair, 'Locking in Capital: What Corporate Law Achieved for Business Organisers in the Nine-<lb/>teenth Century' (2003) 51 UCLA Law Review 387, at 435. <lb/><lb/></bibl>
+			<bibl><label>22</label> Susan Watson, 'The Significance of the Source of the Powers of Boards of Directors in UK Company <lb/>Law' (2011) Journal of Business Law 597. Much has been made of the fact that the clause allocating <lb/>director's powers is not in the statute itself, but in the non-mandatory articles of association. However, <lb/>as Watson shows, this has no significance to the nature of the powers of the directors. </bibl>
+			<bibl>As Ciepley <lb/>emphasizes, the authority of corporate management is 'of government' -it is authority delegated <lb/>by the state through the process of incorporation, not derived from the shareholders through <lb/>private contracting (David Ciepley, 'Beyond Public and Private: Toward a Political Theory of the Cor-<lb/>poration' (2013) 107 American Political Science Review 139-158). <lb/></bibl>
+			<bibl><label>23</label> Hansmann et al (n 12), and much of the literature, refers to shareholders as 'owners'. The term carries <lb/>legal and ideological implications that are not accepted in this article, but in order to be faithful to the <lb/>literature the term owner will be used, but in quotes. <lb/></bibl>
+			<bibl><label>24</label> Hansmann et al (n 12). Much of the historical work on the history of the firm has focused on the emer-<lb/>gence of limited liability (what Hansmann et al call 'owner shielding'). The claim in their paper (and <lb/>here) is not that entity shielding is empirically prior to owner shielding -indeed, as discussed below, <lb/>Roman law provided for extensive forms of owner shielding while not allowing for entity shielding. <lb/>The claim rather is that the advent of entity shielding is of greater importance 'for the creation of <lb/>business firms as separate and distinct economic actors' (at 1336). </bibl>
+			<bibl>For a discussion on the implausi-<lb/>bility of the claim of empirical priority of entity shielding see Per Samuelsson, 'On the Evolution of <lb/>Corporate Forms' (2005) University of Illinois Law Review 15. <lb/></bibl>
+			<bibl><label>25</label> Fleckner (n 19). <lb/></bibl>
+			<bibl><label>26</label> Dari-Mattiacci (n 9). <lb/></bibl>
+			<bibl><label>27</label> Hansmann et al (n 12). <lb/><lb/></bibl>
+			<bibl><label>28</label> G. Dari-Mattiacci et al (n 9). <lb/></bibl>
+			<bibl><label>29</label> Hansmann et al (n 12) at 1377. <lb/></bibl>
+			<bibl><label>30</label> Ibid, at 1343</bibl>
+			<bibl><label>32</label> Hansmann et al (n 12) 1367. <lb/><lb/></bibl>
+			<bibl><label>33</label> Ibid. <lb/></bibl>
+			<bibl><label>34</label> Blair (n 21) 391. <lb/></bibl>
+			<bibl><label>35</label> Hansmann et al (n 12) 1339 ff. <lb/></bibl>
+			<bibl><label>36</label> R Harris, 'A New Understanding of the History of Limited Liability: An Invitation for Theoretical Refram-<lb/>ing' (2020) 16 Journal of Institutional Economics 643, at 643. <lb/></bibl>
+			<bibl><label>37</label> Hansmann et al (n 12) 1358. <lb/></bibl>
+			<bibl><label>38</label> Ibid. <lb/></bibl>
+			<bibl><label>39</label> According to Fleckner the sources do not support the assumption that the peculium of common slaves <lb/>was used to fund larger enterprises. Fleckner (n 19). <lb/></bibl>
+			<bibl><label>40</label> Harris (n 36) 647. Harris acknowledges that some researchers insisted that the East India Companies <lb/>enjoyed limited liability, but he convincingly argues that this is misguided. </bibl>
+			<bibl>See also Philip Stern, <lb/>'English East India Company-state and the Modern Corporation: the Google of its Time?' in Clarke, <lb/>O'Brien and O'Kelley (eds), The Oxford Handbook of the Corporation (Oxford University Press, 2019) <lb/>75-92, at 80. <lb/><lb/></bibl>
+			<bibl><label>41</label> Ibid, 655. <lb/></bibl>
+			<bibl><label>42</label> Ibid, 657. <lb/></bibl>
+			<bibl><label>43</label> Margaret Blair, 'The Four Functions of Corporate Personhood' in Anna Grandori (ed), Handbook of <lb/>Economic Organisation (Edward Elgar, 2013) 442. <lb/></bibl>
+			<bibl><label>44</label> These are linked to, but not identical, to the four functions of Corporate Personhood that Blair ident-<lb/>ifies. Blair (n 43). <lb/></bibl>
+			<bibl><label>45</label> See also Christopher Bruner, in this volume, for an argument for the contingency of corporate law. <lb/></bibl>
+			<bibl><label>46</label> Andrew Gamble and Gavin Kelly, 'The Politics of the Company' in Parkinson et al (eds), The Political <lb/>Economy of the Company (Hart, 2000) 22. <lb/></bibl>
+			<bibl><label>47</label> Andreas Fleckner, 'Adam Smith on the Joint Stock Company' (2016) Max Plank Institute for Tax Law and <lb/>Public Finance 2016-01; </bibl>
+			<bibl>Gary Anderson and Robert Tollison, 'Adam Smith's Analysis of Joint-Stock <lb/>Companies' (1982) 90 Journal of Political Economy 1237. <lb/></bibl>
+			<bibl><label>48</label> Mark Hodak, 'Adam Smith's Folly' Forbes Magazine (25 October 2007). <lb/><lb/></bibl>
+			<bibl><label>49</label> Sankar Muthu, 'Adam Smith's Critique of International Trading Companies' (2008) 36 Political Theory <lb/>185, 195. <lb/></bibl>
+			<bibl><label>50</label> Adam Smith, Wealth of Nations Book IV, Chapter 7, Part III. <lb/></bibl>
+			<bibl><label>51</label> Muthu (n 49) 200. <lb/></bibl>
+			<bibl><label>52</label> Ibid. <lb/></bibl>
+			<bibl><label>53</label> Ibid, 198; </bibl>
+			<bibl>GR Bassiry and Marc Jones, 'Adam Smith and the Ethics of Contemporary Capitalism' (1993) <lb/>12 Journal of Business Ethics 621, 623. <lb/></bibl>
+			<bibl><label>54</label> Fleckner (n 47) 52. <lb/></bibl>
+			<bibl><label>55</label> In addition, as Paddy Ireland observes, 'Smith's ideas about [Joint Stock Companies] were highly influ-<lb/>ential and continued to shape state policy in the UK well into the nineteenth century'. Paddy Ireland, <lb/>'Efficiency or Power? The Rise of the Shareholder-Oriented Joint Stock Corporation' (2018) 25 Indiana <lb/>Journal of Global Legal Studies 291, 296. <lb/></bibl>
+			<bibl><label>56</label> William Roy, 'Socialising Capital: The Rise of the Industrial Corporation' in Clarke, O'Brien and O'Kelley <lb/>(eds), The Oxford Handbook of the Corporation (Oxford University Press, 2019) 93, 99. <lb/></bibl>
+			<bibl><label>57</label> Letter from Thomas Jefferson to Tom Logan (Nov. 12, 1816), in P Ford (ed), The Works of Thomas <lb/>Jefferson 42, 44 (1905), cited by Justice Stevens in Citizens United v. FEC, 558 U.S. 310 (2010). <lb/><lb/></bibl>
+			<bibl><label>58</label> AA Berle and Gardiner Means, The Modern Corporation and Private Property (Macmillan, 1933) 352. <lb/></bibl>
+			<bibl><label>59</label> Ibid. <lb/></bibl>
+			<bibl><label>60</label> Ibid, 356. <lb/></bibl>
+			<bibl><label>61</label> E Merrik Dodd, Jr, 'For Whom are Corporate Managers Trustees?' (1932) 45 Harvard Law Review 1145, <lb/>1148. <lb/></bibl>
+			<bibl><label>62</label> David Grindis, 'On the Origins, Meaning and Influence of Jensen and Meckling's Definition of the Firm' <lb/>(2020) 72 Oxford Economic Papers 966, 973. <lb/></bibl>
+			<bibl><label>63</label> Committee for Economic Development The Social Responsibilities of Business Organisations (1971), <lb/>available at https://www.ced.org/pdf/Social_Responsibilities_of_Business_Corporations.pdf (accessed <lb/>12 July 2024), 21. <lb/></bibl>
+			<bibl><label>64</label> Berle and Means (n 58) 11. <lb/></bibl>
+			<bibl><label>65</label> Ronald Chen and Jon Hanson, 'The Illusion of Law: The Legitimating Schemas of Modern Policy and <lb/>Corporate Law' (2004) 103 Michigan Law Review 3. <lb/><lb/></bibl>
+			<bibl><label>66</label> Milton Freedman, 'The Social Responsibility of Business is to Increase its Profits' in The New York Times <lb/>Magazine (13 September 1970). <lb/></bibl>
+			<bibl><label>67</label> Ibid. <lb/></bibl>
+			<bibl><label>68</label> Grindis (n 62) 969. <lb/></bibl>
+			<bibl><label>69</label> Michael Jensen and William Meckling, 'Theory of the Firm: Managerial Behavior, Agency Costs and <lb/>Ownership Structure' (1976) 3 Journal of Financial Economic 305. <lb/></bibl>
+			<bibl><label>70</label> Ibid, 309. <lb/></bibl>
+			<bibl><label>71</label> Ibid, 310. <lb/><lb/></bibl>
+			<bibl><label>72</label> Ibid, 311. <lb/></bibl>
+			<bibl><label>73</label> Ibid. <lb/></bibl>
+			<bibl><label>74</label> Armen Alchian and Herbert Demsetz, 'Production, Information Costs, and Economic Organization' <lb/>(1972) The American Economic Review 777, 777. <lb/></bibl>
+			<bibl><label>75</label> Henry G Manne, 'The "Higher Criticism" of the Modern Corporation' (1962) 62 Columbia Law Review <lb/>399, 431. <lb/></bibl>
+			<bibl><label>76</label> Henry G Manne, 'The Limits and Rationale of Corporate Altruisim: An Individualistic Model' (1973) 59 <lb/>Virginia Law Review 708-722, 709. <lb/></bibl>
+			<bibl><label>77</label> Frank Easterbrook and Daniel Fischel, The Economic Structure of Corporate Law (Harvard University <lb/>Press, 1991), authors' preface. The book compiled much of the work that Easterbrook and Fischel <lb/>had been engaged in through the 1980s and the authors expressly acknowledge that their economic <lb/>approach 'owes much' to Jensen and Meckling's work. <lb/><lb/></bibl>
+			<bibl><label>78</label> Ibid, 8. <lb/></bibl>
+			<bibl><label>79</label> Ibid, 10. <lb/></bibl>
+			<bibl><label>80</label> Ibid, 15. <lb/></bibl>
+			<bibl><label>81</label> Ibid, 7. <lb/></bibl>
+			<bibl><label>82</label> Ibid, 34. <lb/></bibl>
+			<bibl><label>84</label> Michael Jensen and William Meckling, 'Reflections on the Corporation as a Social Invention' (1983) <lb/>Harvard Business School NOM Unit Working Paper No. 1983, Available at SSRN: https://ssrn.com/ <lb/>abstract=244156 (accessed 12 July 2024). <lb/></bibl>
+			<bibl><label>85</label> Easterbrook and Fischel (n 77). <lb/><lb/></bibl>
+			<bibl><label>86</label> Ibid, 35. <lb/></bibl>
+			<bibl><label>87</label> Henry Butler and Larry Ribstein, 'Opting Out of Fiduciary Duties: A Response to the Non-Contractar-<lb/>ians' (1990) 65 Washington Law Review 1. Both Butler and Ribstein, as well as Easterbrook and Fischel <lb/>focus on the US federal system, which its diversity of corporate law. </bibl>
+			<bibl>Others apply the same principle <lb/>also in the EU context: Marco Ventoruzzo, '"Cost-Based" and "Rules-Based" Regulatory Competition: <lb/>Markets for Corporate Charters in the U.S. and in the E.U.' (2006) 3 New York University Journal of <lb/>Law &amp; Business 91. <lb/></bibl>
+			<bibl><label>88</label> Easterbrook and Fischel (n 77) 218. <lb/></bibl>
+			<bibl><label>89</label> Ibid, 217. Easterbrook and Fischel accept that there may be other factors influencing legislators, such <lb/>as campaign contributions, which result in 'private interest legislation at the expense of the general <lb/>welfare', but this is, in their view, deviant behaviour. <lb/></bibl>
+			<bibl><label>91</label> Butler and Ribstein (n 87) 6. <lb/></bibl>
+			<bibl><label>92</label> Ibid, 55. <lb/></bibl>
+			<bibl><label>93</label> Easterbrook and Fischel (n 77) 91. <lb/><lb/></bibl>
+			<bibl><label>94</label> Eugene Fama and Michael Jensen, 'Agency Problems and Residual Claims' (1983) 27 Journal of Law <lb/>and Economics 327. <lb/></bibl>
+			<bibl><label>95</label> See also Stephen Bainbridge, 'Director Primacy: The Means and Ends of Corporate Governance' (2002) <lb/>97 Northwestern University Law Review 547. Note the distinction between ownership of the residual <lb/>claim and ownership of the firm. Bainbridge is careful to point out that shareholders do not own the <lb/>firm itself, because there is no such thing as 'the firm itself' -there are only a set of contractual <lb/>relationships. <lb/></bibl>
+			<bibl><label>96</label> Marios Koutsias, 'Shareholder Supremacy in a Nexus of Contracts: A Nexus of Problems' (2017) 38 <lb/>Business Law Review 136-146. <lb/></bibl>
+			<bibl><label>97</label> When Say's influential Treatise d'économie was translated into English, the translator observed that the <lb/>French word entrepreneur did not have an exact correspondent in the English language, and he chose <lb/>instead to use the word adventurer. Since then the French word has been incorporated into the <lb/>English language. Jean-Baptiste Say, A Treatise on Political Economy; or the Production, Distribution, <lb/>and Consumption of Wealth (C Biddle (tr), Philadelphia, 1880). <lb/></bibl>
+			<bibl><label>98</label> Sophie Boutillier and Dimitri Uzunidis, 'The Theory of the entrepreneur: From Heroic to Socialised <lb/>Entrepreneurship' (2014) 14 Journal of Innovation Economics and Management 9, 15. <lb/></bibl>
+			<bibl><label>99</label> Ibid. <lb/></bibl>
+			<bibl><label>100</label> Say (n 97) 177. <lb/><lb/></bibl>
+			<bibl><label>101</label> Ibid. <lb/></bibl>
+			<bibl><label>102</label> Boutillier and Uzunidis (n 98) 15. <lb/></bibl>
+			<bibl><label>103</label> Berle and Means (n 58) 2. <lb/></bibl>
+			<bibl><label>104</label> Berle and Means note that, at the time they were writing (1933) 'men still living can recall a time <lb/>when the present situation was hardly dreamed of'. The historical veracity of Berle and Means analy-<lb/>sis has been questioned (Eric Hilt, 'The "Berle and Means Corporation' in an Historical Perspective' <lb/>(2019) 42 Seattle University Law Review 417). Nonetheless, it is clear that the prevalence and scale <lb/>of business companies (as well as the nature of their legal form) were profoundly transformed <lb/>over the course of the Nineteenth Century and early Twentieth Century, in ways that were not fore-<lb/>seen by Say and his contemporaries. <lb/></bibl>
+			<bibl><label>105</label> Berle and Means (n 58) 3. <lb/></bibl>
+			<bibl><label>106</label> As Berle and Means put it 'a large body of security holders has been created who exercise virtually no <lb/>control over the wealth which they or their predecessors in interest have contributed to the enter-<lb/>prise'. Berle and Means (n 58) 5. <lb/><lb/></bibl>
+			<bibl><label>107</label> Ibid, 8. <lb/></bibl>
+			<bibl><label>108</label> Ibid. <lb/></bibl>
+			<bibl><label>110</label> In the 'nexus of contracts' story 'the firm has no center and the old fashioned term and concept has <lb/>no function to play' (Charles O'Kelley, 'Coase, Knight, and the Nexus-of-Contracts Theory of the Firm' <lb/>(2012) 35 Seattle University Law Review 1247, 1249). </bibl>
+			<bibl>O'Kelley lamented that 'in their zeal to reestablish <lb/>individualism and contractarian analysis [the proponents of the Nexus of Contracts theory] also threw <lb/>out the "classic entrepreneur"'. Charles O'Kelley, 'The Entrepreneur and the Theory of the Modern <lb/>Corporation' (2006) 31 Journal of Corporate Law 753. <lb/></bibl>
+			<bibl><label>111</label> Frank Knight, Risk, Uncertainty and Profit (Houghton Mifflin co, 1933). <lb/></bibl>
+			<bibl><label>112</label> Ibid, 199. <lb/></bibl>
+			<bibl><label>113</label> Ibid, 240. <lb/></bibl>
+			<bibl><label>114</label> Ibid, 245. <lb/><lb/></bibl>
+			<bibl><label>115</label> Ibid, 271. <lb/></bibl>
+			<bibl><label>116</label> Ibid, 268. <lb/></bibl>
+			<bibl><label>117</label> Ibid, 271. <lb/></bibl>
+			<bibl><label>120</label> Knight (n 111) 291. <lb/></bibl>
+			<bibl><label>121</label> Ibid, 293. The 'hired manager' makes the decisions -has control, but takes no risk. The shareholders <lb/>take the risk and receive the profit but 'make no decisions, exercise no control'. <lb/></bibl>
+			<bibl><label>122</label> Ibid, 294. <lb/></bibl>
+			<bibl><label>123</label> Ibid. <lb/></bibl>
+			<bibl><label>124</label> Ibid, 295. <lb/></bibl>
+			<bibl><label>125</label> Ibid. <lb/></bibl>
+			<bibl><label>126</label> And very often also on the 'higher officials' of the business enterprise, where these have 'a direct <lb/>stake in the business beyond their fixed salaries'. Knight (n 111) 349. <lb/><lb/></bibl>
+			<bibl><label>127</label> Ibid, 309. Importantly, Knight's theory is predicated on accepting the shareholder as the 'owner' of <lb/>the corporation, a position which is not accepted in this article (see n 23). <lb/></bibl>
+			<bibl><label>129</label> Knight (n 111) 271. <lb/></bibl>
+			<bibl><label>130</label> Dieter Plehwe, 'Schumpeter Revival? How Neoliberals Revised the Image of the Entrepreneur' in D <lb/>Plehwe et al (eds), Nine Lives of Neoliberalism (Verso, 2020). <lb/></bibl>
+			<bibl><label>131</label> Joseph Schumpeter Capitalism, Socialism and Democracy (Allen and Unwin, 1943) 133. <lb/></bibl>
+			<bibl><label>132</label> Plewhe (n 130) 122. <lb/></bibl>
+			<bibl><label>133</label> Ibid. <lb/></bibl>
+			<bibl><label>134</label> Nicolai Foss, 'Austrian Economics and the Theory of the Firm' (2007) Working Paper, Department of <lb/>Industrial Economics and Strategy. Copenhagen Business School. <lb/><lb/></bibl>
+			<bibl><label>135</label> Israel Kirzner, 'Entrepreneurial Discovery and the Competitive Market Process: An Austrian Approach' <lb/>(1997) 35 Journal of Economic Literature 60-85, 62. <lb/></bibl>
+			<bibl><label>136</label> Ibid, 71. <lb/></bibl>
+			<bibl><label>137</label> Ibid, 77. <lb/><lb/></bibl>
+			<bibl><label>138</label> Michael Jensen and William Meckling, 'Between Freedom and Democracy' (1977) 127 The Banker 39. <lb/></bibl>
+			<bibl><label>139</label> Ibid. <lb/></bibl>
+			<bibl><label>140</label> Ibid (emphasis in the original). <lb/></bibl>
+			<bibl><label>141</label> Bank of United States v Deveaux 9 US 61 (1809). </bibl>
+			<bibl>For a commentary on the significance of this case for <lb/>corporate rights see Adam Winkler, 'Bank of United States v Deveaux and the Birth of Constitutional <lb/>Rights for Corporations' (2018) 43 Journal of Supreme Court History 237. <lb/></bibl>
+			<bibl><label>142</label> Trustees of Dartmouth College v. Woodward, 17 U.S. 518 (1819). <lb/></bibl>
+			<bibl><label>143</label> Citizens United v. Federal Election Commission, 558 U.S. 310 (2010). <lb/><lb/></bibl>
+			<bibl><label>144</label> Austin v. Mich. Chamber of Comm., 494 U.S. 652 (1990), at 660. <lb/></bibl>
+			<bibl><label>145</label> Adam Winkler, 'Corporate Personhood and Constitutional Rights for Corporations' (2019) 54 New <lb/>England Law Review 23, 24. </bibl>
+			<bibl>See also Jonathan Macey and Leo Strine, 'Citizens United as Bad Corporate <lb/>Law' (2019) Wisconsin Law Review 451. The authors criticise the majority opinion for its assertion that <lb/>corporations are associations of shareholders (at 495 ff). <lb/></bibl>
+			<bibl><label>146</label> David Rosenberg, 'The Corporate Paradox of Citizens United and Hobby Lobby (2017) 11 N.Y.U. Journal <lb/>of Law and Liberty 308. <lb/></bibl>
+			<bibl><label>147</label> Concurring Opinion of Justice Scalia in Citizens United (n 143). <lb/></bibl>
+			<bibl><label>148</label> Winkler (145) 41. <lb/></bibl>
+			<bibl><label>149</label> 303 Creative LLC v. Elenis, 600 U.S. 570 (2023) <lb/><lb/></bibl>
+			<bibl><label>150</label> Eduardo Gill-Pedro, 'Protecting the Free Speech of Companies? The US Supreme Court decision in 303 <lb/>Creative LLC v Elenis' Oxford Human Rights Hub Blog (2 August 2023) available at: https://ohrh.law.ox. <lb/>ac.uk/protecting-the-free-speech-of-companies-the-us-supreme-court-decision-in-303-creative-llc-v-<lb/>elenis/. <lb/></bibl>
+			<bibl><label>151</label> Salomon v. Salomon &amp; Co Ltd [1897] AC 22, per Lord MacNaghten. <lb/></bibl>
+			<bibl><label>152</label> Cedric Kushner Promotions, Ltd. v. King, 533 U.S. 158 (2001). <lb/></bibl>
+			<bibl><label>153</label> Macey and Strine (n 145) 485 ff. <lb/></bibl>
+			<bibl><label>154</label> Kirzner (n 135) 81. <lb/></bibl>
+			<bibl><label>155</label> Herbert Giersch, 'The Age of Schumpeter' (1984) 74 The American Economic Review 103, 105. <lb/><lb/></bibl>
+			<bibl><label>156</label> C-206/14 Cruciano Siragusa v Regione Sicilia EU:C:2014:126, 32. <lb/></bibl>
+			<bibl><label>157</label> Gareth Davies, 'Democracy and Legitimacy in the Shadow of Purposive Competence' (2015) 21 Euro-<lb/>pean Law Journal 2. <lb/></bibl>
+			<bibl><label>158</label> Article 5(2) Treaty on European Union. <lb/></bibl>
+			<bibl><label>159</label> 11/70 Internationale Handelsgesellschaft mbH EU:C:1970:114, para 4, </bibl>
+			<bibl>Opinion 2/13 of the Court (Full <lb/>Court) of 18 December 2014 on the agreement on accession to the ECHR EU:C:2014:2454, para 170. <lb/></bibl>
+			<bibl><label>160</label> Article 3(3), Treaty on European Union. <lb/></bibl>
+			<bibl><label>161</label> Stephen Weatherill, The Internal Market as a Legal Concept (Oxford University Press, 2017), 3. <lb/></bibl>
+			<bibl><label>162</label> For an in-depth exploration of how fundamental rights became part of the EU legal order see <lb/>Eduardo Gill-Pedro, EU Law, Fundamental Rights and National Democracy (Routledge, 2019). <lb/></bibl>
+			<bibl><label>163</label> Turkuler Isiksel, Europe's Functional Constitution (Oxford University Press, 2016). <lb/><lb/></bibl>
+			<bibl><label>164</label> Daniel Augenstein, 'Engaging the Fundamentals: On the Autonomous Substance of EU Fundamental <lb/>Rights Law' (2013) 14 German Law Journal 1917, 1937. <lb/></bibl>
+			<bibl><label>165</label> Article 26 of the Treaty on the Functioning of the European Union stipulates that 'the internal market <lb/>shall comprise "an area … in which the free movement of goods, persons, services, and capital is <lb/>ensured"'. <lb/></bibl>
+			<bibl><label>166</label> Starting with the seminal case 26/62 van Gend &amp; Loos v Netherlands Inland Revenue Administration EU: <lb/>C:1963:1. <lb/></bibl>
+			<bibl><label>167</label> Most notably and controversially in the Laval and Viking line of cases (C-341/05 Laval un Partneri Ltd v <lb/>Svenska Byggnadsarbetareförbundet EU:C:2007:291, </bibl>
+			<bibl>C-438/05; International Transport Workers' Federa-<lb/>tion v Viking Line ABP EU:C:2007:772). <lb/></bibl>
+			<bibl><label>168</label> C-426/11 Alemo-Herron and others v Parkwood Leisure Ltd EU:C:2013:521. <lb/></bibl>
+			<bibl><label>169</label> Marija Bartl and Candida Leone, 'Minimum Harmonisation after Alemo-Herron: The Janus Face of EU <lb/>Fundamental Rights Review' (2015) 11 European Constitutional Law Review 140. <lb/></bibl>
+			<bibl><label>170</label> Xavier Groussot et al, 'Weak Right, Strong Court -The Freedom to Conduct Business and the EU <lb/>Charter of Fundamental Rights' (April 23, 2014). Lund University Legal Research Paper Series No <lb/>01/2014, Available at SSRN: https://ssrn.com/abstract=2428181 (accessed 12 July 2024). <lb/></bibl>
+			<bibl><label>171</label> Eduardo Gill-Pedro, 'Whose Freedom is it Anyway? The Fundamental Rights of Companies in EU Law' <lb/>(2022) 18 European Constitutional Law Review 183. </bibl>
+			<bibl>See also Hilary Hogan, 'The Origins and Develop-<lb/>ment of Article 16 of the Charter of Fundamental Rights' (2023) 2 European Law Open 753. <lb/></bibl>
+			<bibl><label>172</label> Opinion of AG Wahl in C-201/15 AGET Iraklis. EU:C:2016:429 para. 1. <lb/><lb/></bibl>
+			<bibl><label>173</label> C-157/15 Achbita EU:C:2017:203. <lb/></bibl>
+			<bibl><label>174</label> C-201/15 AGET Iraklis EU:C:2016:972. <lb/></bibl>
+			<bibl><label>175</label> Koen Lenaerts and José Gutiérrez-Fons, 'The EU Internal Market and the EU Charter: Exploring the <lb/>"Derogation Situation"' in Amtenbrink et al (eds), The Internal Market and the Future of European Inte-<lb/>gration (Cambridge University Press, 2019). <lb/></bibl>
+			<bibl><label>176</label> Fundamental Rights Agency, 'Freedom to conduct a business: exploring the dimensions of a funda-<lb/>mental right' (EU Commission, 2015) https://fra.europa.eu/sites/default/files/fra_uploads/fra-2015-<lb/>freedom-conduct-business_en.pdf (accessed 12 July 2024). <lb/></bibl>
+			<bibl><label>177</label> Dan-Cohen (n 4) 53. <lb/></bibl>
+			<bibl><label>178</label> Nils Wahl, 'The Freedom to Conduct a Business: a Right of Fundamental Importance to the Future of <lb/>the European Union' in F Amtenbrink et al (eds), The Internal Market and the Future of European Inte-<lb/>gration (Cambridge University Press, 2019). <lb/></bibl>
+			<bibl><label>179</label> Ibid. <lb/></bibl>
+			<bibl><label>180</label> Fundamental Rights Agency (n 176). <lb/><lb/></bibl>
+			<bibl><label>181</label> Andrea Usai, 'The Freedom to Conduct a Business in the EU, Its Limitations and Its Role in the Euro-<lb/>pean Legal Order: A New Engine for Deeper and Stronger Economic, Social, and Political Integration' <lb/>(2013) 14 German Law Journal 1867, 1882. <lb/></bibl>
+			<bibl><label>182</label> Chen and Hansen (n 65) 4. <lb/><lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>

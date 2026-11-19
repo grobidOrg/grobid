@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1080_13660691.2024.2432711">
+			<titleStmt>
+				<title level="a">Bradwardine’s Antiquity: History, Authority, and Pseudepigraphy in the Sermo epinicius</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1080/13660691.2024.2432711</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_47</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>1</label> See Siegfried Wenzel, 'The Classics in Late-Medieval Preaching', in Siegfried Wenzel, Eludications: Medieval Poetry and its Reli-<lb/>gious Background (Louvain: Peeters, 2010), pp. 121-37; </bibl>
+			<bibl>and Siegfried Wenzel, 'Ovid from the Pulpit', in Ovid in the Middle Ages, <lb/>ed. by James G. Clark, Frank T. Coulson, and Kathryn L. McKinley (Cambridge: Cambridge University Press, 2011), pp. 160-76. <lb/></bibl>
+			<bibl><label>2</label> On Sheppey and Brinton see Siegfrid Wenzel, Latin Sermon Collections from Later Medieval England: Orthodox Preaching in the <lb/>Age of Wyclif (Cambridge: Cambridge University Press, 2005), pp. 26-30 and 45-49; </bibl>
+			<bibl>on the discursive context see Bernhard <lb/>Hollick, 'Ovidianische Selbstbehauptung: Mythographie und Krise im spätmittelalterlichen England', Frühmittelalterliche Studien, <lb/>53 (2019), pp;. 345-68. <lb/></bibl>
+			<bibl><label>3</label> Trevet's ground-breaking exposition of De civitate Dei inspired similar works by English scholars such as Thomas Waleys, John <lb/>Ridevall, and the above mentioned John Baconthorpe. See Beryl Smalley, 'John Ridewall's Commentary on De civitate Dei', <lb/>Medium Aevum, 25 (1956), 140-53. <lb/></bibl>
+			<bibl><label>4</label> Since Beryl Smalley published English Friars and Antiquity in the Early Fourteenth Century (Oxford: Blackwell, 1960), classicism in <lb/>late medieval England is often connected with the mendicant orders. </bibl>
+			<bibl>However, neither were all classicists friars, nor did this <lb/>literary movement come to an end after the death of the last of the friars discussed in her study, John Lathbury in 1362. Secular <lb/>clerics such as Bradwardine or Benedictine writers such as the above mentioned Sheppey and Brinton, as well as Thomas Wal-<lb/>singham and John Wheathampstead contributed to the classical tradition; Wheathampstead also showed an early interest in <lb/>Italian humanism. See James G. Clark, A Monastic Renaissance at St Albans: Thomas Walsingham and his Circle c. 1350-1440 <lb/>(Oxford: Clarendon Press, 2004), pp. 163-238; </bibl>
+			<bibl>and James G. Clark, 'Humanism and Reform in Pre-Reformation English Monas-<lb/>teries', Transactions of the Royal Historical Society, 19 (2009), 57-93. What the classicists have in common is their educational <lb/>background. They all belonged to the university-trained clerical elites, usually in some way connected with Oxford. <lb/></bibl>
+			<bibl><label>5</label> On Bradwardine's life see Gordon Leff, Bradwardine and the Pelagians (Cambridge: Cambridge University Press, 1957), pp. 1-20; <lb/></bibl>
+			<bibl>Norman F. Cantor, In the Wake of the Plague: The Black Death and the World it Made (New York: Simon &amp; Schuster, 2001), <lb/>pp. 103-22. <lb/><lb/></bibl>
+			<bibl><label>6</label> Bradwardine's Sermo epinicius was published twice in modern studies: first in Heiko A. Oberman and James A. Weisheipl, 'The <lb/>Sermo epinicius Ascribed to Thomas Bradwardine (1346)', Archives d'histoire doctrinale et littéraire du moyen âge, 25 (1958), 295-<lb/>329 (edition on pp. 307-29); </bibl>
+			<bibl>then in Hilary S. Offler, 'Thomas Bradwardine's "Victory Sermon" in 1346', in Church and Crown in <lb/>the Fourteenth Century: Studies in European History and Political Thought, ed. by Anthony I. Doyle, Variorum collected studies <lb/>series, 692 (Aldershot: Ashgate, 2000), XIII (edition on pp. 16-37). All following citations from Bradwardine's Sermo epinicius <lb/>are taken from the edition by Offler. <lb/></bibl>
+			<bibl><label>7</label> See Offler, 'Thomas Bradwardine's "Victory Sermon" in 1346', p. 4. <lb/></bibl>
+			<bibl><label>8</label> At least this is what we can gather from a short introductory remark preceding the Sermo epicinius, ed. by Offler, p. 16, accord-<lb/>ing to which the sermon was 'ad preceptum patris domini Anibaldi sancte Romane ecclesie cardinalis episcopi Tusculani et <lb/>apostolice sedis legati translatus de Anglico in Latinum, set in Latino parumper ex causa diffusius prosecutus quam in Anglico <lb/>dicebatur'. </bibl>
+			<bibl>On the Sermo epinicius as a translation see Catherine Royer-Hemet, 'Un périple linguistique en pleine guerre de cent <lb/>ans: Le Sermo Epinicius de Thomas Bradwardine', in In principio fuit interpres, ed. by Alessandra Petrina, The Medieval Translator, <lb/>15 (Turnhout: Brepols, 2013), pp. 263-71. <lb/></bibl>
+			<bibl><label>9</label> The missing part is only short though, since Bradwardine is almost finished with his train of thought. See Offler, 'Thomas Brad-<lb/>wardine's "Victory Sermon" in 1346', p. 15. <lb/></bibl>
+			<bibl><label>10</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 2, p. 16 lists the outcomes of the campaigns of 1346. <lb/></bibl>
+			<bibl><label>11</label> On the theological background of the Sermo epinicius, in addition to the introductory remarks in both editions, see Edith <lb/>W. Dolnikowski, 'Thomas Bradwardine's Sermo Epinicius: Some Reflections on its Political, Theological and Pastoral Signifi-<lb/>cance', in Medieval Sermons and Society: Cloister, City, University, ed. by Jacqueline Hamesse et al. (Louvain-la-Neuve: Fédération <lb/>internationale des instituts d'études médiévales, 1998), pp. 357-70. <lb/></bibl>
+			<bibl><label>12</label> Thomas Bradwardine, De causa Dei contra Pelagium et de virtute causarum, ed. by Henry Savile (London: Bill, 1618; reprint: <lb/>Frankfurt am Main: Minerva, 1964), p. 131. <lb/><lb/></bibl>
+			<bibl><label>13</label> Bradwardine, De causa Dei, ed. by Savile, p. b v : 'Primo namque horum [Pelagianorum] haeresiarcha Lucifero, nolente Deo sub-<lb/>esse sed coesse, per Michaelem deiecto, surrexit Caim existimans peccatorem nequaquam iustificari gratis a Deo per gratiam <lb/>gratis datam, sed per meritum antecedens'. <lb/></bibl>
+			<bibl><label>14</label> Bradwardine, De causa Dei, ed. by Savile, p. 308, where he confesses his own Pelagian past. <lb/></bibl>
+			<bibl><label>15</label> See, for example, Bradwardine, De causa Dei, ed. by Savile, p. 135: 'omnes quoque gentes, Hebraei, Graeci, Latini et barbari, <lb/>omnes prophetae, omnes theologi et poetae et omnes philosophi ante Aristotelem') and p. 136 ('omnes patres tui, omnes <lb/>philosophi, prophetae, theologi et poetae'. <lb/></bibl>
+			<bibl><label>16</label> Bradwardine, De causa Dei, ed. by Savile, pp. 108 ('Plato, Ovidius, et Platonici caeteri') and 112 ('Ovidius Platonicus'). </bibl>
+			<bibl>Similar <lb/>remarks appear in other works by contemporary English scholastics. See Robert Holcot, 'Utrum Theologia sit scientia: A Quo-<lb/>dlibet Question of Robert Holcot, OP', ed. by Joseph T. Muckle, in Mediaeval Studies, 20 (1958), 127-53 (p. 146), who mentions a <lb/>'responsio ad Platonem, Trismegistum, Apuleium, Avicennam et Ovidium et omnes alios'. <lb/></bibl>
+			<bibl><label>17</label> Bradwardine, De causa Dei, ed. by Savile, pp. 3-145. <lb/></bibl>
+			<bibl><label>18</label> An instructive example can be found in Bradwardine, De causa Dei, ed. by Savile, p. 23, where he scolds the 'Pelagian[i] seu <lb/>Cainit[ae] fingentes Deum nulli beneficium gratis dare, sed tantum pro suo merito praedecente'. While he conceals the specific <lb/>addressees of this criticism, he supports his objections with several classical authorities: Hesiod, Homer, Chrysippus, Seneca, <lb/>and Aristotle, as well as the 'veteres Graecorum poetae'. He is not always as oblique: on p. 119, he attributes the (in his eyes) <lb/>false assumption that the world is eternal explicitly to Aristotle (who appears on both sides of the theological divide explored <lb/>in De causa Dei contra Pelagium, even though much more often as a witness for Bradwardine's own views). <lb/></bibl>
+			<bibl><label>19</label> See Leff, Bradwardine and the Pelagians, p. 115. </bibl>
+			<bibl>This is a contrast to the tendency of his time to refer to others (including <lb/>opponents) by name; see William J. Courtenay, Changing Approaches to Fourteenth-Century Thought (Toronto: Pontifical Insti-<lb/>tute of Mediaeval Studies, 2007), pp. 24-27. <lb/></bibl>
+			<bibl><label>20</label> Dolnikowski, 'Thomas Bradwardine's Sermo Epinicius', p. 360. <lb/></bibl>
+			<bibl><label>21</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 3, p. 17. <lb/></bibl>
+			<bibl><label>22</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 5, p. 17-19: 'Quicquid Deus vult fore seu fieri, illud fiet, quemcunque Deus vult <lb/>vincere, ille vincet, et quemcunque Deus vult regnare, ille regnabit'. <lb/><lb/></bibl>
+			<bibl><label>23</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 5, p. 18. <lb/></bibl>
+			<bibl><label>24</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 26, p. 27: 'Set hic fortassis aliquis presumens de viribus propriis cogitabit: "Quid <lb/>igitur facit humana potencia et hominis fortitudo?" Cui breviter respondendum: Certe hoc facit, quod Deus per illum facere <lb/>disponebat. Deus enim est quasi vir pugnator, homo autem sicud glaudius aut baculus seu quodlibet instrumentum huiusmodi <lb/>in manu ipsius'. </bibl>
+			<bibl>Bradwardine's insistence on God's causality seems sometimes very deterministic. In De causa Dei contra Pela-<lb/>gium, he tries to reconcile divine omnipotence with human freedom. Whether his solution leaves any room for the latter has <lb/>been subject to debate, newer studies tend to agree that it does (see Theo Kobusch, Die Philosophie des Hoch-und Spätmit-<lb/>telalters (Munich: Beck, 2011), pp. 444-48), </bibl>
+			<bibl>while earlier scholars have drawn a more deterministic picture of Bradwardine's <lb/>thought (for example Leff, Bradwardine and the Pelagians, p. 87, even though he does not forget to mention Bradwardine's <lb/>'assertion of human free will and freedom as existing through God's determinism'). <lb/></bibl>
+			<bibl><label>25</label> See Bradwardine, Sermo epicinius, ed. by Offler  § 19, p. 24. <lb/></bibl>
+			<bibl><label>26</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 4, p. 17. <lb/></bibl>
+			<bibl><label>27</label> In Bradwardine, Sermo epicinius, ed. by Offler  § 4, p. 17, he even mentions a Jewish sect which worshipped the moon as Diana. <lb/></bibl>
+			<bibl><label>28</label> See Bradwardine, Sermo epicinius, ed. by Offler,  § 5, p. 18: 'iura canonica atque civilia'. <lb/><lb/></bibl>
+			<bibl><label>29</label> No hermetic treatise called De mundo et caelo survives, but the passage about the Hermes triplex quoted in De causa Dei, ed. by <lb/>Savile, p. 75, </bibl>
+			<bibl>corresponds to the Liber de sex rerum principiis, ed. by Paolo Lucentini, Corpus Christianorum Continuatio Med-<lb/>iaevalis, 142 (Turnhout: Brepols, 2006), Prol., p. 147. <lb/></bibl>
+			<bibl><label>30</label> See Bradwardine, Sermo epicinius, ed. by Offler,  § 12, p. 20 ('sicud tam philosophice quam theologice littere contestantur'); and <lb/> § 26, p. 27 ('sicud philosophice et theologice littere contestantur'), as well as with a certain restriction in  § 12, p. 21 ('clariores <lb/>philosophi atque theologici concorditer attestantur'). <lb/></bibl>
+			<bibl><label>31</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 36, p. 37. <lb/></bibl>
+			<bibl><label>32</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 11, p. 20 ('secundum Philosophum, ymmo secundum philosophos'). <lb/></bibl>
+			<bibl><label>33</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 7, pp. 18-19. <lb/></bibl>
+			<bibl><label>34</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 34, p. 34; </bibl>
+			<bibl>Bradwardine referrers to Aristotle, Nicomachean Ethics III.6 1115a26 </bibl>
+			<bibl>and <lb/>quotes Luke 12. 4-5. <lb/></bibl>
+			<bibl><label>35</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 28, p. 28. <lb/><lb/></bibl>
+			<bibl><label>36</label> Bradwardine, De causa Dei, ed. by Savile, p. 104, </bibl>
+			<bibl>where he is alluding to Asclepius, ed. by Matteo Stefani, Corpus Christianorum <lb/>Continuatio Mediaevalis, 143 (Turnhout: Brepols, 2019), 12,6, p. 187: 'Ego enim tibi quasi praedivinans dixero nullum post nos <lb/>habiturum dilectum simplicem, qui est philosophiae, quae sola est in cognoscenda divinitate frequens obtutus et sancta <lb/>religio'. <lb/></bibl>
+			<bibl><label>38</label> In the Late Middle Ages, it is not uncommon to refer to Ovid (and others) as 'poeta'. This happened not always as the result of a <lb/>deliberate decision; some verses and mythic stories became part of common knowledge and were incorporated into homiletic <lb/>handbooks and collections of exempla. See Wenzel, 'Ovid from the Pulpit', p. 168. <lb/></bibl>
+			<bibl><label>39</label> See Bradwardine, Sermo epicinius, ed. by Offler,  § 18, p. 23: 'Quare et videtur quod omen sit aliqua gracia divinitus gratis data et <lb/>ad Deum actorem originaliter referatur'. <lb/></bibl>
+			<bibl><label>40</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 18, p. 23 / </bibl>
+			<bibl>Ovid, Ex ponto 4,3,35 and 4,3,49. <lb/></bibl>
+			<bibl><label>41</label> See Bradwardine, Sermo epicinius, ed. by Offler,  § 36, p. 36: 'Regis ad exemplar totus componitur orbis, / Mutatur varium cum <lb/>principe vulgus'; </bibl>
+			<bibl>as Offler points out in her footnotes on the sermon (p. 40), the couplet is based on Claudian, De IV consulatu <lb/>Honorii Augusti, 299-302. <lb/></bibl>
+			<bibl><label>42</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 27, p. 28. <lb/><lb/></bibl>
+			<bibl><label>43</label> Richard de Bury, Philobiblon, ed. by Ernest C. Thomas (New York: Lockwood &amp; Coombie, 1888), ch. 13, p. 104. <lb/></bibl>
+			<bibl><label>44</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 9, p. 19. <lb/></bibl>
+			<bibl><label>45</label> See H. Leith Spencer, English Preaching in the Late Middle Ages (Oxford: Clarendon Press, 1993), p. 76; </bibl>
+			<bibl>and Kimberly A. Rivers, <lb/>Preaching the Memory of Virtue and Vice: Memory, Images, and Preaching in the Late Middle Ages, Sermo, 4 (Turnhout: Brepols, <lb/>2010), pp. 209-50. <lb/></bibl>
+			<bibl><label>46</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 9, pp. 19-20. <lb/></bibl>
+			<bibl><label>47</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 13, p. 21. <lb/></bibl>
+			<bibl><label>48</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 13, p. 21. <lb/><lb/></bibl>
+			<bibl><label>49</label> Bradwardine, Sermo epicinius, ed. by Offler,  § § 32-36, pp. 32-37. <lb/></bibl>
+			<bibl><label>50</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 32, p. 32. <lb/></bibl>
+			<bibl><label>51</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 14, pp. 21-22. The demonic nature of pagan idols is stressed again in  § 32, p. 32: <lb/>'Quid enim est iste deus huius amoris nisi, sicud ceteri dii gencium, demonium: demon luxurie, incentor luxurie et nutritor?' <lb/></bibl>
+			<bibl><label>52</label> Bradwardine understands that the ancient 'daímones' are not identical with Christian demons; but, as he explains in Bradwar-<lb/>dine, Sermo epicinius, ed. by Offler,  § 14, p. 22, even if we consider them like Plato as 'dii secundi', they are subject to God, who <lb/>therefore alone deserves gratitude for victory. <lb/></bibl>
+			<bibl><label>53</label> E.g. in Augustine, De civitate Dei 9,23, ed. by Bernhard Dombart and Alphons Kalb, Corpus Christianorum Series Latina, 47 <lb/>(Turnhout: Brepols, 1955), p. 269: '"Super omnes" ergo "deos" dixit, sed "gentium", id est quos gentes pro diis habent, <lb/>quae sunt "daemonia"'. <lb/></bibl>
+			<bibl><label>54</label> John Ridevall, Fulgentius metaforalis, ed. by Hans Liebeschütz (Leipzig: Teubner, 1926), pp. 65-71, </bibl>
+			<bibl>where he elaborates on <lb/>Fulgentius, Mitologiae, in: Fabii Planciadis Fulgentii V.C. Opera, ed. by Rudolf Helm (Leipzig: Teubner, 1898), pp. 3-80 (1,1, <lb/>pp. 15-17). Towards the end of the century, this historical turn could get even more radical: Thomas Walsingham's Archana <lb/>deorum, written around 1400, treats Ovid's Metamorphoses as a pagan text (the parallels to Boccaccio are evident, even though <lb/>there are no signs that he knew the Genealogia deorum). <lb/><lb/></bibl>
+			<bibl><label>55</label> See Bradwardine, De causa Dei, ed. by Savile, p. 102: 'Nec debet turbare quod istud fabula perhibetur. Non est enim haec fabula <lb/>quae tam narratione quam significatione sit ficta et falsa, sed quae sub narratione metaphorica, tropica, figurata, rhetoricae <lb/>gratia, vult aliquod verum factum mystice nuntiare. Haec enim fabulae species videtur congruere rhetoricis et poetis. Multi <lb/>namque viri probati poeticas fabulas ad intelligentiam solidam exponebant'. <lb/></bibl>
+			<bibl><label>56</label> Thomas Aquinas, Summa theologiae, Editio Leonina, 4-12, 9 vols. (Rome: Typographia Polyglotta, 1888-1906), I (1888), 30 (I <lb/>2,2, ad 1): 'Ad primum ergo dicendum, quod Deum esse et alia huiusmodi, quae per rationem naturalem nota possunt esse de <lb/>Deo […] non sunt articuli fidei, sed praeambula ad articulos. Sic enim fides praesupponit cognitionem naturalem, sicut gratia <lb/>naturam et ut perfectio perfectibile'. <lb/></bibl>
+			<bibl><label>57</label> See Volker Leppin, Geglaubte Wahrheit: Das Theologieverständnis Wilhelms von Ockham (Göttingen: Vandenhoeck &amp; Ruprecht, <lb/>1995), pp. 120-26 and 142-60. <lb/></bibl>
+			<bibl><label>58</label> For a careful evaluation of Ockham's theory of knowledge in comparison to Aquinas and Duns Scotus see Alfred J. Freddoso, <lb/>'Ockham on Faith and Reason', in The Cambridge Companion to Ockham, ed. by Paul V. Spade (Cambridge: Cambridge Univer-<lb/>sity Press, 1999), pp. 326-49; </bibl>
+			<bibl>on his attitude towards the classical heritage see Hollick, 'Ovidianische Selbstbehauptung', <lb/>pp. 353-55. <lb/></bibl>
+			<bibl><label>59</label> It would be too simple to describe Bradwardine as an 'anti-Ockhamist' though. He occasionally agreed with Ockham and his <lb/>criticism was directed against various theologies perceived as Pelagian. Both of them were part of a larger and nuanced <lb/>exchange of ideas. See Leff, Bradwardine and the Pelagians, pp. 127-264, </bibl>
+			<bibl>and Edith W. Dolnikowski, Thomas Bradwardine: <lb/>A View of Time and a Vision of Eternity in Fourteenth Century Thought (Leiden: Brill, 1995), pp. 208-32. <lb/></bibl>
+			<bibl><label>60</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 16, p. 22. <lb/><lb/></bibl>
+			<bibl><label>61</label> See Florian Ebeling, Das Geheimnis des Hermes Trismegistos: Geschichte des Hermetismus (Munich: Beck, 2009), pp. 63-71. <lb/></bibl>
+			<bibl><label>62</label> See Bradwardine, Sermo epicinius, ed. by Offler,  § 16, p. 22. <lb/></bibl>
+			<bibl><label>63</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 16, p. 22. <lb/></bibl>
+			<bibl><label>64</label> Bradwardine, De causa Dei, ed. by Savile, p. 1; </bibl>
+			<bibl>see George Molland, 'Addressing Ancient Authority: Thomas Bradwardine and <lb/>Prisca Sapientia', Annals of Science, 53 (1996), 213-33 (pp. 221-23). <lb/></bibl>
+			<bibl><label>65</label> Bradwardine, De causa Dei, ed. by Savile, p. 75; </bibl>
+			<bibl>Secretum secretorum, ed. by Robert Steele, Secretum secretorum cum glossis et <lb/>notulis: Tractatus brevis et utilis ad declarandum quaedam obscure dicta Fratri Rogeri nunc primum (Oxford: Clarendon Press, <lb/>1920), 2,1, pp. 25-172 (p. 64). <lb/></bibl>
+			<bibl><label>66</label> Bradwardine, De causa Dei, ed. by Savile, p. 76. <lb/><lb/></bibl>
+			<bibl><label>67</label> See Johan C. Thom, 'The Cosmotheology of De mundo', in: Cosmic Order and Divine Power: Pseudo-Aristotle, On the Cosmos, ed. <lb/>by Johan C. Thom (Tübingen: Mohr Siebeck, 2014), pp. 107-20 (p. 107). <lb/></bibl>
+			<bibl><label>68</label> See Jill Kraye, 'Disputes over the Authorship of De mundo between Humanism and Altertumswissenschaft', in Cosmic Order and <lb/>Divine Power, ed. by Thom, pp. 181-97. <lb/></bibl>
+			<bibl><label>69</label> See Kraye, 'Disputes over the Authorship of De mundo', p. 182. <lb/></bibl>
+			<bibl><label>70</label> De mundo (Nicolaus Siculus translator), in: De mundo: Translationes Bartholomaei et Nicholai (Aristoteles Latinus 11,1-2), ed. by <lb/>William L. Lorimer and Lorenzo Minio-Paluello (Bruges: Desclée De Brouwer, 1965), pp. 29-49 (6, 397b, p. 41): 'Est enim revera <lb/>salvator et genitor omnium deus quecunque quomodocunque fiunt in hoc mundo, non equidem sustinens animalis per se <lb/>operantis et laboriosi laborem, sed utens infatigabili virtute, qua et longe visa fore aggreditur'. </bibl>
+			<bibl>On the role of God in De <lb/>mundo: Thom, 'The Cosmotheology of De mundo', pp. 112-19. <lb/></bibl>
+			<bibl><label>71</label> A miracle is mentioned in De mundo, ed. by Lorimer and Minio-Paluello, p. 46 (6, 400b), after an eruption of Mount Etna: 'Ubi et <lb/>fidelium genus honoravit precipue numen. Comprehensis enim a reumate eo quod baiularent super humeros et salvarent <lb/>senes parentes, cum appropinquavisset eos, flumen ignis divisum est divertit que incendii hoc quidem huc, illud autem <lb/>illuc, ac servavit iuvenes illesos una cum parentibus.' </bibl>
+			<bibl>See Thom, 'The Cosmotheology of De mundo', p. 118, who sees a <lb/>'clear move away from the god of philosophy to the god of popular philosophical religion'. <lb/></bibl>
+			<bibl><label>72</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 12, p. 21. <lb/></bibl>
+			<bibl><label>73</label> De mundo, ed. by Lorimer and Minio-Paluello, p. 48 (7, 401a): 'appellandus a qualibet natura et fortuna, velut ens ipse omnium <lb/>causa'. <lb/><lb/></bibl>
+			<bibl><label>74</label> De bona fortuna = Ethica Eudemica, in: Aristoteles Latinus, Ethica Eudemica (fragmentum): Liber de bona fortuna, translatio Moer-<lb/>bekana, recensio Vulgata, ed. by Valérie Cordonier, 2016, Aristoteles Latinus Database [http://www.brepolis.com, 8, 14 (1248a); <lb/>accessed 12 March 2023]: 'Quod autem queritur hoc est, quid motus principium in anima. Palam quemadmodum in toto deus, <lb/>et omne illud: movet enim aliquo modo omnia quod in nobis divinum. Rationis autem principium non ratio, sed aliquid melius. <lb/>Quid igitur utique erit melius et scientia et intellectu nisi deus? Virtus enim intellectus organum. Et propter hoc, quod olim <lb/>dicebatur, bene fortunati vocantur qui si impetum faciant, dirigunt sine ratione existentes, et consiliari non expedit ipsis: <lb/>habent enim principium tale quod melius intellectu et consilio, qui autem rationem, hoc autem non habent, neque divinos <lb/>instinctus, hoc non possunt'. <lb/></bibl>
+			<bibl><label>75</label> Augustinus, Contra academicos, ed. by W.M. Green, Corpus Christianorum Series Latina, 29 (Turnhout: Brepols, 1970), 1,1,1, <lb/>pp. 3-61 (p. 3); </bibl>
+			<bibl>in Retractiones, ed. by Almut Mutzenbecher, Corpus Christianorum Series Latina, 57 (Turnhout: Brepols, <lb/>1984), 1,1,2, p. 7, he is even stricter: he warns against the 'pessima consuetud[o], ubi dici debet: hoc deus voluit, dicere: <lb/>hoc voluit fortuna'. <lb/></bibl>
+			<bibl><label>76</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 16, p. 22, </bibl>
+			<bibl>who is referring here to De mundo, ed. by Lorimer and Minio-Paluello, <lb/>p. 49 (7, 401b): 'Nam tria Fata secundum tempora distincta, filum vero fusi hoc quidem factum, illud vero futurum, aliud vero <lb/>torquetur. Est autem statutum in facto quidem unum Fatorum, Atropos dictum eo quod omnia que sunt facta immutabilia <lb/>sunt; in futuro vero Lachesis (…); in presenti vero Clotho, perficiens et torquens unicuique propria. Perficitur autem et fabula <lb/>non inordinate. Sunt autem hec omnia nichil aliud nisi Deus'. <lb/></bibl>
+			<bibl><label>77</label> Augustinus, Contra Faustum, ed. by Joseph Zycha, Corpus Scriptorum Ecclesiasticorum Latinorum, 25 (Vienna: Verlag der Öster-<lb/>reichischen Akademie der Wissenschaften, 1891), 20, 9, pp. 251-797 (pp. 544-45): 'Habent quidem et illi quaedam fabulosa <lb/>figmenta, sed esse illas fabulas norunt et vel a poetis delectandi causa fictas esse adserunt vel eas ad naturam rerum vel mores <lb/>hominum interpretari conantur, sicut […] tria fata in colo et fuso digitisque filum ex lana torquentibus propter tria tempora, <lb/>praeteritum, quod in fuso iam netum atque involutum est, praesens, quod inter digitos nentis traicitur, futurum in lana, quae <lb/>colo inplicata est, quod adhuc per digitos nentis ad fusum tamquam per praesens ad praeteritum traiciendum est'. <lb/></bibl>
+			<bibl><label>78</label> See Ralph J. Hexter, 'Shades of Ovid: Pseudo-(and para-)Ovidiana in the Middle Ages', in Ovid in the Middle Ages, ed. by Clark, <lb/>Coulson, and McKinley, pp. 284-309 (pp. 304-08); </bibl>
+			<bibl>and Dorothy M. Robathan, 'Introduction to the Pseudo-Ovidian De vetula', <lb/>Transactions and Proceedings of the American Philological Association, 88 (1957), 197-207. <lb/><lb/></bibl>
+			<bibl><label>79</label> See Richard de Bury, Philobiblon, ed. by Thomas, ch. 9, p. 83; </bibl>
+			<bibl>on Holcot see Ralph Hanna, 'Robert Holcot and De vetula: Beyond <lb/>Smalley's Assessment', in Literary Theory and Criticism in the Later Middle Ages: Interpretation, Invention, Imagination, ed. by <lb/>Ardis Butterfield, Ian Johnson, and Andrew Kraebel (Cambridge: Cambridge University Press, 2023), pp. 78-93. <lb/></bibl>
+			<bibl><label>80</label> See Wilken Engelbrecht, 'Carmina Pieridun multo vigilata labore / exponi, nulla certius urbe reor: Orléans and the Reception of <lb/>Ovid in the aetas Ovidiana in School Commentaries', Mittellateinisches Jahrbuch, 41 (2006), 209-26 (p. 211). <lb/></bibl>
+			<bibl><label>81</label> See Hexter, 'Shades of Ovid', p. 308; </bibl>
+			<bibl>and Paul Klopsch, Pseudo-Ovidius de vetula: Untersuchungen und Text (Leiden: Brill, 1967), <lb/>pp. 82-83. <lb/></bibl>
+			<bibl><label>82</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 15, p. 22. <lb/></bibl>
+			<bibl><label>83</label> Bradwardine, Sermo epicinius, ed. by Offler,  § 15, p. 22. </bibl>
+			<bibl>In its original context, the verse has a slightly different meaning, see De <lb/>vetula, ed. by Paul Klopsch, in: Klopsch, Pseudo-Ovidius de vetula, pp. 193-290, 1,489-90 (p. 212): ' … nichil ergo / est fatum <lb/>fatuum; fatui qui fata sequuntur'. <lb/></bibl>
+			<bibl><label>84</label> De vetula, ed. by Klopsch, 3,611-811, pp. 272-78, where 'Ovid' led by astrological considerations almost embraces Christianity. <lb/></bibl>
+			<bibl>Other medieval biographers were less reluctant: according to them, 'sanctus Naso' became bishop of Tomis. See Bernhard <lb/>Bischoff, 'Eine mittelalterliche Ovid-Legende', in Bernhard Bischoff, Mittelalterliche Studien 1 (Stuttgart: Hiersemann, 1966), <lb/>pp. 144-49; </bibl>
+			<bibl>Joseph B. Trapp, 'Ovid's Tomb: The Growth of a Legend from Eusebius to Laurence Sterne, Chateaubriand and <lb/>George Richmond', Journal of the Warburg and Courtauld Institutes, 36 (1973), 35-76 (pp. 42-43). <lb/></bibl>
+			<bibl><label>85</label> Steven J. Williams, The Secret of Secrets: The Scholarly Career of a Pseudo-Aristotelian Text in the Latin Middle Ages (Ann Arbor: <lb/>University of Michigan Press, 2003), pp. 305-11. <lb/></bibl>
+			<bibl><label>86</label> Bradwardine, De causa Dei, ed. by Savile, pp. 75 and 265. <lb/></bibl>
+			<bibl><label>87</label> De causa Dei contra Pelagium was published in 1346, but some passages are probably based on notes from Bradwardine's <lb/>teaching activity in Oxford. See Leff, Bradwardine and the Pelagians, pp. 265-66. <lb/><lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>

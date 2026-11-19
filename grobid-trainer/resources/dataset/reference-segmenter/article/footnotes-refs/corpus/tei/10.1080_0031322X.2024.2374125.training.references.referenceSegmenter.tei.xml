@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1080_0031322X.2024.2374125">
+			<titleStmt>
+				<title level="a">The moneylender as monster: ‘the Jew’ as transformative influence in Bram Stoker’s The Watter’s Mou’</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1080/0031322X.2024.2374125</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_44</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>1</label> See Eric Hobsbawm, The Age of Empire: 1875-1914 (London: Abacus 1994); </bibl>
+			<bibl>and Philip <lb/>D. Curtin, The World and the West: The European Challenge and the Overseas Response in <lb/>the Age of Empire (Cambridge: Cambridge University Press 2002). <lb/></bibl>
+			<bibl><label>2</label> Patrick Brantlinger, Rule of Darkness: British Literature and Imperialism, 1830-1914 <lb/>(Ithaca, NY: Cornell University Press 1988), 8-10. <lb/></bibl>
+			<bibl><label>3</label> See Ailise Bulfin, Gothic Invasions: Imperialism, War and Fin-de-Siècle Popular Fiction <lb/>(Cardiff: University of Wales Press 2018). <lb/></bibl>
+			<bibl><label>4</label> Stephen D. Arata, 'The Occidental tourist: "Dracula" and the anxiety of reverse colo-<lb/>nization', Victorian Studies, vol. 33, no. 4, 1990, 621-45 (622-3). <lb/></bibl>
+			<bibl><label>5</label> The classic book-length accounts of 'Jewishness', antisemitism and fin de siècle <lb/>English literature remain Bryan Cheyette's Constructions of 'the Jew' in English Literature <lb/>and Society: Racial Representations 1875-1945 (Cambridge: Cambridge University Press <lb/>1993); </bibl>
+			<bibl>Carol Margaret Davison's Anti-Semitism and British Gothic Literature (Basing-<lb/>stoke: Palgrave Macmillan 2004); </bibl>
+			<bibl>Nadia Valman's The Jewess in Nineteenth-Century <lb/>British Literary Culture (Cambridge: Cambridge University Press 2007); </bibl>
+			<bibl>and David <lb/>Glover's Literature, Immigration, and Diaspora in Fin-de-Siècle England: A Cultural <lb/>History of the 1905 Aliens Act (Cambridge: Cambridge University Press 2012). </bibl>
+			<bibl>See <lb/><lb/>also the work of Hannah Ewence and Paul E. Nahme on the confluence of 'Jewishness' <lb/>and the supernatural: Hannah Ewence, 'Representing the alien Jew: blurring the <lb/>boundaries of difference: Dracula, the Empire and "the Jew"', in Tony Kushner and <lb/>Hannah Ewence (eds), Whatever Happened to British Jewish Studies? (London and Port-<lb/>land, OR: Vallentine Mitchell 2012), 213-22; </bibl>
+			<bibl>Paul E. Nahme, 'Ghosted: Jewishness and <lb/>the haunted hegemony of modernity', Journal of Religion, vol. 102, no. 2, 2022, 204-36. <lb/></bibl>
+			<bibl>The academic literature on Dracula is vast and ever-expanding, but David Glover and <lb/>William Hughes have widened the scope to consider Stoker's other fiction and its <lb/>societal and cultural contexts. As well as Davison's overview of antisemitism and <lb/>the Gothic, there are a number of books and articles that specifically look at the <lb/>relationship between the vampire, Dracula as text and anti-Jewish racism. See, <lb/>among others, Jules Zanger, 'A sympathetic vibration: Dracula and the Jews', English <lb/>Literature in Transition, 1880-1920, vol. 34, no. 1, 1991, 33-44; </bibl>
+			<bibl>Judith Halberstam, 'Tech-<lb/>nologies of monstrosity: Bram Stoker's Dracula', Victorian Studies, vol. 36, no. 3, 1993, <lb/>333-52; </bibl>
+			<bibl>and Ken Gelder, Reading the Vampire (London and New York: Routledge <lb/>1994), 1-23. </bibl>
+			<bibl>Hannah Ewence (in 'Representing the alien Jew') argues against an auto-<lb/>matic conflation of Dracula's characteristics as presented by Stoker with anti-Jewish <lb/>racism, stressing Stoker's own outsider status in late Victorian Britain (an Otherness <lb/>that can perhaps be overstated) and the complexities of how the Count's foreign iden-<lb/>tity is portrayed in the novel. <lb/></bibl>
+			<bibl><label>6</label> Bram Stoker, The Jewel of Seven Stars (London: William Heinemann 1903). </bibl>
+			<bibl>See also <lb/>William Hughes, Beyond Dracula: Bram Stoker's Fiction and Its Cultural Context (Basing-<lb/>stoke: Macmillan Press 2000), 35-53; </bibl>
+			<bibl>and Carol A. Senf, 'Invasions real and imagined: <lb/>Stoker's Gothic narratives', in Catherine Wynne (ed.), Bram Stoker and the Gothic: For-<lb/>mations to Transformations (London: Palgrave Macmillan 2016), 92-104 (94-6). <lb/></bibl>
+			<bibl><label>7</label> Bram Stoker, The Lair of the White Worm (London: William Rider and Son 1911). </bibl>
+			<bibl>See <lb/>also David Glover, Vampires, Mummies, and Liberals: Bram Stoker and the Politics of <lb/>Popular Fiction (Durham, NC: Duke University Press 1996), 98. <lb/></bibl>
+			<bibl><label>8</label> Bram Stoker, The Snake's Pass (London: Sampson Low, Marston, Searle &amp; Rivington 1891). <lb/></bibl>
+			<bibl>See also William Hughes, '"For Ireland's good": the reconstruction of rural Ireland in <lb/>Bram Stoker's "The Snake's Pass"', Irish Studies Review, vol. 3, no. 12, 1995, 17-21. <lb/><lb/></bibl>
+			<bibl><label>9</label> Barbara Belford, Bram Stoker: A Biography of the Author of Dracula (London: Weidenfeld <lb/>and Nicolson 1996), 233-5. <lb/></bibl>
+			<bibl><label>10</label> Ewence, 'Representing the alien Jew', 222. <lb/></bibl>
+			<bibl><label>11</label> George Du Maurier, Trilby (London: Osgood, McIlvaine &amp; Co. 1894); </bibl>
+			<bibl>H. G. Wells, The <lb/>Invisible Man (London: C. Arthur Pearson 1897); </bibl>
+			<bibl>Oscar Wilde, The Picture of Dorian <lb/>Gray (London: Ward, Lock, &amp; Co. 1891). <lb/></bibl>
+			<bibl><label>12</label> In the biographies of Bram Stoker published since the 1960s, The Watter's Mou' is <lb/>briefly dealt with. Harry Ludlam stresses its overwrought theatricality (Harry <lb/>Ludlam, A Biography of Dracula (London: Quality Book Club 1962), 93-4). </bibl>
+			<bibl>Daniel <lb/>Farson comments mainly on the use of Scots dialect, which he describes as 'ludicrous' <lb/>(Daniel Farson, The Man Who Wrote Dracula: A Biography of Bram Stoker (London: <lb/>Michael Joseph 1975), 94-6). </bibl>
+			<bibl>Barbara Belford notes the suitably Gothic ending to the <lb/>story (Belford, Bram Stoker, 235). </bibl>
+			<bibl>Paul Murray devotes more space to the text, includ-<lb/>ing some recognition of the antisemitism apparent in it (Paul Murray, From the Shadow <lb/>of Dracula: A Life of Bram Stoker (London: Jonathan Cape 2004), 160-1). </bibl>
+			<bibl>David Skal con-<lb/>siders the question of whether Stoker could be considered antisemitic, in the context of <lb/>his employer Henry Irving's portrayal of Shylock, but without referring to The Watter's <lb/><lb/>Mou' (David Skal, Something in the Blood: The Untold Story of Bram Stoker, the Man Who <lb/>Wrote Dracula (New York: Liveright Publishing 2016), 334). <lb/></bibl>
+			<bibl><label>13</label> See Glover's examination of the (occasionally comedic) stock figure of the Jewish <lb/>moneylender in Victorian and Edwardian popular culture in Glover, Literature, Immi-<lb/>gration, and Diaspora in Fin-de-Siècle England, 91-4, 98, 100. <lb/></bibl>
+			<bibl><label>14</label> Ibid., 87, 100; </bibl>
+			<bibl>Chaim Bermant, Point of Arrival: A Study of London's East End (London: <lb/>Eyre Methuen 1975), 141-2. <lb/></bibl>
+			<bibl><label>15</label> See H. L. Malchow, Gothic Images of Race in Nineteenth-Century Britain (Stanford, CA: <lb/>Stanford University Press 1996). <lb/><lb/></bibl>
+			<bibl><label>16</label> Bram Stoker, The Mystery of the Sea (London: William Heinemann 1902); </bibl>
+			<bibl>Bram Stoker, <lb/>'Crooken Sands', Illustrated Sporting and Dramatic News, 1 December 1894. </bibl>
+			<bibl>See also <lb/>Joseph Valente, Dracula's Crypt: Bram Stoker, Irishness, and the Question of Blood <lb/>(Urbana and London: University of Illinois Press 2002). <lb/></bibl>
+			<bibl><label>17</label> See Rosalind Newman, 'Invasions and Inversions: Representations of Otherness in the <lb/>Writings of Bram Stoker', Ph.D. dissertation, Durham University, 2018. <lb/></bibl>
+			<bibl><label>18</label> Bram Stoker, The Watter's Mou' (London: A. Constable 1895), 11. All subsequent refer-<lb/>ences to this edition are noted parenthetically in the text. <lb/><lb/></bibl>
+			<bibl><label>19</label> See Arnold White, The Modern Jew (London: William Heinemann 1899), 199. <lb/></bibl>
+			<bibl><label>20</label> Cheyette, Constructions of 'the Jew' in English Literature and Society, 1-12; </bibl>
+			<bibl>Bryan Cheyette <lb/>and Nadia Valman, 'Introduction', in Cheyette and Valman (eds), The Image of the Jew <lb/>in European Liberal Culture, 1789-1914 (London and Portland, OR: Vallentine Mitchell <lb/>2004), 1-26 (8-9, 22). <lb/></bibl>
+			<bibl><label>21</label> For the medieval conflation of usury and bloodsucking, see Davison, Anti-Semitism <lb/>and British Gothic Literature, 34-54. <lb/></bibl>
+			<bibl><label>22</label> See Sam Johnson, Pogroms, Peasants, Jews: Britain and Eastern Europe's 'Jewish Question', <lb/>1867-1925 (Basingstoke: Palgrave Macmillan 2011), 44-5. <lb/></bibl>
+			<bibl><label>23</label> White, The Modern Jew, 12. <lb/><lb/></bibl>
+			<bibl><label>24</label> Paul Morris, 'Judaism and capitalism', in Richard H. Roberts (ed.), Religion and the <lb/>Transformation of Capitalism: Comparative Approaches (London and New York: Routledge <lb/>2012), 88-120 (88). <lb/></bibl>
+			<bibl><label>25</label> On 'anti-colonial' antisemitism, see Claire Hirshfield, 'The British left and the "Jewish <lb/>conspiracy": a case study of modern antisemitism', Jewish Social Studies, vol. 43, no. 2, <lb/>1981, 95-112 (96-7, 108). <lb/></bibl>
+			<bibl><label>26</label> Hannah Ewence, The Alien Jew in the British Imagination, 1881-1905: Space, Mobility and <lb/>Territoriality (London: Palgrave Macmillan 2019), 34-5. <lb/></bibl>
+			<bibl><label>27</label> E. C. Johnson, On the Track of the Crescent: Erratic Notes from the Piraeus to Pesth <lb/>(London: Hurst and Blackett 1885), 202. <lb/></bibl>
+			<bibl><label>28</label> Irena Grosfeld, Seyhun Orcan Sakalli and Ekaterina Zhuravskaya, 'Middleman min-<lb/>orities and ethnic violence: anti-Jewish pogroms in the Russian Empire', Review of <lb/>Economic Studies, vol. 87, no. 1, 2020, 289-342 (301). <lb/></bibl>
+			<bibl><label>29</label> Johnson, Pogroms, Peasants, Jews, 62, 191-2. <lb/><lb/></bibl>
+			<bibl><label>30</label> W. H. Wilkins, The Alien Invasion (London: Methuen 1892), 11. <lb/></bibl>
+			<bibl><label>31</label> Randolph Hodgson, quoted in White, The Modern Jew, 70-1. <lb/></bibl>
+			<bibl><label>32</label> Wilkins, The Alien Invasion, 52-3. <lb/></bibl>
+			<bibl><label>33</label> See William Brustein, Roots of Hate: Anti-Semitism in Europe before the Holocaust (Cam-<lb/>bridge: Cambridge University Press 2003), 177; </bibl>
+			<bibl>and Anne Kershen, Strangers, Aliens <lb/>and Asians: Huguenots, Jews and Bangladeshis in Spitalfields, 1660-2000 (London: Rout-<lb/>ledge 2005), 204-5. <lb/></bibl>
+			<bibl><label>34</label> On the transformative role of the 'alien' trader in 'simple agrarian societies', see Walter <lb/>P. Zenner, 'Middleman minority theories: a critical review', in Helen Fein (ed.), The <lb/>Persisting Question: Sociological Perspectives and Social Contexts of Modern Antisemitism <lb/>(Berlin and New York: Walter de Gruyter 1987), 255-276 (260). <lb/><lb/></bibl>
+			<bibl><label>35</label> Arata, 'The Occidental tourist', 630, 638. <lb/></bibl>
+			<bibl><label>36</label> Henri Zukier, 'The essential "Other" and the Jew: from antisemitism to genocide', <lb/>Social Research, vol. 63, no. 4, 1996, 1110-54 (1117-18). <lb/></bibl>
+			<bibl><label>37</label> G. S. Reaney, 'The moral aspect', in Arnold White (ed.), The Destitute Alien in Great <lb/>Britain (London: Swan Sonnenschein 1892), 71-99 (95-6). <lb/></bibl>
+			<bibl><label>38</label> David Glover, 'Bram Stoker and the crisis of the liberal subject', New Literary History, <lb/>vol. 23, no. 4, 1992, 983-1002 (986-7); </bibl>
+			<bibl>Cheyette and Valman, 'Introduction', 13-14. <lb/><lb/></bibl>
+			<bibl><label>39</label> Cheyette, Constructions of 'the Jew' in English Literature and Society, 6; </bibl>
+			<bibl>Ewence, The Alien <lb/>Jew in the British Imagination, 15-16, 112, 137-8. <lb/></bibl>
+			<bibl><label>40</label> Daniel Pick, Svengali's Web: The Alien Enchanter in Modern Culture (New Haven, CT: <lb/>Yale University Press 2000), 95; </bibl>
+			<bibl>Neil R. Davison, '"The Jew" as homme/femme-<lb/>fatale: Jewish (art)ifice, "Trilby", and Dreyfus', Jewish Social Studies, vol. 8, no. 2/3, <lb/>2002, 73-111 (75). <lb/></bibl>
+			<bibl><label>41</label> Bram Stoker, Dracula [1897] (London: Penguin 1994), 365. </bibl>
+			<bibl>See also Sander Gilman, The <lb/>Jew's Body (London: Routledge 1991), 107. <lb/></bibl>
+			<bibl><label>42</label> Pick, Svengali's Web, 199-200; </bibl>
+			<bibl>see also Franco Moretti, 'The dialectic of fear', New Left <lb/>Review, vol. I/136, November-December 1982, 67-85 (68), in which Dracula is charac-<lb/>terized as embodying 'the desire for possession over that of enjoyment'. <lb/><lb/></bibl>
+			<bibl><label>43</label> Stoker, Dracula, 53. <lb/></bibl>
+			<bibl><label>44</label> Marc Brodie, Politics of the Poor: The East End of London, 1885-1914 (Oxford: Clarendon <lb/>Press 2004), 186-8. <lb/></bibl>
+			<bibl><label>45</label> David Feldman, 'Was modernity good for the Jews?', in Bryan Cheyette and Laura <lb/>Marcus (eds), Modernity, Culture and 'the Jew' (Cambridge: Polity Press 1998), 171-87 <lb/>(172-3). <lb/><lb/></bibl>
+			<bibl><label>46</label> Sara Abosch-Jacobson, 'We are not only English Jews, we are Jewish Englishmen': The <lb/>Making of an Anglo-Jewish Identity, 1840-1880 (Boston: Academic Studies Press 2019), <lb/>121. <lb/></bibl>
+			<bibl><label>47</label> Colin Holmes, Anti-Semitism in British Society, 1876-1939 (London and New York: <lb/>Routledge 2016), 110-11; </bibl>
+			<bibl>Todd Endelman, The Jews of Britain, 1656-2000 (Berkeley: <lb/>University of California Press 2002), 163-4. <lb/></bibl>
+			<bibl><label>48</label> Holmes, Anti-Semitism in British Society, 25-6. <lb/></bibl>
+			<bibl><label>49</label> Sam Johnson, '"A veritable Janus at the gates of Jewry": British Jews and Mr Arnold <lb/>White', Patterns of Prejudice, vol. 47, no. 1, 2013, 41-68 (62-3). <lb/></bibl>
+			<bibl><label>50</label> For Du Maurier's counter to this in Trilby, where he argues that partial Jewish ancestry <lb/>was beneficial for the continued virility of British racial stock, see Pick, Svengali's Web, <lb/>24; </bibl>
+			<bibl>and Davison, '"The Jew" as homme/femme-fatale', 89. </bibl>
+			<bibl>On the development of the <lb/>use of the term 'antisemite' and its racialized meaning in Britain, see also Glover, Lit-<lb/>erature, Immigration, and Diaspora in Fin-de-Siècle England, 81-3. <lb/></bibl>
+			<bibl><label>51</label> See Zukier, 'The essential "Other" and the Jew', 1143; </bibl>
+			<bibl>and Johnson, Pogroms, Peasants, <lb/>Jews, 183. <lb/></bibl>
+			<bibl><label>52</label> Emil Reich 'The Jew-baiting on the continent', The Nineteenth Century and After, vol. 40, <lb/>no. 235, 1896, 422-8, 433-4. <lb/><lb/></bibl>
+			<bibl><label>53</label> Murray, From the Shadow of Dracula, 161. <lb/></bibl>
+			<bibl><label>54</label> See Edward Beasley, 'Introduction: reinventing racism', in Edward Beasley, The Victor-<lb/>ian Reinvention of Race: New Racisms and the Problem of Grouping in the Human Sciences <lb/>(New York and London: Routledge 2010), 1-23. <lb/></bibl>
+			<bibl><label>55</label> Hughes, Beyond Dracula, 58-9, 92-3. <lb/></bibl>
+			<bibl><label>56</label> See Andrew Wawn, The Vikings and the Victorians: Inventing the Old North in Nineteenth-<lb/>Century Britain (Cambridge: D. S. Brewer 2002). <lb/><lb/></bibl>
+			<bibl><label>57</label> White, The Modern Jew, xiv. <lb/></bibl>
+			<bibl><label>58</label> Arata, 'The Occidental tourist', 630. <lb/></bibl>
+			<bibl><label>59</label> Grosfeld, Sakalli and Zhuravskaya, 'Middleman minorities and ethnic violence', 290, <lb/>299. <lb/></bibl>
+			<bibl><label>60</label> Holmes, Anti-Semitism in British Society, 112-13. <lb/></bibl>
+			<bibl><label>61</label> Wilkins, The Alien Invasion, 37. <lb/></bibl>
+			<bibl><label>62</label> Johnson, On the Track of the Crescent, 202-3. <lb/><lb/></bibl>
+			<bibl><label>63</label> Léon Poliakov, The History of Antisemitism: Volume Four, Suicidal Europe, 1870-1933, <lb/>trans. from the French by George Klin (Oxford: Oxford University Press 1985), 41, <lb/>44; </bibl>
+			<bibl>Brustein, Roots of Hatred, 210; </bibl>
+			<bibl>Johnson, Pogroms, Peasants, Jews, 197-9, 200-1. <lb/></bibl>
+			<bibl><label>64</label> Morris, 'Judaism and capitalism', 102. <lb/></bibl>
+			<bibl><label>65</label> White, The Modern Jew, 20-2; </bibl>
+			<bibl>see also Ewence, The Alien Jew in the British Imagination, 8, <lb/>51-3. <lb/></bibl>
+			<bibl><label>66</label> Hughes, Beyond Dracula, 63. <lb/></bibl>
+			<bibl><label>67</label> Johnson, Pogroms, Peasants, Jews, 186-7. <lb/></bibl>
+			<bibl><label>68</label> 'The moneylending inquiry', Reynold's Newspaper, 13 March 1898. <lb/></bibl>
+			<bibl><label>69</label> Halberstam, 'Technologies of monstrosity', 337-8. <lb/></bibl>
+			<bibl><label>70</label> Glover, Vampires, Mummies, and Liberals, 98, 151. <lb/><lb/></bibl>
+			<bibl><label>71</label> Harry Stone, 'Dickens and the Jews', Victorian Studies, vol. 2, no. 3, 1959, 223-53 (234, <lb/>245, 251-2). <lb/></bibl>
+			<bibl><label>72</label> Newman, 'Invasions and Inversions', 60, 71, 234. <lb/></bibl>
+			<bibl><label>73</label> Hughes, '"For Ireland's good"'. <lb/></bibl>
+			<bibl><label>74</label> Murray, From the Shadow of Dracula, 161. <lb/></bibl>
+			<bibl><label>75</label> Stoker, The Snake's Pass, 28. <lb/></bibl>
+			<bibl><label>76</label> See Moretti's comments on Dracula as capitalist and the pursuit of monopoly in <lb/>Moretti, 'The dialectic of fear', 74-5. <lb/><lb/></bibl>
+			<bibl><label>77</label> Hilaire Belloc, The Jews (London: Constable 1922), 8-9. <lb/></bibl>
+			<bibl><label>78</label> See Jacob Katz, 'Anti-Semitism through the ages', in Fein (ed.), The Persisting Question, <lb/>46-57 (47, 52); </bibl>
+			<bibl>and Deborah Epstein Nord, 'Dickens's "Jewish Question": pariah capit-<lb/>alism and the way out', Victorian Literature and Culture, vol. 39, no. 1, 2011, 27-45 (31-4). <lb/><lb/></bibl>
+			<bibl><label>79</label> Zukier, 'The essential "Other" and the Jew', 1134-5; </bibl>
+			<bibl>Brustein, Roots of Hate, 50; </bibl>
+			<bibl>Michele <lb/>Battini, Socialism of Fools: Capitalism and Modern Antisemitism (New York: Columbia <lb/>University Press 2011), 17, 23. <lb/></bibl>
+			<bibl><label>80</label> Shmuel Almog, Nationalism and Antisemitism in Modern Europe (Oxford: Pergamon <lb/>Press 1990), 33-4, 52. <lb/></bibl>
+			<bibl><label>81</label> See Robert Chazan, Medieval Stereotypes and Modern Antisemitism (Berkeley, Los <lb/>Angeles and London: University of California Press 1997), 110-23; </bibl>
+			<bibl>and Robert <lb/>Chazan, Reassessing Jewish Life in Medieval Europe (Cambridge: Cambridge University <lb/>Press 2010), 145. <lb/></bibl>
+			<bibl><label>82</label> Zenner, 'Middleman minority theories', 263, 267; </bibl>
+			<bibl>Walter Laqueur, The Changing Face of <lb/>Antisemitism: From Ancient Times to the Present Day (New York and Oxford: Oxford <lb/><lb/>University Press 2005), 71, 77; </bibl>
+			<bibl>Hannah Arendt, The Origins of Totalitarianism (London: <lb/>Penguin 2017), 13-16, 20-1, 24. <lb/></bibl>
+			<bibl><label>83</label> Zygmunt Bauman, 'Allosemitism: premodern, modern, postmodern', in Cheyette and <lb/>Marcus (eds), Modernity, Culture and 'the Jew', 143-56 (147, 151-3). <lb/></bibl>
+			<bibl><label>84</label> Katz, 'Antisemitism through the ages', in Fein (ed.), The Persisting Question, 49-50, 54. <lb/></bibl>
+			<bibl><label>85</label> Davison, Anti-Semitism and British Gothic Literature, 105, 137-8. <lb/></bibl>
+			<bibl><label>86</label> Almog, Nationalism and Antisemitism in Modern Europe, 66-70; </bibl>
+			<bibl>see Arendt, The Origins <lb/>of Totalitarianism, 36. <lb/></bibl>
+			<bibl><label>87</label> Laqueur, The Changing Face of Antisemitism, 93-5. <lb/></bibl>
+			<bibl><label>88</label> Glover, Literature, Immigration, and Diaspora in Fin-de-Siècle England, 81, 86; </bibl>
+			<bibl>Poliakov, <lb/>The History of Antisemitism, 64. <lb/><lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>

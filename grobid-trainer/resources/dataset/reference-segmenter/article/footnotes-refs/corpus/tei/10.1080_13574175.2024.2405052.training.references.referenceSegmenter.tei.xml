@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1080_13574175.2024.2405052">
+			<titleStmt>
+				<title level="a">Tyrant and Penitent: Nebuchadnezzar and Biblical Exemplarity</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1080/13574175.2024.2405052</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_41</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>1</label> Ronald Jenkins has suggested that the sermons were preached following the Spanish Armada threat in July 1588 on the <lb/>basis of Smith's line: "If God would send warre upon this land, that would make us feare him: but God hath send warre, and <lb/>yet we doe not feare him." See Ronald B. Jenkins, The Life and Writings of Henry Smith: England's Silver-Tongued Preacher <lb/>(Macon, GA: Mercer University Press, 1983), 66-7; </bibl>
+			<bibl>Henry Smith, The Sermons of Master Henrie Smith (London, 1604), STC <lb/>22725, sig. L8 v . </bibl>
+			<bibl>Smith's Nebuchadnezzar sermons were initially printed in 1591 as individual octavo volumes: The Pride of <lb/>King Nabuchadnezzar (London, 1591), STC 22688; </bibl>
+			<bibl>The Fall of King Nabuchadnezzer (London, 1591), STC 22662; </bibl>
+			<bibl>The Resti-<lb/>tution of King Nabuchadnezzer (London, 1591), STC 22690. </bibl>
+			<bibl>The triad of sermons were included in Henry Smith, Foure <lb/>Sermons Preached by M. Henrie Smith (London, 1592), STC 22783.</bibl>
+			<bibl>7 and the collected The Sermons of Maister Henrie <lb/>Smith (London, 1592), STC 22718. </bibl>
+			<bibl>Smith's collected sermons went through 21 editions between 1592 and 1675, see <lb/>Ian Green, Print and Protestantism in Early Modern England (Oxford: Oxford University Press, 2000), 657. </bibl>
+			<bibl>The printing <lb/>history of the Nebuchadnezzar sermons and the collected sermons is notoriously complex. While the collected <lb/>sermons warn of earlier imprints in circulation made from "an unperfect Copie," the Short Title Catalogue (vol. 2, 339) <lb/>notes that the composition of the collection was in flux until c. 1600. Consequently, I cite the 1604 quarto volume <lb/>printed by Felix Kyngston for Thomas Man, Henry Smith, The Sermons of Master Henrie Smith (London, 1604), STC 22725. <lb/></bibl>
+			<bibl><label>2</label> For Smith's period as lecturer at St. Clement Danes, see Gary W. Jenkins, "Smith, Henry (c. 1560-91), Church of England <lb/>Clergyman," ODNB, web (2004), &lt;http://doi.org/10.1093/ref:odnb/25811&gt;, accessed: 09 September 2024. <lb/><lb/></bibl>
+			<bibl><label>3</label> Thomas Fuller, "The Life of Mr. Henry Smith," in The Sermons of Mr. Henry Smith (London, 1657), Wing S4044, sig. *3 v . </bibl>
+			<bibl>See <lb/>too Anthony Wood, Athenae Oxonienses, vol. 1 (London, 1691), Wing W3382, sig. P4 r .When consulting early printed <lb/>material, I have retained original spelling but modernized the long s, i/j, u/v and vv/w. Where they appear, contractions <lb/>have been expanded and raised letters lowered. </bibl>
+			<bibl>On Smith's popularity, see Green, Print and Protestantism, 168-238; <lb/></bibl>
+			<bibl>Lori Anne Ferrell, "Sermons," in The Elizabethan Top Ten: Defining Print Popularity in Early Modern England, eds. Andy <lb/>Kesson and Emma Smith (Farnham: Routledge, 2013), 193-201. <lb/></bibl>
+			<bibl><label>4</label> Biblical references throughout are to the 1560 Geneva Bible: The bible and holy scriptures conteyned in the olde and newe <lb/>testament (1560), STC 2093. Note that the Geneva Bible followed the Vulgate in attributing Dan. 3:31-33 to the end of <lb/>Daniel 3. However, these three verses were shifted to Dan. 4:1-3 as an epistolary introduction to Nebuchadnezzar's fall <lb/>in the Coverdale (1535), Great (1539), Bishops' (1568) and King James (1611) Bibles. I have followed the verse number-<lb/>ing as it appears in the Geneva Version. <lb/></bibl>
+			<bibl><label>5</label> John Calvin, Commentaries of the Divine John Calvine, upon the Prophet Daniell, tr. Anthony Gilby (London, 1570), STC <lb/>4397, sig. Q3 r , Q4 v -R1 r . Unless indicated otherwise, all references to the English version of Calvin's commentaries <lb/>will be to Gilby's translation. <lb/><lb/></bibl>
+			<bibl><label>6</label> On early modern exemplarity, see John D. Lyons, Exemplum: The Rhetoric of Example in Early Modern France and Italy <lb/>(Princeton: Princeton University Press, 1989); </bibl>
+			<bibl>Timothy Hampton, Writing from History: The Rhetoric of Exemplarity in <lb/>Renaissance Literature (Ithaca: Cornell University Press, 1990); </bibl>
+			<bibl>Francois Rigolot, "The Renaissance Crisis of Exemplarity," <lb/>Journal of the History of Ideas 59, no. 4 (1998): 557-63; </bibl>
+			<bibl>Jeff Dolven, Scenes of Instruction in Renaissance Romance <lb/>(Chicago: University of Chicago Press, 2008), 135-72; </bibl>
+			<bibl>Michael Ullyot, The Rhetoric of Exemplarity in Early Modern <lb/>England (Oxford: Oxford University Press, 2022). </bibl>
+			<bibl>On negative exemplarity see Katie Ebner-Landy, "Moral Instruction <lb/>by Bad Example: The First Latin Translations of Theophrastus' Characters," Renaissance Studies 36, no. 5 (2022): 668-85. <lb/></bibl>
+			<bibl><label>7</label> See Dolven, Scenes of Instruction, 147-54. <lb/></bibl>
+			<bibl><label>8</label> For the relationship between the Greek paradeigma and Latin exemplum, see Lyons, Exemplum, 6-12. <lb/></bibl>
+			<bibl><label>9</label> On the distinction between Platonic and Aristotelian models of exemplarity, see Alexander Gelley, "Introduction," in <lb/>Unruly Examples: On the Rhetoric of Exemplarity, ed. Alexander Gelley (California: Stanford University Press, 1995), 1-<lb/>2. </bibl>
+			<bibl>See too Dolven, Scenes of Instruction, 147-51. <lb/></bibl>
+			<bibl><label>10</label> Henry Peacham, The Garden of Eloquence (London, 1577), STC 19497, sig. U2 v . <lb/></bibl>
+			<bibl><label>11</label> Peacham, Garden of Eloquence, sig. U2 v . <lb/></bibl>
+			<bibl><label>12</label> Peacham, Garden of Eloquence, sig. U2 v . <lb/></bibl>
+			<bibl><label>13</label> On the distinction between biblical examples and types, see Mary Morrissey, "Elect Nations and Prophetic Preaching: <lb/>Types and Examples in the Paul's Cross Jeremiad," in The English Sermon Revised: Religion, Literature and History, 1600-<lb/>1750, eds. Lori Ann Ferrell and Peter McCullough (Manchester: Manchester University Press, 2000), 43-58. <lb/></bibl>
+			<bibl><label>14</label> Gelley, "Introduction," 2. <lb/><lb/></bibl>
+			<bibl><label>15</label> Henry Peacham, The Garden of Eloquence (London, 1593), STC 19498, sig. U2 v . <lb/></bibl>
+			<bibl><label>16</label> Peacham, Garden of Eloquence (1593), sig. U2 v . <lb/></bibl>
+			<bibl><label>17</label> Hampton, Writing from History, 11. <lb/></bibl>
+			<bibl><label>18</label> Nicholas de Hannapes, The Ensamples of Vertue and Vice, Gathered Oute of Holye Scripture, tr. Thomas Paynell (London, <lb/>1561), STC 12742, sig. 2O2 v . <lb/></bibl>
+			<bibl><label>19</label> Hannapes, Ensamples of Vertue and Vice, tr. Paynell, sig. 2O2 v . <lb/></bibl>
+			<bibl><label>20</label> On judgement books, see Alexandra Walsham, Providence in Early Modern England (Oxford: Oxford University Press, <lb/>2001), 65-115. <lb/></bibl>
+			<bibl><label>21</label> Stephen Batman (tr.), The Doome Warning All Men to the Judgemente (London, 1581), STC 1582, sig. D1 v . <lb/></bibl>
+			<bibl><label>23</label> John J. Collins, Daniel: with an Introduction to Apocalyptic Literature (Grand Rapids, MI: Eerdmans, 1984), 62. <lb/></bibl>
+			<bibl><label>24</label> For Nebuchadnezzar's madness in patristic texts, see Mattias Henze, The Madness of King Nebuchadnezzar: The Ancient <lb/>Near Eastern Origins and Early History of Interpretation of Daniel 4 (Leiden: Brill, 1999), 143-201. </bibl>
+			<bibl>For his reception in <lb/>medieval English literature, see Penelope B. R. Doob, Nebuchadnezzar's Children: Conventions of Madness in Middle <lb/>English Literature (New Haven: Yale University Press, 1974), 54-94. <lb/></bibl>
+			<bibl><label>25</label> See Henze, Madness of King Nebuchadnezzar, 183-90. <lb/></bibl>
+			<bibl><label>26</label> Tertullian, Treatises on Penance: On Penance and On Purity, tr. William P. Le Saint (London: Longmans, 1959), 36. <lb/></bibl>
+			<bibl><label>27</label> John Gower, Confessio Amantis, ed. Russell A. Peck, vol. 1, 2nd edn. (Kalamazoo: Medieval Institute Publications, 2006), <lb/>274. <lb/></bibl>
+			<bibl><label>28</label> "Theologi vocant opera satisfactoria pro peccatis, jejunium, oratio, et eleemosyna"; Benito Pereira, Commentariorum in <lb/>Danielem Prophetam: Libri Sexdecim (Rome, 1587), sig. P3 r . <lb/><lb/></bibl>
+			<bibl><label>29</label> John Calvin, Institutes of the Christian Religion [1559], ed. John T. McNeill, tr. Ford Lewis Battles, vol 1 (Louisville: West-<lb/>minster John Knox Press, 1960), III.iv.1, 623. <lb/></bibl>
+			<bibl><label>30</label> Calvin, Institutes, ed. McNeill, tr. Battles, vol. 1, III.iii.16, 609. <lb/></bibl>
+			<bibl><label>31</label> Calvin, Institutes, ed. McNeill, tr. Battles, vol. 1, III.iii.16, 609. <lb/></bibl>
+			<bibl><label>32</label> John Calvin, Praelectiones in Librum Prophetiarum Danielis (Geneva, 1561), sig. I5 r -K4 r ; </bibl>
+			<bibl>Commentaries, tr. Gilby (London, <lb/>1570), STC 4397. </bibl>
+			<bibl>On Calvin's discussions of Daniel, see Barbara Pitkin, Calvin, the Bible, and History (Oxford: Oxford Uni-<lb/>versity Press, 2020), 141-64. <lb/></bibl>
+			<bibl><label>33</label> Andrew Willet, Hexapla in Danielem (Cambridge, 1610), STC 25689. <lb/></bibl>
+			<bibl><label>34</label> " ‫מ‬ <lb/>‫ה‬ <lb/>‫ל‬ <lb/>‫ך‬ <lb/>mehallech quidam existimant ambulasse super tectum palatii sui, unde potuit conspicere omnes urbis partes"; <lb/>Calvin, Praelectiones, sig. I5 v . <lb/><lb/></bibl>
+			<bibl><label>35</label> Diodorus's view was echoed by Jerome in his commentary on Hosea. For an early modern account of who was respon-<lb/>sible for building Babylon, see Willet, Hexapla in Danielem, sig. B3 r . </bibl>
+			<bibl>See too Diodorus Siculus, The Library of History, <lb/>volume 1: Books 1-2.34, tr. C. H. Oldfather, LCL 279 (Cambridge, MA.: Harvard University Press, 1933), 2.7-10, 370-87. <lb/></bibl>
+			<bibl><label>36</label> On the unattributed use of contemporary biblical commentaries in the early modern reformed sermon tradition, see <lb/>Peter McCullough, "Introduction," in The Oxford Edition of the Sermons of John Donne, vol. 1: Sermons Preached at <lb/>the Jacobean Courts, 1615-1619, ed. Peter McCullough (Oxford: Oxford University Press, 2015), xvv-xlv (xxxix). <lb/></bibl>
+			<bibl><label>37</label> Jon Balserak has set Calvin's work on the prophets against the French Wars, arguing that the sermons on Daniel reflect a <lb/>"single-minded anti-monarchical focus, which is aggressive and subversive." See Jon Balserak, John Calvin as Sixteenth-<lb/>Century Prophet (Oxford: Oxford University Press, 2013), 157. </bibl>
+			<bibl>See too Robert M. Kingdon, Geneva and the Coming of the <lb/>Wars of Religion in France, 1555-1563 (Geneva: Droz, 1956); </bibl>
+			<bibl>Bruce Gordon, Calvin (New Haven: Yale University Press, <lb/>2009), 304-28; </bibl>
+			<bibl>Diane C. Margolf, "The French Wars of Religion," in John Calvin in Context, ed. R. Ward Holder (Cam-<lb/>bridge: Cambridge University Press, 2019), 50-58.. <lb/><lb/></bibl>
+			<bibl><label>38</label> On the history of exegetical readings of Nebuchadnezzar's transformation, see Peter Joshua Atkins, The Animalising <lb/>Affliction of Nebuchadnezzar in Daniel 4: Reading Across the Human-Animal Boundary (London: T&amp;T Clark, 2022), 5-52. <lb/></bibl>
+			<bibl><label>39</label> Gower, Confessio Amantis, ed. Peck, vol. 1, 2nd edn. (Kalamazoo: Medieval Institute Publications, 2006), 1.9.2968-2998, <lb/>141. <lb/></bibl>
+			<bibl><label>40</label> Dan. 4:22, n. m, Geneva Bible, sig. 3U1 v . <lb/></bibl>
+			<bibl><label>41</label> Peacham, Garden of Eloquence (1593), sig. 2C2 r . <lb/><lb/></bibl>
+			<bibl><label>42</label> The original Latin and the English translation both use the word "metamorphosis." See Calvin, Praelectiones, sig. I6 r . <lb/></bibl>
+			<bibl><label>43</label> John Calvin, Institutio Christianae Religionis (Basel, 1536); </bibl>
+			<bibl>Institutio Christianae Religionis (Geneva, 1559). <lb/></bibl>
+			<bibl><label>44</label> See Debora Shuger, "The Reformation of Penance," Huntington Library Quarterly 71, no. 4 (2008): 557-71; </bibl>
+			<bibl>James <lb/>Simpson, "The Reformation of Scholarship: A Reply to Debora Shuger," Journal of Medieval and Early Modern Studies <lb/>42, no. 2 (2012): 249-68. <lb/></bibl>
+			<bibl><label>45</label> Calvin, Institutes, ed. McNeill, tr. Battles, vol 1., III.iii.16, 610. </bibl>
+			<bibl>I have altered the translation slightly according to the Latin <lb/>"nihil agi nisi ab interiore cordis affectu incipimus." See Calvin, Institutio [1559], sig. O4 v . <lb/><lb/></bibl>
+			<bibl><label>46</label> Dan. 4:24, n., Douai-Rheims Bible: The holie bible faithfully translated into English, out of the authentical Latin, 2 vols. <lb/>(Douai, 1609-10), STC 2207, sig. 5C1 r . </bibl>
+			<bibl>On the confessional controversy associated with this verse, see Willet, Hexapla <lb/>in Danielem, sig. M1 r . <lb/></bibl>
+			<bibl><label>47</label> Calvin, Institutes, ed. McNeill, tr. Battles, vol 1., III.iv.36, 666. <lb/></bibl>
+			<bibl><label>48</label> Alec Ryrie, Being Protestant in Reformation Britain (Oxford: Oxford University Press, 2013), 59. <lb/><lb/></bibl>
+			<bibl><label>49</label> The Nebuchadnezzar sermons, A Sermon of the Benefite of Contentation and The Wedding Garment had all been pub-<lb/>lished without Smith's authorization, likely based on notes from sermon hearers. See Green, Print and Protestantism, <lb/>196-8. <lb/></bibl>
+			<bibl><label>50</label> Ferrell, "Sermons," 193. <lb/></bibl>
+			<bibl><label>51</label> See Green, "Appendix 1: Sample of Best-sellers and Steady Sellers First Published in England c.1536-1700," in Print and <lb/>Protestantism, 519-672 (657). <lb/></bibl>
+			<bibl><label>52</label> On early modern discussions regarding the correct way to hear sermons, and the motion between pulpit and print, <lb/>including Smith's preaching on the topic, see Arnold Hunt, The Art of Hearing: English Preachers and Their Audiences, <lb/>1590-1640 (Cambridge: Cambridge University Press, 2010). <lb/></bibl>
+			<bibl><label>53</label> Henry Smith, The Sermons of Maister Henrie Smith (London, 1593), STC 22719, Huntington Library shelf mark <lb/>30687, viewed through EEBO. </bibl>
+			<bibl>It is possible that this is the Esdras Coxall who was a priest at Mayfield and <lb/>South Malling between 1625 and 1640. See "Esdras Coxall (CCEd Person ID 74938)," The Clergy of the Church <lb/>of England Database 1540-1835, web, &lt;http://theclergydatabase.org.uk/jsp/search/index.jsp&gt;, accessed 09 Sep-<lb/>tember 2024. <lb/></bibl>
+			<bibl><label>54</label> Smith, Sermons (1593), in Huntington Library 30687, sig. 2B2 r . <lb/></bibl>
+			<bibl><label>55</label> Smith, Sermons (1593), in Huntington Library 30687, sig. 2C8 r . <lb/><lb/></bibl>
+			<bibl><label>56</label> Smith, Sermons (1593), in Huntington Library 30687, sig. 2C8 v . <lb/></bibl>
+			<bibl><label>57</label> After the Nebuchadnezzar sermons, the annotator added, at the head of the page, "Begun here the 2d of Julye 1633." <lb/>British Library, Harley MS 6534, f. 86 r . <lb/></bibl>
+			<bibl><label>58</label> On distant reading in early modern studies, see Adam Smyth, "The Scale of Early Modern Studies," English Literary <lb/>Renaissance 50, no. 1 (2020): 145-52. <lb/></bibl>
+			<bibl><label>59</label> Henry Smith, The Sermons of Master Henry Smith (London, 1604), sig. M3 r , STC 22725. <lb/></bibl>
+			<bibl><label>60</label> British Library, Harley MS 6534, f. 47 v . </bibl>
+			<bibl>The online platform Gateway to Early Modern Manuscript Sermons was invaluable <lb/>in identifying this manuscript. See Gateway to Early Modern Manuscript Sermons, web, &lt;http://gemmsorig.usask.ca/ <lb/>view_record.php?table=manuscript&amp;id=1268&gt;, accessed: 09 September 2024. <lb/></bibl>
+			<bibl><label>61</label> Hunt, The Art of Hearing, 178. <lb/></bibl>
+			<bibl><label>62</label> British Library, Harley MS 6534, f. 47 r . <lb/><lb/></bibl>
+			<bibl><label>63</label> British Library, Harley MS 6534, f. 47 v -48 r . <lb/></bibl>
+			<bibl><label>64</label> British Library, Harley MS 6534, f. 48 r . <lb/></bibl>
+			<bibl><label>65</label> Robert Burton, The Anatomy of Melancholy, ed. T. C. Faulkner, N. K. Kiessling, and R. L. Blair, vol. 1 (Oxford: Oxford Uni-<lb/>versity Press, 1989), 133. </bibl>
+			<bibl>On the lost play, titled Nebuchadnezzar, see "Nebuchadnezzar [Lost]," in British Drama 1533-<lb/>1642: A Catalogue, vol. 3, 1590-1597, ed. Martin Wiggins and Catherine Richardson (Oxford: Oxford University Press, <lb/>2013), 353-4. </bibl>
+			<bibl>See too Paul Whitfield White, "'Histories out of the scriptures': Biblical Drama in the Repertory of the <lb/>Admiral's Men, 1594-1603," in Loss and the Literary Culture of Shakespeare's Time, ed. Roslyn L. Knutson, David <lb/>McInnis, and Matthew Steggle (Cham: Palgrave, 2020), 191-213. </bibl>
+			<bibl>For Spenser and Nebuchadnezzar, see Edmund <lb/>Spenser, The Faerie Queene, ed. A. C. Hamilton, Hiroshi Yamashita, Toshiyuki Suzuki, and Shohachi Fukuda, rev. 2nd <lb/>edn. (Abingdon: Routledge, 2013), 1.5.47.1-5, (page 80). </bibl>
+			<bibl>See too Dolven, Scenes of Instruction, 144-7. <lb/></bibl>
+			<bibl><label>66</label> John Donne, "The Liar," in The Complete Poems of John Donne, ed. Robin Robbins, rev. edn. (London: Routledge, 2010), ll. <lb/>3-4 (page 19). <lb/><lb/></bibl>
+			<bibl><label>67</label> William Shakespeare, All's Well That Ends Well, ed. Suzanne Gossett and Helen Wilcox (London: Bloomsbury, 2018), <lb/>4.5.19-20 (page 293). </bibl>
+			<bibl>On this allusion, see Helen Wilcox, "Measuring Up to Nebuchadnezzar: Biblical Presences in Shake-<lb/>speare's Tragicomedies," in Early Modern Drama and the Bible: Contexts and Readings, 1570-1625, ed. Adrian Streete <lb/>(Basingstoke: Palgrave, 2012), 56-7; </bibl>
+			<bibl>Hannibal Hamlin, The Bible in Shakespeare (Oxford: Oxford University Press, <lb/>2013), 118. <lb/></bibl>
+			<bibl><label>68</label> The term "grace" is used in the First Folio, but has been subject to editorial intervention since the eighteenth century. <lb/>See William Shakespeare, Mr. William Shakespeares Comedies, Histories, and Tragedies (London, 1623), STC 22273, sig. <lb/>X5 r ; </bibl>
+			<bibl>The Works of Mr. William Shakespear, ed. Nicholas Rowe, vol. 2 (London, 1709), sig. Z2 r . </bibl>
+			<bibl>By contrast with the <lb/>Arden editorial intervention of "grass," Rory Loughnane maintained "grace" in The New Oxford Shakespeare, see All's <lb/>Well That Ends Well, ed. Rory Loughnane, in The New Oxford Shakespeare: The Complete Works, gen. ed. Gary Taylor, <lb/>John Jowett, Terri Bourus and Gabriel Egan (Oxford: Oxford University Press, 2016), 4.5.15 (page 2333). <lb/></bibl>
+			<bibl><label>69</label> On Nebuchadnezzar and Lear, see Maynard Mack, King Lear in Our Time (Berkley, California: University of California <lb/>Press, 1965), n. 8, 50-1; </bibl>
+			<bibl>Peter Bryant, "Nuncle Lear," English Studies in Africa, vol. 20, no. 1 (1977): 27-41; </bibl>
+			<bibl>William <lb/>C. Hackett, "'And Thou, All-Shaking Thunder … ' A Theological Notation to Lines 1-38 of King Lear, Act III, Scene II," <lb/>Religions, vol. 8, no. 5 (2017); </bibl>
+			<bibl>Jake Wiseman, "The Book of Daniel in Early Modern English Literary Culture," unpublished <lb/>PhD thesis (University College London, 2024), 144-57. </bibl>
+			<bibl>For allusions to Nebuchadnezzar in Shakespeare's other plays, <lb/>see Naseeb Shaheen, Biblical References in Shakespeare's Plays (Newark: University of Delaware Press, 1999), 630; </bibl>
+			<bibl>William <lb/>Shakespeare, Henry VI, Part 2, ed. Ronald Knowles (London: Bloomsbury, 1999), IV.x.1-15 (page 336); </bibl>
+			<bibl>Philip <lb/>D. Collington, "'Graze, as You Find Pasture': Nebuchadnezzar and the Fate of Cymbeline's Prisoners," Shakespeare Quar-<lb/>terly, 53, no. 3 (2002): 291-322; </bibl>
+			<bibl>William Shakespeare, Timon of Athens, ed. Anthony Dawson and Gretchen Minton <lb/>(London: Bloomsbury, 2008), IV.iii, 271-310. </bibl>
+			<bibl>See too Anne Barton's discussion of Timon as wild man in Anne Barton, <lb/>The Shakespearean Forest (Cambridge: Cambridge University Press, 2017), 61-7. <lb/></bibl>
+			<bibl><label>70</label> Hampton, Writing From History, 300. <lb/><lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>
