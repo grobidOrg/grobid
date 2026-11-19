@@ -597,7 +597,9 @@ jobs:
           path: stats
 
       # The baseline is the latest successful run of this workflow on the default branch
-      # with the same profile and flavor, as long as its artifact has not expired.
+      # with the same profile, flavor and consolidation, as long as its artifact has not
+      # expired. The artifact name carries the three, and the overview inside it records
+      # them: it is checked too, so that a baseline of another evaluation is never used.
       # The conclusion is filtered here rather than with --status: GitHub's status filter can
       # leave out runs completed hours earlier, and the baseline then falls back to an older run.
       - name: Download the baseline reports
@@ -605,17 +607,23 @@ jobs:
         env:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
+          EXPECTED_PROFILE="- **Profile:** \`${PROFILE}\`${FLAVOR:+, flavor \`${FLAVOR}\`}"
+          EXPECTED_CONSOLIDATION="- **Consolidation:** \`${CONSOLIDATION}\`"
           gh run list --repo "${GITHUB_REPOSITORY}" --workflow evaluation.yml --branch "${DEFAULT_BRANCH}" \
             --limit 30 --json databaseId,headSha,conclusion \
             --jq '.[] | select(.conclusion == "success") | "\(.databaseId) \(.headSha)"' > runs.txt || true
           while read -r run sha; do
             [ "${run}" = "${GITHUB_RUN_ID}" ] && continue
-            if gh run download "${run}" --repo "${GITHUB_REPOSITORY}" --name "${ARTIFACT}" --dir baseline 2>/dev/null; then
+            gh run download "${run}" --repo "${GITHUB_REPOSITORY}" --name "${ARTIFACT}" --dir baseline 2>/dev/null || continue
+            if grep -qFx -e "${EXPECTED_PROFILE}" baseline/overview.md 2>/dev/null \
+                && grep -qFx -e "${EXPECTED_CONSOLIDATION}" baseline/overview.md; then
               echo "run=${run}" >> "$GITHUB_OUTPUT"
               echo "sha=${sha}" >> "$GITHUB_OUTPUT"
               echo "Baseline: run ${run} (${sha})"
               break
             fi
+            echo "::warning::Run ${run} (${sha}) has the artifact ${ARTIFACT}, but its overview is not of the profile '${PROFILE}', the flavor '${FLAVOR}' and the consolidation '${CONSOLIDATION}': not used as the baseline"
+            rm -rf baseline
           done < runs.txt
           [ -d baseline ] || echo "No baseline found: no successful run of this workflow on ${DEFAULT_BRANCH} with the profile '${PROFILE}', the flavor '${FLAVOR}' and the consolidation '${CONSOLIDATION}'"
 
