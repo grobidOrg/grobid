@@ -22,8 +22,7 @@
 
 	<email>{rouzbeh,gpenn}@cs.toronto.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">We present a new method for directly working with typed unification grammars in which<lb/> type unification is not well-defined. This is often the case, as large-scale HPSG grammars<lb/> now usually have type systems for which many pairs do not have least upper bounds. Our<lb/> method yields a unification algorithm that compiles quickly and yet is nearly as fast during<lb/> parsing as one that requires least upper bounds. The method also provides a natural naming<lb/> convention for unification results in cases where no user-defined type exists.<lb/></div>
+	
 
 	Keywords:
 	<keyword>HPSG, typed feature structures, unification-based grammar.</keyword>

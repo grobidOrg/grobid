@@ -24,8 +24,7 @@
 
 	<email>lopez@loria.fr</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper presents a framework for the<lb/> definition of monotonic repair rules on<lb/> chart items and Lexicalized Tree Gram-<lb/>mars. We exploit island representations<lb/> and a new level of granularity for the<lb/> linearization of a tree called connected<lb/> routes. It allows to take into account the<lb/> topology of the tree in order to trigger<lb/> additional rules. These local rules cover<lb/> ellipsis and common extra-grammatical<lb/> phenomena such as self-repairs. First re-<lb/>sults with a spoken language corpora are<lb/> presented.</div>
+	
 
 		</front>
 	</text>

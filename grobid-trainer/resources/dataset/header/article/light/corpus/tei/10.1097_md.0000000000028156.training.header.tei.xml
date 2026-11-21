@@ -14,18 +14,17 @@
 	<docAuthor>Hung-Ju Ko, Ms a,b , Ying-Chun Lin, MD c,d , Chieh-Chang Chen, MD e , Ming-Jen Chen, MD b,f ,<lb/> Ming-Shiang Wu, MD, PhD e , Chun-Jen Liu, MD, PhD e , Chun-Ta Huang, MD g , Horng-Woei Yang, PhD h ,<lb/> Shou-Chuan Shih, MD a,b,f,i , Lo-Yip Yu, MD a,b,f , Yang-Che Kuo a,b,f , Horng-Yuan Wang, MD b,f ,<lb/> Kuang-Chun Hu, MD, PhD a,b,f,i, *</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">Background: Helicobacter pylori infection and hyperglycemia are associated with an increased risk of colorectal neoplasm, and<lb/> may have a synergistic effect in combination. However, these 2 factors that affect colorectal neoplasm remain controversial. We<lb/> aimed to carry out a meta-analysis to evaluate the study population diabetes prevalence rate and H pylori infection rate with colorectal<lb/> adenoma risk for adults.<lb/> Methods: We conducted systemic research through English databases for medical reports. We also recorded the diabetes<lb/> prevalence and H pylori infection prevalence in each study. We classified these studies into 4 subgroups as their background<lb/> population diabetes prevalence &lt;6% (Group 1); between 6% and 8% (Group 2); between 8% and 10% (Group 3), and more than<lb/> 10% (Group 4). The random-effects model had used to calculate pooled prevalence estimates with 95% confidence interval (CI).<lb/> Results: Twenty-seven studies were finally eligible for meta-analysis. The random-effects model of the meta-analysis was chosen,<lb/> showing pooled odds ratio (OR) equal to 1.51 (95% CI 1.39-1.63). The subgroup meta-analyses showed in Group 1 the H pylori<lb/> infection associated colorectal adenoma risk OR was 1.24 (95% CI 0.86-1.78). As the diabetes rate exceed 6%, the H pylori infection<lb/> became the more significant increased risk of colorectal adenoma (Group 2: OR 2.16 (95% CI 1.61-2.91); Group 3: OR 1.40 (95% CI<lb/> 1.24-1.57); and Group 4: OR 1.52 (95% CI 1.46-1.57)).<lb/> Conclusions: The results of this meta-analysis showed elevated diabetes prevalence combined H pylori infection increasing the<lb/> risks of colorectal adenoma in the adult population.<lb/></div>
+	
 
 	Editor:
 	<editor>Maya Saranathan.<lb/></editor>
 
-	The authors have read the PRISMA 2009 Checklist, and the manuscript was prepared and revised according to the PRISMA 2009 Checklist. The registration number:<lb/> CRD42020199442.<lb/> MMH-110-34. 
-	
-	<note type="funding">The funding was provided by Department of Medical Research, Mackay Memorial Hospital and MOST-109-2314-B-195-007 from the Ministry of<lb/> Science and Technology, for encouraging members to carry out clinical studies. After reviewing the proposals and approving the promising studies, the funding body<lb/> will not intervene in the design of the study and collection, analysis, and interpretation of data and in writing the manuscript in any way.<lb/></note>
+	The authors have read the PRISMA 2009 Checklist, and the manuscript was prepared and revised according to the PRISMA 2009 Checklist. The registration number:<lb/> CRD42020199442.<lb/> <note type="funding">MMH-110-34.
+
+	The funding was provided by Department of Medical Research, Mackay Memorial Hospital and MOST-109-2314-B-195-007 from the Ministry of<lb/> Science and Technology, for encouraging members to carry out clinical studies. After reviewing the proposals and approving the promising studies, the funding body<lb/> will not intervene in the design of the study and collection, analysis, and interpretation of data and in writing the manuscript in any way.<lb/></note>
 
     <note type="conflict">The authors have no conflicts of interest to disclose.<lb/></note>
-	
+
 	<note type="availability">The data supporting this systematic review and meta-analysis are from previously reported studies and datasets, which have been cited. The processed data are<lb/> available from the corresponding author upon reasonable request. The protocol of this meta-analysis has been registered with PROSPERO (no. CRD42020199442).<lb/> All data generated or analyzed during this study are included in this published article [and its supplementary information files]. The datasets generated during and/or<lb/> analyzed during the current study are available from the corresponding author on reasonable request. Data sharing not applicable to this article as no datasets were<lb/> generated or analyzed during the current study.<lb/></note>
 
 	<byline>
@@ -62,8 +61,10 @@
 
 	<address>Taipei, Taiwan</address>
 
+    <!-- This is wrong in the PDF -->
+    Healthy,
 	<byline>
-	<affiliation>Healthy, g Division of Endocrine, Department of Internal Medicine, DM Center, MacKay<lb/> Memorial Hospital,</affiliation>
+	<affiliation>g Division of Endocrine, Department of Internal Medicine, DM Center, MacKay<lb/> Memorial Hospital,</affiliation>
 	</byline>
 
 	<address>Taipei, Taiwan,</address>
@@ -97,16 +98,16 @@
 
 	<note type="copyright">Copyright © 2021 the Author(s). Published by Wolters Kluwer Health, Inc.<lb/> This is an open access article distributed under the terms of the Creative Commons Attribution-Non Commercial License 4.0 (CCBY-NC), where it is permissible to<lb/> download, share, remix, transform, and buildup the work provided it is properly cited. The work cannot be used commercially without permission from the journal.<lb/></note>
 
-	How to cite this article: 
+	How to cite this article:
 	<reference>Ko HJ, Lin YC, Chen CC, Chen MJ, Wu MS, Liu CJ, Huang CT, Yang HW, Shih SC, Yu LY, Kuo YC, Wang HY, Hu KC. Helicobacter pylori<lb/> infection and increased diabetes prevalence were the risks of colorectal adenoma for adults: a systematic review and meta-analysis (PRISMA-compliant article).<lb/> Medicine 2021;100:50(e28156).<lb/></reference>
 
 	<note type="submission">Received: 22 October 2020 / Received in final form: 15 November 2021 / Accepted: 18 November 2021<lb/></note>
 
 	<idno>http://dx.doi.org/10.1097/MD.0000000000028156<lb/></idno>
 
-	Systematic Review and Meta-Analysis<lb/> 
+    <note type="doctype">Systematic Review and Meta-Analysis<lb/></note>
 
-	<title level="j">Medicine</title> 
+	<title level="j">Medicine</title>
 	®
 	<note type="doctype">OPEN</note>
 

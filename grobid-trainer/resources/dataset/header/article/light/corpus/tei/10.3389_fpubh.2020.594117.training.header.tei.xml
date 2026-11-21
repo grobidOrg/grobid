@@ -31,7 +31,15 @@
 	<affiliation>AOK Research Institute,</affiliation>
 	</byline>
 
-	<address>Germany<lb/> Petra Knaup,<lb/> Heidelberg University, Germany<lb/></address>
+	<address>Germany<lb/></address>
+
+	<editor>Petra Knaup,<lb/></editor>
+
+	<byline>
+	<affiliation>Heidelberg University,</affiliation>
+	</byline>
+
+	<address>Germany<lb/></address>
 
 	*Correspondence:<lb/>
 	<byline>
@@ -61,7 +69,7 @@
 	<docAuthor>Lorenz A. Kapsner 1,2 *, Marvin O. Kampf 1 , Susanne A. Seuchter 1 , Julian Gruendner 3 ,<lb/> Christian Gulden 3 , Sebastian Mate 1 , Jonathan M. Mang 1 , Christina Schüttler 3 ,<lb/> Noemi Deppenwiese 3 , Linda Krause 4 , Daniela Zöller 5 , Julien Balig 6 , Timo Fuchs 7 ,<lb/> Patrick Fischer 8 , Christian Haverkamp 9 , Martin Holderried 10 , Gerhard Mayer 6 ,<lb/> Holger Stenzhorn 11,12 , Ana Stolnicu 6 , Michael Storck 13 , Holger Storf 14 , Jochen Zohner 8 ,<lb/> Oliver Kohlbacher 12,15,16,17 , Adam Strzelczyk 18 , Jürgen Schüttler 19 , Till Acker 20 ,<lb/> Martin Boeker 5 , Udo X. Kaisers 21 , Hans A. Kestler 6 and<lb/> Hans-Ulrich Prokosch 3</docAuthor>
 	</byline>
 
-	on behalf of our MII-Research Group<lb/>
+	on behalf of our <note type="group">MII-Research Group</note><lb/>
 	<byline>
 	<affiliation>1 Medical Center for Information and Communication Technology, Universitätsklinikum Erlangen,</affiliation>
 	</byline>
@@ -188,7 +196,7 @@
 
 	<address>Ulm, Germany<lb/></address>
 
-	<div type="abstract">The COVID-19 pandemic has caused strains on health systems worldwide disrupting<lb/> routine hospital services for all non-COVID patients. Within this retrospective<lb/> study, we analyzed inpatient hospital admissions across 18 German university<lb/> hospitals during the 2020 lockdown period compared to 2018. Patients admitted<lb/> to hospital between January 1 and May 31, 2020 and the corresponding periods<lb/> in 2018 and 2019 were included in this study. Data derived from electronic<lb/> health records were collected and analyzed using the data integration center<lb/> infrastructure implemented in the university hospitals that are part of the four<lb/> consortia funded by the German Medical Informatics Initiative. Admissions were<lb/> grouped and counted by ICD 10 chapters and specific reasons for treatment at each<lb/> site. Pooled aggregated data were centrally analyzed with descriptive statistics to<lb/> compare absolute and relative differences between time periods of different years.<lb/> Kapsner et al.<lb/> Hospital Admissions During COVID-19 Lockdown<lb/> The results illustrate how care process adoptions depended on the COVID-19<lb/> epidemiological situation and the criticality of the disease. Overall inpatient hospital<lb/> admissions decreased by 35% in weeks 1 to 4 and by 30.3% in weeks 5 to 8 after<lb/> the lockdown announcement compared to 2018. Even hospital admissions for critical<lb/> care conditions such as malignant cancer treatments were reduced. We also noted a<lb/> high reduction of emergency admissions such as myocardial infarction (38.7%), whereas<lb/> the reduction in stroke admissions was smaller (19.6%). In contrast, we observed<lb/> a considerable reduction in admissions for non-critical clinical situations, such as<lb/> hysterectomies for benign tumors (78.8%) and hip replacements due to arthrosis (82.4%).<lb/> In summary, our study shows that the university hospital admission rates in Germany<lb/> were substantially reduced following the national COVID-19 lockdown. These included<lb/> critical care or emergency conditions in which deferral is expected to impair clinical<lb/> outcomes. Future studies are needed to delineate how appropriate medical care of<lb/> critically ill patients can be maintained during a pandemic.<lb/></div>
+	
 
 	Keywords:
 	<keyword>COVID-19, pandemic, healthcare systems, inpatient hospital admissions, Germany, medical<lb/> informatics initiative, lockdown, university hospitals<lb/></keyword>

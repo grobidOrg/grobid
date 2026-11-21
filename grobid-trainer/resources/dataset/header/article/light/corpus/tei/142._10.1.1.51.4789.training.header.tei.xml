@@ -36,8 +36,7 @@
 
 	<address>Germantown, MD 20876.</address>
 
-	Abstract<lb/>
-	<div type="abstract">A bandwidth control mechanism is proposed for ATM<lb/> networks that can control the usage of bandwidth in the<lb/> presence of both connection-oriented and connection-<lb/>less tra c, as well as multiple classes of connectionless<lb/> tra c. The bandwidth control mechanism operates at<lb/> three levels. At the topmost level, bandwidth is dy-<lb/>namically regulated between connection-oriented and<lb/> connectionless tra c based on the utilization of each<lb/> tra c type. At the next level, bandwidth is controlled<lb/> between di erent classes of connectionless tra c, such<lb/> as real-time tra c, bulk data tra c, and so on. At the<lb/> lowest level, bandwidth is distributed among ows be-<lb/>longing to the same connectionless tra c class.</div>
+	
 
 		</front>
 	</text>

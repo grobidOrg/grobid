@@ -36,8 +36,7 @@
 
 	<email>firstname.lastname@laplace.univ-tlse.fr<lb/></email>
 
-	Abstract.
-	<div type="abstract">Nowadays, embedded aircraft system contains electrical devices which must cooperate in safe and light<lb/> weight network. For designing such systems, different local strategies have been developed but no global<lb/> optimization has been performed so far. In this paper, we present and compare three strategies applied to the sizing<lb/> of a whole network of more electric aircraft: a simplified case study with only two components is considered to<lb/> illustrate methodological issues. The quality of the solution found from each method is compared, with regards to<lb/> the &quot;cost of the collaborative approach&quot; and the volume of data generation. This comparison should provide system<lb/> designers an evaluation of the applicability of these methods according to the nature of the design problem.<lb/></div>
+	
 
 	Keywords:
 	<keyword>system design, integrated design, multilevel optimization, embedded electrical system.</keyword>

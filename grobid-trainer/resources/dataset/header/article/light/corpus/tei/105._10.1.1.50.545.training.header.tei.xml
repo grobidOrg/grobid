@@ -27,8 +27,7 @@
 
 	<email>fzoubin,hintong@cs.toronto.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">We rst describe a hierarchical, generative model that can be<lb/> viewed as a non-linear generalisation of factor analysis and can<lb/> be implemented in a neural network. The model performs per-<lb/>ceptual inference in a probabilistically consistent manner by using<lb/> top-down, bottom-up and lateral connections. These connections<lb/> can be learned using simple rules that require only locally avail-<lb/>able information. We then show how to incorporate lateral con-<lb/>nections into the generative model. The model extracts a sparse,<lb/> distributed, hierarchical representation of depth from simpli ed<lb/> random-dot stereograms and the localised disparity detectors in<lb/> the rst hidden layer form a topographic map. When presented<lb/> with image patches from natural scenes, the model develops topo-<lb/>graphically organised local feature detectors.</div>
+	
 
 		</front>
 	</text>

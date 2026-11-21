@@ -15,7 +15,7 @@
 	Printed
 	<date>2 August 2009<lb/></date>
 
-	(MN L A T E X style file v2.2)<lb/> 
+	(MN L A T E X style file v2.2)<lb/>
 
 	<docTitle>
 	<titlePart>S-Z power spectrum produced by primordial magnetic fields<lb/></titlePart>
@@ -26,10 +26,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>1 Institut d&apos;Astrophysique Spatiale (IAS),</affiliation>
+	<affiliation>1 Institut d&apos;Astrophysique Spatiale (IAS), Bâtiment 121, Université Paris-Sud 11, </affiliation>
 	</byline>
 
-	<address>Bâtiment 121, Université Paris-Sud 11, Orsay, F-91405, France<lb/></address>
+	<address>Orsay, F-91405, France<lb/></address>
 
 	<byline>
 	<affiliation>2 Department of Physics and Astrophysics, Nagoya University,</affiliation>
@@ -45,8 +45,7 @@
 
 	<date>2 August 2009</date>
 
-	ABSTRACT<lb/>
-	<div type="abstract">Primordial magnetic fields generated in the very early universe are one of the<lb/> candidates for the origin of magnetic fields observed in galaxy clusters. After recom-<lb/>bination, the Lorentz force acts on the residual ions and electrons to generate density<lb/> fluctuations of baryons. Accordingly these fluctuations induce the early formation<lb/> of dark halos which cause the Sunyaev-Zel&apos;dovich (S-Z) effect in cosmic microwave<lb/> background radiation. This additional S-Z effect due to primordial magnetic fields<lb/> amplifies the angular power spectrum of cosmic microwave temperature anisotropies<lb/> on small scales. This amplification depends on the comoving amplitude and the power<lb/> law index of the primordial magnetic fields spectrum. Comparing with the small scale<lb/> CMB observations, we obtained the constraints on the primordial magnetic fields, i.e.,<lb/> B &lt; 0.7 nGauss for n = −2.9 or B &lt; 0.3 nGauss for n = −2.5 , where B is the<lb/> comoving amplitude of magnetic fields at 1 Mpc and n is the power law index. These<lb/> constraints are tighter than those from temperature anisotropies and polarization of<lb/> cosmic microwave background induced by the magnetic fields at the recombination<lb/> epoch.<lb/></div>
+	
 
 	Key words:
 	<keyword>cosmology: theory -magnetic fields -large-scale structure of universe</keyword>

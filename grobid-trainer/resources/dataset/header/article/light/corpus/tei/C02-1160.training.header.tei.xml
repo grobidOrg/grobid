@@ -22,8 +22,7 @@
 
 	<email>{jessiep martines}@microsoft.com</email>
 
-	Abstract<lb/>
-	<div type="abstract">The MT system described in this paper<lb/> combines hand-built analysis and generation<lb/> components with automatically learned<lb/> example-based transfer patterns. Up to now,<lb/> the transfer component used a traditional<lb/> bilingual dictionary to seed the transfer<lb/> pattern learning process and to provide<lb/> fallback translations at runtime. This paper<lb/> describes an improvement to the system by<lb/> which the bilingual dictionary used for these<lb/> purposes is instead learned automatically<lb/> from aligned bilingual corpora, making the<lb/> system&apos;s transfer knowledge entirely<lb/> derivable from corpora. We show that this<lb/> system with a fully automated transfer<lb/> process performs better than the system<lb/> with a hand-crafted bilingual dictionary.<lb/> More importantly, this has enabled us to<lb/> create in less than one day a new language<lb/> pair, French-Spanish, which, for a technical<lb/> domain, surpasses the quality bar of the<lb/> commercial system chosen for comparison.</div>
+	
 
 		</front>
 	</text>

@@ -19,10 +19,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>1 Lab for Computational Biology,</affiliation>
+	<affiliation>1 Lab for Computational Biology, SFU,</affiliation>
 	</byline>
 
-	<address>SFU, Canada</address>
+	<address>Canada</address>
 
 	and
 
@@ -32,8 +32,7 @@
 
 	<note type="submission">Received January 31, 2007; Revised April 3, 2007; Accepted April 14, 2007</note>
 
-	ABSTRACT<lb/>
-	<div type="abstract">We present taveRNA, a web server package that<lb/> hosts three RNA web services: alteRNA, inteRNA<lb/> and pRuNA. alteRNA is a new alternative for RNA<lb/> secondary structure prediction. It is based on<lb/> a dynamic programming solution that minimizes<lb/> the sum of energy density and free energy of an<lb/> RNA structure. inteRNA is the first RNA-RNA<lb/> interaction structure prediction web service. It also<lb/> employs a dynamic programming algorithm to<lb/> minimize the free energy of the resulting joint<lb/> structure of the two interacting RNAs. Lastly,<lb/> pRuNA is an efficient database pruning service;<lb/> which given a query RNA, eliminates a significant<lb/> portion of an ncRNA database and returns only<lb/> a few ncRNAs as potential regulators. taveRNA is<lb/> available at http://compbio.cs.sfu.ca/taverna.<lb/> </div>
+	
 
 	The authors wish it to be known that, in their opinion, the first three authors should be regarded as joint First Authors.<lb/> *To whom correspondence should be addressed. 
 	Tel: <phone>þ1-604-268-7040</phone>; Fax: þ1-604-291-3045; Email:

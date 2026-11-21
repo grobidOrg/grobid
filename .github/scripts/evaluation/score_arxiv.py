@@ -3,7 +3,7 @@
 Score the authors and affiliations of the GROBID TEI of the arXiv corpus against its JSON gold.
 
     score_arxiv.py --data data/COMET_arxiv_1091 --output reports/report-COMET_arxiv_1091.md \\
-        [--json arxiv-eval.json]
+        [--json arxiv-eval.json] [--authors-only]
 
 The corpus directory holds one directory per article, with the gold record (<stem>.gold.json)
 and the TEI produced by `jatsEval` (<stem>.fulltext.tei.xml). The scorer is the one of
@@ -13,7 +13,8 @@ affiliations are false negatives.
 
 The Markdown report has the layout of the `jatsEval` reports, so that compare_reports.py renders
 it and compares it with a baseline the same way. --json writes the full output of the scorer,
-with the matches of each article.
+with the matches of each article. --authors-only scores the authors alone and leaves the
+affiliations out of the report, for the models that do not extract them (the light flavors).
 """
 
 import argparse
@@ -30,16 +31,18 @@ from run_evaluation import evaluate_dataset, load_config  # noqa: E402
 
 CONFIG = SCORER_DIR / "author_affiliation_eval_config.yaml"
 SECTION = "Authors and affiliations (arXiv)"
+SECTION_AUTHORS_ONLY = "Authors (arXiv)"
 MATCHINGS = {
     "strict": "Strict Matching (exact matches of the normalised strings)",
     "fuzzy": "Fuzzy Matching (similarity of the normalised strings of at least 0.95)",
 }
-# category of the scorer -> label in the report, the last one being the micro average of the report
+# category of the scorer -> label in the report, "combined" being the micro average of the report
 CATEGORIES = {
     "entity:author": "author",
     "field:affiliations": "affiliations",
     "combined": "combined",
 }
+CATEGORIES_AUTHORS_ONLY = {"entity:author": "author"}
 
 
 def load_corpus(data):
@@ -65,18 +68,21 @@ def number(value):
     return f"{round(100 * value, 2):g}"
 
 
-def write_report(result, documents, without_tei, out):
-    out.write(f"\n## {SECTION}\n\n")
+def write_report(result, documents, without_tei, authors_only, out):
+    categories = CATEGORIES_AUTHORS_ONLY if authors_only else CATEGORIES
+    out.write(f"\n## {SECTION_AUTHORS_ONLY if authors_only else SECTION}\n\n")
     # the first sentence is the one of the jatsEval reports, which compare_reports.py reads
     out.write(
         f"Evaluation on {documents} random PDF files out of {documents} PDF (ratio 1.0). "
         f"{without_tei} of them have no TEI and count as articles without author.\n"
     )
+    if authors_only:
+        out.write("The affiliations are not scored: the models evaluated do not extract them.\n")
     for mode, title in MATCHINGS.items():
         scores = result["reports"].get(mode, {})
         out.write(f"\n#### {title}\n\n**Field-level results**\n\n")
         out.write("| label | precision | recall | f1 | support |\n|--- |--- |--- |--- |--- |\n")
-        for category, label in CATEGORIES.items():
+        for category, label in categories.items():
             metric = scores.get(category)
             if metric is None:
                 sys.exit(f"The scorer gave no '{category}' score in {mode} mode")
@@ -87,7 +93,7 @@ def write_report(result, documents, without_tei, out):
                 cells = [f"**{cell}**" for cell in cells]
             out.write("| " + " | ".join(cells) + f" | {support} |\n")
         out.write("\n")
-        for category, label in CATEGORIES.items():
+        for category, label in categories.items():
             metric = scores[category]
             out.write(
                 f"{label}: {metric['true_positives']} true positives, {metric['false_positives']} false positives, "
@@ -100,6 +106,11 @@ def main():
     parser.add_argument("--data", required=True, type=Path, help="corpus directory, e.g. data/COMET_arxiv_1091")
     parser.add_argument("--output", required=True, type=Path, help="Markdown report to write")
     parser.add_argument("--json", type=Path, help="full output of the scorer to write (JSON)")
+    parser.add_argument(
+        "--authors-only",
+        action="store_true",
+        help="score the authors only, for models that do not extract affiliations (the light flavors)",
+    )
     args = parser.parse_args()
 
     gold, predictions, without_tei = load_corpus(args.data)
@@ -120,7 +131,7 @@ def main():
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as out:
-        write_report(result, len(gold), len(without_tei), out)
+        write_report(result, len(gold), len(without_tei), args.authors_only, out)
     if args.json:
         result["summary"]["documents_without_tei"] = without_tei
         args.json.write_text(json.dumps(result, ensure_ascii=False, indent=1), encoding="utf-8")

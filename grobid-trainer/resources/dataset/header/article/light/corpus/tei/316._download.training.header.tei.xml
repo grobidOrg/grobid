@@ -19,13 +19,7 @@
 	</byline>
 
 	<byline>
-	<affiliation>Department of Computer Science<lb/></affiliation>
-	</byline>
-
-	<address>Box 1679, Station B<lb/></address>
-
-	<byline>
-	<affiliation>Vanderbilt University<lb/></affiliation>
+	<affiliation>Department of Computer Science<lb/> Box 1679, Station B<lb/> Vanderbilt University<lb/></affiliation>
 	</byline>
 
 	<address>Nashville, TN 37235<lb/></address>
@@ -36,8 +30,7 @@
 
 	<phone>(615) 343-4111</phone><lb/> 
 
-	Abstract:
-	<div type="abstract">Clustering is often used for discovering structure in data. Clustering systems<lb/> di er in the objective function used to evaluate clustering quality and the control strategy<lb/> used to search the space of clusterings. Ideally, the search strategy should consistently<lb/> construct clusterings of high quality, but be computationally inexpensive as well. In general,<lb/> we cannot have it both ways, but we can partition the search so that a system inexpensively<lb/> constructs a`tentative&apos; clustering for initial examination, followed by iterative optimization,<lb/> which continues to search in background for improved clusterings. Given this motivation, we<lb/> evaluate an inexpensive strategy for creating initial clusterings, coupled with several control<lb/> strategies for iterative optimization, each of which repeatedly modi es an initial clustering<lb/> in search of a better one. One of these methods appears novel as an iterative optimization<lb/> strategy in clustering contexts. Once a clustering has been constructed it is judged by<lb/> analysts { often according to task-speci c criteria. Several authors have abstracted these<lb/> criteria and posited a generic performance task akin to pattern completion, where the error<lb/> rate over completed patterns is used to`externally&apos; judge clustering utility. Given this<lb/> performance task we adapt resampling-based pruning strategies used by supervised learning<lb/> systems to the task of simplifying hierarchical clusterings, thus promising to ease post-<lb/>clustering analysis. Finally, we propose a number of objective functions, based on attribute-<lb/>selection measures for decision-tree induction, that might perform well on the error rate and<lb/> simplicity dimensions.<lb/></div>
+	
 
 	Keywords:
 	<keyword>clustering, iterative optimization, cluster validation, resampling, pruning, ob-<lb/>jective functions.</keyword>

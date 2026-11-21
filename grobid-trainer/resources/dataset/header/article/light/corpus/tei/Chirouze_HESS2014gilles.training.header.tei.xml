@@ -10,7 +10,9 @@
 
 	<idno>doi:10.5194/hess-18-1165-2014<lb/></idno>
 
-	<note type="copyright">© Author(s) 2014. CC Attribution 3.0 License.<lb/> Hydrology and<lb/> Earth System Sciences<lb/></note>
+	<note type="copyright">© Author(s) 2014. CC Attribution 3.0 License.<lb/></note>
+
+	<title level="j">Hydrology and<lb/> Earth System Sciences<lb/></title>
 
 	<note type="doctype">Open Access<lb/></note>
 
@@ -63,15 +65,14 @@
 
 	<note type="submission">Received: 18 December 2012 -</note>
 
-	<reference>Published in Hydrol. Earth Syst. Sci. Discuss.: 21 January 2013<lb/></reference>
+	<note type="submission">Published in Hydrol. Earth Syst. Sci. Discuss.: 21 January 2013<lb/></note>
 
 	<note type="submission">Revised: 11 February 2014 -Accepted: 15 February 2014</note>
 
 	 -Published:
 	<date>27 March 2014<lb/></date>
 
-	Abstract.
-	<div type="abstract">Instantaneous evapotranspiration rates and surface<lb/> water stress levels can be deduced from remotely sensed<lb/> surface temperature data through the surface energy bud-<lb/>get. Two families of methods can be defined: the contex-<lb/>tual methods, where stress levels are scaled on a given im-<lb/>age between hot/dry and cool/wet pixels for a particular veg-<lb/>etation cover, and single-pixel methods, which evaluate la-<lb/>tent heat as the residual of the surface energy balance for<lb/> one pixel independently from the others. Four models, two<lb/> contextual (S-SEBI and a modified triangle method, named<lb/> VIT) and two single-pixel (TSEB, SEBS) are applied over<lb/> one growing season (December-May) for a 4 km × 4 km ir-<lb/>rigated agricultural area in the semi-arid northern Mexico.<lb/> Their performance, both at local and spatial standpoints, are<lb/> compared relatively to energy balance data acquired at seven<lb/> locations within the area, as well as an uncalibrated soil-<lb/>vegetation-atmosphere transfer (SVAT) model forced with<lb/> local in situ data including observed irrigation and rainfall<lb/> amounts. Stress levels are not always well retrieved by most<lb/> models, but S-SEBI as well as TSEB, although slightly bi-<lb/>ased, show good performance. The drop in model perfor-<lb/>mance is observed for all models when vegetation is senes-<lb/>cent, mostly due to a poor partitioning both between tur-<lb/>bulent fluxes and between the soil/plant components of the<lb/> latent heat flux and the available energy. As expected, con-<lb/>textual methods perform well when contrasted soil moisture<lb/> and vegetation conditions are encountered in the same im-<lb/>age (therefore, especially in spring and early summer) while<lb/> they tend to exaggerate the spread in water status in more ho-<lb/>mogeneous conditions (especially in winter). Surface energy<lb/> balance models run with available remotely sensed prod-<lb/>ucts prove to be nearly as accurate as the uncalibrated SVAT<lb/> model forced with in situ data.<lb/></div>
+	
 
 	Published by <publisher>Copernicus Publications on behalf of the European Geosciences Union.</publisher>
 		</front>

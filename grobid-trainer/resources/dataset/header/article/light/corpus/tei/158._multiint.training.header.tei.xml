@@ -14,8 +14,7 @@
 	<docAuthor>Carl de Boor 1 &amp; Amos Ron</docAuthor>
 	</byline>
 
-	ABSTRACT<lb/>
-	<div type="abstract">We provide a map Θ → Π Θ which associates each finite set Θ of points in C s with a polynomial<lb/> space Π Θ from which interpolation to arbitrary data given at the points in Θ is possible and<lb/> uniquely so. Among all polynomial spaces Q from which interpolation at Θ is uniquely possible,<lb/> our Π Θ is of smallest degree. It is also D-and scale-invariant. Our map is monotone, thus providing<lb/> a Newton form for the resulting interpolant. Our map is also continuous within reason, allowing us<lb/> to interpret certain cases of coalescence as Hermite interpolation. In fact, our map can be extended<lb/> to the case where, with each θ ∈ Θ, there is associated a polynomial space P θ , and, for given<lb/> smooth f , a polynomial q ∈ Q is sought for which<lb/> p(D)(f − q)(θ) = 0, all p ∈ P θ , θ ∈ Θ.<lb/> We obtain Π Θ as the &quot;scaled limit at the origin&quot; (exp Θ ) ↓ of the exponential space exp Θ with<lb/> frequencies Θ, and base our results on a study of the map H → H ↓ defined on subspaces H of<lb/> the space of functions analytic at the origin. This study also allows us to determine the local<lb/> approximation order from such H and provides an algorithm for the construction of H ↓ from any<lb/> basis for H.<lb/></div>
+	
 
 	<keyword>AMS (MOS) Subject Classifications: primary 41A05, 41A63, 41A10; secondary 65D05, 41A30<lb/></keyword>
 

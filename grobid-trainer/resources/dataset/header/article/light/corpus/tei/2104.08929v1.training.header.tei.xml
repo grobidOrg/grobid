@@ -10,7 +10,9 @@
 
 	<date>18 Apr 2021<lb/></date>
 
-	<title level="j">TRANSACTIONS ON COMMUNICATIONS 1<lb/></title> 
+	<title level="j">TRANSACTIONS ON COMMUNICATIONS</title>
+
+     <page>1<lb/></page>
 
 	<docTitle>
 	<titlePart>K-Means Clustering-Aided Non-Coherent<lb/> Detection for Molecular Communications<lb/></titlePart>
@@ -20,8 +22,7 @@
 	<docAuthor>Xuewen Qian, Marco Di Renzo, Fellow, IEEE, and Andrew<lb/> Eckford, Senior Member, IEEE</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">In this paper, we consider non-coherent detection for molecular communication systems in the<lb/> presence of inter-symbol-interference. In particular, we study non-coherent detectors based on memory-<lb/>bits-based thresholds in order to achieve low bit-error-ratio (BER) transmission. The main challenge of<lb/> realizing detectors based on memory-bits-based thresholds is to obtain the channel state information<lb/> based only on the received signals. We tackle this issue by reformulating the thresholds through<lb/> intermediate variables, which can be obtained by clustering multi-dimensional data from the received<lb/> signals, and by using the K-means clustering algorithm. In addition to estimating the thresholds, we<lb/> show that the transmitted bits can be retrieved from the clustered data. To reduce clustering errors, we<lb/> propose iterative clustering methods from one-dimensional to multi-dimensional data, which are shown<lb/> to reduce the BER. Simulation results are presented to verify the effectiveness of the proposed methods.<lb/></div>
+	
 
 	Index Terms<lb/>
 	<keyword>Molecular communications, inter-symbol interference, channel state information, non-coherent de-<lb/>tection, K-means clustering.</keyword>

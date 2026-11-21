@@ -129,7 +129,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0002-9696-9638</idno>
+          <idno type="orcid">https://orcid.org/0000-0002-9696-9638</idno>
           
           )<lb/> 
     <byline>
@@ -137,7 +137,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0000-0000-0000</idno>
+          <idno type="orcid">https://orcid.org/0000-0000-0000-0000</idno>
           
           )<lb/> 
     <byline>
@@ -145,7 +145,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0003-4108-6579</idno>
+          <idno type="orcid">https://orcid.org/0000-0003-4108-6579</idno>
           
           )<lb/> 
       
@@ -158,8 +158,8 @@
       <note type="funding">This work was supported by the research grant of the Gyeongsang<lb/> National University in 2023.</note>
 
 	Acknowledgements<lb/> Availability of data and material<lb/> Authors&apos; contributions<lb/> 
-      <note type="contribution">
-      Please specify the authors&apos; role using this form.<lb/> Conceptualization: OH SH, Min B<lb/> Data curation: OH SH, Noh E, Min B<lb/> Formal analysis: OH SH, Noh E, Min B<lb/> Methodology: OH SH, Noh E, Min B<lb/> Software: OH SH, Noh E<lb/> Validation: OH SH, Noh E, Min B<lb/> Investigation: OH SH, Noh E, Min B<lb/> Writing -original draft: OH SH<lb/> Writing -review &amp; editing: OH SH, Noh E, Min B<lb/></note>
+      Please specify the authors&apos; role using this form.<lb/>
+      <note type="contribution">Conceptualization: OH SH, Min B<lb/> Data curation: OH SH, Noh E, Min B<lb/> Formal analysis: OH SH, Noh E, Min B<lb/> Methodology: OH SH, Noh E, Min B<lb/> Software: OH SH, Noh E<lb/> Validation: OH SH, Noh E, Min B<lb/> Investigation: OH SH, Noh E, Min B<lb/> Writing -original draft: OH SH<lb/> Writing -review &amp; editing: OH SH, Noh E, Min B<lb/></note>
 	
       
     Ethics approval and consent to participate<lb/> This article does not require IRB/IACUC approval because there are<lb/> no human and animal participants.<lb/> 
@@ -181,9 +181,7 @@
         <titlePart>Applicability of non-invasive, digital palpation device to detection of woody breast<lb/> conditions in chicken breast muscle</titlePart>
     </docTitle>
           
-      ABSTRACT<lb/>
-          
-	<div type="abstract">Woody Breast (WB) is one of muscle myopathy found in chicken breast, characterized with<lb/> enlarged size and extremely stiff texture. The WB condition is one of the most prevalent quality<lb/> issues in the modern poultry industry. WB has been shown to be heritable, but no effective<lb/> detection method of WB severity in live birds exists for the selection purpose. The objective<lb/> of this study was to determine potential of a non-invasive, portable digital palpation device as<lb/> WB detection method that can be used for the selection to estimate the heritability of WB. The<lb/> physical and functional properties of WB was also investigated in comparison with normal<lb/> breast (NB). Two hundred ten breast muscles were obtained from a local processing plant one<lb/> day after harvest and sorted based on WB scoring (1 for NB and 2 and 3 for WB). The samples<lb/> were subjected to physical and physicochemical analyses, determining biomechanical<lb/> properties (muscle tone, stiffness, elasticity, relaxation, and creep), pH, color, cooking yield,<lb/> and texture (firmness and compression energy were used for raw meat and shear force and<lb/> energy for cooked meat). The least squares means of the following variables were significantly<lb/> different between WB and NB (p&lt;0.01): stiffness (603.4 vs 565.8; N/m), and elasticity (1.40<lb/> vs 1.55). However, relaxation and creep were not significantly different (p&gt;0.05). These results<lb/> collectively showed that biomechanical properties of WB differ from NB. The degree of<lb/> muscle stiffness in WB can be considered as a trait to be selected. The WB score showed strong<lb/> negative correlations with cooking yield (-0.77) and cooked L*(-0.74), which means that as the<lb/> breast becomes harder, the cooking yield decreases, and the color becomes darker after cooking.<lb/> The WB score showed high correlations with physical and functional characteristics and<lb/> exhibited strong correlations with the biomechanical properties measured by the device.<lb/> Therefore, the results indicated that the digital palpation device has potential to detect the WB<lb/> severity (degree of stiffness) of breast muscle.<lb/></div>
+      
 
 	Keywords:
 	<keyword>woody breast, Myoton, characteristics, broiler, breast meat</keyword>

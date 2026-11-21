@@ -38,8 +38,7 @@
 
 	<email>giuvit@dia.unisa.it<lb/></email>
 
-	Abstract.
-	<div type="abstract">We show how declarative diagnosis techniques can be ex-<lb/>tended to cope with verification of operational properties, such as com-<lb/>puted answers, and of abstract properties, such as types and ground-<lb/>ness dependencies. The extension is achieved by using a simple semantic<lb/> framework, based on abstract interpretation. The resulting technique<lb/> (abstract diagnosis) leads to elegant bottom-up and top-down verifica-<lb/>tion methods, which do not require to determine the symptoms in ad-<lb/>vance, and which are effective in the case of abstract properties described<lb/> by finite domains.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Logic Programming, Declarative diagnosis, Verification, Se-<lb/>mantics, Debugging</keyword>

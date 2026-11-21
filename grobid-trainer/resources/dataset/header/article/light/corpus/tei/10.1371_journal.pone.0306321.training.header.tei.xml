@@ -104,8 +104,7 @@
 	*
 	<email>Guilhem.Janbon@pasteur.fr</email>
 
-	Abstract<lb/>AU : Pleaseconfirmthatallheadinglevelsarerepresentedcorrectly:<lb/>
-	<div type="abstract">Alternative transcription start site (TSS) usage regulation has been identified as a major<lb/> means of gene expression regulation in metazoans. However, in fungi, its impact remains<lb/> elusive as its study has thus far been restricted to model yeasts. Here, we first re-analyzed<lb/> TSS-seq data to define genuine TSS clusters in 2 species of pathogenic Cryptococcus. We<lb/> identified 2 types of TSS clusters associated with specific DNA sequence motifs. Our analy-<lb/>sis also revealed that alternative TSS usage regulation in response to environmental cues is<lb/> widespread in Cryptococcus, altering gene expression and protein targeting. Importantly,<lb/> we performed a forward genetic screen to identify a unique transcription factor (TF) named<lb/> Tur1, which regulates alternative TSS (altTSS) usage genome-wide when cells switch from<lb/> exponential phase to stationary phase. ChiP-Seq and DamID-Seq analyses suggest that at<lb/> some loci, the role of Tur1 might be direct. Tur1 has been previously shown to be essential<lb/> for virulence in C. neoformans. We demonstrated here that a tur1Δ mutant strain is more<lb/> sensitive to superoxide stress and phagocytosed more efficiently by macrophages than the<lb/> wild-type (WT) strain.<lb/></div>
+	
 
 	<reference>PLOS Biology | https://doi.org/10.1371/journal.pbio.3002724 July 25, 2024<lb/></reference>
 

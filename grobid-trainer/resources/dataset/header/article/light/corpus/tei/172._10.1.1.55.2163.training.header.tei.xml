@@ -20,8 +20,7 @@
 
 	<address>New Britain, CT 06050</address>
 
-	Abstract<lb/>
-	<div type="abstract">Explanations play a key role in operationalization-<lb/>based anomaly detection techniques. In this paper<lb/> we show that their role is not limited to anomaly de-<lb/>tection; they can also be used for guiding automated<lb/> knowledge base re nement. We introduce a re ne-<lb/>ment procedure which takes: (i) a small number of<lb/> re nement rules (rather than test cases), and (ii) ex-<lb/>planations constructed in an attempt to reveal the<lb/> cause (or causes) for inconsistencies detected during<lb/> the veri cation process, and returns rule revisions<lb/> aiming to recover the consistency of the KB-theory.<lb/> Inconsistencies caused by more than one anomaly<lb/> are handled at the same time, which improves the<lb/> e ciency of the re nement process.</div>
+	
 
 		</front>
 	</text>

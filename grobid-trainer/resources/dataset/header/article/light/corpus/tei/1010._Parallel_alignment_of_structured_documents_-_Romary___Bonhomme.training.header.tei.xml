@@ -21,14 +21,15 @@
 	</byline>
 
 	<byline>
-	<affiliation>Laboratoire Loria, France<lb/></affiliation>
+	<affiliation>Laboratoire Loria,</affiliation>
 	</byline>
+
+	<address>France<lb/></address>
 
 	Keywords:
 	<keyword>SGML, structured documents, multi-level alignment.<lb/></keyword>
 
-	Abstract:<lb/>
-	<div type="abstract">Classical methods for parallel text alignment consider one specific level (e.g.<lb/> sentences) along which two or more versions of a text are to be synchronised. This<lb/> may lead to some problems when these documents are particularly long since<lb/> alignment errors at some point in the text may, in the absence of any other<lb/> linguistic information, propagate for some time without any chance of recovery. In<lb/> this chapter we consider how multilingual parallel alignment can be based on the<lb/> fact that more and more texts are now highly structured by means of tagging<lb/> languages such as SGML. In particular we will describe recent efforts in multi-<lb/>level alignment for which we will present the main advances as well as some of the<lb/> difficulties to be dealt with, in particular when the text and its translation are<lb/> associated with different encoding schemes or different encoding practices for the<lb/> same scheme.</div>
+	
 
 		</front>
 	</text>

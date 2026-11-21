@@ -31,15 +31,14 @@
 	*
 	<email>danielje@hawaii.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">Constraints related to sample preparation are some of the primary obstacles to widespread<lb/> deployment of molecular diagnostics for rapid detection of trace quantities (�10 3 CFU/mL)<lb/> of food-borne pathogens. In this research, we report a sample preparation method using a<lb/> novel handheld electroflotation system to concentrate and recover dilute quantities<lb/> (10 2 −10 3 CFU/mL) of Escherichia coli (E. coli) 25922 in artificially contaminated samples for<lb/> reliable, rapid detection by loop-mediated isothermal amplification (LAMP). To protect sus-<lb/>pended cells from shear stresses at bubble surfaces, a non-ionic surfactant (Pluronic-F68)<lb/> and flocculant (chitosan oligosaccharide) were used to aggregate cells and reduce their sur-<lb/>face hydrophobicity. Effective conditions for recovery were determined through multifacto-<lb/>rial experiments including various concentrations of Pluronic-F68 (0.001, 0.01, 0.1, 1 g L -1 ),<lb/> chitosan oligosaccharide (0.01, 0.1, 1, 10 g L -1 ), bacteria (10 2 , 10 3 , 10 4 CFU/mL E. coli<lb/> 25922), recovery times (10, 15 and 20 minutes), and degrees of turbulent gas flux (&quot;high&quot;<lb/> and &quot;low&quot;). The automated electroflotation system was capable of concentrating effectively<lb/> all of the bacteria from a large sample (380 mL 0.1 M potassium phosphate buffer containing<lb/> 10 2 CFU/mL E. coli) into a 1 mL recovered fraction in less than 30 minutes. This enabled<lb/> detection of bacterial contaminants within 2 hours of collecting the sample, without a special-<lb/>ized laboratory facility or traditional enrichment methods, with at least a 2-3 order of magni-<lb/>tude improvement in detection limit compared to direct assay with LAMP.<lb/></div>
+	
 
 	<reference>PLOS ONE | https://doi.org/10.1371/journal.pone.0244956 January 5, 2021<lb/></reference>
 
-	<page>1 / 19<lb/></page> 
+	<page>1 / 19<lb/></page>
 
 	a1111111111<lb/> a1111111111<lb/> a1111111111<lb/> a1111111111 a1111111111<lb/>
-	
+
 	<note type="doctype">OPEN ACCESS<lb/></note>
 
 	Citation:
@@ -62,16 +61,16 @@
 	<date>January 5, 2021<lb/></date>
 
 	Copyright:
-	<note type="copyright">© 2021 Diaz et al. This is an open<lb/> access article distributed under the terms of the<lb/> Creative Commons Attribution License, which<lb/> permits unrestricted use, distribution, and<lb/> reproduction in any medium, provided the original<lb/> author and source are credited.<lb/></note> 
-	
-	Data Availability Statement: 
+	<note type="copyright">© 2021 Diaz et al. This is an open<lb/> access article distributed under the terms of the<lb/> Creative Commons Attribution License, which<lb/> permits unrestricted use, distribution, and<lb/> reproduction in any medium, provided the original<lb/> author and source are credited.<lb/></note>
+
+	Data Availability Statement:
 	<note type="availability">All raw data<lb/> underlying results are included as Supplemental<lb/> Information.<lb/></note>
 
-	Funding: 
+	Funding:
 	<note type="funding">The work described in the manuscript<lb/> was funded by USDA-NIFA (Food Safety Priority<lb/> Area, Award number 2014-67005-21702), which<lb/> included partial funding of the stipends / salaries of<lb/> each of the authors (Lena Diaz, Yong Li, and<lb/> myself Daniel M. Jenkins). The funders had no role<lb/> in study design, data collection and analysis,<lb/> decision to publish, or preparation of the<lb/> manuscript.<lb/> </note>
 
 	Competing interests:
-    <note type="conflict">I have read the journal&apos;s<lb/> policy and the authors of this manuscript have the<lb/> following Competing interests: PCT Application No.<lb/>PCT/US19/41833, Filed, July 15, 2019 Title: &quot;Point-<lb/>of-Care Electroflotation of Dispersed, Low<lb/> Tolerance Pathogens&quot;. This does not alter our<lb/> adherence to PLOS ONE policies on sharing data<lb/> and materials, as articulated at http://journals.plos.<lb/> org/plosone/s/competing-interests), nor does it<lb/> impose any restrictions on our sharing of data or<lb/> other materials.<lb/> LAMP assay design<lb/></note>
+    <note type="conflict">I have read the journal&apos;s<lb/> policy and the authors of this manuscript have the<lb/> following Competing interests: PCT Application No.<lb/>PCT/US19/41833, Filed, July 15, 2019 Title: &quot;Point-<lb/>of-Care Electroflotation of Dispersed, Low<lb/> Tolerance Pathogens&quot;. This does not alter our<lb/> adherence to PLOS ONE policies on sharing data<lb/> and materials, as articulated at http://journals.plos.<lb/> org/plosone/s/competing-interests), nor does it<lb/> impose any restrictions on our sharing of data or<lb/> other materials.<lb/></note>
 
 		</front>
 	</text>

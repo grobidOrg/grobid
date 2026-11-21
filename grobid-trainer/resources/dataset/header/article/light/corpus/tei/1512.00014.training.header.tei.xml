@@ -25,8 +25,7 @@
 	Affiliations are listed at the end of the paper<lb/>
 	<note type="submission">Accepted 2015 November 25. Received 2015 November 24; in original form 2015 July 17</note>
 
-	ABSTRACT<lb/>
-	<div type="abstract">We present the results of a four-month campaign searching for low-frequency radio transients<lb/> near the North Celestial Pole with the Low-Frequency Array (LOFAR), as part of the Mul-<lb/>tifrequency Snapshot Sky Survey (MSSS). The data were recorded between 2011 December<lb/> and 2012 April and comprised 2149 11-minute snapshots, each covering 175 deg 2 . We have<lb/> found one convincing candidate astrophysical transient, with a duration of a few minutes and<lb/> a flux density at 60 MHz of 15-25 Jy. The transient does not repeat and has no obvious op-<lb/>tical or high-energy counterpart, as a result of which its nature is unclear. The detection of<lb/> this event implies a transient rate at 60 MHz of 3.9 +14.7<lb/> −3.7 × 10 −4 day −1 deg −2 , and a transient<lb/> surface density of 1.5 × 10 −5 deg −2 , at a 7.9-Jy limiting flux density and ∼ 10-minute time-<lb/>scale. The campaign data were also searched for transients at a range of other time-scales,<lb/> from 0.5 to 297 min, which allowed us to place a range of limits on transient rates at 60 MHz<lb/> as a function of observation duration.<lb/></div> 
+	 
 
 	Key words: 
 	<keywords>instrumentation: interferometers -techniques: image processing -radio contin-<lb/>uum: general.<lb/></keywords>
@@ -62,10 +61,10 @@
 	<address>38200 La Laguna, Tenerife,<lb/> Spain<lb/></address>
 
 	<byline>
-	<affiliation>5 Departamento de astrofísica,</affiliation>
+	<affiliation>5 Departamento de astrofísica, Univ. de La Laguna,</affiliation>
 	</byline>
 
-	<address>Univ. de La Laguna, E-38206 La<lb/> Laguna, Tenerife, Spain<lb/></address>
+	<address>E-38206 La<lb/> Laguna, Tenerife, Spain<lb/></address>
 
 	<byline>
 	<affiliation>6 Anton Pannekoek Institute for Astronomy,</affiliation>
@@ -158,7 +157,11 @@
 	<address>06300 Nice,<lb/> France<lb/></address>
 
 	<byline>
-	<affiliation>21 LPC2E -Universite d&apos;Orleans/CNRS<lb/> 22 School of Physics, Astronomy and Mathematics, University of<lb/> Hertfordshire,</affiliation>
+	<affiliation>21 LPC2E -Universite d&apos;Orleans/CNRS<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>22 School of Physics, Astronomy and Mathematics, University of<lb/> Hertfordshire,</affiliation>
 	</byline>
 
 	<address>College Lane, Hatfield AL10 9AB, UK<lb/></address>

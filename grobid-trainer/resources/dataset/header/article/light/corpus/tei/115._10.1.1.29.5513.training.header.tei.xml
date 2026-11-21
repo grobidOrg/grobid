@@ -16,8 +16,8 @@
 
 	COINS 
 	<note type="doctype">Technical Report</note> 
-	91-
-	<date>34<lb/> November 1991<lb/></date>
+	91-34<lb/>
+	<date>November 1991<lb/></date>
 
 	<byline>
 	<affiliation>y Electrical and Computer Engineering Dept.<lb/> Boston University<lb/></affiliation>
@@ -25,8 +25,7 @@
 
 	<address>44 Cummington Street<lb/> Boston, Massachusetts 02125</address>
 
-	Abstract<lb/>
-	<div type="abstract">This report outlines the IPUS paradigm, named for Integrated Processing and Under-<lb/>standing of Signals, which permits sophisticated interaction between theory-based problem<lb/> solving in signal processing and heuristic problem-solving in signal interpretation. The need<lb/> for such a paradigm arises in signal understanding domains that require the processing of<lb/> complicated interacting signals under variable signal-to-noise ratios. One such application is<lb/> sound understanding, in the context of which we report on a testbed experiment illustrating<lb/> the functionality of key IPUS architecture components.</div>
+	
 
 		</front>
 	</text>

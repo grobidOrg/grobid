@@ -24,8 +24,7 @@
 
 	<date>December 10, 1995</date>
 
-	Abstract<lb/>
-	<div type="abstract">Mitchell de ned and axiomatized a subtyping relationship (also known<lb/> as containment, coercibility, or subsumption) over the types of System F<lb/> (with \!&quot; and \8&quot;). This subtyping relationship is quite simple and does<lb/> not involve bounded quanti cation. Tiuryn and Urzyczyn quite recently<lb/> proved this subtyping relationship to be undecidable. This paper sup-<lb/>plies a new undecidability proof for this subtyping relationship. First, a<lb/> new syntax-directed axiomatization of the subtyping relationship is de-<lb/>ned. Then, this axiomatization is used to prove a reduction from the<lb/> undecidable problem of semi-uni cation to subtyping. The undecidabil-<lb/>ity of subtyping implies the undecidability of type checking for System F<lb/> extended with Mitchell&apos;s subtyping, also known as \F plus eta&quot;.</div>
+	
 
 		</front>
 	</text>

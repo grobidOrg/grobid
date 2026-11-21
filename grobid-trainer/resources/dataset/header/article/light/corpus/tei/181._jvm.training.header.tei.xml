@@ -30,8 +30,7 @@
 
 	<email>wolfram@informatik.uni-ulm.de<lb/></email>
 
-	Abstract.
-	<div type="abstract">We provide concise abstract code for running the Java Vir-<lb/>tual Machine JVM to execute compiled Java programs, and de ne a<lb/> general compilation scheme of Java programs to JVM code. These def-<lb/>initions, together with the de nition of an abstract interpreter of Java<lb/> programs given in our previous work 3 , allow us to prove that any<lb/> compiler that satis es the conditions stated in this paper compiles Java<lb/> code correctly. In addition we have validated our JVM and compiler<lb/> speci cation through experimentation.<lb/> The modularity of our de nitions for Java, the JVM and the compilation<lb/> scheme exhibit orthogonal language, machine and compiler components,<lb/> which t together and provide the basis for a stepwise and provably cor-<lb/>rect design for reuse. As a by-product we provide a challenging realistic<lb/> case study for mechanical veri cation of a compiler correctness proof.<lb/></div>
+	
 
 	? This paper is presented to the
 	<meeting>23rd International Symposium on Mathematical Foundations of<lb/> Computer Science, Brno, Czech Republic, August 24 28, 1998, </meeting>

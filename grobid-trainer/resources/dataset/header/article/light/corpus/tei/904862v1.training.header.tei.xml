@@ -27,22 +27,22 @@
 	<address>Chapel Hill, NC 27599, USA<lb/></address>
 
 	<byline>
-	<affiliation>3) Neurogenetics Program, Department of Neurology, David Geffen School of Medicine University of<lb/> California,</affiliation>
+	<affiliation>3) Neurogenetics Program, Department of Neurology, David Geffen School of Medicine University of<lb/> California, Los Angeles,</affiliation>
 	</byline>
 
-	<address>Los Angeles, Los Angeles, CA 90095, USA<lb/></address>
+	<address>Los Angeles, CA 90095, USA<lb/></address>
 
 	<byline>
-	<affiliation>4) Center for Autism Research and Treatment, Semel Institute, David Geffen School of Medicine<lb/> University of California,</affiliation>
+	<affiliation>4) Center for Autism Research and Treatment, Semel Institute, David Geffen School of Medicine<lb/> University of California, Los Angeles,</affiliation>
 	</byline>
 
-	<address>Los Angeles, Los Angeles, CA 90095, USA<lb/></address>
+	<address>Los Angeles, CA 90095, USA<lb/></address>
 
 	<byline>
-	<affiliation>5) Department of Human Genetics, David Geffen School of Medicine University of California,</affiliation>
+	<affiliation>5) Department of Human Genetics, David Geffen School of Medicine University of California, Los<lb/> Angeles,</affiliation>
 	</byline>
 
-	<address>Los<lb/> Angeles, Los Angeles, CA 90095, USA<lb/></address>
+	<address>Los Angeles, CA 90095, USA<lb/></address>
 
 	<byline>
 	<affiliation>6) Duke Molecular Physiology Institute, Duke University,</affiliation>
@@ -75,21 +75,20 @@
 	<address>Chapel Hill, NC 27599, USA<lb/></address>
 
 	<byline>
-	<affiliation>11) Department of Psychiatry and Biobehavioral Sciences, Semel Institute, David Geffen School of<lb/> Medicine University of California,</affiliation>
+	<affiliation>11) Department of Psychiatry and Biobehavioral Sciences, Semel Institute, David Geffen School of<lb/> Medicine University of California, Los Angeles,</affiliation>
 	</byline>
 
-	<address>Los Angeles, Los Angeles, CA 90095, USA<lb/> 12</address>
+	<address>Los Angeles, CA 90095, USA<lb/></address>
 
-	) Lead Contact:
+	12 ) Lead Contact:
 	<email>jason_stein@med.unc.edu</email>
 
-	Summary<lb/>
-	<div type="abstract">Common genetic risk for neuropsychiatric disorders is enriched in regulatory elements active<lb/> during cortical neurogenesis. However, the mechanisms mediating the effects of genetic<lb/> variants on gene regulation are poorly understood. To determine the functional impact of<lb/> common genetic variation on the non-coding genome longitudinally during human cortical<lb/> development, we performed a chromatin accessibility quantitative trait loci (caQTL) analysis in<lb/> neural progenitor cells and their differentiated neuronal progeny from 92 donors. We identified<lb/> 8,111 caQTLs in progenitors and 3,676 caQTLs in neurons, with highly temporal, cell-type<lb/> specific effects. A subset (~20%) of caQTLs were also associated with changes in gene<lb/> expression. Motif-disrupting alleles of transcriptional activators generally led to decreases in<lb/> chromatin accessibility, whereas motif-disrupting alleles of repressors led to increases in<lb/> chromatin accessibility. By integrating cell-type specific caQTLs and brain-relevant<lb/> genome-wide association data, we were able to fine-map loci and identify regulatory<lb/> mechanisms underlying non-coding neuropsychiatric disorder risk variants.<lb/></div> 
+	 
 
 	Keywords 
 	<keyword>chromatin accessibility QTL, gene regulation, human neuronal differentiation,<lb/> neuropsychiatric disorders, GWAS, fine-mapping</keyword> 
 
-	<div type="abstract">Highlights<lb/> • Genetic variation alters chromatin architecture during human cortical development<lb/> • Genetic effects on chromatin accessibility are highly cell-type specific<lb/> • Alleles disrupting TF motifs generally decrease accessibility, except for repressors<lb/> • caQTLs facilitate fine-mapping and inference of regulatory mechanisms of GWAS loci</div>
+	
 
 		</front>
 	</text>

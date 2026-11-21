@@ -46,8 +46,7 @@
 
 	<address>Japan</address>
 
-	ABSTRACT<lb/>
-	<div type="abstract">We proposed an automatic bibliography extraction method for research papers scanned with OCR<lb/> markup. The method uses conditional random fields (CRFs) to label serially OCRed text lines in the<lb/> article title page as appropriate bibliographic element names. Although we achieved good extraction<lb/> accuracies for some Japanese academic journals, extraction errors are inevitable. Therefore, this paper<lb/> proposes three confidence measures for bibliography labeling to detect such extraction errors. This paper<lb/> also reports an empirical evaluation of CRF-based page analysis for research papers on the basis not only<lb/> of labeling accuracy but also of labeling error detection. We applied the three confidence measures to<lb/> detecting errors of labeling articles selected from three academic journals published in Japan. The<lb/> experiments showed that the proposed confidence measures reasonably indicated the labeling accuracies<lb/> and could be used for error detection. This paper also discusses the tradeoff between the quality of<lb/> bibliographic data assured by human post-editing of detected errors and its cost.</div>
+	
 
 	KEYWORDS<lb/>
 	<keyword>Bibliography extraction, conditional random field (CRF), error detection, OCR, digital library.</keyword>

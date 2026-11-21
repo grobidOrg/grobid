@@ -15,10 +15,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>1 Department of Physics, University of Lethbridge, 4401 University Drive,</affiliation>
+	<affiliation>1 Department of Physics, University of Lethbridge,</affiliation>
 	</byline>
 
-	<address>Lethbridge, Alberta, Canada T1K 3M4<lb/></address>
+	<address>4401 University Drive, Lethbridge, Alberta, Canada T1K 3M4<lb/></address>
 
 	<byline>
 	<affiliation>2 Max-Planck-Institut für Gravitationphysik,</affiliation>
@@ -33,7 +33,7 @@
 	<date>10 March 2008</date>
 	)<lb/>
 
-	<div type="abstract">We reexamine the idea that the origin of black-hole entropy may lie in the entanglement of quantum<lb/> fields between the inside and outside of the horizon. Motivated by the observation that certain modes of<lb/> gravitational fluctuations in a black-hole background behave as scalar fields, we compute the entangle-<lb/>ment entropy of such a field, by tracing over its degrees of freedom inside a sphere. We show that while<lb/> this entropy is proportional to the area of the sphere when the field is in its ground state, a correction term<lb/> proportional to a fractional power of area results when the field is in a superposition of ground and excited<lb/> states. The area law is thus recovered for large areas. Further, we identify the location of the degrees of<lb/> freedom that give rise to the above entropy.<lb/></div>
+	
 
 	<idno>DOI: 10.1103/PhysRevD.77.064013<lb/></idno>
 

@@ -28,8 +28,7 @@
 
 	<address>Italy</address>
 
-	Abstract<lb/>
-	<div type="abstract">This work presents a study of the applicability of a massively parallel computing paradigm<lb/> to Monte Carlo techniques for device simulation. A unique mapping of Monte Carlo to SIMD<lb/> fine-grained parallelism has been developed, decoupling the problem into separate compu-<lb/>tational domains. For MOSFET simulation, this novel mapping allows estimated speeds of<lb/> over 200,000 scatterings processed per second on a 65,536 processor Connection Machine,<lb/> nearly a factor of six over the fastest known to date.</div>
+	
 
 		</front>
 	</text>

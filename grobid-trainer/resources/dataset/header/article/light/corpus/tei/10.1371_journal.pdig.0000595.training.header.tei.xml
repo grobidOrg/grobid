@@ -13,8 +13,10 @@
 	</docTitle>
 
 	<byline>
-	<docAuthor>Elisa Garcia Gomez 1☯ , Kitiezo Aggrey Igunza 2☯ , Zachary J. Madewell ID 3<lb/> , Victor Akelo 4 ,<lb/> Dickens Onyango 5 , Shams El Arifeen 6 , Emily S. Gurley 7 , Mohammad Zahid Hossain ID<lb/> 6 ,<lb/> Md Atique Iqbal Chowdhury 6 , Kazi Munisul Islam 6 , Nega Assefa 8,9,10 , J. Anthony G. Scott 8 ,<lb/> Lola Madrid 8,9,10 , Yenenesh Tilahun 9,10 , Stian Orlien ID<lb/> 11,12 , Karen L. Kotloff 13 , Milagritos<lb/> D. Tapia 13 , Adama Mamby Keita 14 , Ashka Mehta 13 , Amilcar Magac ¸o15 , David Torres-<lb/>FernandezID 15,16 , Ariel Nhacolo 15 , Quique BassatID 15,16,17,18,19 , Ina ´cio Mandomando 15,16,20 ,<lb/> Ikechukwu OgbuanuID 21 , Carrie Jo Cain 22 , Ronita Luke 23 , Sorie I. B. Kamara 21 ,<lb/> Hailemariam LegesseID 24 , Shabir Madhi 25 , Ziyaad Dangor 25 , Sana MahtabID 25 ,<lb/> Amy Wise 26 , Yasmin Adam 27 , Cynthia G. Whitney 28 , Portia C. Mutevedzi 28 , Dianna<lb/> M. BlauID 3 , Robert F. BreimanID 29 , Beth A. Tippett BarrID 30 , Chris A. ReesID 31,32 *, Child<lb/> Health and Mortality Prevention Surveillance Network ¶<lb/></docAuthor>
+	<docAuthor>Elisa Garcia Gomez 1☯ , Kitiezo Aggrey Igunza 2☯ , Zachary J. Madewell ID 3<lb/> , Victor Akelo 4 ,<lb/> Dickens Onyango 5 , Shams El Arifeen 6 , Emily S. Gurley 7 , Mohammad Zahid Hossain ID<lb/> 6 ,<lb/> Md Atique Iqbal Chowdhury 6 , Kazi Munisul Islam 6 , Nega Assefa 8,9,10 , J. Anthony G. Scott 8 ,<lb/> Lola Madrid 8,9,10 , Yenenesh Tilahun 9,10 , Stian Orlien ID<lb/> 11,12 , Karen L. Kotloff 13 , Milagritos<lb/> D. Tapia 13 , Adama Mamby Keita 14 , Ashka Mehta 13 , Amilcar Magac ¸o15 , David Torres-<lb/>FernandezID 15,16 , Ariel Nhacolo 15 , Quique BassatID 15,16,17,18,19 , Ina ´cio Mandomando 15,16,20 ,<lb/> Ikechukwu OgbuanuID 21 , Carrie Jo Cain 22 , Ronita Luke 23 , Sorie I. B. Kamara 21 ,<lb/> Hailemariam LegesseID 24 , Shabir Madhi 25 , Ziyaad Dangor 25 , Sana MahtabID 25 ,<lb/> Amy Wise 26 , Yasmin Adam 27 , Cynthia G. Whitney 28 , Portia C. Mutevedzi 28 , Dianna<lb/> M. BlauID 3 , Robert F. BreimanID 29 , Beth A. Tippett BarrID 30 , Chris A. ReesID 31,32 *,</docAuthor>
 	</byline>
+
+	<note type="group">Child<lb/> Health and Mortality Prevention Surveillance Network ¶<lb/></note>
 
 	<byline>
 	<affiliation>1 Emory University School of Medicine, Emory University,</affiliation>
@@ -211,7 +213,7 @@
 	☯ These authors contributed equally to this work.<lb/> ¶ Membership of the Child Health and Mortality Prevention Surveillance Network is provided in the Supporting<lb/> information file in S1 Acknowledgments.<lb/> *
 	<email>chris.rees@emory.edu<lb/></email>
 
-    <note type="doctype">PLOS GLOBAL PUBLIC HEALTH<lb/></note>
+	<title level="j">PLOS GLOBAL PUBLIC HEALTH<lb/></title>
 
 	<reference>PLOS Global Public Health | https://doi.org/10.1371/journal.pgph.0002494 February 8, 2024<lb/></reference>
 
@@ -228,9 +230,9 @@
 	Editor:
 	<editor>Julia Robinson</editor>
 
-	, PLOS:
+	,
 	<byline>
-	<affiliation>Public Library of<lb/> Science,</affiliation>
+	<affiliation>PLOS: Public Library of<lb/> Science,</affiliation>
 	</byline>
 
 	<address>UNITED STATES<lb/></address>
@@ -249,8 +251,7 @@
 	Funding:
 	<note type="funding">CHAMPS is funded by The Bill &amp; Melinda<lb/> Gates Foundation (OPP1126780 to CGW) which<lb/> provided input into site selection decisions and<lb/> methodology and scope of CHAMPS. The funders<lb/> had no role in study design, data collection and<lb/> analysis, decision to publish, or preparation of the</note>
 
-	Abstract<lb/>
-	<div type="abstract">Delays in illness recognition, healthcare seeking, and in the provision of appropriate clinical<lb/> care are common in resource-limited settings. Our objective was to determine the frequency<lb/> of delays in the &quot;Three Delays-in-Healthcare&quot;, and factors associated with delays, among<lb/> deceased infants and children in seven countries with high childhood mortality. We con-<lb/>ducted a retrospective, descriptive study using data from verbal autopsies and medical rec-<lb/>ords for infants and children aged 1-59 months who died between December 2016 and<lb/> February 2022 in six sites in sub-Saharan Africa and one in South Asia (Bangladesh) and<lb/> were enrolled in Child Health and Mortality Prevention Surveillance (CHAMPS). Delays in 1)<lb/> illness recognition in the home/decision to seek care, 2) transportation to healthcare facili-<lb/>ties, and 3) the receipt of clinical care in healthcare facilities were categorized according to<lb/> the &quot;Three Delays-in-Healthcare&quot;. Comparisons in factors associated with delays were<lb/> made using Chi-square testing. Information was available for 1,326 deaths among infants<lb/> and under 5 children. The majority had at least one identified delay (n = 854, 64%). Waiting<lb/> &gt;72 hours after illness recognition to seek health care (n = 422, 32%) was the most common<lb/> delay. Challenges in obtaining transportation occurred infrequently when seeking care (n =<lb/> 51, 4%). In healthcare facilities, prescribed medications were sometimes unavailable (n =<lb/> 102, 8%). Deceased children aged 12-59 months experienced more delay than infants<lb/> aged 1-11 months (68% vs. 61%, P = 0.018). Delays in seeking clinical care were common<lb/> among deceased infants and children. Additional study to assess the frequency of delays in<lb/> seeking clinical care and its provision among children who survive is warranted.<lb/></div>
+	
 
     <note type="funding">manuscript. None of the authors receive a salary<lb/> from any of the funders.<lb/></note>
 

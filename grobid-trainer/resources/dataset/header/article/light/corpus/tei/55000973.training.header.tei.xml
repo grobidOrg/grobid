@@ -24,8 +24,7 @@
 
 	<date>October 11, 2000</date>
 
-	Abstract<lb/>
-	<div type="abstract">Traditional answering machines and voice mail services are closed sys-<lb/>tems, tightly coupled to a single end system, the local PBX or local exchange<lb/> carrier. Even simple services, such as forwarding voice mail to another user<lb/> outside the local system, are hard to provide. With the advent of Internet<lb/> telephony, we need to provide voice and video mail services. This also offers<lb/> the opportunity to address some of the shortcomings of existing voice mail<lb/> systems.<lb/> We list general requirements for a multimedia mail system for Internet<lb/> telephony. We then propose an architecture using SIP (Session Initiation<lb/> Protocol) and RTSP (Real-Time Streaming Protocol) and compare various<lb/> alternative approaches to solving call forwarding, reclaiming and retrieval of<lb/> messages. We also briefly describe our prototype implementation.<lb/></div>
+	
 
 	<note type="funding">£ This work was supported by a grant from Sylantro Corp.</note>
 

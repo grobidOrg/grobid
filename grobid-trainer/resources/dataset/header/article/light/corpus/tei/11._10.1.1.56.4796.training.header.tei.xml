@@ -23,8 +23,7 @@
 	e-mail:
 	<email>neelam@cis.ohio-state.edu<lb/></email>
 
-	Abstract:
-	<div type="abstract">How do we formally specify the relation between a base class and a<lb/> derived class? This question has two parts, a syntactic one, and a semantic one.<lb/> The syntactic part is of course the easier of the two and the answer to that part is<lb/> the standard contra/co-variance requirement on the arguments and result of any<lb/> base class method redefined in the derived class. Our concern in the current paper<lb/> is with the semantic part of the question, i.e., how do we specify the behavioral<lb/> relation between the base class and the derived class? We show that the standard<lb/> answer -which is the semantic counterpart of contra/co-variance-is too rigid, and<lb/> does not allow some natural and common forms of inheritance. We then propose a<lb/> more flexible way to specify the relation, and show how different types of behav-<lb/>ioral relations between base classes and derived classes may be specified using our<lb/> notation.</div>
+	
 
 		</front>
 	</text>

@@ -26,8 +26,7 @@
 
 	<email>{natec,jurafsky}@stanford.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">Previous work on ordering events in text has<lb/> typically focused on local pairwise decisions,<lb/> ignoring globally inconsistent labels. How-<lb/>ever, temporal ordering is the type of domain<lb/> in which global constraints should be rela-<lb/>tively easy to represent and reason over. This<lb/> paper presents a framework that informs lo-<lb/>cal decisions with two types of implicit global<lb/> constraints: transitivity (A before B and B be-<lb/>fore C implies A before C) and time expression<lb/> normalization (e.g. last month is before yes-<lb/>terday). We show how these constraints can<lb/> be used to create a more densely-connected<lb/> network of events, and how global consis-<lb/>tency can be enforced by incorporating these<lb/> constraints into an integer linear programming<lb/> framework. We present results on two event<lb/> ordering tasks, showing a 3.6% absolute in-<lb/>crease in the accuracy of before/after classifi-<lb/>cation over a pairwise model.</div>
+	
 
 		</front>
 	</text>

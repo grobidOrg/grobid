@@ -25,8 +25,7 @@
 
 	<email>fpwurman, wellmang@umich.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">We examine a standard factory scheduling<lb/> problem with stochastic processing and setup<lb/> times, minimizing the expectation of the<lb/> weighted number of tardy jobs. Because<lb/> the costs of operators in the schedule are<lb/> stochastic and sequence dependent, standard<lb/> dynamic programming algorithms such as<lb/> A* may fail to nd the optimal schedule.<lb/> The SDA* (Stochastic Dominance A*) algo-<lb/>rithm remedies this di culty by relaxing the<lb/> pruning condition. We present an improved<lb/> state-space search formulation for these prob-<lb/>lems and discuss the conditions under which<lb/> stochastic scheduling problems can be solved<lb/> optimally using SDA*. In empirical testing<lb/> on randomly generated problems, we found<lb/> that in 70%, the expected cost of the opti-<lb/>mal stochastic solution is lower than that of<lb/> the solution derived using a deterministic ap-<lb/>proximation, with comparable search e ort.</div>
+	
 
 		</front>
 	</text>

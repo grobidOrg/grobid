@@ -26,8 +26,7 @@
 
 	<address>Cachan, France<lb/></address>
 
-	Abstract<lb/>
-	<div type="abstract">To ensure the gear precision, industries need a coherent model to express, to analyse and to check<lb/> geometrical specifications. Most gear tolerance representations are directly driven by the convenience of<lb/> dimensional metrology and not by the convenience of the set of activities of the tolerancing process.<lb/> Therefore, to ensure the coherence of all tolerancing process activities, there is a necessity to develop a<lb/> complete gear tolerance model which should: represent standard tolerance practices; be integrated in the<lb/> Computer-Aided systems of design, manufacturing and metrology; be controlled by CMM; and support<lb/> automated tolerance analysis. The proposed model extends capabilities of a vectorial dimensioning &amp;<lb/> tolerancing model in order to satisfy the four requirements. This model is based on GeoSpelling [1]. Its<lb/> coherence is illustrated by two applications: gear tolerance analysis and gear tolerance verification by CMM.<lb/></div>
+	
 
 	Keywords:<lb/>
 	<keyword>Tolerancing Model, Functional Metrology, Gear<lb/></keyword>

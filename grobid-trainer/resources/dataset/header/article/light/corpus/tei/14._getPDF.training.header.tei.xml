@@ -32,8 +32,7 @@
 	,
 	<email>risto@cs.utexas.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">According to space-based theory, visual attention is limited to a local region in space called the<lb/> attentional field. Visual information within the attentional field is enhanced for further processing<lb/> while information outside is suppressed. There is evidence that enhancement and suppression are<lb/> achieved with dynamic weighting of network activity. This paper discusses a neural network that<lb/> generates the appropriate weights, called the otfentional spotlight, given the size and the position of<lb/> the intended attentional field. The network has three layers. A hmtingfeedback network serves as the<lb/> output layer and performs a critical task whirh cannot be accomplished by feedforward networks.<lb/></div>
+	
 
 	Authorized licensed use limited to: European Patent Office. Downloaded on July 10, 2009 at 04:34 from IEEE Xplore. Restrictions apply.<lb/>
 

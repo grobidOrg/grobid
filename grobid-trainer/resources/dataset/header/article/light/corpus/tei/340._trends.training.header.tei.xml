@@ -28,8 +28,7 @@
 
 	<email>dahlin@cs.berkeley.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper describes several key trends in technology that will influence the design of file sys-<lb/>tems for the next decade. It first outlines the basic trends to hardware performance that underlie<lb/> file system design. These trends affect both user demands on file systems and trade-offs in their<lb/> design. It then considers how technologies will drive more demanding file system workloads that<lb/> will require scalable file systems. Next, it outlines how opportunities raised by these low-level<lb/> technology trends impact specific aspects of the xFS file system&apos;s serverless design [Dahlin<lb/> et al., 1994b, Anderson et al., 1996]. Finally, to put xFS&apos;s serverless approach in context, it dis-<lb/>cusses other technology trends that affect file systems but that are not explicitly addressed in the<lb/> serverless design.</div>
+	
 
 		</front>
 	</text>

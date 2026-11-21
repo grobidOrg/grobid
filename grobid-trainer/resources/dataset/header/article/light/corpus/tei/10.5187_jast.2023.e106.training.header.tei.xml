@@ -115,7 +115,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0003-2142-9888</idno>
+          <idno type="orcid">https://orcid.org/0000-0003-2142-9888</idno>
           
           )<lb/> 
       
@@ -124,7 +124,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0002-1985-583X</idno>
+          <idno type="orcid">https://orcid.org/0000-0002-1985-583X</idno>
           
           )<lb/> 
       
@@ -133,7 +133,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0001-5143-355X</idno>
+          <idno type="orcid">https://orcid.org/0000-0001-5143-355X</idno>
           
           )<lb/> 
       
@@ -143,7 +143,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0003-4710-4731</idno>
+          <idno type="orcid">https://orcid.org/0000-0003-4710-4731</idno>
           
           )<lb/> 
       
@@ -152,7 +152,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0002-3083-1513</idno>
+          <idno type="orcid">https://orcid.org/0000-0002-3083-1513</idno>
           
           )<lb/> 
       
@@ -161,7 +161,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0009-0009-5260-7764</idno>
+          <idno type="orcid">https://orcid.org/0009-0009-5260-7764</idno>
           
           )<lb/> 
       
@@ -170,7 +170,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0009-0001-2064-4298</idno>
+          <idno type="orcid">https://orcid.org/0009-0001-2064-4298</idno>
           
           )<lb/> 
       
@@ -179,7 +179,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0003-2392-5535</idno>
+          <idno type="orcid">https://orcid.org/0000-0003-2392-5535</idno>
           
           )<lb/> 
       
@@ -188,7 +188,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0003-3163-8077</idno>
+          <idno type="orcid">https://orcid.org/0000-0003-3163-8077</idno>
           
           )<lb/> 
       
@@ -197,7 +197,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org//0000-0002-1935-2132</idno>
+          <idno type="orcid">https://orcid.org//0000-0002-1935-2132</idno>
           
           )<lb/> 
           
@@ -226,7 +226,9 @@
 	<email>kjektw@korea.kr<lb/></email>
 
 	Secondary Email address<lb/> Address<lb/>
-	<address>114, Sinbang 1-gil, Seonghwan-eup, Seobuk-gu, Cheonan-si,<lb/> Chungcheongnam-do, Republic of Korea<lb/> Cell phone number<lb/></address>
+	<address>114, Sinbang 1-gil, Seonghwan-eup, Seobuk-gu, Cheonan-si,<lb/> Chungcheongnam-do, Republic of Korea<lb/></address>
+
+	Cell phone number<lb/>
 
 	<phone>+8201-8536-1782<lb/></phone>
           
@@ -234,8 +236,7 @@
           
           <phone>+82-41-580-3454<lb/></phone>
           
-          Fax number<lb/> +82-41-580-3459<lb/> Abstract:<lb/>
-	<div type="abstract">This study investigated the effects of addition of Italian ryegrass with multi-enzyme on growth performance, fecal<lb/> odor, and microbiome. The experiment had a two-factor factorial design, using three levels of Italian ryegrass<lb/> (0%, 2.5%, and 5%) and two levels of multi-enzymes (no enzyme and commercially recommended level) to<lb/> formulate experimental diets. In total, 60 crossbred LYD pigs (88.35 ± 2.57 kg) were allocated into six dietary<lb/> treatments with five replicates. After four weeks, fecal samples were collected via rectal massage for microbiome<lb/> and odorous compound analysis. Results showed no significant difference (p&gt;0.05) in growth performance, except<lb/> for feed intake (p&lt;0.05), which was higher in enzyme-added diets. Fecal microbiome exhibited no differences<lb/> (p&gt;0.05) between treatments, with Firmicutes and Bacteroidetes being the major phyla, similar to the general pig<lb/> population. Alpha and beta diversity analyses showed no significant differences (p&gt;0.05). Odorous compounds<lb/> displayed no significant differences (p&gt;0.05), except for indoles (p&lt;0.05) influenced by the enzyme. In conclusion,<lb/> 5% Italian ryegrass with multi-enzymes can be used as an alternative feed ingredient, having no negative effects<lb/> on the growth performance, microbiome, and odorous compounds of growing pigs.<lb/></div>
+          Fax number<lb/> +82-41-580-3459<lb/> 
 
 	Keywords:
 	<keyword>growth performance, Italian ryegrass, manure odor, microbiome, NSP enzyme</keyword>

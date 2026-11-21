@@ -39,8 +39,7 @@
 	Online at
 	<ptr type="web">stacks.iop.org/CQG/25/114006<lb/></ptr>
 
-	Abstract<lb/>
-	<div type="abstract">Is there an approach to quantum gravity which is conceptually simple, relies<lb/> on very few fundamental physical principles and ingredients, emphasizes<lb/> geometric (as opposed to algebraic) properties, comes with a definite numerical<lb/> approximation scheme, and produces robust results, which go beyond showing<lb/> mere internal consistency of the formalism? The answer is a resounding yes:<lb/> it is the attempt to construct a nonperturbative theory of quantum gravity, valid<lb/> on all scales, with the technique of so-called causal dynamical triangulations.<lb/> Despite its conceptual simplicity, the results obtained up to now are far<lb/> from trivial. Most remarkable at this stage is perhaps the fully dynamical<lb/> emergence of a classical background (and solution to the Einstein equations)<lb/> from a nonperturbative sum over geometries, without putting in any preferred<lb/> geometric background at the outset. In addition, there is concrete evidence for<lb/> the presence of a fractal spacetime foam on Planckian distance scales. The<lb/> availability of a computational framework provides built-in reality checks of<lb/> the approach, whose importance can hardly be overestimated.<lb/></div>
+	
 	
 	<keyword>PACS numbers: 04.60.Gw, 04.60.Nc<lb/></keyword>
 

@@ -30,8 +30,7 @@
 
 	<email>mihael.arcan@deri.org</email>, <email>paul.buitelaer@deri.org</email>,<lb/> <email>cfedermann@dfki.de</email>
 
-	Abstract<lb/>
-	<div type="abstract">In this article we investigate the translation of financial terms from English into German in the<lb/> isolation of an ontology vocabulary. For this study we automatically built new domain-specific<lb/> resources from the translation search engine Linguee and from the online encyclopaedia Wikipedia.<lb/> Due to the fact that we performed the translation approach on a monolingual ontology, we ran<lb/> several sub-experiments to find the most appropriate model to translate the financial vocabulary.<lb/> The findings from these experiments lead to the conclusion that a hybrid translation system, a<lb/> combination of bilingual terminological resources and statistical machine translation, can help<lb/> to improve translation of domain-specific terms. Finally we undertook a manual cross-lingual<lb/> evaluation on the monolingual ontology to get a better understanding on this specific short text<lb/> translation task.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Ontologies and terminology, Empirical machine translation.</keyword>

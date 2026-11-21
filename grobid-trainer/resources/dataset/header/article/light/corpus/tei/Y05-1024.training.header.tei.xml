@@ -36,8 +36,7 @@
 
 	<email>a-okumura@bx.jp.nec.com<lb/></email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper describes a text retrieval system for cellular phones with Web browsing<lb/> capability, which accepts spoken queries over the cellular phone and provides the<lb/> search result on the cellular phone screen. This system recognizes spoken queries by<lb/> large vocabulary continuous speech recognition (LVCSR), retrieves relevant<lb/> document by text retrieval, and provides the search result on the World Wide Web by<lb/> the integration of the Web and the voice systems. The text retrieval in this system<lb/> improves the performance for spoken short queries by: 1) utilizing word pairs with<lb/> dependency relations, 2) distinguishing affirmative and negative expressions, and 3)<lb/> converging synonyms. The LVCSR in this system shows enough performance level<lb/> for speech over the cellular phone with acoustic and language models derived from a<lb/> query corpus with target contents. The system constructed for user&apos;s manual for a<lb/> cellular phone navigates users to relevant passages for 81.4% of spoken queries.</div>
+	
 
 		</front>
 	</text>

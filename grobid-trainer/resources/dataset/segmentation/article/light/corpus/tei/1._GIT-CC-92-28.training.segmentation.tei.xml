@@ -4,7 +4,9 @@
 		<fileDesc xml:id="_0"/>
 	</teiHeader>
 	<text xml:lang="en">
-			<front>Protocols for Collecting Responses <lb/>in Multi-hop Radio Networks <lb/>Chungki Lee <lb/>James E. Burns <lb/>Mostafa H. Ammar <lb/>GIT{CC{92/28 <lb/>June 1992 <lb/>Abstract <lb/>The problem of collecting responses in multi-hop radio networks is consid-<lb/>ered. A given node, called the source, is to collect a speci ed number of <lb/>responses from nodes in a radio network. The problem arises in several <lb/>applications of distributed systems. A deterministic and a randomized pro-<lb/>tocol for the problem are presented. The two protocols are analyzed and <lb/>their performance is compared. Conclusions are drawn about the suitability <lb/>of our protocols in various network environments. <lb/>College of Computing <lb/>Georgia Institute of Technology <lb/>Atlanta, Georgia 30332{0280 <lb/>THIS PAGE INTENTIONALLY LEFT BLANK. <lb/></front>
+			<front>Protocols for Collecting Responses <lb/>in Multi-hop Radio Networks <lb/>Chungki Lee <lb/>James E. Burns <lb/>Mostafa H. Ammar <lb/>GIT{CC{92/28 <lb/>June 1992 <lb/></front>
+			<body>Abstract <lb/>The problem of collecting responses in multi-hop radio networks is consid-<lb/>ered. A given node, called the source, is to collect a speci ed number of <lb/>responses from nodes in a radio network. The problem arises in several <lb/>applications of distributed systems. A deterministic and a randomized pro-<lb/>tocol for the problem are presented. The two protocols are analyzed and <lb/>their performance is compared. Conclusions are drawn about the suitability <lb/>of our protocols in various network environments. <lb/></body>
+			<front>College of Computing <lb/>Georgia Institute of Technology <lb/>Atlanta, Georgia 30332{0280 <lb/>THIS PAGE INTENTIONALLY LEFT BLANK. <lb/></front>
 
 			<note place="headnote">Protocols for Collecting Responses in Multi-hop Radio Networks <lb/>1 <lb/></note>
 

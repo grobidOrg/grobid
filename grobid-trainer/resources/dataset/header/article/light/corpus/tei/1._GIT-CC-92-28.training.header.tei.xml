@@ -18,8 +18,7 @@
 
 	<date>June 1992</date> 
 
-	Abstract<lb/>
-	<div type="abstract">The problem of collecting responses in multi-hop radio networks is consid-<lb/>ered. A given node, called the source, is to collect a speci ed number of<lb/> responses from nodes in a radio network. The problem arises in several<lb/> applications of distributed systems. A deterministic and a randomized pro-<lb/>tocol for the problem are presented. The two protocols are analyzed and<lb/> their performance is compared. Conclusions are drawn about the suitability<lb/> of our protocols in various network environments.<lb/></div>
+	
 
 	<byline>
 	<affiliation>College of Computing<lb/> Georgia Institute of Technology<lb/></affiliation>

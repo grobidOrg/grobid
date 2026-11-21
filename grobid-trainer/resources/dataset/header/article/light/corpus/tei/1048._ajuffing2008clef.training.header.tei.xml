@@ -22,8 +22,7 @@
 
 	<email>ajuffinger,rkern,mgranitzer@know-center.at</email>
 
-	Abstract<lb/>
-	<div type="abstract">In this paper we describe the methodology, architecture and implementation of the<lb/> information retrieval system we have developed for the Robust WSD Task at CLEF<lb/> 2008. Our system is based on an extensive query preprocessing step for homogeni-<lb/>sation of the corpus queries. The preprocessing of queries includes: firstly, an query<lb/> expansion step based on Wordnet Synonsyms or an Associative Index, secondly a query<lb/> translation step based on corpus article cooccurrence in Wikipedia, and thirdly a stan-<lb/>dard disjunct index search in the CLEF corpus. The crosslanguage enabled system<lb/> behaves thereby as much as possible fair over different languages. We apply the same<lb/> preprocessing steps, independent of the query and corpus language, to all queries.<lb/></div>
+	
 
 	Categories and Subject Descriptors<lb/> 
 	<keyword>H.3 [Information Storage and Retrieval]: H.3.1 Content Analysis and Indexing; H.3.3 Infor-<lb/>mation Search and Retrieval; H.3.4 Systems and Software; H.3.7 Digital Libraries; H.2.3 [Database<lb/> Managment]: Languages<lb/></keyword>

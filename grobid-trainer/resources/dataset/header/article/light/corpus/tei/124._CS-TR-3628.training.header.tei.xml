@@ -24,8 +24,7 @@
 
 	<date>April 23, 1996</date>
 
-	Abstract<lb/>
-	<div type="abstract">We propose a hybrid method for synthesis of hierarchical structured Petri nets. In a top-<lb/>down manner, we decompose a system into a set of subsystems at each level of abstraction, each<lb/> of these is speci ed as a blackbox Petri net that has multiple inputs and outputs. We stipulate<lb/> that each subsystem satis es the following I/O constraints: (1) At any instance of time, at<lb/> most one of the inputs can be activated; and (2) If one input is activated, then the subsystem<lb/> must consume the input and produce exactly one output within a nite length of time. We<lb/> give a stepwise re nement procedure which starts from the initial high-level abstraction of the<lb/> system and expands an internal place of a blackbox Petri net into a more detailed subnet at<lb/> each step. By enforcing the I/O constraints of each subsystem in each intermediate abstraction,<lb/> our re nement maintains the sequencing of transitions prescribed by the initial abstraction of<lb/> the system. Next, for the bottom-up synthesis, we present interconnection rules for sequential,<lb/> parallel, and loop structures and prove that each rule maintains the I/O constraints. Thus, by<lb/> incorporating these interconnection rules into our re nement formulation, our approach can be<lb/> regarded as a hybrid Petri net synthesis technique that employs both top-down and bottom-up<lb/> methods. The major advantage of the method is that the modeling details can be introduced<lb/> incrementally and naturally, while the important logical properties of the resulting Petri net are<lb/> guaranteed.<lb/></div>
+	
 
 	<note type="funding">This research was supported by NASA Grant No. NAG 5-2648.</note> 
 

@@ -47,8 +47,7 @@
 	; JTL:
 	<email>jtleek@gmail.com</email>
 
-	Abstract<lb/>
-	<div type="abstract">Background Differential expression analysis of RNA sequencing (RNA-seq) data typically relies on<lb/> reconstructing transcripts or counting reads that overlap known gene structures. Previously we<lb/> introduced an intermediate approach called differentially expressed region (DER) finder that seeks<lb/> to identify contiguous regions of the genome showing differential expression signal at single base<lb/> resolution that does not rely on existing annotation or potentially inaccurate transcript discovery.<lb/> However, there were computational challenges involved with performing base-resolution analyses<lb/> in large numbers of samples at genome scale.<lb/> Results Here we describe a new version of the derfinder software that allows for: (1) genome-<lb/>scale analyses in a large number of samples, (2) flexible statistical modeling, including multi-group<lb/> and time course analyses, and (3) a new, computationally efficient approach to re-analysis at base<lb/> resolution called expressed-region analysis. We also introduce functionality for annotating and<lb/> plotting base-resolution data to identify artifacts and confirm results. We apply this approach<lb/></div> 
+	 
 
 	<page>1<lb/></page>
 
@@ -56,7 +55,7 @@
 
 	Collado-Torres et al.<lb/> 
 
-	<div type="abstract">to public RNA-seq data from the developing human brain to illustrate the types of analyses and<lb/> results possible using derfinder.<lb/> Conclusions Single-base and expressed-region RNA-sequencing analysis provides compromise be-<lb/>tween full transcript reconstruction and gene-level analysis. derfinder is software designed to<lb/> identify, visualize, and interpret differentially expressed regions. The package is available from<lb/> Bioconductor at www.bioconductor.org/packages/release/bioc/html/derfinder.html.<lb/></div>
+	
 
 	Key words:
 	<keyword>RNA sequencing, differential expression analysis, coverage, gene annotation, gene expression</keyword>

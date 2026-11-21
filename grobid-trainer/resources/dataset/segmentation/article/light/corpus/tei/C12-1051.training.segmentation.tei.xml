@@ -4,7 +4,9 @@
 		<fileDesc xml:id="__C12-1051"/>
 	</teiHeader>
 	<text xml:lang="en">
-			<front> Proceedings of COLING 2012: Technical Papers, pages 833–848, <lb/>COLING 2012, Mumbai, December 2012. <lb/> Flexible Structural Analysis of Near-Meet-Semilattices for <lb/>Typed Unification-based Grammar Design <lb/> Rouz beh FARAH M AN D Ger al d P EN N <lb/> University of Toronto <lb/> {rouzbeh,gpenn}@cs.toronto.edu <lb/> Abstract <lb/> We present a new method for directly working with typed unification grammars in which <lb/>type unification is not well-defined. This is often the case, as large-scale HPSG grammars <lb/>now usually have type systems for which many pairs do not have least upper bounds. Our <lb/>method yields a unification algorithm that compiles quickly and yet is nearly as fast during <lb/>parsing as one that requires least upper bounds. The method also provides a natural naming <lb/>convention for unification results in cases where no user-defined type exists. <lb/> Keywords: HPSG, typed feature structures, unification-based grammar. <lb/></front>
+			<front> Proceedings of COLING 2012: Technical Papers, pages 833–848, <lb/>COLING 2012, Mumbai, December 2012. <lb/> Flexible Structural Analysis of Near-Meet-Semilattices for <lb/>Typed Unification-based Grammar Design <lb/> Rouz beh FARAH M AN D Ger al d P EN N <lb/> University of Toronto <lb/> {rouzbeh,gpenn}@cs.toronto.edu <lb/></front>
+			<body> Abstract <lb/> We present a new method for directly working with typed unification grammars in which <lb/>type unification is not well-defined. This is often the case, as large-scale HPSG grammars <lb/>now usually have type systems for which many pairs do not have least upper bounds. Our <lb/>method yields a unification algorithm that compiles quickly and yet is nearly as fast during <lb/>parsing as one that requires least upper bounds. The method also provides a natural naming <lb/>convention for unification results in cases where no user-defined type exists. <lb/></body>
+			<front> Keywords: HPSG, typed feature structures, unification-based grammar. <lb/></front>
 
 			<page> 833 <lb/></page>
 

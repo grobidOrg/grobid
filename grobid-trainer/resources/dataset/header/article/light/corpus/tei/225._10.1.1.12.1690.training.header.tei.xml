@@ -20,7 +20,9 @@
 
 	<email>voss@cs.umd.edu<lb/></email>
 
-	<reference>BONNIE J. DORR<lb/></reference>
+	<byline>
+	<docAuthor>BONNIE J. DORR<lb/></docAuthor>
+	</byline>
 
 	<email>bonnie@cs.umd.edu<lb/></email>
 
@@ -32,8 +34,7 @@
 
 	<note type="submission">Received September 1,1994; Revised July 15, 1995<lb/></note>
 
-	Abstract.
-	<div type="abstract">In this paper we present one aspect of our research on machine translation (MT):<lb/> capturing the grammatical and computational relation between (i) the interlingua (IL) as de ned<lb/> declaratively in the lexicon and (ii) the IL as de ned procedurally by way of algorithms that<lb/> compose and decompose pivot IL forms. We begin by examining the interlinguas in the lexicons of<lb/> a variety of current IL-based approaches to MT. This brief survey makes it clear that no consensus<lb/> exists among MT researchers on the level of representation for de ning the IL. In the section that<lb/> follows, we explore the consequences of this missing formal framework for MT system builders who<lb/> develop their own lexical-IL entries. The lack of software tools to support rapid IL respeci cation<lb/> and testing greatly hampers their ability to modify representations to handle new data and new<lb/> domains. Our view is that IL-based MT research needs both (a) the formal framework to specify<lb/> possible IL grammars and (b) the software support tools to implement and test these grammars.<lb/> With respect to (a), we propose adopting a lexicalized grammar approach, tapping research<lb/> results from the study of tree grammars for natural language syntax. With respect to (b), we<lb/> sketch the design and functional speci cations for parts of ILustrate, the set of software tools<lb/> that we need to implement and test the various IL formalisms that meet the requirements of a<lb/> lexicalized grammar. In this way, we begin to address a basic issue in MT research, how to de ne<lb/> and test an interlingua as a computational language | without building a full MT system for<lb/> each possible IL formalism that might be proposed.<lb/></div>
+	
 
 	Keywords:
 	<keyword>interlingua, machine translation, lexicon, lexicalized grammar</keyword>

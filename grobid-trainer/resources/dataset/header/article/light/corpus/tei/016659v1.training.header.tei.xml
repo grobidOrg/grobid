@@ -47,8 +47,7 @@
 	; JTL:
 	<email>jtleek@gmail.com<lb/></email>
 
-	Summary:<lb/>
-	<div type="abstract">regionReport is a R package for generating detailed interactive reports from regions of the genome.<lb/> The report includes quality-control checks, an overview of the results, an interactive table of the<lb/> genomic regions, and reproducibility information. regionReport can easily be expanded with<lb/> report templates for other specialized analyses. In particular, regionReport has an extensive<lb/> report template for exploring derfinder results from annotation-agnostic RNA-seq differential<lb/> expression analyses.<lb/></div>
+	
 
 	Availability:<lb/> 
 	<note type="availability">regionReport is freely available via Bioconductor at<lb/> bioconductor.org/packages/release/bioc/html/regionReport.html.<lb/></note>

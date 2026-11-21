@@ -28,8 +28,7 @@
 	<affiliation>Silicon Graphics Inc.</affiliation>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">Subdivision surfaces provide a curved surface representation that is useful in a number of applications, in-<lb/>cluding modeling surfaces of arbitrary topological type [5] , fitting scattered data [6] , and geometric compression<lb/> and automatic level-of-detail generation using wavelets [8] . Subdivision surfaces also provide an attractive rep-<lb/>resentation for fast rendering, since they can directly represent complex surfaces of arbitrary topology. This direct<lb/> representation contrasts with traditional approaches such as trimmed NURBS, in which tesselating trim regions<lb/> dominates rendering time, and algebraic implicit surfaces, in which rendering requires resultants, root finders, or<lb/> other computationally expensive techniques.<lb/> We present a method for subdivision surface triangulation that is fast, uses minimum memory, and is simpler in<lb/> structure than a naive rendering method based on direct subdivision. These features make the algorithm amenable<lb/> to implementation on dedicated geometry engine processors, allowing high rendering performance on appropri-<lb/>ately equipped graphics hardware.<lb/></div>
+	
 
 	CR Categories and Subject Descriptors: 
 	<keyword>I.3.6 [Computer Graphics]: Methodology and Techniques.<lb/></keyword>

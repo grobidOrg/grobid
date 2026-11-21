@@ -19,13 +19,12 @@
 	</byline>
 
 	<byline>
-	<affiliation>* School of Computer Science, University of Manchester<lb/> ♣ Faulty of Life Sciences, University of Manchester<lb/> ♦ Dept. of Mathematics and Computer Science, Sharif University of Technology<lb/></affiliation>
+	<affiliation>* School of Computer Science, University of Manchester<lb/></affiliation> <affiliation>♣ Faulty of Life Sciences, University of Manchester<lb/></affiliation> <affiliation>♦ Dept. of Mathematics and Computer Science, Sharif University of Technology<lb/></affiliation>
 	</byline>
 
 	<email>sarafraf@cs.man.ac.uk</email>, <email>g.nenadic@manchester.ac.uk</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper reports on a system developed for<lb/> the BioNLP&apos;09 shared task on detection and<lb/> characterisation of biomedical events. Event<lb/> triggers and types were recognised using a<lb/> conditional random field classifier and a set of<lb/> rules, while event participants were identified<lb/> using a rule-based system that relied on rela-<lb/>tive distances between candidate entities and<lb/> the trigger in the associated parse tree. The re-<lb/>sults on previously unseen test data were en-<lb/>couraging: for non-regulatory events, the F-<lb/>score was almost 50% (with precision above<lb/> 60%), with the overall F-score of around 30%<lb/> (49% precision). The performance on more<lb/> complex regulatory events was poor<lb/> (F-measure of 7%). Among the 24 teams<lb/> submitting the test results, our results were<lb/> ranked 12 th for the overall F-score and 8 th for<lb/> the F-score of non-regulation events.</div>
+	
 
 		</front>
 	</text>

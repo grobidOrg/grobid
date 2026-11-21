@@ -33,7 +33,11 @@
 	<address>Pisa, Italy<lb/></address>
 
 	<byline>
-	<affiliation>4. Laboratoire de Mathématiques Appliquées -MAP5 (UMR CNRS 8145), Université Paris Descartes<lb/> 5. Department of Clinical Biochemistry, Herlev and Gentofte Hospital, Copenhagen University<lb/> Hospital,</affiliation>
+	<affiliation>4. Laboratoire de Mathématiques Appliquées -MAP5 (UMR CNRS 8145), Université Paris Descartes<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>5. Department of Clinical Biochemistry, Herlev and Gentofte Hospital, Copenhagen University<lb/> Hospital,</affiliation>
 	</byline>
 
 	<address>Herlev, Denmark<lb/></address>
@@ -129,10 +133,10 @@
 	<address>Villejuif, France<lb/></address>
 
 	<byline>
-	<affiliation>21. Cancer Epidemiology Centre,</affiliation>
+	<affiliation>21. Cancer Epidemiology Centre, Cancer Council Victoria,</affiliation>
 	</byline>
 
-	<address>Cancer Council Victoria, Melbourne, Australia<lb/></address>
+	<address>Melbourne, Australia<lb/></address>
 
 	<byline>
 	<affiliation>22. Centre for Epidemiology and Biostatistics, Melbourne School of Population &amp; Global Health, The<lb/> University of Melbourne,</affiliation>
@@ -161,8 +165,7 @@
 	doi:<lb/> bioRxiv
 	<note type="doctype">preprint</note>
 
-	Abstract<lb/>
-	<div type="abstract">DNA methylation changes in peripheral blood have been identified in relation to lung cancer risk.<lb/> However, the causal nature of these associations remains to be fully elucidated. Meta--analysis of four<lb/> epigenome--wide association studies (918 cases, 918 controls) revealed differential methylation at 16<lb/> CpG sites (FDR &lt; 0.05) in relation to lung cancer risk. A two--sample Mendelian randomization analysis,<lb/> using genetic instruments for methylation at 14 of the 16 CpG sites, and 29,863 cases and 55,586<lb/> controls from the TRICL--ILCCO lung cancer consortium, was performed to appraise the causal role of<lb/> methylation at these sites on lung cancer. This approach provided little evidence that DNA methylation<lb/> in peripheral blood at the 14 CpG sites play a causal role in lung cancer development, including for<lb/> cg05575921 AHRR, where methylation is strongly associated with lung cancer risk. Further studies are<lb/> needed to investigate the causal role played by DNA methylation in lung tissue.</div>
+	
 
 		</front>
 	</text>

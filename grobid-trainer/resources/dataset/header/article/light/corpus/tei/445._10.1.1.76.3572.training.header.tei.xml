@@ -20,8 +20,7 @@
 
 	<address>Cambridge Massachusetts<lb/></address>
 
-	Abstract:
-	<div type="abstract">We identify a new polynomial time decidable fragment of rst order<lb/> logic and present a general method for using polynomial time inference procedures<lb/> in knowledge representation systems. Our results indicate that a non-standard<lb/> \taxonomic&quot; syntax is essential in constructing natural and powerful polynomial<lb/> time inference procedures. The central role of taxonomic syntax in our polyno-<lb/>mial time inference procedures provides technical support for the often expressed<lb/> intuition that knowledge is better represented in terms of taxonomic relationships<lb/> than classical rst order formulas. To use our procedures in a knowledge repre-<lb/>sentation system we de ne a \Socratic proof system&quot; which is complete for rst<lb/> order inference and which can be used as a semi-automated interface to a rst<lb/> order knowledge base.<lb/></div>
+	
 
 	Categories and Subject Descriptors:
 	<keyword> F.4.1 Mathematical Logic and For-<lb/>mal Languages]: Mathematical logic | computational logic, mechanical theorem<lb/> proving; I.2.3 Arti cial Intelligence]: Deduction and Theorem Proving | de-duction<lb/></keyword>

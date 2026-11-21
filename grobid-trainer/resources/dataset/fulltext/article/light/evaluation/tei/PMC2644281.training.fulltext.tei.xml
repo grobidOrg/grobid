@@ -4,11 +4,12 @@
 		<fileDesc xml:id="0"/>
 	</teiHeader>
 	<text xml:lang="en">
-			<head>Introduction<lb/></head>
+			<head level="1">Introduction<lb/></head>
 
 			<p>It is known that acupuncture stimulation affects blood<lb/> flow, and there are some studies for skin <ref type="biblio">(1)</ref>, muscle <ref type="biblio">(2)</ref><lb/> and brain <ref type="biblio">(3)</ref>. We examined whether acupuncture not<lb/> only stimulates a local area but also the blood flow of<lb/> other organs, thus clarifying how acupuncture stimulates<lb/> an organism. Since it is necessary to examine the effect<lb/> on organ blood flow according to different areas of<lb/> stimulation, the blood flow of various organs was<lb/> measured in anesthetized rats using colored microspheres<lb/> that can quantitatively measure multiple organ blood<lb/> flow. We examined how acupuncture stimulation of the<lb/> regions (Hsia-Kuan or Hoku) influenced the blood<lb/> flow of various organs. Although microsphere measure-<lb/>ment for regional blood flow has radiolabeled micro-<lb/>spheres <ref type="biblio">(4-6,7-17,18)</ref> and colored microspheres <ref type="biblio">(19-28)</ref>,<lb/> we used the colored ones in this experiment. There are<lb/> two techniques for colored microsphere measurement.<lb/> One technique can calculate blood flow by counting the<lb/> total number of microspheres in each sample <ref type="biblio">(19-23)<lb/></ref> and the other by extracting colored dye from the<lb/> microsphere s <ref type="biblio">(24-28)</ref>. We used the latter technique in<lb/> our experiment.<lb/></p>
 
-			<head>Methods<lb/> Preparation<lb/></head>
+			<head level="1">Methods<lb/> </head>
+			<head level="2">Preparation<lb/></head>
 
 			<p>After 24 h without food, Male Wistar rats (n ¼ 27, body<lb/> weight: 250-420 g, free water intake) were anesthetized<lb/> with intra-peritoneal injection (1.2 g/kg) of urethane.<lb/> After tracheotomy, a cannula was inserted and a<lb/> respirator artificially regulated breathing (respiratory<lb/> frequency: 90 cycles/min, tidal air: 10 ml/kg, SN-480-7,<lb/> Shinano, Japan). Pancuronium bromide (2 mg/kg) was<lb/> administrated from a catheter that was placed in the<lb/> jugular vein of rats. In addition, CO 2 concentration in<lb/> the expiration was monitored (1H26, NEC) and main-<lb/>tained at about 3%. A second catheter (PE-50) was<lb/> positioned in the right femoral artery to monitor blood<lb/> pressure. The blood pressure and heart rate were<lb/> recorded on a thermal array recorder (RTA-1200,<lb/> Nihon Kohden). A third catheter (PE-10) was inserted<lb/> into left ventricular via the right carotid artery for the<lb/> colored microsphere injection. And, a fourth catheter<lb/> (PE-50) was positioned in the left femoral artery for<lb/> withdrawal of blood samples by a syringe pump at a rate<lb/> of 0.84 ml/min (Model210, KD Scientific Inc. USA). The<lb/> rectal temperature was monitored using a thermistor and<lb/> maintained about 37.5 C by means of a heating pad<lb/> (MK-900, Muromachi Kikai Co.). In this experiment,<lb/> yellow and blue microspheres (15 AE 0.2 mm, Dye-Track<lb/> Triton Technology Inc. USA) were used to measure<lb/> organ blood flow.<lb/></p>
 
@@ -16,7 +17,7 @@
 
 			<p>The position of the left ventricle catheter was confirmed<lb/> by autopsy at the end of experiment.<lb/></p>
 
-			<head>Measurement of Blood Flow by Colored Microspheres<lb/></head>
+			<head level="2">Measurement of Blood Flow by Colored Microspheres<lb/></head>
 
 			<p>The infusion of colored microspheres started at least<lb/> 60 min after surgery and confirmation of stabilized<lb/> blood pressure and heartbeats. The microspheres were<lb/> stirred with a test tube mixer (NS-80, Iuchiseieidou) for<lb/> 5 min before infusion. The reference blood was drawn<lb/> from 10 s before the microsphere infusion, and continued<lb/> for 75 s. The microsphere (yellow or blue) infusion<lb/> (20 s) was started 10 s after beginning to draw blood.<lb/> Saline (0.5 ml) was then infused for 30 s to flush the<lb/> microspheres in the catheter. In all experiments, yellow<lb/> microspheres (0.12-0.14 ml, 360 000-420 000 micro-<lb/>spheres) were injected first and blue (0.2-0.23 ml,<lb/> 600 000-690 000 microspheres) ones second. After yellow<lb/> injection, additional fluid was not replaced except by<lb/> injection of blue. The injection of blue microspheres<lb/> started 30 min after the first blood sampling was finished<lb/> in the control group. In ST-7 or LI-4 group, acupuncture<lb/> stimulation was applied after the first sampling. About<lb/> 30 min after inserting the acupuncture needle, blue micro<lb/> spheres were injected.<lb/></p>
 
@@ -26,7 +27,7 @@
 
 			<p>Figure <ref type="figure">1</ref> shows examples of the absorbance by the<lb/> above processing. Since the peak of absorbance in yellow<lb/> microspheres appears at 448 nm wavelength and blue<lb/> appears at 672 nm (24,27), we measured 448 nm for<lb/> yellow microspheres in the blood sample of and 672 nm<lb/> for blue microspheres. Tissue samples containing both<lb/> microspheres were measured at wavelength absorbencies<lb/> of 448 nm and 672 nm. Tissue samples with no absor-<lb/>bency peak were deleted from our data.<lb/></p>
 
-			<head>Calculation of Organ Blood Flow<lb/></head>
+			<head level="2">Calculation of Organ Blood Flow<lb/></head>
 
 			<p>Organ blood flow was calculated using the equation<lb/> below:<lb/></p>
 
@@ -34,23 +35,23 @@
 
 			<p>Qm shows blood flow of the tissues (ml/min/g). Qr shows<lb/> the withdrawal rate of the blood samples. Am shows the<lb/> absorbance (AU) of the microspheres per 1 g. Ar shows<lb/> the absorbance (AU) of all microspheres in the blood<lb/> samples.<lb/></p>
 
-			<head>Statistical Analysis<lb/></head>
+			<head level="2">Statistical Analysis<lb/></head>
 
 			<p>Data were expressed as the mean AE SD. The percentage<lb/> changes of blood flow were expressed as 100% the first<lb/> value of blood flow, and the percentage was showed<lb/> by box and whisker plot. Wilcoxon signed rank test,<lb/> Mann-Whitney U-Test, One-way or Two-way ANOVA<lb/> was used for data analysis. Differences of P50.05 were<lb/> considered statistically significant.<lb/></p>
 
-			<head>Results<lb/></head>
+			<head level="1">Results<lb/></head>
 
-			<head>Time Courses of Mean Blood Pressure During<lb/> the Experiment in Control, ST-7 and LI-4 Groups<lb/></head>
+			<head level="2">Time Courses of Mean Blood Pressure During<lb/> the Experiment in Control, ST-7 and LI-4 Groups<lb/></head>
 
 			<p>Figure <ref type="figure">1</ref> shows the time course of mean blood pressure<lb/> (mmHg) in the control, ST-7 and LI-4 group. The mean<lb/> blood pressures before the first withdrawal in the control,<lb/> ST-7 and LI-4 were 76.0 AE 6.0, 80.7 AE 12.7 and<lb/> 86.4 AE 11.7. Although blood pressure of the control<lb/> group<lb/> tended<lb/> to<lb/> be<lb/> low,<lb/> there<lb/> was<lb/> no<lb/> significant difference among the three groups (P ¼ 0.15).<lb/> One-way ANOVA was applied to this analysis. The<lb/> temporal changes of blood pressure were also similar<lb/> among three groups, and no significant differences<lb/> (F(2,14) ¼ 1.94, P ¼ 0.17) and interaction (P ¼ 0.69)<lb/> among three groups. On the other hand, heart rate<lb/> (beats/min) before the first withdrawal of the control<lb/> group, ST-7 and LI-4 were 383.7 AE 25.3, 424.6 AE 40.3 and<lb/> 427.4 AE 27.6.There was no significant difference<lb/> [F(2,14) ¼ 3.02, P ¼ 0.07] and interaction (P ¼ 0.45)<lb/> among the three groups (data not shown). Two-way<lb/> ANOVA was applied to these analyses.<lb/></p>
 
-			<head>Organ Blood Flow in the Control Group<lb/></head>
+			<head level="2">Organ Blood Flow in the Control Group<lb/></head>
 
 			<p>The second measurements of organ blood flow were<lb/> slightly lower than those of the first in every organ, with<lb/> significant differences in the muscle, kidney, stomach,<lb/> brain and spleen (Fig. <ref type="figure">2</ref>). Wilcoxon signed rank test<lb/> was applied to these analyses and the mean variations<lb/> (ml/min/g) of first and second organ blood flow in each<lb/> organ were as follows; kidney: À0.65; small intestine:<lb/> À0.49; lung: À0.33; spleen: À0.32; stomach: À0.26; brain:<lb/> À0.17; muscle: À0.05; heart: À0.03 and liver: À0.02.<lb/></p>
 
 			<p>The first and second blood flow of the left masseter<lb/> muscle in the control group were 0.35 AE 0.24, 0.36 AE 0.45,<lb/> respectively (P ¼ 0.35, no figure), and right masseter<lb/> of the control group were 0.16 AE 0.18 and 0.12 AE 0.10,<lb/> and there was no significant difference (P ¼ 0.34,<lb/> no figure).<lb/></p>
 
-			<head>Change of Organ Blood Flow in the ST-7 Group<lb/></head>
+			<head level="2">Change of Organ Blood Flow in the ST-7 Group<lb/></head>
 
 			<p>Figure <ref type="figure">3</ref> shows the first and second organ blood flows in<lb/> the ST-7 group. Though the second blood flow was<lb/> slightly higher than the first blood flow in the muscle,<lb/> stomach, small intestine, brain and heart, there was<lb/></p>
 
@@ -66,11 +67,11 @@
 
 			<p>Mean percentage change of the left masseter stimulated<lb/> by acupuncture in the ST-7 group was þ57.2. The value<lb/> of the right masseter in the ST-7 group that was not<lb/> stimulated was þ28.9. The control group values were:<lb/> left masseter: À10.8; right masseter: À11.3. While<lb/> the blood flow rate decreased in both masseters of<lb/> the control group, the blood flow rate of the left<lb/> masseter of the ST-7 group had increased more than<lb/> the right of the same group. However, this difference<lb/> between the left and right masseters of the ST-7<lb/> group was not statistically significant. (Mann-Whitney<lb/> U-test).<lb/></p>
 
-			<head>Organ Blood Flow Change in the LI-4 Group<lb/></head>
+			<head level="2">Organ Blood Flow Change in the LI-4 Group<lb/></head>
 
 			<p>Figure <ref type="figure">5</ref> shows the first and second organ blood flow<lb/> measurements of the LI-4 group. Though the second<lb/> blood flow increased slightly more than the first in the<lb/> brain, lung and heart, there was no significant difference.<lb/> There was a significant decrease in the muscle. Wilcoxon<lb/> signed rank test was applied to these analyses. Mean<lb/> variation (ml/min/g) of blood flow of each organ blood<lb/> flow was: heart: þ2.15; lung: þ0.16; brain: þ0.11; liver:<lb/> 0.00; stomach: À0.01; muscle: À0.05; small intestine:<lb/> À0.18; spleen: À0.54 and kidney: À0.90. Figure <ref type="figure">6</ref> shows<lb/> the percentage change (%) of the control group and LI-4<lb/> group by box and whisker plot. There was no significant<lb/> difference between the control group and LI-4 group.<lb/> Mann-Whitney U-test was applied to these analyses.<lb/> Mean percentage change (%) of organ blood flow in LI-4<lb/> group were described subsequently; lung: þ46.3; heart:<lb/> þ34.7; brain: þ11.0; liver: þ7.4; small intestine: À1.1;<lb/> stomach: À10.8; kidney: À16.9; muscle: À30.0 and spleen:<lb/> À33.3.<lb/></p>
 
-			<head>Discussion<lb/></head>
+			<head level="1">Discussion<lb/></head>
 
 			<p>The colored microsphere technique used in this experi-<lb/>ment has various advantages for organ blood flow<lb/> measurement. It can measure blood flow of multiple<lb/> organs simultaneously. In principle, microspheres are<lb/> trapped at the peripheral capillary, and when infusion<lb/> volume increases, the measurement accuracy will rise<lb/> <ref type="biblio">(18)</ref>. However, disturbances may occur in the rat&apos;s<lb/> circulation. Kobayashi et al. <ref type="biblio">(22)</ref> described that a bolus<lb/> injection of less than one million colored microspheres<lb/> caused no significant hemodynamic disturbances in rats,<lb/></p>
 

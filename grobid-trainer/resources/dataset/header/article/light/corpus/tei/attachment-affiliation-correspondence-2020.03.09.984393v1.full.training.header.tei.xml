@@ -49,7 +49,7 @@
 	Running title: (35 characters): Pleiotropy in drug responses<lb/> 
 
 	Keywords:
-	<keyword>(5)<lb/> C. elegans , QTL, pleiotropy, chemotherapeutics, mediation</keyword>
+	(5)<lb/> <keyword>C. elegans , QTL, pleiotropy, chemotherapeutics, mediation</keyword>
 
 	<page>1<lb/></page> 
 
@@ -62,8 +62,7 @@
 
 	doi:<lb/> bioRxiv <note type="doctype">preprint</note> / 
 
-	ABSTRACT<lb/>
-	<div type="abstract">Pleiotropy, the concept that a single gene controls multiple distinct traits, is prevalent in<lb/> most organisms and has broad implications for medicine and agriculture. Identifying the<lb/> molecular mechanisms underlying pleiotropy has the power to unveil previously unknown<lb/> biological connections between seemingly unrelated traits. Additionally, the discovery of<lb/> pleiotropic genes increases our understanding of both genetic and phenotypic complexity by<lb/> characterizing novel gene functions. Quantitative trait locus (QTL) mapping has been used to<lb/> identify several pleiotropic regions in many organisms. However, gene knockout studies are<lb/> needed to eliminate the possibility of tightly linked, non-pleiotropic loci. Here, we use a panel of<lb/> 296 recombinant inbred advanced intercross lines of Caenorhabditis elegans and a<lb/> high-throughput fitness assay to identify a single large-effect QTL on the center of chromosome<lb/> V associated with variation in responses to eight chemotherapeutics. We validate this QTL with<lb/> near-isogenic lines and pair genome-wide gene expression data with drug response traits to<lb/> perform mediation analysis, leading to the identification of a pleiotropic candidate gene, scb-1 .<lb/> Using deletion strains created by genome editing, we show that scb-1 , which was previously<lb/> implicated in response to bleomycin, also underlies responses to other double-strand DNA<lb/> break-inducing chemotherapeutics. This finding provides new evidence for the role of scb-1 in<lb/> the nematode drug response and highlights the power of mediation analysis to identify causal<lb/> genes.</div>
+	
 
 		</front>
 	</text>

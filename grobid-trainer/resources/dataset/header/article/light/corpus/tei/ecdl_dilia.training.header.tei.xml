@@ -30,8 +30,7 @@
 	DiLiA home page: 
 	<ptr type="web">http://dilia.b.dfki.de/<lb/></ptr> 
 
-	Abstract.
-	<div type="abstract">In this paper we present the digital library assistant (DiLiA).<lb/> The system aims at augmenting the search in digital libraries in sev-<lb/>eral dimensions. In the project advanced information visualisation meth-<lb/>ods are developed for user controlled interactive search. The interaction<lb/> model has been designed in a way that it is transparent to the user and<lb/> easy to use. In addition, information extraction (IE) methods have been<lb/> developed in DiLiA to make the content more easily accessible, this in-<lb/>cludes the identification and extraction of technical terms (TTs) -single<lb/> and multi word terms -as well as the extraction of binary relations based<lb/> on the extracted terms. In DiLiA we follow a hybrid information extrac-<lb/>tion approach -a combination of metadata and document processing.</div>
+	
 
 		</front>
 	</text>

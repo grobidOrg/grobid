@@ -72,7 +72,7 @@ Competing-interest footnotes are ignored for the time being (authors contributio
 
 ### arXiv authors and affiliations
 
-The `COMET_arxiv_1091` dataset evaluates the authors and their affiliations only. It is the test split of [cometadata/arxiv-author-affiliations](https://huggingface.co/datasets/cometadata/arxiv-author-affiliations) (CC0): arXiv preprints of all fields and periods, whose authors and affiliations were annotated manually. The 1,091 articles of the split that have a PDF are kept. The train split is not used for evaluation: part of it is in the training data of the header name model.
+The `COMET_arxiv_1091` dataset evaluates the authors and their affiliations only (the authors alone for the [light flavors](#flavors), which do not extract affiliations). It is the test split of [cometadata/arxiv-author-affiliations](https://huggingface.co/datasets/cometadata/arxiv-author-affiliations) (CC0): arXiv preprints of all fields and periods, whose authors and affiliations were annotated manually. The 1,091 articles of the split that have a PDF are kept. The train split is not used for evaluation: part of it is in the training data of the header name model.
 
 The gold data is not JATS but one JSON record per article, `<article>.gold.json` next to `<article>.pdf`:
 
@@ -207,7 +207,7 @@ The scorer is the one of ScienciaLAB/grobid-affiliation-evaluation, vendored und
 * `affiliations`: the affiliations of the matched authors, matched the same way (the affiliations of the authors not matched being false positives or false negatives);
 * `combined`: the authors found with all their affiliations.
 
-An article without TEI counts as an article where GROBID found no author. The report has the layout of the `jatsEval` reports, and `--json` writes the matches of every article.
+An article without TEI counts as an article where GROBID found no author. The report has the layout of the `jatsEval` reports, and `--json` writes the matches of every article. `--authors-only` scores the authors alone and leaves the affiliations out of the report: the workflow passes it for the `article/light` and `article/light-ref` flavors, which do not extract affiliations.
 
 ### Multi-dataset runner script
 
@@ -306,7 +306,9 @@ On a pull request, the corpora are selected with labels too:
 
 Adding `evaluation:crf` or `evaluation:delft` evaluates the corpora labelled on the pull request, or all of them if none is. Adding a `corpus:*` label to a pull request that already has one of these two labels evaluates that corpus alone, with the profile of that label (the pull request must then have only one of them). A `corpus:*` label added before them starts nothing: it only selects the corpora of the next run. The label `evaluation:glutton` works the same way: added to a pull request that has `evaluation:crf` or `evaluation:delft`, it evaluates the labelled corpora again with biblio-glutton; added before, it only switches the next runs to biblio-glutton.
 
-The arXiv corpus is in a private Hugging Face dataset, read with the repository secret `HF_TOKEN_COMET`, a Hugging Face token that can read `sciencialab/pdfs-arxiv-author-affiliations`. Pull requests from forks get no secret: their runs leave COMET out of `corpus:all` (with a notice), and fail at once with `corpus:arxiv`.
+The [flavors](#flavors) are selected the same way, with the labels `flavor:article/light` and `flavor:article/light-ref`. Each flavor label evaluates its flavor over the labelled corpora, with its own report, comment and baseline; a pull request with both labels evaluates both flavors in the same run. Without a flavor label, the full models are evaluated. Adding a `flavor:*` label to a pull request that has `evaluation:crf` or `evaluation:delft` evaluates that flavor alone; added before, it only selects the flavors of the next runs.
+
+The arXiv corpus is in a private Hugging Face dataset, read with the repository secret `HF_TOKEN_COMET`, a Hugging Face token that can read `sciencialab/pdfs-arxiv-author-affiliations`. Pull requests from forks get no secret: their runs leave arXiv out of `corpus:all` (with a notice), and fail at once with `corpus:arxiv`.
 
 Two profiles are available:
 
@@ -323,7 +325,7 @@ The runners have 4 CPU, no GPU, and stop a job after 6 hours, so each corpus is 
 
 2. `score` — one job per corpus gathers the TEI and the gold data of all its shards and runs `jatsEval` with `-Prun=0` (`score_arxiv.py` for arXiv), so the report is computed over the whole corpus exactly as by a local run. A corpus is not scored if one of its shards failed.
 
-3. `report` — the reports are compared with those of the latest successful run of the workflow on the default branch with the same profile, flavor and consolidation. The scores are written to the run summary and, for a pull request, posted as a comment. For each corpus, a table gives the micro-average F1 of the header, citation and fulltext per matching (for arXiv, the F1 of the authors, of the affiliations and of the authors with all their affiliations), followed by the full report, collapsed, laid out as in the [benchmark pages](benchmarks/Benchmarking.md) (field-level precision, recall, F1 and support per section and matching, then the instance-level results and the citation contexts). Each score that moved is followed by its delta against the baseline, in brackets. The reports are also kept as the artifact `evaluation-reports-<profile>` for 90 days: this artifact is the baseline of the later runs, so **run the workflow on the default branch to set or refresh the baseline**. Without a baseline, the scores are reported without deltas.
+3. `report` — the reports are compared with those of the latest successful run of the workflow on the default branch with the same profile, flavor and consolidation (named by its artifact, and checked against the overview inside it). The scores are written to the run summary and, for a pull request, posted as a comment. For each corpus, a table gives the micro-average F1 of the header, citation and fulltext per matching (for arXiv, the F1 of the authors, of the affiliations and of the authors with all their affiliations; the authors only for the light flavors), followed by the full report, collapsed, laid out as in the [benchmark pages](benchmarks/Benchmarking.md) (field-level precision, recall, F1 and support per section and matching, then the instance-level results and the citation contexts). Each score that moved is followed by its delta against the baseline, in brackets. The reports are also kept as the artifact `evaluation-reports-<profile>` (`evaluation-reports-<profile>-<flavor>` for a flavor, with `/` replaced by `_`) for 90 days: this artifact is the baseline of the later runs, so **run the workflow on the default branch to set or refresh the baseline**, with the same profile, flavor and consolidation. Without a baseline, the scores are reported without deltas.
 
 #### Consolidation and biblio-glutton
 

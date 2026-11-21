@@ -20,8 +20,7 @@
 
 	<address>College Park,<lb/> MD 20742, USA</address>
 
-	Abstract<lb/>
-	<div type="abstract">We recently introduced a new ow control scheme, called send-time control, which is<lb/> based on a deterministic model of virtual circuits in a computer network. In this scheme,<lb/> the time at which a packet is sent by a source is computed from estimates of round-trip<lb/> time, tra c in the network and bottleneck service time. In this paper, we describe a new<lb/> transport protocol, called DTP, which uses send-time control as its ow control scheme.<lb/> Preliminary measurements of coast-to-coast connections over the Internet show signi cant<lb/> performance improvement over TCP, which is the most commonly used transport protocol<lb/> in the Internet today.<lb/></div>
+	
 
 	Keyword Codes: 
 	<keyword>C.2.2<lb/> </keyword>

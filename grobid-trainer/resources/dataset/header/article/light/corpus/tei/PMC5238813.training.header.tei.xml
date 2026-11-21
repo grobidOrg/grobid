@@ -14,7 +14,7 @@
 
 	<publisher>Dovepress<lb/></publisher>
 
-	submit your manuscript | www.dovepress.com Dovepress 193<lb/> O r i g i n a l r e s e a r c h<lb/> open access to scientific and medical research<lb/> 
+	submit your manuscript | www.dovepress.com Dovepress 193<lb/> <note type="doctype">O r i g i n a l r e s e a r c h</note><lb/> open access to scientific and medical research<lb/> 
 
 	<note type="doctype">Open access</note>
 
@@ -42,8 +42,7 @@
 
 	<address>albi, France<lb/></address>
 
-	Abstract:
-	<div type="abstract">The effects of different formulations and manufacturing process conditions on the<lb/> physical properties of a solid dosage form are of importance to the pharmaceutical industry. It is<lb/> vital to have in-depth understanding of the material properties and governing parameters of its<lb/> processes in response to different formulations. Understanding the mentioned aspects will allow<lb/> tighter control of the process, leading to implementation of quality-by-design (QbD) practices.<lb/> Computational intelligence (CI) offers an opportunity to create empirical models that can be<lb/> used to describe the system and predict future outcomes in silico. CI models can help explore<lb/> the behavior of input parameters, unlocking deeper understanding of the system. This research<lb/> endeavor presents CI models to predict the porosity of tablets created by roll-compacted binary<lb/> mixtures, which were milled and compacted under systematically varying conditions. CI models<lb/> were created using tree-based methods, artificial neural networks (ANNs), and symbolic regres-<lb/>sion trained on an experimental data set and screened using root-mean-square error (RMSE)<lb/> scores. The experimental data were composed of proportion of microcrystalline cellulose (MCC)<lb/> (in percentage), granule size fraction (in micrometers), and die compaction force (in kilonewtons)<lb/> as inputs and porosity as an output. The resulting models show impressive generalization abil-<lb/>ity, with ANNs (normalized root-mean-square error [NRMSE] =1%) and symbolic regression<lb/> (NRMSE =4%) as the best-performing methods, also exhibiting reliable predictive behavior when<lb/> presented with a challenging external validation data set (best achieved symbolic regression:<lb/> NRMSE =3%). Symbolic regression demonstrates the transition from the black box modeling<lb/> paradigm to more transparent predictive models. Predictive performance and feature selection<lb/> behavior of CI models hints at the most important variables within this factor space.<lb/></div>
+	
 
 	Keywords:
 	<keyword>computational intelligence, artificial neural network, symbolic regression, feature<lb/> selection, die compaction, porosity<lb/></keyword>
