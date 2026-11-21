@@ -7,7 +7,8 @@ Render the Markdown reports of an end-to-end evaluation, optionally against a ba
 Both directories hold the `report-<dataset>.md` files written by `jatsEval`, or by
 score_arxiv.py for the arXiv corpus, in the same layout. Each dataset gets a summary table,
 the micro-average F1 of the header, citation and fulltext (the author, affiliation and combined
-F1 for arXiv) per matching, followed by its full report, collapsed, rendered as in the benchmark pages
+F1 for arXiv, the author F1 alone when the affiliations were not scored) per matching, followed
+by its full report, collapsed, rendered as in the benchmark pages
 (doc/benchmarks/): per section and matching, the field-level precision, recall, F1 and
 support, then the instance-level results and the citation contexts. When a baseline is
 given, every score that moved is followed by its delta in brackets. A dataset missing
@@ -35,6 +36,8 @@ DOCUMENTS_LINE = re.compile(r"^Evaluation on (\d+) random PDF files")
 MATCHINGS = ["Strict", "Soft", "Levenshtein", "Ratcliff/Obershelp", "Fuzzy"]
 MICRO = "all fields (micro avg.)"
 ARXIV = "Authors and affiliations (arXiv)"
+# the arXiv section of score_arxiv.py --authors-only (models that extract no affiliation)
+ARXIV_AUTHORS = "Authors (arXiv)"
 # rows of the summary table: (name, section, label of the row of the field-level results)
 SUMMARY_ROWS = [
     ("Header", "Header metadata", MICRO),
@@ -43,6 +46,7 @@ SUMMARY_ROWS = [
     ("Authors", ARXIV, "author"),
     ("Affiliations", ARXIV, "affiliations"),
     ("Authors with all their affiliations", ARXIV, "combined"),
+    ("Authors", ARXIV_AUTHORS, "author"),
 ]
 TABLE_HEADER = "| label | precision | recall | f1 | support |\n|---|---|---|---|---|"
 

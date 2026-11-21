@@ -528,11 +528,16 @@ jobs:
           mkdir -p reports
 
           if [ "${DATASET}" = "COMET_arxiv_1091" ]; then
+            ARXIV_ARGS=()
+            case "${FLAVOR}" in
+              # the light flavors extract no affiliation: their authors only are scored
+              article/light|article/light-ref) ARXIV_ARGS+=(--authors-only) ;;
+            esac
             python -m venv "${TOOLS_VENV}"
             # pinned, so that the scores of two runs differ only by the TEI
             "${TOOLS_VENV}/bin/pip" install --no-cache-dir numpy==2.4.6 scipy==1.17.1 rapidfuzz==3.14.6 pyyaml==6.0.3
             "${TOOLS_VENV}/bin/python" .github/scripts/evaluation/score_arxiv.py --data "data/${DATASET}" \
-              --output "reports/report-${DATASET}.md" --json "arxiv-eval-${DATASET}.json" 2>&1 \
+              --output "reports/report-${DATASET}.md" --json "arxiv-eval-${DATASET}.json" "${ARXIV_ARGS[@]}" 2>&1 \
               | tee "score-${DATASET}.log"
             exit "${PIPESTATUS[0]}"
           fi
