@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1177_09539468231169462">
+			<titleStmt>
+				<title level="a">Artificial Intelligence (and Christianity): Who? What? Where? When? Why? and How?</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-nc/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1177/09539468231169462</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_64</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>1</label> . Randall Reed, 'AI in Religion, AI for Religion, AI and Religion: Towards a Theory of <lb/>Religious Studies and Artificial Intelligence', Religions 12.6 (2021), p. 401. <lb/></bibl>
+			<bibl><label>2</label> . Stuart Russell and Peter Norvig, Artificial Intelligence: A Modern Approach, 3rd edn <lb/>(London: Prentice-Hall, 2010). <lb/></bibl>
+			<bibl><label>3</label> . Edsger Dijkstra, 'On the Cruelty of Really Teaching Computing Science' (EWD-1036, <lb/>1988), https://www.cs.utexas.edu/∼EWD/transcriptions/EWD10xx/EWD1036.html. <lb/></bibl>
+			<bibl><label>4</label> . Guus Schreiber et al., Knowledge Engineering and Management: The CommonKADS <lb/>Methodology (Cambridge, MA: MIT Press, 2000). <lb/><lb/></bibl>
+			<bibl><label>5</label> . Russell and Norvig, Artificial Intelligence. <lb/></bibl>
+			<bibl><label>6</label> . Golem is an unformed mass, mentioned in Ps. 139:16 (the only place in the Bible where the <lb/>word appears). <lb/></bibl>
+			<bibl><label>7</label> . Norbert Wiener, God and Golem, Inc. (London: Chapman &amp; Hall, 1964). <lb/></bibl>
+			<bibl><label>8</label> . Norbert Wiener, Cybernetics: Or the Control and Communication in the Animal and the <lb/>Machine, 2nd edn (Cambridge, MA: MIT Press, 1965). <lb/></bibl>
+			<bibl><label>9</label> . Babylonian Talmud, Tractate Sanhedrin 38b. There is also reference in general in Sanhedrin <lb/>38a to the unshaped form in Ps. 139:16. <lb/></bibl>
+			<bibl><label>10</label> . Mary Shelley, Frankenstein (London: Frontpage Publishing, 2019). <lb/></bibl>
+			<bibl><label>11</label> . John L. Heilbron, 'Nolet, Jean Antoinne', in C.C. Gillespie (ed.), Dictionary of Scientific <lb/>Biography (New York: Charles Scribner &amp; Sons, 1974). <lb/><lb/></bibl>
+			<bibl><label>13</label> . Karel Capek, R.U.R., trans. Paul Selver and Nigel Playfair (Mineola, NY: Dover <lb/>Publications, 2001). <lb/></bibl>
+			<bibl><label>15</label> . Isaac Asimov, I, Robot (New York: Gnome Press, 1950). <lb/></bibl>
+			<bibl><label>16</label> . Pamela McCorduck, Machines Who Think, 2nd edn (London: Routledge, 2004). <lb/></bibl>
+			<bibl><label>17</label> . Thessa Jensen, 'Ramon Llull's Ars Magna', in Roberto Moreno-Diaz et al. (eds.), <lb/>EUROCAST 2017, Part 1, vol. 10671 (Cham: Springer International Publishing, 2018). <lb/></bibl>
+			<bibl><label>18</label> . Jensen, 'Ramon Llull's Ars Magna'; </bibl>
+			<bibl>Ernesto Priani, 'Ramon LLull', in Stanford <lb/>Encyclopedia of Philosophy (Stanford, CA: Stanford University Press, 2021). <lb/></bibl>
+			<bibl><label>20</label> . Gordon H. Clark, Thales to Dewey: A History of Philosophy, 4th edn (Unicoi, TN: The <lb/>Trinity Foundation, 2000). <lb/><lb/></bibl>
+			<bibl><label>21</label> . Clark , Thales to Dewey. <lb/></bibl>
+			<bibl><label>22</label> . Robert Chambers, Vestiges of the Natural History of Creation and Other Evolutionary <lb/>Writings (Chicago, IL: University of Chicago Press, 1994). <lb/></bibl>
+			<bibl><label>24</label> . Christopher Hollings, Ursula Martin and Adrian Rice, Ada Lovelace: The Making of a <lb/>Computer Scientist (Oxford: Bodleian Library, 2018). <lb/></bibl>
+			<bibl><label>25</label> . Warren S. McCulloch and Walter Pitts, 'A Logical Calculus of the Ideas Immanent in <lb/>Nervous Activity', Bulletin of Mathematical Biophysics 5 (1943), pp. 115-33. <lb/></bibl>
+			<bibl><label>26</label> . Donald M. MacKay, Information, Mechanism and Meaning (Cambridge, MA: MIT Press, <lb/>1969). <lb/><lb/></bibl>
+			<bibl><label>27</label> . Alan Turing, 'Computing Machinery and Intelligence', Mind 59.236 (1950), pp. 433-60. <lb/></bibl>
+			<bibl><label>28</label> . Allen Newell and Herbert A. Simon, The Logic Theory Machine: A Complex Information <lb/>Processing System, technical report P-868 (RAND Corporation, June 1956). <lb/></bibl>
+			<bibl><label>31</label> . Joseph Weizenbaum, 'ELIZA-a Computer Program for the Study of Natural Language <lb/>Communication between Man and Machine', Communications of the ACM 9.1 (1966), <lb/>pp. 36-53. <lb/><lb/></bibl>
+			<bibl><label>32</label> . Joseph Weizenbaum, Computer Power and Human Reason: From Judgment to Calculation <lb/>(New York: W.H. Freeman &amp; Company, 1976). <lb/></bibl>
+			<bibl><label>33</label> . Marvin Minsky and Seymour Papert, Perceptrons (Cambridge, MA: MIT Press, 1969). <lb/>'Perceptron' is another name for Artificial Neural Nets, though it is less commonly used <lb/>these days. <lb/></bibl>
+			<bibl><label>34</label> . David E. Rumelhart and James L. McClelland, Parallel Distributed Processing: <lb/>Explorations in the Microstructure of Cognition: Foundations, vol. 1 (Cambridge, MA: <lb/>MIT Press, 1986). <lb/></bibl>
+			<bibl><label>35</label> . Edward A. Feigenbaum and Pamela McCorduck, The Fifth Generation (Reading, MA: <lb/>Addison-Wesley, 1983). <lb/></bibl>
+			<bibl><label>36</label> . Perry L. Miller, 'ATTENDING: Critiquing a Physician's Management Plan', IEEE <lb/>Transactions on Pattern Analysis and Machine Intelligence 5.5 (1983), pp. 449-61. <lb/><lb/></bibl>
+			<bibl><label>37</label> . Russell and Norvig, Artificial Intelligence. <lb/></bibl>
+			<bibl><label>38</label> . Iyad Rahwan and Guillermo R. Simari (eds.), Argumentation in Artificial Intelligence <lb/>(London: Springer International Publishing, 2009). <lb/></bibl>
+			<bibl><label>39</label> . John H. Holland, Adaption in Natural and Artificial Systems (Cambridge, MA: MIT Press, <lb/>1992). <lb/></bibl>
+			<bibl><label>40</label> . Wael Korani and Malek Mouhoub, 'Review on Nature-Inspired Algorithms', Operations <lb/>Research Forum 2.3 (2021), p. 36. <lb/></bibl>
+			<bibl><label>41</label> . Jürgen Schmidhuber, 'Deep Learning in Neural Nets: An Overview', Neural Nets 61 (2015), <lb/>pp. 85-117. <lb/></bibl>
+			<bibl><label>42</label> . M. Mutlu Yapici, Adem Tekerek and Nurettin Topaloglu, 'Literature Review of Deep <lb/>Learning Research Areas', Gazi Mühendislik Bilimleri Dergisi 5.3 (2019), pp. 188-215. <lb/></bibl>
+			<bibl><label>43</label> . 'Let me start by saying a few things that seem obvious. I think if you work as a radiologist, <lb/>you're like the coyote that's already over the edge of the cliff but hasn't yet looked down, so <lb/>doesn't know there's no ground underneath him. People should stop training radiologists <lb/>now. It's just completely obvious that within 5 years, deep learning is going to do better <lb/>than radiologists, because it's going to be able to get a lot more experience. It might be 10 <lb/>years, but we've got plenty of radiologists already. I said this at a hospital, and it didn't <lb/>go down too well.' Geoff Hinton on radiology in 2016, available at: https://www.youtube. <lb/>com/watch?v=2HMPRXstSvQ. <lb/><lb/></bibl>
+			<bibl><label>44</label> . Luciano Floridi, The 4th Revolution (Oxford: Oxford University Press, 2014), pp. 133-34. <lb/></bibl>
+			<bibl><label>45</label> . Feng-Hsiung Hsu, Behind Deep Blue: Building the Computer that Defeated the World Chess <lb/>Champion (Princeton, NJ: Princeton University Press, 2002). <lb/></bibl>
+			<bibl><label>46</label> . David A. Ferrucci, 'Introduction to "This is Watson"', IBM Journal of Research and <lb/>Development 56.3-4 (2012). <lb/></bibl>
+			<bibl><label>47</label> . David Silver, Aja Huang, Chris Maddison et al., 'Mastering the Game of Go with Deep <lb/>Neural Networks and Tree Search', Nature 529.7587 (2016), pp. 484-89. <lb/><lb/></bibl>
+			<bibl><label>48</label> . Jeffrey Dastin, 'Amazon Scraps Secret AI Recruiting Tool that Showed Bias against Women', <lb/>Reuters, October 2018, https://www.reuters.com/article/us-amazon-com-jobs-automation-<lb/>insight-idUSKCN1MK08G (accessed 11 January 2023). <lb/></bibl>
+			<bibl><label>49</label> . Ellie Hunt, 'Tay, Microsoft's AI Chatbot, Gets a Crash Course in Racism from Twitter', The <lb/>Guardian, March 2016, https://www.theguardian.com/technology/2016/mar/24/tay-<lb/>microsofts-<lb/>ai-chatbot-gets-a-crash-course-in-racism-from-twitter (accessed 11 January 2023). <lb/></bibl>
+			<bibl><label>50</label> . Matthew Sparkes, 'Meta's Galactica AI Can Write Scientific Papers, But Is It Any Good?', <lb/>New Scientist, November 2022, https://www.newscientist.com/article/2347520-metas-<lb/>galactica-ai-can-write-scientific-papers-but-is-it-any-good/ (accessed 11 January 2023). <lb/></bibl>
+			<bibl><label>51</label> . Adinath Ghadage et al., 'Multi-stage Bias Mitigation for Individual Fairness in Algorithmic <lb/>Decisions', in N. El Gayar et al., Artificial Neural Networks in Pattern Recognition. ANNPR <lb/>2022. Lecture Notes in Computer Science, vol. 13739 (2023), pp. 40-52. <lb/></bibl>
+			<bibl><label>53</label> . Ehud Reiter and Robert Dale, 'Building Applied Natural Language Generation Systems', <lb/>Natural Language Engineering 3.1 (1997), p. 57. <lb/></bibl>
+			<bibl><label>54</label> . Ehud Reiter, Roma Robertson and Liesl Osman, 'Types of Knowledge Required to Personalise <lb/>Smoking Cessation Letters', Artificial Intelligence in Medicine 16 (1999), pp. 389-99. <lb/></bibl>
+			<bibl><label>55</label> . Rosalind W. Picard, 'Toward Machines with Emotional Intelligence', ch. 16 in Gerald <lb/>Matthews et al. (eds.), The Science of Emotional Intelligence: Knowns and Unknowns <lb/>(Oxford: Oxford University Press, 2004), pp. 396-416. <lb/></bibl>
+			<bibl><label>56</label> . Paul E. Oppenheimer and Edward N. Zalta, 'A Computationally-Discovered Simplification <lb/>of the Ontological Argument', Australasian Journal of Philosophy 89.2 (2010), pp. 333-49. <lb/></bibl>
+			<bibl><label>57</label> . This could be seen as a step towards Llull's aim of automating some theological arguments, <lb/>albeit not being uniformly deemed successful. See Ted Parent, 'On the PROVER9 <lb/>Ontological Argument', Philosophia 43.2 (2015), pp. 475-83. <lb/></bibl>
+			<bibl><label>58</label> . Kevin Williams, Elizabeth Bilsland and Andrew Sparkes et al., 'Cheaper Faster Drug <lb/>Development Validated by the Repositioning of Drugs against Neglected Tropical <lb/>Diseases', Journal of the Royal Society. Interface 12.104 (2015); </bibl>
+			<bibl>George M. Coghill, <lb/>Ashwin Srinivasan and Ross D. King, 'Qualitative System Identification from Imperfect <lb/>Data', Journal of Artificial Intelligence Research 32 (2008), pp. 825-77. <lb/></bibl>
+			<bibl><label>59</label> . Maya Yang, 'New York City Schools Ban AI Chatbot that Writes Essays and Answers <lb/>Prompts', The Guardian, 6 January 2023, https://www.theguardian.com/us-news/2023/jan/ <lb/>06/new-york-city-schools-ban-ai-chatbot-chatgpt (accessed 11 January 2023). <lb/><lb/></bibl>
+			<bibl><label>60</label> . Donald M. MacKay, 'Complementarity II', Proceedings of the Aristotelian Society suppl. vol <lb/>XXXII (1958), pp. 105-122. <lb/></bibl>
+			<bibl><label>61</label> . Donald M. MacKay, The Clockwork Image (London: InterVarsity Press, 1974). <lb/></bibl>
+			<bibl><label>62</label> . Donald M. MacKay, Behind the Eye (Oxford: Blackwell, 1991), p. 274, n. 1. </bibl>
+			<bibl>In this respect <lb/>MacKay highlights the importance of the body as part of being human (and the image of <lb/>God). This is somewhat in contrast to some recent theological speculations on 'superintelli-<lb/>gence', e.g. Calvin Mercer and Tracy Trothen, Religion and the Technological Future <lb/>(London: Palgrave Macmillan, 2021) and </bibl>
+			<bibl>Yong Sup Song, 'Religious AI and Option to <lb/>the Risks of Superintelligence', Theology and Science 19.1 (2021), pp. 65-78 which focus <lb/>only on the putative mental aspects. <lb/></bibl>
+			<bibl><label>63</label> . Donald M. MacKay, 'The Sovereignty of God in the Natural World', Scottish Journal of <lb/>Theology 21.1 (1968), pp. 13-26. <lb/></bibl>
+			<bibl><label>64</label> . This led to accusations that MacKay was himself a materialist (or semi-materialist), e.g. William <lb/>A. Dembski, 'Converting Matter into Mind: Alchemy and the Philosopher's Stone in Cognitive <lb/>Science', Perspectives on Science and Christian Faith 42.4 (1990), pp. 202-226. </bibl>
+			<bibl>However, he <lb/>also viewed the soul as being embodied in the mind, which is not commensurate with materialism; <lb/>see Donald M. MacKay, The Open Mind and Other Essays: A Scientist in God's World, ed. <lb/>Melvin Tinker (Leicester: InterVarsity Press, 1988), p. 71. <lb/><lb/></bibl>
+			<bibl><label>65</label> . MacKay, The Open Mind and Other Essays, p. 125. <lb/></bibl>
+			<bibl><label>66</label> . MacKay , The Open Mind and Other Essays, p. 136. <lb/></bibl>
+			<bibl><label>67</label> . Donald M. MacKay, 'The Logical Indeterminateness of Human Choices', British Journal for <lb/>the Philosophy of Science 24.4 (1973), pp. 405-408. <lb/></bibl>
+			<bibl><label>68</label> . MacKay , 'The Logical Indeterminateness of Human Choices', p. 405. <lb/><lb/></bibl>
+			<bibl><label>69</label> . 'Thus the divine "foreknowledge" of our future, oddly enough, has no unconditional logical <lb/>claim upon us, unknown to us. This, I believe, demonstrates a fallacy underlying both the <lb/>theological dispute between Arminianism and Calvinism, and the philosophical dispute <lb/>between physical or psychological determinism … and libertarianism …' MacKay, The <lb/>Clockwork Image, p. 82. <lb/></bibl>
+			<bibl><label>71</label> . Russell and Norvig, Artificial Intelligence. <lb/></bibl>
+			<bibl><label>72</label> . Stuart Russell, Human Compatible: AI and the Problem of Control (London: Penguin, 2019). <lb/></bibl>
+			<bibl><label>73</label> . Luciano Floridi, 'Should We Be Afraid of AI?', Aeon Essays, 9 May 2016, https://aeon.co/ <lb/>essays/true-ai-is-both-logically-possible-and-utterly-implausible (accessed 23 March 2023). <lb/><lb/></bibl>
+			<bibl><label>74</label> . Ximian Xu, 'A Theological Account of Artificial Moral Agency', Studies in Christian Ethics, <lb/>2023, https://doi.org/10.1177/09539468231163002. <lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>

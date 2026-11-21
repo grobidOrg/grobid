@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1177_14614529241295605">
+			<titleStmt>
+				<title level="a">Transparency after Fish Legal: Private actors and access to environmental information in the United Kingdom</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-nc/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1177/14614529241295605</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_14</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>1</label> . United Nations Economic Commission for Europe (UNECE) Convention on Access to Information, Public Participation in <lb/>Decision-making and Access to Justice in Environmental Matters, 25 June 1998, 2161 UNTS 447 ('the Aarhus Convention'). <lb/></bibl>
+			<bibl><label>2</label> . S. Whittaker, The Right of Access to Environmental Information (Cambridge: Cambridge University Press, 2021) 36. </bibl>
+			<bibl>See also Á. <lb/>Ryall, 'A Brave New World: The Aarhus Convention in Tempestuous Times' (2023) 35 Journal of Environmental Law 161. <lb/><lb/></bibl>
+			<bibl><label>3</label> . The Environmental Information (Scotland) Regulations 2004 apply in Scotland. <lb/></bibl>
+			<bibl><label>4</label> . Regulation 2(2)(c). <lb/></bibl>
+			<bibl><label>5</label> . Regulation 2(2)(d). <lb/></bibl>
+			<bibl><label>6</label> . UNECE, The Aarhus Convention: An Implementation Guide (2nd edn, Geneva: UNECE 2014) at 46. <lb/></bibl>
+			<bibl><label>7</label> . Fish Legal v Information Commissioner [2015] UKUT 0052 (AAC). <lb/></bibl>
+			<bibl><label>8</label> . Smartsource Drainage &amp; Water Reports Ltd v Information Commissioner [2010] UKUT 415 (AAC). <lb/></bibl>
+			<bibl><label>9</label> . See e.g. Cross v Information Commissioner and the Cabinet Office [2016] UKUT 153 (AAC). <lb/></bibl>
+			<bibl><label>10</label> . See UNECE, above n. 6. </bibl>
+			<bibl>See also J. Ebbesson, 'Public Participation and Privatisation in Environmental Matters: An Assessment of <lb/>the Aarhus Convention' (2011) 4 Erasmus Law Review 71. <lb/></bibl>
+			<bibl><label>11</label> . UNECE, above n. 6 at 46. <lb/><lb/></bibl>
+			<bibl><label>12</label> . Rio Declaration on Environment and Development, 13 June 1992, 31 ILM 874 (1992). <lb/></bibl>
+			<bibl><label>13</label> . Council Directive 90/313/EEC on the Freedom of Access to Information on the Environment, 7 June 1990. </bibl>
+			<bibl>For more on this, see <lb/>Sean Whittaker, Jonathan Mendel, and Colin T Reid, 'Back to Square One: How We Analyse the Right of Access to <lb/>Environmental Information' (2019) 31 Journal of Environmental Law 465. <lb/></bibl>
+			<bibl><label>14</label> . See e.g. Ebbesson, above n. 10. <lb/></bibl>
+			<bibl><label>15</label> . The Aarhus Convention was adopted on 25 June 1998 and came into force on 30 October 2001. <lb/></bibl>
+			<bibl><label>16</label> . Aarhus Convention, above n. 1, Article 1. <lb/></bibl>
+			<bibl><label>17</label> . See Whittaker, above n. 2 at 36. <lb/></bibl>
+			<bibl><label>18</label> . M. Mason, 'Information Disclosure and Environmental Rights: The Aarhus Convention' (2010) 10 Global Environmental Politics <lb/>10, 16. </bibl>
+			<bibl>The question of whether this declaration of a substantive right to a healthy environmental was intended to be merely aspir-<lb/>ational has been debated, but the framing of the Convention demonstrates the clear link between procedural and substantive envir-<lb/>onmental rights. See also Emily Barritt, 'The Aarhus Convention and the Latent Right to a Healthy Environment' (2024) 36 <lb/>Journal of Environmental Law 67. <lb/></bibl>
+			<bibl><label>19</label> . European Union Withdrawal Act 2018, s. 2. <lb/></bibl>
+			<bibl><label>20</label> . See Mason, above n. 18 at 11. <lb/></bibl>
+			<bibl><label>21</label> . See Whittaker, above n. 2 at 35. <lb/><lb/></bibl>
+			<bibl><label>22</label> . J. Zuluaga Madrid, 'Access to Environmental Information from Private Entities: A Rights-Based Approach' (2017) 26 RECIEL 38. <lb/></bibl>
+			<bibl><label>23</label> . M. Lee, 'The Aarhus Convention 1998 and the Environment Act 2021: Eroding Public Participation' (2023) 86 Modern Law <lb/>Review 756, 757. </bibl>
+			<bibl>See also M. Lee and C. Abbot, 'The Usual Suspects? Public Participation under the Aarhus Convention' <lb/>(2003) 66 Modern Law Review 80. <lb/></bibl>
+			<bibl><label>24</label> . Mason, above n. 18 at 11. <lb/></bibl>
+			<bibl><label>26</label> . D. Parker, The Official History of Privatisation Vol. 1: The Formative Years 1970-1987 (London: Routledge, 2009). <lb/></bibl>
+			<bibl><label>27</label> . Complications have arisen in the context of, for example, the scope of judicial review, the Human Rights Act 1998, and freedom of <lb/>information laws in the UK. For more on this generally, see: N. Bamforth, 'The Application of the Human Rights Act 1998 to <lb/>Public Authorities and Private Bodies' (1999) 58 Cambridge Law Journal 159; </bibl>
+			<bibl>P. Craig, 'Contracting Out, the Human Rights <lb/>Act and the Scope of Judicial Review' (2002) 118 Law Quarterly Review 551; </bibl>
+			<bibl>C. Donnelly, 'Leonard Cheshire Again and <lb/>Beyond: Private Contractors, Contract and s 6(3)(b) of the Human Rights Act' [2005] Public Law 785; </bibl>
+			<bibl>S. Palmer, 'Public <lb/>Functions and Private Services: A Gap in Human Rights Protection' (2008) 6 International Journal of Constitutional Law 585. <lb/></bibl>
+			<bibl><label>28</label> . Aarhus Convention, art. 2(2)(b). <lb/></bibl>
+			<bibl><label>29</label> . Aarhus Convention, art. 2(2)(c). <lb/></bibl>
+			<bibl><label>30</label> . See UNECE, above n. 6 at 46. <lb/><lb/></bibl>
+			<bibl><label>31</label> . See Ebbesson, above n. 10 at 74. <lb/></bibl>
+			<bibl><label>32</label> . See e.g. the Information Commissioner's decision in Hayle Harbour Authority (Reference IC-155338-R5D9) at para 10. <lb/></bibl>
+			<bibl><label>33</label> . Information Commissioner's Office, Outsourcing Oversight? The Case for Reforming Access to Information Law (Wilmslow: <lb/>ICO, 2019). <lb/></bibl>
+			<bibl><label>34</label> . CJEU Case C-279/12, Fish Legal and Emily Shirley v Information Commissioner and Others, ECLI:EU:C:2013:853 <lb/><lb/></bibl>
+			<bibl><label>35</label> . Above n. 9. <lb/></bibl>
+			<bibl><label>36</label> . ibid at paras 66-67. <lb/></bibl>
+			<bibl><label>37</label> . U. Etemire, 'Public Access to Environmental Information Held by Private Companies' (2012) 14 Environmental Law Review 7; <lb/></bibl>
+			<bibl>S. Whittaker, 'Case Note: Access to Environmental Information and the Problem of Defining Public Authorities' (2013) 15 <lb/>Environmental Law Review 230. <lb/></bibl>
+			<bibl><label>38</label> . Above n. 7. <lb/></bibl>
+			<bibl><label>39</label> . Fish Legal EU, above n. 34 at paras 40-52. <lb/></bibl>
+			<bibl><label>40</label> . ibid at para 51. <lb/></bibl>
+			<bibl><label>41</label> . ibid at para 52. <lb/></bibl>
+			<bibl><label>42</label> . Fish Legal UK, above n. 7 at para 130. <lb/><lb/></bibl>
+			<bibl><label>43</label> . ibid at para 106. <lb/></bibl>
+			<bibl><label>44</label> . Fish Legal EU, above n. 34 at para 73. <lb/></bibl>
+			<bibl><label>46</label> . Fish Legal UK, above n. 7 at para 155. <lb/></bibl>
+			<bibl><label>47</label> . ibid at 155. </bibl>
+			<bibl>For further analysis on this point, see Estelle Dehon, 'On the Hook -Public Authorities under the EIR' (2015) 11 <lb/>Freedom of Information 9. <lb/></bibl>
+			<bibl><label>48</label> . ibid at 153. <lb/></bibl>
+			<bibl><label>49</label> . Of course, in many cases the ICO did not go on to consider Regulation 2(2)(d) if it had already been determined that the entity fell <lb/>within the scope of Regulation 2(2)(c). Nevertheless, the findings of this article support the UT's observation in Fish Legal that the <lb/>'control' test establishes a very high threshold that few private bodies will ever meet. <lb/></bibl>
+			<bibl><label>50</label> . See Cross, above n. 9. <lb/></bibl>
+			<bibl><label>51</label> . ibid at para 10. <lb/></bibl>
+			<bibl><label>52</label> . ibid at para 98. <lb/><lb/></bibl>
+			<bibl><label>53</label> . ibid at 36. <lb/></bibl>
+			<bibl><label>54</label> . ibid at 113. <lb/></bibl>
+			<bibl><label>55</label> . The Information Commissioner v Poplar Housing Association and People's Information Centre [2020] UKUT 182 at para 58. <lb/></bibl>
+			<bibl><label>56</label> . I. Buono, 'What Remains of the Public/Private Divide? Mixed Messages on the Meaning of "Public Authority"' (2020) 17 <lb/>Freedom of Information 4. </bibl>
+			<bibl>See also R. McCracken and M. Lewis, 'Public Authorities and Environmental Information' (2021) <lb/>2 Journal of Planning &amp; Environment Law 160. <lb/></bibl>
+			<bibl><label>57</label> . Information Commissioner's Office, 'Decision Notices' &lt;https://icosearch.ico.org.uk/s/search.html?collection=ico-meta&amp;profile= <lb/>decisions&amp;query&gt; accessed 2 September 2024. <lb/></bibl>
+			<bibl><label>58</label> . GeoPlace &lt;https://www.geoplace.co.uk&gt; accessed 2 September 2024. <lb/></bibl>
+			<bibl><label>59</label> . ICO Decision Notice, reference: FER0557711 (8 June 2015). <lb/></bibl>
+			<bibl><label>60</label> . ibid at para 10. <lb/></bibl>
+			<bibl><label>61</label> . ibid at para 13. <lb/></bibl>
+			<bibl><label>62</label> . ibid at para 58. <lb/><lb/></bibl>
+			<bibl><label>63</label> . ibid at para 63. <lb/></bibl>
+			<bibl><label>64</label> . ibid at para 64. <lb/><lb/></bibl>
+			<bibl><label>65</label> . ICO Decision Notice, reference: FER0534921 (21 July 2015). <lb/></bibl>
+			<bibl><label>66</label> . ibid at para 36. <lb/></bibl>
+			<bibl><label>67</label> . The Forest of Dean Verderers, 'Office and Role' &lt;https://deanverderers.org.uk/office-and-role&gt; accessed 1 September 2024. <lb/></bibl>
+			<bibl><label>68</label> . See Decision Notice FER0534921, above n. 65 at paras 37-41. <lb/></bibl>
+			<bibl><label>69</label> . ibid at para 43. <lb/></bibl>
+			<bibl><label>70</label> . ICO Decision Notice, reference: FER0621831 (13 June 2016). <lb/></bibl>
+			<bibl><label>71</label> . Northern Gas Networks, 'About Us' &lt;https://www.northerngasnetworks.co.uk&gt; accessed 27 August 2024. <lb/></bibl>
+			<bibl><label>72</label> . See Decision Notice FER0621831, above n. 70 at paras 30-31. <lb/></bibl>
+			<bibl><label>73</label> . ibid at paras 33-35. <lb/></bibl>
+			<bibl><label>74</label> . ibid at para 39. <lb/></bibl>
+			<bibl><label>75</label> . ibid at para 40. <lb/></bibl>
+			<bibl><label>76</label> . [2016] UKUT 0154 (AAC). <lb/><lb/></bibl>
+			<bibl><label>77</label> . Bruton v IC and the Duchy of Cornwall &amp; the Attorney General to HRH the Prince of Wales (EA/2010/0182). <lb/></bibl>
+			<bibl><label>78</label> . Duchy of Cornwall, 'About the Duchy' &lt;https://duchyofcornwall.org/about-the-duchy&gt; accessed 2 September 2024. <lb/></bibl>
+			<bibl><label>79</label> . R. Hopkins, 'Duchy of Lancaster Not a Public Authority' (Panopticon blog, 3 January 2011) &lt;https://panopticonblog.com/2011/ <lb/>01/03/duchy-of-lancaster-not-a-public-authority&gt; accessed 30 August 2024. <lb/></bibl>
+			<bibl><label>80</label> . See Bruton, above n. 77 at para 87. <lb/></bibl>
+			<bibl><label>81</label> . ibid at para 99. <lb/></bibl>
+			<bibl><label>82</label> . See AG for the Prince of Wales, above n. 76 at para 115. <lb/></bibl>
+			<bibl><label>83</label> . ibid at para 137. <lb/></bibl>
+			<bibl><label>84</label> . Great Yarmouth Port Authority, &lt;https://www.gypa.co.uk&gt; accessed 27 August 2024. <lb/></bibl>
+			<bibl><label>85</label> . ICO Decision Notice, reference: FER0602952 (8 August 2016) at para 24. <lb/></bibl>
+			<bibl><label>86</label> . ibid at paras 27-29. <lb/></bibl>
+			<bibl><label>87</label> . ICO Decision Notice, reference: FER0674590 (17 October 2017) at paras 46-53. <lb/></bibl>
+			<bibl><label>88</label> . ibid at paras 12-14. <lb/><lb/></bibl>
+			<bibl><label>89</label> . ibid at para 75. <lb/></bibl>
+			<bibl><label>90</label> . ibid at para 48. <lb/></bibl>
+			<bibl><label>91</label> . ibid at para 49. <lb/></bibl>
+			<bibl><label>92</label> . Ibid at paras 51-53. <lb/></bibl>
+			<bibl><label>93</label> . ICO Decision Notice, reference: FER0735350 (14 August 2018) at para 16. <lb/></bibl>
+			<bibl><label>94</label> . Poplar HARCA, 'Who We Are' &lt;https://www.poplarharca.co.uk/about-us/who-we-are&gt; accessed 2 September 2024. <lb/></bibl>
+			<bibl><label>95</label> . Poplar HARCA, 'Balfron Tower' &lt;https://www.poplarharca.co.uk/new-homes-regeneration/development-projects/project/ <lb/>balfron-tower&gt; accessed 28 August 2024. <lb/></bibl>
+			<bibl><label>96</label> . See Decision Notice FER0735350, above n. 93 at paras 25-26. <lb/></bibl>
+			<bibl><label>97</label> . Poplar Housing Association and Regeneration Community Association v Information Commissioner and Another; First-Tier <lb/>Tribunal (EA/2018/0199) (1 February 2019). <lb/></bibl>
+			<bibl><label>98</label> . ibid at para 101. <lb/></bibl>
+			<bibl><label>99</label> . ibid at para 102. <lb/></bibl>
+			<bibl><label>100</label> . See ICO v Poplar, above n. 55 at para 2. <lb/></bibl>
+			<bibl><label>101</label> . ibid at para78. <lb/><lb/></bibl>
+			<bibl><label>102</label> . ibid at para 69. <lb/></bibl>
+			<bibl><label>103</label> . See Poplar HARCA, above n. 94. <lb/></bibl>
+			<bibl><label>104</label> . ibid. <lb/></bibl>
+			<bibl><label>105</label> . Donoghue v Poplar Housing and Regeneration Community Association Ltd [2001] EWCA Civ 595. <lb/></bibl>
+			<bibl><label>106</label> . ibid at para 66. <lb/></bibl>
+			<bibl><label>107</label> . Joint Committee on Human Rights, The Meaning of Public Authority under the Human Rights Act: Seventh Report of Session <lb/>2003-04 (HL Paper 39; HC 382, March 2004) at para 41. <lb/><lb/></bibl>
+			<bibl><label>108</label> . OSIC Decision 118/2014: Mr X and Dunbritton Housing Association Ltd. Reference: 201302209. In 2019, a 5 designation order <lb/>was made to bring RSLs within the scope of the Freedom of Information (Scotland) Act 2002 (FOISA). <lb/></bibl>
+			<bibl><label>109</label> . ibid at para 30. <lb/></bibl>
+			<bibl><label>110</label> . ibid at para 29. <lb/></bibl>
+			<bibl><label>111</label> . Dunbritton Housing Association, 'About Us: Our Vision and Purpose' &lt;https://www.dunbritton.org.uk/our-vision-and-purpose&gt; <lb/>accessed 29 August 2024. <lb/></bibl>
+			<bibl><label>112</label> . ICO Decision Notice, reference: FER0678164 (29 January 2020). <lb/></bibl>
+			<bibl><label>113</label> . ibid at paras 7-8. <lb/></bibl>
+			<bibl><label>114</label> . ibid at paras 37-42. <lb/><lb/></bibl>
+			<bibl><label>115</label> . ibid at paras 47-48. <lb/></bibl>
+			<bibl><label>116</label> . McCracken and Lewis, above n. 56. <lb/></bibl>
+			<bibl><label>117</label> . E.ON UK plc v The Information Commissioner and Fish Legal (GIA/1862/2018) [2019] UKUT 132 (AAC) at para 2. <lb/></bibl>
+			<bibl><label>118</label> . Information Commissioner Decision Notice, reference: FER0844872 (3 February 2020). <lb/></bibl>
+			<bibl><label>119</label> . Heathrow Airport Limited v Information Commissioner, EA/2020/0101 (29 March 2021) at para 21. Appeal heard by a three-<lb/>judge panel of the First-tier Tribunal (General Regulatory Chamber) (Information Rights) included Upper Tier tribunal Judge <lb/>Rintoul sitting as an UT judge. <lb/></bibl>
+			<bibl><label>120</label> . Heathrow Airport Limited, 'About Heathrow: Facts and Figures' &lt;https://www.heathrow.com/company/about-heathrow/facts-<lb/>and-figures&gt; accessed 3 September 2024. <lb/></bibl>
+			<bibl><label>121</label> . Heathrow Airport Limited, above n. 119 at para 25. <lb/></bibl>
+			<bibl><label>122</label> . ibid at para 25. <lb/></bibl>
+			<bibl><label>123</label> . ICO Decision Notice, reference: FER0844872 (3 February 2020) at para 22. <lb/></bibl>
+			<bibl><label>124</label> . Heathrow Airport Limited, above n. 119. <lb/></bibl>
+			<bibl><label>125</label> . ibid at paras 99-100. <lb/><lb/></bibl>
+			<bibl><label>126</label> . ibid at para 80. <lb/></bibl>
+			<bibl><label>127</label> . ibid at paras 86-87. <lb/></bibl>
+			<bibl><label>128</label> . ibid at para 106. <lb/></bibl>
+			<bibl><label>129</label> . ibid at paras 88-89. <lb/></bibl>
+			<bibl><label>130</label> . ibid at para 106. <lb/></bibl>
+			<bibl><label>131</label> . ICO Decision Notice, reference: IC-131245-N6H0 (16 March 2022). <lb/></bibl>
+			<bibl><label>133</label> . National Trust, above n. 131 at para 34. <lb/></bibl>
+			<bibl><label>134</label> . ibid at para 17. <lb/></bibl>
+			<bibl><label>135</label> . ibid at para 28. <lb/></bibl>
+			<bibl><label>136</label> . ibid at paras 34-35. <lb/><lb/></bibl>
+			<bibl><label>137</label> . ibid at para 36. <lb/></bibl>
+			<bibl><label>138</label> . ibid at para 44. <lb/></bibl>
+			<bibl><label>139</label> . National Trust at 47. <lb/></bibl>
+			<bibl><label>140</label> . English Heritage, 'Our Policies' &lt;https://www.english-heritage.org.uk/about-us/our-people/our-policies&gt; accessed 1 September <lb/>2024. <lb/></bibl>
+			<bibl><label>141</label> . ibid. <lb/></bibl>
+			<bibl><label>142</label> . ibid. <lb/></bibl>
+			<bibl><label>143</label> . ibid. <lb/><lb/></bibl>
+			<bibl><label>144</label> ICO Decision Notice, reference: IC-136902-T1T8 (26 August 2022). <lb/></bibl>
+			<bibl><label>145</label> ibid at paras 37-38. <lb/></bibl>
+			<bibl><label>146</label> ibid at para 57. <lb/></bibl>
+			<bibl><label>147</label> ibid at paras 64-66. <lb/></bibl>
+			<bibl><label>148</label> ibid at paras 64-66. <lb/></bibl>
+			<bibl><label>149</label> ICO Decision Notice, reference: IC-155338-R5D9 (2 December 2022). <lb/></bibl>
+			<bibl><label>150</label> ibid at para 18. <lb/></bibl>
+			<bibl><label>151</label> ibid at para 24. <lb/></bibl>
+			<bibl><label>152</label> ibid at para 10. <lb/><lb/></bibl>
+			<bibl><label>154</label> See Poplar HARCA, above n. 97 at para 102. <lb/></bibl>
+			<bibl><label>155</label> See Donoghue, above n. 105. <lb/></bibl>
+			<bibl><label>156</label> See Fish Legal UK, above n. 7 at para 155. <lb/></bibl>
+			<bibl><label>157</label> See Barritt, above n. 18. </bibl>
+			<bibl>See also B. J. Preston, 'The Nature, Content and Realisation of the Right to a Clean, Healthy and <lb/>Sustainable Development' (2024) 36 Journal of Environmental Law 159. <lb/></bibl>
+			<bibl><label>158</label> Aarhus Convention, Article 1, as argued by Barritt (ibid) at 70. <lb/></bibl>
+			<bibl><label>159</label> See Barritt, above n. 18 at 70. <lb/></bibl>
+			<bibl><label>160</label> Whilst there is currently no binding international treaty protecting a substantive right to a healthy environment, the UN General <lb/>Assembly Resolution on the Right to a Clean, Healthy and Sustainable Environment, A/RES/76/300 (28 July 2022) is indicative <lb/>of the direction of travel on the international recognition of environmental rights and has been influential in prompting member <lb/>states to implement stronger domestic measures for the protection of environmental rights. <lb/></bibl>
+			<bibl><label>161</label> Scottish Government, A Human Rights Bill for Scotland: Consultation (Edinburgh: Scottish Government, 2023). <lb/><lb/></bibl>
+			<bibl><label>162</label> See e.g. Zuluaga Madrid, above n. 22 at 38. <lb/></bibl>
+			<bibl><label>163</label> For a critical perspective on environmental transparency, see e.g. Aarti Gupta, 'Transparency under Scrutiny: Information <lb/>Disclosure in Global Environmental Governance (2008) 8 Global Environmental Politics 1; </bibl>
+			<bibl>Michael Mason, 'Transparency <lb/>for Whom? Information Disclosure and Power in Global Environmental Governance' (2008) 8 Global Environmental Politics 8. <lb/></bibl>
+			<bibl><label>164</label> Decision VII/8s of the Meeting of the Parties on compliance by the United Kingdom of Great Britain and Northern Ireland with its <lb/>obligations under the Convention (21 October 2021), ECE/MP.PP/2021/42. <lb/></bibl>
+			<bibl><label>165</label> Ministry of Justice, Access to Justice in Relation to the Aarhus Convention: A Call for Evidence (London: MOJ, 2024). <lb/><lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>

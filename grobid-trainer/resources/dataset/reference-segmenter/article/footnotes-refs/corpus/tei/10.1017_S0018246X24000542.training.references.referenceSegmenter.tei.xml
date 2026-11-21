@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1017_S0018246X24000542">
+			<titleStmt>
+				<title level="a">Emotion and Ethics: The Conjoined Twins of Early Modern English Culture</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1017/S0018246X24000542</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_36</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>1</label> Ethics refer to rules provided by an external source, such as codes of conduct in workplaces or pro-<lb/>fessions, or to principles in religions. Morals refer to an individual's own principles regarding right and <lb/>wrong. In practice, there is considerable overlap between the two. <lb/></bibl>
+			<bibl><label>2</label> Joseph Duke Filonowicz, Fellow feeling and the moral life (Cambridge, 2008), pp. 6, 8; </bibl>
+			<bibl>Brian Cummings and <lb/>Freya Sierhuis, eds., Passions and subjectivity in early modern culture (Farnham, 2013), p. 4; </bibl>
+			<bibl>Susan James, 'The <lb/>passions and the good life', in Donald Rutherford, ed., The Cambridge companion to early modern philosophy <lb/>(Cambridge, 2006), pp. 198-220. <lb/><lb/></bibl>
+			<bibl><label>3</label> James, 'The passions and the good life'. <lb/></bibl>
+			<bibl><label>4</label> Richard Baxter, A Christian directory, or, a summ of practical theologie and cases of conscience directing <lb/>Christians how to use their knowledge and faith, how to improve all helps and means, and to perform all duties, how <lb/>to overcome temptations, and to escape or mortifie every sin: in four parts (1673), part one, ch. VII. All pre-1800 <lb/>works were published in London unless otherwise stated. <lb/></bibl>
+			<bibl><label>5</label> Benedict de Spinoza, The ethics. (Ethica ordine geometrico demonstrata), translated by R. H. M. Elwes (The <lb/>Project Gutenberg EBook #3800, 1677). <lb/></bibl>
+			<bibl><label>6</label> Thomas Hobbes, Human nature: or, the fundamental elements of policy. being a discovery of the faculties, acts <lb/>and passions of the soul of man (1651), p. 160. <lb/></bibl>
+			<bibl><label>7</label> Henry More, An account of virtue, or, Dr. Henry More's abridgment of morals put into English (1690), pp. 3-4. <lb/></bibl>
+			<bibl><label>8</label> Stephen Gaukroger, The soft underbelly of reason: the passions in the seventeenth century (London and New <lb/>York, NY, 1998), pp. 1-2. </bibl>
+			<bibl>For an attempt to bring together disciplines and sources normally kept apart, see <lb/>Erin Sullivan, Beyond melancholy: sadness and selfhood in Renaissance England (Oxford, 2016). <lb/></bibl>
+			<bibl><label>9</label> This comment is made repeatedly in works in philosophy, political philosophy, and moral psychology. <lb/>See, for example, Rebecca Kingston and Leonard Ferry, eds., Bringing the passions back in: the emotions in <lb/>political philosophy (Vancouver, 2008); </bibl>
+			<bibl>Robert C. Solomon, ed., Thinking about feeling: contemporary philoso-<lb/>phers on emotions (London, 2004); </bibl>
+			<bibl>Robert C. Solomon, The passions (New York, NY, 1976); </bibl>
+			<bibl>Martin Pickavé <lb/>and Lisa Shapiro, eds., Emotion and cognitive life in medieval and early modern philosophy (Oxford, 2012), p. 2; <lb/></bibl>
+			<bibl>Jon Elster, Alchemies of the mind: rationality and the emotions (Cambridge, 1999). <lb/></bibl>
+			<bibl><label>10</label> Cummings and Sierhuis, eds., Passions and subjectivity, p. 1; </bibl>
+			<bibl>Cheryl Hall, 'Passions and constraint: the <lb/>marginalization of passion in liberal political theory', Philosophy &amp; Social Criticism, 28 (2002), pp. 727-48, at <lb/>p. 728; </bibl>
+			<bibl>R. S. White, 'Reclaiming heartlands: Shakespeare and the history of emotions in literature', in R. <lb/>S. White, Mark Houlahan, and Katrina O'Loughlin, eds., Shakespeare and emotions: inheritances, enactments, <lb/><lb/>legacies (Basingstoke, 2015), pp. 1-14; </bibl>
+			<bibl>Benedict S. Robinson, Passion's fictions from Shakespeare to Richardson: <lb/>literature and the sciences of soul and mind (Oxford, 2021), p. 32. <lb/></bibl>
+			<bibl><label>11</label> Amy Coplan, 'Feeling without thinking: lessons from the ancients on emotion and virtue-aquisition', <lb/>Metaphilosophy, 41 (2010), pp. 132-51, at p. 136. <lb/></bibl>
+			<bibl><label>12</label> Carla Bagnoli, 'Introduction', in Carla Bagnoli, ed., Morality and the emotions (Oxford, 2011), pp. 1-36, <lb/>at p. 1. <lb/></bibl>
+			<bibl><label>13</label> Michael B. Gill, The British moralists on human nature and the birth of secular ethics (Cambridge, 2006), <lb/>p. 38. <lb/></bibl>
+			<bibl><label>14</label> For a good overview of the neglect of emotions in post-Second World War moral philosophy and the <lb/>reasons for this, see Bernard Williams, 'Morality and the emotions', in Problems of the self: philosophical <lb/>papers 1956-1972 (Cambridge, 1973), pp. 207-29; </bibl>
+			<bibl>Bagnoli, 'Introduction'. <lb/><lb/></bibl>
+			<bibl><label>15</label> Rosalind Hursthouse, On virtue ethics (Oxford, 1999), p. 119. <lb/></bibl>
+			<bibl><label>16</label> William J. Bouwsma, 'The two faces of humanism. Stoicism and Augustinianism in Renaissance <lb/>thought', in Thomas A. Brady ed., Itinerariam Italicum: the profile of the Italian Renaissance in the mirror of <lb/>its European transformations (Leiden, 1975), pp. 3-60, at p. 22. <lb/></bibl>
+			<bibl><label>17</label> Ibid., p. 51. <lb/></bibl>
+			<bibl><label>18</label> Sarah Byers, Perception, sensibility, and moral motivation in Augustine: a Stoic-Platonic synthesis <lb/>(Cambridge, 2012), especially ch. 3. <lb/></bibl>
+			<bibl><label>19</label> Robert Miner, Thomas Aquinas on the passions: a study of Summa theologiae (Cambridge, 2009); </bibl>
+			<bibl>Leonard <lb/>Ferry, 'Introduction', in Kingston and Ferry, eds., Bringing the passions back in, pp. 3-18. <lb/></bibl>
+			<bibl><label>20</label> J. B. Schneewind, The invention of autonomy: a history of modern moral philosophy (Cambridge, 1998), <lb/>p. 161; </bibl>
+			<bibl>David N. Beauregard, Virtue's own feature: Shakespeare and the virtue ethics tradition (Newark, NJ, 1995); <lb/></bibl>
+			<bibl>John Bossy, 'Moral arithmetic: seven sins into ten commandments', in Edmund Leites, ed., Conscience and <lb/>casuistry in early modern Europe (Cambridge, 1988), pp. 214-34, at p. 217. <lb/></bibl>
+			<bibl><label>21</label> Daniela Coli, 'Hobbes's revolution', in Victoria Kahn, Neil Saccamano, and Daniela Coli, eds., Politics <lb/>and the passions, 1500-1850 (Princeton, NJ, 2006), pp. 75-92, at pp. 75, 87, 91. <lb/><lb/></bibl>
+			<bibl><label>22</label> John Locke, An essay concerning human understanding (London, 1694), pp. 4, 8, 113-15. </bibl>
+			<bibl>On Locke, see <lb/>Peter King, 'Dispassionate passions', in Pickavé and Shapiro, eds., Emotion and cognitive life, pp. 9-31; </bibl>
+			<bibl>Amy <lb/>M. Schmitter, 'Passions and affections', in Peter R. Anstey, ed., The Oxford handbook of British philosophy in <lb/>the seventeenth century (Oxford, 2013), pp. 442-71. </bibl>
+			<bibl>Locke was not consistent in his views, see Joel P. Sodano, <lb/>'Uneasy passions: the spectator's divergent interpretations of Locke's theory of emotion', The Eighteenth <lb/>Century, 58 (2017), pp. 449-67. <lb/></bibl>
+			<bibl><label>23</label> David Irons, 'Rationalism in modern ethics', Philosophical Review, 12 (1903), pp. 138-62. <lb/></bibl>
+			<bibl><label>24</label> Stephen Darwall, 'The foundations of morality: virtue, law, and obligation', in Rutherford, ed., The <lb/>Cambridge companion to early modern philosophy, pp. 221-49. <lb/></bibl>
+			<bibl><label>25</label> Filonowicz, Fellow feeling and the moral life, p. 4. <lb/></bibl>
+			<bibl><label>26</label> Gill, British moralists on human nature, p. 208. <lb/></bibl>
+			<bibl><label>27</label> David McNaughton, 'Richard Price', The Stanford encyclopedia of philosophy (https://plato.stanford. <lb/>edu/archives/win2019/entries/richard-price/, 2019). <lb/></bibl>
+			<bibl><label>28</label> Irons, 'Rationalism', p. 158. <lb/><lb/></bibl>
+			<bibl><label>29</label> Eric Entrican Wilson and Lara Denis, 'Kant and Hume on morality', The Stanford encyclopedia of <lb/>philosophy (https://doi.org/https://plato.stanford.edu/archives/fall2022/entries/kant-hume-morality/, <lb/>2022). <lb/></bibl>
+			<bibl><label>30</label> David Pizarro, 'Nothing more than feelings? The role of emotions in moral judgment', Journal for <lb/>the Theory of Social Behaviour, 30 (2000), pp. 355-75, at p. 356; </bibl>
+			<bibl>Ute Frevert, 'Defining emotions: concepts <lb/>and debates over three centuries', in Ute Frevert, Christian Bailey, Pascal Eitler, Benno Gammerl, Bettina <lb/>Hitzer, Margrit Pernau, Monique Scheer, Anne Schmidt, and Nina Verheyen, eds., Emotional lexicons: <lb/>continuity and change in the vocabulary of feeling 1700-2000 (Oxford, 2014), pp. 1-31, at pp. 18, 20. <lb/></bibl>
+			<bibl><label>31</label> Justin Oakley, Morality and the emotions (New York, NY, 1992), p. 1. <lb/></bibl>
+			<bibl><label>32</label> William James, The principles of psychology (2 vols., New York, NY, 1950), II, p. 449. <lb/></bibl>
+			<bibl><label>33</label> David Carr, 'Virtue, mixed emotions and moral ambivalence', Philosophy, 84 (2009), pp. 31-46; <lb/></bibl>
+			<bibl>Filonowicz, Fellow feeling and the moral life, pp. 6, 9, 12, 18, 49, 223. <lb/></bibl>
+			<bibl><label>34</label> The debate continues. The dominance of Kant and the downplaying of affect's role in moral reasoning <lb/>was challenged by the creation of a new category of moral emotion and of a school of thought known as <lb/>virtue ethics that believes in the moral significance of the emotions: Hursthouse, Virtue ethics; </bibl>
+			<bibl>Alasdair <lb/>MacIntyre, After virtue: a study in moral theory (Notre Dame, IN, 1981). </bibl>
+			<bibl>Joshua May's recent work, however, <lb/>intended as a corrective to the current trend in moral psychology celebrating emotion over reason, claims <lb/>that moral judgement is fundamentally rational and not beholden to the passions: Joshua May, Regard for <lb/>reason in the moral mind (Oxford, 2018). <lb/></bibl>
+			<bibl><label>36</label> Johan Huizinga, The waning of the middle ages: a study of the forms of life, thought, and art in France and the <lb/>Netherlands in the XIVth and XVth centuries (London, 1955). <lb/></bibl>
+			<bibl><label>37</label> Lucien Febvre, 'Sensibility and history: how to reconstitute the emotional life of the past', in Peter <lb/>Burke, ed., A new kind of history: from the writings of Febvre (London, 1973), pp. 12-26. <lb/></bibl>
+			<bibl><label>38</label> Norbert Elias, The civilizing process: sociogenetic and psychogenetic investigations, translated by Edmund <lb/>Jephcott (Oxford, 1994). <lb/></bibl>
+			<bibl><label>39</label> Peter N. Stearns and Carol Z. Stearns, 'Emotionology: clarifying the history of emotions and emotional <lb/>standards', American Historical Review, 90 (1985), pp. 813-36. <lb/></bibl>
+			<bibl><label>40</label> A good analysis of this trajectory and its implications for study of pre-modern emotions is <lb/>Barbara H. Rosenwein, 'Worrying about emotions in history', American Historical Review, 107 (2002), <lb/>pp. 821-45. <lb/></bibl>
+			<bibl><label>41</label> Elias, The civilizing process. </bibl>
+			<bibl>For a critique, see Barbara H. Rosenwein, 'Theories of change in the his-<lb/>tory of emotions', in Jonas Liliequist, ed., A history of emotions, 1200-1800 (London, 2012), pp. 7-20; </bibl>
+			<bibl>Linda A. <lb/>Pollock, 'Anger and the negotiation of relationships in early modern England', Historical Journal, 47 (2004), <lb/>pp. 567-90. <lb/></bibl>
+			<bibl><label>42</label> This focus was in accordance with the view that passions and affection were distinct conceptual <lb/>terms, distinguished on moral and theological grounds. Affections were laudatory feelings, whereas pas-<lb/>sions were potentially more disturbing, an interpretation cemented by the publication of Thomas Dixon, <lb/>From passions to emotions: the creation of a secular psychological category (Cambridge, 2003). </bibl>
+			<bibl>Very recent <lb/>scholarship, however, is no longer so convinced that the passions and affections were distinguishable: <lb/>Barbara H. Rosenwein, Generations of feeling: a history of emotions, 600-1700 (Cambridge, 2016), p. 7; </bibl>
+			<bibl>Schmitter, <lb/>'Passions and affections', p. 6; </bibl>
+			<bibl>James, 'The passions and the good life', p. 220; </bibl>
+			<bibl>Bradley Irish, Emotion in the <lb/>Tudor court, rethinking the early modern feeling (Evanston, IL, 2018), introduction, n. 1; </bibl>
+			<bibl>Jennifer Clement, <lb/>'The art of feeling in seventeenth-century English sermons', English Studies, 98 (2017), pp. 675-88; </bibl>
+			<bibl>Kirk <lb/>Essary, 'Passions, affections, or emotions? On the ambiguity of 16th-century terminology', Emotion Review, <lb/>9 (2017), pp. 367-74. <lb/><lb/></bibl>
+			<bibl><label>43</label> Gail Kern Paster, Humoring the body: emotions and the Shakespearean stage (Chicago, IL, and London, <lb/>2004), p. 5; </bibl>
+			<bibl>Susan James, Passion and action: the emotions in seventeenth-century philosophy (Oxford, 1997), p. <lb/>13. <lb/></bibl>
+			<bibl><label>44</label> Susan James, 'Reason, the passions, and the good life', in Daniel Garber and Michael Ayers, eds., The <lb/>Cambridge history of seventeenth-century philosophy (Cambridge and New York, NY, 1998), pp. 1358-96, at p. <lb/>1358; </bibl>
+			<bibl>Albert O. Hirschman, The passions and the interests: political arguments for capitalism before its triumph <lb/>(Princeton, NJ, 1977), pp. 20, 27, 32. <lb/></bibl>
+			<bibl><label>45</label> Rosenwein, 'Worrying about emotions in history', pp. 827, 845. </bibl>
+			<bibl>See also Barbara H. Rosenwein, <lb/>Emotional communities in the early middle ages (Ithaca, NY, 2006), p. 3. </bibl>
+			<bibl>A good overview of the important role <lb/>of emotion in medieval life is Damien Boquet and Piroska Nagy, Medieval sensibilities: a history of emotions <lb/>in the middle ages (Cambridge, 2018). <lb/></bibl>
+			<bibl><label>46</label> Debora K. Shuger, Sacred rhetoric: the Christian grand style in the English Renaissance (Princeton, NJ, 1988), <lb/>p. 247. <lb/></bibl>
+			<bibl><label>47</label> Alec Ryrie, Being Protestant in Reformation Britain (Oxford, 2013); </bibl>
+			<bibl>Susan C. Karant-Nunn, The reformation <lb/>of feeling: shaping the religious emotions in early modern Germany (New York, NY, 2010). <lb/></bibl>
+			<bibl><label>48</label> Gail Kern Paster, The body embarrassed: drama and the disciplines of shame in early modern England (Ithaca, <lb/>NY, 2018). </bibl>
+			<bibl>See also, Paster, Humoring the body. <lb/></bibl>
+			<bibl><label>49</label> Gail Kern Paster, Reading the early modern passions: essays in the cultural history of emotions (Philadelphia, <lb/>PA, 2004); </bibl>
+			<bibl>Jan Purnis, 'The stomach and early modern emotions', University of Toronto Quarterly, 79 (2010), <lb/>pp. 800-18; </bibl>
+			<bibl>Fay Alberti, Matters of the heart: history, medicine, and emotion (Oxford and New York, NY, 2010); <lb/></bibl>
+			<bibl>Fay Bound Alberti, 'Bodies, hearts and minds: why emotions matter to historians of science and medicine', <lb/>Isis, 100 (2009), pp. 798-810. <lb/></bibl>
+			<bibl><label>50</label> Karen Harvey, 'The body', in Susan Broomhall, ed., Early modern emotions: an introduction (Abingdon <lb/>and New York, NY, 2017), pp. 165-7, at p. 165. <lb/></bibl>
+			<bibl><label>51</label> Robinson, Passion's fictions, p. 34. <lb/><lb/></bibl>
+			<bibl><label>52</label> Paster, Humoring the body, p. 23; </bibl>
+			<bibl>Paster, Reading the early modern passions, p. 16. <lb/></bibl>
+			<bibl><label>53</label> Irish, Emotion in the Tudor court, pp. 6-7; </bibl>
+			<bibl>White, Houlahan, and O'Loughlin, eds., Shakespeare and emo-<lb/>tions; </bibl>
+			<bibl>Karis Grace Riley, 'Eating, sensing, feeling: "affective studies" and the fall into ethics', Renaissance <lb/>Studies, 31 (2017), pp. 165-74; </bibl>
+			<bibl>Linda A. Pollock, 'The affective life in Shakespearean England', in R. Malcolm <lb/>Smuts, ed., The Oxford handbook of the age of Shakespeare (Oxford, 2016), pp. 435-57; </bibl>
+			<bibl>Angus Gowland, <lb/>'Melancholy, passions and identity in the Renaissance', in Cummings and Sierhuis, eds., Passions and <lb/>subjectivity, pp. 75-94. <lb/></bibl>
+			<bibl><label>54</label> Richard Strier, The unrepentant Renaissance: from Petrarch to Shakespeare to Milton (Chicago, IL, 2011), pp. <lb/>17-18. <lb/></bibl>
+			<bibl><label>55</label> William M. Reddy, The navigation of feeling: a framework for the history of emotions (Cambridge, 2001), p. <lb/>94; </bibl>
+			<bibl>Alberti, 'Bodies, hearts and minds', p. 802. <lb/></bibl>
+			<bibl><label>56</label> Elena Carrera, 'Introduction', in Elena Carrera, ed., Emotions and health, 1200-1700 (Leiden, 2013), pp. <lb/>1-18. <lb/></bibl>
+			<bibl><label>57</label> Lynn Enterline, Shakespeare's schoolroom: rhetoric, discipline, emotion (Philadelphia, PA, 2012). <lb/></bibl>
+			<bibl><label>58</label> Erving Goffman, The presentation of self in everyday life (New York, NY, 1959); </bibl>
+			<bibl>Katie Barclay, <lb/>'Performance and performativity', in Broomhall, ed., Early modern emotions, pp. 14-17. <lb/></bibl>
+			<bibl><label>59</label> Giovanna Colombetti, The feeling body affective science meets the enactive mind (Cambridge, MA, 2013). <lb/></bibl>
+			<bibl><label>60</label> Monique Scheer, 'Are emotions a kind of practice (and is that what makes them have a history)? A <lb/>Bourdieuian approach to understanding emotion', History and Theory, 51 (2012), pp. 193-220. <lb/></bibl>
+			<bibl><label>61</label> Arlie Russell Hochschild, The managed heart: commercialization of human feeling (Berkeley, CA, 2012), p. <lb/>122. <lb/><lb/></bibl>
+			<bibl><label>62</label> Catherine Lutz and Lila Abu-Lughod, Language and the politics of emotion (Cambridge, 1990); </bibl>
+			<bibl>Catherine <lb/>A. Lutz, Unnatural emotions: everyday sentiments on a Micronesian atoll and their challenge to Western theory <lb/>(Chicago, IL, 1988); </bibl>
+			<bibl>Hochschild, The managed heart. <lb/></bibl>
+			<bibl><label>63</label> Rosenwein, Emotional communities, pp. 15, 155. <lb/></bibl>
+			<bibl><label>64</label> Rosenwein, Generations of feeling, pp. 3, 9. <lb/></bibl>
+			<bibl><label>65</label> Sara Ahmed, The cultural politics of emotion (New York, NY, 2004), pp. 4, 5, 7, 8, 9, 10. <lb/></bibl>
+			<bibl><label>66</label> Ibid. <lb/></bibl>
+			<bibl><label>67</label> Susan Broomhall, Authority, gender and emotions in late medieval and early modern England (Basingstoke, <lb/>2015). </bibl>
+			<bibl>The essays in the following collections are also concerned with the mechanisms of power: Susan <lb/>Broomhall, ed., Gender and emotions in medieval and early modern Europe: destroying order, structuring disorder <lb/>(Farnham, 2015); </bibl>
+			<bibl>Penelope Gouk and Helen Hills, eds., Representing emotions: new connections in the histories <lb/>of art, music and medicine (Aldershot, 2005). <lb/></bibl>
+			<bibl><label>68</label> Daniel M. Gross, The secret history of emotion from Aristotle's rhetoric to modern brain science (Chicago, IL, <lb/>2007), p. 3. <lb/></bibl>
+			<bibl><label>69</label> Reddy, Navigation of feeling. <lb/><lb/></bibl>
+			<bibl><label>70</label> It is a daunting task to keep up, although there are excellent introductions to and overviews of the <lb/>field available: Jan Plamper, The history of emotions: an introduction (Oxford, 2015); </bibl>
+			<bibl>Broomhall, ed., Early <lb/>modern emotions; </bibl>
+			<bibl>Katie Barclay, 'State of the field: the history of emotions', History, 106 (2021), pp. 456-66; <lb/></bibl>
+			<bibl>Peter Stearns, Juanita Fero Ruys, Robert S. White, Grace Moor, Merridee L. Bailey, Una McIlvenna, and <lb/>Kirk Essary, 'History of emotions: where are we?', Emotions: History, Culture, Society, 5 (2021), pp. 331-54. <lb/></bibl>
+			<bibl><label>71</label> Alberti, 'Bodies, hearts and minds', p. 802; </bibl>
+			<bibl>Michael Roper, 'Slipping out of view: subjectivity and <lb/>emotion in gender history', History Workshop Journal, 59 (2005), pp. 57-72. <lb/></bibl>
+			<bibl><label>72</label> Irish, Emotion in the Tudor court, pp. 16-17. </bibl>
+			<bibl>See too the chapters by Bragchi, Coodin, Lund, and <lb/>Chamberlain which focus on positive emotions in Richard Meek and Erin Sullivan, eds., The renaissance <lb/>of emotion: understanding affect in Shakespeare and his contemporaries (Manchester, 2015); </bibl>
+			<bibl>Linda Pollock, <lb/>'Compassion, love, and happiness: positive emotions and early modern communities', Parergon, 39 (2022), <lb/>pp. 131-44; </bibl>
+			<bibl>Mark Rothery, 'Emotional economies of pleasure among the gentry of eighteenth-century <lb/>England', Social History, 49 (2024), pp. 294-315. <lb/></bibl>
+			<bibl><label>73</label> See, for example, Sara Coodin, "'This was a way to thrive": Christian and Jewish eudaimonism in <lb/>The Merchant of Venice', in Meek and Sullivan, eds., The renaissance of emotion, pp. 65-85; </bibl>
+			<bibl>M. J. Braddick, <lb/>Joanna Innes, and Paul Slack, eds., Suffering and happiness in England 1550-1850: narratives and representations: <lb/>a collection to honour Paul Slack (Oxford and New York, NY, 2017). </bibl>
+			<bibl>A recent review of several works is Katrin <lb/>R ö <lb/>der and Christoph Singer, 'Fortune, felicity and happiness in the early modern period: introduction', <lb/>Critical Survey, 32 (2020), pp. 1-7. </bibl>
+			<bibl>Happiness, though, is usually promised to those who live their lives in <lb/>the right way: Sara Ahmed, The promise of happiness (Durham, NC, 2010), p. 2. <lb/></bibl>
+			<bibl><label>74</label> J. A. N. Plamper, 'The history of emotions: an interview with William Reddy, Barbara Rosenwein, and <lb/>Peter Stearns', History and Theory, 49 (2010), pp. 237-65. </bibl>
+			<bibl>See, for example, Broomhall, Authority, gender and <lb/>emotions. <lb/></bibl>
+			<bibl><label>75</label> Michael J. Braddick and John Walter, 'Introduction', in Michael J. Braddick and John Walter eds., <lb/>Negotiating power in early modern society: order, hierarchy and subordination in Britain and Ireland (Cambridge, <lb/>2001), pp. 1-42; </bibl>
+			<bibl>Mark Goldie, 'The unacknowledged republic: officeholding in early modern England', in <lb/>Tim Harris, ed., The politics of the excluded, c. 1500-1850 (Basingstoke, 2001), pp. 153-94; </bibl>
+			<bibl>Steve Hindle, The <lb/><lb/>state and social change in early modern England, c.1550-1640 (Basingstoke, 2000); </bibl>
+			<bibl>Phil Withington, The politics <lb/>of the commonwealth: citizens and freemen in early modern England (Cambridge, 2005), p. 53. <lb/></bibl>
+			<bibl><label>76</label> Andy Wood, The 1549 rebellions and the making of early modern England (Cambridge, 2007), p. 189. <lb/></bibl>
+			<bibl><label>77</label> K. J. Kesselring, Mercy and authority in the Tudor state (Cambridge, 2003), p. 22; </bibl>
+			<bibl>Cynthia B. Herrup, The <lb/>common peace: participation and the criminal law in seventeenth-century England (Cambridge, 1987). <lb/></bibl>
+			<bibl><label>78</label> Keith Wrightson, 'The politics of the parish in early modern England', in Paul Griffiths, Adam Fox, <lb/>and Steve Hindle, eds., The experience of authority in early modern England (New York, NY, 1996), pp. 10-46. <lb/></bibl>
+			<bibl><label>79</label> Hindle, State and social change, pp. 16, 34, 95-6, 112, 176; </bibl>
+			<bibl>Craig Muldrew, 'The culture of reconciliation: <lb/>community and the settlement of economic disputes in early modern England', Historical Journal, 39 (1996), <lb/>pp. 915-42, at pp. 920, 940. <lb/></bibl>
+			<bibl><label>80</label> Kesselring, Mercy and authority, pp. 8, 22, 91-2, 93, 205. <lb/></bibl>
+			<bibl><label>81</label> James C. Scott, Weapons of the weak: everyday forms of peasant resistance (New Haven, CT, 1985), pp. 5, 10. <lb/></bibl>
+			<bibl><label>82</label> Andy Wood, "'A lyttull worde ys tresson": loyalty, denunciation, and popular politics in Tudor <lb/>England', Journal of British Studies, 48 (2009), pp. 837-47. <lb/></bibl>
+			<bibl><label>83</label> Ethan H. Shagan, Popular politics and the English Reformation (Cambridge, 2002), p. 13. <lb/><lb/></bibl>
+			<bibl><label>84</label> Ibid., p. 16. <lb/></bibl>
+			<bibl><label>85</label> Andy Wood, Faith, hope and charity: English neighbourhoods, 1500-1640 (Cambridge, 2020), p. 27; <lb/></bibl>
+			<bibl>Alexandra Walsham, Charitable hatred: tolerance and intolerance in England, 1500-1700 (Manchester, 2006), p. <lb/>278; </bibl>
+			<bibl>Christopher Haigh, The plain man's pathways to heaven: kinds of Christianity in post-Reformation England, <lb/>1570-1640 (Oxford, 2007), pp. 131, 218, 225. <lb/></bibl>
+			<bibl><label>86</label> Braddick and Walter, 'Introduction', p. 18. <lb/></bibl>
+			<bibl><label>87</label> Michael J. Braddick and John Walter, Popular culture and political agency in early modern England and <lb/>Ireland: essays in honour of John Walter (Woodbridge, 2017); </bibl>
+			<bibl>Wood, 1549 rebellions, p. 196; </bibl>
+			<bibl>John Walter, "'The <lb/>pooremans joy and the gentlemans plague": a Lincolnshire libel and the politics of sedition in early <lb/>modern England', Past &amp; Present, 203 (2009), pp. 29-67. <lb/></bibl>
+			<bibl><label>88</label> Brodie Waddell, God, duty and community in English economic life, 1660-1720 (Woodbridge, 2012), p. 227. <lb/></bibl>
+			<bibl><label>89</label> Christopher Marsh, 'Order and place in England, 1580-1640: the view from the pew', Journal of <lb/>British Studies, 44 (2005), pp. 3-26; </bibl>
+			<bibl>David Hickman, 'Religious belief and pious practice among London's <lb/>Elizabethan elite', Historical Journal, 42 (1999), pp. 941-60. <lb/></bibl>
+			<bibl><label>90</label> Withington, Politics of the commonwealth, pp. 12, 15, 248. <lb/></bibl>
+			<bibl><label>91</label> Craig Muldrew, The economy of obligation: the culture of credit and social relations in early modern England <lb/>(New York, NY, 1998), pp. 4, 5; </bibl>
+			<bibl>Waddell, God, duty and community, pp. 228, 229. <lb/></bibl>
+			<bibl><label>92</label> Naomi Tadmor, The social universe of the English bible: scripture, society, and culture in early modern England <lb/>(Cambridge, 2010). <lb/></bibl>
+			<bibl><label>93</label> Keith Wrightson, 'The "decline of neighbourliness" revisited', in Norman L. Jones and Daniel <lb/>Woolf, eds., Local identities in late medieval and early modern England (New York, NY, 2007), pp. 19-49; <lb/></bibl>
+			<bibl>Keith Wrightson, 'Mutualities and obligations: changing social relationships in early modern England', <lb/>Proceedings of the British Academy, 139 (2006), pp. 157-94; </bibl>
+			<bibl>Tadmor, Social universe of the English bible, ch. 1. <lb/><lb/></bibl>
+			<bibl><label>94</label> Ethan H. Shagan, The rule of moderation: violence, religion and the politics of restraint in early modern England <lb/>(Cambridge, 2011), pp. 7, 8, 15-16, 50. <lb/></bibl>
+			<bibl><label>95</label> Only Wood, Faith, hope and charity; </bibl>
+			<bibl>and Katie Barclay, Caritas: neighbourly love and the early modern self <lb/>(Oxford, 2021), show how affect structured the functioning of society. <lb/></bibl>
+			<bibl><label>96</label> Bernard Williams critiqued the neglect of emotion by moral philosophy and called for emotion to <lb/>be reintegrated into systems of ethics the importance of emotion to morality in 1966. The essay is avail-<lb/>able in a later published collection of his work: Williams, 'Morality and the emotions'. </bibl>
+			<bibl>For a good analysis <lb/>of the increased attention paid to emotions by moral philosophers from the mid-1980s on, see Bagnoli, <lb/>'Introduction'. </bibl>
+			<bibl>Recent work in the sciences also refutes the view that emotions are at odds with rational-<lb/>ity: Lisa Feldman Barrett, How emotions are made: the secret life of the brain (Boston, MA, 2017); </bibl>
+			<bibl>Antonio R. <lb/>Damasio, Descartes' error: emotion, reason, and the human brain (New York, NY, 1994). <lb/></bibl>
+			<bibl><label>97</label> Solomon, ed., Thinking about feeling; </bibl>
+			<bibl>Susan Stark, 'A change of heart: moral emotions, transformation, <lb/>and moral virtue', Journal of Moral Philosophy, 1 (2004), pp. 31-50; </bibl>
+			<bibl>Robert C. Solomon, Not passion's slave: <lb/>emotions and choice (New York, NY, 2003); </bibl>
+			<bibl>Martha Craven Nussbaum, Upheavals of thought: the intelligence of <lb/>emotions (Cambridge, 2001), pp. 2-3; </bibl>
+			<bibl>Allan Gibbard, Wise choices, apt feelings (Cambridge, MA, 1990); </bibl>
+			<bibl>Simon <lb/>Blackburn, Ruling passions: a theory of practical reasoning (Oxford, 1998). <lb/></bibl>
+			<bibl><label>98</label> Aaron Ben-Ze'ev, 'Emotions and morality', Journal of Value Inquiry, 31 (1997), pp. 195-212; </bibl>
+			<bibl>Pizarro, <lb/>'Nothing more than feelings?', p. 70. <lb/></bibl>
+			<bibl><label>99</label> Ben-Ze'ev, 'Emotions and morality', p. 206; </bibl>
+			<bibl>Jesse Prinz, The emotional construction of morals (Oxford, <lb/>2007), p. 13. <lb/></bibl>
+			<bibl><label>100</label> Michael Stocker, 'How emotions reveal value and help cure the schizophrenia of modern ethical <lb/>theories', in Roger Crisp, ed., How should one live? Essays on the virtues (New York, NY, 2003), pp. 173-90. <lb/><lb/></bibl>
+			<bibl><label>101</label> Margaret Graver, Stoicism and emotion (Chicago, IL, 2007), pp. 2, 35; </bibl>
+			<bibl>Richard Sorabji, Emotion and peace <lb/>of mind: from Stoic agitation to Christian temptation (Oxford, 2000), pp. 7, 82; </bibl>
+			<bibl>Simo Knuuttila, Emotions in ancient <lb/>and medieval philosophy (Oxford, 2004), pp. 166-7. <lb/></bibl>
+			<bibl><label>102</label> Rosenwein, Generations of feeling, pp. 162-8; </bibl>
+			<bibl>Nicholas E. Lombardo, 'Emotions and psychological <lb/>health in Aquinas', in Carrera, ed. Emotions and health, pp. 19-46, at pp. 20, 21, 25, 40. <lb/></bibl>
+			<bibl><label>103</label> Heikki Haara, 'Pufendorf on passions and sociability', Journal of the History of Ideas, 77 (2016), pp. <lb/>423-44; </bibl>
+			<bibl>Alan Brinton, 'The passions as subject matter in early eighteenth-century British sermons', <lb/>Rhetorica, 10 (1992), pp. 51-69, at p. 55. <lb/></bibl>
+			<bibl><label>104</label> Elizabeth S. Radcliffe, 'Ruly and unruly passions: early modern perspectives', Royal Institute of <lb/>Philosophy Supplement, 85 (2019), pp. 21-38; </bibl>
+			<bibl>Gill, British moralists on human nature, ch. 4; </bibl>
+			<bibl>Haara, 'Pufendorf <lb/>on passions and sociability'; </bibl>
+			<bibl>Brinton, 'Passions as subject matter'. <lb/></bibl>
+			<bibl><label>105</label> Strier, The unrepentant Renaissance; </bibl>
+			<bibl>Schneewind, Invention of autonomy, p. 161; </bibl>
+			<bibl>Nancy Sherman, Making <lb/>a necessity of virtue: Aristotle and Kant on virtue (New York, NY, 1997); </bibl>
+			<bibl>Kevin Timpe and Craig A. Boyd, Virtues <lb/>and their vices (Oxford, 2014); </bibl>
+			<bibl>Robinson, Passion's fictions, pp. 68, 73, 157, 158, 161. <lb/></bibl>
+			<bibl><label>106</label> Kahn, Saccamano, and Coli, eds., Politics and the passions, pp. 5, 6. <lb/></bibl>
+			<bibl><label>107</label> See the introduction and chapters by Deimling, DeWitt, Grenberg, Williamson, and Wood in Kelly <lb/>Sorensen and Diane Williamson, eds., Kant and the faculty of feeling (Cambridge, 2017). <lb/></bibl>
+			<bibl><label>108</label> Riley, 'Eating, sensing, feeling', pp. 8-9; </bibl>
+			<bibl>Cummings and Sierhuis, eds., Passions and subjectivity, p. <lb/>1; </bibl>
+			<bibl>White, 'Reclaiming heartlands', notes the reluctance to enter into the larger debate with respect to <lb/>emotions. <lb/></bibl>
+			<bibl><label>109</label> Rob Boddice and Mark M. Smith, Emotion, sense, experience (Cambridge, 2020), ch. 8, is entitled <lb/>'Morality', at p. 192. <lb/><lb/></bibl>
+			<bibl><label>110</label> Spencer E. Young, 'Avarice, emotions, and the family in thirteenth-century moral discourse', in Susan <lb/>Broomhall, ed., Ordering emotions in Europe, 1100-1800 (Leiden, 2015), pp. 69-84; </bibl>
+			<bibl>Danijela Kambaskovic, <lb/>'Living anxiously: the senses, society and morality in pre-modern England', in Broomhall, ed., Ordering <lb/>emotions in Europe, pp. 161-79, at p. 179. </bibl>
+			<bibl>See also chs. 5 and 7 on the perceived importance of the moral <lb/>and ethical orientation of feelings in Broomhall, ed., Gender and emotions. <lb/></bibl>
+			<bibl><label>111</label> Merridee L. Bailey, 'Morality and emotions: absent and present', Emotions: History, Culture, Society, <lb/>5 (2021), pp. 347-49; </bibl>
+			<bibl>Katherine Ibbett, Compassion's edge: fellow-feeling and its limits in early modern France <lb/>(Philadelphia, PA, 2020); </bibl>
+			<bibl>Kristine Steenbergh and Katherine Ibbett, eds., Compassion in early modern <lb/>literature and culture: feeling and practice (Cambridge, 2021). <lb/></bibl>
+			<bibl><label>112</label> Wood, Faith, hope and charity, pp. x, 25, 27, 38-9, 189, 199; </bibl>
+			<bibl>Muldrew, 'Culture of reconciliation'; <lb/></bibl>
+			<bibl>Walsham, Charitable hatred, p. 231. <lb/></bibl>
+			<bibl><label>113</label> Barclay, Caritas, p. 13. <lb/></bibl>
+			<bibl><label>114</label> Reddy, Navigation of feeling, pp. 114, 121. <lb/></bibl>
+			<bibl><label>115</label> Broomhall, ed., Gender and emotions, intro.; </bibl>
+			<bibl>Broomhall, Authority, gender and emotions, pp. 2, 6, 12-13. <lb/></bibl>
+			<bibl><label>116</label> Mark Greengrass, Governing passions: peace and reform in the French kingdom, 1576-1585 (Oxford, 2007). <lb/></bibl>
+			<bibl><label>117</label> Victoria Kahn, "'The duty to love": passion and obligation in early modern political theory', <lb/>Representations, 68 (1999), pp. 84-107. </bibl>
+			<bibl>Love in Ahmed's model also enabled consent to norms that 'do not <lb/>and cannot guarantee the well-being of subject and citizens': Ahmed, Cultural politics of emotion, p. 142. <lb/></bibl>
+			<bibl><label>118</label> Irish, Emotion in the Tudor court, pp. 4-5, 6, 140. <lb/><lb/></bibl>
+			<bibl><label>119</label> Daniel M. Haybron, 'Well-being and virtue', Journal of Ethics and Social Philosophy, 2 (2007), pp. 1-27, <lb/>at p. 22. <lb/></bibl>
+			<bibl><label>120</label> Christopher Tillmouth, Passion's triumph over reason: a history of the moral imagination from Spenser to <lb/>Rochester (Oxford, 2007); </bibl>
+			<bibl>Dixon, From passions to emotions. <lb/></bibl>
+			<bibl><label>121</label> Dixon, From passions to emotions; </bibl>
+			<bibl>Rosenwein, Emotional communities, pp. 193-4, notes, but does not <lb/>develop, that feelings helped 'to create, validate and maintain belief systems'. <lb/></bibl>
+			<bibl><label>122</label> Clement Ellis, The necessity of serious consideration, and speedy repentance, as the only way to be safe both <lb/>living and dying (1691), p. 79. <lb/><lb/></bibl>
+			<bibl><label>123</label> John Donne, 'Sermon preached upon Trinity-Sunday', in George Potter and Evelyn M. Simpson. eds., <lb/>The sermons of John Donne (10 vols., Berkeley and Los Angeles, CA, 2022), III, pp. 256-74, at p. 270. <lb/></bibl>
+			<bibl><label>124</label> David Carr, 'Introduction', in David Carr, ed., Perspectives on gratitude: an interdisciplinary approach <lb/>(London, 2016), pp. 1-10. <lb/></bibl>
+			<bibl><label>125</label> Isaac Barrow, Sermons preached upon several occasions (1679), p. 267. <lb/></bibl>
+			<bibl><label>126</label> William Rankins, A mirrour of monsters wherein is plainely described the manifold vices, &amp;c spotted enor-<lb/>mities, that are caused by the infectious sight of playes, with the description of the subtile slights of sathan, making <lb/>them his inswordtruments (1587), p. 14. <lb/><lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>

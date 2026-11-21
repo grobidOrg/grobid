@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1177_0968344517725541">
+			<titleStmt>
+				<title level="a">The Conduct of Operations: Glubb Pasha, the Arab Legion, and the First Arab–Israeli War, 1948–49</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-nc/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1177/0968344517725541</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_61</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>1</label> Avi Shlaim, Collusion: King Abdullah, the Zionist Movement, and the Partition of Palestine <lb/>(Oxford, 1988); </bibl>
+			<bibl>Graham Jevon, 'The Arab Legion and the 1948 War: The Conduct of <lb/>"Collusion"?', English Historical Review 130/545 (2015), pp. 907-33. <lb/><lb/></bibl>
+			<bibl><label>2</label> FO to UK Delegation (UN), 28 May, 1948, FO371/68829, T[he] N[ational] A[rchives]; <lb/></bibl>
+			<bibl>Telegram, Amman to FO, 28 May 1948, FO371/68829, TNA; </bibl>
+			<bibl>Benny Morris, The Road to <lb/>Jerusalem: Glubb Pasha, Palestine and the Jews (London, 2002), p. 122. <lb/></bibl>
+			<bibl><label>3</label> FO to UK Delegation (UN), 28 May, 1948, FO371/68829, TNA; </bibl>
+			<bibl>Amman to FO, 28 May <lb/>1948, FO371/68829, TNA; </bibl>
+			<bibl>Draft paper, Disbandment, 2009-08-51-32 Lunt Papers, <lb/>N[ational] A[rmy] M[useum]; </bibl>
+			<bibl>Harry Levin, Jerusalem Embattled: A Diary of the City <lb/>Under Siege [1950] (London, 1997), p. 205. <lb/></bibl>
+			<bibl><label>4</label> Levin, Jerusalem Embattled, pp. 94-5; </bibl>
+			<bibl>Letter [from Hugh Jones?], Christchurch Jerusalem, <lb/>29 May 1948, 2006 Accession, Box 83, File November 1948, GB165-0118 Glubb Papers, <lb/>M[iddle] E[ast] C[entre] St Antony's College Oxford; </bibl>
+			<bibl>Diary of Events, Christchurch <lb/>Jerusalem, 15 May 1948, 2006 Accession, Box 83, File November 1948, GB165-0118 Glubb <lb/>Papers, MEC. </bibl>
+			<bibl>See also Jerusalem to Foreign Office, 19 May 1948, FO371/68853, TNA. <lb/><lb/></bibl>
+			<bibl><label>5</label> Syed Ali El-Edroos, The Hashemite Arab Army, 1908-1975: An Appreciation and Analysis <lb/>of Military Operations (Amman, 1980), pp. 249-51. <lb/></bibl>
+			<bibl><label>6</label> James Lunt, The Arab Legion (London, 1999), pp. 114-17; </bibl>
+			<bibl>Arab Legion War Diary, <lb/>May 1948, 2006 Accession, Box 31, GB165-0118 Glubb Papers, MEC; </bibl>
+			<bibl>Arab Legion, <lb/>Operational Log/War Diary, May 1948, 2006 Accession, Box 90, Bundle Misc Dates, Part <lb/>3 of 3, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>7</label> El-Edroos, Hashemite Arab Army, p. 749; </bibl>
+			<bibl>Arab Legion, War Diary, 1948, 2006 Accession, <lb/>Box 31, GB165-0118 Glubb Papers, MEC. <lb/><lb/></bibl>
+			<bibl><label>8</label> Glubb to Lunt, 24 August 1980, 2009-08-51-89 Lunt Papers, NAM; </bibl>
+			<bibl>interview, Nigel <lb/>Bromage, 9 December 1980, 2009-08-51-90 Lunt Papers, NAM; </bibl>
+			<bibl>AG to VCIGS, 23 <lb/>November 1950, WO216/719, TNA. <lb/></bibl>
+			<bibl><label>9</label> Glubb to Kirkbride, 27 May 1950, FO816/165, TNA. <lb/></bibl>
+			<bibl><label>10</label> Ronen Yitzhak, Abdullah al-Tall: Arab Legion Officer (Brighton, 2012), p. 25. <lb/></bibl>
+			<bibl><label>11</label> Arab Legion British Personnel, FO816/152, TNA. <lb/></bibl>
+			<bibl><label>12</label> Levin, Jerusalem Embattled, p. 184. <lb/></bibl>
+			<bibl><label>13</label> El-Edroos, Hashemite Arab Army, pp. 249-51; </bibl>
+			<bibl>Note, Arab Legion Strength, Strength <lb/>on 31/3/49, 2006 Accession, Box 3, No. 5, File Two, GB165-0118 Glubb Papers, <lb/>MEC. <lb/></bibl>
+			<bibl><label>14</label> Arab Legion Air Force 1946-8, FO816/94, TNA; </bibl>
+			<bibl>Treasury Arab Legion, T220/126, TNA; <lb/></bibl>
+			<bibl>Arab Legion British Personnel, FO816/152, TNA. <lb/></bibl>
+			<bibl><label>15</label> Chapter 6, Draft, Opposing Forces of Arab Legion, p. 18, 2006 Accession, Box 84, Bundle <lb/>November 1948 Finished with 10/10/56, GB165-0118 Glubb Papers, MEC; </bibl>
+			<bibl>James Lunt, <lb/>Glubb Pasha: A Biography (London, 1984), p. 140. <lb/></bibl>
+			<bibl><label>16</label> Note, Reorganization of Arab Legion, May 1947, p. 6, 1986 accession, Box 14, GB165-<lb/>0118 Glubb papers, MEC. <lb/></bibl>
+			<bibl><label>17</label> Note, Reorganization of Arab Legion, May 1947, p. 6, 1986 accession, Box 14, GB165-<lb/>0118 Glubb papers, MEC, p. 8; </bibl>
+			<bibl>El-Edroos, Hashemite Arab Army, p. 250; </bibl>
+			<bibl>Reserves Scheme, <lb/>p. 1, Box 1, File 10, Melville papers GB 165-0577, MEC. <lb/></bibl>
+			<bibl><label>18</label> Chapter 6, Draft, Opposing Forces of Arab Legion, p. 19, 2006 Accession, Box 84, Bundle <lb/>November 1948 Finished with 10/10/56, GB165-0118 Glubb Papers, MEC. <lb/><lb/></bibl>
+			<bibl><label>19</label> Chapter 6, Draft, Opposing Forces of Arab Legion, p. 19, 2006 Accession, Box 84, Bundle <lb/>November 1948 Finished with 10/10/56, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>20</label> Uri Bar-Joseph, Best of Enemies: Israel and Transjordan in the War of 1948 (London, 1987); <lb/></bibl>
+			<bibl>Shlaim, Collusion across the Jordan; </bibl>
+			<bibl>Ilan Pappé, Britain and the Arab-Israeli Conflict, <lb/>1948-51 (Houndmills, 1988). <lb/></bibl>
+			<bibl><label>21</label> Shlaim, Collusion, p. 231. <lb/></bibl>
+			<bibl><label>22</label> Avi Shlaim, 'The Debate about 1948', International Journal of Middle East Studies 27/3 <lb/>(1995), pp. 287-304. <lb/></bibl>
+			<bibl><label>23</label> Shlaim, 'Debate about 1948', p. 298; </bibl>
+			<bibl>Avi Shlaim, Lion of Jordan: The Life of King Hussein <lb/>in War and Peace (New York, 2007), p. 33. <lb/></bibl>
+			<bibl><label>24</label> Morris, Road to Jerusalem; </bibl>
+			<bibl>Tancred Bradshaw, 'History Invented: The British-<lb/>Transjordanian Collusion Revisited', Middle Eastern Studies 43/1 (2007), pp. 21-43; <lb/></bibl>
+			<bibl>Efraim Karsh, Fabricating Israeli History: The 'New Historians' (London, 1997); </bibl>
+			<bibl>Avraham <lb/>Sela, 'Transjordan, Israel and the 1948 War: Myth, Historiography and Reality', Middle <lb/>Eastern Studies 28/4 (1992), pp. 623-88, 680. <lb/><lb/></bibl>
+			<bibl><label>25</label> Graham Jevon, 'Jordan, Palestine and the British World System, 1945-57: Glubb Pasha and <lb/>the Arab Legion' (Oxford: Doctoral Thesis, 2014); </bibl>
+			<bibl>Jevon, 'Arab Legion'. <lb/></bibl>
+			<bibl><label>26</label> Jevon, 'Arab Legion', p. 930. <lb/></bibl>
+			<bibl><label>27</label> Shlaim, Collusion, p. 235. <lb/></bibl>
+			<bibl><label>28</label> Glubb, Desert Island Discs, BBC Radio 4, 18 April 1978. <lb/></bibl>
+			<bibl><label>29</label> Glubb, Revised Dictionary of National Biography. <lb/></bibl>
+			<bibl><label>30</label> Chapter, Draft, by Glubb, p. 1, 2006 Accession, Box 84, Bundle November 1948 Finished <lb/>with 10/10/56, GB165-0118 Glubb Papers, MEC; </bibl>
+			<bibl>J. B. Glubb, A Soldier with the Arabs <lb/>(London, 1957), p. 89. <lb/><lb/></bibl>
+			<bibl><label>31</label> Avi Shlaim, interview with Colonel Desmond Goldie, 15 September 1985 (transcript from <lb/>Shlaim via Jevon). <lb/></bibl>
+			<bibl><label>32</label> Glubb to Lash, 9 July 1948, 2006 Accession, Box 83, File November 1948, GB165-0118 <lb/>Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>33</label> Foreign Office to Kirkbride, 19 May 1948, FO371/68853, TNA. <lb/></bibl>
+			<bibl><label>34</label> Maan Abu Nowar, The Jordanian-Israeli War, 1948-51 (Reading, 2002), p. 137. <lb/></bibl>
+			<bibl><label>35</label> Abu Nowar, The Jordanian-Israeli War, p. 116. <lb/></bibl>
+			<bibl><label>36</label> El-Edroos, Hashemite Arab Army, p. 255. <lb/><lb/></bibl>
+			<bibl><label>37</label> Ronen Yitzhak, 'Transjordan's Attack on the Etzion Bloc during the 1948 War', Israel <lb/>Affairs 17/2 (2011), pp. 194-207. <lb/></bibl>
+			<bibl><label>38</label> Bar-Joseph, Best of Enemies, pp. 62, 70-3; </bibl>
+			<bibl>Morris, Road to Jerusalem, p. 161. <lb/></bibl>
+			<bibl><label>39</label> Abu Nowar, Jordanian-Israeli War, p. 71. <lb/></bibl>
+			<bibl><label>40</label> General Report 27, ACMI (Jerusalem, St George's) to Bishop, 24 July 1948, 2006 Accession, <lb/>Box 83, File November 1948, GB165-0118 Glubb Papers, MEC. <lb/><lb/></bibl>
+			<bibl><label>41</label> P. J. Vatikiotis, Politics and the Military in Jordan: A Study of the Arab Legion (London, <lb/>1967), p. 84. <lb/></bibl>
+			<bibl><label>42</label> Morris, Road to Jerusalem, p. 121. <lb/></bibl>
+			<bibl><label>43</label> Glubb, Revised DNB. <lb/></bibl>
+			<bibl><label>44</label> Glubb, Soldier with the Arabs, p. 107. <lb/></bibl>
+			<bibl><label>45</label> Defence Document 1949, by Glubb, British Legation Amman, FO816/153, TNA. <lb/></bibl>
+			<bibl><label>46</label> Glubb, Soldier with the Arabs, p. 142. <lb/></bibl>
+			<bibl><label>47</label> Glubb, Soldier with the Arabs, p. 143. <lb/><lb/></bibl>
+			<bibl><label>48</label> Glubb, Soldier with the Arabs, p. 98. <lb/></bibl>
+			<bibl><label>49</label> Abu Nowar, Jordanian-Israeli War, p. 119. <lb/></bibl>
+			<bibl><label>50</label> Pappé, Britain and the Arab-Israeli Conflict, p. 50. <lb/></bibl>
+			<bibl><label>51</label> Pirie-Gordon to Burrows (FO), 25 July 1948, FO816/127, TNA. <lb/></bibl>
+			<bibl><label>52</label> Bar-Joseph, Best of Enemies, pp. 68-9. <lb/></bibl>
+			<bibl><label>53</label> Glubb, Soldier with the Arabs, p. 107. <lb/></bibl>
+			<bibl><label>54</label> Chapter MS Drafts by Glubb, p. 10, 2006 Accession, Box 84, Bundle 1948 Jundis Account <lb/>of Battle, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>55</label> Diary, Christchurch Jerusalem, 17 May 1948, 2006 Accession, Box 83, File November <lb/>1948, GB165-0118 Glubb Papers, MEC. <lb/><lb/></bibl>
+			<bibl><label>56</label> Note on the Defence of Jerusalem, n.d. [c. late 1948-early 1949], 2006 Accession, Box 56, <lb/>GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>57</label> Glubb, 4410/06, pp. 40ff, I[mperial] W[ar] M[useum] S[ound] A[rchive]. <lb/></bibl>
+			<bibl><label>58</label> Glubb, Soldier with the Arabs, p.101; </bibl>
+			<bibl>Morris, Road to Jerusalem, p. 156. <lb/></bibl>
+			<bibl><label>59</label> Chapter, Draft, by Glubb, pp. 2-3, 2006 Accession, Box 84, Bundle November 1948 <lb/>Finished with 10/10/56, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>60</label> Kirkbride to Secretary of State (FO), 19 May 1948, FO816/120, TNA. <lb/></bibl>
+			<bibl><label>61</label> Glubb, 4410/06, p. 45, IWMSA. <lb/></bibl>
+			<bibl><label>62</label> Bar-Joseph, Best of Enemies, p. 78. <lb/><lb/></bibl>
+			<bibl><label>63</label> Dan Kurzman, Genesis 1948: The First Arab-Israeli War (London, 1972), p. 404. <lb/></bibl>
+			<bibl><label>64</label> Abu Nowar, Jordanian-Israeli War, p. 83. <lb/></bibl>
+			<bibl><label>65</label> Glubb to Crocker, 24 April 1948, 2006 Accession, Box 83, File Report and Letter 1940-48, <lb/>GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>66</label> Glubb to Crocker, 1 May 1948, ibid. <lb/></bibl>
+			<bibl><label>67</label> Foreword by Glubb, Peter Young, Bedouin Command: With the Arab Legion, 1953-56 <lb/>(London, 1956), p. 6. <lb/><lb/></bibl>
+			<bibl><label>68</label> Jerusalem Battle, 3 MR Arab Legion, by Lt-Col J. G. Newman, p. 5, 2006 Accession, Box <lb/>86, Bundle 4, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>69</label> War Diary, HQ Main Division AL, July 1948, 19 July 1948, p. 6, 3 rd Mechanised Regiment, <lb/>2006 Accession, Box 84, Bundle 1948 Jundis Account of Battle, GB165-0118 Glubb <lb/>Papers, MEC; </bibl>
+			<bibl>Arab Legion, War Diaries (Operational Log), 11 June 1948, 2006 Accession, <lb/>Box 85, Bundle 1, 1948 Abdali Camp 1948 not wanted, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>70</label> Enemy news and wireless intercepts, 21 July 1948, 2006 Accession, Box 83, File August <lb/>1948, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>71</label> Glubb to Lunt, 26 May 1982, Lunt Papers 2009-08-51-89, NAM. <lb/></bibl>
+			<bibl><label>72</label> Intelligence Officer (Cadet Khalaf Shami) 1 st Motorised Regiment to OC 1 st Motorised <lb/>Regiment to Divisional HQ, 26 July 1948, 2006 Accession, Box 83, File August 1948, <lb/>GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>73</label> War Diary, HQ Main Division AL, August 1948, p. 7, 1 st Mechanised Regiment, 2006 <lb/>Accession, Box 84, Bundle 1948 Jundis Account of Battle, GB165-0118 Glubb Papers, <lb/>MEC. <lb/></bibl>
+			<bibl><label>74</label> Arab Legion (Glubb) to Mideast (Pyman), 3 August 1948, 2006 Accession, Box 83, File <lb/>August 1948, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>75</label> Arab Legion (Glubb) to Mideast (Pyman), 4 August 1948, ibid. <lb/><lb/></bibl>
+			<bibl><label>76</label> Glubb to Goldie, 7 November 1948, 2006 Accession, Box 86, Bundle 5, GB165-0118 <lb/>Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>77</label> Arab Legion, Operational Log/War Diary, 30 May and 1 June 1948, 2006 Accession, Box <lb/>90, Bundle Misc Dates, Part 3 of 3, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>78</label> Newspaper communiques, Sam P. Brewer (New York Times), 26 May 1948, 2006 Accession, <lb/>Box 56, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>79</label> Glubb to Lash, 13 July 1948, 2006 Accession, Box 83, File November 1948, GB165-0118 <lb/>Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>80</label> Glubb to Brig O'Connor (MELF), 20 November 1948, 2006 Accession, Box 86, Bundle 6, <lb/>Part 2, GB165-0118 Glubb Papers, MEC. <lb/><lb/></bibl>
+			<bibl><label>81</label> Glubb [to MELF?], 9 November 1948, 2006 Accession, Box 86, Bundle 6, Part 1, GB165-<lb/>0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>82</label> Appreciation of the Position of the Arab Legion in Palestine, 7 November 1948, 2006 <lb/>Accession, Box 86, Bundle 6, Part 2, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>83</label> Glubb to Brig O'Connor (MELF), 20 November 1948, ibid. <lb/></bibl>
+			<bibl><label>84</label> Levin, Jerusalem Embattled, p. 196 (24 May 1948); </bibl>
+			<bibl>Newspaper communiques, Sam P. <lb/>Brewer (New York Times), 24 May 1948, 2006 Accession, Box 56, GB165-0118 Glubb <lb/>Papers, MEC. <lb/></bibl>
+			<bibl><label>85</label> John A. Lynn, ed., Feeding Mars: Logistics in Western Warfare from the Middle Ages to the <lb/>Present (Boulder, CO, 1993), p. ix. <lb/></bibl>
+			<bibl><label>86</label> Amitzur Ilan, The Origin of the Arab-Israeli Arms Race: Arms, Embargo, Military Power <lb/>and Decision in the 1948 Palestine War (Houndmills, 1996), p. 47. <lb/><lb/></bibl>
+			<bibl><label>87</label> Ilan, The Origin of the Arab-Israeli Arms Race, p. 48. <lb/></bibl>
+			<bibl><label>88</label> See also Yitzhak Ronen, 'British Military Supplies to Jordan during the 1948 War: How the <lb/>Anglo-Jordanian Treaty was Put to the Test', Middle East Critique 24/4 (2015), pp. 345-54. <lb/></bibl>
+			<bibl><label>89</label> See also Mary Wilson, King Abdullah, Britain and the Making of Jordan (Cambridge, <lb/>1987), pp. 176-7. <lb/></bibl>
+			<bibl><label>90</label> Glubb to Maj-Gen. Pyman (MELF), 27 July 1948, 2006 Accession, Box 86, Bundle 4, <lb/>GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>91</label> Kurzman, Genesis 1948, p. 431. <lb/><lb/></bibl>
+			<bibl><label>92</label> Avi Shlaim, interview with Goldie, 15 September 1985. <lb/></bibl>
+			<bibl><label>93</label> War Diary, OC 3 rd Brigade, 2006 Accession, Box 86, Bundle 4, GB165-0118 Glubb Papers, <lb/>MEC. <lb/></bibl>
+			<bibl><label>94</label> Kirkbride to Gault (FO), 25 March 1947, T220/126. TNA. <lb/></bibl>
+			<bibl><label>95</label> Lunt, Arab Legion, p. 117. <lb/></bibl>
+			<bibl><label>96</label> Foreign Office to Amman, 7 May 1948 (sent 8 May 1948), FO371/68852, TNA. <lb/></bibl>
+			<bibl><label>97</label> Kirkbride to Burrows (FO), 13 May 1948, FO371/68854, TNA; </bibl>
+			<bibl>Telegram, Foreign Office <lb/>to Kirkbride, 29 May 1948, FO371/68854, TNA. <lb/></bibl>
+			<bibl><label>98</label> FO to Amman, 28 May 1948 (sent 29 May 1948), CO537/3579, TNA. <lb/></bibl>
+			<bibl><label>99</label> Nir Arielli et al., 'The Foreign Enlistment Act, International Law, and British Politics, <lb/>1819-2014', The International History Review 38/4 (2016), pp. 636-56. <lb/><lb/></bibl>
+			<bibl><label>100</label> Note by Walker (FO), 14 May 1948, FO371/68853, TNA. <lb/></bibl>
+			<bibl><label>101</label> Hansard, Parliamentary Debates, Commons, Vol. 451, 26 May 1948, p. 187. <lb/></bibl>
+			<bibl><label>102</label> Ibid.; </bibl>
+			<bibl>Bevin in Extract from Official Report, 26 May 1948, CO537/3579, TNA. <lb/></bibl>
+			<bibl><label>103</label> Abu Nowar, Jordanian-Israeli War, p. 110; </bibl>
+			<bibl>Jerusalem Battle, 3 MR Arab Legion, by <lb/>Newman, p. 4, 2006 Accession, Box 86, Bundle 4, GB165-0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>104</label> Bevin in Extract from Official Report, 26 May 1948, CO537/3579, TNA. <lb/></bibl>
+			<bibl><label>105</label> Lunt, Glubb Pasha, p. 140. <lb/></bibl>
+			<bibl><label>106</label> Ilan, Origin of the Arab-Israeli Arms Race, p. 37; </bibl>
+			<bibl>Kirkbride to FO, 23 May 1948, <lb/>CO537/3902, TNA; </bibl>
+			<bibl>17 May, see C-in-C MELF to WO, 27 May 1948, WO32/12263, TNA. <lb/></bibl>
+			<bibl><label>107</label> Ilan, Origin of the Arab-Israeli Arms Race, p. 122. <lb/></bibl>
+			<bibl><label>108</label> C-in-C MELF to WO, 1 July 1949, WO32/15561, TNA. <lb/><lb/></bibl>
+			<bibl><label>109</label> Pirie-Gordon to Burrows (FO), 25 July 1948, FO371/68822, TNA. <lb/></bibl>
+			<bibl><label>110</label> Alec Kirkbride, From the Wings: Amman Memoirs 1947-51 (London, 1976), pp. 24-5. <lb/></bibl>
+			<bibl><label>111</label> WO to C-in-C MELF, 16 June 1948, WO32/15562, TNA. <lb/></bibl>
+			<bibl><label>112</label> Trans-Jordan Situation by Glubb, 12 August 1948, FO371/68822, TNA. <lb/></bibl>
+			<bibl><label>113</label> Glubb to Kirkbride, 4 August 1948, 2006 Accession, Box 83, File August 1948, GB165-<lb/>0118 Glubb Papers, MEC. <lb/></bibl>
+			<bibl><label>114</label> WO Note, 31 January 1949, WO32/15561, TNA. <lb/></bibl>
+			<bibl><label>115</label> C-in-C MELF to WO, 1 June 1948, WO32/15562, TNA. <lb/></bibl>
+			<bibl><label>116</label> WO to C-in-C MELF, 15 June 1948, WO32/15562, TNA; </bibl>
+			<bibl>C-in-C MELF to WO, 15 June <lb/>1948, WO32/15562, TNA. <lb/></bibl>
+			<bibl><label>117</label> C-in-C MELF to WO, 12 July 1948, WO32/12263, TNA. <lb/><lb/></bibl>
+			<bibl><label>118</label> MELF to MoD London, 25 June 1948, WO32/12263, TNA. <lb/></bibl>
+			<bibl><label>119</label> WO to C-in-C MELF, 7 July 1949, WO32/15561, TNA. <lb/></bibl>
+			<bibl><label>120</label> Status of Arab Legion, C-in-C MELF to WO, 5 May 1948, WO32/15562, TNA. <lb/></bibl>
+			<bibl><label>121</label> WO to C-in-C MELF, 13 May 1948, WO32/15562, TNA. <lb/></bibl>
+			<bibl><label>122</label> WO to C-in-C MELF, 13 May 1948, WO32/15562, TNA. <lb/></bibl>
+			<bibl><label>123</label> Glubb to Kirkbride, 17 June 1948, WO32/15562, TNA. <lb/></bibl>
+			<bibl><label>124</label> Kirkbride, From the Wings, p. 36; </bibl>
+			<bibl>Munitions for Arab Countries by Foster, 1 November <lb/>1948, AIR8/1798, TNA; </bibl>
+			<bibl>Note by Glubb Pasha, 19 August 1948, FO371/68822, TNA; <lb/></bibl>
+			<bibl>Arab Legion Ammunition, 2006 Accession, Box 86, Bundle 6, Part 2, GB165-0118 Glubb <lb/>Papers, MEC; </bibl>
+			<bibl>WO to C-in-C MELF, 24 June 1948, WO 32/15562, TNA. <lb/></bibl>
+			<bibl><label>125</label> Glubb to Kirkbride, 17 June 1948, WO32/15562, TNA. <lb/></bibl>
+			<bibl><label>126</label> FO to Amman, 24 January 1949, T220/129, TNA. <lb/></bibl>
+			<bibl><label>127</label> Morris, Road to Jerusalem, p. 121. <lb/><lb/></bibl>
+			<bibl><label>128</label> C-in-C MELF to WO, 27 January 1948, FO371/68828, TNA. <lb/></bibl>
+			<bibl><label>129</label> Walker (FO) to Leask (WO), 18 February 1948, FO371/68828, TNA. <lb/></bibl>
+			<bibl><label>130</label> WO to GHQ MELF, 20 February 1948, FO 371/68828, TNA. <lb/></bibl>
+			<bibl><label>131</label> Equipment for Arab Legion, Notes of meeting, 6 February 1948 attended by representatives <lb/>of the WO, FO and Treasury, FO371/68828, TNA. <lb/></bibl>
+			<bibl><label>132</label> Ibid.; </bibl>
+			<bibl>Burrows (FO) to Charteris (WO) 16 February 1948, FO371/68828, TNA. <lb/></bibl>
+			<bibl><label>133</label> Cunningham Palestine to Secretary of State (CO), 4 March 1948, FO371/68828, TNA. <lb/></bibl>
+			<bibl><label>134</label> Ibid. <lb/></bibl>
+			<bibl><label>135</label> Secretary of State (CO) to Cunningham Palestine, 10 March 1948, ibid. <lb/></bibl>
+			<bibl><label>136</label> C-in-C MELF to War Office, 20 April 1948, WO32/12263, TNA. <lb/></bibl>
+			<bibl><label>137</label> C-in-C MELF to WO, 11 May 1948, ibid.; </bibl>
+			<bibl>C-in-C MELF to WO, 13 May 1948, ibid. <lb/></bibl>
+			<bibl><label>138</label> Jewish Agency to UN Palestine Committee, 19 March 1948, FO371/68829, TNA. <lb/><lb/></bibl>
+			<bibl><label>139</label> Walker (FO) to Leask (WO), 10 March 1948, FO371/68828, TNA. <lb/></bibl>
+			<bibl><label>140</label> Ilan, Origin of the Arab-Israeli Arms Race, p. 25. <lb/></bibl>
+			<bibl><label>141</label> Godfrey Ilias, Glubb's Legion (London: Evans, 1956), pp. 191-93. <lb/></bibl>
+			<bibl><label>142</label> Secretary of State (CO) to Cunningham Palestine, 28 November 1947, Box 2, File 3, GB <lb/>165-0072 Cunningham Papers, MEC. <lb/></bibl>
+			<bibl><label>143</label> Hansard, Parliamentary Debates, Commons, Vol. 451, 1 June 1948 (written answers), p. 69. <lb/></bibl>
+			<bibl><label>144</label> Minutes, Palestine High Commissioner (Security) Conference, 16 October 1946, Box 4, <lb/>File 1 Sheet 18, GB 165-0072 Cunningham Papers, MEC. <lb/></bibl>
+			<bibl><label>145</label> Minutes, Palestine High Commissioner (Security) Conference, 24 January 1947, Box 4, File <lb/>1 Sheet 29, GB 165-0072 Cunningham Papers, MEC. <lb/></bibl>
+			<bibl><label>146</label> Minutes, Palestine High Commissioner (Security) Conference, 6 June 1947, Box 4, File 1 <lb/>Sheet 59, GB 165-0072 Cunningham Papers, MEC. <lb/></bibl>
+			<bibl><label>147</label> Minutes, Palestine High Commissioner (Security) Conference, 29 November 1947, Box 4, <lb/>File 1 Sheet 98, GB 165-0072 Cunningham Papers, MEC. <lb/></bibl>
+			<bibl><label>148</label> Minutes, Palestine High Commissioner (Security) Conference, 19 December 1947, Box 4, <lb/>File 1 Sheet 104, GB 165-0072 Cunningham Papers, MEC. <lb/></bibl>
+			<bibl><label>149</label> Baghdad to FO, 16 July 1949, WO32/15561, TNA. <lb/></bibl>
+			<bibl><label>150</label> Treasury, War Office and Foreign Office Meeting, 28 June 1949 (Minutes dated 14 July <lb/>1949), WO32/15561, TNA. <lb/><lb/></bibl>
+			<bibl><label>151</label> Burrows (FO) to Charteris (WO), 16 February 1948, WO32/15562, TNA; </bibl>
+			<bibl>Brussels to FO, <lb/>12 April 1948, FO371/69201, TNA. <lb/></bibl>
+			<bibl><label>152</label> Pirie-Gordon to Burrows (FO), 10 March 1948, FO371/68829, TNA. <lb/></bibl>
+			<bibl><label>153</label> Kirkbride to FO, 5 August 1948, FO371/68830, TNA. <lb/></bibl>
+			<bibl><label>154</label> Amman Legation (Kirkbride?) to Bevin, 9 August 1948, FO371/68830, TNA. <lb/></bibl>
+			<bibl><label>155</label> Ibid. <lb/></bibl>
+			<bibl><label>156</label> FO to Amman, 24 January 1949, FO371/75299, TNA. <lb/><lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>

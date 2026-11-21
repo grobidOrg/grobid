@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:space="preserve">
+<teiHeader>
+		<fileDesc xml:id="10.1093_shm_hkw127">
+			<titleStmt>
+				<title level="a">Hyperactive Around the World? The History of ADHD in Global Perspective</title>
+			</titleStmt>
+			<publicationStmt>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/"/>
+				</availability>
+				<idno type="DOI">10.1093/shm/hkw127</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<bibl>CEX corpus, document f_29</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<listBibl>
+			<bibl><label>4 <lb/><lb/></label> E. Watters, Crazy Like Us: The Globalization of the <lb/>American Psyche (New York: Free Press, 2010). <lb/><lb/></bibl>
+			<bibl><label>5 <lb/><lb/></label> P. M. Doraiswamy, 'Are We Homogenizing the Global <lb/>View of a Normal Mind?' Edge, 2013, &lt;https://www. <lb/><lb/>edge.org/response-detail/23855&gt;, accessed 6 May <lb/>2016. <lb/><lb/></bibl>
+			<bibl><label>6 <lb/><lb/></label> M. W. Laufer, E. Denhoff and G. Solomons, <lb/>'Hyperkinetic Impulse Disorder in Children's Behavior <lb/>Problems', Psychosomatic Medicine, 1957, 19, 45. <lb/><lb/></bibl>
+			<bibl><label>7 <lb/><lb/></label> G. Polanczck, M. Silva de Lima, B. L. Horta, <lb/>J.Biederman and L. A. Rohde, 'The Worldwide <lb/>Prevalence <lb/>of <lb/>ADHD: <lb/>A <lb/>Systematic <lb/>and <lb/>Metaregression Analysis', American Journal of <lb/>Psychiatry, 2007, 164, 942-8. <lb/><lb/></bibl>
+			<bibl><label>8 <lb/><lb/></label> T. E. Moffit and M. Melchior, 'Why Does the <lb/>Worldwide Prevalence of Childhood Attention Deficit <lb/>Hyperactivity Disorder Matter', American Journal of <lb/>Psychiatry, 2007, 64, 856. <lb/><lb/></bibl>
+			<bibl><label>9 <lb/><lb/></label> D. P. Be ´hague, 'Psychiatry and Politics in Pelotas, <lb/>Brazil: The Equivocal Quality of Conduct Disorder <lb/>and Related Diagnoses', Medical Anthropology <lb/>Quarterly, 2009, 23, 45-82. <lb/><lb/></bibl>
+			<bibl><label>10 <lb/><lb/></label> S. V. Faraone, J. Sergeant, C. Gillberg and J. <lb/>Biederman, 'The Worldwide Prevalence of ADHD: Is <lb/>it an American Condition?' World Psychiatry, 2003, <lb/>2, 104-13. <lb/><lb/></bibl>
+			<bibl><label>11 <lb/><lb/></label> Centers for Disease Control and Prevention, <lb/>'Increasing Prevalence of Parent-Reported Attention-<lb/><lb/>Deficit/Hyperactivity Disorder Among Children-<lb/>United States, 2003 and 2007', Morbidity and <lb/>Mortality Weekly Report, 2010, 59, 1439-43. <lb/><lb/></bibl>
+			<bibl><label>12 <lb/><lb/></label> S. Timimi, 'The McDonaldization of Childhood: <lb/>Children's Mental Health in Neo-Liberal Cultures', <lb/>Transcultural Psychiatry, 2010, 47, 686-706. <lb/><lb/></bibl>
+			<bibl><label>13 <lb/><lb/></label> There are numerous recent histories that have begun <lb/>to use local analyses as a way of developing a more <lb/>sophisticated understanding of health, illness and <lb/>medicine. See E. Dyck and C. Fletcher, (eds), Locating <lb/>Health: Historical and Anthropological Investigations <lb/>of Place and Health (London: Pickering and Chatto, <lb/>2010); </bibl>
+			<bibl>J. S. Stark, The Making of Modern Anthrax, <lb/>1875-1920: Uniting Local, National and Global <lb/>Histories of Disease (London: Pickering and Chatto, <lb/>2013); </bibl>
+			<bibl>L. Monnais and H. Cook, (eds), Global <lb/>Movements, Local Concerns: Medicine and Health in <lb/>Southeast Asia (Singapore: Singapore University <lb/>Press, 2014). <lb/><lb/></bibl>
+			<bibl><label>14 <lb/><lb/></label> Smith, Hyperactive. <lb/><lb/></bibl>
+			<bibl><label>15 <lb/><lb/></label> Here I am attempting in a modest way to answer <lb/>Ilana Lo ¨wy's call for more comparative social histories <lb/>of medicine. I. Lo ¨wy, 'The Social History of Medicine: <lb/>Beyond the Local', Social History of Medicine, 2007, <lb/>20, 465-81. <lb/><lb/></bibl>
+			<bibl><label>17 <lb/><lb/></label> On the possible promotion by psychiatrists and <lb/>pharmaceutical companies, see S. Timimi and B. <lb/><lb/>Maitra, 'ADHD and Globalization' in Sami Timimi <lb/>and Jonathan Leo, eds, Rethinking ADHD: From <lb/>Brain to Culture (Basingstoke: Palgrave Macmillan, <lb/>2009); </bibl>
+			<bibl>Timimi, 'McDonaldization of Childhood'. <lb/><lb/></bibl>
+			<bibl><label>18 <lb/><lb/></label> P. E. Trudeau, 'Speech to the Press Club', 25 March <lb/>1969, &lt;http://www.cbc.ca/player/play/1797537698&gt;, <lb/>accessed 22 August 2014. <lb/><lb/></bibl>
+			<bibl><label>19 <lb/><lb/></label> E. Kromer, 'Sleeping with the Elephant', The McGill <lb/>Reporter 21 November 2002, &lt;http://www.mcgill. <lb/>ca/reporter/35/06/reinhardt/&gt;, accessed 22 August <lb/>2014. <lb/><lb/></bibl>
+			<bibl><label>20 <lb/><lb/></label> P. Sullivan, 'Privatization if Necessary, Not Necessarily <lb/>Privatization: CMA', 19 August 2005, accessed 22 <lb/>August 2014. </bibl>
+			<bibl>For an excellent series of articles on <lb/>the history of Medicare in Canada, see the special <lb/>issue of the Canadian Bulletin of Medical History <lb/>(Volume 26, Number 2, 2009) edited by Gregory P. <lb/>Marchildon. <lb/><lb/></bibl>
+			<bibl><label>21 <lb/><lb/></label> J. Duffin and L. A. Falk, 'Sigerist in Saskatchewan: <lb/>The Quest for Balance in Social and Technical <lb/>Medicine', Bulletin of the History of Medicine, 1996, <lb/>70, 658-83. <lb/><lb/></bibl>
+			<bibl><label>22 <lb/><lb/></label> M. W. Laufer and E. Denhoff, 'Hyperkinetic Behavior <lb/>Syndrome in Children', Journal of Pediatrics, 1957, <lb/>50, 463-74; </bibl>
+			<bibl>M. W. Laufer, E. Denhoff and G. <lb/>Solomons, 'Hyperkinetic Impulse Disorder in <lb/>Children's Behavior Problems', Psychosomatic <lb/>Medicine, 1957, 19, 38-49. </bibl>
+			<bibl>For the later debate, see <lb/>J. S. Werry, Gabrielle Weiss and Virginia Douglas, <lb/>'Studies on the Hyperactive Child-I. Some <lb/>Preliminary <lb/>Findings', <lb/>Canadian <lb/>Psychiatric <lb/>Association Journal, 1964, 9, 120-30. <lb/><lb/></bibl>
+			<bibl><label>23 <lb/><lb/></label> J. Mackay, 'The Psychiatric Problems of the <lb/>Teenager', Canadian Family Physician, 1968, 14, <lb/>21-6. <lb/><lb/></bibl>
+			<bibl><label>24 <lb/><lb/></label> P. S. Stephenson, 'Drugs in Child Psychiatry', <lb/>Canadian Family Physician, 1969, 15, 30-2. <lb/><lb/></bibl>
+			<bibl><label>25 <lb/><lb/></label> McGill University was the site of a great deal of <lb/>highly influential medical research during the mid-<lb/>twentieth century, including the pioneering work of <lb/>stress theorist Hans Selye (1907-1982) and neurosur-<lb/>geon Wilder Penfield (1891-1976). See D. Gavrus, <lb/>'Men of Dreams and Men of Action: Neurologists, <lb/>Neurosurgeons, and the Performance of Professional <lb/>Identity, 1920-1950', Bulletin of the History of <lb/>Medicine 2011, 85, 57-92; </bibl>
+			<bibl>M. Jackson, The Age of <lb/>Stress: Science and the Search for Stability (Oxford: <lb/>Oxford University Press, 2013); </bibl>
+			<bibl>C. Canning; G. <lb/>Weisz, A. Tone and A. Cambrosio, 'Medical Genetics <lb/>at McGill: The History of a Pioneering Research <lb/>Group', Canadian Bulletin of Medical History, 2013, <lb/>30, 31-54. <lb/><lb/></bibl>
+			<bibl><label>26 <lb/><lb/></label> The Montreal study is reported in J. S. Werry, G. <lb/>Weiss, V. Douglas and J. Martin, 'Studies on the <lb/>Hyperactive Child III: The Effects of Chlorpromazine <lb/>upon Behavior and Learning Ability', Journal of <lb/>the American Academy of Child Psychiatry, 1966, 5, <lb/>292-312 </bibl>
+			<bibl>and the follow-up study can be found <lb/>in G. Weiss, E. Kruger, U. Danielson and M. Elman, <lb/>'Effect of Long-term Treatment of Hyperactive <lb/>Children <lb/>with <lb/>Methylphenidate', <lb/>Canadian <lb/>Medical Association Journal, 1975, 112, 159-65; <lb/></bibl>
+			<bibl>L. Hechtman, G. Weiss, J. Finkelstein, A. Werner and <lb/>R. Benn, 'Hyperactives as Young Adults: Preliminary <lb/>Report', Canadian Medical Association Journal, <lb/>1976, 115, 625-30; </bibl>
+			<bibl>L. Hechtman, G. Weiss and K. <lb/>Metrakos, 'Hyperactive Individuals as Young Adults: <lb/>Current and Longitudinal Electroencephalographic <lb/>Evaluation and its Relation to Outcome', Canadian <lb/>Medical Association Journal, 1978, 118, 919-23; </bibl>
+			<bibl>G. <lb/>Weiss, L. Hechtman, T. Perlman, J. Hopkins and A. <lb/>Wener, 'Hyperactives as Young Adults: A Controlled <lb/><lb/>Prospective Follow-Up of 75 Children', Archives of <lb/>General Psychiatry, 1979, 36, 675-81; </bibl>
+			<bibl>L. Hechtman <lb/>and G. Weiss, 'Long-term Outcome of Hyperactive <lb/>Children', American Journal of Orthopsychiatry, <lb/>1983, 53, 532-41; </bibl>
+			<bibl>B. Greenfield, L. Hechtman and <lb/>G. Weiss, 'Two Subgroups of Hyperactives as Adults: <lb/>Correlations of Outcome', Canadian Journal of <lb/>Psychiatry, 1986, 31, 505-8. <lb/><lb/></bibl>
+			<bibl><label>27 <lb/><lb/></label> N. Carrey, 'Interview with Dr. Gabrielle "Gaby" <lb/>Weiss', Journal of the Canadian Academy of Child <lb/>and Adolescent Psychiatry, 2004, 18, 340-3. <lb/><lb/></bibl>
+			<bibl><label>28 <lb/><lb/></label> G. Weiss, L. Hechtman and T. Perlman, 'Hyperactives <lb/>as Young Adults: School, Employer, and Self-Rating <lb/>Scales Obtained during Ten-Year Follow-Up <lb/>Evaluation', American Journal of Orthopsychiatry, <lb/>1978, 48, 438-45. <lb/><lb/></bibl>
+			<bibl><label>29 <lb/><lb/></label> K. K. Minde, and N. J. Cohen, 'Hyperactive Children <lb/>in Canada and Uganda: A Comparative Evaluation', <lb/>Journal of the American Academy of Child Psychiatry, <lb/>1978, 17, 476-87. <lb/><lb/></bibl>
+			<bibl><label>30 <lb/><lb/></label> K. K. Minde, 'The Hyperactive Child', Canadian <lb/>Medical Association Journal, 1975, 112, 130-1. <lb/><lb/></bibl>
+			<bibl><label>31 <lb/><lb/></label> N. J. Cohen, and K. Minde, 'The "Hyperactive <lb/>Syndrome" in Kindergarten: Comparison of Children <lb/>with Pervasive and Situational Symptoms', Journal of <lb/>Child Psychology and Psychiatry, 1983, 24, 443-55. <lb/><lb/></bibl>
+			<bibl><label>32 <lb/><lb/></label> D. H. Sykes, V. I. Douglas, G. Weiss and K. K. Minde, <lb/>'Attention in Hyperactive Children and the Effect of <lb/>Methylphenidate (Ritalin)', Journal of Child <lb/>Psychology and Psychiatry, 1971, 12, 129-39. <lb/><lb/></bibl>
+			<bibl><label>33 <lb/><lb/></label> D. H. Sykes, V. I. Douglas and G. Morgenstern, 'The <lb/>Effect of Methylphenidate (Ritalin) on Sustained <lb/>Attention in Hyperactive Children', Psychopharmaco-<lb/>logia, 1972, 25, 262-74; </bibl>
+			<bibl>D. H. Sykes, V. I. Douglas <lb/>and G. Morgenstern, 'Sustained Attention in <lb/>Hyperactive Children', Journal of Child Psychology <lb/>and Psychiatry, 1973, 14, 213-20; </bibl>
+			<bibl>V. I. Douglas, <lb/>'Stop, Look and Listen: The Problem of Sustained <lb/>Attention and Impulse Control in Hyperactive and <lb/>Normal Children', Canadian Journal of Behavioural <lb/>Science, 1972, 4, 259-82. <lb/><lb/></bibl>
+			<bibl><label>34 <lb/><lb/></label> J. E. Goggin, 'Sex Difference in the Activity Level of <lb/>Preschool Children as a Possible Precursor of <lb/>Hyperactivity', Journal of Genetic Psychology, 1975, <lb/>127, 75-81; </bibl>
+			<bibl>A. James and E. Taylor, 'Sex Differences <lb/>in the Hyperkinetic Syndrome of Childhood', Journal <lb/>of Child Psychology and Psychiatry, 1990, 31, <lb/>437-46. <lb/><lb/></bibl>
+			<bibl><label>35 <lb/><lb/></label> P. O. Quinn, 'Treating Adolescent Girls and Women <lb/>with ADHD: Gender-Specific Issues', Journal of <lb/>Clinical Psychology, 2005, 61, 579-87. <lb/><lb/></bibl>
+			<bibl><label>36 <lb/><lb/></label> R. Holland, 'Hyperactivity in Children', Canadian <lb/>Medical Association Journal, 1989, 140, 896-97. <lb/><lb/></bibl>
+			<bibl><label>37 <lb/><lb/></label> Canadian Paediatric Society, 'Use of Methylphenidate <lb/>for Attention Deficit Hyperactivity Disorder', Canadian <lb/>Medical Association Journal, 1990, 142, 817-18. <lb/><lb/></bibl>
+			<bibl><label>38 <lb/><lb/></label> P. Graham and M. Rutter, 'Organic Brain Syndrome: <lb/>Child Psychiatric Disorder', British Medical Journal <lb/>(BMJ), 1968, 3, 695-700. <lb/><lb/></bibl>
+			<bibl><label>39 <lb/><lb/></label> J. L. Rapoport, I. T. Lott, D. F. Alexander and A. U. <lb/>Abramson, 'Urinary Noradrenaline and Playroom <lb/>Behaviour in Hyperactive Children', Lancet, 1970, <lb/>296, 1141; </bibl>
+			<bibl>M. A. Stewart, 'Urinary Noradrenaline <lb/>and Playroom Behaviour in Hyperactive Children', <lb/>Lancet, 1971, 297, 140. <lb/><lb/></bibl>
+			<bibl><label>40 <lb/><lb/></label> C. Ounsted, 'The Hyperkinetic Syndrome in Epileptic <lb/>Children', Lancet, 1955, 269, 303-11; </bibl>
+			<bibl>T. T. S. <lb/>Ingram, 'A Characteristic Form of Overactive <lb/>Behaviour in Brain Damaged Children', Journal of <lb/>Mental Science, 1956, 102, 550-8; </bibl>
+			<bibl>F. E. Kratter, 'The <lb/>Physiognomic, Psychometric, Behavioural and <lb/>Neurological Aspects of Phenylketonuria', Journal of <lb/>Mental Science, 1959, 105, 421-7. <lb/><lb/></bibl>
+			<bibl><label>41 <lb/><lb/></label> M. Knipe, '"Concentration Drug" Used in Schools', <lb/>The Times, 1 July 1970; </bibl>
+			<bibl>M. Vaughan, 'Schoolchildren <lb/>"Put On Drugs Because Class Behaviour Does Not <lb/>Fit"' The Times, 1 December 1977. <lb/><lb/></bibl>
+			<bibl><label>42 <lb/><lb/></label> D. V. M. Bishop, 'Which Neurodevelopmental <lb/>Disorders Get Researched and Why?' PloS One, <lb/>2010, 5, e15112. <lb/><lb/></bibl>
+			<bibl><label>43 <lb/><lb/></label> J. Stewart, Child Guidance in Britain, 1918-1955: <lb/>The Age of Dangerous Childhood (London: Pickering <lb/>and Chatto, 2013), 4. </bibl>
+			<bibl>For the history of child guid-<lb/>ance in the USA, see K. W. Jones, Taming the <lb/>Troublesome Child: American Families, Child <lb/>Guidance, and the Limits of Psychiatric Authority <lb/>(Cambridge, MA: Harvard University Press, 1999). <lb/><lb/></bibl>
+			<bibl><label>44 <lb/><lb/></label> Stewart, Child Guidance, 1-4. </bibl>
+			<bibl>The history of child <lb/>guidance in other parts of Europe similarly indicate <lb/>how local factors had a major bearing on the take-<lb/><lb/>up of American notions of child guidance. See T. <lb/>Feeney, 'Church, State, and Family: The Advent of <lb/>Independent Child Guidance Clinics in Independent <lb/>Ireland', Social History of Medicine, 2012, 25, 848-<lb/>62; </bibl>
+			<bibl>D. Kritsotaki, 'Mental Hygiene and Child <lb/>Guidance in Post-War Greece: The Case of the <lb/>Centre for Mental Health and Research, 1956-<lb/>1970', Social History of Medicine, 2014, 27, 751-67; <lb/></bibl>
+			<bibl>A. M. Filipe, 'The Rise of Child Psychiatry in Portugal: <lb/>An Intimate Social and Political History, 1915-1959', <lb/>Social History of Medicine, 2014, 27, 326-48. <lb/><lb/></bibl>
+			<bibl><label>45 <lb/><lb/></label> S. Box, 'Preface', in Peter Schrag and Diane Divoky, <lb/>The Myth of the Hyperactive Child: And Other Means <lb/>of Child Control (New York: Penguin, 1981 [1975]), <lb/>17, 23. <lb/><lb/></bibl>
+			<bibl><label>46 <lb/><lb/></label> L. Hersov quoted in R. Cullen, 'Should Naughty <lb/>Children Be Drugged?' The Times (15 September <lb/>1981). <lb/><lb/></bibl>
+			<bibl><label>47 <lb/><lb/></label> M. Rutter, 'Brain Damage Syndromes in Childhood: <lb/>Concepts and Findings', Journal of Child Psychology <lb/>and Psychiatry, 1977, 18, 18. <lb/><lb/></bibl>
+			<bibl><label>48 <lb/><lb/></label> M. Rutter, J. Tizzard, W. Yule, P. Graham and T. <lb/>Whitmore, 'Research Report: Isle of Wight Studies, <lb/>1964-1974', Psychological Medicine, 1976, 6, <lb/>313-32. <lb/><lb/></bibl>
+			<bibl><label>49 <lb/><lb/></label> J. E. Oliver and A. H. Buchanan, 'Generations of <lb/>Maltreated Children and Multiagency Care in One <lb/>Kindred', British Journal of Psychiatry, 1979, 135, <lb/>289-303; </bibl>
+			<bibl>N. Richman, J. E. Stevenson and P. <lb/>Graham, 'Prevalence of Behaviour Problems in <lb/>3-Year-Old Children', Journal of Child Psychology <lb/>and Psychiatry, 1975, 16, 285. <lb/><lb/></bibl>
+			<bibl><label>50 <lb/><lb/></label> Anonymous, 'Hyperactivity', Lancet, 1978, 312, 561. <lb/><lb/></bibl>
+			<bibl><label>51 <lb/><lb/></label> Ibid. <lb/><lb/></bibl>
+			<bibl><label>52 <lb/><lb/></label> Anonymous, 'Does Hyperactivity Matter?' Lancet, <lb/>1986, 327, 73-4; </bibl>
+			<bibl>Mark A. Stewart and B. H. Burne, <lb/>'Minimal Brain Dysfunction', Lancet, 1973, 302, 852. <lb/><lb/></bibl>
+			<bibl><label>53 <lb/><lb/></label> Box, 'Preface', 24. <lb/><lb/></bibl>
+			<bibl><label>54 <lb/><lb/></label> Anonymous, 'Feingold's Regimen for Hyperkinesis', <lb/>Lancet, 1979, 314, 617-18; </bibl>
+			<bibl>T. Fishlock, 'Lead in <lb/><lb/>Petrol: Bad for Cars but Far Worse for Children's <lb/>Health', The Times, 13 December 1979; </bibl>
+			<bibl>Anonymous, <lb/>'Food Additives and Hyperactivity', Lancet, 1982, <lb/>319, 662-3; </bibl>
+			<bibl>D. Wilson, 'Petrol: Must Our Children <lb/>Still Be Poisoned?' The Times, 8 February 1982; </bibl>
+			<bibl>S. <lb/>Greaves, 'With Added Goodness?' The Times, 21 <lb/>August 1985; </bibl>
+			<bibl>M. Smith, An Alternative History of <lb/>Hyperactivity: Food Additives and the Feingold Diet <lb/>(New Brunswick, NJ: Rutgers University Press, 2011). <lb/><lb/></bibl>
+			<bibl><label>55 <lb/><lb/></label> Smith, Alternative History of Hyperactivity, 157-61. <lb/><lb/></bibl>
+			<bibl><label>56 <lb/><lb/></label> G. Thorley, 'Hyperkinetic Syndrome of Childhood: <lb/>Clinical Characteristics', British Journal of Psychiatry, <lb/>1984, 144, 16-24. <lb/><lb/></bibl>
+			<bibl><label>57 <lb/><lb/></label> Anonymous, 'Does Hyperactivity Matter?' <lb/><lb/></bibl>
+			<bibl><label>58 <lb/><lb/></label> E. A. Taylor, 'Childhood Hyperactivity', British Journal <lb/>of Psychiatry, 1986, 149, 562-73. <lb/><lb/></bibl>
+			<bibl><label>59 <lb/><lb/></label> E. A. Taylor, R. Schachar, G. Thorley and M. <lb/>Wieselberg, 'Conduct Disorder and Hyperactivity: I. <lb/>Separation of Hyperactivity and Antisocial Conduct <lb/>in British Child Psychiatric Patients', British Journal of <lb/>Psychiatry, 1986, 149, 760-7. <lb/><lb/></bibl>
+			<bibl><label>60 <lb/><lb/></label> This was at roughly the same time as American <lb/>approaches to healthcare were influencing the <lb/>Thatcher government. See A. Enthoven, Reflections <lb/>on the Management of the of the National Health <lb/>Service: An American Looks at Incentives to Efficiency <lb/>in Health Services Management in the UK (London: <lb/>The Nuffield Provincial Hospitals Trust, 1985). <lb/><lb/></bibl>
+			<bibl><label>61 <lb/><lb/></label> P. Hill and E. Taylor, 'An Auditable Protocol for <lb/>Treating Attention Deficit/Hyperactivity Disorder', <lb/>Archives of Disease in Childhood, 2001, 84, 404-9; <lb/></bibl>
+			<bibl>T. Alloway, J. Elliott and J. Holmes, 'The Prevalence <lb/>of ADHD-Like Symptoms in a Community Sample', <lb/>Journal of Attention Disorders, 2010, 14, 52-6. <lb/><lb/></bibl>
+			<bibl><label>62 <lb/><lb/></label> NICE, Attention Deficit Hyperactivity Disorder: <lb/>Diagnosis and Management of ADHD in Children, <lb/>Young People and Adults (London: NICE, 2009), <lb/>&lt;http://www.nice.org.uk/nicemedia/live/12061/ <lb/>42060/42060.pdf&gt;, accessed 24 August 2014. <lb/><lb/></bibl>
+			<bibl><label>63 <lb/><lb/></label> A. Thapar, R. Harrington, K. Ross and P. McGuffin, <lb/>'Does the Definition of ADHD Affect Heritability?' <lb/>Journal of the American Academy of Child and <lb/>Adolescent Psychiatry, 2000, 39, 1528-36. <lb/><lb/></bibl>
+			<bibl><label>64 <lb/><lb/></label> NICE, Attention Deficit Hyperactivity Disorder, 28-9. <lb/><lb/></bibl>
+			<bibl><label>65 <lb/><lb/></label> It should be noted, however, that the Scottish <lb/>Intercollegiate Guidelines Network (SIGN) for ADHD <lb/>are much more forthright in recommending the use <lb/>of psychostimulants as a first course of action. <lb/>Scottish <lb/>Intercollegiate <lb/>Guidelines <lb/>Network, <lb/>Management of Attention Deficit and Hyperkinetic <lb/>Disorders in Children and Young People: A National <lb/>Clinical Guideline, &lt;http://www.sign.ac.uk/pdf/ <lb/>sign112.pdf&gt;, accessed 6 May 2016. <lb/><lb/></bibl>
+			<bibl><label>66 <lb/><lb/></label> S. Wessely, 'The "Drugs v Talking" Debate Doesn't <lb/>Help Us Understand Mental Health', The Guardian, <lb/>29 March 2016, &lt;http://www.theguardian.com/com <lb/>mentisfree/2016/mar/29/drugs-talking-mental-<lb/>health&gt;, accessed 8 May 2016. <lb/><lb/></bibl>
+			<bibl><label>68 <lb/><lb/></label> R. Qvarsell, 'History of Psychiatry in Sweden', History <lb/>of Psychiatry, 1991, 2, 315-20; </bibl>
+			<bibl>H. Hannesd ottir, <lb/>'Child and Adolescent Psychiatry in Iceland: The <lb/>State of the Art, Past, Present, and Future', Nordic <lb/><lb/>Journal of Psychiatry, 1993, 47, 9-13; </bibl>
+			<bibl>K. Ludvigsen <lb/>and € <lb/>A. A. Seip, 'The Establishing of Norwegian Child <lb/>Psychiatry: Ideas, Pioneers and Institutions', History <lb/>of Psychiatry, 2009, 20, 5-26; </bibl>
+			<bibl>K. Ludvigsen, 'The <lb/>"psy-experts" and the Minds of Children: Transfer of <lb/>Knowledge in Inter-War Norway and Sweden' in A ˚ <lb/>Lundkvist and K. Peterson, eds, In Experts We Trust: <lb/>Knowledge, Politics and Bureaucracy in Nordic <lb/>Welfare States (Odense: University Press of Southern <lb/>Denmark, 2010), 181-212; </bibl>
+			<bibl>A. L. Dixon and N. H. <lb/>Hansen, 'Fortid, Nutid, Fremtid (Past, Present, <lb/>Future): Professional Counselling in Denmark', <lb/>Journal of Counseling and Development, 2010, 88, <lb/>38-42; </bibl>
+			<bibl>P. Pietikainen, 'Finland', in D. B. Baker, ed., <lb/>Oxford Handbook of the History of Psychology <lb/>(Oxford: Oxford University Press, 2012), 211-27. <lb/><lb/></bibl>
+			<bibl><label>69 <lb/><lb/></label> M. Jahnukainen, 'Different Children in Different <lb/>Countries: ADHD in Canada and Finland', in L. J. <lb/>Graham, ed,, (De)Constructing ADHD: Critical <lb/>Guidance for Teachers and Teacher Educators (New <lb/>York: Peter Lang, 2009), 63; </bibl>
+			<bibl>International Narcotics <lb/>Control Board, Report of the International Narcotics <lb/>Control Board for 2009 (New York: United Nations, <lb/>2010). <lb/><lb/></bibl>
+			<bibl><label>70 <lb/><lb/></label> E. Perman, 'Speed in Sweden', New England Journal <lb/>of Medicine, 1970, 283, 760-1. <lb/><lb/></bibl>
+			<bibl><label>71 <lb/><lb/></label> K. Zetterqvist Nelson and Bengt Sandin, <lb/>'Psychodynamics in Child Psychiatry in Sweden, <lb/>1945-1985: From Political Vision to Treatment <lb/>Ideology', History of Psychiatry, 2014, 24, 308-25. <lb/><lb/></bibl>
+			<bibl><label>72 <lb/><lb/></label> Ibid., 312-14. <lb/><lb/></bibl>
+			<bibl><label>73 <lb/><lb/></label> For the position in the 1970s, see L. Ko ¨hler, 'Physical <lb/>Examination of Four-Year-Old Children', Acta <lb/>Paediatrica Scandinavia, 1973, 62, 181-92; </bibl>
+			<bibl>B. <lb/>Hagberg, 'Minimal Brain Dysfunction in Children: <lb/>Effects on Development and Adjustment', <lb/>L€ akartidningen, 1975, 72, 3296-300; </bibl>
+			<bibl>T. Korhonen <lb/><lb/>and M. Sillanp€ a€ a, 'MBD-Like Behavior and <lb/>Neuropsychological <lb/>Performance', <lb/>Acta <lb/>Paedopsychiatrica, 1975, 42, 75-87. </bibl>
+			<bibl>C. Gillberg, P. <lb/>Rasmussen, G. Carlstro ¨m, B. Svenson and E. <lb/>Waldenstro ¨m, 'Perceptual, Motor and Attentional <lb/>Deficits in Six-Year-Old Children. Epidemiological <lb/>Aspects', Journal of Child Psychology and Psychiatry, <lb/>1982, 25, 131-44 provide a view of later <lb/>developments. <lb/><lb/></bibl>
+			<bibl><label>74 <lb/><lb/></label> J. Gornall, 'Hyperactivity in Children: The Gillberg <lb/>Affair', British Medical Journal, 2007, 335, 370-3. <lb/><lb/></bibl>
+			<bibl><label>75 <lb/><lb/></label> C. Gillberg, 'School Ruins 120,000 Children', Dagens <lb/>Nyheter, 20March 1997. <lb/><lb/></bibl>
+			<bibl><label>76 <lb/><lb/></label> E. K€ arvfe, Hj€ arnspo ¨ken-DAMP och hotet mot folk-<lb/>h€ alsan (Stockholm: Symposion, 2000). <lb/><lb/></bibl>
+			<bibl><label>77 <lb/><lb/></label> European Court of Human Rights, 'Case of Gillberg v. <lb/>Sweden', 2 November 2010, &lt;http://merlin.obs.coe.int/ <lb/>iris/2012/6/article1.en.html&gt;, accessed 24 August 2014. <lb/><lb/></bibl>
+			<bibl><label>78 <lb/><lb/></label> P. Lichtenstein, L. Haldner, J. Zetterqvist, A. <lb/>Sjo ¨lander, E. Serlachius, S. Fazel, N. Lângstro ¨m and <lb/>H. Larsson, 'Medication for Attention Deficit-<lb/>Hyperactivity Disorder and Criminality', New England <lb/>Journal of Medicine, 2012, 367, 2006-14. <lb/><lb/></bibl>
+			<bibl><label>79 <lb/><lb/></label> H. Zo€ ega, K. Furu, M. Halld orsson, P. H. Thomsen, A. <lb/>Sourander and J. E. Martikainen, 'Use of ADHD <lb/><lb/>Drugs in Nordic Countries: A Population-Based <lb/>Comparison Study', Acta Psychiatrica Scandinavia, <lb/>2011, 123, 360-7. <lb/><lb/></bibl>
+			<bibl><label>80 <lb/><lb/></label> P. Sure ´n, I. J. Bakken, K. K. Lie, S. Schjølberg, H. <lb/>Aase, T. Reichborn-Kjennerud, P. Magnus, A. Øyen, <lb/>B. K. Svendsen, K. M. Aaberg, G. L. Andersen and C. <lb/>Stoltenberg, 'Differences Across Counties in the <lb/>Registered Prevalence of Autism, ADHD, Epilepsy <lb/>and Cerebral Palsy', Tidsskrift for Den norske legefor-<lb/>ening, 2013, 18, 1929-34. <lb/><lb/></bibl>
+			<bibl><label>81 <lb/><lb/></label> Ibid. <lb/><lb/></bibl>
+			<bibl><label>82 <lb/><lb/></label> K. B. Madsen, A. K. Ersbøll, J. Olsen, E. Parner and C. <lb/>Obel, 'Geographic Analysis of the Variation in the <lb/>Incidence of ADHD in a Country with Free Access to <lb/>Healthcare: A Danish Cohort Study', International <lb/>Journal of Health Geographics, 2015, 14, 1-13. <lb/><lb/></bibl>
+			<bibl><label>83 <lb/><lb/></label> See R. Louv, Last Child in the Woods: Saving Our <lb/>Children from Nature Deficit Disorder (Chapel Hill, <lb/>NC: Algonquin Books, 2005); </bibl>
+			<bibl>B. W. Wheeler, M. <lb/>Whyte, W. Stahl-Timmins and M. H. Depledge, 'Does <lb/>Living by the Coast Improve Health and Wellbeing?, <lb/>Health and Place, 2012, 18, 1198-201; </bibl>
+			<bibl>M. Thomson, <lb/><lb/>Lost Freedom: The Landscape of the Child and the <lb/>British Post-War Settlement (Oxford: Oxford <lb/>University Press, 2014). <lb/><lb/></bibl>
+			<bibl><label>84 <lb/><lb/></label> O. € <lb/>Ostman, 'Patients in Child and Adolescent <lb/>Psychiatric Care: Psychopathology and Background <lb/>Factors', Acta Psychiatrica Scandinavia, 1989, 80, <lb/>408-14. <lb/><lb/></bibl>
+			<bibl><label>85 <lb/><lb/></label> Nelson and Sandin, 'Psychodynamics in Child <lb/>Psychiatry in Sweden'. <lb/><lb/></bibl>
+			<bibl><label>86 <lb/><lb/></label> E. E. Mo, Four Letters Apart-Children in the Age of <lb/>ADHD (Copenhagen, Magic Hour Films, 2013). <lb/><lb/></bibl>
+			<bibl><label>87 <lb/><lb/></label> W Ernst, Mad Tales from the Raj: The European <lb/>Insane in British India (London: Routledge, 1991); </bibl>
+			<bibl>W. <lb/>Ernst, 'European Madness and Gender in <lb/>Nineteenth-Century British India', Social History of <lb/>Medicine, 1996, 9, 357-82; </bibl>
+			<bibl>J. Sadowsky, Imperial <lb/>Bedlam: Institutions of Madness in Colonial <lb/>Southwest Nigeria (Berkeley: University of California <lb/>Press, 1999); </bibl>
+			<bibl>J. H. Mills, Madness, Cannabis, and <lb/>Colonialism: The 'Native Only' Lunatic Asylums of <lb/>British India, 1857-1900 (Basingstoke: Macmillan, <lb/>2000); </bibl>
+			<bibl>S. Mahone and M. Vaughan, eds, Psychiatry <lb/>and Empire (Basingstoke: Palgrave Macmillan, 2007); <lb/></bibl>
+			<bibl>A. McCarthy and C. Coleborne, eds, Migration, <lb/>Ethnicity, and Mental Health: International <lb/>Perspectives, 1840-2010 (Abingdon: Routledge, <lb/>2010); </bibl>
+			<bibl>W. Ernst, Colonialism and Transnational <lb/>Psychiatry: The Case of an Indian Mental Hospital in <lb/>British India, c. 1920-1940 (London: Anthem, 2013); <lb/></bibl>
+			<bibl>J. McCulloch, Black Skin, White Coats: Nigerian <lb/><lb/>Psychiatrists, Decolonization, and the Globalization of <lb/>Psychiatry (Athens: Ohio University Press, 2013). <lb/><lb/></bibl>
+			<bibl><label>88 <lb/><lb/></label> Mills, Madness, Cannabis, and Colonialism. <lb/><lb/></bibl>
+			<bibl><label>89 <lb/><lb/></label> S. G. Crawford, 'Specific Learning Disabilities and <lb/>Attention-Deficit Hyperactivity Disorder: Under-<lb/>Recognized in India', Indian Journal of Medical <lb/>Science, 2007, 61, 637-8. <lb/><lb/></bibl>
+			<bibl><label>90 <lb/><lb/></label> P. D. Gupta and V. Virmani, 'Clinical Trial of <lb/>Jatamansone (syn. Valeranone) in Hyperkinetic <lb/>Behaviour Disorders', Neurology India, 1968, 16, <lb/>168-73. <lb/><lb/></bibl>
+			<bibl><label>91 <lb/><lb/></label> M.S. Bhatia, V. R. Nigam, N. Bohra and S. C. Malik, <lb/>'Attention Deficit Disorder with Hyperactivity Among <lb/>Paediatric Outpatients', Journal of Child Psychology <lb/>and Psychiatry, 1991, 32, 297-306. <lb/><lb/></bibl>
+			<bibl><label>92 <lb/><lb/></label> B. S. Suvarna and A. Kamath, 'Prevalence of <lb/>Attention Deficit Disorders in Preschool Age <lb/>Children', Nepalese Medical College Journal, 2009, <lb/>11, 1-4. <lb/><lb/></bibl>
+			<bibl><label>93 <lb/><lb/></label> S. Ecks, Eating Drugs: Psychopharmaceutical <lb/>Pluralism in India (New York: New York University <lb/>Press, 2013), 184-5. <lb/><lb/></bibl>
+			<bibl><label>94 <lb/><lb/></label> P. Sitholey, V. Agarwal and S. Chamoli, 'A <lb/>Preliminary Study of Factors Affecting Adherence to <lb/>Medication in Clinic Children with Attention-Deficit/ <lb/>Hyperactivity Disorder', Indian Journal of Psychiatry, <lb/>2011, 53, 41. <lb/><lb/></bibl>
+			<bibl><label>95 <lb/><lb/></label> D. Seth, 'A Follow-Up Study of Clinic Children and <lb/>Adolescents with Attention Deficit Hyperactivity <lb/>Disorder', PhD Dissertation, Lucknow University, <lb/>2002. <lb/><lb/></bibl>
+			<bibl><label>96 <lb/><lb/></label> C. E. Wilcox, R. Washburn and V. Patel, 'Seeking <lb/>Help for Attention Deficit Hyperactivity Disorder in <lb/>Developing Countries: A Study of Parental <lb/>Explanatory Models in Goa, India', Social Science and <lb/>Medicine, 2007, 64, 1600. <lb/><lb/></bibl>
+			<bibl><label>97 <lb/><lb/></label> Smith, Alternative History of Hyperactivity. <lb/><lb/></bibl>
+			<bibl><label>98 <lb/><lb/></label> P. A. Eubig, A. Aguiar and S. L. Schantz, 'Lead and <lb/>PCBs as Risk Factors for Attention Deficit/ <lb/>Hyperactivity Disorder', Environmental Health <lb/>Perspectives, 2010, 118, 1654-67. <lb/><lb/></bibl>
+			<bibl><label>99 <lb/><lb/></label> K. Drum, 'America's Real Criminal Element: Lead', <lb/>Mother Jones, January/February, 2013. <lb/><lb/></bibl>
+			<bibl><label>100 <lb/><lb/></label> A. Roy, D. Bellinger, H. Hu, J. Schwartz, A. S. Ettinger, <lb/>R. O. Wright, M. Bouchard, K. Palaniappan and K. <lb/>Balakrishnan, 'Lead Exposure and Behavior Among <lb/>Young Children in Chennai, India', Environmental <lb/>Health Perspectives, 2009, 117, 1607-11. <lb/><lb/></bibl>
+			<bibl><label>101 <lb/><lb/></label> H. Chiang (ed.), Psychiatry and Chinese History <lb/>(London: Pickering and Chatto, 2014). <lb/><lb/></bibl>
+			<bibl><label>102 <lb/><lb/></label> On psychiatry in Communist countries generally, see <lb/>M. Savelli and S. Marks, eds, Psychiatry in <lb/>Communist <lb/>Europe <lb/>(Basingstoke: <lb/>Palgrave <lb/>Macmillan, 2015). </bibl>
+			<bibl>On Chinese psychiatry more spe-<lb/>cifically, see for instance, see N. Chen, Breathing <lb/>Spaces: Qigong, Psychiatry, and Healing in China <lb/>(New York: Columbia University Press, 2003); </bibl>
+			<bibl>H. Y. <lb/>Wu, 'The Moral Career of "Outmates": Towards a <lb/>History of Manufactured Mental Disorders in Post-<lb/>Socialist China', Medical History, 2016, 60, 87-104. <lb/><lb/></bibl>
+			<bibl><label>103 <lb/><lb/></label> H. Huang, 'The Emergence of the Psycho-Boom in <lb/>Contemporary China', in H. Chiang, ed., Psychiatry <lb/>and Chinese History (London: Pickering and Chatto, <lb/>2014), 183. <lb/><lb/></bibl>
+			<bibl><label>104 <lb/><lb/></label> J. D. Xin, H. Y. Liao, D. C. Xu and Y. F. Xia, 'Clinical <lb/>Analysis of 700 Cases with Minimal Brain <lb/>Dysfunction'. Chinese Journal of Nervous and <lb/>Mental Disease, 1981, 7, 226-30; </bibl>
+			<bibl>Y. C. Shen, Y. F. <lb/>Wang and X. L. Yang 'An Epidemiological <lb/>Investigation of Minimal Brain Dysfunction in Six <lb/>Elementary Schools in Beijing', Journal of Child <lb/>Psychology and Psychiatry, 1985, 26, 777-87. <lb/><lb/></bibl>
+			<bibl><label>105 <lb/><lb/></label> R. J. Simmons, 'Observations of Child Psychiatry in <lb/>China', Canadian Journal of Psychiatry, 1983, 28, <lb/>125. <lb/><lb/></bibl>
+			<bibl><label>106 <lb/><lb/></label> Ibid. <lb/><lb/></bibl>
+			<bibl><label>107 <lb/><lb/></label> K. N. Yao, M. V. Solanto and E. H. Wender, <lb/>'Prevalence of Hyperactivity Among Newly <lb/><lb/>Immigrated Chinese-American Children', Journal of <lb/>Developmental and Behavioral Pediatrics, 1988, 9, <lb/>367-73. <lb/><lb/></bibl>
+			<bibl><label>108 <lb/><lb/></label> X. Li, R., L. Y. Su, B. D. Townes and C. K. Varley, <lb/>'Diagnosis of Attention Deficit Disorder with <lb/>Hyperactivity in Chinese Boys', Journal of the <lb/>American Academy of Child and Adolescent <lb/>Psychiatry, 1989, 28, 497-500. <lb/><lb/></bibl>
+			<bibl><label>109 <lb/><lb/></label> K. Tao, 'Hyperactivity and Attention Deficit Disorder <lb/>Syndromes in China', Journal of the American <lb/>Academy of Child and Adolescent Psychiatry, 1992, <lb/>31, 1165. <lb/><lb/></bibl>
+			<bibl><label>110 <lb/><lb/></label> Ibid. <lb/><lb/></bibl>
+			<bibl><label>111 <lb/><lb/></label> On preferences for traditional Chinese medicine, <lb/>see X. Gai, G. Lan and X. Lui, 'A Meta-Analytic <lb/>Review on Treatment Effects on Attention Deficit/ <lb/>Hyperactivity Disorder Children in China', Acta <lb/>Psychologica Sinica, 2008, 40, 1190-96. </bibl>
+			<bibl>The quote <lb/>is from Tao, 'Hyperactivity', 1166. <lb/><lb/></bibl>
+			<bibl><label>112 <lb/><lb/></label> R. Xin, S. K. Chen, H. Q. Tang, S. F. Lin and B. J. <lb/>McConville, 'Behavioural Problems among Preschool <lb/>Age Children in Shanghai: Analysis of 3,000 Cases', <lb/>Canadian Journal of Psychiatry, 1992, 37, 251-8; </bibl>
+			<bibl>C. <lb/>K. Wong, 'Psychiatric Morbidity in a Chinese Primary <lb/><lb/>School in Hong Kong', Australian and New Zealand <lb/>Journal of Psychiatry, 1992, 26, 459-66. <lb/><lb/></bibl>
+			<bibl><label>113 <lb/><lb/></label> Smith, Hyperactive. <lb/><lb/></bibl>
+			<bibl><label>114 <lb/><lb/></label> S. Mintz and S. Kellogg, Domestic Revolutions: A <lb/>Social History of Family Life (New York: Free Press, <lb/>1989), 184-7. <lb/><lb/></bibl>
+			<bibl><label>115 <lb/><lb/></label> F. L opez-Muñoz, C. Alamo, F. J. Quintero-Gutie ´rrez <lb/>and P. Garc ıa-Garc ıa, 'A Bibliometric of International <lb/>Scientific Productivity in Attention-Deficit Hyperactivity <lb/>Disorder Covering the Period 1980-2005, European <lb/>Child and Adolescent Psychiatry, 2008, 17, 381-91. <lb/><lb/></bibl>
+			<bibl><label>116 <lb/><lb/></label> S. P. Hinshaw, R. M. Scheffler, B. D. Fulton, H. Aase, <lb/>T. Banaschewski, W. Cheng, P. Mattos, A. Holte, F. <lb/>Levy, A. Sadeh, J. A. Sergeant, E. Taylor and M. D. <lb/>Weiss, 'International Variation in Treatment <lb/><lb/>Procedures for ADHD: Social Contexts and Recent <lb/>Trends', Psychiatric Services, 2011, 62, 459-64. <lb/><lb/></bibl>
+			<bibl><label>117 <lb/><lb/></label> There are, of course, exceptions to this. See Hannah <lb/>Newton, The Sick Child in Early Modern England, <lb/>1580-1720 (Oxford: Oxford University Press, 2012). <lb/><lb/></bibl>
+		</listBibl>
+	</text>
+</TEI>
