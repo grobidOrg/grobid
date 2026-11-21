@@ -32,7 +32,7 @@
 
 	<note type="submission">Received 16 December 1991 and accepted 14 February 1992<lb/></note>
 
-	<div type="abstract">Using the Trellis human/computer<lb/> interaction<lb/> model as an implementation<lb/> vehicle,<lb/> we demonstrate<lb/> how to use concurrency-supporting<lb/> hypertext to provide visual<lb/> displays of the execution flows through<lb/> a parallel Lisp program.<lb/> In addition to<lb/> displays, the hypertext interface allows injection of control flow into an otherwise<lb/> functional<lb/> computation,<lb/> and therefore provides reader control over the order and<lb/> speed of evaluation of expressions. The resulting system, termed ATrellis, can be<lb/> thought of as a concurrent control flow browser for composing functional computa-<lb/>tions, providing<lb/> a visual implementation<lb/> of kernel-control<lb/> decomposition.<lb/> The<lb/> advantages of ATrellis are ease of exploring program side-effects; ease of debugging<lb/> parallel code; aid in teaching functional<lb/> languages; and the ability to construct<lb/> hypertext documents that have parallel execution semantics and flexible browsing<lb/> behaviors.</div>
+	
 
 		</front>
 	</text>

@@ -21,16 +21,15 @@
 	<address>Augustinerbach 4-22,<lb/> D-52062 Aachen, Germany<lb/></address>
 
 	<byline>
-	<affiliation>2 Institute for Electrical Engineering and Plasma Technology, Ruhr-Universität<lb/></affiliation>
+	<affiliation>2 Institute for Electrical Engineering and Plasma Technology, Ruhr-Universität<lb/> Bochum,</affiliation>
 	</byline>
 
-	<address>Bochum, D-44780 Bochum, Germany<lb/></address>
+	<address>D-44780 Bochum, Germany<lb/></address>
 
 	E-mail:
 	<email>theiss@iot.rwth-aachen.de<lb/></email>
 
-	Abstract.
-	<div type="abstract">This paper deals with the time resolved optical emission spectroscopy<lb/> (OES) of a high power pulse magnetron sputtering (HPPMS) physical vapor deposition<lb/> (PVD) coating process. With an industrial coating unit CC800/9 HPPMS (CemeCon<lb/> AG, Würselen) a (Cr,Al,Si)N coating was deposited. During the coating process, an<lb/> absolute calibrated Echelle-spectrometer (ESA-3000) measured the intensities of the<lb/> spectral lines of Chromium (Cr), Aluminum (Al) and molecular bands of nitrogen<lb/> (N 2 ). Time resolved measurements enable us to calculate different parameters like<lb/> the average velocity of sputtered Al-and Cr-atoms or the internal plasma parameters<lb/> electron density n e and electron temperature kT e with a time resolution of 20 µs. With<lb/> these parameters, we determine the ionization rates of Al-, Cr-, Ar-and Kr-atoms and<lb/> the deposition densities of Al-and Cr-atoms. Thus simulated deposition densities of<lb/> 1.75 • 10 20 m −2 s −1 for Chromium and 1.7 • 10 22 m −2 s −1 for Aluminum are reached.<lb/></div>
+	
 
 	Keywords:
 	<keyword>HPPMS, HIPIMS, OES, optical emission spectroscopy, absolute calibrated<lb/> </keyword>

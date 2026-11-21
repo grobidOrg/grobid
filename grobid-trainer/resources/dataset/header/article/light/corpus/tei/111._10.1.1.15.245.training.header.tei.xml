@@ -18,19 +18,12 @@
 	 94-03<lb/>
 	
 	<byline>
-	<affiliation>Experimental Knowledge Systems Laboratory<lb/> Department of Computer Science,</affiliation>
-	</byline>
-
-	<address>Box 34610<lb/></address>
-
-	<byline>
-	<affiliation>Lederle Graduate Research Center<lb/> University of Massachusetts<lb/></affiliation>
+	<affiliation>Experimental Knowledge Systems Laboratory<lb/> Department of Computer Science, Box 34610<lb/> Lederle Graduate Research Center<lb/> University of Massachusetts<lb/></affiliation>
 	</byline>
 
 	<address>Amherst, MA 01003-4610</address>
 
-	Abstract<lb/>
-	<div type="abstract">Tracking and evaluating the progress of large, complex plans or<lb/> schedules as they unfold in real time is extremely di cult for humans.<lb/> In this paper we present a mixed-initiative system for the task of sched-<lb/>ule maintenance in a simulated shipping network. A schedule mainte-<lb/>nance agent monitors the network, predicting the occurrence of states<lb/> that may result in reduced throughput and formulating schedule mod-<lb/>i cations to avoid those states. The goal is to maximize throughput<lb/> while minimizing disruptions to the original schedule. We present r e -<lb/>sults of experiments in which h uman subjects attempt to obtain that<lb/> goal both with and without the aid of the agent. We found that the hu-<lb/>man and the agent w orking together are able to achieve better results<lb/> than either one working alone. In addition to looking at global perfor-<lb/>mance measures such as throughput, we analyze individual schedule<lb/> modi cation decisions made by subjects in an attempt to assign credit<lb/> for the improvements in performance.<lb/> </div>
+	
 
 	<note type="funding">This research is supported by ARPA-AFOSR contract F30602-91-C-0076.</note>
 

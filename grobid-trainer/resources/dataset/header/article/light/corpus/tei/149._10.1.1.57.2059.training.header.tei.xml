@@ -23,8 +23,7 @@
 	<note type="doctype">Technical Report</note>
 	93-02-03 
 
-	Abstract<lb/>
-	<div type="abstract">User-level threads have performance and exibility advantages over both Unix-like processes<lb/> and kernel threads. However, the performance of user-level threads may su er in multipro-<lb/>grammed environments, or when threads block in the kernel (e.g., for I/O). These problems<lb/> can be particularly severe in tasks that communicate frequently using IPC (e.g., multithreaded<lb/> servers), due to interactions between the user-level thread scheduler and the operating system<lb/> IPC primitives. E cient IPC typically involves processor hando that blocks the caller and<lb/> unblocks a thread in the callee; when combined with user-level threads, this can cause problems<lb/> for both caller and callee, particularly if the caller thread should subsequently block.<lb/> In this paper we describe a new user-level thread package, called OThreads, designed to<lb/> support blocking and e cient IPC for a system based on traditional kernel threads. We discuss<lb/> the extent to which these problems can be solved at the user level without kernel changes<lb/> such as scheduler activations. Our conclusion is that problems caused by application-controlled<lb/> blocking and IPC can be resolved in the user-level thread package, but that problems due<lb/> to multiprogramming workload and unanticipated blocking such as page faults require kernel<lb/> changes such as scheduler activations.<lb/></div>
+	
 
 	<note type="funding">This work was supported in part by the National Science Foundation under Grants No. CCR-8619663 and<lb/> CCR-8907666, by the Washington Technology Center, and by the Digital Equipment Corporation Systems Research<lb/> Center and External Research Program.</note>
 

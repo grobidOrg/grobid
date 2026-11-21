@@ -22,8 +22,7 @@
 
 	<date>April 20, 1994</date>
 
-	Abstract<lb/>
-	<div type="abstract">Many e m bedded control applications must respect intricate timing requirements on their<lb/> interactions with the external environment. These constraints are derived from response time,<lb/> rate of execution, and low-level signaling requirements. Currently, most of these systems are<lb/> being designed in an ad hoc manner. Many tools assume the designer has already nalized<lb/> the scheduling, while most schedulers make simplifying assumptions and often cannot handle<lb/> general timing constraints.<lb/> In this paper, we discuss the scheduling issues that must be addressed by co-synthesis tools for<lb/> embedded systems and outline possible approaches to the problems. Our perspective is based on<lb/> experience with Chinook, a hardware-software co-synthesis system for reactive real-time systems,<lb/> currently under development at the University o f W ashington. Chinook is initially targeting<lb/> embedded applications without operating system support. From a high-level speci cation and<lb/> a device library, Chinook synthesizes both interface hardware and a software program to realize<lb/> the design.</div>
+	
 
 		</front>
 	</text>

@@ -18,10 +18,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>1 UMR CNRS 5558, Laboratoire de Biométrie et Biologie Evolutive,</affiliation>
+	<affiliation>1 UMR CNRS 5558, Laboratoire de Biométrie et Biologie Evolutive, Université Claude Bernard Lyon 1,<lb/></affiliation>
 	</byline>
 
-	<address>Université Claude Bernard Lyon 1,<lb/> 69 622 Villeurbanne Cedex, France<lb/></address>
+	<address>69 622 Villeurbanne Cedex, France<lb/></address>
 
 	<byline>
 	<affiliation>2 ENGREF/UMR AMAP,</affiliation>
@@ -32,8 +32,7 @@
 	* email:
 	<email>ollier@biomserv.univ-lyon1.fr<lb/></email>
 
-	Summary.
-	<div type="abstract">In recent years, there has been an increased interest in studying the variability of a quantitative<lb/> life history trait across a set of species sharing a common phylogeny. However, such studies have suffered<lb/> from an insufficient development of statistical methods aimed at decomposing the trait variance with respect<lb/> to the topological structure of the tree. Here we propose, a new and generic approach that expresses the<lb/> topological properties of the phylogenetic tree via an orthonormal basis, which is further used to decompose<lb/> the trait variance. Such a decomposition provides a structure function, referred to as &quot;orthogram,&quot; which<lb/> is relevant to characterize in both graphical and statistical aspects the dependence of trait values on the<lb/> topology of the tree (&quot;phylogenetic dependence&quot;). We also propose four complementary test statistics to be<lb/> computed from orthogram values that help to diagnose both the intensity and the nature of phylogenetic<lb/> dependence. The relevance of the method is illustrated by the analysis of three phylogenetic data sets, drawn<lb/> from the literature and typifying contrasted levels and aspects of phylogenetic dependence. Freely available<lb/> routines which have been programmed in the R framework are also proposed.<lb/></div>
+	
 
 	Key words:
 	<keyword>Life history trait; Orthogram; Orthonormal transform; Phylogenetic tree; Variance decompo-<lb/>sition.</keyword>

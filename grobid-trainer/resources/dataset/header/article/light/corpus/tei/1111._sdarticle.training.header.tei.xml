@@ -33,14 +33,17 @@
 	KEYWORDS<lb/>
 	<keyword>Multivariate;<lb/> Mean equality;<lb/> Two-group design;<lb/> Robust estimation; Covariance heterogeneity<lb/> </keyword>
 
-	Summary
-	<div type="abstract">Hotelling&apos;s T 2 procedure is used to test the equality of means in two-<lb/>group multivariate designs when covariances are homogeneous. A number of alter-<lb/>natives to T 2 , which are robust to covariance heterogeneity, have been proposed in<lb/> the literature. However, all are sensitive to departures from multivariate normal-<lb/>ity. We demonstrate how to obtain multivariate tests that are robust to covariance<lb/> heterogeneity and non-normality with estimators of location and scale based on<lb/> trimming and Winsorizing. The performance of six alternatives to T 2 was examined<lb/> via Monte Carlo methods when characteristics of the research design, degree of co-<lb/>variance heterogeneity, and degree of non-normality were manipulated. We have<lb/> recently developed a program written in the SAS/IML language that can be used to<lb/> implement these robust multivariate tests. Recommendations are provided on the<lb/> specific data-analytic conditions under which these tests should be adopted.<lb/></div>
+	
 
 	<note type="copyright">© 2004 Elsevier Ireland Ltd. All rights reserved.<lb/></note>
 
 	* Corresponding author. Tel.: <phone>+1 204 9757799</phone>;<lb/> fax: +1 204 7893910.<lb/> E-mail address:
 	<email>lisa lix@cpe.umanitoba.ca</email>
-	(L.M. Lix).<lb/>
+	(
+	<byline>
+	<docAuthor>L.M. Lix</docAuthor>
+	</byline>
+	).<lb/>
 	
 	0169-2607/$ -see front matter
 	<note type="copyright">© 2004 Elsevier Ireland Ltd. All rights reserved.<lb/></note>

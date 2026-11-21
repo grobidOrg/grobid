@@ -24,8 +24,7 @@
 
 	<email>{zhaohuan,yaoquanming,tuweiwei}@4paradigm.com<lb/></email>
 
-	Abstract-
-	<div type="abstract">Recent years have witnessed the popularity and<lb/> success of graph neural networks (GNN) in various scenarios.<lb/> To obtain data-specific GNN architectures, researchers turn to<lb/> neural architecture search (NAS), which have made impressive<lb/> success in discovering effective architectures in convolutional<lb/> neural networks. However, it is non-trivial to apply NAS ap-<lb/>proaches to GNN due to challenges in search space design and<lb/> expensive searching cost of existing NAS methods. In this work,<lb/> to obtain the data-specific GNN architectures and address the<lb/> computational challenges facing by NAS approaches, we propose<lb/> a framework, which tries to Search to Aggregate NEighborhood<lb/> (SANE), to automatically design data-specific GNN architectures.<lb/> By designing a novel and expressive search space, we propose<lb/> a differentiable search algorithm, which is more efficient than<lb/> previous reinforcement learning based methods. Experimental<lb/> results on four tasks and seven real-world datasets demonstrate<lb/> the superiority of SANE compared to existing GNN models and<lb/> NAS approaches in terms of effectiveness and efficiency. 1<lb/></div>
+	
 	
 	Index Terms-
 	<keyword>graph neural network, neural architecture<lb/> search, message passing<lb/></keyword>

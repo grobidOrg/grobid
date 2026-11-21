@@ -25,8 +25,7 @@
 	To bepublished in the proceedings of the<lb/> 
 	<meeting>Spring Symposium on Integrated Planning Applications</meeting> 
 
-	Abstract<lb/>
-	<div type="abstract">By implementing agents and environ-<lb/>ments using a domain-independent, exten-<lb/>sible simulation substrate, described in this<lb/> paper, agents will have clean interfaces to<lb/> their environments. These makes it easier<lb/> for agents to be plugged into other environ-<lb/>ments that have been similarly de ned. If<lb/> agents can interact with multiple environ-<lb/>ments, their behaviors and the associated<lb/> experimental results will be more general<lb/> and interesting.</div>
+	
 
 		</front>
 	</text>

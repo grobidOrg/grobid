@@ -178,14 +178,14 @@
 	<docAuthor>Min-Jin Kwak</docAuthor>
     </byline>
     (
-    <idno>https://orcid.org/0000-0001-9832-3251</idno>
+    <idno type="orcid">https://orcid.org/0000-0001-9832-3251</idno>
     )<lb/>
 
     <byline>
     <docAuthor>Dong-Jin Ha</docAuthor>
     </byline>
     (
-    <idno>https://orcid.org/0000-0002-3997-1600</idno>
+    <idno type="orcid">https://orcid.org/0000-0002-3997-1600</idno>
     )<lb/>
       
     <byline>
@@ -195,7 +195,7 @@
           
           (
           
-          <idno>https://orcid.org/0000-0003-1438-9515</idno>
+          <idno type="orcid">https://orcid.org/0000-0003-1438-9515</idno>
           
           )<lb/> 
           
@@ -205,7 +205,7 @@
           
           (
           
-          <idno>https://orcid.org/0000-0002-3764-3339</idno>
+          <idno type="orcid">https://orcid.org/0000-0002-3764-3339</idno>
           
           )<lb/> 
       
@@ -214,7 +214,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0002-0414-7611</idno>
+          <idno type="orcid">https://orcid.org/0000-0002-0414-7611</idno>
           
           )<lb/> 
       
@@ -223,7 +223,7 @@
     </byline>
            (
           
-          <idno>https://orcid.org/0000-0001-6769-0657</idno>
+          <idno type="orcid">https://orcid.org/0000-0001-6769-0657</idno>
           
           )<lb/> 
       
@@ -303,8 +303,7 @@
 	*To whom correspondence should be addressed:
 	<email>ykeys2584@snu.ac.kr<lb/></email>
 
-	A C<lb/> C<lb/> E P T E D ABSTRACT<lb/>
-	<div type="abstract">Upregulation of the nutritional value of feed is the major target of various studies in<lb/> the livestock industry, and dietary enzyme supplementation could aid in digesting the<lb/> nondegrading nutrients of grains in feed ingredients. Dried distillers&apos; grains with solubles<lb/> (DDGS) is a byproduct of the fermentation process in the beverage industry and can be used<lb/> as a large supply source of fiber in feed. Therefore, we conducted an experiment with male<lb/> broiler chickens to investigate the effect of various types of enzymes on DDGS and compare<lb/> the efficacy of single enzyme and multienzyme complexes on growth performance and gut<lb/> environments in broiler chickens. We used 420 1-day-old broiler chickens (Ross 308), and they<lb/> were allotted into 4 dietary treatments with seven replications (CON, corn-SBM diet; NC,<lb/> DDGS supplemented diet; SE, 0.05 % of mannanase supplemented DDGS-based diet; MC,<lb/> 0.10 % of multienzyme complex (mannanase and xylanase, glucanase) supplemented DDGS-<lb/>based diet. The dietary exogenous enzyme in the DDGS-supplemented diet could improve<lb/> growth performance as much as the growth of the control group, and digestibility of dry matter,<lb/> crude protein, and gross energy were significantly increased by enzyme addition in groups of<lb/> chicks fed DDGS-supplementation diet. Moreover, the populations of pathogenic bacteria,<lb/> coliforms, and Bacteroidetes were significantly decreased by enzyme supplementation, which<lb/> might lead to improved gut mucus-secreting cells and inflammatory cytokines in the jejunum.<lb/> Collectively, dietary single enzyme and multienzyme complexes could improve gut<lb/> environments, including intestinal immune responses and gut microbial population, and lead<lb/> to improvement of growth performance in broiler chickens.<lb/></div>
+	A C<lb/> C<lb/> E P T E D 
 
 	Keywords:
 	<keyword>enzyme, multienzyme complex, growth performance, nutrient digestibility, gut<lb/> environment, broiler chicken.<lb/></keyword>

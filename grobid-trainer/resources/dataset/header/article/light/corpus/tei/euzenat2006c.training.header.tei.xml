@@ -30,8 +30,7 @@
 
 	<email>{Jerome.Pierson, Fano.Ramparany}@francetelecom.com<lb/></email>
 
-	Abstract.
-	<div type="abstract">In a pervasive environment, heterogeneous devices need to<lb/> communicate in order to provide services adapted to users. We have developed<lb/> an extensible context model using semantic web technologies and a context<lb/> information management component that enable the interaction between<lb/> context information producer devices and context information consumer<lb/> devices and as well as their insertion in an open environment.</div>
+	
 
 		</front>
 	</text>

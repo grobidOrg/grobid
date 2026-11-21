@@ -27,8 +27,7 @@
 
 	<date>September 17, 1996</date>
 
-	Abstract<lb/>
-	<div type="abstract">Situated cognition (SC) claims that knowledge is mostly context-dependent and that symbolic de-<lb/>scriptions elicited prior to direct experience are less important than functional units developed via direct<lb/> experience with the current problem. If this were true, then we would need to modify the knowledge<lb/> modeling approaches of KA which assume that re-using old symbolic descriptions are a productivity tool<lb/> for new applications. There are numerous tools which, if added to conventional knowledge modeling,<lb/> could be said to handle SC (e.g. machine learning, abduction, veri cation &amp; validation tools, repertory<lb/> grids, certain frameworks for decision support systems, expert critiquing systems, and ripple-down-rules).<lb/> However, we require an experiment to assess the e ectiveness of these tools as a response to SC.<lb/></div>
+	
 
 	<meeting>Proceedings of the AAAI sponsored Ban Knowledge Acquisition Workshop, November, 1996. </meeting>
 

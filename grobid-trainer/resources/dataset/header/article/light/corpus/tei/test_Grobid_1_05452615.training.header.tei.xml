@@ -15,10 +15,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>Department of computer Sciences,<lb/></affiliation>
+	<affiliation>Department of computer Sciences,<lb/> NUST,</affiliation>
 	</byline>
 
-	<address>NUST, Pakistan<lb/></address>
+	<address>Pakistan<lb/></address>
 
 	<email>atif09@gmail.com<lb/></email>
 
@@ -27,10 +27,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>Department of computer Sciences,<lb/></affiliation>
+	<affiliation>Department of computer Sciences,<lb/> NUST,</affiliation>
 	</byline>
 
-	<address>NUST, Pakistan<lb/></address>
+	<address>Pakistan<lb/></address>
 
 	<email>athar-mcs@nust.edu.pk<lb/></email>
 
@@ -39,15 +39,14 @@
 	</byline>
 
 	<byline>
-	<affiliation>Department of computer Sciences,<lb/></affiliation>
+	<affiliation>Department of computer Sciences,<lb/> NUST,</affiliation>
 	</byline>
 
-	<address>NUST, Pakistan<lb/></address>
+	<address>Pakistan<lb/></address>
 
 	<email>shouzib@yahoo.com<lb/></email>
 
-	Abstract-
-	<div type="abstract">As compared to bespoke software development, in<lb/> market driven software development huge numbers of<lb/> requirements that comes from many different users, customers,<lb/> competitors through surveys, interviews, focus groups, and<lb/> competitor analysis intimidate to over burden the requirement<lb/> engineering process. So it is vital for product management to<lb/> select the requirements that aligned with the overall business<lb/> goals and dispose of others as early as possible. This paper<lb/> presents a new model for requirement prioritization using AHP<lb/> (Analytical Hierarchical Process). Number of comparisons as<lb/> compare to traditional AHP techniques are significantly<lb/> reduced which make it practicable and applicable. In creation of<lb/> this model qualitative and quantitative research methodologies<lb/> are used. To evaluate the model both static and dynamic<lb/> validation techniques are used to assess the model in industry<lb/> where the aspects of practicality, applicability, Implementation,<lb/> effectiveness, and efficiency were investigated, yielding<lb/> promising initial results.<lb/></div> 
+	 
 
 	Keywords: 
 	<keyword>AHP, Bespoke, Dynamic validation, Market-<lb/>driven, Model, Requirements, Static validation validation<lb/></keyword>

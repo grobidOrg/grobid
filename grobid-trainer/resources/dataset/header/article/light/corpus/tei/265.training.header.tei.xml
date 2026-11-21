@@ -14,8 +14,7 @@
 	<docAuthor>Christophe HURTER, Stéphane CONVERSY<lb/></docAuthor>
 	</byline>
 
-	Abstract-
-	<div type="abstract">Air traffic control systems display information<lb/> using multiple visual variables. The research described in this<lb/> paper is an initial effort to develop a theory-driven approach to<lb/> the characterization of user interfaces. We will focus on the<lb/> displayed visual object and deliberately leave aside the<lb/> interaction. In this article, we depict the state of the art in data<lb/> visualization, and we characterize these systems using the Card,<lb/> Mackinlay and Bertin model. This work helps characterize<lb/> images more precisely, refines our understanding of the<lb/> transformations of the raw data that generates them, as well as<lb/> the role of perception in the interpretation of visualization.<lb/></div>
+	
 
 	Index Terms-
 	<keyword>Information Visualization, taxonomy, graphical<lb/> coding.</keyword>

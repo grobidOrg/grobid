@@ -51,7 +51,7 @@
 	<date>16 January 2008</date>
 	)<lb/>
 
-	<div type="abstract">Excited state soliton stars are studied numerically for the first time. The stability of spherically<lb/> symmetric S-branch excited state oscillatons under radial perturbations is investigated using a 1D<lb/> code. We find that these stars are inherently unstable either migrating to the ground state or collapsing<lb/> to black holes. Higher excited state configurations are observed to cascade through intermediate excited<lb/> states during their migration to the ground state. This is similar to excited state boson stars [J. Balakrishna,<lb/> E. Seidel, and W.-M. Suen, Phys. Rev. D 58, 104004 (1998).]. Ground state oscillatons are then studied in<lb/> full 3D numerical relativity. Finding the appropriate gauge condition for the dynamic oscillatons is much<lb/> more challenging than in the case of boson stars. Different slicing conditions are explored, and a<lb/> customized gauge condition that approximates polar slicing in spherical symmetry is implemented.<lb/> Comparisons with 1D results and convergence tests are performed. The behavior of these stars under small<lb/> axisymmetric perturbations is studied and gravitational waveforms are extracted. We find that the<lb/> gravitational waves damp out on a short time scale, enabling us to obtain the complete waveform. This<lb/> work is a starting point for the evolution of real scalar field systems with arbitrary symmetries.<lb/></div>
+	
 
 	<idno>DOI: 10.1103/PhysRevD.77.024028<lb/></idno>
 

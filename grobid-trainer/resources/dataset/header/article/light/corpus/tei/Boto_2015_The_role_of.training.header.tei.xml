@@ -52,8 +52,7 @@
 	phone : <phone>+33 1 44 27 25 05<lb/></phone> 
 	fax : +33 1 44 27 41 17
 
-	Abstract<lb/>
-	<div type="abstract">The self-assembly of organic molecules (octylamine) is studied by means of periodic DFT calculations<lb/> including Grimme D2 dispersion scheme. It has been found that in the gas-phase dispersive forces<lb/> are crucial when packing is considered, modifying considerably the potential energy surface<lb/> compared to the case of a molecular dimer. In interaction with a metallic surface (platinum), the<lb/> electronic interaction between adsorbate and substrate is predominant, dispersion forces mainly<lb/> increasing the adsorption strength. A detailed study on the structural parameters of the molecule-<lb/>metal system is reported to gain understanding on the factors affecting their stability. The<lb/> intermolecular bonding in these systems is analyzed by means of the non-covalent interactions NCI<lb/> index. The decomposition of the 2D packing along each direction (x,y) highlights the importance of<lb/> the diagonal contributions in the stabilization of the square pattern. Moreover, the stabilizing nature<lb/> of H-H interactions between neighboring molecules is supported in this model.<lb/></div>
+	
 
 	Keywords:
 	<keyword>SAM, DFT, NCI, platinum, amine</keyword>

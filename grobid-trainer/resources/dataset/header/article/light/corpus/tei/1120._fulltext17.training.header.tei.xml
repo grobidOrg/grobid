@@ -16,14 +16,22 @@
 	<docAuthor>Lindsey L. Johnston a , Andrew J. Ursini a , Nathan P. Oien a , Matthew P. Desciak b , Randy S. Rarig, Jr. c ,<lb/> Jon Zubieta c , and Robert L. LaDuca a, *<lb/></docAuthor>
 	</byline>
 
+    <!-- how to handle affiliations broken by the address? -->
 	<byline>
-	<affiliation>a East Lansing MI / USA, Michigan State University, Lyman Briggs College and Department of Chemistry<lb/> b Wilkes-Barre, PA / USA, King&apos;s College, Department of Chemistry and Physics<lb/> c Syracuse, NY / USA, Syracuse University, Department of Chemistry<lb/></affiliation>
+	<affiliation>a East Lansing MI / USA, Michigan State University, Lyman Briggs College and Department of Chemistry<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>b Wilkes-Barre, PA / USA, King&apos;s College, Department of Chemistry and Physics<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>c Syracuse, NY / USA, Syracuse University, Department of Chemistry<lb/></affiliation>
 	</byline>
 
 	<note type="submission">Received November 6 th , 2007.<lb/></note>
 
-	Abstract.
-	<div type="abstract">Hydrothermal treatment of aqueous mixtures of cop-<lb/>per(II) halides and 3,3Ј-bipyridine (3,3Ј-bpy) has afforded the coor-<lb/>dination polymers [CuCl(3,3Ј-bpy)] n (1) and [Cu 2 Br 2 (3,3Ј-bpy)] n<lb/> (2), which were analyzed via single crystal X-ray diffraction, infra-<lb/>red spectroscopy, and elemental analysis. The structure of 1 consists<lb/> of two-dimensional (2-D) layers constructed from the linkage of<lb/> castellated one-dimensional (1-D) [CuCl] n stepped chains through<lb/> anti-conformation 3,3Ј-bpy tethers. Compound 2 presents a related<lb/></div>
+	
 
 	<byline>
 	<docAuthor>* Prof. Robert L. LaDuca<lb/></docAuthor>
@@ -40,9 +48,9 @@
 
 	<reference>Z. Anorg. Allg. Chem. 2008, 634, 887Ϫ891<lb/></reference>
 
-	<note type="copyright">© 2008 WILEY-VCH Verlag GmbH &amp; Co. KGaA, Weinheim 887<lb/></note>
+	<note type="copyright">© 2008 WILEY-VCH Verlag GmbH &amp; Co. KGaA, Weinheim</note> <page>887<lb/></page>
 
-	<div type="abstract">2-D sheet motif, albeit built from infinite 1-D [Cu 2 Br 2 ] n ladders<lb/> strutted by 3,3Ј-bpy ligands in anti conformation. In both cases<lb/> neighboring 2-D sheets stack into 3-D via weak CϪH•••halogen<lb/> interactions.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Hydrothermal synthesis; Copper; Halides; Coordination<lb/> polymer; Bipyridine; Supramolecular interactions<lb/></keyword>

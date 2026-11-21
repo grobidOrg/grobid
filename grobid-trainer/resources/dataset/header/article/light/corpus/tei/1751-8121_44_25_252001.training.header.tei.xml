@@ -41,8 +41,7 @@
 	Online at
 	<ptr type="web">stacks.iop.org/JPhysA/44/252001<lb/></ptr>
 
-	Abstract<lb/>
-	<div type="abstract">We study the sine-square deformed quantum XY chain with open boundary<lb/> conditions in which the interaction strength at the position x in the chain of<lb/> length L is proportional to the function f x = sin 2 π<lb/> L x − 1<lb/> 2 . The model can<lb/> be mapped onto a free spinless fermion model with site-dependent hopping<lb/> amplitudes and on-site potentials via the Jordan-Wigner transformation.<lb/> Although the single-particle eigenstates of this system cannot be obtained<lb/> in closed form, it is shown that the many-body ground state is identical to that<lb/> of the uniform XY chain with periodic boundary conditions. This proves a<lb/> conjecture of Hikihara and Nishino (2011 Phys. Rev. B 83 060414) based on<lb/> numerical evidence.<lb/></div>
+	
 
 	<keyword>PACS numbers: 75.10.Pq, 02.30.Ik, 05.30.−d<lb/></keyword>
 

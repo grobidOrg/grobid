@@ -16,8 +16,7 @@
 
 	<date>January 22, 1995</date>
 
-	Abstract<lb/>
-	<div type="abstract">A quorum system is a collection of sets (quorums) every two of which intersect. Quorum<lb/> systems have been used for many applications in the area of distributed systems, including<lb/> mutual exclusion, data replication and dissemination of information<lb/> Given a strategy to pick quorums, the load L(S) is the minimal access probability of the<lb/> busiest element, minimizing over the strategies. The capacity Cap(S) is the highest quorum<lb/> accesses rate that S can handle. We show that for any quorum system, Cap(S) = 1=L(S).<lb/> The availability of a quorum system S is the probability that at least one quorum<lb/> survives, assuming that each element fails independently with probability p. A tradeo<lb/> between L(S) and the availability of S is shown.<lb/> None of the existing constructions of quorum systems achieves simultaneously good<lb/> availability and low load. We present four novel constructions of quorum system, all fea-<lb/>turing optimal or near optimal load, and high availability. The best construction, based<lb/> on paths in a grid, has a load of O(1= p n), and a failure probability of exp(? ( p n)) when<lb/> the elements fail with probability p &lt; 1 2 . Moreover, even in the presence of faults, with<lb/> exponentially high probability the load of this system is still O(1= p n). The analysis of this<lb/> scheme is based on Percolation Theory.<lb/></div>
+	
 
 	Keywords:
 	<keyword>quorum systems, load, fault tolerance, distributed computing, percolation<lb/> theory, linear programming.<lb/></keyword>

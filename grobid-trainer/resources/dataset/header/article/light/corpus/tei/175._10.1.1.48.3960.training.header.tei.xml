@@ -34,8 +34,7 @@
 
 	<email>kim@ags.com.au</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper presents Splice, a batch meta-<lb/>learning system, designed to learn locally sta-<lb/>ble concepts in domains with hidden changes<lb/> in context. The majority of machine learning<lb/> algorithms assume that target concepts re-<lb/>main stable over time. In many domains this<lb/> assumption is invalid. For example, nan-<lb/>cial prediction, medical diagnosis, and net-<lb/>work performance are domains in which tar-<lb/>get concepts may not remain stable. Unsta-<lb/>ble target concepts are often due to changes<lb/> in a hidden context. Existing works on learn-<lb/>ing in the presence of hidden changes in con-<lb/>text use an incremental learning approach.</div>
+	
 
 		</front>
 	</text>

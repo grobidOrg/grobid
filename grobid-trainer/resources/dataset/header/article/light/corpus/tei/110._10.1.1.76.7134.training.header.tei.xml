@@ -46,8 +46,7 @@
 
 	<email>baveja@cs.colorado.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">Several researchers have proposed modeling<lb/> temporally abstract actions in reinforcement<lb/> learning by the combination of a policy and a ter-<lb/>mination condition, which we refer to as an op-<lb/>tion. Value functions over options and models of<lb/> options can be learned using methods designed<lb/> for semi-Markov decision processes (SMDPs).<lb/> However, all these methods require an option to<lb/> be executed to termination. In this paper we ex-<lb/>plore methods that learn about an option from<lb/> small fragments of experience consistent with<lb/> that option, even if the option itself is not exe-<lb/>cuted. We call these methods intra-option learn-<lb/>ing methods because they learn from experience<lb/> within an option. Intra-option methods are some-<lb/>times much more efficient than SMDP meth-<lb/>ods because they can use off-policy temporal-<lb/>difference mechanisms to learn simultaneously<lb/> about all the options consistent with an expe-<lb/>rience, not just the few that were actually exe-<lb/>cuted. In this paper we present intra-option learn-<lb/>ing methods for learning value functions over op-<lb/>tions and for learning multi-time models of the<lb/> consequences of options. We present compu-<lb/>tational examples in which these new methods<lb/> learn much faster than SMDP methods and learn<lb/> effectively when SMDP methods cannot learn at<lb/> all. We also sketch a convergence proof for intra-<lb/>option value learning.</div>
+	
 
 		</front>
 	</text>

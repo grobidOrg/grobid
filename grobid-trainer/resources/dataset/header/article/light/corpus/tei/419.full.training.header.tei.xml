@@ -49,8 +49,7 @@
 
 	<address>Leuven, Belgium<lb/></address>
 
-	SUMMARY<lb/>
-	<div type="abstract">Patients who have undergone renal transplantation are monitored longitudinally at irregular time intervals<lb/> over 10 years or more. This yields a set of biochemical and physiological markers containing valuable<lb/> information to anticipate a failure of the graft. A general linear, generalized linear, or nonlinear mixed<lb/> model is used to describe the longitudinal profile of each marker. To account for the correlation between<lb/> markers, the univariate mixed models are combined into a multivariate mixed model (MMM) by specify-<lb/>ing a joint distribution for the random effects. Due to the high number of markers, a pairwise modeling<lb/> strategy, where all possible pairs of bivariate mixed models are fitted, is used to obtain parameter estimates<lb/> for the MMM. These estimates are used in a Bayes rule to obtain, at each point in time, the prognosis for<lb/> long-term success of the transplant. It is shown that allowing the markers to be correlated can improve<lb/> this prognosis.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Discriminant analysis; High dimensional; Joint modeling; Longitudinal profiles; Multivariate mixed<lb/> models.<lb/></keyword>

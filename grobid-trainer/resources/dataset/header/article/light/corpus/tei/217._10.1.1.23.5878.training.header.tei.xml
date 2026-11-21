@@ -29,7 +29,7 @@
 	<phone>(818) 501-4956</phone>
 	(818) 986-1360 FAX<lb/>
 
-	<div type="abstract">A simple real-time garbage collection algorithm is presented which does not copy, thereby avoiding<lb/> some of the problems caused by the asynchronous motion of objects. This in-place &quot;treadmill&quot;<lb/> garbage collection scheme has approximately the same complexity as other non-moving garbage<lb/> collectors, thus making it usable in a high-level language implementation where some pointers<lb/> cannot be traced. The treadmill is currently being used in a Lisp system built in Ada.</div>
+	
 
 		</front>
 	</text>

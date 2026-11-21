@@ -20,8 +20,7 @@
 
 	<date>March 14, 1997</date>
 
-	ABSTRACT<lb/>
-	<div type="abstract">Sync is a new Java™-based framework for developing collaborative applications for wireless mobile<lb/> systems. Sync is based on object-oriented replication and offers high-level synchronization-aware classes<lb/> based on existing Java classes. Programmers may also extend the Sync-provided classes to create new<lb/> replicated classes, either to add functionality or to modify a class&apos;s merge policy. Sync supports fully<lb/> disconnected operation and employs centralized, asynchronous synchronization. Application programmers<lb/> use the Sync framework to define conflicts and specify conflict resolution on the basis of the application&apos;s<lb/> structure and semantics.<lb/> We discuss the general needs of wireless mobile applications, and present a high-function example<lb/> application that would be useful to mobile users, to be used for illustration throughout the paper. Next we<lb/> discuss related work, and evaluate each work relative to its ability to support the example application. We<lb/> then present the Sync framework, motivating each feature with its use in the example application.</div>
+	
 
 		</front>
 	</text>

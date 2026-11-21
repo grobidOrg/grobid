@@ -38,8 +38,7 @@
 
 	<address>Dundee, Scotland, United Kingdom</address>
 
-	Abstract<lb/>
-	<div type="abstract">Microarray comparative genomic hybridisation (aCGH) provides an estimate of the relative abundance of genomic DNA<lb/> (gDNA) taken from comparator and reference organisms by hybridisation to a microarray containing probes that represent<lb/> sequences from the reference organism. The experimental method is used in a number of biological applications, including<lb/> the detection of human chromosomal aberrations, and in comparative genomic analysis of bacterial strains, but<lb/> optimisation of the analysis is desirable in each problem domain. We present a method for analysis of bacterial aCGH data<lb/> that encodes spatial information from the reference genome in a hidden Markov model. This technique is the first such<lb/> method to be validated in comparisons of sequenced bacteria that diverge at the strain and at the genus level:<lb/> Pectobacterium atrosepticum SCRI1043 (Pba1043) and Dickeya dadantii 3937 (Dda3937); and Lactococcus lactis subsp. lactis<lb/> IL1403 and L. lactis subsp. cremoris MG1363. In all cases our method is found to outperform common and widely used aCGH<lb/> analysis methods that do not incorporate spatial information. This analysis is applied to comparisons between commercially<lb/> important plant pathogenic soft-rotting enterobacteria (SRE) Pba1043, P. atrosepticum SCRI1039, P. carotovorum 193, and<lb/> Dda3937. Our analysis indicates that it should not be assumed that hybridisation strength is a reliable proxy for sequence<lb/> identity in aCGH experiments, and robustly extends the applicability of aCGH to bacterial comparisons at the genus level.<lb/> Our results in the SRE further provide evidence for a dynamic, plastic &apos;accessory&apos; genome, revealing major genomic islands<lb/> encoding gene products that provide insight into, and may play a direct role in determining, variation amongst the SRE in<lb/> terms of their environmental survival, host range and aetiology, such as phytotoxin synthesis, multidrug resistance, and<lb/> nitrogen fixation.<lb/></div>
+	
 
 	Citation:
 	<reference>Pritchard L, Liu H, Booth C, Douglas E, François P, et al. (2009) Microarray Comparative Genomic Hybridisation Analysis Incorporating Genomic<lb/> Organisation, and Application to Enterobacterial Plant Pathogens. PLoS Comput Biol 5(8): e1000473.</reference>
@@ -50,8 +49,10 @@
 	<editor>Weixiong Zhang,</editor>
 
 	<byline>
-	<affiliation>Washington University in Saint Louis, United States of America<lb/></affiliation>
+	<affiliation>Washington University in Saint Louis,</affiliation>
 	</byline>
+
+	<address>United States of America<lb/></address>
 
 	<note type="submission">Received February 5, 2009; Accepted July 16, 2009;</note>
 

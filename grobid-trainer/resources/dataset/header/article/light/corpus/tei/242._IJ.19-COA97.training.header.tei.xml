@@ -61,13 +61,12 @@
 	Subject categories:<lb/>
 	<keyword>Programming: heuristic, stochastic;<lb/> Mathematics: combinatorics.<lb/></keyword>
 
-	<div type="abstract">The paper presents an application of simulated annealing, tabu search and an adapted<lb/> genetic algorithm to a real world instance of the timetable problem. The computational<lb/> results obtained are compared and discussed.<lb/></div>
+	
 
 	Other keywords:
 	<keyword>timetable problem, tabu search, simulated annealing, genetic algorithms</keyword>
 
-	Abstract<lb/>
-	<div type="abstract">In this paper we present the results of an investigation of the possibilities offered by three well-<lb/>known metaheuristic algorithms to solve the timetable problem, a multi-constrained, NP-hard,<lb/> combinatorial optimization problem with real-world applications. First, we present our model of the<lb/> problem, including the definition of a hierarchical structure for the objective function, and of the<lb/> neighborhood search operators which we apply to matrices representing timetables. Then we report<lb/> about the outcomes of the utilization of the implemented systems to the specific case of the generation<lb/> of a school timetable. We compare the results obtained by simulated annealing, tabu search and two<lb/> versions, with and without local search, of the genetic algorithm. Our results show that GA with<lb/> local search and tabu search based on temporary problem relaxations both outperform simulated<lb/> annealing and handmade timetables.</div>
+	
 
 		</front>
 	</text>

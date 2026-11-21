@@ -32,8 +32,7 @@
 
 	<date>February 26, 2008</date>
 
-	Abstract<lb/>
-	<div type="abstract">This short paper should serve as basis for further analysis of a previously found<lb/> new symmetry of the solutions of the wave equation in the gravitational field of a<lb/> Kerr black hole. Its main new result is the proof of essential self-adjointness of the<lb/> spatial part of a reduced normalized wave operator of the Kerr metric in a weighted<lb/> L 2 -space. As a consequence, it leads to a purely operator theoretic proof of the<lb/> well-posedness of the initial value problem of the reduced Klein-Gordon equation in<lb/> that field in that L 2 -space and in this way generalizes a corresponding result of Kay<lb/> (1985) in the case of the Schwarzschild black hole. It is believed that the employed<lb/> methods are applicable to other separable wave equations.</div>
+	
 
 		</front>
 	</text>

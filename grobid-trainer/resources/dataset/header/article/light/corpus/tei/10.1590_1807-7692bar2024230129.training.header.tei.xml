@@ -81,8 +81,7 @@
 	Keywords:<lb/>
 	<keyword>coopetition; multisided platform; value<lb/> creation; value configuration;<lb/> value appropriation<lb/></keyword>
 
-	JEL Code:<lb/>
-	<keyword>M10, M21, P13<lb/></keyword>
+	<keyword>JEL Code:<lb/> M10, M21, P13<lb/></keyword>
 
 	<note type="submission">Received:<lb/> August 30, 2023.<lb/> This paper was with the authors for two revisions<lb/> Accepted:<lb/> March 05, 2024.<lb/></note>
 
@@ -141,9 +140,8 @@
 	<address>Brazil</address>
 
 	)<lb/> Reviewers:<lb/>
-	<byline>
-	<docAuthor>Alexandre Borba da Silveira<lb/></docAuthor>
-	</byline>
+	<!-- check: reviewer labelled as editor, like the editors and editorial assistants of this file -->
+	<editor>Alexandre Borba da Silveira<lb/></editor>
 
 	(
 	<byline>
@@ -167,8 +165,7 @@
 
 	).
 
-	ABSTRACT<lb/>
-	<div type="abstract">Objective: comprehend the challenges and solutions faced by a non-technological<lb/> and non-profit organization, acting within a coopetitive environment, in the construc-<lb/>tion of a multisided platform business model. Method: utilizing a qualitative case study<lb/> approach, we investigated FEBRAFAR, a multisided platform of drugstore retailers, man-<lb/>ufacturers, and service providers. Data collection and analysis was based on the follow-<lb/>ing categories: (a) the methods through which the platform generates value for its di-<lb/>verse customer segments, (b) the intricate contours of its value configuration endeavor,<lb/> and (c) its strategies for value appropriation to ensure both sustainability and growth.<lb/> Results: the challenges in establishing an efficiently functioning multisided platform<lb/> business model included: getting resources; member&apos;s attraction; and resistance to<lb/> adopting best management practices. The solutions contained the development of val-<lb/>ue creation techniques for its varied customer segments by reducing transactional fric-<lb/>tion with customers and suppliers, a comprehensive value configuration process, and<lb/> value appropriation that promote sustainability and growth to these drugstore chains.<lb/> Conclusion: the paper shows how FEBRAFAR got the solution of value creation and<lb/> appropriation of the platform business model by orchestrating the interactions of com-<lb/>peting entities within the stakeholder ecosystem that engage in collaboration. By es-<lb/>tablishing clear rules and interaction protocols, a multisided platform can facilitate co-<lb/>ordination among competing entities, thereby enabling collaborative value co-creation<lb/> for all involved stakeholders. This finding contributes to the broader understanding of<lb/> strategic management in multisided platforms, particularly in non-technology contexts.<lb/></div>
+	
 
 	<docTitle>
 	<titlePart>Coopetition through Multisided Platforms<lb/> Business Model: A Case Study of FEBRAFAR<lb/> Value Cycle<lb/></titlePart>
@@ -195,7 +192,7 @@
 
 	<idno>DOI: https://doi.org/10.1590/1807-7692bar2024230099<lb/></idno>
 
-	<note type="doctype">Special issue</note> on: Coopetition Authors<lb/>
+	<note type="doctype">Special issue on: Coopetition</note> Authors<lb/>
 
 	<byline>
 	<docAuthor>Álvaro Antônio Bueno de Camargo<lb/></docAuthor>

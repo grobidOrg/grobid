@@ -34,8 +34,7 @@
 
 	<email>faisalbashir@mcs.edu.pk<lb/></email>
 
-	Abstract-
-	<div type="abstract">Mobility in sensor networks has not only expanded<lb/> the role of sensor networks but has also given a whole new<lb/> dimension to all research areas. Extra vigilance and unique<lb/> approaches are required to address the concerns raised due to<lb/> mobility. Therefore, we present a novel zone based routing<lb/> scheme that is modified from Adhoc Ondemand Distance<lb/> Vector Routing protocol. Our protocol is not only efficient in<lb/> reducing the amount of control information produced as a<lb/> result of path finding but also capable of reducing network<lb/> segment errors, such that routing information is always<lb/> available in the underlying network. The results have shown<lb/> that this scheme is efficient in case of low as well as high<lb/> mobility scenarios due to our proposed zone based<lb/> architecture.<lb/></div>
+	
 
 	Keywords-
 	<keyword>mobile;sensor;routing;zone;aodv;mobility;<lb/> </keyword>

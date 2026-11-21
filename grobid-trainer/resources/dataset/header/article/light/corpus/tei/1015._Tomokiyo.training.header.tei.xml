@@ -22,8 +22,7 @@
 
 	<email>ttomokiyo,mhurst¡ @intelliseek.com</email>
 
-	Abstract<lb/>
-	<div type="abstract">We present a new approach to extract-<lb/>ing keyphrases based on statistical lan-<lb/>guage models. Our approach is to use<lb/> pointwise KL-divergence between mul-<lb/>tiple language models for scoring both<lb/> phraseness and informativeness, which<lb/> can be unified into a single score to rank<lb/> extracted phrases.<lb/></div>
+	
 
 	. The prob-ability<lb/> © T<lb/> can be decomposed as<lb/> ©<lb/> T<lb/> ! 9 ¡<lb/> ©<lb/> T f Ff ¡<lb/> E f ¥<lb/> ¢<lb/> p<lb/> p<lb/> f A ¡ Assuming<lb/> f 8<lb/> only depends on the previous<lb/> words, N-gram language models are commonly<lb/> used. The following is the trigram language model<lb/> case.<lb/> ©<lb/> T<lb/> ! 9 ¡<lb/> ©<lb/> T f<lb/> Ff A
 		</front>

@@ -32,8 +32,7 @@
 
 	<email>francisco.chinesta@paris.ensam.fr<lb/></email>
 
-	ABSTRACT.
-	<div type="abstract">This work focuses on the resolution of the Fokker-Planck equation that governs the<lb/> evolution of the fibers orientation distribution. To reduce the computing time, that equation is solved<lb/> along some flow trajectories in order to extract the significant information of the solution from the<lb/> application of the Karhunen-Loève decomposition. Now, from this information one could solve the<lb/> Fokker-Planck equation everywhere in the flow domain or simply adjust a closure relation that becomes<lb/> optimal for such flow, solving the evolution of some orientation moments which require a less amount of<lb/> computation. This paper focuses on this last strategy. For this purpose we start introducing the<lb/> Karhunen-Loève decomposition that is applied later to automatically extract the main solution<lb/> characteristics for adjusting empirically a natural closure relation.<lb/></div>
+	
 
 	KEYWORDS:
 	<keyword>Short fiber suspensions; Closure relations; Numerical modeling; Model reduction;<lb/> Karhunen-Loève decomposition </keyword>

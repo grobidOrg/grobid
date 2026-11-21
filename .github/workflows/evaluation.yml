@@ -13,6 +13,9 @@ name: End-to-end evaluation
 #   is), adding a `corpus:*`
 #   label to a pull request that has one of them evaluates that corpus, and adding
 #   `evaluation:glutton` evaluates the labelled corpora again with biblio-glutton.
+#   The flavors are selected the same way with the labels `flavor:article/light` and
+#   `flavor:article/light-ref`: each one evaluates its flavor, with its own report; without
+#   them, the full models are evaluated.
 #   Once the pull request has `evaluation:crf` or `evaluation:delft`, each push evaluates
 #   the labelled corpora again, except the pushes to a draft pull request and the pushes
 #   that only change the documentation; marking a draft ready for review evaluates it.
@@ -58,7 +61,7 @@ on:
   pull_request:
     types: [ labeled, synchronize, ready_for_review ]
 
-# One evaluation at a time per pull request: a push, or an evaluation:* or corpus:* label,
+# One evaluation at a time per pull request: a push, or an evaluation:*, corpus:* or flavor:* label,
 # waits for the run going to finish, and replaces the run already waiting (GitHub keeps one).
 # Any other label, or a push to a draft, gets a group of its own, so that it replaces nothing
 # (its run does nothing, the setup job being skipped). A manual run cancels the one going
@@ -70,7 +73,8 @@ concurrency:
         || (((github.event.action == 'synchronize' && !github.event.pull_request.draft)
              || github.event.action == 'ready_for_review'
              || startsWith(github.event.label.name, 'evaluation:')
-             || startsWith(github.event.label.name, 'corpus:'))
+             || startsWith(github.event.label.name, 'corpus:')
+             || startsWith(github.event.label.name, 'flavor:'))
             && (contains(toJson(github.event.pull_request.labels.*.name), '"evaluation:crf"')
                 || contains(toJson(github.event.pull_request.labels.*.name), '"evaluation:delft"'))
             && format('evaluation-pr-{0}', github.event.pull_request.number))
@@ -99,8 +103,8 @@ env:
 
 jobs:
   setup:
-    # a push, a corpus:* or the evaluation:glutton label only starts a run once the pull
-    # request has a profile label (evaluation:crf or evaluation:delft)
+    # a push, a corpus:*, a flavor:* or the evaluation:glutton label only starts a run once
+    # the pull request has a profile label (evaluation:crf or evaluation:delft)
     if: >-
       github.event_name == 'workflow_dispatch'
       || (((github.event.action == 'synchronize' && !github.event.pull_request.draft)
@@ -110,16 +114,22 @@ jobs:
       || (startsWith(github.event.label.name, 'evaluation:')
           && github.event.label.name != 'evaluation:glutton')
       || ((startsWith(github.event.label.name, 'corpus:')
+           || startsWith(github.event.label.name, 'flavor:')
            || github.event.label.name == 'evaluation:glutton')
           && (contains(toJson(github.event.pull_request.labels.*.name), '"evaluation:crf"')
               || contains(toJson(github.event.pull_request.labels.*.name), '"evaluation:delft"')))
     runs-on: ubuntu-latest
     outputs:
       profile: ${{ steps.resolve.outputs.profile }}
-      flavor: ${{ steps.resolve.outputs.flavor }}
       consolidation: ${{ steps.resolve.outputs.consolidation }}
-      suffix: ${{ steps.resolve.outputs.suffix }}
+      # one evaluation per flavor, {flavor, suffix}: the suffix names the artifacts of the
+      # evaluation, and so the baseline it is compared with
+      evaluations: ${{ steps.resolve.outputs.evaluations }}
+      # the score jobs, {dataset, flavor, suffix}
       datasets: ${{ steps.resolve.outputs.datasets }}
+      # the predict jobs, {dataset, shard, shards, flavor, suffix}. The artifacts are named
+      # <kind>-<suffix>--<dataset>...: a flavor suffix can be the prefix of another one
+      # (article_light, article_light-ref), the double dash keeps their globs apart
       shards: ${{ steps.resolve.outputs.shards }}
       evaluate: ${{ steps.changes.outputs.evaluate != 'false' }}
     steps:
@@ -192,8 +202,8 @@ jobs:
             if [[ "${LABEL}" == evaluation:* && "${LABEL}" != evaluation:glutton ]]; then
               EVALUATION_LABEL="${LABEL}"
             else
-              # a push, a corpus:* or the evaluation:glutton label: the profile is the one of
-              # the profile label of the pull request
+              # a push, a corpus:*, a flavor:* or the evaluation:glutton label: the profile is
+              # the one of the profile label of the pull request
               mapfile -t EVALUATION_LABELS < <(jq -r '.[] | select(startswith("evaluation:") and . != "evaluation:glutton")' <<< "${PR_LABELS}")
               if [ "${#EVALUATION_LABELS[@]}" -ne 1 ]; then
                 echo "::error::The evaluation runs with the profile label of the pull request (evaluation:crf or evaluation:delft), but it has ${#EVALUATION_LABELS[@]}: ${EVALUATION_LABELS[*]}. Keep only one."
@@ -213,20 +223,32 @@ jobs:
               SELECTED+=("$(corpus_dataset "${corpus}")")
             done
 
+            if [[ "${LABEL}" == flavor:* ]]; then
+              FLAVORS=("${LABEL#flavor:}")
+            else
+              # the flavors are the flavor:* labels of the pull request, the full models if none
+              mapfile -t FLAVORS < <(jq -r '.[] | select(startswith("flavor:")) | ltrimstr("flavor:")' <<< "${PR_LABELS}")
+            fi
             PROFILE="${EVALUATION_LABEL#evaluation:}"
             CONSOLIDATION=none
             if [ "${LABEL}" = "evaluation:glutton" ] || jq -e 'index("evaluation:glutton")' <<< "${PR_LABELS}" > /dev/null; then
               CONSOLIDATION=glutton
             fi
-            FLAVOR=none
             SHARDS=""
           else
             PROFILE="${INPUT_PROFILE}"
             CONSOLIDATION="${INPUT_CONSOLIDATION}"
             SELECTED=("${INPUT_DATASETS}")
-            FLAVOR="${INPUT_FLAVOR}"
+            FLAVORS=("${INPUT_FLAVOR}")
             SHARDS="${INPUT_SHARDS}"
           fi
+          [ "${#FLAVORS[@]}" -eq 0 ] && FLAVORS=(none)
+          for flavor in "${FLAVORS[@]}"; do
+            case "${flavor}" in
+              none|article/light|article/light-ref) ;;
+              *) echo "::error::Unknown flavor label 'flavor:${flavor}': use flavor:article/light or flavor:article/light-ref"; exit 1 ;;
+            esac
+          done
           SELECTED_JSON=$(printf '%s\n' "${SELECTED[@]}" | jq -Rsc 'split("\n") | map(select(. != ""))')
 
           case "${PROFILE}" in
@@ -260,46 +282,54 @@ jobs:
             DEFAULT_SHARDS=$(jq -c 'del(.COMET_arxiv_1091)' <<< "${DEFAULT_SHARDS}")
           fi
 
-          if [ "${FLAVOR}" = "none" ]; then
-            FLAVOR=""
-            SUFFIX="${PROFILE}"
-          else
-            SUFFIX="${PROFILE}-${FLAVOR//\//_}"
-          fi
-          # runs with biblio-glutton get their own artifacts, and so their own baseline
-          [ "${CONSOLIDATION}" = "glutton" ] && SUFFIX="${SUFFIX}-glutton"
+          # One evaluation per flavor (the flavor is empty for the full models), each with its
+          # own artifacts, and so its own baseline: the suffix names them.
+          EVALUATIONS_JSON=$(for flavor in "${FLAVORS[@]}"; do
+            if [ "${flavor}" = "none" ]; then
+              flavor=""
+              suffix="${PROFILE}"
+            else
+              suffix="${PROFILE}-${flavor//\//_}"
+            fi
+            # runs with biblio-glutton get their own artifacts, and so their own baseline
+            [ "${CONSOLIDATION}" = "glutton" ] && suffix="${suffix}-glutton"
+            jq -nc --arg flavor "${flavor}" --arg suffix "${suffix}" '{flavor: $flavor, suffix: $suffix}'
+          done | jq -sc 'unique')
 
-          DATASETS_JSON=$(jq -c --argjson selected "${SELECTED_JSON}" \
-            'keys_unsorted | map(select(. as $dataset | $selected | index("all") or index($dataset)))' <<< "${DEFAULT_SHARDS}")
-          SHARDS_JSON=$(jq -c --argjson selected "${SELECTED_JSON}" --arg shards "${SHARDS}" '
+          # the score jobs: every selected corpus for every evaluation
+          DATASETS_JSON=$(jq -c --argjson selected "${SELECTED_JSON}" --argjson evaluations "${EVALUATIONS_JSON}" '
+            keys_unsorted
+            | map(select(. as $dataset | $selected | index("all") or index($dataset)))
+            | [ .[] as $dataset | $evaluations[] | . + {dataset: $dataset} ]' <<< "${DEFAULT_SHARDS}")
+          # the predict jobs: every shard of every selected corpus for every evaluation
+          SHARDS_JSON=$(jq -c --argjson selected "${SELECTED_JSON}" --arg shards "${SHARDS}" --argjson evaluations "${EVALUATIONS_JSON}" '
             to_entries
             | map(select(.key as $dataset | $selected | index("all") or index($dataset)))
-            | map(.key as $dataset | (if $shards == "" then .value else ($shards | tonumber) end) as $count
-                  | range($count) | {dataset: $dataset, shard: ., shards: $count})' <<< "${DEFAULT_SHARDS}")
+            | [ .[] as $entry | (if $shards == "" then $entry.value else ($shards | tonumber) end) as $count
+                | range($count) as $shard | $evaluations[] | . + {dataset: $entry.key, shard: $shard, shards: $count} ]' <<< "${DEFAULT_SHARDS}")
 
           {
             echo "profile=${PROFILE}"
-            echo "flavor=${FLAVOR}"
             echo "consolidation=${CONSOLIDATION}"
-            echo "suffix=${SUFFIX}"
+            echo "evaluations=${EVALUATIONS_JSON}"
             echo "datasets=${DATASETS_JSON}"
             echo "shards=${SHARDS_JSON}"
           } >> "$GITHUB_OUTPUT"
-          echo "Evaluation profile: ${PROFILE}, flavor: '${FLAVOR}', consolidation: ${CONSOLIDATION}, datasets: ${DATASETS_JSON}"
+          echo "Evaluation profile: ${PROFILE}, consolidation: ${CONSOLIDATION}, evaluations: ${EVALUATIONS_JSON}, datasets: ${DATASETS_JSON}"
 
   predict:
     needs: [ setup ]
     if: needs.setup.outputs.evaluate == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 355
-    name: predict (${{ matrix.dataset }}, ${{ matrix.shard }})
+    name: predict (${{ matrix.dataset }}, ${{ matrix.shard }}${{ matrix.flavor != '' && format(', {0}', matrix.flavor) || '' }})
     strategy:
       fail-fast: false
       matrix:
         include: ${{ fromJson(needs.setup.outputs.shards) }}
     env:
       PROFILE: ${{ needs.setup.outputs.profile }}
-      FLAVOR: ${{ needs.setup.outputs.flavor }}
+      FLAVOR: ${{ matrix.flavor }}
       CONSOLIDATION: ${{ needs.setup.outputs.consolidation }}
       DATASET: ${{ matrix.dataset }}
       SHARD: ${{ matrix.shard }}
@@ -430,20 +460,20 @@ jobs:
       - name: Upload the TEI
         uses: actions/upload-artifact@v7
         with:
-          name: tei-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-${{ matrix.shard }}
+          name: tei-${{ matrix.suffix }}--${{ matrix.dataset }}-${{ matrix.shard }}
           path: out/tei-*.tar.gz
           retention-days: 7
       - name: Upload the statistics
         uses: actions/upload-artifact@v7
         with:
-          name: stats-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-${{ matrix.shard }}
+          name: stats-${{ matrix.suffix }}--${{ matrix.dataset }}-${{ matrix.shard }}
           path: out/stats-*.json
           retention-days: 7
       - name: Upload the log
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: log-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-${{ matrix.shard }}
+          name: log-${{ matrix.suffix }}--${{ matrix.dataset }}-${{ matrix.shard }}
           path: |
             check.log
             predict.log
@@ -455,13 +485,13 @@ jobs:
     # corpus would be compared with a baseline over all of it
     if: always() && needs.predict.result == 'success'
     runs-on: ubuntu-latest
-    name: score (${{ matrix.dataset }})
+    name: score (${{ matrix.dataset }}${{ matrix.flavor != '' && format(', {0}', matrix.flavor) || '' }})
     strategy:
       fail-fast: false
       matrix:
-        dataset: ${{ fromJson(needs.setup.outputs.datasets) }}
+        include: ${{ fromJson(needs.setup.outputs.datasets) }}
     env:
-      FLAVOR: ${{ needs.setup.outputs.flavor }}
+      FLAVOR: ${{ matrix.flavor }}
       DATASET: ${{ matrix.dataset }}
     steps:
       - uses: actions/checkout@v7
@@ -485,7 +515,7 @@ jobs:
       - name: Download the TEI and the gold data
         uses: actions/download-artifact@v8
         with:
-          pattern: tei-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-*
+          pattern: tei-${{ matrix.suffix }}--${{ matrix.dataset }}-*
           merge-multiple: true
           path: tei
       - name: Score
@@ -521,14 +551,14 @@ jobs:
       - name: Upload the report
         uses: actions/upload-artifact@v7
         with:
-          name: report-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}
+          name: report-${{ matrix.suffix }}--${{ matrix.dataset }}
           path: reports/report-*.md
           retention-days: 7
       - name: Upload the log
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: log-${{ needs.setup.outputs.suffix }}-${{ matrix.dataset }}-score
+          name: log-${{ matrix.suffix }}--${{ matrix.dataset }}-score
           # arxiv-eval-*.json: the matches of each article of the arXiv corpus
           path: |
             score-*.log
@@ -539,29 +569,37 @@ jobs:
     needs: [ setup, score ]
     if: always() && needs.score.result == 'success'
     runs-on: ubuntu-latest
+    # one report, and one pull request comment, per flavor evaluated
+    name: report${{ matrix.flavor != '' && format(' ({0})', matrix.flavor) || '' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.setup.outputs.evaluations) }}
     env:
       PROFILE: ${{ needs.setup.outputs.profile }}
-      FLAVOR: ${{ needs.setup.outputs.flavor }}
+      FLAVOR: ${{ matrix.flavor }}
       CONSOLIDATION: ${{ needs.setup.outputs.consolidation }}
-      ARTIFACT: evaluation-reports-${{ needs.setup.outputs.suffix }}
+      ARTIFACT: evaluation-reports-${{ matrix.suffix }}
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v7
       - name: Download the reports
         uses: actions/download-artifact@v8
         with:
-          pattern: report-${{ needs.setup.outputs.suffix }}-*
+          pattern: report-${{ matrix.suffix }}--*
           merge-multiple: true
           path: reports
       - name: Download the statistics
         uses: actions/download-artifact@v8
         with:
-          pattern: stats-${{ needs.setup.outputs.suffix }}-*
+          pattern: stats-${{ matrix.suffix }}--*
           merge-multiple: true
           path: stats
 
       # The baseline is the latest successful run of this workflow on the default branch
-      # with the same profile and flavor, as long as its artifact has not expired.
+      # with the same profile, flavor and consolidation, as long as its artifact has not
+      # expired. The artifact name carries the three, and the overview inside it records
+      # them: it is checked too, so that a baseline of another evaluation is never used.
       # The conclusion is filtered here rather than with --status: GitHub's status filter can
       # leave out runs completed hours earlier, and the baseline then falls back to an older run.
       - name: Download the baseline reports
@@ -569,17 +607,23 @@ jobs:
         env:
           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
+          EXPECTED_PROFILE="- **Profile:** \`${PROFILE}\`${FLAVOR:+, flavor \`${FLAVOR}\`}"
+          EXPECTED_CONSOLIDATION="- **Consolidation:** \`${CONSOLIDATION}\`"
           gh run list --repo "${GITHUB_REPOSITORY}" --workflow evaluation.yml --branch "${DEFAULT_BRANCH}" \
             --limit 30 --json databaseId,headSha,conclusion \
             --jq '.[] | select(.conclusion == "success") | "\(.databaseId) \(.headSha)"' > runs.txt || true
           while read -r run sha; do
             [ "${run}" = "${GITHUB_RUN_ID}" ] && continue
-            if gh run download "${run}" --repo "${GITHUB_REPOSITORY}" --name "${ARTIFACT}" --dir baseline 2>/dev/null; then
+            gh run download "${run}" --repo "${GITHUB_REPOSITORY}" --name "${ARTIFACT}" --dir baseline 2>/dev/null || continue
+            if grep -qFx -e "${EXPECTED_PROFILE}" baseline/overview.md 2>/dev/null \
+                && grep -qFx -e "${EXPECTED_CONSOLIDATION}" baseline/overview.md; then
               echo "run=${run}" >> "$GITHUB_OUTPUT"
               echo "sha=${sha}" >> "$GITHUB_OUTPUT"
               echo "Baseline: run ${run} (${sha})"
               break
             fi
+            echo "::warning::Run ${run} (${sha}) has the artifact ${ARTIFACT}, but its overview is not of the profile '${PROFILE}', the flavor '${FLAVOR}' and the consolidation '${CONSOLIDATION}': not used as the baseline"
+            rm -rf baseline
           done < runs.txt
           [ -d baseline ] || echo "No baseline found: no successful run of this workflow on ${DEFAULT_BRANCH} with the profile '${PROFILE}', the flavor '${FLAVOR}' and the consolidation '${CONSOLIDATION}'"
 

@@ -7,7 +7,11 @@
 		<front>
 <lb/>
 	<docTitle>
-	<titlePart>Timing Analysis of Concurrent Systems 1<lb/> An Algorithm for Determining Time Separation of Events<lb/></titlePart>
+	<titlePart>Timing Analysis of Concurrent Systems 1<lb/></titlePart>
+	</docTitle>
+
+	<docTitle>
+	<titlePart>An Algorithm for Determining Time Separation of Events<lb/></titlePart>
 	</docTitle>
 
 	<byline>
@@ -20,8 +24,7 @@
 
 	<address>Seattle, WA 98195 USA</address>
 
-	Abstract<lb/>
-	<div type="abstract">A fundamental problem in the synthesis and optimization of concurrent systems is the deter-<lb/>mination of the separation time between system events. We present a theoretical framework<lb/> for solving this problem for arbitrary process graphs without conditional behavior and de-<lb/>velop an e cient and exact algorithm based on this theoretical foundation. Examples are<lb/> used to demonstrate the operation and generality of the algorithm.<lb/></div>
+	
 
 	<note type="submission">1 Slightly revised from a version submitted to DAC &apos;93.</note>
 		</front>

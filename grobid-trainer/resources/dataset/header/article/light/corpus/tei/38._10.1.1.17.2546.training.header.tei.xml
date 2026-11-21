@@ -14,8 +14,7 @@
 	<docAuthor>Sanjay Ghemawat<lb/> Robert Gruber<lb/> James O&apos;Toole<lb/> Liuba Shrira</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">We propose several new techniques for resource manage-<lb/>ment in a replicated object server. By coordinating cache<lb/> and disk usage among the replicas, these techniques in-<lb/>crease throughput and reduce fetch latency. Cache splitting<lb/> speeds up fetches by avoiding redundant cache entries, ef-<lb/>fectively increasing the cache size. Coordinated writing<lb/> coordinates disk writes to ensure that one replica is always<lb/> available to service fetches. We investigate the performance<lb/> of a replicated server using these techniques, and we present<lb/> simulation results showing that these techniques provide<lb/> substantial performance improvements across a variety of<lb/> workloads.<lb/></div>
+	
 
 	Authors&apos; addresses:
 	<email>sanjay@lcs.mit.edu</email>

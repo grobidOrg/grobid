@@ -40,8 +40,7 @@
 	<email>{Daniel.W.Peterson, Martha.Palmer}@colorado.edu</email>,
 	<email>popescu@fbk.eu</email>
 
-	Abstract<lb/>
-	<div type="abstract">We present an unsupervised method for in-<lb/>ducing semantic frames from verb uses in<lb/> giga-word corpora. Our semantic frames<lb/> are verb-specific example-based frames<lb/> that are distinguished according to their<lb/> senses. We use the Chinese Restau-<lb/>rant Process to automatically induce these<lb/> frames from a massive amount of verb in-<lb/>stances. In our experiments, we acquire<lb/> broad-coverage semantic frames from two<lb/> giga-word corpora, the larger comprising<lb/> 20 billion words. Our experimental results<lb/> indicate the effectiveness of our approach.</div>
+	
 
 		</front>
 	</text>

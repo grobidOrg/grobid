@@ -131,9 +131,9 @@
 
 	<address>Montpellier, France<lb/></address>
 
-	† Deceased.<lb/> ¤ Current address:
+	† Deceased.<lb/>
 	<byline>
-	<affiliation>Innovative Vector Control Consortium,</affiliation>
+	<affiliation>¤ Current address: Innovative Vector Control Consortium,</affiliation>
 	</byline>
 
 	<address>Pembroke Place, Liverpool, United Kingdom<lb/></address>
@@ -141,8 +141,7 @@
 	*
 	<email>gerard.killeen@ucc.ie</email>
 
-	Abstract
-	<div type="abstract">Background<lb/> A simple treated fabric device for passively emanating the volatile pyrethroid transfluthrin<lb/> was recently developed in Tanzania that protected against nocturnal Anopheles and Culex<lb/> mosquitoes for several months. Here these transfluthrin emanators were assessed in Port-<lb/>au-Prince, Haiti against outdoor-biting Aedes. Methods<lb/> Transfluthrin emanators were distributed to participating households in poor-to-middle class<lb/> urban neighbourhoods and evaluated once every two months in terms of their effects on<lb/> human landing rates of wild Aedes populations. A series of three such entomological<lb/> assessment experiments were conducted, to examine the influence of changing weather<lb/> conditions, various transfluthrin formulations and emanator placement on protective efficacy<lb/> measurements. Laboratory experiments assessed resistance of local Aedes aegypti to<lb/> transfluthrin and deltamethrin, and the irritancy and repellency of the transfluthrin-treated<lb/> fabric used in the field.<lb/></div>
+	
 
 	<title level="j">PLOS ONE<lb/></title>
 	<reference>PLOS ONE | https://doi.org/10.1371/journal.pone.0298919 May 28, 2024<lb/></reference>
@@ -152,11 +151,7 @@
 	<note type="doctype">OPEN ACCESS<lb/></note>
 
 	Citation:
-	<reference>Supreme C, Damus O, Frederick J,<lb/> Lemoine J-F, Raccurt C, McBeath J, et al. (2024)<lb/></reference>
-
-	<div type="abstract">Entomological assessment of hessian fabric<lb/> transfluthrin vapour emanators as a means to<lb/> protect against outdoor-biting Aedes after<lb/> providing them to households for routine use in<lb/></div>
-
-	<reference>Port-au-Prince, Haiti. PLoS ONE 19(5): e0298919.<lb/></reference>
+	<reference>Supreme C, Damus O, Frederick J,<lb/> Lemoine J-F, Raccurt C, McBeath J, et al. (2024)<lb/> Entomological assessment of hessian fabric<lb/> transfluthrin vapour emanators as a means to<lb/> protect against outdoor-biting Aedes after<lb/> providing them to households for routine use in<lb/> Port-au-Prince, Haiti. PLoS ONE 19(5): e0298919.<lb/></reference>
 
 	<idno>https://doi.org/10.1371/journal.pone.0298919<lb/></idno>
 
@@ -180,7 +175,7 @@
 	Data Availability Statement:
 	<note type="availability">All relevant data are<lb/> within the manuscript and its Supporting<lb/> Information files. The data and material availability<lb/> statement now reads as follows: The data for all<lb/> three rounds of field assessments of transfluthrin<lb/> emanator efficacy are available as S1 Data and the<lb/> R script used to process the data for all three<lb/> rounds of field assessments of transfluthrin<lb/> emanator efficacy and optimize the model</note> 
 		
-    <div type="abstract">Results<lb/> Across all three entomological field assessments, little evidence of protection against wild<lb/> Ae. aegypti was observed, regardless of weather conditions, transfluthrin formulation or<lb/> emanator placement: A generalized linear mixed model fitted to the pooled data from all<lb/> three assessment rounds (921 females caught over 5129 hours) estimated a relative land-<lb/>ing rate [95% Confidence interval] of 0.87 [0.73, 1.04] for users of treated versus untreated<lb/> emanators (P = 0.1241). Wild Ae. aegypti in this setting were clearly resistant to transfluthrin<lb/> when compared to a fully susceptible colony. Conclusions<lb/> Transfluthrin emanators had little if any apparent effect upon Aedes landing rates by wild<lb/> Ae. aegypti in urban Haiti, and similar results have been obtained by comparable studies in<lb/> Tanzania, Brazil and Peru. In stark contrast, however, parallel sociological assessments of<lb/> perspectives among these same end-users in urban Haitian communities indicate strong<lb/> satisfaction in terms of perceived protection against mosquitoes. It remains unclear why the<lb/> results obtained from these complementary entomological and sociological assessments in<lb/> Haiti differ so much, as do those from a similar set of studies in Brazil. It is encouraging, how-<lb/>ever, that similar contrasts between the entomological and epidemiological results of a<lb/> recent large-scale assessment of another transfluthrin emanator product in Peru, which indi-<lb/>cate they provide useful protection against Aedes-borne arboviral infections, despite appar-<lb/>ently providing only modest protection against Aedes mosquito bites.<lb/></div>
+    
 			
     <note type="availability">presented in table 1 is available as S2 Analytical<lb/> Script. Access to the transfluthrin formulations<lb/> used for this study may be requested from Envu<lb/> AG though the most relevant national contact<lb/> person at https://www.envu.com/.<lb/></note>
 

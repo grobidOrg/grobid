@@ -59,8 +59,7 @@
 
 	<address>Waterloo, Ontario, Canada N2L 3G1<lb/></address>
 
-	SUMMARY<lb/>
-	<div type="abstract">We consider panel count data which are frequently obtained in prospective studies involving recurrent<lb/> events that are only detected and recorded at periodic assessment times. The data take the form of<lb/> counts of the cumulative number of events detected at each inspection time, along with explanatory<lb/> covariates. Examples arise in diverse areas such as epidemiological studies, medical follow-up stud-<lb/>ies, reliability studies, and tumorigenicity experiments. This article is concerned with regression anal-<lb/>ysis of multivariate panel count data which arise if more than one type of recurrent event is of interest<lb/> and individuals are only observed intermittently. We present a class of marginal mean models which<lb/> leave the dependence structures for related types of recurrent events completely unspecified. Estimating<lb/> equations are developed for regression parameters, and the resulting estimates are shown to be consis-<lb/>tent and asymptotically normal. Simulation studies show that the proposed estimation procedures work<lb/> well for practical situations. The methodology is applied to a motivating study of patients with pso-<lb/>riatic arthritis in which the events of interest are the onset of joint damage according to 2 different<lb/> criteria.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Counting processes; Estimating equations; Marginal mean model; Multivariate recurrent events; Observa-<lb/>tion processes.<lb/></keyword>
