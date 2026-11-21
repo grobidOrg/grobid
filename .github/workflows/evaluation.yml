@@ -340,7 +340,7 @@ jobs:
         run: sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/share/boost "$AGENT_TOOLSDIRECTORY"
       - uses: actions/checkout@v7
       - name: Set up JDK
-        uses: actions/setup-java@v6.2.0
+        uses: actions/setup-java@v6.3.0
         with:
           java-version: '21'
           distribution: 'temurin'
@@ -498,7 +498,7 @@ jobs:
       # jatsEval scores the JATS corpora, score_arxiv.py the arXiv corpus
       - name: Set up JDK
         if: matrix.dataset != 'COMET_arxiv_1091'
-        uses: actions/setup-java@v6.2.0
+        uses: actions/setup-java@v6.3.0
         with:
           java-version: '21'
           distribution: 'temurin'
