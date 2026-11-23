@@ -368,7 +368,7 @@ project("grobid-core") {
         // never invokes Ruby's openssl — so the BC code is never loaded and the CVE is not triggerable.
         // No released jruby ships a fixed BouncyCastle yet (latest bundles 1.83; the fix needs 1.84), so
         // we leave it as-is and wait for an upstream jruby release with BouncyCastle >= 1.84.
-        implementation "org.jruby:jruby-complete:9.4.12.1"
+        implementation "org.jruby:jruby-complete:9.4.15.0"
 
         shadedLib "org.apache.lucene:lucene-analyzers-common:4.10.4"
     }
