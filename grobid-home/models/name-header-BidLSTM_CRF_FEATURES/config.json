@@ -33,7 +33,6 @@
     "fold_number": 1,
     "batch_size": 20,
     "transformer_name": null,
-    "use_ELMo": false,
     "features_map_to_index": {
         "9": {
             "LINEEND": 1,
@@ -55,8 +54,7 @@
             "1": 38
         },
         "13": {
-            "0": 49,
-            "1": 50
+            "0": 49
         },
         "14": {
             "0": 61,
