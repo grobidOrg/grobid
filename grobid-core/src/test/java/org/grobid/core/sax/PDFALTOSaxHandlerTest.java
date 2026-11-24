@@ -195,7 +195,8 @@ public class PDFALTOSaxHandlerTest {
         // the en dash is normalised to '-', the spaces around it are kept, the line-end hyphen stays attached,
         // and the superscript minus of the exponent stays attached to its digit
         assertThat(text, startsWith("Writing - original draft, ef-\nfect kg -1 "));
-        assertThat(LayoutTokensUtil.normalizeDehyphenizeText(target.getTokenization()),
-            is("Writing - original draft, effect kg -1"));
+        assertThat(
+                LayoutTokensUtil.normalizeDehyphenizeText(target.getTokenization()),
+                is("Writing - original draft, effect kg -1"));
     }
 }

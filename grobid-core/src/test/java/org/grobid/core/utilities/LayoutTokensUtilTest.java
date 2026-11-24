@@ -226,7 +226,8 @@ public class LayoutTokensUtilTest {
     }
 
     @Test
-    public void testDoesRequireDehyphenization_dashWithoutSpaceAfterWithOffsetCoordinates_shouldReturnFalse() throws Exception {
+    public void testDoesRequireDehyphenization_dashWithoutSpaceAfterWithOffsetCoordinates_shouldReturnFalse()
+            throws Exception {
         List<LayoutToken> layoutTokens = spacedDashTokens("Writing -original draft");
 
         assertThat(layoutTokens.get(2).getText(), is("-"));
@@ -235,7 +236,8 @@ public class LayoutTokensUtilTest {
     }
 
     @Test
-    public void testDoesRequireDehyphenization_dashFollowedByNextLineWithoutNewlineToken_shouldReturnTrue() throws Exception {
+    public void testDoesRequireDehyphenization_dashFollowedByNextLineWithoutNewlineToken_shouldReturnTrue()
+            throws Exception {
         List<LayoutToken> layoutTokens = spacedDashTokens("supercondu- ctors");
         // the next word is one line below (no newline token between them)
         layoutTokens.get(layoutTokens.size() - 1).setY(352.6647 + 10.43);
