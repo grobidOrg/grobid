@@ -363,11 +363,8 @@ project("grobid-core") {
         implementation 'black.ninia:jep:4.3.2'
         implementation 'org.apache.opennlp:opennlp-tools:2.5.11'
 
-        // NOTE: jruby-complete bundles a vulnerable BouncyCastle (CVE-2026-5598) under its gem stdlib,
-        // but GROBID only uses jruby for the optional, non-default Pragmatic sentence segmenter, which
-        // never invokes Ruby's openssl — so the BC code is never loaded and the CVE is not triggerable.
-        // No released jruby ships a fixed BouncyCastle yet (latest bundles 1.83; the fix needs 1.84), so
-        // we leave it as-is and wait for an upstream jruby release with BouncyCastle >= 1.84.
+        // jruby is only used by the optional, non-default Pragmatic sentence segmenter. Keep >= 9.4.15.0:
+        // it bundles BouncyCastle 1.84 in its gem stdlib, which fixes CVE-2026-5598.
         implementation "org.jruby:jruby-complete:9.4.15.0"
 
         shadedLib "org.apache.lucene:lucene-analyzers-common:4.10.4"
