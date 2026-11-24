@@ -35,7 +35,9 @@ import org.slf4j.LoggerFactory;
 import org.grobid.core.data.BibDataSet;
 import org.grobid.core.data.BiblioItem;
 import org.grobid.core.engines.counters.ReferenceMarkerMatcherCounters;
+import org.grobid.core.engines.label.TaggingLabels;
 import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.tokenization.TaggingTokenCluster;
 import org.grobid.core.utilities.LayoutTokensUtil;
 import org.grobid.core.utilities.Pair;
 import org.grobid.core.utilities.counters.CntManager;
@@ -60,6 +62,9 @@ public class ReferenceMarkerMatcher {
     public static final Pattern AND_WORD_PATTERN = Pattern.compile("(and)|&");
     public static final Pattern FIGURE_TABLES_REF_SEPARATORS = Pattern.compile("(and)|(&)|(,)");
     public static final Pattern DASH_PATTERN = Pattern.compile("[–−-]");
+    // a range with a bracket around each end, as in IEEE style: "[1]–[3]"
+    private static final Pattern BRACKETED_RANGE_PATTERN = Pattern
+            .compile("\\[\\s*(\\d{1,9})\\s*\\]\\s*[–−-]\\s*\\[\\s*(\\d{1,9})\\s*\\]");
 
     public class MatchResult {
         private String text;
@@ -182,7 +187,56 @@ public class ReferenceMarkerMatcher {
     // number matching for number alone or in combination with author for cases "Naze et al. [5]"
     public boolean isNumberedCitationReference(String t) {
         return NUMBERED_CITATION_PATTERN.matcher(t.trim()).matches() ||
-                (NUMBERED_CITATION_PATTERN.matcher(t.trim()).find() && AUTHOR_NAME_PATTERN.matcher(t.trim()).find());
+                (NUMBERED_CITATION_PATTERN.matcher(t.trim()).find() && AUTHOR_NAME_PATTERN.matcher(t.trim()).find()) ||
+                isExpandableBracketedRange(t);
+    }
+
+    // "[1]–[3]" when getNumberedLabels can expand it; anything else keeps the existing handling
+    private static boolean isExpandableBracketedRange(String text) {
+        Matcher m = BRACKETED_RANGE_PATTERN.matcher(text.trim());
+        if (!m.matches()) {
+            return false;
+        }
+        int first = Integer.parseInt(m.group(1));
+        int last = Integer.parseInt(m.group(2));
+        return first < last && last - first < MAX_RANGE;
+    }
+
+    /**
+     * Joins a citation marker, a paragraph cluster holding only a dash, and a following citation marker into one
+     * citation marker when together they form an expandable range such as "[1]–[3]", so that
+     * {@link #getNumberedLabels} expands it as it does for "[1–3]". Dashes are normalized before tokenization, so
+     * a dash used as punctuation between two markers ("[1] — [3] shows") is also read as a range.
+     */
+    public static List<TaggingTokenCluster> mergeBracketedRanges(List<TaggingTokenCluster> clusters) {
+        List<TaggingTokenCluster> result = new ArrayList<>(clusters.size());
+        for (int i = 0; i < clusters.size(); i++) {
+            if (i + 2 < clusters.size()
+                    && isBracketedRange(clusters.get(i), clusters.get(i + 1), clusters.get(i + 2))) {
+                TaggingTokenCluster merged = new TaggingTokenCluster(TaggingLabels.CITATION_MARKER);
+                for (TaggingTokenCluster cluster : clusters.subList(i, i + 3)) {
+                    cluster.getLabeledTokensContainers().forEach(merged::addLabeledTokensContainer);
+                }
+                result.add(merged);
+                i += 2;
+            } else {
+                result.add(clusters.get(i));
+            }
+        }
+        return result;
+    }
+
+    private static boolean isBracketedRange(
+            TaggingTokenCluster left,
+            TaggingTokenCluster dash,
+            TaggingTokenCluster right) {
+        return TaggingLabels.CITATION_MARKER.equals(left.getTaggingLabel())
+                && TaggingLabels.PARAGRAPH.equals(dash.getTaggingLabel())
+                && TaggingLabels.CITATION_MARKER.equals(right.getTaggingLabel())
+                && isExpandableBracketedRange(
+                        LayoutTokensUtil.toText(left.concatTokens())
+                                + LayoutTokensUtil.toText(dash.concatTokens())
+                                + LayoutTokensUtil.toText(right.concatTokens()));
     }
 
     // string number matching

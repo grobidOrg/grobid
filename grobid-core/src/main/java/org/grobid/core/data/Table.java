@@ -50,6 +50,7 @@ import org.grobid.core.utilities.BoundingBoxCalculator;
 import org.grobid.core.utilities.KeyGen;
 import org.grobid.core.utilities.LayoutTokensUtil;
 import org.grobid.core.utilities.counters.CntManager;
+import org.grobid.core.utilities.matching.ReferenceMarkerMatcher;
 
 /**
  * Class for representing a table.
@@ -136,7 +137,7 @@ public class Table extends Figure {
             if (StringUtils.isNotBlank(labeledCaption)) {
                 TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.FULLTEXT, labeledCaption,
                         captionLayoutTokens);
-                List<TaggingTokenCluster> clusters = clusteror.cluster();
+                List<TaggingTokenCluster> clusters = ReferenceMarkerMatcher.mergeBracketedRanges(clusteror.cluster());
 
                 MarkerType citationMarkerType = null;
                 if (CollectionUtils.isNotEmpty(markerTypes)) {
@@ -216,7 +217,7 @@ public class Table extends Figure {
                 Element p = teiElement("p");
                 TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.FULLTEXT, labeledNote,
                         noteLayoutTokens);
-                List<TaggingTokenCluster> clusters = clusteror.cluster();
+                List<TaggingTokenCluster> clusters = ReferenceMarkerMatcher.mergeBracketedRanges(clusteror.cluster());
                 for (TaggingTokenCluster cluster : clusters) {
                     if (cluster == null) {
                         continue;

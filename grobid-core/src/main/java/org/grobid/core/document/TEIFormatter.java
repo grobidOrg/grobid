@@ -1475,7 +1475,7 @@ public class TEIFormatter {
             if ((labeledNote != null) && (labeledNote.length() > 0)) {
                 TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.FULLTEXT, labeledNote,
                         noteLayoutTokens);
-                List<TaggingTokenCluster> clusters = clusteror.cluster();
+                List<TaggingTokenCluster> clusters = ReferenceMarkerMatcher.mergeBracketedRanges(clusteror.cluster());
 
                 for (TaggingTokenCluster cluster : clusters) {
                     if (cluster == null) {
@@ -1634,7 +1634,7 @@ public class TEIFormatter {
         TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.FULLTEXT, result, tokenizations);
 
         String tokenLabel = null;
-        List<TaggingTokenCluster> clusters = clusteror.cluster();
+        List<TaggingTokenCluster> clusters = ReferenceMarkerMatcher.mergeBracketedRanges(clusteror.cluster());
 
         List<Element> divResults = new ArrayList<>();
 
