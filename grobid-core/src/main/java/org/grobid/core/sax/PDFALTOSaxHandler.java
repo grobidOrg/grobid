@@ -599,6 +599,21 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                 }
             }
             block.setEndToken(tokenizations.size());
+        } else if (qName.equals("SP")) {
+            // No space is added after a String ending with a dash, so that a line-end hyphen stays attached
+            // to its word. An explicit <SP> after the dash means the dash is not a line-end hyphen
+            // (e.g. "Writing – original draft", "qe − qt", "low- and high-"): restore the space.
+            // Superscript and subscript dashes are left alone: pdfalto puts an <SP> between the minus and
+            // the digit of exponents such as "kg⁻¹", which must stay "kg -1".
+            if (block != null && tokenizations.size() > 0) {
+                LayoutToken lastToken = tokenizations.get(tokenizations.size() - 1);
+                if (lastToken.t().endsWith("-") && !lastToken.isSuperscript() && !lastToken.isSubscript()) {
+                    LayoutToken localTok = new LayoutToken(" ");
+                    localTok.setPage(currentPage);
+                    addToken(localTok);
+                    block.setEndToken(tokenizations.size());
+                }
+            }
         } else if (qName.equals("TextStyle")) {
             int length = atts.getLength();
 

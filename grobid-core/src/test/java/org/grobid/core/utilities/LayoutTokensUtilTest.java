@@ -198,4 +198,50 @@ public class LayoutTokensUtilTest {
         System.out.println(result);
     }
 
+    /**
+     * Elsevier CRediT statements: the en dash is set in another font and its VPOS is slightly lower than the
+     * words' one (values from 10.1016/j.psj.2024.104119). It must not be taken for a line-end hyphen.
+     */
+    private static List<LayoutToken> spacedDashTokens(String input) {
+        List<LayoutToken> layoutTokens = GrobidAnalyzer.getInstance().tokenizeWithLayoutToken(input);
+        for (LayoutToken token : layoutTokens) {
+            if (token.getText().equals("-")) {
+                token.setY(352.7365);
+                token.setHeight(7.2687);
+            } else {
+                token.setY(352.6647);
+                token.setHeight(8.8468);
+            }
+        }
+        return layoutTokens;
+    }
+
+    @Test
+    public void testDoesRequireDehyphenization_spacedDashWithOffsetCoordinates_shouldReturnFalse() throws Exception {
+        List<LayoutToken> layoutTokens = spacedDashTokens("Writing - original draft");
+
+        assertThat(layoutTokens.get(2).getText(), is("-"));
+        assertThat(LayoutTokensUtil.doesRequireDehypenisation(layoutTokens, 2), is(false));
+        assertThat(LayoutTokensUtil.normalizeDehyphenizeText(layoutTokens), is("Writing - original draft"));
+    }
+
+    @Test
+    public void testDoesRequireDehyphenization_dashWithoutSpaceAfterWithOffsetCoordinates_shouldReturnFalse() throws Exception {
+        List<LayoutToken> layoutTokens = spacedDashTokens("Writing -original draft");
+
+        assertThat(layoutTokens.get(2).getText(), is("-"));
+        assertThat(LayoutTokensUtil.doesRequireDehypenisation(layoutTokens, 2), is(false));
+        assertThat(LayoutTokensUtil.normalizeDehyphenizeText(layoutTokens), is("Writing -original draft"));
+    }
+
+    @Test
+    public void testDoesRequireDehyphenization_dashFollowedByNextLineWithoutNewlineToken_shouldReturnTrue() throws Exception {
+        List<LayoutToken> layoutTokens = spacedDashTokens("supercondu- ctors");
+        // the next word is one line below (no newline token between them)
+        layoutTokens.get(layoutTokens.size() - 1).setY(352.6647 + 10.43);
+
+        assertThat(layoutTokens.get(1).getText(), is("-"));
+        assertThat(LayoutTokensUtil.doesRequireDehypenisation(layoutTokens, 1), is(true));
+        assertThat(LayoutTokensUtil.normalizeDehyphenizeText(layoutTokens), is("superconductors"));
+    }
 }
