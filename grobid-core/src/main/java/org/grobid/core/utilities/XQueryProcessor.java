@@ -28,8 +28,8 @@ import javax.xml.transform.sax.SAXSource;
 import javax.xml.transform.stream.StreamResult;
 
 import net.sf.saxon.Configuration;
-import net.sf.saxon.om.DocumentInfo;
 import net.sf.saxon.om.SequenceIterator;
+import net.sf.saxon.om.TreeInfo;
 import net.sf.saxon.query.DynamicQueryContext;
 import net.sf.saxon.query.StaticQueryContext;
 import net.sf.saxon.query.XQueryExpression;
@@ -63,8 +63,8 @@ public class XQueryProcessor {
         InputSource XMLSource = new InputSource(is);
 
         SAXSource SAXs = new SAXSource(XMLSource);
-        DocumentInfo DI = sqc.buildDocument(SAXs);
-        dqc.setContextItem(DI);
+        TreeInfo tree = c.buildDocumentTree(SAXs);
+        dqc.setContextItem(tree.getRootNode());
     }
 
     public SequenceIterator getSequenceIterator(String query) throws XPathException {
