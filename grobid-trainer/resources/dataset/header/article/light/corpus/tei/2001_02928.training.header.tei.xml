@@ -30,7 +30,7 @@
 	<email>dmitry.blau@cern.ch<lb/></email>
 
 	A<lb/> : 
-	<div type="abstract">ALICE (A Large Ion Collider Experiment) at the LHC is designed for studies of nuclear<lb/> matter at extreme temperatures and energy densities, so called Quark-Gluon Plasma (QGP). Two<lb/> detectors for measurements of electromagnetic signals, high-granularity photon spectrometer PHOS<lb/> and large acceptance electromagnetic calorimeter EMCal/DCal, are incorporated into the ALICE<lb/> apparatus. In order to enhance the data sample of the high-energy part of the spectra, a dedicated<lb/> triggers on high energetic photons or jets are used. High precision measurements of neutral mesons<lb/> require fine energy and timing calibrations. Photon signal purity is improved using dedicated<lb/> photon PID criteria based on cluster shape and anti-track matching with the ALICE central tracking<lb/> system, as well as a special detector located in front of PHOS called CPV.<lb/> PHOS and EMCal participated in LHC Run 1 (2009-2013) and Run 2 (2015-2018) during data<lb/> taking periods of pp, p-Pb and Pb-Pb collisions. We give an overview of their performance in Runs<lb/> 1 and 2 in low and high multiplicity environments as well as the upgrade plans for future LHC runs.<lb/></div>
+	
 
 	K<lb/> : 
 	<keyword>Performance of High Energy Physics Detectors, Calorimeters, Heavy-ion detectors<lb/></keyword>

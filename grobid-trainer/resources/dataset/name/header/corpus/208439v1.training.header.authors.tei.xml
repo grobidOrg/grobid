@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author> <persName> <forename>Nathan</forename> <middlename>P</middlename>. <surname>Coussens</surname> <marker>‡</marker> , </persName> <persName> <forename>Stephen</forename> <middlename>C</middlename>. <surname>Kales</surname> <marker>‡</marker> , </persName> <persName> <forename>Mark</forename> <middlename>J</middlename>. <surname>Henderson</surname> <marker>‡</marker> , </persName> <persName> <forename>Olivia</forename> <middlename>W</middlename>. <surname>Lee</surname> <marker>‡</marker> , </persName> <persName> <forename>Kurumi</forename> <middlename>Y</middlename>. <surname>Horiuchi</surname> <marker>§</marker> , </persName> <persName> <forename>Yuren</forename> <surname>Wang</surname> <marker>§</marker> , </persName> <persName> <forename>Qing</forename> <surname>Chen</surname> <marker>§</marker> , </persName> <persName> <forename>Ekaterina</forename> <surname>Kuznetsova</surname> <marker>§</marker> , </persName> <persName> <forename>Jianghong</forename> <surname>Wu</surname> <marker>§</marker> , </persName> <persName> <forename>Dorian</forename> <middlename>M</middlename>. <surname>Cheff</surname> <marker>‡</marker> , </persName> <persName> <forename>Ken</forename> <middlename>Chih-Chien</middlename> <surname>Cheng</surname> <marker>‡</marker> , </persName> <persName> <forename>Paul</forename> <surname>Shinn</surname> <marker>‡</marker> , </persName> <persName> <forename>Kyle</forename> <middlename>R</middlename>. <surname>Brimacombe</surname> <marker>‡</marker> , </persName> <persName> <forename>Min</forename> <surname>Shen</surname> <marker>‡</marker> , </persName> <persName> <forename>Anton</forename> <surname>Simeonov</surname> <marker>‡</marker> , </persName> <persName> <forename>Haiching</forename> <surname>Ma</surname> <marker>§</marker> , </persName> <persName> <forename>Ajit</forename> <surname>Jadhav</surname> <marker>‡</marker> , and </persName> <persName> <forename>Matthew</forename> <middlename>D</middlename>. <surname>Hall</surname> <marker>‡,1</marker> </persName> </author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Eliza</forename>
+								 <middlename>J</middlename>.
+								<middlename>R</middlename>.
+								 <surname>Peterson</surname>
+								 <marker>1</marker>
+							</persName>
+							<persName>
+								 <forename>Rebeca</forename>
+								 <surname>Bailo</surname>
+								 <marker>2</marker>
+							</persName>
+							<persName>
+								 <forename>Alissa</forename>
+								 <middlename>C</middlename>.
+								 <surname>Rothchild</surname>
+							</persName>
+							<persName>
+								 <forename>Mario</forename>
+								 <surname>Arrieta</surname>
+							</persName>
+							<persName>
+								 <forename>Amardeep</forename>
+								 <surname>Kaur</surname>
+								 <marker>1</marker>
+							</persName>
+							<persName>
+								 <forename>Min</forename>
+								 <surname>Pan</surname>
+							</persName>
+							<persName>
+								 <forename>Apoorva</forename>
+								 <surname>Bhatt</surname>
+							</persName>
+							<persName>
+								 <forename>Nitin</forename>
+								 <middlename>S</middlename>.
+								 <surname>Baliga</surname>
+								 <marker>1,4,5</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

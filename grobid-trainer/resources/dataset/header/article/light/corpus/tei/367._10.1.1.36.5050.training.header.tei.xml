@@ -23,8 +23,7 @@
 	email:
 	<email>aggarwaljk@mail.utexas.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">Object recognition, which involves the classi cation of objects into one of many a pri-<lb/>ori known object types, and determining object characteristics such as pose, is a di cult<lb/> problem. A wide range of approaches have been proposed and applied to this problem with<lb/> limited success. This paper presents a brief comparative study of methods from three dif-<lb/>ferent paradigms for object recognition: Bayesian, Neural Network and Expert Systems.<lb/></div>
+	
 
 	<note type="funding">This work was supported by the Army Research O ce under Contracts DAAH 049510494 and DAAH<lb/> 0494G0417.</note>
 

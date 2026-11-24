@@ -6,7 +6,7 @@
 	<text xml:lang="en">
 		<front>
 <lb/>
-	<note type="doctype">Scientific RepoRts</note>
+	<title level="j">Scientific RepoRts</title>
 
 	| 6:33321 |
 
@@ -21,7 +21,7 @@
 	<docAuthor>Tomokatsu Onaga &amp; Shigeru Shinomoto<lb/></docAuthor>
 	</byline>
 
-	<div type="abstract">There is a commonality among contagious diseases, tweets, and neuronal firings that past events<lb/> facilitate the future occurrence of events. The spread of events has been extensively studied such<lb/> that the systems exhibit catastrophic chain reactions if the interaction represented by the ratio of<lb/> reproduction exceeds unity; however, their subthreshold states are not fully understood. Here, we<lb/> report that these systems are possessed by nonstationary cascades of event-occurrences already in the<lb/> subthreshold regime. Event cascades can be harmful in some contexts, when the peak-demand causes<lb/> vaccine shortages, heavy traffic on communication lines, but may be beneficial in other contexts, such<lb/> that spontaneous activity in neural networks may be used to generate motion or store memory. Thus<lb/> it is important to comprehend the mechanism by which such cascades appear, and consider controlling<lb/> a system to tame or facilitate fluctuations in the event-occurrences. The critical interaction for the<lb/> emergence of cascades depends greatly on the network structure in which individuals are connected.<lb/> We demonstrate that we can predict whether cascades may emerge, given information about the<lb/> interactions between individuals. Furthermore, we develop a method of reallocating connections<lb/> among individuals so that event cascades may be either impeded or impelled in a network.<lb/></div>
+	
 
 	<byline>
 	<affiliation>Department of Physics, Kyoto University,</affiliation>
@@ -40,12 +40,11 @@
 
 	<note type="doctype">OPEN<lb/></note>
 
+    <!-- Something to check here -->
 	How to cite this article:
-	<reference>Onaga, T. and Shinomoto, S. Emergence of event cascades in inhomogeneous<lb/> networks. Sci. Rep. 6, 33321;</reference>
+	<reference>Onaga, T. and Shinomoto, S. Emergence of event cascades in inhomogeneous<lb/> networks. Sci. Rep. 6, 33321; doi: 10.1038/srep33321 (2016).<lb/></reference>
 
-	<idno>doi: 10.1038/srep33321</idno>
-
-	<note type="copyright">(2016).<lb/> This work is licensed under a Creative Commons Attribution 4.0 International License. The images<lb/> or other third party material in this article are included in the article&apos;s Creative Commons license,<lb/> unless indicated otherwise in the credit line; if the material is not included under the Creative Commons license,<lb/> users will need to obtain permission from the license holder to reproduce the material. To view a copy of this<lb/> license, visit http://creativecommons.org/licenses/by/4.0/<lb/> © The Author(s) 2016</note>
+	<note type="copyright">This work is licensed under a Creative Commons Attribution 4.0 International License. The images<lb/> or other third party material in this article are included in the article&apos;s Creative Commons license,<lb/> unless indicated otherwise in the credit line; if the material is not included under the Creative Commons license,<lb/> users will need to obtain permission from the license holder to reproduce the material. To view a copy of this<lb/> license, visit http://creativecommons.org/licenses/by/4.0/<lb/> © The Author(s) 2016</note>
 
 		</front>
 	</text>

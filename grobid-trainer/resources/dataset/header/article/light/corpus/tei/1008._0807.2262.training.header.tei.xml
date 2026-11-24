@@ -42,8 +42,7 @@
 
 	<note type="submission">Received Month ??, ????; accepted Month ??, ????</note>
 
-	ABSTRACT<lb/>
-	<div type="abstract">Context. Galactic synchrotron emission, rotation measure (RM) and the deflection of ultra-high-energy-cosmic-rays (UHECR) permit<lb/> detailed studies of the Galactic magnetic field (GMF). The synchrotron emission has also to be measured in order to be separated<lb/> from other astrophysicaly interesting signals like the CMB.<lb/> Aims. We present a publicly available code called hammurabi for generating mock polarized observations of Galactic synchrotron<lb/> emission for telescopes like LOFAR, SKA, Planck and WMAP, based on model inputs for the GMF, the cosmic-ray density distribu-<lb/>tion and the thermal electron density. We also present mock UHECR deflection measure (UDM) maps based on model inputs for the<lb/> GMF. In future, when UHECR sources are identified, this will allow us to define UDM as a GMF probe in a similar way as polarized<lb/> radio sources permit us to define rotation measures.<lb/> Methods. To demonstrate the code&apos;s abilities mock observations are compared to real data as a means to constrain the input parame-<lb/>ters of our simulations with a focus on large-scale magnetic field properties.<lb/> Results. The Galactic magnetic field models in the literature seem to fail to reproduce any additional observational data which was<lb/> not included in their design.<lb/> Conclusions. As expected, attempts at trying to model the synchrotron, UHECR deflection and RM input parameters, show that any<lb/> additional observational data set greatly increases the constraints on the models. The hammurabi code addresses this by allowing to<lb/> perform simulations of several different data sets simultaneously, providing the means for a more reliable constraint of the magnetized<lb/> inter-stellar-medium.<lb/></div>
+	
 
 	Key words.
 	<keyword>Radio continuum: ISM -ISM: mangetic fields -ISM: cosmic rays</keyword>

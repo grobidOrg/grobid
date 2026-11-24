@@ -14,7 +14,7 @@
 	<docAuthor>J Kanagalingam, D Hajioff, S Bennett<lb/></docAuthor>
 	</byline>
 
-	<div type="abstract">A 60 year old woman reports sudden dizziness when<lb/> she arises from bed. She feels nauseous and had been<lb/> vomiting. She recently had a severe cold. Her vomiting<lb/> has settled, but she is dizzy on turning her head to the<lb/> right. She is frightened to leave her house.<lb/> </div>
+	
 
 	<byline>
 	<affiliation>Hospital, </affiliation>
@@ -32,7 +32,11 @@
 	<docAuthor>D Hajioff<lb/></docAuthor>
 	</byline>
 
-	specialist registrar in otolaryngology<lb/> Prospect Medical<lb/> Practice, Norwich<lb/> 
+	specialist registrar in otolaryngology<lb/>
+	<byline>
+	<affiliation>Prospect Medical<lb/> Practice,</affiliation>
+	</byline>
+	<address>Norwich</address><lb/> 
 
 	<byline>
 	<docAuthor>S Bennett<lb/></docAuthor>

@@ -33,7 +33,7 @@
 	e-mail:
 	<email>m.horkel@gmx.at<lb/></email>
 
-	<div type="abstract">To understand the film growth during magnetron sputter deposition a detailed knowledge of<lb/> the flux of sputtered species from the target towards the substrate is vital. One important<lb/> parameter is the angular distribution of the impinging neutral target atoms on the substrate,<lb/> since it is responsible for e.g. self shadowing effects. The determination of the angular<lb/> distribution of the metal flux at an arbitrary point in the deposition chamber is achieved by a<lb/> pinhole-camera, where the information of the angular distribution is converted into a thickness<lb/> profile. This paper describes the construction of such a pinhole-camera which is capable of<lb/> differential pumping, the determination of the angular distribution for a wide variety of target<lb/> materials, and which can easily be inserted into a deposition chamber. The angular<lb/> distributions of different materials (Cu; W; Al; Ti; Mg) at different parameters (pressure,<lb/> lateral position, and vertical position) are experimentally determined and compared to<lb/> simulations obtained from a newly developed Monte Carlo code. It was also investigated, if<lb/></div>
+	
 
 	Confidential: not for distribution. 
 
@@ -45,7 +45,7 @@
 
 	<page>2<lb/> </page>
 
-	<div type="abstract">parameters derived from the angular distribution are related to the degree of thermalization of<lb/> the impinging particles.<lb/></div>
+	
 
 	<keyword>PACS: 81.15.Cd Deposition by sputtering<lb/></keyword>
 

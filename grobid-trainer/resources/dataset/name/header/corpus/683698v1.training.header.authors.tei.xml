@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Alice</forename><surname>Balard</surname>,</persName>
+<persName><forename>Víctor</forename><middlename>Hugo</middlename><surname>Jarquín-Díaz</surname>,</persName>
+<persName><forename>Jenny</forename><surname>Jost</surname>,</persName>
+<persName><forename>Iva</forename><surname>Martincová</surname>,</persName>
+<persName><forename>Ľudovít</forename><surname>Ďureje</surname>,</persName>
+<persName><forename>Jaroslav</forename><surname>Piálek</surname>,</persName>
+<persName><forename>Miloš</forename><surname>Macholán</surname>,</persName>
+<persName><forename>Joëlle</forename><surname>Goüy de Bellocq</surname>,</persName>
+<persName><forename>Stuart</forename><middlename>J</middlename>.<middlename>E</middlename>.<surname>Baird</surname>,</persName>
+<persName><forename>Emanuel</forename><surname>Heitlinger</surname></persName>
+<persName><forename>Alice</forename><surname>Balard</surname>,</persName>
+<persName><forename>Víctor</forename><middlename>Hugo</middlename><surname>Jarquín-Díaz</surname>,</persName>
+<persName><forename>Jenny</forename><surname>Jost</surname>,</persName>
+<persName><forename>Emanuel</forename><surname>Heitlinger</surname></persName>
+<persName><forename>Iva</forename><surname>Martincová</surname>,</persName>
+<persName><forename>Ľudovít</forename><surname>Ďureje</surname>,</persName>
+<persName><forename>Jaroslav</forename><surname>Piálek</surname>,</persName>
+<persName><forename>Joëlle</forename><surname>Goüy de Bellocq</surname>,</persName>
+<persName><forename>Stuart</forename><middlename>J</middlename>.<middlename>E</middlename>.</persName>
+<persName><forename>Emanuel</forename><surname>Heitlinger</surname></persName>
+</author>
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

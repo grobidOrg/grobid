@@ -36,8 +36,7 @@
 
 	<email>shavlik@cs.wisc.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">Neural networks have been successfully applied in a wide range of supervised and unsuper-<lb/>vised learning applications. Neural-network methods are not commonly used for data-mining<lb/> tasks, however, because they often produce incomprehensible models and require long training<lb/> times. In this article, we describe neural-network learning algorithms that are able to produce<lb/> comprehensible models, and that do not require excessive training times. Speci cally, we discuss<lb/> two classes of approaches for data mining with neural networks. The rst type of approach,<lb/> often called rule extraction, involves extracting symbolic models from trained neural networks.<lb/> The second approach is to directly learn simple, easy-to-understand networks. We argue that,<lb/> given the current state of the art, neural-network methods deserve a place in the tool boxes of<lb/> data-mining specialists.<lb/></div>
+	
 
 	Keywords:
 	<keyword>machine learning, neural networks, rule extraction, comprehensible<lb/> models, decision trees, perceptrons</keyword>

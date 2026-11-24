@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="_1105_selene"/>
+	</teiHeader>
+	<text xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>Selene: Voting with Transparent Verifiability<lb/> and Coercion-Mitigation<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Peter Y A Ryan, Peter B Rønne, Vincenzo Iovino<lb/></docAuthor>
+	</byline>
+
+	
+
+		</front>
+	</text>
+</tei>

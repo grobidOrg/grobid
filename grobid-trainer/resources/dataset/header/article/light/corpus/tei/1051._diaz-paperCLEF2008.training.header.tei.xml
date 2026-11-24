@@ -22,8 +22,7 @@
 
 	<email>{mcdiaz,magc,maite,laurena,amontejo}@ujaen.es</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper describes the SINAI team participation in the ImageCLEF campaign.<lb/> In this paper we only explain the experiments accomplished in the medical task.<lb/> We have experimented with query expansion and the text information of the collection.<lb/> For expansion, we carry out experiments using MeSH ontology and UMLS separately.<lb/> With respect to text collection, we have used three different collections, one with<lb/> caption and title, other with caption, title and the text of the section where the image<lb/> appears, and the third with the full article. Moreover, we have experimented with<lb/> mixed search, textual and visual search, using the FIRE software for image retrieval.<lb/> The use of FIRE and MeSH expansion with the minimal collection (only caption<lb/> and title) obtains the best results in the track.<lb/></div>
+	
 
 	Categories and Subject Descriptors<lb/> 
 	<keyword>H.3 [Information Storage and Retrieval]: H.3.1 Content Analysis and Indexing; H.3.3 Infor-<lb/>mation Search and Retrieval; H.3.4 Systems and Software</keyword>

@@ -24,8 +24,7 @@
 
 	<ptr type="web">http://www.dfki.de/<lb/></ptr>
 
-	Abstract.
-	<div type="abstract">With the growing amount of internet users, a negative form<lb/> of sending email spreads that affects more and more users of email ac-<lb/>counts: Spamming. Spamming means that the electronic mailbox is con-<lb/>gested with unwanted advertising or personal email. Sorting out this<lb/> email costs the user time and money. This paper introduces a distributed<lb/> spam filter, which combines an off-the-shelf text classification with mul-<lb/>tiagent systems. Both the text classification as well as the multiagent<lb/> platform are implemented in Java. The content of the emails is analyzed<lb/> by the classification algorithm &apos;support vector machines&apos;. Information<lb/> about spam is exchanged between the agents through the network. Iden-<lb/>tification numbers for emails which where identified as spam are gener-<lb/>ated and forwarded to all other agents connected to the network. These<lb/> numbers allow agents to identify incoming spam email. In this way, the<lb/> quality of the filter increases continuously.<lb/></div>
+	
 
 	<reference>V. Mařík et al. (Eds): CEEMAS 2003, LNAI 2691, pp. 616-625, 2003.<lb/> </reference>
 

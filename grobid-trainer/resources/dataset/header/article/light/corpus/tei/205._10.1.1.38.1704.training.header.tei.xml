@@ -27,15 +27,14 @@
 	<email>psk@cs.uct.ac.zag<lb/></email>
 
 	<byline>
-	<affiliation>The Networks Group<lb/> International Computer Science Institute, and<lb/> The Computer Science Depatrment<lb/> University of Cape Town<lb/></affiliation>
+	<affiliation>The Networks Group<lb/> International Computer Science Institute, and<lb/></affiliation> <affiliation>The Computer Science Depatrment<lb/> University of Cape Town<lb/></affiliation>
 	</byline>
 
 	TR-96-006<lb/>
 
 	<date>January 1996</date>
 
-	Abstract<lb/>
-	<div type="abstract">For slotted networks carrying full multi-media tra c to work successfully, it is es-<lb/>sential that connection setup and management is done well under all tra c conditions.<lb/> Major challenges remain with the current state of the technology, however, particu-<lb/>larly on how one copes with tra c bursts. Existing reservation-based networks do not<lb/> allow the user to dynamically adjust his bandwidth requirements on demand. In this<lb/> paper we propose a new scheme, called the reservoir scheme, which allows dynamic<lb/> and distributed resource allocation. The basic idea behind the scheme is to reserve<lb/> bandwidth with a guaranteed bit rate for each virtual circuit. The user is allowed to<lb/> decentrally allocate additional bandwidth from an Available Bit Rate (ABR) reser-<lb/>voir to satisfy dynamic changes of Variable Bit Rate (VBR) tra c. The duration and<lb/> bandwidth of this dynamic access are negotiated in the call setup phase and do not<lb/> require any renegotiation with the service provider so that this solution overcomes the<lb/> rigidity of current static bandwidth reservation schemes. The additional management<lb/> requirements are low compared to other dynamic bandwidth reservation schemes. We<lb/> also describe an analytic model and simulation which we used to determine whether<lb/> it would be practical to apply the proposed scheme in a slotted network.<lb/></div>
+	
 
 	<byline>
 	<docAuthor>Pieter Kritzinger</docAuthor>

@@ -77,7 +77,7 @@
 	<affiliation>INRIA<lb/></affiliation>
 	</byline>
 
-	<div type="abstract">Slicing is the procedure necessary to prepare a shape for layered manufactu-<lb/>ring. There are degrees of freedom in this process, such as the starting point<lb/> of the slicing sequence and the thickness of each slice. The choice of these<lb/> parameters influences the manufacturing process and its result: the number<lb/> of slices significantly affects the time needed for manufacturing, while their<lb/> thickness affects the error. Assuming a discrete setting, we measure the er-<lb/>ror as the number of voxels that are incorrectly assigned due to slicing. We<lb/> provide an algorithm that generates, for a given set of available slice heig-<lb/>hts and a shape, a slicing that is provably optimal. By optimal we mean<lb/> that the algorithm generates sequences with minimal error for any possible<lb/> number of slices. The algorithm is fast and flexible, i.e. it can accommodate<lb/> a user driven importance modulation of the error function and allows the<lb/> interactive exploration of the desired quality/time tradeoff. We demonstrate<lb/> the practical importance of our optimization on several 3D-printed results.<lb/></div>
+	
 
 	Categories and Subject Descriptors:
 	<keyword>I.3.5 [Computer Graphics]: Compu-<lb/>tational Geometry and Object Modeling-Curve, surface, solid, and object representations<lb/></keyword>

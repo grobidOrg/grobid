@@ -21,8 +21,7 @@
 
 	<address>Nanchang, China</address>
 
-	ABSTRACT<lb/>
-	<div type="abstract">Anomaly detection in surveillance videos is a challenging<lb/> task due to the diversity of anomalous video content and du-<lb/>ration. In this paper, we consider video anomaly detection as<lb/> a regression problem with respect to anomaly scores of video<lb/> clips under weak supervision. Hence, we propose an anomaly<lb/> detection framework, called Anomaly Regression Net (AR-<lb/>Net), which only requires video-level labels in training stage.<lb/> Further, to learn discriminative features for anomaly detec-<lb/>tion, we design a dynamic multiple-instance learning loss and<lb/> a center loss for the proposed AR-Net. The former is used<lb/> to enlarge the inter-class distance between anomalous and<lb/> normal instances, while the latter is proposed to reduce the<lb/> intra-class distance of normal instances. Comprehensive ex-<lb/>periments are performed on a challenging benchmark: Shang-<lb/>haiTech. Our method yields a new state-of-the-art result for<lb/> video anomaly detection on ShanghaiTech dataset.<lb/></div>
+	
 
 	Index Terms-
 	<keyword>Anomaly detection, weak supervision,<lb/> multiple-instance learning, center loss<lb/></keyword>

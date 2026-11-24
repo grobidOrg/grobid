@@ -47,8 +47,7 @@
 	email:
 	<email>nstreet@cs.okstate.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">The problem of assigning m points in the n-dimensional real space<lb/> R n to k clusters is formulated as that of determining k centers in<lb/> R n such that the sum of distances of each point to the nearest<lb/> center is minimized. If a polyhedral distance is used, the problem<lb/> can be formulated as that of minimizing a piecewise-linear concave<lb/> function on a polyhedral set which is shown to be equivalent to<lb/> a bilinear program: minimizing a bilinear function on a polyhe-<lb/>dral set. A fast nite k-Median Algorithm consisting of solving<lb/> few linear programs in closed form leads to a stationary point of<lb/> the bilinear program. Computational testing on a number of real-<lb/>world databases was carried out. On the Wisconsin Diagnostic<lb/> Breast Cancer (WDBC) database, k-Median training set correct-<lb/>ness was comparable to that of the k-Mean Algorithm, however its<lb/> testing set correctness was better. Additionally, on the Wisconsin<lb/> Prognostic Breast Cancer (WPBC) database, distinct and clini-<lb/>cally important survival curves were extracted by the k-Median<lb/> Algorithm, whereas the k-Mean Algorithm failed to obtain such<lb/> distinct survival curves for the same database.</div>
+	
 
 		</front>
 	</text>

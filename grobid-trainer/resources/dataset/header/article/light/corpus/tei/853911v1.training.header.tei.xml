@@ -14,7 +14,7 @@
 	<titlePart>Restoration, dispersal and settlement of native European oyster (Ostrea<lb/> edulis) in energetic tidal areas.<lb/></titlePart>
 	</docTitle>
 
-	Running head: Oyster settlement models<lb/> 
+	Running head: Oyster settlement models<lb/>
 
 	<date>23 rd November 2019<lb/></date>
 
@@ -22,11 +22,12 @@
 	<docAuthor>Jay Willis 1* , Lisa Kamphausen 2 , Anthony Jensen 3 , Roger J.H. Herbert 4 , Elfed Jones 5<lb/></docAuthor>
 	</byline>
 
+    <!-- Keep it as it is -->
 	<byline>
 	<affiliation>1. Corresponding author. Turnpenny Horsfield Associates</affiliation>
 	</byline>
 
-	<address>UK</address>. 
+	<address>UK</address>.
 	(
 	<email>jkwillis@gmail.com</email>
 	)<lb/>
@@ -59,8 +60,7 @@
 
 	Willis, Kamphausen, et al. 2019
 
-	Abstract<lb/>
-	<div type="abstract">We modelled the pelagic larval phase of native European oyster (Ostrea edulis) in the Solent.<lb/> The Solent is a complex and tidally energetic environment on the south coast of the UK. Until<lb/> recently it was the largest self-sustaining fishery of the native oyster in Europe. We developed a<lb/> new larval settlement behavioural model that is the simplest plausible model which remains<lb/> consistent with all available data and evidence on larval behaviour. We used a hydrodynamic<lb/> sub-model, a Lagrangian advection sub-model, and an individual agent based model. The results<lb/> demonstrate how isolated oyster assemblages can re-populate larger areas of historical<lb/> inhabitance. We predict the most likely patterns of redistribution from refugia or from fisheries<lb/> seeding. We show that settlement swimming behaviour is as equally important as passive<lb/> hydrodynamic transport for larval survival and adult distribution and that settlement swimming<lb/> behaviour has a profound impact on settlement patterns. The models show that managed<lb/> broodstock refugia have the potential to seed much larger oyster beds in contrast to broad-scale<lb/> seeding. Such refugia have the advantage of maintaining a locally high and mature population<lb/> with potential for reef features and their associated biodiversity. We show that such refugia may<lb/> be best placed in the tidally dynamic and exposed areas rather than on sheltered coastal sites as<lb/> they have been in the past. Our model is insensitive to parameter variation and could be an<lb/> effective and practical management tool in the face of a paucity of field data on larval distribution<lb/> and behaviour.</div>
+	
 
 	Keywords<lb/>
 	<keyword>Benign invasion Connectivity<lb/> ELAM Eulerian Lagrangian Agent Based Model<lb/> Habitat restoration<lb/> PLD Pelagic larval duration<lb/> Range collapse<lb/> Spat fall</keyword>

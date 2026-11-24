@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Ramachandran</surname> <forename>P</forename><marker>1 *</marker>,</persName>
+<persName><surname>Dobie</surname> <forename>R</forename><marker>1</marker>,</persName>
+<persName><surname>Wilson-Kanamori</surname> <forename>JR</forename><marker>1</marker>,</persName>
+<persName><surname>Dora</surname> <forename>EF</forename><marker>1</marker>,</persName>
+<persName><surname>Henderson</surname> <forename>BEP</forename><marker>1</marker>,</persName>
+<persName><surname>Taylor</surname> <forename>RS</forename><marker>1</marker>,</persName>
+<persName><surname>Matchett</surname> <forename>KP</forename><marker>1</marker>,</persName>
+<persName><surname>Portman</surname> <forename>JR</forename><marker>1</marker>,</persName>
+<persName><surname>Efremova</surname> <forename>M</forename><marker>2</marker>,</persName>
+<persName><surname>Vento -Tormo</surname> <forename>R</forename><marker>2</marker>,</persName>
+<persName><surname>Luu</surname> <forename>NT</forename><marker>3</marker>,</persName>
+<persName><surname>Weston</surname> <forename>CJ</forename><marker>3</marker>,</persName>
+<persName><surname>Newsome</surname> <forename>PN</forename><marker>3</marker>,</persName>
+<persName><surname>Harrison</surname> <forename>EM</forename><marker>4</marker>,</persName>
+<persName><surname>Mole</surname> <forename>DJ</forename><marker>1,4</marker>,</persName>
+<persName><surname>Wigmore</surname> <forename>SJ</forename><marker>1,4</marker>,</persName>
+<persName><surname>Iredale</surname> <forename>JP</forename><marker>5</marker>,</persName>
+<persName><surname>Tacke</surname> <forename>F</forename><marker>6</marker>,</persName>
+<persName><surname>Pollard</surname> <forename>JW</forename><marker>7,8</marker>,</persName>
+<persName><surname>Ponting</surname> <forename>CP</forename><marker>9</marker>,</persName>
+<persName><surname>Marioni</surname> <forename>JC</forename><marker>2,10,11</marker>,</persName>
+<persName><surname>Teichmann</surname> <forename>SA</forename><marker>2,11,12</marker>,</persName>
+<persName><surname>Henderson</surname> <forename>NC</forename><marker>1 *</marker></persName>
+<persName><forename>Prakash</forename><surname>Ramachandran</surname>,</persName>
+<persName><forename>Neil</forename><surname>Henderson</surname>,</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

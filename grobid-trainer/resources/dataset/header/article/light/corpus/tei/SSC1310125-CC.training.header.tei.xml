@@ -30,8 +30,7 @@
 
 	<address>Hangzhou, Zhejiang 310027,<lb/> People&apos;s Republic of China</address>
 
-	Abstract<lb/>
-	<div type="abstract">We report the evidence of proton incorporations in a newly-discovered cobalt oxy-<lb/>hydrate superconductor. During the hydration process for Na 0.32 CoO 2 by the direct<lb/> reaction with water liquid, it was shown that substantial NaOH was gradually lib-<lb/>erated, indicating that H + is incorporated into the hydrated compound. Combined<lb/> with the thermogravimetric analysis, the chemical composition of the typical sample<lb/> is Na 0.22 H 0.1 CoO 2 • 0.85H 2 O, which shows bulk superconductivity at 4.4 K.<lb/></div>
+	
 
 	Key words:<lb/>
 	<keyword>PACS: 74.62.Bf; 74.70.-b;74.10.+v<lb/> A. Superconductors, C. Thermogravimetric analysis; C. X-ray diffraction<lb/></keyword>
@@ -39,10 +38,12 @@
 	* Corresponding author<lb/> Email address:
 	<email>ghcao@zju.edu.cn</email>
 
-	(Guanghan Cao).<lb/>
-	<note type="submission">Preprint submitted to Elsevier Science<lb/></note>
-
-	<date>24 August 2018</date>
+	(
+	<byline>
+	<docAuthor>Guanghan Cao</docAuthor>
+	</byline>
+	).<lb/>
+	<note type="submission">Preprint submitted to Elsevier Science<lb/> 24 August 2018</note>
 
 		</front>
 	</text>

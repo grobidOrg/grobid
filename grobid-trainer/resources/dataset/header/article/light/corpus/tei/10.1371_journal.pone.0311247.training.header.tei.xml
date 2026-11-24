@@ -102,10 +102,10 @@
 	<address>Santa Cruz Xoxocotla ´n, Oaxaca,<lb/> Mexico,</address>
 
 	<byline>
-	<affiliation>8 Departamento de Ecologı ´a y Recursos Naturales, Centro Universitario de la Costa Sur,<lb/> Universidad de Guadalajara, Autla ´n de Navarro,</affiliation>
+	<affiliation>8 Departamento de Ecologı ´a y Recursos Naturales, Centro Universitario de la Costa Sur,<lb/> Universidad de Guadalajara,</affiliation>
 	</byline>
 
-	<address>Jalisco, Mexico</address>,
+	<address>Autla ´n de Navarro, Jalisco, Mexico</address>,
 
 	<byline>
 	<affiliation>9 Universidad Nacional Auto ´noma de Costa<lb/> Rica,</affiliation>
@@ -132,10 +132,10 @@
 	<address>Bar Harbor, Maine, United States of<lb/> America,</address>
 
 	<byline>
-	<affiliation>13 Facultad de Ciencias, Universidad Nacional Auto ´noma de Me ´xico, Ciudad de Me ´xico,</affiliation>
+	<affiliation>13 Facultad de Ciencias, Universidad Nacional Auto ´noma de Me ´xico,</affiliation>
 	</byline>
 
-	<address>Mexico,<lb/></address>
+	<address>Ciudad de Me ´xico, Mexico,<lb/></address>
 
 	<byline>
 	<affiliation>14 Instituto de Investigacio ´n y Servicios Forestales, Universidad Nacional de Costa Rica, Campus Omar<lb/> Dengo,</affiliation>
@@ -210,8 +210,7 @@
 	(MO);
 	<email>jmunoz@rjb.csic.es</email>
 
-	(JM) Abstract<lb/>
-	<div type="abstract">Global biodiversity is negatively affected by anthropogenic climate change. As species dis-<lb/>tributions shift due to increasing temperatures and precipitation fluctuations, many species<lb/> face the risk of extinction. In this study, we explore the expected trend for plant species dis-<lb/>tributions in Central America and southern Mexico under two alternative Representative<lb/> Concentration Pathways (RCPs) portraying moderate (RCP4.5) and severe (RCP8.5)<lb/> increases in greenhouse gas emissions, combined with two species dispersal assumptions<lb/> (limited and unlimited), for the 2061-2080 climate forecast. Using an ensemble approach<lb/> employing three techniques to generate species distribution models, we classified 1924<lb/> plant species from the region&apos;s (sub)tropical forests according to IUCN Red List categories.<lb/></div>
+	(JM) 
 
 	<title level="j">PLOS ONE<lb/></title>
 
@@ -249,7 +248,7 @@
 	Data Availability Statement: 
 	<note type="availability">All relevant data are<lb/> within the paper and its Supporting Information<lb/> files.<lb/></note>
 			
-	<div type="abstract">To infer the spatial and taxonomic distribution of species&apos; vulnerability under each scenario,<lb/> we calculated the proportion of species in a threat category (Vulnerable, Endangered, Criti-<lb/>cally Endangered) at a pixel resolution of 30 arc seconds and by family. Our results show a<lb/> high proportion (58-67%) of threatened species among the four experimental scenarios,<lb/> with the highest proportion under RCP8.5 and limited dispersal. Threatened species were<lb/> concentrated in montane areas and avoided lowland areas where conditions are likely to be<lb/> increasingly inhospitable. Annual precipitation and diurnal temperature range were the main<lb/> drivers of species&apos; relative vulnerability. Our approach identifies strategic montane areas<lb/> and taxa of conservation concern that merit urgent inclusion in management plans to<lb/> improve climatic resilience in the Mesoamerican biodiversity hotspot. Such information is<lb/> necessary to develop policies that prioritize vulnerable elements and mitigate threats to bio-<lb/>diversity under climate change.<lb/></div>
+	
 
 	Funding:
 	<note type="funding">The author(s) received no specific<lb/> funding for this work.<lb/></note>

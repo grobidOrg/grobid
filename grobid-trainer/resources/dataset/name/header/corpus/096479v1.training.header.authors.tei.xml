@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename>Andreas</forename> <surname>Leimbach1</surname>, <marker>2,3#</marker> ,</persName>
+							<persName><forename>Anja</forename> <surname>Poehlein2</surname> ,</persName>
+							<persName><forename>John</forename> <surname>Vollmers4</surname> ,</persName>
+							<persName><forename>Rolf</forename> <surname>Daniel2</surname> ,</persName>
+							<persName><forename>Ulrich</forename> <surname>Dobrindt1</surname>, <marker>3#</marker></persName>
+							<persName><forename>Andreas</forename> <surname>Leimbach</surname></persName>
+							<persName><forename>Anja</forename> <surname>Poehlein</surname></persName>
+							<persName><forename>John</forename> <surname>Vollmers</surname></persName>
+							<persName><forename>Rolf</forename> <surname>Daniel</surname></persName>
+							<persName><forename>Ulrich</forename> <surname>Dobrindt</surname></persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

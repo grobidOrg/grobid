@@ -13,11 +13,11 @@
 	</docTitle>
 
 	<byline>
-	<docAuthor>Said Assou §,*,φ , Tal Anahory ‡ , Véronique Pantesco * , Tanguy Le Carrour § , Franck<lb/> Pellestor ‡,δ , Bernard Klein *, §,φ , Lionel Reyftmann # , Hervé Dechaud # , John De Vos *, §,φ, 1<lb/> and Samir Hamamah *, §, ‡ ,φ , 1<lb/> § CHU Montpellier,</docAuthor>
+	<docAuthor>Said Assou §,*,φ , Tal Anahory ‡ , Véronique Pantesco * , Tanguy Le Carrour § , Franck<lb/> Pellestor ‡,δ , Bernard Klein *, §,φ , Lionel Reyftmann # , Hervé Dechaud # , John De Vos *, §,φ, 1<lb/> and Samir Hamamah *, §, ‡ ,φ , 1<lb/></docAuthor>
 	</byline>
 
 	<byline>
-	<affiliation>Institut de Recherche en Biothérapie, Hôpital Saint-Eloi, </affiliation>
+	<affiliation>§ CHU Montpellier, Institut de Recherche en Biothérapie, Hôpital Saint-Eloi, </affiliation>
 	</byline>
 
 	<address>Montpellier,<lb/> F-34000 France ;</address>
@@ -70,8 +70,8 @@
 
 	Fax: + 33 4 67 33 62 90.
 
-	Email: s-<lb/>
-	<email>hamamah@chu-montpellier.fr</email>
+	Email:
+	<email>s-<lb/>hamamah@chu-montpellier.fr</email>
 
 	; 
 	<byline>
@@ -89,7 +89,7 @@
 
 	<note type="doctype">HAL author manuscript</note> 
 
-	inserm-00130809, version 1<lb/> 
+	<idno>inserm-00130809, version 1</idno><lb/> 
 
 	<note type="doctype">HAL author manuscript<lb/> </note>
 
@@ -97,11 +97,11 @@
 
 	<page>2 /37<lb/></page>
 
-	<div type="abstract">BACKGROUND: The understanding of the mechanisms regulating human oocyte<lb/> maturation is still rudimentary. We have identified transcripts differentially expressed<lb/> between immature and mature oocytes, and cumulus cells.<lb/> METHODS: Using oligonucleotides microarrays, genome wide gene expression was studied<lb/> in pooled immature and mature oocytes or cumulus cells from patients who underwent IVF.<lb/> RESULTS: In addition to known genes such as DAZL, BMP15 or GDF9, oocytes<lb/> upregulated 1514 genes. We show that PTTG3 and AURKC are respectively the securin and<lb/> the Aurora kinase preferentially expressed during oocyte meiosis. Strikingly, oocytes<lb/> overexpressed previously unreported growth factors such as TNFSF13/APRIL, FGF9,<lb/> FGF14, and IL4, and transcription factors including OTX2, SOX15 and SOX30. Conversely,<lb/> cumulus cells, in addition to known genes such as LHCGR or BMPR2, overexpressed cell-to-<lb/>cell signaling genes including TNFSF11/RANKL, numerous complement components,<lb/> semaphorins (SEMA3A, SEMA6A, SEMA6D) and CD genes such as CD200. We also<lb/> identified 52 genes progressively increasing during oocyte maturation, comprising CDC25A<lb/> and SOCS7.<lb/> CONCLUSION: The identification of genes up and down regulated during oocyte maturation<lb/> greatly improves our understanding of oocyte biology and will provide new markers that<lb/> signal viable and competent oocytes. Furthermore, genes found expressed in cumulus cells are<lb/> potential markers of granulosa cell tumors.<lb/></div>
+	
 
 	<note type="doctype">HAL author manuscript</note>
 
-	inserm-00130809, version 1
+	<idno>inserm-00130809, version 1</idno>
 		</front>
 	</text>
 </tei>

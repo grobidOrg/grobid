@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+	<persName>
+		<forename>Edgar</forename>
+		<middlename>Ismael</middlename>
+		<surname>Alarcón Meza</surname>.
+	</persName>
+	<persName>
+		<forename>Glauber</forename>
+		<middlename>Lameira</middlename>
+		<surname>de Oliveira</surname>.
+	</persName>
+	<persName>
+		<forename>Talita</forename>
+		<middlename>Adão</middlename>
+		<middlename>Perini</middlename><surname>de Oliveira</surname>.
+	</persName>
+	<persName>
+		<forename>Marcelo</forename>
+		<middlename>Hubner</middlename>
+		<surname>Moreira</surname>.
+	</persName>
+	<persName>
+		<forename>Angeliete</forename>
+		<middlename>Garcez</middlename>
+		<surname>Militão</surname>.
+	</persName>
+	<persName>
+		<forename>José</forename>
+		<middlename>Fernandes</middlename>
+		<surname>Filho</surname>.
+	</persName>
+	<persName>
+		<forename>Vernon</forename>
+		<middlename>Furtado</middlename>
+		<surname>Da Silva</surname>.
+	</persName>
+	<persName>
+		<forename>Estélio</forename>
+		<middlename>Henrique</middlename>
+		<surname>Martin Dantas</surname>.
+	</persName>
+	<persName>
+		<forename>João</forename>
+		<middlename>Rafael</middlename>
+		<surname>Valentim-Silva</surname>
+		<marker>*</marker>,
+	</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

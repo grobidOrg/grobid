@@ -38,8 +38,7 @@
 
 	<email>nenkova@seas.upenn.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">We introduce a supervised model<lb/> for predicting word importance that<lb/> incorporates a rich set of features. Our<lb/> model is superior to prior approaches<lb/> for identifying words used in human<lb/> summaries.<lb/> Moreover we show<lb/> that an extractive summarizer using<lb/> these estimates of word importance is<lb/> comparable in automatic evaluation with<lb/> the state-of-the-art.</div>
+	
 
 		</front>
 	</text>

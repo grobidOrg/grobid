@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Saiz</surname>, <forename>H</forename> <marker>1</marker> .,</persName>
+<persName><surname>Gómez-Gardeñes</surname>, <forename>J</forename> <marker>2,3</marker> .,</persName>
+<persName><surname>Borda</surname>, <forename>J</forename>.<middlename>P</middlename> <marker>2</marker> .,</persName>
+<persName><surname>Maestre</surname>, <forename>F</forename>. <middlename>T</middlename>. <marker>1 1</marker></persName>
+<persName><surname>Saiz</surname>, <forename>H</forename>.</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

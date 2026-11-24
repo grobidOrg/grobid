@@ -31,8 +31,7 @@
 	KEYWORDS:
 	<keyword>Neural Networks, Connectionist Syntactic Parsing, RAAM, Holistic Transformation, Confluent<lb/> Preorder Parser, Linearization of a Hierarchical Parse Tree, Parsing Erroneous Sentences, Syntactic Disambiguation</keyword>
 
-	Abstract<lb/>
-	<div type="abstract">In this paper, syntactic parsing is discussed in the context of connectionism. A new model -the Confluent<lb/> Preorder Parser (CPP), is proposed which exemplifies the holistic parsing paradigm. Holistic parsing has the<lb/> advantage that little assumption has to be made concerning the detailed parsing algorithm, which is often<lb/> unknown or debatable, especially when human language understanding is concerned. In the CPP, syntactic<lb/> parsing is achieved by transforming in a one-shot manner, from the connectionist representation of the sentence<lb/> to the connectionist representation of the preorder traversal of its parse tree, instead of the parse tree itself. As<lb/> revealed by the simulation experiments, generalization performance is excellent (as high as 90%). Besides, the<lb/> CPP is also capable of parsing erroneous sentences and resolving syntactic ambiguities. A systematic study is<lb/> conducted to explore the range of factors which can affect the effectiveness of it. This error-recovery capability<lb/> is especially useful in natural language processing when incomplete or even ungrammatical sentences are to be<lb/> dealt with.</div>
+	
 
 		</front>
 	</text>

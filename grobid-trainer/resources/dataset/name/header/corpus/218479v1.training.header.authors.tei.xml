@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Christopher</forename>
+								 <middlename>M</middlename>
+								 <surname>Glaze</surname>
+								 <marker>1,5*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Christina</forename>
+								 <middlename>B</middlename>
+								 <surname>Castelino</surname>
+								 <marker>1,4 *</marker> ,
+							</persName>
+							<persName>
+								 <forename>Steve</forename>
+								 <middlename>P</middlename>
+								 <surname>Bibu</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Elvina</forename>
+								 <surname>Yau</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Marc</forename>
+								 <middlename>F</middlename>
+								 <marker>5</marker>
+								 <surname>Schmidt</surname>
+								 <marker>1,2,3 6 7 8</marker>
+							</persName>
+							<persName>
+								 <forename>Marc</forename>
+								 <middlename>F</middlename>
+								 <surname>Schmidt</surname>
+								 <marker>15</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Shana</forename><middlename>Ginar</middlename><surname>da Silva</surname>,<roleName>Ph.D</roleName><marker>1,2</marker></persName>
+<persName><forename>Kelly</forename><middlename>R</middlename><surname>Evenson</surname>,<roleName>Ph.D</roleName><marker>2</marker></persName>
+<persName><forename>Ulf</forename><surname>Ekelund</surname>,<roleName>Ph.D</roleName><marker>3</marker></persName>
+<persName><forename>Inácio</forename><middlename>Crochemore</middlename><middlename>Mohsam</middlename><surname>da Silva</surname>,<roleName>Ph.D</roleName><marker>1</marker></persName>
+<persName><forename>Marlos</forename><middlename>Rodrigues</middlename><surname>Domingues</surname>,<roleName>Ph.D</roleName><marker>4</marker></persName>
+<persName><forename>Bruna</forename><middlename>Gonçalves</middlename><middlename>Cordeiro</middlename><surname>da Silva</surname>,<roleName>Ph.D</roleName><marker>1</marker></persName>
+<persName><forename>Márcio</forename><surname>de Almeida Mendes</surname>,<roleName>Ph.D</roleName><marker>1</marker></persName>
+<persName><forename>Glória</forename><middlename>Isabel</middlename><surname>Niño Cruz</surname>,<roleName>Ph.D</roleName><marker>1</marker></persName>
+<persName><forename>Pedro</forename><middlename>Curi</middlename><surname>Hallal</surname>,<roleName>Ph.D</roleName><marker>1</marker></persName>
+<persName><forename>Shana</forename><middlename>Ginar</middlename><surname>da Silva</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

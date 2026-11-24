@@ -14,8 +14,7 @@
 	<docAuthor>Carl de Boor<lb/> </docAuthor>
 	</byline>
 
-	Abstract.
-	<div type="abstract">A formula for the error in Chung-Yao interpolation an-<lb/>nounced earlier is proved (by induction). In the process, a bivariate di-<lb/>vided di erence identity of independent interest is proved. Also, an in-<lb/>ductive proof of an error formula for polynomial interpolation by tensor-<lb/>products is given. The main tool is a (convenient notation for a) multi-<lb/>variate divided di erence.<lb/></div> 
+	 
 
 	<reference>Surface Fitting and Multiresolution Methods 35<lb/> A. Le M ehaut e, C. Rabut, and L. L. Schumaker (eds.), pp. 35{50.<lb/></reference>
 

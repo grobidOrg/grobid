@@ -33,15 +33,14 @@
 
 	Phone: <phone>617 353-8919</phone><lb/> Fax: 617 353-6457 
 
-	Abstract<lb/>
-	<div type="abstract">This paper investigates the power of genetic algorithms at solving the MAX-CLIQUE prob-<lb/>lem. We measure the performance of a standard genetic algorithm on an elementary set of<lb/> problem instances consisting of embedded cliques in random graphs. We indicate the need<lb/> for improvement, and introduce a new genetic algorithm, the multi-phase annealed GA, which<lb/> exhibits superior performance on the same problem set.<lb/> As we scale up the problem size and test on \hard&quot; benchmark instances, we notice a<lb/> degraded performance in the algorithm caused by premature convergence to local minima. To<lb/> alleviate this problem, a sequence of modi cations are implemented ranging from changes in<lb/> input representation to systematic local search. The most recent version, called union GA,<lb/> incorporates the features of union cross-over, greedy replacement, and diversity enhancement.<lb/> It shows a marked speed-up in the number of iterations required to nd a given solution, as well<lb/> as some improvement in the clique size found.<lb/> We discuss issues related to the SIMD implementation of the genetic algorithms on a Think-<lb/>ing Machines CM-5, which was necessitated by the intrinsically high time complexity (O(n 3 ))<lb/> of the serial algorithm for computing one iteration.<lb/> Our preliminary conclusions are: (1) a genetic algorithm needs to be heavily customized to<lb/> work \well&quot; for the clique problem; (2) a GA is computationally very expensive, and its use is<lb/> only recommended if it is known to nd larger cliques than other algorithms; (3) although our<lb/> customization e ort is bringing forth continued improvements, there is no clear evidence, at this<lb/> time, that a GA will have better success in circumventing local minima.<lb/></div>
+	
 
 	Part of this research was presented at the
 	<meeting>2nd DIMACS Implementation Challenge on Combinatorial Optimiza-<lb/>tion, DIMACS, October, 1993.<lb/></meeting>
 
 	<note type="funding">y Supported in part by NSF grant CCR-9204284</note> 
 
-	<page>0</page>
+	0
 	
 		</front>
 	</text>

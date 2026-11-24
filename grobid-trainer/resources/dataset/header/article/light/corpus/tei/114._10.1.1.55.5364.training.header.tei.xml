@@ -20,8 +20,7 @@
 
 	<address>Houston, TX 77251-1892</address>
 
-	Abstract<lb/>
-	<div type="abstract">We present a new approach that enables compiler<lb/> optimization of procedure calls and loop nests con-<lb/>taining procedure calls. We introduce two inter-<lb/>procedural transformations that move loops across pro-<lb/>cedure boundaries, exposing them to traditional opti-<lb/>mizations on loop nests. These transformations are<lb/> incorporated into a code generation algorithm for a<lb/> shared-memory multiprocessor. The code generator re-<lb/>lies on a machine model to estimate the expected ben-<lb/>e ts of loop parallelization and parallelism-enhancing<lb/> transformations. Several transformation strategies are<lb/> explored and one that minimizes total execution time is<lb/> selected. E cient support of this strategy is provided<lb/> by an existing interprocedural compilation system. We<lb/> demonstrate the potential of these techniques by ap-<lb/>plying this code generation strategy to two scienti c<lb/> applications programs.</div>
+	
 
 		</front>
 	</text>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Amit</forename> <middlename>G</middlename>. <surname>Deshwar</surname> <marker>1</marker> ,</persName>
+<persName><forename>Shankar</forename> <surname>Vembu</surname> <marker>2</marker> ,</persName>
+<persName><forename>Christina</forename> <middlename>K</middlename>. <surname>Yung</surname> <marker>3</marker> ,</persName>
+<persName><forename>Gun</forename> <middlename>Ho</middlename> <surname>Jang</surname> <marker>3</marker> ,</persName>
+<persName><forename>Lincoln</forename> <surname>Stein</surname> <marker>3,4</marker> , and</persName>
+<persName><forename>Quaid</forename> <surname>Morris</surname> <marker>1,2,4,5,6</marker></persName> 1
+Edward S. Rogers Sr.
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

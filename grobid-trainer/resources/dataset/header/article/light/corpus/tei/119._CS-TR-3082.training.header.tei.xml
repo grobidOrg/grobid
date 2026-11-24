@@ -20,8 +20,7 @@
 
 	<address>College Park, MD 20742</address>
 
-	ABSTRACT<lb/>
-	<div type="abstract">As network latency drops below disk latency, access time to a remote disk will begin<lb/> to approach local disk access time. The performance of I/O may then be improved<lb/> by spreading disk pages across several remote disk servers and accessing disk pages<lb/> in parallel. To research this we have prototyped a data page server called a Page<lb/> File. This persistent data type provides a set of methods to access disk pages stored<lb/> on a cluster of remote machines acting as disk servers. The goal is to improve the<lb/> throughput of database management system or other I/O intensive application by<lb/> accessing pages from remote disks and incurring disk latency in parallel. This report<lb/> describes the conceptual foundation and the methods of access for our prototype.<lb/></div>
+	
 
 	<note type="funding">With oversight by O ce of Naval Research, this research is supported by ARPA/SISTO in<lb/> conjunction with the Domain Speci c Software Architectures project.</note>
 		</front>

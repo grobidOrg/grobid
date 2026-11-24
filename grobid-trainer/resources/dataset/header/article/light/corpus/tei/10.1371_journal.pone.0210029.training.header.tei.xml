@@ -46,8 +46,7 @@
 	(DW);
 	<email>j.peters2@uq.edu.au</email>
 
-	(JHP) Abstract<lb/>
-	<div type="abstract">We describe a virus isolated from Culex annulirostris mosquitoes in Australia. Phylogenetic<lb/> analysis of its RNA-dependent RNA polymerase sequence and that of other related viruses<lb/> revealed 6 clades, two of which corresponded wholly or partly with existing genera in the<lb/> family Nodaviridae. There was greater genetic diversity within the family than previously rec-<lb/>ognized prompting us to suggest that additional genera should be considered within the<lb/> family.<lb/></div>
+	(JHP) 
 
 	<reference>PLOS ONE | https://doi.org/10.1371/journal.pone.0210029 December 31, 2018<lb/></reference>
 
@@ -82,7 +81,8 @@
 	Data Availability Statement:
 	<note type="availability">The raw sequence <lb/>data has been deposited in the NCBI Sequence <lb/>Read Archive (SRA accession: PRJNA507903 and <lb/>BioSample accession: SAMN10516339). <lb/></note>
 
-	<note type="funding">Funding: This project was funded by the Australian<lb/> Research Council (https://www.arc.gov.au/) grant<lb/> number DP120103994 awarded to RAH. JJH and<lb/> NDN are supported by Australian Postgraduate<lb/> Awards. The funders had no role in study design,<lb/> data collection and analysis, decision to publish, or<lb/> preparation of the manuscript.<lb/></note>
+	Funding:
+	<note type="funding">This project was funded by the Australian<lb/> Research Council (https://www.arc.gov.au/) grant<lb/> number DP120103994 awarded to RAH. JJH and<lb/> NDN are supported by Australian Postgraduate<lb/> Awards. The funders had no role in study design,<lb/> data collection and analysis, decision to publish, or<lb/> preparation of the manuscript.<lb/></note>
 
 	Competing interests:
     <note type="conflict">The authors have declared<lb/> that no competing interests exist.</note>

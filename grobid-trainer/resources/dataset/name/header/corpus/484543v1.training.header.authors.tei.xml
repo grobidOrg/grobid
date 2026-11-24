@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName> <forename>Vishwesh</forename> <surname>Nath</surname> <marker>1</marker> , </persName>
+<persName> <forename>Kurt</forename> <middlename>G</middlename>. <surname>Schilling</surname> <marker>2</marker> , </persName>
+<persName> <forename>Prasanna</forename> <surname>Parvathaneni</surname> <marker>3</marker> , </persName>
+<persName> <forename>Allison</forename> <middlename>E</middlename>. <surname>Hainline</surname> <marker>4</marker> , </persName>
+<persName> <forename>Yuankai</forename> <surname>Huo</surname>, </persName>
+<persName> <forename>Justin</forename> <middlename>A</middlename>. <surname>Blaber</surname> <marker>3</marker> , </persName>
+<persName> <forename>Matt</forename> <surname>Rowe</surname> <marker>10</marker> , </persName>
+<persName> <forename>Paulo</forename> <surname>Rodrigues</surname> <marker>10</marker> , </persName>
+<persName> <forename>Vesna</forename> <surname>Prchkovska</surname> <marker>10</marker> , </persName>
+<persName> <forename>Dogu</forename> <middlename>Baran</middlename> <surname>Aydogan</surname> <marker>23</marker> , </persName>
+<persName> <forename>Wei</forename> <surname>Sun</surname> <marker>23</marker> , </persName>
+<persName> <forename>Yonggang</forename> <surname>Shi</surname> <marker>23</marker> , </persName>
+<persName> <forename>William</forename> <middlename>A</middlename>. <surname>Parker</surname> <marker>21</marker> , </persName>
+<persName> <forename>Abdol</forename> <middlename>Aziz</middlename> <surname>Ould Ismail</surname> <marker>21</marker> , </persName>
+<persName> <forename>Ragini</forename> <surname>Verma</surname> <marker>21</marker> , </persName>
+<persName> <forename>Ryan</forename> <middlename>P</middlename>. <surname>Cabeen</surname> <marker>11</marker> , </persName>
+<persName> <forename>Arthur</forename> <middlename>W</middlename>. <surname>Toga</surname> <marker>11</marker> , </persName>
+<persName> <forename>Allen</forename> <middlename>T</middlename>. <surname>Newton</surname> <marker>12,13</marker> , </persName>
+<persName> <forename>Jakob</forename> <surname>Wasserthal</surname> <marker>14</marker> , </persName>
+<persName> <forename>Peter</forename> <surname>Neher</surname> <marker>14</marker> , </persName>
+<persName> <forename>Klaus</forename> <surname>Maier-Hein</surname> <marker>14</marker> , </persName>
+<persName> <forename>Giovanni</forename> <surname>Savini</surname> <marker>15,16</marker> , </persName>
+<persName> <forename>Fulvia</forename> <surname>Palesi</surname> <marker>16,17</marker> , </persName>
+<persName> <forename>Enrico</forename> <surname>Kaden</surname> <marker>18</marker> , </persName>
+<persName> <forename>Ye</forename> <surname>Wu</surname> <marker>22</marker> , </persName>
+<persName> <forename>Jianzhong</forename> <surname>He</surname> <marker>22</marker> , </persName>
+<persName> <forename>Yuanjing</forename> <surname>Feng</surname> <marker>22</marker> , </persName>
+<persName> <forename>Muhamed</forename> <surname>Barakovic</surname> <marker>6</marker> , </persName>
+<persName> <forename>David</forename> <surname>Romascano</surname> <marker>6</marker> , </persName>
+<persName> <forename>Jonathan</forename> <surname>Rafael-Patino</surname> <marker>6</marker> , </persName>
+<persName> <forename>Matteo</forename> <surname>Frigo</surname> <marker>6</marker> , </persName>
+<persName> <forename>Gabriel</forename> <surname>Girard</surname> <marker>6</marker> , </persName>
+<persName> <forename>Alessandro</forename> <surname>Daducci</surname> <marker>7,8,6</marker> , </persName>
+<persName> <forename>Jean- Philippe</forename> <surname>Thiran</surname> <marker>6,8</marker> , </persName>
+<persName> <forename>Michael</forename> <surname>Paquette</surname> <marker>19</marker> , </persName>
+<persName> <forename>Francois</forename> <surname>Rheault</surname> <marker>19</marker> , </persName>
+<persName> <forename>Jasmeen</forename> <surname>Sidhu</surname> <marker>19</marker> </persName>
+<persName> <forename>Catherine</forename> <surname>Lebel</surname> <marker>9</marker> , </persName>
+<persName> <forename>Alexander</forename> <surname>Leemans</surname> <marker>5</marker> , </persName>
+<persName> <forename>Maxime</forename> <surname>Descoteaux</surname> <marker>19</marker> , </persName>
+<persName> <forename>Tim</forename> <middlename>B</middlename>. <surname>Dyrby</surname> <marker>20</marker> , </persName>
+<persName> <forename>Hakmook</forename> <surname>Kang</surname> <marker>4</marker> , </persName>
+<persName> <forename>Bennett</forename> <middlename>A</middlename>. <surname>Landman</surname> <marker>1,2,3,12,13</marker> </persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

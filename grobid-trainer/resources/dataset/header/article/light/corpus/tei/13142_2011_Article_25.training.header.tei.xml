@@ -6,7 +6,7 @@
 	<text xml:lang="en">
 		<front>
 
-	TBM<lb/>
+	<title level="j">TBM<lb/></title>
 
 	<docTitle>
 	<titlePart>Stakeholder perspectives on implementing the National<lb/> Cancer Institute&apos;s patient-reported outcomes version<lb/> of the Common Terminology Criteria for Adverse Events<lb/> (PRO-CTCAE)<lb/></titlePart>
@@ -16,8 +16,7 @@
 	<docAuthor>Deborah Watkins Bruner, RN, PhD, FAAN, 1 Laura J Hanisch, PsyD, 2 Bryce B Reeve, PhD, 3<lb/> Andy M Trotti, MD, 4 Deborah Schrag, MD, MPH, 5 Laura Sit, 6 Tito R Mendoza, PhD, MS, MEd, 7<lb/> Lori Minasian, MD, 8 Ann O&apos;Mara, PhD, RN, FAAN, 9 Andrea M Denicoff, MS, RN, ANP, 10<lb/> Julia H Rowland, PhD, 11 Michael Montello, PharmD, MBA, 12 Cindy Geoghegan, 13 Amy P Abernethy, MD, 14<lb/> Steven B Clauser, PhD, 15 Kathleen Castro, RN, MS, AOCN, 16 Sandra A Mitchell, CRNP, PhD, 17<lb/> Laurie Burke, RPh, MPH, 18 Ann Marie Trentacosti, MD, 19 Ethan M Basch, MD, MSc 20<lb/></docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">The National Cancer Institute (NCI) is developing a patient-<lb/>reported version of its Common Terminology Criteria for<lb/> Adverse Events, called the &quot;PRO-CTCAE.&quot; The PRO-CTCAE<lb/> consists of a library of patient-reported items which can be<lb/> administered in clinical trials to directly capture the patient<lb/> experience of adverse events during cancer treatment, as<lb/> well as a software platform for administering these items<lb/> via computer or telephone. In order to better understand<lb/> the impressions of stakeholders involved in cancer clinical<lb/> research about the potential value of the PRO-CTCAE<lb/> approach to capturing adverse event information in<lb/> clinical research, as well as their perspectives about<lb/> barriers and strategies for implementing the PRO-CTCAE in<lb/> NCI-sponsored cancer trials, a survey was conducted. A<lb/> survey including structured and open-ended questions<lb/> was developed to elicit perceptions about the use of<lb/> patient-reported outcomes (PROs) for adverse event<lb/> reporting, and to explore logistical considerations for<lb/> implementing the PRO-CTCAE in cancer trials. The survey<lb/> was distributed electronically and by paper to a<lb/> convenience sample of leadership and committee<lb/> members in the NCI&apos;s cooperative group network,<lb/> including principal investigators, clinical investigators,<lb/> research nurses, data managers, patient advocates, and<lb/> representatives of the NCI and Food and Drug<lb/> Administration. Between October, 2008 through February,<lb/> 2009, 727 surveys were collected. Most respondents<lb/> (93%) agreed that patient reporting of adverse symptoms<lb/> would be useful for improving understanding of the patient<lb/> experience with treatment in cancer trials, and 88%, 80%,<lb/> and 76%, respectively, endorsed that administration of<lb/> PRO-CTCAE items in clinical trials would improve the<lb/> completeness, accuracy, and efficiency of symptom data<lb/> collection. More than three fourths believed that patient<lb/> reports would be useful for informing treatment dose<lb/> modifications and towards FDA regulatory evaluation of<lb/> drugs. Eighty-eight percent felt that patients in clinical trials<lb/> would be willing to self-report adverse symptoms at clinic<lb/> visits via computer, and 68% felt patients would self-report<lb/> weekly from home via the internet or an automated<lb/> telephone system. Lack of computers and limited space and<lb/> personnel were seen as potential barriers to in-clinic self-<lb/>reporting, but these were judged to be surmountable with<lb/> adequate funding. The PRO-CTCAE items and software are<lb/> viewed by a majority of survey respondents as a means to<lb/> improve adverse event data quality and<lb/> comprehensiveness, enhance clinical decision-making, and<lb/> foster patient-clinician communication. Research is ongoing<lb/> to assess the measurement properties and feasibility of<lb/> implementing this measure in cancer clinical trials.</div>
+	
 
 	Keywords<lb/> 
 	<keyword>Patient-reported outcomes, Symptoms, adverse<lb/> events, Oncology, Cancer, Clinical trials, Toxicity,<lb/> safety, Tolerability, Comparative effectiveness<lb/> research, Cooperative groups, National Cancer Institute<lb/></keyword>
@@ -82,13 +81,7 @@
 	<address>135 South LaSalle Street,<lb/> Chicago, IL 60603, USA</address>
 
 	<byline>
-	<affiliation>14<lb/> Department of Medicine, Duke<lb/> University School of Medicine,<lb/></affiliation>
-	</byline>
-
-	<address>25165 Morris Building, Duke<lb/></address>
-
-	<byline>
-	<affiliation>University Medical Center ,</affiliation>
+	<affiliation>14<lb/> Department of Medicine, Duke<lb/> University School of Medicine,<lb/> 25165 Morris Building, Duke<lb/> University Medical Center ,</affiliation>
 	</byline>
 
 	<address>Box<lb/> 3436, Durham, NC 27710, USA</address>
@@ -129,7 +122,11 @@
 
 	<address>307<lb/> E.63rd Street, 2nd floor, New York,<lb/> NY 10065, USA<lb/></address> 
 
-	Correspondence to: E Basch<lb/>
+	Correspondence to:
+	<byline>
+	<docAuthor>E Basch</docAuthor>
+	</byline>
+	<lb/>
 	
 	<email>basche@mskcc.org</email>
 

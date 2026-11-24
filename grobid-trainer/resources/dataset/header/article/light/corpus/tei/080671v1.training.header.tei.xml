@@ -46,23 +46,20 @@
 
 	<address>USA<lb/></address>
 
-	6 Present address:
 	<byline>
-	<affiliation>College of Medicine, University of Tennessee Health Science Center,<lb/></affiliation>
+	<affiliation>6 Present address: College of Medicine, University of Tennessee Health Science Center,<lb/></affiliation>
 	</byline>
 
 	<address>Memphis, Tennessee, USA<lb/></address>
 
-	7 Present address:
 	<byline>
-	<affiliation>Brody School of Medicine, East Carolina University,</affiliation>
+	<affiliation>7 Present address: Brody School of Medicine, East Carolina University,</affiliation>
 	</byline>
 
 	<address>Greenville, North<lb/> Carolina, USA<lb/></address>
 
-	8 Present address:
 	<byline>
-	<affiliation>Department of Biological Sciences, Louisiana State University,</affiliation>
+	<affiliation>8 Present address: Department of Biological Sciences, Louisiana State University,</affiliation>
 	</byline>
 
 	<address>Baton<lb/> Rouge, Louisiana, USA<lb/></address>
@@ -70,8 +67,7 @@
 	* Corresponding:
 	<email>asteen1@utk.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">Microbial communities inhabiting subsurface sediments contain abundant heterotrophs,<lb/> which oxidize organic matter to obtain carbon and energy. Subsurface sediments contain<lb/> very low concentrations of canonically bioavailable compounds, and it is not clear what<lb/> fraction of sedimentary organic matter the community metabolizes. To gain a more<lb/> mechanistic understanding of subsurface heterotrophy, we studied both the genetic<lb/> potential encoded within metagenomes for extracellular peptidase production, and<lb/> experimentally assayed the potential activities of a wide range of extracellular peptidases<lb/> in sediments of the White Oak River estuary, NC. Deeply sequenced metagenomes<lb/> revealed genes coding for at least 15 classes of extracellular peptidases. We observed<lb/> enzyme-catalyzed hydrolysis of 11 different peptidase substrates in subsurface sediments.<lb/> Potential activities (V max ) of extracellular peptidases decreased downcore, but cell-<lb/>specific V max was relatively constant and similar to values observed in seawater<lb/> phytoplankton blooms. Decreases in half-saturation constants and relative increases in<lb/> activities of D-phenylalanyl aminopeptidase and ornithyl aminopeptidase with depth<lb/> indicate a community of heterotrophs that is adapted to access degraded organic matter.<lb/> These results suggest a subsurface heterotrophic community that converts degraded<lb/> organic matter into a bioavailable form, rather than a surface-adapted community relying<lb/> on ever-decreasing concentrations of more labile organic matter.</div>
+	
 
 		</front>
 	</text>

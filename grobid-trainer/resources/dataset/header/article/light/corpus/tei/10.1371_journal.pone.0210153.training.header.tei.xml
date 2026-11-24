@@ -31,13 +31,7 @@
 	<address>Seoul,<lb/> Republic of Korea,</address>
 
 	<byline>
-	<affiliation>3 Division of Endocrinology and Metabolism, Department of Internal Medicine,</affiliation>
-	</byline>
-
-	<address>Bucheon<lb/></address>
-
-	<byline>
-	<affiliation>St. Mary&apos;s Hospital, College of Medicine, The Catholic University of Korea,</affiliation>
+	<affiliation>3 Division of Endocrinology and Metabolism, Department of Internal Medicine, Bucheon<lb/> St. Mary&apos;s Hospital, College of Medicine, The Catholic University of Korea,</affiliation>
 	</byline>
 
 	<address>Bucheon, Republic of Korea,<lb/></address>
@@ -54,8 +48,7 @@
 	(WYL);
 	<email>mrchir@naver.com</email>
 
-	(YHK) Abstract
-	<div type="abstract">Background<lb/> Overweight is known as a risk factor for ischemic stroke. However, the effect of weight<lb/> change on the development of ischemic stroke remains controversial. We investigated the<lb/> relationship between weight change and the risk of ischemic stroke using a nationwide pop-<lb/>ulation-based cohort. Methods<lb/> Our study enrolled 11,084,683 participants (Mean age 49.7±13.5 years, range 20-114<lb/> years) in the Korean National Health Screening Program from 2009 to 2012. Weight change<lb/> was calculated using the difference between the baseline weight and the weight at health<lb/> screening four years prior to the baseline. The occurrence of newly-diagnosed ischemic<lb/> stroke was observed until the end of 2015. We categorized the study population according<lb/> to weight change and performed multivariable analysis to compare the risk. Results<lb/> Ischemic stroke was newly diagnosed in 113,591 subjects. The crude incidence rates of<lb/> ischemic stroke per 1000 person-years according to the change in body weight were 3.059,<lb/> 1.906, and 1.491 in the &lt;-5%, ±5%, and �+5% groups, respectively. After adjusting all vari-<lb/>ables, the hazard ratio (HR) of ischemic stroke was higher in subjects who underwent weight<lb/> loss (HR 1.152) or weight gain (HR 1.087) than in those who maintained their weight. When<lb/></div>
+	(YHK) 
 
 	<reference>PLOS ONE | https://doi.org/10.1371/journal.pone.0210153 January 3, 2019<lb/></reference>
 
@@ -93,7 +86,9 @@
 	Funding:
 	<note type="funding">This research was supported by a grant<lb/> from the Korea Health Technology R&amp;D Project<lb/> through the Korea Health Industry Development<lb/></note>
 
-	<div type="abstract">analyzed by eight groups of 5% intervals, the risk showed a U-shaped curve with those who<lb/> maintained their weight showing the lowest risk. Conclusions<lb/> The risk of ischemic stroke was gradually increased in those who lost or gained more than<lb/> 5% of their weight over four years, after adjusting for confounders. We should be aware of<lb/> the increased risk of ischemic stroke in people who undergo weight change and should iden-<lb/>tify and manage the cause of weight change.<lb/> Institute (KHIDI), funded by the Ministry of Health<lb/> &amp; Welfare, Republic of Korea (grant number:<lb/> HC16C2285) to SJY. The funders had no role in<lb/> study design, data collection and analysis, decision<lb/> to publish, or preparation of the manuscript.<lb/></div>
+	
+
+	<note type="funding">Institute (KHIDI), funded by the Ministry of Health<lb/> &amp; Welfare, Republic of Korea (grant number:<lb/> HC16C2285) to SJY. The funders had no role in<lb/> study design, data collection and analysis, decision<lb/> to publish, or preparation of the manuscript.<lb/></note>
 
 	Competing interests:
     <note type="conflict">The authors have declared<lb/> that no competing interests exist.</note>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName><forename>Kathrin</forename> <surname>Zürcher</surname> <marker>1 2 *</marker>,</persName>
+<persName><forename>Marie</forename> <surname>Ballif</surname> <marker>1 *</marker>,</persName>
+<persName><forename>Lukas</forename> <surname>Fenner</surname> <marker>1</marker> ,</persName>
+<persName><forename>Sonia</forename> <surname>Borrell</surname> <marker>2 3</marker> ,</persName>
+<persName><forename>Peter</forename> <middlename>M</middlename>. <surname>Keller</surname> <marker>4 5</marker> ,</persName>
+<persName><forename>Joachim</forename> <surname>Gnokoro</surname> <marker>6</marker> ,</persName>
+<persName><forename>Olivier</forename> <surname>Marcy</surname> <marker>7</marker> ,</persName>
+<persName><forename>Marcel</forename> <surname>Yotebieng</surname> <marker>8</marker> ,</persName>
+<persName><forename>Lameck</forename> <surname>Diero</surname> <marker>9 10</marker> ,</persName>
+<persName><forename>E</forename>. <middlename>Jane</middlename> <surname>Carter</surname> <marker>9 10</marker> ,</persName>
+<persName><forename>Neesha</forename> <surname>Rockwood</surname> <marker>11 12</marker> ,</persName>
+<persName><forename>Robert</forename> <middlename>J</middlename>. <surname>Wilkinson</surname> <marker>11 12 13</marker> ,</persName>
+<persName><forename>Helen</forename> <surname>Cox</surname> <marker>14</marker> ,</persName>
+<persName><forename>Nicholas</forename> <surname>Ezati</surname> <marker>15 16</marker> ,</persName>
+<persName><forename>Alash&apos;le</forename> <middlename>G</middlename>. <surname>Abimiku</surname> <marker>15 16</marker> ,</persName>
+<persName><forename>Jimena</forename> <surname>Collantes</surname> <marker>17</marker> ,</persName>
+<persName><forename>Anchalee</forename> <surname>Avihingsanon</surname> <marker>18 19</marker> ,</persName>
+<persName><forename>Kamon</forename> <surname>Kawkitinarong</surname> <marker>19</marker> ,</persName>
+<persName><forename>Miriam</forename> <surname>Reinhard</surname> <marker>2 3</marker> ,</persName>
+<persName><forename>Rico</forename> <surname>Hömke</surname> <marker>4</marker> ,</persName>
+<persName><forename>Robin</forename> <surname>Huebner</surname> <marker>20</marker> , ,</persName>
+<persName><forename>Sebastien</forename> <surname>Gagneux</surname> <marker>2 3 *</marker>,</persName>
+<persName><forename>Erik</forename> <middlename>C</middlename>. <surname>Böttger</surname> <marker>4 5 *</marker>,</persName>
+<persName><forename>Matthias</forename> <surname>Egger</surname> <marker>1 21 *</marker>,</persName>
+<persName><roleName>Professor</roleName> <forename>Matthias</forename> <surname>Egger</surname></persName>
+AI069919, U01 AI069924, U01 AI069911, U01 AI069907, U01 AI096186
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

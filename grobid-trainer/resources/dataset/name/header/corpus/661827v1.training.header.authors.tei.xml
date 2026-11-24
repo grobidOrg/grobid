@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Maria</forename>
+								<middlename>Suzana</middlename>
+								<surname>Marques</surname>
+								<marker>1,2, ¶</marker> ,
+							</persName>
+							<persName>
+								<forename>Ronilson</forename>
+								<middlename>Ferreira</middlename>
+								<surname>Freitas</surname>
+								<marker>1, ¶</marker>,
+							</persName>
+							<persName>
+								<forename>Daniela</forename>
+								<surname>Araújo Veloso Popoff</surname>
+								<marker>1,2, ¶</marker> ,
+							</persName>
+							<persName>
+								<forename>Fernanda</forename>
+								<surname>Piana Santos Lima de Oliveira</surname>
+								<marker>2, ¶</marker>,
+							</persName>
+							<persName>
+								<forename>Maria</forename>
+								<middlename>Helena</middlename>
+								<surname>Rodrigues Moreira</surname>
+								<marker>3, ¶</marker> ,
+							</persName>
+							<persName>
+								<forename>Andreia</forename>
+								<middlename>Maria</middlename>
+								<surname>Araújo Drummond</surname>
+								<marker>4,&amp;</marker> ,
+							</persName>
+							<persName>
+								<forename>Dorothéa</forename>
+								<surname>Schmidt França</surname>
+								<marker>2,&amp;</marker> ,
+							</persName>
+							<persName>
+								<forename>Luís</forename>
+								<middlename>Antônio</middlename>
+								<surname>Nogueira dos Santos</surname>
+								<marker>1,2,&amp;</marker> ,
+							</persName>
+							<persName>
+								<forename>Marcelo</forename>
+								<middlename>Eustáquio</middlename>
+								<surname>de Siqueira e Rocha</surname>
+								<marker>1,&amp;</marker> ,
+							</persName>
+							<persName>
+								<forename>João</forename>
+								<middlename>Pedro</middlename>
+								<surname>Brant Rocha</surname>
+								<marker>4,&amp;</marker> ,
+							</persName>
+							<persName>
+								<forename>Maria</forename>
+								<middlename>Clara</middlename>
+								<surname>Brant Rocha</surname>
+								<marker>5,&amp;</marker> ,
+							</persName>
+							<persName>
+								<forename>Maria</forename>
+								<middlename>Fernanda</middlename>
+								<surname>Santos Figueiredo Brito</surname>
+								<marker>1, ¶</marker>,
+							</persName>
+							<persName>
+								<forename>Antônio</forename>
+								<surname>Prates Caldeira</surname>
+								<marker>1,2, ¶</marker> ,
+							</persName>
+							<persName>
+								<forename>Fabiana</forename>
+								<middlename>Aparecida</middlename>
+								<middlename>Maria</middlename> <surname>Borborema</surname>
+								<marker>2,&amp;</marker> ,
+							</persName>
+							<persName>
+								<forename>Viviane</forename>
+								<middlename>Maria</middlename>
+								<surname>Santos</surname>
+								<marker>2,&amp;</marker> ,
+							</persName>
+							<persName>
+								<forename>Josiane</forename>
+								<surname>Santos Brant Rocha</surname>
+								<marker>1,2, ¶</marker>
+							</persName>
+						</author>
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

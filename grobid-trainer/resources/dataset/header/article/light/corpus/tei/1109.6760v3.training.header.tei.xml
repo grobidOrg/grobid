@@ -20,7 +20,7 @@
 
 	<address>24 avenue des Landais, 63172 AUBIERE, France<lb/></address>
 
-	<div type="abstract">We use a minimum requirement approach to derive the number of jobs in proximity services per<lb/> inhabitant in French rural municipalities. We first classify the municipalities according to their<lb/> time distance in minutes by car to the municipality where the inhabitants go the most frequently<lb/> to get services (called M F M ). For each set corresponding to a range of time distance to M F M ,<lb/> we perform a quantile regression estimating the minimum number of service jobs per inhabitant<lb/> that we interpret as an estimation of the number of proximity jobs per inhabitant. We observe that<lb/> the minimum number of service jobs per inhabitant is smaller in small municipalities. Moreover,<lb/> for municipalities of similar sizes, when the distance to the M F M increases, the number of jobs of<lb/> proximity services per inhabitant increases.</div>
+	
 
 		</front>
 	</text>

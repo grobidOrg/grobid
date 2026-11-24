@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Matt</forename><middlename>J</middlename>.<surname>Neville</surname><marker>1,2 ¶</marker> ,</persName>
+<persName><forename>Laura</forename><middlename>BL</middlename>.<surname>Wittemans</surname><marker>3 ¶</marker> ,</persName>
+<persName><forename>Katherine</forename><middlename>E</middlename>.<surname>Pinnick</surname><marker>1</marker> ,</persName>
+<persName><forename>Marijana</forename><surname>Todorčević</surname><marker>1</marker> ,</persName>
+<persName><forename>Risto</forename><surname>Kaksonen</surname><marker>4</marker> ,</persName>
+<persName><forename>Kirsi</forename><middlename>H</middlename>.<surname>Pietiläinen</surname><marker>4,5</marker> ,</persName>
+<persName><forename>Jian&apos;an</forename><surname>Luan</surname><marker>3</marker> ,</persName>
+<persName><forename>Robert</forename><middlename>A</middlename>.<surname>Scott</surname><marker>3</marker> ,</persName>
+<persName><forename>Nicholas</forename><middlename>J</middlename>.<surname>Wareham</surname><marker>3</marker> ,</persName>
+<persName><forename>Claudia</forename><surname>Langenberg</surname><marker>3</marker> ,</persName>
+<persName><forename>Fredrik</forename><surname>Karpe</surname><marker>1,2 *</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

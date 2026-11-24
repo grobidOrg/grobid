@@ -34,8 +34,7 @@
 
 	<address>Vancouver, BC V6T 1Z4, Canada<lb/></address>
 
-	Abstract:
-	<div type="abstract">It is shown that if a formula is constructed from noisy 2-input NAND gates,<lb/> with each gate failing independently with probability &quot;, then reliable computation can or<lb/> cannot take place according as &quot; is less than or greater than &quot; 0 = (3? p<lb/> 7)=4 = 0:08856 : : : .<lb/></div>
+	
 
 	<note type="funding">* This research was supported by an NSERC Canada International Fellowship.<lb/> ** This research was supported by an NSERC Research Grant.</note>
 

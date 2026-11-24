@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Suha</forename> <surname>Naser-Khdour</surname> <marker>*</marker>, </persName>
+<persName><forename>Bui</forename> <middlename>Quang</middlename> <surname>Minh</surname>, </persName>
+<persName><forename>Wenqi</forename> <surname>Zhang</surname>, </persName>
+<persName><forename>Eric</forename> <surname>Stone</surname>, </persName>
+<persName><forename>Robert</forename> <surname>Lanfear</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

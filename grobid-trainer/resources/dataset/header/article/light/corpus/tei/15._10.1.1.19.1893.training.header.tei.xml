@@ -48,16 +48,13 @@
 
 	<address>Pittsburgh, PA 15213<lb/></address> 
 
-	<address>D-79110 Freiburg, </address>
-
-	<address>Germany D-53117 Bonn, Germany<lb/></address>
+	<address>D-79110 Freiburg, Germany</address> <address>D-53117 Bonn, Germany<lb/></address>
 
 	<address>Austin, TX 78712<lb/></address>
 
 	<note type="submission">submitted to AAAI-98</note>
 
-	Abstract<lb/>
-	<div type="abstract">The problem of concurrent mapping and localization has re-<lb/>ceived considerable attention in the mobile robotics commu-<lb/>nity. With few exceptions, existing approaches can largely be<lb/> grouped into two distinct paradigms: topological and metric.<lb/> This paper proposes a method that integrates both paradigms.<lb/> It poses the mapping problem as a statistical maximum like-<lb/>lihood problem, and devises an efficient algorithm for search<lb/> in likelihood space. Based on that, it presents an novel map-<lb/>ping algorithm that integrates two phases: a topological and a<lb/> metric mapping phase. The topological mapping phase solves a<lb/> global position alignment problem between potentially indistin-<lb/>guishable, significant places. The subsequent metric mapping<lb/> phase produces a fine-grained metric map of the environment<lb/> in floating-point resolution. Experimental results in cyclic en-<lb/>vironments of sizes up to 80 by 25 meters demonstrate the<lb/> appropriateness of this approach.</div>
+	
 
 		</front>
 	</text>

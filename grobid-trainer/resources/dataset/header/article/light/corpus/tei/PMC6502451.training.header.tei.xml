@@ -35,13 +35,25 @@
 	<address>Katowice, Poland,</address>
 
 	<byline>
-	<affiliation>4 The Houston<lb/> Methodist Research Institute, Houston,Texas, United States of America, 5 The Houston Methodist Hospital,<lb/> Department of Surgery,</affiliation>
+	<affiliation>4 The Houston<lb/> Methodist Research Institute,</affiliation>
+	</byline>
+
+	<address>Houston,Texas, United States of America,</address>
+
+	<byline>
+	<affiliation>5 The Houston Methodist Hospital,<lb/> Department of Surgery,</affiliation>
 	</byline>
 
 	<address>Houston, Texas, United States of America,</address>
 
 	<byline>
-	<affiliation>6 The University of Texas, M.D.<lb/> Anderson Cancer Center, Department of Genetics, Houston Texas, United States of America, 7 Department<lb/> of Regenerative Medicine and Cell Biology, Military Institute of Hygiene and Epidemiology (WIHE),</affiliation>
+	<affiliation>6 The University of Texas, M.D.<lb/> Anderson Cancer Center, Department of Genetics,</affiliation>
+	</byline>
+
+	<address>Houston Texas, United States of America,</address>
+
+	<byline>
+	<affiliation>7 Department<lb/> of Regenerative Medicine and Cell Biology, Military Institute of Hygiene and Epidemiology (WIHE),</affiliation>
 	</byline>
 
 	<address>Warsaw,<lb/> Poland,</address>
@@ -55,8 +67,7 @@
 	*
 	<email>jacek.francikowski@us.edu.pl</email>
 
-	Abstract<lb/>
-	<div type="abstract">Two eye-colour mutant strains, white (W) and yellow (Y) of house cricket Acheta domesticus<lb/> were established in our laboratory. We phenotyped and genotyped the mutants, performed<lb/> genetic crossings and studied the eye structure and pigment composition using light and<lb/> electron microscopy and biochemical analysis. We show that W and Y phenotypes are con-<lb/>trolled by a single autosomal recessive allele, as both traits are metabolically independent.<lb/> The analysis of the mutants&apos;eye structure showed a reduced number of dark pigment gran-<lb/>ules while simultaneously, and an increased amount of light vacuoles in white eye mutants<lb/> was observed. Significant differences in eye pigment composition between strains were<lb/> also found. The Y mutant had a lower number of ommochromes, while the W mutant had a<lb/> lower number of ommochromes and pteridines. This indicates that mutated genes are<lb/> involved in two different, independent metabolic pathways regulating tryptophan metabolism<lb/> enzymes, pigment transporter granules or pigment granule formation.<lb/></div>
+	
 
 	<reference>PLOS ONE | https://doi.org/10.1371/journal.pone.0216281 May 6, 2019<lb/></reference>
 

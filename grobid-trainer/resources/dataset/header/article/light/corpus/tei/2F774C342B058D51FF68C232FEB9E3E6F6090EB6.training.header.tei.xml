@@ -16,7 +16,7 @@
 	<docAuthor>J. Russell Lipford 1 , Geoffrey T. Smith 1 , Yong Chi 1 † &amp; Raymond J. Deshaies 1<lb/></docAuthor>
 	</byline>
 
-	<div type="abstract">The ubiquitin-proteasome system (UPS) promotes the destruc-<lb/>tion of target proteins by attaching to them a ubiquitin chain that<lb/> is recognized by the 26S proteasome 1 . The UPS influences most<lb/> cellular processes, and its targets include transcriptional activa-<lb/>tors that are primary determinants of gene expression. Emerging<lb/> evidence indicates that non-proteolytic functions of the UPS<lb/> might stimulate transcriptional activity 2,3 . Here we show that<lb/> the proteolysis of some transcriptional activators by the UPS<lb/> can stimulate their function. We focused on the role of UPS-<lb/>dependent proteolysis in the function of inducible transcriptional<lb/> activators in yeast, and found that inhibition of the proteasome 4<lb/> reduced transcription of the targets of the activators Gcn4, Gal4<lb/> and Ino2/4. In addition, mutations in SCF Cdc4 , the ubiquitin<lb/> ligase for Gcn4 (ref. 5), or mutations in ubiquitin that prevent<lb/> degradation 6 , also impaired the transcription of Gcn4 targets.<lb/> These transcriptional defects were manifested despite the<lb/> enhanced abundance of Gcn4 on cognate promoters. Proteasome<lb/> inhibition also decreased the association of RNA polymerase II<lb/> with Gcn4, Gal4 and Ino2/4 targets, as did mutations in SCF Cdc4<lb/> for Gcn4 targets. Expression of a stable phospho-site mutant of<lb/> Gcn4 (ref. 7) or disruption of the kinases that target Gcn4 for<lb/> turnover 5,7 alleviated the sensitivity of Gcn4 activity to defects in<lb/> the UPS.</div>
+	
 
 	<note type="doctype">LETTERS<lb/></note>
 
@@ -26,9 +26,8 @@
 
 	<address>1200 E. California Boulevard, Pasadena, California 91125, USA.<lb/></address>
 
-	†Present address: 
 	<byline>
-	<affiliation>Institute for Systems Biology,</affiliation>
+	<affiliation>†Present address: Institute for Systems Biology,</affiliation>
 	</byline>
 
 	<address>1441 North 34th Street, Seattle, Washington 98103, USA.<lb/></address>

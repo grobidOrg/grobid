@@ -31,8 +31,7 @@
 	,
 	<email>mkhabsa@fb.com</email>
 
-	Abstract<lb/>
-	<div type="abstract">In this paper, we introduce UNIFIEDM2, a<lb/> general-purpose misinformation model that<lb/> jointly models multiple domains of misinfor-<lb/>mation with a single, unified setup. The<lb/> model is trained to handle four tasks: detect-<lb/>ing news bias, clickbait, fake news and ver-<lb/>ifying rumors. By grouping these tasks to-<lb/>gether, UNIFIEDM2 learns a richer represen-<lb/>tation of misinformation, which leads to state-<lb/>of-the-art or comparable performance across<lb/> all tasks. Furthermore, we demonstrate that<lb/> UNIFIEDM2&apos;s learned representation is help-<lb/>ful for few-shot learning of unseen misinfor-<lb/>mation tasks/datasets and model&apos;s generaliz-<lb/>ability to unseen events.<lb/></div>
+	
 
 	* Work partially done while interning at Facebook AI.<lb/> † Work partially done while working at Facebook AI.<lb/>
 

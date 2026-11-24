@@ -19,19 +19,18 @@
 	</byline>
 
 	<byline>
-	<affiliation>Brown Universityy<lb/> Brown Universityy<lb/></affiliation>
+	<affiliation>Brown Universityy<lb/></affiliation> <affiliation>Brown Universityy<lb/></affiliation>
 	</byline>
 
 	<byline>
-	<docAuthor>Scott L. Vandenberg<lb/> Stanley B. Zdonik<lb/> Siena Collegez<lb/></docAuthor>
+	<docAuthor>Scott L. Vandenberg<lb/> Stanley B. Zdonik<lb/></docAuthor>
 	</byline>
 
 	<byline>
-	<affiliation>Brown Universityy</affiliation>
+	<affiliation>Siena Collegez<lb/></affiliation> <affiliation>Brown Universityy</affiliation>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">Relational database systems and most object-<lb/>oriented database systems provide support for queries.<lb/> Usually these queries represent retrievals over sets or<lb/> multisets. Many new applications for databases, such<lb/> as multimedia systems and digital libraries, need sup-<lb/>port for queries on complex bulk types such as lists<lb/> and trees. In this paper we describe an object-oriented<lb/> query algebra for lists and trees. The operators in the<lb/> algebra preserve the ordering between the elements of a<lb/> list or tree, even when the result list or tree contains an<lb/> arbitrary set of nodes from the original tree. We also<lb/> present predicate languages for lists and trees which<lb/> allow order-sensitive queries because they use pattern<lb/> matching to examine groups of list or tree nodes rather<lb/> than individual nodes. The ability to decompose pred-<lb/>icate patterns enables optimizations that make use of<lb/> indices.<lb/></div>
+	
 
 	<note type="funding">Partial support for this work was provided by the Ad-<lb/>vanced Research Projects Agency under contract N00014-91-<lb/>J-4052 ARPA order 8225, and contract DAAB-07-91-C-Q518<lb/> under subcontract F41100.<lb/></note>
 
@@ -42,10 +41,10 @@
 	<address>Providence,<lb/> RI 02912-1910.<lb/></address>
 
 	<byline>
-	<affiliation>z Dept. of Computer Science,</affiliation>
+	<affiliation>z Dept. of Computer Science, Siena College,</affiliation>
 	</byline>
 
-	<address>Siena College, Loudonville,<lb/> NY 12211</address>
+	<address>Loudonville,<lb/> NY 12211</address>
 
 		</front>
 	</text>

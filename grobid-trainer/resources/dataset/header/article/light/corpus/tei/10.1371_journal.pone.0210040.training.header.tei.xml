@@ -31,8 +31,7 @@
 	*
 	<email>h.bastaki@ucl.ac.uk</email>
 
-	Abstract
-	<div type="abstract">Objective<lb/> To investigate trends in the incidence of imported malaria in the UK between 2005 and 2016. Design<lb/> Analysis of longitudinal electronic health records (EHRs) in The Health Improvement Net-<lb/>work (THIN) primary care database. Setting<lb/> UK primary care Participants<lb/> In total, we examined 12,349,003 individuals aged 0 to 99 years.<lb/> Outcome measure<lb/> The rate of malaria recordings in THIN was calculated per year between 2005 and 2016.<lb/> Rate ratios exploring differences by age, sex, location of general practice, socioeconomic<lb/> status and ethnicity were estimated using multivariable Poisson regression. Results<lb/> A total of 1,474 individuals with a first diagnosis of malaria were identified in THIN between<lb/> 2005 and 2016. The incidence of recorded malaria followed a decreasing trend dropping<lb/> from a rate of 3.33 in 2005 to 1.36 cases per 100,000 person years at risk in 2016. Multivari-<lb/>able Poisson regression showed that adults of working age (20 to 69 years), men, those reg-<lb/>istered with a general practice in London, higher social deprivation and non-white ethnicity<lb/> were associated with higher rates of malaria recordings. Conclusion<lb/> There has been a decrease in the number of malaria recordings in UK primary care over the<lb/> past decade. This decrease exceeds the rate of decline reported in national surveillance<lb/></div>
+	
 
 	<reference>PLOS ONE | https://doi.org/10.1371/journal.pone.0210040 December 31, 2018<lb/></reference>
 
@@ -67,7 +66,7 @@
 	Data Availability Statement:
 	<note type="availability">The authors have <lb/>obtained the data for this study from IQVIA through <lb/>a research license and do not own the dataset used <lb/>and do not have permission to share the data. <lb/>Access to THIN can be obtained through IQVIA by <lb/>applying for a research license. More information <lb/>on the availability of THIN data is available in the <lb/>following URL https://www.iqvia.com/locations/uk-<lb/>and-ireland/thin and permissions for data access <lb/>can be obtained through https://www.iqvia.com/ <lb/>contact/general. The authors accessed the data in <lb/>the same manner and had no special privileges to <lb/>the data. <lb/></note>
 
-	<div type="abstract">data; however there are similar associations with age, sex and deprivation. Improved geo-<lb/>graphic information on the distribution of cases and the potential for automation of case<lb/> identification suggests that EHRs could provide a complementary role for investigating<lb/> malaria trends over time.<lb/></div>
+	
 
 	Funding:
 	<note type="funding">The authors received no specific funding<lb/> for this work.<lb/></note>

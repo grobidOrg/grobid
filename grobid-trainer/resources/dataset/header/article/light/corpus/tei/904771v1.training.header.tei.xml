@@ -7,8 +7,10 @@
 		<front>
 <lb/>
 	<docTitle>
-	<titlePart>Integrative analysis identifies candidate tumor<lb/> microenvironment and intracellular signaling<lb/> pathways that define tumor heterogeneity in NF1 Authors<lb/></titlePart>
+	<titlePart>Integrative analysis identifies candidate tumor<lb/> microenvironment and intracellular signaling<lb/> pathways that define tumor heterogeneity in NF1</titlePart>
 	</docTitle>
+
+	Authors<lb/>
 
 	<byline>
 	<docAuthor>Jineta Banerjee 1 *, Robert J Allaway 1 *, Jaclyn N Taroni 2 , Aaron Baker 1,4 , Xiaochun Zhang 5 ,<lb/> Chang In Moon 5 , Jaishri O Blakeley 6 , Justin Guinney 1 , Angela Hirbe 5 , Casey S Greene 2,3 , Sara<lb/> JC Gosline 1 ^<lb/></docAuthor>
@@ -53,8 +55,7 @@
 
 	<address>Baltimore, MD 21287</address>
 
-	Abstract<lb/>
-	<div type="abstract">Neurofibromatosis type 1 is a monogenic syndrome that gives rise to numerous symptoms<lb/> including cognitive impairment, skeletal abnormalities, and growth of benign nerve sheath<lb/> tumors. Nearly all NF1 patients develop cutaneous neurofibromas (cNFs), which occur on the<lb/> skin surface, while 40-60% of patients develop plexiform neurofibromas (pNFs) which are<lb/> deeply embedded in the peripheral nerves. Patients with pNFs have a ~10% lifetime chance of<lb/> these tumors becoming malignant peripheral nerve sheath tumors (MPNSTs). These tumors<lb/> have a severe prognosis and few treatment options other than surgery. Given the lack of<lb/> therapeutic options available to patients with these tumors, identification of druggable pathways<lb/> or other key molecular features could aid ongoing therapeutic discovery studies. In this work, we<lb/> used statistical and machine learning methods to analyze 77 genomically characterized NF1<lb/> tumors with the goal of characterizing key signaling pathways that distinguish these tumors and<lb/> identifying candidates for drug development. We identified subsets of latent gene expression<lb/> variables that may be important in the identification and etiology of cNFs, pNFs, other 1<lb/> neurofibromas, and MPNSTs. Furthermore, we characterized the association between these<lb/> latent variables and genetic variants, immune deconvolution predictions, and protein activity<lb/> predictions.</div>
+	
 
 	Keywords<lb/>
 	<keyword>neurofibromatosis type 1, nerve sheath tumor, cancer, latent variables, machine learning,<lb/> supervised learning, transfer learning, random forest, metaVIPER, tumor deconvolution</keyword>

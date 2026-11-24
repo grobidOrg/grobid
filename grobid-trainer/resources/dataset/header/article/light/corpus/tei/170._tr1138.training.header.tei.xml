@@ -23,8 +23,7 @@
 	E-mail: 
 	<email>(gregory.hager, joao.hespanha, zachary.dodds, as.morse)@yale.edu</email> 
 
-	Abstract<lb/>
-	<div type="abstract">This article studies the following question: \When is it possible to decide, on the ba-<lb/>sis of images of point features observed by an imprecisely modeled two-camera stereo<lb/> vision system, whether or not a prescribed robot positioning task has been accom-<lb/>plished with precision?&quot; It is shown that for a stereo vision system with known epipo-<lb/>lar geometry, whether or not such a positioning task has been accomplished can be<lb/> decided with available data, just in case the task function which speci es the task is a<lb/> projective invariant.<lb/></div>
+	
 
 	<note type="funding">This research was supported by the National Science Foundation, the Army Research O ce, and the<lb/> Air Force O ce of Scienti c Research</note>
 		</front>

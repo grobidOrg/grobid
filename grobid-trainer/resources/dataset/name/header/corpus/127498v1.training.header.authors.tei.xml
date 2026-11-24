@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Zachary</forename>
+								 <middlename>J</middlename>.
+								 <surname>Whitfield</surname>
+								 <marker>1*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Patrick</forename>
+								 <middlename>T</middlename>.
+								 <surname>Dolan</surname>
+								 <marker>1*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mark</forename>
+								 <surname>Kunitomi</surname>
+								 <marker>1*#</marker> ,
+							</persName>
+							<persName>
+								 <forename>Michel</forename>
+								 <surname>Tassetto</surname>
+								 <marker>1 , 4</marker>
+							</persName>
+							<persName>
+								 <forename>Matthew</forename>
+								 <middlename>G</middlename>.
+								 <surname>Seetin</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Steve</forename>
+								 <surname>Oh</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Cheryl</forename>
+								 <surname>Heiner</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ellen</forename>
+								 <surname>Paxinos</surname>
+								 <marker>2</marker> , and
+							</persName>
+							<persName>
+								 <forename>Raul</forename>
+								 <marker>5</marker>
+								 <surname>Andino</surname>
+								 <marker>1 6 7</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

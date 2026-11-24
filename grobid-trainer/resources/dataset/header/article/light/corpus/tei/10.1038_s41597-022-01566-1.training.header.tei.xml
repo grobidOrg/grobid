@@ -8,7 +8,11 @@
 
 	<page>1<lb/></page>
 
-	<reference>Scientific Data |<lb/> (2022) 9:450 | https://doi.org/10.1038/s41597-022-01566-1<lb/> www.nature.com/scientificdata<lb/></reference>
+	<reference>Scientific Data |<lb/> (2022) 9:450 |</reference>
+
+	<idno>https://doi.org/10.1038/s41597-022-01566-1<lb/></idno>
+
+	<ptr type="web">www.nature.com/scientificdata<lb/></ptr>
 
 	<docTitle>
 	<titlePart>Mapping hydrologic alteration and<lb/> ecological consequences in stream<lb/> reaches of the conterminous United States<lb/></titlePart>
@@ -18,7 +22,7 @@
 	<docAuthor>Ryan a. McManamay 1 ✉ , Rob George 2 , Ryan R. Morrison 3 &amp; Benjamin L. Ruddell 2<lb/></docAuthor>
 	</byline>
 
-	<div type="abstract">Environmental flows are critical for balancing societal water needs with that of riverine ecosystems;<lb/> however, data limitations often hinder the development of predictive relationships between<lb/> anthropogenic modifications to streamflow regimes and ecological responses -these relationships<lb/> are the basis for setting regional water policy standards for rivers. Herein, we present and describe a<lb/> comprehensive dataset of modeled hydrologic alteration and consequences for native fish biodiversity,<lb/> both mapped at the stream-reach resolution for the conterminous U.S. Using empirical observations<lb/> of reference conditions and anthropogenically altered streamflow at over 7000 stream gauges, we<lb/> developed a predictive model of hydrologic alteration, which was extended to &gt;2.6 million stream<lb/> reaches. We then used a previous nationwide assessment of ecological responses to hydrologic<lb/> alteration to predict fish biodiversity loss in stream reaches resulting from streamflow modification.<lb/> Validation efforts suggested hydrologic alteration models had satisfactory performance, whereas<lb/> modeled ecological responses were susceptible to compounded errors. The dataset could ameliorate<lb/> regional data deficits for setting environmental flow standards while providing tools for prioritizing<lb/> streamflow protection or restoration.</div>
+	
 
 	<byline>
 	<affiliation>1<lb/> Department of Environmental Science, Baylor University,</affiliation>
@@ -41,9 +45,9 @@
 	✉ e-mail:
 	<email>Ryan_McManamay@baylor.edu<lb/></email>
 
-	<note type="docType">Data DeScRiptoR</note>
+	<note type="doctype">Data DeScRiptoR</note>
 
-	<note type="docType">opeN<lb/></note>
+	<note type="doctype">opeN<lb/></note>
 
 	<note type="submission">Received: 8 February 2022; Accepted: 13 July 2022;<lb/></note>
 

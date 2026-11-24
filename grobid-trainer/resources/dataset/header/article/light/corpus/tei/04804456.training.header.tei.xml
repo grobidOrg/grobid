@@ -36,8 +36,7 @@
 	Email:
 	<email>mccusker@sonalysts.com</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper describes a combined fusion and mining<lb/> framework applied to the detection of stealthy bot-<lb/>nets. The framework leverages a fusion engine that<lb/> tracks hosts through the use of feature-based profiles<lb/> generated from multiple network sensor types. These<lb/> profiles are classified and correlated based on a set<lb/> of known host profiles, e.g., web servers, mail servers,<lb/> and bot behavioral characteristics. A mining engine<lb/> discovers emergent threat profiles and delivers them<lb/> to the fusion engine for processing. We describe the<lb/> distributed nature of botnets and how they are created<lb/> and managed. We then describe a combined fusion and<lb/> mining model that builds on recent work in the cyber<lb/> security domain. The framework we present employs<lb/> an adaptive fusion system driven by a mining system<lb/> focused on the discovery of new threats. We conclude<lb/> with a discussion of experimental results, deployment<lb/> issues, and a summary of our arguments.<lb/></div>
+	
 
 	Keywords:
 	<keyword>botnets, crimeware, distributed threat, data<lb/> fusion, data mining, distributed detection model, pro-<lb/>file, hyperplane, network behavior analyzer, threat-<lb/>centricity.<lb/></keyword>

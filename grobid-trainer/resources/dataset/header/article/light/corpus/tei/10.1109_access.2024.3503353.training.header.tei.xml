@@ -95,8 +95,7 @@
 	<docAuthor>Xiaodong Huang , Xiaojian Hao , Baowu Pan , Shaogang Chen , Shenxiang Feng , and Pan Pei<lb/></docAuthor>
 	</byline>
 
-	Abstract-
-	<div type="abstract">Considering the importance of combustion diagno-<lb/>sis in industrial manufacturing and many fields, efficient, quick,<lb/> and real-time multidimensional reconstruction is necessary and<lb/> indispensable. Hence, focusing on the combustion field dynamic<lb/> and multi-dimensional reconstruction, a modified U-ConvLSTM<lb/> model was proposed to combine with the TDLAS method to resolve<lb/> the real-time reconstruction and short prediction. By dividing the<lb/> combustion field into space and time slices, we used discretized spa-<lb/>tiotemporal slices to complete the 2-D distribution reconstruction<lb/> and then expanded them into higher dimensions. The simulation<lb/> results demonstrate that our design can effectively reconstruct<lb/> different 2-D distributions, achieving a reconstruction error of less<lb/> than 5%. Three-step predictions also performed well, a PSNR no<lb/> less than 30 dB, and an SSIM no less than 0.75. In general, our<lb/> multidimensional combustion field reconstruction method, based<lb/> on the spatiotemporal discretization U-ConvLSTM model, can en-<lb/>hance the accuracy of combustion field reconstruction and provide<lb/> short-term predictions. This work will contribute to closed-loop<lb/> control in industrial fields.<lb/></div>
+	
 
 	Index Terms-
 	<keyword>Tunable diode laser absorption spectroscopy<lb/> (TDLAS), U-model convolutional long short-term memory (U-<lb/>ConvLSTM), combustion site, reconstruction, predicted.<lb/></keyword>

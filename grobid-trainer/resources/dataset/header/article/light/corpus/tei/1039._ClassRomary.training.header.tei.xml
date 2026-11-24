@@ -60,8 +60,7 @@
 
 	<email>Laurent.Romary@loria.fr<lb/></email>
 
-	Abstract<lb/>
-	<div type="abstract">In this chapter we describe the MIAMM project. Its objective is the development<lb/> of new concepts and techniques for user interfaces employing graphics, haptics<lb/> and speech to allow fast and easy navigation in large amounts of data. This goal<lb/> poses challenges as to how can the information and its structure be characterized<lb/> by means of visual and haptic features, how the architecture of such a system is<lb/> to be defined, and how we can standardize the interfaces between the modules<lb/> of a multi-modal system.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Multimodal dialogue system, haptics, information visualization.</keyword>

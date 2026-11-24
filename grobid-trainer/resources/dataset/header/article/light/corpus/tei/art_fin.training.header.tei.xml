@@ -16,8 +16,7 @@
 
 	<date>April 20, 2012</date>
 
-	Abstract<lb/>
-	<div type="abstract">The mathematical description of laboratory fusion plasmas produced in Tokamaks is still challenging. Com-<lb/>plete models for electrons and ions, as Vlasov-Maxwell systems, are computationally too expensive because they<lb/> take into account all details and scales of magneto-hydrodynamics. In particular, for most of the relevant stud-<lb/>ies, the mass electron is negligible and the velocity of material waves is much smaller than the speed of light.<lb/> Therefore it is useful to understand simplified models. Here we propose and study one of those which keeps<lb/> both the complexity of the Vlasov equation for ions and the Hall effect in Maxwell&apos;s equation. Based on energy<lb/> dissipation, a fundamental physical property, we show that the model is nonlinear stable and consequently prove<lb/> existence.<lb/></div>
+	
 
 	Key words:
 	<keyword>Vlasov equations; Plasma physics; Kinetic averaging lemma; Maxwell&apos;s equations.<lb/></keyword>

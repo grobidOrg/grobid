@@ -10,7 +10,7 @@
 	<affiliation>MASSACHUSETTS INSTITUTE OF TECHNOLOGY<lb/> ARTIFICIAL INTELLIGENCE LABORATORY and<lb/> CENTER FOR BIOLOGICAL AND COMPUTATIONAL LEARNING<lb/> DEPARTMENT OF BRAIN AND COGNITIVE SCIENCES<lb/></affiliation>
 	</byline>
 
-	<reference>A.I. Memo No. 1565<lb/> February 2, 1996<lb/> C.B.C.L. Memo No. 132<lb/></reference>
+	A.I. Memo No. 1565<lb/> <date>February 2, 1996</date><lb/> C.B.C.L. Memo No. 132<lb/>
 
 	<docTitle>
 	<titlePart>Probabilistic Independence Networks for Hidden<lb/> Markov Probability M o d e l s<lb/></titlePart>
@@ -20,8 +20,7 @@
 	<docAuthor>Padhraic Smyth, David Heckerman, and Michael Jordan</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">Graphical techniques for modeling the dependencies of random variables have been explored in a variety<lb/> of di erent areas including statistics, statistical physics, arti cial intelligence, speech recognition, image<lb/> processing, and genetics. Formalisms for manipulating these models have been developed relatively<lb/> independently in these research c o m m unities. In this paper we explore hidden Markov models (HMMs)<lb/> and related structures within the general framework of probabilistic independence networks (PINs). The<lb/> paper contains a self-contained review of the basic principles of PINs. It is shown that the well-known<lb/> forward-backward (F-B) and Viterbi algorithms for HMMs are special cases of more general inference<lb/> algorithms for arbitrary PINs. Furthermore, the existence of inference and estimation algorithms for<lb/> more general graphical models provides a set of analysis tools for HMM practitioners who wish to explore<lb/> a richer class of HMM structures. Examples of relatively complex models to handle sensor fusion and<lb/> coarticulation in speech recognition are introduced and treated within the graphical model framework<lb/> to illustrate the advantages of the general approach.<lb/></div>
+	
 
 	<note type="copyright">Copyright c Massachusetts Institute of Technology, 1996<lb/></note>
 
@@ -51,9 +50,9 @@
 	<email>heckerma@microsoft.com</email>
 
 	,<lb/> and
-	<email>jordan@psyche.mit.edu. Support</email>
+	<email>jordan@psyche.mit.edu</email>.
 
-	<note type="funding">for CBCL is provided in part by a grant from the NSF (ASC{9217041).<lb/> Support for the laboratory&apos;s arti cial intelligence research i s p r o vided in part by t h e A d v anced Research Projects<lb/> Agency of the Dept. of Defense. MIJ gratefully acknowledges discussions with Ste en Lauritzen on the application<lb/> of the IPF algorithm to UPINs.</note>
+	<note type="funding">Support for CBCL is provided in part by a grant from the NSF (ASC{9217041).<lb/> Support for the laboratory&apos;s arti cial intelligence research i s p r o vided in part by t h e A d v anced Research Projects<lb/> Agency of the Dept. of Defense. MIJ gratefully acknowledges discussions with Ste en Lauritzen on the application<lb/> of the IPF algorithm to UPINs.</note>
 
 		</front>
 	</text>

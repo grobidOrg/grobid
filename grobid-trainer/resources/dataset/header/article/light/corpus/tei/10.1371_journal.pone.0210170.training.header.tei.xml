@@ -25,8 +25,7 @@
 	*
 	<email>christopher.wall12@nhs.net</email>
 
-	Abstract
-	<div type="abstract">Aims<lb/> To assess the impact of the introduction of direct oral anticoagulants upon the outcomes<lb/> from elective electrical cardioversion for atrial fibrillation. Methods<lb/> This is a retrospective comparison of delay to elective cardioversion with different anticoag-<lb/>ulants. The data was gathered from a large regional hospital from January 2013 to Septem-<lb/>ber 2017. There were 3 measured outcomes: 1) the time in weeks from referral to the date<lb/> of attempted electrical cardioversion; 2) the proportion of patients who were successfully<lb/> cardioverted; and 3) the proportion of patients who remained in sinus rhythm by the 12 week<lb/> follow-up. Time-to-cardioversion was non-parametrically distributed so was analysed with<lb/> Kruskal-Wallis testing and Mann-Whitney-U testing. Maintenance of sinus rhythm was ana-<lb/>lysed using z-testing. Results<lb/> 1,374 patients were submitted to cardioversion. The referrals for cardioversion were either<lb/> from primary care or from cardiologists. At the time of cardioversion, 789 cases were antic-<lb/>oagulated on warfarin (W), 215 on apixaban (A) and 370 on rivaroxaban (R). All 3 cohorts<lb/> were initially compared independently using Kruskal-Wallis testing. This demonstrated a<lb/> significant difference in the delay (measured in weeks) between the A and W group (A = 7,<lb/> W = 9, P&lt;0.00001); the R and W group (R = 7, W = 9, P&lt;0.00001) and no difference<lb/> between R and A (A = 7, R = 7, P = 0.92). As there was no difference between the A and R<lb/> groups, they were combined to form the AR group. The AR group was compared to the W<lb/> group using Mann-Whitney-U testing which demonstrated a significant delay between the<lb/> groups (AR = 7, W = 9, P&lt;0.00001). Excluding patients with prior or unknown attempts of<lb/> cardioversion (n = 791), the W patients (n = 152) were less successful in achieving sinus<lb/> rhythm at cardioversion than the AR (n = 431) group (W = 95% vs AR = 99% P = 0.04).<lb/> However at 12 weeks, incidence of sinus rhythm was significantly different (W = 40% vs<lb/> AR = 49% P = 0.049). These groups were compared by z testing. At 12 weeks&apos; follow-up<lb/></div>
+	
 
 	<reference>PLOS ONE | https://doi.org/10.1371/journal.pone.0210170 January 3, 2019<lb/></reference>
 
@@ -67,7 +66,7 @@
 	Competing interests:
     <note type="conflict">The authors have declared<lb/> no competing interest exist.<lb/></note>
 
-	<div type="abstract">there was no statistical difference in rate of adverse consequences between the AR group<lb/> and the W group, but the rate of adverse consequences was too low to draw further<lb/> conclusions. Conclusion<lb/> DOACs appear to significantly shorten the latency between the decision to cardiovert and<lb/> the cardioversion procedure by at least 2 weeks compared to warfarin in a real-world setting.<lb/> In this study, patients who had not previously been cardioverted who were anticoagulated<lb/> with warfarin had a significantly lower probability of conversion to sinus rhythm and a signifi-<lb/>cantly lower probability to remain in sinus rhythm at the 12 week follow-up compared to the<lb/> combined apixaban and rivaroxaban group.</div>
+	
 
 		</front>
 	</text>

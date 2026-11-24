@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+	<persName>
+		<forename>Alpha</forename>
+		<middlename>Oumar</middlename>
+		<surname>Diallo</surname>
+		<marker>§, 1,2,3</marker> ,
+	</persName>
+	<persName>
+		<forename>Véronique</forename>
+		<surname>Chevalier</surname>
+		<marker>§,1,2,3</marker> ,
+	</persName>
+	<persName>
+		<forename>Julien</forename>
+		<surname>Cappelle</surname>
+		<marker>1,2,4</marker> ,
+	</persName>
+	<persName>
+		<forename>Raphael</forename>
+		<surname>Duboz</surname>
+		<marker>1,2,3</marker> ,
+	</persName>
+	<persName>
+		<forename>Didier</forename>
+		<surname>Fontenille</surname>
+		<marker>5</marker> ,
+	</persName>
+	<persName>
+		<forename>Benoit</forename>
+		<surname>Durand</surname>
+		<marker>6</marker>
+	</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

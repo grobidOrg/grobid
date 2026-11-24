@@ -14,27 +14,46 @@
 	<docAuthor>Chenguang Wang † , Yangqiu Song ‡ , Haoran Li † , Ming Zhang † , and Jiawei Han ‡<lb/></docAuthor>
 	</byline>
 
-	Chenguang Wang:
+
+	<byline>
+	<docAuthor>Chenguang Wang</docAuthor>
+	</byline>
+	:
 	<email>wangchenguang@pku.edu.cn</email>
 
-	; Yangqiu Song:
+	;
+	<byline>
+	<docAuthor>Yangqiu Song</docAuthor>
+	</byline>
+	:
 	<email>yqsong@illinois.edu</email>
 
-	; Haoran Li:<lb/>
+	;
+	<byline>
+	<docAuthor>Haoran Li</docAuthor>
+	</byline>
+	:<lb/>
 	<email>lihaoran_2012@pku.edu.cn</email>
 
-	; Ming Zhang:
+	;
+	<byline>
+	<docAuthor>Ming Zhang</docAuthor>
+	</byline>
+	:
 	<email>mzhang_cs@pku.edu.cn</email>
 
-	; Jiawei Han:
+	;
+	<byline>
+	<docAuthor>Jiawei Han</docAuthor>
+	</byline>
+	:
 	<email>hanj@illinois.edu<lb/></email>
 
 	<byline>
-	<affiliation>† School of EECS, Peking University<lb/> ‡ Department of Computer Science, University of Illinois at Urbana-Champaign</affiliation>
+	<affiliation>† School of EECS, Peking University<lb/></affiliation> <affiliation>‡ Department of Computer Science, University of Illinois at Urbana-Champaign</affiliation>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">As a fundamental task, document similarity measure has broad impact to document-based<lb/> classification, clustering and ranking. Traditional approaches represent documents as bag-of-<lb/>words and compute document similarities using measures like cosine, Jaccard, and dice. However,<lb/> entity phrases rather than single words in documents can be critical for evaluating document<lb/> relatedness. Moreover, types of entities and links between entities/words are also informative. We<lb/> propose a method to represent a document as a typed heterogeneous information network (HIN),<lb/> where the entities and relations are annotated with types. Multiple documents can be linked by the<lb/> words and entities in the HIN. Consequently, we convert the document similarity problem to a<lb/> graph distance problem. Intuitively, there could be multiple paths between a pair of documents.<lb/> We propose to use the meta-path defined in HIN to compute distance between documents. Instead<lb/> of burdening user to define meaningful meta-paths, an automatic method is proposed to rank the<lb/> meta-paths. Given the meta-paths associated with ranking scores, an HIN-based similarity<lb/> measure, KnowSim, is proposed to compute document similarities. Using Freebase, a well-known<lb/> world knowledge base, to conduct semantic parsing and construct HIN for documents, our<lb/> experiments on 20Newsgroups and RCV1 datasets show that KnowSim generates impressive<lb/> high-quality document clustering.<lb/></div>
+	
 
 	HHS Public Access<lb/> 
 	<note type="doctype">Author manuscript<lb/></note>

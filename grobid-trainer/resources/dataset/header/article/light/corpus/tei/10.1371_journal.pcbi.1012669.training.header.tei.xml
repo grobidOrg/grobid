@@ -216,10 +216,10 @@
 	<address>Saida, Lebanon,</address>
 
 	<byline>
-	<affiliation>23 King Saud Hospital, Unizah, Qaseem,</affiliation>
+	<affiliation>23 King Saud Hospital</affiliation>,
 	</byline>
 
-	<address>Saudi Arabia,</address>
+	<address>Unizah, Qaseem, Saudi Arabia,</address>
 
 	<byline>
 	<affiliation>24 Saudi Heart<lb/> Association,</affiliation>
@@ -236,8 +236,7 @@
 	*
 	<email>khalidalhabib13@hotmail.com</email>
 
-	Abstract
-	<div type="abstract">Background<lb/> The Program for the Evaluation and Management of Cardiac Events in the Middle East and<lb/> North Africa (PEACE MENA) is a prospective registry program in Arabian countries that<lb/> involves in patients with acute myocardial infarction (AMI) or acute heart failure (AHF). Methods<lb/> This prospective, multi-center, multi-country study is the first report of the baseline charac-<lb/>teristics and outcomes of inpatients with AMI who were enrolled during the first 14-month<lb/> recruitment phase. We report the clinical characteristics, socioeconomic, educational levels,<lb/> and management, in-hospital, one month and one-year outcomes.<lb/></div>
+	
 
 	<title level="j">PLOS ONE<lb/></title>
 	<reference>PLOS ONE | https://doi.org/10.1371/journal.pone.0296056 January 11, 2024<lb/></reference>
@@ -274,7 +273,7 @@
 	Funding:
 	<note type="funding">KS, MS, SB, SD, AH, HG, AM, FA, MA,<lb/> MY, HF, NF, WA, MA, PP, MA, IG, DD, AC, HA, MJ,<lb/> HA, NA, MA, HA -30 $ paid for each submitted<lb/> online CRF for data collection -This work was<lb/> supported by Roche Diagnostic Middle East FZCO<lb/> (https://www.roche-middleeast.com/) via a grant to</note>
 
-	<div type="abstract">Results<lb/> Between April 2019 and June 2020, 1377 patients with AMI were enrolled (79.1% males)<lb/> from 16 Arabian countries. The mean age (± SD) was 58 ± 12 years. Almost half of the popu-<lb/>lation had a net income &lt; $500/month, and 40% had limited education. Nearly half of the<lb/> cohort had a history of diabetes mellitus, hypertension, or hypercholesterolemia; 53% had<lb/> STEMI, and almost half (49.7%) underwent a primary percutaneous intervention (PCI) (low-<lb/>est 4.5% and highest 100%). Thrombolytics were used by 36.2%. (Lowest 6.45% and high-<lb/>est (90.9%). No reperfusion occurred in 13.8% of patients (lowest was 0% and highest<lb/> 72.7%).Primary PCI was performed less frequently in the lower income group vs. high<lb/> income group (26.3% vs. 54.7%; P&lt;0.001). Recurrent ischemia occurred more frequently in<lb/> the low-income group (10.9% vs. 7%; P = 0.018). Re-admission occurred in 9% at 1 month<lb/> and 30% at 1 year, whereas 1-month mortality was 0.7% and 1-year mortality 4.7%. Conclusion<lb/> In the MENA region, patients with AMI present at a young age and have a high burden of<lb/> cardiac risk factors. Most of the patients in the registry have a low income and low educa-<lb/>tional status. There is heterogeneity among key performance indicators of AMI manage-<lb/>ment among various Arabian countries.<lb/></div>
+	
 
     <note type="funding">KH based on the milestones action plan and was<lb/> paid to data collectors for their online-submitted<lb/> CRF. -The funder had no role in the study design,<lb/> data collection, or analysis.<lb/></note>
 

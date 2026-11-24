@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+<persName> <forename>Krithika</forename> <surname>Arumugam</surname> <marker>1</marker> , </persName>
+<persName> <forename>Caner</forename> <surname>Bagcı</surname> <marker>2,3</marker> , </persName>
+<persName> <forename>Irina</forename> <surname>Bessarab</surname> <marker>4</marker> , </persName>
+<persName> <forename>Sina</forename> <surname>Beier</surname> <marker>2</marker> , </persName>
+<persName> <forename>Benjamin</forename> <surname>Buchfink</surname> <marker>5</marker> , </persName>
+<persName> <forename>Anna</forename> <surname>Gorska</surname> <marker>2</marker> , </persName>
+<persName> <forename>Guanglei</forename> <surname>Qiu</surname> <marker>1</marker> , </persName>
+<persName> <forename>Daniel</forename> <middlename>H</middlename> <surname>Huson</surname> <marker>2,6* †</marker> and </persName>
+<persName> <forename>Rohan</forename> <middlename>BH</middlename> <surname>Williams</surname> <marker>4 †</marker> </persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

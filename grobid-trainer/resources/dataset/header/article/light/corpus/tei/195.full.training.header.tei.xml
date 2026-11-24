@@ -65,8 +65,7 @@
 
 	<address>655 Huntington Avenue, Boston, MA<lb/> 02115, USA<lb/></address>
 
-	SUMMARY<lb/>
-	<div type="abstract">In this paper we propose a multivariate extension of family-based association tests based on generalized<lb/> estimating equations. The test can be applied to multiple phenotypes and to phenotypic data obtained<lb/> in longitudinal studies without making any distributional assumptions for the phenotypic observations.<lb/> Methods for handling missing phenotypic information are discussed. Further, we compare the power of<lb/> the multivariate test with permutation tests and with using separate tests for each outcome which are<lb/> adjusted for multiple testing. Application of the proposed test to an asthma study illustrates the power of<lb/> the approach.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Family-based association tests (FBATs); GEE; Genetic association tests; Multivariate phenotypes.<lb/></keyword>

@@ -22,8 +22,7 @@
 
 	<email>du @cs.umass.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">Multi-armed bandits may be viewed as<lb/> decompositionally-structured Markov deci-<lb/>sion processes (MDP&apos;s) with potentially very-<lb/>large state sets. A particularly elegant<lb/> methodology for computing optimal policies<lb/> was developed over twenty ago by Gittins<lb/> Gittins &amp; Jones, 1974]. Gittins&apos; approach<lb/> reduces the problem of nding optimal poli-<lb/>cies for the original MDP to a sequence of<lb/> low-dimensional stopping problems whose so-<lb/>lutions determine the optimal policy through<lb/> the so-called \Gittins indices.&quot; Katehakis<lb/> and Veinott Katehakis &amp; Veinott, 1987] have<lb/> shown that the Gittins index for a process<lb/> in state i may be interpreted as a particular<lb/> component of the maximum-value function<lb/> associated with the \restart-in-i&quot; process,<lb/> a simple MDP to which standard solution<lb/> methods for computing optimal policies, such<lb/> as successive approximation, apply. This pa-<lb/>per explores the problem of learning the Git-<lb/>tins indices on-line without the aid of a pro-<lb/>cess model; it suggests utilizing process-state-<lb/>speci c Q-learning agents to solve their re-<lb/>spective restart-in-state-i subproblems, and<lb/> includes an example in which the online re-<lb/>inforcement learning approach is applied to<lb/> a problem of stochastic scheduling|one in-<lb/>stance drawn from a wide class of problems<lb/> that may be formulated as bandit problems.</div>
+	
 
 		</front>
 	</text>

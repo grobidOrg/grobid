@@ -21,7 +21,7 @@
 
 	[1]
 
-	<div type="abstract">Long-term climate and short-term environmental change both affect catchment<lb/> sediment yield, yet isolating the respective contributions has been difficult. To<lb/> help separate the different roles, a numerical ecogeomorphic model has been used to<lb/> explore the erosional impacts of different environmental changes across a gradient<lb/> of annual rainfall in water-limited fluvial landscapes. Results demonstrate that following<lb/> vegetation disturbances, sediment yield is a maximum in arid to semiarid climates,<lb/> decreasing in dryer climates owing to a paucity of vegetation to disturb and in wetter<lb/> climates owing to increasingly rapid postdisturbance recovery. The case of<lb/> sustained changes in annual rainfall is more complicated owing to trade-offs between<lb/> changes in vegetation cover and runoff. As climates abruptly become wetter, the barren,<lb/> arid landscapes produce the greatest sediment, but a secondary peak occurs in semiarid<lb/> climates where a high proportional increase in runoff coincides with runoff-limited<lb/> erosion. Sediment yield drops relative to prechange conditions between these two maxima,<lb/> where vegetation cover substantially increases and runoff drops. Conversely, as<lb/> climates become dryer, the effects of vegetation and runoff are transposed: sediment yield<lb/> peaks become troughs, and troughs become peaks. Together, these results suggest that<lb/> sediment yield depends both on the nature of the disturbance and on the landscape<lb/> and climatic contexts in which the disturbance acts. Prechange landscapes and climate set<lb/> the stage by prescribing whether sediment yield is vegetation limited or runoff limited.<lb/> Environmental changes then affect erosion by augmenting or diminishing the<lb/> prevailing geomorphic limitation.<lb/></div>
+	
 
 	Citation:
 	<reference>Collins, D. B. G., and R. L. Bras (2008), Climatic control of sediment yield in dry lands following climate and land cover<lb/> change, Water Resour. Res., 44, W10405, </reference>
@@ -35,10 +35,10 @@
 	<address>Cambridge, Massachusetts, USA.<lb/></address>
 
 	<byline>
-	<affiliation>2 Now at the Center for Sustainability and the Global Environment,<lb/> Nelson Institute for Environmental Studies, and the Center for Limnology,<lb/></affiliation>
+	<affiliation>2 Now at the Center for Sustainability and the Global Environment,<lb/> Nelson Institute for Environmental Studies, and the Center for Limnology,<lb/> University of Wisconsin-Madison,</affiliation>
 	</byline>
 
-	<address>University of Wisconsin-Madison, Madison, Wisconsin, USA.<lb/></address>
+	<address>Madison, Wisconsin, USA.<lb/></address>
 
 	<byline>
 	<affiliation>3 Now at Henry Samueli School of Engineering, University of California,<lb/></affiliation>
@@ -55,11 +55,11 @@
 	<page>1 of 8<lb/></page>
 
 	<byline>
-	<docAuthor>R. L. Bras, Henry</docAuthor>
+	<docAuthor>R. L. Bras,</docAuthor>
 	</byline>
 
 	<byline>
-	<affiliation>Samueli School of Engineering, University of<lb/> California, </affiliation>
+	<affiliation>Henry Samueli School of Engineering, University of<lb/> California, </affiliation>
 	</byline>
 
 	<address>305 Rockwell Engineering Center, Irvine, CA 92697-2700,<lb/> USA. </address>

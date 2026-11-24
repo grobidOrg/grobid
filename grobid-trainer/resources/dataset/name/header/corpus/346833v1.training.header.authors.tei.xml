@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+The IMEx Consortium Curators * ,
+<persName><surname>del Toro</surname> <forename>N</forename> <marker>1</marker> ,</persName>
+<persName><surname>Duesbury</surname> <forename>M</forename> <marker>1</marker> ,</persName>
+<persName><surname>Koch</surname> <forename>M</forename> <marker>1,2</marker> ,</persName>
+<persName><surname>Perfetto</surname> <forename>L</forename> <marker>1</marker> ,</persName>
+<persName><surname>Shrivastava</surname> <forename>A</forename> <marker>1</marker> ,</persName>
+<persName><surname>Ochoa</surname> <forename>D</forename> <marker>1</marker> ,</persName>
+<persName><surname>Wagih</surname> <forename>O</forename> <marker>1,3</marker> ,</persName>
+<persName><surname>Piñero</surname> <forename>J</forename> <marker>4</marker> ,</persName>
+<persName><surname>Kotlyar</surname> <forename>M</forename> <marker>5</marker> ,</persName>
+<persName><surname>Pastrello</surname> <forename>C</forename> <marker>5</marker> ,</persName>
+<persName><surname>Beltrao</surname> <forename>P</forename> <marker>1</marker> ,</persName>
+<persName><surname>Furlong</surname> <forename>LI</forename> <marker>4</marker> ,</persName>
+<persName><surname>Jurisica</surname> <forename>I</forename> <marker>5</marker> ,</persName>
+<persName><surname>Hermjakob</surname> <forename>H</forename> <marker>1</marker> ,</persName>
+<persName><surname>Orchard</surname> <forename>S</forename> <marker>1</marker> ,</persName>
+<persName><surname>Porras</surname> <forename>P</forename> <marker>1**</marker></persName> .
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

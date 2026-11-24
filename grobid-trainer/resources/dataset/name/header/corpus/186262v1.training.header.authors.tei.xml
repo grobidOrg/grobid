@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Elinor</forename> <surname>Hortle</surname> <marker>1</marker> ,</persName>
+<persName><forename>Fiona</forename> <middlename>C</middlename>. <surname>Brown</surname> <marker>2</marker> ,</persName>
+<persName><forename>Stephen</forename> <middlename>M</middlename>. <surname>Jane</surname> <marker>2,4,5</marker> ,</persName>
+<persName><forename>David</forename> <middlename>J</middlename>. <surname>Curtis</surname> <marker>2,4</marker> ,</persName>
+<persName><forename>Brendan</forename> <middlename>J</middlename>. <marker>4</marker> <surname>McMorran</surname> <marker>1</marker> ,</persName>
+<persName><forename>Simon</forename> <middlename>J</middlename>. <surname>Foote</surname> <marker>1</marker> , and</persName>
+<persName><forename>Gaetan</forename> <surname>Burgio</surname> <marker>1 5 6</marker></persName>
+<persName><roleName>Dr</roleName> <forename>Gaetan</forename> <surname>Burgio</surname> <marker>18</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Xianwei</forename>
+								 <surname>Zhang</surname>
+								 <marker>1,2,6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Zicong</forename>
+								 <surname>Li</surname>
+								 <marker>1,6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Huaqiang</forename>
+								 <surname>Yang</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Dewu</forename>
+								 <surname>Liu</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Gengyuan</forename>
+								 <surname>Cai</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Guoling</forename>
+								 <surname>Li</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jianxin</forename>
+								 <surname>Mo</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Dehua</forename>
+								 <surname>Wang</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Cuili</forename>
+								 <surname>Zhong</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Haoqiang</forename>
+								 <surname>Wang</surname>,
+							</persName>
+							<persName>
+								 <forename>Yue</forename>
+								 <surname>Sun</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Junsong</forename>
+								 <surname>Shi</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Enqin</forename>
+								 <surname>Zheng</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Fanmin</forename>
+								 <surname>Meng</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mao</forename>
+								 <surname>Zhang</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Xiaoyan</forename>
+								 <surname>He</surname>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rong</forename>
+								 <surname>Zhou</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jian</forename>
+								 <surname>Zhang</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Miaorong</forename>
+								 <surname>Huang</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ran</forename>
+								 <surname>Zhang</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ning</forename>
+								 <surname>Li</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ming</forename>
+								 <middlename>Z</middlename>.
+								 <surname>Fan</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jinzeng</forename>
+								 <surname>Yang</surname>
+								 <marker>4</marker> , and
+							</persName>
+							<persName>
+								 <forename>Zhenfang</forename>
+								 <surname>Wu</surname>
+								 <marker>1,2*</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

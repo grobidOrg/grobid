@@ -24,8 +24,7 @@
 
 	<address>4-192 Electrical Engineering and Computer Science Building<lb/> 200 Union St. SE, Minneapolis, MN 55455</address>
 
-	Abstract<lb/>
-	<div type="abstract">A neural network approach to the classic<lb/> inverted pendulum task is presented. This task is the<lb/> task of keeping a rigid pole, hinged to a cart and free<lb/> to fall in a plane, in a roughly vertical orientation by<lb/> moving the cart horizontally in the plane while keep-<lb/>ing the cart within some maximum distance of its<lb/> starting position. This task constitutes a difficult con-<lb/>trol problem if the parameters of the cart-pole system<lb/> are not known precisely or are variable. It also forms<lb/> the basis of an even more complex control-learning<lb/> problem if the controller must learn the proper actions<lb/> for successfully balancing the pole given only the cur-<lb/>rent state of the system and a failure signal when the<lb/> pole angle from the vertical becomes too great or the<lb/> cart exceeds one of the boundaries placed on its posi-<lb/>tion.<lb/> The approach presented is demonstrated to<lb/> be effective for the real-time control of a small, self-<lb/>contained mini-robot, specially outfitted for the task.<lb/> Origins and details of the learning scheme, specifics<lb/> of the mini-robot hardware, and results of actual<lb/> learning trials are presented.</div>
+	
 
 		</front>
 	</text>
