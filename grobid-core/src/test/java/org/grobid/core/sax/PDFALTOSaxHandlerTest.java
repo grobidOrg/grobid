@@ -193,10 +193,11 @@ public class PDFALTOSaxHandlerTest {
         String text = LayoutTokensUtil.toText(target.getTokenization());
 
         // the en dash is normalised to '-', the spaces around it are kept, the line-end hyphen stays attached,
-        // and the superscript minus of the exponent stays attached to its digit
-        assertThat(text, startsWith("Writing - original draft, ef-\nfect kg -1 "));
+        // the superscript minus of the exponent stays attached to its digit, and the zero-width <SP> inside
+        // the compound word adds no space
+        assertThat(text, startsWith("Writing - original draft, ef-\nfect kg -1 co-expressed "));
         assertThat(
                 LayoutTokensUtil.normalizeDehyphenizeText(target.getTokenization()),
-                is("Writing - original draft, effect kg -1"));
+                is("Writing - original draft, effect kg -1 co-expressed"));
     }
 }

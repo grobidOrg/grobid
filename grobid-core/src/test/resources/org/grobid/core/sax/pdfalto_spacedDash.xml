@@ -2,7 +2,8 @@
 <!-- Excerpt adapted from the pdfalto output of 10.1016/j.psj.2024.104119: the en dash is set in its own
      font, its VPOS is slightly lower than the words' one, and pdfalto emits <SP> around it. The second line
      ends with a real hyphenation ("ef-" + "fect"), with no <SP> after the hyphen, and contains a superscript
-     exponent "kg⁻¹" where pdfalto puts an <SP> between the minus and the digit. -->
+     exponent "kg⁻¹" where pdfalto puts an <SP> between the minus and the digit, and a compound word
+     "co-expressed" where pdfalto puts a zero-width <SP> after the hyphen (as in eLife PDFs). -->
 <alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/v3/alto.xsd">
   <Description><MeasurementUnit>pixel</MeasurementUnit></Description>
   <Styles>
@@ -34,6 +35,10 @@
             <String ID="p1_w8" CONTENT="−" HPOS="151.327" VPOS="360.8684" WIDTH="1.4943" HEIGHT="5.0812" STYLEREFS="font25"/>
             <SP WIDTH="3.1543" VPOS="360.8684" HPOS="152.8213"/>
             <String ID="p1_w9" CONTENT="1" HPOS="155.9756" VPOS="360.8624" WIDTH="3.3653" HEIGHT="6.6355" STYLEREFS="font26"/>
+            <SP WIDTH="2.2" VPOS="363.096" HPOS="159.3409"/>
+            <String ID="p1_w10" CONTENT="co-" HPOS="161.5409" VPOS="363.096" WIDTH="11.0" HEIGHT="8.8468" STYLEREFS="font1"/>
+            <SP WIDTH="0" VPOS="363.096" HPOS="172.5409"/>
+            <String ID="p1_w11" CONTENT="expressed" HPOS="172.5409" VPOS="363.096" WIDTH="34.0" HEIGHT="8.8468" STYLEREFS="font1"/>
           </TextLine>
         </TextBlock>
       </PrintSpace>
