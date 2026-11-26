@@ -1,0 +1,215 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="1-s2.0-S2211124721010135-main"/>
+	</teiHeader>
+	<text xml:lang="en">
+		<front>
+
+	Article<lb/> <titlePart>Skin exposure to UVB light induces a skin-brain-<lb/>gonad axis and sexual behavior<lb/></titlePart> Graphical abstract
+	<div type="highlight">Highlights<lb/> d UVB exposure increases circulating sex-steroid levels in mice<lb/> and humans<lb/> d UVB exposure enhances female attractiveness and<lb/> receptiveness toward males<lb/> d UVB exposure increases females&apos; estrus phase, HPG axis<lb/> hormones, and follicle growth<lb/> d Skin p53 regulates UVB-induced sexual behavior and ovarian<lb/> physiological changes</div>
+
+	Authors<lb/>
+	<byline>
+	<docAuthor>Roma Parikh, Eschar Sorek,<lb/> Shivang Parikh, ..., Ruth Percik,<lb/> Aron Weller, Carmit Levy</docAuthor>
+	</byline>
+
+	Correspondence<lb/>
+	<email>carmitlevy@post.tau.ac.il<lb/></email>
+
+	<reference>Parikh et al., 2021, Cell Reports 36, 109579<lb/> August 24, 2021 ª 2021 The Authors.<lb/></reference>
+
+	<idno>https://doi.org/10.1016/j.celrep.2021.109579</idno>
+
+	<note type="doctype">ll Article<lb/></note>
+
+	<docTitle>
+	<titlePart>Skin exposure to UVB light induces<lb/> a skin-brain-gonad axis and sexual behavior<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Roma Parikh, 1 Eschar Sorek, 1 Shivang Parikh, 1 Keren Michael, 2 Lior Bikovski, 3,4 Sagi Tshori, 5,6 Galit Shefer, 5<lb/> Shira Mingelgreen, 5 Taiba Zornitzki, 7 Hilla Knobler, 7 Gabriel Chodick, 8,23 Mariya Mardamshina, 1 Arjan Boonman, 9<lb/> Noga Kronfeld-Schor, 9 Hadas Bar-Joseph, 10 Dalit Ben-Yosef, 11,12 Hadar Amir, 13,14 Mor Pavlovsky, 15 Hagit Matz, 15,16<lb/> Tom Ben-Dov, 1,17 Tamar Golan, 1 Eran Nizri, 15,16 Daphna Liber, 18 Yair Liel, 19 Ronen Brenner, 20 Yftach Gepner, 21<lb/> Orit Karnieli-Miller, 22 Rina Hemi, 23 Ruth Shalgi, 24 Tali Kimchi, 25 Ruth Percik, 16,23 Aron Weller, 26 and Carmit Levy 1,27, *<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>1 Department of Human Genetics and Biochemistry, Sackler Faculty of Medicine, Tel Aviv University,</affiliation>
+	</byline>
+
+	<address>Tel Aviv 69978, Israel<lb/></address>
+
+	<byline>
+	<affiliation>2 Department of Human Services, The Max Stern Yezreel Valley Academic College,</affiliation>
+	</byline>
+
+	<address>Jezreel Valley 1930600, Israel<lb/></address>
+
+	<byline>
+	<affiliation>3 The Myers Neuro-Behavioral Core Facility, Sackler School of Medicine, Tel Aviv University,</affiliation>
+	</byline>
+
+	<address>Tel Aviv 69978, Israel<lb/></address>
+
+	<byline>
+	<affiliation>4 School of Behavioral Sciences,</affiliation>
+	</byline>
+
+	<address>Netanya Academic College, Netanya 4223587, Israel<lb/></address>
+
+	<byline>
+	<affiliation>5 Research Authority, Kaplan Medical Center,</affiliation>
+	</byline>
+
+	<address>Rehovot, Israel<lb/></address>
+
+	<byline>
+	<affiliation>6 Department of Biochemistry and Molecular Biology, Institute for Medical Research Israel-Canada, The Hebrew University,</affiliation>
+	</byline>
+
+	<address>Jerusalem, Israel<lb/></address>
+
+	<byline>
+	<affiliation>7 Diabetes, Endocrinology and Metabolic Disease Institute, Kaplan Medical Center, Hadassah School of Medicine, Hebrew University in<lb/> Jerusalem,</affiliation>
+	</byline>
+
+	<address>Rehovot, Israel<lb/></address>
+
+	<byline>
+	<affiliation>8 Maccabitech, Maccabi Healthcare Services,</affiliation>
+	</byline>
+
+	<address>Tel Aviv, Israel<lb/></address>
+
+	<byline>
+	<affiliation>9 School of Zoology, Faculty of Life Sciences and the Sagol School of Neuroscience, Tel Aviv University,</affiliation>
+	</byline>
+
+	<address>Tel Aviv 6997801, Israel<lb/></address>
+
+	<byline>
+	<affiliation>10 The TMCR Unit, Sackler Faculty of Medicine, Tel Aviv University,</affiliation>
+	</byline>
+
+	<address>Tel Aviv 69978, Israel<lb/></address>
+
+	<byline>
+	<affiliation>11 IVF Lab &amp; Wolfe PGD-Stem Cell Lab, Fertility Institute, Tel Aviv Sourasky Medical Center,</affiliation>
+	</byline>
+
+	<address>Tel Aviv, Israel<lb/></address>
+
+	<byline>
+	<affiliation>12 Department of Cell Biology and Development, Sackler Faculty of Medicine &amp; Sagol School of Neuroscience, Tel Aviv University,</affiliation>
+	</byline>
+
+	<address>Tel Aviv,<lb/> Israel<lb/></address>
+
+	<byline>
+	<affiliation>13 Fertility Institute, Tel Aviv Sourasky Medical Center,</affiliation>
+	</byline>
+
+	<address>Tel Aviv, Israel<lb/></address>
+
+	<byline>
+	<affiliation>14 Sackler Faculty of Medicine, Tel Aviv University,</affiliation>
+	</byline>
+
+	<address>Tel Aviv, Israel<lb/></address>
+
+	<byline>
+	<affiliation>15 Department of Dermatology, Tel Aviv Sourasky (Ichilov) Medical Center,</affiliation>
+	</byline>
+
+	<address>Tel Aviv 6423906, Israel<lb/></address>
+
+	<byline>
+	<affiliation>16 Sackler School of Medicine, Tel Aviv University,</affiliation>
+	</byline>
+
+	<address>Tel Aviv 69978, Israel<lb/></address>
+
+	<byline>
+	<affiliation>17 Department of Otolaryngology, Head and Neck surgery, Meir Medical Center,</affiliation>
+	</byline>
+
+	<address>Kfar Saba 4428164, Israel<lb/></address>
+
+	<byline>
+	<affiliation>18 Faculty of Humanities, Education and Social Sciences, Ono Academic College,</affiliation>
+	</byline>
+
+	<address>Kiryat Ono, Israel<lb/></address>
+
+	<byline>
+	<affiliation>19 Faculty of Health Sciences, Ben-Gurion University of the Negev,</affiliation>
+	</byline>
+
+	<address>Beer-Sheva, Israel<lb/></address>
+
+	<byline>
+	<affiliation>20 Institute of Pathology, E. Wolfson Medical Center,</affiliation>
+	</byline>
+
+	<address>Holon 58100, Israel<lb/></address>
+
+	<byline>
+	<affiliation>21 School of Public Health, Sackler Faculty of Medicine and Sylvan Adams Sports Institute, Tel Aviv University,</affiliation>
+	</byline>
+
+	<address>Tel Aviv 69978, Israel<lb/></address>
+
+	<byline>
+	<affiliation>22 Department of Medical Education, Sackler Faculty of Medicine, Tel Aviv University,</affiliation>
+	</byline>
+
+	<address>Tel Aviv 69978, Israel<lb/></address>
+
+	<byline>
+	<affiliation>23 Institute of Endocrinology, Chaim Sheba Medical Center,</affiliation>
+	</byline>
+
+	<address>Tel-Hashomer, Israel<lb/></address>
+
+	<byline>
+	<affiliation>24 Department of Cell and Developmental Biology, Sackler Faculty of Medicine, Tel Aviv University,</affiliation>
+	</byline>
+
+	<address>Tel Aviv 69978, Israel<lb/></address>
+
+	<byline>
+	<affiliation>25 Department of Neurobiology, Weizmann Institute of Science,</affiliation>
+	</byline>
+
+	<address>Rehovot, Israel<lb/></address>
+
+	<byline>
+	<affiliation>26 Department of Psychology and the Gonda Brain Research Center, Bar-Ilan University,</affiliation>
+	</byline>
+
+	<address>Ramat Gan 5290002, Israel<lb/></address>
+
+	27 Lead contact<lb/> *Correspondence:
+	<email>carmitlevy@post.tau.ac.il<lb/></email>
+
+	<idno>https://doi.org/10.1016/j.celrep.2021.109579</idno>
+
+	SUMMARY<lb/>
+	<div type="abstract">Ultraviolet (UV) light affects endocrinological and behavioral aspects of sexuality via an unknown mechanism.<lb/> Here we discover that ultraviolet B (UVB) exposure enhances the levels of sex-steroid hormones and sexual<lb/> behavior, which are mediated by the skin. In female mice, UVB exposure increases hypothalamus-pituitary-<lb/>gonadal axis hormone levels, resulting in larger ovaries; extends estrus days; and increases anti-Mullerian<lb/> hormone (AMH) expression. UVB exposure also enhances the sexual responsiveness and attractiveness<lb/> of females and male-female interactions. Conditional knockout of p53 specifically in skin keratinocytes abol-<lb/>ishes the effects of UVB. Thus, UVB triggers a skin-brain-gonadal axis through skin p53 activation. In humans,<lb/> solar exposure enhances romantic passion in both genders and aggressiveness in men, as seen in analysis of<lb/> individual questionaries, and positively correlates with testosterone level. Our findings suggest opportunities<lb/> for treatment of sex-steroid-related dysfunctions.<lb/> 1939), estradiol and testosterone levels in fish (Mitchell et al.,<lb/> 2014), and the attractiveness of hens to cockerels (Jones et al.,<lb/> 2001). This suggests that exposure to UV plays a major role in<lb/> the regulation of sexuality on both behavioral and endocrinological<lb/></div>
+
+	<note type="submission">Cell Reports 36, 109579, August 24, 2021 ª 2021 The Authors. 1<lb/></note>
+
+	<note type="copyright">This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/). ll<lb/></note>
+
+	<reference>and Slominski, 2015; Skobowiat et al., 2011, 2017; Slominski<lb/> et al., 2013, 2018).</reference>
+
+	<note type="submission">Received: November 9, 2020<lb/> Revised: May 12, 2021<lb/> Accepted: July 30, 2021<lb/></note>
+
+	Published:
+	<date>August 24, 2021<lb/></date>
+
+	<reference>Analytik Jena US<lb/> Cat # 95-0042-15<lb/> UVX radiometer<lb/> Analytik Jena US<lb/> Cat #97-0015-02<lb/> Cell Reports 36, 109579, August 24, 2021 e2</reference>
+
+	<note type="doctype">Article</note>
+
+		</front>
+	</text>
+</tei>
