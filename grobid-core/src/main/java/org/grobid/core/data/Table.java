@@ -61,6 +61,11 @@ public class Table extends Figure {
 
     private boolean goodTable = true;
 
+    // True when this table was built from a user-provided typed area rather than detected by the
+    // sequence-labelling model. Such a region usually carries only the table grid (no separately
+    // labelled head/caption), so it must not be discarded by the head+caption completeness check.
+    private boolean fromTypedArea = false;
+
     private StringBuilder note = null;
     private List<LayoutToken> noteLayoutTokens = null;
     private String labeledNote = null;
@@ -69,6 +74,14 @@ public class Table extends Figure {
 
     public void setGoodTable(boolean goodTable) {
         this.goodTable = goodTable;
+    }
+
+    public boolean isFromTypedArea() {
+        return fromTypedArea;
+    }
+
+    public void setFromTypedArea(boolean fromTypedArea) {
+        this.fromTypedArea = fromTypedArea;
     }
 
     public Table() {
@@ -80,7 +93,10 @@ public class Table extends Figure {
     }
 
     public boolean isCompleteForTEI() {
-        return (StringUtils.isNotEmpty(header) && StringUtils.isNotEmpty(caption));
+        // A table coming from a user-provided typed area is complete by virtue of its content region,
+        // even without a model-labelled head/caption (mirrors Figure.isCompleteForTEI() accepting a
+        // figure that only has graphic objects).
+        return fromTypedArea || (StringUtils.isNotEmpty(header) && StringUtils.isNotEmpty(caption));
     }
 
     @Override
