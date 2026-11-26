@@ -22,7 +22,13 @@
 	<affiliation>Los Alamos National Laboratory,</affiliation>
 	</byline>
 
-	<address>Los Alamos, NM 87545<lb/> ~AT&amp;T Bell Laboratories, Murray Hill, NJ 07974<lb/></address>
+	<address>Los Alamos, NM 87545<lb/></address>
+
+	<byline>
+	<affiliation>~AT&amp;T Bell Laboratories,</affiliation>
+	</byline>
+
+	<address>Murray Hill, NJ 07974<lb/></address>
 
 	~O~Also at 
 	<byline>

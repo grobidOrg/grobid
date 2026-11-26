@@ -4,10 +4,10 @@
 
 ### Java Development Kit (JDK)
 
-- **For building**: OpenJDK 21 or higher
+- **For building**: OpenJDK 21
 
 !!! important "JDK Requirements"
-    GROBID is developed using OpenJDK 21. 
+    GROBID is developed using OpenJDK 21.
 
 #### Installing OpenJDK
 
@@ -47,13 +47,13 @@ javac -version
 
 ### Latest stable release
 
-The [latest stable release](https://github.com/grobidOrg/grobid#latest-version) of GROBID is version ```0.9.1``` which can be downloaded as follow: 
+The [latest stable release](https://github.com/grobidOrg/grobid#latest-version) of GROBID is version ```0.9.1``` which can be downloaded as follow:
 ```bash
 > wget https://github.com/grobidOrg/grobid/archive/0.9.1.zip
 > unzip 0.9.1.zip
 ```
 
-or using the [docker](Grobid-docker.md) container. 
+or using the [docker](Grobid-docker.md) container.
 
 ### Current development version
 
@@ -75,7 +75,7 @@ Or download directly the zip file:
 !!! tip
     Please make sure that Grobid is installed in a path with no parent directories containing spaces.
 
-### Build GROBID with Gradle 
+### Build GROBID with Gradle
 
 The standard method for building GROBID is to use gradle. Under the main directory `grobid/`:
 ```bash
@@ -84,7 +84,7 @@ The standard method for building GROBID is to use gradle. Under the main directo
 
 ### Building through a proxy
 
-In case you are working through a proxy, you need to set the proxy information in the file `grobid/gradle.properties` by adding the following lines with the proper proxy parameters: 
+In case you are working through a proxy, you need to set the proxy information in the file `grobid/gradle.properties` by adding the following lines with the proper proxy parameters:
 
 ```
 systemProp.http.proxyHost=host
@@ -110,5 +110,5 @@ If you encounter any issues during installation, check our [Troubleshooting and 
 - Java version conflicts
 - Memory and build issues
 
-For Docker-based installation alternatives, see the [Docker documentation](Grobid-docker.md). 
+For Docker-based installation alternatives, see the [Docker documentation](Grobid-docker.md).
 

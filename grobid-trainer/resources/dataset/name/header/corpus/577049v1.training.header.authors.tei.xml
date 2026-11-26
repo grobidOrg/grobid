@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Yimam</forename> <surname>Getaneh</surname> <marker>1</marker> , <roleName>MSc</roleName>;</persName>
+<persName><forename>Atsbeha</forename> <surname>G / Egziabhier</surname> <marker>1</marker> , <roleName>MSc</roleName>;</persName>
+<persName><forename>Kidist</forename> <surname>Zealiyas</surname> <marker>1</marker> , <roleName>MSc</roleName>;</persName>
+<persName><forename>Rahel</forename> <surname>Tilahun</surname> <marker>1</marker> , <roleName>MSc</roleName>;</persName>
+<persName><forename>Mulu</forename> <surname>Girma</surname> <marker>1</marker> , <roleName>MSc</roleName>;</persName>
+<persName><forename>Gebremedihin</forename> <surname>G / Michael</surname> <marker>1</marker> , <roleName>MSc</roleName>;</persName>
+<persName><forename>Tekalign</forename> <surname>Deressa</surname> <marker>1</marker> , <roleName>PhD</roleName>;</persName>
+<persName><forename>Ebba</forename> <surname>Abate</surname> <marker>1</marker> , <roleName>PhD</roleName>;</persName>
+<persName><forename>Desta</forename> <surname>Kassa</surname> <marker>1</marker> , <roleName>PhD</roleName>;</persName>
+<persName><forename>Yibeltal</forename> <surname>Assefa</surname> <marker>2</marker> , <roleName>PhD</roleName>.</persName>
+<persName><forename>Yimam</forename> <surname>Getaneh</surname>,</persName>
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

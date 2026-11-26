@@ -122,7 +122,7 @@
     </byline>
           
     (
-    <idno>https://orcid.org/0000-0002-2697-<lb/>1492</idno>
+    <idno type="orcid">https://orcid.org/0000-0002-2697-<lb/>1492</idno>
           
     )<lb/> 
           
@@ -131,7 +131,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0002-4670-3321</idno>
+      <idno type="orcid">https://orcid.org/0000-0002-4670-3321</idno>
       
       )<lb/>
       
@@ -140,7 +140,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0003-3947-4337</idno>
+      <idno type="orcid">https://orcid.org/0000-0003-3947-4337</idno>
       
       )<lb/> 
       
@@ -149,7 +149,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0002-2474-2733</idno>
+      <idno type="orcid">https://orcid.org/0000-0002-2474-2733</idno>
       
       )<lb/>
       
@@ -158,7 +158,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0002-0907-882X</idno>
+      <idno type="orcid">https://orcid.org/0000-0002-0907-882X</idno>
       
       )<lb/>
       <byline>
@@ -166,7 +166,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0002-8073-8771</idno>
+      <idno type="orcid">https://orcid.org/0000-0002-8073-8771</idno>
       
       )<lb/>
       
@@ -175,7 +175,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0001-9725-547X</idno>
+      <idno type="orcid">https://orcid.org/0000-0001-9725-547X</idno>
       
       )<lb/>
       
@@ -184,7 +184,7 @@
     </byline>
            (
       
-      <idno>https://orcid.org/0000-0003-3947-4337</idno>
+      <idno type="orcid">https://orcid.org/0000-0003-3947-4337</idno>
       
       )<lb/>
       
@@ -203,8 +203,7 @@
 
 	Ethics approval and consent to participate<lb/> The experiment was performed at the research of the National<lb/> Institute of Animal Science of Korea (NIAS). The animal care and<lb/> use committee of NIAS reviewed and approved the protocol for this<lb/> study (Approval Number: NIAS20191536).<lb/>
 
-	CORRESPONDING AUTHOR CONTACT INFORMATION<lb/> For the corresponding author<lb/> (responsible for correspondence,<lb/> proofreading, and reprints)<lb/> Fill in information in each box below<lb/>
-	<keyword>First name, middle initial, last name<lb/></keyword>
+	CORRESPONDING AUTHOR CONTACT INFORMATION<lb/> For the corresponding author<lb/> (responsible for correspondence,<lb/> proofreading, and reprints)<lb/> Fill in information in each box below<lb/> First name, middle initial, last name<lb/>
 
 	<byline>
 	<docAuthor>Hyoun Wook Kim<lb/></docAuthor>
@@ -219,8 +218,7 @@
         <titlePart>Evaluation of the Quality Characteristics of Nitrogen Gas-Stunned<lb/> Chicken Breast Meat and Small Intestine</titlePart>
     </docTitle>
           
-    Abstract<lb/>
-	<div type="abstract">This study aimed to confirm the applicability of the new nitrogen (N2) gas stunning method in the broiler slaughtering<lb/> process by comparing the meat and small intestine quality following different stunning methods (electrical, carbon<lb/> dioxide (CO2), N2, and halal). Four treatments were compared: (i) electrical stunning (Elec), (ii) 80% CO2 gas stunning<lb/> (CO2-gas), (iii) 98% N2 gas stunning (N2-gas), and (iv) the non-stunning method (Halal). N2 gas stunning (98%) and<lb/> the halal method were conducted at the pilot plant abattoir of the national institute of animal science, Korea, and<lb/> electrical and 80% CO2 stunning were performed on the nearest commercial slaughter house. Meat pH24h, color<lb/> (lightness, redness and yellowness), proximate composition, water holding capacity (WHC), cooking loss, and<lb/> Warner-Bratzler shear force (WBSF) were measured, and in the small intestine, pH24h, color, thickness, and WBSF<lb/> were measured. The Elec treatment showed high lightness, yellowness, and low redness in both meat and the small<lb/> intestine, indicated by a pale color; the CO2-gas treatment showed high redness, low lightness, and low yellowness,<lb/> and the coloration of meat from the N2-gas treatment was intermediate between Elec and CO2-gas. For other quality<lb/> traits, the N2-gas showed good results and was between Elec and CO2-gas. Additionally, severe stress (low pH in both<lb/> meats), low WHC in meat, and cracked small intestine with numerous apertures were observed in the CO2-gas, and<lb/> pale colored hemorrhagic breast meat was found in the Elec. Therefore, in view of animal welfare and quality traits<lb/> of meat and the small intestine, 98% N2 gas can be considered in broiler stunning.<lb/></div>
+    
 
 	Keywords:
 	<keyword>slaughtering process; gas stun; nitrogen-stunning; chicken breast meat; small intestine</keyword>

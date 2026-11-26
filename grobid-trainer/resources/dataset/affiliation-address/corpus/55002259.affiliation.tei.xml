@@ -26,7 +26,7 @@
 							<lb/>
 							<address>
 								<addrLine>23 rue des Martyrs</addrLine>,
-								<postCode>38000 GRENOBLE</postCode>,
+								<postCode>38000</postCode> <settlement>GRENOBLE</settlement>,
 								<country>France</country>
 							</address>
 						</affiliation>

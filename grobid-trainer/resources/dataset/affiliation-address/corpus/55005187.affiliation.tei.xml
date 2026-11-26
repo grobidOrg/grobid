@@ -9,8 +9,9 @@
 
 						<affiliation>
 							<orgName type="institution">Carnegie Mellon University</orgName>
-							<orgName type="department">Department of Electrical and Computer Engineering Pittsburgh</orgName>,
+							<orgName type="department">Department of Electrical and Computer Engineering</orgName>
 							<address>
+								<settlement>Pittsburgh</settlement>,
 								<settlement>Pittsburgh</settlement>,
 								<region>PA</region>
 								<postCode>15213-3890</postCode>
@@ -19,8 +20,9 @@
 						</affiliation>
 						<affiliation>
 							<orgName type="institution">Portland State University</orgName>
-							<orgName type="department">Department of Electrical and Computer Engineering Portland</orgName>,
+							<orgName type="department">Department of Electrical and Computer Engineering</orgName>
 							<address>
+								<settlement>Portland</settlement>,
 								<settlement>Portland</settlement>,
 								<region>OR</region>
 								<postCode>97201</postCode>

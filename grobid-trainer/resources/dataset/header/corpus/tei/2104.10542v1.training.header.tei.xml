@@ -14,8 +14,13 @@
 	</docTitle>
 	
 	<byline>
-	<docAuthor>Jan Friso Groote [0000−0003−2196−6587] and Jeroen J.A.<lb/> Keiren [0000−0002−5772−9527]<lb/></docAuthor>
+	<docAuthor>Jan Friso Groote</docAuthor>
 	</byline>
+	[<idno type="orcid">0000−0003−2196−6587</idno>] and
+	<byline>
+	<docAuthor>Jeroen J.A.<lb/> Keiren</docAuthor>
+	</byline>
+	[<idno type="orcid">0000−0002−5772−9527</idno>]<lb/>
 
 	<byline>
 	<affiliation>Department of Mathematics and Computer Science,<lb/> Eindhoven University of Technology,</affiliation>

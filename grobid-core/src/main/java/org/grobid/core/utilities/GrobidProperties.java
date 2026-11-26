@@ -640,7 +640,8 @@ public class GrobidProperties {
     /**
      * Whether pdfalto is asked to drop glyphs lying entirely outside the current clip path
      * (text hidden inside clipped Form XObjects, typically manuscript text carried along by
-     * figures embedded as PDF). Configured by pdf.pdfalto.discardClippedText, default true.
+     * figures embedded as PDF). Configured by pdf.pdfalto.discardClippedText, default true;
+     * the pdfalto binaries shipped in grobid-home all support -discardClippedText.
      */
     public static boolean isPdfaltoDiscardClippedText() {
         if (grobidConfig == null || grobidConfig.grobid == null || grobidConfig.grobid.pdf == null

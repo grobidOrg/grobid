@@ -14,8 +14,7 @@
 	<docAuthor>Eric Allender, Danilo Bruschi<lb/> and Giovanni Pighizzini<lb/></docAuthor>
 	</byline>
 
-	Abstract.
-	<div type="abstract">Maximal word functions occur in data retrieval applications<lb/> and have connections with ranking problems, which in turn were rst<lb/> investigated in relation to data compression 21]. By the \maximal word<lb/> function&quot; of a language L<lb/> , we mean the problem of nding, on<lb/> input x, the lexicographically largest word belonging to L that is smaller<lb/> than or equal to x.<lb/> In this paper we present a parallel algorithm for computing maximal<lb/> word functions for languages recognized by one{way nondeterministic<lb/> auxiliary pushdown automata (and hence for the class of context{free<lb/> languages).<lb/> This paper is a continuation of a stream of research focusing on the<lb/> problem of identifying properties others than membership which are<lb/> easily computable for certain classes of languages. For a survey, see 24].<lb/></div>
+	
 
 	Subject classi cations. 
 	<keyword>68Q15,68Q25,68Q45.</keyword>

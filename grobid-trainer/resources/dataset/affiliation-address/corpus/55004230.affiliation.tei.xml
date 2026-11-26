@@ -15,7 +15,7 @@
 							<orgName type="institution">College of Science and Technology Temple University</orgName>,
 							<address>
 								<settlement>Philadelphia</settlement>,
-								<country>Pennsylvania</country>
+								<region>Pennsylvania</region>
 							</address>
 						</affiliation>
 						<affiliation>
@@ -45,7 +45,7 @@
 							<address>
 								<addrLine>La Jolla</addrLine>,
 								<settlement>San Diego</settlement>,
-								<country>California</country>
+								<region>California</region>
 							</address>
 						</affiliation>
 

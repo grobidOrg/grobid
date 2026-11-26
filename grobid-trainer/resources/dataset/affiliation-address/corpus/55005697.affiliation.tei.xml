@@ -9,9 +9,9 @@
 
 						<affiliation>
 							<marker>1</marker>
-							<orgName type="department">GE Global Research</orgName>,
-							<orgName type="department">One Research Circle</orgName>,
+							<orgName type="institution">GE Global Research</orgName>,
 							<address>
+								<addrLine>One Research Circle</addrLine>,
 								<settlement>Niskayuna</settlement>,
 								<region>NY</region>
 								<postCode>12309</postCode>,
@@ -33,7 +33,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>3</marker>
-							<orgName type="department">GE Healthcare</orgName>,
+							<orgName type="institution">GE Healthcare</orgName>,
 							<address>
 								<settlement>Waukesha</settlement>,
 								<region>WI</region>

@@ -2,7 +2,7 @@
     "model_name": "header-article-light-BidLSTM_CRF_FEATURES",
     "architecture": "BidLSTM_CRF_FEATURES",
     "embeddings_name": "glove-840B",
-    "char_vocab_size": 339,
+    "char_vocab_size": 272,
     "case_vocab_size": 8,
     "char_embedding_size": 25,
     "num_char_lstm_units": 25,
@@ -34,7 +34,7 @@
     ],
     "features_embedding_size": 4,
     "features_lstm_units": 4,
-    "max_sequence_length": 3000,
+    "max_sequence_length": 3500,
     "word_embedding_size": 300,
     "num_word_lstm_units": 100,
     "case_embedding_size": 5,
@@ -43,7 +43,7 @@
     "use_crf": true,
     "use_chain_crf": false,
     "fold_number": 1,
-    "batch_size": 9,
+    "batch_size": 3,
     "transformer_name": null,
     "features_map_to_index": {
         "9": {

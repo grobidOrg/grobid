@@ -281,9 +281,8 @@
 
 	<address>Berlin, Germany<lb/></address>
 
-	¤ Current address:
 	<byline>
-	<affiliation>Biontech SE,</affiliation>
+	<affiliation>¤ Current address: Biontech SE,</affiliation>
 	</byline>
 
 	<address>Mainz, Germany<lb/></address>
@@ -291,8 +290,7 @@
 	‡ These authors share first authorship on this work.<lb/> *
 	<email>tracey.weissgerber@bih-charite.de</email>
 
-	Abstract<lb/>
-	<div type="abstract">Methods sections are often missing essential details. Methodological shortcut citations, in<lb/> which authors cite previous papers instead of describing the method in detail, may contrib-<lb/>ute to this problem. This meta-research study used 3 approaches to examine shortcut cita-<lb/>tion use in neuroscience, biology, and psychiatry. First, we assessed current practices in<lb/> more than 750 papers. More than 90% of papers used shortcut citations. Other common<lb/> reasons for using citations in the methods included giving credit or specifying what was<lb/> used (who or what citation) and providing context or a justification (why citation). Next, we<lb/> reviewed 15 papers to determine what can happen when readers follow shortcut citations to<lb/> find methodological details. While shortcut citations can be used effectively, they can also<lb/> deprive readers of essential methodological details. Problems encountered included diffi-<lb/>culty identifying or accessing the cited materials, missing or insufficient descriptions of the<lb/> cited method, and shortcut citation chains. Third, we examined journal policies. Fewer than<lb/></div>
+	
 
 	<reference>PLOS Biology | https://doi.org/10.1371/journal.pbio.3002562 April 2, 2024<lb/></reference>
 
@@ -328,7 +326,7 @@
 	Data Availability Statement:
 	<note type="availability">The abstraction<lb/> protocols, data and code for the methodological<lb/> citations study and journal policy study were<lb/></note>
           
-    <div type="abstract">one quarter of journals had policies describing how authors should report previously<lb/> described methods. We propose that methodological shortcut citations should meet 3 crite-<lb/>ria; cited resources should provide (1) a detailed description of (2) the method used by the<lb/> citing authors&apos;, and (3) be open access. Resources that do not meet these criteria should be<lb/> cited to give credit, but not as shortcut citations. We outline actions that authors and journals<lb/> can take to use shortcut citations responsibly, while fostering a culture of open and repro-<lb/>ducible methods reporting.<lb/></div>
+    
           
     <note type="availability">deposited on the Open Science Framework (RRID:<lb/> SCR_003238) at https://osf.io/d2sa3/.<lb/></note>
 

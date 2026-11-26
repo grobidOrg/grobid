@@ -17,8 +17,7 @@
 
 		<email>fgursoy,kaleg@cs.uiuc.edu<lb/></email>
 
-		Abstract <lb/>
-		<div type="abstract">The communication latency is a major issue that must be dealt with in parallel <lb/>computing. The parallel computation model therefore must provide the ability to tolerate <lb/>such latencies. Communication using blocking receives is the commonly used mechanism <lb/>in parallel programming today. Message driven execution is an alternate mechanism <lb/>which does not use receive style statements at all. The message driven execution style <lb/>promotes the overlap of computation and communication: Programs written in this style <lb/>exhibit increased latency tolerance. However, they are often difficult to develop and <lb/>debug. We present a coordination language called Dagger to alleviate this problem. The <lb/>language has a mechanism which is called -expect, that replaces the receive statement. <lb/>It has been implemented in the Charm parallel programming system, and runs programs <lb/>portably on a variety of parallel machines. <lb/></div>
+		
 
 		</front>
 </text>

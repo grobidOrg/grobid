@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Department of Mathematics and Industrial Engineering</orgName>,
+							<orgName type="institution">Polytechnique Montreal</orgName>,
+							<address>
+								<postBox>P.O. Box<lb/> 6079</postBox>,
+								<addrLine>Station Centre-ville</addrLine>,
+								<settlement>Montreal</settlement>,
+								<region>QC</region>
+								<postCode>H3C 3A7</postCode>,
+								<country>Canada</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="department">Physical Activity Department</orgName>,
+							<orgName type="institution">Université du Québec à Montréal</orgName>,
+							<address>
+								<settlement>Montréal</settlement>
+								<region>QC</region>
+								<postCode>H3C 3P8</postCode>,
+							<lb/>
+								<country>Canada</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

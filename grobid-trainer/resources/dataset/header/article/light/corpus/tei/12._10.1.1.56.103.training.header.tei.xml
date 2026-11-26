@@ -22,8 +22,7 @@
 
 	<email>fjun,singhalg@cis.ohio-state.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">ATM Forum speci es public key cryptography to be the default ATM authentica-<lb/>tion mechanism and directory services like X.509 to be the infrastructure for public<lb/> key distribution and certi cation. Authenticated signaling, widely acknowledged<lb/> as a necessary security feature of ATM network, requires the signaling message to<lb/> be authenticated with a digital signature signed by the private key of the calling<lb/> party. To verify the digital signature, the called party needs to obtain the public<lb/> key of the calling party and a proof of the calling party&apos;s ownership to that public<lb/> key. In X.509, the standard form of such a proof is a chain of public key certi -<lb/>cates, called the certi cate path between two parties. Certi cate exchange protocol<lb/> (CEP), proposed by ATM Forum, requires that another bi-directional connection<lb/> be established between two parties to exchange public keys and certi cate paths<lb/> before an authenticated connection can be set up, which is not an ideal approach.<lb/> We propose an algorithm which is embedded into ATM routing protocols to gener-<lb/>ate a certi cate path inside a signaling message on-the-y as the signaling message<lb/> travels through the ATM network. In this approach, all that a calling party needs<lb/> to know for authentication purpose is its own public key certi cate and the ATM<lb/> network builds the rest of the certi cate path for it. Related issues like distribution<lb/> of public key certi cates and optimization of CA hierarchy are also addressed in<lb/> this paper.<lb/></div>
+	
 
 	Keywords:
 	<keyword>ATM, P-NNI, authenticated signaling, certi cate path.<lb/></keyword>

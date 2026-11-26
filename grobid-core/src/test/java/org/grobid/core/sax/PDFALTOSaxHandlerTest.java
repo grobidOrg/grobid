@@ -21,6 +21,7 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasSize;
+import static org.hamcrest.Matchers.startsWith;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
@@ -39,6 +40,7 @@ import org.grobid.core.document.DocumentSource;
 import org.grobid.core.lang.Language;
 import org.grobid.core.layout.GraphicObject;
 import org.grobid.core.layout.LayoutToken;
+import org.grobid.core.utilities.LayoutTokensUtil;
 
 public class PDFALTOSaxHandlerTest {
     SAXParserFactory spf = SAXParserFactory.newInstance();
@@ -181,4 +183,21 @@ public class PDFALTOSaxHandlerTest {
         assertThat(target.getLanguage().getLang(), is("zh"));
     }
 
+    @Test
+    public void testParsing_spacedDash_shouldKeepSpaceAfterDash() throws Exception {
+        InputStream inputStream = this.getClass().getResourceAsStream("pdfalto_spacedDash.xml");
+
+        SAXParser p = spf.newSAXParser();
+        p.parse(inputStream, target);
+
+        String text = LayoutTokensUtil.toText(target.getTokenization());
+
+        // the en dash is normalised to '-', the spaces around it are kept, the line-end hyphen stays attached,
+        // the superscript minus of the exponent stays attached to its digit, and the zero-width <SP> inside
+        // the compound word adds no space
+        assertThat(text, startsWith("Writing - original draft, ef-\nfect kg -1 co-expressed "));
+        assertThat(
+                LayoutTokensUtil.normalizeDehyphenizeText(target.getTokenization()),
+                is("Writing - original draft, effect kg -1 co-expressed"));
+    }
 }

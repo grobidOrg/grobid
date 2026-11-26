@@ -1,0 +1,122 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2308.06724">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-06-03T17:40:48.355421Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-03T17:40:48.355421Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-03T17:51:33.509Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>The impact of the near-surface region on the<lb/> interpretation of x-ray absorption spectroscopy<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Lishai Shoham, * Maria Baskin, Yaron Kauffmann, Anna Zakharova, † Teppei Yoshida, Shigeki<lb/> Miyasaka, Cinthia Piamonteze, * and Lior Kornblum<lb/> Lishai Shoham, Dr. Maria Baskin, Prof. Lior Kornblum<lb/> </docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Andrew and Erna Viterbi Department of Electrical and Computer Engineering, Technion -Israel<lb/> Institute of Technology,</affiliation>
+	</byline>
+
+	<address>Haifa 3200003, Israel<lb/></address>
+
+	E-mail:
+	<email>lishai@campus.technion.ac.il<lb/></email>
+
+	<byline>
+	<docAuthor>Dr. Yaron Kauffmann<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Electron Microscopy Center, Department of Materials Science and Engineering, Technion -Israel<lb/> Institute of Technology,</affiliation>
+	</byline>
+
+	<address>Haifa 3200003, Israel<lb/></address>
+
+	<byline>
+	<docAuthor>Dr. Anna Zakharova, Dr. Cinthia Piamonteze<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Swiss Light Source, Paul Scherrer Institute,</affiliation>
+	</byline>
+
+	<address>CH-5232 Villigen PSI, Switzerland<lb/></address>
+
+	E-mail:
+	<email>cinthia.piamonteze@psi.ch<lb/></email>
+
+	<byline>
+	<docAuthor>Prof. Teppei Yoshida<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Graduate School of Human and Environmental Studies, Kyoto University,</affiliation>
+	</byline>
+
+	<address>Sakyo-ku, Kyoto 606-<lb/>8501, Japan<lb/></address>
+
+	<byline>
+	<docAuthor>Prof. Shigeki Miyasaka<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Department of Physics, Osaka University,</affiliation>
+	</byline>
+
+	<address>Toyonaka, Osaka, 560-0043, Japan.<lb/></address>
+
+	Keywords:
+	<keyword>transition metal oxides, correlated electrons, strontium vanadate, x-ray absorption<lb/> spectroscopy.</keyword>
+
+	Abstract<lb/>
+	<div type="abstract">Transition metal oxides (TMOs) exhibit a broad spectrum of electronic, magnetic, and optical<lb/> properties, making them intriguing materials for various technological applications. Soft x-ray<lb/> absorption spectroscopy (XAS) is widely used to study TMOs, shedding light on their chemical<lb/> state, electronic structure, orbital polarization, element-specific magnetism, and more. Different<lb/> XAS acquisition modes feature different information depth regimes in the sample. Here, we<lb/> employ two XAS acquisition modes, having surface-sensitive versus "bulk" probing depths, on<lb/> the prototypical TMO SrVO3. We illustrate and elucidate a strong apparent discrepancy between<lb/> the different modes, emphasizing the impact of the near-surface region on the interpretation of<lb/> XAS data. These findings highlight the importance of the acquisition mode selection in XAS<lb/> analysis. Moreover, the results highlight the role of the near-surface region not only in the<lb/> characterization of TMOs, but also in the design of future nanoscale oxide electronics.</div>
+
+		</front>
+	</text>
+
+</TEI>

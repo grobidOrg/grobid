@@ -138,9 +138,28 @@ public class UnicodeUtil {
             + "\\u25CF"  // black circle
             + "\\u26AB"  // medium black circle
             + "\\u2B24"  // black large circle
-            + "\\u00B7"  // middle dot
             + "]";
     private static final Pattern BULLET_CHARS_PATTERN = Pattern.compile(bullet_chars);
+
+    // U+00B7 MIDDLE DOT is deliberately NOT part of bullet_chars above, because it is
+    // ambiguous: it is a common list bullet, but it is also a letter-level character
+    // *inside* words. The main case is the Catalan "punt volat" separating a geminate l,
+    // as in "intel·ligència" or "cel·lular", but it also occurs in chemical formulas of
+    // hydrates ("CuSO4·5H2O") and as a multiplication/dot-product sign. Rewriting it to
+    // a bullet there corrupts the token and, because U+2022 is one of
+    // TextUtilities.delimiters while U+00B7 is not, additionally splits the word into
+    // three tokens ("intel", "•", "ligència"), degrading every downstream model.
+    // So only treat a middle dot as a bullet when it is not between two word characters.
+    //
+    // "Word character" here means a letter, digit or combining mark of any script *except*
+    // CJK (Han, Hiragana, Katakana, Hangul). In Chinese and Japanese an interpunct between
+    // two ideographs is a word separator, e.g. between the parts of a transliterated name
+    // ("威廉·莎士比亚"), exactly the role of U+30FB "・" which TextUtilities.delimiters
+    // already treats as a token boundary. Keeping the dot there would glue the two names into
+    // one token, so in a CJK context it keeps being normalised to a bullet as before.
+    private static final String MIDDLE_DOT_WORD_CHAR = "[\\p{L}\\p{N}\\p{M}&&[^\\p{IsHan}\\p{IsHiragana}\\p{IsKatakana}\\p{IsHangul}]]";
+    private static final Pattern MIDDLE_DOT_BULLET_PATTERN = Pattern.compile(
+            "(?<!" + MIDDLE_DOT_WORD_CHAR + ")\\u00B7|\\u00B7(?!" + MIDDLE_DOT_WORD_CHAR + ")");
 
     // opening parenthesis
     public static String open_parenthesis = "["
@@ -204,6 +223,9 @@ public class UnicodeUtil {
         // bullet normalisation
         text = BULLET_CHARS_PATTERN.matcher(text).replaceAll("•");
 
+        // middle dot: a bullet only when not used inside a word (see the pattern above)
+        text = MIDDLE_DOT_BULLET_PATTERN.matcher(text).replaceAll("•");
+
         // opening parenthesis normalisation
         text = OPEN_PARENTHESIS_PATTERN.matcher(text).replaceAll("(");
 
@@ -225,5 +247,20 @@ public class UnicodeUtil {
     public static String normaliseTextAndRemoveSpaces(String text) {
         // parano sanitising
         return NORMALISE_REGEX_PATTERN.matcher(normaliseText(text)).replaceAll("");
+    }
+
+    /**
+     * Removes spaces and newlines from a token text, without normalising it.
+     * To be used on tokens that come from an already normalised text: normalising a
+     * sub-token again is not safe, because some rules depend on the surrounding
+     * characters (e.g. the middle dot in "MgSO4·12H2O" is preserved in the full
+     * token, but the isolated sub-token "·12" would be rewritten to "•12").
+     * @param text token text, already normalised
+     * @return the token text without spaces, legible for Wapiti feature generation
+     */
+    public static String removeSpaces(String text) {
+        if (text == null)
+            return null;
+        return NORMALISE_REGEX_PATTERN.matcher(text).replaceAll("");
     }
 }

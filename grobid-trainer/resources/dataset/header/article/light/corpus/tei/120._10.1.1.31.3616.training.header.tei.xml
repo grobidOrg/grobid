@@ -23,8 +23,7 @@
 	CS-TR-3299<lb/>
 	<date>June 20, 1994</date>
 
-	Abstract<lb/>
-	<div type="abstract">Traditional inter-domain routing protocols based on superdomains maintain either \strong&quot;<lb/> or \weak&quot; ToS and policy constraints for each visible superdomain. With strong constraints,<lb/> a valid path may not be found even though one exists. With weak constraints, an invalid<lb/> domain-level path may be treated as a valid path.<lb/> We present an inter-domain routing protocol based on superdomains, which always nds<lb/> a valid path if one exists. Both strong and weak constraints are maintained for each visible<lb/> superdomain. If the strong constraints of the superdomains on a path are satis ed, then the<lb/> path is valid. If only the weak constraints are satis ed for some superdomains on the path, the<lb/> source uses a query protocol to obtain a more detailed \internal&quot; view of these superdomains,<lb/> and searches again for a valid path. Our protocol handles topology changes, including node/link<lb/> failures that partition superdomains. Evaluation results indicate our protocol scales well to large<lb/> internetworks.<lb/></div>
+	
 
 	Categories and Subject Descriptors: 
 	<keyword>C.2.1 Computer-Communication Networks]: Network Archi-<lb/>tecture and Design|packet networks; store and forward networks; C.2.2 Computer-Communication Net-<lb/>works]: Network Protocols|protocol architecture; C.2.m Routing Protocols]; F.2.m Computer Network<lb/> Routing Protocols].<lb/></keyword>

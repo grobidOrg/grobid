@@ -70,6 +70,18 @@ For `eLife_984`: eLife already encodes explicit affiliation links, so no single-
 
 Competing-interest footnotes are ignored for the time being (authors contributions are not standalone text elements) — pending revisit. See [Statement sections](#statement-sections-author-contributions-and-competing-interests).
 
+### arXiv authors and affiliations
+
+The `COMET_arxiv_1091` dataset evaluates the authors and their affiliations only (the authors alone for the [light flavors](#flavors), which do not extract affiliations). It is the test split of [cometadata/arxiv-author-affiliations](https://huggingface.co/datasets/cometadata/arxiv-author-affiliations) (CC0): arXiv preprints of all fields and periods, whose authors and affiliations were annotated manually. The 1,091 articles of the split that have a PDF are kept. The train split is not used for evaluation: part of it is in the training data of the header name model.
+
+The gold data is not JATS but one JSON record per article, `<article>.gold.json` next to `<article>.pdf`:
+
+```json
+{"arxiv_id": "arXiv:0704.1459", "authors": [{"name": "Valentin Ferenczi", "affiliations": ["Institut de Mathématiques de Jussieu, Université Pierre et Marie Curie–Paris 6, ..."]}], ...}
+```
+
+`jatsEval -Prun=1` processes the PDFs, but does not score this gold data: `.github/scripts/evaluation/score_arxiv.py` does, see [Authors and affiliations of the arXiv corpus](#authors-and-affiliations-of-the-arxiv-corpus). The arXiv PDFs are not ours to redistribute, so this corpus is in a separate, private Hugging Face dataset, `sciencialab/pdfs-arxiv-author-affiliations`.
+
 ## Getting publisher gold-standard data
 
 Some publishers release publications in XML format complementary to PDF in Open Access, allowing text mining (see for instance the dedicated subset of PMC publications). On contractual basis, it is possible to acquire native XML from mainstream publishers. Unfortunately, each publisher uses a different XML schema and covering all these formats would be a very time-consuming work. To ease the processing of these XML documents, the project [Pub2TEI](https://github.com/kermitt2/Pub2TEI) permits to transform the native XML formats of a dozen mainstream publishers into a common TEI format which is the same as the output of GROBID.
@@ -129,6 +141,12 @@ If you intentionally want to benchmark a non-standard configuration (for example
 > ./gradlew checkEvalConfig -PcheckMode=warn
 ```
 
+For an evaluation [without consolidation](#without-consolidation), biblio-glutton is not needed: skip its check with `-PcheckConsolidation=false` (the DeLFT models are still checked).
+
+```bash
+> ./gradlew checkEvalConfig -PcheckConsolidation=false
+```
+
 The [multi-dataset runner script](#multi-dataset-runner-script) `grobid-home/scripts/run_evaluation.sh` runs this check automatically before starting and aborts if it fails (unless invoked with `--warn` or `--skip-checks`).
 
 ## Running and evaluating
@@ -151,6 +169,14 @@ It is also possible to set a ratio of evaluation data to be used expressed as a 
 > ./gradlew jatsEval -Pp2t=ABS_PATH_TO_JATS_DATASET/DATASET -Prun=0 -PfileRatio=0.1
 ```
 
+#### Without consolidation
+
+The PDFs are processed with header consolidation (`consolidateHeader=1`), citations and funders being never consolidated. To evaluate the models alone, without any call to a consolidation service, set the parameter `consolidateHeader` to `0` (it accepts the values `0` to `3` of the `consolidateHeader` parameter of the service, and only matters with `-Prun=1`):
+```bash
+> ./gradlew jatsEval -Pp2t=ABS_PATH_TO_JATS_DATASET/DATASET -Prun=1 -PconsolidateHeader=0
+```
+The header scores are then lower than with consolidation, most visibly on the fields consolidation completes or corrects (authors, title): they are not comparable with the published benchmarks.
+
 ### Pub2TEI-based
 
 Under ```grobid/```, the following command line is used to run and evaluate Grobid on the dataset:
@@ -165,6 +191,23 @@ It is also possible to set a ratio of evaluation data to be used expressed as a 
 ```bash
 > ./gradlew teiEval -Pp2t=ABS_PATH_TO_TEI/ -Prun=0 -PfileRatio=0.1
 ```
+
+### Authors and affiliations of the arXiv corpus
+
+The PDFs of `COMET_arxiv_1091` are processed with `jatsEval`, as above (it finds no JATS gold file and scores nothing), and the TEI is then scored with `.github/scripts/evaluation/score_arxiv.py`, which needs `numpy`, `scipy`, `rapidfuzz` and `pyyaml`:
+
+```bash
+> ./gradlew jatsEval -Pp2t=ABS_PATH_TO/COMET_arxiv_1091 -Prun=1 -PconsolidateHeader=0
+> python .github/scripts/evaluation/score_arxiv.py --data ABS_PATH_TO/COMET_arxiv_1091 --output report-COMET_arxiv_1091.md --json arxiv-eval.json
+```
+
+The scorer is the one of ScienciaLAB/grobid-affiliation-evaluation, vendored under `.github/scripts/evaluation/arxiv/` (see its README). The authors of an article are matched one to one with the gold authors on their normalised full name, exactly (_strict_) or with a similarity of at least 0.95 (_fuzzy_), and three scores are reported per matching:
+
+* `author`: the authors found;
+* `affiliations`: the affiliations of the matched authors, matched the same way (the affiliations of the authors not matched being false positives or false negatives);
+* `combined`: the authors found with all their affiliations.
+
+An article without TEI counts as an article where GROBID found no author. The report has the layout of the `jatsEval` reports, and `--json` writes the matches of every article. `--authors-only` scores the authors alone and leaves the affiliations out of the report: the workflow passes it for the `article/light` and `article/light-ref` flavors, which do not extract affiliations.
 
 ### Multi-dataset runner script
 
@@ -234,13 +277,68 @@ A model flavor evaluates a different document shape from the full model, so it e
 
 | Flavor (`-l` / `-Pflavor`) | header | full text | citations |
 |---|---|---|---|
-| *(none — the full model)* | `title`, `authors`, `first_author`, `affiliation_linked`, `abstract`, `keywords` | all structures | all fields |
+| *(none — the full model)* | `title`, `authors`, `first_author`, `affiliation_linked`, `abstract`, `keywords`, `doi` | all structures | all fields |
 | `article/light` | `title`, `authors`, `first_author` | *not evaluated* | *not evaluated* |
 | `article/light-ref` | `title`, `authors`, `first_author` | *not evaluated* | all fields |
 
 The remaining flavors (`blank`, `sdo/3gpp`, `sdo/ietf`) are **not supported** by the end-to-end evaluation — there is no JATS/TEI gold corpus of that document shape — and are rejected with an explicit error rather than silently producing an empty report.
 
 To evaluate a field that is in the catalogue but currently selected by no flavor (for instance `publisher` on citations, or the flat `affiliations` header field), add its name to the relevant list in `EvaluationFieldSelection`; there is no need to touch `FieldSpecification`.
+
+### On GitHub Actions
+
+The workflow `.github/workflows/evaluation.yml` (_End-to-end evaluation_) runs the evaluation of a branch or of a pull request on GitHub-hosted runners, over the full gold corpora, and reports the scores next to those of the default branch. It can be started in two ways:
+
+* manually, from the _Actions_ tab (_Run workflow_) or with `gh workflow run evaluation.yml --ref my-branch -f profile=delft`, on any branch,
+
+* on a pull request, by adding the label `evaluation:crf` or `evaluation:delft`. The run is [without consolidation](#consolidation-and-biblio-glutton) unless the pull request also has the label `evaluation:glutton`. Once the pull request has one of these two labels, each push evaluates it again, with the same labels, except the pushes to a draft pull request (marking it ready for review evaluates it) and the pushes that change nothing but the documentation (`doc/` and the `.md` files) since the latest commit evaluated. The runs of a pull request do not overlap: a new run waits for the one going to finish, and replaces the run already waiting, so that the latest commit is always evaluated. Label the pull request with the corpora to evaluate (see below) to keep these runs short.
+
+On a pull request, the corpora are selected with labels too:
+
+| Label | Corpus |
+|---|---|
+| `corpus:all` | all of them |
+| `corpus:pubmed` | `PMC_sample_1943` |
+| `corpus:biorxiv` | `biorxiv-10k-test-2000` |
+| `corpus:plos` | `PLOS_1000` |
+| `corpus:elife` | `eLife_984` |
+| `corpus:arxiv` | `COMET_arxiv_1091` |
+
+Adding `evaluation:crf` or `evaluation:delft` evaluates the corpora labelled on the pull request, or all of them if none is. Adding a `corpus:*` label to a pull request that already has one of these two labels evaluates that corpus alone, with the profile of that label (the pull request must then have only one of them). A `corpus:*` label added before them starts nothing: it only selects the corpora of the next run. The label `evaluation:glutton` works the same way: added to a pull request that has `evaluation:crf` or `evaluation:delft`, it evaluates the labelled corpora again with biblio-glutton; added before, it only switches the next runs to biblio-glutton.
+
+The [flavors](#flavors) are selected the same way, with the labels `flavor:article/light` and `flavor:article/light-ref`. Each flavor label evaluates its flavor over the labelled corpora, with its own report, comment and baseline; a pull request with both labels evaluates both flavors in the same run. Without a flavor label, the full models are evaluated. Adding a `flavor:*` label to a pull request that has `evaluation:crf` or `evaluation:delft` evaluates that flavor alone; added before, it only selects the flavors of the next runs.
+
+The arXiv corpus is in a private Hugging Face dataset, read with the repository secret `HF_TOKEN_COMET`, a Hugging Face token that can read `sciencialab/pdfs-arxiv-author-affiliations`. Pull requests from forks get no secret: their runs leave arXiv out of `corpus:all` (with a notice), and fail at once with `corpus:arxiv`.
+
+Two profiles are available:
+
+| Profile | Configuration | Comparable to the published benchmarks |
+|---|---|---|
+| `crf` | the default `grobid.yaml`, every model with the engine it ships with | no |
+| `delft` | the `grobid-evaluation.yaml` preset (see [Configuration for evaluation](#configuration-for-evaluation)), the Deep Learning models running on CPU | only with biblio-glutton |
+
+A manual run can also be restricted to one corpus, select a [flavor](#flavors), consolidate with biblio-glutton and set the number of parallel jobs per corpus.
+
+The runners have 4 CPU, no GPU, and stop a job after 6 hours, so each corpus is cut into shards:
+
+1. `predict` — one job per shard downloads its articles from the [Hugging Face dataset](https://huggingface.co/datasets/sciencialab/grobid-evaluation) (`sciencialab/pdfs-arxiv-author-affiliations` for arXiv), runs the [pre-flight configuration check](#pre-flight-configuration-check) and processes the PDFs. The shards of a corpus are disjoint and the same on every run.
+
+2. `score` — one job per corpus gathers the TEI and the gold data of all its shards and runs `jatsEval` with `-Prun=0` (`score_arxiv.py` for arXiv), so the report is computed over the whole corpus exactly as by a local run. A corpus is not scored if one of its shards failed.
+
+3. `report` — the reports are compared with those of the latest successful run of the workflow on the default branch with the same profile, flavor and consolidation (named by its artifact, and checked against the overview inside it). The scores are written to the run summary and, for a pull request, posted as a comment. For each corpus, a table gives the micro-average F1 of the header, citation and fulltext per matching (for arXiv, the F1 of the authors, of the affiliations and of the authors with all their affiliations; the authors only for the light flavors), followed by the full report, collapsed, laid out as in the [benchmark pages](benchmarks/Benchmarking.md) (field-level precision, recall, F1 and support per section and matching, then the instance-level results and the citation contexts). Each score that moved is followed by its delta against the baseline, in brackets. The reports are also kept as the artifact `evaluation-reports-<profile>` (`evaluation-reports-<profile>-<flavor>` for a flavor, with `/` replaced by `_`) for 90 days: this artifact is the baseline of the later runs, so **run the workflow on the default branch to set or refresh the baseline**, with the same profile, flavor and consolidation. Without a baseline, the scores are reported without deltas.
+
+#### Consolidation and biblio-glutton
+
+By default, the PDFs are processed without consolidation (`-PconsolidateHeader=0`) and biblio-glutton is neither needed nor checked: a run does not depend on any external service, but its header scores are lower and not comparable with the published benchmarks (see [Without consolidation](#without-consolidation)).
+
+With the label `evaluation:glutton` (or the `consolidation` input set to `glutton`), the header is consolidated with biblio-glutton, which must then be reachable from the runners: the run stops at the pre-flight check otherwise. The instance is the one set in `grobid-evaluation.yaml`, unless the repository variable `GROBID_EVAL_GLUTTON_URL` gives another one. The reports of such a run are kept as the artifact `evaluation-reports-<profile>-glutton`, so it is only ever compared with a baseline run with biblio-glutton as well.
+
+The scripts used by the workflow are under `.github/scripts/evaluation/`. `fetch_dataset.py` can also be used to get a corpus locally, and `compare_reports.py` to compare the reports of two local runs (the `report-*.md` files being matched by name between the two directories):
+
+```bash
+> python .github/scripts/evaluation/fetch_dataset.py --dataset PLOS_1000 --output ABS_PATH_TO/grobid-eval-datasets
+> python .github/scripts/evaluation/compare_reports.py --reports ./reports --baseline ./reports-master
+```
 
 ## Evaluation results
 
@@ -262,6 +360,8 @@ The evaluation covers four different string matching techniques for textual fiel
 * [__Ratcliff/Obershelp similarity__](http://xlinux.nist.gov/dads/HTML/ratcliffObershelp.html)
 
 These matching variants only apply to textual fields, not numerical and dates fields (such as volume, issue, dates, pages).
+
+The header `doi` is compared as an identifier: both values are lower-cased and stripped of a `doi:` prefix, then matched exactly.
 
 
 

@@ -73,6 +73,11 @@ The body is not formatted as a structured text, but as a single paragraph.
 The training data for the flavors modes `article/light` and `article/light-ref` are following the same structure as the standard models. 
 In other words the annotated training data for, e.g., the lightweight segmentation model with references, for articles, are following the guidelines as the standard grobid segmentation model. 
 The Grobid parser select automatically the right subset of labels to include. 
+
+There is one exception: the lightweight flavors are meant for generic documents, not only for articles with an abstract, so the abstract is not part of the header.
+In the lightweight segmentation data the abstract (with its heading, e.g. "Abstract", "Summary", "Author summary") is annotated as `<body>` instead of `<front>`, and in the lightweight header data the abstract and its heading are removed, from both the TEI files and the raw feature files.
+The lightweight datasets (`grobid-trainer/resources/dataset/{segmentation,header,fulltext}/article/light`, shared with `article/light-ref`) are therefore copies of the standard corpora with this change applied: when the standard corpora are updated, the copies need to be refreshed and the abstract moved again.
+
 However, this can be implemented at discretion of the user, so for example a flavor `sdo/ietf` for parsing standards documents for IETF, can be following their specific guidelines.
 
 For training the specialised models the same procedure as for the standard models is used, but the flavor is indicated in the training command, e.g. to train the segmentation model for the flavor `article/light`: 

@@ -39,30 +39,53 @@
 
 	<address>Edmonton, Alberta, Canada<lb/></address>
 
-	Email: Ren H Wu -
+	Email:
+	<byline>
+	<docAuthor>Ren H Wu</docAuthor>
+	</byline>
+	-
 	<email>wurh20000@sina.com</email>; 
 
-	Tina O&apos;Donnell -
+
+	<byline>
+	<docAuthor>Tina O&apos;Donnell</docAuthor>
+	</byline>
+	-
 	<email>tina@gpu.srv.ualberta.ca</email>; 
 
-	Michele Ulrich -
+
+	<byline>
+	<docAuthor>Michele Ulrich</docAuthor>
+	</byline>
+	-
 	<email>mulrich@ualberta.ca</email>;<lb/> 
 
-	Sheila J Asghar -
+
+	<byline>
+	<docAuthor>Sheila J Asghar</docAuthor>
+	</byline>
+	-
 	<email>sheila_canada@yahoo.com</email>; 
 
-	Christopher C Hanstock -
+
+	<byline>
+	<docAuthor>Christopher C Hanstock</docAuthor>
+	</byline>
+	-
 	<email>chris.hanstock@ualberta.ca</email>;<lb/> 
 
-	Peter H Silverstone* -
+
+	<byline>
+	<docAuthor>Peter H Silverstone*</docAuthor>
+	</byline>
+	-
 	<email>peter.silverstone@ualberta.ca<lb/></email>
 
 	* Corresponding author<lb/> 
 
 	<keywords>Bipolar disorderlithiumsodium valproatemagnetic resonance spectroscopycholine</keywords> 
 
-	Abstract<lb/>
-	<div type="abstract">Background: It has been suggested that lithium increases choline concentrations, although<lb/> previous human studies examining this possibility using 1 H magnetic resonance spectroscopy ( 1 H<lb/> MRS) have had mixed results: some found increases while most found no differences.<lb/> Methods: The present study utilized 1 H MRS, in a 3 T scanner to examine the effects of both<lb/> lithium and sodium valproate upon choline concentrations in treated euthymic bipolar patients<lb/> utilizing two different methodologies. In the first part of the study healthy controls (n = 18) were<lb/> compared with euthymic Bipolar Disorder patients (Type I and Type II) who were taking either<lb/> lithium (n = 14) or sodium valproate (n = 11), and temporal lobe choline/creatine (Cho/Cr) ratios<lb/> were determined. In the second part we examined a separate group of euthymic Bipolar Disorder<lb/> Type I patients taking sodium valproate (n = 9) and compared these to controls (n = 11). Here we<lb/> measured the absolute concentrations of choline in both temporal and frontal lobes.<lb/> Results: The results from the first part of the study showed that bipolar patients chronically<lb/> treated with both lithium and sodium valproate had significantly reduced temporal lobe Cho/Cr<lb/> ratios. In contrast, in the second part of the study, there were no effects of sodium valproate on<lb/> either absolute choline concentrations or on Cho/Cr ratios in either temporal or frontal lobes.<lb/> Conclusions: These findings suggest that measuring Cho/Cr ratios may not accurately reflect<lb/> brain choline concentrations. In addition, the results do not support previous suggestions that<lb/> either lithium or valproate increases choline concentrations in bipolar patients.<lb/></div>
+	
 
 	Published:
 	<date>30 July 2004<lb/></date>
@@ -73,7 +96,10 @@
 
 	<note type="submission">Received: 30 September 2003<lb/> Accepted: 30 July 2004<lb/></note>
 
-	<note type="copyright">This article is available from: http://www.general-hospital-psychiatry.com/content/3/1/13<lb/> © 2004 Wu et al; licensee BioMed Central Ltd. This is an open-access article distributed under the terms of the Creative Commons Attribution License<lb/> (http://creativecommons.org/licenses/by/2.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is<lb/> properly cited.<lb/></note>
+	This article is available from:
+	<ptr type="web">http://www.general-hospital-psychiatry.com/content/3/1/13<lb/></ptr>
+
+	<note type="copyright">© 2004 Wu et al; licensee BioMed Central Ltd. This is an open-access article distributed under the terms of the Creative Commons Attribution License<lb/> (http://creativecommons.org/licenses/by/2.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is<lb/> properly cited.<lb/></note>
 
 	<reference>Annals of General Hospital Psychiatry 2004, 3:13<lb/></reference>
 

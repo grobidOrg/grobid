@@ -1,0 +1,90 @@
+<?xml-model href="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+  <fileDesc xml:id="_2404.05558">
+    <titleStmt>
+      <title level="a"/>
+      <respStmt>
+        <persName xml:id="kazuyo">Kazuyo Okamura</persName>
+        <resp>Annotator</resp>
+      </respStmt>
+    </titleStmt>
+    <publicationStmt>
+      <publisher/>
+      <availability>
+        <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+      </availability>
+      <date type="publication">None</date>
+    </publicationStmt>
+    <sourceDesc>
+      <bibl>. (None). None.</bibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <appInfo>
+      <application version="1.0" ident="pdf-tei-editor" type="editor">
+        <label>PDF-TEI Editor</label>
+        <ref target="https://github.com/mpilhlt/pdf-tei-editor"/>
+      </application>
+      <application version="0.9.0" ident="GROBID" when="2026-06-01T09:12:14.395693Z" type="extractor">
+        <label>GROBID</label>
+        <label type="model">header</label>
+        <label type="flavor">default</label>
+        <label type="variant-id">grobid.training.header</label>
+        <label type="revision">0.9.0-1-gd6e64703c</label>
+        <ref target="https://github.com/grobidOrg/grobid"/>
+        <ref target="https://mpilhlt.github.io/grobid-footnote-flavour/schema/grobid.training.header.rng"/>
+      </application>
+    </appInfo>
+  </encodingDesc>
+  <revisionDesc>
+    <change when="2026-06-01T09:12:14.395693Z" status="extraction">
+      <note type="label">Extraction</note>
+      <desc>Extraction</desc>
+    </change>
+    <change when="2026-06-01T09:12:57.352Z" status="checked" who="#kazuyo">
+      <desc>Pre-Draft</desc>
+    </change>
+  </revisionDesc>
+</teiHeader>
+  <text xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+		<front>
+<lb/>
+	<docTitle>
+	<titlePart>JDEC: JPEG Decoding via Enhanced Continuous Cosine Coefficients<lb/></titlePart>
+	</docTitle>
+
+	<byline>
+	<docAuthor>Woo Kyoung Han 1,2<lb/> Sunghoon Im 2<lb/> Jaedeok Kim 3 *<lb/> Kyong Hwan Jin 1 *<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>1 Korea University<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>2 DGIST<lb/></affiliation>
+	</byline>
+
+	<byline>
+	<affiliation>3 NVIDIA<lb/></affiliation>
+	</byline>
+
+	<email>{wookyoung0727, kyong jin}@korea.ac.kr</email>
+
+	,
+	<email>sunghoonim@dgist.ac.kr</email>
+
+	,
+	<email>jaedeokk@nvidia.com</email>
+
+	
+
+	<idno>arXiv:2404.05558v1 [eess.IV]</idno>
+
+	<date>3 Apr 2024</date>
+
+		</front>
+	</text>
+
+</TEI>

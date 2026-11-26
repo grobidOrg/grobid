@@ -21,10 +21,10 @@
 	<address>Denys Wilkinson Building, Keble Road, Oxford OX1 3RH, United Kingdom</address>
 
 	<byline>
-	<affiliation>2<lb/> Central Laser Facility,</affiliation>
+	<affiliation>2<lb/> Central Laser Facility, Rutherford Appleton Laboratory,</affiliation>
 	</byline>
 
-	<address>Rutherford Appleton Laboratory, Didcot OX11 0QX, United Kingdom</address>
+	<address>Didcot OX11 0QX, United Kingdom</address>
 
 	<byline>
 	<affiliation>3<lb/> John Adams Institute for Accelerator Science, Blackett Laboratory, Imperial College London,<lb/></affiliation>
@@ -44,13 +44,13 @@
 	<date>27 July 2017</date>
 	)<lb/>
 
-	<div type="abstract">We demonstrate experimentally the resonant excitation of plasma waves by trains of laser pulses. We<lb/> also take an important first step to achieving an energy recovery plasma accelerator by showing that a<lb/> plasma wave can be damped by an out-of-resonance trailing laser pulse. The measured laser wakefields are<lb/> found to be in excellent agreement with analytical and numerical models of wakefield excitation in the<lb/> linear regime. Our results indicate a promising direction for achieving highly controlled, GeV-scale laser-<lb/>plasma accelerators operating at multikilohertz repetition rates.<lb/></div>
+	
 
 	<idno>DOI: 10.1103/PhysRevLett.119.044802<lb/></idno>
 
 	<reference>PRL 119, 044802 (2017)<lb/></reference>
 
-	P H Y S I C A L R E V I E W L E T T E R S<lb/>
+	<title level="j">P H Y S I C A L R E V I E W L E T T E R S</title><lb/>
 
 	week ending<lb/>
 

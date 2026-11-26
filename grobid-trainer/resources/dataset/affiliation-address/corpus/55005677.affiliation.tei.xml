@@ -12,7 +12,7 @@
 							<orgName type="department">Physics Department</orgName>,
 							<orgName type="institution">University of Namibia</orgName>,
 							<address>
-								<addrLine>Private Bag 13301</addrLine>,
+								<postBox>Private Bag 13301</postBox>,
 								<settlement>Windhoek</settlement>,
 								<country>Namibia</country>
 							</address>

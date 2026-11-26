@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="laboratory">Centre for Quantum Physics</orgName>,
+							<orgName type="laboratory">Key Laboratory of Advanced Optoelectronic Quantum Architecture and Measurement (MOE)</orgName>,
+							<lb/>
+							<orgName type="department">School of Physics</orgName>,
+							<orgName type="institution">Beijing Institute of Technology</orgName>,
+							<address>
+								<settlement>Beijing</settlement>,
+								<postCode>100081</postCode>,
+								<country>China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="laboratory">Beijing Key Lab of Nanophotonics &amp; Ultrafine Optoelectronic Systems</orgName>,
+							<lb/>
+							<orgName type="department">School of Physics</orgName>,
+							<orgName type="institution">Beijing Institute of Technology</orgName>,
+							<address>
+								<settlement>Beijing</settlement>,
+								<postCode>100081</postCode>,
+								<country>China</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Mousab</forename> <middlename>Siddig</middlename> <surname>Elhag</surname> <marker>1</marker> ,</persName>
+<persName><forename>Yan</forename> <surname>Jin</surname> <marker>2</marker> ,</persName>
+<persName><forename>Mutamad</forename> <middlename>Ahmad</middlename> <surname>Amin</surname> <marker>3</marker> ,</persName>
+<persName><forename>Hassan</forename> <middlename>Ahmed</middlename> <middlename>Hassan</middlename> <middlename>Ahmed</middlename> <surname>Ismail</surname> <marker>1</marker> ,</persName>
+<persName><forename>Sung-Tae</forename> <surname>Hong</surname> <marker>4</marker> ,</persName>
+<persName><forename>Haein</forename> <surname>Jang</surname> <marker>5</marker> ,</persName>
+<persName><forename>Young-Ah</forename> <surname>Doh</surname> <marker>5</marker> ,</persName>
+<persName><forename>Seungman</forename> <surname>Cha</surname> , <marker>6,7</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

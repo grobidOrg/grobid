@@ -1,0 +1,64 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="institution">Kharkiv National University</orgName>,
+							<address>
+								<postCode>61022</postCode>
+								<settlement>Kharkiv</settlement>,
+								<country>Ukraine</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+					    <affiliation>
+							<orgName type="institution">NSC 'Kharkov Institute of Physics and Technology'</orgName>,
+							<address>
+								<postCode>61108</postCode>
+								<settlement>Kharkiv</settlement>,
+								<country>Ukraine</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+					 <affiliation>
+							<orgName type="institution">Kharkiv National University</orgName>,
+							<address>
+								<postCode>61022</postCode>
+								<settlement>Kharkiv</settlement>,
+								<country>Ukraine</country>
+							<lb/>
+							</address>
+					 </affiliation>
+
+					<affiliation>
+							<orgName type="institution">NSC 'Kharkiv Institute of Physics and Technology'</orgName>,
+							<address>
+								<postCode>61108</postCode>
+								<settlement>Kharkiv</settlement>,
+								<country>Ukraine</country>
+							<lb/>
+							</address>
+					</affiliation>
+
+					<affiliation>
+							<orgName type="department">Institute of Physics</orgName>,
+							<orgName type="institution">Jagiellonian University</orgName>,
+							<address>
+								<addrLine>Lojasiewicza 11</addrLine>,
+								<postCode>30-348</postCode>
+								<settlement>Krakow</settlement>,
+								<country>Poland</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

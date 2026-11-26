@@ -44,6 +44,7 @@ import org.grobid.core.lexicon.Lexicon;
 import org.grobid.core.utilities.GrobidConfig;
 import org.grobid.core.utilities.GrobidProperties;
 import org.grobid.core.utilities.LanguageUtilities;
+import org.grobid.core.utilities.LayoutTokensUtil;
 import org.grobid.core.utilities.counters.CntManager;
 import org.grobid.core.utilities.counters.impl.CntManagerFactory;
 
@@ -360,7 +361,106 @@ public class HeaderParserTest {
         }
     }
 
+    /**
+     * PLOS and eLife first page: "Editor: Paul Park, University of Michigan, United States of America". The HEADER model
+     * labels the affiliation and address after the editor as &lt;affiliation&gt; and &lt;address&gt;; they must
+     * not be collected with the authors' affiliations, otherwise the linking gives them to an author.
+     */
+    @Test
+    public void testGeneralResultMappingHeader_editorAffiliationNotCollected() {
+        String[][] labelled = {
+                {"Paul", "I-<author>"}, {"Smith", "<author>"},
+                {"Rush", "I-<affiliation>"}, {"University", "<affiliation>"},
+                {"Editor", "I-<other>"}, {":", "<other>"},
+                {"Paul", "I-<editor>"}, {"Park", "<editor>"}, {",", "<editor>"},
+                {"University", "I-<affiliation>"}, {"of", "<affiliation>"}, {"Michigan", "<affiliation>"},
+                {"United", "I-<address>"}, {"States", "<address>"},
+                {"Received", "I-<submission>"}, {"2014", "<submission>"},
+                {"Chicago", "I-<address>"},
+                // eLife: "Reviewing editor: <editor>Peter Rodgers</editor>, <affiliation>eLife,</affiliation>"
+                {"Reviewing", "I-<other>"}, {"editor", "<other>"}, {":", "<other>"},
+                {"Peter", "I-<editor>"}, {"Rodgers", "<editor>"},
+                {",", "I-<other>"},
+                {"eLife", "I-<affiliation>"},
+                {"United", "I-<address>"}, {"Kingdom", "<address>"},
+                {"Copyright", "I-<copyright>"},
+                {"Imperial", "I-<affiliation>"}, {"College", "<affiliation>"}};
+
+        assertThat(
+                collectedAffiliationBlocks(labelled),
+                is(Arrays.asList("Rush University", "Chicago", "Imperial College")));
+    }
+
+    /** Only a space between the editor and its affiliation: no &lt;other&gt; cluster at all. */
+    @Test
+    public void testGeneralResultMappingHeader_editorDirectlyFollowedByAffiliation() {
+        String[][] labelled = {
+                {"Paul", "I-<editor>"}, {"Park", "<editor>"},
+                {"University", "I-<affiliation>"}, {"of", "<affiliation>"}, {"Michigan", "<affiliation>"},
+                {"United", "I-<address>"}, {"States", "<address>"}};
+
+        assertThat(collectedAffiliationBlocks(labelled), is(Arrays.asList()));
+    }
+
+    /** A punctuation-only &lt;other&gt; between the editor and its affiliation keeps the editor context. */
+    @Test
+    public void testGeneralResultMappingHeader_editorAffiliationAfterPunctuation() {
+        String[][] labelled = {
+                {"Peter", "I-<editor>"}, {"Rodgers", "<editor>"},
+                {",", "I-<other>"},
+                {"eLife", "I-<affiliation>"},
+                {"United", "I-<address>"}, {"Kingdom", "<address>"}};
+
+        assertThat(collectedAffiliationBlocks(labelled), is(Arrays.asList()));
+    }
+
+    /**
+     * An editor has a single affiliation: a second affiliation following it ends the editor context, so that an
+     * authors' affiliation block placed right after the editor is still collected.
+     */
+    @Test
+    public void testGeneralResultMappingHeader_secondAffiliationAfterEditorCollected() {
+        String[][] labelled = {
+                {"Paul", "I-<editor>"}, {"Park", "<editor>"},
+                {"University", "I-<affiliation>"}, {"of", "<affiliation>"}, {"Michigan", "<affiliation>"},
+                {"United", "I-<address>"}, {"States", "<address>"},
+                {"1", "I-<affiliation>"}, {"Rush", "<affiliation>"}, {"University", "<affiliation>"},
+                {"Chicago", "I-<address>"},
+                {"2", "I-<affiliation>"}, {"Imperial", "<affiliation>"}, {"College", "<affiliation>"}};
+
+        assertThat(
+                collectedAffiliationBlocks(labelled),
+                is(Arrays.asList("1 Rush University", "Chicago", "2 Imperial College")));
+    }
+
     // --- Helper methods ---
+
+    /**
+     * Maps a labelled header sequence (one token per entry, separated by a space) and returns the text of the
+     * affiliation and address blocks collected for the authors.
+     */
+    private List<String> collectedAffiliationBlocks(String[][] labelled) {
+        List<LayoutToken> tokens = new ArrayList<>();
+        StringBuilder result = new StringBuilder();
+        for (String[] tokenLabel : labelled) {
+            if (!tokens.isEmpty()) {
+                tokens.add(new LayoutToken(" "));
+            }
+            tokens.add(new LayoutToken(tokenLabel[0]));
+            result.append(tokenLabel[0]).append("\t").append(tokenLabel[1]).append("\n");
+        }
+
+        BiblioItem biblio = new BiblioItem();
+        biblio.generalResultMappingHeader(result.toString(), tokens);
+
+        List<String> blocks = new ArrayList<>();
+        if (biblio.getAffiliationAddresslabeledTokens() != null) {
+            for (List<LayoutToken> block : biblio.getAffiliationAddresslabeledTokens()) {
+                blocks.add(LayoutTokensUtil.toText(block).trim());
+            }
+        }
+        return blocks;
+    }
 
     private List<String> readResourceLines(String resourceName) throws Exception {
         try (InputStream is = this.getClass().getResourceAsStream(resourceName)) {

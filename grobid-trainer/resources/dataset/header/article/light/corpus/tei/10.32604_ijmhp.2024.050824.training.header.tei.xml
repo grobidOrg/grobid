@@ -6,7 +6,9 @@
 	<text xml:lang="en">
 		<front>
 <lb/>
-	<note type="copyright">This work is licensed under a Creative Commons Attribution 4.0 International License,<lb/> which permits unrestricted use, distribution, and reproduction in any medium, provided the<lb/> original work is properly cited.<lb/> ech<lb/> T<lb/> Press Science<lb/></note>
+	<note type="copyright">This work is licensed under a Creative Commons Attribution 4.0 International License,<lb/> which permits unrestricted use, distribution, and reproduction in any medium, provided the<lb/> original work is properly cited.<lb/></note>
+
+	ech<lb/> T<lb/> Press Science<lb/>
 
 	<idno>DOI: 10.32604/cmc.2024.048003</idno>
 
@@ -51,8 +53,7 @@
 	Published:
 	<date>18 July 2024</date>
 
-	ABSTRACT<lb/>
-	<div type="abstract">With the rapid growth of internet usage, a new situation has been created that enables practicing bullying.<lb/> Cyberbullying has increased over the past decade, and it has the same adverse effects as face-to-face bullying, like<lb/> anger, sadness, anxiety, and fear. With the anonymity people get on the internet, they tend to be more aggressive and<lb/> express their emotions freely without considering the effects, which can be a reason for the increase in cyberbullying<lb/> and it is the main motive behind the current study. This study presents a thorough background of cyberbullying<lb/> and the techniques used to collect, preprocess, and analyze the datasets. Moreover, a comprehensive review of the<lb/> literature has been conducted to figure out research gaps and effective techniques and practices in cyberbullying<lb/> detection in various languages, and it was deduced that there is significant room for improvement in the Arabic<lb/> language. As a result, the current study focuses on the investigation of shortlisted machine learning algorithms<lb/> in natural language processing (NLP) for the classification of Arabic datasets duly collected from Twitter (also<lb/> known as X). In this regard, support vector machine (SVM), Naïve Bayes (NB), Random Forest (RF), Logistic<lb/> regression (LR), Bootstrap aggregating (Bagging), Gradient Boosting (GBoost), Light Gradient Boosting Machine<lb/> (LightGBM), Adaptive Boosting (AdaBoost), and eXtreme Gradient Boosting (XGBoost) were shortlisted and<lb/> investigated due to their effectiveness in the similar problems. Finally, the scheme was evaluated by well-known<lb/> performance measures like accuracy, precision, Recall, and F1-score. Consequently, XGBoost exhibited the best<lb/> performance with 89.95% accuracy, which is promising compared to the state-of-the-art.<lb/></div>
+	
 
 	KEYWORDS<lb/>
 	<keyword>Supervised machine learning; ensemble learning; cyberbullying; Arabic tweets; NLP</keyword>

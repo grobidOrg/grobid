@@ -69,10 +69,10 @@
 	<address>Liverpool L69 7ZD, United Kingdom<lb/></address>
 
 	<byline>
-	<affiliation>j Chemistry Department, University at Bu↵alo,</affiliation>
+	<affiliation>j Chemistry Department, University at Bu↵alo, SUNY,</affiliation>
 	</byline>
 
-	<address>SUNY, Bu↵alo, New York 14260-3000, United States<lb/></address>
+	<address>Bu↵alo, New York 14260-3000, United States<lb/></address>
 
 	<byline>
 	<affiliation>k CNR-ISTM Istituto di Scienze e Tecnologie Molecolari,</affiliation>
@@ -166,13 +166,16 @@
 
 	<address>Miusskaya Square 9, 125047 Moscow, Russia<lb/></address>
 
-	Abstract<lb/>
-	<div type="abstract">The paper collects the answers of the authors to the following questions:<lb/> • What is the significance of the topological approach?<lb/> • Can new chemical concepts be found by a topological approach?<lb/> • What is the status of a chemical concept within a topological approach?<lb/> • Should topological approaches provide measurable quantities?<lb/> • Is it possible to predict the outcome of a topological approach without performing a calculation on a computer?<lb/> • What are new domains for which topological approaches would be useful?<lb/></div>
+	
 
 	⇤ Corresponding author<lb/> Email address:
 	<email>silvi@lct.jussieu.fr</email>
 
-	(Bernard Silvi)<lb/>
+	(
+	<byline>
+	<docAuthor>Bernard Silvi</docAuthor>
+	</byline>
+	)<lb/>
 	<note type="submission">Preprint submitted to Computational and Theoretical Chemistry<lb/></note> 
 
 	<date>September 24, 2014</date>

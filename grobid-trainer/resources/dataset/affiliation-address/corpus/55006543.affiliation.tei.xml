@@ -14,8 +14,8 @@
 							<address>
 								<addrLine>292, Yoshida-cho</addrLine>,
 								<addrLine>Totsuka-ku</addrLine>,
-								<addrLine>Yokohama-shi</addrLine>,
-								<settlement>Kanagawa</settlement>
+								<settlement>Yokohama-shi</settlement>,
+								<region>Kanagawa</region>
 								<postCode>244-0817</postCode>,
 								<country>Japan</country>
 							<lb/>
@@ -27,8 +27,8 @@
 							<lb/>
 							<address>
 								<addrLine>1-280, Higashi-Koigakubo</addrLine>,
-								<addrLine>Kokubunji-shi</addrLine>,
-								<settlement>Tokyo</settlement>
+								<settlement>Kokubunji-shi</settlement>,
+								<region>Tokyo</region>
 								<postCode>185-8601</postCode>,
 								<country>Japan</country>
 							</address>

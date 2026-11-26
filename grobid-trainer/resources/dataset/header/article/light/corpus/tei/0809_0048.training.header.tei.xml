@@ -11,8 +11,15 @@
 	<date>30 Aug 2008<lb/></date>
 
 	<docTitle>
-	<titlePart>Global Search for New Physics at CDF<lb/> Si Xie on behalf of the CDF collaboration<lb/></titlePart>
+	<titlePart>Global Search for New Physics at CDF<lb/></titlePart>
 	</docTitle>
+
+	<byline>
+	<docAuthor>Si Xie</docAuthor>
+	</byline>
+
+	on behalf of the
+	<note type="group">CDF collaboration<lb/></note>
 
 	<byline>
 	<affiliation>Massachusetts Institute of Technology,</affiliation>
@@ -20,8 +27,7 @@
 
 	<address>Cambridge, MA 02139, USA.<lb/></address>
 
-	Abstract.
-	<div type="abstract">A model-independent global search for new physics has been performed at the CDF experiment. This search<lb/> examines 399 final states, looking for discrepancies between observation and the standard model expectation in populations,<lb/> kinematic shapes, bumps in mass distributions suggestive of new resonances and the tails of the summed transverse momentum<lb/> distribution. This global search reveals no evidence of physics beyond the Standard Model in 2.0 fb −1 of p p collisions at<lb/> √<lb/> s = 1.96 TeV.<lb/></div>
+	
 
 	Keywords:
 	<keyword>exotics, beyond Standard Model, model-independent, global search<lb/></keyword>

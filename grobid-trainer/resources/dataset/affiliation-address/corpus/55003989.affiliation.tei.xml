@@ -19,7 +19,7 @@
 							</address>
 						</affiliation>	
 						<affiliation>	
-							<orgName type="department">Ericsson GmbH</orgName>,
+							<orgName type="institution">Ericsson GmbH</orgName>,
 							<address>
 								<addrLine>Kackertstrasse 7-9</addrLine>,
 								<postCode>D-52072</postCode>
@@ -31,7 +31,7 @@
 						<affiliation>	
 							<orgName type="institution">Ericsson AB</orgName>,
 							<address>	
-								<settlement>Torshamnsgatan 21-13</settlement>,
+								<addrLine>Torshamnsgatan 21-13</addrLine>,
 								<postCode>164 80</postCode>
 								<settlement>Stockholm</settlement>,
 								<country>Sweden</country>

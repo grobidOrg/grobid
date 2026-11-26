@@ -26,7 +26,7 @@
 								<addrLine>4980 Eastern Avenue</addrLine>,
 								<lb/>
 								<settlement>Baltimore</settlement>,
-								<settlement>Maryland</settlement>
+								<region>Maryland</region>
 								<postCode>21224</postCode>, 
 							</address>
 							and 
@@ -35,9 +35,9 @@
 						<affiliation>	
 							<orgName type="laboratory">Lilly Research Laboratories</orgName>,
 							<orgName type="institution">Eli Lilly and Company</orgName>,
-							<orgName type="institution">Lilly Corporate Center</orgName>,
-							<lb/>
 							<address>
+								<addrLine>Lilly Corporate Center</addrLine>,
+							<lb/>
 								<settlement>Indianapolis</settlement>,
 								<region>Indiana</region>
 								<postCode>4628</postCode>

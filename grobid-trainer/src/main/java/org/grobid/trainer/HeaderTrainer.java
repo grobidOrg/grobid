@@ -310,7 +310,7 @@ public class HeaderTrainer extends AbstractTrainer {
 
                 if ((writer2 == null) && (writer3 != null))
                     writer3.write(header2.toString() + "\n");
-                if ((writer2 != null) && (writer3 == null))
+                else if ((writer2 != null) && (writer3 == null))
                     writer2.write(header2.toString() + "\n");
                 else {
                     if (Math.random() <= splitRatio)

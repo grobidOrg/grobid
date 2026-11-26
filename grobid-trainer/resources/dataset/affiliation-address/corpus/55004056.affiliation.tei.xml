@@ -9,7 +9,7 @@
 
 						<affiliation>
 							<marker>&apos;</marker>
-							<orgName type="department">Department of Radiology and 2Biomedical Engineering</orgName>,
+							<orgName type="department">Department of Radiology</orgName> and <marker>2</marker><orgName type="department">Biomedical Engineering</orgName>,
 							<orgName type="institution">University Hospitals of Cleveland</orgName>,
 							<orgName type="institution">Case Western Reserve University</orgName>,
 							<address>
@@ -17,7 +17,9 @@
 								<region>Ohio</region>,
 								<country>USA</country>;
 							</address>
-							<orgName type="department">3Department of Biomedical Engineering</orgName>,
+						</affiliation>
+						<affiliation>
+							<marker>3</marker><orgName type="department">Department of Biomedical Engineering</orgName>,
 							<orgName type="institution">The University of Akron</orgName>,
 							<address>
 								<settlement>Akron</settlement>,

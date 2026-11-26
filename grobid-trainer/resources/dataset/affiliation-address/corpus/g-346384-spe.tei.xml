@@ -9,9 +9,9 @@
 					<analytic>
 						<author>
 							<affiliation>
-								<orgName type="department" key="dep1">Department of Physics</orgName>
+								<orgName type="department">Department of Physics</orgName>
 								and
-								<orgName type="department" key="dep2">RIKEN-BNL Research Center</orgName>,
+								<orgName type="department">RIKEN-BNL Research Center</orgName>,
 								<orgName type="institution">Brookhaven National <lb/>Laboratory</orgName>,
 								<address>
 									<settlement>Upton</settlement>,

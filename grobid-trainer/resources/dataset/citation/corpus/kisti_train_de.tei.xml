@@ -12,7 +12,7 @@
 <!---  journal  volume  missmatch -->
 <bibl xml:id="_JMGHBV_2000_v17n2_15_048" lang="de"><author>Spath, D., Mussa, S.</author>, <title level="a">ACCOMAT - Die genauigkeitsgeregelte Maschine</title>, <title level="j">Wt Werkstaustechnik</title> <biblScope unit="volume">89</biblScope> Vol. <biblScope unit="issue">5</biblScope>, pp. <biblScope unit="page">235-238</biblScope>, <date>1999</date>.</bibl>
 <!---  author  title  journal  volume  page  issue  missmatch -->
-<bibl xml:id="_JMGHBV_2001_v18n2_119_004" lang="de"><author>齋藤 忍</author>, <title level="a">傾斜パシド軸受で支持された回轉軸の危險速度と安定性</title>、<title level="j">機論</title>、<biblScope unit="volume">47</biblScope>-<biblScope unit="issue">413</biblScope>, c 編, <biblScope unit="page">30-35</biblScope>, <date>1981</date>.</bibl>
+<bibl xml:id="_JMGHBV_2001_v18n2_119_004" lang="ja"><author>齋藤 忍</author>, <title level="a">傾斜パシド軸受で支持された回轉軸の危險速度と安定性</title>、<title level="j">機論</title>、<biblScope unit="volume">47</biblScope>-<biblScope unit="issue">413</biblScope>, c 編, <biblScope unit="page">30-35</biblScope>, <date>1981</date>.</bibl>
 <!---  journal  missmatch -->
 <bibl xml:id="_E1BSAF_2001_v5n3_187_005" lang="de"><author>Remane A</author> (<date>1926</date>) <title level="a">Morphologie und Werwandtschaftsbeziehungen der aberranten Gastrotrichen</title>. <title level="j">I. Z. Wiss</title> <biblScope unit="volume">5</biblScope>: <biblScope unit="page">625-754</biblScope>.</bibl>
 <!---  journal  missmatch -->

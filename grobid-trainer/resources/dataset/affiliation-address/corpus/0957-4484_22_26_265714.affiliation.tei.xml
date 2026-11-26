@@ -36,7 +36,7 @@
 							<orgName type="institution">Australian National University</orgName>,
 							<address>
 								<settlement>Canberra</settlement>,
-								<postCode>ACT 0200</postCode>,
+								<region>ACT</region> <postCode>0200</postCode>,
 								<country>Australia</country>
 							<lb/>
 							</address>

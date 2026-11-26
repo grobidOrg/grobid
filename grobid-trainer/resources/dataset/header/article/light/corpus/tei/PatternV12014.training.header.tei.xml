@@ -15,10 +15,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>a<lb/> University Lille</affiliation>
+	<affiliation>a<lb/> University Lille 1,</affiliation>
 	</byline>
 
-	<address>1, Villeneuve d&apos;Ascq, France</address>
+	<address>Villeneuve d&apos;Ascq, France</address>
 
 	<byline>
 	<affiliation>b<lb/> LIFL Laboratory / UMR CNRS 8022,</affiliation>
@@ -38,28 +38,41 @@
 
 	<address>Tallahassee, USA</address>
 
-	Abstract<lb/>
-	<div type="abstract">In this paper we address the problem of modelling and analyzing hu-<lb/>man motion by focusing on 3D body skeletons. Particularly, our intent is<lb/> to represent skeletal motion in a geometric and e cient way, leading to an<lb/> accurate action-recognition system. Here an action is represented by a dy-<lb/>namical system whose observability matrix is characterized as an element<lb/> of a Grassmann manifold. To formulate our learning algorithm, we pro-<lb/>pose two distinct ideas: (1) In the first one we perform classification using<lb/> a Truncated Wrapped Gaussian model, one for each class in its own tangent<lb/> space. (2) In the second one we propose a novel learning algorithm that<lb/> uses a vector representation formed by concatenating local coordinates in<lb/> tangent spaces associated with di↵erent classes and training a linear SVM.<lb/> We evaluate our approaches on three public 3D action datasets: MSR-action<lb/> 3D, UT-kinect and UCF-kinect datasets; these datasets represent di↵erent<lb/></div>
+	
 
 	Email addresses:
 
 	<email>rim.slama@telecom-lille.fr</email>
-	(Rim Slama),<lb/>
+	(
+	<byline>
+	<docAuthor>Rim Slama</docAuthor>
+	</byline>
+	),<lb/>
 
 	<email>hazem.wannous@telecom-lille.fr</email>
-	(Hazem Wannous),<lb/>
+	(
+	<byline>
+	<docAuthor>Hazem Wannous</docAuthor>
+	</byline>
+	),<lb/>
 
 	<email>mohamed.daoudi@telecom-lille.fr</email>
-	(Mohamed Daoudi),
+	(
+	<byline>
+	<docAuthor>Mohamed Daoudi</docAuthor>
+	</byline>
+	),
 
 	<email>anuj@stat.fsu.edu</email>
-	(Anuj<lb/> Srivastava)<lb/>
+	(
+	<byline>
+	<docAuthor>Anuj<lb/> Srivastava</docAuthor>
+	</byline>
+	)<lb/>
 
-	<note type="submission">Preprint submitted to Pattern Recognition<lb/> </note>
+	<note type="submission">Preprint submitted to Pattern Recognition<lb/> August 14, 2014<lb/></note>
 
-	<date>August 14, 2014<lb/></date>
-
-	<div type="abstract">kinds of challenges and together help provide an exhaustive evaluation. The<lb/> results show that our approaches either match or exceed state-of-the-art per-<lb/>formance reaching 91.21% on MSR-action 3D, 97.91% on UCF-kinect, and<lb/> 88.5% on UT-kinect. Finally, we evaluate the latency, i.e. the ability to<lb/> recognize an action before its termination, of our approach and demonstrate<lb/> improvements relative to other published approaches.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Human action recognition, Grassmann manifold, observational<lb/> latency, depth images, skeleton, classification.</keyword>

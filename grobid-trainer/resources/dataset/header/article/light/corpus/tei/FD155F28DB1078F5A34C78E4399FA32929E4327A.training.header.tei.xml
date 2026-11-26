@@ -21,16 +21,16 @@
 	</byline>
 
 	<byline>
-	<affiliation>1 Nonlinear Science Group, Department of Physics<lb/> National Cheng Kung University Tainan </affiliation>
+	<affiliation>1 Nonlinear Science Group, Department of Physics<lb/> National Cheng Kung University</affiliation>
 	</byline>
 
-	<address>-Taiwan 70101, Republic of China<lb/></address>
+	<address>Tainan -Taiwan 70101, Republic of China<lb/></address>
 
 	<byline>
-	<affiliation>2 Department of Physics, National Sun Yat-Sen University Kaohsiung<lb/> </affiliation>
+	<affiliation>2 Department of Physics, National Sun Yat-Sen University</affiliation>
 	</byline>
 
-	<address>Taiwan 80424, Republic of China<lb/></address>
+	<address>Kaohsiung<lb/> Taiwan 80424, Republic of China<lb/></address>
 
 	(
 	<note type="submission">received 15 May 1997; accepted 25 August 1997</note>
@@ -38,8 +38,7 @@
 	
 	<keyword>PACS. 05.45+b -Theory and models of chaotic systems.<lb/></keyword>
 
-	Abstract. -
-	<div type="abstract">We address the issue of recognizing determinism in a time series. Specifically, we<lb/> employ the method of singular-value decomposition (SVD) to derive the eigenvalue spectra of<lb/> the trajectory matrices constructed from a number of scalar time series, mainly white noise and<lb/> chaotic signals, where a very large embedding dimension is used. The results suggest that the<lb/> SVD eigenvalue spectrum can be employed as a measure of determinism and an estimate for<lb/> the strength of a noise contained in the time series can be deduced.<lb/></div>
+	
 
 	<note type="copyright">c Les Editions de Physique</note>
 

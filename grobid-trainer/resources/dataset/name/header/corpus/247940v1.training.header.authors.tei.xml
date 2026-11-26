@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Colin</forename>
+<middlename>JB</middlename>
+<surname>Harvey</surname>
+<marker>1 ‡ † *</marker>,
+</persName>
+<persName>
+<forename>Mancheng</forename>
+<surname>Tang</surname>
+<marker>6 †</marker> ,
+</persName>
+<persName>
+<forename>Ulrich</forename>
+<surname>Schlecht</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Joe</forename>
+<surname>Horecka</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Curt</forename>
+<middlename>R</middlename>
+<surname>Fischer</surname>
+<marker>1,2</marker> ,
+</persName>
+<persName>
+<forename>Hsiao-ching</forename>
+<surname>Lin</surname>
+<marker>6</marker> ,
+</persName>
+<persName>
+<forename>Jian</forename>
+<surname>Li</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Brian</forename>
+<surname>Naughton</surname>
+<marker>‡1</marker> ,
+</persName>
+<persName>
+<forename>James</forename>
+<surname>Cherry</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Molly</forename>
+<surname>Miranda</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Yong</forename>
+<middlename>Fuga</middlename>
+<surname>Li</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Angela</forename>
+<middlename>M</middlename>
+<surname>Chu</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>James</forename>
+<middlename>R</middlename>
+<surname>Hennessy</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Gergana</forename>
+<middlename>A</middlename>
+<surname>Vandova</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Diane</forename>
+<surname>Inglis</surname>
+<marker>2</marker> ,
+</persName>
+<persName>
+<forename>Raeka</forename>
+<surname>Aiyar</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Lars</forename>
+<middlename>M</middlename>.
+<surname>Steinmetz</surname>
+<marker>1,8</marker> ,
+</persName>
+<persName>
+<forename>Ronald</forename>
+<middlename>W</middlename>.
+<surname>Davis</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Marnix</forename>
+<middlename>H</middlename>.
+<surname>Medema</surname>
+<marker>9</marker> ,
+</persName>
+<persName>
+<forename>Elizabeth</forename>
+<surname>Sattely</surname>
+<marker>4</marker> ,
+</persName>
+<persName>
+<forename>Chaitan</forename>
+<surname>Khosla</surname>
+<marker>2,4,5</marker> ,
+</persName>
+<persName>
+<forename>Robert</forename>
+<middlename>P</middlename>
+<surname>St.Onge</surname>
+<marker>1</marker> ,
+</persName>
+<persName>
+<forename>Yi</forename>
+<surname>Tang</surname>
+<marker>6,7</marker> , and
+</persName>
+<persName>
+<forename>Maureen</forename>
+<middlename>E</middlename>.
+<surname>Hillenmeyer</surname>
+<marker>1 ‡ *</marker>
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

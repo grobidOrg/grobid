@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Nachun</surname> <forename>D¹</forename> ,</persName>
+<persName><surname>Ramos</surname> <forename>EM¹</forename> ,</persName>
+<persName><surname>Karydas</surname> <forename>A²</forename> ,</persName>
+<persName><surname>Dokuru</surname> <forename>D¹</forename> ,</persName>
+<persName><surname>Gao</surname> <forename>F¹</forename> ,</persName>
+<persName><surname>Yang</surname> <forename>Z¹</forename> ,</persName>
+<persName><surname>Van Berlo</surname> <forename>V¹</forename> ,</persName>
+<persName><surname>Sears</surname> <forename>R¹</forename> ,</persName>
+<persName><surname>Kramer</surname> <forename>J²</forename> ,</persName>
+<persName><surname>Boxer</surname> <forename>AL²</forename> ,</persName>
+<persName><surname>Rosen</surname> <forename>H²</forename> ,</persName>
+<persName><surname>Miller</surname> <forename>BL²</forename> , and</persName>
+<persName><surname>Coppola</surname> <forename>G</forename>. <marker>¹,³</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

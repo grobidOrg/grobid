@@ -6,7 +6,7 @@
 	<text xml:lang="en">
 		<front>
 <lb/>
-	<reference>JSS<lb/> Journal of Statistical Software<lb/> January 2007, Volume 18, Issue 3.<lb/>  http://www.jstatsoft.org/<lb/></reference>
+	<reference>JSS<lb/> Journal of Statistical Software<lb/> January 2007, Volume 18, Issue 3.<lb/></reference>  <ptr type="web">http://www.jstatsoft.org/</ptr><lb/>
 	
 	<docTitle>
 	<titlePart>TIMP: An R Package for Modeling Multi-way<lb/> Spectroscopic Measurements<lb/> </titlePart>

@@ -29,8 +29,7 @@
 	,
 	<email>{blquanz,daspa}@us.ibm.com</email>
 
-	ABSTRACT<lb/>
-	<div type="abstract">The field of Deep Learning is rich with empirical evidence of human-like per-<lb/>formance on a variety of regression, classification, and control tasks. However,<lb/> despite these successes, the field lacks strong theoretical error bounds and con-<lb/>sistent measures of network generalization and learned invariances. In this work,<lb/> we introduce two new measures, the Gi-score and Pal-score, that capture a deep<lb/> neural network&apos;s generalization capabilities. Inspired by the Gini coefficient and<lb/> Palma ratio, measures of income inequality, our statistics are robust measures of a<lb/> network&apos;s invariance to perturbations that accurately predict generalization gaps,<lb/> i.e., the difference between accuracy on training and test sets.</div>
+	
 
 		</front>
 	</text>

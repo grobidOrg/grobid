@@ -56,7 +56,9 @@ public class GrobidConfig {
         public int memoryLimitMb = 6096;
         public int timeoutSec = 60;
         // drop glyphs lying entirely outside the current clip path (hidden text carried by
-        // embedded figure PDFs); requires pdfalto with -discardClippedText support
+        // embedded figure PDFs); the pdfalto binaries shipped in grobid-home support
+        // -discardClippedText, so this is on by default. Set to false when pointing
+        // grobid-home at a pdfalto build that predates the option.
         public boolean discardClippedText = true;
     }
 

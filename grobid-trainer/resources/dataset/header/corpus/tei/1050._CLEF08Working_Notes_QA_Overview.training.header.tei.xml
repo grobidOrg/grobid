@@ -45,8 +45,10 @@
 	)
 
 	<byline>
-	<affiliation>4<lb/> University of Basque Country, Spain</affiliation>
+	<affiliation>4<lb/> University of Basque Country,</affiliation>
 	</byline>
+
+	<address>Spain</address>
 
 	(
 	<email>i.alegria@ehu.es</email>

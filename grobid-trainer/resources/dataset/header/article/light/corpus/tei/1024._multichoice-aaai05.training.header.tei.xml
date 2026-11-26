@@ -22,8 +22,7 @@
 
 	<email>{culotta, mccallum}@cs.umass.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">A common obstacle preventing the rapid deployment of<lb/> supervised machine learning algorithms is the lack of<lb/> labeled training data. This is particularly expensive to<lb/> obtain for structured prediction tasks, where each train-<lb/>ing instance may have multiple, interacting labels, all<lb/> of which must be correctly annotated for the instance to<lb/> be of use to the learner. Traditional active learning ad-<lb/>dresses this problem by optimizing the order in which<lb/> the examples are labeled to increase learning efficiency.<lb/> However, this approach does not consider the difficulty<lb/> of labeling each example, which can vary widely in<lb/> structured prediction tasks. For example, the labeling<lb/> predicted by a partially trained system may be easier<lb/> to correct for some instances than for others.<lb/> We propose a new active learning paradigm which re-<lb/>duces not only how many instances the annotator must<lb/> label, but also how difficult each instance is to annotate.<lb/> The system leverages information from partially cor-<lb/>rect predictions to efficiently solicit annotations from<lb/> the user. We validate this active learning framework in<lb/> an interactive information extraction system, reducing<lb/> the total number of annotation actions by 22%.</div>
+	
 
 		</front>
 	</text>

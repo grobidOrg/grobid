@@ -32,8 +32,7 @@
 
 	<address>Kansas City,<lb/> Kansas, United States of America</address>
 
-	Abstract<lb/>
-	<div type="abstract">Elevation of the second messenger cGMP by nitric oxide (NO) activates the cGMP-dependent protein kinase PKG, which is<lb/> key in regulating cardiovascular, intestinal, and neuronal functions in mammals. The NO-cGMP-PKG signaling pathway is<lb/> also a major therapeutic target for cardiovascular and male reproductive diseases. Despite widespread effects of PKG<lb/> activation, few molecular targets of PKG are known. We study how EGL-4, the Caenorhabditis elegans PKG ortholog,<lb/> modulates foraging behavior and egg-laying and seeks the downstream effectors of EGL-4 activity. Using a combination of<lb/> unbiased forward genetic screen and proteomic analysis, we have identified a conserved SAEG-1/SAEG-2/HDA-2 histone<lb/> deacetylase complex that is specifically recruited by activated nuclear EGL-4. Gene expression profiling by microarrays<lb/> revealed .40 genes that are sensitive to EGL-4 activity in a SAEG-1-dependent manner. We present evidence that EGL-4<lb/> controls egg laying via one of these genes, Y45F10C.2, which encodes a novel protein that is expressed exclusively in the<lb/> uterine epithelium. Our results indicate that, in addition to cytoplasmic functions, active EGL-4/PKG acts in the nucleus via a<lb/> conserved Class I histone deacetylase complex to regulate gene expression pertinent to behavioral and physiological<lb/> responses to cGMP. We also identify transcriptional targets of EGL-4 that carry out discrete components of the physiological<lb/> response.<lb/></div>
+	
 
 	Citation:
 	<reference>Hao Y, Xu N, Box AC, Schaefer L, Kannan K, et al. (2011) Nuclear cGMP-Dependent Kinase Regulates Gene Expression via Activity-Dependent<lb/> Recruitment of a Conserved Histone Deacetylase Complex. PLoS Genet 7(5): e1002065.</reference>
@@ -44,8 +43,10 @@
 	<editor>Andrew D. Chisholm,</editor>
 
 	<byline>
-	<affiliation>University of California San Diego, United States of America<lb/></affiliation>
+	<affiliation>University of California San Diego,</affiliation>
 	</byline>
+
+	<address>United States of America<lb/></address>
 
 	<note type="submission">Received December 8, 2010; Accepted March 21, 2011;</note>
 

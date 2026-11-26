@@ -16,8 +16,7 @@
 
 	<email>dam@ai.mit.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">It is obvious to anyone familiar with the rules of the game of chess<lb/> that a king on an empty board can reach every square. It is true, but<lb/> not obvious, that a knight can reach every square. Why is the rst<lb/> fact obvious but the second fact not? This paper presents an analytic<lb/> theory of a class of obviousness judgments of this type. Whether or<lb/> not the speci cs of this analysis are correct, it seems that the study of<lb/> obviousness judgments can be used to construct integrated theories of<lb/> linguistics, knowledge representation, and inference.<lb/></div>
+	
 
 	This report describes research done at the 
 
@@ -27,7 +26,7 @@
 
 	<note type="funding">Support for the work described in this paper was provided in part by<lb/> Misubishi Electric Research Laboratories, Inc. Support for the laboratory&apos;s arti cial intelligence<lb/> research is provided in part by the Advanced Research Projects Agency of the Department of<lb/> Defense under O ce of Naval Research contract N00014-85-K-0124.<lb/></note>
 
-	This paper appeared in AAAI-91. 
+	This paper appeared in <meeting>AAAI-91</meeting>. 
 
 	A postscript electronic source for this paper can be found in<lb/> ftp.ai.mit.edu:/pub/dam/aaai91a.ps. A bibtex reference can be found in ftp.ai.mit.edu:/pub/dam/dam.bib.
 

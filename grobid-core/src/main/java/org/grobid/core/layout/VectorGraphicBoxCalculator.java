@@ -71,10 +71,6 @@ public class VectorGraphicBoxCalculator {
 
                 while ((item = it.next()) != null) {
                     String c = item.getStringValue();
-                    // TODO: figure out why such string are returned at all (AS:602281691082754@1520606553791)
-                    if (c.equals(",,,")) {
-                        continue;
-                    }
                     String coords = pageNum + "," + c;
                     BoundingBox e = BoundingBox.fromString(coords);
                     if (!mainPageArea.contains(e) || e.area() / mainPageArea.area() > 0.7) {

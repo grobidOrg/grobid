@@ -20,7 +20,7 @@
 
 	<address>Box 1263<lb/> S-164 28 KISTA Sweden<lb/></address>
 
-	<div type="abstract">We describe a comprehensive treatment of the syntax and semantics of comparative constructions based on<lb/> theoretical work by Pinkham, which can be implemented in a relatively straightforward fashion within a<lb/> feature-based phrase-structure grammar. Comparatives are divided up into &quot;clausal&quot; and &quot;phrasal&quot;<lb/> constructions; in contrast to most previous theories, however, phrasals are not regarded as reduced forms of<lb/> clausals. We begin by defining a Montagovian semantics for phrasal comparatives that directly links<lb/> interpretation rules to the surface syntactic structure; we 1then show how this solution can be made<lb/> computationally more efficient by &quot;factoring&quot; the interpretation through an intermediate level of representa-<lb/>tion, using a method similar to that used for dealing with scoping phenomena. Detailed examples are<lb/> provided, showing how the method can correctly describe the semantics of a variety of superficially widely<lb/> different comparative constructions. The ideas have all been implemented within a large-scale grammar for<lb/> Swedish, a &quot;toy&quot; version of which is presented, along with examples of the output.</div>
+	
 
 		</front>
 	</text>

@@ -32,8 +32,7 @@
 	<email>hhl@daimi.aau.dk</email> 
 	<email>domenico@gracco.irmkant.rm.cnr.it</email>
 
-	Abstract<lb/>
-	<div type="abstract">The concept of a tness formula as a property of an organism is proposed. In<lb/> arti cial life simulations with organisms living in an environment, the tness formula<lb/> can be interpreted as the ability of organisms to extract energy from potential food<lb/> sources distributed in the environment. In simulations where the goal of the genetic<lb/> algorithm is that of developing systems which exhibit a certain type of behavior in a<lb/> particular environment, the tness formula becomes an independent v ariable which c a n<lb/> be manipulated in order to obtain the desired behavior. The tness formula can be<lb/> viewed as an evolvable trait of organisms, and therefore not xed and decided by the<lb/> researcher. Simulations with xed and evolvable tness formulae show that the tness<lb/> formula, the sensory apparatus, and the behavior of organisms may co-evolve a n d b e<lb/> co-adapted.</div>
+	
 
 		</front>
 	</text>

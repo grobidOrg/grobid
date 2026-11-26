@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Stephen</forename>
+								 <middlename>R</middlename>.
+								 <surname>Doyle</surname>
+								 <marker>1 *</marker>,
+							</persName>
+							<persName>
+								 <forename>Christopher</forename>
+								 <middlename>J</middlename>.
+								 <middlename>R</middlename>.
+								 <surname>Illingworth</surname>
+								 <marker>2 *</marker>,
+							</persName>
+							<persName>
+								 <forename>Roz</forename>
+								 <surname>Laing</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <middlename>J</middlename>.
+								 <surname>Bartley</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Elizabeth</forename>
+								 <surname>Redman</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Axel</forename>
+								 <surname>Martinelli</surname>
+								 <marker>1+</marker> ,
+							</persName>
+							<persName>
+								 <forename>Nancy</forename>
+								 <surname>Holroyd</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alison</forename>
+								 <middlename>A</middlename>.
+								 <surname>Morrison</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Andrew</forename>
+								 <surname>Rezansoff</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Alan</forename>
+								 <surname>Tracey</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Eileen</forename>
+								 <surname>Devaney</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Matthew</forename>
+								 <surname>Berriman</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Neil</forename>
+								 <surname>Sargison</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>James</forename>
+								 <middlename>A</middlename>.
+								 <surname>Cotton</surname>
+								 <marker>1**</marker> ,
+							</persName>
+							<persName>
+								 <forename>John</forename>
+								 <middlename>S</middlename>.
+								 <surname>Gilleard</surname>
+								 <marker>5**</marker>
+							</persName>
+							<persName>
+								 <forename>Stephen</forename>
+								 <middlename>R</middlename>.
+								 <surname>Doyle</surname>
+							</persName>
+							<persName>
+								 <forename>Nancy</forename>
+								 <surname>Holroyd</surname>
+							</persName>
+							<persName>
+								 <forename>Matthew</forename>
+								 <surname>Berriman</surname>
+							</persName>
+							<persName>
+								 <forename>Axel</forename>
+								 <surname>Martinelli</surname>
+							</persName>
+							<persName>
+								 <forename>Chris</forename>
+								 <middlename>J</middlename>.
+								 <middlename>R</middlename>.
+								 <surname>Illingworth</surname>
+							</persName>
+							<persName>
+								 <forename>Roz</forename>
+								 <surname>Laing</surname>
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <middlename>J</middlename>.
+								 <surname>Bartley</surname>
+							</persName>
+							<persName> <surname>Doyle</surname> </persName> <persName> <surname>Illingworth</surname> </persName>
+							<persName>
+								 <forename>Alison</forename> <middlename>A</middlename>. </persName> <persName> <forename>John</forename> <middlename>S</middlename>. <surname>Gilleard</surname>
+							</persName>
+							<persName>
+								 <forename>Elizabeth</forename>
+								 <surname>Redman</surname>
+							</persName>
+							<persName>
+								 <forename>Andrew</forename>
+								 <surname>Rezansoff</surname>
+							</persName>
+							<persName>
+								 <forename>Neil</forename>
+								 <surname>Sargison</surname>
+							</persName>
+							<persName> <surname>Doyle</surname> </persName> <persName> <surname>Illingworth</surname> </persName>
+							<persName> <surname>Doyle</surname> </persName> <persName> <surname>Illingworth</surname> </persName>
+							<persName> <surname>Doyle</surname> </persName> <persName> <surname>Illingworth</surname> </persName>
+							<persName> <surname>Doyle</surname> </persName> <persName> <surname>Illingworth</surname> </persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

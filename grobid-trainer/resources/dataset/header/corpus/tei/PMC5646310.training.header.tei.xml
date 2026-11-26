@@ -28,7 +28,11 @@
 
 	<address>Toledo, OH, USA<lb/></address>
 
-	Correspondence should be addressed to Abhinav Tiwari;
+	Correspondence should be addressed to
+	<byline>
+	<docAuthor>Abhinav Tiwari</docAuthor>
+	</byline>
+	;
 	<email>Abhinav.tiwari@utoledo.edu<lb/></email>
 
 	<note type="submission">Received 5 July 2017; Accepted 6 September 2017;</note>

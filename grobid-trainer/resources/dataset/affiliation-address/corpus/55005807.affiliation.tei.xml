@@ -10,13 +10,10 @@
 						<affiliation>
 							<orgName type="department">Plum Island Animal Disease Center</orgName>,
 							<orgName type="department">Agricultural Research Service</orgName>,
+							<orgName type="institution">US
+							Department of Agriculture</orgName>,
 							<address>
-								<country>US</country>
-							</address>
-						</affiliation>
-						<affiliation>
-							<orgName type="department">Department of Agriculture, Orient Point</orgName>,
-							<address>
+								<addrLine>Orient Point</addrLine>,
 								<addrLine>Long Island</addrLine>,
 								<postBox>PO Box 848</postBox>
 								<lb/>

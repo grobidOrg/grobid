@@ -25,7 +25,8 @@
 							</address>
 						</affiliation>
 						<affiliation>	
-							<orgName type="institution">Dept Med Sect Rheum</orgName>,
+							<!-- check: department printed without its institution; retyped department to match the other lone units of this file, but the role rule could also make it the top organisation -->
+							<orgName type="department">Dept Med Sect Rheum</orgName>,
 							<address>
 								<settlement>Florence</settlement>,
 								<country>Italy</country>
@@ -43,7 +44,7 @@
 						</affiliation>
 						<affiliation>
 							<marker>*</marker>
-							<orgName type="department">Academic Medical Center</orgName>,
+							<orgName type="institution">Academic Medical Center</orgName>,
 							<address>
 								<settlement>Amsterdam</settlement>,
 								<country>The Netherlands</country>

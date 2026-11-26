@@ -40,10 +40,10 @@
 	<address>35 Gunasekara Gardens, Nawala Road, Rajagiriya, Sri Lanka,</address>
 
 	<byline>
-	<affiliation>3 Département des Sciences de la Terre, Université de Mahajanga, Faculté<lb/> des Sciences,</affiliation>
+	<affiliation>3 Département des Sciences de la Terre, Université de Mahajanga, Faculté<lb/> des Sciences, Dépt. de Biologie Animale,</affiliation>
 	</byline>
 
-	<address>Dépt. de Biologie Animale, B.P. 652, Mahajanga 401, Madagascar,</address>
+	<address>B.P. 652, Mahajanga 401, Madagascar,</address>
 
 	<byline>
 	<affiliation>4 Department of Anthropology &amp; Geography, School of Social<lb/> Sciences &amp; Law, Oxford Brookes University,</affiliation>
@@ -60,30 +60,49 @@
 	and
 
 	<byline>
-	<affiliation>6 Department of Zoology, University of Cambridge, Downing Street,<lb/></affiliation>
+	<affiliation>6 Department of Zoology, University of Cambridge,</affiliation>
 	</byline>
 
-	<address>Cambridge, CB2 3EJ, UK<lb/></address>
+	<address>Downing Street,<lb/> Cambridge, CB2 3EJ, UK<lb/></address>
 
-	Email: Jennifer Pastorini* -
+	Email:
+	<byline>
+	<docAuthor>Jennifer Pastorini*</docAuthor>
+	</byline>
+	-
 	<email>jenny@aim.uzh.ch</email>; 
 
-	Alphonse Zaramody -
+
+	<byline>
+	<docAuthor>Alphonse Zaramody</docAuthor>
+	</byline>
+	-
 	<email>zaramody@univ-mahajanga.mg</email>;<lb/> 
 
-	Deborah J Curtis -
+
+	<byline>
+	<docAuthor>Deborah J Curtis</docAuthor>
+	</byline>
+	-
 	<email>curtis@scimedtrans.co.uk</email>; 
 
-	Caroline M Nievergelt -
+
+	<byline>
+	<docAuthor>Caroline M Nievergelt</docAuthor>
+	</byline>
+	-
 	<email>cnieverg@ucsd.edu</email>; 
 
-	Nicholas I Mundy -
+
+	<byline>
+	<docAuthor>Nicholas I Mundy</docAuthor>
+	</byline>
+	-
 	<email>nim21@cam.ac.uk<lb/></email>
 
 	* Corresponding author 
 
-	Abstract<lb/>
-	<div type="abstract">Background: Hybrid zones generally represent areas of secondary contact after speciation. The<lb/> nature of the interaction between genes of individuals in a hybrid zone is of interest in the study of<lb/> evolutionary processes. In this study, data from nuclear microsatellites and mitochondrial DNA<lb/> sequences were used to genetically characterize hybridization between wild mongoose lemurs<lb/> (Eulemur mongoz) and brown lemurs (E. fulvus) at Anjamena in west Madagascar.<lb/> Results: Two segments of mtDNA have been sequenced and 12 microsatellite loci screened in<lb/> 162 brown lemurs and mongoose lemurs. Among the mongoose lemur population at Anjamena,<lb/> we identified two F1 hybrids (one also having the mtDNA haplotype of E. fulvus) and six other<lb/> individuals with putative introgressed alleles in their genotype. Principal component analysis groups<lb/> both hybrids as intermediate between E. mongoz and E. fulvus and admixture analyses revealed an<lb/> admixed genotype for both animals. Paternity testing proved one F1 hybrid to be fertile. Of the<lb/> eight brown lemurs genotyped, all have either putative introgressed microsatellite alleles and/or<lb/> the mtDNA haplotype of E. mongoz.<lb/> Conclusion: Introgression is bidirectional for the two species, with an indication that it is more<lb/> frequent in brown lemurs than in mongoose lemurs. We conclude that this hybridization occurs<lb/> because mongoose lemurs have expanded their range relatively recently. Introgressive<lb/> hybridization may play an important role in the unique lemur radiation, as has already been shown<lb/> in other rapidly evolving animals.<lb/></div>
+	
 
 	Published:
 	<date>5 February 2009<lb/></date>

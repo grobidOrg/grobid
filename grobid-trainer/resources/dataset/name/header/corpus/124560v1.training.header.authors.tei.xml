@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Félix</forename> <surname>Balazard</surname> <marker>1,2 *</marker>,</persName>
+<persName><forename>Sophie</forename> <surname>Le Fur</surname> <marker>2,3</marker> ,</persName>
+<persName><forename>Pierre</forename> <surname>Bougnères</surname> <marker>2,3</marker> ,</persName>
+<persName><forename>Alain-Jacques</forename> <surname>Valleron</surname> <marker>2</marker> ,</persName> the
+Isis - Diab
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

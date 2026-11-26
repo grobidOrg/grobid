@@ -13,11 +13,11 @@
 	</docTitle>
 
 	<byline>
-	<docAuthor>Said Assou §,*,φ , Tal Anahory ‡ , Véronique Pantesco * , Tanguy Le Carrour § , Franck<lb/> Pellestor ‡,δ , Bernard Klein *, §,φ , Lionel Reyftmann # , Hervé Dechaud # , John De Vos *, §,φ, 1<lb/> and Samir Hamamah *, §, ‡ ,φ , 1<lb/> § CHU Montpellier,</docAuthor>
+	<docAuthor>Said Assou §,*,φ , Tal Anahory ‡ , Véronique Pantesco * , Tanguy Le Carrour § , Franck<lb/> Pellestor ‡,δ , Bernard Klein *, §,φ , Lionel Reyftmann # , Hervé Dechaud # , John De Vos *, §,φ, 1<lb/> and Samir Hamamah *, §, ‡ ,φ , 1<lb/></docAuthor>
 	</byline>
 
 	<byline>
-	<affiliation>Institut de Recherche en Biothérapie, Hôpital Saint-Eloi, </affiliation>
+	<affiliation>§ CHU Montpellier, Institut de Recherche en Biothérapie, Hôpital Saint-Eloi, </affiliation>
 	</byline>
 
 	<address>Montpellier,<lb/> F-34000 France ;</address>
@@ -70,8 +70,8 @@
 
 	Fax: + 33 4 67 33 62 90.
 
-	Email: s-<lb/>
-	<email>hamamah@chu-montpellier.fr</email>
+	Email:
+	<email>s-<lb/>hamamah@chu-montpellier.fr</email>
 
 	; 
 	<byline>
@@ -89,7 +89,7 @@
 
 	<note type="doctype">HAL author manuscript</note> 
 
-	inserm-00130809, version 1<lb/> 
+	<idno>inserm-00130809, version 1</idno><lb/> 
 
 	<note type="doctype">HAL author manuscript<lb/> </note>
 
@@ -101,7 +101,7 @@
 
 	<note type="doctype">HAL author manuscript</note>
 
-	inserm-00130809, version 1
+	<idno>inserm-00130809, version 1</idno>
 		</front>
 	</text>
 </tei>

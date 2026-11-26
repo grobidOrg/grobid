@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Kirsten</forename> <middlename>I</middlename>. <surname>Bos</surname> <marker>* 1,2</marker> ,</persName>
+<persName><forename>Alexander</forename> <surname>Herbig</surname> <marker>1,2</marker> ,</persName>
+<persName><forename>Jason</forename> <surname>Sahl</surname> <marker>3</marker> ,</persName>
+<persName><forename>Nicholas</forename> <surname>Waglechner</surname> <marker>4</marker> ,</persName>
+<persName><forename>Mathieu</forename> <marker>4</marker> <surname>Fourment</surname> <marker>5</marker> ,</persName>
+<persName><forename>Stephen</forename> <middlename>A</middlename>. <surname>Forrest</surname> <marker>1</marker> ,</persName>
+<persName><forename>Jennifer</forename> <surname>Klunk</surname> <marker>6,7</marker> ,</persName>
+<persName><forename>Verena</forename> <middlename>J</middlename>. <surname>Schuenemann</surname> <marker>1</marker> ,</persName>
+<persName><forename>Debi</forename> <marker>5</marker> <surname>Poinar</surname> <marker>6</marker> ,</persName>
+<persName><forename>Melanie</forename> <surname>Kuch</surname> <marker>6</marker> ,</persName>
+<persName><forename>G</forename>. <middlename>Brian</middlename> <surname>Golding</surname> <marker>7</marker> ,</persName>
+<persName><forename>Olivier</forename> <surname>Dutour</surname> <marker>8</marker> ,</persName>
+<persName><forename>Paul</forename> <surname>Keim</surname> <marker>3</marker> ,</persName>
+<persName><forename>David</forename> <middlename>M</middlename>. <marker>6</marker> <surname>Wagner</surname> <marker>3</marker> ,</persName>
+<persName><forename>Edward</forename> <middlename>C</middlename>. <surname>Holmes</surname> <marker>5</marker> ,</persName>
+<persName><forename>Johannes</forename> <surname>Krause</surname> <marker>* 1,2</marker> , and</persName>
+<persName><forename>Hendrik</forename> <middlename>N</middlename>. <surname>Poinar</surname> <marker>4,6,7,9 *. 7 8</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

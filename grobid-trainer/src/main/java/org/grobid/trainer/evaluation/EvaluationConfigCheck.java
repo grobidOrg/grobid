@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
@@ -38,7 +39,8 @@ import org.grobid.core.utilities.GrobidProperties;
  * <p>
  * It verifies that:
  * <ul>
- *   <li>consolidation is set to biblio-glutton and its URL is reachable, and</li>
+ *   <li>consolidation is set to biblio-glutton and its URL is reachable (unless the
+ *       evaluation runs without consolidation), and</li>
  *   <li>the models for which Deep Learning beats CRF are set to {@code engine: "delft"}.</li>
  * </ul>
  * The required-DeLFT model set below is the one recommended in
@@ -70,24 +72,35 @@ public class EvaluationConfigCheck {
 
     /**
      * @param args optionally {@code "warn"} to only report problems without failing
-     *             (exit code stays 0); any other/no argument means hard-fail on problems.
+     *             (exit code stays 0), and {@code "skip-consolidation"} for an evaluation
+     *             run without consolidation, where biblio-glutton is not needed; without
+     *             {@code "warn"}, the check hard-fails on problems.
      */
     public static void main(String[] args) {
-        boolean warnOnly = args.length > 0 && "warn".equalsIgnoreCase(args[0]);
+        List<String> options = Arrays.asList(args);
+        boolean warnOnly = options.contains("warn");
+        boolean skipConsolidation = options.contains("skip-consolidation");
 
         GrobidProperties.getInstance();
         System.out.println(">>>>>>>> GROBID_HOME=" + GrobidProperties.getGrobidHome());
 
         List<String> problems = new ArrayList<>();
 
-        checkConsolidation(problems);
+        if (skipConsolidation) {
+            System.out.println("Consolidation: not checked (evaluation without consolidation)");
+        } else {
+            checkConsolidation(problems);
+        }
         checkDelftModels(problems);
 
         System.out.println();
         if (problems.isEmpty()) {
             System.out.println(
                     "[OK] grobid.yaml is correctly configured for end-to-end evaluation "
-                            + "(biblio-glutton reachable, DeLFT models enabled).");
+                            + (skipConsolidation ? "without consolidation " : "")
+                            + "("
+                            + (skipConsolidation ? "" : "biblio-glutton reachable, ")
+                            + "DeLFT models enabled).");
             System.exit(0);
         }
 

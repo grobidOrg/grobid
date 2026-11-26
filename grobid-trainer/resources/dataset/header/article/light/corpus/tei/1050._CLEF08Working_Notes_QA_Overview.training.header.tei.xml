@@ -45,8 +45,10 @@
 	)
 
 	<byline>
-	<affiliation>4<lb/> University of Basque Country, Spain</affiliation>
+	<affiliation>4<lb/> University of Basque Country,</affiliation>
 	</byline>
+
+	<address>Spain</address>
 
 	(
 	<email>i.alegria@ehu.es</email>
@@ -127,8 +129,7 @@
 	<email>e.f.tjong.kim.sang@rug.nl</email>
 	)<lb/> 
 
-	Abstract
-	<div type="abstract">The QA campaign at CLEF [1], was manly the same as that proposed<lb/> last year. The results and the analyses reported by last year&apos;s participants sug-<lb/>gested that the changes introduced in the previous campaign had led to a drop in<lb/> systems&apos; performance. So for this year&apos;s competition it has been decided to practi-<lb/>cally replicate last year&apos;s exercise.<lb/> Following last year&apos;s experience some QA pairs were grouped in clusters. Every<lb/> cluster was characterized by a topic (not given to participants). The questions from<lb/> a cluster contained co-references between one of them and the others. Moreover,<lb/> as last year, the systems were given the possibility to search for answers in Wiki-<lb/>pedia 1 as document corpus beside the usual newswire collection.<lb/> In addition to the main task, three additional exercises were offered, namely the<lb/> Answer Validation Exercise (AVE), the Question Answering on Speech Tran-<lb/>scriptions (QAST), which continued last year&apos;s successful pilot, and Word Sense<lb/> Disambiguation for Question Answering (QA-WSD).<lb/> As general remark, it must be said that the task still proved to be very challenging<lb/> for participating systems. In comparison with last year&apos;s results the Best Overall<lb/> Accuracy dropped significantly from 41,75% to 19% in the multi-lingual subtasks,<lb/> while instead it increased a little in the monolingual sub-tasks, going from 54% to<lb/> 63,5%.<lb/> </div>
+	
 
 		</front>
 	</text>

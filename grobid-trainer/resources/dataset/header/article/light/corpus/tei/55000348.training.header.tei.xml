@@ -37,8 +37,7 @@
 	(www.interscience.wiley.com).
 	<idno>DOI: 10.1002/jbm.a.30085<lb/></idno>
 
-	Abstract:
-	<div type="abstract">The entrapment of ␤-galactosidase (Escherichia<lb/> coli) in PLA and PLGA microspheres using a double emul-<lb/>sion technique resulted to significant reduction of protein<lb/> antigenicity. The extent of antigenicity loss depended on the<lb/> conditions of microsphere preparation. Most of antigenicity<lb/> loss occurred on the first emulsification step. Only the effects<lb/> of microsphere preparation factors having an important in-<lb/>fluence on protein antigenicity, such as the type of organic<lb/> phase (polymer solvent) and homogenization, could be pre-<lb/>dicted (on a qualitative basis) by antigenicity data obtained<lb/> after the first emulsification step. The type of polymer and<lb/> polymer solvent used to prepare the microspheres affected<lb/> ␤-galactosidase immunogenicity. The PLA microspheres<lb/> prepared using ethyl acetate was the most immunogenic<lb/> microsphere formulation, eliciting similar total antibody re-<lb/>sponses as the alum formulation of ␤-gal. This formulation<lb/> was the only microsphere formulation that induced an<lb/> IgG1/IgG2a ratio lower than 1, indicating an immune re-<lb/>sponse biased towards a Th 1 type. The results obtained<lb/> indicate that large protein molecules with complex tertiary<lb/> structure such as ␤-galactosidase can be entrapped in PLA<lb/> and PLGA microspheres with retention of protein immuno-<lb/>genic potential, providing that appropriate conditions of<lb/> microsphere preparation are applied, and that the formula-<lb/>tion of microspheres might influence the Th 1 /Th 2 type of<lb/> immune response against the encapsulated antigen.</div>
+	
 
 	<note type="copyright">© 2004<lb/> Wiley Periodicals, Inc. </note>
 
@@ -48,7 +47,11 @@
 
 	<keyword>PLA and PLGA microspheres of ␤-galactosi-<lb/>dase; antigenicity; immunogenicity<lb/></keyword>
 
-	Correspondence to: K. Avgoustakis; e-mail:
+	Correspondence to:
+	<byline>
+	<docAuthor>K. Avgoustakis</docAuthor>
+	</byline>
+	; e-mail:
 	<email>avgoust@<lb/> upatras.gr<lb/></email>
 
 	<note type="funding">Contact grant sponsor: the &quot;K. Karatheodori&quot; program of<lb/> the University of Patras<lb/> Contract grant sponsor: the &quot;PENED&quot; program of the<lb/> Greek Secretariat for Research and Technology<lb/></note>

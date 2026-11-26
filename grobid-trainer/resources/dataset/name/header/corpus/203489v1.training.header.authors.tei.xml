@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author> <persName> <forename>Qiang</forename> <surname>Zhang</surname> <marker>a,1</marker> , </persName> <persName> <forename>Hui-Li</forename> <surname>Xing</surname> <marker>a,1</marker> , </persName> <persName> <forename>Zhi-Ping</forename> <surname>Wang</surname> <marker>a</marker> , </persName> <persName> <forename>Hai-Yan</forename> <surname>Zhang</surname> <marker>a</marker> , </persName> <persName> <forename>Fang</forename> <surname>Yang</surname> <marker>a</marker> , </persName> <persName> <forename>Yun</forename> <surname>Zhou</surname> <marker>b</marker> , </persName> <persName> <forename>Xue-Chen</forename> <surname>Wang</surname> <marker>a</marker> , and</persName> <persName> <forename>Qi- Jun</forename> <surname>Chen</surname> <marker>a,2</marker></persName> </author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

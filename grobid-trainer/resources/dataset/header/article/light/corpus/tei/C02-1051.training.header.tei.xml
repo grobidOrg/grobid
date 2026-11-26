@@ -35,7 +35,11 @@
 	<email>mfujiwar@willamette.edu<lb/></email>
 
 	<byline>
-	<affiliation>MAKOTO YOSHIE<lb/> Graduate School of Information Sciences<lb/> Hiroshima City University<lb/></affiliation>
+	<docAuthor>MAKOTO YOSHIE<lb/></docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>Graduate School of Information Sciences<lb/> Hiroshima City University<lb/></affiliation>
 	</byline>
 
 	<email>yoshie@nlp.its.hiroshima-cu.ac.jp<lb/></email>
@@ -50,8 +54,7 @@
 
 	<email>aizawa@its.hiroshima-cu.ac.jp</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper presents the Natural Language<lb/> Processing-based linguistic analysis tool that<lb/> we have developed for Japanese as a Second<lb/> Language teachers. This program, Zero De-<lb/>tector (ZD), aims to promote effective instruc-<lb/>tion of zero anaphora, on the basis of a hy-<lb/>pothesis about ideal conditions for second<lb/> language acquisition, by making invisible<lb/> zeros visible. ZD takes Japanese written<lb/> narrative discourse as input and provides the<lb/> zero-specified texts and their underlying<lb/> structures as output. We evaluated ZD&apos;s<lb/> performance in terms of its zero detecting<lb/> accuracy. We also present an experimental<lb/> report of its validity for practical use. As a<lb/> result, ZD has proven to be pedagogically<lb/> feasible in terms of its accuracy and its impact<lb/> on effective instruction.</div>
+	
 
 		</front>
 	</text>

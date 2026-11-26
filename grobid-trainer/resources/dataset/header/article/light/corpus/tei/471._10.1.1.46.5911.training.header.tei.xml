@@ -15,19 +15,18 @@
 	</byline>
 
 	<byline>
-	<affiliation>School of Mathematical Sciences,<lb/></affiliation>
+	<affiliation>School of Mathematical Sciences,<lb/> Queen Mary and Westfield College,</affiliation>
 	</byline>
 
-	<address>Queen Mary and Westfield College, London E1 4NS, U.K.<lb/></address>
+	<address>London E1 4NS, U.K.<lb/></address>
 
-	<email>T.Bending@mdx.ac.uk<lb/> d.g.flaass@writeme.com<lb/></email>
+	<email>T.Bending@mdx.ac.uk<lb/></email> <email>d.g.flaass@writeme.com<lb/></email>
 
 	<note type="submission">Submitted: March 25, 1998; Accepted: June 30, 1998.<lb/></note>
 
 	<keyword>1991 Mathematical Subject Classification: 05E30, 05B20<lb/></keyword>
 
-	Abstract<lb/>
-	<div type="abstract">Let V and W be n-dimensional vector spaces over GF (2). A mapping<lb/> Q : V → W is called crooked if it satisfies the following three properties:<lb/> Q(0) = 0;<lb/> Q(x) + Q(y) + Q(z) + Q(x + y + z) = 0 for any three distinct x, y, z;<lb/> Q(x) + Q(y) + Q(z) + Q(x + a) + Q(y + a) + Q(z + a) = 0 if a = 0 (x, y, z<lb/> arbitrary).<lb/> We show that every crooked function gives rise to a distance regular graph<lb/> of diameter 3 having λ = 0 and µ = 2 which is a cover of the complete<lb/> graph. Our approach is a generalization of a recent construction found by<lb/> de Caen, Mathon, and Moorhouse. We study graph-theoretical properties of<lb/> the resulting graphs, including their automorphisms. Also we demonstrate a<lb/> connection between crooked functions and bent functions.<lb/></div>
+	
 
 	<reference>the electronic journal of combinatorics 5 (1998), #R34</reference>
 

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Mi</forename>
+								<middlename>Hee</middlename>
+								<surname>Park</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Hwa</forename>
+								<middlename>Jeong</middlename>
+								<surname>Lee</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Hye</forename>
+								<middlename>Lim</middlename>
+								<surname>Lee</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Dong</forename>
+								<middlename>Ju</middlename>
+								<surname>Son</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Jung</forename>
+								<middlename>Hoon</middlename>
+								<surname>Ju</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Byung</forename>
+								<middlename>Kook</middlename>
+								<surname>Hyun</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Sung</forename>
+								<middlename>Hee</middlename>
+								<surname>Jung</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Ju-Kyoung</forename>
+								<surname>Song</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Dong-Hoon</forename>
+								<surname>Lee</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Chul-Ju</forename>
+								<surname>Hwang</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Sang</forename>
+								<middlename>Bae</middlename>
+								<surname>Han</surname>
+								<marker>1</marker> ,
+							</persName>
+							<persName>
+								<forename>Sanghyeon</forename>
+								<surname>Kim</surname>
+								<marker>2</marker> ,
+							</persName>
+							<persName>
+								<forename>Jin</forename>
+								<middlename>Tae</middlename>
+								<surname>Hong</surname>
+								<marker>1 *</marker>
+								
+							</persName>
+							<persName>
+								<roleName>Prof</roleName>.
+								<forename>Jin</forename>
+								<middlename>Tae</middlename>
+								<surname>Hong</surname>
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -749,14 +749,15 @@ public class CitationParser extends AbstractParser {
             List<OffsetPosition> identifiersPositions = null;
             List<OffsetPosition> urlPositions = null;
             for (String input : inputs) {
-                if (input == null)
+                if (StringUtils.isBlank(input))
                     continue;
 
                 List<LayoutToken> tokenizations = analyzer.tokenizeWithLayoutToken(input);
                 tokenizations = analyzer.retokenizeSubdigitsFromLayoutToken(tokenizations);
 
+                // an empty reference must not discard the training data of all the other ones
                 if (tokenizations.size() == 0)
-                    return null;
+                    continue;
 
                 journalsPositions = lexicon.tokenPositionsJournalNames(tokenizations);
                 abbrevJournalsPositions = lexicon.tokenPositionsAbbrevJournalNames(tokenizations);

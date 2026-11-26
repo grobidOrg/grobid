@@ -36,8 +36,7 @@
 	Email:
 	<email>lesser@cs.umass.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">Design-to-time real-time scheduling is an al-<lb/>ternative to the many flexible computation ap-<lb/>proaches that are based on anytime algorithms.<lb/> It builds schedules at runtime that dynamically<lb/> combine solutions to subproblems, taking ad-<lb/>vantage of the time available to achieve the best<lb/> results it can. In this paper we look in detail at<lb/> a few issues related to design-to-time, includ-<lb/>ing where the approximations we rely on come<lb/> from, how uncertainty affects the scheduling<lb/> process and the interface between the sched-<lb/>uler and its invoker.</div>
+	
 
 		</front>
 	</text>

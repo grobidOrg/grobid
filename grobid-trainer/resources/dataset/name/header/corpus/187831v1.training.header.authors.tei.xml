@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Diniz</surname> <forename>CRAF</forename> <marker>1#</marker> ,</persName>
+<persName><surname>Becari</surname> <forename>C</forename> <marker>1,2,4</marker> ,</persName>
+<persName><surname>Lesnikova</surname> <forename>A</forename> <marker>5</marker> ,</persName>
+<persName><surname>Biojone</surname> <forename>C</forename> <marker>3,5</marker> ,</persName>
+<persName><surname>Salgado</surname> <forename>MCO</forename> <marker>1</marker> ,</persName>
+<persName><surname>Salgado</surname> <forename>HC</forename> <marker>2</marker> ,</persName>
+<persName><surname>Resstel</surname> <forename>LBM</forename> <marker>1</marker> ,</persName>
+<persName><surname>Guimaraes</surname> <forename>FS</forename> <marker>1</marker> ,</persName>
+<persName><surname>Castren</surname> <forename>E</forename> <marker>5</marker> ,</persName>
+<persName><surname>Casarotto</surname> <forename>PC</forename> <marker>1,5# *</marker>,</persName>
+<persName><surname>Joca</surname> <forename>SRL</forename> <marker>3,6</marker></persName>
+<persName><roleName>Dr</roleName>. <forename>Plinio</forename> <middlename>Cabrera</middlename> <surname>Casarotto</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

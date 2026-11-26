@@ -1,0 +1,238 @@
+<?xml version="1.0" ?>
+<tei xml:space="preserve">
+	<teiHeader>
+		<fileDesc xml:id="cex_NOTES-8">
+			<sourceDesc>
+				<bibl>CEX corpus, document NOTES-8 (source paper not identified)</bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+			<head>I. INTRODUCTION<lb/></head>
+
+			<p>High-Frequency Inductive Power Transfer (HF-IPT) ex-<lb/>ploits the fact that large diameter, high quality factor (Q) MHz<lb/> air-core inductors can be realized and used in the magnetic<lb/> link, allowing much lighter systems to be created than by using<lb/> kHz, ferrite-enhanced counterparts <ref type="biblio">[1]</ref>. A large diameter coil<lb/> with high Q can enable meaningful power transfer distance<lb/> with high link efficiency <ref type="biblio">[2], [3]</ref>. This coil can then be<lb/> combined with Class E-type circuit topologies that are tolerant<lb/> to load variations (e.g. Class EF topologies) to make a practical<lb/> system <ref type="biblio">[4]-[9]</ref>.<lb/></p>
+
+			<p>The efficiency of HF-IPT coil drivers has been improving,<lb/> partly through the use of wide bandgap technology, such as<lb/> GaN and Silicon Carbide (SiC) <ref type="biblio">[10], [11]</ref> and partly through<lb/> detailed modeling and optimisation <ref type="biblio">[12]</ref>. Now, the dominant<lb/> sources of losses are the inductors (other than the primary coil)<lb/> present in the coil drivers.<lb/></p>
+
+			<p>In several Class EF inverter designs (for example, see<lb/> Fig. <ref type="figure">1</ref>), the lossiest inductor is the ϕ-branch inductor (L ϕ ).<lb/></p>
+
+				<figure>V in<lb/> L rf c<lb/> f S<lb/> Q<lb/> C p<lb/> L ϕ<lb/> C ϕ<lb/> C s1<lb/> L s1<lb/> ϕ-branch<lb/> C s2<lb/> L s2<lb/> R L<lb/> k<lb/> Fig. 1: Circuit diagram of a Class EF inverter coupled to a resonant<lb/> ac load. This inverter is used for the 13.56 MHz, 70 W Class EF2<lb/> inverter discussed in this paper.<lb/></figure>
+
+			<p>The addition of the ϕ-branch enhances the range of design<lb/> capabilities compared to the traditional Class E inverter <ref type="biblio">[13]</ref> by<lb/> providing two extra degrees of freedom. This enables higher<lb/> power capability of the inverter with lower device stresses,<lb/> more effective absorption of the device non-linear output<lb/> capacitance, and load-independence with a finite choke <ref type="biblio">[4],<lb/> [12]</ref>. However, this comes with the cost of the current in the<lb/> ϕ-branch inductor (L ϕ ) often being close in magnitude to that<lb/> of the primary coil (L s1 ). Because of this, the losses in the<lb/> ϕ-branch inductor can be significant if its Q is not sufficiently<lb/> large. Indeed, air-core ϕ-branch inductors have been shown to<lb/> consume around 20 % of the total losses <ref type="biblio">[12]</ref>.<lb/></p>
+
+			<p>Moreover, the ϕ-branch current can contain substantial har-<lb/>monic components up to the third order. These harmonics can<lb/> play a significant role in how this inductor should be ideally<lb/> optimised. A bespoke inductor solution, which accounts for<lb/> these higher order harmonics, would add a degree of freedom<lb/> in the optimisation process, making it easier to minimise the<lb/> losses in the ϕ-branch.<lb/></p>
+
+			<p>Additionally, for practicality, the ϕ-branch inductor must be<lb/> much smaller than the transmit and receive coils in the HF-IPT<lb/> system. Recent work has shown that small, low-loss inductors<lb/> may be achieved for frequencies in the tens of MHz by using<lb/> cored designs <ref type="biblio">[14]</ref>. This suggests that cored components can<lb/> be used in HF-IPT systems without sacrificing the overall<lb/> light-weight benefits of MHz operation.<lb/></p>
+
+			<p>In this work, we designed and built a low-loss cored<lb/> inductor for the ϕ-branch of a 13.56 MHz, 70 W Class EF 2<lb/> inverter <ref type="biblio">[12]</ref> (Fig. <ref type="figure">1</ref>). This inductor achieves low loss by using<lb/> a modified pot core (MP) structure that is well-suited for the<lb/> </p>
+			
+			<figure>0 ns<lb/> 50 ns<lb/> 100 ns<lb/> 150 ns<lb/> -4 A<lb/> -2 A<lb/> 0 A<lb/> 2 A<lb/> 4 A<lb/> ϕ-Branch Current I ϕ<lb/> loop 1<lb/> (24 MHz)<lb/> loop 2<lb/> (32 MHz)<lb/> 1 2 3<lb/> 0 A<lb/> 1 A<lb/> 2 A<lb/> n th -harmonic<lb/> frequency<lb/> FFT of I ϕ<lb/> Fig. 2: Waveform of the ϕ-branch current for two periods and its<lb/> FFT up to the third harmonic for the 13.56 MHz Class EF2 inverter<lb/> in Fig. <ref type="figure">1</ref>. The current is divided into two loops (red and yellow) for<lb/> modeling core loss in inductor designs.<lb/></figure>
+
+			<figure>Fig. 3: A sectional view of the modified pot core (MP) structure. The<lb/> MP structure is similar to a standard pot core with a core surrounding<lb/> a winding but has many small gaps distributed vertically in its core.<lb/></figure>
+
+			<p>multi-frequency MHz ϕ-branch current. We then conducted<lb/> an experimental comparison with five different inductors, in-<lb/>cluding the MP inductor, applied on the ϕ-branch of the Class<lb/> EF 2 inverter. The MP inductor significantly outperformed the<lb/> other inductors, achieving less than half the power loss, which<lb/> resulted in a 0.4 % increase in system efficiency over the best<lb/> comparison inductor, corresponding to a 6 % reduction in total<lb/> system loss.<lb/></p>
+
+			<p>In this paper, we detail the streamlined design process<lb/> used to achieve such a low-loss inductor for multi-frequency<lb/> MHz applications with the MP structure. We then discuss<lb/> the design of the comparison inductors. Finally, we present<lb/> the experimental setup as well as the component and system<lb/> performance of all five tested inductors.<lb/></p>
+
+			<head>II. A ϕ-BRANCH INDUCTOR DESIGN USING A MODIFIED<lb/> POT CORE STRUCTURE<lb/></head>
+
+			<p>For the example 13.56 MHz Class EF 2 inverter, the ϕ-<lb/>branch current has a main frequency of operation at the second<lb/> harmonic. This current, shown in Fig. <ref type="figure">2</ref>, also has substantial<lb/> fundamental and third harmonic components. Therefore, to<lb/> achieve a low-loss ϕ-branch inductor, we need a design that<lb/> is optimised for this multi-frequency current.<lb/></p>
+
+			<p>A low-loss cored inductor design that is suitable for this<lb/> HF-IPT application is the modular modified pot core (MP)<lb/> structure introduced in <ref type="biblio">[15], [16]</ref>. The MP structure looks<lb/> similar to a standard pot core geometry but has a larger<lb/> core area to window area ratio as well as many small gaps<lb/> distributed vertically throughout its core (Fig. <ref type="figure">3</ref>).<lb/></p>
+
+			<figure type="table">TABLE I: Specifications, geometry parameters, and core material<lb/> parameters for the MP inductor prototype.<lb/> Specifications<lb/> L (at 13.56 MHz)<lb/> 241 nH<lb/> Core material<lb/> Fair-Rite 67<lb/> Core geometry<lb/> MP17-0.8 ( 17 mm x 14 mm)<lb/> Total gap length<lb/> 4.2 mm (across 4 gaps)<lb/> Winding<lb/> 3 turns (AWG 22)<lb/> Geometry Parameters<lb/> Effective core area Ae<lb/> 104 mm 2<lb/> Effective core length le<lb/> 15.1 mm<lb/> Effective core volume Ve<lb/> 1.6 cm 3<lb/> Mean turn length lturn<lb/> 39.9 mm<lb/> Window height hw<lb/> 9.0 mm<lb/> Max. wire diameter max<lb/> 0.64 mm<lb/> Core Material Parameters<lb/> Relative permeability µr<lb/> 40<lb/> Steinmetz param. at 20 MHz k = 2.17x10 -4 (mW/cm 3 ),<lb/> α = 1.55 (Hz), β = 2.12 (T)<lb/> Steinmetz param. at 35 MHz k = 2.17x10 -4 (mW/cm 3 ),<lb/> α = 1.55 (Hz), β = 2.18 (T)<lb/></figure>
+
+			<p>In general, MP core geometries are constructed from a<lb/> modular set of core pieces that form a core set. Each core set<lb/> is defined by its footprint diameter, which serves as a base for<lb/> the set. Using a single core set, different MP core geometries<lb/> can easily be constructed by stacking different numbers of<lb/> core pieces on top of this footprint base. This modularity<lb/> provides flexibility for designing inductors tailored to specific<lb/> applications.<lb/></p>
+
+			<p>To evaluate the performance of the MP structure for this<lb/> application, we designed and built a ϕ-branch inductor using<lb/> this structure. To simplify the design process, we leveraged<lb/> an existing MP core geometry developed in <ref type="biblio">[16]</ref> and used<lb/> solid round wire. 1 The target inductance for this inductor was<lb/> 250 nH. Full specifications of the final MP inductor design are<lb/> listed in Table <ref type="table">I</ref>.<lb/></p>
+
+			<p>In this section, we provide an overview of how the MP<lb/> structure achieves low loss. Afterwards, we walk through the<lb/> process for designing and building the ϕ-branch inductor using<lb/> the MP structure. This design process is suitable for quickly<lb/> generating low-loss inductor designs and can be used in any<lb/> application with high-frequency ac currents.<lb/></p>
+
+			<head>A. Low-Loss Features of the MP Structure:</head> 
+			<p>The MP struc-<lb/>ture&apos;s core geometry is specifically designed to achieve low<lb/> core and winding loss for large, high-frequency ac currents.<lb/></p>
+
+			<p>To achieve low core loss, which scales with the B fields in<lb/> the core, the MP structure includes two main features to keep<lb/> the B fields low. First, the MP structure has a larger core<lb/> to window area ratio than conventional cores. For inductor<lb/> designs intended for large ac currents, having a large window<lb/> area for the winding is not crucial for low winding loss since<lb/> current mainly flows within a skin depth of the conductor and<lb/> not through the entire cross-section. However, having a large<lb/> cross-sectional core area is crucial for low core loss since it<lb/> can greatly reduce the core&apos;s flux density B. Therefore, the<lb/> MP structure dedicates more of its volume to the core to take<lb/> advantage of this low-penalty trade-off.<lb/></p>
+
+			<p>Second, to help achieve low core loss, the MP structure<lb/> has many small gaps distributed vertically throughout its core,<lb/> which form a quasi-distributed gap <ref type="biblio">[17]</ref>. These gaps add<lb/> reluctance to the core&apos;s magnetic flux path, which reduces the<lb/> B fields, and thus loss, in the core.<lb/></p>
+
+			<p>To achieve low winding loss, the MP structure uses a closed-<lb/>core geometry designed to shape the magnetic fields around<lb/> the winding. This field shaping enables current to more evenly<lb/> distribute in the conductor, reducing the winding&apos;s effective<lb/> resistance. In the MP structure, the winding is also limited<lb/> to a single layer to reduce losses due to the proximity effect<lb/> between multiple layers of conductors.<lb/></p>
+
+			<p>Additionally, the quasi-distributed gap in the MP structure<lb/> helps to achieve low winding loss. In typical designs with a<lb/> single lumped gap, magnetic fields at the gap fringe outwards<lb/> into the window area. In conductors near the gap, current then<lb/> crowds towards these fringing fields instead of distributing in<lb/> the available conduction area, which increases winding loss.<lb/> With a quasi-distributed gap, however, the gap is distributed<lb/> along the core, thus reducing the magnitude of fringing fields<lb/> at each smaller gap while also distributing their location. By<lb/> doing so, this type of gap reduces the impact of fringing fields<lb/> on winding loss.<lb/></p>
+
+			<head>B. Design Process for the MP Inductor:</head>
+
+			<p>To design the ϕ-<lb/>branch inductor using the MP structure, we used a streamlined<lb/> design process that prioritized ease of design over exact opti-<lb/>misation. 2 To do this, we only considered MP core geometries<lb/> that were previously developed in <ref type="biblio">[16]</ref>. After selecting a<lb/> geometry, we used hand calculations to roughly optimise the<lb/> MP design and then quickly fine-tuned it in 2D Finite Element<lb/> Analysis (FEA) simulations. This method of rough estimation<lb/> can still yield low-loss designs since the optimisation curve<lb/> for the MP structure is relatively flat near its minimum loss<lb/> point <ref type="biblio">[15]</ref>. Below, we detail the design process for the ϕ-<lb/>branch MP inductor, which is also summarised in Fig. <ref type="figure">4</ref>.<lb/></p>
+
+			<p>First, we chose a target volume for the inductor at around<lb/> 4.0 cm 3 , which is similar to the volume of the ϕ-branch induc-<lb/>tor used in <ref type="biblio">[12]</ref>. Then, we looked for a MP core geometry in<lb/> this size. To do this, we looked at existing MP core sets listed<lb/> in <ref type="biblio">[16]</ref>&apos;s Table <ref type="table">I</ref> to find an appropriate core set to use. Since<lb/> the target volume is relatively small, we selected the smallest<lb/> existing core set, MP17, which has a footprint diameter of<lb/> 17 mm. To meet our target volume, we then calculated the<lb/> required height of stacked core pieces for the design, which<lb/> was 14 mm. The resulting MP core geometry had a height-to-<lb/>diameter ratio of 0.8 and is denoted as MP17-0.8, per <ref type="biblio">[16]</ref>.<lb/></p>
+
+			<figure>Select target<lb/> volume<lb/> Select target L<lb/> Select core<lb/> material<lb/> Select MP core geometry<lb/> (pick a core set from <ref type="biblio">[16]</ref>&apos;s<lb/> Table <ref type="table">I</ref> &amp; set a height)<lb/> Find N &amp; gap reluctance<lb/> for minimum loss<lb/> design via hand calcs<lb/> (model core loss using<lb/> eq. 1-4 and winding<lb/> loss using eq. 5-9)<lb/> Design quasi-distributed<lb/> gap via 2D FEA<lb/> (find total gap length &amp; #<lb/> of gaps/core pieces; use<lb/> eq. 10 as a starting point)<lb/> Build design<lb/> Fig. 4: Flowchart summarising the streamlined design process for<lb/> designing inductors with the MP structure.<lb/></figure>
+
+			<p>Next, we looked for a core material with low loss in our<lb/> frequency range of interest from 13.56 MHz to 40.68 MHz.<lb/> For this reason, we chose Fair-Rite 67 <ref type="biblio">[18]</ref>.<lb/></p>
+
+			<p>Using the MP17 core set, we optimised the MP inductor<lb/> design for minimum loss by adjusting the number of turns and<lb/> total gap reluctance (which is later used to derive the required<lb/> total gap length).<lb/></p>
+
+			<p>To do this, we first modeled core loss as a function of the<lb/> number of turns using the iGSE core loss model <ref type="biblio">[19], [20]</ref>.<lb/> This model uses an improved version of the original Steinmetz<lb/> equation <ref type="biblio">[21]</ref>, called iGSE, that can handle multi-frequency<lb/> waveforms, making it suitable for modeling core loss in the<lb/> example ϕ-branch inductor design.<lb/></p>
+
+			<p>For this design, we simplified core loss calculations for the<lb/> MP17-0.8 core geometry by modeling it with three lumped<lb/> effective geometric parameters that represent an equivalent<lb/> toroid with uniformly distributed B fields. The parameters<lb/> were: the effective core cross-sectional area A e , the effective<lb/> core length l e , and the effective core volume V e . To estimate<lb/> A e , we leveraged the fact that the MP core geometry was de-<lb/>signed to have similar effective cross-sectional area throughout<lb/> most of the core <ref type="biblio">[15]</ref>. So, for simplicity, we calculated A e as<lb/> the cross-sectional area of the center core section, known as<lb/> the center post, for A e = 104 mm 2 . To estimate l e , we looked<lb/> at the flux path through the core, which encircles the window.<lb/> Since the path includes gaps, we estimated l e as less than the<lb/> full path length, estimating it as twice the window height for<lb/> l e = 15.1 mm. Finally, to estimate V e , we took the product of<lb/> A e and l e for V e = 1.6 cm 3 .<lb/></p>
+
+			<p>To model core loss, the iGSE method takes a complex<lb/> current waveform and divides it into simpler single-frequency<lb/> sub-waveforms or &apos;loops&apos;. Doing so helps with modeling core<lb/> loss more accurately since core loss parameters are often<lb/> provided under single-frequency conditions. So, for the multi-<lb/>frequency ϕ-branch current, we divided it into two loops,<lb/> one with a local frequency of 24 MHz and the other with a<lb/> frequency at 32 MHz (see Fig. <ref type="figure">2</ref>).<lb/></p>
+
+			<p>Then, for each loop j, we used its current waveform I j (t)<lb/> to calculate the B field waveforms in the core as a function<lb/> of the number of turns N :<lb/></p>
+
+				<formula>B j (t) =<lb/> LI j (t)<lb/> N A e<lb/> .<lb/></formula>
+
+				<label>(1)<lb/></label>
+
+			<p>Next, we used B j to calculate the volumetric core loss<lb/> density P v,j for each loop j using iGSE. For this calculation,<lb/> iGSE leverages the same parameters used in the Steinmetz<lb/> equation (k, α, β). For the two loops at 24 MHz and 32 MHz,<lb/> we used Steinmetz parameters for Fair-Rite 67 at 20 MHz and<lb/> 35 MHz, respectively, derived from curve-fitting core loss data<lb/> from <ref type="biblio">[22]</ref>. iGSE also requires a new parameter k i , which<lb/> is calculated from these parameters. For ease, we used an<lb/> approximation 3 for k i that holds for α between 0.5 and 3,<lb/> which can be found in <ref type="biblio">[19]</ref>:<lb/></p>
+
+				<formula>k i =<lb/> k<lb/> π α-1 2 β+1 0.2761 + 1.7061<lb/> α+1.354<lb/> .<lb/></formula>
+
+				<label>(2)<lb/></label>
+
+			<p>Using the modified Steinmetz parameters (k i , α, β), the period<lb/> of each loop T j , and B j , we calculated P v,j using iGSE:<lb/></p>
+
+				<formula>P v,j = k i (∆B j )<lb/> β-α 1<lb/> T j<lb/> Tj<lb/> 0<lb/> dB j<lb/> dt<lb/> α<lb/> dt,<lb/></formula>
+
+				<label>(3)<lb/></label>
+
+			<p>where ∆B j is the peak-to-peak B field swing in each loop,<lb/> which can be calculated from the peak-to-peak current ∆I j of<lb/> each loop using an equation analogous to (<ref type="formula">1</ref>).<lb/></p> 
+			
+			<p>Finally, the total core loss was calculated by taking a time-<lb/>weighted average of the two loops&apos; volumetric loss P v,j and<lb/> multiplying it by the effective core volume V e :<lb/></p>
+
+				<formula>P core = V e P v = V e<lb/> j<lb/> T j<lb/> T<lb/> P v,j ,<lb/></formula>
+
+				<label>(4)<lb/></label>
+
+			<p>where T is the total period of the current. In this example,<lb/> T = 1/13.56 MHz.<lb/></p>
+
+			<p>Next, we modeled winding loss for the multi-frequency ϕ-<lb/>branch current using a Fourier series sum of the ac loss <ref type="biblio">[20]<lb/></ref> for the current&apos;s three major frequency components: the funda-<lb/>mental I 1 , second harmonic I 2 , and third harmonic I 3 (Fig. <ref type="figure">2</ref>).<lb/> To do this, we first calculated physical parameters for the<lb/> winding and window, namely the mean length of turn l turn ,<lb/> the window height h w , and the cross-sectional wire area A wire .<lb/> To calculate l turn , we assumed the winding was horizontally<lb/> centered in the window for l turn = 39.9 mm. To calculate h w ,<lb/> we first referred to <ref type="biblio">[16]</ref>&apos;s Table I to find the total height of<lb/> the two core pieces sandwiching the top and bottom of the<lb/> window (defined as twice the end cap height in the table).<lb/> Then, we subtracted this height from the total target height<lb/> of 14 mm for h w = 9 mm. To calculate A wire , we first<lb/> found the appropriate wire diameter wire using the design<lb/> guidelines from <ref type="biblio">[15]</ref> and <ref type="biblio">[16]</ref>, which provide wire diameter<lb/> recommendations for low winding loss that depend on the<lb/> number of turns N . (Generally speaking, the recommended<lb/> wire diameter decreases as N increases.) For simplicity in<lb/> sweeping MP17-0.8 inductor designs across N , for each N , we<lb/> set the wire diameter to be the minimum of the following two<lb/> values: 1. the maximum wire diameter max listed in <ref type="biblio">[16]</ref>&apos;s<lb/> Appendix A for the MP17 core set, which was 0.64 mm (AWG<lb/> 22), and 2. a wire diameter such that the winding vertically<lb/> fills 60 % of the window height. We then used the resulting<lb/> wire diameters to calculate A wire as a function of N :<lb/></p>
+
+				<formula>A wire = π<lb/> wire<lb/> 2<lb/> 2<lb/> = π<lb/> <lb/> <lb/> <lb/> <lb/> min max ,<lb/> 0.6h w<lb/> N<lb/> 2<lb/> <lb/> <lb/> <lb/> <lb/> 2<lb/> .</formula> 
+				<label>(5)<lb/></label>
+
+			<p>Using the calculated values for l turn and A wire , we calcu-<lb/>lated the winding&apos;s dc resistance as a function of the number<lb/> of turns N (assuming a copper winding):<lb/></p>
+
+				<formula>R dc =<lb/> ρN l turn<lb/> A wire<lb/> .<lb/></formula>
+
+				<label>(6)<lb/></label>
+
+			<p>Then, using the winding&apos;s dc resistance, we calculated its<lb/> ac resistance at each frequency using Dowell&apos;s equation <ref type="biblio">[20],<lb/> [23]</ref> for a single-layer winding:<lb/></p>
+
+				<formula>R ac,n = R dc ∆ n<lb/> sinh (2∆ n ) + sin (2∆ n )<lb/> cosh (2∆ n ) -cos (2∆ n )<lb/> ,<lb/></formula>
+
+				<label>(7)<lb/></label>
+
+			<p>where, for round wire, ∆ n can be approximated 4 for each<lb/> frequency n using the skin depth δ n and the wire diameter<lb/> wire as:<lb/></p>
+
+				<formula>∆ n ≈<lb/> π<lb/> 4<lb/> 3/4<lb/> wire<lb/> δ n<lb/></formula>
+
+				<label>(8)<lb/></label>
+
+			<p>Afterwards, to get the total copper loss P Cu as a function of<lb/> N , we summed up the copper loss at each frequency n using<lb/> the current I n and ac resistance R ac,n :<lb/></p>
+
+				<formula>P Cu =<lb/> 1<lb/> 2<lb/> 3<lb/> n=1<lb/> I 2<lb/> n R ac,n .<lb/></formula>
+
+				<label>(9)<lb/></label>
+
+			<p>Finally, using our core and winding loss models, we swept<lb/> over different MP designs to find the one with minimum<lb/> loss. The resulting optimal MP17-0.8 inductor design had 3<lb/> turns with an estimated core loss of 140 mW and an estimated<lb/> copper loss of 490 mW for a total loss of 630 mW.<lb/></p>
+
+			<p>From there, we finalised the design of the MP inductor&apos;s<lb/> quasi-distributed gaps through an iterative process using 2D<lb/> FEA simulations. The MP structure has quasi-distributed gaps<lb/> in two sections of the core, the center post and the outer<lb/> section. These gaps are composed of alternating core pieces<lb/> and gaps, with core pieces on both ends of the stack. So for<lb/> N gap gaps in a stack, there are N gap + 1 core pieces. The<lb/> quasi-distributed gaps are defined by the total gap length and<lb/> the number of stacked core pieces and gaps in each section.<lb/> For design simplicity, we constrained the MP design to have<lb/> the same number of core pieces and gaps in both sections, as<lb/> well as the same core piece height (defined by the MP core<lb/> set) and total gap length.<lb/></p>
+
+			<p>To design the quasi-distributed gaps, we first developed an<lb/> initial simulation design. To do this, we roughly estimated the<lb/> total gap length l gap needed to achieve the target inductance<lb/> by using a reluctance model of the inductor. This model is<lb/> intended to quickly generate an initial design to iterate on and<lb/> isn&apos;t intended to provide an extremely accurate gap length.<lb/></p>
+
+			<p>In this model, inductance L is defined by the core and<lb/> gap reluctances R as well as the number of turns N using<lb/> L = N 2 /(R core + R gap ). To simplify calculations, we es-<lb/>timated the reluctances using the MP core&apos;s effective geo-<lb/>metric parameters (l e , A e ) and the core material&apos;s relative<lb/> permeability µ r while neglecting fringing fields from the gaps:<lb/> R core ≈ l e /(µ r µ 0 A e ) and R gap ≈ l gap /(µ 0 A e ), where µ 0 is<lb/> the permeability of free space. Using these equations, the total<lb/> gap length can be estimated by:<lb/></p>
+
+				<formula>l gap ≈<lb/> N 2 µ 0 A e<lb/> L<lb/> -<lb/>l e<lb/> µ r<lb/> .<lb/></formula>
+
+				<label>(10)<lb/></label>
+
+			<p>Using this estimated gap length, we picked the number of<lb/> core pieces (and gaps) that would bring the MP design close<lb/> to its target height of 14 mm. Then, we simulated this initial<lb/> design and checked its simulated inductance. on the<lb/> simulated inductance, we adjusted the total gap length and<lb/> number of core pieces/gaps to better meet the target inductance<lb/> and continued to make these iterative adjustments until we had<lb/> a design that met the target inductance near the target volume.<lb/></p>
+
+			<p>After finalising the design, we built the MP inductor (Fig. <ref type="figure">5</ref>)<lb/> using the construction process detailed in <ref type="biblio">[15]</ref>. For this<lb/> prototyping process, the inductor was constructed in sections<lb/> by alternately stacking core pieces and plastic spacers to form<lb/> the quasi-distributed gaps. The sections were then assembled<lb/> together. Custom 3D-printed jigs were used to help with<lb/> stacking the cores as well as with constructing the winding.<lb/></p>
+
+			<head>III. INDUCTOR DESIGNS USING OFF-THE-SHELF PARTS<lb/></head>
+
+			<p>For comparison, we investigated and built four other ϕ-<lb/>branch inductor designs for the example 13.56 MHz Class EF 2<lb/> inverter using off-the-shelf parts:<lb/></p>
+			<list>
+			<item>• One ferrite toroid design<lb/></item> 
+			<item>• Two iron powder toroid designs<lb/></item> 
+			<item>• One air-core design<lb/></item>
+			</list> 
+			<p>The inductors were all designed for a target inductance of<lb/> 250 nH and for a similar volume range as the MP inductor<lb/> design (constrained by part availability). Each inductor was<lb/> optimised for the ϕ-branch current (Fig. <ref type="figure">2</ref>) in the example<lb/> Class EF 2 inverter using conventional design approaches. All<lb/> designs also used solid round wire, as was done with the<lb/> MP inductor design. The physical characteristics for the four<lb/> designs are listed in Table <ref type="table">II</ref>, with photos shown in Fig. <ref type="figure">5</ref>.<lb/></p>
+
+			<p>The following subsections discuss the rationale and design<lb/> process for each inductor design:<lb/></p>
+
+			<figure>MP<lb/> 67<lb/> M2<lb/> M6<lb/> VS<lb/> Fig. 5: The tested ϕ-branch inductors (left to right and not to scale):<lb/> custom MP17-0.8 (MP), Fair-Rite 5967000601 (67), Micromet-<lb/>als T80-2 (M2), Micrometals T80-6 (M6), and Coilcraft 2014VS-<lb/>251MED (VS).<lb/></figure>
+
+			<figure type="table">TABLE II: Physical characteristics of the tested ϕ-branch induc-<lb/>tors after matching inductance: custom MP17-0.8 (MP), Fair-Rite<lb/> 5967000601 (67), Micrometals T80-2 (M2), Micrometals T80-6<lb/> (M6), and Coilcraft 2014VS-251MED (VS).<lb/> MP<lb/> 67<lb/> M2<lb/> M6<lb/> VS<lb/> Weight<lb/> 8.3 g<lb/> 6.1 g<lb/> 7.2 g<lb/> 6.8 g<lb/> 4.8 g<lb/> Box Volume 4.0 cm 3 4.9 cm 3 5.8 cm 3 5.3 cm 3 2.6 cm 3<lb/> Height<lb/> 14 mm 21 mm 23 mm 23 mm<lb/> 11 mm<lb/> Length<lb/> 17 mm 21 mm 23 mm 23 mm<lb/> 18 mm<lb/> Width<lb/> 17 mm 11 mm 11 mm 10 mm<lb/> 13 mm<lb/> Turns<lb/> 3<lb/> 3<lb/> 6<lb/> 6<lb/> 6<lb/> Wire<lb/> 0.65 mm 0.75 mm 0.75 mm 0.75 mm 2.46 mm*<lb/> *VS has a winding with flat wire, so the listed value is the wire width.<lb/></figure>
+
+			<head>A. Ferrite Toroid Design:</head>
+
+			<p>To demonstrate the importance<lb/> of having a gap in a ferrite core to keep core loss low, we<lb/> designed an ungapped ferrite toroid inductor for comparison.<lb/> Because this design is not gapped, the core is expected to have<lb/> large B fields and hence large core loss. This inductor design<lb/> used a toroid with a similar volume to the MP inductor and<lb/> the same core material: Fair-Rite 5967000601 (67) <ref type="biblio">[18]</ref>. The<lb/> number of turns was chosen to achieve the target inductance<lb/> of 250 nH.<lb/></p>
+
+			<head>B. Iron Powder Toroid Designs:</head> 
+			<p>An alternative approach to<lb/> using ferrite in cores (ideally with a gap) is to use powder<lb/> core materials. These materials usually have worse core loss<lb/> characteristics in the MHz range than low-loss ferrite mate-<lb/>rials. However, they generally have very low permeabilities<lb/> and thus act as a perfectly distributed gap core, which helps<lb/> to achieve lower core B fields for lower core loss. The<lb/> core&apos;s distributed gap also reduces the effect of fringing fields<lb/> incurring additional loss in the winding.<lb/></p>
+
+			<p>For our example comparison, we designed two inductor<lb/> designs, each using a different iron powder core material with<lb/> relatively low core loss: Micrometals material mix no. -2 and<lb/> no. -6. For both designs, we selected a core size with a similar<lb/> volume to the MP inductor (T80) and used the following<lb/> cores: Micrometals T80-2 (M2) <ref type="biblio">[24]</ref> and Micrometals T80-<lb/>6 (M6) <ref type="biblio">[25]</ref>. The number of turns in each design was chosen<lb/> to achieve the target inductance of 250 nH.<lb/></p>
+
+			<head>C. Air-Core Design:</head> 
+			<p>In addition to the above cored inductor<lb/> designs, we tested a comparable air-core design. To do this,<lb/> we bought an off-the-shelf air-core inductor near the target<lb/> inductance of 250 nH: Coilcraft 2014VS-251MED (VS) <ref type="biblio">[26]</ref>,<lb/> which is nominally 257 nH.<lb/></p>
+
+			<figure>f [MHz]<lb/> 10<lb/> 15<lb/> 20<lb/> 25<lb/> 30<lb/> 35<lb/> 40<lb/> 45<lb/> 230<lb/> 240<lb/> 250<lb/> 260<lb/> 270<lb/> 280<lb/> 290<lb/> 300<lb/> 310<lb/> L [nH]<lb/> 10<lb/> 15<lb/> 20<lb/> 25<lb/> 30<lb/> 35<lb/> 40<lb/> 45<lb/> 100<lb/> 150<lb/> 200<lb/> 250<lb/> Q [-]<lb/> VS<lb/> 67<lb/> M2<lb/> M6<lb/> MP<lb/> Fig. 6: Inductance and Q measurements using the impedance anal-<lb/>yser. The three dashed lines represent the three main harmonics of<lb/> the ϕ-branch. The dip in the Q measurements at around 37 MHz is<lb/> an artifact of the measurement instrument.<lb/></figure>
+
+			<p>Per Table <ref type="table">II</ref>, the air-core inductor&apos;s physical box volume<lb/> is smaller than the MP inductor; however, its effective box<lb/> volume is larger. Without a magnetic core, the air-core inductor<lb/> has significant fringing fields that are sensitive to nearby metal<lb/> objects. To prevent interactions with these fields, which can<lb/> substantially reduce the inductor&apos;s performance, extra space is<lb/> needed around the inductor. If, for example, each dimension<lb/> of the air-core inductor was padded with a very small 10%<lb/> buffer (excluding the -z direction), its effective box size would<lb/> be 14 mm x 22 mm x 16 mm for an effective box volume of<lb/> 4.9 cm 3 , which is closer to that of the MP inductor.<lb/></p>
+
+			<head>IV. EXPERIMENTAL SETUP AND RESULTS<lb/></head>
+
+			<p>To test the five high-frequency inductors (Table <ref type="table">II</ref>), we<lb/> first measured their impedance using the Keysight E4990A<lb/> impedance analyser with a 42941A probe and a custom fixture.<lb/> The results are shown in Fig. <ref type="figure">6</ref>. All the inductors have around<lb/> 250 nH inductance, as designed. The inductances also stay<lb/> relatively constant past the third harmonic at 40.68 MHz,<lb/> suggesting that the inductors would behave as designed in the<lb/> example inverter.<lb/></p>
+
+			<p>Using these impedance measurements, we created a fitted<lb/> ac circuit diagram model of these inductors, shown in Fig. <ref type="figure">7</ref>,<lb/> with parameter values given in Table <ref type="table">III</ref>. In this model, R s is<lb/> related to conduction (wire) losses, C s sets the Self Resonance<lb/> Frequency (SRF) as well as the frequency dependence of the<lb/> Q factor, R p could be regarded as a rough measure of core<lb/> losses (at small-signal), and L is the intrinsic inductance.<lb/></p>
+
+			<p>Based on these results, the MP inductor has the highest<lb/> SRF, which is confirmed both by the flatness of the inductance<lb/> measurement in Fig. <ref type="figure">6</ref> and the lowest parasitic capacitance<lb/> value in Table <ref type="table">III</ref>. Furthermore, the ac circuit parameters from<lb/> Table <ref type="table">III</ref> suggest that the MP structure has lower core losses<lb/> compared to the ungapped toroid of the same core material<lb/> (67). Even though the two inductors have very similar R s due<lb/> to the same number of turns (Table <ref type="table">II</ref>), the 67 toroid has almost<lb/> 4 times lower R p .<lb/></p>
+
+			<p>Next, we took small-signal Q measurements of the five<lb/> inductors as an initial evaluation of their performance, shown<lb/> in Fig. <ref type="figure">6</ref>. Based on these measurements, the MP inductor has<lb/> the highest Q at the second harmonic, which is the dominant<lb/> component of the ϕ-branch current, per the inverter simulation<lb/></p>
+
+			<figure>L<lb/> C<lb/> R p<lb/> R s<lb/> Fig. 7: Equivalent circuit diagram fitted to the measured impedance<lb/> of the inductors in Fig. 6.<lb/></figure>
+
+			<figure type="table">TABLE III: Component values of the circuit diagram in Fig. <ref type="figure">7</ref> based<lb/> on the measurements in Fig. <ref type="figure">6</ref>. The fitted model behaviour is not<lb/> affected by measurement artifact of Q in Fig. <ref type="figure">6</ref>.<lb/> Parameter<lb/> 67<lb/> VS<lb/> M2<lb/> M6<lb/> MP<lb/> Unit<lb/> Rs<lb/> 67.27<lb/> 152<lb/> 111.5<lb/> 81.32<lb/> 65.63<lb/> mΩ<lb/> L<lb/> 283.9<lb/> 250.3<lb/> 271.8<lb/> 234.4<lb/> 241.1<lb/> nH<lb/> C<lb/> 2997<lb/> 1579<lb/> 941<lb/> 1002<lb/> 747<lb/> fF<lb/> Rp<lb/> 6.859<lb/> 26.94<lb/> 6.048<lb/> 10.53<lb/> 25.76<lb/> kΩ<lb/></figure>
+
+			<p>in Fig. <ref type="figure">2</ref>. This result provides an initial experimental verifica-<lb/>tion of the benefits of the MP structure.<lb/></p> 
+			<p>After this initial evaluation, we tested the five inductors in<lb/> a Class EF 2 inverter coupled inductively to a resonant ac load<lb/> (Fig. <ref type="figure">1</ref>), with the exact specifications mentioned in <ref type="biblio">[12]</ref>. This<lb/> inverter&apos;s overall efficiency is sensitive to the performance of<lb/> the ϕ-branch inductor because it minimises transistor losses<lb/> through a combination of Zero Voltage Switching (ZVS),<lb/> Zero Voltage Derivative Switching (ZVDS), and high dc-to-ac<lb/> current gain. This feature enables us to get reliable data, even<lb/> when the differences in performance of the inductors under<lb/> test are marginal.<lb/></p>
+
+			<p>To reduce the sensitivity of the circuit to the unavoidable<lb/> inductance variations in Fig. <ref type="figure">6</ref>, the total inductance of the<lb/> ϕ-branch was set at around 400 nH, higher than the indi-<lb/>vidual inductance of the inductor under test. The additional<lb/> inductance in every case was provided by adding an extra air-<lb/>core inductor <ref type="biblio">[26]</ref>. With this setup, the tuning of the inverter<lb/> remained constant, and any performance differences can be<lb/> attributed only to the inductor under test.<lb/></p>
+
+			<p>To confirm identical circuit tuning for all instances, as well<lb/> as resonance at the second harmonic, we took impedance<lb/> measurements of the ϕ-branch for all the inductors (Fig. <ref type="figure">8</ref>).<lb/> These measurements were taken with all the components<lb/> soldered on the Printed Circuit Board (PCB) to include layout<lb/> parasitics. The matching in tuning was also confirmed from<lb/> the experimental waveforms of the drain voltage, the ϕ-<lb/>branch current, and the voltage across the inductors in Fig. <ref type="figure">9</ref>.<lb/> The voltage across the inductor was measured indirectly by<lb/> measuring the drain and ϕ-branch capacitor voltages and then<lb/> subtracting them. The reason for such an indirect measurement<lb/> is because at these frequencies, the capacitance of the probe<lb/> (several pF typically) in parallel with the inductor would<lb/> significantly affect its impedance and thus produce unreliable<lb/> data. For the voltage measurements, we used isolated optical<lb/> probes (Tektronix IsoVu) for the lowest possible capacitive<lb/></p>
+
+			<figure>f [MHz]<lb/> 10<lb/> 20<lb/> 30<lb/> 40<lb/> -150<lb/> -100<lb/> -50<lb/> 0<lb/> 50<lb/> 100<lb/> X [Ω]<lb/> VS<lb/> 67<lb/> M2<lb/> M6<lb/> MP<lb/> 10<lb/> 20<lb/> 30<lb/> 40<lb/> 0.5<lb/> 1<lb/> 1.5<lb/> 2<lb/> 2.5<lb/> R [Ω]<lb/> Fig. 8: Small signal reactance (left) and resistance (right) measure-<lb/>ments of the ϕ-branch for all the inductors under test.<lb/></figure>
+
+			<figure>3/2: [-]<lb/> 0<lb/> 0.1<lb/> 0.2<lb/> 0.3<lb/> 0.4<lb/> 0.5<lb/> 0.6<lb/> 0.7<lb/> 0.8<lb/> 0.9<lb/> 1<lb/> 0<lb/> 50<lb/> 100<lb/> 150<lb/> v<lb/> DS [V]<lb/> VS<lb/> 67<lb/> M2<lb/> M6<lb/> MP<lb/> 0<lb/> 0.1<lb/> 0.2<lb/> 0.3<lb/> 0.4<lb/> 0.5<lb/> 0.6<lb/> 0.7<lb/> 0.8<lb/> 0.9<lb/> 1<lb/> -2<lb/> 0<lb/> 2<lb/> i<lb/> L? [A]<lb/> 0<lb/> 0.1<lb/> 0.2<lb/> 0.3<lb/> 0.4<lb/> 0.5<lb/> 0.6<lb/> 0.7<lb/> 0.8<lb/> 0.9<lb/> 1<lb/> -100<lb/> 0<lb/> 100<lb/> v<lb/> L? [V]<lb/> Fig. 9: Waveforms of the drain voltage (top), the ϕ-branch current<lb/> (middle), and the voltage across the ϕ-branch inductor (bottom). The<lb/> horizontal axis is the normalised angular time.<lb/></figure>
+			 
+			 <p>loading of the circuit and the highest Common Mode Rejection<lb/> Ratio (CMRR).<lb/></p>
+
+			<p>It must be noted that because of the additional wire loop<lb/> in the ϕ-branch for the attachment of the current clamp<lb/> (Keysight N2783B), the impedance of the ϕ-branch slightly<lb/> deviated from the ideal value, and thus we increased the<lb/> operating frequency to 13.65 MHz to maintain ZVDS, which<lb/> is insignificant for the inductor performance. Also, the output<lb/> power of the inverter was kept at 70 W in order to maintain the<lb/> ϕ-branch current within the limits of the current probe. The<lb/> slightly lower amplitude in harmonics of the measurements in<lb/> Table <ref type="table">IV</ref> compared to the simulation in Fig. <ref type="figure">2</ref> could also partly<lb/> be attributed to the non-flat response of the current probe at<lb/> this frequency range.<lb/></p>
+
+			<p>The dc-to-ac efficiency measurements of the Class EF 2<lb/> inverter with each of the five inductors are presented in Fig. <ref type="figure">10<lb/></ref> (left). The MP has the best overall performance, followed by<lb/> the M6 and the VS. The efficiency was calculated by the<lb/> formula:<lb/></p>
+
+				<formula>η =<lb/> R L I 2<lb/> Ls 2<lb/> 8V in I in<lb/> ,<lb/></formula>
+
+				<label>(11)<lb/></label>
+
+			<p>where R L is the ac load, I Ls 2 is the peak-to-peak current of<lb/> the secondary coil, V in is the input voltage, and I in is the dc<lb/> input current of the inverter. The input voltage (90 V) and the<lb/> ac load were kept constant across all inductor tests, which left<lb/> only the currents ratio setting the efficiency. The limits of the<lb/> confidence intervals in Fig. <ref type="figure">10</ref> were defined at the extremes<lb/></p>
+
+			<figure type="table">TABLE IV: Fourier coefficients of the fundamental frequency and<lb/> the first two harmonics of the ϕ-branch current waveforms in Fig. 9.<lb/> Frequency<lb/> 67<lb/> VS<lb/> M2<lb/> M6<lb/> MP<lb/> Unit<lb/> 13.65 MHz<lb/> 746.9<lb/> 753.5<lb/> 751.2<lb/> 767.8<lb/> 737.4<lb/> mA<lb/> 27.3 MHz<lb/> 1.116<lb/> 1.125<lb/> 1.112<lb/> 1.035<lb/> 1.168<lb/> A<lb/> 40.95 MHz<lb/> 249.4<lb/> 260.4<lb/> 260.9<lb/> 274<lb/> 263.4<lb/> mA<lb/> [%]<lb/> IPT DC/AC efficiency<lb/> 67 M2 M6 MP VS<lb/> 92.5<lb/> 93<lb/> 93.5<lb/> 94<lb/> 94.5<lb/></figure>
+
+			<figure>L<lb/> ?<lb/> ?<lb/> contribution in losses<lb/> 67 M2 M6 MP VS<lb/> 0<lb/> 5<lb/> 10<lb/> 15<lb/> Fig. 10: The dc-to-ac efficiency of the IPT system (left) and percentile<lb/> contribution of the ϕ-branch inductor to the overall losses (right), for<lb/> each inductor under test.<lb/></figure>
+
+			<figure type="table">TABLE V: Temperatures of the GaN transistor (GaN Systems<lb/> GS66504B) and the ϕ-branch inductor after 10 min of operation at<lb/> 70 W. The ambient temperature was set at 21 • C.<lb/> Component<lb/> 67<lb/> VS<lb/> M2<lb/> M6<lb/> MP<lb/> Unit<lb/> Inductor<lb/> 41.6<lb/> 32.6<lb/> 35.1<lb/> 28.5<lb/> 32.6<lb/> • C<lb/> Transistor<lb/> 34.0<lb/> 35.9<lb/> 34.9<lb/> 35.7<lb/> 36.0<lb/> • C<lb/></figure>
+
+			<p>of one standard deviation of the current measurements.<lb/></p>
+
+			<p>Even though the VS and the M6 have lower permeability<lb/> than the ferrite used in MP, its unique structure successfully<lb/> enhances the core&apos;s performance at high frequencies. Figure <ref type="figure">10<lb/></ref> (right) displays the fraction of the total losses that is attributed<lb/> to the inductor, where the MP inductor has about half the<lb/> losses of the next best performing counterpart. These numbers<lb/> were extrapolated by combining the relative differences in<lb/> efficiency with the already known losses of the VS inductor<lb/> in this inverter design from previous work in <ref type="biblio">[12]</ref>. Given all<lb/> the measurement uncertainties of this high frequency setup,<lb/> accurate measurements of the absolute loss of the inductors<lb/> are challenging, but the relative figures we provide are highly<lb/> reliable since the same unavoidable error sources are present<lb/> in all instances. The outcomes of Fig. <ref type="figure">10</ref> also agree with the<lb/> trend of the temperature measurements in Table <ref type="table">V</ref>. Another<lb/> noteworthy result from Table V is that the transistors in all<lb/> cases have almost identical temperature, which confirms that<lb/> any differences in output power are primarily due to the<lb/> inductor performance.<lb/></p>
+
+			<head>V. CONCLUSION<lb/></head>
+
+			<p>This paper provides a streamlined process for designing<lb/> low-loss inductors using the MP structure for complex high-<lb/>frequency magnetic applications with multi-frequency cur-<lb/>rents. It was experimentally demonstrated that the MP struc-<lb/>ture is an effective option for such applications, as it out-<lb/>performed every other comparison counterpart in an example<lb/> 13.56 MHz, 70 W Class EF 2 inverter used for HF-IPT. The<lb/> MP inductor achieved half the loss of its counterparts and<lb/> improved system efficiency by 0.4 % compared to the best<lb/> comparison inductor, corresponding to a 6 % reduction in<lb/> total loss. This suggests that the streamlined design process<lb/> is effective in quickly achieving low-loss inductor designs.</p>
+
+
+	</text>
+</tei>

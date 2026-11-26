@@ -14,8 +14,7 @@
 	<docAuthor>Zhixiang Min 1 and Enrique Dunn 1<lb/></docAuthor>
 	</byline>
 
-	Abstract-
-	<div type="abstract">We present a dense-indirect SLAM system using<lb/> external dense optical flows as input. We extend the recent<lb/> probabilistic visual odometry model VOLDOR [1], by incor-<lb/>porating the use of geometric priors to 1) robustly bootstrap<lb/> estimation from monocular capture, while 2) seamlessly sup-<lb/>porting stereo and/or RGB-D input imagery. Our customized<lb/> back-end tightly couples our intermediate geometric estimates<lb/> with an adaptive priority scheme managing the connectivity<lb/> of an incremental pose graph. We leverage recent advances<lb/> in dense optical flow methods to achieve accurate and robust<lb/> camera pose estimates, while constructing fine-grain globally-<lb/>consistent dense environmental maps. Our open source im-<lb/>plementation [https://github.com/htkseason/VOLDOR] operates<lb/> online at around 15 FPS on a single GTX1080Ti GPU.<lb/></div>
+	
 
 	<idno>arXiv:2104.06800v1 [cs.CV]</idno>
 

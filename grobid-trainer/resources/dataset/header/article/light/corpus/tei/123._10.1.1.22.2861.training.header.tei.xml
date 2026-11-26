@@ -22,8 +22,7 @@
 
 	<email>keleher@cs.umd.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">This paper presents a detailed comparison of the relative importance of allowing concurrent writers<lb/> versus the choice of the underlying consistency model. Our comparison is based on single-and multiple-<lb/>writer versions of a lazy release consistent (LRC) protocol, and a single-writer sequentially consistent<lb/> protocol, all implemented in the CVM software distributed shared memory system.<lb/> We nd that in our environment, which we believe to be representative of distributed systems today<lb/> and in the near future, the consistency model has a much higher impact on overall performance than the<lb/> choice of whether to allow concurrent writers. The multiple writer protocol performs an average of 9%<lb/> better than the single writer LRC protocol, but 34% better than the single-writer sequentially consistent<lb/> protocol. Set against this, MW-LRC required an average of 72% memory overhead, compared to 10%<lb/> overhead for the single-writer protocols.</div>
+	
 
 		</front>
 	</text>

@@ -61,8 +61,7 @@
 	☯ These authors contributed equally to this work.<lb/> *
 	<email>jmarthur@uams.edu</email>
 
-	Abstract
-	<div type="abstract">Background<lb/> Activation of the immune system is implicated in the Post-Acute Sequelae after SARS-CoV-<lb/>2 infection (PASC) but the mechanisms remain unknown. Angiotensin-converting enzyme 2<lb/> (ACE2) cleaves angiotensin II (Ang II) resulting in decreased activation of the AT1 receptor<lb/> and decreased immune system activation. We hypothesized that autoantibodies against<lb/> ACE2 may develop after SARS-CoV-2 infection, as anti-idiotypic antibodies to anti-spike<lb/> protein antibodies.<lb/> Methods and findings<lb/> We tested plasma or serum for ACE2 antibodies in 67 patients with known SARS-CoV-2<lb/> infection and 13 with no history of infection. None of the 13 patients without history of SARS-<lb/>CoV-2 infection and 1 of the 20 outpatients that had a positive PCR test for SARS-CoV-2<lb/> had levels of ACE2 antibodies above the cutoff threshold. In contrast, 26/32 (81%) in the<lb/> convalescent group and 14/15 (93%) of patients acutely hospitalized had detectable ACE2<lb/> antibodies. Plasma from patients with antibodies against ACE2 had less soluble ACE2 activ-<lb/>ity in plasma but similar amounts of ACE2 protein compared to patients without ACE2 anti-<lb/>bodies. We measured the capacity of the samples to inhibit ACE2 enzyme activity. Addition<lb/> of plasma from patients with ACE2 antibodies led to decreased activity of an exogenous<lb/> preparation of ACE2 compared to patients that did not have antibodies. Conclusions<lb/> Many patients with a history of SARS-CoV-2 infection have antibodies specific for ACE2.<lb/> Patients with ACE2 antibodies have lower activity of soluble ACE2 in plasma. Plasma from<lb/></div>
+	
 
 	<title level="j">PLOS ONE<lb/></title>
 
@@ -101,7 +100,9 @@
 	Funding:
 	<note type="funding">JMA UL1 TR003107 National Center for<lb/> Advancing Translational Sciences of the National<lb/> Institutes of Health JMA KL2 TR003108 National<lb/> Center for Advancing Translational Sciences of the<lb/> National Institutes of Health KWB TL1 TR003109<lb/> National Center for Advancing Translational<lb/> Sciences of the National Institutes of Health JCF,<lb/>KWB, JLK P20 GM103625 National Institute of<lb/> General Medical Sciences of the National Institutes<lb/> of Health AWD00054193 University of Arkansas<lb/></note>
 
-	<div type="abstract">these patients also inhibits exogenous ACE2 activity. These findings are consistent with the<lb/> hypothesis that ACE2 antibodies develop after SARS-CoV-2 infection and decrease ACE2<lb/> activity. This could lead to an increase in the abundance of Ang II, which causes a proinflam-<lb/>matory state that triggers symptoms of PASC.<lb/> for Medical Sciences The funders had no role in<lb/> study design, data collection and analysis, decision<lb/> to publish, or preparation of the manuscript.<lb/></div>
+	
+
+	<note type="funding">for Medical Sciences The funders had no role in<lb/> study design, data collection and analysis, decision<lb/> to publish, or preparation of the manuscript.<lb/></note>
 
 	Competing interests:
     <note type="conflict">The authors have declared<lb/> that no competing interests exist.</note>

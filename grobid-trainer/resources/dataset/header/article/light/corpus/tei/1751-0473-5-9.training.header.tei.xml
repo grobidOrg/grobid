@@ -19,8 +19,7 @@
 	<docAuthor>Rita Noumeir * † , Bérubé Renaud †</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">Background: With the deployments of Electronic Health Records (EHR), interoperability testing in healthcare is<lb/> becoming crucial. EHR enables access to prior diagnostic information in order to assist in health decisions. It is a<lb/> virtual system that results from the cooperation of several heterogeneous distributed systems. Interoperability<lb/> between peers is therefore essential. Achieving interoperability requires various types of testing. Implementations<lb/> need to be tested using software that simulates communication partners, and that provides test data and test<lb/> plans.<lb/> Results: In this paper we describe a software that is used to test systems that are involved in sharing medical<lb/> images within the EHR. Our software is used as part of the Integrating the Healthcare Enterprise (IHE) testing<lb/> process to test the Cross Enterprise Document Sharing for imaging (XDS-I) integration profile. We describe its<lb/> architecture and functionalities; we also expose the challenges encountered and discuss the elected design<lb/> solutions.<lb/> Conclusions: EHR is being deployed in several countries. The EHR infrastructure will be continuously evolving to<lb/> embrace advances in the information technology domain. Our software is built on a web framework to allow for<lb/> an easy evolution with web technology. The testing software is publicly available; it can be used by system<lb/> implementers to test their implementations. It can also be used by site integrators to verify and test the<lb/> interoperability of systems, or by developers to understand specifications ambiguities, or to resolve<lb/> implementations difficulties.<lb/></div>
+	
 
 	* Correspondence:
 	<email>rita.noumeir@etsmtl.ca<lb/></email>
@@ -37,7 +36,9 @@
 
 	<ptr type="web">http://www.scfbm.org/content/5/1/9<lb/></ptr>
 
-	<note type="copyright">© 2010 Noumeir and Renaud; licensee BioMed Central Ltd. This is an Open Access article distributed under the terms of the Creative<lb/> Commons Attribution License (http://creativecommons.org/licenses/by/2.0), which permits unrestricted use, distribution, and<lb/> reproduction in any medium, provided the original work is properly cited.<lb/> Noumeir and Renaud Source Code for Biology and Medicine 2010, 5:9<lb/></note>
+	<note type="copyright">© 2010 Noumeir and Renaud; licensee BioMed Central Ltd. This is an Open Access article distributed under the terms of the Creative<lb/> Commons Attribution License (http://creativecommons.org/licenses/by/2.0), which permits unrestricted use, distribution, and<lb/> reproduction in any medium, provided the original work is properly cited.<lb/></note>
+
+	<reference>Noumeir and Renaud Source Code for Biology and Medicine 2010, 5:9<lb/></reference>
 
 	<ptr type="web">http://www.scfbm.org/content/5/1/9<lb/></ptr>
 

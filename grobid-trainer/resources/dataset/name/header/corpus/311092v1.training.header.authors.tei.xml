@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <forename>Shibendra</forename>
+								 <middlename>Kumar</middlename>
+								 <middlename>Lal</middlename>
+								 <surname>Karna</surname>,
+							</persName>
+							<persName>
+								 <forename>Bilal</forename>
+								 <middlename>Ahmad</middlename>
+								 <surname>Lone</surname>,
+							</persName>
+							<persName>
+								 <forename>Faiz</forename>
+								 <surname>Ahmad</surname>,
+							</persName>
+							<persName>
+								 <forename>Nerina</forename>
+								 <surname>Shahi</surname> and
+							</persName>
+							<persName>
+								 <forename>Yuba</forename>
+								 <middlename>Raj</middlename>
+								 <surname>Pokharel</surname>
+							</persName>
+							<persName>
+								 <forename>Yuba</forename>
+								 <middlename>Raj</middlename>
+								 <surname>Pokharel</surname>,
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

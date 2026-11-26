@@ -10,8 +10,10 @@
                                 <orgName type="department">Institute of Physiology</orgName>,
                                 <orgName type="department">1st Faculty of Medicine</orgName>,
                                 <orgName type="institution">Charles University</orgName>,
+                                <address>
                                 <settlement>Prague</settlement>,
                                 <country>Czech Republic</country>
+                                </address>
                             </affiliation>
                         </author>
                     </analytic>

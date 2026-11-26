@@ -22,8 +22,7 @@
 
 	<email>ray@sims.berkeley.edu</email>
 
-	Abstract<lb/>
-	<div type="abstract">In this paper we will describe Berkeley&apos;s approach to the Domain Specific (DS) track<lb/> for CLEF 2008. Last year we used Entry Vocabulary Indexes and Thesaurus expansion<lb/> approaches for DS, but found in later testing that some simple text retrieval approaches<lb/> had better results than these more complex query expansion approaches. This year<lb/> we decided to revisit our basic text retrieval approaches and see how they would stack<lb/> up against the various expansion approaches used by other groups. The results are<lb/> now in and the answer is clear, they perform pretty badly compared to other groups&apos;<lb/> approaches.<lb/> All of the runs submitted were performed using the Cheshire II system. This year<lb/> the Berkeley/Cheshire group submitted a total of twenty-four runs, including two for<lb/> each subtask of the DS track. These include six Monolingual runs for English, German,<lb/> and Russian, twelve Bilingual runs (four X2EN, four X2DE, and four X2RU), and six<lb/> Multilingual runs (two EN, two DE, and two RU). The overall results include Cheshire<lb/> runs in the top five participants for each task, but usually as the lowest of the five (and<lb/> often fewer) groups.<lb/></div>
+	
 
 	Categories and Subject Descriptors<lb/> 
 	<keyword>H.3 [Information Storage and Retrieval]: H.3.1 Content Analysis and Indexing; H.3.3 Infor-<lb/>mation Search and Retrieval<lb/></keyword>

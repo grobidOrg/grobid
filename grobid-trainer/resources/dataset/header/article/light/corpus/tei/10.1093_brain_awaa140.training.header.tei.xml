@@ -16,7 +16,7 @@
 
 	See Ware et al. ( doi:10.1093/brain/awaa166) for a scientific commentary on this article.<lb/>
 
-	<div type="abstract">Repetitive mild traumatic brain injury in American football players has garnered increasing public attention following reports of<lb/> chronic traumatic encephalopathy, a progressive tauopathy. While the mechanisms underlying repetitive mild traumatic brain injury-<lb/>induced neurodegeneration are unknown and antemortem diagnostic tests are not available, neuropathology studies suggest a patho-<lb/>genic role for microvascular injury, specifically blood-brain barrier dysfunction. Thus, our main objective was to demonstrate the ef-<lb/>fectiveness of a modified dynamic contrast-enhanced MRI approach we have developed to detect impairments in brain microvascular<lb/> function. To this end, we scanned 42 adult male amateur American football players and a control group comprising 27 athletes prac-<lb/>ticing a non-contact sport and 26 non-athletes. MRI scans were also performed in 51 patients with brain pathologies involving the<lb/> blood-brain barrier, namely malignant brain tumours, ischaemic stroke and haemorrhagic traumatic contusion. Based on data from<lb/> prolonged scans, we generated maps that visualized the permeability value for each brain voxel. Our permeability maps revealed an<lb/> increase in slow blood-to-brain transport in a subset of amateur American football players, but not in sex-and age-matched controls.<lb/> The increase in permeability was region specific (white matter, midbrain peduncles, red nucleus, temporal cortex) and correlated with<lb/> changes in white matter, which were confirmed by diffusion tensor imaging. Additionally, increased permeability persisted for months,<lb/> as seen in players who were scanned both on-and off-season. Examination of patients with brain pathologies revealed that slow<lb/> tracer accumulation characterizes areas surrounding the core of injury, which frequently shows fast blood-to-brain transport. Next,<lb/> we verified our method in two rodent models: rats and mice subjected to repeated mild closed-head impact injury, and rats with vas-<lb/>cular injury inflicted by photothrombosis. In both models, slow blood-to-brain transport was observed, which correlated with neuro-<lb/>pathological changes. Lastly, computational simulations and direct imaging of the transport of Evans blue-albumin complex in brains<lb/> of rats subjected to recurrent seizures or focal cerebrovascular injury suggest that increased cellular transport underlies the observed<lb/> slow blood-to-brain transport. Taken together, our findings suggest dynamic contrast-enhanced-MRI can be used to diagnose specific<lb/> microvascular pathology after traumatic brain injury and other brain pathologies.<lb/></div>
+	
 
 	<byline>
 	<affiliation>1 Departments of Physiology and Cell Biology, Brain and Cognitive Sciences, The Zlotowski Center for Neuroscience, Ben-Gurion<lb/> University of the Negev,</affiliation>
@@ -37,7 +37,13 @@
 	<address>Boston, MA, USA<lb/></address>
 
 	<byline>
-	<affiliation>4 Department of Psychology and the School of Social-work, Ashkelon Academic College, Israel<lb/> 5 Department of Electrical Engineering, Ben-Gurion University of the Negev,</affiliation>
+	<affiliation>4 Department of Psychology and the School of Social-work, Ashkelon Academic College,</affiliation>
+	</byline>
+
+	<address>Israel<lb/></address>
+
+	<byline>
+	<affiliation>5 Department of Electrical Engineering, Ben-Gurion University of the Negev,</affiliation>
 	</byline>
 
 	<address>Beer-Sheva, Israel<lb/></address>
@@ -53,8 +59,9 @@
 
 	<reference>BRAIN 2020: 143; 1826-1842 | 1826<lb/></reference>
 
+	<!-- check: URL of the download banner left untagged, as in 10.1029_2024gl109392 -->
 	Downloaded from
-	<ptr type="web">https://academic.oup.com/brain/article/143/6/1826/5848368</ptr>
+	https://academic.oup.com/brain/article/143/6/1826/5848368
 	by guest on 02 August 2022<lb/>
 
 	<byline>

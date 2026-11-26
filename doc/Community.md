@@ -6,13 +6,13 @@ There are several ways to stay in touch with the GROBID community, get help, and
 
 The mailing list is the home for __announcements, discussions, and community Q&A__, available in English and French.
 
-[Subscribe to the mailing list](https://groupes.renater.fr/sympa/info/grobid)
+[Subscribe to the mailing list](https://grobid.netlify.app/mail)
 
 ## Discord
 
 The Discord server is a more casual space to __chat, get help, and meet other GROBID users and contributors__.
 
-[Join the Discord server](https://discord.gg/vh8AQ3cpjZ)
+[Join the Discord server](https://grobid.netlify.app/discord)
 
 ## GitHub
 

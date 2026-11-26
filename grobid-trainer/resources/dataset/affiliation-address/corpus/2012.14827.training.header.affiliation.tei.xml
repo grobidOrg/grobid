@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="department">Department of Computer Science and Engineering</orgName>,
+							<orgName type="institution">Shanghai Jiao Tong University</orgName>
+							<lb/>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="laboratory">Key Laboratory of Shanghai Education Commission for Intelligent Interaction<lb/> and Cognitive Engineering</orgName>,
+							<orgName type="institution">Shanghai Jiao Tong University</orgName>,
+							<address>
+								<settlement>Shanghai</settlement>,
+								<country>China</country>
+							<lb/>
+							</address>
+						</affiliation>
+
+                          
+						<affiliation>
+							<marker>3</marker>
+							<orgName type="laboratory">MoE Key Lab of Artificial Intelligence</orgName>,
+							<orgName type="department">AI Institute</orgName>,
+							<orgName type="institution">Shanghai Jiao Tong University</orgName>,
+							<address>
+								<settlement>Shanghai</settlement>,
+								<country>China</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

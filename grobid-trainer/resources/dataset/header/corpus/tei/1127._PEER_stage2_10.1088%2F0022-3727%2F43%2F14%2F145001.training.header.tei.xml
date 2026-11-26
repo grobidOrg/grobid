@@ -34,7 +34,9 @@
 	E-mail:
 	<email>jtorrejon@icmm.csic.es<lb/></email>
 
-	phone: <phone>0034-913349000</phone>.<lb/> Confidential: not for distribution. Submitted to IOP Publishing for peer review
+	phone: <phone>0034-913349000</phone>.<lb/> Confidential: not for distribution.
+	<note type="submission">Submitted to IOP Publishing for peer review</note>
+
 	<date>20 February 2010<lb/></date>
 
 	Multipeak FMR_FeSiB/CoNi microwires<lb/>
@@ -44,7 +46,7 @@
 	Abstract.-<lb/>
 	<div type="abstract">The aim of this work is to report on the influence of the presence of a<lb/> magnetically hard layer with large thickness in the ferromagnetic resonance behaviour<lb/> of soft/hard biphase microwires. Such microwires consist of FeSiB soft nucleus,<lb/> intermediate glass layer and CoNi hard outer shell, and are prepared by combined<lb/> quenching and drawing technique with electrochemical deposition. The unusual FMR<lb/> response observed for this biphase system is characterised by the presence of a<lb/> multipeak absorption spectrum that depends on the static field and on the thickness of<lb/> the hard phase by means of magnetoelastic coupling. For thick enough CoNi layer, the<lb/> internal stresses induced in the nucleus during electroplating process are very strong,<lb/> giving rise to three electromagnetic absorptions: one at low frequency related to CoNi<lb/> shell and two more at higher frequencies corresponding to the FeSiB nucleus which are<lb/> ascribed to two well-defined magnetization regions with different magnetic anisotropy.<lb/></div>
 
-	<reference>PACS: 75.60.Ch, 75.60.Ej, 75.60.JkNp<lb/></reference>
+	<keyword>PACS: 75.60.Ch, 75.60.Ej, 75.60.JkNp<lb/></keyword>
 
 	KeyWords:
 	<keyword>Multipeak Ferromagnetic Resonance; Biphase magnetic microwires;<lb/> Magnetoelastic coupling.</keyword>

@@ -46,8 +46,7 @@
 
 	<email>vv@iiit.ac.in</email>
 
-	Abstract<lb/>
-	<div type="abstract">Web search personalization has been well<lb/> studied in the recent few years. Relevance<lb/> feedback has been used in various ways to<lb/> improve relevance of search results. In this<lb/> paper, we propose a novel usage of rele-<lb/>vance feedback to effectively model the pro-<lb/>cess of query formulation and better char-<lb/>acterize how a user relates his query to the<lb/> document that he intends to retrieve using<lb/> a noisy channel model. We model a user<lb/> profile as the probabilities of translation of<lb/> query to document in this noisy channel us-<lb/>ing the relevance feedback obtained from the<lb/> user. The user profile thus learnt is applied<lb/> in a re-ranking phase to rescore the search<lb/> results retrieved using an underlying search<lb/> engine. We evaluate our approach by con-<lb/>ducting experiments using relevance feed-<lb/>back data collected from users using a pop-<lb/>ular search engine. The results have shown<lb/> improvement over baseline, proving that our<lb/> approach can be applied to personalization<lb/> of web search. The experiments have also<lb/> resulted in some valuable observations that<lb/> learning these user profiles using snippets<lb/> surrounding the results for a query gives bet-<lb/>ter performance than learning from entire<lb/> document collection.</div>
+	
 
 		</front>
 	</text>

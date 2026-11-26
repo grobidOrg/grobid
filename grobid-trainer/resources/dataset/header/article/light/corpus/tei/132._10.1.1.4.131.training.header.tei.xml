@@ -24,8 +24,7 @@
 
 	<date>January 26, 1994</date>
 
-	Abstract<lb/>
-	<div type="abstract">Integrating persistence into an existing programming language is a serious undertaking. Pre-<lb/>serving the essence of the existing language, adequately supporting persistence, and main-<lb/>taining e ciency require low-level support from the compiler and runtime systems. Pervasive,<lb/> low-level changes were made to a Lisp compiler and runtime system to introduce persistence.<lb/> The result is an e cient language which i s w orthy of the name Persistent Lisp. 1<lb/> </div>
+	
 
 	<note type="funding">1 This research w as sponsored by the Advanced Research Projects Agency (DOD), monitored by the<lb/> Department of the Navy, O ce of the Chief of Naval Research, under Grant n umber N00014-91-J-4046. The<lb/> views and conclusions contained in this document are those of the authors and should not be interpreted as<lb/> representing o cial policies, either expressed or implied, of the Defense Advanced Research Projects Agency<lb/> or the US Government.</note>
 		</front>

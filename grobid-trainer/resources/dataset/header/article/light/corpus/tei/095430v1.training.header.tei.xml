@@ -25,17 +25,15 @@
 	<docAuthor>Roy Cox<lb/></docAuthor>
 	</byline>
 
-	330
-	<address>Brookline Avenue<lb/> Boston, MA 02215, USA<lb/></address>
+	<address>330 Brookline Avenue<lb/> Boston, MA 02215, USA<lb/></address>
 
-	phone: 617-667-8422<lb/> email:
+	phone: <phone>617-667-8422</phone><lb/> email:
 	<email>roycox.roycox@gmail.com<lb/></email>
 
 	Keywords:
 	<keyword>episodic memory, alpha oscillations, networks, EEG, individual differences</keyword>
 
-	Abstract<lb/>
-	<div type="abstract">Episodic memory, our ability to remember specific events, varies considerably across<lb/> individuals. However, little is known about the neural basis of this variability. To address<lb/> this issue, we investigated the role of distributed networks of oscillatory activity, as<lb/> measured through electroencephalography (EEG). We observed that individual<lb/> differences in alpha network structure reliably predict individual memory capacity.<lb/> Specifically, individuals whose network profiles during encoding were most different<lb/> from their resting state networks exhibited greatest subsequent memory performance,<lb/> suggesting that optimal information processing requires substantial shifts in large-scale<lb/> oscillatory organization. Furthermore, these results were not observed in circumscribed<lb/> topographical regions or individual connections, indicating that distributed network<lb/> approaches were more sensitive to functional processes than more conventional<lb/> methods. These findings uncover a physiological correlate of individual differences in<lb/> episodic memory and demonstrate the utility of multivariate EEG techniques to uncover<lb/> brain-behavior correlates.</div>
+	
 
 		</front>
 	</text>

@@ -16,8 +16,7 @@
 	<docAuthor>A Szegedi, R Kohnen, A Dienel, M Kieser</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">Objective To investigate the efficacy of hypericum extract WS<lb/> 5570 (St John&apos;s wort) compared with paroxetine in patients with<lb/> moderate to severe major depression.<lb/> Design Randomised double blind, double dummy, reference<lb/> controlled, multicentre non-inferiority trial.<lb/> Setting 21 psychiatric primary care practices in Germany.<lb/> Participants 251 adult outpatients with acute major depression<lb/> with total score ≥ 22 on the 17 item Hamilton depression scale.<lb/> Interventions 900 mg/day hypericum extract WS 5570 three<lb/> times a day or 20 mg paroxetine once a day for six weeks. In<lb/> initial non-responders doses were increased to 1800 mg/day<lb/> hypericum or 40 mg/day paroxetine after two weeks.<lb/> Main outcome measures Change in score on Hamilton<lb/> depression scale from baseline to day 42 (primary outcome).<lb/> Secondary measures were change in scores on<lb/> Montgomery-Åsberg depression rating scale, clinical global<lb/> impressions, and Beck depression inventory.<lb/> Results The Hamilton depression total score decreased by<lb/> mean 14.4 (SD 8.8) points, corresponding to 56.6% (SD 34.3%)<lb/> of the baseline value, in the hypericum group and by 11.4 (SD<lb/> 8.6) points (44.8% (SD 33.5%) of baseline value) in the<lb/> paroxetine group (intention to treat analysis; similar results<lb/> were observed in the per protocol analysis). The intention to<lb/> treat analysis (lower one sided 97.5% confidence limit 1.5 points<lb/> for the difference hypericum minus paroxetine) and the per<lb/> protocol analysis (lower confidence limit 0.7 points) showed<lb/> non-inferiority of hypericum and statistical superiority over<lb/> paroxetine. The lower limits in both cases exceeded the<lb/> pre-specified non-inferiority margin of − 2.5 points and the<lb/> superiority margin of 0. The incidence of adverse events was<lb/> 0.035 and 0.060 events per day of exposure for hypericum and<lb/> paroxetine, respectively.<lb/> Conclusions In the treatment of moderate to severe major<lb/> depression, hypericum extract WS 5570 is at least as effective as<lb/> paroxetine and is better tolerated.<lb/></div>
+	
 
 	Cite this article as: 
 	<title level="j">BMJ</title>, 
@@ -77,7 +76,11 @@
 	 
 	head of biometry department<lb/> 
 
-	Correspondence to: M Kieser
+	Correspondence to:
+	<byline>
+	<docAuthor>M Kieser</docAuthor>
+	</byline>
+	
 	<email>meinhard.kieser@schwabe.de</email>
 
 		</front>

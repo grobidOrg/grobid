@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Shuo</forename> <surname>Ren</surname> <marker>1</marker> ,</persName>
+<persName><forename>Daya</forename> <surname>Guo</surname> <marker>2</marker> ,</persName>
+<persName><forename>Shuai</forename> <surname>Lu</surname> <marker>3</marker> ,</persName>
+<persName><forename>Long</forename> <surname>Zhou</surname> <marker>4</marker> ,</persName>
+<persName><forename>Shujie</forename> <surname>Liu</surname> <marker>4</marker> ,</persName>
+<persName><forename>Duyu</forename> <surname>Tang</surname> <marker>4</marker> ,</persName>
+<persName><forename>Neel</forename> <surname>Sundaresan</surname> <marker>4</marker> ,</persName>
+<persName><forename>Ming</forename> <surname>Zhou</surname> <marker>4</marker> ,</persName>
+<persName><forename>Ambrosio</forename> <surname>Blanco</surname> <marker>4</marker> ,</persName>
+<persName><forename>Shuai</forename> <surname>Ma</surname> <marker>1</marker></persName>
+{
+Long. Zhou, shujliu,
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

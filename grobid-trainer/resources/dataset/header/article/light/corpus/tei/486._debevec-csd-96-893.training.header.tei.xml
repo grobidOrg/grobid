@@ -36,8 +36,7 @@
 	<address>Berkeley, CA 94720-1776<lb/></address>
 
 	(510) 642 5775 (fax) 
-	Abstract<lb/>
-	<div type="abstract">We present an approach for creating realistic synthetic views of existing architectural<lb/> scenes from a sparse set of still photographs. Our approach, which combines both geometry-<lb/>based and image-based modeling and rendering techniques, has two components. The rst<lb/> component is an easy-to-use photogrammetric modeling system which facilitates the recov-<lb/>ery of a basic geometric model of the photographed scene. The modeling system is eective<lb/> and robust because it exploits the constraints that are characteristic of architectural scenes.<lb/> The second component i s a model-based stereo algorithm, which recovers how the real scene<lb/> deviates from the basic model. By making use of the model, our stereo approach can robustly<lb/> recover accurate depth from image pairs with large baselines. Consequently, our approach<lb/> can model large architectural environments with far fewer photographs than current image-<lb/>based modeling approaches. As an intermediate result, we present view-dependent texture<lb/> mapping, a method of better simulating geometric detail on basic models. Our approach<lb/> can recover models for use in either geometry-based or image-based rendering systems. We<lb/> present results that demonstrate our approach&apos;s abilty to create realistic renderings of archi-<lb/>tectural scenes from viewpoints far from the original photographs.<lb/></div>
+	
 
 	Keywords:
 	<keyword>Image-based modeling, image-based rendering, interactive modeling systems,<lb/> photogrammetry, reconstruction, view-dependent texture mapping, view interpolation, model-<lb/>based stereo<lb/></keyword>

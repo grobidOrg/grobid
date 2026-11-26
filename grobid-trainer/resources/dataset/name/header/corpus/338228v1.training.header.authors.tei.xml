@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								 <surname>Kuiper</surname>
+								 <forename>JJW</forename>
+								 <marker>1,2,a</marker> ,
+							</persName>
+							<persName>
+								 <surname>Setten</surname>
+								 <forename>J</forename>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <surname>Devall</surname>
+								 <forename>M</forename>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <surname>Cretu-Stancu</surname>
+								 <forename>M</forename>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <surname>Hiddingh</surname>
+								 <forename>S</forename>
+								 <marker>1,2</marker> ,
+							</persName>
+							<persName>
+								 <surname>Ophoff</surname>
+								 <forename>RA</forename>
+								 <marker>5-7</marker> ,
+							</persName>
+							<persName>
+								 <surname>Missotten</surname>
+								 <forename>TOAR</forename>
+								 <marker>8</marker> ,
+							</persName>
+							<persName>
+								 <surname>van Velthoven</surname>
+								 <forename>M</forename>
+								 <marker>8</marker> ,
+							</persName>
+							<persName>
+								 <surname>Den Hollander</surname>
+								 <forename>AI</forename>
+								 <marker>9,10</marker> ,
+							</persName>
+							<persName>
+								 <surname>Hoyng</surname>
+								 <forename>CB</forename>
+								 <marker>9</marker> ,
+							</persName>
+							<persName>
+								 <surname>James</surname>
+								 <forename>E</forename>
+								 <marker>11</marker> ,
+							</persName>
+							<persName>
+								 <surname>Reeves</surname>
+								 <forename>E</forename>
+								 <marker>11</marker> ,
+							</persName>
+							<persName>
+								 <surname>Cordero-Coma</surname>
+								 <forename>M</forename> <marker>12</marker> ,
+</persName>
+							<persName>
+								 <surname>Fonollosa</surname>
+								 <forename>A</forename> <marker>13</marker> ,
+</persName>
+							<persName>
+								 <surname>Adán</surname>
+								 <forename>A</forename> <marker>14</marker> ,
+</persName>
+							<persName>
+								 <surname>Martín</surname>
+								 <forename>J</forename> <marker>15</marker> ,
+</persName>
+							<persName>
+								 <surname>Koeleman</surname>
+								 <forename>BPC</forename>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <surname>de Boer</surname>
+								 <forename>JH</forename>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <surname>Pulit</surname>
+								 <forename>SL</forename>
+								 <marker>4,16</marker> ,
+							</persName>
+							<persName>
+								 <surname>Márquez</surname>
+								 <forename>A</forename> <marker>17</marker> ,
+</persName>
+							<persName>
+								 <surname>Radstake</surname>
+								 <forename>TRDJ</forename>
+								 <marker>2,18</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

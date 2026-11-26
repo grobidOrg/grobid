@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><surname>Navas Romero</surname>, <forename>A</forename>.<middlename>L</middlename> <marker>1,2&amp;*</marker>;</persName>
+<persName><surname>Herrera Moratta</surname>, <forename>M</forename>.<middlename>A</middlename>. <marker>2,3&amp;</marker>;</persName>
+<persName><surname>Vento</surname>, <forename>B</forename>. <marker>4 #</marker>;</persName>
+<persName><surname>Rodriguez</surname> <forename>R</forename>.<middlename>A</middlename>. <marker>1 # &amp;</marker></persName>
+<persName><surname>Martínez Carretero</surname> <forename>E</forename>.<middlename>E</middlename>. <marker>3#</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

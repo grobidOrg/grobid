@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="department">Faculty of Mathematics</orgName> of
+							<orgName type="institution">Vienna University<lb/> 
+                            </orgName>
+                        </affiliation>
+
+                          <affiliation>
+                      <orgName type="institution">Institute for Transmission Information Problems of RAS</orgName>,
+							<address>
+								<settlement>Moscow</settlement>,
+								<country>Russia</country>
+							<lb/>
+							</address>
+                        </affiliation>
+
+                          <affiliation>
+							<orgName type="department">Mechanics-Mathematics Department</orgName>,
+							<orgName type="institution">Moscow State University</orgName>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

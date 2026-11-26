@@ -33,8 +33,7 @@
 
 	<note type="submission">Received on XXXXX; revised on XXXXX; accepted on XXXXX<lb/></note>
 
-	Associate Editor: XXXXXXX<lb/> ABSTRACT<lb/>
-	<div type="abstract">Motivation: The Oxford Nanopore MinION device represents a<lb/> unique sequencing technology. As a mobile sequencing device<lb/> powered by the USB port of a laptop, the MinION has huge potential<lb/> applications. To enable these applications, the bioinformatics com-<lb/>munity will need to design and build a suite of tools specifically for<lb/> MinION data.<lb/> Results: Here we present poRe, a package for the statistical soft-<lb/>ware R that enables users to manipulate, organize, summarise and<lb/> visualize MinION nanopore sequencing data. As a packge for R,<lb/> poRe has been tested on both Windows and Linux. Crucially, the<lb/> Windows version allows users to analyse MinION data on the Win-<lb/>dows laptop attached to the device<lb/></div>
+	Associate Editor: XXXXXXX<lb/> 
 
 	Availability: 
     <note type="availability">Pre-built R packages for Windows and Linux are avail-<lb/>able under a BSD license at http://sourceforge.net/projects/rpore/<lb/></note>

@@ -252,6 +252,19 @@ public class LayoutTokensUtil {
     }
 
     /**
+     * Whether two tokens with no newline between them sit on the same line. A dash set in another font than
+     * the surrounding words has a slightly different VPOS (e.g. 352.7365 vs 352.6647 in Elsevier PDFs), so
+     * the y coordinates are compared with a tolerance of half the smallest token height. Without coordinates
+     * or heights, fall back to the exact comparison.
+     */
+    private static boolean isOnSameLine(LayoutToken a, LayoutToken b) {
+        if (a.getY() == -1 || b.getY() == -1 || a.getHeight() <= 0 || b.getHeight() <= 0) {
+            return a.getY() == b.getY();
+        }
+        return Math.abs(a.getY() - b.getY()) < 0.5 * Math.min(a.getHeight(), b.getHeight());
+    }
+
+    /**
      * Check if the current token (place i), or the hyphen, needs to be removed or not.
      * <p>
      * It will check the tokens before and after. It will get to the next "non space" tokens and verify
@@ -282,7 +295,7 @@ public class LayoutTokensUtil {
 
         if (breakLine == 0) {
             // check if there is a break-line using coordinates, if not, no dehypenisation
-            if (j < tokens.size() && tokens.get(j).getY() == coordinateY) {
+            if (j < tokens.size() && isOnSameLine(tokens.get(i), tokens.get(j))) {
                 return false;
             }
         }

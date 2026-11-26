@@ -9,7 +9,10 @@
 
 						<affiliation>
 							Aus dem  <orgName type="department">Botanischen Institut für Virusforschung</orgName> 
-							der <orgName type="institution">Biologischen Zentralanstalt in Celle</orgName>
+							der <orgName type="institution">Biologischen Zentralanstalt</orgName> in
+							<address>
+								<settlement>Celle</settlement>
+							</address>
 						</affiliation>
 
 						</author>

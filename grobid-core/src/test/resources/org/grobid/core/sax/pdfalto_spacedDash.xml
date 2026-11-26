@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Excerpt adapted from the pdfalto output of 10.1016/j.psj.2024.104119: the en dash is set in its own
+     font, its VPOS is slightly lower than the words' one, and pdfalto emits <SP> around it. The second line
+     ends with a real hyphenation ("ef-" + "fect"), with no <SP> after the hyphen, and contains a superscript
+     exponent "kg⁻¹" where pdfalto puts an <SP> between the minus and the digit, and a compound word
+     "co-expressed" where pdfalto puts a zero-width <SP> after the hyphen (as in eLife PDFs). -->
+<alto xmlns="http://www.loc.gov/standards/alto/ns-v3#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/standards/alto/v3/alto.xsd">
+  <Description><MeasurementUnit>pixel</MeasurementUnit></Description>
+  <Styles>
+    <TextStyle ID="font1" FONTFAMILY="zbuzmu+charissil" FONTSIZE="7.970" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="000000"/>
+    <TextStyle ID="font25" FONTFAMILY="etgppw+tex_cm_maths_symbols" FONTSIZE="5.978" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="000000" FONTSTYLE="superscript"/>
+    <TextStyle ID="font26" FONTFAMILY="zbuzmu+charissil" FONTSIZE="5.978" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="000000" FONTSTYLE="superscript"/>
+    <TextStyle ID="font27" FONTFAMILY="ztoaha+stix-regular" FONTSIZE="7.970" FONTTYPE="sans-serif" FONTWIDTH="proportional" FONTCOLOR="000000"/>
+  </Styles>
+  <Layout>
+    <Page ID="Page1" PHYSICAL_IMG_NR="1" WIDTH="544.252" HEIGHT="742.677">
+      <PrintSpace>
+        <TextBlock ID="p1_b1" HPOS="125.6867" VPOS="352.6647" HEIGHT="19.2781" WIDTH="200.0">
+          <TextLine WIDTH="200.0" HEIGHT="8.8468" ID="p1_t1" HPOS="125.6867" VPOS="352.6647">
+            <String ID="p1_w1" CONTENT="Writing" HPOS="125.6867" VPOS="352.6647" WIDTH="26.7795" HEIGHT="8.8468" STYLEREFS="font1"/>
+            <SP WIDTH="2.2476" VPOS="352.6647" HPOS="152.4662"/>
+            <String ID="p1_w2" CONTENT="–" HPOS="154.7138" VPOS="352.7365" WIDTH="3.9851" HEIGHT="7.2687" STYLEREFS="font27"/>
+            <SP WIDTH="2.3073" VPOS="352.7365" HPOS="158.6989"/>
+            <String ID="p1_w3" CONTENT="original" HPOS="161.0062" VPOS="352.6647" WIDTH="27.4092" HEIGHT="8.8468" STYLEREFS="font1"/>
+            <SP WIDTH="2.2978" VPOS="352.6647" HPOS="188.4154"/>
+            <String ID="p1_w4" CONTENT="draft," HPOS="190.7132" VPOS="352.6647" WIDTH="19.2079" HEIGHT="8.8468" STYLEREFS="font1"/>
+            <SP WIDTH="2.2787" VPOS="352.6647" HPOS="209.9211"/>
+            <String ID="p1_w5" CONTENT="ef-" HPOS="212.1998" VPOS="352.6647" WIDTH="9.054" HEIGHT="8.8468" STYLEREFS="font1"/>
+          </TextLine>
+          <TextLine WIDTH="200.0" HEIGHT="8.8468" ID="p1_t2" HPOS="125.6867" VPOS="363.096">
+            <String ID="p1_w6" CONTENT="fect" HPOS="125.6867" VPOS="363.096" WIDTH="15.0" HEIGHT="8.8468" STYLEREFS="font1"/>
+            <SP WIDTH="2.2" VPOS="363.096" HPOS="140.6867"/>
+            <String ID="p1_w7" CONTENT="kg" HPOS="142.8867" VPOS="363.096" WIDTH="8.4403" HEIGHT="8.8468" STYLEREFS="font1"/>
+            <SP WIDTH="0" VPOS="363.096" HPOS="151.327"/>
+            <String ID="p1_w8" CONTENT="−" HPOS="151.327" VPOS="360.8684" WIDTH="1.4943" HEIGHT="5.0812" STYLEREFS="font25"/>
+            <SP WIDTH="3.1543" VPOS="360.8684" HPOS="152.8213"/>
+            <String ID="p1_w9" CONTENT="1" HPOS="155.9756" VPOS="360.8624" WIDTH="3.3653" HEIGHT="6.6355" STYLEREFS="font26"/>
+            <SP WIDTH="2.2" VPOS="363.096" HPOS="159.3409"/>
+            <String ID="p1_w10" CONTENT="co-" HPOS="161.5409" VPOS="363.096" WIDTH="11.0" HEIGHT="8.8468" STYLEREFS="font1"/>
+            <SP WIDTH="0" VPOS="363.096" HPOS="172.5409"/>
+            <String ID="p1_w11" CONTENT="expressed" HPOS="172.5409" VPOS="363.096" WIDTH="34.0" HEIGHT="8.8468" STYLEREFS="font1"/>
+          </TextLine>
+        </TextBlock>
+      </PrintSpace>
+    </Page>
+  </Layout>
+</alto>

@@ -10,7 +10,8 @@
 
 	<date>10 Sep 2004<lb/></date> 
 
-	<date>11 November 2018<lb/></date>
+	<!-- check: PDF production date of a 2004 paper, left untagged -->
+	11 November 2018<lb/>
 
 	<docTitle>
 	<titlePart>Growth and superconducting transition of<lb/> Pr 1−x Ca x Ba 2 Cu 3 O 7−δ (x ≈0.5) epitaxial thin films<lb/></titlePart>
@@ -26,8 +27,7 @@
 
 	<address>Beijing 100080, People&apos;s<lb/> Republic of China.<lb/></address>
 
-	Abstract.
-	<div type="abstract">Pr 1−x Ca x Ba 2 Cu 3 O 7−δ (x ≈0.5) thin films have been grown on SrTiO 3<lb/> and YSZ substrates by the pulsed laser ablation. The substrate temperature<lb/> dependence of orientation and superconducting poperties were systematically studied.<lb/> Good quality c and a-axis orientated films can be obtained on SrTiO 3 via changing<lb/> the substrate temperature solely. On YSZ, films with good c-axis orientation can be<lb/> grown, while it is hard to grow films with good a-axis orientation by changing substrate<lb/> temperature alone. The highest T C0 is about 37K, which is found in the films grown<lb/> on YSZ with a good c-axis orientation. For the films grown on STO, however, the<lb/> highest T C0 is about 35.6K with a mixed orientation of c-axis and a-axis. In most<lb/> of the superconducting films, the weak temperature dependence of the normal state<lb/> resistivity, as characterized by small R(290K)/R(50K) ≤ 2 ratios, together with a weak<lb/> localization behavior just above T C could be attributed to the essential scattering due<lb/> to the localized electronic states. The superconducting transitions in a field up to 10<lb/> T along c-axis have been measured on a c-axis oriented film grown on SrTiO 3 . The<lb/> zero-temperature in-plane upper critical field B ab<lb/> C2 (0) is estimated from the resistivity<lb/> transition data.<lb/></div>
+	
 
 	<keyword>PACS numbers: 81.15.Gh, 68.55.-a, 74.78.Bz, 74.72.-h<lb/></keyword>
 

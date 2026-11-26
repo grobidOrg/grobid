@@ -10,8 +10,8 @@
 						<author>
 							<affiliation>
 								<orgName type="institution">CEA</orgName>,
-								<orgName type="department" key="dep1">Centre de Saclay</orgName>,
-								<orgName type="department" key="dep2">IRFU/SPhN</orgName>,
+								<orgName type="department">Centre de Saclay</orgName>,
+								<orgName type="department">IRFU/SPhN</orgName>,
 								<address>
 									<postCode>91191</postCode>
 									<settlement>Gif-sur-Yvette</settlement>,

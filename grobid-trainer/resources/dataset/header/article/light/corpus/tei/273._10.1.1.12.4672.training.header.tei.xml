@@ -15,8 +15,7 @@
 	<docAuthor>Alan<lb/> Fekete*<lb/> David<lb/> Guptat<lb/> Victor<lb/> Luchangcot<lb/> Nancy<lb/> Lyncht<lb/> Alex Shvartsmant</docAuthor>
 	</byline>
 
-	Abstract<lb/>
-	<div type="abstract">We present<lb/> a new specification<lb/> for distributed<lb/> data ser-<lb/>vices that<lb/> trade-off<lb/> immediate<lb/> consistency guarantees<lb/> for improved<lb/> system<lb/> availability<lb/> and efficiency, while<lb/> ensuring<lb/> the long-term<lb/> consistency<lb/> of the data. An<lb/> eventually-serializable<lb/> data service maintains<lb/> the oper-<lb/>ations<lb/> requested<lb/> in a partial<lb/> order that gravitates over<lb/> time towards<lb/> a total<lb/> order.<lb/> It provides<lb/> clear and unam-<lb/>biguous<lb/> guarantees<lb/> about<lb/> the immediate<lb/> and long-term<lb/> behavior<lb/> of the system.<lb/> To demonstrate<lb/> its utility, we<lb/> present<lb/> an algorithm,<lb/> based on one of Ladin,<lb/> Liskov,<lb/> Shrira,<lb/> and Ghemawat<lb/> [12], that implements<lb/> this spec-<lb/>ification.<lb/> Our algorithm<lb/> provides<lb/> the interface<lb/> of the<lb/> abstract<lb/> service,<lb/> and generalizes<lb/> their<lb/> algorithm<lb/> by al-<lb/>lowing<lb/> general<lb/> operations<lb/> and greater<lb/> flexibility<lb/> in spec-<lb/>ifying<lb/> consistency<lb/> requirements.<lb/> We also describe how<lb/> to use this specification<lb/> as a building<lb/> block for applica-<lb/>tions such as directory<lb/> services.</div>
+	
 
 		</front>
 	</text>

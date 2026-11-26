@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<marker>1</marker>
+							<orgName type="institution">Brno University of Technology</orgName>,
+							<orgName type="department">Faculty of IT</orgName>,
+							<orgName type="institution">IT4I Centre of Excellence</orgName>,
+							<address>
+								<country>Czechia</country>
+							<lb/>
+							</address>
+						</affiliation>
+                          
+						<affiliation>
+							<marker>2</marker>
+							<orgName type="institution">Sharif DeepMine Ltd.</orgName>,
+							<address>
+								<settlement>Tehran</settlement>,
+								<country>Iran</country>
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

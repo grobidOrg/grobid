@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Bianca</forename><middlename>Maria</middlename> <surname>Maglia Orlandi</surname>,<roleName>MSc</roleName><marker>a,b</marker>,</persName>
+<persName><forename>Omar</forename><middlename>Asdrubal</middlename><surname>VilcaMejia</surname>,<roleName>MD</roleName>, <roleName>PhD</roleName><marker>a,b</marker>,</persName>
+<persName><forename>Maxim</forename><surname>Goncharov</surname>,<roleName>MD</roleName><marker>a,b</marker>,</persName>
+<persName><forename>Kenji</forename><middlename>Nakahara</middlename><surname>Rocha</surname>,<roleName>BSc</roleName><marker>a,b</marker>,</persName>
+<persName><forename>Lucas</forename><surname>Bassolli</surname><marker>a,b</marker>,</persName>
+<persName><forename>Luiz</forename><middlename>AF</middlename><surname>Lisboa</surname>,<roleName>MD</roleName> <roleName>PhD</roleName><marker>a,b</marker>,</persName>
+<persName><forename>Luis</forename><middlename>AO</middlename><surname>Dallan</surname><marker>a,b</marker>,</persName>
+<persName><forename>Fábio</forename><middlename>B</middlename><surname>Jatene</surname>,<roleName>MD</roleName>, <roleName>PhD</roleName><marker>a,b</marker></persName>
+<persName><forename>Omar</forename><middlename>Asdrubal</middlename><surname>Vilca Mejia</surname>,<roleName>MD</roleName>, <roleName>PhD</roleName><marker>1</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

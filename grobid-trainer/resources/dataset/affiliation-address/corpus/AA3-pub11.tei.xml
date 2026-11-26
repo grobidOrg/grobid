@@ -10,8 +10,8 @@
 					<analytic>
 						<author>
 							<affiliation>
-								<orgName type="institution" key="instit1">Comput. Sci. Corp.</orgName>,
-								<orgName type="institution" key="instit2">NASA Ames Res. Center</orgName>,
+								<orgName type="institution">Comput. Sci. Corp.</orgName>,
+								<orgName type="institution">NASA Ames Res. Center</orgName>,
 								<address>
 									<settlement>Moffett Field</settlement>,
 									<region type="state">CA</region>;

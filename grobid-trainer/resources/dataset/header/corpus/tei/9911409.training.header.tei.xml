@@ -11,7 +11,11 @@
 	<date>22 Nov 1999<lb/></date>
 
 	A&amp;A manuscript no.<lb/> (will be inserted by hand later)<lb/> Your thesaurus codes are:<lb/>
-	<reference>11.06.2; 11.16.1; 13.09.1<lb/> ASTRONOMY<lb/> AND<lb/> ASTROPHYSICS<lb/> 25.7.2013<lb/></reference>
+	<keyword>11.06.2; 11.16.1; 13.09.1<lb/></keyword>
+
+	<title level="j">ASTRONOMY<lb/> AND<lb/> ASTROPHYSICS<lb/></title>
+
+	25.7.2013<lb/>
 
 	<docTitle>
 	<titlePart>1.65 µm (H-band) surface photometry of galaxies. III:<lb/> observations of 558 galaxies with the TIRGO 1.5m<lb/> telescope. ⋆<lb/></titlePart>
@@ -34,10 +38,10 @@
 	<address>Karl-Schwarzschild-Str. 2, D-85748 Garching bei München, Germany<lb/></address>
 
 	<byline>
-	<affiliation>3 Laboratoire d&apos;Astronomie Spatiale, Traverse du Siphon,</affiliation>
+	<affiliation>3 Laboratoire d&apos;Astronomie Spatiale,</affiliation>
 	</byline>
 
-	<address>F-13376 Marseille Cedex 12, France<lb/></address>
+	<address>Traverse du Siphon, F-13376 Marseille Cedex 12, France<lb/></address>
 
 	<byline>
 	<affiliation>4 MPI für Kernphysik,</affiliation>
@@ -52,10 +56,10 @@
 	<address>L.go E.Fermi 5, 50125 Firenze, Italy<lb/></address>
 
 	<byline>
-	<affiliation>6 C.A.I.S.M.I., L.go E.</affiliation>
+	<affiliation>6 C.A.I.S.M.I.,</affiliation>
 	</byline>
-	
-	<address>Fermi 5, 50125 Firenze, Italy<lb/></address> 
+
+	<address>L.go E. Fermi 5, 50125 Firenze, Italy<lb/></address> 
 
 	<note type="submission">Received..........; accepted..........<lb/></note>
 

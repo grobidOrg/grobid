@@ -68,6 +68,10 @@ public class PDFALTOSaxHandler extends DefaultHandler {
 
     private List<LayoutToken> tokenizations = null;
 
+    // an SP narrower than this fraction of the font size is not a visible space
+    private static final double MIN_SPACE_WIDTH_RATIO = 0.05;
+    private static final double DEFAULT_FONT_SIZE = 10.0;
+
     private Document doc = null;
 
     //starting page count from 1 since most of the PDF-related software count pages from 1
@@ -121,6 +125,28 @@ public class PDFALTOSaxHandler extends DefaultHandler {
         } else {
             block.addToken(layoutToken);
         }
+    }
+
+    /**
+     * Whether an ALTO SP element is an actual space. Measured on pdfalto output, the width of an SP that
+     * follows a dash is either at most 0.02 times the font size (no visible space) or at least 0.12 times
+     * the font size (a space), so the threshold is set in between.
+     */
+    private static boolean isRealSpace(String spWidth, LayoutToken previousToken) {
+        if (spWidth == null) {
+            return false;
+        }
+        double width;
+        try {
+            width = Double.parseDouble(spWidth);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+        double fontSize = previousToken.getFontSize() > 0 ? previousToken.getFontSize() : previousToken.getHeight();
+        if (fontSize <= 0) {
+            fontSize = DEFAULT_FONT_SIZE;
+        }
+        return width > MIN_SPACE_WIDTH_RATIO * fontSize;
     }
 
     private void addBlock(Block block) {
@@ -599,6 +625,27 @@ public class PDFALTOSaxHandler extends DefaultHandler {
                 }
             }
             block.setEndToken(tokenizations.size());
+        } else if (qName.equals("SP")) {
+            // No space is added after a String ending with a dash, so that a line-end hyphen stays attached
+            // to its word. An explicit <SP> after the dash means the dash is not a line-end hyphen
+            // (e.g. "Writing – original draft", "qe − qt", "low- and high-"): restore the space.
+            // Two cases are left alone:
+            // - superscript and subscript dashes: pdfalto puts an <SP> between the minus and the digit of
+            //   exponents such as "kg⁻¹", which must stay "kg -1";
+            // - an <SP> with (almost) no width: pdfalto emits one inside compound words in some PDFs
+            //   (e.g. "co-" <SP WIDTH="0"/> "expressed" in eLife), which must stay "co-expressed".
+            if (block != null && tokenizations.size() > 0) {
+                LayoutToken lastToken = tokenizations.get(tokenizations.size() - 1);
+                if (lastToken.t().endsWith("-")
+                        && !lastToken.isSuperscript()
+                        && !lastToken.isSubscript()
+                        && isRealSpace(atts.getValue("WIDTH"), lastToken)) {
+                    LayoutToken localTok = new LayoutToken(" ");
+                    localTok.setPage(currentPage);
+                    addToken(localTok);
+                    block.setEndToken(tokenizations.size());
+                }
+            }
         } else if (qName.equals("TextStyle")) {
             int length = atts.getLength();
 

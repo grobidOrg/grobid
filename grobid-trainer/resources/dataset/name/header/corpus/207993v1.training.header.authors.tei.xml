@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author> <persName> <forename>Aurélien</forename> <surname>Vigneron</surname> <marker>1*</marker> , </persName> <persName> <forename>Emre</forename> <surname>Aksoy</surname> <marker>1,#a</marker> , </persName> <persName> <forename>Brian</forename> <middlename>L</middlename> <surname>Weiss</surname> <marker>1</marker> , </persName> <persName> <forename>Xiaoli</forename> <surname>Bing</surname> <marker>1,#b</marker> , </persName> <persName> <forename>Xin</forename> <surname>Zhao</surname> <marker>1,#c</marker> , </persName> <persName> <forename>Erick</forename> <middlename>O</middlename> <surname>Awuoche</surname> <marker>1,#d</marker> , </persName> <persName> <forename>Michelle</forename> <surname>O&apos;Neill</surname> <marker>1</marker> , </persName> <persName> <forename>Yineng</forename> <surname>Wu</surname> <marker>1</marker> , </persName> <persName> <forename>Geoffrey</forename> <middlename>M</middlename> <surname>Attardo</surname> <marker>1,#e</marker> , </persName> <persName> <forename>Serap</forename> <surname>Aksoy</surname> <marker>1</marker> </persName> </author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

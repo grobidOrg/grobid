@@ -34,8 +34,7 @@
 
 	<email>arun@cse.unsw.edu.au</email>
 
-	Abstract<lb/>
-	<div type="abstract">A team of learning machines is a multiset of<lb/> learning machines. A team is said to success-<lb/>fully learn a concept just in case each member<lb/> of some nonempty subset, of predetermined<lb/> size, of the team learns the concept.<lb/> Team learning of computer programs for<lb/> computable functions from their graphs has<lb/> been studied extensively. However, team<lb/> learning of languages turns out to be a<lb/> more suitable theoretical model for studying<lb/> computational limits on multi-agent machine<lb/> learning. The main reason for this is that<lb/> language learning can model both learning<lb/> from positive data and learning from positive<lb/> and negative data, whereas function learning<lb/> models only learning from positive and neg-<lb/>ative data.<lb/> Some theoretical results about learnability of<lb/> formal languages by teams of algorithmic ma-<lb/>chines are surveyed. Some new results about<lb/> restricted classes of languages are presented.<lb/> These results are mainly about two issues: re-<lb/>dundancy and aggregation. The issue of re-<lb/>dundancy deals with the impact of increasing<lb/> the size of a team and increasing the number<lb/> of machines required to be successful. The<lb/> issue of aggregation deals with conditions un-<lb/>der which a team may be replaced by a single<lb/> machine without any loss in learning ability.<lb/> Scenarios which can be modeled by team<lb/> learning are also presented.</div>
+	
 
 		</front>
 	</text>

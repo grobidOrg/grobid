@@ -11,17 +11,21 @@
 	</docTitle>
 
 	<byline>
-	<docAuthor>Robert-Paul</docAuthor>
+	<docAuthor>Robert-Paul Berretty</docAuthor>
 	</byline>
 
 	<byline>
-	<affiliation>Berretty University of Utrecht,</affiliation>
+	<affiliation>University of Utrecht,</affiliation>
 	</byline>
 
 	<address>Utrecht, The Netherlands<lb/></address>
 
 	<byline>
-	<affiliation>Ken Goldberg University of California at Berkeley,</affiliation>
+	<docAuthor>Ken Goldberg</docAuthor>
+	</byline>
+
+	<byline>
+	<affiliation>University of California at Berkeley,</affiliation>
 	</byline>
 
 	<address>CA, USA<lb/></address>
@@ -46,8 +50,7 @@
 
 	<address>Utrecht, The Netherlands</address>
 
-	Abstract<lb/>
-	<div type="abstract">A common task in automated manufacturing processes is to orient parts prior to<lb/> assembly. We address sensorless orientation of a polygonal part on a conveyor belt by<lb/> a sequence of stationary fences across this belt. Since fences can only push against the<lb/> motion of the belt, it is a challenging problem to compute fence designs which orients<lb/> a given part. In this paper, we give several polynomial-time, algorithms to compute<lb/> fence designs which are optimal with respect to various criteria. We address both<lb/> frictionless and frictional fences. We also compute modular fence designs in which<lb/> the fence angles are restricted to a discrete set of angles instead of an interval.</div>
+	
 
 		</front>
 	</text>

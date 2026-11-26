@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Gad</forename> <surname>Abraham</surname> <roleName>PhD</roleName> <marker>1,2</marker> ,</persName>
+<persName><forename>Aki</forename> <middlename>S</middlename>. <surname>Havulinna</surname> <roleName>DSc</roleName> <marker>3</marker> ,</persName>
+<persName><forename>Oneil</forename> <middlename>G</middlename>. <surname>Bhalala</surname> <roleName>PhD</roleName> <marker>1,2</marker> ,</persName>
+<persName><forename>Sean</forename> <middlename>G</middlename>. <surname>Byars</surname> <roleName>PhD</roleName> <marker>1,2</marker> ,</persName>
+<persName><forename>Alysha</forename> <middlename>M</middlename>. <surname>De Livera</surname> <roleName>PhD</roleName> <marker>1,2,4</marker> ,</persName>
+<persName><forename>Laxman</forename> <surname>Yetukuri</surname> <roleName>PhD</roleName> <marker>5</marker> ,</persName>
+<persName><forename>Emmi</forename> <surname>Tikkanen</surname> <roleName>PhD</roleName> <marker>5</marker> ,</persName>
+<persName><forename>Markus</forename> <surname>Perola</surname> <roleName>MD</roleName> <roleName>PhD</roleName> <marker>3,5</marker> ,</persName>
+<persName><forename>Heribert</forename> <surname>Schunkert</surname> <roleName>MD</roleName> <marker>6</marker> ,</persName>
+<persName><forename>Eric</forename> <middlename>J</middlename>. <surname>Sijbrands</surname> <roleName>MD</roleName> <roleName>PhD</roleName> <marker>7</marker> ,</persName>
+<persName><forename>Aarno</forename> <surname>Palotie</surname> <roleName>MD</roleName> <roleName>PhD</roleName> <marker>5,8,9,10</marker> ,</persName>
+<persName><forename>Nilesh</forename> <middlename>J</middlename>. <surname>Samani</surname> <roleName>MD</roleName> <roleName>FRCP</roleName> <marker>11,12,#</marker> ,</persName>
+<persName><forename>Veikko</forename> <surname>Salomaa</surname> <roleName>MD</roleName> <roleName>PhD</roleName> <marker>3, #</marker> ,</persName>
+<persName><forename>Samuli</forename> <surname>Ripatti</surname> <roleName>PhD</roleName> <marker>5,13,14,*,#</marker> ,</persName>
+<persName><forename>Michael</forename> <surname>Inouye</surname> <roleName>PhD</roleName> <marker>1,2,5,*,#</marker></persName>
+<persName><forename>Michael</forename> <surname>Inouye</surname></persName>
+<persName><forename>Samuli</forename> <surname>Ripatti</surname></persName>
+<persName><forename>Veikko</forename> <surname>Salomaa</surname></persName>
+<persName><forename>Nilesh</forename> <middlename>J</middlename>. <surname>Samani</surname></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

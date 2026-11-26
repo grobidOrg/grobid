@@ -8,10 +8,10 @@
 						<author>
 
 						<affiliation>
-							<orgName type="department">Department of Surgery 1</orgName> ,
+							<orgName type="department">Department of Surgery</orgName> <marker>1</marker> ,
 							<orgName type="department">Department of Pharmacology</orgName> &amp; 
-							<orgName type="department">Institute of Biomedical Sciences 2</orgName> , 
-							<orgName type="department">Department of Internal Medicine 3</orgName> ,
+							<orgName type="department">Institute of Biomedical Sciences</orgName> <marker>2</marker> , 
+							<orgName type="department">Department of Internal Medicine</orgName> <marker>3</marker> ,
 							<lb/>
 							<orgName type="department">College of Medicine</orgName>,
 							<orgName type="institution">Hanyang University</orgName>,
@@ -21,7 +21,7 @@
 							</address>
 						</affiliation>
 						<affiliation>	
-							<orgName type="department">Department of Pathology and Laboratory Medicine 4</orgName> ,
+							<orgName type="department">Department of Pathology and Laboratory Medicine</orgName> <marker>4</marker> ,
 							<orgName type="department">College of<lb/> Medicine</orgName>,
 							<orgName type="institution">University of Pennsylvania</orgName>,
 							<address>

@@ -30,7 +30,7 @@
 	<email>j.yung357@gmail.com</email>
 
 	.<lb/>
-	<note type="copyright">1 The synthetic dataset and code used to generate the dataset are available on GitHub and CVF at<lb/> https://github.com/google-research/si-score.<lb/></note>
+	<note type="availability">1 The synthetic dataset and code used to generate the dataset are available on GitHub and CVF at<lb/> https://github.com/google-research/si-score.<lb/></note>
 
 	<idno>arXiv:2104.04191v1 [cs.CV]</idno>
 

@@ -68,11 +68,13 @@
 	<affiliation>7<lb/> University of St Andrews,</affiliation>
 	</byline>
 
-	<address>St Andrews, UK 8<lb/></address>
+	<address>St Andrews, UK</address>
 
 	<byline>
-	<docAuthor>NHS Glasgow and Clyde, Glasgow, UK<lb/></docAuthor>
+	<affiliation>8<lb/> NHS Glasgow and Clyde,</affiliation>
 	</byline>
+
+	<address>Glasgow, UK<lb/></address>
 
 	Correspondence<lb/> 
 
@@ -81,10 +83,10 @@
 	</byline>
 
 	<byline>
-	<affiliation>School of Health Sciences,<lb/> University of Stirling,</affiliation>
+	<affiliation>School of Health Sciences,<lb/> University of Stirling, Highland Campus,<lb/> Centre for Health Science,</affiliation>
 	</byline>
 
-	<address>Highland Campus,<lb/> Centre for Health Science, Old Perth Road,<lb/> INVERNESS, IV2 3JH, UK.<lb/></address>
+	<address>Old Perth Road,<lb/> INVERNESS, IV2 3JH, UK.<lb/></address>
 
 	Email:
 	<email>gill.hubbard@stir.ac.uk</email>

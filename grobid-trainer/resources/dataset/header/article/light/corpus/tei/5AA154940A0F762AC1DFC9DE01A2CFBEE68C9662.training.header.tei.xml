@@ -18,7 +18,7 @@
 	<docAuthor>Takahiro Murata 1,4 , Anna Delprato 2 , Alyssa Ingmundson 1 , Derek K. Toomre 3 , David G. Lambright 2<lb/> and Craig R. Roy 1,5<lb/></docAuthor>
 	</byline>
 
-	<div type="abstract">The intracellular pathogen Legionella pneumophila avoids<lb/> fusion with lysosomes and subverts membrane transport from<lb/> the endoplasmic reticulum to create an organelle that supports<lb/> bacterial replication 1,2 . Transport of endoplasmic reticulum-<lb/>derived vesicles to the Legionella-containing vacuole (LCV)<lb/> requires bacterial proteins that are translocated into host cells<lb/> by a type IV secretion apparatus called Dot/Icm 3-7 . Recent<lb/> observations have revealed recruitment of the host GTPase Rab1<lb/> to the LCV by a process requiring the Dot/Icm system 8,9 . Here, a<lb/> visual screen was used to identify L. pneumophila mutants with<lb/> defects in Rab1 recruitment. One of the factors identified in this<lb/> screen was DrrA, a new Dot/Icm substrate protein translocated<lb/> into host cells. We show that DrrA is a potent and highly specific<lb/> Rab1 guanine nucleotide-exchange factor (GEF). DrrA can<lb/> disrupt Rab1-mediated secretory transport to the Golgi apparatus<lb/> by competing with endogenous exchange factors to recruit and<lb/> activate Rab1 on plasma membrane-derived organelles. These<lb/> data establish that intracellular pathogens have the capacity to<lb/> directly modulate the activation state of a specific member of<lb/> the Rab family of GTPases and thus further our understanding of<lb/> the mechanisms used by bacterial pathogens to manipulate host<lb/> vesicular transport.<lb/></div>
+	
 
 	<byline>
 	<affiliation>1 Section of Microbial Pathogenesis, Yale University School of Medicine, Boyer Center for Molecular Medicine,</affiliation>
@@ -38,9 +38,8 @@
 
 	<address>295 Congress Avenue, New Haven, CT 06536, USA.</address>
 
-	4 Current address:
 	<byline>
-	<affiliation>Department of Pediatrics,<lb/> Mizonokuchi Hospital, Teikyo University School of Medicine,</affiliation>
+	<affiliation>4 Current address: Department of Pediatrics,<lb/> Mizonokuchi Hospital, Teikyo University School of Medicine,</affiliation>
 	</byline>
 
 	<address>3-8-3 Mizonokuchi, Takatsuku, Kawasaki 213-8507, Japan.<lb/></address>

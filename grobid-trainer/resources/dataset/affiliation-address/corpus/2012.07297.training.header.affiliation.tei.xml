@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="laboratory">National Laboratory of Pattern Recognition<lb/> (NLPR)</orgName>,
+							<orgName type="department">Institute of Automation</orgName>,
+							<orgName type="institution">Chinese Academy of Sciences (CASIA)</orgName>,
+							<lb/>
+							<address>
+								<settlement>Beijing</settlement>
+								<postCode>100190</postCode>,
+								<country>China</country>.
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="department">Department of Electrical and Computer<lb/> Engineering</orgName>,
+							<orgName type="institution">National University of Singapore (NUS)</orgName>,
+							<address>
+								<settlement>Singapore</settlement>
+								<postCode>119077</postCode>,
+							<lb/>
+								<country>Singapore</country>.
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="department">Wangxuan Institute of Computer Technology</orgName>,
+							<orgName type="institution">Peking<lb/> University</orgName>,
+							<address>
+								<settlement>Beijing</settlement>
+								<postCode>100871</postCode>,
+								<country>China</country>.
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

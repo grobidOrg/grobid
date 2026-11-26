@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader><fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+
+						<affiliation>
+							<orgName type="laboratory">Communications Research<lb/> and Innovation Laboratory (CoreLab)</orgName>,
+							<orgName type="department">Department of Electrical and Elec-<lb/>tronics Engineering</orgName>,
+							<orgName type="institution">Koc ¸University</orgName>,
+							<address>
+								<addrLine>Sariyer</addrLine>
+								<postCode>34450</postCode>,
+								<settlement>Istanbul</settlement>,
+								<country>Turkey</country>.
+							</address>
+                        </affiliation>
+
+                        <affiliation>
+							<orgName type="department">Faculty of Electrical and Electronics En-<lb/>gineering</orgName>,
+							<orgName type="institution">Istanbul Technical University</orgName>,
+							<address>
+								<settlement>Istanbul</settlement>
+								<postCode>34469</postCode>,
+								<country>Turkey</country>.
+							</address>
+						</affiliation>
+
+						</author>
+					</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader></TEI>

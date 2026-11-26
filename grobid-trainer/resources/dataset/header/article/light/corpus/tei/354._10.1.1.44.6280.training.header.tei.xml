@@ -20,8 +20,7 @@
 
 	email: <email>schaedle,schmid,compuman,herold@cs.tu-berlin.de<lb/></email>
 
-	Abstract.
-	<div type="abstract">In this work it will be shown, how the comparison of recur-<lb/>sive program schemata (RPS) can be reduced to an only slightly modi ed<lb/> type of the search for maximal isomorphic subgraphs by interpreting the<lb/> RPS as directed, cyclic, marked graphs. The quality of the mapping of<lb/> two RPS can be used as a quantitative measure for similarity of RPS<lb/> among each other. The simultaneously calculated graph morphism can<lb/> serve as a basis for the detection of analogies between the RPS. A special<lb/> neural net, developed for the solution of general graph-matching prob-<lb/>lems, realizes the search for a sensible and as comprising as possible<lb/> mapping between two RPS. It is shown, which special properties of RPS<lb/> have to be accounted for in the modeling and how these can be incorpo-<lb/>rated into the algorithms when using a special neural approach for the<lb/> solution.</div>
+	
 
 		</front>
 	</text>

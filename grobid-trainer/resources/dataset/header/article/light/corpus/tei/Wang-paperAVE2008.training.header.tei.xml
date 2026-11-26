@@ -30,8 +30,7 @@
 
 	<email>neumann@dfki.de<lb/></email>
 
-	Abstract.
-	<div type="abstract">This report is about our participation in the Answer Validation Exercise (AVE2008).<lb/> Our system casts the AVE task into a Recognizing Textual Entailment (RTE) problem and uses an<lb/> existing RTE system to validate answers. Additional information from named-entity (NE)<lb/> recognizer, question analysis component, and so on, is also considered as assistances to make the<lb/> final decision. In all, we have submitted two runs, one run for English and the other for German.<lb/> They have achieved f-measures of 0.64 and 0.61 respectively. Compared with our system last year,<lb/> which purely depends on the output of the RTE system, the extra information does show its<lb/> effectiveness.<lb/></div>
+	
 
 	Keywords: 
 	<keyword>Answer Validation, Recognizing Textual Entailment, Information Synthesis</keyword>
