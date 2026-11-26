@@ -44,7 +44,9 @@ public class PDFALTOOutlineSaxHandler extends DefaultHandler {
 
     private int currentLevel = -1;
     private int currentId = -1;
-    private int currentParentId = -1;
+    // parent id of the TOCITEMLIST currently open, one entry per nesting level;
+    // -1 when the list has no idItemParent (root list)
+    private Deque<Integer> currentParentIdStack = new ArrayDeque<>();
 
     private Map<Integer, DocumentNode> nodes = null;
 
@@ -80,7 +82,12 @@ public class PDFALTOOutlineSaxHandler extends DefaultHandler {
             box = null;
             label = null;
         } else if (qName.equals("TOCITEMLIST")) {
-            currentParentId = -1;
+            if (!currentParentIdStack.isEmpty()) {
+                currentParentIdStack.pop();
+            } else {
+                LOGGER.warn(
+                        "TOCITEMLIST end encountered with empty parent stack. Possible malformed outline structure.");
+            }
         } else if (qName.equals("LINK")) {
             // in case of nested item, we need to assign the box right away or we will lose it.
             if (box != null) {
@@ -123,7 +130,8 @@ public class PDFALTOOutlineSaxHandler extends DefaultHandler {
             }
             currentNode.setId(currentId);
             nodes.put(currentId, currentNode);
-            if (currentParentId != -1) {
+            Integer currentParentId = currentParentIdStack.peek();
+            if (currentParentId != null && currentParentId != -1) {
                 DocumentNode father = nodes.get(currentParentId);
                 if (father == null)
                     LOGGER.warn("Father not yet encountered! id is " + currentParentId);
@@ -141,6 +149,9 @@ public class PDFALTOOutlineSaxHandler extends DefaultHandler {
             // we only consider annotation with attribute @subtype of value "Link"
             int length = atts.getLength();
 
+            // the root TOCITEMLIST has no idItemParent attribute
+            int parentId = -1;
+
             // Process attributes
             for (int i = 0; i < length; i++) {
                 // Get names and values for each attribute
@@ -157,14 +168,16 @@ public class PDFALTOOutlineSaxHandler extends DefaultHandler {
                         }
                     } else if (name.equals("idItemParent")) {
                         try {
-                            currentParentId = Integer.parseInt(value);
+                            parentId = Integer.parseInt(value);
                         } catch (Exception e) {
                             LOGGER.warn("Invalid parent id string (should be an integer): " + value);
-                            currentParentId = -1;
+                            parentId = -1;
                         }
                     }
                 }
             }
+            // always push exactly one entry per TOCITEMLIST so that start/end events stay balanced
+            currentParentIdStack.push(parentId);
         } else if (qName.equals("LINK")) {
             int length = atts.getLength();
 

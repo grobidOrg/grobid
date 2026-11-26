@@ -1609,6 +1609,84 @@ public class TEIFormatter {
         return buffer;
     }
 
+    /**
+     * Per-head hierarchy level derived from the PDF outline: 1 for a main section, 2 for a
+     * sub-section, and so on. Keyed by cluster identity (not head text, which can repeat across a
+     * document). {@code active} is true when the outline gives enough signal to annotate this piece.
+     */
+    static class SectionLevelInfo {
+        final Map<TaggingTokenCluster, Integer> levels;
+        final boolean active;
+
+        SectionLevelInfo(Map<TaggingTokenCluster, Integer> levels, boolean active) {
+            this.levels = levels;
+            this.active = active;
+        }
+    }
+
+    /**
+     * Compute, for each SECTION head that can be located in the document outline, its hierarchy level:
+     * 1 for the shallowest matched section, +1 for each outline level below it. The outline is the
+     * only signal that reveals when a section returns to a higher level (the "ascent"), which cannot
+     * be inferred from the text alone. Activated only when the outline exists, the piece has at least
+     * one pair of adjacent section heads (evidence of hierarchy), and at least one head matched.
+     */
+    static SectionLevelInfo computeSectionLevels(List<TaggingTokenCluster> clusters, DocumentNode outlineRoot) {
+        Map<TaggingTokenCluster, Integer> depths = new IdentityHashMap<>();
+        int minDepth = Integer.MAX_VALUE;
+
+        boolean hasAdjacentSectionHeads = false;
+        TaggingLabel previousLabel = null;
+        for (TaggingTokenCluster cluster : clusters) {
+            if (cluster == null) {
+                continue;
+            }
+            TaggingLabel clusterLabel = cluster.getTaggingLabel();
+            if (TaggingLabels.SECTION.equals(clusterLabel) && TaggingLabels.SECTION.equals(previousLabel)) {
+                hasAdjacentSectionHeads = true;
+            }
+            previousLabel = clusterLabel;
+        }
+
+        if (hasAdjacentSectionHeads && outlineRoot != null) {
+            for (TaggingTokenCluster cluster : clusters) {
+                if (cluster == null || !TaggingLabels.SECTION.equals(cluster.getTaggingLabel())) {
+                    continue;
+                }
+                String clusterContent = LayoutTokensUtil.normalizeDehyphenizeText(cluster.concatTokens());
+                int depth = findOutlineDepthForHead(outlineRoot, clusterContent);
+                if (depth > 0) {
+                    depths.put(cluster, depth);
+                    minDepth = Math.min(minDepth, depth);
+                }
+            }
+        }
+
+        Map<TaggingTokenCluster, Integer> levels = new IdentityHashMap<>();
+        for (Map.Entry<TaggingTokenCluster, Integer> entry : depths.entrySet()) {
+            levels.put(entry.getKey(), entry.getValue() - minDepth + 1);
+        }
+        boolean active = hasAdjacentSectionHeads && !levels.isEmpty();
+        return new SectionLevelInfo(levels, active);
+    }
+
+    /**
+     * Depth of the outline node matching a section head, or -1 if none. Tries the head text as
+     * labelled first (keeping the section number to disambiguate same-titled sections), then retries
+     * with the number stripped, since many outlines store the bare title ("Results") while the head
+     * carries a number ("2. Results") that pushes a short title below the similarity threshold.
+     */
+    static int findOutlineDepthForHead(DocumentNode outlineRoot, String headText) {
+        int depth = DocumentNode.findNodeDepth(outlineRoot, headText, 0);
+        if (depth < 0) {
+            org.grobid.core.utilities.Pair<String, String> numb = getSectionNumber(headText);
+            if (numb != null && StringUtils.isNotBlank(numb.a)) {
+                depth = DocumentNode.findNodeDepth(outlineRoot, numb.a, 0);
+            }
+        }
+        return depth;
+    }
+
     public StringBuilder toTEITextPiece(
             StringBuilder buffer,
             String result,
@@ -1638,6 +1716,11 @@ public class TEIFormatter {
 
         List<Element> divResults = new ArrayList<>();
 
+        // When the PDF provides an outline (table of content), annotate each section head with its
+        // hierarchy level (1 = main section, 2 = sub-section, ...). The div structure is left flat and
+        // identical to the outline-less output; only a @level attribute is added on matched heads.
+        SectionLevelInfo sectionLevelInfo = computeSectionLevels(clusters, doc.getOutlineRoot());
+
         Element curDiv = teiElement("div");
         if (config.isGenerateTeiIds()) {
             String divID = KeyGen.getKey().substring(0, 7);
@@ -1666,6 +1749,12 @@ public class TEIFormatter {
                     head.appendChild(numb.a);
                 } else {
                     head.appendChild(clusterContent);
+                }
+
+                // hierarchy level from the PDF outline, when this head could be located in it
+                Integer level = sectionLevelInfo.levels.get(cluster);
+                if (level != null) {
+                    head.addAttribute(new Attribute("level", String.valueOf(level)));
                 }
 
                 if (config.isGenerateTeiIds()) {
@@ -2381,7 +2470,7 @@ public class TEIFormatter {
         return result;
     }
 
-    private org.grobid.core.utilities.Pair<String, String> getSectionNumber(String text) {
+    private static org.grobid.core.utilities.Pair<String, String> getSectionNumber(String text) {
         Matcher m1 = BasicStructureBuilder.headerNumbering1.matcher(text);
         Matcher m2 = BasicStructureBuilder.headerNumbering2.matcher(text);
         Matcher m3 = BasicStructureBuilder.headerNumbering3.matcher(text);
