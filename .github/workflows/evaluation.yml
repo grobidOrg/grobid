@@ -26,6 +26,12 @@ name: End-to-end evaluation
 # is gathered and scored once per corpus (`score`), and the reports are compared with the
 # ones of the latest successful run on the default branch (`report`).
 #
+# The build dependencies are downloaded once (`dependencies`) and handed to the other jobs
+# as an artifact: Maven Central throttles the runners (HTTP 429) when every shard resolves
+# the build at the same time. The cache of GitHub Actions is not used for this: the Docker
+# layers of the builds fill the quota of the repository, and its entries are evicted within
+# the hour.
+#
 # The arXiv corpus (authors and affiliations of arXiv preprints) has JSON gold data, scored by
 # .github/scripts/evaluation/score_arxiv.py instead of jatsEval. It is in a private Hugging Face
 # dataset, read with the HF_TOKEN_COMET secret: the runs without it (pull requests from forks)
@@ -317,8 +323,44 @@ jobs:
           } >> "$GITHUB_OUTPUT"
           echo "Evaluation profile: ${PROFILE}, consolidation: ${CONSOLIDATION}, evaluations: ${EVALUATIONS_JSON}, datasets: ${DATASETS_JSON}"
 
-  predict:
+  dependencies:
     needs: [ setup ]
+    if: needs.setup.outputs.evaluate == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - name: Set up JDK
+        uses: actions/setup-java@v6.3.0
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+      - uses: gradle/actions/setup-gradle@v6
+        with:
+          # only the summary of the report job is of interest
+          add-job-summary: never
+      # checkEvalConfig has the classpath of jatsEval: running it, in warn mode since nothing
+      # is configured yet, downloads the plugins and the libraries the other jobs need
+      - name: Download the build dependencies
+        run: >-
+          .github/scripts/evaluation/gradle_retry.sh --console=plain checkEvalConfig
+          -PcheckMode=warn -PcheckConsolidation=false
+      # modules-2 is the dependency cache of Gradle, which can be copied without its lock files
+      - name: Package the build dependencies
+        run: |
+          tar -cf gradle-dependencies.tar -C "${GRADLE_USER_HOME:-${HOME}/.gradle}/caches" \
+            --exclude='*.lock' --exclude='gc.properties' modules-2
+          ls -lh gradle-dependencies.tar
+      - name: Upload the build dependencies
+        uses: actions/upload-artifact@v7
+        with:
+          name: gradle-dependencies
+          path: gradle-dependencies.tar
+          if-no-files-found: error
+          retention-days: 7
+
+  predict:
+    needs: [ setup, dependencies ]
     if: needs.setup.outputs.evaluate == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 355
@@ -348,6 +390,23 @@ jobs:
         with:
           # only the summary of the report job is of interest
           add-job-summary: never
+      # The plugins and the libraries downloaded by the dependencies job, as a read-only
+      # dependency cache: Gradle only downloads what is not in it. A job run again once the
+      # artifact has expired downloads them itself.
+      - name: Download the build dependencies
+        id: gradle-dependencies
+        continue-on-error: true
+        uses: actions/download-artifact@v8
+        with:
+          name: gradle-dependencies
+          path: ${{ runner.temp }}/gradle-dependencies
+      - name: Unpack the build dependencies
+        if: steps.gradle-dependencies.outcome == 'success'
+        run: |
+          mkdir -p "${HOME}/gradle-dependencies"
+          tar -xf "${RUNNER_TEMP}/gradle-dependencies/gradle-dependencies.tar" -C "${HOME}/gradle-dependencies"
+          rm -rf "${RUNNER_TEMP}/gradle-dependencies"
+          echo "GRADLE_RO_DEP_CACHE=${HOME}/gradle-dependencies" >> "${GITHUB_ENV}"
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
@@ -418,7 +477,7 @@ jobs:
           [ "${PROFILE}" = "crf" ] && MODE=warn
           ARGS=(-PcheckMode="${MODE}")
           [ "${CONSOLIDATION}" = "none" ] && ARGS+=(-PcheckConsolidation=false)
-          ./gradlew --console=plain checkEvalConfig "${ARGS[@]}" | tee check.log
+          .github/scripts/evaluation/gradle_retry.sh --console=plain checkEvalConfig "${ARGS[@]}" | tee check.log
           STATUS=${PIPESTATUS[0]}
           if [ "${CONSOLIDATION}" = "glutton" ] && ! grep -q "Glutton reachable: yes" check.log; then
             echo "::error::biblio-glutton is not reachable from this runner. Set the repository variable GROBID_EVAL_GLUTTON_URL to a reachable instance, or run without consolidation (without the evaluation:glutton label)."
@@ -507,6 +566,24 @@ jobs:
         with:
           # only the summary of the report job is of interest
           add-job-summary: never
+      # The plugins and the libraries downloaded by the dependencies job, as a read-only
+      # dependency cache: Gradle only downloads what is not in it. A job run again once the
+      # artifact has expired downloads them itself.
+      - name: Download the build dependencies
+        id: gradle-dependencies
+        if: matrix.dataset != 'COMET_arxiv_1091'
+        continue-on-error: true
+        uses: actions/download-artifact@v8
+        with:
+          name: gradle-dependencies
+          path: ${{ runner.temp }}/gradle-dependencies
+      - name: Unpack the build dependencies
+        if: steps.gradle-dependencies.outcome == 'success'
+        run: |
+          mkdir -p "${HOME}/gradle-dependencies"
+          tar -xf "${RUNNER_TEMP}/gradle-dependencies/gradle-dependencies.tar" -C "${HOME}/gradle-dependencies"
+          rm -rf "${RUNNER_TEMP}/gradle-dependencies"
+          echo "GRADLE_RO_DEP_CACHE=${HOME}/gradle-dependencies" >> "${GITHUB_ENV}"
       - name: Set up Python
         if: matrix.dataset == 'COMET_arxiv_1091'
         uses: actions/setup-python@v7
@@ -545,7 +622,7 @@ jobs:
           ARGS=(-Pp2t="${PWD}/data/${DATASET}" -Prun=0 -Pprogressbar=simple)
           [ -n "${FLAVOR}" ] && ARGS+=(-Pflavor="${FLAVOR}")
           rm -f grobid-home/tmp/report.md
-          ./gradlew --console=plain jatsEval "${ARGS[@]}" | tee "score-${DATASET}.log"
+          .github/scripts/evaluation/gradle_retry.sh --console=plain jatsEval "${ARGS[@]}" | tee "score-${DATASET}.log"
 
           # jatsEval exits 0 whatever happened
           if ! grep -q '^## Header metadata' grobid-home/tmp/report.md 2>/dev/null; then
