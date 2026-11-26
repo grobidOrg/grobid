@@ -749,10 +749,6 @@ public class HeaderParser extends AbstractParser {
                         features.digit = "ALLDIGIT";
                     }
 
-                    if (featureFactory.test_common(text)) {
-                        features.commonName = true;
-                    }
-
                     if (featureFactory.test_names(text)) {
                         features.properName = true;
                     }

@@ -44,6 +44,8 @@ public class FeaturesVectorCitation {
     public String digit;  // one of ALLDIGIT, CONTAINDIGIT, NODIGIT
     public boolean singleChar = false;
     public boolean properName = false;
+    // always false: the english.wf look-up was removed (#1454), the column is kept
+    // so that the feature layout does not change
     public boolean commonName = false;
     public boolean firstName = false;
     public boolean lastName = false;
@@ -521,10 +523,6 @@ public class FeaturesVectorCitation {
 
             if (featureFactory.test_digit(text)) {
                 features.digit = "CONTAINSDIGITS";
-            }
-
-            if (featureFactory.test_common(text)) {
-                features.commonName = true;
             }
 
             if (featureFactory.test_names(text)) {

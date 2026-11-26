@@ -191,19 +191,17 @@
         "B-<postCode>": 8,
         "B-<region>": 9,
         "B-<settlement>": 10,
-        "B-null": 11,
-        "I-<addrLine>": 12,
-        "I-<country>": 13,
-        "I-<department>": 14,
-        "I-<institution>": 15,
-        "I-<laboratory>": 16,
-        "I-<marker>": 17,
-        "I-<postBox>": 18,
-        "I-<postCode>": 19,
-        "I-<region>": 20,
-        "I-<settlement>": 21,
-        "O": 22,
-        "null": 23
+        "I-<addrLine>": 11,
+        "I-<country>": 12,
+        "I-<department>": 13,
+        "I-<institution>": 14,
+        "I-<laboratory>": 15,
+        "I-<marker>": 16,
+        "I-<postBox>": 17,
+        "I-<postCode>": 18,
+        "I-<region>": 19,
+        "I-<settlement>": 20,
+        "O": 21
     },
     "vocab_case": [
         "<PAD>",
@@ -255,8 +253,7 @@
                 "1": 50
             },
             "14": {
-                "0": 61,
-                "1": 62
+                "0": 61
             },
             "15": {
                 "0": 73
@@ -293,18 +290,16 @@
         "8": "B-<postCode>",
         "9": "B-<region>",
         "10": "B-<settlement>",
-        "11": "B-null",
-        "12": "I-<addrLine>",
-        "13": "I-<country>",
-        "14": "I-<department>",
-        "15": "I-<institution>",
-        "16": "I-<laboratory>",
-        "17": "I-<marker>",
-        "18": "I-<postBox>",
-        "19": "I-<postCode>",
-        "20": "I-<region>",
-        "21": "I-<settlement>",
-        "22": "O",
-        "23": "null"
+        "11": "I-<addrLine>",
+        "12": "I-<country>",
+        "13": "I-<department>",
+        "14": "I-<institution>",
+        "15": "I-<laboratory>",
+        "16": "I-<marker>",
+        "17": "I-<postBox>",
+        "18": "I-<postCode>",
+        "19": "I-<region>",
+        "20": "I-<settlement>",
+        "21": "O"
     }
 }

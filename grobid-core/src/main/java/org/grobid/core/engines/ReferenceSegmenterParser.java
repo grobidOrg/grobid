@@ -925,10 +925,6 @@ public class ReferenceSegmenterParser extends AbstractParser implements Referenc
                     features.digit = "CONTAINSDIGITS";
                 }
 
-                if (featureFactory.test_common(text)) {
-                    features.commonName = true;
-                }
-
                 if (featureFactory.test_names(text)) {
                     features.properName = true;
                 }
