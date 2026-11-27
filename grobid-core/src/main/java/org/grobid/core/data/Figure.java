@@ -52,6 +52,7 @@ import org.grobid.core.utilities.BoundingBoxCalculator;
 import org.grobid.core.utilities.KeyGen;
 import org.grobid.core.utilities.LayoutTokensUtil;
 import org.grobid.core.utilities.TextUtilities;
+import org.grobid.core.utilities.matching.ReferenceMarkerMatcher;
 
 /**
  * Class for representing a figure.
@@ -417,7 +418,7 @@ public class Figure {
             if (StringUtils.isNotBlank(labeledCaption)) {
                 TaggingTokenClusteror clusteror = new TaggingTokenClusteror(GrobidModels.FULLTEXT, labeledCaption,
                         captionLayoutTokens);
-                List<TaggingTokenCluster> clusters = clusteror.cluster();
+                List<TaggingTokenCluster> clusters = ReferenceMarkerMatcher.mergeBracketedRanges(clusteror.cluster());
 
                 MarkerType citationMarkerType = null;
                 if (CollectionUtils.isNotEmpty(markerTypes)) {
