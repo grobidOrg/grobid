@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Juan</forename>
+<surname>Tapia</surname>,
+<roleName>Member, IEEE</roleName>,
+</persName>
+<persName>
+<forename>Daniel</forename>
+<surname>Benalcazar</surname> <roleName>Member, IEEE</roleName>,
+</persName>
+<persName>
+<forename>Andres</forename>
+<surname>Valenzuela</surname>,
+</persName>
+<persName>
+<forename>Leonardo</forename>
+<surname>Causa</surname>,
+</persName>
+<persName>
+<forename>Enrique</forename>
+<surname>Lopez Droguett</surname> and
+</persName>
+<persName>
+<forename>Christoph</forename>
+<surname>Busch</surname>,
+<roleName>Senior Member</roleName>,
+</persName>
+<persName>
+<forename>Juan</forename>
+<surname>Tapia</surname> and
+</persName>
+<persName>
+<forename>Christoph</forename>
+<surname>Busch</surname>,
+</persName>
+<persName>
+<forename>Enrique</forename>
+<surname>Lopez Droguett</surname>,
+</persName>
+<persName>
+<forename>Daniel</forename>
+<surname>Benalcazar</surname>,
+</persName>
+<persName>
+<forename>Andres</forename>
+<surname>Valenzuela</surname>,
+</persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

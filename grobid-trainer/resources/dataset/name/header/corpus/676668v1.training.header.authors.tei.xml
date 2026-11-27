@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Mandeep</forename>
+								 <middlename>K</middlename>.
+								 <surname>Mann</surname>
+								 <marker>1, 2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ivan</forename>
+								 <surname>Franzoni</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Renato</forename>
+								 								 <surname>Ferreira de Freitas</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Wolfram</forename>
+								 <surname>Tempel</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Scott</forename>
+								 <surname>Houliston</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Cheryl</forename>
+								 <middlename>H</middlename>.
+								 <surname>Arrowsmith</surname>
+								 <marker>1,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Rachel</forename>
+								 <middlename>J</middlename>.
+								 <surname>Harding</surname>
+								 <marker>1*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Matthieu</forename>
+								 <surname>Schapira</surname>
+								 <marker>1,2*</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

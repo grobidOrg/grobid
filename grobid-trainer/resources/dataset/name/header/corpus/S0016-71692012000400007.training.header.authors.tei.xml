@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+	<persName>
+		<forename>William</forename>
+		<middlename>L</middlename>.
+		<surname>Bandy</surname>
+		<marker>*</marker> and
+	</persName>
+	<persName>
+		<forename>Carlos</forename>
+		<middlename>A</middlename>.
+		<surname>Mortera Gutiérrez</surname>
+	</persName>
+	<persName>
+		<forename>W</forename>.
+		<middlename>L</middlename>.
+		<surname>Bandy</surname>
+		<marker>*</marker>
+	</persName>
+	<persName>
+		<forename>C</forename>.
+		<middlename>A</middlename>.
+		<surname>Mortera Gutiérrez</surname>
+	</persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

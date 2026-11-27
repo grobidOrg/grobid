@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Tânia</forename> <middlename>Maria</middlename> <middlename>José</middlename> <surname>Aiello-Vaisberg</surname></persName>.
+Livre docente em Psicopatologia.
+Professora do <persName><forename>Sueli</forename> <middlename>Regina</middlename> <surname>Gallo-Belluzzo</surname></persName>.
+Doutora em <persName><forename>Carlos</forename> <surname>Del Negro Visintin</surname></persName>.
+Doutorando em
+</author>
+
+	
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

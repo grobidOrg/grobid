@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Fernando</forename>
+								 <middlename>A</middlename>.
+								 <surname>Milesi</surname>
+								 <marker>1,2,*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Javier</forename>
+								 <surname>Lopez de Casenave</surname>
+								 <marker>1</marker> &amp;
+							</persName>
+							<persName>
+								 <forename>Víctor</forename>
+								 <middlename>R</middlename>.
+								 <surname>Cueto</surname>
+								 <marker>1,3</marker>
+							</persName>
+							<persName>
+								 <roleName>Dr</roleName>.
+								 <forename>Fernando</forename>
+								 <middlename>A</middlename>.
+								 <surname>Milesi</surname>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

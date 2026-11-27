@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>Mauricio</forename>
+<surname>Cruz Reyes</surname>
+<marker>1</marker> ID ,
+</persName>
+<persName>
+<forename>Richard</forename>
+<middlename>I</middlename>.
+<surname>Anderson</surname>
+<marker>1</marker> ID ,
+</persName>
+<persName>
+<forename>Lucas</forename>
+<surname>Johansson</surname>
+<marker>1</marker> ID ,
+</persName>
+<persName>
+<forename>Henryka</forename>
+<surname>Netzel</surname>
+<marker>1</marker> ID , and
+</persName>
+<persName>
+<forename>Zoé</forename>
+<surname>Medaric</surname>
+<marker>1</marker>
+</persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

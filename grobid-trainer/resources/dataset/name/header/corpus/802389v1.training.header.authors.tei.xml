@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+                        <author>
+                            <persName>
+                                <surname>White</surname>,
+                                <forename>M</forename>.
+                                <middlename>A</middlename>. <marker>1,2</marker> ,
+                            </persName>
+                            <persName>
+                                <surname>Darmon</surname>,
+                                <forename>E</forename>.
+                                <marker>1</marker> ,
+                            </persName>
+                            <persName>
+                                <surname>Lopez-Vernaza</surname>,
+                                <forename>M</forename>.
+                                <middlename>A</middlename>.
+                                <marker>1</marker> , and
+                            </persName>
+                            <persName>
+                                <surname>Leach</surname>,
+                                <forename>D</forename>.
+                                <middlename>R</middlename>.
+                                <middlename>F</middlename>.
+                                <marker>1,3</marker>
+                            </persName>
+                        </author>
+
+                    
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Sumaiya</forename>
+								 <surname>Iqbal</surname>
+								 <marker>1,2,3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jakob</forename>
+								 <middlename>B</middlename>.
+								 <surname>Jespersen</surname>
+								 <marker>4,5+</marker> ,
+							</persName>
+							<persName>
+								 <forename>Eduardo</forename>
+								 <surname>Perez-Palma</surname>
+								 <marker>6,+</marker> ,
+							</persName>
+							<persName>
+								 <forename>Patrick</forename>
+								 <surname>May</surname>
+								 <marker>7,+</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <surname>Hoksza</surname>
+								 <marker>7,8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Henrike</forename>
+								 <middlename>O</middlename>.
+								 <surname>Heyne</surname>
+								 <marker>1,2,3,9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Shehab</forename>
+								 <middlename>S</middlename>.
+								 <surname>Ahmed</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Zaara</forename>
+								 <middlename>T</middlename>.
+								 <surname>Rifat</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>M</forename>.
+								 <middlename>Sohel</middlename>
+								 <surname>Rahman</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kasper</forename>
+								 <surname>Lage</surname>
+								 <marker>1,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Aarno</forename>
+								 <surname>Palotie</surname>
+								 <marker>1,2,9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jeffrey</forename>
+								 <middlename>R</middlename>.
+								 <surname>Cottrell</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Florence</forename>
+								 <middlename>F</middlename>.
+								 <surname>Wagner</surname>
+								 <marker>1,11</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mark</forename>
+								 <middlename>J</middlename>.
+								 <surname>Daly</surname>
+								 <marker>1,2,3,9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Arthur</forename>
+								 <middlename>J</middlename>.
+								 <surname>Campbell</surname>
+								 <marker>1,11,*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Dennis</forename>
+								 <surname>Lal</surname>
+								 <marker>1,6,12,13,*</marker>
+								</persName>
+								nonbonded
+							Van der Waals ✘ ✘ ✘ ✘ salt-bridge, nonbonded
+							Van der Waals ✘ ✘
+							Van der Waals ✘ ✘ nonbonded
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

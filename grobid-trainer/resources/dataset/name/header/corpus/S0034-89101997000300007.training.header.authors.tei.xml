@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Jael</forename>
+								<surname>de Paula Guimarães</surname> e
+							</persName>
+							<persName>
+								<forename>Afonso</forename>
+								<middlename>Dinis</middlename>
+								<surname>Costa Passos</surname>
+							</persName>
+							<persName>
+								<forename>Jael</forename>
+								<surname>de Paula Guimarães</surname> e
+							</persName>
+							<persName>
+								<forename>Afonso</forename>
+								<middlename>Dinis</middlename>
+								<surname>Costa Passos</surname>
+							</persName>
+							<persName>
+								<forename>Afonso</forename>
+								<middlename>D</middlename>.
+								<middlename>C</middlename>.
+								<surname>Passos</surname>
+							</persName>
+							- P. &amp;
+							<persName>
+								<surname>Passos</surname>,
+								<forename>A</forename>.
+								<middlename>D</middlename>.
+								<middlename>C</middlename>.
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

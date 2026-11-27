@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename>R</forename> . <surname>López-Coto</surname> , <marker>𝑎,𝑏 , *</marker></persName>
+							<persName><forename>A</forename> . <surname>Mitchell</surname> , <marker>𝑐</marker></persName>
+							<persName><forename>E</forename> . <middlename>O</middlename> . <surname>Angüner</surname> <marker>𝑑</marker> and</persName>
+							<persName><forename>G</forename> . <surname>Giacinti</surname> <marker>𝑒</marker></persName>
+							<persName><forename>P</forename> . <surname>Abreu</surname> <marker>1</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Albert</surname> <marker>2</marker> ,</persName>
+							<persName><forename>E</forename> . <middlename>O</middlename> . <surname>Angüner</surname> <marker>3</marker> ,</persName>
+							<persName><forename>C</forename> . <surname>Arcaro</surname> <marker>4</marker> ,</persName>
+							<persName><forename>L</forename> . <middlename>H</middlename> . <surname>Arnaldi</surname> <marker>5</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>C</middlename> . <surname>Arteaga-Velázquez</surname> <marker>6</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Assis</surname> <marker>1</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Bakalová</surname> <marker>7</marker> ,</persName>
+							<persName><forename>U</forename> . <surname>Bar- res de Almeida</surname> <marker>8</marker> ,</persName>
+							<persName><forename>I</forename> . <surname>Batković</surname> <marker>4</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Bellido</surname> <marker>9</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Belmont-Moreno</surname> <marker>10</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Bisconti</surname> <marker>11</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Blanco</surname> <marker>1</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Bohacova</surname> <marker>7</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Bottacini</surname> <marker>4</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Bretz</surname> <marker>12</marker> ,</persName>
+							<persName><forename>C</forename> . <surname>Brisbois</surname> <marker>13</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Brogueira</surname> <marker>1</marker> ,</persName>
+							<persName><forename>A</forename> . <middlename>M</middlename> . <surname>Brown</surname> <marker>14</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Bulik</surname> <marker>15</marker> ,</persName>
+							<persName><forename>K</forename> . <middlename>S</middlename> . <surname>Caballero Mora</surname> <marker>16</marker> ,</persName>
+							<persName><forename>S</forename> . <middlename>M</middlename> . <surname>Campos</surname> <marker>17</marker></persName>
+							<persName><forename>A</forename> . <surname>Chiavassa</surname> <marker>11</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Chytka</surname> <marker>7</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Conceição</surname> <marker>1</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>Consolati</surname> <marker>18</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Cotzomi Paleta</surname> <marker>19</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Dasso</surname> <marker>20</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>De Angelis</surname> <marker>4</marker> ,</persName>
+							<persName><forename>C</forename> . <middlename>R</middlename> . <surname>De Bom</surname> <marker>8</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>de la Fuente</surname> <marker>21</marker> ,</persName>
+							<persName><forename>V</forename> . <surname>de Souza</surname> <marker>22</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Depaoli</surname> <marker>11</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>Di Sciascio</surname> <marker>23</marker> ,</persName>
+							<persName><forename>C</forename> . <middlename>O</middlename> . <surname>Dib</surname> <marker>24</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Dorner</surname> <marker>25</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Doro</surname> <marker>4</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Du Vernois</surname> <marker>26</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Ergin</surname> <marker>27</marker> ,</persName>
+							<persName><forename>K</forename> . <middlename>L</middlename> . <surname>Fan</surname> <marker>13</marker> ,</persName>
+							<persName><forename>N</forename> . <surname>Fraĳa</surname> <marker>8</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Funk</surname> <marker>28</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>I</middlename> . <surname>García</surname> <marker>17</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>A</middlename> . <surname>García-González</surname> <marker>29</marker> ,</persName>
+							<persName><forename>S</forename> . <middlename>T</middlename> . <surname>García Roca</surname> <marker>9</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>Giacinti</surname> <marker>30</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Goksu</surname> <marker>30</marker> ,</persName>
+							<persName><forename>B</forename> . <middlename>S</middlename> . <surname>González</surname> <marker>1</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Guarino</surname> <marker>31</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Guillén</surname> <marker>32</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Haist</surname> <marker>30</marker> ,</persName>
+							<persName><forename>P</forename> . <middlename>M</middlename> . <surname>Hansen</surname> <marker>33</marker> ,</persName>
+							<persName><forename>J</forename> . <middlename>P</middlename> . <surname>Harding</surname> <marker>2</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Hinton</surname> <marker>30</marker> ,</persName>
+							<persName><forename>W</forename> . <surname>Hofmann</surname> <marker>30</marker> ,</persName>
+							<persName><forename>B</forename> . <surname>Hona</surname> <marker>34</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Hoyos</surname> <marker>17</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Huentemeyer</surname> <marker>35</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Hueyotl- Zahuantitla</surname> <marker>16</marker></persName>
+							<persName><forename>A</forename> . <surname>Insolia</surname> <marker>36</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Janecek</surname> <marker>7</marker> ,</persName>
+							<persName><forename>V</forename> . <surname>Joshi</surname> <marker>28</marker> ,</persName>
+							<persName><forename>B</forename> . <surname>Khelifi</surname> <marker>37</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Kunwar</surname> <marker>30</marker> ,</persName>
+							<persName><forename>G</forename> . <surname>La Mura</surname> <marker>1</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Lapington</surname> <marker>38</marker> ,</persName>
+							<persName><forename>M</forename> . <middlename>R</middlename> . <surname>Laspiur</surname> <marker>17</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Leitl</surname> <marker>28</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Longo</surname> <marker>39</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Lopes</surname> <marker>1</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>Lopez-Coto</surname> <marker>4</marker> ,</persName>
+							<persName><forename>D</forename> . <surname>Mandat</surname> <marker>7</marker> ,</persName>
+							<persName><forename>A</forename> . <middlename>G</middlename> . <surname>Mariazzi</surname> <marker>33</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Mariotti</surname> <marker>4</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Marques Moraes</surname> <marker>8</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Martínez- Castro</surname> <marker>40</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Martínez-Huerta</surname> <marker>41</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>May</surname> <marker>42</marker> ,</persName>
+							<persName><forename>D</forename> . <middlename>G</middlename> . <surname>Melo</surname> <marker>43</marker> ,</persName>
+							<persName><forename>L</forename> . <middlename>F</middlename> . <surname>Mendes</surname> <marker>1</marker> ,</persName>
+							<persName><forename>L</forename> . <middlename>M</middlename> . <surname>Mendes</surname> <marker>1</marker> ,</persName>
+							<persName><forename>T</forename> . <surname>Mineeva</surname> <marker>24</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Mitchell</surname> <marker>44</marker> ,</persName>
+							<persName><forename>S</forename> . <surname>Mohan</surname> <marker>35</marker> ,</persName>
+							<persName><forename>O</forename> . <middlename>G</middlename> . <surname>Morales Olivares</surname> <marker>16</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Moreno-Barbosa</surname> <marker>19</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Nellen</surname> <marker>45</marker> ,</persName>
+							<persName><forename>V</forename> . <surname>Novotny</surname> <marker>7</marker> ,</persName>
+							<persName><forename>L</forename> . <surname>Olivera-Nieto</surname> <marker>30</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Orlando</surname> <marker>39</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Pech</surname> <marker>7</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Pichel</surname> <marker>20</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Pimenta</surname> <marker>1</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Portes de Albuquerque</surname> <marker>8</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Prandini</surname> <marker>4</marker> ,</persName>
+							<persName><forename>M</forename> . <middlename>S</middlename> . <surname>Rado Cuchills</surname> <marker>9</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Reisenegger</surname> <marker>46</marker> ,</persName>
+							<persName><forename>B</forename> . <surname>Reville</surname> <marker>30</marker> ,</persName>
+							<persName><forename>C</forename> . <middlename>D</middlename> . <surname>Rho</surname> <marker>47</marker> ,</persName>
+							<persName><forename>A</forename> . <middlename>C</middlename> . <surname>Rovero</surname> <marker>20</marker> ,</persName>
+							<persName><forename>E</forename> . <surname>Ruiz-Velasco</surname> <marker>30</marker> ,</persName>
+							<persName><forename>G</forename> . <middlename>A</middlename> . <surname>Salazar</surname> <marker>17</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Sandoval</surname> <marker>10</marker> ,</persName>
+							<persName><forename>M</forename> . <surname>Santander</surname> <marker>42</marker> ,</persName>
+							<persName><forename>H</forename> . <surname>Schoorlemmer</surname> <marker>30</marker> ,</persName>
+							<persName><forename>F</forename> . <surname>Schüssler</surname> <marker>48</marker> ,</persName>
+							<persName><forename>V</forename> . <middlename>H</middlename> . <surname>Serrano</surname> <marker>17</marker> ,</persName>
+							<persName><forename>R</forename> . <middlename>C</middlename> . <surname>Shellard</surname> <marker>8</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Sinha</surname> <marker>49</marker> ,</persName>
+							<persName><forename>A</forename> . <middlename>J</middlename> . <surname>Smith</surname> <marker>13</marker> ,</persName>
+							<persName><forename>P</forename> . <surname>Surajbali</surname> <marker>30</marker> ,</persName>
+							<persName><forename>B</forename> . <surname>Tomé</surname> <marker>1</marker> ,</persName>
+							<persName><forename>I</forename> . <surname>Torres Aguilar</surname> <marker>50</marker> ,</persName>
+							<persName><forename>C</forename> . <surname>van Eldik</surname> <marker>28</marker> ,</persName>
+							<persName><forename>I</forename> . <middlename>D</middlename> . <surname>Vergara-Quispe</surname> <marker>33</marker> ,</persName>
+							<persName><forename>A</forename> . <surname>Viana</surname> <marker>22</marker> ,</persName>
+							<persName><forename>J</forename> . <surname>Vícha</surname> <marker>7</marker> ,</persName>
+							<persName><forename>C</forename> . <middlename>F</middlename> . <surname>Vigorito</surname> <marker>11</marker> ,</persName>
+							<persName><forename>X</forename> . <surname>Wang</surname> <marker>35</marker> ,</persName>
+							<persName><forename>F</forename>. <surname>Werner</surname> <marker>30</marker> ,</persName>
+							<persName><forename>R</forename> . <surname>White</surname> <marker>30</marker> ,</persName>
+							<persName><forename>M</forename> . <middlename>A</middlename> . <surname>Zamalloa Jara</surname> <marker>9</marker></persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

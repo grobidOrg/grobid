@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<surname>Mattila</surname>,
+								 <forename>Anniina</forename>
+								 <middlename>L</middlename>.
+								 <middlename>K</middlename>.
+								 <marker>1</marker> ;
+							</persName>
+							<persName>
+								 <surname>Jiggins</surname>,
+								 <forename>Chris</forename>
+								 <middlename>D</middlename>.
+								 <marker>2</marker> ;
+							</persName>
+							<persName>
+								 <surname>Opedal</surname>,
+								 <forename>Øystein</forename>
+								 <middlename>H</middlename>.
+								 <marker>1,3</marker> ;
+							</persName>
+							<persName>
+								 <surname>Montejo-Kovacevich</surname>,
+								 <forename>Gabriela</forename>
+								 <marker>2</marker> ;
+							</persName>
+							<persName>
+								 <surname>de Castro</surname>, <forename>Érika</forename>
+								 <marker>2</marker> ;
+							</persName>
+							<persName>
+								 <surname>McMillan</surname>,
+								 <forename>William</forename>
+								 <middlename>O</middlename>.
+								 <marker>4</marker> ;
+							</persName>
+							<persName>
+								 <surname>Bacquet</surname>,
+								 <forename>Caroline</forename>
+								 <marker>5</marker> ;
+							</persName>
+							<persName>
+								 <surname>Saastamoinen</surname>,
+								 <forename>Marjo</forename>
+								 <marker>1,6</marker>
+							</persName>
+							<persName>
+								 <forename>Anniina</forename>
+								 <middlename>L</middlename>.
+								 <middlename>K</middlename>.
+								 <surname>Mattila</surname>
+							</persName>
+							<persName>
+								 <forename>Chris</forename>
+								 <middlename>D</middlename>.
+								 <surname>Jiggins</surname>
+							</persName>
+							<persName>
+								 <forename>Øystein</forename>
+								 <middlename>H</middlename>.
+								 <surname>Opedal</surname>
+							</persName>
+							<persName>
+								 <forename>Gabriela</forename>
+								 <surname>Montejo-Kovacevich</surname>
+							</persName>
+							<persName>
+								 <forename>Érika</forename>
+								 <surname>de Castro</surname>
+							</persName>
+							<persName>
+								 <forename>William</forename>
+								 <middlename>O</middlename>.
+								 <surname>McMillan</surname>
+							</persName>
+							<persName>
+								 <forename>Caroline</forename>
+								 <surname>Bacquet</surname>
+							</persName>
+							<persName>
+								 <forename>Marjo</forename>
+								 <surname>Saastamoinen</surname>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

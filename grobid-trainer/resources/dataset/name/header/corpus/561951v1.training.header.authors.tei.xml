@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Andrew</forename>
+								 <middlename>P</middlename>
+								 <surname>Morgan</surname>
+								 <marker>*</marker> ,
+							</persName>
+							<persName>
+								 <forename>Timothy</forename>
+								 <middlename>A</middlename>
+								 <surname>Bell</surname>
+								 <marker>*</marker> ,
+							</persName>
+							<persName>
+								 <forename>James</forename>
+								 <middlename>J</middlename>
+								 <surname>Crowley</surname>
+								 <marker>* , †, ‡</marker> , and
+							</persName>
+							<persName>
+								 <forename>Fernando</forename>
+								 <surname>Pardo-Manuel de Villena</surname>
+								 <marker>*</marker>
+							</persName>
+							<persName>
+								 <forename>Andrew</forename>
+								 <middlename>P</middlename>
+								 <surname>Morgan</surname>
+							</persName>
+							<persName>
+								 <forename>Fernando</forename>
+								 <surname>Pardo-Manuel de Villena</surname>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

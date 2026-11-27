@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Michael</forename>
+								 <middlename>J</middlename>.
+								<middlename>G</middlename>.
+								 <surname>Milevskiy</surname>
+								 <marker>1,2 #</marker> ,
+							</persName>
+							<persName>
+								 <forename>Udai</forename>
+								 <surname>Gujral</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Carolina</forename>
+								 <surname>Del Lama Marques</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Andrew</forename>
+								 <surname>Stone</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Korinne</forename>
+								 <surname>Northwood</surname>
+								 <marker>1,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Lez</forename>
+								 <middlename>J</middlename>.
+								 <surname>Burke</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Julia</forename>
+								 <middlename>M</middlename>.
+								<middlename>W</middlename>.
+								 <surname>Gee</surname>
+								 <marker>5</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kenneth</forename>
+								 <surname>Nephew</surname>
+								 <marker>6</marker> ,
+							</persName>
+							<persName>
+								 <forename>Susan</forename>
+								 <surname>Clark</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Melissa</forename>
+								 <middlename>A</middlename>.
+								 <surname>Brown</surname>
+								 <marker>1</marker> .
+								</persName>
+							<persName>
+								<forename>MJG</forename>
+								 <surname>Milevskiy</surname>,
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Karolina</forename>
+								 <surname>Morales Barrio-Nuevo</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Antônio</forename>
+								 <middlename>Ralph</middlename>
+								 <surname>Medeiros-Sousa</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Walter</forename>
+								 <surname>Ceretti-Junior</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Aristides</forename>
+								 <surname>Fernandes</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Iray</forename>
+								 <middlename>Maria</middlename>
+								 <surname>Rocco</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mariana</forename>
+								 <surname>Sequetin Cunha</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Adriana</forename>
+								 <surname>Luchs</surname>
+								 <marker>3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Luis</forename>
+								 <middlename>Filipe</middlename>
+								 <surname>Mucci</surname>
+								 <marker>4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Renato</forename>
+								 <surname>Pereira de Souza</surname>
+								 <marker>2</marker> ,
+							</persName>
+							<persName>
+								 <forename>Mauro</forename>
+								 <surname>Toledo Marrelli</surname>
+								 <marker>1,*</marker>
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

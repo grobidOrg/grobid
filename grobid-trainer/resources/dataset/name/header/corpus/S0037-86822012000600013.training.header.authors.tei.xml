@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<roleName>Dr</roleName>.
+<forename>Paulo</forename>
+<middlename>Roberto</middlename>
+<surname>Juliano Martins</surname>.
+</persName>
+<persName>
+<forename>Laryssa</forename>
+<surname>Manso de Lima</surname>
+<marker>[1]</marker> ,
+</persName>
+<persName>
+<forename>Nathália</forename>
+<surname>Passos Alves</surname>
+<marker>[2]</marker> ,
+</persName>
+<persName>
+<forename>Valdirene</forename>
+<middlename>de</middlename>
+<middlename>Fátima</middlename>
+<surname>Barbosa</surname>
+<marker>[3]</marker> ,
+</persName>
+<persName>
+<forename>Gustavo</forename>
+<surname>Alves Pimenta</surname>
+<marker>[4]</marker> ,
+</persName>
+<persName>
+<forename>Helio</forename>
+<surname>Moraes-Souza</surname>
+<marker>[5]</marker> and
+</persName>
+<persName>
+<forename>Paulo</forename>
+<middlename>Roberto</middlename>
+<surname>Juliano Martins</surname>
+<marker>[5]</marker> [
+</persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

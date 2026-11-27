@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName><forename>Fernanda</forename> <surname>Vargas Valadares</surname> <marker>1*</marker></persName>
+							<persName><forename>Rafael</forename> <surname>Nunes de Almeida</surname> <marker>1</marker></persName>
+							<persName><forename>Lázaro</forename> <middlename>Renilton</middlename> <surname>Emerick Silva</surname> <marker>2</marker></persName>
+							<persName><forename>Geferson</forename> <surname>Rocha Santos</surname> <marker>1</marker></persName>
+							<persName><forename>Raissa</forename> <surname>Olmo Lacerda Pirovani</surname> <marker>2</marker></persName>
+							<persName><forename>José</forename> <surname>Dias de Souza</surname> <suffix>Neto</suffix> <marker>2</marker></persName>
+							<persName><forename>Ana</forename> <middlename>Paula</middlename> <surname>Cândido Gabriel Berilli</surname> <marker>2</marker></persName>
+							<persName><forename>Monique</forename> <surname>Moreira Moulin</surname> <marker>2</marker></persName>
+							<persName><forename>Marcelo</forename> <surname>Vivas</surname> <marker>1</marker></persName>
+							<persName><forename>Sávio</forename> <surname>da Silva Berilli</surname> <marker>2</marker></persName>
+							<persName><forename>Messias</forename> <surname>Gonzaga Pereira</surname> <marker>1</marker></persName>
+							<persName><forename>Leandro</forename> <surname>Souza da Silva</surname></persName>
+							<persName><forename>Carla</forename> <middlename>Andréa</middlename> <surname>Delatorre</surname></persName>
+						</author>
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Jihyung</forename>
+								 <surname>Lee</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Junyan</forename>
+								 <surname>Zhang</surname>
+								 <marker>1,2,3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Young-Jun</forename>
+								 <surname>Chung</surname>
+								 <marker>1,4</marker> ,
+							</persName>
+							<persName>
+								 <forename>Jun</forename>
+								 <middlename>Hwan</middlename>
+								 <surname>Kim</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Chae</forename>
+								 <middlename>Min</middlename>
+								 <surname>Kook</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>José</forename>
+								 <middlename>M</middlename>.
+								 <surname>González-Navajas</surname>
+								 <marker>3,5,6</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <middlename>S</middlename>.
+								 <surname>Herdman</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Bernd</forename>
+								 <surname>Nürnberg</surname>
+								 <marker>7</marker> ,
+							</persName>
+							<persName>
+								 <forename>Paul</forename>
+								 <middlename>A</middlename>.
+								 <surname>Insel</surname>
+								 <marker>1,8</marker> ,
+							</persName>
+							<persName>
+								 <forename>Maripat</forename>
+								 <surname>Corr</surname>
+								 <marker>1,9</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ailin</forename>
+								 								 <surname>Tao</surname>
+								 <marker>2.3</marker> ,
+							</persName>
+							<persName>
+								 <forename>Kei</forename>
+								 <surname>Yasuda</surname>
+								 <marker>10</marker> ,
+							</persName>
+							<persName>
+								 <forename>Ian</forename>
+								 <middlename>R</middlename>.
+								 <surname>Rifkin</surname>
+								 <marker>10,11</marker> ,
+							</persName>
+							<persName>
+								 <forename>David</forename>
+								 <surname>Broide</surname>
+								 <marker>1</marker> ,
+							</persName>
+							<persName>
+								 <forename>Roger</forename>
+								 <surname>Sciammas</surname>
+								 <marker>12</marker> ,
+							</persName>
+							<persName>
+								 <forename>Nicholas</forename>
+								 <middlename>J</middlename>.
+								<middlename>G</middlename>.
+								 <surname>Webster</surname>
+								 <marker>1,9*</marker> and
+							</persName>
+							<persName>
+								 <forename>Eyal</forename>
+								 <surname>Raz</surname>
+								 <marker>1,3*</marker>
+							</persName>
+														<persName>
+								 <forename>Eyal</forename>
+								 <surname>Raz</surname>
+								 <roleName>M.D</roleName>.
+							</persName>
+							(Lead Contact)
+							<persName>
+								 <forename>Nicholas</forename>
+								 <surname>Webster</surname>
+								 <roleName>Ph.D</roleName>.
+							</persName>
+						</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

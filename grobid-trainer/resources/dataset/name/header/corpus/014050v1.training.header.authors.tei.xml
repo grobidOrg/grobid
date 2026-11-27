@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>JASON</forename> <middlename>A</middlename>. <surname>O&apos;RAWE</surname> <marker>1,2,#</marker> ,</persName>
+<persName><forename>YIYANG</forename> <surname>WU</surname> <marker>1,2,#</marker> ,</persName>
+<persName><forename>ALAN</forename> <surname>ROPE</surname> <marker>3</marker> ,</persName>
+<persName><forename>LAURA</forename> <middlename>T</middlename>. <surname>JIMENEZ BARRÓN</surname> <marker>1,4</marker> ,</persName>
+<persName><forename>JEFFREY</forename> <surname>SWENSEN</surname> <marker>5</marker> ,</persName>
+<persName><forename>HAN</forename> <surname>FANG</surname> <marker>1</marker> ,</persName>
+<persName><forename>DAVID</forename> <surname>MITTELMAN</surname> <marker>6,7</marker> ,</persName>
+<persName><forename>GARETH</forename> <surname>HIGHNAM</surname> <marker>6</marker> ,</persName>
+<persName><forename>REID</forename> <surname>ROBISON</surname> <marker>7,8</marker> ,</persName>
+<persName><forename>EDWARD</forename> <surname>YANG</surname> <marker>9</marker> ,</persName>
+<persName><forename>KAI</forename> <surname>WANG</surname> <marker>7,8,10</marker> , AND</persName>
+<persName><forename>GHOLSON</forename> <middlename>J</middlename>. <surname>LYON</surname> <marker>1,2,8</marker></persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+		<author>
+			<persName><forename>Christopher</forename> <surname>McCrum</surname> <marker>1,2 *</marker>,</persName>
+			<persName><forename>Florence</forename> <surname>Lucieer</surname> <marker>3</marker> ,</persName>
+			<persName><forename>Raymond</forename> <surname>van de Berg</surname> <marker>3,4</marker> ,</persName>
+			<persName><forename>Paul</forename> <surname>Willems</surname> <marker>1</marker> ,</persName>
+			<persName><forename>Angélica</forename> <surname>Pérez Fornos</surname> <marker>5</marker> ,</persName>
+			<persName><forename>Nils</forename> <surname>Guinand</surname> <marker>5</marker> ,</persName>
+			<persName><forename>Kiros</forename> <surname>Karamanidis</surname> <marker>6</marker> ,</persName>
+			<persName><forename>Herman</forename> <surname>Kingma</surname> <marker>3,4</marker> ,</persName>
+			<persName><forename>Kenneth</forename> <surname>Meijer</surname> <marker>1</marker></persName>
+			<persName><forename>Christopher</forename> <surname>McCrum</surname></persName>
+		</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+		<author>
+			<persName><forename>Theodore</forename> <surname>Chiang</surname>, <roleName>MS</roleName> <marker>1</marker> ,</persName>
+			<persName><forename>Xiuping</forename> <surname>Liu</surname>, <roleName>MS</roleName> <marker>1</marker> ,</persName>
+			<persName><forename>Tsung-Jung</forename> <surname>Wu</surname>, <roleName>MS</roleName> <marker>1</marker> ,</persName>
+			<persName><forename>Jianhong</forename> <surname>Hu</surname> <marker>1</marker> , <roleName>PhD</roleName>,</persName>
+			<persName><forename>Fritz</forename> <middlename>J</middlename>. <surname>Sedlazeck</surname>, <roleName>PhD</roleName> <marker>1</marker> ,</persName>
+			<persName><forename>Simon</forename> <surname>White</surname>, <roleName>MS</roleName> <marker>6</marker> ,</persName>
+			<persName><forename>Daniel</forename> <surname>Schaid</surname>, <roleName>PhD</roleName> <marker>7</marker> ,</persName>
+			<persName><forename>Mariza</forename> <surname>de Andrade</surname>, <roleName>PhD</roleName> <marker>7</marker> ,</persName>
+			<persName><forename>Gail</forename> <middlename>P</middlename>. <surname>Jarvik</surname>, <roleName>MD</roleName>, <roleName>PhD</roleName> <marker>8</marker> ,</persName>
+			<persName><forename>David</forename> <surname>Crosslin</surname>, <roleName>PhD</roleName> <marker>9</marker> ,</persName>
+			<persName><forename>Ian</forename> <surname>Stanaway</surname>, <roleName>PhD</roleName> <marker>9</marker> ,</persName>
+			<persName><forename>David</forename> <middlename>S</middlename>. <surname>Carrell</surname>, <roleName>PhD</roleName> <marker>9</marker> ,</persName>
+			<persName><forename>John</forename> <middlename>J</middlename>. <surname>Connolly</surname>, <roleName>PhD</roleName> <marker>10</marker> ,</persName>
+			<persName><forename>Hakon</forename> <surname>Hakonarson</surname>, <roleName>MD</roleName>, <roleName>PhD</roleName> <marker>10</marker> ,</persName>
+			<persName><forename>Emily</forename> <middlename>E</middlename>. <surname>Groopman</surname>, <roleName>BA</roleName> <marker>11</marker> ,</persName>
+			<persName><forename>Ali</forename> <middlename>G</middlename>. <surname>Gharavi</surname>, <roleName>MD</roleName> <marker>11</marker> ,</persName>
+			<persName><forename>Alexander</forename> <surname>Fedotov</surname>, <roleName>PhD</roleName> <marker>11</marker> ,</persName>
+			<persName><forename>Weimin</forename> <surname>Bi</surname>, <roleName>PhD</roleName> <marker>2,3</marker> ,</persName>
+			<persName><forename>Magalie</forename> <middlename>S</middlename>. <surname>Leduc</surname>, <roleName>PhD</roleName> <marker>5</marker> ,</persName>
+			<persName><forename>David</forename> <middlename>R</middlename>. <surname>Murdock</surname>, <roleName>MD</roleName> <marker>1,2</marker> ,</persName>
+			<persName><forename>Yunyun</forename> <surname>Jiang</surname>, <roleName>PhD</roleName> <marker>1</marker> ,</persName>
+			<persName><forename>Linyan</forename> <surname>Meng</surname>, <roleName>PhD</roleName> <marker>2,3</marker> ,</persName>
+			<persName><forename>Christine</forename> <middlename>M</middlename>. <surname>Eng</surname>, <roleName>MD</roleName> <marker>2,3</marker> ,</persName>
+			<persName><forename>Shu</forename> <surname>Wen</surname>, <roleName>PhD</roleName> <marker>2,3</marker> ,</persName>
+			<persName><forename>Yaping</forename> <surname>Yang</surname>, <roleName>PhD</roleName> <marker>2,3</marker> ,</persName>
+			<persName><forename>Donna</forename> <middlename>M</middlename>. <surname>Muzny</surname>, <roleName>MS</roleName> <marker>1</marker> ,</persName>
+			<persName><forename>Eric</forename> <surname>Boerwinkle</surname>, <roleName>PhD</roleName> <marker>1,4</marker> ,</persName>
+			<persName><forename>William</forename> <surname>Salerno</surname>,</persName>
+			<persName><forename>Theodore</forename> <surname>Chiang</surname></persName>
+		</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

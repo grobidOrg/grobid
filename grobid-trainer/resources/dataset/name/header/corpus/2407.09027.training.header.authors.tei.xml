@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName>
+<forename>He-Guang</forename>
+<surname>Xu</surname>,
+<marker>1</marker>
+</persName>
+<persName>
+<forename>Jiasen</forename>
+<surname>Jin</surname>,
+<marker>1, *</marker>
+</persName>
+<persName>
+<forename>Norton</forename>
+<middlename>G</middlename>.
+<surname>de Almeida</surname>,
+<marker>2</marker> and
+</persName>
+<persName>
+<forename>G</forename>.
+<middlename>D</middlename>.
+<surname>de Moraes</surname> <suffix>Neto</suffix>
+<marker>3, †</marker>
+</persName>
+</author>
+
+					
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

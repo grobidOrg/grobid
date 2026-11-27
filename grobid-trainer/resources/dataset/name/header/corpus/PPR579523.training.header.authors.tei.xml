@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+  <persName>
+    <forename>Verónica</forename>
+    <surname>Ramírez-Sánchez</surname>
+  </persName>
+  <persName>
+    <forename>María</forename>
+    <middlename>del</middlename>
+    <middlename>Carmen</middlename>
+    <surname>Sandoval-Caraveo</surname>
+  </persName>
+  <persName>
+    <forename>Edith</forename>
+    <middlename>Georgina</middlename>
+    <surname>Surdez-Pérez</surname>
+  </persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

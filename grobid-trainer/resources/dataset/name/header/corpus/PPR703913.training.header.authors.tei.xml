@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+  <persName>
+    <forename>JULIANA</forename>
+    <surname>ROSSI DUCI</surname>
+    <marker>1</marker>
+  </persName>
+  ORCID
+  <persName>
+    <forename>ANTÔNIO</forename>
+    <middlename>ALVARO</middlename>
+    <surname>SOARES ZUIN</surname>
+    <marker>2</marker>
+  </persName>
+  ORCID
+  <persName>
+    <forename>LUIZ</forename>
+    <middlename>ANTÔNIO</middlename>
+    <surname>CALMON NABUCO LASTÓRIA³</surname>
+  </persName>
+  <persName>
+    <forename>LUIZ</forename>
+    <middlename>ROBERTO</middlename>
+    <surname>GOMES</surname>
+    <marker>4</marker>
+  </persName>
+</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

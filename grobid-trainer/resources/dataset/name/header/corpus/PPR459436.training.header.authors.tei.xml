@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Iván</forename> <middlename>Enrique</middlename> <surname>Mujica Rodríguez</surname>,</persName>
+<persName><forename>Luz</forename> <middlename>M</middlename>. <surname>Toribio Salazar</surname>,</persName>
+<persName><forename>Walter</forename> <middlename>H</middlename>. <surname>Curioso</surname></persName>
+<persName><forename>Iván</forename> <middlename>E</middlename>. <surname>Mujica Rodríguez</surname> <marker>1a</marker></persName>
+<persName><forename>Luz</forename> <middlename>M</middlename>. <surname>Toribio Salazar</surname> <marker>2a</marker></persName>
+<persName><forename>Walter</forename> <middlename>H</middlename>. <surname>Curioso</surname> <marker>3b</marker></persName>
+<persName><forename>Iván</forename> <middlename>E</middlename>. <surname>Mujica Rodríguez</surname>;</persName>
+Av. Honorio Delgado N°430, Urb. Ingeniería, San Martín de Porres.
+</author>
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+<author>
+<persName><forename>Aline</forename> <surname>Riboli Marasca</surname> <marker>2</marker></persName>
+<persName><forename>Denise</forename> <surname>Balem Yates</surname> <marker>3</marker></persName>
+<persName><forename>Andreia</forename> <surname>Mello de Almeida Schneider</surname> <marker>4</marker></persName>
+<persName><forename>Luan</forename> <middlename>Paris</middlename> <surname>Feijó</surname> <marker>5</marker></persName>
+<persName><forename>Denise</forename> <surname>Ruschel Bandeira</surname> <marker>6 1</marker></persName>
+</author>
+
+	
+
+						
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

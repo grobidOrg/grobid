@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>Cledualdo</forename>
+								 <middlename>S</middlename>.
+								 <surname>de Oliveira</surname>,
+								 <marker>a</marker>
+							</persName>
+							<persName>
+								 <forename>Bruno</forename>
+								 <middlename>F</middlename>.
+								 <surname>Lira</surname>,
+								 <marker>a</marker>
+							</persName>
+							<persName>
+								 <forename>José</forename>
+								 <middlename>M</middlename>.
+								 <surname>Barbosa-Filho</surname>,
+								 <marker>b</marker>
+							</persName>
+							<persName>
+								 <forename>Jorge</forename>
+								 <middlename>G</middlename>.
+								 <middlename>F</middlename>.
+								 <surname>Lorenzo</surname>,
+								 <marker>b</marker>
+							</persName>
+							<persName>
+								 <forename>Camilla</forename>
+								 <middlename>P</middlename>.
+								 <surname>de Menezes</surname>,
+								 <marker>b</marker>
+							</persName>
+							<persName>
+								 <forename>Jessyca</forename>
+								 <middlename>M</middlename>.
+								 <middlename>C</middlename>.
+								 <middlename>G</middlename>.
+								 <surname>dos Santos</surname>,
+								 <marker>b</marker>
+							</persName>
+							<persName>
+								 <forename>Edeltrudes</forename>
+								 <surname>de O. Lima</surname>
+								 <marker>b</marker> and
+							</persName>
+							<persName>
+								 <forename>Petrônio</forename>
+								 <middlename>F</middlename>.
+								 <surname>de Athayde-Filho</surname>
+								<marker>* ,a</marker>
+							</persName>
+						</author>
+
+
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>

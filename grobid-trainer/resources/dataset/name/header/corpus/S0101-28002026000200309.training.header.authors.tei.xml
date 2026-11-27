@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tei xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<teiHeader>
+		<fileDesc>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName>
+								<forename>João</forename>
+								<middlename>Vitor</middlename>
+								<surname>Oblanca</surname>
+								<marker>1</marker>
+							</persName>
+							<persName>
+								<forename>Thaís</forename>
+								<middlename>Larissa</middlename>
+								<surname>Reichert</surname>
+								<marker>1</marker>
+							</persName>
+							<persName>
+								<forename>César</forename>
+								<surname>Faúndez-Casanova</surname>
+								<marker>1,2</marker>
+							</persName>
+							<persName>
+								<forename>Kauana</forename>
+								<surname>Borges Marchini</surname>
+								<marker>1,3</marker>
+							</persName>
+							<persName>
+								<forename>Fábio</forename>
+								<surname>Torres</surname>
+								<marker>1,6</marker>
+							</persName>
+							<persName>
+								<forename>Mariana</forename>
+								<surname>Ardengue</surname>
+								<marker>1,5</marker>
+							</persName>
+							<persName>
+								<forename>Sergio</forename>
+								<middlename>Seiji</middlename>
+								<surname>Yamada</surname>
+								<marker>4,6</marker>
+							</persName>
+							<persName>
+								<forename>Ademar</forename>
+								<surname>Avelar</surname>
+								<marker>1</marker>
+							</persName>
+						</author>
+</analytic>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+</tei>
